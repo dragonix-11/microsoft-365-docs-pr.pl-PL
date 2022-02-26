@@ -1,0 +1,70 @@
+- name: Microsoft 365 Business Premium
+  items:
+    - name: Omówienie
+      href: index.md
+    - name: Uzyskiwanie usługi Microsoft 365 Business Premium
+      href: get-microsoft-365-business-premium.md
+    - name: Uzyskiwanie Microsoft 365 kampanii
+      href: get-microsoft-365-campaigns.md
+    - name: Jak Microsoft 365 chroni twoje dane
+      href: m365-campaigns-users.md
+- name: Konfigurowanie i logowanie
+  items:
+    - name: Omówienie
+      href: microsoft-365-campaigns-setup-overview.md
+    - name: Zarejestruj się
+      href: m365-campaigns-sign-up.md
+    - name: Konfiguruj
+      href: ../business/set-up.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Logowanie się
+      href: m365-campaigns-sign-in.md
+    - name: Dostosowywanie strony logowania
+      href: m365-customize-sign-in.md
+    - name: Dodawanie użytkowników
+      href: ../admin/add-users/add-users.md?bc=%2fmicrosoft-365%2fcampaigns%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json
+- name: Ochrona przed poziomem zabezpieczeń
+  items:
+    - name: Omówienie
+      href: m365-campaigns-security-overview.md
+    - name: Ochrona kont administratora
+      href: m365-campaigns-protect-admin-accounts.md
+    - name: Ochrona dostępu do danych
+      href: m365-campaigns-conditional-access.md
+    - name: Ochrona przed złośliwym oprogramowaniem i innymi zagrożeniami
+      href: m365-campaigns-increase-protection.md
+- name: Konfigurowanie urządzenia dla wszystkich pracowników
+  items:
+    - name: Konfigurowanie uwierzytelniania wieloskładnikowego
+      href: m365-campaigns-multifactor-authentication.md
+    - name: Konfigurowanie urządzeń przenośnych
+      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Ochrona komputerów PC i Mac
+      href: m365-campaigns-protect-pcs-macs.md
+    - name: Konfigurowanie zarządzanych Windows urządzeniach
+      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: Ochrona poczty e-mail dla wszystkich pracowników
+  items:
+    - name: Ochrona przed wyłudzaniem informacji i innymi atakami
+      href: m365-campaigns-phishing-and-attacks.md
+    - name: Wysyłanie zaszyfrowanej wiadomości e-mail
+      href: send-encrypted-email.md
+- name: Bezpieczna współpraca i udostępnianie
+  items:
+    - name: Tworzenie Teams do współpracy
+      href: create-teams-for-collaboration.md
+    - name: Konfigurowanie spotkań
+      href: set-up-meetings.md
+    - name: Udostępnianie plików i klipów wideo
+      href: share-files-and-videos.md
+    - name: Tworzenie witryny do komunikacji dla organizacji
+      href: create-communications-site.md
+- name: Resetowanie lub usuwanie danych kampanii na urządzeniach
+  items:
+    - name: Usuwanie kampanii lub danych biznesowych
+      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Resetowanie urządzeń do ustawień fabrycznych
+      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: Zarządzanie incydentami zabezpieczeń
+  items:
+    - name: Odpowiadanie na naruszone konto e-mail
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json

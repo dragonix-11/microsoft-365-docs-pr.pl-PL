@@ -1,0 +1,113 @@
+### YamlMime:Landing
+title: Microsoft 365 Defender
+summary: Dowiedz się więcej o niezawodnych rozwiązaniach zabezpieczeń w Microsoft 365 Defender, dzięki czemu możesz lepiej chronić przedsiębiorstwo na powierzchnie ataków.
+metadata:
+  title: Microsoft 365 Defender dokumentacji
+  description: Dowiedz się więcej o niezawodnych rozwiązaniach zabezpieczeń w Microsoft 365 Defender, dzięki czemu możesz lepiej chronić przedsiębiorstwo na powierzchnie ataków.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 09/13/2019
+  ms.localizationpriority: high
+  ms.openlocfilehash: 473a0b6ca9641c12c7ae9b8d9aeba1e0e9d477d8
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "62970549"
+landingContent:
+- title: Microsoft 365 Defender
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Co to jest Microsoft 365 Defender?
+      url: microsoft-365-defender.md
+  - linkListType: whats-new
+    links:
+    - text: Co nowego w programie Microsoft 365 Defender
+      url: ../defender/whats-new.md
+  - linkListType: video
+    links:
+    - text: Klip wideo z omówieniem
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww
+- title: Ocenianie możliwości
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Tworzenie laboratorium próbnego
+      url: eval-overview.md
+    - text: Uruchamianie projektu pilotażowego w środowisku produkcyjnym
+      url: eval-overview.md
+- title: Wprowadzenie
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Wprowadzenie do Microsoft 365 Defender
+      url: get-started.md
+  - linkListType: deploy
+    links:
+    - text: Włączanie Microsoft 365 Defender
+      url: m365d-enable.md
+    - text: Wdrażanie obsługiwanych usług
+      url: deploy-supported-services.md
+- title: Microsoft Defender for Identity
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Co to jest program Microsoft Defender for Identity?
+      url: /defender-for-identity/what-is
+    - text: Architektura usługi Microsoft Defender dla tożsamości
+      url: /defender-for-identity/architecture
+- title: Usługa Microsoft Defender dla Office 365
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Co to jest program Microsoft Defender dla Office 365?
+      url: ../office-365-security/defender-for-office-365.md
+    - text: Program Microsoft Defender Office 365 opis usługi
+      url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+    - text: Program Microsoft Defender dla Office 365 w systemie Microsoft 365 Defender
+      url: microsoft-365-security-center-mdo.md
+    - text: Przekierowywanie usługi Microsoft Defender dla Office 365 w programie Microsoft 365 Defender
+      url: microsoft-365-security-mdo-redirection.md
+- title: Ochrona punktu końcowego w usłudze Microsoft Defender
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Co to jest program Microsoft Defender for Endpoint?
+      url: ../defender-endpoint/microsoft-defender-endpoint.md
+    - text: Defender for Endpoint in Microsoft 365 Defender
+      url: microsoft-365-security-center-mde.md
+    - text: Przekierowywanie usługi Defender dla punktu końcowego w programie Microsoft 365 Defender
+      url: ../defender/microsoft-365-security-mde-redirection.md
+- title: Usługa Microsoft Defender dla aplikacji w chmurze
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Co to jest program Microsoft Defender dla aplikacji w chmurze?
+      url: /cloud-app-security/what-is-cloud-app-security
+    - text: Wprowadzenie do programu Microsoft Defender dla aplikacji w chmurze
+      url: /cloud-app-security/getting-started-with-cloud-app-security
+- title: Zarządzanie zdarzeniami i alertami
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Badanie zdarzeń
+      url: investigate-incidents.md
+    - text: Śledzenie wyłaniających się zagrożeń i reagowanie na nie
+      url: threat-analytics.md
+    - text: Zautomatyzowane badanie i odpowiedź
+      url: m365d-autoir.md
+    - text: Poszukiwania zagrożeń
+      url: advanced-hunting-overview.md
+- title: Odwołanie
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Microsoft 365 Defender interfejsów API
+      url: api-overview.md

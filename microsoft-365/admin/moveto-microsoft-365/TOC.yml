@@ -1,0 +1,22 @@
+- name: Przełączanie z usługi Google Workspace do usługi Microsoft 365
+  items:
+    - name: Omówienie
+      href: move-from-google-workspace-overview.md
+    - name: Tworzenie konta na platformie Microsoft 365
+      href: /admin-overview/sign-up-for-office-365?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+    - name: Konfigurowanie migracji Microsoft 365 Google
+      href: set-up-microsoft-365-forgoogle.md
+    - name: Konfigurowanie zasad zabezpieczeń dla Windows urządzeniach
+      href: ../setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+    - name: Dodawanie domeny obszaru roboczego programu Google
+      href: add-google-domain.md
+    - name: Instalowanie Office i aplikacji Microsoft Teams
+      href: ../setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+    - name: 'Migrowanie wiadomości e-mail, kalendarza i kontaktów do Microsoft 365'
+      href: migrate-email.md
+    - name: Połączenie domenę do Microsoft 365
+      href: connect-domain-tom365.md
+    - name: Używanie Menedżera migracji do przenoszenia danych wszystkich osób
+      href: migrate-files-migration-manager.md
+    - name: Anulowanie usługi Google Workspace
+      href: cancel-google.md

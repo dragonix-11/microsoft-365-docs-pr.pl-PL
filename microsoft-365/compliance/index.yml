@@ -1,0 +1,87 @@
+### YamlMime:Landing
+title: Microsoft 365 zgodności
+summary: Jeśli Twoja organizacja musi przestrzegać standardów prawnych lub prawnych, rozpocznij tutaj, aby dowiedzieć się więcej o zgodności z przepisami w Microsoft 365.
+metadata:
+  title: Microsoft 365 zgodności
+  description: Ta strona zawiera linki do niektórych ważnych tematów związanych z Microsoft 365 zgodnością. Rozpocznij tutaj, aby dowiedzieć się więcej o zgodności w Microsoft 365.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 09/20/2019
+  ms.localizationpriority: high
+  ms.openlocfilehash: 2e29c9e97a266fdf2ea4b6c712c400143971f447
+  ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 01/03/2022
+  ms.locfileid: "62970553"
+landingContent:
+- title: Zarządzanie ochroną informacji & zarządzaniem
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Poznaj swoje dane
+      url: information-protection.md#know-your-data
+    - text: Ochrona danych
+      url: information-protection.md#protect-your-data
+    - text: Zapobieganie utracie danych
+      url: information-protection.md#prevent-data-loss
+    - text: Reguluj swoje dane
+      url: manage-information-governance.md
+    - text: 'Edukacja: Zarządzanie ochroną i zarządzaniem informacjami'
+      url: /learn/paths/m365-compliance-information
+- title: Zarządzanie ryzykiem w niejawnym programie testów
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Zarządzanie ryzykiem w niejawnym programie testów
+      url: insider-risk-management.md
+    - text: Zgodność komunikacji
+      url: communication-compliance.md
+    - text: Bariery informacyjne
+      url: information-barriers.md
+    - text: Zarządzanie dostępem z uprawnieniami
+      url: privileged-access-management-overview.md
+    - text: Skrytka klienta
+      url: customer-lockbox-requests.md
+- title: Odnajdowanie i odpowiadanie
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Advanced eDiscovery
+      url: overview-ediscovery-20.md
+    - text: Core eDiscovery
+      url: ./get-started-core-ediscovery.md
+    - text: Przeszukiwanie zawartości
+      url: search-for-content.md
+    - text: Inspekcja
+      url: search-the-audit-log-in-security-and-compliance.md
+- title: Wprowadzenie do zgodności z przepisami
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Menedżer zgodności
+      url: compliance-manager.md
+    - text: Plan działań dotyczących zgodności z RODO
+      url: /compliance/regulatory/gdpr-action-plan
+    - text: Plan działań na rzecz zgodności ISO
+      url: /compliance/regulatory/iso-action-plan
+    - text: Plan działań dotyczących zgodności NIST
+      url: /compliance/regulatory/nist-action-plan
+- title: Wdrażanie rozwiązań zgodności
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Zabezpieczanie danych przy użyciu zerowego zaufania
+      url: /security/zero-trust/data
+    - text: Wdrażanie rozwiązania miP
+      url: information-protection-solution.md
+    - text: Wdrażanie ochrony informacji w celu ochrony prywatności danych
+      url: ../solutions/information-protection-deploy.md
+    - text: Ilustracje dotyczące ochrony informacji i zgodności z przepisami
+      url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities

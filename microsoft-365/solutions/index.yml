@@ -1,0 +1,157 @@
+### YamlMime:Landing
+title: Microsoft 365 rozwiązania i architektury
+summary: To centrum rozwiązań i architektury łączy wskazówki techniczne potrzebne do zrozumienia, zaplanowania i wdrożenia zintegrowanych rozwiązań Microsoft 365 w zakresie planowania zasobów przedsiębiorstwa oraz bezpiecznej i zgodnej nowoczesnej współpracy.
+metadata:
+  title: Microsoft 365 rozwiązania i architektury
+  description: To centrum pomocy pozwoli Ci dowiedzieć się więcej na temat szkoleń it oraz projektowania rozwiązania i architektury odpowiedniego dla Twojej organizacji.
+  ms.service: o365-solutions
+  ms.topic: landing-page
+  ms.collection:
+  - m365-security-compliance
+  author: samanro
+  ms.author: samanro
+  manager: bcarter
+  audience: ITPro
+  ms.date: 10/19/2021
+  ms.localizationpriority: high
+  ms.openlocfilehash: 4116d78dd5e231ac0674057f5a183b6f5b5d347c
+  ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 02/12/2022
+  ms.locfileid: "62970579"
+landingContent:
+- title: Przewodniki po rozwiązaniu foundational
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Konfigurowanie infrastruktury do pracy hybrydowej
+      url: empower-people-to-work-remotely.md
+    - text: Konfigurowanie bezpiecznej współpracy za pomocą Microsoft 365
+      url: setup-secure-collaboration-with-teams.md
+    - text: Wdrażanie ochrony przed oprogramowaniem wymuszającym okup
+      url: ransomware-protection-microsoft-365.md
+    - text: Wdrażanie ochrony informacji w celu ochrony prywatności danych
+      url: information-protection-deploy.md
+    - text: Microsoft 365 dla mniejszych firm i kampanii
+      url: ../business-premium/index.md
+- title: Ilustracje i zasady projektowania dotyczące architektury
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Modele architektury chmury firmy Microsoft
+      url: cloud-architecture-models.md
+    - text: Microsoft 365 ilustracji zwiększających produktywność
+      url: productivity-illustrations.md
+    - text: Zasady projektowania
+      url: design-principles.md
+    - text: Infografiki dla użytkowników
+      url: infographics-for-users.md
+    - text: Ikony architektury i szablony
+      url: architecture-icons-templates.md
+- title: Przewodniki dotyczące rozwiązań administracyjnych i migracji
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Zarządzanie dzierżawą
+      url: tenant-management-overview.md
+    - text: Usuwanie byłego pracownika
+      url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Migrowanie udziałów plików do Microsoft 365
+      url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: Przewodniki po rozwiązaniach dotyczących spotkań i komunikacji
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Planowanie i wdrażanie rozwiązania Teams Voice
+      url: deploy-voice.md
+  - linkListType: overview
+    links:
+    - text: Komunikacja organizacyjna
+      url: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: Przewodniki po rozwiązaniach do pracy zespołowej i współpracy
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Zarządzanie umowami w firmie
+      url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
+  - linkListType: overview
+    links:
+    - text: Inteligentny intranet
+      url: /sharepoint/intelligent-internet-overview
+    - text: Zarządzanie współpracą
+      url: collaboration-governance-overview.md
+    - text: Współpraca nad plikami
+      url: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: OneDrive dla przedsiębiorstw
+      url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: Przewodniki dotyczące rozwiązania zgodności
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Rozwiązania ryzyka niejawnego programu testów
+      url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Inspekcja rozwiązań
+      url: ../compliance/auditing-solutions-overview.md
+    - text: Microsoft 365 Advanced eDiscovery
+      url: ../compliance/overview-ediscovery-20.md
+  - linkListType: reference
+    links:
+    - text: ISO — zalecany plan działań
+      url: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: NIST — zalecany plan działań
+      url: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: ZESZYT — zalecany plan działań
+      url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: RODO — zalecany plan działań
+      url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: Przewodniki po rozwiązaniach zabezpieczeń
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Najważniejsze zadania dla zespołów ds. zabezpieczeń na rzecz obsługi pracy w domu
+      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Microsoft 365 dla osób decyzyjnych w biznesie (BDM)
+      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Konfiguracje tożsamości i dostępu do urządzeń
+      url: ../security/office-365-security/microsoft-365-policies-configurations.md
+    - text: Wdrażanie programu Microsoft Defender dla punktu końcowego
+      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
+    - text: Szacowanie Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: Zalecenia dotyczące zabezpieczeń dla kont priorytetowych
+      url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+    - text: Szacowanie Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: Adres dodatnich/ujemnych wyników fałszywie dodatnich w programie Microsoft Defender dla punktu końcowego
+      url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
+  - linkListType: how-to-guide
+    links:
+    - text: Przełączanie z rozwiązania ochrony punktu końcowego innych niż firma Microsoft do programu Microsoft Defender dla punktu końcowego
+      url: ../security/defender-endpoint/switch-to-mde-overview.md
+- title: Zasoby obciążenia pracą
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Analizy przypadków firmy Contoso
+      url: contoso-case-study-solutions.md
+  - linkListType: tutorial
+    links:
+    - text: Przewodniki laboratorium testowego
+      url: test-lab-guides-overview-solutions.md
+- title: Wskazówki specyficzne dla branży
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Zabezpieczenia i zgodność z przepisami dla usług finansowych
+      url: financial-services-secure-collaboration.md
+    - text: Zabezpieczenia i zgodność z przepisami dla usług w zakresie energii i narzędzi narzędziowych
+      url: energy-secure-collaboration.md
+    - text: Teams opieki zdrowotnej
+      url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Teams dla Instytucji Edukacyjnych
+      url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Teams dla instytucji rządowych
+      url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Obsługa pracowników administracji zdalnej przy użyciu Teams
+      url: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide

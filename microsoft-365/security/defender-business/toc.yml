@@ -1,0 +1,77 @@
+- name: Microsoft Defender for Business (preview)
+  href: index.yml
+  items:
+    - name: Omówienie
+      items:
+        - name: Co to jest program Microsoft Defender dla firm (w wersji Preview)?
+          href: mdb-overview.md
+        - name: Uproszczony proces konfiguracji
+          href: mdb-simplified-configuration.md
+        - name: Porównanie planów dla małych i średnich firm
+          href: compare-mdb-m365-plans.md
+        - name: Integracja z Microsoft 365 Lighthouse
+          href: mdb-lighthouse-integration.md
+    - name: Wprowadzenie
+      items:
+        - name: Pobierz usługę Defender dla firm (wersja Preview)
+          href: get-defender-business.md
+        - name: Korzystanie z kreatora konfiguracji
+          href: mdb-use-wizard.md
+        - name: Wprowadzenie do korzystania z portalu
+          href: mdb-get-started.md
+        - name: Wyświetlanie pulpitu zarządzanie lukami w zabezpieczeniach użytkownika
+          href: mdb-view-tvm-dashboard.md
+        - name: Wypróbuj samouczki i symulowania
+          href: mdb-tutorials.md
+    - name: Konfigurowanie i konfigurowanie usługi Defender dla firm
+      items:
+        - name: Omówienie konfiguracji
+          href: mdb-setup-configuration.md
+        - name: Krok 1. Przejrzyj wymagania
+          href: mdb-requirements.md
+        - name: Krok 2. Przypisywanie ról i uprawnień
+          href: mdb-roles-permissions.md
+        - name: Krok 3. Konfigurowanie powiadomień e-mail
+          href: mdb-email-notifications.md
+        - name: Krok 4. Urządzenia wyniesiene na urządzeniach
+          href: mdb-onboard-devices.md
+        - name: Krok 5. Konfigurowanie ustawień zabezpieczeń
+          href: mdb-configure-security-settings.md
+    - name: Wyświetlanie wykrytych zagrożeń i reagowanie na nie
+      items:
+        - name: Wyświetlanie zdarzeń i zarządzanie nimi
+          href: mdb-view-manage-incidents.md
+        - name: Reagowanie na zagrożenia i ograniczanie ich
+          href: mdb-respond-mitigate-threats.md
+        - name: Przeglądanie działań naprawczych
+          href: mdb-review-remediation-actions.md
+        - name: Wyświetlanie raportów i korzystanie z nich
+          href: mdb-reports.md
+    - name: Zarządzanie zasadami zabezpieczeń
+      items:
+        - name: 'Wyświetlanie, edytowanie i tworzenie zasad'
+          href: mdb-view-edit-create-policies.md
+        - name: Kolejność zasad
+          href: mdb-policy-order.md
+        - name: Ustawienia ochrony następnej generacji
+          href: mdb-next-gen-configuration-settings.md
+        - name: Ustawienia zapory
+          href: mdb-firewall.md
+        - name: Zarządzanie regułami zasad zapory
+          href: mdb-custom-rules-firewall.md
+    - name: Zarządzanie urządzeniami
+      items:
+        - name: Wyświetlanie urządzeń i zarządzanie nimi
+          href: mdb-manage-devices.md
+        - name: Tworzenie grup urządzeń
+          href: mdb-create-edit-device-groups.md
+    - name: Informacje referencyjne
+      items:
+        - name: Jak uzyskać pomoc lub skontaktować się z pomocą techniczną
+          href: mdb-get-help.md
+        - name: Często zadawane pytania
+          href: mdb-faq.yml
+        - name: Rozwiązywanie problemów
+          href: mdb-troubleshooting.yml
+        - name: Microsoft 365 Lighthouse
+          href: /microsoft-365/lighthouse/m365-lighthouse-overview

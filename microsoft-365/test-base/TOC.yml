@@ -1,0 +1,44 @@
+- name: Dokumentacja bazy testowej
+  href: index.yml
+- name: Omówienie
+  items:
+    - name: Co to jest baza testowa?
+      href: overview.md
+- name: Szybkie starty
+  items:
+    - name: Utwórz konto podstawowe testowe
+      href: createAccount.md
+    - name: Tworzenie pakietu
+      href: buildpackage.md
+    - name: Przekazywanie pakietu
+      href: uploadApplication.md
+    - name: Upload zależności & binaries
+      href: binaries.md
+    - name: Ustawianie zadań testowych
+      href: testtask.md
+    - name: Ustawianie opcji testowania
+      href: testoptions.md
+    - name: Recenzja
+      href: review.md
+    - name: Wytyczne pakietu
+      href: contentguideline.md
+    - name: Reguły aplikacji/testu
+      href: rules.md
+- name: Przewodniki po instrukcje
+  items:
+    - name: Testowanie aplikacji na serwerze
+      href: server.md
+    - name: Testy funkcjonalności
+      href: functional.md
+    - name: Sprawdzanie poprawności aktualizacji funkcji
+      href: feature.md
+    - name: Analiza regresji pamięci
+      href: memory.md
+    - name: Analiza regresji procesora
+      href: cpu.md
+    - name: SDK & API
+      href: sdkapi.md
+- name: Odwołanie
+  items:
+    - name: Często zadawane pytania
+      href: faq.md

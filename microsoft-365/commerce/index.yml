@@ -1,0 +1,82 @@
+### YamlMime:Landing
+title: Dokumentacja dotycząca subskrypcji i rozliczeń dla firm
+summary: Dowiedz się, jak kupować subskrypcje firmowe i zarządzać nimi, wykonywać zadania związane z zarządzaniem licencjami oraz zarządzać rozliczeniami i płatnościami za konta biznesowe firmy Microsoft.
+metadata:
+  title: Dokumentacja dotycząca subskrypcji i rozliczeń dla firm
+  description: Dowiedz się, jak kupować subskrypcje firmowe i zarządzać nimi, wykonywać zadania związane z zarządzaniem licencjami oraz zarządzać rozliczeniami i płatnościami za konta biznesowe firmy Microsoft.
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection:
+  - commerce
+  - Adm_TOC
+  ms.custom:
+  - commerce_landingpage
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.date: 02/27/2020
+  ms.localizationpriority: medium
+  search.appverid: MET150
+  ms.openlocfilehash: 30e99fcf7b984c2af17cbc7902bc4ff0fad6c3a6
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "62970537"
+landingContent:
+- title: Zarządzanie rozliczeniami i płatnościami
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Wyświetlanie rachunku lub faktury
+      url: billing-and-payments/view-your-bill-or-invoice.md
+    - text: Opis rachunku lub faktury
+      url: billing-and-payments/understand-your-invoice2.md
+    - text: Opłaty za subskrypcję
+      url: billing-and-payments/pay-for-your-subscription.md
+    - text: Zarządzanie metodami płatności
+      url: billing-and-payments/manage-payment-methods.md
+    - text: Zmienianie adresów rozliczeniowych
+      url: billing-and-payments/change-your-billing-addresses.md
+- title: Zarządzanie licencjami
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Kupowanie lub usuwanie licencji
+      url: licenses/buy-licenses.md
+    - text: Przypisywanie licencji do użytkowników
+      url: ../admin/manage/assign-licenses-to-users.md
+    - text: Odbieranie licencji użytkownikom
+      url: ../admin/manage/remove-licenses-from-users.md
+    - text: Informacje na temat subskrypcji i licencji
+      url: licenses/subscriptions-and-licenses.md
+    - text: Pobieranie bezterminowego oprogramowania i klucza licencji produktu
+      url: ../admin/setup/download-software-licenses-csp.md
+- title: Uaktualnianie, odnawianie lub anulowanie
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Przełączanie na inny plan
+      url: subscriptions/upgrade-to-different-plan.md
+    - text: Odnawianie subskrypcji
+      url: subscriptions/renew-your-subscription.md
+    - text: Ponowne aktywowanie subskrypcji
+      url: subscriptions/reactivate-your-subscription.md
+    - text: Anulowanie subskrypcji
+      url: subscriptions/cancel-your-subscription.md
+    - text: Zamykanie konta
+      url: close-your-account.md
+- title: Wypróbuj lub kup
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Wypróbowywanie lub kupowanie platformy Microsoft 365
+      url: try-or-buy-microsoft-365.md
+    - text: Kupowanie subskrypcji z poziomu bezpłatnej wersji próbnej
+      url: ./try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial
+    - text: Przedłużanie okresu próbnego
+      url: extend-your-trial.md#extend-your-trial
+    - text: Dodawanie miejsca do magazynowania
+      url: add-storage-space.md
+    - text: Kupowanie nazwy domeny
+      url: ../admin/get-help-with-domains/buy-a-domain-name.md
