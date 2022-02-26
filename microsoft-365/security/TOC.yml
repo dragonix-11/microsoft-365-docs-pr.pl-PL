@@ -1,0 +1,52 @@
+- name: Microsoft 365 zabezpieczeń
+  href: index.yml
+  expanded: true
+  items:
+    - name: Wprowadzenie
+      items:
+        - name: Microsoft 365 plan wdrażania zerowego zaufania
+          href: microsoft-365-zero-trust.md
+        - name: Najważniejsze zadania do obsługi pracy z domu
+          href: top-security-tasks-for-remote-work.md
+    - name: Konfiguracje zerowym zaufaniem tożsamości i dostępu do urządzeń
+      items:
+        - name: Omówienie
+          href: ./office-365-security/microsoft-365-policies-configurations.md
+        - name: Wymaganie wstępne
+          href: ./office-365-security/identity-access-prerequisites.md
+        - name: Typowe zasady dostępu do urządzeń i tożsamości
+          href: ./office-365-security/identity-access-policies.md
+        - name: Zasady dla gości i użytkowników zewnętrznych
+          href: ./office-365-security/identity-access-policies-guest-access.md
+        - name: Zalecane Teams dostępu
+          href: ./office-365-security/teams-access-policies.md
+        - name: Zalecane Exchange dostępu
+          href: ./office-365-security/secure-email-recommended-policies.md
+        - name: Zalecane SharePoint dostępu
+          href: ./office-365-security/sharepoint-file-access-policies.md
+        - name: Zasady zalecanych usług Defender dla aplikacji w chmurze dla aplikacji SaaS
+          href: ./office-365-security/mcas-saas-access-policies.md
+        - name: Ocena dostępu ciągłego
+          href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
+    - name: Microsoft 365 Defender dokumentów
+      items:
+        - name: Microsoft 365 Defender
+          href: ./defender/index.yml
+        - name: Defender for Office 365
+          href: ./office-365-security/index.yml
+        - name: Defender for Endpoint
+          href: ./defender-endpoint/index.yml
+        - name: Defender for Identity
+          href: /defender-for-identity
+        - name: Defender for Cloud Apps
+          href: /cloud-app-security
+        - name: Defender for Business
+          href: ./defender-business/index.yml
+    - name: Microsoft 365 Enterprise
+      href: ../enterprise/index.yml
+    - name: Microsoft 365 dla firm
+      href: ./index.yml
+    - name: Microsoft 365 zgodności
+      href: ../compliance/index.yml
+    - name: Zarządzanie zawartością aktywną w Office dokumentów
+      href: active-content-in-trusted-docs.md

@@ -1,0 +1,114 @@
+### YamlMime:FAQ
+metadata:
+  title: 'Pliki do pobrania : często zadawane pytania'
+  ms.author: cmcatee
+  author: cmcatee-MSFT
+  manager: scotv
+  ms.reviewer: racheg, armanv
+  ms.date: 07/22/2021
+  audience: Admin
+  ms.topic: article
+  ms.service: o365-administration
+  ms.custom: commerce_vl
+  ms.localizationpriority: medium
+  description: Często zadawane pytania dotyczące pobierania centrum administracyjne platformy Microsoft 365 pobierania.
+  ms.openlocfilehash: 5ac5fb32f968902e772c5f98beb425d74f154ac8
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "62973516"
+title: 'Pliki do pobrania : często zadawane pytania'
+summary: ''
+sections:
+- name: Ogólne
+  questions:
+  - question: >
+      Jakie są wymagania dotyczące pobierania oprogramowania ze strony centrum administracyjne platformy Microsoft 365?
+    answer: "Musisz kupić licencję na produkty, które zamierzasz pobrać, i mieć dostęp do prawidłowego klucza produktu dla każdej licencji, aby ukończyć instalację. Zweryfikuj umowę licencyjną przed pobraniem produktów.\n\nWymagania systemowe poszczególnych produktów można znaleźć > , logując się do centrum administracyjnego i przechodząc na stronę Twoje **produktyPobierze** stronę > **Opis produktu**. \n\n> [!NOTE]\n> Nie wszystkie produkty wymagają klucza produktu.\n"
+  - question: >
+      Jakie produkty można pobrać z centrum administracyjnego?
+    answer: >
+      Jeśli Twoje prawa pobierania są skojarzone z programem Open License, Open Value lub Open Value Subscription, możesz pobrać tylko te produkty, które zostały już kupione. Centrum administracyjne wyświetla pliki do pobrania tylko dla licencji, które zostały kupione.
+
+
+      Inne programy licencjonowania (Select Plus, Enterprise, Campus lub School) pozwalają pobrać dowolny produkt z wykazu przed zakupem licencji.
+
+
+      Jeśli Twój profil jest połączony zarówno z programem Otwórz, jak i z innymi programami licencjonowania, możesz wyświetlić cały wykaz.
+
+
+      Aby ustalić, czy produkt można pobrać:
+
+        1. Wybierz **pozycję Licencjonowanie zbiorowe**, a następnie wybierz produkt lub **Wyświetl pobrane pliki**.
+        2. W **obszarze** Pobierz, jeśli produkt jest niedostępny, zostanie wyświetlony opis "Ten produkt nie jest dostępny do pobrania".
+  - question: >
+      Co to jest licencja dostępu klienta?
+    answer: >
+      Licencja dostępu klienta (CAL) to licencja, która daje użytkownikowi prawo dostępu do usług serwera.
+
+
+      Do aktywacji cal nie jest potrzebny plik do pobrania oprogramowania ani klucz produktu. Zamiast tego produkt zostanie aktywowany i zainstalowany za pośrednictwem kreatora aktywacji bezpośrednio z komputera.
+
+
+      Oto przykłady certyfikacji:
+        - Serwer z systemem Windows
+        - SQL Server
+        - Exchange Server
+        - Skype dla firm Server
+        - SharePoint Server
+        - System Center
+        - Project Server
+  - question: "Jak pobrać Office dla komputerów Mac? \n"
+    answer: >
+      Aby uruchomić wersję pakietu Office dla komputerów Mac licencjonowania zbiorowego, musisz pobrać i zainstalować następujące pliki:
+        - Pakiet [serializatora licencji zbiorowej](/deployoffice/mac/volume-license-serializer) znajdujący się w Office dla komputerów Mac pliku pobierania.
+        - Pakiet [Office dla komputerów Mac instalacyjny](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Pliki pakietów instalatora dla poszczególnych aplikacji są również dostępne na centrum administracyjne platformy Microsoft 365. Office dla komputerów Mac nie wymaga klucza produktu, ponieważ program VL Serializer służy do aktywowania wersji programu Office dla komputerów Mac.
+  - question: >
+      Jak pobrać produkty z centrum administracyjnego?
+    answer: "Aby pobrać produkty z centrum administracyjnego:\n1. Wybierz **pozycję Licencjonowanie zbiorowe**, a następnie wybierz produkt lub **Wyświetl pobrane pliki**.\n2. W **obszarze** Pobierz wybierz składnik i wybierz akcję pobierania lub ikonę pobierania. \n\nAby uzyskać dostęp do plików do pobrania w centrum administracyjnym, administrator VLSC w Twojej organizacji może udzielić Ci dostępu, przypisując Ci jedną z tych ról:\n  - Administrator\n  - Pobierz\n  - Menedżer software Assurance\n"
+  - question: >
+      Jak zmienić ustawienia pobierania?
+    answer: >
+      Aby uzyskać dostęp do ustawień pobierania w centrum administracyjnym:
+
+      1. Wybierz **pozycję Licencjonowanie zbiorowe**, a następnie wybierz produkt lub **Wyświetl pobrane pliki**.
+
+      2. W **obszarze Pobierz** wybierz **pozycję Typ** **języka i systemu operacyjnego**.
+
+
+      > [!NOTE]
+
+      > Blokowanie wyskakujących okienek może blokować pobieranie. Upewnij się, że blokowanie wyskakujących okienek jest wyłączone podczas pobierania oprogramowania z centrum administracyjnego.
+  - question: >
+      Co to są pliki EXE i ISO?
+    answer: "Pobierając produkty z centrum administracyjnego, możesz wybrać dwa typy plików:\n  \n  - **Pliki wykonywalne (EXE)** można pobierać i instalować w tym samym systemie, ale nie można tworzyć osobnych dyskietek rozruchowych do instalacji na innych komputerach.\n  - **Pliki obrazów ISO (International Standards Organization)** są dokładnymi reprezentacjami zawartości i formatu logicznego. Możesz je zainstalować na komputerze używanym do pobierania pakietu lub zapisać pliki na dyskach w celu rozpowszechniania i instalowania na innych komputerach.\n\n> [!NOTE]\n> Nie wszystkie produkty są dostępne we wszystkich językach i we wszystkich formatach.\n"
+  - question: >
+      Jak pobrać i zapisać plik obrazu ISO na dysku CD-R lub DVD-R za pomocą oprogramowania do plików obrazów ISO?
+    answer: >
+      Jeśli używasz komputera z systemem operacyjnym Windows, nie potrzebujesz dodatkowego oprogramowania, aby nagrać dysk CD-R lub DVD-R. Kliknij dwukrotnie pobrany plik ISO, a następnie postępuj zgodnie z instrukcjami Kreatora kreatorów obrazów.
+
+
+      Jeśli korzystasz z systemu operacyjnego innego niż Windows, może być potrzebne dodatkowe oprogramowanie. Jeśli Komputer jest wyposażony w dysk CD/DVD, prawdopodobnie oprogramowanie jest ładowane na komputerze. Większość programów do pisania dysków CD-R/DVD-R umożliwia tworzenie dysku na podstawie pliku obrazu. Wybierz element menu, taki jak **Kopiuj obraz na dysk CD** lub **Nagraj obraz, aby uzyskać** dostęp do tej funkcji.
+  - question: >
+      Jak  zainstalować pliki ISO i uzyskać do nich dostęp jako urządzenie wirtualne?
+    answer: >
+      Jeśli na komputerze lub nośniku nie jest zainstalowany dysk CD/DVD, możesz zainstalować plik ISO jako dysk wirtualny. Dzięki tej metodzie komputer tak uważa, że plik jest prawdziwym dyskiem twardym i można odczytywać pliki z tego dysku wirtualnego.
+
+
+      > [!NOTE]
+
+      > Ta metoda jest zalecana tylko w przypadku instalowania aplikacji, takich Office lub drobnych uaktualnień systemu. Nie można zainstalować systemu operacyjnego przy użyciu tej metody, ponieważ dysk wirtualny znika podczas instalacji.
+  - question: >
+      Jak uzyskać pomoc techniczną dla pobranych produktów?
+    answer: >
+      Aby uzyskać listę opcji pomocy technicznej, zobacz [Pomoc techniczna Microsoft](https://support.microsoft.com/). Niektórzy klienci korzystający z licencjonowania zbiorowego mogą korzystać z pomocy technicznej dotyczącej rozwiązywania problemów, korzyści software Assurance. Przejrzyj korzyści z pakietu Software Assurance, aby potwierdzić swoje uprawnienia.
+  - question: >
+      Gdzie można znaleźć pomoc techniczną dla tematów poruszanych w tych często zadawanych pytaniach?
+    answer: >
+      Aby uzyskać więcej zasobów szkoleniowych, w tym klipy wideo, zobacz Szkolenia i zasoby [dotyczące centrum Volume Licensing Service Center firmy Microsoft](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
+  - question: >
+      Jak mogę skontaktować się z pomocą techniczną firmy Microsoft?
+    answer: >
+      Aby uzyskać informacje na temat telefonicznej pomocy technicznej dotyczącej klienta VLSC lub formularza sieci Web, zobacz [Kontakt z nami](/licensing/contact-us). Firma Microsoft odpowie na przesłanie formularza sieci Web w ciągu 24 godzin.
+additionalContent: "\n## <a name=\"additional-resources\"></a>Dodatkowe materiały\n\n- [Klucze produktu — często zadawane pytania](product-keys-faq.yml)\n\n- [Aktywacja usług online dla otwartych programów — często zadawane pytania](online-service-activation-faq.yml)"

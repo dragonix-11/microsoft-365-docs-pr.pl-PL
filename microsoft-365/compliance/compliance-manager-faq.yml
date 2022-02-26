@@ -1,0 +1,112 @@
+### YamlMime:FAQ
+metadata:
+  title: Menedżer zgodności firmy Microsoft — często zadawane pytania
+  f1.keywords:
+  - NOCSH
+  ms.author: v-jgriffee
+  author: jmgriffee
+  manager: laurawi
+  audience: Admin
+  ms.topic: article
+  ms.service: O365-seccomp
+  ms.localizationpriority: medium
+  ms.collection: M365-security-compliance
+  search.appverid:
+  - MOE150
+  - MET150
+  description: Znajdź odpowiedzi na często zadawane pytania dotyczące menedżera zgodności firmy Microsoft, które ułatwiają organizacjom uproszczenie i zautomatyzowanie oceny ryzyka.
+  ms.openlocfilehash: d1abfc3cb951197927b13cf1e15a3481a302cf68
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "62973677"
+title: Menedżer zgodności z często zadawanych pytaniami
+summary: ''
+sections:
+- name: Zignorowano
+  questions:
+  - question: >
+      Czy wyniki Menedżera zgodności i zgodności są takie same, czy inne?
+    answer: >
+      Jest teraz tylko jedno rozwiązanie: Menedżer zgodności. Ta sekcja zawiera omówienie tego przejścia, począwszy od podstawowego o omówienie poniżej. Pomocne może się również okazać przejście bezpośrednio do jednej z następujących sekcji:
+
+
+      - [W organizacji używaliśmy głównie Menedżera zgodności (klasycznej lub publicznej wersji Preview) znajdującego się w Portalu zaufania usług firmy Microsoft](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
+
+
+      - [W organizacji przede wszystkim był używany wynik zgodności (publiczna wersja zapoznawcza), który znajduje się w Centrum zgodności platformy Microsoft 365](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
+
+
+      - [Twoja organizacja to nowość w Menedżerze zgodności](#youre-new-to-compliance-manager
+
+      )
+
+      ### <a name="the-basics"></a>Podstawy
+
+
+      Menedżer zgodności firmy Microsoft rozpoczął pracę jako rozwiązanie do zarządzania zgodnością w Portalu zaufania usług firmy Microsoft.  Ponieważ rozwiązania dotyczące zgodności zapadły w Centrum zgodności platformy Microsoft 365, opracowaliśmy nowe środowisko z bardziej przyjaznym dla użytkownika projektem dla tej lokalizacji. Publiczna wersja zapoznawcza wyników zgodności została opublikowana w Centrum zgodności platformy Microsoft 365 listopada 2019 r. Wynik zgodności współużytkuje tę samą bramę, co Menedżer zgodności, dzięki czemu klienci mogą pracować w obu tych miejscach. Od listopada 2019 r. wydaliśmy kilka aktualizacji, ponieważ obudowaliśmy nowe funkcje i reagowaliśmy na opinie klientów.
+
+
+      Ta zmiana zakończy się ogólną dostępnością Menedżera zgodności w Centrum zgodności platformy Microsoft 365 we wrześniu 2020 r. Menedżer zgodności to ujednolicone, end-to-end rozwiązanie do zachowania zgodności. Twój wynik zgodności pozostaje kluczowym elementem Menedżera zgodności.
+
+
+      Przeczytaj ten [wpis w blogu,](https://aka.ms/compliancemanager/GAblog) aby dowiedzieć się więcej o tym, co nowego w wersji Menedżera zgodności w zakresie zgodności.
+
+
+      ### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>Twoja organizacja regularnie korzystała z Menedżera zgodności w Portalu zaufania usług
+
+
+      Jeśli w Portalu zaufania usług był używany Menedżer zgodności, wszystkie dane organizacji są teraz dostępne w Menedżerze zgodności w Centrum zgodności platformy Microsoft 365 stronie https://compliance.microsoft.com/compliancemanager. Nie musisz nic robić, aby wznowić pracę Menedżera zgodności w jego nowej lokalizacji. Możesz też zaktualizować zakładki do poprzedniej lokalizacji. Wszystkie twoje oceny i inne dane zostały już dla Ciebie przeniesiene.
+
+
+      Menedżer zgodności (wersja zapoznawcza) nie jest już dostępny w Portalu zaufania usług, a wszystkie linki do niego przekierowują Cię do jego nowej lokalizacji w Centrum zgodności platformy Microsoft 365.
+
+
+      Wszystko, co wcześniej było wykonywane w poprzednich wersjach Menedżera zgodności, takie jak wykonywanie akcji (obecnie nazywanych "działaniami udoskonalania") i tworzenie ocen, można wykonać w nowym Menedżerze zgodności. Dodaliśmy ponad 150 nowych szablonów oceniania i ulepszyliśmy proces tworzenia szablonów. W przyszłych wersjach dodamy kolejne ulepszenia.
+
+
+      Poniżej przedstawiono kilka przydatnych zasobów:
+
+
+      - [Zapoznaj się z nowym interfejsem Menedżera zgodności](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
+
+      - [Znajdowanie uprawnień i innych informacji o konfiguracji do Menedżera zgodności w jego nowej siedzibie](compliance-manager-setup.md#who-can-access-compliance-manager)
+
+      - [Dowiedz się więcej o Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center.md)
+
+
+      ### <a name="your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center"></a>Twoja organizacja użyła wyniku zgodności (podglądu publicznego) w Centrum zgodności platformy Microsoft 365
+
+
+      Jeśli w podglądzie publicznym został użyty Wynik zgodności, zauważysz, że Menedżer zgodności wygląda znacznie tak samo, a Twój wynik znajduje się na pulpicie nawigacyjnym. W wersji ga nie musisz już opuszczać grupy Centrum zgodności platformy Microsoft 365, aby wykonać pewne funkcje zarządzania ocenami, takie jak tworzenie i modyfikowanie szablonów dla potrzeb oceny. Wszystkie funkcje znajdują się teraz w jednym miejscu. Wszystkie dane, które miały być w wersji Preview wyników zgodności, pozostają w wersji Menedżera zgodności z chcą dostępną w edyt.
+
+
+      Pamiętaj, że jeśli widok pulpitu nawigacyjnego wyników zgodności został przefiltrowany, filtry te zostały zresetowane po wdrożeniu nowego Menedżera zgodności we wrześniu. Konieczne będzie ponowne aplikacji wszystkich filtrów, które były wcześniej.
+
+
+      Menedżer zgodności ma również nowe postanowienia licencyjne. Zobacz poniższe pytanie dotyczące licencjonowania.
+
+
+      ### <a name="youre-new-to-compliance-manager"></a>Jesteś nowym użytkownikiem Menedżera zgodności
+
+
+      Menedżer zgodności to rozwiązanie end-to-end w aplikacji Centrum zgodności platformy Microsoft 365 zarządzania działaniami zgodności i śledzenia ich. Jest to doskonałe miejsce do rozpoczęcia podróży dotyczącej zgodności, ponieważ umożliwia wstępną ocenę stanu zgodności podczas pierwszej wizyty. Poniżej znajdują się dobre miejsca, w których można rozpocząć naukę więcej:
+
+
+      - [Omówienie Menedżera zgodności](compliance-manager.md)
+
+      - [Skorzystaj z naszego przewodnika Szybki start, aby ułatwić szybkie rozpoczęcie pracy na różnych etapach](compliance-manager-quickstart.md)
+
+      - [Dowiedz się więcej o Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center.md)
+  - question: >
+      Czy istnieją wymagania licencyjne dotyczące korzystania z Menedżera zgodności?
+    answer: >
+      Tak. Wersja ga w Menedżerze zgodności zawiera nowe postanowienia licencyjne. Wszystkie organizacje z licencjami Office 365 i Microsoft 365 oraz klienci z usługami Government Community (GCC) Moderate, GCC High i Department of Defense (DoD) mają dostęp do Menedżera zgodności. Jednak to, jakie oceny są dostępne dla Twojej organizacji i jak zarządzasz szablonami formularzy oceniania, zależy od umowy licencyjnej. Aby uzyskać szczegółowe [Microsoft 365, zobacz wskazówki](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) dotyczące licencjonowania zbiorowego dotyczące zabezpieczeń i zgodności.
+  - question: >
+      Jeśli mam wysoki wynik, czy oznacza to, że jestem w pełni zgodny?
+    answer: >
+      L.p. Twój wynik zgodności mierzy postęp wykonywania zalecanych działań, które ułatwiają zmniejszenie ryzyka związanego z ochroną danych i normami regulacyjną. Nie wyraża ona bezwzględnej miary zgodności organizacyjnej w odniesieniu do określonego standardu lub przepisów. Menedżer zgodności i twój wynik zgodności nie powinny być w jakikolwiek sposób interpretowane jako gwarancje.
+  - question: >
+      Czy mogę używać Menedżera zgodności dla produktów innych niż firmy Microsoft?
+    answer: Menedżer zgodności zapewnia ciągłe monitorowanie i zalecane działania tylko dla usług firmy Microsoft w chmurze, ale w Menedżerze zgodności można dodawać oceny niestandardowe dla usług innych firm. W ten sposób możesz używać Menedżera zgodności firmy Microsoft jako narzędzia do zarządzania zgodnością SaaS, aby ułatwić zarządzanie wszystkimi kontrolkami w swoich cyfrowych zasobami.

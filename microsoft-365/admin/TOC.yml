@@ -1,0 +1,476 @@
+- name: centrum administracyjne platformy Microsoft 365 pomoc
+  href: index.yml
+  items:
+    - name: 20 najlepszych artykułów pomocy dla administratorów
+      href: top-m365-admin-articles.yml
+    - name: Biblioteka szkoleniowa dla administratorów
+      href: admin-video-library.yml
+    - name: Wprowadzenie
+      items:
+        - name: Zarejestruj się
+          href: admin-overview/sign-up-for-office-365.md
+        - name: Wypróbowywanie lub kupowanie platformy Microsoft 365
+          href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Planowanie konfiguracji usługi Microsoft 365 dla firm
+          href: setup/plan-your-setup.md
+        - name: Zarejestruj się w celu Microsoft 365 Business Premium
+          items:
+            - name: Zarejestruj się
+              href: ../business/sign-up.md
+            - name: Konfigurowanie Microsoft 365 Business Premium przy użyciu kreatora konfiguracji
+              href: ../business/set-up.md
+            - name: Microsoft 365 Business Premium (wideo)
+              href: admin-overview/what-is-microsoft-365.md
+        - name: 'Zarejestruj się, aby Microsoft 365 Business Standard'
+          items:
+            - name: 'Zarejestruj się, aby Microsoft 365 Business Standard'
+              href: ../admin/simplified-signup/signup-business-standard.md
+            - name: Konfigurowanie Microsoft 365 Business Standard
+              href: ../admin/setup/setup-business-standard.md
+            - name: Zapraszanie użytkowników do Microsoft 365 Business Standard
+              href: ../admin/simplified-signup/admin-invite-business-standard.md
+            - name: Zaakceptowanie zaproszenia e-mail do Microsoft 365 Business Standard
+              href: ../admin/simplified-signup/user-invite-business-standard.md
+            - name: 'Akceptowanie wiadomości e-mail z zaproszeniem Microsoft 365 Business Standard organizacji korzystającej z konta Outlook, Yahoo, Gmail lub innego konta'
+              href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
+            - name: Migrowanie danych do mojej Microsoft 365 Business Standard subskrypcji usługi
+              href: ../admin/simplified-signup/migrate-data-business-standard.md
+        - name: Zarejestruj się Microsoft Apps dla firm
+          items:
+            - name: 'Zarejestruj się, aby Aplikacje Microsoft 365 dla firm'
+              href: setup/signup--apps-business.md
+            - name: Konfigurowanie dla Aplikacje Microsoft 365 dla firm
+              href: setup/setup-apps-for-business.md
+        - name: Konfigurowanie Microsoft 365 Business Basic
+          items:
+            - name: Microsoft 365 Business Basic
+              href: setup/setup-business-basic.md
+        - name: Poznawanie strony i kreatora Konfiguracji
+          href: setup/o365-setup-wizard-and-setup-page.md
+        - name: Zabezpieczanie Windows 10 komputerach
+          href: setup/secure-win-10-pcs.md
+        - name: Pobierz oprogramowanie i klucze produktu
+          href: setup/download-software-licenses-csp.md
+        - name: Instalowanie Office aplikacji
+          href: setup/install-applications.md
+        - name: Konfigurowanie urządzeń z systemem Windows
+          href: setup/set-up-windows-devices.md
+        - name: Konfigurowanie urządzeń przenośnych
+          href: setup/set-up-mobile-devices.md
+        - name: Konfigurowanie poczty e Outlook dla Microsoft 365-mail dla firm (klip wideo)
+          href: setup/setup-outlook.md
+        - name: Przenoszenie plików do OneDrive (wideo)
+          href: setup/files-to-onedrive.md
+        - name: Przenoszenie plików do SharePoint (wideo)
+          href: setup/files-to-sharepoint.md
+        - name: Migrowanie danych do Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
+        - name: Wdrażanie usługi Teams
+          href: /microsoftteams/how-to-roll-out-teams?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
+        - name: Szkolenia dotyczące aplikacji dla wszystkich użytkowników
+          href: 'https://support.microsoft.com/training'
+        - name: Jaką mam subskrypcję?
+          href: admin-overview/what-subscription-do-i-have.md
+        - name: Dostosowywanie strony logowania
+          href: setup/customize-sign-in-page.md
+        - name: Dostosowywanie motywu organizacji
+          href: setup/customize-your-organization-theme.md
+        - name: Użytkownicy i zasoby lokalnego programu Access
+          items:
+            - name: Synchronizowanie użytkowników domeny z Microsoft 365
+              href: setup/manage-domain-users.md
+            - name: Włączanie zarządzania urządzeniami Windows 10 przyłączone do domeny
+              href: setup/manage-windows-devices.md
+            - name: Uzyskiwanie dostępu do zasobów z urządzenia połączonego z usługą Azure AD
+              href: setup/access-resources.md
+    - name: Omówienie centrum administracyjne platformy Microsoft 365
+      items:
+        - name: Omówienie centrum administracyjnego
+          href: admin-overview/admin-center-overview.md
+        - name: Role administratora — informacje
+          href: add-users/about-admin-roles.md
+        - name: Aplikacja mobilna Administrator
+          href: admin-overview/admin-mobile-app.md
+        - name: Co nowego w centrum administracyjnym
+          href: whats-new-in-preview.md
+        - name: Wyszukiwanie w centrum administracyjne platformy Microsoft 365
+          href: manage/search-in-the-mac.md
+        - name: Bycie na bieżąco ze zmianami
+          href: manage/stay-on-top-of-updates.md
+        - name: Zarządzanie wieloma dzierżawami
+          href: multi-tenant/manage.md
+    - name: Usługa Office 365 obsługiwana przez firmę 21Vianet
+      items:
+        - name: Informacje o usłudze Office 365 obsługiwanej przez firmę 21Vianet
+          href: services-in-china/services-in-china.md
+        - name: Pobierz aplikację aplikacja pakietu Office dla systemu Android dla Office 365 obsługiwanej przez firmę 21Vianet
+          href: services-in-china/download-office-app-for-Android.md
+        - name: Pobierz aplikację aplikacja pakietu Office dla systemu iOS dla Office 365 obsługiwanej przez firmę 21Vianet
+          href: services-in-china/download-office-app-for-iOS.md
+        - name: Składanie wniosku o potwierdzenie Fapiao
+          href: services-in-china/apply-for-a-fapiao.md
+        - name: Pomoc techniczna do usługi Azure Information Protection
+          href: services-in-china/parity-between-azure-information-protection.md
+    - name: 'Zarządzanie użytkownikami, grupami i hasłami'
+      items:
+        - name: Użytkownicy
+          items:
+            - name: Dodawanie użytkowników
+              href: add-users/add-users.md
+            - name: Dodawanie nowego pracownika
+              href: add-users/add-new-employee.md
+            - name: Przypisywanie licencji do użytkowników
+              href: manage/assign-licenses-to-users.md
+            - name: Przypisywanie ról administratora
+              href: add-users/assign-admin-roles.md
+            - name: Odbieranie licencji użytkownikom
+              href: manage/remove-licenses-from-users.md
+            - name: Użytkownicy goście
+              href: add-users/about-guest-users.md
+            - name: Dodawanie użytkowników gości do Microsoft 365 grupy
+              href: create-groups/manage-guest-access-in-groups.md
+            - name: Zmienianie nazwy użytkownika i adresu e-mail
+              href: add-users/change-a-user-name-and-email-address.md
+            - name: Przywracanie użytkownika
+              href: add-users/restore-user.md
+            - name: Tworzenie szablonu w celu dodania użytkowników
+              href: add-users/create-and-use-a-template-to-add-users.md
+            - name: Uaktualnianie użytkowników do najnowszych aplikacji
+              href: setup/upgrade-users-to-latest-office-client.md
+        - name: Usuwanie byłego pracownika
+          items:
+            - name: Omówienie
+              href: add-users/remove-former-employee.md
+            - name: Krok nr 1. Uniemożliwianie pracownikowi logowania się i blokowania dostępu do Microsoft 365 usług
+              href: add-users/remove-former-employee-step-1.md
+            - name: Krok nr 2. Zapisywanie zawartości skrzynki pocztowej byłego pracownika
+              href: add-users/remove-former-employee-step-2.md
+            - name: Krok nr 3. Czyszczenie i blokowanie urządzenia przenośnego byłego pracownika
+              href: add-users/remove-former-employee-step-3.md
+            - name: Krok nr 4. Przesyłanie dalej wiadomości e-mail byłego pracownika do innego pracownika lub konwertowanie na udostępnioną skrzynkę pocztową
+              href: add-users/remove-former-employee-step-4.md
+            - name: Krok nr 5. Umożliwianie iniudzyjom dostępu OneDrive i Outlook pracowników
+              href: add-users/remove-former-employee-step-5.md
+            - name: Krok 6. Usuwanie licencji Microsoft 365 od byłego pracownika
+              href: add-users/remove-former-employee-step-6.md
+            - name: Krok 7. Usuwanie konta użytkownika byłego pracownika
+              href: add-users/remove-former-employee-step-7.md
+        - name: Grupy
+          items:
+            - name: Omówienie grup
+              href: create-groups/office-365-groups.md
+            - name: Porównanie grup
+              href: create-groups/compare-groups.md
+            - name: Tworzenie grupy
+              href: create-groups/create-groups.md
+            - name: Objaśnij grupy
+              href: create-groups/explain-groups-knowledge-worker.md
+            - name: Zarządzanie grupami
+              href: create-groups/manage-groups.md
+            - name: Dodawanie lub usuwanie członków grupy
+              href: create-groups/add-or-remove-members-from-groups.md
+            - name: Przywracanie usuniętej grupy
+              href: create-groups/restore-deleted-group.md
+            - name: Zarządzanie dostępem gości do grup
+              href: create-groups/manage-guest-access-in-groups.md
+        - name: Hasła
+          items:
+            - name: Resetowanie haseł
+              href: add-users/reset-passwords.md
+            - name: Zezwalanie użytkownikom na resetowanie haseł
+              href: add-users/let-users-reset-passwords.md
+            - name: 'Konfigurowanie haseł tak, aby nigdy nie wygasały'
+              href: add-users/set-password-to-never-expire.md
+            - name: Ponowne wysyłanie haseł użytkowników
+              href: add-users/resend-user-password.md
+            - name: Wyłączanie silnych haseł
+              href: add-users/strong-password.md
+            - name: Ustawianie zasad wygasania hasła
+              href: manage/set-password-expiration-policy.md
+    - name: Zarządzanie pocztą e-mail i kalendarzami
+      items:
+        - name: Informacje o ustawieniach poczty e-mail użytkownika
+          href: email/office-365-user-email-settings.md
+        - name: Dodawanie kolejnego aliasu e-mail użytkownika
+          href: email/add-another-email-alias-for-a-user.md
+        - name: Używanie domeny niestandardowej
+          href: email/change-email-address.md
+        - name: Migrowanie wiadomości e-mail i kontaktów do Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
+        - name: Tworzenie podpisów i zastrzeżeń
+          href: setup/create-signatures-and-disclaimers.md
+        - name: 'Tworzenie, edytowanie lub usuwanie grupy zabezpieczeń'
+          href: email/create-edit-or-delete-a-security-group.md
+        - name: Konfigurowanie przesyłania dalej poczty e-mail
+          href: email/configure-email-forwarding.md
+        - name: Udostępnione skrzynki pocztowe
+          items:
+            - name: Udostępnione skrzynki pocztowe — informacje
+              href: email/about-shared-mailboxes.md
+            - name: Tworzenie udostępnionej skrzynki pocztowej
+              href: email/create-a-shared-mailbox.md
+            - name: Konfigurowanie ustawień udostępnionej skrzynki pocztowej
+              href: email/configure-a-shared-mailbox.md
+            - name: Konwertowanie skrzynki pocztowej użytkownika na udostępnioną skrzynkę pocztową
+              href: email/convert-user-mailbox-to-shared-mailbox.md
+            - name: Usuwanie licencji z udostępnionej skrzynki pocztowej
+              href: email/remove-license-from-shared-mailbox.md
+            - name: Rozwiązywanie problemów z udostępnionymi skrzynkami pocztowymi
+              href: email/resolve-issues-with-shared-mailboxes.md
+        - name: Konfigurowanie focused skrzynki odbiorczej
+          href: setup/configure-focused-inbox.md
+        - name: Dodawanie użytkownika lub kontaktu do grupy dystrybucyjnej
+          href: email/add-user-or-contact-to-distribution-list.md
+        - name: Zarządzanie bałaganem w organizacji
+          href: email/configure-clutter.md
+    - name: Zarządzanie domenami
+      items:
+        - name: Dodawanie domeny
+          href: setup/add-domain.md
+        - name: Kupowanie domeny
+          href: get-help-with-domains/buy-a-domain-name.md
+        - name: Usuwanie domeny
+          href: get-help-with-domains/remove-a-domain.md
+        - name: Przenoszenie domeny z Microsoft 365 do innego hosta
+          href: get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md
+        - name: Pilotaż Microsoft 365 z mojej domeny niestandardowej
+          href: misc/pilot-microsoft-365-from-my-custom-domain.md
+        - name: Często zadawane pytania dotyczące domen
+          href: setup/domains-faq.yml
+        - name: Instrukcje dotyczące systemu DNS
+          items:
+            - name: Zmienianie serwerów nazw na dowolnym hoście DNS
+              href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
+            - name: Tworzenie rekordów DNS na dowolnym hoście DNS
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+        - name: Rozwiązywanie problemów z domenami
+          href: get-help-with-domains/find-and-fix-issues.md
+    - name: Zarządzanie danymi i usługami
+      items:
+        - name: Monitorowanie Microsoft 365 za pomocą raportów
+          href: activity-reports/activity-reports.md
+        - name: Microsoft Productivity Score — omówienie
+          href: productivity/productivity-score.md
+          items:
+            - name: Współpraca nad zawartością
+              href: productivity/content-collaboration.md
+            - name: Komunikacja
+              href: productivity/communication.md
+            - name: Mobilność
+              href: productivity/mobility.md
+            - name: Praca zespołowa
+              href: productivity/teamwork.md
+            - name: Spotkania
+              href: productivity/meetings.md
+            - name: Aplikacje Microsoft 365 kondycji
+              href: productivity/apps-health.md
+            - name: Analiza punktu końcowego
+              href: /mem/analytics/productivity-score
+        - name: Zmienianie informacji kontaktowych organizacji
+          href: manage/change-address-contact-and-more.md
+        - name: Aktualizowanie informacji kontaktowych administratora
+          href: manage/update-phone-number-and-email-address.md
+        - name: Dostosowywanie ikony uruchamiania aplikacji
+          href: manage/customize-the-app-launcher.md
+        - name: Przypinanie aplikacji do ikony Uruchamianie aplikacji użytkowników
+          href: manage/pin-apps-to-app-launcher.md
+        - name: Uaktualnianie użytkowników do najnowszych aplikacji
+          href: setup/upgrade-users-to-latest-office-client.md
+        - name: Zintegrowane aplikacje
+          href: manage/test-and-deploy-microsoft-365-apps.md
+        - name: Scentralizowane wdrażanie dodatków
+          items:
+            - name: Wymagania dotyczące scentralizowanego wdrażania dodatków
+              href: manage/centralized-deployment-of-add-ins.md
+            - name: Wdrażanie dodatki w centrum administracyjnym
+              href: manage/manage-deployment-of-add-ins.md
+            - name: Zarządzanie dodatki w centrum administracyjnym
+              href: manage/manage-addins-in-the-admin-center.md
+            - name: Często zadawane pytania dotyczące scentralizowanego wdrażania
+              href: manage/centralized-deployment-faq.yml
+        - name: Zarządzanie wiadomościami branżowymi
+          href: manage/manage-industry-news.md
+        - name: Zarządzanie Office skryptów
+          href: manage/manage-office-scripts-settings.md
+        - name: Znajdowanie partnera lub sprzedawcy ponownego
+          href: manage/find-your-partner-or-reseller.md
+        - name: Zarządzanie opiniami firmy Microsoft dla Twojej organizacji
+          href: /admin/manage/manage-feedback-ms-org.md
+        - name: Konfigurowanie opcji wydań
+          href: manage/release-options-in-office-365.md
+        - name: Pokazywanie lub ukrywanie nowych funkcji
+          href: manage/show-hide-new-features.md
+        - name: "Analiza użycia usługi Power\_BI"
+          items:
+            - name: Analiza użycia informacje
+              href: usage-analytics/usage-analytics.md
+            - name: Włączanie analizy użycia
+              href: usage-analytics/enable-usage-analytics.md
+            - name: Uzyskiwanie najnowszej wersji analizy użycia
+              href: usage-analytics/get-the-latest-version-of-usage-analytics.md
+            - name: Nawigowanie po raportach i korzystanie z nich
+              href: usage-analytics/navigate-and-utilize-reports.md
+            - name: Informacje o aktywnych użytkownikach w raportach użycia
+              href: usage-analytics/active-user-in-usage-reports.md
+            - name: Dostosowywanie raportów
+              href: usage-analytics/customize-reports.md
+            - name: Analiza użycia z Microsoft 365 GCC
+              href: usage-analytics/connect-to-gcc-data-with-usage-analytics.md
+            - name: Informacje o modelu danych analizy użycia
+              href: usage-analytics/usage-analytics-data-model.md
+            - name: Rozwiązywanie problemów z analizą użycia
+              href: usage-analytics/usage-analytics-errors.md
+        - name: Microsoft 365 integracji z obsługą usługi z przewodnikiem konfiguracji ServiceNow
+          items:
+            - name: Omówienie konfiguracji
+              href: manage/servicenow-overview.md
+            - name: Konfigurowanie uwierzytelniania podstawowego
+              href: manage/servicenow-basic-authentication.md
+            - name: Konfigurowanie przy użyciu tokenu uwierzytelniania usługi Azure AD
+              href: manage/servicenow-aad-oauth-token.md
+            - name: Testowanie konfiguracji
+              href: manage/servicenow-testing-the-configuration.md
+            - name: Rozwiązywanie problemów
+              href: manage/servicenow-troubleshooting.md
+    - name: Zarządzanie subskrypcjami i rozliczeniami
+      href: ../commerce/index.yml
+    - name: Zabezpieczanie organizacji
+      items:
+        - name: 10 najlepszych sposobów zabezpieczania danych
+          href: security-and-compliance/secure-your-business-data.md
+        - name: Uwierzytelnianie wieloskładnikowe dla Microsoft 365
+          href: security-and-compliance/multi-factor-authentication-microsoft-365.md
+        - name: Konfigurowanie uwierzytelniania wieloskładnikowego
+          href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: Zarządzanie kontami priorytetów i monitorowanie ich
+          href: setup/priority-accounts.md
+        - name: Włączanie nowoczesnego uwierzytelniania dla Office 2013
+          href: security-and-compliance/enable-modern-authentication.md
+        - name: Wymagania wstępne dotyczące ochrony danych
+          href: security-and-compliance/pre-requisites-for-data-protection.md
+        - name: Funkcje zabezpieczeń
+          href: security-and-compliance/secure-your-business-data.md
+        - name: Zwiększanie ochrony przed zagrożeniami
+          href: security-and-compliance/increase-threat-protection.md
+        - name: Zagrożenia wykryte przez Program antywirusowy Microsoft Defender
+          href: security-and-compliance/threats-detected-defender-av.md
+        - name: Przeglądanie wykrytych zagrożeń i działanie
+          href: security-and-compliance/review-threats-take-action.md
+        - name: Konfigurowanie funkcji zgodności
+          href: security-and-compliance/set-up-compliance.md
+        - name: Secure score
+          href: /microsoft-365/security/defender/microsoft-secure-score
+        - name: Przewodnik dotyczący zgodności z RODO
+          href: security-and-compliance/gdpr-compliance.md
+    - name: Zarządzanie urządzeniami i danymi aplikacji
+      items:
+        - name: Metody ochrony danych urządzeń i aplikacji
+          href: devices/choose-device-security.md
+        - name: Microsoft Intune dokumentacji
+          href: /mem/intune/
+        - name: Wyświetlanie i edytowanie zasad i urządzeń
+          href: devices/view-policies-and-devices.md
+        - name: Usuwanie firmowych danych
+          href: devices/remove-company-data.md
+        - name: Resetowanie urządzeń do ustawień fabrycznych
+          href: devices/reset-devices-to-factory-settings.md
+        - name: Funkcje ochrony mapy dla ustawień usługi Intune
+          href: devices/map-protection-features-to-intune-settings.md
+        - name: Stany urządzeń
+          href: devices/device-states.md
+        - name: Ustawienia ochrony aplikacji dla Windows 10 PC
+          href: devices/protection-settings-for-windows-10-devices.md
+        - name: Konfigurowanie ustawień ochrony aplikacji dla systemów Android i iOS
+          href: devices/app-protection-settings-for-android-and-ios.md
+          items:
+            - name: Sprawdzanie poprawności ustawień w systemie Android lub iOS
+              href: devices/validate-settings-on-android-or-ios.md
+        - name: Edytowanie lub tworzenie ustawień ochrony urządzeń dla Windows 10 PC
+          href: devices/protection-settings-for-windows-10-pcs.md
+          items:
+            - name: Sprawdzanie poprawności ustawień na Windows 10 PC
+              href: devices/validate-settings-on-windows-10-pcs.md
+        - name: Autopilot
+          items:
+            - name: Dodawanie urządzeń i profilu rozwiązania Autopilot
+              href: devices/add-autopilot-devices-and-profile.md
+            - name: Tworzenie i edytowanie profilów rozwiązania AutoPilot
+              href: devices/create-and-edit-autopilot-profiles.md
+            - name: Tworzenie i edytowanie urządzeń rozwiązania AutoPilot
+              href: devices/create-and-edit-autopilot-devices.md
+            - name: Ustawienia profilu rozwiązania AutoPilot
+              href: devices/autopilot-profile-settings.md
+        - name: Microsoft 365 dla przedsiębiorstw
+          href: ../enterprise/index.yml
+        - name: Podstawowa mobilność i zabezpieczenia
+          items:
+            - name: Omówienie mobilności podstawowej i zabezpieczeń
+              href: basic-mobility-security/overview.md
+            - name: Porównanie mobilności podstawowej i zabezpieczeń z usługą Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: Możliwości podstawowej mobilności i zabezpieczeń
+              href: basic-mobility-security/capabilities.md
+            - name: Konfigurowanie mobilności podstawowej i zabezpieczeń
+              href: basic-mobility-security/set-up.md
+            - name: Tworzenie zasad zabezpieczeń urządzeń
+              href: basic-mobility-security/create-device-security-policies.md
+            - name: Tworzenie certyfikatu usługi APN dla urządzeń z systemem iOS
+              href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
+            - name: Zarządzanie ustawieniami dostępu do urządzenia
+              href: basic-mobility-security/manage-device-access-settings.md
+            - name: Uzyskiwanie szczegółowych informacji o urządzeniach zarządzanych
+              href: basic-mobility-security/get-details-about-managed-devices.md
+            - name: Zarządzanie zarejestrowanymi urządzeniami
+              href: basic-mobility-security/manage-enrolled-devices.md
+            - name: Zarejestruj swoje urządzenie przenośne
+              href: basic-mobility-security/enroll-your-mobile-device.md
+            - name: Prywatność i zabezpieczenia
+              href: basic-mobility-security/privacy-and-security.md
+            - name: Często zadawane pytania
+              href: basic-mobility-security/frequently-asked-questions.yml
+            - name: Czyszczenie urządzeń przenośnych
+              href: basic-mobility-security/wipe-mobile-device.md
+            - name: Wyłączanie mobilności podstawowej i zabezpieczeń
+              href: basic-mobility-security/turn-off.md
+            - name: Rozwiązywanie problemów
+              href: basic-mobility-security/troubleshoot.md
+    - name: Przełączanie z usługi Google Workspace do usługi M365
+      items:
+        - name: Omówienie
+          href: moveto-microsoft-365/move-from-google-workspace-overview.md
+        - name: Tworzenie konta na platformie Microsoft 365
+          href: admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: Konfigurowanie migracji Microsoft 365 Google
+          href: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
+        - name: Konfigurowanie zasad zabezpieczeń dla Windows urządzeniach
+          href: setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: Dodawanie domeny obszaru roboczego programu Google
+          href: moveto-microsoft-365/add-google-domain.md
+        - name: Instalowanie Office i aplikacji Microsoft Teams
+          href: setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: 'Migrowanie wiadomości e-mail, kalendarza i kontaktów do Microsoft 365'
+          href: moveto-microsoft-365/migrate-email.md
+        - name: Połączenie domenę do Microsoft 365
+          href: moveto-microsoft-365/connect-domain-tom365.md
+        - name: Używanie Menedżera migracji do przenoszenia danych wszystkich osób
+          href: moveto-microsoft-365/migrate-files-migration-manager.md
+        - name: Anulowanie usługi Google Workspace
+          href: moveto-microsoft-365/cancel-google.md
+    - name: Praca z klientami
+      items:
+        - name: Udostępnianie witryn i plików użytkownikom-gośćmi
+          href: manage/share-sites-with-external-users.md
+        - name: Udostępnianie kalendarzy użytkownikom-gośćmi
+          href: manage/share-calendars-with-external-users.md
+        - name: Tworzenie zespołu z użytkownikami-gośćmi
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
+        - name: Planowanie spotkania Teams z użytkownikami gośćmi
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
+        - name: Dołączanie do Teams z użytkownikami-gośćmi
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
+    - name: Rozwiązywanie problemów
+      href: /office/troubleshoot/
+    - name: Kontakt z pomocą techniczną
+      href: get-help-support.md
+    - name: Przewodnik nawigacyjny
+      href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

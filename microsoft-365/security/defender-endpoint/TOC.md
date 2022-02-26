@@ -1,0 +1,726 @@
+# [Ochrona punktu końcowego w usłudze Microsoft Defender](index.yml)
+
+## [Omówienie]()
+### [Co to jest program Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
+### [Porównanie usługi Defender dla punktu końcowego (plan 1) z planem 2](defender-endpoint-plan-1-2.md)
+### [Wymagania minimalne](minimum-requirements.md)
+### [Co nowego w programie Microsoft Defender dla punktu końcowego?](whats-new-in-microsoft-defender-endpoint.md)
+### [Funkcje wersji Preview](preview.md)
+### [Przechowywanie danych i prywatność](data-storage-privacy.md)
+### [Omówienie Centrum zabezpieczeń usługi Microsoft Defender](use.md)
+### [Defender for Endpoint Plan 1]()
+#### [Omówienie](defender-endpoint-plan-1.md)
+#### [Konfiguracja i konfiguracja](mde-p1-setup-configuration.md)
+#### [Wprowadzenie](mde-plan1-getting-started.md)
+#### [Konserwacja i operacje](mde-p1-maintenance-operations.md)
+### [Program Microsoft Defender dla punktu końcowego dla klientów z rządem Stanów Zjednoczonych](gov.md)
+### [Program Microsoft Defender for Endpoint na platformach Windows niż inne](non-windows.md)
+
+
+## [Ocenianie możliwości](evaluation-lab.md)
+
+## [Planowanie wdrożenia](deployment-strategy.md)
+
+## [Przewodnik wdrażania]()
+### [Fazy wdrażania](deployment-phases.md)
+### [Etap 1. Przygotowywanie](prepare-deployment.md)
+### [Etap 2. Konfigurowanie](production-deployment.md)
+### [Etap 3. Wniesienie]()
+#### [Omówienie dołączania](onboarding.md)
+#### [Pierścienie wdrożenia](deployment-rings.md)
+#### [Dołączanie przy użyciu Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
+#### [Dołączanie przy użyciu Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+
+## [Przewodniki po migracji](migration-guides.md)
+### [Przechodzenie do usługi Defender dla punktu końcowego](switch-to-mde-overview.md)
+#### [Etap 1. Przygotowywanie](switch-to-mde-phase-1.md)
+#### [Etap 2. Konfigurowanie](switch-to-mde-phase-2.md)
+#### [Etap 3. Wniesienie](switch-to-mde-phase-3.md)
+#### [Rozwiązywanie problemów](switch-to-mde-troubleshooting.md)
+### [Zarządzanie programem Defender dla punktu końcowego po migracji](manage-mde-post-migration.md)
+#### [Korzystanie z usługi Intune (zalecane)](manage-mde-post-migration-intune.md)
+#### [Używanie Menedżer konfiguracji](manage-mde-post-migration-configuration-manager.md)
+#### [Używanie zasady grupy](manage-mde-post-migration-group-policy-objects.md)
+#### [Używanie programu PowerShell, programu WMI lub MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
+#### [Scenariusze migracji z serwera](server-migration.md)
+
+## [Konfigurowanie i wykonuj urządzenia]()
+### [Urządzenia na urządzeniach i konfigurowanie programu Microsoft Defender na temat możliwości punktu końcowego](onboard-configure.md)
+
+
+### [Program Microsoft Defender for Endpoint na Windows i Windows Server]()
+#### [Narzędzia i metody dołączania do Windows końcowych](configure-endpoints.md)
+#### [Na urządzeniach Windows i serwerach Windows urządzeniach przenośnych]()
+
+##### [Wniesienie poprzednich wersji Windows](onboard-downlevel.md)
+
+
+##### [Na urządzeniach Windows i serwerach Windows urządzeniach przenośnych]()
+###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019 i 2022](configure-server-endpoints.md)
+###### [Dołączanie Windows przy użyciu skryptu lokalnego](configure-endpoints-script.md)
+###### [Na urządzeniach Windows przy użyciu aplikacji zasady grupy](configure-endpoints-gp.md)
+###### [Urządzenia Windows przy użyciu Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+###### [Na urządzeniach Windows urządzeniach przenośnych za pomocą narzędzi do zarządzania urządzeniami przenośnymi](configure-endpoints-mdm.md)
+###### [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)
+###### [Wdowy Windows 10 z wieloma sesjami w Windows pulpitu wirtualnego](onboard-windows-multi-session-device.md)
+
+
+
+
+#### [Integracja z usługą Microsoft Defender dla chmury](azure-server-integration.md)
+
+#### [Urządzenia na tablicy bez dostępu do Internetu](onboard-offline-machines.md)
+#### [Uruchamianie testu wykrywania na nowo włodowym urządzeniu](run-detection-test.md)
+#### [Uruchamianie symulowanych ataków na urządzeniach](attack-simulations.md)
+#### [Konfigurowanie ustawień serwera proxy i łączności internetowej](configure-proxy-internet.md)
+#### [Tworzenie reguły powiadomień o dołączaniu i wysyłaniu](onboarding-notification.md)
+
+
+
+### [Program Microsoft Defender for Endpoint w innych systemach operacyjnych]()
+#### [Urządzenia, które nie Windows urządzenia](configure-endpoints-non-windows.md)
+
+#### [Program Microsoft Defender for Endpoint w systemie macOS]()
+##### [Omówienie programu Microsoft Defender dla punktu końcowego w systemie macOS](microsoft-defender-endpoint-mac.md)
+##### [Co nowego](mac-whatsnew.md)
+
+##### [Wdrażanie]()
+###### [Microsoft Intune oparte na programie](mac-install-with-intune.md)
+###### [Wdrożenie oparte Pro JAMF]()
+####### [Wdrażanie programu Microsoft Defender for Endpoint w systemie macOS za pomocą usługi Jamf Pro](mac-install-with-jamf.md)
+####### [Zaloguj się do jamf Pro](mac-install-jamfpro-login.md)
+####### [Konfigurowanie grup urządzeń](mac-jamfpro-device-groups.md)
+####### [Konfigurowanie zasad](mac-jamfpro-policies.md)
+####### [Rejestrowanie urządzeń](mac-jamfpro-enroll-devices.md)
+
+###### [Wdrożenie z innym systemem zarządzania urządzeniami przenośnymi (MDM)](mac-install-with-other-mdm.md)
+###### [Wdrażanie ręczne](mac-install-manually.md)
+##### [Aktualizacja](mac-updates.md)
+
+##### [Konfigurowanie]()
+###### [Konfigurowanie i weryfikowanie wykluczeń](mac-exclusions.md)
+###### [Ustawianie preferencji](mac-preferences.md)
+###### [Wykrywanie i blokowanie potencjalnie niechcianych aplikacji](mac-pua.md)
+###### [Sterowanie urządzeniem]()
+####### [Omówienie sterowania urządzeniami](mac-device-control-overview.md)
+####### [Przykłady jamfów](mac-device-control-jamf.md)
+####### [Przykłady usługi Intune](mac-device-control-intune.md)
+###### [Planowanie skanów](mac-schedule-scan.md)
+
+##### [Rozwiązywanie problemów]()
+###### [Rozwiązywanie problemów z instalacją](mac-support-install.md)
+###### [Rozwiązywanie problemów z wydajnością](mac-support-perf.md)
+###### [Rozwiązywanie problemów z łącznością z chmurą](troubleshoot-cloud-connect-mdemac.md)
+###### [Rozwiązywanie problemów z rozszerzeniem kernel](mac-support-kext.md)
+###### [Rozwiązywanie problemów z licencjami](mac-support-license.md)
+
+##### [Prywatność](mac-privacy.md)
+##### [Zasoby](mac-resources.md)
+
+
+#### [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie]()
+##### [Omówienie programu Microsoft Defender dla punktu końcowego w systemie Linux](microsoft-defender-endpoint-linux.md)
+##### [Co nowego](linux-whatsnew.md)
+##### [Wdrażanie]()
+###### [Wdrażanie ręczne](linux-install-manually.md)
+###### [Wdrożenie na podstawie danych szybkich](linux-install-with-puppet.md)
+###### [Wdrażanie na podstawie ansible](linux-install-with-ansible.md)
+###### [Wdrażanie programu Defender dla punktu końcowego w systemie Linux z usługą Linux](linux-deploy-defender-for-endpoint-with-chef.md)
+
+##### [Aktualizacja](linux-updates.md)
+
+##### [Konfigurowanie]()
+###### [Konfigurowanie i weryfikowanie wykluczeń](linux-exclusions.md)
+###### [Statyczna konfiguracja serwera proxy](linux-static-proxy-configuration.md)
+###### [Ustawianie preferencji](linux-preferences.md)
+###### [Wykrywanie i blokowanie potencjalnie niechcianych aplikacji](linux-pua.md)
+###### [Planowanie skanów za pomocą programu Microsoft Defender dla punktu końcowego w systemie Linux](linux-schedule-scan-mde.md)
+###### [Planowanie aktualizacji programu Microsoft Defender dla punktu końcowego (Linux)](linux-update-MDE-Linux.md)
+
+
+##### [Rozwiązywanie problemów]()
+###### [Rozwiązywanie problemów z instalacją](linux-support-install.md)
+###### [Badanie problemów dotyczących kondycji agenta](health-status.md)
+###### [Rozwiązywanie problemów z łącznością w chmurze](linux-support-connectivity.md)
+###### [Rozwiązywanie problemów z instalacją R JAK.6](linux-support-rhel.md)
+###### [Rozwiązywanie problemów z wydajnością](linux-support-perf.md)
+###### [Rozwiązywanie problemów z brakującymi zdarzeniami](linux-support-events.md)
+
+##### [Prywatność](linux-privacy.md)
+##### [Zasoby](linux-resources.md)
+
+#### [Obrona przed zagrożeniami na urządzeniach przenośnych]()
+##### [Omówienie ochrony przed zagrożeniami na urządzeniach przenośnych](mtd.md)
+
+##### [Program Microsoft Defender for Endpoint w systemie Android]()
+###### [Omówienie programu Microsoft Defender dla punktu końcowego w systemie Android](microsoft-defender-endpoint-android.md)
+###### [Co nowego](android-whatsnew.md)
+
+###### [Wdrażanie]()
+####### [Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie Android za pomocą Microsoft Intune](android-intune.md)
+
+###### [Konfigurowanie]()
+####### [Konfigurowanie programu Microsoft Defender dla funkcji punktu końcowego w systemie Android](android-configure.md)
+####### [Konfigurowanie usługi Microsoft Defender pod celu używania sygnałów ryzyka dla punktu końcowego przy użyciu zasad ochrony aplikacji](android-configure-mam.md)
+
+###### [Prywatność]()
+####### [Program Microsoft Defender dla punktu końcowego w systemie Android — informacje dotyczące prywatności](android-privacy.md)
+
+###### [Rozwiązywanie problemów]()
+####### [Rozwiązywanie problemów](android-support-signin.md)
+
+##### [Program Microsoft Defender for Endpoint w systemie iOS]()
+###### [Omówienie programu Microsoft Defender dla punktu końcowego w systemie iOS](microsoft-defender-endpoint-ios.md)
+###### [Co nowego](ios-whatsnew.md)
+
+###### [Wdrażanie]()
+####### [Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie iOS za pośrednictwem usługi Intune](ios-install.md)
+####### [Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie iOS dla niepodjętych urządzeń](ios-install-unmanaged.md)
+
+###### [Konfigurowanie funkcji systemu iOS](ios-configure-features.md)
+
+###### [Często zadawane pytania i rozwiązywanie problemów](ios-troubleshoot.md)
+
+###### [Prywatność](ios-privacy.md)
+
+
+### [Zarządzaj ustawieniami konfiguracji programu Microsoft Defender for Endpoint na urządzeniach za pomocą programu Microsoft Endpoint Manager](security-config-management.md)
+
+### [Rozwiązywanie problemów z dołączaniem]()
+#### [Rozwiązywanie problemów podczas dołączania](troubleshoot-onboarding.md)
+#### [Rozwiązywanie problemów z dostępem do subskrypcji i portalu](troubleshoot-onboarding-error-messages.md)
+#### [Rozwiązywanie problemów z zarządzaniem konfiguracją zabezpieczeń podczas dołączania](troubleshoot-security-config-mgt.md)
+
+
+
+
+
+### [Konfigurowanie ustawień portalu]()
+#### [Konfigurowanie preferencji](preferences-setup.md)
+#### [Ogólne]()
+##### [Sprawdzanie lokalizacji przechowywania danych i aktualizowanie ustawień przechowywania danych](data-retention-settings.md)
+##### [Konfigurowanie powiadomień alertów](configure-email-notifications.md)
+##### [Konfigurowanie powiadomień e-mail z luką w zabezpieczeniach](configure-vulnerability-email-notifications.md)
+##### [Konfigurowanie funkcji zaawansowanych](advanced-features.md)
+
+#### [Uprawnienia]()
+##### [Używanie podstawowych uprawnień w celu uzyskiwania dostępu do portalu](basic-permissions.md)
+##### [Zarządzanie dostępem do portalu przy użyciu RBAC](rbac.md)
+###### [Tworzenie ról i zarządzanie nimi](user-roles.md)
+###### [Tworzenie grup urządzeń i zarządzanie nimi](machine-groups.md)
+###### [Tworzenie tagów urządzeń i zarządzanie nimi](machine-tags.md)
+
+#### [Reguły]()
+##### [Zarządzanie regułami zarządzania regułami](manage-suppression-rules.md)
+##### [Tworzenie wskaźników](manage-indicators.md)
+###### [Tworzenie wskaźników dla plików](indicator-file.md)
+###### [Tworzenie wskaźników adresów IP oraz adresów URL/domen](indicator-ip-domain.md)
+###### [Tworzenie wskaźników dla certyfikatów](indicator-certificates.md)
+###### [Zarządzanie wskaźnikami](indicator-manage.md)
+##### [Zarządzanie przekazywaniem plików automatyzacji](manage-automation-file-uploads.md)
+##### [Zarządzanie wykluczeniami folderów automatyzacji](manage-automation-folder-exclusions.md)
+
+#### [Zarządzanie urządzeniami]()
+##### [Urządzenia dołączające](onboard-configure.md)
+##### [Urządzenia wyełowywujące](offboard-machines.md)
+##### [Upewnij się, że urządzenia są poprawnie skonfigurowane](configure-machines.md)
+##### [Monitorowanie i zwiększanie liczby dołączania urządzeń](configure-machines-onboarding.md)
+
+#### [Konfigurowanie Centrum zabezpieczeń usługi Microsoft Defender strefy czasowej](time-settings.md)
+
+## [Wykrywanie zagrożeń i ochrona punktów końcowych]()
+### [Zagrożenia & zarządzanie lukami w zabezpieczeniach]()
+#### [Omówienie](next-gen-threat-and-vuln-mgt.md)
+#### [Wprowadzenie]()
+##### [Wymagania & wstępne](tvm-prerequisites.md)
+##### [Obsługiwane platformy i możliwości systemów operacyjnych](tvm-supported-os.md)
+##### [Przypisz wartość urządzenia](tvm-assign-device-value.md)
+#### [Ocenianie postawy dotyczącej zabezpieczeń]()
+##### [Szczegółowe informacje pulpitu nawigacyjnego](tvm-dashboard-insights.md)
+##### [Wynik ekspozycji](tvm-exposure-score.md)
+##### [Microsoft Secure Score dla urządzeń](tvm-microsoft-secure-score-devices.md)
+#### [Poprawianie wydajności zabezpieczeń w celu & zmniejszenia ryzyka]()
+##### [Zalecenia dotyczące zabezpieczeń w zakresie adresów](tvm-security-recommendation.md)
+##### [Usuwanie luk w zabezpieczeniach](tvm-remediation.md)
+##### [Wyjątki w przypadku zaleceń dotyczących zabezpieczeń](tvm-exception.md)
+##### [Planowanie zakończenia obsługi oprogramowania](tvm-end-of-support-software.md)
+##### [Ograniczanie luki w zabezpieczeniach z dniem zerodniowym](tvm-zero-day-vulnerabilities.md)
+#### [Opis luk w zabezpieczeniach na urządzeniach]()
+##### [Spis oprogramowania](tvm-software-inventory.md)
+##### [Luki w zabezpieczeniach w mojej organizacji](tvm-weaknesses.md)
+##### [Oś czasu zdarzenia](threat-and-vuln-mgt-event-timeline.md)
+##### [Raport o urządzeniach, które mogą być narażone na zagrożenia](tvm-vulnerable-devices-report.md)
+##### [Hunt for exposed devices](tvm-hunt-exposed-devices.md)
+
+### [Odnajdowanie urządzeń]()
+#### [Omówienie odnajdowania urządzeń](device-discovery.md)
+#### [Konfigurowanie odnajdowania urządzeń](configure-device-discovery.md)
+#### [Integracja z usługą Microsoft Defender dla systemu IoT](enable-microsoft-defender-for-iot-integration.md)
+#### [Włączanie integracji danych z programem Corelight](corelight-integration.md)
+#### [Odnajdowanie urządzeń — często zadawane pytania](device-discovery-faq.md)
+
+### [Urządzenia sieciowe](network-devices.md)
+
+### [Raportowanie zapory hosta w programie Microsoft Defender dla punktu końcowego](host-firewall-reporting.md)
+
+### [Zmniejszenie powierzchni ataków]()
+#### [Omówienie zmniejszania powierzchni ataków](overview-attack-surface-reduction.md)
+#### [Reguły zmniejszania powierzchni ataków (ASR)]()
+##### [Informacje o zasadach asr](attack-surface-reduction.md)
+##### [Przewodnik po wdrażaniu reguł ograniczania powierzchni ataków (ASR, Attack surface reduction)]()
+###### [Wymagania wstępne wdrażania reguł asr](attack-surface-reduction-rules-deployment.md)
+###### [Krok 1. Planowanie wdrożenia reguł ASR](attack-surface-reduction-rules-deployment-plan.md)
+###### [Krok 2. Testowanie reguł asr](attack-surface-reduction-rules-deployment-test.md)
+###### [Krok 3. Implementowanie reguł asr](attack-surface-reduction-rules-deployment-implement.md)
+###### [Krok 4. Operacyjne reguły asr](attack-surface-reduction-rules-deployment-operationalize.md)
+##### [Odwołanie do reguł ASR](attack-surface-reduction-rules-reference.md)
+##### [Włączanie alternatywnych metod konfiguracji reguł ASR](enable-attack-surface-reduction.md)
+##### [Zmniejszenie powierzchni ataków — często zadawane pytania](attack-surface-reduction-faq.yml)
+#### [Kontrolowany dostęp do folderu]()
+##### [Ochrona folderów](controlled-folders.md)
+##### [Szacowanie kontrolowanego dostępu do folderu](evaluate-controlled-folder-access.md)
+##### [Włączanie kontrolowanego dostępu do folderu](enable-controlled-folders.md)
+##### [Dostosowywanie kontrolowanego dostępu do folderu](customize-controlled-folders.md)
+#### [Exploit Protection]()
+##### [Ochrona urządzeń przed wykorzystywaniami](exploit-protection.md)
+##### [Ocena wykorzystania ochrony](evaluate-exploit-protection.md)
+##### [Włączanie ochrony przed lukami w zabezpieczeniach](enable-exploit-protection.md)
+##### [Dostosowywanie ochrony przed lukami w zabezpieczeniach](customize-exploit-protection.md)
+##### [Importowanie, eksportowanie i wdrażanie konfiguracji ochrony przed wykorzystywaniem luk](import-export-exploit-protection-emet-xml.md)
+##### [Odwołanie do ochrony przed wykorzystywaniem luk](exploit-protection-reference.md)
+#### [Ochrona sieci]()
+##### [Ochrona sieci](network-protection.md)
+##### [Ocenianie ochrony sieci](evaluate-network-protection.md)
+##### [Włączanie ochrony sieci](enable-network-protection.md)
+
+### Ochrona następnej generacji
+#### [Omówienie ochrony następnej generacji](next-generation-protection.md)
+##### [Omówienie Program antywirusowy Microsoft Defender](microsoft-defender-antivirus-windows.md)
+##### [Razem lepiej: program Program antywirusowy Microsoft Defender i program Microsoft Defender dla punktu końcowego](why-use-microsoft-defender-antivirus.md)
+##### [Razem lepiej: Program antywirusowy Microsoft Defender i Office 365](office-365-microsoft-defender-antivirus.md)
+#### [Szacowanie Program antywirusowy Microsoft Defender](evaluate-microsoft-defender-antivirus.md)
+#### [Konfigurowanie Program antywirusowy Microsoft Defender funkcji](configure-microsoft-defender-antivirus-features.md)
+#### [Ochrona i Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+##### [Dlaczego ochrona chmury powinna być wł.](why-cloud-protection-should-be-on-mdav.md)
+##### [Włączanie ochrony w chmurze](enable-cloud-protection-microsoft-defender-antivirus.md)
+##### [Określanie poziomu ochrony w chmurze](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Ochrona chmury i przesyłanie próbek](cloud-protection-microsoft-antivirus-sample-submission.md)
+#### [Konfigurowanie i sprawdzanie poprawności Program antywirusowy Microsoft Defender sieciowych](configure-network-connections-microsoft-defender-antivirus.md)
+#### [Ochrona ustawień zabezpieczeń za pomocą ochrony przed naruszeniami](prevent-changes-to-security-settings-with-tamper-protection.md)
+#### [Włączanie bloku na pierwszy rzut oka](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+#### [Konfigurowanie limitu czasu blokowania chmury](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+#### [Konfigurowanie ochrony zachowanie, heuristic i w czasie rzeczywistym](configure-protection-features-microsoft-defender-antivirus.md)
+#### [Wykrywanie i blokowanie potencjalnie niechcianych aplikacji](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+#### [Włączanie i konfigurowanie Program antywirusowy Microsoft Defender w aplikacji zasady grupy](configure-real-time-protection-microsoft-defender-antivirus.md)
+#### [Konfigurowanie działań naprawczych Program antywirusowy Microsoft Defender wykrywania błędów](configure-remediation-microsoft-defender-antivirus.md)
+#### [Konfigurowanie Program antywirusowy Microsoft Defender skanowania](schedule-antivirus-scans.md)
+##### [Planowanie skanów przy użyciu zasady grupy](schedule-antivirus-scans-group-policy.md)
+##### [Planowanie skanowania przy użyciu programu PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Planowanie skanów przy użyciu usługi WMI](schedule-antivirus-scans-wmi.md)
+#### [Stosowanie ograniczonego skanowania okresowego w Program antywirusowy Microsoft Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [Dostosowywanie wydajności Program antywirusowy Microsoft Defender](tune-performance-defender-antivirus.md)
+#### [Zgodność z innymi produktami zabezpieczającymi](microsoft-defender-antivirus-compatibility.md)
+
+#### [Uzyskiwanie aktualizacji oprogramowania antywirusowego i ochrony przed złośliwym oprogramowaniem](manage-updates-baselines-microsoft-defender-antivirus.md)
+##### [Zarządzanie źródłami aktualizacji Program antywirusowy Microsoft Defender ochrony](manage-protection-updates-microsoft-defender-antivirus.md)
+##### [Zarządzanie harmonogramem pobierania i stosowania aktualizacji ochrony](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [Zarządzanie procesem stopniowego wdrażanie aktualizacji programu Microsoft Defender](manage-gradual-rollout.md)
+##### [Konfigurowanie procesu stopniowego wdrażanie aktualizacji programu Microsoft Defender](configure-updates.md)
+##### [Zarządzanie Program antywirusowy Microsoft Defender i skanowaniami w poszukiwaniu punktów końcowych, które są aktualne](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+##### [Zarządzanie aktualizacjami wymuszonmi opartymi na wydarzeniach](manage-event-based-updates-microsoft-defender-antivirus.md)
+##### [Zarządzanie aktualizacjami dla urządzeń przenośnych i maszyn wirtualnych](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+
+#### [Zarządzanie Program antywirusowy Microsoft Defender twojej organizacji](configuration-management-reference-microsoft-defender-antivirus.md)
+##### [Zarządzanie Microsoft Endpoint Manager za pomocą Program antywirusowy Microsoft Defender](use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [Zarządzanie zasady grupy za pomocą Program antywirusowy Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
+##### [Zarządzanie poleceniami cmdlet programu PowerShell Program antywirusowy Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+##### [Zarządzanie Windows WMI przy użyciu instrumentacji zarządzania Program antywirusowy Microsoft Defender](use-wmi-microsoft-defender-antivirus.md)
+##### [Zarządzanie mpcmdrun.exe za pomocą narzędzia Program antywirusowy Microsoft Defender](command-line-arguments-microsoft-defender-antivirus.md)
+##### [Konfigurowanie powiadomień wyświetlanych w punktach końcowych](configure-notifications-microsoft-defender-antivirus.md)
+##### [Określanie, czy użytkownicy mogą modyfikować lokalnie Program antywirusowy Microsoft Defender ustawień zasad](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [Określanie, czy użytkownicy mogą widzieć interfejs użytkownika Program antywirusowy Microsoft Defender interakcje z nim](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+
+#### [Wdrażanie i zgłaszanie w Program antywirusowy Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+##### [Wdrażanie i włączanie Program antywirusowy Microsoft Defender](deploy-microsoft-defender-antivirus.md)
+##### [Przewodnik po wdrażaniu Program antywirusowy Microsoft Defender w środowisku infrastruktury pulpitów wirtualnych (VDI, Virtual Desktop Infrastructure)](deployment-vdi-microsoft-defender-antivirus.md)
+##### [Raport z Program antywirusowy Microsoft Defender](report-monitor-microsoft-defender-antivirus.md)
+
+#### [Skany i działania naprawcze](review-scan-results-microsoft-defender-antivirus.md)
+##### [Konfigurowanie i uruchamianie skanowania na Program antywirusowy Microsoft Defender na żądanie](run-scan-microsoft-defender-antivirus.md)
+##### [Uruchamianie i przeglądanie wyników skanowania Microsoft Defender Offline aplikacji](microsoft-defender-offline.md)
+##### [Konfigurowanie Program antywirusowy Microsoft Defender opcji skanowania](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+##### [Przywracanie plików poddanych kwarantannie w Program antywirusowy Microsoft Defender](restore-quarantined-files-microsoft-defender-antivirus.md)
+
+#### [Program antywirusowy Microsoft Defender wykluczenia](configure-exclusions-microsoft-defender-antivirus.md)
+##### [Wykluczenia oparte na rozszerzeniu pliku i lokalizacji folderu](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+##### [Wykluczenia dotyczące plików otwieranych w procesach](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Wykluczenia dotyczące programu Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+##### [Typowe błędy, których należy unikać](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+
+#### Rozwiązywanie problemów Program antywirusowy Microsoft Defender
+##### [Rozwiązywanie problemów Program antywirusowy Microsoft Defender raportów w zakresie zgodności aktualizacji](troubleshoot-reporting.md)
+##### [Rozwiązywanie problemów z wydajnością](troubleshoot-performance-issues.md)
+##### [Przejrzyj dzienniki zdarzeń i kody błędów, aby rozwiązać problemy z Program antywirusowy Microsoft Defender](troubleshoot-microsoft-defender-antivirus.md)
+##### [Rozwiązywanie Program antywirusowy Microsoft Defender podczas migracji z rozwiązania innej firmy](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
+
+#### [Ochrona sieci Web]()
+##### [Omówienie ochrony sieci Web](web-protection-overview.md)
+##### [Ochrona przed zagrożeniami internetowymi]()
+###### [Omówienie ochrony przed zagrożeniami internetowymi](web-threat-protection.md)
+###### [Monitorowanie zabezpieczeń sieci Web](web-protection-monitoring.md)
+###### [Reagowanie na zagrożenia w sieci Web](web-protection-response.md)
+##### [Filtrowanie zawartości sieci Web](web-content-filtering.md)
+
+#### [Sterowanie urządzeniem]()
+##### [Ochrona przed Storage wymiennymi](device-control-removable-storage-protection.md)
+##### [Kontrolka programu Access Storage wymiennych](device-control-removable-storage-access-control.md)
+##### [Instalacja urządzenia](mde-device-control-device-installation.md)
+##### [Ochrona drukarki sterowania urządzeniem](printer-protection.md)
+##### [Raporty dotyczące sterowania urządzeniami](device-control-report.md)
+
+#### [Blokowanie i blokowanie zachowań]()
+##### [Blokowanie i blokowanie zachowań](behavioral-blocking-containment.md)
+##### [Blokowanie zachowania klienta](client-behavioral-blocking.md)
+##### [Blokowanie pętli opinii](feedback-loop-blocking.md)
+
+
+### [Adres dodatnich/ujemnych wyników fałszywie dodatnich w programie Microsoft Defender dla punktu końcowego](defender-endpoint-false-positives-negatives.md)
+
+
+### [Zarządzanie konfiguracją urządzeń]()
+
+#### [Zwiększanie zgodności z planem bazowym zabezpieczeń](configure-machines-security-baseline.md)
+#### [Optymalizowanie wdrażania reguł zmniejszania powierzchni ataków i wykrywania](configure-machines-asr.md)
+
+## [Badanie zagrożeń i reagowanie na nie]()
+### [Wykrywanie punktu końcowego i odpowiedź]()
+#### [Wykrywanie punktu końcowego i omówienie odpowiedzi](overview-endpoint-detection-response.md)
+#### [Pulpit nawigacyjny operacji zabezpieczeń](security-operations-dashboard.md)
+#### [Kolejka zdarzeń]()
+##### [Wyświetlanie i organizowanie kolejki Zdarzenia](view-incidents-queue.md)
+##### [Zarządzanie zdarzeniami](manage-incidents.md)
+##### [Badanie zdarzeń](investigate-incidents.md)
+
+#### [Kolejka alertów]()
+##### [Kolejka alertów w Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
+##### [Wyświetlanie i organizowanie kolejki alertów](alerts-queue.md)
+##### [Przeglądanie alertów](review-alerts.md)
+##### [Zarządzanie alertami](manage-alerts.md)
+##### [Badanie alertów](investigate-alerts.md)
+##### [Badanie plików](investigate-files.md)
+##### [Badanie urządzeń](investigate-machines.md)
+##### [Badanie adresu IP](investigate-ip.md)
+##### [Badanie domeny](investigate-domain.md)
+###### [Badanie zdarzeń połączenia, które występują za serwerów proxy przesyłania dalej](investigate-behind-proxy.md)
+##### [Badanie konta użytkownika](investigate-user.md)
+
+#### [Lista Urządzeń]()
+##### [Wyświetlanie i organizowanie listy Urządzenia](machines-view-overview.md)
+##### [Flagi zdarzeń osi czasu urządzenia](device-timeline-event-flag.md)
+##### [Zarządzanie grupą urządzeń i tagami](machine-tags.md)
+
+#### [Działania w celu reagowania]()
+##### [Akcje dotyczące odpowiedzi na urządzeniu]()
+###### [Akcje dotyczące odpowiedzi na urządzeniach](respond-machine-alerts.md)
+###### [Zarządzanie tagami](respond-machine-alerts.md#manage-tags)
+###### [Rozpoczynanie automatycznego badania](respond-machine-alerts.md#initiate-automated-investigation)
+###### [Rozpoczynanie sesji odpowiedzi na żywo](respond-machine-alerts.md#initiate-live-response-session)
+###### [Zbierz pakiet badania](respond-machine-alerts.md#collect-investigation-package-from-devices)
+###### [Uruchom skanowanie antywirusowe](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices)
+###### [Ograniczanie wykonywania aplikacji](respond-machine-alerts.md#restrict-app-execution)
+###### [Odizolowanie urządzeń od sieci](respond-machine-alerts.md#isolate-devices-from-the-network)
+###### [Skonsultuj się z ekspertem ds. zagrożeń](respond-machine-alerts.md#consult-a-threat-expert)
+###### [Sprawdzanie szczegółów aktywności w Centrum akcji](respond-machine-alerts.md#check-activity-details-in-action-center)
+
+##### [Akcje odpowiedzi dotyczące pliku]()
+###### [Akcje odpowiedzi dotyczące plików](respond-file-alerts.md)
+###### [Zatrzymywanie i kwarantanna plików w sieci](respond-file-alerts.md#stop-and-quarantine-files-in-your-network)
+###### [Przywracanie pliku z kwarantanny](respond-file-alerts.md#restore-file-from-quarantine)
+###### [Dodawanie wskaźników w celu blokowania lub zezwalania na plik](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
+###### [Skonsultuj się z ekspertem ds. zagrożeń](respond-file-alerts.md#consult-a-threat-expert)
+###### [Sprawdzanie szczegółów aktywności w Centrum akcji](respond-file-alerts.md#check-activity-details-in-action-center)
+###### [Pobieranie lub zbieranie pliku](respond-file-alerts.md#download-or-collect-file)
+###### [Analiza głębokości](respond-file-alerts.md#deep-analysis)
+
+#### [Wyświetlanie i zatwierdzanie działań naprawczych](manage-auto-investigation.md)
+##### [Wyświetlanie szczegółów i wyników zautomatyzowanych badań](auto-investigation-action-center.md)
+
+#### [Badanie obiektów przy użyciu funkcji Live response]()
+##### [Badanie jednostek na urządzeniach](live-response.md)
+##### [Przykłady poleceń odpowiedzi na żywo](live-response-command-examples.md)
+
+#### [Określanie priorytetów reakcji na zdarzenia przy użyciu etykiet wrażliwości](information-protection-investigation.md)
+
+#### [Raportowanie]()
+##### [Power BI — Jak używać interfejsu API — przykłady](api-power-bi.md)
+##### [Raporty dotyczące ochrony przed zagrożeniami](threat-protection-reports.md)
+#### [Raporty dotyczące kondycji i zgodności urządzeń](machine-reports.md)
+
+### [Zaawansowane łowy]()
+#### [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
+#### [Opis schematu](advanced-hunting-schema-reference.md)
+#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+
+### [Omówienie analizy zagrożeń](threat-analytics.md)
+#### [Odczytywanie raportu analityka](threat-analytics-analyst-reports.md)
+
+### [EDR w trybie blokowania](edr-in-block-mode.md)
+
+### [Zautomatyzowane badania i odpowiedzi (AIR)]()
+#### [Omówienie funkcji AIR](automated-investigations.md)
+#### [Poziomy automatyzacji w programie AIR](automation-levels.md)
+#### [Konfigurowanie funkcji AIR](configure-automated-investigations-remediation.md)
+
+### [Microsoft Threat Experts]()
+#### [Microsoft Threat Experts omówienie](microsoft-threat-experts.md)
+#### [Konfigurowanie funkcji zarządzania Microsoft Threat Experts i zarządzanie nimi](configure-microsoft-threat-experts.md)
+
+
+
+## Odwołanie
+### [Opis pojęć analizy zagrożeń](threat-indicator-concepts.md)
+### [Konfigurowanie integracji z innymi rozwiązaniami firmy Microsoft]()
+#### [Konfigurowanie dostępu warunkowego](configure-conditional-access.md)
+#### [Konfigurowanie integracji usługi Microsoft Defender dla aplikacji w chmurze](microsoft-cloud-app-security-config.md)
+### [Zarządzanie i interfejsy API]()
+#### [Omówienie zarządzania i interfejsów API](management-apis.md)
+#### [Informacje o wersji interfejsu API](api-release-notes.md)
+#### [Microsoft Defender for Endpoint API]()
+##### [Wprowadzenie]()
+###### [Microsoft Defender for Endpoint API license and terms](api-terms-of-use.md)
+###### [Uzyskiwanie dostępu do interfejsów API programu Microsoft Defender dla punktów końcowych](apis-intro.md)
+###### [Cześć ludzie](api-hello-world.md)
+###### [Uzyskiwanie dostępu za pomocą kontekstu aplikacji](exposed-apis-create-app-webapp.md)
+###### [Uzyskiwanie dostępu za pomocą kontekstu użytkownika](exposed-apis-create-app-nativeapp.md)
+
+
+
+##### [Schemat interfejsów API programu Microsoft Defender dla punktów końcowych]()
+###### [Obsługiwana usługa Microsoft Defender dla interfejsów API punktów końcowych](exposed-apis-list.md)
+###### [Typowe kody błędów interfejsu API usługi REST](common-errors.md)
+###### [Zaawansowane łowiectwo](run-advanced-query-api.md)
+
+###### [Alert]()
+####### [Metody i właściwości alertów](alerts.md)
+####### [Alerty listy](get-alerts.md)
+####### [Tworzenie alertu](create-alert-by-reference.md)
+####### [Alerty aktualizacji wsadowej](batch-update-alerts.md)
+####### [Aktualizowanie alertu](update-alert.md)
+####### [Uzyskiwanie informacji alertów według identyfikatora](get-alert-info-by-id.md)
+####### [Uzyskiwanie alertów dotyczących domen](get-alert-related-domain-info.md)
+####### [Uzyskiwanie informacji o pliku powiązanym z alertami](get-alert-related-files-info.md)
+####### [Uzyskiwanie informacji o związanych z alertami informacjach o ip](get-alert-related-ip-info.md)
+####### [Uzyskiwanie informacji o urządzeniu powiązanym z alertami](get-alert-related-machine-info.md)
+####### [Uzyskiwanie alertów dotyczących informacji o użytkownikach](get-alert-related-user-info.md)
+
+
+###### [Oceny luk i bezpiecznych konfiguracji]()
+####### [Eksportowanie metod i właściwości oceny](get-assessment-methods-properties.md)
+####### [Eksportowanie bezpiecznego oceny konfiguracji](get-assessment-secure-config.md)
+####### [Ocena spisu oprogramowania eksportu](get-assessment-software-inventory.md)
+####### [Ocena luk w zabezpieczeniach oprogramowania w eksporcie](get-assessment-software-vulnerabilities.md)
+
+###### [Zautomatyzowane badanie]()
+####### [Metody badania i właściwości](investigation.md)
+####### [Badanie listy](get-investigation-collection.md)
+####### [Pobierz badania](get-investigation-object.md)
+####### [Rozpocznij badanie](initiate-autoir-investigation.md)
+
+###### [Domain (Domena)]()
+####### [Alerty dotyczące domeny](get-domain-related-alerts.md)
+####### [Uzyskiwanie komputerów powiązanych z domenami](get-domain-related-machines.md)
+####### [Uzyskiwanie statystyki domeny](get-domain-statistics.md)
+
+###### [Plik]()
+####### [Metody i właściwości plików](files.md)
+####### [Uzyskiwanie informacji o pliku](get-file-information.md)
+####### [Alerty dotyczące plików](get-file-related-alerts.md)
+####### [Uzyskiwanie komputerów powiązanych z plikami](get-file-related-machines.md)
+####### [Uzyskiwanie statystyk plików](get-file-statistics.md)
+
+###### [Wskaźniki]()
+####### [Metody i właściwości wskaźników](ti-indicator.md)
+####### [Wskaźniki listy](get-ti-indicators-collection.md)
+####### [Wskaźnik przesyłania](post-ti-indicator.md)
+####### [Wskaźnik importu](import-ti-indicators.md)
+####### [Wskaźnik usuwania](delete-ti-indicator-by-id.md)
+
+###### [IP]()
+####### [Alerty dotyczące adresów IP](get-ip-related-alerts.md)
+####### [Uzyskiwanie statystyk adresów IP](get-ip-statistics.md)
+
+
+###### [Komputer]()
+####### [Metody i właściwości komputera](machine.md)
+####### [Komputery na liście](get-machines.md)
+####### [Uzyskiwanie komputera według identyfikatora](get-machine-by-id.md)
+####### [Uzyskiwanie logowania maszynowego do użytkowników](get-machine-log-on-users.md)
+####### [Alerty dotyczące komputera](get-machine-related-alerts.md)
+####### [Uzyskiwanie zainstalowanego oprogramowania](get-installed-software.md)
+####### [Uzyskiwanie wykrytych luk](get-discovered-vulnerabilities.md)
+####### [Uzyskaj zalecenia dotyczące zabezpieczeń](get-security-recommendations.md)
+####### [Dodawanie lub usuwanie tagów maszynowych](add-or-remove-machine-tags.md)
+####### [Znajdowanie komputerów według adresów IP](find-machines-by-ip.md)
+####### [Znajdowanie komputerów według tagu](find-machines-by-tag.md)
+####### [Brakujące KB](get-missing-kbs-machine.md)
+####### [Ustawianie wartości urządzenia](set-device-value.md)
+####### [Aktualizuj komputer](update-machine-method.md)
+
+
+
+###### [Akcja maszynowa]()
+####### [Metody i właściwości akcji komputera](machineaction.md)
+####### [Lista akcji komputera](get-machineactions-collection.md)
+####### [Uzyskaj akcję maszynową](get-machineaction-object.md)
+####### [Zbierz pakiet badania](collect-investigation-package.md)
+####### [Uzyskiwanie pakietu badania, URI SAS](get-package-sas-uri.md)
+####### [Uzyskiwanie odpowiedzi na żywo](get-live-response-result.md)
+####### [Wyizoluj komputer](isolate-machine.md)
+####### [Zwolnij komputer z izolacji](unisolate-machine.md)
+####### [Ograniczanie wykonywania aplikacji](restrict-code-execution.md)
+####### [Usuwanie ograniczeń aplikacji](unrestrict-code-execution.md)
+####### [Uruchom skanowanie antywirusowe](run-av-scan.md)
+####### [Uruchom odpowiedź na żywo](run-live-response.md)
+####### [Urządzenie wye startowe](offboard-machine-api.md)
+####### [Zatrzymywanie i poddaj kwarantannie plik](stop-and-quarantine-file.md)
+####### [Anuluj akcję komputera](cancel-machine-action.md)
+
+###### [Zalecenie]()
+####### [Metody i właściwości zalecenia](recommendation.md)
+####### [Wyeksymuj wszystkie zalecenia](get-all-recommendations.md)
+####### [Uzyskaj zalecenia według identyfikatora](get-recommendation-by-id.md)
+####### [Uzyskaj zalecenia od oprogramowania](list-recommendation-software.md)
+####### [Lista komputerów według zaleceń](get-recommendation-machines.md)
+####### [Lista luk w zabezpieczeniach w zaleceniach](get-recommendation-vulnerabilities.md)
+
+###### [Działania naprawcze]()
+####### [Metody i właściwości działań naprawczych](get-remediation-methods-properties.md)
+####### [Uzyskiwanie jednego działania naprawczego według identyfikatora](get-remediation-one-activity.md)
+####### [Lista wszystkich działań naprawczych](get-remediation-all-activities.md)
+####### [Lista dostępnych urządzeń w przypadku jednego działania naprawczego](get-remediation-exposed-devices-activities.md)
+
+###### [Wynik]()
+####### [Metody i właściwości wyników](score.md)
+####### [Lista wyników ekspozycji według grup komputerowych](get-machine-group-exposure-score.md)
+####### [Uzyskaj wynik ekspozycji](get-exposure-score.md)
+####### [Uzyskiwanie wyniku bezpiecznego urządzenia](get-device-secure-score.md)
+
+###### [Oprogramowanie]()
+####### [Metody i właściwości oprogramowania](software.md)
+####### [Oprogramowanie listy](get-software.md)
+####### [Uzyskiwanie oprogramowania według identyfikatora](get-software-by-id.md)
+####### [Rozpowszechnianie wersji oprogramowania na liście](get-software-ver-distribution.md)
+####### [Lista komputerów według oprogramowania](get-machines-by-software.md)
+####### [Lista luk w zabezpieczeniach oprogramowania](get-vuln-by-software.md)
+####### [Brakujące KB](get-missing-kbs-software.md)
+
+###### [Użytkownik]()
+####### [Metody użytkownika](user.md)
+####### [Alerty dotyczące użytkowników](get-user-related-alerts.md)
+####### [Uzyskiwanie komputerów powiązanych z użytkownikami](get-user-related-machines.md)
+
+###### [Luka w zabezpieczeniach]()
+####### [Metody i właściwości luk w zabezpieczeniach](vulnerability.md)
+####### [Lista luk w zabezpieczeniach](get-all-vulnerabilities.md)
+####### [Lista luk w zabezpieczeniach komputera i oprogramowania](get-all-vulnerabilities-by-machines.md)
+####### [Uzyskiwanie luki w zabezpieczeniach za pomocą identyfikatora](get-vulnerability-by-id.md)
+####### [Lista komputerów na lukę](get-machines-by-vulnerability.md)
+
+##### [Jak używać interfejsów API — przykłady]()
+###### [Power Automate](api-microsoft-flow.md)
+###### [Power BI](api-power-bi.md)
+###### [Zaawansowane szukanie w języku Python](run-advanced-query-sample-python.md)
+###### [Zaawansowane szukanie przy użyciu programu PowerShell](run-advanced-query-sample-powershell.md)
+###### [Używanie zapytań OData](exposed-apis-odata-samples.md)
+
+
+#### [Interfejs API przesyłania strumieniowego danych nieprzetworzonego]()
+##### [Nieprzetworzone przesyłanie strumieniowe danych](raw-data-export.md)
+##### [Przesyłaj strumieniowo zaawansowane wydarzenia chowe do centrum Wydarzeń Azure](raw-data-export-event-hub.md)
+##### [Przesyłanie strumieniowe zaawansowanych wydarzeń łęgowych do konta magazynu](raw-data-export-storage.md)
+
+#### [Integracja usług SIEM]()
+##### [Integracja narzędzi SIEM z programem Microsoft Defender for Endpoint](configure-siem.md)
+##### [Rozwiązywanie problemów z integracją narzędzia SIEM](troubleshoot-siem.md)
+
+#### [Interfejsy API & partnerów]()
+##### [Aplikacje partnerów](partner-applications.md)
+##### [Połączone aplikacje](connected-applications.md)
+##### [Eksplorator interfejsu API](api-explorer.md)
+
+#### [Kontrola dostępu oparta na rolach]()
+##### [Zarządzanie dostępem do portalu przy użyciu RBAC](rbac.md)
+##### [Tworzenie ról i zarządzanie nimi](user-roles.md)
+##### [Tworzenie grup urządzeń i zarządzanie nimi]()
+###### [Korzystanie z grup urządzeń](machine-groups.md)
+###### [Tworzenie tagów urządzeń i zarządzanie nimi](machine-tags.md)
+
+
+
+
+
+
+
+### [Integracja zarządzanego usługodawca zabezpieczeń (MSSP)]()
+#### [Konfigurowanie integracji zarządzanego usługodawca zabezpieczeń](configure-mssp-support.md)
+#### [Obsługiwani dostawcy zarządzanych usług zabezpieczeń](mssp-list.md)
+#### [Udzielanie dostępu do portalu przez program MSSP](grant-mssp-access.md)
+#### [Uzyskiwanie dostępu do portalu klientów programu MSSP](access-mssp-portal.md)
+#### [Konfigurowanie powiadomień alertów](configure-mssp-notifications.md)
+#### [Uzyskiwanie dostępu do aplikacji partnera](exposed-apis-create-app-partners.md)
+#### [Pobieranie alertów z dzierżawy klienta](fetch-alerts-mssp.md)
+#### [Zarządzanie szansą sprzedaży usługodawca zabezpieczeń](mssp-support.md)
+### [Scenariusze integracji partnerów]()
+#### [Szanse partnerów technicznych](partner-integration.md)
+#### [Zostań partnerem programu Microsoft Defender for Endpoint](get-started-partner-integration.md)
+### [Integracje]()
+#### [Integracje programu Microsoft Defender for Endpoint](threat-protection-integration.md)
+#### [Ochrona użytkowników, danych i urządzeń za pomocą dostępu warunkowego](conditional-access.md)
+#### [Omówienie integracji usługi Microsoft Defender for Cloud Apps](microsoft-cloud-app-security-integration.md)
+
+### [Ochrona informacji w Windows informacji]()
+#### [Windows integracji z usługą](information-protection-in-windows-overview.md)
+
+### [Uzyskiwanie dostępu do programu Microsoft Defender for Endpoint Community Center](community.md)
+
+### [Przydatne zasoby](helpful-resources.md)
+
+## [Rozwiązywanie problemów]()
+### [Rozwiązywanie problemów ze stanem czujnika]()
+#### [Sprawdzanie stanu czujnika](check-sensor-status.md)
+#### [Naprawianie czujników o złej kondycji](fix-unhealthy-sensors.md)
+#### [Nieaktywne urządzenia](fix-unhealthy-sensors.md#inactive-devices)
+#### [Nieprawidłowo skonfigurowane urządzenia](fix-unhealthy-sensors.md#misconfigured-devices)
+#### [Przeglądanie zdarzeń czujnika i błędów na komputerach za pomocą podglądu zdarzeń](event-error-codes.md)
+
+### [Rozwiązywanie problemów dotyczących kondycji czujnika przy użyciu Analizatora klientów]()
+#### [Omówienie analizatora klientów](overview-client-analyzer.md)
+#### [Pobieranie i uruchamianie analizatora klienta](download-client-analyzer.md)
+#### [Uruchamianie analizatora klienta na Windows](run-analyzer-windows.md)
+#### [Uruchamianie analizatora klienta w systemie macOS lub Linux](run-analyzer-macos-linux.md)
+#### [Zbieranie danych na potrzeby zaawansowanego rozwiązywania problemów na Windows](data-collection-analyzer.md)
+#### [Opis raportu w formacie HTML analizatora](analyzer-report.md)
+#### [Opinie na temat narzędzia do analizowania klienta](analyzer-feedback.md)
+
+ 
+
+### [Rozwiązywanie problemów z usługą Programu Microsoft Defender dla punktu końcowego]()
+#### [Rozwiązywanie problemów z usługami](troubleshoot-mdatp.md)
+#### [Skontaktuj się z pomocą techniczną programu Microsoft Defender, aby uzyskać pomoc techniczną dla punktu końcowego](contact-support.md)
+
+### [Rozwiązywanie problemów z odpowiedzią na żywo](troubleshoot-live-response.md)
+
+### [Zbieranie dzienników pomocy technicznej przy użyciu usługi LiveAnalyzer](troubleshoot-collect-support-log.md)
+
+### [Rozwiązywanie problemów związanych z zmniejszaniem powierzchni ataków]()
+#### [Ochrona sieci](troubleshoot-np.md)
+#### [Reguły zmniejszania obszaru podatnego na ataki](troubleshoot-asr.md)
+#### [Migracja do reguł zmniejszania powierzchni ataków](migrating-asr-rules.md)
+
+# [Microsoft 365 Defender dokumentów]()
+## [Microsoft 365 Defender](../defender/index.yml)
+## [Defender for Office 365](../office-365-security/index.yml)
+## [Defender for Identity](/defender-for-identity/)
+## [Defender for Cloud Apps](/cloud-app-security/)
+## [Defender for Business](../defender-business/index.yml)
+

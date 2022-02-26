@@ -1,0 +1,131 @@
+- name: Microsoft 365 dla małych firm
+  href: index.yml
+  items:
+    - name: Wprowadzenie
+      items:
+        - name: Omówienie konfiguracji
+          href: setup-overview.md
+        - name: Wybierz subskrypcję
+          href: Choose-subscription.md
+    - name: Konfiguracja chmury
+      items:
+        - name: 'Zarejestruj się, aby uzyskać subskrypcję'
+          href: sign-up.md
+        - name: Konfigurowanie usługi
+          href: set-up.md
+        - name: Zabezpieczanie Windows 10 komputerach
+          href: secure-win10-pcs.md
+        - name: Tworzenie witryny internetowej w witrynie GoDaddy
+          href: create-web-site.md
+    - name: Konfiguracja urządzenia
+      items:
+        - name: Uaktualnianie do Windows 10 Pro
+          href: upgrade.md
+        - name: Połączenie komputerów DO MICROSOFT 365
+          href: connect.md
+        - name: Instalowanie Microsoft Office aplikacji
+          href: install-office.md
+        - name: Importowanie i przekierowywanie poczty
+          href: import-email.md
+    - name: Mobile
+      items:
+        - name: Praca z dowolnego miejsca
+          href: work-from-anywhere.md
+        - name: Instalowanie Office w systemie Android
+          href: 'https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f'
+        - name: Instalowanie Office w systemie iOS
+          href: 'https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f'
+        - name: Pobierz aplikację mobilną Administrator
+          href: admin-mobile.md
+    - name: Współpraca
+      items:
+        - name: Używanie Outlook i Teams
+          href: collab-outlook-teams.md
+        - name: Wprowadzenie do Teams
+          href: 'https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937'
+        - name: Tworzenie grupowego adresu e-mail
+          href: 'https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c'
+        - name: Tworzenie kalendarza udostępnionego
+          href: 'https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88'
+        - name: Tworzenie zespołu dla całej organizacji
+          href: /microsoftteams/create-an-org-wide-team
+        - name: Tworzenie zespołu z gośćmi
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
+        - name: Dołączanie do zespołu jako gość
+          href: /microsoftteams/guest-experience
+        - name: Rozmawianie na czacie z pracownikami i klientami
+          href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
+        - name: Planowanie spotkania z gośćmi
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
+        - name: Dołączanie do spotkania z gośćmi
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
+    - name: Przechowywanie w chmurze
+      items:
+        - name: Omówienie udostępniania
+          href: overview-file-sharing.md
+        - name: Miejsce do przechowywania plików
+          href: 'https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e'
+        - name: Bezpieczne udostępnianie plików na zewnątrz
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
+        - name: Łatwe udostępnianie plików zewnętrznie
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
+    - name: Business Voice
+      items:
+        - name: Omówienie komunikacji głosowej w biznesie
+          href: business-voice.md
+        - name: Kupowanie dodatku Business Voice
+          href: buy-business-voice.md
+    - name: Aplikacje zwiększające produktywność
+      items:
+        - name: Omówienie aplikacji Bookings
+          href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
+    - name: Zarządzanie usługami
+      items:
+        - name: Co to jest administrator
+          href: what-is-admin.md
+        - name: 'Wyświetlanie, pobieranie lub drukowanie rachunku'
+          href: view-bill.md
+        - name: Kupowanie nowych licencji
+          href: buy-licenses.md
+        - name: Usuwanie istniejących licencji
+          href: remove-existing-licenses.md
+        - name: Zaktualizuj metodę płatności
+          href: update-payment.md
+        - name: Resetowanie haseł użytkowników
+          href: reset-user-passwords.md
+        - name: Konfigurowanie samodzielnego resetowania hasła
+          href: set-up-self-serve-password-reset.md
+        - name: Dodawanie użytkownika
+          href: add-user.md
+        - name: Dodawanie innego administratora
+          href: add-admin.md
+        - name: Zmienianie nazwy użytkownika lub adresu e-mail
+          href: change-user-name-email.md
+        - name: Przenoszenie użytkowników do innej subskrypcji
+          href: change-subscription.md
+        - name: Tworzenie podpisu dla całej firmy
+          href: company-wide-signature.md
+        - name: Działanie dotyczące raportu użycia
+          href: act-on-report.md
+        - name: Konfigurowanie nowego firmowego adresu e-mail
+          href: set-up-a-new-business-email-address.md
+    - name: Zarządzanie urządzeniami
+      items:
+        - name: Zabezpieczanie Windows 10 Pro urządzeniach
+          href: secure-win-10-pro-devices.md
+        - name: Zabezpieczanie Office w systemie iOS
+          href: secure-office-on-ios.md
+    - name: Zabezpieczenia & zgodności
+      items:
+        - name: Omówienie zabezpieczeń Microsoft 365 Business Premium wiadomości
+          href: overview-m365-security.md
+        - name: Zabezpieczanie kont pracowników za pomocą uwierzytelniania wieloskładnikowego
+          href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
+        - name: Konfigurowanie logowania dwuskładnikowego na telefonie
+          href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
+    - name: Pomoc techniczna
+      items:
+        - name: Znajdowanie dokumentów i szkoleń
+          href: ../admin/index.yml
+    - name: Przełączanie z usługi Google Workspace
+      href: moveto-microsoft-365/move-from-google-workspace-overview.md

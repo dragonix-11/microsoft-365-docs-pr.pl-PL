@@ -1,0 +1,122 @@
+- name: Microsoft SharePoint Syntex
+  href: index.md
+- name: Modele niestandardowe
+  items:
+    - name: Opis dokumentu
+      items:
+        - name: Omówienie
+          href: document-understanding-overview.md
+        - name: Różnice między modelami
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: Importowanie przykładowego modelu
+          href: learn-about-document-understanding-models-through-the-sample-model.md
+        - name: Tworzenie centrum zawartości
+          href: create-a-content-center.md
+        - name: Tworzenie klasyfikatora
+          href: create-a-classifier.md
+        - name: Duplikowanie modelu
+          href: duplicate-a-model.md
+        - name: Zmienianie nazwy modelu
+          href: rename-a-model.md
+        - name: Tworzenie wyodrębnianego
+          href: create-an-extractor.md
+        - name: Zmienianie nazwy wyodrębnianego
+          href: rename-an-extractor.md
+        - name: Typy objaśnień
+          href: explanation-types-overview.md
+        - name: Korzystanie z szablonów objaśnień
+          href: explanation-templates.md
+        - name: Stosowanie modelu rozumienia dokumentu
+          href: apply-a-model.md
+        - name: Publikowanie i odnajdywanie modelu
+          href: model-discovery.md
+        - name: Stosowanie etykiety przechowywania
+          href: apply-a-retention-label-to-a-model.md
+        - name: Stosowanie etykiety wrażliwości
+          href: apply-a-sensitivity-label-to-a-model.md
+        - name: Analiza użycia modelu
+          href: model-usage-analytics.md
+        - name: Korzystanie z taksonomii magazynu terminów podczas tworzenia wyodrębnianego
+          href: leverage-term-store-taxonomy.md
+        - name: SharePoint Syntex tryb ułatwień dostępu
+          href: accessibility-mode.md
+    - name: Przetwarzanie formularza
+      items:
+        - name: Omówienie
+          href: form-processing-overview.md
+        - name: Różnice między modelami
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: Tworzenie modelu przetwarzania formularzy
+          href: create-a-form-processing-model.md
+        - name: Stosowanie etykiety przechowywania
+          href: apply-a-retention-label-to-a-model.md
+        - name: Analiza użycia modelu
+          href: model-usage-analytics.md
+- name: Wbudowane modele
+  items:
+    - name: Omówienie
+      href: prebuilt-overview.md
+    - name: Wbudowane modele faktur i pokwitowania
+      href: prebuilt-models.md
+    - name: Stosowanie etykiety przechowywania
+      href: apply-a-retention-label-to-a-model.md
+    - name: Analiza użycia modelu
+      href: model-usage-analytics.md
+- name: Zestaw zawartości
+  items:
+    - name: Tworzenie dokumentów przy użyciu zestawu zawartości
+      href: content-assembly.md
+- name: Wyszukiwanie metadanych
+  items:
+    - name: Wyszukiwanie metadanych w bibliotekach dokumentów
+      href: metadata-search.md
+- name: Taksonomia
+  items:
+    - name: Importowanie przy użyciu usługi SKOS
+      href: import-term-set-skos.md
+    - name: Odwołanie do formatowania SKOS
+      href: skos-format-reference.md
+    - name: Wypychanie typu zawartości do centrum
+      href: push-content-type-to-hub.md
+    - name: Raporty dotyczące magazynu okresów
+      href: term-store-analytics.md
+- name: Konfiguracja i administrowanie
+  items:
+    - name: Licencjonowanie oprogramowania SharePoint Syntex
+      href: syntex-licensing.md
+    - name: Konfigurowanie SharePoint Syntex
+      href: set-up-content-understanding.md
+    - name: Tworzenie centrum zawartości
+      href: create-a-content-center.md
+    - name: Zarządzanie SharePoint Syntex za pomocą programu PowerShell
+      items:
+        - name: Omówienie
+          href: powershell-syntex-intro.md
+        - name: Eksportowanie i importowanie modeli
+          href: powershell-syntex-import-export.md
+        - name: Publikowanie modeli
+          href: powershell-syntex-publishing.md
+        - name: Żądanie przetworzenia za pomocą modelu
+          href: powershell-syntex-processing.md
+        - name: Praca z objaśnieniami modelu
+          href: powershell-syntex-explanations.md
+- name: Wdrożenie
+  items:
+    - name: Wprowadzenie do wdrożenia
+      href: adoption-getstarted.md
+    - name: Scenariusze i przypadki użycia
+      href: adoption-scenarios.md
+    - name: Uruchamianie wersji próbnej
+      href: trial-syntex.md
+    - name: Zarządzanie umowami w programie Microsoft 365
+      items:
+        - name: Omówienie
+          href: solution-manage-contracts-in-microsoft-365.md
+        - name: Krok nr 1. Użyj SharePoint Syntex
+          href: solution-manage-contracts-step1.md
+        - name: Krok nr 2. Używanie Microsoft Teams
+          href: solution-manage-contracts-step2.md
+        - name: Krok nr 3. Użyj Power Automate
+          href: solution-manage-contracts-step3.md
+- name: Rozszerzalność
+  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

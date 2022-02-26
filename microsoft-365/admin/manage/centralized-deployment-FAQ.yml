@@ -1,0 +1,68 @@
+### YamlMime:FAQ
+metadata:
+  title: Często zadawane pytania dotyczące scentralizowanego wdrażania
+  f1.keywords:
+  - NOCSH
+  ms.author: kwekua
+  author: kwekua
+  manager: scotv
+  audience: Admin
+  ms.topic: article
+  ms.service: o365-administration
+  ms.localizationpriority: medium
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_NonTOC
+  - Adm_TOC
+  ms.custom: AdminSurgePortfolio
+  search.appverid:
+  - BCS160
+  - MET150
+  - MOE150
+  description: Przejrzyj odpowiedzi na często zadawane pytania dotyczące scentralizowanego wdrażania z centrum administracyjne platformy Microsoft 365.
+  ms.openlocfilehash: 72e57729d13a1d78c2589f942b09bc4779e21db7
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "62973533"
+title: Często zadawane pytania dotyczące scentralizowanego wdrażania
+summary: Scentralizowane wdrażanie jest zalecaną dla administratora programu Office 365 sposobem wdrażania dodatków Office (Word, Excel, PowerPoint i Outlook) u użytkowników i grup w organizacji pod warunkiem, że organizacja spełnia wszystkie wymagania dotyczące korzystania z funkcji scentralizowanego wdrażania, jak opisano w tym artykule.
+sections:
+- name: Zignorowano
+  questions:
+  - question: >
+      Jak sprawdzić, czy w mojej organizacji jest ustawione scentralizowane wdrażanie?
+    answer: "Scentralizowane wdrażanie dodatków wymaga, aby użytkownicy używali programu Aplikacje Microsoft 365 dla przedsiębiorstw (i logują się do programu Office przy użyciu poświadczeń logowania organizacji) oraz że mają Exchange Online pocztowe. Katalog subskrypcji musi być w organizacji lub w federacji z Azure Active Directory. \n \nScentralizowane wdrażanie jest obsługiwane tylko w przypadku skrzynek pocztowych w trybie online. Nie obsługuje on wdrażania lokalnych skrzynek Exchange pocztowych.\n\nZa pomocą funkcji [sprawdzania zgodności funkcji](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)  Scentralizowane wdrażanie możesz sprawdzić, czy Twoja subskrypcja jest uprawniana. \n  \n"
+  - question: >
+      Jak kierować przypisania użytkowników dodatku za pomocą scentralizowanego wdrażania?
+    answer: "Scentralizowane wdrażanie obsługuje przypisania do poszczególnych użytkowników, grup i wszystkich osób w dzierżawie. Scentralizowane wdrażanie może być używane dla użytkowników w grupach najwyższego poziomu lub grupach bez grup nadrzędnych, ale nie dla użytkowników w zagnieżdżonych grupach lub grupach, które mają grupy nadrzędne. Scentralizowane wdrażanie jest również częścią większości grup Azure Active Directory, w tym grup Office 365, list dystrybucyjnych i grup zabezpieczeń. \n\nW celu łatwiejszego zarządzania lepiej jest używać przypisań grup zamiast pojedynczych przypisań użytkowników.\n \nAby uzyskać więcej szczegółowych informacji, [zobacz Przydziały użytkowników i grup](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments).\n \n"
+  - question: "Ile czasu trwa wyświetlanie dodatków dla wszystkich użytkowników? \n"
+    answer: "Może upłynieć do 24 godzin, aż dodatek będzie się wyświetlał dla wszystkich użytkowników. Może zająć ten sam czas, w jaki aktualizacje dodatku, zmiany dotyczące dodatku są włączane i wyłączane, a także usuwanie dodatków. \n"
+  - question: >
+      Jak zarządzać dostępem użytkowników do dodatków w mojej organizacji jako administrator?
+    answer: >
+      W celu łatwego wdrażania dodatków dla użytkowników, grup lub całej organizacji zalecamy administratorom korzystanie z funkcji scentralizowanego wdrażania.
+
+
+      Aby uzyskać więcej informacji na temat zarządzania dostępem użytkowników, zobacz:
+       - [Uniemożliwiaj pobieranie dodatków przez wyłączenie sklepu Office wszystkich klientów (z wyjątkiem Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+       - [Określ administratorów i użytkowników, którzy mogą instalować dodatki dla użytkowników i zarządzać nimi Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
+  - question: "Czy scentralizowane wdrażanie zapewni administratorom elastyczność w zakresie wyboru metody wdrażania Outlook dodatków? \n"
+    answer: "Tak. Scentralizowane wdrażanie zapewnia administratorom elastyczność wyboru jednej z dwóch metod wdrażania Outlook dodatków podczas wdrażania dodatków:\n         \n**Dostępne** Użytkownicy mogą zainstalować dodatek w programie Outlook wybierając pozycję Narzędzia > Uzyskaj więcej dodatków > **zarządzane przez administratora**.\n \n**Opcjonalne** Dodatek jest wdrażany automatycznie u przypisanych użytkowników, ale mogą oni go usunąć.\n    \n"
+  - question: "Czy administratorzy mogą aktualizować dodatki firmowe? \n"
+    answer: "Tak. Administratorzy mogą przekazać nowy plik manifestu w celu obsługi zmian metadanych dla dodatków LOB wdrożonych przez administratora. Dodatek ten jest aktualizowany przy następnym Office uruchamiania aplikacji. Aplikacja internetowa może się zmienić w dowolnym momencie.\n \nAby uzyskać więcej informacji, zobacz [Dodatek biznesowy](./manage-addins-in-the-admin-center.md).  \n"
+  - question: "Czy administratorzy mogą wyłączyć dodatki? \n"
+    answer: >
+      Tak. Administratorzy mogą włączać i wyłączać dodatki wdrażane dla wszystkich użytkowników z centrum administracyjnego firmy Microsoft.
+
+
+      Aby uzyskać więcej informacji, zobacz [Stany dodatku](./manage-addins-in-the-admin-center.md#add-in-states).
+  - question: >
+      Czy administratorzy mogą usuwać lub usuwać dodatki?
+    answer: "Tak. Administratorzy mogą usuwać dodatki wdrożone dla wszystkich użytkowników z centrum administracyjnego firmy Microsoft.\n\nAby uzyskać więcej informacji, [zobacz Usuwanie dodatku](./manage-addins-in-the-admin-center.md#delete-an-add-in). \n  \n"
+  - question: "Czy administratorzy mogą wdrażać dodatki płatne ze sklepu Office przy użyciu funkcji scentralizowanego wdrażania? \n"
+    answer: "L.p. Obecnie nie można wdrażać płatnych dodatków ze sklepu Office przy użyciu funkcji scentralizowanego wdrażania. \n \nZalecamy słanienie do dewelopera pliku manifestu lub adresu URL, aby zwrócić się do dewelopera pliku manifestu lub adresu URL. Administrator dzierżawy może następnie wdrożyć dodatek jako dodatek LOB przy użyciu funkcji scentralizowanego wdrażania.\n   \n"
+  - question: "Jakiej roli administratora potrzebuję, aby zarządzać dodatki dla mojej organizacji? \n"
+    answer: "Administrator globalny to zalecana rola z całkowitym dostępem do cyklu zarządzania dodatków. Jeśli jesteś osobą, która kupiła Twoją subskrypcję usługi Microsoft 365 Business, jesteś administratorem globalnym.\n\nSubskrypcja zawiera zestaw ról administratora, które możesz przypisać innym użytkownikom w organizacji. Każda rola administratora jest mapowa na typowe funkcje biznesowe i zapewnia osobom w Twojej organizacji uprawnienia do wykonywania określonych zadań w centrum administracyjne platformy Microsoft 365.  \n \nAby uzyskać więcej informacji, zobacz [Przypisywanie ról administratora](../add-users/assign-admin-roles.md?view=o365-worldwide)."

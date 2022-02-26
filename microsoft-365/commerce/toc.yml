@@ -1,0 +1,84 @@
+- name: Zarządzanie subskrypcjami dla firm
+  href: index.yml
+- name: Microsoft 365 centrum pomocy dla administratorów
+  href: ../admin/index.yml
+- name: Wypróbuj lub kup
+  items:
+    - name: Wypróbowywanie lub kupowanie platformy Microsoft 365
+      href: try-or-buy-microsoft-365.md
+    - name: Kupowanie dodatków i zarządzanie nimi
+      href: buy-or-edit-an-add-on.md
+    - name: Pomoc biznesowa dla Microsoft 365
+      href: ../admin/misc/business-assist.md
+    - name: Dodawanie miejsca do magazynowania
+      href: add-storage-space.md
+- name: Zarządzanie subskrypcjami
+  items:
+    - name: Uaktualnianie subskrypcji
+      href: subscriptions/upgrade-to-different-plan.md
+    - name: Odnawianie subskrypcji
+      href: subscriptions/renew-your-subscription.md
+    - name: Ponowne aktywowanie subskrypcji
+      href: subscriptions/reactivate-your-subscription.md
+    - name: Anulowanie subskrypcji
+      href: subscriptions/cancel-your-subscription.md
+    - name: Co się stanie po wygaśnięciu subskrypcji?
+      href: subscriptions/what-if-my-subscription-expires.md
+    - name: Zarządzanie subskrypcjami aplikacji innych firm
+      href: manage-saas-apps.md
+    - name: Zarządzanie zakupami samoobsługi (użytkownicy)
+      href: subscriptions/manage-self-service-purchases-users.md
+    - name: Zarządzanie zakupami samoobsługi (administrator)
+      href: subscriptions/manage-self-service-purchases-admins.md
+- name: Zarządzanie licencjami
+  items:
+    - name: Kupowanie lub usuwanie licencji subskrypcji
+      href: licenses/buy-licenses.md
+    - name: Przypisywanie licencji do użytkowników
+      href: ../admin/manage/assign-licenses-to-users.md
+    - name: Odbieranie licencji użytkownikom
+      href: ../admin/manage/remove-licenses-from-users.md
+    - name: Przenoszenie użytkowników do innej subskrypcji
+      href: subscriptions/move-users-different-subscription.md
+    - name: Zarządzanie licencjami aplikacji ISV
+      href: licenses/manage-third-party-app-licenses.md
+    - name: Zarządzanie zasadami automatycznego żądania
+      href: licenses/manage-auto-claim-policies.md
+    - name: Informacje na temat subskrypcji i licencji
+      href: licenses/subscriptions-and-licenses.md
+- name: Rachunki i płatności
+  items:
+    - name: Wyświetlanie rachunku lub faktury
+      href: billing-and-payments/view-your-bill-or-invoice.md
+    - name: Opis rachunku lub faktury
+      href: billing-and-payments/understand-your-invoice2.md
+    - name: Opłaty za subskrypcję
+      href: billing-and-payments/pay-for-your-subscription.md
+    - name: Zarządzanie metodami płatności
+      href: billing-and-payments/manage-payment-methods.md
+    - name: Zmienianie częstotliwości rozliczeń
+      href: billing-and-payments/change-payment-frequency.md
+    - name: Zarządzanie powiadomieniami o rozliczeniach i załącznikami do faktur
+      href: billing-and-payments/manage-billing-notifications.md
+    - name: Opis profilów rozliczeniowych
+      href: billing-and-payments/manage-billing-profiles.md
+    - name: Zmienianie adresów rozliczeniowych
+      href: billing-and-payments/change-your-billing-addresses.md
+    - name: 2 i silne uwierzytelnianie klienta w zakresie usług płatniczych
+      href: billing-and-payments/psd2.md
+    - name: Żądanie środków na podatek od pokłonie na koncie
+      href: billing-and-payments/withholding-tax-credit-global.md
+- name: Konta rozliczeniowe
+  items:
+    - name: Opis kont rozliczeniowych
+      href: manage-billing-accounts.md
+    - name: Kojarzenie dzierżawy z kontem rozliczeniowym
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
+- name: Zarządzanie relacjami z partnerami
+  href: manage-partners.md
+- name: Przeglądanie uprawnień partnera
+  href: review-partner-admin-privileges.md
+- name: Zamykanie konta
+  href: close-your-account.md
+- name: Kontakt z pomocą techniczną
+  href: ../admin/get-help-support.md
