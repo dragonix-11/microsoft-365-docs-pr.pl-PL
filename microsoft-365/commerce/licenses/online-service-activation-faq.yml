@@ -1,0 +1,76 @@
+### YamlMime:FAQ
+metadata:
+  title: Aktywacja usługi online w ramach otwartego programu
+  ms.author: cmcatee
+  author: cmcatee-MSFT
+  manager: scotv
+  ms.reviewer: racheg, armanv
+  ms.date: 07/22/2021
+  audience: Admin
+  ms.topic: article
+  ms.service: o365-administration
+  ms.custom: commerce_vl
+  ms.localizationpriority: medium
+  description: Aktywacja usługi online w ramach otwartego programu
+  ms.openlocfilehash: b8570097a056a574a638f2d3c6ed7a7dfe78fa99
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "62987280"
+title: Aktywacja usługi online w ramach otwartego programu
+summary: ''
+sections:
+- name: Ogólne
+  questions:
+  - question: >
+      Jak aktywować usługi online zakupione za pośrednictwem programów Open (Open, Open Value i Open Value Subscription)?
+    answer: >
+      Otwarci klienci mogą aktywować usługi online na dwa sposoby:
+
+      - Po zamówieniu usług online za pośrednictwem rodziny programów Open otrzymasz wiadomość e-mail z linkiem i instrukcjami dotyczącymi aktywowania usług.
+
+      LUB
+
+      - W otwartym [programie VLSC (Volume Licensing Service Center)](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) klienci mogą przejść do sekcji Aktywacja usługi online i wybrać licencję do zarządzania:
+
+
+      1. Wybierz link zarządzania aktywacją, a następnie wybierz pozycję Rozpocznij aktywację. Zostanie otwarte okno aktywacji produktu i klucz zostanie wstępnie wypełniony.
+
+      2. Kontynuuj pozostałe kroki aktywacji, aby ukończyć aktywację produktu.
+
+
+      Pomyślna aktywacja w witrynie internetowej Aktywacja usługi online w trybie online zostanie ukończona w ciągu 48 godzin.
+
+      Aby uzyskać informacje na temat aktywowania Microsoft Azure, zobacz Wprowadzenie [z platformą Azure w tece Otwieranie licencjonowania](https://azure.microsoft.com/offers/ms-azr-0111p/).
+  - question: >
+      Nie widzę mojego zamówienia na platformę Azure. Co mam zrobić?
+    answer: >
+      Zamówienia na platformie Azure są aktywowane za pośrednictwem kluczy. Uzyskaj klucze za pośrednictwem karty Pliki do pobrania i klucze w centrum VLSC i wprowadź klucz na stronie Wprowadzenie [usłudze Azure na stronie Otwarte licencjonowanie](https://azure.microsoft.com/offers/azure-open/).
+  - question: >
+      Co to jest konto służbowe i dlaczego jest potrzebne do aktywacji usług online?
+    answer: >
+      Konto służbowe jest przeznaczone dla użytkowników do logowania się do organizacji, w usługi firmy Microsoft. Podczas logowania zazwyczaj jest używany formularz adres username@orgname.com lub username@orgname.onmicrosoft.com, gdzie nazwa organizacji to nazwa domeny poczty e-mail organizacji.
+  - question: >
+      Jak sprawdzić, czy moja organizacja ma już konto?
+    answer: "Nazwa organizacji skojarzona z Twoim kontem służbowym jest skojarzona z identyfikatorem licencji usługi, która jest aktywowana. Jeśli konto istnieje, nazwa organizacji jest wstępnie wypełniona w skonfigurowaniu konta organizacji i jest już połączona z organizacją z oryginalnego zamówienia usługi online. Proces rejestracji sprawdza, czy Twoja organizacja ma konto. \n\nJeśli pole **Firma jest dostępne** , zakończ proces rejestracji, aby zalogować się i aktywować usługę. Jeśli to pole nie jest dostępne, zarejestruj organizację. Aby zarejestrować organizację dla konta, musisz być administratorem globalnym.\n\nW przypadku żądania konta służbowego żądanie jest wysyłane do administratora dzierżawy organizacji, który przyznaje lub odrzuca żądanie rejestracji. Użyj tego konta służbowego po zalogowaniu się do aktywacji usługi online VLSC firmy Microsoft.\n"
+  - question: >
+      Dlaczego portal aktywacji wyloguje mnie po aktywowaniu usługi online?
+    answer: "Podczas aktywowania usług online w ramach programu Open License każda umowa jest aktywowana oddzielnie. Aby mieć pewność, że licencje nie zostały aktywowane w niewłaściwej dzierżawie, każda aktywacja jest włączana w osobnej sesji. \n"
+  - question: >
+      Jak działa aktywacja usługi online w przypadku zakupów w otwartej licencji?
+    answer: >
+      Usługi Microsoft Online Services for Open Agreements zostały przeniesione do modelu aktywacji bez klucza. Po zamówieniu usług Open Online otrzymasz wiadomość e-mail z linkiem i instrukcjami dotyczącymi aktywowania usług.
+  - question: >
+      Co zrobić, jeśli chcę przypisać zakup do innej organizacji?
+    answer: >
+      Aby przypisać produkty do nowej organizacji, przejdź przez kroki tworzenia konta, aby utworzyć nową organizację. W tym miejscu możesz przypisać dowolne kupione stanowiska lub produkty.
+  - question: >
+      Właśnie aktywowano usługę online. Dlaczego nadal jest informacja Muszę aktywować usługę na stronie Zarządzanie aktywacjami w centrum Volume Licensing Service Center?
+    answer: >
+      Może upłynieć do 24 godzin, aż aktywowana usługa będzie wyświetlana jako aktywowana jako stan Aktywowana na stronie **Zarządzanie aktywacjami**.
+  - question: >
+      Jak skontaktować się z pomocą techniczną?
+    answer: >
+      Aby uzyskać pomoc telefoniczną lub internetową, zobacz [Kontakt z nami](/licensing/contact-us). Firma Microsoft odpowie na przesłanie formularza sieci Web w ciągu 24 godzin.
+additionalContent: "\n## <a name=\"additional-resources\"></a>Dodatkowe materiały\n\n- [Klucze produktu — często zadawane pytania](product-keys-faq.yml)\n\n- [Często zadawane pytania dotyczące plików do pobrania](downloads-faq.yml)"

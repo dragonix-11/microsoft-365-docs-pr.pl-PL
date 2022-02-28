@@ -1,0 +1,120 @@
+### YamlMime:FAQ
+metadata:
+  title: Program firmy Microsoft użytkowania w domu często zadawane pytania
+  ms.author: cmcatee
+  author: cmcatee-MSFT
+  manager: scotv
+  ms.reviewer: tugu, jmueller
+  audience: Admin
+  ms.topic: reference
+  ms.service: o365-administration
+  ms.localizationpriority: medium
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - okr_SMB
+  - AdminSurgePortfolio
+  - commerce_subscriptions
+  search.appverid: MET150
+  description: Często zadawane pytania dotyczące Program firmy Microsoft użytkowania w domu.
+  ms.date: 05/01/2021
+  ms.openlocfilehash: 7fae34efdc9989f7a5e7807040c9e9457b8b4688
+  ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/26/2021
+  ms.locfileid: "62988696"
+title: Program firmy Microsoft użytkowania w domu często zadawane pytania
+summary: >
+  Klienci korzystający z licencjonowania zbiorowego używają programu Program firmy Microsoft użytkowania w domu (HUP) w Microsoft Store dla Firm [sieci Web](https://go.microsoft.com/fwlink/?linkid=2139192).
+
+
+  Wszyscy inni klienci uzyskają dostęp do Programu hup, korzystając z tego kroku:
+
+
+  - W  centrum administracyjnym firmy Microsoft przejdź do strony [**RozliczeniaWysyłanie**](https://go.microsoft.com/fwlink/p/?linkid=842054) >  produktów, wybierz kartę Korzyści, a następnie wybierz **kartę Program** obsługi klienta.
+sections:
+- name: Zignorowano
+  questions:
+  - question: >
+      Co to jest Program firmy Microsoft użytkowania w domu?
+    answer: >
+      Program Program firmy Microsoft użytkowania w domu (HUP) umożliwia pracownikom uprawnionych firm kupowanie produktów firmy Microsoft dla klientów konsumenckich z rabatem. Aktualne rabaty możesz sprawdzić na stronie produktu w [Programie użytkowania w domu](https://www.microsoft.com/home-use-program).
+  - question: >
+      Na jakich rynkach jest oferowany Program użytkowania w domu?
+    answer: "Rabaty na subskrypcje Microsoft 365 Family Personal są oferowane uprawnionym firmom na całym świecie z tymi wyjątkami:\n\n- Liban, Makau, Rosja i Wenezuela: Ta oferta nie jest dostępna na tych rynkach.\n- Chiny i Hongkong: na tych rynkach jest dostępna subskrypcja jednoroczna. W przypadku Chin odwiedź [Microsoft 365 w Chinach](https://www.microsoftstore.com.cn/home-use-program/invite). W przypadku Hongkongu odwiedź [stronę Microsoft 365 zakupu po obniżonej cenie](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- Japonia: Microsoft 365 Family jest niedostępne.\n- Rabaty na wybrane urządzenia Surface i akcesoria są oferowane uprawnionym firmom na wybranych rynkach. \n"
+  - question: >
+      W jaki sposób organizacja kwalifikuje się do uzyskania rabatu w hup?
+    answer: "Aby pracownicy mieli dostęp do rabatu na Program firmy Microsoft użytkowania w domu, muszą mieć ważny firmowy adres e-mail i aktywne konto Microsoft, a Twoja organizacja musi spełniać jedno z następujących kryteriów:\n\n- Klienci, którzy mają aktywny program Software Assurance dla kwalifikujących się Office aplikacji\n- Klienci, którzy Microsoft 365/Microsoft 365 E3/E5 z pakietu Software Assurance\n- Klienci komercyjni i rządowi, którzy kupili ≥ 2000 licencji na jeden produkt lub kombinację Microsoft 365 E3/E5\n- Klienci z edukacji i organizacji niedochodowych\n- Klienci komercyjni i rządowi, którzy w ciągu ostatnich 12 miesięcy wydali co najmniej 250 000 USD na kwalifikujące się urządzenia Power BI, Office, urządzenia Surface &, Windows i Enterprise Mobility \n"
+  - question: >
+      Dlaczego muszę utworzyć konto Azure Active Directory (AAD), aby korzystać z Programu użytkowania w domu/Microsoft Store dla Firm?
+    answer: >
+      Aby zaktualizować i unowocześnić Program użytkowania w domu do szerszego zakresu licencji i korzyści dla produktów, musimy zmienić sposób realizacji Programu użytkowania w domu. Microsoft Store dla Firm jest używana do sprawdzania poprawności uprawnień i przypisywania korzyści z HuP, oraz do tego, że korzysta z usługi AAD do łączenia informacji z VLSC i sprawdzania poprawności domen poczty e-mail, na których znajdują się pracownicy Twojej organizacji. Aby uzyskać więcej informacji, zobacz [Aby zarejestrować się w usłudze Azure AD za pośrednictwem usługi Office 365 dla firm](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
+  - question: >
+      Jak zostać przypisanym administratorem IT zarządzanej dzierżawy?
+    answer: >
+      Musisz utworzyć specjalny rekord w systemie DNS, aby udowodnić, że jesteś właścicielem domeny Twojej firmy, np.contoso.com.
+
+
+      Aby uzyskać szczegółowe instrukcje na temat tego, jak zostać dzierżawą zarządzaną, zobacz Przejmij nieza zarządzanie katalogiem jako [administrator w usłudze Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+  - question: >
+      Jakie dostępne zasoby są dostępne w celu promowania korzyści z Programu użytkowania w domu dla pracowników?
+    answer: >
+      Skorzystaj z zasobów znajdujących się na stronie głównej [Programu](https://www.microsoft.com/home-use-program/resources) użytkowania w domu, aby pomóc Ci w promocji programu na rzecz pracowników. Znajdziesz ulotki cyfrowe i do wydrukowania, szczegółowe informacje do użycia w wiadomościach e-mail i biuletynach oraz wskazówki na temat najlepszych promocji Programu użytkowania w domu.
+  - question: >
+      Jakie kroki musi wykonać kwalifikujący się pracownik, aby dokonać Program firmy Microsoft użytkowania w domu zakupu?
+    answer: >
+      1. **Zarejestruj się** Przejdź do [Program firmy Microsoft użytkowania w domu strony głównej](https://www.microsoft.com/home-use-program) i wybierz Wprowadzenie ustawienia. Pracownicy wprowadzają firmowy adres e-mail.
+
+      2. **Potwierdź**  Na firmowy adres e-mail jest wysyłana wiadomość e-mail z linkiem uwierzytelniacym ich uprawnienia do programu.
+
+      3. **Rejestrowanie** Po uwierzytelnieniu rozpocznij proces zakupu, podając konto Microsoft skojarzone z jego osobistym adresem e-mail, co umożliwi im wyświetlenie rabatów na produkty dostępne dla tych użytkowników w zależności od korzyści program użytkowania w domu w organizacji. Aby uzyskać więcej informacji, zobacz [Jak zalogować się do konta Microsoft](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+
+      4. **Kup** Zakup jest przetwarzany i zrealizowany w Microsoft Store.
+  - question: >
+      Jeśli pracownik subskrybuje subskrypcję Microsoft 365 pośrednictwem usługi Program firmy Microsoft użytkowania w domu, jaki ma to wpływ na subskrypcję usługi Microsoft 365 firmową i limit urządzeń w naszej organizacji?
+    answer: >
+      Instalacje w ramach Programu użytkowania w domu nie mają wpływu na subskrypcję usługi Microsoft 365 firmy. Gdy pracownicy aktywują Microsoft 365 urządzeniach osobistych, używają swoich osobistych kont Microsoft, a nie kont służbowych. Administratorzy IT w Twojej organizacji nie zarządzają żadnymi zakupami dokonanmi w ramach Programu użytkowania w domu ani ich nie obsługują.
+  - question: >
+      Mam problem z zarządzaniem korzyściami mojej organizacji w Program firmy Microsoft użytkowania w domu sieci. Gdzie mogę uzyskać pomoc techniczną?
+    answer: >
+      Aby uzyskać pomoc techniczną w przypadku problemów migrowania z centrum Volume Licensing Service Center lub uzyskiwania dostępu Microsoft Store dla Firm, zobacz [Pomoc techniczna VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
+
+
+      Aby uzyskać informacje o problemach z wyświetlaniem korzyści po Microsoft Store dla Firm, zobacz [Pomoc techniczna sklepu Store dla Firm](/microsoft-store/)
+  - question: >
+      Dlaczego nie widzę opcji zakupu produktów Visio Professional 2021 i/lub Project Professional 2021?
+    answer: >
+      Jeśli jeden z Twoich pracowników skorzystał z poprzedniego programu i szuka rabatów na produkty Visio Professional 2021 i/lub Project Professional 2021, przejdź do procesu weryfikacji uprawnień i po zalogowaniu się przy użyciu osobistego konta Microsoft przejdź do strony Inne produkty pakietu **Office**, aby kupić te produkty. Jeśli nie widzisz zastosowanych oczekiwań rabatów, skontaktuj się z administratorem Programu użytkowania w domu Twojego pracodawcy, aby uzyskać informacje o tych dodatkowych korzyściach.
+  - question: >
+      Co zrobić, jeśli moi pracownicy mają pytania dotyczące tego programu lub potrzebują pomocy przy zakupie i instalacji?
+    answer: >
+      Jeśli pracownicy mają pytania, poleć im następujące zasoby:
+
+
+      - [Po zakupie i instalacji — często zadawane pytania](https://products.office.com/microsoft-office-for-home-and-school-faq)
+
+
+      - [Program użytkowania w domu — często zadawane pytania pracowników](https://www.microsoft.com/home-use-program/frequently-asked-questions)
+
+       Aby uzyskać pomoc w zakresie problemów technicznych, zobacz [Pomoc techniczna firmy Microsoft](https://support.microsoft.com/). Znajdziesz pomoc dla:
+
+      - Stan zamówienia
+
+      - Rozliczenia
+
+      - Instalowanie Office
+
+      - Logowanie się do Office
+  - question: >
+      Dlaczego moja firma powinna uczestniczyć w Programie użytkowania w domu?
+    answer: "Program użytkowania w domu pomaga Twojej firmie zmaksymalizować zwrot z inwestycji Firmy Microsoft. Korzyści płynące z uczestnictwa w programie to: \n\n- Zmniejszenie potrzeby szkoleń IT \n- Obniżenie kosztów pomocy technicznej i szkolenia \n- Umożliwia pracownikom zapoznanie się z Microsoft 365 w domu \n- Rosnąca proficiencyjność oprogramowania, co może zwiększyć produktywność \n"
+  - question: >
+      Jak ta Program firmy Microsoft użytkowania w domu z korzyścią dla pracowników?
+    answer: >
+      Gdy pracownicy Microsoft 365 kupić produkty po bardzo obniżonej cenie, mogą korzystać z tego samego oprogramowania w domu, z których korzystają w biurze. Pomaga to zwiększyć produktywność, zwiększyć ich umiejętności i zwiększyć zadowolenie z pracy.
+  - question: >
+      Co się dzieje, gdy pracownik odchodzi z firmy?
+    answer: "W przypadku pracowników, którzy kwalifikują się do Microsoft 365 subskrypcji usługi Microsoft 365 i zakupili w ramach programu, cena z rabatem obowiązuje przez okres, przez który subskrypcja pracownika pozostaje aktywna, niezależnie od ich statusu zatrudnienia w organizacji. Jednak prawo do używania komercyjnego kończy się po zakończeniu zatrudnienia. W przypadku pracowników uprawnionych do korzystania z Office 2019 muszą odinstalować oprogramowanie zakupione w ramach Programu użytkowania w domu Office gdy pracownik odchodzi z firmy. \n"
+additionalContent: "\n## <a name=\"related-content\"></a>Zawartość pokrewna\n  [Program użytkowania w domu : często zadawane pytania](https://www.microsoft.com/home-use-program/frequently-asked-questions). (artykuł)\\\n  [Centrum usługi licencjonowania zbiorowego firmy Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (strona linku)\\\n  [Microsoft Store dla Firm pomocy technicznej dla administratorów](/microsoft-store/) (strona linku)\\\n  [Microsoft Store dla Firm](https://go.microsoft.com/fwlink/?linkid=2139192) (strona linku)\\\n  [Sklep pracownika Programu użytkowania w domu](https://www.microsoft.com/home-use-program) (strona linku)\\\n  [Licencjonowanie firmy Microsoft: Omówienie Programu użytkowania w domu](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (strona linku)"

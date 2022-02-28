@@ -1,0 +1,203 @@
+### YamlMime:FAQ
+metadata:
+  title: 'Klucze produktu : często zadawane pytania'
+  ms.author: cmcatee
+  author: cmcatee-MSFT
+  manager: scotv
+  ms.reviewer: racheg, armanv
+  ms.date: 07/22/2021
+  audience: Admin
+  ms.topic: article
+  ms.service: o365-administration
+  ms.custom: commerce_vl
+  ms.localizationpriority: medium
+  description: 'Klucze produktu : często zadawane pytania'
+  ms.openlocfilehash: 3a1ca8e666ab710cfd0554a4050ab69d750936d3
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "62983429"
+title: 'Klucze produktu : często zadawane pytania'
+summary: ''
+sections:
+- name: Ogólne
+  questions:
+  - question: >
+      Co to są klucze produktu?
+    answer: >
+      Klucz produktu umożliwia korzystanie z produktu oprogramowania, na który posiadasz licencję w ramach określonego programu licencjonowania zbiorowego. Klucze produktu wymienione w p centrum administracyjne platformy Microsoft 365 powinny być używane tylko w przypadku produktów licencjonowanych licencjami volume i są przeznaczone tylko dla Twojej organizacji.
+
+
+      Klucz aktywacji usługi online (OSA) to jednorazowy klucz produktu używany do aktywowania subskrypcji usług Microsoft Online Services.
+
+
+      Aby uzyskać więcej informacji, zobacz [Aktywacja usługi online dla otwartych programów — często zadawane pytania](/licensing/online-service-activation-faq).
+  - question: >
+      Jak znaleźć klucze produktu w centrum administracyjne platformy Microsoft 365?
+    answer: "1. Zaloguj się do centrum administracyjne platformy Microsoft 365. \n2. Przejdź do **strony** **RozliczeniaNasyłanie** >  >  **produktówVolumePobierze** >  & **kluczy >** umieść wskaźnik myszy na produkcie i wybierz **pozycję Wyświetl klucze**.\n\nZnajdziesz informacje o kluczu produktu dla każdego produktu, typie licencjonowania (klucz licencjonowania zbiorowego, program usługa zarządzania kluczami (KMS) i klucz aktywacji wielokrotnej) oraz liczbie użytych i dostępnych aktywacji kluczy aktywacji wielokrotnej.\n\nWybierz **pozycję Pobierz wszystkie klucze produktu,** aby pobrać klucze wyświetlane dla licencji na dysk lokalny.\n"
+  - question: >
+      Jak znaleźć SQL Server produktu?
+    answer: >
+      Klucz SQL jest osadzony w Kreatorze aktywacji oprogramowania, a nie wyświetlany w centrum administracyjnym i jest wykrywany automatycznie podczas instalacji. Aby uzyskać więcej informacji, [zobacz przewodnik SQL Server instalacji](/sql/database-engine/install-windows/install-sql-server).
+
+
+      Klucz można też znaleźć, pobierając plik ISO SQL centrum administracyjnego w >. \x64 folder > DefaultSetup.ini pliku. Pamiętaj, aby wykonać kopię zapasową istniejącej wersji przed zainstalowaniem lub uaktualnieniem SQL wersji. Jeśli potrzebujesz pomocy w rozwiązywaniu problemów technicznych podczas instalacji produktu lub aktywacji usługi online, skontaktuj się z pomocą techniczną firmy Microsoft, przesyłając żądanie pomocy [technicznej](https://support.microsoft.com/oas).
+  - question: >
+      Jak znaleźć klucz produktu dla zakupu w licencjonowaniu zbiorowego?
+    answer: "Jeśli Twoja umowa autoryzowała dostęp do produktu, który wymaga klucza, możesz znaleźć te klucze, przechodząc do tematu **BillingYour** >  **productsVolume** >  **licensingDownloads** >  & keys. \n\nJednak niektóre produkty nie wymagają klucza produktu. Te informacje podano w opisie produktu w wykazie materiałów do pobrania i kluczy.\n\nAby ustalić, czy produkt wymaga klucza, przejdź do aktywacji [produktu i informacji o kluczach](https://licensingapps.microsoft.com/product-activation). W obszarze Znajdź produkty wybierz produkt lub wyszukaj nazwę produktu.\n"
+  - question: >
+      Co to jest klucz konfiguracji?
+    answer: >
+      W celu odblokowania produktu przez pominięcie aktywacji jest używany klucz konfiguracji dla każdej kombinacji produktu i wersji. Klucz konfiguracji można uzyskać na jeden z dwóch sposobów:
+
+        - **Fizyczne spełnienie** W przypadku produktów uzyskanych w ramach fizycznego wypełnienia klucz instalacyjny jest drukowany na nośniku.
+        - **Pobierz warunki realizacji** W przypadku produktów uzyskanych po pobraniu z centrum administracyjnego klucz konfiguracji jest wyświetlany na ekranie pobierania i może mu towarzyszy następujący tekst: Niektóre produkty dostępne do pobrania wymagają kluczy konfiguracji. Zanotuj klucz konfiguracji, który będzie potrzebny podczas instalacji produktu. Aby uzyskać więcej informacji na temat kluczy konfiguracji, [KMS klucza konfiguracji klienta](/windows-server/get-started/kmsclientkeys).
+  - question: >
+      Co decyduje o kluczach produktów skojarzonych z moimi umowami?
+    answer: >
+      Klucze produktu w licencjonowaniu zbiorczym są udostępniane dla każdego identyfikatora licencji wymienionego w podsumowaniu [relacji firmy Microsoft](/licensing/license-faq). To podsumowanie relacji znajduje się w centrum Volume Licensing Service Center. Aby uzyskać więcej informacji, zobacz [Co to jest identyfikator licencji](/licensing/license-faq#what-is-a-licensing-id). Możesz mieć kilka identyfikatorów licencjonowania:
+
+        - Enterprise Agreement (EA) i Select Plus otrzymują klucze produktu w ramach puli produktów (Systemy, Serwery i Aplikacje).
+        - Select Agreement customers receive product keys per product pool (Systems, Servers, and Applications) based on their purchasing forecasts.
+        - Klienci korzystający z open license i open value otrzymują odpowiednie klucze produktu na podstawie ich zakupów licencji.
+
+      Aby uzyskać więcej informacji, zobacz Często [zadawane pytania dotyczące podsumowania licencji](/licensing/license-faq).
+
+
+      > [!NOTE]
+
+      > Wszyscy klienci mają prawo do ponownego przetwarzania i obniżenia wersji kluczy produktu. Select Plus, Enterprise Agreement (EA) i Select customers have limited evaluation rights for training and back-up. Aby uzyskać więcej informacji, zobacz [Krótkie informacje o licencjonowaniu produktów](/licensing/learn-more/volume-licensing-briefs).
+- name: Aktywacja woluminowa
+  questions:
+  - question: >
+      Co to jest aktywacja woluminowa?
+    answer: >
+      Aktywacja grupowa to rozwiązanie konfigurowalne, które ułatwia automatyzowanie procesu aktywacji produktu i zarządzanie tym procesem na komputerach z Windows systemami operacyjnymi licencjonowanymi w ramach programu licencjonowania zbiorowego. Aktywacja zbiorowe jest również używana w przypadku innego oprogramowania firmy Microsoft, w tym pakietów Office, sprzedawanych w ramach umów licencjonowania zbiorowego i które obsługują aktywację zbiorowe. Więcej informacji można znaleźć w następujących artykułach:
+        - [Narzędzia do zarządzania aktywacją Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
+        - [Aktywacja volume activation for Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
+
+      Aktywacja zbiorowe dotyczy tylko systemów objętych programem licencjonowania zbiorowego i jest wyłącznie używana jako narzędzie do aktywacji. Nie jest związany z licencją fakturowania ani rozliczeń.
+
+
+      Aktywacja volume (Aktywacja volume) zapewnia dwa sposoby wykonania aktywacji zbiorczej. Klienci mogą używać jednego lub obu typów kluczy do aktywacji systemów w organizacji:
+        - usługa zarządzania kluczami (KMS) umożliwia organizacjom aktywowanie systemów w obrębie ich własnej sieci.
+        - Klucz aktywacji wielokrotnej aktywuje systemy raz za razem przy użyciu hostowanych usług aktywacji firmy Microsoft.
+  - question: >
+      Co to jest usługa zarządzania kluczami (KMS)?
+    answer: >
+      KMS to usługa aktywacji, która pozwala organizacjom na aktywację systemów w obrębie ich własnej sieci przez wyeliminowanie konieczności łączenia się poszczególnych komputerów z firmą Microsoft w celu aktywacji produktu. Nie wymaga ona dedykowanego systemu i może być hostowana w systemie, który zapewnia inne usługi.
+
+
+      KMS wymaga minimalnej liczby komputerów fizycznych lub wirtualnych w środowisku sieciowym. Te minimalne wartości, nazywane progami aktywacji, są ustawione tak, aby były łatwo Enterprise klientów.
+
+        - Progi aktywacji dla Windows
+          - Aby aktywować serwery z uruchomionym programem Windows Server, organizacja musi mieć co najmniej 5 komputerów.
+          - Twoja organizacja musi mieć co najmniej 25 komputerów, aby aktywować systemy klienckie z uruchomionymi Windows.
+        - Progi aktywacji Office
+          - Twoja organizacja musi mieć co najmniej 5 komputerów z zainstalowaną Office, aby aktywować Office produktach przy użyciu KMS.
+
+      Aby uzyskać więcej informacji na temat progów aktywacji, zobacz Przewodnik [po planowaniu aktywacji zbiorczej](/windows/deployment/volume-activation/volume-activation-windows-10).
+  - question: >
+      Co to jest KMS hosta?
+    answer: >
+      Klucz KMS służy do aktywowania KMS hosta za pomocą serwera aktywacji firmy Microsoft i może aktywować maksymalnie 6 KMS hostów po 10 aktywacji na hosta. Każdy KMS może aktywować nieograniczoną liczbę komputerów.
+  - question: >
+      Dlaczego w programie KMS nie jest wyświetlany żaden klucz centrum administracyjne platformy Microsoft 365 klientów korzystających z licencji Open License?
+    answer: "KMS aktywacji nie są już wstępnie przypisane do umów Open, ponieważ metoda aktywacji wielokrotnej jest preferowana.\n\nKlucze KSM można, z wyjątkiem, przypisywać do klientów open, którzy spełniają minimalne KMS progu aktywacji dla systemu Windows Server, systemu operacyjnego i Office. Aby zażądać wyjątku, prześlij żądanie formularza sieci Web do pomocy technicznej firmy Microsoft.\n\nAby zażądać wyjątku, musisz mieć uprawnienia administratora VLSC, administratora kluczy lub podglądu kluczy i podać następujące informacje:\n  \n  - Umowa / Numer rejestracji lub identyfikator licencji i autoryzacja.\n  - Nazwa produktu (w tym wersja i wersja).\n  - 5 ostatnich znaków klucza produktu.\n  - Wymagana liczba aktywacji hosta.\n  - Uzasadnienie biznesowe lub powód wdrożenia.\n"
+  - question: >
+      Co zrobić, jeśli potrzebuję dodatkowych KMS hostów?
+    answer: "Jeśli potrzebujesz dodatkowych KMS aktywacji dla więcej niż 6 KMS hostów, prześlij żądanie formularza sieci Web, aby uzyskać centrum administracyjne platformy Microsoft 365 pomocy technicznej. \n\nAby zażądać wyjątku, musisz mieć uprawnienia administratora VLSC, administratora kluczy lub podglądu kluczy i podać następujące informacje:\n  \n  - Umowa / Numer rejestracji lub identyfikator licencji i autoryzacja.\n  - Nazwa produktu (w tym wersja i wersja).\n  - 5 ostatnich znaków klucza produktu.\n  - Wymagana liczba aktywacji hosta.\n  - Uzasadnienie biznesowe lub powód wdrożenia.\n"
+  - question: >
+      Co to jest klucz aktywacji wielokrotnej?
+    answer: >
+      Klucz aktywacji wielokrotnej aktywuje systemy raz za razem przy użyciu hostowanych usług aktywacji firmy Microsoft, które wymagają połączenia z serwerem aktywacji firmy Microsoft. Po aktywowaniu komputerów nie jest wymagana żadna dalsza komunikacja z firmą Microsoft.
+
+
+      **Ważne** Liczba dozwolonych aktywacji zbiorczej jest oparta na umowie licencjonowania zbiorowego.
+  - question: >
+      Dlaczego liczba podanych aktywacji ma być dopasowana do liczby zakupionych licencji?
+    answer: >
+      Zalecamy klientom aktywowanie KMS aktywacji wielokrotnej (MAK, Multiple Activation Keys). KMS metoda aktywacji na dużą skalę. Wiele czynników określa liczbę aktywacji skojarzonych z każdym kluczem aktywacji zbiorczej, w tym liczbę zakupionych licencji, poziom cen zakupu klienta i program licencjonowania zbiorowego.
+
+
+      Liczba aktywacji dostępnych dla produktu nie zawsze jest dopasowana do liczby zakupionych licencji. Zazwyczaj otrzymasz więcej aktywacji na wypadek konieczności ponownego zainstalowania i aktywowania niektórych produktów. Sprawdź sekcję Podsumowanie licencjonowania w umowie, aby wyświetlić liczbę licencji.
+  - question: >
+      Jak poprosić o zwiększenie limitów aktywacji klucza aktywacji mak?
+    answer: "O zwiększenie liczby aktywacji klucza aktywacji mak można zażądać za pośrednictwem formularza sieci Web i jest to udzielane z wyjątku. W przypadku Kanady i Stanów Zjednoczonych prześlij zgłoszenia [do pomocy technicznej dotyczące licencjonowania zbiorowego](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f). W przypadku wszystkich pozostałych krajów prześlij formularz [sieci Web Pomocy technicznej](/licensing/contact-us). \n\nAby można było zażądać limitu aktywacji kluczy aktywacji zbiorczej, musisz mieć uprawnienia administratora VLSC, administratora kluczy lub podglądu kluczy i podać następujące informacje:\n\n  - Numer umowy/rejestracji lub identyfikator licencji i autoryzacja.\n  - Nazwa produktu (w tym wersja i wersja).\n  - 5 ostatnich znaków klucza produktu.\n  - Wymagana liczba aktywacji hosta.\n  - Uzasadnienie biznesowe lub powód wdrożenia.\n"
+  - question: >
+      Jak aktywować licencje przy użyciu klucza aktywacji wielokrotnej?
+    answer: >
+      Licencje można aktywować na jeden z dwóch sposobów przy użyciu klucz aktywacji mak:
+
+        - Aktywacja niezależna od klucza aktywacji aktywacji ma na każdym komputerze indywidualnie nawiąże połączenie z firmą Microsoft w celu zakończenia aktywacji za pomocą sieci Web lub telefonu.
+        - Aktywacja serwera proxy aktywacji wielokrotnej Jedno scentralizowane żądanie aktywacji jest składane w imieniu wielu komputerów z jednym połączeniem z firmą Microsoft w trybie online lub telefonicznie. W tej metodzie jest używany Narzędzie do zarządzania aktywacją zbiorczą (Narzędzie do zarządzania aktywacją zbiorczą), który jest częścią zestawu Windows Automated Installation Kit (WAIK). Narzędzie do zarządzania aktywacją zbiorczą umożliwia informatykom automatyzowanie procesu aktywacji zbiorczej przy użyciu klucza aktywacji zbiorczej i zarządzanie nim, a także umożliwia sprawdzanie liczby aktywacji w kluczu aktywacji zbiorczej.
+  - question: >
+      Co to jest Narzędzie do zarządzania aktywacją zbiorczą (Narzędzie do zarządzania aktywacją zbiorczą)?
+    answer: >
+      Centrum Narzędzie do zarządzania aktywacją zbiorczą (Narzędzie do zarządzania aktywacją zbiorczą) to narzędzie, które umożliwia administratorom sieci i innym informatykom automatyzowanie procesu aktywacji detalicznej i sprzedaży detalicznej oraz zarządzanie nim w sposób Windows. Microsoft Office i wybierz inne produkty firmy Microsoft. Narzędzie do zarządzania aktywacją zbiorczą zarządzać aktywacją aktywacji zbiorczej przy użyciu kluczy aktywacji wielokrotnej lub klucza aktywacji Windows usługa zarządzania kluczami (KMS). Narzędzie do zarządzania aktywacją zbiorczą to standardowa Microsoft Management Console mmc, która wymaga standardowego Microsoft Management Console MMC 3.0.
+
+
+      Aby uzyskać informacje na Narzędzie do zarządzania aktywacją zbiorczą, zobacz:
+
+        - [Narzędzie do zarządzania aktywacją zbiorczą (Narzędzie do zarządzania aktywacją zbiorczą)](/windows/deployment/volume-activation/volume-activation-management-tool)
+        - [Zarządzanie aktywacją przy Narzędzie do zarządzania aktywacją zbiorczą (Narzędzie do zarządzania aktywacją zbiorczą)](/previous-versions/tn-archive/ff686876(v=technet.10))
+        - Pobierz [Narzędzie do zarządzania aktywacją zbiorczą (Narzędzie do zarządzania aktywacją zbiorczą)](https://www.microsoft.com/download/details.aspx?id=11936)
+  - question: >
+      Co należy wiedzieć o używaniu programu Windows Server jako hosta KMS do aktywowania Windows klientów?
+    answer: "W przypadku wdrożenia Windows metody usługa zarządzania kluczami (KMS) jako metody aktywacji należy zwrócić uwagę, że:\n  \n  - Windows server nie jest obsługiwany jako host KMS w celu aktywowania Windows.\n  - Klucz Windows Server KMS jest wymagany w celu uzyskania poprawki umożliwiającej aktywację Windows klienckich. Aby uzyskać najnowszą poprawkę, zobacz [Konfigurowanie KMS hosta w celu aktywowania](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office) wersji licencjonowanych Office. \n\nJeśli używasz programu Windows Server jako KMS hosta sieci Web, możesz:\n  \n  - Uaktualnij KMS hosta, aby Windows Server.\n  - Obniżanie wersji komputera do Windows Server 2003.\n  - Uruchom hosta KMS na komputerze z Windows volume Edition.\n  - Uruchom maszynę Windows maszynę wirtualną programu Server.\n"
+  - question: >
+      Co należy wiedzieć o aktywacji zbiorczej Office, Project i Visio?
+    answer: >
+      Poniższe zmiany aktywacji zbiorczej są związane z Office, Project i Visio:
+        - Office KMS aktywuje wszystkie Office usługi lub aplikacji.
+        - W celu Office KMS aktywacji należy zainstalować tylko jeden klucz produktu.
+
+      W przypadku wdrożenia Office metody usługa zarządzania kluczami (KMS) jako metody aktywacji należy zwrócić uwagę, że:
+        - Nie można aktywować programu Office użyciu KMS, jeśli Windows Server jest KMS hosta.
+        - Poprawka nie jest dostępna w celu umożliwienia aktywacji Office klientów.
+
+      Jeśli używasz programu Windows Server 2008 jako KMS hosta, możesz:
+        - Uaktualnij KMS hosta, aby Windows Server.
+        - Obniż wersję komputera do starszej wersji Windows Server.
+        - Uruchom KMS komputera Windows komputera.
+        - Uruchom Windows wirtualnego serwera na nowszej wersji programu Windows Server.
+  - question: >
+      Jak aktywować usługę Terminal Windows i usługę pulpitu zdalnego (RDS)?
+    answer: >
+      Po pobraniu multimediów z serwera z VLSC można go aktywować przy użyciu Kreatora aktywacji produktu. Nie musisz znajdować klucza licencji licencjonowania woluminowego ani klucza do skonfigurowania produktu w VLSC. Wykonanie wszystkich kroków kreatora aktywacji monituje serwer o połączenie się z witrynie Microsoft Clearing House przez Internet w celu zweryfikowania danych. Ewentualnie w przypadku serwerów w trybie offline kreator aktywacji oferuje aktywację telefoniczną lub internetową.
+
+
+      Aby rozpocząć, przypisz rolę licencjonowania pulpitu zdalnego dla serwera (**StartAdministrative** >  **ToolsServer** >  Manager), a następnie aktywuj usługę RDS z Menedżera licencji pulpitu zdalnego. Wybierz **pozycję** **StartNarzędzia** >  >  **administracyjneUsuń usługi pulpitu zdalnegoRemote**, a następnie wybierz pozycję **Menedżer licencji pulpitu zdalnego/terminalu**.
+
+
+      W trakcie aktywacji jest proszony o wybranie programu licencyjnego i numeru umowy. W przypadku klientów korzystających z open license wprowadź numer autoryzacji. W przypadku mpsa wprowadź numer konta zakupu (nie numer umowy MPSA). Jeśli nie masz pewności co do typu programu użytego do zakupu licencji CAL, przejdź do kolumny Podsumowanie relacji **VLSC** i zobacz kolumnę **Program nadrzędny** .
+
+
+      Aby uzyskać informacje na temat licencjonowania serwera terminali, zobacz [Licencjonowanie serwera terminali](/troubleshoot/windows-server/remote/terminal-server-licensing). Aby uzyskać informacje na temat instalowania roli licencjonowania pulpitu zdalnego i aktywowania serwera licencji, [](/windows-server/remote/remote-desktop-services/rds-activate-license-server) zobacz Aktywowanie serwera licencji usług pulpitu zdalnego i Nie można połączyć się z rds, ponieważ nie są dostępne żadne serwery [licencjonowania RD](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server).
+  - question: >
+      Czy organizacje w tej samej strukturze własności mogą wdrożyć produkt przy użyciu tego samego klucza?
+    answer: >
+      Zgodność z licencją i zarządzanie zasobami są niezależne od aktywacji klucza. Klienci nie muszą korzystać z kluczy podanych w ramach określonego identyfikatora licencji (umowa, rejestracja, podmiot stowarzyszony lub licencja). Jeśli organizacja nadrzędna ma umowę indywidualną, może wdrożyć produkt w organizacji nadrzędnej i podrzędnej przy użyciu tego samego klucza. Taka elastyczność umożliwia klientom centralne zarządzanie obrazem wdrażania przy użyciu kluczy specyficznych dla umów/licencji lub jednego zestawu kluczy dla wszystkich.
+  - question: >
+      Czy za pomocą kluczy licencji licencjonowania woluminowego można zrównać prawa do ponownego obrazowania?
+    answer: >
+      Tak. Prawa do ponownego przetwarzania obrazu są udzielane wszystkim klientom licencjonowania zbiorowego firmy Microsoft. Na mocy tych praw klienci mogą ponownie obrazować licencjonowane kopie oryginalnego sprzętu (OEM) lub pełnych pakietów produktów (FPP) przy użyciu multimediów dostarczonych w ramach umowy, jeśli kopie z nośnika licencjonowania zbiorowego są identyczne z oryginalnym produktem licencjonowanym. Klienci licencjonowania zbiorowego mogą znaleźć klucze licencji zbiorczej na stronie klucza produktu lub poprosić o klucze za pośrednictwem [Centrum aktywacji firmy Microsoft](https://licensingapps.microsoft.com/product-activation).
+
+
+      > [!NOTE]
+
+      > Jeśli jesteś klientem otwartej licencji, musisz zakupić co najmniej jedną jednostkę produktu, który chcesz ponownie na obrazie uzyskać dostęp do multimediów produktu i otrzymać klucz produktu.
+
+
+      Aby uzyskać więcej informacji na temat praw do ponownego przetwarzania obrazu, zobacz [Krótkie informacje dotyczące licencjonowania produktów](/licensing/learn-more/volume-licensing-briefs).
+  - question: >
+      Jak pobrać klucze do pliku lokalnego?
+    answer: "Aplikacja centrum administracyjne platformy Microsoft 365 opcję pobrania kluczy produktu do pliku lokalnego do późniejszego użycia. Po pobraniu kluczy produktu ze strony Pliki do pobrania i klucze plik zawiera wszystkie klucze licencji licencjonowania zbiorowego skojarzone z umowami w profilu centrum administracyjnego. Jeśli jednak pobierzemy klucze z widoku Identyfikator licencji na stronie Podsumowanie relacji, plik będzie zawierał tylko klucze skojarzone z przeglądanym identyfikatorem licencji.\n\nPlik klucza produktu do pobrania jest w formacie rozdzielanym tabulatorami i można go otworzyć w Excel do sortowania i wyświetlania kluczy. W pliku znajdują się następujące kolumny **: Identyfikator** licencji, **Program** **nadrzędny, Organizacja****, Produkt****, Klucz** produktu, **Typ** i Aktywacje **MAK — używane/dostępne, Stanowiska i Stan OSA**. \n\nAby otworzyć pobrany plik w aplikacji Excel, wykonaj następujące czynności:\n  1. Otwórz Microsoft Excel.\n  2. Wybierz **pozycję** **FileOpen** > , a następnie wybierz pobrany plik CSV.\n  3. Wybierz **pozycję Rozdzielany** (ustawienie domyślne), a następnie wybierz pozycję Rozdzielany **tabulatorami (** aby zapobiec wyświetlaniu wszystkich danych w jednej kolumnie).\n  4. Wybierz **Zakończ**. \n\nPlik .CSV zostanie otwarty w Excel a dane będą wyświetlane w oddzielnych kolumnach.\n"
+- name: Pomoc techniczna
+  questions:
+  - question: >
+      Jak skontaktować się z pomocą techniczną?
+    answer: >
+      centrum administracyjne platformy Microsoft 365 klienci mogą skontaktować się z pomocą techniczną telefonicznie lub za pomocą formularza sieci Web. Firma Microsoft odpowie na przesłanie formularza sieci Web w ciągu 24 godzin. Aby skontaktować się z pomocą techniczną, zobacz [Kontakt z nami](/licensing/contact-us).
+additionalContent: "\n## <a name=\"additional-resources\"></a>Dodatkowe materiały\n\n- [Często zadawane pytania dotyczące plików do pobrania](downloads-faq.yml)\n\n- [Aktywacja usługi online dla otwartych programów — często zadawane pytania](online-service-activation-faq.yml)"

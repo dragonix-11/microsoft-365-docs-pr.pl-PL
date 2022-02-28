@@ -1,0 +1,134 @@
+### YamlMime:FAQ
+metadata:
+  title: Zakup samoobsługowy — często zadawane pytania
+  f1.keywords:
+  - NOCSH
+  ms.author: cmcatee
+  author: cmcatee-MSFT
+  manager: scotv
+  ms.reviewer: mijeffer, pablom
+  audience: Admin
+  ms.topic: article
+  ms.service: o365-administration
+  ms.localizationpriority: medium
+  ms.collection: M365-subscription-management
+  ms.custom:
+  - AdminSurgePortfolio
+  - aka.ms/self-service-purchase-faq
+  - commerce_ssp
+  search.appverid:
+  - MET150
+  description: Znajdź odpowiedzi na często zadawane pytania dotyczące zakupów samoobsługowych.
+  ms.date: 09/15/2020
+  ms.openlocfilehash: 603f50b95ef16e7484f87bcb437416f258073165
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "62985307"
+title: Zakup samoobsługowy — często zadawane pytania
+summary: >
+  Zakup samoobsługowy umożliwia użytkownikom wypróbowanie nowych technologii i opracowywanie rozwiązań, z których ostatecznie korzystają ich większe organizacje. Centralne zaopatrzenie i zespoły IT zapewniają widoczność wszystkim użytkownikom, którzy kupią i wdrażają rozwiązania zakupów samoobsługowych za pośrednictwem <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a>. Administratorzy mogą wyłączyć samoobsługowe zakupy dla  per produktów za pośrednictwem programu PowerShell. Aby dowiedzieć się więcej, [zobacz Korzystanie z usługi AllowSelfServicePurchase dla modułu MS Commerce PowerShell](allowselfservicepurchase-powershell.md).
+
+
+  Zakup samoobsługowy jest dostępny dla platform Power Platform (Power BI, Power Apps i Power Automate), Project i Visio.
+
+
+  > [!NOTE]
+
+  > Zakup samoobsługowy nie jest dostępny w Indiach ani dla użytkowników wersji dla instytucji rządowych lub edukacyjnych. Project i Visio są niedostępne w przypadku zakupu samoobsługowego w Brazylii i Demokratycznej Republice Konga.
+sections:
+- name: Dokonywanie zakupu samoobsługowego
+  questions:
+  - question: >
+      Jak klient dokona zakupu samoobsługowego?
+    answer: >
+      Klienci mogą dokonać zakupu samoobsługowego online w witrynach internetowych produktów lub z monitów o zakup w aplikacji. Klienci są proszeni o wprowadzenie adresu e-mail w celu upewninia się, że są użytkownikami w istniejącej dzierżawie usługi Azure Active Directory (AD). Następnie przekieruje użytkownika do zalogowania się przy użyciu poświadczeń usługi Azure AD. Po zalogowaniu się klient jest proszony o wybranie, ile subskrypcji chce kupić, i o płatność kartą kredytową. Po zakończeniu zakupu mogą zacząć korzystać ze swojej subskrypcji. Nabywca ma dostęp do ograniczonego widoku <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365, gdzie</a> może przypisywać licencje do produktu innym osobom w organizacji.
+  - question: >
+      Jakie są opcje płatności przy zakupach samoobsługowych?
+    answer: >
+      Obecnie jedyną dostępną metodą płatności jest karta kredytowa. Płatność za pośrednictwem usługi Invoicing nie jest obsługiwana.
+  - question: >
+      KtoTo można kupić w ramach zakupu samoobsługowego?
+    answer: >
+      Każdy użytkownik z kontem użytkownika niebędącym gościem w zarządzanej dzierżawie usługi Azure AD może dokonać zakupu samoobsługowego. Zakup samoobsługowy nie jest dostępny dla dzierżaw  w organizacjach rządowych lub edukacyjnych. Jeśli dotyczy to Twojej organizacji, nie trzeba nic więcej zrobić, aby kontrolować zakup samoobsługowy.
+
+
+      Użytkownicy w organizacjach lub na rynkach, którzy nie kwalifikują się do zakupu samoobsługowego, zobaczą komunikat z prośbą o skontaktowanie się z administratorem IT.
+  - question: >
+      Czy użytkownicy goście mogą kupować w ramach zakupu samoobsługowego?
+    answer: >
+      Nie, użytkownicy goście nie mogą dokonać zakupu samoobsługowego w dzierżawie, w której są gośćmi.
+  - question: >
+      Czy użytkownicy mogą synchronizować się z lokalnej usługi Active Directory w ramach zakupu samoobsługowego?
+    answer: >
+      Jeśli użytkownik ma aktywne konto w kwalifikującej się dzierżawie usługi Azure AD, może dokonać zakupu samoobsługowego.
+  - question: >
+      KtoTo nabywcy samoobsługi mogą przypisywać licencje?
+    answer: >
+      Nabywcy samoobsługi mogą przypisywać licencje tylko użytkownikom w tej samej dzierżawie usługi Azure AD. Nabywca ma dostęp do ograniczonego widoku <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365 do</a> przypisywania licencji. Nabywcy mogą przypisywać licencje do tych produktów, które kupili w ramach zakupu samoobsługowego, i mogą przypisywać je tylko użytkownikom w tej samej dzierżawie usługi Azure AD.
+  - question: >
+      Gdzie nabywca samoobsługi widzi swoje zakupy i zarządza nimi?
+    answer: >
+      Nabywcy samoobsługi mogą zarządzać swoimi zakupami w ograniczonym widoku <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365.</a> Nabywcy mogą zawsze przejść do centrum administracyjnego z kafelka Administrator w wbudowanym do uruchamiania aplikacji wbudowanym we Microsoft 365 i Dynamics Online. Nabywcy mogą wyświetlać wprowadzone przez siebie zakupy, kupować dodatkowe subskrypcje tej samej usługi i przypisywać licencje na te subskrypcje innym użytkownikom w ich organizacji. Ponadto nabywcy mogą wyświetlać i opłacać swój rachunek, aktualizować metodę płatności i anulować subskrypcję.
+- name: Ceny
+  questions:
+  - question: >
+      Jaka jest cena za zakupy samoobsługowe?
+    answer: >
+      Ceny poszczególnych produktów do samodzielnego zakupu są dostępne w witrynie internetowej firmy Microsoft. Ceny są również wyświetlane w ramach procesu finalizacji zakupu, gdy użytkownicy dokonają zakupu samoobsługowego. Te ceny mogą różnić się od cen opłacanych przez organizację przy zakupie centralnym lub cenach oferowanych za pośrednictwem partnera.
+  - question: >
+      KtoTo odpowiada za płatność?
+    answer: >
+      Osoba, która kupuje subskrypcję w ramach zakupu samoobsługowego, jest osobą rozliczaną i odpowiedzialną za płatność na podstawie warunków i cen zakupu.
+- name: Możliwości administratora
+  questions:
+  - question: >
+      Jakie możliwości zakupów samoobsługowych ma administrator?
+    answer: >
+      Administratorzy mogą wyświetlać wszystkie zakupy samoobsługowe dokonane w ich organizacji <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">w centrum administracyjne platformy Microsoft 365.</a> Może zobaczyć produkt, imię i nazwisko nabywcy, zakupione subskrypcje, datę wygaśnięcia, historię zamówień, cenę zakupu i przypisanych użytkowników dla każdego zakupu samoobsługowego. W Centrum administracyjnym platformy Power, administratorzy mogą również wyświetlać pojemność zakupów samoobsługowych. Jeśli jest to wymagane dla organizacji, administratorzy mogą wyłączyć samodzielne zakupy dla  per produktów za pośrednictwem programu PowerShell. Administratorzy mają te same zasady zarządzania danymi i dostępu do produktów kupionych w ramach zakupu samoobsługowego lub centralnie.
+
+
+      Administratorzy mogą też kontrolować, czy użytkownicy w organizacji mogą kupować samodzielnie. Aby uzyskać więcej informacji, [zobacz Korzystanie z usługi AllowSelfServicePurchase dla modułu MS Commerce PowerShell](allowselfservicepurchase-powershell.md).
+  - question: >
+      W jaki sposób firma Microsoft respektuje zarządzanie danymi i zgodność z przepisami, umożliwiając zakup samoobsługowy?
+    answer: >
+      Administratorzy mają kontrolę nad tym, które usługi i produkty są dostępne w ramach swojej dzierżawy, w zależności od wymagań w zakresie zarządzania danymi i zgodności. Wszystkie zasady zarządzania danymi i dostępu, które są włączone w Twojej organizacji, mają zastosowanie do dostępnych usług zakupionych przez siebie.
+  - question: >
+      KtoTo jest właścicielem danych produktów utworzonych na podstawie zakupów samoobsługowych?
+    answer: >
+      Dane utworzone na podstawie produktów kupionych w ramach zakupu samoobsługowego są własnością i są kontrolowane przez organizację.
+  - question: >
+      Jak scentralizować zakupy dokonywane w ramach zakupu samoobsługowego?
+    answer: >
+      Administratorzy mogą przypisywać istniejące licencje lub kupować dodatkowe subskrypcje produktów do samodzielnego zakupu w ramach istniejących umów i cen dla użytkowników przypisanych do zakupów samoobsługowych. Po przypisaniu tych centralnie zakupionych licencji administratorzy mogą zażądać, aby nabywcy anulowali swoje istniejące subskrypcje.
+  - question: >
+      Gdzie administrator widzi zakupy samoobsługowe?
+    answer: >
+      Administratorzy globalni i administratorzy rozliczeń mogą zobaczyć subskrypcje zakupione w ramach zakupów samoobsługowych w serwisie **BillingZasyłanie** >  produktów <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">w centrum administracyjne platformy Microsoft 365</a>. Mogą oni filtrować listę produktów w celu pokazania subskrypcji zakupionych w ramach centralnego zaopatrzenia lub w celu dołączyć subskrypcje kupione w ramach zakupu samoobsługowego.
+
+
+      Administratorzy mogą zobaczyć produkt, imię i nazwisko nabywcy, zakupioną subskrypcję, datę wygaśnięcia, historię zamówień, cenę zakupu i przypisanych użytkowników.
+- name: Pomoc techniczna i szkolenia
+  questions:
+  - question: >
+      Czy działy IT lub partnerzy klienta powinni obsługiwać produkty zakupione w ramach zakupu samoobsługowego?
+    answer: >
+      Działy IT i partnerzy nie powinny zapewniać obsługi produktów kupionych w ramach zakupu samoobsługowego. Firma Microsoft zapewnia standardową obsługę nabywców samoobsługowych.
+  - question: >
+      Jeśli nabywca samoobsługi dzwoni do pomocy technicznej, czy ta usługa korzysta z zdarzeń pomocy technicznej Premier klienta?
+    answer: >
+      Nabywcy samoobsługi nie będą używać zdarzeń pomocy technicznej Premier klienta do otrzymywania pomocy technicznej dla ich zakupów samoobsługowych.
+  - question: >
+      Jak użytkownicy będą otrzymywać szkolenia dotyczące kupowanych produktów w ramach zakupu samoobsługowego?
+    answer: >
+      W witrynach internetowych produktów dostępne są obszerne szkolenia dla użytkowników. W produktach te są dostępne wskazówki dotyczące nauki, dokumentacji, przykładów i silnych społeczności, które uzyskają odpowiedzi i porady bezpośrednio od innych użytkowników.
+  - question: >
+      Co się dzieje z zakupem samoobsługi, gdy użytkownik odchodzi z organizacji?
+    answer: >
+      Jeśli osoba, która zakupiła produkt samoobsługowy, odejdzie z organizacji, ważny użytkownik nadal będzie korzystać z produktu przez cały czas trwania subskrypcji. Subskrypcja pozostanie aktywna, dopóki nabywca nie anuluje jej bezpośrednio, lub gdy administrator zażąda anulowania subskrypcji za pośrednictwem obsługi klienta. Administratorzy mogą również przypisywać centralnie kupione licencje użytkownikom anulowanych subskrypcji.
+- name: Partnerzy
+  questions:
+  - question: >
+      Jaka jest rola partnerów firmy Microsoft w zakupach samoobsługowych?
+    answer: Partnerzy z uprawnieniami administracji delegowanej mogą widzieć zakupy samoobsługowe w usłudze <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a>, podobnie jak administrator. Partnerzy mogą pomóc w obsługi organizacji, która chce scentralizować zakupy samoobsługowe. Ponadto partnerzy mogą oferować rozwiązania rozszerzające możliwości samoobsługowego zakupu.
