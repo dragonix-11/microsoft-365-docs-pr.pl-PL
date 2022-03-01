@@ -1,0 +1,54 @@
+### YamlMime:FAQ
+metadata:
+  title: Administracja delegowana — często zadawane pytania
+  f1.keywords:
+  - NOCSH
+  ms.author: chrisda
+  author: chrisda
+  manager: dansimp
+  ms.date: 
+  audience: ITPro
+  ms.topic: troubleshooting
+  ms.localizationpriority: medium
+  ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
+  ms.custom:
+  - seo-marvel-apr2020
+  description: Administratorzy mogą wyświetlać często zadawane pytania i odpowiedzi dotyczące zadań administracyjnych delegowanych w programie Microsoft 365 partnerom i odsprzedawcom firmy Microsoft.
+  ms.technology: mdo
+  ms.prod: m365-security
+  ms.openlocfilehash: 7f011829110481f6cd7b9238deadccad0d2a1264
+  ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 12/15/2021
+  ms.locfileid: "63017843"
+title: Administracja delegowana — często zadawane pytania
+summary: >
+  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+
+  Ten artykuł zawiera często zadawane pytania i odpowiedzi dotyczące zadań administracyjnych delegowanych w programie Microsoft 365 dla partnerów i sprzedawców firmy Microsoft. Administracja delegowana umożliwia zarządzanie ustawieniami usługi Exchange Online Protection (EOP) dla innych dzierżaw (firm).
+sections:
+- name: Zignorowano
+  questions:
+  - question: >
+      Jestem odsprzedawcą i muszę zarządzać dzierżawami moich klientów. Jak to działa?
+    answer: >
+      Jeśli jesteś partnerem lub odsprzedawcą firmy Microsoft i masz konto w programie Microsoft Cloud Solution Provider (CSP), możesz zażądać funkcji administracji delegowanej w  organizacji Microsoft 365 klienta. Aby uzyskać więcej informacji, zapoznaj się z następującymi artykułami:
+
+
+      - [Dostawca rozwiązań w chmurze programu](/partner-center/csp-overview)
+
+      - [Uzyskaj uprawnienia do zarządzania usługą lub subskrypcją klienta](/customers-revoke-admin-privileges).
+  - question: >
+      Jestem klientem, a nie sprzedawcą. Jak skonfigurować administratora delegowanego dla moich podtenantów?
+    answer: >
+      Administracja delegowana jest dostępna tylko dla sprzedawców i partnerów. Istnieje jednak przykładowy skrypt programu PowerShell, który pomoże Zastosować zasady do podtenants (firm). Aby uzyskać więcej informacji, zobacz [Przykładowy skrypt stosowania ustawień usługi EOP do wielu dzierżaw](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
+  - question: >
+      Czy mogę uniemożliwić administratorowi usługi podrzędnej modyfikowanie moich zasad?
+    answer: >
+      L.p. Microsoft 365 obecnie nie ma tej możliwości.
+  - question: >
+      Czy mogę uzyskać skonsolidowaną raportowanie dla wszystkich moich podtenantów?
+    answer: Skonsolidowane raporty w firmach, których zarządzasz, nie są dostępne w centrum administracyjne platformy Microsoft 365 raportach. Raporty można jednak uzyskać za pomocą aplikacji [Microsoft Graph](/graph/overview).
