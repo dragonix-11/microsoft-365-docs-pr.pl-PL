@@ -1,0 +1,245 @@
+### YamlMime:FAQ
+metadata:
+  title: Ochrona przed spamem — często zadawane pytania
+  f1.keywords:
+  - NOCSH
+  ms.author: chrisda
+  author: chrisda
+  manager: dansimp
+  audience: ITPro
+  ms.topic: troubleshooting
+  ms.localizationpriority: medium
+  search.appverid:
+  - MET150
+  ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
+  ms.collection:
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  ms.custom:
+  - seo-marvel-apr2020
+  description: Administratorzy mogą wyświetlać często zadawane pytania i odpowiedzi dotyczące ochrony przed spamem w u Exchange Online Protection (EOP).
+  ms.technology: mdo
+  ms.prod: m365-security
+  ms.openlocfilehash: 6932c56b79f03f142c8551c9fdf7661765f194bf
+  ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 02/06/2022
+  ms.locfileid: "63015999"
+title: Ochrona przed spamem — często zadawane pytania
+summary: >
+  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+  **Dotyczy**
+
+  - [Exchange Online Protection](exchange-online-protection-overview.md)
+
+  - [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+
+  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+
+  Ten temat zawiera często zadawane pytania i odpowiedzi dotyczące ochrony przed spamem dla organizacji Microsoft 365 ze skrzynkami pocztowymi w programie Exchange Online lub organizacji autonomicznych usługi Exchange Online Protection (EOP) bez skrzynek Exchange Online pocztowych.
+
+
+  Aby uzyskać pytania i odpowiedzi dotyczące kwarantanny, zobacz [Kwarantanna — często zadawane pytania](quarantine-faq.yml).
+
+
+  Aby uzyskać pytania i odpowiedzi na temat ochrony przed złośliwym oprogramowaniem, zobacz Często zadawane pytania dotyczące [ochrony przed złośliwym oprogramowaniem](anti-malware-protection-faq-eop.yml).
+
+
+  Aby uzyskać pytania i odpowiedzi na temat ochrony przed fałszeringem, zobacz Często zadawane pytania dotyczące [ochrony przed fałszerami](anti-spoofing-protection-faq.yml).
+sections:
+- name: Zignorowano
+  questions:
+  - question: >
+      Co się domyślnie dzieje z wiadomością wykrytą jako spam?
+    answer: >
+      **W przypadku wiadomości przychodzących:** Większość spamu jest usuwana za pośrednictwem filtrowania połączeń, którego źródłem danych jest adres IP źródłowego serwera poczty e-mail. Zasady ochrony przed spamem (nazywane także zasadami filtrowania spamu lub filtrami zawartości) sprawdzają i klasyfikowają wiadomości jako spam, masowo lub wyłudzanie informacji. Domyślnie wiadomości sklasyfikowane jako spam lub zbiorcze są dostarczane do folderu Wiadomości-śmieci adresata, natomiast wiadomości sklasyfikowane jako próby wyłudzenia informacji są poddawane kwarantannie. Możesz zmodyfikować domyślne zasady ochrony przed spamem (dotyczą wszystkich adresatów) lub utworzyć niestandardowe zasady ochrony przed spamem z bardziej rygorystycznymi ustawieniami dla konkretnych grup użytkowników (na przykład możesz poddać kwarantannie spam wysyłany do kadry kierowniczej). Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed spamem](configure-your-spam-filter-policies.md) i Zalecane ustawienia [zasad ochrony przed spamem](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+
+
+      > [!IMPORTANT]
+
+      > We wdrożeniach hybrydowych Exchange, w których usługi EOP chroni lokalne skrzynki pocztowe usługi Exchange, musisz skonfigurować dwie reguły przepływu poczty e-mail (nazywane także regułami transportu) w lokalnej organizacji programu Exchange w celu wykrycia nagłówków filtrowania spamu usługi EOP dodawanych do wiadomości. Aby uzyskać szczegółowe informacje, zobacz [Konfigurowanie usługi EOP w celu dostarczania spamu do folderu Wiadomości-śmieci w środowiskach hybrydowych](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+
+       **W przypadku wiadomości wychodzących:** Wiadomość jest przekierowywana [](high-risk-delivery-pool-for-outbound-messages.md) przez pulę dostarczania wysokiego ryzyka lub jest zwracana do nadawcy w raporcie o niedostarczeniu (nazywanym również raportem o niedostarczeniu lub wiadomością zwróconą). Aby uzyskać więcej informacji na temat ochrony przed spamem wychodzącym, zobacz [Wychodzące kontrolki spamu](outbound-spam-controls.md).
+  - question: >
+      Co to jest wariant spamu zerowego i jak ta usługa obsługuje spam?
+    answer: >
+      Wariant spamu zerowego jest wariantem spamu pierwszego generacji, wcześniej nieznanym wariantem spamu, który nigdy nie był przechwytywany ani analizowany, więc nasze filtry ochrony przed spamem nie mają jeszcze żadnych informacji na temat ich wykrycia. Po przechwyceniu i przeanalizowaniu próbki spamu przez naszych analityków ds. spamu, jeśli wiadomość spełnia kryteria klasyfikacji spamu, nasze filtry ochrony przed spamem są aktualizowane w celu ich wykrycia i nie jest ona już uznawana za "zerodniową".
+
+
+      > [!NOTE]
+
+      > Jeśli otrzymasz wiadomość, która może być wariantem spamu z dniem zerodniowym, w celu ulepszania usługi prześlij ją do firmy Microsoft przy użyciu jednej z metod opisanych w tece Zgłaszanie wiadomości i plików do [firmy Microsoft](report-junk-email-messages-to-microsoft.md).
+  - question: >
+      Czy muszę skonfigurować usługę w celu zapewnienia ochrony przed spamem?
+    answer: >
+      Po rejestracji w usłudze i dodaniu domeny filtrowanie spamu jest automatycznie włączone. Domyślnie filtrowanie spamu jest konfigurowane w celu ochrony bez konieczności dodatkowej konfiguracji (poza wcześniej zanotowany wyjątek dla autonomicznych klientów autonomicznej usługi EOP w środowiskach hybrydowych). Jako administrator możesz edytować domyślne ustawienia filtrowania spamu, aby jak najlepiej spełniać potrzeby swojej organizacji. Aby uzyskać bardziej szczegółowe informacje, możesz również tworzyć zasady ochrony przed spamem oraz wychodzące zasady ochrony przed spamem, które są stosowane do określonych użytkowników, grup lub domen w organizacji. Zasady niestandardowe zawsze mają priorytet nad zasadami domyślnymi, ale priorytet (czyli kolejność uruchamiania) zasad niestandardowych można zmienić.
+
+
+      Aby uzyskać więcej informacji, zobacz następujące tematy:
+
+
+      [Zalecane ustawienia usług EOP i Microsoft Defender w Office 365 zabezpieczeń](recommended-settings-for-eop-and-office365.md)
+
+
+      [Konfigurowanie filtrowania połączeń w u usługi EOP](configure-the-connection-filter-policy.md)
+
+
+      [Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md)
+
+
+      [Konfigurowanie zasad spamu ruchu wychodzącego](configure-the-outbound-spam-policy.md)
+  - question: >
+      Jak długo trwa zmiana zasad ochrony przed spamem po zapisaniu wprowadzonych przez nich zmian?
+    answer: >
+      Może upłynieć do 1 godziny, aż zmiany zajdą w życie.
+  - question: >
+      Czy zbiorcze filtrowanie wiadomości e-mail jest automatycznie włączone?
+    answer: >
+      Tak. Aby uzyskać więcej informacji na temat zbiorczej poczty e-mail, zobacz Jaka jest różnica między [wiadomościami-śmieciami a zbiorczą pocztą e-mail?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+  - question: >
+      Czy usługa umożliwia filtrowanie adresów URL?
+    answer: >
+      Tak, usługa ma filtr adresu URL, który sprawdza adresy URL w wiadomościach. Jeśli adresy URL skojarzone ze znanym spamem lub złośliwą zawartością zostaną wykryte, wiadomość zostanie oznaczona jako spam.
+  - question: >
+      W jaki sposób klienci korzystający z usługi mogą wysyłać do firmy Microsoft wiadomości fałszywie ujemne (spam) i wiadomości fałszywie dodatnie (niezasyłane spamem)?
+    answer: >
+      Wiadomości o spamie i wiadomości niebędących spamem można przesłać do firmy Microsoft w celu ich analizy na kilka sposobów. Aby uzyskać więcej informacji, zobacz [Zgłaszanie wiadomości i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
+  - question: >
+      Czy mogę uzyskać raporty o spamie?
+    answer: >
+      Tak, na przykład możesz pobrać raport wykrywania spamu w centrum administracyjne platformy Microsoft 365. W tym raporcie jest pokazana liczba wiadomości spamu jako liczba unikatowych wiadomości. Aby uzyskać więcej informacji na temat raportowania, zobacz następujące linki:
+
+
+      Exchange Online klientów: [monitorowanie, raportowanie i śledzenie wiadomości w Exchange Online](/exchange/monitoring/monitoring)
+
+
+      Autonomiczni klienci usługi EOP: [raportowanie i śledzenie wiadomości w Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
+  - question: >
+      Ktoś wysłał mi wiadomość i nie mogę jej znaleźć. Podejrzewam, że mógł zostać wykryty jako spam. Czy mogę znaleźć narzędzie?
+    answer: >
+      Tak, narzędzie do śledzenia wiadomości umożliwia obserwowanie wiadomości e-mail w ramach usługi, aby dowiedzieć się, co się z nimi stało. Aby uzyskać więcej informacji o tym, jak za pomocą narzędzia do śledzenia wiadomości dowiedzieć się, dlaczego wiadomość została oznaczona jako spam, zobacz Czy wiadomość została oznaczona [jako spam?](/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
+  - question: >
+      Czy moje wiadomości e-mail będą ograniczane (limit stawek), jeśli moi użytkownicy będą wysyłać spam wychodzący?
+    answer: >
+      Jeśli więcej niż połowa wiadomości wysyłanych przez użytkownika za pośrednictwem usługi w określonym czasie (na przykład na godzinę) zostanie określona jako spam przez usługę EOP, użytkownikowi zostanie zablokowana wysyłanie wiadomości. W większości przypadków, jeśli wiadomość wychodząca zostanie określona jako spam, jest przekierowyowana przez pulę dostarczania wysokiego ryzyka, co zmniejsza prawdopodobieństwo dodania normalnej puli adresów IP ruchu wychodzącego do listy zablokowanych.
+
+
+      Możesz wysłać powiadomienie na określony adres e-mail, jeśli nadawca zablokuje wysyłanie spamu wychodzącego. Aby uzyskać więcej informacji na temat tego ustawienia, [zobacz Konfigurowanie zasad spamu ruchu wychodzącego](configure-the-outbound-spam-policy.md).
+  - question: >
+      Czy mogę używać zewnętrznego dostawcy ochrony przed spamem i złośliwym oprogramowaniem w połączeniu z programem Exchange Online?
+    answer: >
+      Tak. Mimo że zalecamy, aby wskazać rekord MX firmie Microsoft, zdajemy sobie sprawę, że istnieją uzasadnione powody biznesowe, dla których twoja poczta e-mail jest najpierw przekierowywowana do miejsca innego niż firma Microsoft.
+
+
+      - **Ruch przychodzący**: Zmień rekordy MX tak, aby wskazują zewnętrznego dostawcę, a następnie przekieruj wiadomości do usługi EOP w celu dodatkowego przetworzenia. Aby uzyskać więcej informacji, zobacz [Ulepszone filtrowanie łączników w programie Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+
+      - **Wychodzące**: Skonfiguruj routing hosta inteligentnego Microsoft 365 do docelowego dostawcy innej firmy.
+  - question: >
+      Czy firma Microsoft ma dowolną dokumentację na temat tego, jak mogę chronić się przed próbami wyłudzania informacji?
+    answer: >
+      Tak. Aby uzyskać więcej informacji, [zobacz Ochrona prywatności w Internecie.](https://support.microsoft.com/help/4091455)
+  - question: >
+      Czy wiadomości o spamie i złośliwym oprogramowaniu są analizowane pod kątem tego, kto je wysłał, czy są przenoszone do jednostek ścigania?
+    answer: >
+      Usługa skupia się na wykrywaniu i usuwaniu spamu oraz złośliwego oprogramowania, ale od czasu do czasu możemy badać szczególnie niebezpieczne lub uszkodniające spam lub kampanie ataków i podążamy za jego działaniami. Może to obejmować współpracę z naszymi służbami prawnymi i cyfrowymi jednostkami zbrodni w celu zablokowania robota-spamera, zablokowanie korzystania z usługi przez spamera (jeśli używa go do wysyłania wiadomości e-mail wychodzących) oraz przekazanie informacji do działań przestępczych.
+  - question: >
+      Jaki jest zestaw najlepszych rozwiązań poczty wychodzącej, które zapewniają, że poczta będzie dostarczana?
+    answer: >
+      Przedstawione poniżej wskazówki zawierają najlepsze rozwiązania dotyczące wysyłania wychodzących wiadomości e-mail.
+
+
+      - **W systemie DNS powinna zostać rozpoznana domena źródłowej poczty e-mail.**
+
+        Jeśli na przykład nadawca został user@fabrikam, nazwa domeny fabrikam rozpozna adres IP 192.0.43.10.
+
+        Jeśli domena wysyłająca nie ma rekordu A ani rekordu MX w systemie DNS, usługa przekieruje wiadomość przez swoją pulę dostarczania o wyższym poziomie ryzyka niezależnie od tego, czy treść wiadomości jest spamem. Aby uzyskać więcej informacji na temat puli dostarczania o wyższym poziomie ryzyka, zobacz Pula dostarczania wiadomości o wysokim poziomie [ryzyka dla wiadomości wychodzących](high-risk-delivery-pool-for-outbound-messages.md).
+
+      - **Wychodzący serwer poczty e-mail powinien mieć odwrotny wpis DNS (PTR).**
+
+        Jeśli na przykład adres IP źródła poczty e-mail to 192.0.43.10, odwrotnym wpisem DNS będzie `43-10.any.icann.org`.'
+
+      - **Polecenia HELO/EHLO i MAIL FROM powinny być spójne i mieć postać nazwy domeny zamiast adresu IP.**
+
+        Polecenie HELO/EHLO powinno zostać skonfigurowane tak, aby był zgodne z odwrotnym systemem DNS wysyłającego adresu IP, dzięki czemu domena pozostaje taka sama we wszystkich częściach nagłówków wiadomości.
+
+      - **Upewnij się, że w systemie DNS zostały ustawione odpowiednie rekordy SPF.**
+
+        Rekordy SPF to mechanizm sprawdzania poprawności, że wiadomości wysyłane z domeny w naprawdę pochodzą z tej domeny i nie są sfałszowane. Aby uzyskać więcej informacji na temat rekordów SPF, zobacz następujące linki:
+
+        [Konfigurowanie spf w celu zapobiegania fałszerszem](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+
+        [Często zadawane pytania dotyczące domen](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
+
+      - **Podpisywanie wiadomości e-mail za pomocą DKIM, podpisywanie z rozluźnioną kanoniczacją.**
+
+        Jeśli nadawca chce podpisać swoje wiadomości przy użyciu DKIM (Domain Keys Identified Mail) i chce wysyłać pocztę wychodzącą za pośrednictwem usługi, powinien podpisać się przy użyciu algorytmu rozmytego nagłówka kanonicznego. Podpisywanie za pomocą ścisłych kanonizacji nagłówków może unieważnić podpis podczas jego pośrednictwa przez usługę.
+
+      - **Właściciele domen powinni mieć dokładne informacje w bazie danych WHOIS.**
+
+        Umożliwia to zidentyfikowanie właścicieli domeny i skontaktowanie się z nimi przez wprowadzenie stabilnej firmy nadrzędnej, punktu kontaktu i serwerów nazw.
+
+      - **W przypadku poczty masowej nazwa Od powinna odzwierciedlać nadawcę wiadomości, natomiast wiersz tematu wiadomości powinien być krótkim podsumowaniem tematu wiadomości.**
+
+        Treść wiadomości powinna być wyraźnie wskazywać ofertę, usługę lub produkt. Jeśli na przykład nadawca wysyła pocztę masową dla firmy Contoso, wiadomości e-mail Od i Temat powinny wyglądać następująco:
+
+        > Od: marketing@contoso.com <br> Temat: Nowy zaktualizowany katalog bożonarodzeniowy!
+
+        Poniżej przedstawiono przykład, czego nie należy robić, ponieważ nie jest on opisowy:
+
+        > Od: user@hotmail.com <br> Temat: Katalogi
+
+      - **Jeśli w przypadku wysyłania poczty masowej do wielu adresatów wiadomość jest w formacie biuletynu, u dołu wiadomości powinien być używany sposób na jej cofanie.**
+
+        Opcja anulowania subskrypcji powinna przypominać następującą:
+
+        > Ta wiadomość została wysłana do example@contoso.com przez sender@fabrikam.com. Aktualizowanie profilu/adresu e-mail | Błyskawiczne usuwanie przy **użyciu funkcji SafeUnsubscribe**&trade; | Zasady ochrony danych osobowych
+
+      - **W przypadku wysyłania zbiorczej poczty e-mail pozyskiwanie list powinno odbywać się przy użyciu podwójnej zgody. W przypadku poczty masowej, podwójna zgodę na to jest najlepszą praktyką w branży.**
+
+        W przypadku podwójnej zgody na pocztę marketingową użytkownik musi podjąć dwie czynności:
+
+        1. Gdy użytkownik kliknie wcześniej niezaznaczone pole wyboru, w którym chce otrzymywać dalsze oferty lub wiadomości e-mail od marketera.
+
+        2. Po raz drugi, gdy marketer wyśle na podany przez użytkownika adres e-mail wiadomość e-mail z potwierdzeniem z prośbą o kliknięcie linku, który jest poufny, co spowoduje potwierdzenie.
+
+        Używanie podwójnej zgody na używanie tworzy dobrą reputację dla nadawców masowej poczty e-mail.
+
+      - **Nadawcy zbiorczi powinni tworzyć przezroczyste treści, w przypadku których mogą być oni odpowiedzialni za:**
+
+        1. Verbiage requesting that recipients add the sender to the address book should clearly state that such action is not a guarantee of delivery.
+
+        2. Podczas konstruowania przekierowań w treści wiadomości używaj spójnego stylu linku.
+
+        3. Nie wysyłaj dużych obrazów, załączników ani wiadomości składających się wyłącznie na obraz.
+
+        4. W przypadku korzystania z pikseli śledzenia (błędów sieci Web lub sygnałów nawigacyjnych) należy wyraźnie o poślać ich obecność w ustawieniach prywatności publicznej lub P3P.
+
+      - **Formatowanie wychodzących wiadomości przychodzących.**
+
+        Podczas generowania wiadomości z powiadomieniami o stanie dostarczenia (nazywanych również raportami o niedo dostarczenia, raportami o niedo dostarczenia lub wiadomościami odsuń) nadawcy powinni postępować zgodnie z formatem wiadomości bounce, określonym w dokumencie [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt).
+
+      - **Usuń adresy e-mail odrzucone dla nieistniejący użytkownicy.**
+
+        Jeśli otrzymasz powiadomienie o niedostarczeniu z informacją, że adres e-mail nie jest już używać, usuń nieistniejący alias e-mail z listy. Adresy e-mail zmieniają się z czasem, a ludzie czasami je odrzucają.
+
+      - **Użyj programu usług Smart Network Data Services (SNDS) usługi Hotmail.**
+
+        Usługa Hotmail korzysta z programu o nazwie Smart Network Data Services, który pozwala nadawcom na sprawdzanie skarg składanych przez użytkowników końcowych. Usługa SNDS jest podstawowym portalem rozwiązywania problemów z dostarczaniem do usługi Hotmail.
+  - question: >
+      Jak wyłączyć filtrowanie spamu?
+    answer: >-
+      Jeśli korzystasz z usługi ochrony lub urządzenia innej firmy w celu skanowania wiadomości e-mail przed ich dostarczenia do usługi Microsoft 365, możesz użyć reguły przepływu poczty e-mail (nazywanej również regułą transportu), aby pominąć większość filtrowania spamu dla wiadomości przychodzących. Aby uzyskać instrukcje, zobacz Ustawianie poziomu ufności filtru spamu [(SCL) w wiadomościach za pomocą reguł przepływu poczty](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+
+
+      Jeśli użyjesz reguły przepływu poczty e-mail, aby pominąć filtrowanie spamu, wiadomości wyłudzujące informacje o wysokiej pewności będą nadal filtrowane. Nie ma to wpływu na inne funkcje w u chodzie o EOP (na przykład wiadomości są zawsze skanowane w poszukiwaniu złośliwego oprogramowania).
+
+
+      Jeśli korzystasz z usługi ochrony lub urządzenia innej firmy w celu skanowania wiadomości e-mail przed jej dostarczenia do usługi Microsoft 365, musisz również włączyć funkcję rozszerzonego filtrowania dla łączników (nazywanej również pomijaniem *listy), aby* funkcje wykrywania, raportowania i badania w programie Microsoft 365 mogły prawidłowo identyfikować źródła wiadomości. Aby uzyskać więcej informacji, zobacz [Ulepszone filtrowanie łączników](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+
+      Jeśli chcesz pominąć filtrowanie spamu w przypadku skrzynek pocztowych usługi SecOps lub symulowania wyłudzania informacji, nie używaj reguł przepływu poczty e-mail. Aby uzyskać więcej informacji, zobacz Konfigurowanie symulowania wyłudzania informacji innej firmy użytkownikom i niefiltrowanych wiadomości do skrzynek pocztowych [usługi SecOps](configure-advanced-delivery.md).

@@ -1,0 +1,99 @@
+### YamlMime:FAQ
+metadata:
+  title: Ochrona przed fałszerami — często zadawane pytania
+  f1.keywords:
+  - NOCSH
+  ms.author: chrisda
+  author: chrisda
+  manager: dansimp
+  ms.date: 
+  audience: ITPro
+  ms.topic: troubleshooting
+  ms.localizationpriority: medium
+  search.appverid:
+  - MET150
+  ms.assetid: 
+  ms.collection:
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  description: Administratorzy mogą wyświetlać często zadawane pytania i odpowiedzi na pytania dotyczące ochrony przed fałszerczym Exchange Online Protection (EOP).
+  ms.technology: mdo
+  ms.prod: m365-security
+  ms.openlocfilehash: a9380bb72fdcae4b4847d4dd624c560fd0e7db5c
+  ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 02/06/2022
+  ms.locfileid: "63015996"
+title: Ochrona przed fałszerami — często zadawane pytania
+summary: >
+  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+  **Dotyczy**
+
+  - [Exchange Online Protection](exchange-online-protection-overview.md)
+
+  - [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+
+  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+
+  Ten artykuł zawiera często zadawane pytania i odpowiedzi dotyczące ochrony przed fałszowaniem dla organizacji Microsoft 365 ze skrzynkami pocztowymi w programie Exchange Online lub organizacji autonomicznych usługi Exchange Online Protection (EOP) bez skrzynek pocztowych w Exchange Online pocztowych.
+
+
+  Aby uzyskać pytania i odpowiedzi dotyczące ochrony przed spamem, zobacz Często zadawane pytania dotyczące [ochrony przed spamem](anti-spam-protection-faq.yml).
+
+
+  Aby uzyskać pytania i odpowiedzi dotyczące ochrony przed złośliwym oprogramowaniem, zobacz Często [zadawane pytania dotyczące ochrony przed złośliwym oprogramowaniem.](anti-malware-protection-faq-eop.yml)
+sections:
+- name: Zignorowano
+  questions:
+  - question: >
+      Dlaczego firma Microsoft wybrała nieuwierzytanie wiadomości e-mail przychodzących?
+    answer: >
+      Firma Microsoft uważa, że ryzyko kontynuowania zezwalania na nieuwierzytaną pocztę e-mail przychodzącej jest większe niż ryzyko utraty legalnej przychodzącej poczty e-mail.
+  - question: >
+      Czy wiadomości-śmieci, które nie są uwierzytelnione, powodują oznaczanie legalnych wiadomości e-mail jako spam?
+    answer: >
+      Gdy firma Microsoft włączyła tę funkcję w 2018 r., stało się kilka wyników fałszywie dodatnich (dobre wiadomości zostały oznaczone jako złe). Z czasem nadawcy są jednak dopasowywowyni do wymagań. W przypadku większości ścieżek poczty e-mail liczba wiadomości, które zostały błędnie zidentyfikowane jako fałszowane, została już źle zidentyfikowana.
+
+
+      Kilka tygodni przed wdrożeniem tego rozwiązania u klientów firma Microsoft po raz pierwszy przyjęły nowe wymagania dotyczące uwierzytelniania poczty e-mail. Zakłócenia w działaniu firmy były pojawiały się na początku, ale stopniowo się zmniejszały.
+  - question: >
+      Czy dla klientów usługi Defender dla Microsoft 365 jest dostępna sfałszowa Office 365 na inteligencja?
+    answer: >
+      Tak. Od października 2018 r. dla wszystkich organizacji ze skrzynkami pocztowymi w programie Exchange Online i autonomicznych organizacji usługi EOP bez Exchange Online pocztowych.
+  - question: >
+      Jak mogę z powrotem zgłosić spam lub wiadomości, które nie są spamem, do firmy Microsoft?
+    answer: >
+      Zobacz [Zgłaszanie wiadomości i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md).
+  - question: >
+      Jestem administratorem i nie wiem, jakie są wszystkie źródła wiadomości w mojej domenie poczty e-mail!
+    answer: >
+      Zobacz [Nie znasz wszystkich źródeł wiadomości e-mail](email-validation-and-authentication.md#you-dont-know-all-sources-for-your-email).
+  - question: >
+      Co się stanie, jeśli wyłączę ochronę przed fałszowaniem dla mojej organizacji?
+    answer: >
+      Nie zalecamy wyłączania ochrony przed fałszeringem. Wyłączenie ochrony pozwoli na dostarczanie kolejnych wiadomości wyłudzających informacje i spamu w organizacji. Nie wszystkie wiadomości wyłudzają informacje podszywają się pod inne informacje i nie zostaną pominięte wszystkie sfałszowane wiadomości. Ryzyko będzie jednak większe.
+
+
+      Teraz, [gdy ulepszone filtrowanie](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) łączników jest już dostępne, nie zaleca się już wyłączania ochrony przed fałszowaniem, gdy wiadomości e-mail są kierowane przez inną usługę przed usługą EOP.
+  - question: >
+      Czy ochrona przed fałszerniem oznacza, że będę chroniony przed wszystkimi wyłudzaniem informacji?
+    answer: >
+      Niestety, nie jest to problem. Atakujący dostosują się do używania innych technik (na przykład naruszonych kont lub kont w bezpłatnych usługach poczty e-mail). Jednak ochrona przed wyłudzaniem informacji działa o wiele lepiej w przypadku wykrywania innych metod wyłudzania informacji. Warstwy ochrony w uchcie eOP są zaprojektowane tak, aby ze sobą współpracować i tworzyć na siebie nawzajem.
+  - question: >
+      Czy inne duże usługi poczty e-mail blokują nieuwierzytane przychodzące wiadomości e-mail?
+    answer: >
+      Niemal wszystkie duże usługi poczty e-mail wdrażają tradycyjne testy SPF, DKIM i DMARC. W niektórych usługach są sprawdzane inne, bardziej ścisłe, ale w przypadku niektórych usług EOP wiadomości e-mail są blokowane i traktują je jak wiadomości sfałszowane. Ta branża jest jednak coraz bardziej świadomy problemów z nieuwierzytnionymi wiadomościami e-mail, w szczególności z powodu problemu wyłudzania informacji.
+  - question: >
+      Czy nadal muszę włączać ustawienie Zaawansowanego filtru spamu "Rekord SPF: twardy niepowodzenie" ('MarkAsSpamSpfRecordFail'), jeśli włączę ochronę przed fałszowaniem?
+    answer: >
+      L.p. To ustawienie asf nie jest już wymagane. Ochrona przed fałszowaniami uwzględnia zarówno trwały błąd SPF, jak i znacznie szerszy zestaw kryteriów. Jeśli masz włączoną funkcję ochrony przed fałszowaniem i rekord **SPF:** trwały niepowodzenie (_MarkAsSpamSpfRecordFail_) jest włączony, prawdopodobnie otrzymasz więcej wyników fałszywie dodatnich.
+
+
+      Zalecamy wyłączenie tej funkcji, ponieważ nie daje ona niemal żadnej dodatkowej korzyści w przypadku wykrywania spamu lub wiadomości wyłudzających informacje, a zamiast tego powoduje generowanie głównie wyników fałszywie dodatnich. Aby uzyskać więcej informacji, zobacz [Zaawansowane ustawienia filtru spamu (ASF, Advanced Spam Filter) w uceniu EOP](advanced-spam-filtering-asf-options.md).
+  - question: >
+      Czy schemat ponownego redystrybowania nadawców pomaga naprawić wiadomość przesyłaną dalej?
+    answer: Tylko sRS rozwiązuje problem z przesyłaną dalej pocztą e-mail. Dzięki adresowi SMTP **MAIL FROM** usługa SRS może zapewnić, że wiadomość przesyłana dalej przejdzie spf w następnym miejscu docelowym. Jednak ze względu na to, że ochrona przed fałszerskimi wiadomościami jest oparta na adresie Od w połączeniu z domeną mail **FROM** lub DKIM podpisaną domeną (lub innymi sygnałami), nie wystarczy to, aby zapobiec oznaczaniu wiadomości e-mail przesyłanych dalej za pomocą usługi SRS jako sfałszowanych.

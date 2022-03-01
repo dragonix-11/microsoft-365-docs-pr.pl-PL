@@ -1,0 +1,240 @@
+### YamlMime:FAQ
+metadata:
+  title: Zmniejszenie powierzchni ataków — często zadawane pytania
+  description: Znajdź odpowiedzi na często zadawane pytania dotyczące programu Microsoft Defender dla zasad ograniczania powierzchni ataków dla punktu końcowego.
+  keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
+  ms.pagetype: security
+  ms.prod: m365-security
+  ms.mktglfcycl: manage
+  ms.sitesec: library
+  ms.localizationpriority: medium
+  audience: ITPro
+  author: martyav
+  ms.author: dansimp
+  ms.reviewer: oogunrinde, sugamar
+  manager: dansimp
+  ms.custom: asr
+  ms.topic: article
+  ms.technology: mde
+  ms.collection: m365initiative-m365-defender
+  ms.date: 1/18/2022
+  ms.openlocfilehash: 2ead57e2c4926ad98c890759065d0f08f2ae1958
+  ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 02/14/2022
+  ms.locfileid: "63019375"
+title: Zmniejszenie powierzchni ataków — często zadawane pytania
+summary: >
+  [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+  **Dotyczy:**
+
+  - [Ochrona punktu końcowego w usłudze Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+  - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+sections:
+- name: Zignorowano
+  questions:
+  - question: >
+      Czy zmniejszenie powierzchni ataków (ASR) jest częścią Windows?
+    answer: >
+      Funkcja ASR była pierwotnie funkcją pakietu funkcji exploit guard, który został wprowadzony jako duża aktualizacja do programu Program antywirusowy Microsoft Defender w Windows 10 wersji 1709. Program antywirusowy Microsoft Defender jest natywnym składnikiem ochrony przed złośliwym oprogramowaniem w p Windows. Pełny zestaw funkcji asr jest jednak dostępny tylko w Windows Enterprise. Należy również pamiętać, że wykluczenia reguł asr są zarządzane niezależnie od Program antywirusowy Microsoft Defender wykluczeń.
+  - question: >
+      Czy muszę mieć licencję przedsiębiorstwa, aby uruchamiać reguły asr?
+    answer: >
+      Pełny zestaw reguł i funkcji asr jest obsługiwany tylko wtedy, gdy masz licencję przedsiębiorstwa dla programu Windows 10 lub Windows 11. Ograniczona liczba reguł może działać bez licencji przedsiębiorstwa. Jeśli masz program Microsoft 365 Business, ustaw Program antywirusowy Microsoft Defender jako podstawowe rozwiązanie zabezpieczeń i włącz reguły za pomocą programu PowerShell. Korzystanie z funkcji ASR bez licencji dla przedsiębiorstw nie jest oficjalnie obsługiwane i nie można korzystać ze wszystkich funkcji funkcji asr.
+
+
+      Aby dowiedzieć się więcej o licencjonowaniu Windows, zobacz Windows 10 [Licencjonowanie zbiorowe](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) i uzyskaj przewodnik [licencjonowania zbiorowego dla Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+  - question: >
+      Czy asr jest obsługiwana, jeśli mam licencję E3?
+    answer: >
+      Tak. AsR jest obsługiwane dla Windows Enterprise E3 i wyżej.
+  - question: >
+      Które funkcje są obsługiwane w przypadku licencji E5?
+    answer: >
+      Wszystkie reguły obsługiwane w przypadku E3 są również obsługiwane w przypadku E5.
+
+
+      E5 zapewnia większą integrację z usługą Defender for Endpoint. Za pomocą usługi E5 możesz wyświetlać alerty w czasie rzeczywistym, precyzyjnie dostosować wykluczenia reguł, skonfigurować reguły asr oraz wyświetlać listy raportów o zdarzeniach.
+  - question: >
+      Jakie są obecnie obsługiwane reguły asr?
+    answer: >
+      Obecnie asr obsługuje wszystkie poniższe reguły.
+  - question: >
+      Jakie reguły można włączyć? Wszystkie lub mogę włączyć poszczególne reguły?
+    answer: >
+      Aby ułatwić zorientowanie się, co jest najlepsze dla Twojego środowiska, zalecamy włączenie reguł asr w [trybie inspekcji](audit-windows-defender.md). Ta metoda pozwala określić możliwy wpływ na organizację. Na przykład aplikacje firmowe.
+  - question: >
+      Jak działają wykluczenia reguł asr?
+    answer: >
+      W przypadku reguł ASR dodanie jednego wykluczenia będzie miało wpływ na każdą regułę asr.
+
+
+      Wykluczenia reguł ASR obsługują symbole wieloznaczne, ścieżki i zmienne środowiskowe. Aby uzyskać więcej informacji na temat używania symboli wieloznacznych w zasadach asR, zobacz Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia pliku i [lokalizacji folderu](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
+
+
+      Należy pamiętać o następujących elementach dotyczących wykluczeń reguł ASR (w tym symboli wieloznacznych i env). zmienne):
+
+
+      - Wykluczenia reguł ASR są niezależne od Program antywirusowy Microsoft Defender wykluczeń
+
+      - Symboli wieloznacznych nie można używać do definiowania litery dysku
+
+      - Jeśli chcesz wykluczyć więcej niż jeden folder, w ścieżce użyj wielu wystąpień ciągu \, \*aby wskazać wiele folderów zagnieżdżonych (na przykład c:\Folder\*\*\Test)
+
+      - Microsoft Endpoint Configuration Manager *nie obsługuje* symboli wieloznacznych (* lub ?)
+
+      - Jeśli chcesz wykluczyć plik zawierający losowe znaki (automatyczne generowanie pliku), możesz użyć symbolu "?", na przykład C:\Folder\fileversion?.docx)
+
+      - Wykluczenia ASR w zasady grupy nie obsługują cudzysłowów (aparat natywnie obsługuje długie ścieżki, spacje itp., więc nie trzeba używać cudzysłowów)
+
+      - Reguły ASR są uruchamiane w ramach konta NT AUTHORITY\SYSTEM, więc zmienne środowiskowe są ograniczone do zmiennych maszynowych.
+  - question: >
+      Jak sprawdzić, co należy wykluczyć?
+    answer: >
+      Różne reguły asr będą mieć różne przepływy ochrony. Zawsze pomyśl o tym, przed czym konfigurujesz regułę ASR i jak wygląda rzeczywisty przepływ wykonywania.
+
+
+      Przykład: Blokowanie kradzieży poświadczeń z procesu odczytu podsystemu **lokalnego urzędu zabezpieczeń programu Windows** bezpośrednio z procesu podsystemu Local Security Authority (LSASS) może stanowić zagrożenie bezpieczeństwa, ponieważ może ono narazić na użytkowników firmowe poświadczenia.
+
+
+      Ta reguła zapobiega bezpośredniemu dostępowi niezaufanych procesów do pamięci LSASS. Za każdym razem, gdy proces próbuje użyć funkcji OpenProcess() w celu uzyskania dostępu do LSASS, z prawej strony PROCESS_VM_READ dostępu, reguła będzie blokować konkretnie to prawo dostępu.
+
+
+      :::image type="content" source="images/asrfaq1.png" alt-text="blokowanie kradzieży poświadczeń LSASS":::
+
+
+      Jeśli w powyższym przykładzie konieczne było utworzenie wyjątku dla procesu zablokowania prawego dostępu, dodanie nazwy pliku wraz z pełną ścieżką wykluczałoby ją z zablokowania i uzyskania dostępu do pamięci procesu LSASS. Wartość 0 oznacza, że reguły ASR zignorują ten plik/proces i nie zablokują go ani nie przejdą jego inspekcji.
+
+
+      :::image type="content" source="images/asrfaq2.png" alt-text="Wyklucz pliki jako":::
+  - question: >
+      Jakie są reguły zalecane przez firmę Microsoft podczas włączania?
+    answer: >
+      Zalecamy włączenie wszystkich możliwych reguł. Jednak w niektórych przypadkach nie należy włączać reguły. Na przykład nie zalecamy włączania procesów blokowania pochodzących z reguły poleceń PSExec i WMI, jeśli używasz programu Microsoft Endpoint Configuration Manager (lub programu System Center Configuration Manager — SCCM) do zarządzania punktami końcowymi.
+
+
+      Zdecydowanie zalecamy przeczytanie informacji i/lub ostrzeżeń specyficznych dla reguł, które są dostępne w naszej [dokumentacji publicznej](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
+
+      obejmuje wiele różnych słupów ochrony, takich jak Office, poświadczenia, skrypty, wiadomości e-mail itp. Wszystkie reguły asr(z wyjątkiem blokowania okresu trwania za pośrednictwem subskrypcji zdarzeń WMI) są obsługiwane Windows 1709 i nowszych:
+
+
+      * [Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+
+      * [Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)
+
+      * [Blokowanie tworzenia procesów Office przez wszystkie aplikacje](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)
+
+      * [Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
+
+      * [Blokowanie Office aplikacji ze insektowania kodu do innych procesów](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
+
+      * [Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+
+      * [Blokowanie wykonywania potencjalnie obcofkowanych skryptów](attack-surface-reduction-rules-reference.md#block-execution-of-potentially-obfuscated-scripts)
+
+      * [Blokowanie wywołań interfejsu API Win32 z Office makra](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros)
+
+      * [Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
+
+      * [Blokowanie kradzieży poświadczeń z podsystemu Windows Security Authority](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
+
+      * [Blokowanie procesów pochodzących z poleceń PSExec i WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+
+      * [Blokowanie niezaufanych i niepodpisanych procesów uruchamianych z usb](attack-surface-reduction-rules-reference.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+
+      * [Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryteriów listy osób, wieku lub listy zaufanych.](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+
+      * [Blokowanie Office do komunikacji z tworzeniem procesów podrzędnych](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
+
+      * [Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)
+
+      * [Blokowanie utrwaloności za pośrednictwem subskrypcji zdarzeń usługi WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
+  - question: >
+      Czy podsystem Lokalny urząd zabezpieczeń jest domyślnie włączony?
+    answer: >
+      Domyślny stan reguły zmniejszania powierzchni ataków (ASR, Attack Surface Reduction) "Blokuj kradzież poświadczeń z podsystemu Windows Local Security Authority (lsass.exe)" zmieni się z Nieskonfigurowany na  Skonfigurowany, a tryb domyślny **ustawiony na Zablokuj**. Wszystkie pozostałe reguły asr pozostaną w stanie domyślnym: **Nieskonfigurowane**. Dodatkowa logika filtrowania została już włączona do reguły w celu zmniejszenia powiadomień użytkowników końcowych. Klienci mogą skonfigurować tryb **inspekcji, ostrzegania** lub wyłączenia, co spowoduje zastąpienie trybu domyślnego.  Funkcjonalność tej reguły jest taka sama niezależnie od tego, czy reguła jest skonfigurowana w trybie domyślnym, czy też tryb blokowania jest włączany ręcznie.  
+  - question: >
+      Jakie są pewne dobre zalecenia dotyczące rozpoczynania pracy z asr?
+    answer: >
+      Przetestuj wpływ reguł asr na organizację przed ich włączeniem przez krótki czas, uruchamiając reguły asr w trybie inspekcji. Podczas pracy z regułami w trybie inspekcji można zidentyfikować wszystkie aplikacje biznesowe, które mogą zostać zablokowane błędnie i wykluczyć je z aplikacji asR.
+
+
+      Większe organizacje powinny rozważyć wprowadzanie reguł asR w "pierścieniach" przez inspekcję i włączanie reguł w coraz szerszych podzbiorach urządzeń. Urządzenia organizacji można rozmieścić w pierścieniach za pomocą usługi Intune zasady grupy narzędzia do zarządzania danymi.
+  - question: >
+      Jak długo należy przetestować regułę asR w trybie inspekcji przed jej włączeniem?
+    answer: >
+      Zachowaj regułę w trybie inspekcji przez około 30 dni, aby uzyskać dobry plan bazowy dla działania reguły po jej zajdzie w całej organizacji. W okresie inspekcji można zidentyfikować wszystkie aplikacje biznesowe, które mogą zostać zablokowane przez regułę, i skonfigurować regułę w celu ich wykluczenia.
+  - question: >
+      Przejdę z rozwiązania zabezpieczeń innej firmy do programu Defender for Endpoint. Czy istnieje "prosty" sposób eksportowania reguł z innego rozwiązania zabezpieczeń do asr?
+    answer: >
+      W większości przypadków łatwiej i lepiej jest zacząć od zaleceń planu bazowego sugerowanych przez program [Defender for Endpoint](/windows/security/threat-protection) niż próby zaimportowania reguł z innego rozwiązania zabezpieczeń. Następnie za pomocą narzędzi, takich jak tryb inspekcji, monitorowanie i analiza, skonfiguruj swoje nowe rozwiązanie zgodnie z Twoimi unikatowymi potrzebami.
+
+
+      Domyślna konfiguracja większości reguł ASR oraz ochrona punktu końcowego w czasie rzeczywistym za pomocą programu Defender chronią przed dużą liczbą luk i luk w zabezpieczeniach.
+
+
+      Z poziomu programu Defender for Endpoint możesz aktualizować swoje obrony za pomocą niestandardowych wskaźników, aby zezwalać na określone zachowania oprogramowania i blokować je. Funkcja ASR umożliwia również niektóre dostosowania reguł, takie jak wykluczenia plików i folderów. Ogólnie rzecz biorąc, inspekcja reguły przez określony czas i konfigurowanie wykluczeń dla wszelkich aplikacji biznesowych, które mogą zostać zablokowane.
+  - question: >
+      Czy asR obsługuje wykluczenia plików lub folderów, które zawierają zmienne systemowe i symbole wieloznaczne w ścieżce?
+    answer: >
+      Tak. Zobacz [Wykluczanie](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) plików i folderów z reguł ASR, aby uzyskać więcej szczegółowych informacji na temat wykluczania plików lub folderów z reguł [](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) ASR oraz Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia pliku i lokalizacji folderu, aby uzyskać więcej informacji na temat używania zmiennych systemowych i symboli wieloznacznych w wykluczonych ścieżkach plików.
+  - question: >
+      Czy reguły ASR domyślnie obejmują wszystkie aplikacje?
+    answer: >
+      To zależy od reguły. Większość reguł asr obejmuje zachowanie produktów Microsoft Office usług, takich jak word, Excel, PowerPoint i OneNote, Outlook. Pewne reguły asr, takie jak *Blokowanie* wykonywania potencjalnie obwiązynych skryptów, mają bardziej ogólny zakres.
+  - question: >
+      Czy asR obsługuje rozwiązania zabezpieczeń innych firm?
+    answer: >
+      AsR używa Program antywirusowy Microsoft Defender do blokowania aplikacji. Obecnie nie można skonfigurować funkcji ASR do blokowania za pomocą innego rozwiązania zabezpieczającego.
+  - question: >
+      Mam licencję E5 i włączone pewne reguły ASR w połączeniu z usługą Defender for Endpoint. Czy zdarzenie asr nie jest w ogóle wyświetlane na osi czasu zdarzenia programu Defender for Endpoint?
+    answer: >
+      Ilekroć powiadomienie zostanie wyzwolone lokalnie przez regułę ASR, raport o zdarzeniu jest również wysyłany do portalu Defender for Endpoint. Jeśli masz problem ze znalezieniem zdarzenia, możesz filtrować oś czasu zdarzeń przy użyciu pola wyszukiwania. Możesz również wyświetlić zdarzenia asr, odwiedzając przejdź do zarządzania powierzchnią **ataków, korzystając** z  ikony zarządzania konfiguracją na pasku zadań usługi Defender for Cloud. Strona zarządzania powierzchnią ataków zawiera kartę do wykrywania raportów, która zawiera pełną listę zdarzeń reguł ASR zgłoszonych do usługi Defender for Endpoint.
+  - question: >
+      Reguła była stosowana przy użyciu reguły GPO. Teraz podczas próby sprawdzenia opcji indeksowania reguły w aplikacji Microsoft Outlook wyświetlany jest komunikat "Odmowa dostępu".
+    answer: >
+      Spróbuj otworzyć opcje indeksowania bezpośrednio z Windows 10 lub Windows 11.
+
+
+      1. Wybierz **ikonę** Wyszukaj na pasku Windows zadań.
+
+
+      1. Wprowadź **opcje indeksowania** w polu wyszukiwania.
+  - question: >
+      Czy kryteria stosowane przez regułę "Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryterium listy zaufanej, wiekowej lub zaufanej", konfigurowane przez administratora?
+    answer: >
+      L.p. Kryteria używane przez tę regułę są utrzymywane przez ochronę chmury firmy Microsoft, aby lista zaufanych była stale aktualizowana na podstawie danych zebranych z całego świata. Administratorzy lokalni nie mają dostępu do zapisu, aby zmienić te dane. Jeśli chcesz skonfigurować tę regułę tak, aby dostosować ją do potrzeb przedsiębiorstwa, możesz dodać niektóre aplikacje do listy wykluczeń, aby zapobiec uruchamianiu tej reguły.
+  - question: >
+      Włączono regułę ASR :"Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryteriów listy zaufanej, jeśli nie spełniają one kryterium listy zaufanej, wieku lub wieku". Po pewnym czasie zaktualizowałem fragment oprogramowania i reguła go teraz blokuje, mimo że jeszcze tego nie zrobiła. Czy coś poszło nie tak?
+    answer: >
+      Ta reguła opiera się na tym, że każda aplikacja ma znaną reputację, mierzoną na podstawie wieku, wieku lub dołączania jej do listy zaufanych aplikacji. Decyzja o zablokowaniu lub zmnoceniu aplikacji przez regułę jest ostatecznie ustalana na podstawie oceny tych kryteriów przez firmę Microsoft w chmurze.
+
+
+      Zazwyczaj ochrona w chmurze może ustalić, że nowa wersja aplikacji jest na tyle podobna do poprzednich wersji, że nie musi być ponownie oceniana na długiej długości. Jednak po przełączeniu wersji, szczególnie po istotnej aktualizacji, może mi trochę potrwać. Do tego czasu możesz dodać aplikację do listy wykluczeń, aby zapobiec blokowaniu ważnych aplikacji przez tę regułę. Jeśli często aktualizujesz i pracujesz z nowymi wersjami aplikacji, możesz zamiast tego uruchomić tę regułę w trybie inspekcji.
+  - question: >
+      Ostatnio została włączona reguła ASR "Blokuj kradzież poświadczeń z podsystemu Windows Local Security Authority (lsass.exe)" i jest mi aktywna duża liczba powiadomień. Co się dzieje?
+    answer: >
+      Powiadomienie wygenerowane przez tę regułę nie musi wskazywać na złośliwą aktywność; Ta reguła jest jednak nadal przydatna do blokowania złośliwych działań, ponieważ złośliwe oprogramowanie często lsass.exe dostęp do kont. Ten lsass.exe zapisuje poświadczenia użytkownika w pamięci po zalogowaniu się użytkownika. Windows poświadczenia są używane do sprawdzania poprawności użytkowników i stosowania lokalnych zasad zabezpieczeń.
+
+
+      Ze względu na to, że wiele legalnych procesów w ciągu typowego dnia będzie dzwonić do lsass.exe w przypadku poświadczeń, ta reguła może być szczególnie głośna. Jeśli znana aplikacja, która jest legalna, powoduje wygenerowanie nadmiarowej liczby powiadomień, można ją dodać do listy wykluczeń. Większość innych reguł asr będzie generować stosunkowo mniejszą liczbę powiadomień w porównaniu do tej, ponieważ rozmowy telefoniczne lsass.exe są typowe dla normalnego działania wielu aplikacji.
+  - question: >
+      Czy warto włączyć regułę "Blokuj kradzież poświadczeń z podsystemu Windows Security Authority (lsass.exe)" obok ochrony LSA?
+    answer: >
+      Włączenie tej reguły nie zapewni dodatkowej ochrony, jeśli masz [również włączoną ochronę LSA](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) . Zarówno reguła, jak i ochrona LSA działają bardzo tak samo, więc ich uruchamianie w tym samym czasie byłoby nadmiarowe. Czasem jednak włączenie ochrony LSA może nie być możliwe. W takich przypadkach można włączyć tę regułę w celu zapewnienia równoważnej ochrony przed złośliwym oprogramowaniem, które jest lsass.exe.
+  - question: >
+      Zobacz też
+    answer: >-
+      * [Omówienie zmniejszania powierzchni ataków](attack-surface-reduction.md)
+
+      * [Ocenianie reguł zmniejszania powierzchni ataków](evaluate-attack-surface-reduction.md)
+
+      * [Wdrażanie reguł ograniczania powierzchni ataków Krok 3. Implementowanie reguł asr](attack-surface-reduction-rules-deployment-implement.md)
+
+      * [Włączanie reguł ograniczania powierzchni ataków](enable-attack-surface-reduction.md)
+
+      * [Zgodność programu Program antywirusowy Microsoft Defender z innym oprogramowaniem antywirusowym/złośliwym](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
