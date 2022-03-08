@@ -2,8 +2,8 @@
 title: Usuwanie domeny z innego konta
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Dowiedz się, jak dołączyć do niezazajemnianego konta utworzonego przez użytkownika, który tworzy samodzielne konto w usłudze Microsoft 365.
-ms.openlocfilehash: 23fff52a4c42da05f787bfbe8207d3e090c0105c
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 0a7cf07a70e241c0b40f28159f31b0c86766bc1d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63013340"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325673"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Przeprowadzanie przejęcia administratora wewnętrznego
 

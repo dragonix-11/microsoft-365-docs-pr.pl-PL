@@ -2,8 +2,8 @@
 title: Wprowadzenie do Menedżera zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ustaw uprawnienia użytkowników i role w Menedżerze zgodności firmy Microsoft oraz skonfiguruj automatyczne testowanie akcji. Zarządzaj historią użytkowników i filtruj widok pulpitu nawigacyjnego.
-ms.openlocfilehash: fc7e82880cec01f7d3fd0051f75600948e51cdcc
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 070c8fea309ea7c01b82be068acc40a7dcb830ff
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016076"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330485"
 ---
 # <a name="get-started-with-compliance-manager"></a>Wprowadzenie do Menedżera zgodności
 
@@ -121,13 +121,17 @@ Ustawienia Menedżera zgodności w Centrum zgodności platformy Microsoft 365 um
 
 ### <a name="set-up-automated-testing"></a>Konfigurowanie testowania automatycznego
 
-Niektóre działania udoskonalania w Menedżerze zgodności są również monitorowane przez program [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Możesz skonfigurować zautomatyzowane testowanie akcji, które są monitorowane wspólnie, co oznacza, że wyniki te są synchronizowane z tymi samymi działaniami w Menedżerze zgodności w przypadku przetestowania i zaktualizowania akcji w wynikach bezpiecznego działania i są liczone w wyniku oceny zgodności.
+Menedżer zgodności wykrywa sygnały z innych Microsoft 365 zgodności, które subskrybuje Twoja organizacja, w tym zarządzanie informacjami, ochronę informacji, zapobieganie utracie danych, zgodność komunikacji i zarządzanie ryzykiem w niejawnym programie testów. Na stronie szczegółów każdej akcji udoskonalania pole Test logiki  na karcie Testowanie zawiera informacje  o tym, co jest wymagane w drugim rozwiązaniu, aby akcja przekazać i zdobyć punkty w wyniku testowania.
 
-Automatyczne testowanie jest domyślnie włączone dla organizacji, które nie mają menedżera zgodności. Gdy wdrażasz po raz pierwszy Microsoft 365 lub Office 365, pełne zbieranie danych i uwzględnianie ich w wyniku zgodności trwa około siedmiu dni.  Gdy jest włączone automatyczne testowanie, data testu akcji nie zostanie zaktualizowana, ale jej stan zostanie zaktualizowany. Podczas tworzenia nowych ocen wyniki są automatycznie dołączane do wyników kontroli firmy Microsoft i integracji bezpiecznego wyniku.
+Menedżer zgodności wykrywa również sygnały z dopełniaczy działań udoskonaleń, które są również monitorowane przez program [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Za pomocą tych sygnałów Menedżer zgodności może automatycznie testować niektóre akcje udoskonalania, które pomagają zmaksymalizować wydajność w działaniach dotyczących zgodności. Po pomyślnym przetestowaniu i wdrożeniu działania ulepszeń otrzymujesz pełną liczbę punktów, która otrzymuje ogólną ocenę zgodności.
+
+Na stronie szczegółów każdej akcji udoskonalania
+
+Automatyczne testowanie jest domyślnie włączone dla organizacji, które nie mają menedżera zgodności. Gdy wdrażasz po raz Microsoft 365 lub Office 365, pełne zbieranie danych i współczynnikowanie ich w wyniku zachowania zgodności trwa około siedmiu dni. Gdy jest włączone automatyczne testowanie, data testu akcji nie zostanie zaktualizowana, ale jej stan zostanie zaktualizowany. Podczas tworzenia nowych ocen wyniki są automatycznie dołączane do wyników kontroli firmy Microsoft i integracji bezpiecznego wyniku.
+
+#### <a name="manage-automated-testing-settings"></a>Zarządzanie ustawieniami testowania automatycznego
 
 Administrator globalny Twojej organizacji może w dowolnej chwili zmienić ustawienia do testowania automatycznego. Możesz wyłączyć automatyczne testowanie typowych akcji udoskonalania lub włączyć je dla poszczególnych akcji. Wykonaj poniższe instrukcje, aby zmienić ustawienia testowania automatycznego.
-
-#### <a name="to-manage-your-automated-testing-settings"></a>Aby zarządzać ustawieniami testowania automatycznego:
 
 1. Wybierz <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Ustawienia**</a> w Centrum zgodności platformy Microsoft 365.
 
@@ -142,6 +146,10 @@ Administrator globalny Twojej organizacji może w dowolnej chwili zmienić ustaw
 6. Wybierz **pozycję Zapisz** , aby zapisać ustawienia. U góry ekranu zostanie wyświetlony komunikat potwierdzający, że wybór został zapisany. Jeśli otrzymasz powiadomienie o niepowodzeniu, spróbuj ponownie.
 
 **Uwaga:** Tylko administrator globalny może włączać i wyłączać aktualizacje automatyczne dla wszystkich akcji. Administrator Menedżera zgodności może włączyć automatyczne aktualizacje dla poszczególnych akcji, ale nie dla wszystkich działań globalnie.
+
+**Dowiedz się więcej**
+- [Dowiedz się więcej o tym, jak ciągłe monitorowanie przyczynia się do oceny zgodności](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+- [Dowiedz się więcej o wyznaczaniu źródła testowania dla działania usprawniacego](compliance-manager-improvement-actions.md#update-testing-source).
 
 ### <a name="manage-user-history"></a>Zarządzanie historią użytkowników
 
@@ -279,16 +287,17 @@ Aby usunąć filtry:
 
 ### <a name="view-your-improvement-actions"></a>Wyświetlanie działań udoskonalania
 
-Pulpit nawigacyjny Menedżer zgodności pokazuje **kluczowe działania ulepszeń.** Aby wyświetlić wszystkie działania ulepszeń, wybierz kartę Akcje udoskonalania na pulpicie nawigacyjnym, która prowadzi do strony akcji udoskonalania. Możesz również wybrać pozycję Wyświetl wszystkie akcje udoskonalania poniżej listy kluczowych akcji udoskonalania na pulpicie nawigacyjnym, aby przejść do strony akcji udoskonalania.
+Pulpit nawigacyjny Menedżer zgodności pokazuje kluczowe działania ulepszeń. Aby wyświetlić wszystkie działania ulepszeń, wybierz **kartę** Akcje udoskonalania na pulpicie nawigacyjnym, która prowadzi do strony akcji udoskonalania. Możesz również wybrać pozycję **Wyświetl wszystkie akcje udoskonalania** poniżej listy kluczowych akcji udoskonalania na pulpicie nawigacyjnym, aby przejść do strony akcji udoskonalania.
 
 Strona działań udoskonalania zawiera wszystkie akcje udoskonalania, które są zarządzane przez Twoją organizację. Akcje zarządzane przez firmę Microsoft mogą być przeglądane w ramach każdej oceny (dowiedz się więcej o działaniach [firmy Microsoft](compliance-manager-assessments.md#microsoft-actions-tab)).
 
-Jeśli na stronie akcji udoskonalania jest długa lista działań, pomocne może okazać się przefiltrenie widoku. Wybierz **pozycję** Filtruj w prawym górnym rogu listy akcji. Gdy zostanie **wyświetlone okienko** wysuwu Filtry, wybierz kryteria na podstawie przepisów i standardów, rozwiązania i grupy. Możesz także dostosować widok, wybierając pozycję **Grupuj** w prawym górnym rogu. Z menu rozwijanego wybierz pozycję , aby wyświetlić według grupy, rozwiązania, kategorii, typu akcji lub stanu.
+Jeśli na stronie akcji udoskonalania jest długa lista działań, pomocne może okazać się przefiltrenie widoku. Wybierz **pozycję** Filtruj w prawym górnym rogu listy akcji. Gdy zostanie **wyświetlone okienko** wysuwu Filtry, wybierz odpowiednie kryteria z dostępnych opcji. Możesz także dostosować widok, wybierając pozycję **Grupuj** w prawym górnym rogu. Z menu rozwijanego wybierz pozycję , aby wyświetlić według grupy, rozwiązania, kategorii, typu akcji lub stanu.
 
 W widoku domyślnym dla tej strony nie są pokazywane akcje udoskonalania ze stanem testowym **"Passed"**. Aby wyświetlić akcje, które zostały już przetestowane, zaznacz pole **Pomyślnie w** okienku wysuwany Filtry. Tylko akcje ze stanem testowym **"Pomyślnie** " liczą się w stosunku do wyniku. Niektóre akcje mogą zawierać **etykietę oczekującej aktualizacji.** Dowiedz się więcej [o aktualizacjach w zakresie działań udoskonalania](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
 Na stronie działania udoskonalania są shows the following data points for each improvement action:
 
+- **Produkty**: produkt, który jest oceniany.
 - **Punkty udało** się uzyskać: liczba punktów zdobytych w sumie dzięki ukończeniu akcji
 - **Przepisy**: przepisy lub standardy dotyczące akcji
 - **Grupa**: grupa, do której przypisano akcję
@@ -296,16 +305,19 @@ Na stronie działania udoskonalania są shows the following data points for each
 - **Assessments**: the assessments that contain the action
 - **Kategorie**: powiązana kategoria ochrony danych (na przykład ochrona informacji, zarządzanie urządzeniami itp.).
 - **Stan testu**:
-    - **Brak** — nie jest rejestrowana żadna aktualizacja stanu
-    - **Nie oceniono —** testowanie nie zostało rozpoczęte
-    - **Pomyślnie ukończono** — pomyślnie przetestowano implementację
-    - **Niskie ryzyko,** których testowanie zakończyło się niepowodzeniem, niskie ryzyko
-    - **Średnie ryzyko niepowodzenie —** testowanie zakończyło się niepowodzeniem, średnie ryzyko
-    - **Wysokie ryzyko, których** testowanie zakończyło się niepowodzeniem, wysokie ryzyko
-    - **Poza zakresem** — działanie nie ma zastosowania do oceny i nie ma wpływu na wynik
-    - **Do wykrycia —** w przypadku testu ręcznego wskazuje, że akcja została zaimplementowana, ale nie została przetestowana; oznacza, że akcja oczekuje na wynik automatyzacji.
-    - **Nie można wykryć** — nie można ustalić stanu automatycznego
-    - **Częściowo sprawdzone —** zautomatyzowane zdobywanie punktów, które zdobyły nagrody częściowe
+  - **Brak** — nie jest rejestrowana żadna aktualizacja stanu
+  - **Nie oceniono —** testowanie nie zostało rozpoczęte
+  - **Pomyślnie ukończono** — pomyślnie przetestowano implementację
+  - **Niskie ryzyko,** których testowanie zakończyło się niepowodzeniem, niskie ryzyko
+  - **Średnie ryzyko niepowodzenie —** testowanie zakończyło się niepowodzeniem, średnie ryzyko
+  - **Wysokie ryzyko, których** testowanie zakończyło się niepowodzeniem, wysokie ryzyko
+  - **Poza zakresem** — działanie nie ma zastosowania do oceny i nie ma wpływu na wynik
+  - **Do wykrycia —** w przypadku testu ręcznego wskazuje, że akcja została zaimplementowana, ale nie została przetestowana; oznacza, że akcja oczekuje na wynik automatyzacji.
+  - **Nie można wykryć** — nie można ustalić stanu automatycznego
+  - **Częściowo sprawdzone —** zautomatyzowane zdobywanie punktów, które zdobyły nagrody częściowe
+- **Typ akcji**: wskazuje, czy działanie udoskonalania jest techniczne, czyli może być zaimplementowane w ramach rozwiązania lub produktu, bądź nieujemne od technicznych, które zostałoby zaimplementowane poza rozwiązaniem technicznym.
+- **Przypisane do**: osoba, do której przypisano tę akcję (jeśli ma zastosowanie)
+- **Test źródła**: wskazuje, czy źródłem testowania akcji jest ręcznie, automatycznie lub dziedziczone po nawiasie nadrzędnym.
 
 **Dowiedz się więcej:** [Zobacz, jak przypisywać i wykonywać pracę nad działaniami udoskonalania](compliance-manager-improvement-actions.md).
 
@@ -320,7 +332,7 @@ Znajdź stronę rozwiązań, wybierając **kartę Rozwiązania** na pulpicie naw
 Aby przefiltrować widok rozwiązań:
 
 1. Wybierz **pozycję** Filtruj w lewym górnym rogu listy oceniań.
-2. W **wysuwanych** okienku Filtry umieść pole wyboru obok odpowiednich kryteriów (standardów i przepisów, rozwiązania, typu akcji, grupy Menedżer zgodności, kategoria).
+2. W **wysuwanych** okienku Filtry umieść pole wyboru obok odpowiednich kryteriów (przepisów, rozwiązań, typów akcji, grup, kategorii).
 3. Wybierz przycisk **Zastosuj** . Okienko filtru zostanie zamknięte i zostanie wyświetlony widok filtrowany.
 
 Możesz także zmodyfikować widok, aby wyświetlić oceny według grupy, produktu lub przepisów, wybierając typ grupowania z menu rozwijanego Grupa  powyżej listy oceniań.

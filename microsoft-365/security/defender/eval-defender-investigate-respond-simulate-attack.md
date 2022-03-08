@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a3e1543ed56580983fec5b7eee6366e817d82079
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3712875579c7d157fe52a5e115d059fc88b4b6d7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015404"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326499"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Run an attack simulation in a Microsoft 365 Defender pilot environment
 

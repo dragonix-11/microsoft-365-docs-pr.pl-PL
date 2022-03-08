@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano, jak rozpocząć korzystanie z podstawowych funkcji zbierania elektronicznych materiałów dowodowych w Microsoft 365. Po przypisaniu uprawnień zbierania elektronicznych materiałów dowodowych i utworzeniu sprawy możesz dodawać członków, tworzyć zbierania elektronicznych materiałów dowodowych, a następnie wyszukiwać i eksportować zawartość, która jest istotne dla prowadzonego badania.
-ms.openlocfilehash: 0e6e29ced6e6dfb535d169cbf5c41193d5d46cfd
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: ff2baf1e4844532ba53f3aa32ae02b7a7c49f00e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990504"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320525"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Wprowadzenie do zbierania elektronicznych materiałów dowodowych w programie Microsoft 365
 
@@ -55,11 +55,11 @@ Licencjonowanie dla podstawowego zbierania elektronicznych materiałów dowodowy
   
   Aby uzyskać informacje na temat przypisywania licencji, zobacz [Przypisywanie licencji do użytkowników](../admin/manage/assign-licenses-to-users.md).
 
-Aby uzyskać informacje na temat licencjonowania:
+Aby uzyskać informacje i wskazówki dotyczące zabezpieczeń i zgodności:
 
-- Pobierz i zobacz sekcję zbierania elektronicznych materiałów dowodowych i inspekcji w [Microsoft 365 porównania.](https://go.microsoft.com/fwlink/?linkid=2139145)
+- Pobierz i zobacz sekcję zbierania elektronicznych materiałów dowodowych i inspekcji w [Microsoft 365 porównania.](https://aka.ms/M365EnterprisePlans)
 
-- Zobacz opis [usługi Centrum & zgodności](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+- Zobacz wskazówki [Microsoft 365 dotyczące zgodności & zabezpieczeń — opisy | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Krok 2. Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych
 
@@ -129,7 +129,7 @@ Jeśli utworzysz sprawę w kroku 3 i jesteś jedyną osobą, która będzie korz
 
     Możesz również dodać grupy ról jako członków sprawy. W **obszarze Grupy ról** kliknij pozycję **Dodaj**. Do sprawy można przypisywać tylko te grupy ról, których jesteś członkiem. Jest tak dlatego, że grupy ról kontrolują, kto może przypisywać członków do sprawy zbierania elektronicznych materiałów dowodowych.
 
-4. Na liście osób lub grup ról, które mogą być dodawane jako członkowie sprawy, kliknij po lewej stronie nazwiska osób (lub grup ról), które chcesz dodać. Jeśli masz dużą listę osób lub grup ról, które mogą być dodawane jako członkowie, użyj pola Wyszukaj, aby wyszukać określoną osobę lub grupę ról na liście.
+4. Na liście osób lub grup ról, które mogą być dodawane jako członkowie sprawy, kliknij po lewej stronie nazwiska osób (lub grup ról), które chcesz dodać. Jeśli masz dużą listę osób lub grup ról, które można dodać jako członków, użyj pola Wyszukaj, aby  wyszukać określoną osobę lub grupę ról na liście.
   
 5. Po wybraniu osób lub grup ról do dodania jako członków sprawy kliknij pozycję Zapisz, aby zapisać  nowych członków lub grupy ról.
 
@@ -156,4 +156,4 @@ Aby rozpocząć korzystanie z podstawowych funkcji zbierania elektronicznych mat
 
    - Popraw kwerendę i ponownie uruchomić wyszukiwanie.
 
-3. **[Eksportowanie i pobieranie wyników wyszukiwania](export-content-in-core-ediscovery.md)**. Po wyszukaniu i odnalezieniu danych, które są istotne dla prowadzonego badania, możesz wyeksportować je Office 365 do przeglądu przez osoby spoza zespołu badania. Eksportowanie danych jest procesem dwuetapowym. Pierwszym krokiem jest wyeksportowanie wyników wyszukiwania w przypadku, gdy nie Office 365. Jest to możliwe dzięki skopiowaniu wyników wyszukiwania do lokalizacji danych usługi Azure Storage firmy Microsoft. Następnym krokiem jest pobranie zawartości na komputer lokalny za pomocą narzędzia eDiscovery Export Tool. Oprócz wyeksportowanych plików danych pakiet eksportu zawiera również raport eksportu, raport podsumowujący i raport o błędach.
+3. **[Eksportowanie i pobieranie wyników wyszukiwania](export-content-in-core-ediscovery.md)**. Po wyszukaniu i odnalezieniu danych, które są istotne dla prowadzonego badania, możesz wyeksportować je Office 365 do przeglądu przez osoby spoza zespołu badania. Eksportowanie danych jest procesem dwuetapowym. Pierwszym krokiem jest wyeksportowanie wyników wyszukiwania w przypadku, gdy nie Office 365. Jest to możliwe dzięki skopiowaniu wyników wyszukiwania do lokalizacji danych usługi Azure Storage firmy Microsoft. Następnym krokiem jest pobranie zawartości na komputer lokalny za pomocą narzędzia eDiscovery Export Tool. Oprócz wyeksportowanych plików danych pakiet eksportu zawiera raport eksportu, raport podsumowujący i raport o błędach.

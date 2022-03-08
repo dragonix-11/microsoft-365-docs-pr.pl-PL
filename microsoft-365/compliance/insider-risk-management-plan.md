@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 824a31780a377fc91d834db6d37068a425428ec8
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 3a1a2fcebdc097b1402d866a2af59d3caac633d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010402"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315599"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planowanie zarządzania ryzykiem w niejawnym programie testów
 
@@ -49,41 +49,29 @@ Jeśli istnieje wymaganie angażowania określonych uczestników projektu w bada
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>Planowanie przepływu pracy recenzji i badania
 
-Wybierz dedykowanych uczestników projektu, aby monitorować i przeglądać alerty i sprawy w regularny sposób [w Centrum zgodności platformy Microsoft 365.](https://compliance.microsoft.com) Upewnij się, że przypiszesz różnych uczestników projektu do różnych grup ról dostępnych w zarządzaniu ryzykiem w niejawnym programie testów.
+W zależności od tego, jak chcesz zarządzać zasadami i alertami zarządzania ryzykiem w niejawnym programie testów, konieczne będzie przypisanie użytkowników do określonych grup ról w celu zarządzania różnymi zestawami funkcji zarządzania ryzykiem w niejawnym programie testów. Możesz przypisać użytkownikom różne obowiązki dotyczące zgodności z przepisami do określonych grup ról w celu zarządzania różnymi obszarami funkcji zarządzania ryzykiem w niejawnym programie testów. Możesz także przypisać wszystkie konta użytkowników dla wyznaczonych administratorów, analityków, osób oglądających i osoby przeglądowe do grupy ról Zarządzanie ryzykiem w niejawnym programie testów. Korzystaj z jednej lub wielu grup ról, aby jak najlepiej dopasować się do wymagań zarządzania zgodnością.
 
-> [!IMPORTANT]
-> Po skonfigurowaniu grup ról może upłynąć do 30 minut, aby uprawnienia grupy ról dotyczyły przypisanych użytkowników w organizacji.
+Podczas pracy z zarządzaniem ryzykiem w ramach niejawnego programu testów będziesz wybierać spośród tych opcji grupy ról i akcji rozwiązania:
 
-Do konfigurowania początkowych uprawnień w celu zarządzania funkcjami zarządzania ryzykiem w niejawnym programie testów jest używanych sześć grup ról. Aby **udostępnić** zarządzanie ryzykiem w niejawnym programie testów jako opcję menu w programie Centrum zgodności platformy Microsoft 365 i kontynuować te kroki konfiguracji, musisz mieć przypisaną jedną z następujących ról lub grup ról:
+|**Akcje**|**Zarządzanie ryzykiem w niejawnym programie testów**|**Administrator zarządzania ryzykiem w niejawnym programie testów**|**Analitycy zarządzania ryzykiem wewnętrznym**|**Badacze zarządzania ryzykiem wewnętrznym**|**Audytorzy zarządzania ryzykiem w niejawnym programie testów**|
+|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
+| Konfigurowanie zasad i ustawień | Tak | Tak | Nie | Nie | Nie |
+| Szczegółowe informacje dotyczące analizy programu Access | Tak | Tak | Tak | Nie | Nie |
+| Alerty & zbadać w programie Access | Tak | Nie | Tak | Tak | Nie |
+| Uzyskiwanie dostępu & zbadania spraw | Tak | Nie | Tak | Tak | Nie |
+| Uzyskiwanie & widoku Eksploratora zawartości | Tak | Nie | Nie | Tak | Nie |
+| Konfigurowanie szablonów z powiadomieniami | Tak | Nie | Tak | Tak | Nie |
+| Wyświetlanie & eksportowania dzienników inspekcji | Tak | Nie | Nie | Nie | Tak |
 
-- Azure Active Directory [*administrator globalny*](/azure/active-directory/roles/permissions-reference#global-administrator)
-- Azure Active Directory [*administratora*](/azure/active-directory/roles/permissions-reference#compliance-administrator) zgodności
-- Centrum zgodności platformy Microsoft 365 [*ról Zarządzanie*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) organizacją
-- Centrum zgodności platformy Microsoft 365 [*ról Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) zgodności
-- *Grupa ról Zarządzanie ryzykiem w niejawnym* programie testów
-- *Grupa ról Administrator zarządzania ryzykiem w niejawnym programie* testów
+>[!IMPORTANT]
+>Upewnij się, że w grupach ról Zarządzanie ryzykiem niejawnego programu testów  lub Administrator zarządzania ryzykiem w niejawnym programie testów (w zależności od wybranej opcji) zawsze jest co najmniej jeden użytkownik, aby konfiguracja zarządzania ryzykiem w niejawnym programie testów nie była dostępna w przypadku opuszczenia organizacji przez określonych użytkowników.
 
-Członkowie następujących ról mają te same uprawnienia rozwiązania, które są zawarte *w grupie ról* Administrator zarządzania ryzykiem w niejawnym programie testów:
+Członkowie poniższych ról mogą przypisywać użytkowników do grup ról zarządzania ryzykiem w niejawnym programie testów i mieć te same uprawnienia rozwiązania, które są zawarte w grupie ról Administrator zarządzania ryzykiem w niejawnym programie *testów* :
 
 - Azure Active Directory *administrator globalny*
 - Azure Active Directory *administratora zgodności*
 - Centrum zgodności platformy Microsoft 365 *zarządzanie organizacją*
 - Centrum zgodności platformy Microsoft 365 *zgodności*
-
-> [!IMPORTANT]
-> Upewnij się, że w grupach ról Zarządzanie ryzykiem niejawnego programu testów  lub Administrator zarządzania ryzykiem w niejawnym programie testów (w zależności od wybranej opcji) zawsze jest co najmniej jeden użytkownik, aby konfiguracja zarządzania ryzykiem w niejawnym programie testów nie była dostępna w przypadku opuszczenia organizacji przez określonych użytkowników.
-
-W zależności od tego, jak chcesz zarządzać zasadami i alertami zarządzania ryzykiem w niejawnym programie testów, konieczne będzie przypisanie użytkowników do określonych grup ról w celu zarządzania różnymi zestawami funkcji zarządzania ryzykiem w niejawnym programie testów. Możesz przypisać użytkownikom różne obowiązki dotyczące zgodności z przepisami do określonych grup ról w celu zarządzania różnymi obszarami funkcji zarządzania ryzykiem w niejawnym programie testów. Możesz także przypisać wszystkie konta użytkowników dla wyznaczonych administratorów, analityków, osób oglądających i osoby przeglądowe do grupy ról *Zarządzanie* ryzykiem w niejawnym programie testów. Korzystaj z jednej lub wielu grup ról, aby jak najlepiej dopasować się do wymagań zarządzania zgodnością.
-
-Podczas konfigurowania zarządzania ryzykiem w niejawnym programie testów i zarządzania nimi wybierz jedną z tych opcji grupy ról rozwiązania:
-
-| **Grupa ról** | **Uprawnienia roli** |
-| :------------- | :------------------- |
-| **Zarządzanie ryzykiem w niejawnym programie testów** | Ta grupa ról pozwala zarządzać zarządzaniem ryzykiem niejawnego programu testów w organizacji w jednej grupie. Dodając wszystkie konta użytkowników przeznaczone dla wyznaczonych administratorów, analityków, audytorów i audytorów, możesz skonfigurować uprawnienia do zarządzania ryzykiem w ramach poziomu niejawnego programu testów w jednej grupie. Ta grupa ról zawiera wszystkie role uprawnień do zarządzania ryzykiem w niejawnym programie testów i skojarzone uprawnienia. Jest to najprostszy sposób na szybkie rozpoczynanie pracy z zarządzaniem ryzykiem w niejawnym programie testów i jest dobrym rozwiązaniem dla organizacji, które nie potrzebują osobnych uprawnień zdefiniowanych dla osobnych grup użytkowników. Podczas korzystania z tej konfiguracji należy zawsze mieć przypisanego co najmniej jednego użytkownika do tej grupy ról, aby upewnić się, że zasady działają zgodnie z oczekiwaniami, a użytkownik może tworzyć i edytować zasady **_,_** konfigurować ustawienia rozwiązania i przeglądać ostrzeżenia dotyczące kondycji zasad.|
-| **Administrator zarządzania ryzykiem w niejawnym programie testów** | Ta grupa ról umożliwia wstępne skonfigurowanie zarządzania ryzykiem w niejawnym programie testów, a później oddziel administratorów ryzyka niejawnego programu testów do zdefiniowanej grupy. Użytkownicy w tej grupie ról mogą włączać i wyświetlać szczegółowe informacje z analiz, a także tworzyć, odczytywać, aktualizować i usuwać zasady zarządzania ryzykiem niejawnego programu testów, ustawienia globalne i przypisania ról do grup ról. Podczas korzystania z tej konfiguracji należy zawsze mieć przypisanego co najmniej jednego użytkownika do tej grupy ról, aby upewnić się, że zasady działają zgodnie z oczekiwaniami, a użytkownik może tworzyć i edytować zasady **_,_** konfigurować ustawienia rozwiązania i przeglądać ostrzeżenia dotyczące kondycji zasad. |
-| **Analitycy zarządzania ryzykiem wewnętrznym** | Ta grupa umożliwia przypisywanie uprawnień użytkownikom, którzy będą działać jako analitycy ds. ryzyka w niejawnym programie testów. Użytkownicy w tej grupie ról mogą wyświetlać i wyświetlać wszystkie szablony alertów zarządzania ryzykiem w ramach niejawnego programu testów, spraw, szczegółowych informacji analitycznych i powiadomień. Nie mogą oni uzyskać dostępu do Eksploratora zawartości z ryzykiem w niejawnym programie testów. |
-| **Badacze zarządzania ryzykiem wewnętrznym** | Ta grupa umożliwia przypisywanie uprawnień użytkownikom, którzy będą działać jak osoby chłonące dane ryzyka w niejawnym programie testów. Użytkownicy w tej grupie ról mają dostęp do wszystkich alertów zarządzania ryzykiem w niejawnym programie testów, spraw, szablonów powiadomień i Eksploratora zawartości we wszystkich przypadkach. |
-| **Audytorzy zarządzania ryzykiem w niejawnym programie testów** | Ta grupa umożliwia przypisywanie uprawnień użytkownikom, którzy będą insektować działania związane z zarządzaniem ryzykiem w niejawnym programie testów. Użytkownicy w tej grupie ról mają dostęp do dziennika inspekcji ryzyka niejawnego programu testów. |
 
 ## <a name="understand-requirements-and-dependencies"></a>Opis wymagań i zależności
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 454bc457603b64916bfdaf947d867404bd6569db
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: ed1867ee1ea27010d29d19edd18ef12febe6eb2e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016070"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317559"
 ---
 # <a name="assign-licenses"></a>Przypisywanie licencji
 
@@ -32,7 +32,7 @@ Jeśli masz problemy z przypisaniem licencji, skontaktuj się z pomocą technicz
 1. Wdrażanie i [przypisywanie Intune — Portal firmy](company-portal.md).
 1. Przypisywanie licencji (ten artykuł).
 1. [Wdychuj aplikacje](deploy-apps.md).
-1. [Konfigurowanie urządzeń](set-up-devices.md).
+1. [Przygotowywanie urządzeń](prepare-devices.md).
 1. Skonfiguruj środowisko [pierwszego uruchomienia za pomocą rozwiązania Autopilot i strony stanu rejestracji](esp-first-run.md).
 1. [Włączanie funkcji pomocy technicznej dla użytkowników](enable-support.md).
 1. [Przygotuj użytkowników do korzystania z urządzeń](get-started-devices.md).

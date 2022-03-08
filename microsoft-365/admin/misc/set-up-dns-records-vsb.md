@@ -2,8 +2,8 @@
 title: Połączenie domenę do Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Dowiedz się, jak zweryfikować domenę i tworzyć rekordy DNS za pomocą Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: c4282ef4b140fa9e58168ba39c37b4af22b46193
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3aa43cd798c26dde8eb064754ae3fb74bd520c29
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987283"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312505"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Połączenie domenę do Microsoft 365
 

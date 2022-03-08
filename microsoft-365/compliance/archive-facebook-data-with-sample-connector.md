@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Dowiedz się, jak skonfigurować & łącznika w aplikacji Centrum zgodności platformy Microsoft 365 w celu & zarchiwizować dane ze stron biznesowych w serwisie Facebook w celu Microsoft 365.
-ms.openlocfilehash: b78a2ae168c896d525ad57bc986105e891f7dde9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7cbc2b5a0f1ed55379224fc18b1be905e8a4cf0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988055"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319521"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Konfigurowanie łącznika do archiwizowania danych serwisu Facebook (wersja zapoznawcza)
 
@@ -45,7 +45,7 @@ Wykonaj poniższe wymagania wstępne, zanim będzie można skonfigurować łącz
 
 - Łącznik dla stron biznesowych serwisu Facebook może zaimportować łącznie 200 000 elementów w jednym dniu. Jeśli dziennie istnieje więcej niż 200 000 elementów biznesowych serwisu Facebook, żaden z tych elementów nie zostanie zaimportowany do Microsoft 365.
 
-- Użytkownik, który konfiguruje łącznik niestandardowy w Centrum zgodności platformy Microsoft 365 (w kroku 5), musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który konfiguruje łącznik niestandardowy w Centrum zgodności platformy Microsoft 365 (w kroku 5), musi mieć przypisaną rolę administrator łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w aplikacji Azure Active Directory
 

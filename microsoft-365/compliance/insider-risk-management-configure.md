@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 25dcabfcf569b2a5d8e842a12be210936402aa4f
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: e21d2904ec2afdcd57b69267f99af6a0726dca56
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016557"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314633"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Wprowadzenie do zarządzania ryzykiem w niejawnym programie testów
 
@@ -80,7 +80,7 @@ Wybierz z listy zalecenie, aby rozpocząć konfigurowanie zarządzania ryzykiem 
 > [!IMPORTANT]
 > Po skonfigurowaniu grup ról może upłynąć do 30 minut, aby uprawnienia grupy ról dotyczyły przypisanych użytkowników w organizacji.
 
-Do konfigurowania początkowych uprawnień w celu zarządzania funkcjami zarządzania ryzykiem w niejawnym programie testów jest używanych sześć grup ról. Aby **udostępnić** zarządzanie ryzykiem w niejawnym programie testów jako opcję menu w programie Centrum zgodności platformy Microsoft 365 i kontynuować te kroki konfiguracji, musisz mieć przypisaną jedną z następujących ról lub grup ról:
+Do konfigurowania funkcji zarządzania ryzykiem w niejawnym programie testów jest używanych sześć grup ról. Aby **udostępnić** zarządzanie ryzykiem w niejawnym programie testów jako opcję menu w programie Centrum zgodności platformy Microsoft 365 i kontynuować te kroki konfiguracji, musisz mieć przypisaną jedną z następujących ról lub grup ról:
 
 - Azure Active Directory [*administrator globalny*](/azure/active-directory/roles/permissions-reference#global-administrator)
 - Azure Active Directory [*administratora*](/azure/active-directory/roles/permissions-reference#compliance-administrator) zgodności
@@ -89,27 +89,29 @@ Do konfigurowania początkowych uprawnień w celu zarządzania funkcjami zarząd
 - *Grupa ról Zarządzanie ryzykiem w niejawnym* programie testów
 - *Grupa ról Administrator zarządzania ryzykiem w niejawnym programie* testów
 
-Członkowie następujących ról mają te same uprawnienia rozwiązania, które są zawarte *w grupie ról* Administrator zarządzania ryzykiem w niejawnym programie testów:
+W zależności od tego, jak chcesz zarządzać zasadami i alertami zarządzania ryzykiem w niejawnym programie testów, konieczne będzie przypisanie użytkowników do określonych grup ról w celu zarządzania różnymi zestawami funkcji zarządzania ryzykiem w niejawnym programie testów. Możesz przypisać użytkownikom różne obowiązki dotyczące zgodności z przepisami do określonych grup ról w celu zarządzania różnymi obszarami funkcji zarządzania ryzykiem w niejawnym programie testów. Możesz także przypisać wszystkie konta użytkowników dla wyznaczonych administratorów, analityków, osób oglądających i osoby przeglądowe do grupy ról Zarządzanie ryzykiem w niejawnym programie testów. Korzystaj z jednej lub wielu grup ról, aby jak najlepiej dopasować się do wymagań zarządzania zgodnością.
+
+Podczas pracy z zarządzaniem ryzykiem w ramach niejawnego programu testów będziesz wybierać spośród tych opcji grupy ról i akcji rozwiązania:
+
+|**Akcje**|**Zarządzanie ryzykiem w niejawnym programie testów**|**Administrator zarządzania ryzykiem w niejawnym programie testów**|**Analitycy zarządzania ryzykiem wewnętrznym**|**Badacze zarządzania ryzykiem wewnętrznym**|**Audytorzy zarządzania ryzykiem w niejawnym programie testów**|
+|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
+| Konfigurowanie zasad i ustawień | Tak | Tak | Nie | Nie | Nie |
+| Szczegółowe informacje dotyczące analizy programu Access | Tak | Tak | Tak | Nie | Nie |
+| Alerty & zbadać w programie Access | Tak | Nie | Tak | Tak | Nie |
+| Uzyskiwanie dostępu & zbadania spraw | Tak | Nie | Tak | Tak | Nie |
+| Uzyskiwanie & widoku Eksploratora zawartości | Tak | Nie | Nie | Tak | Nie |
+| Konfigurowanie szablonów z powiadomieniami | Tak | Nie | Tak | Tak | Nie |
+| Wyświetlanie & eksportowania dzienników inspekcji | Tak | Nie | Nie | Nie | Tak |
+
+>[!IMPORTANT]
+>Upewnij się, że w grupach ról Zarządzanie ryzykiem niejawnego programu testów  lub Administrator zarządzania ryzykiem w niejawnym programie testów (w zależności od wybranej opcji) zawsze jest co najmniej jeden użytkownik, aby konfiguracja zarządzania ryzykiem w niejawnym programie testów nie była dostępna w przypadku opuszczenia organizacji przez określonych użytkowników.
+
+Członkowie poniższych ról mogą przypisywać użytkowników do grup ról zarządzania ryzykiem w niejawnym programie testów i mieć te same uprawnienia rozwiązania, które są zawarte w grupie ról Administrator zarządzania ryzykiem w niejawnym programie *testów* :
 
 - Azure Active Directory *administrator globalny*
 - Azure Active Directory *administratora zgodności*
 - Centrum zgodności platformy Microsoft 365 *zarządzanie organizacją*
 - Centrum zgodności platformy Microsoft 365 *zgodności*
-
-> [!IMPORTANT]
-> Upewnij się, że w grupach ról Zarządzanie ryzykiem niejawnego programu testów  lub Administrator zarządzania ryzykiem w niejawnym programie testów (w zależności od wybranej opcji) zawsze jest co najmniej jeden użytkownik, aby konfiguracja zarządzania ryzykiem w niejawnym programie testów nie była dostępna w przypadku opuszczenia organizacji przez określonych użytkowników.
-
-W zależności od tego, jak chcesz zarządzać zasadami i alertami zarządzania ryzykiem w niejawnym programie testów, konieczne będzie przypisanie użytkowników do określonych grup ról w celu zarządzania różnymi zestawami funkcji zarządzania ryzykiem w niejawnym programie testów. Możesz przypisać użytkownikom różne obowiązki dotyczące zgodności z przepisami do określonych grup ról w celu zarządzania różnymi obszarami funkcji zarządzania ryzykiem w niejawnym programie testów. Możesz także przypisać wszystkie konta użytkowników dla wyznaczonych administratorów, analityków, osób oglądających i osoby przeglądowe do grupy ról *Zarządzanie* ryzykiem w niejawnym programie testów. Korzystaj z jednej lub wielu grup ról, aby jak najlepiej dopasować się do wymagań zarządzania zgodnością.
-
-Podczas konfigurowania zarządzania ryzykiem w niejawnym programie testów i zarządzania nimi wybierz jedną z tych opcji grupy ról rozwiązania:
-
-| **Grupa ról** | **Uprawnienia roli** |
-| :------------- | :------------------- |
-| **Zarządzanie ryzykiem w niejawnym programie testów** | Ta grupa ról pozwala zarządzać zarządzaniem ryzykiem niejawnego programu testów w organizacji w jednej grupie. Dodając wszystkie konta użytkowników przeznaczone dla wyznaczonych administratorów, analityków, audytorów i audytorów, możesz skonfigurować uprawnienia do zarządzania ryzykiem w ramach poziomu niejawnego programu testów w jednej grupie. Ta grupa ról zawiera wszystkie role uprawnień do zarządzania ryzykiem w niejawnym programie testów i skojarzone uprawnienia. Jest to najprostszy sposób na szybkie rozpoczynanie pracy z zarządzaniem ryzykiem w niejawnym programie testów i jest dobrym rozwiązaniem dla organizacji, które nie potrzebują osobnych uprawnień zdefiniowanych dla osobnych grup użytkowników. Podczas korzystania z tej konfiguracji należy zawsze mieć przypisanego co najmniej jednego użytkownika do tej grupy ról, aby upewnić się, że zasady działają zgodnie z oczekiwaniami, a użytkownik może tworzyć i edytować zasady **_,_** konfigurować ustawienia rozwiązania i przeglądać ostrzeżenia dotyczące kondycji zasad.|
-| **Administrator zarządzania ryzykiem w niejawnym programie testów** | Ta grupa ról umożliwia wstępne skonfigurowanie zarządzania ryzykiem w niejawnym programie testów, a później oddziel administratorów ryzyka niejawnego programu testów do zdefiniowanej grupy. Użytkownicy w tej grupie ról mogą włączać i wyświetlać szczegółowe informacje z analiz, a także tworzyć, odczytywać, aktualizować i usuwać zasady zarządzania ryzykiem niejawnego programu testów, ustawienia globalne i przypisania ról do grup ról. Podczas korzystania z tej konfiguracji należy zawsze mieć przypisanego co najmniej jednego użytkownika do tej grupy ról, aby upewnić się, że zasady działają zgodnie z oczekiwaniami, a użytkownik może tworzyć i edytować zasady **_,_** konfigurować ustawienia rozwiązania i przeglądać ostrzeżenia dotyczące kondycji zasad. |
-| **Analitycy zarządzania ryzykiem wewnętrznym** | Ta grupa umożliwia przypisywanie uprawnień użytkownikom, którzy będą działać jako analitycy ds. ryzyka w niejawnym programie testów. Użytkownicy w tej grupie ról mogą wyświetlać i wyświetlać wszystkie szablony alertów zarządzania ryzykiem w ramach niejawnego programu testów, spraw, szczegółowych informacji analitycznych i powiadomień. Nie mogą oni uzyskać dostępu do Eksploratora zawartości z ryzykiem w niejawnym programie testów. |
-| **Badacze zarządzania ryzykiem wewnętrznym** | Ta grupa umożliwia przypisywanie uprawnień użytkownikom, którzy będą działać jak osoby chłonące dane ryzyka w niejawnym programie testów. Użytkownicy w tej grupie ról mają dostęp do wszystkich alertów zarządzania ryzykiem w niejawnym programie testów, spraw, szablonów powiadomień i Eksploratora zawartości we wszystkich przypadkach. |
-| **Audytorzy zarządzania ryzykiem w niejawnym programie testów** | Ta grupa umożliwia przypisywanie uprawnień użytkownikom, którzy będą insektować działania związane z zarządzaniem ryzykiem w niejawnym programie testów. Użytkownicy w tej grupie ról mają dostęp do dziennika inspekcji ryzyka niejawnego programu testów. Użytkownicy w tej grupie ról nie mogą korzystać z funkcji zalecanych akcji (wersja Preview) ani z nich korzystać.|
 
 > [!NOTE]
 > Te grupy ról nie są obecnie obsługiwane Privileged Identity Management (PIM). Aby dowiedzieć się więcej o usłudze PIM, zobacz [Przypisywanie ról usługi Azure AD w usłudze Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
@@ -246,7 +248,7 @@ Przed skonfigurowaniem zasad zdefiniuj następujące ustawienia ryzyka niejawneg
 4. Na **stronie Timeframes zasad** wybierz ramy czasowe zasad [](insider-risk-management-settings.md#policy-timeframes), które mają być stosowane dla użytkownika w przypadku wyzwalania dopasowania do zasad ryzyka niejawnego programu testów.
 5. Na stronie **Inteligentne wykrywanie** skonfiguruj następujące ustawienia zasad ryzyka niejawnego programu testów:
     - [Wykluczenia typów plików](insider-risk-management-settings.md#file-type-exclusions)
-    - [Progi nietypowej aktywności dotyczącej plików](insider-risk-management-settings.md#threshold-for-unusual-file-activity)
+    - [Minimalna liczba codziennych wydarzeń, aby zwiększyć liczbę wyników dla nietypowej aktywności](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Alert o poziomie głośności](insider-risk-management-settings.md#alert-volume)
     - [Stan alertu programu Microsoft Defender dla punktu końcowego](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Ustawienia domeny](insider-risk-management-settings.md#domains)
@@ -274,7 +276,7 @@ Zasady zarządzania ryzykiem w niejawnym programie testów obejmują przypisanyc
     - **Opis (opcjonalnie)**: Wprowadź opis zasad.
 
 6. Wybierz przycisk **Dalej**, aby kontynuować.
-7. Na stronie  Użytkownicy i grupy wybierz pozycję Uwzględnij wszystkich użytkowników i grupy lub  Uwzględnij konkretnych użytkowników i grupy, aby określić użytkowników lub grupy, które mają być uwzględnione w zasadach, lub jeśli został wybrany szablon priorytetowy oparty na użytkownikach. wybierz **pozycję Dodaj lub edytuj grupy użytkowników o priorytecie**. Wybranie **opcji Uwzględnij wszystkich użytkowników** i grupy spowoduje uruchomienie zdarzeń dla wszystkich użytkowników i grup w organizacji w celu rozpoczęcia przypisywania ocen ryzyka dla zasad. Wybranie **opcji Uwzględnij konkretnych użytkowników i** grupy umożliwia określenie użytkowników i grup, którym mają zostać przypisane zasady. Konta gości nie są obsługiwane.
+7. Na stronie  Użytkownicy i grupy wybierz pozycję Uwzględnij wszystkich użytkowników i grupy lub  Uwzględnij konkretnych użytkowników i grupy, aby określić użytkowników lub grupy, które mają być uwzględnione w zasadach, lub jeśli został wybrany szablon priorytetowy oparty na użytkownikach. wybierz **pozycję Dodaj lub edytuj grupy użytkowników o priorytecie**. Wybranie **opcji Uwzględnij wszystkich użytkowników** i grupy spowoduje uruchomienie zdarzeń dla wszystkich użytkowników i grup w organizacji w celu rozpoczęcia przypisywania ocen ryzyka dla zasad. Wybranie **opcji Uwzględnij konkretnych użytkowników i** grupy umożliwia określenie użytkowników i grup, którym mają zostać przypisane zasady. Konta użytkowników gości nie są obsługiwane.
 8. Wybierz przycisk **Dalej**, aby kontynuować.
 9. Na **stronie Zawartość do priorytetyzowania** możesz (w razie potrzeby) przypisywać źródła do priorytetu, co zwiększa prawdopodobieństwo wygenerowania alertów o wysokim poziomie ważności dla tych źródeł. Wybierz jedną z następujących opcji:
 

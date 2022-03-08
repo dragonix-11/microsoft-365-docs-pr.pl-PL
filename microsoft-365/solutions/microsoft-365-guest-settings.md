@@ -16,15 +16,16 @@ f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 recommendations: false
 description: Dowiedz się więcej o ustawieniach udostępniania gościa dostępnych w Microsoft 365 które mogą mieć wpływ na udostępnianie osobom spoza organizacji.
-ms.openlocfilehash: bf0a85f43733ac90d55dde9ded38efd273a9c485
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: 2b6aac7a02c6c7c5feda041a2b06147c67dfa285
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "63020851"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316537"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informacje dotyczące ustawień udostępniania dla gości na platformie Microsoft 365
 
@@ -133,7 +134,7 @@ Główny Teams dostępu gościa: Zezwalaj na dostęp gościa Teams gościa w pro
 |Usuwanie wysłanych wiadomości|Wł.|Gdy **jest wł**., goście mogą usuwać wcześniej wysłane przez nich wiadomości. gdy **jest** wyłączona, nie mogą.|
 |Czat|Wł.|Gdy **jest** wł., goście mogą korzystać z czatu w Teams, **a gdy wyłączone**, nie mogą.|
 |Korzystanie z giphy w konwersacjach|Wł.|Gdy **jest wł**., goście mogą używać giphy w konwersacjach; gdy **jest** wyłączona, nie mogą.|
-|Klasyfikacja zawartości Giphy|Umiarkowane|Gdy jest **ustawiona wartość** Zezwalaj na całą zawartość, goście mogą wstawiać wszystkie giphy w czatach, niezależnie od klasyfikacji zawartości. W przypadku ustawienia **Moderowane** goście mogą wstawiać treści Giphy do czatów, ale zostaną moderowo ograniczeni od treści dla dorosłych. W **przypadku ustawienia Ścisłe** goście mogą wstawiać giphy do czatów, ale nie mogą wstawiać zawartości dla dorosłych.|
+|Klasyfikacja zawartości Giphy|Umiarkowane|Gdy jest **ustawiona wartość Zezwalaj na całą** zawartość, goście mogą wstawiać wszystkie obrazy Giphy do czatów, niezależnie od klasyfikacji zawartości. W przypadku ustawienia **Moderowane** goście mogą wstawiać treści Giphy do czatów, ale zostaną moderowo ograniczeni od treści dla dorosłych. W **przypadku ustawienia Ścisłe** goście mogą wstawiać giphy do czatów, ale nie mogą wstawiać zawartości dla dorosłych.|
 |Używanie memów w konwersacjach|Wł.|Gdy **jest** wł., goście mogą używać memów w konwersacjach. gdy **jest** wyłączona, nie mogą.|
 |Nalepki użytkowników w konwersacjach|Wł.|Gdy **jest wł**., goście mogą używać nalepek w konwersacjach. gdy **jest** wyłączona, nie mogą.|
 |Zezwalanie czytnikowi immersyjneowi na wyświetlanie wiadomości|Wł.|Gdy **jest** wł., goście mogą wyświetlać wiadomości w Czytnik immersyjny, **a gdy wyłączone**, nie mogą.|
@@ -148,7 +149,7 @@ Te ustawienia mają wpływ na wszystkie witryny w organizacji. Nie wpływają on
 
 Ponieważ OneDrive to hierarchia witryn w SharePoint, ustawienia udostępniania na poziomie organizacji mają bezpośredni OneDrive tak samo jak inne SharePoint witryn.
 
-**Nawigacja:** SharePoint administracyjne > udostępniania
+**Nawigacja:** SharePoint centrum administracyjnym > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**udostępnianie**</a>
 
 ![Zrzut ekranu SharePoint ustawień udostępniania na poziomie organizacji.](../media/external-sharing.png)
 
@@ -159,7 +160,7 @@ Ponieważ OneDrive to hierarchia witryn w SharePoint, ustawienia udostępniania 
 
 ### <a name="sharepoint-and-onedrive-advanced-sharing-settings"></a>SharePoint i OneDrive zaawansowane ustawienia udostępniania
 
-**Nawigacja:** SharePoint administracyjne > udostępniania
+**Nawigacja:** SharePoint centrum administracyjnym > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**udostępnianie**</a>
 
 ![Zrzut ekranu SharePoint dodatkowych ustawień udostępniania na poziomie organizacji.](../media/external-sharing.png)
 
@@ -176,7 +177,7 @@ Ponieważ OneDrive to hierarchia witryn w SharePoint, ustawienia udostępniania 
 
 Gdy pliki i foldery są udostępniane w programach SharePoint i OneDrive, adresatom udostępniania jest wysyłany link z uprawnieniami do pliku lub folderu, a nie bezpośredni dostęp do pliku lub folderu. Dostępnych jest kilka typów linków i można wybrać domyślny typ linku prezentowany użytkownikom, którzy współużytkują plik lub folder. Możesz również ustawić uprawnienia i opcje wygasania dla linków *Każdy* .
 
-**Nawigacja:** SharePoint administracyjne > udostępniania
+**Nawigacja:** SharePoint centrum administracyjnym > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**udostępnianie**</a>
 
 ![Zrzut ekranu SharePoint ustawień udostępniania plików i folderów na poziomie organizacji.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -199,7 +200,10 @@ Możesz ustawić uprawnienia udostępniania gości dla każdej witryny w program
 
 Jeśli do witryny zastosowano etykietę wrażliwości, może ona sterować ustawieniami udostępniania zewnętrznego. Aby uzyskać więcej informacji, zobacz Chroninie zawartości w witrynach sieci [Microsoft Teams, Microsoft 365 i SharePoint zawartości za pomocą etykiet wrażliwości](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-**Nawigacja:** SharePoint administracyjne > witryny aktywne > wybierz kartę Zasady witryny > i > Edytowanie udostępniania zewnętrznego
+> [!NOTE]
+> Ustawienia udostępniania witryn kanałów można zmieniać tylko za pomocą polecenia [cmdlet programu PowerShell Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) .
+
+**Nawigacja:** SharePoint administracyjne > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**witryny**</a> aktywne > wybierz kartę Zasady witryny > **i** > **Edytowanie udostępniania zewnętrznego**
 
 ![Zrzut ekranu SharePoint ustawień udostępniania zewnętrznego witryny.](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -211,7 +215,7 @@ Jeśli do witryny zastosowano etykietę wrażliwości, może ona sterować ustaw
 
 Dla każdej witryny możesz ustawić ustawienia domyślne dla typu linku, uprawnień oraz ustawień wygasania dla *każdego linku* Każda osoba. Ustawienia ustawione na poziomie witryny zastępują ustawienia na poziomie organizacji. Pamiętaj *, że jeśli* na poziomie organizacji linki Każdy są *wyłączone, każdy* nie będzie dostępnym typem linku na poziomie witryny.
 
-**Nawigacja:** SharePoint administracyjne > witryny aktywne > wybierz kartę Zasady witryny > i > Edytowanie udostępniania zewnętrznego
+**Nawigacja:** SharePoint administracyjne > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**witryny**</a> aktywne > wybierz kartę Zasady witryny > **i** > **Edytowanie udostępniania zewnętrznego**
 
 ![Zrzut ekranu SharePoint ustawień udostępniania linków na poziomie witryny.](../media/sharepoint-site-link-sharing-settings.png)
 

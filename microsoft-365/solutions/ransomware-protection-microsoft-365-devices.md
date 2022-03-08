@@ -1,9 +1,9 @@
 ---
 title: Krok nr 4. Ochrona urządzeń
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: oprogramowanie wymuszające okup, oprogramowanie wymuszające okup obsługiwane przez człowieka, oprogramowanie wymuszające okup przez człowieka, humor, ataki wymuszające okup, ataki oprogramowania wymuszającego okup, szyfrowanie, kryptografia, zerowe zaufanie
 description: Używaj Windows Intune jako dostawcy MDA i MAM oraz funkcji zabezpieczeń Windows 10, aby chronić zasoby usługi Microsoft 365 przed atakami oprogramowania wymuszającego okup.
-ms.openlocfilehash: 918dc75d11157bf6358e68a13d04c9a84c0a3837
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 0d7b9a5e125c3f0478948340dce5677a3ae65395
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014867"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318077"
 ---
 # <a name="step-4-protect-devices"></a>Krok nr 4. Ochrona urządzeń
 

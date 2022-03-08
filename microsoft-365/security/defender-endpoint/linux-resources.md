@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e20b993d577f144e80c99479bac7bf70e484f785
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a32c8c91350218da619de18e0b1b398a93bf7fda
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997422"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312667"
 ---
 # <a name="resources"></a>Zasoby
 
@@ -142,7 +142,7 @@ W poniższej tabeli wymieniono polecenia najbardziej typowych scenariuszy. Uruch
 |Zarządzanie kwarantanną|Usuwanie wszystkich plików z kwarantanny|`mdatp threat quarantine remove-all`|
 |Zarządzanie kwarantanną|Dodawanie pliku wykrytego jako zagrożenie do kwarantanny|`mdatp threat quarantine add --id [threat-id]`|
 |Zarządzanie kwarantanną|Usuwanie pliku wykrytego jako zagrożenie z kwarantanny|`mdatp threat quarantine remove --id [threat-id]`|
-|Zarządzanie kwarantanną|Przywracanie pliku z kwarantanny|`mdatp threat quarantine restore --id [threat-id]`|
+|Zarządzanie kwarantanną|Przywracanie pliku z kwarantanny|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
 |Wykrywanie punktu końcowego i odpowiedź|Ustawianie wczesnego podglądu (nieużywane)|`mdatp edr early-preview [enable|disable]`|
 |Wykrywanie punktu końcowego i odpowiedź|Ustaw identyfikator grupy|`mdatp edr group-ids --group-id [group-id]`|
 |Wykrywanie punktu końcowego i odpowiedź|Ustawianie/usuwanie tagu, obsługiwane tylko `GROUP`|`mdatp edr tag set --name GROUP --value [tag]`|

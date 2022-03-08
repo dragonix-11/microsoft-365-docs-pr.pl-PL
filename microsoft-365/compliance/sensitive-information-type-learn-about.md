@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: W tym artykule opisano typy informacji poufnych oraz sposób wykrywania informacji poufnych, takich jak numery PESEL, kart kredytowych lub kont bankowych w celu identyfikowania elementów poufnych.
-ms.openlocfilehash: 6bc15ae90d591e2f2c4e432dce025201c9f13c18
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: fbe23bbb6c639857367cc0b8467f6084e9116af1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015379"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318847"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Informacje o typach informacji poufnych
 
@@ -42,7 +42,6 @@ Firma Microsoft udostępnia wiele wstępnie skonfigurowanych list adresowych uż
 - [Etykiety przechowywania](retention.md)
 - [Zarządzanie ryzykiem w niejawnym programie testów](insider-risk-management.md)
 - [Zgodność komunikacji](communication-compliance.md)
-- [Wewnętrzne zarządzanie ryzykiem](insider-risk-management-solution-overview.md)
 - [Zasady automatycznego schowania](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
 
@@ -50,7 +49,7 @@ Firma Microsoft udostępnia wiele wstępnie skonfigurowanych list adresowych uż
 
 ### <a name="built-in-sensitive-information-types"></a>Wbudowane typy informacji poufnych
 
-Te sits są tworzone przez firmę Microsoft domyślnie są wyświetlane w konsoli zgodności. Tych typów informacji poufnych nie można edytować, ale można ich używać jako szablonów i kopiować w celu tworzenia niestandardowych typów informacji poufnych.
+Te sits są tworzone przez firmę Microsoft domyślnie są wyświetlane w konsoli zgodności. Tych typów informacji poufnych nie można edytować, ale można ich używać jako szablonów i kopiować w celu tworzenia niestandardowych typów informacji poufnych. Zobacz [Definicje encji typu informacji poufnych](sensitive-information-type-entity-definitions.md) , aby uzyskać pełną listę wszystkich typów informacji (SIT).
 
 ### <a name="named-entity-sensitive-information-types"></a>Nazwane typy informacji poufnych encji
 
@@ -86,7 +85,7 @@ Każda jednostka typu informacji poufnych jest definiowana przez następujące p
 
 ![Diagram dowodu potwierdzania i okna sąsiedztwa.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Z tego klipu wideo dowiesz się więcej o poziomach ufności
+Z tego krótkiego klipu wideo dowiesz się więcej o poziomach ufności.
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  

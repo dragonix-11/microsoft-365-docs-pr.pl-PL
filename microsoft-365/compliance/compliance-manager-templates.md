@@ -2,8 +2,8 @@
 title: Praca z szablonami oceniania w Menedżerze zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak używać szablonów do tworzenia ocen w Menedżerze zgodności firmy Microsoft i zarządzać nimi. Tworzenie i modyfikowanie szablonów przy użyciu Excel pliku.
-ms.openlocfilehash: 99e243e86c66babd9a983ae6df891f4094cdbb83
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 6885008e58c1e1289723a6d8c1ee4e04d16740b0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "62989723"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317727"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>Informacje o szablonach oceniania w Menedżerze zgodności
 
@@ -36,7 +36,11 @@ ms.locfileid: "62989723"
 
 Szablon to struktury kontrolek do tworzenia oceny w Menedżerze zgodności. Nasz kompleksowy zestaw szablonów może pomóc Twojej organizacji w przestrzeganiu wymagań krajowych, regionalnych i branżowych dotyczących gromadzenia i używania danych.
 
-Szablony są nazwane tak samo jak ich certyfikaty lub przepisy, na przykład szablon RODO UE i szablon ISO/IEC 27701:2019. Ponieważ za pomocą Mangera zgodności można oceniać różne typy produktów, każdy szablon jest dostarczany w dwóch wersjach: jednej, która dotyczy wstępnie zdefiniowanego produktu, takiego jak Microsoft 365, i uniwersalnej wersji, która może być dostosowana do wybranego produktu.
+## <a name="template-versions-microsoft-and-universal"></a>Wersje szablonów: Microsoft i uniwersalne
+
+Szablony są nazwane tak samo jak ich certyfikaty lub przepisy, na przykład szablon RODO UE i szablon ISO/IEC 27701:2019.
+
+Za pomocą mangera zgodności można oceniać różne typy produktów. Wszystkie szablony oprócz planu bazowego są dostępne w co najmniej jednej wersji, która dotyczy wstępnie zdefiniowanego produktu, takiego jak Microsoft 365, i uniwersalnej wersji, która może być dostosowana do innych produktów. Oceny z szablonów uniwersalnych są bardziej ogólne, ale oferują większą elastyczność, ponieważ mogą ułatwić śledzenie zgodności organizacji w wielu produktach.
 
 Należy zauważyć, że klienci Community administracji państwowej Stanów Zjednoczonych (GCC) Moderowany, GCC Wysoki i Dział obrony (DoD) nie mogą obecnie używać szablonów uniwersalnych.
 

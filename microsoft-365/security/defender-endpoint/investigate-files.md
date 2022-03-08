@@ -11,18 +11,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b990c73f9cdb81d164bd57d1aff5b7ec61df714f
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 6f93a5ec90404ca28fd47d4115a8ebf8d488216e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011923"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322047"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Badanie pliku skojarzonego z alertem programu Microsoft Defender dla punktu końcowego
 

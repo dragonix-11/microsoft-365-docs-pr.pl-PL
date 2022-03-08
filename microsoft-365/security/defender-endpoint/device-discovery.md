@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
+ms.author: siosulli
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 56c7c2ab6a8023be8a570c5b33c64112d8545df1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9045c9a425b78f46d39ebb63664b693bf40252c4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63019240"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314391"
 ---
 # <a name="device-discovery-overview"></a>Omówienie odnajdowania urządzeń
 
@@ -52,7 +52,7 @@ Obejrzyj ten klip wideo, aby szybko dowiedzieć się, jak odnajdować urządzeni
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
 
-W połączeniu z tą funkcją, w ramach istniejącego zarządzania zagrożeniami i lukami dostępny jest program Microsoft Defender for Endpoint, czyli zalecenie dotyczące zabezpieczeń.
+W połączeniu z tą funkcją w ramach istniejącego rozwiązania do obsługi programu Microsoft Defender for Endpoint jest dostępne Zarządzanie zagrożeniami i lukami zabezpieczeń.
 
 ## <a name="discovery-methods"></a>Metody odnajdowania
 
@@ -74,19 +74,21 @@ Możesz zmienić i dostosować ustawienia odnajdowania, aby uzyskać więcej inf
 
 ## <a name="device-inventory"></a>Spis urządzeń
 
-Urządzenia, które zostały odkryte, ale nie zostały jeszcze naniesone i zabezpieczone przez program Microsoft Defender for Endpoint, będą wymienione w spisie urządzeń na karcie Punkty końcowe.
+Urządzenia, które zostały odkryte, ale nie zostały jeszcze naniesone i zabezpieczone przez program Microsoft Defender for Endpoint, będą wymienione w spisie urządzeń na karcie Komputery i urządzenia przenośne.
 
-Na liście zapasów urządzeń można użyć filtru o nazwie Stan dołączania, który może mieć dowolną z następujących wartości:
+Aby ocenić te urządzenia, możesz użyć filtru na liście zasobów urządzeń o nazwie Stan dołączania, który może mieć dowolną z następujących wartości:
 
 - Onboarded: Punkt końcowy jest dołączany do programu Microsoft Defender for Endpoint.
 - Może zostać wnoszony: Punkt końcowy został wykryty w sieci, a system operacyjny został zidentyfikowany jako obsługiwany przez usługę Microsoft Defender for Endpoint, ale obecnie nie jest on dołączany. Zdecydowanie zalecamy dołączanie tych urządzeń.
 - Nieobsługiwane: Punkt końcowy został wykryty w sieci, ale nie jest obsługiwany przez program Microsoft Defender for Endpoint.
 - Za mało informacji: System nie mógł określić możliwości obsługi urządzenia. Włączenie standardowego odnajdowania na większej liczby urządzeń w sieci może wzbogacić wykryte atrybuty.
 
-![Obraz pulpitu nawigacyjnego spisu urządzeń.](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+![Obraz pulpitu nawigacyjnego spisu urządzeń.](images/device-discovery-inventory.png)
 
 > [!TIP]
 > Zawsze możesz zastosować filtry, aby wykluczyć urządzenia nieza zarządzanie z listy zasobów w spisie urządzeń. Możesz również użyć kolumny stanu dołączania w zapytaniach interfejsu API, aby odfiltrować urządzenia nieza zarządzanie.
+
+Aby uzyskać więcej informacji, zobacz [Spis urządzeń](machines-view-overview.md).
 
 ## <a name="network-device-discovery"></a>Odnajdowanie urządzeń sieciowych
 
@@ -134,16 +136,6 @@ DeviceNetworkEvents
 | where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"
 | take 10
 ```
-
-## <a name="changed-behavior"></a>Zmieniono zachowanie
-
-W poniższej sekcji wymieniono zmiany, które będą obserwować w programie Microsoft Defender dla punktu końcowego i Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu</a> po włączeniu tej funkcji.
-
-1. Urządzenia, które nie są podłączone do programu Microsoft Defender for Endpoint, powinny być widoczne w spisie urządzeń, zapytaniach zaawansowanego wyszukiwania i zapytaniach interfejsu API. Może to znacząco zwiększyć rozmiar wyników zapytania.
-    1. Tabele "DeviceInfo" i "DeviceNetworkInfo" w zaawansowanej chwycenią teraz urządzenie odnalezione. Te urządzenia można filtrować przy użyciu atrybutu "OnboardingStatus".
-    2. Urządzenia odnalezione powinny być widoczne w wynikach zapytania interfejsu API przesyłania strumieniowego. Te urządzenia można filtrować przy użyciu filtru `OnboardingStatus` w zapytaniu.
-2. Urządzenia niezamaniowane zostaną przypisane do istniejących grup urządzeń na podstawie zdefiniowanych kryteriów.
-3. W rzadkich przypadkach funkcja odnajdowania standardowego może wyzwalać alerty na monitorach sieciowych lub narzędziach zabezpieczeń. Jeśli wystąpią takie zdarzenia, prosimy o opinie, aby zapobiec powtarzaniu się tych problemów. Możesz jawnie wykluczyć określone cele lub całe podsieci z aktywnego wykrywania standardowego.
 
 ## <a name="next-steps"></a>Następne kroki
 

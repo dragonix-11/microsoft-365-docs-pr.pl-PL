@@ -2,13 +2,13 @@
 title: Połączenie rekordów DNS w 123-reg.co.uk Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, usługi Skype dla firm Online i innych usług w witrynie 123-reg.co.uk firmy Microsoft.
-ms.openlocfilehash: 64fdb9df70598aed5113620ea11caf8f70b5926a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 050aad4ca3e0e768b160a7ba210a93e163d72fe7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989496"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314941"
 ---
 # <a name="connect-your-dns-records-at-123-regcouk-to-microsoft-365"></a>Połączenie rekordów DNS w 123-reg.co.uk Microsoft 365
 

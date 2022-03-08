@@ -2,8 +2,8 @@
 title: RODO uproszczone Przewodnik dla Twojej małej firmy
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Dowiedz się, Microsoft 365 dla firm może pomóc w procesie ogólnego rozporządzenia o ochronie danych (RODO).
-ms.openlocfilehash: f84c9e93c92c40ce40cc2835100ef2786a23a69d
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 07300313cc2ead3d6efba4295a9219e00a6dc2ec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017832"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312407"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>Uproszczone RODO: przewodnik dla Twojej małej firmy
 

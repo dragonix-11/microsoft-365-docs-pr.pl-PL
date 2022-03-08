@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
 recommendations: false
 description: Dowiedz się, jak wdrażać zespoły z ochroną bardzo poufnych danych.
-ms.openlocfilehash: 27d2183a3f6f5f43f4461bc83fe3b33ac9f4f56e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 053f92f0a3f7551d747c81b13b3832798c7e953c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984264"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312600"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Konfigurowanie zespołów z ochroną bardzo poufnych danych
 
@@ -129,12 +130,11 @@ Za każdym razem, gdy tworzysz nowy zespół z bardzo wrażliwą etykietą, trze
 
 Aby zaktualizować domyślny typ linku udostępniania witryny
 
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W **obszarze Witryny** kliknij pozycję **Aktywne witryny**.
-3. Kliknij witrynę skojarzoną z zespołem.
-4. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** kliknij pozycję **Edytuj**.
-5. W obszarze Domyślny typ linku udostępniania wyczyść  pole wyboru Takie samo ustawienie jak ustawienie na poziomie organizacji i zaznacz pole **wyboru Osoby z istniejącym dostępem**.
-6. Kliknij **Zapisz**.
+1. Otwórz centrum SharePoint administracyjnego, a następnie w **obszarze Witryny** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+1. Wybierz witrynę skojarzoną z zespołem.
+1. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** wybierz pozycję **Edytuj**.
+1. W obszarze Domyślny typ linku udostępniania wyczyść  pole wyboru Takie samo ustawienie jak ustawienie na poziomie organizacji i zaznacz pole **wyboru Osoby z istniejącym dostępem**.
+1. Wybierz **Zapisz**.
 
 #### <a name="private-channels"></a>Kanały prywatne
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratorzy w chmurze dla instytucji rządowych Stanów Zjednoczonych mogą skonfigurować łącznik danych w celu importowania danych pracowników z systemu kadr w organizacji do Microsoft 365. Dzięki temu możesz używać danych kadrowych w zasadach zarządzania ryzykiem w niejawnym programie testów w celu wykrywania działań określonych użytkowników, które mogą stanowić zagrożenie wewnętrzne dla Organizacji.
-ms.openlocfilehash: abfe43d1f0b61952c2dbc0f603250723965953a1
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: c342499c2ea18f4d6ad2f737db3d1dc32bb9fb3f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009698"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330513"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Konfigurowanie łącznika w celu importowania danych kadrowych w administracji Stanów Zjednoczonych
 
@@ -29,7 +29,10 @@ Możesz skonfigurować łącznik danych w centrum danych Centrum zgodności plat
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Użytkownik, który tworzy łącznik kadr w kroku 3, musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który tworzy łącznik kadr w kroku 3, musi mieć przypisaną rolę Administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+
+   > [!NOTE]
+   > Rola Administrator łącznika danych nie jest obecnie obsługiwana w środowiskach us Government GCC High i DoD. Dlatego użytkownik, który tworzy łącznik KADR w środowiskach GCC Wysokie i DoD, musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
 
 - Musisz określić, jak pobierać i eksportować dane z systemu kadr organizacji (regularnie) i dodawać je do pliku CSV zgodnie z opisem w kroku 2. Skrypt uruchomiony w kroku 4 spowoduje przekazanie danych hr z pliku CSV do chmury firmy Microsoft.
 

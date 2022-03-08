@@ -1,6 +1,6 @@
 ---
 title: Raport o zapasach urządzeń
-description: ''
+description: Ten artykuł zawiera opis raportu o zapasach urządzeń
 keywords: Microsoft Managed Desktop, Microsoft 365, usługa, dokumentacja
 ms.service: m365-md
 author: tiaraquan
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 531410fb840675dc8930078570aab84e9a1f1425
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: d5710fafd57c0c43419eb1a8ed31d2cba5c62084
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "63015746"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319924"
 ---
 # <a name="device-inventory-report"></a>Raport o zapasach urządzeń
 
@@ -32,8 +32,8 @@ W widoku **Urządzenia** możesz wybrać kartę Eksportuj  wszystkie, aby pobra�
 - Własność
 - Data rejestracji
 - Nazwa pierścienia
-- Storage — bezpłatne w GB
-- Storage — suma w GB
+- Przestrzeń dyskowa — bezpłatne w GB
+- Przestrzeń dyskowa — łączna liczba w GB
 - Zarejestrowane przez upn użytkownika
 - Przypisany użytkownik
 - Stan

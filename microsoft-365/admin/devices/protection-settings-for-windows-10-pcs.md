@@ -25,16 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Dowiedz się więcej o ustawieniach dostępnych w Microsoft 365 dla firm na potrzeby zabezpieczania Windows 10 urządzeniach.
-ms.openlocfilehash: 4019fb5d76824dc33bb5947d1bd3b25072b39bbd
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 26a9921d1c950990adcb4a28516ce2207fb3bcd1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "63007048"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313779"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Edytowanie lub tworzenie ustawień ochrony urządzeń dla Windows 10 PC
 
 Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 Po skonfigurowaniu domyślnych ustawień Windows ochrony na stronie Konfiguracja możesz dodać nowe ustawienia dotyczące wszystkich użytkowników lub zestawu użytkowników. Możesz również edytować dowolne z utworzonych przez Ciebie plików.
 
@@ -78,9 +81,13 @@ Aby uzyskać więcej informacji, zobacz [Jak działa funkcja ochrony w usłudze 
 |Użyj reguł, które zmniejszają obszar ataków na urządzenia  <br/> |Gdy zmniejszanie obszaru ataków jest włączone, pomaga blokować akcje i aplikacje zwykle używane przez złośliwe oprogramowanie do infekowania urządzeń. To ustawienie jest dostępne tylko wtedy, gdy jest włączona ochrona antywirusowa programu Windows Defender. Zobacz [Zmniejszanie obszarów ataków](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection), aby dowiedzieć się więcej.  <br/> |
 |Chroń foldery przed zagrożeniami, takimi jak oprogramowanie wymuszające okup  <br/> |To ustawienie używa kontrolowanego dostępu do folderów w celu ochrony danych firmy przed modyfikacją przez podejrzane lub złośliwe aplikacje, takie jak oprogramowanie wymuszające okup. Tego typu aplikacje mają zablokowaną możliwość wprowadzania zmian w chronionych folderach. To ustawienie jest dostępne tylko wtedy, gdy jest włączona ochrona antywirusowa programu Windows Defender. Aby [dowiedzieć się więcej, zobacz Chronię foldery za pomocą](/mem/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) kontrolowanego dostępu do folderu.  <br/> |
 |Blokuj dostęp sieciowy do potencjalnie złośliwej zawartości w Internecie  <br/> |Użyj tego ustawienia, aby blokować połączenia wychodzące użytkownika do lokalizacji internetowych o niskiej reputacji, które mogą  hostować wyłudzanie informacji, oszustwa lub inną złośliwą zawartość. To ustawienie jest dostępne tylko w Program antywirusowy Windows Defender dla ustawienia **Wł**. Aby uzyskać więcej informacji, zobacz [Ochrona sieci](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).  <br/> |
-|Pomóż chronić pliki i foldery na komputerach przed nieautoryzowanym dostępem za pomocą funkcji BitLocker  <br/> |Funkcja BitLocker chroni dane przez zaszyfrowanie dysków twardych komputera i zapewnianie ochrony przed ujawnieniem danych w razie zagubienia lub kradzieży komputera. Aby uzyskać więcej informacji, zobacz [Często zadawane pytania dotyczące funkcji BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
+|Pomóż chronić pliki i foldery na komputerach przed nieautoryzowanym dostępem za pomocą funkcji BitLocker  <br/> |Funkcji BitLocker chroni dane przez zaszyfrowanie dysków twardych komputera i zapewnianie ochrony przed dostępem do danych w razie zagubienia lub kradzieży komputera. Aby uzyskać więcej informacji, zobacz [Często zadawane pytania dotyczące funkcji BitLocker](/windows/security/information-protection/BitLocker/BitLocker-frequently-asked-questions).  <br/> |
 |Zezwalaj użytkownikom na pobieranie aplikacji z witryny Microsoft Store  <br/> |Pozwala użytkownikom pobierać i instalować aplikacje z witryny Microsoft Store. Do aplikacji tych należą zarówno gry, jak i narzędzia biurowe, więc zostawiamy to ustawienie **włączone**, ale możesz je wyłączyć w celu dodatkowego zwiększenia bezpieczeństwa.  <br/> |
 |Zezwalaj użytkownikom na korzystanie z Cortany  <br/> |Cortana może być bardzo pomocna. Cortana włączyć lub wyłączyć ustawienia, udzielać wskazówek dojazdu i przypominać o spotkaniach, więc domyślnie to ustawienie **jest** włączone.  <br/> |
 |Zezwalaj użytkownikom na otrzymywanie porad i reklam dotyczących systemu Windows od firmy Microsoft  <br/> |Porady dotyczące systemu Windows mogą być przydatne i ułatwiać użytkownikom zapoznawanie się nowymi funkcjami.  <br/> |
 |Automatycznie aktualizuj urządzenia z systemem Windows 10  <br/> |Zapewnia, że urządzenia z systemem Windows 10 automatycznie otrzymują najnowsze aktualizacje.  <br/> |
 |Wyłącz ekran urządzenia po takim czasie bezczynności  <br/> |Zapewnia bezpieczeństwo danych firmowych podczas bezczynności użytkownika. Jeśli użytkownik pracuje w miejscu publicznym, na przykład kawiarni, i odejdzie na chwilę od urządzenia lub skupi uwagę na czymś innym, przypadkowe osoby mogą obejrzeć zawartość ekranu. To ustawienie pozwala kontrolować czas bezczynności użytkownika, po którym ekran zostanie wyłączony.  <br/> |
+
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

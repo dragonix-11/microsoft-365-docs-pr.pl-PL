@@ -1,9 +1,9 @@
 ---
 title: Wdrażanie ochrony przed oprogramowaniem wymuszającym okup dla Microsoft 365 dzierżawy
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: oprogramowanie wymuszające okup, oprogramowanie wymuszające okup obsługiwane przez człowieka, oprogramowanie wymuszające okup przez człowieka, humor, ataki wymuszające okup, ataki oprogramowania wymuszającego okup, szyfrowanie, kryptografia, zerowe zaufanie
 description: Kroki ochrony zasobów internetowych przed Microsoft 365 oprogramowania wymuszającego okup.
-ms.openlocfilehash: 634888ac603be17265733c4443a69495015296d7
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: c356a0e3fac83c77a7e1eb1eda6e169405f43863
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014842"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324413"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Wdrażanie ochrony przed oprogramowaniem wymuszającym okup dla Microsoft 365 dzierżawy
 

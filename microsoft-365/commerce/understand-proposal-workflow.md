@@ -2,8 +2,8 @@
 title: Opis przepływu pracy propozycji
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: presharm, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 search.appverid: MET150
 description: Poznaj oferty, które pomogą Ci kupować produkty i usługi firmy Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: c358022648bb81c5ca90d348a9d3c3b812c36ff2
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 75674b03a1954c65fbb506baa2de3e37ee20ea5a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62998929"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321085"
 ---
 # <a name="understand-the-proposal-workflow"></a>Opis przepływu pracy propozycji
 

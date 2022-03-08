@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie programu Microsoft Defender dla firm (wersja Preview) za pomocą kreatora
+title: Konfigurowanie programu Microsoft Defender dla firm przy użyciu kreatora
 description: Program Defender dla firm obejmuje proces konfiguracji i konfiguracji podobny do kreatora. Użyj kreatora, aby zaoszczędzić czas i nakład pracy.
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/16/2022
+ms.date: 03/02/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,55 +18,69 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 26bf8e46ba79094f74fe542f932921d4f1c2a50d
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: 98660e437463a79ce263edd29f2cd01725d19762
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014817"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322929"
 ---
-# <a name="use-the-wizard-to-set-up-microsoft-defender-for-business-preview"></a>Konfigurowanie programu Microsoft Defender dla firm (wersja Preview) za pomocą kreatora
+# <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>Konfigurowanie programu Microsoft Defender dla firm przy użyciu kreatora
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Od 1 marca 2022 r. usługa Microsoft Defender dla firm jest wprowadzana u klientów usługi Microsoft 365 Business Premium. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-Usługa Microsoft Defender dla firm (w wersji Preview) została zaprojektowana tak, aby zaoszczędzić czas i nakład pracy małych i średnich firm przy użyciu interfejsu kreatora na potrzeby konfiguracji początkowej. W tym artykule opisano kroki kreatora oraz opcje ręcznego konfigurowania i konfigurowania programu Defender dla firm.
+Usługa Microsoft Defender dla firm została zaprojektowana tak, aby zaoszczędzić czas i wysiłku małych i średnich firm przy użyciu interfejsu kreatora na potrzeby konfiguracji początkowej. W tym artykule opisano kroki kreatora oraz opcje ręcznego konfigurowania i konfigurowania programu Defender dla firm.
 
 :::image type="content" source="media/mdb-wizard-start.png" alt-text="Zrzut ekranu głównego kreatora do skonfigurowania usługi Defender dla firm.":::
+
+>
+> **Masz minutę?**
+> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+>
 
 ## <a name="overview-of-the-wizard"></a>Omówienie kreatora
 
 Kreator pomoże Ci szybko i wydajnie skonfigurować usługę Defender dla firm. Kreator przeprowadzi Cię przez następujące etapy:
 
-1. **Przypisywanie uprawnień użytkownika**. W tym kroku należy udzielić zespołowi zabezpieczeń dostępu do portalu Microsoft 365 Defender sieci ([https://security.microsoft.com](https://security.microsoft.com)). Dostęp do portalu jest udzielany za pośrednictwem ról sugerujące pewne uprawnienia. [Dowiedz się więcej o rolach i uprawnieniach](mdb-roles-permissions.md).
+1. **Przypisywanie uprawnień użytkownika**. W tym kroku udzielisz zespołowi zabezpieczeń dostępu do portalu Usługi Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dostęp do portalu jest udzielany za pośrednictwem ról sugerujące pewne uprawnienia. [Dowiedz się więcej o rolach i uprawnieniach](mdb-roles-permissions.md).
 
-   - Administrator globalny może wyświetlać i edytować wszystkie ustawienia w całej Microsoft 365 dzierżawie. 
+   - Administrator globalny może wyświetlać i edytować wszystkie ustawienia w dzierżawie platformy Microsoft 365. 
    - Administrator zabezpieczeń może wyświetlać i edytować ustawienia zabezpieczeń. 
    - Czytnik zabezpieczeń może wyświetlać informacje tylko w raportach. 
 
-2. **Konfigurowanie powiadomień e-mail**. W tym kroku określisz, kto powinien otrzymywać powiadomienia e-mail w przypadku wykrytej luki w zabezpieczeniach lub nowego alertu. Powiadomienia e-mail pomagają informować zespół zabezpieczeń, nawet jeśli nie ma go przy biurku. [Dowiedz się więcej o powiadomieniach e-mail](mdb-email-notifications.md). 
+2. **Wdowy i konfigurowanie urządzeń z systemem Windows**. W tym kroku możesz szybko dodać urządzenia organizacji z systemem Windows do programu Defender dla firm. Urządzenia dołączające od razu pomagają chronić je od pierwszego dnia. Aby [uzyskać więcej szczegółowych informacji, zobacz Urządzenia w programie Microsoft Defender dla](mdb-onboard-devices.md) firm.
 
-3. **Wdowaj i konfiguruj Windows urządzenia**. W tym kroku możesz szybko dodać urządzenia mobilne organizacji do Windows Defender dla firm. Urządzenia dołączające od razu pomagają chronić je od pierwszego dnia. 
+   - Jeśli korzystasz już z usługi Microsoft Intune (część do menedżera punktów końcowych firmy Microsoft) i Twoja organizacja ma urządzenia zarejestrowane w Menedżerze punktów końcowych, zostaniesz poproszony o określenie, czy chcesz korzystać z automatycznego dołączania dla niektórych, czy wszystkich zarejestrowanych urządzeń z systemem Windows. Automatyczne wniesienie konfiguruje połączenie między menedżerem punktów końcowych i usługą Defender dla firm, a następnie bezproblemowo dołącza urządzenia z systemem Windows do programu Defender dla firm.
 
-   - Jeśli korzystasz już z usługi Microsoft Intune (część usługi Microsoft Endpoint Manager), a Twoja organizacja ma urządzenia zarejestrowane w programie Endpoint Manager, zostaniesz poproszony o określenie, czy chcesz korzystać z automatycznego dołączania dla niektórych lub wszystkich zarejestrowanych Windows urządzeniach. Automatyczne wniesienie konfiguruje połączenie między usługami Endpoint Manager i Defender dla Firm, a następnie bezproblemowo dołącza Windows z usługą Defender dla firm.
-
-   - Jeśli jeszcze nie korzystasz z usługi Endpoint Manager lub masz urządzenia inne niż Windows zarejestrowane w programie Endpoint Manager, możesz ręcznie włączyć urządzenia do programu Defender dla firm (wersja Preview). 
-
-   - Zobacz [Urządzenia w programie Microsoft Defender dla firm (wersja Preview).](mdb-onboard-devices.md)
+   - Jeśli jeszcze nie korzystasz z menedżera punktów końcowych lub masz urządzenia innego niż Windows zarejestrowane w Menedżerze punktów końcowych, możesz ręcznie dodać urządzenia do usługi Defender dla firm. 
    
-4. **Skonfiguruj zasady zabezpieczeń**. Program Defender dla firm zawiera domyślne zasady zabezpieczeń, które mogą być stosowane do urządzeń organizacji. Te zasady domyślne używają zalecanych ustawień i zostały zaprojektowane tak, aby zapewnić silną ochronę Twoich urządzeń. Jeśli jednak chcesz, możesz również utworzyć własne zasady zabezpieczeń. Jeśli korzystasz już z usługi Endpoint Manager, możesz nadal używać jej do zarządzania zasadami zabezpieczeń. 
+3. **Skonfiguruj zasady zabezpieczeń**. Program Defender dla firm zawiera domyślne zasady zabezpieczeń dla ochrony następnej generacji i ochrony zapory, które można stosować do urządzeń organizacji. Te zasady domyślne używają zalecanych ustawień i zostały zaprojektowane tak, aby zapewnić silną ochronę Twoich urządzeń. 
 
-   - [Dowiedz się więcej o uproszczonej konfiguracji](mdb-simplified-configuration.md).
-   - [Wybierz miejsce zarządzania zasadami zabezpieczeń i urządzeniami](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
+   Jeśli chcesz, możesz również utworzyć własne zasady zabezpieczeń. Jeśli już korzystasz z menedżera punktów końcowych, możesz nadal używać go do zarządzania zasadami zabezpieczeń. 
+
+   Aby dowiedzieć się więcej, [zobacz Wyświetlanie i edytowanie zasad i ustawień zabezpieczeń](mdb-configure-security-settings.md).
 
 ## <a name="what-happens-if-i-dont-use-the-wizard"></a>Co się stanie, jeśli nie użyję kreatora?
 
-Jeśli nie chcesz używać kreatora lub jeśli go opuścisz przed zakończeniem procesu konfiguracji, nadal możesz samodzielnie ukończyć proces konfiguracji i konfiguracji. Aby [uzyskać instrukcje, zobacz Konfigurowanie i konfigurowanie programu Microsoft Defender dla firm (](mdb-setup-configuration.md) w wersji Preview).
+Jeśli nie chcesz korzystać z kreatora lub jeśli kreator zostanie zamknięty przed ukończeniem procesu konfiguracji, nadal możesz samodzielnie ukończyć proces konfiguracji i konfiguracji. 
+
+Zobacz [Konfigurowanie i konfigurowanie programu Microsoft Defender dla firm](mdb-setup-configuration.md) , aby wykonać następujące czynności:
+
+1. [Przypisz role i uprawnienia,](mdb-roles-permissions.md) aby Twój zespół zabezpieczeń mieć dostęp do portalu Usługi Microsoft 365 Defender i korzystać z niego ([https://security.microsoft.com](https://security.microsoft.com)).
+
+2. [Skonfiguruj powiadomienia e-mail dla zespołu zabezpieczeń](mdb-email-notifications.md) , aby były na bieżąco dotyczące nowych alertów i luk w zabezpieczeniach.
+
+3. [Urządzenia mobilne,](mdb-onboard-devices.md) dzięki czemu są chronione przez usługę Defender dla firm.
+
+4. [Zarządzaj zasadami zabezpieczeń](mdb-configure-security-settings.md), które obejmują ochronę następnej generacji, ochronę zapory i filtrowanie zawartości sieci Web.
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Rozpoczynanie korzystania z portalu Microsoft 365 Defender-](mdb-get-started.md)
+- [Konfigurowanie powiadomień e-mail dla zespołu zabezpieczeń](mdb-email-notifications.md)
+
+- [Rozpoczynanie korzystania z portalu usługi Microsoft 365 Defender](mdb-get-started.md)
 
 - [Używanie pulpitu nawigacyjnego zarządzania & zagrożeniami](mdb-view-tvm-dashboard.md)

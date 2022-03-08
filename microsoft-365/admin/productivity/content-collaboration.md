@@ -2,8 +2,8 @@
 title: Microsoft Productivity Score — współpraca nad zawartością
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Szczegóły współpracy nad zawartością — ludzie mogą odczuwać produktywność.
-ms.openlocfilehash: 3295c614383c48302d4737223b880a754ddf3b1c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12ef0d1f56e8aa122942394e9214b501c85ababd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985445"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324931"
 ---
 # <a name="content-collaboration--people-experiences"></a>Współpraca nad zawartością — środowisko osób
 

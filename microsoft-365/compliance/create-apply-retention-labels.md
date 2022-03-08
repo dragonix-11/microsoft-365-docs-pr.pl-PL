@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrukcje publikowania etykiet przechowywania w celu ich stosowania w aplikacjach w celu zachowania tego, co jest potrzebne, i usunięcia tego, co nie jest potrzebne.
-ms.openlocfilehash: 8a190020ce79431471b446c53b584c033c44e13a
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 17a49e2cdeffde5ed3dff91c3dac64e1ddf333ed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013840"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319437"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach
 
@@ -90,15 +90,23 @@ Jeśli etykiety przechowywania są publikowane Exchange, może upłynieć do sie
 
 ![Diagram przedstawiający efekt opublikowania etykiet.](../media/retention-labels-published-timings.png)
 
-Jeśli etykiety nie są wyświetlane po upływie siedmiu dni, sprawdź **stan** zasad etykiet, wybierając je na stronie Zasady etykiet w  Centrum zgodności. Jeśli zobaczysz stan Wyłączone (błąd **)** i w szczegółach lokalizacji zostanie wyświetlony komunikat informujący o tym, że wdrożenie zasad (dla programu SharePoint) trwa dłużej niż oczekiwano, lub próby ponownego wdrożenia zasad (dla systemu OneDrive), spróbuj ponownie uruchomić polecenie [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy), polecenie programu PowerShell, aby ponownie sprawdzić rozkład zasad:
+Jeśli etykiety nie są wyświetlane po upływie siedmiu dni, sprawdź **stan** zasad etykiet, wybierając je na stronie Zasady etykiet w  Centrum zgodności. Jeśli zobaczysz **(Błąd)** zawarty w stanie i w szczegółach lokalizacji zostanie wyświetlony komunikat informujący, że wdrożenie zasad trwa dłużej, niż oczekiwano, lub próby ponownego wdrożenia zasad, spróbuj uruchomić ponownie polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell w celu ponownego wypróbowania rozkładu zasad:
 
-1. [Połączenie do centrum & zabezpieczeń w programie PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
 
-2. Uruchom następujące polecenie:
+2. Uruchom jedno z następujących poleceń:
     
-    ``` PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    - W przypadku lokalizacji zasad Teams **wiadomości kanału** prywatnego, wiadomości **Yammer użytkowników** **i Yammer wiadomości społeczności**:
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - W przypadku wszystkich innych lokalizacji zasad, takich **jak Exchange-mail****, witryny** SharePoint, Teams **wiadomości w kanałach itp.**:
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Jak sprawdzić stan etykiet przechowywania opublikowanych w Exchange
 

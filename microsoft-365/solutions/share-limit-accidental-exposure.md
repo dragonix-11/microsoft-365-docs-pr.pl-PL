@@ -12,17 +12,17 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: ''
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Dowiedz się, jak ograniczyć przypadkowy dostęp do informacji podczas udostępniania plików osobom spoza organizacji.
-ms.openlocfilehash: 4c60f77f7f7807395a503ce083795e76398d99b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c1bf6424e2be70118dd2d85671a857a8a33ef2f9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986632"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329061"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Ograniczanie przypadkowego udostępnienia plików osobom spoza organizacji
 
@@ -43,7 +43,8 @@ Jeśli wyłączysz *linki Każdy* , użytkownicy nadal mogą łatwo udostępnia�
 W zależności od potrzeb możesz *wyłączyć linki Każdy* dla konkretnych witryn lub dla całej organizacji.
 
 Aby wyłączyć linki *Każdy* w organizacji
-1. W centrum SharePoint w lewym okienku nawigacji kliknij pozycję **Udostępnianie**.
+
+1. W centrum SharePoint w lewym okienku nawigacji wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
 2. Ustaw SharePoint udostępniania zewnętrznego na **wartość Nowi i istniejący goście**.
 
    ![Zrzut ekranu przedstawiający ustawienia SharePoint udostępniania zewnętrznego witryny na poziomie organizacji.](../media/sharepoint-organization-external-sharing-controls-new-users.png)
@@ -51,14 +52,15 @@ Aby wyłączyć linki *Każdy* w organizacji
 3. Kliknij **Zapisz**.
 
 Aby wyłączyć linki *Każdy* dla witryny
-1. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję **Witryny**, a następnie kliknij pozycję **Aktywne witryny**.
+
+1. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję **Witryny** i wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
 2. Wybierz witrynę, którą chcesz skonfigurować.
-3. Na wstążce kliknij pozycję **Udostępnianie**.
+3. Na wstążce wybierz pozycję **Udostępnianie**.
 4. Upewnij się, że udostępnianie jest ustawione na **wartość Nowi i istniejący goście**.
 
    ![Zrzut ekranu przedstawiający poziom witryny SharePoint ustawień udostępniania zewnętrznego witryny.](../media/sharepoint-site-external-sharing-settings.png)
 
-5. Jeśli zostały wprowadzone zmiany, kliknij przycisk **Zapisz**.
+5. Jeśli zostały wprowadzone zmiany, wybierz pozycję **Zapisz**.
 
 ## <a name="domain-filtering"></a>Filtrowanie domeny
 
@@ -71,7 +73,8 @@ W przypadku listy domen odrzucanych możesz określić listę domen, z których 
 Listy zezwalania i odmów mają wpływ tylko na udostępnianie gościom. Użytkownicy mogą nadal udostępniać użytkownikom niedozwolone domeny za pomocą linków Każdy, jeśli ich nie wyłączysz. Aby uzyskać najlepsze wyniki z listami domen zezwalających i odrzucanych, rozważ wyłączenie linków *Każdy* zgodnie z powyższym opisem.
 
 Aby skonfigurować listę domen ze zezwalania lub odrzucania
-1. W centrum SharePoint w lewym okienku nawigacji kliknij pozycję **Udostępnianie**.
+
+1. W centrum SharePoint w lewym okienku nawigacji wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie.**</a>
 2. W **obszarze Zaawansowane ustawienia udostępniania zewnętrznego** zaznacz **pole wyboru Ogranicz udostępnianie zewnętrzne według** domeny.
 3. Kliknij **pozycję Dodaj domeny**.
 4. Określ, czy chcesz blokować domeny, wpisz domeny i kliknij przycisk **OK**.
@@ -87,7 +90,8 @@ Jeśli chcesz ograniczyć udostępnianie według domeny na poziomie wyższym ni�
 Możesz ograniczyć udostępnianie plików, folderów i witryn osobom spoza organizacji członkom określonej grupy zabezpieczeń. Jest to przydatne, jeśli chcesz włączyć udostępnianie zewnętrzne, ale z przepływem pracy zatwierdzania lub procesem żądania. Możesz również wymagać od użytkowników ukończenia kursu szkoleniowego, zanim zostaną dodani do grupy zabezpieczeń i mogą udostępniać je zewnętrznie.
 
 Aby ograniczyć udostępnianie zewnętrzne do członków grupy zabezpieczeń
-1. W centrum [SharePoint w lewym](https://admin.microsoft.com/sharepoint) obszarze nawigacji w **obszarze Zasady** kliknij pozycję **Udostępnianie**.
+
+1. W centrum SharePoint w lewym obszarze nawigacji w **obszarze Zasady wybierz** pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
 2. W **obszarze Udostępnianie zewnętrzne** **rozwiń pozycję Więcej ustawień udostępniania zewnętrznego**.
 
 3. Wybierz **pozycję Zezwalaj tylko użytkownikom w określonych grupach zabezpieczeń** na udostępnianie zewnętrzne, a następnie wybierz pozycję **Zarządzaj grupami zabezpieczeń**.

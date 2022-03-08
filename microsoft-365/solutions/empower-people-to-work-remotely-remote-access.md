@@ -2,8 +2,8 @@
 title: Krok nr 2. Zapewnianie dostępu zdalnego do aplikacji i usług lokalnych
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Zapewnij pracownikom zdalnym dostęp do zasobów lokalnych, optymalizując dostęp do Microsoft 365 w chmurze.
-ms.openlocfilehash: 11fb3e37efe67103780fc4d234837da3bc15d97f
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 6baaa8c4e3935676278ff411d0282b82143056fc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014844"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328655"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Krok nr 2. Zapewnianie dostępu zdalnego do aplikacji i usług lokalnych
 

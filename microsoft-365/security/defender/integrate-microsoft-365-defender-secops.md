@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6bfec4b38d3451d25d65c63ce46fb8df74cd6d0e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 6ae973f6483035c450aea78664bf804ea0c67cb3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013667"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330205"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Integrowanie Microsoft 365 Defender z operacjami zabezpieczeń
 

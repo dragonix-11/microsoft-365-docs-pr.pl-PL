@@ -11,16 +11,16 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c4be03b7ba86449a875e268adbbdfbf1d4625aab
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 82e14fbd2bc991505c84d219c0624f52791376d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "63009732"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324581"
 ---
 # <a name="remove-devices"></a>Usuwanie urządzeń
 
-Urządzenia można usuwać z Microsoft Managed Desktop, korzystając z portalu administracyjnego. Ta akcja jest trwała, ale możesz zarejestrować je w Microsoft Managed Desktop rejestrując się, korzystając z procedury [rejestracji](../get-started/register-devices-self.md).
+Urządzenia można usuwać z Microsoft Managed Desktop, korzystając z portalu administracyjnego. Ta akcja jest trwała, ale możesz zarejestrować je w Microsoft Managed Desktop ponownie, korzystając z instrukcji [ręcznej rejestracji](../get-started/manual-registration.md).
 
 Po usunięciu urządzenia występują wszystkie następujące zdarzenia:
 

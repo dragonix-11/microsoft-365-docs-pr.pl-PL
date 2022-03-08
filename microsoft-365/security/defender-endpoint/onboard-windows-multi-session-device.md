@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d09898b29b9efda6b6911e9542d75d36a8e38f7e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d97326987af49b9bac44b3578884c72d756d5595
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63020861"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324063"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Dołączanie Windows wielosektapowych w usłudze Azure Virtual Desktop
 
@@ -156,6 +156,10 @@ Ponadto, jeśli korzystasz z profilów użytkowników usługi FSlogix, zalecamy 
 
 Uwaga: Podczas korzystania z wielu sesji programu Windows Enterprise, w zależności od Twoich wymagań, możesz wybrać, czy wszyscy użytkownicy mają licencję programu Microsoft Defender dla punktu końcowego (na użytkownika), Windows Enterprise E5, Microsoft 365 Security lub Microsoft 365 E5 albo licencję maszyny wirtualnej za pośrednictwem programu Microsoft Defender for Cloud.
 Wymagania licencyjne dotyczące programu Microsoft Defender dla punktu końcowego można znaleźć w te sposób: [Wymagania dotyczące licencjonowania](minimum-requirements.md#licensing-requirements).
+
+### <a name="known-issues-and-limitations"></a>Znane problemy i ograniczenia
+
+Filtrowanie Microsoft Edge jest obsługiwane tylko w przypadku Windows 10 w wielu sesjach.
 
 #### <a name="related-links"></a>Linki pokrewne
 

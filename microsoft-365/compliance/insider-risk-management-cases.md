@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d37a47a3cb46214d098623edbf5f0b9bea4b242a
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: ab0eb6c9f7ecfbc51de4857d708f1fa34bd3f515
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "62996848"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313201"
 ---
 # <a name="insider-risk-management-cases"></a>Przypadki zarządzania ryzykiem w niejawnym programie testów
 
@@ -96,7 +96,7 @@ Karta **Omówienie sprawy zawiera** również sekcję **Alerty** , która zawier
 
 ### <a name="alerts"></a>Alerty
 
-Na **karcie Alerty** są podsumowywane bieżące alerty, które zostały uwzględnione w przypadku tej sprawy. Nowe alerty mogą zostać dodane do istniejącej sprawy i podczas ich przypisywania będą dodawane do **kolejki alertów** . W kolejce są wymienione następujące atrybuty alertu:
+Na **karcie Alerty** są podsumowywane bieżące alerty, które zostały uwzględnione w przypadku tej sprawy. Nowe alerty mogą zostać dodane do istniejącej sprawy i podczas ich przypisywania będą dodawane do kolejki **alertów** . W kolejce są wymienione następujące atrybuty alertu:
 
 - Stan
 - Ważność
@@ -119,36 +119,13 @@ Filtruj alerty według kilku atrybutów, takich jak:
 
 ### <a name="user-activity"></a>Aktywność użytkowników
 
-Karta **Aktywność użytkowników** jest jednym z najbardziej zaawansowanych narzędzi do wewnętrznej analizy ryzyka i analizy spraw w rozwiązaniu do zarządzania ryzykiem w niejawnym programie testów. Ta karta ma strukturę, która umożliwia szybki przegląd sprawy, w tym historycznej osi czasu wszystkich alertów, szczegółów alertów, bieżącego wyniku ryzyka dla użytkownika w przypadku sprawy, sekwencji zdarzeń ryzyka i kontrolek w celu podjęcia skutecznych działań w celu zabezpieczenia ryzyka w tym przypadku.
-
-![Aktywność użytkowników w zakresie zarządzania ryzykiem w niejawnym programie testów.](../media/insider-risk-user-activities.png)
-
-1. **Filtry czasu**: Domyślnie alerty z ostatnich sześciu miesięcy potwierdzono w przypadku są wyświetlane na wykresie Aktywność użytkowników. Widok wykresu można łatwo filtrować, wybierając *karty 6* miesięcy, *3* miesięcy lub *1* miesiąca na wykresie bąbelkowy.
-2. **Aktywność i szczegóły alertów ryzyka**: Działania ryzyka są wyświetlane w wizualny sposób jako kolorowe bąbelki na wykresie Aktywność użytkownika. Bąbelki są tworzone dla różnych kategorii ryzyka, a rozmiar bąbelków jest proporcjonalny do liczby działań ryzyka dla danej kategorii. Wybierz bąbelek, aby wyświetlić szczegółowe informacje dotyczące poszczególnych działań ryzyka. Szczegóły są następujące:
-    - **Data** działania ryzyka.
-    - Kategoria **działania ryzyka**. Mogą to być *na przykład wiadomości e-mail* z załącznikami wysyłanymi spoza organizacji lub pliki pobrane *z usługi SharePoint online*.
-    - **Ocena ryzyka** dla alertu. Ten wynik jest wynikiem liczbowym poziomu zagrożenia zagrożenia.
-    - Liczba zdarzeń skojarzonych z alertem. Dostępne są również linki do wszystkich plików i wiadomości e-mail związanych z aktywnością związaną z ryzykiem.
-3. **Sekwencja ryzyka (wersja zapoznawcza)**: Chronologiczna kolejność działań ryzykownych jest ważnym aspektem analizy ryzyka i identyfikowania tych powiązanych działań jest ważną częścią oceny ogólnego ryzyka dla organizacji. Powiązane działania alertów są wyświetlane z liniami łączącymi w celu wyróżnienia, że te działania są skojarzone z większym obszarem ryzyka. Ten widok działań może ułatwić schłodne "łączenie kropek" w przypadku działań ryzyka, które mogły być przeglądane jako odizolowane lub zdarzenia typu one -off. Wybierz dowolny bąbelek w sekwencji, aby wyświetlić szczegółowe informacje dotyczące wszystkich skojarzonych działań ryzyka. Szczegóły są następujące:
-
-    - **Nazwa** sekwencji.
-    - **Data** lub **zakres dat** sekwencji.
-    - **Wynik ryzyka** dla sekwencji. Ten wynik jest wynikiem liczbowy sekwencji połączonych poziomów zagrożenia zagrożenia dla każdego pokrewnego działania w sekwencji.
-    - **Liczba zdarzeń skojarzonych z każdym alertem w sekwencji**. Dostępne są również linki do każdego pliku lub wiadomości e-mail skojarzonego z każdym działaniem ryzyka.
-    - **Pokazywanie działań w sekwencji**. Wyświetla sekwencję jako linię wyróżnienia na wykresie bąbelkowy i rozszerza szczegóły alertu, aby wyświetlić wszystkie powiązane alerty w sekwencji.
-
-4. **Legenda aktywności ryzyka**: u dołu wykresu aktywności użytkowników legenda kodowana kolorami ułatwia szybkie ustalenie kategorii ryzyka dla każdego alertu.
-5. **Chronologia** aktywności ryzyka: zostanie wymieniona pełna chronologia wszystkich alertów ryzyka związanych ze sprawą, łącznie ze wszystkimi szczegółami dostępnymi w odpowiednim bąbelku alertów.
-6. **Akcje dotyczące** sprawy: Opcje dotyczące rozwiązywania problemu znajdują się na pasku narzędzi akcji sprawy. Możesz rozwiązać sprawę, wysłać do użytkownika powiadomienie e-mail lub eskalować sprawę dla danych lub badania użytkownika.
+Karta **Aktywność użytkownika umożliwia** analitykom ryzyka i skojarzeńom możliwość przeglądania szczegółów aktywności oraz wizualnej reprezentacji wszystkich działań skojarzonych z alertami i sprawami o ryzyku. Na przykład w ramach procesu sprawdzania alertów analitycy mogą potrzebować przejrzenia wszystkich działań ryzyka związanych ze sprawą, aby uzyskać więcej szczegółowych informacji. W takich przypadkach skuchacze ryzyka mogą przeglądać szczegóły aktywności użytkowników i wykres bąbelkowy, aby ułatwić zrozumienie ogólnego zakresu działań związanych ze sprawą. Aby uzyskać więcej informacji na temat wykresu aktywności użytkowników, zobacz artykuł Działania związane z [zarządzaniem ryzykiem w niejawnym programie](insider-risk-management-activities.md#user-activity) testów.
 
 ### <a name="activity-explorer-preview"></a>Eksplorator aktywności (wersja zapoznawcza)
 
-> [!IMPORTANT]
-> Karta Eksplorator aktywności jest dostępna w obszarze zarządzania sprawą dla użytkowników wyzwalających zdarzenia po tym, jak ta funkcja jest dostępna w Twojej organizacji.
-
 Karta **Eksplorator aktywności** umożliwia analitykom ryzyka i chętnikom przeglądanie szczegółów aktywności skojarzonych z alertami ryzyka. Na przykład w ramach działań zarządzania sprawą słoje i analitycy mogą wymagać przejrzenia wszystkich działań ryzyka związanych ze sprawą, aby uzyskać więcej szczegółowych informacji. Za pomocą **Eksploratora aktywności** recenzentzy mogą szybko przeglądać oś czasu wykrytych ryzykownych działań oraz identyfikować i filtrować wszystkie działania ryzyka skojarzone z alertami.
 
-Aby uzyskać więcej informacji na temat Eksploratora aktywności, zobacz artykuł Alerty o zarządzaniu [ryzykiem w niejawnym programie](insider-risk-management-activities.md#activity-explorer) testów.
+Aby uzyskać więcej informacji na temat Eksploratora aktywności, zobacz artykuł Działania związane z [zarządzaniem ryzykiem w ramach niejawnego programu testów](insider-risk-management-activities.md#activity-explorer) .
 
 ### <a name="content-explorer"></a>Eksplorator zawartości
 

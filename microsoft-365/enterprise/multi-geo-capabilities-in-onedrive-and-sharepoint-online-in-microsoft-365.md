@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: admindeeplinkSPO
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
@@ -18,12 +18,12 @@ ms.collection:
 ms.localizationpriority: medium
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Rozszerz swoją Microsoft 365 o wiele regionów geograficznych dzięki możliwości multilokalizacji w u OneDrive Online.
-ms.openlocfilehash: 52bdbeddec29879e5f985dd1dff64db0d04b8072
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 778efca6035dad05ec9bc77298b888e50f381ca1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985083"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330037"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Funkcje multi-Geo Capabilities OneDrive i SharePoint Online
 
@@ -39,7 +39,7 @@ Ustawienia administracyjne poszczególnych OneDrive w lokalizacjach satelitarnyc
 
 ## <a name="sharepoint-sites-and-groups"></a>SharePoint witryny i grupy
 
-Zarządzanie funkcją multi-Geo jest dostępne za pośrednictwem centrum SharePoint administracyjnego. Szczegółowe informacje można znaleźć w odpowiednim [wpisie w blogu](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).
+Zarządzanie funkcją multi-Geo jest dostępne za pośrednictwem <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centrum SharePoint administracyjnego</a>. Szczegółowe informacje można znaleźć w odpowiednim [wpisie w blogu](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).
 
 Gdy użytkownik tworzy witrynę połączoną SharePoint w środowisku wielolokalowym, jego plik PDL jest używany do określenia lokalizacji geograficznej, w której witryna i skojarzona z nią skrzynka pocztowa grupy są tworzone. Jeśli wartość PDL użytkownika nie została ustawiona lub ustawiono lokalizację geograficzną, która nie została skonfigurowana jako lokalizacja satelitarna, witryna i skrzynka pocztowa są tworzone w lokalizacji centralnej.
 
@@ -47,7 +47,7 @@ Microsoft 365 inne niż Exchange, OneDrive, SharePoint i Teams nie są wielowymi
 
 ## <a name="managing-the-multi-geo-environment"></a>Zarządzanie środowiskiem wielolokalowym
 
-Konfigurowanie środowiska wielolokalowego i zarządzanie nimi odbywa się za pośrednictwem SharePoint administracyjnego. 
+Konfigurowanie środowiska wielolokalowego i zarządzanie nimi odbywa się za pośrednictwem <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint administracyjnego</a>. 
 
 ![Zrzut ekranu przedstawiający stronę lokalizacje geograficzne w centrum SharePoint administracyjnego.](../media/sharepoint-multi-geo-admin-center.png)
 

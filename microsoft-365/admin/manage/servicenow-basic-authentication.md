@@ -2,8 +2,8 @@
 title: Konfigurowanie integracji pomocy technicznej z usługą ServiceNow — uwierzytelnianie podstawowe
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Przewodnik po instalacji i konfiguracji certyfikowanej dla programu ServiceNow z zakresem.
-ms.openlocfilehash: cf9b5149847b51d9d701a49e32624ada3f708a17
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 23fab410b17cea9635c63b0ed0e4225d158dfdc8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009829"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323853"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>Konfigurowanie integracji pomocy technicznej z usługą ServiceNow — uwierzytelnianie podstawowe
 
@@ -201,6 +201,16 @@ Te kroki są wymagane do skonfigurowania integracji między wystąpieniem Servic
     Aplikacja Microsoft 365 będzie wykonywać testy w celu zapewnienia działania integracji. Jeśli występuje problem z konfiguracją, zostanie wyświetlony komunikat o błędzie z wyjaśnieniem, co należy naprawić. W przeciwnym razie aplikacja jest gotowa.
      :::image type="content" source="../../media/ServiceNow-guide/snowbasic-9.png" lightbox="../../media/ServiceNow-guide/snowbasic-9.png" alt-text="Graficzny interfejs użytkownika, tekst, aplikacja, opis e-mail wygenerowany automatycznie":::
 
+1. \[Administrator ServiceNow Włącz\] integrację pomocy technicznej firmy Microsoft dla istniejącego użytkownika.
+
+    Microsoft 365 jest włączona integracja z pomocą techniczną dla użytkownika z jedną z tych ról:
+
+    - xmiomsm365assis.insightsuser\_\_\_\_
+
+    - xmiomsm365assis.administrator\_\_\_
+
 1. \[OPCJONALNIE\] [Użytkownik z rolą x_mioms_m365_assis.administrator] Połącz Administracja Microsoft 365 konto.
+
     Jeśli jakiś użytkownik ma rolę x_mioms_m365_assis.administrator i do zarządzania sprawą techniczną w programie Microsoft 365 Microsoft 365 używa różnych kont, musi przejść do pomocy technicznej usługi Microsoft 365 > Link Account, aby skonfigurować swój adres e-mail Microsoft 365 administratora.
+    
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Graficzny interfejs użytkownika, tekst, opis aplikacji wygenerowany automatycznie":::

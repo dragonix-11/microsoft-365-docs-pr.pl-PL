@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 5ca23f61b2843f582ed704b69f702559afdeeffa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 180599007a47fe9cfa9ae68d6647f7494dd2f410
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986440"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314269"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Zautomatyzowane badanie i reagowanie w Microsoft 365 Defender
 

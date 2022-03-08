@@ -19,12 +19,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 071fd765542c9906d4f4e5335c12617c7ea45e28
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: fc236ea646e9da487c5e2e1178ddf9ca460cb4ae
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "62996838"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325141"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Badanie i rozwiązywanie problemów z alertami zgodności komunikacji
 
@@ -128,7 +128,6 @@ Po przejrzeniu podstaw wiadomości należy otworzyć wiadomość, aby zbadać sz
 - **Załączniki**: Ta opcja umożliwia badanie nowoczesnych załączników, które są zgodne z warunkami zasad. Zawartość nowoczesnych załączników jest wyodrębniona jako tekst i można jej wyświetlać na pulpicie nawigacyjnym Alerty oczekujące dla zasad. Aby uzyskać więcej informacji, zobacz [Informacje dotyczące funkcji zgodności komunikacji](/microsoft-365/compliance/communication-compliance-channels).
 - **Źródło**: ten widok to standardowy widok wiadomości często spotykany na większości platform do obsługi wiadomości internetowych. Informacje nagłówka są formatowane w normalnym stylu, a treść wiadomości obsługujembeddowane pliki graficzne i tekst zawijany wyrazem. Jeśli dla zasad jest włączone optyczne rozpoznawanie znaków [(OCR](communication-compliance-policies.md#optical-character-recognition-ocr) ), w tym widoku obrazy zawierające drukowany lub pisany ręcznie tekst, które są zgodne z zasadami, są przeglądane jako element podrzędny skojarzonej wiadomości.
 - **Zwykły tekst**: W widoku tekstu wyświetlany jest tylko tekstowy widok z wierszami wiadomości, a także wyróżnienia słów kluczowych w wiadomościach i załącznikach w przypadku terminów dotyczących typów informacji poufnych lub słów kluczowych zgodnych ze skojarzonymi zasadami zgodności komunikacji. Wyróżnianie słów kluczowych może ułatwić szybkie szybkie skanowanie długich wiadomości i załączników w poszukiwaniu interesującego obszaru. W niektórych przypadkach wyróżniony tekst może być tylko w załącznikach do wiadomości spełniających warunki zasad. Wyróżnianie słów kluczowych nie jest obsługiwane w przypadku terminów zidentyfikowanych przez wbudowane klasyfikatory przypisane do zasad. Osadzone pliki nie są wyświetlane, a numerowanie wiersza w tym widoku jest pomocne w przypadku odwoływania się do istotnych informacji między wieloma recenzentami.
-- **Dodawanie adnotacji**: ten widok umożliwia recenzentom dodawanie adnotacji bezpośrednio w wiadomości zapisanej w widoku wiadomości. Jeśli dla zasad jest włączona funkcja [OCR](communication-compliance-policies.md#optical-character-recognition-ocr) , obrazy zawierające wydrukowany lub odręczny tekst, które są zgodne z zasadami, są w tym widoku przeglądane jako element podrzędny skojarzonej wiadomości i mogą być oznaczone adnotacją.
 - **Konwersacja (wersja zapoznawcza)**: Dostępny w Microsoft Teams wiadomościach czatu, w tym widoku jest wyświetlanych maksymalnie pięć wiadomości przed i po komunikacie alertu, aby ułatwić recenzentom przeglądanie aktywności w kontekście konwersacji. Ułatwia to recenzentom szybkie ocenianie wiadomości i podejmowanie bardziej świadomych decyzji dotyczących rozwiązywania problemów z wiadomościami. Wyświetlane są w czasie rzeczywistym dodatki do konwersacji, w tym wszystkie obrazy w tekście, emoji i naklejki dostępne w Teams. Obraz lub plik tekstowy załączników do wiadomości nie są wyświetlane. Powiadomienia są automatycznie wyświetlane w przypadku edytowanych wiadomości lub wiadomości usuniętych z okna konwersacji. Gdy wiadomość zostanie rozpoznana, skojarzone z nią wiadomości konwersacji nie są zachowywane wraz z nią. Wiadomości konwersacji są dostępne w ciągu 60 dni od zidentyfikowania komunikatu alertu.
 - **Historia użytkowników: W** widoku historii użytkowników są wyświetlane wszystkie inne alerty wygenerowane przez wszelkie zasady zgodności komunikacji dla użytkownika wysyłającego wiadomość.
 - **Powiadomienie wykryte w deseniu**: Wiele napastnych i nękających akcji z czasem i obejmuje powtarzające się wystąpienia tego samego zachowania przez użytkownika. Powiadomienie *wykryte deseń* jest wyświetlane w szczegółach alertu i zwraca uwagę na alert. Wykrywanie wzorców jest wykrywania wzorców na podstawie zasad i ocenia zachowanie z ostatnich 30 dni, gdy nadawca wysyła do tego samego adresata co najmniej dwie wiadomości. Wschowa i recenzentzy mogą używać tego powiadomienia do identyfikowania powtarzających się zachowań w celu oceny alertu w razie potrzeby.

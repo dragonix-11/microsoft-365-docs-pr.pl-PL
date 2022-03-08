@@ -18,14 +18,16 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
 description: Dowiedz się, jak uruchomić skrypt dodawania skrzynek pocztowych & OneDrive dla Firm witryn do nowego miejsca przechowywania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.
-ms.openlocfilehash: c2b73fdb665acde92676270f0a32918a6072eb5c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fd11ccb6c262cd0e31a65d2a1f95d5dbcd92869c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62977616"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314563"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Dodawanie użytkowników do sprawy zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
 
@@ -83,7 +85,7 @@ Po uruchomieniu skryptu w tym kroku zostanie wyświetlony monit o następujące 
   
 - **Poświadczenia użytkownika:** Skrypt użyje Twoich poświadczeń do nawiązania połączenia z Centrum zabezpieczeń & zgodności za pomocą programu PowerShell. Ponadto użyje tych poświadczeń w celu uzyskania dostępu SharePoint Online w celu uzyskania dostępu do OneDrive dla Firm URL listy użytkowników.
 
-- **Nazwa domeny SharePoint:** Skrypt wyświetli monit o wprowadzenie tej nazwy, aby można było połączyć się z centrum SharePoint administracyjnego. Ponadto używa nazwy domeny dla OneDrive URL w organizacji. Jeśli na przykład adres URL `https://contoso-admin.sharepoint.com` Twojego centrum administracyjnego to , a adres URL `https://contoso-my.sharepoint.com`OneDrive to , `contoso` wprowadź go, gdy skrypt wyświetli monit o podanie nazwy domeny.
+- **Nazwa domeny SharePoint:** Skrypt wyświetli monit o wprowadzenie tej nazwy, aby można było połączyć się z centrum SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">administracyjnego</a>. Ponadto używa nazwy domeny dla OneDrive URL w organizacji. Jeśli na przykład adres URL `https://contoso-admin.sharepoint.com` Twojego centrum administracyjnego to , a adres URL `https://contoso-my.sharepoint.com`OneDrive to , `contoso` wprowadź go, gdy skrypt wyświetli monit o podanie nazwy domeny.
 
 - **Nazwa sprawy:** Nazwa istniejącej sprawy. Skrypt utworzy nowe hold, które jest skojarzone z tą sprawą.
 

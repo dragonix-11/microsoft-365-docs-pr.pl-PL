@@ -2,13 +2,13 @@
 title: Połączenie rekordy DNS w witrynie web.com Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e Skype dla firm online i innych usług w witrynie web.com firmy Microsoft.
-ms.openlocfilehash: 840fcca6534f4076eed43f62af3574238aa21211
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 88b5bbae321c25520732b9f2b903a9f29fd91a35
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989675"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313513"
 ---
 # <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Połączenie rekordy DNS w witrynie web.com Microsoft 365
 

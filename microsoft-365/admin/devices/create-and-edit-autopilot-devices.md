@@ -27,14 +27,17 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Dowiedz się, jak przekazywać urządzenia za pomocą rozwiązania AutoPilot w programie Microsoft 365 Business Premium. Profil można przypisać do urządzenia lub grupy urządzeń.
-ms.openlocfilehash: 96034ca50da114adca60169ae29da5948793b498
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 784db256bb5dae16739722566b6f7a9c8511a678
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984090"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313891"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Tworzenie i edytowanie urządzeń rozwiązania AutoPilot
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 ## <a name="upload-a-list-of-devices"></a>Przekazywanie listy urządzeń
 
@@ -63,3 +66,7 @@ Urządzenia muszą spełniać następujące wymagania:
 2. W panelu **Urządzenie** wybierz profil z listy rozwijanej **Przypisany profil**. 
     
     Jeśli nie masz jeszcze żadnych profilów, odpowiednie instrukcje znajdziesz w temacie [Tworzenie i edytowanie profilów rozwiązania AutoPilot](create-and-edit-autopilot-profiles.md). 
+
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

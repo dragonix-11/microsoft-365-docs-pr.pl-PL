@@ -7,16 +7,16 @@ metadata:
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: landing-page
-  author: pebaum
-  ms.author: pebaum
-  ms.date: 02/04/2022
+  author: efrene
+  ms.author: efrene
+  ms.date: 02/25/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 6625b8f8b8afd32488069a65147362c83728a327
-  ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+  ms.openlocfilehash: daa4b3f2892a27229404dd61a836792a4b35eef5
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 02/15/2022
-  ms.locfileid: "63014761"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63315865"
 landingContent:
 - title: Wprowadzenie
   linkLists:
@@ -128,7 +128,7 @@ landingContent:
     links:
     - text: Omówienie zabezpieczeń Microsoft 365 Business Premium zabezpieczeń
       url: security-and-compliance/secure-your-business-data.md
-    - text: (NOWOŚĆ!) Microsoft Defender for Business (preview)
+    - text: (NOWOŚĆ!) Microsoft Defender for Business
       url: /microsoft-365/security/defender-business/index.yml
     - text: Zabezpieczanie kont pracowników za pomocą uwierzytelniania wieloskładnikowego
       url: security-and-compliance/set-up-multi-factor-authentication.md

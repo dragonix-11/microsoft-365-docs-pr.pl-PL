@@ -2,8 +2,8 @@
 title: Informacje o numerach rejestracji i w obszarze powiadomień o recenzji
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,17 +15,17 @@ ms.collection:
 - Adm_O365
 search.appverid: MET150
 ms.custom:
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 description: Dowiedz się więcej na temat numerów rejestracji i powiadomień w trakcie przeglądania podczas zakupu produktów lub usług firmy Microsoft.
 ms.date: 02/02/2022
-ms.openlocfilehash: 87f4b51492a5269dab0fd20ee28608e5dc419863
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 1f8efbbacfcccf6e6a654d150fa77ecef6dc7234
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62973818"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320205"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Informacje o numerach rejestracji i w obszarze powiadomień o recenzji
 

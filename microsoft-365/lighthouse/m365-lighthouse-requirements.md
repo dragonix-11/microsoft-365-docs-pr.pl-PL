@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych (MSP) uzyskaj listę wymagań dotyczących Microsoft 365 Lighthouse.
-ms.openlocfilehash: 8a502e056d570ef81e1bdb02321f0492c2b50395
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 51dd2404f03dc58d5975a37c386ba9c8f1333763
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62998762"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327255"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Wymagania dotyczące Microsoft 365 Lighthouse
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów, którzy spełniają wymagania wymienione w tym artykule. Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse to portal administracyjny, który ułatwia zarządzanym dostawcom usług (MSP) zabezpieczanie urządzeń, danych i użytkowników oraz zarządzanie nimi w skali dla klientów małych i średnich firm.  
 
@@ -34,13 +31,13 @@ Aby korzystać z usługi Lighthouse, msP muszą być zarejestrowani w programie 
 
 Ponadto każda dzierżawa klienta programu MSP musi zakwalifikować się do usługi Lighthouse, spełniając następujące wymagania: 
  
-- Uprawnienia administratora delegowanego (DAP) dla programu MSP 
+- Uprawnienia administratora delegowanego (DAP, Delegated Admin Privileges) lub Szczegółowe uprawnienia administratora delegowanego (GDAP) dla programu MSP 
 - Co najmniej jedna Microsoft 365 Business Premium lub Microsoft 365 E3 licencji 
-- Mniej niż 500 licencjonowanych użytkowników  
+- Mniej niż 1000 licencjonowanych użytkowników  
 
-## <a name="requirements-for-enablingdevice-management"></a>Wymagania dotyczące włączania zarządzania urządzeniami   
+## <a name="requirements-for-enablingdevice-management"></a>Wymagania dotyczące włączania zarządzania urządzeniami
 
-Aby wyświetlić urządzenia dzierżawy klienta na stronach zarządzania urządzeniami, program zarządzania urządzeniami musi:    
+Aby wyświetlić urządzenia dzierżawy klienta na stronach zarządzania urządzeniami, program MSP musi:
 
 - Zarejestruj wszystkie urządzenia klienta w Microsoft Endpoint Manager (MEM).Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzeń w u Microsoft Intune](/mem/intune/enrollment/).
 - Przypisz zasady zgodności do wszystkich urządzeń klientów.Aby uzyskać więcej informacji, [zobacz Tworzenie zasad zgodności w programie Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
@@ -60,7 +57,7 @@ Program antywirusowy Microsoft Defender stanowi część systemu Windows i jest 
 > [!NOTE] 
 > Jeśli korzystasz z rozwiązania antywirusowego firmy innym niż Microsoft i nie Program antywirusowy Microsoft Defender, Program antywirusowy Microsoft Defender zostanie automatycznie wyłączona. Po odinstalowaniu rozwiązania antywirusowego, które nie jest Program antywirusowy Microsoft Defender firmy Microsoft, zostanie automatycznie aktywowane w celu ochrony twoich Windows przed zagrożeniami.    
 
-## <a name="related-content"></a>Zawartość pokrewna   
+## <a name="related-content"></a>Zawartość pokrewna
 
 [Konfigurowanie Microsoft 365 Lighthouse zabezpieczeń portalu](m365-lighthouse-configure-portal-security.md) (artykuł)\
 [Microsoft 365 Lighthouse strona zgodności urządzenia](m365-lighthouse-device-compliance-page-overview.md) (artykuł)\

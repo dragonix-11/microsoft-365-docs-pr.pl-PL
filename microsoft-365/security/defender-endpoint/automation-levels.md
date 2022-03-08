@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.date: 10/22/2020
 ms.localizationpriority: medium
 manager: dansimp
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: f4baefadc2fe08b7fe909a135228278c8a696f14
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: e440675a46a4340e2f659b23a31b19dbab33d2c0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63013312"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328165"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Poziomy automatyzacji w możliwościach automatycznego badania i rozwiązywania problemów
 

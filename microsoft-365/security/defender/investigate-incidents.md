@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 1dd603ae4f9f694b3b17794a71d1d5cc44800584
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 0bab6d8aa8aaef29b67ed8460f2d48e65cd24aa1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013263"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314325"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Badanie zdarzeń w Microsoft 365 Defender
 
@@ -82,7 +82,7 @@ Na karcie **Alerty** możesz wyświetlić kolejkę alertów dla alertów dotycz�
 
 - Ważność.
 - Jednostki, które uczestniczyły w alercie.
-- Źródło alertów (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Defender for Cloud Apps i Zarządzanie aplikacjami).
+- Źródło alertów (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Defender for Cloud Apps i dodatek do zarządzania aplikacjami).
 - Powód, dla którego łączyli się ze sobą.
 
 Oto przykład.
@@ -119,14 +119,14 @@ Karta **Urządzenia** zawiera listę wszystkich urządzeń związanych z zdarzen
 
 :::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Przykład strony Urządzenia dla zdarzenia." lightbox="../../media/investigate-incidents/incident-devices.png":::
 
-Możesz zaznaczyć znacznik wyboru dla urządzenia, aby wyświetlić szczegółowe informacje o urządzeniu, dane katalogu, aktywne alerty i zalogowani użytkownicy. Wybierz nazwę urządzenia, aby wyświetlić szczegóły dotyczące urządzenia w spisie urządzeń programu Microsoft Defender for Endpoint. Oto przykład.
+Możesz zaznaczyć znacznik wyboru dla urządzenia, aby wyświetlić szczegółowe informacje o urządzeniu, dane katalogu, aktywne alerty i zalogowani użytkownicy. Wybierz nazwę urządzenia, aby wyświetlić szczegóły dotyczące urządzenia w spisie urządzeń programu Defender for Endpoint. Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Przykład strony urządzeń dla programu Microsoft Defender for Endpoint." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Przykład strony urządzeń dla usługi Defender for Endpoint." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 Na stronie urządzenia możesz zebrać dodatkowe informacje o urządzeniu, takie jak wszystkie związane z nim alerty, oś czasu i zalecenia dotyczące zabezpieczeń. Na przykład na karcie Oś  czasu możesz przewijać maszynną oś czasu i wyświetlać wszystkie zdarzenia i zachowania obserwowane na komputerze w kolejności chronologicznej z podniesionym alertami.
 
 > [!TIP]
-> Możesz wykonać skanowanie na żądanie na stronie urządzenia. W portalu Microsoft 365 Defender wybierz pozycję **Punkty końcowe > spis urządzeń**. Wybierz urządzenie z alertami, a następnie uruchom skanowanie antywirusowe. Akcje, takie jak skany antywirusowe, są śledzone i są widoczne na **stronie spisu** urządzeń. Aby dowiedzieć się więcej, zobacz [Uruchamianie skanowania Program antywirusowy Microsoft Defender na urządzeniach](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+> Możesz wykonać skanowanie na żądanie na stronie urządzenia. W portalu Microsoft 365 Defender wybierz pozycję **Punkty końcowe > spis urządzeń**. Wybierz urządzenie z alertami, a następnie uruchom skanowanie antywirusowe. Akcje, takie jak skany antywirusowe, są śledzone i są widoczne na **stronie spisu** urządzeń. Aby dowiedzieć się więcej, zobacz [Uruchamianie skanowania antywirusowego programu Defender na urządzeniach](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## <a name="users"></a>Użytkownicy
 
@@ -145,11 +145,11 @@ Karta **Skrzynki** pocztowe zawiera listę wszystkich skrzynek pocztowych, któr
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Przykład strony Skrzynki pocztowe dla zdarzenia." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-Możesz zaznaczyć znacznik wyboru skrzynki pocztowej, aby wyświetlić listę aktywnych alertów. Wybierz nazwę skrzynki pocztowej, aby wyświetlić dodatkowe szczegóły skrzynki pocztowej na stronie Eksploratora dla programu Microsoft Defender dla Office 365.
+Możesz zaznaczyć znacznik wyboru skrzynki pocztowej, aby wyświetlić listę aktywnych alertów. Wybierz nazwę skrzynki pocztowej, aby wyświetlić dodatkowe szczegóły skrzynki pocztowej na stronie Eksploratora dla usługi Defender dla Office 365.
 
 ## <a name="investigations"></a>Badania
 
-Karta **Badania zawiera** listę [wszystkich zautomatyzowanych](m365d-autoir.md) badań wyzwalanych przez alerty dotyczące tego zdarzenia. Automatyczne badania będą wykonywać akcje naprawcze lub poczekać na zatwierdzenie akcji przez analityków w zależności od tego, jak skonfigurowano automatyczne badania do uruchamiania w programie Microsoft Defender dla endpoint i Defender dla systemu Office 365.
+Karta **Badania zawiera** listę [wszystkich zautomatyzowanych](m365d-autoir.md) badań wyzwalanych przez alerty dotyczące tego zdarzenia. Automatyczne badania będą wykonywać akcje naprawcze lub zaczekaj na zatwierdzenie akcji przez analityków w zależności od tego, jak skonfigurowano automatyczne badania do uruchamiania w usługach Defender for Endpoint i Defender for Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Przykład strony Badania zdarzenia." lightbox="../../media/investigate-incidents/incident-investigations.png":::
 

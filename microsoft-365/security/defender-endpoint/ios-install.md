@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a2e17e5b7a2a5a5a7abed9c7f2a3f42c0cf63b37
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 7045ff8931def0f7aef2c1ac40ea76ec839c7ad0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "63010434"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312668"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie iOS
 
@@ -164,6 +164,8 @@ Ten krok upraszcza proces dołączania przez skonfigurowanie profilu VPN. Aby uz
 > [!IMPORTANT]
 > Niektóre informacje odnoszą się do wstępnie wypuszczonych produktów, które mogą zostać znacząco zmodyfikowane przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
+> [!NOTE]
+> Na urządzeniach z systemem iOS, które zostały zarejestrowane bez chętnych użytkowników (urządzeń o mniejszej obsługi lub urządzeń współużytkonych), nie można skonfigurować obsługi zerowej obsługi dotykowej.
 
 Administratorzy mogą skonfigurować usługę Microsoft Defender for Endpoint w celu dyskretnego wdrażania i aktywowania. W tym przepływie administrator tworzy profil wdrożenia, a użytkownik jest po prostu powiadamiany o instalacji. Program Defender for Endpoint jest instalowany automatycznie bez konieczności otwierania aplikacji przez użytkownika. Wykonaj poniższe czynności, aby skonfigurować zerowe dotykowe lub dyskretne wdrażanie usługi Defender dla punktu końcowego na zarejestrowanych urządzeniach z systemem iOS:
 

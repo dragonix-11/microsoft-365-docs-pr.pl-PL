@@ -16,16 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Dowiedz się więcej Microsoft 365 czynnościach konfiguracyjnych niezbędnych do skonfigurowania zespołu do współpracy nad zadaniami, konwersacjami i dokumentacją z gośćmi w Teams.
-ms.openlocfilehash: 4128f6cd5293972dd7383eed0802f7969f488d8a
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "62990528"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324553"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Współpraca z gośćmi w zespole
 
@@ -110,10 +111,10 @@ Jeśli chcesz zezwolić na udostępnianie plików i folderów osobom bez uwierzy
 
 Aby skonfigurować SharePoint udostępniania na poziomie organizacji
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">okienku centrum administracyjne platformy Microsoft 365</a> nawigacji po lewej stronie w obszarze **Centra** administracyjne **kliknij pozycję SharePoint**.
-2. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję **Zasady**, a następnie kliknij pozycję **Udostępnianie**.
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365 nawigacji</a> w lewym okienku nawigacji w obszarze **Centra** administracyjne **wybierz pozycję SharePoint**.
+2. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję **Zasady**, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
 3. Upewnij się, że dla udostępniania SharePoint **jest ustawiona** wartość Każdy lub **Nowy i istniejący goście**.
-4. Jeśli zostały wprowadzone zmiany, kliknij przycisk **Zapisz**.
+4. Jeśli zostały wprowadzone zmiany, wybierz pozycję **Zapisz**.
 
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint domyślnych ustawień linku na poziomie organizacji
@@ -133,9 +134,9 @@ Wybierz dowolny z następujących typów linków, które będą domyślnie wybie
 
 Aby skonfigurować SharePoint domyślnych ustawień linku na poziomie organizacji
 
-1. Przejdź do strony Udostępnianie w centrum SharePoint administracyjnego.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**pozycji Udostępnianie**</a> w SharePoint administracyjnego.
 2. W **obszarze Linki do plików i folderów** wybierz domyślny link udostępniania, którego chcesz użyć.
-3. Jeśli zostały wprowadzone zmiany, kliknij przycisk **Zapisz**.
+3. Jeśli zostały wprowadzone zmiany, wybierz pozycję **Zapisz**.
 
 ## <a name="create-a-team"></a>Tworzenie zespołu
 
@@ -158,11 +159,11 @@ Sprawdź ustawienia udostępniania na poziomie witryny, aby upewnić się, że z
 ![Zrzut ekranu SharePoint ustawień udostępniania zewnętrznego witryny.](../media/sharepoint-site-external-sharing-settings.png)
 
 Aby skonfigurować ustawienia udostępniania na poziomie witryny
-1. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję Witryny **i kliknij pozycję** **Aktywne witryny**.
+1. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję Witryny **i wybierz pozycję** <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
 2. Wybierz witrynę dla właśnie utworzonego zespołu.
-3. Kliknij pozycję ... i wybierz **pozycję Udostępnianie**.
+3. Wybierz pozycję ... i wybierz **pozycję Udostępnianie**.
 4. Upewnij się, że udostępnianie jest ustawione na **Każdy** lub **Nowy i istniejący goście**.
-5. Jeśli zostały wprowadzone zmiany, kliknij przycisk **Zapisz**.
+5. Jeśli zostały wprowadzone zmiany, wybierz pozycję **Zapisz**.
 
 ## <a name="invite-users"></a>Zaproś użytkowników
 

@@ -8,9 +8,9 @@
           href: overview.md
         - name: Defender for Office 365
           href: defender-for-office-365.md
-        - name: Ochrona przed zagrożeniami krok po kroku w programie Defender dla użytkowników Office 365
+        - name: Ochrona przed zagrożeniami krok po kroku w programie Defender dla Office 365
           href: protection-stack-microsoft-defender-for-office365.md
-        - name: Ocenianie usługi Defender dla Office 365
+        - name: Szacowanie usługi Defender dla Office 365
           href: office-365-evaluation.md
         - name: Co nowego w programie Defender dla Office 365
           href: whats-new-in-defender-for-office-365.md
@@ -26,7 +26,7 @@
               href: quarantine-email-messages.md
         - name: 'Sejf załączników do SharePoint, OneDrive i Microsoft Teams'
           href: turn-on-mdo-for-spo-odb-and-teams.md
-        - name: omówienie Microsoft 365 Defender portalu
+        - name: omówienie Microsoft 365 Defender portalu Microsoft 365 Defender
           href: ../defender/microsoft-365-defender.md
         - name: Strona jednostki e-mail
           href: mdo-email-entity-page.md
@@ -58,8 +58,6 @@
           href: office-365-ti.md
         - name: Office 365 reagowania na incydenty dotyczące zabezpieczeń
           href: office365-security-incident-response-overview.md
-        - name: 'Wskazówki firmy Microsoft dotyczące zabezpieczeń kampanii politycznych, organizacji niedochodowych i innych organizacji Agile'
-          href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
     - name: Wdrażanie
       items:
         - name: Ochrona przed zagrożeniami
@@ -94,7 +92,7 @@
           href: configure-junk-email-settings-on-exo-mailboxes.md
         - name: Konfigurowanie filtrowania połączeń
           href: configure-the-connection-filter-policy.md
-        - name: Konfigurowanie ustawień globalnych dla linków Sejf Defender dla Office 365
+        - name: Konfigurowanie ustawień globalnych linków Sejf Defender dla Office 365
           href: configure-global-settings-for-safe-links.md
         - name: Konfigurowanie filtrowania spamu ruchu wychodzącego
           href: configure-the-outbound-spam-policy.md
@@ -106,9 +104,9 @@
           href: email-validation-and-authentication.md
         - name: Umożliwianie użytkownikom dostępu do Centrum & zgodności
           href: grant-access-to-the-security-and-compliance-center.md
-        - name: Sejf programu Defender dla Office 365
+        - name: Sejf usługi Defender dla Office 365
           href: safe-docs.md
-        - name: Konfigurowanie zasad Sejf w uchcie Defender dla Office 365
+        - name: Konfigurowanie zasad Sejf w programie Defender dla Office 365
           href: set-up-safe-links-policies.md
         - name: Konfigurowanie zasad Sejf załączników w programie Defender dla Office 365
           href: set-up-safe-attachments-policies.md
@@ -118,7 +116,7 @@
           href: user-submission.md
         - name: Tagi użytkowników w programie Defender dla Office 365
           href: user-tags.md
-        - name: 'Włączanie załączników Sejf załączników wiadomości SharePoint, OneDrive i Microsoft Teams'
+        - name: 'Włącz załączniki Sejf załączników wiadomości SharePoint, OneDrive i Microsoft Teams'
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Używanie funkcji DKIM do sprawdzania poprawności wychodzących wiadomości e-mail
           href: use-dkim-to-validate-outbound-email.md
@@ -130,9 +128,9 @@
           href: install-app-guard.md
     - name: Migrowanie
       items:
-        - name: Migrowanie z usługi lub urządzenia ochrony innej firmy do usługi Defender dla systemu Office 365
+        - name: Migrowanie z usługi ochrony innej firmy lub urządzenia do usługi Defender dla Office 365
           items:
-            - name: Migrowanie z usługi lub urządzenia ochrony innej firmy do usługi Defender dla systemu Office 365
+            - name: Migrowanie z usługi ochrony innej firmy lub urządzenia do usługi Defender dla Office 365
               href: migrate-to-defender-for-office-365.md
             - name: 'Etap 1. Migrowanie: Przygotowywanie'
               href: migrate-to-defender-for-office-365-prepare.md
@@ -164,13 +162,13 @@
               href: attack-simulation-training-payload-automations.md
             - name: Powiadomienia użytkownika końcowego dotyczące szkolenia symulacyjnego w zakresie ataków
               href: attack-simulation-traning-end-user-notifications.md
-            - name: Szczegółowe informacje i raportowanie w szkoleniu symezyjny ataków
+            - name: Szczegółowe informacje i raportowanie w szkoleniu symulacyjnych ataków
               href: attack-simulation-training-insights.md
             - name: Zagadnienia dotyczące wdrażania szkoleń w czasie ataków i często zadawane pytania
               href: attack-simulation-training-faq.md
         - name: Konfigurowanie dostarczania dla przykładów wyłudzania informacji i skrzynek pocztowych usługi SecOps
           href: configure-advanced-delivery.md
-        - name: Zalecane ustawienia dotyczące konfigurowania usług EOP i Defender na Office 365 Security
+        - name: Zalecane ustawienia dotyczące konfigurowania usług EOP i Defender dla usługi Office 365 Security
           href: recommended-settings-for-eop-and-office365.md
         - name: Integracja rozwiązania AIR z rozwiązaniem niestandardowym lub rozwiązaniem innej firmy
           href: air-custom-reporting.md
@@ -210,7 +208,7 @@
           href: threat-trackers.md
         - name: Zasady alertów
           href: ../../compliance/alert-policies.md
-        - name: Inteligentne raporty i szczegółowe informacje w Centrum & zabezpieczeń
+        - name: Inteligentne raporty i szczegółowe informacje w Centrum & zgodności
           href: reports-and-insights-in-security-and-compliance.md
         - name: Reguły przepływu poczty (reguły transportu)
           href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
@@ -240,7 +238,7 @@
               href: view-email-security-reports.md
             - name: Wyświetlanie programu Defender Office 365 raportów
               href: view-reports-for-mdo.md
-            - name: Wyświetlanie raportów przepływu poczty e-mail w Centrum & zgodności
+            - name: Wyświetlanie raportów przepływu poczty e-mail w centrum & zgodności
               href: view-mail-flow-reports.md
         - name: Szczegółowe informacje o przepływie poczty w Centrum & zgodności
           items:
@@ -288,15 +286,15 @@
       items:
         - name: Szybkie wykrywanie naruszonych kont użytkowników i ich adresów
           href: address-compromised-users-quickly.md
-        - name: Wykrywanie i korygowanie zgodzie niedozwolonych w programie Office 365
+        - name: Wykrywanie i rozwiązywanie problemów ze zgodą udzielaną w ramach Office 365
           href: detect-and-remediate-illicit-consent-grants.md
-        - name: Wykrywanie i rozwiązywanie problemów z Outlook i atakami po formularzach niestandardowych w formularzach niestandardowych w Office 365
+        - name: Wykrywanie i rozwiązywanie problemów Outlook i niestandardowych ataków na formularze niestandardowych formularzy w Office 365
           href: detect-and-remediate-outlook-rules-forms-attack.md
         - name: Obsługa wyników fałszywie dodatnich/ujemnych
           href: air-report-false-positives-negatives.md
         - name: Recenzja dla zgłoszonych wiadomości przez administratora
           href: admin-review-reported-message.md
-        - name: Odzyskiwanie po atakach oprogramowania wymuszającego okup
+        - name: Odzyskiwanie po ataku ransona
           href: recover-from-ransomware.md
         - name: Rozwiązywanie problemów ze złośliwymi wiadomościami e-mail
           href: remediate-malicious-email-delivered-office-365.md
@@ -312,6 +310,8 @@
           href: manage-quarantined-messages-and-files.md
         - name: Zasady kwarantanny
           href: quarantine-policies.md
+        - name: Zwalnianie wiadomości poddanych kwarantannie z udostępnionych skrzynek pocztowych
+          href: view-and-release-quarantined-messages-from-shared-mailboxes.md
         - name: Usuwanie zablokowanych użytkowników z portalu Użytkownicy z ograniczeniami
           href: removing-user-from-restricted-users-portal-after-spam.md
         - name: Usuwanie siebie z listy zablokowanych nadawców za pomocą portalu delist
@@ -338,9 +338,9 @@
           href: security-roadmap.md
         - name: Pomoc i obsługa techniczna dla programu EOP
           href: help-and-support-for-eop.md
-        - name: Rozwiązywanie problemów z pocztą wysłaną na Microsoft 365
+        - name: Rozwiązywanie problemów z wiadomościami wysyłanymi na Microsoft 365
           href: troubleshooting-mail-sent-to-office-365.md
-        - name: Jak Microsoft 365 SPF w celu zapobiegania spoofingowi
+        - name: Jak Microsoft 365 spf w celu zapobiegania fałszowania
           href: how-office-365-uses-spf-to-prevent-spoofing.md
         - name: Jak Office 365 poprawności adresu Od w celu uniknięcia wyłudzania informacji
           href: how-office-365-validates-the-from-address.md
@@ -362,7 +362,7 @@
           href: mail-flow-intelligence-in-office-365.md
         - name: 'Informacje:Zasady, wskazówki i wskazówki'
           href: reference-policies-practices-and-guidelines.md
-        - name: Wysyłanie wiadomości e-mail do Office 365
+        - name: Wysyłanie poczty do Office 365
           href: sending-mail-to-office-365.md
         - name: Usługi dla osób niebędących klientami
           href: services-for-non-customers.md

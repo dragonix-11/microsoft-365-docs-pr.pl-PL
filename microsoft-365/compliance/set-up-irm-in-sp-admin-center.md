@@ -17,13 +17,15 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Dowiedz się, jak używać usługi IRM SharePoint Online za pośrednictwem usług Microsoft Azure Active Directory zarządzania prawami dostępu (RMS) w celu ochrony SharePoint list i bibliotek dokumentów.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f40977e453b228eddc745a6d29e3f5d119276abe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
+ms.openlocfilehash: 8c0f60ad1a571ba13ba83e3e92c1b5aca6535bb1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985636"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311637"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -39,7 +41,7 @@ Po aktywowaniu usługi zarządzania prawami dostępu zaloguj się do centrum adm
     
 2. Wybierz ikonę Uruchamianie aplikacji ![Ikona Uruchamianie aplikacji w Office 365.](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) w lewym górnym rogu i wybierz pozycję **Administrator**, aby otworzyć centrum administracyjne platformy Microsoft 365. (Jeśli nie widzisz kafelka Administrator, nie masz uprawnień administratora w swojej organizacji). 
     
-3. W okienku po lewej stronie wybierz **pozycję Centra administracyjne** \> **SharePoint**.
+3. W okienku po lewej stronie wybierz pozycję **Centra** \> <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">administracyjne SharePoint centrum administracyjne.</a>
     
 4. W okienku po lewej stronie wybierz **pozycję ustawienia**, a następnie wybierz stronę **ustawień klasycznych**.
     

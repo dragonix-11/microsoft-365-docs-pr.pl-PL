@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 597d2b4dac5dde464688e545d8ccd1e39e33bee2
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 65056fc913b88ce0594c9a8b1a89bd2e92b221af
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016010"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326807"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Włącz usługę Enterprise State Roaming
 
@@ -34,6 +34,6 @@ Aby włączyć Enterprise roamingu stanowego, wykonaj czynności opisane [Enterp
 3. [Przypisywanie licencji](assign-licenses.md).
 4. [Wdrażanie Intune — Portal firmy](company-portal.md).
 5. Włącz Enterprise roamingu województwa (ten temat).
-6. [Konfigurowanie urządzeń](set-up-devices.md).
+6. [Przygotowywanie urządzeń](prepare-devices.md).
 7. [Przygotuj użytkowników do korzystania z urządzeń](get-started-devices.md).
 8. [Wdychuj aplikacje](deploy-apps.md).

@@ -24,16 +24,19 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Wyświetl zasady i akcje dotyczące urządzeń, logując się do usługi Microsoft 365 dla firm.
-ms.openlocfilehash: 95eb5c73c1d81cb9b5c803e58ea74243b22b13d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 55c4eb51164ece4bbb7f3092de25d3ff92f40737
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983803"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313583"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Wyświetlanie zasad i urządzeń i zarządzanie nimi
 
 Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 ## <a name="view-and-edit-device-policies"></a>Wyświetlanie i edytowanie zasad urządzenia
 
@@ -52,3 +55,6 @@ Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
   
    ![Strona Zarządzanie urządzeniami.](../../media/devicesmanage.png)
 
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b04cd69afbf2c7804d8d559e1343336abc792cdc
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 2979216cb87982210ac33dd8e273702f8bc18bf0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "63015428"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328095"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Wdowa Windows usługi Microsoft Defender dla punktu końcowego
 
@@ -57,6 +57,9 @@ Aby pomyślnie wdować się na serwerach, należy wykonać poniższe ogólne czy
 
 **Windows Server 2012 R2 i Windows Server 2016 (wersja Preview)**
 
+>[!IMPORTANT]
+> Aby korzystać z tej funkcji, musisz włączyć funkcje wersji Preview w sekcji Microsoft 365 Defender punkty końcowe. Przejdź do [Microsoft 365 Defender > Ustawienia > punktów końcowych > zaawansowanych i](https://security.microsoft.com/preferences2/integration) włącz funkcje wersji Preview.
+
 - Pobieranie pakietów instalacyjnych i pakietów dołączania
 - Stosowanie pakietu instalacyjnego
 - Postępuj zgodnie z instrukcjami dołączania dla odpowiedniego narzędzia
@@ -89,6 +92,14 @@ Nowy ujednolicony pakiet rozwiązań ułatwia pracę na serwerach przez usunięc
 - [Zautomatyzowane badania i odpowiedzi (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
 - [Ochrona przed naruszeniami](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
+W zależności od serwera, na którym jest wnoszony, ujednolicone rozwiązanie instaluje Program antywirusowy Microsoft Defender i/lub czujnik EDR rozwiązania. W poniższej tabeli przedstawiono, jaki składnik jest zainstalowany i co jest domyślnie wbudowane.
+
+|Wersja na serwerze|AV|EDR|
+|----|----|----|
+|Windows Server 2012 R2 z dodatkiem SP1|![Tak.](images/svg/check-yes.svg)|![Tak.](images/svg/check-yes.svg)|
+|System Windows Server 2016|Wbudowane|![Tak.](images/svg/check-yes.svg)|
+|Windows Server 2019 lub nowszy|Wbudowane|Wbudowane|
+
 Jeśli serwery były wcześniej wnoszone za pomocą usługi MMA, postępuj zgodnie ze wskazówkami w tece Migracja serwera, aby przeprowadzić migrację do nowego rozwiązania.[](server-migration.md)
 
 >[!NOTE]
@@ -98,8 +109,10 @@ Jeśli serwery były wcześniej wnoszone za pomocą usługi MMA, postępuj zgodn
 
 Następujące informacje szczegółowe dotyczą nowego pakietu rozwiązań ujednoliconych dla pakietów Windows Server 2012 R2 i 2016:
 
-- Upewnij się, że są spełnione wymagania dotyczące łączności określone w punkcie Umożliwianie dostępu do usługi Microsoft Defender dla adresów URL usługi punktu końcowego [na serwerze proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) . Są one równoważne tym, które są Windows Server 2019.
+- Upewnij się, że są spełnione wymagania dotyczące łączności określone w punkcie Umożliwianie dostępu do usługi Microsoft Defender dla adresów URL usługi punktu końcowego [na serwerze proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) . Są one równoważne tym, które są Windows Server 2019. 
+- Pracujemy nad badaniem problemu z łącznością serwera Windows Server 2012 R2 z chmurą, gdy jest używany statyczny serwer telemetryczny telemetryczny, a adresy URL odwołań certyfikatów (CRL) nie są osiągalne z poziomu kontekstu konta systemowego. Natychmiastowym ograniczeniem jest użycie alternatywnej opcji serwera proxy, która zapewnia taką łączność, lub skonfigurowanie tego samego serwera proxy za pośrednictwem ustawienia WinInet w kontekście konta SYSTEMowego.
 - Wcześniej korzystanie z programu Microsoft Monitoring Agent (MMA) w programie Windows Server 2016 i innych dozwolonych dla bramy OMS / Log Analytics do świadczenia łączności z usługami w chmurze Defender. Nowe rozwiązanie, takie jak program Microsoft Defender for Endpoint w systemach Windows Server 2019, Windows Server 2022 i Windows 10, nie obsługuje tej bramy.
+
 - Na Windows Server 2016 upewnij się, że Program antywirusowy Microsoft Defender zainstalowany, jest aktywny i aktualny. Najnowszą wersję platformy można pobrać i zainstalować przy użyciu usługi Windows Update. Możesz również ręcznie pobrać pakiet aktualizacji z wykazu [usługi Microsoft Update lub](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) [z usługi MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
 - W Windows Server 2012 R2 nie ma interfejsu użytkownika dla Program antywirusowy Microsoft Defender. Ponadto interfejs użytkownika na platformie Windows Server 2016 umożliwia tylko podstawowe operacje. Aby wykonać operacje na urządzeniu lokalnie, zobacz Zarządzanie programem Microsoft Defender dla punktu końcowego za pomocą programu [PowerShell, usługi WMI i MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). W wyniku tego funkcje, które w szczególności są zależne od interakcji użytkownika, takie jak miejsce, w którym użytkownik jest monitowany o podjęcie decyzji lub wykonanie określonego zadania, mogą nie działać zgodnie z oczekiwaniami. Zalecane jest wyłączenie lub wyłączenie interfejsu użytkownika ani nie wymaganie interakcji użytkownika na dowolnym serwerze zarządzanym, ponieważ może to wpłynąć na funkcję ochrony.
 - Nie wszystkie reguły zmniejszania powierzchni ataków są dostępne dla wszystkich systemów operacyjnych. Zobacz [Reguły ograniczania powierzchni ataków (ASR](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)).
@@ -154,7 +167,6 @@ Aby uzyskać więcej informacji, zobacz [Integracja z programem Microsoft Defend
 
 Jeśli Twoje komputery zostały w pełni zaktualizowane za pomocą najnowszego miesięcznego pakietu zb. pakietu zb. **nie ma żadnych** dodatkowych wymagań wstępnych.[](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e)
 
-
 Pakiet instalatora sprawdzi, czy następujące składniki zostały już zainstalowane za pośrednictwem aktualizacji:
 
 - [Aktualizacja do obsługi klienta i telemetrii diagnostycznej](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
@@ -166,6 +178,10 @@ Poza pełną aktualizacją komputera za pomocą najnowszej aktualizacji skumulow
 
 > [!NOTE]
 > Aby pomyślnie zaktualizować wbudowaną wersję programu Windows Defender, której numer wersji zaczyna się od wersji 4.10, do najnowszej dostępnej platformy, należy zastosować aktualizację stosu obsługi, a także najnowszą aktualizację skumulowaną (LCU) równą lub późniejszą niż 20 września 2018 r. — KB4457127 (kompilacja systemu operacyjnego 14393.2515).
+
+**Wymagania wstępne dotyczące uruchamiania z rozwiązaniami zabezpieczeń innych firm**
+
+Jeśli zamierzasz używać rozwiązania ochrony przed złośliwym oprogramowaniem innej firmy, musisz uruchomić Program antywirusowy Microsoft Defender w trybie pasywnym. Należy pamiętać o ustawianiu trybu pasywnego podczas instalacji i procesu dołączania.
 
 **Nowy pakiet aktualizacji programu Microsoft Defender dla punktu końcowego w systemach Windows Server 2012 R2 i 2016**
 

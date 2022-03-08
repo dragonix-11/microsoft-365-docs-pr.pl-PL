@@ -15,14 +15,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 8873a8f374280834970d14f72c2e6677292f7702
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: ea3e45a5469c9769f55f9ce90f799c54556de814
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014705"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322901"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Ochrona ważnych folderów za pomocą kontrolowanego dostępu do folderów
 

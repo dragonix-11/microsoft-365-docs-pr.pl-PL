@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 21d69770fb16ac40b25cd9ff4fefd5ccf5b2f0fb
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 3dfdd9f5187fba9a1e19e56a4df24cf1f7eff44b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013822"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322439"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 

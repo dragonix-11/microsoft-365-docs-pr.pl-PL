@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ac908a03aad2ccbe203877250a84185cb6c8da16
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 25cdc0610f11d1bcd7e8c27faa1cdc9453677d51
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015401"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320885"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Reagowanie na incydenty Microsoft 365 Defender
 

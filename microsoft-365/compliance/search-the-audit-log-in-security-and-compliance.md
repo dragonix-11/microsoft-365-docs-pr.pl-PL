@@ -21,12 +21,12 @@ description: Użyj Centrum zgodności platformy Microsoft 365, aby przeszukać u
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5d5c7820a28977bb894c30915dc26f12016bb58c
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: 71b7bb5d5588f19ff4134c133377b3e9ca83c780
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63014798"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319353"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Przeszukiwanie dziennika inspekcji w centrum zgodności
 
@@ -201,7 +201,7 @@ Oto proces przeszukiwania dziennika inspekcji w programie Microsoft 365.
 
 4. Kliknij **przycisk** Wyszukaj, aby uruchomić wyszukiwanie z użyciem kryteriów wyszukiwania.
 
-   Wyniki wyszukiwania zostaną załadowane i po chwili wyświetlone na nowej stronie. Po zakończeniu wyszukiwania zostanie wyświetlona liczba znalezionych wyników. Zostanie wyświetlonych maksymalnie 5000 zdarzeń w przyrostach co 150 zdarzeń. Jeśli kryteria wyszukiwania spełnia więcej niż 5000 zdarzeń, zostanie wyświetlonych 5000 najnowszych zdarzeń.
+   Wyniki wyszukiwania zostaną załadowane i po chwili wyświetlone na nowej stronie. Po zakończeniu wyszukiwania zostanie wyświetlona liczba znalezionych wyników. Zostanie wyświetlonych maksymalnie 50 000 zdarzeń w przyrostach co 150 zdarzeń.
 
    ![Po zakończeniu wyszukiwania zostanie wyświetlona liczba wyników.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -217,11 +217,11 @@ Oto proces przeszukiwania dziennika inspekcji w programie Microsoft 365.
 
 - Kliknij **pozycję Wyczyść** , aby wyczyścić bieżące kryteria wyszukiwania. Zakres dat zostanie wracany do domyślnego zakresu ostatnich siedmiu dni. Możesz również kliknąć pozycję **Wyczyść wszystko, aby wyświetlić wyniki dla wszystkich działań w** celu anulowania wszystkich zaznaczonych działań.
 
-- Jeśli znaleziono 5000 wyników, prawdopodobnie można przyjąć, że istnieje ponad 5000 zdarzeń, które spełniają kryteria wyszukiwania. Możesz uściślić kryteria wyszukiwania i ponownie uruchomić wyszukiwanie, aby zwrócić mniej wyników,  \> lub wyeksportować wszystkie wyniki wyszukiwania, wybierając pozycję Eksportuj wyniki Pobierz **wszystkie wyniki**.
+- Jeśli znaleziono 50 000 wyników, prawdopodobnie można przyjąć, że istnieje ponad 50 000 zdarzeń, które spełniają kryteria wyszukiwania. Możesz uściślić kryteria wyszukiwania i ponownie uruchomić wyszukiwanie, aby zwrócić mniej wyników,  \> lub wyeksportować wszystkie wyniki wyszukiwania, wybierając pozycję Eksportuj wyniki Pobierz **wszystkie wyniki**.
 
 ### <a name="step-2-view-the-search-results"></a>Krok 2. Wyświetlanie wyników wyszukiwania
 
-Wyniki przeszukiwania dziennika inspekcji są wyświetlane w obszarze **Wyniki** na stronie **Przeszukiwanie dziennika inspekcji** . Jak wspomniano wcześniej, wyświetlanych jest maksymalnie 5000 (najnowszych) zdarzeń w przyrostach co 150 zdarzeń. Aby wyświetlić więcej zdarzeń, możesz użyć paska przewijania w okienku Wyniki lub nacisnąć klawisze **Shift + End**, aby wyświetlić 150 kolejnych zdarzeń.
+Wyniki przeszukiwania dziennika inspekcji są wyświetlane w obszarze **Wyniki** na stronie **Przeszukiwanie dziennika inspekcji** . Jak wspomniano wcześniej, wyświetlanych jest maksymalnie 50 000 (najnowszych) zdarzeń w przyrostach co 150 zdarzeń. Użyj paska przewijania lub naciśnij klawisze **Shift + End** , aby wyświetlić 150 kolejnych zdarzeń.
 
 Wyniki zawierają następujące informacje na temat poszczególnych zdarzeń zwróconych przez wyszukiwanie:
 
@@ -430,7 +430,7 @@ W poniższej tabeli opisano działania dotyczące plików i stron w usługach Sh
 
 |Przyjazna nazwa|Operacja|Opis|
 |:-----|:-----|:-----|
-|Uzyskano dostęp do pliku|FileAccessed|Użytkownik lub konto systemowe uzyskuje dostęp do pliku.|
+|Uzyskano dostęp do pliku|FileAccessed|Użytkownik lub konto systemowe uzyskuje dostęp do pliku. Gdy użytkownik uzyskuje dostęp do pliku, przez następne pięć minut zdarzenie FileAccessed nie jest ponownie rejestrowane dla tego samego użytkownika dla tego samego pliku.|
 |(brak)|FileAccessedExtended|Jest to powiązane z działaniem "Dostęp do pliku" (FileAccessed). Zdarzenie FileAccessedExtended jest rejestrowane, gdy ta sama osoba stale uzyskuje dostęp do pliku przez dłuższy czas (maksymalnie 3 godziny). <br/><br/> Celem rejestrowania zdarzeń FileAccessedExtended jest zmniejszenie liczby zdarzeń FileAccessed rejestrowanych w przypadku ciągłego dostępu do pliku. Pozwala to zmniejszyć liczbę rekordów zdarzeń FileAccessed co jest w zasadzie tym samym działaniem użytkownika, a tym samym skupić uwagę na początkowym (i najważniejszym) zdarzeniu FileAccessed.|
 |Zmieniono etykietę przechowywania dla pliku|ComplianceSettingChanged|Etykieta przechowywania została zastosowana do dokumentu lub usunięta z dokumentu. To zdarzenie jest wyzwalane, gdy etykieta przechowywania jest ręcznie lub automatycznie stosowana do wiadomości.|
 |Zmieniono stan rekordu na zablokowany|LockRecord|Stan rekordu etykiety przechowywania, który klasyfikuje dokument jako rekord, został zablokowany. Oznacza to, że dokumentu nie można zmodyfikować ani usunąć. Tylko użytkownicy, którzy mają co najmniej uprawnienia współautora w witrynie, mogą zmienić stan rekordu dokumentu.|
@@ -446,7 +446,7 @@ W poniższej tabeli opisano działania dotyczące plików i stron w usługach Sh
 |Wykryto złośliwe oprogramowanie w pliku|FileMalwareDetected|SharePoint wykrywa złośliwe oprogramowanie w pliku przez aparat antywirusowy.|
 |Odrzucono wyewidencjonowanie pliku|FileCheckOutDiscarded|Odrzucenie (lub cofnięcie) wyewidencjonowania pliku przez użytkownika. Oznacza to, że wszelkie zmiany wprowadzone w pliku, gdy był on wyewidencjonowany, są odrzucane i nie są zapisywane w wersji dokumentu w bibliotece dokumentów.|
 |Pobrano plik|FileDownloaded|Użytkownik pobrał dokument z witryny.|
-|Zmodyfikowano plik|FileModified|Użytkownik lub konto systemowe zmodyfikuje zawartość lub właściwości dokumentu w witrynie.|
+|Zmodyfikowano plik|FileModified|Użytkownik lub konto systemowe zmodyfikuje zawartość lub właściwości dokumentu w witrynie. System czeka pięć minut przed dziennikiem kolejnego zdarzenia FileModified, gdy ten sam użytkownik zmodyfikuje zawartość lub właściwości tego samego dokumentu.|
 |(brak)|FileModifiedExtended|Jest to powiązane z działaniem Zmodyfikowano plik (FileModified). Zdarzenie FileModifiedExtended jest rejestrowane, gdy ta sama osoba stale modyfikuje plik przez dłuższy czas (maksymalnie 3 godziny). <br/><br/> Celem rejestrowania zdarzeń FileModifiedExtended jest zmniejszenie liczby zdarzeń FileModified rejestrowanych w przypadku ciągłego zmodyfikowania pliku. Pozwala to zmniejszyć liczbę rekordów zdarzeń FileModified oznaczające w zasadzie to samo działanie użytkownika, a tym samym skupić uwagę na początkowym (i najważniejszym) zdarzeniu FileModified.|
 |Przeniesiono plik|FileMoved|Przeniesienie dokumentu z jego bieżącej lokalizacji w witrynie do nowej lokalizacji przez użytkownika.|
 |(brak)|FilePreviewed|Użytkownik wyświetla podgląd plików w SharePoint lub OneDrive dla Firm sieci Web. Te zdarzenia zazwyczaj występują w dużych ilościach w zależności od jednego działania, na przykład przeglądania galerii obrazów.|
@@ -459,9 +459,9 @@ W poniższej tabeli opisano działania dotyczące plików i stron w usługach Sh
 |Zmieniono nazwę pliku|FileRenamed|Zmiana nazwy dokumentu w witrynie przez użytkownika.|
 |Przywrócono plik|FileRestored|Przywrócenie dokumentu z Kosza witryny przez użytkownika.|
 |Przekazany plik|FileUploaded|Przekazanie dokumentu do folderu w witrynie przez użytkownika.|
-|Wyświetlona strona|PageViewed|Użytkownik może wyświetlyć stronę w witrynie. Nie obejmuje to wyświetlania w przeglądarce sieci Web plików znajdujących się w bibliotece dokumentów.|
+|Wyświetlona strona|PageViewed|Użytkownik może wyświetlyć stronę w witrynie. Nie obejmuje to wyświetlania w przeglądarce sieci Web plików znajdujących się w bibliotece dokumentów. Gdy użytkownik wyświetly stronę, przez następne pięć minut zdarzenie PageViewed nie zostanie ponownie zarejestrowane dla tego samego użytkownika na tej samej stronie.|
 |(brak)|PageViewedExtended|Jest to powiązane z działaniem widoku strony (PageViewed). Zdarzenie PageViewedExtended jest rejestrowane, gdy ta sama osoba stale aktualizuje stronę sieci Web przez dłuższy czas (maksymalnie 3 godziny). <br/><br/> Celem rejestrowania zdarzeń PageViewedExtended jest zmniejszenie liczby zdarzeń PageViewed rejestrowanych w czasie ciągłego wyświetlania strony. Pozwala to zmniejszyć liczbę rekordów zdarzeń PageViewed, które w zasadzie są tym samym działaniem użytkownika, i pozwala skupić się na początkowym (i najważniejszym) zdarzeniu PageViewed.|
-|Widok sygnalizowany przez klienta|ClientViewSignaled|Klient użytkownika (na przykład witryna internetowa lub aplikacja mobilna) zasygnalizował, że wskazana strona została wyświetlona przez użytkownika. To działanie jest często rejestrowane po zdarzeniu PagePrekwed dla strony. <br/><br/>**UWAGA**: Zdarzenia ClientViewSignaled są sygnalizowane przez klienta, a nie przez serwer, dlatego możliwe jest, że serwer nie zanotuje tego zdarzenia i dlatego nie pojawi się w dzienniku inspekcji. Ponadto może się okazać, że informacje w rekordzie inspekcji mogą nie być wiarygodne. Tożsamość użytkownika jest jednak weryfikowana za pomocą tokenu użytego do utworzenia sygnału, dlatego tożsamość użytkownika wymieniona w odpowiednim rekordzie inspekcji jest dokładna. |
+|Widok sygnalizowany przez klienta|ClientViewSignaled|Klient użytkownika (na przykład witryna internetowa lub aplikacja mobilna) zasygnalizował, że wskazana strona została wyświetlona przez użytkownika. To działanie jest często rejestrowane po zdarzeniu PagePrekwed dla strony. <br/><br/>**UWAGA**: Zdarzenia ClientViewSignaled są sygnalizowane przez klienta, a nie przez serwer, dlatego możliwe jest, że serwer nie zanotuje tego zdarzenia i dlatego nie pojawi się w dzienniku inspekcji. Ponadto może się okazać, że informacje w rekordzie inspekcji mogą nie być wiarygodne. Tożsamość użytkownika jest jednak weryfikowana za pomocą tokenu użytego do utworzenia sygnału, dlatego tożsamość użytkownika wymieniona w odpowiednim rekordzie inspekcji jest dokładna. System czeka pięć minut przed dziennikiem tego samego zdarzenia, gdy klient tego samego użytkownika sygnalizuje, że strona została ponownie wyświetlona przez użytkownika.|
 |(brak)|PagePrerewched|Klient użytkownika (na przykład witryna internetowa lub aplikacja mobilna) zażądał wskazanej strony w celu zwiększenia wydajności, jeśli użytkownik odszuka tę stronę. To zdarzenie jest rejestrowane w celu wskazania, że do klienta użytkownika została dosłana zawartość strony. To zdarzenie nie jest  przesądną wskazówką, że użytkownik przechodzi na stronę. <br/><br/> Podczas renderowania zawartości strony przez klienta (zgodnie z żądaniem użytkownika) powinno zostać wygenerowane zdarzenie ClientViewSignaled. Nie wszyscy klienci obsługują oznaczanie wstępnego pobrania, dlatego niektóre wstępnie pobrane działania mogą zostać zamiast tego zarejestrowane jako zdarzenia PageViewed.|
 ||||
 
@@ -543,7 +543,7 @@ W poniższej tabeli opisano działania związane z interakcjami użytkowników z
 |Zaktualizowano element listy|ListItemUpdated|Użytkownik zaktualizował element SharePoint, modyfikując co najmniej jedną właściwości.|
 |Zaktualizowano kolumnę witryny|SiteColumnUpdated|Użytkownik zaktualizował kolumnę SharePoint, modyfikując co najmniej jedną właściwości.|
 |Zaktualizowano typ zawartości witryny|SiteContentTypeUpdated|Użytkownik zaktualizował typ zawartości witryny, modyfikując co najmniej jedną właściwości.|
-|Wyświetlono element listy|ListItemViewed|Użytkownik przeglądał SharePoint listy.|
+|Wyświetlono element listy|ListItemViewed|Użytkownik przeglądał SharePoint listy. Gdy użytkownik wyświetly element listy, przez następne pięć minut zdarzenie ListItemViewed nie zostanie ponownie zarejestrowane dla tego samego użytkownika dla tego samego elementu listy.|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>Działania związane z udostępnianiem i żądaniami dostępu

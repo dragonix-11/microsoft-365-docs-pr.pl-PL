@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 3f51ce7c0eb45861a8b5277266b18e6d03e53178
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f8416d480731c133e93a0a6e22e5b5b32913ba57
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021192"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327619"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Konfigurowanie funkcji automatycznego badania i rozwiązywania problemów w programie Microsoft Defender dla punktu końcowego
 

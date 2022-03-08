@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 5382118753f3c865f6fceb7cd16a7a7953e7bfad
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 10ecf1f3906e7968328729257feea9c272562ffb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63019236"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322635"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Co nowego w programie Microsoft Defender dla punktu końcowego na komputerze Mac
 
@@ -31,6 +31,19 @@ ms.locfileid: "63019236"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1015950-20122021159500"></a>101.59.50 (20.122021.15950.0)
+
+- Ta wersja dodaje obsługę systemu macOS 12.3. Począwszy od wersji 12.3 w systemie macOS, [firma Apple usuwa język Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). Domyślnie w systemie macOS nie będzie preinstalowana wersja w języku Python. **WYMAGANE DZIAŁANIE**: 
+  - Użytkownicy muszą zaktualizować program Microsoft Defender for Endpoint dla komputerów Mac do wersji 101.59.50 (lub nowszej) przed zaktualizowaniem swoich urządzeń do systemu macOS Monterey 12.3 (lub nowszego). Ta minimalna wersja 101.59.50 jest wymagane do wyeliminowania problemów związanych z programem Python z programem Microsoft Defender for Endpoint dla komputerów Mac w systemie macOS Monterey.
+  - W przypadku wdrożeń zdalnych istniejące konfiguracje usługi MDM muszą zostać zaktualizowane do programu Microsoft Defender dla punktu końcowego dla komputerów Mac w wersji 101.59.50 (lub nowszej). Wypychanie za pośrednictwem usługi MDM starszej wersji programu Microsoft Defender dla punktu końcowego dla komputerów Mac do systemu macOS Monterey 12.3 (lub nowszego) spowoduje niepowodzenie instalacji.
+
+## <a name="1015910-20122012159100"></a>101.59.10 (20.122012.15910.0)
+
+- Narzędzie wiersza polecenia obsługuje teraz przywracanie plików poddanych kwarantannie do lokalizacji innej niż ta, w której plik został pierwotnie wykryty. Można to zrobić za pośrednictwem .`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`
+- Rozszerzona kontrola urządzenia do obsługi urządzeń połączonych za pośrednictwem urządzenia 3
+- Ulepszono obsługę zasad sterowania urządzeniami zawierających nieprawidłowe identyfikatory dostawców i identyfikatory produktów. Przed tą wersją, jeśli zasady zawierały jeden lub więcej nieprawidłowych identyfikatorów, cała zasada została zignorowana. Począwszy od tej wersji zignorowane są tylko nieprawidłowe części zasad. Problemy z zasadami są rozwiązane za pośrednictwem `mdatp device-control removable-media policy list`.
+- Poprawki błędów
 
 ## <a name="1015662-20121122156620"></a>101.56.62 (20.121122.15662.0)
 

@@ -1,9 +1,9 @@
 ---
-title: Ręczne Microsoft 365 dla firm
+title: Ręczne zmienianie planów platformy Microsoft 365 dla firm
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 search.appverid: MET150
 description: Możesz zmienić subskrypcję ręcznie, kupując nową subskrypcję i upewniając się, że obie subskrypcje są wymienione i aktywne.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 12ff6bdec77e6407d1b854dc7a5fd78f0401c253
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: adc76ff3fbfa5fd81893f0b260e76018288350f1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63012478"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328431"
 ---
 # <a name="change-plans-manually"></a>Ręczne zmienianie planów
 
@@ -50,7 +50,7 @@ Aby kontynuować ręczne zmienianie, przeczytaj [Krok 2. Kupowanie nowej subskry
 
 LUB
 
-**Kup nową subskrypcję i licencje:** Aby kupić [nową subskrypcję Microsoft 365 postępuj](../try-or-buy-microsoft-365.md) zgodnie z instrukcjami w tece Kupowanie innej subskrypcji dla firm.
+**Kup nową subskrypcję i licencje:** Aby kupić nową subskrypcję, postępuj zgodnie z instrukcjami w kupowaniu innej subskrypcji platformy [Microsoft 365](../try-or-buy-microsoft-365.md) dla firm.
 
 Upewnij się, że kupisz subskrypcję dla tej samej organizacji, w których obecnie znajdują się użytkownicy. Na przykład sprawdź adresy e-mail użytkowników, których chcesz przenieść. Jeśli adresy e-mail \@contoso.com, musisz kupić nową subskrypcję usługi contoso.com.
 Dołącz licencję dla każdego użytkownika, którego chcesz przenieść.
@@ -61,7 +61,7 @@ Dołącz licencję dla każdego użytkownika, którego chcesz przenieść.
 
 2. **Sprawdzanie, czy obie subskrypcje są wymienione i aktywne** Subskrypcja, z których przenosisz użytkowników, i subskrypcja, do których przenosisz użytkowników, musi być wymieniona razem. Jeśli nowa subskrypcja nie zostanie wyewidencjonana podczas pierwszego sprawdzania, spróbuj ponownie później. Sprawdź, czy obie subskrypcje są aktywne. [Nowa subskrypcja nie jest wymieniona lub nie jest aktywna](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. **Sprawdzanie, czy masz wystarczającą ilość licencji dla każdego użytkownika** Każdy użytkownik potrzebuje licencji, która odpowiada jego subskrypcji. Jeśli chcesz przenieść dziesięciu użytkowników do Microsoft 365 Business Premium, musisz upewnić się, że jest dostępnych dziesięć licencji.
+3. **Sprawdzanie, czy masz wystarczającą ilość licencji dla każdego użytkownika** Każdy użytkownik potrzebuje licencji, która odpowiada jego subskrypcji. Jeśli więc chcesz przenieść dziesięciu użytkowników do usługi Microsoft 365 Business Premium, musisz upewnić się, że jest dostępnych dziesięć licencji.
 
 4. **Potrzebujesz większej liczby licencji na nową subskrypcję?**
    Przejdź do **strony Twoje produkty** i [kup więcej licencji](../licenses/buy-licenses.md).
@@ -80,7 +80,7 @@ Licencje dla bieżącej subskrypcji zostaną później usunięte. od tego czasu 
 
 ## <a name="step-4-reassign-licenses"></a>Krok 4. Ponowne przypisanie licencji
 
-W przypadku uaktualnienia z Office 365 do planu Microsoft 365 musisz zmienić przypisania licencji dla wszystkich użytkowników. Licencje nie są przypisywane automatycznie po ręcznej zmianie planów.
+Po uaktualnieniu z planu usługi Office 365 do planu Microsoft 365 musisz zmienić przypisania licencji dla wszystkich użytkowników. Licencje nie są przypisywane automatycznie po ręcznej zmianie planów.
 
 ### <a name="reassign-a-license-for-one-user"></a>Ponowne przypisanie licencji dla jednego użytkownika
 

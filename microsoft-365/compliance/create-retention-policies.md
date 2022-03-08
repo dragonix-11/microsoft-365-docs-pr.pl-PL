@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zasady przechowywania skutecznie kontrolują zawartość generną przez użytkowników za pomocą wiadomości e-mail, dokumentów i konwersacji. Zachowaj to, co chcesz, i pozbądź się tego, czego nie chcesz.
-ms.openlocfilehash: 115dcce1e99583ab0c3345da683be0b826b24ff7
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63027139"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320595"
 ---
 # <a name="create-and-configure-retention-policies"></a>Tworzenie i konfigurowanie zasad przechowywania
 
@@ -214,15 +214,23 @@ Gdy tworzysz i przesyłasz zasady przechowywania, zastosowanie tych zasad może 
   
 ![Diagram przedstawiający okres, w którym zasady przechowywania są skuteczne.](../media/retention-policy-timings.png)
 
-Najpierw zasady przechowywania muszą zostać rozpowszechnione do wybranych lokalizacji, a następnie zastosowane do zawartości. Zawsze możesz sprawdzić stan dystrybucji zasad przechowywania, wybierając je na stronie Zasady **przechowywania** w Centrum zgodności. W wysuwanej okienku, jeśli zobaczysz stan Wyłączone **(błąd)** i w szczegółach lokalizacji zostanie wyświetlony komunikat informujący, że wdrożenie zasad (w przypadku programu SharePoint) lub podjęcie próby ponownego wdrożenia zasad (dla programu OneDrive) trwa dłużej, niż oczekiwano, spróbuj ponownie uruchomić polecenie [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell, aby ponownie sprawdzić rozkład zasad:
+Najpierw zasady przechowywania muszą zostać rozpowszechnione do wybranych lokalizacji, a następnie zastosowane do zawartości. Zawsze możesz sprawdzić stan dystrybucji zasad przechowywania, wybierając je na stronie Zasady **przechowywania** w Centrum zgodności. W okienku wysuwu, jeśli zobaczysz **(Błąd)** zawarty w stanie i w szczegółach lokalizacji zostanie wyświetlony komunikat, że wdrożenie zasad trwa dłużej niż oczekiwano lub spróbuj ponownie wdrożyć zasady, spróbuj ponownie uruchomić polecenie [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) lub [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell, aby ponownie sprawdzić rozkład zasad:
 
 1. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
 
-2. Uruchom następujące polecenie:
+2. Uruchom jedno z następujących poleceń:
     
-    ```PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-    ```
+    - W przypadku lokalizacji zasad Teams **wiadomości kanału** prywatnego, wiadomości **Yammer użytkowników** **i Yammer wiadomości społeczności**:
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - W przypadku wszystkich innych lokalizacji zasad, takich **jak Exchange-mail****, witryny** SharePoint, Teams **wiadomości w kanałach itp.**:
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ## <a name="updating-retention-policies"></a>Aktualizowanie zasad przechowywania
 

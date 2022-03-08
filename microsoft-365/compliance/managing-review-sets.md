@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak zarządzać zestawami recenzji w celu analizowania, wykonywania zapytań, wyświetlania, oznaczania i eksportowania danych w Advanced eDiscovery przypadku.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 16c6e8aa5f3cf278b90ab7fd338bcac203b7489a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a3aa836782dd464be2e62ca729efd85484c8aebf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988345"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315613"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Zarządzanie zestawami recenzji w programie Advanced eDiscovery
 
@@ -57,3 +57,6 @@ Istnieją trzy różne sposoby dodawania danych do zestawu recenzji w Advanced e
 2. [Ładowanie danych nie Microsoft 365 do zestawu recenzji](load-non-Office-365-data-into-a-review-set.md)
 
 3. [Dodawanie danych do zestawu recenzji z innego zestawu recenzji](add-data-to-review-set-from-another-review-set.md)
+
+> [!NOTE]
+> Nie można usuwać elementów z zestawu recenzji ani usuwać zestawów recenzji ze sprawy. Aby usunąć zestaw recenzji (i usunąć znajdujące się w nim dane), należy usunąć Advanced eDiscovery przypadku, gdy znajduje się w nim zestaw recenzji. Aby uzyskać więcej informacji, [zobacz Zamykanie lub usuwanie Advanced eDiscovery przypadku](close-or-delete-case.md).

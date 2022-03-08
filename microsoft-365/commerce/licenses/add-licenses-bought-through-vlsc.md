@@ -2,8 +2,8 @@
 title: Dodawanie licencji do subskrypcji kupionej za pośrednictwem centrum Volume Licensing Service Center
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: Dowiedz się, jak dodawać licencje do subskrypcji Microsoft 365 zakupionej od zewnętrznego partnera, rozpoznawanego przez firmę Microsoft.
 ms.date: 08/27/2021
-ms.openlocfilehash: 5ebba7e0a27efdd0a49ba9719c93e04f5c2760b4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 9d2b8881be15cdbed1354c5f70e1dc4f4cacc8c3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995806"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320175"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Dodawanie licencji do subskrypcji kupionej za pośrednictwem centrum Volume Licensing Service Center
 

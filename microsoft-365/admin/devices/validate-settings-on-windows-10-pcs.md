@@ -27,18 +27,21 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Dowiedz się, jak sprawdzić Microsoft 365 ustawienia ochrony aplikacji dla firm miały wpływ na ustawienia ochrony aplikacji Windows 10 urządzeniach.
-ms.openlocfilehash: 311da3efec8cd3ad57e722aea5a8c3888d1af7b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: be25acb8414705c48a8763a0530ec2a70565de83
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983804"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313597"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Sprawdzanie poprawności ustawień ochrony urządzeń dla Windows 10 PC
 
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
+
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Sprawdzanie, Windows 10 urządzenia są ustawione
 
-Po [skonfigurowaniu zasad urządzeń](protection-settings-for-windows-10-pcs.md) może upłynieć kilka godzin, aż te zasady zajdą w życie na urządzeniach użytkowników. Aby potwierdzić, że zasady te obowiązywały, możesz Windows Ustawienia ekranów na urządzeniach użytkowników. Ponieważ użytkownicy nie będą mogli modyfikować ustawień aktualizacji Windows i Program antywirusowy Windows Defender na swoich urządzeniach Windows 10, wiele opcji zostanie wyszarowanych.
+Po [skonfigurowaniu zasad urządzeń](protection-settings-for-windows-10-pcs.md) może upłynieć kilka godzin, aż te zasady zajdą w życie na urządzeniach użytkowników. Aby potwierdzić, że zasady te obowiązywały, możesz Windows Ustawienia ekranów na urządzeniach użytkowników. Ponieważ użytkownicy nie będą mogli modyfikować ustawień aktualizacji Windows i ustawień Program antywirusowy Microsoft Defender na ich Windows 10 urządzeniach, wiele opcji zostanie wyszarzeni.
   
 1. Przejdź do **Ustawienia** \> **Opcje &amp; ponownego** \> **uruchamiania Windows** \> aktualizacji i upewnij się, że wszystkie ustawienia są wyszarowane. 
     
@@ -63,4 +66,5 @@ Po [skonfigurowaniu zasad urządzeń](protection-settings-for-windows-10-pcs.md)
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Microsoft 365 i zasoby dla firm](/admin)\
-[Konfigurowanie komputerów PC z systemem Windows 10](protection-settings-for-windows-10-pcs.md)
+[Konfigurowanie urządzeń dla komputerów Windows 10](protection-settings-for-windows-10-pcs.md)
+ [Najedna 10](../security-and-compliance/secure-your-business-data.md) sposobów zabezpieczania Microsoft 365 dla firm

@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  title: Microsoft 365 Business Premium — często zadawane pytania 
-  description: Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące platformy Microsoft 365 Business, nowego rozwiązania zaprojektowanego dla małych i średnich firm. 
+  title: Microsoft 365 Business Premium — często zadawane pytania
+  description: Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące platformy Microsoft 365 Business, nowego rozwiązania zaprojektowanego dla małych i średnich firm.
   author: efrene
   f1.keywords:
   - NOCSH
@@ -11,22 +11,22 @@ metadata:
   ms.collection: M365-subscription-management
   ms.custom: AdminSurgePortfolio
   ms.localizationpriority: medium
-  audience: microsoft-business 
+  audience: microsoft-business
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
-  ms.date: 07/21/2020
-  ms.openlocfilehash: 1719a51ebcb5863a2ddc09f4dbfde0873dba3766
-  ms.sourcegitcommit: db62fce58867c7e5c8029b66966e792da3103b89
+  ms.date: 02/25/2022
+  ms.openlocfilehash: dd5a011e57f590251e046fd2663db259c98486bf
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 12/23/2021
-  ms.locfileid: "63018978"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63312566"
 title: Microsoft 365 Business Premium — często zadawane pytania
 summary: ''
 sections:
 - name: Ogólne
   questions:
   - question: Co to jest Microsoft 365 Business Premium?
-    answer: "Platforma Microsoft 365 jest zintegrowanym rozwiązaniem, które łączy najlepsze w swojej klasie narzędzia zwiększające produktywność oraz funkcje zabezpieczeń i zarządzania urządzeniami dla małych i średnich firm. Oto co obejmuje:\n\n**Zestaw firmowych narzędzi do zwiększania produktywności i współpracy**:\n\n- Word, Excel, PowerPoint, Outlook, OneNote, Publisher i Access\n- Exchange, OneDrive, Skype dla firm, Microsoft Teams i SharePoint.\n         \n**Enterprise zarządzanie urządzeniami i zabezpieczeniami klasy korporacyjnej**:\n\n- Zapewnia ochronę przed zagrożeniami zewnętrznymi, np. wyłudzaniem informacji i zaawansowanym złośliwym oprogramowaniem, za pomocą programu Microsoft Defender Office 365 Plan 1 i Microsoft Defender Exploit Guard.\n- Ułatwia kontrolowanie sposobu uzyskiwania dostępu do informacji poufnych i ich przesyłania oraz zarządzanie tymi mechanizmami za pomocą zasad ochrony przed utratą danych i usługi Azure Information Protection (plan 1).\n- Pozwala chronić dane, utrwalać je i tworzyć ich kopie zapasowe za pomocą funkcji Exchange Online — archiwum.\n- Ochrona aplikacji pakietu Office i innych aplikacji mobilnych za pomocą usługi Intune App Protection.\n- Zarządzanie urządzeniami dla Windows 10 PC, macOS i urządzeń przenośnych za pomocą zarządzania urządzeniami w usłudze Intune.\n- Ochrona tożsamości za pomocą uwierzytelniania wieloskładnikowego, samoobsługowego resetowania haseł oraz dostępu warunkowego.\n- Spójna konfiguracja zabezpieczeń na różnych urządzeniachronienie&mdash; danych firmowych na różnych urządzeniach; Program antywirusowy Microsoft Defender, która jest zawsze w dniu i jest aktualne.\n\n**Uproszczone wdrażanie urządzeń i konfiguracja użytkownika**:\n\n- Pojedyncza konsola administracyjna umożliwiająca konfigurowanie użytkowników i urządzeń oraz zarządzanie nimi\n- Automatyczne instalowanie aplikacji pakietu Office na komputerach z systemem Windows 10.\n- Zawsze aktualna wersja pakietu Office i systemu Windows 10.\n- Usprawnione wdrażanie komputerów z systemem Windows za pomocą rozwiązania Windows AutoPilot.\n\n**Inne uprawnienia**:\n\n- Klienci korzystający z platformy Microsoft 365 Business Premium mają także dostęp do usług Windows Virtual Desktop i Office Shared Computer Activation. Aby dowiedzieć [się Microsoft 365, przeczytaj blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) Microsoft 365 i średnich firm. Zobacz też [opis usług platformy Microsoft 365 dla firm](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).          \n"
+    answer: "Platforma Microsoft 365 jest zintegrowanym rozwiązaniem, które łączy najlepsze w swojej klasie narzędzia zwiększające produktywność oraz funkcje zabezpieczeń i zarządzania urządzeniami dla małych i średnich firm. Oto co obejmuje:\n\n**Zestaw firmowych narzędzi do zwiększania produktywności i współpracy**:\n\n- Word, Excel, PowerPoint, Outlook, OneNote, Publisher i Access\n- Exchange, OneDrive, Skype dla firm, Microsoft Teams i SharePoint.\n         \n**Enterprise zarządzanie urządzeniami i zabezpieczeniami klasy korporacyjnej**:\n\n- Zapewnia ochronę przed zagrożeniami zewnętrznymi, np. wyłudzaniem informacji i zaawansowanym złośliwym oprogramowaniem, za pomocą programu Microsoft Defender Office 365 plan 1 i programu Microsoft Defender dla firm.\n- Ułatwia kontrolowanie sposobu uzyskiwania dostępu do informacji poufnych i ich przesyłania oraz zarządzanie tymi mechanizmami za pomocą zasad ochrony przed utratą danych i usługi Azure Information Protection (plan 1).\n- Pozwala chronić dane, utrwalać je i tworzyć ich kopie zapasowe za pomocą funkcji Exchange Online — archiwum.\n- Ochrona aplikacji pakietu Office i innych aplikacji mobilnych za pomocą usługi Intune App Protection.\n- Zarządzanie urządzeniami dla Windows 10 PC, macOS i urządzeń przenośnych za pomocą zarządzania urządzeniami w usłudze Intune.\n- Ochrona tożsamości za pomocą uwierzytelniania wieloskładnikowego, samoobsługowego resetowania haseł oraz dostępu warunkowego.\n- Spójna konfiguracja zabezpieczeń na różnych urządzeniachronienie&mdash; danych firmowych na różnych urządzeniach; Program antywirusowy Microsoft Defender, która jest zawsze w dniu i jest aktualne.\n\n**Uproszczone wdrażanie urządzeń i konfiguracja użytkownika**:\n\n- Pojedyncza konsola administracyjna umożliwiająca konfigurowanie użytkowników i urządzeń oraz zarządzanie nimi\n- Automatyczne instalowanie aplikacji pakietu Office na komputerach z systemem Windows 10.\n- Zawsze aktualna wersja pakietu Office i systemu Windows 10.\n- Usprawnione wdrażanie komputerów z systemem Windows za pomocą rozwiązania Windows AutoPilot.\n\n**Inne uprawnienia**:\n\n- Klienci korzystający z platformy Microsoft 365 Business Premium mają także dostęp do usług Windows Virtual Desktop i Office Shared Computer Activation. Aby dowiedzieć [się Microsoft 365, przeczytaj blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) Microsoft 365 i średnich firm. Zobacz też [opis usług platformy Microsoft 365 dla firm](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).          \n"
   - question: Kto powinien rozważyć wdrożenie platformy Microsoft 365 Business Premium?
     answer: >
       Microsoft 365 Business Premium to kompleksowe rozwiązanie zabezpieczeń oparte na chmurze, które umożliwia:

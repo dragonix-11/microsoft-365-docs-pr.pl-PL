@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Dowiedz się, jak administratorzy mogą skonfigurować łącznik natywny i używać go do importowania danych serwisu Twitter do usługi Microsoft 365.
-ms.openlocfilehash: 0be302a3e26b92ff08941720fad57b811922de3c
-ms.sourcegitcommit: b1a2b09edbcfcc62ff3f1ecf5bd8adb1afa344c8
+ms.openlocfilehash: 959cdd49d229334f3129eb21505c4489d23ded4f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "63018976"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320637"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Konfigurowanie łącznika firmy Microsoft do archiwizowania danych z usługi Twitter (wersja zapoznawcza)
 
@@ -47,7 +47,7 @@ Wykonaj poniższe wymagania wstępne, zanim będzie można skonfigurować łącz
 
 - Łącznik serwisu Twitter może zaimportować łącznie 200 000 elementów w jednym dniu. Jeśli dziennie istnieje więcej niż 200 000 elementów w serwisie Twitter, żaden z tych elementów nie zostanie zaimportowany do Microsoft 365.
 
-- Użytkownik, który konfiguruje łącznik usługi Twitter w Centrum zgodności platformy Microsoft 365 (w kroku 5), musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który konfiguruje łącznik usługi Twitter w Centrum zgodności platformy Microsoft 365 (w kroku 5), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w aplikacji Azure Active Directory
 

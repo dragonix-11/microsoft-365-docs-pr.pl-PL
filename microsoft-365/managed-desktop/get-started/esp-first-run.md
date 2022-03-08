@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 813355d57f24f9cafcb97b73b5fde641800634ec
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: ff4e7dc306ea3a017cb94261673d1325bc7cf94e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016031"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324595"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Środowisko pierwszego uruchomienia z programem Autopilot i stroną stanu rejestracji
 
@@ -23,7 +23,7 @@ Microsoft Managed Desktop korzysta zarówno z rozwiązania [Windows,](/windows/d
 
 ## <a name="initial-deployment"></a>Wdrożenie początkowe
 
-Aby zapewnić obsługę esp, należy zarejestrować urządzenia w Microsoft Managed Desktop serwisie. Aby uzyskać więcej informacji na temat rejestracji, [zobacz Rejestrowanie nowych urządzeń samodzielnie](../get-started/register-devices-self.md) lub Procedura rejestrowania urządzeń [przez partnerów](../get-started/register-devices-partner.md).
+Aby zapewnić obsługę esp, należy zarejestrować urządzenia w Microsoft Managed Desktop serwisie. Aby uzyskać więcej informacji na temat rejestracji, [zobacz Ręczna rejestracja](../get-started/manual-registration.md) lub [Rejestracja partnera](../get-started/partner-registration.md).
 Strony stanu rejestracji i rozwiązania Autopilot dla wdrożenia wstępnie inicjowania obsługi administracyjnej są domyślnie włączone Microsoft Managed Desktop.
 
 ## <a name="autopilot-profile-settings"></a>Ustawienia profilu rozwiązania Autopilot
@@ -130,7 +130,7 @@ Możesz poprosić o inny szablon nazwy urządzenia. Nie możesz jednak zmienić 
 1. Wdrażanie i [przypisywanie Intune — Portal firmy](company-portal.md).
 1. [Przypisywanie licencji](assign-licenses.md).
 1. [Wdychuj aplikacje](deploy-apps.md).
-1. [Konfigurowanie urządzeń](set-up-devices.md).
+1. [Przygotowywanie urządzeń](prepare-devices.md).
 1. Skonfiguruj środowisko pierwszego uruchomienia za pomocą rozwiązania Autopilot i strony stanu rejestracji (w tym artykule).
 1. [Włączanie funkcji pomocy technicznej dla użytkowników](enable-support.md).
 1. [Przygotuj użytkowników do korzystania z urządzeń](get-started-devices.md).

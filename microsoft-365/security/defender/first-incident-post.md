@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ff9f6159bcfb85bd5c423b9775e70edd0ece2209
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3139cab64a967ed65a16867b53ad57a6913afd2c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015385"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325897"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Krok nr 3. Przeprowadzanie przeglądu pierwszego zdarzenia po zdarzeniu
 

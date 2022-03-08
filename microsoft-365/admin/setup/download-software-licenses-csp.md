@@ -2,8 +2,8 @@
 title: Pobierz bezterminowe oprogramowanie i klucze licencji produktów zakupione w ramach programu Dostawca rozwiązań w chmurze (CSP)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
@@ -16,17 +16,17 @@ ms.collection:
 - Adm_TOC
 search.appverid: MET150
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 - admindeeplinkMAC
 description: Dowiedz się, jak pobrać oprogramowanie i klucze licencji produktu dla bezterminowego oprogramowania zakupionego w ramach programu Dostawca rozwiązań w chmurze (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: e6df3ef61b75e775a91f4c8c099eb30c90f45d42
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 122bc61e3554adde50e35a730ddd5832d0fbf40f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985074"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315151"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Pobierz bezterminowe oprogramowanie i klucze licencji produktu
 

@@ -1,13 +1,11 @@
 ---
 title: Konfigurowanie Microsoft 365 Business Premium
-f1.keywords:
-- NOCSH
 ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - O365E_M365SetupBanner
 - BCS365_M365SetupBanner
 ms.service: o365-administration
@@ -32,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Zapoznaj się z krokami konfiguracji Microsoft 365 Business Premium, w tym dodawanie domeny i użytkowników, konfigurowanie zasad zabezpieczeń i nie tylko.
-ms.openlocfilehash: adfb65a5dcbba398ea398a17f605e12c17375c5c
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: b4d12d34e535a58c952a752fca63af6f67e30a61
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017751"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312393"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Konfigurowanie Microsoft 365 Business Premium kreatora konfiguracji
 

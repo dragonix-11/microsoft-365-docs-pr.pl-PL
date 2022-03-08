@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zasad kwarantanny w celu kontrolowania, co użytkownicy mogą robić w przypadku wiadomości poddanych kwarantannie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e5efbedc4ea2f53e1a612ba4ccab74433314508
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 8f015951fec4ea8fb9d433c8b48ccb26cd9e1222
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016019"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321295"
 ---
 # <a name="quarantine-policies"></a>Zasady kwarantanny
 
@@ -199,7 +199,7 @@ W tym przykładzie są pisywane nowe zasady kwarantanny o nazwie Ograniczony dos
 New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -EsnEnabled $true
 ```
 
-W przypadku uprawnień niestandardowych użyj poprzedniej tabeli, aby uzyskać wartość binarną odpowiadającą wymaganym uprawnieniam. Przekonwertuj wartość binarną na wartość dziesiętną i użyj wartości dziesiętnej dla parametru _EndUserQuarantinePermissionsValue_ .
+W przypadku uprawnień niestandardowych użyj poprzedniej tabeli, aby uzyskać wartość binarną odpowiadającą wymaganym uprawnieniam. Przekonwertuj wartość binarną na wartość dziesiętną i użyj wartości dziesiętnej dla parametru _EndUserQuarantinePermissionsValue_ . Nie używaj wartości binarnej dla wartości parametru.
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
 

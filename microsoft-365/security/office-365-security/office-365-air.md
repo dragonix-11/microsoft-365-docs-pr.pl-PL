@@ -3,8 +3,8 @@ title: Automatyczne badanie i reagowanie w programie Microsoft Defender dla Offi
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 469a85866f722539c35bcc0305aa1e8fc39d58be
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e01fe2bdc5765c77500ae98e9c8177a35c683fca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021355"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324567"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Zautomatyzowane badania i odpowiedzi (AIR) w programie Microsoft Defender dla Office 365
 

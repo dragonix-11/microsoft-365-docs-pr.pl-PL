@@ -3,7 +3,7 @@ title: Zwiększ możliwości swojej małej firmy dzięki pracy zdalnej
 f1.keywords:
 - NOCSH
 ms.author: twerner
-author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Znajdowanie najnowszych informacji, porad, zasobów i wskazówek dotyczących pracy zdalnej dla firm przy użyciu aplikacji Microsoft 365.
-ms.openlocfilehash: 673d323a64687b9f2413993d7ddd386529e1ffc8
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 5da67dd419668957d947c9568688774adc01e763
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017765"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312715"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Zwiększ możliwości swojej małej firmy dzięki pracy zdalnej
 

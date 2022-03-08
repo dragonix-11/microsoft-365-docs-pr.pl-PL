@@ -25,14 +25,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Wykonaj poniższe czynności, aby usunąć licencję Microsoft 365 od byłego pracownika.
-ms.openlocfilehash: 52ab851c88d05c33de58d28d566a46b5e8b1710b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: b724e8d65c990396ad376544de86d4ffd0cb5fdc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019250"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315165"
 ---
-# <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>Krok 6. Usunięcie Microsoft 365 pracownika
+# <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Krok 6. Usunięcie licencji Microsoft 365 byłego pracownika
 
 Jeśli nie chcesz płacić za licencję osoby, która odejdzie z organizacji, musisz usunąć licencję usługi Microsoft 365, a następnie usunąć ją z subskrypcji. Możesz przypisać licencję do innego użytkownika, jeśli nie usuniesz jej.
 

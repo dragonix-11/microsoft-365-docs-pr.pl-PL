@@ -20,12 +20,12 @@ ms.custom:
 description: Usługa Microsoft Defender dla Office 365 obejmuje załączniki Sejf, linki Sejf, zaawansowane narzędzia do ochrony przed wyłudzaniem informacji, narzędzia do raportowania i funkcje analizy zagrożeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6756ba1c0315bb2b89c272d8153715cffe8f976
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: f78194541db8221aad1243966ddee6b6dc071d7d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63014745"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317055"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Usługa Microsoft Defender dla Office 365
 
@@ -81,7 +81,7 @@ W poniższej tabeli podsumowano dane zawarte w poszczególnych planach.
 
 |Defender dla Office 365 Plan 1|Defender for Office 365 Plan 2|
 |---|---|
-|Funkcje konfiguracji, ochrony i wykrywania: <ul><li>[Sejf załączników](safe-attachments.md)</li><li>[Bezpieczne linki](safe-links.md)</li><li>[Sejf załączników do SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Ochrona przed wyłudzaniem informacji w programie Defender dla Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Wykrywanie w czasie rzeczywistym](threat-explorer.md)</li></ul>|Funkcje usługi Defender Office 365 Plan 1 <p> --- plus --- <p> Funkcje automatyzacji, badań, rozwiązywania problemów i edukacji: <ul><li>[Śledzenie zagrożeń](threat-trackers.md)</li><li>[Eksplorator zagrożeń](threat-explorer.md)</li><li>[Zautomatyzowane badanie i odpowiedź](office-365-air.md)</li><li>[Szkolenie z symeny ataków](attack-simulation-training.md)</li><li>[Microsoft 365 Defender zaawansowanego chłonia](advanced-hunting-overview.md)</li><li>[Microsoft 365 Defender zdarzenia](investigate-incidents.md)</li><li>[Microsoft 365 Defender alerty](investigate-alerts.md)</li></ul>|
+|Funkcje konfiguracji, ochrony i wykrywania: <ul><li>[Sejf załączników](safe-attachments.md)</li><li>[Bezpieczne linki](safe-links.md)</li><li>[Sejf załączników do SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Ochrona przed wyłudzaniem informacji w programie Defender dla Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Wykrywanie w czasie rzeczywistym](threat-explorer.md)</li></ul>|Funkcje usługi Defender Office 365 Plan 1 <p> --- plus --- <p> Funkcje automatyzacji, badań, rozwiązywania problemów i edukacji: <ul><li>[Śledzenie zagrożeń](threat-trackers.md)</li><li>[Eksplorator zagrożeń](threat-explorer.md)</li><li>[Zautomatyzowane badanie i odpowiedź](office-365-air.md)</li><li>[Szkolenie z symeny ataków](attack-simulation-training.md)</li><li>[Aktywne wyszukiwanie zagrożeń za pomocą zaawansowanego wyszukiwania w Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Badanie zdarzeń w Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Badanie alertów w programie Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
 
 
 - Usługa Microsoft Defender dla Office 365 Plan 2 jest zawarta Office 365 E5, Office 365 A5 i Microsoft 365 E5.

@@ -13,14 +13,14 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3ffd18a0b2a0e81f2f3a425434f5e786d8dc598d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 9df9c387f24671d6790d9219590eeac490f2f1aa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "62996760"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328137"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Ochrona chmury i przesyłanie próbek w aplikacji Program antywirusowy Microsoft Defender
 
@@ -140,3 +140,5 @@ Istnieją jeszcze dwa scenariusze, w których usługa Defender for Endpoint moż
 ## <a name="see-also"></a>Zobacz też
 
 [Omówienie ochrony następnej generacji](next-generation-protection.md)
+
+[Konfigurowanie działań naprawczych Program antywirusowy Microsoft Defender wykrywania błędów.](configure-remediation-microsoft-defender-antivirus.md)

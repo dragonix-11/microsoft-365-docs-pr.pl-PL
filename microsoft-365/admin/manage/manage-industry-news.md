@@ -2,8 +2,8 @@
 title: Zarządzanie wiadomościami branżowymi
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Udostępnij użytkownikom aktualne nagłówki wiadomości na temat swojej branży i informacje z Twojej organizacji, użyj usługi wiadomości, aby włączyć niestandardowy kanał aktualności dla organizacji.
-ms.openlocfilehash: f53f9d7d52a68c29f1225dd38df90d9c4c3e72e2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 717c43861031611d3a71e9f0c7e0490ac2368e3b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983940"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319773"
 ---
 # <a name="manage-industry-news"></a>Zarządzanie wiadomościami branżowymi
 

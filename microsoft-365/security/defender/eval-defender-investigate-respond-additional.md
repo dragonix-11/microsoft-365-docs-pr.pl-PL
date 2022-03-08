@@ -11,8 +11,8 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 362e8360900f53d7bfc9eccf12d1107091860cb9
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63014926"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324091"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Wypróbuj Microsoft 365 Defender reagowania na zdarzenia w środowisku pilotażowym
 

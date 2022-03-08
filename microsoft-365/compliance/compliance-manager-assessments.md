@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Twórz oceny w Menedżerze zgodności firmy Microsoft, aby ułatwić spełnianie wymagań przepisów i certyfikatów ważnych dla Twojej organizacji.
-ms.openlocfilehash: 950178b638b020e9d44301db3a335c73bbb55311
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 59f2bd89a798567d51c3e28fda574e7b9f0ba326
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016075"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319535"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Tworzenie ocen i zarządzanie nimi w Menedżerze zgodności
 
@@ -180,9 +180,11 @@ Dowiedz się więcej o [tym, w jaki sposób są śledzone i poprawiane mechanizm
 
 Gdy jest dostępna aktualizacja w celu oceny, zostanie wyświetlony powiadomienie i będzie można zaakceptować aktualizację lub odroczyć ją na później.
 
+Dostępne są aktualizacje dla formularzy oceniania opartych na szablonach firmy Microsoft, takich jak przeznaczone do używania z Microsoft 365. Jeśli Twoja organizacja używa szablonów uniwersalnych do oceny innych produktów, dziedziczenie może nie być obsługiwane. Aby uzyskać więcej informacji, zobacz [Rozszerzanie szablonów formularzy oceniania](compliance-manager-templates-extend.md).
+
 ### <a name="what-causes-an-update"></a>Co powoduje aktualizację
 
-Aktualizacja oceny występuje w przypadku zmian szablonu źródłowego, które wpływają na wynik. Zmiany mogą obejmować dopasowywanie mapowania kontrolek lub innych wskazówek na podstawie zmian prawnych lub zmian w produktach. Aktualizacje oceny mogą pochodzić z Twojej organizacji (na przykład w przypadku zmodyfikowania szablonu niestandardowego oraz od firmy Microsoft).[](compliance-manager-templates-modify.md)
+Aktualizacja oceny występuje w przypadku zmian szablonu źródłowego, które wpływają na wynik. Zmiany mogą obejmować dopasowywanie mapowania kontrolek lub innych wskazówek na podstawie zmian prawnych lub zmian w produktach. Aktualizacje oceny mogą pochodzić od Twojej organizacji (na przykład w przypadku zmodyfikowania szablonu niestandardowego [) oraz](compliance-manager-templates-modify.md) od firmy Microsoft.
 
 Jeśli firma Microsoft aktualizuje rozszerzony szablon Menedżera zgodności, twoja ocena odziedziczy te aktualizacje po ich zaakceptowaniu. Podczas rozszerzonej oceny zostaną zachowają dodatkowe atrybuty zastosowane do oceny.
 

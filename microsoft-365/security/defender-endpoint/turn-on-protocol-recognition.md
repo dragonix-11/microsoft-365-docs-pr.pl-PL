@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/07/2021
+ms.date: 02/21/2022
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cbb9b50714d252d86fcbaed9b43684351f903251
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 221eff4af6bf8e77f29db84694bf3a683107fc8c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997264"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325183"
 ---
 # <a name="turn-on-protocol-recognition"></a>Włączanie rozpoznawania protokołów
 
@@ -33,6 +33,9 @@ ms.locfileid: "62997264"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 To ustawienie zasad umożliwia skonfigurowanie rozpoznawania protokołów w celu ochrony sieci przed wykorzystywaniem luk w zabezpieczeniach, które są znane. Włączenie lub nieskonfigurowane tego ustawienia spowoduje włączenie rozpoznawania protokołów. Wyłączenie tego ustawienia spowoduje wyłączenie rozpoznawania protokołów.
+
+[!IMPORTANT]
+To ustawienie jest teraz przestarzałe. 
 
 ## <a name="use-group-policy-to-configure-protocol-recognition"></a>Konfigurowanie rozpoznawania zasady grupy przy użyciu protokołu
 

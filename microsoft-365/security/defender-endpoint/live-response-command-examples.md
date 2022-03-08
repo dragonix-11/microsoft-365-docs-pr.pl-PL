@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c91c0c5afc449d2e8fdfc415fae83fcc2c913c6a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 325146ba7ed40e27c50eaca490c70d3988b1198f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010378"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312665"
 ---
 # <a name="live-response-command-examples"></a>Przykłady poleceń odpowiedzi na żywo
 
@@ -180,7 +180,7 @@ registry HKEY_CURRENT_USER\Console
 ```
 
 ```console
-# Show information about a specific registry value
+# Show information about a specific registry value (the double backslash \\ indicates a registry value versus key)
 registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
@@ -195,6 +195,11 @@ remediate file c:\Users\user\Desktop\malware.exe
 ```console
 # Remediate process with specific PID
 remediate process 7960
+```
+
+```console
+# Remediate a registry value (the double backslash \\ indicates a registry value versus key)
+remediate registry HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\\SPStartup
 ```
 
 ```console

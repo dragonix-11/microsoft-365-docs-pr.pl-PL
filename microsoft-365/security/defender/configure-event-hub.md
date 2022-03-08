@@ -15,18 +15,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: 71149412285d7d9540c80ef3ad89dc3b0a6a6208
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 034e577b4040e72f32a8e30b3f902c0d0bc2b8f8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "63004707"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315389"
 ---
 # <a name="configure-your-event-hub"></a>Konfigurowanie Centrum zdarzeń
 

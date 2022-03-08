@@ -24,19 +24,22 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Dowiedz się, jak za Microsoft 365 dla firm przywrócić ustawienia fabryczne Windows 10, które zarządzasz, przywracając im oryginalne ustawienia przy zakupie.
-ms.openlocfilehash: eeacb9cbfb6e6f4ea7ccc9db9b3f387070bce37e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak używać platformy Microsoft 365 dla firm do przywracania ustawień fabrycznych na urządzeniach z systemem Windows 10, które zarządzasz, przywracając im oryginalne ustawienia przy zakupie.
+ms.openlocfilehash: d7c1ceb2f0e57246bb1aa6324a196460539af8d6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984082"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313737"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Przywracanie ustawień fabrycznych na urządzeniach z systemem Windows 10
 
-Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
+Ten artykuł dotyczy usługi Microsoft 365 Business Premium.
 
-Przywrócenie ustawień fabrycznych powoduje zastosowanie na urządzeniu oryginalnych ustawień, które obowiązywały na nim w chwili zakupu. Wszystkie aplikacje i dane, które zostały zainstalowane na urządzeniu po zakupie, też zostaną usunięte. Za pomocą usługi Microsoft 365 dla firm możesz przywrócić ustawienia fabryczne Windows 10 urządzeniach, które zarządzasz.
+> [!NOTE]
+> Od 1 marca 2022 r. usługa Microsoft Defender dla firm jest wprowadzana u klientów usługi Microsoft 365 Business Premium. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
+
+Przywrócenie ustawień fabrycznych powoduje zastosowanie na urządzeniu oryginalnych ustawień, które obowiązywały na nim w chwili zakupu. Wszystkie aplikacje i dane, które zostały zainstalowane na urządzeniu po zakupie, też zostaną usunięte. Za pomocą platformy Microsoft 365 dla firm możesz przywrócić ustawienia fabryczne na urządzeniach z systemem Windows 10, które zarządzasz.
   
 1. Przejdź do centrum administracyjnego w stronie <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
@@ -47,4 +50,6 @@ Przywrócenie ustawień fabrycznych powoduje zastosowanie na urządzeniu orygina
 4. W okienku **Czy na pewno chcesz przywrócić ustawienia fabryczne na poniższych urządzeniach** wybierz pozycję **Potwierdź** \> **Zamknij**.
     
   
+## <a name="see-also"></a>Zobacz też
 
+[10 najlepszych sposobów zabezpieczania planów platformy Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

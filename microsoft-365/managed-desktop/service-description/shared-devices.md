@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 3682087e47db062240b001e8631f73ae8cbc1cda
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 45729a40ecab2548b3125559ac3a971e5134f190
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "63015419"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320805"
 ---
 # <a name="shared-devices"></a>Urządzenia udostępnione
 
@@ -49,12 +49,12 @@ Tryb urządzenia udostępnionego nie jest dobrym wyborem w takich sytuacjach:
 
 Niezależnie od tego, czy Rejestracja jest przez Ciebie czy partnera, możesz zdecydować się na użycie trybu urządzenia udostępnionego.
 
-Jeśli rejestrujesz urządzenia samodzielnie, wykonaj czynności opisane w tece Rejestrowanie nowych urządzeń [samodzielnie, a](../get-started/register-devices-self.md) następnie dodaj je do grupy Nowoczesne urządzenia w miejscu pracy **— Tryb urządzenia udostępnionego** .
+Jeśli rejestrujesz urządzenia samodzielnie, wykonaj czynności opisane w tece Ręczna [rejestracja, a](../get-started/manual-registration.md) następnie dodaj je do grupy Nowoczesne urządzenia miejsca pracy **— Tryb współużytkowania** urządzenia.
 
 > [!WARNING]
 > Nie próbuj konwertować żadnych istniejących Microsoft Managed Desktop na tryb urządzenia udostępnione, po prostu dodając je do tej grupy. Stosowane zasady mogą potencjalnie powodować trwałe OneDrive plików.
 
-Jeśli masz partnera, który zarejestruje urządzenia, wykonaj czynności opisane w krokach rejestrowania urządzeń przez partnerów [, ale](../get-started/register-devices-partner.md) dołącz pole **-Shared** do tagu grupy, jak pokazano w poniższej tabeli:
+Jeśli masz urządzenia zarejestrowania przez partnera, wykonaj czynności opisane w tece [Rejestracja](../get-started/partner-registration.md) partnera, ale dołącz do tagu grupy wpis **-Shared** , jak pokazano w poniższej tabeli:
 
 | Profil urządzenia | Tag grupy rozwiązania Autopilot (tryb standardowy) | Tag grupy (tryb urządzenia udostępnionego) |
 | ----- | ----- | ----- |
@@ -125,7 +125,7 @@ Microsoft Managed Desktop domyślnie wyłącza Portal firmy dla urządzeń w try
 > [!CAUTION]
 > Portal firmy nie obsługuje aplikacji przypisanych do grup urządzeń, jeśli są dostępne.
 
-### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>Ponowne rozsuniecie Aplikacje Microsoft 365 dla przedsiębiorstw
+### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>Ponowne rozsuniecie Aplikacje Microsoft 365 dla Enterprise
 
 Jeśli podczas publicznej wersji zapoznawczej należy ponownie Aplikacje Microsoft 365, użytkownicy muszą skontaktować się z lokalnym personelem pomocy technicznej, aby poprosić agenta o zainstalowanie pakietu Aplikacje Microsoft 365 dla przedsiębiorstw na tym urządzeniu.
 

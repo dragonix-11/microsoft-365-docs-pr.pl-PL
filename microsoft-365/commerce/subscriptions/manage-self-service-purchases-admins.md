@@ -2,8 +2,8 @@
 title: Zarządzanie zakupami samoobsługi (administratorzy)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_ssp
 - AdminSurgePortfolio
 - okr_smb
-- commerce_ssp
 search.appverid:
 - MET150
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zakupami samoobsługi dokonanmi przez użytkowników w ich organizacji.
 ms.date: 03/26/2021
-ms.openlocfilehash: 854a013779f9d1b3d141b1770860740f633e8130
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 19f276107de7b1dd1053e500d249950a8700ac41
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62998764"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319731"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Zarządzanie zakupami samoobsługi (administrator)
 

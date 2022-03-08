@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych elektronicznej dokumentacji opieki zdrowotnej (EHR) z systemu opieki zdrowotnej do systemu Microsoft 365. Dzięki temu możesz używać danych EHR w zasadach zarządzania ryzykiem w niejawnym programie testów w celu wykrywania nieautoryzowanego dostępu do danych pacjentów przez Twoich pracowników.
-ms.openlocfilehash: 1be80dea0bd5692f07edbe34df1bf61cd85f3337
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 7fac743afe76e0cc3f5ae44cbd1236a2f7b3c0d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009788"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327031"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Konfigurowanie łącznika do importowania danych inspekcji EHR opieki zdrowotnej (wersja zapoznawcza)
 
@@ -39,7 +39,7 @@ Konfigurowanie łącznika opieki zdrowotnej obejmuje następujące zadania:
 
 ## <a name="before-you-set-up-the-connector"></a>Przed skonfigurowaniem łącznika
 
-- Użytkownik, który tworzy łącznik opieki zdrowotnej w kroku 3, musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który tworzy łącznik opieki zdrowotnej w kroku 3, musi mieć przypisaną rolę Administrator łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Należy określić, jak codziennie pobierać i eksportować dane z systemu EHR opieki zdrowotnej organizacji i utworzyć plik tekstowy opisany w kroku 2. Skrypt uruchomiony w kroku 4 wypchnie dane z pliku tekstowego do punktu końcowego interfejsu API.
 

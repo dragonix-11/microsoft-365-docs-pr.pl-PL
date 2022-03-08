@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d4052ef2e73b7b81630c8013e17cad533383b215
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 3179ab18ab27bb41f5c0b1577d73ff48b3470b98
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "63018969"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326079"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurowanie programu Microsoft Defender dla punktu końcowego w funkcjach systemu iOS
 
@@ -47,7 +47,9 @@ Program Microsoft Defender for Endpoint ma możliwość wykrywania urządzeń ni
 
 ## <a name="web-protection-and-vpn"></a>Ochrona sieci Web i sieć VPN
 
-Domyślnie program Defender for Endpoint w systemie iOS zawiera i włącza funkcję ochrony sieci Web. [Ochrona sieci Web](web-protection-overview.md) pomaga zabezpieczyć urządzenia przed zagrożeniami internetowymi i chronić użytkowników przed atakami wyłudzających informacje. W celu zapewnienia tej ochrony usługa Defender for Endpoint w systemie iOS używa połączenia VPN. Pamiętaj, że jest to lokalny interfejs VPN i w przeciwieństwie do tradycyjnych sieci VPN ruch sieciowy nie jest wysyłany poza urządzenie.
+Domyślnie program Defender for Endpoint w systemie iOS zawiera i włącza funkcję ochrony sieci Web. [Ochrona sieci Web](web-protection-overview.md) pomaga zabezpieczyć urządzenia przed zagrożeniami internetowymi i chronić użytkowników przed atakami wyłudzających informacje. Pamiętaj, że w ramach ochrony sieci Web są obsługiwane wskaźniki ochrony przed wyłudzaniem informacji i niestandardowe wskaźniki (adresy URL i IP). Filtrowanie zawartości sieci Web nie jest obecnie obsługiwane w systemie iOS.
+
+W celu zapewnienia tej funkcji usługa Defender for Endpoint w systemie iOS używa połączenia VPN. Pamiętaj, że jest to lokalny interfejs VPN i w przeciwieństwie do tradycyjnych sieci VPN ruch sieciowy nie jest wysyłany poza urządzenie.
 
 Gdy ta funkcja jest domyślnie włączona, może być konieczne wyłączenie połączenia VPN w niektórych przypadkach. Na przykład chcesz uruchomić niektóre aplikacje, które nie działają po skonfigurowaniu połączenia VPN. W takich przypadkach możesz wyłączyć połączenie VPN z aplikacji na urządzeniu, korzystając z poniższych kroków:
 

@@ -2,8 +2,8 @@
 title: Uaktualnianie z subskrypcji Office 365 E4
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- customer-email
 - commerce_subscriptions
+- customer-email
 - admindeeplinkMAC
 search.appverid: MET150
 description: Dowiedz się, jak uaktualnić subskrypcję Office 365 E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c028106e13c12c3d9c702262911a251080cefb6a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 60e7cb7c97255f3588c99a0eb66bc7c8379de8b9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62998832"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316341"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Uaktualnianie z subskrypcji Office 365 E4
 

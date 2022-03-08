@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik danych usługi Slack eDiscovery dostarczony przez firmę Microsoft i używać go do importowania i archiwizowania danych wiadomości błyskawicznych.
-ms.openlocfilehash: 71369f2330193120f252d108641e99434c9fba78
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 58401130726a7211eaad5b5c25985b534b68b0b8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "63018982"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312365"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Konfigurowanie łącznika do archiwizowania danych zbierania elektronicznych materiałów dowodowych w u zapasie czasu (wersja zapoznawcza)
 
@@ -41,9 +41,9 @@ Poniższe omówienie przedstawia proces używania łącznika danych firmy Micros
 
 - Użytkownik tworzący łącznik danych musi mieć przypisaną **rolę aplikacji** Właściciele organizacji w swojej organizacji slack. Aby uzyskać więcej informacji, [zobacz Typy ról w uciekcie.](https://slack.com/intl/en-gb/help/articles/360018112273-Types-of-roles-in-Slack)
 
-- Uzyskaj nazwę użytkownika i hasło do konta firmowego Slack swojej organizacji. Poświadczenia te są używane do logowania się do tego konta podczas tworzenia łącznika danych. Zalecane jest również automatyczne inicjowanie obsługi użytkowników w organizacji usługi Slack skonfigurowane do korzystania z logowania jednokrotnego (SSO).
+- Uzyskaj nazwę użytkownika i hasło do konta firmowego Slack swojej organizacji. Poświadczenia te są używane do logowania się do tego konta podczas tworzenia łącznika danych. Zalecane jest również automatyczne inicjowanie obsługi użytkowników w organizacji usługi Slack skonfigurowane do korzystania z logowania jednokrotnego (SSO). [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Użytkownik tworzący łącznik usługi Slack eDiscovery musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Domyślnie ta rola nie jest przypisana do grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który tworzy łącznik usługi Slack eDiscovery, musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>Krok 1. Tworzenie łącznika zbierania elektronicznych materiałów dowodowych w u zapasie czasu
 

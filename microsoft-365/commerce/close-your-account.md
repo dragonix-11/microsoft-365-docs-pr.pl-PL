@@ -2,8 +2,8 @@
 title: Zamykanie konta
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
-- commerce_subscription
 - AdminTemplateSet
 search.appverid: MET150
 description: Po zamknięciu konta w firmie Microsoft wszystkie związane z nim informacje, w tym licencje, użytkownicy i dane użytkownika, zostaną usunięte.
 ms.date: 04/02/2021
-ms.openlocfilehash: bfa5243eab6826626410ee54659a351f8ca7711a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b1ac828d047d2c2b9f39185a66ccc77976b8324b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995989"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317293"
 ---
 # <a name="close-your-account"></a>Zamykanie konta
 

@@ -12,24 +12,24 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 83ba5e60d77cd4b68834efeceb4572639348d122
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 65517399425fa71b2d4123da6103f9f15784db38
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "63026809"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327241"
 ---
 # <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft Managed Desktop obsługiwane regiony
 
-Ten artykuł zawiera szczegółowe informacje na temat regionów, w których można Microsoft Managed Desktop i gdzie jest obsługiwane. Aby uzyskać więcej informacji o językach obsługiwanych Microsoft Managed Desktop obsługi użytkownika, zobacz [Localize devices for users (Localize devices for users).](../get-started/localization.md)
+Ten artykuł zawiera szczegółowe informacje o regionach, w których są Microsoft Managed Desktop.
 
-Nadal możesz korzystać z urządzeń zarządzanych poza tymi regionami bez zakłóceń w Microsoft Managed Desktop sieci. Na przykład pracownik z Wielkiej Brytanii może pracować bezpiecznie i odbierać aktualizacje na swoim urządzeniu zarządzanym, gdy podróżuje w Azji, Europie lub Ameryce Południowej.
+Nadal możesz korzystać z urządzeń zarządzanych poza tymi regionami bez zakłóceń w Microsoft Managed Desktop sieci. Na przykład pracownik w Zjednoczonym Królestwie może pracować bezpiecznie i otrzymywać aktualizacje na swoim urządzeniu zarządzanym podczas podróży do Azji, Europy lub Ameryki Południowej.
 
-Aby uzyskać więcej informacji na temat języków obsługiwanych Microsoft Managed Desktop obsługi użytkowników i administratorów, zobacz [Localize the user experience (Localize the user experience).](../get-started/localization.md)
+Aby uzyskać więcej informacji o językach obsługiwanych Microsoft Managed Desktop, zobacz [Localize devices for users (Localize devices for users).](../get-started/localization.md)
 
 Aby uzyskać więcej informacji na temat obsługi użytkowników w Microsoft Managed Desktop, zobacz [Pomoc techniczna dla Microsoft Managed Desktop](support.md).
 
-## <a name="availability-of-the-service"></a>Dostępność usługi
+## <a name="service-availability"></a>Dostępność usługi
 
 Organizacje w następujących krajach mogą subskrybować Microsoft Managed Desktop:
 
@@ -47,4 +47,3 @@ Organizacje w następujących krajach mogą subskrybować Microsoft Managed Desk
 - Islandia
 - Australia
 - Nowa Zelandia
-

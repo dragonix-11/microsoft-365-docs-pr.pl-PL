@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6dd14da2955cf9ee701f7b2bf6031bf27c78beda
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a2763cdd670ee3916dfe4e9d3cbd42df21709f41
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998100"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316019"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Pobieranie analizatora klienta programu Microsoft Defender for Endpoint
 

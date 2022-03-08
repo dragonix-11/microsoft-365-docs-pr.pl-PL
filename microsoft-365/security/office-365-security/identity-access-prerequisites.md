@@ -1,8 +1,8 @@
 ---
 title: Wymagania wstępne są wymagane do wdrożenia zasad dostępu do urządzeń i tożsamości — Microsoft 365 dla przedsiębiorstw i | Microsoft Docs
 description: W tym artykule opisano wymagania wstępne, które należy spełnić, aby korzystać z zasad i konfiguracji dostępu do urządzeń i tożsamości bez zaufania.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.prod: m365-security
 ms.topic: article
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ba9694be615f0c669ed0b9c319909551ccf02315
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 1dbcfbff2a45cd3dfbc453f84eaa73e178174aee
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63009558"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312015"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Wymagania wstępne dotyczące wdrażania zasad dostępu do urządzeń i tożsamości zerowego zaufania
 

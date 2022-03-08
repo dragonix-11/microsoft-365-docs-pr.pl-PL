@@ -9,12 +9,12 @@ manager: dougeby
 ms.topic: article
 ms.custom: intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: e001845deb7cf1a739fcbe9d53ac1e971d6d09b8
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: aa6ee44820d0c49fa60696e3647752f28cd10c21
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62970575"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315431"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Wprowadzenie do Microsoft Managed Desktop
 
@@ -33,7 +33,7 @@ Po zakończeniu rejestracji wykonaj poniższe czynności, aby skonfigurować us�
 1. Wdrażanie i [przypisywanie Intune — Portal firmy](company-portal.md).
 1. [Przypisywanie licencji](assign-licenses.md).
 1. [Wdychuj aplikacje](deploy-apps.md).
-1. [Konfigurowanie urządzeń](set-up-devices.md).
+1. [Przygotowywanie urządzeń](prepare-devices.md).
 1. Skonfiguruj środowisko [pierwszego uruchomienia za pomocą rozwiązania Autopilot i strony stanu rejestracji](esp-first-run.md).
 1. [Włączanie funkcji pomocy technicznej dla użytkowników](enable-support.md).
 1. [Przygotuj użytkowników do korzystania z urządzeń](get-started-devices.md).

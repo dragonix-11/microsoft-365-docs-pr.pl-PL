@@ -14,14 +14,14 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: fab57a3cb63823dcd4538f2b4bb381972d310c64
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63013764"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327661"
 ---
 # <a name="enable-controlled-folder-access"></a>Włączanie kontrolowanego dostępu do folderu
 

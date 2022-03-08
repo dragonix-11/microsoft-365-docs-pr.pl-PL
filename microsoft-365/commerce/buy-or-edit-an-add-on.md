@@ -2,8 +2,8 @@
 title: Kupowanie dodatków i zarządzanie nimi
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -15,18 +15,18 @@ ms.collection:
 - Adm_O365
 search.appverid: MET150
 ms.custom:
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - AdminTemplateSet
 description: Dowiedz się, jak kupować dodatki i zarządzać nimi w ramach subskrypcji usługi Microsoft 365 dla firm.
 ms.date: 04/02/2021
-ms.openlocfilehash: 5b7bedc12cd8e8a0813689e42723f981561eb2c1
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ef24e1f6b743c19adc1e7f3120d76e90ebd82192
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995958"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329281"
 ---
 # <a name="buy-or-manage-add-ons"></a>Kupowanie dodatków i zarządzanie nimi
 

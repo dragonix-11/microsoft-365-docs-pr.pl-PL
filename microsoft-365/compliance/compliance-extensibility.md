@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o rozszerzaniu Microsoft 365 zgodności przy użyciu łączników danych i interfejsów API usługi Microsoft Graph firmy Microsoft.
-ms.openlocfilehash: 1127064394e5b4873adb046e2b0540b361064c9d
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 0632de40141b86e6dfdebf3f5c3a97ca50219357
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019381"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330541"
 ---
 # <a name="microsoft-365-compliance-and-microsoft-priva-extensibility"></a>Microsoft 365 zgodności i rozszerzalność usługi Microsoft Priva
 
@@ -49,7 +49,7 @@ Wiele łączników danych dostępnych w p Centrum zgodności platformy Microsoft
 
 W przypadku łączników danych w Centrum zgodności platformy Microsoft 365 dostarczonych przez jednego z partnerów firmy Microsoft Twoja organizacja będzie potrzebować relacji biznesowej z tym partnerem, aby można było wdrożyć łącznik.
 
-Wymagania licencyjne dotyczące łączników danych innych firm można znaleźć w sekcji "Łączniki danych" Microsoft 365 wskazówki dotyczące licencjonowania w celu zapewnienia zgodności & [zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Aby uzyskać wskazówki i wymagania dotyczące łączników danych innych firm, zobacz sekcję "Łączniki danych" w te Microsoft 365 wskazówki dotyczące zgodności & zabezpieczeń — opisy [| Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="apis"></a>Interfejsy API
 

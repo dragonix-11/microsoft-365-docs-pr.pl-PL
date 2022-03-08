@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Zazwyczaj jest to część rozwiązania do zarządzania rekordami, które pozwala skonfigurować etykietę przechowywania w celu rozpoczęcia okresu przechowywania na podstawie identyfikowanego zdarzenia.
-ms.openlocfilehash: c4195f7e5a859cf5a1078566728be5b8567cf5b9
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: ad5fb2ef567525fa021acb0388ebc5cc98b1148c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016020"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313303"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Rozpoczynanie przechowywania w przypadku wystąpienia zdarzenia
 
@@ -120,7 +120,7 @@ Na stronie **Definiowanie ustawień przechowywania** w celu rozpoczęcia okresu 
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Krok 3. Publikowanie lub automatyczne stosowanie etykiet przechowywania opartych na zdarzeniach
 
 Aby etykieta była ręcznie lub automatycznie stosowana do zawartości, podobnie jak każda etykieta przechowywania, trzeba opublikować lub automatycznie zastosować etykietę opartą na zdarzeniach:
-- [Tworzenie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
+- [Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
 - [Automatyczne stosowanie etykiety przechowywania do zawartości](apply-retention-labels-automatically.md)
 
 ### <a name="step-4-enter-an-asset-id"></a>Krok 4. Wprowadzanie identyfikatora środka trwałego

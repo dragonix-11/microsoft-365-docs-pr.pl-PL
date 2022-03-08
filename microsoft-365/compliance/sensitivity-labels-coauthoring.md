@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Włącz ustawienie umożliwiające współtworzenie i autozazawdanie w aplikacjach klasycznych dla dokumentów oznaczonych i zaszyfrowanych w aplikacjach pakietu SharePoint i OneDrive.
-ms.openlocfilehash: 8be6fc228a623f3a1f76efdf56354ba30beb9650
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 252d32e0f301bf332bf8143082ec86be2f1072ea
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63019244"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320049"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Włączanie współtworowania plików zaszyfrowanych przy użyciu etykiet wrażliwości
 
@@ -41,11 +41,11 @@ Aby przeczytać ogłoszenie o wydaniu, zobacz wpis [w blogu Współtworowanie Mi
 
 Przed włączeniem ustawienia obsługi współtworzeń dla aplikacji klasycznych Office należy zrozumieć, że ta akcja wprowadza zmiany w metadanych etykiet, które są zapisywane i odczytywane z Office plików.
 
-Metadane etykiet zawierają informacje identyfikujące dzierżawę i zastosowane etykiety wrażliwości. Zmiana, która powoduje to ustawienie, to format i lokalizacja metadanych dla plików programu Word, Excel i PowerPoint plików. Nie musisz nic robić w przypadku zaszyfrowanych plików ani wiadomości e-mail. Zmiana metadanych w przypadku zaszyfrowanych plików jest zgodna z poprzednimi wersjami i nie ma żadnych zmian w wiadomościach e-mail. Musisz jednak pamiętać o zmianach metadanych w przypadku zaszyfrowanych plików, które można uaktualnić automatycznie, ale nie są zgodne z poprzednimi wersjami.
+Metadane etykiet zawierają informacje identyfikujące dzierżawę i zastosowane etykiety wrażliwości. Zmiana, która powoduje to ustawienie, to format i lokalizacja metadanych dla plików programu Word, Excel i PowerPoint plików. W przypadku zaszyfrowanych plików lub wiadomości e-mail nie trzeba nic zmieniać, ponieważ metadane w przypadku zaszyfrowanych plików są zgodne ze starszymi wersjami, a w przypadku wiadomości e-mail nie ma żadnych zmian. Musisz jednak pamiętać o zmianach metadanych w przypadku zaszyfrowanych plików, które można uaktualnić automatycznie, ale nie są zgodne z poprzednimi wersjami.
 
 Ta zmiana dotyczy zarówno plików, które są nowo oznaczonymi etykietami, jak i plików, które zostały już oznaczone etykietą. Jeśli korzystasz z aplikacji i usług, które obsługują ustawienie współtworowania:
 - W przypadku plików o nowo oznaczonych etykietach w metadanych etykiet jest używany tylko nowy format i lokalizacja.
-- W przypadku plików, które są już oznaczone etykietą, przy następnym otwarciu i zapisaniu pliku, jeśli plik ma metadane w starym formacie i lokalizacji, zostanie skopiowany do nowego formatu i lokalizacji.
+- W przypadku plików, które są już oznaczone etykietą, przy następnym otwarciu i zapisaniu pliku, jeśli plik ma metadane w starym formacie i lokalizacji, informacje te zostaną skopiowane do nowego formatu i lokalizacji.
 
 Więcej informacji o tej zmianie metadanych można znaleźć w następujących zasobach:
 
@@ -81,8 +81,8 @@ Przed włączeniem tej funkcji upewnij się, że rozumiesz poniższe wymagania w
 - Aplikacje Microsoft 365 dla przedsiębiorstw:
     - **Windows**: Minimalna wersja 2107 z bieżącego kanału lub z miesięcznego Enterprise kanału
     - **macOS**: Minimalna wersja 16.51
-    - **iOS**: Jeszcze nie obsługiwane
-    - **Android**: Jeszcze nie obsługiwane
+    - **iOS**: Teraz w wersji Preview, jeśli [zdecydujesz się na](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) minimalną wersję 2.58
+    - **Android**: Teraz w wersji Preview, gdy [zdecydujesz się](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) na co najmniej wersję 16.0.14931
 
 - Wszystkie aplikacje, usługi i narzędzia operacyjne w dzierżawie muszą obsługiwać nowe [metadane z etykietami](#metadata-changes-for-sensitivity-labels). Jeśli korzystasz z dowolnej z następujących wersji, sprawdź minimalne wymagane wersje:
     
@@ -107,6 +107,12 @@ Microsoft 365 automatycznie obsługują nowe metadane etykiet po włączeniu tej
 - [Zasady DLP, w których etykiety wrażliwości są jako warunki](dlp-sensitivity-label-as-condition.md)
 - [Usługa Microsoft Defender dla aplikacji w chmurze skonfigurowana do stosowania etykiet wrażliwości](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
+### <a name="opt-in-to-the-preview-of-co-authoring-for-ios-and-android"></a>Opt in to the preview of co-authoring for iOS and Android
+
+Aby wypróbować wersję zapoznawczą współtworowania dla systemów iOS i Android, musisz mieć minimalne wersje określone w poprzedniej sekcji oraz poprosić o dodanie dzierżawy do wersji Preview: Zgoda na włączenie współtworowania plików zaszyfrowanych za pomocą etykiet wrażliwości na urządzeniu [przenośnym](https://ncv.microsoft.com/5Oob3oDj1O)
+
+Aby uzyskać więcej informacji, zobacz ogłoszenie w blogu: Współtworowanie dokumentów w zaszyfrowanych Microsoft Information Protection jest teraz dostępne w publicznej wersji zapoznawczej [na urządzeniach przenośnych](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
+
 ## <a name="limitations"></a>Ograniczenia
 
 Zanim włączysz ustawienie dzierżawy na temat współtworowania plików zaszyfrowanych przy użyciu etykiet wrażliwości, upewnij się, że rozumiesz następujące ograniczenia tej funkcji.
@@ -115,14 +121,14 @@ Zanim włączysz ustawienie dzierżawy na temat współtworowania plików zaszyf
     
     Dotyczy Excel: Metadane dla etykiety wrażliwości, która nie stosuje szyfrowania, można usunąć z pliku, jeśli ktoś edytuje i zapisuje ten plik przy użyciu wersji programu Excel, która nie obsługuje zmian metadanych w przypadku etykiet wrażliwości.
 
-- Office dla systemów iOS i Android nie są obecnie obsługiwane.
+- Obsługa Office dla systemów iOS i Android jest obecnie w wersji [Preview](https://office.com/insider).
 
 - Funkcja współtworzenia i autozazyskiwu nie są obsługiwane i nie działają w przypadku Office oznaczonych i zaszyfrowanych dokumentów z dowolną z następujących konfiguracji [szyfrowania:](encryption-sensitivity-labels.md#configure-encryption-settings)
     - **Umożliwianie użytkownikom przypisywania uprawnień** po zastosowaniu etykiety i pola wyboru W programach **Word, PowerPoint i Excel** zaznaczono pole wyboru Monituj użytkowników o określenie uprawnień. Ta konfiguracja jest niekiedy określana mianem "uprawnień zdefiniowanych przez użytkownika".
     - **Dla dostępu użytkownika do zawartości wygasa** jest ustawiona wartość inna niż **Nigdy**.
     - **Wybrana jest opcja Szyfrowanie podwójnym** kluczem.
     
-    W przypadku etykiet z dowolną z tych konfiguracji szyfrowania etykiety są wyświetlane Office aplikacjach. Jednak gdy użytkownicy zaznaczą te etykiety i nikt inny nie edytuje dokumentu, jest dla nich ostrzegany, że funkcja współtworzenia i autozasad nie będą dostępne. Jeśli ktoś inny edytuje dokument, użytkownik widzi komunikat, że etykiet nie można zastosować.
+    W przypadku etykiet z dowolną z tych konfiguracji szyfrowania etykiety są wyświetlane Office aplikacjach. Jednak gdy użytkownicy zaznaczą te etykiety, a nikt inny nie edytuje dokumentu, jest dla nich ostrzegany, że funkcja współtworzenia i autozazyskiwu nie będą dostępne. Jeśli ktoś inny edytuje dokument, użytkownik widzi komunikat, że etykiet nie można zastosować.
 
 - Jeśli korzystasz z ujednoliconego klienta etykiet usługi Azure Information Protection: Zapoznaj się z dokumentacją tego klienta z etykietami, aby uzyskać więcej wymagań [lub ograniczeń](/azure/information-protection/known-issues#known-issues-for-co-authoring). 
     > [!NOTE]
@@ -133,7 +139,7 @@ Zanim włączysz ustawienie dzierżawy na temat współtworowania plików zaszyf
 > [!CAUTION]
 > Włączenie tego ustawienia jest akcją jednokierunkową. Tę funkcję można włączyć dopiero po przeczytaniu i zrozumieniu zmian metadanych, wymagań wstępnych, ograniczeń i wszelkich znanych problemów udokumentowanych na tej stronie.
 
-Jeśli to ustawienie zostało już włączone w okresie podglądu, nie są wymagane żadne dalsze działania i możesz pominąć tę procedurę.
+Jeśli to ustawienie zostało już włączone w okresie podglądu, nie trzeba nic więcej akcji i możesz pominąć tę procedurę.
 
 1. Zaloguj [się do Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com) jako administrator globalny dzierżawy.
 
@@ -156,7 +162,7 @@ Po włączeniu współtworowania plików z etykietami wrażliwości dla dzierża
 
 ![Opcja, która pokazuje, że dla etykiet wrażliwości włączona jest współtwoer.](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Jak widać na zrzucie ekranu, gdy to ustawienie jest włączone, możesz skontaktować się z pomocą techniczną [firmy Microsoft](../admin/get-help-support.md) i poprosić o jego wyłączenie. To żądanie może potrwać kilka dni i konieczne będzie udowodnienie, że jesteś administratorem globalnym Twojej dzierżawy. Spodziewaj się normalnie naliczanych opłat za pomoc techniczną. 
+Jak widać na zrzucie ekranu, gdy to ustawienie jest włączone, możesz skontaktować się z pomocą techniczną [firmy Microsoft](../admin/get-help-support.md) i poprosić o jego wyłączenie. To żądanie może potrwać kilka dni i musisz udowodnić, że jesteś administratorem globalnym Twojej dzierżawy. Spodziewaj się normalnie naliczanych opłat za pomoc techniczną. 
 
 Jeśli inżynier pomocy technicznej wyłączy to ustawienie dla Twojej dzierżawy:
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,30 +16,35 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 2200c32d910a5afd20a8ff01c6e24625d72ae21c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 7df23c9f823f5c3c0435743f7a05cf4421704b32
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016587"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329799"
 ---
-# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business-preview"></a>Zarządzanie niestandardowymi regułami zasad zapory w programie Microsoft Defender dla firm (wersja Preview)
+# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Zarządzanie niestandardowymi regułami zasad zapory w programie Microsoft Defender dla firm
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
 
-Usługa Microsoft Defender dla firm (wersja Preview) zawiera zasady zapory, które pomagają chronić urządzenia przed niechcianym ruchem sieciowym. Reguły niestandardowe mogą umożliwiać definiowanie wyjątków dla zasad zapory. Oznacza to, że za pomocą reguł niestandardowych można blokować określone połączenia lub zezwalać na nie.
+Usługa Microsoft Defender dla firm zawiera zasady zapory, które pomagają chronić urządzenia przed niechcianym ruchem sieciowym. Reguły niestandardowe mogą umożliwiać definiowanie wyjątków dla zasad zapory. Oznacza to, że za pomocą reguł niestandardowych można blokować określone połączenia lub zezwalać na nie.
 
-Aby dowiedzieć się więcej o zasadach i ustawieniach zapory, zobacz [Zapora w programie Microsoft Defender dla firm (wersja Preview).](mdb-firewall.md)
+Aby dowiedzieć się więcej o zasadach i ustawieniach zapory, zobacz [Zapora w programie Microsoft Defender dla firm](mdb-firewall.md).
 
 **W tym artykule opisano, jak to zrobić**:
 
 - [Tworzenie reguły niestandardowej dla zasad zapory](#create-a-custom-rule-for-a-firewall-policy)
 - [Edytowanie reguły niestandardowej zasad zapory](#edit-a-custom-rule-for-a-firewall-policy)
 - [Usuwanie reguły niestandardowej](#delete-a-custom-rule)
+
+>
+> **Masz minutę?**
+> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+>
 
 ## <a name="create-a-custom-rule-for-a-firewall-policy"></a>Tworzenie reguły niestandardowej dla zasad zapory
 
@@ -105,8 +110,8 @@ Aby dowiedzieć się więcej o zasadach i ustawieniach zapory, zobacz [Zapora w 
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm (wersja Preview)](mdb-view-manage-incidents.md)
+- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md)
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm (wersja Preview)](mdb-respond-mitigate-threats.md)
+- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
 
 - [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md)

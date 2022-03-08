@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się, jak zarządzać samodzielnego resetowania hasła.
-ms.openlocfilehash: b8367d2ed2c088d56425b08c6da5dfd55fcd84b8
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: f9f8ef9a3c81281629c378fb4b55cd4c9a839c1d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "63007058"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311567"
 ---
 # <a name="manage-self-service-password-reset"></a>Zarządzanie samodzielnego resetowania hasła
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse umożliwia partnerom samodzielne Azure Active Directory (Azure AD) samodzielne resetowanie hasła (SSPR). Program SSPR umożliwia użytkownikom zmienianie lub resetowanie haseł bez angażowania pracowników pomocy technicznej. Jeśli konto użytkownika jest zablokowane lub zapomni hasło, może po wyświetleniu monitu odblokować użytkownika i wrócić do pracy. Ta możliwość zmniejsza liczbę rozmów przez pomoc do działu obsługi technicznej i utratę produktywności, gdy użytkownik nie może zalogować się na swoim urządzeniu lub w aplikacji.
 

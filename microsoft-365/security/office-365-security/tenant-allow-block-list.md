@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak zarządzać zezwalania i blokowania na liście zezwalania/blokowania dzierżawy w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7e3e56ccdaa59b39a6f65a63684b5b715db352e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e27da44a38162955df252e29c1754c93a2dc8967
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033762"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318567"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Zarządzanie listą zezwalania/blokowania dzierżawy
 
@@ -120,18 +120,21 @@ Aby zarządzać wszystkimi zezwalaniami i blokami, zobacz Dodawanie bloków na l
    - **Nadawcy**:
      - **Wartość**: domena lub adres e-mail nadawcy.
      - **Akcja**: Wartość **Zezwalaj lub** **Zablokuj**.
+     - **Zmodyfikowane przez**
      - **Ostatnia aktualizacja**
      - **Usuń w dniu**
      - **Uwagi**
    - **Adresy URL**:
      - **Wartość**: adres URL.
      - **Akcja**: Wartość **Zezwalaj lub** **Zablokuj**.
+     - **Zmodyfikowane przez**
      - **Ostatnia aktualizacja**
      - **Usuń w dniu**
      - **Uwagi**
    - **Pliki**
      - **Wartość**: skrót pliku.
      - **Akcja**: Wartość **Zezwalaj lub** **Zablokuj**.
+     - **Zmodyfikowane przez**
      - **Ostatnia aktualizacja**
      - **Usuń w dniu**
      - **Uwagi**
@@ -229,7 +232,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-Tena
 
 ## <a name="url-syntax-for-the-tenant-allowblock-list"></a>Składnia adresu URL dla listy zezwalania/blokowania dzierżawy
 
-- Adresy IP4v i IPv6 są dozwolone, ale porty TCP/UDP nie są.
+- Adresy IPv4 i IPv6 są dozwolone, ale porty TCP/UDP nie są.
 
 - Rozszerzenia filename nie są dozwolone (na przykład test.pdf).
 
@@ -268,7 +271,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Get-Tena
 
 - Wpisy adresów URL zawierające protokoły (na `http://`przykład : , `https://`lub `ftp://`) nie powiodą się, ponieważ wpisy adresów URL mają zastosowanie do wszystkich protokołów.
 
-- Nazwa użytkownika lub hasło nie są obsługiwane lub nie są wymagane.
+- Nazwa użytkownika lub hasło nie jest obsługiwane ani wymagane.
 
 - Cudzysłowy (' lub ") są nieprawidłowymi znakami.
 

@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-ms.custom: admindeeplinkMAC
+ms.custom:
+- admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: high
 description: Konfigurowanie SharePoint Syntex
-ms.openlocfilehash: 50a38a172a2904a649d4f4c31aa293c3c085bd31
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 244038e4c49801cad59bd9cf8939c47291c5270f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988017"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326947"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurowanie SharePoint Syntex
 

@@ -15,18 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się, jak zresetować hasło użytkownika.
-ms.openlocfilehash: 0840725ffb74072d6f5973aa7175066a31fe32bb
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+description: W przypadku dostawców usług zarządzanych (MSP) korzystających z usługi Microsoft 365 Lighthouse dowiedz się, jak zresetować hasło dla jednego użytkownika lub wielu ryzykownych użytkowników w różnych dzierżawach.
+ms.openlocfilehash: 5217db990816b8a1ec6ed927f8f9e05827cc215b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "63014803"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311553"
 ---
-# <a name="reset-user-password"></a>Resetowanie hasła użytkownika
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+# <a name="reset-a-user-password"></a>Resetowanie hasła użytkownika
 
 Microsoft 365 Lighthouse umożliwia zmianę lub zresetowanie haseł użytkowników. Hasło można zresetować dla jednego użytkownika lub wielu ryzykownych użytkowników z różnych dzierżaw.
 

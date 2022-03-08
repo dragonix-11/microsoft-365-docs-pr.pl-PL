@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Poznaj dostępne opcje tworzenia bezpiecznego środowiska udostępniania gości w aplikacji Microsoft 365, zapewniając dostęp gościa do ulepszonej współpracy.
-ms.openlocfilehash: ae616bcaa78aa759ca5b1f1be4b1beaf8d709a00
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014724"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323797"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Tworzenie bezpiecznego środowiska udostępniania gości
 
@@ -180,9 +181,9 @@ Aby ograniczyć dostęp gości do grup i witryn tylko w sieci Teams:
 
 Aby ograniczyć dostęp gości do sieci Web w SharePoint
 
-1. W centrum [SharePoint rozwiń](https://admin.microsoft.com/sharepoint) pozycję **Zasady i** kliknij pozycję **Kontrola dostępu**.
-2. Kliknij **pozycję Urządzenia niezamanektowane**.
-3. Wybierz opcję **Zezwalaj na ograniczony dostęp tylko do sieci** Web, a następnie kliknij przycisk **Zapisz**.
+1. W centrum SharePoint rozwiń pozycję **Zasady i** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Kontrola dostępu**</a>.
+2. Wybierz **pozycję Urządzenia niezamanektowane**.
+3. Wybierz opcję **Zezwalaj na ograniczony dostęp tylko w** sieci Web, a następnie wybierz pozycję **Zapisz**.
 
 Zwróć uwagę, że to ustawienie w centrum SharePoint administracyjnego powoduje utworzenie obsługi zasad dostępu warunkowego w usłudze Azure AD.
 

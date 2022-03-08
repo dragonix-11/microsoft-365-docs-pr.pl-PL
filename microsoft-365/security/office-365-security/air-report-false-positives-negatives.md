@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.prod: m365-security
 ms.date: 01/29/2021
 ms.localizationpriority: medium
@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: aaf3e052e29893f0584edd730cf80bd82c34257e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 98164fd42a0ed2e2d79e2319823363057d15e7d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021222"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318609"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Jak raportować wyniki fałszywie dodatnie/ujemne w funkcji automatycznego badania i odpowiedzi
 

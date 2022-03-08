@@ -2,13 +2,13 @@
 title: Połączenie rekordów DNS w witrynie Amazon Web Services (AWS), aby Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, usługi Skype dla firm Online i innych usług w witrynie Amazon Web Services (AWS) dla firmy Microsoft.
-ms.openlocfilehash: 27b1659a1a5e870a46a08786973ba857dc9ce939
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 49b2d36c6902617238973099621b59aba7dbc58e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989495"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313569"
 ---
 # <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Połączenie rekordów DNS w witrynie Amazon Web Services (AWS), aby Microsoft 365
 

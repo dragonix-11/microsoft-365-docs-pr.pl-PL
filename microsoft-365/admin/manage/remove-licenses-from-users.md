@@ -2,8 +2,8 @@
 title: Odbieranie licencji użytkownikom
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
@@ -15,20 +15,20 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- commerce_licensing
 - AdminSurgePortfolio
 - okr_smb
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: Metoda, za pomocą która służy do nieprzypisania licencji produktu, zależy od tego, czy licencje są nieprzypisane określonym użytkownikom, czy z konkretnego produktu.
 ms.date: 09/16/2021
-ms.openlocfilehash: 37475b1cc82b5b17ca15d030a06c31ce0cc3e72b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7308888c54a30cdd11618cb07a233f8bd55f27c2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995829"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321211"
 ---
 # <a name="unassign-licenses-from-users"></a>Odbieranie licencji użytkownikom
 

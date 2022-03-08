@@ -19,15 +19,16 @@ f1.keywords: NOCSH
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 recommendations: false
 description: Dowiedz się więcej na temat opcji ograniczania lub wyłączania udostępniania w Microsoft 365.
-ms.openlocfilehash: a34a1a457ed9c53f6393d65617f8ac0d9e611209
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: b2e327d5a5c670ada389a3dfceb2775e516ac2aa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "63020850"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323475"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Ograniczanie udostępniania w Microsoft 365
 
@@ -110,12 +111,13 @@ Aby wyłączyć żądania dostępu
 Możesz ograniczyć udostępnianie witryn do określonych domen, zezwalając na domeny danej witryny lub blokując je.
 
 Aby ograniczyć udostępnianie witryny według domeny
-1. W centrum SharePoint administracyjnego w obszarze **Witryny** kliknij pozycję **Aktywne witryny**.
-2. Kliknij witrynę, którą chcesz skonfigurować.
-3. Na karcie **Zasady** w obszarze Udostępnianie **zewnętrzne** kliknij pozycję **Edytuj**.
+
+1. W centrum SharePoint w **obszarze Witryny** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+2. Wybierz witrynę, którą chcesz skonfigurować.
+3. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** wybierz pozycję **Edytuj**.
 4. W **obszarze Zaawansowane ustawienia udostępniania zewnętrznego** wybierz **pozycję Ogranicz udostępnianie według domeny**.
-5. Dodaj domeny, które chcesz zezwolić lub zablokować, a następnie kliknij przycisk **Zapisz**.
-6. Kliknij **Zapisz**.
+5. Dodaj domeny, które chcesz zezwolić lub zablokować, a następnie wybierz pozycję **Zapisz**.
+6. Wybierz **Zapisz**.
 
     ![Zrzut ekranu przedstawiający ustawienie na poziomie witryny dozwolonych domen.](../media/limit-site-sharing-by-domain.png)
 
@@ -144,18 +146,19 @@ Aby ograniczyć udostępnianie witryn, plików i folderów do właścicieli
 Jeśli chcesz zapobiec udostępnianiu SharePoint lub OneDrive i folderów osobom spoza organizacji, możesz wyłączyć udostępnianie gości w całej organizacji lub dla poszczególnych witryn.
 
 Aby wyłączyć SharePoint udostępniania gościa w organizacji
-1. W centrum SharePoint w obszarze **Zasady** kliknij pozycję **Udostępnianie**.
+
+1. W centrum SharePoint w **obszarze Zasady** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
 2. W **obszarze Udostępnianie zewnętrzne** przeciągnij suwak SharePoint w dół do ustawienia Tylko osoby **w organizacji**.
-3. Kliknij **Zapisz**.
+3. Wybierz **Zapisz**.
 
     ![Zrzut ekranu SharePoint ustawienia udostępniania na poziomie organizacji ustawione na Każdy.](../media/sharepoint-tenant-sharing-off.png)
 
 
 Aby wyłączyć udostępnianie gości w witrynie
-1. W centrum SharePoint administracyjnego w obszarze **Witryny** kliknij pozycję **Aktywne witryny**.
-2. Kliknij witrynę, którą chcesz skonfigurować.
-3. Na karcie **Zasady** w obszarze Udostępnianie **zewnętrzne** kliknij pozycję **Edytuj**.
-4. W **obszarze Udostępnianie zewnętrzne** wybierz **pozycję Tylko osoby w Twojej organizacji**, a następnie kliknij przycisk **Zapisz**.
+1. W centrum SharePoint w **obszarze Witryny** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+2. Wybierz witrynę, którą chcesz skonfigurować.
+3. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** wybierz pozycję **Edytuj**.
+4. W **obszarze Udostępnianie zewnętrzne** wybierz **pozycję Tylko osoby w Twojej organizacji**, a następnie wybierz pozycję **Zapisz**.
 
     ![Zrzut ekranu SharePoint z ustawieniami udostępniania na poziomie witryny ustawionymi na Tylko osoby w Twojej organizacji.](../media/sharepoint-site-external-sharing-settings-off.png)
 
@@ -164,17 +167,19 @@ Możesz wyłączyć udostępnianie gości dla poszczególnych OneDrive, klikają
 Jeśli chcesz zezwolić na udostępnianie osobom spoza organizacji, ale chcesz się upewnić, że wszyscy się uwierzytelniają, możesz wyłączyć linki *Każda osoba (* udostępnianie anonimowe) w całej organizacji lub dla poszczególnych witryn.
 
 Aby wyłączyć linki *Każdy* na poziomie organizacji
-1. W centrum SharePoint w obszarze **Zasady** kliknij pozycję **Udostępnianie**.
+
+1. W centrum SharePoint w **obszarze Zasady** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
 2. W **obszarze Udostępnianie zewnętrzne** przeciągnij suwak SharePoint w dół do **pola Nowi i istniejący goście**.
-3. Kliknij **Zapisz**.
+3. Wybierz **Zapisz**.
 
     ![Zrzut ekranu SharePoint ustawienia udostępniania na poziomie organizacji ustawione na wartość Nowi i istniejący goście.](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 Aby wyłączyć linki *Każdy* dla witryny
-1. W centrum SharePoint administracyjnego w obszarze **Witryny** kliknij pozycję **Aktywne witryny**.
-2. Kliknij witrynę, którą chcesz skonfigurować.
-3. Na karcie **Zasady** w obszarze Udostępnianie **zewnętrzne** kliknij pozycję **Edytuj**.
-4. W **obszarze Udostępnianie zewnętrzne** wybierz **pozycję Nowi i istniejący goście**, a następnie kliknij przycisk **Zapisz**.
+
+1. W centrum SharePoint w **obszarze Witryny** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+2. Wybierz witrynę, którą chcesz skonfigurować.
+3. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** wybierz pozycję **Edytuj**.
+4. W **obszarze Udostępnianie zewnętrzne** wybierz **pozycję Nowi i istniejący goście**, a następnie wybierz pozycję **Zapisz**.
 
     ![Zrzut ekranu SharePoint z ustawieniami udostępniania na poziomie witryny ustawionymi na wartość Nowe i istniejące ustawienia.](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 

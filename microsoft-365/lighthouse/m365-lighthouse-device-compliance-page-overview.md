@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się więcej o stronie Zgodność urządzenia.
-ms.openlocfilehash: d1c4cb8fde2d3f653e77020e4ad29f70da266a06
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 76cb914b878b3da8236e91ddda538cb13fa3aa8c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996381"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317601"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>omówienie Microsoft 365 Lighthouse zgodności urządzenia
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse umożliwia wyświetlanie szczegółowych informacji dotyczących zgodności urządzeń z usługą Intune dla wszystkich dzierżaw klientów, wybierając pozycję Urządzenia w lewym okienku  nawigacji, aby otworzyć stronę Zgodność urządzenia. Na tej stronie możesz uzyskać przegląd stanu zgodności w dzierżawach, wyświetlić listę urządzeń dla poszczególnych dzierżaw i uzyskać raporty o stanie dotyczące zasad i ustawień zgodności.
 

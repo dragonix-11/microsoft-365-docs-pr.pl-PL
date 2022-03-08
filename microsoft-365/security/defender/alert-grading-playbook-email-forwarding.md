@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: fe4a5e97704cbf1d4851484397e7c4424c099d3c
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 2349fb9ac736653b9a74c42aecf5e71cc95381ca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62974143"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321519"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Ocenianie alertów podejrzaną aktywnością w przesyłaniu dalej wiadomości e-mail
 
@@ -37,11 +37,11 @@ ms.locfileid: "62974143"
 
 Zagrożenie może używać naruszonych kont użytkowników do kilku złośliwych celów, takich jak odczytywanie wiadomości e-mail w skrzynce odbiorczej użytkownika, przesyłanie dalej wiadomości e-mail do adresatów zewnętrznych oraz wysyłanie wiadomości wyłudzających informacje. Użytkownik docelowy może nie być świadomy, że jego wiadomości e-mail są przekazywane dalej. Jest to bardzo częsty emotikon, który używa się podczas naruszonych kont użytkowników.
 
-Wiadomości e-mail można przesyłać dalej ręcznie lub automatycznie przy użyciu reguł przesyłania dalej. Automatyczne przesyłanie dalej można zaimplementować na wiele sposobów, takich jak reguły skrzynki odbiorczej, reguły Exchange transportu (ETR) i przesyłanie dalej SMTP. Mimo że ręczne przesyłanie dalej wymaga bezpośredniej akcji ze strony użytkowników, mogą nie wiedzieć o wszystkich automatycznie przesyłanych wiadomościach e-mail. W Microsoft 365 e-mail jest wywoływany alert, gdy użytkownik automatycznie przesyła dalej wiadomość e-mail na potencjalnie złośliwy adres e-mail.
+Wiadomości e-mail można przesyłać dalej ręcznie lub automatycznie przy użyciu reguł przesyłania dalej. Automatyczne przesyłanie dalej można zaimplementować na wiele sposobów, takich jak reguły skrzynki odbiorczej, reguła Exchange transportu (ETR) i przesyłanie dalej SMTP. Mimo że ręczne przesyłanie dalej wymaga bezpośredniej akcji ze strony użytkowników, mogą nie wiedzieć o wszystkich automatycznie przesyłanych wiadomościach e-mail. W Microsoft 365 wiadomości e-mail jest wywoływany alert, gdy użytkownik automatycznie przesyła dalej wiadomość e-mail na potencjalnie złośliwy adres e-mail.
 
 Ten podręcznik ułatwia badanie podejrzanych alertów dotyczących aktywności przesyłania dalej poczty e-mail i szybkie ocenianie ich jako prawdziwego dodatniego (TP) lub wyników fałszywie dodatnich (FP). Następnie możesz podjąć zalecane działania dla alertów TP, aby rozwiązać ten atak.
 
-Aby uzyskać omówienie oceniania alertów dla programu Microsoft Defender dla programu Office 365 i programu Microsoft Defender dla aplikacji w chmurze, zobacz [artykuł wprowadzający](alert-grading-playbooks.md).
+Aby uzyskać omówienie oceny alertów dla programu Microsoft Defender dla programu Office 365 i programu Microsoft Defender dla aplikacji w chmurze, zobacz [artykuł wprowadzający](alert-grading-playbooks.md).
 
 Wyniki korzystania z tego podręcznika są takie:
 
@@ -83,7 +83,7 @@ Pole **Przyczyna** zawiera następujące informacje dotyczące tego alertu.
 
 - Typ przekazywania (FT) jest jednym z następujących:
 
-    -  Exchange transportowych: Przesyłanie dalej przy użyciu i Exchange transportowego 
+    -  Exchange Transport :Przesyłanie dalej przy użyciu i Exchange transportowego 
 
     -  SMTP: Przesyłanie dalej przy użyciu przesyłania dalej skrzynki pocztowej
 
@@ -103,7 +103,7 @@ Podczas badania tego alertu należy ustalić:
 
 ### <a name="is-the-user-account-and-its-mailbox-compromised"></a>Czy konto użytkownika i jego skrzynka pocztowa są naruszone?
 
-Patrząc na zachowania nadawcy w przeszłości i ostatnie działania, należy ustalić, czy konto użytkownika powinno być traktowane jako naruszone, czy nie. W portalu można wyświetlić szczegóły alertów podniesionych ze strony Microsoft 365 Defender użytkowników. 
+Patrząc na zachowania nadawcy w przeszłości i ostatnie działania, należy ustalić, czy konto użytkownika powinno być traktowane jako naruszone, czy nie. Szczegółowe informacje o alertach podniesionych ze strony użytkownika można wyświetlić w portalu Microsoft 365 Defender użytkowników. 
 
 Możesz również analizować te dodatkowe działania dla skrzynki pocztowej, dla których ma to wpływ:
 
@@ -113,7 +113,7 @@ Możesz również analizować te dodatkowe działania dla skrzynki pocztowej, dl
 
     - Sprawdź, ile z wysłanych wiadomości e-mail zawiera informacje poufne. 
 
-- Oceń ryzykowne zachowanie podczas logowania się Microsoft Azure portalu.
+- Oceń ryzykowne zachowanie podczas logowania się w Microsoft Azure sieci.
 - Sprawdź, czy na urządzeniu użytkownika nie ma żadnych złośliwych działań.
 
 ### <a name="are-the-activities-malicious"></a>Czy działania są złośliwe?
@@ -131,7 +131,7 @@ Oto przepływ pracy do identyfikowania podejrzanych działań przesyłania dalej
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="Przepływ pracy Badania alertu dla przesyłania dalej poczty e-mail" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
-Możesz zbadać alert przesyłania dalej wiadomości e-mail przy użyciu Eksploratora zagrożeń lub zaawansowanych zapytań myśliwski, w zależności od dostępności funkcji w Microsoft 365 Defender portali. Możesz w razie potrzeby wykonać cały proces lub jego część.
+Możesz zbadać alert przesyłania dalej wiadomości e-mail przy użyciu Eksploratora zagrożeń lub zaawansowanych zapytań wyszukiwania na podstawie dostępności funkcji w portalu Microsoft 365 Defender wyszukiwania. Możesz w razie potrzeby wykonać cały proces lub jego część.
 
 ## <a name="using-threat-explorer"></a>Korzystanie z Eksploratora zagrożeń
 
@@ -251,11 +251,11 @@ IdentityLogonEvents
 
 ### <a name="investigating-forwarding-rules"></a>Badanie reguł przesyłania dalej
 
-Podejrzane reguły przesyłania dalej można też znaleźć, korzystając Exchange centrum administracyjnego w oparciu o typ reguły (wartość FT w alercie).
+Podejrzane reguły przesyłania dalej można też znaleźć przy użyciu Centrum administracyjnego programu Exchange na podstawie typu reguły (wartości FT w alercie).
 
 - ETR 
 
-  Exchange transportu są wymienione w **sekcji** Reguły. Upewnij się, że wszystkie reguły są zgodnie z oczekiwaniami.
+  Reguły transportu programu Exchange są wymienione w **sekcji** Reguły. Upewnij się, że wszystkie reguły są zgodnie z oczekiwaniami.
 
 - SMTP
 

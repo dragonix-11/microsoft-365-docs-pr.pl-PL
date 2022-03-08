@@ -11,18 +11,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 0506c5213fe6c4a9c5bb5556b987f64b22bda517
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: feebff9361f1504e94069e82a3de87a2e1d95c0c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011283"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312675"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Badanie konta użytkownika w programie Microsoft Defender dla punktu końcowego
 

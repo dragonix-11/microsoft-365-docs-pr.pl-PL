@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: cfa39ca38046c131de2531b4ad6446626895090f
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: ce75fff753acfa9d5e183154e09805b04d7523da
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015388"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321426"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Badanie alertów w programie Microsoft 365 Defender
 
@@ -41,7 +41,7 @@ W Microsoft 365 Defender powiązanych ze sobą alertów są agregowane w celu [f
 
 **Kolejka alertów** zawiera bieżący zestaw alertów. Do kolejki alertów można dostać się z menu Zdarzenia **& alerty > alerty** na pasku Szybkie uruchamianie Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">w witrynie.</a>
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Przykład kolejki alertów w portalu Microsoft 365 Defender wiadomości.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Przykład kolejki alertów w portalu Microsoft 365 Defender wiadomości":::
 
 Alerty z różnych rozwiązań zabezpieczeń firmy Microsoft, takich jak Microsoft Defender for Endpoint, Microsoft Defender for Office 365 i Microsoft 365 Defender są wyświetlane tutaj.
 
@@ -49,7 +49,7 @@ Domyślnie w kolejce alertów w portalu Microsoft 365 Defender są wyświetlane 
 
 W domyślnej kolejce alertów możesz wybrać  pozycję Filtruj, aby wyświetlić okienko **Filtr**, w którym możesz określić podzestaw alertów. Oto przykład.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Example of the filters pane for the alerts queue in the Microsoft 365 Defender portal.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Example of the filters pane for the alerts queue in the Microsoft 365 Defender portal":::
 
 Alerty można filtrować według tych kryteriów:
 
@@ -87,16 +87,14 @@ Aby uzyskać dostęp do usługi Microsoft Defender na potrzeby alertów, musisz 
 
 Aby wyświetlić stronę alertu głównego, wybierz nazwę alertu. Oto przykład.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Przykład strony szczegółów alertu w portalu Microsoft 365 Defender sieci Web.":::
-
-Możesz również wybrać akcję **Otwórz stronę alertu głównego** w **okienku Zarządzanie alertami** .
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Przykład strony szczegółów alertu w portalu Microsoft 365 Defender sieci Web":::
 
 Strona alertu składa się z tych sekcji: 
 
 - Alert, który jest łańcuchem zdarzeń i alertów związanych z tym alertem w porządku chronologicznym
 - Szczegóły podsumowania
 
-Na stronie alertu możesz wybrać wielokropek (**...**) obok dowolnej jednostki, aby wyświetlić dostępne akcje, takie jak otwarcie strony alertu lub połączenie alertu z innym zdarzeniem.
+Na stronie alertu możesz wybrać wielokropek (**...**) obok dowolnej jednostki, aby wyświetlić dostępne akcje, takie jak połączenie alertu z innym zdarzeniem. Lista dostępnych akcji zależy od typu alertu.
 
 ### <a name="alert-sources"></a>Źródła alertów
 
@@ -134,42 +132,51 @@ Po wybraniu encji, która ma być zainteresowana, strona szczegółów zmienia s
 
 ## <a name="manage-alerts"></a>Zarządzanie alertami
 
-Aby zarządzać alertem, wybierz alert w kolejce alertów w jego wierszu, aby wyświetlić **okienko Zarządzanie alertami** . Oto przykład.
+Aby zarządzać alertem, wybierz **pozycję Zarządzaj alertem** w sekcji szczegółów podsumowania na stronie alertu. Oto przykładowe okienko zarządzania **alertami w przypadku pojedynczego alertu** .
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Przykład okienka podsumowania dla alertu w portalu Microsoft 365 Defender wiadomości.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Przykład okienka Zarządzanie alertami w Microsoft 365 Defender alertów":::
 
 Okienko **zarządzanie alertami** umożliwia wyświetlanie i określanie:
 
 - Stan alertu (Nowy, Rozwiązany, W toku).
 - Konto użytkownika, do których przypisano alert.
-- Klasyfikacja alertu (nie ustawiono, alert Prawda, alert fałsz).
-- Dla klasyfikacji jako prawdziwego alertu typ zagrożenia dla alertu w polu **Wyznaczanie** .
+- Klasyfikacja alertu:
+
+   - **Nie ustawiono** (wartość domyślna).
+
+   - **Wartość true positive** (wartość dodatnia) z rodzajem zagrożenia. Ta klasyfikacja jest klasyfikacją alertów, które dokładnie wskazują prawdziwe zagrożenia. Określenie typu zagrożeń ułatwia zespołowi zabezpieczeń wykrywanie wzorców zagrożeń i działania w obronie przed nimi organizacji.
+
+   - **Informacyjne, oczekiwane działanie** z typem aktywności. Za pomocą opcji w tej kategorii możesz klasyfikować alerty na temat testów zabezpieczeń, czerwonej aktywności zespołu i oczekiwanego nietypowego zachowania zaufanych aplikacji i użytkowników.
+
+   - **Wynik fałszywie** dodatni dla typów alertów utworzonych nawet wtedy, gdy nie ma złośliwych działań. Klasyfikowanie alertów jako wyników fałszywie dodatnich Microsoft 365 Defender poprawy ich jakości wykrywania.
+
 - Komentarz alertu.
 
 > [!NOTE]
 > Jednym ze sposobów zarządzania alertami dzięki użyciu tagów. Funkcja otagowania dla programu Microsoft Defender Office 365 jest stopniowo wdawana i jest obecnie w wersji Zapoznawczej. <br>
 > Obecnie zmodyfikowane nazwy tagów są stosowane tylko do alertów *utworzonych po* aktualizacji. Alerty wygenerowane przed modyfikacją nie będą odzwierciedlać zaktualizowanej nazwy tagu. 
 
-W tym okienku możesz również wykonać następujące dodatkowe czynności: 
+Aby zarządzać *zestawem alertów podobnych* do poszczególnych alertów, wybierz pozycję Wyświetl podobne alerty w polu **SZCZEGÓŁOWE** INFORMACJE w sekcji szczegółów podsumowania na stronie alertu.
 
-- Otwarcie strony alertu głównego
-- Skonsultuj się z ekspertem ds. zagrożeń firmy Microsoft
-- Wyświetl przesyłanie
-- Link do innego zdarzenia
-- Wyświetlanie alertu na osi czasu
-- Tworzenie reguły reguły reguły reguły
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Zarządzanie alertem w portalu Microsoft 365 Defender sieciOwym":::
 
-Oto przykład.
+W **okienku Zarządzanie alertami** możesz klasyfikować wszystkie powiązane alerty jednocześnie. Oto przykład.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Przykładowe akcje dotyczące alertu w Microsoft 365 Defender w programie":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Zarządzanie powiązanymi alertami w Microsoft 365 Defender sieci":::
 
-Lista dodatkowych akcji zależy od typu alertu.
+Jeśli podobne alerty były już klasyfikowane w przeszłości, możesz zaoszczędzić czas, korzystając z Microsoft 365 Defender, aby dowiedzieć się, jak zostały rozwiązane inne alerty. W sekcji szczegółów podsumowania wybierz pozycję **Rekomendacje**.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Przykład wybierania zaleceń dotyczących alertu":::
+
+Karta **Rekomendacje** udostępnia kolejne działania i porady dotyczące badania, rozwiązywania problemów i zapobiegania im. Oto przykład.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Przykładowe zalecenia dotyczące alertów":::
 
 ## <a name="resolve-an-alert"></a>Rozwiązywanie alertu
 
-Po zakończeniu analizowania alertu, który można rozwiązać, przejdź do okienka **Zarządzanie alertem** i oznacz stan jako Rozwiązany i sklasyfikuj go jako **alert** o wartości Fałsz lub **Prawda**. Dla prawdziwych alertów określ typ zagrożenia dla alertu w polu **Wyznaczanie** .
+Po zakończeniu analizowania alertu, który można rozwiązać, przejdź do okienka Zarządzanie **alertami** dla alertów lub podobnych alertów i oznacz stan jako  Rozwiązany **, a następnie** sklasyfikuj go jako prawdziwego dodatniego z rodzajem zagrożenia, działania informacyjnego **,** oczekiwanego działania z typem działania lub wyników fałszywie **dodatnich**.
 
-Klasyfikowanie alertów i określanie ich określania ułatwia dostosowywanie Microsoft 365 Defender w celu zapewnienia bardziej prawdziwych alertów i mniej fałszywych alertów.
+Alerty klasyfikowania pomagają Microsoft 365 Defender jakości wykrywania.
 
 ## <a name="use-power-automate-to-triage-alerts"></a>Używanie Power Automate do ujednania alertów
 

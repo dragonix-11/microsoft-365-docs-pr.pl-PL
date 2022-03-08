@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: W tym artykule dowiesz się, jak współpracować z gośćmi nad dokumentem w programie SharePoint i OneDrive.
-ms.openlocfilehash: 7c58b9ef4fdc759c5afa1920083dd1875fad17f1
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: f27c47403e63c19bf341c69d8dffbe2ea450e1d4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "62990527"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324436"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Współpraca z gośćmi nad dokumentem
 
@@ -72,9 +73,9 @@ Na SharePoint wybierz ustawienie najbardziej permisyjne, które będzie wymagane
 Aby skonfigurować SharePoint udostępniania na poziomie organizacji
 
 1. W okienku centrum administracyjne platformy Microsoft 365 nawigacji po lewej stronie w obszarze **Centra** administracyjne **kliknij pozycję SharePoint**.
-2. W centrum SharePoint w lewym okienku nawigacji w **obszarze Zasady** kliknij pozycję **Udostępnianie**.
+2. W centrum SharePoint w lewym okienku nawigacji w **obszarze Zasady** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
 3. Upewnij się, że dla udostępniania SharePoint lub **OneDrive jest** ustawiona wartość Każdy lub **Nowy i istniejący goście**. (Zwróć uwagę, że OneDrive nie może być bardziej przemowy niż SharePoint).
-4. Jeśli zostały wprowadzone zmiany, kliknij przycisk **Zapisz**.
+4. Jeśli zostały wprowadzone zmiany, wybierz pozycję **Zapisz**.
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint domyślnych ustawień linku na poziomie organizacji
 
@@ -93,7 +94,7 @@ Wybierz link z dowolnego z następujących typów, który jest następnie domyś
 
 Aby ustawić domyślne SharePoint i OneDrive na poziomie organizacji
 
-1. Przejdź do strony Udostępnianie w centrum SharePoint administracyjnego.
+1. Przejdź do <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**pozycji Udostępnianie**</a> w SharePoint administracyjnego.
 2. W **obszarze Linki do plików i folderów** wybierz domyślny link udostępniania, którego chcesz użyć.
 3. Jeśli zostały wprowadzone zmiany, kliknij przycisk **Zapisz**.
 
@@ -122,7 +123,7 @@ Jeśli udostępniasz pliki i foldery, które znajdują się w SharePoint, musisz
 
 Aby skonfigurować ustawienia udostępniania na poziomie witryny
 
-1. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję Witryny **i kliknij pozycję** **Aktywne witryny**.
+1. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję Witryny **i wybierz pozycję** <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
 2. Wybierz witrynę, w której chcesz udostępnić pliki i foldery gościom.
 3. Przewiń w prawo wiersz (w którym znajduje się wybrana witryna) i kliknij dowolne miejsce w kolumnie **Udostępnianie** zewnętrzne.
 4. Na stronie, która się pojawi, kliknij **kartę** Zasady.

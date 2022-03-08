@@ -2,8 +2,8 @@
 title: Zarządzanie zakupami samoobsługi (użytkownicy)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -12,18 +12,18 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom:
-- AdminSurgePortfolio
 - commerce_ssp
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Użytkownicy mogą dowiedzieć się, jak zarządzać zakupami samoobsługi.
 ms.date: 03/17/2021
-ms.openlocfilehash: 86b147ebd81842dee4aa15795650dee9c0f3fe5c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: bf3404a900872090048b6b092d97f81fd5fd7c5a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62998930"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316523"
 ---
 # <a name="manage-self-service-purchases-users"></a>Zarządzanie zakupami samoobsługi (użytkownicy)
 

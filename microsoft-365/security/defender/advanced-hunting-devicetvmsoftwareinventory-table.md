@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 10a184e6ce36129a84197cc02caae3b96625e39a
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: a9a17c6e336704cfe09e1c864e9700a4492e8c87
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017888"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328025"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -57,7 +57,7 @@ Aby uzyskać informacje o innych tabelach w zaawansowanym schemacie łęgowania,
 | `SoftwareVersion` | `string` | Numer wersji produktu oprogramowania |
 | `EndOfSupportStatus` | `string` | Wskazuje etap cyklu życia produktu oprogramowania względem jego określonej daty zakończenia wsparcia technicznego (EOS) lub daty zakończenia użytkowania (EOL) |
 | `EndOfSupportDate` | `string` | Data zakończenia pomocy technicznej (EOS) lub daty zakończenia użytkowania (EOL) produktu oprogramowania |
-
+| `ProductCodeCpe` | `string` | CPE produktu lub "niedostępne", jeśli nie ma cpe |
 
 
 ## <a name="related-topics"></a>Tematy pokrewne

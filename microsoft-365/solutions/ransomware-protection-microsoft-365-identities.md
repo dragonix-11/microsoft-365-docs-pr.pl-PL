@@ -1,9 +1,9 @@
 ---
 title: Krok nr 3. Ochrona tożsamości
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: oprogramowanie wymuszające okup, oprogramowanie wymuszające okup obsługiwane przez człowieka, oprogramowanie wymuszające okup przez człowieka, humor, ataki wymuszające okup, ataki oprogramowania wymuszającego okup, szyfrowanie, kryptografia, zerowe zaufanie
 description: Korzystaj z bezpiecznych logowania i dostępu warunkowego, aby chronić zasoby Microsoft 365 przed atakami oprogramowania wymuszającego okup.
-ms.openlocfilehash: 57fad156a4e7b97d3029c224059041d692224ed2
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 548e0649d7180ef39f693049210a91c1e0dce312
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014863"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320231"
 ---
 # <a name="step-3-protect-identities"></a>Krok nr 3. Ochrona tożsamości
 

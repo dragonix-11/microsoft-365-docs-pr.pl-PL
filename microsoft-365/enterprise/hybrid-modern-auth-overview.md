@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: W tym artykule dowiesz się więcej o nowoczesnym uwierzytelnianiu hybrydowym i wymaganiach wstępnych dotyczących używania z lokalnymi Skype dla firm i Exchange lokalnymi.
-ms.openlocfilehash: f0abb01b7a03405f576a12766b21b3c36113004d
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: efce3b5a04f2e9500330cab87d7ba8e62ca49db0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014697"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312869"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Omówienie i wymagania wstępne dotyczące nowoczesnego uwierzytelniania hybrydowego dotyczące używania go z lokalnymi Skype dla firm i Exchange lokalnymi
 
@@ -170,6 +170,7 @@ Przed kontynuowaniem zweryfikuj i zaznacz te elementy na liście:
     > Nowoczesne uwierzytelnianie hybrydowe nie jest obsługiwane przez agenta [hybrydowego](/exchange/hybrid-deployment/hybrid-agent).
 
   - Upewnij się, że zarówno użytkownik testowy w środowisku lokalnym, jak i użytkownik testowy hybrydowy z systemem Office 365, może zalogować się do klienta klasycznego programu Skype dla firm (jeśli chcesz używać nowoczesnego uwierzytelniania z usługą Skype) i usługi Microsoft Outlook (jeśli chcesz używać nowoczesnego uwierzytelniania z usługą Exchange).
+  - Upewnij się, że ustawienie SignInOptions w programie Microsoft Office nie jest skonfigurowane do najbardziej restrykcyjnego ustawienia. Aby uzyskać więcej informacji, [zobacz Jak zezwolić Office na łączenie się z Internetem](/office365/troubleshoot/access-management/office-feature-disabled).
 
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>Co jeszcze należy wiedzieć przed rozpoczęciem?
 <a name="BKMK_Whatelse"> </a>

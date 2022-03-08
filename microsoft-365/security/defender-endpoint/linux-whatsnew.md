@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 090c43ea1d2d9f2d158f94d1e509490c3faf4799
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 58ba49a49b41d80bacb31efa780530e44a146fc1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011922"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326765"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Co nowego w programie Microsoft Defender dla punktu końcowego w systemie Linux
 
@@ -28,6 +28,11 @@ ms.locfileid: "63011922"
 
 **Dotyczy:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
+
+- Narzędzie wiersza polecenia obsługuje teraz przywracanie plików poddanych kwarantannie do lokalizacji innej niż ta, w której plik został pierwotnie wykryty. Można to zrobić za pośrednictwem .`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`
+- Poprawki błędów
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)
 

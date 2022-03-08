@@ -12,21 +12,23 @@ f1.keywords:
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 description: Dowiedz się, jak utworzyć Microsoft 365 z określoną preferowaną lokalizacją danych w środowisku wielolokalizacji.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ce4ed337b07206e6508a5955edc2c264586df4b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
+ms.openlocfilehash: 7de00ad0d94cda0a47f4981d78ebc07cedab6ada
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995954"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318805"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Tworzenie grupy Microsoft 365 z określoną preferowaną lokalizacją danych
 
 Gdy użytkownicy w środowisku z wieloma lokalizacjami geograficznymi tworzą grupę usługi Microsoft 365, preferowana lokalizacja danych grupy (PDL) jest automatycznie ustawiana na preferowaną lokalizację danych użytkownika. Administratorzy globalni, SharePoint i Exchange mogą tworzyć grupy w dowolnym wybranej przez nich regionie. 
 
-Jeśli chcesz utworzyć grupę o określonej wersji pliku PDL, możesz to zrobić z centrum administracyjnego programu SharePoint lub za pomocą polecenia cmdlet programu Exchange Online New-UnifiedGroup Microsoft PowerShell. W takim przypadku zarówno skrzynka pocztowa grupy, jak i witryna SharePoint skojarzona z grupą zostaną zapewnienia obsługi administracyjnej w określonym pliku PDL.
+Jeśli musisz utworzyć grupę o określonej wersji PDL, możesz to zrobić z centrum administracyjnego programu <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a> lub za pomocą polecenia cmdlet programu Exchange Online New-UnifiedGroup Microsoft PowerShell. W takim przypadku zarówno skrzynka pocztowa grupy, jak i witryna SharePoint skojarzona z grupą zostaną zapewnienia obsługi administracyjnej w określonym pliku PDL.
 
-Aby utworzyć grupę Microsoft 365 o  określony plik PDL, przejdź do centrum administracyjnego usługi SharePoint w lokalizacji geograficznej, w której chcesz utworzyć witrynę grupy.
+Aby utworzyć grupę Microsoft 365 o specifyy pdl, przejdź do centrum administracyjnego usługi <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a> lokalizacji geograficznej, w której chcesz utworzyć witrynę grupy.
 
 Przykład:
 

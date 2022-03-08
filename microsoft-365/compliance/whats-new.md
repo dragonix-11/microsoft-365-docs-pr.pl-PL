@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Niezależnie od tego, czy chcesz dodać nowe rozwiązania do centrum zgodności, zaktualizować istniejące funkcje na podstawie opinii, czy też zaktualizować nową i zaktualizowaną dokumentację, Microsoft 365 pomoże Ci być na bieżąco z stale zmieniającymi się poziomami zgodności. Dowiedz się, nad czym pracujemy w tym miesiącu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: bfbae00812400b211abdda9d7310179cc65e2c15
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 15a97fc419bc6e4264f3c3cd0bbe389b79e5c2f0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016539"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326975"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Co nowego w zakresie zgodności Microsoft 365
 
@@ -40,6 +40,29 @@ Niezależnie od tego, czy chcesz dodać nowe rozwiązania do [Centrum zgodności
 > - [Co nowego w programie Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Odwiedź przewodnik po programie [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap), aby dowiedzieć się więcej o Microsoft 365, które zostały uruchomione, są obecnie wdrażania, są w opracowywania, zostały wycofane lub opublikowane wcześniej.
+
+## <a name="february-2022"></a>Luty 2022 r.
+
+### <a name="ediscovery"></a>zbierania elektronicznych materiałów dowodowych
+
+- [Zarządzanie szablonami komunikacji](advanced-ediscovery-communications-library.md) po stronie Advanced eDiscovery — menedżerowie zbierania elektronicznych materiałów dowodowych mogą teraz tworzyć szablony komunikacji po stronie organizacji, które mogą być używane w Advanced eDiscovery przypadku organizacji.
+- [Zarządzanie kierownikami](advanced-ediscovery-issuing-officers.md) ds. wydania w programie Advanced eDiscovery — Menedżerowie zbierania elektronicznych materiałów dowodowych mogą dodawać listę kierowników ds. wydania, których można przypisać do komunikacji w każdym Advanced eDiscovery przypadku w organizacji.
+
+### <a name="information-governance-and-records-management"></a>Zarządzanie informacjami i zarządzanie rekordami
+
+- [Adaptacyjne zakresy](retention.md#adaptive-or-static-policy-scopes-for-retention) zasad przechowywania i zasad etykiet przechowywania są teraz ogólnie dostępne . Instrukcje dotyczące [SharePoint konfigurowania](retention-settings.md#to-configure-an-adaptive-scope) adaptacyjnego zakresu zawierają teraz więcej informacji na temat zakresów witryn: Informacje o wpisie w blogu dotyczące używania niestandardowych właściwości witryny i używania właściwości SiteTemplate do dołączania lub wykluczania określonych typów witryn za pomocą zaawansowanego konstruktora zapytań.
+- [Odnośnik zasad w](retention.md#policy-lookup) rozwiązaniu do zarządzania informacjami jest teraz ogólnie dostępny (GA).
+- Program PowerShell to alternatywa dla ustawienia zarządzania rekordami, które umożliwia użytkownikom usuwanie elementów oznaczonych w programach SharePoint i OneDrive za pomocą poleceń AllowFilesWithKeepLabelToBeDeletedSPO i AllowFilesWithKeepLabelToBeDeletedODB z systemów [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) i [Set-PnPTenant]( /powershell/module/sharepoint-pnp/set-pnptenant).
+
+### <a name="sensitivity-labels"></a>Etykiety wrażliwości
+
+- Nowe wskazówki Dlaczego warto wybrać wbudowane etykiety miP za pomocą dodatku [AIP](sensitivity-labels-aip.md) dla aplikacji Office, jeśli używasz ujednoliconego klienta etykiet usługi Azure Information Protection (AIP) dla komputerów Windows przenośnych. Ta strona zawiera informacje o nowej prywatnej wersji Preview dla nowych Office aplikacji.
+- Nowe ustawienia [zasad automatycznego oznaczania etykiet](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange):
+  - Dodatkowe ustawienia poczty e-mail do obsługi zawsze stosowania dopasowanej etykiety wrażliwości oraz zastosowania szyfrowania do wiadomości e-mail odbieranych spoza organizacji.
+  - Wykluczenia dla określonych wystąpień (użytkowników, grup, witryn) są obsługiwane przy użyciu nowej opcji Wykluczone, gdy dla ustawienia  Wszystkie zostanie określona domyślna opcja **Uwzględniany**.
+- Now in preview: Mobile devices (iOS and Android) support [współtworowanie](sensitivity-labels-coauthoring.md) when you have minimum versions and opt in to this preview.
+- Obsługa ustawiania domyślnego typu linku udostępniania jest rozszerzana na pojedyncze dokumenty w SharePoint i OneDrive. Aby uzyskać więcej informacji, zobacz nowy artykuł Używanie etykiet wrażliwości do konfigurowania domyślnego typu [linku]( sensitivity-labels-default-sharing-link.md) udostępniania dla witryn i dokumentów w witrynach i SharePoint i OneDrive.
+- Teams obsługuje teraz etykiety kontenerów (etykiety wrażliwości z zakresu grup & witryn).
 
 ## <a name="january-2022"></a>Styczeń 2022
 
@@ -247,47 +270,5 @@ Dodano następujące nowe artykuły:
 ### <a name="sensitivity-labels"></a>Etykiety wrażliwości
 - [](sensitivity-labels-coauthoring.md) Funkcja współtworzenia i autozazyskiwu są teraz ogólnie dostępne dla systemu Windows (minimalna wersja 2107 z bieżącego kanału lub miesięcznego kanału Enterprise) i systemu macOS (minimalna wersja 16.51).
 - Wdowy dla Office, które korzystają z wbudowanych etykiet: Domyślne ustawienie etykiet obsługuje teraz istniejące dokumenty, a także nowe dokumenty. Taka zmiana w zachowaniu zapewnia parowanie z ujednoliconym klientem etykiet usługi Azure Information Protection. Aby uzyskać więcej informacji na temat rzutowania na aplikację i wersji minimalnych, [](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) zobacz tabelę możliwości dla programu Word, Excel i PowerPoint.
-- Etykiety kontenerów obsługują [teraz domyślne ustawienia linku udostępniania przy użyciu ustawień zaawansowanych programu PowerShell](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings).
+- Etykiety kontenerów obsługują [teraz domyślne ustawienia linku udostępniania przy użyciu ustawień zaawansowanych programu PowerShell](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings).
 - Tabele [funkcji, które](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) zawierają minimalne obsługiwane wersje wbudowanych etykiet, mają teraz wersje dla bieżącego kanału, miesięcznego kanału Enterprise i Semi-Annual Enterprise kanału.
-
-## <a name="august-2021"></a>Sierpień 2021
-
-### <a name="app-governance"></a>Zarządzanie aplikacją
-- [Rozszerzone wpisy szczegółowych informacji o alertach](app-governance-anomaly-detection-alerts.md#collection-alerts). Dodano nowe wpisy opisujące dodatkowe informacje alertów dostępne teraz w zarządzaniu aplikacją.
-
-### <a name="communication-compliance"></a>Zgodność komunikacji
-- [Kanały zgodności komunikacji dodały](communication-compliance-channels.md) nową obsługę funkcji podglądu dla nowoczesnych załączników skanując w Teams czatach prywatnych i kanałach.
-
-### <a name="compliance--service-assurance"></a>Zapewnianie zgodności & usługi
-
-- [W zapewnianie](/compliance/) ochrony usługi zaktualizowano w kwartalnych przeglądanych aktualizacjach zawartości na temat certyfikatów i instrukcje dotyczące ich stosowania:
-  - Architektura
-  - Rejestrowanie inspekcji
-  - Szyfrowanie i zarządzanie kluczami
-  - Zarządzanie tożsamością i dostępem
-  - Microsoft 365 zarządzania dostępem
-  - Zabezpieczenia sieci
-  - Prywatność
-  - Odporność i ciągłość
-  - Zarządzanie ryzykiem
-  - Opracowywanie i obsługa zabezpieczeń
-  - Monitorowanie zabezpieczeń
-  - Zarządzanie dostawcą
-  - Zarządzanie lukami w zabezpieczeniach
-
-### <a name="data-loss-prevention"></a>Ochrona przed utratą danych
-
-- [Informacje dotyczące zasad ochrony przed utratą danych](dlp-policy-reference.md). Dodano stronę z nowymi zasadami, aby pomóc w tworzeniu zasad.
-
-### <a name="insider-risk-management"></a>Zarządzanie ryzykiem w niejawnym programie testów
-- [Dowiedz się więcej o wykrywaniu sygnału serwera zarządzania ryzykiem w niejawnym programie testów i konfiguracji](insider-risk-management-browser-support.md). Funkcja podglądu do konfigurowania wykrywania sygnału przeglądarki dla przeglądarek Edge i Chrome.
-
-### <a name="retention-and-records-management"></a>Przechowywanie i zarządzanie rekordami
-- [Schemat blokowy pozwala określić, kiedy element zostanie zachowany](retention-flowchart.md) lub trwale usunięty w celu uzupełnienia pojęć i przykładów dotyczących zasad przechowywania.
-
-### <a name="sensitivity-labels"></a>Etykiety wrażliwości
-- [Ulepszenia zasad automatycznego](apply-sensitivity-label-automatically.md) oznaczania, które zawierają więcej obsługiwanych numerów witryn i zasad, obsługę wszystkich witryn OneDrive i SharePoint oraz możliwość wybierania dostępnych witryn programu SharePoint zamiast wprowadzania poszczególnych witryn za pomocą adresu URL i ulepszeń symulacyjnych.
-- Automatyczne oznaczanie etykiet w Office jako ustawienie wrażliwości obsługuje teraz [funkcję dokładnego dopasowania danych (EDM](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match)).
-- Etykiety domyślne są teraz rozszerzane [Power BI (w podglądzie).](/power-bi/admin/service-security-sensitivity-label-default-label-policy)
-- Inspekcja zdarzeń dla Outlook w sieci Web w Eksploratorze [](data-classification-activity-explorer-available-events.md) aktywności jest teraz w pełni w pełni wdowa, co oznacza, że aktywność użytkowników dla wbudowanych etykiet jest teraz dostępna dla wszystkich aplikacji Office na wszystkich platformach.
-- [Obsługiwane tabele](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) funkcji mają nowy przypis dolny dla programu Windows, który wyjaśnia, że minimalne wersje są dla bieżącego kanału, oraz porada, aby łatwiej porównywać starsze wersje, które pomijają zera wiodące w stosunku do nowszej wersji.

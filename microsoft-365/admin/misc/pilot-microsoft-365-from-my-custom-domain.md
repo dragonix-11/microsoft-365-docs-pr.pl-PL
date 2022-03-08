@@ -2,8 +2,8 @@
 title: Pilotaż Microsoft 365 z mojej domeny niestandardowej
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak pilotażować funkcje poczty e-mail z domeny niestandardowej do skrzynki Microsoft 365 pocztowej przy użyciu tylko dwóch kont testowych.
-ms.openlocfilehash: bde6daacba3e7adad1a69748074638e651445d8f
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: cc977afd32c1b3b660ec01285c36132a8e1d27b2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63012520"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323741"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Pilotaż Microsoft 365 z mojej domeny niestandardowej
 

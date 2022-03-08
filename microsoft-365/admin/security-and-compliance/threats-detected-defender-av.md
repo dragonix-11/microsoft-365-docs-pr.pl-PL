@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Dowiedz się Program antywirusowy Microsoft Defender, jak chronić urządzenia Windows przed zagrożeniami oprogramowania, takimi jak wirusy, złośliwe oprogramowanie i oprogramowanie szpiegujące.
-ms.openlocfilehash: 969cd707e40c9c7f665089cc1b9b6ddd45583982
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c11ce9a2f38f1ecb7f47cd5b74e710d92c8ffbe0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984394"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325659"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Zagrożenia wykrywane przez Program antywirusowy Microsoft Defender
 
@@ -83,7 +83,7 @@ Aby dowiedzieć się więcej o różnych zagrożeniach, odwiedź <a href="https:
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Zabezpieczanie Windows 10 urządzeniach](/misc/secure-windows-10-devices.md) (artykuł)\
+[Zabezpieczanie Windows urządzeniach](/misc/m365bp-secure-windows-devices) (artykuł)\
 [Szacowanie Program antywirusowy Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (artykuł)\
 [Jak włączyć ochronę antywirusową w czasie rzeczywistym i w](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) chmurze (artykuł)\
 [Jak włączyć i używać Program antywirusowy Microsoft Defender z aplikacji Zabezpieczenia Windows (](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus)artykuł)\

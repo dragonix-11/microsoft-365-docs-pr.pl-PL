@@ -1,9 +1,9 @@
-- name: Microsoft Defender for Business (preview)
+- name: Microsoft Defender for Business
   href: index.yml
   items:
     - name: Omówienie
       items:
-        - name: Co to jest program Microsoft Defender dla firm (w wersji Preview)?
+        - name: Co to jest usługa Microsoft Defender dla firm?
           href: mdb-overview.md
         - name: Uproszczony proces konfiguracji
           href: mdb-simplified-configuration.md
@@ -13,13 +13,13 @@
           href: mdb-lighthouse-integration.md
     - name: Wprowadzenie
       items:
-        - name: Pobierz usługę Defender dla firm (wersja Preview)
+        - name: Uzyskaj usługę Defender dla firm
           href: get-defender-business.md
         - name: Korzystanie z kreatora konfiguracji
           href: mdb-use-wizard.md
         - name: Wprowadzenie do korzystania z portalu
           href: mdb-get-started.md
-        - name: Wyświetlanie pulpitu zarządzanie lukami w zabezpieczeniach użytkownika
+        - name: Wyświetlanie pulpitu zarządzanie lukami w zabezpieczeniach pulpitu nawigacyjnego
           href: mdb-view-tvm-dashboard.md
         - name: Wypróbuj samouczki i symulowania
           href: mdb-tutorials.md
@@ -35,7 +35,7 @@
           href: mdb-email-notifications.md
         - name: Krok 4. Urządzenia wyniesiene na urządzeniach
           href: mdb-onboard-devices.md
-        - name: Krok 5. Konfigurowanie ustawień zabezpieczeń
+        - name: Krok 5. Konfigurowanie zasad zabezpieczeń
           href: mdb-configure-security-settings.md
     - name: Wyświetlanie wykrytych zagrożeń i reagowanie na nie
       items:
@@ -73,5 +73,7 @@
           href: mdb-faq.yml
         - name: Rozwiązywanie problemów
           href: mdb-troubleshooting.yml
+        - name: Microsoft 365 Business Premium
+          href: /microsoft-365/business-premium
         - name: Microsoft 365 Lighthouse
           href: /microsoft-365/lighthouse/m365-lighthouse-overview

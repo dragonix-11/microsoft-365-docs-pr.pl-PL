@@ -16,12 +16,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak konfigurować bloki na liście zezwalania/blokowania dzierżawy w portalu zabezpieczeń.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb4bdef35928a3a2672c6897676d3c90932bd7ec
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 4cca466ce4862cc93ec7521bf6bd00fe960f06a9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010661"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317433"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Dodawanie bloków na liście zezwalania/blokowania dzierżawy
 
@@ -104,7 +104,7 @@ ms.locfileid: "63010661"
 - _Fałszowanie_ jest dozwolone lub blokowane  tylko przez połączenie sfałszowanej infrastruktury nadawczej i użytkownika zdefiniowanego w parach domen.
 - Po skonfigurowaniu wpisu zezwalania lub blokowania dla pary domen wiadomości z tej pary domen nie będą już wyświetlane w szczegółowych informacjach o analizie fałszowania.
 - Wpisy sfałszowanych nadawców nigdy nie wygasają.
-- Fałsz obsługuje zarówno zezwalanie, jak i blokowanie. Adres URL obsługuje tylko zezwalanie.
+- Fałsz obsługuje zarówno zezwalanie, jak i blokowanie.
 
 1. W portalu Microsoft 365 Defender przejdź do **sekcji Zasady i reguły &** \>  \> reguły **zagrożeń w sekcji** \> Listy zezwalania **i blokowania** dzierżaw.
 

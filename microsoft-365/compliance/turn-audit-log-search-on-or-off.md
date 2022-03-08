@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Informacje na temat włączania lub wyłączania funkcji przeszukiwania dziennika inspekcji w Centrum zgodności platformy Microsoft 365 w celu umożliwienia administratorom przeszukiwania dziennika inspekcji.
-ms.openlocfilehash: 9c0d523d05393b73f627bc9ac17568b2a0ec25ad
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e36fe410ed75522b0d531f2f9f7901b78f4974eb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63005245"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316117"
 ---
 # <a name="turn-auditing-on-or-off"></a>Włączanie i wyłączanie inspekcji
 
@@ -54,6 +54,9 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 ```
 
 Wartość właściwości `True`  _UnifiedAuditLogIngestionEnabled_ wskazuje, że inspekcja jest włączona. Wartość of oznacza `False` , że inspekcja nie jest włączona.
+
+> [!NOTE]
+> Pamiętaj o uruchomieniu poprzedniego polecenia w programie Exchange Online PowerShell. Za pomocą programu PowerShell & zabezpieczeń i zgodności nie można uruchomić tego polecenia.
 
 ## <a name="turn-on-auditing"></a>Włączanie inspekcji
 

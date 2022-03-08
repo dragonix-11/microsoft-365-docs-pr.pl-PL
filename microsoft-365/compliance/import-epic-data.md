@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych elektronicznej dokumentacji zdrowia (EHR) z systemu Nas w organizacji, aby Microsoft 365. Dzięki temu można korzystać z danych EHR w zasadach zarządzania ryzykiem w niejawnym programie testów w celu wykrywania nieautoryzowanego dostępu do danych pacjentów przez pracowników.
-ms.openlocfilehash: 0da7386aa2b230492fedd5fdac5477d204aa63a8
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 364d172b35411bd532d781eafc6e8a59c1339ce7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009810"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311777"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Konfigurowanie łącznika w celu importowania danych inspekcji EHR (wersja zapoznawcza)
 
@@ -39,7 +39,7 @@ Konfigurowanie łącznika Nasadka składa się z następujących zadań:
 
 ## <a name="before-you-set-up-the-connector"></a>Przed skonfigurowaniem łącznika
 
-- Użytkownik, który tworzy łącznik Na przykład w kroku 3, musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który tworzy łącznik Na przykład w kroku 3, musi mieć przypisaną rolę Administrator łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Należy określić, jak codziennie pobierać i eksportować dane z systemu Jego organizacji Jego czas przechowywania oraz jak utworzyć plik tekstowy opisany w kroku 2. Skrypt uruchomiony w kroku 4 wypchnie dane z pliku tekstowego do punktu końcowego interfejsu API.
 

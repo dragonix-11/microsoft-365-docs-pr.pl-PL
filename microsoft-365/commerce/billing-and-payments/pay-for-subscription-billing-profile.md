@@ -2,8 +2,8 @@
 title: Płacenie za subskrypcję za pomocą profilu rozliczeniowego
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 description: Dowiedz się, jakie opcje płatności są dostępne do płacenia za subskrypcję za pomocą profilu rozliczeniowego.
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 ms.date: 10/29/2021
-ms.openlocfilehash: 8e7e53ae188a8b91dbe6ceb1d6db79997348e134
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 42b0852e61e81228d1094bad575e6439c3c77745
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013836"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321533"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Jak zapłacić za subskrypcję za pomocą profilu rozliczeniowego
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Dowiedz się, jak używać DKIM (DomainKeys Identified Mail) z usługą Microsoft 365 w celu zapewnienia, że wiadomości wysyłane z Twojej domeny niestandardowej są zaufane przez docelowe systemy poczty e-mail.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1740d910f95a0076da34b7a08e66853fb7cca598
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 25333a1616bb1f4e4e529c17813bdd58f4c768b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032138"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312953"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Używanie funkcji DKIM do sprawdzania poprawności wychodzących wiadomości e-mail wysłanych z domeny niestandardowej
 
@@ -91,13 +91,11 @@ Krok 1. Kliknij domenę, którą chcesz skonfigurować na stronie DKIM (https://
 
 ![Strona DKIM w portalu Microsoft 365 Defender z wybraną domeną.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-Krok 2. Kliknij pozycję Utwórz klucze DKIM.
+Krok 2. Przesuń przełącznik do przycisku **Włącz**. Zostanie otwarte okno podręczne z informacją o konieczności dodania rekordów CNAME.
 
-![Wysuw szczegółów domeny z przyciskiem Utwórz klucze DKIM.](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![Przesuń przełącznik do opcji Włączone, aby włączyć funkcję DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 Krok 3. Kopiowanie nazw CNAMES wyświetlanych w oknie podręcznym
-
-![Okno podręczne Publikowanie rekordów CNAME zawierające dwa rekordy CNAME do skopiowania.](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 Krok 4. Publikowanie skopiowanych rekordów CNAME na serwerze DNS usługodawca.
 
@@ -398,6 +396,9 @@ Po skonfigurowaniu DKIM, jeśli spf nie został jeszcze ustawiony, zrób to. Aby
 Następnie zobacz Używanie funkcji [**DMARC do sprawdzania poprawności wiadomości e-mail**](use-dmarc-to-validate-email.md). [Nagłówki wiadomości spamu](anti-spam-message-headers.md) zawierają składnię i pola nagłówków używane przez program Microsoft 365 do sprawdzania DKIM.
 
 **Ten test sprawdzi,** czy konfiguracja podpisywania DKIM została prawidłowo skonfigurowana i czy zostały opublikowane odpowiednie wpisy DNS.
+
+> [!NOTE]
+> Ta funkcja wymaga konta administratora usługi Microsoft 365. Ta funkcja nie jest dostępna w usługach Microsoft 365 dla instytucji, Microsoft 365 obsługiwany przez 21Vianet lub Microsoft 365 Germany.
 
 <div class="nextstepaction">
 <p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Uruchom testy: DKIM</a></p>

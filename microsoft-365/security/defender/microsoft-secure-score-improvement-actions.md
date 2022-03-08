@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ee2aadd844eebf6da436c1d6d02b6244f093bfd6
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013666"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314225"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Ocenianie postawy dotyczącej zabezpieczeń za pomocą programu Microsoft Secure Score
 
@@ -97,7 +97,7 @@ Wybierz dowolne statusy i zanotuj uwagi dotyczące działania udoskonalania.
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>Działania & zarządzanie lukami w zabezpieczeniach zagrożenia
 
-W przypadku działań udoskonalania w kategorii "Urządzenie" nie można wybierać statusów. Zamiast tego otrzymasz skojarzoną z Zarządzanie zagrożeniami i lukami [zabezpieczeń](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) w [Centrum zabezpieczeń usługi Microsoft Defender działania.](/windows/security/threat-protection/microsoft-defender-atp/use) Wybór wyjątku i uzasadnienia będzie specyficzny dla danego portalu. Nie będzie ona obecna w portalu Microsoft Secure Score.
+W przypadku działań udoskonalania w kategorii "Urządzenie" nie można wybierać statusów. Zamiast tego otrzymasz skojarzoną z Zarządzanie zagrożeniami i lukami [zabezpieczeń](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) w Microsoft 365 Defender działania. Wybór wyjątku i uzasadnienia będzie specyficzny dla danego portalu. Nie będzie ona obecna w portalu Microsoft Secure Score.
 
 #### <a name="completed-improvement-actions"></a>Ukończone działania udoskonalania
 

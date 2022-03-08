@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 19f4b517682fa58bde7253c074dc4402f6f95bf9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c2ec837ebc9fef0aabd2810dbd22db24597c52da
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997769"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322607"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Urządzenia wye webboard z usługi Microsoft Defender for Endpoint
 
@@ -49,7 +49,7 @@ Postępuj zgodnie z odpowiednimi instrukcjami w zależności od preferowanej met
 >
 > Ponadto urządzenia, które nie są aktywne w ciągu ostatnich 30 dni, nie są wniesiene do danych, które odzwierciedlają Zarządzanie zagrożeniami i lukami organizacji oraz bezpiecznego wyniku działania firmy [](tvm-exposure-score.md) Microsoft dla urządzeń.
 >
-> Aby wyświetlić tylko aktywne urządzenia, możesz filtrować według stanu [kondycji](machines-view-overview.md#health-state), [tagów urządzeń lub](machine-tags.md) [grup komputerowych](machine-groups.md).
+> Aby wyświetlić tylko aktywne urządzenia, możesz filtrować według stanu kondycji [czujnika](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views), [tagów urządzeń lub](machine-tags.md) [grup maszynowych](machine-groups.md).
 
 ## <a name="offboard-windows-devices"></a>Urządzenia Windows wyeksłowy
 

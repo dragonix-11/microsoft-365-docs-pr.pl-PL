@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 9c71591d48f24f0e434afe510c4eab711ee5f858
-ms.sourcegitcommit: f8267a0860de62dbd53ebb8a151a8e71a8ccda6a
+ms.openlocfilehash: 3b20242247e33f8550ce4d153c2f2618c64d7007
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016060"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324343"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Na urządzeniach Windows przy użyciu aplikacji zasady grupy 
 
@@ -301,6 +301,12 @@ Przejdź do **strony Szablony** **administracyjne zasad konfiguracji** \> \> **k
 :::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="dołączanie do aplikacji Mapy Microsoft.":::
 
 :::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="wyślij próbkę pliku, gdy jest wymagana dalsza analiza.":::
+
+> [!NOTE]
+> Opcja **Wyślij wszystkie próbki** umożliwia najbardziej analizę czasników/skryptów/dokumentów, co zwiększa bezpieczeństwo.
+Opcja **Wyślij bezpieczne próbki** ogranicza typ binaries/skryptów/dokumentów, które są analizowane, i zmniejsza poziom zabezpieczeń. 
+
+Aby uzyskać więcej informacji, zobacz Włączanie ochrony chmury w [usłudze Program antywirusowy Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md) oraz Ochrona chmury i [przesyłanie przykładowe w programie Program antywirusowy Microsoft Defender.](cloud-protection-microsoft-antivirus-sample-submission.md)
 
 ### <a name="check-for-signature-update"></a>Sprawdzanie aktualizacji podpisu
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informacje dla administratorów IT dotyczące zarządzania etykietami wrażliwości Office aplikacji klasycznych, mobilnych i sieci Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efd28dbe00960c2644c476f6cd689c79385eed9d
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: b251789795cbb55cd5d79dc686449e4c87aa6f9f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014831"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316131"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Zarządzanie etykietami poufności w aplikacjach Office
 
@@ -33,9 +33,9 @@ Informacje zawarte w tym artykule ułatwiają pomyślne zarządzanie etykietami 
 
 ## <a name="labeling-client-for-desktop-apps"></a>Klient etykiet dla aplikacji klasycznych
 
-Aby używać etykiet wrażliwości wbudowanych w Office klasycznych dla komputerów Windows i Mac, musisz użyć subskrypcji pakietu Office. Ten klient etykiet nie obsługuje autonomicznych wersji programu Office, takich jak Office 2016 lub Office 2019.
+Aby używać etykiet wrażliwości wbudowanych w Office klasycznych dla komputerów Windows i Mac, musisz użyć subskrypcji pakietu Office. Ten klient etykiet nie obsługuje autonomicznych wersji Office, nazywanych czasami "Office bezterminową".
 
-Aby używać etykiet wrażliwości w tych autonomicznych wersjach pakietu Office na Windows, zainstaluj klienta [ujednoliconego oznaczania usługi Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2).
+Jeśli nie możesz uaktualnić oprogramowania do wersji Aplikacje Microsoft 365 dla przedsiębiorstw dla wersji Office, w przypadku komputerów z systemem Windows możesz użyć ujednoliconego klienta etykiet usługi [Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2).
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Obsługa możliwości wrażliwości etykiet w aplikacjach
 
@@ -72,16 +72,12 @@ Wymienione na liście liczby to minimalne Office wymaganych wersji aplikacji dla
 |[Oznaczenia dynamiczne ze zmiennymi](#dynamic-markings-with-variables)                                              | Bieżący kanał: 2010+ <br /><br> Miesięczny Enterprise kanału: 2010+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Przypisz uprawnienia teraz](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Umożliwianie użytkownikom przypisywania uprawnień: <br /> — Monituj użytkowników](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Bieżący kanał: 2004+ <br /><br> Miesięczny Enterprise kanału: 2004+ <br /><br> Semi-Annual Enterprise kanału: 2008+ | 16.35+   | W trakcie przeglądu   | W trakcie przeglądu         | W trakcie przeglądu                                                        |
-|[Inspekcja działań użytkowników związanych z etykietami](#auditing-labeling-activities)                      | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Tak <sup>\*</sup>                                                        |
+|[Inspekcja działań użytkowników związanych z etykietami](#auditing-labeling-activities)                      | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Tak |
 |[Wymaganie od użytkowników stosowania etykiety do wiadomości e-mail i dokumentów](#require-users-to-apply-a-label-to-their-email-and-documents)   | Bieżący kanał: 2101+ <br /><br> Miesięczny Enterprise kanału: 2101+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny Enterprise kanału: 2009+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.44+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md) <br /> - Korzystanie z klasyfikatorów przeszkolnych                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2018+ | 16.49+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Obsługa współtworzeń i autozazawów](sensitivity-labels-coauthoring.md) dla dokumentów oznaczonych i zaszyfrowanych | Bieżący kanał: 2107+ <br /><br> Miesięczny Enterprise kanał: 2107+ <br /><br> Semi-Annual Enterprise kanału: 2202+ |  16.51+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|
+|[Obsługa współtworzeń i autozazawów](sensitivity-labels-coauthoring.md) dla dokumentów oznaczonych i zaszyfrowanych | Bieżący kanał: 2107+ <br /><br> Miesięczny Enterprise kanał: 2107+ <br /><br> Semi-Annual Enterprise kanału: 2202+ |  16.51+ | Wersja przedpremierowa: 2,58+ po [wybrali opcję](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | Wersja przedpremierowa: 16.0.14931 lub więcej, gdy [się na to zdecydujesz](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 
-**Przypisy dolne:**
-
-<sup>\*</sup> Obecnie tekst justowania w celu usunięcia etykiety lub obniżenia poziomu klasyfikacji
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Funkcje etykiet wrażliwości w programie Outlook
 
@@ -131,32 +127,9 @@ Ponieważ to ustawienie jest specyficzne dla aplikacji pakietu Windows Office, n
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office wbudowany klient etykiet i klient usługi Azure Information Protection
 
-Jeśli na komputerach użytkowników jest zainstalowany klient usługi [Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2) Windows, etykiety wbudowane są domyślnie wyłączone w aplikacjach Windows Office, które je [obsługują](#labeling-client-for-desktop-apps). Ponieważ na wbudowanych etykietach nie jest używany dodatek Office, tak jak jest on używany przez klienta usługi Azure Information Protection, ich zaletą jest większa stabilność i większa wydajność. Obsługują one również najnowsze funkcje, takie jak zaawansowane klasyfikatory.
+Jeśli na komputerach z systemem Windows jest zainstalowany klient usługi [Azure Information Protection (AIP](/azure/information-protection/rms-client/aip-clientv2)), etykiety wbudowane są domyślnie wyłączone w aplikacjach pakietu Windows Office, które je [obsługują](#labeling-client-for-desktop-apps). Ponieważ na etykietach wbudowanych nie jest używany dodatek Office, tak jak jest używany przez klienta AIP, ich zaletą jest większa stabilność i większa wydajność. Obsługują one również najnowsze funkcje, takie jak zaawansowane klasyfikatory.
 
-Zamiast odinstalowywania klienta usługi Azure Information Protection zalecamy zapobieganie ładowaniu się dodatku Azure Information Protection w Office aplikacjach. Następnie otrzymasz korzyści wynikające z wbudowanych etykiet w aplikacjach pakietu Office oraz z zalet klienta usługi Azure Information Protection z etykietami plików poza Office aplikacji. Na przykład klient usługi Azure Information Protection może oznaczać wszystkie typy plików za pomocą Eksploratora plików i programu PowerShell. Aby uzyskać więcej informacji na temat funkcji etykiet obsługiwanych poza Office, zobacz [Etykiety wrażliwości i usługa Azure Information Protection](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection).
-
-Aby zapobiec ładowaniu dodatków klienta usługi Azure Information Protection w aplikacjach programu Windows Office, użyj ustawienia zasady grupy Lista zarządzanych dodatków  zgodnie z dokumentem Brak dodatków załadowanym z powodu ustawień zasad grupy dla programów [programów Office 2013 i Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
-
-W przypadku Windows Office, które obsługują wbudowane etykiety, użyj konfiguracji programów Microsoft Word 2016, Excel 2016, PowerPoint 2016 i Outlook 2016 określ następujące identyfikatory programatyczne (ProgID) dla klienta usługi Azure Information Protection i ustaw dla tej opcji wartość 0: Dodatek jest zawsze wyłączony **(zablokowany)**
-
-|Aplikacja  |ProgID  |
-|---------|---------|
-|Word     |     `MSIP.WordAddin`    |
-|Excel     |  `MSIP.ExcelAddin`       |
-|PowerPoint     |   `MSIP.PowerPointAddin`      |
-|Outlook | `MSIP.OutlookAddin` |
-| | | 
-
-Wdeksuj to ustawienie przy zasady grupy lub przy użyciu Office [zasad chmury](/DeployOffice/overview-office-cloud-policy-service).
-
-> [!IMPORTANT]
-> Jeśli użyjemy ustawienia zasady grupy Użyj funkcji Wrażliwości w programie **Office**, aby zastosować i wyświetlić etykiety wrażliwości oraz ustawić wartość **1**, mogą wystąpić pewne sytuacje, w których klient usługi Azure Information Protection może nadal ładować się do aplikacji Office. Zablokowanie ładowania dodatku w każdej aplikacji zapobiega temu.
-
-Ewentualnie możesz interakcyjne wyłączyć lub usunąć dodatek **Microsoft Azure Information Protection** Office z programu Word, Excel, PowerPoint i Outlook. Ta metoda jest odpowiednia do jednego komputera i do testowania ad hoc. Aby uzyskać instrukcje, [zobacz Wyświetlanie i](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) instalowanie dodatków oraz zarządzanie nimi w Office programach. 
-
-Niezależnie od metody, którą wybierzesz, zmiany zostaną wprowadzone po ponownym Office ponownego uruchomienia aplikacji.
-
-Aby uzyskać szczegółowe informacje o funkcjach obsługiwanych przez klienta usługi Azure Information Protection i wbudowanego klienta Office etykiet, zobacz Wybieranie rozwiązania do oznaczania etykiet usługi [Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) z dokumentacji usługi Azure Information Protection.
+Aby dowiedzieć się więcej na temat opcji oznaczania etykiet za pomocą klienta AIP, zobacz Dlaczego warto wybrać wbudowaną etykietę MIP w dodatku [AIP dla aplikacji Office AIP](sensitivity-labels-aip.md).
 
 ## <a name="office-file-types-supported"></a>Office obsługiwane typy plików
 
@@ -427,7 +400,14 @@ Gdy aplikacja Outlook nie obsługuje wyłączania obowiązkowych etykiet: Jeśli
 
 Aby uzyskać informacje na temat zdarzeń inspekcji generowanych przez działania etykiet wrażliwości, zobacz sekcję Działania [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) etykiet wrażliwości w sekcji Przeszukiwanie dziennika inspekcji [w centrum zgodności](search-the-audit-log-in-security-and-compliance.md).
 
-Te informacje inspekcji są wizualnie reprezentowane w Eksploratorze [](data-classification-content-explorer.md) zawartości i w [](data-classification-activity-explorer.md) Eksploratorze aktywności, aby ułatwić zrozumienie sposobu, w jaki są używane etykiety wrażliwości i gdzie znajduje się zawartość oznaczona etykietą. Podczas eksportowania i konfigurowania rekordów dziennika inspekcji można również tworzyć raporty niestandardowe, korzystając z oprogramowania do zarządzania informacjami o zabezpieczeniach i [zarządzania zdarzeniami](export-view-audit-log-records.md).
+Te informacje inspekcji są wizualnie reprezentowane w Eksploratorze [](data-classification-content-explorer.md) zawartości i w [](data-classification-activity-explorer.md) Eksploratorze aktywności, aby ułatwić zrozumienie sposobu, w jaki są używane etykiety wrażliwości i gdzie znajduje się zawartość oznaczona etykietą. 
+
+Podczas eksportowania i konfigurowania rekordów dziennika inspekcji można również tworzyć raporty niestandardowe, korzystając z oprogramowania do zarządzania informacjami o zabezpieczeniach i [zarządzania zdarzeniami](export-view-audit-log-records.md). Aby uzyskać bardziej szczegółowe rozwiązania do raportowania, zobacz Dokumentacja [Office 365 API działań zarządzania](/office/office-365-management-api/office-365-management-activity-api-reference).
+
+> [!TIP]
+> Aby ułatwić tworzenie raportów niestandardowych, zobacz następujące wpisy w blogu:
+> - [Microsoft 365 działań dziennika inspekcji zgodności za pośrednictwem interfejsu API zarządzania usługi O365 — część 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
+> - [Microsoft 365 dziennika inspekcji zgodności za pośrednictwem interfejsu API zarządzania usługi O365 — część 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
 
 ## <a name="end-user-documentation"></a>Dokumentacja użytkownika końcowego
 

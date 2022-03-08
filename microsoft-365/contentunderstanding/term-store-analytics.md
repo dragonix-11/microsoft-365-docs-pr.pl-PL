@@ -11,17 +11,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 80dc8d3750f112c1c90f3c6bf24f65e8b794ec58
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6daffa44356136615dc002b01bd7da5c575fe1fd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985226"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329143"
 ---
 # <a name="term-store-reports"></a>Raporty dotyczące magazynu okresów
 
-Raporty dotyczące magazynu terminów są dostępne w centrum SharePoint administracyjnego. Ta funkcja wymaga licencji [SharePoint Syntex](index.md) licencji.
+Dostęp do raportów dotyczących <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">magazynu okresów</a> można uzyskać w centrum SharePoint administracyjnego. Ta funkcja wymaga licencji [SharePoint Syntex](index.md) licencji.
 
 **Rozwiń pozycję** Raporty, a następnie kliknij **pozycję Usługi zawartości**.
 

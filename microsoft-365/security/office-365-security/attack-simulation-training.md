@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak symulować ataki służące do wyłudzania informacji i szkolenie użytkowników w zakresie zapobiegania wyłudzaniu informacji przy użyciu szkolenia symezyjnego w programie Microsoft Defender dla programu Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 065b456d5a53a4d803c67ac0ac6ddc270391851a
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 31c8fd7b0369e5af522cd79b9bee7c5ee8460cc5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "63009783"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329645"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Symulowanie ataków phishingowego za pomocą szkolenia symezyjnego ataków w programie Defender dla Office 365
 
@@ -361,6 +361,7 @@ Dostępne są następujące ustawienia:
     - **Wybierz czas uruchomienia**
 - **Konfigurowanie liczby dni do zakończenia symulacyjnej po**: Wartość domyślna to 2.
 - **Włączanie dostarczania stref czasowych opartych na regionach**: umożliwia dostarczanie symulowanych komunikatów o atakach do pracowników w godzinach pracy na podstawie ich regionu.
+- **Wyświetl stronę z zebranymi danymi** w programie Drive-by technique: Możesz wyświetlić nakładanie na ataki techniki adresu URL drive-bu. Aby ukryć nakładkę i przejść bezpośrednio do strony docelowej, de-select this option.
 
 Po zakończeniu kliknij przycisk **Dalej**.
 

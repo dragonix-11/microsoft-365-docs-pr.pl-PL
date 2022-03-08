@@ -2,8 +2,8 @@
 title: Zarządzanie programem Microsoft Rewards
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Użytkownicy, którzy mają osobiste konta Microsoft, mogą zdobyć punkty Microsoft Rewards w związku ze swoimi wyszukiwaniami służbowym, jeśli opcja Połącz AAD z funkcją Rewards jest włączona.
-ms.openlocfilehash: 59c9f3e2bb17a01880995d5e57f38d02d41015aa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f31571c81ee511b081344d4bf8d50560229193e6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983939"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315823"
 ---
 # <a name="manage-microsoft-rewards"></a>Zarządzanie programem Microsoft Rewards
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Skonfiguruj łącznik w aplikacji i użyj go w Centrum zgodności platformy Microsoft 365 do importowania i archiwizowania danych weChat w Microsoft 365.
-ms.openlocfilehash: 5dec31d163c22a372ac7c43cfc6f3963bcc4b900
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: f2adb42dfd8145658e8861c752cfb9c11e306f52
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "63020830"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328221"
 ---
 # <a name="set-up-a-connector-to-archive-wechat-data"></a>Konfigurowanie łącznika do archiwizowania danych z programu WeChat
 
@@ -49,7 +49,7 @@ Poniższe omówienie przedstawia proces używania łącznika do archiwizowania d
 
 - Konieczne będzie zainstalowanie aplikacji Tencent WeCom na telefonach komórkowych użytkowników w organizacji i aktywowanie jej. Aplikacja WeCom umożliwia użytkownikom komunikowanie się i rozmawianie na czacie z innymi użytkownikami weChat i WeCom.
 
-- Użytkownik, który tworzy łącznik programu WeChat Archiver w Centrum zgodności platformy Microsoft 365 musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w Exchange Online. Jest to wymagane do dodawania łączników na **stronie Łączniki** danych w centrum zgodności. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który tworzy łącznik programu WeChat Archiver w Centrum zgodności platformy Microsoft 365 musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Ten łącznik danych TeleMessage jest dostępny w GCC w chmurze dla instytucji rządowych Microsoft 365 USA. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Organizacji w systemach innych firm, które znajdują się poza infrastrukturą firmy Microsoft 365 i dlatego nie są objęte zobowiązaniami firmy Microsoft 365 w zakresie zgodności z przepisami i ochrony danych. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
 

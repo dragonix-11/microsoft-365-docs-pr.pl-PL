@@ -1,5 +1,5 @@
 ---
-title: Tworzenie środowiska Microsoft 365 Defender oceny
+title: Krok nr 1. Tworzenie środowiska Microsoft 365 Defender oceny
 description: Skonfiguruj laboratorium Microsoft 365 Defender lub środowisko pilotażowe, aktywując licencje wersji próbnej. Następnie skonfiguruj usługę Microsoft Defender for Identity (MDI) i wszystkie inne oceny M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: f294884fcae64e91d88305bccf777cee8663a0d3
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 17751cf5f71d9754ad8d5c0c913ee3438b49b399
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013388"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311623"
 ---
-# <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Tworzenie środowiska Microsoft 365 Defender oceny
+# <a name="step-1-create-the-microsoft-365-defender-evaluation-environment"></a>Krok nr 1. Tworzenie środowiska Microsoft 365 Defender oceny
 
 Istnieją dwa typowe sposoby następnego kroku oceny. Ten dokument zakłada, że masz już dzierżawę produkcyjną Microsoft 365 i aktywuje licencje wersji próbnej E5, aby ocenić Microsoft 365 Defender *w bieżącym środowisku*. Ocena w miejscu pozwoli zachować wszystkie metody zabezpieczeń przy zakupie licencji po okresie oceny.
 

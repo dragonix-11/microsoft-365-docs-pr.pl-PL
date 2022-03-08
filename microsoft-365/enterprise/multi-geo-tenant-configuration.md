@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: W tym artykule dowiesz się, jak dodawać lokalizacje satelitarne i konfigurować dzierżawcę pod Microsoft 365 multi-Geo.
-ms.openlocfilehash: 232791705dacfa9442304434559b67a4b01ca7dd
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 9842ff2295a64f544940f579d732c688735ae341
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63014733"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312085"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 konfiguracji dzierżawy wielodostępnych lokalizacji geograficznych
 
@@ -44,17 +44,15 @@ Musisz dodać lokalizację satelitarną dla każdej lokalizacji geograficznej, w
 
 Aby dodać lokalizację satelitarną
 
-1. Otwórz SharePoint administracyjne.
+1. Otwórz SharePoint administracyjne. i przejdź do <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**pozycji Lokalizacje geograficzne**</a>.
 
-2. Przejdź do **karty Lokalizacje** geograficzne.
+1. Wybierz **pozycję Dodaj lokalizację**.
 
-3. Kliknij **pozycję Dodaj lokalizację**.
+1. Wybierz lokalizację, którą chcesz dodać, a następnie wybierz pozycję **Dalej**.
 
-4. Wybierz lokalizację, którą chcesz dodać, a następnie kliknij przycisk **Dalej**.
+1. Wpisz domenę, której chcesz używać z lokalizacją geograficzną, a następnie wybierz pozycję **Dodaj**.
 
-5. Wpisz domenę, której chcesz używać z lokalizacją geograficzną, a następnie kliknij przycisk **Dodaj**.
-
-6. Kliknij przycisk **Zamknij**.
+1. Wybierz pozycję **Zamknij**.
 
 Inicjowanie obsługi administracyjnej może potrwać od kilku godzin do 72 godzin w zależności od wielkości Twojej dzierżawy. Po zakończeniu inicjowania obsługi administracyjnej lokalizacji satelitarnej otrzymasz wiadomość e-mail z potwierdzeniem. Gdy nowa lokalizacja geograficzna jest wyświetlana na mapie w kolorze niebieskim  na karcie Lokalizacje geograficzne w centrum administracyjnym programu OneDrive, możesz przejść do ustawienia preferowanej lokalizacji danych użytkowników do tej lokalizacji geograficznej. 
 

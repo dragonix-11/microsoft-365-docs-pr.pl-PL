@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6910336dea0559ad241c240cde09d3929fe2e422
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: ac5c1a1bb541dee61155a55f23a78533c2b5360c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013370"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311609"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Włączanie środowiska oceny dla programu Microsoft Defender dla tożsamości
 

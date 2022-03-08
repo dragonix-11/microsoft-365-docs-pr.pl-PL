@@ -2,13 +2,13 @@
 title: Połączenie rekordów DNS w witrynie IONOS o 1&1 do Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, usługi Skype dla firm Online i innych usług w witrynie 1&1 IONOS dla firmy Microsoft.
-ms.openlocfilehash: 8dc3a509a05e55e984d1c06e59319661a19019e7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 54e18972fe2d5e2ccd8c3ab266b20241e67f68a9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989497"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313611"
 ---
 # <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Połączenie rekordów DNS w witrynie IONOS o 1&1 do Microsoft 365
 

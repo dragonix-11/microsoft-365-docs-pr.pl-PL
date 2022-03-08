@@ -2,8 +2,8 @@
 title: Konfigurowanie funkcji automatycznego badania i reagowania na Microsoft 365 Defender
 description: Konfigurowanie automatycznego badania i reagowania dzięki funkcji samooceny w programie Microsoft 365 Defender
 search.appverid: MET150
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 6b748fec72c81284a10af10752580d18b9969104
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 4ec06a96e345345560a2714fa7e23d91a6f5832f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "63026781"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314220"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurowanie funkcji automatycznego badania i reagowania na Microsoft 365 Defender
 

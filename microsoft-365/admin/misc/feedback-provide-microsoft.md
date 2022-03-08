@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Poznaj różne sposoby, w jakie możesz przekazać firmie Microsoft opinię na temat produktów i usług firmy Microsoft.
-ms.openlocfilehash: 0aba87571f4b4fddb38f9cd5cae526d62d2e2c64
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 6e21c143a48ddf643461f8c471d8fd063edabd5c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63004968"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325911"
 ---
 # <a name="learn-about-how-to-provide-feedback-to-microsoft"></a>Dowiedz się, jak przekazać opinię firmie Microsoft
 
@@ -114,8 +114,7 @@ Moderowanie opinii społeczności może być wykonywane przez pracowników firmy
 
 ## <a name="data-handling-and-privacy"></a>Obsługa danych i prywatność
 
-Rozumiemy, że gdy korzystasz z produktów i usług firmy Microsoft, powierzasz nam jeden ze swoich najcenniejszych zasobów: swoje dane.  Zapewniamy, że obierania przez nas opinii są przechowywane i obsługiwane zgodnie z regułami zarządzania firmy Microsoft oraz że dostęp do nich jest możliwy tylko w przypadku zatwierdzonych zastosowań.  Nie używamy Twoich wiadomości e-mail, czatu, plików ani innej zawartości osobistej do kierowania do Ciebie reklam.  Gdy zbieramy dane, używamy ich do poprawiania Twoich doświadczeń.  Zasady zachowania poufności informacji firmy Microsoft.
-Dziękujemy za wszystkie opinie, które nam przekazać, aby pomóc w ulepszaniu naszych produktów i usług.  Dziękujemy. Dziękujemy za udział w naszej społeczności!
+Rozumiemy, że gdy korzystasz z produktów i usług firmy Microsoft, powierzasz nam jeden ze swoich najcenniejszych zasobów: swoje dane.  Zapewniamy, że obierania przez nas opinii są przechowywane i obsługiwane zgodnie z regułami zarządzania firmy Microsoft oraz że dostęp do nich jest możliwy tylko w przypadku zatwierdzonych zastosowań.  Nie używamy Twoich wiadomości e-mail, czatu, plików ani innej zawartości osobistej do kierowania do Ciebie reklam.  Gdy zbieramy dane, używamy ich do poprawiania Twoich doświadczeń. Dziękujemy za udział w naszej społeczności!
 
 ## <a name="have-feedback-about-the-new-feedback-web-portal"></a>Masz opinię na temat nowego portalu internetowego Opinie?
 

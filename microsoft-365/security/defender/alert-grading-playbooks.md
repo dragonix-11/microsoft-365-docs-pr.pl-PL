@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fe0beb88cf613a5a966fc0534dfa4def715e81d2
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 129a4f2efd9a47c09535be3ba0f56504f3da697c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62974012"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328011"
 ---
 # <a name="alert-grading-playbooks"></a>Podręczniki oceniania alertów
 
@@ -39,7 +39,7 @@ ms.locfileid: "62974012"
 
 Podręczniki oceniania alertów pozwalają na ich metody przejrzenie i szybkie klasyfikowanie w przypadku dobrze znanych ataków oraz podjęcia zalecanych działań w celu podjęcia działań naprawczych w celu ochrony sieci i ataków. Ocena alertów pomoże także w prawidłowym klasyfikowaniu ogólnego zdarzenia.
 
-Jako analityk centrum zabezpieczeń (SOC, Security Operations Center), musisz mieć dostęp do portalu Microsoft 365 Defender, aby:
+Jako analityk SOC (Security Researcher Researcher lub Centrum operacji zabezpieczeń) musisz mieć dostęp do portalu Microsoft 365 Defender, aby:
 
 - Oceniaj i przejrzyj wygenerowane alerty i skojarzone zdarzenia. Zobacz [badanie alertów](investigate-alerts.md).
 - Przeszukaj dane sygnału zabezpieczeń dzierżawcy i sprawdź, czy są to potencjalne zagrożenia i podejrzane działania. Zobacz [zaawansowane łowy](advanced-hunting-overview.md).
@@ -48,9 +48,9 @@ Jako analityk centrum zabezpieczeń (SOC, Security Operations Center), musisz mi
 >Możesz przekazać firmie Microsoft opinię na temat alertów dotyczących prawdziwych dodatnich i fałszywie dodatnich wyników, nie tylko na końcu badania, ale również w trakcie procesu badania. Może to ułatwić firmie Microsoft analizę i klasyfikację zdarzeń zabezpieczeń w przyszłości.
 >
 
-## <a name="microsoft-defender-for-office-365"></a>Program Microsoft Defender dla Office 365
+## <a name="microsoft-defender-for-office-365"></a>Usługa Microsoft Defender dla Office 365
 
-[Usługa Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) chroni organizację przed złośliwymi zagrożeniami, które mogą być ze strony wiadomości e-mail, linków (adresów URL) i narzędzi do współpracy. Program Defender for Office 365 oferuje:
+[Program Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) chroni organizację przed złośliwymi zagrożeniami, które mogą być ze strony wiadomości e-mail, linków (adresów URL) i narzędzi do współpracy. Program Defender for Office 365 oferuje:
 
 - Zasady ochrony przed zagrożeniami
 
@@ -68,7 +68,7 @@ Jako analityk centrum zabezpieczeń (SOC, Security Operations Center), musisz mi
 
   Oszczędzaj czas i wysiłku podczas badań i ograniczania zagrożeń.
 
-Defender for Office 365 alerts can be classified as: 
+Alerty programu Defender Office 365 można sklasyfikować jako: 
 
 - True positive (TP) for confirmed malicious activity. 
 - Wartość fałszywie dodatnia (FP) dla potwierdzonej niech złośliwych aktywności.
@@ -99,4 +99,4 @@ Zapoznaj się z tymi podręcznikami, aby dowiedzieć się, jak szybciej ocenić 
 - [Podejrzane reguły manipulowania skrzynką odbiorczą](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Podejrzane reguły przesyłania dalej skrzynki odbiorczej](alert-grading-playbook-inbox-forwarding-rules.md)
 
-Zobacz [Badanie alertów,](investigate-alerts.md) aby uzyskać informacje na temat sprawdzania alertów za pomocą Microsoft 365 Defender internetowego.
+Zobacz [Badanie alertów,](investigate-alerts.md) aby uzyskać informacje na temat tego, jak sprawdzać alerty za pomocą Microsoft 365 Defender portalem informacyjnym.

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Ustaw czas buforu przed lub po terminie w aplikacji Microsoft Bookings, aby zezwolić na oczyszczenie lub zresetowanie sprzętu.
-ms.openlocfilehash: c3d07be3c858eca5f6e9a672581b386625f5dd80
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a33159b0b5f168bbb61c88bc9b4181e05c8abbb1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973522"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329323"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Ustawianie czasu buforu w uwitrynie Microsoft Bookings
 
@@ -30,13 +30,14 @@ Ustawienie czasu buforu znajduje się tuż poniżej listy Domyślne  s wyboru cz
 
    ![Obraz aplikacji Bookings z włączonym czasem buforu czasu.](../media/bookings-buffertime.png)
 
-## <a name="buffer-time-and-appointment-timing"></a>Bufor czasu i chronometrażu terminu
+<!--## Buffer time and appointment timing
 
-Aby uniknąć zamieszania w sytuacji, gdy klienci spodziewają się spotkać się z Tobą, w kalendarzu aplikacji Bookings jest przedstawiany bufor czasu i rzeczywisty czas spotkań (czas, który klienci spodziewają się spotkania z Tobą), a także w potwierdzeniach e-mail i przypomnieniach dla odpowiedniego personelu. Na przykład poniżej przedstawiono to, co można zobaczyć w aplikacji Bookings w przypadku terminu z klientem, który obejmuje 15 minut buforu przed terminem.
+To avoid confusion about when customers expect to meet with you, Bookings shows buffer time and actual appointment time (the time your customers expect to meet with you) on your calendar, and in email confirmations and reminders to relevant staff. For example, below is what you’d see in Bookings for an appointment with a customer that includes 15 minutes of pre-appointment buffer time.
 
-Zwróć uwagę, że samo zdarzenie (po lewej stronie poniższej ilustracji) pokazuje jaśniejsze cieniowanie dla czasu buforu i ciemniejsze cieniowanie rzeczywistego terminu u klienta. W wywołaniu terminu (który jest otwierany po wybraniu zdarzenia) wyraźnie podano, że z 10:00 do 10:00 z Użytkownikiem Katie Jordan jest do dyspozycji 15 minut buforu czasu przed tym terminem i 0 minut po nim. Potwierdzenia i przypomnienia dla personelu w podobny sposób odwołują się do konkretnego buforu i czasu spotkania, podczas gdy klient może otrzymać tylko potwierdzenia i przypomnienia odwołujące się do terminu o godzinie 9:00 do 10:00.
+Note that the event itself (on the left in the image below) shows lighter shading for the buffer time and darker shading for the actual customer appointment. The appointment call-out (which is opened when you select the event) specifically states that the appointment is from 9:00AM to 10:00AM with Katie Jordan and includes 15 minutes of buffer time before the appointment and 0 minutes after the appointment. Confirmations and reminders to staff similarly reference specific buffer and appointment time while the customer would only get confirmations and reminders that reference a 9:00AM to 10:00AM appointment time.
 
-   ![Obraz przedstawiający call-out appointment bookings z wyświetloną godziną buforu czasu.](../media/bookings-buffertime-callout.png)
+   ![Image of Bookings appointment call-out with buffer time showing.](../media/bookings-buffertime-callout.png)
+-->
 
 ## <a name="buffer-time-and-availability"></a>Bufor czasu i dostępności
 

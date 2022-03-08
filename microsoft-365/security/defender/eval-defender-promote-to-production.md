@@ -1,5 +1,5 @@
 ---
-title: Podniesienie środowiska Microsoft 365 Defender oceny do produkcji
+title: Krok 7. Podniesienie środowiska Microsoft 365 Defender oceny do produkcji
 description: W tym artykule opanuje promowanie środowiska na żywo aplikacji MDI, MDO, MDE i Defender w chmurze w środowisku na Microsoft 365 Defender lub M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e4b852ef7f252033a67e6aa3f1f8183400c18bdb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 47f36d965c9b2b6ef5f106c590e47fe0251163d8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033790"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323979"
 ---
-# <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Podniesienie środowiska oceny Microsoft 365 Defender do produkcji
+# <a name="step-7-promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Krok 7. Podniesienie środowiska oceny Microsoft 365 Defender do produkcji
 
 **Dotyczy:**
 - Microsoft 365 Defender

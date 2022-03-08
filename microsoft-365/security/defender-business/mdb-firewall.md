@@ -1,13 +1,13 @@
 ---
-title: Zapora w programie Microsoft Defender dla firm (wersja Preview)
-description: Dowiedz się Windows Defender o Zaporze programu Microsoft Defender dla firm (wersja Preview), w tym o ustawieniach konfiguracji
+title: Zapora w programie Microsoft Defender dla firm
+description: Dowiedz się więcej o Zaporze Windows Defender w programie Microsoft Defender dla firm, w tym o ustawieniach konfiguracji
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,42 +16,48 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d3fbaa66dd29c0c5ff3dcc2a420d1d05e789bd33
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 0181f0c74bc7a00247b5b0fd49c56b4713d188e8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027046"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317083"
 ---
-# <a name="firewall-in-microsoft-defender-for-business-preview"></a>Zapora w programie Microsoft Defender dla firm (wersja Preview)
+# <a name="firewall-in-microsoft-defender-for-business"></a>Zapora w programie Microsoft Defender dla firm
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Od 1 marca 2022 r. usługa Microsoft Defender dla firm jest wprowadzana u klientów usługi Microsoft 365 Business Premium. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-Program Microsoft Defender dla firm (wersja Preview) zawiera funkcje zapory z [Windows Defender sieciowej](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Ochrona za pomocą zapory pomaga zabezpieczyć urządzenia za pomocą reguł, które określają ruch sieciowy, który może napływać do urządzeń lub z nich przepływać. 
+Usługa Microsoft Defender dla firm zawiera funkcje zapory z [zaporą Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Ochrona za pomocą zapory pomaga zabezpieczyć urządzenia za pomocą reguł, które określają ruch sieciowy, który może napływać do urządzeń lub z nich przepływać. 
 
 Za pomocą ochrony zapory możesz określić, czy zezwalać na połączenia na urządzeniach w różnych lokalizacjach, czy blokować je. Ustawienia zapory mogą na przykład zezwalać na połączenia przychodzące na urządzeniach połączonych z siecią wewnętrzną organizacji, ale zapobiegać tym połączeniom, gdy urządzenie znajduje się w sieci z niezaufanymi urządzeniami.
 
 **W tym artykule opisano**:
 
-- [Domyślne ustawienia zapory w programie Defender dla firm (wersja Preview)](#default-firewall-settings-in-defender-for-business)
-- [Ustawienia zapory, które można skonfigurować w programie Defender dla firm (wersja Preview)](#firewall-settings-you-can-configure-in-defender-for-business)
+- [Domyślne ustawienia zapory w programie Defender dla firm](#default-firewall-settings-in-defender-for-business)
+
+- [Ustawienia zapory, które można skonfigurować w programie Defender dla firm](#firewall-settings-you-can-configure-in-defender-for-business)
+
+>
+> **Masz minutę?**
+> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+>
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>Domyślne ustawienia zapory w programie Defender dla firm
 
-Program Microsoft Defender dla firm (wersja Preview) zawiera domyślne zasady zapory i ustawienia, które pomagają chronić urządzenia Twojej organizacji od pierwszego dnia. Po dołączonach urządzeń organizacji do programu Microsoft Defender dla firm (wersja Preview) domyślne zasady zapory są następujące:
+Usługa Microsoft Defender dla firm zawiera domyślne zasady zapory i ustawienia, które pomagają chronić urządzenia Twojej organizacji od pierwszego dnia. Po dołączonach urządzeń organizacji do programu Microsoft Defender dla firm domyślne zasady zapory są następujące:
 
 - Połączenia wychodzące z urządzeń są domyślnie dozwolone, niezależnie od lokalizacji.
 - Gdy urządzenia są połączone z siecią organizacji, wszystkie połączenia przychodzące są domyślnie blokowane.
 - Gdy urządzenia są połączone z siecią publiczną lub prywatną, wszystkie połączenia przychodzące są domyślnie blokowane.
 
-W programie Microsoft Defender dla firm (wersja Preview) można zdefiniować wyjątki w celu zablokowania lub zablokowania połączeń przychodzących. Wyjątki te można zdefiniować, tworząc reguły niestandardowe. Zobacz [Zarządzanie regułami niestandardowymi dla zasad zapory](mdb-custom-rules-firewall.md).
+W programie Microsoft Defender dla Firm można definiować wyjątki w celu blokowania lub zezwalania na połączenia przychodzące. Wyjątki te można zdefiniować, tworząc reguły niestandardowe. Zobacz [Zarządzanie regułami niestandardowymi dla zasad zapory](mdb-custom-rules-firewall.md).
 
 ## <a name="firewall-settings-you-can-configure-in-defender-for-business"></a>Ustawienia zapory, które można skonfigurować w programie Defender dla firm
 
-Usługa Microsoft Defender dla firm (wersja Preview) zapewnia ochronę za pomocą Windows Defender sieciowej. W poniższej tabeli wymieniono ustawienia, które można skonfigurować w celu ochrony zapory w programie Microsoft Defender dla firm (wersja Preview). <br/><br/>
+Usługa Microsoft Defender dla firm zapewnia ochronę za pomocą zapory programu Windows Defender. W poniższej tabeli wymieniono ustawienia, które można skonfigurować pod celu ochrony za pomocą zapory w programie Microsoft Defender dla firm. <br/><br/>
 
 | Ustawienie | Opis |
 |--|--|
@@ -62,12 +68,12 @@ Usługa Microsoft Defender dla firm (wersja Preview) zapewnia ochronę za pomoc�
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Zarządzanie ustawieniami zapory w programie Microsoft Defender dla firm (wersja Preview)](mdb-custom-rules-firewall.md)
+- [Zarządzanie ustawieniami zapory w programie Microsoft Defender dla firm](mdb-custom-rules-firewall.md)
 
-- [Dowiedz się więcej o Windows Defender sieciowej](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [Dowiedz się więcej o Zaporze Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 
-- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm (wersja Preview)](mdb-view-manage-incidents.md)
+- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md)
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm (wersja Preview)](mdb-respond-mitigate-threats.md)
+- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
 
 - [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md)

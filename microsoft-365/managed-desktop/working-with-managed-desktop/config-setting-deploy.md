@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 9933731fa550bc7ef5df567920e97f9f6559e7f8
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: a52995ff9ab2f946ca11417d4ed7bfa13825353f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "63009674"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326785"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Wdrażanie i śledzenie ustawień konfigurowalnych — Microsoft Managed Desktop
 

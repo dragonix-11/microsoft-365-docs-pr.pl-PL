@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2569349bd5255f47ebca710263dfd7510aee817b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: e534211008ea560642ba306844b9223170ac0140
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013387"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323223"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Przegląd wymagań dotyczących architektury i kluczowych pojęć dotyczących usługi Microsoft Defender dla tożsamości
 
@@ -76,7 +76,7 @@ W poniższej tabeli przedstawiono kluczowe pojęcia, które należy zrozumieć p
 | Rozdzielczość nazw sieciowych    |  Funkcja rozpoznawania nazw sieci (NNR, Network Name Resolution) jest składnikiem funkcji MDI, która rejestruje działania na podstawie ruchu sieciowego, zdarzeń Windows, ETW itp. skoreluje te pierwotne dane z odpowiednimi komputerami zaangażowanymi w każde działanie.       | [Co to jest rozpoznawania nazw sieciowych?](/defender-for-identity/nnr-policy)      |
 | Raporty    | Raporty usługi Defender dla tożsamości umożliwiają planowanie lub natychmiastowe generowanie i pobieranie raportów, które dostarczają informacje o stanie systemu i jednostki.  Możesz tworzyć raporty dotyczące kondycji systemu, alertów zabezpieczeń i potencjalnych ścieżek ruchu lateralnych wykrytych w środowisku.   | [Raporty tożsamości programu Microsoft Defender dla tożsamości ](/defender-for-identity/reports)       |
 | Grupy ról    | Program Defender for Identity oferuje grupy oparte na rolach i dostęp delegowany w celu zabezpieczenia danych zgodnie z określonymi potrzebami organizacji w zakresie zabezpieczeń i zgodności, które obejmują administratorów, użytkowników i osoby przeglądowe.        |  [Grupy ról usługi Microsoft Defender dla tożsamości](/defender-for-identity/role-groups)       |
-| Portal administracyjny    |  Oprócz portalu Microsoft 365 Defender cab portalu usługi Defender for Identity jest używane do monitorowania podejrzanych działań i reagowania na nie.      | [Praca z portalem usługi Microsoft Defender for Identity](/defender-for-identity/workspace-portal)        |
+| Portal administracyjny    |  Oprócz portalu Microsoft 365 Defender usługi Defender for Identity portal usługi Defender for Identity może być używany do monitorowania podejrzanych działań i reagowania na nie.      | [Praca z portalem usługi Microsoft Defender for Identity](/defender-for-identity/workspace-portal)        |
 | Integracja programu Microsoft Defender dla aplikacji w chmurze   | Program Microsoft Defender for Cloud Apps integruje się z programem Microsoft Defender for Identity w celu zapewnienia analizy zachowań encji użytkownika (UEBA) w środowisku hybrydowym — zarówno w aplikacji w chmurze, jak i w środowisku lokalnym   | Integracja usługi Microsoft Defender dla tożsamości  |
 | | | |
 

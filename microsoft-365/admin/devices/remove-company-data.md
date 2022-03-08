@@ -25,16 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Dowiedz się, jak Microsoft 365 firmowe dane firmowe, które użytkownicy mają na urządzeniach lub Windows komputerach.
-ms.openlocfilehash: ec5734154913148945e3c37d80e6a5c994af85f9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7cd26dfc2ea73e32fb7588a4d1e15098594a9313
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984083"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313807"
 ---
 # <a name="remove-company-data-from-devices"></a>Usuwanie firmowych danych z urządzeń
 
 Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 ## <a name="remove-company-data"></a>Usuwanie firmowych danych
 
@@ -53,4 +56,6 @@ Za pomocą usługi Microsoft 365 dla firm możesz usunąć firmowe dane, które 
 5. W okienku potwierdzenia wybierz pozycję **Potwierdź** \> **zamknięcie**.
     
 
+## <a name="see-also"></a>Zobacz też
 
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

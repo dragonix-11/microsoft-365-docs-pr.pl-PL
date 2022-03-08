@@ -2,8 +2,8 @@
 title: Krok 3. Wdrażanie zabezpieczeń i zgodności dla pracowników hybrydowych
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Korzystaj Microsoft 365 zabezpieczeń i zgodności, aby chronić aplikacje, dane i urządzenia dla pracowników hybrydowych.
-ms.openlocfilehash: 7c898a1ef588ce8eee553490eaa8f5dd452df9e0
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 5ae369ffa41444e0cd2d3c6d28be470ede170b01
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014838"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314059"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Krok 3. Wdrażanie zabezpieczeń i zgodności dla pracowników hybrydowych
 

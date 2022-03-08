@@ -2,8 +2,8 @@
 title: centrum administracyjne platformy Microsoft 365 — omówienie
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Użyj widoku uproszczonego w programie Microsoft 365 do zarządzania często wykonywanymi zadaniami lub widoku pulpitu nawigacyjnego w przypadku bardziej złożonych ustawień i zadań.
-ms.openlocfilehash: c6443ef9406f49fe8f27aa5977aac1e046583587
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 92d6188ee843d9c3148e1036894ab9a3819247af
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017742"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315935"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Omówienie centrum administracyjne platformy Microsoft 365
 

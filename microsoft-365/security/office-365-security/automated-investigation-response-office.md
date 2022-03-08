@@ -2,8 +2,8 @@
 title: Jak działa automatyczne badanie i reagowanie w programie Microsoft Defender dla systemu Office 365
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f515567eca50f99e654df15ddc0b69eb186ba89a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ee046815f681b327fbcceaedf9033af9bfa5e109
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63008742"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329519"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Jak działa automatyczne badanie i reagowanie w programie Microsoft Defender dla systemu Office 365
 

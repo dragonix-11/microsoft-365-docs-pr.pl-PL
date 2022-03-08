@@ -1,7 +1,7 @@
 ---
 title: Ocenianie raportu Microsoft 365 aktywnych użytkowników
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -21,17 +21,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: Dowiedz się, jak uzyskać raport Aktywni użytkownicy przy użyciu pulpitu nawigacyjnego Raporty Microsoft 365 w aplikacji centrum administracyjne platformy Microsoft 365 i ile licencji produktu jest używanych.
-ms.openlocfilehash: 793f83e28c396add9046f2c464efbdfef2b291f8
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+description: Dowiedz się, jak uzyskać raport Aktywni użytkownicy przy użyciu pulpitu Microsoft 365 pulpitu nawigacyjnego Raporty centrum administracyjne platformy Microsoft 365 i dowiedzieć się, ile licencji produktu jest używanych.
+ms.openlocfilehash: 9f8b9f12782727121a878cfa353e42291d340688
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "62973799"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312897"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Ocenianie raportu Microsoft 365 aktywnych użytkowników
 
-Na Microsoft 365 nawigacyjnym Raporty możesz wyświetlać informacje o aktywności dotyczącej produktów w organizacji. Przechodząc do poziomu raportów dotyczących poszczególnych produktów, możesz uzyskać bardziej szczegółowe informacje o aktywności w poszczególnych produktach. Zobacz [temat zawierający omówienie pulpitu nawigacyjnego Raporty](activity-reports.md).
+Pulpit Microsoft 365 pulpitu nawigacyjnego Raporty zawiera informacje o aktywności dotyczącej wszystkich produktów w organizacji. Przechodząc do poziomu raportów dotyczących poszczególnych produktów, możesz uzyskać bardziej szczegółowe informacje o aktywności w poszczególnych produktach. Zobacz [temat zawierający omówienie pulpitu nawigacyjnego Raporty](activity-reports.md).
   
 Na przykład za pomocą raportu **Aktywni użytkownicy** można ustalić, ile licencji produktu jest używanych przez osoby w organizacji, oraz przechodzić do szczegółowych informacji o tym, którzy użytkownicy korzystają z jakich produktów. Ten raport może ułatwić administratorom zidentyfikowanie niewystarczająco wykorzystanych produktów lub użytkowników, którzy mogą wymagać dodatkowego szkolenia bądź dodatkowych informacji. 
 
@@ -42,7 +42,7 @@ Na przykład za pomocą raportu **Aktywni użytkownicy** można ustalić, ile li
 
 ## <a name="interpret-the-active-users-report"></a>Interpretowanie raportu Aktywni użytkownicy
 
-Aktywni użytkownicy mogą być wyświetlani w raporcie Office 365, wybierając **kartę Aktywni** użytkownicy.<br/>![Microsoft 365 raporty — Microsoft Office 365 aktywnych użytkowników.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
+Aktywnych użytkowników można wyświetlić w raporcie Office 365, wybierając **kartę Aktywni** użytkownicy.<br/>![Microsoft 365 raporty — Microsoft Office 365 aktywnych użytkowników.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
 
 - W raporcie Aktywni użytkownicy można przeglądać trendy z ostatnich 7, 30, 90 lub 180 dni. Jeśli jednak w raporcie zostanie określony dzień, tabela będzie zawierała dane dla do 28 dni od bieżącej daty (nie daty wygenerowania raportu).
 

@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
-ms.openlocfilehash: 89170c4479af29e9a4b3f46fa3b44ae2fcfa5500
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: aee590f7479119ee7e8679b1048a691f156ccc77
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62973820"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315081"
 ---
 # <a name="access-the-admin-portal"></a>Uzyskiwanie dostępu do portalu administracyjnego
 
@@ -30,7 +30,7 @@ Brama do Microsoft Managed Desktop [jest Microsoft Endpoint Manager.](https://en
 
 Twoje konto administracyjne będzie potrzebowało określonych uprawnień, aby uzyskać dostęp do Microsoft Managed Desktop funkcji administracyjnych w Microsoft Endpoint Manager.
 
-Dostępem administratora do tych funkcji w organizacji można zarządzać, korzystając z kontroli dostępu opartej na rolach. Kilka Azure Active Directory administratora usługi Azure AD oraz wbudowane role Microsoft Managed Desktop są dostępne w celu zapewnienia bardziej szczegółowej kontroli nad różnymi funkcjami w portalu Microsoft Managed Desktop administracyjnym. Aby uzyskać więcej informacji o Azure Active Directory, zobacz Wbudowane role [w usłudze Azure AD](/azure/active-directory/roles/permissions-reference).
+Dostępem administratora do tych funkcji w organizacji można zarządzać, korzystając z kontroli dostępu opartej na rolach. Kilka Azure Active Directory administratora usługi Azure AD oraz wbudowane role administratora usługi Microsoft Managed Desktop są dostępne w celu zapewnienia bardziej szczegółowej kontroli nad różnymi funkcjami w portalu Microsoft Managed Desktop admin. Aby uzyskać więcej informacji o Azure Active Directory, zobacz Wbudowane role [w usłudze Azure AD](/azure/active-directory/roles/permissions-reference).
 
 W przeciwieństwie do ról administratora usługi Azure AD, które dotyczą różnych produktów i usług firmy Microsoft, wbudowane role są specyficzne dla usługi Microsoft Managed Desktop i będą zagwarantować dostęp tylko do funkcji administratora tej usługi. Administratorzy mogą przypisywać wbudowane role użytkownikom pojedynczo lub w połączeniu z rolami administratora usługi Azure AD, aby dodać Microsoft Managed Desktop do istniejących kont administratora.
 
@@ -38,28 +38,28 @@ W przeciwieństwie do ról administratora usługi Azure AD, które dotyczą ró�
 
 | Rola usługi Azure AD | Microsoft Managed Desktop uprawnień |
 | ----- | ----- |
-| Administrator globalny | Administratorzy z tą rolą **będą mieli uprawnienia** do odczytu i zapisu do wszystkich funkcji w portalu Microsoft Managed Desktop administracyjnego. |
-| Czytnik globalny | Administratorzy z tą **rolą będą mieli** uprawnienia tylko do odczytu do wszystkich funkcji w portalu Microsoft Managed Desktop administracyjnego. |
-| Administrator usługi Intune | Administratorzy z tą rolą **będą mieli uprawnienia** do odczytu i zapisu funkcji nie związanych z zabezpieczeniami w portalu Microsoft Managed Desktop administratora. |
+| Administrator globalny | Administratorzy pełniący tę **rolę będą mieli** uprawnienia do odczytu i zapisu wszystkich funkcji w portalu Microsoft Managed Desktop administracyjnego. |
+| Czytnik globalny | Administratorzy z tą rolą **będą mieli uprawnienia** tylko do odczytu do wszystkich funkcji w portalu Microsoft Managed Desktop administracyjnego. |
+| Administrator usługi Intune | Administratorzy z tą rolą **będą mieli uprawnienia** do odczytu i zapisu do funkcji nie związanych z zabezpieczeniami w portalu Microsoft Managed Desktop administracyjnego. |
 | Administrator pomocy technicznej usługi | Administratorzy z tą rolą będą mieli  uprawnienia tylko do odczytu do funkcji nie związanych z zabezpieczeniami  i uprawnieniami do zapisu w celu zarządzania wnioskami o pomoc techniczną, w tym żądaniami eskalacji w portalu Microsoft Managed Desktop administracyjnego. |
 | Administrator zabezpieczeń | Administratorzy z tą rolą będą mieli  uprawnienia tylko do odczytu do wszystkich funkcji i  uprawnień do zapisu do funkcji związanych z zabezpieczeniami w programie Microsoft Managed Desktop w portalu administracyjnym. |
-| Czytnik zabezpieczeń |Administratorzy z tą **rolą będą mieli** uprawnienia tylko do odczytu do wszystkich funkcji w portalu Microsoft Managed Desktop administracyjnego. |
+| Czytnik zabezpieczeń |Administratorzy z tą rolą **będą mieli uprawnienia** tylko do odczytu do wszystkich funkcji w portalu Microsoft Managed Desktop administracyjnego. |
 
 Jeśli potrzebujesz pomocy dotyczącej przypisywania ról Azure Active Directory, zobacz Wbudowane role [w usłudze Azure AD](/azure/active-directory/roles/permissions-reference).
 
 > [!IMPORTANT]
-> Tylko rola administrator globalny ma uprawnienia niezbędne do *zarejestrowania* organizacji w Microsoft Managed Desktop. Miej na Azure Active Directory, że role użytkowników będą nadawać konta użytkownikom uprawnienia z różnych usługi firmy Microsoft. Po zakończeniu rejestrowania przy Microsoft Managed Desktop należy zawsze używać roli z jak najmniejszymi *uprawnieniami* niezbędnymi do wykonywania innych zadań.
+> Tylko rola administratora globalnego ma uprawnienia niezbędne do *zarejestrowania* organizacji w Microsoft Managed Desktop. Miej na Azure Active Directory, że role użytkowników będą mieć uprawnienia do kont użytkowników z różnych usługi firmy Microsoft. Po zakończeniu rejestrowania przy Microsoft Managed Desktop należy zawsze używać roli z jak najmniejszymi *uprawnieniami* niezbędnymi do wykonywania innych zadań.
 
 ## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>Role wbudowane udostępniane przez Microsoft Managed Desktop
 
-Poniżej przedstawiono wbudowane role udostępniane przez Microsoft Managed Desktop:
+Poniżej przedstawiono wbudowane role udostępniane przez użytkownika Microsoft Managed Desktop:
 
 | Rola wbudowana | Microsoft Managed Desktop uprawnień |
 | ----- | ----- |
-| Microsoft Managed Desktop administratorem usługi | Przypisanie tej roli do użytkownika powoduje nadanie administratorowi uprawnień  do odczytu i zapisu Microsoft Managed Desktop funkcji nie związanych z zabezpieczeniami w portalu Microsoft Managed Desktop administracyjnym. |
-| Microsoft Managed Desktop Service Reader | Gdy ta rola jest przypisana do użytkownika, nadaje administratorowi uprawnienia tylko do **odczytu** do funkcji Microsoft Managed Desktop związanych z zabezpieczeniami w portalu Microsoft Managed Desktop administracyjnym. |
+| Microsoft Managed Desktop administratora usługi | Przypisanie tej roli do użytkownika powoduje nadanie administratorowi uprawnień  do odczytu i zapisu Microsoft Managed Desktop funkcji nie związanych z zabezpieczeniami w portalu Microsoft Managed Desktop administratora. |
+| Microsoft Managed Desktop service Reader | Gdy ta rola jest przypisana do użytkownika, nadaje administratorowi  uprawnienia tylko do odczytu do funkcji Microsoft Managed Desktop związanych z zabezpieczeniami w portalu Microsoft Managed Desktop administratora. |
 | Microsoft Managed Desktop Menedżera zabezpieczeń | Przypisanie tej roli do użytkownika powoduje nadanie administratorowi uprawnień  do odczytu i zapisu tylko do funkcji związanych z zabezpieczeniami w portalu Microsoft Managed Desktop administracyjnego. |
-| Microsoft Managed Desktop pomocy technicznej |Przypisanie tej roli do użytkownika powoduje nadanie administratorowi uprawnień  do odczytu i zapisu tylko do tworzenia żądań podwyższenia i zarządzania nimi oraz do obsługi żądań eskalacji zaangażowaniu partnera w portalu Microsoft Managed Desktop administracyjnym. |
+| Microsoft Managed Desktop pomocy technicznej |Gdy ta rola jest przypisana do użytkownika, nadaje administratorowi  uprawnienia do odczytu i zapisu tylko do tworzenia żądań podwyższenia i zarządzania nimi oraz obsługi żądań eskalacji zaangażowaniu partnera w portalu administracyjnym usługi Microsoft Managed Desktop. |
 
 > [!NOTE]
 > Funkcje zabezpieczeń obejmują komunikację związaną z zabezpieczeniami, zarządzanie kontaktami zabezpieczeń, zarządzanie wnioskami o pomoc techniczną związaną z zabezpieczeniami oraz dostęp do raportów związanych z zabezpieczeniami.
@@ -101,7 +101,7 @@ Aby ułatwić zarządzanie wbudowanymi rolami, dla każdej roli niestandardowej 
 1. Wdrażanie i [przypisywanie Intune — Portal firmy](company-portal.md).
 1. [Przypisywanie licencji](assign-licenses.md).
 1. [Wdychuj aplikacje](deploy-apps.md).
-1. [Konfigurowanie urządzeń](set-up-devices.md).
+1. [Przygotowywanie urządzeń](prepare-devices.md).
 1. Skonfiguruj środowisko [pierwszego uruchomienia za pomocą rozwiązania Autopilot i strony stanu rejestracji](esp-first-run.md).
 1. [Włączanie funkcji pomocy technicznej dla użytkowników](enable-support.md).
 1. [Przygotuj użytkowników do korzystania z urządzeń](get-started-devices.md).

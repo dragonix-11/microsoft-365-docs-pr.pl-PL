@@ -2,8 +2,8 @@
 title: Poproś o kredyt z tytułu podatku od pokłonie na koncie (klienci w Indiach)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
@@ -16,17 +16,17 @@ ms.collection:
 search.appverid: MET150
 description: Dowiedz się, jak zażądać na koncie środków z tytułu zapłaconego podatku od wartościowego. Ten artykuł dotyczy tylko klientów w Indiach.
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: cf4e742dfae6866a20690b900604042a1c411503
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bd1f9af95d28ab8204c53afbe47c7def3230dbda
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985113"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327885"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Poproś o kredyt z tytułu podatku od pokłonie na koncie (klienci w Indiach)
 

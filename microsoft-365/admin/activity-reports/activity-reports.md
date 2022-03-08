@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Uzyskaj okresowy raport o tym, jak osoby w Twojej organizacji Microsoft 365 usługi, i przejdź do szczegółów poszczególnych wykresów, aby uzyskać więcej informacji.
-ms.openlocfilehash: 36176ceee1ace993a95e661ab5d71ee062956692
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+description: Uzyskaj okresowy raport o tym, jak osoby w Twojej organizacji Microsoft 365 usług, i przejdź do szczegółów poszczególnych wykresów, aby uzyskać więcej informacji.
+ms.openlocfilehash: 9f54d3b582b08ba38cc6f9f815224f01fcad3dcb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62973810"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315347"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365 raporty w centrum administracyjnym
 
@@ -75,9 +75,9 @@ Osoby, które mają następujące uprawnienia:
 
 - Czytelnik raportów
 
-- Teams administratorem
+- Teams administrator
 
-- Teams Communications Administrator
+- Teams ds. komunikacji
     
 Aby dowiedzieć się więcej, zobacz [Role administratora — informacje](../add-users/about-admin-roles.md) i [Przypisywanie ról administratorów](../add-users/assign-admin-roles.md).
   
@@ -94,7 +94,7 @@ W zależności od subskrypcji poniżej znajdują się dostępne raporty we wszys
 |[Aktywacje pakietu Office](microsoft-office-activations-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Aktywni użytkownicy](active-users-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Microsoft 365 grupy](office-365-groups-ww.md)|Tak|Tak|Tak|Tak|Tak|
-|[Aplikacje Microsoft 365 użytkowania](microsoft365-apps-usage-ww.md)|Tak|Tak|Nie[^1]|Nie[^1]|Nie[^1]|
+|[Aplikacje Microsoft 365 użycia](microsoft365-apps-usage-ww.md)|Tak|Tak|Nie[^1]|Nie[^1]|Nie[^1]|
 |[Aktywność użytkowników usługi OneDrive dla Firm](onedrive-for-business-activity-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Użycie usługi OneDrive dla Firm](onedrive-for-business-usage-ww.md)|Tak|Tak|Tak|Tak|Tak|
 |[Użycie witryny programu SharePoint](sharepoint-site-usage-ww.md)|Tak|Tak|Tak|Tak|Tak|
@@ -111,6 +111,7 @@ W zależności od subskrypcji poniżej znajdują się dostępne raporty we wszys
 |[Aktywność uczestników konferencji usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Tak|Tak|Nie[^1]|Nie[^1]|Tak|
 |[Aktywność sesji równorzędnych usługi Skype dla firm Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Tak|Tak|Nie[^1]|Nie[^1]|Tak|
 |[Viva Edukacja aktywność](viva-learning-activity.md)|Tak|nd.|nd.|nd.|nd.|
+|[Viva Szczegółowe informacje aktywność](viva-insights-activity.md)|Tak|Tak|nd.|nd.|nd.|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.
@@ -144,13 +145,13 @@ Raporty zawierają informacje na temat danych dotyczących użycia w organizacji
 
 Administratorzy globalni mogą przywrócić tę zmianę w dzierżawie i pokazać identyfikowalne dane użytkowników, jeśli pozwalają na to zasady zachowania poufności informacji ich organizacji. Można to osiągnąć w centrum administracyjne platformy Microsoft 365, korzystając z następujących kroków:
   
-1. W centrum administracyjnym przejdź **do strony Ustawienia** \> **usługi Ustawienia** \> **organizacji.**
+1. W centrum administracyjnym przejdź do strony centrum **Ustawienia** \> **organizacji Ustawienia** \> **usługi.**
 
 2. Wybierz pozycję **Raporty**. 
   
 3. Usuń zaznaczenie oświadczenia **Wyświetl ukryte nazwy użytkowników, grup** i witryn we wszystkich raportach, a następnie zapisz zmiany.  
   
-Wprowadzanie tych zmian w raportach na pulpicie nawigacyjnym Raporty potrwa kilka minut. To ustawienie dotyczy również raportów użycia Microsoft 365 w aplikacjach [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) i [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) oraz raportach użycia [w centrum Microsoft Teams administracyjnym firmy Microsoft](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Pokazywanie identyfikowalnych informacji użytkownika to zarejestrowane zdarzenie w Centrum zgodności platformy Microsoft 365 inspekcji.   
+Wprowadzanie tych zmian w raportach na pulpicie nawigacyjnym Raporty potrwa kilka minut. To ustawienie dotyczy również raportów użycia Microsoft 365 w usługach [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) i [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) oraz do raportów użycia w centrum administracyjnym Microsoft Teams [firmy Microsoft](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Pokazywanie identyfikowalnych informacji użytkownika to zarejestrowane zdarzenie w Centrum zgodności platformy Microsoft 365 inspekcji.   
 
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Co się stanie z danymi użycia po zamknięciu konta użytkownika?
@@ -163,4 +164,4 @@ Jednak po wybraniu określonego dnia (do 28 dni od bieżącej daty) raport będz
 
 [Raporty w zabezpieczeniach &amp; Centrum zgodności](../../compliance/reports-in-security-and-compliance.md) (artykuł)\
 [Microsoft 365 analizy użycia](../usage-analytics/usage-analytics.md) (artykuł)\
-[Dostosowywanie raportów w p Microsoft 365 użycia](../usage-analytics/customize-reports.md) (artykuł)
+[Dostosowywanie raportów w p Microsoft 365](../usage-analytics/customize-reports.md) użycia (artykuł)

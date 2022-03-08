@@ -22,12 +22,12 @@ description: Za pomocą etykiet wrażliwości Microsoft Information Protection k
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 9c1eb0e7ba8f1c9388dd61f5e3433e47f9cd0cf4
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1c7ec0f9411d767e588e391eb7eb94ec95a219fb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032998"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312211"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Dowiedz się więcej o etykietach poufności
 
@@ -104,11 +104,13 @@ Po zastosowaniu etykiety wrażliwości do wiadomości e-mail lub dokumentu na za
     
     ![Znak wodny i nagłówek zastosowane do dokumentu.](../media/Sensitivity-label-watermark-header.png)
     
+    Oznaczenia dynamiczne są również obsługiwane przez zmienne. Na przykład wstaw nazwę etykiety lub nazwę dokumentu do nagłówka, stopki lub znaku wodnego. Aby uzyskać więcej informacji, zobacz [Oznaczenia dynamiczne ze zmiennymi](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
+    
     Chcesz sprawdzić, kiedy są stosowane oznaczenia zawartości? Zobacz [Kiedy Office aplikacji stosują oznaczenia i szyfrowanie zawartości](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
-    Niektóre ( ale nie wszystkie aplikacje ) obsługują oznaczenia dynamiczne przy użyciu zmiennych. Na przykład wstaw nazwę etykiety lub nazwę dokumentu do nagłówka, stopki lub znaku wodnego. Aby uzyskać więcej informacji, zobacz [Oznaczenia dynamiczne ze zmiennymi](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
+    Jeśli masz szablony lub przepływy pracy oparte na określonych dokumentach, przed udostępnieniu etykiety użytkownikom przetestuj te dokumenty, oznaczając je wybranymi oznaczeniami zawartości. Niektóre ograniczenia długości ciągów, o których należy pamiętać:
     
-    Długości ciągów: Znaków wodnych można ograniczyć do 255 znaków. Nagłówki i stopki są ograniczone do 1024 znaków z wyjątkiem Excel. Excel nagłówków i stopek może składać się z 255 znaków, ale ten limit obejmuje znaki, które nie są widoczne, na przykład kody formatowania. Po osiągnięciu tego limitu wpis wpisany ciąg nie będzie wyświetlany w Excel.
+    Liczba znaków wodnych jest ograniczona do 255. Nagłówki i stopki są ograniczone do 1024 znaków z wyjątkiem Excel. Excel nagłówków i stopek może składać się z 255 znaków, ale ten limit obejmuje znaki, które nie są widoczne, na przykład kody formatowania. Po osiągnięciu tego limitu wpis wpisany ciąg nie będzie wyświetlany w Excel.
 
 - **Chroń zawartość w kontenerach,** takich jak witryny i grupy, gdy włączysz możliwość używania etykiet wrażliwości Microsoft Teams, grup Microsoft 365 i SharePoint [witryn](sensitivity-labels-teams-groups-sites.md).
     
@@ -119,6 +121,8 @@ Po zastosowaniu etykiety wrażliwości do wiadomości e-mail lub dokumentu na za
     ![Monit o przypisanie wymaganej etykiety.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     Aby uzyskać więcej informacji na temat ustawień Automatyczne oznaczanie etykiet plików i wiadomości **e-mail** podczas tworzenia lub edytowania etykiety wrażliwości, zobacz Automatyczne stosowanie etykiet wrażliwości do zawartości dla aplikacji pakietu Office oraz Etykiety w usłudze [Azure Purview](/azure/purview/create-sensitivity-label).[](apply-sensitivity-label-automatically.md)
+
+- **Ustaw domyślny typ linku udostępniania dla** SharePoint witryn i poszczególnych dokumentów. Aby zapobiec zasłaniu treści przez użytkowników, [](sensitivity-labels-default-sharing-link.md) ustaw domyślny zakres i uprawnienia dotyczące udostępniania dokumentów z usługi SharePoint i OneDrive.
 
 ### <a name="label-scopes"></a>Zakresy etykiet
 
@@ -237,30 +241,16 @@ Jeśli nie widzisz zachowania ustawień etykiet lub zasad etykiet, które oczeku
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Etykiety wrażliwości i usługa Azure Information Protection
 
-W przypadku korzystania z etykiet wrażliwości Aplikacje Microsoft 365 na Windows masz do wyboru etykiety wbudowane w aplikacje pakietu Office lub klienta [usługi Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2).
+Etykiety wrażliwości wbudowane w Aplikacje Microsoft 365 w systemach Windows, macOS, iOS i Android wyglądają i działają bardzo podobnie na tych urządzeniach, aby zapewnić użytkownikom spójne środowisko etykiet. Jednak na Windows można także używać klienta [usługi Azure Information Protection (AIP](/azure/information-protection/rms-client/aip-clientv2)). Ten klient jest teraz w [trybie konserwacji](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
 
-Ponieważ na wbudowanych etykietach nie jest używany dodatek Office, tak jak jest on używany przez klienta usługi Azure Information Protection, ich zaletą jest większa stabilność i większa wydajność. Obsługują one również najnowsze funkcje, takie jak zaawansowane klasyfikatory.
-
-W tych aplikacjach wbudowane etykiety są domyślnie wyłączone po zainstalowaniu klienta usługi Azure Information Protection. Aby zmienić to zachowanie domyślne i użyć wbudowanych etykiet dla aplikacji pakietu Office, zobacz Office klienta etykiet wbudowanych i klienta [usługi Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
-
-Jeśli klient usługi Azure Information Protection jest zainstalowany, ale wyłączony w Office, otrzymasz korzyści z używania klienta usługi Azure Information Protection z etykietami wrażliwości, aby uzyskać następujące informacje:
-
-- Skaner do odnajdywania poufnych informacji przechowywanych lokalnie, a następnie opcjonalnego oznaczania tej zawartości
-
-- Opcje kliknięcia prawym przyciskiem myszy w Eksploratorze plików na przykład w celu zastosowania etykiet do wszystkich typów plików
-
-- Przeglądarka do wyświetlania zaszyfrowanych plików tekstowych, obrazów lub dokumentów PDF
-
-- Moduł programu PowerShell do odnajdywania poufnych informacji w plikach lokalnych oraz stosowania lub usuwania etykiet i szyfrowania z tych plików.
-
-Jeśli jesteś nowym użytkownikem usługi Azure Information Protection[, zobacz Wybieranie](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) Windows etykiet w dokumentacji usługi Azure Information Protection.
+Jeśli korzystasz z klienta usługi AIP, zobacz Dlaczego warto wybrać wbudowany program poprawy jakości obsługi klienta z etykietami w dodatku [AIP](sensitivity-labels-aip.md) dla aplikacji Office, aby zrozumieć opcje etykiet dla komputerów Windows i zarządzać nimi.
 
 ### <a name="azure-information-protection-labels"></a>Etykiety usługi Azure Information Protection
 
 > [!NOTE]
 > Zarządzanie etykietami usługi Azure Information Protection w Portalu Azure zostało wycofane **31 marca 2021 r**. Dowiedz się więcej z oficjalnego [powiadomienia o dezwołacji](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-Jeśli Twoja dzierżawa nie znajduje się jeszcze na ujednoliconej platformie [etykiet, przed](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform) użyciem etykiet wrażliwości należy najpierw aktywować ujednolicone etykiety. Aby uzyskać instrukcje, [zobacz Jak przeprowadzić migrację etykiet usługi Azure Information Protection do ujednoliconych etykiet wrażliwości](/azure/information-protection/configure-policy-migrate-labels). 
+Jeśli Twoja dzierżawa nie znajduje się jeszcze na ujednoliconej platformie [etykiet, przed](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform) użyciem etykiet wrażliwości należy najpierw aktywować ujednolicone etykiety. Aby uzyskać instrukcje, [zobacz Jak przeprowadzić migrację etykiet usługi Azure Information Protection do ujednoliconych etykiet wrażliwości](/azure/information-protection/configure-policy-migrate-labels).
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Etykiety wrażliwości i zestaw Microsoft Information Protection SDK
 

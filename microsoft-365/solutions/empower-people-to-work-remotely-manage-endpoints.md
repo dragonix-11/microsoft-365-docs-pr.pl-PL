@@ -2,8 +2,8 @@
 title: Krok nr 4. Wdrażanie zarządzania punktami końcowymi dla urządzeń, komputerów i innych punktów końcowych
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Zarządzaj Microsoft Endpoint Manager, komputerami i innymi punktami końcowymi, zarządzaj nimi.
-ms.openlocfilehash: 03d212071db686079a76115d7cb94d2abb4cde88
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: d18a001021486c617aaf0fa04972e9464a5c2016
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014839"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328627"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Krok nr 4. Wdrażanie zarządzania punktami końcowymi dla urządzeń, komputerów i innych punktów końcowych
 

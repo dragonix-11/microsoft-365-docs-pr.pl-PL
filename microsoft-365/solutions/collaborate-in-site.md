@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Dowiedz się więcej Microsoft 365 czynności konfiguracyjnych niezbędne do skonfigurowania witryny SharePoint do współpracy z gośćmi.
-ms.openlocfilehash: 64c325873514171c858ffa24637e57d2b94a93e9
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: 7187149324f88c64570549429f86291320431566
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "62990531"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318543"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Współpraca z gośćmi w witrynie
 
@@ -85,23 +86,23 @@ Jeśli chcesz zezwolić na udostępnianie nieuwierzytanych plików i folderów, 
 
 Aby skonfigurować SharePoint udostępniania na poziomie organizacji
 
-1. W okienku centrum administracyjne platformy Microsoft 365 nawigacji po lewej stronie w obszarze **Centra** administracyjne **kliknij pozycję SharePoint**.
-2. W centrum SharePoint w lewym okienku nawigacji w **obszarze Zasady** kliknij pozycję **Udostępnianie**.
+1. W okienku centrum administracyjne platformy Microsoft 365 nawigacji po lewej stronie w obszarze **Centra** administracyjne **wybierz pozycję SharePoint**.
+2. W centrum SharePoint w lewym okienku nawigacji w **obszarze Zasady** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
 3. Upewnij się, że dla udostępniania SharePoint **jest ustawiona** wartość Każdy lub **Nowy i istniejący goście**.
-4. Jeśli zostały wprowadzone zmiany, kliknij przycisk **Zapisz**.
+4. Jeśli zostały wprowadzone zmiany, wybierz pozycję **Zapisz**.
 
 ## <a name="create-a-site"></a>Tworzenie witryny
 
 Następnym krokiem jest utworzenie witryny, za pomocą której planujesz współpracować z gośćmi.
 
 Aby utworzyć witrynę
-1. W centrum SharePoint administracyjnego w obszarze **Witryny** kliknij pozycję **Aktywne witryny**.
-2. Kliknij **przycisk Utwórz**.
-3. Kliknij **pozycję Witryna zespołu**.
+1. W centrum SharePoint w **obszarze Witryny** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+2. Wybierz pozycję **Utwórz**.
+3. Wybierz **pozycję Witryna zespołu**.
 4. Wpisz nazwę witryny i wprowadź nazwę właściciela grupy (właściciela witryny).
 5. W **obszarze Ustawienia zaawansowane** określ, czy ta witryna ma być publiczna, czy prywatna.
-6. Kliknij **Dalej**.
-7. Kliknij przycisk **Zakończ**.
+6. Wybierz pozycję **Dalej**.
+7. Wybierz **Zakończ**.
 
 Zaprosimy użytkowników później. Następnie należy sprawdzić ustawienia udostępniania na poziomie witryny dla tej witryny.
 
@@ -116,21 +117,22 @@ Etykiety wrażliwości można też [używać do kontrolowania ustawień udostęp
 ![Zrzut ekranu SharePoint ustawień udostępniania zewnętrznego witryny.](../media/sharepoint-site-external-sharing-settings.png)
 
 Aby skonfigurować ustawienia udostępniania na poziomie witryny
-1. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję **Witryny**, a następnie kliknij pozycję **Aktywne witryny**.
+1. W centrum SharePoint w lewym okienku nawigacji rozwiń pozycję **Witryny** i wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
 2. Wybierz witrynę, którą chcesz udostępnić.
-3. Kliknij pozycję ..., a następnie kliknij pozycję **Udostępnianie**.
+3. Wybierz pozycję ..., a następnie wybierz **pozycję Udostępnianie**.
 4. Upewnij się, że udostępnianie jest ustawione na **Każdy** lub **Nowy i istniejący goście**.
-5. Jeśli zostały wprowadzone zmiany, kliknij przycisk **Zapisz**.
+5. Jeśli zostały wprowadzone zmiany, wybierz pozycję **Zapisz**.
 
 ## <a name="invite-users"></a>Zaproś użytkowników
 
 Ustawienia udostępniania gościa są teraz skonfigurowane, więc możesz zacząć dodawać do witryny użytkowników wewnętrznych i gości. Dostęp do witryny jest kontrolowany za pośrednictwem skojarzonej Microsoft 365 grupy użytkowników, więc dodamy tam użytkowników.
 
 Aby zaprosić użytkowników wewnętrznych do grupy
+
 1. Przejdź do witryny, w której chcesz dodać użytkowników.
-2. Kliknij **link** Członkowie w prawym górnym rogu, co oznacza liczbę członków.
-3. Kliknij **pozycję Dodaj członków**.
-4. Wpisz nazwy lub adresy e-mail użytkowników, których chcesz zaprosić do witryny, a następnie kliknij przycisk **Zapisz**.
+2. Wybierz **link** Członkowie w prawym górnym rogu, co oznacza liczbę członków.
+3. Wybierz **pozycję Dodaj członków**.
+4. Wpisz nazwy lub adresy e-mail użytkowników, których chcesz zaprosić do witryny, a następnie wybierz pozycję **Zapisz**.
 
 Gości nie można dodawać z witryny. Musisz je dodać przy użyciu Outlook w sieci Web. Dlatego w celu dodawania gości do grupy i zapraszania ich do grupy należy kliknąć adres URL witryny w kolumnie Adres **URL**  , aby przejść do strony specyficznej dla witryny. Na tej stronie kliknij ikonę **Uruchamianie aplikacji** i **wybierz pozycję Outlook**. Jest to ekran, z którego możesz zaprosić gości do grupy, co opisano poniżej.
 

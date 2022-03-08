@@ -2,8 +2,8 @@
 title: Modyfikowanie szablonów ocen w Menedżerze zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak modyfikować szablony ocen w Menedżerze zgodności firmy Microsoft.
-ms.openlocfilehash: 539da4118843e8d72ead07b06a351d2245c2f6d9
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: d409c21d31c909e7e6a59c308c7087e26ec78e24
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "62988647"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320567"
 ---
 # <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>Modyfikowanie szablonów ocen w Menedżerze zgodności firmy Microsoft
 

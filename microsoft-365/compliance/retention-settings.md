@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Opis ustawień, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i usunąć to, co nie chcesz.
-ms.openlocfilehash: 6709f56778865e8474a580c91d01d67512631e1d
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63010707"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326989"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
@@ -61,7 +61,9 @@ Gdy wybierzesz zakresy adaptacyjne, zostanie wyświetlony monit o wybranie odpow
 |**SharePoint witryn —** dotyczy:  <br/> — SharePoint witryn <br/> — OneDrive konta |Adres URL witryny <br/>Nazwa witryny <br/> SharePoint właściwości niestandardowe: RefinableString00 - RefinableString99 |
 |**Microsoft 365 grupy —** dotyczy:  <br/> — Microsoft 365 grupy <br/> — Teams wiadomości na kanale <br/> — Yammer wiadomości od społeczności |Name (Nazwa) <br/> Nazwa wyświetlana <br/> Opis <br/> Adresy e-mail <br/> Alias <br/> Exchange atrybuty niestandardowe: CustomAttribute1 — CustomAttribute15 |
 
-Nazwy właściwości witryn są oparte na SharePoint witryny zarządzanej, a nazwy atrybutów użytkowników i grup są oparte na filtrowanych właściwościach adresatów mapowanych na atrybuty usługi Azure AD.[](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) Przykład:
+Nazwy właściwości witryn są oparte na SharePoint właściwościach zarządzanych witryny. Aby uzyskać informacje na temat atrybutów niestandardowych, zobacz Stosowanie SharePoint właściwości witryny niestandardowej w Microsoft 365 [z adaptacyjnym zakresem zasad](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
+
+Nazwy atrybutów użytkowników i grup są oparte na filtrowanych właściwościach [adresatów](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) mapowanych na atrybuty usługi Azure AD. Przykład:
 
 - **Alias** mapuje nazwę LDAP **mailNickname**, która jest wyświetlana jako **Wiadomość e-mail** w centrum administracyjnym usługi Azure AD.
 - **Adresy e-mail** są mapowane na adres **proxyAddresses** nazwy LDAP, który jest wyświetlany jako **adres serwera proxy** w centrum administracyjnym usługi Azure AD.
@@ -77,7 +79,9 @@ Jedna zasada przechowywania może mieć jeden lub wiele adaptacyjnych zakresów.
 
 #### <a name="to-configure-an-adaptive-scope"></a>Aby skonfigurować adaptacyjny zakres
 
-Przed skonfigurowaniem adaptacyjnego zakresu skorzystaj z poprzedniej sekcji, aby określić typ zakresu do utworzenia oraz atrybuty i wartości, które będą używać. W celu potwierdzenia tych informacji może być konieczne potwierdzenie tych informacji we współpracy z innymi administratorami, SharePoint się, że właściwości są indeksowane.
+Przed skonfigurowaniem adaptacyjnego zakresu skorzystaj z poprzedniej sekcji, aby zidentyfikować typ zakresu do utworzenia oraz atrybuty i wartości, których będziesz używać. Może być konieczne potwierdzenie tych informacji we współpracy z innymi administratorami. 
+
+W szczególności SharePoint witryny internetowe mogą wymagać dodatkowej SharePoint, jeśli planujesz użyć [niestandardowych właściwości witryny](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
 1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com/) do jednej z następujących lokalizacji:
     
@@ -109,19 +113,31 @@ Przed skonfigurowaniem adaptacyjnego zakresu skorzystaj z poprzedniej sekcji, ab
     - W **przypadku** **zakresów Microsoft 365** użytkowników i grup należy użyć składni [filtrowania OPATH](/powershell/exchange/recipient-filters). Aby na przykład utworzyć zakres użytkowników definiujący jego członkostwo według działu, kraju i stanu:
     
         ![Przykład adaptacyjnego zakresu za pomocą zapytania zaawansowanego.](../media/example-adaptive-scope-advanced-query.png)
+        
+        Jedną z zalet używania zaawansowanego konstruktora zapytań w tych zakresach jest szerszy wybór operatorów zapytań:
+        - **i**
+        - **lub**
+        - **nie**
+        - **eq** (równa się)
+        - **ne** (nie równa się)
+        - **lt** (mniej niż)
+        - **gt** (większe niż)
+        - **like** (porównanie ciągów)
+        - **notlike** (porównanie ciągów)
     
     - Aby **SharePoint zakresów** witryn, użyj języka Keyword Query Language (KQL). Być może wiesz już, jak używać KQL do SharePoint przy użyciu właściwości witryny indeksowanych. Aby ułatwić ci określenie tych zapytań KQL, zobacz Informacje dotyczące składni w języku [KQL (Keyword Query Language](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)).
-    
-    Jedną z zalet korzystania z zaawansowanego konstruktora zapytań jest szerszy wybór operatorów zapytań:
-    - **i**
-    - **lub**
-    - **nie**
-    - **eq** (równa się)
-    - **ne** (nie równa się)
-    - **lt** (mniej niż)
-    - **gt** (większe niż)
-    - **like** (porównanie ciągów)
-    - **notlike** (porównanie ciągów)
+        
+        Ponieważ na przykład zakresy witryn SharePoint automatycznie obejmują wszystkie typy witryn sieci SharePoint, takie jak witryny Microsoft 365 połączone z grupą i witryny typu OneDrive, można użyć zindeksowanych właściwości **siteTemplate**, aby uwzględnić lub wykluczyć określone typy witryn. Szablony, które można określić:
+        - SITEPAGEPUBLISHING dla witryn nowoczesnej komunikacji
+        - GROUP for Microsoft 365 group-connected sites
+        - TEAMCHANNEL dla Microsoft Teams kanałów prywatnych
+        - StS (StS) dla SharePoint zespołu
+        - SPSPERS dla witryn OneDrive witryn
+        
+        Aby zatem utworzyć adaptacyjny zakres, który obejmuje tylko nowoczesne witryny do komunikacji i z wyłączeniem Microsoft 365 połączonych ze stronami połączonymi ze stronami OneDrive, określ następujące zapytanie KQL:
+        ````console
+        SiteTemplate=SITEPAGEPUBLISHING
+        ````
     
     Zapytania zaawansowane [można sprawdzać niezależnie](#validating-advanced-queries) od konfiguracji zakresu.
     

@@ -2,8 +2,8 @@
 title: Zarządzanie relacjami partnerów
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
 description: Dowiedz się, jak współpracować z certyfikowanymi przez firmę Microsoft dostawcami rozwiązań (partnerami) w celu kupowania produktów i usług oraz zarządzania nimi w organizacji lub szkole.
 ms.date: 02/04/2022
-ms.openlocfilehash: c34fa968ddea199b19d6589e9337a086f64e7099
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: c07267989e8df7203cced6c3a21ffd9aa667347f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016001"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328977"
 ---
 # <a name="manage-partner-relationships"></a>Zarządzanie relacjami partnerów
 
@@ -98,3 +98,5 @@ Role administratora można usunąć od partnera w dowolnym momencie. Usunięcie 
 3. Zaznacz wiersz zawierający nazwę partnera.
 4. Na stronie partnera wybierz pozycję **Usuń role**.
 5. W **oknie dialogowym Usuwanie ról?** wybierz pozycję **Tak**.
+
+Jeśli opcja Usuń role nie **jest dostępna,** skontaktuj się z [Centrum partnerskim](https://partner.microsoft.com/support).

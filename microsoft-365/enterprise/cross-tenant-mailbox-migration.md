@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: bff8af115f23db7fe152ed6ee06e62d128f2b9e4
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: a368102b6cb4eabaadd459fd185d18e3a7dc7381
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63009543"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323405"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migracja skrzynek pocztowych między dzierżawami (wersja Preview)
 
@@ -214,7 +214,16 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [centrum admi
 Konfigurację migracji skrzynek pocztowych między dzierżawami możesz sprawdzić, uruchamiając polecenie cmdlet [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) względem punktu końcowego migracji między dzierżawami utworzonego w dzierżawie docelowej.
 
    > [!NOTE]
-   > Test-MigrationServerAvailability -Endpoint "[nazwa punktu końcowego migracji między dzierżawami]" -TestMailbox "[adres e-mail źródłowej skrzynki pocztowej, która jest częścią zakresu migracji]"
+   >
+   > - Dzierżawa docelowa:
+   > 
+   > Test-MigrationServerAvailability -Endpoint "[nazwa punktu końcowego migracji między dzierżawami]"
+   >
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+   >
+   > - Dzierżawa źródłowa:
+   > 
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability 
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>Przenoszenie skrzynek pocztowych z powrotem do oryginalnego źródła
 

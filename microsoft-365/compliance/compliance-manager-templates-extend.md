@@ -2,8 +2,8 @@
 title: Rozszerzanie szablonów ocen w Menedżerze zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak rozszerzyć szablony ocen w Menedżerze zgodności firmy Microsoft, aby dodawać i modyfikować kontrolki.
-ms.openlocfilehash: d47488f578436b1ea8bd865855d681d8778d07bd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4c9e4543a046e09733711500ae6162a547e3602b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "62989729"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316214"
 ---
 # <a name="extend-assessment-templates-in-microsoft-compliance-manager"></a>Rozszerzanie szablonów ocen w Menedżerze zgodności firmy Microsoft
 
@@ -33,11 +33,11 @@ Aby rozszerzyć szablon, należy użyć specjalnych instrukcji dotyczących mody
 
 ## <a name="extend-microsoft-assessment-templates"></a>Rozszerzanie szablonów ocen firmy Microsoft
 
-Rozszerzenie szablonu firmy Microsoft, na przykład utworzonego do użycia w programie Microsoft 365, umożliwia otrzymywanie aktualizacji opublikowanych przez firmę Microsoft. Aktualizacje mogą się pojawiać w przypadku zmiany związanego z przepisami lub produktu (zobacz [Akceptowanie aktualizacji ocen](compliance-manager-assessments.md#accept-updates-to-assessments)).
+Rozszerzenie szablonu firmy Microsoft, na przykład utworzonego do użytku z platformą Microsoft 365, nadal może otrzymywać aktualizacje wydane przez firmę Microsoft. Aktualizacje mogą się pojawiać w przypadku zmiany związanego z przepisami lub produktu (zobacz [Akceptowanie aktualizacji ocen](compliance-manager-assessments.md#accept-updates-to-assessments)).
 
 ### <a name="prepare-template-data-and-create-extension"></a>Przygotowywanie danych szablonu i tworzenie rozszerzenia
 
-Aby się przygotować, musisz zebrać specjalnie sformatowany arkusz kalkulacyjny programu Excel, aby zaimportować niezbędne dane szablonu. Pliki Excel są zgodne z tym samym formatem opisanym w temacie Formatowanie danych szablonu oceny za pomocą [Excel, ale](compliance-manager-templates-format-excel.md) istnieją specjalne wymagania dotyczące rozszerzeń. Zapoznaj się z tymi dodatkowymi tematami, aby uzyskać pomoc w zapobieganiu błędom:
+Aby się przygotować, musisz zebrać specjalnie sformatowany arkusz kalkulacyjny programu Excel, aby zaimportować niezbędne dane szablonów. Pliki programu Excel są zgodne z tym samym formatem opisanym w temacie Formatowanie danych szablonu oceny w programie [Excel](compliance-manager-templates-format-excel.md), ale istnieją specjalne wymagania dotyczące rozszerzeń. Zapoznaj się z tymi dodatkowymi tematami, aby uzyskać pomoc w zapobieganiu błędom:
 
 - Arkusz kalkulacyjny powinien zawierać tylko akcje i kontrolki, które chcesz dodać do oceny.
 - Arkusz kalkulacyjny nie może zawierać żadnych kontrolek ani akcji istniejących już w ramach oceny, którą chcesz zmodyfikować.
@@ -57,13 +57,13 @@ Po sformatowaniu arkusza kalkulacyjnego wykonaj poniższe czynności.
 
 6. Na następnym ekranie zostanie wybrany szablon. Jeśli ten wybór jest poprawny, wybierz przycisk **Dalej**. (Jeśli jest nieprawidłowy, **wybierz pozycję Wybierz inny szablon** do wyboru ponownie).
 
-7. Na **ekranie Upload** pliku wybierz pozycję Przeglądaj, aby  znaleźć i przekazać sformatowany plik Excel zawierający wszystkie wymagane dane szablonu.
+7. Na **ekranie Przekazywanie pliku** **wybierz pozycję Przeglądaj** , aby znaleźć i przekazać sformatowany plik programu Excel zawierający wszystkie wymagane dane szablonu.
 
-8. Jeśli nie występują żadne problemy z plikiem, na następnym ekranie zostanie pokazana nazwa przekazanego pliku. Wybierz **pozycję** Dalej, aby kontynuować (jeśli chcesz zmienić plik, wybierz **Upload inny plik**).
+8. Jeśli nie występują żadne problemy z plikiem, na następnym ekranie zostanie pokazana nazwa przekazanego pliku. Wybierz **pozycję** Dalej, aby kontynuować (jeśli chcesz zmienić plik, wybierz pozycję **Przekaż inny plik**).
 
     - Jeśli występuje problem z plikiem, u góry zostanie wyświetlony komunikat o błędzie informujący o tym, co się stało. Musisz naprawić i ponownie przekazać plik. Błędy będą się pojawiać, jeśli arkusz kalkulacyjny został nieprawidłowo sformatowany lub w niektórych polach występują nieprawidłowe informacje.
 
-9. Ekran **Recenzja i zakończenie** zawiera liczbę akcji udoskonalania i kontrolek oraz maksymalną liczbę wyników dla szablonu. Gdy wszystko będzie gotowe do zatwierdzenia, wybierz pozycję **Dalej**. (Jeśli chcesz wprowadzić zmiany, wybierz Upload **inny plik**).
+9. Ekran **Recenzja i zakończenie** zawiera liczbę akcji udoskonalania i kontrolek oraz maksymalną liczbę wyników dla szablonu. Gdy wszystko będzie gotowe do zatwierdzenia, wybierz pozycję **Dalej**. (Jeśli chcesz wprowadzić zmiany, wybierz **pozycję Przekaż inny plik**).
 
 10. Ostatni ekran potwierdza, że został utworzony nowy szablon. Wybierz **pozycję Gotowe** , aby zamknąć kreatora.
 

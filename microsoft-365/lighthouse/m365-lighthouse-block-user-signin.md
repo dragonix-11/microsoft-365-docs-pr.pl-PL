@@ -15,20 +15,17 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse
 search.appverid: MET150
-description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się, jak zablokować logowanie się użytkownika.
-ms.openlocfilehash: 6fbdad9849b27e60243ace59651b9e5211829a68
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+description: W przypadku dostawców usług zarządzanych (MSP) korzystających z usługi Microsoft 365 Lighthouse się, jak zablokować konto użytkownika, jeśli uważasz, że jest ono naruszone, aby użytkownicy nie mogą się zalogować.
+ms.openlocfilehash: be9089ef8c3a86b68ce5370d28a6e9be4472cce0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "62996842"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320847"
 ---
 # <a name="block-user-sign-in"></a>Blokowanie logowania użytkownika
 
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-Możesz zablokować konto użytkownika, jeśli uważasz, że zostało ono naruszone. Zablokowanie tej osoby natychmiast blokuje logowanie się do tego konta. Jeśli użytkownik się do tego zalogował, zostanie automatycznie wypisać go ze wszystkich usługi firmy Microsoft w ciągu 60 minut. Nie spowoduje to zatrzymania odbierania poczty i nie spowoduje usunięcia żadnych danych.
+Możesz zablokować konto użytkownika, jeśli uważasz, że zostało ono naruszone. Zablokowanie konta użytkownika natychmiast blokuje logowanie się do tego konta przez wszystkie osoby. Jeśli użytkownik spróbuje się zalogować, w ciągu 60 minut automatycznie wyloguje się ze wszystkich Microsoft 365 usług. Zablokowanie konta użytkownika nie spowoduje usunięcia żadnych danych i nie zatrzyma otrzymywania poczty.
 
 ## <a name="block-sign-in-for-a-user"></a>Blokowanie logowania użytkownika
 
@@ -46,7 +43,7 @@ Możesz zablokować konto użytkownika, jeśli uważasz, że zostało ono narusz
 
 7. Wybierz **Zapisz**.
 
-## <a name="block-risky-users"></a>Blokowanie ryzykownych użytkowników
+## <a name="block-sign-in-for-risky-users"></a>Blokowanie logowania dla ryzykownych użytkowników
 
 1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Użytkownicy**.
 

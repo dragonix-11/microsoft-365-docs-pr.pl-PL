@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 12/17/2021
+ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 616dde760ab24d12efe5c4621a1ee1829cb1798f
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: be22c80e51551b5de2a2aeed2f0dff0db9a8481f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "63018942"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323657"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Konfigurowanie i sprawdzanie poprawności wykluczeń na podstawie rozszerzenia pliku i lokalizacji folderu
 
@@ -197,6 +197,7 @@ Podczas definiowania `*`elementów na liście wykluczeń nazwy pliku lub ścież
 > Istnieją kluczowe ograniczenia i scenariusze użycia tych symboli wieloznacznych:
 >
 > - Użycie zmiennych środowiskowych jest ograniczone do zmiennych komputerowych i mających zastosowanie do procesów uruchomionych jako konto NT AUTHORITY\SYSTEM.
+> - W jednym wpisie można użyć maksymalnie sześciu symboli wieloznacznych.
 > - Nie można użyć symbolu wieloznacznego w miejscu litery dysku.
 > - Gwiazdka `*` w wykluczeniu folderu oznacza jeden folder. Wiele wystąpień tego folderu oznacza `\*\` wiele folderów zagnieżdżonych o nieokreślonych nazwach.
 > - Obecnie Microsoft Endpoint Configuration Manager nie obsługuje symboli wieloznacznych (takich jak `*` lub `?`).

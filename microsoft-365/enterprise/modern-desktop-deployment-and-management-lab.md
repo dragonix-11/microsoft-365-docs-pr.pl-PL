@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Dowiedz się, gdzie można uzyskać dostęp do Windows i Office Laboratorium wdrażania.
-ms.openlocfilehash: 5a62e32e60a8c52a2c7a59200573c52b0543ab78
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 7f91fdbd72a496d06377259387f53fbe923f1981
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63015985"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314451"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows i Office 365 laboratorium wdrażania
 
-Zestaw Windows Office 365 i laboratorium wdrażania został zaprojektowany, aby ułatwić planowanie, testowanie i weryfikowanie wdrażania i zarządzania komputerami z systemem Windows 10 Enterprise lub Windows 11 Enterprise oraz Aplikacje Microsoft 365 dla przedsiębiorstw. Laboratorium w zestawie korzysta z Microsoft Endpoint Configuration Manager, narzędzia Office customization Tool, OneDrive, Windows Autopilot i innych. Ten zestaw jest zdecydowanie zalecany dla organizacji przy przygotowywaniu się do uaktualnienia komputera. Jako odizolowane środowisko laboratorium doskonale nadaje się do poznawanie aktualizacji narzędzia wdrażania i testowania automatyzacji związanej z wdrażaniem.
+Zestaw Windows Office 365 i laboratorium wdrażania został zaprojektowany, aby ułatwić planowanie, testowanie i weryfikowanie wdrażania i zarządzania komputerami z systemem Windows 10 Enterprise lub Windows 11 Enterprise oraz Aplikacje Microsoft 365 dla przedsiębiorstw. Laboratorium w zestawie obejmuje przykłady Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot i nie tylko. Ten zestaw jest zdecydowanie zalecany dla organizacji przy przygotowywaniu się do uaktualnienia komputera. Jako odizolowane środowisko laboratorium doskonale nadaje się do poznawanie aktualizacji narzędzia wdrażania i testowania automatyzacji związanej z wdrażaniem.
 
 **Windows 10 i Windows 11 wersji zestawu laboratorium jest teraz dostępnych do bezpłatnego pobrania w Centrum oceny firmy Microsoft.**
 
@@ -101,7 +101,7 @@ Szczegółowe przewodniki laboratorium przejdą przez wiele scenariuszy wdrażan
 [Pobierz zestaw Windows 11 i Office 365 laboratorium wdrażania](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> Pobierz tę zawartość za pomocą szerokopasmowego połączenia internetowego i na automatyczne inicjowanie obsługi możesz zezwolić na jej automatyczne inicjowanie po około 30 minutach. Środowisko laboratoryjnych wymaga co najmniej 16 GB dostępnej pamięci i 150 GB wolnego miejsca na dysku. W celu uzyskania optymalnej wydajności zalecane jest 32 GB dostępnej pamięci i 300 GB wolnego miejsca. Laboratorium Windows 10 wygasa 15 lutego 2022 r. Laboratorium Windows 11 wygasa 11 kwietnia 2022 r. Nowe wersje zostaną opublikowane przed ich wygaśnięciem.
+> Pobierz tę zawartość za pomocą szerokopasmowego połączenia internetowego i na automatyczne inicjowanie obsługi możesz zezwolić na jej automatyczne inicjowanie po około 30 minutach. Środowisko laboratoryjnych wymaga co najmniej 16 GB dostępnej pamięci i 150 GB wolnego miejsca na dysku. W celu uzyskania optymalnej wydajności zalecane jest 32 GB dostępnej pamięci i 300 GB wolnego miejsca. Laboratorium Windows 10 wygasa 16 maja 2022 r. Laboratorium Windows 11 wygasa 11 kwietnia 2022 r. Nowe wersje zostaną opublikowane przed ich wygaśnięciem.
 
 ## <a name="additional-guidance"></a>Dodatkowe wskazówki
 

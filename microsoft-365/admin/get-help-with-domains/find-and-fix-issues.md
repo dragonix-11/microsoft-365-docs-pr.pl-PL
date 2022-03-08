@@ -2,8 +2,8 @@
 title: Znajdowanie i rozwiązywanie problemów po dodaniu swojej domeny lub rekordów DNS
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Dowiedz się, jak śledzić problemy, które występują podczas konfigurowania domeny niestandardowej, upewniając się, że rekordy DNS zostały poprawnie skonfigurowane.
-ms.openlocfilehash: 932eef134890784c76e6acfc85283159cdd9c7b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7fa5a18ff0e4b7f0db8749f5659fefdd89cb3fcd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973544"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316887"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Znajdowanie i rozwiązywanie problemów po dodaniu swojej domeny lub rekordów DNS
 
@@ -47,7 +47,7 @@ Konfigurowanie domeny do współpracy z Microsoft 365 może być trudne. System 
     
 - [Outlook nie działa?](#outlook-isnt-working)
     
-- [Wiadomości e-mail wszystkich osób przełączyły się Microsoft 365 i chcesz przełączyć tylko TWOJĄ pocztę e-mail?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
+- [Wiadomości e-mail wszystkich osób przełączyły się Microsoft 365 i chcesz tylko przełączyć swoją pocztę e-mail?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
 
 - [Nie możesz potwierdzić stanu konta niedochodowego lub szkolnego?](#cant-confirm-non-profit-or-school-account-status)
 
@@ -72,16 +72,16 @@ Jeśli Twój rekord MX i inne rekordy DNS zostały poprawnie skonfigurowane dla 
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Wiadomości e-mail wszystkich osób przełączyły się Microsoft 365 i chcesz tylko przełączyć swoją pocztę e-mail?
 <a name="BKMK_EmailSwitched"> </a>
 
-Po dodaniu domeny do usługi Microsoft 365 zwykle rekord MX domeny jest aktualizowany (przez Ciebie lub przez Ciebie lub Microsoft 365), aby wskazać Microsoft 365, a WSZYSTKIE wiadomości e-mail wysyłane do tej domeny zaczną przychodzić do usługi Microsoft 365. Zanim zmienisz rekord MX, upewnij się, że zostały utworzone skrzynki pocztowe Microsoft 365 dla wszystkich osób z adresami e-mail w tej domenie.
+Po dodaniu domeny do usługi Microsoft 365 zwykle rekord MX domeny jest aktualizowany (przez Ciebie lub przez Ciebie lub Microsoft 365), aby wskazać usługę Microsoft 365, a WSZYSTKIE wiadomości e-mail wysyłane do tej domeny zaczną przychodzić do usługi Microsoft 365. Zanim zmienisz rekord MX, upewnij się, że zostały utworzone skrzynki pocztowe Microsoft 365 dla wszystkich osób z adresami e-mail w tej domenie.
   
-Co zrobić, jeśli nie chcesz przenosić poczty e-mail wszystkich osób w domenie do Microsoft 365? Zamiast tego możesz wykonać kroki [pilotażowe Microsoft 365 tylko z kilkoma adresami e-mail](../setup/domains-faq.yml).
+Co zrobić, jeśli nie chcesz przenosić poczty e-mail wszystkich osób w domenie do Microsoft 365? Zamiast tego możesz wykonać [kroki pilotażowe Microsoft 365 tylko z kilkoma adresami e-mail](../setup/domains-faq.yml).
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Nie możesz potwierdzić stanu konta niedochodowego lub szkolnego?
 <a name="BKMK_validateAcct"> </a>
 
-Istnieje kilka scenariuszy, gdy wystarczy zweryfikować domenę organizacji i nie skonfigurować żadnych usług. Na przykład, aby udowodnić Microsoft 365, że Twoja organizacja kwalifikuje się do subskrypcji szkolnej.
+Istnieje kilka scenariuszy, gdy wystarczy zweryfikować domenę organizacji i nie skonfigurować żadnych usług. Na przykład, aby udowodnić Microsoft 365 że Twoja organizacja kwalifikuje się do subskrypcji szkolnej.
   
-Zapoznaj się z wskazówkami w tece Weryfikowanie domeny Microsoft 365, aby udowodnić stan własności, organizacji niedochodowej lub edukacyjnej, lub aktywować usługę [Yammer](../setup/domains-faq.yml), aby upewnić się, że zostały wykonane wszystkie wymagane kroki. W każdej sytuacji jest nieco inaczej. 
+Zapoznaj się z wskazówkami w tece Weryfikowanie domeny Microsoft 365, aby udowodnić stan własności[, organizacji niedochodowej](../setup/domains-faq.yml) lub edukacyjnej, lub aktywować usługę Yammer, aby upewnić się, że zostały wykonane wszystkie wymagane kroki. W każdej sytuacji jest nieco inaczej. 
   
 ## <a name="services-not-working-with-your-domain"></a>Usługi nie współdziałają z Twoją domeną?
 
@@ -96,7 +96,7 @@ Jeśli problemy z systemem DNS zostały rozwiązane, a wciąż występują trudn
   
 - Osoby nie mogą uzyskać do Twojej witryny internetowej dostęp w witrynie *contoso.com*: [Śledzenie problemów z witryną sieci Web](../setup/add-domain.md)
     
-- Nie można zaktualizować rekordu A lub rekordu CNAME tak, aby wskazał Twoją witrynę internetową: Aktualizowanie niestandardowych [rekordów DNS w Microsoft 365](../setup/add-domain.md)
+- Nie możesz zaktualizować rekordu A lub rekordu CNAME, aby wskazać Twoją witrynę internetową: Aktualizowanie niestandardowych [rekordów DNS w Microsoft 365](../setup/add-domain.md)
 
 ## <a name="related-content"></a>Zawartość pokrewna
 

@@ -16,25 +16,34 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b0e32fe31b69149bac4bac1796a0260763e9a078
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e6bf614730caa9060a334c0a01c2dfe64b24df78
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997802"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325264"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Spis oprogramowania — Zarządzanie zagrożeniami i lukami
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Spis oprogramowania w p Zarządzanie zagrożeniami i lukami jest listą znanego oprogramowania w organizacji z oficjalnymi wyliczeniami wspólnej platformy [(CPE, Common Platform Enumerations).](https://nvd.nist.gov/products/cpe) Produkty oprogramowania bez oficjalnego cpe nie mają opublikowanych luk w zabezpieczeniach. Zawiera też takie szczegóły, jak imię i nazwisko dostawcy, liczba chłonięć, zagrożenia i liczba ujawnionych urządzeń.
+Spis oprogramowania w Zarządzanie zagrożeniami i lukami zawiera listę znanego oprogramowania w organizacji. Filtr domyślny na stronie spisu oprogramowania wyświetla całe oprogramowanie z oficjalnymi wyliczeniami wspólnej platformy [(CPE).](https://nvd.nist.gov/products/cpe) Widok zawiera takie szczegóły, jak imię i nazwisko dostawcy, liczba chłonięć, zagrożenia i liczba ujawnionych urządzeń.
+
+Możesz usunąć filtr **DOSTĘPNY WWK** , aby uzyskać dalszą widoczność i zwiększyć zakres wyszukiwania we wszystkich zainstalowanych oprogramowaniu w organizacji. Oznacza to, że wszystkie oprogramowanie, łącznie z oprogramowaniem bez cpe, będzie teraz wyświetlane na liście zasobów oprogramowania.
+
+> [!NOTE]
+> Ze względu na to, że firmy zarządzanie lukami w zabezpieczeniach są używane do identyfikowania oprogramowania i ewentualnej luki w zabezpieczeniach, nawet jeśli produkty oprogramowania bez niego będą wyświetlane na stronie spisu oprogramowania, nie będą one obsługiwane przez firmę Zarządzanie zagrożeniami i lukami  oraz informacje, takie jak luki, liczba dostępnych urządzeń i słabe urządzenia, nie będą dla nich dostępne.
 
 ## <a name="how-it-works"></a>Jak to działa
 
@@ -55,9 +64,9 @@ Wyświetlaj oprogramowanie na poszczególnych urządzeniach na poszczególnych s
 
 **Zostanie otwarta** strona Spis oprogramowania z listą oprogramowania zainstalowanego w Twojej sieci, łącznie z nazwą dostawcy, odnalezionymi wadami, zagrożeniami z nimi skojarzonymi, ujawnionymi urządzeniami, wpływem na ocenę ekspozycji i tagami.
 
-Widok listy można filtrować na podstawie wad oprogramowania, zagrożeń z nimi związanych oraz znaczników, takich jak informacje o tym, czy oprogramowanie zakończyło wsparcie.
+Domyślnie widok jest filtrowany według **kodu produktu (CPE): Dostępny**. Widok listy można również filtrować na podstawie wad oprogramowania, zagrożeń z nimi związanych oraz znaczników, takich jak informacje o tym, czy oprogramowanie zakończyło wsparcie techniczne.
 
-:::image type="content" alt-text="Przykład strony docelowej spisu oprogramowania." source="images/tvm-software-inventory.png" lightbox="images/tvm-software-inventory.png":::
+:::image type="content" alt-text="Przykład strony docelowej spisu oprogramowania." source="images/software-inventory-page.png" lightbox="images/tvm-software-inventory.png":::
 
 Wybierz oprogramowanie, które chcesz zbadać. Zostanie otwarty panel wysuwu z bardziej zwartym widokiem informacji na stronie. Możesz przejść do bardziej dogłębnego badania i wybrać pozycję **Otwórz** stronę oprogramowania lub oflagować wszelkie niespójności techniczne, wybierając pozycję Zgłoś nieścisłości.
 
@@ -73,8 +82,6 @@ Poniższe informacje oznaczają, że oprogramowanie nie jest obsługiwane:
 - W polu Dostępne urządzenia jest pokazana kreska
 - Tekst informacyjny dodany na panelu bocznym i na stronie oprogramowania
 - Strona oprogramowania nie będzie mieć zaleceń dotyczących zabezpieczeń, wykrytych luk ani sekcji osi czasu zdarzeń
-
-Obecnie produkty bez cpe nie są wyświetlane na stronie spisu oprogramowania, tylko w spisie oprogramowania na poziomie urządzeń.
 
 ## <a name="software-inventory-on-devices"></a>Spis oprogramowania na urządzeniach
 
@@ -102,7 +109,7 @@ Strony oprogramowania można wyświetlać na kilka sposobów:
 
  Zostanie wyświetlone pełnej strony ze wszystkimi szczegółami określonego oprogramowania i następującymi informacjami:
 
-- Panel boczny z informacjami o dostawcach, części oprogramowania w organizacji (w tym liczba urządzeń, na których jest on zainstalowany, oraz urządzenia ujawnione, które nie są poprawiane), informacje o tym, czy jest dostępny i wykorzystujący, oraz wpływ na wynik ekspozycji.
+- Panel boczny z informacjami o dostawcach, części oprogramowania w organizacji (w tym liczba urządzeń, na których jest zainstalowany, i ujawnione urządzenia, które nie są poprawiane), informacje o tym, czy są dostępne i wykorzystujące, oraz wpływ na ocenę ekspozycji.
 - Wizualizacje danych przedstawiające liczbę i ważność luk i błędnej konfiguracji. Ponadto wykresy z liczbą ujawnionych urządzeń.
 - Karty z informacjami, takimi jak:
   - Odpowiednie zalecenia dotyczące bezpieczeństwa w przypadku wskazanych luk i luk.
@@ -114,12 +121,21 @@ Strony oprogramowania można wyświetlać na kilka sposobów:
 
 ## <a name="report-inaccuracy"></a>Nieścisłości raportu
 
-Zgłaszaj błędy fałszywie dodatnie, jeśli widzisz niejasne, nieprawidłowe lub niepełne informacje. Możesz również zgłaszać zalecenia dotyczące zabezpieczeń, które zostały już usunięte.
+Zgłoś nieścisłości, gdy zostaną podane nieprawidłowe informacje o lukach w zabezpieczeniach i wyniki testów.
 
 1. Otwórz wysuwne okno wysuwu oprogramowania na stronie Spis oprogramowania.
 2. Wybierz **pozycję Nieścisłości raportu**.
-3. W okienku wysuwanych wybierz kategorię nieścisłości z menu rozwijanego, wprowadź swój adres e-mail i szczegóły dotyczące nieścisłości.
-4. Wybierz **pozycję Prześlij**. Twoja opinia zostanie natychmiast przesłana do Zarządzanie zagrożeniami i lukami ekspertów.
+3. W wysuwanych okienkach wybierz problem, który chcesz zgłosić:
+
+    - Szczegóły oprogramowania są nieprawidłowe
+    - oprogramowanie nie jest zainstalowane na żadnym urządzeniu w mojej organizacji
+    - liczba zainstalowanych lub ujawnionych urządzeń jest nieprawidłowa
+
+4. Wypełnij wymagane szczegóły dotyczące nieścisłości. Zależy to od tego, który problem jest zgłaszany.
+
+![Nieścisłości raportu](images/report-inaccuracy-software.png)
+
+5. Wybierz **pozycję Prześlij**. Twoja opinia zostanie natychmiast przesłana do Zarządzanie zagrożeniami i lukami ekspertów.
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 

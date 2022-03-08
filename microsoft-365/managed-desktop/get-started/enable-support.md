@@ -9,12 +9,12 @@ manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f04329d17516c26ea2353d03403eba726ce5b9c3
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 93f2ef3f7815260fc52e7ba65451d7e8d50bc88a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63015951"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314339"
 ---
 # <a name="enable-user-support-features"></a>Włączanie funkcji pomocy technicznej dla użytkowników
 
@@ -33,7 +33,7 @@ Niezależnie od tego, czy zapewniasz własną pomoc techniczną dla użytkownik�
 1. Wdrażanie i [przypisywanie Intune — Portal firmy](company-portal.md).
 1. [Przypisywanie licencji](assign-licenses.md).
 1. [Wdychuj aplikacje](deploy-apps.md).
-1. [Konfigurowanie urządzeń](set-up-devices.md).
+1. [Przygotowywanie urządzeń](prepare-devices.md).
 1. Skonfiguruj środowisko [pierwszego uruchomienia za pomocą rozwiązania Autopilot i strony stanu rejestracji](esp-first-run.md).
 1. Włączanie funkcji pomocy technicznej dla użytkowników (ten artykuł).
 1. [Przygotuj użytkowników do korzystania z urządzeń](get-started-devices.md).

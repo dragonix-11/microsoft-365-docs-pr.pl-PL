@@ -2,8 +2,8 @@
 title: Obliczanie wyniku zgodności
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Zrozumienie sposobu, w jaki Menedżer zgodności firmy Microsoft oblicza spersonalizowany wynik na podstawie działań podejmowane w celu rozwiązania zagrożeń i poprawy oceny zgodności.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b3b250391d04a8bf7388c761bcb00fe7cf99a4a5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9c6667ad9be6164639e65e23fb136de1bc196f60
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983425"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320035"
 ---
 # <a name="compliance-score-calculation"></a>Obliczanie wyniku zgodności
 
@@ -55,9 +55,9 @@ Ponieważ każda organizacja ma określone potrzeby, Menedżer zgodności polega
 
 ## <a name="how-compliance-manager-continuously-assesses-controls"></a>Sposób ciągłego oceniania kontroli przez Menedżera zgodności
 
-Menedżer zgodności automatycznie skanuje dane w środowisku Microsoft 365 i wykrywa ustawienia systemu, stale i automatycznie aktualizując stan działań technicznych. Program Microsoft Secure Score jest aparatem źródłowym, który wykonuje monitorowanie.
+Menedżer zgodności automatycznie identyfikuje ustawienia w Twoim środowisku Microsoft 365, które ułatwiają określenie, kiedy określone konfiguracje spełniają wymagania implementacji działań udoskonalania. Menedżer zgodności wykrywa sygnały z innych wdrożonych przez Ciebie rozwiązań zgodności, takich jak zarządzanie informacjami, ochrona informacji, zgodność komunikacji i zarządzanie ryzykiem w niejawnym programie testów, a także wykorzystuje monitorowanie bezpiecznego wyniku firmy Microsoft w dopełnianych działaniach usprawnień.
 
-Stan akcji jest aktualizowany na pulpicie nawigacyjnym co 24 godziny. Gdy będziesz postępować zgodnie z zaleceniem, aby zaimplementować kontrolkę, stan kontrolki będzie zazwyczaj aktualizowany następnego dnia.
+Stan akcji zostanie zaktualizowany na pulpicie nawigacyjnym w ciągu 24 godzin od zmiany. Gdy będziesz postępować zgodnie z zaleceniem, aby zaimplementować kontrolkę, stan kontrolki będzie zazwyczaj aktualizowany następnego dnia.
 
 Jeśli na przykład włączysz uwierzytelnianie wieloskładnikowe (MFA) w portalu usługi Azure AD, Menedżer zgodności wykryje to ustawienie i odzwierciedli je w szczegółach rozwiązania dostępu kontrolki. Jeśli nie włączyć uwierzytelniania wieloskładnikowego, Menedżer zgodności oznaczy flagą akcję zalecaną do podjęcia.
 
@@ -91,20 +91,20 @@ Jeśli pomyślnie wdrożysz działanie nie technicalne w każdej z 5 grup, łąc
 Ta logika wyników ma na celu zapewnienie najdokładniejszego księgowego sposobu implementowania i  testowania akcji w organizacji.
 
 ### <a name="how-score-values-are-determined"></a>Jak są określane wartości wyników
- 
+
 Akcji przypisywana jest wartość wyniku na podstawie tego, czy są one obowiązkowe, czy dyskrecjonalne, oraz od tego, czy mają one charakter zapobiegający, detekwacyjny czy zawłaszający.
 
 ### <a name="mandatory-and-discretionary-actions"></a>Działania obowiązkowe i dyskrecjonalne
 
- - **Czynności obowiązkowych** nie można pominąć celowo ani przypadkowo. Przykładem obowiązkowej akcji jest centralnie zarządzane zasady dotyczące haseł, które ustawiają wymagania dotyczące długości, złożoności i wygasania hasła. Użytkownicy muszą spełniać te wymagania, aby uzyskać dostęp do systemu.
+- **Czynności obowiązkowych** nie można pominąć celowo ani przypadkowo. Przykładem obowiązkowej akcji jest centralnie zarządzane zasady dotyczące haseł, które ustawiają wymagania dotyczące długości, złożoności i wygasania hasła. Użytkownicy muszą spełniać te wymagania, aby uzyskać dostęp do systemu.
   
- - **Działania dyskrecjonalne** polegają na tym, że użytkownicy rozumieją zasady i ich przestrzegają. Przykładem może być zasada wymagająca od użytkowników zablokowania komputera w przypadku opuszczenia jej przez użytkownika, ponieważ zależy ona od użytkownika.
+- **Działania dyskrecjonalne** polegają na tym, że użytkownicy rozumieją zasady i ich przestrzegają. Przykładem może być zasada wymagająca od użytkowników zablokowania komputera w przypadku opuszczenia jej przez użytkownika, ponieważ zależy ona od użytkownika.
   
 ### <a name="preventative-detective-and-corrective-actions"></a>Akcje zapobiegające, wykrywające i korygające
   
- - **Działania zapobiegające odniesieniu** do określonego ryzyka. Na przykład ochrona informacji w miejscu przy użyciu szyfrowania jest akcją zapobiegawczą atakom i naruszeniem bezpieczeństwa. Rozdzielenie obowiązków jest działaniem zapobiegającym zarządzaniu konfliktem zainteresowań i zabezpieczeniu się przed oszustwami.
+- **Działania zapobiegające odniesieniu** do określonego ryzyka. Na przykład ochrona informacji w miejscu przy użyciu szyfrowania jest akcją zapobiegawczą atakom i naruszeniem bezpieczeństwa. Rozdzielenie obowiązków jest działaniem zapobiegającym zarządzaniu konfliktem zainteresowań i zabezpieczeniu się przed oszustwami.
   
- - **Akcje wykrywające** aktywnie monitorują systemy w celu identyfikowania nieregularnych warunków lub zachowań reprezentujących ryzyko albo takich, które mogą być używane do wykrywania łamania praw lub naruszeń. Przykłady obejmują inspekcję dostępu systemu i akcje administracyjne o uprzywilejowanych uprawnieniach. Inspekcje zgodności z przepisami to rodzaj akcji dekcyjnej służącej do wykrywania problemów z procesami.
+- **Akcje wykrywające** aktywnie monitorują systemy w celu identyfikowania nieregularnych warunków lub zachowań reprezentujących ryzyko albo takich, które mogą być używane do wykrywania łamania praw lub naruszeń. Przykłady obejmują inspekcję dostępu systemu i akcje administracyjne o uprzywilejowanych uprawnieniach. Inspekcje zgodności z przepisami to rodzaj akcji dekcyjnej służącej do wykrywania problemów z procesami.
   
 - **Działania naprawcze próbują** ograniczyć do minimum negatywne skutki zdarzenia związanego z zabezpieczeniami, podjąć działania naprawcze w celu zmniejszenia efektu natychmiastowego i, jeśli to możliwe, odwrócić szkody. Reagowanie na incydenty dotyczące prywatności jest działaniem naprawczym w celu ograniczenia uszkodzeń i przywracania systemów do stanu operacyjnego w przypadku naruszenia.
   

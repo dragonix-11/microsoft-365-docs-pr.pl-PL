@@ -1,14 +1,12 @@
 ---
 title: Opis rachunku lub faktury
-f1.keywords:
-- CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - MACBillingBillsPaymentsInvoices
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,19 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Dowiedz się, jak odczytywać i zrozumieć rachunek lub fakturę za produkty biznesowe firmy Microsoft.
-keywords: konta rozliczeniowe, informacje o organizacji, faktury
 ms.date: 05/04/2021
-ms.openlocfilehash: 3f6eaef9e26578f759a64fdf55dfeb6882be2458
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ce057a9a3fc72ab1ba818047112451f984894d99
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995991"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315809"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Opis rachunku lub faktury
 

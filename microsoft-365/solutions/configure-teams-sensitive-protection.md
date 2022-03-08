@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
 recommendations: false
 description: Dowiedz się, jak wdrażać zespoły z ochroną poufnych danych.
-ms.openlocfilehash: edeeb0fc0f93ae962b85e113734dea1844b11d04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 42124881ac795c54288dee46e70dc1d5eccef3e3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988445"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314073"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Konfigurowanie zespołów w celu ochrony danych poufnych
 
@@ -119,12 +120,11 @@ Za każdym razem, gdy tworzysz nowy zespół z poufnymi etykietami, należy wyko
 
 Aby zaktualizować domyślny typ linku udostępniania witryny
 
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W **obszarze Witryny** kliknij pozycję **Aktywne witryny**.
-3. Kliknij witrynę skojarzoną z zespołem.
-4. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** kliknij pozycję **Edytuj**.
-5. W obszarze Domyślny typ linku udostępniania wyczyść  pole wyboru Takie samo jak ustawienie na poziomie organizacji i zaznacz pole wyboru Określone osoby (tylko osoby **określone przez użytkownika).**
-6. Kliknij **Zapisz**.
+1. Otwórz centrum SharePoint administracyjnego, a następnie w **obszarze Witryny** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+1. Wybierz witrynę skojarzoną z zespołem.
+1. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** kliknij pozycję **Edytuj**.
+1. W obszarze Domyślny typ linku udostępniania wyczyść  pole wyboru Takie samo jak ustawienie na poziomie organizacji i zaznacz pole wyboru Określone osoby (tylko osoby **określone przez użytkownika).**
+1. Wybierz **Zapisz**.
 
 Jeśli chcesz utworzyć skrypt tego skryptu w ramach procesu tworzenia zespołu, możesz użyć polecenia [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) `-DefaultSharingLinkType Direct` z parametrem, aby zmienić domyślny link udostępniania na *Określone osoby*.
 

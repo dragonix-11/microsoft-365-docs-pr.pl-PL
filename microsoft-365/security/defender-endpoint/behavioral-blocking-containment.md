@@ -15,16 +15,14 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 90d6cef5ef34e2249b5da561559a5e9505f1db84
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bab766fd69b9227f10ba897040faff79e65b1722
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027028"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325785"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blokowanie i blokowanie zachowań
 

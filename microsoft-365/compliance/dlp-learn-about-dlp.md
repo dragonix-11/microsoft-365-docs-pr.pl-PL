@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak chronić poufne informacje za pomocą Microsoft 365 i narzędzi ochrony przed utratą danych i skorzystać z przewodnika po cyklu życia ochrony przed utratą danych.
-ms.openlocfilehash: 4d6cd204a6aafc261e6648d6f81ea359a5fcdfb8
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: f64fa30ed0f2eddae03a14451c55f95c9e4249a3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013854"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317685"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Informacje na temat ochrony przed utratą danych
 
@@ -143,7 +143,7 @@ lokalizacja | uwzględnij/wyklucz do|
 |Exchange-mail| grupy dystrybucyjne|
 |SharePoint witryn |witryny |
 |OneDrive konta |konta lub grupy dystrybucyjne |
-|Teams wiadomości czatu i kanałów |konta |
+|Teams wiadomości czatu i kanałów |konto lub grupa dystrybucyjna |
 |Windows 10, Windows 11 i macOS (Catalina 10.15 lub wyższa) |użytkownik lub grupa |
 |Microsoft Cloud App Security |wystąpienie |
 |Repozytoria lokalne| ścieżka pliku repozytorium|

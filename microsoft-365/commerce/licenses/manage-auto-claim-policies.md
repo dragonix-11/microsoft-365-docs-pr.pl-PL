@@ -2,10 +2,10 @@
 title: Zarządzanie zasadami automatycznego żądania
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.review: yinggiy, pablom
+ms.reviewer: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,30 +14,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 description: Dowiedz się, jak tworzyć zasady automatycznego żądania i zarządzać nimi, które automatycznie przypiszą licencje użytkownikom określonych aplikacji.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 28d05e0e3b1d1e8692672bf741a612ebee02e39f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: d6cb3d78de914e84e831947089aeadf277e72ddf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62989755"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321099"
 ---
 # <a name="manage-auto-claim-policies"></a>Zarządzanie zasadami automatycznego żądania
 
 Zasady automatycznego żądania umożliwiają użytkownikom automatyczne żądanie licencji na produkt po pierwszym zalogowaniu się do aplikacji. Zazwyczaj jako administrator przypisujesz licencje użytkownikom ręcznie lub przy użyciu licencjonowania grupowego. Za pomocą zasad automatycznego żądania można zarządzać produktami, dla których użytkownicy mogą automatycznie żądać licencji. Możesz również kontrolować, z jakich produktów pochodzą te licencje.
-
-Po utworzeniu zasad automatycznego żądania można wykonywać następujące zadania w celu zarządzania zasadami:
-
-- [Włączanie i wyłączanie zasad](#turn-a-policy-on-or-off)
-- [Edytowanie przyjaznej nazwy zasad](#edit-the-policy-friendly-name)
-- [Dodawanie lub usuwanie produktów kopii zapasowych](#add-or-remove-backup-products)
-- [Zarządzanie przypisanymi aplikacjami i usługami](#change-the-assigning-apps-and-services)
-- [Zmienianie kolejności przypisywania](#change-the-assigning-order-for-backup-products)
-- [Wyświetlanie raportu zasad](#view-an-auto-claim-policy-report)
 
 > [!IMPORTANT]
 > Zasady automatycznego żądania są obecnie dostępne tylko dla Microsoft Teams. W przyszłości będzie dostępnych więcej produktów.

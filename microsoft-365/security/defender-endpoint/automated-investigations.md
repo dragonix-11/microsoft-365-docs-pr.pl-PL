@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 547356fadc05c2359b4c6cd639bc22110bf8be93
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 31b2a7b41c26bdba22e6f364e517471e31e9115c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013832"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313023"
 ---
 # <a name="overview-of-automated-investigations"></a>Omówienie zautomatyzowanych badań
 
@@ -84,7 +84,10 @@ Wszystkie akcje naprawcze, zarówno oczekujące, jak i zakończone, są śledzon
 
 ## <a name="requirements-for-air"></a>Wymagania dotyczące środowiska AIR
 
-Twoja organizacja musi mieć program Defender for Endpoint (zobacz [Minimalne wymagania programu Microsoft Defender dla punktu końcowego](minimum-requirements.md).
+Twoja organizacja musi mieć program Defender for Endpoint (zobacz [Minimalne wymagania programu Microsoft Defender dla punktu końcowego](minimum-requirements.md)).
+
+> [!NOTE]
+> Automatyczne badanie i reagowanie wymaga Program antywirusowy Microsoft Defender do działania w trybie pasywnym lub aktywnym. Jeśli Program antywirusowy Microsoft Defender została wyłączona lub odinstalowana, funkcja Automatycznego badania i odpowiedzi nie będzie działać poprawnie.
 
 Obecnie program AIR obsługuje tylko następujące wersje systemu operacyjnego:
 

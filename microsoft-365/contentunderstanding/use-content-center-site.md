@@ -12,18 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Dowiedz się, jak korzystać z szablonu witryny Centrum zawartości w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: 342a8b42b8aa8a9bb60867f57379ce00db068c17
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 2650b98decc7977c4343f75b27ed46e2381abdef
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63014902"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314549"
 ---
 # <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Używanie szablonu witryny Centrum zawartości dla aplikacji Microsoft SharePoint Syntex
 
-Witryna SharePoint Syntex zawartości jest gotowym do wdrożenia szablonem witryny SharePoint, który pomaga lepiej zrozumieć SharePoint Syntex możliwości.
+Witryna SharePoint Syntex zawartości jest gotowym do wdrożenia szablonem witryny SharePoint instruktażowym, który pomaga lepiej zrozumieć SharePoint Syntex możliwości.
 
 Zostaną wprowadzone narzędzia i informacje potrzebne do utworzenia i przeszkolinia własnych modeli. Następnie będzie można używać tej witryny jako centralnego repozytorium zawartości lub jako centrum sterowania do zarządzania własnymi SharePoint Syntex modelami.
 

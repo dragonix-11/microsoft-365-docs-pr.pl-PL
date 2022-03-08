@@ -6,8 +6,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 2432b01e574e72b7163b1571d1e476bb9a807d30
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 7c300a6d66ae67d481b61a0a35101a0472031266
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "62996736"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327689"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Odwiedź Centrum akcji, aby wyświetlić działania naprawcze
 

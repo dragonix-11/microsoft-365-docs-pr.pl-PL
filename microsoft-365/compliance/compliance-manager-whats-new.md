@@ -2,8 +2,8 @@
 title: Co nowego w Menedżerze zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,18 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, co nowego w Mangeru zgodności, a co nowego. Przeczytaj o zaktualizowanych ocenach, nowych szablonach oceniania, nowych akcjach i nie tylko.
-ms.openlocfilehash: a5489241b223b076e3ef44432fd934afb732b38f
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 48aed2e173231e3945bcdd3de73052de9f970a5b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016071"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317657"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Co nowego w Menedżerze zgodności firmy Microsoft
 
 **W tym artykule:** Dowiedz się więcej o najnowszych aktualizacjach w Menedżerze zgodności.
 
 ## <a name="february-2022"></a>Luty 2022 r.
+
+### <a name="continuous-compliance-assessment-of-improvement-actions"></a>Ciągła ocena zgodności działań udoskonalania
+
+Dodamy zautomatyzowane testowanie i generowanie dowodów dla ponad 35 działań udoskonalania w Menedżerze zgodności, które wcześniej nie zostały objęte bezpiecznego wyniku. W ramach ciągłej oceny zgodności możesz otrzymywać aktualizacje dotyczące tych działań udoskonalania, które zostały ukończone, jeśli są one odpowiednie dla Twojej oceny zgodności i masz licencję na dostęp do odpowiednich rozwiązań. Ciągła ocena zgodności daje również użytkownikom wgląd w logikę oceniania działań udoskonalania oraz dostarcza szczegółowych informacji i dowodów na to, dlaczego otrzymano określony wynik. Ta funkcja współpracuje z istniejącymi integracjami z Microsoft 365 bezpiecznego wyniku, a wszelkie skonfigurowane wcześniej automatyczne akcje będą nadal działać bez żadnych danych. Dowiedz się więcej o [zautomatyzowanych ustawieniach testowania](compliance-manager-setup.md#set-up-automated-testing).
+### <a name="alerts-and-alert-policies"></a>Alerty i zasady alertów
+
+Użytkownicy mogą teraz ustawiać alerty o zmianach w Menedżerze zgodności, które organizacja chce śledzić. Za pomocą kreatora łatwej konfiguracji możesz utworzyć zasady alertów w celu tworzenia powiadomień w przypadku zdarzeń następujących typów: zmiana wyniku akcji udoskonalania, zmiana przydziału akcji udoskonalania, zmiana testowania lub stanu implementacji w działaniu usprawniacym oraz przekazanie lub usunięcie pliku na karcie Dokumenty akcji udoskonalania. Aby dowiedzieć się więcej, zobacz [Alerty Menedżera zgodności i zasady alertów](compliance-manager-alert-policies.md).
 
 ### <a name="try-recommended-assessment-templates-for-your-organization"></a>Wypróbuj zalecane szablony oceniania dla organizacji
 
@@ -49,7 +56,7 @@ Zero zaufania to proaktywne, zintegrowane podejście do zabezpieczeń na wszystk
 - Sieć zerowego zaufania
 - Widoczność, automatyzacja i wartość bez zaufania
 
-### <a name="new-assessment-templates"></a>Nowe szablony oceniania
+### <a name="new-preview-templates"></a>Nowe szablony podglądu
 
 W wersji zapoznawczej są teraz dostępne następujące szablony oceniania:
 

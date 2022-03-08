@@ -17,17 +17,14 @@ ROBOTS: NOINDEX
 description: Użytkownicy mogą dowiedzieć się, jak wyświetlać wiadomości poddane kwarantannie i działać w nich, które zostały wysłane do udostępnionych skrzynek pocztowych, do których mają uprawnienia.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e78a46bca97ea58a88195c9d05e11332528cf3af
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 8d9f83f176675be26fadf3d720dcc78e5146bde3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "62988665"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324525"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Wyświetlanie i zwalnianie wiadomości poddanych kwarantannie z udostępnionych skrzynek pocztowych
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są obecnie dostępne w wersji Preview, nie są dostępne dla wszystkich i mogą ulec zmianie.
 
 Użytkownicy mogą zarządzać wiadomościami poddanymi kwarantannie w miejscu, w którym są jednym z adresatów, zgodnie z opisem w tece Znajdowanie i zwalnianie wiadomości poddanych kwarantannie jako [użytkownik w ucieka programie EOP](find-and-release-quarantined-messages-as-a-user.md). Ale co z **udostępnionymi** skrzynkami pocztowymi, w których użytkownik ma uprawnienia Pełny dostęp i Wyślij jako lub Wyślij w imieniu do skrzynki pocztowej zgodnie z opisem w tece Udostępnione skrzynki pocztowe w [programie Exchange Online](/exchange/collaboration-exo/shared-mailboxes)?
 

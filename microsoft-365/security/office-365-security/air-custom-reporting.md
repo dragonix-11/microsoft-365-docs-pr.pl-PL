@@ -3,8 +3,8 @@ title: Niestandardowe rozwiązania do raportowania z automatycznym badaniem i od
 keywords: SIEM, API, AIR, autoIR, Microsoft Defender for Endpoint, zautomatyzowane badanie, integracja, raport niestandardowy
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b1c0501bb044129c4fa626428dfc616ea8414e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d2812f9f2e1100a923dc5f9bb22a9b6df218a78
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984596"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321729"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Niestandardowe lub inne rozwiązania do raportowania dla programu Microsoft Defender dla Office 365
 

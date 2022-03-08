@@ -2,8 +2,8 @@
 title: Przenoszenie domeny zweryfikowane na koncie niezawiązyanym
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,33 +22,33 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Dowiedz się, jak dołączyć do konta niezamanektowego w celu usunięcia domeny z konta i dodania tej domeny do swojego konta.
-ms.openlocfilehash: 3902853ea070f09e975b16a730d2b58209858853
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 7b7befdae4279b4b08ff076b88ed552b2bc411c3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63013341"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326346"
 ---
 # <a name="move-a-domain-verified-in-an-unmanaged-account"></a>Przenoszenie domeny zweryfikowane na koncie niezawiązyanym
 
  **[Zajrzyj do często zadawanych pytań dotyczących domen](../setup/domains-faq.yml)**, jeśli nie możesz znaleźć szukanych informacji.
 
-Jeśli jesteś administratorem i próbujesz dodać domenę do swojego konta usługi Microsoft 365, ale domena została zablokowana, ponieważ domena została zweryfikowana dla konta niezawiązywana, możesz zostać administratorem na koncie niezawiązyanym, aby usunąć domenę i dodać ją do swojego konta.
+Jeśli jesteś administratorem i próbujesz dodać domenę do konta platformy Microsoft 365, ale domena została zablokowana, ponieważ domena została zweryfikowana dla konta niezawiązywana, możesz zostać administratorem na koncie niezawiązyanym, aby usunąć domenę i dodać ją do swojego konta.
 
 > [!NOTE]
 > Samodzielne tworzenie konta w dowolnej usłudze w chmurze, która korzysta z usługi Azure AD, powoduje dodanie użytkownika do niezazadowonianego lub "cienia" katalogu Azure AD i utworzenie konta niezazadowońnego. Niezamanektowane konto to katalog bez administratora globalnego. Aby określić, czy konto jest zarządzane, czy nieza zarządzaniem, zobacz [Określanie typu dzierżawy](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type).
   
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Czasami nie można dodać domeny do konta organizacji, ponieważ inna osoba już załozyła konto w udatku Microsoft 365 przy użyciu adresu e-mail skojarzonego z tą nazwą domeny. Możesz jednak usunąć domenę z innego konta w stanie wykonania i dodać ją do konta organizacji.
+Czasami nie można dodać domeny do konta organizacji, ponieważ inna osoba już załozyła konto na platformie Microsoft 365 przy użyciu adresu e-mail skojarzonego z tą nazwą domeny. Możesz jednak usunąć domenę z innego konta w stanie wykonania i dodać ją do konta organizacji.
 
 Najpierw musisz dołączyć do konta niezamówinego i zostać administratorem tego konta (kroki 1–3). Następnie możesz usunąć domenę z konta (krok 4), zalogować się ponownie do konta organizacji i dodać domenę do swojego konta (krok 5).
 
 ## <a name="step-1-get-an-invitation-to-join-the-unmanaged-account"></a>Krok 1. Uzyskiwanie zaproszenia do dołączenia do konta niezamanektowego
 
-Po próbie dodania domeny do konta może zostać wyświetlony komunikat informujący, że ktoś już Microsoft 365 za pomocą adresu e-mail. Krok 1 to żądanie zaproszenia do dołączenia do drugiego konta i rozpoczęcie procesu przejęcia roli administratora.
+Po próbie dodania domeny do konta może zostać wyświetlony komunikat informujący, że ktoś już zalogował się na platformie Microsoft 365 za pomocą adresu e-mail. Krok 1 to żądanie zaproszenia do dołączenia do drugiego konta i rozpoczęcie procesu przejęcia roli administratora.
 
-1. Przejdź do centrum administracyjne platformy Microsoft 365 > **Ustawienia** >  **Domains** > **+ Add domain (** Dodaj domenę) i dodaj nazwę domeny.
+1. Przejdź do centrum administracyjnego platformy Microsoft 365 i > **SettingsDomains** >  > **+ Dodaj** domenę i dodaj nazwę domeny.
 
 1. Jeśli zobaczysz komunikat informujący, że nie możesz dodać domeny, ponieważ inne osoby już je załozyły przy użyciu adresu e-mail dla tej domeny, wprowadź nazwę użytkownika konta, a następnie wybierz pozycję Wyślij mi **zaproszenie**.
 
@@ -86,7 +86,7 @@ Po próbie dodania domeny do konta może zostać wyświetlony komunikat informuj
 
 1. Wyloguj się z konta i zaloguj się ponownie przy użyciu nowego `username@account.onmicrosoft.com`konta .
 
-1. Wybierz **Ustawienia** >  **Domeny**, zlokalizuj domenę, którą chcesz dodać do innego konta, a następnie wybierz pozycję **Usuń domenę**.
+1. Wybierz **pozycję** **SettingsDomains** >  ,zlokalizuj domenę, którą chcesz dodać do innego konta, a następnie wybierz pozycję **Usuń domenę**.
 
     Jeśli zostaniesz poproszony o wybranie innej domeny jako domyślnej, wybierz domenę onmicrosoft.com domenę.
 
@@ -101,7 +101,7 @@ Po próbie dodania domeny do konta może zostać wyświetlony komunikat informuj
 
 1. Zaloguj się do konta, do którego chcesz dodać domenę.
 
-1. Wybierz **Ustawienia** >  **Domains** > **+ Add domain** (Dodaj domenę), a następnie wprowadź nazwę domeny, aby kontynuować kroki kreatora w celu zweryfikowania własności domeny na tym koncie i ukończenia dodawania domeny do swojego konta.
+1. Wybierz **pozycję** **SettingsDomains** >  > **+ Dodaj** domenę, a następnie wprowadź nazwę domeny, aby kontynuować kroki kreatora w celu zweryfikowania własności domeny na tym koncie i ukończenia dodawania domeny do swojego konta.
   
 ## <a name="related-content"></a>Zawartość pokrewna
 

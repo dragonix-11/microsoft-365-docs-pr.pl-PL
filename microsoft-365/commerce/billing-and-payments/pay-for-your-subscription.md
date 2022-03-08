@@ -2,8 +2,8 @@
 title: Płacenie za subskrypcję
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,19 +16,19 @@ ms.collection:
 search.appverid: MET150
 description: Użyj karty kredytowej lub debetowej albo konta bankowego do płacenia za subskrypcję usługi Microsoft 365 dla firm, a w niektórych przypadkach możesz zapłacić na podstawie faktury.
 ms.custom:
+- commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce_billing
 - business_assist
 - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: 839c7e94a2a89b20eef0779f44d864d69ed3a746
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fb6948c59505eaa3316dab73708658f7b31c43e7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011425"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326303"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Jak zapłacić za subskrypcję
 

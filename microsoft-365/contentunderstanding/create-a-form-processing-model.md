@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Dowiedz się, jak utworzyć model przetwarzania formularzy w aplikacji SharePoint Syntex.
-ms.openlocfilehash: b6ccede1de62fbba0e111eb7d9d805b4998e9652
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 6048eabe8bb57da40d940923e313bd496ec1ecec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63015927"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330499"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Tworzenie modelu przetwarzania formularzy w aplikacji Microsoft SharePoint Syntex
 
@@ -74,13 +75,13 @@ Pierwszym krokiem podczas tworzenia modelu przetwarzania formularzy jest nadanie
 
         - Jeśli **wybierzesz pozycję Istniejąca lista**, w **polu Wybrane listy** wybierz listę, której chcesz użyć.
 
-4. Podczas tworzenia modelu przetwarzania formularzy jest tworzyć nowy SharePoint typu zawartości. Typ SharePoint reprezentuje kategorię dokumentów o wspólnych cechach i udostępnia kolekcję kolumn lub właściwości metadanych dla tej określonej zawartości. SharePoint zawartości są zarządzane za pośrednictwem centrum SharePoint administracyjnego.
+4. Podczas tworzenia modelu przetwarzania formularzy jest tworzyć nowy SharePoint typu zawartości. Typ SharePoint reprezentuje kategorię dokumentów o wspólnych cechach i udostępnia kolekcję kolumn lub właściwości metadanych dla tej określonej zawartości. SharePoint zawartości są zarządzane za pośrednictwem centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint administracyjnego</a>.
 
    Aby zamapować ten model na istniejący typ zawartości w galerii typów SharePoint zawartości, wybierz pozycję **Ustawienia zaawansowane**.
 
     ![Zrzut ekranu przedstawiający ustawienia Zaawansowane w panelu Tworzenie modelu do przetwarzania formularzy.](../media/content-understanding/new-form-model-advanced-settings.png) 
 
-   1. W **sekcji Typ zawartości** wybierz, czy chcesz utworzyć nowy typ zawartości, czy użyć istniejącego. 
+   1. W <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">galerii Typ zawartości</a> wybierz, czy chcesz utworzyć nowy typ zawartości, czy użyć istniejącego. 
 
    2. Aby użyć istniejącego typu zawartości, wybierz **pozycję Wybierz**, a następnie wybierz typ zawartości z listy.
 
@@ -171,6 +172,6 @@ Aby uruchomić przepływ:
 
 ## <a name="see-also"></a>Zobacz też
   
-[Power Automate dokumentacji](/power-automate/)
+[Dokumentacja do automatyzowania do usługi Power Automate](/power-automate/)
 
 [Szkolenie: Ulepszanie wydajności biznesowej za pomocą aplikacji AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

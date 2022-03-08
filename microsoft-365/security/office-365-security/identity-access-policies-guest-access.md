@@ -3,8 +3,8 @@ title: Zasady dostępu do tożsamości i urządzeń umożliwiające dostęp goś
 description: W tym artykule opisano zalecane zasady dostępu warunkowego i powiązane zasady dotyczące ochrony dostępu gości i użytkowników zewnętrznych.
 ms.prod: m365-security
 ms.topic: article
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 audience: Admin
 manager: Laurawi
 f1.keywords:
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 090f5a81c624b22298c257fae890691c8e5151ee
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 71e4b3d5f2a8cbf147a9aa50dd849be14047e27d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63006569"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318175"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Zasady zezwalania na dostęp gości i dostęp użytkownika zewnętrznego B2B
 

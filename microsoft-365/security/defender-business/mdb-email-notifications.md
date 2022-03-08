@@ -7,26 +7,25 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 5a6d896b3b18b4eea0721197c0a4766add4a20b6
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 86588289a4a94a46ddca6022b12a70ac6965a904
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016586"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329687"
 ---
 # <a name="set-up-email-notifications"></a>Konfigurowanie powiadomień e-mail
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
-
 
 Możesz skonfigurować powiadomienia e-mail dla zespołu zabezpieczeń. Następnie w przypadku wygenerowania alertów lub odkrycia nowych luk w zabezpieczeniach osoby z Twojego zespołu zabezpieczeń zostaną automatycznie powiadomione. 
 
@@ -38,6 +37,11 @@ Możesz skonfigurować powiadomienia e-mail dla zespołu zabezpieczeń. Następn
 
 3. [Przejdź do następnych kroków](#next-steps).
 
+
+>
+> **Masz minutę?**
+> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+>
 
 ## <a name="types-of-email-notifications"></a>Typy powiadomień e-mail
 
@@ -51,9 +55,9 @@ Podczas konfigurowanie powiadomień e-mail możesz wybrać jeden z dwóch typów
 > [!TIP]
 > **Powiadomienia e-mail nie są jedynym sposobem, w jaki zespół zabezpieczeń może uzyskać informacje o nowych alertach i luki w zabezpieczeniach**.
 > 
-> Powiadomienia e-mail to wygodny sposób na zapewnianie zespołowi zabezpieczeń informacji w czasie rzeczywistym. Ale są też inne! Na przykład zawsze, gdy twój zespół zabezpieczeń się Microsoft 365 Defender w portalu sieciOwym ([https://security.microsoft.com](https://security.microsoft.com)), będą dosłane karty z wyróżnieniem nowych zagrożeń, alertów i luk w zabezpieczeniach. Program Defender dla firm (w wersji Preview) został zaprojektowany tak, aby podczas logowania wyróżniać ważne informacje, na które zwraca uwagę zespół zabezpieczeń.
+> Powiadomienia e-mail to wygodny sposób na zapewnianie zespołowi zabezpieczeń informacji w czasie rzeczywistym. Ale są też inne! Na przykład zawsze, gdy twój zespół zabezpieczeń się Microsoft 365 Defender w portalu sieciOwym ([https://security.microsoft.com](https://security.microsoft.com)), będą dosłane karty z wyróżnieniem nowych zagrożeń, alertów i luk w zabezpieczeniach. Program Defender dla firm ma na celu wyróżnienie ważnych informacji, na które zwraca uwagę zespół zabezpieczeń zaraz po zalogowaniu się.
 > 
-> Aby wyświetlić informacje, zespół zabezpieczeń może również wybrać pozycję **Zdarzenia** w okienku nawigacji. Aby dowiedzieć się więcej, [zobacz Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm (wersja preview).](mdb-view-manage-incidents.md)
+> Aby wyświetlić informacje, zespół zabezpieczeń może również wybrać pozycję **Zdarzenia** w okienku nawigacji. Aby dowiedzieć się więcej, [zobacz Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md).
 
 ## <a name="view-and-edit-email-notifications"></a>Wyświetlanie i edytowanie powiadomień e-mail
 
@@ -75,5 +79,4 @@ Aby wyświetlić lub edytować ustawienia powiadomień e-mail dla organizacji, w
 
 Przejdź do:
 
-- [Krok 4. Na urządzeniach w programie Microsoft Defender dla firm (wersja Preview)](mdb-onboard-devices.md)
-
+- [Krok 4. Na urządzeniach w programie Microsoft Defender dla firm](mdb-onboard-devices.md)

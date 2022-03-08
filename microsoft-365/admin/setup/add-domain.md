@@ -2,8 +2,8 @@
 title: Dodawanie domeny do Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Za pomocą kreatora konfiguracji dodaj domenę do Microsoft 365 w centrum administracyjne platformy Microsoft 365, dodając rekord DNS na hoście DNS.
-ms.openlocfilehash: eb58c8fc69a26157aa7dfb323be03efb81ef76bf
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fa809486b968c4bc0f8c74e466285ee2ce9ac895
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011407"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321715"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Dodawanie domeny do Microsoft 365
 

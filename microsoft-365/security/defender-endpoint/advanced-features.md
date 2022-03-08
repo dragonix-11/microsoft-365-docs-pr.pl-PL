@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d0faebdf3b815bdca968cdd790767c5d36179b6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997839"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327703"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurowanie funkcji zaawansowanych w programie Defender for Endpoint
 
@@ -47,6 +47,9 @@ Poniższe funkcje zaawansowane są dostępne w celu uzyskania lepszej ochrony pr
 Włącz tę funkcję, aby korzystać z funkcji automatycznego badania i rozwiązywania problemów w usłudze. Aby uzyskać więcej informacji, zobacz [Automatyczne badanie](automated-investigations.md).
 
 ## <a name="live-response"></a>Odpowiedź na żywo
+
+> [!NOTE]
+> Odpowiedź na **żywo wymaga** włączenia automatycznego badania przed włączeniem jej w sekcji ustawień zaawansowanych w portalu programu Microsoft Defender for Endpoint.
 
 Włącz tę funkcję, aby użytkownicy z odpowiednimi uprawnieniami mogą rozpocząć sesję odpowiedzi na żywo na urządzeniach.
 
@@ -180,10 +183,6 @@ Włączenie tego ustawienia przekazuje sygnał punktu końcowego programu Defend
 
 > [!NOTE]
 > Ta funkcja będzie dostępna w licencji E5 dla systemu [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) na urządzeniach z systemem Windows 10 w wersji 1709 (kompilacja systemu operacyjnego 16299.1085 z [kb4493441](https://support.microsoft.com/help/4493441)), Windows 10 wersja 1803 (kompilacja systemu operacyjnego 17134.704 z [kb4493464](https://support.microsoft.com/help/4493464)), Windows 10, wersja 1809  (Kompilacja 17763.379 systemu operacyjnego z [kb4489899](https://support.microsoft.com/help/4489899)), nowsze wersje Windows 10 lub Windows 11.
-
-## <a name="microsoft-secure-score"></a>Microsoft Secure Score
-
-Przekazuje sygnał punktu końcowego programu Microsoft Defender do wyniku bezpiecznego połączenia w Microsoft 365 Defender sieci web. Włączenie tej funkcji zapewnia wgląd w zabezpieczenia na urządzeniu za pomocą funkcji bezpiecznego wyniku firmy Microsoft. Dane przekazane są przechowywane i przetwarzane w tej samej lokalizacji, w których są przechowywane dane bezpiecznego wyniku firmy Microsoft.
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Włączanie integracji programu Microsoft Defender for Endpoint z portalu usługi Microsoft Defender for Identity
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik danych w celu importowania i archiwizowania danych za pomocą narzędzia poczty e-mail Bloomberg Message w programie Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w programie Microsoft 365, aby zarządzać danymi innych firm przy użyciu funkcji zgodności, takich jak archiwizacja ze względu na przepisy prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: d883d01c444e6589a79445e408e4f3ceba5c81d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3897909c185aabad48483db9b42fcf6b552a68a3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986625"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317839"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Konfigurowanie łącznika do archiwizowania danych wiadomości Bloomberga
 
@@ -71,7 +71,7 @@ Niektóre kroki implementacji wymagane do archiwizacji danych wiadomości Bloomb
 
 - Łącznik Wiadomości Bloomberga może zaimportować łącznie 200 000 elementów w jednym dniu. Jeśli w witrynie SFTP istnieje więcej niż 200 000 elementów, żadne z tych elementów nie zostaną zaimportowane do Microsoft 365.
 
-- Użytkownik, który w kroku 3 (i który pobiera klucze publiczne i adres IP w kroku 1), musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Jest to wymagane do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który w kroku 3 (i który pobiera klucze publiczne i adres IP w kroku 1), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="set-up-a-connector-using-public-keys"></a>Konfigurowanie łącznika przy użyciu kluczy publicznych
 

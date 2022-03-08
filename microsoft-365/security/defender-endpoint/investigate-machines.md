@@ -11,17 +11,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dee6cec53ef6a3412d110837037f1de48fc6e92f
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011317"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324175"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Badanie urządzeń na liście programu Microsoft Defender dla urządzeń końcowych
 

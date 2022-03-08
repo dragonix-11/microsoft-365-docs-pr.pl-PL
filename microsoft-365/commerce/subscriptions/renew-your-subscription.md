@@ -2,8 +2,8 @@
 title: Odnawianie Microsoft 365 dla firm
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: Dowiedz się, jak odnowić większość Microsoft 365 dla firm, wyłączając lub włączając rozliczanie cykliczne.
 ms.date: 05/04/2021
-ms.openlocfilehash: 2fe78acab6423bbedefe2cad9dc7ae7ae3efe449
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b50e92bf71d4c172b55aa69db33fc3572d660684
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995840"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330163"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Odnawianie Microsoft 365 dla firm
 
@@ -60,7 +60,7 @@ Jeśli opłacono przedpłatę za subskrypcję przy użyciu klucza produktu, subs
 
 2. Wybierz subskrypcję, dla której chcesz zarządzać rozliczaniem cyklicznym.
 3. Na stronie szczegółów subskrypcji w obszarze **Ustawienia subskrypcji i płatności** wybierz pozycję **Edytuj rozliczenia cykliczne**.
-4. W **okienku Edytuj ustawienia rozliczeń cyklicznych** wybierz pozycję **Włącz****, Włącz, ale odnów raz** lub **Wyłącz**.
+4. W **okienku Edytowanie rozliczeń cyklicznych** wybierz pozycję **Włącz****, Włącz, ale odnów raz** lub **Wyłącz**.
 5. Wybierz **Zapisz**.
 
     > [!NOTE]

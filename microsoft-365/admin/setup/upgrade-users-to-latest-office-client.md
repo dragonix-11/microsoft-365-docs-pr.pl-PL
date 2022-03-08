@@ -3,7 +3,7 @@ title: Uaktualnianie Office 2010 do wersji Microsoft 365 — Microsoft 365 admin
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekuako
+author: kwekua
 manager: scotv
 audience: Admin
 ms.service: o365-administration
@@ -24,12 +24,12 @@ ms.custom:
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Dowiedz się, jak Microsoft Office do najnowszej wersji Office klienta usługi dla użytkowników w organizacji.
 ms.topic: article
-ms.openlocfilehash: 0dad3c22e9011dd0453f719178d94ef67138220c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7994fb10d00484f2c211f4443d2030fa71003d5f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987788"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321701"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Uaktualnianie Microsoft 365 użytkowników biznesowych do najnowszej wersji Office klienta
 

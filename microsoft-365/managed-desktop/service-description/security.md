@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 7b5f99a6927fd87b1d75bde0dcc5e4fde1ff3a62
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 4a6eb73a172ecfb680cbc48367851e40b1a54401
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "63015426"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315417"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Technologie zabezpieczeń w Microsoft Managed Desktop
 
@@ -58,7 +58,6 @@ Klienci są odpowiedzialni za bezpieczeństwo sieci.
 | Usługa | Opis |
 | ----- | ----- |
 | VPN | Klienci są właścicielami swojej infrastruktury VPN, aby mieć pewność, że ograniczone zasoby firmowe mogą być udostępniane poza intranetem.<br><br>Minimalne wymaganie: Microsoft Managed Desktop wymaga Windows 10 zgodnego i obsługiwanego rozwiązania VPN. Jeśli Twoja organizacja potrzebuje rozwiązania VPN, musi ona obsługiwać sieć Windows 10 być pakowana i wdrażana za pośrednictwem usługi Intune. Aby uzyskać więcej informacji, skontaktuj się z wydawcą oprogramowania.<br><br>Zalecenie:<br><ul><li> Firma Microsoft zaleca nowoczesne rozwiązanie VPN, które można łatwo wdrożyć za pośrednictwem usługi Intune w celu wypchania profilów VPN. To rozwiązanie zapewnia zawsze łatwy, niezawodny i bezpieczny sposób dostępu do sieci firmowej. Aby uzyskać więcej informacji, zobacz [Ustawienia sieci VPN w usłudze Intune](/intune/vpn-settings-configure).</li><li>Grubi klienci SIECI VPN lub starsi klienci SIECI VPN nie są zalecane przez firmę Microsoft podczas Microsoft Managed Desktop ponieważ może to wpłynąć na środowisko użytkownika.</li><li>Firma Microsoft zaleca, aby wychodzący ruch w sieci Web przechodził bezpośrednio do Internetu bez pośrednictwa sieci VPN w celu uniknięcia problemów z wydajnością.</li><li>Najlepiej, jeśli firma Microsoft zaleca korzystanie z Azure Active Directory proxy aplikacji zamiast połączenia VPN.</li></ul>
-
 
 ## <a name="information-security"></a>Bezpieczeństwo informacji
 

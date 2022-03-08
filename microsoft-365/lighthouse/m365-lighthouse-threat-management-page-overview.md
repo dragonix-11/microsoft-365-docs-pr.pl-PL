@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się więcej o stronie Zarządzanie zagrożeniami.
-ms.openlocfilehash: 6eb5ed0c37295a7683b2eb16068f96f912aefb91
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e57163ba462e241c74a96db78fe701c024a037ff
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984448"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329886"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse zarządzania zagrożeniami — omówienie 
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 **Dotyczy:**
 
@@ -40,13 +37,13 @@ Aby uzyskać dostęp do strony Zarządzanie zagrożeniami w programie Microsoft 
   
 Na karcie Omówienie na stronie Zarządzanie zagrożeniami możesz monitorować stan oprogramowania antywirusowego we wszystkich dzierżawach, aby zidentyfikować obszary, na które należy zwrócić uwagę.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Zrzut ekranu przedstawiający kartę Przegląd.>.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Zrzut ekranu przedstawiający kartę Przegląd.":::
 
 ## <a name="threats-tab"></a>Karta Zagrożenia
 
 Na karcie Zagrożenia na stronie Zarządzanie zagrożeniami widać zagrożenia Aktywne, Zminimalizowane, Rozwiązane i Dozwolone we wszystkich dzierżawach. Możesz również rozwiązać wiele zagrożeń jednocześnie we wszystkich dzierżawach, filtrując i uwzględniając wszystkie zagrożenia, aby dowiedzieć się, których urządzeń, użytkowników lub dzierżaw dotyczy problem.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Zrzut ekranu przedstawiający stronę Domyślny plan bazowy.>.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Zrzut ekranu przedstawiający stronę Domyślny plan bazowy.":::
   
 Możesz filtrować zagrożenia, korzystając z tych filtrów:
 

@@ -18,12 +18,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować skrzynkę pocztową do zbierania spamu i wiadomości e-mail wyłudzających informacje zgłaszanych przez użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 96ec8a32a04768431597c965473974965b2de608
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 525b761b09a68c3e44443cec7bf718d9eaa4d8d1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63020855"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327213"
 ---
 # <a name="user-reported-message-settings"></a>Ustawienia wiadomości zgłoszone przez użytkownika
 
@@ -122,7 +122,7 @@ Po zweryfikowaniu, że skrzynka pocztowa spełnia wszystkie odpowiednie wymagani
    - Wyłącz przełącznik Komunikat raportu programu **Microsoft Outlook** \>  ![.](../../media/scc-toggle-off.png): Zaznacz tę opcję, jeśli korzystasz z narzędzi do raportowania innych firm, a nie z dodatku Wiadomość raportu, dodatku Wyłudzanie raportów lub wbudowanego raportowania w programie Outlook w sieci Web, a następnie skonfiguruj następujące ustawienia:
      - Zaznacz **pole wyboru Użyj tej niestandardowej skrzynki pocztowej do odbierania zgłoszonych przez użytkowników przesyłania**. W wyświetlonym oknie wprowadź adres e-mail istniejącej skrzynki Exchange Online pocztowej, która może odbierać wiadomości e-mail.
 
-   - **Przycisk Outlook raportu firmy Microsoft**: Włącz tę funkcję, jeśli chcesz, aby użytkownicy końcowi zgłaszali wiadomości z kwarantanny.
+   - **Przycisk poddaj wiadomości kwarantannie**: włącz tę funkcję, jeśli chcesz, aby użytkownicy końcowi zgłaszali wiadomości z kwarantanny.
 
    Po zakończeniu kliknij pozycję **Potwierdź**. Aby wyczyścić te wartości, kliknij pozycję **Przywróć.**
 

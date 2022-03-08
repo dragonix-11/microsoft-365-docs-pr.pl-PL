@@ -1,6 +1,6 @@
 ---
 title: Przeglądanie dzienników inspekcji
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Dowiedz się, jak przeglądać dzienniki inspekcji, Microsoft 365 Lighthouse z tematem Dostawcy usług zarządzanych (MSP, Managed Service Providers).
-ms.openlocfilehash: 69eb057c0b6a7daf835ec613b7d386e1a7fbfbaa
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: e16f6eb83d1fdc9f5aea2fdc6463959cc07e5650
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "63014805"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329449"
 ---
 # <a name="review-audit-logs"></a>Przeglądanie dzienników inspekcji
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse dziennika inspekcji rejestruje akcje generujące zmianę w latarni morskiej lub innych usługach Microsoft 365 usługach. Tworzenie, edytowanie, usuwanie, przypisywanie i akcje zdalne powoduje tworzenie zdarzeń inspekcji, które można przeglądać. Domyślnie inspekcja jest włączona dla wszystkich klientów. Nie można go wyłączyć.
 
@@ -36,7 +33,7 @@ Aby wyświetlać dzienniki inspekcji, musisz mieć jedno z następujących upraw
 
 - Azure Active Directory usługi Azure AD — Administrator globalny dzierżawy partnerskiej
 
-- Rola Centrum partnerskiego firmy Microsoft — agent administracyjny
+- Rola Centrum partnerskiego Firmy Microsoft — Agent administracyjny
 
 ## <a name="review-audit-logs"></a>Przeglądanie dzienników inspekcji
 
@@ -62,23 +59,37 @@ W poniższej tabeli wymieniono działania zarejestrowane w dziennikach inspekcji
 
 | Nazwa działania | Obszar w Latarnia morska | Inicjowane działanie | Usługa, w przypadku których ma to wpływ |
 |--|--|--|--|
-| **zastosuj** | Dzierżawcy | Stosowanie planu wdrażania | Azure AD, Microsoft Endpoint Manager (MEM) |
+| **stosowanie** lub **wdrażanie** | Dzierżawcy | Stosowanie planu wdrażania | Azure AD, Microsoft Endpoint Manager (MEM) |
 | **assignTag** | Dzierżawcy | Stosowanie tagu od klienta | Latarnia morska |
-| **changeDeploymentStatus** | Dzierżawcy | Stan planu działań dla planu wdrażania | Latarnia morska |
+| **changeDeploymentStatus** lub **assign** | Dzierżawcy | Aktualizowanie stanu planu działań dla planu wdrażania | Latarnia morska |
+| **managedTenantOperations** | Dzierżawcy | Wyświetlanie informacji o planie wdrażania | Azure AD |
 | **offboardTenant** | Dzierżawcy | Dezaktywuj klienta | Latarnia morska |
 | **resetTenantOnboardingStatus** | Dzierżawcy | Reagowanie klienta | Latarnia morska |
 | **tenantTags** | Dzierżawcy | Tworzenie lub usuwanie tagu | Latarnia morska |
 | **tenantCustomizedInformation** | Dzierżawcy | Tworzenie, aktualizowanie lub usuwanie witryny internetowej klienta lub informacji kontaktowych | Latarnia morska |
 | **unassignTag** | Dzierżawcy | Usuwanie tagu z klienta | Latarnia morska |
+| **sprawdź poprawność** | Dzierżawcy | Testowanie planu wdrażania | Azure AD |
 | **blockUserSignin** | Użytkownicy | Blokowanie logowania | Azure AD |
 | **confirmUsersComprom nieuprawnianie** | Użytkownicy | Upewnij się, że użytkownik został naruszony | Azure AD |
 | **dismissUsersRisk** | Użytkownicy | Odrzucenie ryzyka użytkownika | Azure AD |
 | **resetUserPassword** | Użytkownicy | Resetuj hasło | Azure AD |
+| **getConditionalAccessPolicies** | Użytkownicy | Wyświetlanie zasad certyfikacji wymagających uwierzytelniania wieloskładnikowego | Azure AD |
+| **getTenantIDToTenantNameMap** | Użytkownicy | Wyszukiwanie identyfikatorów | Azure AD |
+| **getUsers** | Użytkownicy | Wyszukiwanie użytkowników | Azure AD |
+| **getUsersWithoutMfa** | Użytkownicy | Wyświetlanie użytkowników, którzy nie są zarejestrowani w ramach uwierzytelniania MFA | Azure AD |
+| **getSsprEnabledButNotRegisteredUsers** | Użytkownicy | Wyświetlanie użytkowników, którzy nie zarejestrował się dla konta SSPR | Azure AD |
 | **setCustomerSecurityDefaultsEnabledStatus** | Użytkownicy | Włączanie uwierzytelniania wieloskładnikowego (MFA) przy użyciu ustawień domyślnych zabezpieczeń | Azure AD |
+|**getCompliancePolicyInfo** | Urządzenia | Wyświetlanie zasad | MEM
+|**getDeviceCompliancePolicyStates** | Urządzenia | Wyświetlanie stanów zasad | MEM
+|**getDeviceCompliancePolicySettingStates** | Urządzenia | Wyświetlanie niezgodnych ustawień | MEM
+|**getDeviceCompliancePolicySettingStateSummaries** | Urządzenia | Wyświetlanie niezgodnych urządzeń | MEM
+|**getTenantsDeviceCompliancePolicies** | Urządzenia | Porównywanie zasad | MEM
 | **restartDevice** | Urządzenia | Uruchom ponownie | MEM |
 | **syncDevice** | Urządzenia | Synchronizuj | MEM |
 | **rebootNow** | Zarządzanie zagrożeniami | Ponowne uruchamianie | MEM |
 | **reprovision** | Windows 365 | Ponów próbę inicjowania obsługi administracyjnej | Windows 365 |
+| **getDeviceUserInfo** | Zarządzanie zagrożeniami | Wyświetlanie informacji o użytkowniku urządzenia zarządzanego  | MEM |
+| **getManagedDevice**, **remoteActionAudits** lub **deviceActionResults** | Zarządzanie zagrożeniami | Wyświetlanie informacji o urządzeniu zarządzanym  | MEM |
 | **windowsDefenderScanFull** | Zarządzanie zagrożeniami | Pełne skanowanie | MEM |
 | **windowsDefenderKan** | Zarządzanie zagrożeniami | Szybkie skanowanie | MEM |
 | **windowsDefenderUpdateSignatures** | Zarządzanie zagrożeniami | Aktualizowanie oprogramowania antywirusowego | MEM |

@@ -1,13 +1,13 @@
 ---
-title: Przypisywanie ról i uprawnień w programie Microsoft Defender dla firm (wersja Preview)
-description: Dowiedz się, jak przypisywać role i uprawnienia w programie Microsoft Defender dla firm (wersja Preview)
+title: Przypisywanie ról i uprawnień w programie Microsoft Defender dla firm
+description: Dowiedz się, jak przypisywać role i uprawnienia w programie Microsoft Defender dla firm
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,25 +16,25 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 134b5ec8bcd390cc7f7908a09be5c2d1bd85169c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 4dce33caf6976dc891daf365aeb0235d81753fdb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027032"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325799"
 ---
-# <a name="assign-roles-and-permissions-in-microsoft-defender-for-business-preview"></a>Przypisywanie ról i uprawnień w programie Microsoft Defender dla firm (wersja Preview)
+# <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Przypisywanie ról i uprawnień w programie Microsoft Defender dla firm
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-Aby można było wykonywać zadania w portalu usługi Microsoft 365 Defender, takie jak konfigurowanie programu Microsoft Defender dla firm (wersja Preview), wyświetlanie raportów lub podejmowanie działań dotyczących wykrytych zagrożeń, zespołowi zabezpieczeń należy przypisać odpowiednie uprawnienia. Uprawnienia są udzielane za pośrednictwem ról przypisanych w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) lub w innych [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
+Aby można było wykonywać zadania w portalu Microsoft 365 Defender, takie jak konfigurowanie programu Microsoft Defender dla firm, wyświetlanie raportów lub podejmowanie działań dotyczących wykrytych zagrożeń, zespołowi zabezpieczeń należy przypisać odpowiednie uprawnienia. Uprawnienia są udzielane za pośrednictwem ról przypisanych w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) lub w innych [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## <a name="what-to-do"></a>Co należy zrobić
 
-1. [Dowiedz się więcej o rolach w programie Defender dla firm (wersja preview)](#roles-in-defender-for-business).
+1. [Dowiedz się więcej o rolach w programie Defender dla firm](#roles-in-defender-for-business).
 
 2. [Wyświetlaj i edytuj przypisania ról dla zespołu zabezpieczeń](#view-or-edit-role-assignments).
 
@@ -48,11 +48,11 @@ Aby można było wykonywać zadania w portalu usługi Microsoft 365 Defender, ta
 
 ## <a name="roles-in-defender-for-business"></a>Role w programie Defender dla firm
 
-W poniższej tabeli opisano trzy role, które można przypisać w programie Defender dla firm (wersja Preview). [Dowiedz się więcej o rolach administratorów](../../admin/add-users/about-admin-roles.md). <br/><br/>
+W poniższej tabeli opisano trzy role, które można przypisać w uchcie Defender dla firm. [Dowiedz się więcej o rolach administratorów](../../admin/add-users/about-admin-roles.md). <br/><br/>
 
 | Poziom uprawnień | Opis |
 |:---|:---|
-| **Administratorzy globalni** (nazywani również administratorami globalnymi) <br/><br/> *Najlepszym rozwiązaniem jest ograniczenie liczby administratorów globalnych.* | Administratorzy globalni mogą wykonywać wszelkiego rodzaju zadania. Osoba, która załozyła konto w organizacji w Microsoft 365 usługi Microsoft Defender dla firm (wersja Preview) jest domyślnie administratorem globalnym. <br/><br/> Administratorzy globalni mogą uzyskać dostęp do ustawień oraz zmieniać je we wszystkich Microsoft 365 portalach, takich jak: <br/>— centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portalu ([https://security.microsoft.com](https://security.microsoft.com)) |
+| **Administratorzy globalni** (nazywani również administratorami globalnymi) <br/><br/> *Najlepszym rozwiązaniem jest ograniczenie liczby administratorów globalnych.* | Administratorzy globalni mogą wykonywać wszelkiego rodzaju zadania. Osoba, która załozyła konto w organizacji w Microsoft 365 usługi Microsoft Defender dla Firm, jest domyślnie administratorem globalnym. <br/><br/> Administratorzy globalni mogą uzyskać dostęp do ustawień oraz zmieniać je we wszystkich Microsoft 365 portalach, takich jak: <br/>— centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portalu ([https://security.microsoft.com](https://security.microsoft.com)) |
 | **Administratorzy** zabezpieczeń (nazywani również administratorami zabezpieczeń) | Administratorzy zabezpieczeń mogą wykonywać następujące zadania: <br/>— Wyświetlanie zasad zabezpieczeń i zarządzanie nimi <br/>— Wyświetlać zagrożenia zabezpieczeń i alerty oraz zarządzać nimi (działania te obejmują podejmowanie działań dotyczących punktów końcowych) <br/>— Wyświetlanie informacji dotyczących zabezpieczeń i raportów |
 | **Czytelnik zabezpieczeń** | Czytniki zabezpieczeń mogą wykonywać następujące zadania: <br/>- Wyświetlanie zasad zabezpieczeń <br/>- Wyświetlanie zagrożeń bezpieczeństwa i alertów <br/>— Wyświetlanie informacji dotyczących zabezpieczeń i raportów  |
 
@@ -85,4 +85,4 @@ Przejdź do:
 
 - [Krok 3. Konfigurowanie powiadomień e-mail](mdb-email-notifications.md)
 
-- [Krok 4. Na urządzeniach w programie Microsoft Defender dla firm (wersja Preview)](mdb-onboard-devices.md)
+- [Krok 4. Na urządzeniach w programie Microsoft Defender dla firm](mdb-onboard-devices.md)

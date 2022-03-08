@@ -2,8 +2,8 @@
 title: Informacje rozliczeniowe Microsoft 365 dla firm w Meksyku
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 description: Dowiedz się więcej o informacjach przeznaczonych specjalnie Microsoft 365 dla firm w Meksyku.
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: b60bbf3cd626b81f03c4b0706247d8ada03a8246
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 91bd33e3f8e178136267b95c2e9133b5923ff703
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973517"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325435"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Informacje rozliczeniowe Microsoft 365 dla firm w Meksyku
 
@@ -44,14 +44,14 @@ Po dojechania do kroku 4 w procesie zakupu finalizacji zakupu **. Płatności i 
 
 ### <a name="for-your-future-purchases"></a>Twoje przyszłe zakupy
 
-Możesz dodać lub zmodyfikować swoje RFC tak, aby informacje te odzwierciedlały się Microsoft 365 zakupów biznesowych. Aby dodać lub zmodyfikować ustawienia RFC, przejdź do **strony Konta rozliczeniowe** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank"></a>
+Możesz dodać lub zmodyfikować swoje RFC, aby informacje te odzwierciedlić w Microsoft 365 zakupów biznesowych. Aby dodać lub zmodyfikować ustawienia RFC, przejdź do **strony Konta rozliczeniowe** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank"></a>
 
 > [!NOTE]
 > W przypadku subskrypcji rozliczeń cyklicznych co miesiąc lub co rok na fakturze zostanie odzwierciedlony dodanie lub modyfikacja tego rfc na fakturze następnej opłaty.
 
 ## <a name="3-can-i-add-or-modify-my-rfc-to-an-invoice-that-was-already-generated"></a>3. Czy mogę dodać lub zmodyfikować kod RFC na fakturze, która została już wygenerowana?
 
-Przed zakupem należy dodać lub zmodyfikować kod RFC. Po wygenerowaniu faktury Microsoft 365 dla firm nie można dodawać ani modyfikować informacji dotyczących tego ustawienia.
+Przed zakupem należy dodać lub zmodyfikować kod RFC. Po wygenerowaniu faktury Microsoft 365 dla firm nie można dodawać ani modyfikować informacji o dokumencie RFC.
 
 ## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. Dlaczego nie otrzymam cfdi (Comprobrand Fiscal Digital por Internet)?
 

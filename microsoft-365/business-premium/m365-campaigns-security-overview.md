@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak chronić swoją kampanię lub firmę, zwiększając bezpieczeństwo za pomocą Microsoft 365.
-ms.openlocfilehash: 14582edff3153649a36bf12b3fd25212c6c1543d
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 17144ea8c361c3fb3665addd9567cfcb18ca0172
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011395"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329033"
 ---
 # <a name="bump-up-security-protection-for-your-campaign-or-business"></a>Insektowa ochrona zabezpieczeń podczas kampanii lub firmy
 
@@ -43,8 +43,8 @@ Obejrzyj ten klip wideo, aby dowiedzieć się, jak chronić swoją kampanię lub
 
 Następnie wykonaj następujące czynności:
 
-- [Ochrona przed złośliwym oprogramowaniem i innymi zagrożeniami](m365-campaigns-increase-protection.md)
-- [Ochrona dostępu do danych kampanii przez](m365-campaigns-conditional-access.md) ochronę kont i aplikacji
-- [Ochrona kont administratora](m365-campaigns-protect-admin-accounts.md)
-- [Konfigurowanie urządzeń przenośnych](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
+- [Ochrona przed złośliwym oprogramowaniem i innymi zagrożeniami](m365bp-increase-protection.md)
+- [Ochrona dostępu do danych kampanii przez](m365bp-conditional-access.md) ochronę kont i aplikacji
+- [Ochrona kont administratora](m365bp-protect-admin-accounts.md)
+- [Konfigurowanie urządzeń przenośnych](../business/set-up-mobile-devices.md)
 - [Szkolenie użytkowników](m365-campaigns-users.md)

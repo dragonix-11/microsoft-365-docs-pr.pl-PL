@@ -17,15 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom:
+- admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Dzięki zarządzaniu rekordami Microsoft 365 harmonogramy przechowywania można stosować do planu ewidencji, który zarządza przechowywaniem, deklaracjami rekordów i ich rozsyłaniem.
-ms.openlocfilehash: d5d4752e76a2a39b1c5fafab964d13ce11873e9b
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: c7546216a935960e5c4b66b37bb3308d0a69e89e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013304"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324819"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informacje na temat zarządzania rekordami w Microsoft 365
 
@@ -91,9 +92,9 @@ Standardowa etykieta przechowywania zawiera ustawienia i akcje przechowywania, a
 
 Przypisy dolne:
 
-<sup>1</sup> Domyślnie dozwolone, ale mogą być blokowane przez ustawienie dzierżawy dla plików o rozmiarze większym niż 0 bajtów: Przejdź do węzła Zarządzanie  rekordami w ustawieniach zarządzania rekordami w programie Centrum zgodności platformy Microsoft 365 > Uzyskaj etykietywlepki plikuWłaściwość właściwości rekordu **, a** >  >  następnie wyłącz ustawienie Zezwalaj użytkownikom na edytowanie właściwości rekordu **.**
+<sup>1</sup> Edytowanie właściwości zablokowanego rekordu jest domyślnie dozwolone, ale może zostać zablokowane przez ustawienie dzierżawy w ustawieniach zarządzania [rekordami](https://compliance.microsoft.com/) w programie Centrum zgodności platformy Microsoft 365  > **RecordsUmianie** >  >  >  zarządzaniaWłaściwość etykietOchniż edytowanie właściwości rekordu **.**
 
-<sup>2</sup> W przypadku SharePoint i OneDrive mogą być blokowane jako ustawienie dzierżawy w ustawieniach zarządzania rekordami w programie Centrum zgodności platformy Microsoft 365 >  >  >  >  Uzyskania rekordówUzyskawnianie etykiet elementów
+<sup>2</sup> Usuwanie elementów oznaczonych etykietami w programach SharePoint i OneDrive można zablokować jako ustawienie dzierżawy w ustawieniach zarządzania [rekordami w](https://compliance.microsoft.com/) programie Centrum zgodności platformy Microsoft 365  > **RecordsUmianie** >  >  >  zarządzaniaRekordamiNalepki ponownego wczytania **elementów**.
 
 Po zastosowaniu etykiety przechowywania do elementu listy, który ma załącznik dokumentu, ten dokument nie odziedziczy ustawień przechowywania i można go usunąć z tego elementu listy. Natomiast jeśli ten element listy został zadeklarowany jako rekord z etykietą przechowywania, załącznik dokumentu odziedziczy ustawienia przechowywania i nie będzie można go usunąć.
 

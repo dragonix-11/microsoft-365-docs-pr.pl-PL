@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Skonfiguruj Windows z systemem Windows 10 Pro dla Microsoft 365 Business Premium użytkowników, umożliwiając scentralizowane zarządzanie i mechanizmy kontroli zabezpieczeń.
-ms.openlocfilehash: 40577f2130c185f8a98a3c8f873da80233e56cf0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 0a6fa4178e3aeb2e77d744283bfcf671d0df1f3d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62998945"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322621"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Konfigurowanie Windows dla Microsoft 365 Business Premium użytkowników
 
@@ -129,8 +129,7 @@ Sprawdź, czy urządzenia dołączane do Windows 10 Azure AD zostały uaktualnio
   
 ## <a name="next-steps"></a>Następne kroki
 
-Aby skonfigurować urządzenia przenośne, zobacz Konfigurowanie urządzeń przenośnych dla użytkowników usługi [Microsoft 365 Business Premium](set-up-mobile-devices.md). Aby skonfigurować zasady ochrony urządzeń lub ochrony aplikacji, zobacz Zarządzanie usługą [Microsoft 365 dla firm](/admin/index.yml).
-  
-## <a name="related-content"></a>Zawartość pokrewna
+Aby skonfigurować urządzenia przenośne, zobacz Konfigurowanie urządzeń przenośnych [dla Microsoft 365 Business Premium użytkowników](set-up-mobile-devices.md). 
 
-[Microsoft 365 szkoleniowe klipy wideo dla firm](../../business-video/index.yml) (strona linku)
+Aby zwiększyć ochronę, zobacz [10 najlepszych sposobów zabezpieczania Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md).
+  

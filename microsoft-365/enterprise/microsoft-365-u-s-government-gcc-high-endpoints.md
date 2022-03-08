@@ -2,8 +2,8 @@
 title: Punkty końcowe usługi Office 365 U.S. Government GCC High
 ms.author: kvice
 author: kelleyvice-msft
-manager: scotv
-ms.date: 01/31/2022
+manager: laurawi
+ms.date: 02/28/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: W tym artykule znajdziesz punkty końcowe osiągalne dla klientów korzystających z Office 365 Government GCC High.
 hideEdit: true
-ms.openlocfilehash: d22d292cd8914dd336d410dcbcb82e1ffb0d5362
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 23f77a2dda8bc389e88c0abc5ec868ce53ecabd7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "63009756"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318829"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Punkty końcowe usługi Office 365 U.S. Government GCC High
 
@@ -41,7 +41,7 @@ Usługa Office 365 wymaga połączenia z Internetem. Poniższe punkty końcowe p
 
 |Uwagi|Pobierz|
 |---|---|
-|**Ostatnia aktualizacja:** 2021-10-29 — ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Subskrypcja dziennika zmian](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Pobierz:** pełna lista w formacie [JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
+|**Ostatnia aktualizacja:** 2022-02-28 — ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Subskrypcja dziennika zmian](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Pobierz:** pełna lista w formacie [JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |
 
  Zacznij od [tematu Office 365 punktów końcowych,](managing-office-365-endpoints.md) aby zrozumieć nasze zalecenia dotyczące zarządzania łącznością sieciową przy użyciu tych danych. Na początku każdego miesiąca dane dotyczące punktów końcowych są aktualizowane przy użyciu nowych adresów IP i adresów URL opublikowanych 30 dni przed ich aktywnością. Dzięki temu klienci, którzy nie mają jeszcze automatycznych aktualizacji, mogą dokończyć swoje procesy, zanim będzie wymagana nowa łączność. W razie potrzeby punkty końcowe mogą być także aktualizowane w ciągu miesiąca, aby rozwiązać potrzeby dotyczące eskalacji pomocy technicznej, zdarzeń dotyczących zabezpieczeń lub innych natychmiastowych wymagań operacyjnych. Wszystkie dane pokazane na poniższej stronie są generowane z usług sieci Web opartych na u dołu. Jeśli uzyskujesz dostęp do tych danych za pomocą skryptu lub urządzenia sieciowego, przejdź [bezpośrednio do usługi](microsoft-365-ip-web-service.md) sieci Web.

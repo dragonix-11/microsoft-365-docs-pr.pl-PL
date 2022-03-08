@@ -24,16 +24,19 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: Poznaj wymagania dotyczące konfigurowania usługi Microsoft 365 dla firm i ochrony danych służbowych na urządzeniach użytkowników.
-ms.openlocfilehash: 32247f097b5e8759126fc6f06dd4d613b9a6b8db
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5a2dc9a60e3aa9161880ae50dbf135b2740e12a0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985243"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322579"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Wymagania wstępne dotyczące ochrony danych na urządzeniach za pomocą Microsoft 365 dla firm
 
 Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 Pierwszym krokiem podczas konfigurowania usługi Microsoft 365 dla firm w organizacji jest upewninie się, że spełniasz wymagania wstępne.
   
@@ -50,3 +53,7 @@ Pierwszym krokiem podczas konfigurowania usługi Microsoft 365 dla firm w organi
     System Google Android 4.0 lub nowszy (z uwzględnieniem wersji Samsung KNOX Standard 4.0 lub nowszej). Aby uzyskać więcej informacji, zobacz [Urządzenia obsługiwane w usłudze Intune](/mem/intune/fundamentals/supported-devices-browsers).
     
 - Jeśli masz istniejące aplikacje Office na komputerach użytkowników, przeczytaj o przygotowywaniu się do instalacji klienta programu [Office](../misc/prepare-for-office-client-deployment.md), aby poznać czynności, które mogą być konieczne przed skonfigurowaniem programu Microsoft 365 dla firm do instalowania programu Office 2016 na komputerach użytkowników.
+
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](secure-your-business-data.md)

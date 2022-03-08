@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Podsumowanie: należy zrozumieć odporność danych w Microsoft Office 365.'
-ms.openlocfilehash: b83b55afab2d9901e03a311d603b5b316531580a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54bae9fa0203d76c598c4dee337ee15f24a2fc24
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983424"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317643"
 ---
 # <a name="service-encryption"></a>Szyfrowanie usługi
 
@@ -29,7 +29,7 @@ Oprócz szyfrowania na poziomie głośności, Exchange Online, Microsoft Teams, 
 Firma Microsoft zarządza wszystkimi kluczami kryptograficznymi, w tym kluczami głównymi do szyfrowania usługi. Ta opcja jest obecnie włączona domyślnie dla Exchange Online, SharePoint Online, OneDrive dla Firm. Klucze zarządzane przez firmę Microsoft zapewniają domyślne szyfrowanie usługi, chyba że zdecydujesz się na użycie klucza klienta. Jeśli w późniejszym terminie zdecydujesz się przestać korzystać z klucza klienta bez podążania za ścieżką przeczyszczania danych, Twoje dane pozostają zaszyfrowane przy użyciu kluczy zarządzanych przez firmę Microsoft. Dane są zawsze szyfrowane na tym domyślnym poziomie co najmniej. 
 
 ## <a name="customer-key"></a>Klucz klienta
-Ty dostarczasz klucze główne używane z szyfrowaniem usługi i zarządzasz nimi przy użyciu magazynu kluczy platformy Azure. Wszystkimi innymi kluczami zarządza firma Microsoft. Ta opcja nosi nazwę Klucz klienta i jest obecnie dostępna dla Exchange Online, SharePoint Online i OneDrive dla Firm. (Wcześniej nazywane szyfrowaniem zaawansowanym przy użyciu funkcji BYOK. Zobacz [Zwiększanie przejrzystości i kontroli nad Office 365 dla klientów,](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) aby uzyskać oryginalne ogłoszenie).
+Ty dostarczasz klucze główne używane z szyfrowaniem usługi i zarządzasz nimi przy użyciu magazynu kluczy platformy Azure. Wszystkimi innymi kluczami zarządza firma Microsoft. Ta opcja nosi nazwę Klucz klienta i jest obecnie dostępna dla Exchange Online, SharePoint Online i OneDrive dla Firm. (Wcześniej nazywane szyfrowaniem zaawansowanym przy użyciu funkcji BYOK. Zobacz [Zwiększanie przejrzystości i kontroli nad Office 365 dla klientów,](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) aby uzyskać oryginalne ogłoszenie).
 
 Szyfrowanie usługi zapewnia wiele korzyści:
 

@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie pulpitu nawigacyjnego zarządzania & zagrożeniami w programie Microsoft Defender dla firm (wersja Preview)
+title: Wyświetlanie pulpitu nawigacyjnego zarządzania & zagrożeniami w programie Microsoft Defender dla firm
 description: Za pomocą pulpitu nawigacyjnego zarządzania & zagrożeniami & zarządzania zagrożeniami &, aby wyświetlić ważne elementy, których należy użyć.
 search.appverid: MET150
 author: denisebmsft
@@ -17,24 +17,26 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: abc50e2e37f8884bbca043320de0ad02c310f41a
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 013617f9fb1982a110fcc31dab709e8b95c77c00
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016595"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313009"
 ---
-# <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business-preview"></a>Używanie pulpitu nawigacyjnego zarządzania & zagrożeniami w programie Microsoft Defender dla firm (wersja Preview)
+# <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Używanie pulpitu nawigacyjnego zarządzania & zagrożeniami w programie Microsoft Defender dla firm
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-Program Microsoft Defender dla firm (wersja Preview) zawiera pulpit nawigacyjny zarządzania zagrożeniami &, który został zaprojektowany, aby zaoszczędzić czas i nakład pracy zespołu zabezpieczeń. Poza wyświetlaniem wyników ekspozycji, możesz także wyświetlać informacje o ujawnionych urządzeniach i zaleceniach dotyczących zabezpieczeń. Za pomocą pulpitu nawigacyjnego zarządzania & zagrożeniami można:
+Usługa Microsoft Defender dla firm zawiera pulpit nawigacyjny zarządzania & zagrożeniami, który został zaprojektowany, aby zaoszczędzić czas i nakład pracy zespołu zabezpieczeń. Poza wyświetlaniem wyników ekspozycji, możesz także wyświetlać informacje o ujawnionych urządzeniach i zaleceniach dotyczących zabezpieczeń. Za pomocą pulpitu nawigacyjnego zarządzania & zagrożeniami można:
 
 - Wyświetl ocenę ekspozycji, która jest skojarzona z urządzeniami w Twojej organizacji
+
 - Wyświetlanie najlepszych zaleceń dotyczących zabezpieczeń, takich jak rozwiązywanie problemów z komunikacją z urządzeniami, włączanie ochrony za pomocą zapory lub aktualizowanie definicji Program antywirusowy Microsoft Defender zabezpieczeń
+
 - Wyświetlanie działań naprawczych, takich jak pliki wysłane do kwarantanny lub luki w zabezpieczeniach na urządzeniach
 
 Chcesz zobaczyć, jak to działa? Obejrzyj ten klip wideo, w którym opisano zagrożenia & zarządzania lukami w zabezpieczeniach w [programie Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
@@ -43,10 +45,15 @@ Chcesz zobaczyć, jak to działa? Obejrzyj ten klip wideo, w którym opisano zag
 
 Aby dowiedzieć się więcej o zarządzaniu & zagrożeniami, zobacz Zagrożenia i zarządzanie lukami w zabezpieczeniach [programie Microsoft Defender for Endpoint](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
 
+>
+> **Masz minutę?**
+> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+>
+
 ## <a name="next-steps"></a>Następne kroki
 
-- [Samouczki i symulacyjne w programie Microsoft Defender dla firm (wersja Preview)](mdb-tutorials.md)
+- [Samouczki i symulowania w programie Microsoft Defender dla firm](mdb-tutorials.md)
 
-- [Urządzenia w programie Microsoft Defender dla firm (wersja Preview)](mdb-onboard-devices.md)
+- [Urządzenia w programie Microsoft Defender dla firm](mdb-onboard-devices.md)
 
-- [Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm (wersja Preview)](mdb-view-edit-create-policies.md)
+- [Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm](mdb-view-edit-create-policies.md)

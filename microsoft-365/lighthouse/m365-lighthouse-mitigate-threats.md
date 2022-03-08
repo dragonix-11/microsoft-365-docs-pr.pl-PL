@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się, jak zminimalizować zagrożenia Program antywirusowy Microsoft Defender.
-ms.openlocfilehash: 3d7eeb54c6f11e73bca71271faa7c09b30627ec2
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 297c35104ae58efb1b7c58d3d1968158d42c0fce
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017785"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315515"
 ---
 # <a name="mitigate-threats-with-microsoft-defender-antivirus"></a>Ograniczanie zagrożeń za pomocą Program antywirusowy Microsoft Defender
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse umożliwia partnerom badanie zagrożeń dla wszystkich dzierżaw i ich ograniczanie. Możesz również zainicjować skanowanie antywirusowe na urządzeniach, upewnić się, że na urządzeniach są zainstalowane najnowsze aktualizacje oprogramowania Program antywirusowy Microsoft Defender oraz przeglądać oczekujące akcje po skanach antywirusowych. Lighthouse obsługuje tylko urządzenia z systemem Windows 10 lub nowszym.
 
@@ -136,4 +133,4 @@ Możesz także ponownie uruchomić wiele urządzeń, zaznaczając pole wyboru ob
 [Omówienie strony zarządzania zagrożeniami ](m365-lighthouse-threat-management-page-overview.md) (artykuł)\
 [Tworzenie zasad zgodności w Microsoft Intune](/mem/intune/protect/create-compliance-policy) (artykuł)\
 [Włączanie Program antywirusowy Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows) (artykuł)\
-[Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats)
+[Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats) (strona sieci Web)

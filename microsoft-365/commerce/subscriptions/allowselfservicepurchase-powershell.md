@@ -2,8 +2,8 @@
 title: Używanie polecenia AllowSelfServicePurchase w module MS Commerce PowerShell
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_ssp
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Dowiedz się, jak za pomocą polecenia cmdlet AllowSelfServicePurchase programu PowerShell włączyć lub wyłączyć zakup samoobsługowy.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 12/15/2021
-ms.openlocfilehash: ebe01b9ed55b13d1d61ae1a59dca3bdb6373f285
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a3800f82386fafe509d9bdabb25cd91422cf058d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62974147"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315725"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Używanie polecenia AllowSelfServicePurchase w module MS Commerce PowerShell
 
@@ -49,7 +49,7 @@ Aby korzystać z **modułu MS Commerce** PowerShell, potrzebujesz:
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Instalowanie modułu MS Commerce PowerShell
 
-Zainstaluj moduł **MS Commerce** PowerShell na urządzeniu Windows 10 raz, a następnie zaimportuj go do każdej sesji programu PowerShell, która zostanie uruchamiana. Pobierz moduł **MS Commerce** PowerShell z [Galerii programu PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery).
+Moduł **MS Commerce** PowerShell jest instalowany na Windows 10 urządzeniach, a następnie importujesz go do każdej sesji programu PowerShell, która zostanie uruchamiana. Pobierz moduł **MS Commerce** PowerShell z [Galerii programu PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery).
 
 Aby zainstalować moduł **MS Commerce** PowerShell z **programem PowerShellGet**, uruchom następujące polecenie:
 
@@ -65,7 +65,7 @@ Po zainstalowaniu modułu na urządzeniu Windows 10 następnie zaimportuj go do 
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Połączenie do programu MS Commerce przy użyciu poświadczeń
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Połączenie do MS Commerce przy użyciu poświadczeń
 
 Aby połączyć się z modułem programu PowerShell za pomocą poświadczeń, uruchom następujące polecenie.
 
@@ -106,7 +106,7 @@ W poniższej tabeli wymieniono dostępne produkty i ich **productId**.
 | Visio (plan 2)* | CFQ7TTC0HD32 |
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
-| Windows 365 Business z Windows hybrydowym | CFQ7TTC0HX99 |
+| Windows 365 Business z Windows hybrydowymi | CFQ7TTC0HX99 |
 
 *Te identyfikatory zostały zmienione. Jeśli wcześniej blokowano produkty używające starych identyfikatorów, są one automatycznie blokowane przy użyciu nowych identyfikatorów. Nie jest wymagana dodatkowa praca.
 

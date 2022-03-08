@@ -1,14 +1,12 @@
 ---
 title: Opis profilów rozliczeniowych
-f1.keywords:
-- NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - MACBillingBillsPaymentsBillingProfiles
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Dowiedz się, jak profile rozliczeniowe obsługują faktury.
 ms.date: 04/02/2021
-ms.openlocfilehash: 59b3d6bb4201248bad57891b2b24413f422c71d0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 472b5c4754d686877077133467e33592b5c0b85e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62996422"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311871"
 ---
 # <a name="understand-billing-profiles"></a>Opis profilów rozliczeniowych
 

@@ -11,12 +11,12 @@ manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2a3ab858a35372297a3506648eb60e351ef17276
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 02bcb482de675e94c9b7c4f8eec80aae2f943ebe
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63015947"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323139"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Przygotuj użytkowników do korzystania z urządzeń
 
@@ -51,7 +51,7 @@ W tym momencie możesz przejść do [wdrażania aplikacji](deploy-apps.md).
 1. Wdrażanie i [przypisywanie Intune — Portal firmy](company-portal.md).
 1. [Przypisywanie licencji](assign-licenses.md).
 1. [Wdychuj aplikacje](deploy-apps.md).
-1. [Konfigurowanie urządzeń](set-up-devices.md).
+1. [Przygotowywanie urządzeń](prepare-devices.md).
 1. Skonfiguruj środowisko [pierwszego uruchomienia za pomocą rozwiązania Autopilot i strony stanu rejestracji](esp-first-run.md).
 1. [Włączanie funkcji pomocy technicznej dla użytkowników](enable-support.md).
 1. Przygotuj użytkowników do korzystania z urządzeń (ten artykuł).

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Po utworzeniu etykiety wrażliwości możesz automatycznie przypisać etykietę do plików i wiadomości e-mail lub poprosić użytkowników o wybranie etykiety, która jest zalecana.
-ms.openlocfilehash: 6802947e786f13a577a6f3bf58ea3001599ee4d8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: f617338448b71541d5ab0d914ab1a3198d4f486c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011383"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319657"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiet wrażliwości do zawartości
 
@@ -311,7 +311,7 @@ We wszystkich przypadkach dopasowane pliki są oznaczane etykietą, aż OneDrive
 
 5. Dla strony **Nadaj nazwę zasadom auto** etykiet: Podaj unikatową nazwę i opcjonalnie opis ułatwiający identyfikację automatycznie zastosowanej etykiety, lokalizacji i warunków identyfikującej zawartość do o etykiecie.
 
-6. Dla strony **Wybierz lokalizacje, w których chcesz** zastosować etykietę: Wybierz i określ lokalizacje dla etykiet Exchange, SharePoint i OneDrive. Jeśli nie chcesz zachować domyślnej **wartości Wszystkie dla** wybranych lokalizacji, wybierz link, aby wybrać określone wystąpienia. Następnie wybierz pozycję **Dalej**.
+6. Dla strony **Wybierz lokalizacje, w których chcesz** zastosować etykietę: Wybierz i określ lokalizacje dla etykiet Exchange, SharePoint i OneDrive. Jeśli nie chcesz zachować domyślnej wartości Wszystkie dla wybranych lokalizacji, wybierz link, aby wybrać konkretne wystąpienia do dołączyć, lub wybierz link, aby wybrać konkretne wystąpienia do wykluczenia. Następnie wybierz pozycję **Dalej**.
 
     ![Wybierz stronę lokalizacje w celu konfiguracji automatycznego oznaczania etykiet.](../media/locations-auto-labeling-wizard.png)
     

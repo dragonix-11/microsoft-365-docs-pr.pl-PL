@@ -17,12 +17,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej o dostępnych i preferowanych opcjach zezwalania na wiadomości przychodzące w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c1aa754790ccf0787a7ee79b0add0d7f5e17ca7
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 3c12511a3e5b4011765f744e714086cbb7924c7b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996232"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317111"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Tworzenie bezpiecznych list nadawców w uchcie EOP
 
@@ -46,13 +46,13 @@ Reguły przepływu poczty e-mail zapewniają większą elastyczność w zakresie
 
 > [!IMPORTANT]
 >
-> - Wiadomości zidentyfikowane jako złośliwe oprogramowanie lub wyłudzanie informacji o wysokiej pewności są zawsze pod kwarantanną niezależnie od opcji listy bezpiecznych nadawców, z których korzystasz.
+> - Wiadomości zidentyfikowane jako złośliwe oprogramowanie lub wyłudzanie informacji o wysokiej pewności są zawsze pod kwarantanną niezależnie od opcji listy bezpiecznych nadawców, z których korzystasz. Aby uzyskać więcej informacji, zobacz [Domyślnie bezpieczne w aplikacji Office 365](secure-by-default.md).
 >
-> - Uważaj, aby dokładnie monitorować *wyjątki* od filtrowania spamu za pomocą list bezpiecznych nadawców.
+> - Uważaj, aby dokładnie monitorować _wyjątki_ od filtrowania spamu za pomocą list bezpiecznych nadawców.
 >
 > - Listy bezpiecznych nadawców mogą pomóc w przypadku wyników fałszywie dodatnich (dobra wiadomość e-mail oznaczona jako zła), jednak należy rozważyć użycie list bezpiecznych nadawców jako tymczasowego rozwiązania, w miarę możliwości których należy unikać. Nie zalecamy zarządzania wyników fałszywie dodatnich za pomocą list bezpiecznych nadawców, ponieważ wyjątki od filtrowania spamu mogą otworzyć Twoją organizację na fałszowanie i inne ataki. Jeśli korzystasz z listy bezpiecznych nadawców do zarządzania wynikami fałszywie dodatnimi, musisz mieć ten temat na bieżąco i przygotować wiadomości i pliki do firmy [Microsoft](report-junk-email-messages-to-microsoft.md) .
 >
-> - Aby zezwolić domenie na wysyłanie nieuwierzytowanych wiadomości e-mail (pomijanie ochrony przed fałszowaniem), ale bez pomijania testów ochrony przed spamem i złośliwym oprogramowaniem, możesz użyć szczegółowych informacji o [fałszerce](learn-about-spoof-intelligence.md) oraz listy zezwalania [/](tenant-allow-block-list.md)blokowania dzierżaw.
+> - Aby zezwolić domenie na wysyłanie nieuwierzytanych wiadomości e-mail (pomijanie ochrony przed fałszowaniem), ale bez pomijania ochrony przed spamem [](learn-about-spoof-intelligence.md) i innymi zabezpieczeniami, możesz użyć szczegółowych informacji o analizie fałszowania oraz listy zezwalania[/](tenant-allow-block-list.md)blokowania dzierżawy.
 >
 > - Usługa EOP Outlook sprawdzić różne właściwości wiadomości w celu określenia nadawcy wiadomości. Aby uzyskać więcej informacji, zobacz [sekcję Uwagi dotyczące zbiorczego poczty e-mail](#considerations-for-bulk-email) w dalszej części tego artykułu.
 >
@@ -82,7 +82,7 @@ W poniższym przykładzie przyjęto, że aby pominąć filtrowanie spamu, contos
 
    > [!IMPORTANT]
    >
-   > - Nigdy nie konfiguruj reguł przepływu *poczty e-mail* tylko z domeną nadawcy jako warunek, aby pominąć filtrowanie spamu. Spowoduje to znaczne  zwiększenie prawdopodobieństwa spoofingu wysyłającej domeny (lub podszywania się pod pełny adres e-mail), pominięcia wszystkich filtrów spamu i pominięcia testów uwierzytelniania nadawcy w celu wysłania wiadomości do skrzynki odbiorczej adresata.
+   > - Nigdy nie konfiguruj reguł przepływu _poczty e-mail_ tylko z domeną nadawcy jako warunek, aby pominąć filtrowanie spamu. Spowoduje to znaczne  zwiększenie prawdopodobieństwa spoofingu wysyłającej domeny (lub podszywania się pod pełny adres e-mail), pominięcia wszystkich filtrów spamu i pominięcia testów uwierzytelniania nadawcy w celu wysłania wiadomości do skrzynki odbiorczej adresata.
    >
    > - Nie używaj domen, które posiadasz (nazywanych również zaakceptowanych domen) ani popularnych domen (na przykład microsoft.com) jako warunków w zasadach przepływu poczty e-mail. Takie działania są uznawane za bardzo ryzykowne, ponieważ stwarza możliwość wysyłania przez atakujących wiadomości e-mail, które w przeciwnym razie zostaną odfiltrowane.
    >
@@ -138,7 +138,7 @@ Maksymalne ograniczenie dla tych list wynosi około 1000 wpisów. jednak w porta
 
 ## <a name="considerations-for-bulk-email"></a>Zagadnienia dotyczące zbiorczej poczty e-mail
 
-Standardowa wiadomość e-mail SMTP składa się z *koperty* wiadomości i jej zawartości. Koperta wiadomości zawiera informacje wymagane do przekazywania i dostarczania wiadomości między serwerami SMTP. Zawartość wiadomości zawiera pola nagłówka wiadomości (zbiorczo *nazywane nagłówkiem* wiadomości) i treść wiadomości. Koperta wiadomości jest opisana w dokumencie RFC 5321, a nagłówek wiadomości jest opisany w dokumencie RFC 5322. Adresaci nigdy nie widzą rzeczywistej koperty wiadomości, ponieważ jest generowana przez proces transmisji wiadomości i w rzeczywistości nie jest ona częścią wiadomości.
+Standardowa wiadomość e-mail SMTP składa się z _koperty_ wiadomości i jej zawartości. Koperta wiadomości zawiera informacje wymagane do przekazywania i dostarczania wiadomości między serwerami SMTP. Zawartość wiadomości zawiera pola nagłówka wiadomości (zbiorczo _nazywane nagłówkiem_ wiadomości) i treść wiadomości. Koperta wiadomości jest opisana w dokumencie RFC 5321, a nagłówek wiadomości jest opisany w dokumencie RFC 5322. Adresaci nigdy nie widzą rzeczywistej koperty wiadomości, ponieważ jest generowana przez proces transmisji wiadomości i w rzeczywistości nie jest ona częścią wiadomości.
 
 - Adres `5321.MailFrom` (znany także jako adres **MAIL FROM** , nadawca P1 lub nadawca koperty) to adres e-mail używany w transmisji SMTP wiadomości. Ten adres e-mail jest zwykle rejestrowany w polu nagłówka **return-ścieżka** w nagłówku wiadomości (chociaż nadawca może wyznaczyć inny adres **e-mail** ze ścieżką zwrotną). Jeśli nie można dostarczyć wiadomości, jest ona adresatem raportu o niedostarczeniu (nazywanego również wiadomością o niedostarczeniu lub wiadomością odsuń).
 - Nadawca `5322.From` (nazywany również nadawcą Od lub P2) jest adresem e-mail w polu  nagłówka Od i jest adresem e-mail nadawcy wyświetlanym w klientach poczty e-mail.

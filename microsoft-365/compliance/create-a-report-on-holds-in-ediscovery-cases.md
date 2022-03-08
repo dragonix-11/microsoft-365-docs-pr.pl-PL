@@ -1,5 +1,5 @@
 ---
-title: Tworzenie raportu na temat zbierania elektronicznych materiałów dowodowych
+title: Tworzenie raportu zbierania elektronicznych materiałów dowodowych za pomocą skryptu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,16 +20,16 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak wygenerować raport zawierający informacje o wszystkich rekordach, które są skojarzone ze sprawami zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 953b2aaa1b133d79b82f17e5f75603947cc5d6d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 568d4fa351879d271004d0f0749881f3de4b4a49
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987783"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319479"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Tworzenie raportu na temat zbierania elektronicznych materiałów dowodowych
+# <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Tworzenie raportu o zbierania elektronicznych materiałów dowodowych za pomocą skryptu
 
-Skrypt w tym artykule pozwala administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych wygenerować raport zawierający informacje o wszystkich rekordach, które są skojarzone ze sprawami zbierania elektronicznych materiałów dowodowych w centrum zgodności w programie Office 365 lub Microsoft 365. Raport zawiera informacje, takie jak nazwa sprawy, z którym jest skojarzona sprawa, lokalizacje zawartości umieszczone w hold czy też są oparte na kwerendach. Jeśli istnieją przypadki, w których nie ma żadnych blokady, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
+Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych wygenerowanie raportu zawierającego informacje o wszystkich blokadych, które są skojarzone z sprawami podstawowymi i Advanced eDiscovery spraw w Centrum zgodności platformy Microsoft 365. Raport zawiera informacje, takie jak nazwa sprawy, z którym jest skojarzona sprawa, lokalizacje zawartości umieszczone w hold czy też są oparte na kwerendach. Jeśli istnieją przypadki, w których nie ma żadnych blokady, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
 
 Zobacz [sekcję Więcej](#more-information) informacji, aby uzyskać szczegółowy opis informacji zawartych w raporcie.
 
@@ -61,12 +61,13 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
    " "
    #prompt users to specify a path to store the output files
    $time=get-date
-   $Path = Read-Host 'Enter a file path to save the report to a .csv file'
+   $Path = Read-Host 'Enter a folder path to save the report to a .csv file (filename is created automatically)'
    $outputpath=$Path+'\'+'CaseHoldsReport'+' '+$time.day+'-'+$time.month+'-'+$time.year+' '+$time.hour+'.'+$time.minute+'.csv'
    $noholdsfilepath=$Path+'\'+'CaseswithNoHolds'+' '+$time.day+'-'+$time.month+'-'+$time.year+' '+$time.hour+'.'+$time.minute+'.csv'
    #add case details to the csv file
    function add-tocasereport{
    Param([string]$casename,
+   [String]$casetype,
    [String]$casestatus,
    [datetime]$casecreatedtime,
    [string]$casemembers,
@@ -84,6 +85,7 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
    )
    $addRow = New-Object PSObject
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case name" -Value $casename
+   Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case type" -Value $casetype
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case status" -Value $casestatus
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case members" -Value $casemembers
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case created time" -Value $casecreatedtime
@@ -98,12 +100,12 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Hold query" -Value $ContentMatchQuery
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Hold created time (UTC)" -Value $holdcreatedtime
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Hold changed time (UTC)" -Value $holdchangedtime
-   $allholdreport = $addRow | Select-Object "Case name","Case status","Hold name","Hold enabled","Case members", "Case created time","Case closed time","Case closed by","Exchange locations","SharePoint locations","Hold query","Hold created by","Hold created time (UTC)","Hold last changed by","Hold changed time (UTC)"
+   $allholdreport = $addRow | Select-Object "Case name","Case type","Case status","Hold name","Hold enabled","Case members", "Case created time","Case closed time","Case closed by","Exchange locations","SharePoint locations","Hold query","Hold created by","Hold created time (UTC)","Hold last changed by","Hold changed time (UTC)"
    $allholdreport | export-csv -path $outputPath -notypeinfo -append -Encoding ascii
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of cases and holds..."
+   write-host "Gathering a list of Core eDiscovery cases and holds..."
    " "
    $edc =Get-ComplianceCase -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -112,7 +114,7 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
    if($cc.status -eq 'Closed')
    {
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
-   add-tocasereport -casename $cc.name -casestatus $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   add-tocasereport -casename $cc.name -casetype $cc.casetype -casestatus $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
    }
    else{
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
@@ -122,7 +124,38 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
    foreach ($policy in $policies)
    {
    $rule=Get-CaseHoldRule -Policy $policy.name
-   add-tocasereport -casename $cc.name -casemembers $cmembers -casestatus $cc.Status -casecreatedtime $cc.CreatedDateTime -holdname $policy.name -holdenabled $policy.enabled -holdcreatedby $policy.CreatedBy -holdlastmodifiedby $policy.LastModifiedBy -ExchangeLocation (($policy.exchangelocation.name)-join ';') -SharePointLocation (($policy.sharePointlocation.name)-join ';') -ContentMatchQuery $rule.ContentMatchQuery -holdcreatedtime $policy.WhenCreatedUTC -holdchangedtime $policy.WhenChangedUTC
+   add-tocasereport -casename $cc.name -casetype $cc.casetype -casemembers $cmembers -casestatus $cc.Status -casecreatedtime $cc.CreatedDateTime -holdname $policy.name -holdenabled $policy.enabled -holdcreatedby $policy.CreatedBy -holdlastmodifiedby $policy.LastModifiedBy -ExchangeLocation (($policy.exchangelocation.name)-join ';') -SharePointLocation (($policy.sharePointlocation.name)-join ';') -ContentMatchQuery $rule.ContentMatchQuery -holdcreatedtime $policy.WhenCreatedUTC -holdchangedtime $policy.WhenChangedUTC
+   }
+   }
+   else{
+   write-host "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
+   " "
+   [string]$cc.name | out-file -filepath $noholdsfilepath -append
+   }
+   }
+   }
+   #get information on the cases and pass values to the case report function
+   " "
+   write-host "Gathering a list of Advanced eDiscovery cases and holds..."
+   " "
+   $edc =Get-ComplianceCase -CaseType Advanced -ErrorAction SilentlyContinue
+   foreach($cc in $edc)
+   {
+   write-host "Working on case :" $cc.name
+   if($cc.status -eq 'Closed')
+   {
+   $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
+   add-tocasereport -casename $cc.name -casestatus -casetype $cc.casetype $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   }
+   else{
+   $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
+   $policies = Get-CaseHoldPolicy -Case $cc.Name | %{ Get-CaseHoldPolicy $_.Name -Case $_.CaseId -DistributionDetail}
+   if ($policies -ne $NULL)
+   {
+   foreach ($policy in $policies)
+   {
+   $rule=Get-CaseHoldRule -Policy $policy.name
+   add-tocasereport -casename $cc.name -casetype $cc.casetype -casemembers $cmembers -casestatus $cc.Status -casecreatedtime $cc.CreatedDateTime -holdname $policy.name -holdenabled $policy.enabled -holdcreatedby $policy.CreatedBy -holdlastmodifiedby $policy.LastModifiedBy -ExchangeLocation (($policy.exchangelocation.name)-join ';') -SharePointLocation (($policy.sharePointlocation.name)-join ';') -ContentMatchQuery $rule.ContentMatchQuery -holdcreatedtime $policy.WhenCreatedUTC -holdchangedtime $policy.WhenChangedUTC
    }
    }
    else{
@@ -167,6 +200,8 @@ Po na połączeniu z programem PowerShell w Centrum zabezpieczeń & zgodności n
 Raport o przypadku utworzony po uruchomieniu skryptu w tym artykule zawiera następujące informacje o poszczególnych blokadych. Jak już wyjaśniono, musisz być administratorem zbierania elektronicznych materiałów dowodowych, aby zwracać informacje o wszystkich blokadych w organizacji. Aby uzyskać więcej informacji na temat zbierania spraw, zobacz [Sprawy zbierania elektronicznych materiałów dowodowych](./get-started-core-ediscovery.md).
 
 - Nazwa przechowywania i nazwa sprawy zbierania elektronicznych materiałów dowodowych, z tą sprawą jest skojarzona.
+
+- Czy to wstrzymywanie jest skojarzone z bazą danych, Advanced eDiscovery przypadku.
 
 - Czy sprawa zbierania elektronicznych materiałów dowodowych jest aktywna, czy zamknięta.
 

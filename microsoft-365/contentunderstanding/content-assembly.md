@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak automatycznie tworzyć dokumenty i inną zawartość przy użyciu zestawu zawartości w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: 9f8a02a845afa93282158051eb746e0cb9a0171d
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: f2e8c601e8a7242524cb323d099975f6600cce05
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010401"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318889"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Tworzenie dokumentów przy użyciu zestawu zawartości w aplikacji Microsoft SharePoint Syntex
 
@@ -150,7 +150,7 @@ Możesz użyć opublikowanego *nowoczesnego* szablonu, aby szybko tworzyć podob
       - Autowypełnianie wartości zastępczych, jeśli mogą jednoznacznie identyfikować rekord dla symboli zastępczych skojarzonych z tą samą listą.
 
 > [!NOTE]
-> - Obecnie tworzenie szablonu Microsoft Word obsługiwane .docx (rozszerzenie projektu). Przed przekazaniem dokumentu upewnij się, że w dokumencie programu Word nie jest **włączone śledzenie zmian** ani komentarze. Jeśli dokument zawiera symbole zastępcze tekstu dla obrazów, upewnij się, że nie są one zawinięte.
+> - Obecnie tworzenie szablonu Microsoft Word obsługiwane .docx (rozszerzenie projektu). Przed przekazaniem dokumentu upewnij się, że w dokumencie programu Word nie jest **włączone śledzenie zmian** ani komentarze. Jeśli dokument zawiera symbole zastępcze tekstu dla obrazów, upewnij się, że nie są one zawinięte. Obecnie nie obsługujemy **kontrolek zawartości w** programie Word. Jeśli chcesz utworzyć szablon na podstawie dokumentu programu Word z kontrolkami zawartości, usuń je przed utworzeniem nowoczesnego szablonu.
 >- Szablon i dokument są skojarzone z jedną biblioteką dokumentów. Aby użyć szablonu w innej bibliotece dokumentów, należy ponownie utworzyć szablon w tej bibliotece dokumentów.
 >- Przekazany dokument użyty do utworzenia nowoczesnego szablonu zostanie zapisany jako oddzielna kopia i umieszczona w katalogu /forms biblioteki dokumentów. Nie ma to wpływu na oryginalny plik na dysku.
 >- Symbole zastępcze można tworzyć tylko dla tekstu. Obecnie obrazy, grafiki smartart, tabele i listy punktorów nie są obsługiwane.

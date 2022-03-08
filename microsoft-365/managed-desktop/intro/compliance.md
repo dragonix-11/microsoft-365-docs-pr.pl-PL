@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d34807d20f0b203efb3d45b6fe45eddce632e275
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 2606b6c241b364464b4c6f205a3beb13af50a814
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "63026810"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320385"
 ---
 # <a name="compliance"></a>Zgodność
 
@@ -39,10 +39,9 @@ Microsoft Managed Desktop uzyskał następujące certyfikaty:
 - [Hipaa (Health Insurance Portability and Accountability Act)](/compliance/regulatory/offering-hipaa-hitech)
 - [Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)](/compliance/regulatory/offering-hitrust)
 
-
 ## <a name="auditor-reports-and-compliance-certificates"></a>Raporty audytora i certyfikaty zgodności
 
-Odpowiednie informacje, w tym wymagania techniczne i kontroli, można znaleźć w Portalu zaufania usług [(STP, Service Trust Portal](https://servicetrust.microsoft.com/)), centralnym repozytorium na takie informacje o ofertach usług firmy Microsoft w chmurze. Raporty audytorów, certyfikaty zgodności i inne informacje możesz pobrać z sekcji [Raporty](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) inspekcji w UC.
+Odpowiednie informacje, w tym dotyczące kontroli i wymagań technicznych, można znaleźć w Portalu zaufania usług [(STP](https://servicetrust.microsoft.com/)). Ten portal jest centralnym repozytorium na takie informacje o ofertach usług firmy Microsoft w chmurze. Raporty audytorów, certyfikaty zgodności i inne informacje możesz pobrać z sekcji [Raporty](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) inspekcji w UC.
 
 > [!NOTE]
 > Ponieważ Microsoft Managed Desktop na platformie Azure, odpowiednie dokumenty zwykle mają nazwy plików, takie jak "Microsoft Azure, Dynamics 365 i inne usługi online". W tych dokumentach zazwyczaj można Microsoft Managed Desktop w kategorii "Microsoft Online Services" lub "Monitorowanie + zarządzanie".

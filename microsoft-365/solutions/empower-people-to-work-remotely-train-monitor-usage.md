@@ -2,8 +2,8 @@
 title: Krok 6. Szkolenie pracowników i korzystanie z opinii na temat użycia
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Szkolenie użytkowników i zapewnianie szybkiego zajmowania się problemami.
-ms.openlocfilehash: ed2b1ab30de5c7c2a808a78ce99727e6e77e6e63
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cb9fa844a9359318d4458fc8f800f834fd9e6f02
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63028087"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314031"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Krok 6. Szkolenie pracowników i korzystanie z opinii na temat użycia
 

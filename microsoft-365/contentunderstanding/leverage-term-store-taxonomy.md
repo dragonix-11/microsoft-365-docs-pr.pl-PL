@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Taksonomia magazynu okresów jest używaj podczas tworzenia wyodrębnianego w dokumencie modelu rozumienia w programie Microsoft SharePoint Syntex.
-ms.openlocfilehash: dd064a1e93692f79b5cfc5417b0b5b09df09c9fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 909f26026ddf26163a12e1d14c1790f4af93a160
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986650"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328809"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Wykorzystaj taksonomię magazynu terminów podczas tworzenia wyodrębnianego programu w aplikacji Microsoft SharePoint Syntex
 
@@ -36,7 +37,7 @@ Na przykład model identyfikuje i klasyfikuje wszystkie dokumenty kontraktu,  kt
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Używanie kolumny zarządzanych metadanych w wyodrębniarze
 
-Zestawy okresów są konfigurowane w magazynie terminów usług zarządzanych metadanych (MMS, Managed Metadata services) w centrum SharePoint administracyjnego. W poniższym przykładzie zestaw terminów *usług* [kontraktowych](/sharepoint/managed-metadata#term-set) jest skonfigurowany tak, aby zawierał kilka terminów, w tym *Creative*.  Szczegóły tego terminu wskazują, że ten termin ma trzy synonimy *(Projektowanie**, Grafika* i *Topografia*), a synonimy należy przetłumaczyć *na creative*. 
+Zestawy okresów są konfigurowane w magazynie terminów usług zarządzanych metadanych (MMS, Managed Metadata services) w centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint administracyjnego</a>. W poniższym przykładzie zestaw terminów *usług* [kontraktowych](/sharepoint/managed-metadata#term-set) jest skonfigurowany tak, aby zawierał kilka terminów, w tym *Creative*.  Szczegóły tego terminu wskazują, że ten termin ma trzy synonimy *(Projektowanie**, Grafika* i *Topografia*), a synonimy należy przetłumaczyć *na creative*. 
 
    ![Zestaw okresów.](../media/content-understanding/term-store.png)</br>
 

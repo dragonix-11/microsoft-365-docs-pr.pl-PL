@@ -8,17 +8,18 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.custom: admindeeplinkSPO
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak utworzyć centrum zawartości w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: e44ed9433562bdfe8da471bd08c4711bc405b92d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0bab102ae440b8cf2c797458e7602c61794d0d06
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988338"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311595"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Tworzenie centrum zawartości w aplikacji Microsoft SharePoint Syntex
 
@@ -46,7 +47,7 @@ Administrator SharePoint może utworzyć witrynę centrum zawartości, tak jak k
 
 Aby utworzyć nowe centrum zawartości:
 
-1. Na stronie centrum administracyjne platformy Microsoft 365 przejdź do strony SharePoint [witryny aktywne **w** centrum administracyjnym](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true).
+1. Na stronie centrum administracyjne platformy Microsoft 365 przejdź do centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">administracyjnego usługi SharePoint w > **aktywne witryny**</a>.
 
 2. Na stronie **Aktywne witryny** kliknij pozycję **Utwórz**, a następnie wybierz pozycję **Inne opcje**.
 
@@ -59,7 +60,7 @@ Aby utworzyć nowe centrum zawartości:
 
 5. Wybierz **pozycję Gotowe**.
  
-Po utworzeniu witryny centrum zawartości będzie ona wymieniona na stronie Aktywne witryny w  centrum SharePoint administracyjnego. 
+Po utworzeniu witryny centrum zawartości będzie ona wymieniona w pozycji Aktywne <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**witryny w centrum**</a> SharePoint administracyjnego. 
 
 ### <a name="give-access-to-additional-users"></a>Daj dostęp dodatkowym użytkownikom
  

@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: d367ba004af6a34d0c92badd9b711556149bd8c1
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 45ee1aed2d33ba0f687c6ec74c01c2b739ef02f7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "63009740"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327801"
 ---
 # <a name="change-the-device-profile"></a>Zmienianie profilu urządzenia
 

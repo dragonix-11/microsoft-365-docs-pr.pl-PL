@@ -2,8 +2,8 @@
 title: Wprowadzanie klucza produktu zakupionego w programie Microsoft Open
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: Dowiedz się, jak aktywować, odnowić lub dodać licencje do subskrypcji usługi Microsoft 365 dla firm.
 ms.date: 10/21/2020
-ms.openlocfilehash: a967bd1cebdf33850d632779835f97d6fac4cbf0
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 3ed0d47587d04b4058b878ec938a216a0083f36b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009833"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330177"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Wprowadzanie klucza produktu zakupionego w programie Microsoft Open
 

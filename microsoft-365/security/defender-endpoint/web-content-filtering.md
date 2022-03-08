@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2bf43507b624cc1dae78534d579d01c1f2cef096
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 14d45f4ac22a9707b380d817cb89da1bbee562e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997289"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326513"
 ---
 # <a name="web-content-filtering"></a>Filtrowanie zawartości sieci Web
 
@@ -248,6 +248,8 @@ Użyj filtru zakresu czasu w lewym górnym rogu strony, aby wybrać przedział c
 ### <a name="known-issues-and-limitations"></a>Znane problemy i ograniczenia
 
 Obsługiwane Microsoft Edge tylko wtedy, gdy konfiguracją systemu operacyjnego Twojego urządzenia jest serwer (**cmd** \> **Systeminfo** \> **OS Configuration**). Ochrona sieci jest obsługiwana tylko w trybie inspekcji na urządzeniach z systemem Server, który jest odpowiedzialny za zabezpieczanie ruchu we wszystkich obsługiwanych przeglądarkach innych firm.
+
+Obsługiwane Microsoft Edge i ochrona sieci nie jest obsługiwana na Windows 10 hostach wielosektapowych pulpitu wirtualnego Azure.
 
 Ochrona sieci obecnie nie obsługuje inspekcji SSL, co może powodować, że niektóre witryny będą dozwolone przez filtrowanie zawartości sieci Web, które zwykle byłoby zablokowane. Witryny mogą być dozwolone ze względu na brak widoczności w zaszyfrowanym ruchu po zakończeniu uściślenia TLS i braku możliwości analizowania niektórych przekierowywania.  Dotyczy to przekierowywania z niektórych internetowych stron logowania poczty do strony skrzynki pocztowej. Jako zaakceptowane obejście możesz utworzyć niestandardowy wskaźnik blokowania dla strony logowania, aby upewnić się, że żaden użytkownik nie będzie mógł uzyskać dostępu do witryny. Pamiętaj, że może to zablokować im dostęp do innych usług skojarzonych z tą samą witryną internetową. 
 

@@ -2,8 +2,8 @@
 title: Przeprowadzanie przejęcia administratora wewnętrznego
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Dowiedz się, jak zweryfikować własność domeny i poczty e-mail, aby przejąć niezamówione konto utworzone przez użytkownika samoobsługowego, który utworzył konto w usłudze Microsoft 365.
-ms.openlocfilehash: 1201ea967fb829e43433cb5ed49f073b1d862728
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 06197bb5326cbd19fcd9174554007577e7086dc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019270"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320161"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Przeprowadzanie przejęcia administratora wewnętrznego
 

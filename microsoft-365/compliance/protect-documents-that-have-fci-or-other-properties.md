@@ -19,13 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkSPO
 description: Dowiedz się, jak używać zasad ochrony przed utratą danych (DLP, Data Loss Prevention) w celu ochrony dokumentów, które mają właściwości z systemu innej firmy.
-ms.openlocfilehash: fb8e1474666f016af3f6169f1a1d8d490a36f3c7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0bfb520119717d952a803e0f37fef0a1499ff0da
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987771"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312157"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Tworzenie zasad DLP w celu ochrony dokumentów za pomocą fci lub innych właściwości
 
@@ -47,7 +48,7 @@ Jeśli chcesz zastosować zasady DLP do zawartości z określonymi etykietami Mi
 
 ## <a name="before-you-create-the-dlp-policy"></a>Przed utworzeniem zasad DLP
 
-Aby można było używać właściwości Windows Server FCI lub innej właściwości w zasadach DLP, należy utworzyć właściwość zarządzaną w centrum SharePoint administracyjnego. Oto dlaczego.
+Aby można było używać właściwości Windows Server FCI lub innej właściwości w zasadach DLP, należy utworzyć właściwość zarządzaną w centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint administracyjnego</a>. Oto dlaczego.
 
 W SharePoint w trybie online OneDrive dla Firm indeks wyszukiwania jest wbudowany przez przeszukiwanie zawartości witryn. Przeszukiwarka wybiera zawartość i metadane z dokumentów w formie właściwości przeszukanych. Schemat wyszukiwania pomaga przeszukiwarce zdecydować, jaką zawartość i które metadane wybrać. Przykładami metadanych są autor i tytuł dokumentu. Jednak aby pobrać zawartość i metadane z dokumentów do indeksu wyszukiwania, trzeba zamapować właściwości przeszukane na właściwości zarządzane. W indeksie są przechowywane tylko właściwości zarządzane. Na przykład właściwość przeszukana związana z autorem jest mapowana na właściwość zarządzaną związaną z autorem.
 
@@ -66,7 +67,7 @@ Najpierw musisz przekazać dokument z właściwością, do której chcesz się o
 
 1. Zaloguj się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjnego usługi Microsoft 365</a>.
 
-2. W lewym okienku nawigacji wybierz pozycję **Centra administracyjne** \> **SharePoint**. Jesteś teraz w centrum administracyjnym usługi SharePoint.
+2. W lewym okienku nawigacji wybierz pozycję **Centra administracyjne** \> **SharePoint**. Jesteś teraz w centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">administracyjnym SharePoint</a>.
 
 3. W lewym okienku nawigacji wybierz pozycję **wyszukaj** \> na stronie **administracji wyszukiwania** Zarządzaj \> **schematem wyszukiwania**.
 

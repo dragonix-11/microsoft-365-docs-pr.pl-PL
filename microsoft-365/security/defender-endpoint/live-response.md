@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bc7b18088d25e47cd214da2df94ff5eb524f2e78
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013393"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315977"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Badanie jednostek na urządzeniach przy użyciu funkcji odpowiedzi na żywo
 
@@ -221,7 +221,7 @@ W scenariuszach, w których chcesz uzyskać plik z urządzenia, które badasz, m
 > Obowiązują następujące limity rozmiarów plików:
 >
 > - `getfile` limit: 3 GB
-> - `fileinfo` limit: 10 GB
+> - `fileinfo` limit: 30 GB
 > - `library` Limit: 250 MB
 
 ### <a name="download-a-file-in-the-background"></a>Pobieranie pliku w tle
@@ -351,6 +351,7 @@ Wybierz **kartę Dziennik poleceń** , aby wyświetlić polecenia używane na ur
 
 - Sesje odpowiedzi na żywo są ograniczone do 25 sesji odpowiedzi na żywo jednocześnie.
 - Nieaktywny limit czasu sesji na żywo wynosi 30 minut.
+- Poszczególne polecenia odpowiedzi na żywo mają limit czasu 10 minut, `getfile`z wyjątkiem , `findfile`i `run`, które mają limit 30 minut.
 - Użytkownik może zainicjować do 10 jednoczesnych sesji.
 - Urządzenie może być w jednej sesji na raz.
 - Obowiązują następujące limity rozmiarów plików:

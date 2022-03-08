@@ -3,8 +3,8 @@ title: Przeglądanie działań naprawczych i zarządzanie nimi w programie Micro
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -20,12 +20,12 @@ description: Dowiedz się więcej o działaniach naprawczych w zakresie zautomat
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: bc8c99a547e4f30e10575e8353afd6ca02bf233b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 35e9293fa83b86fb80c1c907fbf3a0769e323503
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021259"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318623"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Przeglądanie działań naprawczych w programie Office 365
 

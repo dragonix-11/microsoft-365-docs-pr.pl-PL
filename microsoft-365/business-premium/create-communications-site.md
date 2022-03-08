@@ -18,17 +18,18 @@ ms.custom:
 - Adm_O365
 - MiniMaven
 - MSB365
+- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Dowiedz się, dlaczego i jak utworzyć witrynę SharePoint komunikacji dla kampanii lub firmy z firmami Microsoft 365.
-ms.openlocfilehash: 8e65a508a215049279834b553bba09422375aa59
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d2634f8793c142cc34d6c1708481aa8e4df3184b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011284"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326331"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>Tworzenie witryny komunikacji w programie SharePoint
 
@@ -64,4 +65,4 @@ Dowiedz się [wszystkiego na temat witryn komunikacji](https://support.office.co
 
 ## <a name="admin-settings"></a>Ustawienia administratora
 
-Jeśli nie widzisz linku **+** Utwórz witrynę, samoobsługowe tworzenie witryn może nie być dostępne w Microsoft 365. Aby utworzyć witrynę zespołu, skontaktuj się z osobą administruną Microsoft 365 organizacji. Jeśli jesteś administratorem usługi Microsoft 365, zobacz Zarządzanie tworzeniem witryn w usłudze [SharePoint Online](/sharepoint/manage-site-creation), aby włączyć samoobsługowe tworzenie witryn dla organizacji, lub Zarządzanie witrynami w nowym centrum administracyjnym usługi [SharePoint](/sharepoint/manage-sites-in-new-admin-center), aby utworzyć witrynę z centrum administracyjnego usługi SharePoint Online.
+Jeśli nie widzisz linku **+** Utwórz witrynę, samoobsługowe tworzenie witryn może nie być dostępne w Microsoft 365. Aby utworzyć witrynę zespołu, skontaktuj się z osobą administruną Microsoft 365 organizacji. Jeśli jesteś administratorem usługi Microsoft 365, zobacz Zarządzanie tworzeniem witryn w usłudze [SharePoint Online](/sharepoint/manage-site-creation), aby włączyć samoobsługowe tworzenie witryn dla organizacji, lub Zarządzanie witrynami w nowym centrum administracyjnym programu [SharePoint](/sharepoint/manage-sites-in-new-admin-center), aby utworzyć witrynę z centrum administracyjnego usługi <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a>.

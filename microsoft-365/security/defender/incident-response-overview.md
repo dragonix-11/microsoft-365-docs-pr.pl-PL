@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66f98d8de585d8b92fad50f70ad812b861d9202
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: c54d2989941d5c91cc2626941af36cf6cdf205ce
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015384"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329561"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Badanie i odpowiadanie za pomocą Microsoft 365 Defender
 

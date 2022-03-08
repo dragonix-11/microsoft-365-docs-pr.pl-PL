@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Plan zarządzania plikami zapewnia zaawansowane funkcje zarządzania etykietami przechowywania.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 464cbe5af7ea08755ec3d49949d4707448566b27
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 2e028bae676b949c662a86178bac5e8ccdc557bf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010626"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317713"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Tworzenie etykiet przechowywania i zarządzanie nimi przy użyciu planu plików
 
@@ -117,9 +117,9 @@ Po wybraniu **przycisku** Wybierz dla każdego z tych opcjonalnych deskryptorów
 
 1. Na stronie **Plan plików** wybierz pozycję **+ Utwórz etykietęWklejanie** >  **pliku**
 
-2. Postępuj zgodnie z monitami w procesie konfiguracji.
+2. Postępuj zgodnie z monitami w procesie konfiguracji. Należy zachować ostrożność przy wybieranej nazwie, ponieważ po zapisaniu etykiety nie można jej zmienić.
     
-    
+    Aby uzyskać więcej informacji o ustawieniach przechowywania, [zobacz Ustawienia zachowywania i usuwania zawartości](retention-settings.md#settings-for-retaining-and-deleting-content).
     
     Aby użyć etykiety przechowywania w celu deklarowania rekordów, wybierz pozycję Oznacz elementy jako **rekordy** lub **Oznacz elementy jako rekordy prawne**. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet przechowywania w celu deklarowania rekordów](declare-records.md#configuring-retention-labels-to-declare-records).
 

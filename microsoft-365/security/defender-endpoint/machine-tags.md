@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d4e429ca851a21c3ad4863d11dd90d7223d9c6b3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 65df8553f5ee3b7dd7876557398e0d4aa22c7bd5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "62996743"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323531"
 ---
 # <a name="create-and-manage-device-tags"></a>Tworzenie tagów urządzeń i zarządzanie nimi
 
@@ -31,7 +31,7 @@ ms.locfileid: "62996743"
 
 > Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Dodaj tagi na urządzeniach, aby utworzyć logiczną przynależność do grupy. Tagi urządzeń obsługują prawidłowe mapowanie sieci, pozwalając na dołączanie różnych tagów w celu przechwycenia kontekstu i umożliwienia dynamicznego tworzenia listy w ramach zdarzenia. Tagi mogą być używane jako filtr **w widoku listy** Urządzenia lub do grupowania urządzeń. Aby uzyskać więcej informacji na temat grupowania urządzeń, zobacz [Tworzenie grup urządzeń i zarządzanie nimi](machine-groups.md).
+Dodaj tagi na urządzeniach, aby utworzyć logiczną przynależność do grupy. Tagi urządzeń obsługują prawidłowe mapowanie sieci, pozwalając na dołączanie różnych tagów w celu przechwycenia kontekstu i umożliwienia dynamicznego tworzenia listy w ramach zdarzenia. Tagi mogą być używane jako filtr **w widoku Spis** urządzeń lub do grupowania urządzeń. Aby uzyskać więcej informacji na temat grupowania urządzeń, zobacz [Tworzenie grup urządzeń i zarządzanie nimi](machine-groups.md).
 
 Tagi na urządzeniach można dodawać w następujący sposób:
 
@@ -49,12 +49,12 @@ Aby dodać tagi urządzeń przy użyciu interfejsu API, zobacz [Dodawanie lub us
 
    - **Pulpit nawigacyjny operacji zabezpieczeń** — wybierz nazwę urządzenia w sekcji Naj górne urządzenia z aktywnymi alertami.
    - **Kolejka alertów** - z kolejki alertów wybierz nazwę urządzenia obok ikony urządzenia.
-   - **Lista urządzeń** - wybierz nazwę urządzenia z listy urządzeń.
+   - **Spis urządzeń** — wybierz nazwę urządzenia z listy urządzeń.
    - **Pole wyszukiwania** - wybierz pozycję Urządzenie z menu rozwijanego i wprowadź nazwę urządzenia.
 
      Możesz również przejść do strony alertu za pośrednictwem widoków plików i adresów IP.
 
-2. Wybierz pozycję **Zarządzaj tagami** z wiersza akcji odpowiedzi.
+2. Wybierz **pozycję Zarządzaj tagami** w wierszu Akcje odpowiedzi.
 
     :::image type="content" alt-text="Obraz przycisku Zarządzaj tagami." source="images/manage-tags-option.png":::
 
@@ -62,7 +62,7 @@ Aby dodać tagi urządzeń przy użyciu interfejsu API, zobacz [Dodawanie lub us
 
     :::image type="content" alt-text="Obraz dodawania tagów na urządzeniu1." source="images/create-new-tag.png":::
 
-Tagi są dodawane do widoku urządzenia i będą również odzwierciedlane w widoku **listy** Urządzenia. Następnie możesz użyć **filtru Tagi** , aby wyświetlić odpowiednią listę urządzeń.
+Tagi są dodawane do widoku urządzenia i będą również odzwierciedlane w widoku **zapasów** Urządzeń. Następnie możesz użyć **filtru Tagi** , aby wyświetlić odpowiednią listę urządzeń.
 
 > [!NOTE]
 > Filtrowanie może nie działać w przypadku nazw tagów zawierających nawiasy.

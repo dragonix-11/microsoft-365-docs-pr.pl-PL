@@ -27,16 +27,19 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Poznaj różne stany urządzeń na liście Akcje urządzenia w administracyjnym stronie głównej usługi Microsoft 365 dla firm.
-ms.openlocfilehash: c70740077e42d2dc7b8b15ac7e563d8e245ac455
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 798a753f6d523a3f586ac32698cda80a127c44b5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984088"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313821"
 ---
 # <a name="device-states"></a>Stany urządzeń
 
 Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 Urządzenia znajdujące się na liście **Akcje urządzenia** (Administrator  strona główna \> **Akcje urządzenia**) mogą mieć następujące stany.
   
@@ -57,3 +60,7 @@ Urządzenia znajdujące się na liście **Akcje urządzenia** (Administrator  
 |Oczekiwanie na usunięcie  <br/> |Trwa oczekiwanie na akcję usuwania.  <br/> |
 |Odnaleziono  <br/> |Microsoft 365 Business Premium wykrył urządzenie.  <br/> |
    
+
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

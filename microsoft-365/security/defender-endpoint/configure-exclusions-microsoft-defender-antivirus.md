@@ -14,15 +14,13 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: 5a26951535b6e2197d8ada45b2108e62f15fda03
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 6ef9cfcec1c54cf9754d7152c098d7ef5b67b456
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63009579"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330555"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Konfigurowanie i weryfikowanie wykluczeń Program antywirusowy Microsoft Defender skanowania
 

@@ -2,13 +2,13 @@
 title: Połączenie rekordy DNS w witrynie Wix to Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, usługi Skype dla firm Online i innych usług w witrynie Wix dla Microsoft.
-ms.openlocfilehash: 9d14c5103d3f7712197bb46b1ba6d2bc5c294d44
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9a9e230a46967ab6c012199e7f4fc6426fdc67bf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989665"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314857"
 ---
 # <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>Połączenie rekordy DNS w witrynie Wix to Microsoft 365
 

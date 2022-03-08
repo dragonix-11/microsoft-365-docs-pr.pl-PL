@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   ms.localizationpriority: medium
   description: Usługa Microsoft Bookings to często zadawane pytania.
-  ms.openlocfilehash: fc48e3d15ea7e1b38c1a7458e3509ab803ea8a35
-  ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+  ms.openlocfilehash: 5532248b44bdda524399ce713377f5565f20eb7c
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 02/14/2022
-  ms.locfileid: "63019334"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63318063"
 title: 'Microsoft Bookings : często zadawane pytania'
 summary: ''
 sections:
@@ -354,4 +354,4 @@ sections:
 
 
       Jeśli ten błąd jest nadal wyświetlany po dłuższym okresie lub jest często wyświetlany, skontaktuj się z pomocą techniczną.
-additionalContent: "\n## <a name=\"additional-resources\"></a>Dodatkowe materiały\n\n- [Usługa Microsoft Bookings zwiększa dostępność w blogu dla przedsiębiorstw](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Klip wideo: Jak działa aplikacja Microsoft Bookings](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Rozpoczynanie korzystania z usługi Microsoft Bookings](get-access.md)\n\n- [Włączanie i wyłączanie aplikacji Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [Dodawanie użytkowników pojedynczo lub zbiorczo](../admin/add-users/add-users.md)\n\n- [Dodawanie personelu do rezerwacji](add-staff.md)\n\n- [Składniki interfejsu API do automatyzowania po zdefiniowanym szablonie](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [Adres URL kalendarza aplikacji Bookings do wyświetlania](https://outlook.office.com/bookings/calendar)\n\n- [Zasady zgodności aplikacji Bookings](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [Dostosowywanie i publikowanie strony rezerwacji](customize-booking-page.md)\n\n- [Konfiguracja skrzynki pocztowej dzierżawy](/powershell/module/exchange/get-accepteddomain)\n\n- [Rezerwacje grupowe](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Metryki i śledzenie aktywności w uciekcie rezerwacji bookings](metrics-and-activity-tracking.md)\n\n- [Przewodnik po sieci M365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- Przesyłanie opinii za [pośrednictwem usługi UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)"
+additionalContent: "\n## <a name=\"additional-resources\"></a>Dodatkowe materiały\n\n- [Usługa Microsoft Bookings zwiększa dostępność w blogu dla przedsiębiorstw](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Klip wideo: Jak działa aplikacja Microsoft Bookings](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Rozpoczynanie korzystania z usługi Microsoft Bookings](get-access.md)\n\n- [Włączanie i wyłączanie aplikacji Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [Dodawanie użytkowników pojedynczo lub zbiorczo](../admin/add-users/add-users.md)\n\n- [Dodawanie personelu do rezerwacji](add-staff.md)\n\n- [Składniki interfejsu API do automatyzowania po zdefiniowanym szablonie](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [Adres URL kalendarza aplikacji Bookings do wyświetlania](https://outlook.office.com/bookings/calendar)\n\n- [Zasady zgodności aplikacji Bookings](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [Dostosowywanie i publikowanie strony rezerwacji](customize-booking-page.md)\n\n- [Konfiguracja skrzynki pocztowej dzierżawy](/powershell/module/exchange/get-accepteddomain)\n\n- [Rezerwacje grupowe](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Metryki i śledzenie aktywności w uciekcie rezerwacji bookings](metrics-and-activity-tracking.md)\n\n- [Przewodnik po sieci M365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)"

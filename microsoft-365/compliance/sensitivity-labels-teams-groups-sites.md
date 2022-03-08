@@ -13,16 +13,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: Etykiety wrażliwości chronią zawartość w SharePoint i Microsoft Teams sieci Web Microsoft 365 grupy.
-ms.openlocfilehash: d7d5ae1dfea2179c698922c4ddb045de0cd20ce5
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 39caee37f8bf8b2f885824bbdd12ca7b5b372e69
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013855"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320511"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Używanie etykiet wrażliwości w celu ochrony zawartości Microsoft Teams, grup Microsoft 365 i SharePoint internetowych
 
@@ -174,52 +175,11 @@ Znane ograniczenia tej wersji Preview:
     - Przepływy pracy, które Power Apps lub Power Automate
     - Aplikacje innych firm
 
-### <a name="configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings"></a>Konfigurowanie ustawień domyślnego linku udostępniania witryny przy użyciu ustawień zaawansowanych programu PowerShell
+### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>Konfigurowanie ustawień domyślnego typu linku udostępniania dla witryny przy użyciu ustawień zaawansowanych programu PowerShell
 
-Oprócz ustawień etykiet dla witryn i grup, które można skonfigurować za pomocą Centrum zgodności, można również skonfigurować domyślny typ linku udostępniania dla witryny i uprawnienia linku udostępniania.
+Oprócz ustawień etykiet dla witryn i grup, które można skonfigurować za pomocą Centrum zgodności, możesz również skonfigurować domyślny typ linku udostępniania dla witryny. Etykiety wrażliwości dla dokumentów można również skonfigurować dla domyślnego typu linku udostępniania. Te ustawienia, które pomagają zapobiec over-sharingowi, są automatycznie wybierane  po wybraniu przez użytkowników przycisku Udostępnij w Office aplikacjach. 
 
-Aby dowiedzieć się więcej na temat działania tych ustawień, [zobacz Zmienianie domyślnego typu linku witryny](/sharepoint/change-default-sharing-link).
-
-Te dodatkowe ustawienia etykiet linku udostępniania są obecnie dostępne tylko jako parametr *AdvancedSettings* programu PowerShell oraz polecenia cmdlet [Set-Label](/powershell/module/exchange/set-label) i [New-Label](/powershell/module/exchange/new-labelpolicy) z centrum zabezpieczeń [& zgodności programu PowerShell](/powershell/exchange/scc-powershell):
-
-- **DefaultSharingScope**: Dostępne wartości:
-    - **SpecificPeople**: Ustawia domyślny link udostępniania witryny do linku "Konkretne osoby"
-    - **Organizacja**: ustawia domyślny link udostępniania witryny do linku "organizacja" lub linku firmowego, który można udostępnić
-    - **Każda** osoba: ustawia domyślny link udostępniania witryny na link Dostęp anonimowy lub Każda osoba.
-
-- **DefaultShareLinkPermission**: Dostępne wartości:
-    - **Widok**: ustawia domyślne uprawnienie do wyświetlania linku w witrynie
-    - **Edycja**: ustawia domyślne uprawnienie do edytowania linku w witrynie
-
-Te dwa ustawienia i wartości są równoważne parametrom *DefaultSharingScope* i *DefaultShareLinkPermission* z polecenia cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) .
-
-Przykłady programu PowerShell, w których identyfikator GUID wrażliwości to **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
-
-- Aby ustawić typ linku udostępniania do określonejpełny:
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
-    ````
-
-- Aby ustawić uprawnienia linku udostępniania do edytowania:
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
-    ````
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Porady dotyczące programu PowerShell dotyczące określania ustawień zaawansowanych
-
-Etykietę wrażliwości można określić według jej nazwy, jednak zalecane jest użycie identyfikatora GUID etykiety w celu uniknięcia potencjalnego zamieszania w określeniu nazwy etykiety lub nazwy wyświetlanej. Aby znaleźć identyfikator GUID:
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-Aby usunąć którekolwiek z tych ustawień zaawansowanych z etykiety wrażliwości, użyj tej samej składni parametru AdvancedSettings, ale określ wartość ciągu null. Przykład:
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
-````
+Aby uzyskać więcej informacji oraz instrukcje, zobacz Konfigurowanie domyślnego typu [linku](sensitivity-labels-default-sharing-link.md) udostępniania dla witryn i dokumentów w witrynach i SharePoint i OneDrive.
 
 ## <a name="sensitivity-label-management"></a>Zarządzanie etykietami wrażliwości
 
@@ -351,7 +311,7 @@ Ta seria poleceń umożliwia oznaczanie wielu witryn w dzierżawie etykietami wr
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Wyświetlanie etykiet wrażliwości i zarządzanie nimi w centrum SharePoint administracyjnego
 
-Aby wyświetlić, posortować i przeszukać zastosowane etykiety wrażliwości, użyj  strony Aktywne witryny w nowej SharePoint administracyjnego. Być może trzeba będzie najpierw dodać **kolumnę** Charakter:
+Aby wyświetlić, posortować i przeszukać zastosowane etykiety wrażliwości, użyj pozycji <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne**</a> witryny w nowej SharePoint administracyjnego. Być może trzeba będzie najpierw dodać **kolumnę** Charakter:
 
 ![Kolumna Charakter na stronie Aktywne witryny.](../media/manage-site-sensitivity-labels.png)
 

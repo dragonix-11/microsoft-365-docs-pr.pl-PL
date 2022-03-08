@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 24a910fee1b6a8b502e42f17f002b286e4fbf337
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 9d60d2f117d5d386eb83b0bbd102265921b5078e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010404"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318245"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Informacje na temat zgodności komunikacji w programie Microsoft 365
 
@@ -99,7 +99,7 @@ Wbudowane przepływy pracy rozwiązywania problemów pozwalają szybko identyfik
 - **Dokładne i niemalże** szybkie wykrywanie duplikatów: oprócz skanowania w celu sprawdzenia dokładnie tych terminów, które są zgodne z zasadami zgodności komunikacji, podobne terminy i wiadomości są w pobliżu grupowane tekstowo podobne terminy i wiadomości, co pomaga przyspieszyć proces sprawdzania.
 - **Optyczne rozpoznawanie znaków (OCR) (podgląd)**: Skanowanie, wykrywanie i badanie tekstu drukowanego i napisanego odręcznie w obrazach osadzonych lub dołączonych do wiadomości e-mail Microsoft Teams wiadomościach czatu.
 - **Nowe filtry**: Szybsze badanie i korygowanie alertów zasad za pomocą filtrów wiadomości dla kilku pól, takich jak nadawca, adresat, data, domeny i wiele innych.
-- **Ulepszone widoki wiadomości**: Akcje badania i rozwiązywania problemów są teraz szybsze dzięki nowym widokom źródła wiadomości, tekstu i adnotacji. Załączniki wiadomości są teraz dostępne w celu zapewnienia pełnego kontekstu podczas podejmowania działań naprawczych.
+- **Ulepszone widoki wiadomości**: Akcje badania i rozwiązywania problemów są teraz szybsze dzięki nowym widokom źródła wiadomości i tekstu. Załączniki wiadomości są teraz dostępne w celu zapewnienia pełnego kontekstu podczas podejmowania działań naprawczych.
 - **Historia użytkowników**: Widok historyczny działań naprawczych dotyczących wiadomości użytkowników, takich jak wcześniejsze powiadomienia i eskalacja dopasowania zasad, udostępnia teraz recenzentom więcej kontekstu podczas procesu przepływu pracy rozwiązywania problemów. Po raz pierwszy lub powtarzane wystąpienia dopasowania zasad dla użytkowników są teraz archiwizowane i łatwo dostępne do wyświetlenia.
 - **Powiadomienie wykryte w deseniu**: Wiele napastliwych i nękających akcji odbywa się z czasem i obejmuje powtarzające się wystąpienia tego samego zachowania przez użytkownika. Nowe powiadomienie wykryte przez wzorzec wyświetlane w szczegółach alertów pomaga skupić uwagę na tych alertach i tego typu zachowaniu.
 - **Tłumaczenie**: Możesz szybko zbadać szczegóły wiadomości w ośmiu językach, korzystając z tłumaczenia pomocy technicznej w przepływie pracy rozwiązywania problemów. Wiadomości w innych językach są automatycznie konwertowane na język wyświetlania recenzenta.
@@ -158,7 +158,7 @@ W tym kroku przyjrzysz się bliżej problemom wykrytym jako pasujące do Twoich 
 
 - **Alerty**: gdy wiadomość jest generowana automatycznie, zostaje automatycznie wygenerowany alert. Dla każdego alertu możesz wyświetlić stan, ważność, wykryty czas i jeśli przypisano Advanced eDiscovery i jej stan. Nowe alerty są wyświetlane na stronie głównej zgodności komunikacji oraz na stronie **Alerty** , a ich ważność jest wymieniona w kolejności ważności.
 - **Zarządzanie problemami**: Dla każdego alertu możesz podjąć działania badające, aby pomóc w podjęciu działań naprawczych do problemu wykrytego w wiadomości.
-- **Recenzja** dokumentu: W trakcie badania problemu można użyć kilku widoków komunikatu, aby pomóc w prawidłowym szacowaniu wykrytego problemu. Widoki te obejmują widok podsumowania konwersacji, widok tylko tekstowy, widok z adnotacjami i widok szczegółowy konwersacji komunikacyjnej.
+- **Recenzja** dokumentu: W trakcie badania problemu można użyć kilku widoków komunikatu, aby pomóc w prawidłowym szacowaniu wykrytego problemu. Widoki te obejmują podsumowanie konwersacji, widok tylko tekst i widok szczegółowy konwersacji komunikacyjnej.
 - **Przeglądanie historii aktywności użytkowników**: Umożliwia wyświetlanie historii działań dotyczących wiadomości użytkowników i działań naprawczych, takich jak wcześniejsze powiadomienia i eskalacja, w przypadku dopasowania zasad.
 - **Filtry**. Użyj filtrów, takich jak nadawca, adresat, data i temat, aby szybko zawęzić alerty o wiadomościach, które chcesz przejrzeć.
 

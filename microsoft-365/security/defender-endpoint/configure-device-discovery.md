@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7b98ebf38d0e2e5ab5ec086e75002d0d660cff4c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 77dbdb290a0f8643bd24e1a3c561b823e5c2e4b3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "63010442"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330597"
 ---
 # <a name="configure-device-discovery"></a>Konfigurowanie odnajdowania urządzeń
 
@@ -60,7 +60,7 @@ Na stronie Wykluczenia możesz skonfigurować urządzenia tak, **aby ich nie wyk
 
 ## <a name="select-networks-to-monitor"></a>Wybieranie sieci do monitorowania
 
- Program Microsoft Defender for Endpoint analizuje sieć i określa, czy jest to sieć firmowa, która musi być monitorowana, czy sieć nienarzędna, która może być ignorowana. Sieci firmowe są zazwyczaj wybierane do monitorowania. Możesz jednak zastąpić tę decyzję, wybierając monitorowanie sieci innych niż firmowe, w których znajdują się urządzenia.
+Program Microsoft Defender for Endpoint analizuje sieć i określa, czy jest to sieć firmowa, która musi być monitorowana, czy sieć nienarzędna, która może być ignorowana. Aby określić sieć jako firmową, skorelowane są identyfikatory sieci dla wszystkich klientów dzierżawy i jeśli większość urządzeń w organizacji zgłasza, że są połączone z tą samą nazwą sieciową, za pomocą tej samej domyślnej nazwy bramy i adresu serwera FTP, zakładamy, że jest to sieć firmowa. Sieci firmowe są zazwyczaj wybierane do monitorowania. Możesz jednak zastąpić tę decyzję, wybierając monitorowanie sieci innych niż firmowe, w których znajdują się urządzenia.
 
 Możesz skonfigurować, gdzie można odnajdować urządzenia, określając sieci, które mają być monitorowane. Jeśli sieć jest monitorowana, można na jej podstawie odnajdowania urządzeń.
 

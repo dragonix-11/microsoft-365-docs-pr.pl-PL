@@ -1,6 +1,6 @@
 ---
-title: Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm (wersja Preview)
-description: Dowiedz się, jak wyświetlać, edytować, tworzyć i usuwać zasady ochrony następnej generacji w programie Microsoft Defender dla firm (wersja Preview)
+title: Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm
+description: Dowiedz się, jak wyświetlać, edytować, tworzyć i usuwać zasady ochrony następnej generacji w programie Microsoft Defender dla firm
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,27 +17,30 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 81cd2774115478f4d85fa1878d7ce8a598600e7f
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 11ab3f20b6e0b96b28dd285d05c2d57dd9455baa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027074"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327747"
 ---
-# <a name="view-or-edit-policies-in-microsoft-defender-for-business-preview"></a>Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm (wersja Preview)
+# <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-W programie Microsoft Defender dla firm (wersja Preview) ustawienia zabezpieczeń są konfigurowane za pomocą zasad stosowanych do urządzeń. Aby uprościć proces konfiguracji i konfiguracji, program Defender dla firm (wersja Preview) zawiera wstępnie skonfigurowane zasady ułatwiające ochronę urządzeń organizacji zaraz po ich doniu. Możesz używać zasad domyślnych, edytować zasady lub tworzyć własne zasady.
+W programie Microsoft Defender for Business ustawienia zabezpieczeń są konfigurowane za pomocą zasad stosowanych do urządzeń. Aby uprościć proces konfiguracji i konfiguracji, program Defender dla firm zawiera wstępnie skonfigurowane zasady ułatwiające ochronę urządzeń organizacji zaraz po ich doniu. Możesz używać zasad domyślnych, edytować zasady lub tworzyć własne zasady.
 
 **W tym artykule opisano, jak to zrobić**:
 
 - [Omówienie zasad domyślnych](#default-policies-in-defender-for-business)
+
 - [Wyświetlanie istniejących zasad](#view-your-existing-policies)
+
 - [Edytowanie istniejących zasad](#edit-an-existing-policy)
+
 - [Tworzenie nowych zasad](#create-a-new-policy)
 
 >
@@ -47,9 +50,10 @@ W programie Microsoft Defender dla firm (wersja Preview) ustawienia zabezpiecze�
 
 ## <a name="default-policies-in-defender-for-business"></a>Zasady domyślne w uchcie programu Defender dla firm
 
-W programie Defender dla firm (w wersji Preview) istnieją dwa główne typy zasad ochrony urządzeń organizacji:
+W programie Defender dla firm istnieją dwa główne typy zasad ochrony urządzeń organizacji:
 
 - **Zasady ochrony następnej generacji**, które określają sposób Program antywirusowy Microsoft Defender i innych funkcji ochrony przed zagrożeniami
+
 - **Zasady zapory**, które określają, jaki ruch sieciowy może przepływać do i z urządzeń organizacji
 
 
@@ -79,7 +83,7 @@ W programie Defender dla firm (w wersji Preview) istnieją dwa główne typy zas
 
    - Aby zachować wybraną grupę urządzeń w stanie, w tym celu wybierz przycisk **Dalej**.
    - Aby usunąć grupę urządzeń z zasad, wybierz pozycję **Usuń**.
-   - Aby skonfigurować nową grupę urządzeń, wybierz pozycję **Utwórz nową** grupę, a następnie skonfiguruj grupę urządzeń. (Aby uzyskać pomoc w tym zadaniu, zobacz [Grupy urządzeń w programie Microsoft Defender dla firm (wersja Preview)](mdb-create-edit-device-groups.md)).
+   - Aby skonfigurować nową grupę urządzeń, wybierz pozycję **Utwórz nową** grupę, a następnie skonfiguruj grupę urządzeń. (Aby uzyskać pomoc w tym zadaniu, zobacz [Grupy urządzeń w programie Microsoft Defender dla firm](mdb-create-edit-device-groups.md)).
    - Aby zastosować zasady do innej grupy urządzeń, wybierz **pozycję Użyj istniejącej grupy**.
 
    Po wybraniu grup urządzeń, które mają otrzymywać zasady, wybierz pozycję **Dalej**.
@@ -119,9 +123,9 @@ W programie Defender dla firm (w wersji Preview) istnieją dwa główne typy zas
    - Podczas instalacji grupy urządzeń należy określić pewne kryteria, na przykład wersję systemu operacyjnego. Urządzenia spełniające te kryteria są uwzględniane w tej grupie urządzeń, o ile nie zostaną wykluczone. 
    - Wszystkie grupy urządzeń, w tym domyślne i niestandardowe grupy urządzeń, które definiujesz, są przechowywane w usłudze Azure Active Directory (Azure AD).
 
-   Aby dowiedzieć się więcej o grupach urządzeń, zobacz [Grupy urządzeń w programie Defender dla firm (wersja Preview)](mdb-create-edit-device-groups.md).
+   Aby dowiedzieć się więcej o grupach urządzeń, zobacz [Grupy urządzeń w programie Defender dla firm](mdb-create-edit-device-groups.md).
 
-8. Na karcie **Ustawienia konfiguracji** określ ustawienia zasad, a następnie wybierz przycisk **Dalej**. Aby uzyskać więcej informacji na temat poszczególnych ustawień, zobacz [Ustawienia konfiguracji programu Microsoft Defender dla firm (wersja preview)](mdb-next-gen-configuration-settings.md).
+8. Na karcie **Ustawienia konfiguracji** określ ustawienia zasad, a następnie wybierz przycisk **Dalej**. Aby uzyskać więcej informacji na temat poszczególnych ustawień, zobacz [Ustawienia konfiguracji programu Microsoft Defender dla firm](mdb-next-gen-configuration-settings.md).
 
 9. Na **karcie Przejrzyj zasady** przejrzyj ogólne informacje, urządzenia docelowe i ustawienia konfiguracji. 
 
@@ -135,10 +139,10 @@ Wybierz co najmniej jedno z następujących zadań:
 
 - [Zarządzanie urządzeniami](mdb-manage-devices.md)
 
-- [Tworzenie nowych zasad w programie Microsoft Defender dla firm (wersja Preview)](mdb-create-new-policy.md)
+- [Tworzenie nowych zasad w programie Microsoft Defender dla firm](mdb-create-new-policy.md)
 
-- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm (wersja Preview)](mdb-view-manage-incidents.md)
+- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md)
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm (wersja Preview)](mdb-respond-mitigate-threats.md)
+- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
 
 - [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md)

@@ -4,28 +4,29 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekua
-manager: svidican
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
-- Adm_O365
+- Adm_O365W
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Role administratorów są mapowanie na funkcje biznesowe i zapewniają uprawnienia do wykonywania określonych zadań w centrum administracyjnym. Na przykład administrator usługi otwiera bilety pomocy technicznej firmy Microsoft.
-ms.openlocfilehash: 8232e95649ac894e8a024a2d2ac4e7b4261cb1f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 813cc178b572be5a6b1abc28d355ede020918c55
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983674"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315249"
 ---
 # <a name="get-started-with-the-roles-page"></a>Wprowadzenie do strony ról
 
@@ -78,7 +79,7 @@ Przypisz rolę administratora usługi użytkownikom, którzy muszą tworzyć wni
 
 ### <a name="sharepoint-admin"></a>Administrator programu SharePoint
 
-Po zakupie subskrypcji Microsoft 365 witryna zespołu jest tworzona automatycznie, a administrator globalny zostaje ustawiony jako główny administrator zbioru witryn. Przypisz SharePoint administratora użytkownikom, którzy mają mieć dostęp do SharePoint administracyjnego. Użytkownicy z rolą administratora SharePoint witryn mogą tworzyć zbiory witryn i zarządzać nimi, wyznaczać administratorów zbioru witryn i zarządzać profilami użytkowników. Użytkownicy z rolą SharePoint mogą również zarządzać grupami użytkowników Microsoft 365 i otwierać wnioski o pomoc techniczną za pośrednictwem pomocy technicznej firmy Microsoft. [Dowiedz się więcej](/sharepoint/sharepoint-admin-role)
+Po zakupie subskrypcji Microsoft 365 witryna zespołu jest tworzona automatycznie, a administrator globalny zostaje ustawiony jako główny administrator zbioru witryn. Przypisz SharePoint administratorów użytkownikom, którzy mają mieć dostęp do SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">administracyjnego</a>. Użytkownicy z rolą administratora SharePoint witryn mogą tworzyć zbiory witryn i zarządzać nimi, wyznaczać administratorów zbioru witryn i zarządzać profilami użytkowników. Użytkownicy z rolą SharePoint mogą również zarządzać grupami użytkowników Microsoft 365 i otwierać wnioski o pomoc techniczną za pośrednictwem pomocy technicznej firmy Microsoft. [Dowiedz się więcej](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Teams administratorem usługi
 

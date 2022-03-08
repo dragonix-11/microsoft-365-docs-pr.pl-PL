@@ -2,8 +2,8 @@
 title: Wydajność firmy Microsoft — mobilność
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Szczegóły dotyczące mobilności — ludzie mają oceny wydajności.
-ms.openlocfilehash: 6eaf50b73af0d6c15e270ca00a5c89f477ed9a4f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 13d3fb9be30def2d8308037890a501d624d09b49
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986629"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319787"
 ---
 # <a name="mobility--people-experiences"></a>Mobilność — środowisko osób
 

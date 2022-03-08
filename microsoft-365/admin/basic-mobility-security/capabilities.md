@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Podstawowa mobilność i zabezpieczenia mogą ułatwić zabezpieczanie urządzeń przenośnych i zarządzanie nimi.
-ms.openlocfilehash: 73df4cd8aa4eb8dea8ef7c96304e48caf1f15f8a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 04ee7e7dfbc4937d4add2e4c27e7f686b596fadb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021235"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314885"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Możliwości podstawowej mobilności i zabezpieczeń
 
@@ -32,18 +32,30 @@ Podstawowa mobilność i zabezpieczenia mogą ułatwić zabezpieczanie urządze�
 
 ## <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 
-Postępuj zgodnie z Microsoft Intune  operating systems guide for supported operating systems for devices using Basic Mobility and Security. Aby uzyskać więcej informacji, zobacz [Obsługiwane systemy operacyjne Intune](/mem/intune/fundamentals/supported-devices-browsers).
+Postępuj zgodnie Microsoft Intune podstawowymi systemami operacyjnymi, aby uzyskać informacje o minimalnych obsługiwanych systemach operacyjnych dla urządzeń przez pakiet Basic Mobility and Security. Aby uzyskać więcej informacji, zobacz [Obsługiwane systemy operacyjne Intune](/mem/intune/fundamentals/supported-devices-browsers).
+
+Za pomocą funkcji Basic Mobility and Security możesz zabezpieczać następujące urządzenia i zarządzać nimi.
+
+- iOS
+- Android (w tym Samsung Knox)<sup>1</sup>
+- Windows <sup>2, 3</sup>
+
+<sup>1</sup> Po czerwcu 2020 r. wersje systemu Android nowsze niż 9 nie mogą zarządzać ustawieniami haseł z wyjątkiem urządzeń firmy Samsung Knox.
+
+<sup>2</sup> Kontrola dostępu dla Windows 8.1 RT jest ograniczona do Exchange ActiveSync.
+
+<sup>3</sup> Kontrola dostępu dla Windows 10 wymaga subskrypcji, która obejmuje Azure AD — wersja Premium, a urządzenie musi być przyłączone do Azure Active Directory.
 
 > [!NOTE]
 > Urządzenia już zarejestrowane we wcześniejszych wersjach systemu operacyjnego będą nadal działać, chociaż funkcje mogą ulec zmianie bez powiadomienia.
 
-Jeśli osoby w Twojej organizacji korzystają z urządzeń przenośnych, które nie są obsługiwane przez pakiet Basic Mobility and Security, możesz zablokować dostęp aplikacji Microsoft 365 Exchange ActiveSync do poczty e-mail dla tych urządzeń w celu zapewnienia bezpieczeństwa danych Twojej organizacji. Aby uzyskać instrukcje blokowania Exchange ActiveSync, zobacz [Zarządzanie ustawieniami dostępu do urządzeń w pakietach Basic Mobility i Security](manage-device-access-settings.md).
+Jeśli osoby w Twojej organizacji korzystają z urządzeń przenośnych, które nie są obsługiwane przez pakiet Basic Mobility and Security, możesz zablokować dostęp aplikacji Microsoft 365 Exchange ActiveSync do poczty e-mail na tych urządzeniach w celu zapewnienia bezpieczeństwa danych twojej organizacji. Aby uzyskać instrukcje blokowania Exchange ActiveSync, zobacz [Zarządzanie ustawieniami dostępu do urządzeń w pakietach Basic Mobility i Security](manage-device-access-settings.md).
 
 ## <a name="access-control-for-microsoft-365-email-and-documents"></a>Kontrola dostępu do Microsoft 365 e-mail i dokumentów
 
 Aplikacje obsługiwane dla różnych typów urządzeń przenośnych w poniższej tabeli monitują użytkowników o zarejestrowanie się w programie Basic Mobility and Security, jeśli istnieją nowe zasady zarządzania urządzeniami przenośnymi, które dotyczą urządzenia użytkownika i nie zostały wcześniej zarejestrowane. Jeśli urządzenie użytkownika nie jest zgodne z zasadami, w zależności od sposobu skonfigurowania zasad, użytkownik może mieć zablokowany dostęp do zasobów usługi Microsoft 365 w tych aplikacjach lub może mieć dostęp, ale program Microsoft 365 zgłasza naruszenie zasad.
 
-|**Produkt**|**iOS 10.0 lub nowszy**|**Android 5.0 lub nowszy**|
+|**Produkt**|**iOS**|**Android**|
 |:-----|:-----|:-----|
 |**Exchange** Exchange ActiveSync e-mail oraz aplikacje innych firm, takie jak TouchDown, które korzystają z Exchange ActiveSync 14.1 lub nowszego. |Poczta |Poczta e-mail |
 | Office and  **OneDrive dla Firm** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**Na telefonach i tabletach**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Tylko na telefonach:** <br/> Office Mobile |
@@ -83,7 +95,7 @@ W poniższych sekcjach przedstawiono ustawienia zasad, które ułatwiają zabezp
 
 ## <a name="security-settings"></a>Ustawienia zabezpieczeń
 
-|**Nazwa ustawienia**|**iOS 7.1 lub nowszy**|**Android 5 lub nowszy**|**Samsung Knox**|
+|**Nazwa ustawienia**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Wymaganie hasła|Tak|Tak|Tak|
 |Zapobieganie prostemu hasłem|Tak|Nie|Nie|
@@ -96,7 +108,7 @@ W poniższych sekcjach przedstawiono ustawienia zasad, które ułatwiają zabezp
 
 ## <a name="encryption-settings"></a>Ustawienia szyfrowania
 
-|**Nazwa ustawienia**|**iOS 7.1 lub nowszy**|**Android 5 lub nowszy**|**Samsung Knox**|
+|**Nazwa ustawienia**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Wymagaj szyfrowania danych na <sup>urządzeniach1</sup> |Nie|Tak|Tak|
 
@@ -104,7 +116,7 @@ W poniższych sekcjach przedstawiono ustawienia zasad, które ułatwiają zabezp
 
 ## <a name="jail-broken-setting"></a>Ustawienie ze złamanym oprawą
 
-|**Nazwa ustawienia**|**iOS 7.1 lub nowszy**|**Android 5 lub nowszy**|**Samsung Knox**|
+|**Nazwa ustawienia**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Urządzenie nie może zostać uszkodzone lub z rootowane |Tak|Tak|Tak|
 
@@ -112,13 +124,13 @@ W poniższych sekcjach przedstawiono ustawienia zasad, które ułatwiają zabezp
 
 Następująca opcja może zablokować użytkownikom dostęp do swoich Microsoft 365 e-mail, jeśli korzystasz z ręcznie utworzonego profilu poczty e-mail. Użytkownicy urządzeń z systemem iOS muszą usunąć ręcznie utworzony profil poczty e-mail, aby uzyskać dostęp do poczty e-mail. Po usunięciu profilu na urządzeniu zostanie automatycznie utworzony nowy profil. Aby uzyskać instrukcje dotyczące sposobu zgodności użytkowników końcowych, zobacz [Odnaleziono istniejące konto e-mail](/intune-user-help/existing-company-email-account-found).
 
-|**Nazwa ustawienia**|**iOS 7.1 lub nowszy**|**Android 5 lub nowszy**|**Samsung Knox**|
+|**Nazwa ustawienia**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Profil poczty e-mail jest zarządzany |Tak|Nie|Nie|
 
 ## <a name="cloud-settings"></a>Ustawienia chmury
 
-|**Nazwa ustawienia**|**iOS 7.1 lub nowszy**|**Android 5 lub nowszy**|**Samsung Knox**|
+|**Nazwa ustawienia**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Wymagaj zaszyfrowanej kopii zapasowej |Tak|Nie|Nie|
 |Blokowanie kopii zapasowej w chmurze |Tak|Nie|Nie|
@@ -129,14 +141,14 @@ Następująca opcja może zablokować użytkownikom dostęp do swoich Microsoft 
 
 ## <a name="system-settings"></a>Ustawienia systemu
 
-|**Nazwa ustawienia**|**iOS 7.1 lub nowszy**|**Android 5 lub nowszy**|**Samsung Knox**|
+|**Nazwa ustawienia**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Zablokuj przechwytywanie ekranu |Tak|Nie|Tak|
 |Blokowanie wysyłania danych diagnostycznych z urządzenia |Tak|Nie|Tak|
 
 ## <a name="application-settings"></a>Ustawienia aplikacji
 
-|**Nazwa ustawienia**|**iOS 7.1 lub nowszy**|**Android 5 lub nowszy**|**Samsung Knox**|
+|**Nazwa ustawienia**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Blokowanie konferencji wideo na urządzeniu |Tak|Nie|Nie|
 |Blokowanie dostępu do magazynu aplikacji |Tak|Nie|Tak|
@@ -144,7 +156,7 @@ Następująca opcja może zablokować użytkownikom dostęp do swoich Microsoft 
 
 ## <a name="device-capabilities-settings"></a>Ustawienia funkcji urządzenia
 
-|**Nazwa ustawienia**|**iOS 7.1 lub nowszy**|**Android 5 lub nowszy**|**Samsung Knox**|
+|**Nazwa ustawienia**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Połączenie blokowe z magazynem wymiennym |Tak|Tak|Nie|
 |Blokowanie Bluetooth sieci |Tak|Tak|Nie|
@@ -153,7 +165,7 @@ Następująca opcja może zablokować użytkownikom dostęp do swoich Microsoft 
 
 Poniższe dodatkowe ustawienia zasad można ustawić za pomocą poleceń cmdlet programu PowerShell centrum & zgodności. Aby uzyskać więcej informacji, zobacz  [& Centrum zgodności w programie PowerShell](/powershell/exchange/scc-powershell).
 
-|**Nazwa ustawienia**|**iOS 7.1 lub nowszy**|**Android 5 lub nowszy**|
+|**Nazwa ustawienia**|**iOS** |**Android**|
 |:-----|:-----|:-----|
 |CameraEnabled|Tak|Tak|
 |RegionRatings|Tak|Nie|

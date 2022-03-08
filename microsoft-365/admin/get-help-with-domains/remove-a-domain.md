@@ -2,8 +2,8 @@
 title: Usuwanie domeny
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Dowiedz się, jak usunąć starą domenę z usługi Microsoft 365 przenieść użytkowników i grupy do innej domeny lub anulować subskrypcję.
-ms.openlocfilehash: 875858804912ab75d0a5a0bab45c9bb1614c82ca
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 3da47275e090296c9b192b4bd60ad19dd8cf4149
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011302"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316831"
 ---
 # <a name="remove-a-domain"></a>Usuwanie domeny
 
@@ -115,6 +115,9 @@ Możesz także przenieść użytkowników do innej domeny za pomocą programu Po
 
 ::: moniker range="o365-worldwide"
 
+> [!NOTE]
+> Jeśli usuwasz domenę niestandardową, [przed przystąpieniem](#remove-a-custom-domain) do tej procedury zobacz Usuwanie domeny niestandardowej.
+
 1. W Centrum administracyjnym przejdź do strony **Ustawienia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domeny</a>.
 
 ::: moniker-end
@@ -130,6 +133,35 @@ Możesz także przenieść użytkowników do innej domeny za pomocą programu Po
 3. W prawym okienku wybierz pozycję **Usuń**.
 
 4. Postępuj zgodnie z dodatkowymi monitami, a następnie wybierz **pozycję Zamknij**.
+
+
+
+
+### <a name="remove-a-custom-domain"></a>Usuwanie domeny niestandardowej
+
+Jeśli anulujesz subskrypcję i korzystasz z domeny niestandardowej, istnieje kilka dodatkowych czynności, które należy wykonać, aby można było anulować subskrypcję. 
+
+#### <a name="change-your-domain-nameserver-records-if-needed"></a>Zmienianie rekordów serwera nazw domeny (w razie potrzeby)
+
+Jeśli skonfigurujemysz domenę niestandardową, dodano rekordy DNS, aby ta domena działała z Microsoft 365 usługami. Przed usunięciem domeny pamiętaj o zaktualizowaniu rekordów DNS, takich jak rekord MX domeny, na Twoim hoście DNS.
+
+Na przykład zmień rekord MX na swoim hoście DNS. Wiadomości e-mail wysyłane do Twojej domeny przestały przychodzić na Twój adres Microsoft i zamiast tego trafiają do nowego dostawcy poczty e-mail. (Rekord MX określa miejsce, do którego jest wysyłana poczta e-mail dla Twojej domeny).
+
+- Jeśli rekordy serwera nazw (NS) wskazują serwery nazw usługi [Microsoft 365](../../admin/setup/add-domain.md), zmiany w rekordzie MX nie zostaną wprowadzone, dopóki nie zmienisz rekordów serwera nazw tak, aby wskazują nowego hosta DNS (zobacz Krok 2).
+
+- Przed zaktualizowanie rekordu MX po powiadomieniach użytkowników o dacie przełączenia ich poczty e-mail oraz o nowym dostawcy poczty e-mail, który będzie używać. Ponadto jeśli użytkownicy chcą przenieść swoje istniejące wiadomości e-mail firmy Microsoft do nowego dostawcy, muszą wykonać dodatkowe czynności.
+
+- W dniu zmiany rekordu MX zapisz dane i w razie potrzeby [](/microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data) odinstaluj [Office.](/microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional)
+
+#### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>Aktualizowanie rekordów MX domeny i innych rekordów DNS (jeśli korzystasz z domeny niestandardowej)
+
+Jeśli podczas konfiguracji domeny przełączysz rekordy serwera nazw do usługi Microsoft 365, musisz skonfigurować lub zaktualizować rekord MX i inne rekordy DNS na hoście DNS, który ma być przez Ciebie używać, a następnie zmienić rekord serwera nazw na tego hosta DNS.
+
+Jeśli rekordy serwera nazw nie były przełączane podczas konfigurowanie domeny, po zmianie rekordu MX poczta zacznie od razu na nowy adres.
+
+Aby zmienić rekordy serwera nazw, zobacz Zmienianie serwerów nazw w celu skonfigurowania Microsoft 365 [rejestratora domen](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
+
+
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Jak długo trwa usuwanie domeny?
 

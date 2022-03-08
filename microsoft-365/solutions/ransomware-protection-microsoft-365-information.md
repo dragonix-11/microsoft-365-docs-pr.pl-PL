@@ -1,9 +1,9 @@
 ---
 title: Krok nr 5. Ochrona informacji
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: oprogramowanie wymuszające okup, oprogramowanie wymuszające okup obsługiwane przez człowieka, oprogramowanie wymuszające okup przez człowieka, humor, ataki wymuszające okup, ataki oprogramowania wymuszającego okup, szyfrowanie, kryptografia, zerowe zaufanie
 description: Używaj kontrolowanego dostępu do folderów, zabezpieczeń MIP, DLP i aplikacji Microsoft Defender w chmurze w celu ochrony Microsoft 365 danych poufnych.
-ms.openlocfilehash: e5973373b9a831a8abaf8356866524c6c0639224
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 0011a3c9fc0d24815818b67906b8f404a191563e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014855"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325099"
 ---
 # <a name="step-5-protect-information"></a>Krok nr 5. Ochrona informacji
 

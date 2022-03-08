@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Zawiera omówienie centrum Microsoft 365 wiadomości i jego roli w śledzeniu nowych i zmienionych funkcji oraz innych ważnych ogłoszeń.
-ms.openlocfilehash: 42549156172c0ed529dfb84619836c2e40f42fe8
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 09ae8e85a6de64848733c4f80b5d2e28e99072fc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016558"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322327"
 ---
 # <a name="message-center"></a>Centrum wiadomości
 
@@ -213,6 +213,9 @@ Oto krótki przegląd informacji, które będą zawarte w poszczególnych kolumn
 W Centrum wiadomości możesz wybrać wiadomość, aby wyświetlić szczegółowe informacje.
 
 Jeśli chcesz przekazać opinię na temat wiadomości, w okienku szczegółów wybierz ikonę Lubię to  lub Nie  lubię tego u dołu okienka szczegółów wiadomości i podaj opcjonalną opinię w wyświetlonym polu tekstowym. Nie pozyskaj żadnych danych osobowych. Możesz opcjonalnie wybrać pozycję **W porządku** , aby skontaktować się ze mną w sprawie tej opinii, a następnie wybrać pozycję **Wyślij**.
+
+> [!NOTE]
+> Jeśli korzystasz z usługi Microsoft 365 dla instytucji rządowych — GCC, Microsoft 365 dla instytucji rządowych — GCC Wysoki i Office 365 dla instytucji rządowych — DoD, nie możesz przekazać opinii dotyczącej wpisu.
 
 ## <a name="share-a-message"></a>Udostępnianie wiadomości
 

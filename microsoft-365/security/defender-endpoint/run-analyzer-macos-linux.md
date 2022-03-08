@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 087e7ff666ddcad02b5ead5ab62b483e60541a90
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: 5ff454904678bc589328c6a9b454b7823ff36090
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "63014807"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318777"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Uruchamianie analizatora klienta w systemach macOS i Linux
 

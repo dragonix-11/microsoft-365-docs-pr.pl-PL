@@ -14,18 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e8146a5e73cb056f6e22ec975f909c281d0890a
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: e81c235105a7c7479a917c7cb7cc404e2553f2f1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996288"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323521"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Uruchamianie poleceń odpowiedzi na żywo na urządzeniu
 

@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się więcej o stronie Dzierżawy.
-ms.openlocfilehash: 7cddf67bce3a568ea0b5259b7012a7263012d18b
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 23f151664455c35bb2fcc191d774ead00927e830
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "63007044"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329995"
 ---
 # <a name="microsoft-365-lighthouse-tenants-page-overview"></a>Omówienie Microsoft 365 Lighthouse dzierżaw
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse umożliwia zarządzanie kontami dzierżawy, wybierając pozycję **Dzierżawy** w lewym okienku nawigacji, aby otworzyć stronę Dzierżawy. Strona Dzierżawy zawiera listę wszystkich Twoich dzierżaw. Możesz wybrać dzierżawę, aby wyświetlić szczegółowe informacje, takie jak szczegóły kontaktu i stan wdrożenia.
 
@@ -36,7 +33,6 @@ Na stronie Dzierżawy znajdują się również następujące opcje:
 - **Zarządzanie tagami:** Wybierz, aby dodać, edytować lub usunąć tag.
 - **Przypisz tagi:** Wybierz, aby przypisać tag do dzierżawy.
 - **Wyszukiwanie:** Wprowadź słowa kluczowe, aby szybko znaleźć konkretną dzierżawę na liście.
-
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Zrzut ekranu przedstawiający stronę Dzierżawa.":::
 
@@ -49,26 +45,26 @@ Gdy dzierżawcy spełnią wymagania dotyczące dołączania do latarni [lighthou
 Lista dzierżaw umożliwia:
 
 - Automatyczne sortowanie dzierżaw według aktywnych, nieaktywnych i nieuklasyfikujących.
-- Eksportowanie listy dzierżaw
-- Przypisywanie tagów i zarządzanie nimi
-- Wyszukiwanie dzierżaw według nazwy
+- Wyeksportuj listę dzierżaw.
+- Przypisywanie tagów i zarządzanie nimi.
+- Wyszukaj dzierżawy według nazwy.
 - Filtruj dzierżawy według stanu, delegowanego uprawnienia administracyjnego (DAP) i tagów.
 
-Aby dezaktywować dzierżawę lub wyświetlić tagi i zarządzać nimi, wybierz trzy kropki obok nazwy dzierżawy. Możesz wyświetlić poszczególnych dzierżaw, wybierając nazwę dzierżawy lub wybierając jeden z tagów przypisanych do dzierżawy.
+Aby dezaktywować dzierżawę lub wyświetlić tagi i zarządzać nimi, wybierz trzy kropki (więcej akcji) obok nazwy dzierżawy. Możesz wyświetlić poszczególnych dzierżaw, wybierając nazwę dzierżawy lub wybierając jeden z tagów przypisanych do dzierżawy.
 
 ## <a name="tenant-status"></a>Stan dzierżawy
 
-W poniższej tabeli przedstawiono różne statusy i ich znaczenie.
+W poniższej tabeli przedstawiono różne statusy i ich znaczenie.<br><br>
 
-| Stan                                | Opis                                         |
-|---------------------------------------|-----------------------------------------------------|
-| Aktywny                                | Rozpoczęto dołączanie i przepływ danych.               |
-| Nieaktywny                              | Dzierżawa nie jest już aktywna.                         |
-| W trakcie procesu                            | Dzierżawa została wykryta, ale nie jest w pełni wynoszona.         |
-| Nieukwalifikowany, wymagany jest dostęp delegowany | Wymagana jest konfiguracja delegowanych uprawnień administratora (DAP). |
-| Brak wymaganej licencji, brak wymaganej licencji  | Dzierżawa nie ma wymaganej licencji.              |
-| Nieukwalifikowane, przekroczono liczbę użytkowników       | Dzierżawa ma więcej użytkowników niż jest dozwolonych.                 |
-| Nieumiejętny, typ umowy             | Dzierżawa nie ma umowy.                    |
+| Stan                                   | Opis                                                                                             |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Aktywny                                   | Rozpoczęto dołączanie do dzierżawy i przepływ danych.                                                           |
+| Nieaktywny                                 | Dzierżawa została wyłączona na żądanie usługi MSP i nie jest już zarządzana w latarni morskiej.           |
+| W trakcie procesu                               | Dzierżawa została wykryta, ale nie została w pełni wyedytowana.                                                              |
+| Nieuprawniany — nie jest jeszcze skonfigurować protokołu DAP lub GDAP    | Partner musi mieć delegowane (DAP) lub poziome uprawnienia administratora (GDAP) delegowane na poziomie dzierżawy. |
+| Nieukwalifikowana — brakuje wymaganej licencji | Dzierżawa nie ma wymaganej licencji.                                                               |
+| Bez uprawnienia — przekroczono liczbę użytkowników         | Dzierżawa ma więcej użytkowników niż jest dozwolonych.                                                                     |
+| Nieukwalifikowane — sprawdzenie geolokalizacji nie powiodło się            | Partner i klient muszą znajdować się w tej samej lokalizacji geograficznej.                                       |
 
 Po dezaktywowania dzierżawy nie możesz podjąć żadnych działań w tej dzierżawie do czasu zakończenia procesu dezaktywowania. Dezaktywacja może potrwać do 48 godzin. W przypadku podjęcia decyzji o ponownej aktywacji dzierżawy może upłynieć do 48 godzin, aż dane ponownie się pojawią.
 
@@ -79,11 +75,9 @@ Aby ułatwić organizowanie dzierżaw i łatwo filtrować istniejące widoki, mo
 > [!NOTE]
 > Możesz utworzyć do 30 tagów we wszystkich dzierżawach.
 
-
 ## <a name="tenant-details-page"></a>Strona szczegółów dzierżawy
 
 Aby wyświetlić szczegółowe informacje o dzierżawie, wybierz dzierżawę z listy dzierżaw. Strona szczegółów dzierżawy zawiera informacje kontaktowe i stan planu wdrażania.
-
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Zrzut ekranu przedstawiający stronę Szczegóły dzierżawy.":::
 
@@ -93,7 +87,7 @@ Na karcie Omówienie możesz wyświetlić omówienie dzierżawy, informacje kont
 
 #### <a name="tenant-overview-card"></a>Karta przegląd dzierżawy
 
-Karta Przegląd dzierżawy zawiera informacje o dzierżawie z jej Microsoft 365 dzierżawy.
+Karta Przegląd dzierżawy zawiera informacje o dzierżawie z jej Microsoft 365 dzierżawy.<br><br>
 
 | Informacje o dzierżawie    | Opis|
 |-----------------------|------------------|
@@ -124,9 +118,8 @@ Lighthouse dostarcza szczegółowych informacji o Microsoft 365 usługach, w tym
 
 Karta Microsoft 365 zawiera dwie sekcje:
 
-- Microsoft 365 Lighthouse z włączoną obsługą usług — usługi, które można zarządzać w portalu latarni morskiej.
-- Dodatkowe Microsoft 365 — usługi zawarte w pakiecie Microsoft 365, ale obecnie nie można nimi zarządzać w portalu Microsoft 365 Lighthouse.
-
+- **Microsoft 365 Lighthouse usługami z włączoną obsługą:** Usługi, które można zarządzać w portalu lighthouse.
+- **Dodatkowe Microsoft 365 usługi:** Usługi zawarte w pakiecie Microsoft 365, ale obecnie nie można nimi zarządzać w portalu Microsoft 365 Lighthouse.
 
 ### <a name="deployment-plans-tab"></a>Karta Plany wdrażania
 

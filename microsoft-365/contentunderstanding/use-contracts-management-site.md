@@ -12,14 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Dowiedz się, jak zapewniać i dostosowywać szablon witryny Zarządzanie umowami oraz jak go używać w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: 649596392cf2d7a8fc90ffc479d8875c69f26ffe
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e5629dd370899d504e9b64ef577a06ebf1bd3777
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015407"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320469"
 ---
 # <a name="use-the-contracts-management-site-template-for-microsoft-sharepoint-syntex"></a>Używanie szablonu witryny Zarządzanie umowami dla aplikacji Microsoft SharePoint Syntex
 
@@ -31,7 +30,7 @@ Witryna Zarządzanie umowami to gotowy do wdrożenia i dostosowywalny SharePoint
 
 Witryna Zarządzanie umowami zawiera wstępnie wypełnione strony, składników Web Part i nawigację po witrynie. Witrynę można dostosować tak, aby zawierała znakowanie swojej organizacji, informacje o pracownikach, informacje o zasadach i planowaniu, przepływy pracy, kontakty i zasoby.
 
-Witryna korzysta z możliwości modelu dokumentów SharePoint Syntex w bibliotekach dokumentów w celu klasyfikowania dokumentów i wyodrębniania metadanych. Witryna udostępnia wstępnie utworzone biblioteki dokumentów, które są potrzebne do szybkiego rozpoczęcia pracy, ale można również tworzyć własne, zgodnie z potrzebami. Witryna zawiera następujące polecane biblioteki:
+Witryna korzysta z możliwości modelu SharePoint Syntex na bibliotece SharePoint do klasyfikowania dokumentów i wyodrębniania metadanych. Witryna udostępnia wstępnie utworzone biblioteki dokumentów, które są potrzebne do szybkiego rozpoczęcia pracy, ale można również tworzyć własne, zgodnie z potrzebami. Witryna zawiera następujące polecane biblioteki:
 
 - **Regiony** — klasyfikowanie dokumentów kontraktowych według obszaru geograficznego, kraju lub regionu.
 
@@ -41,7 +40,7 @@ Witryna korzysta z możliwości modelu dokumentów SharePoint Syntex w bibliotek
 
 - **Klienci** — znajdowanie informacji o kliencie w jednej wygodnej lokalizacji.
 
-- **Modele** — ta biblioteka modeli pozwala klasyfikować dokumenty i wyodrębniać metadane. Użytkownicy mogą tworzyć własne modele dopasowane do potrzeb i dodawać je do tej biblioteki.
+- **Modele** — model z tej biblioteki pozwala klasyfikować dokumenty i wyodrębniać metadane. Użytkownicy mogą tworzyć własne modele dopasowane do potrzeb i dodawać je do tej biblioteki.
 
 - **Przykładowa biblioteka umów** — znajdź pliki, które były klasyfikowane i miały metadane wyodrębnione przy użyciu SharePoint Syntex projektu. 
 
@@ -99,6 +98,16 @@ Masz kontrolę nad nawigacją w witrynie Zarządzanie umowami. Skorzystaj z nast
 - [Docelowa grupa odbiorców](https://support.microsoft.com/office/target-navigation-news-and-files-to-specific-audiences-33d84cb6-14ed-4e53-a426-74c38ea32293) umożliwia kierowanie konkretnych linków nawigacyjnych do określonych użytkowników. 
 - [W razie potrzeby usuń](https://support.microsoft.com/office/delete-a-page-from-a-sharepoint-site-1d4197b8-31b6-460d-906b-3fb492a51db1) niechciane strony.
 
+
+### <a name="add-other-workflows"></a>Dodawanie innych przepływów pracy
+
+Witryna Zarządzanie umowami zawiera składniki potrzebne do rozpoczęcia pracy, ale możesz także dołączyć dodatkowe składniki, takie jak:
+
+- Przepływ pracy [Power Automate przepływu](/power-automate/getting-started) pracy po dodaniu nowej umowy do **biblioteki Żądania umowy**.
+- Twórz dodatkowe [SharePoint Syntex modeli](/microsoft-365/contentunderstanding/#models).
+- Korzystanie z [funkcji zestawu zawartości](content-assembly.md) w **bibliotece** Szablony.
+- Utwórz rozwiązanie [do zarządzania umowami](solution-manage-contracts-in-microsoft-365.md), używając SharePoint Syntex razem z innymi składnikami oprogramowania Microsoft 365.
+
 ## <a name="share-the-site-with-others"></a>Udostępnianie witryny innym osobom
 
 [Udostępnianie witryny innym osobom](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658). Współpraca z innymi osobami w organizacji w celu zapewnienia, że witryna Zarządzanie umowami jest powszechnie znana i przyjęte.
@@ -111,6 +120,3 @@ Najważniejsze czynniki sukcesu w zarządzaniu witryną Zarządzanie umowami:
 - Skorzystaj z [analiz witryny,](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) aby promować zawartość na stronie głównej, aktualizować nawigację lub ponownie pisać zawartość w celu zwiększenia przejrzystości.
 - Przejrzyj witrynę Zarządzanie umowami zgodnie z potrzebami, aby upewnić się, że zawartość jest świeża i nadal potrzebna.
 
-## <a name="see-also"></a>Zobacz też
-
-[Zarządzanie umowami przy użyciu Microsoft 365 rozwiązania](solution-manage-contracts-in-microsoft-365.md)

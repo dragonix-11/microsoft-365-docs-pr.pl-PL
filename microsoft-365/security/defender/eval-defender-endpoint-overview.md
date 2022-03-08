@@ -1,5 +1,5 @@
 ---
-title: Omówienie oceny programu Microsoft Defender dla punktu końcowego, w tym recenzowanie architektury
+title: Krok nr 4. Omówienie oceny programu Microsoft Defender dla punktu końcowego, w tym recenzowanie architektury
 description: Kroki procedury procedury w celu skonfigurowania laboratorium Microsoft 365 Defender próbnego lub środowiska pilotażowego. Przetestuj i poznaj sposób, w jaki rozwiązanie zabezpieczeń zostało zaprojektowane w celu ochrony urządzeń, tożsamości, danych i aplikacji w Twojej organizacji.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,14 +22,14 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1eaca5f9902b9617e47cc70d270f569d3a9dc60a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013689"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325953"
 ---
-# <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Omówienie oceniania usługi Microsoft Defender dla punktu końcowego
+# <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>Krok nr 4. Omówienie oceniania usługi Microsoft Defender dla punktu końcowego
 
 **Dotyczy:**
 

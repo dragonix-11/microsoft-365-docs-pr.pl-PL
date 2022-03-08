@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e364a2cffcd1c18c3d220e0747010a855fafed2a
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 530846d4a7c18900f0697806bb656aa653b71947
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013817"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326177"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Odnajdowanie urządzeń : często zadawane pytania
 
@@ -49,7 +47,7 @@ Możesz wyłączyć odnajdowanie urządzeń za pośrednictwem strony [Funkcje](a
 
 W tym trybie punkty końcowe, które zostały podłączone do programu Microsoft Defender for Endpoint, mogą aktywnie oznaczać obserwowane urządzenia w sieci w celu wzbogacenia zbieranych danych (z dużą ilością ruchu sieciowego). Tylko urządzenia obserwowane przez podstawowy tryb odnajdowania będą aktywnie aktywne w trybie standardowym. Ten tryb jest zdecydowanie zalecany w celu tworzenia niezawodnego i spójnego spisu urządzeń. Jeśli wyłączysz ten tryb i wybierzesz pozycję Podstawowy tryb odnajdowania, prawdopodobnie uzyskasz tylko ograniczoną widoczność nieza zarządzania punktami końcowymi w Twojej sieci.
 
- Tryb standardowy korzysta również z typowych protokołów odnajdowania, które korzystają z zapytań wielowymiarowych w sieci, aby znaleźć jeszcze więcej urządzeń, oprócz tych, które zostały zarezerwowane przy użyciu metody pasywnej.
+ Tryb standardowy korzysta również z typowych protokołów odnajdowania, które korzystają z zapytań wielowymiarowych w sieci, aby znaleźć jeszcze więcej urządzeń, oprócz tych obserwowanych przy użyciu metody pasywnej.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Czy mogę kontrolować, które urządzenia wykonują odnajdowanie standardowe?
 
@@ -90,7 +88,7 @@ Odkrywanie urządzeń w sieci przy użyciu metod pasywnych oznacza, że wszystki
 
 Urządzenia będą aktywnie wstrzemiędne w przypadku obserwowania zmian w cechach urządzeń w celu upewninia się, że istniejące informacje są aktualne (zwykle urządzenia mają nie więcej niż jeden raz w okresie trzech tygodni)
 
-## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Co mam zrobić, gdy w narzędziu zabezpieczeń UnicastScanner.ps1 powiadomienia dotyczące skanowania portów lub skanowania portów zainicjowane przez to narzędzie?
+## <a name="my-security-tool-raised-alert-on-unicastscannerps1--psscript_guidps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Co mam zrobić, jeśli w narzędziu zabezpieczeń UnicastScanner.ps1 / PSScript_{GUID}.ps1 skanowania portów jest inicjowany alert?
 
 Aktywne skrypty  probowania są podpisane przez firmę Microsoft i bezpieczne. Do listy wykluczeń możesz dodać następującą ścieżkę: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
 

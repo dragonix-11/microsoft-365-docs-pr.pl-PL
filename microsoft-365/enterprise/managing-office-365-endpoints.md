@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Dowiedz się, jak zarządzać punktami Office 365 końcowymi, aby działały one z architekturą sieci organizacji przedsiębiorstwa.
-ms.openlocfilehash: 96aa778316fcaa5994d408c869e8566e465a07d1
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 5d5e51b789ef0336a2e7aaa6a923ca2957ea6edf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "62988699"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314535"
 ---
 # <a name="managing-office-365-endpoints"></a>Zarządzanie Office 365 punktami końcowymi
 
@@ -151,7 +151,7 @@ Widzisz skojarzony z siecią adres IP Office 365 o którym chcesz uzyskać więc
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Niektóre Office 365 URL wskazują rekordy CNAME zamiast rekordów A w systemie DNS. Co muszę zrobić z rekordami CNAME?
 
-Komputery klienckie wymagają rekordu DNS A lub AAAA, który zawiera jeden lub więcej adresów IP do nawiązania połączenia z usługą w chmurze. Niektóre adresy URL zawarte w Office 365 zamiast rekordów A lub AAAA są wyświetlane w rekordach CNAME. Te rekordy CNAME są pośrednie i może być ich wiele w łańcuchu. Zawsze będą one zawsze rozpoznają rekord A lub AAAA dla adresu IP. Rozważ na przykład następującą serię rekordów DNS, która ostatecznie rozwiązuje problem z adresem IP _IP_1_:
+Komputery klienckie potrzebują rekordu DNS A lub AAAA, który zawiera co najmniej jeden adres IP, aby połączyć się z usługą w chmurze. Niektóre adresy URL zawarte w Office 365 zamiast rekordów A lub AAAA są wyświetlane w rekordach CNAME. Te rekordy CNAME są pośrednie i może być ich wiele w łańcuchu. Zawsze będą one zawsze rozpoznają rekord A lub AAAA dla adresu IP. Rozważ na przykład następującą serię rekordów DNS, która ostatecznie rozwiązuje problem z adresem IP _IP_1_:
 
 ```console
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1

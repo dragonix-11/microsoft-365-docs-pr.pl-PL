@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się, jak wyszukiwać użytkowników.
-ms.openlocfilehash: 05ac38ef684adbefd0d08756b8ce5006c5c65aa2
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+ms.openlocfilehash: 26f259295eaa3cc89309de78b6aea3700a492961
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "62996841"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315095"
 ---
 # <a name="search-for-users"></a>Wyszukiwanie użytkowników
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse umożliwia wyszukanie określonego użytkownika we wszystkich aktywnych dzierżawach. Dzięki temu możesz szybko znaleźć użytkownika bez konieczności nawigowania po różnych dzierżawach.
 

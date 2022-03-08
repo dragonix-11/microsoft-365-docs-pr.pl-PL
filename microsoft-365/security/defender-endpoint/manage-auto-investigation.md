@@ -6,8 +6,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: f6886cd109e8727dd05c7de0b4055f839b847de2
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 952e5a057f893cfc11b928e40e2038255a93601c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997829"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329047"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Przeglądanie działań naprawczych w przypadku zautomatyzowanego badania
 

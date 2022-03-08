@@ -1,5 +1,5 @@
 ---
-title: Usuwanie siebie z listy zablokowanych nadawców
+title: Usuwanie siebie z listy zablokowanych nadawców i adresu 5.7.511 Błędy odrzuconych dostępu
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,17 +17,17 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: W tym artykule dowiesz się, jak za pomocą portalu delist usunąć siebie z listy zablokowanych Microsoft 365 nadawców.
+description: W tym artykule dowiesz się, jak za pomocą portalu delist usunąć siebie z listy zablokowanych Microsoft 365 nadawców. Jest to najlepsza odpowiedź na błędy odrzucone przez program Access 5.7.511.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bdbc1efb9e22186a9a7f6d9814f27dea9709636a
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 36187288b2a7acf1a852e6c203cbb84035ba5d7a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63015970"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320245"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usuwanie siebie z listy zablokowanych nadawców za pomocą portalu delist
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Korzystanie z portalu delist w celu usunięcia siebie z listy zablokowanych nadawców i adresu 5.7.511 Błędy odrzuconych dostępu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "63015970"
 - [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Czy otrzymujesz komunikat o błędzie podczas próby wysłania wiadomości e-mail do adresata, którego adres e-mail znajduje się w Microsoft 365? Jeśli uważasz, że nie powinien być wyświetlany komunikat o błędzie, możesz użyć portalu delist, aby usunąć siebie z listy zablokowanych nadawców.
+Czy otrzymujesz komunikat o błędzie podczas próby wysłania wiadomości e-mail do adresata, którego adres e-mail znajduje się w programie Microsoft 365 (na przykład i adres 5.7.511 Odmowa dostępu)? Jeśli uważasz, że nie powinien być wyświetlany komunikat o błędzie, możesz użyć portalu delist, aby usunąć siebie z listy zablokowanych nadawców.
 
 ## <a name="what-is-the-blocked-senders-list"></a>Co to jest lista zablokowanych nadawców?
 
@@ -44,7 +44,7 @@ Firma Microsoft używa listy zablokowanych nadawców w celu ochrony swoich klien
 
 Będziesz wiedzieć, że dodano Cię do listy po otrzymaniu odpowiedzi na wiadomość e-mail z komunikatem o błędzie, który wygląda podobnie do tego:
 
-> 550 5.7.606-649 Odmowa dostępu, zablokowane wysyłanie adresu IP [_adres IP_]; Aby zażądać usunięcia z tej listy, odwiedź stronę <https://sender.office.com/> i postępuj zgodnie z instrukcjami. Aby uzyskać więcej informacji, [zobacz Raporty o niedo dostarczenia wiadomości e-mail w Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 Odmowa dostępu, zablokowanie wysyłania adresu IP [_adres IP_] (np. 5.7.511 Odmowa dostępu: Aby zażądać usunięcia z tej listy, <https://sender.office.com/> odwiedź i postępuj zgodnie z instrukcjami. Aby uzyskać więcej informacji, [zobacz Raporty o niedo dostarczenia wiadomości e-mail w Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 Gdzie  _adres IP_ to adres IP komputera, na którym działa serwer poczty.
 
@@ -56,7 +56,7 @@ Istnieją dobre powody, dla których nadawcy mogą się pojawiać na liście zab
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
 
 
-## <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Aby użyć portalu delist w celu usunięcia siebie z listy zablokowanych nadawców
+## <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list-after-errors-like-57511-access-denied"></a>Aby użyć portalu delist w celu usunięcia siebie z listy zablokowanych nadawców (po błędach, takich jak 5.7.511 Odmowa dostępu)
 
 1. W przeglądarce internetowej przejdź do .<https://sender.office.com>
 
@@ -81,7 +81,7 @@ Istnieją dobre powody, dla których nadawcy mogą się pojawiać na liście zab
 
 Aby [zapobiec blokowaniu](create-safe-sender-lists-in-office-365.md) adresów IP, zobacz Tworzenie list bezpiecznych nadawców w u usługi EOP i Ochrona [przed spamem](outbound-spam-controls.md) ruchu wychodzącego w u usługi EOP.
 
-### <a name="what-about-error-code-57511"></a>Co z kodem błędu 5.7.511?
+### <a name="how-do-fix-error-code-57511"></a>Jak naprawić kod błędu 5.7.511
  
 W przypadku problemu z dostarczaniem wysłanej wiadomości e-mail usługa Microsoft 365 lub Office 365 e-mail z powiadomieniem. Odbierana wiadomość e-mail to powiadomienie o stanie dostarczenia, nazywane także wiadomością dsn lub wiadomością podskokową. Standardowe powiadomienie tego typu jest nazywane raportem o niedostarczeniu, który informuje, że wiadomość nie została dostarczona. W niektórych sytuacjach firma Microsoft musi przeprowadzić dodatkowe badania nad ruchem z Twojego adresu IP, a jeśli otrzymujesz kod błędu NDR 5.7.511, nie będzie można korzystać z portalu delist.
  

@@ -1,14 +1,14 @@
 ---
-title: Połączenie rekordów DNS w witrynie GoDaddy do Microsoft 365
+title: Łączenie rekordów DNS w witrynie GoDaddy z usługą Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, usługi Skype dla firm Online i innych usług w witrynie GoDaddy dla firmy Microsoft.
-ms.openlocfilehash: ac71bbe1c57e1471e1ff343df75f034cc15c5901
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 728fd6cc34517213b338e3da07e6a275a1a727d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989482"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313555"
 ---
-# <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Połączenie rekordów DNS w witrynie GoDaddy do Microsoft 365
+# <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Łączenie rekordów DNS w witrynie GoDaddy z usługą Microsoft 365
 
  **[Zajrzyj do często zadawanych pytań dotyczących domen](../setup/domains-faq.yml)**, jeśli nie możesz znaleźć szukanych informacji.
 
@@ -40,17 +40,17 @@ Jeśli witryna GoDaddy jest Twoim dostawcą hostingu DNS, wykonaj czynności opi
 
 Dostępne są dwie opcje konfigurowania rekordów DNS dla domeny:
 
-- [**Używanie usługi Domain Połączenie**](#use-domain-connect-to-verify-and-set-up-your-domain) Jeśli domena nie jest jeszcze ustawiona na inną usługę poczty e-mail usługodawca, skorzystaj z procedury Domain Połączenie (Domena Połączenie), aby automatycznie zweryfikować i skonfigurować nową domenę do używania z usługą Microsoft 365.
+- [**Używanie funkcji Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) Jeśli twoja domena nie jest jeszcze ustawiona na inną usługę poczty e-mail usługodawca, skorzystaj z procedury domain Connect, aby automatycznie zweryfikować i skonfigurować nową domenę do używania z usługą Microsoft 365.
 
    LUB
 
 - [**Ręczne kroki**](#create-dns-records-with-manual-setup) Zweryfikuj domenę, korzystając z ręcznej procedury poniżej, i wybierz, kiedy i które rekordy dodać do rejestratora domen. Umożliwia to skonfigurowanie nowych rekordów MX (poczty), na przykład w dogodnym dla Ciebie momencie.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Weryfikowanie i konfigurowanie Połączenie przy użyciu usługi Domain Połączenie
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Weryfikowanie i konfigurowanie domeny za pomocą funkcji Domain Connect
 
-Wykonaj poniższe czynności, aby automatycznie zweryfikować i skonfigurować domenę GoDaddy u rejestratora Microsoft 365:
+Wykonaj poniższe czynności, aby automatycznie zweryfikować i skonfigurować domenę GoDaddy na microsoft 365:
 
-1. W centrum administracyjne platformy Microsoft 365 wybierz pozycję **Ustawienia** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, a następnie wybierz domenę, którą chcesz skonfigurować.
+1. W centrum administracyjnym platformy Microsoft 365 wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**SettingsDomains**</a> > , a następnie wybierz domenę, którą chcesz skonfigurować.
 
 1. Wybierz przycisk z trzema kropkami (więcej akcji), > pozycję **Rozpocznij konfigurowanie**.
 
@@ -62,11 +62,11 @@ Wykonaj poniższe czynności, aby automatycznie zweryfikować i skonfigurować d
 
 1. Na stronie logowania do witryny GoDaddy zaloguj się do swojego konta i wybierz pozycję **Autoryzuj**.
 
-    Ukończy to konfigurację domeny dla Microsoft 365.
+    Ukończy to konfigurację domeny dla platformy Microsoft 365.
 
 ## <a name="create-dns-records-with-manual-setup"></a>Tworzenie rekordów DNS przy użyciu konfiguracji ręcznej
 
-Po dodaniu tych rekordów w  rejestratorze GoDaddy Twoja domena będzie skonfigurować do współpracy z usługi firmy Microsoft.
+Po dodaniu tych rekordów w witrynie GoDaddy Twoja domena będzie skonfigurować do współpracy z usługami firmy Microsoft.
 
 > [!NOTE]
 > Wprowadzenie zmian w systemie DNS trwa zwykle około 15 minut. Jednak czasem aktualizacja internetowego systemu DNS może potrwać dłużej. Jeśli po dodaniu rekordów DNS występują problemy z przepływem poczty e-mail lub inne, zobacz [Rozwiązywanie problemów po zmianie nazwy domeny lub rekordów DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -110,9 +110,9 @@ Zanim będziecie używać własnej domeny z firmą Microsoft, musimy się upewni
 
 Po dodaniu rekordu w witrynie rejestratora domen wrócisz do firmy Microsoft i zażądasz tego rekordu. Gdy firma Microsoft znajdzie właściwy rekord TXT, domena zostanie zweryfikowana.
   
-Aby zweryfikować rekord w Microsoft 365:
+Aby zweryfikować rekord na platformy Microsoft 365:
   
-1. W centrum administracyjnym przejdź do strony **Ustawienia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domeny**</a>.
+1. W centrum administracyjnym przejdź do pozycji **Ustawienia Domeny**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. Na stronie Domeny wybierz weryfikowaną domenę, a następnie wybierz pozycję **Rozpocznij konfigurowanie**.
 

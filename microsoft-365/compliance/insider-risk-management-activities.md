@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a34e876e1ea6f9be9004609daf8afeec97cc4fbb
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: e56fb2e550adb870ed096f90c7d8d9b90c1de249
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "63009762"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314717"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Badanie działań w zakresie zarządzania ryzykiem w niejawnym programie testów
 
@@ -73,11 +73,11 @@ Pulpit nawigacyjny **alertów o ryzyku niejawnego** programu testów umożliwia 
 Alerty można po trzynascie chcieć określić w jednym z następujących stanów:
 
 - **Potwierdzone**: alert potwierdzono i przypisano do nowej lub istniejącej sprawy.
-- **Odrzucone**: alert odrzucony jako odrzucony w procesie sprawdzania.
+- **Odrzucone**: alert odrzucony jako odrzucony w procesie sprawdzania. Możesz podać przyczynę odrzucenie alertu i dołączyć uwagi dostępne w historii alertów użytkownika, aby zapewnić dodatkowy kontekst do odwołania w przyszłości lub dla innych recenzentów. Te powody mogą mieć różne przyczyny, od oczekiwanych działań, zdarzeń niewajętnych do działania, po prostu zmniejszenie liczby działań alertów dla użytkownika lub przyczyny związanej z notatkami alertów. Do wyboru *są przyczyny wyboru* klasyfikacji: Aktywność jest oczekiwana dla tego *użytkownika, Aktywność* jest wystarczająco efektowna, aby można było przeprowadzić dalsze badania, a alerty dla tego użytkownika *zawierają zbyt wiele działań*.
 - **Przegląd potrzeb**: Nowy alert, w którym nie zostały jeszcze wykonane akcje służące do oceniania.
 - **Rozwiązano**: alert, który jest częścią zamkniętej i rozpoznanej sprawy.
 
-Wyniki ryzyka alertu są automatycznie obliczane na podstawie kilku wskaźników aktywności ryzyka. Wskaźniki te obejmują typ działania ryzyka, liczbę i częstotliwość występowania aktywności, historię działań ryzyka użytkownika oraz dodawanie czynników ryzyka, które mogą poważnie zwiększyć poważne działanie. Wynik alertu poziomu ryzyka zwiększa programowy przydział poziomu ważności ryzyka dla każdego alertu i nie można go dostosować. Jeśli alerty pozostaną odblokowane, a działania związane z ryzykiem będą nadal narosły w alercie, poziom zagrożenia może wzrosnąć. Analitycy i schłońcy ryzyka mogą stosować alerty o ważności, aby ułatwić ich ocenianie zgodnie z zasadami i standardami organizacji.
+Wyniki ryzyka alertu są automatycznie obliczane na podstawie kilku wskaźników aktywności ryzyka. Wskaźniki te obejmują typ działania ryzyka, liczbę i częstotliwość występowania aktywności, historię działań ryzyka użytkownika oraz dodawanie czynników ryzyka, które mogą poważnie zwiększyć poważne działanie. Wynik alertu poziomu ryzyka zwiększa programowy przydział poziomu ważności ryzyka dla każdego alertu i nie można go dostosować. Jeśli alerty pozostaną odblokowane, a działania związane z ryzykiem będą nadal narosły w alercie, poziom zagrożenia może wzrosnąć. Analitycy i schłońcy ryzyka mogą korzystać z alertów o ważności, aby ułatwić ocenianie alertów zgodnie z zasadami i standardami organizacji.
 
 Poziom zagrożenia zagrożenia to:
 
@@ -93,6 +93,7 @@ W zależności od liczby i typu aktywnych zasad zarządzania ryzykiem niejawnego
 - **Ważność**: Wybierz co najmniej jeden poziom zagrożenia zagrożenia, aby przefiltrować listę alertów. Dostępne opcje to *Wysoki*, *Średni* i *Niski*.
 - **Wykryty czas**: Wybierz daty rozpoczęcia i zakończenia dla czasu utworzenia alertu. Ten filtr wyszukuje alerty od godziny 00:00 czasu UTC w dniu rozpoczęcia do godziny 00:00 w dniu zakończenia. Aby filtrować alerty dla określonego dnia, wprowadź datę dnia w polu Data  rozpoczęcia i datę następnego dnia w polu **Data zakończenia**.
 - **Zasady**. Wybierz jedną lub więcej zasad, aby filtrować alerty wygenerowane przez wybrane zasady.
+- **Czynniki ryzyka**: Wybierz jeden z większej liczby czynników ryzyka, aby filtrować listę alertów. Dostępne opcje to *Skumulowane działania ekseksywne**,* Działania obejmują zawartość priorytetu, Działania *sekwencji* i *Działania obejmują niedozwolone domeny*.
 
 ## <a name="search-alerts-on-the-alert-dashboard"></a>Alerty wyszukiwania na pulpicie nawigacyjnym alertów
 
@@ -116,31 +117,68 @@ Aby zweryfikować alert o ryzyku niejawnego programu testów, wykonaj następuj�
 
 1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie **ryzykiem w niejawnym programie** testów i wybierz **kartę Alerty**.
 2. Na **pulpicie nawigacyjnym** Alerty wybierz alert, który chcesz poszelić.
-3. Na **stronie szczegółów** alertu możesz przejrzeć informacje dotyczące alertu, potwierdzić alert i utworzyć nową sprawę, potwierdzić alert i dodać go do istniejącej sprawy lub odrzucić alert. Ta strona zawiera również bieżący stan alertu i poziom ważności alertu (na liście Jako wysoki, Średni lub Niski). Poziom ważności może rosnąć lub zmniejszać się z czasem, jeśli alert nie został poszepny.
+3. Na stronie **szczegółów alertu** możesz przejrzeć informacje dotyczące tego alertu. Możesz potwierdzić alert i utworzyć nową sprawę, potwierdzić alert i dodać go do istniejącej sprawy lub odrzucić alert. Ta strona zawiera również bieżący stan alertu i poziom ważności alertu (na liście Jako wysoki, Średni lub Niski). Poziom ważności może rosnąć lub zmniejszać się z czasem, jeśli alert nie został poszepny.
 
-    Karty na stronie szczegółów **alertu** zawierają więcej informacji dotyczących alertu:
-    - **Podsumowanie**: ta karta zawiera ogólne informacje o alercie.
-        - **Co to było zdarzenie wyzwalające?**: Wyświetla najnowsze zdarzenie wyzwalające, które monituje zasady o rozpoczęcie przypisywania wyników ryzyka do działania użytkownika.
-        - **Działanie, które wygenerował ten alert**: Wyświetla najwyższy czynnik ryzyka oraz dopasowanie zasad w okresie oceny aktywności, który spowodował wygenerowanie alertu.
-        - **Analiza ryzyka dla działania w tym alertze**: Wyświetla liczbę wszystkich szczegółowych informacji o ryzyku dla alertu. Niektóre przykłady są takie, jak gdy alert zawiera działania sekwencji, skumulowane ryzyko aktywności ex  rozsyłania, działanie zawierające zdarzenia z odblokowanych domen, działanie zawierające zdarzenia z treścią priorytetową lub działania, które są nietypowe dla użytkownika.
-        - **Szczegóły użytkownika**: wyświetla ogólne informacje o użytkowniku przypisanym do alertu. Jeśli jest włączona anonimizacja, pola nazwy użytkownika, adresu e-mail, aliasu i organizacji są anonimizowane.
-        - **Szczegóły alertu**: uwzględnia czas trwania od wygenerowania alertu, zasady, które wygenerowały alert, a także wymieniono sprawę wygenerowaną z tego alertu. W przypadku nowych alertów w **polu Sprawa** jest wyświetlana nazwa Brak.
-        - **Wykryta zawartość**: uwzględnia zawartość związaną z działaniami ryzyka związanych z alertem i podsumowuje zdarzenia związane z aktywnością według kluczowych obszarów. Wybranie linku aktywności spowoduje otwarcie Eksploratora aktywności i wyświetlenie szczegółowych informacji o aktywności.
-    - **Eksplorator aktywności**: Ta karta powoduje otwarcie **Eksploratora aktywności**. Aby uzyskać więcej informacji, zobacz następną sekcję tego artykułu.
+Aby uzyskać więcej informacji o alercie, skorzystaj z następujących sekcji i kart na stronie szczegółów alertu:
 
-## <a name="retention-and-item-limits"></a>Limity przechowywania i elementów
+### <a name="headersummary-section"></a>Sekcja Nagłówek/Podsumowanie
 
-Gdy zarządzanie ryzykiem w niejawnym programie testów informuje o wieku, ich wartość w celu zminimalizowania ryzykownej aktywności zmniejsza się w przypadku większości organizacji. Z kolei aktywne sprawy i skojarzone artefakty (alerty, szczegółowe informacje, działania) są zawsze przydatne dla organizacji i nie powinny mieć automatycznej daty wygaśnięcia. Dotyczy to wszystkich przyszłych alertów i artefaktów w aktywnym stanie dla każdego użytkownika skojarzonego z aktywną sprawą.
+Ta sekcja zawiera ogólne informacje o użytkowniku i alertach. Te informacje są dostępne dla kontekstu podczas przeglądania szczegółowych informacji o wykrytym działaniu dołączonym do alertu dla użytkownika:
 
-Aby zminimalizować liczbę starszych elementów, które zapewniają ograniczoną bieżącą wartość, w przypadku alertów dotyczących zarządzania ryzykiem w niejawnym programie testów, spraw i raportów aktywności użytkowników mają zastosowanie następujące limity i alerty dotyczące zarządzania ryzykiem w ramach niejawnego programu testów:
+- **Działanie, które wygenerował ten alert**: Wyświetla najwyższy czynnik ryzyka oraz dopasowanie zasad w okresie oceny aktywności, który spowodował wygenerowanie alertu.
+- **Wyzwalanie zdarzenia**: Wyświetla najnowsze zdarzenie wyzwalające, które monituje zasady o rozpoczęcie przypisywania wyników ryzyka do działania użytkownika.
+- **Profil użytkownika**: wyświetla ogólne informacje o użytkowniku przypisanym do alertu. Jeśli jest włączona anonimizacja, pola nazwy użytkownika, adresu e-mail, aliasu i organizacji są anonimizowane.
+- **Historia alertów użytkownika**: wyświetla listę alertów dla użytkownika z ostatnich 30 dni. Zawiera link do wyświetlenia pełnej historii alertów dla użytkownika.
 
-|**Element**|**Przechowywanie/limit**|
-|:-------|:------------------|
-| Alerty ze stanem przeglądu potrzeb | 120 dni od utworzenia alertu, a następnie automatycznie usunięte |
-| Aktywne sprawy (i skojarzone artefakty) | Bezterminowe przechowywanie nigdy nie wygasa |
-| Rozwiązane sprawy (i skojarzone artefakty) | 120 dni od rozwiązania problemu, a następnie automatycznie usunięte |
-| Maksymalna liczba aktywnych spraw | 100 |
-| Raporty aktywności użytkowników | 120 dni od wykrywania aktywności, a następnie automatycznie usunięte |
+### <a name="all-risk-factors"></a>Wszystkie czynniki ryzyka
+
+Ta karta powoduje otwarcie podsumowania czynników ryzyka dla działania alertów użytkownika. Czynniki ryzyka mogą pomóc w ustaleniu, jak ryzykowne jest działanie tego użytkownika podczas przeglądania. Czynniki ryzyka obejmują podsumowania dotyczące:
+
+- **Najważniejsze działania: Wyświetla** działania ekskacji z największą liczbą lub zdarzeniami alertu.
+- **Skumulowane działania ekseksywne**: Wyświetla zdarzenia skojarzone ze skumulowanym aktywnością ekseksywną.
+- **Sekwencje działań: Wyświetla** wykryte działania skojarzone z sekwencjami ryzyka.
+- **Nietypowe działania dla tego użytkownika**: Wyświetla działania użytkownika uznanego za nietypowe i traktowane jako nietypowe w zwykłego działaniach.
+- **Zawartość priorytetu**: wyświetla działania skojarzone z zawartością priorytetu.
+- **Niedozwolone domeny: wyświetla działania** dotyczące zdarzeń skojarzonych z domenami, które nie są niedozwolone.
+- **Dostęp do rekordu kondycji**: wyświetla działania dotyczące zdarzeń skojarzonych z uzyskiwaniem dostępu do rekordów kondycji.
+
+Dzięki tym filtrom będą dostępne tylko alerty z tymi czynnikami ryzyka, ale działanie, które wygenerował alert, może nie zostać podzielone na którekolwiek z tych kategorii. Na przykład alert zawierający działania sekwencji mógł zostać wygenerowany po prostu dlatego, że użytkownik skopiował plik na urządzenie USB.
+
+### <a name="content-detected"></a>Wykryto zawartość
+
+Sekcja na karcie **Wszystkie czynniki** ryzyka zawiera zawartość skojarzoną z działaniami ryzyka alertu i zawiera podsumowanie zdarzeń aktywności według kluczowych obszarów. Wybranie linku aktywności spowoduje otwarcie Eksploratora aktywności i wyświetlenie szczegółowych informacji o aktywności.
+
+### <a name="activity-explorer"></a>Eksplorator aktywności
+
+Ta karta otwiera Eksploratora aktywności. Aby uzyskać więcej informacji, zobacz sekcję Eksplorator aktywności w tym artykule.
+
+### <a name="user-activity"></a>Aktywność użytkowników
+
+Wykres **Aktywność użytkowników jest** jednym z najbardziej zaawansowanych narzędzi do wewnętrznej analizy ryzyka i analizy alertów oraz spraw w rozwiązaniu do zarządzania ryzykiem w niejawnym programie testów. Ta karta ma strukturę, która umożliwia szybki przegląd wszystkich działań użytkownika, w tym historycznej osi czasu wszystkich alertów, szczegółów alertów, bieżącego wyniku ryzyka dla użytkownika i sekwencji zdarzeń ryzyka.  
+
+![Aktywność użytkowników w zakresie zarządzania ryzykiem w niejawnym programie testów.](../media/insider-risk-user-activities.png)
+
+1. **Filtry czasu**: Domyślnie na wykresie Aktywność użytkownika są wyświetlane działania z ostatnich trzech miesięcy. Widok wykresu można łatwo filtrować, wybierając *karty 6* miesięcy, *3* miesięcy lub *1* miesiąca na wykresie bąbelkowy.
+2. **Aktywność i szczegóły alertów ryzyka**: Działania ryzyka są wyświetlane w wizualny sposób jako kolorowe bąbelki na wykresie Aktywność użytkownika. Bąbelki są tworzone dla różnych kategorii ryzyka i. Wybierz bąbelek, aby wyświetlić szczegółowe informacje dotyczące poszczególnych działań ryzyka. Szczegóły są następujące:
+    - **Data** działania ryzyka.
+    - Kategoria **działania ryzyka**. Mogą to być *na przykład wiadomości e-mail* z załącznikami wysyłanymi spoza organizacji lub pliki pobrane *z usługi SharePoint online*.
+    - **Ocena ryzyka** dla alertu. Ten wynik jest wynikiem liczbowym poziomu zagrożenia zagrożenia.
+    - Liczba zdarzeń skojarzonych z alertem. Dostępne są również linki do wszystkich plików i wiadomości e-mail związanych z aktywnością związaną z ryzykiem.
+3.  **Filtry i sortowanie (podgląd)**:
+    - **Kategoria ryzyka**: Filtruj działania według następujących kategorii ryzyka: Działania z wynikami ryzyka *> 15 (chyba że* w sekwencji) i *Działania sekwencji*.
+    - **Typ działania**: Filtruj działania według następujących typów: *Dostęp**, Usuwanie**, Kolekcja*, *Ex zakreślenie*, In szybkowanie, *Przesłoń* i *Zabezpieczenia*. 
+    - **Sortuj według**: W tym celu należy wyświetlić listę działań osi czasu *według daty lub* *wyniku ryzyka*.
+4. **Sekwencja ryzyka (wersja zapoznawcza)**: Chronologiczna kolejność działań ryzykownych jest ważnym aspektem analizy ryzyka i identyfikowania tych powiązanych działań jest ważną częścią oceny ogólnego ryzyka dla organizacji. Powiązane działania alertów są wyświetlane z liniami łączącymi w celu wyróżnienia, że te działania są skojarzone z większym obszarem ryzyka. Ten widok działań może ułatwić schłodne "łączenie kropek" w przypadku działań ryzyka, które mogły być przeglądane jako odizolowane lub zdarzenia typu one -off. Wybierz dowolny bąbelek w sekwencji, aby wyświetlić szczegółowe informacje dotyczące wszystkich skojarzonych działań ryzyka. Szczegóły są następujące:
+
+    - **Nazwa** sekwencji.
+    - **Data** lub **zakres dat** sekwencji.
+    - **Wynik ryzyka** dla sekwencji. Ten wynik jest wynikiem liczbowy sekwencji połączonych poziomów zagrożenia zagrożenia dla każdego pokrewnego działania w sekwencji.
+    - **Liczba zdarzeń skojarzonych z każdym alertem w sekwencji**. Dostępne są również linki do każdego pliku lub wiadomości e-mail skojarzonego z każdym działaniem ryzyka.
+    - **Pokazywanie działań w sekwencji**. Wyświetla sekwencję jako linię wyróżnienia na wykresie bąbelkowy i rozszerza szczegóły alertu, aby wyświetlić wszystkie powiązane alerty w sekwencji.
+
+4. **Legenda aktywności ryzyka**: u dołu wykresu aktywności użytkowników legenda kodowana kolorami ułatwia szybkie ustalenie kategorii ryzyka dla każdego alertu.
+5. **Chronologia** aktywności ryzyka: zostanie wymieniona pełna chronologia wszystkich alertów ryzyka związanych ze sprawą, łącznie ze wszystkimi szczegółami dostępnymi w odpowiednim bąbelku alertów.
+6. **Akcje dotyczące** sprawy: Opcje dotyczące rozwiązywania problemu znajdują się na pasku narzędzi akcji sprawy. Podczas wyświetlania w przypadku sprawy można rozstrzygnieć sprawę, wysłać do użytkownika powiadomienie e-mail lub eskalować sprawę dla danych lub badania użytkownika.
 
 ## <a name="activity-explorer"></a>Eksplorator aktywności
 
@@ -157,12 +195,13 @@ Za pomocą filtrów Zakres aktywności i Analiza ryzyka możesz wyświetlać i s
     - Wszystkie wynikowe działania dla tego użytkownika
     - Tylko wynikowe działania w tym alertie
 
-- **Filtry analizy ryzyka**: Filtry aktywności mające zastosowanie do wszystkich zasad przypisywania wyników ryzyka.
-    - Skumulowane działania ekscytacji
-    - Uwzględnia zdarzenie z treścią priorytetową
-    - Uwzględnia zdarzenie z domeną niedozwolonej
-    - Sekwencja działań
+- **Filtry czynników ryzyka**: Filtry aktywności czynnika ryzyka mające zastosowanie do wszystkich zasad przypisywania wyników ryzyka Obejmuje to wszystkie działania dotyczące wszystkich zasad dotyczących użytkowników w zakresie.
     - Nietypowe działania
+    - Uwzględnia zdarzenia z treścią priorytetową
+    - Zawiera zdarzenia z domeną niedozwolonej
+    - Sekwencja działań
+    - Skumulowane działania ekscytacji
+    - Działania w zakresie dostępu do rekordu kondycji
 
 ![Przegląd Eksploratora aktywności zarządzania ryzykiem w niejawnym programie testów.](../media/insider-risk-activity-explorer.png)
 
@@ -193,6 +232,20 @@ W przypadku przeglądania i oceniania alertów możesz utworzyć nową sprawę w
 5. Wybierz **pozycję Utwórz sprawę** , aby utworzyć nową sprawę, lub pozycję **Anuluj** , aby zamknąć okno dialogowe bez tworzenia sprawy.
 
 Po utworzeniu sprawy wiało i analitycy mogą zarządzać sprawą i działać w jej sprawie. Aby uzyskać więcej informacji, zobacz artykuł o przypadku [zarządzania ryzykiem w niejawnym programie](insider-risk-management-cases.md) testów.
+
+## <a name="retention-and-item-limits"></a>Limity przechowywania i elementów
+
+Gdy zarządzanie ryzykiem w niejawnym programie testów informuje o wieku, ich wartość w celu zminimalizowania ryzykownej aktywności zmniejsza się w przypadku większości organizacji. Z kolei aktywne sprawy i skojarzone artefakty (alerty, szczegółowe informacje, działania) są zawsze przydatne dla organizacji i nie powinny mieć automatycznej daty wygaśnięcia. Dotyczy to wszystkich przyszłych alertów i artefaktów w aktywnym stanie dla każdego użytkownika skojarzonego z aktywną sprawą.
+
+Aby zminimalizować liczbę starszych elementów, które zapewniają ograniczoną bieżącą wartość, w przypadku alertów dotyczących zarządzania ryzykiem w niejawnym programie testów, spraw i raportów aktywności użytkowników mają zastosowanie następujące limity i alerty dotyczące zarządzania ryzykiem w ramach niejawnego programu testów:
+
+|**Element**|**Przechowywanie/limit**|
+|:-------|:------------------|
+| Alerty ze stanem przeglądu potrzeb | 120 dni od utworzenia alertu, a następnie automatycznie usunięte |
+| Aktywne sprawy (i skojarzone artefakty) | Bezterminowe przechowywanie nigdy nie wygasa |
+| Rozwiązane sprawy (i skojarzone artefakty) | 120 dni od rozwiązania problemu, a następnie automatycznie usunięte |
+| Maksymalna liczba aktywnych spraw | 100 |
+| Raporty aktywności użytkowników | 120 dni od wykrywania aktywności, a następnie automatycznie usunięte |
 
 ## <a name="get-help-managing-your-insider-risk-alert-queue"></a>Uzyskiwanie pomocy dotyczącej zarządzania kolejką alertów o ryzyku niejawnego programu testów
 

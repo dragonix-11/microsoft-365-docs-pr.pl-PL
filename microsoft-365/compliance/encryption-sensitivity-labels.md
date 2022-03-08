@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Skonfiguruj etykiety wrażliwości na rzecz szyfrowania, które chronią Twoje dane, ograniczając dostęp i użycie.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e7ab69717256be5d95e69d2342fbe78b00531c5
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63015988"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311903"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Ograniczanie dostępu do zawartości przy użyciu etykiet wrażliwości w celu zastosowania szyfrowania
 
@@ -193,6 +193,8 @@ Przypisując uprawnienia, możesz wybrać:
 - Dowolni uwierzytelnieni użytkownicy. Przed wybraniem tego ustawienia upewnij się, że [rozumiesz](#requirements-and-limitations-for-add-any-authenticated-users) wymagania i ograniczenia tego ustawienia.
 
 - Dowolna konkretną grupa zabezpieczeń z obsługą poczty e-mail, grupa dystrybucyjna [Microsoft 365 (wcześniej](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601) Office 365) w usłudze Azure AD. Grupa Microsoft 365 może mieć członkostwo statyczne lub [dynamiczne](/azure/active-directory/users-groups-roles/groups-create-rule). Należy zauważyć, że nie można używać dynamicznej grupy dystrybucyjnej z usługi [Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), ponieważ ten typ grupy nie jest synchronizowany z usługą Azure AD i nie można użyć grupy zabezpieczeń, która nie ma włączonej obsługi poczty e-mail.
+    
+    W obrębie określonej grupy obsługiwanej w przypadku tej opcji każdy użytkownik [](/azure/information-protection/prepare#azure-information-protection-requirements-for-user-accounts) zostanie uwierzytelniony indywidualnie przez usługę Azure Information Protection, zanim będzie on miał możliwość otwarcia zaszyfrowanej zawartości.
 
 - Dowolny adres e-mail lub domena. Użyj tej opcji, aby określić wszystkich użytkowników w innej organizacji korzystających z usługi Azure AD, wprowadzając dowolną nazwę domeny z tej organizacji. Możesz również użyć tej opcji w przypadku dostawców usług społecznościowych, wprowadzając nazwę domeny, taką **jak gmail.com**, **hotmail.com** lub **outlook.com**.
 
@@ -429,7 +431,7 @@ Szyfrowanie najbardziej poufnych dokumentów i wiadomości e-mail pozwala zagwar
 
 - Gdy autoryzowani użytkownicy otwierają zaszyfrowane dokumenty w Office aplikacji, widzą nazwę etykiety i opis na żółtym pasku komunikatów u góry aplikacji. Gdy uprawnienia szyfrowania rozciągają się na osoby spoza organizacji, dokładnie przejrzyj nazwy etykiet i opisy, które będą widoczne na tym pasku komunikatów po otwarciu dokumentu.
 
-- Aby wielu użytkowników jednocześnie edytować zaszyfrowany plik, wszyscy oni muszą używać Office dla sieci web.  W przypadku komputerów Windows i Mac włączono współtworowanie plików zaszyfrowanych przy użyciu etykiet wrażliwości, a użytkownicy mają wymagane minimalne wersje [](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) programu Word, Excel i PowerPoint.[](sensitivity-labels-coauthoring.md) Jeśli nie o to chodzi, a plik jest już otwarty:
+- Aby wielu użytkowników jednocześnie edytować zaszyfrowany plik, wszyscy oni muszą używać programu Office dla sieci web lub dla plików zaszyfrowanych przy użyciu etykiet [](sensitivity-labels-coauthoring.md) wrażliwości włączono funkcję współtworowania, Office wszyscy użytkownicy mają aplikacje, które obsługują [tę](sensitivity-labels-coauthoring.md#prerequisites) funkcję. Jeśli nie o to chodzi, a plik jest już otwarty:
 
   - W Office (w systemie Windows, Mac, Android lub iOS) użytkownikom jest wyświetlany komunikat "Plik w użyciu" z imieniem i nazwiskiem osoby, która wyewidencjonowała plik. Następnie mogą wyświetlić kopię tylko do odczytu lub zapisać i edytować kopię pliku, a także otrzymać powiadomienie, gdy plik będzie dostępny.
   - W Office dla sieci web wyświetlany jest komunikat o błędzie informujący, że nie mogą edytować dokumentu razem z innymi osobami. Następnie mogą wybrać pozycję **Otwórz w widoku do czytania**.

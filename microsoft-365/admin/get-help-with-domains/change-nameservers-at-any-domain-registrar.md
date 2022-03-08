@@ -2,8 +2,8 @@
 title: Zmienianie serwerów nazw w celu skonfigurowania Microsoft 365 rejestratora domen
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,19 +25,19 @@ search.appverid:
 - GEU150
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
-description: Dowiedz się, jak dodać i skonfigurować domenę w Microsoft 365, aby w Twoich usługach, takich jak poczta e-mail i Skype dla firm Online, korzystać z Twojej nazwy domeny.
-ms.openlocfilehash: 9158d7b22533ffde9a378b5f680ff5552854bae9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak dodać i skonfigurować domenę w Microsoft 365 tak, aby w Twoich usługach, takich jak poczta e-mail i Skype dla firm Online, korzystać z Twojej nazwy domeny.
+ms.openlocfilehash: 2d591429d74e03eec883b524b8fa36d082cfab93
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973548"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316971"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Zmienianie serwerów nazw w celu skonfigurowania Microsoft 365 rejestratora domen
 
  **[Zajrzyj do często zadawanych pytań dotyczących domen](../setup/domains-faq.yml)**, jeśli nie możesz znaleźć szukanych informacji.
 
-Wykonaj poniższe instrukcje, aby dodać i skonfigurować domenę w Microsoft 365 tak, aby twoje usługi, takie jak poczta e-mail Teams, były używać Twojej nazwy domeny. W tym celu zweryfikuj domenę, a następnie zmień serwery nazw domeny na Microsoft 365, aby można było skonfigurować prawidłowe rekordy DNS. Wykonaj poniższe czynności, jeśli następujące stwierdzenia opisują Twoją sytuację:
+Wykonaj poniższe instrukcje, aby dodać i skonfigurować domenę w Microsoft 365 tak, aby Twoje usługi, takie jak poczta e-mail Teams, były używać Twojej nazwy domeny. W tym celu zweryfikuj domenę, a następnie zmień serwery nazw domeny na Microsoft 365 tak, aby można było skonfigurować poprawne rekordy DNS. Wykonaj poniższe czynności, jeśli następujące stwierdzenia opisują Twoją sytuację:
 
 - Masz własną domenę i chcesz skonfigurować ją do współpracy z Microsoft 365.
 
@@ -48,7 +48,7 @@ Wykonaj poniższe instrukcje, aby dodać i skonfigurować domenę w Microsoft 36
 > [!NOTE]
 > Utworzysz tylko jeden z tych rekordów. Preferowanym typem rekordu jest TXT, ale niektórzy dostawcy hostingu DNS nie obsługują go. W takim wypadku możesz zamiast niego utworzyć rekord MX.
 
-Zanim będziesz używać własnej domeny z Microsoft 365, musimy się upewnić, że jesteś jej właścicielem. Możliwość zalogowania się do swojego konta w witrynie rejestratora domen i utworzenia rekordu DNS udowadnia Microsoft 365, że jesteś właścicielem domeny.
+Zanim będziesz używać własnej domeny z Microsoft 365, musimy się upewnić, że jesteś jej właścicielem. Możliwość zalogowania się do swojego konta w witrynie rejestratora domen i utworzenia rekordu DNS udowadnia, Microsoft 365, że jesteś właścicielem domeny.
 
 > [!NOTE]
 > Ten rekord jest używany tylko do weryfikowania, że jesteś właścicielem domeny, i nie wywiera wpływu na nic innego. Jeśli chcesz, możesz go później usunąć.
@@ -73,7 +73,7 @@ W zależności od tego, czy tworzysz rekord TXT, czy rekord MX, wykonaj jedną z
 
 |Typ rekordu|Alias lub nazwa hosta|Value|Czas wygaśnięcia|
 |---|---|---|---|
-|TXT|Wykonaj jedną z następujących czynności: Wpisz znak **@** lub pozostaw to pole puste albo wpisz nazwę domeny.  <p> **Uwaga**: Różne hosty DNS mają różne wymagania dotyczące tego pola.|MS=ms *XXXXXXXX* <p> **Uwaga:** To jest przykład. Użyj tutaj swojej **konkretnej** wartości Miejsce docelowe lub points to Address z tabeli w Microsoft 365. [Jak to znaleźć?](../get-help-with-domains/information-for-dns-records.md)|Ustaw ten parametr na wartość **1 godzina** lub na równowartość w minutach ( **60** ), sekundach ( **3600** ) itp.|
+|TXT|Wykonaj jedną z następujących czynności: Wpisz znak **@** lub pozostaw to pole puste albo wpisz nazwę domeny.  <p> **Uwaga**: Różne hosty DNS mają różne wymagania dotyczące tego pola.|MS=ms *XXXXXXXX* <p> **Uwaga:** To jest przykład. Użyj tutaj swojej **konkretnej** wartości Miejsce docelowe lub punkt na adres z tabeli w Microsoft 365. [Jak to znaleźć?](../get-help-with-domains/information-for-dns-records.md)|Ustaw ten parametr na wartość **1 godzina** lub na równowartość w minutach ( **60** ), sekundach ( **3600** ) itp.|
 |||||
 
 **Jeśli tworzysz rekord MX, użyj tych wartości:**
@@ -84,14 +84,14 @@ W zależności od tego, czy tworzysz rekord TXT, czy rekord MX, wykonaj jedną z
 
 |Typ rekordu|Alias lub nazwa hosta|Value|Priority (Priorytet)|TTL (Czas wygaśnięcia)|
 |---|---|---|---|---|
-|MX|Wpisz znak **@** lub nazwę domeny. |Ms=ms *XXXXXXXX* **Uwaga:** to jest przykład. Użyj tutaj swojej **konkretnej** wartości Miejsce docelowe lub points to Address z tabeli w Microsoft 365. [Jak to znaleźć?](../get-help-with-domains/information-for-dns-records.md)|W **przypadku rekordu Priority** (Priorytet) w celu uniknięcia konfliktów z rekordem MX używanym na poziomie przepływu poczty e-mail użyj priorytetu niższego niż priorytet dla wszystkich istniejących rekordów MX. Aby uzyskać więcej informacji o priorytetach, zobacz [Co to jest priorytet rekordu MX?](../setup/domains-faq.yml)|Ustaw ten parametr na wartość **1 godzina** lub na równowartość w minutach ( **60** ), sekundach ( **3600** ) itp.|
+|MX|Wpisz znak **@** lub nazwę domeny. |Ms=ms *XXXXXXXX* **Uwaga:** to jest przykład. Użyj tutaj swojej **konkretnej** wartości Miejsce docelowe lub punkt na adres z tabeli w Microsoft 365. [Jak to znaleźć?](../get-help-with-domains/information-for-dns-records.md)|W **przypadku rekordu Priority** (Priorytet) w celu uniknięcia konfliktów z rekordem MX używanym na poziomie przepływu poczty e-mail użyj priorytetu niższego niż priorytet dla wszystkich istniejących rekordów MX. Aby uzyskać więcej informacji o priorytetach, zobacz [Co to jest priorytet rekordu MX?](../setup/domains-faq.yml)|Ustaw ten parametr na wartość **1 godzina** lub na równowartość w minutach ( **60** ), sekundach ( **3600** ) itp.|
 ||||||
 
 ### <a name="save-the-record"></a>Zapisywanie rekordu
 
-Po dodaniu rekordu w witrynie rejestratora domen wrócisz do witryny usługi Microsoft 365 i zażądasz, aby Microsoft 365 szukać tego rekordu.
+Po dodaniu rekordu w witrynie rejestratora domen wrócisz do usługi Microsoft 365 i zażądasz, aby Microsoft 365 go szukać.
 
-Po Microsoft 365 rekordu TXT domena zostanie zweryfikowana.
+Po Microsoft 365 poprawnego rekordu TXT domena zostanie zweryfikowana.
 
 1. W Centrum administracyjnym przejdź do strony **Ustawienia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domeny</a>.
 
@@ -106,7 +106,7 @@ Po Microsoft 365 rekordu TXT domena zostanie zweryfikowana.
 
 ## <a name="change-your-domains-nameserver-ns-records"></a>Zmienianie rekordów serwerów nazw domeny (SN)
 
-W ostatnim kroku kreatora konfiguracji domen w programie Microsoft 365 pozostaje jedno zadanie do wykonania. Aby skonfigurować domenę przy użyciu usług Microsoft 365, takich jak poczta e-mail, zmień rekordy serwera nazw (NS) domeny u rejestratora domen w celu wskazania podstawowych i pomocniczych serwerów nazw usługi Microsoft 365. Następnie, ponieważ Microsoft 365 hostuje Twój system DNS, wymagane rekordy DNS dla Twoich usług są automatycznie ustawiane. Rekordy serwera nazw można zaktualizować samodzielnie, wykonując kroki podawane przez rejestratora domen w zawartości pomocy w jego witrynie sieci Web. Jeśli nie masz wiedzy na temat systemu DNS, skontaktuj się z zespołem pomocy technicznej u rejestratora domen.
+W ostatnim kroku kreatora konfiguracji domen w programie Microsoft 365 pozostaje jedno zadanie do wykonania. Aby skonfigurować domenę przy użyciu usług Microsoft 365, takich jak poczta e-mail, zmień rekordy serwera nazw (NS) domeny u rejestratora domen, tak aby wskazują podstawowe i pomocnicze serwery nazw usługi Microsoft 365. Następnie, ponieważ Microsoft 365 hostuje Twój system DNS, wymagane rekordy DNS dla Twoich usług są automatycznie ustawiane. Rekordy serwera nazw można zaktualizować samodzielnie, wykonując kroki podawane przez rejestratora domen w zawartości pomocy w jego witrynie sieci Web. Jeśli nie masz wiedzy na temat systemu DNS, skontaktuj się z zespołem pomocy technicznej u rejestratora domen.
 
 ::: moniker range="o365-worldwide"
 
@@ -122,12 +122,12 @@ Aby samodzielnie zmienić serwery nazw domeny w witrynie internetowej rejestrato
     - Czwarty serwer nazw: ns4.bdm.microsoftonline.com
 
    > [!TIP]
-   > Najlepiej jest dodać wszystkie cztery rekordy, ale jeśli rejestrator obsługuje tylko dwa rekordy, dodaj **ns1.bdm.microsoftonline.com i ns2.bdm.microsoftonline.com****.**
+   > Najlepiej dodać wszystkie cztery rekordy, ale jeśli rejestrator obsługuje tylko dwa rekordy, dodaj rekordy **ns1.bdm.microsoftonline.com i** **ns2.bdm.microsoftonline.com**.
 
 3. Zapisz zmiany.
 
 > [!CAUTION]
-> Zmiana rekordów serwera nazw domeny na takie, które wskazują serwery nazw usługi Microsoft 365, wpływa na wszystkie usługi obecnie skojarzone z Twoją domeną. Jeśli pominięto jakiekolwiek kroki kreatora, na przykład dodawanie adresów e-mail, lub domena jest używana do obsługi blogów, koszyków albo innych usług, wymagane jest wykonanie dodatkowych czynności. W przeciwnym razie ta zmiana może spowodować przerwy w świadczeniu usług, na przykład utratę dostępu do poczty e-mail lub niedostępność bieżącej witryny internetowej.
+> Zmiana rekordów serwera nazw domeny na takie, które wskazują Microsoft 365 nazw, wpływa na wszystkie usługi obecnie skojarzone z Twoją domeną. Jeśli pominięto jakiekolwiek kroki kreatora, na przykład dodawanie adresów e-mail, lub domena jest używana do obsługi blogów, koszyków albo innych usług, wymagane jest wykonanie dodatkowych czynności. W przeciwnym razie ta zmiana może spowodować przerwy w świadczeniu usług, na przykład utratę dostępu do poczty e-mail lub niedostępność bieżącej witryny internetowej.
 
 ::: moniker-end
 
@@ -146,13 +146,13 @@ Aby samodzielnie zmienić serwery nazw domeny w witrynie internetowej rejestrato
 3. Zapisz zmiany.
 
 > [!CAUTION]
-> Zmiana rekordów serwera nazw domeny na takie, które wskazują serwery nazw usługi Office 365 obsługiwane przez firmę 21Vianet, wpływa na wszystkie usługi obecnie skojarzone z Twoją domeną. Jeśli pominięto jakiekolwiek kroki kreatora, na przykład dodawanie adresów e-mail, lub domena jest używana do obsługi blogów, koszyków albo innych usług, wymagane jest wykonanie dodatkowych czynności. W przeciwnym razie ta zmiana może spowodować przerwy w świadczeniu usług, na przykład utratę dostępu do poczty e-mail lub niedostępność bieżącej witryny internetowej.
+> Zmiana rekordów serwera nazw domeny na takie, które wskazują serwer Office 365 obsługiwany przez serwery nazw firmy 21Vianet, wpływa na wszystkie usługi obecnie skojarzone z Twoją domeną. Jeśli pominięto jakiekolwiek kroki kreatora, na przykład dodawanie adresów e-mail, lub domena jest używana do obsługi blogów, koszyków albo innych usług, wymagane jest wykonanie dodatkowych czynności. W przeciwnym razie ta zmiana może spowodować przerwy w świadczeniu usług, na przykład utratę dostępu do poczty e-mail lub niedostępność bieżącej witryny internetowej.
 
 ::: moniker-end
 
 Oto niektóre dodatkowe kroki, które mogą być wymagane na przykład dla hostingu poczty e-mail i witryny internetowej:
 
-- Przenieś wszystkie adresy e-mail, w których jest Microsoft 365 domeny, zanim zmienisz rekordy systemu nazw.
+- Przenieś wszystkie adresy e-mail, w których jest Microsoft 365, zanim zmienisz rekordy systemu nazw.
 
 - Chcesz dodać domenę, która jest obecnie używana z adresem witryny internetowej, na przykład `https://www.fourthcoffee.com`? Podczas dodawania domeny możesz wykonać poniższe czynności, aby zachować swoją witrynę internetową w miejscu jej hostować teraz, dzięki czemu po zmianie rekordów serwera nazw domeny na takie, które wskazują adres Microsoft 365.
 

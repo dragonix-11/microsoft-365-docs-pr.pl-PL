@@ -14,14 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 description: Skonfiguruj zabezpieczenia i infrastrukturę, która umożliwi Twoim pracownikom pracę zdalną z dowolnego miejsca i w dowolnym czasie.
-ms.openlocfilehash: 602bec66eec26551ae6d98bafdb99466747d8fa9
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 8ea359f2c0de98ac35b90a379e5a60c4578e66cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63027143"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323419"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Konfigurowanie zespołu z izolacji zabezpieczeń w środowisku deweloper/test
 
@@ -177,15 +179,14 @@ Po opublikowaniu **etykiety Strategii** firmy może mi trochę potrwać.
 
 Następnie zastosuj nową etykietę do zespołu  strategii firmy i zaktualizuj domyślny typ linku udostępniania, aby zmniejszyć ryzyko przypadkowego udostępnienia plików i folderów szerszemu gronu odbiorców, niż zamierzano.
 
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-1. W **obszarze Witryny** kliknij pozycję **Aktywne witryny**.
-1. Kliknij **witrynę Strategii** firmy.
-1. Na karcie **Zasady** **w obszarze Charakter** kliknij pozycję **Edytuj**.
-1. Wybierz **etykietę Strategia firmy** , a następnie kliknij przycisk **Zapisz**.
-1. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** kliknij pozycję **Edytuj**.
+1. Otwórz centrum SharePoint w obszarze **Witryny** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+1. Wybierz **witrynę Strategii** firmy.
+1. Na karcie **Zasady** **w obszarze Charakter** wybierz pozycję **Edytuj**.
+1. Wybierz **etykietę Strategia firmy** , a następnie wybierz pozycję **Zapisz**.
+1. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** wybierz pozycję **Edytuj**.
 1. Wybierz **pozycję Tylko osoby w Twojej organizacji**.
 1. W **obszarze Domyślny** typ linku udostępniania wyczyść  pole wyboru Takie samo ustawienie jak ustawienie na poziomie organizacji i zaznacz pole **wyboru Osoby z istniejącym dostępem**.
-1. Kliknij **Zapisz**.
+1. Wybierz **Zapisz**.
 
 Następnie skonfiguruj udostępnianie witryn tylko dla właścicieli dla **zespołu strategii** firmy.
 

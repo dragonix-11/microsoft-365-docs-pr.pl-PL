@@ -1,9 +1,9 @@
 ---
 title: Odpowiedź i obsługa coVID-19 firmy Contoso dla pracy hybrydowej
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Zrozumienie, jak firma Contoso Corporation reagowała na usługę COVID-19, i inżynieruje infrastrukturę instalacji i aktualizacji oprogramowania na przykład w celu pracy hybrydowej.
-ms.openlocfilehash: 9ed3857c97bd82bd03a6a192bec5666f22e0589a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8b3829b7d3361c3a29ee495dd5a335a28a08c0b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988365"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325729"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Odpowiedź i obsługa coVID-19 firmy Contoso dla pracy hybrydowej
 

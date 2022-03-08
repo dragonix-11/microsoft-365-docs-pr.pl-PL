@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: bfb8e1fb42dcde1a3140e0990221536c1b76b4f8
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015398"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327549"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Badanie użytkowników w programie Microsoft 365 Defender
 

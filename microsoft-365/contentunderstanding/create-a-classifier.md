@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Dowiedz się, jak utworzyć klasyfikator w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: 1fe4200c68d6458d20a71b834bd2a0b08319ecb2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e9be6065e0328a412e73680a0200ea7929c8011
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988020"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324875"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Tworzenie klasyfikatora w aplikacji Microsoft SharePoint Syntex
 
@@ -61,7 +62,7 @@ Pierwszym krokiem do utworzenia modelu jest nadanie mu nazwy:
 
 Podczas tworzenia modelu jest również tworzyć nowy typ zawartości witryny. Typ zawartości reprezentuje kategorię dokumentów o wspólnych cechach i współużytkuje kolekcję kolumn lub właściwości metadanych dla tej konkretnej zawartości. SharePoint zawartości są zarządzane za pomocą [galerii Typy zawartości](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). W tym przykładzie podczas tworzenia modelu jest tworzyć nowy typ zawartości *Odnawianie* umowy.
 
-Wybierz **pozycję Ustawienia zaawansowane**, jeśli chcesz zamapować ten model na istniejący typ zawartości przedsiębiorstwa w galerii typów SharePoint zawartości, aby użyć jego schematu. Enterprise typów zawartości są przechowywane w Centrum typów zawartości w centrum administracyjnym usługi SharePoint i są zesumowane ze wszystkimi witrynami w dzierżawie. Pamiętaj, że chociaż możesz użyć istniejącego typu zawartości w celu wykorzystania jego schematu w celu pomoc w identyfikacji i klasyfikacji, nadal musisz szkolenie swojego modelu w celu wyodrębniania informacji z identyfikowanych przez niego plików.</br>
+Wybierz **pozycję Ustawienia zaawansowane**, jeśli chcesz zamapować ten model na istniejący typ zawartości przedsiębiorstwa w galerii typów SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">zawartości</a>, aby użyć jego schematu. Enterprise typów zawartości są przechowywane w Centrum typów zawartości w centrum administracyjnym usługi SharePoint i są zesumowane ze wszystkimi witrynami w dzierżawie. Pamiętaj, że chociaż możesz użyć istniejącego typu zawartości w celu wykorzystania jego schematu w celu pomoc w identyfikacji i klasyfikacji, nadal musisz szkolenie swojego modelu w celu wyodrębniania informacji z identyfikowanych przez niego plików.</br>
 
 ![Ustawienia zaawansowane.](../media/content-understanding/advanced-settings.png)
 

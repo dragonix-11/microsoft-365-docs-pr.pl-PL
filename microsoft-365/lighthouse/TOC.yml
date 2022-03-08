@@ -12,6 +12,8 @@
   items:
     - name: Konfigurowanie zabezpieczeń portalu
       href: m365-lighthouse-configure-portal-security.md
+    - name: Konfigurowanie ról
+      href: m365-lighthouse-set-up-roles.md
     - name: Przeglądanie dzienników inspekcji
       href: m365-lighthouse-review-audit-logs.md
 - name: Ochrona klientów za pomocą planu bazowego
@@ -42,6 +44,8 @@
       href: m365-lighthouse-reset-user-password.md
     - name: Wyszukiwanie użytkowników
       href: m365-lighthouse-search-for-users.md
+    - name: Wyświetlanie ryzykownych użytkowników i zarządzanie nimi
+      href: m365-lighthouse-view-manage-risky-users.md
 - name: Zarządzanie urządzeniami
   items:
     - name: Omówienie strony zgodności urządzenia
@@ -60,5 +64,9 @@
   items:
     - name: Uzyskiwanie pomocy i obsługi technicznej
       href: m365-lighthouse-get-help-and-support.md
+    - name: Znane problemy
+      href: m365-lighthouse-known-issues.md
+    - name: Rozwiązywanie problemów i komunikatów o błędach
+      href: m365-lighthouse-troubleshoot.md
     - name: Często zadawane pytania (często zadawane pytania)
       href: m365-lighthouse-faq.yml

@@ -2,8 +2,8 @@
 title: Tworzenie szablonów ocen w Menedżerze zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak tworzyć szablony dla ocen w Menedżerze zgodności firmy Microsoft. Tworzenie i modyfikowanie szablonów przy użyciu Excel pliku.
-ms.openlocfilehash: be8d3356bd47289e3822133a2f97cf6349fad05c
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1c7ccbe01d3411ace40cfe6ccdbe4fcb4d90480b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "62989724"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316187"
 ---
 # <a name="create-an-assessment-template-in-microsoft-compliance-manager"></a>Tworzenie szablonu oceny w Menedżerze zgodności firmy Microsoft
 

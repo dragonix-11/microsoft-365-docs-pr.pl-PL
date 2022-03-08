@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratorzy mogą włączyć obsługę etykiet wrażliwości dla plików programu Word, Excel i PowerPoint w plikach SharePoint i OneDrive.
-ms.openlocfilehash: a77721175962acbddbaae393aef49d16b96a9215
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 08c3daab9195e98c3b099255f1e7fb38a2324c33
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62998928"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320021"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Włączanie etykiet wrażliwości dla Office w SharePoint i OneDrive
 
@@ -73,7 +73,7 @@ Użyj aplikacji synchronizacja usługi OneDrive w wersji 19.002.0121.0008 lub no
 
 ## <a name="limitations"></a>Ograniczenia
 
-- Programy SharePoint i OneDrive nie mogą przetwarzać niektórych plików oznaczonych i zaszyfrowanych z aplikacji klasycznych firmy Office, gdy te pliki zawierają dane dodatku PowerQuery, dane przechowywane przez dodatki niestandardowe lub niestandardowe części XML, takie jak właściwości strony tytułowej, schematy typów zawartości, niestandardowy panel informacji o dokumencie i niestandardowa informacja XSN. To ograniczenie dotyczy również plików, które w momencie [](https://support.microsoft.com/office/enable-and-configure-unique-document-ids-ea7fee86-bd6f-4cc8-9365-8086e794c984) ich przesłania mają dodany identyfikator dokumentu.
+- Programy SharePoint i OneDrive nie mogą przetwarzać niektórych plików oznaczonych i zaszyfrowanych z aplikacji klasycznych firmy Office, gdy te pliki zawierają dane dodatku PowerQuery, dane przechowywane przez dodatki niestandardowe lub niestandardowe części XML, takie jak właściwości strony tytułowej, schematy typów zawartości, niestandardowy panel informacji o dokumencie i niestandardowa informacja XSN. To ograniczenie dotyczy również plików, które zawierają [bibliografię](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5)[, oraz plików](https://support.microsoft.com/office/enable-and-configure-unique-document-ids-ea7fee86-bd6f-4cc8-9365-8086e794c984), do których został dodany identyfikator dokumentu podczas ich przesłania.
 
     W przypadku tych plików możesz zastosować etykietę bez szyfrowania, aby można je było później otworzyć w aplikacji Office w sieci Web, lub poinstruować użytkowników, aby otworzyli te pliki w aplikacjach klasycznych. Nie ma to wpływu na pliki, które są Office w sieci Web i zaszyfrowane tylko w innych Office w sieci Web.
 

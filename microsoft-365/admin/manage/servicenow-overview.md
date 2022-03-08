@@ -2,8 +2,8 @@
 title: Microsoft 365 integracji z konfiguracją ServiceNow — omówienie
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Przewodnik po instalacji i konfiguracji certyfikowanej dla programu ServiceNow z zakresem.
-ms.openlocfilehash: 99024eabd4009dcdd14b3d999afe5ee1875fe23e
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: dc69f6210eda4ba04dfd0aecf9795bfcba2efe22
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63014780"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324329"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Microsoft 365 integracji z konfiguracją ServiceNow — omówienie
 
@@ -82,7 +82,7 @@ Wymagane uprawnienia:
 
 Po zainstalowaniu Microsoft 365 Integracja pomocy technicznej tworzy się dwie dostępy między zakresami aplikacji. Jeśli nie utworzono ich pomyślnie, utwórz je ręcznie.
 
-## <a name="what-configuration-is-right-for-your-organization"></a>Jaka konfiguracja jest właściwa dla Twojej organizacji?
+## <a name="setup-the-integration"></a>Konfigurowanie integracji
 
 Po pobraniu aplikacji przejdź do kreatora konfiguracji systemu Microsoft 365 w środowisku SNOW, aby ukończyć proces konfiguracji.
 :::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Kreator konfiguracji śniegu":::
@@ -93,3 +93,6 @@ Aby dowiedzieć się więcej o tych krokach, zobacz następujące strony:
   - Ta konfiguracja będzie wymagać dzierżawy logowania jednokrotnego, aby token uwierzytelniania AAD działał prawidłowo.
 
 Aby poznać poszczególne funkcje, zobacz [Microsoft 365 integracji z usługą pomocy technicznej](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+
+> [!NOTE]
+> Ta aplikacja nie jest obsługiwana przez przepisy i ograniczenia.

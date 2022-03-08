@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych z fizycznego systemu zarządzania zabezpieczeniami w organizacji w celu Microsoft 365. Dzięki temu można używać tych danych w zasadach zarządzania ryzykiem w niejawnym programie testów w celu wykrywania dostępu konkretnych użytkowników do budynków fizycznych, które mogą wskazywać na możliwe zagrożenia wewnętrzne organizacji.
-ms.openlocfilehash: 7eddede8b98d1b676e51a95e4fed3787f56d0bf0
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: e70217fa98e283883ab70bbe924d6f01f27613b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009720"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312225"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Konfigurowanie łącznika w celu importowania danych z fizycznymi funkcjami badgingu (wersja zapoznawcza)
 
@@ -40,7 +40,10 @@ Konfigurowanie fizycznego łącznika badgingu składa się z następujących zad
 
 ## <a name="before-you-set-up-the-connector"></a>Przed skonfigurowaniem łącznika
 
-- Użytkownik, który tworzy fizyczny łącznik z koszem w kroku 3, musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który tworzy fizyczny łącznik z obrazami w kroku 3, musi mieć przypisaną rolę Administrator łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+
+   > [!NOTE]
+   > Rola Administrator łącznika danych nie jest obecnie obsługiwana w środowiskach us Government GCC High i DoD. Dlatego użytkownik, który tworzy łącznik KADR w środowiskach GCC Wysokie i DoD, musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
 
 - Należy określić, jak pobrać lub wyeksportować dane z fizycznego systemu taki jak system taki organizacji (który jest pobierany codziennie) i utworzyć plik JSON opisany w kroku 2. Skrypt uruchomiony w kroku 4 wypchnie dane z pliku JSON do punktu końcowego interfejsu API.
 

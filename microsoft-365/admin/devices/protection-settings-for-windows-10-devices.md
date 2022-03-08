@@ -1,13 +1,11 @@
 ---
 title: Edytowanie lub ustawianie ustawień ochrony aplikacji dla Windows 10 urządzeniach
-f1.keywords:
-- NOCSH
 ms.author: sharik
 author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - Win10AppPolicy
 - O365E_Win10AppPolicy
 - BCS365_Win10AppPolicy
@@ -30,16 +28,19 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Dowiedz się, jak tworzyć lub edytować zasady zarządzania aplikacją i chronić pliki służbowe na osobistych Windows 10 urządzeniach.
-ms.openlocfilehash: 6370f2c21ce9f8de1223d5445c87abf197c0cf89
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3a565586be4d0dfec308b2dad3b068e01774b161
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984084"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313793"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Ustawianie lub edytowanie ustawień ochrony aplikacji dla Windows 10 urządzeniach
 
 Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 ## <a name="edit-an-app-management-policy-for-windows-10"></a>Edytowanie zasad zarządzania aplikacją dla Windows 10
 
@@ -72,3 +73,7 @@ Jeśli użytkownicy mają urządzenia osobiste z systemem Windows 10, na któryc
   
 11. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
 12. Na koniec wybierz przycisk **Dodaj**, aby zapisać zasady i zastosować je na urządzeniach.
+
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

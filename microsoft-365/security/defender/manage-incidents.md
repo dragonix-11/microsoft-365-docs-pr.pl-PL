@@ -8,25 +8,25 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b9cc3e0ab911515d010b1a6e7feaac5cff8aed51
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015387"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326415"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Zarządzanie zdarzeniami w Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Oto sposoby zarządzania zdarzeniami:
 - [Dodawanie tagów zdarzeń](#add-incident-tags)
 - [Przypisywanie zdarzenia do konta użytkownika](#assign-an-incident)
 - [Rozwiąż je](#resolve-an-incident)
-- [Ustawianie klasyfikacji i wyznaczania jej](#set-the-classification-and-determination)
+- [Określanie klasyfikacji](#specify-the-classification)
 - [Dodawanie komentarzy](#add-comments)
 
 Możesz zarządzać zdarzeniami z **okienka Zarządzanie zdarzeniami** w przypadku zdarzenia. Oto przykład.
@@ -95,11 +95,16 @@ Jeśli zdarzenie zostało rozwiązane, wybierz pozycję Rozwiąż  zdarzenie, ab
 
 Zdarzenie, które nie zostanie rozpoznane, jest wyświetlane jako **Aktywne**.
 
-## <a name="set-the-classification-and-determination"></a>Ustawianie klasyfikacji i wyznaczania
+## <a name="specify-the-classification"></a>Określanie klasyfikacji
 
-Klasyfikacja zdarzenia określa, czy był to prawdziwy alert, czy fałszywy alert skonfigurowany z **pola Klasyfikacja** . 
+W polu **Klasyfikacja** możesz określić, czy zdarzenie ma być:
 
-Jeśli był to prawdziwy alert, należy również określić typ zagrożenia za pomocą pola **Wyznaczanie** . Określenie typu zagrożeń ułatwia zespołowi zabezpieczeń wykrywanie wzorców zagrożeń i działania w obronie przed nimi organizacji. 
+- **Nie ustawiono** (wartość domyślna).
+- **Wartość true positive** (wartość dodatnia) z rodzajem zagrożenia. Klasyfikację tę należy stosować do oznaczania zdarzeń, które dokładnie wskazują zagrożenie. Określenie typu zagrożeń ułatwia zespołowi zabezpieczeń wykrywanie wzorców zagrożeń i działania w obronie przed nimi organizacji.
+- **Informacyjne, oczekiwane działanie** z typem aktywności. Za pomocą opcji w tej kategorii możesz klasyfikować zdarzenia na użytek testów zabezpieczeń, czerwonej aktywności zespołu i oczekiwanego nietypowego zachowania zaufanych aplikacji i użytkowników.
+- **Wynik fałszywie dodatni** dla typów zdarzeń określonych przez Ciebie można zignorować, ponieważ są one technicznie niedokładne lub mylące.
+
+Klasyfikowanie zdarzeń oraz określanie ich stanu i typu ułatwia dostosowanie Microsoft 365 Defender w celu zapewnienia lepszego określania wykrywania w czasie.
 
 ## <a name="add-comments"></a>Dodawanie komentarzy
 

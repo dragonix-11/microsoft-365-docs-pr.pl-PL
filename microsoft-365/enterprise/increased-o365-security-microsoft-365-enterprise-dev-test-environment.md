@@ -15,14 +15,15 @@ ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
+- admindeeplinkSPO
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Skorzystaj z tego przewodnika laboratorium testowego, aby Microsoft 365 dodatkowych ustawień zabezpieczeń Microsoft 365 dla środowiska testowania w przedsiębiorstwie.
-ms.openlocfilehash: 5d431bba21c02daf2ec5af384e2d4fde53ab6edb
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: bf64bb23192eb4a4d2b3700a2b0c4390efc1f53e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63006542"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327913"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Większe Microsoft 365 dla Twojego Microsoft 365 dla środowiska testowania w przedsiębiorstwie
 
@@ -59,8 +60,8 @@ Aplikacje, które nie obsługują nowoczesnego uwierzytelniania, [](../security/
   - Jeśli używasz symulowanego środowiska testowego dla przedsiębiorstw Microsoft 365, użyj portalu [Azure Portal](https://portal.azure.com), aby nawiązać połączenie z maszyną wirtualną CLIENT1, a następnie zaloguj się z klienta CLIENT1.
  
 2. Na nowej karcie **centrum administracyjne platformy Microsoft 365** w obszarze **Centra** administracyjne w lewym okienku nawigacji **kliknij pozycję SharePoint**.
-3. Na nowej karcie **centrum SharePoint administracyjnego** kliknij pozycję **Zasady > kontroli dostępu**.
-4. Kliknij **pozycję Aplikacje, które nie obsługują nowoczesnego uwierzytelniania**, wybierz pozycję **Zablokuj dostęp**, a następnie kliknij przycisk **Zapisz**.
+3. Na nowej karcie **centrum SharePoint administracyjnego** wybierz **pozycję Kontrolka policiesAccess** > .<a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank"></a>
+4. Wybierz **pozycję Aplikacje, które nie obsługują nowoczesnego uwierzytelniania**, wybierz pozycję **Zablokuj dostęp**, a następnie wybierz pozycję **Zapisz**.
 
 
 ### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Włączanie usługi Defender Office 365 dla SharePoint, OneDrive dla Firm i Microsoft Teams

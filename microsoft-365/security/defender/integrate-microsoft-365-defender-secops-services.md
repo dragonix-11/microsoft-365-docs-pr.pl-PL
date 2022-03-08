@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f18ff452d7f268aa652af097db19f53f2002d8ae
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 45497f74db9c68959d4b23e013c6ea483e86378a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010400"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323965"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Krok nr 3. Planowanie Microsoft 365 Defender integracji z katalogiem usług SOC
 

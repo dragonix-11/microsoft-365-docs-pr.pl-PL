@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Dowiedz się, jak zarządzać listą Microsoft 365 Lighthouse, aby uzyskać informacje o dostawcach usług zarządzanych (MSP, Managed Service Providers).
-ms.openlocfilehash: c2a1bfe65f2002f6b8c6548eabea5dc450366c32
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 3c62761bdb5fbed08be07e909d465aa0a790ff97
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "62996851"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330429"
 ---
 # <a name="manage-your-tenant-list"></a>Zarządzanie listą dzierżaw
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Aby ułatwić zarządzanie listą dzierżaw w Microsoft 365 Lighthouse, możesz zastosować tagi niestandardowe do swoich dzierżaw. Te tagi mogą być używane do organizowania dzierżaw i ułatwiają filtrowanie istniejących widoków i szczegółowych informacji dostępnych dla odpowiednich zestawów dzierżaw. Tagami możesz zarządzać na stronie Dzierżawcy. Po utworzeniu i przypisaniu możesz filtrować dane w dzierżawach, użytkownikach, urządzeniach, zarządzaniu zagrożeniami i Windows 365 na podstawie tagu.
 
@@ -78,7 +75,8 @@ Aby zarządzać tagami dzierżawy, musisz:
 
 Tagi, które są już przypisane do dzierżawy, będą mieć znacznik wyboru po prawej stronie nazwy tagu. Możesz również przypisać tag do wielu dzierżaw, zaznaczając pole wyboru obok każdej dzierżawy na liście, wybierając pozycję **Przypisz** tagi, a następnie wybierając tag z listy.
 
-**UWAGA**: Możesz utworzyć do 30 unikatowych tagów i przypisać je do tylu dzierżaw, ile potrzeba.
+> [!NOTE]
+> Możesz utworzyć do 30 unikatowych tagów i przypisać je do tylu dzierżaw, ile potrzeba.
 
 ## <a name="delete-a-tag"></a>Usuwanie tagu
 

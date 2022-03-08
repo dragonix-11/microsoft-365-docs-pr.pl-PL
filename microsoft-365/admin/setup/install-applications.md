@@ -2,8 +2,8 @@
 title: Instalowanie aplikacji pakietu Office
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: landing-page
@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Po skonfigurowaniu systemu do Microsoft 365 dowiedz się, jak zainstalować poszczególne aplikacje Office na komputerze Mac, komputerze PC lub na urządzeniach przenośnych.
-ms.openlocfilehash: e943e5dd07f51ff6885cbb5f2567643597f360b9
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 9e573307bb0c2de1a0b6f4a9157bd35a4b81fe8a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "63007052"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317335"
 ---
 # <a name="install-office-applications"></a>Instalowanie aplikacji pakietu Office
 

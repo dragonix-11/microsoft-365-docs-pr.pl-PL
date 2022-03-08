@@ -2,8 +2,8 @@
 title: Wynik produktywności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak ocena produktywności firmy Microsoft odzwierciedla wyniki pomiarów osób i technologii oraz ich porównanie z organizacjami o podobnej wielkości.
-ms.openlocfilehash: be8715942639b3e00fc3a8d49782684bbef99fbf
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 24a84c3780ec3787b76f78acbe9c0c109a27c639
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017887"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327073"
 ---
 # <a name="microsoft-productivity-score"></a>Wynik produktywności firmy Microsoft 
 

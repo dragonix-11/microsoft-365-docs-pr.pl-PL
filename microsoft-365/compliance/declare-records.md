@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Deklaruj rekordy przy użyciu etykiet przechowywania.
-ms.openlocfilehash: 7c1599bd40059559b9e0d19383a08fe2382e6442
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 93e51698109819f4743dd4b5b45f5a5177739a2a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010655"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324847"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Deklarowanie rekordów przy użyciu etykiet przechowywania
 
@@ -69,6 +69,11 @@ Aby uzyskać pełne instrukcje:
 
 - [Automatyczne stosowanie etykiet przechowywania do zawartości](apply-retention-labels-automatically.md) (nie jest obsługiwane w przypadku rekordów prawnych)
 
+## <a name="tenant-setting-for-editing-record-properties"></a>Ustawienie dzierżawy do edytowania właściwości rekordu
+
+Jeśli za pomocą etykiet przechowywania będziesz deklarować elementy jako rekordy (a nie rekordy prawne) w programach SharePoint i OneDrive, rozważ, czy musisz zmienić domyślne ustawienie dzierżawy, które umożliwia użytkownikom edytowanie właściwości zablokowanego rekordu, gdy rozmiar [](record-versioning.md) plików jest większy niż 0 bajtów.
+
+Aby zmienić to ustawienie domyślne, przejdź do ustawień zarządzania rekordami Centrum zgodności platformy Microsoft 365 RekordyUzyskania zarządzania Etykiety ustawieńWłaściwość właściwości rekordu zezwalaj na edytowanie właściwości rekordu, [a](https://compliance.microsoft.com/) >  >  >  >  następnie wyłącz ustawienie Zezwalaj użytkownikom na edytowanie właściwości **rekordu**.
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Stosowanie skonfigurowanej etykiety przechowywania do zawartości
 
@@ -95,4 +100,4 @@ Aby uzyskać więcej informacji na temat wyszukiwania tych zdarzeń, zobacz Prze
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać listę scenariuszy obsługiwanych przez zarządzanie rekordami, zobacz [Typowe scenariusze zarządzania rekordami](get-started-with-records-management.md#common-scenarios).
+Dowiedz się, jak używać przechowywania [wersji rekordów w celu aktualizowania rekordów](record-versioning.md) przechowywanych w SharePoint lub OneDrive.

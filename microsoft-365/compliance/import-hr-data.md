@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Administratorzy mogą skonfigurować łącznik danych w celu importowania danych pracowników z systemu kadr (HR) swojej organizacji w celu Microsoft 365. Dzięki temu możesz używać danych kadrowych w zasadach zarządzania ryzykiem w niejawnym programie testów w celu wykrywania działań określonych użytkowników, które mogą stanowić zagrożenie wewnętrzne dla Organizacji.
-ms.openlocfilehash: 31dd1ff904796c2ac59405a1e07e65f924d3ef88
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 64822b8ea5952f4fb6787dfd7832879c2e84c2d4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009686"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320959"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Konfigurowanie łącznika do importowania danych HR
 
@@ -37,7 +37,7 @@ Konfigurowanie łącznika danych kadrowych, za pomocą których zasady zarządza
 
 - Określ, jak pobierać lub eksportować dane z systemu kadr organizacji (i regularnie) i dodawać je do plików CSV tworzyć w kroku 1. Skrypt uruchomiony w kroku 4 spowoduje przekazanie danych hr z plików CSV do chmury firmy Microsoft.
 
-- Użytkownik, który tworzy łącznik kadr w kroku 3, musi mieć przypisaną rolę importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Domyślnie ta rola nie jest przypisana do żadnej grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć nową grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który tworzy łącznik kadr w kroku 3, musi mieć przypisaną rolę Administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Przykładowy skrypt uruchomiony w kroku 4 spowoduje przekazanie danych kadrowych do chmury firmy Microsoft, aby można ich było używać w rozwiązaniu do zarządzania ryzykiem w niejawnym programie testów. Ten przykładowy skrypt nie jest obsługiwany w żadnym standardowym programie lub usłudze pomocy technicznej firmy Microsoft. Przykładowy skrypt jest dostarczany W JAKIM JEST bez jakiejkolwiek gwarancji. Firma Microsoft dodatkowo nie udziela żadnych dorozumianych gwarancji, w tym, ale nie wyłącznie, żadnych dorozumianych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko związane z użyciem lub wykonaniem przykładowego skryptu i dokumentacji pozostaje tylko dla użytkownika. Firma Microsoft, jej autorzy ani nikt inny biorący udział w tworzeniu, produkcji lub dostarczaniu skryptów nie będą w żadnym wypadku ponosić odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody związane z utratą zysków, przerwami w działaniu firmy, utratą informacji biznesowych lub inne straty pieniężne) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub nieumiejętnego korzystania z tych skryptów lub dokumentacji.  nawet jeśli firma Microsoft została powiadomiona o możliwości wystąpienia takich szkód.
 

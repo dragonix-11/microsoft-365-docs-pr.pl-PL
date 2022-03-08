@@ -2,8 +2,8 @@
 title: Podstawowe informacje o przysłaniu
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
@@ -16,14 +16,15 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_licensing
+search.appverid: MET150
 description: Poznaj nową funkcję przysyłania.
 ms.date: 03/17/2021
-ms.openlocfilehash: 4a908441dbdaa5ecafcd140233b75adca0c22e4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b41b3e27b7a3b05a9b80c3ac9590139adcee6fc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973735"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325448"
 ---
 # <a name="allotment-basics"></a>Podstawowe informacje o przysłaniu
 
@@ -39,13 +40,13 @@ Musisz spełniać wymagania licencyjne dotyczące licencjonowania [grupowego](/a
 
 Możesz użyć przymiotów z dowolnym produktem dostępnym dla użytkowników:
 
-- Office pakietów i produktów autonomicznych
-- Enterprise i produkty mobilne
+- Pakiety Office i produkty autonomiczne
+- Produkty dla przedsiębiorstw i mobilności
 - Produkty usługi Dynamics 365
 
 Następujących produktów nie można używać z przymiotami:
 
-- Microsoft Store aplikacji
+- Aplikacje ze Sklepu Microsoft
 - Bezterminowe oprogramowanie lub oprogramowanie, które jest bezpośrednio przypisane do użytkownika, jeśli nie jest owijona żadna licencja.
 - Zasoby platformy Azure
 

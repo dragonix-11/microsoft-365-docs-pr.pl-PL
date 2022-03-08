@@ -18,14 +18,15 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 recommendations: false
 description: Dowiedz się, jak wdrażać zespoły z bazowym poziomem ochrony.
-ms.openlocfilehash: ac16f3a1fd70cca22d0cc44e326d173b30cff77f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 21fe46a9df9b67c41ff2c0a21fbbe175295e1fdf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988375"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312743"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurowanie zespołów przy użyciu ochrony linii bazowej
 
@@ -68,10 +69,10 @@ Udostępnianie gości jest domyślnie włączone dla grup programu Office 365 i 
 Aby ograniczyć ryzyko przypadkowego udostępniania plików lub folderów osobom spoza organizacji, zalecamy zmianę domyślnego linku udostępniania dla kontaktów SharePoint na Tylko osoby *w Twojej organizacji*. (Jeśli użytkownicy będą musieli udostępniać zewnętrznie i włączysz udostępnianie gości, nadal mogą zmienić typ linku podczas udostępniania).
 
 Aby zmienić domyślny link udostępniania
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W **obszarze Zasady** kliknij pozycję **Udostępnianie**.
-3. W **obszarze Linki do plików i folderów** wybierz pozycję **Tylko osoby w Twojej organizacji**.
-4. Kliknij **Zapisz**.
+
+1. Otwórz centrum SharePoint w obszarze **Zasady** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
+1. W **obszarze Linki do plików i folderów** wybierz pozycję **Tylko osoby w Twojej organizacji**.
+1. Wybierz **Zapisz**.
 
 W celu najlepszego środowiska udostępniania gościa zalecamy również włączenie integracji usług [SharePoint i OneDrive z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 

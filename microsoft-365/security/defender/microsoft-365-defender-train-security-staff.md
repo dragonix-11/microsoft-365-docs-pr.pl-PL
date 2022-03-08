@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 32d8927172e7479f125c0e3b1ae44441cbc3de13
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 43e90c152f3eae42c9d24673bbc00bc282b963f3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015382"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326401"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Szkolenie pracowników bezpieczeństwa w zakresie Microsoft 365 Defender
 

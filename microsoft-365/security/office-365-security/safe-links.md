@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dowiedz się Sejf ochrony linków w uchcie Defender Office 365 ochrony organizacji przed wyłudzaniem informacji i innymi atakami, w których są złośliwe adresy URL. Odkryj Teams Sejf linków i zobacz grafiki wiadomości Sejf linków.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc043da2763bf6984062bec903e4f2df7bd6d10d
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 736efeb805e45170ec6471b57fc35005d0a12311
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63013317"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320329"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Sejf linków w programie Microsoft Defender dla Office 365
 
@@ -56,6 +56,8 @@ Sejf linków jest dostępna w następujących lokalizacjach:
   
   > [!NOTE]
   > Sejf Linki nie działają w folderach publicznych z obsługą poczty.
+  >
+  > Sejf łącza obsługują tylko formaty HTTP(S) i FTP.
 
 - **Microsoft Teams**: Ochrona linków Sejf linków w konwersacjach Teams, czatach grupowych lub kanałach jest również kontrolowana przez zasady Sejf Linków.
 
@@ -271,7 +273,7 @@ Listę adresów URL można skonfigurować w ustawieniach globalnych programu Sej
   - Maksymalna długość wpisu to 128 znaków.
   - Wszystkie wpisy nie mogą przekraczać 10 000 znaków.
 - Nie dołączaj ukośnika (`/`) na końcu adresu URL. Na przykład użyj , `https://www.contoso.com`nie `https://www.contoso.com/`.
-- Adres URL domeny only (na przykład `contoso.com` lub `tailspintoys.com`) blokuje wszelkie adresy URL zawierające domenę.
+- Adres URL domeny (na `contoso.com` przykład lub `tailspintoys.com`) blokuje wszelkie adresy URL zawierające domenę.
 - Możesz zablokować poddomenę bez blokowania pełnej domeny. Na przykład blokuje `toys.contoso.com*` on wszystkie adresy URL zawierające poddomenę, ale nie blokuje adresów URL zawierających pełną domenę `contoso.com`.
 - Możesz dołączyć maksymalnie trzy symbole wieloznaczne (`*`) na wpis w adresie URL.
 
@@ -302,7 +304,7 @@ Aby dodać wpisy do listy w nowych lub istniejących zasadach Sejf linków sieci
 
 **Uwagi**:
 
-- Następujący klienci nie rozpoznają list Nie robisz ponownie następujących adresów **URL** w zasadach usługi Sejf Url. Użytkownicy należący do zasad mogą mieć zablokowaną możliwość uzyskiwania dostępu do adresów URL na podstawie wyników skanowania linków do stron Sejf w tych klientach:
+- Następujący klienci nie rozpoznają list Nie robisz ponownie następujących adresów **URL** w zasadach usługi Sejf Url. Użytkownicy uwzględnioni w tych zasadach mogą mieć zablokowaną możliwość uzyskiwania dostępu do adresów URL na podstawie wyników skanowania linków do stron Sejf w tych klientach:
   - Microsoft Teams
   - Office aplikacji sieci Web
 

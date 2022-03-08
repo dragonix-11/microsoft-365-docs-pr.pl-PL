@@ -2,8 +2,8 @@
 title: Podręcznik wersji próbnej testów premium w menedżerze zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Podręcznik wersji próbnej testów premium menedżera zgodności firmy Microsoft.
-ms.openlocfilehash: e03fca9adfad720a4203885e98f2a9474243bbc4
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 7beff27d5d2eb7693f165d479bbc8df6e190d028
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63018920"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321029"
 ---
 # <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>Podręcznik wersji próbnej: Testy premium w menedżerze zgodności firmy Microsoft
 

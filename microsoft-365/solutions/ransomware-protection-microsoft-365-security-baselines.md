@@ -1,9 +1,9 @@
 ---
 title: Krok nr 1. Konfigurowanie planu bazowego zabezpieczeń
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: oprogramowanie wymuszające okup, oprogramowanie wymuszające okup obsługiwane przez człowieka, oprogramowanie wymuszające okup przez człowieka, humor, ataki wymuszające okup, ataki oprogramowania wymuszającego okup, szyfrowanie, kryptografia, zerowe zaufanie
 description: Użyj planu bazowego zabezpieczeń, aby chronić zasoby Microsoft 365 przed atakami oprogramowania wymuszającego okup.
-ms.openlocfilehash: 66218d15a36faa510bd246b46dbc0dcd0f9948fb
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 22092994765e9015421c21f2ee057c63463d594d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014864"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320189"
 ---
 # <a name="step-1-configure-security-baselines"></a>Krok nr 1. Konfigurowanie planu bazowego zabezpieczeń
 

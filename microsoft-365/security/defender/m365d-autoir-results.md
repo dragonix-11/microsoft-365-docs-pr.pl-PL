@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: e38de9e864fa063e3e56dc99c1d9c671b6409023
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 05e16a32fb21f682a756c32201a69c192d398184
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033002"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321811"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Szczegóły i wyniki zautomatyzowanego badania
 

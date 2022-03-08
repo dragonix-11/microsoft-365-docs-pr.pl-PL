@@ -2,8 +2,8 @@
 title: Przejrzyj uprawnienia administracyjne partnerów
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MET150
 description: Dowiedz się, jak przejrzeć listę certyfikowanych przez firmę Microsoft dostawców rozwiązań (partnerów), aby ustalić, jakie uprawnienia administratora mają, i jak usunąć te uprawnienia.
 ms.date: 12/03/2021
-ms.openlocfilehash: 7dc0a52526da1f0da9cd85b438b6f30b798c2dfa
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 067716689bd82e67dda357d675383ef2541b1dc3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996273"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318427"
 ---
 # <a name="review-partner-administrative-privileges"></a>Przejrzyj uprawnienia administracyjne partnerów
 

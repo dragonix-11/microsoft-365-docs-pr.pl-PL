@@ -1,5 +1,5 @@
 ---
-title: Urządzenia do zamówienia w Microsoft Managed Desktop
+title: Urządzenia do zamawiania w programie Microsoft Managed Desktop
 description: Jak zamówić urządzenia
 keywords: Microsoft Managed Desktop, Microsoft 365, usługa, dokumentacja
 ms.service: m365-md
@@ -9,16 +9,15 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: dba92f887899dbbf49935bd4d3b959df632e30be
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 4714d57af7f08cb2bcc2f6710add42564d65acaa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "63026790"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328767"
 ---
-# <a name="order-microsoft-managed-desktop-devices"></a>Zamawianie Microsoft Managed Desktop urządzeniach
+# <a name="order-microsoft-managed-desktop-devices"></a>Zamawianie urządzeń zarządzanych przez firmę Microsoft w wersji klasycznej
 
 Zalecamy współpracę z jednym z naszych zatwierdzonych partnerów urządzeń. Możesz skontaktować się z kontaktem z kontem Microsoft, aby uzyskać pomoc w konfigurowaniu partnerskiego programu dla urządzeń.
 
-Microsoft Managed Desktop już nie muszą pochodzić z listy aktualnie [zatwierdzonych urządzeń](../service-description/device-list.md). Od 3 maja 2021 r. wszystkie urządzenia zatwierdzonego producenta powinny spełniać nasze opublikowane wymagania dotyczące sprzętu i oprogramowania. Możesz nadal bez obaw korzystać z urządzeń na tej liście, ale więcej urządzeń polecanych Microsoft Managed Desktop w witrynie Kup Windows Pro [firmowe](https://www.microsoft.com/windows/business/devices). W tej witrynie wyświetl zalecane urządzenia, rozwijając obszar **Funkcje** **w obszarze** Filtruj według, a następnie wybierz pozycję **Microsoft Managed Desktop**. Za każdym razem, gdy zamierzasz zarejestrować określony model urządzenia w usłudze po raz pierwszy, warto przetestować przykład, aby upewnić się, że zapewni to oczekiwaną obsługę użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie nowych urządzeń](../get-started/validate-device.md).
-
+Program Microsoft Managed Desktop nie wymaga już, aby modele urządzeń pochodziły z listy obecnie [zatwierdzonych urządzeń](../service-description/device-list.md). Od 3 maja 2021 r. wszystkie urządzenia zatwierdzonego producenta powinny spełniać nasze opublikowane wymagania dotyczące sprzętu i oprogramowania. Możesz bez obaw nadal korzystać z urządzeń na tej liście, ale więcej urządzeń zalecanych dla programu Microsoft Managed Desktop znajdziesz w witrynie Kup urządzenia biznesowe z systemem [Windows Pro](https://www.microsoft.com/windows/business/devices) . W tej witrynie wyświetl zalecane urządzenia, rozwijając obszar **Funkcje** w obszarze Filtruj według, a następnie wybierając pozycję **Microsoft Managed Desktop (Pulpit zarządzany przez firmę Microsoft**). Za każdym razem, gdy zamierzasz zarejestrować określony model urządzenia w usłudze po raz pierwszy, warto przetestować przykład, aby upewnić się, że zapewni to oczekiwaną obsługę użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie nowych urządzeń](../get-started/validate-device.md).

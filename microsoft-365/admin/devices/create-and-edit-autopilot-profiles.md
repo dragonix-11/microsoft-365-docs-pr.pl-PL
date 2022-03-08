@@ -28,14 +28,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Dowiedz się, jak utworzyć profil rozwiązania AutoPilot i zastosować go do urządzenia, a także edytować lub usunąć profil albo usunąć profil z urządzenia.
-ms.openlocfilehash: 481c59797a1959ed72dbe5c7b81f5d2480def490
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 91df801fb1833c9bfe5f1112e6a3cd5fc8efcf5d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984089"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313849"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Tworzenie i edytowanie profilów rozwiązania AutoPilot
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 ## <a name="create-a-profile"></a>Tworzenie profilu
 
@@ -85,3 +88,6 @@ Profil przypisany do urządzenia można zaktualizować, nawet jeśli już przeka
     
 2. Zaznacz pole wyboru obok nazwy urządzenia, a następnie **w panelu** Urządzenie wybierz pozycję **Brak** z listy rozwijanej  **Przypisany profil Zapisz**.\>
     
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

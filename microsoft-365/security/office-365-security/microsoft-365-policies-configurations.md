@@ -1,8 +1,8 @@
 ---
 title: Konfiguracje tożsamości i dostępu do urządzeń bez zaufania — Microsoft 365 dla przedsiębiorstw
 description: W tym artykule opisano zalecenia i podstawowe pojęcia firmy Microsoft dotyczące wdrażania bezpiecznych zasad i konfiguracji poczty e-mail, dokumentów i aplikacji dla zerowego zaufania.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.prod: m365-security
 ms.topic: article
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: 01fb2a01903eba98f9659d0fd6d85fff4507d72f
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: abfd2603d4b374899ba3ff17d1be977043c5d5ab
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63009565"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313037"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Konfiguracje zerowym zaufaniem tożsamości i dostępu do urządzeń
 

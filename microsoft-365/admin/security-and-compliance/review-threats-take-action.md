@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Dowiedz się, jak przeglądać zagrożenia wykryte na Program antywirusowy Microsoft Defender i zarządzać nimi na Windows 10 urządzeniach.
-ms.openlocfilehash: 30c2114a3605c73214f773414fe64e18522d9093
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0e0613ad7805b8c4bde221aa2192c788fb75106
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985242"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324287"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Przeglądanie wykrytych zagrożeń i działanie
 
@@ -114,3 +114,9 @@ W poniższej tabeli opisano akcje, które mogą być Microsoft Endpoint Manager.
 ## <a name="how-to-submit-a-file-for-malware-analysis"></a>Jak przesłać plik do analizy złośliwego oprogramowania
 
 Jeśli masz plik, który został uznany za nieodebrany lub niesłusznie sklasyfikowany jako złośliwe oprogramowanie, możesz przesłać go do firmy Microsoft w celu analizy złośliwego oprogramowania. Użytkownicy i administratorzy IT mogą przesłać plik do analizy. Odwiedź [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission)stronę .
+
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](secure-your-business-data.md)
+
+[Omówienie programu Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) (program Defender dla firm jest wprowadzany Microsoft 365 Business Premium klientów, począwszy od 1 marca 2022 r.)

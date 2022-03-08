@@ -16,19 +16,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) korzystających Microsoft 365 Lighthouse, dowiedz się, jak skonfigurować zabezpieczenia portalu.
-ms.openlocfilehash: c40805267320488e79c774954fd8f6bd696449fa
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8f8ec851d2ce6795565530e120f3704128336ea2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63009154"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323125"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Konfigurowanie Microsoft 365 Lighthouse zabezpieczeń portalu
 
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-Ochrona dostępu do danych klientów, gdy dostawca usług zarządzanych (MSP) delegował uprawnienia dostępu do swoich dzierżaw jest priorytetem chciwości. Microsoft 365 Lighthouse posiada zarówno wymagane, jak i opcjonalne funkcje, które pomogą Ci skonfigurować zabezpieczenia portalu Lighthouse.
+Ochrona dostępu do danych klientów, gdy dostawca usług zarządzanych (MSP) delegował uprawnienia dostępu do swoich dzierżaw jest priorytetem chciwości. Microsoft 365 Lighthouse posiada zarówno wymagane, jak i opcjonalne funkcje, które pomogą Ci skonfigurować zabezpieczenia portalu Lighthouse. Aby uzyskać dostęp do usługi Lighthouse, musisz skonfigurować określone role z włączonym uwierzytelnianiem wieloskładnikowym (MFA). Opcjonalnie możesz skonfigurować usługę Azure AD Privileged Identity Management (PIM) i dostęp warunkowy.
 
 ## <a name="set-up-multifactor-authentication-mfa"></a>Konfigurowanie uwierzytelniania wieloskładnikowego (MFA)
 
@@ -38,58 +35,44 @@ Jak wspomniano we wpisie w blogu [Twoja pa$$word ma znaczenie](https://techcommu
 
 Gdy użytkownicy po raz pierwszy uzyskają dostęp do latarni morskiej, zostanie wyświetlony monit o skonfigurowanie uwierzytelniania wieloskładnikowego, jeśli ich konto Microsoft 365 nie ma jeszcze skonfigurowane. Użytkownicy nie będą mogli uzyskać dostępu do usługi Lighthouse do momentu ukończenia wymaganego kroku konfiguracji uwierzytelniania wieloskładnikowego. Aby dowiedzieć się więcej o metodach uwierzytelniania, zobacz [Konfigurowanie logowania Microsoft 365 do uwierzytelniania wieloskładnikowego](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
-## <a name="set-up-roles-to-manage-customer-tenants"></a>Konfigurowanie ról w celu zarządzania dzierżawami klientów
+## <a name="set-up-role-based-access-control"></a>Konfigurowanie kontroli dostępu opartej na rolach
 
-Dostęp do danych i ustawień dzierżawy klienta w aplikacji Lighthouse jest ograniczony do ról agenta administracyjnego i agenta pomocy technicznej w programie Cloud Solutions Provider (CSP).
+Kontrola dostępu oparta na rolach udziela dostępu do zasobów lub informacji na podstawie ról użytkowników. Dostęp do danych i ustawień dzierżawy klienta w aplikacji Lighthouse jest ograniczony do konkretnych ról w programie Dostawca rozwiązań w chmurze (CSP). Aby skonfigurować role RBAC w latarni lighthouse, zalecamy stosowanie szczegółowych uprawnień administratora delegowanego (GDAP, Granular Delegated Admin Privileges) w celu implementowania szczegółowych przypisań dla użytkowników.
 
-Możesz sprawdzić, którzy użytkownicy w dzierżawie partnerskiej mają role agenta administracyjnego i agenta pomocy technicznej, przeglądając informacje o członkostwie w grupach zabezpieczeń na stronie [Azure AD — Wszystkie](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) grupy. Aby dowiedzieć się, jak przypisywać użytkownikom role programu CSP i inne uprawnienia, zobacz [Przypisywanie ról i uprawnień użytkownikom](/partner-center/permissions-overview). Jeśli nie masz jeszcze uprawnień dostępu delegowanego do dzierżaw klientów jako program MSP, dowiedz się, jak je uzyskać, z artykułu Uzyskiwanie uprawnień do zarządzania usługą lub subskrypcją [klienta](/partner-center/customers-revoke-admin-privileges).
+Aby rozpocząć pracę z GDAP, zobacz [Konfigurowanie ról w celu zarządzania dzierżawami klientów](m365-lighthouse-set-up-roles.md).
 
-W poniższej tabeli wymieniono różne strony w latarni morskiej oraz uprawnienia wymagane do wyświetlania danych dzierżawy klientów i wykonywania działań dotyczących ich danych i ustawień dla ról agenta administracyjnego i agenta pomocy technicznej.<br><br>
+Technikom MSP można też uzyskać dostęp do latarni morskiej przy użyciu ról agenta administratora lub agenta pomocy technicznej za pośrednictwem delegowanego uprawnienia administratora.
 
-| Strona latarni morskiej | Uprawnienia agenta administracyjnego | Uprawnienia agenta pomocy technicznej |
-|--|--|--|
-| Home | <ul><li>Wyświetl wszystko</li></ul> | <ul><li>Wyświetl wszystko</li></ul> |
-| Dzierżawcy | <ul><li>Wyświetl wszystko</li><li>Aktualizowanie kontaktów klientów i witryny internetowej</li><li>Wyświetlanie i stosowanie planów wdrażania</li></ul> | <ul><li>Wyświetl wszystko</li><li>Aktualizowanie kontaktów klientów i witryny internetowej</li><li>Wyświetl plany wdrażania</li></ul> |
-| Użytkownicy | <ul><li>Wyświetl wszystko</li><li>Resetuj hasło</li><li>Blokowanie logowania</li><li>Włączanie uwierzytelniania wieloskładnikowego</li></ul> | <ul><li>Wyświetl wszystko</li><li>Resetuj hasło</li><li>Blokowanie logowania</li></ul> |
-| Urządzenia | <ul><li>Wyświetl wszystko</li></ul> | <ul><li>Wyświetl wszystko</li></ul> |
-| Zagrożenia | <ul><li>Wyświetl wszystko</li><li>Uruchamianie szybkiego skanowania</li><li>Uruchom pełne skanowanie</li><li>Ponowne uruchamianie urządzenia</li><li>Aktualizowanie oprogramowania antywirusowego</li></ul> | <ul><li>Wyświetl wszystko</li></ul> |
-| Linie bazowe | <ul><li>Wyświetl wszystko</li></ul> | <ul><li>Wyświetl wszystko</li></ul> |
-| Kondycja usługi | <ul><li>Wyświetl wszystko*</li></ul> | <ul><li>Wyświetl wszystko*</li></ul> |
-
-> [!NOTE]
-> Obecnie, aby można było podjąć działania oznaczone znakiem * w tabeli, użytkownicy muszą również mieć rolę usługi Azure AD w dzierżawie partnera z następującym zestawem właściwości: **microsoft.office365.serviceHealth/allEntities/allTasks**. Aby uzyskać listę ról usługi Azure AD, zobacz [Wbudowane role w usłudze Azure AD](/azure/active-directory/roles/permissions-reference).
-
-Mając ogólne uprawnienia skojarzone z rolą agenta administracyjnego, zalecamy zastosowanie zasady dostępu o jak najmniejszych uprawnieniach [](/azure/active-directory/develop/secure-least-privileged-access) podczas wyznaczania użytkownika dzierżawy partnerskiej na agenta administratora a agenta pomocy technicznej. Jednym ze sposobów jest przypisanie roli agenta pomocy technicznej do wymaganych użytkowników dzierżawy partnerskiej. Dzięki temu mogą wyświetlać dane i ustawienia klientów, ale nie wprowadzać szerokich zmian. Następnie w razie potrzeby użyj funkcji zatwierdzania dostępu w czasie rzeczywistym dostępnego w usłudze Azure AD Privileged Identity Management (PIM), aby nadać użytkownikom rolę agenta administratora z zakresem czasu.
+W przypadku działań związanych z dzierżawą innych niż klient w latarni morskiej (takich jak dołączanie, dezaktywowanie/ponowne aktywowanie klienta, zarządzanie tagami i przeglądanie dzienników) technikom usługi MSP musi być przypisana rola w dzierżawie partnera. W poprzednim artykule link zawierał szczegóły dotyczące takich ról i ich uprawnień w latarni morskiej.
 
 ## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Konfigurowanie usługi Azure AD Privileged Identity Management (PIM)
 
-MsP mogą zminimalizować liczbę osób, które mają dostęp do zabezpieczania informacji lub zasobów, przy użyciu usługi Azure AD Privileged Identity Management (PIM). Dane pim ograniczają ryzyko, że złośliwy użytkownik uzyskuje dostęp do zasobów lub autoryzowanych użytkowników w sposób niezamierzony i wpływa na zasoby poufne. Konta MSP mogą także udzielać użytkownikom dostępu z uprawnieniami tylko na czas i monitorować, co wyznaczeni użytkownicy robią z uprawnieniami dostępu.
+MsP mogą zminimalizować liczbę osób, które mają dostęp do roli o wysokim poziomie uprawnień, aby zabezpieczyć informacje lub zasoby przy użyciu funkcji numer telefonu. Dane pim ograniczają ryzyko, że złośliwy użytkownik uzyskuje dostęp do zasobów lub autoryzowanych użytkowników w sposób niezamierzony i wpływa na zasoby poufne. MsP mogą także udzielać użytkownikom tylko na bieżąco ról o wysokich uprawnieniach w celu uzyskiwania dostępu do zasobów, wprowadzać szerokie zmiany i monitorować, co wyznaczeni użytkownicy robią z ich uprawnieniami. 
 
 > [!NOTE]
 > Korzystanie z usługi Azure AD PIM wymaga Azure AD — wersja Premium P2 licencji usługi w dzierżawie partnera.
 
-Poniższe kroki uacyjniają użytkowników dzierżawy partnerskiej do ról agenta administracyjnego z zakresem czasu przy użyciu usługi Azure AD PIM:
+Poniższe kroki uacyjniają użytkowników dzierżawy partnerskiej do zakresu wyższych ról uprawnień przy użyciu usługi pim:
 
 1. Utwórz grupę z przypisaną rolą zgodnie z opisem w artykule Tworzenie grupy służącej do przypisywania [ról w Azure Active Directory](/azure/active-directory/roles/groups-create-eligible).
 
-2. Przejdź do [usługi Azure AD — Wszystkie](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) grupy i dodaj nową grupę jako członka grupy Agentów administratora.
+2. Przejdź do usługi [Azure AD](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) — Wszystkie grupy i dodaj nową grupę jako członka grupy zabezpieczeń dla ról o wysokich uprawnieniach (na przykład do grupy zabezpieczeń agentów administratora dap lub podobnie odpowiedniej grupy zabezpieczeń dla ról GDAP).
 
 3. Skonfiguruj dostęp z uprawnieniami do nowej grupy zgodnie z opisem w artykule Przypisywanie uprawnionych właścicieli i członków [do grup dostępu z uprawnieniami](/azure/active-directory/privileged-identity-management/groups-assign-member-owner).
 
-Aby dowiedzieć się więcej, [zobacz Co to jest Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
+Aby dowiedzieć się więcej na temat danych pim, zobacz [Co to jest Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 
-## <a name="other-roles-and-permissions"></a>Inne role i uprawnienia
+## <a name="set-up-risk-based-azure-ad-conditional-access"></a>Konfigurowanie dostępu warunkowego usługi Azure AD opartego na czynnikach ryzyka
 
-W poniższej tabeli wymieniono role dzierżawy partnerskiej i skojarzone z nimi uprawnienia.<br><br>
+MsP mogą używać dostępu warunkowego opartego na czynnikach ryzyka w celu upewnienia się, że członkowie ich personelu udowadniają swoją tożsamość za pomocą uwierzytelniania wieloskładnikowego i przez zmianę hasła po wykryciu jako ryzykowny użytkownik (z wyciekami poświadczeń lub za pomocą analizy zagrożeń w usłudze Azure AD). Użytkownicy muszą również zalogować się z znanej lokalizacji lub zarejestrowanego urządzenia po wykryciu ich jako ryzykownych danych logowania. Innymi ryzykownym zachowaniem jest zalogowanie się przy użyciu złośliwego lub anonimowego adresu IP albo zwykłego lub niemożliwego miejsca podróży, użycie anomalicznego tokenu, użycie hasła od hasła lub inne nietypowe zachowanie związane z logowaniem. W zależności od poziomu ryzyka użytkownika, msp mogą również zablokować dostęp podczas logowania. Aby dowiedzieć się więcej o czynnikach ryzyka, zobacz [Co to jest ryzyko?](/azure/active-directory/identity-protection/concept-identity-protection-risks) 
 
-| Role dzierżawy partnerów | Uprawnienia w dzierżawie partnera |
-|--|--|
-| Administrator globalny dzierżawy partnerskiej | <ul><li>Zarejestruj się w Latarnia morska w centrum administracyjne platformy Microsoft 365.</li><li>Zaakceptuj umowę partnera podczas pierwszego uruchomienia.</li><li>Wyświetlanie dzierżaw klientów na stronie Dzierżawy.</li><li>Aktywowanie i dezaktywowanie dzierżawy.</li><li>Aktualizuj kontakty klientów i witrynę internetową.</li><li>Tworzenie, aktualizowanie i usuwanie tagów.</li><li>Przypisywanie i usuwanie tagów w dzierżawie klienta.</li></ul> |
-| Administrator dzierżawy partnerskiej z co najmniej jedną dzierżawą<br> Rola usługi Azure AD przypisana z następującym zestawem właściwości:<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (Aby uzyskać listę ról usługi Azure AD, zobacz Wbudowane role [w usłudze Azure AD](/azure/active-directory/roles/permissions-reference)). | <ul><li>Tworzenie zgłoszeń serwisowych do usługi Lighthouse.</li></ul> |
-
+> [!NOTE]
+> Dostęp warunkowy wymaga Azure AD — wersja Premium P2 licencji w dzierżawie partnera. Aby skonfigurować dostęp warunkowy, [zobacz Konfigurowanie dostępu Azure Active Directory warunkowego](/appcenter/general/configuring-aad-conditional-access).
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
+[Uprawnienia resetowania hasła](/azure/active-directory/roles/permissions-reference#password-reset-permissions) (artykuł)\
+[Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artykuł)\
 [Omówienie Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (artykuł)\
 [Rejestracja w Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artykuł)\
 [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)

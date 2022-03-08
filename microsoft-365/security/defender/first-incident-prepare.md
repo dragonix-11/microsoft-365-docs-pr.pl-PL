@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 89f69d0c3bdc1515a83ccf8379435102e78d833c
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: c3b86a133b5126029378018fdac821d5423b2761
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63014916"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321867"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Przygotowywanie zabezpieczenia na wypadek pierwszego zdarzenia
 

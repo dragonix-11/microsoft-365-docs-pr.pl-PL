@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: W tym artykule znajdziesz procedury dotyczące korzystania z programu PowerShell na Microsoft 365 zarządzania grupami witryn SharePoint online.
-ms.openlocfilehash: 26ac87fe258e0340e95be0e83710f7810bc437a8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: deef41118789a9df4353fa188c88d827909dc863
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986590"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328781"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Zarządzanie SharePoint witryny usługi Online za pomocą programu PowerShell
 
@@ -41,8 +41,8 @@ Procedury procedury w tym artykule wymagają nawiązania połączenia z usługą
 
 Centrum SharePoint online ma kilka łatwych w użyciu metod zarządzania grupami witryn. Załóżmy na przykład, że chcesz zajrzeć do grup i członków grupy w `https://litwareinc.sharepoint.com/sites/finance` witrynie. Oto, co należy zrobić:
 
-1. W centrum SharePoint administracyjnego kliknij pozycję **Aktywne witryny**, a następnie kliknij adres URL witryny.
-2. Na stronie witryny kliknij ikonę Ustawienia  witryny (znajdującą się w prawym górnym rogu strony), a następnie kliknij pozycję **Uprawnienia witryny**.
+1. W centrum SharePoint wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>, a następnie wybierz adres URL witryny.
+2. Na stronie witryny wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">**Ustawienia**</a> (znajduje się w prawym górnym rogu strony), a następnie wybierz pozycję **Uprawnienia witryny**.
 
 Następnie powtórz proces dla następnej witryny, którą chcesz zobaczyć.
 

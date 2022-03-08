@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrukcje tworzenia etykiet przechowywania dla wyjątków od zasad przechowywania na potrzeby zarządzania informacjami w celu zachowania tego, czego potrzebujesz, i usunięcia tego, co nie jest potrzebne.
-ms.openlocfilehash: 40899f517c39b926cb65730956ccb310ba5a5159
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 699df2a62204115c60271a5d5aa70613db48c7d5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009807"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327269"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>Tworzenie etykiet przechowywania dla wyjątków od zasad przechowywania
 
@@ -32,9 +32,11 @@ W ramach strategii zarządzania informacjami w celu zachowania tego, czego potrz
 
 Zasady przechowywania są automatycznie stosowane do wszystkich elementów na poziomie kontenera (takich jak witryny programu SharePoint, skrzynki pocztowe użytkowników itp.), natomiast etykiety przechowywania mają zastosowanie do poszczególnych elementów, takich jak dokument programu SharePoint lub wiadomość e-mail.
 
-Przed użyciem etykiet przechowywania w [](retention.md#the-principles-of-retention-or-what-takes-precedence) celu uzupełnienia zasad przechowywania dla określonych elementów należy się upewnić, że zasady przechowywania SharePoint, OneDrive lub Exchange przechowywania. Zazwyczaj etykiety przechowywania służą do zachowywania określonych elementów dłużej niż stosowane zasady przechowywania, ale można ich również używać do stosowania innego okresu usuwania.
+Przed użyciem etykiet przechowywania w [](retention.md#the-principles-of-retention-or-what-takes-precedence) celu uzupełnienia zasad przechowywania dla określonych elementów należy się upewnić, że zasady przechowywania SharePoint, OneDrive lub Exchange przechowywania. Zazwyczaj etykiety przechowywania zachowują określone elementy dłużej niż stosowane zasady przechowywania, ale za ich pomocą można także zastąpić automatyczne usuwanie na końcu okresu przechowywania lub zastosować inny okres usuwania.
 
-Na przykład: Większość zawartości witryn sieci SharePoint musi być zachowana przez trzy lata, co obejmuje zasady przechowywania. Jednak niektóre dokumenty kontraktowe muszą być przechowywane przez siedem lat. Do tych wyjątków można dodać etykiety przechowywania. Po przypisaniu zasad przechowywania do wszystkich SharePoint przechowywania zastosuj etykiety przechowywania do dokumentów umowy. Wszystkie SharePoint będą przechowywane przez trzy lata i tylko dokumenty kontraktu będą przechowywane przez siedem lat.
+Typowy przykład: Większość zawartości witryn sieci SharePoint musi być zachowana przez trzy lata, co obejmuje zasady przechowywania. Jednak niektóre dokumenty kontraktowe muszą być przechowywane przez siedem lat. Do tych wyjątków można dodać etykiety przechowywania. Po przypisaniu zasad przechowywania do wszystkich SharePoint przechowywania zastosuj etykiety przechowywania do dokumentów umowy. Wszystkie SharePoint będą przechowywane przez trzy lata i tylko dokumenty kontraktu będą przechowywane przez siedem lat.
+
+Aby uzyskać więcej przykładów, w jaki sposób etykiet przechowywania można używać jako wyjątków od zasad przechowywania, zobacz Łączenie zasad przechowywania [i etykiet przechowywania](retention.md#combining-retention-policies-and-retention-labels).
 
 Etykiety przechowywania obsługują także więcej funkcji niż zasady przechowywania. Aby uzyskać więcej informacji, zobacz [Porównanie funkcji dotyczących zasad przechowywania i etykiet przechowywania](retention.md#compare-capabilities-for-retention-policies-and-retention-labels).
 

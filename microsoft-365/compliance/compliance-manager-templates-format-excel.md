@@ -2,8 +2,8 @@
 title: Formatowanie danych szablonu oceny w aplikacji Excel Menedżera zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak pracować z danymi Excel szablonów ocen w menedżerze zgodności firmy Microsoft.
-ms.openlocfilehash: 899dd42401bb4c7acceb1db5bfe5816b383ae16b
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 755716e67589b2f002fcaec7458f502ff945c318
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "62988650"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320581"
 ---
 # <a name="format-assessment-template-data-in-excel-for-microsoft-compliance-manager"></a>Formatowanie danych szablonu oceny w aplikacji Excel Menedżera zgodności firmy Microsoft
 
@@ -81,10 +81,10 @@ Karta **Akcje** jest wymagana.  Oznacza on działania ulepszeń zarządzane prze
 
 - **actionTitle**: To jest tytuł akcji i jest wymagane pole. Zapewniany tytuł musi być unikatowy. **Ważne**: jeśli odwołujesz się do akcji, która już istnieje (na przykład w innym szablonie), i zmodyfikujesz dowolny z jej elementów w kolejnych kolumnach, zmiany te będą propagowane do tej samej akcji w innych szablonach.
 
-- **implementationType (Typ** implementacji): W tym wymaganym polu wpisz jeden z trzech poniższych typów implementacji:
-- **Operacyjne** — działania wdrażane przez osoby i procesy w celu ochrony poufności, integralności oraz dostępności systemów organizacyjnych, zasobów, danych i pracowników (na przykład: informacje i szkolenia dotyczące bezpieczeństwa)
-- Techniczne **— działania** zakończone przy użyciu technologii i mechanizmów zawartych w sprzęcie, oprogramowaniu lub składnikach oprogramowania układowego systemu informacyjnego w celu ochrony poufności, integralności oraz dostępności systemów i danych organizacyjnych (na przykład: uwierzytelnianie wieloskładnikowe)
-- **Dokumentacja** — działania wdrażane w ramach dokumentowanych zasad i procedur ustanawiania i definiowania kontroli wymaganych do ochrony poufności, integralności oraz dostępności systemów organizacyjnych, zasobów, danych i pracowników (na przykład: zasady zabezpieczeń informacji)
+- **implementationType (Typ** implementacji): W tym wymaganym polu wpisz jeden z trzech następujących typów implementacji: 
+  1) **Operacyjne** — działania wykonywane przez osoby i procesy w celu ochrony poufności, integralności oraz dostępności systemów organizacyjnych, zasobów, danych i pracowników (na przykład: informacje i szkolenia dotyczące bezpieczeństwa).      
+  2) **Techniczne** — działania zakończone przy użyciu technologii i mechanizmów zawartych w sprzęcie, oprogramowaniu lub składnikach oprogramowania układowego systemu informacyjnego w celu ochrony poufności, integralności oraz dostępności systemów i danych organizacyjnych (na przykład: uwierzytelnianie wieloskładnikowe).
+  3) **Dokumentacja** — działania wdrażane w ramach udokumentowanych zasad i procedur ustanawiania i definiowania kontrolek wymaganych do ochrony poufności, integralności oraz dostępności systemów organizacyjnych, zasobów, danych i pracowników (na przykład: zasad zabezpieczeń informacji).
 
 - **actionScore**: W tym wymaganym polu podaj wartość wyniku liczbowego akcji. Wartość musi być liczbą całościową z zakresu od 1 do 99. Nie może mieć wartości 0, null ani pustej. Im wyższa liczba, tym większa wartość w celu poprawy poziomu zgodności z przepisami. Na poniższym obrazie przedstawiono, jak steruje wyniki Menedżera zgodności:
 

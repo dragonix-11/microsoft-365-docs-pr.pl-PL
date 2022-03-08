@@ -15,19 +15,19 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: Ten artykuł zawiera informacje dla administratorów globalnych SharePoint administratorów o włączaniu SharePoint Multi-Geo lokalizacji geolokalizacji satelitarnych.
-ms.openlocfilehash: e48e6feedfab47f6faa17cadcff1d858bced4379
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b542c1ee77c7b4ca7a6179bac5ce5eaa1090606a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985459"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330443"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Włączanie SharePoint Multi-Geo lokalizacji geograficznej satelitarnej
 
 Ten artykuł jest dla administratorów globalnych lub administratorów programu SharePoint, którzy tworzyli lokalizację satelitarnej **usługi SharePoint Multi-Geo** Multi-Geo, zanim funkcje SharePoint Multi-Geo stały się ogólnie dostępne w dniu 27 marca 2019 r. i nie włączono usługi SharePoint Multi-Geo w ich lokalizacjach geograficznych satelitarnych. 
 
 >[!Note]
->Jeśli po **27** marca dodano nową lokalizację geograficzną, nie musisz wykonywać tych instrukcji, ponieważ nowa lokalizacja geograficzna będzie już włączona dla usług OneDrive i SharePoint Multi-Geo.
+>Jeśli po **27 marca 2019** r. dodano nową lokalizację geograficzną, nie trzeba wykonywać tych instrukcji, ponieważ nowa lokalizacja geograficzna będzie już włączona dla usług OneDrive i SharePoint Multi-Geo.
 
 Te instrukcje pozwalają włączyć SharePoint lokalizacji satelitarnej, dzięki czemu użytkownicy korzystający z lokalizacji satelitarnej multi-Geo mogą korzystać zarówno z usług OneDrive, jak i SharePoint Multi-Geo usługi O365. 
 

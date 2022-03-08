@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30ee5d69db08dc4471bf6aa59558a934734e2f54
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5ae288b2d7dbaec9f66a501f7177741a5df48d0c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996386"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323951"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Co nowego w programie Microsoft Defender dla systemu Office 365
 
@@ -51,8 +51,12 @@ Aby uzyskać więcej informacji o nowościach w innych produktach zabezpieczeń 
 - [Co nowego w programie Microsoft Defender dla tożsamości](/defender-for-identity/whats-new)
 - [Co nowego w programie Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## <a name="march-2022"></a>Marzec 2022 r.
 
-## <a name="decemberjanuary-2021"></a>Grudzień/styczeń 2021 r.
+- [Usprawnione środowisko przesyłania w programie Microsoft Defender Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): Wprowadzenie nowego, ujednoliconego i usprawnionego procesu przesyłania w celu uproszczenia pracy.
+
+
+## <a name="january-2022"></a>Styczeń 2022
 
 - [Zaktualizowano środowisko](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015) wyszukiwania i badania dla programu Microsoft Defender dla programu Office 365: wprowadzenie panelu podsumowania wiadomości e-mail do obsługi doświadczeń w programie Defender Office 365 oraz aktualizacji obsługi eksploratora zagrożeń i wykrywania w czasie rzeczywistym.
 

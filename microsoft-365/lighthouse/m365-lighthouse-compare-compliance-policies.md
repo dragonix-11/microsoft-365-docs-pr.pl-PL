@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych używających Microsoft 365 Lighthouse, dowiedz się, jak porównać ustawienia zasad zgodności urządzeń.
-ms.openlocfilehash: 5e4fc396e2ea1e1cce576f6064f4239179db33cc
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: 30645ef4d59fcdee0d994ae709ff9bb45fc21b09
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "63014804"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320371"
 ---
 # <a name="compare-device-compliance-policy-settings"></a>Porównanie ustawień zasad zgodności urządzeń
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse umożliwia wyświetlanie zasad zgodności dla całej dzierżawy w jednym widoku. Możesz zapewnić bezpieczeństwo i standaryzację w całej dzierżawie, porównując zasady. Możesz filtrować widoki, aby wyświetlić skonfigurowane ustawienia (a nie skonfigurowane ustawienia), ustawienia inne niż w ich konfiguracjach lub zgodne ustawienia. Możesz również wyszukać określone ustawienia, aby sprawdzić, jak są one porównywane przez zasady.
 

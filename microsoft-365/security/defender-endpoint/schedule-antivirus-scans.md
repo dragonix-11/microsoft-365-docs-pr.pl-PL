@@ -10,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
-ms.reviewer: pauhijbr, ksarens
+ms.date: 02/22/2022
+ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 91e3acee5fb3ab2542c2beed4681f07959e9fe05
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 96827430b8d2fe1b45b9839ffe87eb5aa5571b93
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997299"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326597"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Konfigurowanie zaplanowanego szybkiego lub pełnego Program antywirusowy Microsoft Defender skanowania
 
@@ -48,14 +48,11 @@ Oprócz zawsze wł. ochrony w czasie rzeczywistym i skanów [](run-scan-microsof
 
 Podczas set up scheduled scans, you can specify whether the scan should be a full or quick scan. W większości przypadków zalecane jest szybkie skanowanie.
 
-<br>
-
-****
+<br/><br/>
 
 |Szybkie skanowanie|Pełne skanowanie|Skanowanie niestandardowe|
 |---|---|---|
-|(Zalecane) Szybkie skanowanie przeszukuje wszystkie lokalizacje, w których zarejestrowano złośliwe oprogramowanie, aby uruchomić system, takie jak klucze rejestru i znane Windows autostartu. <p> W połączeniu z zawsze włączona ochroną w czasie rzeczywistym, która sprawdza pliki po ich otwarciu i zamknięciu oraz zawsze, gdy użytkownik przechodzi do folderu, szybkie skanowanie pomaga zapewnić silną ochronę przed złośliwym oprogramowaniem, które zaczyna się od złośliwego oprogramowania na poziomie systemu i na poziomie kernel. <p> W większości przypadków szybkie skanowanie jest wystarczające i jest zalecaną opcją w przypadku zaplanowanych skanów.|Pełne skanowanie zaczyna się od uruchomienia szybkiego skanowania, a następnie jest kontynuowane kolejne skanowanie pliku wszystkich montowanych dysków stacjonarnych i wymiennych/sieciowych (jeśli do tego jest skonfigurowane pełne skanowanie). <p> Pełne skanowanie może potrwać kilka godzin lub dni, w zależności od ilości i typu danych, które muszą zostać zeskanowane. <p> Po zakończeniu pełnego skanowania są dostępne nowe analizy zabezpieczeń, a następnie wymagane jest nowe skanowanie w celu upewninia się, że dzięki nowej analizie zabezpieczeń nie są wykrywane żadne inne zagrożenia. <p> Ze względu na czas i zasoby związane z pełnym skanowaniem firma Microsoft zasadniczo nie zaleca planowania pełnych skanów.|Skanowanie niestandardowe to szybkie skanowanie uruchamiane na plikach i folderach przez Ciebie określone. Możesz na przykład zdecydować się na zeskanowanie dysku USB lub określonego folderu na dysku lokalnym twojego urządzenia.|
-|
+|(Zalecane) Szybkie skanowanie przeszukuje wszystkie lokalizacje, w których zarejestrowano złośliwe oprogramowanie, aby uruchomić system, takie jak klucze rejestru i znane Windows autostartu. <br/><br/>W połączeniu z zawsze włączona ochroną w czasie rzeczywistym, która sprawdza pliki po ich otwarciu i zamknięciu oraz zawsze, gdy użytkownik przechodzi do folderu, szybkie skanowanie pomaga zapewnić silną ochronę przed złośliwym oprogramowaniem, które zaczyna się od złośliwego oprogramowania na poziomie systemu i na poziomie kernel.<br/><br/>W większości przypadków szybkie skanowanie jest wystarczające i jest zalecaną opcją w przypadku zaplanowanych skanów.|Pełne skanowanie zaczyna się od uruchomienia szybkiego skanowania, a następnie jest kontynuowane kolejne skanowanie pliku wszystkich montowanych dysków stacjonarnych i wymiennych/sieciowych (jeśli do tego jest skonfigurowane pełne skanowanie).<br/><br/>Pełne skanowanie może potrwać kilka godzin lub dni, w zależności od ilości i typu danych, które muszą zostać zeskanowane.<br/><br/>Po zakończeniu pełnego skanowania są dostępne nowe analizy zabezpieczeń, a następnie wymagane jest nowe skanowanie w celu upewninia się, że dzięki nowej analizie zabezpieczeń nie są wykrywane żadne inne zagrożenia.<br/><br/>Ze względu na czas i zasoby związane z pełnym skanowaniem firma Microsoft zasadniczo nie zaleca planowania pełnych skanów.|Skanowanie niestandardowe jest uruchamiane na plikach i folderach określony przez użytkownika. Na przykład możesz zeskanować dysk USB lub określony folder na dysku lokalnym twojego urządzenia.|
 
 > [!NOTE]
 > Domyślnie szybkie skanowanie jest uruchamiane na montowanych urządzeniach wymiennych, takich jak dyski USB.
@@ -63,10 +60,7 @@ Podczas set up scheduled scans, you can specify whether the scan should be a ful
 ## <a name="how-do-i-know-which-scan-type-to-choose"></a>Jak sprawdzić typ skanowania do wyboru?
 
 Użyj poniższej tabeli, aby wybrać typ skanowania.
-
-<br>
-
-****
+<br/><br/>
 
 |Scenariusz|Zalecany typ skanowania|
 |---|---|
@@ -74,7 +68,6 @@ Użyj poniższej tabeli, aby wybrać typ skanowania.
 |Zagrożenia, takie jak złośliwe oprogramowanie, są wykrywane na poszczególnych urządzeniach|Szybkie skanowanie <p> W większości przypadków szybkie skanowanie spowoduje wykrycie złośliwego oprogramowania i jego oczyszczenie.|
 |Chcesz uruchomić skanowanie [na żądanie](run-scan-microsoft-defender-antivirus.md)|Szybkie skanowanie|
 |Chcesz się upewnić, że urządzenie przenośne, takie jak dysk USB, nie zawiera złośliwego oprogramowania|Skanowanie niestandardowe <p> Skanowanie niestandardowe umożliwia wybranie konkretnych lokalizacji, folderów lub plików oraz szybkie skanowanie.|
-|
 
 ## <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>Co jeszcze należy wiedzieć o szybkich i pełnych skanach?
 

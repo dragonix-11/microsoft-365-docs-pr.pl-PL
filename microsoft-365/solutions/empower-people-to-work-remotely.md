@@ -1,9 +1,9 @@
 ---
 title: Konfigurowanie infrastruktury do pracy hybrydowej z usługami Microsoft 365
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: praca z domu, praca z domu, środowisko hybrydowe, pracownik zdalny, praca hybrydowa, zdalni pracownicy, łączność hybrydowa, dostęp zdalny, komunikacja telekomunikacyjna, teleworking, teleworking, praca w telefonie komórkowym, praca zdalna, praca z dowolnego miejsca, elastyczne miejsce pracy
 description: Krok po kroku warstw infrastruktury, aby pracownicy hybrydowi mogą bezpiecznie uzyskać dostęp do zasobów lokalnych i Microsoft 365 lokalnych.
-ms.openlocfilehash: 0370d30584021ab8560a24c7e54e3a7c7aadeb1f
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 87d72307f3e6a2b254bdbde21d07fc146806b89d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014841"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318581"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Konfigurowanie infrastruktury do pracy hybrydowej z usługami Microsoft 365
 

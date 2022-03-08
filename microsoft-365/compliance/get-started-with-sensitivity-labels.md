@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wszystko gotowe do wdrożenia etykiet wrażliwości w celu ochrony danych Twojej organizacji, ale nie wiesz, od czego zacząć? Przeczytaj kilka praktycznych wskazówek, które pomogą Ci rozpocząć podróż z etykietami.
-ms.openlocfilehash: b5d7a6c18f112b7f35aa2599ff2639894a735f9b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: adc939d44715bcfaeb97cdbfa530f55a5aeecd4e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013655"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322089"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Wprowadzenie do etykiet wrażliwości
 
@@ -99,6 +99,7 @@ Wszystkie scenariusze wymagają utworzenia [i skonfigurowania etykiet wrażliwo�
 |Używanie funkcji współtworzenia i Autozaza Office w aplikacjach klasycznych, gdy dokumenty są szyfrowane | [Włączanie współtworowania plików zaszyfrowanych przy użyciu etykiet wrażliwości](sensitivity-labels-coauthoring.md)
 |Automatyczne stosowanie etykiet wrażliwości do dokumentów i wiadomości e-mail | [Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md)|
 |Etykiety wrażliwości chronią zawartość w Teams i SharePoint |[Używanie etykiet wrażliwości z Microsoft Teams, Microsoft 365 grupami i SharePoint sieci Web](sensitivity-labels-teams-groups-sites.md)|
+|Użyj etykiet wrażliwości, aby skonfigurować domyślny typ linku udostępniania dla witryn i poszczególnych dokumentów w SharePoint i OneDrive |[Użyj etykiet wrażliwości, aby ustawić domyślny link udostępniania dla witryn i dokumentów w SharePoint i OneDrive](sensitivity-labels-default-sharing-link.md)|
 |Stosowanie etykiety wrażliwości do modelu zrozumienia dokumentu w celu automatycznego klasyfikowania i ochrony SharePoint dokumentów w bibliotece dokumentów |[Stosowanie etykiet wrażliwości do modelu w aplikacji Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |Uniemożliwianie lub ostrzeganie użytkowników o udostępnianiu plików lub wiadomości e-mail z określoną etykietą wrażliwości |[Używanie etykiet wrażliwości jako warunków zasad DLP](dlp-sensitivity-label-as-condition.md) |
 |Stosowanie etykiety przechowywania w celu przechowywania lub usuwania plików lub wiadomości e-mail z określoną etykietą wrażliwości|[Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości](apply-retention-labels-automatically.md) |

@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się, jak zarządzać uwierzytelnianiem wieloskładnikowym.
-ms.openlocfilehash: 4587dffbe45eacaf62c49d0c84aeef86455980e1
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 5ab430e464fb2d20f9a911818f9fd6cb077d849e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "62988684"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326135"
 ---
 # <a name="manage-multifactor-authentication"></a>Zarządzanie uwierzytelnianiem wieloskładnikowym
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Azure Active Directory (Azure AD) uwierzytelnianie wieloskładnikowe (MFA) pomaga chronić dostęp do danych i aplikacji, zapewniając kolejną warstwę zabezpieczeń przy użyciu drugiej formy uwierzytelniania. Karta Uwierzytelnianie wieloskładnikowe zawiera szczegółowe informacje o stanie włączania uwierzytelniania wieloskładnikowego w dzierżawach. Wybierz dowolną dzierżawę na liście, aby wyświetlić więcej szczegółów dotyczących tej dzierżawy, w tym zasady dostępu warunkowego wymagające uwierzytelniania MFA, które użytkownicy nie zarejestrowali się jeszcze w celu uwierzytelniania MFA.
 
@@ -56,7 +53,7 @@ Aby włączyć uwierzytelnianie wieloskładnikowe za pośrednictwem dostępu war
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>Powiadamianie użytkowników, którzy nie są zarejestrowani w ramach uwierzytelniania MFA
 
-1. W okienku po lewej stronie w latarni morskiej wybierz pozycję **Użytkownicy**.
+1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Użytkownicy**.
 
 2. Wybierz **kartę Uwierzytelnianie wieloskładnikowe** .
 

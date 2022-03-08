@@ -3,10 +3,10 @@ title: Weryfikowanie uprawnień akademickich do Microsoft 365 Education subskryp
 f1.keywords:
 - CSH
 - FWLink-2135711
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: pablom
+ms.reviewer: pablom, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
 description: Dowiedz się, jak sprawdzić, czy Twoja szkoła ma prawo do korzystania z Microsoft 365 Education cen dla instytucji akademickich.
 ms.date: 07/21/2020
-ms.openlocfilehash: 9b97487c7f1fdc9ccfb0858cd49036dcb43d7f5e
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 178413d79147a388454061fea53901178eec5557
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009813"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328963"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Weryfikowanie uprawnień akademickich do Microsoft 365 Education subskrypcji
 

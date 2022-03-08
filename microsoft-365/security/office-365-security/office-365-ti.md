@@ -21,12 +21,12 @@ ms.custom:
 description: Dowiedz się więcej o możliwościach analizy zagrożeń i reakcji w programie Microsoft Defender dla Office 365 ochrony przed zagrożeniami.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e14cda205405b90a73689bde59fcccf22095f2df
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ce7541010999b87e49880446594a79593a16a30a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021304"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312967"
 ---
 # <a name="threat-investigation-and-response"></a>Badanie zagrożeń i odpowiedź
 
@@ -61,6 +61,17 @@ Używaj [Eksploratora (i](threat-explorer.md) wykrywanie w czasie rzeczywistym) 
 ![Eksplorator zagrożeń.](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
 Aby wyświetlić raport i użyć go w portalu Microsoft 365 Defender pod <https://security.microsoft.com>adresem , przejdź do eksploratora współpracy poczty **&-mail**\>. Aby przejść bezpośrednio do strony **Eksploratora** , użyj przeglądarki <https://security.microsoft.com/threatexplorer>.
+
+## <a name="office-365-threat-intelligence-connection"></a>Office 365 połączenia analizy zagrożeń
+
+Ta funkcja jest dostępna tylko w przypadku aktywnej subskrypcji usługi Office 365 E5 lub dodatku Analizy zagrożeń. Aby uzyskać więcej informacji, zobacz stronę produktu Office 365 Enterprise E5.
+
+Po włączeniu tej funkcji będzie można dołączać dane z usługi Microsoft Defender for Office 365 do programu Microsoft 365 Defender w celu przeprowadzenia kompleksowego badania zabezpieczeń w skrzynkach pocztowych usługi Office 365 i Windows urządzeniach.
+
+> [!NOTE]
+> Aby włączyć tę funkcję, musisz mieć odpowiednią licencję.
+
+Aby otrzymywać kontekstową integrację urządzeń z usługą Office 365 analizą zagrożeń, musisz włączyć ustawienia usługi Defender for Endpoint na pulpicie nawigacyjnym Zabezpieczenia & zgodności.
 
 ### <a name="incidents"></a>Zdarzenia
 

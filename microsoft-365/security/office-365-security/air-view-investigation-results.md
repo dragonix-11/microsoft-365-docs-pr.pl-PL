@@ -3,8 +3,8 @@ title: Wyświetlanie wyników automatycznego badania w programie Microsoft 365
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, remediation, actions
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ description: W trakcie automatycznego badania Microsoft 365 i po jego zakończen
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80c58c0e4c084199537dcfbb9097541a0cba71a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54b9389d323c1e775b50bf63beaa33b0c4b0cae6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984958"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314087"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Szczegóły i wyniki automatycznego badania Microsoft 365
 

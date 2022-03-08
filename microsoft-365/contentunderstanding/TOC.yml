@@ -34,6 +34,8 @@
           href: apply-a-retention-label-to-a-model.md
         - name: Stosowanie etykiety wrażliwości
           href: apply-a-sensitivity-label-to-a-model.md
+        - name: Tworzenie modelu lokalnego
+          href: create-local-model.md
         - name: Analiza użycia modelu
           href: model-usage-analytics.md
         - name: Korzystanie z taksonomii magazynu terminów podczas tworzenia wyodrębnianego
@@ -60,6 +62,8 @@
       href: prebuilt-models.md
     - name: Stosowanie etykiety przechowywania
       href: apply-a-retention-label-to-a-model.md
+    - name: Tworzenie modelu lokalnego
+      href: create-local-model.md
     - name: Analiza użycia modelu
       href: model-usage-analytics.md
 - name: Zestaw zawartości
@@ -114,9 +118,13 @@
           href: solution-manage-contracts-in-microsoft-365.md
         - name: Krok nr 1. Użyj SharePoint Syntex
           href: solution-manage-contracts-step1.md
-        - name: Krok nr 2. Używanie Microsoft Teams
+        - name: Krok nr 2. Użyj Microsoft Teams
           href: solution-manage-contracts-step2.md
-        - name: Krok nr 3. Użyj Power Automate
+        - name: Krok nr 3. Używanie Power Automate
           href: solution-manage-contracts-step3.md
+    - name: Szablon witryny Zarządzanie umowami
+      href: use-contracts-management-site.md
+    - name: Szablon witryny Centrum zawartości
+      href: use-content-center-site.md
 - name: Rozszerzalność
   href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

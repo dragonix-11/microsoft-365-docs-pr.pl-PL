@@ -2,8 +2,8 @@
 title: Problemy z kluczem Microsoft 365 produktu dla firm?
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -17,16 +17,16 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: 'Dowiedz się, jak rozwiązać problemy, które masz do czynienia podczas wprowadzania klucza produktu Microsoft 365 dla firm. '
 ms.custom:
+- commerce_purchase
 - okr_smb
 - AdminSurgePortfolio
-- commerce_purchase
 ms.date: 05/01/2021
-ms.openlocfilehash: e315bdb70878b5c424c592872ab8e139960c4c58
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: c8db5e904b56a8ded9b6b90d9273e95b4495c597
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009787"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318483"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>Problemy z kluczem Microsoft 365 produktu dla firm?
 

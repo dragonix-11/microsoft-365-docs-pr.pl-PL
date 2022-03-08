@@ -2,8 +2,8 @@
 title: Krok nr 1. Zwiększanie zabezpieczeń logowania dla pracowników hybrydowych za pomocą uwierzytelniania wieloskładnikowego
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Wymaganie, aby pracownicy hybrydowi logują się przy użyciu uwierzytelniania wieloskładnikowego (MFA).
-ms.openlocfilehash: c5c63716ecbd29ba393ee7601e99a1f52b4c3768
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 3bccf8b3ab6bc57417c6b9beafa35c8c7230f20f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63013892"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323489"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Krok nr 1. Zwiększanie zabezpieczeń logowania dla pracowników hybrydowych za pomocą uwierzytelniania wieloskładnikowego
 

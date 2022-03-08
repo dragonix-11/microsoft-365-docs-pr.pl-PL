@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak skonfigurować zasady ochrony przed utratą danych (DLP) w celu używania Microsoft 365 lokalizacji ochrony przed utratą danych (EPDLP, Endpoint Data Loss Prevention).
-ms.openlocfilehash: 0f663ac949419c3a726a0af23eba4a0f14928515
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 5fc271028e4c20d431c4535fcdbf902bf17cdbb4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "63009733"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311847"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Korzystanie z ochrony przed utratą danych w punkcie końcowym
 
@@ -465,7 +465,7 @@ Istnieją trzy procedury.
 - [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
 - [Wprowadzenie do Eksploratora aktywności](data-classification-activity-explorer.md)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/)
-- [Narzędzia i metody dołączania do Windows 10 komputerów](/microsoft-365/compliance/dlp-configure-endpoints)
+- [Omówienie dołączania Windows 10 i Windows 11 Microsoft 365 urządzeniach](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 subskrypcji](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [Pobierz nowy Microsoft Edge na podstawie Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

@@ -2,8 +2,8 @@
 title: Lista szablonów menedżera zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Menedżer zgodności firmy Microsoft zawiera szablony do tworzenia formularzy oceniania zgodnych z przepisami, normami i przepisami lokalnymi, regionalnymi i branżowymi.
-ms.openlocfilehash: 7ea918b1273335c39866d2de684acf9a2be076b7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ec728c5dcc29bd2817069e09b327d7035b38a724
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021168"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316173"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista szablonów Menedżera zgodności
 
@@ -39,7 +39,9 @@ Szablony są dodawane do Menedżera zgodności, ponieważ są tu wprowadzane now
 
 ## <a name="list-of-templates-and-where-to-find-them"></a>Lista szablonów i miejsca ich znalezienia
 
-Poniżej znajduje się pełna lista szablonów w Menedżerze zgodności. Linki w poniższych nazwach szablonów do dokumentacji pokrewnej dostępnej w związku z tym standardem, przepisami lub prawem.
+Poniżej znajduje się pełna lista szablonów w Menedżerze zgodności. Nazwy szablonów są zgodne ze skojarzonym przepisami lub certyfikacją. Jeśli są dostępne, linki w poniższych nazwach szablonów zaczną zawierać powiązaną dokumentację dotyczącą tego standardu, przepisów lub prawa.
+
+Każdy szablon (oprócz wersji bazowej) jest dostępny w co najmniej jednej wersji zaprojektowanej do użycia z określonym produktem, takim jak Microsoft 365, wraz z wersją uniwersalną, za pomocą których można oceniać inne produkty. Aby dowiedzieć się więcej o opcjach szablonów, zobacz [Informacje o szablonach oceniania](compliance-manager-templates.md).
 
 Możesz także wybrać poszczególne szablony w Menedżerze zgodności, aby wyświetlić więcej informacji na ich temat, w tym opis rozporządzenia i właściwości szablonu. Przeczytaj **sekcję Informacje** , aby zapoznać się z podsumowaniem.
 

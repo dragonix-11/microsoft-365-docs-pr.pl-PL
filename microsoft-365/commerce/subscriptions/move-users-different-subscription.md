@@ -2,8 +2,8 @@
 title: Przenoszenie użytkowników do innej subskrypcji
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_subscriptions
 search.appverid: MET150
 description: Dowiedz się, jak przenosić użytkowników między subskrypcjami.
 ms.date: 07/01/2020
-ms.openlocfilehash: 3ae6aa20c684c2745ef280c51a1203ae87f8da40
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f1aff383bb4e83b7cefae0f6d15c496ab3117919
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995860"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326275"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Przenoszenie użytkowników do innej subskrypcji
 

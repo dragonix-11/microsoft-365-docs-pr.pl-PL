@@ -2,8 +2,8 @@
 title: Wynik produktywności firmy Microsoft — praca zespołowa
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Szczegóły pracy zespołowej — ludzie mogą odczuwać wydajność.
-ms.openlocfilehash: 1c66dbac320787579d1d8cfe3c463bcb37ebf5ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0c06f968555e3d84944f2be9ba627a81aba746d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983666"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323755"
 ---
 # <a name="teamwork--people-experiences"></a>Praca zespołowa — środowisko osób
 

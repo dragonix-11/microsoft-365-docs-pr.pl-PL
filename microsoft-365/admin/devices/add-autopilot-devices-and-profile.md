@@ -26,17 +26,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: Dowiedz się, jak za pomocą rozwiązania Windows AutoPilot skonfigurować nowe urządzenia Windows 10 firmy, aby były gotowe do użytku przez pracowników.
-ms.openlocfilehash: 4b187d5e8f9acc8fb76e77770ec88790394dfbe3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak za pomocą rozwiązania Windows AutoPilot skonfigurować nowe Windows 10 firmowe urządzenia gotowe do użytku przez pracowników.
+ms.openlocfilehash: 12e86102633ddfc19960fb561b2a626da29f0560
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973783"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314017"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Dodawanie urządzeń i profilu rozwiązania Autopilot przy użyciu przewodnika krok po kroku
 
-Korzystając z rozwiązania Windows AutoPilot, możesz skonfigurować nowe **urządzenia Windows 10 dla** swojej firmy, aby były gotowe do użycia, gdy podasz je pracownikom.
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
+
+Korzystając z rozwiązania Windows AutoPilot, możesz skonfigurować nowe **urządzenia Windows 10 dla** swojej firmy, aby były gotowe do użycia po przysyłaniu ich pracownikom.
   
 ## <a name="device-requirements"></a>Wymagania dotyczące urządzeń
 
@@ -60,7 +63,7 @@ Jeśli jeszcze nie utworzono grup urządzeń ani profilów, najlepiej rozpoczą�
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. Na stronie **Upload .csv** z listą urządzeń przejdź do lokalizacji, w której znajduje się przygotowany plik .CSV, a następnie **otwórz przycisk** \> **Dalej**. Plik musi zawierać trzy nagłówki:
+3. Na stronie **Upload .csv z** listą urządzeń przejdź do lokalizacji, w której znajduje się przygotowany plik .CSV, a następnie **otwórz przycisk** \> **Dalej**. Plik musi zawierać trzy nagłówki:
     
     - Kolumna A: Numer seryjny urządzenia
     
@@ -73,7 +76,7 @@ Jeśli jeszcze nie utworzono grup urządzeń ani profilów, najlepiej rozpoczą�
     Aby uzyskać więcej informacji, zobacz [Lista urządzeń w pliku CSV](../misc/device-list.md). Możesz również pobrać przykładowy plik na stronie **Przekazywanie pliku csv z listą urządzeń**. 
     
 > [!NOTE]
-> Ten skrypt używa usługi WMI do pobierania właściwości potrzebnych klientowi do zarejestrowania urządzenia w Windows Autopilot. Zwróć uwagę, że w wynikowym pliku CSV normalne jest nieuzyskanie wartości Windows PKID ,ponieważ nie jest to wymagane do zarejestrowania urządzenia, a wartość PKID w wyjściowym pliku CSV jest całkowicie prawidłowa. Zostanie wypełniony tylko numer seryjny i skrót sprzętowy.
+> Ten skrypt używa usługi WMI do pobierania właściwości potrzebnych klientowi do zarejestrowania urządzenia w Windows Autopilot. Zwróć uwagę, że w wynikowym pliku CSV normalne jest nieuzyskanie wartości Windows IDENTYFIKATORA produktu (PKID), ponieważ nie jest to wymagane do zarejestrowania urządzenia, a wartość PKID w wyjściowym pliku CSV jest całkowicie prawidłowa. Zostanie wypełniony tylko numer seryjny i skrót sprzętowy.
     
 4. Na **stronie Przypisywanie profilu** możesz wybrać istniejący profil lub utworzyć nowy. Jeśli nie masz jeszcze konta, zostanie wyświetlony monit o jego utworzenie. 
     
@@ -85,7 +88,7 @@ Jeśli jeszcze nie utworzono grup urządzeń ani profilów, najlepiej rozpoczą�
     
     - Tworzenie środowiska logowania z marką Twojej firmy.
     
-    - Połączenie urządzeniach w celu Azure Active Directory kont i automatyczne rejestrowanie ich do zarządzania przez Microsoft 365 Business Premium.
+    - Połączenie urządzeniach, aby Azure Active Directory konta i automatycznie je zarejestrować do zarządzania przez Microsoft 365 Business Premium.
     
     Aby uzyskać więcej informacji, zobacz [Ustawienia profilu rozwiązania AutoPilot — informacje](autopilot-profile-settings.md). 
     
@@ -98,4 +101,4 @@ Jeśli jeszcze nie utworzono grup urządzeń ani profilów, najlepiej rozpoczą�
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Ustawienia profilu rozwiązania AutoPilot —](autopilot-profile-settings.md) informacje (artykuł)\
-[Opcje ochrony urządzeń i danych aplikacji](../devices/choose-device-security.md) (artykuł)
+[Opcje ochrony urządzeń i danych aplikacji](../devices/choose-device-security.md) (artykuł) 10 najlepszych sposobów zabezpieczania Microsoft 365 [dla firm](../security-and-compliance/secure-your-business-data.md)

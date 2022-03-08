@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3854c8891f1cc5175c87b9842d9c30b3164a6f46
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: dd39ace81a6128b9edcc33581c8386c06adf0d5f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015367"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323251"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Krok nr 1. Przeszukaj i analizuj swoje pierwsze zdarzenie
 

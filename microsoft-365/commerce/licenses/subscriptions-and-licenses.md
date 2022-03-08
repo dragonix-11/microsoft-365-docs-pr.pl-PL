@@ -2,11 +2,11 @@
 title: Opis subskrypcji i licencji w programie Microsoft 365 dla firm
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -14,20 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: Aplikacje i usługi, które otrzymujesz, zależą od Microsoft 365 zakupionego produktu, na przykład od Aplikacje Microsoft 365 dla firm.
 ms.date: 07/01/2020
-ms.openlocfilehash: e380ac61033435a86118f7178da9e014d13ad436
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: fefdca1b1321e19d76a227ecd313708e700b9c01
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63027137"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313317"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Opis subskrypcji i licencji w programie Microsoft 365 dla firm
 

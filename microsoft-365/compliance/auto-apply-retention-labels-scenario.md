@@ -12,17 +12,19 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: Jak za pomocą etykiet przechowywania można zarządzać cyklem życia dokumentów w programie SharePoint za pomocą metadanych w celu klasyfikowania zawartości, automatycznego stosowania etykiet i korzystania z przechowywania opartego na zdarzeniach, aby rozpocząć okres przechowywania.
-ms.openlocfilehash: 586f9074628ed3c4c272715378b1ba413ebdd3ec
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 35c43a96e07fe52d9e5e0cc0a72195353b6f5da6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62989757"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327171"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Używanie etykiet przechowywania do zarządzania cyklem życia dokumentów przechowywanych w SharePoint
 
@@ -148,7 +150,7 @@ Po prostu chcemy poinformować Microsoft 365" o "zastosowaniu etykiety przechowy
 
 Gdy SharePoint indeksuje zawartość, automatycznie generuje właściwości przeszukane dla każdej kolumny witryny. W tym scenariuszu interesujemy się właściwościami **Typ** dokumentu i **Stan** . Do utworzenia właściwości przeszukanych potrzebne są dokumenty z biblioteki, które są odpowiednim typem zawartości i mają kolumny witryny wypełnione na potrzeby wyszukiwania.
 
-W centrum SharePoint otwórz konfigurację wyszukiwania i wybierz pozycję Zarządzaj schematem wyszukiwania, aby  wyświetlić i skonfigurować właściwości przeszukane.
+W centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint otwórz</a> konfigurację wyszukiwania i wybierz pozycję Zarządzaj schematem wyszukiwania,  aby wyświetlić i skonfigurować właściwości przeszukane.
 
 ![Właściwości przeszukane w schemacie wyszukiwania.](../media/SPRetention8.png)
 
@@ -179,7 +181,7 @@ Aby uzyskać więcej informacji o właściwościach przeszukanych i zarządzanyc
 
 W programie KQL nie można używać właściwości przeszukanych w zapytaniach wyszukiwania. Musi ona używać właściwości zarządzanej. W typowym scenariuszu wyszukiwania tworzymy właściwość zarządzaną i mapuje ją na potrzebną właściwość przeszukaną. Jednak w celu automatycznego stosowania etykiet przechowywania można określić tylko wstępnie zdefiniowane właściwości zarządzane w pliku KQL, a nie niestandardowe właściwości zarządzane. Istnieje zestaw wstępnie zdefiniowanych właściwości zarządzanych w systemie dla ciągu *RefinableString00* do *RefinableString199* , który można użyć. Aby uzyskać pełną listę, zobacz [Domyślne nieużywane właściwości zarządzane](/sharepoint/manage-search-schema#default-unused-managed-properties). Te domyślne właściwości zarządzane są zwykle używane do definiowania funkcji uściślijących wyszukiwanie.
 
-Jeśli zapytanie KQL ma automatycznie stosować poprawną etykietę przechowywania do zawartości dokumentu produktu, mapowane są właściwości przeszukane **owsDocx0020Type\_\_ i owsStatus\_* *\_\_** na dwie zarządzane właściwości, które można uściślić. W naszym środowisku testowym dla tego scenariusza **refinableString00** i **RefinableString01** nie są używane. Ustaliliśmy to, patrząc na pozycję **Właściwości zarządzane** w **tece Zarządzanie** schematem wyszukiwania w centrum SharePoint administracyjnego.
+Jeśli zapytanie KQL ma automatycznie stosować poprawną etykietę przechowywania do zawartości dokumentu produktu, mapowane są właściwości przeszukane **owsDocx0020Type\_\_ i owsStatus\_* *\_\_** na dwie zarządzane właściwości, które można uściślić. W naszym środowisku testowym dla tego scenariusza **refinableString00** i **RefinableString01** nie są używane. Ustaliliśmy to, patrząc na pozycję **Właściwości zarządzane w** **oknie Zarządzanie schematem** wyszukiwania w centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint administracyjnego</a>.
 
 [![Właściwości zarządzane w schemacie wyszukiwania.](../media/SPRetention12.png) ](../media/SPRetention12.png#lightbox)
 

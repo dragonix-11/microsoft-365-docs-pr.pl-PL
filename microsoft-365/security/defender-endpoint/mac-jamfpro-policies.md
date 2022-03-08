@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 981e2afc2bfe3ff27bf5be492c98f96229a6deab
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 23420223102eafeab7783f7b81ac60c06670626c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011911"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326373"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Konfigurowanie programu Microsoft Defender for Endpoint w zasadach macOS w programie Jamf Pro
 
@@ -54,7 +54,7 @@ Musisz wykonać następujące czynności:
 
 2. Wybierz system macOS jako system operacyjny i zarządzanie urządzeniami przenośnymi / Microsoft Intune jako metodę wdrażania.
 
-    ![Obraz Centrum zabezpieczeń usługi Microsoft Defender.](images/onboarding-macos.png)
+    ![Obraz Microsoft 365 Defender portalu](images/onboarding-macos.png)
 
 3. Wybierz **pozycję Pobierz pakiet dołączający** (WindowsDefenderATPOnboardingPackage.zip).
 

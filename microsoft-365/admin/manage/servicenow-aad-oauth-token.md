@@ -2,8 +2,8 @@
 title: Konfigurowanie Microsoft 365 technicznej za pomocą tokenu uwierzytelniania usługi Azure AD
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Przewodnik po instalacji i konfiguracji certyfikowanej dla programu ServiceNow z zakresem.
-ms.openlocfilehash: f8bc7ee4647bf14521b9d29f616539acb95e7495
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 9f9985e07989f168f9b27dde1c1d574813c3f349
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "63009763"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320903"
 ---
 # <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>Konfigurowanie Microsoft 365 technicznej za pomocą tokenu uwierzytelniania usługi Azure AD
 
@@ -102,7 +102,7 @@ Te wymagania wstępne są niezbędne do skonfigurowania integracji z usługą Mi
 
     - Adres URL metadanych OIDC: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim: **appId**
+    - UserClaim: **appid**
 
     - UserField: **Identyfikator użytkownika**
 

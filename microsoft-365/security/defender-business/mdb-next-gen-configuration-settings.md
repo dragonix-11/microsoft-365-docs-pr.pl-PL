@@ -1,13 +1,13 @@
 ---
-title: Opis ustawień konfiguracji ochrony następnej generacji w programie Microsoft Defender dla firm (wersja Preview)
-description: Opis ustawień konfiguracji ochrony następnej generacji w programie Microsoft Defender dla firm (wersja Preview)
+title: Opis ustawień konfiguracji ochrony następnej generacji w programie Microsoft Defender dla firm
+description: Opis ustawień konfiguracji ochrony następnej generacji w programie Microsoft Defender dla firm
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,26 +16,28 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a4fd47c04e063e049265f037568a768eb05b6cc7
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: a3e4e9cb3b3350cbc901a40d171bb0171186519e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016581"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323013"
 ---
-# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business-preview"></a>Opis ustawień konfiguracji następnej generacji w programie Microsoft Defender dla firm (wersja Preview)
+# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Opis ustawień konfiguracji następnej generacji w programie Microsoft Defender dla firm
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-Ochrona następnej generacji w programie Defender dla firm (wersja Preview) obejmuje niezawodną ochronę przed złośliwym oprogramowaniem i oprogramowaniem antywirusowym. Twoje domyślne zasady mają na celu ochronę Twoich urządzeń i użytkowników bez zakłócania produktywności. można jednak dostosować zasady do swoich potrzeb biznesowych. Jeśli korzystasz z usługi Microsoft Endpoint Manager, możesz użyć jej do zarządzania zasadami zabezpieczeń.
+Ochrona następnej generacji w programie Defender dla firm obejmuje niezawodność ochrony przed złośliwym oprogramowaniem i oprogramowaniem antywirusowym. Twoje domyślne zasady mają na celu ochronę Twoich urządzeń i użytkowników bez zakłócania produktywności. można jednak dostosować zasady do swoich potrzeb biznesowych. Jeśli korzystasz z usługi Microsoft Endpoint Manager, możesz użyć jej do zarządzania zasadami zabezpieczeń.
 
 **W tym artykule opisano**:
 
 - [Ustawienia i opcje ochrony następnej generacji](#next-generation-protection-settings-and-options)
-- [Inne wstępnie skonfigurowane ustawienia w programie Defender dla firm (wersja Preview)](#other-preconfigured-settings-in-defender-for-business) 
+
+- [Inne wstępnie skonfigurowane ustawienia w programie Defender dla firm](#other-preconfigured-settings-in-defender-for-business) 
+
 - [Domyślne ustawienia i ustawienia usługi Defender dla firm Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## <a name="next-generation-protection-settings-and-options"></a>Ustawienia i opcje ochrony następnej generacji
@@ -56,7 +58,7 @@ W poniższej tabeli wymieniono ustawienia i opcje:<br/><br/>
 | **Godzina uruchomienia zaplanowanego skanowania** | Wybierz czas uruchamiania regularnie planowanych skanów antywirusowych do uruchomienia. |
 | **Stosowanie niskiej wydajności** | To ustawienie jest domyślnie wyłączone. *Zalecamy, aby to ustawienie było wyłączone.* Możesz jednak włączyć to ustawienie, aby ograniczyć ilość pamięci urządzenia i zasobów używanych podczas zaplanowanych skanów. <br/><br/>**WAŻNE** Jeśli **włączysz pozycję Użyj niskiej** wydajności, skonfiguruje ona następujące ustawienia Program antywirusowy Microsoft Defender: <br/>- Pliki archiwum nie są skanowane ([AllowArchive Scannning](/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning))<br/>— skanom jest przypisywany niski priorytet procesora ([EnableLowCPUPriority](/windows/client-management/mdm/policy-csp-defender#defender-enablelowcpupriority)) <br/>- Jeśli nie zostanie nieodebrane pełne skanowanie antywirusowe, nie zostanie uruchomione żadne skanowanie w trybie pochwytujące ([DisableCatchupFullKan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan)) <br/>- Jeśli nie zostanie nieodebrane szybkie skanowanie antywirusowe, nie zostanie uruchomione żadne skanowanie w trybie catch-up ([DisableCatchupQuickKan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan)) <br/>- Zmniejsza średni współczynnik obciążenia procesora podczas skanowania antywirusowego z 50% do 20% ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor)) |
 | **Środowisko użytkownika**   |  |
-| **Zezwalaj użytkownikom na dostęp do Zabezpieczenia Windows aplikacji** | Włącz to ustawienie, aby umożliwić użytkownikom otwieranie aplikacji Zabezpieczenia Windows na ich urządzeniach. Użytkownicy nie będą mogli zastępować ustawień skonfigurowanych w programie Microsoft Defender dla firm (wersja Preview), ale w razie potrzeby mogą szybko przeglądać lub wyświetlać wykryte zagrożenia. |
+| **Zezwalaj użytkownikom na dostęp do Zabezpieczenia Windows aplikacji** | Włącz to ustawienie, aby umożliwić użytkownikom otwieranie aplikacji Zabezpieczenia Windows na ich urządzeniach. Użytkownicy nie będą mogli zastępować ustawień skonfigurowanych w programie Microsoft Defender dla firm, ale w razie potrzeby mogą szybko przeglądać lub wyświetlać wykryte zagrożenia. |
 | **Wykluczenia dotyczące oprogramowania antywirusowego** | Wykluczenia to procesy, pliki lub foldery, które są pomijane przez Program antywirusowy Microsoft Defender skanowania. *Ogólnie nie należy definiować wykluczeń.* Program antywirusowy Microsoft Defender uwzględnia wiele automatycznych wykluczeń, które są oparte na znanych zachowaniach systemu operacyjnego i typowych plikach zarządzania.<br/><br/>[Dowiedz się więcej o wykluczeniach](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md) |
 | **Wykluczenia procesu** | Wykluczenia procesu uniemożliwiają skanowanie plików otwieranych przez określone procesy przez Program antywirusowy Microsoft Defender. <br/><br/>[Dowiedz się więcej o wykluczeniach procesów](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) |
 | **Wykluczenia rozszerzeń plików** | Wykluczenia rozszerzeń plików uniemożliwiają skanowanie plików z określonymi rozszerzeniami przez Program antywirusowy Microsoft Defender.<br/><br/>[Dowiedz się więcej o wykluczeniach rozszerzeń plików](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
@@ -64,16 +66,19 @@ W poniższej tabeli wymieniono ustawienia i opcje:<br/><br/>
 
 ## <a name="other-preconfigured-settings-in-defender-for-business"></a>Inne wstępnie skonfigurowane ustawienia w programie Defender dla firm
 
-Następujące ustawienia zabezpieczeń są wstępnie skonfigurowane w programie Defender dla firm (wersja Preview):
+Następujące ustawienia zabezpieczeń są wstępnie skonfigurowane w programie Defender dla firm:
 
 - Jest włączone skanowanie dysków wymiennych ([AllowFull ScannRemovableDriveŚwietlanie](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
+
 - Codzienne szybkie skanowania nie mają wstępnie ustawionego czasu ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime))
+
 - Aktualizacje analizy zabezpieczeń są sprawdzane przed rozpoczęciem skanowania antywirusowego ([CheckForSignaturesBeforeRunningKanning)](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan)
+
 - Testy analizy zabezpieczeń są przeprowadzane co cztery godziny ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
 ## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Domyślne ustawienia i ustawienia usługi Defender dla firm Microsoft Endpoint Manager
 
-W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla programu Defender dla firm (wersja Preview) oraz sposób, w jaki te ustawienia odpowiadają tym, co można zobaczyć w programie Microsoft Endpoint Manager (lub Microsoft Intune). Jeśli korzystasz z uproszczonego [procesu](mdb-simplified-configuration.md) konfiguracji w programie Defender dla firm (wersja Preview), nie musisz edytować tych ustawień.
+W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla usługi Defender dla firm oraz sposób, w jaki te ustawienia odpowiadają tym, co można zobaczyć w programie Microsoft Endpoint Manager (lub Microsoft Intune). Jeśli korzystasz z uproszczonego [procesu](mdb-simplified-configuration.md) konfiguracji w programie Defender dla firm (wersja Preview), nie musisz edytować tych ustawień.
 <br/><br/>
 
 | Ustawienie  | Opis  |
@@ -92,9 +97,9 @@ W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla programu Def
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm (wersja Preview)](mdb-view-manage-incidents.md)
+- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md)
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm (wersja Preview)](mdb-respond-mitigate-threats.md)
+- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
 
 - [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md)
 
@@ -103,6 +108,6 @@ W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla programu Def
 
 - [Odwiedź Microsoft 365 Defender witryny](mdb-get-started.md)
 
-- [Zarządzanie ustawieniami zapory w programie Microsoft Defender dla firm (wersja Preview)](mdb-custom-rules-firewall.md)
+- [Zarządzanie ustawieniami zapory w programie Microsoft Defender dla firm](mdb-custom-rules-firewall.md)
 
 - [CSP zasad — Defender](/windows/client-management/mdm/policy-csp-defender)

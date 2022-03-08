@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania, które ułatwiają zachowanie tego, czego potrzebujesz, i usuwanie tego, co nie jest potrzebne.
-ms.openlocfilehash: b0d179a412a2e0470db844a7e9b422c8ae89db34
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: ac57859d7f27b22060b88189e79d386791535c9e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009791"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319395"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informacje o zasadach przechowywania i etykietach przechowywania
 
@@ -264,13 +264,38 @@ Skorzystaj z poniższej tabeli, aby ustalić, czy należy używać zasad przecho
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Łączenie zasad przechowywania i etykiet przechowywania
 
-Nie musisz wybierać, czy używasz tylko zasad przechowywania, czy tylko etykiet przechowywania. Obie metody mogą być używane razem, a w zasadzie jako uzupełnienie siebie nawzajem w celu bardziej kompleksowego rozwiązania. Przykład:
+Nie musisz wybierać, czy używasz tylko zasad przechowywania, czy tylko etykiet przechowywania. Obie metody mogą być używane razem, a w zasadzie jako uzupełnienie siebie nawzajem w celu bardziej kompleksowego rozwiązania.
+
+Poniższe przykłady to tylko niektóre ze sposobów łączenia zasad przechowywania i etykiet przechowywania dla tej samej lokalizacji.
+
+Aby uzyskać więcej informacji na temat sposobu współpracy zasad przechowywania i etykiet przechowywania oraz określania ich połączonych wyników, zobacz sekcję na tej stronie, w której opisano zasady przechowywania i co ma [pierwszeństwo.](#the-principles-of-retention-or-what-takes-precedence)
+
+**Przykład zastępowania automatycznego usuwania przez użytkowników**
+
+Scenariusz: Domyślnie zawartość kont e-mail OneDrive jest automatycznie usuwana po pięciu latach, ale użytkownicy muszą mieć możliwość zastąpienia tego ustawienia w przypadku określonych dokumentów.
 
 1. Tworzysz i konfigurujesz zasady przechowywania, które automatycznie usuwają zawartość pięć lat po ostatniej modyfikacji, i stosujesz je do wszystkich OneDrive kont.
 
 2. Tworzysz i konfigurujesz etykietę przechowywania, która zachowuje zawartość na zawsze, i dodajesz tę etykietę do zasad etykiet publikowanych na wszystkich OneDrive kontach. Użytkownikom wyjaśniono, jak ręcznie zastosować tę etykietę do określonych dokumentów, które powinny być wykluczone z automatycznego usuwania, jeśli nie zostaną zmodyfikowane po pięciu latach.
 
-Aby uzyskać więcej informacji na temat sposobu współpracy zasad przechowywania i etykiet przechowywania oraz określania ich połączonych wyników, zobacz następną sekcję, w której wyjaśniono zasady przechowywania i co ma pierwszeństwo.
+**Przykład zachowywania elementów przez dłuższy czas**
+
+Scenariusz: Domyślnie elementy SharePoint są automatycznie zachowywane i usuwane po pięciu latach, ale dokumenty w określonych bibliotekach muszą być przechowywane przez dziesięć lat.
+
+1. Tworzysz i konfigurujesz zasady przechowywania, które automatycznie zachowują, a następnie usuwają zawartość po pięciu latach i stosują je do wszystkich wystąpień grup SharePoint i Microsoft 365 grupy.
+
+2. Tworzysz i konfigurujesz etykietę przechowywania, która automatycznie przechowuje zawartość przez dziesięć lat. Tę etykietę należy opublikować SharePoint administratorom witryn, aby zastosować ją jako etykietę domyślną do dziedziczenia przez wszystkie elementy w określonych bibliotekach dokumentów.
+
+**Przykład usuwania elementów w krótszym okresie**
+
+Scenariusz: Domyślnie wiadomości e-mail nie są zachowywane, ale są automatycznie usuwane po dziesięciu latach. Jednak wiadomości e-mail związane z określonym projektem, który ma wstępną nazwę kodu, muszą zostać automatycznie usunięte po upływie jednego roku.
+
+1. Tworzysz i konfigurujesz zasady przechowywania, które automatycznie usuwają zawartość po dziesięciu latach, i stosujesz je do wszystkich Exchange adresatów.
+
+2. Tworzysz i konfigurujesz etykietę przechowywania, która automatycznie usuwa zawartość po upływie jednego roku. Opcje dotyczące stosowania tej etykiety do odpowiednich wiadomości e-mail są następujące:
+    - Tworzysz zasady automatycznego oznaczania zawartości identyfikującej zawartość, używając jako słowa kluczowego nazwy kodu projektu, i stosujesz je do wszystkich Exchange adresatów
+    - Publikujesz etykietę i poinstruujesz użytkowników zaangażowanych w projekt, jak utworzyć regułę automatyczną w programie Outlook która będzie stosowana ta etykieta
+    - Opublikuj etykietę i poinstruuj użytkowników, aby utworzyli folder w programie Outlook na wszystkie wiadomości e-mail związane z projektem, a następnie zastosują opublikowaną etykietę do tego folderu, a następnie utworzyli regułę programu Outlook w celu przenoszenia wszystkich wiadomości e-mail związanych z projektem do tego folderu.
 
 ## <a name="how-long-it-takes-for-retention-settings-to-apply"></a>Ile trzeba czekać na zastosowanie ustawień przechowywania
 

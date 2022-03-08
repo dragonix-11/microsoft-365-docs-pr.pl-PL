@@ -2,8 +2,8 @@
 title: Przewodnik Szybki start dotyczący menedżera zgodności firmy Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Skorzystaj z przewodnika Szybki start dla menedżera zgodności, aby ułatwić Ci rozpoczęcie zrozumienia, konfiguracji i korzystania z Menedżera zgodności.
-ms.openlocfilehash: 2992b05c2f5993ec0fb04f1310841a43850d7c36
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 636f34145626a54c10c613c1b914837c3f697c25
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63006165"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317755"
 ---
 # <a name="compliance-manager-quickstart"></a>Szybki start menedżera zgodności
 

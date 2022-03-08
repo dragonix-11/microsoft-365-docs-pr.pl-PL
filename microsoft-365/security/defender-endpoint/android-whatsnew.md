@@ -11,16 +11,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
+ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 1e235329fa57a703ab678049dd0da2d4f135de99
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d250fefbdcc2c268563b6321ee7d91eca4881063
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62974149"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328697"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Co nowego w programie Microsoft Defender dla punktu końcowego w systemie Android
 
@@ -58,7 +57,7 @@ Kompilacja wersji: Miesiąc wydania 1.0.3501.0301: nov 2021 Microsoft Defender f
 
 Powiadom użytkowników i pomoc techniczną (w razie potrzeby), że użytkownicy będą musieli zaakceptować nowe uprawnienia po wyświetleniu monitu po zaktualizowaniu usługi Defender dla punktu końcowego w celu kompilacji 1.0.3501.0301 lub nowszej wersji. Aby zaakceptować te uprawnienia, użytkownicy powinni:
 
-1. Naciśnij powiadomienie w aplikacji Defender for Endpoint lub otwórz aplikację Defender for Endpoint. Użytkownicy zobaczą ekran z listą potrzebnych uprawnień. Obok uprawnień do Storage brakuje zielonego Storage wyboru.
+1. Naciśnij powiadomienie w aplikacji Defender for Endpoint lub otwórz aplikację Defender for Endpoint. Użytkownicy zobaczą ekran z listą potrzebnych uprawnień. Obok uprawnienia do Storage brakuje zielonego Storage wyboru.
 
 2. Naciśnij **pozycję Rozpocznij**.
 

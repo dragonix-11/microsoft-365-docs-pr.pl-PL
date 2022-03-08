@@ -1,5 +1,5 @@
 ---
-title: Przeglądanie działań naprawczych w programie Microsoft Defender dla firm (wersja Preview)
+title: Przeglądanie działań naprawczych w programie Microsoft Defender dla firm
 description: Wyświetlanie działań naprawczych, które zostały wykonane automatycznie lub które oczekują na zatwierdzenie w Centrum akcji
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,17 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f1128b5fd9c27845bebbd4b6a0b45f93c5f3e0c6
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 5a0fed3ebdb3c7b7275425c24288efab293d6a6d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016580"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322957"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Przeglądanie działań naprawczych w Centrum akcji
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
@@ -38,6 +38,7 @@ W przypadku wykrycia zagrożeń są podejmowane działania naprawcze. W zależno
 **W tym artykule opisano**:
 
 - [Jak korzystać z Centrum akcji](#how-to-use-the-action-center)
+
 - [Działania naprawcze](#remediation-actions)
 
 >
@@ -57,7 +58,7 @@ W przypadku wykrycia zagrożeń są podejmowane działania naprawcze. W zależno
 
 ## <a name="remediation-actions"></a>Działania naprawcze
 
-Program Microsoft Defender dla firm (wersja Preview) zawiera kilka działań naprawczych. Te działania obejmują akcje ręcznej odpowiedzi, akcje po zautomatyzowanym śledztwu i akcje odpowiedzi na żywo.
+Usługa Microsoft Defender dla firm oferuje kilka działań naprawczych. Te działania obejmują akcje ręcznej odpowiedzi, akcje po zautomatyzowanym śledztwu i akcje odpowiedzi na żywo.
 
 W poniższej tabeli wymieniono dostępne działania naprawcze:
 
@@ -69,6 +70,6 @@ W poniższej tabeli wymieniono dostępne działania naprawcze:
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm (wersja Preview)](mdb-respond-mitigate-threats.md)
+- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
 
-- [Zarządzanie urządzeniami w programie Microsoft Defender dla firm (wersja preview)](mdb-manage-devices.md)
+- [Zarządzanie urządzeniami w programie Microsoft Defender dla firm](mdb-manage-devices.md)

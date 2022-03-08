@@ -24,14 +24,17 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Dowiedz się, jak sprawdzić poprawność Microsoft 365 Business Premium ochrony aplikacji na urządzeniach z systemem Android lub iOS.
-ms.openlocfilehash: 100c4f759578100ae94df24bb7009f4e76a6eb02
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 85d98a4741299327c0e88735cb9593e129fdc929
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983805"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313751"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Sprawdzanie poprawności ustawień ochrony aplikacji na urządzeniach z systemem Android lub iOS
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 Postępuj zgodnie z instrukcjami w poniższych sekcjach, aby sprawdzić poprawność ustawień ochrony aplikacji na urządzeniach z systemem Android lub iOS.
   
@@ -47,7 +50,7 @@ Najpierw upewnij się, że zasady dotyczą aplikacji, w której chcesz ją zwery
     
 2. Wybierz **pozycję Zasady aplikacji** dla systemu Android dla ustawień utworzonych podczas konfiguracji lub innych utworzonych zasad i sprawdź, czy są wymuszane na przykład Outlook urządzeniach. 
     
-    ![Shows all the apps for which this policy protects files.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
+    ![Zrzut ekranu przedstawiający wszystkie aplikacje, dla których te zasady chronią pliki.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
 ### <a name="validate-require-a-pin-or-a-fingerprint-to-access-office-apps"></a>Sprawdzanie działania ustawienia Wymagaj numeru PIN lub odcisku palca w celu uzyskania dostępu do aplikacji pakietu
 
@@ -69,7 +72,7 @@ W okienku Edytuj zasady wybierz pozycję  Edytuj obok opcji Kontrola dostępu do
     
 2. Wprowadź nieprawidłowy numer PIN więcej razy niż zezwalają na to obowiązujące zasady. Zostanie wyświetlony monit z komunikatem Osiągnięto **limit** prób numeru PIN, aby zresetować ten numer. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
+    ![Zrzut ekranu wskazujący, że po zbyt wielu nieprawidłowych próbach numeru PIN musisz zresetować ten numer.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
 3. Naciśnij pozycję **Resetuj numer PIN**. Zostanie wyświetlony monit o zalogowanie się przy użyciu poświadczeń logowania Microsoft 365 Business Premium użytkownika, a następnie ustawienie nowego numeru PIN.
     
@@ -136,7 +139,7 @@ Najpierw upewnij się, że zasady dotyczą aplikacji, w której chcesz ją zwery
     
 2. Wybierz **pozycję Zasady aplikacji dla systemu iOS** dla ustawień utworzonych podczas instalacji lub innych utworzonych zasad i sprawdź, czy są wymuszane na przykład Outlook konfiguracji. 
     
-    ![Shows all the apps for which this policy protects files.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
+    ![Zrzut ekranu przedstawiający wszystkie aplikacje, dla których te zasady chronią pliki.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
 ### <a name="validate-require-a-pin-to-access-office-apps"></a>Sprawdzanie działania ustawienia Wymagaj numeru PIN w celu uzyskania dostępu do aplikacji pakietu Office
 
@@ -158,7 +161,7 @@ W okienku Edytuj zasady wybierz pozycję  Edytuj obok opcji Kontrola dostępu do
     
 2. Wprowadź nieprawidłowy numer PIN więcej razy niż zezwalają na to obowiązujące zasady. Zostanie wyświetlony monit z komunikatem Osiągnięto **limit** prób numeru PIN, aby zresetować ten numer. 
     
-    ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
+    ![Zrzut ekranu z ostrzeżeniem Numer PIN jest resetowany po zbyt wielu niepoprawnych próbach.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
 3. Naciśnij przycisk **OK**. Zostanie wyświetlony monit o zalogowanie się przy użyciu poświadczeń logowania Microsoft 365 Business Premium użytkownika, a następnie ustawienie nowego numeru PIN.
     
@@ -202,5 +205,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Ochrona w
     
 4. Otwórz aplikację **Zdjęcia** na ekranie głównym. Zobaczysz zapisane zdjęcie (lub kilka, jeśli zapiszesz ich więcej) w zaszyfrowanej postaci. 
     
----
 
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

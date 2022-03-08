@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak uzyskać dostęp do statystyk i raportów dotyczących wersji roboczych kolekcji i kolekcji, dla których zapisano recenzję ustawioną w Advanced eDiscovery.
-ms.openlocfilehash: a520bd3f05e7729a1a36101d4be334d984b39739
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 4b5cf37639d497d615a0772e084507018cb829cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63014925"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325155"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Statystyki i raporty dotyczące kolekcji w programie Advanced eDiscovery
 
@@ -94,7 +94,7 @@ Ta sekcja karty **Podsumowanie** zawiera statystyki i inne informacje o elementa
  
    Element nadrzędny może zawierać wiele elementów podrzędnych. Na przykład wiadomość e-mail jest elementem nadrzędnym, jeśli zawiera dołączony plik lub ma załącznik w chmurze. W tym przypadku dołączony plik lub plik docelowy załącznika w chmurze jest uznawany za element podrzędny. Po zatwierdzeniu kolekcji elementy nadrzędne i wszystkie odpowiadające im elementy podrzędne (takie jak dołączone pliki i załączniki w chmurze) są dodawane do zestawu recenzji jako pojedyncze elementy lub pliki.
 
-- **Elementy podrzędne**. Liczba elementów podrzędnych dodanych do zestawu recenzji. Do zestawu recenzji są dodawane tylko elementy podrzędne, które są plikami załączników i załącznikami w chmurze, jako pojedyncze pliki. Inne typy elementów podrzędnych, takie jak podpisy wiadomości e-mail i obrazy. są wyodrębnione z elementu nadrzędnego, a następnie przetwarzane przez optyczne rozpoznawanie znaków (OCR), aby wyodrębnić dowolny tekst z elementu podrzędnego. Tekst wyodrębniony z tych typów elementów nadrzędnych jest następnie dodawany do jego elementu nadrzędnego, aby można go było wyświetlić w zestawie recenzji. Dzięki nie dodaniu elementów podrzędnych do zestawu recenzji jako oddzielnego pliku Advanced eDiscovery usprawnia proces rerecenzowania przez ograniczenie liczby potencjalnie nieistotnych elementów w zestawie recenzji.
+- **Elementy podrzędne**. Liczba elementów podrzędnych dodanych do zestawu recenzji. Do zestawu recenzji są dodawane tylko elementy podrzędne, które są plikami załączników i załącznikami w chmurze, jako pojedyncze pliki. Inne typy elementów podrzędnych, takie jak podpisy wiadomości e-mail i obrazy, są wyodrębnione z elementu nadrzędnego, a następnie przetwarzane przez optyczne rozpoznawanie znaków (OCR) w celu wyodrębnienia dowolnego tekstu z elementu podrzędnego. Tekst wyodrębniony z tych typów elementów nadrzędnych jest następnie dodawany do jego elementu nadrzędnego, aby można go było wyświetlić w zestawie recenzji. Dzięki nie dodaniu elementów podrzędnych do zestawu recenzji jako oddzielnego pliku Advanced eDiscovery usprawnia proces rerecenzowania przez ograniczenie liczby potencjalnie nieistotnych elementów w zestawie recenzji.
 
 - **Elementy unikatowe**. Liczba unikatowych elementów dodanych do zestawu recenzji. Unikatowe elementy są unikatowe w zestawie recenzji. Wszystkie elementy są unikatowe po dodaniu pierwszej kolekcji do nowego zestawu recenzji, ponieważ w zestawie recenzji nie było żadnych poprzednich elementów.
 

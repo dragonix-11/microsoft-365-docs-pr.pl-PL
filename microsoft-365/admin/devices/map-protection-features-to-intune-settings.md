@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
-ms.date: 8/13/2018
+ms.date: 02/27/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,14 +27,17 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Dowiedz się, jak są dostępne funkcje Microsoft 365 Business Premium mapowanie na ustawienia usługi Intune. Subskrypcja udostępnia licencję na modyfikowanie ustawień usługi Intune.
-ms.openlocfilehash: 144a49f6c6463e7562c6509c981ab56b4702453c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 33dfb7b53e048f258c1974ced046deaad41f5ce2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984086"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313765"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Jak działa funkcja ochrony w usłudze Microsoft 365 Business Premium mapowanie na ustawienia usługi Intune
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 ## <a name="android-and-ios-application-protection-settings"></a>Ustawienia ochrony aplikacji dla systemów Android lub iOS
 
@@ -109,3 +112,7 @@ Aby znaleźć ustawienie usługi Intune, zaloguj się przy użyciu poświadczeń
 |Zezwalaj użytkownikom na otrzymywanie porad i reklam dotyczących systemu Windows od firmy Microsoft  <br/> |**Windows polecane**, wszystkie zablokowane, jeśli ta funkcja jest ustawiona **na wyłączone w** Microsoft 365 Business Premium.  <br/> |
 |Automatycznie aktualizuj urządzenia z systemem Windows 10  <br/> | To ustawienie **znajduje się w** Microsoft Intune \> **aktualizacji usługi —** Windows 10 Pierścienie aktualizacji, wybierz pozycję Zasady aktualizacji **dla Windows 10** urządzeń, a **następnie pozycję** \> **Właściwości Ustawienia**.  <br/>  Gdy ustawienie Microsoft 365 Business Premium jest ustawione na **Wartość Wł**., są ustawione wszystkie następujące ustawienia:  <br/> **Gałąź** usługi ma ustawioną **wartość CB** (CBB, gdy ta gałąź jest Microsoft 365 Business Premium).  <br/> **Aktualizacje produktów firmy Microsoft**  zostaje ustawiona wartość **Zezwalaj**.  <br/> **Sterowniki systemu Windows**  zostaje ustawiona wartość **Zezwalaj**.  <br/> **Zachowanie automatycznych aktualizacji**  zostaje ustawiona wartość **Automatycznie zainstaluj podczas konserwacji** oraz:  <br/> **Początek godzin aktywnego użytkowania**  zostaje ustawiona wartość **6:00**.  <br/> **Koniec godzin aktywnego użytkowania**  zostaje ustawiona wartość **22:00**.  <br/> **Okres odroczenia aktualizacji dotyczących jakości (dni)**  zostaje ustawiona wartość **0**.  <br/> **Okres odroczenia aktualizacji funkcji (dni)**  zostaje ustawiona wartość **0**.  <br/> **Tryb pobierania optymalizacji dostarczania**  zostaje ustawiona wartość **HTTP w połączeniu z komunikacją równorzędną za tym samym translatorem adresów sieciowych**.  <br/> |
 |||
+
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

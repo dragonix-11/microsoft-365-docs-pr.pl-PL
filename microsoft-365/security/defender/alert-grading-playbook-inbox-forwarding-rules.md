@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: dee9c4a51175f9fbeac8b6d21f29490081258ba0
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 08178a1672e3bdd5b124138f698b42be8181373a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62974144"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325505"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>Ocenianie alertów dla podejrzanych reguł przesyłania dalej skrzynki odbiorczej
 

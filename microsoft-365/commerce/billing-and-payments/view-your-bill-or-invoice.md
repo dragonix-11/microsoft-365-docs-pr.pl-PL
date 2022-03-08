@@ -2,8 +2,8 @@
 title: Wyświetlanie rachunku lub faktury
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -15,22 +15,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 - adminvideo
 description: Znajdź fakturę lub zestawienie rozliczeniowe w centrum administracyjnym platformy Microsoft 365. Możesz również zapisać i wydrukować kopię rachunku.
 ms.date: 01/25/2022
-ms.openlocfilehash: b7a8c6a1ec58fdeb74349f06a3a9ef25c390482d
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 02905b1e31dc295d8b5d79bc150a0c93823c9dd7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013862"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316369"
 ---
 # <a name="view-your-bill-or-invoice"></a>Wyświetlanie rachunku lub faktury
 

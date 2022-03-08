@@ -22,16 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Zwiększaj bezpieczeństwo organizacji przed atakami haseł, a także zakaż popularne hasła i włącz oparte na ryzyko uwierzytelnianie wieloskładnikowe.
-ms.openlocfilehash: a77d6a157c3691739ee7f5a024796f1f203241e8
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 46e6c4ba163df0693630896b8db17b4eefe9828a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019257"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312580"
 ---
 # <a name="password-policy-recommendations"></a>Zalecenia dotyczące zasad dotyczących haseł
 
 Jako administrator organizacji, odpowiadasz za konfigurowanie zasad haseł dla użytkowników w organizacji. Ustawienie zasad dotyczących haseł może być skomplikowane i skomplikowane, a w tym artykule przedstawiono zalecenia dotyczące zabezpieczania organizacji przed atakami hasła.
+
+Konta Microsoft dostępne tylko w chmurze mają wstępnie zdefiniowane zasady dotyczące haseł, których nie można zmienić. Jedynymi elementami, które można zmienić, jest liczba dni do wygaśnięcia hasła oraz to, czy hasło w ogóle wygasa. 
   
 Aby określić, jak często Microsoft 365 wygasają hasła w organizacji, zobacz Ustawianie zasad wygasania [haseł dla konta Microsoft 365](../manage/set-password-expiration-policy.md).
 

@@ -9,20 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 14c83d007d2506e0e85c156f4d738f78f91fad75
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: be685d39bbda3b96f689c13a3bc3485c011f1ec8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009803"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319883"
 ---
 # <a name="device-status-report"></a>Raport o stanie urządzeń
 
-Ten raport agreguje stan wszystkich zarejestrowanych urządzeń w celu pokazania korzystania z Microsoft Managed Desktop urządzenia.
+Ten raport agreguje stan wszystkich zarejestrowanych urządzeń w celu pokazania korzystania z usługi zarządzanej komputera stacjonarnego firmy Microsoft.
 
 Kategoryzowamy urządzenia na podstawie ich aktywności w ciągu ostatnich 28 dni oraz od możliwości aktualizowania urządzenia.
 
-Aby aktualizacje zostały Windows aktualizacji, urządzenie musi:
+Aby jak najszybciej zaktualizować usługę Windows Update, urządzenie musi:
 
 - Mieć połączenie z Internetem.
 - Nie hibernating.
@@ -39,7 +39,7 @@ Stan urządzenia jest raportny za pomocą następujących etykiet:
 | Etykieta stanu urządzenia | Opis |
 | ------ | ------ |
 | Gotowe dla użytkownika | Urządzenia, które zostały pomyślnie zarejestrowane w naszej usłudze i gotowe do użycia dla użytkownika.|
-| Aktywny | Używane urządzenia. <ul><li>Spełnili kryteria działań (sześć godzin, dwie ciągłe) najnowszej aktualizacji zabezpieczeń.</li> <li>Zaewidencjonowali oni Microsoft Intune co najmniej raz w ciągu ostatnich pięciu dni.</li></ul> |
+| Aktywny | Używane urządzenia. <ul><li>Spełnili kryteria działań (sześć godzin, dwie ciągłe) najnowszej aktualizacji zabezpieczeń.</li> <li>W ciągu ostatnich pięciu dni zaewidencjonowali oni usługę Microsoft Intune co najmniej raz.</li></ul> |
 | Zsynchronizowano | Urządzenia używane i zaewidencjonowane za pomocą usługi Intune w ciągu ostatnich 28 dni.
 | Nie można zsynchronizować | Urządzenia używane, ale nie zaewidencjonowane za pomocą usługi Intune w ciągu ostatnich 28 dni. |
-| Inne | Etykieta agreguje kilka stanów błędów, które mogą występować zwykle podczas rejestracji urządzenia. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z rejestracją urządzenia](../get-started/register-devices-self.md#troubleshooting-device-registration). |
+| Inne | Etykieta agreguje kilka stanów błędów, które mogą występować zwykle podczas rejestracji urządzenia. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z rejestracją urządzenia](../get-started/manual-registration.md#troubleshooting-device-registration). |

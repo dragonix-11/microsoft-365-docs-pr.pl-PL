@@ -2,13 +2,13 @@
 title: Połączenie rekordów DNS w witrynie Namecheap Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, usługi Skype dla firm Online i innych usług w witrynie Namecheap dla firmy Microsoft.
-ms.openlocfilehash: 31938656e17104d1388b53c05b6ccf3af9afc30f
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+ms.openlocfilehash: 146b76ef95a725faa3457eaf1795b153133cef92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "62988695"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314997"
 ---
 # <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Połączenie rekordów DNS w witrynie Namecheap Microsoft 365
 

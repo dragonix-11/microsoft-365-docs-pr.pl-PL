@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Poznaj wymagania i zagadnienia związane z przejściem do Microsoft 365 dla firm.
-ms.openlocfilehash: 831b8c20363e8c8d2339fe05edcd949ffc8c2cbb
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 1012e854d514212ae3c5c970347255936ea94f1a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63013898"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312729"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planowanie konfiguracji usługi Microsoft 365 dla firm
 
@@ -146,3 +146,7 @@ W przypadku większych organizacji lub, jeśli rozpoczynasz Skype dla firm, wdro
   - **Rozważ skorzystanie z usług [partnera firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=391089)**. Jeśli masz niewiele czasu lub masz zaawansowane wymagania (na przykład przeniesienie tysięcy plików do magazynu w chmurze Microsoft 365 integrowanie się z innym oprogramowaniem), doświadczony partner może być bardzo pomocny. 
 
 - **Jeśli masz więcej niż 50 pracowników**, [Centrum wdrażania FastTrack](https://go.microsoft.com/fwlink/?LinkId=517115) pomoże Ci w przeprowadzeniu wdrożenia.
+
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

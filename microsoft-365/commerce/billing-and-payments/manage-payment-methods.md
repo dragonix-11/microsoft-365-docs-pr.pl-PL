@@ -2,8 +2,8 @@
 title: Zarządzanie metodami płatności
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
@@ -14,22 +14,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 - adminvideo
 - business_assist
 search.appverid: MET150
 description: Kupowanie produktów lub usług biznesowych firmy Microsoft przy użyciu istniejącej metody płatności lub dodanie nowej w centrum administracyjne platformy Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: 7fde1149d97bb05863f4fd013f501b49203c33f6
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1b36a11c2bdb34880f8f02b84788062dfb88c4b1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011312"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319759"
 ---
 # <a name="manage-payment-methods"></a>Zarządzanie metodami płatności
 

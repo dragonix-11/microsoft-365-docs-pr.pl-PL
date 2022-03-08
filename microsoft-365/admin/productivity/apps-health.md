@@ -2,8 +2,8 @@
 title: Wynik produktywności firmy Microsoft — Microsoft 365 kondycji aplikacji
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Szczegóły kondycji Aplikacje Microsoft 365 — technologia zapewnia wydajność.
-ms.openlocfilehash: e1dbbd0f52ac0d06d5f5af677fb7acf3a4762a3c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22bc1d503bc177722cb12d54c63adc3869755491
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984366"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321771"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Aplikacje Microsoft 365 kondycji — środowisko technologii
 

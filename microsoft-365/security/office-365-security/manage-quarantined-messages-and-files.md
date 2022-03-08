@@ -19,12 +19,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak wyświetlać wiadomości poddanych kwarantannie i zarządzać nimi dla wszystkich użytkowników usługi Exchange Online Protection (EOP). Administratorzy w organizacjach z programem Microsoft Defender dla Office 365 mogą również zarządzać plikami poddanymi kwarantannie w usługach SharePoint Online, OneDrive dla Firm i Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c216a84caefc783293cc1a4ce5b76357f4353a5
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7787943ad16a3ae641b475b01b7e1dd8bb7f51d2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021360"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318217"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako administrator w u usługi EOP
 
@@ -41,7 +41,7 @@ Administratorzy mogą wyświetlać, zwalniać i usuwać wszystkie typy wiadomoś
 
 Domyślnie tylko administratorzy mogą zarządzać wiadomościami poddanymi kwarantannie jako złośliwe oprogramowanie, wyłudzaniem dużej pewności lub ze względu na reguły przepływu poczty (nazywane także regułami transportu). Jednak administratorzy _mogą używać zasad_ kwarantanny w celu określenia, co użytkownicy mogą robić w kwarantannie wiadomości w zależności od tego, dlaczego wiadomość została poddana kwarantannie (dla obsługiwanych funkcji). Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 
-Administratorzy w organizacjach z programem Microsoft Defender dla usługi Office 365 mogą również zarządzać plikami poddanymi kwarantannie kwarantanny przez Sejf Załączniki dla SharePoint[, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Administratorzy w organizacjach z programem Microsoft Defender dla usługi Office 365 mogą również zarządzać plikami poddanymi kwarantannie przez Sejf Załączniki wiadomości SharePoint[, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 W portalu usługi Microsoft 365 Defender lub programie PowerShell (Exchange Online PowerShell dla organizacji z skrzynkami pocztowymi w programie Exchange Online i zarządzaniu nimi; autonomiczny program Power Microsoft 365 Shell usługi EOP dla organizacji bez Exchange Online skrzynki pocztowe).
 
@@ -63,7 +63,7 @@ W portalu usługi Microsoft 365 Defender lub programie PowerShell (Exchange Onli
   - Grupa **ról Zarządzanie organizacją tylko do** odczytu w [programie Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) również zapewnia dostęp tylko do odczytu tej funkcji.
   - <sup>\*</sup>Członkowie grupy ról **Administrator** kwarantanny w rolach współpracy poczty **e-mail &** w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) muszą być także członkami grupy ról Zarządzanie wiadomościami w  programie [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups), aby wykonać procedury kwarantanny w programie Exchange Online PowerShell.
 
-- Poddaj je kwarantannie wiadomości są zachowywane przez domyślny okres w zależności od tego, dlaczego zostały poddane kwarantannie. Po wygaśnięciu okresu przechowywania wiadomości są automatycznie usuwane i nie można ich odzyskać. Aby uzyskać więcej informacji, zobacz [Kwarantanna wiadomości e-mail w usługach EOP i Defender dla usługi Offie 365](quarantine-email-messages.md).
+- Poddaj je kwarantannie wiadomości są zachowywane przez domyślny okres w zależności od tego, dlaczego zostały poddane kwarantannie. Po wygaśnięciu okresu przechowywania wiadomości są automatycznie usuwane i nie można ich odzyskać. Aby uzyskać więcej informacji, zobacz [Poddaj kwarantannie wiadomości e-mail w usługach EOP i Defender for Office 365](quarantine-email-messages.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>Zarządzanie wiadomościami Microsoft 365 Defender-mail poddanych kwarantannie za pomocą portalu zarządzania wiadomościami e-mail poddanymi kwarantannie
 
@@ -175,7 +175,7 @@ Po wybraniu poddaną kwarantannie wiadomości z listy w wysuwanych szczegółach
   - Wybierz jedną z następujących opcji:
     - **Upuszczanie dla wszystkich adresatów**
     - **Zwolnij na określonych adresatów**: Wybierz adresatów w **wyświetlonym polu** Adresaci
-  - **Wysłać kopię tej wiadomości do** innych adresatów: Zaznacz tę opcję, aby wprowadzić adresy e-mail adresatów w **wyświetlonym polu Adresaci** .
+  - **Wysłać kopię tej wiadomości do** innych adresatów: Zaznacz tę opcję i wprowadź adresy e-mail adresatów w **wyświetlonym polu Adresaci** .
 
     > [!NOTE]
     > Aby wysłać kopię wiadomości do innych adresatów, należy także zwolnić wiadomość co najmniej jednego z oryginalnych adresatów (wybierz pozycję Zwolnij  dla wszystkich adresatów lub Zwolnij dla określonych **adresatów**).

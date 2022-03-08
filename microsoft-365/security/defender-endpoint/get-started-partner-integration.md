@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 988632e84614b49262c9cc7b8a74b493c1a48b01
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: b063d8435817d7dd64c3febf6e3399f3876ef894
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013664"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319829"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Zostań partnerem programu Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj si�
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>Krok 2. Spełnienie wymagań sprawdzania poprawności rozwiązania i certyfikacji
 
-Najlepszym sposobem na certyfikowanie partnerów technologicznych, że działa ich integracja, jest zatwierdzenie przez wspólnego klienta sugerowanego projektu integracji (klient może użyć opcji  Zaproponuj partnera na stronie Aplikacja partnerska w Centrum zabezpieczeń usługi Microsoft Defender) i przetestować go oraz przetestować i zmienić w zespole programu Microsoft Defender for Endpoint.[](https://securitycenter.microsoft.com/interoperability/partners)
+Najlepszym sposobem, aby partnerzy technologii potwierdzili swoje działania integracji, jest zatwierdzenie proponowanego projektu integracji  przez klienta (\(klient może skorzystać z opcji Polecanie partnera i aplikacji partnerów API > Partner [](https://security.microsoft.com/interoperability/partnersapps)\) na stronie Aplikacji partnerskiej w programie Microsoft 365 Defender i przetestować go oraz przetestować i zmienić w zespole programu Microsoft Defender for Endpoint.
 
 Gdy zespół usługi Microsoft Defender for Endpoint przejdą przegląd i zatwierdzi integrację, zostaniesz jej partnerem w witrynie Microsoft Intelligent Security Association.
 

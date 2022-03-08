@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika do archiwizowania danych zestawu FactSet w Microsoft 365
+title: Konfigurowanie łącznika do archiwizowania danych zestawu factset na platformie Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,23 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Dowiedz się, jak skonfigurować łącznik 17a-4 FactSet DataParser i używać go do importowania i archiwizowania danych zestawu factset w Microsoft 365.
-ms.openlocfilehash: 974bf2ab0111d1417d46553482244502a6758a26
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+description: Dowiedz się, jak skonfigurować łącznik 17a-4 FactSet DataParser i używać go do importowania i archiwizowania danych zestawu factset na platformie Microsoft 365.
+ms.openlocfilehash: 8c3728e1866d67b2ec7972b2a8857a2ba045022f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "63020768"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326219"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>Konfigurowanie łącznika do archiwizowania danych zestawu factset
 
-Za pomocą [programu FactSet DataParser](https://www.17a-4.com/factset-dataparser/) z firmy 17a-4 LLC. możesz importować i archiwizować dane z platformy FactSet do skrzynek pocztowych użytkowników w Microsoft 365 organizacji. DataParser zawiera łącznik factSet skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania ich do Microsoft 365. Łącznik programu FactSet DataParser konwertuje dane zestawu factset na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników w programie Microsoft 365.
+Importowanie i archiwizowanie danych z platformy FactSet do skrzynek pocztowych użytkowników w organizacji platformy Microsoft 365 za pomocą programu [FactSet DataParser](https://www.17a-4.com/factset-dataparser/) z firmy 17a-4 LLC. DataParser zawiera łącznik FactSet skonfigurowany do przechwytywania elementów ze źródła danych innej firmy i importowania tych elementów do platformy Microsoft 365. Łącznik factSet DataParser konwertuje dane zestawu factset na format wiadomości e-mail, a następnie importuje te elementy do skrzynek pocztowych użytkowników na platformy Microsoft 365.
 
-Po zapisaniu danych aplikacji FactSet w skrzynkach pocztowych użytkowników możesz stosować funkcje zgodności usługi Microsoft 365, takie jak przechowywanie w związku z postępowaniem sądowym, zbierania elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania oraz zgodność komunikacji. Importowanie i archiwizowanie danych w aplikacji Microsoft 365 za pomocą łącznika FactSet może ułatwić organizacji zachowania zgodności z zasadami rządowymi i przepisami.
+Po przechowywaniu danych programu FactSet w skrzynkach pocztowych użytkowników możesz stosować funkcje zgodności platformy Microsoft 365, takie jak przechowywanie w związku z postępowaniem sądowym, zbierania elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania oraz zgodność komunikacji. Importowanie i archiwizowanie danych na platformie Microsoft 365 za pomocą łącznika FactSet może ułatwić organizacji zachowania zgodności z zasadami rządowymi i ustawowymi.
 
 ## <a name="overview-of-archiving-factset-data"></a>Omówienie archiwizowania danych zestawu FactSet
 
-W poniższym o omówieniem wyjaśniono proces używania łącznika danych do archiwizowania danych zestawu factset w Microsoft 365.
+Poniższe omówienie przedstawia proces używania łącznika danych do archiwizowania danych zestawu FactSet na platformie Microsoft 365.
 
 ![Archiwizacja przepływu pracy dla danych factSet z lat 17a-4.](../media/FactSetDataParserConnectorWorkflow.png)
 
@@ -35,7 +35,7 @@ W poniższym o omówieniem wyjaśniono proces używania łącznika danych do arc
 
 2. Regularnie elementy zestawu factset są zbierane przez firmę DataParser. Program DataParser konwertuje również zawartość wiadomości na format wiadomości e-mail.
 
-3. Łącznik programu FactSet DataParser dzielony w aplikacji Centrum zgodności platformy Microsoft 365 się z programem DataParser i przesyła wiadomości do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
+3. Łącznik programu FactSet DataParser, który tworzysz w centrum zgodności platformy Microsoft 365, łączy się z usługą DataParser i przesyła wiadomości do bezpiecznej lokalizacji magazynu platformy Azure w chmurze firmy Microsoft.
 
 4. W skrzynkach pocztowych użytkowników jest tworzony podfolder w folderze Skrzynka odbiorcza o nazwie **FactSet DataParser** , a elementy zestawu factset są importowane do tego folderu. Łącznik określa skrzynkę pocztową, do której mają być importowane elementy, przy użyciu wartości właściwości *Email* . Każdy element zestawu factset zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika.
 
@@ -43,13 +43,13 @@ W poniższym o omówieniem wyjaśniono proces używania łącznika danych do arc
 
 - Utwórz konto dataparser dla łączników firmy Microsoft. W tym celu skontaktuj się [z działem 17a-4 LLC](https://www.17a-4.com/contact/). Podczas tworzenia łącznika w kroku 1 należy zalogować się do tego konta.
 
-- Użytkownik, który tworzy łącznik funkcji FactSet DataParser w kroku 1 (i ukończy go w kroku 3), musi być przypisany do roli importowania i eksportowania skrzynek pocztowych w programie Exchange Online. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Domyślnie ta rola nie jest przypisana do grupy ról w Exchange Online. Rolę importowania i eksportowania skrzynek pocztowych możesz dodać do grupy ról Zarządzanie organizacją w programie Exchange Online. Możesz też utworzyć grupę ról, przypisać rolę importowania i eksportowania skrzynek pocztowych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać więcej informacji, zobacz sekcje [Tworzenie grup ról](/Exchange/permissions-exo/role-groups#create-role-groups) [lub](/Exchange/permissions-exo/role-groups#modify-role-groups) Modyfikowanie grup ról w artykule "Zarządzanie grupami ról w aplikacji Exchange Online".
+- Użytkownik, który tworzy łącznik funkcji FactSet DataParser w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki** danych w centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych 17a-4 jest dostępny w GCC w chmurze dla instytucji rządowych Microsoft 365 Usa. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Organizacji w systemach innych firm, które znajdują się poza infrastrukturą firmy Microsoft 365 i dlatego nie są objęte zobowiązaniami firmy Microsoft 365 w zakresie zgodności z przepisami i ochrony danych. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
+- Ten łącznik danych 17a-4 jest dostępny w środowiskach GCC w chmurze platformy Microsoft 365 US Government .. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Twojej organizacji w systemach innych firm, które znajdują się poza infrastrukturą platformy Microsoft 365 i dlatego nie są objęte zobowiązaniami w zakresie zgodności z przepisami i ochrony danych platformy Microsoft 365. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
 
 ## <a name="step-1-set-up-a-factset-dataparser-connector"></a>Krok 1. Konfigurowanie łącznika programu FactSet DataParser
 
-Pierwszym krokiem jest uzyskanie dostępu do strony łączników danych w aplikacji Centrum zgodności platformy Microsoft 365 utworzenie łącznika 17a-4 dla danych z zestawu FactSet.
+Pierwszym krokiem jest uzyskanie dostępu do strony Łączniki danych w Centrum zgodności platformy Microsoft 365 i utworzenie łącznika 17a-4 dla danych z zestawu FactSet.
 
 1. Przejdź do, <https://compliance.microsoft.com> a następnie kliknij pozycję **Łączniki danychFactSet** >  **DataParser**.
 
@@ -67,11 +67,11 @@ Konfigurowanie łącznika programu FactSet DataParser we współpracy z pomocą 
 
 ## <a name="step-3-map-users"></a>Krok 3. Mapowanie użytkowników
 
-Łącznik factSet DataParser automatycznie zamapuje użytkowników na ich Microsoft 365 e-mail przed zaimportowaniem danych do Microsoft 365.
+Łącznik factset DataParser automatycznie zamapuje użytkowników na ich adresy e-mail platformy Microsoft 365 przed zaimportowaniem danych do platformy Microsoft 365.
 
 ## <a name="step-4-monitor-the-factset-dataparser-connector"></a>Krok 4. Monitorowanie łącznika programu FactSet DataParser
 
-Po utworzeniu łącznika programu FactSet DataParser można wyświetlić stan łącznika w Centrum zgodności platformy Microsoft 365.
+Po utworzeniu łącznika programu FactSet DataParser można wyświetlić stan łącznika w centrum zgodności platformy Microsoft 365.
 
 1. Przejdź do łączników <https://compliance.microsoft.com> **danych w lewym okienku narracji i** kliknij je.
 

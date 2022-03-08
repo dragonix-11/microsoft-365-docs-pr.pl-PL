@@ -2,8 +2,8 @@
 title: Dodaj więcej SharePoint do subskrypcji
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,21 +15,22 @@ ms.collection:
 - Adm_O365
 - SPO_Content
 ms.custom:
+- commerce_purchase
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - business_assist
 - AdminTemplateSet
+- admindeeplinkSPO
 search.appverid: MET150
 description: Dodaj miejsce do magazynowania plików w Microsoft 365 subskrypcji usługi. Dzięki dodatkowej przestrzeni dyskowej możesz przechowywać więcej zawartości w SharePoint.
 ms.date: 04/02/2021
-ms.openlocfilehash: 5236f2a46b1927e30721804053b2e3e6362704b2
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d3321643907535d01d0fa747ad454ee8d5898e91
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011287"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325463"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Dodaj więcej SharePoint do subskrypcji
 Jeśli zaczyna Ci zabraknie miejsca do magazynowania w witrynach SharePoint, możesz dodać miejsce do magazynowania do subskrypcji, jeśli Twój plan jest uprawniony. Jeśli na liście dostępnych dodatków nie Office 365 dodatkowych plików, oznacza **Storage**, oznacza to, że Twój plan nie kwalifikuje się do programu. Aby uzyskać więcej informacji, zobacz [Czy mój plan jest uprawnialny?](#is-my-plan-eligible-for-office-365-extra-file-storage)
@@ -47,7 +48,7 @@ Aby wykonywać zadania z tego artykułu, musisz być SharePoint administratorem 
 
 ## <a name="view-available-storage"></a>Wyświetlanie dostępnego miejsca do magazynowania
 
-1. W centrum SharePoint przejdź do strony Aktywne witryny i zaloguj się przy <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank"></a> użyciu konta, [które ma uprawnienia](/sharepoint/sharepoint-admin-role) administratora dla organizacji.
+1. W centrum SharePoint przejdź do strony Aktywne <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**witryny i zaloguj**</a> się przy użyciu konta, [które ma uprawnienia](/sharepoint/sharepoint-admin-role) administratora w organizacji.
 
 2. W prawym górnym rogu strony zobacz ilość miejsca do magazynowania używaną we wszystkich witrynach oraz łączną ilość miejsca do magazynowania dla twojej subskrypcji. Jeśli w organizacji skonfigurowano multi-Geo in Office 365, na pasku jest również pokazana ilość miejsca do magazynowania używanego we wszystkich lokalizacjach geograficznych.
 

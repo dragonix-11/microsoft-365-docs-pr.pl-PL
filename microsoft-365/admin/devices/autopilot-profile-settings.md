@@ -1,13 +1,11 @@
 ---
 title: "Ustawienia profilu rozwiązania AutoPilot \x97 informacje"
-f1.keywords:
-- NOCSH
 ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
 - ZTDProfileSettings
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
@@ -31,16 +29,19 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Profile rozwiązania AutoPilot ułatwiają kontrolowanie sposobu Windows na urządzeniach użytkowników. Profile zawierają ustawienia domyślne i opcjonalne, takie jak pomiń Cortana instalacji.
-ms.openlocfilehash: bacbf4faff5078fc10e2921ee176143f5ba80b2a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d0b1a15ef8279234868b94ab5c16e449a54cf62f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983914"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313877"
 ---
 # <a name="about-autopilot-profile-settings"></a>Ustawienia profilu rozwiązania AutoPilot  informacje
 
 ## <a name="autopilot-profile-settings"></a>Ustawienia profilu rozwiązania AutoPilot
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 Profile rozwiązania AutoPilot mogą pomóc w kontrolowaniu sposobu Windows na urządzeniach użytkowników. Profile zawierają następujące ustawienia.
   
@@ -58,3 +59,7 @@ Profile rozwiązania AutoPilot mogą pomóc w kontrolowaniu sposobu Windows na u
 |:-----|:-----|
 |Pomiń ustawienia prywatności (domyślnie wyłączone)  <br/> |Jeśli ta opcja jest ustawiona na wartość **Wł**., użytkownik urządzenia nie zobaczy umowy licencyjnej urządzenia i nie zobaczy Windows po pierwszym się do urządzenia.  <br/> |
 |Nie zezwalaj użytkownikowi na zostanie administratorem lokalnym  <br/> |Jeśli ta opcja jest ustawiona na **Wł**., użytkownik urządzenia nie będzie mógł zainstalować żadnych aplikacji osobistych, takich jak Cortana.<br/> |
+
+## <a name="see-also"></a>Zobacz też
+
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../security-and-compliance/secure-your-business-data.md)

@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Wykonaj czynności opisane w tym rozwiązaniu, aby usunąć byłego pracownika z Microsoft 365 i zabezpieczyć dane organizacji.
-ms.openlocfilehash: dcbaa1282ee462fd991f04df74008d823a7b621d
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 799a946c85da94fcc3d9e53a4015697d124192ce
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019253"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315179"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Omówienie: usuwanie byłego pracownika i zabezpieczanie danych
 
@@ -55,22 +55,6 @@ Do wykonania kroków z tej serii należy użyć tych Microsoft 365 i funkcji.
 |Outlook|Importowanie plików pst, dodawanie skrzynki pocztowej |
 |Active Directory|Usuwanie użytkowników w środowiskach hybrydowych |
 
-## <a name="watch-delete-a-user"></a>Obejrzyj: Usuwanie użytkownika
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
-
-Gdy pracownik odchodzi z firmy, musisz usunąć go z Microsoft 365 dla firm. Zanim to zrobisz, należy zablokować im dostęp do plików firmy, zachować utworzone przez niego dokumenty i wykonać kilka innych zadań administracyjnych związanych z usuwaniem użytkownika.
-
-1. W centrum administracyjnym wybierz pozycję **Użytkownicy** i wybierz pozycję **Aktywni użytkownicy**.
-1. Wybierz użytkownika, którego chcesz usunąć, a następnie wybierz pozycję **Usuń użytkownika**.
-1. Zaznacz pole wyboru, aby usunąć jego licencję, a następnie zaznacz to pole wyboru, aby usunąć aliasy e-mail tych osób.
-1. Zaznacz to pole wyboru, aby dać iniutorowi dostęp do poczty e-mail byłego pracownika, a następnie wybierz pozycję Wybierz użytkownika **i ustaw opcje poczty e-mail**.
-1. Aby usunąć skojarzone aliasy e-mail, wybierz **pozycję X** obok skojarzonych aliasów.
-1. Przejrzyj informacje o udostępnionej skrzynce pocztowej i wybierz pozycję **Zakończ**.
-1. Upewnij się, że opcje są ustawione poprawnie, a następnie wybierz pozycję **Przypisz i przekonwertuj**.
-1. Przejrzyj wyniki, a następnie wybierz **pozycję Zamknij**.
-
-Po usunięciu użytkownika masz maksymalnie 30 dni na przywrócenie jego konta.
 
 ## <a name="solution-remove-a-former-employee"></a>Rozwiązanie: Usuwanie byłego pracownika
 
@@ -93,6 +77,22 @@ Po usunięciu użytkownika masz maksymalnie 30 dni na przywrócenie jego konta.
 |[Krok 6. Usunięcie licencji Microsoft 365 byłego pracownika](remove-former-employee-step-6.md)|Po odebraniu licencji możesz ją przypisać innej osobie. Możesz też usunąć licencję, aby nie płacić za nią do czasu zatrudnienia nowej osoby.  <p> Po odebraniu lub usunięciu licencji stare wiadomości e-mail, kontakty i kalendarz użytkownika będą przechowywane przez okres **30 dni**, po czym zostaną trwale usunięte. Jeśli tylko usuniesz licencję, ale nie usuniesz konta, zawartość w usłudze OneDrive użytkownika pozostanie dla Ciebie dostępna nawet po upływie 30 dni.  |
 |[Krok 7. Usuwanie konta użytkownika byłego pracownika](remove-former-employee-step-7.md)|Spowoduje to usunięcie konta z Centrum administracyjnego. Dzięki temu zostanie zachowany porządek.|
 
+ ## <a name="watch-delete-a-user"></a>Obejrzyj: Usuwanie użytkownika
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
+
+Gdy pracownik odchodzi z firmy, musisz usunąć go z Microsoft 365 dla firm. Zanim to zrobisz, należy zablokować im dostęp do plików firmy, zachować utworzone przez niego dokumenty i wykonać kilka innych zadań administracyjnych związanych z usuwaniem użytkownika.
+
+1. W centrum administracyjnym wybierz pozycję **Użytkownicy** i wybierz pozycję **Aktywni użytkownicy**.
+1. Wybierz użytkownika, którego chcesz usunąć, a następnie wybierz pozycję **Usuń użytkownika**.
+1. Zaznacz pole wyboru, aby usunąć jego licencję, a następnie zaznacz to pole wyboru, aby usunąć aliasy e-mail tych osób.
+1. Zaznacz to pole wyboru, aby dać iniutorowi dostęp do poczty e-mail byłego pracownika, a następnie wybierz pozycję Wybierz użytkownika **i ustaw opcje poczty e-mail**.
+1. Aby usunąć skojarzone aliasy e-mail, wybierz **pozycję X** obok skojarzonych aliasów.
+1. Przejrzyj informacje o udostępnionej skrzynce pocztowej i wybierz pozycję **Zakończ**.
+1. Upewnij się, że opcje są ustawione poprawnie, a następnie wybierz pozycję **Przypisz i przekonwertuj**.
+1. Przejrzyj wyniki, a następnie wybierz **pozycję Zamknij**.
+
+Po usunięciu użytkownika masz maksymalnie 30 dni na przywrócenie jego konta.
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Przywracanie użytkownika](restore-user.md) (artykuł)\

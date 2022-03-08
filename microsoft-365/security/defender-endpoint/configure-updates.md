@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: af522fcd479b2fbcf8d3327f4cb382987cb7ad46
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 4261e32721da86233a0a929a435c318904d6ac12
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "62996808"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324147"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Tworzenie niestandardowego procesu stopniowego wdrażanie aktualizacji programu Microsoft Defender
 

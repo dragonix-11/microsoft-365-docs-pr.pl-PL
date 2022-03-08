@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: W celu zachowania zawartości związanej z prowadzonym dochodzeniami sądowym lub sądowym możesz utworzyć Microsoft 365, która jest skojarzona z podstawową sprawą zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 486abd6c47082f320a5fa743ac053f29f6591054
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 0d80197becdeb07c917602ff27a1ad9b2c882029
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "63026797"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322117"
 ---
 # <a name="create-an-ediscovery-hold"></a>Tworzenie zbierania elektronicznych materiałów dowodowych
 
@@ -221,14 +221,16 @@ W poniższej tabeli wymieniono limity dotyczące spraw zbierania elektronicznych
   | Opis limitu | Limit |
   |:-----|:-----|
   |Maksymalna liczba spraw w organizacji.  <br/> |Bez limitu  <br/> |
-  |Maksymalna liczba zbierania elektronicznych materiałów dowodowych w organizacji.  <br/> |10,000  <br/> |
+  |Maksymalna liczba zasad zbierania elektronicznych materiałów dowodowych w organizacji. Limit ten obejmuje łączną liczbę zasad przechowywania w przypadku podstawowych zbierania elektronicznych materiałów dowodowych Advanced eDiscovery spraw.  <br/> |10 <sup>0001</sup>  <br/> |
   |Maksymalna liczba skrzynek pocztowych w pojedynczym zbierania elektronicznych materiałów dowodowych. Ten limit obejmuje łączną liczbę skrzynek pocztowych użytkowników oraz skrzynek pocztowych skojarzonych Microsoft 365, grup Microsoft Teams i Yammer grupy.  <br/> |1,000  <br/> |
   |Maksymalna liczba witryn w pojedynczym zbierania elektronicznych materiałów dowodowych. Ten limit obejmuje łączną liczbę OneDrive dla Firm, witryn SharePoint oraz witryn skojarzonych z grupami Microsoft 365, witrynami Microsoft Teams i Yammer grupy.  <br/> |100  <br/> |
-  |Maksymalna liczba spraw wyświetlanych na stronie głównej zbierania elektronicznych materiałów dowodowych oraz maksymalna liczba elementów wyświetlanych na kartach Zarchiwnia, Wyszukiwania i Eksportowanie w ramach sprawy. <sup>1</sup> |1,000|
+  |Maksymalna liczba spraw wyświetlanych na stronie głównej zbierania elektronicznych materiałów dowodowych oraz maksymalna liczba elementów wyświetlanych na kartach Zarchiwnia, Wyszukiwania i Eksportowanie w ramach sprawy.  |10002<sup></sup>|
   |||
 
    > [!NOTE]
-   > <sup>1</sup> Aby wyświetlić listę ponad 1000 spraw, blokady, wyszukiwania lub eksporty, możesz użyć odpowiedniego polecenia cmdlet programu PowerShell dla programu Office 365 Security & Compliance:
+   > <sup>1</sup> Jeśli w ramach jednej zasady dotyczącej przechowywania wstrzymasz więcej niż 1000 skrzynek pocztowych lub 100 witryn, system automatycznie przeskaluje to hold. Oznacza to, że system automatycznie doda lokalizacje danych do zasad wielokrotnego blokowania, zamiast dodawać je do pojedynczych zasad przechowywania. Nadal jednak obowiązuje limit 10 000 zasad przechowywania przypadków na organizację.
+   >
+   > <sup>2</sup> Aby wyświetlić listę ponad 1000 spraw, blokady, wyszukiwania lub eksporty, można użyć odpowiedniego polecenia cmdlet programu PowerShell w & zabezpieczeń i zgodności:
    >
    > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
    > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)

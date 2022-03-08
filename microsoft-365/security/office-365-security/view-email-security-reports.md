@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2393950b97c8f8f6a6c625d8f31487d08c9c1cb7
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: 08ab4e4e0d85dec56de8285659cead3e1dfcb468
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013305"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321337"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail
 
@@ -75,7 +75,7 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Naruszoni użytkownicy** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ![Widok raportu w raporcie Naruszoni użytkownicy.](../../media/compromised-users-report-activity-view.png)
 
@@ -112,7 +112,7 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Exchange reguły** transportu ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ### <a name="chart-breakdown-by-severity"></a>Podział wykresu według ważności
 
@@ -143,7 +143,7 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Exchange reguły** transportu ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ## <a name="forwarding-report"></a>Raport przesyłania dalej
 
@@ -164,13 +164,13 @@ Aby wyświetlić raport w portalu Microsoft 365 Defender pod <https://security.m
 
 Na stronie **Raport o stanie przepływu** **poczty domyślnie wybrana** jest karta Typ. Wykres przedstawia następujące informacje dotyczące określonego zakresu dat:
 
-- **Dobra wiadomość**
+- **Dobra wiadomość e-mail**: Wiadomości e-mail, które zostały określone jako niebędące spamem lub które są dozwolone przez zasady użytkowników lub organizacji.
 - **Suma**
-- **Złośliwe oprogramowanie**
-- **Wiadomość e-mail wyłudzająca**
-- **Spam**
-- **Ochrona krawędzi**
-- **Reguły wiadomości**
+- **Złośliwe oprogramowanie**: Wiadomości e-mail, które są blokowane jako złośliwe oprogramowanie przez różne filtry.
+- **Wiadomość e-mail wyłudzająca** informacje: Wiadomość e-mail zablokowana przez różne filtry jako próby wyłudzenia informacji.
+- **Spam**: Wiadomości e-mail, które są blokowane jako spam przez różne filtry.
+- **Ochrona krawędzi**: Poczta e-mail odrzucona na krawędzi/obwodzie przed rozpoczęciem oceny przez usługę EOP lub Defender dla systemu Office 365.
+- **Reguły wiadomości**: Wiadomości e-mail, na które zostały wysłane reguły przepływu poczty (nazywane także regułami transportu).
 
 Tabela szczegółów pod wykresem zawiera następujące informacje:
 
@@ -196,14 +196,14 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Po powrocie do strony raportu głównego, jeśli klikniesz **pozycję Wybierz** kategorię, aby uzyskać więcej szczegółowych informacji, możesz wybrać spośród następujących wartości:
+Po powrocie do **strony Raport o stanie przepływu** poczty w przypadku kliknięcia przycisku Wybierz kategorię w celu ustawienia szczegółowych informacji można wybrać spośród następujących wartości:
 
 - **Wiadomość e-mail wyłudzająca** informacje: ta zaznaczenie umożliwia dostęp do [raportu o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
 - **Złośliwe oprogramowanie w** wiadomościach e-mail: ta zaznaczenie przenosi Cię do [raportu o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
 - **Wykrywanie spamu**: ta zaznaczenie umożliwia dostęp do raportu [Wykrywanie spamu](view-email-security-reports.md#spam-detections-report).
 - **Blokowanie spamu w programie Edge**: ta zaznaczenie umożliwia dostęp do raportu [Wykrywanie spamu](view-email-security-reports.md#spam-detections-report).
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Ikona Utwórz harmonogram](#schedule-report)** i ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Raport o stanie przepływu** poczty e-mail ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Ikona Utwórz harmonogram](#schedule-report)** i ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Widok kierunku dla raportu o stanie przepływu poczty
 
@@ -228,14 +228,14 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Po powrocie do strony raportu głównego, jeśli klikniesz **pozycję Wybierz** kategorię, aby uzyskać więcej szczegółowych informacji, możesz wybrać spośród następujących wartości:
+Po powrocie do **strony Raport o stanie przepływu** poczty w przypadku kliknięcia przycisku Wybierz kategorię w celu ustawienia szczegółowych informacji można wybrać spośród następujących wartości:
 
 - **Wiadomość e-mail wyłudzająca** informacje: ta zaznaczenie umożliwia dostęp do [raportu o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
 - **Złośliwe oprogramowanie w** wiadomościach e-mail: ta zaznaczenie przenosi Cię do [raportu o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
 - **Wykrywanie spamu**: ta zaznaczenie umożliwia dostęp do raportu [Wykrywanie spamu](view-email-security-reports.md#spam-detections-report).
 - **Blokowanie spamu w programie Edge**: ta zaznaczenie umożliwia dostęp do raportu [Wykrywanie spamu](view-email-security-reports.md#spam-detections-report).
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **Ikona Utwórz harmonogram** i ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Dostępne** są przyciski eksportu.
+Na stronie **Raport o stanie przepływu** poczty e-mail ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **Ikona Utwórz harmonogram** i ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Dostępne** są przyciski eksportu.
 
 ### <a name="mailflow-view-for-the-mailflow-status-report"></a>Mailflow view for the Mailflow status report
 
@@ -291,11 +291,11 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego możesz kliknąć pozycję Pokaż trendy,  aby wyświetlić wykresy trendów w wyświetlonym **wysuwanych** trendach przepływu poczty.
+Na stronie Raport **o stanie przepływu** poczty możesz kliknąć pozycję Pokaż  trendy, aby wyświetlić wykresy trendów w wyświetlonym **wysuwanych** trendach przepływu poczty.
 
 ![Wysuw trendów przepływu poczty w widoku Przepływ poczty w raporcie o stanie przepływu poczty.](../../media/mail-flow-status-report-mailflow-view-show-trends.png)
 
-Na stronie raportu głównego ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Przycisk** Eksportuj jest dostępny.
+Na stronie **Raport o stanie przepływu** poczty e-mail ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Przycisk** Eksportuj jest dostępny.
 
 ## <a name="malware-detections-report"></a>Raport wykrywanie złośliwego oprogramowania
 
@@ -359,7 +359,7 @@ Tabela szczegółów pod wykresem zawiera następujące informacje:
 
 Aby uzyskać więcej informacji na temat złożonych kodów wyników uwierzytelniania, zobacz [Nagłówki wiadomości ochrony przed spamem w programie Microsoft 365](anti-spam-message-headers.md).
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Wykrywanie fałszu** kliknij ikonę ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ## <a name="submissions-report"></a>Raport Przesłania
 
@@ -397,7 +397,7 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
 
 Tabela szczegółów pod wykresem zawiera te same informacje i zawiera te same opcje  grupowania  lub dostosowywania kolumn, co  na karcie Przesłane do analizy w obszarze Przesyłanie wiadomości e-mail & **przesłanych** \> **do współpracy**. Aby uzyskać więcej informacji, [zobacz Wyświetlanie przesyłania administratorów do firmy Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
 
-Na stronie raportu **[głównego dostępny jest](#export-report)** przycisk Eksportuj.
+Na **stronie Materiały** **[dostępny jest przycisk](#export-report)** Eksportuj.
 
 ![Strona raportu Przesyłanie w Microsoft 365 Defender sieci Web.](../../media/submissions-report-page.png)
 
@@ -521,7 +521,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ### <a name="view-data-by-email--spam-and-chart-breakdown-by-detection-technology"></a>Wyświetlanie danych według wiadomości e-mail \> ze spamem i zestawieniem wykresów według technologii wykrywania
 
@@ -572,7 +572,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>Wyświetlanie danych według złośliwego oprogramowania poczty \> e-mail i podziału wykresów według technologii wykrywania
 
@@ -625,7 +625,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Stan ochrony przed tym stanem** kliknij ikonę ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ### <a name="chart-breakdown-by-policy-type"></a>Podział wykresu według typu zasad
 
@@ -695,7 +695,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ### <a name="chart-breakdown-by-delivery-status"></a>Podział wykresu według stanu dostawy
 
@@ -768,7 +768,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ### <a name="view-data-by-content--malware"></a>Wyświetlanie danych według złośliwego oprogramowania do wyświetlania \> zawartości
 
@@ -797,7 +797,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-reason"></a>Wyświetlanie danych według zastępowania systemu i podziału wykresu według przyczyny
 
@@ -843,7 +843,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](#export-report)** Eksportuj jest dostępny.
+Na stronie **Stan ochrony przed zagrożeniami** kliknij ikonę ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](#export-report)** Eksportuj jest dostępny.
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-delivery-location"></a>Wyświetlanie danych według zastępowania systemu i podziału wykresu według lokalizacji dostarczania
 
@@ -900,7 +900,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](#export-report)** Eksportuj jest dostępny.
+Na stronie **Stan ochrony przed zagrożeniami** kliknij ikonę ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](#export-report)** Eksportuj jest dostępny.
 
 ## <a name="top-malware-report"></a>Najgorętszy raport złośliwego
 
@@ -919,13 +919,13 @@ Na stronie **Raport najlepszego złośliwego** oprogramowania jest wyświetlana 
 
 Jeśli klikniesz **pozycję Filtr**, możesz określić zakres dat w **datach Rozpoczęcie** i **Data zakończenia**.
 
-Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Ikona Utwórz harmonogram](#schedule-report)** i ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
+Na stronie **Najlepsze złośliwe oprogramowanie** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Ikona Utwórz harmonogram](#schedule-report)** i ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
 ![Widok najlepszego raportu złośliwego oprogramowania.](../../media/top-malware-report-view.png)
 
 ## <a name="top-senders-and-recipients-report"></a>Raport Najgorętsi nadawcy i adresaci
 
-**Raporty Najgorętsi** nadawcy i adresaci są dostępne w usługach EOP i Defender Office 365 jednak zawierają inne dane. Na przykład klienci usługi EOP mogą wyświetlać informacje na temat najgorętszego złośliwego oprogramowania, spamu i wyłudzania informacji (fałszowania), ale nie mogą wyświetlać informacji o złośliwym oprogramowaniu wykrytym przez załączniki usługi [Sejf](safe-attachments.md) lub wyłudzanie informacji wykryte przez ochronę przed personifikacjami[.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+**Raporty Najgorętsi** nadawcy i adresaci są dostępne zarówno w usługach EOP, jak i Defender dla usługi Office 365, jednak raporty zawierają inne dane. Na przykład klienci usługi EOP mogą wyświetlać informacje na temat najgorętszego złośliwego oprogramowania, spamu i wyłudzania informacji (fałszowania), ale nie mogą wyświetlać informacji o złośliwym oprogramowaniu wykrytym przez załączniki usługi [Sejf](safe-attachments.md) lub wyłudzanie informacji wykryte przez ochronę przed personifikacjami[.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
 **Najgoręci** nadawcy i adresaci to najgoręci nadawcy w organizacji, a także najgoręci adresaci wiadomości wykrytych przez usługi EOP i Defender dla funkcji ochrony przed Office 365. Domyślnie raport przedstawia dane z ostatniego tygodnia, ale są dostępne dane z ostatnich 90 dni.
 
@@ -958,7 +958,7 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając **poz
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-Na stronie raportu głównego ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Przycisk** Eksportuj jest dostępny.
+Na stronie **Najgoręci nadawcy i adresaci** kliknij ikonę ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Przycisk** Eksportuj jest dostępny.
 
 ![Pokaż dane dla widoku Najgorętsi nadawcy poczty w raporcie Najgoręci nadawcy i adresaci.](../../media/top-senders-and-recipients-report-view.png)
 
@@ -1022,7 +1022,7 @@ Aby przesłać wiadomość do firmy Microsoft w celu analizy, wybierz wpis wiado
 - **Zgłaszanie spamu**
 - **Wyzwalanie badania** (Defender dla Office 365)
 
-Na stronie raportu głównego ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](#export-report)** Eksportuj jest dostępny.
+Na stronie **Użytkownik zgłosił wiadomości** ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](#export-report)** Eksportuj jest dostępny.
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Jakie uprawnienia są potrzebne do wyświetlania tych raportów?
 
@@ -1043,7 +1043,7 @@ Jeśli nie widzisz danych w raportach, sprawdź filtry, których używasz, i upe
 
 ## <a name="schedule-report"></a>Zaplanuj raport
 
-1. Na stronie raportu głównego kliknij ikonę ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **Utwórz harmonogram**.
+1. Na stronie głównej konkretnego raportu kliknij ikonę ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **Utwórz harmonogram**.
 2. Zostanie **otwarty kreator Tworzenie zaplanowanego** raportu. Na stronie **Nazwa zaplanowanego raportu** przejrzyj lub dostosuj wartość **Nazwa** , a następnie kliknij przycisk **Dalej**.
 3. Na stronie **Ustawianie preferencji** skonfiguruj następujące ustawienia:
    - **Częstotliwość**: Wybierz jedną z następujących wartości:
@@ -1095,7 +1095,7 @@ Aby zarządzać już utworzonymi raportami planowanymi, wykonaj następujące cz
 
 ## <a name="request-report"></a>Żądanie raportu
 
-1. Na stronie raportu głównego kliknij ikonę ![Poproś o raport.](../../media/m365-cc-sc-download-icon.png) **Zażądaj raportu**.
+1. Na stronie głównej określonego raportu kliknij ikonę ![Poproś o raport.](../../media/m365-cc-sc-download-icon.png) **Zażądaj raportu**.
 2. Zostanie **otwarty kreator tworzenie raportów na** żądanie. Na **stronie Nazwa raportu na żądanie** przejrzyj lub dostosuj wartość **Nazwa** , a następnie kliknij przycisk **Dalej**.
 3. Na stronie **Ustawianie preferencji** przejrzyj lub skonfiguruj następujące ustawienia:
    - **Data rozpoczęcia**: po rozpoczęciu generowania raportu. Wartość domyślna to miesiąc temu.
@@ -1132,9 +1132,7 @@ Aby zarządzać już utworzonymi raportami planowanymi, wykonaj następujące cz
 
 ## <a name="export-report"></a>Eksportowanie raportu
 
-1. Na stronie raportu głównego kliknij ikonę ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Eksportowanie** (jeśli link jest dostępny).
-
-Po kliknięciu strony raportu głównego zostanie wyświetlone **wysuwne okno wysuwu** warunków eksportu, w którym można skonfigurować następujące ustawienia:
+Na stronie głównej określonego raportu kliknij ikonę ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Eksportowanie** (jeśli link jest dostępny). Zostanie **wyświetlone okno wysuwu** warunków eksportu, w którym można skonfigurować następujące ustawienia:
 
 - **Wybierz widok do wyeksportowania**: Wybierz jedną z następujących wartości:
   - **Podsumowanie**: Dostępne są dane z ostatnich 90 dni.

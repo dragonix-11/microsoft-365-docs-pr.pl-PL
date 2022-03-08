@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bdd92a4be90aca4e7ca85489923ff94850114391
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 57c1909ff54fea6b9151e212f465abb75bab48f8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63007882"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325323"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Zalecenia dotyczące zabezpieczeń — Zarządzanie zagrożeniami i lukami
 
@@ -108,7 +108,9 @@ W wysuwanych menu możesz wybrać dowolną z następujących opcji:
 - [**Opcje wyjątków**](tvm-exception.md) — prześlij wyjątek, podaj uzasadnienie i ustaw czas trwania wyjątku, jeśli nie możesz jeszcze rozwiązać problemu.
 
 > [!NOTE]
-> W przypadku zmiany oprogramowania na urządzeniu zazwyczaj odzwierciedlenie danych w portalu zabezpieczeń trwa 2 godziny. Jednak czasami może to potrwać dłużej. Zmiany konfiguracji mogą trwać od 4 do 24 godzin.
+> W przypadku zmiany oprogramowania na urządzeniu z systemem Windows, Linux lub macOS zazwyczaj odzwierciedlenie danych w portalu zabezpieczeń trwa 2–4 godziny. Odzwierciedlenia zmian na urządzeniach z systemami iOS i Android może potrwać do 8 godzin. Mogą się jednak pojawić sytuacje, w których trwa to dłużej.
+> 
+> Zmiany konfiguracji mogą trwać od 4 do 24 godzin.
 
 ### <a name="investigate-changes-in-device-exposure-or-impact"></a>Badanie zmian w ekspozycji na urządzenie lub wpływie na urządzenie
 

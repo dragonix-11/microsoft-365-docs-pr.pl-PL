@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 48d9129689a820816dffe65355fa913fd0742864
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: c7edc974bfd4a4f0d2d9611c80d0996aebc3ddb7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63015971"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326870"
 ---
 # <a name="install-intune-company-portal-on-devices"></a>Instalowanie Intune — Portal firmy na urządzeniach
 
@@ -60,7 +60,7 @@ Jako administrator IT w organizacji, ważne jest, aby twoi użytkownicy wiedziel
 1. Wdrażanie i przypisywanie Intune — Portal firmy (ten artykuł).
 1. [Przypisywanie licencji](assign-licenses.md).
 1. [Wdychuj aplikacje](deploy-apps.md).
-1. [Konfigurowanie urządzeń](set-up-devices.md)
+1. [Przygotowywanie urządzeń](prepare-devices.md)
 1. Skonfiguruj środowisko [pierwszego uruchomienia za pomocą rozwiązania Autopilot i strony stanu rejestracji](esp-first-run.md).
 1. [Włączanie funkcji pomocy technicznej dla użytkowników](enable-support.md).
 1. [Przygotuj użytkowników do korzystania z urządzeń](get-started-devices.md).

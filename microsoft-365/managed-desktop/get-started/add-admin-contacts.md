@@ -9,23 +9,23 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b5f52c1aee2586d325149c6656674fef16200773
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 5668dcb0dd2b7f48a52fd2377dec3d666d17a013
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62973821"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315459"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Dodawanie i weryfikowanie kontaktów administratora w portalu administracyjnym
 
-Istnieje kilka sposobów komunikowania się Microsoft Managed Desktop z klientami. Aby usprawnić komunikację i zagwarantować, że kontakty są sprawdzane z właściwymi osobami, musisz podać zestaw kontaktów administratora. Microsoft Managed Desktop operacji IT skontaktuje się z tymi osobami w celu uzyskania pomocy w rozwiązywaniu problemów.
+Istnieje kilka sposobów komunikacji Microsoft Managed Desktop z klientami. Aby usprawnić komunikację i zagwarantować, że kontakty są sprawdzane z właściwymi osobami, musisz podać zestaw kontaktów administratora. Microsoft Managed Desktop it będzie kontaktować się z tymi osobami w celu uzyskania pomocy w rozwiązywaniu problemów.
 
 > [!IMPORTANT]
-> Być może już dodano te kontakty w portalu administracyjnym. Jeśli tak, poczekaj chwilę, aby dokładnie sprawdzić, czy lista kontaktów jest dokładna, ponieważ Microsoft Managed Desktop musi  być w stanie się z nią skontaktować w razie poważnego zdarzenia.
+> Być może już dodano te kontakty w portalu administracyjnym. Jeśli tak, poczekaj chwilę, aby dokładnie sprawdzić, czy lista kontaktów jest dokładna, ponieważ Microsoft Managed Desktop będzie  można się z nią skontaktować w razie poważnego zdarzenia.
 
 ## <a name="admin-contact-areas-of-focus"></a>Obszary fokusu kontaktów administratora
 
-Kontakty administratora powinny być najlepszą osobą lub grupą, która może odpowiadać na pytania i podejmować decyzje dotyczące różnych obszarów zainteresowania. **Microsoft Managed Desktop kontaktuje się z tymi kontaktami administratora w przypadku pytań dotyczących zgłoszenia do pomocy technicznej złożonej przez klienta.** Te kontakty administratora będą otrzymywać powiadomienia o aktualizacjach wniosku o pomoc techniczną i o nowych wiadomościach. Są to następujące obszary:
+Kontakty administratora powinny być najlepszą osobą lub grupą, która może odpowiadać na pytania i podejmować decyzje dotyczące różnych obszarów zainteresowania. **Microsoft Managed Desktop kontaktuje się z tymi kontaktami administratora w przypadku pytań dotyczących wniosku o pomoc techniczną składanych przez klienta.** Te kontakty administratora będą otrzymywać powiadomienia o aktualizacjach wniosku o pomoc techniczną i o nowych wiadomościach. Są to następujące obszary:
 
 | Obszar koncentracji | W przypadku pytań dotyczących |
 | ----- | ----- |
@@ -38,13 +38,13 @@ Kontakty administratora powinny być najlepszą osobą lub grupą, która może 
 > [!IMPORTANT]
 > **Niezależnie od tego, kto wybierzesz dla tych kontaktów, musi mieć wiedzę i uprawnienia do podejmowania decyzji dotyczących Microsoft Managed Desktop środowiska.**
 
-Po dodaniu środowiska Microsoft Managed Desktop jest wyświetlany monit o dodanie kontaktów do lokalnego działu pomocy technicznej i zabezpieczeń.
+Po dodaniu środowiska Microsoft Managed Desktop jest wyświetlany monit o dodanie kontaktów dla lokalnego działu pomocy technicznej i zabezpieczeń.
 
 Kontakty administratora są wymagane podczas [przesyłania wniosku o pomoc techniczną](../service-description/support.md). Musisz mieć kontakt administratora w obszarze fokusu wniosku o pomoc techniczną.
 
 **Aby dodać kontakty administratora:**
 
-1. Zaloguj się w [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
+1. Zaloguj się, [aby Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 1. W **obszarze Administracja** dzierżawą w **Microsoft Managed Desktop** wybierz pozycję **Kontakty administratora**.
 1. Wybierz opcję **Dodaj**.
 1. Wybierz obszar **koncentracji i** wprowadź informacje dotyczące kontaktu.
@@ -61,7 +61,7 @@ Kontakty administratora są wymagane podczas [przesyłania wniosku o pomoc techn
 1. Wdrażanie i [przypisywanie Intune — Portal firmy](company-portal.md).
 1. [Przypisywanie licencji](assign-licenses.md).
 1. [Wdychuj aplikacje](deploy-apps.md).
-1. [Konfigurowanie urządzeń](set-up-devices.md).
+1. [Przygotowywanie urządzeń](Prepare-devices.md).
 1. Skonfiguruj środowisko [pierwszego uruchomienia za pomocą rozwiązania Autopilot i strony stanu rejestracji](esp-first-run.md).
 1. [Włączanie funkcji pomocy technicznej dla użytkowników](enable-support.md).
 1. [Przygotuj użytkowników do korzystania z urządzeń](get-started-devices.md).

@@ -2,8 +2,8 @@
 title: Zarządzanie powiadomieniami o rozliczeniach i załącznikami do faktur
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: prkalid, guyb
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 search.appverid:
 - MET150
 description: Dowiedz się, jak zarządzać tym, kto otrzymuje wiadomości e-mail z powiadomieniami o rozliczeniach i załącznikami do faktur.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0f33029d874ee3564eed272cbc670aacaf10b283
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 11fecb1f5f33810c2bef2425fda845981c2c3193
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985114"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321575"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Zarządzanie powiadomieniami o rozliczeniach i załącznikami do faktur
 

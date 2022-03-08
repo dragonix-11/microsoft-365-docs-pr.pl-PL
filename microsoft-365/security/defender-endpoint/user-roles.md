@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a959edf1eaefcb25fd3fb8279e7e03d317c4f12e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6f853df2d37cc41b2effb55ff10418af67df2bd6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997367"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324077"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Tworzenie ról dla kontroli dostępu opartej na rolach i zarządzanie nimi
 
@@ -76,7 +76,7 @@ Poniższe instrukcje krok po kroku to, jak tworzyć role w Microsoft 365 Defende
     > [!NOTE]
     > To ustawienie jest dostępne tylko w roli administratora programu Microsoft Defender dla punktu końcowego (domyślnej).
 
-- **Zarządzanie ustawieniami zabezpieczeń w usłudze Defender dla** chmury — konfigurowanie ustawień alertów i wykluczeń folderów w celu automatyzacji, urządzenia wynoszeń i wynoszeń oraz zarządzanie powiadomieniami e-mail, zarządzanie laboratorium oceny
+- **Zarządzanie ustawieniami zabezpieczeń w Centrum zabezpieczeń** — konfigurowanie ustawień alertów, zarządzanie wykluczeniami folderów w celu automatyzacji, urządzenia wsadowe i wyeksłowane, zarządzanie powiadomieniami e-mail i zarządzanie laboratorium oceny
 
 - **Funkcje reagowania na żywo**
   - **Podstawowe** polecenia:

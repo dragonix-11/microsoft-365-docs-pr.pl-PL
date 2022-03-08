@@ -2,8 +2,8 @@
 title: Jaki jest cel rekordu CNAME Office 365 MSOID?
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Dowiedz się więcej o rekordzie CNAME "MSOID" w programie Office 365, który kieruje Cię do najlepszego serwera procesów uwierzytelniania, dzięki czemu szybciej otrzymasz odpowiedź.
 monikerRange: o365-21vianet
-ms.openlocfilehash: e51847065ac3f91f44b8be35932869e9418e8a70
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b053ac0df7cd770b5627b688e90641688f94141
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985075"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325127"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>Jaki jest cel rekordu CNAME Office 365 MSOID?
 

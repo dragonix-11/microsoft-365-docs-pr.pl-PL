@@ -1,9 +1,9 @@
 ---
 title: Krok nr 2. Wdrażanie wykrywania ataków i reagowania
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: oprogramowanie wymuszające okup, oprogramowanie wymuszające okup obsługiwane przez człowieka, oprogramowanie wymuszające okup przez człowieka, humor, ataki wymuszające okup, ataki oprogramowania wymuszającego okup, szyfrowanie, kryptografia, zerowe zaufanie
 description: Za Microsoft 365 Defender oprogramowania wymuszającego okup i jego źródła sygnału zabezpieczeń chroń zasoby Microsoft 365 przed atakami oprogramowania wymuszającego okup.
-ms.openlocfilehash: 8459d9ce8a22192d362fd8b3bf95e34c7015f08f
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: bf365693505b658dc61ab349c86541cfb9543de9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014837"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325715"
 ---
 # <a name="step-2-deploy-attack-detection-and-response"></a>Krok nr 2. Wdrażanie wykrywania ataków i reagowania
 

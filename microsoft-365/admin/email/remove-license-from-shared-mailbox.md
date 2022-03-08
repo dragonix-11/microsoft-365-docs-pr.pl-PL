@@ -15,20 +15,20 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 'Usuń licencję z udostępnionej skrzynki pocztowej, aby przypisać ją do innego użytkownika lub zwrócić licencję, aby za nie nie płacić. '
 ms.date: 05/11/2021
-ms.openlocfilehash: 89e5e3023121bb4633d7c8c1e2f92fbecc5f3e18
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 6de6f213cc0df7a216122d55ef07e270586aea12
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995924"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314801"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Usuwanie licencji z udostępnionej skrzynki pocztowej
 

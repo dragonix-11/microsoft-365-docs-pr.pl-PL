@@ -2,8 +2,8 @@
 title: Rozwiązywanie problemów Microsoft 365 pomocą techniczną z serwisem ServiceNow
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Przewodnik po instalacji i konfiguracji certyfikowanej dla programu ServiceNow z zakresem.
-ms.openlocfilehash: 24813fe0d0705d9404fa465420e3b0344f43f953
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bac3981b728ac997839e7ac99a9411a8da244add
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989662"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324945"
 ---
 # <a name="troubleshooting-microsoft-365-support-integration-with-servicenow"></a>Rozwiązywanie problemów Microsoft 365 pomocą techniczną z serwisem ServiceNow
 

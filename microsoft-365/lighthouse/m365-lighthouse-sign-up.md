@@ -17,17 +17,16 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP), dowiedz się, jak pisać Microsoft 365 Lighthouse.
-ms.openlocfilehash: 7eceb0ee205e7de99a7943ba05e6c07f66bd491e
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 2607a131908a06ec4b7072cbf718739e1db00ad7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "63020685"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326961"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Zarejestruj się w celu Microsoft 365 Lighthouse
 
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, postępuj zgodnie z instrukcjami podanymi w tym artykule, aby się zarejestrować.
+Ten artykuł zawiera instrukcje dotyczące sposobu rejestracji w celu Microsoft 365 Lighthouse. Microsoft 365 Lighthouse to portal administracyjny, który ułatwia zarządzanym dostawcom usług (MSP) zabezpieczanie urządzeń, danych i użytkowników oraz zarządzanie nimi na skalę dla klientów małych i średnich firm korzystających z usługi Microsoft 365 Business Premium lub Microsoft 365 E3. 
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -45,7 +44,7 @@ ms.locfileid: "63020685"
 
     Jeśli wystąpi błąd Zakup usług, wybierz **pozycję Wyświetl produkty** u dołu strony.
 
-1. W **Microsoft 365 Lighthouse Podgląd publiczny partnerów** wybierz pozycję **Szczegóły**. 
+1. W **Microsoft 365 Lighthouse** wybierz pozycję **Szczegóły**. 
 
 1. Wybierz **pozycję Kup**.
 

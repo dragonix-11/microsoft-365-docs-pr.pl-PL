@@ -9,14 +9,15 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: ''
 ms.collection: enabler-strategic
+ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: 6f472754484d7bb41485b94d65689009d2c615fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7a23b8da32f5ae9132a41661a1141f34df48a6b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985097"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318203"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importowanie zestawu terminów przy użyciu formatu opartego na SKOS
 
@@ -24,7 +25,7 @@ Zestawy terminów można zaimportować przy użyciu formatu opartego na SKOS. Ab
 
 Zalecamy przechowywanie plików importu na mniej niż 20 000 terminów. Większe pliki mogą zwiększyć czas sprawdzania poprawności i importu.
 
-1. W centrum SharePoint rozwiń pozycję **Usługi zawartości**, a następnie kliknij pozycję **Magazyn okresów**.
+1. W centrum SharePoint rozwiń pozycję **Usługi zawartości**, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">**Magazyn okresów**</a>.
 
 2. Wybierz grupę terminy, do której chcesz zaimportować zestaw terminów.
 

@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bc9e6814dc599b6a3474a00cd51676bbe708716a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 177a7965d3e5a2d4ddd2e62bdde95fbc2762645b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998118"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329603"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Zarządzanie procesem stopniowego wdrażanie aktualizacji programu Microsoft Defender
 

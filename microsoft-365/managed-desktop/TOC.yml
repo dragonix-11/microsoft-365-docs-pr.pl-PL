@@ -14,7 +14,7 @@
           href: MMD-and-ITSM.md
         - name: Zgodność
           href: intro/compliance.md
-    - name: Microsoft Managed Desktop opis usługi
+    - name: Microsoft Managed Desktop opisu usługi
       href: service-description/index.md
       items:
         - name: Obsługiwane regiony
@@ -112,16 +112,23 @@
           href: get-started/localization.md
         - name: Sprawdzanie poprawności nowych urządzeń
           href: get-started/validate-device.md
-        - name: Konfigurowanie urządzeń
-          href: get-started/set-up-devices.md
+        - name: Przygotowywanie urządzeń
+          href: null
           items:
-            - name: Zarejestruj nowe urządzenia samodzielnie
-              href: get-started/register-devices-self.md
+            - name: Wprowadzenie
+              href: get-started/prepare-devices.md
+            - name: Rejestracja urządzenia
+              href: null
               items:
-                - name: Procedura rejestrowania urządzeń przez partnerów
-                  href: get-started/register-devices-partner.md
-            - name: Zarejestruj swoje istniejące urządzenia
-              href: get-started/register-reused-devices-self.md
+                - name: Metody rejestracji urządzeń
+                  href: get-started/device-registration-methods.md
+                  items:
+                    - name: Ręczna rejestracja
+                      href: get-started/manual-registration.md
+                    - name: Rejestracja partnera
+                      href: get-started/partner-registration.md
+                    - name: Ręczna rejestracja dla istniejących urządzeń
+                      href: get-started/manual-registration-existing-devices.md
         - name: Włączanie funkcji pomocy technicznej dla użytkowników
           href: get-started/enable-support.md
         - name: Przygotuj użytkowników do korzystania z urządzeń
@@ -184,5 +191,5 @@
               href: working-with-managed-desktop/config-setting-deploy.md
         - name: Podgląd i testowanie Windows 11 z Microsoft Managed Desktop
           href: working-with-managed-desktop/test-win11-mmd.md
-    - name: Historia zmian dla Microsoft Managed Desktop dokumentów
+    - name: Historia zmian
       href: change-history-managed-desktop.md

@@ -2,8 +2,8 @@
 title: Zarządzanie subskrypcjami z możliwością samodzielnego rejestracji
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,17 +14,17 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 search.appverid: MET150
 description: Dowiedz się, jak zarządzać bezpłatnymi subskrypcjami samodzielnego rejestracji w organizacji.
 ms.date: 03/17/2021
-ms.openlocfilehash: 24f852a1eb9983e211000b59bda32eaa2c6bf0fa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: be93a09ca63a4ee24945438be59b725e7d41911c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984972"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328389"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Zarządzanie subskrypcjami z możliwością samodzielnego rejestracji
 

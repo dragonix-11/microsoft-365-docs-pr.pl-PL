@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak te zalecenia dotyczące zabezpieczeń Microsoft 365 Business Premium wpływają na twoich użytkowników i chronią Twoje dane.
-ms.openlocfilehash: 3404422345e682542762029aecd048cf22cc9e9b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: cf0af6aab22c4a025a0c6b907fc3cade397d0dcc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011388"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328473"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Jak te zalecenia dotyczące zabezpieczeń wpływają na użytkowników
 
@@ -45,13 +45,13 @@ Wszyscy użytkownicy powinni wiedzieć o tych praktykach poczty e-mail i korzyst
 - Sprawdź legalne wiadomości e-mail i poszukaj porad dotyczących bezpieczeństwa z zaawansowanego wyłudzania informacji w programie Defender Office 365 Protection.
 - Otwieranie tylko bezpiecznych linków i załączników, co zostało zweryfikowane przez Sejf i załączniki Sejf załączników.
 
-Dowiedz się więcej o [uwierzytelnianiu wieloskładnikowym](m365-campaigns-multifactor-authentication.md) oraz [wyłudzaniu informacji i innych atakach](m365-campaigns-phishing-and-attacks.md).
+Dowiedz się więcej o [uwierzytelnianiu wieloskładnikowym](m365bp-multifactor-authentication.md) oraz [wyłudzaniu informacji i innych atakach](m365-campaigns-phishing-and-attacks.md).
 
 Pobierz [infografikę](m365-campaigns-protect-campaign-infographic.md) z poradami dla Ciebie i członków Zespołu.
 
 ## <a name="set-up-iphones-and-android-devices"></a>Konfigurowanie telefonów iPhone i urządzeń z systemem Android
 
-Wszyscy użytkownicy, których dodasz do środowiska, będą musieli trochę potrwać, aby skonfigurować telefony [iPhone i](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) urządzenia z systemem Android do bezpiecznej pracy:
+Wszyscy użytkownicy, których dodasz do środowiska, będą musieli trochę potrwać, aby skonfigurować telefony [iPhone i](../business/set-up-mobile-devices.md) urządzenia z systemem Android do bezpiecznej pracy:
 
 - Skonfiguruj urządzenia do korzystania z uwierzytelniania wieloskładnikowego za pomocą aplikacji uwierzytelniania.
 - Używaj aplikacji firmy Microsoft dla urządzeń przenośnych, Outlook, Word, OneDrive i innych aplikacji firmy Microsoft ze sklepu z aplikacjami. Natywne aplikacje poczty, które są dostępne na telefonach iPhone i urządzeniach z systemem Android, nie są obsługiwane. 
@@ -66,7 +66,7 @@ Ważne jest również, aby użytkownicy dbali o to, aby ich podstawowe urządzen
 - Zainstaluj najnowsze wersje aplikacji klasycznych Office, a po wyświetleniu monitu zadbaj o ich odświeżone wersje.
 - Bądź na informacji o aktualizacjach systemu operacyjnego, takich jak aktualizacje Windows systemu operacyjnego.
 
-W [przypadku urządzeń Windows 10 i Mac](m365-campaigns-protect-pcs-macs.md) użytkownicy są odpowiedzialni za zapewnianie obsługi podstawowych funkcji zabezpieczeń.
+W [przypadku urządzeń Windows 10 i Mac](m365bp-protect-pcs-macs.md) użytkownicy są odpowiedzialni za zapewnianie obsługi podstawowych funkcji zabezpieczeń.
 
 **Włączanie podstawowych funkcji zabezpieczeń na urządzeniach BYOD Windows 10 i Mac**
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie ustawień ogólnych dla punktów końcowych
+title: Konfigurowanie ogólnych ustawień usługi Defender dla punktu końcowego
 description: Za pomocą strony ustawień skonfiguruj ustawienia ogólne, uprawnienia, interfejsy API i reguły.
 keywords: ustawienia, ustawienia ogólne, uprawnienia, api, reguły
 ms.prod: m365-security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9e7c8b2f810cf94c796f2b2d73520a821db1c01
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: a2d6dd2e7ed6bb353fd4aeb9aaef97854e5f025e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027039"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329589"
 ---
-# <a name="configure-general-settings-for-endpoints"></a>Konfigurowanie ustawień ogólnych dla punktów końcowych
+# <a name="configure-general-defender-for-endpoint-settings"></a>Konfigurowanie ogólnych ustawień usługi Defender dla punktu końcowego
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

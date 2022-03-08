@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: f6672bfe090458de9ffecae77b656b6f4a8a912d
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: 5ffbe15fe9fa06e7c06546f9452d6c4f2bddfc39
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63014797"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329617"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Informacje dotyczące reguł zmniejszania powierzchni ataków
 
@@ -62,7 +62,7 @@ W poniższej tabeli wymieniono obsługiwane systemy operacyjne dla reguł zmniej
 |[Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) | T | T |
 |[Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryterium listy zaufanej, jego wieku lub wieku.](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | T | T |
 |[Blokowanie wykonywania potencjalnie obcofkowanych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T | T |
-|[Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | T | N |
+|[Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | N | N |
 |[Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje](#block-office-applications-from-creating-executable-content) | T | T |
 |[Blokowanie Office aplikacji ze insektowania kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  | T | T |
 |[Blokowanie Office komunikacji z tworzeniem procesów podrzędnych](#block-office-communication-application-from-creating-child-processes) | T | T |

@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8887f9e26c53d57aa49ec6fb65733cac6e562a9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: bfe40a4c183f113c92e263e48d72c6aa7020152b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033767"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322019"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Program Microsoft Defender for Endpoint dla platform Windows innych niż platformy
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1 and Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)

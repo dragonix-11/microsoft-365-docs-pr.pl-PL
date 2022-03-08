@@ -11,17 +11,15 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3f59b381e74dee32a438722b09044570bf8d870e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3fe3139f12b863b54d336e52939ffbb3057df6b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997876"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316005"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>Oś czasu wydarzenia — Zarządzanie zagrożeniami i lukami
 

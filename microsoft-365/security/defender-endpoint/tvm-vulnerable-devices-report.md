@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f096433534abb91b9cb14b8db2737dacf566624
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 50b30d38a42aab37c295a9f65bd070dd9613927c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997292"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312671"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Raport Urządzenia narażone na nie — Zarządzanie zagrożeniami i lukami
 
@@ -76,7 +76,7 @@ Liczba urządzeń w poszczególnych systemach operacyjnych, które są udostępn
 
 Liczba urządzeń na poszczególnych urządzeniach Windows 10 lub Windows 11, które są widoczne ze względu na narażenie aplikacji lub systemu operacyjnego.
 
-![Jeden wykres przedstawiający obecnie narażone urządzenia według Windows 10 wersji, a jeden wykres przedstawiający narażone urządzenia według Windows 10 wersji w czasie.](images/tvm-report-version.png)lightbox="images/tvm-report-version.png":::
+:::image type="content" alt-text="Jeden wykres przedstawiający obecnie narażone urządzenia według Windows 10 wersji, a jeden wykres przedstawiający narażone urządzenia według Windows 10 wersji w czasie." source="images/tvm-report-version.png" lightbox="images/tvm-report-version.png":::
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

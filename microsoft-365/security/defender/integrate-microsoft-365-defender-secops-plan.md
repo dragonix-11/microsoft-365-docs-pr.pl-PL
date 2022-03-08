@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bb3759b673475690a49e0909e2da67644990950e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 45abe5dfa77e9ed224f2d55e15986eba732f2aff
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010374"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326443"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Krok nr 1. Planowanie na Microsoft 365 Defender operacji
 

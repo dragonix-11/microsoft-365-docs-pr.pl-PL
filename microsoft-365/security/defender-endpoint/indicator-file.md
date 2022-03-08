@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2ee262e2a42bcf4bd03a6d1204b60412d60740d5
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 32de72a201dbb88c9fc0c6d7e61825bf8083fbf9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63015824"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325547"
 ---
 # <a name="create-indicators-for-files"></a>Tworzenie wskaźników dla plików
 
@@ -65,7 +65,7 @@ Ta funkcja ma na celu zapobieganie pobieraniu z sieci Web potencjalnie złośliw
 
 2. Wybierz **kartę Skróty** plików.
 
-3. Wybierz **wskaźnik Dodaj**.
+3. Wybierz **pozycję Dodaj element**.
 
 4. Określ następujące szczegóły:
     - Wskaźnik — określ szczegóły jednostki i zdefiniuj wygasanie wskaźnika.
@@ -148,6 +148,9 @@ Konflikt zasad Cert i obsługi plików IoC będzie postępować zgodnie z poniż
 - W innym przypadku, jeśli plik jest dozwolony przez zasady IoC zezwalania na plik, a następnie wybierz pozycję **Zezwalaj**
 - Inaczej, jeśli plik jest zablokowany przez reguły ASR, CFA, AV, SmartScreen, a następnie **Zablokuj**
 - Inaczej **zezwalaj** (przekazuje Windows Defender sterowania aplikacją & zasad AppLocker, do których nie mają zastosowania żadne reguły IoC)
+
+>[!NOTE]
+> W sytuacjach, gdy dla Program antywirusowy Microsoft Defender ustawiono opcję **Blokuj**, ale dla usługi Defender dla punktu końcowego ustawiono wartość Zezwalaj **, zasady** będą domyślnie ustawione na Allow (**Zezwalaj**).
 
 W przypadku konfliktu zasad pliku IoC z tym samym typem wymuszania i elementem docelowym zostaną zastosowane zasady bezpieczniejszego (dłuższego) skrótu. Na przykład zasady IoC skrótu pliku SHA-256 będą przejmować zasady IoC skrótu MD5, jeśli oba typy skrótów definiują ten sam plik.
 

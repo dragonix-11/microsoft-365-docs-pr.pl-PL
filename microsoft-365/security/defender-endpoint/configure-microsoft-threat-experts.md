@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6e1bd4653318897ec82d49cd1dccfc0ab4105de
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: 28533f2ad3fcf547cab95812048b3de8af3bcb9a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "63010606"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324273"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Konfigurowanie funkcji zarządzania Microsoft Threat Experts i zarządzanie nimi
 

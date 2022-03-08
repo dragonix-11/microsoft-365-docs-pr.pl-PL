@@ -11,13 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 7e5acdde2d60db88b68273d0f1158ae1694a523e
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 4a7a84023f3155c2b6f1405a3da5d8c5776d0047
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63017955"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322061"
 ---
 # <a name="push-content-types-to-a-hub"></a>Wypychanie typów zawartości do centrum
 
@@ -34,7 +35,7 @@ Aby ta funkcja działała, wypychane typy zawartości muszą już zostać opubli
 
 Aby wypychać typy zawartości do centrum
 
-1. W centrum SharePoint rozwiń pozycję **Usługi zawartości**, a następnie wybierz **galerię Typ zawartości**.
+1. W centrum SharePoint rozwiń pozycję **Usługi zawartości**, a następnie wybierz <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">**galerię Typ zawartości**</a>.
 2. Wybierz typ zawartości, który chcesz wypychać do centrum.
 3. Wybierz **pozycję Edytuj** na pasku poleceń.
 4. Wybierz **pozycję Wybierz witryny centrum**.

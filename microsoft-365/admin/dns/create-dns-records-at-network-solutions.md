@@ -2,13 +2,13 @@
 title: Połączenie rekordy DNS w witrynie Network Solutions to Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Dowiedz się, jak zweryfikować domenę i skonfigurować rekordy DNS dla poczty e-mail, usługi Skype dla firm Online i innych usług w witrynie Network Solutions dla firmy Microsoft.
-ms.openlocfilehash: cae2d1d7245ad9765b129f8fa5690c4038d7ee2e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: a15b6ec2f06b08a32c0cf03bbc030731b91ea925
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989686"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313527"
 ---
 # <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>Połączenie rekordy DNS w witrynie Network Solutions to Microsoft 365
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8463d4b9c330d65ad36d60f20e93fbf00d95959e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5715a796e0c7b78ae369f074b5edcb6ccfc8ae90
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997817"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330569"
 ---
 # <a name="deployment-phases"></a>Fazy wdrażania
 
@@ -81,8 +81,8 @@ Wszystkie te funkcje są dostępne dla posiadaczy licencji programu Microsoft De
 
 ### <a name="in-scope"></a>W zakresie
 
-- Korzystanie z Microsoft Endpoint Manager i Microsoft Endpoint Manager do do konfigurowania usług i punktów końcowych
-- Włączanie funkcji defender dla wykrywanie i reagowanie w punktach końcowych punktów końcowych (EDR)
+- Korzystanie z menedżera punktów końcowych firmy Microsoft i programu Microsoft Endpoint Menedżer konfiguracji do do konfigurowania usług i punktów końcowych
+- Włączanie funkcji wykrywania i reagowania punktu końcowego programu Defender (EDR)
 - Włączanie funkcji platformy Ochrony punktów końcowych programu Defender (EPP)
   - Ochrona następnej generacji
   - Zmniejszenie powierzchni ataków

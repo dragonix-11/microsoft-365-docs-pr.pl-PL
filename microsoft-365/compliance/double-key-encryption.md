@@ -4,7 +4,7 @@ description: Funkcja DKE umożliwia ochronę bardzo ważnych danych przy zachowa
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 01/29/2021
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: dd445fae8f344be68726fd9dda6457badc18f5c5
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b16733a1d42ca245f096038f567be6fbd0c3fb2a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63026593"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320609"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Szyfrowanie dwukluczowych danych dla Microsoft 365
 
@@ -505,7 +505,7 @@ Aby zarejestrować usługę DKE:
    Na przykład: `https://mydkeservicetest.com`
 
    - Wprowadzany adres URL musi być zgodne z nazwą hosta, na którym jest wdrożona Usługa DKE.
-   - Domena musi być [zarejestrowaną domeną](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
+   - Domena musi być [zweryfikowaną domeną](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
    - Jeśli testowasz lokalnie za pomocą Visual Studio, użyj .`https://localhost:5001`
    - We wszystkich przypadkach schemat musi mieć **https**.
 
@@ -581,7 +581,7 @@ Jeśli nie przeprowadzasz migracji zawartości, zawartość chroniona przez HYOK
 
 Zdajemy sobie sprawę, że w przypadku niektórych klientów korzystających z dobrze uregulowanych branż ta standardowa implementacja odniesienia przy użyciu kluczy opartych na oprogramowaniu może nie być wystarczająca do spełnienia ich rozszerzonych zobowiązań i potrzeb dotyczących zgodności z przepisami. Współpracujemy z dostawcami modułu zabezpieczeń sprzętowych (HSM, Hardware Security Module) innych firm, aby obsługiwać rozszerzone opcje zarządzania kluczami w usłudze DKE, takie jak:
 
- - [Powierzenie](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
+- [Powierzenie](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
 
 - [Jak to się owie,](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption)
 

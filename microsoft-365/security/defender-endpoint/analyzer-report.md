@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6b345eb898b84de9f15772e11fdc92e1af5dde6a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ab6a23d1f2c8893a86fb6432ab9fece95a10006c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62973979"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322887"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Opis raportu w formacie HTML analizatora klienta
 
@@ -41,11 +39,11 @@ Opis raportu można zrozumieć w poniższym przykładzie.
 
 - Na górze do odwołania są wymienione wersja skryptu i środowisko uruchomieniowe skryptu
 - Sekcja **Informacje o urządzeniu** zawiera podstawowe identyfikatory systemu operacyjnego i urządzenia w celu unikatowego zidentyfikowania urządzenia, na którym działa analizator.
-- Szczegóły **zabezpieczeń punktu końcowego** zawierają ogólne informacje na temat procesów związanych z programem Microsoft Defender dla punktów końcowych, w tym Program antywirusowy Microsoft Defender i procesu czujnika. Jeśli ważne procesy nie są w trybie online zgodnie z oczekiwaniami, kolor zmieni się na czerwony.
+- Szczegóły **zabezpieczeń punktu końcowego** zawierają ogólne informacje o programie Microsoft Defender dla procesów związanych z punktem końcowym, w tym Program antywirusowy Microsoft Defender i procesu czujnika. Jeśli ważne procesy nie są w trybie online zgodnie z oczekiwaniami, kolor zmieni się na czerwony.
 
   ![Obraz szczegółowego wyniku analizatora klienta](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   Szczegóły **zabezpieczeń punktu końcowego** zawierają ogólne informacje na temat procesów związanych z programem Microsoft Defender dla punktów końcowych, w tym Program antywirusowy Microsoft Defender i procesu czujnika. Jeśli ważne procesy nie są w trybie online zgodnie z oczekiwaniami, kolor zmieni się na czerwony.
+-   Szczegóły **zabezpieczeń punktu końcowego** zawierają ogólne informacje o programie Microsoft Defender dla procesów związanych z punktem końcowym, w tym Program antywirusowy Microsoft Defender i procesu czujnika. Jeśli ważne procesy nie są w trybie online zgodnie z oczekiwaniami, kolor zmieni się na czerwony.
 
   ![Obraz szczegółowego wyniku analizatora klienta.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 

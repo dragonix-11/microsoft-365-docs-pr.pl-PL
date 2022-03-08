@@ -15,14 +15,15 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 recommendations: false
 description: Dowiedz się, jak utworzyć zespół z unikatową etykietą wrażliwości w celu zabezpieczenia.
-ms.openlocfilehash: 293ac9a1a28757dacba39d30e619ac41be786e04
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 2ca2e6320ddd119c4dcb20db2f816c9e9a4453ae
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990492"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324399"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurowanie zespołu z izolacji zabezpieczeń
 
@@ -160,11 +161,11 @@ Aby opublikować etykietę wrażliwości:
 Po opublikowaniu etykiety musisz ją zastosować do zespołu, aby ustawienia udostępniania gościa i urządzeń zarządzanych zostały wprowadzone. Robi się to w centrum SharePoint administracyjnego. Uwaga: po opublikowaniu etykiety może mi trochę potrwać.
 
 Aby zastosować etykietę wrażliwości
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W **obszarze Witryny** kliknij pozycję **Aktywne witryny**.
-3. Kliknij witrynę skojarzoną z zespołem.
-4. Na karcie **Zasady** **w obszarze Charakter** kliknij pozycję **Edytuj**.
-5. Zaznacz utworzoną etykietę, a następnie kliknij przycisk **Zapisz**.
+
+1. Otwórz centrum SharePoint administracyjnego, a następnie w **obszarze Witryny** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+1. Wybierz witrynę skojarzoną z zespołem.
+1. Na karcie **Zasady** **w obszarze Charakter** wybierz pozycję **Edytuj**.
+1. Wybierz utworzoną etykietę, a następnie wybierz pozycję **Zapisz**.
 
 ## <a name="sharepoint-settings"></a>SharePoint ustawień
 
@@ -186,13 +187,13 @@ Ustawienie udostępniania gościa wybrane podczas tworzenia etykiety (które ma 
 Zaktualizujemy także domyślny typ linku udostępniania, aby zmniejszyć ryzyko przypadkowego udostępniania plików i folderów szerszemu gronu odbiorców niż zamierzano.
 
 Aby zaktualizować ustawienia witryny
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W **obszarze Witryny** kliknij pozycję **Aktywne witryny**.
-3. Kliknij witrynę skojarzoną z zespołem.
-4. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** kliknij pozycję **Edytuj**.
-5. Jeśli zezwolisz na udostępnianie gości podczas tworzenia poufnej etykiety, upewnij się, że **zaznaczono opcję Nowi i** istniejący goście. Jeśli nie zezwolisz na udostępnianie podczas tworzenia etykiety, wybierz pozycję **Tylko osoby w Twojej organizacji**.
-6. W obszarze Domyślny typ linku udostępniania wyczyść  pole wyboru Takie samo ustawienie jak ustawienie na poziomie organizacji i zaznacz pole **wyboru Osoby z istniejącym dostępem**.
-7. Kliknij **Zapisz**.
+
+1. Otwórz centrum SharePoint administracyjnego i w **obszarze Witryny** wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>
+1. Wybierz witrynę skojarzoną z zespołem.
+1. Na karcie **Zasady** w obszarze **Udostępnianie zewnętrzne** wybierz pozycję **Edytuj**.
+1. Jeśli zezwolisz na udostępnianie gości podczas tworzenia poufnej etykiety, upewnij się, że **zaznaczono opcję Nowi i** istniejący goście. Jeśli nie zezwolisz na udostępnianie podczas tworzenia etykiety, wybierz pozycję **Tylko osoby w Twojej organizacji**.
+1. W obszarze Domyślny typ linku udostępniania wyczyść  pole wyboru Takie samo ustawienie jak ustawienie na poziomie organizacji i zaznacz pole **wyboru Osoby z istniejącym dostępem**.
+1. Wybierz **Zapisz**.
 
 #### <a name="private-channels"></a>Kanały prywatne
 

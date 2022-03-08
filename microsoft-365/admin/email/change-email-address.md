@@ -2,8 +2,8 @@
 title: Zmienianie adresów e-mail w celu używania domeny niestandardowej
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Zmień swój adres e-mail na przyjazny adres e-mail, na tom@fourthcoffee.com, kupując nazwę domeny i dodając ją do Microsoft 365.
-ms.openlocfilehash: f388bfcea3131df6a66733c940ed2f566827d2e5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4630b3df4719611440e92801235fde20d7bd95f4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995927"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316425"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Zmienianie adresów e-mail w celu używania domeny niestandardowej
 

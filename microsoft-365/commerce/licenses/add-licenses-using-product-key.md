@@ -2,8 +2,8 @@
 title: Dodawanie lub rozszerzanie subskrypcji opłaconej przy użyciu klucza produktu
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - TopSMBIssues
 - AdminSurgePortfolio
-- commerce_licensing
 search.appverid: MET150
 description: Dowiedz się, jak dodawać licencje do subskrypcji lub rozszerzać ją przy użyciu klucza produktu.
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: e9fed54eb7006906e7d54888709c14cdbff8a903
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4d14f00115059cf28cff71ac126b1f0fdfbb3890
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995956"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311869"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Dodawanie lub rozszerzanie subskrypcji opłaconej przy użyciu klucza produktu
 

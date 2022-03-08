@@ -1,6 +1,6 @@
 ---
 title: Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,34 +16,32 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Dowiedz się, jak uzyskać pomoc i wsparcie techniczne Microsoft 365 Lighthouse, aby uzyskać pomoc techniczną dla dostawców usług zarządzanych (MSP, Managed Service Providers).
-ms.openlocfilehash: 554747fa7360892c7ea8c52e31dc0f4e2bc18589
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 24420874314c67b621a53f8eb06e22a49137d380
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984272"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314367"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse 
 
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+Jeśli potrzebujesz pomocy, dostępnych jest kilka opcji. Najpierw sprawdź, czy nie występują jakieś znane problemy:
 
-Jeśli potrzebujesz pomocy, dostępnych jest kilka opcji. Zacznij od sprawdzenia bieżącej kondycji usług dzierżawy klienta:
+- Przejrzyj bieżącą kondycję usług dzierżawy klienta:
 
-1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Kondycja usługi**.
-2. Wyświetl szczegółowe informacje o bieżących i przeszłych problemach.
+    1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Kondycja usługi**. 
+    2. Wyświetl szczegółowe informacje o bieżących i przeszłych problemach.
 
-Aby sprawdzić bieżącą kondycję usług dzierżawy latarni morskiej:
+- Przejrzyj bieżącą kondycję usług dzierżawy w latarni morskiej:
 
-1. Przejdź do centrum administracyjne platformy Microsoft 365 stronie <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-2. W lewym okienku nawigacji wybierz pozycję **Kondycja usługi HealthService** > .
-3. Na liście usług znajdź **pozycję Microsoft 365,** a następnie rozwiń ją, aby wyświetlić wszystkie usługi w pakiecie.
-4. Znajdź **Microsoft 365 Lighthouse** i sprawdź kondycję.
+    1. Przejdź do centrum administracyjne platformy Microsoft 365 stronie <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+    2. W lewym okienku nawigacji wybierz pozycję **Kondycja usługi HealthService** > .
+    3. Na liście usług znajdź **pozycję Microsoft 365,** a następnie rozwiń ją, aby wyświetlić wszystkie usługi w pakiecie.
+    4. Znajdź **Microsoft 365 Lighthouse** i sprawdź kondycję.
 
-Jeśli występuje problem, który nie jest wymieniony na żadnych pulpitach nawigacyjnych kondycji usługi, postępuj zgodnie z instrukcjami w tym artykule, aby wyświetlić opcje samodzielnej pomocy lub utworzyć żądanie usługi.
+- Sprawdź, czy ten problem został wymieniony w [tece Znane problemy dotyczące Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
 
-> [!NOTE]
-> Podczas korzystania z wersji Preview obsługa jest ograniczona do języka angielskiego.
+Jeśli występuje problem, który nie został wymieniony w żadnym z tych zasobów, postępuj zgodnie z instrukcjami w tym artykule, aby wyświetlić opcje samodzielnej pomocy lub utworzyć żądanie usługi.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -81,4 +79,6 @@ Jeśli występuje problem, który nie jest wymieniony na żadnych pulpitach nawi
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)
+[Znane problemy dotyczące Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (artykuł)\
+[Microsoft 365 Lighthouse faq](m365-lighthouse-faq.yml) (artykuł)\
+[Problemy i rozwiązywanie problemów oraz komunikatów o](m365-lighthouse-troubleshoot.md) błędach w Microsoft 365 Lighthouse (artykuł)

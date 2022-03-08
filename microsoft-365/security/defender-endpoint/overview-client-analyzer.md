@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9b4363b529ce9087e640c9bfaa32c8d21f410710
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 0de2fbe98527d8fe36f2b8c5d5db0453988501a7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017900"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323503"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Rozwiązywanie problemów dotyczących kondycji czujnika przy użyciu programu Microsoft Defender for Endpoint Client Analyzer
 

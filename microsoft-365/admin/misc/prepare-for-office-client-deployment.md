@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 10/31/2017
+ms.date: 02/25/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,16 +23,19 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Dowiedz się, jak automatycznie instalować 32-bitowe Office na Windows 10 komputerach i aktualizować je.
-ms.openlocfilehash: f57f9538f859136179491620f1ce11ca17981068
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aa14aa9407f7115e31f01a8e20ea1324a23452ec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984581"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321169"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Przygotowywanie do Office klienta za pomocą programu Microsoft 365 dla firm
 
 Ten artykuł dotyczy wszystkich Microsoft 365 Business Premium.
+
+> [!NOTE]
+> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 ## <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Przygotowywanie się do automatycznej instalacji aplikacji pakietu Office na komputerach klienckich
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Za pomocą narzędzia do komunikacji w przypadku Advanced eDiscovery przypadku wysyłaj, zbieraj i śledź powiadomienia o obsłudze prawnych.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3d4f8529486a4e17a1c21cc861b8d3694e6486c7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5c0bda35ffe2547e1c30b4bbf0a6c7d0d0563b7b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983501"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315665"
 ---
 # <a name="create-a-legal-hold-notice"></a>Tworzenie informacji prawnych o wstrzymaniu ich od zesłania
 
@@ -36,33 +36,31 @@ W tym artykule przedstawiono kroki przepływu pracy z powiadomieniem o wstrzyman
 
 Pierwszym krokiem jest określenie odpowiednich danych do informacji prawnych i innych informacji o wstrzymaniu się od nich.
 
-![Name Communication Page (Nazwa strony komunikacji).](../media/NameCommunication.PNG)
+![Name Communication page.](../media/NameCommunication.PNG)
 
 1. W Centrum zgodności platformy Microsoft 365 przejdź do tematu **Zbierania elektronicznych** materiałów dowodowych > Zaawansowane, aby wyświetlić listę spraw w organizacji.
 
 2. Wybierz sprawę, kliknij **kartę Komunikacja** , a następnie kliknij pozycję **Nowa komunikacja**.
 
-3. Na stronie **Nazwa komunikacji** określ następujące (wymagane) szczegóły komunikacji.
+3. Na stronie **Nazwa komunikacji** określ następujące ustawienia komunikacji.
 
     - **Nazwa**: jest to nazwa komunikacji.
 
-    - **Issuing officer**: Na liście rozwijanej jest wyświetlana lista członków sprawy. Aby uzyskać więcej informacji na temat dodawania nowych członków do sprawy, zobacz Tworzenie [Advanced eDiscovery sprawy](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case). Każde powiadomienie wysyłane do osób przechłodnych jest wysyłane w imieniu określonego inspektora wydania.
+    - **Issuing officer**: Na liście rozwijanej są wyświetlani użytkownicy w Twojej organizacji, których można wybrać jako inspektora ds. wydania komunikacji. Każda komunikacja wysyłana do osób, które je zatrzymały, zostanie wysłana w imieniu wybranego inspektora wydania. Lista użytkowników na liście rozwijanej składa się z członków sprawy oraz członków służb wydających w całej organizacji. Ci inscytatorzy zbierania elektronicznych materiałów dowodowych są dodawana przez administratora zbierania elektronicznych materiałów dowodowych i są dostępni we wszystkich Advanced eDiscovery przypadkach w Twojej organizacji. Aby uzyskać więcej informacji, zobacz [Zarządzanie organami wydającym informacje](advanced-ediscovery-issuing-officers.md).
 
-> [!NOTE]
-> Do pokazania w liście rozwijanej  issuing Officer musi być aktywna skrzynka pocztowa
-
+    - **Wybierz szablon komunikacji**: Na liście rozwijanej są wyświetlane szablony z biblioteki komunikacji na Advanced eDiscovery ustawień. Jeśli wybierzesz szablon, będzie on wyświetlany w witrynie Definiowanie  zawartości portalu jako punkt wyjścia dla tekstu powiadomienia, które tworzysz. Jeśli nie wybierzesz szablonu, musisz utworzyć powiadomienie samodzielnie od podstaw. Aby uzyskać więcej informacji na temat szablonów komunikacji, zobacz [Zarządzanie szablonami do komunikacji z użytkownikami](advanced-ediscovery-communications-library.md).
 
 4. Kliknij **Dalej**.
 
 ## <a name="step-2-define-the-portal-content"></a>Krok 2. Definiowanie zawartości portalu
 
-Następnie możesz utworzyć i dodać zawartość powiadomienia o wstrzymaniu. Na stronie **Definiowanie zawartości portalu** w kreatorze **tworzenia** komunikacji określ zawartość powiadomienia o wstrzymaniu. Ta zawartość zostanie automatycznie dołączona do zasad wydawania, ponownego wydawania, przypomnienia i eskalacji. Ponadto ta zawartość będzie wyświetlana w Portalu zgodności użytkownika- opiekuna.
+Następnie możesz utworzyć i dodać zawartość powiadomienia o wstrzymaniu. Na stronie **Definiowanie zawartości portalu** w kreatorze **tworzenia** komunikacji określ zawartość powiadomienia o wstrzymaniu. Ta zawartość zostanie automatycznie dołączona do zasad wydawania, ponownego wydawania, przypomnienia i eskalacji. Ponadto ta zawartość będzie wyświetlana w Portalu zgodności użytkownika- opiekuna. Jeśli wybrano szablon z biblioteki Komunikacji, będzie on wyświetlany i stanowi punkt wyjścia dla powiadomienia, które tworzysz.
 
-![Strona zawartości portalu.](../media/PortalContent.PNG)
+![Strona Zawartość portalu.](../media/PortalContent.PNG)
 
 Aby utworzyć zawartość portalu:
 
-1. Wpisz (lub wytnij i wklej z innego dokumentu) powiadomienie o wstrzymaniu w polu tekstowym zawartości portalu.
+1. Wpisz (lub wytnij i wklej z innego dokumentu) powiadomienie o wstrzymaniu w polu tekstowym zawartości portalu. Jeśli na poprzedniej stronie kreatora wybrano szablon komunikacji, ten szablon jest wyświetlany. W razie potrzeby możesz edytować zawartość szablonu.
 
 2. Wstaw zmienne korespondencji seryjnej do powiadomienia, aby dostosować powiadomienie i udostępnić Portal zgodności wt.
 
@@ -95,9 +93,9 @@ Aby utworzyć powiadomienie o wydawaniu informacji:
 
 ### <a name="re-issuance-notification"></a>Re-Issuance powiadomienia
 
-W związku z postępem tej sytuacji może być wymagane zachowanie dodatkowych lub mniejszej niezbędnej do tego danych, niż zostało to wcześniej instrukcje. Po zaktualizowaniu zawartości portalu jest wysyłane powiadomienie o ponownym wydawaniu informacji i alerty o wszelkich zmianach dotyczących ich obowiązków zachowywania.
+W związku z postępem tej sytuacji może być wymagane zachowanie dodatkowych lub mniejszej niezbędnej do tego danych, niż zostało to wcześniej instrukcje. Po zaktualizowaniu zawartości portalu zostanie wysłane powiadomienie o ponownej aktualizacji i alerty o wszelkich zmianach w ich zobowiązaniach do zachowania poufności.
 
-Aby utworzyć powiadomienie o ponownej wydawaniu informacji:
+Aby utworzyć powiadomienie o ponownej rezygnacji:
 
 1. Na **kafelku Ponowne wyedytowanie** kliknij pozycję **Edytuj**.
 
@@ -105,7 +103,7 @@ Aby utworzyć powiadomienie o ponownej wydawaniu informacji:
 
 3. Określ **temat** powiadomienia (wymagane).
 
-4. Określ zawartość lub dodatkowe instrukcje, które chcesz udostępnić opiekunowi (wymagane). Zawartość portalu określona w kroku 2 jest dodawana do końca powiadomienia o ponownej wydawaniu opinii.
+4. Określ zawartość lub dodatkowe instrukcje, które chcesz udostępnić opiekunowi (wymagane). Zawartość portalu zdefiniowana w kroku 2 jest dodawana na końcu powiadomienia o ponownej rezygnacji.
 
 5. Kliknij **Zapisz**.
 
@@ -114,7 +112,7 @@ Aby utworzyć powiadomienie o ponownej wydawaniu informacji:
 
 ### <a name="release-notification"></a>Powiadomienie o wersji
 
-Po rozpoznaniu sprawy lub zachowaniu zawartości przez użytkownika, który nie zachowuje już zawartości, można go zwolnić ze sprawy. W przypadku poprzednio wystawionego przez woczycie powiadomienia o zwolnieniu można użyć powiadomienia o wydaniu w celu alertów o zwolnieniu tych osób z odpowiedzialności.
+Po rozpoznaniu sprawy lub zachowaniu zawartości przez użytkownika, który nie zachowuje już zawartości, można go zwolnić ze sprawy. Jeśli dla włodarzy poprzednio opublikowano powiadomienie o wstrzymaniu, można użyć powiadomienia o wydaniu w celu alertów o zwolnieniu tych osób z zobowiązań.
 
 Aby utworzyć powiadomienie o wersji:
 
@@ -178,7 +176,7 @@ Aby zaplanować eskalacji:
 
 Po sfinalizowaniu zawartości powiadomień wybierz osób, do których chcesz wysłać powiadomienia.
 
-![Wybierz strona Pojedyńcze.](../media/SelectCustodians.PNG)
+![Wybierz stronę Pojedyńcze.](../media/SelectCustodians.PNG)
 
 Aby dodać opiekunów:
 
@@ -202,7 +200,7 @@ W poniższej tabeli opisano zdarzenia w procesie zarządzania nimi, które powod
 |Typ komunikacji|Wyzwalacz |
 |:---------|:---------|
 |Powiadomienia o wydawaniu decyzji|Początkowe utworzenie powiadomienia. Możesz także ręcznie ponownie wysłać powiadomienie o wstrzymaniu. |
-|Powiadomienia o ponownych wydawaniach|Aktualizowanie zawartości portalu na stronie **Definiowanie zawartości portalu** w **kreatorze edycji** komunikacji.|
+|Powiadomienia o ponownej rezygnacji|Aktualizowanie zawartości portalu na stronie **Definiowanie zawartości portalu** w **kreatorze edycji** komunikacji.|
 |Informacje o wersji|W przypadku tego przypadku tylko jego pojedyńczy projekt jest zwalniany ze sprawy.|
 |Przypomnienia|Interwał i liczba przypomnień skonfigurowanych dla przypomnienia.|
 |Eskalacji|Interwał i liczba przypomnień skonfigurowanych dla eskalacji.|

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a359938dbee85ea64b5f46804761410cae1f48e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b1c133048e6600d553f0530e135ebfc2c441dd84
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62973804"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323671"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Uzyskiwanie dostępu do Microsoft 365 Defender klienta programu MSSP
 
@@ -36,9 +36,9 @@ ms.locfileid: "62973804"
 > [!NOTE]
 > Te kroki są kierowane do programu MSSP.
 
-Domyślnie klienci korzystający z programu MSSP mają Microsoft 365 Defender dzierżawę, korzystając z następującego adresu URL: `https://securitycenter.windows.com/`.
+Domyślnie klienci korzystający z programu MSSP mają Microsoft 365 Defender dzierżawę, korzystając z następującego adresu URL: `https://security.microsoft.com/`.
 
-Jednak w celu uzyskania dostępu do portalu klientów programu MSSP należy użyć adresu URL specyficznego dla dzierżawy w następującym formacie: `https://securitycenter.windows.com?tid=customer_tenant_id`
+Jednak w celu uzyskania dostępu do portalu klientów programu MSSP należy użyć adresu URL specyficznego dla dzierżawy w następującym formacie: `https://security.microsoft.com?tid=customer_tenant_id`
 
 Na ogół mssp należy dodać do każdego klienta MSSP w usłudze Azure AD, która będzie zarządzać.
 
@@ -48,9 +48,9 @@ Aby uzyskać identyfikator dzierżawy klienta programu MSSP, a następnie użyć
 
 2. Przełączanie katalogu do dzierżawy klienta MSSP.
 
-3. Wybierz **Azure Active Directory > Właściwości**. Identyfikator dzierżawy znajdziesz w polu Identyfikator katalogu.
+3. Wybierz **Azure Active Directory > właściwości**. Identyfikator dzierżawy znajdziesz w polu Identyfikator katalogu.
 
-4. Aby uzyskać dostęp do portalu klientów programu MSSP, zastąp wartość `customer_tenant_id` w następującym adresie URL: `https://securitycenter.windows.com/?tid=customer_tenant_id`.
+4. Aby uzyskać dostęp do portalu klientów programu MSSP, zastąp wartość `customer_tenant_id` w następującym adresie URL: `https://security.microsoft.com/?tid=customer_tenant_id`.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

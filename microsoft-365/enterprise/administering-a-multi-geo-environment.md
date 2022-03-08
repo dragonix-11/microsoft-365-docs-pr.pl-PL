@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
 description: Administratorzy mogą dowiedzieć się, jak administrować usługami SharePoint i OneDrive w środowisku wielolokalowym.
-ms.openlocfilehash: 31d361b2936c3d7bceca7137499c659030717eba
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 126b5de915fba7168b3895bbb05ccef6dcad749b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "63010602"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312057"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administrowanie środowiskiem wielolokalowym
 
@@ -28,7 +30,7 @@ Poniżej opisano, jak działają Microsoft 365 w środowisku z wieloma lokalizac
 
 ## <a name="administrator-experience"></a>Środowisko administratora
 
-Centrum [administracyjne SharePoint](https://admin.microsoft.com/sharepoint) po lewej stronie zawiera kartę Lokalizacje geograficzne, która zawiera mapę lokalizacji geograficznych, na której można wyświetlać lokalizacje geograficzne i zarządzać nimi. Na tej stronie możesz dodawać lub usuwać lokalizacje geograficzne dzierżawcy.
+Centrum SharePoint administracyjnego ma kartę Lokalizacje <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank"></a> geograficzne w lewej nawigacji, która zawiera mapę lokalizacji geograficznych, na której można wyświetlać lokalizacje geograficzne i zarządzać nimi. Na tej stronie możesz dodawać lub usuwać lokalizacje geograficzne dzierżawcy.
 
 ## <a name="audit-log-search"></a>Przeszukiwanie dziennika inspekcji
 

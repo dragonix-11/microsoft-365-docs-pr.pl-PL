@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 06d201d6f3604580ad9543616c48e526f63bac83
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 513432dfb24af89451c4d8290ce5fde0951819b9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016027"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322705"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Zbieranie danych na potrzeby zaawansowanego rozwiązywania problemów na Windows
 

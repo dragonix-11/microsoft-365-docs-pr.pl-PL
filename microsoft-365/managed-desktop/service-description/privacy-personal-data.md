@@ -12,12 +12,12 @@ ms.author: tiaraquan
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: medium
-ms.openlocfilehash: a381bc70e73bf3bbb9f654f5d5dfffd2047f8ab5
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: c70b15a3d35dc4b19c5961e9fbe0404780c12309
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63014877"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330261"
 ---
 # <a name="privacy"></a>Prywatność
 
@@ -77,7 +77,7 @@ Dane identyfikujące używane przez Microsoft Managed Desktop są przechowywane 
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft Intune zbiera, przetwarza i udostępnia dane Microsoft Managed Desktop w celu obsługi operacji biznesowych i usług. Aby uzyskać więcej informacji o danych zbieranych w usłudze Intune, zobacz [Zbieranie danych w usłudze Intune.](/mem/intune/protect/privacy-data-collect) 
+Microsoft Intune zbiera, przetwarza i udostępnia dane Microsoft Managed Desktop w celu obsługi operacji biznesowych i usług. Aby uzyskać więcej informacji o danych zbieranych w usłudze Intune, zobacz [Zbieranie danych w usłudze Intune.](/mem/intune/protect/privacy-data-collect)
 
 Aby uzyskać więcej informacji Microsoft Intune lokalizacji danych, zobacz Gdzie są [Microsoft 365 przechowywane dane klienta](/microsoft-365/enterprise/o365-data-locations). Usługa Intune szanuje opcje lokalizacji przechowywania danych klientów wybrane przez administratora.
 
@@ -123,16 +123,16 @@ Do tych praw należą:
 
 Aby uzyskać bardziej ogólne informacje o żądaniach osób, których dane dotyczą, zobacz Wnioski osób, których dane dotyczą[, oraz RODO i KPI.](/compliance/regulatory/gdpr-data-subject-requests)
 
-W celu wytłaniania żądań osób, których dane dotyczą, dotyczących danych zbieranych przez system zarządzania Microsoft Managed Desktop przypadku, zobacz następujące wnioski osób, których dane dotyczą:
+Aby zrównać żądania osób, których dane dotyczą, dotyczące danych zbieranych przez system zarządzania sprawami zarządzanymi przez firmę Microsoft w wersji klasycznej firmy Microsoft, zobacz następujące żądania osób, których dane dotyczą:
 
 | Żądania osób, których dane dotyczą | Opis |
 | ------ | ------ |
 | Dane z alertów programu Microsoft Defender dla punktu końcowego | Administrator zabezpieczeń może zażądać usunięcia lub wyodrębnienia danych osobistych związanych z alertami programu Microsoft Defender for Endpoint, przesyłając żądanie raportu w portalu [administracyjnym](https://aka.ms/memadmin). <br><br> Podaj następujące informacje: <br><ul><li>Typ żądania: Zmień żądanie</li><li>Kategoria: Zabezpieczenia</li><li>Podkategoria: Inne</li><li>Opis. Podaj odpowiednie nazwy urządzeń.</li></ul> |
-| Dane z Microsoft Managed Desktop pomocy technicznej | Administrator IT może zażądać usunięcia lub wyodrębnienia wniosków o pomoc techniczną związaną z danymi osobistymi, przesyłając żądanie raportu w [portalu administracyjnym](https://aka.ms/memadmin). <br><br> Podaj następujące informacje: <ul><li>Typ żądania: Zmień żądanie</li><li>Kategoria: Zabezpieczenia</li><li>Podkategoria: Inne</li><li>Opis. Podaj odpowiednie nazwy urządzeń lub nazwy użytkowników.</li></ul>
+| Dane ze zgłoszeń do pomocy technicznej programu Microsoft Managed Desktop | Administrator IT może zażądać usunięcia lub wyodrębnienia wniosków o pomoc techniczną związaną z danymi osobistymi, przesyłając żądanie raportu w [portalu administracyjnym](https://aka.ms/memadmin). <br><br> Podaj następujące informacje: <ul><li>Typ żądania: Zmień żądanie</li><li>Kategoria: Zabezpieczenia</li><li>Podkategoria: Inne</li><li>Opis. Podaj odpowiednie nazwy urządzeń lub nazwy użytkowników.</li></ul>
 
 W przypadku informacji o stanie usług (DSR) od innych produktów związanych z usługą zobacz następujące artykuły:
 
-- Windows [danych diagnostycznych](/compliance/regulatory/gdpr-dsr-windows)
+- Dane [diagnostyczne systemu](/compliance/regulatory/gdpr-dsr-windows) Windows
 - Dane [usługi Microsoft Intune](/compliance/regulatory/gdpr-dsr-intune)
 - Dane usługi Azure Active [Directory](/compliance/regulatory/gdpr-dsr-azure)
 

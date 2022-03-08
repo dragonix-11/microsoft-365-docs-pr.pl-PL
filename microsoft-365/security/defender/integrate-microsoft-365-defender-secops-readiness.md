@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ca58d56e9caf6aa8a359a0776fc160cca04fec8a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 1197edf14977c0232936531399d726f62ab70889
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013384"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314311"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>Krok nr 2. Przeprowadzanie oceny gotowości integracji soc przy użyciu struktury zerowego zaufania
 

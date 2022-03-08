@@ -1,6 +1,6 @@
 ---
 title: Omówienie Microsoft 365 Lighthouse Windows usługi Microsoft 365 Lighthouse Windows 365 (komputery w chmurze)
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) korzystających z Microsoft 365 Lighthouse, dowiedz się więcej o Windows usługi Windows 365 (na komputerach w chmurze).
-ms.openlocfilehash: a0d828a382000502f6700d585624b967a740ff36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 60b96974e0070e4a151484a162c3eafc18d0bf4a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983794"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315529"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>Omówienie Windows usługi Windows 365 (Komputery w chmurze)  
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
   
 Windows 365 to usługa oparta na chmurze, która pozwala administratorom programu Microsoft Endpoint Manager (MEM) zapewniać obsługę komputerów w chmurze i zarządzanie nimi dla użytkowników, którzy mają licencję usługi Windows 365. Windows 365 jest w pełni zintegrowana z MEM do zarządzania urządzeniami, a Microsoft 365 Lighthouse na potrzeby zarządzania komputerami w chmurze partnerów we wszystkich dzierżawach klientów.
 

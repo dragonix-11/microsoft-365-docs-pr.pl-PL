@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: W tym artykule pokazano, jak diagnozować typowe problemy z witryną usługi SharePoint Online przy użyciu narzędzi dewelopernych programu Internet Explorer.
-ms.openlocfilehash: acd5fc05f933e5d47b5bb14c2d3317ea3a6e0186
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: a3ad33b147a20cd5b072f7f3ccc1b9272a58ef54
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "63007062"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321505"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnozowanie problemów z wydajnością aplikacji SharePoint Online
 
@@ -48,6 +48,9 @@ W tym temacie opisano, jak diagnozować problemy z wydajnością przy użyciu ka
 > Jeśli jesteś administratorem i masz problemy z wydajnością w programie SharePoint, wybierz pozycję Uruchom testy poniżej, co  spowoduje wypełnienie diagnostyki wydajności witryny i strony w Centrum Administracja Microsoft 365. Te testy sprawdzają konfigurację i szybko zalecają kolejne kroki w celu zwiększenia SharePoint wydajności dzierżawy.
 >> [!div class="nextstepaction"]
 >> [Uruchom testy: sprawdź SharePoint wydajności](https://aka.ms/PillarSiteandPagePerf)
+
+> [!NOTE] 
+> Ta funkcja nie jest dostępna dla Microsoft 365 Government, Microsoft 365 obsługiwanej przez firmę 21Vianet ani Microsoft 365 Germany.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Diagnozowanie wydajności w aplikacji SharePoint Online za pomocą paska narzędzi SharePoint F12
 <a name="F12ToolInfo"> </a>

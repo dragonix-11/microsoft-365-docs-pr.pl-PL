@@ -1,5 +1,5 @@
 ---
-title: Szacowanie usługi Microsoft Defender pod Office 365 informacji
+title: Krok nr 3. Szacowanie usługi Microsoft Defender pod Office 365 informacji
 description: Zapoznaj się z tym omówieniem, aby dowiedzieć się, jak skonfigurować pilotaż MDO, w tym wymagania, włączanie lub aktywowanie evalu i konfigurowanie pilotażu.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 60b32c59b4326f2c9b2259fe99446ca5fc569ecc
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 0f564d308384cff466f0cd51e0c6a791150a605e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013685"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320819"
 ---
-# <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Włączanie i pilotaż usługi Microsoft Defender dla Office 365
+# <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>Krok nr 3. Włączanie i pilotaż usługi Microsoft Defender dla Office 365
 
 **Dotyczy:**
 - Microsoft 365 Defender

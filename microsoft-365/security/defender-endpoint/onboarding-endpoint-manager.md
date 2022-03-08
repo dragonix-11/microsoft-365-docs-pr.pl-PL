@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0f1e9c88c003551ca74c76d6348465f52fdbd171
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 261cb8af0f1fbb4c118aca649945f66015f1d25c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63013328"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322785"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Dołączanie przy użyciu Microsoft Endpoint Manager
 
@@ -44,9 +44,7 @@ W [temacie](deployment-strategy.md) Planowanie zapewniono kilka metod dołączan
 
 Chociaż program Defender for Endpoint obsługuje dołączanie różnych punktów końcowych i narzędzi, ten artykuł nie obejmuje ich. Aby uzyskać informacje na temat ogólnego wdrażania przy użyciu innych obsługiwanych narzędzi i metod wdrażania, zobacz [Omówienie wdrażania](onboarding.md).
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) rozwiązaniami, które ujednolicono kilka usług. Zawiera [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
-
-— zarządzanie urządzeniami.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) rozwiązaniami, które ujednolicono kilka usług. Obejmuje on [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) oparte na urządzeniach.
 
 W tym temacie podano dla użytkowników:
 
@@ -360,10 +358,10 @@ Aby potwierdzić, że zasady konfiguracji zostały zastosowane do urządzenia te
     > [!div class="mx-imgBorder"]
     > [![Obraz panelu Usługi2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. Po uruchomieniu usług na urządzeniu urządzenie jest wyświetlane w Centrum zabezpieczeń usługi Microsoft Defender.
+3. Po uruchomieniu usług na urządzeniu urządzenie jest wyświetlane w Microsoft 365 Defender sieci.
 
     > [!div class="mx-imgBorder"]
-    > [![Obraz Centrum zabezpieczeń usługi Microsoft Defender.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Obraz Microsoft 365 Defender portalu](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### <a name="confirm-next-generation-protection"></a>Potwierdzanie ochrony następnej generacji
 

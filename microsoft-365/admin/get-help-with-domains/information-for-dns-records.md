@@ -2,8 +2,8 @@
 title: Zbieranie informacji potrzebnych do utworzenia rekordów DNS
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Zbierz wartości/informacje potrzebne do utworzenia rekordów DNS w celu połączenia Domeny z Twoją Microsoft 365 subskrypcją.
-ms.openlocfilehash: 81a1bd650e507e7f2c15a16cd5a048181ca6c816
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 672d57babb1b26e42b3fd24da8c9dc841223e41f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995980"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316803"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Zbieranie informacji potrzebnych do utworzenia rekordów DNS
 

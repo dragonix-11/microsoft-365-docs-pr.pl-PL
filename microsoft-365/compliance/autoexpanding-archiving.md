@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Dowiedz się więcej o automatycznym rozwijaniu archiwizacji, która zapewnia dodatkową przestrzeń dyskową archiwum dla Exchange Online skrzynki pocztowe.
-ms.openlocfilehash: 527eea4f0fe97ba689cb70bddb78091112e1f353
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010620"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328865"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>Informacje o automatycznym rozwijaniu archiwizacji
 
@@ -94,9 +94,9 @@ Podczas korzystania z funkcji Outlook lub Outlook w sieci Web w celu uzyskiwania
 
 - Możesz usuwać elementy z automatycznie rozwiniętego obszaru przechowywania. Nie można jednak użyć funkcji Odzyskiwanie elementów usuniętych, aby odzyskać element po włączeniu automatycznego archiwizowania dla skrzynki pocztowej.
 
-- Funkcja automatycznego rozszerzania archiwizacji jest dostępna w programie Outlook dla sieci Web (OWA). Podobnie jak w przypadku archiwum online możesz wyszukiwać elementy, które zostały przeniesione do dodatkowego obszaru przechowywania. Po wybraniu zakresu wyszukiwania w programie OWA jako zakresu wyszukiwania zostaną przeszukane wszystkie archiwa (w tym archiwa rozszerzone automatycznie) i odpowiadające im podfoldery.
+- Funkcja automatycznego rozszerzania archiwizacji jest dostępna w programie Outlook dla sieci Web (OWA). Podobnie jak w przypadku archiwum online możesz wyszukiwać elementy, które zostały przeniesione do dodatkowego obszaru przechowywania. Po wybraniu zakresu wyszukiwania w programie OWA jako zakresu wyszukiwania zostaną przeszukane wszystkie archiwa (w tym archiwa rozszerzone automatycznie) i odpowiadające im podfoldery. Zwróć uwagę, że wyszukiwanie nie jest obsługiwane w przypadku funkcji archiwum rozszerzonego automatycznie w sytuacji archiwizacji dostępnej tylko w chmurze (podstawowa skrzynka pocztowa nadal jest lokalna).
 
-- Automatyczne rozszerzanie wyszukiwania archiwum jest dostępne w Outlook w bieżącym kanale (wersja Preview). W ramach tej wersji Preview dostępny jest zakres Bieżąca skrzynka pocztowa, dzięki czemu można przeszukiwać archiwum rozszerzone automatycznie. Aby uzyskać więcej informacji na temat tego Microsoft Search i innych funkcji pomocy technicznej, zobacz Outlook aplikacji Windows [połączonej](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045) z Exchange Online używa Microsoft Search. 
+- Automatyczne rozszerzanie wyszukiwania archiwum jest dostępne w programie Outlook dla Windows w miesięcznym Enterprise kanale. W ramach tej aktualizacji dostępny jest zakres Bieżąca skrzynka pocztowa, dzięki czemu można przeszukiwać archiwum rozszerzone automatycznie. Zwróć uwagę, że wyszukiwanie nie jest obsługiwane w przypadku funkcji archiwum rozszerzonego automatycznie w sytuacji archiwizacji dostępnej tylko w chmurze (podstawowa skrzynka pocztowa nadal jest lokalna). Aby uzyskać więcej informacji na temat tego Microsoft Search i innych funkcji pomocy technicznej, zobacz Outlook aplikacji Windows [połączonej](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045) z Exchange Online używa Microsoft Search. 
 
 - Liczba elementów w Outlook oraz Liczba elementów przeczytanych/nieprzeczytanych (w Outlook i Outlook w sieci Web) w archiwum rozwiniętym automatycznie może nie być dokładna.
 

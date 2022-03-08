@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Dowiedz się, jak dodać poradę o zasadach do zasad ochrony przed utratą danych (DLP, Data Loss Prevention) i poinformować użytkowników, że pracują oni z zawartością, która powoduje konflikty z zasadami DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 227a6438bf1eb645e5bd85acfafeb8222d0b1427
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 52bb2fba47c5588dc6a44eb5f8e1d7b745e69e70
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "63004716"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319381"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Porady dotyczące zasad ochrony przed utratą danych
 
@@ -32,23 +32,20 @@ Porady dotyczące zasad DLP w programie Outlook Web Access są obsługiwane dla 
 
 **Warunki:**
 
-- Sender Is
-- Domena nadawcy to
 - Adresat jest członkiem
 - Nagłówek zawiera wyrazy lub frazy
 - Nagłówek odpowiada wzorcom
-- Rozmiar dokumentu jest równy lub większy niż
 - Typ wiadomości to
-- Ważność wiadomości to
 - Zestaw znaków zawartości zawiera wyrazy
-- Temat lub treść zawiera wyrazy lub frazy
-- Temat lub treść pasuje do wzorców
-- Zestaw znaków zawartości zawiera wyrazy
-- Zawartość jest odbierana z
 - Czy nadawca zastąpić poradę o zasadach
 - Rozmiar wiadomości jest równy lub większy niż
 - Atrybut AD nadawcy zawiera wyrazy lub frazy
 - Atrybut Sender AD jest dosyć do wzorców
+- Zakresy adresów IP nadawców
+- Atrybut AD adresata zawiera wyrazy lub frazy
+- Atrybut ad adresata jest do dopasowania wzorców
+- Nazwa dokumentu zawiera wyrazy lub frazy
+- Nazwa dokumentu pasuje do wzorców
 - Zawartość dokumentu zawiera wyrazy lub frazy
 - Zawartość dokumentu jest do dopasowania do wzorców
 

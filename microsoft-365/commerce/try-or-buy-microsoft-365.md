@@ -2,8 +2,8 @@
 title: Wypróbuj lub kup subskrypcję Microsoft 365 dla firm
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,20 +15,20 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
 search.appverid: GEA150
 description: Zarejestruj się w celu bezpłatnej 30-dniowej wersji Microsoft 365 Business Standard, Microsoft 365 Business Premium lub Aplikacje Microsoft 365 dla firm.
 ms.date: 08/07/2020
-ms.openlocfilehash: e3ec002ceb47c7e4378ba28d833c2a3032472103
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: d1a5c7bb96d93a195ee93893f59c71ff8080b6f6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "63007069"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317964"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Wypróbuj lub kup subskrypcję Microsoft 365 dla firm
 

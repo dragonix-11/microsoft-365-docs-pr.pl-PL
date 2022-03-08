@@ -2,8 +2,8 @@
 title: Wprowadź klucz produktu dla Microsoft 365 Business Standard
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,18 +16,18 @@ ms.collection:
 search.appverid: MET150
 ROBOTS: NOINDEX
 ms.custom:
+- commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - AdminTemplateSet
 description: Jeśli zakupiono Microsoft 365 Business Standard w sklepie detalicznym, dowiedz się, jak zrealizować klucz produktu i aktywować subskrypcję.
 ms.date: 11/13/2020
-ms.openlocfilehash: c45a605346945c1056d708a238b3247c360b70d8
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 9d0adb7609f7334f3dc5dcb0d0c52839bc61758d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63013770"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316607"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Wprowadź klucz produktu dla Microsoft 365 Business Standard
 

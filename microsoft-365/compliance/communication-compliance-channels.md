@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 36707b372467bebdee5c5bcee114511ce7c385d1
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 9cc2b77c9983fecc6e58be515fe316c6c5239fef
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009820"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317783"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Wykrywanie sygnałów kanału za pomocą zgodności komunikacji
 
@@ -45,7 +45,7 @@ Nowoczesne skanowanie załączników jest obsługiwane w przypadku następujący
 
 Wyodrębniony tekst dla nowoczesnych załączników jest dołączony do skojarzonej wiadomości na  pulpicie nawigacyjnym Alerty oczekujące dla zasad. Wyodrębniony tekst załącznika ma nazwę jako nazwa pliku załącznika (i rozszerzenie formatu) oraz rozszerzenie .txt załącznika. Na przykład wyodrębniony tekst załącznika o *nazwieContosoBusinessPlan.docx* będzie wyświetlany jakoContosoBusinessPlan.docx.txtna pulpicie nawigacyjnym ** Alerty oczekujące dla zasad.
 
-Zaznacz wyodrębniony tekst załącznika, aby wyświetlić szczegółowe informacje w widokach *Źródło*, Zwykły *tekst* lub *Adnotacja* . Po przejrzeniu możesz rozpoznać tekst załącznika lub podjąć w związku z tym akcję za pomocą kontrolek paska poleceń. Możesz również pobrać załącznik w celu przejrzenia poza procesem sprawdzania zgodności komunikacji.
+Zaznacz wyodrębniony tekst załącznika, aby wyświetlić szczegółowe informacje w *widokach Źródło* i *Zwykły tekst* . Po przejrzeniu możesz rozpoznać tekst załącznika lub podjąć w związku z tym akcję za pomocą kontrolek paska poleceń. Możesz również pobrać załącznik w celu przejrzenia poza procesem sprawdzania zgodności komunikacji.
 
 Nadzór nad poszczególnymi czatami użytkowników i komunikacją na kanałach w sieciach za pomocą następujących konfiguracji zarządzania Teams:
 

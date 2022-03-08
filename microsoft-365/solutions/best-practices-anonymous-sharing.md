@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: W tym artykule znajdziesz najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytanych użytkownikom.
-ms.openlocfilehash: 40bf61820f28656e6f038e76f066e9b122b30177
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ffe1219c468deef8c78e51e410e862ec52532483
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62959556"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323839"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Najlepsze rozwiązania dotyczące udostępniania plików i folderów nieuwierzytanych użytkownikom
 
@@ -42,25 +43,23 @@ Gdy link *Każdy* wygaśnie, nie można go już używać do uzyskiwania dostępu
 
 Aby ustawić datę wygaśnięcia dla linków Każdy w organizacji
 
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W lewym okienku nawigacji rozwiń **pozycję Zasady**, a następnie kliknij pozycję **Udostępnianie**.
-3. W **obszarze Wybierz opcje wygasania i uprawnień dla** linków Każdy zaznacz pole wyboru Te **linki muszą wygasać w ciągu tej wielu** dni.</br>
-   ![Zrzut ekranu SharePoint wygasania linku każdy na poziomie organizacji.](../media/sharepoint-organization-anyone-link-expiration.png)
-4. Wpisz liczbę dni w polu, a następnie kliknij przycisk **Zapisz**.
+1. Otwórz centrum SharePoint administracyjnego, rozwiń **pozycję Zasady**, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
+1. W **obszarze Wybierz opcje wygasania i uprawnień dla** linków Każdy zaznacz pole wyboru Te **linki muszą wygasać w ciągu tej wielu** dni.</br>
+   ![Zrzut ekranu SharePoint z ustawieniami wygasania linku każdy na poziomie organizacji.](../media/sharepoint-organization-anyone-link-expiration.png)
+1. Wpisz liczbę dni w polu, a następnie kliknij przycisk **Zapisz**.
 
 Aby ustawić datę wygaśnięcia dla linków Każdy w konkretnej witrynie
 
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W lewym okienku nawigacji rozwiń **pozycję Witryny**, a następnie kliknij pozycję **Aktywne witryny**.
-3. Wybierz witrynę, którą chcesz zmienić, a następnie kliknij pozycję **Udostępnianie**.
-4. W **obszarze Ustawienia zaawansowane dla linków Każda osoba** w obszarze Wygasanie linków Każdy wyczyść  pole wyboru Ustawienia na poziomie organizacji.</br>
-   ![Zrzut ekranu SharePoint ustawienia wygasania linku każdy na poziomie witryny.](../media/sharepoint-organization-anyone-link-expiration-site.png)
-5. Zaznacz opcję **Te linki muszą wygasać w ciągu tej** liczby dni, a następnie wpisz liczbę dni w polu.
-6. Kliknij **Zapisz**.
+1. Otwórz centrum SharePoint administracyjnego, rozwiń **pozycję Witryny**, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+1. Wybierz witrynę, którą chcesz zmienić, a następnie wybierz pozycję **Udostępnianie**.
+1. W **obszarze Ustawienia zaawansowane dla linków Każda osoba** w obszarze Wygasanie linków Każdy wyczyść  pole wyboru Ustawienia na poziomie organizacji.</br>
+   ![Zrzut ekranu SharePoint z ustawieniami wygasania linku każdy na poziomie witryny.](../media/sharepoint-organization-anyone-link-expiration-site.png)
+1. Zaznacz opcję **Te linki muszą wygasać w ciągu tej** liczby dni, a następnie wpisz liczbę dni w polu.
+1. Wybierz **Zapisz**.
 
 Pamiętaj *, że po* wygaśnięciu linku Każda osoba plik lub folder można ponownie udostępnić noweowi *linkowi Każdy* .
 
-Możesz ustawić *wygasanie* linków Każda osoba dla określonego OneDrive przy użyciu [set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
+Możesz ustawić *wygasanie* linków Każda osoba dla określonego OneDrive za pomocą [set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
 
 ## <a name="set-link-permissions"></a>Ustawianie uprawnień linku
 
@@ -70,9 +69,8 @@ Jeśli chcesz zezwolić na udostępnianie bez uwierzytelniania, ale martwiSz si�
 
 Aby ustawić uprawnienia dla linków Każdy w organizacji
 
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W lewym okienku nawigacji kliknij pozycję **Udostępnianie**.
-3. W **obszarze Ustawienia zaawansowane linków "Każdy"** wybierz uprawnienia do plików i folderów, których chcesz użyć.</br>
+1. Otwórz centrum SharePoint administracyjnego i wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
+1. W **obszarze Ustawienia zaawansowane linków "Każdy"** wybierz uprawnienia do plików i folderów, których chcesz użyć.</br>
    ![Zrzut ekranu przedstawiający SharePoint uprawnień na poziomie organizacji Każdy link.](../media/sharepoint-organization-anyone-link-permissions.png)
 
 Jeśli *dla linków* Każdy jest **ustawiona wartość Widok**, użytkownicy mogą nadal udostępniać pliki i foldery gościom oraz nadawać im uprawnienia do edytowania za pomocą *linków Określone* osoby. Te linki wymagają, aby osoby spoza organizacji uwierzytelniły się jako goście, a Ty możesz śledzić i monitorować aktywność gościa w plikach i folderach udostępnionych za pomocą tych linków.
@@ -84,23 +82,22 @@ Gdy *w organizacji* jest włączona funkcja udostępniania Każda osoba, domyśl
 To ryzyko można zminimalizować, zmieniając domyślne ustawienie linku na link, który działa tylko dla osób w organizacji. Użytkownicy, którzy chcą udostępniać nieuwierzyte osoby, będą wówczas muszą wybrać tę opcję.
 
 Aby ustawić domyślny link do udostępniania plików i folderów dla organizacji
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W lewym okienku nawigacji kliknij pozycję **Udostępnianie**.
-3. W **obszarze Linki do plików i folderów** wybierz pozycję **Tylko osoby w Twojej organizacji**.
+1. Otwórz centrum SharePoint administracyjnego i wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Udostępnianie**</a>.
+1. W **obszarze Linki do plików i folderów** wybierz pozycję **Tylko osoby w Twojej organizacji**.
 
    ![Zrzut ekranu przedstawiający SharePoint domyślnego typu linku.](../media/sharepoint-default-sharing-link-company-link.png)
 
-4. Kliknij **przycisk Zapisz.**
+1. Wybierz **pozycję Zapisz.**
 
 Aby ustawić domyślny link do udostępniania plików i folderów dla konkretnej witryny
-1. Otwórz SharePoint [administracyjnego](https://admin.microsoft.com/sharepoint).
-2. W lewym okienku nawigacji rozwiń **pozycję Witryny**, a następnie kliknij pozycję **Aktywne witryny**.
-3. Wybierz witrynę, którą chcesz zmienić, a następnie kliknij pozycję **Udostępnianie**.
-4. W **obszarze Domyślny typ linku** udostępniania wyczyść pole wyboru Takie samo jak ustawienie **na** poziomie organizacji.
+
+1. Otwórz centrum SharePoint administracyjnego, rozwiń **pozycję Witryny**, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Aktywne witryny**</a>.
+1. Wybierz witrynę, którą chcesz zmienić, a następnie wybierz pozycję **Udostępnianie**.
+1. W **obszarze Domyślny typ linku** udostępniania wyczyść pole wyboru Takie samo jak ustawienie **na** poziomie organizacji.
 
    ![Zrzut ekranu SharePoint domyślnych ustawień typu linku na poziomie witryny.](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
-5. Wybierz opcję **Tylko osoby w twojej organizacji i** kliknij przycisk **Zapisz**.
+1. Wybierz opcję **Tylko osoby w twojej organizacji** , a następnie wybierz pozycję **Zapisz**.
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Zapobieganie nieuwierzytaniu zawartości poufnej
 
@@ -111,7 +108,7 @@ Aby utworzyć regułę DLP
 2. Kliknij **pozycję Utwórz zasady**.
 3. Wybierz **pozycję Niestandardowe** i kliknij przycisk **Dalej**.
 4. Wpisz nazwę zasad i kliknij przycisk **Dalej**.
-5. Na stronie **Lokalizacje do zastosowania zasad** wyłącz wszystkie ustawienia z wyjątkiem witryn **SharePoint** i kont **OneDrive, a** następnie kliknij przycisk **Dalej**.
+5. Na **stronie Lokalizacje do zastosowania zasad** wyłącz wszystkie ustawienia z wyjątkiem witryn **SharePoint** i kont **OneDrive, a** następnie kliknij przycisk **Dalej**.
 6. Na stronie **Definiowanie ustawień zasad** kliknij przycisk **Dalej**.
 7. Na stronie **Dostosowywanie zaawansowanych reguł DLP** kliknij pozycję **Utwórz regułę** i wpisz nazwę reguły.
 8. W **obszarze Warunki** kliknij **pozycję Dodaj warunek** i wybierz **pozycję Zawartość zawiera**.
@@ -119,7 +116,7 @@ Aby utworzyć regułę DLP
 
    ![Zrzut ekranu przedstawiający opcje warunków, typy informacji poufnych, etykiety wrażliwości i etykiety przechowywania.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. W **obszarze** Akcje **kliknij pozycję Dodaj akcję** i wybierz **pozycję Ogranicz dostęp lub szyfruj zawartość w Microsoft 365 lokalizacjach**.
+10. W **obszarze** Akcje **kliknij pozycję Dodaj akcję** i wybierz **pozycję Ogranicz dostęp lub zaszyfruj zawartość Microsoft 365 lokalizacjach**.
 11. Zaznacz pole wyboru Ogranicz dostęp lub zaszyfruj zawartość Microsoft 365 lokalizacji, **a** następnie wybierz opcję Tylko osoby, którym udzielono dostępu do zawartości, za pomocą opcji "Każda osoba z **linkiem**".
 
       ![Zrzut ekranu przedstawiający opcje akcji reguły DLP.](../media/limit-accidental-exposure-dlp-anyone-links.png)
@@ -130,10 +127,10 @@ Aby utworzyć regułę DLP
 
 ## <a name="protect-against-malicious-files"></a>Ochrona przed złośliwymi plikami
 
-Gdy zezwalasz użytkownikom anonimowym na przekazywanie plików, istnieje większe ryzyko, że ktoś przekaże złośliwy plik. W Microsoft 365 można użyć funkcji załączników wiadomości Sejf  programu Defender dla systemu Office 365 w celu automatycznego skanowania przekazanych plików i kwarantanny plików, które zostały uznanych za niebezpieczne.
+Gdy zezwalasz użytkownikom anonimowym na przekazywanie plików, istnieje większe ryzyko, że ktoś przekaże złośliwy plik. W Microsoft 365 można użyć funkcji załączników wiadomości Sejf  programu Defender dla systemu Office 365, aby automatycznie przeskanować przekazane pliki i poddać je kwarantannie, które zostaną uznanych za niebezpieczne.
 
 Aby włączyć bezpieczne załączniki
-1. Otwórz stronę [załączników załączników atP Sejf](https://protection.office.com/safeattachmentv2) w centrum administracyjnym Zabezpieczenia i zgodność.
+1. Otwórz stronę [Załączniki wiadomości Sejf ATP](https://protection.office.com/safeattachmentv2) w centrum administracyjnym Zabezpieczenia i zgodność.
 2. Kliknij **pozycję Ustawienia globalne**.
 3. Włącz atP dla SharePoint, OneDrive i Microsoft Teams.
 
@@ -141,11 +138,11 @@ Aby włączyć bezpieczne załączniki
 
 4. Opcjonalnie możesz również włączyć Sejf Dokumenty, a następnie kliknąć przycisk **Zapisz.**
 
-Aby [uzyskać dodatkowe wskazówki, zobacz atP SharePoint, OneDrive i Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) oraz [Włączanie atP dla SharePoint, OneDrive i Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md).
+Zobacz [atP for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) and [Turn on ATP for SharePoint, OneDrive and Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) for additional guidance.
 
 ## <a name="add-copyright-information-to-your-files"></a>Dodawanie informacji o prawach autorskich do plików
 
-Jeśli korzystasz z etykiet wrażliwości w centrum administracyjnym zgodności usługi Microsoft 365, możesz skonfigurować etykiety w celu automatycznego dodawania znaku wodnego albo nagłówka lub stopki do dokumentów Office organizacji. W ten sposób możesz się upewnić, że pliki udostępnione zawierają informacje o prawach autorskich lub innych prawach własności.
+Jeśli używasz etykiet wrażliwości w centrum administracyjnym zgodności usługi Microsoft 365, możesz skonfigurować etykiety w celu automatycznego dodawania znaku wodnego, nagłówka lub stopki do dokumentów Office organizacji. W ten sposób możesz się upewnić, że pliki udostępnione zawierają informacje o prawach autorskich lub innych prawach własności.
 
 Aby dodać stopkę do pliku z etykietą
 

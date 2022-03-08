@@ -1,5 +1,5 @@
 ---
-title: Szacowanie Microsoft 365 Defender przegląd tożsamości, konfigurowanie oceny
+title: Krok nr 2. Szacowanie Microsoft 365 Defender przegląd tożsamości, konfigurowanie oceny
 description: Kroki oceny tożsamości dla Microsoft 365 Defender w tym wymagań, włączania lub aktywowania evalu oraz skonfigurowania pilotażu lub testu.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,14 +22,14 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 77ccebb394230c38140bc8cd62c97262ff1ddf7a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 37b387d1e38ca3e49406773820a63a6e0d239356
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013386"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311581"
 ---
-# <a name="evaluate-microsoft-defender-for-identity-overview"></a>Omówienie oceniania usługi Microsoft Defender pod celu tożsamości
+# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Krok nr 2. Omówienie oceniania usługi Microsoft Defender pod celu tożsamości
 
 
 **Dotyczy:**

@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse się, jak wyświetlić kondycję usług dzierżawy.
-ms.openlocfilehash: b7361865e0ad3f070e128207a92669f3515e9969
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 21315d0ea616fcd2865879d9d8aec66b17830208
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027078"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324609"
 ---
 # <a name="view-tenant-service-health"></a>Wyświetlanie kondycji usług dzierżawy
-
-> [!NOTE]
-> Funkcje opisane w tym artykule są w wersji Preview, mogą ulec zmianie i są dostępne tylko dla partnerów spełniających [te wymagania](m365-lighthouse-requirements.md). Jeśli Twoja organizacja nie ma konta Microsoft 365 Lighthouse, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Możesz wyświetlić kondycję usług dla dzierżaw, które zarządzasz w Microsoft 365 Lighthouse. Kondycja usługi obejmuje zdarzenia i doradcy dotyczące kilku usług, w tym usług Microsoft Intune, usług tożsamości usługi Azure Active Directory (Azure AD) i usług zarządzania urządzeniami przenośnymi w chmurze. Możesz również zobaczyć, na ilu dzierżawach zarządzanych mają wpływ zdarzenia. Jeśli na przykład u jednej z dzierżaw występują problemy, możesz sprawdzić na stronie Kondycja usługi, czy jest to znany problem w trakcie rozwiązywania lub czy ostatnia zmiana może mieć na nie wpływ. Może to zaoszczędzić czas podczas rozwiązywania problemów i ograniczyć liczbę rozmów z wołami o pomoc techniczną.
 
@@ -60,7 +57,8 @@ Aby wyświetlić kondycję usługi, potrzebujesz roli usługi Azure AD w dzierż
 
 4. W okienku szczegółów problemu przejrzyj szczegółowe informacje, takie jak typ problemu, dzierżawy, wpływ na użytkownika i historia problemów.
 
-Na karcie **Dzierżawy** , których dotyczy problem, możesz wyeksportować listę dzierżaw, których dotyczy problem, do pliku wartości wspólnych (cvs), aby udostępnić go zespołom pomocy technicznej.
+Na karcie **Dzierżawy** , których dotyczy problem, możesz wyeksportować listę dzierżaw, których dotyczy problem, do pliku wartości rozdzielanych przecinkami (.csv), aby udostępnić go zespołom pomocy technicznej.
 
 ## <a name="related-content"></a>Zawartość pokrewna
-[Jak sprawdzić Microsoft 365 kondycji usługi](/microsoft-365/enterprise/view-service-health) (artykuł)
+[Jak sprawdzić Microsoft 365 kondycji](/microsoft-365/enterprise/view-service-health) usługi (artykuł)\
+[Znane problemy dotyczące Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (artykuł)

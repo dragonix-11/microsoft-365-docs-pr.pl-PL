@@ -2,8 +2,8 @@
 title: Wynik produktywności firmy Microsoft — spotkania
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Szczegóły spotkań — ludzie mają oceny produktywności.
-ms.openlocfilehash: 8de609ee167ed48b7c724ee261832d73ef844f8d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 88aae1ac85e9e8f91592bdd17b6a14bb897d9051
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983243"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328571"
 ---
 # <a name="meetings--people-experiences"></a>Spotkania — środowisko osób
 
