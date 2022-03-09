@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 raporty w centrum administracyjnym — raport Yammer aktywności grup
+title: centrum administracyjne platformy Microsoft 365 Yammer aktywności grup
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Uzyskaj raport Yammer aktywności grup, aby dowiedzieć się, ile Yammer jest tworzona i używana w organizacji, oraz o ich aktywności.
-ms.openlocfilehash: 704cc75c9d06c30f5562a824dd93eef470888297
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: bfc6756b6db65a846a767f50f20f9011abf01ef8
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989499"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400414"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 raporty w centrum administracyjnym — raport Yammer aktywności grup
 

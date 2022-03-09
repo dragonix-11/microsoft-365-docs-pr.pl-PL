@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Aby usunąć informacje z zarejestrowanych urządzeń, skorzystaj z wbudowanych funkcji basic mobility i zabezpieczeń.
-ms.openlocfilehash: ed658abc55d065e6d271893dc80a293e19373a34
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d5f610e2a9180f1d147f68e6aabf4a7291787033
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983926"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400172"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Czyszczenie urządzenia przenośnego w pakietach Basic Mobility and Security
 
@@ -82,7 +82,7 @@ Wyczyść urządzenie z tych powodów:
 
 Czyszczenie jest natychmiast wysyłane do urządzenia przenośnego, a urządzenie jest oznaczone jako niezgodne w usłudze Azure Active Directory. Mimo że wszystkie dane są usuwane po przywróceniu urządzenia do ustawień domyślnych fabrycznych, w poniższej tabeli opisano, jaka zawartość jest usuwana dla każdego typu urządzenia w przypadku usunięcia danych firmowych.
 
-|**Wpływ na zawartość**|**iOS 10 lub nowszy**|**Android 5 lub nowszy**|
+|**Wpływ na zawartość**|**iOS**|**Android**|
 |:-----|:-----|:-----|
 |Microsoft 365 dane aplikacji są czyszowane, jeśli urządzenie jest chronione przez zasady usługi Intune App Protection. Aplikacje nie zostaną usunięte. W przypadku urządzeń, które nie są chronione przez zasady zarządzania aplikacjami mobilnymi (MAM), Outlook i OneDrive nie usuwają danych buforowanych.<br/>**Uwaga** Aby zastosować zasady ochrony aplikacji Intune, musisz mieć licencję usługi Intune.|Tak|Tak|
 |Ustawienia zasad stosowane w pakietach Basic Mobility i Security do urządzeń nie są już wymuszane. użytkownicy mogą zmienić te ustawienia.|Tak|Tak|

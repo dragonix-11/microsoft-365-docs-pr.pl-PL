@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 w centrum administracyjnym — aktywność OneDrive dla Firm użytkowników
+title: Microsoft 365 OneDrive dla Firm aktywności
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Uzyskaj OneDrive użycia dla organizacji i poznaj aktywność każdego użytkownika OneDrive, liczbę udostępnionych plików i użycie magazynu.
-ms.openlocfilehash: 8cfd6dfbcff15c118f9ad54ef29e5cec6cf4d6bf
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 52e925774ba2315f582f1b5ba50a4a75fe221c10
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989638"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400799"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365 w centrum administracyjnym — aktywność OneDrive dla Firm użytkowników
 

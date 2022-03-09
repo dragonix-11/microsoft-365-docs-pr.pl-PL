@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 w centrum administracyjnym — Użycie aplikacji poczty e-mail
+title: centrum administracyjne platformy Microsoft 365 raportów użycia aplikacji poczty e-mail
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Dowiedz się, jak uzyskać raport użycia aplikacji poczty e-mail, aby dowiedzieć się więcej o aplikacjach poczty e-mail łączących się Exchange Online siecią Outlook wersji poczty e-mail, z których korzystali użytkownicy.
-ms.openlocfilehash: 601258d721f817438f0bd6a08d98d73aa22b7afb
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: c2d68c5b151b236ee51d0a06b4e51f6e6b16ede5
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989653"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400925"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Microsoft 365 w centrum administracyjnym — Użycie aplikacji poczty e-mail
 

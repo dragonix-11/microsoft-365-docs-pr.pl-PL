@@ -15,12 +15,12 @@ ms.custom:
 description: W tym artykule omówiono tematy, takie jak zewnętrzne przesyłanie dalej poczty e-mail, Automatyczne przesyłanie dalej, wiadomości odmówiono dostępu 5.7.520, wyłączanie zewnętrznego przesyłania dalej, "Administrator wyłączył przesyłanie dalej zewnętrzne" oraz wychodzące zasady ochrony przed spamem.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db9c790c91e1335853b6647de63edb7ca6ee9a25
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 228bb4402fd67ba8e56dd84b270c64977667ff2d
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997418"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401024"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Sterowanie automatycznym zewnętrznym przesyłaniem dalej wiadomości e-mail w Microsoft 365
 
@@ -43,7 +43,7 @@ W programie Microsoft 365 są dostępne następujące typy automatycznego Micros
 
 Za pomocą zasad filtrowania spamu ruchu wychodzącego można sterować automatycznym przesyłaniem dalej do adresatów zewnętrznych. Dostępne są trzy ustawienia:
 
-- **Automatyczne — sterowane przez system**: Automatyczne przekazywanie zewnętrzne jest zablokowane. Wewnętrzne automatyczne przesyłanie dalej wiadomości będzie nadal działać. Jest to ustawienie domyślne.
+- **Automatyczne — sterowane przez system**: jest to ustawienie domyślne. To ustawienie jest teraz takie samo, jak **ustawienie Wyłączone**. Gdy to ustawienie zostało pierwotnie wprowadzone, było równoważne z ustawieniem **Wł**. Z czasem, dzięki zasadom ochrony [domyślnie, to](secure-by-default.md) ustawienie było stopniowo zmieniane **na Wyłączone dla** wszystkich klientów. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888). 
 - **Wł**.: Automatyczne przekazywanie zewnętrzne jest dozwolone i nie jest ograniczone.
 - **Wyłączone**: Automatyczne przekazywanie zewnętrzne jest wyłączone i spowoduje, że do nadawcy zostanie wyświetlony raport o niedostarczeniu (nazywany też raportem o niedostarczeniu lub wiadomością przesyłaną).
 
@@ -63,12 +63,20 @@ Jako administrator możesz już skonfigurować inne kontrolki w celu zezwalania 
 - [Domeny zdalne,](/exchange/mail-flow-best-practices/remote-domains/remote-domains) aby zezwolić na automatyczne przesyłanie dalej poczty e-mail do niektórych lub wszystkich domen zewnętrznych lub zablokować je.
 - Warunki i akcje w Exchange [przepływu poczty e-mail](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (nazywane także regułami transportu) wykrywania i blokowania automatycznie przesyłanych wiadomości do adresatów zewnętrznych.
 
-Ustawienia domeny zdalnej i reguły przepływu poczty e-mail są niezależne od ustawień w zasadach filtru spamu ruchu wychodzącego. Przykład:
+Gdy jedno ustawienie zezwala na przesyłanie dalej na zewnątrz, a inne blokuje przekazywanie zewnętrzne, blok ten zazwyczaj jest wygrany. Przykłady opisano w poniższej tabeli:
 
-- Zezwalasz na automatyczne przesyłanie dalej dla domeny zdalnej, ale blokujesz automatyczne przesyłanie dalej w zasadach filtru spamu ruchu wychodzącego. W tym przykładzie wiadomości automatycznie przekazywane dalej są blokowane.
-- Możesz zezwolić na automatyczne przesyłanie dalej w zasadach filtru spamu ruchu wychodzącego, ale możesz używać reguł przepływu poczty e-mail lub ustawień domeny zdalnej do blokowania automatycznie przesyłanych dalej wiadomości e-mail. W tym przykładzie reguły przepływu poczty e-mail lub ustawienia domeny zdalnej będą blokować wiadomości automatycznie przekazywane dalej.
+<br>
 
-Ta niezależność funkcji umożliwia na przykład automatyczne przesyłanie dalej przychodzących zasad filtrowania spamu, ale za pomocą domen zdalnych steruje domenami zewnętrznymi, do których użytkownicy mogą przesyłać wiadomości dalej.
+****
+
+|Scenariusz|Result (Wynik)|
+|---|---|
+|<ul><li>Konfigurowanie ustawień domeny zdalnej w celu umożliwienia automatycznego przesyłania dalej.</li><li>Automatyczne przesyłanie dalej w zasadach filtru spamu ruchu wychodzącego jest ustawione na **wyłączone**.</li></ul>|Automatyczne przesyłanie dalej wiadomości do adresatów w domenie, których dotyczy problem, są blokowane.|
+|<ul><li>Konfigurowanie ustawień domeny zdalnej w celu umożliwienia automatycznego przesyłania dalej.</li><li>Automatyczne przesyłanie dalej w zasadach filtru spamu ruchu wychodzącego jest ustawione na wartość **Automatyczne — sterowane przez system**.</li></ul>|Automatyczne przesyłanie dalej wiadomości do adresatów w domenie, których dotyczy problem, są blokowane. <p> Jak opisano wcześniej, **funkcja Automatyczne** — sterowane przez system jest używana do oznaczania "Wł **", ale** z czasem to ustawienie zmienia się, aby oznaczało **Wyłączone** we wszystkich organizacjach. <p> Aby uzyskać pełną przejrzystość, należy skonfigurować zasady filtru spamu ruchu wychodzącego **na wartość Wł** lub **Wył**.|
+|<ul><li>Automatyczne przesyłanie dalej w zasadach filtru spamu ruchu wychodzącego jest ustawione na **wartość Wł.**</li><li>Za pomocą reguł przepływu poczty e-mail lub domen zdalnych możesz blokować automatycznie przesyłaną dalej pocztę e-mail.</li></ul>|Automatycznie przesyłane dalej wiadomości do adresatów, których dotyczy problem, są blokowane przez reguły przepływu poczty e-mail lub domeny zdalne.|
+|
+
+Za pomocą tego zachowania (na przykład) można zezwolić na automatyczne przesyłanie dalej w wychodzących zasadach filtrowania spamu, ale za pomocą domen zdalnych kontrolować domeny zewnętrzne, do których użytkownicy mogą przesyłać dalej wiadomości.
 
 ## <a name="how-to-find-users-that-are-automatically-forwarding"></a>Jak znaleźć użytkowników, którzy są automatycznie przesyłani dalej
 

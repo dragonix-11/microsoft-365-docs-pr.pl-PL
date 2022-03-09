@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 raporty w centrum administracyjnym — aktywność SharePoint administracyjnej
+title: centrum administracyjne platformy Microsoft 365 SharePoint aktywności
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Uzyskaj raport SharePoint aktywności, aby dowiedzieć się więcej o aktywności każdego SharePoint użytkownika, liczbie udostępnionych plików i użyciu magazynu.
-ms.openlocfilehash: b130ad1cca6e25a939b942ed98910ba10150ab40
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 83d093d96f606503509a3345f12b28291977bf86
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989513"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400771"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365 raporty w centrum administracyjnym — aktywność SharePoint administracyjnej
 

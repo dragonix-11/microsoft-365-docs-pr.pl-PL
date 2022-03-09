@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak tworzyć i konfigurować wstępnie utworzony model w SharePoint Syntex.
-ms.openlocfilehash: cf87eab6158ae6dff3053dbddaee7f2fedcd87a5
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 7867fe197fd53e6095f51869fc5aaad18af9157b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63013893"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401052"
 ---
 # <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>Wyodrębnij informacje z faktur lub pokwitowania za pomocą modelu wbudowanego w aplikacji Microsoft SharePoint Syntex
 
@@ -129,6 +129,9 @@ Aby zmienić nazwę wyodrębniaczy z **panelu Extractors** :
 - Aby zapisać zmiany i powrócić do strony głównej modelu, na panelu **Extractors** wybierz pozycję **Zapisz i zamknij**.
 
 - Jeśli chcesz zastosować model do biblioteki, w obszarze dokumentu wybierz pozycję **Dalej**. W **panelu Dodaj** do biblioteki wybierz bibliotekę, do której chcesz dodać model, a następnie wybierz pozycję **Dodaj**.
+
+> [!TIP]
+> Możesz zmienić widok w bibliotece dokumentów, aby dopasować go do swoich potrzeb lub preferencji. Aby uzyskać więcej informacji, [zobacz Zmienianie widoku w bibliotece dokumentów](apply-a-model.md#change-the-view-in-a-document-library).
 
 ## <a name="see-also"></a>Zobacz też
 

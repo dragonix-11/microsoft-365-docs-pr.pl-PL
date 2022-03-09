@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebc5c0bfad32da316368c5c440fed23df28e9e17
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b125689f6eaf2bad5ebfef9977417abdea051f3b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011340"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401136"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie
 
@@ -121,6 +121,7 @@ Jeśli wystąpią jakiekolwiek błędy instalacji, zobacz Rozwiązywanie problem
        - 2.6.32-754.35.1.el6.x86_64
        - 2.6.32-754.39.1.el6.x86_64
        - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.43.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 

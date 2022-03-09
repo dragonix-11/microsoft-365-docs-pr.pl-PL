@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 raporty w centrum administracyjnym — Microsoft 365 grupy
+title: centrum administracyjne platformy Microsoft 365 grup
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Uzyskaj raport Microsoft 365 grup, aby dowiedzieć się więcej o grupach i ich działaniach.
-ms.openlocfilehash: 4e6963f5026e62b03d95a4f499277259a6773cdb
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: ff3a5fa428bb993dac9a518229744754d106e589
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017827"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400813"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 raporty w centrum administracyjnym — Microsoft 365 grupy
 

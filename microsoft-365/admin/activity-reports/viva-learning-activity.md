@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 raporty w centrum administracyjnym — aktywność Edukacja Viva
+title: centrum administracyjne platformy Microsoft 365 viva Edukacja aktywności
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Dowiedz się, jak uzyskać raport Microsoft 365 Viva Edukacja przy użyciu pulpitu nawigacyjnego Microsoft 365 Raporty w centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 64ea4da8e87d1ba1b09a7f85617c6972ce26308e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 382513700f6008aa2b89f32f23f31b19cce63cab
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989501"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400395"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Microsoft 365 raporty w centrum administracyjnym — aktywność Edukacja Viva
 

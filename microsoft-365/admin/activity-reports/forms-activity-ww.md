@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 w centrum administracyjnym — Aktywność formularzy
+title: centrum administracyjne platformy Microsoft 365 aktywności formularzy
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak uzyskać raport aktywności programu Microsoft Forms za pomocą pulpitu nawigacyjnego Raporty Microsoft 365 w aplikacji centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 900ae6c273d47785296b94622060f2fe3b6dc0ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 7b44dfe9fe8582a9efa7d768e9136b77f5d4219b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989652"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400918"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 w centrum administracyjnym — Aktywność formularzy
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 w centrum administracyjnym — informacje o Microsoft Teams urządzeniach
+title: centrum administracyjne platformy Microsoft 365 Teams raportów użycia aplikacji
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Uzyskaj szczegółowe informacje na temat Microsoft Teams używanych w organizacji, korzystając z raportu Microsoft Teams użycia aplikacji z raportów Microsoft 365.
-ms.openlocfilehash: cb93481d2b702fd18bd28b5504865316119335a4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 85f7c824a92840d132cbc97dc37e5fa3fe85ecf1
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989643"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400856"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365 w centrum administracyjnym — informacje o Microsoft Teams urządzeniach
 

@@ -1,5 +1,5 @@
 ---
-title: Raporty aktywności w centrum administracyjnym platformy Microsoft 365
+title: centrum administracyjne platformy Microsoft 365 aktywności
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Uzyskaj okresowy raport o tym, jak osoby w Twojej organizacji Microsoft 365 usług, i przejdź do szczegółów poszczególnych wykresów, aby uzyskać więcej informacji.
-ms.openlocfilehash: 9f54d3b582b08ba38cc6f9f815224f01fcad3dcb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8dd72f1f153bb9052317afca1d0370645d8ad85b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315347"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400982"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365 raporty w centrum administracyjnym
 

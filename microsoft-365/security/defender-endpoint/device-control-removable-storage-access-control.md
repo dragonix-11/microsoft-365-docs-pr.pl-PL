@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 02/07/2022
-ms.openlocfilehash: 86ae312247d0e796364da61201f7b01d4fec816f
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: a0bca99258bd256797437cdc4756910fc713cf26
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016579"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401190"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Program Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
@@ -54,6 +54,7 @@ Program Microsoft Defender for Endpoint Device Control Wymienny Storage kontroli
 |Tworzenie zasad|Umożliwia tworzenie zasad wymuszania poszczególnych grup nośników wymiennych|Kroki 2 i 3 w sekcji [Wdrażanie zasad za pośrednictwem usługi OMA-URI](#deploying-policy-via-oma-uri) | Krok 2 w sekcji [Wdrażanie zasad za pośrednictwem usługi zasady grupy](#deploying-policy-via-group-policy) |
 |Domyślne wymusze|Umożliwia ustawienie dostępu domyślnego (odmów lub zezwalania) na nośnik wymienny, jeśli nie ma żadnych zasad|Krok 4 w sekcji [Wdrażanie zasad za pośrednictwem usługi OMA-URI](#deploying-policy-via-oma-uri) | Krok 3 w sekcji [Wdrażanie zasad za pośrednictwem zasady grupy](#deploying-policy-via-group-policy) |
 |Włączanie lub wyłączanie wymiennych Storage Access Control|Jeśli ustawisz opcję Wyłącz, zasady Kontrola dostępu wymiennych Storage wymiennych na tym komputerze| Krok 5 w sekcji [Wdrażanie zasad za pośrednictwem usługi OMA-URI](#deploying-policy-via-oma-uri) | Krok 4 w sekcji [Wdrażanie zasad za pośrednictwem zasady grupy](#deploying-policy-via-group-policy) |
+|Przechwytywanie informacji o pliku|Umożliwia tworzenie zasad umożliwiających przechwytywanie informacji z pliku w przypadku uzyskiwania dostępu do zapisu| Krok 2 i 6 w sekcji [Wdrażanie zasad za pośrednictwem usługi OMA-URI](#deploying-policy-via-oma-uri) | Krok 2 i 5 w sekcji [Wdrażanie zasad za pośrednictwem zasady grupy](#deploying-policy-via-group-policy) |
 
 ## <a name="prepare-your-endpoints"></a>Przygotowywanie punktów końcowych
 
@@ -65,7 +66,7 @@ Wdrażanie kontrolki programu Access Storage wymiennych na Windows 10 i urządze
 
 - **4.18.2107** lub nowsza: Dodaj obsługę usługi Windows Portable Device (WPD) (dla urządzeń przenośnych, takich jak tablety), dodaj AccountName do wyszukiwania [zaawansowanego](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2111** lub nowsza: Dodaj "Włącz lub wyłącz wymienną kontrolkę programu Access Storage", "Domyślne wymuszanie", czas aktualizacji zasad komputera klienckiego za pomocą programu PowerShell.
+- **4.18.2111** lub nowsza: Dodawanie "Włącz lub wyłącz kontrolkę dostępu wymiennych Storage Access", "Domyślne wymuszanie", czas aktualizacji zasad komputera klienckiego za pomocą programu PowerShell, informacje o pliku
 
 :::image type="content" source="images/powershell.png" alt-text="Interfejs programu PowerShell.":::
 
@@ -102,8 +103,8 @@ Aby utworzyć grupę magazynów wymiennych, możesz użyć następujących wła�
 | **Type** | Definiuje akcję dla grup magazynu wymiennych na liście IncludedIDList. <p>Wymuszanie: Zezwalaj lub Odmów <p>Inspekcja: InspekcjaWszystkie lub Odrzucone inspekcja<p> | Zezwalaj<p>Odmów <p>AuditAllowed: Definiuje powiadomienie i zdarzenie, gdy dostęp jest dozwolony <p>Odmowa inspekcji: definiuje powiadomienie i zdarzenie, gdy dostęp zostanie odrzucony. musi współpracować z **wpisem Deny (** Odmów).<p> Jeśli istnieją typy konfliktów dla tego samego nośnika, system zastosuje pierwszy z nich w zasadach. Przykładem typu konfliktu jest Allow ( **Zezwalaj) i** **Deny (Odmów**). |
 | **Sid** | Lokalny użytkownik Sid lub grupa sid użytkownika lub sid obiektu AD definiuje, czy te zasady mają być stosowane do określonego użytkownika lub grupy użytkowników. jedna pozycja może mieć maksymalnie jeden identyfikator Sid i wpis bez żadnego identyfikatora Sid oznacza zastosowanie zasad za pośrednictwem komputera. |  |
 | **ComputerSid** | Na komputerze lokalnym Sid lub computer Sid grupa lub Sid obiektu AD, definiuje, czy te zasady mają być stosowane do określonego komputera lub grupy komputerów. jedna pozycja może mieć maksymalnie jeden wartość ComputerSid, a wpis bez użycia dowolnego computerSid oznacza zastosowanie zasad na komputerze. Jeśli chcesz zastosować wpis do określonego użytkownika i konkretnego komputera, dodaj do tego samego wpisu zarówno identyfikator Sid, jak i ComputerSid. |  |
-| **Opcje** | Określa, czy powiadomienia mają być wyświetlane |**0 lub 4**: Gdy jest wybrana opcja Wpisz zezwalaj lub Odmów. <p>0: nic<p>4. Wyłącz **ustawienie AuditAllowed i** **AuditDenied** dla tego wpisu. Nawet jeśli **dzieje się** blokowanie i jest skonfigurowane ustawienie Odrzucona inspekcja, system nie wyświetla powiadomień. <p> Gdy jest **zaznaczona opcja Wpisz inspekcjęWszystkie** : <p>0: nic <p>1: nic <p>2: wysyłanie zdarzenia<p>3: wysyłanie zdarzenia <p> Gdy jest **zaznaczona opcja Typ odrzuconej** inspekcji: <p>0: nic <p>1: pokaż powiadomienie <p>2: wysyłanie zdarzenia<p>3. Wyświetlanie powiadomienia i wysyłanie zdarzenia |
-|AccessMask|Definiuje dostęp. | **1–7**: <p>1: Odczyt <p>2. Pisanie <p>3. Czytanie i pisanie <p>4. Wykonywanie <p>5. Odczytywanie i wykonywanie<p>6. Pisanie i wykonywanie <p>7: Odczytywanie oraz pisanie i wykonywanie |
+| **Opcje** | Określa, czy powiadomienia mają być wyświetlane |**Gdy jest zaznaczona opcja Wpisz zezwalaj**: <p>0: nic<p>4. Wyłącz **ustawienie AuditAllowed i** **AuditDenied** dla tego wpisu. Nawet jeśli **dzieje** się zezwalanie i skonfigurowano ustawienie AuditAllowed, system nie wysyła zdarzeń. <p>8. Przechwyć informacje o pliku i mieć kopię pliku jako dowód na dostęp do zapisu. <p>16: przechwytywanie informacji o pliku na temat dostępu do zapisu. <p>**Gdy wybrano opcję Wpisz odmów**: <p>0: nic<p>4. Wyłącz **odmowę inspekcji** dla tego wpisu. Nawet jeśli **dzieje się** blokowanie i jest skonfigurowane ustawienie Odrzucona inspekcja, system nie wyświetla powiadomień. <p>**Gdy jest **zaznaczona opcja Wpisz inspekcjęWszystkie****: <p>0: nic <p>1: nic <p>2: wysyłanie zdarzenia<p>3: wysyłanie zdarzenia <p> **Gdy jest **zaznaczona opcja Typ odrzuconej** inspekcji**: <p>0: nic <p>1: pokaż powiadomienie <p>2: wysyłanie zdarzenia<p>3. Wyświetlanie powiadomienia i wysyłanie zdarzenia |
+|AccessMask|Definiuje dostęp. | **Dostęp na poziomie dysku**: <p>1: Odczyt <p>2. Pisanie <p>4. Wykonywanie <p>**Dostęp na poziomie systemu plików**: <p>8: Odczyt w systemie plików <p>16: Pisanie w systemie plików <p>32: File system Execute <p><p>Możesz mieć wiele dostępu, wykonując operację binarną LUB, na przykład AccessMask for Read and Write and Execute będzie mieć 7; AccessMask for Read and Write will be 3.|
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Typowe scenariusze sterowania kontrolkami Storage wymiennymi w programie Access
 
@@ -162,6 +163,8 @@ Przed rozpoczęciem pracy z wymiennymi Storage Access Control należy potwierdzi
 2. Wszystkie reguły w jednym pliku `<PolicyRules>` `</PolicyRules>` XML można połączyć.
 
     Jeśli chcesz ograniczyć określonego użytkownika, użyj właściwości SID we wpisie. Jeśli we wpisie zasad nie ma identyfikatora SID, wpis zostanie zastosowany do każdego wystąpienia logowania na komputerze.
+    
+    Jeśli chcesz monitorować informacje o pliku pod celu uzyskania dostępu do zapisu, użyj odpowiedniej maski programu Access z odpowiednią opcją (8 lub 16). oto przykład przechwytywania [informacji o pliku](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
 
     Na poniższej ilustracji przedstawiono użycie właściwości SID i przykład scenariusza 1: Zapobieganie zapisywaniu i uruchamianiu dostępu do wszystkich, ale ze względu na zezwalanie na określone [zatwierdzone usb](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
@@ -188,6 +191,12 @@ Przed rozpoczęciem pracy z wymiennymi Storage Access Control należy potwierdzi
    - Po wdrożeniu tego ustawienia zobaczysz "Włączone" lub "Wyłączone" — wyłączone oznacza, że ten komputer nie ma wymiennych Storage kontroli dostępu.
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Włączone lub wyłączone sterowanie urządzeniem w kodzie programu PowerShell":::
+
+6. Ustawianie lokalizacji kopii pliku: jeśli chcesz mieć kopię pliku podczas uzyskiwania dostępu do zapisu, musisz ustawić lokalizację, w której system może zapisać kopię.
+    
+    Należy wdrożyć go wraz z odpowiednią opcją i maski dostępu — zobacz krok 2 powyżej.
+
+    :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="zasady grupy — ustawianie informacji o plikach":::
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Wdrażanie zasad I zarządzanie nimi za pośrednictwem usługi Intune OMA-URI
 
@@ -236,6 +245,8 @@ Microsoft Endpoint Manager administracyjnego (<https://endpoint.microsoft.com/>)
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData`
 
     - Typ danych: Ciąg (plik XML)
+       
+    Jeśli chcesz monitorować informacje o pliku pod celu uzyskania dostępu do zapisu, użyj odpowiedniej maski programu Access z odpowiednią opcją (8 lub 16). oto przykład przechwytywania [informacji o pliku](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
 
 3. Domyślne wymusze: umożliwia ustawienie dostępu domyślnego (odmów lub zezwalania) na nośnik wymienny, jeśli nie ma żadnych zasad. Na przykład masz zasady (Odmów lub Zezwalaj) dla urządzeń wymiennychMediaDevices, ale nie masz żadnych zasad dla cdRomDevices lub WpdDevices i ustawisz domyślną opcję Odmów za pośrednictwem tych zasad, a dostęp do odczytu/zapisu/wykonywania do cdRomDevices lub WpdDevices zostanie zablokowany.
 
@@ -263,6 +274,16 @@ Microsoft Endpoint Manager administracyjnego (<https://endpoint.microsoft.com/>)
 
     :::image type="content" source="images/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png" alt-text="Usuwalny Storage dostępu w kodzie programu PowerShell":::
 
+5. Ustawianie lokalizacji kopii pliku: jeśli chcesz mieć kopię pliku podczas uzyskiwania dostępu do zapisu, musisz ustawić lokalizację, w której system może zapisać kopię.
+    
+    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+
+    - Typ danych: Ciąg
+    
+    Musisz wdrożyć to razem z odpowiedniąmask AccessMask i odpowiednią opcją — zobacz krok 2 powyżej.
+
+    :::image type="content" source="../../media/device-control-oma-uri-edit-row.png" alt-text="Ustawianie locaitonu jako dowodu pliku":::
+    
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Wdrażanie zasad i zarządzanie nimi przy użyciu interfejsu użytkownika usługi Intune
 
 Ta funkcja jest dostępna w centrum Microsoft Endpoint Manager administracyjnego (<https://endpoint.microsoft.com/>). Przejdź do **zabezpieczeń punktu końcowegoWłącz** >  **zmniejszanie** **powierzchniZatworzenie** >  zasad. Wybierz **platformę: Windows 10 i nowsze z** **profilem: Device Control**.
@@ -313,7 +334,6 @@ Jeśli wdrażasz zasady i zarządzasz nimi za pośrednictwem programu zasady gru
 ### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>Nie ma żadnego interfejsu użytkownika konfiguracji dla opcji "Definiowanie grup zasad sterowania urządzeniem" i "Definiuj reguły zasad sterowania urządzeniami" na moim zasady grupy
 
 Nie są nam rzutowane środowiska użytkownika konfiguracji programu zasady grupy, ale nadal można uzyskać powiązane pliki adml i admx, klikając pozycję "Nieprzetworzone" i "Zapisz jako" w plikach [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) i [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) .
-
 
 ### <a name="how-can-i-know-whether-the-latest-policy-has-been-deployed-to-the-target-machine"></a>Skąd wiadomo, czy najnowsze zasady zostały wdrożone na komputerze docelowym?
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 raporty w centrum administracyjnym — Aktywność komunikacji głosowej klienta usługi Dynamics 365
+title: Raporty aktywności głosowej klientów usługi Microsoft Dynamics 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak uzyskać raport aktywności klienta usługi Microsoft Dynamics 365 Customer Voice za Microsoft 365 pulpitu nawigacyjnego Raporty centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: d143728f8170ae9c12a6d007e9e256a23f7ff74d
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fb3f631db84dbd974123863956d5505f02c382d6
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989651"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400884"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 raporty w centrum administracyjnym — Aktywność komunikacji głosowej klienta usługi Dynamics 365
 

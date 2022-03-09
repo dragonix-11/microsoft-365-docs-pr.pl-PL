@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 raporty w centrum administracyjnym — raport Yammer użycia urządzeń
+title: centrum administracyjne platformy Microsoft 365 Yammer dotyczące użycia urządzeń
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Uzyskaj raport Yammer użycia urządzeń, aby dowiedzieć się, z jakich urządzeń korzysta Yammer urządzenia.
-ms.openlocfilehash: 25dbf966d0756cf90e39dcbe69d587434d3de3ae
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fc59060cc4ec0ad3d34aae2b165bcb36ee1aee89
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989498"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400423"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365 raporty w centrum administracyjnym — raport Yammer użycia urządzeń
 

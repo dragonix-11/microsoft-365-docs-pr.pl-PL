@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 raporty w centrum administracyjnym — informacje Aplikacje Microsoft 365 użycia
+title: centrum administracyjne platformy Microsoft 365 użycia aplikacji
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Dowiedz się, jak uzyskać raport Aplikacje Microsoft 365 użycia przy użyciu pulpitu nawigacyjnego Raporty Microsoft 365 w centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: 5418ea32129a667d198eee7a14e005450105a3ca
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: c7a8e5bbf2fec8450b52b3cbe52e110d97061ed3
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990491"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400827"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365 raporty w centrum administracyjnym — informacje Aplikacje Microsoft 365 użycia
 

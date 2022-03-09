@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak zaznaczać i eksportować zawartość z zestawu Advanced eDiscovery dla prezentacji lub recenzji zewnętrznych.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dba9708bfda6d1b98a2861615e56518067822100
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6384d45121fc39d120d6906e46594b8b04124471
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984609"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401066"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Eksportowanie dokumentów z zestawu recenzji w programie Advanced eDiscovery
 
@@ -87,13 +87,17 @@ Jeśli wybierzesz tę opcję eksportu, wyeksportowana zawartość będzie zorgan
 
 - Summary.csv: Zawiera podsumowanie zawartości wyeksportowanych z zestawu recenzji
 
-- Folder główny: ten folder o nazwie [Export Name] x z z.zip i będzie powtarzany dla każdej partycji pliku ZIP.
+- Folder główny: ten folder o nazwie [Export Name] x z z.zip i będzie powtarzany dla każdej partycji pliku ZIP. Folder główny zawiera następujące elementy:
   
   - Export_load_file_x pliku z.csv: plik metadanych.
   
   - Ostrzeżenia i błędy x z.csv: Ten plik zawiera informacje o błędach napotkanych podczas próby wyeksportowania z zestawu recenzji.
   
-  - Exchange: Ten folder zawiera całą zawartość z plików Exchange przechowywanych w plikach PST. Ta opcja nie umożliwia dołączona do redagowanych plików PDF. Jeśli w zestawie recenzji wybrano załącznik, nadrzędny adres e-mail zostanie wyeksportowany z dołączonym załącznikiem.
+  - Exchange: Ten folder zawiera całą zawartość z plików Exchange przechowywanych w plikach PST. Ta opcja nie umożliwia dołączona do redagowanych plików PDF. Jeśli w zestawie recenzji wybrano załącznik, nadrzędna wiadomość e-mail zostanie wyeksportowana z dołączonym załącznikiem. Ten folder może również zawierać następujące elementy: 
+
+    - Wiadomości chronione za pomocą usługi Zarządzanie prawami do informacji (IRM) w dekodowanych wiadomościach. 
+    - Komunikaty o błędach usunięte. 
+    - Nowoczesne załączniki lub linki, do których odwołują się wiadomości. 
   
   - SharePoint: Ten folder zawiera całą natywną zawartość z SharePoint w natywnym formacie pliku. Ta opcja nie umożliwia dołączona do redagowanych plików PDF.
 

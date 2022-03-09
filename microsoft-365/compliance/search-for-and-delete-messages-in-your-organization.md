@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Funkcja wyszukiwania i przeczyszczania w Centrum zgodności platformy Microsoft 365 umożliwia wyszukiwanie i usuwanie wiadomości e-mail ze wszystkich skrzynek pocztowych w organizacji.
-ms.openlocfilehash: 33c65cb61be14d72631fd3a272b68f2dad2ffea6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9361f7dea0e1b12d50733b9b1d1e91ac15577ab9
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988050"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400996"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Wyszukiwanie i usuwanie wiadomości e-mail
 
@@ -36,8 +36,8 @@ Za pomocą funkcji Wyszukiwanie zawartości można wyszukiwać i usuwać wiadomo
 
 - Wiadomości zawierające poufne dane
 
-> [!CAUTION]
-> Wyszukiwanie i przeczyszczanie to zaawansowana funkcja, która umożliwia wszystkim osobom z przypisanymi niezbędnymi uprawnieniami usuwanie wiadomości e-mail ze skrzynek pocztowych w organizacji.
+> [!TIP]
+> Jeśli Twoja organizacja korzysta z usługi Defender dla usługi Office 365 Plan 2, zalecamy skorzystanie z procedury opisanej w te sposób opisanej w tece Rozwiązywanie problemów ze złośliwymi wiadomościami e-mail dostarczonymi w programie [Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365), a nie zgodnie z procedurą opisaną w tym artykule.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 

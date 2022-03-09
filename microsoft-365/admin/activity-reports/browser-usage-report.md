@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 raporty w centrum administracyjnym — Użycie przeglądarki firmy Microsoft
+title: centrum administracyjne platformy Microsoft 365 raportów dotyczących użycia przeglądarki
 ms.author: waxiaoyu
 author: sarahwxy
 manager: scotv
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Dowiedz się, jak uzyskać raport użycia przeglądarki firmy Microsoft przy użyciu pulpitu nawigacyjnego Raporty Microsoft 365 na stronie centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: d653bf1132f461b14644b1ddc04bab2fdceee358
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: cfeed7f311816e72d06f63e36aabe9f6ffad718f
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "62999378"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400968"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 raporty w centrum administracyjnym — Użycie przeglądarki firmy Microsoft
 

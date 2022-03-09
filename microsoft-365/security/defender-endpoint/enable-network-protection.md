@@ -1,7 +1,7 @@
 ---
 title: Włączanie ochrony sieci
 description: Włącz ochronę sieci za zasady grupy, PowerShell lub Zarządzanie urządzeniami przenośnymi i Menedżer konfiguracji.
-keywords: ANetwork protection, exploits, malicious website, ip, domain, domains, enable, turn on
+keywords: Ochrona sieci, wykorzystywanie, złośliwa witryna internetowa, ip, domena, domeny, włączanie, włączanie
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,17 +10,17 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: ''
+ms.reviewer: mkaminska
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: acf474f472450456014a581366c8860d87607a79
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322649"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401150"
 ---
 # <a name="turn-on-network-protection"></a>Włączanie ochrony sieci
 
@@ -57,7 +57,8 @@ Jeśli brakuje klucza, przejdź do **części SOFTWARE** \> **Microsoft Windows 
    - 2 lub **tryb inspekcji**
 
     :::image type="content" alt-text="Klucz rejestru ochrony sieci." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-
+    
+    
 ## <a name="enable-network-protection"></a>Włączanie ochrony sieci
 
 Włącz ochronę sieci, używając dowolnej z tych metod:
@@ -89,6 +90,9 @@ Włącz ochronę sieci, używając dowolnej z tych metod:
 ### <a name="mobile-device-management-mdm"></a>Zarządzanie urządzeniami przenośnymi
 
 Użyj konfiguracji [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) usługodawca (CSP), aby włączyć lub wyłączyć ochronę sieci albo włączyć tryb inspekcji.
+
+[Zaktualizuj platformę programu Microsoft Defender ochrony przed złośliwym oprogramowaniem](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) do najnowszej wersji, zanim włączysz lub wyłączysz ochronę sieci lub tryb inspekcji.
+
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
@@ -163,6 +167,7 @@ Upewnij się, że ochronę sieci włączono na komputerze lokalnym przy użyciu 
 6. Wykonaj pozostałe kroki i zapisz zasady. 
 
 7. Na wstążce wybierz pozycję **Wdeksuj** , aby wdrożyć zasady w kolekcji.
+
 
 > [!IMPORTANT]
 > Po wdrożeniu zasad exploit Guard z programu Menedżer konfiguracji ustawienia exploit Guard nie zostaną usunięte z klientów po usunięciu wdrożenia. `Delete not supported` jest rejestrowane w pliku Menedżer konfiguracji exploitGuardHandler.log klienta po usunięciu wdrożenia exploit guard klienta. <!--CMADO8538577-->

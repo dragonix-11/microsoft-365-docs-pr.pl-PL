@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 w centrum administracyjnym — Użycie skrzynki pocztowej
+title: centrum administracyjne platformy Microsoft 365 raportów o użyciu skrzynki pocztowej
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Dowiedz się, jak uzyskać raport użycia skrzynki pocztowej o działaniach użytkowników ze skrzynką pocztową użytkownika.
-ms.openlocfilehash: 815220f963800bcac4da1c7bfc8ee70add0b75d0
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 6a28b6aed8721872a31af57d4c00cd82a89c06bc
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "62988676"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400898"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Microsoft 365 w centrum administracyjnym — Użycie skrzynki pocztowej
 

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Za pomocą mobilności podstawowej i zabezpieczeń możesz tworzyć zasady dotyczące urządzeń chroniące informacje Twojej organizacji.
-ms.openlocfilehash: c0fa9cec0b9029d2cd55aace0c758e6c81e265b0
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: d4e693d27ea71cdd18c9ea668a2102e0ce061b8d
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017741"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400451"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Tworzenie zasad zabezpieczeń urządzeń w mobilności podstawowej i zabezpieczeniach
 
@@ -121,7 +121,7 @@ Jeśli chcesz wykluczyć niektóre osoby z kontroli dostępu warunkowego na ich 
 
 Po zastosowaniu zasad do urządzeń użytkowników wpływ na poszczególne urządzenia różni się nieco w zależności od typów urządzeń. Przykłady wpływu zasad na różne urządzenia można znaleźć w poniższej tabeli.
 
-|**Zasady zabezpieczeń**|**Android 4 lub nowszy**|**Samsung KNOX**|**iOS 6 lub nowszy**|**Uwagi**|
+|**Zasady zabezpieczeń**|**Android**|**Samsung KNOX**|**iOS**|**Uwagi**|
 |:-----|:-----|:-----|:-----|:-----|
 |Wymagaj zaszyfrowanej kopii zapasowej|Nie|Tak|Tak|Wymagana jest zaszyfrowana kopia zapasowa systemu iOS.|
 |Blokowanie kopii zapasowej w chmurze|Tak|Tak|Tak|Zablokuj kopię zapasową Google w systemie Android (wyszarzona), kopia zapasowa w chmurze w systemie iOS.|
@@ -139,7 +139,7 @@ Po zastosowaniu zasad do urządzeń użytkowników wpływ na poszczególne urzą
 
 Po usunięciu zasad lub usunięciu użytkownika z grupy, w której zasady zostały wdrożone, ustawienia zasad, profil poczty e-mail Microsoft 365 i buforowane wiadomości e-mail mogą zostać usunięte z urządzenia użytkownika. Zobacz w poniższej tabeli, co zostało usunięte dla poszczególnych typów urządzeń.
 
-|**Co zostało usunięte**|**iOS 6 lub nowszy**|**System Android 4 i nowszy (z uwzględnieniem samsung KNOX)**|
+|**Co zostało usunięte**|**iOS**|**Android (w tym Samsung KNOX)**|
 |:-----|:-----|:-----|
 |Zarządzane profile poczty <sup>e-mail1</sup>|Tak|Nie|
 |Blokowanie kopii zapasowej w chmurze|Tak|Nie|

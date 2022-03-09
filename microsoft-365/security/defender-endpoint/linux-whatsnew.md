@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 58ba49a49b41d80bacb31efa780530e44a146fc1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 48b278d23cd724cade823d2a6b052b11d02a3a13
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326765"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401094"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Co nowego w programie Microsoft Defender dla punktu końcowego w systemie Linux
 
@@ -28,6 +28,15 @@ ms.locfileid: "63326765"
 
 **Dotyczy:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1016093-30122012160930"></a>101.60.93 (30.122012.16093.0)
+
+- Ta wersja zawiera aktualizację zabezpieczeń [dla cve-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
+
+## <a name="1016005-30122012160050"></a>101.60.05 (30.122012.16005.0)
+
+- Dodano obsługę kernelu w wersji 2.6.32-754.43.1.el6.x86_64 RDRA 6.10
+- Poprawki błędów
 
 ## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 10ecf1f3906e7968328729257feea9c272562ffb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 80245af54aa6f7a3328515257fe6e6e73f0739b0
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322635"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401038"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Co nowego w programie Microsoft Defender dla punktu końcowego na komputerze Mac
 
@@ -31,6 +31,10 @@ ms.locfileid: "63322635"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1016091-20122021160910"></a>101.60.91 (20.122021.16091.0)
+
+- Ta wersja zawiera aktualizację zabezpieczeń [dla cve-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
 
 ## <a name="1015950-20122021159500"></a>101.59.50 (20.122021.15950.0)
 

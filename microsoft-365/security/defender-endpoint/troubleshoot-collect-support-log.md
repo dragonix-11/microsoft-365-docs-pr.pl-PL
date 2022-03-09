@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b6d4b6f78cc677f9be5f664d86d8734ebd8df2f7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0d0f470a2af18dab298ba3a1af642362590da4c
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997370"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401164"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Zbieranie dzienników pomocy technicznej w programie Microsoft Defender dla punktu końcowego przy użyciu funkcji odpowiedzi na żywo
 
@@ -35,11 +35,9 @@ Podczas kontaktowania się z pomocą techniczną może zostaćsz poproszony o do
 
 Ten temat zawiera instrukcje dotyczące uruchamiania narzędzia za pośrednictwem usługi Live Response.
 
-1. Pobierz odpowiedni skrypt
-   - Tylko dzienniki czujnika aplikacji Microsoft Defender for Endpoint: [LiveAnalyzer.ps1 skryptu](https://aka.ms/MDELiveAnalyzer).
-      - Pakiet wyników o przybliżonym rozmiarze: ~100 KB
-   - Czujnik klienta programu Microsoft Defender for Endpoint i dzienniki oprogramowania antywirusowego: [LiveAnalyzer+MDAV.ps1 skrypt.](https://aka.ms/MDELiveAnalyzerAV)
-       - Pakiet wyników o przybliżonym rozmiarze: ~10 Mb
+1. Pobieranie i pobieranie wymaganych skryptów dostępnych w podfolderze "Narzędzia" usługi [Microsoft Defender for Endpoint Client Analyzer](https://aka.ms/BetaMDEAnalyzer). <br>
+Aby na przykład pobrać podstawowy czujnik i dzienniki kondycji urządzenia, uzyskaj zdalnego dostępu ".. \Tools\MDELiveAnalyzer.ps1".<br>
+Jeśli potrzebujesz również dzienników obsługi oprogramowania antywirusowego Defender (MpSupportFiles.cab), pobierz ".. \Tools\MDELiveAnalyzerAV.ps1" 
 
 2. [Zainicjuj sesję live response](live-response.md#initiate-a-live-response-session-on-a-device) na komputerze, który chcesz zbadać.
 

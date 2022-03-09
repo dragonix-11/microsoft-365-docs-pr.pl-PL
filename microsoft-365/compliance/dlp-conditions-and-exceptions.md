@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: dowiedz się więcej o warunkach i wyjątkach dotyczących zasad dlp
-ms.openlocfilehash: a0354fe6392d739fa1b616e92625b7507cca823f
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 771674b82e50987397fc1ae754f0b96719a04ae5
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010370"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401126"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Warunki, wyjątki i akcje zasad DLP
 
@@ -48,29 +48,25 @@ W poniższych sekcjach tabele zawierają opis warunków i wyjątków dostępnych
 
 ### <a name="senders"></a>Nadawcy
 
-W przypadku użycia adresu nadawcy jako warunku lub wyjątku rzeczywistego pola, w którym szukana wartość jest szukana, różni się w zależności od typu reguły, której używasz. W przypadku reguł opartych na zasadach DLP adres koperty jest używany jako adres nadawcy. Dla Exchange transportu adres nagłówka jest używany jako adres nadawcy.
+W przypadku użycia adresu nadawcy jako warunku lub wyjątku rzeczywistego pola, w którym szukana wartość jest szukana, różni się w zależności od skonfigurowanej lokalizacji adresu nadawcy. Domyślnie reguły DLP używają adresu nagłówka jako adresu nadawcy.
 
-<!--
-> [!NOTE]
-> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
+![Obraz nagłówka wiadomości e-mail z różnicą między adresem koperty (P1) a adresem nagłówka (P2)](../media/dlp-conditions-exceptions-meetinginvite-callouts.png)
 
-![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
-
-At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+Na poziomie dzierżawy możesz skonfigurować lokalizację adresu nadawcy, która będzie używana we wszystkich regułach, o ile nie zostanie zastąpiona jedną regułą. Aby skonfigurować konfigurację zasad DLP dzierżawy w celu oceny adresu nadawcy z koperty we wszystkich regułach, możesz uruchomić następujące polecenie:
 
 ```PowerShell
 Set-PolicyConfig –SenderAddressLocation Envelope
 ```
 
-To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
+Aby skonfigurować lokalizację adresu nadawcy na poziomie reguły DLP, parametr to _SenderAddressLocation_. Dostępne wartości:
 
-- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
+- **Nagłówek**: Sprawdzaj tylko nadawców w nagłówkach wiadomości (na przykład w polach **Od**, **Nadawca** lub **Odpowiedz** ). Jest to wartość domyślna.
 
-- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
+- **Koperta**: Sprawdzaj tylko nadawców z koperty wiadomości (wartość **MAIL FROM** użyta w transmisji SMTP, która zwykle jest przechowywana w polu **Return-Path** ).
 
-- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
+- **Nagłówek lub koperta** (`HeaderOrEnvelope`) Sprawdź nadawców w nagłówku wiadomości i na kopercie wiadomości.
 <br>
--->
+
 |warunek lub wyjątek w zasadie DLP|Parametry warunków/wyjątków w programie Microsoft 365 PowerShell|typ właściwości|opis|
 |---|---|---|---|
 |Nadawca:|warunek: *Od* <br/> wyjątek: *ExceptIfFrom*|Adresy|Wiadomości wysyłane przez określone skrzynki pocztowe, użytkowników poczty, kontakty Microsoft 365 grupy w organizacji.|

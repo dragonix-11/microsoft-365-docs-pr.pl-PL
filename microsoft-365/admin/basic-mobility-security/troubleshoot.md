@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Spróbuj wykonać poniższe czynności, aby śledzić problemy z podstawową mobilnością i zabezpieczeniami
-ms.openlocfilehash: f625fbc642392ee575b35f225f5e65b942362c4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2ac25e36fced24e5b50e7e89d36dae3e842fda04
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983928"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400367"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>Rozwiązywanie problemów z podstawową mobilnością i zabezpieczeniami
 
@@ -65,7 +65,7 @@ Aby rozpocząć, sprawdź następujące elementy:
 
 ## <a name="android-phone-or-tablet"></a>Telefon lub tablet z systemem Android
 
-- Upewnij się, że na urządzeniu działa system Android 4.4 lub nowszy.
+- Upewnij się, że na urządzeniu działa system Android.
 
 - Upewnij się, że przeglądarka Chrome jest aktualne i jest ustawiona jako domyślna przeglądarka.
 

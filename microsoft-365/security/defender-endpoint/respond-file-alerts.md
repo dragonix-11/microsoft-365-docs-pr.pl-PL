@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e3f4efb5c52acb40ecb30ac17a8b144de9eaa106
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 0e7253993a1c05bd25e6dd13865826c42dd7603a
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63009666"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400254"
 ---
 # <a name="take-response-actions-on-a-file"></a>Akcje odpowiedzi dotyczące pliku
 
@@ -110,7 +110,7 @@ Ta akcja  dotyczy urządzeń z systemem Windows 10, wersja 1703 lub nowsza i Win
 
 4. Wybierz dowolny wskaźnik stanu, aby wyświetlić więcej informacji o akcji. Na przykład wybierz pozycję **Niepowodzenie,** aby zobaczyć, gdzie akcja nie powiodła się.
 
-#### <a name="notification-on-device-user"></a>Powiadomienie dla użytkownika urządzenia
+#### <a name="notification-on-device-userf"></a>Powiadomienie dla użytkownika urządzenia
 
 Po usunięciu pliku z urządzenia jest wyświetlane następujące powiadomienie:
 
@@ -320,7 +320,7 @@ Jeśli podczas przesyłania pliku występuje problem, wypróbuj każdą z poniż
 
 5. Zmień jednostkę organizacyjną na zasady grupy. Aby uzyskać więcej informacji, zobacz [Konfigurowanie za pomocą zasady grupy](configure-endpoints-gp.md).
 
-6. Jeśli te czynności nie rozwiążą problemu, [skontaktuj się z](mailto:winatp@microsoft.com) winatp@microsoft.com.
+6. Jeśli te czynności nie rozwiążą problemu, skontaktuj się z pomocą techniczną.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
