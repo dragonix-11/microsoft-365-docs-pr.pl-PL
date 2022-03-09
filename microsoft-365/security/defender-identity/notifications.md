@@ -8,12 +8,12 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: b33ee0f59ca02d305ec703ab47aa1d0f2f95b8da
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 4e8969e51673676ecf13dc579ae304622e23e75d
+ms.sourcegitcommit: 1de72e5fd8af0ebc4a0dc91f47d2243498cfe5b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "63004948"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63384609"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Powiadomienia usługi Defender dla tożsamości w programie Microsoft 365 Defender
 
@@ -65,6 +65,9 @@ W Microsoft 365 Defender możesz dodać adresatów do powiadomień e-mail o wykr
 ## <a name="syslog-notifications"></a>Powiadomienia syslogu
 
 Program Defender for Identity może powiadamiać Cię o wykryciu podejrzanych działań, wysyłając alerty o zabezpieczeniach i kondycji do serwera syslogów za pośrednictwem nominowego czujnika.
+
+> [!NOTE]
+> Aby dowiedzieć się, jak zintegrować usługę Defender for Identity z programem Microsoft Sentinel, zobacz Microsoft 365 Defender [integracji z programem Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
 1. Na <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> **przejdź do Ustawienia** i **Tożsamości**.
 
