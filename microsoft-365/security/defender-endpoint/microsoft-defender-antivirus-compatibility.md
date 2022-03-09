@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 02/11/2022
+ms.date: 03/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 67debb23e701b1c31edbc8084aa39ed7bb58385c
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 004ded3337755b018db8a24dde4bbde26be3fb28
+ms.sourcegitcommit: ad6d9fd5ad050c72622a32a191997fe6d7b2deee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011919"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63353919"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi
 
@@ -42,9 +42,9 @@ Program antywirusowy Microsoft Defender jest automatycznie instalowana w punktac
 - Windows Server, wersja 1803 lub nowsza
 - System Windows Server 2016
 
-Co się dzieje, gdy jest używane inne rozwiązanie antywirusowe/ochrony przed złośliwym oprogramowaniem firmy Microsoft? Czy można używać Program antywirusowy Microsoft Defender razem z innym produktem antywirusowym? Odpowiedzi zależą od kilku czynników, takich jak system operacyjny, oraz od tego, czy korzystasz z programu [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) razem z ochroną antywirusową.
+Co się dzieje, gdy jest używane inne rozwiązanie antywirusowe/ochrony przed złośliwym oprogramowaniem firmy Microsoft? Czy można używać Program antywirusowy Microsoft Defender razem z innym produktem antywirusowym? Odpowiedzi zależą od kilku czynników, takich jak system operacyjny, oraz od tego, czy korzystasz z programu [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) wraz z ochroną antywirusową.
 
-W tym artykule opisano, co się Program antywirusowy Microsoft Defender z programem Program antywirusowy Microsoft Defender i rozwiązaniem antywirusowym/złośliwym firmy Microsoft, z programem Defender for Endpoint lub bez niego.
+W tym artykule opisano, co się Program antywirusowy Microsoft Defender z programem Program antywirusowy Microsoft Defender i rozwiązaniem antywirusowym/złośliwym firmy Microsoft, z programem Defender for Endpoint i bez niego.
 
 > [!IMPORTANT]
 > Program antywirusowy Microsoft Defender jest dostępna tylko na urządzeniach z systemami Windows 10 i Windows Server 2022, Windows Server 2019, Windows Server, wersja 1803 lub nowsza, Windows Server 2016 i Windows Server 2012 R2.
@@ -55,9 +55,12 @@ W tym artykule opisano, co się Program antywirusowy Microsoft Defender z progra
 
 ## <a name="antivirus-protection-without-defender-for-endpoint"></a>Ochrona antywirusowa bez programu Defender dla punktu końcowego
 
-W tej sekcji opisano, co się dzieje z Program antywirusowy Microsoft Defender i produktami antywirusowymi/złośliwymi produktami innych niż firmy Microsoft w przypadku punktów końcowych, które nie są w nim zainstalowane w programie Defender for Endpoint. W poniższej tabeli podsumowano, czego można oczekiwać:
+W tej sekcji opisano, co się dzieje, gdy używasz programu Program antywirusowy Microsoft Defender z produktami antywirusowymi lub złośliwymi produktami innych niż firmy Microsoft dla punktów końcowych, które nie są zainstalowane w programie Defender for Endpoint. 
 
-<br/><br/>
+> [!NOTE]
+> Ogólnie rzecz biorąc, Program antywirusowy Microsoft Defender działa w trybie pasywnym na urządzeniach, które nie są podłączone do usługi Defender for Endpoint.
+
+W poniższej tabeli podsumowano, czego można oczekiwać:
 
 |Windows wersji|Podstawowe rozwiązanie antywirusowe/ochrony przed złośliwym oprogramowaniem|Program antywirusowy Microsoft Defender stan|
 |:---|:---|:---|
@@ -73,7 +76,16 @@ W tej sekcji opisano, co się dzieje z Program antywirusowy Microsoft Defender i
 
 ## <a name="microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions"></a>Program antywirusowy Microsoft Defender i rozwiązania antywirusowe/przeciwszybowe firmy Microsoft
 
-W poniższej tabeli podsumowano, co się dzieje z programem Program antywirusowy Microsoft Defender, gdy razem z rozwiązaniami antywirusowymi lub złośliwymi firmami firmy Microsoft są używane razem lub bez programu Microsoft Defender for Endpoint. <br/><br/>
+> [!NOTE]
+> Ogólnie rzecz biorąc, Program antywirusowy Microsoft Defender ustawić tryb pasywny tylko dla punktów końcowych, które są ustawione w układzie Defender dla punktu końcowego.
+
+To Program antywirusowy Microsoft Defender czy tryb aktywny, pasywny, czy wyłączony, zależy od kilku czynników, takich jak:
+
+- Która wersja pakietu Windows jest zainstalowana w punkcie końcowym
+- Czy Program antywirusowy Microsoft Defender podstawowym rozwiązaniem antywirusowym/złośliwym, które znajduje się w punkcie końcowym
+- Czy punkt końcowy jest wnoszony do usługi Defender dla punktu końcowego
+
+W poniższej tabeli podsumowano stan Program antywirusowy Microsoft Defender w kilku scenariuszach. 
 
 | Windows wersji   | Rozwiązanie antywirusowe/ochrony przed złośliwym oprogramowaniem  | Wnoszone do <br/> Czy program Defender dla punktu końcowego? | Program antywirusowy Microsoft Defender stan     |
 |:------|:------|:-------|:-------|
@@ -135,8 +147,6 @@ W tabeli w tej sekcji podsumowano funkcje i możliwości, które aktywnie dział
 > [!IMPORTANT]
 > Następująca tabela ma wyłącznie informacyjne informacje. Nie wyłączaj **funkcji, takich** jak ochrona w czasie rzeczywistym, ochrona w chmurze lub ograniczone skanowanie okresowe, jeśli używasz programu Program antywirusowy Microsoft Defender w trybie pasywnym lub jeśli używasz programu [EDR](edr-in-block-mode.md) w trybie blokowania, który działa w tle w celu wykrywania i korygowania złośliwych artefaktów, które zostały wykryte po naruszeniu zabezpieczeń.
 
-<br/><br/>
-
  | Ochrona | Program antywirusowy Microsoft Defender <br/>(*Tryb aktywny*) | Program antywirusowy Microsoft Defender <br/>(*Tryb pasywny*) | Program antywirusowy Microsoft Defender <br/>(*Wyłączone lub odinstalowane*) | [EDR w trybie blokowania](edr-in-block-mode.md) | 
  |:---|:---|:---|:---|:---| 
  | [Ochrona w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md) | Tak | Zobacz <sup>notatkę [[4](#fn4)]</sup> | Nie | Nie | 
@@ -165,8 +175,6 @@ W tabeli w tej sekcji podsumowano funkcje i możliwości, które aktywnie dział
 
 Aby potwierdzić stan Program antywirusowy Microsoft Defender, można użyć jednej z kilku metod, zgodnie z opisem w poniższej tabeli:
 
-<br/><br/>
-
  | Metoda | Procedura | 
  |:---|:---| 
  | Zabezpieczenia Windows aplikacji |  1. Na Windows otwórz aplikację Zabezpieczenia Windows urządzenia.<br/>2. Wybierz **pozycję Ochrona przed & zagrożeniami**.<br/>3. **W KtoTo chroni mnie? wybierz** pozycję **Zarządzaj dostawcami**.<br/>4. Na stronie **Dostawcy zabezpieczeń** w obszarze **Oprogramowanie antywirusowe** powinien być Program antywirusowy Microsoft Defender **włączony**. | 
@@ -179,8 +187,6 @@ Aby potwierdzić stan Program antywirusowy Microsoft Defender, można użyć jed
 
 W tabeli w tej sekcji opisano różne stany, które mogą być Program antywirusowy Microsoft Defender.
 
-<br/><br/>
-
  |  Stan  |  Co się dzieje  | 
  |:---|:---| 
  |  Tryb aktywny  |  W trybie aktywnym Program antywirusowy Microsoft Defender jako aplikacja antywirusowa na komputerze. Ustawienia skonfigurowane przy użyciu Menedżer konfiguracji, zasady grupy, Microsoft Intune lub innych produktów do zarządzania będą stosowane. Pliki są skanowane, są naprawiane zagrożenia, a informacje o wykrywaniu są raportowane w narzędziu konfiguracji (takim jak Menedżer konfiguracji lub aplikacja Program antywirusowy Microsoft Defender na samym punkcie końcowym).  | 
@@ -190,6 +196,7 @@ W tabeli w tej sekcji opisano różne stany, które mogą być Program antywirus
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Program antywirusowy Microsoft Defender w programie Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Program antywirusowy Microsoft Defender na Windows klientach](microsoft-defender-antivirus-in-windows-10.md)
+- [Program antywirusowy Microsoft Defender na Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [EDR w trybie blokowania](edr-in-block-mode.md)
 - [Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w punktach końcowych](/microsoft-365/compliance/endpoint-dlp-learn-about)

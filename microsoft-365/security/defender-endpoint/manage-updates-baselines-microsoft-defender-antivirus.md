@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 02/09/2022
+ms.date: 03/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 5d464fe0b43aa4395b81723d945019d5450a7fc0
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: e19b6400643b29005a6c92323f58f7dc996db49e
+ms.sourcegitcommit: ad6d9fd5ad050c72622a32a191997fe6d7b2deee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63027103"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63353905"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego
 
@@ -105,6 +105,7 @@ Wersja aktualizacji analizy zabezpieczeń: 1.357.8.0 <br/>
 - Dodano `-ServiceHealthReportInterval` ustawienie [Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady konfigurują interwał (w minutach) na wykonanie zaplanowanego skanowania.
 - Dodano `AllowSwitchToAsyncInspection` ustawienie [Set-MpPreference](/powershell/module/defender/set-mppreference). Te zasady umożliwiają optymalizację wydajności, która umożliwia synchroniczne sprawdzanie przepływów sieciowych, przełączanie się do inspekcji synchronizacji po ich sprawdzeniu i sprawdzeniu.
 - Aktualizacje w wersji 2 Analizatora wydajności: Dodano zdalną obsługę programu PowerShell i programu PowerShell 7.x. Zobacz [Analizator wydajności, aby uzyskać Program antywirusowy Microsoft Defender](tune-performance-defender-antivirus.md).
+- Usunięto potencjalną usterkę zduplikowanych pakietów Program antywirusowy Microsoft Defender sterownika systemu inspekcji sieci.
 
 ### <a name="known-issues"></a>Znane problemy
 
@@ -638,6 +639,21 @@ Zalecamy zaktualizowanie obrazów instalacji systemu Windows 10 (wersje Enterpri
 Aby uzyskać więcej informacji, zobacz [Aktualizacja programu Microsoft Defender w celu Windows obrazów instalacji systemu operacyjnego](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220305.1</summary>
+
+&ensp;Wersja pakietu: **20220305.1**<br/>
+&ensp;Wersja platformy: **4.18.2201.10**<br/>
+&ensp;Wersja aparatu: **1.1.18900.3**<br/>
+&ensp;Wersja podpisu: **1.359.1405.0**<br/>
+
+### <a name="fixes"></a>Poprawki
+- Brak
+
+### <a name="additional-information"></a>Informacje dodatkowe
+- Brak
+
+<br/>
+</details><details>
 <summary>20220203.1</summary>
 
 &ensp;Wersja pakietu: **20220203.1**<br/>
