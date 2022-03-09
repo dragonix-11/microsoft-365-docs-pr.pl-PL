@@ -21,12 +21,12 @@ description: Dowiedz się, jak ująć w treści treści i ich źródła danych, 
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2c19b608f01f30df83e914bbe34d29aa85bd5af3
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: d731c0cda31f96f5274ca0c2fd56d5e14901f3a9
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "63007503"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406161"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Zarządzanie rekordami w Advanced eDiscovery
 
@@ -97,6 +97,9 @@ Aby utworzyć zbędną przechowywania danych dla sprawy Advanced eDiscovery przy
 11. Po skonfigurowaniu hold'a opartego na kwerendzie kliknij przycisk **Dalej**.
 
 12. Przejrzyj ustawienia, a następnie kliknij pozycję **Utwórz to hold**.
+
+> [!NOTE]
+> Po utworzeniu hold'a opartego na kwerendzie cała zawartość z wybranych lokalizacji jest początkowo umieszczana w miejscu przechowywania. Następnie każda zawartość, która nie jest dopasowana do określonego zapytania, jest czyszowana z trzymania co siedem do 14 dni. Jednak zastosowanie blokady opartej na kwerendzie nie spowoduje wyczyszczenia zawartości, jeśli do lokalizacji zawartości zastosowano więcej niż pięć blokady dowolnego typu lub jeśli w przypadku dowolnego elementu wystąpiły problemy z indeksowaniem.
 
 > [!NOTE]
 > Jeśli adres SMTP użytkownika zmieni się po zatrzymaniu skrzynki pocztowej użytkownika, pozostanie ona w tym miejscu. Aby użyć nowego adresu SMTP do stosowania wstrzymywania, utwórz nowe hold.

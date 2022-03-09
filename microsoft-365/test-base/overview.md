@@ -2,8 +2,8 @@
 title: Omówienie
 description: Opis bazy testowej
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: b235fcb0de470f23afd75d8abd91d07451d040bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d7539dfeecf1e34a639bc506f312c35a4243323
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984586"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63405927"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>Co to jest podstawa testowa dla Microsoft 365?
 
@@ -51,9 +51,9 @@ Ten przewodnik jest podzielony na cztery (4) części, aby zapewnić bezpieczeń
 
 4. Sekcja **Reference** (Odwołanie) zawiera odpowiedzi na typowe pytania, jakie otrzymujemy od naszych klientów.
 
-## <a name="test-base-is-in-public-preview"></a>Test Base is in public preview!
+## <a name="test-base-has-reached-general-availability"></a>Baza testowa osiągnęła ogólną dostępność
 
-Baza testowa została oficjalnie zadeklarowana `Public Preview` podczas konferencji Microsoft Inspire w lipcu 2021 r.
+Baza testowa została oficjalnie zadeklarowana jako ogólna dostępność podczas konferencji Microsoft Ignite w listopadzie 2021 r. 
 
 Oznacza to, że każdy z ważnym firmowym kontem Azure może skorzystać z usług testowych i szybko rozpocząć testowanie aplikacji w usłudze.
 

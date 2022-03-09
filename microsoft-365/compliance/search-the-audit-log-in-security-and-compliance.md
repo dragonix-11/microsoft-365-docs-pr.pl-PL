@@ -21,12 +21,12 @@ description: Użyj Centrum zgodności platformy Microsoft 365, aby przeszukać u
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 71b7bb5d5588f19ff4134c133377b3e9ca83c780
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ea440ac03c648a7ae77d99d0a7be091d4f72fa64
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319353"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63405941"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Przeszukiwanie dziennika inspekcji w centrum zgodności
 
@@ -201,7 +201,7 @@ Oto proces przeszukiwania dziennika inspekcji w programie Microsoft 365.
 
 4. Kliknij **przycisk** Wyszukaj, aby uruchomić wyszukiwanie z użyciem kryteriów wyszukiwania.
 
-   Wyniki wyszukiwania zostaną załadowane i po chwili wyświetlone na nowej stronie. Po zakończeniu wyszukiwania zostanie wyświetlona liczba znalezionych wyników. Zostanie wyświetlonych maksymalnie 50 000 zdarzeń w przyrostach co 150 zdarzeń.
+   Wyniki wyszukiwania zostaną załadowane i po chwili wyświetlone na nowej stronie. Po zakończeniu wyszukiwania zostanie wyświetlona liczba znalezionych wyników. Zostanie wyświetlonych maksymalnie 50 000 zdarzeń w przyrostach co 150 zdarzeń. Jeśli kryteria wyszukiwania spełnia więcej niż 50 000 zdarzeń, zostanie wyświetlonych tylko 50 000 nieposortowanych zdarzeń.
 
    ![Po zakończeniu wyszukiwania zostanie wyświetlona liczba wyników.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 

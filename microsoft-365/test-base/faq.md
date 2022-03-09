@@ -2,8 +2,8 @@
 title: Baza testowa — często zadawane pytania
 description: Przeglądanie często zadawanych pytań
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 668631563b35a848df5bfbdfd930be17efce8c04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e21774ada245a3b9d5c131998b7c60b4a4778210
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988040"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406011"
 ---
 # <a name="test-base-faq"></a>Baza testowa — często zadawane pytania
 
@@ -42,16 +42,16 @@ Testy typu "od urządzenia" (OOB) zapewniają usterektowany telemetrię aplikacj
 **P. Czy można przesyłać testy poza testami odinstalowywania (instalowanie, uruchamianie, zamykanie i odinstalowywanie skryptów testowych)?**
 
 **O.** Tak, klienci mogą również przekazywać pakiety aplikacji **do testów** funkcjonalności za pośrednictwem samoobsługowego pulpitu nawigacyjnego portalu.
-**Testy funkcjonalności** to testy umożliwiające klientom uruchamianie niestandardowych funkcji w aplikacji.
+**Testy funkcjonalności** to testy umożliwiające klientom uruchamianie skryptów niestandardowych w aplikacji.
 
 
 ## <a name="testing"></a>Testowanie
 
 **P: Czy obsługujesz testy funkcjonalności?**
 
-**O.** Tak, baza testowa obsługuje testy funkcjonalności. Testy funkcjonalności to testy umożliwiające naszym klientom uruchamianie skryptów niestandardowych w swoich aplikacjach. 
+**O.** Tak, baza testowa obsługuje testy funkcjonalności. Testy funkcjonalności to testy umożliwiające naszym klientom uruchamianie skryptów niestandardowych w ich aplikacjach. 
 
-Aby przesłać pakiet aplikacji na testy funkcjonalności, po prostu przekaż spakowany folder zawierający binaries, zależności i skrypty testowe Twojej aplikacji za pośrednictwem naszego samoobsługowego pulpitu nawigacyjnego portalu. 
+Aby przesłać pakiet aplikacji na testy funkcjonalności, przekaż spakowany folder zawierający pliki binarne, zależności i skrypty testowe aplikacji za pośrednictwem naszego samoobsługowego pulpitu nawigacyjnego portalu. 
 
 Aby uzyskać więcej informacji, zobacz podręcznik użytkownika dołączania do programu lub <testbasepreview@microsoft.com> skontaktuj się z naszym zespołem, aby uzyskać pomoc i więcej informacji.
 
@@ -91,7 +91,7 @@ Podczas testów funkcjonalnych możesz określić, czy dla każdego dodanego skr
 
 **P: Jaka jest różnica między testami aktualizacji zabezpieczeń a testami aktualizacji funkcji?**
 
-**O.** W przypadku testów aktualizacji zabezpieczeń testujemy comiesięczne przedpremierowe aktualizacje zabezpieczeń na platformie Windows które koncentrują się na zapewnianiu naszym użytkownikom bezpieczeństwa i ochrony.**<ins></ins>** W przypadku testów aktualizacji funkcji testujemy na dwuroczne wersje wstępne aktualizacji funkcji, które wprowadzono nowe funkcje i możliwości w zakresie Windows.**<ins></ins>**
+**O.** W przypadku testów aktualizacji zabezpieczeń testujemy comiesięczne przedpremierowe aktualizacje zabezpieczeń na platformie Windows, które koncentrują się na zapewnianiu naszym użytkownikom bezpieczeństwa i ochrony.**<ins></ins>** W przypadku testów aktualizacji funkcji testujemy ich dwuroczne wersje wstępne aktualizacji funkcji, które wprowadzają nowe funkcje i możliwości Windows.**<ins></ins>**
 
 ## <a name="debugging-options"></a>Opcje debugowania
 
@@ -133,7 +133,7 @@ Poza testami aktualizacji zabezpieczeń w wersji wstępnej, obsługujemy testowa
 
 **P. Czy z usługą jest skojarzony koszt?**
 
-**O.** Usługa Test Base będzie bezpłatna dla użytkowników do czasu jej ogólno dostępnej dostępności. Wtedy ogłosimy strukturę kosztów, która będzie obowiązywać dla wszystkich klientów. 
+**O.** Od 1 marca 2022 r. otrzymasz 100 bezpłatnych godzin (o wartości 800 USD) wygasających w ciągu 6 miesięcy w ramach subskrypcji na potrzeby weryfikacji. Po zjęniu bezpłatnych godzin (lub po wygaśnięciu przed ich użyciem) otrzymasz automatycznie 8 USD za godzinę w porównaniu z użyciem.   
 
 **P: Jak mogę przekazać opinię na temat bazy testowej?**
 

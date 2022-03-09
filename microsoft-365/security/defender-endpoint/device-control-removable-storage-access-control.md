@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 02/07/2022
-ms.openlocfilehash: a0bca99258bd256797437cdc4756910fc713cf26
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.date: 03/09/2022
+ms.openlocfilehash: 9f323d902f0e421ea73303706e0785f9bd76f3ff
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401190"
+ms.locfileid: "63406067"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Program Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
@@ -35,8 +35,6 @@ Program Microsoft Defender for Endpoint Device Control Wymienny Storage kontroli
 
 - inspekcja, zezwalanie na odczytywanie, pisanie lub wykonywanie dostępu do magazynu wymiennych z wyłączeniem lub bez tego
 
-<br/><br/>
-
 |Uprawnienie|Uprawnienie|
 |---|---|
 |Access|Odczyt, pisanie, wykonywanie|
@@ -45,8 +43,6 @@ Program Microsoft Defender for Endpoint Device Control Wymienny Storage kontroli
 |Obsługa zasad grupy|Tak|
 |Pomoc techniczna oparta na użytkownikach|Tak|
 |Obsługa maszynowa|Tak|
-
-<br/><br/>
 
 |Funkcja|Opis|Wdrażanie za pośrednictwem usługi Intune|Wdrażanie za pośrednictwem zasady grupy|
 |---|---|---|---|
@@ -68,6 +64,8 @@ Wdrażanie kontrolki programu Access Storage wymiennych na Windows 10 i urządze
 
 - **4.18.2111** lub nowsza: Dodawanie "Włącz lub wyłącz kontrolkę dostępu wymiennych Storage Access", "Domyślne wymuszanie", czas aktualizacji zasad komputera klienckiego za pomocą programu PowerShell, informacje o pliku
 
+- **4.18.2201** lub nowszy: Obsługa kopii pliku zapisanej w dozwolonym magazynie za pośrednictwem usługi OMA-URI
+
 :::image type="content" source="images/powershell.png" alt-text="Interfejs programu PowerShell.":::
 
 > [!NOTE]
@@ -82,17 +80,13 @@ Aby utworzyć grupę magazynów wymiennych, możesz użyć następujących wła�
 
 ### <a name="removable-storage-group"></a>Grupa wymiennych Storage wymiennych
 
-<br/><br/>
-
 |Nazwa właściwości|Opis|Opcje|
 |---|---|---|
 |**GroupId**|Identyfikator GUID (unikatowy identyfikator) reprezentuje grupę i będzie używany w zasadach.||
-|**DescriptorIdList**|W tym celu należy wyświetlić listę właściwości urządzeń, które mają zostać zasłaniane w grupie. Aby uzyskać szczegółowe informacje na temat poszczególnych właściwości [urządzenia, zobacz Właściwości](device-control-removable-storage-protection.md) urządzenia. We wszystkich właściwościach jest wielkość liter. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId**: Na przykład USB, ZIM<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId to ciąg jednoznacznie identyfikujący urządzenie w systemie, na przykład `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Numer na końcu (na przykład &0) reprezentuje dostępne miejsce i może się zmienić z urządzenia na urządzenie. Aby uzyskać najlepsze wyniki, użyj symbolu wieloznacznego na końcu. Na przykład `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**PRZEC**<p>**Identyfikator PID**<p>**VID_PID**<p>0751_55E0: pasuje do tej dokładnej pary JAK/PID<p>55E0: dopasowanie dowolnego nośnika z identyfikatorem PID=55E0 <p>0751: dopasowanie dowolnego nośnika do 0751|
+|**DescriptorIdList**|W tym celu należy wyświetlić listę właściwości urządzeń, które mają zostać zasłaniane w grupie. Aby uzyskać szczegółowe informacje na temat poszczególnych właściwości [urządzenia, zobacz Właściwości](device-control-removable-storage-protection.md) urządzenia. We wszystkich właściwościach jest wielkość liter. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId**: Na przykład USB, ZIM<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId to ciąg jednoznacznie identyfikujący urządzenie w systemie, na przykład `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Numer na końcu (na przykład &0) reprezentuje dostępne miejsce i może się zmienić z urządzenia na urządzenie. Aby uzyskać najlepsze wyniki, użyj symbolu wieloznacznego na końcu. Na przykład `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**PRZEC**<p>**Identyfikator PID**<p>**VID_PID**<p>`0751_55E0`: dopasuj dokładnie tę parę GDY/PID<p>`_55E0`: dopasuj dowolny nośnik do PID=55E0 <p>`0751_`: dopasuj dowolny nośnik do dowolnej chwili z programem ICHN=0751|
 |**MatchType**|Gdy w urządzeniu jest używanych wiele `DescriptorIDList`właściwości, typ MatchType definiuje relację.|**MatchAll**: Wszystkie `DescriptorIdList` atrybuty w relacji będzie oraz. Jeśli na przykład administrator `DeviceID` `InstancePathID`umieści i , dla każdego podłączonego usb, system sprawdzi, czy port USB spełnia obie wartości. <p> **MatchAny**: Atrybuty w obszarze DescriptorIdList to **Lub** relacja. Jeśli na przykład administrator `DeviceID` `InstancePathID`umieści w pamięci i , dla każdego podłączonego usb system będzie wymuszał, o ile usb ma identyczny **deviceID** lub **wartość InstanceID** . |
 
 ### <a name="access-control-policy"></a>Zasady kontroli dostępu
-
-<br/><br/>
 
 | Nazwa właściwości | Opis | Opcje |
 |---|---|---|
@@ -164,7 +158,7 @@ Przed rozpoczęciem pracy z wymiennymi Storage Access Control należy potwierdzi
 
     Jeśli chcesz ograniczyć określonego użytkownika, użyj właściwości SID we wpisie. Jeśli we wpisie zasad nie ma identyfikatora SID, wpis zostanie zastosowany do każdego wystąpienia logowania na komputerze.
     
-    Jeśli chcesz monitorować informacje o pliku pod celu uzyskania dostępu do zapisu, użyj odpowiedniej maski programu Access z odpowiednią opcją (8 lub 16). oto przykład przechwytywania [informacji o pliku](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
+    Jeśli chcesz monitorować informacje o pliku pod celu uzyskania dostępu do zapisu, użyj odpowiedniej maski programu Access z odpowiednią opcją (16). oto przykład przechwytywania [informacji o pliku](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
 
     Na poniższej ilustracji przedstawiono użycie właściwości SID i przykład scenariusza 1: Zapobieganie zapisywaniu i uruchamianiu dostępu do wszystkich, ale ze względu na zezwalanie na określone [zatwierdzone usb](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
@@ -181,6 +175,7 @@ Przed rozpoczęciem pracy z wymiennymi Storage Access Control należy potwierdzi
 4. Domyślne wymusze: umożliwia ustawienie dostępu domyślnego (odmów lub zezwalania) na nośnik wymienny, jeśli nie ma żadnych zasad. Na przykład masz zasady (Odmów lub Zezwalaj) dla urządzeń wymiennychMediaDevices, ale nie masz żadnych zasad dla cdRomDevices lub WpdDevices i ustawisz domyślną opcję Odmów za pośrednictwem tych zasad, a dostęp do odczytu/zapisu/wykonywania do cdRomDevices lub WpdDevices zostanie zablokowany.
 
    - Po wdrożeniu tego ustawienia zobaczysz domyślny język **Allow (Zezwalaj domyślny** ) lub **Default Deny (Odmów domyślne**).
+   - Podczas konfigurowania tego ustawienia weź pod uwagę zarówno poziom dysku, jak i poziom systemu plikówMask, jeśli na przykład chcesz ustawić wartość Default Deny (Odmów domyślne), ale zezwolić na określone miejsce do magazynowania, musisz zezwolić zarówno na dostęp na poziomie dysku, jak i na poziomie systemu plików. Musisz ustawić wartość AccessMask na 63.
 
     :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="Domyślny kod zezwalania lub domyślnego odrzucania programu PowerShell":::
 
@@ -188,13 +183,13 @@ Przed rozpoczęciem pracy z wymiennymi Storage Access Control należy potwierdzi
 
     :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="Ustawienia sterowania urządzeniami":::
 
-   - Po wdrożeniu tego ustawienia zobaczysz "Włączone" lub "Wyłączone" — wyłączone oznacza, że ten komputer nie ma wymiennych Storage kontroli dostępu.
+   - Po wdrożeniu tego ustawienia zobaczysz **włączoną lub** **wyłączoną**. Wyłączone oznacza, że ten komputer nie ma wymiennych Storage kontroli dostępu.
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Włączone lub wyłączone sterowanie urządzeniem w kodzie programu PowerShell":::
 
 6. Ustawianie lokalizacji kopii pliku: jeśli chcesz mieć kopię pliku podczas uzyskiwania dostępu do zapisu, musisz ustawić lokalizację, w której system może zapisać kopię.
     
-    Należy wdrożyć go wraz z odpowiednią opcją i maski dostępu — zobacz krok 2 powyżej.
+    Wdeksuj to razem z odpowiednią opcją i maski dostępu — zobacz krok 2 powyżej.
 
     :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="zasady grupy — ustawianie informacji o plikach":::
 
@@ -246,7 +241,7 @@ Microsoft Endpoint Manager administracyjnego (<https://endpoint.microsoft.com/>)
 
     - Typ danych: Ciąg (plik XML)
        
-    Jeśli chcesz monitorować informacje o pliku pod celu uzyskania dostępu do zapisu, użyj odpowiedniej maski programu Access z odpowiednią opcją (8 lub 16). oto przykład przechwytywania [informacji o pliku](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
+    Jeśli chcesz monitorować informacje o pliku pod celu uzyskania dostępu do zapisu, użyj odpowiedniej maski programu Access z odpowiednią opcją (16). oto przykład przechwytywania [informacji o pliku](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
 
 3. Domyślne wymusze: umożliwia ustawienie dostępu domyślnego (odmów lub zezwalania) na nośnik wymienny, jeśli nie ma żadnych zasad. Na przykład masz zasady (Odmów lub Zezwalaj) dla urządzeń wymiennychMediaDevices, ale nie masz żadnych zasad dla cdRomDevices lub WpdDevices i ustawisz domyślną opcję Odmów za pośrednictwem tych zasad, a dostęp do odczytu/zapisu/wykonywania do cdRomDevices lub WpdDevices zostanie zablokowany.
 
@@ -258,6 +253,7 @@ Microsoft Endpoint Manager administracyjnego (<https://endpoint.microsoft.com/>)
       `DefaultEnforcementDeny = 2`
 
     - Po wdrożeniu tego ustawienia zobaczysz domyślny język **Allow (Zezwalaj)** lub **Default Deny (Odmów domyślne)**
+    - Podczas konfigurowania tego ustawienia weź pod uwagę zarówno poziom dysku, jak i poziom systemu plikówMask, jeśli na przykład chcesz ustawić wartość Default Deny (Odmów domyślne), ale zezwolić na określone miejsce do magazynowania, musisz zezwolić zarówno na dostęp na poziomie dysku, jak i na poziomie systemu Fiel, musisz ustawić wartość AccessMask na 63.
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Domyślne wymuszanie kodu zezwalania na stosowanie programu PowerShell":::
 
@@ -276,7 +272,7 @@ Microsoft Endpoint Manager administracyjnego (<https://endpoint.microsoft.com/>)
 
 5. Ustawianie lokalizacji kopii pliku: jeśli chcesz mieć kopię pliku podczas uzyskiwania dostępu do zapisu, musisz ustawić lokalizację, w której system może zapisać kopię.
     
-    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
 
     - Typ danych: Ciąg
     

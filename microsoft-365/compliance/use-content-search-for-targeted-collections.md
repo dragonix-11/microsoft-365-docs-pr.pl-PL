@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Przeszukiwanie zawartości w Centrum zgodności platformy Microsoft 365 celu wykonania docelowej kolekcji, która wyszukuje elementy w określonej skrzynce pocztowej lub folderze witryny.
-ms.openlocfilehash: 9de0c562f570a3028c7a96698241ac1be06b8ec1
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: a72984e3d4363dfd5d89e6167621dd65c9d57653
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63013759"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406025"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Używanie wyszukiwania zawartości dla kolekcji docelowej
 
@@ -195,7 +195,7 @@ Aby wyświetlić listę folderów skrzynki pocztowej lub nazwy ścieżki łącza
 
 ### <a name="script-output-for-mailbox-folders"></a>Dane wyjściowe skryptu dla folderów skrzynki pocztowej
 
-Jeśli otrzymasz identyfikatory folderów skrzynek pocztowych, skrypt połączy się z programem Exchange Online PowerShell, uruchomi polecenie cmdlet **Get-MailboxFolderStatisics**, a następnie wyświetli listę folderów z określonej skrzynki pocztowej. W przypadku każdego folderu w skrzynce pocztowej skrypt wyświetla nazwę folderu w kolumnie **FolderPath** i identyfikator folderu w kolumnie **FolderQuery** . Ponadto skrypt dodaje do identyfikatora folderu prefiks **folderId** (czyli nazwę właściwości skrzynki pocztowej). Ponieważ właściwość **folderid** jest właściwością, która można przeszukiwać,  `folderid:<folderid>` użyjesz jej w zapytaniu wyszukiwania w kroku 2, aby przeszukać ten folder. Skrypt wyświetla maksymalnie 100 folderów skrzynki pocztowej.
+Jeśli otrzymasz identyfikatory folderów skrzynek pocztowych, skrypt połączy się z programem Exchange Online PowerShell, uruchomi polecenie cmdlet **Get-MailboxFolderStatisics**, a następnie wyświetli listę folderów z określonej skrzynki pocztowej. W przypadku każdego folderu w skrzynce pocztowej skrypt wyświetla nazwę folderu w kolumnie **FolderPath** i identyfikator folderu w kolumnie **FolderQuery** . Ponadto skrypt dodaje do identyfikatora folderu prefiks **folderId** (czyli nazwę właściwości skrzynki pocztowej). Ponieważ właściwość **folderid** jest właściwością, która można przeszukiwać,  `folderid:<folderid>` użyjesz jej w zapytaniu wyszukiwania w kroku 2, aby przeszukać ten folder. 
 
 > [!IMPORTANT]
 > Skrypt w tym artykule zawiera logikę kodowania, która konwertuje 64-znakowe wartości identyfikatorów folderów zwracanych przez **get-MailboxFolderStatistics** na ten sam 48-znakowy format, który jest indeksowany w celu wyszukiwania. Jeśli po prostu uruchomysz polecenie cmdlet **Get-MailboxFolderStatistics** w programie PowerShell w celu uzyskania identyfikatora folderu (zamiast uruchamiania skryptu w tym artykule), zapytanie wyszukiwania, które używa tej wartości identyfikatora folderu, nie powiedzie się. Aby uzyskać prawidłowo sformatowane identyfikatory folderów, których można używać podczas przeszukiwania zawartości, należy uruchomić skrypt.
@@ -208,7 +208,7 @@ W przykładzie w kroku 2 przedstawiono kwerendę używaną do przeszukiwania pod
 
 ### <a name="script-output-for-site-folders"></a>Dane wyjściowe skryptów dla folderów witryny
 
-Jeśli ścieżka właściwości **documentlinku** jest wyświetlana z witryn programu SharePoint lub OneDrive dla Firm, skrypt nawiązuje połączenie z programem PowerShell zabezpieczeń & zgodności, tworzy nowe wyszukiwanie zawartości w witrynie w poszukiwaniu folderów, a następnie wyświetla listę folderów znajdujących się w określonej witrynie. Skrypt wyświetli nazwę każdego folderu i doda prefiks **linku do dokumentu** do adresu URL folderu. Ponieważ właściwość **linku do dokumentu** jest właściwością, która można przeszukiwać, `documentlink:<path>` w zapytaniu wyszukiwania w kroku 2 użyjesz pary właściwość:wartość do przeszukiwania tego folderu. Skrypt wyświetla maksymalnie 200 folderów witryny. Jeśli istnieje więcej niż 200 folderów witryny, są wyświetlane najnowsze z nich.
+Jeśli ścieżka właściwości **documentlinku** jest wyświetlana z witryn programu SharePoint lub OneDrive dla Firm, skrypt nawiązuje połączenie z programem PowerShell zabezpieczeń & zgodności, tworzy nowe wyszukiwanie zawartości w witrynie w poszukiwaniu folderów, a następnie wyświetla listę folderów znajdujących się w określonej witrynie. Skrypt wyświetli nazwę każdego folderu i doda prefiks **linku do dokumentu** do adresu URL folderu. Ponieważ właściwość **linku do dokumentu** jest właściwością, która można przeszukiwać, `documentlink:<path>` w zapytaniu wyszukiwania w kroku 2 użyjesz pary właściwość:wartość do przeszukiwania tego folderu. Skrypt wyświetla maksymalnie 100 folderów witryny. Jeśli jest ponad 100 folderów witryny, są wyświetlane najnowsze z nich.
 
 Oto przykład wyniku zwróconego przez skrypt dla folderów witryny.
 

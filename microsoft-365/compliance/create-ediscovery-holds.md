@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: W celu zachowania zawartości związanej z prowadzonym dochodzeniami sądowym lub sądowym możesz utworzyć Microsoft 365, która jest skojarzona z podstawową sprawą zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: 0d80197becdeb07c917602ff27a1ad9b2c882029
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 976c0e47195c520620cfa57e996cee42df509593
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322117"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406039"
 ---
 # <a name="create-an-ediscovery-hold"></a>Tworzenie zbierania elektronicznych materiałów dowodowych
 
@@ -81,6 +81,9 @@ Aby utworzyć hold zbierania elektronicznych materiałów dowodowych, który jes
 10. Po skonfigurowaniu hold'a opartego na kwerendzie kliknij przycisk **Dalej**.
 
 11. Przejrzyj ustawienia (i w razie potrzeby je edytuj), a następnie kliknij przycisk **Prześlij**.
+
+> [!NOTE]
+> Po utworzeniu hold'a opartego na kwerendzie cała zawartość z wybranych lokalizacji jest początkowo umieszczana w miejscu przechowywania. Następnie każda zawartość, która nie jest dopasowana do określonego zapytania, jest czyszowana z trzymania co siedem do 14 dni. Jednak zastosowanie blokady opartej na kwerendzie nie spowoduje wyczyszczenia zawartości, jeśli do lokalizacji zawartości zastosowano więcej niż pięć blokady dowolnego typu lub jeśli w przypadku dowolnego elementu wystąpiły problemy z indeksowaniem.
 
 ## <a name="query-based-holds-placed-on-sites"></a>Blokady oparte na zapytaniach umieszczane w witrynach
 

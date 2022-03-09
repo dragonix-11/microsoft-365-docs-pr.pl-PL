@@ -56,6 +56,14 @@
       href: share-files-and-videos.md
     - name: Tworzenie witryny do komunikacji dla organizacji
       href: create-communications-site.md
+- name: Ochrona urządzeń za pomocą programu Defender dla firm
+  items:
+    - name: Urządzenia w programie Microsoft Defender dla firm
+      href: m365bp-onboard-devices-mdb.md
+    - name: Przeglądanie i edytowanie zasad urządzenia
+      href: m365bp-view-edit-create-mdb-policies.md
+    - name: Zarządzanie grupami urządzeń
+      href: m365bp-device-groups-mdb.md
 - name: Resetowanie lub usuwanie danych z urządzeń
   items:
     - name: Usuwanie danych z urządzeń
@@ -64,6 +72,8 @@
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Zarządzanie incydentami zabezpieczeń
   items:
+    - name: Przeglądanie działań naprawczych na urządzeniach
+      href: m365bp-review-remediation-actions-devices.md
     - name: Odpowiadanie na naruszone konto e-mail
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Odwołanie

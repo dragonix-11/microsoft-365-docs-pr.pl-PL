@@ -1,10 +1,16 @@
 - name: M365 Office LTI
   href: index.md
-- name: Korzystanie Microsoft OneDrive LTI z kanwą
-  href: onedrive-lti.md
-- name: Używanie Microsoft Teams z kanwą
-  href: teams-classes-with-canvas.md
-- name: Używanie Microsoft Teams z kanwą
-  href: teams-meetings-with-canvas.md
-- name: Używanie Microsoft Teams za pomocą blackboard Learn Ultra
-  href: teams-classes-with-blackboard.md
+- name: Integracje z systemami Canvas
+  items:
+    - name: Używanie Microsoft OneDrive LTI z kanwą
+      href: onedrive-lti.md
+    - name: Używanie Microsoft Teams z kanwą
+      href: teams-classes-with-canvas.md
+    - name: Używanie Microsoft Teams w aplikacji Canvas
+      href: teams-meetings-with-canvas.md
+- name: Integracje z tablicą Blackboard
+  items:
+    - name: Korzystanie Microsoft OneDrive LTI z czarną tablicą
+      href: onedrive-lti-blackboard.md
+    - name: Używanie Microsoft Teams za pomocą blackboard Learn Ultra
+      href: teams-classes-with-blackboard.md
