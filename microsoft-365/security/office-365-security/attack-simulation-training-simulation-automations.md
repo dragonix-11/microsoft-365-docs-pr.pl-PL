@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i łady uruchamiane po spełnionych określonych warunkach w programie Microsoft Defender Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: a7b49baf23734bccf42df8215e384593ad48d30a
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 47732960ad5fac9884f388836ea23a2b9283c93c
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014856"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419350"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatyzacje symezyjne dla szkolenia z symezyjną ataków
 
@@ -258,19 +258,20 @@ Na stronie **docelowej** możesz skonfigurować stronę sieci Web, do których u
 
     Na stronie docelowej musisz skonfigurować następujące **ustawienia** dodatkowe:
 
-    - **Wskaźniki ładowania**: To ustawienie jest niedostępne, jeśli na stronie Wybieranie technik społecznościowych wcześniej wybrano załącznik  złośliwego [oprogramowania lub](#select-one-or-more-social-engineering-techniques) link do złośliwego oprogramowania.
-
-      Wybierz **pozycję Dodaj wskaźniki opłaty do wiadomości e-mail** , aby ułatwić użytkownikom identyfikowanie wiadomości wyłudzających informacje.
+    - **Wskaźniki ładowania**: To ustawienie jest dostępne do wyboru tylko wtedy, gdy są spełnione oba poniższe warunki:
+      - Wcześniej wybrano **opcję Zbiory poświadczeń**, **Łącze** w załączniku lub Adres **URL dysku** na [stronie Wybieranie technik społecznościowych](#select-one-or-more-social-engineering-techniques) .
+      - Po dodaniu **tagu dynamicznego** o nazwie **Wstaw zawartość wiadomości e-mail** do zawartości strony.
 
     - Zawartość strony: Dostępne są dwie karty:
 
       - **Funkcje** tekstowe: Do utworzenia strony docelowej jest dostępny edytor tekstów sformatowanych. Oprócz typowych ustawień czcionki i formatowania dostępne są następujące ustawienia:
         - **Tag dynamiczny**: Wybierz z następujących tagów:
-          - **Nazwa użytkownika**
-          - **Nazwa nadawcy wiadomości e-mail**
-          - **Adres e-mail nadawcy**
-          - **Temat wiadomości e-mail**
-          - **Zawartość wiadomości e-mail**
+          - **Wstaw nazwę**
+          - **Wstawianie nazwy nadawcy**
+          - **Wstawianie adresu e-mail nadawcy**
+          - **Wstawianie tematu wiadomości e-mail**
+          - **Wstawianie zawartości wiadomości e-mail**
+          - **Wstawianie daty**
         - **Użyj z domyślnego**: Wybierz jeden z 5 dostępnych szablonów stron startowych, od których chcesz rozpocząć. Tekst i układ można zmodyfikować w obszarze edytowania. Aby przywrócić domyślny tekst i układ szablonu strony docelowej, kliknij pozycję **Resetuj do domyślnego.**
         - **Link do szkolenia**: W wyświetlonym oknie dialogowym Nazywanie adresu **URL** szkolenia wprowadź tytuł linku do szkolenia, a następnie kliknij  pozycję Potwierdź, aby dodać link do strony docelowej.
       - **Kod**: Możesz bezpośrednio wyświetlać i modyfikować kod HTML.

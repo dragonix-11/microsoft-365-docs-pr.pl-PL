@@ -1,5 +1,5 @@
 ---
-title: SharePoint Syntex tryb ułatwień dostępu
+title: Tryb ułatwień dostępu w SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,17 +8,17 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
-description: Dowiedz się, jak używać trybu ułatwień dostępu podczas szkolenia modelu w programie SharePoint Syntex.
-ms.openlocfilehash: 6a27615e0b676fdcefb617d76a206d9f47c6f882
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak korzystać z trybu funkcji ułatwień dostępu podczas szkoleń i pracy z modelami w SharePoint Syntex.
+ms.openlocfilehash: 09fd16259a44a2aa4d1b82dca49fffa76065690b
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973793"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419061"
 ---
-# <a name="sharepoint-syntex-accessibility-mode"></a>SharePoint Syntex tryb ułatwień dostępu
+# <a name="accessibility-mode-in-sharepoint-syntex"></a>Tryb ułatwień dostępu w SharePoint Syntex
 
-W [SharePoint Syntex](index.md) użytkownicy mogą włączać tryb ułatwień dostępu na wszystkich etapach szkoleń modelu (etykieta, szkolenie, test) podczas pracy z przykładami dokumentów. Korzystanie z trybu ułatwień dostępu ułatwia użytkownikom o słabym wzroku korzystanie z klawiatury podczas nawigowania i oznaczania elementów w przeglądarce dokumentów.
+W [SharePoint Syntex](index.md) użytkownicy mogą włączać tryb ułatwień dostępu na wszystkich etapach szkolenia modelu (etykieta, szkolenie, test) podczas pracy z przykładami dokumentów. Korzystanie z trybu ułatwień dostępu ułatwia użytkownikom o słabym wzroku korzystanie z klawiatury podczas nawigowania i oznaczania elementów w przeglądarce dokumentów.
 
 Ułatwia to użytkownikom poruszanie się po tekście w przeglądarce dokumentów i odsłuchianie narracji nie tylko wybranych wartości, ale również akcji (takich jak oznaczanie lub usuwanie etykiet z zaznaczonego tekstu) oraz przewidywanie wartości etykiet w ramach szkolenie modelu z dodatkowych dokumentów przykładowych. 
 

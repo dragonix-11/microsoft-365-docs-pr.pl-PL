@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak symulować ataki służące do wyłudzania informacji i szkolenie użytkowników w zakresie zapobiegania wyłudzaniu informacji przy użyciu szkolenia symezyjnego w programie Microsoft Defender dla programu Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 31c8fd7b0369e5af522cd79b9bee7c5ee8460cc5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 17e4bb55ee2c571c2e66b648d277f0a896551f39
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329645"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419364"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Symulowanie ataków phishingowego za pomocą szkolenia symezyjnego ataków w programie Defender dla Office 365
 
@@ -252,8 +252,6 @@ Strony docelowe firmy Microsoft są dostępne w 12 językach: chiński (uproszcz
     - **Dodać logo**: Kliknij przycisk **Przeglądaj,** aby znaleźć i wybrać plik .png, jpeg lub .gif pliku. Aby usunąć logo, kliknij przycisk **Usuń**.
     - **Dodawanie wskaźników obciążenia do** wiadomości e-mail: To ustawienie jest niedostępne, jeśli na  stronie Wybierz technikę wcześniej wybrano załącznik złośliwego oprogramowania lub link do [złośliwego](#select-a-social-engineering-technique) oprogramowania.
 
-      Wybierz **pozycję Dodaj wskaźniki opłaty do wiadomości e-mail** , aby ułatwić użytkownikom identyfikowanie wiadomości wyłudzających informacje.
-
     Możesz wyświetlić podgląd wyników, klikając przycisk Otwórz **panel podglądu** u dołu strony.
 
   - **Użyj niestandardowego adresu URL**: To ustawienie jest niedostępne, jeśli na stronie  Wybierz technikę  wcześniej wybrano załącznik złośliwego oprogramowania lub link do [złośliwego](#select-a-social-engineering-technique) oprogramowania.
@@ -261,18 +259,19 @@ Strony docelowe firmy Microsoft są dostępne w 12 językach: chiński (uproszcz
     Jeśli wybierzesz **pozycję Użyj niestandardowego adresu URL**, musisz dodać adres URL w wyświetlonym polu **Wprowadź adres URL** niestandardowej strony docelowej. Na stronie nie są dostępne żadne inne opcje.
 
   - **Utwórz własną stronę docelową**: Ta wartość ma następujące skojarzone opcje konfiguracji:
-    - **Dodawanie wskaźników obciążenia do** wiadomości e-mail: To ustawienie jest niedostępne, jeśli na  stronie Wybierz technikę wcześniej wybrano załącznik złośliwego oprogramowania lub link do [złośliwego](#select-a-social-engineering-technique) oprogramowania.
-
-      Wybierz **pozycję Dodaj wskaźniki opłaty do wiadomości e-mail** , aby ułatwić użytkownikom identyfikowanie wiadomości wyłudzających informacje.
+    - **Dodawanie wskaźników opłat za** ład do wiadomości e-mail: To ustawienie jest dostępne do wyboru tylko wtedy, gdy są spełnione oba poniższe warunki:
+      - Wcześniej **wybrano opcję Zbiór poświadczeń**, **Łącze w załączniku** lub **Adres URL dysków** na [stronie Wybierz technikę](#select-a-social-engineering-technique) .
+      - Po dodaniu **tagu dynamicznego** o nazwie **Wstaw zawartość wiadomości e-mail** do zawartości strony.
 
     - Zawartość strony: Dostępne są dwie karty:
       - **Funkcje** tekstowe: Do utworzenia strony docelowej jest dostępny edytor tekstów sformatowanych. Oprócz typowych ustawień czcionki i formatowania dostępne są następujące ustawienia:
         - **Tag dynamiczny**: Wybierz z następujących tagów:
-          - **Nazwa użytkownika**
-          - **Nazwa nadawcy wiadomości e-mail**
-          - **Adres e-mail nadawcy**
-          - **Temat wiadomości e-mail**
-          - **Zawartość wiadomości e-mail**
+          - **Wstaw nazwę**
+          - **Wstawianie nazwy nadawcy**
+          - **Wstawianie adresu e-mail nadawcy**
+          - **Wstawianie tematu wiadomości e-mail**
+          - **Wstawianie zawartości wiadomości e-mail**
+          - **Wstawianie daty**
         - **Użyj z domyślnego**: Wybierz dostępny szablon na początek. Tekst i układ można zmodyfikować w obszarze edytowania. Aby przywrócić domyślny tekst i układ szablonu strony docelowej, kliknij pozycję **Resetuj do domyślnego.**
     - **Kod**: Możesz bezpośrednio wyświetlać i modyfikować kod HTML.
 

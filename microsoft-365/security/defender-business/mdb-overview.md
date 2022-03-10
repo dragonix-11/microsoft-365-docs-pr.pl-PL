@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/08/2022
+ms.date: 03/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 4070cb273a64f34468f313f79c9c51c400bfe7db
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: 7f6e395c7ade55cfbc7f53db1f4e93e6af215238
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406210"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419103"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Omówienie usługi Microsoft Defender dla firm
 
@@ -34,7 +34,7 @@ ms.locfileid: "63406210"
 
 Microsoft Defender for Business to nowe rozwiązanie do zabezpieczeń punktów końcowych zaprojektowane specjalnie dla małych i średnich firm (do 300 pracowników). Dzięki temu rozwiązaniu zabezpieczeń punktów końcowych urządzenia w Twojej organizacji są lepiej chronione przed oprogramowaniem wymuszającym okup, złośliwym oprogramowaniem, wyłudzaniem informacji i innymi zagrożeniami. 
 
-Obejrzyj poniższy klip wideo, aby dowiedzieć się więcej o programie Defender dla firm:
+Obejrzyj poniższy klip wideo, aby dowiedzieć się więcej o programie Defender dla firm: <br/><br/>
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 

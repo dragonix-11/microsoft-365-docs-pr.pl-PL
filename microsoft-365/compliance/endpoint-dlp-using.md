@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak skonfigurować zasady ochrony przed utratą danych (DLP) w celu używania Microsoft 365 lokalizacji ochrony przed utratą danych (EPDLP, Endpoint Data Loss Prevention).
-ms.openlocfilehash: 5fc271028e4c20d431c4535fcdbf902bf17cdbb4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cecd489aa5ceb5f0d5d233a4bf09caa24dee6f8b
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311847"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419159"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Korzystanie z ochrony przed utratą danych w punkcie końcowym
 
@@ -168,7 +168,7 @@ Ograniczanie plików poufnych, które są zgodne z zasadami, od ich współużyt
 
 #### <a name="unallowed-browsers"></a>Niedozwolone przeglądarki
 
-W przypadku Windows dodajesz przeglądarki określone przez ich wykonywalne nazwy, które będą blokowane do uzyskiwania dostępu do plików, które są zgodne z warunkami wymuszonych zasad DLP, gdzie ograniczenie przekazywania do usług w chmurze jest ustawione na blokowanie lub blokowanie zastępowania. Gdy te przeglądarki będą zablokowane przez te przeglądarki, użytkownicy końcowi zobaczą wyskakujące powiadomienie z prośbą o otwarcie pliku za pośrednictwem Microsoft Edge.
+W przypadku Windows dodajesz przeglądarki określone przez ich wykonywalne nazwy, które będą blokowane do uzyskiwania dostępu do plików, które są zgodne z warunkami wymuszonych zasad DLP, gdzie ograniczenie przekazywania do usług w chmurze jest ustawione na blokowanie lub blokowanie zastępowania. Jeśli dostęp do pliku zostanie zablokowany dla tych przeglądarek, użytkownicy końcowi zobaczą wyskakujące powiadomienie z prośbą o otwarcie pliku za pośrednictwem programu Microsoft Edge lub wyświetlenie dostosowanego komunikatu, jeśli taki plik został skonfigurowany.
 
 W przypadku urządzeń z systemem macOS należy dodać pełną ścieżkę pliku. Aby znaleźć pełną ścieżkę aplikacji dla komputerów Mac:
 
@@ -431,7 +431,7 @@ Istnieją trzy procedury.
 
 #### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Testowanie automatycznego kwarantanny na Windows 10 urządzenia
 
-1. Zaloguj się Windows 10 komputera przy użyciu konta użytkownika określonego w kroku 5 konfigurowanie zasad w celu blokowania OneDrive synchronizacji plików z etykietą poufności [Wysoce](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) poufne.
+1. Zaloguj się do komputera Windows 10 przy użyciu konta użytkownika określonego w kroku 5 konfigurowania zasad w celu blokowania OneDrive synchronizacji plików z etykietą poufności [Wysoce poufne.](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential)
 
 2. Utwórz folder, którego zawartość nie będzie synchronizowana z folderem OneDrive. Przykład:
 

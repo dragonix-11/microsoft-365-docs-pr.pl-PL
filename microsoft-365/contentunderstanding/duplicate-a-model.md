@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Dowiedz się, jak i dlaczego duplikować model w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: dc8668ccf407e881bb2114cb679b1ed2049c256e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak i dlaczego zduplikować model rozumienia dokumentu w aplikacji Microsoft SharePoint Syntex.
+ms.openlocfilehash: 979d5b2cddfa7c565abade7ac66c06e3053bbe4d
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983423"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419047"
 ---
 # <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Duplikowanie modelu w aplikacji Microsoft SharePoint Syntex
 

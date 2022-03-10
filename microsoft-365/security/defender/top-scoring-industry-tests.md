@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: d4e4f9baaf67b921358f17dae16908bcf9fed401
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: c12a0dbb56e81c6b2c6d7953cff77e367f2e435d
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63014735"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419336"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Najlepsze wyniki w testach branżowych
 
@@ -41,7 +41,7 @@ Microsoft 365 Defender łączy w jedno rozwiązanie funkcje programu [Microsoft 
 
 Podstawowym podejściem do testowania miTRE jest emulowanie ataków w świecie rzeczywistym w celu zrozumienia, czy rozwiązania mogą odpowiedniej wykrywać rozwiązania i reagować na nie. Podczas gdy test koncentruje się na wykrywanie i reagowanie w punktach końcowych, symulowany atak APT29 języka MITRE obejmuje wiele domen ataków, tworząc możliwości wzmocnienia pozycji defenderów poza tylko ochroną punktu końcowego. Firma Microsoft rozszerzyła widoczność poza punkt końcowy za pomocą Microsoft 365 Defender.
 
-- AtT&CK-based evaluation of Microsoft 365 Defender -May 2020: [Leading in real-world detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+- Analiza ATT&CK na podstawie oceny Microsoft 365 Defender – kwiecień 2021 r.: Analiza potwierdza, że program Microsoft Defender w przypadku programu Endpoint zatrzymuje zaawansowane ataki na [platformach](https://www.microsoft.com/security/blog/2021/04/21/)
 
  Microsoft 365 Defender niemal w 100 procentach obszaru łańcucha ataków. Zapewnia on widoczność działań przestępczych w sposób bardzo widoczny. Widoczność tych informacji znacznie zmniejsza ręczną pracę centrum obsługi zabezpieczeń i rozwiązań dostawców, które korzystało z konkretnych zmian konfiguracji. Microsoft 365 Defender także jak najmniej luk w widoczności, co ogranicza możliwość obsługi przez atakującego niewykrywanych informacji.
 
@@ -55,33 +55,33 @@ Program antywirusowy Microsoft Defender to funkcja ochrony następnej [](https:/
 
 Testy AV-TEST Product Review i Certification Report na trzy kategorie: ochrona, wydajność i użyteczność. Następujące wyniki można uzyskać dla kategorii Ochrona, która ma dwa wyniki: test Real-World i zestaw odst. do testów AUDIO/WIDEO (nazywany "Prevalent Malware").
 
-- Listopad — grudzień 2020 av-TEST Dla użytkowników biznesowych: wynik ochrony [6.0/6.0 Najnowsze](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup></sup>
+- Listopad — grudzień 2021 r. AV-TEST Dla użytkowników biznesowych: ocena ochrony [6.0/6.0 Najnowsza](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2021/microsoft-defender-antivirus-4.18-212622/) <sup></sup>
 
-    Program antywirusowy Microsoft Defender uzyskać doskonały wynik ochrony: 6,0/6,0 z wartością 100% w listopadzie i grudniu. 11 382 próbek złośliwego oprogramowania zostało użytych.
+    Program antywirusowy Microsoft Defender uzyskać doskonały wynik ochrony: 6,0/6,0 z wartością 100% w listopadzie i grudniu. 18 870 próbek złośliwego oprogramowania zostało użytych.
 
-- Wrzesień — październik 2020 AV-TEST Dla użytkowników biznesowych: [Wynik ochrony 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
+- Wrzesień — październik 2021 AV-TEST Dla użytkowników biznesowych: [Wynik ochrony 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2021/microsoft-defender-antivirus-4.18-212518/)
 
-- Lipiec — sierpień 2020 r. AV-TEST Dla użytkowników biznesowych: [wynik ochrony 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
+- Lipiec — sierpień 2021 r. AV-TEST Business — test użytkownika: wynik ochrony [6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2021/microsoft-defender-antivirus-4.18-212419/)
 
-- Maj — czerwiec 2020 r. AV-TEST Dla użytkowników biznesowych: [Wynik ochrony 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
+- Maj — czerwiec 2021 r. AV-TEST Dla użytkowników biznesowych: [Wynik ochrony 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2021/microsoft-defender-antivirus-4.18-212318/)
 
-- Marzec — kwiecień 2020 r. AV-TEST Dla użytkowników biznesowych: [Wynik ochrony 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+- Marzec — kwiecień 2021 r. AV-TEST Business — test użytkownika: [wynik ochrony 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2021/microsoft-defender-antivirus-4.18-212216/)
 
-- Styczeń – luty 2020 r. AV-TEST Dla użytkowników biznesowych: [wynik ochrony 5.5/6.0Analysis](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) | [](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
+- Styczeń – luty 2021 r. AV-TEST Dla użytkowników biznesowych: [wynik ochrony 6.0/6.0Analysis](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2021/microsoft-defender-antivirus-4.18-212117/) | [](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 ### <a name="av-comparatives-protection-rating-of-998-in-the-latest-test"></a>AV-Comparatives: Ocena ochrony na poziomie 99,8% w najnowszym teście
 
 Test zabezpieczeń biznesowych składa się z trzech głównych części: testu ochrony usługi Real-World naśladujących ataki złośliwego oprogramowania online, testu ochrony przed złośliwym oprogramowaniem, w którym złośliwe oprogramowanie wprowadza się do systemu spoza Internetu (na przykład przez USB) oraz testu wydajności, który ma wpływ na wydajność systemu.
 
-- Test zabezpieczeń biznesowych 2020 (sierpień – listopad): najnowsze stawki za ochronę na świecie na [poziomie 99,8%](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/) <sup></sup>
+- Test zabezpieczeń biznesowych 2021 (sierpień– listopad): najnowsze stawki za ochronę na świecie na [poziomie 99,8%](https://www.av-comparatives.org/tests/business-security-test-2021-august-november/) <sup></sup>
 
     Program antywirusowy Microsoft Defender stale wysoki w Real-World roku (w ostatnim teście wynosi 99,8%.
 
-- Test zabezpieczeń biznesowych 2020 (marzec – czerwiec): wskaźnik ochrony przed zagrożeniami w świecie rzeczywistym [99,7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
+- Test zabezpieczeń biznesowych 2021 (marzec – czerwiec): wskaźnik ochrony na [świecie rzeczywistym 99,7%](https://www.av-comparatives.org/tests/business-security-test-2021-march-june/)
 
-- Test zabezpieczeń biznesowych 2019 (sierpień – listopad): wskaźnik ochrony na świecie [rzeczywistym 99,6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
+- Test zabezpieczeń biznesowych 2020 (sierpień – listopad): wskaźnik ochrony przed [realnym światem 99,8%](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/)
 
-- Test zabezpieczeń biznesowych 2019 (marzec – czerwiec): wskaźnik ochrony przed zagrożeniami rzeczywistymi [99,9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
+- Test zabezpieczeń biznesowych 2020 (marzec – czerwiec): Analiza poziomu ochrony przed zagrożeniami rzeczywistymi [99,7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) | [](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 ### <a name="se-labs-aaa-award-in-the-latest-test"></a>SE Laboratorium: nagroda AAA w najnowszym teście
 
@@ -110,14 +110,6 @@ SE Laboratorium testuje szereg rozwiązań używanych przez produkty i usługi w
 Program Microsoft Defender for Endpoint [wykrywanie i reagowanie w punktach końcowych](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) funkcje zaawansowanego wykrywania ataków, które są w pobliżu w czasie rzeczywistym i z możliwością działania. Analitycy zabezpieczeń mogą efektywnie określać priorytety alertów, zyskać wgląd w pełny zakres naruszenia zabezpieczeń oraz podjąć działania w celu reagowania na zagrożenia.
 
 Funkcje ochrony punktu końcowego i EDR usługi Microsoft Defender for Endpoint uzyskały dodatnie wyniki testów i publikacji branżowych. [Firma SC Labs oceniała narzędzia zabezpieczeń](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) punktów końcowych w czerwcu 2020 r. i przekazała programowi Microsoft Defender gwiazdki dla punktu [końcowego 5/5](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). Nazwali oni usługę Microsoft Defender for Endpoint możliwością ochrony organizacji przed współczesnym krajobrazem zagrożeń przy użyciu pełnego zestawu funkcji zabezpieczeń. Firma SC Labs zidentyfikowała również rozwiązanie zabezpieczeń punktu końcowego jako ujednolicone. Potwierdzili oni także, że ochrona punktu końcowego wykrywanie i reagowanie w punktach końcowych funkcjonalnością, ponieważ łańcuch ataków jest teraz w pełni objęty rozwiązaniami.
-
-### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE: wiodące w branży kable i funkcje wykrywania
-
-Test MITRE sprawdzał możliwość wykrycia przez produkty technik często używanych przez grupę ataków kierowanej APT3 (znanej również jako Boron lub UPS). Aby wyodrębnić funkcje wykrywania, wszystkie funkcje ochrony i zapobiegania były wyłączone. Firma Microsoft z przyjemnością jest jednym z pierwszych dostawców usługi EDR, którzy założyli konta do oceny miTRE na podstawie struktury ATT&CK. Ta framework jest powszechnie uważane za najbardziej kompleksowy katalog technik i taktyk atakujących.
-
-- AtT&oceny programu Microsoft Defender dla punktu końcowego na podstawie firmy CK — grudzień 2018 r.: wiodące kable [i](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/) |  funkcje [wykrywaniaAnalysis](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
-
-    Program Microsoft Defender for Endpoint dostarcza kompleksowy zakres technik atakujących w całym łańcuchu ataków. Najważniejsze informacje obejmowały szerokość telemetrii, siłę analizy zagrożeń oraz zaawansowane, automatyczne wykrywanie za pośrednictwem uczenia maszynowego, heuristics i monitorowania zachowania.
 
 ## <a name="to-what-extent-are-tests-representative-of-protection-in-the-real-world"></a>W jakim zakresie jest to test reprezentujący ochronę w świecie rzeczywistym?
 

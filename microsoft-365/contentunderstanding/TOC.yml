@@ -40,7 +40,7 @@
           href: model-usage-analytics.md
         - name: Korzystanie z taksonomii magazynu terminów podczas tworzenia wyodrębnianego
           href: leverage-term-store-taxonomy.md
-        - name: SharePoint Syntex tryb ułatwień dostępu
+        - name: Tryb ułatwień dostępu
           href: accessibility-mode.md
     - name: Przetwarzanie formularza
       items:

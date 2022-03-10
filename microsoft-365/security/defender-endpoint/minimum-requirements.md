@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d4d76a45d69994c82c2027f57d5c3b045e82397
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 03ac5ed0d63fb88639e9b7e1b55987bf328476e1
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011286"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419075"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Minimalne wymagania programu Microsoft Defender dla punktu końcowego
 
@@ -73,6 +73,11 @@ Dostęp do usługi Defender for Endpoint odbywa się za pośrednictwem przegląd
 - System Windows 11 Pro dla edukacji
 - System Windows10 dla firm
 - [Windows 10 Enterprise LTSC 2016 (lub nowszy)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+
+    >[!NOTE]
+    >Mimo że program Windows 10 IoT Enterprise jest obsługiwanym przez system operacyjny w programie Microsoft Defender for Endpoint i umożliwia im rozpowszechnianie go w ramach produktu lub rozwiązania, klienci powinni postępować zgodnie ze wskazówkami OEM/ODM, które mają na celu uzyskanie pomocy technicznej i oprogramowania zainstalowanego na hoście.
+
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education

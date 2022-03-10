@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/03/2022
+ms.date: 03/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e4b28078c79b47ae48af590457d6721b0b470659
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a078b2a88fdde3af840cff64414fec0a712ae92e
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317405"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419308"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Urządzenia w programie Microsoft Defender dla firm
 
@@ -71,8 +71,6 @@ W poniższej tabeli opisano najczęściej używane metody dołączania urządze�
 | **Microsoft Intune** lub **Microsoft Endpoint Manager**<br/>(*dostępne dla klientów, którzy Microsoft Intune lub Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) zarządzanie [urządzeniami przenośnymi](/mem/intune/enrollment/device-enrollment) są częścią Endpoint Manager. Microsoft 365 Business Premium klienci mają już Microsoft Intune klientów i mogą skorzystać z tej opcji.<br/><br/>Jeśli korzystasz już z usługi Endpoint Manager usługi Defender dla firm, możesz kontynuować korzystanie z usługi Endpoint Manager do korzystania z urządzeń i zarządzania nimi<br/><br/>Aby użyć tej metody, zobacz [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | System Windows <br/>macOS<br/>iOS<br/>System operacyjny Android | 
 | **Konfiguracja zabezpieczeń programu Microsoft Defender dla firm** <br/>(*używa portalu Microsoft 365 Defender)* | Aby użyć tej opcji, skonfiguruj pewne ustawienia w celu ułatwienia komunikacji między usługą Defender dla Firm a programem Endpoint Manager. Następnie możesz wnosić urządzenia do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) przy użyciu pakietu, który można pobrać i uruchomić na każdym urządzeniu. Między urządzeniami a usługą Azure AD jest ustanowione zaufanie i zasady zabezpieczeń usługi Defender Azure Active Directory usługi Defender dla firm są wypychane na urządzenia.<br/><br/>Aby dowiedzieć się więcej, zobacz [Konfiguracja zabezpieczeń programu Microsoft Defender dla firm](#microsoft-defender-for-business-security-configuration). | System Windows <br/>macOS |
 
-
-
 > [!IMPORTANT]
 > Jeśli coś poszło nie tak, a proces dołączania zakończy się niepowodzeniem, zobacz Rozwiązywanie problemów z usługą [Microsoft Defender dla firm](mdb-troubleshooting.yml).
 
@@ -86,7 +84,7 @@ Aby dowiedzieć się więcej o automatycznym dołączaniu, zobacz krok 2 w tece 
 
 ## <a name="local-script-in-defender-for-business"></a>Skrypt lokalny w programie Defender dla firm
 
-Aby w urządzeniach Windows Mac, możesz użyć skryptu lokalnego. Uruchomienie skryptu dołączania na urządzeniu powoduje utworzenie zaufania za pomocą programu Azure Active Directory, zarejestrowanie urządzenia w programie Microsoft Endpoint Manager i uruchomienie programu Defender dla firm. Ta metoda jest przydatna w przypadku urządzeń dołączających do programu Defender dla firm. Możesz wychować do 10 urządzeń jednocześnie.
+Aby w urządzeniach Windows Mac, możesz użyć skryptu lokalnego. Po uruchomieniu skryptu dołączania na urządzeniu tworzy on zaufanie dla programu Azure Active Directory (jeśli jeszcze nie istnieje), rejestruje urządzenie w usłudze Microsoft Endpoint Manager (jeśli nie zostało jeszcze zarejestrowane), a następnie dodaje urządzenie do usługi Defender dla firm. Ta metoda jest przydatna w przypadku urządzeń dołączających do programu Defender dla firm. Możesz wychować do 10 urządzeń jednocześnie.
 
 1. Przejdź do Microsoft 365 Defender portalu internetowego ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 

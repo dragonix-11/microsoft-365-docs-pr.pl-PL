@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Opis maksymalnej liczby zasad i elementów na zasady dotyczące zasad przechowywania i zasad etykiet przechowywania
-ms.openlocfilehash: f7b445ab8fd0afe5fb893933c3475385e09bc84e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 4cd8fc5f141f9e039a271e8534e156e4df0582e9
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011943"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419131"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limity dotyczące zasad przechowywania i zasad etykiet przechowywania
 
@@ -39,7 +39,8 @@ Obsługiwane jest maksymalnie 1000 etykiet przechowywania na dzierżawcę.
 
 Jedna dzierżawa może mieć maksymalnie 10 000 zasad (dowolna konfiguracja). Ta maksymalna liczba obejmuje różne zasady przechowywania i inne zasady dotyczące zgodności, takie jak zasady ochrony przed przepisami, bariery informacyjne, zbierania elektronicznych materiałów dowodowych, blokady w związku z postępowaniem sądowym, In-Place blokady i etykiety wrażliwości. Jednak ta maksymalna liczba z wyłączeniem:
 
-- Zasady dotyczące etykiet SharePoint i OneDrive usuwać, zamiast zachowywać lub zachowywać, a następnie usuwać. Wyjątkiem jest automatyczne stosowanie zasad etykiet dla załączników w chmurze, które są zawsze uwzględniane w maksymalnej wartości 10 000.
+- Zasady automatycznego oznaczania etykiet dla SharePoint i OneDrive, chyba że są dla załączników w chmurze.
+- Opublikowane zasady dotyczące etykiet SharePoint i OneDrive, które usuwają się tylko, a nie zachowują-tylko, lub zachowują i usuwają.
 - Exchange przechowywania z [zarządzania rekordami wiadomości](/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
 
 W ramach tego limitu 10 000 zasad istnieją również pewne limity maksymalnej liczby zasad przechowywania dla każdego obciążenia pracą:

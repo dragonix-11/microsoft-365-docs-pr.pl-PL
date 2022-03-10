@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Po utworzeniu etykiety wrażliwości możesz automatycznie przypisać etykietę do plików i wiadomości e-mail lub poprosić użytkowników o wybranie etykiety, która jest zalecana.
-ms.openlocfilehash: f617338448b71541d5ab0d914ab1a3198d4f486c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ab47315fe56124f54b1404ceebc015a715eb74ee
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319657"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419322"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiet wrażliwości do zawartości
 
@@ -315,15 +315,19 @@ We wszystkich przypadkach dopasowane pliki są oznaczane etykietą, aż OneDrive
 
     ![Wybierz stronę lokalizacje w celu konfiguracji automatycznego oznaczania etykiet.](../media/locations-auto-labeling-wizard.png)
     
-    Aby określić poszczególne OneDrive, zobacz Uzyskiwanie listy wszystkich adresów [URL OneDrive UŻYTKOWNIKÓW w organizacji](/onedrive/list-onedrive-urls).
+    Więcej informacji o lokalizacjach:
+    
+    - Jeśli wybierzesz **Exchange** i chcesz dodać etykiety do przychodzących wiadomości e-mail spoza organizacji, musisz zachować wartość domyślną **Wszystkie**. Aby ta konfiguracja była ograniczony do konkretnych użytkowników w organizacji, wybierz pozycję **Reguły zaawansowane** w następnym kroku. Następnie skonfiguruj warunki tak, aby uwzględnić określonych adresatów w organizacji w celu osiągnięcia wymagania zakresu dla podzestawu użytkowników.
+    
+    - Aby określić poszczególne OneDrive, zobacz Uzyskiwanie listy wszystkich adresów [URL OneDrive UŻYTKOWNIKÓW w organizacji](/onedrive/list-onedrive-urls).
 
-7. Na stronie **Konfigurowanie reguł typowych** lub zaawansowanych: Zachowaj domyślną regułę Common,  aby zdefiniować reguły identyfikujące zawartość do oznaczania etykietą we wszystkich wybranych lokalizacjach. Jeśli dla poszczególnych lokalizacji są potrzebne inne reguły, wybierz **pozycję Reguły zaawansowane**. Następnie wybierz pozycję **Dalej**.
+7. Na stronie **Konfigurowanie reguł typowych** lub zaawansowanych: Zachowaj domyślną regułę Common,  aby zdefiniować reguły identyfikujące zawartość do oznaczania etykietą we wszystkich wybranych lokalizacjach. Jeśli dla poszczególnych lokalizacji są potrzebne różne reguły, w tym więcej opcji dla Exchange, wybierz **pozycję Reguły zaawansowane**. Następnie wybierz pozycję **Dalej**.
 
     Reguły używają warunków, które obejmują typy informacji poufnych i opcje udostępniania:
     - W przypadku typów informacji poufnych możesz wybrać zarówno wbudowane, jak i niestandardowe typy informacji poufnych.
     - W przypadku opcji udostępnionych możesz wybrać opcję tylko z osobami **w** mojej organizacji lub **z osobami spoza mojej organizacji**.
 
-    Jeśli Twoja lokalizacja **jest Exchange lub** jeśli **wybierzesz pozycję** Reguły zaawansowane, możesz wybrać inne warunki:
+    Jeśli lokalizacja **jest Exchange i** wybrano pozycję **Reguły** zaawansowane, możesz wybrać inne warunki:
     - Adres IP nadawcy to
     - Domena adresata to
     - Adresatem jest

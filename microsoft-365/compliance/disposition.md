@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitoruj usuwanie zawartości i zarządzaj nimi podczas korzystania z recenzji usuwania lub elementów oznaczonych jako rekordy są automatycznie usuwane zgodnie z skonfigurowanymi ustawieniami.
-ms.openlocfilehash: 5ee5af04b399d7f7d0ba94dc3b943d259d57ff34
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2d078eb00ffa6d2dd8279c7e5eb65a8fcfb6fa53
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033748"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419187"
 ---
 # <a name="disposition-of-content"></a>Disposition of content
 
@@ -187,7 +187,7 @@ Jak widać w przedstawionym przykładzie, obsługiwane akcje to:
   
 - **Zatwierdzanie usuwania**:
     - Jeśli ta akcja jest wybrana na pośredni etap przeglądu rozsyłania (skonfigurowano wiele etapów): Element przechodzi do następnego etapu procesu ich rozsyłania.
-    - Jeśli ta akcja jest zaznaczona do końcowego etapu przeglądania usuwania lub istnieje tylko jeden etap usuwania: Element jest oznaczony jako kwalifikuje się do trwałego usunięcia. Dokładne chronometraż tego usunięcia zależy od obciążenia pracą. Aby uzyskać więcej informacji, zobacz [Jak działają ustawienia przechowywania z zawartością w miejscu](retention.md#how-retention-settings-work-with-content-in-place).
+    - Jeśli ta czynność jest wybrana na ostatni etap kontroli usuwania lub istnieje tylko jeden etap usuwania: Element jest oznaczony jako kwalifikuje się do trwałego usunięcia, co nastąpi w ciągu 7 dni.
 - **Etykieta ponownie**:
     - Jeśli ta akcja jest zaznaczona, element kończy proces przeglądania ich rozsyłania oryginalnej etykiety. Następnie element podlega ustawień przechowywania na nowo wybranej etykiecie przechowywania.
 - **Rozszerz**:

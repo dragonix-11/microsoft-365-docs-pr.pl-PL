@@ -1,5 +1,5 @@
 ---
-title: Różnica między zrozumieniem dokumentu a modelami przetwarzania formularzy
+title: Różnice między zrozumieniem dokumentu a modelami przetwarzania formularzy
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Poznaj kluczową różnicę między modelem rozumienia dokumentu a modelem przetwarzania formularzy.
-ms.openlocfilehash: 8a97c4a2c03d95a5ba9724423a405cb49d4a90fe
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+description: Zapoznaj się z kluczowymi różnicami między modelem rozumienia dokumentu a modelem przetwarzania formularzy.
+ms.openlocfilehash: 0605beb2b034343cc53e32058905870f75f811a4
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63014747"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419294"
 ---
-# <a name="difference-between-document-understanding-and-form-processing-models"></a>Różnica między zrozumieniem dokumentu a modelami przetwarzania formularzy 
+# <a name="differences-between-document-understanding-and-form-processing-models"></a>Różnice między zrozumieniem dokumentu a modelami przetwarzania formularzy 
 
 Zrozumienie zawartości w aplikacji Microsoft SharePoint Syntex umożliwia identyfikowanie i klasyfikowanie dokumentów przekazanych SharePoint bibliotek dokumentów oraz wyodrębnianie odpowiednich informacji z poszczególnych plików.  Na przykład po przesłaniu plików do biblioteki SharePoint dokumentów wszystkie pliki zidentyfikowane jako Zamówienia zakupu są klasyfikowane jako  takie, a następnie wyświetlane w niestandardowym widoku biblioteki dokumentów. Ponadto można pociągnąć określone informacje z każdego pliku (na przykład numer punktu usług  posumowych i sumę *) i* wyświetlić je jako kolumnę w widoku biblioteki dokumentów. 
 
