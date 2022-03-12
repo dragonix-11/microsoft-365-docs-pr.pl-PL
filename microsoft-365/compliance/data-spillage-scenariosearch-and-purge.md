@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Za pomocą funkcji zbierania elektronicznych materiałów dowodowych i narzędzi wyszukiwania możesz zarządzać incydentem rozlanie danych w organizacji i reagować na nie.
-ms.openlocfilehash: 51fe6119acff7007f879b2ef323f263865458dfa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98dbb4ec36b7fb8166732aa855eefe3db6c5bbdc
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984389"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449558"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Seria rozwiązań zbierania elektronicznych materiałów dowodowych: Scenariusz rozlanie danych — wyszukiwanie i przeczyszczanie
 
@@ -86,8 +86,6 @@ Aby utworzyć przeszukiwanie zawartości skojarzone ze sprawą zbierania elektro
 Po utworzeniu wyszukiwania zawartości należy przejrzeć i sprawdzić, czy wyniki wyszukiwania zawierają tylko te wiadomości e-mail, które należy usunąć. W przeszukiwaniu zawartości możesz wyświetlić podgląd losowej próbki 1000 wiadomości e-mail bez eksportowania wyników wyszukiwania, aby uniknąć rozlewu danych. Aby dowiedzieć się więcej o ograniczeniach wersji Preview, zobacz [Limity wyszukiwania zawartości](limits-for-content-search.md).
   
 Jeśli masz więcej niż 1000 skrzynek pocztowych lub więcej niż 100 wiadomości e-mail do przejrzenia, możesz podzielić wyszukiwanie początkowe na wiele wyszukiwań przy użyciu dodatkowych słów kluczowych lub warunków, takich jak zakres dat lub nadawca/adresat, i osobno przeglądać wyniki każdego wyszukiwania. Zanotuj wszystkie zapytania wyszukiwania, których będziesz używać podczas usuwania wiadomości w [kroku 7](#step-7-permanently-delete-the-spilled-data).
-
-Jeśli przypisano użytkownika korzystającego z Office 365 E5 lub użytkownika końcowego, można sprawdzić maksymalnie 10 000 wyników wyszukiwania jednocześnie przy użyciu Advanced eDiscovery. Jeśli trzeba przejrzeć więcej niż 10 000 wiadomości e-mail, możesz podzielić zapytanie wyszukiwania według zakresu dat i przejrzeć poszczególne wyniki, ponieważ wyniki wyszukiwania są sortowane według dat. W Advanced eDiscovery możesz oznaczyć wyniki wyszukiwania za pomocą funkcji Etykieta jako w  panelu podglądu i przefiltrować wyniki wyszukiwania według tagu, który masz na etykiecie. Jest to przydatne podczas współpracy z pomocniczym recenzentem. Za pomocą dodatkowych narzędzi analitycznych w programie Advanced eDiscovery, takich jak optyczne rozpoznawanie znaków, wątkowanie wiadomości e-mail i predykcyjne kodowanie, można szybko przetwarzać i przeglądać tysiące wiadomości oraz oznaczać je do dalszego przeglądu. Zobacz [Szybka konfiguracja dla Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
 
 Gdy znajdziesz wiadomość e-mail zawierającą rozlane dane, sprawdź, czy adresaci wiadomości ustalili, czy została udostępniona zewnętrznie. Aby jeszcze bardziej prześledzić wiadomość, możesz zebrać informacje o nadawcy i zakresy dat w celu używania dzienników śledzenia wiadomości. Ten proces jest opisany w [kroku 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 

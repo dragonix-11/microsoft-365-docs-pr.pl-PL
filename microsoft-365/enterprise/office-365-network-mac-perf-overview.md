@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Omówienie łączności sieciowej w Centrum Administracja Microsoft 365 sieci
-ms.openlocfilehash: ce0878037a3741ad440d0bddeefcca86b7b62f74
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 3a0f2b8d54c90884a79e79288d173aa5e17c0ef2
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010414"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450318"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Łączność sieciowa w Administracja Microsoft 365 center
 
@@ -82,7 +82,7 @@ Raporty testowe są połączone z lokalizacją, jeśli zostały dodane z informa
 Próbki pomiarów i lokalizacje biur powinny pojawiać się po 2–3 minutach od ukończenia raportu testowego. Aby uzyskać więcej informacji, [zobacz Microsoft 365 test łączności sieciowej](office-365-network-mac-perf-onboarding-tool.md).
 
 > [!NOTE]
-> Obecnie podczas dodawania lokalizacji biura do usługi Microsoft 365 w sieci centrum administracyjne platformy Microsoft 365 możesz podać tylko adresy IPv4 dla podsieci sieci LAN. Egress IP muszą używać protokołu IPv4.
+> Obecnie podczas dodawania lokalizacji biura do Microsoft 365 sieciowego w sieci centrum administracyjne platformy Microsoft 365 możesz podać tylko adresy IPv4 dla podsieci sieci LAN. Egress IP muszą używać protokołu IPv4.
 
 ## <a name="how-do-i-use-this-information"></a>Jak używać tych informacji?
 

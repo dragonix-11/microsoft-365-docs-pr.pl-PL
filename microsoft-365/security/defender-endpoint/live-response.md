@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 882454e00517624c3bc43e87308007b00ece9507
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315977"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449746"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Badanie jednostek na urządzeniach przy użyciu funkcji odpowiedzi na żywo
 
@@ -87,6 +87,8 @@ Zanim zainicjujesz sesję na urządzeniu, upewnij się, że spełniasz następuj
 
   > [!NOTE]
   > Tylko użytkownicy z rolami administratora globalnego lub zabezpieczeń mogą edytować te ustawienia.
+  > 
+  > Funkcja Automated Investigation musi być włączona w [ustawieniach funkcji zaawansowanych przed](advanced-features.md) włączeniem funkcji odpowiedzi na żywo.
 
 - **Włącz odpowiedź na żywo dla serwerów z zaawansowanej strony ustawień** (zalecane).
 
@@ -277,7 +279,7 @@ W dowolnym momencie sesji możesz anulować polecenie, naciskając klawisze CTRL
 
 ## <a name="run-a-script"></a>Uruchom skrypt
 
-Przed uruchomieniem skryptów PowerShell/Bash należy najpierw przekazać je do biblioteki.
+Przed uruchomieniem skryptu PowerShell/Bash należy najpierw przekazać go do biblioteki.
 
 Po przesłaniu skryptu do biblioteki `run` użyj tego polecenia, aby go uruchomić.
 

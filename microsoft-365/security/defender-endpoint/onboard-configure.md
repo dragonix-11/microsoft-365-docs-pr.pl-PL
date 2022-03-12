@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4492b50cfdfb0125a9079eb1f4a4945b6e06e011
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 0922c827330fff25d7da1bbc69147c7a50f474df
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014701"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449754"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Urządzenia na urządzeniach i konfigurowanie programu Microsoft Defender na temat możliwości punktu końcowego
 
@@ -109,7 +109,7 @@ Po włoceniu urządzeń konieczne będzie skonfigurowanie innych możliwości us
 |Funkcje odpowiedzi na pliki: zbieranie plików, analiza głębokości, blokowanie plików, zatrzymywanie i poddaj kwarantannie procesy     |      T   |    T     |     T    |    T    |    T   |
 |Odpowiedź na żywo    |      T   |    T     |     T    |    T    |    T   |
 
-(<a id="fn1">1</a>) Odwołuje się do nowoczesnego, ujednoliconego rozwiązania dla Windows Server 2012 i 2016. Aby uzyskać więcej informacji, [zobacz Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md) (Wewnechaj serwery serwerów do usługi Defender for Endpoint).
+(<a id="fn1">1</a>) Odwołuje się do nowoczesnego, ujednoliconego rozwiązania dla Windows Server 2012 R2 i 2016. Aby uzyskać więcej informacji, [zobacz Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md) (Wewnechaj serwery serwerów do usługi Defender for Endpoint).
 
 >[!NOTE]
 >Windows 7, 8.1, Windows Server 2008 R2 obsługują czujnik EDR i audio/wideo przy użyciu System Center Endpoint Protection (SCEP).

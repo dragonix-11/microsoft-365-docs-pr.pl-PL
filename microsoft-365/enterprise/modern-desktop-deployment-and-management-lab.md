@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Dowiedz się, gdzie można uzyskać dostęp do Windows i Office Laboratorium wdrażania.
-ms.openlocfilehash: 7f91fdbd72a496d06377259387f53fbe923f1981
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f5b2bad3828ef30da822be102010124ccb26091e
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314451"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450720"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows i Office 365 laboratorium wdrażania
 
@@ -101,7 +101,7 @@ Szczegółowe przewodniki laboratorium przejdą przez wiele scenariuszy wdrażan
 [Pobierz zestaw Windows 11 i Office 365 laboratorium wdrażania](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> Pobierz tę zawartość za pomocą szerokopasmowego połączenia internetowego i na automatyczne inicjowanie obsługi możesz zezwolić na jej automatyczne inicjowanie po około 30 minutach. Środowisko laboratoryjnych wymaga co najmniej 16 GB dostępnej pamięci i 150 GB wolnego miejsca na dysku. W celu uzyskania optymalnej wydajności zalecane jest 32 GB dostępnej pamięci i 300 GB wolnego miejsca. Laboratorium Windows 10 wygasa 16 maja 2022 r. Laboratorium Windows 11 wygasa 11 kwietnia 2022 r. Nowe wersje zostaną opublikowane przed ich wygaśnięciem.
+> Pobierz tę zawartość za pomocą szerokopasmowego połączenia internetowego i na automatyczne inicjowanie obsługi możesz zezwolić na jej automatyczne inicjowanie po około 30 minutach. Środowisko laboratoryjnych wymaga co najmniej 16 GB dostępnej pamięci i 150 GB wolnego miejsca na dysku. W celu uzyskania optymalnej wydajności zalecane jest 32 GB dostępnej pamięci i 300 GB wolnego miejsca. Laboratorium Windows 10 wygasa 16 maja 2022 r. Laboratorium Windows 11 wygasa 6 maja 2022 r. Nowe wersje zostaną opublikowane przed ich wygaśnięciem.
 
 ## <a name="additional-guidance"></a>Dodatkowe wskazówki
 

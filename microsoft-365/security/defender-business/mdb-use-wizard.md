@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/02/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 8c7100774057d399667a3176670a55d5b4479c73
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 2cc157e363c42b94cac750b19a6122ed0a22c3de
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419033"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450762"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>Konfigurowanie programu Microsoft Defender dla firm przy użyciu kreatora
 
 > [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
+> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
@@ -55,7 +55,7 @@ Kreator pomoże Ci szybko i wydajnie skonfigurować usługę Defender dla firm. 
 
    - Jeśli korzystasz już z usługi Microsoft Intune (część usługi Microsoft Endpoint Manager), a Twoja organizacja ma urządzenia zarejestrowane w usłudze Endpoint Manager, zostaniesz poproszony o określenie, czy chcesz korzystać z automatycznego dołączania dla niektórych lub [](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) wszystkich zarejestrowanych Windows urządzeniach. Automatyczne wniesienie konfiguruje połączenie między usługami Endpoint Manager i Defender dla Firm, a następnie bezproblemowo dołącza Windows z usługą Defender dla firm.
 
-   - Jeśli jeszcze nie korzystasz z usługi Endpoint Manager lub masz urządzenia inne niż Windows zarejestrowane w programie Endpoint Manager, możesz ręcznie włączyć te urządzenia do usługi Defender dla firm. 
+   - Jeśli jeszcze nie korzystasz z usługi Endpoint Manager lub masz urządzenia inne niż Windows zarejestrowane w programie Endpoint Manager, możesz ręcznie włączyć je do usługi [Defender dla firm](mdb-onboard-devices.md#local-script-in-defender-for-business). 
    
 3. **Skonfiguruj zasady zabezpieczeń**. Program Defender dla firm zawiera domyślne zasady zabezpieczeń dla ochrony następnej generacji i ochrony zapory, które można stosować do urządzeń organizacji. Te zasady domyślne używają zalecanych ustawień i zostały zaprojektowane tak, aby zapewnić silną ochronę Twoich urządzeń. 
 

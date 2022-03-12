@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak znaleźć zasoby dla aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: db8526cbf85be1b9db5b95ed0739d0ec948c2faa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3b8c85cfd405e68884df844c502473cdd95a4fa5
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323167"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449432"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Wprowadzenie do aplikacji Microsoft SharePoint Syntex
 
@@ -66,6 +66,8 @@ Dowiedz się więcej o tym, jak używać i wdrażać SharePoint Syntex twojej or
 |Zobacz przykładowe scenariusze, aby przekazać Ci pomysły dotyczące sposobu SharePoint Syntex w organizacji |[Scenariusze i przypadki użycia na SharePoint Syntex](./adoption-scenarios.md)| 
 |Konfigurowanie i uruchamianie próbnego programu pilotażowego dla SharePoint Syntex |[Uruchamianie wersji próbnej](./trial-syntex.md)|
 |Dowiedz się, jak zautomatyzować SharePoint Syntex dokumentów za pomocą funkcji automatycznego przetwarzania dokumentów |[Zarządzanie umowami przy użyciu Microsoft 365 rozwiązania](./solution-manage-contracts-in-microsoft-365.md)| 
+|Wypróbuj szablon witryny z możliwością SharePoint, aby ułatwić zarządzanie umowami |[Używanie szablonu witryny Zarządzanie umowami](./use-contracts-management-site.md)| 
+|Wypróbuj szablon witryny z instrukcjami w Centrum zawartości, aby dowiedzieć się więcej o modelach |[Używanie szablonu witryny Centrum zawartości](./use-content-center-site.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>Konfigurowanie SharePoint Syntex
 
@@ -76,6 +78,7 @@ Zasoby w tej sekcji ułatwiają administratorowi w organizacji konfigurowanie i 
 |Konfigurowanie i konfigurowanie SharePoint Syntex|[Konfigurowanie SharePoint Syntex](./set-up-content-understanding.md)|
 |Dowiedz się więcej o licencjonowaniu usług SharePoint Syntex|[Licencjonowanie oprogramowania SharePoint Syntex](./syntex-licensing.md)|
 |Dowiedz się więcej o otagowaniu obrazów i wyłączaniu go|[Tagowanie obrazów w programie SharePoint Syntex](./image-tagging.md)|
+|Zarządzanie plikami za pomocą programu PowerShell SharePoint Syntex|[Zarządzanie SharePoint Syntex za pomocą programu PowerShell](./powershell-syntex-intro.md)|
 
 ## <a name="models"></a>Modele
 
@@ -96,7 +99,7 @@ Zasoby w tej sekcji ułatwiają użytkownikom poznanie sposobu tworzenia i konfi
 
 ## <a name="premium-services"></a>Premium usługi
 
-Licencja SharePoint Syntex udostępnia użytkownikom usługi premium content services, które zapewniają dodatkowe funkcje w twoim środowisku Microsoft 365 zawartości. Zasoby w tej sekcji będą zawierały więcej informacji na temat tej funkcji i sposobu ich używania.
+Licencja SharePoint Syntex udostępnia użytkownikom usługi premium content services, które zapewniają dodatkowe funkcje w twoim środowisku Microsoft 365 zawartości. Zasoby w tej sekcji zapewniają więcej informacji na temat tych funkcji i sposobu ich używania.
 
 | Jeśli szukasz tych informacji: | Przejdź do tego zasobu: |
 |:-----|:-----|

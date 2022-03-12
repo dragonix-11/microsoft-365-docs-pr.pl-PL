@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Informacje o przetwarzaniu formularzy w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: 8079f12c3b05d62de95bcb08808d1acc931a37d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak używać kompilacji AI do tworzenia modeli przetwarzania formularzy w aplikacji Microsoft SharePoint Syntex.
+ms.openlocfilehash: d04de2fc71b0b393e560e354253be42053725416
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985101"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450776"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Omówienie przetwarzania formularzy w aplikacji Microsoft SharePoint Syntex
 
@@ -37,11 +37,11 @@ Można na przykład utworzyć model przetwarzania formularzy identyfikujący wsz
 
 ![Widok biblioteki dokumentów.](../media/content-understanding/doc-lib-done.png)</br>  
 
-Pliki przykładowe są służące do przeszkolinia modelu i definiowania informacji do wyodrębnienia z formularza. Układ dokumentu jest uczący się na szkoleniu Twojego modelu. Aby rozpocząć, potrzebujesz tylko pięciu dokumentów formularzy. Za pomocą aplikacji AI Builder przeanalizuje pliki przykładowe pod uwagę pary klucz-wartość, a także można ręcznie zidentyfikować te, które nie zostały wykryte.  Konstruktor AI umożliwia testowanie dokładności modelu na plikach przykładowych.
+Pliki przykładowe są służące do przeszkolinia modelu i definiowania informacji do wyodrębnienia z formularza. Układ dokumentu jest uczący się na szkoleniu Twojego modelu. Aby rozpocząć, potrzebujesz tylko pięciu dokumentów formularzy. AI Builder przeanalizuje pliki przykładowe pod uwagę par klucz-wartość, a także możesz ręcznie identyfikować te, które nie zostały wykryte.  Konstruktor AI umożliwia testowanie dokładności modelu na plikach przykładowych.
 
-Model, który zostanie przeszkoliny i publikowany, tworzy [Power Automate Flow.](/power-automate/getting-started) Przepływ jest uruchamiany po przesłaniu pliku do biblioteki SharePoint dokumentów i wyodrębnia dane, które zostały zidentyfikowane w modelu. Wyodrębnione dane będą wyświetlane w kolumnach w widoku biblioteki dokumentów modelu.
+Po przeszkoliniu i opublikowaniu modelu model tworzy Power Automate [przepływ pracy](/power-automate/getting-started). Przepływ jest uruchamiany po przesłaniu pliku do biblioteki SharePoint dokumentów i wyodrębnia dane, które zostały zidentyfikowane w modelu. Wyodrębnione dane będą wyświetlane w kolumnach w widoku biblioteki dokumentów modelu.
 
-Administrator Office 365 musi włączyć przetwarzanie formularza [](./set-up-content-understanding.md) dla biblioteki SharePoint dokumentów, aby użytkownicy mogli w nim tworzyć [model](create-a-form-processing-model.md) przetwarzania formularzy. Witryny możesz wybrać podczas instalacji lub po zakończeniu konfiguracji w ustawieniach zarządzania.
+Administrator Office 365 musi włączyć przetwarzanie formularzy [](./set-up-content-understanding.md) dla biblioteki SharePoint dokumentów, aby użytkownicy mogli w nim tworzyć [model](create-a-form-processing-model.md) przetwarzania formularzy. Witryny możesz wybrać podczas instalacji lub po zakończeniu konfiguracji w ustawieniach zarządzania.
 
 ### <a name="file-limitations"></a>Ograniczenia dotyczące plików
 

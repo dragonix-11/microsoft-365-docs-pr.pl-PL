@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2979216cb87982210ac33dd8e273702f8bc18bf0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5f0b846fdbfaa76250ae64ae281afc9592a24eb4
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328095"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450356"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Wdowa Windows usługi Microsoft Defender dla punktu końcowego
 
@@ -411,7 +411,7 @@ W przypadku Windows wersji serwera dostępne są dwie opcje Windows z usługi:
 - Usuwanie konfiguracji obszaru roboczego programu Defender for Endpoint
 
 >[!NOTE]
->*Poniższe instrukcje dotyczące wywrzeniania na inne Windows serwera mają zastosowanie również w przypadku, gdy używasz poprzedniej wersji programu Microsoft Defender for Endpoint dla systemu Windows Server 2016 i Windows Server 2012 R2, która wymaga programu MMA. Instrukcje migrowania do nowego nieprawionego rozwiązania znajdują się w scenariuszach migracji z serwera [w programie Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> Poniższe instrukcje dotyczące wywrzenia na Windows serwera mają zastosowanie również w przypadku, gdy jest uruchomiony poprzedni program Microsoft Defender for Endpoint dla systemu Windows Server 2016 i Windows Server 2012 R2, który wymaga użycia programu MMA. Instrukcje migrowania do nowego nieprawionego rozwiązania znajdują się w scenariuszach migracji z serwera [w programie Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

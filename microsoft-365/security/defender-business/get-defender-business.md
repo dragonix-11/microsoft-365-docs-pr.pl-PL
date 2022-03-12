@@ -16,17 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 7519e3b280b4415bb35237f922a2aa25d22b0c8f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4f92c50ad971de439541a7b8ea2e8f9fb5312c48
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323027"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449403"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Uzyskaj usługę Microsoft Defender dla firm
 
 > [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
+> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
@@ -59,7 +59,7 @@ Aby znaleźć dostawcę rozwiązań w swoim obszarze, zrób tak:
 
 ## <a name="get-microsoft-365-business-premium"></a>Uzyskiwanie usługi Microsoft 365 Business Premium
 
-*Począwszy od 1 marca 2022 r. rozpocznie* się jego uruchamianie w ramach programu Microsoft 365 Business Premium. 
+*Od 1 marca 2022 r*. w ramach usługi Defender dla firm jest wprowadzana Microsoft 365 Business Premium. 
 
 Zobacz [Wypróbowanie lub Microsoft 365 Business Premium](../../business-premium/get-microsoft-365-business-premium.md).
 
@@ -100,7 +100,7 @@ Gdy wszystko będzie gotowe do rozpoczęcia okresu próbnego, będziesz pracowa�
 
 |Portal  |Opis  |
 |---------|---------|
-| The centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Użyj aplikacji centrum administracyjne platformy Microsoft 365 aktywuj wersję próbną i zaloguj się po raz pierwszy.<br/><br/> Za pomocą tego centrum administracyjne platformy Microsoft 365: <br/>— Dodawanie lub usuwanie użytkowników<br/>— Przypisywanie licencji użytkowników<br/>- Wyświetlanie produktów i usług<br/>— Wykonywanie zadań konfiguracyjnych dla Microsoft 365 subskrypcji <br/><br/> Aby dowiedzieć się więcej, zobacz [Omówienie centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
+| The centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Skorzystaj z centrum administracyjne platformy Microsoft 365, aby aktywować wersję próbną i zalogować się po raz pierwszy.<br/><br/> Za pomocą tego centrum administracyjne platformy Microsoft 365: <br/>— Dodawanie lub usuwanie użytkowników<br/>— Przypisywanie licencji użytkowników<br/>- Wyświetlanie produktów i usług<br/>— Wykonywanie zadań konfiguracyjnych dla Microsoft 365 subskrypcji <br/><br/> Aby dowiedzieć się więcej, zobacz [Omówienie centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
 | Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Użyj portalu Microsoft 365 Defender, aby skonfigurować usługę Defender dla firm. <br/><br/>Za pomocą portalu Microsoft 365 Defender będziesz: <br/>- Wyświetlanie urządzeń i zasad ochrony urządzeń<br/>— Wyświetlaj wykryte zagrożenia i podejmiesz działania<br/>- Wyświetlanie zaleceń dotyczących zabezpieczeń i zarządzanie ustawieniami zabezpieczeń <br/><br/>Aby dowiedzieć się więcej, [zobacz Rozpoczynanie korzystania z Microsoft 365 Defender usługi](mdb-get-started.md).        |
 
 Jeśli Twoja organizacja używa programu Microsoft 365 Business Premium, to masz Microsoft Intune (część programu Microsoft Endpoint Manager) i być może korzystasz z centrum Microsoft Endpoint Manager administracyjnego ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager umożliwia również zarządzanie urządzeniami i konfigurowanie ustawień zabezpieczeń. Aby dowiedzieć się więcej, [zobacz Microsoft Intune jest dostawcą usługi MDM i mam dla Twoich urządzeń](/mem/intune/fundamentals/what-is-intune).

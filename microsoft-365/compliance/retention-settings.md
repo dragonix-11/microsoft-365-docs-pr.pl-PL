@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Opis ustawień, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i usunąć to, co nie chcesz.
-ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326989"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449249"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
@@ -367,6 +367,14 @@ Przykłady:
 Po zakończeniu okresu przechowywania możesz określić, czy zawartość ma zostać trwale usunięta:
 
 ![Stronie Ustawień przechowywania.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+
+Zanim skonfigurujesz przechowywanie, najpierw zapoznaj się z limitami pojemności i przestrzeni dyskowej dla odpowiednich obciążeń:
+
+- Na SharePoint i OneDrive przechowywane elementy są przechowywane w bibliotece zachowywania witryny, która jest uwzględniana w przydomowym magazynie witryny. Aby uzyskać więcej informacji, zobacz [Zarządzanie limitami miejsca w witrynie](/sharepoint/manage-site-collection-storage-limits) z SharePoint przechowywania.
+
+- Aby Exchange, Teams i Yammer, gdzie przechowywane wiadomości są przechowywane w skrzynkach pocztowych, zobacz limity Exchange Online i włącz automatyczne rozszerzanie [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) [archiwizacji](autoexpanding-archiving.md).
+    
+    W skrajnych przypadkach, gdy w krótkim czasie duża liczba wiadomości e-mail jest usuwana przez użytkowników albo automatycznie z ustawień zasad, konieczne może być również skonfigurowanie w programie Exchange częściej przenoszenia elementów z folderu Elementy do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy do odzyskania w jego archiwaowej skrzynce pocztowej. Aby uzyskać instrukcje krok po kroku, zobacz Zwiększanie przydziału elementów odzyskiwalnych dla skrzynek pocztowych w [hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Usuwanie zawartości starszej niż określony wiek
 

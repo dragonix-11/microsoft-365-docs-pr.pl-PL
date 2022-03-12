@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: 3e430d44789a1f3c43ec55a20ee7e06521f2dcaf
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 7342f368063c2c9024c4942c33a2e41f28eebd36
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014731"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449824"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure) w Microsoft 365 Defender
 
@@ -63,7 +63,10 @@ Poniższe kroki poprowadzi Cię przez dołączanie urządzeń VDI i będą wyró
 > [!WARNING]
 > W środowiskach, w których występują niskie konfiguracje zasobów, procedura rozruchu VDI może spowolnić dołączanie czujnika punktu końcowego programu Defender.
 
-### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>Na Windows 10, Windows 11, Windows Server 2019 lub Windows Server 2022
+### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>Na Windows 10, lub Windows 11 lub Windows Server 2012 R2 lub nowszy
+
+> [!NOTE]
+> Windows Server 2016 i Windows Server 2012 R2 muszą zostać przygotowane przez zastosowanie pakietu instalacyjnego najpierw, zgodnie z instrukcjami w Windows [Onboard,](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) aby ta funkcja działała.
 
 1.  Otwórz pakiet konfiguracji VDI .zip (*WindowsDefenderATPOnboardingPackage.zip*), który został pobrany z Kreatora dołączania usługi. Możesz również pobrać pakiet z portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender witryny</a>:
 
@@ -109,7 +112,10 @@ Poniższe kroki poprowadzi Cię przez dołączanie urządzeń VDI i będą wyró
 
 7. Użyj funkcji wyszukiwania, wprowadzając nazwę urządzenia i wybierz **pozycję Urządzenie** jako typ wyszukiwania.
 
-## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>Dla sklejenia wydajności (Windows Server 2008 R2/2012 R2/2016)
+## <a name="for-downlevel-skus-windows-server-2008-r2"></a>Dla skośnych jednostki SKU (Windows Server 2008 R2)
+
+> [!NOTE]
+> Poniższe instrukcje dotyczące innych Windows serwera mają zastosowanie również w przypadku, gdy jest uruchomiona poprzednia wersja programu Microsoft Defender for Endpoint dla systemu Windows Server 2016 i Windows Server 2012 R2 wymagająca oprogramowania MMA. Instrukcje migrowania do nowego, ujednoliconego rozwiązania znajdują się w scenariuszach migracji [serwera w programie Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > Poniższy rejestr jest istotny tylko wtedy, gdy celem jest uzyskanie "jednej propozycji dla każdego urządzenia".

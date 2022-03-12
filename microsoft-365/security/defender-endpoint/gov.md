@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 24158e4a9da9ce48382f08b6dbe701c5640972d4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b9a083404da3ad4edc3ccf2f88e1c459dc6f08e2
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009819"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450566"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Program Microsoft Defender dla punktu końcowego dla klientów z rządem Stanów Zjednoczonych
 
@@ -77,8 +77,8 @@ Poniżej przedstawiono adresy URL portalu programu Microsoft Defender for Endpoi
 |Typ klienta|Adres URL portalu|
 |---|---|
 |GCC|<https://security.microsoft.com>|
-|GCC wysoki|<https://securitycenter.microsoft.us>|
-|DoD|<https://securitycenter.microsoft.us>|
+|GCC wysoki|<https://security.microsoft.us>|
+|DoD|<https://security.microsoft.us>|
 |
 > [!NOTE]
 > Jeśli jesteś klientem usługi GCC i w trakcie przechodzenia z usługi Microsoft Defender for Endpoint do programu GCC, https://transition.security.microsoft.com użyj go do uzyskania dostępu do danych komercyjnych programu Microsoft Defender for Endpoint.
@@ -191,6 +191,6 @@ Są to znane odstępy:
 |Nazwa funkcji|GCC|GCC wysoki|DoD|
 |---|:---:|:---:|:---:|
 |Testy sieci|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
-|Odnajdowanie sieci|![Tak](images/svg/check-yes.svg)|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
-|Raporty: Zmniejszenie powierzchni ataków, Sterowanie urządzeniami, Kondycja urządzenia, Zapora|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
+|Odnajdowanie sieci|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
+|Raporty: Sterowanie urządzeniami, Kondycja urządzenia, Zapora|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
 |Filtrowanie zawartości sieci Web|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|

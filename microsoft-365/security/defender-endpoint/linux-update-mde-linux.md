@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f78f5e78067b3d8273d0ca9a3c7474eef66ed4fb
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 6fb3141b33948c5c452096c83a2f02657c199575
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996294"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450552"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Planowanie aktualizacji programu Microsoft Defender dla punktu końcowego (Linux)
 
@@ -92,7 +92,7 @@ CRON_TZ=America/Los_Angeles
 > #<a name="rhel-and-variants-centos-and-oracle-linux"></a>! R ZAO PRZYC i warianty (CentOS i Oracle Linux)
 >
 > ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log
+> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp -y >> ~/mdatp_cron_job.log
 > ```
 
 > #<a name="sles-and-variants"></a>! SLES i warianty

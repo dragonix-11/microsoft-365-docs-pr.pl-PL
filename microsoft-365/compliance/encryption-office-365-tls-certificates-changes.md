@@ -6,15 +6,15 @@ ms.author: pshelton
 manager: toddbeckett
 ms.topic: article
 audience: Developer
-ms.date: 2/4/2022
+ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: 64292627d81c78f91e485259b6a8f8b6131b0ad5
-ms.sourcegitcommit: f8267a0860de62dbd53ebb8a151a8e71a8ccda6a
+ms.openlocfilehash: 075fb8f4c27401a4622f4ce639c897f2e98bb3e9
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016066"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450379"
 ---
 # <a name="office-tls-certificate-changes"></a>Office zmian w certyfikacie TLS
 
@@ -37,19 +37,22 @@ Punkty końcowe, których dotyczy problem, to między innymi:
 - *.communication.azure.com
 - *.operatorconnect.microsoft.com
 
-Ponadto te Skype dla firm online w wystąpieniach chmury państwowej (USA) w chmurze Microsoft 365 wpływających na punkty końcowe, takie jak:
+Ponadto usługi Teams i Skype dla firm Online w wystąpieniach programu Microsoft 365 National Cloud (Rząd Stanów Zjednoczonych) będą wprowadzić tę samą zmianę wpływających na punkty końcowe, takie jak:
+- *.gcc.teams.microsoft.com
+- *.dod.teams.microsoft.us
+- *.gov.teams.microsoft.us
 - *.online.dod.skypeforbusiness.us
 - *.online.gov.skypeforbusiness.us
 - *.um-dod.office365.us
 - *.um.office365.us
 
-Ta zmiana nie będzie mieć wpływu na inne certyfikaty, domeny ani usługi używane w wystąpieniach usługi w chmurze państwowej Stanów Zjednoczonych (Government, China) ani Germany national cloud instances Microsoft 365.
+Ta zmiana nie ma wpływu na certyfikaty, domeny ani usługi używane w wystąpieniach chmury państwowej w Chinach lub Niemczech Microsoft 365.
 
 Wszystkie informacje o certyfikatach w tym artykule były wcześniej udostępniane [w Microsoft 365 szyfrowania nie](./encryption-office-365-certificate-chains.md) później niż w październiku 2020 r.
 
 ## <a name="when-will-this-change-happen"></a>Kiedy nastąpi ta zmiana?
 
-Usługi zaczną przechodzić do nowych głównych zasiedze CA, począwszy od stycznia 2022 r., kontynuując październik 2022 r.
+Usługi zaczęły przechodzić do nowych głównych zasiedze CA w styczniu 2022 r. i będą kontynuowane do października 2022 r.
 
 ## <a name="what-is-changing"></a>Co się zmienia?
 
@@ -82,6 +85,10 @@ przy użyciu jednego z następujących opisów CA średniozaawansowanych:
 | [Microsoft Azure TLS issuing CA 02](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
 | [Microsoft Azure TLS issuing CA 05](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
 | [Microsoft Azure TLS issuing CA 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+
+Na przykład jest to prawidłowy certyfikat z jednym z nowych łańcuchów certyfikatów:
+
+![Teams łańcucha certyfikatów TLS](../media/teams-tls-certificate-chain.png)
 
 ## <a name="will-this-change-affect-me"></a>Czy ta zmiana wpłynie na mnie?
 

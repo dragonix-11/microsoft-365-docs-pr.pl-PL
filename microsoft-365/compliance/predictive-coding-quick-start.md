@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak rozpocząć korzystanie z modułu predykcyjnego kodowania w programie Advanced eDiscovery. Ten artykuł zawiera omów wszystkie procedury używania predykcyjnego kodowania do identyfikowania zawartości w zestawie recenzji, który jest najbardziej odpowiedni do analizy.
-ms.openlocfilehash: 38607459057ff06a2ce74364b752130467deaddd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2266f44e7b95c118314d76fe019a97b2db24f07c
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986653"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449474"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>Szybki start: predykcyjne kodowanie w Advanced eDiscovery (wersja zapoznawcza)
 
-Ten artykuł zawiera informacje na temat szybkiego rozpoczynania korzystania z predykcyjnego kodowania w programie Advanced eDiscovery. Moduł predykcyjnego kodowania w programie Advanced eDiscovery korzysta z inteligentnych funkcji uczenia maszynowego w programie Advanced eDiscovery, które ułatwiają zmniejszenie ilości zawartości do przejrzenia. Kodowanie podpowiedniowe pomaga zmniejszyć i pomylić duże ilości zawartości sprawy do odpowiedniego zestawu elementów, dla których można ustalić priorytety. Jest to możliwe dzięki utworzeniu i szkoleniu własnych modeli predykcyjnego kodowania, które ułatwiają określanie priorytetów przeglądu najbardziej istotnych elementów w zestawie recenzji.
+Ten artykuł zawiera informacje na temat szybkiego rozpoczynania korzystania z predykcyjnego kodowania w programie Advanced eDiscovery. Moduł predykcyjnego kodowania używa inteligentnych funkcji uczenia maszynowego, które ułatwiają oznaczanie dużych ilości zawartości sprawy, która nie jest istotny w analizie. Jest to możliwe dzięki utworzeniu i szkoleniu własnych modeli predykcyjnego kodowania, które ułatwiają określanie priorytetów elementów, które mają być przeglądane.
 
 Oto krótki przegląd procesu predykcyjnego kodowania:
 

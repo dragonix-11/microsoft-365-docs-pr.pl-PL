@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 punktu końcowego ochrona przed utratą danych rozszerza możliwości monitorowania działań dotyczących plików i akcji zabezpieczających dla tych plików na punkty końcowe. Pliki są widoczne w rozwiązaniach zgodności '
-ms.openlocfilehash: 7d8bc4dcb9d2852894ca838d88ae8ff2f5226298
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 83608f005b9024583142515094b2d958b8f5d915
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009681"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450348"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w punktach końcowych
 
@@ -81,8 +81,33 @@ Jeśli chcesz monitorować tylko dane z dopasowania zasad, możesz wyłączyć d
 > [!TIP]
 > Aby zapewnić inspekcję działań we wszystkich obsługiwanych typach plików, utwórz [niestandardowe zasady DLP](create-test-tune-dlp-policy.md).
 
-
 Endpoint DLP monitoruje aktywność na podstawie typu MIME, więc działania będą przechwytywane, nawet jeśli rozszerzenie pliku zostanie zmienione.
+
+### <a name="file-types-preview"></a>Typy plików (podgląd)
+
+Typy plików to grupowanie formatów plików, które są używane do ochrony określonych przepływów pracy lub obszarów działalności. Jako warunków zasad DLP możesz użyć co najmniej jednego typu pliku.
+
+|Typ pliku |Aplikacja  |monitorowane rozszerzenia plików  |
+|---------|---------|---------|
+|edytor tekstu |Word, PDF | .doc, .docx, docm, dot, dotx, dotm, docb, .pdf |
+|arkusz kalkulacyjny    |Excel, CSV, TSV |.xls, .xlsx, xlt, xlm, xlsm, xltx, xltm, xlsb, xlw, .csv, tsv         |
+|prezentacja |PowerPoint|.ppt, .pptx, pos, pps, pptm, potx, potm, ppam, ppsx|
+|archiwizowanie  |Narzędzia do archiwizacji i kompresji plików | .zip, zipx, .rar, 0,7z, tar, gz        |
+|Adres e-mail    |Outlook |pst, ost, msg         |
+
+### <a name="file-extensions-preview"></a>Rozszerzenia plików (wersja Preview)
+
+Jeśli typy plików nie obejmują rozszerzeń plików, których lista jest potrzebna jako warunek zasad, możesz użyć rozszerzeń plików rozdzielonych przecinkami.
+
+> [!IMPORTANT]
+> Rozszerzenia i opcje typów plików nie mogą być używane jako warunki w tej samej  regułach. Jeśli chcesz używać ich jako warunków w tych samych zasadach, muszą one być w oddzielnych zasadach. 
+
+> [!IMPORTANT]
+> Te Windows obsługują typy plików i funkcje rozszerzenia plików:
+>- Windows 10 20H1/20H2/21H1 (KB 5006738)
+>- Windows 10 19H1/19H2 (KB 5007189)
+>- Windows 10 RS5 (kb 5006744)
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Co się dzieje w programie DLP punktu końcowego
 

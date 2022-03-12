@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Dowiedz się, jak i dlaczego należy zmienić nazwę modelu w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: e5cf6069e1b417e186563013a9924ebf7f89630c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak i dlaczego należy zmienić nazwę modelu rozumienia dokumentu w aplikacji Microsoft SharePoint Syntex.
+ms.openlocfilehash: b1ced765d7a69fdf8b9fe9eb44d6716a840bf8a0
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986645"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450300"
 ---
 # <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>Zmienianie nazwy modelu w aplikacji Microsoft SharePoint Syntex
 

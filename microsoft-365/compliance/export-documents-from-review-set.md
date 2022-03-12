@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak zaznaczać i eksportować zawartość z zestawu Advanced eDiscovery dla prezentacji lub recenzji zewnętrznych.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6384d45121fc39d120d6906e46594b8b04124471
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 61de8fed9c5bcb00daf3a8273f3ebfc86fe75a35
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401066"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449460"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Eksportowanie dokumentów z zestawu recenzji w programie Advanced eDiscovery
 
@@ -93,13 +93,16 @@ Jeśli wybierzesz tę opcję eksportu, wyeksportowana zawartość będzie zorgan
   
   - Ostrzeżenia i błędy x z.csv: Ten plik zawiera informacje o błędach napotkanych podczas próby wyeksportowania z zestawu recenzji.
   
-  - Exchange: Ten folder zawiera całą zawartość z plików Exchange przechowywanych w plikach PST. Ta opcja nie umożliwia dołączona do redagowanych plików PDF. Jeśli w zestawie recenzji wybrano załącznik, nadrzędna wiadomość e-mail zostanie wyeksportowana z dołączonym załącznikiem. Ten folder może również zawierać następujące elementy: 
-
-    - Wiadomości chronione za pomocą usługi Zarządzanie prawami do informacji (IRM) w dekodowanych wiadomościach. 
-    - Komunikaty o błędach usunięte. 
-    - Nowoczesne załączniki lub linki, do których odwołują się wiadomości. 
+  - Exchange: Ten folder zawiera całą zawartość z plików Exchange przechowywanych w plikach PST. Tej opcji nie można dołączona do redagowanych plików PDF. Jeśli w zestawie recenzji wybrano załącznik, nadrzędna wiadomość e-mail zostanie wyeksportowana z dołączonym załącznikiem.
   
-  - SharePoint: Ten folder zawiera całą natywną zawartość z SharePoint w natywnym formacie pliku. Ta opcja nie umożliwia dołączona do redagowanych plików PDF.
+    Folder Exchange może również zawierać podfolder o nazwie mailboxname_loosefiles.zip zawierający następujące elementy:
+
+    - Wiadomości chronione za pomocą usługi Zarządzanie prawami do informacji (IRM) w dekodowanych wiadomościach.
+    - Komunikaty o błędach usunięte.
+    - Nowoczesne załączniki lub linki, do których odwołują się wiadomości.
+    - Zaszyfrowane elementy (które nie są zawarte w plikach PST w Exchange folderze).
+  
+  - SharePoint: Ten folder zawiera całą natywną zawartość z SharePoint w natywnym formacie pliku. Tej opcji nie można dołączona do redagowanych plików PDF.
 
 ### <a name="condensed-directory-structure"></a>Skondensowana struktura katalogu
 
@@ -119,4 +122,4 @@ Jeśli wybierzesz tę opcję eksportu, wyeksportowana zawartość będzie zorgan
 
 ### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>Skondensowana struktura katalogu wyeksportowana do Twojego konta Storage Azure
 
-Ta opcja ma taką samą ogólną strukturę jak struktura katalogu zagęszczanego *, jednak* zawartość nie jest mapowana, a dane są zapisywane na Twoim koncie usługi Azure Storage konta. Ta opcja jest zazwyczaj używana podczas pracy z innym dostawcą zbierania elektronicznych materiałów dowodowych. Aby uzyskać szczegółowe informacje na temat korzystania z tej opcji, zobacz Eksportowanie dokumentów [w zestawie recenzji do konta usługi Azure Storage konta](download-export-jobs.md).
+Ta opcja ma taką samą ogólną strukturę jak struktura katalogu zagęszczanego *, jednak* zawartość nie jest zeszkowana, a dane są zapisywane na Twoim koncie usługi Azure Storage konta. Ta opcja jest zazwyczaj używana podczas pracy z innym dostawcą zbierania elektronicznych materiałów dowodowych. Aby uzyskać szczegółowe informacje na temat korzystania z tej opcji, zobacz Eksportowanie dokumentów [w zestawie recenzji do konta usługi Azure Storage konta](download-export-jobs.md).

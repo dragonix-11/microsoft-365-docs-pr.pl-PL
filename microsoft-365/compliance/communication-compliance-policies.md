@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3a8eda3dcdcb3f4487934b3bf107ce33210ffdf5
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 33961088105e838add3634024bb85807a6550eb7
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63015974"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450734"
 ---
 # <a name="communication-compliance-policies"></a>Zasady zgodności komunikacji
 
@@ -40,7 +40,7 @@ Szablony zasad to wstępnie zdefiniowane ustawienia zasad, za pomocą których m
 
 |**Obszar**|**Szablon zasad**|**Szczegóły**|
 |:-----|:-----|:-----|
-| **Nieodpowiedni tekst** | Wykrywanie nieodpowiedniego tekstu | — Lokalizacje: Exchange Online, Microsoft Teams, Yammer, Skype dla firm <br> — Kierunek: przychodzący, wychodzący, wewnętrzny <br> - Przeglądanie wartości procentowej: 100% <br> — Warunki: Zagrożenie, Niechęć (podgląd) i Docelowe klasyfikatory molestowania |
+| **Nieodpowiedni tekst** | Wykrywanie nieodpowiedniego tekstu | — Lokalizacje: Exchange Online, Microsoft Teams, Yammer, Skype dla firm <br> — Kierunek: przychodzący, wychodzący, wewnętrzny <br> - Przeglądanie wartości procentowej: 100% <br> — Warunki: Klasyfikatorzy podszywki, podszycie się i molestowania |
 | **Nieodpowiednie obrazy** | Wykrywanie nieodpowiednich obrazów | — Lokalizacje: Exchange Online, Microsoft Teams, Yammer, Skype dla firm <br> — Kierunek: przychodzący, wychodzący, wewnętrzny <br> - Przeglądanie wartości procentowej: 100% <br> - Warunki: Klasyfikatory obrazu dla dorosłych i osoby dorosłej |
 | **Informacje poufne** | Monitorowanie w celu odszukiwnia informacji poufnych | — Lokalizacje: Exchange Online, Microsoft Teams, Yammer, Skype dla firm <br> — Kierunek: przychodzący, wychodzący, wewnętrzny <br> - Przejrzyj procent: 10% <br> — Warunki: Informacje poufne, niestandardowe wzorce zawartości i typy, opcja słownika niestandardowego, załączniki większe niż 1 MB |
 | **Zgodność z przepisami** | Monitorowanie zgodności z przepisami | — Lokalizacje: Exchange Online, Microsoft Teams, Yammer, Skype dla firm <br> — Kierunek: przychodzący, wychodzący <br> - Przejrzyj procent: 10% <br> — Warunki: opcja słownika niestandardowego, załączniki o rozmiarze większym niż 1 MB |
@@ -84,7 +84,7 @@ Aby skopiować zasady i utworzyć nowe zasady, wykonaj następujące czynności:
 
 ## <a name="storage-limit-notification-preview"></a>Storage powiadomienia o limitach (wersja zapoznawcza)
 
-Każda zasada zgodności komunikacji ma rozmiar limitu magazynowania 100-GB lub 1 milion wiadomości, w zależności od tego, co zostanie osiągnięte najpierw. Gdy zasady będą zbliżać się do tych limitów, powiadomienia e-mail będą automatycznie wysyłane  do użytkowników przypisanych do grup ról Zgodność z komunikacją lub *Administrator zgodności* komunikacji. Powiadomienia są wysyłane, gdy rozmiar przestrzeni dyskowej lub liczba wiadomości osiągnie 80, 90 i 95 procent limitu. Po osiągnięciu limitu zasad zasady są automatycznie dezaktywowane i zasady wstrzymuje przetwarzanie komunikatów alertów.
+Każda zasada zgodności komunikacji ma rozmiar limitu magazynowania 100 GB lub 1 milion wiadomości, w zależności od tego, co zostanie osiągnięte najpierw. Gdy zasady będą zbliżać się do tych limitów, powiadomienia e-mail będą automatycznie wysyłane  do użytkowników przypisanych do grup ról Zgodność z komunikacją lub *Administrator zgodności* komunikacji. Powiadomienia są wysyłane, gdy rozmiar przestrzeni dyskowej lub liczba wiadomości osiągnie 80, 90 i 95 procent limitu. Po osiągnięciu limitu zasad zasady są automatycznie dezaktywowane i zasady wstrzymuje przetwarzanie komunikatów alertów.
 
 >[!IMPORTANT]
 >Jeśli zasady zostaną zdezaktywowane ze względu na osiągnięcie limitów magazynowania i wiadomości, oceń sposób zarządzania dezaktywowanych zasad. Jeśli usuniesz zasady, wszystkie wiadomości, skojarzone załączniki i alerty wiadomości zostaną trwale usunięte. Jeśli chcesz zachować te elementy do użytku w przyszłości, nie usuwaj dezaktywowanych zasad.
@@ -143,7 +143,7 @@ Wbudowana klasyfikatorzy klasyfikatorzy globalni i przeszkolni w zakresie zgodno
 Wbudowana w komunikację, wytłaczalna i globalna klasyfikatorzy skanują komunikację pod kątem terminów, obrazów i sentymentów dla następujących typów języka i zawartości:
 
 - **Obrazy dorosłych**: skanuje w poszukiwaniu obrazów erogarnych w przyrodzie.
-- **Brak danych (wersja zapoznawcza)**: skanuje w poszukiwaniu jawnego języka dyskryminacyjnego i jest szczególnie poufny na dyskryminacyjne język dla społeczności aferykańsko-amerykańskich/czarnych w porównaniu z innymi społecznościami.
+- **Dotyczy** dyskryminacyjnego języka dyskryminacyjnego, który jest szczególnie poufny dla dyskryminacyjnego języka dla społeczności afrykańskich/czarnych w porównaniu z innymi społecznościami.
 - **Obrazy wąsów**: skanuje obrazy przedstawiające sceny przemocy i wąsy.
 - **Profanity**: skanuje w poszukiwaniu wulgarnych wyrażeń, które kłopotliwe dla większości osób.
 - **Mniej treściwe obrazy**: skanuje w poszukiwaniu obrazów, które erotycyjnie sugerują w przywróceniu natury, ale zawierają mniej jawną zawartość niż obrazy uważane za dorosłe.
@@ -227,7 +227,7 @@ Jeśli chcesz zmniejszyć ilość zawartości do przejrzenia, możesz określić
 
 ## <a name="alert-policies"></a>Zasady alertów
 
-Po skonfigurowaniu zasad automatycznie są tworzone odpowiadające im zasady alertów i są generowane alerty dla wiadomości, które są zgodne z warunkami zdefiniowanymi w zasadach. Po utworzeniu zasad otrzymywanie alertów ze wskaźników aktywności może potrwać do 24 godzin. Domyślnie do wszystkich wyzwalaczy alertów są przypisywane średnie poziomy ważności w skojarzonych zasadach alertów. Alerty są generowane dla zasad zgodności komunikacji, gdy poziom progu wyzwalacza agregacji zostanie spełniony w skojarzonych zasadach alertów. Alerty są wysyłane jednorazowo co 24 godziny, niezależnie od liczby poszczególnych wiadomości, które są zgodne z warunkami zasad. Na przykład w firmie Contoso włączono nieodpowiednie zasady dotyczące zawartości, a dla 1 stycznia było 100 dopasowania zasad, które wygenerowały 6 alertów. Na koniec 1 stycznia zostanie wysłane pojedyncze powiadomienie e-mail z 6 alertami.
+Po skonfigurowaniu zasad automatycznie są tworzone odpowiadające im zasady alertów i są generowane alerty dla wiadomości, które są zgodne z warunkami zdefiniowanymi w zasadach. Po utworzeniu zasad otrzymywanie alertów ze wskaźników aktywności może potrwać do 24 godzin. Domyślnie do wszystkich wyzwalaczy alertów są przypisywane średnie poziomy ważności w skojarzonych zasadach alertów. Alerty są generowane dla zasad zgodności komunikacji, gdy poziom progu wyzwalacza agregacji zostanie spełniony w skojarzonych zasadach alertów. Alerty są wysyłane jednorazowo co 24 godziny, niezależnie od liczby poszczególnych wiadomości, które są zgodne z warunkami zasad. Na przykład w firmie Contoso włączono nieodpowiednie zasady zawartości, a dla 1 stycznia było 100 dopasowania zasad, które wygenerowały sześć alertów. Na koniec 1 stycznia zostanie wysłane pojedyncze powiadomienie e-mail dla tych sześciu alertów.
 
 W przypadku zasad zgodności komunikacji następujące wartości zasad alertów są konfigurowane domyślnie:
 

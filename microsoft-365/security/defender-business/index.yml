@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft Defender for Business
-summary: Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Program Defender dla firm jako autonomiczna subskrypcja jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zało będą się logować w https://aka.ms/mdb-preview.
+summary: Począwszy od 1 marca 2022 r. usługa Microsoft Defender dla firm jest Microsoft 365 Business Premium. Program Defender dla firm jako autonomiczna subskrypcja jest obecnie w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zało będą się logować w https://aka.ms/mdb-preview.
 metadata:
   title: Dokumentacja programu Microsoft Defender dla firm
   description: Uzyskiwanie informacji o przeglądzie i konfiguracji programu Microsoft Defender dla firm
@@ -14,13 +14,13 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 02/24/2022
-  ms.openlocfilehash: 2e941e8f72198a72fd15121f29e6dc55630398ee
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.date: 03/10/2022
+  ms.openlocfilehash: eb00a4fc76315360c789afacad4b77da3d28c323
+  ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63317153"
+  ms.lasthandoff: 03/12/2022
+  ms.locfileid: "63450748"
 landingContent:
 - title: Omówienie
   linkLists:

@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Użytkownicy mogą dowiedzieć się, jak wyświetlać wiadomości poddane kwarantannie i działać w nich, które zostały wysłane do udostępnionych skrzynek pocztowych, do których mają uprawnienia.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d9f83f176675be26fadf3d720dcc78e5146bde3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3f136f373fa63be7dab6cfbd63e44b33b4eca2ff
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324525"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450538"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Wyświetlanie i zwalnianie wiadomości poddanych kwarantannie z udostępnionych skrzynek pocztowych
 
@@ -48,7 +48,7 @@ Teraz automatyczne mapowanie nie jest już wymagane, aby użytkownicy zarządzal
 - Aby zarządzać wiadomościami poddanymi kwarantannie dla udostępnionej skrzynki pocztowej w programie [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), użytkownik końcowy będzie musiał użyć polecenia cmdlet [Get-QuarantineMessage z adresem e-mail](/powershell/module/exchange/get-quarantinemessage) udostępnionej skrzynki pocztowej do określenia wiadomości w parametrze _RecipientAddress_. Przykład:
 
   ```powershell
-  Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com
+  Get-QuarantineMessage -RecipientAddress officeparty@contoso.com
   ```
 
   Następnie użytkownik końcowy może wybrać poddaną kwarantannie wiadomość z listy, aby wyświetlić lub podjąć działanie w związku z tym.
@@ -56,9 +56,9 @@ Teraz automatyczne mapowanie nie jest już wymagane, aby użytkownicy zarządzal
   W tym przykładzie pokazano wszystkie poddaną kwarantannie wiadomości wysłane do udostępnionej skrzynki pocztowej, a następnie zwolniono pierwszą wiadomość na liście z kwarantanny (pierwsza wiadomość na liście to 0, druga to 1 itd.).
 
   ```powershell
-  $SharedMessages = Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
+  $SharedMessages = Get-QuarantineMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
   $SharedMessages
-  Release-QuarantinedMessage -Identity $SharedMessages[0]
+  Release-QuarantineMessage -Identity $SharedMessages[0]
   ```
 
   Aby uzyskać szczegółowe informacje o składni i parametrach, zobacz następujące tematy:

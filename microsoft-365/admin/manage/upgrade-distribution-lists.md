@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Dowiedz się, jak uaktualnić jedną lub wiele list dystrybucyjnych do grup Microsoft 365 w programie Outlook oraz jak używać programu PowerShell do jednoczesnego uaktualniania kilku list dystrybucyjnych.
-ms.openlocfilehash: 7a6e0eff49958b99df9ca59702b814b364aefb46
-ms.sourcegitcommit: 27eb93a7d46bcbb9c948a50b0a8481ffd3832ca0
+ms.openlocfilehash: 5394ce52f865d0b9a0383619cb11b9ebf3a94fc8
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "63028014"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449207"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uaktualnianie list dystrybucyjnych do Microsoft 365 grup w Outlook
 
@@ -196,6 +196,10 @@ LUB
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Co się stanie z biblioteką dystrybucyjną, jeśli uaktualnienie z EAC zakończy się niepowodzeniem?
 
 Uaktualnienie nastąpi tylko wtedy, gdy połączenie zostanie przesłane na serwer. Jeśli uaktualnienie nie powiedzie się, twoje adresy DLs zostaną nienaruszone. Będą one działać tak jak do tego, co do tego używali.
+
+### <a name="what-happens-to-message-approval-moderation-settings-on-distribution-groups-after-upgrading"></a>Co się stanie z ustawieniami zatwierdzania wiadomości (moderowania) w grupach dystrybucyjnych po uaktualnieniu?
+
+Ustawienia zatwierdzania (moderowania) wiadomości są zachowywane i działają poprawnie po uaktualnieniu grupy dystrybucyjnej do grupy Microsoft 365 grupy.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 

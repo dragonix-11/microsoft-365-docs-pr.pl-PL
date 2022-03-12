@@ -7,31 +7,31 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/24/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 50a759c4f84aee72b376ff9126c54d381f4a373f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3131d4f8742d8fe794c71a62f93e10433aada33c
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327787"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450580"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm
 
 > [!IMPORTANT]
-> Od 1 marca 2022 r. usługa Microsoft Defender dla firm jest wprowadzana u klientów usługi Microsoft 365 Business Premium. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
+> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-Portal usługi Microsoft 365 Defender umożliwia Twojemu zespołowi zabezpieczeń reagowanie na wykryte zagrożenia i ich ograniczanie. W tym artykule opisano przykłady korzystania z usługi Defender dla firm.
+Portal Microsoft 365 Defender umożliwia Twojemu zespołowi zabezpieczeń reagowanie na wykryte zagrożenia i ich ograniczanie. W tym artykule opisano przykłady korzystania z usługi Defender dla firm.
 
 >
 > **Masz minutę?**
@@ -40,11 +40,11 @@ Portal usługi Microsoft 365 Defender umożliwia Twojemu zespołowi zabezpiecze�
 
 ## <a name="view-detected-threats"></a>Wyświetlanie wykrytych zagrożeń
 
-1. Przejdź do portalu usługi Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
 2. Karty z powiadomieniami na stronie głównej. Karty informują o tym, ile zagrożeń zostało wykrytych wraz z tym, ile kont użytkowników, punktów końcowych (urządzeń) i innych zasobów wpłynęło na nie. Na poniższej ilustracji przedstawiono przykładowe karty:
 
-   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Zrzut ekranu przedstawiający karty w portalu usługi Microsoft 365 Defender":::
+   :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Zrzut ekranu przedstawiający karty w portalu Microsoft 365 Defender witryny":::
 
 3. Wybierz przycisk lub link na karcie, aby wyświetlić więcej informacji i podjąć działanie. Na przykład karta Ryzyko w **urządzeniach** zawiera przycisk **Wyświetl szczegóły** . Wybranie tego przycisku powoduje przysłanie na stronę **spisu** urządzeń, jak pokazano na poniższej ilustracji:
 
@@ -60,7 +60,7 @@ Portal usługi Microsoft 365 Defender umożliwia Twojemu zespołowi zabezpiecze�
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Zrzut ekranu przedstawiający dostępne akcje dla wybranego urządzenia":::
 
-6. Wybierz dostępną akcję. Możesz na przykład wybrać pozycję **Uruchom skanowanie antywirusowe**, co spowoduje, że program antywirusowy Microsoft Defender rozpocznie szybkie skanowanie na urządzeniu. Możesz też wybrać pozycję **Zainicjuj automatyczne badanie** , aby uruchomić automatyczne badanie na urządzeniu.
+6. Wybierz dostępną akcję. Możesz na przykład wybrać pozycję **Uruchom skanowanie antywirusowe**, co spowoduje, Program antywirusowy Microsoft Defender szybkie skanowanie na urządzeniu. Możesz też wybrać pozycję **Zainicjuj automatyczne badanie** , aby uruchomić automatyczne badanie na urządzeniu.
 
 ## <a name="next-steps"></a>Następne kroki
 
