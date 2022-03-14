@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 545e0e3a12fda1c45bac27f9c71d4e465ca05b7e
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6b475a1f56f66c6ec9e1ed09b5311515c5eb31c8
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450608"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468698"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Urządzenia w programie Microsoft Defender dla firm
 
@@ -61,7 +61,7 @@ W poniższej tabeli opisano najczęściej używane metody dołączania urządze�
 |---------|---------|---------|
 | **Automatyczne dołączanie**<br/>(*dostępne dla klientów, którzy już Microsoft Endpoint Manager*) | *Microsoft 365 Business Premium klienci mają już Microsoft Intune klientów i mogą skorzystać z tej opcji*. Automatyczne wniesienie konfiguruje połączenie między usługą Defender dla firm i usługami Microsoft Endpoint Manager, a następnie na urządzeniach Windows z usługą Defender dla firm. Aby użyć tej opcji, urządzenia muszą już być zarejestrowane w Endpoint Manager.<br/><br/>Aby dowiedzieć się więcej, [zobacz Automatyczne dołączanie](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). | System Windows |
 | **Skrypt lokalny** <br/> | Ta opcja umożliwia ręczne dołączanie poszczególnych urządzeń do programu Defender dla firm. Korzystając ze skryptu lokalnego, można w tym czasie dodać maksymalnie 10 urządzeń.<br/><br/>Aby dowiedzieć się więcej, zobacz [Skrypt lokalny w programie Defender dla firm](#local-script-in-defender-for-business). | System Windows <br/>macOS |
-| **Microsoft Intune** lub **Microsoft Endpoint Manager**<br/>(*dostępne dla klientów, którzy Microsoft Intune lub Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) zarządzanie [urządzeniami przenośnymi](/mem/intune/enrollment/device-enrollment) są częścią Endpoint Manager. (Microsoft 365 Business Premium klienci mają już Microsoft Intune).<br/><br/>Jeśli korzystasz już z usługi Endpoint Manager usługi Defender dla firm, możesz kontynuować korzystanie z usługi Endpoint Manager do korzystania z urządzeń i zarządzania nimi<br/><br/>Aby użyć tej metody, zobacz [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | System Windows <br/>macOS<br/>iOS<br/>System operacyjny Android | 
+| **Microsoft Intune** lub **Microsoft Endpoint Manager**<br/>(*dostępne dla klientów, którzy Microsoft Intune lub Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) zarządzanie [urządzeniami przenośnymi](/mem/intune/enrollment/device-enrollment) są częścią Endpoint Manager. (Microsoft 365 Business Premium klienci mają już Microsoft Intune).<br/><br/>Jeśli korzystasz już z usługi Endpoint Manager usługi Defender dla firm, możesz kontynuować korzystanie z usługi Endpoint Manager w celu do korzystania z urządzeń i zarządzania nimi.<br/><br/>Aby użyć tej metody, zobacz [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | System Windows <br/>macOS<br/>iOS<br/>System operacyjny Android | 
 | **Konfiguracja zabezpieczeń programu Microsoft Defender dla firm** <br/>(*używa portalu Microsoft 365 Defender)* | Aby użyć tej opcji, skonfiguruj pewne ustawienia w celu ułatwienia komunikacji między usługą Defender dla Firm a programem Endpoint Manager. Następnie możesz wnosić urządzenia do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) przy użyciu pakietu, który można pobrać i uruchomić na każdym urządzeniu. Między urządzeniami a usługą Azure AD jest ustanowione zaufanie i zasady zabezpieczeń usługi Defender Azure Active Directory usługi Defender dla firm są wypychane na urządzenia.<br/><br/>Aby dowiedzieć się więcej, zobacz [Konfiguracja zabezpieczeń programu Microsoft Defender dla firm](#microsoft-defender-for-business-security-configuration). | System Windows <br/>macOS |
 
 > [!IMPORTANT]

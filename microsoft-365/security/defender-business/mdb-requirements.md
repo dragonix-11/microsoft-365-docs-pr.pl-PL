@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 3259b08bcbf62ce0547363f6020399ce444f7f79
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 3fd3f272fee91e8ca14d667d953b65b1122284db
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450594"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468684"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Wymagania programu Microsoft Defender dla firm
 
@@ -55,7 +55,7 @@ W poniższej tabeli wymieniono podstawowe wymagania dotyczące konfigurowania i 
 | Konta użytkowników | Konta użytkowników są tworzone w centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/><br/>Licencje usługi Microsoft Defender dla firm są przypisywane w centrum administracyjne platformy Microsoft 365<br/><br/>Aby uzyskać pomoc na temat tego zadania, zobacz [Dodawanie użytkowników i przypisywanie licencji](../../admin/add-users/add-users.md). |
 | Uprawnienia  | Aby zarejestrować się w programie Microsoft Defender dla firm, musisz być administratorem globalnym.<br/><br/>Aby uzyskać dostęp do portalu Microsoft 365 Defender, użytkownicy muszą mieć przypisaną jedną z następujących ról [w usłudze Azure AD](mdb-roles-permissions.md): <br/>- Czytnik zabezpieczeń<br/>- Administrator zabezpieczeń<br/>— Administrator globalny<br/><br/>Aby dowiedzieć się więcej, zobacz [Role i uprawnienia w programie Microsoft Defender dla firm](mdb-roles-permissions.md). |
 | Wymagania dotyczące przeglądarki | Microsoft Edge lub Google Chrome |
-| System operacyjny | Aby można było zarządzać urządzeniami w programie Microsoft Defender dla firm, na tych urządzeniach musi być uruchomiony jeden z następujących systemów operacyjnych: <br/>— Windows 10 Business lub nowszy <br/>— Windows 10 Professional lub nowszy <br/>— Windows 10 Enterprise lub nowszy <br/><br/>Upewnij się, [że zainstalowano kb5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) . <br/><br/>Jeśli zarządzasz urządzeniami w programie Microsoft Intune (lub Microsoft Endpoint Manager) lub używasz rozwiązania do zarządzania urządzeniami innych niż firmy Microsoft, na tych urządzeniach musi być uruchomiony jeden z systemów operacyjnych obsługiwanych w programie [Microsoft Defender for Endpoint](../defender-endpoint/minimum-requirements.md). |
+| System operacyjny | Aby można było zarządzać urządzeniami w programie Microsoft Defender dla firm, na tych urządzeniach musi być uruchomiony jeden z następujących systemów operacyjnych: <br/>— Windows 10 Business lub nowszy <br/>— Windows 10 Professional lub nowszy <br/>— Windows 10 Enterprise lub nowszy <br/><br/>Upewnij się, [że zainstalowano kb5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) . <br/><br/>Jeśli zarządzasz już urządzeniami w programie Microsoft Intune (lub Microsoft Endpoint Manager), możesz je dodać do usługi Defender dla firm. |
 | Integracja z Microsoft Endpoint Manager  | Jeśli planujesz wboardować urządzenia przy użyciu konfiguracji zabezpieczeń programu [Microsoft Defender dla](mdb-onboard-devices.md#microsoft-defender-for-business-security-configuration) firm, muszą być spełnione następujące wymagania:<br/><br/>Wymagania wstępne muszą być spełnione w celu [zarządzania zabezpieczeniami dla programu Microsoft Defender dla punktu końcowego](/mem/intune/protect/mde-security-integration).<br/>— Usługa Azure AD musi być skonfigurowana w taki sposób, aby między urządzeniami organizacji a usługą Azure AD było tworzone zaufanie. <br/>— Program Defender dla firm musi mieć włączoną funkcję zarządzania zabezpieczeniami w Microsoft Endpoint Manager.<br/><br/>Urządzenia muszą mieć możliwość łączenia się z następującymi adresami URL:<br/>- `enterpriseregistration.windows.net` (w przypadku rejestracji w usłudze Azure AD)<br/>- `login.microsoftonline.com` (w przypadku rejestracji w usłudze Azure AD)<br/>- `*.dm.microsoft.com` (Symbol wieloznaczny (*) obsługuje punkty końcowe usługi w chmurze, które są używane do rejestrowania, zaewidencjonowania i raportowania oraz mogą zmieniać się wraz ze skalami usług). |
 
 > [!NOTE]

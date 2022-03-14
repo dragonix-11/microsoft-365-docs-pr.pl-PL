@@ -26,20 +26,20 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Zanim zadzwonisz do pomocy technicznej, wyświetl stan kondycji Microsoft 365, aby sprawdzić, czy występują aktywne przerwy w działaniu usługi.
-ms.openlocfilehash: d5af62bd31bc5fe6c3a3f04657d6cf0ea6083eaa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4a72132872c890f755cb537e06c42412aa17fb9f
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973654"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468778"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Jak sprawdzić Microsoft 365 kondycji usługi
 
 [![Etykieta informująca, że centrum administracyjne zmienia się, a więcej informacji na ten temat możesz znaleźć w witrynie aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
-Kondycję swoich usług, takich usługi firmy Microsoft, Office w sieci Web, Yammer, Microsoft Dynamics CRM i zarządzanie urządzeniami przenośnymi,  [możesz wyświetlić na stronie Kondycja usługi w centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
+Kondycję swoich usług, w tym usługi firmy Microsoft, Office w sieci Web, Yammer, Microsoft Dynamics CRM i usług w chmurze do zarządzania urządzeniami przenośnymi,  [możesz wyświetlić na stronie Kondycja usługi w centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-Jeśli nie możesz zalogować się do centrum administracyjnego, możesz za pomocą strony stanu [](https://status.office365.com) usługi sprawdzić, czy nie ma znanych problemów uniemożliwiających zalogowanie się do dzierżawy.  Zarejestruj się, aby nas obserwować na [stronie @MSFT365status](https://twitter.com/MSFT365Status) w serwisie Twitter w celu zobaczenia informacji o określonych zdarzeniach.
+Jeśli nie możesz zalogować się do centrum administracyjnego, możesz za pomocą strony stanu [](https://status.office365.com) usługi sprawdzić, czy nie ma znanych problemów uniemożliwiających zalogowanie się do dzierżawy.  Zarejestruj się, aby nas obserwować na [@MSFT365status](https://twitter.com/MSFT365Status) w serwisie Twitter w celu zobaczenia informacji o określonych zdarzeniach.
 
 ## <a name="how-to-check-service-health"></a>Jak sprawdzić kondycję usługi
 
@@ -48,7 +48,7 @@ Jeśli nie możesz zalogować się do centrum administracyjnego, możesz za pomo
     > [!NOTE]
     > Kondycja usługi może być przeglądana przez osoby z przypisaną rolą administratora globalnego lub pomocy technicznej usługi. Aby umożliwić administratorom programu Exchange, programu SharePoint i programu Skype dla firm wyświetlanie kondycji usługi, należy do nich również przypisać rolę administratora usługi. Aby uzyskać więcej informacji o rolach, które mogą wyświetlać kondycję usługi, zobacz [Informacje o rolach administratorów](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
 
-2. Aby wyświetlić kondycję usługi, w centrum administracyjnym przejdź do pozycji Kondycja  usługi **HealthService** >  lub wybierz kartę Kondycja usługi na głównym **pulpicie nawigacyjnym**. Karta pulpitu nawigacyjnego zawiera informacje o tym, czy występuje aktywny problem z usługą, oraz linki do strony ze **szczegółowymi informacjami na temat kondycji** usługi.
+2. Aby wyświetlić kondycję usługi, w lewej części nawigacji centrum administracyjnego przejdź do pozycji Kondycja usługi **HealthService** >  lub wybierz kartę **Kondycja** usługi na głównym **pulpicie nawigacyjnym**. Karta pulpitu nawigacyjnego zawiera informacje o tym, czy występuje aktywny problem z usługą, oraz linki do strony ze **szczegółowymi informacjami na temat kondycji** usługi.
 
 3. Na stronie **Kondycja** usługi stan kondycji każdej usługi w chmurze jest wyświetlany w formacie tabeli.
 
@@ -144,7 +144,7 @@ W większości przypadków usługi będą wyświetlane jako dobrej kondycji bez 
 
 Kondycja usługi umożliwia wyświetlenie bieżącego stanu kondycji i wyświetlenie historii wszystkich porad i zdarzeń, które wpłynęły na dzierżawę w ciągu ostatnich 30 dni. Aby wyświetlić historię kondycji wszystkich usług, wybierz **pozycję Widok** historii.
 
-Aby uzyskać więcej informacji na temat naszego zaangażowania w działanie bezadysownego działania, zobacz [Transparentne działania Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity).
+Aby uzyskać więcej informacji na temat naszego zaangażowania w działanie bezaa czas pracy, zobacz [Transparentne działania Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

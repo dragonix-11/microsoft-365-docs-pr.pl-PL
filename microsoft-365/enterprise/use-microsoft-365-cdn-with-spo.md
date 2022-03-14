@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Dowiedz się, jak za pomocą Office 365 Content Delivery Network (CDN) przyspieszyć dostarczenie swoich zasobów SharePoint Online.
-ms.openlocfilehash: ad4eb1df63e201e49ba0b4c56c9123a04e37c184
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f4279da3bba7647f2e99179acb0147fe5d002f57
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63005269"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468964"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Używanie Office 365 Content Delivery Network (CDN) z usługą SharePoint Online
 
@@ -56,11 +56,11 @@ Aby skonfigurować Office 365 CDN organizacji, wykonaj następujące podstawowe 
   + [Określ miejsce przechowywania środków trwałych](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets). Ta lokalizacja może być witryną SharePoint, biblioteką lub folderem i jest nazywana _pochodzeniem_.
   + [Określ, czy każde pochodzenie ma być publiczne, czy prywatne](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). Możesz dodać wiele pochodzenia zarówno typu publicznego, jak i prywatnego.
 
-+ Konfigurowanie i konfigurowanie CDN przy użyciu programu PowerShell lub interfejsu SharePoint interfejsu SharePoint online
++ Konfigurowanie i konfigurowanie interfejsu CDN za pomocą programu PowerShell lub interfejsu Microsoft 365
 
   + [Konfigurowanie i konfigurowanie CDN przy użyciu powłoki zarządzania SharePoint online](use-microsoft-365-cdn-with-spo.md#CDNSetupinPShell)
   + [Konfigurowanie i konfigurowanie serwera CDN przy użyciu programu PowerShell dla programu PnP](use-microsoft-365-cdn-with-spo.md#CDNSetupinPnPPosh)
-  + [Konfigurowanie i konfigurowanie CDN za pomocą interfejsu Office 365 cli](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
+  + [Konfigurowanie i konfigurowanie CDN za pomocą interfejsu Microsoft 365](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
 
   Po zakończeniu tego kroku będziesz mieć:
 
@@ -484,7 +484,7 @@ Get-PnPTenantCdnEnabled -CdnType <Public | Private>
 
 Stan określonej CDN CdnType będzie wyprowadzany do ekranu.
 
-Użyj **polecenia cmdlet Set-PnPTenantCdnEnabled**, aby umożliwić Twojej organizacji korzystanie z Office 365 CDN. Możesz umożliwić organizacji używanie jednocześnie pochodzenia publicznego, pochodzenia prywatnego lub obu tych źródeł. Możesz również skonfigurować aplikację CDN pominąć konfigurowanie domyślnego pochodzenia po jego włączeniu. Te pochodzenie możesz dodać później, jak opisano w tym temacie.
+Użyj **polecenia cmdlet Set-PnPTenantCdnEnabled**, aby umożliwić Twojej organizacji korzystanie z Office 365 CDN. Możesz umożliwić organizacji używanie w tym samym czasie pochodzenia publicznego, pochodzenia prywatnego lub obu tych źródeł. Możesz również skonfigurować aplikację CDN pominąć konfigurowanie domyślnego pochodzenia po jego włączeniu. Te pochodzenie możesz dodać później, jak opisano w tym temacie.
 
 W programie PowerShell dla programu PnP:
 
@@ -742,18 +742,18 @@ Aby uzyskać więcej informacji na temat tego polecenia cmdlet, zobacz [Set-PnPT
 </details>
 
 <a name="CDNSetupinCLI"> </a>
-## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>Konfigurowanie i konfigurowanie Office 365 CDN przy użyciu interfejsu Office 365 cli
+## <a name="set-up-and-configure-the-office-365-cdn-using-the-cli-for-microsoft-365"></a>Konfigurowanie i konfigurowanie interfejsu Office 365 CDN z użyciem interfejsu Microsoft 365
 
-Procedury w tej sekcji wymagają zainstalowania Office 365 [cli](https://aka.ms/o365cli). Następnie połącz się z dzierżawą Office 365 przy użyciu [polecenia](https://pnp.github.io/office365-cli/cmd/login/) logowania.
+Procedury w tej sekcji wymagają zainstalowania interfejsu [Microsoft 365.](https://aka.ms/cli-m365) Następnie połącz się z dzierżawą Office 365 przy użyciu [polecenia](https://pnp.github.io/cli-microsoft365/cmd/login/) logowania.
 
-Wykonaj poniższe czynności, aby skonfigurować konto usługi CDN hostować zasoby w u SharePoint Online przy użyciu interfejsu Office 365 cli.
+Wykonaj poniższe czynności, aby skonfigurować konto usługi CDN hostować zasoby w u SharePoint Online przy użyciu interfejsu Microsoft 365.
 
 <details>
   <summary>Kliknij, aby rozwinąć</summary>
 
 ### <a name="enable-the-office-365-cdn"></a>Włącz Office 365 CDN
 
-Możesz zarządzać stanem dzierżawy Office 365 CDN korzystając z polecenia [zestawu sieci cdn](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-set/) usługi spo.
+Możesz zarządzać stanem dzierżawy Office 365 CDN korzystając z polecenia [zestawu sieci cdn](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-set/) usługi spo.
 
 Aby włączyć Office 365 publiczne CDN w dzierżawie:
 
@@ -769,7 +769,7 @@ spo cdn set --type Private --enabled true
 
 #### <a name="view-the-current-status-of-the-office-365-cdn"></a>Wyświetlanie bieżącego stanu Office 365 CDN
 
-Aby sprawdzić, czy określony typ pliku Office 365 CDN jest włączony lub wyłączony, użyj polecenia pobierz [sieci CDN usługi](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-get/) spo.
+Aby sprawdzić, czy określony typ pliku Office 365 CDN jest włączony lub wyłączony, użyj polecenia pobierz [sieci CDN usługi](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-get/) spo.
 
 Aby sprawdzić, czy Office 365 publiczne CDN włączone, wykonaj polecenie:
 
@@ -792,7 +792,7 @@ Zobacz [Domyślne CDN](use-microsoft-365-cdn-with-spo.md#default-cdn-origins), a
 > [!IMPORTANT]
 > Nigdy nie należy umieszczać zasobów uznanych za poufne dla organizacji w bibliotece SharePoint dokumentów skonfigurowanej jako pochodzenie publiczne.
 
-Użyj polecenia [dodawania pochodzenia sieci cdn](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) w sieci spo, aby CDN pochodzenia. Możesz zdefiniować wiele pochodzenia. Pochodzenie to adres URL, który wskazuje bibliotekę SharePoint lub folder zawierający zasoby, które mają być hostowane przez CDN.
+Użyj polecenia [dodawania pochodzenia sieci cdn](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-add/) w sieci spo, aby CDN pochodzenia. Możesz zdefiniować wiele pochodzenia. Pochodzenie to adres URL, który wskazuje bibliotekę SharePoint lub folder zawierający zasoby, które mają być hostowane przez CDN.
 
 ```cli
 spo cdn origin add --type [Public | Private] --origin <path>
@@ -813,11 +813,11 @@ spo cdn origin add --type Private --origin sites/site1/siteassets
 ```
 
 > [!NOTE]
-> Po dodaniu CDN pochodzenia pobieranie plików za pośrednictwem CDN może potrwać do 15 minut. Możesz sprawdzić, czy dane pochodzenie zostało już włączone, za pomocą polecenia [Lista pochodzenia sieci cdn w sieci](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) Spo.
+> Po dodaniu CDN pochodzenia pobieranie plików za pośrednictwem CDN może potrwać do 15 minut. Możesz sprawdzić, czy dane pochodzenie zostało już włączone, za pomocą polecenia [Lista pochodzenia sieci cdn w sieci](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-list/) Spo.
 
 ### <a name="remove-an-office-365-cdn-origin"></a>Usuwanie Office 365 CDN pochodzenia
 
-Użyj polecenia [usuwania pochodzenia sieci cdn](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-remove/) spo, aby usunąć CDN dla określonego CDN cdn.
+Użyj polecenia [usuwania pochodzenia sieci cdn](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-remove/) spo, aby usunąć CDN dla określonego CDN cdn.
 
 Aby usunąć pochodzenie publiczne z CDN, wykonaj:
 
@@ -834,10 +834,10 @@ Nie jest możliwe modyfikowanie istniejącego CDN pochodzenia. Zamiast tego nale
 
 ### <a name="change-the-types-of-files-to-include-in-the-office-365-cdn"></a>Zmienianie typów plików uwzględnianych w Office 365 CDN
 
-W programie CDN są domyślnie uwzględniane następujące typy plików: _css, eot, .gif, ico, jpeg, .jpg, .js, map, .png, svg, ttf, woff i woff2_. Jeśli chcesz uwzględnić dodatkowe typy plików w skoroszycie, CDN konfigurację sieci CDN za pomocą polecenia [zestawu zasad sieci cdn w uch](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/).
+W programie CDN są domyślnie uwzględniane następujące typy plików: _css, eot, .gif, ico, jpeg, .jpg, .js, map, .png, svg, ttf, woff i woff2_. Jeśli chcesz uwzględnić dodatkowe typy plików w skoroszycie, CDN konfigurację sieci CDN za pomocą polecenia [zestawu zasad sieci cdn w uch](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-set/).
 
 > [!NOTE]
-> Zmiana typu listy plików powoduje zastąpienie obecnie zdefiniowanej listy. Jeśli chcesz dołączyć dodatkowe typy plików, najpierw użyj polecenia listy zasad [sieci cdn](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) w sieci spo, aby dowiedzieć się, które typy plików są obecnie skonfigurowane.
+> Zmiana typu listy plików powoduje zastąpienie obecnie zdefiniowanej listy. Jeśli chcesz dołączyć dodatkowe typy plików, najpierw użyj polecenia listy zasad [sieci cdn](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-list/) w sieci spo, aby dowiedzieć się, które typy plików są obecnie skonfigurowane.
 
 Aby dodać _typ pliku JSON_ do domyślnej listy typów plików dostępnych w publicznym CDN, wykonaj następujące polecenie:
 
@@ -847,10 +847,10 @@ spo cdn policy set --type Public --policy IncludeFileExtensions --value "CSS,EOT
 
 ### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn"></a>Zmienianie listy klasyfikacji witryn, które chcesz wykluczyć z Office 365 CDN
 
-Użyj polecenia [zestawu zasad sieci CDN](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) usługi Spo, aby wykluczyć klasyfikacje witryn, które nie mają być dostępne w CDN. Domyślnie nie są wykluczane żadne klasyfikacje witryn.
+Użyj polecenia [zestawu zasad sieci CDN](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-set/) usługi Spo, aby wykluczyć klasyfikacje witryn, które nie mają być dostępne w CDN. Domyślnie nie są wykluczane żadne klasyfikacje witryn.
 
 > [!NOTE]
-> Zmiana listy wykluczonych klasyfikacji witryn powoduje zastąpienie obecnie zdefiniowanej listy. Jeśli chcesz wykluczyć dodatkowe klasyfikacje, najpierw użyj polecenia listy zasad [sieci CDN usługi Spo](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-list/) , aby dowiedzieć się, które klasyfikacje są obecnie skonfigurowane.
+> Zmiana listy wykluczonych klasyfikacji witryn powoduje zastąpienie obecnie zdefiniowanej listy. Jeśli chcesz wykluczyć dodatkowe klasyfikacje, najpierw użyj polecenia listy zasad [sieci CDN usługi Spo](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-list/) , aby dowiedzieć się, które klasyfikacje są obecnie skonfigurowane.
 
 Aby wykluczyć witryny sklasyfikowane jako _OII_ z publicznym CDN, wykonaj
 
@@ -1045,7 +1045,7 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 Możesz pracować z tym interfejsem, Office 365 CDN moduł **powershell SharePoint zarządzania** usługą online lub interfejs **Office 365 cli**.
 
 + [Wprowadzenie do powłoki SharePoint zarządzania usługi Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-+ [Instalowanie interfejsu Office 365 cli](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
++ [Instalowanie interfejsu Office 365 cli](https://pnp.github.io/cli-microsoft365/user-guide/installing-cli/)
 
 ## <a name="see-also"></a>Zobacz też
 

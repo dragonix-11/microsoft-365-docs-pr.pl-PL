@@ -17,12 +17,12 @@ ms.collection:
 description: Dowiedz się, jak włączyć dodatki Report Message (Wiadomość raportu) lub Wyłudzanie informacji (Report Phishing) dla Outlook i Outlook w sieci Web użytkowników lub dla całej organizacji.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f2316cc787ede02644a48636a01b30458d7e349
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: dc4c03a0ed1f0a03d96776c841203c9131c3067c
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "62996786"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468884"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Włączanie dodatku Wiadomość raportu lub Wyłudzanie informacji
 
@@ -59,7 +59,9 @@ Jeśli jesteś administratorem globalnym lub administratorem programu Exchange O
   - Outlook dołączone do Microsoft 365 dla Enterprise
   - Outlook dla systemów iOS i Android
 
-- Oba dodatki nie są dostępne dla udostępnionych skrzynek pocztowych ani skrzynek pocztowych w lokalnych Exchange organizacjach.
+- Oba dodatki nie są dostępne dla udostępnionych skrzynek pocztowych.
+
+- Oba dodatki nie są dostępne dla lokalnych skrzynek Exchange pocztowych. 
 
 - Istniejąca przeglądarka internetowa powinna działać zarówno w przypadku dodatków Report Message (Wiadomość raportu), jak i Wyłudzanie informacji (Report Phishing). Jeśli jednak zauważysz, że dodatek nie jest dostępny lub nie działa zgodnie z oczekiwaniami, spróbuj użyć innej przeglądarki.
 

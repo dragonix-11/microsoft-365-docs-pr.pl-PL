@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/07/2022
+ms.date: 03/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e19b6400643b29005a6c92323f58f7dc996db49e
-ms.sourcegitcommit: ad6d9fd5ad050c72622a32a191997fe6d7b2deee
+ms.openlocfilehash: 2f6f2135e81bf99f6391b75067ad89d1af3a712c
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63353905"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468712"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego
 
@@ -42,7 +42,7 @@ Zapewnienie Program antywirusowy Microsoft Defender na bieżąco jest niezbędne
 
 ## <a name="security-intelligence-updates"></a>Aktualizacje analizy zabezpieczeń
 
-Program antywirusowy Microsoft Defender korzysta z ochrony [w](cloud-protection-microsoft-defender-antivirus.md) chmurze (nazywanej również usługą microsoft Advanced Protection Service lub MAP) i okresowo pobiera aktualizacje analizy zabezpieczeń w celu zapewnienia ochrony.
+Program antywirusowy Microsoft Defender korzysta z ochrony [w](cloud-protection-microsoft-defender-antivirus.md) chmurze (nazywanej również usługą Microsoft Advanced Protection Service lub MAP) i okresowo pobiera aktualizacje dynamicznej analizy zabezpieczeń w celu zapewnienia dodatkowej ochrony. Te aktualizacje dynamiczne nie są miejscem regularnego aktualizowania analizy zabezpieczeń za pośrednictwem aktualizacji analizy zabezpieczeń KB2267602.
 
 > [!NOTE]
 > Aktualizacje są wydane w ramach następujących kb/kb:

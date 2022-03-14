@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 17f4ad39c89aa6990ec041e975a257fdab513d20
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6db82c1dcc9afceebcb9fff891cb90ddafa95f21
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450054"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468726"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Omówienie usługi Microsoft Defender dla firm
 
@@ -53,7 +53,7 @@ Za pomocą usługi Defender dla firm możesz chronić urządzenia i dane używan
 
 - **Łatwe w użyciu rozwiązanie zabezpieczające**. Program Defender dla firm oferuje usprawnione środowisko, które ułatwia działanie dzięki rekomendacjom i wglądom w bezpieczeństwo punktów końcowych. Wyspecjalizowana wiedza nie jest wymagana, ponieważ program Defender dla firm oferuje konfigurację kierowaną przez kreatora oraz domyślne zasady zabezpieczeń, które od pierwszego dnia pomagają chronić urządzenia w Twojej organizacji.
 
-- **Elastyczność w środowisku**. Usługa Defender dla firm może współpracować ze środowiskiem biznesowym niezależnie od tego, czy korzystasz z chmury firmy Microsoft, technologii lokalnej, czy rozwiązań biurowych innych niż firmy Microsoft. Program Defender dla firm współpracuje ze składnikami wbudowanymi w aplikację Windows oraz z aplikacjami dla urządzeń z systemami macOS, iOS i Android.
+- **Elastyczność w środowisku**. Usługa Defender dla firm może współpracować ze środowiskiem biznesowym niezależnie od tego, czy Microsoft Intune korzystasz z usługi, czy jesteś nowym użytkownikiem chmury firmy Microsoft. Program Defender dla firm współpracuje ze składnikami wbudowanymi w aplikację Windows oraz z aplikacjami dla urządzeń z systemami macOS, iOS i Android.
 
 - **Integracja z programem Microsoft 365 Lighthouse**. Jeśli jesteś usługodawcą zarządzanym (MSP, Managed Service Provider) [używającym programu Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), dostępnych jest więcej funkcji. Jeśli Twoi klienci współpracują Microsoft 365 Business Premium usługą Defender dla firm, możesz wyświetlać alerty i zdarzenia związane z zabezpieczeniami w dzierżawach klientów, które zostały Microsoft 365 Lighthouse.
 

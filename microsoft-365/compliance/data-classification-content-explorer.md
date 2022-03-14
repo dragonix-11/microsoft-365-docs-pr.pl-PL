@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eksplorator zawartości umożliwia natywnie wyświetlanie elementów oznaczonych etykietami.
-ms.openlocfilehash: fb7448ffd4ed56deb41bbb1d128608b88e9617ea
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021166"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468764"
 ---
 # <a name="get-started-with-content-explorer"></a>Wprowadzenie do Eksploratora zawartości
 
@@ -91,7 +91,7 @@ Oto lista dostępnych w wersji Microsoft Information Protection (MIP), które s�
 - Ochrona informacji
 - Czytnik ochrony informacji
 
-Poniżej znajdziesz listę grup ról miP, które są dostępne w wersji Preview. Aby dowiedzieć się więcej na ten temat, [zobacz Grupy ról w Centrum & zabezpieczeń.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Poniżej znajdziesz listę grup ról miP, które są dostępne w wersji Preview. Aby dowiedzieć się więcej, [zobacz Grupy ról w Centrum & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Ochrona informacji
 - Administratorzy ochrony informacji
@@ -106,9 +106,6 @@ Eksplorator zawartości pokazuje bieżącą migawkę elementów, które mają et
 ### <a name="sensitive-information-types"></a>Typy informacji poufnych
 
 Zasady [DLP pomagają](dlp-learn-about-dlp.md) chronić informacje poufne, zdefiniowane jako **typ informacji poufnych**. Microsoft 365 zawiera [definicje wielu typowych typów informacji poufnych](sensitive-information-type-entity-definitions.md) z wielu różnych regionów, które są gotowe do użycia. Może to być na przykład numer karty kredytowej, numery kont bankowych, identyfikatory państwowe Windows numery usług Live ID.
-
-> [!NOTE]
-> Eksplorator zawartości obecnie nie skanuje w poszukiwaniu typów informacji poufnych w programie Exchange Online.
 
 ### <a name="sensitivity-labels"></a>Etykiety wrażliwości
 
@@ -134,29 +131,26 @@ Etykiety wrażliwości muszą być włączone dla plików w SharePoint i OneDriv
 ![kontrolkę eksportu klasyfikacji danych.](../media/data_classification_export_control.png)
 
 
+> [!NOTE]
+> Aktualizacja liczników w *Eksploratorze* zawartości może potrwać do siedmiu dni.
+
 ### <a name="search"></a>Wyszukiwanie
 
-Po przechodzeniu do szczegółów w lokalizacji, takiej Exchange, folderze programu SharePoint lub OneDrive, zostanie **wyświetlone narzędzie wyszukiwania**.
+Po przechodzeniu do szczegółów w lokalizacji, takiej jak folder Exchange lub Teams albo witryna usługi SharePoint lub OneDrive, zostanie **wyświetlone narzędzie wyszukiwania**.
 
 ![narzędzie do wyszukiwania w Eksploratorze zawartości.](../media/data_classification_search_tool.png)
 
-
 Zakres narzędzia wyszukiwania jest wyświetlany w okienku Wszystkie lokalizacje,  a zakres opcji, według których można wyszukiwać, zależy od wybranej lokalizacji. 
 
-Gdy **Exchange** wybraną lokalizacją, możesz na przykład wyszukać pełny adres e-mail skrzynki pocztowej`user@domainname.com`.
+Jeśli **Exchange** lub **Teams** jest wybraną lokalizacją, możesz na przykład wyszukać pełny adres e-mail skrzynki pocztowej`user@domainname.com`.
 
 Gdy lokalizacja **SharePoint** lub OneDrive zaznaczona, narzędzie wyszukiwania zostanie wyświetlone podczas przechodzenia do szczegółów nazw witryn, folderów i plików. 
 
-> [!NOTE]
-> **OneDrive** wysłuchaliśmy Twojej cennej opinii na temat integracji OneDrive w trakcie programu w wersji Preview. Na podstawie tych opinii funkcje OneDrive będą dostępne w wersji Preview do momentu, aż będą dostępne wszystkie poprawki. W zależności od Twojej dzierżawy niektórzy klienci mogą nie OneDrive jako lokalizacji. Będziemy wdzięczni za dalsze wsparcie w tym związku.
-
 Możesz wyszukiwać w:
-
 
 |wartość|przykład  |
 |---------|---------|
 |pełna nazwa witryny    |`https://contoso.onmicrosoft.com/sites/sitename`    |
-|nazwa folderu głównego — pobiera wszystkie podfoldery    | `/sites`        |
 |nazwa pliku    |    `RES_Resume_1234.txt`     |
 |tekst na początku nazwy pliku| `RES`|
 |Tekst po znaku podkreślenia (_) w nazwie pliku|`Resume` lub `1234`| 

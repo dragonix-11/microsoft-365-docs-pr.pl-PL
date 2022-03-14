@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 03/09/2022
-ms.openlocfilehash: 9f323d902f0e421ea73303706e0785f9bd76f3ff
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: f696cd3631573bdb2206c665340f35601e4624ac
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406067"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468988"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Program Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
@@ -253,7 +253,7 @@ Microsoft Endpoint Manager administracyjnego (<https://endpoint.microsoft.com/>)
       `DefaultEnforcementDeny = 2`
 
     - Po wdrożeniu tego ustawienia zobaczysz domyślny język **Allow (Zezwalaj)** lub **Default Deny (Odmów domyślne)**
-    - Podczas konfigurowania tego ustawienia weź pod uwagę zarówno poziom dysku, jak i poziom systemu plikówMask, jeśli na przykład chcesz ustawić wartość Default Deny (Odmów domyślne), ale zezwolić na określone miejsce do magazynowania, musisz zezwolić zarówno na dostęp na poziomie dysku, jak i na poziomie systemu Fiel, musisz ustawić wartość AccessMask na 63.
+    - Podczas konfigurowania tego ustawienia weź pod uwagę zarówno poziom dysku, jak i poziom systemu plikówMask, jeśli na przykład chcesz ustawić wartość Default Deny (Odmów domyślne), ale zezwolić na określone miejsce do magazynowania, musisz zezwolić zarówno na dostęp na poziomie dysku, jak i na poziomie systemu plików. Musisz ustawić wartość AccessMask na 63.
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Domyślne wymuszanie kodu zezwalania na stosowanie programu PowerShell":::
 
@@ -291,7 +291,7 @@ Portal [Microsoft 365 Defender zawiera zdarzenia](https://security.microsoft.com
 - Microsoft 365 raportów E5
 
 ```kusto
-//events triggered by RemovableStoragePolicyTriggered
+//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -311,6 +311,29 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+```kusto
+//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
+DeviceEvents
+| where ActionType contains "RemovableStorageFileEvent"
+| extend parsed=parse_json(AdditionalFields)
+| extend Policy = tostring(parsed.Policy) 
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend MediaClassName = tostring(parsed.ClassName)
+| extend MediaInstanceId = tostring(parsed.InstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend MediaProductId = tostring(parsed.ProductId) 
+| extend MediaVendorId = tostring(parsed.VendorId) 
+| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
+    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
+    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
+    FileName, FolderPath, FileSize, FileEvidenceLocation,
+    AdditionalFields
+| order by Timestamp desc
+```
+    
 :::image type="content" source="images/block-removable-storage.png" alt-text="Ekran przedstawiający blokadę magazynu wymiennych.":::
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
