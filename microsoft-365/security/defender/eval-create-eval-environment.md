@@ -1,6 +1,6 @@
 ---
-title: Krok nr 1. Tworzenie środowiska Microsoft 365 Defender oceny
-description: Skonfiguruj laboratorium Microsoft 365 Defender lub środowisko pilotażowe, aktywując licencje wersji próbnej. Następnie skonfiguruj usługę Microsoft Defender for Identity (MDI) i wszystkie inne oceny M365D.
+title: Tworzenie środowiska Microsoft 365 Defender oceny w celu zwiększenia bezpieczeństwa cyberzabłędu i XDR
+description: Dowiedz się, co zawiera kod XDR pakietu Microsoft 365 Defender, który ocenisz, i aktywuj środowisko Microsoft 365 Defender próbnego lub pilotażowego, aktywując licencje wersji próbnej. Rozpocznij tutaj podróż z cyberzabłędem w kodach XDR i dowiedz się, jak rozpocząć ten test do produkcji.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,20 +21,34 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 17751cf5f71d9754ad8d5c0c913ee3438b49b399
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d81d33a01802ebdf8ef0ea67a9ee74fc69b79384
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311623"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504741"
 ---
-# <a name="step-1-create-the-microsoft-365-defender-evaluation-environment"></a>Krok nr 1. Tworzenie środowiska Microsoft 365 Defender oceny
+# <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>Krok nr 1. Tworzenie środowiska oceny Microsoft 365 Defender w celu większej ochrony przed cyberzabłędem
 
-Istnieją dwa typowe sposoby następnego kroku oceny. Ten dokument zakłada, że masz już dzierżawę produkcyjną Microsoft 365 i aktywuje licencje wersji próbnej E5, aby ocenić Microsoft 365 Defender *w bieżącym środowisku*. Ocena w miejscu pozwoli zachować wszystkie metody zabezpieczeń przy zakupie licencji po okresie oceny.
+LMożesz dowiedzieć się więcej na temat tego Microsoft Defender XDR i utworzyć je w krokach rozmieszczonych w pozostałej części tej serii:
 
-Drugie to konfigurowanie [środowiska laboratorium Microsoft 365 Defender na](setup-m365deval.md) potrzeby oceny. Pamiętaj, że może ona nie mieć wielu rzeczywistych sygnałów od firmy.
+- [Jak utworzyć środowisko](eval-create-eval-environment.md)
+- Konfigurowanie i poznanie poszczególnych technologii tego xdr firmy Microsoft
+    - [Microsoft Defender for Identity](eval-defender-identity-overview.md)
+    - [Program Microsoft Defender dla Office](eval-defender-office-365-overview.md)
+    - [Ochrona punktu końcowego w usłudze Microsoft Defender](eval-defender-endpoint-overview.md)
+    - [Usługa Microsoft Defender dla aplikacji w chmurze](eval-defender-mcas-overview.md)
+- [Jak zbadać i odpowiedzieć przy użyciu tego xdr](eval-defender-investigate-respond.md)
+- [Promowanie środowiska próbnego do produkcji](eval-defender-promote-to-production.md)
+- [Powrót do przeglądu](eval-overview.md)
 
-## <a name="to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>Aby aktywować licencje wersji próbnej E5 w celu oceny Microsoft 365 Defender 
+Kroki w tej serii są uruchamiane od końca, od nauki pojęć związanych z Microsoft 365 Defender XDR do tworzenia tego środowiska oceny i tworzenia środowiska oceny na żywo.
+
+Istnieją dwa typowe sposoby następnego kroku oceny. W tej serii założono, że masz już dzierżawę produkcyjną Microsoft 365 i aktywujesz licencje wersji próbnej E5, aby ocenić Microsoft 365 Defender *w bieżącym środowisku*. Ocena w miejscu pozwoli zachować wszystkie metody zabezpieczeń przy zakupie licencji po okresie oceny.
+
+Drugie to konfigurowanie [środowiska laboratorium Microsoft 365 Defender na](setup-m365deval.md) potrzeby oceny. Pamiętaj, że podczas testowania może nie mieć wielu rzeczywistych sygnałów od firmy.
+
+## <a name="you-will-need-to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>Konieczne będzie aktywowanie licencji wersji próbnej E5, aby ocenić Microsoft 365 Defender
 
 1. Zaloguj się do istniejącego Microsoft 365 administracyjnego dzierżawy.
 2. Wybierz **pozycję Zakup usług** z menu nawigacji.
@@ -50,8 +64,8 @@ Drugie to konfigurowanie [środowiska laboratorium Microsoft 365 Defender na](se
 
    :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Na panelu &quot;Sprawdź, potwierdź swoje zamówienie&quot; znajduje się przycisk &quot;Wypróbuj teraz&quot; (w przypadku miesięcznej wersji Office 365 E5 próbnej dla 25 użytkowników).":::
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="go-to-the-next-step"></a>Przejdź do następnego kroku
 
-[Włączanie Microsoft 365 tożsamości](eval-defender-identity-overview.md)
+[Dowiedz się, jak włączyć Microsoft 365 tożsamości](eval-defender-identity-overview.md)
 
-Wróć do przeglądu projektów [oceniania i Microsoft 365 Defender](eval-overview.md)
+Lub wróć do przeglądu projektów [oceniania i Microsoft 365 Defender](eval-overview.md)

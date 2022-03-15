@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5f0b846fdbfaa76250ae64ae281afc9592a24eb4
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6f6ada6604190ccba270b287201d94ba2acbf6d2
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450356"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504844"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Wdowa Windows usługi Microsoft Defender dla punktu końcowego
 
@@ -298,6 +298,8 @@ Za pomocą skryptu [instalatora można](server-migration.md#installer-script) za
     ```  
 
      >[!NOTE]
+    >Jeśli chcesz rozwiązać problemy z instalacją agenta, dodaj pozycję "-etl -log" do install.ps1 parametrów skryptu.
+    >
     >Zalecane ustawienie zasad wykonywania to `Allsigned`. Wymaga to zaimportowania certyfikatu podpisywania skryptu do magazynu zaufani wydawcy na komputerze lokalnym, jeśli skrypt jest uruchomiony jako SYSTEM w punkcie końcowym.
 
     Zastąp \\nazwę serwera -lub-dfs-space\share-name ścieżką UNC, używając w pełni kwalifikowanej nazwy domeny (FQDN) serwera plików udostępnionych w *install.ps1pliku.* Pakiet instalatora md4ws.msi musi znajdować się w tym samym katalogu.  Upewnij się również, że uprawnienia ścieżki UNC umożliwiają dostęp do odczytu konta komputera, które instaluje platformę.

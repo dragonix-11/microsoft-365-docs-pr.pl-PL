@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6b475a1f56f66c6ec9e1ed09b5311515c5eb31c8
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: c5de66418b242beb975cce0d6ece299753360c99
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468698"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504792"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Urządzenia w programie Microsoft Defender dla firm
 
@@ -33,36 +33,44 @@ ms.locfileid: "63468698"
 
 Usługa Microsoft Defender dla firm pozwala wybrać jedną z opcji dołączania urządzeń organizacji. W tym artykule opisano dostępne opcje i opisano sposób działania dołączania.
 
-## <a name="what-to-do"></a>Co należy zrobić
-
-1. Zapoznaj się z opcjami [urządzeń dołączających](#device-onboarding-methods) do pracy i wybierz jedną z następujących metod: 
-
-   - [Automatyczne dołączanie dla Windows zarejestrowanych w usłudze Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
-   - [Skrypt lokalny dla Windows komputerów Mac i komputerów Mac](#local-script-in-defender-for-business)
-   - [Microsoft Endpoint Manager (Microsoft Intune)](#microsoft-endpoint-manager)
-   - [Konfiguracja zabezpieczeń programu Microsoft Defender dla firm](#microsoft-defender-for-business-security-configuration)
-
-2. [Uruchom test wykrywania](#run-a-detection-test) dla nowo Windows urządzeniach.
-
-3. [Zobacz następne kroki](#next-steps). 
-
-Ten artykuł zawiera również informacje na temat uruchamiania testu wykrywania [dla Windows urządzeń](#run-a-detection-test) i [Wyzysowania urządzenia](#offboarding-a-device).
-
 >
 > **Masz minutę?**
 > Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
 >
 
+## <a name="get-the-device-onboarding-guide"></a>Pobierz przewodnik po dołączaniu do urządzenia
+
+Skorzystaj z poniższego przewodnika i informacji, aby wybrać najlepszą opcję dla organizacji.
+
+[:::image type="content" source="media/mdb-device-onboarding.png" alt-text="Zrzut ekranu przedstawiający diagram dołączania urządzenia":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
+[PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
+
+## <a name="what-to-do"></a>Co należy zrobić
+
+1. [Zapoznaj się z dostępnymi opcjami dla urządzeń](#device-onboarding-methods) dołączających i wybierz metodę. 
+
+   - [Użyj automatycznego dołączania do Windows urządzeń już zarejestrowanych w Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
+   - [Używanie skryptu lokalnego na urządzeniach Windows lub macOS](#local-script-in-defender-for-business)
+   - [Korzystanie Microsoft Endpoint Manager, aby korzystać z Windows, macOS lub urządzeń przenośnych](#microsoft-endpoint-manager)
+   - [Dowiedz się więcej o dołączaniu urządzeń za pomocą konfiguracji zabezpieczeń programu Microsoft Defender dla firm](#microsoft-defender-for-business-security-configuration)
+
+2. [Uruchom test wykrywania](#run-a-detection-test) na nowo Windows urządzeniach.
+
+3. [Zobacz następne kroki](#next-steps). 
+
+Ten artykuł zawiera również informacje na [temat wywłasniania urządzenia](#offboarding-a-device).
+
 ## <a name="device-onboarding-methods"></a>Metody dołączania urządzenia
 
-W poniższej tabeli opisano najczęściej używane metody dołączania urządzeń do usługi Defender dla firm. 
+Usługę Defender dla firm udostępnia kilka różnych metod dołączania urządzeń: niezależnie od tego, czy korzystasz już z programu Microsoft Endpoint Manager, czy po prostu chcesz mieć uproszczone środowisko dołączania. Najczęściej używane metody dołączania urządzeń do usługi Defender dla firm to:
 
-| Metoda dołączania  | Opis  | System operacyjny |
-|---------|---------|---------|
-| **Automatyczne dołączanie**<br/>(*dostępne dla klientów, którzy już Microsoft Endpoint Manager*) | *Microsoft 365 Business Premium klienci mają już Microsoft Intune klientów i mogą skorzystać z tej opcji*. Automatyczne wniesienie konfiguruje połączenie między usługą Defender dla firm i usługami Microsoft Endpoint Manager, a następnie na urządzeniach Windows z usługą Defender dla firm. Aby użyć tej opcji, urządzenia muszą już być zarejestrowane w Endpoint Manager.<br/><br/>Aby dowiedzieć się więcej, [zobacz Automatyczne dołączanie](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). | System Windows |
-| **Skrypt lokalny** <br/> | Ta opcja umożliwia ręczne dołączanie poszczególnych urządzeń do programu Defender dla firm. Korzystając ze skryptu lokalnego, można w tym czasie dodać maksymalnie 10 urządzeń.<br/><br/>Aby dowiedzieć się więcej, zobacz [Skrypt lokalny w programie Defender dla firm](#local-script-in-defender-for-business). | System Windows <br/>macOS |
-| **Microsoft Intune** lub **Microsoft Endpoint Manager**<br/>(*dostępne dla klientów, którzy Microsoft Intune lub Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) zarządzanie [urządzeniami przenośnymi](/mem/intune/enrollment/device-enrollment) są częścią Endpoint Manager. (Microsoft 365 Business Premium klienci mają już Microsoft Intune).<br/><br/>Jeśli korzystasz już z usługi Endpoint Manager usługi Defender dla firm, możesz kontynuować korzystanie z usługi Endpoint Manager w celu do korzystania z urządzeń i zarządzania nimi.<br/><br/>Aby użyć tej metody, zobacz [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | System Windows <br/>macOS<br/>iOS<br/>System operacyjny Android | 
-| **Konfiguracja zabezpieczeń programu Microsoft Defender dla firm** <br/>(*używa portalu Microsoft 365 Defender)* | Aby użyć tej opcji, skonfiguruj pewne ustawienia w celu ułatwienia komunikacji między usługą Defender dla Firm a programem Endpoint Manager. Następnie możesz wnosić urządzenia do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) przy użyciu pakietu, który można pobrać i uruchomić na każdym urządzeniu. Między urządzeniami a usługą Azure AD jest ustanowione zaufanie i zasady zabezpieczeń usługi Defender Azure Active Directory usługi Defender dla firm są wypychane na urządzenia.<br/><br/>Aby dowiedzieć się więcej, zobacz [Konfiguracja zabezpieczeń programu Microsoft Defender dla firm](#microsoft-defender-for-business-security-configuration). | System Windows <br/>macOS |
+- **Automatyczne dołączanie dla** Windows, które są już zarejestrowane w programie Microsoft Endpoint Manager. Automatyczne wniesienie konfiguruje połączenie między usługą Defender dla firm i usługami Microsoft Endpoint Manager, a następnie na urządzeniach Windows z usługą Defender dla firm. Aby użyć tej opcji, urządzenia muszą już być zarejestrowane w Endpoint Manager. Aby dowiedzieć się więcej, [zobacz Automatyczne dołączanie](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager).
+
+- **Skrypt lokalny** do ręcznego dołączania Windows i macOS do programu Defender dla firm. Korzystając ze skryptu lokalnego, można w tym czasie dodać maksymalnie 10 urządzeń. Aby dowiedzieć się więcej, zobacz [Skrypt lokalny w programie Defender dla firm](#local-script-in-defender-for-business).
+
+- **Microsoft Intune** lub **Microsoft Endpoint Manager** na urządzenia Windows, macOS i urządzenia przenośne. Możesz zarejestrować urządzenia w programie Endpoint Manager, a następnie dodać je do usługi Defender dla firm. [Microsoft 365 Business Premium](../../business-premium/index.md) klienci mają [już Microsoft Intune usługi](/mem/intune/fundamentals/what-is-intune) i Microsoft Intune zarządzanie urządzeniami przenośnymi są teraz częścią Endpoint Manager.[](/mem/intune/enrollment/device-enrollment) Aby użyć tej metody, zobacz [Microsoft Endpoint Manager](#microsoft-endpoint-manager).
+
+- **Konfiguracja zabezpieczeń programu Microsoft Defender dla firm na** urządzeniach wnoszeniowych bezpośrednio w portalu Microsoft 365 Defender sieci ([https://security.microsoft.com](https://security.microsoft.com)). Aby użyć tej opcji, skonfiguruj pewne ustawienia w celu ułatwienia komunikacji między usługą Defender dla Firm a programem Endpoint Manager. Następnie możesz wnosić urządzenia do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) przy użyciu pakietu, który wybierasz, pobierasz i uruchamiasz na każdym urządzeniu. Między urządzeniami a usługą Azure AD jest ustanowione zaufanie i zasady zabezpieczeń usługi Defender Azure Active Directory usługi Defender dla firm są wypychane na urządzenia. Aby dowiedzieć się więcej, zobacz [Konfiguracja zabezpieczeń programu Microsoft Defender dla firm](#microsoft-defender-for-business-security-configuration). 
 
 > [!IMPORTANT]
 > Jeśli coś poszło nie tak, a proces dołączania zakończy się niepowodzeniem, zobacz Rozwiązywanie problemów z usługą [Microsoft Defender dla firm](mdb-troubleshooting.yml).
@@ -72,12 +80,13 @@ W poniższej tabeli opisano najczęściej używane metody dołączania urządze�
 Opcja automatycznego dołączania dotyczy tylko Windows urządzeniach. Automatyczne dołączanie jest dostępne, jeśli są spełnione następujące warunki:
 
 - Twoja organizacja używała już usługi Microsoft Endpoint Manager, Microsoft Intune lub zarządzania urządzeniami przenośnymi w uścisce Microsoft Intune przed użyciem usługi Defender dla firm
+
 - Masz już Windows urządzenia zarejestrowane w usłudze Endpoint Manager
 
 Jeśli Windows urządzenia są już zarejestrowane w usłudze Endpoint Manager, program Defender dla firm wykryje je podczas konfigurowania i konfigurowania usługi Defender dla firm. Zostaniesz poproszony(-a) o zastosowanie automatycznego dołączania do wszystkich lub niektórych Windows urządzeniach. Możesz wychować wszystkie Windows urządzenia jednocześnie lub wybrać określone urządzenia, od których chcesz zacząć, a następnie dodać więcej urządzeń później.
 
 > [!TIP]
-> Zalecamy wybranie opcji "wszystkie zarejestrowane urządzenia". Dzięki temu po Windows urządzenia w usłudze Endpoint Manager będą automatycznie dołączane do usługi Defender dla firm.
+> Zalecamy wybranie opcji "wszystkie zarejestrowane urządzenia". Dzięki temu po Windows urządzenia w usłudze Endpoint Manager będą automatycznie dołączane do usługi Defender dla firm. Ponadto, jeśli zarządzasz zasadami i ustawieniami zabezpieczeń w aplikacji Endpoint Manager, zalecamy przełączenie się do portalu Microsoft 365 Defender w celu zarządzania urządzeniami, zasadami i ustawieniami. Aby dowiedzieć się więcej, [zobacz Wybieranie miejsca zarządzania zasadami zabezpieczeń i urządzeniami](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 
 Aby dowiedzieć się więcej o automatycznym dołączaniu, zobacz krok 2 w tece [Konfigurowanie usługi Microsoft Defender dla firm](mdb-use-wizard.md) za pomocą kreatora.
 

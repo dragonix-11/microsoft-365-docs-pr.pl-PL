@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fdab6896edf704c4daa83ec993c0716c54d0f43
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 0703e1f23d9d54a907b39382438f85f544a5b6de
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494572"
+ms.locfileid: "63504863"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail
 
@@ -485,6 +485,9 @@ Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj*
 
 ![Widok technologii wykrywania dla wiadomości e-mail wyłudzających informacje w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
+> [!NOTE]
+> Począwszy od maja 2021 r., wykrywanie wyłudzania informacji w wiadomościach e-mail zostało zaktualizowane w celu dołączyć załączniki **wiadomości zawierające adresy** URL służące do wyłudzania informacji. Ta zmiana może spowodować zmianę **\>** niektórych woluminów wykrywania na zewnątrz widoku Wyświetlanie danych przez złośliwe oprogramowanie w wiadomościach e-mail i wyświetlanie danych **według wiadomości e-mail \> phish**. Oznacza to, że załączniki wiadomości z adresami URL do wyłudzania informacji, które zazwyczaj były identyfikowane jako złośliwe oprogramowanie, mogą zostać zidentyfikowane jako próby wyłudzenia informacji.
+
 Na **wykresie w widokach Wyświetlanie \>** danych według wiadomości e-mail i Phish oraz **Chart według** technologii wykrywania są wyświetlane następujące informacje:
 
 - **Złośliwy reputacja adresu**<sup>\*</sup> URL: Reputacja złośliwego adresu URL generowana przez usługę Defender dla Office 365 danych w innych Microsoft 365 klientach.
@@ -599,6 +602,9 @@ Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](..
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>Wyświetlanie danych według złośliwego oprogramowania poczty \> e-mail i podziału wykresów według technologii wykrywania
 
 ![Widok technologii wykrywania złośliwego oprogramowania w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+
+> [!NOTE]
+> Począwszy od maja 2021 r., wykrywanie złośliwego oprogramowania w wiadomościach e-mail zostało zaktualizowane, aby uwzględnić szkodliwe **adresy URL** w załącznikach wiadomości. Ta zmiana może spowodować przesunięcie **\>** części głośności wykrywania z widoku Wyświetlanie danych przy poczty e-mail Phish i wyświetlanie danych **przez złośliwe oprogramowanie pocztą e-mail\>**. Innymi słowy, szkodliwe adresy URL w załącznikach wiadomości, które były zazwyczaj identyfikowane jako próby wyłudzenia informacji, mogą zostać zidentyfikowane jako złośliwe oprogramowanie.
 
 Na wykresie **przedstawiono następujące informacje w \>** widokach  Wyświetlanie danych według złośliwego oprogramowania poczty e-mail i wykresu według technologii wykrywania:
 

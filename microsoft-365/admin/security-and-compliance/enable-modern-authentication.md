@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Dowiedz się, jak ustawić klucze rejestru w celu włączenia nowoczesnego uwierzytelniania dla urządzeń, na Microsoft Office 2013.
-ms.openlocfilehash: 9ab3bb8e352a90cd4cef0c3c56496b3431e8b746
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 010dce00762e4e73d21a9da668a7ac9606d731f9
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494460"
+ms.locfileid: "63504747"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Włączanie nowoczesnego uwierzytelniania dla pakietu Office 2013 na urządzeniach z systemem Windows
 
@@ -48,9 +48,8 @@ Aby włączyć nowoczesne uwierzytelnianie na dowolnych urządzeniach z systemem
 |Klucz rejestru|Wpisać|Value|
 |:---|:---:|---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
-|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
 
 Utwórz lub zmodyfikuj poniższe klucze rejestru, aby wymusić Outlook używania nowszej metody uwierzytelniania dla usług sieci Web, takich jak EWS i autodiscover. Zalecamy, aby użytkownicy wymuszali Outlook nowoczesnego uwierzytelniania.
 
@@ -67,7 +66,7 @@ Utwórz lub zmodyfikuj poniższe klucze rejestru, aby wymusić Outlook używania
    HKEY_CURRENT_USER\Software\Microsoft\Exchange\
    ```
 
-4. Jeśli *brakuje klucza AlwaysUseMSOAuthForAutoDiscover* , wpisz *alwaysUseMSOAuthForAutoDiscover*, a następnie naciśnij klawisz **Enter.**
+4. Jeśli *brakuje klucza AlwaysUseMSOAuthForAutoDiscover*, w menu Edycja wskaż polecenie Nowy, a  następnie wybierz pozycję **Wartość DWORD**. Wpisz *AlwaysUseMSOAuthForAutoDiscover*, a następnie naciśnij klawisz **Enter.**
 
 5. Kliknij prawym przyciskiem *myszy pozycję AlwaysUseMSOAuthForAutoDiscover*, a następnie kliknij polecenie **Modyfikuj.**
 
@@ -76,10 +75,10 @@ Utwórz lub zmodyfikuj poniższe klucze rejestru, aby wymusić Outlook używania
 7. W Edytorze rejestru znajdź i kliknij następujący podklucz rejestru:
 
    ```console
-   HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\
+   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. Jeśli wartości w powyższej tabeli już istnieją, zmodyfikuj je w razie potrzeby, a następnie zamknij Edytor rejestru. Jeśli tak się nie stanie, w menu Edycja wskaż polecenie **Nowy, a** następnie kliknij pozycję Wartość **DWORD** brakujących klawiszy. 
+8. Jeśli klucze w powyższej tabeli już istnieją, zmodyfikuj wartości w razie potrzeby, a następnie zamknij Edytor rejestru. Jeśli tak się nie stanie, w menu Edycja wskaż polecenie Nowy, a następnie wybierz pozycję Wartość **DWORD**, aby utworzyć brakujące klucze. 
 
 9. Jeśli na przykład brakuje klucza *EnableADAL* , wpisz *EnableADAL*, a następnie naciśnij klawisz **Enter.**
 
@@ -105,9 +104,8 @@ Aby wyłączyć nowoczesne uwierzytelnianie na danym urządzeniu, ustaw na nim n
 
 |Klucz rejestru|Wpisać|Value|
 |:---|:---:|---:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
-|
    
 ## <a name="related-content"></a>Zawartość pokrewna
 

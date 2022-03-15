@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak automatycznie tworzyć dokumenty i inną zawartość przy użyciu zestawu zawartości w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: 240b67ea2ca8c1119654096c365e958995e9c946
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 9da2aa91443ffe1dd3bbd632b5284ce8f7622069
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494558"
+ms.locfileid: "63504571"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Tworzenie dokumentów przy użyciu zestawu zawartości w aplikacji Microsoft SharePoint Syntex
 
@@ -64,7 +64,7 @@ Wykonaj poniższe czynności, aby utworzyć nowoczesny szablon.
    - [Wybieranie jednej z opcji w kolumnie listy lub biblioteki](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
    > [!NOTE]
-   > Obecnie nie można dodawać symboli zastępczych do komórki tabeli ani w obrębie tabeli.   
+   > Symbole zastępcze można tworzyć tylko dla tekstu. Obecnie obrazy, grafiki smartart, tabele i listy punktorów nie są obsługiwane.   
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>Kojarzenie symbolu zastępczego przez wprowadzenie tekstu lub wybranie daty 
 

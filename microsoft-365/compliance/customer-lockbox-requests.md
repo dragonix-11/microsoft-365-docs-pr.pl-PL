@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Dowiedz się więcej o żądaniach skrytki klienta, które pozwalają kontrolować, w jaki sposób inżynier pomocy technicznej firmy Microsoft może uzyskać dostęp do Twoich danych, gdy występuje problem.
-ms.openlocfilehash: 4788a17df4a4d11245fa65342002cab1dc5716fa
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 532b1b78c40725fa3558768a6b65beda9b8e05b2
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63027109"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504834"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Skrytka klienta w aplikacji Office 365
 
-Ten artykuł zawiera wskazówki dotyczące wdrażania i konfiguracji skrytki klienta. Skrytka klienta obsługuje żądania dostępu do danych w usługach Exchange Online, SharePoint Online i OneDrive dla Firm. Aby polecić pomoc techniczną dla innych usług, prześlij żądanie na stronie [Office 365 UserVoice](https://feedbackportal.microsoft.com/feedback/).
+Ten artykuł zawiera wskazówki dotyczące wdrażania i konfiguracji skrytki klienta. Skrytka klienta obsługuje żądania dostępu do danych w usługach Exchange Online, SharePoint Online i OneDrive dla Firm. Aby polecić pomoc techniczną dla innych usług, prześlij żądanie w portalu [opinii](https://feedbackportal.microsoft.com).
 
 Aby zobaczyć opcje licencjonowania użytkowników w celu skorzystania z Microsoft 365 zgodności, zobacz wskazówki Microsoft 365 licencjonowania dotyczące zabezpieczeń [& zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 

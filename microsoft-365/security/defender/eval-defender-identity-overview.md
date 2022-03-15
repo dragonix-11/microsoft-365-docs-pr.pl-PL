@@ -1,6 +1,6 @@
 ---
-title: Krok nr 2. Szacowanie Microsoft 365 Defender przegląd tożsamości, konfigurowanie oceny
-description: Kroki oceny tożsamości dla Microsoft 365 Defender w tym wymagań, włączania lub aktywowania evalu oraz skonfigurowania pilotażu lub testu.
+title: Krok nr 2. Omówienie funkcji Microsoft 365 Defender do oceny tożsamości
+description: Użyj Microsoft 365 Defender identity w swoim Microsoft 365 Defender XDR. Kroki oceny tożsamości dla Microsoft 365 Defender w tym wymagań, włączania lub aktywowania evalu oraz skonfigurowania pilotażu lub testu.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 37b387d1e38ca3e49406773820a63a6e0d239356
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2438e7690230af88eae72e0864184e771bdd4135
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311581"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504807"
 ---
 # <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Krok nr 2. Omówienie oceniania usługi Microsoft Defender pod celu tożsamości
 
@@ -35,14 +35,17 @@ ms.locfileid: "63311581"
 **Dotyczy:**
 - Microsoft 365 Defender
 
-W tym artykule przedstawiono proces włączania i pilotażowego programu Microsoft Defender dla tożsamości. Przed rozpoczęciem tego procesu należy zapoznać się z ogólnym procesem oceny Microsoft 365 Defender i utworzyć środowisko [](eval-overview.md) Microsoft 365 Defender [oceny](eval-create-eval-environment.md). 
+> [!NOTE]
+> Ten artykuł jest również częścią Microsoft 365 Defender XDR, o którym mówimy w tym [przeglądzie](eval-overview.md).
+
+ Przed rozpoczęciem procesu włączającego i uruchamiającego pilotaż usługi Microsoft Defender for Identity, jeśli zamierzasz ocenić usługę Microsoft 365 Defender jako rozwiązanie *XDR (eXtended Detection and Response) (XDR, Detection and Response),* upewnij się, że od początku przeglądasz ten proces: oceniasz program [Microsoft 365 Defender,](eval-overview.md) w tym utworzono [ Microsoft 365 Defender środowiska oceny](eval-create-eval-environment.md).
 <br>
 
-Aby włączyć i pilotaż usługi Microsoft Defender dla tożsamości, skorzystaj z poniższych kroków.
+Aby włączyć i pilotaż usługi Microsoft Defender dla tożsamości, należy wykonać poniższe czynności.
 
 ![Procedura dodawania usługi Microsoft Defender dla tożsamości do środowiska oceny usługi Defender.](../../media/defender/m365-defender-identity-eval-steps.png)
 
-W poniższej tabeli opisano kroki na ilustracji.
+W poniższej tabeli opisano kroki opisane na ilustracji.
 
 | |Krok  |Opis  |
 |---------|---------|---------|

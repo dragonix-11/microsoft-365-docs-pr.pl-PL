@@ -1,4 +1,4 @@
-- name: centrum administracyjne platformy Microsoft 365 pomoc
+- name: centrum administracyjne platformy Microsoft 365 pomocy
   href: index.yml
   items:
     - name: 20 najlepszych artykułów pomocy dla administratorów
@@ -13,7 +13,7 @@
           href: ../commerce/try-or-buy-microsoft-365.md
         - name: Planowanie konfiguracji usługi Microsoft 365 dla firm
           href: setup/plan-your-setup.md
-        - name: Zarejestruj się w celu Microsoft 365 Business Premium
+        - name: 'Zarejestruj się, aby Microsoft 365 Business Premium'
           items:
             - name: Zarejestruj się
               href: ../business/sign-up.md
@@ -21,9 +21,9 @@
               href: ../business/set-up.md
             - name: Microsoft 365 Business Premium (wideo)
               href: admin-overview/what-is-microsoft-365.md
-        - name: 'Zarejestruj się, aby Microsoft 365 Business Standard'
+        - name: Zarejestruj się w celu Microsoft 365 Business Standard
           items:
-            - name: 'Zarejestruj się, aby Microsoft 365 Business Standard'
+            - name: Zarejestruj się w celu Microsoft 365 Business Standard
               href: ../admin/simplified-signup/signup-business-standard.md
             - name: Konfigurowanie Microsoft 365 Business Standard
               href: ../admin/setup/setup-business-standard.md
@@ -31,13 +31,13 @@
               href: ../admin/simplified-signup/admin-invite-business-standard.md
             - name: Zaakceptowanie zaproszenia e-mail do Microsoft 365 Business Standard
               href: ../admin/simplified-signup/user-invite-business-standard.md
-            - name: 'Akceptowanie wiadomości e-mail z zaproszeniem Microsoft 365 Business Standard organizacji korzystającej z konta Outlook, Yahoo, Gmail lub innego konta'
+            - name: 'Akceptowanie zaproszenia e-mail do organizacji Microsoft 365 Business Standard subskrypcji przy użyciu konta Outlook, Yahoo, Gmail lub innego konta'
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Migrowanie danych do mojej Microsoft 365 Business Standard subskrypcji usługi
               href: ../admin/simplified-signup/migrate-data-business-standard.md
         - name: Zarejestruj się Microsoft Apps dla firm
           items:
-            - name: 'Zarejestruj się, aby Aplikacje Microsoft 365 dla firm'
+            - name: Zarejestruj się w celu Aplikacje Microsoft 365 dla firm
               href: setup/signup--apps-business.md
             - name: Konfigurowanie dla Aplikacje Microsoft 365 dla firm
               href: setup/setup-apps-for-business.md
@@ -103,7 +103,7 @@
       items:
         - name: Informacje o usłudze Office 365 obsługiwanej przez firmę 21Vianet
           href: services-in-china/services-in-china.md
-        - name: Pobierz aplikację aplikacja pakietu Office dla systemu Android dla Office 365 obsługiwanej przez firmę 21Vianet
+        - name: Pobierz aplikację aplikacja pakietu Office dla systemu Android dla systemu Office 365 obsługiwanej przez firmę 21Vianet
           href: services-in-china/download-office-app-for-Android.md
         - name: Pobierz aplikację aplikacja pakietu Office dla systemu iOS dla Office 365 obsługiwanej przez firmę 21Vianet
           href: services-in-china/download-office-app-for-iOS.md
@@ -149,7 +149,7 @@
               href: add-users/remove-former-employee-step-3.md
             - name: Krok nr 4. Przesyłanie dalej wiadomości e-mail byłego pracownika do innego pracownika lub konwertowanie na udostępnioną skrzynkę pocztową
               href: add-users/remove-former-employee-step-4.md
-            - name: Krok nr 5. Umożliwianie iniudzyjom dostępu OneDrive i Outlook pracowników
+            - name: Krok nr 5. Dawać iniud innym pracownikom dostęp do OneDrive i Outlook danych
               href: add-users/remove-former-employee-step-5.md
             - name: Krok 6. Usuwanie licencji Microsoft 365 od byłego pracownika
               href: add-users/remove-former-employee-step-6.md
@@ -262,7 +262,7 @@
               href: productivity/teamwork.md
             - name: Spotkania
               href: productivity/meetings.md
-            - name: Aplikacje Microsoft 365 kondycji
+            - name: Aplikacje Microsoft 365 kondycji zdrowotnej
               href: productivity/apps-health.md
             - name: Analiza punktu końcowego
               href: /mem/analytics/productivity-score
@@ -344,15 +344,15 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Zarządzanie kontami priorytetów i monitorowanie ich
           href: setup/priority-accounts.md
+        - name: Włączanie limitu czasu sesji bezczynności
+          href: manage/idle-session-timeout-web-apps.md
         - name: Włączanie nowoczesnego uwierzytelniania dla Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Wymagania wstępne dotyczące ochrony danych
           href: security-and-compliance/pre-requisites-for-data-protection.md
-        - name: Funkcje zabezpieczeń
-          href: security-and-compliance/secure-your-business-data.md
         - name: Zwiększanie ochrony przed zagrożeniami
           href: security-and-compliance/increase-threat-protection.md
-        - name: Zagrożenia wykryte przez Program antywirusowy Microsoft Defender
+        - name: Zagrożenia wykrywane przez Program antywirusowy Microsoft Defender
           href: security-and-compliance/threats-detected-defender-av.md
         - name: Przeglądanie wykrytych zagrożeń i działanie
           href: security-and-compliance/review-threats-take-action.md
@@ -446,7 +446,7 @@
           href: setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
         - name: Dodawanie domeny obszaru roboczego programu Google
           href: moveto-microsoft-365/add-google-domain.md
-        - name: Instalowanie Office i aplikacji Microsoft Teams
+        - name: Instalowanie Office i Microsoft Teams
           href: setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
         - name: 'Migrowanie wiadomości e-mail, kalendarza i kontaktów do Microsoft 365'
           href: moveto-microsoft-365/migrate-email.md
@@ -466,7 +466,7 @@
           href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
         - name: Planowanie spotkania Teams z użytkownikami gośćmi
           href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
-        - name: Dołączanie do Teams z użytkownikami-gośćmi
+        - name: Dołączanie do Teams z użytkownikami gośćmi
           href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
     - name: Rozwiązywanie problemów
       href: /office/troubleshoot/

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Etykiety wrażliwości chronią zawartość w SharePoint i Microsoft Teams sieci Web Microsoft 365 grupy.
-ms.openlocfilehash: 39caee37f8bf8b2f885824bbdd12ca7b5b372e69
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320511"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504818"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Używanie etykiet wrażliwości w celu ochrony zawartości Microsoft Teams, grup Microsoft 365 i SharePoint internetowych
 
@@ -327,7 +327,7 @@ Możesz również zmienić i zastosować etykietę z tej strony:
 
 ## <a name="support-for-sensitivity-labels"></a>Obsługa etykiet wrażliwości
 
-W przypadku korzystania z centrów a administratorów, które obsługują etykiety wrażliwości, są dla Twojej dzierżawy wyświetlanie wszystkich etykiet wrażliwości. Dla porównania aplikacje i usługi użytkownika, które filtrowały etykiety wrażliwości zgodnie z zasadami publikowania, mogą spowodować, że zostanie zobaczenie podzestawu tych etykiet.
+W przypadku korzystania z centrów a administratorów, które obsługują etykiety wrażliwości, z wyjątkiem Azure Active Directory sieci Azure Active Directory, są dla Twojej dzierżawy wszystkie etykiety wrażliwości. Dla porównania aplikacje i usługi użytkownika, które filtrowały etykiety wrażliwości zgodnie z zasadami publikowania, mogą spowodować, że zostanie zobaczenie podzestawu tych etykiet. Ponadto Azure Active Directory również filtruje etykiety zgodnie z zasadami publikowania.
 
 Następujące aplikacje i usługi obsługują etykiety wrażliwości skonfigurowane dla witryn i ustawień grup:
 
@@ -335,9 +335,9 @@ Następujące aplikacje i usługi obsługują etykiety wrażliwości skonfigurow
 
   - centrum administracyjne programu SharePoint
   - Teams administracyjne
-  - Azure Active Directory portalu
   - Centrum administracyjne platformy Microsoft 365
   - Centrum zgodności platformy Microsoft 365
+  - Azure Active Directory portalu
 
 - Aplikacje i usługi użytkownika:
 

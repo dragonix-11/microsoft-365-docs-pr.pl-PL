@@ -1,6 +1,6 @@
 ---
-title: Szacowanie i Microsoft 365 Defender pilotażowe, XDR
-description: Zaplanuj laboratorium Microsoft 365 Defender testowe lub środowisko pilotażowe, aby przetestować i przetestować rozwiązanie zabezpieczające zaprojektowane do ochrony urządzeń, tożsamości, danych i aplikacji.
+title: Szacowanie i Microsoft 365 Defender pilotażowe, rozwiązanie XDR
+description: Co to są zabezpieczenia XDR? Jak można ocenić xdr firmy Microsoft w programie Microsoft 365 Defender? W tej serii blogu możesz zaplanować laboratorium Microsoft 365 Defender próbne lub środowisko pilotażowe, aby przetestować i pilotaż rozwiązania zabezpieczającego zaprojektowanego do ochrony urządzeń, tożsamości, danych i aplikacji. Rozpocznij tutaj podróż z zabezpieczeniami cyberzagrożenia XDR i przetestuj to do produkcji.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 442ac9859f259479da556a9611880a61ab0413e0
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 5c0ef6ce393f7c79ee6fca9b591d99c46d864a52
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63013906"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504534"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Ocenianie i pilotaż Microsoft 365 Defender
 
@@ -34,13 +34,32 @@ ms.locfileid: "63013906"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender to rozwiązanie do rozszerzonego wykrywania i odpowiedzi (XDR, extended detection and response), które automatycznie zbiera, koreluje i analizuje sygnał, zagrożenia i dane alertów w środowisku usługi Microsoft 365, w tym punkt końcowy, adres e-mail, aplikacje i tożsamości. Wykorzystuje on rozbudowaną AI i automatyzację, aby automatycznie zatrzymywać ataki i korygować zasoby, których to dotyczy, do bezpiecznego stanu. W poniższych artykułach o krok po kroku proces konfigurowania środowiska próbnego, który umożliwia ocenę funkcji i możliwości programu Microsoft 365 Defender. 
+# <a name="how-this-article-series-works"></a>Jak działa seria artykułów
 
-W tych artykułach pokazano, jak włączać poszczególne składniki, konfigurować ustawienia i rozpoczynać monitorowanie w grupie pilotażowej. Gdy wszystko będzie gotowe, możesz zakończyć poprzez promocję środowiska oceny bezpośrednio do produkcji.
+Ta seria artykułów ma na celu krok po kroku przez cały proces konfigurowania środowiska XDR w wersji próbnej— *end-to-end*, dzięki czemu możesz ocenić funkcje i możliwości programu Microsoft 365 Defender a nawet promować środowisko oceny bezpośrednio do produkcji, gdy i jeśli wszystko będzie gotowe.
+
+Jeśli nie masz pomysłu na kod XDR, możesz przeskanować te 7 artykułów połączonych, aby dowiedzieć się, jak rozbudowane jest rozwiązanie.
+
+- [Jak utworzyć środowisko](eval-create-eval-environment.md)
+- Konfigurowanie i poznanie poszczególnych technologii tego xdr firmy Microsoft
+    - [Microsoft Defender for Identity](eval-defender-identity-overview.md)
+    - [Program Microsoft Defender dla Office](eval-defender-office-365-overview.md)
+    - [Ochrona punktu końcowego w usłudze Microsoft Defender](eval-defender-endpoint-overview.md)
+    - [Usługa Microsoft Defender dla aplikacji w chmurze](eval-defender-mcas-overview.md)
+- [Jak zbadać i odpowiedzieć przy użyciu tego xdr](eval-defender-investigate-respond.md)
+- [Promowanie środowiska próbnego do produkcji](eval-defender-promote-to-production.md)
+
+## <a name="microsoft-365-defender-is-a-microsoft-xdr-cyber-security-solution"></a>Microsoft 365 Defender to rozwiązanie do ochrony przed cyberzagrożeniami XDR firmy Microsoft
+
+Microsoft 365 Defender to rozwiązanie **eXtended detection and response (XDR),** które automatycznie zbiera, koreluje i analizuje dane sygnału, zagrożeń i alertów w środowisku usługi Microsoft 365,  w tym punkt końcowy, poczta e-mail *, aplikacje i tożsamości*. Wykorzystuje ona sztuczną inteligencję i automatyzację, aby automatycznie  zatrzymywać ataki i rekultywować zasoby, których to dotyczy, w stanie bezpiecznym.
+
+Kod XDR to kolejny krok w zakresie zabezpieczeń, unifying endpoint (wykrywanie i reagowanie w punktach końcowych lub EDR), poczty e-mail, aplikacji i tożsamości w jednym miejscu.
+
+## <a name="microsoft-recommendations-for-evaluating-microsoft-365-defender"></a>Zalecenia firmy Microsoft dotyczące szacowania Microsoft 365 Defender
 
 Firma Microsoft zaleca utworzenie oceny w istniejącej subskrypcji produkcyjnej usługi Office 365. Dzięki temu natychmiast uzyskasz szczegółowe informacje w świecie rzeczywistym i będziesz mieć możliwość dostosowania ustawień w celu ochrony przed bieżącymi zagrożeniami w Twoim środowisku. Po tym, jak uzyskasz doświadczenie i będziesz mieć doświadczenie w pracy z platformą, wystarczy po prostu promować każdy składnik, jeden na raz, do produkcji.
 
-## <a name="the-anatomy-of-an-attack"></a>Anatomia ataków
+## <a name="the-anatomy-of-a-cyber-security-attack"></a>Anatomia ataków na bezpieczeństwo cyberprzestępczości
 
 Microsoft 365 Defender to oparty na chmurze, ujednolicony, przed naruszeniem i po naruszeniu ochrony przedsiębiorstwa. Koordynowanie działań *zapobiegania*, *wykrywania**, badania* i  odpowiedzi w różnych punktach końcowych, tożsamościach, aplikacjach, wiadomościach e-mail, aplikacjach do współpracy i wszystkich ich danych.
 
@@ -56,7 +75,7 @@ Na ilustracji:
 - **Defender for Identity przyjmuje** do wiadomości niespodziewanie zmiany konta, takie jak eskalacji uprawnień lub ruchy boczne o wysokim poziomie ryzyka. Raportuje również problemy dotyczące łatwego wykorzystania tożsamości, takie jak niedoszkolone delegowanie Kerberos, w celu poprawienia ich przez zespół zabezpieczeń.
 - **Usługa Microsoft Defender for Cloud Apps** zauważy nietypowe zachowanie, takie jak niemożliwy podróż, dostęp poświadczeń i nietypowe działania w zakresie pobierania, udostępniania plików lub przesyłania poczty dalej i zgłasza je zespołowi zabezpieczeń.
 
-### <a name="microsoft-365-defender-components"></a>Microsoft 365 Defender składników
+### <a name="microsoft-365-defender-components-secure-devices-identity-data-and-applications"></a>Microsoft 365 Defender składników zabezpieczanie urządzeń, tożsamości, danych i aplikacji
 
 Microsoft 365 Defender są to te technologie zabezpieczeń działające razem. Te wszystkie składniki nie są potrzebne, aby korzystać z funkcji XDR i Microsoft 365 Defender. Zrealizujesz zyski i skuteczność, używając również jednej lub dwóch funkcji. 
 
@@ -85,11 +104,15 @@ Na poniższej ilustracji:
 - Usługa Microsoft Defender for Cloud Apps zbiera sygnały płynące z aplikacji w chmurze w Twojej organizacji i chroni dane przepływające między Twoim środowiskiem i tymi aplikacjami, w tym zarówno w aplikacjach w chmurze, które nie są w nich wykorzystywane, jak i nienawiązane.
 - Usługa Azure AD Identity Protection ocenia dane ryzyka od miliardów prób logowania i używa tych danych do oceny ryzyka każdego logowania w środowisku. Te dane są używane przez usługę Azure AD do zezwalania na dostęp do konta lub blokowania go w zależności od tego, jak skonfigurowano zasady dostępu warunkowego. Usługa Azure AD Identity Protection jest licencjonowana niezależnie od Microsoft 365 Defender. Jest on dołączony do Azure Active Directory — wersja Premium P2.  
 
+## <a name="microsoft-siem-and-soar-can-use-data-from-microsoft-365-defender"></a>Firmy Microsoft SIEM i SOAR mogą używać danych z Microsoft 365 Defender
+
 Dodatkowe opcjonalne składniki architektury, które nie zostały uwzględnione na poniższej ilustracji:
 
-- Szczegółowe dane sygnału ze wszystkich Microsoft 365 Defender mogą być zintegrowane z programem Microsoft Sentinel i łączone z innymi źródłami rejestrowania, co zapewnia pełne możliwości i wnioski funkcji SIEM i SOAR.
+- **Szczegółowe dane sygnału ze wszystkich Microsoft 365 Defender** mogą być zintegrowane z programem Microsoft Sentinel i łączone z innymi źródłami rejestrowania, co zapewnia pełne możliwości i wnioski funkcji SIEM i SOAR.
+- Aby uzyskać więcej informacji na temat korzystania z platformy **Microsoft Sentinel, platformy Azure SIEM z** Microsoft 365 Defender jako alternatywy XDR, zobacz ten artykuł [](/azure/sentinel/microsoft-365-defender-sentinel-integration) z omówieniem oraz kroki integracji z programem Microsoft Sentinel Microsoft 365 Defender [projektu](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
+- Aby uzyskać więcej informacji na temat programu SOAR w programie Microsoft Sentinel (w tym linki do podręczników w repozytorium programu Microsoft Sentinel GitHub), przeczytaj [ten artykuł](/azure/sentinel/automate-responses-with-playbooks).
 
-## <a name="the-evaluation-process"></a>Proces oceny
+## <a name="the-evaluation-process-for-microsoft-365-defender-cyber-security"></a>Proces oceny pod Microsoft 365 Defender ochrony przed cyberzagrożeniami
 
 Firma Microsoft zaleca włączenie składników Microsoft 365 w kolejności przedstawionej na ilustracji:
 
@@ -108,8 +131,8 @@ W poniższej tabeli opisano tę ilustrację.
 |7     | [Promowanie wersji próbnej do wersji produkcyjnej](eval-defender-promote-to-production.md)        | Podniesienie Microsoft 365 do produkcji jeden po jeden.        |
 | | | |
 
-Jest to zazwyczaj zalecana kolejność, która pozwala szybko uzyskać wartość funkcji w zależności od tego, ile zazwyczaj jest wymagane do wdrożenia i skonfigurowania tych funkcji. Na przykład usługę Defender for Office 365 skonfigurować w krótszym czasie, niż zajmuje zarejestrowanie urządzeń w programie Defender dla punktu końcowego. Oczywiście możesz określić priorytety składników w celu zaspokojenia potrzeb biznesowych i włączyć je w innej kolejności.
+Jest to zazwyczaj zalecana kolejność, która pozwala szybko wykorzystać wartość funkcji w zależności od tego, ile nakładu pracy jest zazwyczaj wymagane do wdrożenia i skonfigurowania tych funkcji. Na przykład usługę Defender for Office 365 skonfigurować w krótszym czasie, niż zajmuje zarejestrowanie urządzeń w programie Defender dla punktu końcowego. Oczywiście należy określić priorytety składników w celu zaspokojenia potrzeb biznesowych i włączyć je w innej kolejności.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="go-to-the-next-step"></a>Przejdź do następnego kroku
 
-[Tworzenie środowiska Microsoft 365 Defender oceny](eval-create-eval-environment.md)
+[Informacje o środowisku oceny Microsoft 365 Defender i (lub) tworzeniu](eval-create-eval-environment.md)
