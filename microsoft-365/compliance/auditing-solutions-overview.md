@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak inspekcjić działania użytkowników i administratorów w Microsoft 365 organizacji.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff7a456317827fc629d4e704037ad7586bad9f0d
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 92fb008e7fe03b4871b8838d78965c1508a20fdc
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "62996833"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494530"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Rozwiązania inspekcji w programie Microsoft 365
 
@@ -98,6 +98,8 @@ W poniższych sekcjach przedstawiono wymagania dotyczące licencjonowania w przy
 
 ### <a name="basic-audit"></a>Inspekcja podstawowa
 
+- Microsoft 365 Business Basic subskrypcji
+- Aplikacje Microsoft 365 dla firm
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Business Premium
 - Microsoft 365 Education A3

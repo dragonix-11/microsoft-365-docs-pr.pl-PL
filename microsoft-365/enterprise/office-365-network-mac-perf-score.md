@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 oceny sieci
-ms.openlocfilehash: d7fea3d4f2dfbe846a873b6ce0ea34d8373bcc12
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 5ff858ef652c7fc536310c9d27887863d156fb5d
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "62996407"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495014"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365 oceny sieci
 
@@ -40,9 +40,6 @@ Bardzo niska wartość oceny sieci sugeruje, że klienci Microsoft 365 będą mi
 | 40                 | Użytkownicy mogą mieć problemy |
 | 20                 | Użytkownicy mogą narzekać       |
 | 0                  | Problemy z siecią to częsty temat dyskusji |
-
->[!IMPORTANT]
->Szczegółowe informacje o sieci, zalecenia dotyczące wydajności i oceny w centrum Administracja Microsoft 365 są obecnie w stanie podglądu i są dostępne tylko dla dzierżaw usługi Microsoft 365, które zostały zarejestrowane w programie podglądu funkcji.
 
 ## <a name="network-assessment-panel"></a>Panel oceny sieci
 

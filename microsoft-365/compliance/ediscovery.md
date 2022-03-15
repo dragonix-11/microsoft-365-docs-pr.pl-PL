@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 udostępnia trzy narzędzia zbierania elektronicznych materiałów dowodowych, za pomocą których można wyszukiwać i eksportować zawartość znalezioną w różnych lokalizacjach, takich jak skrzynki pocztowe usługi Exchange, witryny usług SharePoint i OneDrive dla Firm oraz grupy Microsoft 365. Microsoft Teams i Skype dla firm konwersacji. Podstawowe funkcje zbierania elektronicznych materiałów dowodowych Advanced eDiscovery wiele dodatkowych funkcji, które ułatwiają zarządzanie badaniami.
-ms.openlocfilehash: b6a6ea04c4ebfa65fae192654d1cdf16873d3a77
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e92619ff0ecbfcdbdf1a7f41eb4cd35282a6f2d9
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015376"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494516"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Rozwiązania zbierania elektronicznych materiałów dowodowych w Microsoft 365
 
@@ -84,7 +84,7 @@ Oto opis poszczególnych funkcji zbierania elektronicznych materiałów dowodowy
 
 - **Eksportowanie wyników wyszukiwania**. Eksportowanie wyników wyszukiwania na komputer lokalny w organizacji w procesie dwuetapowym. Podczas eksportowania wyników wyszukiwania elementy są kopiowane z ich oryginalnej lokalizacji zawartości w programie Microsoft 365 do lokalizacji danych usługi Azure Storage dostarczony przez firmę Microsoft. Następnie możesz pobrać te elementy na komputer lokalny.
 
-- **Uprawnienia oparte na rolach**. Za pomocą uprawnień dostępu opartego na rolach (RBAC, role based access) możesz kontrolować, jakie zadania związane z zbierania elektronicznych materiałów dowodowych mogą wykonywać różni użytkownicy. Użytkownicy mogą korzystać z wbudowanych grup ról związanych z zbierania elektronicznych materiałów dowodowych lub tworzyć niestandardowe grupy ról z przypisanymi określonymi uprawnieniami zbierania elektronicznych materiałów dowodowych.
+- **Uprawnienia oparte na rolach**. Za pomocą uprawnień dostępu opartego na rolach (RBAC, role based access) możesz kontrolować, jakie zadania związane z zbierania elektronicznych materiałów dowodowych mogą wykonywać różni użytkownicy. Możesz użyć wbudowanej grupy ról związanej z zbierania elektronicznych materiałów dowodowych lub utworzyć niestandardowe grupy ról, które przypiszą określone uprawnienia zbierania elektronicznych materiałów dowodowych.
 
 - **Zarządzanie sprawą**. Sprawy zbierania elektronicznych materiałów dowodowych w podstawowych przypadkach zbierania elektronicznych materiałów dowodowych Advanced eDiscovery umożliwiają kojarzenie określonych wyszukiwań i eksportów z określonym badaniem. Do sprawy można także przypisać członków, aby kontrolować, kto może uzyskać dostęp do sprawy i wyświetlać jej zawartość.
 
@@ -106,7 +106,7 @@ Oto opis poszczególnych funkcji zbierania elektronicznych materiałów dowodowy
 
 - **Wątkowanie konwersacji**. Gdy wiadomości czatu z Teams i Yammer zostaną dodane do zestawu recenzji, możesz zebrać cały wątek konwersacji. Oznacza to, że do zestawu recenzji zostanie dodana cała konwersacja na czacie zawierająca elementy zgodne z kryteriami kolekcji. Pozwala to przeglądać elementy czatu w kontekście konwersacji w tył i w tył.
 
-- **Statystyki i raporty dotyczące kolekcji**. Po utworzeniu kolekcji roboczej lub zatwierdzeniu kolekcji do zestawu recenzji możesz wyświetlić bogaty zestaw statystyk dotyczących pobranych elementów, takich jak lokalizacje zawartości zawierające najwięcej elementów, które pasują do kryteriów wyszukiwania, oraz liczbę elementów zwróconych przez zapytanie wyszukiwania. Możesz także wyświetlić podgląd podzestawu wyników.
+- **Statystyki i raporty dotyczące kolekcji**. Po utworzeniu kolekcji roboczej lub zatwierdzeniu kolekcji do zestawu recenzji możesz wyświetlić bogaty zestaw statystyk dotyczących pobranych elementów, takich jak lokalizacje zawartości zawierające najwięcej elementów, które pasują do kryteriów wyszukiwania, oraz liczba elementów zwróconych przez zapytanie wyszukiwania. Możesz także wyświetlić podgląd podzestawu wyników.
 
 - **Przejrzyj ustawienia filtrowania**. Po dodaniu zawartości do zestawu recenzji możesz zastosować filtry, aby wyświetlić tylko zestaw elementów, które spełniają kryteria filtrowania. Następnie możesz zapisać zestawy filtrów jako zapytanie, które umożliwia szybkie ponowne filtrowanie zapisanych filtrów. Przeglądanie zestawu filtrowania i zapisanych zapytań pomaga szybko pomylić zawartość z elementami, które są najbardziej istotne dla badania.
 
@@ -132,6 +132,8 @@ W poniższych sekcjach przedstawiono minimalne wymagania dotyczące subskrypcji 
 - Microsoft 365 G1
 - Microsoft 365 F1 lub F3 albo F5 Security add-on
 - Microsoft 365 Business Premium subskrypcji
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Basic
 - Office 365 Education A1
 - Office 365 E1 subskrypcji
 

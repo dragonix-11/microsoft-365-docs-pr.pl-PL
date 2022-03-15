@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 testu łączności sieciowej
-ms.openlocfilehash: 602ab10c9741126360861586776863cb43ce162e
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8704da93d8f7ec95460ae5a275289176bccb0c22
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019341"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494502"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 testu łączności sieciowej
 
@@ -52,7 +52,7 @@ Po zidentyfikowaniu lokalizacji biura uruchamiamy test opóźnienia PROTOKOŁU T
 
 ### <a name="download-the-advanced-tests-client-application"></a>Pobieranie aplikacji klienckiej testów zaawansowanych
 
-Następnie rozpoczynamy pobieranie aplikacji klienckiej testów zaawansowanych. Polegamy na tym, że użytkownik uruchamia aplikację klientną i musi mieć zainstalowany program .NET Core.
+Następnie rozpoczynamy pobieranie aplikacji klienckiej testów zaawansowanych. Polegamy na tym, że użytkownik uruchamia aplikację klienutną i musi mieć zainstalowany środowisko .NET 6.0 Runtime.
 
 Test łączności sieciowej z siecią Microsoft 365 jest dwa elementy: <https://connectivity.office.com> witryna internetowa i aplikacja Windows, która uruchamia zaawansowane testy łączności sieciowej. Większość testów wymaga uruchomienia aplikacji. W ten sposób wyniki zostaną ponownie wypełnione na stronie sieci Web.
 
@@ -251,13 +251,42 @@ Pokazuje to wszelkie istotne problemy w kondycji globalnej sieci firmy Microsoft
 > [!div class="mx-imgBorder"]
 > ![Stan kondycji sieci.](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
+## <a name="testing-from-the-command-line"></a>Testowanie z wiersza polecenia
+
+Zapewniamy plik wykonywalny wiersza polecenia, który może być używany przez narzędzia wdrażania zdalnego i wykonywania oraz uruchamiamy te same testy, które są dostępne w witrynie internetowej narzędzia do testowania łączności Microsoft 365 sieci.
+
+Narzędzie do testowania wiersza polecenia można pobrać tutaj: ![Narzędzie Wiersz polecenia](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+
+Można go uruchomić, klikając dwukrotnie plik wykonywalny w Eksploratorze plików programu Windows lub uruchamiając go z wiersza polecenia albo planować przy użyciu harmonogramu zadań.
+
+Podczas pierwszego uruchomienia pliku wykonywalnego zostanie wyświetlony monit o zaakceptowanie umowy licencyjnej użytkownika końcowego (EULA) przed wykonaniem testowania. Jeśli została już przeczytana i zaakceptowana eula, możesz utworzyć pusty plik o nazwie Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt w bieżącym katalogu roboczy dla procesu wykonywalnego, gdy zostanie uruchomiona. Aby zaakceptować eula, możesz wpisać "y" i po wyświetleniu monitu nacisnąć klawisz Enter w oknie wiersza polecenia.
+
+Plik wykonywalny przyjmuje parametr wiersza polecenia /h w celu pokazania linku do tej dokumentacji Pomocy.
+
+### <a name="results"></a>Wyniki
+Wyniki są zapisywane w pliku JSON w folderze o nazwie TestResults, który jest tworzony w bieżącym katalogu pracy procesu, chyba że już istnieje. Format nazwy pliku dla danych wyjściowych to connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Wyniki są w węzłach JSON, które są zgodne z wynikami wyświetlanymi na stronie internetowej witryny internetowej narzędzia do testowania Microsoft 365 sieciowej. Nowy plik wyników jest tworzony za każdym razem, gdy go uruchamiasz, a autonomiczny plik wykonywalny nie przesyła wyników do dzierżawy firmy Microsoft w celu wyświetlenia na stronach łączność sieciowa centrum administracyjnego.
+
+### <a name="launching-from-windows-file-explorer"></a>Uruchamianie z Windows plików
+Możesz po prostu kliknąć dwukrotnie plik wykonywalny, aby rozpocząć testowanie i zostanie wyświetlone okno wiersza polecenia.
+
+### <a name="launching-from-the-command-prompt"></a>Uruchamianie z wiersza polecenia
+W CMD.EXE wiersza polecenia możesz wpisać ścieżkę i nazwę pliku wykonywalnego, aby go uruchomić. Nazwa pliku zostanie Microsoft.Connectivity.Test.exe
+
+### <a name="launching-from-windows-task-scheduler"></a>Uruchamianie z Windows harmonogramu zadań
+W Windows zadania można dodać zadanie w celu uruchomienia pliku wykonywalnego testu autonomicznego. Należy określić bieżący katalog roboczy zadania, aby był tam, gdzie został utworzony plik zaakceptowany przez użytkownika, ponieważ plik wykonywalny będzie blokowany do momentu zaakceptowania warunków eula. Nie można interakcyjne zaakceptować interfejsu EULA, jeśli proces zostanie uruchomiony w tle bez konsoli.
+
+### <a name="more-details-on-the-standalone-executable"></a>Więcej szczegółowych informacji na temat autonomicznego pliku wykonywalnego
+Narzędzie wiersza polecenia korzysta z Windows lokalizacji, aby znaleźć użytkownikom informacje o kraju/województwie miasta do określania niektórych odległości. Jeśli Windows lokalizacji w panelu sterowania, oceny lokalizacji użytkownika będą puste. W Windows Ustawienia musi być w pozycji "Usługi lokalezyjne" i musi być w pozycji "Pozwól aplikacjom stacjonarnym na uzyskiwanie dostępu do Twojej lokalizacji".
+
+Narzędzie wiersza polecenia podejmie próbę zainstalowania .NET Framework, jeśli nie zostało jeszcze zainstalowane. Pobierze także główny plik wykonywalny testowania z narzędzia do testowania łączności Microsoft 365 i uruchomi go.
+
 ## <a name="faq"></a>Często zadawane pytania
 
 Poniżej znajdują się odpowiedzi na niektóre z naszych często zadawanych pytań.
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>Co jest wymagane do uruchomienia zaawansowanego klienta testowego?
 
-Zaawansowany klient testowy wymaga środowiska uruchomieniowego programu .NET Core 3.1 Desktop Runtime. W przypadku uruchomienia zaawansowanego klienta testowego bez tej instalacji zostaniesz przekierowyny do strony [instalatora .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Pamiętaj, aby zainstalować środowisko Desktop Runtime, a nie zestaw SDK ani środowisko ASP.NET Core Runtime, które są wyżej na stronie. Uprawnienia administratora na tym komputerze są wymagane do zainstalowania programu .NET Core.
+Zaawansowany klient testowy wymaga środowiska uruchomieniowego .NET 6.0. Uruchomienie zaawansowanego klienta testowego bez tego zainstalowanego spowoduje skierowanie cię do strony instalatora [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?utm_source=getdotnetcore). Pamiętaj, aby zainstalować oprogramowanie z kolumny Uruchamianie aplikacji Windows. Uprawnienia administratora na komputerze są wymagane do zainstalowania środowiska .NET 6.0 Runtime.
 
 Zaawansowany klient testowy komunikuje się ze stroną sieci Web za pomocą narzędzia SignalR. W tym celu upewnij się, że łączność protokołu TCP 443 z **siecią connectivity.service.signalr.net** jest otwarta. Ten adres URL nie jest publikowany w tym<https://aka.ms/o365ip>, ponieważ taka łączność nie jest wymagana Microsoft 365 użytkownika aplikacji klienckiej.
 

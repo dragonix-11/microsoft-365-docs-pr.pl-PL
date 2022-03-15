@@ -11,12 +11,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 19ad7cfa3459b67b41a9d85994f960255aeeeb02
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 82a0bbc4811b3f2be23403717b0a0ffb485d7c74
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013823"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494999"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Aplikacje usługi Microsoft 365 dla przedsiębiorstw
 
@@ -50,7 +50,7 @@ Microsoft Managed Desktop nie obsługuje wdrażania 32-bitowej wersji pakietu Ap
 
 Aplikacje Microsoft 365 są ustawione do aktualizacji w miesięcznym [Enterprise miesięcznym](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). Takie rozwiązanie zapewnia użytkownikom nowe funkcje Office użytkowników co miesiąc, ale w przewidywalnym harmonogramie wersji będą oni otrzymywać co miesiąc tylko jedną aktualizację. Aktualizacje są wydane w drugi wtorek miesiąca. mogą one obejmować aktualizacje funkcji, zabezpieczeń i jakości. Te aktualizacje występują automatycznie i są pobierane bezpośrednio z Office CDN dla tego określonego kanału.
 
-Microsoft Managed Desktop poszczególne wersje są schodkami w celu zidentyfikowania potencjalnych problemów w Twoim środowisku. Ukończymy projekt 28 dni po wydaniu z grupy produktów Microsoft 365 App. Microsoft Managed Desktop planowania aktualizacji wydań dla różnych grup, aby umożliwić sprawdzanie poprawności i testowanie w następujący sposób:
+Microsoft Managed Desktop poszczególne wersje są schodkami w celu zidentyfikowania potencjalnych problemów w Twoim środowisku. Kończymy rozsyłanie z grupy Microsoft 365 produktu App. Microsoft Managed Desktop planowania aktualizacji wydań dla różnych grup, aby umożliwić sprawdzanie poprawności i testowanie w następujący sposób:
 
 - Test: zero dni
 - Pierwszy: zero dni

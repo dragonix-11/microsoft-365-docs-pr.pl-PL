@@ -9,16 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 07220c7a1b5e44eecdae247387a95ea6dfd445f1
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 2005ead772399f26c3537ac8bf36f6b0810b07fb
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "63009670"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495042"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Informacje dotyczące ustawień konfigurowalnych — Microsoft Managed Desktop
 
 Ten artykuł zawiera listę kategorii ustawień, które klienci mogą konfigurować za pomocą Microsoft Managed Desktop. Każda kategoria ustawień zawiera informacje na temat wymagań, najlepszych rozwiązań i sposobu dostosowywania kategorii ustawień.
+
+> [!NOTE]
+> Ta strona zawiera informacje dotyczące często wymaganych ustawień. Dotyczy starszej wersji przeglądarki Edge.
 
 ## <a name="desktop-background-picture"></a>Obraz tła pulpitu
 
@@ -84,7 +87,7 @@ Te najlepsze rozwiązania są oferowane, aby ułatwić klientom podejmowanie dec
 
 | Ćwiczenia | Opis |
 | ------ | ------ |
-| Wybieranie ograniczonej liczby witryn | Microsoft Managed Desktop używa Microsoft Edge jako preferowanej przeglądarki w celu zwiększenia ogólnego bezpieczeństwa organizacji i użyteczności dla użytkowników. Większość witryn na tej liście dotyczy starszych aplikacji sieci Web, które wymagają starszej wersji przeglądarki, która nie będzie zawierać tylu funkcji zabezpieczeń. |
+| Wybieranie ograniczonej liczby witryn | Microsoft Managed Desktop używa Microsoft Edge jako preferowanej przeglądarki w celu zwiększenia ogólnego bezpieczeństwa organizacji i użyteczności dla użytkowników. Większość witryn na tej liście dotyczy starszych aplikacji sieci Web, które wymagają starszej wersji przeglądarki. Nie będzie zawierać tylu funkcji zabezpieczeń. |
 | Rozważenie alternatywy | Rozważ inną witrynę lub aplikację sieci Web, która nie wymaga starszej przeglądarki. Rozważ też zaktualizowanie witryny, aby korzystać z nowych przeglądarek. Nowsze przeglądarki korzystają z najnowszych technologii i pomagają zwiększyć bezpieczeństwo. |
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>Dostosowywanie i wdrażanie Enterprise lokalizacji listy w trybie witryny

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Dowiedz się, jak używać usługi sieci web Office 365 IP i adresu URL, aby ułatwić identyfikowanie i Office 365 ruchu sieciowego.
-ms.openlocfilehash: 5af1ca60a6e7b7f28ad1d5c3268c85fb399fb926
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: e4976bafbedc8f5289e2992569bbd5de28e9de75
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019359"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494488"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 adresu IP i usługi sieci Web adresu URL
 
@@ -78,7 +78,7 @@ Parametry metody sieci Web Version (Wersja) to:
 
 - **AllVersions=\<true \| false\>** — Domyślnie jest zwracana najnowsza wersja. Dołącz ten parametr opcjonalny, aby zażądać wszystkich opublikowanych wersji od czasu pierwszej publikacji usługi sieci Web.
 - **Format=\<JSON \| CSV \| RSS\>** — Oprócz formatów JSON i CSV metoda sieci Web version (Wersja) obsługuje również funkcję RSS. Możesz użyć tego parametru opcjonalnego wraz z parametrem _AllVersions=true_, aby zażądać kanału informacyjnego RSS, który może być używany z Outlook innymi czytnikami RSS.
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — Ten parametr opcjonalny określa wystąpienie, dla których ma być zwracana wersja. W razie pominięcia zostaną zwrócone wszystkie wystąpienia. Prawidłowe wystąpienia to: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** — Ten parametr opcjonalny określa wystąpienie, dla których ma być zwracana wersja. W razie pominięcia zostaną zwrócone wszystkie wystąpienia. Prawidłowe wystąpienia to: Worldwide, China, USGovDoD, USGovGCCHigh.
 
 Metoda sieci Web Version (Wersja) nie jest ograniczona i nie zwraca 429 kodów odpowiedzi HTTP. Odpowiedź na metodę sieci Web Version (Wersja) zawiera nagłówek kontrolki pamięci podręcznej polecający buforowanie danych na 1 godzinę. Wynikiem metody sieci Web Version (Wersja) może być pojedynczy rekord lub tablica rekordów. Elementy każdego rekordu to:
 
@@ -108,10 +108,6 @@ Ten URI zwraca najnowszą wersję każdego wystąpienia Office 365 usługi. Przy
  },
  {
   "instance": "China",
-  "latest": "2018063000"
- },
- {
-  "instance": "Germany",
   "latest": "2018063000"
  }
 ]
@@ -183,7 +179,7 @@ Parametry metody sieci Web Endpoints (Punkty końcowe) to:
 - **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** — Rozdzielona przecinkami lista obszarów usługi. Prawidłowe elementy to _Common_, _Exchange_, _SharePoint_ i _Skype_. Elementy _obszaru_ usługi Common są wymaganiem wstępnym dla wszystkich pozostałych obszarów usługi, dlatego usługa sieci Web zawsze je zawiera. Jeśli nie uwzględnisz tego parametru, zostaną zwrócone wszystkie obszary usługi.
 - **TenantName=\<tenant_name\>** — Nazwa Office 365 dzierżawy. Usługa sieci Web pobiera Twoją podaną nazwę i wstawia ją w częściach adresów URL, które zawierają nazwę dzierżawy. Jeśli nie podawsz nazwy dzierżawy, te części adresów URL będą mieć symbol wieloznaczny (\*).
 - **NoIPv6=\<true \| false\>** — Ustaw wartość True ( _Prawda), aby_ wykluczyć adresy IPv6 z wyników, jeśli nie korzystasz z protokołu IPv6 w Twojej sieci.
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>** — Ten parametr wymagany określa wystąpienie, z którego mają być zwracane punkty końcowe. Prawidłowe wystąpienia to: _Worldwide_, _China_, _Germany_, _USGovDoD_ i _USGovGCCHigh_.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** — Ten parametr wymagany określa wystąpienie, z którego mają być zwracane punkty końcowe. Prawidłowe wystąpienia to: _Worldwide_, _China_, _USGovDoD_ i _USGovGCCHigh_.
 
 Jeśli wywołasz metodę sieci Web Endpoints (Punkty końcowe) zbyt wiele razy z tego samego adresu IP klienta, może zostać wyświetlony kod odpowiedzi HTTP _429 (Zbyt wiele żądań)._ Jeśli otrzymasz ten kod odpowiedzi, poczekaj 1 godzinę, zanim powtórzysz żądanie, lub wygeneruj nowy identyfikator GUID dla żądania. Ogólnie najlepszym rozwiązaniem jest wywołanie metody sieci Web Endpoints (Punkty końcowe) tylko wtedy, gdy metoda sieci Web Version (Wersja) wskazuje, że jest dostępna nowa wersja.
 

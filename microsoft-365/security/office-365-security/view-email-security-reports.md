@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08ab4e4e0d85dec56de8285659cead3e1dfcb468
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3fdab6896edf704c4daa83ec993c0716c54d0f43
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321337"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494572"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail
 
@@ -36,13 +36,35 @@ ms.locfileid: "63321337"
 - [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-W portalu usługi Microsoft 365 Defender pod adresem pomaga sprawdzić, w jaki sposób funkcje zabezpieczeń poczty e-mail, takie jak ochrona przed spamem, złośliwe oprogramowanie i funkcje szyfrowania w aplikacji Microsoft 365<https://security.microsoft.com>, chronią Twoją organizację. Jeśli masz odpowiednie [uprawnienia](#what-permissions-are-needed-to-view-these-reports), możesz wyświetlać i pobierać te raporty w sposób opisany w tym artykule.
+W portalu usługi Microsoft 365 Defender <https://security.microsoft.com> pod adresem pomaga sprawdzić, jak funkcje zabezpieczeń poczty e-mail, takie jak funkcje ochrony przed spamem i złośliwym oprogramowaniem w programie Microsoft 365, chronią Twoją organizację. Jeśli masz odpowiednie [uprawnienia](#what-permissions-are-needed-to-view-these-reports), możesz wyświetlać i pobierać te raporty w sposób opisany w tym artykule.
 
 > [!NOTE]
 >
 > Niektóre raporty na stronie Raporty dotyczące współpracy **& e-mail** wymagają usługi Microsoft Defender dla Office 365. Aby uzyskać informacje na temat tych raportów, zobacz [Wyświetlanie Office 365 Defender w portalu Microsoft 365 Defender raportach](view-reports-for-mdo.md).
 >
 > Raporty dotyczące przepływu poczty e-mail znajdują się teraz w centrum Exchange administracyjnego. Aby uzyskać więcej informacji na temat tych raportów, zobacz [Raporty przepływu poczty e-mail w nowej Exchange administracyjnego](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+
+## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>Zmiany raportu zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail
+
+Raporty Exchange Online Protection (EOP) i Microsoft Defender dla programu Office 365 w portalu programu Microsoft 365 Defender, które zostały zamienione, przeniesione lub wycofane, opisano w poniższej tabeli.
+
+<br>
+
+****
+
+|Przestarzały raport i polecenia cmdlet|Nowy raport i polecenia cmdlet|Identyfikator Centrum wiadomości|Data|
+|---|---|:---:|:---:|
+|**Śledzenie adresu URL** <p> Get-URLTrace|[Raport ochrony adresu URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC2399999|Czerwiec 2021|
+|**Wysłano i odebrano raport wiadomości e-mail** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[Raport o stanie ochrony przed zagrożeniami](#threat-protection-status-report) <br> [Raport o stanie przepływu poczty](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|Czerwiec 2021|
+|**Raport przesyłania dalej** <p> brak polecenia cmdlet|[Raport wiadomości automatycznie przesyłanych dalej w Aplikacji programu EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <p> brak polecenia cmdlet|MC250533|Czerwiec 2021|
+|**Sejf typów plików załączników** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: Wyświetlanie danych za pomocą złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|Czerwiec 2021|
+|**Sejf raportu rozsyłania wiadomości załączników** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: Wyświetlanie danych za pomocą złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|Czerwiec 2021|
+|**Złośliwe oprogramowanie wykryte w raporcie poczty e-mail** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: Wyświetlanie danych za pomocą złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Czerwiec 2021|
+|**Raport wykrywania spamu** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Raport o stanie ochrony przed zagrożeniami: Wyświetlanie danych według wiadomości e-mail ze \> spamem](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Październik 2021|
+|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|Maj 2022 r.|
+|**Exchange reguł transportu** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange raportu o regułach transportu w Programie komunikacji elektronicznej](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> brak polecenia cmdlet|MC316157|Kwiecień 2022 r.|
+|Get-MailTrafficTopReport|[Raport o stanie ochrony przed zagrożeniami: Wyświetlanie danych za pomocą złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Uwaga**: Nie zastępuje on funkcji raportowania szyfrowania w aplikacji Get-MailTrafficTopReport.|MC315742|Kwiecień 2022 r.|
+|
 
 ## <a name="compromised-users-report"></a>Raport naruszonych użytkowników
 
@@ -1091,7 +1113,7 @@ Aby zarządzać już utworzonymi raportami planowanymi, wykonaj następujące cz
 
    - **Sekcja Adresaci** : Kliknij pozycję **Edytuj adresatów** , aby dodać lub usunąć adresatów zaplanowanego raportu. Po zakończeniu kliknij przycisk **Zapisz.**
 
-   Po zakończeniu kliknij przycisk **Zamknij**.
+   Po wprowadzeniu wszystkich zmian kliknij przycisk **Zamknij**.
 
 ## <a name="request-report"></a>Żądanie raportu
 

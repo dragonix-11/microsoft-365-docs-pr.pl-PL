@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Omówienie łączności sieciowej w Centrum Administracja Microsoft 365 sieci
-ms.openlocfilehash: 3a0f2b8d54c90884a79e79288d173aa5e17c0ef2
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: c2f44ba97cb3d70dbe065df4a5b631f569460bff
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450318"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494544"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Łączność sieciowa w Administracja Microsoft 365 center
 
@@ -39,13 +39,11 @@ Centrum Administracja Microsoft 365 zawiera teraz zagregowane metryki łącznoś
 
 Po pierwszym przechodzeniu do strony wydajności sieci musisz skonfigurować swoje lokalizacje, aby wyświetlić mapę globalnej wydajności sieci, ocenę sieci zawęgową dla całej dzierżawy, procent użytkowników pracujących zdalnie, a także listę bieżących problemów do podjęcia działań i/lub dalszego wyszukiwania informacji. W okienku przeglądu możesz przejść do szczegółów, aby wyświetlić konkretne metryki wydajności sieci i problemy według lokalizacji. Aby uzyskać więcej informacji, zobacz [Omówienie wydajności sieci w Centrum Administracja Microsoft 365 sieci](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
-Możesz zostać poproszony o dołączenie do publicznej wersji zapoznawczej tej funkcji w imieniu swojej organizacji. Akceptacja zazwyczaj odbywa się natychmiast, po czym zostanie wyświetlony strona łączność sieciowa.
-
 Aby uzyskać dostęp do strony łączności sieciowej, musisz być administratorem organizacji w organizacji w Microsoft 365. Rola administracyjna czytnika raportów będzie mieć dostęp do tych informacji. Aby skonfigurować lokalizacje i inne elementy łączności sieciowej, administrator musi mieć rolę administratora pomocy technicznej usługi.
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Wymagania wstępne oceny łączności sieciowej
 
-Aby rozpocząć pracę, włącz ustawienie zgody na lokalizację w celu automatycznego zbierania danych z urządzeń korzystających z usług lokalizacji usługi Windows, przejdź do listy Lokalizacje, aby dodać lub przekazać dane lokalizacji, lub uruchom test łączności sieciowej usługi Microsoft 365 z lokalizacji biura. Podczas gdy łączność sieciowa może być oceniana w całej organizacji, konieczne będzie ulepszenie projektu sieci dla określonych lokalizacji biura. Informacje o łączności sieciowej są udostępniane dla każdej lokalizacji biura, gdy te lokalizacje można ustalić. Dostępne są trzy opcje przeprowadzania oceny sieci z lokalizacji biura:
+Aby rozpocząć pracę, włącz ustawienie zgody na lokalizację w celu automatycznego zbierania danych z urządzeń korzystających z usług lokalizacji usługi Windows, przejdź do listy Lokalizacje, aby dodać lub przekazać dane lokalizacji, lub uruchom test łączności sieciowej usługi Microsoft 365 z lokalizacji biura. Poniżej przedstawiono szczegółowo te trzy opcje dotyczące informacji o lokalizacji biura. Podczas gdy łączność sieciowa może być oceniana w całej organizacji, konieczne będzie ulepszenie projektu sieci dla określonych lokalizacji biura. Informacje o łączności sieciowej są udostępniane dla każdej lokalizacji biura, gdy te lokalizacje można ustalić. Dostępne są trzy opcje przeprowadzania oceny sieci z lokalizacji biura:
 
 ### <a name="1-enable-windows-location-services"></a>1. Włączanie Windows lokalizacji
 
@@ -91,9 +89,6 @@ Próbki pomiarów i lokalizacje biur powinny pojawiać się po 2–3 minutach od
 **Ocenianie** sieci jako zagregowanej z wielu metryk wydajności sieci jest migawką kondycji sieci przedsiębiorstwa reprezentowaną przez wartość punktową z lat 0–100. Oceny sieci są zakresowe zarówno dla całej dzierżawy, jak i każdej lokalizacji geograficznej, z której użytkownicy łączą się z dzierżawą, zapewniając administratorom programu Microsoft 365 łatwy sposób natychmiastowego zrozumienia kondycji sieci przedsiębiorstwa i szybkiego przechodzenia do szczegółów szczegółowego raportu dla dowolnej globalnej lokalizacji biura.
 
 W złożonych przedsiębiorstwach z wieloma lokalizacjami biur i nieujemną architekturą obwodu sieci mogą korzystać z tych informacji podczas początkowego dołączania do Microsoft 365 lub rozwiązywania problemów z wydajnością sieci wykrytych ze względu na wzrost użycia. Zazwyczaj nie jest to konieczne w przypadku małych firm korzystających Microsoft 365 ani żadnych przedsiębiorstw, które już mają prostą i bezpośrednią łączność sieciową. Przedsiębiorstwa z ponad 500 użytkownikami i wieloma lokalizacjami biur powinny być najbardziej skorzystają.
-
->[!IMPORTANT]
->Szczegółowe informacje o sieci, zalecenia dotyczące wydajności i oceny w centrum Administracja Microsoft 365 są obecnie w stanie podglądu i są dostępne tylko dla dzierżaw usługi Microsoft 365, które zostały zarejestrowane w programie podglądu funkcji.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise wyzwania związane z łącznością sieciową
 
@@ -218,7 +213,7 @@ Drzwi Microsoft 365 serwisowych to punkt wejścia globalnej sieci firmy Microsof
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Co to jest optymalna Microsoft 365 front frontu usługi?
 
-Optymalna Microsoft 365 serwisowa to taki, który jest najbliżej punktu ruchu wychodzącego Twojej sieci, na ogół w mieście lub regionie metra. Użyj narzędzia [Microsoft 365 testowego (](office-365-network-mac-perf-onboarding-tool.md)wersja zapoznawcza), aby określić lokalizację swoich Microsoft 365 przednich i optymalnych drzwi przód serwisowych. Jeśli narzędzie określa, że drzwi przednie są optymalne, optymalnie łączysz się z globalną siecią firmy Microsoft.
+Optymalna Microsoft 365 serwisowa to taki, który jest najbliżej punktu ruchu wychodzącego Twojej sieci, na ogół w mieście lub regionie metra. Użyj narzędzia [Microsoft 365 do](office-365-network-mac-perf-onboarding-tool.md) testowania łączności biznesowej, aby określić lokalizację swoich Microsoft 365 serwisowych drzwi frontowych i optymalnych drzwi przednich serwisowej. Jeśli narzędzie określa, że drzwi przednie są optymalne, optymalnie łączysz się z globalną siecią firmy Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Co to jest lokalizacja internetowa ruch wychodzący?
 

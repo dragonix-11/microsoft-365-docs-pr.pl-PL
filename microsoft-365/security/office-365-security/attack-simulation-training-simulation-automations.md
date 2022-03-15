@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i łady uruchamiane po spełnionych określonych warunkach w programie Microsoft Defender Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 47732960ad5fac9884f388836ea23a2b9283c93c
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 029dce5b7f0b5c6e62b064aa9155d7b07c6a80d7
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419350"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495028"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatyzacje symezyjne dla szkolenia z symezyjną ataków
 
@@ -247,7 +247,7 @@ Na stronie **docelowej** możesz skonfigurować stronę sieci Web, do których u
     Na stronie docelowej musisz skonfigurować następujące **ustawienia** dodatkowe:
 
     - **Wybieranie układu strony docelowej**: wybierz jeden z 5 dostępnych szablonów stron startowych.
-    - **Dodać logo**: Kliknij przycisk **Przeglądaj** , aby znaleźć i wybrać plik .png, jpeg lub .gif, aby dodać go do wszystkich ładów wybranych przez firmę Microsoft. Aby usunąć logo, kliknij przycisk **Usuń**.
+    - **Dodać logo**: Kliknij przycisk **Przeglądaj** , aby znaleźć i wybrać plik .png, jpeg lub .gif, aby dodać go do wszystkich ładów wybranych przez firmę Microsoft. Aby uniknąć zniekształceń, rozmiar logo powinien być maksymalny 210 x 70. Aby usunąć logo, kliknij przycisk **Usuń**.
     - **Wskaźniki ładowania**: To ustawienie jest niedostępne, jeśli na stronie Wybieranie technik społecznościowych wcześniej wybrano załącznik  złośliwego [oprogramowania lub](#select-one-or-more-social-engineering-techniques) link do złośliwego oprogramowania.
 
       Wybierz **pozycję Dodaj wskaźniki opłaty do wiadomości e-mail** , aby ułatwić użytkownikom identyfikowanie wiadomości wyłudzających informacje.
@@ -308,7 +308,7 @@ Na stronie **Wybieranie powiadomienia użytkownika końcowego** wybierz jedną z
         - **Zmodyfikowane przez**
         - **Ostatnia modyfikacja**
 
-        Po zakończeniu kliknij przycisk **Zamknij**.
+        Po wprowadzeniu wszystkich zmian kliknij przycisk **Zamknij**.
 
   Jeśli wybierzesz tę opcję, kliknięcie przycisku Dalej spowoduje wybranie strony Harmonogram [symulowania](#simulation-schedule).
 

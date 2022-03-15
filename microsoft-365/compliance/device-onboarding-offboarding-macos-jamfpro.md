@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak korzystać z urządzeń z systemem macOS w nowych Microsoft 365 zgodności przy użyciu usługi JAMF Pro (wersja zapoznawcza)
-ms.openlocfilehash: 2399dd901b9c31c3cd824e35bd4db844610125c5
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 3f67acd7f6d6f62b8231a3c92e99551d7b90690d
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "63013353"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494993"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Urządzenia z systemem macOS w nowych Microsoft 365 zgodności przy użyciu usługi JAMF Pro (wersja zapoznawcza)
 
@@ -35,8 +35,7 @@ Za pomocą usługi JAMF można Pro urządzeń z systemem macOS do Microsoft 365 
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Upewnij się, że urządzenia [z systemem macOS są przyłączone do usługi Azure AD](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Upewnij się, że [urządzenia z systemem macOS są zarządzane za pośrednictwem usługi JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- Upewnij się, że urządzenia [z systemem macOS](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) są zarządzane za pośrednictwem usługi JAMF pro i są skojarzone z tożsamością (dołączoną do upN usługi Azure AD) za pośrednictwem usługi JAMF Połączenie lub Intune.
 - Instalowanie przeglądarki Edge w wersji 95+ na urządzeniach z systemem macOS 
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Urządzenia w nowych rozwiązaniach Microsoft 365 zgodności przy użyciu usługi JAMF Pro
@@ -220,7 +219,7 @@ Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procese
 1. W **pakietuch** wybierz **pozycję +Nowy**. Wprowadź te szczegóły:
     - Nazwa wyświetlana: pozostaw puste pole, ponieważ po wybraniu pliku pkg zostanie ono zresetowane.
     - Kategoria: Brak (domyślna)
-    - Filname: Wybierz plik, w tym przypadku plik `wdav.pkg` .
+    - Nazwa_pliku: wybierz plik, w tym przypadku plik `wdav.pkg` .
 
 1. Wybierz **pozycję Otwórz**. Ustaw:
     - **Nazwa wyświetlana**: `Microsoft Endpoint Technology`

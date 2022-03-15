@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak symulować ataki służące do wyłudzania informacji i szkolenie użytkowników w zakresie zapobiegania wyłudzaniu informacji przy użyciu szkolenia symezyjnego w programie Microsoft Defender dla programu Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 17e4bb55ee2c571c2e66b648d277f0a896551f39
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 5ce7b58410ea53e4f11d746ebc4583b125f1ade6
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419364"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494432"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Symulowanie ataków phishingowego za pomocą szkolenia symezyjnego ataków w programie Defender dla Office 365
 
@@ -249,7 +249,7 @@ Strony docelowe firmy Microsoft są dostępne w 12 językach: chiński (uproszcz
 - **Wybierz preferencje strony docelowej**: Dostępne wartości:
   - **Użyj domyślnej strony startowej firmy Microsoft**: Jest to wartość domyślna, która ma następujące skojarzone opcje konfigurowania:
     - **Wybieranie układu strony docelowej**: wybierz jeden z dostępnych szablonów.
-    - **Dodać logo**: Kliknij przycisk **Przeglądaj,** aby znaleźć i wybrać plik .png, jpeg lub .gif pliku. Aby usunąć logo, kliknij przycisk **Usuń**.
+    - **Dodać logo**: Kliknij przycisk **Przeglądaj,** aby znaleźć i wybrać plik .png, jpeg lub .gif pliku. Aby uniknąć zniekształceń, rozmiar logo powinien być maksymalny 210 x 70. Aby usunąć logo, kliknij przycisk **Usuń**.
     - **Dodawanie wskaźników obciążenia do** wiadomości e-mail: To ustawienie jest niedostępne, jeśli na  stronie Wybierz technikę wcześniej wybrano załącznik złośliwego oprogramowania lub link do [złośliwego](#select-a-social-engineering-technique) oprogramowania.
 
     Możesz wyświetlić podgląd wyników, klikając przycisk Otwórz **panel podglądu** u dołu strony.
@@ -308,7 +308,7 @@ Na stronie **Wybieranie powiadomienia użytkownika końcowego** wybierz jedną z
         - **Zmodyfikowane przez**
         - **Ostatnia modyfikacja**
 
-        Po zakończeniu kliknij przycisk **Zamknij**.
+        Po wprowadzeniu wszystkich zmian kliknij przycisk **Zamknij**.
 
   Jeśli wybierzesz tę opcję, kliknięcie przycisku Dalej spowoduje uruchomienie [](#launch-details) strony **Szczegóły.**
 

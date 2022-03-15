@@ -17,12 +17,12 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych (MSP) dowiedz się, Microsoft 365 Lighthouse ułatwić zabezpieczanie dzierżaw klientów i zarządzanie nimi w jednej lokalizacji.
-ms.openlocfilehash: 5b4792bf60de688bc36b33b40aa09f6e882ffc2d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 88b6a3b1afff0905458f5ade7e4e91136b2c9d38
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311539"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494474"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Omówienie Microsoft 365 Lighthouse
 
@@ -41,6 +41,10 @@ Aby uzyskać więcej informacji na temat programu CSP, zobacz omówienie Dostawc
 
 > [!NOTE]  
 > Podobna oferta, Azure Lighthouse, ułatwia dostawcom usług dostarczanie usług zarządzanych na platformie Azure przy użyciu kompleksowego i niezawodnego narzędzia do zarządzania wbudowanego na platformie Azure. Aby dowiedzieć się więcej, zobacz [Co to jest usługa Azure Lighthouse?](/azure/lighthouse/overview)   
+
+## <a name="watch-what-is-microsoft-365-lighthouse"></a>Obejrzyj: Co to jest Microsoft 365 Lighthouse?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QVMP]
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse korzyści
 
