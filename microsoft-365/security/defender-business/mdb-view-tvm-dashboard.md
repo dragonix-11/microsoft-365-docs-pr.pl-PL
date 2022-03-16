@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 807ed67a789364928b00431f9d7a5abb98eba137
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 7d529ffac45484f585cf654d30cb5522bbdffcd5
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449908"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512296"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Używanie pulpitu nawigacyjnego zarządzania & zagrożeniami w programie Microsoft Defender dla firm
 
@@ -33,7 +33,7 @@ ms.locfileid: "63449908"
 
 Usługa Microsoft Defender dla firm zawiera pulpit nawigacyjny zarządzania & zagrożeniami, który został zaprojektowany, aby zaoszczędzić czas i nakład pracy zespołu zabezpieczeń. Poza wyświetlaniem wyników ekspozycji, możesz także wyświetlać informacje o ujawnionych urządzeniach i zaleceniach dotyczących zabezpieczeń. Za pomocą pulpitu nawigacyjnego zarządzania & zagrożeniami można:
 
-- Wyświetl ocenę ekspozycji, która jest skojarzona z urządzeniami w Twojej organizacji
+- Wyświetl ocenę ekspozycji, która jest skojarzona z urządzeniami w Twojej firmie
 
 - Wyświetlanie najlepszych zaleceń dotyczących zabezpieczeń, takich jak rozwiązywanie problemów z komunikacją z urządzeniami, włączanie ochrony za pomocą zapory lub aktualizowanie definicji Program antywirusowy Microsoft Defender zabezpieczeń
 

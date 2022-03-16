@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Dowiedz się, jak uzyskać dostęp do Portalu zaufania usług firmy Microsoft i korzystać z niego w celu zapewnienia bezpieczeństwa, prywatności i zgodności.
-ms.openlocfilehash: 2efa7389da9d53d14b833dc31bd84b446ee48f63
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 5894fb57d4633c0dbc3c9d925be72910bdfc3f56
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990490"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512912"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Rozpoczynanie pracy z Portalem zaufania usług firmy Microsoft
 
@@ -70,7 +70,7 @@ Link **Do Portalu zaufania usług** zawiera stronę główną. Zapewnia ona szyb
 ### <a name="compliance-manager"></a>Menedżer zgodności
 
 > [!IMPORTANT]
-> Menedżer zgodności został przeniesiony z Portalu zaufania usług do nowej lokalizacji w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365.</a> Wszystkie dane klienta zostały przeniesione do nowej lokalizacji, więc możesz nadal korzystać z Menedżera zgodności bez przerywania pracy. Informacje o konfiguracji i [nowych funkcjach](compliance-manager.md) można znaleźć w dokumentacji Menedżera zgodności. Mimo że klasyczna wersja Menedżera zgodności pozostaje w Portalu zaufania usług, wszyscy użytkownicy są zachęcani do korzystania z Menedżera zgodności w Centrum zgodności platformy Microsoft 365.
+> Menedżer zgodności został przeniesiony z Portalu zaufania usług do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>. Wszystkie dane klienta zostały przeniesione do nowej lokalizacji, więc możesz nadal korzystać z Menedżera zgodności bez przerywania pracy. Informacje o konfiguracji i [nowych funkcjach](compliance-manager.md) można znaleźć w dokumentacji Menedżera zgodności.
 
 ### <a name="trust-documents"></a>Dokumenty dotyczące zaufania
 
@@ -116,13 +116,7 @@ Przejdź do **pozycji Więcej > administratorów** , aby uzyskać dostęp do fun
 
 Kliknij lupę w prawym górnym rogu strony Portal zaufania usług, aby rozwinąć pole, wprowadź wyszukiwane terminy i naciśnij klawisz **Enter**. Zostanie **wyświetlona** strona wyszukiwania z wyświetlonym wyszukiwany terminem w polu wyszukiwania oraz poniższymi wynikami wyszukiwania.
 
-![Portal zaufania usług — wyszukiwanie w dokumentach z zastosowanym filtrem.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
-
 Domyślnie wyszukiwanie zwraca wyniki dokumentu. Wyniki możesz filtrować, używając list rozwijanych, aby uściślić wyświetlaną listę dokumentów. Aby zawęzić listę dokumentów, możesz użyć wielu filtrów. Filtry obejmują określone usługi w chmurze, kategorie rozwiązań dotyczących zgodności lub zabezpieczeń, regiony i branże. Kliknij link z nazwą dokumentu, aby pobrać dokument.
-
-Aby wyświetlić listę kontrolek z funkcji Assessments in Compliance Manager (klasycznej) powiązanej z wyszukiwanych terminów, kliknij pozycję **Menedżer zgodności**. Wyniki wyszukiwania pokazują datę utworzenia testu, nazwę grupowania testów, obowiązującą usługę firmy Microsoft w chmurze oraz to, czy kontrolką jest firma Microsoft, czy jest zarządzana przez klienta. Kliknij nazwę kontrolki, aby wyświetlić kontrolkę w aplikacji Assessment in Compliance Manager (klasycznej).
-
-![Portal zaufania usług — wyszukiwanie kontrolek Menedżera zgodności.](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > Raporty i dokumenty w Portalu zaufania usług są dostępne do pobrania przez co najmniej 12 miesięcy od ich publikacji lub do momentu, gdy będzie dostępna nowa wersja dokumentu.
@@ -150,8 +144,6 @@ Aby uzyskać dostęp do tych pakietów startowych, przejdź > branż portalu zau
 ## <a name="localization-support"></a>Obsługa lokalizacji
 
 Portal zaufania usług umożliwia wyświetlanie zawartości strony w różnych językach. Aby zmienić język strony, po prostu kliknij ikonę kuli ziemskiej w lewym dolnym rogu strony i wybierz język.
-
-![Portal zaufania usług — zlokalizowane opcje zawartości.](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="give-feedback"></a>Opinie
 

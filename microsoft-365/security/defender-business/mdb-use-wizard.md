@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 2cc157e363c42b94cac750b19a6122ed0a22c3de
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: b55af496881489279a7a6f96ed386ab2a26c2fa5
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450762"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512604"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>Konfigurowanie programu Microsoft Defender dla firm przy użyciu kreatora
 
@@ -51,13 +51,13 @@ Kreator pomoże Ci szybko i wydajnie skonfigurować usługę Defender dla firm. 
    - Administrator zabezpieczeń może wyświetlać i edytować ustawienia zabezpieczeń. 
    - Czytnik zabezpieczeń może wyświetlać informacje tylko w raportach. 
 
-2. **Wdowaj i konfiguruj Windows urządzenia**. W tym kroku możesz szybko dodać urządzenia mobilne organizacji do Windows Defender dla firm. Urządzenia dołączające od razu pomagają chronić je od pierwszego dnia. Aby [uzyskać więcej szczegółowych informacji, zobacz Urządzenia w programie Microsoft Defender dla](mdb-onboard-devices.md) firm.
+2. **Wdowaj i konfiguruj Windows urządzenia**. W tym kroku możesz szybko dodać firmowe urządzenia mobilne do Windows Defender dla firm. Urządzenia dołączające od razu pomagają chronić je od pierwszego dnia. Aby [uzyskać więcej szczegółowych informacji, zobacz Urządzenia w programie Microsoft Defender dla](mdb-onboard-devices.md) firm.
 
-   - Jeśli korzystasz już z usługi Microsoft Intune (część usługi Microsoft Endpoint Manager), a Twoja organizacja ma urządzenia zarejestrowane w usłudze Endpoint Manager, zostaniesz poproszony o określenie, czy chcesz korzystać z automatycznego dołączania dla niektórych lub [](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) wszystkich zarejestrowanych Windows urządzeniach. Automatyczne wniesienie konfiguruje połączenie między usługami Endpoint Manager i Defender dla Firm, a następnie bezproblemowo dołącza Windows z usługą Defender dla firm.
+   - Jeśli korzystasz już z usługi Microsoft Intune (część usługi Microsoft Endpoint Manager), a Twoja firma ma urządzenia zarejestrowane w usłudze Endpoint Manager, zostaniesz poproszony(-a) o zastosowanie automatycznego dołączania dla niektórych lub wszystkich zarejestrowanych Windows urządzeniach.[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) Automatyczne wniesienie konfiguruje połączenie między usługami Endpoint Manager i Defender dla Firm, a następnie bezproblemowo dołącza Windows z usługą Defender dla firm.
 
    - Jeśli jeszcze nie korzystasz z usługi Endpoint Manager lub masz urządzenia inne niż Windows zarejestrowane w programie Endpoint Manager, możesz ręcznie włączyć je do usługi [Defender dla firm](mdb-onboard-devices.md#local-script-in-defender-for-business). 
    
-3. **Skonfiguruj zasady zabezpieczeń**. Program Defender dla firm zawiera domyślne zasady zabezpieczeń dla ochrony następnej generacji i ochrony zapory, które można stosować do urządzeń organizacji. Te zasady domyślne używają zalecanych ustawień i zostały zaprojektowane tak, aby zapewnić silną ochronę Twoich urządzeń. 
+3. **Skonfiguruj zasady zabezpieczeń**. Program Defender dla firm zawiera domyślne zasady zabezpieczeń dla ochrony następnej generacji i ochrony zapory, które mogą być stosowane do urządzeń firmy. Te zasady domyślne używają zalecanych ustawień i zostały zaprojektowane tak, aby zapewnić silną ochronę Twoich urządzeń. 
 
    Jeśli chcesz, możesz również utworzyć własne zasady zabezpieczeń. Jeśli korzystasz już z usługi Endpoint Manager, możesz nadal używać jej do zarządzania zasadami zabezpieczeń. 
 

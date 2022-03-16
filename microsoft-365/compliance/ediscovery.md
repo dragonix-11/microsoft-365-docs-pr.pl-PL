@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 udostępnia trzy narzędzia zbierania elektronicznych materiałów dowodowych, za pomocą których można wyszukiwać i eksportować zawartość znalezioną w różnych lokalizacjach, takich jak skrzynki pocztowe usługi Exchange, witryny usług SharePoint i OneDrive dla Firm oraz grupy Microsoft 365. Microsoft Teams i Skype dla firm konwersacji. Podstawowe funkcje zbierania elektronicznych materiałów dowodowych Advanced eDiscovery wiele dodatkowych funkcji, które ułatwiają zarządzanie badaniami.
-ms.openlocfilehash: e92619ff0ecbfcdbdf1a7f41eb4cd35282a6f2d9
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: cccc30dd649dc5abe74c551434e904236ecf9d35
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494516"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512492"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Rozwiązania zbierania elektronicznych materiałów dowodowych w Microsoft 365
 
@@ -132,8 +132,8 @@ W poniższych sekcjach przedstawiono minimalne wymagania dotyczące subskrypcji 
 - Microsoft 365 G1
 - Microsoft 365 F1 lub F3 albo F5 Security add-on
 - Microsoft 365 Business Premium subskrypcji
-- Microsoft 365 Business Standard
-- Microsoft 365 Business Basic
+- Microsoft 365 Business Standard subskrypcji
+- Microsoft 365 Business Basic subskrypcji
 - Office 365 Education A1
 - Office 365 E1 subskrypcji
 

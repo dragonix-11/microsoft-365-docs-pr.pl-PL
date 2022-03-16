@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 6db82c1dcc9afceebcb9fff891cb90ddafa95f21
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 14b93f27c2d7bd0255fb08164072ba160af6be1b
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468726"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512450"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Omówienie usługi Microsoft Defender dla firm
 
@@ -32,7 +32,7 @@ ms.locfileid: "63468726"
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-Microsoft Defender for Business to nowe rozwiązanie do zabezpieczeń punktów końcowych zaprojektowane specjalnie dla małych i średnich firm (do 300 pracowników). Dzięki temu rozwiązaniu zabezpieczeń punktów końcowych urządzenia w Twojej organizacji są lepiej chronione przed oprogramowaniem wymuszającym okup, złośliwym oprogramowaniem, wyłudzaniem informacji i innymi zagrożeniami. 
+Microsoft Defender for Business to nowe rozwiązanie do zabezpieczeń punktów końcowych zaprojektowane specjalnie dla małych i średnich firm (do 300 pracowników). Dzięki temu rozwiązaniu zabezpieczeń punktów końcowych urządzenia firmy są lepiej chronione przed oprogramowaniem wymuszającym okup, złośliwym oprogramowaniem, wyłudzaniem informacji i innymi zagrożeniami. 
 
 Obejrzyj poniższy klip wideo, aby dowiedzieć się więcej o programie Defender dla firm: <br/><br/>
 
@@ -51,7 +51,7 @@ Za pomocą usługi Defender dla firm możesz chronić urządzenia i dane używan
 
 - **Enterprise klasy zabezpieczeń**. Usługa Defender dla firm zapewnia zaawansowane funkcje zabezpieczeń punktów końcowych dzięki wiodącemu w branży rozwiązaniu programu [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) i optymalizuje te funkcje dla administratorów IT w celu obsługi małych i średnich firm.
 
-- **Łatwe w użyciu rozwiązanie zabezpieczające**. Program Defender dla firm oferuje usprawnione środowisko, które ułatwia działanie dzięki rekomendacjom i wglądom w bezpieczeństwo punktów końcowych. Wyspecjalizowana wiedza nie jest wymagana, ponieważ program Defender dla firm oferuje konfigurację kierowaną przez kreatora oraz domyślne zasady zabezpieczeń, które od pierwszego dnia pomagają chronić urządzenia w Twojej organizacji.
+- **Łatwe w użyciu rozwiązanie zabezpieczające**. Program Defender dla firm oferuje usprawnione środowisko, które ułatwia działanie dzięki rekomendacjom i wglądom w bezpieczeństwo punktów końcowych. Nie jest wymagana specjalna wiedza, ponieważ program Defender dla firm oferuje konfigurację kierowaną przez kreatora oraz domyślne zasady zabezpieczeń, które od pierwszego dnia pomagają chronić firmowe urządzenia.
 
 - **Elastyczność w środowisku**. Usługa Defender dla firm może współpracować ze środowiskiem biznesowym niezależnie od tego, czy Microsoft Intune korzystasz z usługi, czy jesteś nowym użytkownikiem chmury firmy Microsoft. Program Defender dla firm współpracuje ze składnikami wbudowanymi w aplikację Windows oraz z aplikacjami dla urządzeń z systemami macOS, iOS i Android.
 

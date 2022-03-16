@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak korzystać z automatyzacji ładowania (zbierania zbiorów zbiorów danych) do zbierania i uruchamiania zautomatyzowanych symulacyjnych szkoleń symulacyjnych ataków w programie Microsoft Defender dla programu Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 0e090b79c8e04de5f0e9e81449d805d2b124bc59
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 3a0245acbb6d27353b4d4bd27011652c0a902975
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "62989734"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512385"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>Automatyzacja ładowania dla szkolenia symulacyjnego w zakresie ataków
 
@@ -31,21 +31,21 @@ Aby utworzyć automatyzację ładowania, wykonaj następujące czynności:
 
    Aby przejść bezpośrednio do karty **Automatyzacja ładowania** , użyj klawisza <https://security.microsoft.com/attacksimulator?viewid=payloadautomation>.
 
-2. Na karcie **Automatyzacja ładowania** wybierz pozycję Utwórz ![ikonę symulacyjnej.](../../media/m365-cc-sc-create-icon.png) **Tworzenie symulacyjnej**.
+2. Na karcie **Automatyzacja ładowania** wybierz pozycję Utwórz ![ikonę automatyzacji.](../../media/m365-cc-sc-create-icon.png) **Tworzenie automatyzacji**.
 
-   ![Create simulation button on the Payload automations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-sim-automations-create.png)
+   ![Przycisk utwórz automatyzację na karcie Automatyzacja ładowania w szkoleniu z symezyjną ataków w Microsoft 365 Defender sieci.](../../media/attack-sim-training-payload-automations-create.png)
 
 3. Zostanie otwarty kreator tworzenia. W dalszej części tego artykułu opisano strony i ustawienia, które zawierają.
 
 > [!NOTE]
-> W dowolnym momencie kreatora tworzenia symulacyjnej możesz kliknąć przycisk **Zapisz** i zamknij, aby zapisać postęp i kontynuować konfigurowanie symulacyjnej później. W czasie nieukończonej **symulacyjnej wartości stanowej** **na** **karcie Symulatory** . Możesz wybrać miejsce, w którym zostało to pozostawione, wybierając symululę i klikając ikonę ![Edytuj symululę.](../../media/m365-cc-sc-edit-icon.png) **Symulacja** edycji.## Nazwa i opisz symulowanie.
+> W dowolnym momencie w kreatorze tworzenia można kliknąć przycisk Zapisz  i zamknąć, aby zapisać postęp i kontynuować konfigurowanie automatyzacji ładowania później. Można podnieść lewą pozycję, zaznaczając automatyzację ładowania na karcie Automatyzacje  ładowania, a następnie klikając ikonę ![Edytuj automatyzację.](../../media/m365-cc-sc-edit-icon.png) **Edytowanie automatyzacji**.
 
 ## <a name="automation-name"></a>Nazwa automatyzacji
 
 Na stronie **Nazwa automatyzacji** skonfiguruj następujące ustawienia:
 
-- **Nazwa**: Wprowadź unikatową nazwę opisową dla symulacyjnej.
-- **Opis**. Wprowadź opcjonalny szczegółowy opis symulowania.
+- **Nazwa**: Wprowadź unikatową nazwę opisową automatyzacji ładowania.
+- **Opis**: Wprowadź opcjonalny szczegółowy opis automatyzacji ładowania.
 
 Po zakończeniu kliknij przycisk **Dalej**.
 

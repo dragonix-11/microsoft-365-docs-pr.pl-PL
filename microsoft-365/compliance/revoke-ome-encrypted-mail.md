@@ -9,19 +9,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 06/11/2020
+ms.date: 03/04/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Jako administrator i nadawca wiadomości możesz odwołać określone wiadomości e-mail, które były szyfrowane przy użyciu Zaawansowane szyfrowanie wiadomości usługi Office 365.
-ms.openlocfilehash: 86231857b01cc4f505f19063fe59cd58b75e263b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bf793dce23c91e8b45f96114e6c4a56c866adc32
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987992"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512256"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Odwoływanie wiadomości e-mail zaszyfrowanych za pomocą zaawansowanego szyfrowania wiadomości
 
@@ -30,6 +30,9 @@ Odwołania wiadomości e-mail są oferowane w ramach Zaawansowane szyfrowanie wi
 Ten artykuł jest częścią większego szeregu artykułów [na temat](ome.md) Szyfrowanie wiadomości usługi Office 365.
 
 Jeśli wiadomość została zaszyfrowana przy Zaawansowane szyfrowanie wiadomości usługi Office 365 wiadomości i jesteś Microsoft 365 administratorem lub nadawcą wiadomości, możesz odwołać wiadomość w określonych warunkach. Administratorzy odwołają wiadomości przy użyciu programu PowerShell. Nadawca odwoła wiadomość wysłaną bezpośrednio z Outlook w sieci Web. W tym artykule opisano okoliczności, w których można odwołań, i przedstawiono, jak to zrobić.
+
+> [!NOTE]
+> Aby zagwarantować możliwość śledzenia i odwoływania wiadomości OME, należy dodać niestandardowy szablon śledzenia i oznaczania. Zobacz [Dodawanie marki organizacji do zaszyfrowanych wiadomości.](add-your-organization-brand-to-encrypted-messages.md)
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>Zaszyfrowane wiadomości e-mail, które można odwołać
 

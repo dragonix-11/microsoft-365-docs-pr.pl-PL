@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: e6ad964e250b9ae3bc01de02a4d51675beaf9c80
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 0754a16310df912a63ba92395b9cb9369436dc93
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449516"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512898"
 ---
 # <a name="get-started-using-the-microsoft-365-defender-portal"></a>Rozpoczynanie korzystania z portalu Microsoft 365 Defender-
 
@@ -59,21 +59,21 @@ Użyj paska nawigacyjnego po lewej stronie ekranu, aby uzyskać dostęp do zdarz
 
 | Element | Opis |
 |:---|:---|
-| **Strona główna** | Przenosi Cię do strony głównej w programie Microsoft 365 Defender. Strona główna zawiera karty z wyróżnieniami wykrytych aktywnych zagrożeń oraz zalecenia dotyczące zabezpieczania danych i urządzeń organizacji. <br/><br/>Rekomendacje są dostępne w programie Defender dla firm, mogą zaoszczędzić czas i wysiłku zespołu zabezpieczeń. Rekomendacje są oparte na najlepszych rozwiązaniach branżowych. Aby dowiedzieć się więcej o zaleceniach, zobacz [Zalecenia dotyczące zabezpieczeń — Zarządzanie zagrożeniami i lukami](../defender-endpoint/tvm-security-recommendation.md). |
+| **Strona główna** | Przenosi Cię do strony głównej w programie Microsoft 365 Defender. Strona główna zawiera karty z wyróżnieniami aktywnych zagrożeń, które zostały wykryte, oraz zalecenia dotyczące zabezpieczania danych i urządzeń firmy. <br/><br/>Rekomendacje są dostępne w programie Defender dla firm, mogą zaoszczędzić czas i wysiłku zespołu zabezpieczeń. Rekomendacje są oparte na najlepszych rozwiązaniach branżowych. Aby dowiedzieć się więcej o zaleceniach, zobacz [Zalecenia dotyczące zabezpieczeń — Zarządzanie zagrożeniami i lukami](../defender-endpoint/tvm-security-recommendation.md). |
 | **Zdarzenia** | Pozwala wyświetlić listę ostatnich zdarzeń. W przypadku wyzwalania alertów są tworzone zdarzenia. Zdarzenie może zawierać wiele alertów. Pamiętaj, aby regularnie przeglądać zdarzenia. <br/><br/>Aby dowiedzieć się więcej o zdarzeniach, zobacz [Wyświetlanie zdarzeń i zarządzanie nimi w u programie Microsoft Defender dla firm](mdb-view-manage-incidents.md).|
 | **Centrum akcji** | Umożliwia dostęp do listy akcji odpowiedzi, w tym akcji ukończonych lub oczekujących. <br/>— Wybierz **kartę** Historia, aby wyświetlić wykonane akcje. Niektóre akcje są podejmowane automatycznie. inne są wykonywane ręcznie lub ukończone po zatwierdzeniu. <br/>— Wybierz kartę **Oczekujące** , aby wyświetlić akcje wymagające zatwierdzenia w celu kontynuowania. <br/><br/>Aby dowiedzieć się więcej o Centrum akcji, zobacz [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md). |
 | **Analiza zagrożeń** | Pozwala spojrzeć na bieżące zagrożenia, a także pozwala jednym rzutem oka zobaczyć obszar zagrożeń. Analiza zagrożeń obejmuje również raporty i informacje od użytkowników zabezpieczeń firmy Microsoft. <br/><br/>Aby dowiedzieć się więcej na temat analizy zagrożeń, zobacz Śledzenie wyłaniających się zagrożeń i odpowiadanie [na nie za pomocą analizy zagrożeń](../defender-endpoint/threat-analytics.md). |
-| **Secure score** | Zapewnia przedstawienie pozycji zabezpieczeń organizacji i oferuje sugestie, które można ulepszyć.<br/><br/>Aby dowiedzieć się więcej na temat bezpiecznego wyniku, zobacz [Wynik bezpiecznego wyniku firmy Microsoft dla urządzeń](../defender-endpoint/tvm-microsoft-secure-score-devices.md). |
+| **Secure score** | Przedstawia informacje o pozycji zabezpieczeń firmy i oferuje sugestie dotyczące jego poprawy.<br/><br/>Aby dowiedzieć się więcej na temat bezpiecznego wyniku, zobacz [Wynik bezpiecznego wyniku firmy Microsoft dla urządzeń](../defender-endpoint/tvm-microsoft-secure-score-devices.md). |
 | **Edukacja centrum** | Zapewnia dostęp do szkoleń zabezpieczeń i innych zasobów za pośrednictwem ścieżek nauki dołączonych do subskrypcji. Możesz filtrować według produktu, poziomu umiejętności, roli i nie tylko. Centrum Edukacja może ułatwić Twoje zespołowi zabezpieczeń podjęcie pracy nad funkcjami zabezpieczeń i możliwościami usługi Defender & dla firm i większej liczby ofert firmy Microsoft, takich jak [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) i [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md).  |
 | **Punkty końcowe** >  **Wyszukiwanie** | Umożliwia wyszukanie jednego lub większej liczby urządzeń, które zostały podłączone do usługi Microsoft Defender dla firm. |
 | **Punkty końcowe** >  **Spis urządzeń** | Umożliwia wyszukanie jednego lub większej liczby urządzeń, które zostały podłączone do usługi Microsoft Defender dla firm. |
-| **Punkty końcowe** >  **Zarządzanie lukami w zabezpieczeniach** | Udostępnia pulpit nawigacyjny, zalecenia, działania naprawcze, spis oprogramowania oraz listę potencjalnych problemów w organizacji. |
+| **Punkty końcowe** >  **Zarządzanie lukami w zabezpieczeniach** | Udostępnia pulpit nawigacyjny, zalecenia, działania naprawcze, spis oprogramowania oraz listę potencjalnych problemów w firmie. |
 | **Punkty końcowe** >  **Samouczki** | Zapewnia dostęp do instruktaży i symulowań, aby dowiedzieć się więcej na temat działania funkcji ochrony przed zagrożeniami. <br/><br/>Przed **podjęciem próby uzyskania pliku symulacyjnego** dla każdego samouczka wybierz link Przeczytaj instruktaż. Niektóre symeony wymagają Office takich jak Microsoft Word, aby przeczytać instruktaż. |
 | **Punkty końcowe** >  **Konfiguracja urządzenia** | Zawiera listę zasad zabezpieczeń według systemu operacyjnego i typu. <br/><br/>Aby dowiedzieć się więcej na temat zasad zabezpieczeń, zobacz [Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm](mdb-view-edit-policies.md). |
-| **Raporty** | Zawiera listę dostępnych raportów zabezpieczeń. Raporty te pozwalają przeglądać trendy zabezpieczeń, wyświetlać szczegółowe informacje na temat wykrywania zagrożeń i alertów oraz dowiedzieć się więcej o urządzeniach, na których twoja organizacja jest podatna na zagrożenia. |
-| **Kondycja** | Umożliwia wyświetlenie stanu kondycji usługi i zaplanowanie nadchodzących zmian. <br/>— Wybierz **pozycję Kondycja** usługi, aby wyświetlić stan kondycji Microsoft 365 usług uwzględnionych w subskrypcji Twojej organizacji. <br/>— Wybierz **pozycję Centrum wiadomości,** aby dowiedzieć się więcej na temat planowanych zmian i tego, czego można oczekiwać.  |
-| **Uprawnienia & ról** | Umożliwia przypisywanie uprawnień do osób w organizacji, które będą zarządzać zabezpieczeniami oraz wyświetlać zdarzenia i raporty w portalu Microsoft 365 Defender sieci. Ponadto możesz skonfigurować grupy urządzeń i zarządzać nimi w celu wsadunia urządzeń organizacji na urządzenia i przypisywania zasad ochrony przed zagrożeniami.  |
-| **Ustawienia** | Umożliwia edytowanie ustawień portalu usługi Microsoft 365 Defender usługi Microsoft Defender dla firm. Na przykład możesz korzystać z aplikacji (lub aplikacji) i urządzeń organizacji (nazywanych również punktami końcowymi). Można również zdefiniować reguły, takie jak reguły alertów i skonfigurować wskaźniki blokowania lub zezwalania na określone pliki lub procesy.  |
+| **Raporty** | Zawiera listę dostępnych raportów zabezpieczeń. Raporty te pozwalają przeglądać trendy zabezpieczeń, wyświetlać szczegółowe informacje na temat wykrywania zagrożeń i alertów oraz dowiedzieć się więcej o urządzeniach, które są narażone na zagrożenia w firmie. |
+| **Kondycja** | Umożliwia wyświetlenie stanu kondycji usługi i zaplanowanie nadchodzących zmian. <br/>— Wybierz **pozycję Kondycja** usługi, aby wyświetlić stan kondycji Microsoft 365 usług uwzględnionych w subskrypcji firmowej. <br/>— Wybierz **pozycję Centrum wiadomości,** aby dowiedzieć się więcej na temat planowanych zmian i tego, czego można oczekiwać.  |
+| **Uprawnienia & ról** | Umożliwia przypisywanie uprawnień osobom w firmie, które będą zarządzać zabezpieczeniami oraz wyświetlać zdarzenia i raporty w portalu Microsoft 365 Defender sieci. Ponadto możesz skonfigurować grupy urządzeń i zarządzać nimi w celu wsadu na urządzenia firmy i przypisywania zasad ochrony przed zagrożeniami.  |
+| **Ustawienia** | Umożliwia edytowanie ustawień portalu usługi Microsoft 365 Defender usługi Microsoft Defender dla firm. Na przykład możesz korzystać z aplikacji (lub aplikacji offboard) i urządzeń firmy (nazywanych również punktami końcowymi). Można również zdefiniować reguły, takie jak reguły alertów i skonfigurować wskaźniki blokowania lub zezwalania na określone pliki lub procesy.  |
 | **Więcej zasobów** | Przejdź do innych portali, takich jak Azure Active Directory. Pamiętaj, że portal Microsoft 365 Defender powinien spełniać Twoje potrzeby bez konieczności przechodzenia do innych portali. |
 
 ## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>Ukończenie modułu szkoleniowego na temat zdarzeń i akcji reagowania

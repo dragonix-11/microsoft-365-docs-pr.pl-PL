@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 2f6f2135e81bf99f6391b75067ad89d1af3a712c
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: be3dcfd23c0fb77604cec140a4b1d3606f6ee345
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468712"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513048"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego
 
@@ -85,6 +85,27 @@ Wszystkie nasze aktualizacje zawierają
 - Ulepszenia integracji (chmura, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Luty 2022 r. (platforma: 4.18.xxxx.xx | Aparat: 1.1.19000.8)</summary>
+
+&ensp;Wersja aktualizacji analizy zabezpieczeń: **1.357.x.x**<br/>
+&ensp;Opublikowano: **14 marca 2022 r**.<br/>
+&ensp;Platforma: **4.18.xxxx.xx**<br/>
+&ensp;Aparat: **1.1.19000.8**<br/>
+&ensp;Etap pomocy technicznej: **aktualizacje zabezpieczeń i krytyczne**<br/>
+
+Wersja aparatu: 1.1.19000.8 <br/>
+Wersja aktualizacji analizy zabezpieczeń: 1.357.x.x <br/>
+
+### <a name="whats-new"></a>Co nowego
+
+- Wkrótce
+
+### <a name="known-issues"></a>Znane problemy
+
+Nie ma żadnych znanych problemów
+
+<br/><br/>
+</details><details>
 <summary>Styczeń 2022 r. (platforma: 4.18.2201.10 | Aparat: 1.1.18900.2)</summary>
 
 &ensp;Wersja aktualizacji analizy zabezpieczeń: **1.357.8.0**<br/>
@@ -138,14 +159,21 @@ Wersja aparatu: 1.1.18800.4 Wersja aktualizacji zabezpieczeń: 1.355.2.0
 ### <a name="known-issues"></a>Znane problemy
 Nie ma żadnych znanych problemów
 <br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Poprzednie aktualizacje wersji: tylko pomoc techniczna w zakresie uaktualniania
+
+Po zwolnieniu nowej wersji pakietu pomoc techniczna dla dwóch poprzednich wersji zostanie ograniczona tylko do pomocy technicznej. Wersje starsze niż wymienione w tej sekcji i są dostępne tylko dla pomocy technicznej przy uaktualnieniu.<br/><br/>
+
+<details>
 <summary> Październik-2021 (platforma: 4.18.2110.6 | Aparat: 1.1.18700.4)</summary>
 
 &ensp;Wersja aktualizacji analizy zabezpieczeń: **1.353.3.0**<br/>
 &ensp;Opublikowano: **28 października 2021 r**.<br/>
 &ensp;Platforma: **4.18.2110.6**<br/>
 &ensp;Aparat: **1.1.18700.4**<br/>
-&ensp;Etap pomocy technicznej: **aktualizacje zabezpieczeń i krytyczne**<br/>
+&ensp;Etap pomocy technicznej: **pomoc techniczna w zakresie uaktualniania (tylko)**<br/>
 
 Wersja aparatu: 1.1.18700.4 Wersja aktualizacji analizy zabezpieczeń: 1.353.3.0
 
@@ -160,14 +188,7 @@ Wersja aparatu: 1.1.18700.4 Wersja aktualizacji analizy zabezpieczeń: 1.353.3.0
 ### <a name="known-issues"></a>Znane problemy
 Nie ma żadnych znanych problemów
 <br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Poprzednie aktualizacje wersji: tylko pomoc techniczna w zakresie uaktualniania
-
-Po zwolnieniu nowej wersji pakietu pomoc techniczna dla dwóch poprzednich wersji zostanie ograniczona tylko do pomocy technicznej. Wersje starsze niż wymienione w tej sekcji i są dostępne tylko dla pomocy technicznej przy uaktualnieniu.<br/><br/>
-
-<details>
+</details><details>
 <summary> Wrzesień-2021 (platforma: 4.18.2109.6 | Aparat: 1.1.18600.4)</summary>
 
 &ensp;Wersja aktualizacji analizy zabezpieczeń: **1.351.7.0**<br/>

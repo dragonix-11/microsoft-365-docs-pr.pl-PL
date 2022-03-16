@@ -18,12 +18,12 @@ ms.date: 03/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3a0701880a5712de4ec930e49397bf2ef4b8e637
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 25d01c597da0f3a3e108eeee27d3a0dfe5b58eb7
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468860"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512534"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi
 
@@ -153,13 +153,13 @@ W tabeli w tej sekcji podsumowano funkcje i możliwości, które aktywnie dział
  | [Ochrona sieci](network-protection.md)  | Tak | Nie | Nie | Nie | 
  | [Reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction.md)  | Tak | Nie | Nie  | Nie | 
  | [Ograniczona dostępność skanowania okresowego](limited-periodic-scanning-microsoft-defender-antivirus.md) | Nie | Nie | Tak | Nie | 
- | [Informacje dotyczące skanowania i wykrywania plików](review-scan-results-microsoft-defender-antivirus.md) | Tak | Tak | Nie | Tak | 
- | [Działania naprawcze w przypadku zagrożeń](configure-remediation-microsoft-defender-antivirus.md) | Tak | Zobacz <sup>notatkę [[5](#fn5)]</sup> | Nie | Tak | 
+ | [Informacje dotyczące skanowania i wykrywania plików](review-scan-results-microsoft-defender-antivirus.md) | Tak | Tak<sup>[[5](#fn5)]</sup> | Nie | Tak | 
+ | [Działania naprawcze w przypadku zagrożeń](configure-remediation-microsoft-defender-antivirus.md) | Tak | Tak | Nie | Tak | 
  | [Aktualizacje analizy zabezpieczeń](manage-updates-baselines-microsoft-defender-antivirus.md) | Tak | Tak | Nie | Tak | 
 
 (<a id="fn4">4</a>) Na ogół w sytuacji, Program antywirusowy Microsoft Defender jest w trybie pasywnym, ochrona w czasie rzeczywistym nie blokuje ani nie wymusza, nawet jeśli jest włączona i pasywna.
 
-(<a id="fn5">5</a>) Gdy Program antywirusowy Microsoft Defender tryb pasywny, funkcje rozwiązywania problemów z zagrożeniami są aktywne tylko podczas zaplanowanych skanowania lub skanowania na żądanie.
+(<a id="fn5">5</a>) Jeśli Program antywirusowy Microsoft Defender tryb pasywny, skanowanie nie jest zaplanowane.
 
 > [!NOTE]
 > [Microsoft 365 punktu końcowego](/microsoft-365/compliance/endpoint-dlp-learn-about) ochrona przed utratą danych nadal normalnie działa, gdy Program antywirusowy Microsoft Defender jest aktywny lub pasywny.

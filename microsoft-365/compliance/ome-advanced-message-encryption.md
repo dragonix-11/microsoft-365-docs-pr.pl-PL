@@ -9,19 +9,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 08/11/2021
+ms.date: 03/04/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Zaawansowane szyfrowanie wiadomości ułatwia organizacjom spełnienie wymagań dotyczących zgodności, umożliwiając administratorom jeszcze większe możliwości związane z chronionymi wiadomościami.
-ms.openlocfilehash: 9e0f1933d68ba696e6446b321857eb3f6836f378
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d09481b5a5f78d9dc4e5725896297a6881e6172
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986409"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512548"
 ---
 # <a name="advanced-message-encryption"></a>Zaawansowane szyfrowanie wiadomości
 
@@ -39,7 +39,7 @@ Twoja organizacja musi mieć subskrypcję, która obejmuje Zaawansowane szyfrowa
 
 Jeśli nie masz jeszcze Szyfrowanie wiadomości usługi Office 365, zobacz [Konfigurowanie nowych i Szyfrowanie wiadomości usługi Office 365 możliwości](set-up-new-message-encryption-capabilities.md).
 
-Dzięki funkcji zaawansowanego szyfrowania wiadomości możesz nie ograniczać się do jednego szablonu  marki. Zamiast tego można utworzyć wiele szablonów marki i używać ich. Aby uzyskać informacje, [zobacz Dodawanie marki organizacji do zaszyfrowanych wiadomości](add-your-organization-brand-to-encrypted-messages.md). W przypadku używania niestandardowych  brandingów adresaci zewnętrzni otrzymają powiadomienie e-mail zawierające link do portalu OME. Reguła przepływu poczty e-mail określa, którego szablonu  brandingu używają wiadomości e-mail z powiadomieniem i portalu OME. Dzięki temu bezpieczna zawartość nie jest wysyłana poza organizację.
+Dzięki funkcji zaawansowanego szyfrowania wiadomości możesz nie ograniczać się do jednego szablonu  marki. Zamiast tego można utworzyć wiele szablonów marki i używać ich. Dodanie niestandardowych  brandingów umożliwia również śledzenie odwołań zaszyfrowanych wiadomości. Aby uzyskać informacje, [zobacz Dodawanie marki organizacji do zaszyfrowanych wiadomości](add-your-organization-brand-to-encrypted-messages.md). W przypadku używania niestandardowych  brandingów adresaci zewnętrzni otrzymają powiadomienie e-mail zawierające link do portalu OME. Reguła przepływu poczty e-mail określa, którego szablonu  brandingu używają wiadomości e-mail z powiadomieniem i portalu OME. Dzięki temu bezpieczna zawartość nie jest wysyłana poza organizację.
 
 Możesz odwołać wiadomości i zastosować daty wygaśnięcia tylko do wiadomości, które użytkownicy otrzymują za pośrednictwem portalu. Innymi słowy, wiadomość e-mail z zastosowanym niestandardowym szablonem  marki. Aby uzyskać więcej informacji i przykład, zobacz wskazówki w tece Zapewnianie, że wszyscy adresaci zewnętrzni używają [portalu OME do odczytywania zaszyfrowanej poczty](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail).
 

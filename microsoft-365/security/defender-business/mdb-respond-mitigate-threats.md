@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 3131d4f8742d8fe794c71a62f93e10433aada33c
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: ab6a5eb9f4a36677df467ae5f773e29d240ffff8
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450580"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512324"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm
 
@@ -50,7 +50,7 @@ Portal Microsoft 365 Defender umożliwia Twojemu zespołowi zabezpieczeń reagow
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Zrzut ekranu przedstawiający spis urządzeń":::
 
-   Na **stronie Spis urządzeń** jest wymieniona urządzenia organizacji wraz z ich poziomem ryzyka i poziomem ekspozycji.
+   Na **stronie Spis urządzeń** jest wymieniona urządzenia firmowe wraz z ich poziomem ryzyka i poziomem ekspozycji.
 
 4. Wybierz element, na przykład urządzenie. Zostanie otwarte okienko wysuwu z większej liczby alertów i zdarzeń wygenerowanych dla tego elementu, jak pokazano na poniższej ilustracji:  
 

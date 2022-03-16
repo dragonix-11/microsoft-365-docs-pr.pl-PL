@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 55b49393e2b9115e4617b617d14ba495a95d983c
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 088adc0683954dff8a0b4c978d434a1526a1a7de
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449950"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513008"
 ---
 # <a name="reports-in-microsoft-defender-for-business"></a>Raporty w programie Microsoft Defender dla firm
 
@@ -38,11 +38,11 @@ W portalu Microsoft 365 Defender () dostępnych jest kilka raportów[https://sec
 
 |Raport  |Opis  |
 |---------|---------|
-| **Raport zabezpieczeń**  | Raport zabezpieczeń zawiera informacje o tożsamościach, urządzeniach i aplikacjach organizacji. Aby uzyskać dostęp do tego raportu, w okienku nawigacji wybierz raport **ReportsGeneralSecurity** >  > . <br/><br/>**PORADA** Podobne informacje można wyświetlić na stronie głównej portalu Microsoft 365 Defender sieci Web ([https://security.microsoft.com](https://security.microsoft.com)). |
+| **Raport zabezpieczeń**  | Raport zabezpieczeń zawiera informacje o tożsamościach, urządzeniach i aplikacjach Firmy. Aby uzyskać dostęp do tego raportu, w okienku nawigacji wybierz raport **ReportsGeneralSecurity** >  > . <br/><br/>**PORADA** Podobne informacje można wyświetlić na stronie głównej portalu Microsoft 365 Defender sieci Web ([https://security.microsoft.com](https://security.microsoft.com)). |
 | **Ochrona przed zagrożeniami**  | Raport ochrony przed zagrożeniami zawiera informacje na temat alertów i trendów alertów. Kolumna **Trendy alertów** umożliwia wyświetlanie informacji o alertach, które były wyzwalane w ciągu ostatnich 30 dni. Kolumna **Stan alertu umożliwia** wyświetlanie aktualnych informacji migawkowych o alertach, takich jak kategorie nierozpoznanych alertów i ich klasyfikacja. Aby uzyskać dostęp do tego raportu, w okienku nawigacji wybierz pozycję **ReportsEndpointsThreat** >  **protection (Ochrona raportówendpoints** > ). <br/><br/>**PORADA**: Za pomocą listy Zdarzenia można **także** wyświetlać informacje o alertach. W okienku nawigacji wybierz pozycję **Zdarzenia** , aby wyświetlić bieżące zdarzenia i zarządzać nimi. Aby dowiedzieć się więcej, [zobacz Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md). |
-| **Kondycja i zgodność urządzenia** | Raport kondycji i zgodności urządzeń zawiera informacje na temat kondycji i trendów urządzeń. Ten raport pozwala określić, czy czujniki usługi Defender dla firm działają poprawnie na urządzeniach i czy mają być Program antywirusowy Microsoft Defender. Aby uzyskać dostęp do tego raportu, w okienku nawigacji wybierz pozycję ReportsEndpointsDevice  > **health and compliance (Kondycja i zgodność aplikacji ReportsEndpointsDevice** > ). <br/><br/>**PORADA**: Za **pomocą listy Spis** urządzeń możesz wyświetlić informacje o urządzeniach w Twojej organizacji. W okienku nawigacji wybierz pozycję **Spis urządzeń**. Aby dowiedzieć się więcej, zobacz [Zarządzanie urządzeniami w programie Microsoft Defender dla firm](mdb-manage-devices.md). |
-| **Urządzenia narażone na zagrożenia** | Raport o urządzeniach, które są narażone na zagrożenia, zawiera informacje o urządzeniach i trendach. Kolumna **Trendy umożliwia** wyświetlanie informacji o urządzeniach, na których były alerty z ostatnich 30 dni. Kolumna **Stan umożliwia wyświetlanie** bieżących informacji migawki o urządzeniach z alertami. Aby uzyskać dostęp do tego raportu, w okienku nawigacji wybierz pozycję **ReportsEndpointsVulnerable** >  >  **devices ..**<br/><br/>**PORADA**: Za **pomocą listy Spis** urządzeń możesz wyświetlić informacje o urządzeniach w Twojej organizacji. W okienku nawigacji wybierz pozycję **Spis urządzeń**. Aby dowiedzieć się więcej, zobacz [Zarządzanie urządzeniami w programie Microsoft Defender dla firm](mdb-manage-devices.md). |
-| **Ochrona sieci Web** | Raport ochrony sieci Web przedstawia próby uzyskania dostępu do witryn wyłudzających informacje, wektorów złośliwego oprogramowania, witryn wykorzystujących luki w witrynach, witryn niezaufanych lub o niskiej reputacji oraz witryn jawnie zablokowanych. Kategorie blokowanych witryn obejmują między innymi treści dla dorosłych, witryny rozrywki i witryny odpowiedzialności prawnej. Aby uzyskać dostęp do tego raportu, w okienku nawigacji wybierz pozycję **ReportsEndpointsWeb** protection (Ochrona sieci **Web w programie** **ReportsEndpoints** >  > ).<br/><br/>**PORADA**: Jeśli ochrona sieci Web dla organizacji nie została jeszcze skonfigurowana, wybierz **Ustawienia sieci Web** w widoku raportu. Następnie w obszarze **Reguły** wybierz pozycję **Filtrowanie zawartości sieci Web**. Aby dowiedzieć się więcej o filtrowaniu zawartości sieci Web, zobacz [Filtrowanie zawartości sieci Web](../defender-endpoint/web-content-filtering.md). |
+| **Kondycja i zgodność urządzenia** | Raport kondycji i zgodności urządzeń zawiera informacje na temat kondycji i trendów urządzeń. Ten raport pozwala określić, czy czujniki usługi Defender dla firm działają poprawnie na urządzeniach i czy mają być Program antywirusowy Microsoft Defender. Aby uzyskać dostęp do tego raportu, w okienku nawigacji wybierz pozycję ReportsEndpointsDevice  > **health and compliance (Kondycja i zgodność aplikacji ReportsEndpointsDevice** > ). <br/><br/>**PORADA**: Za **pomocą listy Spis** urządzeń możesz wyświetlić informacje o urządzeniach firmy. W okienku nawigacji wybierz pozycję **Spis urządzeń**. Aby dowiedzieć się więcej, zobacz [Zarządzanie urządzeniami w programie Microsoft Defender dla firm](mdb-manage-devices.md). |
+| **Urządzenia narażone na zagrożenia** | Raport o urządzeniach, które są narażone na zagrożenia, zawiera informacje o urządzeniach i trendach. Kolumna **Trendy umożliwia** wyświetlanie informacji o urządzeniach, na których były alerty z ostatnich 30 dni. Kolumna **Stan umożliwia wyświetlanie** bieżących informacji migawki o urządzeniach z alertami. Aby uzyskać dostęp do tego raportu, w okienku nawigacji wybierz pozycję **ReportsEndpointsVulnerable** >  >  **devices ..**<br/><br/>**PORADA**: Za **pomocą listy Spis** urządzeń możesz wyświetlić informacje o urządzeniach firmy. W okienku nawigacji wybierz pozycję **Spis urządzeń**. Aby dowiedzieć się więcej, zobacz [Zarządzanie urządzeniami w programie Microsoft Defender dla firm](mdb-manage-devices.md). |
+| **Ochrona sieci Web** | Raport ochrony sieci Web przedstawia próby uzyskania dostępu do witryn wyłudzających informacje, wektorów złośliwego oprogramowania, witryn wykorzystujących luki w witrynach, witryn niezaufanych lub o niskiej reputacji oraz witryn jawnie zablokowanych. Kategorie blokowanych witryn obejmują między innymi treści dla dorosłych, witryny rozrywki i witryny odpowiedzialności prawnej. Aby uzyskać dostęp do tego raportu, w okienku nawigacji wybierz pozycję **ReportsEndpointsWeb** protection (Ochrona sieci **Web w programie** **ReportsEndpoints** >  > ).<br/><br/>**PORADA**: Jeśli ochrona sieci Web w firmie nie została jeszcze skonfigurowana, wybierz **Ustawienia sieci Web** w widoku raportu. Następnie w obszarze **Reguły** wybierz pozycję **Filtrowanie zawartości sieci Web**. Aby dowiedzieć się więcej o filtrowaniu zawartości sieci Web, zobacz [Filtrowanie zawartości sieci Web](../defender-endpoint/web-content-filtering.md). |
 
 >
 > **Masz minutę?**

@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Administratorzy mogą nauczyć się tworzenia reguł przepływu poczty e-mail (reguł transportu) do szyfrowania i odszyfrowywania wiadomości przy użyciu Szyfrowanie wiadomości usługi Office 365.
-ms.openlocfilehash: c546c151b7bcb1720f9903d43b8d310650f92d35
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: bb50ed5d2b22fd74d4a6f88eba29f82d10be1f50
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017734"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512814"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definiowanie reguł przepływu poczty e-mail w celu szyfrowania wiadomości e-mail
 
@@ -103,7 +103,7 @@ Za pomocą Aplikacji EAC możesz zdefiniować reguły przepływu poczty e-mail w
 
 ### <a name="use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-the-new-ome-capabilities"></a>Tworzenie reguły w celu usunięcia szyfrowania z wiadomości e-mail przy użyciu Aplikacji programu EAC z nowymi możliwościami usługi OME
 
-Możesz usunąć szyfrowanie stosowane przez Twoją organizację.
+Możesz usunąć szyfrowanie wiadomości, które były stosowane przez Twoją organizację. Możesz również usunąć szyfrowanie z zaszyfrowanych załączników, aby zapewnić, że cała wiadomość e-mail nie będzie chronić.
 
 1. W przeglądarce internetowej, używając konta służbowego, które otrzymało uprawnienia administratora globalnego[, zaloguj](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser) się w celu Office 365.
 
@@ -117,9 +117,11 @@ Możesz usunąć szyfrowanie stosowane przez Twoją organizację.
 
 6. W **polecej Zastosuj tę regułę**, jeśli wybierz warunki, w których szyfrowanie ma zostać usunięte z wiadomości. Dodaj **Nadawca znajduje się wewnątrz** \> **organizacji w celu** wysyłania poczty _lub_ **Adresat** \> znajduje się wewnątrz organizacji **w celu** odbierania poczty.
 
-7. W **poniższej czynności** wybierz **pozycję Modyfikuj zabezpieczenia** \> wiadomości Usuń **Szyfrowanie wiadomości usługi Office 365 i ochrony praw**.
+7. W **aplikacji Wykonaj następujące czynności** wybierz pozycję Modyfikuj **zabezpieczenia** \> wiadomości Usuń **Szyfrowanie wiadomości usługi Office 365 i ochrony praw, które są stosowane w organizacji**.
 
-8. Wybierz **Zapisz**.
+8. (Opcjonalnie) W **aplikacji Wykonaj następujące czynności** wybierz pozycję **Modyfikuj zabezpieczenia** \> wiadomości Usuń ochronę przed prawami do załączników **zastosowaną przez organizację**.
+
+Zapisz regułę.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Tworzenie reguł przepływu poczty e-mail Szyfrowanie wiadomości usługi Office 365 bez nowych możliwości
 

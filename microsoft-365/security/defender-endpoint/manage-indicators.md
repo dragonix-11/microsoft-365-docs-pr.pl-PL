@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c241438e2cd9a0a5bd9bb018d671340c22ef7d0d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 00685ee4540949028b8bb438dd8a4965e2e9a5e7
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997770"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513062"
 ---
 # <a name="create-indicators"></a>Tworzenie wskaźników
 
@@ -59,7 +59,7 @@ Podczas tworzenia nowego wskaźnika (IoC) dostępna jest co najmniej jedna z nas
 
 - Zezwalaj — na Twoich urządzeniach będzie można uruchamiać urządzenie IoC.
 - Inspekcja — po uruchomienie aplikacji IoC zostanie wyzwolony alert.
-- Ostrzegaj — system IoC wyświetli monit z ostrzeżeniem, że użytkownik może obejść (tylko usługa Defender dla aplikacji w chmurze)
+- Ostrzegaj — WiAD wyświetli monit z ostrzeżeniem, że użytkownik może pominąć 
 - Blokuj wykonywanie — nie będzie można uruchomić programu IoC.
 - Blokowanie i rozwiązywanie problemów — centrum IoC nie będzie dozwolone, a do centrum IoC zostanie zastosowana akcja rozwiązywania problemów.
 
@@ -77,8 +77,8 @@ W poniższej tabeli przedstawiono dokładnie, które akcje są dostępne dla ka�
 | Typ IoC | Dostępne akcje |
 |:---|:---|
 | [Pliki](indicator-file.md) | Zezwalaj <br> Inspekcja <br> Blokowanie i rozwiązywanie problemów |
-| [Adresy IP](indicator-ip-domain.md) | Zezwalaj <br> Inspekcja <br> Blokuj wykonywanie |
-| [Adresy URL i domeny](indicator-ip-domain.md) | Zezwalaj <br> Inspekcja <br> Blokuj wykonywanie |
+| [Adresy IP](indicator-ip-domain.md) | Zezwalaj <br> Inspekcja <br> Blokuj wykonywanie <br> Ostrzegaj |
+| [Adresy URL i domeny](indicator-ip-domain.md) | Zezwalaj <br> Inspekcja <br> Blokuj wykonywanie<br> Ostrzegaj |
 | [Certyfikaty](indicator-certificates.md) | Zezwalaj <br> Blokowanie i rozwiązywanie problemów |
 
 Funkcjonalność istniejących wcześniej komputerów IoC nie zmieni się. Nazwy wskaźników zostały jednak zmienione tak, aby były zgodne z obecnie obsługiwanymi akcjami odpowiedzi:

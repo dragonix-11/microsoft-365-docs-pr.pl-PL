@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 5673ac38577dbd87019a954eb388d6ab8f050328
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: bccbc7cf33d8be285bac801512de974f0277cf06
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504764"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512464"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Wyświetlanie i edytowanie zasad zabezpieczeń oraz ustawień w programie Microsoft Defender dla firm
 
@@ -33,11 +33,11 @@ ms.locfileid: "63504764"
 
 ## <a name="overview"></a>Omówienie
 
-Po dojecheniu urządzeń organizacji do usługi Microsoft Defender dla Firm następnym krokiem jest wyświetlenie i w razie potrzeby edytowanie zasad zabezpieczeń oraz ustawień. Zasady zabezpieczeń to między innymi:
+Po dojecheniu urządzeń firmy do usługi Microsoft Defender dla Firm następnym krokiem jest wyświetlenie i w razie potrzeby edytowanie zasad zabezpieczeń oraz ustawień. Zasady zabezpieczeń to między innymi:
 
-- **[Zasady ochrony następnej generacji](#view-or-edit-your-next-generation-protection-policies)**, które określają ochronę przed oprogramowaniem antywirusowym i złośliwym oprogramowaniem dla urządzeń organizacji
+- **[Zasady ochrony następnej generacji](#view-or-edit-your-next-generation-protection-policies)**, które określają ochronę antywirusową i ochrony przed złośliwym oprogramowaniem dla urządzeń firmowych
 
-- **[Ochrona zapory i reguły](#view-or-edit-your-firewall-policies-and-custom-rules)**, które określają, jaki ruch sieciowy może przepływać do lub z urządzeń organizacji
+- **[Ochrona zapory i reguły](#view-or-edit-your-firewall-policies-and-custom-rules)**, które określają, jaki ruch sieciowy może przepływać do lub z urządzeń firmy
 
 - **[Filtrowanie zawartości sieci](#set-up-web-content-filtering)** Web, które uniemożliwia użytkownikom odwiedzanie określonych witryn internetowych (adresów URL) w zależności od kategorii, takich jak zawartość dla dorosłych lub odpowiedzialność odpowiedzialność za nie.
 
@@ -74,8 +74,8 @@ W poniższej tabeli przedstawiono sposób zarządzania zasadami i urządzeniami 
 
 | Opcja | Opis |
 |:---|:---|
-| **Korzystanie z Microsoft 365 Defender (***zalecane*) | Portal Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) może być twoją jedną usługą do zarządzania urządzeniami, zasadami zabezpieczeń i ustawieniami zabezpieczeń organizacji. Możesz uzyskać dostęp do zasad i ustawień zabezpieczeń, korzystać z [](mdb-view-tvm-dashboard.md)pulpitu nawigacyjnego zarządzania & zagrożeniami i lukami w zabezpieczeniach oraz wyświetlać wszystkie zdarzenia i zarządzać nimi w jednym miejscu.[](mdb-view-manage-incidents.md) <br/><br/>Jeśli korzystasz z programu Microsoft Endpoint Manager, urządzenia, które są przez Ciebie dołączane do usługi Defender dla firm i zasady zabezpieczeń, są widoczne w programie Endpoint Manager. Aby dowiedzieć się więcej, zobacz następujące artykuły:<br/><br/>- [Domyślne ustawienia i ustawienia usługi Defender dla firm Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Zapora w programie Microsoft Defender dla firm](mdb-firewall.md)   |
-| **Używanie Microsoft Endpoint Manager** | Jeśli Twoja organizacja używa już programu Endpoint Manager (który obejmuje program Microsoft Intune) do zarządzania zasadami zabezpieczeń, możesz nadal używać programu Endpoint Manager do zarządzania urządzeniami i zasadami zabezpieczeń. Aby dowiedzieć się więcej, zobacz [Zarządzanie zabezpieczeniami urządzeń za pomocą zasad zabezpieczeń punktów końcowych w programie Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Jeśli zdecydujesz się na przełączenie do uproszczonego procesu konfiguracji w programie [Defender](mdb-simplified-configuration.md) dla firm, zostanie wyświetlony monit o usunięcie wszystkich istniejących zasad zabezpieczeń w programie Endpoint Manager w celu uniknięcia konfliktów [zasad](mdb-troubleshooting.yml) później. |
+| **Korzystanie z Microsoft 365 Defender (***zalecane*) | Portal Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) może być twoją jedną platformą do zarządzania urządzeniami firmy, zasadami zabezpieczeń i ustawieniami zabezpieczeń. Możesz uzyskać dostęp do zasad i ustawień zabezpieczeń, korzystać z [](mdb-view-tvm-dashboard.md)pulpitu nawigacyjnego zarządzania & zagrożeniami i lukami w zabezpieczeniach oraz wyświetlać wszystkie zdarzenia i zarządzać nimi w jednym miejscu.[](mdb-view-manage-incidents.md) <br/><br/>Jeśli korzystasz z programu Microsoft Endpoint Manager, urządzenia, które są przez Ciebie dołączane do usługi Defender dla firm i zasady zabezpieczeń, są widoczne w programie Endpoint Manager. Aby dowiedzieć się więcej, zobacz następujące artykuły:<br/><br/>- [Domyślne ustawienia i ustawienia usługi Defender dla firm Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Zapora w programie Microsoft Defender dla firm](mdb-firewall.md)   |
+| **Używanie Microsoft Endpoint Manager** | Jeśli Twoja firma używa już programu Endpoint Manager (który obejmuje Microsoft Intune) do zarządzania zasadami zabezpieczeń, możesz nadal używać programu Endpoint Manager do zarządzania urządzeniami i zasadami zabezpieczeń. Aby dowiedzieć się więcej, zobacz [Zarządzanie zabezpieczeniami urządzeń za pomocą zasad zabezpieczeń punktów końcowych w programie Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Jeśli zdecydujesz się na przełączenie do uproszczonego procesu konfiguracji w programie [Defender](mdb-simplified-configuration.md) dla firm, zostanie wyświetlony monit o usunięcie wszystkich istniejących zasad zabezpieczeń w programie Endpoint Manager w celu uniknięcia konfliktów [zasad](mdb-troubleshooting.yml) później. |
 
 > [!IMPORTANT]
 > Jeśli zarządzasz zasadami zabezpieczeń w portalu Microsoft 365 Defender, możesz je wyświetlać w programie Endpoint Manager, wyszczególnionych jako zasady oprogramowania antywirusowego lub zapory. Podczas wyświetlania zasad zapory w Endpoint Manager na liście są wymienione dwie zasady: jedna zasady ochrony zapory, a druga dla reguł niestandardowych.
@@ -112,7 +112,7 @@ Filtrowanie zawartości sieci Web umożliwia Twojemu zespołowi zabezpieczeń ś
 
 - Niekategoryzowane: witryny, które nie mają zawartości lub są nowo zarejestrowane
 
-Nie wszystkie witryny internetowe w tych kategoriach są złośliwe, ale mogą być problematyczne dla Twojej organizacji ze względu na przepisy dotyczące zgodności, użycie przepustowości lub inne problemy. Ponadto można tworzyć zasady tylko do inspekcji, aby lepiej zrozumieć, czy zespół zabezpieczeń ma blokować kategorie witryn internetowych.
+Nie wszystkie witryny internetowe w tych kategoriach są złośliwe, ale mogą być problematyczne dla Twojej firmy z powodu przepisów dotyczących zgodności z przepisami, wykorzystania przepustowości lub innych kwestii. Ponadto można tworzyć zasady tylko do inspekcji, aby lepiej zrozumieć, czy zespół zabezpieczeń ma blokować kategorie witryn internetowych.
 
 Filtrowanie zawartości sieci Web jest dostępne w głównych przeglądarkach internetowych, a bloki są wykonywane przez filtr Windows Defender SmartScreen (Microsoft Edge) i network Protection (Chrome, Firefox, Firefox, Firefox i Opera). Aby uzyskać więcej informacji, [zobacz Wymagania wstępne filtrowania zawartości sieci Web](../defender-endpoint/web-content-filtering.md#prerequisites).
 

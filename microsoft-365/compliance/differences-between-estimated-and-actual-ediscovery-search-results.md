@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Dowiedz się, dlaczego szacowane i rzeczywiste wyniki wyszukiwania mogą się różnić w wyszukiwaniu przy użyciu narzędzi zbierania elektronicznych materiałów dowodowych w Office 365.
-ms.openlocfilehash: 16b63b96421cfbf3f9d67e1373061b49ff5db225
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e9dd47f8f2485fe31044cf52ae8e04e65eeaac60
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032113"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512952"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Różnice między szacowanym a rzeczywistymi wynikami wyszukiwania zbierania elektronicznych materiałów dowodowych
 
@@ -73,7 +73,10 @@ Oto kilka powodów tych różnic:
 
 - **Wersje dokumentów w SharePoint i OneDrive**. Podczas wyszukiwania SharePoint witryn i kont OneDrive nie uwzględnia się wielu wersji dokumentu w liczniku szacowanych wyników wyszukiwania. Możesz jednak uwzględnić wszystkie wersje dokumentów podczas eksportowania wyników wyszukiwania. Jeśli podczas eksportowania wyników wyszukiwania uwzględnisz wersje dokumentów, rzeczywista liczba (i całkowity rozmiar) eksportowanych elementów zostanie zwiększona.
 
-- **SharePoint folderów**. Jeśli nazwa folderów w programie SharePoint pasuje do zapytania wyszukiwania, szacowana wartość wyszukiwania będzie uwzględniać ich liczbę (ale nie elementy w tych folderach). Podczas eksportowania wyników wyszukiwania elementy w folderze są eksportowane, ale rzeczywiste foldery nie są eksportowane. W wyniku tego liczba eksportowanych elementów będzie większa niż liczba szacowanych wyników wyszukiwania. Jeśli folder jest pusty, liczba wyeksportowanych wyników wyszukiwania zostanie zmniejszona o jeden element, ponieważ rzeczywisty folder nie jest eksportowany.
+- **SharePoint folderów**. Jeśli nazwa folderów w programie SharePoint pasuje do zapytania wyszukiwania, szacowana wartość wyszukiwania będzie uwzględniać ich liczbę (ale nie elementy w tych folderach). Podczas eksportowania wyników wyszukiwania elementy w folderze są eksportowane, ale rzeczywisty folder nie jest eksportowany. W efekcie liczba eksportowanych elementów będzie większa niż liczba szacowanych wyników wyszukiwania. Jeśli folder jest pusty, liczba wyeksportowanych wyników wyszukiwania zostanie zmniejszona o jeden element, ponieważ rzeczywisty folder nie jest eksportowany.
+
+   > [!NOTE]
+   > W przypadku uruchamiania wyszukiwania opartego na kwerendzie możesz wykluczyć foldery SharePoint, dodając do zapytania następujący warunek: `NOT(ContentType:folder)`.
 
 - **SharePoint listy.** Jeśli nazwa listy SharePoint odpowiada zapytaniu wyszukiwania, szacowany czas wyszukiwania będzie uwzględniać liczbę wszystkich elementów na liście. Podczas eksportowania wyników wyszukiwania lista (i elementy listy) jest eksportowana jako pojedynczy plik CSV. Zmniejszy to rzeczywistą liczbę faktycznie wyeksportowanych elementów. Jeśli lista zawiera załączniki, załączniki zostaną wyeksportowane jako osobne dokumenty, co spowoduje również zwiększenie liczby eksportowanych elementów.
 

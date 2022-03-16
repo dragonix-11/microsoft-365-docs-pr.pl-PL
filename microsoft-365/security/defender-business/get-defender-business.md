@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 4f92c50ad971de439541a7b8ea2e8f9fb5312c48
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: deae4e7449f142cbdbb9ef4d41953824499bedca
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449403"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512688"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Uzyskaj usługę Microsoft Defender dla firm
 
@@ -80,7 +80,7 @@ Poniżej opisano, jak się zarejestrować:
 
 4. Wypełnij formularz z informacjami kontaktowymi. 
 
-   - Jeśli jesteś klientem, który współpracuje z partnerem firmy Microsoft, w polu Inne wpisz  nazwę organizacji tego partnera. Następnie wybierz pozycję **Submit** (Prześlij).
+   - Jeśli jesteś klientem, który współpracuje z partnerem firmy Microsoft, w polu Inne wpisz  nazwę firmy tego partnera. Następnie wybierz pozycję **Submit** (Prześlij).
    - Jeśli jesteś partnerem firmy Microsoft, koniecznie wskaż typ współpracy i informacje o klientach, z których zamierzasz współpracować.
 
 5. Po zakończeniu wypełniania formularza wybierz pozycję **Prześlij**.
@@ -103,7 +103,7 @@ Gdy wszystko będzie gotowe do rozpoczęcia okresu próbnego, będziesz pracowa�
 | The centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Skorzystaj z centrum administracyjne platformy Microsoft 365, aby aktywować wersję próbną i zalogować się po raz pierwszy.<br/><br/> Za pomocą tego centrum administracyjne platformy Microsoft 365: <br/>— Dodawanie lub usuwanie użytkowników<br/>— Przypisywanie licencji użytkowników<br/>- Wyświetlanie produktów i usług<br/>— Wykonywanie zadań konfiguracyjnych dla Microsoft 365 subskrypcji <br/><br/> Aby dowiedzieć się więcej, zobacz [Omówienie centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
 | Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Użyj portalu Microsoft 365 Defender, aby skonfigurować usługę Defender dla firm. <br/><br/>Za pomocą portalu Microsoft 365 Defender będziesz: <br/>- Wyświetlanie urządzeń i zasad ochrony urządzeń<br/>— Wyświetlaj wykryte zagrożenia i podejmiesz działania<br/>- Wyświetlanie zaleceń dotyczących zabezpieczeń i zarządzanie ustawieniami zabezpieczeń <br/><br/>Aby dowiedzieć się więcej, [zobacz Rozpoczynanie korzystania z Microsoft 365 Defender usługi](mdb-get-started.md).        |
 
-Jeśli Twoja organizacja używa programu Microsoft 365 Business Premium, to masz Microsoft Intune (część programu Microsoft Endpoint Manager) i być może korzystasz z centrum Microsoft Endpoint Manager administracyjnego ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager umożliwia również zarządzanie urządzeniami i konfigurowanie ustawień zabezpieczeń. Aby dowiedzieć się więcej, [zobacz Microsoft Intune jest dostawcą usługi MDM i mam dla Twoich urządzeń](/mem/intune/fundamentals/what-is-intune).
+Jeśli Twoja firma korzysta z usługi Microsoft 365 Business Premium, to masz Microsoft Intune (część usługi Microsoft Endpoint Manager) i możesz korzystać z centrum administracyjnego usługi Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager umożliwia również zarządzanie urządzeniami i konfigurowanie ustawień zabezpieczeń. Aby dowiedzieć się więcej, [zobacz Microsoft Intune jest dostawcą usługi MDM i mam dla Twoich urządzeń](/mem/intune/fundamentals/what-is-intune).
 
 ## <a name="activate-your-trial"></a>Aktywowanie wersji próbnej
 

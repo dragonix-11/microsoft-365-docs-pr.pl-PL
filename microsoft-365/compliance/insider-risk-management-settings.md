@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 62616ed20513ee023986525b4f097c96ae3107ba
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f80ab9fcb0a3e057a20c22ff05c3a960cdf7eab4
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330611"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512938"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Wprowadzenie do ustawień zarządzania ryzykiem w niejawnym programie testów
 
@@ -37,6 +37,7 @@ Ustawienia zarządzania ryzykiem w niejawnym programie testów mają zastosowani
 - przepływy Power Automate (wersja zapoznawcza)
 - Microsoft Teams (wersja zapoznawcza)
 - Analiza
+- Powiadomienia administratora
 
 Przed rozpoczęciem i utworzeniem zasad zarządzania ryzykiem w niejawnym programie testów należy zrozumieć te ustawienia i wybrać poziomy ustawień najlepiej zgodne z potrzebami organizacji w zakresie zgodności.
 
@@ -530,7 +531,7 @@ Analizy pod poszukiwaniu zdarzeń aktywności ryzyka z kilku źródeł ułatwiaj
 - **Azure Active Directory**: Uwzględniane we wszystkich skanach historia Azure Active Directory pomaga identyfikować ryzykowne działania związane z użytkownikami z usuniętymi kontami użytkowników.
 - **Microsoft 365 danych HR**: Jeśli łącznik kadr jest skonfigurowany, zdarzenia łącznika kadr pomagają identyfikować ryzykowne działania skojarzone z użytkownikami, którzy mają ponowne przypisanie lub zbliżające się daty zakończenia.
 
-Analizy analiz na podstawie skanów są oparte na takich samych sygnałach aktywności ryzyka, jakie zostały użyte przez zasady zarządzania ryzykiem w ramach niejawnego programu testów i raportują wyniki na podstawie zarówno pojedynczych, jak i sekwencji działań użytkownika. Jednak wyniki oceniania ryzyka dla analiz są oparte na do 30-dniowej aktywności, natomiast zasady ryzyka niejawnego programu testów korzystają z codziennej aktywności na podstawie szczegółowych informacji. Po włączeniu i uruchomieniu analizy w organizacji po raz pierwszy zobaczysz wyniki skanowania dla jednego dnia. Jeśli pozostawisz włączoną analizę, zobaczysz wyniki każdego dziennego skanowania dodane do raportów szczegółowych dla maksymalnego zakresu działań z poprzednich 30 dni.
+Analizy analiz na podstawie skanów są oparte na takich samych sygnałach aktywności ryzyka, jakie zostały użyte przez zasady zarządzania ryzykiem w ramach niejawnego programu testów i raportują wyniki na podstawie zarówno pojedynczych, jak i sekwencji działań użytkownika. Jednak wyniki oceniania ryzyka dla analiz są oparte na maksymalnie 10-dniowej aktywności, natomiast zasady ryzyka niejawnego programu testów korzystają z codziennej aktywności na podstawie szczegółowych informacji. Po włączeniu i uruchomieniu analizy w organizacji po raz pierwszy zobaczysz wyniki skanowania dla jednego dnia. Jeśli pozostawisz włączoną analizę, zobaczysz wyniki każdego dziennego skanowania dodane do raportów szczegółowych dla maksymalnego zakresu działań z poprzednich 10 dni.
 
 ### <a name="enable-analytics-and-start-your-scan"></a>Włączanie analizy i rozpoczynanie skanowania
 
@@ -545,7 +546,9 @@ Wykonaj poniższe czynności, aby włączyć analizę ryzyka niejawnego programu
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>Wyświetlanie szczegółowych informacji z analiz i tworzenie nowych zasad
 
-Po zakończeniu pierwszego skanowania analizy dla organizacji możesz wyświetlić szczegółowe informacje i zalecenia dotyczące potencjalnie ryzykownych działań ze strony użytkowników. Codzienne skanowania będą kontynuowane, chyba że wyłączysz analizę dla swojej organizacji. Aby wyświetlić potencjalne zagrożenia dla organizacji, przejdź do karty **Przegląd** i wybierz pozycję **Wyświetl** wyniki na karcie **Analiza** ryzyka niejawnego programu testów. Jeśli skanowanie w twojej organizacji nie jest ukończone, zostanie wyświetlony komunikat informujący, że skanowanie jest nadal aktywne.
+Po zakończeniu pierwszego skanowania analizy dla organizacji członkowie grupy ról Administrator zarządzania ryzykiem  w ramach niejawnego programu testów będą automatycznie otrzymywać powiadomienia e-mail i mogą wyświetlać początkowe analizy i zalecenia dotyczące potencjalnie ryzykownych działań ze strony użytkowników. Codzienne skanowanie jest kontynuowane, chyba że wyłączysz analizę dla swojej organizacji. Powiadomienia e-mail dla administratorów są udostępniane dla każdej z trzech kategorii w zakresie na analizy (wycieki danych, kradzieże i exszybki) po pierwszym wystąpieniu aktywności w organizacji. Powiadomienia e-mail nie są wysyłane do administratorów w celu wykrywania działań następczych wynikających z codziennych skanów.  >  Jeśli analiza w zarządzaniu ryzykiem w ramach niejawnego programu testów **Ustawienia** >  **Analytics** zostanie wyłączona, a następnie ponownie włączona w organizacji, automatyczne powiadomienia e-mail zostaną zresetowane, a  wiadomości e-mail będą wysyłane do członków grupy ról Administrator zarządzania ryzykiem w ramach niejawnego programu testów, aby uzyskać nowe informacje dotyczące skanowania.
+
+Aby wyświetlić potencjalne zagrożenia dla organizacji, przejdź do karty **Przegląd** i wybierz pozycję **Wyświetl** wyniki na karcie **Analiza** ryzyka niejawnego programu testów. Jeśli skanowanie w twojej organizacji nie jest ukończone, zostanie wyświetlony komunikat informujący, że skanowanie jest nadal aktywne.
 
 ![Karta gotowa do raportu analizy ryzyka niejawnego programu testów.](../media/insider-risk-analytics-ready-card.png)
 
@@ -575,11 +578,17 @@ Wykonaj następujące czynności, aby wyłączyć analizę ryzyka niejawnego pro
 
 Powiadomienia administratora automatycznie wysyłają powiadomienia e-mail do użytkowników uwzględnionych w grupach ról Zarządzanie ryzykiem w niejawnym  programie testów *,* Analitycy zarządzających ryzykiem w niejawnym programie testów oraz Grupy ról zarządzania ryzykiem w niejawnym programie testów po wygenerowaniu pierwszego alertu dla nowych zasad. Ta funkcja jest domyślnie włączona dla wszystkich organizacji, a zasady są sprawdzane co 24 godziny dla alertów przy pierwszym czasie. Powiadomienia nie są wysyłane w przypadku alertów, które występują w zasadach po pierwszym alercie.
 
+Jeśli w organizacji włączono analizę ryzyka niejawnego programu testów, członkowie grupy  ról Administrator zarządzania ryzykiem w ramach niejawnego programu testów automatycznie otrzymają powiadomienie e-mail o początkowych analizach dotyczących wycieków danych, kradzieży i ekseriwacji.
+
 Jeśli wolisz wyłączyć powiadomienia administratora, wykonaj następujące czynności:
 
 1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie ryzykiem w niejawnym **programie** >  **testówU** ds. ryzyka.
 2. Wybierz stronę **Powiadomienia administratora** .
-3. Wyczyść pole **wyboru Wyślij powiadomienie e-mail po wygenerowaniu pierwszego alertu dla nowych** zasad.
+3. Wyczyść pole wyboru następujących opcji, jeśli mają zastosowanie:
+    - **Wysyłanie powiadomienia e-mail po wygenerowaniu pierwszego alertu dla nowych zasad**
+    - **Wysyłanie wiadomości e-mail z powiadomieniem, gdy w analizie są dostępne nowe szczegółowe informacje**
+    - **Wysyłanie powiadomienia e-mail, gdy analiza jest wyłączona**
+
 4. Wybierz **pozycję Zapisz,** aby skonfigurować i zakończyć działanie.
 
 ![Ustawienia powiadomień administratora zarządzania ryzykiem w niejawnym programie testów.](../media/insider-risk-admin-notifications.png)

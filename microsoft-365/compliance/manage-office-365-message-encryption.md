@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 5/8/2019
+ms.date: 03/04/2022
 search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Po zakończeniu konfigurowania programu Szyfrowanie wiadomości usługi Office 365 (OME) dowiedz się, jak dostosować wdrożenie na kilka sposobów.
-ms.openlocfilehash: c402b5f414e81fbb7403d56a7314c9255c8cf1b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 49a3957eb4bc2cf1123f04ab0dea77d2adb638b0
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984969"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512174"
 ---
 # <a name="manage-office-365-message-encryption"></a>Zarządzanie Szyfrowanie wiadomości usługi Office 365
 
@@ -211,7 +211,7 @@ Możesz użyć niestandardowych szablonów  brandingu, aby wymusić adresatom od
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>Dostosowywanie wyglądu wiadomości e-mail i portalu OME
 
-Aby uzyskać szczegółowe informacje na temat dostosowywania OME dla organizacji, zobacz Dodawanie marki organizacji [do zaszyfrowanych wiadomości](add-your-organization-brand-to-encrypted-messages.md).
+Aby uzyskać szczegółowe informacje na temat dostosowywania OME dla organizacji, zobacz Dodawanie marki organizacji [do zaszyfrowanych wiadomości](add-your-organization-brand-to-encrypted-messages.md). Aby umożliwić śledzenie i odwoływanie zaszyfrowanych wiadomości, musisz dodać znakowanie niestandardowe do portalu OME.
   
 ## <a name="disable-the-new-capabilities-for-ome"></a>Wyłączanie nowych możliwości usługi OME
 

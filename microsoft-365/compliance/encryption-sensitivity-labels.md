@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Skonfiguruj etykiety wrażliwości na rzecz szyfrowania, które chronią Twoje dane, ograniczając dostęp i użycie.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ac50568f9ce995f658e6b06c3a2b13b666211810
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311903"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512352"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Ograniczanie dostępu do zawartości przy użyciu etykiet wrażliwości w celu zastosowania szyfrowania
 
@@ -252,7 +252,7 @@ Aby uzyskać więcej informacji, zobacz [Wystawca zarządzania prawami i właśc
 > [!NOTE]
 > Ta funkcja jest obecnie obsługiwana tylko przez ujednoliconego klienta etykiet usługi Azure Information Protection.
 
-Zaznacz tę opcję dopiero po skonfigurowaniu usługi szyfrowania dwukluczowych i musisz użyć tego szyfrowania dwukluczowych w przypadku plików, do których będzie zastosowana ta etykieta.
+Zaznacz tę opcję dopiero po skonfigurowaniu usługi szyfrowania dwukluczowych i musisz użyć tego szyfrowania dwukluczowych w przypadku plików, do których będzie zastosowana ta etykieta. Po skonfigurowaniu i zapisaniu etykiety nie będzie można jej edytować.
 
 Aby uzyskać więcej informacji, wymagania wstępne i instrukcje konfiguracji, zobacz Szyfrowanie [dwucyfrowe](double-key-encryption.md).
 
@@ -265,7 +265,7 @@ Możesz użyć następujących opcji, aby pozwolić użytkownikom na przypisywan
 
 - W Outlook użytkownik może wybrać ograniczenia odpowiadające opcji [Nie](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) przesyłaj dalej lub Szyfruj [tylko](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) dla wybranych adresatów.
     
-    Opcja Nie przesyłaj dalej jest obsługiwana przez wszystkich klientów poczty e-mail, którzy obsługują etykiety wrażliwości. Jednak stosowanie opcji **Szyfruj tylko** do etykiet wrażliwości to najnowsza wersja, która jest obsługiwana tylko przez wbudowane etykiety, a nie przez klienta ujednoliconego etykiet usługi Azure Information Protection. W przypadku klientów poczty e-mail, którzy nie obsługują tej funkcji, etykieta nie będzie widoczna.
+    Opcja Nie przesyłaj dalej jest obsługiwana przez wszystkich klientów poczty e-mail, którzy obsługują etykiety wrażliwości. Jednak stosowanie opcji **Encrypt-Only** (Tylko szyfrowanie) z etykietą wrażliwości to najnowsza wersja, która jest obsługiwana tylko przez wbudowane etykiety, a nie przez ujednoliconego klienta etykiet usługi Azure Information Protection. W przypadku klientów poczty e-mail, którzy nie obsługują tej funkcji, etykieta nie będzie widoczna.
     
     Aby sprawdzić minimalne wersje aplikacji pakietu Outlook, które korzystają z wbudowanych etykiet, w celu obsługi stosowania opcji Encrypt-Only z etykietą wrażliwości, użyj tabeli możliwości dla programu [Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) i wiersza Umożliwiaj użytkownikom przypisywanie uprawnień **: —** Tylko szyfrowanie.
 

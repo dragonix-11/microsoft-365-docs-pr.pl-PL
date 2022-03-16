@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ec001f0a1576b767f93d74b7ef865e3912d397f1
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 8a649e7b7e2fef43661e9267c51956aac2a7bb2e
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449796"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512590"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Konfigurowanie i konfigurowanie programu Microsoft Defender dla firm
 
@@ -47,7 +47,7 @@ Usługa Microsoft Defender dla firm oferuje usprawnione środowisko konfiguracji
 | 1 | [Przejrzyj wymagania](mdb-requirements.md) | Zapoznaj się z wymaganiami programu Microsoft Defender dla firm, w tym obsługiwanymi systemami operacyjnymi. Zobacz [Wymagania dotyczące usługi Microsoft Defender dla firm](mdb-requirements.md). |
 | 2 | [Przypisywanie ról i uprawnień](mdb-roles-permissions.md)     | Osoby z Twojego zespołu zabezpieczeń muszą mieć uprawnienia do wykonywania zadań, takich jak przeglądanie wykrytych zagrożeń & działań naprawczych, wyświetlanie zasad edytowania &, urządzeń dołączających do sieci i korzystanie z raportów. Te uprawnienia możesz przyznać dla określonych ról. Zobacz [Przypisywanie ról i uprawnień](mdb-roles-permissions.md).        |
 | 3 | [Konfigurowanie powiadomień e-mail](mdb-email-notifications.md) | Możesz określić, kto ma otrzymywać powiadomienia e-mail po wyzwoleniu alertów lub gdy zostaną wykryte nowe luki w zabezpieczeniach. Zobacz [Konfigurowanie powiadomień e-mail](mdb-email-notifications.md).| 
-| 4 | [Urządzenia wyniesiene na urządzeniach w](mdb-onboard-devices.md)     | Usługa Microsoft Defender dla firm jest tak tak ustawiona, że możesz wybierać spośród kilku opcji dołączania urządzeń organizacji. Zobacz [: Na urządzeniach w programie Microsoft Defender dla firm](mdb-onboard-devices.md).         |
+| 4 | [Urządzenia wyniesiene na urządzeniach w](mdb-onboard-devices.md)     | Usługa Microsoft Defender dla firm jest tak ustawiona, że możesz wybierać spośród kilku opcji dołączania urządzeń firmowych. Zobacz [: Na urządzeniach w programie Microsoft Defender dla firm](mdb-onboard-devices.md).         |
 | 5 | [Konfigurowanie ustawień i zasad zabezpieczeń](mdb-configure-security-settings.md) | Możesz wybrać jedną z kilku opcji konfigurowania ustawień i zasad zabezpieczeń, w tym uproszczony proces konfiguracji lub Microsoft Endpoint Manager. Zobacz [Konfigurowanie ustawień i zasad zabezpieczeń](mdb-configure-security-settings.md). |
 
 ## <a name="next-steps"></a>Następne kroki

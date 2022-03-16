@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 01275143f7d52e4df0fa0aa1d904d60d13eda3b8
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 7b9c565a17d27aa57d1cb877a9a76e3ff0317f55
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449782"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512980"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm
 
@@ -31,7 +31,7 @@ ms.locfileid: "63449782"
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-W programie Microsoft Defender for Business ustawienia zabezpieczeń są konfigurowane za pomocą zasad stosowanych do urządzeń. Aby uprościć proces konfiguracji i konfiguracji, program Defender dla firm zawiera wstępnie skonfigurowane zasady ułatwiające ochronę urządzeń organizacji zaraz po ich doniu. Możesz używać zasad domyślnych, edytować zasady lub tworzyć własne zasady.
+W programie Microsoft Defender for Business ustawienia zabezpieczeń są konfigurowane za pomocą zasad stosowanych do urządzeń. Aby uprościć proces konfiguracji i konfiguracji, program Defender dla firm zawiera wstępnie skonfigurowane zasady ułatwiające ochronę urządzeń firmowych zaraz po ich dojechu. Możesz używać zasad domyślnych, edytować zasady lub tworzyć własne zasady.
 
 **W tym artykule opisano, jak to zrobić**:
 
@@ -50,11 +50,11 @@ W programie Microsoft Defender for Business ustawienia zabezpieczeń są konfigu
 
 ## <a name="default-policies-in-defender-for-business"></a>Zasady domyślne w uchcie programu Defender dla firm
 
-W programie Defender dla firm istnieją dwa główne typy zasad ochrony urządzeń organizacji:
+W programie Defender dla firm istnieją dwa główne typy zasad ochrony urządzeń firmowych:
 
 - **Zasady ochrony następnej generacji**, które określają sposób Program antywirusowy Microsoft Defender i innych funkcji ochrony przed zagrożeniami
 
-- **Zasady zapory**, które określają, jaki ruch sieciowy może przepływać do i z urządzeń organizacji
+- **Zasady zapory**, które określają, jaki ruch sieciowy może przepływać do i z urządzeń firmy
 
 
 ## <a name="view-your-existing-policies"></a>Wyświetlanie istniejących zasad
@@ -118,7 +118,7 @@ W programie Defender dla firm istnieją dwa główne typy zasad ochrony urządze
 
 7. Na karcie **Grupy** urządzeń utwórz nową grupę urządzeń lub użyj istniejącej grupy. Zasady są przypisywane do urządzeń za pośrednictwem grup urządzeń. Oto kilka rzeczy, o których należy pamiętać:
 
-   - Początkowo może być dostępna tylko domyślna grupa urządzeń, która zawiera urządzenia, których osoby w Twojej organizacji używa do uzyskiwania dostępu do danych organizacji i poczty e-mail. Możesz zachować domyślną grupę urządzeń i korzystać z jej.
+   - Początkowo może być dostępna tylko domyślna grupa urządzeń, która zawiera urządzenia, za pomocą których osoby w Twojej firmie mają dostęp do danych firmowych i poczty e-mail. Możesz zachować domyślną grupę urządzeń i korzystać z jej.
    - Utwórz nową grupę urządzeń, aby zastosować zasady z określonymi ustawieniami, które różnią się od zasad domyślnych. 
    - Podczas instalacji grupy urządzeń należy określić pewne kryteria, na przykład wersję systemu operacyjnego. Urządzenia spełniające te kryteria są uwzględniane w tej grupie urządzeń, o ile nie zostaną wykluczone. 
    - Wszystkie grupy urządzeń, w tym domyślne i niestandardowe grupy urządzeń, które definiujesz, są przechowywane w usłudze Azure Active Directory (Azure AD).
