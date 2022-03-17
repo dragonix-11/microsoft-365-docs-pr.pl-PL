@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Określanie miejsca przechowywania Microsoft 365 klientów na całym świecie
-ms.openlocfilehash: 4240521579331c0d4aed329b952d0a560291df45
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+ms.openlocfilehash: c88eceadf6c00d165b0ac032fab19596abec49e1
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63027091"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525476"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Miejsce przechowywania Microsoft 365 danych klienta
 
@@ -47,7 +47,7 @@ Jeśli adres rozliczeniowy klienta znajduje się poza Europą i klient ma subskr
 
 ### <a name="how-does-microsoft-define-data"></a>Jak firma Microsoft definiuje dane?
 
-Zapoznaj się [z definicjami różnych typów danych w](https://go.microsoft.com/fwlink/p/?linkid=864390) Centrum zaufania firmy Microsoft. W [postanowieniach dotyczących usług online firmy Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403) firma Microsoft nałozy zobowiązania kontraktowe dotyczące danych klienta/danych użytkownika. Jako podstawowe dane klienta używamy danych klientów, które powinny być przechowywane w miejscu wyłącznie w obrębie regionu użytkownika zgodnie z [Warunkami usług online firmy Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403).
+Zapoznaj się [z definicjami różnych typów danych w](https://go.microsoft.com/fwlink/p/?linkid=864390) Centrum zaufania firmy Microsoft. Zgodnie z [postanowieniami dotyczącymi & prywatności](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) firma Microsoft składa zobowiązania kontraktowe dotyczące danych klienta/Danych użytkownika. Jako podstawowe dane klienta używamy danych klientów, które powinny być przechowywane w miejscu wyłącznie w obrębie regionu użytkownika zgodnie z zasadami zachowania [poufności & dotyczącymi zabezpieczeń](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>Gdzie znajdują się dokładne adresy centrów danych?
 
@@ -4303,7 +4303,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Tablica | Stany Zjednoczone |
+| Microsoft Whiteboard | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
 | Viva Connections | Stany Zjednoczone |
 | Viva Tematy | Stany Zjednoczone |
@@ -4331,7 +4331,7 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Global Geography 1–EMEA |
 | Usługi programu OneNote | Global Geography 1–EMEA |
 | Stream | Global Geography 1–EMEA |
-| Tablica | Stany Zjednoczone |
+| Microsoft Whiteboard | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
 | Viva Connections | Global Geography 1–EMEA |
 | Viva Tematy | Global Geography 1–EMEA |

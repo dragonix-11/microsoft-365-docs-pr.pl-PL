@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Dowiedz się, jak za pomocą zaawansowanego wyszukiwania metadanych znaleźć elementy w SharePoint dokumentów przy użyciu SharePoint Syntex.
-ms.openlocfilehash: b5dffe0cd0bf481c1243d87450110d545578a06b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 87edac08dd057c0e9dea2ce36f4339f9c0bb5344
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014662"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526530"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Wyszukiwanie metadanych w bibliotekach dokumentów w aplikacji Microsoft SharePoint Syntex
 

@@ -10,19 +10,19 @@ ms.topic: overview
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: d7336e06aa970ac9fc08cafcb50f8bbed040c8a8
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 17954ec9c01a053f847a7d8a74188edf2f4e4091
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512310"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525546"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Wymagania programu Microsoft Defender dla firm
 

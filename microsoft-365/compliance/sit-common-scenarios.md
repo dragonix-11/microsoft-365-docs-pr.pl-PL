@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Jak wdrożyć typowe typy informacji poufnych w scenariuszach użycia przypadków
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd11c4843d91923f1ca5e171cc8bfc8e1c64c73d
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 39afa17fc7bf258848de9d5554b3dd56a1ce21b5
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009715"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525740"
 ---
 # <a name="common-usage-scenarios-for-sensitive-information-types"></a>Typowe scenariusze użycia dla typów informacji poufnych
 

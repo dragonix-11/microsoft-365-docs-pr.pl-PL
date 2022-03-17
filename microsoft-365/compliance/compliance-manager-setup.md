@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ustaw uprawnienia użytkowników i role w Menedżerze zgodności firmy Microsoft oraz skonfiguruj automatyczne testowanie akcji. Zarządzaj historią użytkowników i filtruj widok pulpitu nawigacyjnego.
-ms.openlocfilehash: 070c8fea309ea7c01b82be068acc40a7dcb830ff
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a6a0d7c12b0f798b88d460517866c55862c56740
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330485"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525019"
 ---
 # <a name="get-started-with-compliance-manager"></a>Wprowadzenie do Menedżera zgodności
 
@@ -124,8 +124,6 @@ Ustawienia Menedżera zgodności w Centrum zgodności platformy Microsoft 365 um
 Menedżer zgodności wykrywa sygnały z innych Microsoft 365 zgodności, które subskrybuje Twoja organizacja, w tym zarządzanie informacjami, ochronę informacji, zapobieganie utracie danych, zgodność komunikacji i zarządzanie ryzykiem w niejawnym programie testów. Na stronie szczegółów każdej akcji udoskonalania pole Test logiki  na karcie Testowanie zawiera informacje  o tym, co jest wymagane w drugim rozwiązaniu, aby akcja przekazać i zdobyć punkty w wyniku testowania.
 
 Menedżer zgodności wykrywa również sygnały z dopełniaczy działań udoskonaleń, które są również monitorowane przez program [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Za pomocą tych sygnałów Menedżer zgodności może automatycznie testować niektóre akcje udoskonalania, które pomagają zmaksymalizować wydajność w działaniach dotyczących zgodności. Po pomyślnym przetestowaniu i wdrożeniu działania ulepszeń otrzymujesz pełną liczbę punktów, która otrzymuje ogólną ocenę zgodności.
-
-Na stronie szczegółów każdej akcji udoskonalania
 
 Automatyczne testowanie jest domyślnie włączone dla organizacji, które nie mają menedżera zgodności. Gdy wdrażasz po raz Microsoft 365 lub Office 365, pełne zbieranie danych i współczynnikowanie ich w wyniku zachowania zgodności trwa około siedmiu dni. Gdy jest włączone automatyczne testowanie, data testu akcji nie zostanie zaktualizowana, ale jej stan zostanie zaktualizowany. Podczas tworzenia nowych ocen wyniki są automatycznie dołączane do wyników kontroli firmy Microsoft i integracji bezpiecznego wyniku.
 

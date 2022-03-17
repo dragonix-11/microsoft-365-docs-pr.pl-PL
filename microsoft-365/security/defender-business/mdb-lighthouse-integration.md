@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: fb5465608584d6d8ce5a9ab1dafce77f339f9396
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: d39617e419c29855c9f26a39872e806133b77ca5
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450244"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525838"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 Lighthouse i Microsoft Defender dla firm
 

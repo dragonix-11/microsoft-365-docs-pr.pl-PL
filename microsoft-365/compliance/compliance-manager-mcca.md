@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, jak korzystać z Analizatora konfiguracji zgodności firmy Microsoft, aby szybko rozpocząć korzystanie z Menedżera zgodności firmy Microsoft.
-ms.openlocfilehash: 3c5230a8a9998c4b924e5a9d4a9565ae1c97db89
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a679f0483431313672ac0dfa1101eb9909b6c060
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325113"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525157"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizator konfiguracji zgodności firmy Microsoft dla Menedżera zgodności (wersja zapoznawcza)
 
@@ -77,9 +77,7 @@ Po zainstalowaniu aplikacji MCCA można uruchomić aplikację MCCA i wygenerowa�
 
 3. Po zakończeniu pracy aplikacji MCCA aplikacja sprawdza wersję wstępną i prosi o poświadczenia. W wierszu wprowadzania nazwy użytkownika zaloguj się przy użyciu adresu e Microsoft 365-mail konta (wyświetl role, [które są uprawnione do tworzenia raportów](#role-based-reporting)). Następnie wprowadź hasło w wierszu monitu o hasło.
 
-Wygenerowanie raportu zajmie około 2–5 minut. Gdy to zrobisz, zostanie otwarte okno przeglądarki z wyświetlonym raportem w formacie HTML. Za każdym razem, gdy uruchamiasz narzędzie, będzie ono prosić o poświadczenia i generować nowy raport. Ten raport jest przechowywany lokalnie w następującym katalogu:
-
-C:\Użytkownicy\<username>\AppData\Local\Microsoft\MCCA. 
+Wygenerowanie raportu zajmie około 2–5 minut. Gdy to zrobisz, zostanie otwarte okno przeglądarki z wyświetlonym raportem w formacie HTML. Za każdym razem, gdy uruchamiasz narzędzie, będzie ono prosić o poświadczenia i generować nowy raport. Ten raport jest przechowywany lokalnie w katalogu C: \ Użytkownicy \ *nazwa* _użytkownika \ AppData \ Local \ Microsoft \ MCCA.
 
 Można uzyskać dostęp do wcześniej wygenerowanych raportów z tego katalogu.
 

@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak tworzyć wiadomości e-mail z powiadomieniami użytkownika końcowego na temat szkolenia symulacyjnego z tematem ataków w programie Microsoft Defender Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: bddd0b587e8fbf3007009a070cbd3e7616faac04
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 3aa46724ef3414c83a5ece0c5fa17b4f9342c81c
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63017952"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526666"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Powiadomienia użytkownika końcowego dotyczące szkolenia symulacyjnego w zakresie ataków
 

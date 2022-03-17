@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: Dowiedz się więcej o pracy z SharePoint Syntex wyjaśnieniem modelu w programie PowerShell.
-ms.openlocfilehash: 06f0eb7314b85f9463689fea32667666e5e167fd
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 12bdb4c7019b34ee7d2c1f4315673d78cbfb7ba1
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "63013364"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525698"
 ---
 # <a name="work-with-document-understanding-model-explanations-in-powershell"></a>Praca z objaśnieniami modelu dokumentu w programie PowerShell
 

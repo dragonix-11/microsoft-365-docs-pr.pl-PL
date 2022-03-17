@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Dowiedz się, jak ustawić klucze rejestru w celu włączenia nowoczesnego uwierzytelniania dla urządzeń, na Microsoft Office 2013.
-ms.openlocfilehash: 010dce00762e4e73d21a9da668a7ac9606d731f9
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: c390e3b9858a4d7d8fc37ea5c5e6f1901d5e20fb
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504747"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525115"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Włączanie nowoczesnego uwierzytelniania dla pakietu Office 2013 na urządzeniach z systemem Windows
 
@@ -78,7 +78,7 @@ Utwórz lub zmodyfikuj poniższe klucze rejestru, aby wymusić Outlook używania
    HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. Jeśli klucze w powyższej tabeli już istnieją, zmodyfikuj wartości w razie potrzeby, a następnie zamknij Edytor rejestru. Jeśli tak się nie stanie, w menu Edycja wskaż polecenie Nowy, a następnie wybierz pozycję Wartość **DWORD**, aby utworzyć brakujące klucze. 
+8. Jeśli klucze *EnableADAL* i *Version* już istnieją, zmodyfikuj wartości w razie potrzeby, a następnie zamknij Edytor rejestru. Jeśli tak się nie stanie, w menu Edycja wskaż polecenie Nowy, a następnie wybierz pozycję Wartość **DWORD**, aby utworzyć brakujące klucze. 
 
 9. Jeśli na przykład brakuje klucza *EnableADAL* , wpisz *EnableADAL*, a następnie naciśnij klawisz **Enter.**
 

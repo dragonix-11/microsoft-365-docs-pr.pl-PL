@@ -10,19 +10,19 @@ ms.topic: how-to
 ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: e31853e5f2e32ba99d3a6b6f812160f1419692b1
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: b5bb61d4a0b8f3cb0732633463fbf2c96ec258e9
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449656"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525518"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Przeglądanie działań naprawczych w Centrum akcji
 

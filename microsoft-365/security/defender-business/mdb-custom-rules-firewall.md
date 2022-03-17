@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 0c178c58a88016aeea6a5838d1af3fb6e1b2e92a
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 161ce8a20500bdea7d2ccd2dd9cc8a387345de1c
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449361"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525878"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Zarządzanie niestandardowymi regułami zasad zapory w programie Microsoft Defender dla firm
 

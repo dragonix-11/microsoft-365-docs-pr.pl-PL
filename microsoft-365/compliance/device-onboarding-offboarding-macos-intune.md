@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Dowiedz się, jak korzystać z urządzeń z systemem macOS w nowych Microsoft 365 zgodności przy Microsoft Intune (wersja zapoznawcza)
-ms.openlocfilehash: bab39cf101cb4fcae15f93ecc74bc52d81cadd91
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 5f8dd27490992e15d53dfc10311ce7b23b99683a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013807"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526516"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Wdychaj i wydojaj urządzenia z systemem macOS Microsoft 365 rozwiązania zgodności przy użyciu usługi Intune (wersja preview)
 

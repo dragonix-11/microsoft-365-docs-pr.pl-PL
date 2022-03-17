@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8a57b14480c45ddbc154d71bc4f2ded315c83ae
-ms.sourcegitcommit: 0251d5c6cb141055c93c83a402c3dc52c7a70dcc
+ms.openlocfilehash: e21346b48f65016465e669369aa14b3f4c85c23b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "62996855"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527102"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Zarządzaj ustawieniami konfiguracji programu Microsoft Defender for Endpoint na urządzeniach za pomocą programu Microsoft Endpoint Manager
 

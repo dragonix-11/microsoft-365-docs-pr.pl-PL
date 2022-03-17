@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Urządzenia Windows 10 i Windows 11 na Microsoft 365
-ms.openlocfilehash: 4e2e94dcb8b366a5ffda651b910a611ce9e921a1
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: dc2324f9ab8105d51730071f84397c8648c9a9de
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013799"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525061"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Omówienie dołączania Windows 10 i Windows 11 Microsoft 365 urządzeniach
 

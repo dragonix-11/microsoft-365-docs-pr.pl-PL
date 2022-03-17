@@ -10,19 +10,19 @@ ms.topic: overview
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 3db4d1b3cd4e4299c892a352b4f701abf05055ae
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 590810e7e8a5486816310da35968d6d9b3659330
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512772"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525335"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Urządzenia w programie Microsoft Defender dla firm
 

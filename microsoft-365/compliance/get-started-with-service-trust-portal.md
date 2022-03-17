@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Dowiedz się, jak uzyskać dostęp do Portalu zaufania usług firmy Microsoft i korzystać z niego w celu zapewnienia bezpieczeństwa, prywatności i zgodności.
-ms.openlocfilehash: 5894fb57d4633c0dbc3c9d925be72910bdfc3f56
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: f23cf5be7f05462e505c4d3a46407255e460420b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512912"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526154"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Rozpoczynanie pracy z Portalem zaufania usług firmy Microsoft
 
@@ -30,7 +30,7 @@ Portal zaufania usług firmy Microsoft udostępnia wiele zawartości, narzędzi 
 
 ## <a name="accessing-the-service-trust-portal"></a>Uzyskiwanie dostępu do Portalu zaufania usług
 
-Portal zaufania usług zawiera szczegółowe informacje na temat wdrożenia przez firmę Microsoft kontrolek i procesów chroniących nasze usługi w chmurze i dane klientów w tym portalu. Aby uzyskać dostęp do niektórych zasobów w Portalu zaufania usług, musisz zalogować się jako uwierzytelniony użytkownik przy użyciu konta usług firmy Microsoft w chmurze (konta organizacji firmy Azure Active Directory lub konta Microsoft) i zapoznać się z Umową o ujawnianiu informacji o zgodności firmy Microsoft i zaakceptować ją.
+Portal zaufania usług zawiera szczegółowe informacje na temat wdrożenia przez firmę Microsoft kontrolek i procesów chroniących nasze usługi w chmurze i dane klientów w tym portalu. Aby uzyskać dostęp do niektórych zasobów w Portalu zaufania usług, musisz zalogować się jako uwierzytelniony użytkownik przy użyciu konta usług firmy Microsoft w chmurze (konta organizacji firmy Azure Active Directory Microsoft) oraz zapoznać się z Umową o nieu poufności materiałów dotyczących zgodności firmy Microsoft i zaakceptować ją.
 
 ### <a name="existing-customers"></a>Obecni klienci
 
@@ -41,7 +41,7 @@ Istniejący klienci mogą uzyskać dostęp do Portalu zaufania usług za <https:
 - Azure
 
  > [!NOTE]
- > Azure Active Directory skojarzone z organizacjami mają dostęp do pełnego zakresu dokumentów i funkcji, takich jak Menedżer zgodności. Konta Microsoft utworzone do użytku osobistego mają ograniczony dostęp do zawartości Portalu zaufania usług.
+ > Azure Active Directory skojarzone z organizacjami mają dostęp do pełnego zakresu dokumentów i funkcji, takich jak Menedżer zgodności.
 
 ### <a name="new-customers-and-customers-evaluating-microsoft-online-services"></a>Nowi klienci i klienci oceniający usługi online firmy Microsoft
 

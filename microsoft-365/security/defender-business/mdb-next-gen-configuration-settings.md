@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a71ca8294660a98d13e72a3316b5512f1647f4f7
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 263d6457c8e913bdd3d8224af71f201156e24b5a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450650"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525560"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Opis ustawień konfiguracji następnej generacji w programie Microsoft Defender dla firm
 

@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 1b2b171c6872cd7ff555a92bcd88b50fa0ff4880
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 373f3eb821e00f903837f98896ed5dab0588e946
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449179"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524911"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Opis kolejności zasad w programie Microsoft Defender dla firm
 

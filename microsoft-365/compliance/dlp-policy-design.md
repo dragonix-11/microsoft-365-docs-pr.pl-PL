@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Dowiedz się, jak zaprojektować zasady ochrony przed utratą danych (DLP, Data Loss Prevention)
-ms.openlocfilehash: 5cfea5add3a1790e8a30359e48ca1c94ca83f671
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 14e9fbb5efd20ddcf3d0a47da41a0cce89c88cee
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017849"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526322"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>Projektowanie zasad ochrony przed utratą danych
 

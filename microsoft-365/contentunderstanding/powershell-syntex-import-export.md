@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: Dowiedz się, jak eksportować i importować modele opisowe dokumentów za pomocą programu PowerShell w programie SharePoint Syntex.
-ms.openlocfilehash: 6751a66d713ada8c06445d8bfd0efdb5c3ac2fad
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: dc35d298ebd79752684c91ce944333277fcef621
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "63013350"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527008"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>Eksportowanie i importowanie modeli opisowych dokumentów za pomocą programu PowerShell
 

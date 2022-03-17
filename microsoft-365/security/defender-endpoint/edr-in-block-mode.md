@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 11/29/2021
+ms.date: 03/16/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 6b6e9f9c379d4d0a659b49b9b9ce9b22b6e5ee04
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6c3df0efe5c565497803ecdd84716ec70e590afd
+ms.sourcegitcommit: b67385243fb56ad20f2a6f1c40be46f5691c1c2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322663"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527830"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Wykrywanie punktu końcowego i odpowiedź (EDR) w trybie blokowania
 
@@ -63,15 +63,24 @@ Na poniższej ilustracji przedstawiono wystąpienie niechcianego oprogramowania 
 
 ## <a name="enable-edr-in-block-mode"></a>Włączanie EDR w trybie blokowania
 
+> [!IMPORTANT]
+> Począwszy od wersji platformy 4.18.2202.X, możesz teraz skonfigurować EDR w trybie blokowania, aby kierować określone grupy urządzeń za pomocą tych grup usługi Intune. W portalu EDR można nadal ustawiać ustawienia trybu Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dzierżawy</a>. Należy pamiętać, że EDR trybie blokowania jest zalecane przede wszystkim dla urządzeń z kodem MDAV w trybie pasywnym (aktywna jest funkcja audio/wideo innej firmy). 
+
 > [!TIP]
 > Przed [włączeniem trybu blokowania](#requirements-for-edr-in-block-mode) upewnij się, że są EDR w trybie blokowania.
+
+### <a name="security-portal"></a>Portal zabezpieczeń 
 
 1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com/](https://security.microsoft.com/)) i zaloguj się.
 2. Wybierz **Ustawienia** \> **Punkty końcowe Ogólne** \>  \> **funkcje zaawansowane**.
 3. Przewiń w dół, a następnie włącz **opcję Włącz EDR w trybie blokowania**.
 
-> [!IMPORTANT]
-> EDR trybie blokowania można włączona tylko w portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> i jest stosowana w całej dzierżawie. Nie można ustawić EDR w trybie blokowania, aby kierować określone grupy urządzeń lub użytkowników. Przy użyciu kluczy rejestru, Microsoft Intune ani zasady grupy włączyć lub wyłączyć EDR trybie blokowania.
+### <a name="intune"></a>Intune
+
+Aby utworzyć zasady niestandardowe w usłudze Intune, zobacz Wdrażanie OMA-URIs csp w usłudze Intune i porównanie z lokalnym [środowiskem](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).
+
+Aby uzyskać więcej informacji na temat programu CSP usługi Defender używanego do EDR w trybie blokowania, zobacz "Konfiguracja/strona biernaRemediation" w programie [Defender CSP](/windows/client-management/mdm/defender-csp).
+
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Wymagania dotyczące EDR w trybie blokowania
 

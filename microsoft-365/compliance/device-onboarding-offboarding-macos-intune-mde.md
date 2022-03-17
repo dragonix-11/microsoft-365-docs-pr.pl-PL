@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Dowiedz się, jak dołączać i wydojać urządzenia z systemem macOS Microsoft 365 rozwiązania zgodności przy Microsoft Intune dla klientów MDE (wersja zapoznawcza)
-ms.openlocfilehash: 0486c08734e049a82550c1fb596b0e3d789126b8
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 6cc4362e924f291c6a8396bff342c6f628e33be3
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "63013352"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526558"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Dołączanie i wydojażanie urządzeń macOS w rozwiązaniach zgodności przy użyciu usługi Intune dla klientów programu Microsoft Defender for Endpoint (wersja preview)
 

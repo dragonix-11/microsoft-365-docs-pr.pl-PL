@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Wprowadzenie do tworzenia dokładnych typów informacji poufnych opartych na danych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 469cc7262ff1eef92d9a03e04070dc353e12b445
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: a75650484368b6ccbaf6f6d39aeead133403f5b8
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63005287"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526280"
 ---
 # <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>Wprowadzenie do dokładnych typów informacji poufnych opartych na danych
 

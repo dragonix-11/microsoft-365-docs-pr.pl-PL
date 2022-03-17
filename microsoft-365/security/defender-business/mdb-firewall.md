@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9644df7d4681a3f425c82f2f47bdb2ad50c75483
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 92db1711fa5aefb8920c35a8665cf322b3f0f5ef
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512758"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525864"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Zapora w programie Microsoft Defender dla firm
 

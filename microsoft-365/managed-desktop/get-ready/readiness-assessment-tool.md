@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 96bd667cf5d3661476111f7593632f0e5362cf45
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8d949b13203aaeab51d2518f16650ba6df832195
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011380"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525642"
 ---
 # <a name="readiness-assessment-tools"></a>Narzędzia do oceny gotowości
 
@@ -33,7 +33,7 @@ Narzędzie [online](https://aka.ms/mmdart) sprawdza ustawienia w usługach Micro
 
 Microsoft Managed Desktop przechowuje dane skojarzone z tymi testami przez 12 miesięcy od ostatniego uruchomienia kontroli w organizacji usługi Azure AD (dzierżawie). Po upływie 12 miesięcy przechowujemy ją w postaci odszukajmy. Możesz wybrać opcję usunięcia zbieranych przez nas danych.
 
-To narzędzie będzie mógł uruchomić każdy, kto ma co najmniej rolę czytelnika globalnego lub administratora usługi Intune, ale dwie z tych [testów (zasady](readiness-assessment-fix.md#conditional-access-policies) dostępu warunkowego i uwierzytelnianie wieloskładnikowe [wymagają dodatkowych](readiness-assessment-fix.md#multi-factor-authentication) uprawnień.
+To narzędzie będzie mogła uruchomić każda osoba, która ma co najmniej rolę czytelnika globalnego lub administratora usługi Intune, ale dwie [testy (zasady](readiness-assessment-fix.md#conditional-access-policies) dostępu warunkowego i uwierzytelnianie wieloskładnikowe [) wymagają](readiness-assessment-fix.md#multi-factor-authentication) dodatkowych uprawnień.
 
 > [!IMPORTANT]  
 > Narzędzie do oceny gotowości w trybie online ułatwia sprawdzenie gotowości do zarejestrowania się Microsoft Managed Desktop po raz pierwszy. Jeśli Twoja organizacja jest już zarejestrowany w programie Microsoft Managed Desktop, nie używaj tego narzędzia.

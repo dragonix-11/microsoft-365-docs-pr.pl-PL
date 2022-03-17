@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Twórz oceny w Menedżerze zgodności firmy Microsoft, aby ułatwić spełnianie wymagań przepisów i certyfikatów ważnych dla Twojej organizacji.
-ms.openlocfilehash: 59f2bd89a798567d51c3e28fda574e7b9f0ba326
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fb30fd8f55172890507b82910630e7202de0d996
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319535"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526612"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Tworzenie ocen i zarządzanie nimi w Menedżerze zgodności
 
@@ -73,7 +73,7 @@ Podczas tworzenia nowej oceny możesz utworzyć grupę. Grup nie można tworzyć
 - Powiązane mechanizmy kontroli ocen w różnych ocenach w tej samej grupie są automatycznie aktualizowane po ukończeniu.
 - Grupy mogą zawierać oceny dla tego samego certyfikatu lub przepisów, ale każda grupa może zawierać tylko jedną ocenę określonej pary certyfikacji produktu. Na przykład grupa nie może zawierać dwóch ocen dla programu Office 365 i NIST CSF. Grupa może zawierać wiele ocen dla tego samego produktu tylko wtedy, gdy odpowiadające im certyfikaty lub przepisy dla każdej z nich są inne.
 - Usunięcie oceny przerywa relację między tym oceniam a grupą.
-- Grup nie można usuwać ręcznie.
+- Grup nie można usuwać.
 
 ## <a name="understand-templates-before-creating-assessments"></a>Opis szablonów przed utworzeniem ocen
 

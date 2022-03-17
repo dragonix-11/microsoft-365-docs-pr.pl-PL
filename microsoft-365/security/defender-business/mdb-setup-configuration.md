@@ -10,19 +10,19 @@ ms.topic: overview
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 8a649e7b7e2fef43661e9267c51956aac2a7bb2e
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 7dbe825a103303d62e536eca9ea59819c0e97aea
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512590"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524827"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Konfigurowanie i konfigurowanie programu Microsoft Defender dla firm
 

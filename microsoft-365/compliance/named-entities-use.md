@@ -12,16 +12,16 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Skorzystaj z tych procedur, aby korzystać z nazwanych obiektów w zasadach ochrony przed utratą danych.
-ms.openlocfilehash: f3dac4efa1b0cf84971ac4d07f78144b438d1161
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 5adb410689e597395f1b13152ed62af75fa111d6
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009685"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525225"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Używanie nazwanych obiektów w zasadach ochrony przed utratą danych (wersja zapoznawcza)
 

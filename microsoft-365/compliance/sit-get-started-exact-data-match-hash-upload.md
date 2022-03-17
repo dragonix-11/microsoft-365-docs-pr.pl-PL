@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Skróty i przekazywanie tabeli źródła informacji poufnych w celu dokładnego dopasowania danych do typów informacji poufnych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 85a65bc0d9d68a4a148fbc820985b6f40b6f6792
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 8d3effe3d46375ffcaec268e4b3fc6d53fc5044e
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "62999364"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526502"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Skróty i przekazywanie tabeli źródła informacji poufnych w celu dokładnego dopasowania danych do typów informacji poufnych
 

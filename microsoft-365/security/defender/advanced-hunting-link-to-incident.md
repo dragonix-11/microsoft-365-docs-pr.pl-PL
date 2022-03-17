@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5302c078da3ded781007412a2807fc20fa77319e
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 8a1b8e11d16f0bf0d20739af8ff5699eb150c6f7
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "62996819"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526694"
 ---
 # <a name="link-query-results-to-an-incident"></a>Łączenie wyników zapytania z zdarzeniem
 

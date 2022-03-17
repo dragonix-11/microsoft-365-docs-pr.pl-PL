@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: konfigurowanie usług
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b3171a0bcd30ec448d23a4b94a227aff9a9fb34
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 583a07eee97024d59efc8d81c1d7a9fd02d176ff
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320917"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526460"
 ---
 # <a name="test-an-exact-data-match-sensitive-information-type"></a>Testowanie dokładnego dopasowania danych do typu informacji poufnych
 

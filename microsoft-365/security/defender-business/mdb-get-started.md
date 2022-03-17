@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 0754a16310df912a63ba92395b9cb9369436dc93
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 3e46ee70c1c745c336d049f039de04282c5848d8
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512898"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525392"
 ---
 # <a name="get-started-using-the-microsoft-365-defender-portal"></a>Rozpoczynanie korzystania z portalu Microsoft 365 Defender-
 

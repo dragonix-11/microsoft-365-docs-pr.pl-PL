@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak edytować lub usuwać schemat dokładnego dopasowania danych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c3ce2620a95401fcd34d2a84378d2e544cd66e4d
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 8e06cb25db0a8c616b5b692a423d9827e8918dc9
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009717"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525197"
 ---
 # <a name="manage-your-exact-data-match-schema"></a>Zarządzanie dokładnym schematem dopasowania danych
 

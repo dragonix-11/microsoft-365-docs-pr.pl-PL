@@ -10,19 +10,19 @@ ms.topic: article
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 7d529ffac45484f585cf654d30cb5522bbdffcd5
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 1ffd1378a3b2117cddabfcaf5dd43d2372818f0c
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512296"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526252"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Używanie pulpitu nawigacyjnego zarządzania & zagrożeniami w programie Microsoft Defender dla firm
 

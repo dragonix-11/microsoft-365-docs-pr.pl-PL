@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c7930215efac4e02a6a0bab484e9158ad693997a
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: c429a072d6ceb2d5d1472533649e30d1fc1a0078
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016009"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525005"
 ---
 # <a name="localize-the-user-experience"></a>Localize the user experience
 
@@ -44,7 +44,12 @@ Użytkownicy mogą wybrać język używany w programie Windows 10, a Aplikacje M
 | Windows 10 funkcji językowych | <ul><li>Język wyświetlania</li><li>Język klawiatury</li><ul> |
 | Aplikacje Microsoft 365 do Enterprise funkcji językowych | <ul><li>Język wyświetlania</li><li>Narzędzia do erowania i tworzenia</li></ul> |
 
-Aby [udostępnić](#supported-languages) użytkownikom do instalacji Aplikacje Microsoft 365 obsługiwane języki dla pakietu Enterprise, dodaj użytkowników do grupy Nowoczesne **Office-Language_Packs Workplace-Language_Packs**. Języki będą dostępne w Intune — Portal firmy.
+## <a name="install-more-languages"></a>Instalowanie większej liczby języków
+
+> [!NOTE]
+> Z dniem 16 marca 2022 r. wycofujemy grupę Modern Workplace-Office-Language_Packs, która umożliwia Twoim użytkownikom dodawanie języków do Microsoft Office. Przejście na nową metodę (zobacz poniżej) zostanie ukończone w kwietniu 2022 r. Jeśli w tym okresie przejścia będą jakieś problemy, skontaktuj się z pomocy [technicznej](../working-with-managed-desktop/admin-support.md).
+
+Domyślnie pakiet Microsoft Office administratorów. Program Microsoft Managed Desktop wdraża zasady programu Office w celu umożliwienia użytkownikom standardowym instalowania pakietów akcesoriów językowych bezpośrednio z ich Office aplikacji. Aby uzyskać więcej informacji, zobacz [Zezwalanie użytkownikom, którzy nie są administratorami, na instalowanie dodatkowych języków](/deployoffice/overview-deploying-languages-microsoft-365-apps#allow-users-who-arent-admins-to-install-additional-languages).
 
 ## <a name="supported-languages"></a>Obsługiwane języki
 
@@ -98,12 +103,6 @@ Obraz [uniwersalny dostarczony](../service-description/device-images.md#universa
 Jeśli użytkownicy potrzebują języka innego niż wymienione tutaj, zsyłaj wniosek o pomoc [techniczną](../working-with-managed-desktop/admin-support.md) za pomocą [portalu administracyjnego](access-admin-portal.md).
 
 ## <a name="languages-for-support-and-operations"></a>Języki pomocy technicznej i operacji
-
-### <a name="user-support"></a>Pomoc techniczna dla użytkowników
-
-Microsoft Managed Desktop obsługuje tylko język angielski. Jeśli użytkownik wybierze inny język w aplikacji Uzyskaj pomoc, otrzyma pomoc techniczną z ogólnych kanałów pomocy technicznej firmy Microsoft, a nie bezpośrednio z Microsoft Managed Desktop. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie pomocy dla użytkowników](../working-with-managed-desktop/end-user-support.md).
-
-Jeśli użytkownicy potrzebują pomocy technicznej w innych językach, musisz to zapewnić za pośrednictwem źródeł pomocy technicznej innych niż firmy Microsoft lub z Twojej organizacji.
 
 ### <a name="admin-support-and-operations"></a>Pomoc techniczna i obsługa administracyjna
 

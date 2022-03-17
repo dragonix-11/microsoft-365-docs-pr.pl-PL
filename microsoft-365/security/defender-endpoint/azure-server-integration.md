@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bf51b744e294e4bb2740b3e437305629eb23c2a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2ed9d25336cd7e8162849aa5d1d1a3e3382063fc
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021323"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526680"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Integracja z usługą Microsoft Defender dla chmury
 

@@ -12,16 +12,16 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Dowiedz się, jak nazwane jednostki ułatwiają wykrywanie poufnych elementów zawierających imiona i nazwiska osób, adresy fizyczne i terminy medyczne za pośrednictwem zasad ochrony przed utratą danych
-ms.openlocfilehash: 002905264d789e7ebe0b163a80fe033c028a6b4b
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 79f375fecf09a6f7ffe4c1a97b8d6864fbfb3e13
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63006162"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524869"
 ---
 # <a name="learn-about-named-entities-preview"></a>Informacje o nazwanych jednostkach (wersja zapoznawcza)
 

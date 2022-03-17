@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7045ff8931def0f7aef2c1ac40ea76ec839c7ad0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 003c7cee09499fdec46f7d588e792878e0d3be66
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312668"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525364"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie iOS
 
@@ -117,7 +117,7 @@ Następnie skonfiguruj tryb nadzorowany dla aplikacji Defender for Endpoint za p
 
 1. Na stronie **Przeglądanie + tworzenie** po zakończeniu wybierz pozycję **Utwórz**. Nowy profil zostanie wyświetlony na liście profilów konfiguracji.
 
-1. Następnie, aby uzyskać ulepszone funkcje ochrony przed wyłudzaniem informacji, możesz wdrożyć profil niestandardowy na urządzeniach z systemem iOS nadzorowanych. Wykonaj poniższe czynności:
+1. Następnie należy wdrożyć profil niestandardowy na urządzeniach z systemem iOS nadzorowanych. Jest to ulepszone funkcje ochrony przed wyłudzaniem informacji. Wykonaj poniższe czynności:
 
     - Pobierz profil konfiguracji z [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
     - Przejdź do **strony DevicesiOS** -> **/iPadOSKonfiguracja** ->  **profilesTworzenie profilu** -> 

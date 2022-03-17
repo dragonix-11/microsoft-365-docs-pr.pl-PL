@@ -10,18 +10,18 @@ ms.topic: article
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e1ef67f3f3011a660793858900f41f50c0e503b0
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: b28e28b2504ed2234f2f48a9763827fc7b063af8
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512994"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525504"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Samouczki i symulowania w programie Microsoft Defender dla firm
 

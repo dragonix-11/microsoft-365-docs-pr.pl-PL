@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: be3dcfd23c0fb77604cec140a4b1d3606f6ee345
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: c6454704c6cabfd5136eeec565c3c57dca044250
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513048"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526898"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego
 
@@ -85,20 +85,28 @@ Wszystkie nasze aktualizacje zawierają
 - Ulepszenia integracji (chmura, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>Luty 2022 r. (platforma: 4.18.xxxx.xx | Aparat: 1.1.19000.8)</summary>
+<summary>Luty 2022 r. (platforma: 4.18.2202.4 | Aparat: 1.1.19000.8)</summary>
 
-&ensp;Wersja aktualizacji analizy zabezpieczeń: **1.357.x.x**<br/>
+&ensp;Wersja aktualizacji analizy zabezpieczeń: **1.361.14.0**<br/>
 &ensp;Opublikowano: **14 marca 2022 r**.<br/>
-&ensp;Platforma: **4.18.xxxx.xx**<br/>
+&ensp;Platforma: **4.18.2202.4**<br/>
 &ensp;Aparat: **1.1.19000.8**<br/>
 &ensp;Etap pomocy technicznej: **aktualizacje zabezpieczeń i krytyczne**<br/>
 
 Wersja aparatu: 1.1.19000.8 <br/>
-Wersja aktualizacji analizy zabezpieczeń: 1.357.x.x <br/>
+Wersja aktualizacji analizy zabezpieczeń: 1.361.14.0 <br/>
 
 ### <a name="whats-new"></a>Co nowego
 
-- Wkrótce
+- Ulepszenia logiki monitorowania wykrywania i zachowania
+- Usunięto wykrywanie zmniejszenia powierzchni ataków po efektach fałszywie dodatnich
+- Dodano poprawkę, która lepszą wierność EDR oraz alerty wykrywania zaawansowanego wyszukiwania
+- Program Defender nie obsługuje już niestandardowych powiadomień o wyskakujących wyskakujące okienkach. Zmodyfikowano zasady GPO/Intune/SCCM i dokumenty w celu odzwierciedlenia tej zmiany.
+- Ulepszenia przechwytywania informacji i kopii plików zapisanych w pamięci wymiennych. Aby dowiedzieć się więcej, zobacz [Program Microsoft Defender for Endpoint Device Control Wymienny Storage Access Control, nośnik wymienny pamięci masowej](device-control-removable-storage-access-control.md).
+- Poprawiony ruch wyjściowy, gdy nie można jeszcze wyostrzać usługi SmartScreen 
+- Ulepszenia łączności dla klientów korzystających z serwerów proxy z wymaganiami uwierzytelniania
+- Usunięto błąd aktualizacji urządzeń VDI dla sieci FileShares 
+- EDR w trybie blokowania obsługuje teraz szczegółowe targetowanie urządzeń za pomocą nowych csP. Zobacz [Wykrywanie punktu końcowego i odpowiedź (EDR) w trybie blokowania](edr-in-block-mode.md).
 
 ### <a name="known-issues"></a>Znane problemy
 

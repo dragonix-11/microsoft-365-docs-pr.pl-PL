@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: b55af496881489279a7a6f96ed386ab2a26c2fa5
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 243630a43d75a4530024e246fbea57f26a51d06b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512604"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525796"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>Konfigurowanie programu Microsoft Defender dla firm przy użyciu kreatora
 
