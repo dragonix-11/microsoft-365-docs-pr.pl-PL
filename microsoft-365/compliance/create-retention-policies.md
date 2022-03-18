@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zasady przechowywania skutecznie kontrolują zawartość generną przez użytkowników za pomocą wiadomości e-mail, dokumentów i konwersacji. Zachowaj to, co chcesz, i pozbądź się tego, czego nie chcesz.
-ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ddd0553405aa92a1eb7a7978398392b780a0a2ea
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320595"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557813"
 ---
 # <a name="create-and-configure-retention-policies"></a>Tworzenie i konfigurowanie zasad przechowywania
 
@@ -103,8 +103,6 @@ Aby uzyskać szczegółowe informacje techniczne dotyczące sposobu przechowywan
 #### <a name="known-configuration-issues"></a>Znane problemy z konfiguracją
 
 - Mimo że możesz wybrać opcję, aby rozpocząć okres przechowywania po ostatniej modyfikacji elementów, wartość Gdy elementy **zostały** utworzone jest zawsze używana. W przypadku edytowanych wiadomości jest zapisywana kopia oryginalnej wiadomości z oryginalną sygnaturą czasową, która pozwala określić, kiedy utworzono tę wstępnie edytowaną wiadomość, a wiadomość po edycji ma nowszą sygnaturę czasową.
-
-- Po wybraniu pozycji **Edytuj** dla lokalizacji **Teams wiadomości** w kanale mogą być Microsoft 365 grupy, które nie są również zespołami. Nie zaznaczaj tych grup.
 
 - Po wybraniu pozycji **Edytuj** dla lokalizacji Teams czatów mogą być widziani goście i użytkownicy spoza skrzynki pocztowej. Zasady przechowywania nie są przeznaczone dla tych użytkowników, więc ich nie wybieraj.
 

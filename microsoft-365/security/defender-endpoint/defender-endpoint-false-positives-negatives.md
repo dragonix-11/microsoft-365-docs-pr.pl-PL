@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: e7d401d4501f046455382039593d304494de5295
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 0352fde9756efce3011db24c915f287c358f313b
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016555"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557911"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Adres dodatnich/ujemnych wyników fałszywie dodatnich w programie Microsoft Defender dla punktu końcowego
 
@@ -74,8 +74,6 @@ Zanim sklasyfikuje się lub pominie alert, określ, czy jest on dokładny, dodat
 3. Wybierz alert, aby uzyskać więcej szczegółów dotyczących tego alertu. (Zobacz Przeglądanie [alertów w programie Microsoft Defender dla punktu końcowego](review-alerts.md)).
 
 4. W zależności od stanu alertu, zrób tak, jak to opisano w poniższej tabeli:
-
-<br/><br/>
 
    |Stan alertu|Co należy zrobić|
    |---|---|
@@ -308,7 +306,7 @@ Jeśli masz plik, który został błędnie wykryty jako złośliwy lub nieodebra
 
 1. Przejrzyj wskazówki tutaj: [Przesyłanie plików do analizy](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Odwiedź witrynę Microsoft Security Intelligence przesyłania (<https://www.microsoft.com/wdsi/filesubmission>) i prześlij pliki.
+2. Odwiedź [witrynę Microsoft Security Intelligence przesyłania](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission)i prześlij pliki).
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>Przesyłanie wykrywania bez pliku do analizy
 
@@ -322,7 +320,7 @@ Jeśli na podstawie zachowania coś zostało wykryte jako złośliwe oprogramowa
 
 3. Przejrzyj wskazówki tutaj: [Przesyłanie plików do analizy](/windows/security/threat-protection/intelligence/submission-guide).
 
-4. Odwiedź witrynę Microsoft Security Intelligence przesyłania (<https://www.microsoft.com/wdsi/filesubmission>) i prześlij swoje .cab pliki.
+4. Odwiedź [witrynę Microsoft Security Intelligence przesyłania](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission)i prześlij swoje .cab pliki.
 
 ### <a name="what-happens-after-a-file-is-submitted"></a>Co się dzieje po przesłaniu pliku?
 

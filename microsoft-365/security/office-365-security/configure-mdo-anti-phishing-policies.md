@@ -16,12 +16,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak tworzyć, modyfikować i usuwać zaawansowane zasady ochrony przed wyłudzaniem informacji, które są dostępne w organizacjach przy użyciu programu Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f72d2a8f7b881216a283d920bce9b4903407cf6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5faf4533110fe5abad8606c9c859f82549dc2fce
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021251"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557925"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365
 
@@ -182,6 +182,9 @@ Utworzenie niestandardowych zasad ochrony przed wyłudzaniem informacji w portal
      Po wybraniu co najmniej jednego wpisu zostanie wyświetlona **ikona** Usuń, która umożliwia usunięcie zaznaczonych pozycji.
 
      Po zakończeniu kliknij pozycję **Gotowe**.
+
+     > [!NOTE]
+     > Maksymalna liczba wpisów nadawcy i domeny to 1024.
 
    - **Włącz analizę skrzynek** pocztowych: wartość domyślna jest włączona (zaznaczona) i zalecamy pozostawienie jej włączonej. Aby ją wyłączyć, wyczyść to pole wyboru.
 

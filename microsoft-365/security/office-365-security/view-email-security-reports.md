@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0703e1f23d9d54a907b39382438f85f544a5b6de
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b1d7d3dab26d4f9034294b2780875d33cb2fbef3
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504863"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557949"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail
 
@@ -89,11 +89,13 @@ Tabela szczegółów pod wykresem zawiera następujące informacje:
 - **Godzina utworzenia**
 - **Identyfikator użytkownika**
 - **Akcja**
+- **Tagi**: Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkownika](user-tags.md).
 
 Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozycję **Filtruj** i wybierając jedną lub więcej z następujących wartości w wyświetlonym wysuwaniu:
 
 - **Data (UTC)**: **data rozpoczęcia** i **data zakończenia**.
 - **Działanie**: **Ograniczone lub** **Podejrzane**
+- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów).
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
@@ -520,7 +522,7 @@ W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 - **Technologia wykrywania**
 - **Stan dostawy**
 - **Adres IP nadawcy**
-- **Tagi**
+- **Tagi**: Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkownika](user-tags.md).
 
 Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
@@ -531,7 +533,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
   - **Wszystkie**
   - **Przychodzący**
   - **Wychodzące**
-- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów). Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkowników](user-tags.md).
+- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów).
 - **Domena**: **Wszystkie lub** [zaakceptowane domeny](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Typ zasad**:
   - **Wszystkie**
@@ -572,7 +574,7 @@ W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 - **Technologia wykrywania**
 - **Stan dostawy**
 - **Adres IP nadawcy**
-- **Tagi**
+- **Tagi**: Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkownika](user-tags.md).
 
 Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
@@ -582,7 +584,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
   - **Wszystkie**
   - **Przychodzący**
   - **Wychodzące**
-- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów). Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkowników](user-tags.md).
+- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów).
 - **Domena**: **Wszystkie lub** [zaakceptowane domeny](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Typ zasad**:
   - **Wszystkie**
@@ -627,7 +629,7 @@ W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 - **Technologia wykrywania**
 - **Stan dostarczenia**
 - **Adres IP nadawcy**
-- **Tagi**
+- **Tagi**: Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkownika](user-tags.md).
 
 Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
@@ -638,7 +640,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
   - **Wszystkie**
   - **Przychodzący**
   - **Wychodzące**
-- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów). Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkowników](user-tags.md).
+- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów).
 - **Domena**: **Wszystkie lub** [zaakceptowane domeny](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Typ zasad**:
   - **Wszystkie**
@@ -677,7 +679,7 @@ W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 - **Technologia wykrywania**
 - **Stan dostawy**
 - **Adres IP nadawcy**
-- **Tagi**
+- **Tagi**: Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkownika](user-tags.md).
 
 Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
@@ -706,7 +708,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
   - **Wszystkie**
   - **Przychodzący**
   - **Wychodzące**
-- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów). Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkowników](user-tags.md).
+- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów).
 - **Domena**: **Wszystkie lub** [zaakceptowane domeny](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Typ zasad**:
   - **Wszystkie**
@@ -750,7 +752,7 @@ W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 - **Technologia wykrywania**
 - **Stan dostawy**
 - **Adres IP nadawcy**
-- **Tagi**
+- **Tagi**: Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkownika](user-tags.md).
 
 Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
@@ -779,7 +781,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
   - **Wszystkie**
   - **Przychodzący**
   - **Wychodzące**
-- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów). Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkowników](user-tags.md).
+- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów).
 - **Domena**: **Wszystkie lub** [zaakceptowane domeny](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Typ zasad**:
   - **Wszystkie**
@@ -852,7 +854,7 @@ W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 - **Adresaci**
 - **Zastępowanie systemu**
 - **Adres IP nadawcy**
-- **Tagi**
+- **Tagi**: Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkownika](user-tags.md).
 
 Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
@@ -863,7 +865,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
   - **Wszystkie**
   - **Przychodzący**
   - **Wychodzące**
-- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów). Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkowników](user-tags.md).
+- **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów).
 - **Domena**: **Wszystkie lub** [zaakceptowane domeny](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Typ zasad**: **Wszystkie**
 - **Nazwa zasad (tylko widok tabeli szczegółów)**: **Wszystkie**
@@ -890,7 +892,7 @@ W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 - **Adresaci**
 - **Zastępowanie systemu**
 - **Adres IP nadawcy**
-- **Tagi**
+- **Tagi**: Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkownika](user-tags.md).
 
 Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
@@ -1040,7 +1042,7 @@ Tabela szczegółów pod wykresem zawiera następujące informacje:
 - **Nadawca**
 - **Zgłoszona przyczyna**
 - **Ponowny wynik**
-- **Tagi**
+- **Tagi**: Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkownika](user-tags.md).
 
 Aby przesłać wiadomość do firmy Microsoft w celu analizy, wybierz wpis wiadomości z tabeli, kliknij pozycję Prześlij do firmy **Microsoft** w celu analizy, a następnie wybierz jedną z następujących wartości z listy rozwijanej:
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47f957594815029c9590242c885ebd88485a9668
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3fb48e432d20067f3c6ca1913349152154c57e81
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021245"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557883"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów programu Defender Office 365 w portalu Microsoft 365 Defender-
 
@@ -141,21 +141,28 @@ Dostępne widoki na stronie Raport ochrony **adresu URL** opisano w poniższych 
 
 Widok **akcji Wyświetl dane według adresu URL ochrony** kliknięciem przedstawia liczbę kliknięć adresu URL (kliknięcia) przez użytkowników w organizacji oraz wyniki kliknięcia:
 
-- **Dozwolone**: Użytkownik mógł przejść do adresu URL.
-- **Zablokowane**: Użytkownikowi zablokowano dostęp do adresu URL.
-- **Zablokowane i klikone**: Użytkownik wybrał opcję kontynuowania przechodzenia do adresu URL.
-- **Kliknął w trakcie skanowania**: Użytkownik kliknął link przed zakończeniem skanowania.
+- **Dozwolone**: Klika dozwolone.
+- **Dozwolone przez administratora dzierżawy**: Kliknięcia dozwolone w zasadach Sejf linków.
+- **Zablokowane**: Kliknij pozycję zablokowane.
+- **Zablokowane przez administratora dzierżawy**: Kliknięcia zablokowane w zasadach połączeń Sejf dzierżawy.
+- **Zablokowane i klikowane**: Zablokowane kliknięcia, przez które użytkownicy klikną w celu wyświetlenia zablokowanego adresu URL.
+- **Zablokowane przez administratora dzierżawy i klikone** przez: Administrator zablokował link, ale użytkownik kliknął.
+- **Kliknął przez podczas skanowania**: Klika miejsce, w którym użytkownicy klikną stronę oczekującego skanowania, aby przejść do adresu URL.
+- **Skanowanie oczekujące**: Klika adresy URL, które oczekują na werdykt skanowania.
 
 Kliknięcie wskazuje, że użytkownik kliknął przez stronę blokady złośliwą witrynę sieci Web (administratorzy mogą wyłączyć kliknięcie w zasadach Sejf linków).
 
 Jeśli klikniesz **pozycję** Filtry, możesz zmodyfikować raport i tabelę szczegółów, wybierając co najmniej jedną z następujących wartości w wyświetlonym wysuwanych informacjach:
 
 - **Data (UTC)**: **data rozpoczęcia** i **data zakończenia**
-- **Wykrywanie**:
+- **Akcja**:
   - **Dozwolone**
   - **Zablokowane**
+  - **Dozwolone przez administratora dzierżawy**
   - **Zablokowane i klikone przez**
+  - **Zablokowane przez administratora dzierżawy i kliknął**
   - **Kliknął przez podczas skanowania**
+  - **Oczekujące skanowanie**
 - **Domeny**: domeny adresu URL wymienione w wynikach raportu.
 - **Adresaci**
 
@@ -178,13 +185,8 @@ Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-
 Widok **Wyświetl dane według adresu URL kliknięcia według aplikacji** pokazuje liczbę kliknięć adresu URL według aplikacji, które obsługują Sejf internetowych:
 
 - **Klient poczty e-mail**
-- **PowerPoint**
-- **Word**
-- **Excel**
-- **OneNote**
-- **Visio**
+- **Office dokumentu**
 - **Teams**
-- **Inne osoby**
 
 Jeśli klikniesz **pozycję** Filtry, możesz zmodyfikować raport i tabelę szczegółów, wybierając co najmniej jedną z następujących wartości w wyświetlonym wysuwanych informacjach:
 
