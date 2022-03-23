@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365 dokumentacji zabezpieczeń
-summary: Microsoft 365 Defender łączy wiele technologii zabezpieczeń w jednej kompleksowej konsoli administracyjnej z ulepszeniami w celu ochrony przedsiębiorstwa.
+title: Dokumentacja zabezpieczeń platformy Microsoft 365
+summary: Portal usługi Microsoft 365 Defender łączy wiele technologii zabezpieczeń w jednej kompleksowej konsoli administracyjnej z ulepszeniami służącymi ochronie przedsiębiorstwa.
 metadata:
-  title: Microsoft 365 dokumentacji zabezpieczeń
-  description: Dowiedz się więcej o programie Microsoft Defender for Endpoint — o tym, jak chroni on punkty końcowe przed zagrożeniami cyberzagrożeniami i zapewnia zespołom operacji zabezpieczeń możliwości korygowania zagrożeń.
+  title: Dokumentacja zabezpieczeń platformy Microsoft 365
+  description: Dowiedz się więcej o Ochronie punktu końcowego w usłudze Microsoft Defender — jak chroni ona punkty końcowe przed zagrożeniami cybernetycznymi i udostępnia zespołom operacji zabezpieczeń możliwości korygowania zagrożeń.
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: m365d
@@ -15,7 +15,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 199f3005de41d8b97b6ae110740d687d5d4692e9
   ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
   ms.lasthandoff: 11/19/2021
   ms.locfileid: "62970541"
@@ -24,15 +24,15 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Wprowadzenie do Microsoft 365 Defender
+    - text: Wprowadzenie do usługi Microsoft 365 Defender
       url: defender/microsoft-365-defender.md
-- title: Zacznij od bezpłatnych wersji próbnych
+- title: Rozpocznij od bezpłatnych wersji próbnych
   linkLists:
   - linkListType: get-started
     links:
-    - text: Szacowanie Microsoft 365 Defender
+    - text: Oceń usługę Microsoft 365 Defender
       url: defender/eval-overview.md
-    - text: Microsoft 365 Defender podręcznika pilotażowego
+    - text: Podręcznik pilotażowy usługi Microsoft 365 Defender
       url: defender/eval-overview.md
 - title: Zabezpieczanie pracowników zdalnych
   linkLists:
@@ -44,51 +44,51 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Co to jest program Microsoft Defender for Identity?
+    - text: Co to jest usługa Microsoft Defender for Identity?
       url: /azure-advanced-threat-protection/what-is-atp
-    - text: Architektura usługi Microsoft Defender dla tożsamości
+    - text: Architektura usługi Microsoft Defender for Identity.
       url: /azure-advanced-threat-protection/atp-architecture
-- title: Defender for Office 365
+- title: Ochrona usługi Office 365 w usłudze Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: Co to jest defender dla Office 365?
+    - text: Co to jest Ochrona usługi Office 365 w usłudze Defender?
       url: office-365-security/defender-for-office-365.md
-    - text: Defender for Office 365 service description
+    - text: Ochrona usługi Office 365 w usłudze Defender — opis usługi
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 - title: Ochrona punktu końcowego w usłudze Microsoft Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: Co to jest program Microsoft Defender for Endpoint?
+    - text: Co to jest Ochrona punktu końcowego w usłudze Microsoft Defender?
       url: defender-endpoint/microsoft-defender-endpoint.md
-    - text: Centrum zabezpieczeń usługi Microsoft Defender portalu
+    - text: Omówienie portalu Centrum zabezpieczeń usługi Microsoft Defender
       url: defender-endpoint/portal-overview.md
-- title: Microsoft Defender dla chmury
+- title: Microsoft Defender for Cloud
   linkLists:
   - linkListType: overview
     links:
-    - text: Co to jest program Microsoft Defender dla chmury?
+    - text: Co to jest usługa Microsoft Defender for Cloud?
       url: /azure/security-center/security-center-intro
     - text: Obsługiwane funkcje
       url: /azure/security-center/security-center-services
-- title: Usługa Microsoft Defender dla aplikacji w chmurze
+- title: Microsoft Defender for Cloud Apps
   linkLists:
   - linkListType: overview
     links:
-    - text: Co to jest program Microsoft Defender dla aplikacji w chmurze?
+    - text: Co to jest usługa Microsoft Defender for Cloud Apps?
       url: /cloud-app-security/what-is-cloud-app-security
-    - text: Wprowadzenie do programu Microsoft Defender dla aplikacji w chmurze
+    - text: Wprowadzenie do usługi Microsoft Defender for Cloud Apps
       url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: Zarządzanie zabezpieczeniami
   linkLists:
   - linkListType: overview
     links:
-    - text: Secure score
+    - text: Wskaźnik bezpieczeństwa
       url: defender/microsoft-secure-score.md
 - title: Microsoft Sentinel
   linkLists:
   - linkListType: overview
     links:
-    - text: Co to jest Microsoft Sentinel?
+    - text: Co to jest usługa Microsoft Sentinel?
       url: /azure/sentinel/overview

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Dokumentacja programu Microsoft Defender dla punktu końcowego
-summary: Program Microsoft Defender for Endpoint zapewnia ochronę zapobiegawną, wykrywanie po naruszeniu zabezpieczeń, zautomatyzowane badania i reagowanie.
+title: Dokumentacja ochrony punktu końcowego w usłudze Microsoft Defender
+summary: Ochrona punktu końcowego w usłudze Microsoft Defender zapewnia ochronę prewencyjną, wykrywanie po naruszeniu zabezpieczeń, automatyczne badanie i reagowanie.
 metadata:
-  title: Dokumentacja programu Microsoft Defender dla punktu końcowego
-  description: Dowiedz się więcej o programie Microsoft Defender for Endpoint i maksymalizuj wbudowane funkcje zabezpieczeń, aby chronić urządzenia, wykrywać złośliwe działania i reakcyjne zagrożenia# Wymagane. opis artykułu wyświetlany w wynikach wyszukiwania. < 160 znaków.
+  title: Dokumentacja ochrony punktu końcowego w usłudze Microsoft Defender
+  description: Dowiedz się więcej o ochronie punktu końcowego w usłudze Microsoft Defender i zmaksymalizuj możliwości wbudowanych funkcji zabezpieczeń, aby chronić urządzenia, wykrywać złośliwe działania i korygować zagrożenia# Wymagane; opis artykułu wyświetlany w wynikach wyszukiwania. < 160 znaków.
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: mde
@@ -16,7 +16,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: d141c9f8b6109bd55bd64e5839db552fc13588de
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "62970547"
@@ -25,27 +25,27 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Co to jest program Microsoft Defender for Endpoint?
+    - text: Co to jest Ochrona punktu końcowego w usłudze Microsoft Defender?
       url: microsoft-defender-endpoint.md
-    - text: Co to jest program Defender for Endpoint Plan 1?
+    - text: Co to jest ochrona punktu końcowego w usłudze Defender (plan 1)?
       url: defender-endpoint-plan-1.md
-    - text: Porównanie usługi Defender dla punktu końcowego (plan 1) z planem 2
+    - text: Porównanie planu 1 ochrony punktu końcowego w usłudze Defender z planem 2
       url: defender-endpoint-plan-1-2.md
   - linkListType: whats-new
     links:
-    - text: Co nowego w programie Microsoft Defender dla punktu końcowego
+    - text: Co nowego w ochronie punktu końcowego w usłudze Microsoft Defender
       url: whats-new-in-microsoft-defender-endpoint.md
-    - text: Ogłaszanie programu Microsoft Defender dla punktu końcowego (plan 1)
+    - text: Zapowiadamy ochronę punktu końcowego w usłudze Microsoft Defender (plan 1)
       url: defender-endpoint-plan-1.md
   - linkListType: video
     links:
     - text: Klip wideo z omówieniem
       url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
-- title: Oceń & wdrożenie usługi
+- title: Ocena i wdrażanie usługi
   linkLists:
   - linkListType: get-started
     links:
-    - text: Szacowanie programu Microsoft Defender pod celu punktu końcowego
+    - text: Ocena ochrony punktu końcowego w usłudze Microsoft Defender
       url: evaluation-lab.md
     - text: Planowanie wdrożenia
       url: deployment-strategy.md
@@ -53,45 +53,45 @@ landingContent:
     links:
     - text: Przewodnik wdrażania
       url: deployment-phases.md
-    - text: Urządzenia obsługiwane na wsadach
+    - text: Dołączanie obsługiwanych urządzeń
       url: onboard-configure.md
-    - text: Konfigurowanie usługi Defender dla planu 1 punktu końcowego
+    - text: Instalowanie i konfigurowanie ochrony punktu końcowego w usłudze Defender (plan 1)
       url: mde-p1-setup-configuration.md
   - linkListType: how-to-guide
     links:
-    - text: Przewodnik po migracji
+    - text: Przewodnik migracji
       url: migration-guides.md
   - linkListType: video
     links:
-    - text: Klip wideo o dołączaniu
+    - text: Wideo dotyczące dołączania
       url: https://www.microsoft.com/videoplayer/embed/RE4bGqr
-- title: Operacje zabezpieczeń
+- title: Operacje dotyczące zabezpieczeń
   linkLists:
   - linkListType: overview
     links:
-    - text: Wykrywanie punktu końcowego i odpowiedź
+    - text: Wykrywanie i reagowanie dotyczące punktów końcowych
       url: overview-endpoint-detection-response.md
-    - text: Blokowanie i blokowanie zachowań
+    - text: Blokowanie i ograniczanie behawioralne
       url: behavioral-blocking-containment.md
-    - text: Zautomatyzowane badania i odpowiedzi (AIR)
+    - text: Zautomatyzowane badania i reakcje
       url: automated-investigations.md
-    - text: Zaawansowane łowy
+    - text: Zaawansowane wyszukiwanie zagrożeń
       url: advanced-hunting-overview.md
     - text: Microsoft Threat Experts
       url: microsoft-threat-experts.md
     - text: Analiza zagrożeń
       url: threat-analytics.md
-- title: Używanie programu Microsoft Defender for Endpoint na innych platformach
+- title: Korzystanie z ochrony punktu końcowego w usłudze Microsoft Defender na innych platformach
   linkLists:
   - linkListType: overview
     links:
-    - text: Program Microsoft Defender dla punktu końcowego na komputerze Mac
+    - text: Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac
       url: microsoft-defender-endpoint-mac.md
-    - text: Program Microsoft Defender for Endpoint w systemie iOS
+    - text: Ochrona punktu końcowego w usłudze Microsoft Defender w systemie iOS
       url: microsoft-defender-endpoint-ios.md
     - text: Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie
       url: microsoft-defender-endpoint-linux.md
-    - text: Program Microsoft Defender for Endpoint w systemie Android
+    - text: Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android
       url: microsoft-defender-endpoint-android.md
 - title: Odwołanie
   linkLists:
@@ -99,15 +99,15 @@ landingContent:
     links:
     - text: Zarządzanie i interfejsy API
       url: management-apis.md
-    - text: Integracja partnerów
+    - text: Integracja z partnerami
       url: partner-integration.md
-- title: Administracja zabezpieczeniami
+- title: Administrowanie zabezpieczeniami
   linkLists:
   - linkListType: overview
     links:
-    - text: Zagrożenia & zarządzanie lukami w zabezpieczeniach
+    - text: Zarządzanie zagrożeniami i lukami w zabezpieczeniach
       url: next-gen-threat-and-vuln-mgt.md
-    - text: Zmniejszenie powierzchni ataków
+    - text: Zmniejszanie obszaru podatnego na ataki
       url: overview-attack-surface-reduction.md
-    - text: Ochrona następnej generacji
+    - text: Ochrona nowej generacji
       url: next-generation-protection.md

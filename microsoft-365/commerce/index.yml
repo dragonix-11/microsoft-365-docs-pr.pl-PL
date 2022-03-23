@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Dokumentacja dotycząca subskrypcji i rozliczeń dla firm
-summary: Dowiedz się, jak kupować subskrypcje firmowe i zarządzać nimi, wykonywać zadania związane z zarządzaniem licencjami oraz zarządzać rozliczeniami i płatnościami za konta biznesowe firmy Microsoft.
+title: Subskrypcje biznesowe i dokumentacja rozliczeniowa
+summary: Dowiedz się, jak kupować subskrypcje biznesowe i zarządzać nimi, wykonywać zadania zarządzania licencjami oraz zarządzać rozliczeniami i płatnościami dla kont biznesowych za pomocą firmy Microsoft.
 metadata:
-  title: Dokumentacja dotycząca subskrypcji i rozliczeń dla firm
-  description: Dowiedz się, jak kupować subskrypcje firmowe i zarządzać nimi, wykonywać zadania związane z zarządzaniem licencjami oraz zarządzać rozliczeniami i płatnościami za konta biznesowe firmy Microsoft.
+  title: Subskrypcje biznesowe i dokumentacja rozliczeniowa
+  description: Dowiedz się, jak kupować subskrypcje biznesowe i zarządzać nimi, wykonywać zadania zarządzania licencjami oraz zarządzać rozliczeniami i płatnościami dla kont biznesowych za pomocą firmy Microsoft.
   ms.service: o365-administration
   ms.topic: landing-page
   ms.collection:
@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   ms.openlocfilehash: 30e99fcf7b984c2af17cbc7902bc4ff0fad6c3a6
   ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
   ms.lasthandoff: 10/06/2021
   ms.locfileid: "62970537"
 landingContent:
-- title: Zarządzanie rozliczeniami i płatnościami
+- title: Zarządzaj rachunkami i płatnościami
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -34,7 +34,7 @@ landingContent:
       url: billing-and-payments/understand-your-invoice2.md
     - text: Opłaty za subskrypcję
       url: billing-and-payments/pay-for-your-subscription.md
-    - text: Zarządzanie metodami płatności
+    - text: Zarządzanie formami płatności
       url: billing-and-payments/manage-payment-methods.md
     - text: Zmienianie adresów rozliczeniowych
       url: billing-and-payments/change-your-billing-addresses.md
@@ -50,7 +50,7 @@ landingContent:
       url: ../admin/manage/remove-licenses-from-users.md
     - text: Informacje na temat subskrypcji i licencji
       url: licenses/subscriptions-and-licenses.md
-    - text: Pobieranie bezterminowego oprogramowania i klucza licencji produktu
+    - text: Pobierz bezterminowe oprogramowanie i klucz licencji produktu
       url: ../admin/setup/download-software-licenses-csp.md
 - title: Uaktualnianie, odnawianie lub anulowanie
   linkLists:
@@ -64,7 +64,7 @@ landingContent:
       url: subscriptions/reactivate-your-subscription.md
     - text: Anulowanie subskrypcji
       url: subscriptions/cancel-your-subscription.md
-    - text: Zamykanie konta
+    - text: Zamknij konto
       url: close-your-account.md
 - title: Wypróbuj lub kup
   linkLists:

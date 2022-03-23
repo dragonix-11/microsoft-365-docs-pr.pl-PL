@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Uzyskaj najnowszą wersję izolacji sprzętowej. Zapobieganie bieżącym i pojawiającym się atakom, na przykład wykorzystaniom lub złośliwym linkom, w celu zakłócania wydajności pracowników i zabezpieczeń przedsiębiorstwa.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1dfe0bf7082d05fa534a34cb0dd55d9227fca1a
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8a483c6430721e0540a7012dabfcbd4480fd7ad8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014679"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675377"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard dla Office dla administratorów
 
@@ -138,7 +138,6 @@ Office obsługuje następujące zasady, aby umożliwić skonfigurowanie funkcji 
 |Wyłączanie dostępu do kamery i mikrofonu dla dokumentów otwieranych w aplikacji Application Guard dla Office|Włączenie tych zasad Office dostępu do kamery i mikrofonu w funkcji Application Guard dla Office.|
 |Ograniczanie drukowania z dokumentów otwieranych w aplikacji Application Guard dla Office|Włączenie tych zasad ograniczy liczbę drukarek, na których użytkownik może drukować z pliku otwartego w funkcji Application Guard dla systemu Office. Za pomocą tych zasad można na przykład ograniczyć drukowanie tylko do pliku PDF użytkownikom.|
 |Uniemożliwianie użytkownikom usuwania do guard aplikacji w Office ochrony plików|Włączenie tych zasad spowoduje usunięcie opcji (w ramach środowiska aplikacji Office) wyłączenia funkcji Application Guard na Office ochrony lub otwarcia pliku poza rozszerzeniem Application Guard dla systemu Office. <p> **Uwaga:** Użytkownicy nadal mogą pominąć te zasady, ręcznie usuwając właściwość mark-of-the-web z pliku lub przenosząc dokument do zaufanej lokalizacji.|
-|
 
 > [!NOTE]
 > Poniższe zasady będą wymagały wylogowania użytkownika i ponownego zalogowania się w celu Windows w życie:

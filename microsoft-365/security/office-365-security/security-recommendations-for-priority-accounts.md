@@ -21,12 +21,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak podnieść poziom ustawień zabezpieczeń i korzystać z raportów, alertów i badań dla kont priorytetowych w swoich Microsoft 365 organizacjach.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e0964d9b023a3a7c1efdda121cc34c1f37edd06
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: f27e146df680b36c117816f0a07e45e0345c647a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63028958"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675421"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Zalecenia dotyczące zabezpieczeń dla kont priorytetowych w Microsoft 365
 
@@ -38,10 +38,6 @@ Microsoft 365 usługi Microsoft Defender dla Office 365 zawierają kilka kluczow
 
 ![Podsumowanie zaleceń dotyczących zabezpieczeń w postaci ikony.](../../media/security-recommendations-for-priority-users.png)
 
-<br>
-
-****
-
 |Zadanie|Wszystkie Office 365 Enterprise planów|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
 |[Zwiększanie zabezpieczeń logowania dla kont priorytetowych](#increase-sign-in-security-for-priority-accounts)|![Dołączona.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -49,7 +45,6 @@ Microsoft 365 usługi Microsoft Defender dla Office 365 zawierają kilka kluczow
 |[Stosowanie tagów użytkowników do kont priorytetowych](#apply-user-tags-to-priority-accounts)|||![Uwzględnione](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Monitorowanie priorytetów kont w alertach, raportach i wykrywaniach](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Uwzględnione](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Szkolenie użytkowników](#train-users)|![Dołączona.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|
 
 > [!NOTE]
 > Aby uzyskać informacje na _temat zabezpieczania_ kont uprzywilejowanych (kont administratora), zobacz [ten temat](/azure/architecture/framework/security/critical-impact-accounts).
@@ -94,10 +89,6 @@ Możesz również tworzyć tagi niestandardowe, aby dodatkowo identyfikować i k
 
 Po zabezpieczeniu i oznaczeniu priorytetowych użytkowników możesz używać dostępnych raportów, alertów i badań w usługach EOP i Defender dla usługi Office 365 do szybkiego identyfikowania zdarzeń lub wykrycia dotyczących kont priorytetowych. Funkcje obsługi tagów użytkowników są opisane w poniższej tabeli.
 
-<br>
-
-****
-
 |Funkcja|Opis|
 |---|---|
 |Alerty|Tagi użytkowników, których dotyczy problem, są widoczne i dostępne jako filtry na stronie **Alerty** w Microsoft 365 Defender sieci Web. Aby uzyskać więcej informacji, zobacz [Wyświetlanie alertów](../../compliance/alert-policies.md#viewing-alerts).|
@@ -105,7 +96,6 @@ Po zabezpieczeniu i oznaczeniu priorytetowych użytkowników możesz używać do
 |Widoki kampanii|Tagi użytkowników są jedną z wielu właściwości, które można filtrować w widokach kampanii w programie Microsoft Defender Office 365 Plan 2. Aby uzyskać więcej informacji, zobacz [Widoki kampanii](campaigns.md).|
 |Raport o stanie ochrony przed zagrożeniami|W niemal wszystkich widokach i tabelach szczegółów w raporcie o stanie ochrony przed zagrożeniami można filtrować wyniki według kont **priorytetów**. Aby uzyskać więcej informacji, zobacz [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).|
 |Raport Problemy z pocztą e-mail dla kont priorytetowych|Raport **Problemy z pocztą** e-mail dla kont priorytetowych w centrum administracyjnym usługi Exchange zawiera informacje o niedostarczanych i opóźnionych wiadomościach dla kont **priorytetowych**. Aby uzyskać więcej informacji, zobacz [Raport Problemy z pocztą e-mail dla kont priorytetowych](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
-|
 
 ## <a name="train-users"></a>Szkolenie użytkowników
 
@@ -114,10 +104,6 @@ Szkolenia dla użytkowników z kontami priorytetowymi mogą ułatwić użytkowni
 Podręcznik kampanii kampanii na [harvardzie dla](https://www.belfercenter.org/CyberPlaybook) szkół podstawowych zapewnia doskonałe wskazówki dotyczące ustanawiania silnej kultury informacji na temat bezpieczeństwa w organizacji, w tym dla użytkowników szkoleniowych w zakresie identyfikowania ataków na wyłudzanie informacji.
 
 Microsoft 365 udostępnia następujące zasoby, które ułatwiają informowanie użytkowników w organizacji:
-
-<br>
-
-****
 
 |Pojęcie|Zasoby|Opis|
 |---|---|---|

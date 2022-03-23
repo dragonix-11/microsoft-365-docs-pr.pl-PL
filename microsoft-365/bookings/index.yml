@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft Bookings
-summary: 'Dowiedz się, jak skonfigurować usługę Microsoft Bookings w celu świadczenia usług klientom z rezerwowania terminów.'
+summary: 'Dowiedz się, jak skonfigurować usługę Microsoft Bookings w celu świadczenia usług klientom na podstawie terminu.'
 brand: m365
 metadata:
   title: Microsoft Bookings
-  description: 'Dowiedz się, jak skonfigurować usługę Microsoft Bookings w celu świadczenia usług klientom z rezerwowania terminów.'
+  description: 'Dowiedz się, jak skonfigurować usługę Microsoft Bookings w celu świadczenia usług klientom na podstawie terminu.'
   ms.service: bookings
   ms.topic: hub-page
   author: dmaguire
@@ -16,20 +16,20 @@ additionalContent:
   sections:
     - items:
         - title: Co to jest usługa Microsoft Bookings?
-          summary: 'Planowanie terminów i zarządzanie nimi za pomocą aplikacji i kalendarza rezerwacji opartej na sieci Web, w tym Outlook pracowników i automatycznych wiadomości e-mail z powiadomieniami.'
+          summary: 'Planuj terminy i zarządzaj nimi za pomocą internetowego kalendarza rezerwacji i aplikacji, a w tym integracji programu Outlook dla pracowników i automatycznych wiadomości e-mail z powiadomieniami.'
           url: bookings-overview.md
-        - title: Wprowadź informacje służbowe
-          summary: 'Wprowadź swoją stronę O nas, w tym nazwę firmy, adres, numer telefonu, adres URL witryny internetowej, logo i godziny pracy w uwitrynie Microsoft Bookings.'
+        - title: Wprowadź informacje o firmie
+          summary: 'Utwórz stronę Informacje o nas, wprowadzając nazwę firmy, adres, numer telefonu, adres URL witryny internetowej, logo i godziny pracy w usłudze Microsoft Bookings.'
           url: enter-business-information.md
         - title: Pobierz aplikację Bookings
-          summary: Zmień motyw kolorów i skonfiguruj wygląd strony rezerwacji dla klientów zewnętrznych.
+          summary: Zmień motyw kolorów i skonfiguruj wygląd zewnętrznej strony rezerwacji skierowanej do klienta.
           url: customize-booking-page.md
-        - title: Dodawanie personelu do rezerwacji
-          summary: 'Utwórz listę pracowników i zarządzaj szczegółami członka personelu, takimi jak imię i nazwisko, numer telefonu oraz adres e-mail.'
+        - title: Dodaj pracowników do aplikacji Bookings
+          summary: 'Utwórz listę pracowników i zarządzaj szczegółami członków personelu, takimi jak imię i nazwisko, numer telefonu i adres e-mail.'
           url: add-staff.md
-        - title: 'Planowanie zamykania firmy, urlopów i urlopów'
-          summary: 'Zaplanuj zamknięcie biura i czas pracownika z kalendarza aplikacji Bookings, aby pracownicy oznaczali pracowników jako niedostępne dla rezerwacji w określonych godzinach.'
+        - title: 'Planowanie przerw w działaniu firmy, nieobecności i urlopów'
+          summary: 'Zaplanuj godziny zamknięcia biura i nieobecności pracownika z kalendarza aplikacji Bookings, aby pracownicy mogli być oznaczani jako niedostępni dla rezerwacji w określonych godzinach.'
           url: schedule-closures-time-off-vacation.md
-        - title: Godziny pracy pracowników w aplikacji Microsoft Bookings
-          summary: Ustaw godziny pracy i dostępność pracowników w uwitrynie Microsoft Bookings.
+        - title: Godziny pracy pracowników w usłudze Microsoft Bookings
+          summary: Ustaw godziny pracy i dostępność pracowników w usłudze Microsoft Bookings.
           url: employee-hours.md
