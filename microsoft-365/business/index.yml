@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365 Business Premium zasobów
-summary: W przypadku firm z maksymalnie 300 pracownikami firma Microsoft 365 Business Premium wydajną pracę w dowolnym miejscu dzięki aplikacjom Office i spotkaniom online. Zabezpieczanie firmy za pomocą zaawansowanych funkcji zabezpieczeń oraz usprawnianie konfiguracji i zarządzania it za pomocą jednego rozwiązania.
+title: Zasoby usługi Microsoft 365 Business Premium
+summary: Dla firm mających maksymalnie 300 pracowników usługa Microsoft 365 Business Premium umożliwia wydajną pracę w dowolnym miejscu dzięki aplikacjom pakietu Office i spotkaniom online. Chroń swoją firmę za pomocą zaawansowanych funkcji zabezpieczeń oraz usprawnij konfigurację IT i zarządzanie nią za pomocą jednego rozwiązania.
 brand: m365
 metadata:
-  title: Microsoft 365 Business Premium zasobów
-  description: Dokumentacja do konfigurowania i pracy z Microsoft 365 Business Premium.
+  title: Zasoby usługi Microsoft 365 Business Premium
+  description: Dokumentacja dotycząca konfigurowania usługi Microsoft 365 Business Premium i pracy z nią.
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
@@ -15,23 +15,23 @@ metadata:
   ms.author: efrene
   ms.date: 03/01/2022
 productDirectory:
-  title: Wydajność i bezpieczeństwo dzięki Microsoft 365 Business Premium
+  title: Produktywność i bezpieczeństwo przy użyciu usługi Microsoft 365 Business Premium
   items:
     - title: Obejrzyj
       imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
-      summary: Pięć najlepszych zalet Microsoft 365 Business Premium.
+      summary: Pięć najważniejszych zalet usługi Microsoft 365 Business Premium.
       url: 'https://aka.ms/M365BPvideo'
     - title: Co nowego?
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: Poznaj nowe funkcje usługi Defender dla firm w usługach business Premium i Microsoft 365 Lighthouse.
+      summary: Dowiedz się więcej o nowych możliwościach usługi Defender dla Firm w usługach Business Premium i Microsoft 365 Lighthouse.
       url: 'https://aka.ms/SMBsecurityFebBlog'
-    - title: Uzyskaj bezpłatny zestaw dla partnerów
+    - title: Pobierz bezpłatny zestaw dla partnerów
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: Praktyczne wskazówki i przejdź do zasobów rynkowych dla partnerów w zakresie zabezpieczania pracy hybrydowej.
+      summary: Praktyczne wskazówki i wprowadzanie zasobów rynkowych dla partnerów na potrzeby zabezpieczania pracy hybrydowej.
       url: 'https://aka.ms/SMBSecurityKit'
-    - title: Dołączanie do serii seminariów internetowych partnerów
+    - title: Dołącz do serii seminariów internetowych dla partnerów
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: 'Dowiedz się, jak prowadzić upsell i rozwijać swoją firmę dzięki programowi Microsoft 365 Business Premium, programowi Microsoft Defender dla firm i programowi Microsoft 365 Lighthouse.'
+      summary: 'Dowiedz się, jak zwiększyć sprzedaż i rozwijać swoją firmę dzięki usługom Microsoft 365 Business Premium, Microsoft Defender dla Firm i Microsoft 365 Lighthouse.'
       url: 'https://aka.ms/M365MDBseries'
 conceptualContent:
   items:
@@ -42,14 +42,14 @@ conceptualContent:
           text: Omówienie usługi Microsoft 365 Business Premium
         - url: ../business-video/index.yml
           itemType: video
-          text: Microsoft 365 dla firm
+          text: Szkolenia dotyczące usługi Microsoft 365 Business
         - url: 'https://go.microsoft.com/fwlink/?linkid=2164213'
           itemType: overview
-          text: Porównanie Microsoft 365 dla firm
+          text: Porównanie planów platformy Microsoft 365 dla Firm
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
-          text: Microsoft 365 dla firm — często zadawane pytania
-    - title: Konfigurowanie Microsoft 365 Business Premium
+          text: Microsoft 365 dla Firm — często zadawane pytania
+    - title: Konfigurowanie usługi Microsoft 365 Business Premium
       links:
         - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
@@ -59,35 +59,35 @@ conceptualContent:
           text: 2. Planowanie procesu konfiguracji
         - url: ../business-premium/m365bp-setup.md
           itemType: how-to-guide
-          text: 3. Konfigurowanie Microsoft 365 Business Premium
+          text: 3. Konfigurowanie usługi Microsoft 365 Business Premium
         - url: ../admin/security-and-compliance/secure-your-business-data.md
           itemType: how-to-guide
-          text: 4. 10 najlepszych sposobów zabezpieczania Microsoft 365 dla firm
-    - title: Co to jest Microsoft 365 Lighthouse?
+          text: 4. 10 najważniejszych sposobów zabezpieczania usługi Microsoft 365 dla Firm
+    - title: Co to jest usługa Microsoft 365 Lighthouse?
       links:
         - url: ../lighthouse/m365-lighthouse-overview.md
           itemType: overview
-          text: Omówienie Microsoft 365 Lighthouse (dla partnerów)
+          text: Omówienie usługi Microsoft 365 Lighthouse (dla partnerów)
         - url: ../lighthouse/m365-lighthouse-sign-up.md
           itemType: how-to-guide
-          text: Jak się zarejestrować i zostać programem Microsoft CSP
+          text: Jak utworzyć konto i zostać dostawcą CSP firmy Microsoft
         - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
           itemType: how-to-guide
-          text: Konfigurowanie i zabezpieczanie portalu Latarnia morska
+          text: Konfigurowanie i zabezpieczanie portalu Lighthouse
         - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
           itemType: overview
-          text: Używanie planu bazowego dla dzierżaw klientów
+          text: Używanie linii bazowych dla dzierżaw klientów
         - url: ../lighthouse/m365-lighthouse-faq.yml
           itemType: reference
-          text: Microsoft 365 Lighthouse często zadawane pytania
+          text: Microsoft 365 Lighthouse — często zadawane pytania
     - title: Zasoby dla partnerów (tylko w języku angielskim)
       links:
         - url: 'https://aka.ms/M365BPPartnerPlaybook'
           itemType: how-to-guide
-          text: Zobacz podręcznik Microsoft 365 Business Premium i serii readiness partnerów
+          text: Zobacz serię podręczników i przygotowania partnerów do usługi Microsoft 365 Business Premium
         - url: 'https://aka.ms/M365MDBseries'
           itemType: video
-          text: Dołącz do serii seminariów internetowych partnerów!
+          text: Dołącz do serii seminariów internetowych dla partnerów!
         - url: 'https://partner.microsoft.com'
           itemType: overview
           text: Microsoft Partner Network
@@ -98,27 +98,27 @@ conceptualContent:
       links:
         - url: ../security/defender-business/mdb-overview.md
           itemType: overview
-          text: Omówienie usługi Microsoft Defender dla firm
+          text: Omówienie usługi Microsoft Defender dla Firm
         - url: ../security/defender-business/mdb-setup-configuration.md
           itemType: overview
-          text: Konfigurowanie i konfigurowanie usługi Defender dla firm
+          text: Instalowanie i konfigurowanie usługi Defender dla Firm
         - url: ../security/defender-business/compare-mdb-m365-plans.md
           itemType: overview
-          text: Porównanie funkcji zabezpieczeń w Microsoft 365 planów
+          text: Porównanie funkcji zabezpieczeń w planach platformy Microsoft 365
         - url: ../security/defender-business/mdb-faq.yml
           itemType: reference
-          text: Defender for Business — często zadawane pytania
-    - title: Ochrona zawartości wiadomości e-mail Office plików
+          text: Usługa Defender dla Firm — często zadawane pytania
+    - title: Ochrona zawartości wiadomości e-mail i plików pakietu Office
       links:
         - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
-          text: Omówienie programu Microsoft Defender dla Office 365
+          text: Omówienie ochrony usługi Office 365 w usłudze Microsoft Defender
         - url: ../security/office-365-security/protect-against-threats.md
           itemType: how-to-guide
-          text: Konfigurowanie i konfigurowanie usługi Defender dla Office 365
+          text: Instalowanie i konfigurowanie ochrona usługi Office 365 w usłudze Defender
         - url: ../security/office-365-security/anti-malware-protection-faq-eop.yml
           itemType: reference
-          text: Defender for Office 365 FAQ
+          text: Ochrona usługi Office 365 w usłudze Defender — często zadawane pytania
     - title: Pomoc techniczna i społeczność
       links:
         - url: 'https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog'
@@ -132,18 +132,18 @@ conceptualContent:
           text: Wyślij opinię
         - url: 'https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB'
           itemType: overview
-          text: Pomoc Community dla małych i średnich firm
-    - title: Jak to zrobić?
+          text: Społeczność techniczna dla małych i średnich firm
+    - title: Jak mogę...
       links:
         - url: ../admin/manage/find-your-partner-or-reseller.md
           itemType: how-to-guide
-          text: Znajdowanie partnera firmy Microsoft w celu pomocy mojej firmie
+          text: 'Znajdź partnera firmy Microsoft, który pomoże mojej firmie'
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
-          text: Zmiana na inny Microsoft 365 plan
+          text: Zmień na inny plan platformy Microsoft 365
         - url: ../admin/setup/migrate-email-and-contacts-admin.md
           itemType: how-to-guide
-          text: Migrowanie wiadomości e-mail i kontaktów do Microsoft 365
+          text: Migrowanie wiadomości e-mail i kontaktów na platformę Microsoft 365
         - url: ../admin/get-help-support.md
           itemType: how-to-guide
-          text: Skontaktuj się z pomocą techniczną w Microsoft 365
+          text: Skontaktuj się z pomocą techniczną platformy Microsoft 365

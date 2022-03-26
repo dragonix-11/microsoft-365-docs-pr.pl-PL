@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Dokumentacja programu Microsoft Defender Office 365 usługi
-summary: Dowiedz się więcej o niezawodnych rozwiązaniach zabezpieczeń w Office 365 Defender, aby lepiej chronić pocztę e-mail i narzędzia do współpracy.
+title: Dokumentacja ochrony usługi Office 365 w usłudze Microsoft Defender
+summary: Dowiedz się więcej o niezawodnych rozwiązaniach zabezpieczeń w ochronie usługi Office 365 w usłudze Defender, aby lepiej chronić pocztę e-mail i narzędzia do współpracy.
 metadata:
-  title: Dokumentacja programu Microsoft Defender Office 365 zabezpieczeń
-  description: Dowiedz się więcej o niezawodnych rozwiązaniach zabezpieczeń w Office 365 Defender, aby lepiej chronić pocztę e-mail i narzędzia do współpracy.
+  title: Dokumentacja zabezpieczeń ochrony usługi Office 365 w usłudze Microsoft Defender
+  description: Dowiedz się więcej o niezawodnych rozwiązaniach zabezpieczeń w ochronie usługi Office 365 w usłudze Defender, aby lepiej chronić pocztę e-mail i narzędzia do współpracy.
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: mdo
@@ -16,92 +16,92 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: c132c68ba56dedd7ae38ba4c922f815f316bb062
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "62970550"
 landingContent:
-- title: Defender for Office 365 & Exchange Online Protection
+- title: Ochrona usługi Office 365 w usłudze Defender i usłudze Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
-    - text: Office 365 zabezpieczeń — omówienie
+    - text: Omówienie zabezpieczeń usługi Office 365
       url: overview.md
-    - text: Konfigurowanie wstępnie ustawionych zasad zabezpieczeń w programach EOP i Defender for Office 365
+    - text: Konfigurowanie przy użyciu wstępnie ustawionych zasad zabezpieczeń w usłudze EOP i ochronie usługi Office 365 w usłudze Defender
       url: preset-security-policies.md
-- title: Wprowadzenie do usługi Defender dla Office 365
+- title: Wprowadzenie do ochrony usługi Office 365 w usłudze Defender
   linkLists:
   - linkListType: get-started
     links:
     - text: Ochrona przed zagrożeniami
       url: protect-against-threats.md
-    - text: Wstępnie ustawione zasady zabezpieczeń w usługach EOP i Microsoft Defender dla Office 365
+    - text: Wstępne ustawienie zasad zabezpieczeń w usłudze EOP i ochronie usługi Office 365 w usłudze Microsoft Defender
       url: preset-security-policies.md
-    - text: Co nowego w programie Microsoft Defender dla systemu Office 365
+    - text: Co nowego w ochronie usługi Office 365 w usłudze Microsoft Defender?
       url: whats-new-in-defender-for-office-365.md
-- title: Ocenianie usługi Defender pod Office 365
+- title: Oceń ochronę usługi Office 365 w usłudze Microsoft Defender
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Ocenianie usługi Defender pod Office 365
+    - text: Oceń ochronę usługi Office 365 w usłudze Microsoft Defender
       url: office-365-evaluation.md
-    - text: Przełączanie do Exchange Online Protection
+    - text: Przełącz do usługi Exchange Online Protection
       url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
-- title: Konfigurowanie ochrony uwierzytelniania poczty e-mail
+- title: Konfigurowanie ochrony poczty e-mail za pomocą uwierzytelniania
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Konfigurowanie spf w celu zapobiegania fałszerszem
+    - text: Konfigurowanie platformy SPF w celu zapobiegania spoofingowi
       url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-    - text: Używanie funkcji DKIM do sprawdzania poprawności wychodzących wiadomości e-mail wysłanych z domeny niestandardowej
+    - text: Sprawdzanie poprawności wychodzących wiadomości e-mail wysyłanych z domeny niestandardowej za pomocą funkcji DKIM
       url: use-dkim-to-validate-outbound-email.md
-    - text: Używanie funkcji DMARC do sprawdzania poprawności wiadomości e-mail
+    - text: Sprawdzanie poprawności poczty e-mail przy użyciu usługi DMARC
       url: use-dmarc-to-validate-email.md
-- title: Konfigurowanie Exchange Online Protection
+- title: Konfigurowanie usługi Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
-    - text: Exchange Online Protection omówienie
+    - text: Omówienie usługi Exchange Online Protection
       url: exchange-online-protection-overview.md
-    - text: Zalecane ustawienia usług EOP i Microsoft Defender w Office 365 konfiguracji
+    - text: Zalecane ustawienia zabezpieczeń usługi EOP i ochrony usługi Office 365 w usłudze Microsoft Defender do skonfigurowania
       url: recommended-settings-for-eop-and-office365.md
-- title: Zapobiegaj
+- title: Zapobieganie
   linkLists:
   - linkListType: overview
     links:
-    - text: Konfigurowanie dzierżawy Microsoft 365 w celu zwiększenia zabezpieczeń
+    - text: Konfigurowanie dzierżawy platformy Microsoft 365 w celu zwiększenia bezpieczeństwa
       url: tenant-wide-setup-for-increased-security.md
-    - text: Analizator konfiguracji w usługach EOP i Defender for Office 365
+    - text: Analizator konfiguracji w usłudze EOP i ochronie usługi Office 365 w usłudze Defender
       url: configuration-analyzer-for-security-policies.md
-    - text: Uzyskaj szczegółowe informacje dzięki szkoleniom symulacyjnych ataków
+    - text: Uzyskuj szczegółowe informacje dzięki szkoleniu związanemu z symulacją ataku
       url: attack-simulation-training-insights.md
-- title: Wykryj
+- title: Wykrywanie
   linkLists:
   - linkListType: overview
     links:
-    - text: Reguły przepływu poczty (reguły transportu) w programie Exchange Online
+    - text: Reguły przepływu (transportu) poczty e-mail w usłudze Exchange Online
       url: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
-    - text: Śledzenie zagrożeń
+    - text: Moduły śledzące zagrożenia
       url: threat-trackers.md
-    - text: Inteligentne raporty i szczegółowe informacje w Centrum & zgodności
+    - text: Inteligentne raporty i szczegółowe informacje w Centrum zabezpieczeń i zgodności
       url: reports-and-insights-in-security-and-compliance.md
 - title: Badanie
   linkLists:
   - linkListType: overview
     links:
-    - text: Widoki w Eksploratorze zagrożeń i wykrywania w czasie rzeczywistym
+    - text: Widoki eksploratora zagrożeń i wykrywanie w czasie rzeczywistym
       url: threat-explorer-views.md
-    - text: Widoki kampanii w programie Microsoft Defender dla Office 365
+    - text: Widoki kampanii w ochronie usługi Office 365 w usłudze Microsoft Defender
       url: campaigns.md
-    - text: Badanie złośliwych wiadomości e-mail dostarczonych w Office 365
+    - text: Badanie złośliwych wiadomości e-mail dostarczonych w usłudze Office 365
       url: investigate-malicious-email-that-was-delivered.md
-    - text: Wyświetlanie programu Defender Office 365 raportów
+    - text: Wyświetlanie raportów ochrony usługi Office 365 w usłudze Defender
       url: view-reports-for-mdo.md
-- title: Badanie w u programie EOP
+- title: Badanie w usłudze EOP
   linkLists:
   - linkListType: overview
     links:
-    - text: Raportowanie i śledzenie wiadomości w u usługi EOP
+    - text: Raportowanie i śledzenie komunikatów w usłudze EOP
       url: reporting-and-message-trace-in-exchange-online-protection.md
     - text: Wyświetlanie dziennika inspekcji administratora
       url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
@@ -109,21 +109,21 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Remediate malicious email delivered in Office 365
+    - text: Korygowanie złośliwych wiadomości e-mail dostarczanych w usłudze Office 365
       url: remediate-malicious-email-delivered-office-365.md
-    - text: Odpowiadanie na naruszone konto e-mail
+    - text: Odpowiadanie na konto e-mail z naruszonymi zabezpieczeniami
       url: responding-to-a-compromised-email-account.md
-    - text: Rozwiązywanie problemów z Outlook regułami formularzy niestandardowych i atakami po formularzach niestandardowych
+    - text: Korygowanie ataków wstrzykiwania reguł programu Outlook i formularzy niestandardowych
       url: detect-and-remediate-outlook-rules-forms-attack.md
-    - text: Przesyłanie wyników fałszywie dodatnich/wyników fałszywie ujemnych
+    - text: Prześlij wyniki fałszywie dodatnie/fałszywie ujemne
       url: admin-submission.md
-- title: Automatyzowanie
+- title: Automatyzacja
   linkLists:
   - linkListType: overview
     links:
-    - text: Jak działa program Defender for Office 365
+    - text: Jak działają zautomatyzowane badania i reakcje (AIR) w ochronie usługi Office 365 w usłudze Defender
       url: automated-investigation-response-office.md
-    - text: Wprowadzenie programem AIR w programie Defender dla Office 365
+    - text: Wprowadzenie do funkcji AIR w ochronie usługi Office 365 w usłudze Defender
       url: office-365-air.md
-    - text: Adres naruszonych kont użytkowników za pomocą air
+    - text: Rozwiązywanie problemów z kontami użytkowników z naruszonymi zabezpieczeniami za pomocą funkcji AIR
       url: address-compromised-users-quickly.md

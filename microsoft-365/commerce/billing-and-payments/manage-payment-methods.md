@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie metodami płatności
+title: Zarządzanie formami płatności
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
@@ -26,60 +26,60 @@ description: Kupowanie produktów lub usług biznesowych firmy Microsoft przy u�
 ms.date: 04/02/2021
 ms.openlocfilehash: 1b36a11c2bdb34880f8f02b84788062dfb88c4b1
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63319759"
 ---
-# <a name="manage-payment-methods"></a>Zarządzanie metodami płatności
+# <a name="manage-payment-methods"></a>Zarządzanie formami płatności
 
 > [!IMPORTANT]
-> Od 26 stycznia 2021 r. nowe konta bankowe nie są już obsługiwane dla klientów w Belgia, Francja, Włochy, Luksemburg, Portugalia, Hiszpania i Stany Zjednoczone. Jeśli jesteś klientem w jednym z tych krajów, możesz nadal płacić za subskrypcję za pomocą istniejącego konta bankowego i dodawać do niego nowe subskrypcje, ale tylko pod dopóki konto bankowe jest w dobrym stanie.
+> Od 26 stycznia 2021 r. nowe konta bankowe nie są już obsługiwane dla klientów z Belgii, Francji, Włoch, Luksemburga, Portugalii, Hiszpanii i Stanów Zjednoczonych. Jeśli jesteś klientem pochodzącym z jednego z tych krajów, możesz nadal płacić za subskrypcję przy użyciu istniejącego konta bankowego i możesz dodawać do niego nowe subskrypcje, ale tylko pod warunkiem, że konto bankowe działa poprawnie.
 
-Kupując produkty lub usługi biznesowe firmy Microsoft, możesz użyć istniejącej metody płatności lub dodać nową. Za kupne rzeczy możesz zapłacić przy użyciu karty kredytowej lub debetowej albo konta bankowego.
+Kupując produkty lub usługi biznesowe firmy Microsoft, możesz użyć istniejącej metody płatności lub dodać nową. Za kupione produkty możesz zapłacić przy użyciu karty kredytowej lub debetowej albo konta bankowego.
 
-Jeśli Twoje konto biznesowe ma profil rozliczeniowy, a Ty jesteś właścicielem profilu rozliczeniowego lub współautorem profilu rozliczeniowego, możesz używać profilu rozliczeniowego z użyciem karty kredytowej lub płatności na fakturze do zakupów lub opłacania rachunków. Jeśli jesteś menedżerem ds. faktur rozliczeniowych, do płacenia rachunków możesz używać tylko profilu rozliczeniowego. Aby dowiedzieć się więcej o profilach rozliczeniowych i rolach, zobacz [Zarządzanie profilami rozliczeniowymi](manage-billing-profiles.md).
+Jeśli Twoje konto biznesowe ma profil rozliczeniowy, a Ty jesteś właścicielem profilu rozliczeniowego lub jego współautorem, możesz używać profilu rozliczeniowego wspomaganego przez kartę płatniczą lub płatności fakturowane w celu dokonywania zakupów lub opłacania rachunków. Jeśli jesteś menedżerem ds. faktur rozliczeniowych, do opłacania rachunków możesz używać tylko profilu rozliczeniowego. Aby dowiedzieć się więcej o profilach i rolach rozliczeniowych, zobacz [Zarządzanie profilami rozliczeniowymi](manage-billing-profiles.md).
 
-Jeśli Twoje konto biznesowe nie ma profilu rozliczeniowego, każdy administrator globalny lub administrator rozliczeń może zarządzać dowolnym kontem bankowym dodanym do tego konta biznesowego i używać go. Można jednak zarządzać tylko dodawać kartami kredytowymi i ich używać.
+Jeśli Twoje konto biznesowe nie ma profilu rozliczeniowego, każdy administrator globalny lub administrator ds. rozliczeń może zarządzać dowolnym kontem bankowym dodanym do tego konta biznesowego i używać go. Można jednak zarządzać dodanymi kartami płatniczymi lub ich używać.
 
 > [!NOTE]
 > Opcja płatności za pomocą konta bankowego nie jest dostępna w niektórych krajach lub regionach.
 >
-> Należy użyć metody płatności wydanej z tego samego kraju, w którym jest dzierżawa.
+> Musisz użyć metody płatności z tego samego kraju, w którym funkcjonuje dzierżawa.
 
 > [!TIP]
-> Jeśli potrzebujesz pomocy dotyczącej czynności opisanej w tym temacie, rozważ współpracę z specjalistą [ds. małej firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy możecie uzyskać całodobowy dostęp do małych ekspertów biznesowych, gdy rozwijasz swoją firmę, od dołączania do codziennego użytku.
+> Jeśli potrzebujesz pomocy dotyczącej kroków opisanych w tym temacie, rozważ [współpracę ze specjalistą firmy Microsoft ds. małych firm](https://go.microsoft.com/fwlink/?linkid=2186871). Dzięki Pomocy biznesowej Ty i Twoi pracownicy uzyskujecie całodobowy dostęp do wsparcia ze strony specjalistów ds. małych firm w miarę rozwoju Twojej firmy — od dołączania do codziennego użytkowania.
 
-## <a name="watch-update-your-payment-method"></a>Obejrzyj: Zaktualizuj swoją metodę płatności
+## <a name="watch-update-your-payment-method"></a>Obejrzyj: aktualizowanie metody płatności
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-Możesz łatwo zaktualizować metodę płatności dla swojej subskrypcji usługi Microsoft 365 Business. Możesz zmienić szczegóły, takie jak używana karta kredytowa, imię i nazwisko lub adres.
+Z łatwością możesz zaktualizować metodę płatności dla subskrypcji platformy Microsoft 365 Business. Szczegółowe informacje, takie jak używane karty płatnicze, imię i nazwisko lub adres, można zmienić.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Aby wykonać zadania z tego artykułu, musisz być administratorem globalnym lub rozliczeniowym. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+Musisz być administratorem globalnym lub administratorem ds. rozliczeń, aby wykonywać zadania opisane w tym artykule. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="add-a-payment-method"></a>Dodaj formę płatności
 
-Dodanie metody płatności nie wiąże się z żadnymi subskrypcjami. Aby przypisać jedną subskrypcję do metody płatności, zobacz [Zmienianie metody płatności dla pojedynczej subskrypcji](#change-a-payment-method-for-a-single-subscription). Aby zamienić wszystkie subskrypcje, które korzystają z innej metody płatności, na nową, zobacz [Zamienianie metody płatności](#replace-a-payment-method).
+Dodawanie metody płatności nie wiąże się z żadnymi subskrypcjami. Aby przypisać jedną subskrypcję do metody płatności, zobacz [Zmienianie metody płatności dla pojedynczej subskrypcji](#change-a-payment-method-for-a-single-subscription). Aby zamienić wszystkie subskrypcje, które korzystają z innej metody płatności, na nową metodą, zobacz [Zamienianie metody płatności](#replace-a-payment-method).
 
 1. W centrum administracyjnym przejdź do strony **Rachunki** > **Rachunki i płatności** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Metody płatności</a>.
 2. Wybierz pozycję **Dodaj metodę płatności**.
 3. Na stronie **Metody płatności** wybierz metodę płatności z menu rozwijanego.
-4. Wprowadź informacje dotyczące nowej karty lub konta bankowego, a następnie wybierz pozycję **Dodaj**.
+4. Wprowadź informacje dla nowej karty kredytowej lub konta bankowego, a następnie wybierz pozycję **Dodaj**.
 
 ## <a name="update-payment-method-details"></a>Aktualizuj szczegóły dotyczące metody płatności.
 
-Możesz zmienić nazwę na karcie kredytowej lub debetowej, adresie rozliczeniowym lub dacie wygaśnięcia istniejącej metody płatności. Nie można jednak zmienić numeru karty ani konta. Jeśli numer konta uległ zmianie, [zamień go na inną metodę](#replace-a-payment-method) płatności, a następnie usuń [starą metodę płatności](#delete-a-payment-method).
+Możesz zmienić nazwę na karcie kredytowej lub debetowej, w adresie rozliczeniowym lub datę wygaśnięcia istniejącej metody płatności. Nie można jednak zmienić numeru karty płatniczej ani numeru rachunku. Jeśli numer rachunku uległ zmianie, [zastąp go inną metodą płatności](#replace-a-payment-method), a następnie [usuń starą metodę płatności](#delete-a-payment-method).
 
 1. W centrum administracyjnym przejdź do strony **Rachunki** > **Rachunki i płatności** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Metody płatności</a>.
 2. Zaznacz wiersz metody płatności, który chcesz zaktualizować. W okienku po prawej stronie wybierz pozycję **Edytuj**.
 3. Zaktualizuj informacje o metodzie płatności, a w tym nazwę na karcie kredytowej lub debetowej, adres na fakturze lub datę wygaśnięcia, a następnie wybierz pozycję **Zapisz**.
 
-## <a name="replace-a-payment-method"></a>Zamienianie metody płatności
+## <a name="replace-a-payment-method"></a>Zmienianie metody płatności
 
-W przypadku zamieniania formy płatności należy ją zamienić na wszystkie subskrypcje i profile rozliczeniowe korzystające z tej samej metody płatności. Zastąpienie formy płatności nie powoduje usunięcia istniejącej metody płatności. Nadal możesz wybrać inne subskrypcje i profile rozliczeniowe i używać ich.
+W przypadku zmieniania metody płatności należy ją zastąpić dla wszystkich subskrypcji i profilów rozliczeniowych, które korzystają z tej samej metody płatności. Zastąpienie metody płatności nie powoduje usunięcia istniejącej metody płatności. Nadal masz możliwość wybrania innych subskrypcji i profilów rozliczeniowych oraz używać ich.
 
 Aby zmienić metodę płatności dla jednej subskrypcji, zobacz [Zmienianie metody płatności dla pojedynczej subskrypcji](#change-a-payment-method-for-a-single-subscription).
 
@@ -97,12 +97,12 @@ Aby zmienić metodę płatności dla jednej subskrypcji, zobacz [Zmienianie meto
 
 Możesz zmienić metodę płatności używaną do płacenia za jedną subskrypcję.
 
-1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">RozliczeniaZgody</a>  >  produktów.
-2. Na **karcie** Produkty znajdź subskrypcję, za którą chcesz zapłacić, przy użyciu alternatywnej metody płatności.
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
+2. Na karcie **Produkty** znajdź subskrypcję, za którą chcesz zapłacić przy użyciu alternatywnej metody płatności.
 3. Wybierz pozycję z trzema kropkami (więcej akcji), a następnie wybierz pozycję **Zamień metodę płatności**.
-4. W **okienku Zamień formę** płatności z listy rozwijanej wybierz alternatywną metodę płatności lub dodaj metodę płatności.
-5. Jeśli dodasz metodę płatności, wprowadź dane karty lub konta, a następnie wybierz pozycję **Zapisz**.
-6. Sprawdź, czy wybrana metoda płatności jest poprawna, a następnie wybierz pozycję **Zamień**.
+4. Z listy rozwijanej w okienku **Zamień metodę płatności** wybierz alternatywną metodę płatności lub dodaj metodę płatności.
+5. Jeśli dodasz metodę płatności, wprowadź dane szczegółowe karty płatniczej lub rachunku bankowego, a następnie wybierz pozycję **Zapisz**.
+6. Sprawdź, czy wybrana metoda płatności jest poprawna, a następnie wybierz pozycję **Zastąp**.
 
 ## <a name="delete-a-payment-method"></a>Usuwanie metody płatności
 
@@ -110,7 +110,7 @@ Możesz usunąć tylko metodę płatności, która nie jest dołączona do subsk
 
 ### <a name="delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached"></a>Usuwanie metody płatności bez dołączonych subskrypcji i profilów rozliczeniowych
 
-Jeśli metoda płatności nie jest skojarzona z żadnymi subskrypcjami ani profilami rozliczeniowymi, możesz ją natychmiast usunąć.
+Jeśli Twoja metoda płatności nie jest powiązana z żadną subskrypcją lub profilem rozliczeniowym, możesz ją od razu usunąć.
 
 1. W centrum administracyjnym przejdź do strony **Rachunki** > **Rachunki i płatności** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Metody płatności</a>.
 2. Znajdź metodę płatności do usunięcia, wybierz trzy kropki, a następnie wybierz pozycję **Usuń**.
@@ -118,31 +118,31 @@ Jeśli metoda płatności nie jest skojarzona z żadnymi subskrypcjami ani profi
 
 ### <a name="delete-a-payment-method-with-subscriptions-or-billing-profiles-attached"></a>Usuwanie metody płatności z dołączonymi subskrypcjami lub profilami rozliczeniowymi
 
-Jeśli do dowolnej subskrypcji lub profilów rozliczeń dołączono metodę płatności, najpierw zastąp ją istniejącą metodą płatności lub dodaj nową, a następnie usuń starą metodę płatności.
+Jeśli do dowolnej subskrypcji lub profilów rozliczeniowych dołączono metodę płatności, najpierw zastąp ją istniejącą metodą płatności lub dodaj nową, a następnie usuń starą metodę płatności.
 
 1. W centrum administracyjnym przejdź do strony **Rachunki** > **Rachunki i płatności** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Metody płatności</a>.
-2. Wybierz wiersz metody płatności, który chcesz usunąć. W prawym okienku zostanie lista istniejących subskrypcji, które korzystają z tej metody płatności.
+2. Zaznacz wiersz dotyczący metody płatności, aby ją usunąć. W prawym okienku jest wyświetlana lista istniejących subskrypcji, które korzystają z tej metody płatności.
 3. W prawym okienku wybierz pozycję **Usuń**.
-4. Aby użyć istniejącej metody płatności, wybierz ją z listy rozwijanej, wybierz pozycję **Dalej, a** następnie wybierz pozycję **Usuń**.
+4. Aby użyć istniejącej metody płatności, wybierz ją z listy rozwijanej, wybierz pozycję **Dalej**, a następnie wybierz pozycję **Zastąp**.
     > [!NOTE]
-    > Jeśli masz subskrypcje skojarzone z profilem rozliczeniowym, możesz płacić tylko kartą kredytową. Jeśli masz konta bankowe wymienione na stronie **Metody** płatności, nie są one dostępne do wyboru z listy rozwijanej.
+    > Jeśli masz subskrypcje skojarzone z profilem rozliczeniowym, możesz płacić za nie tylko za pomocą karty płatniczej. Jeśli masz konta bankowe wymienione na stronie **Metody płatności**, nie są one dostępne do wybrania z listy rozwijanej.
 5. Aby dodać nową metodę płatności, wybierz pozycję **Dodaj metodę płatności**.
-6. Wybierz typ metody płatności, którą chcesz dodać, wprowadź informacje o koncie, a następnie wybierz pozycję **Zapisz**.
+6. Wybierz typ metody płatności, którą chcesz dodać, wprowadź informacje o rachunku bankowym, a następnie wybierz pozycję **Zapisz**.
 7. Nowa metoda płatności jest już wybrana na liście rozwijanej. Wybierz pozycję **Dalej**.
-8. Wybierz **pozycję Usuń**.
+8. Wybierz pozycję **Usuń**.
 
 ## <a name="troubleshoot-payment-methods"></a>Rozwiązywanie problemów z płatnościami
 
-| Problem | Procedura rozwiązywania problemów |
+| Problem | Czynności umożliwiające rozwiązywanie problemów |
 |:----------|:-----|
-|**Otrzymuję komunikat o błędzie z komunikatem "Przeglądarka jest obecnie ustawiona do blokowania plików cookie".** |Ustaw przeglądarkę tak, aby zezwalała na pliki cookie innych firm i spróbuj ponownie. |
-|**Moja karta kredytowa lub debetowa została odrzucona.** |Jeśli płacisz kartą kredytową lub debetową i Twoja karta zostanie odrzucona, otrzymasz wiadomość e-mail z powiadomieniem, że firma Microsoft nie może przetworzyć płatności. Sprawdź dokładnie&mdash;, czy numer karty szczegółów karty, data wygaśnięcia, nazwisko na karcie i adres, w tym miasto,&mdash; województwo i kod pocztowy, są takie samo jak na karcie i na wyciągu. Możesz zaktualizować informacje o karcie i od razu przesłać płatność, używając linku **Rozlicz** **saldo w sekcji** Rozliczenia na stronie szczegółów subskrypcji. Aby uzyskać więcej informacji, zobacz [Co zrobić, jeśli mam nieuregulowane saldo?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Jeśli komunikat "odrzucone" będzie nadal wyświetlany, skontaktuj się z bankiem. Być może Twoja karta nie jest aktywna. Jeśli niedawno otrzymano pocztą kartę ze zaktualizowaną datą wygaśnięcia, upewnij się, że została ona aktywowana. Bank może też określić, czy kartą nie można do transakcji online, międzynarodowych lub cyklicznych. |
-|**Chcę zaktualizować numer karty lub konta bankowego.** |Nie można zmienić numeru karty ani konta w istniejącej metodzie płatności. Jeśli numer karty lub konta uległ zmianie, zamień go na inną metodę płatności, która powoduje przeniesienie wszystkich aktywnych subskrypcji z metody płatności do nowej, [a](#replace-a-payment-method) następnie usunięcie starej [metody płatności](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
-|**Mam tylko jedną kartę lub konto bankowe na koncie i chcę je usunąć.** |Jeśli masz tylko jedną metodę płatności, musisz ją zamienić na nową, zanim będzie można ją usunąć.[](#replace-a-payment-method) |
-|**Nie mogę dodać mojej karty kredytowej ani konta bankowego.**  |Należy użyć metody płatności wydanej z tego samego kraju, w którym jest dzierżawa. Jeśli masz problem z wprowadzeniem informacji o karcie lub koncie bankowym, możesz skontaktować się z [pomocą techniczną](../../admin/get-help-support.md). |
+|**Wyświetlany jest komunikat o błędzie: „W przeglądarce jest obecnie ustawione blokowanie plików cookie”.** |Ustaw przeglądarkę tak, aby zezwolić na pliki cookie innych firm i spróbuj ponownie. |
+|**Moja karta kredytowa lub debetowa została odrzucona.** |Jeśli płacisz kartą kredytową lub debetową i karta zostanie odrzucona, otrzymasz wiadomość e-mail z informacją, że firma Microsoft nie może przetworzyć płatności. Najpierw sprawdź dokładnie, czy szczegóły karty,&mdash;takie jak numer karty, data ważności, imię i nazwisko na karcie oraz adres, w szczególności miejscowość, województwo i kod pocztowy,&mdash;są wyświetlane dokładnie w takiej samej postaci, w jakiej występują na karcie i zestawieniu transakcji. Możesz zaktualizować informacje o karcie i od razu przesłać płatność, używając linku **Rozlicz saldo** w sekcji **Rozliczenia** na stronie szczegółów subskrypcji. Aby uzyskać więcej informacji, zobacz [Co zrobić, jeśli mam nieuregulowane saldo?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Jeśli nadal jest wyświetlany komunikat „Odrzucono”, skontaktuj się z bankiem. Być może Twoja karta płatnicza nie jest aktywna. Jeśli niedawno otrzymano pocztą kartę płatniczą ze zaktualizowaną datą ważności, upewnij się, że jest ona uaktywniona. Bank może też poinformować Cię, że karta płatnicza nie jest zatwierdzona do dokonywania transakcji internetowych, międzynarodowych lub cyklicznych. |
+|**Chcę zaktualizować numer karty płatniczej lub numer rachunku bankowego.** |Nie można zmienić numeru karty płatniczej ani numeru rachunku bankowego w ramach istniejącej metody płatności. Jeśli numer karty płatniczej lub numer rachunku bankowego uległ zmianie, [zastąp go inną metodą płatności](#replace-a-payment-method), która spowoduje przeniesienie wszystkich aktywnych subskrypcji z danej metody płatności do nowej, a następnie [usunięcie starej metody płatności](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
+|**Do mojego konta mam przypisaną tylko jedną kartę płatniczą lub jeden rachunek bankowy i chcę go usunąć.** |Jeśli masz tylko jedną metodę płatności, musisz ją [zastąpić nową metodą płatności,](#replace-a-payment-method) zanim będzie możliwe jej usunięcie. |
+|**Nie mogą dodać mojej karty płatniczej lub rachunku bankowego.**  |Musisz użyć metody płatności z tego samego kraju, w którym funkcjonuje dzierżawa. Jeśli masz problem z wprowadzeniem informacji o karcie płatniczej lub rachunku bankowym, możesz [skontaktować się z pomocą techniczną](../../admin/get-help-support.md). |
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Płacenie za subskrypcję dla firm](pay-for-your-subscription.md) (artykuł)\
+[Płacenie za subskrypcję biznesową](pay-for-your-subscription.md) (artykuł)\
 [Zarządzanie profilami rozliczeniowymi](manage-billing-profiles.md) (artykuł)\
 [Zmienianie częstotliwości rozliczeń](change-payment-frequency.md) (artykuł)

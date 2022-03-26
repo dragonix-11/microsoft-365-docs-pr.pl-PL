@@ -1,5 +1,5 @@
 ---
-title: Informacje pomocy technicznej dla Polski
+title: Informacje o pomocy technicznej dla Polski
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -14,7 +14,7 @@ description: Dowiedz się, jak skontaktować się z pomocą techniczną dla swoj
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 52944fc0c7d69ce313d9202ec79e7bed754c93c3
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "63007908"
@@ -23,22 +23,22 @@ ms.locfileid: "63007908"
 
 [Znajdź inny kraj lub region](../get-help-support.md).
 
-## <a name="phone-number"></a>Telefon numer telefonu
+## <a name="phone-number"></a>Numer telefonu
 800 70 23 20
 
 ## <a name="hours"></a>Godziny
-### <a name="billing-support"></a>Pomoc techniczna dotycząca rozliczeń:
+### <a name="billing-support"></a>Pomoc dotycząca rozliczeń:
 
-Polski: Mon-Fri 8:00–18:00
+Język polski: pn–pt, 8:00–18:00
 
-Angielski: Mon-Fri 8:00–18:00
+Język angielski: pn–pt, 8:00–18:00
 
 ### <a name="technical-support"></a>Pomoc techniczna:
 
-Polski: Mon-Fri 8:00–18:00
+Język polski: pn–pt, 8:00–18:00
 
-Angielski: 24 godziny na dobę, 7 dni w tygodniu
+Język angielski: całodobowo przez 7 dni w tygodniu
 
-Numer Telefon alternatywny: 022 306 05 17
+Alternatywny numer telefonu: +022 306 05 17
 
-Opłata za połączenie lokalne obowiązuje
+Opłata jak za połączenie lokalne

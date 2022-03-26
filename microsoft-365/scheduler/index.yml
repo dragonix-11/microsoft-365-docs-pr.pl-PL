@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Scheduler for Microsoft 365
-summary: 'Dowiedz się, jak skonfigurować program Scheduler dla Microsoft 365 planowania spotkań przy użyciu Cortana.'
+title: Harmonogram dla platformy Microsoft 365
+summary: 'Dowiedz się, jak skonfigurować harmonogram dla platformy Microsoft 365 w celu zaplanowania spotkań przy użyciu Cortany.'
 brand: m365
 metadata:
-  title: Scheduler for Microsoft 365
-  description: 'Dowiedz się, jak skonfigurować program Scheduler dla Microsoft 365 planowania spotkań przy użyciu Cortana.'
+  title: Harmonogram dla platformy Microsoft 365
+  description: 'Dowiedz się, jak skonfigurować harmonogram dla platformy Microsoft 365 w celu zaplanowania spotkań przy użyciu Cortany.'
   ms.service: exchange-online
   ms.topic: hub-page
   author: AshaIyengar21
@@ -15,21 +15,21 @@ metadata:
 additionalContent:
   sections:
     - items:
-        - title: Co to jest program Scheduler dla Microsoft 365?
-          summary: 'Dowiedz się więcej o programie Scheduler Microsoft 365 i jego funkcjach, kto i jak będzie z niego korzystać.'
+        - title: Co to jest harmonogram dla platformy Microsoft 365?
+          summary: 'Dowiedz się więcej o harmonogramie dla platformy Microsoft 365 i jego funkcjach oraz o tym, kto i jak będzie z niej korzystać.'
           url: scheduler-overview.md
         - title: Zaufanie i prywatność
-          summary: 'Dowiedz się, jak program Scheduler Microsoft 365 zapewnia ochronę zaufania i prywatności.'
+          summary: 'Dowiedz się, jak usługa harmonogram dla platformy Microsoft 365 zapewnia ochronę zaufania i prywatności.'
           url: scheduler-trust-privacy.md
-        - title: Konfigurowanie harmonogramu dla Microsoft 365
-          summary: 'Dowiedz się, co jest wymagane do skonfigurowania harmonogramu dla Microsoft 365.'
+        - title: Konfigurowanie harmonogramu dla platformy Microsoft 365
+          summary: 'Dowiedz się, co jest wymagane do skonfigurowania harmonogramu dla platformy Microsoft 365.'
           url: scheduler-setup.md
-        - title: Używanie harmonogramu dla Microsoft 365
-          summary: 'Dowiedz się, jak używać programu Scheduler do Microsoft 365.'
+        - title: Korzystanie z harmonogramu dla platformy Microsoft 365
+          summary: 'Dowiedz się, jak używać harmonogramu dla platformy Microsoft 365.'
           url: scheduler-using.md
         - title: Planowanie dynamicznych spotkań cyklicznych
           summary: Dowiedz się więcej o planowaniu dynamicznych spotkań cyklicznych.
           url: scheduler-recurring-meetings.md
-        - title: Często zadawane pytania dotyczące harmonogramu
-          summary: Często zadawane pytania i odpowiedzi w programie Scheduler dla Microsoft 365.
+        - title: Harmonogram — często zadawane pytania
+          summary: Często zadawane pytania i odpowiedzi dotyczące harmonogramu dla platformy Microsoft 365.
           url: scheduler-faqs.md

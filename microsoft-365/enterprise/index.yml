@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365 dokumentacji i zasobów przedsiębiorstwa
+title: Dokumentacja i zasoby dotyczące platformy Microsoft 365 dla przedsiębiorstw
 summary: 'Najlepsze w swojej klasie aplikacje zwiększające produktywność dzięki inteligentnym usługom w chmurze, które zmieniają sposób pracy.'
 brand: m365
 metadata:
-  title: Microsoft 365 dokumentacji i zasobów przedsiębiorstwa
-  description: 'Zapoznaj się z dokumentacją i zasobami produktu dostępnymi Microsoft 365 dla przedsiębiorstw dla informatyków, pracowników informacyjnych i partnerów.'
+  title: Dokumentacja i zasoby dotyczące platformy Microsoft 365 dla przedsiębiorstw
+  description: 'Zapoznaj się z dokumentacją produktu i zasobami dostępnymi dla platformy Microsoft 365 dla przedsiębiorstw dla informatyków, pracowników zajmujących się informacjami i partnerów.'
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
@@ -17,18 +17,18 @@ metadata:
   ms.date: 07/28/2020
 highlightedContent:
   items:
-    - title: Dowiedz się więcej Microsoft 365 dla przedsiębiorstw
+    - title: Dowiedz się więcej o platformie Microsoft 365 dla przedsiębiorstw
       itemType: get-started
       url: microsoft-365-overview.md
-    - title: Przyspieszenie wdrożenia dzięki FastTrack
+    - title: Przyspiesz wdrażanie za pomocą usługi FastTrack
       itemType: quickstart
       url: 'https://www.microsoft.com/fasttrack/microsoft-365'
     - title: Szkolenie informatyków i administratorów
       itemType: learn
       url: /learn/m365/
 conceptualContent:
-  title: Uzyskiwanie pomocy dotyczącej Microsoft 365 przedsiębiorstwa i innych zasobów
-  summary: 'Poznaj Microsoft 365, aby uzyskać wskazówki dotyczące wdrażania w przedsiębiorstwie, funkcje i usługi.'
+  title: Uzyskiwanie pomocy dotyczącej platformy Microsoft 365 dla przedsiębiorstw i innych zasobów
+  summary: 'Zapoznaj się ze wskazówkami, funkcjami i usługami dotyczącymi wdrażania platformy Microsoft 365 dla przedsiębiorstw.'
   items:
     - title: Wdrażanie kluczowych elementów
       links:
@@ -44,7 +44,7 @@ conceptualContent:
         - url: /intune/fundamentals/planning-guide
           itemType: deploy
           text: Microsoft Intune
-    - title: Zarządzanie Microsoft 365 dla przedsiębiorstw
+    - title: Zarządzanie platformą Microsoft 365 dla przedsiębiorstw
       links:
         - url: /windows/deployment/update/
           itemType: how-to-guide
@@ -54,21 +54,21 @@ conceptualContent:
           text: Aplikacje usługi Microsoft 365 dla przedsiębiorstw
         - url: /intune/apps/app-management
           itemType: get-started
-          text: Aplikacje z usługą Intune
+          text: Aplikacje w usłudze Intune
         - url: /office365/
           itemType: get-started
-          text: Microsoft 365 usług
+          text: Usługi platformy Microsoft 365
 additionalContent:
   sections:
     - title: Dodatkowe materiały
-      summary: Dowiedz się więcej o innych Microsoft 365 i zasobach.
+      summary: Dowiedz się więcej o innych funkcjach i zasobach platformy Microsoft 365.
       items:
-        - title: Microsoft 365 zgodności
-          summary: 'Pomóż organizacji zarządzać informacjami, chronić się przed zagrożeniami i zapewnić zgodność ze standardami prawnie lub regulacyjną.'
+        - title: Zgodność platformy Microsoft 365
+          summary: 'Pomóż swojej organizacji zarządzać informacjami, chronić się przed ryzykiem i przestrzegać standardów prawnych lub przepisów.'
           url: ../compliance/index.yml
-        - title: Microsoft 365 zabezpieczeń
-          summary: Chroń swoją organizację w powierzchniach ataków za pomocą niezawodnych usług i rozwiązań zabezpieczeń.
+        - title: Zabezpieczenia platformy Microsoft 365
+          summary: 'Chroń swoją organizację na różnych obszarach ataków, korzystając z niezawodnych usług i rozwiązań dotyczących zabezpieczeń.'
           url: ../security/index.yml
-        - title: Microsoft 365 społeczności technicznej
-          summary: Połączenie i współpracuj z innymi ekspertami w witrynie Microsoft Tech Community oraz udostępniaj Microsoft 365 najlepszych rozwiązań.
+        - title: Społeczność techniczna platformy Microsoft 365
+          summary: Łącz się i współpracuj z innymi osobami i ekspertami w ramach społeczności technicznej firmy Microsoft oraz udostępniaj najlepsze rozwiązania platformy Microsoft 365.
           url: 'https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365'

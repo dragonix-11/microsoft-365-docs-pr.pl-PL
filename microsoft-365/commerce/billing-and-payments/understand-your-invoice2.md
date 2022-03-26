@@ -1,5 +1,5 @@
 ---
-title: Opis rachunku lub faktury za Microsoft 365 dla firm
+title: Opis rachunku lub faktury za platformę Microsoft 365 dla firm
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,93 +20,93 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: Dowiedz się, jak interpretować opłaty, rozliczenia i informacje o płatnościach Microsoft 365 fakturze lub rachunku dla firm.
+description: Dowiedz się, jak interpretować opłaty, rozliczenia i informacje dotyczące płatności na rachunku lub fakturze za platformę Microsoft 365 dla firm.
 ms.date: 03/04/2022
 ms.openlocfilehash: e8a27dbdab3f49412f78d0ef7dcb533266d5f4f4
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63322373"
 ---
-# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Opis rachunku lub faktury za Microsoft 365 dla firm
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Opis rachunku lub faktury za platformę Microsoft 365 dla firm
 
-Rachunek lub faktura zawiera podsumowanie opłat za subskrypcję oraz instrukcje dotyczące sposobu płatności.
+Rachunek lub faktura zawiera podsumowanie opłat za subskrypcję oraz instrukcje dotyczące sposobu dokonania płatności.
 
 > [!NOTE]
-> Jeśli masz inne subskrypcje zamiast subskrypcji lub oprócz Microsoft 365, zobacz [Opis rachunku lub faktury](understand-your-invoice.md).
+> Jeśli masz inne subskrypcje zamiast platformy Microsoft 365 lub oprócz niej, zobacz [Opis rachunku lub faktury](understand-your-invoice.md).
 
-## <a name="how-often-and-when-am-i-billed"></a>Jak często i kiedy jest naliczana rachunek?
+## <a name="how-often-and-when-am-i-billed"></a>Jak często i kiedy są naliczane opłaty?
 
-W zależności od częstotliwości rozliczeń wybranej podczas zakupu subskrypcji otrzymujesz fakturę co miesiąc lub co rok. Jeśli wybierzesz rozliczenie roczne, otrzymasz tylko jedną fakturę w ciągu roku, chyba że działanie dotyczące Twojej subskrypcji powoduje dodanie nowej opłaty lub kredytu.
+W zależności od częstotliwości rozliczeń wybranej podczas zakupu subskrypcji otrzymujesz fakturę co miesiąc albo co rok. Jeśli wybierzesz rozliczenie roczne, otrzymasz tylko jedną fakturę rocznie, chyba że działanie związane z Twoją subskrypcją spowoduje dodanie nowej opłaty lub kredytu.
 
-Czas od daty wystawienia ostatniej faktury jest nazywany okresem  rozliczeniowym i znajduje się na jednej z faktur. Ten czas odpowiada zakresowi dat, podczas którego naliczane są opłaty za bieżącą fakturę. Jeśli w subskrypcji wszedliśmy poza tym zakresem dat, na przykład dodano lub usuniesz licencje, skojarzone opłaty będą wyświetlane na fakturze za następny okres rozliczeniowy.
+Czas od daty ostatniej faktury jest nazywany *okresem rozliczeniowym* i jest podany na pierwszej stronie faktury. Ten czas reprezentuje zakres dat, w którym naliczane są opłaty za bieżącą fakturę. Jeśli wprowadzono zmianę subskrypcji poza tym zakresem dat, na przykład dodano lub usunięto licencje, skojarzone opłaty pojawią się na fakturze za następny okres rozliczeniowy.
 
-Począwszy od drugiej strony faktury, opłaty są pogrupowane według *okresu usługi*. Okres usługi to zakres dat, w którym są naliczane opłaty za korzystanie z usługi.
+Począwszy od drugiej strony faktury, zobaczysz opłaty pogrupowane według ich *okresu usługi*. Okres usługi to zakres dat, w ramach którego są naliczane opłaty za korzystanie z usługi.
 
-Na koniec każdego okresu rozliczeniowego otrzymasz wiadomość e-mail z komunikatem, że nowa faktura jest gotowa do wyświetlenia lub pobrania w centrum administracyjne platformy Microsoft 365. Jeśli masz więcej niż jedno zamówienie, otrzymasz fakturę dla każdego zamówienia. Dowiedz się, [jak znaleźć i wyświetlić swój rachunek lub fakturę](view-your-bill-or-invoice.md).
+Na koniec każdego okresu rozliczeniowego otrzymasz wiadomość e-mail z informacją, że nowa faktura jest gotowa do wyświetlenia lub pobrania w centrum administracyjnym platformy Microsoft 365. Jeśli masz więcej niż jedno zamówienie, otrzymasz osobną fakturę do każdego zamówienia. Dowiedz się, jak [znaleźć i wyświetlić swój rachunek bądź fakturę](view-your-bill-or-invoice.md).
 
-## <a name="why-is-my-total-due-different-from-last-month"></a>Dlaczego termin mojej całkowitej płatności różni się od ostatniego miesiąca?
+## <a name="why-is-my-total-due-different-from-last-month"></a>Dlaczego łączna kwota należności różni się od tej z zeszłego miesiąca?
 
-Kwota rozliowana za subskrypcję odzwierciedla cenę licencji pomnożona przez liczbę zakupionych licencji oraz wszelkie wymagane podatki i opłaty.
+Kwota naliczona za subskrypcję odzwierciedla cenę licencji pomnożoną przez liczbę zakupionych licencji plus wszelkie wymagane podatki i opłaty.
 
-Jeśli rozlikowana kwota jest inna niż oczekiwana, może się to zdarzyć z kilku powodów:
+Jeśli naliczona kwota jest inna niż oczekiwana, może się tak zdarzyć z kilku powodów:
 
-- Dodano lub usunięto licencje z subskrypcji. Licencje zmienione w środku okresu są odzwierciedlane na następnej fakturze. W związku z tą zmianą może pojawić się kredyt i faktury za poprzedni okres usługi. Aby uzyskać szczegółowe informacje na temat tego, jak wygląda ta kwota na fakturze, zobacz [stronę 2 poniżej](#page-two) .
-- Subskrypcja została anulowana. Po anulowaniu otrzymujesz fakturę z nieuregulowanym saldem pomniejszoną o wszelkie uznania.
+- Dodano lub usunięto licencje z subskrypcji. Licencje zmienione w trakcie okresu zostaną odzwierciedlone na następnej fakturze. W związku z taką zmianą na koncie może pojawić się uznanie lub ponowne rozliczenie za poprzedni okres usługi. Aby uzyskać szczegółowe informacje o tym, jak to wygląda na fakturze, zobacz [stronę drugą](#page-two) poniżej.
+- Subskrypcja została anulowana. Po anulowaniu otrzymasz fakturę z nieuregulowanym saldem pomniejszonym o wszelkie uznania.
 - Subskrypcję odnowiono na nowy okres i zmieniła się cena licencji.
 
-## <a name="overview-of-the-invoice-pdf"></a>Omówienie .PDF
+## <a name="overview-of-the-invoice-pdf"></a>Omówienie faktury .PDF
 
-Faktura to .PDF, która zawiera co najmniej dwie strony. [Strona główna zawiera](#page-one) podsumowanie rozliczeń i zawiera informacje ogólne o fakturze, zamówieniu, kwocie należnej płatności i (jeśli dotyczy) instrukcje dotyczące płatności.
+Twoja faktura jest plikiem PDF zawierającym co najmniej dwie strony. [Strona pierwsza](#page-one) jest podsumowaniem rozliczenia i zawiera ogólne informacje o fakturze, zamówieniu, kwocie należności i instrukcjach płatności, jeśli ma to zastosowanie.
 
-:::image type="content" source="../../media/understand-your-invoice2/invoice-page-1.png" alt-text="Na stronie jeden z .PDF, która zawiera szczegółowe informacje o zamówieniu.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page-1.png" alt-text="Strona pierwsza faktury .PDF zawiera ogólne informacje o zamówieniu.":::
 
-[Strona dwie](#page-two) zawiera szczegółowe informacje o działaniu rozliczeniowym dla każdej subskrypcji w okresie usługi.
+[Strona druga](#page-two) zawiera szczegółowe informacje o podlegających rozliczeniu działaniach dla każdej subskrypcji w okresie świadczenia usługi.
 
-:::image type="content" source="../../media/understand-your-invoice2/invoice-page-2.png" alt-text="Na drugiej stronie faktury .PDF działania rozliczeniowe dla każdej subskrypcji.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page-2.png" alt-text="Strona druga faktury .PDF przedstawia podlegające rozliczeniu działania dla każdej subskrypcji.":::
 
 ## <a name="header"></a>Nagłówek
 
-Nagłówek jest widoczny u góry każdej strony faktury i zawiera miesiąc obsługi oraz datę **faktury, czyli** datę utworzenia faktury przez firmę Microsoft. Faktura zostanie utworzona dzień po zakończeniu okresu rozliczeniowego. Jeśli na przykład okres rozliczeniowy to 15 stycznia – 14 lutego, data faktury to 15 lutego.
+Nagłówek jest wyświetlany u góry każdej strony faktury i zawiera miesiąc usługi oraz **datę faktury**, czyli datę utworzenia faktury przez firmę Microsoft. Faktura jest tworzona pierwszego dnia po zakończeniu okresu rozliczeniowego. Na przykład w przypadku okresu rozliczeniowego od 15 stycznia do 14 lutego data faktury to 15 lutego.
 
-Nagłówek zawiera również numer **faktury**, unikatowy numer przypisany do faktury. Jeśli płacisz przelewem elektronicznym (EFT, Electronic Funds Transfer) lub czekiem, dołącz numer faktury do płatności.
+Nagłówek zawiera również **Numer faktury**, czyli unikatowy numer przypisany do faktury. Jeśli płacisz przelewem elektronicznym (EFT) lub czekiem, dołącz numer faktury do płatności.
 
-Nagłówek zawiera również pole **Termin** płatności za fakturę oraz łączną kwotę należną. Jeśli płacisz za subskrypcję kartą kredytową lub z konta bankowego, karta lub konto jest ładowane dzień po dacie wystawienia faktury.
+Na koniec nagłówek zawiera **termin płatności** faktury i pokazuje łączną należną kwotę. Jeśli płacisz za subskrypcję za pomocą karty kredytowej lub konta bankowego, obciążymy Twoją kartę lub konto dzień po dacie wystawienia faktury.
 
 ## <a name="footer"></a>Stopka
 
-Stopka jest wyświetlana u dołu każdej strony faktury i zawiera adres witryny Microsoft Business Center. Zależnie od kraju lub regionu może on zawierać inne informacje, takie jak numer telefonu, pod który należy zadzwonić w celu rozliczeń lub pomocy technicznej, link do artykułów samodzielnej pomocy online oraz adres i identyfikator podatkowy firmy Microsoft w Twoim kraju lub regionie.
+Stopka jest wyświetlana u dołu każdej strony faktury i zawiera adres centrum biznesowego firmy Microsoft. W zależności od kraju lub regionu może ona zawierać inne informacje, takie jak numer telefonu, pod który należy zadzwonić w celu uzyskania pomocy technicznej lub dotyczącej rozliczeń, link do artykułów samopomocy online oraz adres i identyfikator podatkowy firmy Microsoft w Twoim kraju lub regionie.
 
-## <a name="page-one"></a>Strona numer jeden
+## <a name="page-one"></a>Strona pierwsza
 
-Strona jedna z faktur zawiera informacje adresowe Twojej organizacji, szczegółowe informacje na temat zamówienia na wysokim poziomie, podsumowanie sum faktur i instrukcje dotyczące opłacania faktury.
+Strona pierwsza faktury zawiera informacje o adresie organizacji, ogólne szczegóły dotyczące zamówienia, podsumowanie sum faktur i instrukcje dotyczące sposobu płatności faktury.
 
-:::image type="content" source="../../media/understand-your-invoice2/invoice-page1-details.png" alt-text="Główna sekcja na pierwszej stronie faktury.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page1-details.png" alt-text="Sekcja główna na pierwszej stronie faktury.":::
 
 ### <a name="addresses"></a>Adresy
 
-U góry pierwszej strony są wyświetlane trzy adresy. Adres **do sprzedania** to nazwa i adres organizacji, która kupiła subskrypcję. Adres **rozliczenia to** adres Twojego działu rozliczeń. **Adres korzystania z** usługi to adres, pod którym jest używana usługa. Zazwyczaj te adresy są takie same. W zależności od rozmiaru i konfiguracji organizacji te adresy mogą się różnić.
+W górnej części pierwszej strony są wyświetlane trzy adresy. Adres **Nabywcy** to nazwa i adres organizacji, która kupiła subskrypcję. Adres **Odbiorcy faktury** to adres działu rozliczeniowego. **Adres użycia usługi** to adres, pod którym jest używana usługa. Zazwyczaj te adresy są takie same. W zależności od rozmiaru i konfiguracji organizacji te adresy mogą być różne.
 
-Aby zaktualizować **adres osoby sprzedaowej** , zobacz Zmienianie adresu [organizacji, kontaktu technicznego i nie tylko](../../admin/manage/change-address-contact-and-more.md)**. Aby zaktualizować adres rozliczeń** lub adres korzystania z **usługi**, zobacz [Zmienianie adresu rozliczeniowego](change-your-billing-addresses.md).
+Aby zaktualizować adres **nabywcy**, zobacz [Zmienianie adresu organizacji, kontaktu technicznego i nie tylko](../../admin/manage/change-address-contact-and-more.md)**. Aby zaktualizować adres odbiorcy faktury** lub **adres użycia usługi**, zobacz [Zmienianie adresów rozliczeniowych](change-your-billing-addresses.md).
 
 #### <a name="order-details"></a>Szczegóły zamówienia
 
-Na jednej z faktur produkt to "Usługi  online" — ogólny termin opisujący Twoją subskrypcję. Strona na drugiej stronie zawiera listę pojedynczych produktów z Twojego zamówienia.
+Na pierwszej stronie faktury pozycja **Produkt** to „Usługi online”, czyli ogólny termin, którego używamy do opisania Twojej subskrypcji. Strona druga zawiera listę poszczególnych produktów w zamówieniu.
 
-**Numer zamówienia zakupu** klienta to numer zamówienia zakupu określony przez użytkownika. Nie możesz dodać numeru zamówienia zakupu do już wystawionej faktury. Aktualizacja numeru zakupu zostanie uwzględniona na przyszłych fakturach. Aby zmienić numer zamówienia zakupu, zobacz [Zmienianie numeru zamówienia zakupu](#change-your-purchase-order-number).
+**Numer zamówienia zakupu klienta** jest podanym numerem zamówienia zakupu. Nie możesz dodać numeru zamówienia zakupu do już wystawionej faktury. Jeśli zaktualizujesz numer zamówienia zakupu, zostanie on uwzględniony w przyszłych fakturach. Aby zmienić numer zamówienia zakupu, zobacz [Zmienianie numeru zamówienia zakupu](#change-your-purchase-order-number).
 
-**Numer zamówienia** to identyfikator unikatowy identyfikator globalny (GUID), który identyfikuje twoje zamówienie. Przy każdym zakupie nowej subskrypcji jest tworzone nowe zamówienie z nowym numerem zamówienia. Otrzymasz fakturę dla każdego zamówienia w każdym okresie rozliczeniowym.
+**Numer zamówienia** to unikatowy identyfikator globalny (GUID) identyfikujący Twoje zamówienie. Za każdym razem, gdy kupujesz nową subskrypcję, jest tworzone nowe zamówienie z nowym numerem zamówienia. Otrzymujesz fakturę za każde zamówienie w każdym okresie rozliczeniowym.
 
 **Okres rozliczeniowy** to okres od daty wystawienia ostatniej faktury.
 
-**Warunki płatności** to liczba dni od daty wystawienia faktury, po terminie płatności. Standardowy termin płatności to 30 dni.
+**Warunki płatności** to liczba dni od daty wystawienia faktury, przed upływem której należy dokonać płatności. Standardowy termin płatności wynosi 30 dni.
 
-**Termin płatności** to data, kiedy płatność za fakturę jest należna. Jeśli subskrypcja została opłacona kartą kredytową lub z konta bankowego, karta lub konto zostanie opłacone dzień po dacie wystawienia faktury.
+**Termin płatności** to data, do której należy dokonać płatności za fakturę. Jeśli wybrano opcję płatności kartą kredytową lub za pomocą konta bankowego, karta lub konto zostanie obciążone dzień po dacie wystawienia faktury.
 
 ### <a name="billing-summary"></a>Podsumowanie rozliczeń
 
-Na stronie na jednej z faktur znajduje się suma następujących pozycji w okresie rozliczeniowym. Strona dwie zawiera szczegóły każdej kategorii.
+Na pierwszej stronie faktury są wyświetlane sumy następujących elementów w okresie rozliczeniowym faktury. Strona druga zawiera szczegóły dla każdej kategorii.
 
 - Opłaty
 - Rabaty
@@ -116,39 +116,39 @@ Na stronie na jednej z faktur znajduje się suma następujących pozycji w okres
 
 ### <a name="payment-instructions"></a>Instrukcje dotyczące płatności
 
-Jeśli płacisz kartą kredytową, zostanie wyświetlony temat "Nie zapłać. Zostanie pobrana kwota należna za pomocą wybranej metody płatności". Jeśli płacisz za pomocą faktury, ta sekcja zawiera instrukcje dotyczące płatności za pomocą elektronicznego adresu EFT lub czeku.
+Jeśli płacisz kartą kredytową, zobaczysz pozycję „NIE PŁAĆ. Kwota należności zostanie pobrana za pomocą wybranej metody płatności”. Jeśli płacisz za pomocą faktury, ta sekcja zawiera instrukcje dotyczące płatności za pomocą EFT lub czeku.
 
-### <a name="electronic-fund-transfer-eft-and-check"></a>Przelew i czek
+### <a name="electronic-fund-transfer-eft-and-check"></a>Przelew elektroniczny (EFT) i czek
 
-Jeśli wybrano fakturę jako metodę płatności za subskrypcję, na stronie pierwszej znajduje  się sekcja Przelew elektroniczny, która zawiera informacje o koncie bankowym firmy Microsoft dotyczące płatności elektronicznych (przelewy elektroniczne, ACH, SEPA itd.). Zazwyczaj bank ma pole referencyjne, które można wypełnić podczas wysyłania płatności. Upewnij się, że w tym polu odwołujesz się do numeru faktury.
+Jeśli wybrano opcję „faktura” jako metodę płatności za subskrypcję, strona pierwsza zawiera sekcję **Przelew elektroniczny** zawierającą informacje o koncie bankowym Microsoft dla płatności elektronicznych (przelew, ACH, SEPA itd.). Zazwyczaj bank ma pole „Tytuł” do uzupełnienia podczas dokonywania płatności. Upewnij się, że odwołujesz się do numeru faktury w tym polu.
 
-Jeśli przyjmujemy płatności czekiem dla Twojego kraju lub regionu, możesz również zobaczyć  sekcję Czek zawierającą nazwę adresata i adres wysyłkowy. Na czeku należy się upewnić, że na czeku należy się odwoływać numer faktury.
+Jeśli akceptujemy płatności czekiem dla Twojego kraju lub regionu, zobaczysz również sekcję **Czek** zawierającą nazwę odbiorcy płatności i adres wysyłkowy. Upewnij się, że na czeku odwołujesz się do numeru faktury.
 
 ### <a name="support"></a>Pomoc techniczna
 
-W niektórych krajach lub regionach faktura zawiera sekcję **Pomoc techniczna**, która zawiera instrukcje dotyczące wyświetlania przeszłych faktur w centrum administracyjne platformy Microsoft 365. Zawiera ona również link do artykułów do samodzielnej pomocy, a w niektórych krajach i regionach — numer telefonu pomocy technicznej.
+W niektórych krajach lub regionach faktura zawiera sekcję **Pomoc techniczna** zawierającą instrukcje dotyczące wyświetlania wcześniejszych faktur w centrum administracyjnym platformy Microsoft 365. Zawiera ona również link do artykułów samopomocy oraz numer telefonu pomocy technicznej w niektórych krajach i regionach.
 
-## <a name="page-two"></a>Strona 2
+## <a name="page-two"></a>Strona druga
 
-Nazwa produktu dla Twojej subskrypcji znajduje się u góry drugiej strony. Poniżej znajduje się formuła wyjaśniaca sposób obliczania opłat. Jeśli masz w swoim zamówieniu więcej niż jeden produkt, dla każdego produktu jest osobna sekcja z powiązanymi opłatami.
+Nazwa produktu dla subskrypcji znajduje się w górnej części strony drugiej. Poniżej znajduje się formuła wyjaśniająca sposób obliczania opłat. Jeśli masz więcej niż jeden produkt w zamówieniu, zobaczysz osobną sekcję dla każdego produktu i skojarzone opłaty.
 
 ### <a name="new-charges"></a>Nowe opłaty
 
 :::image type="content" source="../../media/understand-your-invoice2/invoice-new-charges.png" alt-text="Sekcja Nowe opłaty na drugiej stronie faktury.":::
 
-Sekcja **Nowe opłaty** zawiera okres usługi, w trakcie którego dodano opłaty, rabaty, środki i podatki. Zawiera liczbę licencji uwzględnionych w okresie usługi, cenę za licencję i liczbę dni w okresie usługi.
+Sekcja **Nowe opłaty** zawiera okres świadczenia usługi, w którym dodano opłaty, rabaty, środki i podatki. Pokazuje liczbę licencji uwzględnionych w okresie świadczenia usługi, cenę licencji i liczbę dni w okresie świadczenia usługi.
 
 ### <a name="previous-charges"></a>Poprzednie opłaty
 
 :::image type="content" source="../../media/understand-your-invoice2/invoice-previous-charges.png" alt-text="Sekcja Poprzednie opłaty na drugiej stronie faktury.":::
 
-Sekcja **Poprzednie opłaty** zawiera informacje o kredytach zapłaconych za poprzednią fakturę. Jeśli w poprzednim okresie rozliczeniowym dokonano zmiany, faktura zawiera **sekcję Poprzednie opłaty** . Jeśli na przykład dodano lub usunięto licencje w środku okresu, sekcja Poprzednie  opłaty zawiera liczbę licencji dla tego okresu usługi, wraz z miesięczną ceną za licencję, liczbą dni w okresie usługi, opłatami i innymi, które mają zastosowanie.
+Sekcja **Poprzednie opłaty** zawiera zobowiązania z tytułu opłat zapłacone za poprzednią fakturę. Jeśli w poprzednim okresie rozliczeniowym wprowadzono zmianę, faktura zawiera sekcję **Poprzednie opłaty**. Jeśli na przykład dodano lub usunięto licencje w trakcie okresu, sekcja **Poprzednie opłaty** zawiera liczbę licencji dla tego okresu świadczenia usługi wraz z miesięczną ceną licencji, liczbą dni świadczenia usługi w okresie, opłatami i innymi kwotami, które mają zastosowanie.
 
 ### <a name="charges-during-this-billing-period"></a>Opłaty w tym okresie rozliczeniowym
 
 :::image type="content" source="../../media/understand-your-invoice2/invoice-charges-this-period.png" alt-text="Sekcja Opłaty w tym okresie rozliczeniowym na drugiej stronie faktury.":::
 
-Sekcja **Opłaty w tym okresie rozliczeniowym** zawiera zmiany subskrypcji wprowadzone w tym okresie rozliczeniowym. Jeśli w poprzednim okresie rozliczeniowym dokonano zmiany, faktura zawiera również **sekcję Zmiany w tym okresie rozliczeniowym** . Jeśli na przykład dodano lub usunięto licencje w środku okresu, sekcja Opłaty  w tym okresie rozliczeniowym zawiera listę zmian subskrypcji i tego, kiedy one wystąpiły. Opłaty lub zwroty należne Ci z powodu tych zmian są proporcjonalnie do liczby dni, na które wpływa okres rozliczeniowy.
+W sekcji **Opłaty w tym okresie rozliczeniowym** zostaną pokazane zmiany subskrypcji wprowadzone w tym okresie rozliczeniowym. Jeśli w poprzednim okresie rozliczeniowym wprowadzono zmianę, faktura zawiera również sekcję **Opłaty w tym okresie rozliczeniowym**. Jeśli na przykład dodano lub usunięto licencje w trakcie okresu, sekcja **Opłaty w tym okresie rozliczeniowym** zawiera listę zmian w subskrypcji wraz z ich terminami. Opłaty lub zwroty należne użytkownikowi z powodu tych zmian są naliczane proporcjonalnie do liczby dni, których to dotyczy, w okresie rozliczeniowym.
 
 ## <a name="change-your-purchase-order-number"></a>Zmienianie numeru zamówienia zakupu
 
@@ -157,27 +157,27 @@ Jeśli płacisz za pomocą faktury, możesz dodać lub zmienić numer zamówieni
 > [!NOTE]
 > Nie możesz dodać numeru zamówienia zakupu do już wystawionej faktury. Numer zamówienia zakupu będzie uwzględniony na wszystkich przyszłych fakturach.
 
-1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">RozliczeniaZgody</a>  >  produktów.
-2. Na **karcie Produkty** wybierz subskrypcję, którą chcesz zmienić.
-3. Na stronie szczegółów subskrypcji w sekcji Ustawienia subskrypcji **i płatności** wybierz pozycję **Edytuj fakturę**.
-4. U dołu okienka **Edytowanie szczegółów płatności** za pomocą faktury wprowadź numer zakupu, a następnie wybierz pozycję **Zapisz**.
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
+2. Na karcie **Produkty** wybierz subskrypcję, którą chcesz zmienić.
+3. Na stronie szczegółów subskrypcji w sekcji **Ustawienia subskrypcji i płatności** wybierz pozycję **Edytuj fakturę**.
+4. U dołu okienka **Edytuj szczegóły płatności według faktury** wprowadź numer zamówienia zakupu, a następnie wybierz pozycję **Zapisz**.
 
-## <a name="run-the-unknown-charge-diagnostic"></a>Uruchamianie diagnostyki nieznanej opłaty
+## <a name="run-the-unknown-charge-diagnostic"></a>Uruchom diagnostykę nieznanych opłat
 
-Jako administrator Microsoft 365 globalnego możesz używać narzędzia diagnostycznego uruchamianego w ramach usługi centrum administracyjne platformy Microsoft 365 w celu poszukiwania nieoczekiwanych opłat od firmy Microsoft, które pojawiają się na wyciągu dla karty kredytowej lub banku.
+Jako administrator globalny platformy Microsoft 365 możesz użyć narzędzia diagnostycznego działającego w centrum administracyjnym platformy Microsoft 365, aby zbadać nieoczekiwane opłaty od firmy Microsoft, które pojawiły się na wyciągu bankowym lub wyciągu z karty kredytowej.
 
 > [!NOTE]
-> Nieznany system diagnostyki opłat jest dostępny tylko dla klientów, którzy zakupili swoje produkty i usługi w usługach firmy Microsoft.com, w tym dla klientów Microsoft 365 Enterprise, dla edukacji i organizacji niedochodowych.
+> Diagnostyka nieznanych opłat jest dostępna tylko dla klientów, którzy kupili swoje produkty i usługi w witrynie Microsoft.com, a w tym Microsoft 365 Enterprise, Education i Non-profit.
 
-Wybierz link **Uruchom testy** poniżej, aby otworzyć narzędzie diagnostyczne w centrum administracyjne platformy Microsoft 365.
+Wybierz link **Uruchom testy** poniżej, aby otworzyć narzędzie diagnostyczne w centrum administracyjnym platformy Microsoft 365.
 
 >[!div class="nextstepaction"]
->[Uruchom testy: Opłata nieznana](https://aka.ms/PillarUnknownCharge)
+>[Uruchom testy: nieznana opłata](https://aka.ms/PillarUnknownCharge)
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Wyświetlanie rachunku lub faktury](view-your-bill-or-invoice.md) (artykuł)\
-[Opłaty za subskrypcję Microsoft 365 dla firm](pay-for-your-subscription.md) (artykuł)\
-[Zarządzanie metodami płatności](manage-payment-methods.md) (artykuł)\
-[Informacje rozliczeniowe Microsoft 365 dla firm w Meksyku](mexico-billing-info.md) (artykuł) \
-[Minecraft: Education Edition opcje płatności](/education/windows/school-get-minecraft) (artykuł)
+[Płatność za subskrypcję platformy Microsoft 365 dla firm](pay-for-your-subscription.md) (artykuł)\
+[Zarządzanie formami płatności](manage-payment-methods.md) (artykuł)\
+[Informacje o rozliczeniach dla platformy Microsoft 365 dla firm w Meksyku](mexico-billing-info.md) (artykuł) \
+[Minecraft: opcje płatności dla wersji Education Edition](/education/windows/school-get-minecraft) (artykuł)

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365 zgodności
-summary: Jeśli Twoja organizacja musi przestrzegać standardów prawnych lub prawnych, rozpocznij tutaj, aby dowiedzieć się więcej o zgodności z przepisami w Microsoft 365.
+title: Dokumentacja dotycząca zgodności platformy Microsoft 365
+summary: Jeśli Twoja organizacja musi przestrzegać standardów prawnych lub przepisów, zacznij tutaj, aby dowiedzieć się więcej o zgodności na platformie Microsoft 365.
 metadata:
-  title: Microsoft 365 zgodności
-  description: Ta strona zawiera linki do niektórych ważnych tematów związanych z Microsoft 365 zgodnością. Rozpocznij tutaj, aby dowiedzieć się więcej o zgodności w Microsoft 365.
+  title: Dokumentacja dotycząca zgodności platformy Microsoft 365
+  description: Ta strona zawiera linki do niektórych ważnych tematów związanych z funkcjami zgodności platformy Microsoft 365. Zacznij tutaj, aby dowiedzieć się więcej o zgodności na platformie Microsoft 365.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -16,48 +16,48 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 2e29c9e97a266fdf2ea4b6c712c400143971f447
   ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
   ms.lasthandoff: 01/03/2022
   ms.locfileid: "62970553"
 landingContent:
-- title: Zarządzanie ochroną informacji & zarządzaniem
+- title: Zarządzanie ochroną informacji i nadzór nad nią
   linkLists:
   - linkListType: overview
     links:
     - text: Poznaj swoje dane
       url: information-protection.md#know-your-data
-    - text: Ochrona danych
+    - text: Chroń swoje dane
       url: information-protection.md#protect-your-data
     - text: Zapobieganie utracie danych
       url: information-protection.md#prevent-data-loss
-    - text: Reguluj swoje dane
+    - text: Zarządzaj swoimi danymi
       url: manage-information-governance.md
-    - text: 'Edukacja: Zarządzanie ochroną i zarządzaniem informacjami'
+    - text: 'Ścieżka szkoleniowa: zarządzanie ochroną informacji i nadzór nad nią'
       url: /learn/paths/m365-compliance-information
-- title: Zarządzanie ryzykiem w niejawnym programie testów
+- title: Zarządzanie ryzykiem wewnętrznym
   linkLists:
   - linkListType: overview
     links:
-    - text: Zarządzanie ryzykiem w niejawnym programie testów
+    - text: Zarządzanie ryzykiem wewnętrznym
       url: insider-risk-management.md
-    - text: Zgodność komunikacji
+    - text: Zgodność w komunikacji
       url: communication-compliance.md
     - text: Bariery informacyjne
       url: information-barriers.md
-    - text: Zarządzanie dostępem z uprawnieniami
+    - text: Privileged Access Management
       url: privileged-access-management-overview.md
     - text: Skrytka klienta
       url: customer-lockbox-requests.md
-- title: Odnajdowanie i odpowiadanie
+- title: Odkryj i odpowiedz
   linkLists:
   - linkListType: overview
     links:
     - text: Advanced eDiscovery
       url: overview-ediscovery-20.md
-    - text: Core eDiscovery
+    - text: Podstawowe zbieranie elektronicznych materiałów dowodowych
       url: ./get-started-core-ediscovery.md
-    - text: Przeszukiwanie zawartości
+    - text: Wyszukiwanie zawartości
       url: search-for-content.md
     - text: Inspekcja
       url: search-the-audit-log-in-security-and-compliance.md
@@ -67,21 +67,21 @@ landingContent:
     links:
     - text: Menedżer zgodności
       url: compliance-manager.md
-    - text: Plan działań dotyczących zgodności z RODO
+    - text: Plan akcji zgodności z RODO
       url: /compliance/regulatory/gdpr-action-plan
-    - text: Plan działań na rzecz zgodności ISO
+    - text: Plan akcji zgodności z normą ISO
       url: /compliance/regulatory/iso-action-plan
-    - text: Plan działań dotyczących zgodności NIST
+    - text: Plan akcji zgodności z normą NIST
       url: /compliance/regulatory/nist-action-plan
-- title: Wdrażanie rozwiązań zgodności
+- title: Wdrażanie rozwiązań do zapewniania zgodności
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Zabezpieczanie danych przy użyciu zerowego zaufania
+    - text: Zabezpieczanie danych przy użyciu modelu Zero Trust
       url: /security/zero-trust/data
-    - text: Wdrażanie rozwiązania miP
+    - text: Wdrażanie rozwiązania MIP
       url: information-protection-solution.md
-    - text: Wdrażanie ochrony informacji w celu ochrony prywatności danych
+    - text: Wdrażanie ochrony informacji na potrzeby przepisów dotyczących prywatności danych
       url: ../solutions/information-protection-deploy.md
-    - text: Ilustracje dotyczące ochrony informacji i zgodności z przepisami
+    - text: Ochrona informacji i zapewnianie zgodności z przepisami — ilustracje
       url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities
