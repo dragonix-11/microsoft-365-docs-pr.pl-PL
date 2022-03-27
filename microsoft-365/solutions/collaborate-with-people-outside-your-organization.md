@@ -19,31 +19,33 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Dowiedz się, jak skonfigurować Microsoft 365, takie jak Teams, OneDrive i SharePoint do współpracy z osobami spoza organizacji.
-ms.openlocfilehash: 0a67eff5c201eaa82e36152c5a429df00c3ec876
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 65511cbafdc1f5a666c11e1bef7fefd6e6852ee3
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988043"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712779"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Współpraca z osobami spoza organizacji
 
-Funkcje udostępniania zewnętrznego w usłudze Microsoft 365 zapewniają osobom w Twojej organizacji możliwość współpracy z partnerami, dostawcami, klientami i innymi osobami, które nie mają konta w katalogu. Możesz udostępniać całe zespoły lub witryny osobom spoza organizacji lub tylko poszczególnym plikom.
+Funkcje udostępniania zewnętrznego w usłudze Microsoft 365 zapewniają osobom w Twojej organizacji możliwość współpracy z partnerami, dostawcami, klientami i innymi osobami, które nie mają konta w katalogu. Możesz udostępniać całe zespoły, kanały lub witryny osobom spoza organizacji lub tylko poszczególnym plikom.
 
-Współpraca z osobami spoza organizacji składa się z dwóch głównych składników:
+Współpraca z osobami spoza organizacji składa się z tych głównych składników:
 
 - **Włącz** udostępnianie — skonfiguruj kontrolki udostępniania Azure Active Directory, Teams, Microsoft 365 Grup SharePoint, aby zezwolić na poziom udostępniania, który chcesz udostępnić organizacji.
+- **Konfigurowanie relacji** organizacyjnych — jeśli korzystasz z kanałów udostępnionych, musisz skonfigurować ustawienia dostępu między dzierżawami w programie Azure Active Directory, aby zezwolić na dostęp bezpośredni B2B dla każdej organizacji, z którą chcesz współpracować. (Te organizacje muszą także skonfigurować relacje organizacyjne z dzierżawą).
 - Włączanie dodatkowych **zabezpieczeń — podczas** gdy podstawowe funkcje udostępniania można skonfigurować tak, aby wymagały uwierzytelniania osób spoza organizacji, program Microsoft 365 oferuje wiele dodatkowych funkcji zabezpieczeń i zgodności, które pomagają chronić dane i zachować zasady zarządzania podczas udostępniania zewnętrznego.
 
 Przeczytaj [Konfigurowanie bezpiecznej współpracy z](/microsoft-365/solutions/setup-secure-collaboration-with-teams) innymi Microsoft 365 i Microsoft Teams, aby dowiedzieć się, w jaki sposób udostępnianie zewnętrzne wiąże się z ogólnymi wskazówkami Microsoft 365 współpracy.
 
 ## <a name="enable-sharing"></a>Włączanie udostępniania
 
-Domyślnie w programie Microsoft 365 udostępnianie osobom spoza organizacji jest włączone. Wiele scenariuszy udostępniania zewnętrznego działa bez dalszej konfiguracji. Aby potwierdzić ustawienia dla scenariusza lub włączyć nowy, wybierz jedną z następujących opcji:
+Domyślnie udostępnianie osobom spoza organizacji przy użyciu dostępu gościa lub dostępu anonimowego jest włączone, ale kanały udostępnione muszą być włączone przez skonfigurowanie relacji organizacyjnych w usłudze Azure AD. Większość scenariuszy udostępniania gościa działa bez dalszej konfiguracji. Aby potwierdzić ustawienia dla scenariusza lub włączyć nowy, wybierz jedną z następujących opcji:
 
 - [Współpraca nad dokumentami](collaborate-on-documents.md) — dowiedz się, jak Microsoft 365 zezwolić na udostępnianie i współpracę z osobami spoza organizacji (zarówno gośćmi, jak i nieuwierzytami użytkownikami) nad plikami i folderami.
 - [Współpraca w witrynie —](collaborate-in-site.md) dowiedz się, jak skonfigurować usługę Microsoft 365 w celu umożliwienia SharePoint witryn gościom.
 - [Współpraca w zespole — dowiedz](collaborate-as-team.md) się, jak skonfigurować usługę Microsoft 365 w celu umożliwienia współpracy gościa w Teams.
+- [Współpracuj z uczestnikami zewnętrznymi w kanale](/microsoft-365/solutions/collaborate-teams-direct-connect) w celu współpracy z osobami spoza organizacji w kanale udostępnionym.
 
 Aby uzyskać pełny przegląd ustawień udostępniania gościa dostępnych w różnych Microsoft 365, zobacz Microsoft 365 [informacje dotyczące ustawień udostępniania gościa](microsoft-365-guest-settings.md).
 
@@ -57,7 +59,9 @@ Po włączeniu scenariusza, który ma być przez Ciebie udostępniany osobom spo
 
 ## <a name="collaborate-with-partner-companies"></a>Współpraca z firmami partnerskimi
 
-W przypadku pracy nad dużym projektem, który obejmuje wiele gości z innej organizacji, lub jeśli masz bieżącą relację dostawcy, w której goście często się zmieniają, możesz skorzystać z zarządzania uprawnieniami w programie Azure Active Directory, aby uprościć zarządzanie gośćmi i umożliwić firmie partnerskiej udostępnianie tych obowiązków. Aby [uzyskać szczegółowe informacje, zobacz Tworzenie ekstranetu B2B z zarządzanymi gośćmi](b2b-extranet.md) .
+Jeśli pracujesz nad dużym projektem, który obejmuje gości z innej organizacji, rozważ kanały udostępnione. Ponieważ kanały udostępnione nie korzystają z kont gości, użytkownicy w innej organizacji mogą uzyskać dostęp do kanału udostępnionego bezpośrednio bez konieczności osobnego logowania się do organizacji.
+
+Jeśli masz bieżącą relację z dostawcami, w której goście często się zmieniają, możesz skorzystać z zarządzania uprawnieniami w programie Azure Active Directory, aby uprościć zarządzanie gośćmi i umożliwić firmie partnerskiej udostępnianie tych obowiązków. Aby [uzyskać szczegółowe informacje, zobacz Tworzenie ekstranetu B2B z zarządzanymi gośćmi](b2b-extranet.md) .
 
 ## <a name="limit-sharing"></a>Ogranicz udostępnianie
 

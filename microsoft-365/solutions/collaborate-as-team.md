@@ -21,18 +21,21 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Dowiedz się więcej Microsoft 365 czynnościach konfiguracyjnych niezbędnych do skonfigurowania zespołu do współpracy nad zadaniami, konwersacjami i dokumentacją z gośćmi w Teams.
-ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0fd723a86f79f97703eca96c0693882fbc05f13a
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324553"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712911"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Współpraca z gośćmi w zespole
 
 Jeśli chcesz współpracować z gośćmi w dokumentach, zadaniach i konwersacjach, zalecamy skorzystanie z Microsoft Teams. Teams udostępnia wszystkie funkcje współpracy dostępne w usługach Office i SharePoint za pomocą rozmów trwałych oraz dostosowywalny i rozszerzalny zestaw narzędzi do współpracy w ujednoliconym interfejsie użytkownika.
 
 W tym artykule o krokach konfigurowania zespołu Microsoft 365 czynności niezbędne do skonfigurowania zespołu do współpracy z gośćmi. Po skonfigurowaniu dostępu gości możesz zaprosić gości do zespołów, korzystając z procedury opisanej w te sposób: Dodawanie gości do zespołu w [aplikacji Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
+
+> [!NOTE]
+> [Kanały udostępnione](collaborate-teams-direct-connect.md) oferują bardziej płynne środowisko niż konta gości podczas współpracy z innymi Microsoft 365 organizacji. Kanały udostępnione umożliwiają współpracę z osobami spoza organizacji przy Teams z innych kanałów bez konieczności logowania się do organizacji przez uczestników zewnętrznych. Zalecamy zapoznanie się z [tematem Planowanie współpracy zewnętrznej](plan-external-collaboration.md) w celu sprawdzenia, czy udostępnione kanały są lepszym rozwiązaniem niż współpraca z gośćmi w danym scenariuszu.
 
 ## <a name="video-demonstration"></a>Pokaz wideo
 
@@ -44,7 +47,7 @@ W tym klipie wideo przedstawiono kroki konfiguracji opisane w tym dokumencie.</b
 
 Udostępnianie w Microsoft 365 jest zarządzane na najwyższym poziomie przez ustawienia współpracy zewnętrznej [B2B w programie Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). Jeśli udostępnianie gości jest wyłączone lub ograniczone w usłudze Azure AD, to ustawienie zastępuje wszystkie ustawienia udostępniania skonfigurowane w usłudze Microsoft 365.
 
-Sprawdź ustawienia zewnętrznych ustawień współpracy B2B, aby upewnić się, że udostępnianie gościom nie jest zablokowane.
+Sprawdź ustawienia współpracy zewnętrznej B2B, aby upewnić się, że udostępnianie gościom nie jest zablokowane.
 
 ![Zrzut ekranu przedstawiający Azure Active Directory relacje organizacyjne Ustawienia stronie.](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -195,5 +198,3 @@ Aby zaprosić gości do zespołu
 [Tworzenie ekstranetu B2B z gośćmi zarządzanymi](b2b-extranet.md)
 
 [Integracja programu SharePoint i usługi OneDrive z usługą Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
-
-[Opcje udostępniania są wyszzarowane podczas udostępniania z SharePoint lub OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

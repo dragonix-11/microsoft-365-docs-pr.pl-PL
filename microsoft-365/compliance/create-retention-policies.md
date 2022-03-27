@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zasady przechowywania skutecznie kontrolują zawartość generną przez użytkowników za pomocą wiadomości e-mail, dokumentów i konwersacji. Zachowaj to, co chcesz, i pozbądź się tego, czego nie chcesz.
-ms.openlocfilehash: ddd0553405aa92a1eb7a7978398392b780a0a2ea
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: 94388a375c3c50d97e696637ef6ef4ebefc96aab
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557813"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715498"
 ---
 # <a name="create-and-configure-retention-policies"></a>Tworzenie i konfigurowanie zasad przechowywania
 
@@ -73,6 +73,9 @@ Jeśli masz więcej niż jedno zasady przechowywania, a także używasz etykiet 
 
 ### <a name="retention-policy-for-teams-locations"></a>Zasady przechowywania dla Teams lokalizacji
 
+> [!NOTE]
+> Zasady przechowywania obsługują teraz [kanały udostępnione](/MicrosoftTeams/shared-channels), obecnie w wersji Preview. Po skonfigurowaniu ustawień przechowywania dla lokalizacji  Teams kanałów, jeśli zespół ma jakiekolwiek kanały udostępnione, dziedziczy on ustawienia przechowywania po swoim zespole nadrzędnym.
+
 1. Na stronie [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com/) pozycję **Zasady zarządzania informacjami** > **.**
 
 2. Wybierz **pozycję Nowe zasady przechowywania** , aby uruchomić **konfigurację Tworzenie zasad przechowywania** i nazwać nowe zasady przechowywania.
@@ -84,7 +87,7 @@ Jeśli masz więcej niż jedno zasady przechowywania, a także używasz etykiet 
     - Jeśli wybrano **adaptacyjny**: Na  stronie Wybieranie zakresów i lokalizacji adaptacyjnych zasad wybierz pozycję  Dodaj zakresy i wybierz co najmniej jeden z utworzonych adaptacyjnych zakresów. Następnie wybierz jedną lub więcej lokalizacji. Lokalizacje, które można wybrać, zależą od [dodanych typów](retention-settings.md#configuration-information-for-adaptive-scopes) zakresów. Jeśli na przykład dodano tylko typ zakresu **użytkownika, będzie** można wybrać czaty Teams, ale nie  Teams **wiadomości w kanałach**. 
     
     - Jeśli wybrano **pozycję Statyczny**: Na **stronie Wybierz** lokalizacje do zastosowania zasad wybierz jedną lub więcej lokalizacji dla Teams:
-        - **Teams wiadomości na kanale**: Wiadomości ze standardowych czatów kanałów i standardowych spotkań w kanale, ale nie z [](/microsoftteams/private-channels) kanałów prywatnych, które mają własną lokalizację zasad.
+        - **Teams wiadomości w kanale**: Wiadomości ze standardowych i udostępnionych czatów kanałów oraz standardowych i udostępnionych spotkań w kanale, ale nie z [](/microsoftteams/private-channels) kanałów prywatnych, które mają własną lokalizację zasad.
         - **Teams czatów**: Wiadomości z prywatnych czatów prywatnych (1:1), czatów grupowych i czatów na spotkaniach.
         - **Teams wiadomości z kanału prywatnego**: Wiadomości z czatów w kanale prywatnym i spotkań w kanale prywatnym.
         
@@ -224,7 +227,7 @@ Najpierw zasady przechowywania muszą zostać rozpowszechnione do wybranych loka
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - W przypadku wszystkich innych lokalizacji zasad, takich **jak Exchange-mail****, witryny** SharePoint, Teams **wiadomości w kanałach itp.**:
+    - W przypadku wszystkich innych lokalizacji zasad, takich **Exchange-mail**, witryny SharePoint **i** wiadomości Teams **kanałów**:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

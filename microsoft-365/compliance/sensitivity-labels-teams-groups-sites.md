@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Etykiety wrażliwości chronią zawartość w SharePoint i Microsoft Teams sieci Web Microsoft 365 grupy.
-ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b5eb295e83e2a87a538201fe58c221f3f9400f97
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504818"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714922"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Używanie etykiet wrażliwości w celu ochrony zawartości Microsoft Teams, grup Microsoft 365 i SharePoint internetowych
 
@@ -57,6 +57,9 @@ Przed włączeniem etykiet wrażliwości dla kontenerów i skonfigurowaniem etyk
 Po włączeniu i skonfigurowaniu etykiet wrażliwości dla kontenerów użytkownicy mogą również widzieć i stosować etykiety wrażliwości do witryn  zespołu firmy Microsoft, grup Microsoft 365 i SharePoint witryn. Na przykład podczas tworzenia nowej witryny zespołu z SharePoint:
 
 ![Etykieta wrażliwości podczas tworzenia witryny zespołu z witryny SharePoint.](../media/sensitivity-labels-new-team-site.png)
+
+> [!NOTE]
+> Etykiety wrażliwości kontenerów obsługują [Teams udostępnionych kanałów](/MicrosoftTeams/shared-channels), które są obecnie w wersji zapoznawczej. Jeśli zespół ma jakiekolwiek kanały udostępnione, automatycznie dziedziczy on ustawienia etykiet wrażliwości po swoim zespole nadrzędnym i tej etykiety nie można usunąć ani zamienić na inną etykietę.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Jak włączyć etykiety wrażliwości dla kontenerów i synchronizować etykiety
 

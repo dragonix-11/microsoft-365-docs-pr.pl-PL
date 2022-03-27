@@ -1,22 +1,22 @@
-- name: Przełączanie z usługi Google Workspace do usługi Microsoft 365
+- name: Przełączanie z obszaru roboczego Google na platformę Microsoft 365
   items:
     - name: Omówienie
       href: move-from-google-workspace-overview.md
     - name: Tworzenie konta na platformie Microsoft 365
-      href: /admin-overview/sign-up-for-office-365?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
-    - name: Konfigurowanie migracji Microsoft 365 Google
+      href: ../admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+    - name: Konfigurowanie platformy Microsoft 365 na potrzeby migracji do usługi Google
       href: set-up-microsoft-365-forgoogle.md
-    - name: Konfigurowanie zasad zabezpieczeń dla Windows urządzeniach
+    - name: Konfigurowanie zasad zabezpieczeń dla urządzeń z systemem Windows
       href: ../setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
-    - name: Dodawanie domeny obszaru roboczego programu Google
+    - name: Dodaj domenę obszaru roboczego Google
       href: add-google-domain.md
-    - name: Instalowanie Office i aplikacji Microsoft Teams
+    - name: Instalowanie aplikacji pakietu Office i usługi Microsoft Teams
       href: ../setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
-    - name: 'Migrowanie wiadomości e-mail, kalendarza i kontaktów do Microsoft 365'
+    - name: 'Migrowanie poczty e-mail, kalendarza i kontaktów do platformy Microsoft 365'
       href: migrate-email.md
-    - name: Połączenie domenę do Microsoft 365
+    - name: Łączenie domeny z platformą Microsoft 365
       href: connect-domain-tom365.md
-    - name: Używanie Menedżera migracji do przenoszenia danych wszystkich osób
+    - name: Przenoszenie danych wszystkich osób za pomocą programu Migration Manager
       href: migrate-files-migration-manager.md
-    - name: Anulowanie usługi Google Workspace
+    - name: Anuluj obszar roboczy Google
       href: cancel-google.md

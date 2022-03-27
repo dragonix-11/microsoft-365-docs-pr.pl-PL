@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Pobierz raport SharePoint witryny, aby dowiedzieć się, ile plików użytkowników przechowuje w witrynach SharePoint, ile jest aktywnie używanych i ile miejsca do magazynowania jest używane.
-ms.openlocfilehash: da857d1814bf0aa27532d3f730d352c6edeb66e9
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: ae25562924f569431b3a6d7eda3099f69cd912b1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400687"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754224"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 raporty w centrum administracyjnym — informacje SharePoint użycia witryny
 
@@ -80,7 +80,7 @@ W **SharePoint użycia** witryny można przeglądać trendy z ostatnich 7, 30, 9
 |Zasady dotyczące urządzeń niezamanektowych  | Zasady dostępu do witryny dla urządzeń niezawiązyanych.  |
 |Lokalizacja geograficzna  | Lokalizacja geograficzna witryny.  |
 |Pliki  |Liczba plików w witrynie. |
-|Aktywne pliki  | Liczba aktywnych plików w witrynie.<br/> UWAGA: Jeśli pliki zostały usunięte w przedziale czasu określonym dla raportu, liczba aktywnych plików wyświetlana w raporcie może być większa niż bieżąca liczba plików w witrynie.  |
+|Aktywne pliki  | Liczba aktywnych plików w witrynie. Plik jest uznawany za aktywny, jeśli został zapisany, zsynchronizowany, zmodyfikowany lub udostępniony w określonym przedziale czasu.<br/> UWAGA: Jeśli pliki zostały usunięte w przedziale czasu określonym dla raportu, liczba aktywnych plików wyświetlana w raporcie może być większa niż bieżąca liczba plików w witrynie.  |
 |Storage (MB)  |Ilość miejsca do magazynowania używanego w witrynie.  |
 |Storage przydzielone (MB)  |Maksymalna ilość miejsca do magazynowania przydzielonego dla witryny.  |
 |Widoki stron  |Liczba wyświetlń stron w witrynie.  |

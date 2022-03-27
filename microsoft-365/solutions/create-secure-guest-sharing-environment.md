@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Poznaj dostępne opcje tworzenia bezpiecznego środowiska udostępniania gości w aplikacji Microsoft 365, zapewniając dostęp gościa do ulepszonej współpracy.
-ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 13190f2dba0f2cb1f4817a1a831b8d78359e1b81
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323797"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715146"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Tworzenie bezpiecznego środowiska udostępniania gości
 
@@ -68,7 +68,7 @@ Teraz gość będzie wymagany do zarejestrowania się w uwierzytelnieniu wielosk
 
 ### <a name="more-information"></a>Więcej informacji
 
-[Planowanie wdrożenia usługi Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planowanie wdrożenia uwierzytelniania wieloskładnikowego usługi Azure AD](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Konfigurowanie warunków użytkowania dla gości
 
@@ -143,7 +143,7 @@ Aby skonfigurować recenzję dostępu gościa
 13. Wpisz nazwę **recenzji** i przejrzyj ustawienia.
 14. Kliknij **przycisk Utwórz**.
 
-Należy pamiętać, że w przypadku lokalizacji w systemach SharePoint i OneDrive dokumenty będą aktywnie blokowane od razu po wykryciu informacji poufnych niezależnie od tego, czy dokument jest udostępniany wszystkim użytkownikom zewnętrznym, natomiast użytkownicy wewnętrzni nadal będą mieli dostęp do dokumentu.
+Należy pamiętać, że w przypadku lokalizacji w usługach SharePoint i OneDrive dokumenty będą aktywnie blokowane od razu po wykryciu informacji poufnych niezależnie od tego, czy dokument jest udostępniany czy nie, dla wszystkich gości, natomiast użytkownicy wewnętrzni nadal będą mieli dostęp do dokumentu.
 
 ### <a name="more-information"></a>Więcej informacji
 
@@ -254,7 +254,7 @@ Gdy użytkownik wklei zasady "Project Saturn" do dokumentu, zasady automatyczneg
 
 ### <a name="more-information"></a>Więcej informacji
 
-[Automatyczne stosowanie etykiet wrażliwości do zawartości](../compliance/apply-sensitivity-label-automatically.md)
+[Automatyczne stosowanie etykiety poufności do zawartości](../compliance/apply-sensitivity-label-automatically.md)
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Tworzenie zasad DLP w celu usunięcia dostępu gościa do bardzo poufnych plików
 
@@ -283,7 +283,10 @@ Aby utworzyć regułę DLP
 13. Wybierz opcje testowania i kliknij przycisk **Dalej**.
 14. Kliknij **pozycję Prześlij**, a następnie kliknij pozycję **Gotowe**.
 
-Należy pamiętać, że te zasady nie usuwają dostępu, jeśli gość jest członkiem witryny lub zespołu jako całości. Jeśli planujesz mieć wysoce poufne dokumenty w witrynie lub zespole z członkami gości, rozważ korzystanie z kanałów prywatnych w programie [Teams](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e) i zezwalanie na dostęp do kanałów prywatnych tylko członkom Twojej organizacji.
+Należy pamiętać, że te zasady nie usuwają dostępu, jeśli gość jest członkiem witryny lub zespołu jako całości. Jeśli planujesz mieć w witrynie lub zespole wysoce poufne dokumenty z członkami gości, rozważ następujące opcje:
+
+- Używaj [kanałów prywatnych](/MicrosoftTeams/private-channels) i zezwalaj na dostęp do kanałów prywatnych tylko członkom Twojej organizacji.
+- Za [pomocą kanałów](/MicrosoftTeams/shared-channels) udostępnionych możesz współpracować z osobami spoza organizacji, mając w zespole tylko osoby z Twojej organizacji.
 
 ## <a name="additional-options"></a>Dodatkowe opcje
 

@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 5ffbe15fe9fa06e7c06546f9452d6c4f2bddfc39
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 77edaa3d71911bd0594e707996c320285dddabc5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329617"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754115"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Informacje dotyczące reguł zmniejszania powierzchni ataków
 
@@ -112,7 +112,7 @@ Poniżej tej tabeli znajdują się linki do informacji o wersjach systemu zarzą
 
 |Nazwa reguły | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |<sup>zasady grupy[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników](#block-abuse-of-exploited-vulnerable-signed-drivers) | T  | Y MEM OMA-URI |   | T  |  T |
+|[Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników](#block-abuse-of-exploited-vulnerable-signed-drivers) | T  | Y MEM OMA-URI |   | T  |  T  |
 |[Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader](#block-adobe-reader-from-creating-child-processes) | T |   | T | T  | T  |
 |[Blokowanie tworzenia procesów Office przez wszystkie aplikacje](#block-all-office-applications-from-creating-child-processes) | T |   |T <br><br> CB 1710 | T  | T  |
 |[Blokowanie wykradania poświadczeń z podsystemu Windows Security Authority (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T  |   | T <br><br>CB 1802 | T  | T  |
@@ -240,7 +240,7 @@ Zależności: MDAV
 
 Ta reguła blokuje Office tworzenia procesów podrzędnych przez aplikacje. Office obejmują programy Word, Excel, PowerPoint, OneNote i Access.
 
-Tworzenie złośliwych procesów dzieci to często strategia złośliwego oprogramowania. Złośliwe oprogramowanie, które wykorzystujące Office w wektorze często uruchamia makra VBA i wykorzystuje kod do pobierania i próby uruchomienia większej liczby plików. Jednak niektóre legalne aplikacje firmowe mogą również generować procesy podrzędne w celu ich zasyłowania. na przykład w celu skonfigurowania ustawień rejestru za pomocą wiersza polecenia lub programu PowerShell.
+Tworzenie złośliwych procesów dzieci to często strategia złośliwego oprogramowania. Złośliwe oprogramowanie, które wykorzystujące Office w wektorze często uruchamia makra VBA i wykorzystując kod w celu pobrania i próby uruchomienia większej liczby plików. Jednak niektóre legalne aplikacje firmowe mogą również generować procesy podrzędne w celu ich zasyłowania. na przykład w celu skonfigurowania ustawień rejestru za pomocą wiersza polecenia lub programu PowerShell.
 
 Nazwa usługi Intune: `Office apps launching child processes`
 

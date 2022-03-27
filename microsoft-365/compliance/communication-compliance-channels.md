@@ -1,5 +1,5 @@
 ---
-title: Wykrywanie sygnałów kanału za pomocą zgodności komunikacji
+title: Wykrywaj sygnały kanału ze zgodnością w komunikacji
 description: Dowiedz się więcej o wykrywaniu sygnałów kanału ze zgodnością komunikacji.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9cc2b77c9983fecc6e58be515fe316c6c5239fef
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 35bd11ac88859c3e587771552a02097a2f090a44
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317783"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712889"
 ---
-# <a name="detect-channel-signals-with-communication-compliance"></a>Wykrywanie sygnałów kanału za pomocą zgodności komunikacji
+# <a name="detect-channel-signals-with-communication-compliance"></a>Wykrywaj sygnały kanału ze zgodnością w komunikacji
 
 Za pomocą zasad zgodności komunikacji możesz skanować wiadomości na co najmniej jednej z poniższych platform komunikacyjnych jako grupę lub jako autonomiczne źródła. Oryginalne wiadomości przechwycone na tych platformach są zachowywane w pierwotnej lokalizacji platformy zgodnie z zasadami przechowywania i przechowywania [w organizacji](/microsoft-365/compliance/information-governance). Kopie wiadomości używanych przez zasady zgodności komunikacji podczas analizy i analizy są zachowywane przez okres przechowywania zasad, nawet jeśli użytkownicy opuszczają organizację i ich skrzynki pocztowe są usuwane. Usunięcie zasad komunikacji również wiąże się z usunięciem kopii wiadomości skojarzonych z zasadami.
 
@@ -33,7 +33,14 @@ Za pomocą zasad zgodności komunikacji możesz skanować wiadomości na co najm
 
 Komunikację na czacie zarówno w publicznych, Microsoft Teams prywatnych, jak i na poszczególnych czatach można skanować. Gdy użytkownikom przypisano zasady zgodności komunikacji z wybranym zakresem Microsoft Teams, komunikacja na czacie jest automatycznie monitorowana na wszystkich platformach Microsoft Teams których są ich członkami. Microsoft Teams jest automatycznie uwzględniane dla wstępnie zdefiniowanych szablonów zasad i jest domyślnie wybrane w szablonie zasad niestandardowych. Teams czatów spełniających warunki zasad zgodności komunikacji może potrwać do 48 godzin.
 
-W przypadku czatu prywatnego i kanałów prywatnych zasady zgodności komunikacji obsługują nowoczesne skanowanie załączników. Nowoczesne załączniki to pliki ze źródeł [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) lub [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations), które są zawarte w Teams wiadomościach. Tekst jest automatycznie wyodrębniony z tych załączników w celu automatycznego przetwarzania i potencjalnego dopasowania do warunków aktywnych zasad zgodności komunikacji i klasyfikatorów. Nowoczesne wykrywanie i przetwarzanie załączników nie wymaga żadnej dodatkowej konfiguracji. Tekst jest wyodrębniony tylko dla załączników spełniających warunki zasad. W przypadku wiadomości z dopasowaniami zasad tekst nie jest wyodrębniony dla załączników, nawet jeśli załącznik ma również zgodne zasady.
+W przypadku czatu prywatnego i kanałów prywatnych zasady zgodności komunikacji obsługują [udostępnione kanały](/MicrosoftTeams/shared-channels) i nowoczesne skanowanie załączników. Kanały udostępnione obsługiwane w Teams są obsługiwane automatycznie i nie wymagają dodatkowych zmian w konfiguracji zgodności komunikacji. W poniższej tabeli podsumowano zachowanie zgodności komunikacji podczas Teams kanałów komunikacji z grupami i użytkownikami:
+
+|**Scenariusz**|**Zachowanie zgodności komunikacji**|
+|:-----------|:------------------------------------|
+| **Udostępnianie kanału zespołowi wewnętrzneowi** | Zasady zgodności komunikacji dotyczą użytkowników w zakresie oraz wszystkich wiadomości w kanale udostępnionym |
+| **Udostępnianie kanału zespołowi zewnętrzneowi** | Zasady zgodności komunikacji dotyczą wewnętrznych użytkowników i wiadomości w kanale udostępnionym organizacji wewnętrznej. |
+
+Nowoczesne załączniki to pliki ze źródeł [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) lub [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations), które są zawarte w Teams wiadomościach. Tekst jest automatycznie wyodrębniony z tych załączników w celu automatycznego przetwarzania i potencjalnego dopasowania do warunków aktywnych zasad zgodności komunikacji i klasyfikatorów. Nowoczesne wykrywanie i przetwarzanie załączników nie wymaga żadnej dodatkowej konfiguracji. Tekst jest wyodrębniony tylko dla załączników spełniających warunki zasad. W przypadku wiadomości z dopasowaniami zasad tekst nie jest wyodrębniony dla załączników, nawet jeśli załącznik ma również zgodne zasady.
 
 Nowoczesne skanowanie załączników jest obsługiwane w przypadku następujących typów plików:
 

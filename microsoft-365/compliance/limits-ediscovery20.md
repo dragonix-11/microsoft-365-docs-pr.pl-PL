@@ -1,5 +1,5 @@
 ---
-title: Advanced eDiscovery ograniczenia
+title: Limity zaawansowanego zbierania elektronicznych materiałów dowodowych
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o limitach przypadków, limitach indeksowania i limitach wyszukiwania, które są Advanced eDiscovery rozwiązania w Microsoft 365.
-ms.openlocfilehash: fc658f4502bf510cf34297435db75bd7cdd7c136
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 04b0f98286693ef14019b30ab9c8d3a592484d92
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316201"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712801"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limity w programie Advanced eDiscovery
 
@@ -42,7 +42,6 @@ W poniższej tabeli wymieniono limity dotyczące spraw i zestawów recenzji w Ad
 |Maksymalna liczba unikatowych tagów na przypadek. <br/> |10001<sup></sup> |
 |Maksymalna liczba jednoczesnych zadań w organizacji w celu dodania zawartości do zestawu recenzji. Te zadania mają nazwę **Dodawanie danych do zestawu** recenzji i są wyświetlane na **karcie** Zadania w przypadku.| <sup>102</sup> |
 |Maksymalna liczba jednoczesnych zadań w celu dodania zawartości do zestawu recenzji dla każdego użytkownika. Te zadania mają nazwę **Dodawanie danych do zestawu** recenzji i są wyświetlane na **karcie** Zadania w przypadku. | 3 |
-|||
 
 ## <a name="hold-limits"></a>Limity wstrzymywania
 
@@ -64,7 +63,6 @@ W poniższej tabeli wymieniono limity indeksowania w Advanced eDiscovery.
 |Maksymalny rozmiar jednego pliku.   <br/> |150 <sup>MB4</sup> <br/> |
 |Maksymalna głębokość osadzonych elementów w dokumencie.  <br/> |<sup>254</sup> <br/> |
 |Maksymalny rozmiar plików przetwarzanych za pomocą optycznego rozpoznawania znaków (OCR).  <br/> |24 <sup>MB4</sup> <br/>  
-|||
 
 ## <a name="search-limits"></a>Limity wyszukiwania
 
@@ -87,28 +85,26 @@ Limity opisane w tej sekcji są związane z używaniem narzędzia wyszukiwania n
 |Maksymalna liczba elementów w skrzynce pocztowej folderu publicznego wyświetlana na stronie podglądu podczas wyszukiwania. |100|
 |Maksymalna liczba elementów znalezionych we wszystkich elementach skrzynki pocztowej folderu publicznego wyświetlanych na stronie podglądu podczas wyszukiwania. |200|
 |Maksymalna liczba skrzynek pocztowych folderów publicznych, których podgląd można wyświetlić w celu wyszukania wyników. Jeśli istnieje więcej niż 500 skrzynek pocztowych folderów publicznych, które zawierają elementy zgodne z zapytaniem wyszukiwania, tylko 500 najwyższych skrzynek pocztowych z najwięcej wyników jest dostępnych do podglądu.|500|
-|||
+|Maksymalny rozmiar elementu, który można wyświetlić na przykładowej stronie kolekcji roboczej.|10 000 000 bajtów (około 9,5 MB)|
 
 ## <a name="search-times"></a>Czas wyszukiwania
 
 Firma Microsoft zbiera informacje o wydajności podczas wyszukiwania prowadzonego przez wszystkie organizacje. Złożoność zapytania wyszukiwania może mieć wpływ na czas wyszukiwania, ale największy wpływ na czas wyszukiwania ma liczba przeszukanych skrzynek pocztowych. Mimo że firma Microsoft nie zawiera umowy dotyczącej poziomu usług dla godzin wyszukiwania, w poniższej tabeli wymieniono średni czas wyszukiwania kolekcji na podstawie liczby skrzynek pocztowych uwzględnionych w wyszukiwaniu.
   
-  | Liczba skrzynek pocztowych | Średni czas wyszukiwania |
-  |:-----|:-----|
-  |100  <br/> |30 sekund  <br/> |
-  |1,000  <br/> |45 sekund  <br/> |
-  |10,000  <br/> |4 minuty  <br/> |
-  |25,000  <br/> |10 minut  <br/> |
-  |50,000  <br/> |20 minut  <br/> |
-  |100,000  <br/> |25 minut  <br/> |
-  |||
+| Liczba skrzynek pocztowych | Średni czas wyszukiwania |
+|:-----|:-----|
+|100  <br/> |30 sekund  <br/> |
+|1,000  <br/> |45 sekund  <br/> |
+|10,000  <br/> |4 minuty  <br/> |
+|25,000  <br/> |10 minut  <br/> |
+|50,000  <br/> |20 minut  <br/> |
+|100,000  <br/> |25 minut  <br/> |
 
 ## <a name="viewer-limits"></a>Ograniczenia przeglądarki
 
 | Opis limitu | Limit |
 |:-----|:-----|
 |Maksymalny rozmiar Excel plików, które można wyświetlać w natywnej przeglądarce.  <br/> |4 MB  <br/> |
-|||
 
 ## <a name="export-limits---final-export-out-of-review-set"></a>Limity eksportowania — końcowy eksport poza zestaw recenzji
 
@@ -118,14 +114,12 @@ Limity opisane w tej sekcji są związane z eksportowaniem dokumentów z zestawu
 |:-----|:-----|
 |Maksymalny rozmiar pojedynczego eksportu.|5 milionów dokumentów lub 500 GB, w zależności od tego, co jest mniejsze|
 |Maksymalna liczba jednoczesnych eksportów według zestawu recenzji. | 1 |
-|||
 
 ## <a name="review-set-download-limits"></a>Przejrzyj ustawione limity pobierania
 
 | Opis limitu | Limit |
 |:-----|:-----|
 |Całkowity rozmiar pliku lub maksymalna liczba dokumentów pobranych z zestawu recenzji.  <br/> |3 MB lub 50 <sup>dokumentów7</sup>|
-|||
 
 ## <a name="notes"></a>Uwagi
 

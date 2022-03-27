@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania, które dotyczą Microsoft Teams.
-ms.openlocfilehash: d3562126a678e486fd97f3c760841f9ba4de7193
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "63014808"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714879"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Dowiedz się więcej na temat przechowywania Microsoft Teams
 
@@ -43,6 +43,9 @@ W przypadku innych obciążeń, zobacz:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Co obejmuje przechowywanie i usuwanie
 
+> [!NOTE]
+> Zasady przechowywania obsługują teraz [kanały udostępnione](/MicrosoftTeams/shared-channels), obecnie w wersji Preview. Wszystkie kanały udostępnione dziedziczą ustawienia przechowywania po kanale nadrzędnym.
+
 Teams czatów, wiadomości kanałów i wiadomości w kanałach prywatnych można usuwać przy użyciu zasad przechowywania dla programu Teams, a oprócz tekstu w wiadomościach, ze względu na zgodność z przepisami, mogą być zachowywane następujące elementy: Osadzone obrazy, tabele, linki hipertekstowe, linki do innych wiadomości i plików programu Teams oraz [zawartość](/microsoftteams/platform/task-modules-and-cards/what-are-cards) kart. Wiadomości na czacie i wiadomości w kanale prywatnym obejmują wszystkie nazwiska osób w konwersacji, a wiadomości kanału zawierają nazwę zespołu i tytuł wiadomości (jeśli zostały podane). 
 
 Fragmenty kodu, zarejestrowane notatki głosowe z klienta mobilnego usługi Teams, miniatury, obrazy ogłoszeń i reakcje od innych osób w formie emotikonów nie są zachowywane, gdy korzystasz z zasad przechowywania na Teams.
@@ -60,6 +63,7 @@ Te skrzynki pocztowe są wymienione według ich atrybutu RecipientTypeDetails:
 - **UserMailbox**: Te skrzynki pocztowe przechowują dane wiadomości dla użytkowników usługi Teams w chmurze.
 - **MailUser**: Te skrzynki pocztowe przechowują dane wiadomości dla [użytkowników Teams lokalnych](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: Te skrzynki pocztowe przechowują dane wiadomości dla Teams standardowych kanałów.
+- **Grupę na grupę**: Te skrzynki pocztowe przechowują dane wiadomości na Teams kanałach udostępnionych.
 
 Inne typy skrzynek pocztowych, takie jak RoomMailbox, które są używane w Teams konferencyjnych, nie są obsługiwane Teams przechowywania.
 

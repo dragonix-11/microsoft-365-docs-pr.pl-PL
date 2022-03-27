@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 255618508559e989a356ab404429bc4d87bfe2c6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 22927fbf85d9dab424c8b546b7e837bf035d8a2f
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324539"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775367"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Ocena dostępu ciągłego dla programu Microsoft 365
 
@@ -76,10 +76,6 @@ Ocena zasad dostępu warunkowego jest wtedy, gdy konto użytkownika nie łączy 
 
 Poniższe Microsoft 365 obecnie obsługują ocenę dostępu ciągłego, nasłuchiwanie zdarzeń z usługi Azure AD.
 
-<br>
-
-****
-
 |Typ wymuszania|Exchange|SharePoint|Teams|
 |---|---|---|---|
 |**Zdarzenia krytyczne:**||||
@@ -87,7 +83,6 @@ Poniższe Microsoft 365 obecnie obsługują ocenę dostępu ciągłego, nasłuch
 |Ryzyko użytkownika|Obsługiwane|Nieobsługiwane|Nieobsługiwane|
 |**Ocena zasad dostępu warunkowego:**||||
 |Zasady lokalizacji adresów IP|Obsługiwane|Obsługiwane\*|Obsługiwane|
-|
 
 \*SharePoint Office dostęp do przeglądarki sieci Web obsługuje błyskawiczne wymuszanie zasad ip przez włączenie trybu ścisłego. Bez trybu ścisłego okres istnienia tokenu dostępu wynosi jedną godzinę.
 

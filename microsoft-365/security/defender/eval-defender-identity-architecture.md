@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e534211008ea560642ba306844b9223170ac0140
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: de49205fe20cd5685279c0a5f9d138147f24bb8d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323223"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754170"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Przegląd wymagań dotyczących architektury i kluczowych pojęć dotyczących usługi Microsoft Defender dla tożsamości
 
@@ -46,13 +46,13 @@ Usługa Defender for Identity chroni lokalnych użytkowników i/lub użytkownik�
 
 Na poniższym diagramie przedstawiono podstawową architekturę usługi Defender dla tożsamości. 
 
-![Architektura programu Microsoft Defender dla tożsamości.](../../media/defender/m365-defender-identity-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="Architektura tożsamości dla usługi Microsoft Defender dla tożsamości" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
 
 Na poniższej ilustracji:
+
 - Czujniki zainstalowane w kontrolerach domeny usługi AD analizują dzienniki i ruch sieciowy i wysyłają je do usługi Microsoft Defender for Identity w celu analizy i raportowania.
 -  Czujniki mogą również  analizuje usługi federacyjne Active Directory (AD FS), jeśli usługa Azure AD jest skonfigurowana do korzystania z uwierzytelniania federacyjne (linia kropkowana na ilustracji). 
 - Usługa Microsoft Defender for Identity udostępnia sygnały do Microsoft 365 Defender wykrywania rozszerzonego i odpowiedzi (XDR).
-
 
 Czujnik usługi Defender for Identity można zainstalować bezpośrednio na następujących serwerach:
 
@@ -66,7 +66,6 @@ Aby uzyskać bardziej szczegółowe informacje na temat architektury usługi Def
 
 W poniższej tabeli przedstawiono kluczowe pojęcia, które należy zrozumieć podczas oceniania, konfigurowania i wdrażania programu Microsoft Defender dla tożsamości.
 
-
 |Pojęcie  |Opis |Więcej informacji  |
 |---------|---------|---------|
 | Monitorowane działania | Program Defender for Identity monitoruje sygnały wygenerowane w organizacji w celu wykrycia podejrzanych lub złośliwych działań, a także pomaga określić ważność każdego potencjalnego zagrożenia, co umożliwia skuteczne trygonstwo i reagowanie.  |  [Działania monitorowane w programie Microsoft Defender for Identity](/defender-for-identity/monitored-activities)       |
@@ -78,8 +77,6 @@ W poniższej tabeli przedstawiono kluczowe pojęcia, które należy zrozumieć p
 | Grupy ról    | Program Defender for Identity oferuje grupy oparte na rolach i dostęp delegowany w celu zabezpieczenia danych zgodnie z określonymi potrzebami organizacji w zakresie zabezpieczeń i zgodności, które obejmują administratorów, użytkowników i osoby przeglądowe.        |  [Grupy ról usługi Microsoft Defender dla tożsamości](/defender-for-identity/role-groups)       |
 | Portal administracyjny    |  Oprócz portalu Microsoft 365 Defender usługi Defender for Identity portal usługi Defender for Identity może być używany do monitorowania podejrzanych działań i reagowania na nie.      | [Praca z portalem usługi Microsoft Defender for Identity](/defender-for-identity/workspace-portal)        |
 | Integracja programu Microsoft Defender dla aplikacji w chmurze   | Program Microsoft Defender for Cloud Apps integruje się z programem Microsoft Defender for Identity w celu zapewnienia analizy zachowań encji użytkownika (UEBA) w środowisku hybrydowym — zarówno w aplikacji w chmurze, jak i w środowisku lokalnym   | Integracja usługi Microsoft Defender dla tożsamości  |
-| | | |
-
 
 ## <a name="review-prerequisites"></a>Przejrzyj wymagania wstępne
 

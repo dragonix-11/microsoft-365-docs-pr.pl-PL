@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Składnik zasad DLP i informacje o konfiguracji
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d94277ac4ee3bd78feecf660e03d60a5720d1b43
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4888569318fd24d25368dc1c923a1efced9f4126
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319423"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675443"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informacje dotyczące zasad ochrony przed utratą danych
 
@@ -397,17 +397,54 @@ Akcje dostępne w  regułach zależą od zaznaczonych lokalizacji. Jeśli wybier
 
 - Inspekcja lub ograniczanie działań na Windows urządzeniach
 
-> [!NOTE]
-> Dla opcji Urządzenia jest dostępna **opcja Inspekcja** działania, **Blokowanie** działania lub **Blokuj z zastępowaniem** działania.
+Aby użyć tych ustawień, musisz skonfigurować opcje w ustawieniach **funkcji DLP** oraz w zasadach, w których chcesz ich używać. Aby uzyskać [więcej informacji](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) , zobacz Ograniczone aplikacje i grupy aplikacji.
 
-Lokalizacja urządzeń zapewnia wiele funkcji podrzędnych (warunków) i akcji. Aby dowiedzieć się więcej, zobacz [Działania punktu końcowego, które można monitorować i podjąć działania](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
+Lokalizacja urządzeń zapewnia wiele funkcji podrzędnych (warunków) i akcji. Aby dowiedzieć się więcej, zobacz [Działania punktu końcowego, które można monitorować i podjąć działania](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-#### <a name="microsoft-defender-for-cloud-apps"></a>Usługa Microsoft Defender dla aplikacji w chmurze
+Po wybraniu opcji **Inspekcja lub ograniczanie działań na Windows** urządzeniach można ograniczyć działania użytkowników według domeny usługi lub przeglądarki oraz określić zakres działań, które będzie podejmowane przez zasady ochrony przed odpowiedzialnością za usługi:
+
+- Wszystkie aplikacje
+- Na liście aplikacji z ograniczeniami, które zdefiniowasz
+- Zdefiniowana grupa aplikacji z ograniczeniami (wersja zapoznawcza).
+
+##### <a name="service-domain-and-browser-activities"></a>Działania dotyczące domeny usługi i przeglądarki
+
+Po skonfigurowaniu domen zezwalania **na usługi** w chmurze/blokowania  ich i listy Przeglądarki niedozwolone (zobacz Ograniczenia dotyczące przeglądarek i domen dotyczących poufnych [danych) i](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data) użytkownik próbuje przekazać chroniony plik do domeny usługi w chmurze lub uzyskać do niego dostęp z poziomu niedozwolonej przeglądarki, `Audit only`możesz skonfigurować akcję zasad w celu : lub `Block with override``Block` działania.
+
+##### <a name="file-activities-for-all-apps"></a>Działania dotyczące plików dla wszystkich aplikacji
+
+W przypadku **opcji Działania na plikach dla wszystkich** aplikacji wybierz opcję Nie ograniczaj działań **dotyczących plików** lub **Zastosuj ograniczenia do określonych działań**. Jeśli użytkownik wybierze opcję zastosowania ograniczeń do określonych działań, wybrane tutaj akcje będą stosowane, gdy użytkownik uzyska dostęp do elementu chronionego przez zasady DLP. Działanie aplikacji DLP możesz ustawić na `Audit only`, `Block` `Block with override`(akcje) dla tych działań użytkownika:
+
+- **Kopiuj do schowka**
+- **Kopiowanie na dysk wymienny USB** 
+- **Kopiowanie do udziału sieciowego**
+- **Drukowanie**
+- **Kopiowanie lub przenoszenie przy użyciu niedozwolonej Bluetooth aplikacji**
+- **Usługi pulpitu zdalnego**
+
+
+##### <a name="restricted-app-activities"></a>Działania aplikacji z ograniczeniami  
+
+Wcześniej o nazwie Aplikacje niedozwolone definiujesz listę aplikacji w ustawieniach ochrony przed dlp punktu końcowego, na których chcesz nakładać ograniczenia. Gdy użytkownik próbuje uzyskać dostęp do pliku chronionego DLP przy użyciu aplikacji, która znajduje się na liście, `Audit only`możesz albo , `Block with override`albo działanie `Block` . Akcje DLP zdefiniowane w **działaniach aplikacji z ograniczeniami** zostaną zastąpione, jeśli aplikacja jest członkiem grupy aplikacji z ograniczeniami. Następnie zostaną zastosowane akcje zdefiniowane w grupie aplikacji z ograniczeniami.
+
+##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>Działania związane z plikami aplikacji w grupach aplikacji z ograniczeniami (wersja Preview)
+
+Grupy aplikacji z ograniczeniami można zdefiniować w ustawieniach ochrony przed reklamami w punktach końcowych i dodać do zasad grupy aplikacji z ograniczeniami. Podczas dodawania grupy aplikacji z ograniczeniami do zasad należy wybrać jedną z tych opcji:
+
+- Nie ograniczaj aktywności na plikach
+- Stosowanie ograniczeń do wszystkich działań
+- Stosowanie ograniczeń do konkretnych działań
+
+Po wybraniu jednej z opcji Zastosuj  ograniczenia użytkownik próbuje uzyskać dostęp do pliku chronionego DLP przy użyciu aplikacji, która znajduje się w grupie aplikacji z ograniczeniami, `Audit only``Block with override``Block` możesz albo , albo według działania. Zdefiniowane tutaj akcje DLP zastępują akcje zdefiniowane **w działaniach** aplikacji z ograniczeniami i Działania **na plikach** we wszystkich aplikacjach tej aplikacji.
+
+Aby uzyskać [więcej informacji](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) , zobacz Ograniczone aplikacje i grupy aplikacji. 
+
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Akcje programu Microsoft Defender dla aplikacji w chmurze
 
 - Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacji
 - Ogranicz aplikacje innych firm
 
-#### <a name="on-premises-repositories"></a>Repozytoria lokalne
+#### <a name="on-premises-repositories-actions"></a>Akcje repozytoriów lokalnych
 
 - Ograniczanie dostępu do plików lokalnych lub usuwanie ich
 

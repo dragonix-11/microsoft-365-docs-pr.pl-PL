@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams czatów i kanałów obsługują zasady ochrony przed utratą danych (DLP).
-ms.openlocfilehash: 66d451e55d5ee41abb0d43927e56295261bd4c8f
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 693b71181f34e948c0456779c7207fa22861dd5f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990496"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715350"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Ochrona przed utratą danych i Microsoft Teams
 
@@ -33,6 +33,11 @@ Jeśli Twoja organizacja korzysta z ochrony przed utratą danych (DLP, data loss
 
 - **Przykład 2. Ochrona informacji poufnych w dokumentach**. Załóżmy, że ktoś próbuje udostępnić dokument gościom w kanale Microsoft Teams lub czacie, a dokument zawiera informacje poufne. Jeśli masz zdefiniowane zasady DLP, aby temu zapobiec, dokument nie zostanie otwarty dla tych użytkowników. Zasady DLP muszą obejmować SharePoint i OneDrive, aby zapewnić ochronę. Jest to przykład zasad DLP dla systemu SharePoint, który pojawia się w programie Microsoft Teams i dlatego wymaga, aby użytkownicy posiadali licencje na produkt Office 365 DLP (który jest zawarty w programie Office 365 E3), ale nie wymagały od nich licencji na Office 365 Advanced Compliance).
 
+- **Przykład 3. Ochrona komunikacji w Teams kanałach udostępnionych**. W przypadku kanałów udostępnionych zasady Teams zasad DLP zespołu. Załóżmy na przykład, że kanał udostępniony należy do Zespołu A firmy Contoso. ZespółA ma zasady DLP P1. Istnieją 3 sposoby udostępniania kanału:
+    - **Udostępnij członkowskiemu**: Zapraszasz użytkownika 1 od firmy Contoso do dołączenia do kanału udostępnionego bez nacjedyńsku na członka zespołu TeamA. Wszystkie osoby korzystające z tego kanału udostępnionego, w tym użytkownik1, zostaną objęte przez P1.
+    - **Udostępnianie zespołowi (wewnętrznie)**: Udostępniasz kanał inowi zespołowi TeamB w firmie Contoso. Inny zespół może mieć inne zasady ochrony przed zasadami DLP, ale to nie ma znaczenia. P1 dotyczy wszystkich osób w tym kanale udostępnionym, w tym użytkowników TeamA i TeamB.
+    - **Udostępnij zespołowi (między dzierżawami)**: Udostępnij kanał zespołowi TeamF w firmie Fabrikam. Firma Fabrikam może mieć własne zasady ochrony przed zasadami DLP, ale to nie ma znaczenia. P1 zostanie zastosować do wszystkich osób w tym kanale udostępnionym, włącznie z użytkownikami TeamA (Contoso) i TeamF (Fabrikam).
+ 
 ## <a name="dlp-licensing-for-microsoft-teams"></a>Licencjonowanie DLP dla Microsoft Teams
 
 [Funkcje ochrony przed utratą](dlp-learn-about-dlp.md) danych zostały rozszerzone o Microsoft Teams czatów i wiadomości kanałów, **w tym wiadomości kanału prywatnego dla**:
@@ -58,14 +63,14 @@ Ochrona przed DLP jest stosowana w inny sposób Teams jednostkach.
 |Gdy zasady są objęte zakresem |Te Teams jednostki |Będzie dostępna ochrona przed DLP|
 |---------|---------|---------|
 |Konta poszczególnych użytkowników     |Czaty 1:1/n         |Tak         |
-|     |Czaty ogólne         |Nie         |
-|     |kanały prywatne         |Tak         |
+|     |Standardowe i udostępnione wiadomości w kanałach         |Nie         |
+|     |Wiadomości z kanału prywatnego         |Tak         |
 |Grupy zabezpieczeń/listy dystrybucyjne  | Czaty 1:1/n         |Tak         |
-|     |Czaty ogólne         |Nie         |
-|     |kanały prywatne         |Tak        |
+|     |Standardowe i udostępnione wiadomości w kanałach  |Nie         |
+|     |Wiadomości z kanału prywatnego         |Tak        |
 |Microsoft 365 grupy    |Czaty 1:1/n          |Nie         |
-|     |Czaty ogólne          |Tak        |
-|     |kanały prywatne|Nie| 
+|     |Standardowe i udostępnione wiadomości w kanałach          |Tak        |
+|     |Wiadomości z kanału prywatnego|Nie| 
 
 
 ## <a name="policy-tips-help-educate-users"></a>Porady dotyczące zasad ułatwiają pomaganie użytkownikom
@@ -228,5 +233,5 @@ Zasady DLP w działaniu, gdy gość próbuje otworzyć dokument w programie Team
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 
-- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
+- [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
 - [Wyślij powiadomienia e-mail i pokaż porady dotyczące zasad dla zasad DLP](use-notifications-and-policy-tips.md)

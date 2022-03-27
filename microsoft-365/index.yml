@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Dokumentacja platformy Microsoft 365
-summary: 'Znajdź rozwiązania, scenariusze i zasoby dla swojej firmy lub organizacji potrzebne do rozpoczęcia pracy z platformą Microsoft 365.'
+summary: 'Znajdź rozwiązania, scenariusze i zasoby dla swojej firmy lub organizacji potrzebne do rozpoczęcia pracy z platformą Microsoft 365. Platforma Microsoft 365 obejmuje usługi, takie jak Teams i SharePoint, oraz aplikacje platformy Microsoft 365, takie jak Outlook, Word, Excel i PowerPoint.'
 brand: m365
 metadata:
   title: Dokumentacja platformy Microsoft 365
-  description: 'Znajdź rozwiązania, scenariusze i zasoby dla swojej firmy lub organizacji potrzebne do rozpoczęcia pracy z platformą Microsoft 365.'
+  description: 'Znajdź rozwiązania, scenariusze i zasoby potrzebne do rozpoczęcia korzystania z platformy Microsoft 365, w tym pakietu Office, dla twojej firmy lub organizacji.'
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection: m365-security-compliance
@@ -185,8 +185,8 @@ additionalContent:
               url: /DeployOffice/plan-microsoft-365-apps
             - text: Pakiet Office dla komputerów Mac
               url: /DeployOffice/mac
-            - text: Pakiet Office 2019
-              url: /DeployOffice/office2019
+            - text: Office LTSC 2021
+              url: /DeployOffice/ltsc2021/overview
             - text: Więcej >
               url: /DeployOffice
         - title: SharePoint

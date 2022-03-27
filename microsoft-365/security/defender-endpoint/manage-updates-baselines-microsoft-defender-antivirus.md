@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/16/2022
+ms.date: 03/22/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: c6454704c6cabfd5136eeec565c3c57dca044250
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: c334a3829d28ad7b65f0f0db3bd9599570db8337
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526898"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716195"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego
 
@@ -668,6 +668,21 @@ Zalecamy zaktualizowanie obrazów instalacji systemu Windows 10 (wersje Enterpri
 Aby uzyskać więcej informacji, zobacz [Aktualizacja programu Microsoft Defender w celu Windows obrazów instalacji systemu operacyjnego](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220321.1</summary>
+
+&ensp;Wersja pakietu: **20220321.1**<br/>
+&ensp;Wersja platformy: **4.18.2202.4**<br/>
+&ensp;Wersja aparatu: **1.1.19000.8**<br/>
+&ensp;Wersja podpisu: **1.351.337.0**<br/>
+
+### <a name="fixes"></a>Poprawki
+- Brak
+
+### <a name="additional-information"></a>Informacje dodatkowe
+- Brak
+
+<br/>
+</details><details>
 <summary>20220305.1</summary>
 
 &ensp;Wersja pakietu: **20220305.1**<br/>

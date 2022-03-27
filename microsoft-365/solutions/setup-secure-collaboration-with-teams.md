@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Poznaj najlepsze rozwiązania, aby skonfigurować bezpieczną współpracę nad plikami i udostępnianie ich w programie Teams w celu ochrony danych na podstawie ich wrażliwości.
-ms.openlocfilehash: 4bf18635b0c345e18c1ed5db8c7072ca6225e33c
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: db1ad7d6d5c62775c696da89c3d771114d48e67e
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63004969"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714958"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Konfigurowanie bezpiecznego udostępniania plików i współpracy przy użyciu aplikacji Microsoft Teams
 
@@ -70,7 +70,7 @@ Aby skonfigurować bezpieczną współpracę, skorzystaj z tych Microsoft 365 i 
 |---|---|---|
 |Usługa Microsoft Defender dla Office 365|Sejf załączników dla spo, OneDrive i Teams; Sejf dokumenty; Sejf linków dla Teams|Microsoft 365 E1, E3 i E5|
 |SharePoint|Zasady udostępniania witryn i plików, Uprawnienia udostępniania witryn, Linki udostępniania, Żądania dostępu, Ustawienia udostępniania gości witryny|Microsoft 365 E1, E3 i E5|
-|Microsoft Teams|Dostęp gościa, zespoły prywatne, kanały prywatne|Microsoft 365 E1, E3 i E5|
+|Microsoft Teams|Dostęp gościa, zespoły prywatne, kanały prywatne, kanały udostępnione|Microsoft 365 E1, E3 i E5|
 |Microsoft 365 zgodności|Etykiety wrażliwości|Microsoft 365 E3 i E5|
 
 ## <a name="collaboration-governance-framework-for-teams-and-microsoft-365"></a>Struktura zarządzania współpracą w zakresie Teams i Microsoft 365
@@ -119,6 +119,7 @@ Poniższe zasoby pomogą Ci rozpocząć konfigurowanie środowiska do współpra
 - [Współpraca nad dokumentami](collaborate-on-documents.md) w celu udostępniania pojedynczych plików folderów.
 - [Współpraca w witrynie w](collaborate-in-site.md) celu współpracy z gośćmi w SharePoint sieci Web.
 - [Współpracuj jako zespół](collaborate-as-team.md) w celu współpracy z gośćmi w zespole.
+- [Współpracuj z uczestnikami zewnętrznymi w kanale](/microsoft-365/solutions/collaborate-teams-direct-connect) w celu współpracy z osobami spoza organizacji w kanale udostępnionym.
 
 W zależności od wrażliwości udostępnianych informacji możesz dodać zabezpieczenia, aby zapobiec zasypowieniu. Poniższe zasoby pomogą w skonfigurowaniu zabezpieczeń potrzebnych dla organizacji:
 
@@ -126,7 +127,7 @@ W zależności od wrażliwości udostępnianych informacji możesz dodać zabezp
 - [Ograniczanie przypadkowego udostępnienia plików osobom spoza organizacji](share-limit-accidental-exposure.md)
 - [Tworzenie bezpiecznego środowiska udostępniania gości](create-secure-guest-sharing-environment.md)
 
-Jeśli masz ważny projekt z organizacją partnerską, możesz użyć usługi Azure Entitlement Management, aby zarządzać gośćmi z tej organizacji w zespole, który skonfigurujesz dla projektu. Aby [uzyskać szczegółowe informacje, zobacz Tworzenie ekstranetu B2B z zarządzanymi gośćmi](b2b-extranet.md) .
+Jeśli masz ważny projekt z organizacją partnerską, możesz zarządzać osobami spoza [](/microsoft-365/solutions/collaborate-teams-direct-connect) organizacji, z którymi chcesz współpracować, przy użyciu kanałów udostępnionych lub usługi [Azure Entitlement Management](b2b-extranet.md).
 
 ## <a name="training-for-administrators"></a>Szkolenia dla administratorów
 
@@ -154,7 +155,7 @@ Te moduły szkoleniowe w witrynie Microsoft Learn mogą ułatwić naukę współ
 
 |Szkolenie:|Ochrona informacji przedsiębiorstwa za pomocą Microsoft 365|
 |---|---|
-|![Teams do szkolenia na temat ochrony informacji.](../media/protect-enterprise-information-microsoft-365.svg)|Ochrona i zabezpieczanie informacji organizacji jest trudnym zadaniem niż kiedykolwiek wcześniej. W ścieżce nauki Ochrona informacji przedsiębiorstwa za pomocą etykiet Microsoft 365 omówiono, jak chronić poufne informacje przed przypadkowym usunięciem lub błędem, odnajdować i klasyfikować dane, jak je chronić etykietami wrażliwości, jak monitorować i analizować informacje poufne, aby chronić je przed ich utratą. Ta ścieżka nauki może ułatwić Ci przygotowanie się do Microsoft 365 certyfikatu: skojarzeń administratora zabezpieczeń i Microsoft 365 certyfikowanych: Enterprise certyfikacji dla specjalistów administracji.<p>1 godz. — ścieżka Edukacja - 5 modułów|
+|![Teams do szkolenia na temat ochrony informacji.](../media/protect-enterprise-information-microsoft-365.svg)|Ochrona i zabezpieczanie informacji organizacji jest trudnym zadaniem niż kiedykolwiek wcześniej. W ścieżce nauki Ochrona informacji przedsiębiorstwa za pomocą etykiet Microsoft 365 omówiono, jak chronić poufne informacje przed przypadkowym usunięciem lub błędem, odnajdować i klasyfikować dane, jak je chronić etykietami wrażliwości, jak monitorować i analizować informacje poufne, aby chronić je przed ich utratą. Ta ścieżka nauki może ułatwić Ci przygotowanie się do Microsoft 365 certyfikatu: skojarzeń administratora zabezpieczeń i Microsoft 365 certyfikowanych: Enterprise certyfikacji eksperta administracji.<p>1 godz. — ścieżka Edukacja - 5 modułów|
 
 > [!div class="nextstepaction"]
 > [Rozpoczynanie >](/learn/modules/m365-security-info-overview/introduction/)
@@ -207,7 +208,7 @@ Gdy wszystko będzie gotowe do wdrożenia tego rozwiązania, przejdź do poniżs
 
 ## <a name="see-also"></a>Zobacz też
 
-[Microsoft 365 dokumentacji zabezpieczeń](../security/index.yml)
+[Dokumentacja zabezpieczeń platformy Microsoft 365](../security/index.yml)
 
 [Microsoft 365 zgodności](../compliance/index.yml)
 

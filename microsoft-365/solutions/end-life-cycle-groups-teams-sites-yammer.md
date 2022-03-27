@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Zakończenie opcji cyklu życia grup, zespołów i Yammer.
-ms.openlocfilehash: 883af3878bd0bc68aa539fc1cc36b66c4f1cfe9e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d48b1950d65c91c5869cd65e47790f4c65d69f0f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985119"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715877"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Zakończenie opcji cyklu życia grup, zespołów i Yammer
 
@@ -221,7 +221,7 @@ Pliki są zazwyczaj przechowywane w trzech głównych lokalizacjach w SharePoint
 - Pliki w kanałach — biblioteka dokumentów
 - Strony typu wiki — Teams danych typu wiki
 
-Jeśli witryna ma jedną lub więcej podwitryn, proces wynoszania należy powtórzyć dla każdej z podwitryn. Jeśli zespół zawiera kanały prywatne, dla każdego SharePoint istnieje osobna witryna.
+Jeśli witryna ma jedną lub więcej podwitryn, proces wynoszania należy powtórzyć dla każdej z podwitryn. Jeśli zespół zawiera kanały prywatne lub udostępnione, dla każdego kanału istnieje SharePoint witryny.
 
 Podczas usuwania plików z grupy lub zespołu należy pamiętać, że mogą one być udostępniane użytkownikom, którzy nie są członkami grupy lub zespołu. Możesz także zakomunikować im zbliżającą się zmianę.
 

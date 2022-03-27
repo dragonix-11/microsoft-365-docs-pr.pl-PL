@@ -14,26 +14,28 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z witryny Microsoft Teams w programie Advanced eDiscovery.
-ms.openlocfilehash: 27f3ada633f7af37b657e59cce64ef1c8e102177
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 68a255dda7aa9b879c9e608eb99c9575ba691c16
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "63018952"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716229"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery przepływu pracy dla zawartości w programie Microsoft Teams
 
 Ten artykuł zawiera obszerny zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania aplikacji Advanced eDiscovery zachowywania, gromadzenia, przeglądania i eksportowania zawartości z usługi Microsoft Teams. Celem tego artykułu jest zoptymalizowanie przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem Teams zawartości.
 
-Istnieją cztery kategorie zawartości Teams, które można zbierać i przetwarzać przy użyciu Advanced eDiscovery:
+Istnieje pięć kategorii zawartości Teams, które można zbierać i przetwarzać przy użyciu Advanced eDiscovery:
 
 - **Teams czatach 1:1**. Wiadomości na czacie, wpisy i załączniki udostępniane w Teams konwersacji między dwiema osobami.  Teams czaty między 1:1 są również nazywane *konwersacjami*.
 
 - **Teams czatów grupowych**. Czat z wiadomościami, wpisami i załącznikami udostępnionym Teams konwersacji między trzema lub większą ich liczby osobami. Nazywane również *czatami 1:N* lub *konwersacjami grupowych*.
 
-- **Teams kanałów**. Rozmawiaj na czacie z wiadomościami, wpisami, odpowiedziami i załącznikami udostępnionym Teams kanale.
+- **Teams kanałów**. Czat z wiadomościami, wpisami, odpowiedziami i załącznikami udostępnianymi w standardowym Teams kanale.
 
-- **Prywatne Teams kanałów**. Wpisy wiadomości, odpowiedzi i załączniki udostępnione w prywatnym Teams kanału.
+- **Kanały prywatne**. Wpisy wiadomości, odpowiedzi i załączniki udostępnione w prywatnym Teams kanału.
+
+- **Udostępnione kanały**. Wpisy wiadomości, odpowiedzi i załączniki udostępnione w udostępnionym Teams kanale.
 
 ## <a name="where-teams-content-is-stored"></a>Miejsce Teams zawartości
 
@@ -44,8 +46,12 @@ Wstępnie wymagane do zarządzania zawartością Teams w programie Advanced eDis
 |Teams czatów 1:1     |Wiadomości w czatach 1:1 są przechowywane w Exchange Online skrzynki pocztowej wszystkich uczestników czatu. |Pliki udostępnione na czacie 1:1 są przechowywane OneDrive dla Firm konta osoby, która udostępniła plik. |
 |Teams czatów grupowych     |Wiadomości w czatach grupowych są przechowywane Exchange Online skrzynce pocztowej wszystkich uczestników czatu. |Pliki udostępniane w czatach grupowych są przechowywane OneDrive dla Firm konta osoby, która udostępniła plik. |
 |Teams kanałów     |Wszystkie wiadomości i wpisy w kanałach są przechowywane w Exchange Online skojarzonej z zespołem skrzynki pocztowej.|Pliki udostępniane w kanale są przechowywane w SharePoint Online skojarzonej z zespołem.           |
-|Kanały Teams prywatne     |Wiadomości wysłane w kanale prywatnym są przechowywane w Exchange Online pocztowych wszystkich członków kanału prywatnego.|Pliki udostępnione w kanale prywatnym są przechowywane w dedykowanej witrynie SharePoint online skojarzonej z kanałem prywatnym.|
+|Kanały prywatne     |Wiadomości wysłane w kanale prywatnym są przechowywane w Exchange Online pocztowych wszystkich członków kanału prywatnego.|Pliki udostępnione w kanale prywatnym są przechowywane w dedykowanej witrynie SharePoint online skojarzonej z kanałem prywatnym.|
+|Kanały udostępnione     |Wiadomości wysłane w kanale udostępnionym są przechowywane w systemowej skrzynce pocztowej skojarzonej z kanałem udostępnionym. <sup>1</sup>|Pliki udostępniane w kanale udostępnionym są przechowywane w dedykowanej SharePoint Online skojarzonej z kanałem udostępnionym.|
 ||||
+
+> [!NOTE]
+> <sup>1</sup> Aby wyszukać (i zachować) wiadomości wysłane w kanale udostępnionym, musisz przeszukać lub określić skrzynkę pocztową Exchange Online dla nadrzędnego zespołu.
 
 ## <a name="create-a-case-for-teams-content"></a>Tworzenie sprawy na Teams zawartości
 
@@ -95,12 +101,12 @@ Aby dodać do sprawy przechowywania i zachować źródła danych:
 
    - **OneDrive.** Konto OneDrive jest domyślnie zaznaczone. Zachowaj tę wybraną opcję, aby dodać (i zachować) pliki udostępnione w czatach prywatnych i czatach grupowych jako dane chroniące.
 
-   - **SharePoint**. Dodaj witrynę SharePoint skojarzoną z dowolnym kanałem prywatnym, do którym jest on przysłany, aby dodać (i zachować) jako dane o przechowaniach plików udostępnianych w kanale prywatnym. Kliknij **pozycję Edytuj**, a następnie dodaj adres URL witryny SharePoint skojarzonej z kanałem prywatnym. Aby dowiedzieć się, jak znaleźć kanały prywatne, do których należy użytkownik, zobacz [Zbierania elektronicznych materiałów dowodowych w kanałach prywatnych](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
+   - **SharePoint**. Dodaj witrynę SharePoint skojarzoną z dowolnym kanałem prywatnym lub udostępnionym, do których należy administrator, aby dodać (i zachować) jako dane grupy treści udostępnione w kanale. Kliknij **pozycję Edytuj**, a następnie dodaj adres URL SharePoint skojarzonej z kanałem prywatnym lub udostępnionym. Aby dowiedzieć się, jak znaleźć kanały prywatne i udostępnione, do których należy użytkownik, zobacz Zbierania elektronicznych materiałów dowodowych w kanałach [prywatnych i udostępnionych](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels).
 
-   - **Teams**. Dodaj zespoły, do których należy administrator, aby dodać (i zachować) jako dane dostępowe do wszystkich wiadomości kanału i wszystkich plików udostępnionych w kanale Teams kanału. Po kliknięciu **przycisku Edytuj** na liście zostanie wyświetlona skrzynka pocztowa i witryna skojarzona z każdym zespołem, do którym należy ten zespół. Wybierz zespoły, które chcesz skojarzyć z opiekunem. Musisz wybrać zarówno odpowiednią skrzynkę pocztową, jak i witrynę dla każdego zespołu.
+   - **Teams**. Dodaj zespoły, do których należy administrator, aby dodać (i zachować) jako dane dostępowe do wszystkich wiadomości kanału i wszystkich plików udostępnionych w kanale Teams kanału. Obejmuje to dodanie skrzynki pocztowej dla zespołu nadrzędnego kanału udostępnionego, do którym należy ten element. Po kliknięciu **przycisku Edytuj** na liście zostanie wyświetlona skrzynka pocztowa i witryna skojarzona z każdym zespołem, do którym należy ten zespół. Wybierz zespoły, które chcesz skojarzyć z opiekunem. Musisz wybrać zarówno odpowiednią skrzynkę pocztową, jak i witrynę dla każdego zespołu.
 
    > [!NOTE]
-   > Można również dodać skrzynkę pocztową i witrynę Teams, które nie są członkami jako lokalizacja danych przechoczy. W tym celu kliknij pozycję **Edytuj** obok pozycji **Exchange i** **SharePoint**, a następnie dodaj skrzynkę pocztową i witrynę do zespołu.
+   > Można również dodać skrzynkę pocztową i witrynę Teams, które nie są członkami jako lokalizacja danych przechoczy. Możesz to zrobić, klikając pozycję **Edytuj** Exchange  grupy i **SharePoint a następnie** dodając skrzynkę pocztową i witrynę skojarzoną z zespołem.
 
 6. Po dodaniu osób do przechowywania i skonfigurowaniu źródeł danych wieńczych **kliknij przycisk Dalej** , aby wyświetlić stronę **Ustawień blokowania** .
 
@@ -140,13 +146,13 @@ Aby utworzyć kolekcję Teams zawartości:
 
 5. Zaznacz jeden lub więcej określników, a następnie kliknij przycisk **Dodaj**.
 
-   Po dodaniu określonych elementów przechowywania do kolekcji zostanie wyświetlona lista określonych źródeł danych dla każdego źródła przechowywania. Są to źródła danych skonfigurowane po dodaniu do sprawy urządzenia do przechowywania. Domyślnie są zaznaczone wszystkie źródła danych, które są w nich wyeksjonowane. Dotyczy to wszelkich Teams i prywatnych kanałów powiązanych z powiązanym z opiekunem.
+   Po dodaniu określonych elementów przechowywania do kolekcji zostanie wyświetlona lista określonych źródeł danych dla każdego źródła przechowywania. Są to źródła danych skonfigurowane po dodaniu do sprawy urządzenia do przechowywania. Domyślnie są zaznaczone wszystkie źródła danych, które są w nich wyeksjonowane. Dotyczy to wszelkich Teams lub kanałów powiązanych z opiekunem.
 
    Podczas zbierania zawartości w programie Teams zalecamy wykonanie następujących czynności:
 
    - Usuń konta elementów OneDrive z zakresu kolekcji (usuwając zaznaczenie pola wyboru w kolumnie OneDrive poszczególnych elementów dojściowych). Zapobiega to kolekcji zduplikowanych plików dołączonych do czatów jeden na jeden i czatów grupowych. Załączniki w chmurze są automatycznie zbierane z każdej konwersacji znalezionej w kolekcji po zatwierdzeniu kolekcji roboczej do zestawu recenzji. Przy użyciu tej metody (zamiast wyszukiwania kont OneDrive w ramach kolekcji) pliki dołączone do czatów grupowych i 1:1 są grupowane w konwersacji, w których zostały udostępnione.
 
-   - Usuń zaznaczenie pola wyboru w kolumnie **Dodatkowa** witryna, aby usunąć witryny SharePoint zawierających pliki udostępnione w kanałach prywatnych. Eliminuje to gromadzenie zduplikowanych plików dołączonych do konwersacji w kanale prywatnym, ponieważ załączniki w chmurze dołączone do konwersacji w kanale prywatnym są automatycznie dodawane do zestawu recenzji po zatwierdzeniu wersji roboczej kolekcji i zgrupowaniu w konwersacjach, w których zostały udostępnione.
+   - Usuń zaznaczenie pola wyboru w kolumnie Dodatkowa witryna, aby usunąć SharePoint zawierających pliki udostępnione w kanałach prywatnych lub udostępnionych. Eliminuje to gromadzenie zduplikowanych plików dołączonych do konwersacji w kanale prywatnym lub udostępnionym, ponieważ te załączniki w chmurze są automatycznie dodawane do zestawu recenzji po zatwierdzeniu wersji roboczej kolekcji i zgrupowaniu w konwersacjach, w których zostały udostępnione.
 
 6. Jeśli wcześniej wspomniano o dodaniu zawartości do Teams jako źródeł danych, można pominąć ten krok i wybrać przycisk **Dalej**. W przeciwnym razie na  stronie Kreatora niebędące danymi można wybrać źródła danych, które nie mają elementów Teams zawartości dodanej do sprawy w celu przeszukania w kolekcji.
 
@@ -154,7 +160,7 @@ Aby utworzyć kolekcję Teams zawartości:
 
 8. Na stronie **kreatora** Warunki skonfiguruj zapytanie wyszukiwania w celu zbierania Teams zawartości ze źródeł danych określonych na poprzednich stronach kreatora. Zawęzić zakres kolekcji za pomocą różnych słów kluczowych i warunków wyszukiwania. Aby uzyskać więcej informacji, zobacz [Tworzenie zapytań wyszukiwania dla kolekcji](building-search-queries.md).
 
-   Aby zapewnić najbardziej kompleksowy zbiór konwersacji za pomocą czatu Teams (w tym czatów 1:1, grupowych, kanałowych i prywatnych) użyj warunku Typ i wybierz  opcję **Wiadomości błyskawiczne**. Zalecamy również zastosowanie zakresu dat lub kilku słów kluczowych w celu zawężenia zakresu kolekcji do elementów istotnych dla twojego badania. Oto zrzut ekranu przedstawiający przykładowe zapytanie korzystające z **opcji Typ** **i** Data:
+   Aby zapewnić najbardziej kompleksowy zbiór konwersacji za pomocą Teams czatów (w tym czatów 1:1, czatów grupowych i kanałów) użyj warunku  Typ i wybierz opcję **Wiadomości błyskawiczne**. Zalecamy również zastosowanie zakresu dat lub kilku słów kluczowych w celu zawężenia zakresu kolekcji do elementów istotnych dla twojego badania. Oto zrzut ekranu przedstawiający przykładowe zapytanie korzystające z **opcji Typ** **i** Data:
 
    ![Kwerenda zbiera Teams zawartości.](..\media\TeamsConditionsQueryType.png)
 
@@ -193,7 +199,7 @@ W poniższej tabeli opisano, jak różne typy wiadomości Teams są grupowane we
 | Teams typ zawartości|Grupowanie według rodziny  |Grupowanie według konwersacji  |
 |:---------|:---------|:---------|
 |Teams czatach grupowych i 1:1   | Transkrypcja i wszystkie jej załączniki oraz wyodrębnione elementy mają ten sam **element FamilyId**. Każda transkrypcja ma unikatowy **identyfikator FamilyId**. |Wszystkie pliki transkrypcji i ich elementy rodzinne w tej samej konwersacji mają ten sam **conversationId**. Obejmuje to następujące elementy:<br/><br/>  — Wszystkie wyodrębnione elementy i załączniki ze wszystkich transkrypcji, które mają ten sam **element ConversationId**. <br/> - Wszystkie transkrypcje dla tej samej konwersacji na czacie<br/> - Wszystkie kopie kopi poszczególnych transkrypcji<br/> - Transkrypcje z kolejnych kolekcji z tej samej konwersacji na czacie <br/><br/>  W Teams czatach grupowych i 1:1 konwersacjach grupowych możesz mieć wiele plików transkrypcji, z których każdy odpowiada różnym ramom czasowym w konwersacji. Ponieważ te pliki transkrypcji są z tej samej konwersacji z tymi samymi uczestnikami, mają ten **samid konwersacji**.|
-|Teams kanału prywatnego i czatów na kanale prywatnym    | Każdy wpis oraz wszystkie odpowiedzi i załączniki są zapisywane we własnej transkrypcie. Ten transkrypcja i wszystkie jej załączniki oraz wyodrębnione elementy mają ten sam **element FamilyId**.         |Każdy wpis, jego załączniki i wyodrębnione elementy mają unikatowy identyfikator **ConversationId**. Jeśli istnieją kolejne kolekcje lub nowe odpowiedzi z tego samego wpisu, transkrypcje różnicowe wynikające z tych kolekcji również będą mieć ten sam **conversationId**.|
+|Standardowe, prywatne i udostępnione czaty na kanale    | Każdy wpis oraz wszystkie odpowiedzi i załączniki są zapisywane we własnej transkrypcie. Ten transkrypcja i wszystkie jej załączniki oraz wyodrębnione elementy mają ten sam **element FamilyId**.         |Każdy wpis, jego załączniki i wyodrębnione elementy mają unikatowy identyfikator **ConversationId**. Jeśli istnieją kolejne kolekcje lub nowe odpowiedzi z tego samego wpisu, transkrypcje różnicowe wynikające z tych kolekcji również będą mieć ten sam **conversationId**.|
 ||||
 
 Kontrolka **Grupuj** na pasku poleceń zestawu recenzji umożliwia wyświetlanie Teams grupowanych według rodziny lub konwersacji.
@@ -234,7 +240,7 @@ Oto logika używana przez program Advanced eDiscovery do dołączania dodatkowyc
 | Teams typ zawartości|Zapytania z parametrami wyszukiwania  |Zapytania z zakresami dat  |
 |:---------|:---------|:---------|
 |Teams czatach grupowych i 1:1   |Wiadomości opublikowane 12 godzin przed i 12 godzin po odpowiedziach są grupowane z elementem odpowiedzi w pojedynczym pliku transkrypcji.   |Wiadomości w oknie 24-godzinnym są grupowane w jednym pliku transkrypcji.|
-|Teams kanału prywatnego i czatów na kanale prywatnym    |Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji. |Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji.|
+|Standardowe, prywatne i udostępnione Teams kanałów    |Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji. |Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji.|
 ||||
 
 ### <a name="deduplication-of-teams-content"></a>Deduplication Teams zawartości
@@ -265,14 +271,14 @@ W poniższej tabeli opisano właściwości metadanych dla Teams zawartości.
 |:---------|:---------|
 |ContainsEditedMessage      | Wskazuje, czy plik transkrypcji zawiera edytowaną wiadomość. Edytowane wiadomości są identyfikowane podczas wyświetlania pliku transkrypcji.|
 |ConversationId|Identyfikator GUID identyfikujący konwersację, z która jest skojarzona z elementem. Transkrypcje plików i załączników z tej samej konwersacji mają tę samą wartość dla tej właściwości.|
-|Nazwa konwersacji     | Nazwa konwersacji, z która jest skojarzony plik transkrypcji lub załącznik. W Teams czatach grupowych i 1:1 wartość tej właściwości to upn wszystkich uczestników konwersacji. Na przykład `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams kanału i kanału prywatnego mają nazwę konwersacji w następującym formacie: `<Team name>,<Channel name>`.Na przykład `eDiscovery vNext, General`.          |
-|ConversationType     | Wskazuje typ czatu zespołu. W Teams czatach grupowych i 1:1 wartość tej właściwości `Group`wynosi . W Teams kanału prywatnego i prywatnego kanału ta wartość to `Channel`.|
+|Nazwa konwersacji     | Nazwa konwersacji, z która jest skojarzony plik transkrypcji lub załącznik. W Teams czatach grupowych i 1:1 wartość tej właściwości to upn wszystkich uczestników konwersacji. Na przykład `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams kanału (standardowy, prywatny i udostępniony) mają nazwę konwersacji w następującym formacie: `<Team name>,<Channel name>`.Na przykład `eDiscovery vNext, General`.          |
+|ConversationType     | Wskazuje typ czatu zespołu. W Teams czatach grupowych i 1:1 wartość tej właściwości `Group`wynosi . W przypadku standardowych, prywatnych i udostępnionych czatów na kanale wartość to `Channel`.|
 |Data | Sygnatura czasowa pierwszej wiadomości w pliku transkrypcji.|
 |FamilyId|Identyfikator GUID identyfikujący plik transkrypcji dla konwersacji na czacie. Załączniki będą mieć tę samą wartość dla tej właściwości, co plik transkrypcji zawierający wiadomość, do których plik został dołączony.|
 |FileClass     |Wskazuje ten typ zawartości. Elementy z Teams mają wartość `Conversation`. Natomiast Exchange e-mail mają wartość `Email`.|          |
 |MessageKind     | Właściwość typu wiadomości. Teams zawartość ma wartość `microsoftteams , im`. |
 |Adresaci     | Lista wszystkich użytkowników, którzy otrzymali wiadomość w ramach transkrypcji.|
-|TeamsChannelName     | Nazwa Teams lub nazwa kanału prywatnego transkrypcji.|
+|TeamsChannelName     | Nazwa Teams transkrypcji w kanale.|
 |||
 
 Aby uzyskać opisy Advanced eDiscovery właściwości metadanych dokumentu, zobacz [Pola metadanych](document-metadata-fields-in-Advanced-eDiscovery.md) dokumentu Advanced eDiscovery.

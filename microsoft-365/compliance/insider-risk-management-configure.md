@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do zarządzania ryzykiem w niejawnym programie testów
+title: Wprowadzenie do zarządzania ryzykiem wewnętrznym
 description: Skonfiguruj zarządzanie ryzykiem w niejawnym programie testów w organizacji.
 keywords: Microsoft 365, zarządzanie ryzykiem w niejawnym programie testów, zarządzanie ryzykiem, zgodność
 ms.localizationpriority: medium
@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e21d2904ec2afdcd57b69267f99af6a0726dca56
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314633"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754212"
 ---
-# <a name="get-started-with-insider-risk-management"></a>Wprowadzenie do zarządzania ryzykiem w niejawnym programie testów
+# <a name="get-started-with-insider-risk-management"></a>Wprowadzenie do zarządzania ryzykiem wewnętrznym
 
 Zasady zarządzania ryzykiem w niejawnym programie testów pozwalają identyfikować ryzykowne działania i narzędzia do zarządzania w celu działania na podstawie alertów o ryzyku w organizacji. Wykonaj poniższe czynności, aby skonfigurować wymagania wstępne i zasady zarządzania ryzykiem w niejawnym programie testów.
 
@@ -50,7 +50,7 @@ Jeśli nie masz jeszcze planu Microsoft 365 Enterprise E5 i chcesz wypróbować 
 
 ## <a name="recommended-actions-preview"></a>Zalecane akcje (wersja zapoznawcza)
 
-Zalecane działania mogą ułatwić Twojej organizacji szybkie rozpoczynanie pracy i wyeksymendować wszystkie możliwości w zakresie zarządzania ryzykiem w ramach niejawnego programu testów. Na stronie **Przegląd** zalecane akcje ułatwiają konfigurowanie i wdrażanie zasad oraz akcje badania dotyczące akcji użytkownika generujące alerty na podstawie dopasowania zasad.
+Zalecane działania mogą ułatwić Twojej organizacji szybkie uzyskiwanie informacji dzięki zarządzaniu ryzykiem w ramach niejawnego programu testów. Na stronie **Omówienie znajdują się** zalecane akcje, które ułatwiają konfigurowanie i wdrażanie zasad.
 
 ![Zalecane działania w ramach zarządzania ryzykiem w ramach niejawnego programu testów.](../media/insider-risk-recommended-actions.png)
 
@@ -62,9 +62,6 @@ Dostępne są następujące zalecenia, które pomogą Ci rozpocząć pracę lub 
 - **Skanuj w poszukiwaniu potencjalnych czynników** ryzyka w ramach niejawnego programu testów. Uruchom skanowanie analizy, aby wykryć potencjalne zagrożenia niejawnego programu testów w organizacji. Po dokonaniu oceny wyników przejrzyj zalecane zasady, które należy skonfigurować.
 - **Przypisywanie uprawnień innym** osobom: Jeśli za zarządzanie funkcjami ryzyka niejawnego programu testów są odpowiedzialni dodatkowi członkowie zespołu, należy przypisać ich do odpowiednich grup ról.
 - **Tworzenie pierwszej zasady**: Aby otrzymywać alerty o potencjalnie ryzykownych działaniach, musisz skonfigurować zasady na podstawie wstępnie zdefiniowanych szablonów definiujące działania użytkowników, które mają być wykrywane i analizowane.
-- **Przeglądanie sprawdzanych** aktywności użytkowników: Pulpit nawigacyjny Użytkownicy  umożliwia wyświetlanie użytkowników, którym obecnie są przypisywane wyniki ryzyka, niezależnie od tego, czy to działanie spełnia próg wygenerowania alertu.
-- **Przeglądanie alertów**: Po wyzwoleniu zdarzenia użytkownika zasady zaczynają przypisywać oceny ryzyka do wykrytych działań. Jeśli punkt ryzyka spełnia progi zasad, zostanie wyświetlony alert zawierający szczegółowy wykaz wyników wszystkich aktywności dla tego użytkownika.
-- **Badanie sprawy**: Sprawy są tworzone ręcznie na podstawie alertów, gdy jest konieczne dalsze badanie w celu zidentyfikowania potencjalnych zagrożeń w niejawnym programie testów. Zakres każdej sprawy jest ograniczony do jednego użytkownika, a do istniejącej lub nowej sprawy można dodać wiele alertów dla użytkownika.
 
 Każda zalecana akcja zawarta w tym doświadczeniu ma cztery atrybuty:
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db219fe7ce39ae59668cedff10f03e931ddba416
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 83f0f53e2d2376975f853d826531e749732416b7
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998115"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754314"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Urządzenia na urządzeniach bez dostępu do Internetu do programu Microsoft Defender dla punktu końcowego
 
@@ -37,7 +37,7 @@ ms.locfileid: "62998115"
 Aby wboardować urządzenia bez dostępu do Internetu, musisz wykonać następujące ogólne czynności:
 
 > [!IMPORTANT] 
-> Poniższe kroki mają zastosowanie tylko do urządzeń z poprzednimi wersjami programu Windows, takimi jak: Windows Server 2016 oraz wcześniejsze lub Windows 8.1 i wcześniejsze wersje.
+> Poniższe kroki mają zastosowanie tylko do urządzeń z poprzednimi wersjami programu Windows z użyciem rozwiązania opartego na mma. Aby uzyskać więcej informacji, [zobacz Windows serwerach końcowych programu Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
 > [!NOTE]
 > - Serwera bramy OMS nie można używać jako serwera proxy dla odłączonych Windows lub Windows Server po skonfigurowaniu za pośrednictwem rejestru "TelemetryProxyServer" lub obiektu zasad grupy.
@@ -50,7 +50,7 @@ Aby uzyskać więcej informacji na temat metod dołączania, zobacz następując
 - [Onboard servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [Konfiguruj ustawienia serwera proxy urządzenia i połączenia internetowego](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## <a name="on-premises-devices"></a>Urządzenia lokalne
+## <a name="devices-running-the-previous-mma-based-solution"></a>Urządzenia z poprzednim rozwiązaniem opartym na programie MMA
 
 - Skonfiguruj usługę Azure Log Analytics (wcześniej znaną jako brama OMS) tak, aby działała jako serwer proxy lub centrum:
   - [Azure Log Analytics Agent](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
@@ -63,15 +63,15 @@ Aby uzyskać więcej informacji na temat metod dołączania, zobacz następując
     - Adres IP usługi Azure Log Analytics jako serwer proxy
     - Defender for Endpoint workspace key & ID
 
-## <a name="azure-virtual-machines"></a>Azure Virtual Machines
+### <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
-- Skonfiguruj bramę Azure Log Analytics Gateway (wcześniej znaną jako brama OMS) tak, aby działała jako serwer proxy lub centrum:
+- W przypadku urządzeń, na których działa poprzednie rozwiązanie oparte na programie MMA, skonfiguruj bramę Azure Log Analytics Gateway (wcześniej znaną jako brama OMS) jako serwer proxy lub centrum:
     - [Brama usługi Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
     - [Instalowanie i konfigurowanie programu Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) wskaż program Defender for Endpoint Workspace key & ID
 - Maszyny wirtualne platformy Azure w trybie offline w tej samej sieci bramy OMS
     - Konfigurowanie adresu IP usługi Azure Log Analytics jako serwera proxy
     - Identyfikator klucza obszaru roboczego usługi Azure Log Analytics & workspace
-- Microsoft Defender dla chmury
+- Microsoft Defender for Cloud
     - [Obszar roboczy analizy \> dziennika zasad zabezpieczeń](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
     - [Wykrywanie zagrożeń Zezwalaj \> u programowi Defender na dostęp do moich danych](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

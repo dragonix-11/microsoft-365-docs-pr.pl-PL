@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Opis ustawień, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i usunąć to, co nie chcesz.
-ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 3b2833b2b6293845379f9f5aeffd3bd46610e2a8
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449249"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63713080"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
@@ -59,7 +59,7 @@ Gdy wybierzesz zakresy adaptacyjne, zostanie wyświetlony monit o wybranie odpow
 |:-----|:-----|
 |**Użytkownicy** — dotyczy:  <br/> — Exchange-mail <br/> — OneDrive konta <br/> — Teams czatów <br/> — Teams wiadomości z kanału prywatnego <br/> — Yammer wiadomości od użytkowników| Imię <br/> Nazwisko <br/>Nazwa wyświetlana <br/> Stanowisko <br/> Department <br/> Pakiet Office <br/>Ulica <br/> Miasto <br/>Województwo <br/>Kod pocztowy <br/> Kraj lub region <br/> Adresy e-mail <br/> Alias <br/> Exchange atrybuty niestandardowe: CustomAttribute1 — CustomAttribute15|
 |**SharePoint witryn —** dotyczy:  <br/> — SharePoint witryn <br/> — OneDrive konta |Adres URL witryny <br/>Nazwa witryny <br/> SharePoint właściwości niestandardowe: RefinableString00 - RefinableString99 |
-|**Microsoft 365 grupy —** dotyczy:  <br/> — Microsoft 365 grupy <br/> — Teams wiadomości na kanale <br/> — Yammer wiadomości od społeczności |Name (Nazwa) <br/> Nazwa wyświetlana <br/> Opis <br/> Adresy e-mail <br/> Alias <br/> Exchange atrybuty niestandardowe: CustomAttribute1 — CustomAttribute15 |
+|**Microsoft 365 grupy —** dotyczy:  <br/> — Microsoft 365 grupy <br/> - Teams wiadomości kanału (standardowe i udostępnione) <br/> — Yammer wiadomości od społeczności |Name (Nazwa) <br/> Nazwa wyświetlana <br/> Opis <br/> Adresy e-mail <br/> Alias <br/> Exchange atrybuty niestandardowe: CustomAttribute1 — CustomAttribute15 |
 
 Nazwy właściwości witryn są oparte na SharePoint właściwościach zarządzanych witryny. Aby uzyskać informacje na temat atrybutów niestandardowych, zobacz Stosowanie SharePoint właściwości witryny niestandardowej w Microsoft 365 [z adaptacyjnym zakresem zasad](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 

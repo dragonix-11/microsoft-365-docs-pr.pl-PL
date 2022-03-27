@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informacje dla administratorów IT dotyczące zarządzania etykietami wrażliwości Office aplikacji klasycznych, mobilnych i sieci Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b251789795cbb55cd5d79dc686449e4c87aa6f9f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4a2b68e3e85b2c621a002ce762b7ec59ce31c891
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316131"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712757"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Zarządzanie etykietami poufności w aplikacjach Office
 
@@ -74,8 +74,8 @@ Wymienione na liście liczby to minimalne Office wymaganych wersji aplikacji dla
 |[Umożliwianie użytkownikom przypisywania uprawnień: <br /> — Monituj użytkowników](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Bieżący kanał: 2004+ <br /><br> Miesięczny Enterprise kanału: 2004+ <br /><br> Semi-Annual Enterprise kanału: 2008+ | 16.35+   | W trakcie przeglądu   | W trakcie przeglądu         | W trakcie przeglądu                                                        |
 |[Inspekcja działań użytkowników związanych z etykietami](#auditing-labeling-activities)                      | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Tak |
 |[Wymaganie od użytkowników stosowania etykiety do wiadomości e-mail i dokumentów](#require-users-to-apply-a-label-to-their-email-and-documents)   | Bieżący kanał: 2101+ <br /><br> Miesięczny Enterprise kanału: 2101+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny Enterprise kanału: 2009+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.44+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md) <br /> - Korzystanie z klasyfikatorów przeszkolnych                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2018+ | 16.49+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny Enterprise kanału: 2009+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.44+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> - Korzystanie z klasyfikatorów przeszkolnych                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.49+ | W trakcie przeglądu | W trakcie przeglądu | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Obsługa współtworzeń i autozazawów](sensitivity-labels-coauthoring.md) dla dokumentów oznaczonych i zaszyfrowanych | Bieżący kanał: 2107+ <br /><br> Miesięczny Enterprise kanał: 2107+ <br /><br> Semi-Annual Enterprise kanału: 2202+ |  16.51+ | Wersja przedpremierowa: 2,58+ po [wybrali opcję](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | Wersja przedpremierowa: 16.0.14931 lub więcej, gdy [się na to zdecydujesz](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [Tak — opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 
 
@@ -98,9 +98,9 @@ Wymienione na liście liczby to minimalne Office wymaganych wersji aplikacji dla
 |[Umożliwianie użytkownikom przypisywania uprawnień: <br /> — Nie przesyłaj dalej](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
 |[Umożliwianie użytkownikom przypisywania uprawnień: <br /> — Tylko szyfrowanie](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Tak |
 |[Wymaganie od użytkowników stosowania etykiety do wiadomości e-mail i dokumentów](#require-users-to-apply-a-label-to-their-email-and-documents)   | Bieżący kanał: 2101+ <br /><br> Miesięczny Enterprise kanału: 2101+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Tak                |
-|[Inspekcja działań użytkowników związanych z etykietami](#auditing-labeling-activities) | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2202+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Tak |
-|[Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny Enterprise kanału: 2009+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.44+ <sup>\*</sup>                    | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
-|[Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md) <br /> - Korzystanie z klasyfikatorów przeszkolnych                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.49+ | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
+|[Inspekcja działań użytkowników związanych z etykietami](#auditing-labeling-activities) | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2022+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Tak |
+|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny Enterprise kanału: 2009+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.44+ <sup>\*</sup>                    | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
+|[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> - Korzystanie z klasyfikatorów przeszkolnych                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.49+ | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
 |[Różne ustawienia etykiet domyślnych i obowiązkowych etykiet](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Tak |
 |
 
@@ -283,7 +283,7 @@ Scenariusze, które obejmują stosowanie etykiet wrażliwości poza Office aplik
 
 - Wyeksportowano oznaczone i zaszyfrowane dane z aplikacji Power BI
 
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
 W takich scenariuszach za pomocą aplikacji pakietu Office użytkownik z wbudowanymi etykietami może zastosować oznaczenia zawartości etykiet, tymczasowo usuwając lub zamieniając bieżącą etykietę, a następnie ponownie stosując oryginalną etykietę.
 

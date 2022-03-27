@@ -1,5 +1,5 @@
 ---
-title: Włączanie nowoczesnego uwierzytelniania dla pakietu Office 2013 na urządzeniach z systemem Windows
+title: Włączanie nowoczesnego uwierzytelniania dla Office 2013 na Windows urządzeniach
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,91 +23,80 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Dowiedz się, jak ustawić klucze rejestru w celu włączenia nowoczesnego uwierzytelniania dla urządzeń, na Microsoft Office 2013.
-ms.openlocfilehash: c390e3b9858a4d7d8fc37ea5c5e6f1901d5e20fb
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 468658c3b346c7923937ff9595699a20306ed6a9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525115"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754182"
 ---
-# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Włączanie nowoczesnego uwierzytelniania dla pakietu Office 2013 na urządzeniach z systemem Windows
+# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Włączanie nowoczesnego uwierzytelniania dla Office 2013 na Windows urządzeniach
 
-Aby włączyć nowoczesne uwierzytelnianie na dowolnych urządzeniach z systemem Windows, na których zainstalowano pakiet Office 2013, musisz najpierw ustawić określone klucze rejestru.
-  
-## <a name="enable-modern-authentication-for-office-2013-clients"></a>Włączanie nowoczesnego uwierzytelniania dla klientów pakietu Office 2013
-
-> [!NOTE]
-> Dla klientów pakietu Office 2016 nowoczesne uwierzytelnianie jest już włączone. Nie musisz ustawiać kluczy rejestru dla pakietu Office 2016. 
-  
-Aby włączyć nowoczesne uwierzytelnianie na dowolnych urządzeniach z systemem Windows (na przykład komputerów przenośnych i tabletów), na których zainstalowano pakiet Microsoft Office 2013, musisz ustawić poniższe klucze rejestru. Klucze należy ustawić na każdym urządzeniu, na którym chcesz włączyć nowoczesne uwierzytelnianie:
-
-<br>
-
-****
+Microsoft Office 2013 na komputerach Windows Microsoft obsługuje nowoczesne uwierzytelnianie. Jednak aby je włączyć, musisz skonfigurować następujące klucze rejestru:
 
 |Klucz rejestru|Wpisać|Value|
-|:---|:---:|---:|
+|:---|:---:|:---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
 |HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
 |HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
 
-Utwórz lub zmodyfikuj poniższe klucze rejestru, aby wymusić Outlook używania nowszej metody uwierzytelniania dla usług sieci Web, takich jak EWS i autodiscover. Zalecamy, aby użytkownicy wymuszali Outlook nowoczesnego uwierzytelniania.
+> [!NOTE]
+> Nowoczesne uwierzytelnianie jest już włączone w Office 2016 lub nowszym. Nie musisz ustawiać tych kluczy rejestru dla nowszych wersji programu Office.
 
-1. Zakończ pracę programu Outlook.
+## <a name="enable-modern-authentication-for-office-2013-clients"></a>Włączanie nowoczesnego uwierzytelniania dla klientów pakietu Office 2013
 
-2. Uruchom Edytor rejestru, korzystając z jednej z poniższych procedur, odpowiednio do wersji programu Windows:
+1. Zamknij program Outlook.
 
-   - **Windows 10, Windows 8.1 i Windows 8: Naciśnij** klawisze Windows + R, aby otworzyć **okno dialogowe** Uruchamianie. Wpisz *regedit.exe*, a następnie naciśnij klawisz **Enter.**
-   - **Windows 7: Kliknij** **przycisk Start**, *wpiszregedit.exe* w polu wyszukiwania, a następnie naciśnij klawisz **Enter.**
+2. Skopiuj i wklej następujący tekst w Notatnik:
 
-3. W Edytorze rejestru znajdź i kliknij następujący podklucz rejestru:
+   ```text
+   Windows Registry Editor Version 5.00
 
-   ```console
-   HKEY_CURRENT_USER\Software\Microsoft\Exchange\
+   [HKEY_CURRENT_USER\Software\Microsoft\Exchange]
+   "AlwaysUseMSOAuthForAutoDiscover"=dword:00000001
+
+   [HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common]
+
+   [HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity]
+   "EnableADAL"=dword:00000001
+   "Version"=dword:00000001
    ```
 
-4. Jeśli *brakuje klucza AlwaysUseMSOAuthForAutoDiscover*, w menu Edycja wskaż polecenie Nowy, a  następnie wybierz pozycję **Wartość DWORD**. Wpisz *AlwaysUseMSOAuthForAutoDiscover*, a następnie naciśnij klawisz **Enter.**
+3. Zapisz plik z rozszerzeniem reg zamiast .txt w łatwej do znalezienia lokalizacji. Na przykład `C:\Data\Office2013_Enable_ModernAuth.reg`.
 
-5. Kliknij prawym przyciskiem *myszy pozycję AlwaysUseMSOAuthForAutoDiscover*, a następnie kliknij polecenie **Modyfikuj.**
+4. Otwórz Eksploratora plików (dawniej znanego jako Windows), przejdź do lokalizacji właśnie zapisanego pliku reg, a następnie kliknij go dwukrotnie.
 
-6. W **polu Dane** wartości wpisz **wartość 1**, a następnie kliknij przycisk **OK.**
+5. W **wyświetlonym oknie dialogowym** Kontrola konta użytkownika kliknij przycisk **Tak** , aby zezwolić aplikacji na zmiany na urządzeniu.
 
-7. W Edytorze rejestru znajdź i kliknij następujący podklucz rejestru:
+6. W **wyświetlonym oknie dialogowym** z ostrzeżeniem Edytor rejestru kliknij przycisk **Tak** , aby zaakceptować zmiany.
 
-   ```console
-   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
-   ```
+Po skonfigurowaniu kluczy rejestru możesz skonfigurować aplikacje pakietu Office 2013 do używania uwierzytelniania wieloskładnikowego (MFA) z usługą Microsoft 365. Aby uzyskać więcej informacji, [zobacz Konfigurowanie uwierzytelniania wieloskładnikowego](set-up-multi-factor-authentication.md).
 
-8. Jeśli klucze *EnableADAL* i *Version* już istnieją, zmodyfikuj wartości w razie potrzeby, a następnie zamknij Edytor rejestru. Jeśli tak się nie stanie, w menu Edycja wskaż polecenie Nowy, a następnie wybierz pozycję Wartość **DWORD**, aby utworzyć brakujące klucze. 
+Jeśli jesteś obecnie zalogowany do dowolnej aplikacji klienckiej Office, musisz się wylogować i zalogować ponownie, aby zmiana została w związku z tym wylogowywana. W przeciwnym razie usługa MRU i ustawienia mobilne będą niedostępne do czasu nawiązynia tożsamości.
 
-9. Jeśli na przykład brakuje klucza *EnableADAL* , wpisz *EnableADAL*, a następnie naciśnij klawisz **Enter.**
-
-10. Kliknij prawym przyciskiem *myszy pozycję EnableADAL*, a następnie kliknij polecenie **Modyfikuj.**
-
-11. W **polu Dane** wartości wpisz **wartość 1**, a następnie kliknij przycisk **OK.**
-
-12. W razie potrzeby wykonaj tę samą czynności dla klucza wersji. 
-
-13. **Zamknij Edytor rejestru.**
-
-Po skonfigurowaniu kluczy rejestru możesz skonfigurować aplikacje urządzeń z systemem Office 2013 do korzystania z uwierzytelniania wieloskładnikowego [(MFA)](set-up-multi-factor-authentication.md) z usługą Microsoft 365. 
-  
-Aby zmiana została zastosowana, użytkownik, który obecnie jest zalogowany w dowolnej aplikacji klienckiej, musi się wylogować i zalogować ponownie. W przeciwnym razie usługa MRU i ustawienia mobilne będą niedostępne do czasu nawiązynia tożsamości.
-  
 ## <a name="disable-modern-authentication-on-devices"></a>Wyłączanie nowoczesnego uwierzytelniania na urządzeniach
 
-Aby wyłączyć nowoczesne uwierzytelnianie na danym urządzeniu, ustaw na nim następujące klucze rejestru:
-
-<br>
-
-****
+Procedura wyłączania nowoczesnego uwierzytelniania na urządzeniu jest bardzo podobna, ale wymaganych jest mniej kluczy rejestru i trzeba ustawić dla nich wartość 0.
 
 |Klucz rejestru|Wpisać|Value|
-|:---|:---:|---:|
-|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+|---|:---:|:---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
-   
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+
+```text
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Exchange]
+"AlwaysUseMSOAuthForAutoDiscover"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity]
+"EnableADAL"=dword:00000000
+```
+
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Zaloguj się do Office 2013 przy użyciu drugiej metody weryfikacji](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (artykuł)\
-[Outlook hasło i nie łączy się z siecią](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) przy użyciu nowoczesnego Office 365 uwierzytelniania (artykuł)
+[Logowanie do pakietu Office 2013 przy użyciu drugiej metody weryfikacji](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+
+[Outlook monituje o hasło i nie łączy się z siecią przy użyciu nowoczesnego uwierzytelniania Office 365](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)

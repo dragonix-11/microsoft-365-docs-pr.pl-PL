@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Dowiedz się więcej o dostępie do Microsoft 365 grup, Teams i SharePoint.
-ms.openlocfilehash: e01326093476f341c6c4c75448efbdf8c745779f
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 3f4304a54cd1eae86c98d530e5a4ec4db5f6dc66
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63004970"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716173"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Dostęp do grup Microsoft 365, Teams i SharePoint
 
@@ -53,7 +53,6 @@ W poniższej tabeli przedstawiono podręczną tabelę z kontrolkami dostępu dos
 |Zarządzanie użytkownikami|||
 ||Regularne przeglądanie członkostwa w zespołach i grupach.|[Co to są recenzje dostępu do usługi Azure AD?](/azure/active-directory/governance/access-reviews-overview)|
 ||Automatyzowanie zarządzania dostępem do grup i zespołów.|[Co to jest zarządzanie uprawnieniami do usługi Azure AD?](/azure/active-directory/governance/entitlement-management-overview)|
-||Zezwalaj innym osobom na tworzenie kanałów prywatnych w Teams.|[Zarządzanie cyklem życia kanałów prywatnych w Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>Członkostwo
 
@@ -72,7 +71,7 @@ SharePoint witryny oferują możliwość dodawania właścicieli, członków i o
 
 ## <a name="conditional-access"></a>Dostęp warunkowy
 
-Dzięki Microsoft 365 możesz wymagać uwierzytelniania wieloskładnikowego zarówno dla osób w organizacji, jak i poza nią. Istnieje wiele opcji dostępnych w sytuacji, gdy jest wyświetlany monit o uwierzytelnienie drugiego czynnika. Zdecydowanie zalecamy wdrożenie uwierzytelniania wieloskładnikowego w organizacji:
+Dzięki Microsoft 365 możesz wymagać uwierzytelniania wieloskładnikowego zarówno dla osób w organizacji, jak i spoza organizacji. Istnieje wiele opcji dostępnych w sytuacji, gdy jest wyświetlany monit o uwierzytelnienie drugiego czynnika. Zdecydowanie zalecamy wdrożenie uwierzytelniania wieloskładnikowego w organizacji:
 
 - [Uwierzytelnianie wieloskładnikowe usługi Azure AD](/azure/active-directory/authentication/concept-mfa-howitworks)
 
@@ -156,7 +155,9 @@ Kanały prywatne w Teams umożliwiają dostęp do ograniczonych konwersacji i ud
 
 - [Kanały prywatne w Microsoft Teams](/MicrosoftTeams/private-channels)
 
-- [Zarządzanie cyklem życia kanałów prywatnych w Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)
+Kanały udostępnione umożliwiają zapraszanie osób spoza zespołu lub spoza organizacji. W zależności od konkretnych potrzeb biznesowych i zasad udostępniania zewnętrznego możesz zezwolić na tę funkcję lub zablokować tę funkcję.
+
+- [Kanały udostępnione](/MicrosoftTeams/shared-channels)
 
 Dodatkowe zasoby:
 

@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Dowiedz się, jak wdrażać zespoły z ochroną poufnych danych.
-ms.openlocfilehash: 42124881ac795c54288dee46e70dc1d5eccef3e3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 51e4c3b13d1a54e4edcfd9926ae246dde7d7e3e4
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314073"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712704"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Konfigurowanie zespołów w celu ochrony danych poufnych
 
@@ -109,6 +109,10 @@ Aby ograniczyć tworzenie kanału prywatnego
 
 Możesz również używać zasad [zespołów,](/MicrosoftTeams/teams-policies) aby kontrolować, kto może tworzyć kanały prywatne.
 
+## <a name="shared-channel-settings"></a>Ustawienia kanału udostępnionego
+
+[Kanały](/MicrosoftTeams/shared-channels) udostępnione nie mają ustawień na poziomie zespołu. Ustawienia kanału udostępnionego skonfigurowane w centrum administracyjnym Teams Azure AD mają zastosowanie do wszystkich zespołów bez względu na charakter.
+
 ## <a name="sharepoint-settings"></a>SharePoint ustawień
 
 Za każdym razem, gdy tworzysz nowy zespół z poufnymi etykietami, należy wykonać dwa kroki w SharePoint:
@@ -128,13 +132,11 @@ Aby zaktualizować domyślny typ linku udostępniania witryny
 
 Jeśli chcesz utworzyć skrypt tego skryptu w ramach procesu tworzenia zespołu, możesz użyć polecenia [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) `-DefaultSharingLinkType Direct` z parametrem, aby zmienić domyślny link udostępniania na *Określone osoby*.
 
-#### <a name="private-channels"></a>Kanały prywatne
-
-Jeśli dodasz do zespołu kanały prywatne, każdy kanał prywatny utworzy nową witrynę SharePoint z domyślnymi ustawieniami udostępniania. Te witryny nie są widoczne w centrum administracyjnym programu SharePoint, dlatego w celu zaktualizowania ustawień udostępniania gościa należy użyć polecenia cmdlet programu Set-SPOSite PowerShell.
+Pamiętaj, że jeśli dodasz do zespołu kanały prywatne lub udostępnione, każdy z nich utworzy nową witrynę SharePoint z domyślnymi ustawieniami udostępniania. Możesz je zaktualizować w centrum SharePoint, wybierając witryny skojarzone z zespołem.
 
 ### <a name="site-sharing-settings"></a>Ustawienia udostępniania witryn
 
-Aby zapewnić, że SharePoint nie będzie udostępniana osobom, które nie są członkami zespołu, ograniczymy takie udostępnianie do właścicieli.
+Aby zapewnić, że SharePoint nie będzie udostępniana osobom, które nie są członkami zespołu, ograniczymy takie udostępnianie do właścicieli. Jest to konieczne tylko SharePoint witryny utworzonej z zespołem. Dodatkowe witryny utworzone w ramach kanałów prywatnych lub udostępnionych nie mogą być udostępniane poza zespołem lub kanałem.
 
 Aby skonfigurować udostępnianie witryn tylko przez właścicieli
 1. W Teams **przejdź do karty** Ogólne zespołu, który chcesz zaktualizować.
@@ -145,6 +147,6 @@ Aby skonfigurować udostępnianie witryn tylko przez właścicieli
 6. W **obszarze Uprawnienia udostępniania** wybierz pozycję Właściciele i członkowie witryny, a osoby z uprawnieniami do edytowania mogą udostępniać pliki i foldery **,** ale tylko właściciele witryn mogą udostępniać witrynę, a następnie kliknij pozycję **Zapisz**.
 
 
-## <a name="see-also"></a>Zobacz też
+## <a name="related-topics"></a>Tematy pokrewne
 
 [Tworzenie i konfigurowanie etykiet wrażliwości oraz ich zasad](../compliance/create-sensitivity-labels.md)

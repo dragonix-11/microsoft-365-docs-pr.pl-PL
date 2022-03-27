@@ -21,25 +21,29 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: ce75fff753acfa9d5e183154e09805b04d7523da
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321426"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712845"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Badanie alertów w programie Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Dotyczy:**
+
 - Microsoft 365 Defender
+
+>[!Note]
+>W tym artykule opisano alerty zabezpieczeń w Microsoft 365 Defender. Możesz jednak użyć alertów dotyczących aktywności, aby wysyłać powiadomienia e-mail do siebie lub innych administratorów, gdy użytkownicy wykonują określone działania w Microsoft 365. Aby uzyskać więcej informacji, zobacz [Tworzenie alertów aktywności — Microsoft 365 informacje dotyczące | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Alerty są podstawą wszystkich zdarzeń i wskazują na wystąpienie złośliwych lub podejrzanych zdarzeń w Twoim środowisku. Alerty są zazwyczaj częścią szerszego ataku i zawierają wskazówki dotyczące zdarzenia.
 
-W Microsoft 365 Defender powiązanych ze sobą alertów są agregowane w celu [formowania zdarzeń](incidents-overview.md). Zdarzenia zawsze zapewniają szerszy kontekst ataków, jednak analizowanie alertów może być przydatne, gdy jest wymagana bardziej dogłębna analiza. 
+W Microsoft 365 Defender powiązanych ze sobą alertów są agregowane w celu [formowania zdarzeń](incidents-overview.md). Zdarzenia zawsze zapewniają szerszy kontekst ataków, jednak analizowanie alertów może być przydatne, gdy jest wymagana bardziej dogłębna analiza.
 
-**Kolejka alertów** zawiera bieżący zestaw alertów. Do kolejki alertów można dostać się z menu Zdarzenia **& alerty > alerty** na pasku Szybkie uruchamianie Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">w witrynie.</a>
+**Kolejka alertów** zawiera bieżący zestaw alertów. Do kolejki alertów można dostać się z menu Zdarzenia **& alerty > alerty** na pasku Szybkie uruchamianie Microsoft 365 Defender [w witrynie.](https://go.microsoft.com/fwlink/p/?linkid=2077139)
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Przykład kolejki alertów w portalu Microsoft 365 Defender wiadomości":::
 
@@ -109,7 +113,7 @@ Microsoft 365 Defender alerty mogą pochodzić z rozwiązań, takich jak Microso
 | Usługa Microsoft Defender dla Office 365 | `fa{GUID}` <br> Przykład: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Ochrona punktu końcowego w usłudze Microsoft Defender | `da` lub niestandardowe `ed` alerty wykrywania <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Przykład: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
-| Usługa Microsoft Defender dla aplikacji w chmurze |`ca{GUID}` <br> Przykład: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Przykład: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
 ### <a name="analyze-affected-assets"></a>Analizowanie zasobów, których dotyczy problem
 

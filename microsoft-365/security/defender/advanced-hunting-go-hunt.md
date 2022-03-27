@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e14f2d5e35585cf5b0edfe433084fa7c8a1d5280
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 3d1ec22febe0c0072a4eed2a9b8fece3687762d7
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "62996825"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754280"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Szybkie poszukiwania informacji o encji lub zdarzeniach za pomocą ponagowego poszukiwania
 
@@ -38,25 +38,27 @@ ms.locfileid: "62996825"
 
 Akcja wyszukiwania *w podróży umożliwia* szybkie badanie wydarzeń i różnych typów encji przy użyciu zaawansowanych możliwości wyszukiwania opartych [na](advanced-hunting-overview.md) zapytaniach. Ta akcja automatycznie uruchamia zaawansowane zapytanie wyszukiwania w celu znalezienia odpowiednich informacji na temat wybranego wydarzenia lub jednostki.
 
-Akcja *poszukiwania w celu poszukiwania* miejsca jest dostępna w różnych sekcjach usługi Defender dla chmury po każdym wyświetlaniu szczegółów zdarzenia lub jednostki. Możesz na przykład skorzystać z funkcji *poszukiwania w* następujących sekcjach:
+Akcja *poszukiwania w podróży* jest dostępna w różnych sekcjach usługi Defender dla chmury. Ta akcja jest dostępna do wyświetlenia po wyświetlzeniu zdarzenia lub szczegółów encji. Możesz na przykład skorzystać z opcji *poszukiwania w następujących* sekcjach:
 
-- Na stronie [zdarzenia możesz](investigate-incidents.md#summary) przeglądać szczegóły dotyczące użytkowników, urządzeń i wielu innych jednostek skojarzonych z zdarzeniem. Po wybraniu encji są dostępne dodatkowe informacje oraz różne działania, które można podjąć w encji. W poniższym przykładzie zaznaczono skrzynkę pocztową ze szczegółami skrzynki pocztowej, a także opcją poszukiwania dodatkowych informacji na temat skrzynki pocztowej.
+- Na stronie [zdarzenia możesz](investigate-incidents.md#summary) przeglądać szczegóły dotyczące użytkowników, urządzeń i wielu innych jednostek skojarzonych z zdarzeniem. Po wybraniu encji są dostępne dodatkowe informacje i różne działania, które można podjąć w encji. W poniższym przykładzie zaznaczono skrzynkę pocztową ze szczegółami skrzynki pocztowej i opcją poszukiwania dodatkowych informacji o skrzynce pocztowej.
 
-    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="Strona **Skrzynki pocztowe** z opcją **Go hunt** w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/go-hunt-1-incident.png":::
+    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="Strona Skrzynki pocztowe z opcją przejdź do wyszukiwania w Microsoft 365 Defender poczty" lightbox="../../media/go-hunt-1-incident.png":::
 
 - Na stronie zdarzenia możesz również uzyskać dostęp do listy obiektów na karcie **Dowód** . Wybranie jednego z tych obiektów umożliwia szybkie poszukanie informacji o tej encji.
 
-    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="Opcja Przejdź do wyszukiwania informacji na temat dowodu na stronie **Zdarzenie** w portalu Microsoft 365 Defender informacje" lightbox="../../media/go-hunt-2-entity.png":::
+    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="Opcja Przejdź do wyszukiwania informacji na temat dowodu na stronie Zdarzenie w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/go-hunt-2-entity.png":::
 
 
 - Podczas wyświetlania osi czasu dla urządzenia możesz wybrać zdarzenie na osi czasu, aby wyświetlić dodatkowe informacje o tym zdarzeniu. Po wybraniu wydarzenia możesz wybrać inne ważne wydarzenia podczas zaawansowanego wyszukiwania.
 
-    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="Opcja **Wyszukiwania powiązanych zdarzeń** na stronie zdarzenia na karcie **Osie czasu** w Microsoft 365 Defender portalu" lightbox="../../media/go-hunt-3-event.png":::
+    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="Opcja Wyszukiwania powiązanych zdarzeń na stronie zdarzenia na karcie Osie czasu w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/go-hunt-3-event.png":::
 
 Wybierz **pozycję Przejdź do wyszukiwania** lub **Pozycję Wyszukiwania, aby uzyskać** informacje o powiązanych zdarzeniach, w zależności od tego, czy wybrano encję, czy zdarzenie.
 
 ## <a name="query-for-entity-information"></a>Kwerenda dla informacji o encji
-W przypadku *wyszukiwania informacji* o użytkowniku, urządzeniu lub encji dowolnego innego typu za pomocą wyszukiwania go zapytanie sprawdza wszystkie odpowiednie tabele schematu pod każdym zdarzeniami obejmującymi tę jednostkę. Aby zachować możliwość zarządzania wynikami, kwerenda jest związana z tym samym okresem czasu, co najwcześniejsze działanie w ciągu ostatnich 30 dni, które obejmuje encję i jest skojarzone z zdarzeniem.
+Możesz użyć funkcji *wyszukiwania w* celu wyszukiwania informacji o użytkowniku, urządzeniu lub encji dowolnego innego typu. Zapytanie sprawdza wszystkie odpowiednie tabele schematów pod każdym zdarzeniami obejmującymi tę jednostkę w celu zwrócenia informacji. Aby zachować możliwości zarządzania wynikami, zapytanie:
+- obejmuje ten sam okres czasu, co najwcześniejsze działanie w ciągu ostatnich 30 dni, które obejmuje jednostkę
+- skojarzone z tym zdarzeniem.
 
 Poniżej znajduje się przykładowa kwerenda wyszukiwania w celu wyszukiwania danych dla urządzenia:
 
@@ -72,7 +74,7 @@ and DeviceName == deviceName
 | take 100
 ```
 ### <a name="supported-entity-types"></a>Obsługiwane typy encji
-Możesz skorzystać z *opcji poszukiwania po* wybraniu dowolnego z następujących typów encji:
+Możesz użyć opcji go *hunt* po wybraniu dowolnego z następujących typów encji:
 
 - Pliki
 - Wiadomości e-mail
@@ -113,6 +115,6 @@ Oprócz modyfikowania zapytania w celu uzyskania bardziej istotnych wyników mo�
 
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
-- [Praca z wynikami zapytania](advanced-hunting-query-results.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
+- [Praca z wynikami zapytań](advanced-hunting-query-results.md)
 - [Niestandardowe reguły wykrywania](custom-detection-rules.md)

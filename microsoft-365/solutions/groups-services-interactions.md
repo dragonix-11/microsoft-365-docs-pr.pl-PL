@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interakcje usług grup
-ms.openlocfilehash: 226c1588c0275c3349d0fd996dd68f5748f11cd6
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 3f5433671e4407e25669498824817db0b43ff329
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63005212"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712823"
 ---
 # <a name="groups-services-interactions"></a>Interakcje usług grup
 
@@ -558,7 +558,7 @@ Tak, SharePoint oferuje kilka niegrupowych usług i witryn, takich jak witryny k
 
 **Czy na grupę może być wiele witryn?**
 
-Nie, dla jednej grupy może być dostępna tylko jedna witryna. Kanały prywatne Teams korzystają z dodatkowych witryn, które nie są połączone z grupą.
+Nie, dla jednej grupy może być dostępna tylko jedna witryna. Kanały prywatne i udostępnione Teams dodatkowych witryn, które nie są połączone z grupą.
 
 **Czy witryny mogą być skojarzone z wieloma grupami?**
 

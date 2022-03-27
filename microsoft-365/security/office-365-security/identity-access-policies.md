@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 08d15cacdd6b391759aeb1a22abd91c98376cd17
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 27d45b46944a624abde48a37affad285092bc44d
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321757"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775483"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Typowe zasady dostępu do urządzeń i tożsamości bez zaufania
 
@@ -67,7 +67,6 @@ Aby zapewnić Ci czas na wykonanie tych zadań, zalecamy zaimplementowanie zasad
 ||[Definiowanie zasad zgodności urządzeń](#define-device-compliance-policies)|Jedna zasada dla każdej platformy.|Microsoft 365 E3 lub E5|
 ||[Wymaganie zgodności komputerów i urządzeń przenośnych](#require-compliant-pcs-and-mobile-devices)|Wymusza zarządzanie usługą Intune zarówno na komputerach PC (Windows lub macOS), jak i na telefonach i tabletach (z systemem iOS, iPadOS lub Android).|Microsoft 365 E3 lub E5|
 |**Wyspecjalizowane zabezpieczenia**|[*Zawsze wymagaj* uwierzytelniania wieloskładnikowego](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 lub E5|
-|
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Przypisywanie zasad do grup i użytkowników
 
@@ -119,7 +118,6 @@ W **sekcji Zadania** :
 |Aplikacje lub akcje w chmurze|**Aplikacje w chmurze > Dołączanie**|**Wybierz aplikacje**: Wybierz aplikacje, do których chcesz zastosować te zasady. Na przykład wybierz pozycję Exchange Online.||
 |Warunki|||Konfigurowanie warunków, które są specyficzne dla danego środowiska i potrzeb.|
 ||Ryzyko logowania||Zobacz wskazówki w poniższej tabeli.|
-|
 
 ### <a name="sign-in-risk-condition-settings"></a>Ustawienia warunków ryzyka logowania
 
@@ -130,7 +128,6 @@ Ustawienia poziomu ryzyka należy stosować w zależności od docelowego poziomu
 |Punkt początkowy|Wysoki, średni|Sprawdź oba te pola.|
 |Enterprise|Wysoki, średni, niski|Sprawdź wszystkie trzy.|
 |Wyspecjalizowane zabezpieczenia||Jeśli wszystkie opcje nie są zaznaczone, zawsze wymuszaj uwierzytelniania wieloskładnikowego.|
-|
 
 W sekcji **Kontrolki programu Access** :
 
@@ -139,7 +136,6 @@ W sekcji **Kontrolki programu Access** :
 |Grant|**Grant access**||Wybieranie|
 |||**Wymaganie uwierzytelniania wieloskładnikowego**|Czek|
 ||**Wymaganie wszystkich zaznaczonych kontrolek**||Wybieranie|
-|
 
 Wybierz **pozycję Wybierz** , aby zapisać **ustawienia Udzielanie** .
 
@@ -161,7 +157,6 @@ W **sekcji Zadania** :
 ||Wyklucz|**Użytkownicy i grupy**: wybierz grupę wyjątków Dostęp warunkowy. kont usługi (tożsamości aplikacji).|Członkostwo należy modyfikować tymczasowo, gdy jest to konieczne.|
 |Aplikacje lub akcje w chmurze|**Aplikacje w chmurze > Dołączanie**|**Wybierz aplikacje**: Wybierz aplikacje odpowiadające klientom, którzy nie obsługują nowoczesnego uwierzytelniania.||
 |Warunki|**Aplikacje klienckie**|Wybierz **pozycję Tak** dla ustawienia **Konfiguruj** <p> Wyczyszczenie znaczników wyboru dla **aplikacji przeglądarki** **i dla urządzeń przenośnych oraz klientów klasycznych**||
-|
 
 W sekcji **Kontrolki programu Access** :
 
@@ -169,7 +164,6 @@ W sekcji **Kontrolki programu Access** :
 |---|---|---|---|
 |Grant|**Blokuj dostęp**||Wybieranie|
 ||**Wymaganie wszystkich zaznaczonych kontrolek**||Wybieranie|
-|
 
 Wybierz **pozycję Wybierz** , aby zapisać **ustawienia Udzielanie** .
 
@@ -191,7 +185,6 @@ W **sekcji Zadania** :
 |---|---|---|---|
 |Użytkownicy|Uwzględnij|**Wszyscy użytkownicy**|Wybieranie|
 |Ryzyko użytkownika|**High (Wysoki)**||Wybieranie|
-|
 
 W drugiej **sekcji Zadań** :
 
@@ -199,7 +192,6 @@ W drugiej **sekcji Zadań** :
 |---|---|---|---|
 |Access|**Zezwalaj na dostęp**||Wybieranie|
 |||**Wymagaj zmiany hasła**|Czek|
-|
 
 Wybierz **pozycję Gotowe** , aby zapisać **ustawienia programu Access** .
 
@@ -228,7 +220,6 @@ Zgodnie z zasadami opisanymi w tece Zero Trust identity and [device access confi
 |Punkt początkowy|[Ulepszona ochrona danych poziomu 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Ustawienia zasad wymuszane na poziomie 2 obejmują wszystkie ustawienia zasad zalecane dla poziomu 1 i tylko dodają lub aktualizuje poniższe ustawienia zasad, aby wdrożyć więcej kontrolek i bardziej zaawansowaną konfigurację niż poziom 1.|
 |Enterprise|[Ulepszona ochrona danych poziomu 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Ustawienia zasad wymuszane na poziomie 2 obejmują wszystkie ustawienia zasad zalecane dla poziomu 1 i tylko dodają lub aktualizuje poniższe ustawienia zasad, aby wdrożyć więcej kontrolek i bardziej zaawansowaną konfigurację niż poziom 1.|
 |Wyspecjalizowane zabezpieczenia|[Poziom 3. Ochrona danych wysokiego poziomu przedsiębiorstwa](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Ustawienia zasad wymuszane na poziomie 3 obejmują wszystkie ustawienia zasad zalecane dla poziomu 1 i 2 i tylko dodają lub aktualizuje poniższe ustawienia zasad, aby wdrożyć więcej kontrolek i bardziej zaawansowaną konfigurację niż poziom 2.|
-|
 
 Aby utworzyć nowe zasady ochrony aplikacji dla każdej platformy (w systemach iOS i Android) w obrębie systemu Microsoft Endpoint Manager przy użyciu ustawień struktury ochrony danych, możesz:
 
@@ -362,7 +353,6 @@ Aby **sprawdzić kondycję > Windows reguł oceny** usług kondycji, zobacz tę 
 |Wymagaj funkcji BitLocker|Wymagaj|Wybieranie|
 |Wymagaj bezpiecznego rozruchu, aby było włączone na urządzeniu|Wymagaj|Wybieranie|
 |Wymaganie integralności kodu|Wymagaj|Wybieranie|
-|
 
 W **przypadku właściwości urządzenia** określ odpowiednie wartości dla wersji systemu operacyjnego na podstawie zasad zabezpieczeń i IT.
 
@@ -388,14 +378,12 @@ W **przypadku zabezpieczeń systemu** zobacz tę tabelę.
 ||Minimalna wersja programu Microsoft Defender w celu ochrony przed złośliwym oprogramowaniem||Wpisać <p> Obsługiwane tylko w przypadku Windows 10 komputera. Firma Microsoft zaleca, aby wersje najnowszej wersji nie zawierały więcej niż pięciu wersji.|
 ||Aktualny podpis w programie Microsoft Defender w celu ochrony przed złośliwym oprogramowaniem|Wymagaj|Wybieranie|
 ||Ochrona w czasie rzeczywistym|Wymagaj|Wybieranie <p> Obsługiwane tylko dla Windows 10 komputerów stacjonarnych i nowszych|
-|
 
 #### <a name="microsoft-defender-for-endpoint"></a>Ochrona punktu końcowego w usłudze Microsoft Defender
 
 |Wpisać|Właściwości|Value|Akcja|
 |---|---|---|---|
 |Reguły programu Microsoft Defender dla punktu końcowego w centrum Microsoft Endpoint Manager administracyjnego|[Wymaganie, aby urządzenie było na poziomie lub poniżej wyniku ryzyka związanego z maszyną](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Średni|Wybieranie|
-|
 
 <!--
 ## Require compliant PCs (but not compliant phones and tablets)

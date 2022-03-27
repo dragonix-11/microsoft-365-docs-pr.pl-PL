@@ -1,9 +1,9 @@
-- name: Microsoft 365 rozwiązania i architektury
+- name: Centrum rozwiązań i architektury platformy Microsoft 365
   href: index.yml
   displayName: Home
 - name: Ilustracje rozwiązań i architektury
   items:
-    - name: Microsoft 365 ilustracji zwiększających produktywność
+    - name: Ilustracje dotyczące produktywności na platformie Microsoft 365
       href: productivity-illustrations.md
     - name: Modele architektury chmury firmy Microsoft
       href: cloud-architecture-models.md
@@ -11,7 +11,7 @@
       href: infographics-for-users.md
     - name: Ikony architektury i szablony
       href: architecture-icons-templates.md
-- name: Microsoft 365 rozwiązań foundation
+- name: Rozwiązania platformy Microsoft 365 Foundation
   items:
     - name: Konfigurowanie infrastruktury do pracy hybrydowej
       items:
@@ -25,11 +25,11 @@
           href: empower-people-to-work-remotely-security-compliance.md
         - name: Krok nr 4. Wdrażanie zarządzania punktami końcowymi
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: Krok nr 5. Wdrażanie aplikacji i usług zwiększających wydajność
+        - name: Krok nr 5. Wdrażanie aplikacji i usług zwiększających produktywność
           href: empower-people-to-work-remotely-teams-productivity-apps.md
         - name: Krok 6. Szkolenie pracowników
           href: empower-people-to-work-remotely-train-monitor-usage.md
-    - name: Zarządzanie punktami końcowymi za pomocą usługi Intune i Microsoft 365
+    - name: Zarządzanie punktami końcowymi za pomocą usługi Intune i usługi Microsoft 365
       items:
         - name: Omówienie
           href: manage-devices-with-intune-overview.md
@@ -53,21 +53,23 @@
           href: setup-secure-collaboration-with-teams.md
         - name: Skonfiguruj trzy warstwy ochrony za pomocą Microsoft Teams
           items:
-            - name: Trzy warstwy ochrony — omówienie
+            - name: Omówienie trzech warstwy ochrony
               href: configure-teams-three-tiers-protection.md
             - name: Konfigurowanie ochrony planu bazowego
               href: configure-teams-baseline-protection.md
-            - name: Konfigurowanie ochrony przed poufnymi danymi
+            - name: Konfigurowanie ochrony danych wrażliwych
               href: configure-teams-sensitive-protection.md
-            - name: Konfigurowanie wysoce poufnej ochrony
+            - name: Konfigurowanie ochrony wysoce wrażliwych danych
               href: configure-teams-highly-sensitive-protection.md
-            - name: Konfigurowanie zespołu z izolacji zabezpieczeń
+            - name: Konfigurowanie zespołu z izolacją zabezpieczeń
               href: secure-teams-security-isolation.md
         - name: Konfigurowanie udostępniania zewnętrznego
           items:
             - name: Omówienie udostępniania zewnętrznego
               href: collaborate-with-people-outside-your-organization.md
-            - name: Scenariusze konfiguracji
+            - name: Planowanie współpracy zewnętrznej
+              href: plan-external-collaboration.md
+            - name: Konfiguracja
               items:
                 - name: Współpraca nad dokumentami
                   href: collaborate-on-documents.md
@@ -75,21 +77,35 @@
                   href: collaborate-in-site.md
                 - name: Współpraca w zespole
                   href: collaborate-as-team.md
+                - name: Współpraca w kanale
+                  href: collaborate-teams-direct-connect.md
+                - name: Włączanie kanałów udostępnionych dla wszystkich organizacji
+                  href: allow-direct-connect-with-all-organizations.md
                 - name: Tworzenie ekstranetu B2B
                   href: b2b-extranet.md
-                - name: Ogranicz udostępnianie
-                  href: microsoft-365-limit-sharing.md
-            - name: Scenariusze zabezpieczeń
+                - name: Ufaj dostępowi warunkowemu od innych organizacji
+                  href: trust-conditional-access-from-other-organizations.md
+            - name: Ograniczanie udostępniania
               items:
-                - name: Udostępnianie bez uwierzytelniania
-                  href: best-practices-anonymous-sharing.md
+                - name: Ograniczanie możliwości zapraszania gości
+                  href: limit-who-can-invite-guests.md
+                - name: Ograniczanie możliwości zapraszania osób w organizacji
+                  href: limit-invitations-from-specific-organization.md
+                - name: Ograniczanie udostępniania gości do określonych organizacji
+                  href: limit-guest-sharing-to-specific-organization.md
+                - name: 'Ograniczanie organizacji, w których użytkownicy mogą być gośćmi'
+                  href: limit-organizations-where-users-have-guest-accounts.md
                 - name: Ograniczanie przypadkowej ekspozycji
                   href: share-limit-accidental-exposure.md
-                - name: Bezpieczne środowisko udostępniania gościa
-                  href: create-secure-guest-sharing-environment.md
+                - name: Ograniczanie udostępniania
+                  href: microsoft-365-limit-sharing.md
+            - name: Bezpieczne środowisko udostępniania gościa
+              href: create-secure-guest-sharing-environment.md
+            - name: Udostępnianie bez uwierzytelniania
+              href: best-practices-anonymous-sharing.md
             - name: Informacje o udostępnianiu zewnętrznym
               href: microsoft-365-guest-settings.md
-    - name: Wdrażanie ochrony przed oprogramowaniem wymuszającym okup dla Microsoft 365 dzierżawy
+    - name: Wdrażanie ochrony przed oprogramowaniem wymuszającym okup dla dzierżawy Microsoft 365
       items:
         - name: Omówienie
           href: ransomware-protection-microsoft-365.md
@@ -103,21 +119,21 @@
           href: ransomware-protection-microsoft-365-devices.md
         - name: Krok nr 5. Ochrona informacji
           href: ransomware-protection-microsoft-365-information.md
-    - name: Wdrażanie ochrony informacji w celu ochrony prywatności danych
+    - name: Wdrażanie ochrony informacji na potrzeby przepisów dotyczących prywatności danych
       items:
         - name: Omówienie
           href: information-protection-deploy.md
-        - name: Planowanie
+        - name: Plan
           href: information-protection-deploy-assess.md
-        - name: Śledzenie
+        - name: Śledź
           href: information-protection-deploy-compliance.md
         - name: Zapobiegaj
           href: information-protection-deploy-identity-device-threat.md
-        - name: Ochrona
+        - name: Chroń
           href: information-protection-deploy-protect-information.md
         - name: Zachowaj
           href: information-protection-deploy-govern.md
-        - name: Badanie
+        - name: Zbadaj
           href: information-protection-deploy-monitor-respond.md
 - name: Rozwiązania i scenariusze dotyczące obciążenia pracą
   items:
@@ -129,7 +145,7 @@
           items:
             - name: Omówienie
               href: tenant-management-overview.md
-            - name: Krok nr 1. Dzierżawcy
+            - name: Krok nr 1. Twoje dzierżawy
               href: tenant-management-tenants.md
             - name: Krok nr 2. Optymalna sieć
               href: tenant-management-networking.md
@@ -143,41 +159,41 @@
               items:
                 - name: Omówienie
                   href: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Krok nr 1. Uniemożliwianie pracownikowi logowania się i blokowania dostępu do Microsoft 365 usług
+                - name: Krok nr 1. Uniemożliwianie pracownikowi logowania się i blokowania dostępu do usług Microsoft 365
                   href: ../admin/add-users/remove-former-employee-step-1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Krok nr 2. Zapisywanie zawartości skrzynki pocztowej byłego pracownika
                   href: ../admin/add-users/remove-former-employee-step-2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Krok nr 3. Czyszczenie i blokowanie urządzenia przenośnego byłego pracownika
+                - name: Krok nr 3. Czyszczenie i blokowanie urządzenia przenośnego byłego pracownika.
                   href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Krok nr 4. Przesyłanie dalej wiadomości e-mail byłego pracownika do innego pracownika lub konwertowanie na udostępnioną skrzynkę pocztową
                   href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Krok nr 5. Umożliwianie iniudzyjom dostępu OneDrive i Outlook pracowników
+                - name: Krok nr 5. Udzielanie innym pracownikom dostępu do danych usługi OneDrive i programu Outlook
                   href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Krok 6. Usuwanie licencji Microsoft 365 od byłego pracownika
                   href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Krok 7. Usuwanie konta użytkownika byłego pracownika
                   href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: Migrowanie zawartości do Microsoft 365
+        - name: Migrowanie zawartości na platformę Microsoft 365
           href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: Migrowanie udziałów plików do Microsoft 365
+        - name: Migrowanie udziałów plików na platformę Microsoft 365
           items:
             - name: Omówienie
               href: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Krok 1. Konfigurowanie agentów
+            - name: Krok nr 1. Konfigurowanie agentów
               href: /sharepointmigration/mm-setup-clients?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Krok 2. Tworzenie zadania migracji
+            - name: Krok nr 2. Tworzenie zadania migracji
               href: /sharepointmigration/mm-how-to-use?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Krok 3. Monitorowanie i zgłaszanie
+            - name: Krok nr 3. Monitorowanie i zgłaszanie
               href: /sharepointmigration/mm-reports?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Spotkania i komunikacja
       items:
-        - name: Wdrażanie Teams głosowej w Microsoft 365
+        - name: Wdrażanie funkcji głosowych aplikacji Teams na platformie Microsoft 365
           items:
             - name: Omówienie
               href: deploy-voice.md
             - name: Krok nr 1. Wybieranie rozwiązania głosowego
               href: /MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Krok nr 2. - Konfigurowanie system telefoniczny
+            - name: Krok nr 2. - Konfigurowanie systemu telefonicznego
               href: /MicrosoftTeams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Krok nr 3. - Konfigurowanie łączności z siecią PSTN
               items:
@@ -192,25 +208,25 @@
             - name: Omówienie komunikacji firmowej
               href: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
               items:
-                - name: Krok 1. Planowanie strategii komunikacji
+                - name: Krok nr 1. Planowanie strategii komunikacji
                   href: /sharepoint/plan-communication-strategy?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Krok 2. Przegląd narzędzi do komunikacji
+                - name: Krok nr 2. Przegląd narzędzi do komunikacji
                   href: /sharepoint/review-communication-apps?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Krok 3. Określanie zakresu i definiowanie odbiorców
+                - name: Krok nr 3. Określanie zakresu i definiowanie odbiorców
                   href: /sharepoint/audience-profile?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Krok 4. Wybieranie rozwiązania do komunikacji
+                - name: Krok nr 4. Wybieranie rozwiązania do komunikacji
                   href: /sharepoint/choose-communication-method?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Konfigurowanie viva Connections
+            - name: Konfiguracja Zasobów Microsoft Viva
               href: /sharepoint/guide-to-setting-up-viva-connections?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Uzyskiwanie witryny głównej dla intranetu
               href: /sharepoint/home-site-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Rozpowszechnianie wiadomości organizacji
+            - name: Rozpowszechnianie wiadomości organizacyjnych
               href: /sharepoint/distribute-corporate-news-to-your-organization?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Połączenie liderów i organizacji
               href: /sharepoint/leadership-connection?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Zamieć miejski urząd Yammer
+            - name: Organizacja spotkania pracowników przy użyciu usługi Yammer
               href: /sharepoint/hold-town-hall-using-yammer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Tworzenie doświadczeń w nauce i szkoleniach
+            - name: Tworzenie środowisk związanych z nauką i szkoleniami
               href: /sharepoint/build-learning-and-training-experiences-for-employees?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Praca zespołowa i współpraca
       items:
@@ -218,21 +234,21 @@
           items:
             - name: Omówienie
               href: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Krok nr 1. Użyj SharePoint Syntex
+            - name: Krok nr 1. Korzystanie z usługi SharePoint Syntex
               href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Krok nr 2. Używanie Microsoft Teams
+            - name: Krok nr 2. Korzystanie z aplikacji Microsoft Teams
               href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Krok nr 3. Power Automate
               href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: Tworzenie inteligentnego SharePoint intranetu
+        - name: Tworzenie inteligentnego intranetu SharePoint
           items:
             - name: Omówienie
               href: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Jak myślą o inteligentnym intranecie
+            - name: Jak myśleć o inteligentnym intranecie
               href: /sharepoint/trad-vs-modern-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Intranet roadmap
+            - name: Plan intranetu
               items:
-                - name: Intranet roadmap
+                - name: Plan intranetu
                   href: /sharepoint/intranet-team-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Role i zadania intranetowe
                   href: /sharepoint/intranet-roles-tasks?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
@@ -240,7 +256,7 @@
                   href: /sharepoint/intranet-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Planowanie intranetu
               href: /sharepoint/plan-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: Zagadnienia dotyczące planowania globalnego intranetu
+            - name: Czynniki brane pod uwagę przy planowaniu globalnego intranetu
               href: /sharepoint/set-up-global-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: Zarządzanie intranetem
               href: /sharepoint/intranet-governance?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
@@ -284,61 +300,61 @@
                   href: choose-domain-to-create-groups.md
                 - name: Opcje zakończenia cyklu życia
                   href: end-life-cycle-groups-teams-sites-yammer.md
-        - name: Współpraca nad plikami SharePoint pomocą Microsoft 365
+        - name: Współpraca nad plikami w programie SharePoint z pomocą platformy Microsoft 365
           href: /sharepoint/deploy-file-collaboration
-        - name: OneDrive dla przedsiębiorstw
+        - name: Przewodnik po usłudze OneDrive dla przedsiębiorstw
           href: /onedrive/plan-onedrive-enterprise
     - name: Zgodność
       items:
-        - name: Rozwiązania ryzyka niejawnego programu testów w programie Microsoft 365
+        - name: Rozwiązania ryzyka wewnętrznego na platformie Microsoft 365
           href: ../compliance/insider-risk-solution-overview.md
         - name: Inspekcja rozwiązań
           href: ../compliance/auditing-solutions-overview.md
-        - name: Rozwiązania zbierania elektronicznych materiałów dowodowych w programie Microsoft 365
+        - name: Rozwiązania zbierania elektronicznych materiałów dowodowych na platformie Microsoft 365
           href: ../compliance/ediscovery.md
         - name: Microsoft 365 Advanced eDiscovery
           href: ../compliance/overview-ediscovery-20.md
         - name: Plany działań dotyczących zgodności z przepisami
           items:
-            - name: ISO — zalecany plan działań
+            - name: ISO — zalecany plan działania
               href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: NIST — zalecany plan działań
+            - name: NIST — zalecany plan działania
               href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: ZEA — często zadawane pytania
+            - name: CCPA — często zadawane pytania
               href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: RODO — zalecany plan działań
+            - name: RODO — zalecany plan działania
               href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Bezpieczeństwo
       items:
-        - name: Microsoft 365 plan wdrażania zerowego zaufania
+        - name: Plan wdrożenia platformy Microsoft 365 Zero Trust
           href: ../security/microsoft-365-zero-trust.md
         - name: Najważniejsze zadania dla zespołów ds. zabezpieczeń na rzecz obsługi pracy w domu
           href: ../security/top-security-tasks-for-remote-work.md
-        - name: Konfiguracje tożsamości i dostępu do urządzeń
+        - name: Konfiguracje dostępu do tożsamości i urządzeń
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
-        - name: Ocenianie i pilotaż Microsoft 365 Defender
+        - name: Ocena i pilotaż usługi Microsoft 365 Defender
           href: ../security/defender/eval-overview.md
         - name: Odpowiadanie na pierwsze zdarzenie
           href: ../security/defender/first-incident-overview.md
-        - name: Wdrażanie programu Microsoft Defender dla punktu końcowego
+        - name: Wdrażanie ochrony punktu końcowego w usłudze Microsoft Defender
           href: ../security/defender-endpoint/deployment-phases.md
-        - name: Przełączanie z ochrony punktów końcowych innych niż firma Microsoft do programu Microsoft Defender dla punktu końcowego
+        - name: Przełączanie z ochrony punktów końcowych firm innych niż Microsoft do ochrony punktu końcowego w usłudze Microsoft Defender
           href: ../security/defender-endpoint/switch-to-mde-overview.md
-        - name: Przełączanie z narzędzia ochrony innych niż Microsoft do programu Microsoft Defender dla Office 365
+        - name: Przełączanie z narzędzia ochrony firm innych niż Microsoft do ochrony usługi Office 365 w usłudze Microsoft Defender
           href: ../security/office-365-security/migrate-to-defender-for-office-365.md
-        - name: Zalecenia dotyczące zabezpieczeń dla kont priorytetowych w Microsoft 365
+        - name: Zalecenia dotyczące zabezpieczeń dla kont priorytetowych na platformie Microsoft 365
           href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
         - name: Usuwanie byłego pracownika i zabezpieczanie danych
           href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Analizy przypadków firmy Contoso
       items:
-        - name: Microsoft 365 rozwiązania dla firmy Contoso Corporation
+        - name: Rozwiązania platformy Microsoft 365 dla firmy Contoso Corporation
           href: contoso-case-study-solutions.md
         - name: Odpowiedź i obsługa covid-19 dla pracy hybrydowej
           href: contoso-remote-onsite-work.md
         - name: Odizolowany zespół dla ściśle tajnego projektu
           href: contoso-team-for-top-secret-project.md
-        - name: Teams migracji głosowej
+        - name: Migracja głosu w aplikacji Teams
           href: /MicrosoftTeams/voice-case-study-overview
         - name: Analiza przypadku zgodności firmy Contoso
           href: ../compliance/communication-compliance-case-study.md
@@ -346,7 +362,7 @@
       items:
         - name: Przewodniki laboratorium testowego dotyczące rozwiązań i scenariuszy
           href: test-lab-guides-overview-solutions.md
-        - name: Zespół z izolacji zabezpieczeń
+        - name: Zespół z izolacją zabezpieczeń
           href: team-security-isolation-dev-test.md
 - name: Wskazówki specyficzne dla branży
   items:
@@ -354,45 +370,45 @@
       items:
         - name: Zabezpieczenia i zgodność z przepisami dla usług finansowych
           href: financial-services-secure-collaboration.md
-    - name: Usługi w zakresie energii i narzędzi narzędziowych
+    - name: Usługi w zakresie energii i użyteczności
       items:
-        - name: Zabezpieczenia i zgodność z przepisami dla usług w zakresie energii i narzędzi narzędziowych
+        - name: Zabezpieczenia i zgodność z przepisami dla usług w zakresie energii i użyteczności
           href: energy-secure-collaboration.md
-    - name: Opieka zdrowotna
+    - name: Służba zdrowia
       items:
         - name: Omówienie
           href: healthcare-overview.md
-        - name: Teams opieki zdrowotnej
+        - name: Aplikacja Teams dla służby zdrowia
           href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
     - name: Education
       items:
-        - name: Teams dla Instytucji Edukacyjnych
+        - name: Teams dla instytucji edukacyjnych
           href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
     - name: Government
       items:
         - name: Teams dla instytucji rządowych
           href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
-        - name: Obsługa pracowników administracji zdalnej przy użyciu Teams
+        - name: Obsługa zdalnych pracowników rządowych za pomocą aplikacji Microsoft Teams
           href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
     - name: Sprzedaż detaliczna
       items:
         - name: Omówienie
           href: retail-overview.md
-        - name: Teams do sprzedaży detalicznej
+        - name: Teams dla sprzedaży detalicznej
           href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
-- name: Enterprise projektowania architektury
+- name: Zasady projektowania architektury przedsiębiorstwa
   items:
     - name: Omówienie
       href: design-principles.md
     - name: Do tożsamości i nie tylko
       href: identity-design-principles.md
-    - name: 'Bezpieczeństwo bez przeszkód, nad które możesz wypłynąć'
+    - name: 'Przeszkody związane z bezpieczeństwem, które można pokonać'
       href: security-design-principles.md
     - name: Tworzenie sieci (do chmury)
       href: networking-design-principles.md
-- name: Microsoft 365 zasobów wdrożeniowych
+- name: Zasoby wdrażania platformy Microsoft 365
   items:
-    - name: Wdrażanie Microsoft 365
+    - name: Wdrażanie platformy Microsoft 365
       href: ../enterprise/microsoft-365-overview.md
-- name: Przewodnik nawigacyjny
+- name: Przewodnik dotyczący nawigacji
   href: ../microsoft-365-docs-navigation-guide.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json

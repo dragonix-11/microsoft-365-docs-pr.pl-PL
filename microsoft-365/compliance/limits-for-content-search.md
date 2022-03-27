@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Dowiedz się więcej o limitach w mocy dla funkcji przeszukiwania zawartości i podstawowych funkcji zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.
-ms.openlocfilehash: fe59136a8b7c3cb0e10698ec5578794ff4d8a853
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ad72dfa1d599a908a56b3b6530433ccb5ed23df4
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032103"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715955"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limity dotyczące wyszukiwania zbierania elektronicznych materiałów dowodowych
 
@@ -52,12 +52,12 @@ W poniższej tabeli wymieniono limity wyszukiwania podczas korzystania z narzęd
 |Maksymalna liczba elementów w skrzynce pocztowej folderu publicznego, które są wyświetlane na stronie podglądu podczas wyświetlania podglądu wyników wyszukiwania zawartości.|100|
 |Maksymalna liczba elementów znalezionych we wszystkich skrzynkach pocztowych folderów publicznych wyświetlanych na stronie podglądu podczas wyświetlania podglądu wyników wyszukiwania zawartości.|200|
 |Maksymalna liczba skrzynek pocztowych folderów publicznych, których podgląd można wyświetlić w wynikach wyszukiwania. Jeśli istnieje więcej niż 500 skrzynek pocztowych folderów publicznych, które zawierają zawartość, która jest odpowiada zapytaniu wyszukiwania, do podglądu będą dostępne tylko 500 najwyższych skrzynek pocztowych folderów publicznych z najbardziej wynikami wyszukiwania.|500|
+|Maksymalny rozmiar elementu, który można wyświetlić na stronie podglądu.|10 000 000 bajtów (około 9,5 MB)|
 |Maksymalna liczba znaków zapytania wyszukiwania (w tym operatorów i warunków) dla wyszukiwania. <p> **Uwaga:** Ten limit szerzy się po rozwinięciu zapytania i zawiera znaki z zapytania słów kluczowych, filtry uprawnień wyszukiwania zastosowane do użytkownika oraz adresy URL wszystkich lokalizacji witryny. Oznacza to, że zapytanie zostanie rozszerzone na wszystkie słowa kluczowe. Jeśli na przykład zapytanie wyszukiwania ma 15 słów kluczowych oraz dodatkowe parametry i warunki, zapytanie zostanie rozwinięte 15 razy, z każdym z innymi parametrami i warunkami w zapytaniu. Tak więc mimo że liczba znaków w zapytaniu wyszukiwania może być poniżej limitu, może to być rozszerzone zapytanie, które może pomóc w przekroczeniu tego limitu.|**Skrzynki pocztowe:** 10 000. <p> **Witryny:** 4000 podczas wyszukiwania we wszystkich witrynach lub 2000 podczas wyszukiwania do 20 witryn. <sup>3</sup>|
-|Maksymalna liczba wariantów zwracanych w przypadku użycia symbolu wieloznacznego prefiksu w celu wyszukania dokładnej frazy w zapytaniu wyszukiwania lub użycia symbolu wieloznacznego prefiksu i operatora NEAR Boolean ( **NEAR** ).|10 000 <sup>4</sup>|
+|Maksymalna liczba wariantów zwracanych w przypadku użycia symbolu wieloznacznego prefiksu do wyszukania dokładnej frazy w zapytaniu wyszukiwania lub użycia symbolu wieloznacznego prefiksu i operatora NEAR Boolean ( **NEAR** ).|10 000 <sup>4</sup>|
 |Minimalna liczba znaków alfa dla symboli wieloznacznych prefiksów. na przykład `time*`, `one*`lub `set*`.|3|
 |Maksymalna liczba skrzynek pocztowych w wyszukiwaniu, w których można usuwać elementy, wykonując akcję "wyszukiwanie i przeczyszczanie" (za pomocą polecenia "Czyszczenie" ( **New-ComplianceSearchAction -Purge** ). Jeśli w wyszukiwaniu, w przypadku wykonywania akcji przeczyszczania, jest więcej źródłowych skrzynek pocztowych niż ten limit, akcja przeczyszczania nie powiedzie się. Aby uzyskać więcej informacji na temat wyszukiwania i przeczyszczania, zobacz [Wyszukiwanie i usuwanie wiadomości e-mail w organizacji](search-for-and-delete-messages-in-your-organization.md).|50,000|
 |Maksymalna liczba lokalizacji w wyszukiwaniu, z których można eksportować elementy. Jeśli eksportowane wyszukiwanie ma więcej lokalizacji niż ten limit, eksport nie powiedzie się. Aby uzyskać więcej informacji, zobacz [Eksportowanie wyników wyszukiwania zawartości](export-search-results.md).|100,000|
-|||
 
 > [!NOTE]
 > <sup>1</sup> Mimo że za pomocą jednego wyszukiwania można przeszukać dowolną liczbę skrzynek pocztowych, można pobrać wyniki wyszukiwania tylko z maksymalnie 100 000 skrzynek pocztowych przy użyciu narzędzia eDiscovery Export Tool w Centrum zgodności platformy Microsoft 365.
@@ -84,7 +84,6 @@ Firma Microsoft zbiera informacje o wydajności podczas wyszukiwania prowadzoneg
 |25,000|10 minut|
 |50,000|20 minut|
 |100,000|25 minut|
-|||
 
 ## <a name="export-limits"></a>Limity eksportu
 
@@ -103,7 +102,6 @@ W poniższej tabeli wymieniono limity podczas eksportowania wyników wyszukiwani
 |Maksymalna liczba skrzynek pocztowych wyników wyszukiwania, które można pobrać za pomocą narzędzia eDiscovery Export Tool|100,000|
 |Maksymalny rozmiar pliku PST, który można wyeksportować <p> **Uwaga:** Jeśli wyniki wyszukiwania ze skrzynki pocztowej użytkownika są większe niż 10 GB, wyniki wyszukiwania dotyczące skrzynki pocztowej zostaną wyeksportowane do dwóch (lub więcej) osobnych plików PST. Jeśli zdecydujesz się wyeksportować wszystkie wyniki wyszukiwania w jednym pliku PST, plik TEN zostanie rozlany do dodatkowych plików PST, jeśli całkowity rozmiar wyników wyszukiwania będzie większy niż 10 GB. Jeśli chcesz zmienić ten rozmiar domyślny, możesz edytować rejestr Windows na komputerze, którego używasz do eksportowania wyników wyszukiwania. Zobacz [Zmienianie rozmiaru plików PST podczas eksportowania wyników wyszukiwania zbierania elektronicznych materiałów dowodowych](change-the-size-of-pst-files-when-exporting-results.md). Wyniki wyszukiwania z określonej skrzynki pocztowej nie zostaną podzielone między wiele plików PST, chyba że zawartość z jednej skrzynki pocztowej będzie większa niż 10 GB. Jeśli wyeksportowano wyniki wyszukiwania w jednym pliku PST, który zawiera wszystkie wiadomości w jednym folderze, a wyniki wyszukiwania są większe niż 10 GB, elementy są nadal uporządkowane w porządku chronologicznym, więc zostaną rozlane do dodatkowych plików PST na podstawie daty wysłania.|10 GB|
 |Oceń, z jaką wyniki wyszukiwania ze skrzynek pocztowych i witryn są przekazywane do lokalizacji adresatów danych Storage Azure dostarczonych przez firmę Microsoft.|Maksymalnie 2 GB na godzinę|
-|||
 
 ## <a name="indexing-limits-for-email-messages"></a>Limity indeksowania wiadomości e-mail
 

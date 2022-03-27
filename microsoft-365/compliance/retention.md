@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania, które ułatwiają zachowanie tego, czego potrzebujesz, i usuwanie tego, co nie jest potrzebne.
-ms.openlocfilehash: ac57859d7f27b22060b88189e79d386791535c9e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a7498685709dfc24feae61453057d51025ee9168
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319395"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716304"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informacje o zasadach przechowywania i etykietach przechowywania
 
@@ -117,6 +117,9 @@ Zasady przechowywania można stosować do następujących lokalizacji:
 - Teams wiadomości z kanału prywatnego
 - Yammer wiadomości od społeczności
 - Yammer wiadomości od użytkowników
+
+> [!NOTE]
+> Teams wiadomości w kanałach obejmują teraz [kanały](/MicrosoftTeams/shared-channels) udostępnione (obecnie w wersji zapoznawczej), a także standardowe kanały.
 
 Bardzo wydajnym zastosowaniem jednej zasady jest stosowanie jednej zasady do wielu lokalizacji lub do określonych lokalizacji bądź użytkowników.
 
