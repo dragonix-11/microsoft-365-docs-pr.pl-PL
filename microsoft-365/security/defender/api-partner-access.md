@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 8a80245f4e94ee6f5f413154cf9b6d2ea318f5e4
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: f0ed889cbc0a07a1f64bc0f717fe07fe877a98b9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010390"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754691"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Tworzenie aplikacji z dostępem partnera do Microsoft 365 Defender API
 
@@ -77,7 +77,7 @@ Poniższe instrukcje z instrukcjami tworzenia wielodostępnych aplikacji Azure A
 
 2. Przejdź do **Azure Active Directory** >  **Rejestracja aplikacjiAppNew** >  **registration**.
 
-   ![Obraz Microsoft Azure nawigacji do rejestracji aplikacji.](../../media/atp-azure-new-app2.png)
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Sekcja rejestracji aplikacji w portalu Microsoft 365 Defender aplikacji" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. W formularzu rejestracji:
 
@@ -87,18 +87,18 @@ Poniższe instrukcje z instrukcjami tworzenia wielodostępnych aplikacji Azure A
 
    Po wypełnieniu formularza wybierz pozycję **Zarejestruj**.
 
-   ![Obraz formularza aplikacji Zarejestruj.](../..//media/atp-api-new-app-partner.png)
+   :::image type="content" source="../..//media/atp-api-new-app-partner.png" alt-text="Sekcje rejestracji aplikacji w portalu Microsoft 365 Defender aplikacji" lightbox="../..//media/atp-api-new-app-partner.png":::
 
 4. Na stronie aplikacji wybierz pozycję Uprawnienia **interfejsu APIUdzyskaj** >  >  **uprawnieniaAPImki** używane przez moją organizację >, wpisz **Microsoft Threat Protection** i wybierz pozycję **Microsoft Threat Protection**. Aplikacja może teraz uzyskać dostęp do Microsoft 365 Defender.
 
    > [!TIP]
    > *Ochrona przed zagrożeniami firmy Microsoft* to wcześniejsza Microsoft 365 Defender i nie będzie wyświetlana na oryginalnej liście. Aby tekst był wyświetlany, musisz rozpocząć pisanie jego nazwy w polu tekstowym.
 
-   ![Obraz wyboru uprawnień interfejsu API.](../../media/apis-in-my-org-tab.PNG)
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="Sekcja Użycie interfejsów API w portalu Microsoft 365 Defender interfejsów API" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
 5. Wybierz **pozycję Uprawnienia aplikacji**. Wybierz odpowiednie uprawnienia dla scenariusza (na przykład **Zdarzenie.Odczyt.Wszystko**), a następnie wybierz **pozycję Dodaj uprawnienia**.
 
-   ![Obraz dostępu do interfejsu API i wyboru interfejsu API.](../../media/request-api-permissions.PNG)
+   :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="Okienko uprawnień aplikacji w portalu Microsoft 365 Defender aplikacji" lightbox="../../media/request-api-permissions.PNG":::
 
     > [!NOTE]
     > Musisz wybrać odpowiednie uprawnienia dla swojego scenariusza. *Czytanie wszystkich zdarzeń to* tylko przykład. Aby ustalić, jakich uprawnień potrzebujesz, zapoznaj się z sekcją **Uprawnienia** w interfejsie API, który chcesz wywołać.
@@ -107,18 +107,18 @@ Poniższe instrukcje z instrukcjami tworzenia wielodostępnych aplikacji Azure A
 
 6. Wybierz pozycję **Utłań zgodę administratora**. Za każdym razem, gdy dodajesz uprawnienie, musisz zaznaczyć pozycję Udawaj **administratorów** , aby je obowiązywało.
 
-    ![Obraz części Udzielanie uprawnień.](../../media/grant-consent.PNG)
+    :::image type="content" source="../../media/grant-consent.PNG" alt-text="Sekcja z udzieleniem zgody administratora w portalu Microsoft 365 Defender sieci Microsoft 365 Defender sieci" lightbox="../../media/grant-consent.PNG":::
 
 7. Aby dodać do aplikacji klucz tajny, wybierz pozycję Certyfikaty **& sekretów**, dodaj opis do tajemnicy, a następnie wybierz pozycję **Dodaj**.
 
     > [!TIP]
     > Po wybraniu **przycisku Dodaj** wybierz **pozycję kopiuj wygenerowaną wartość tajnych**. Po opuszczeniu nie będzie można pobrać wartości tajnej.
 
-    ![Obraz klucza aplikacji Create (Utwórz).](../../media/webapp-create-key2.png)
+      :::image type="content" source="../../media/webapp-create-key2.png" alt-text="Sekcja tajnych dodatku w Microsoft 365 Defender portalu" lightbox="../../media/webapp-create-key2.png":::
 
 8. Zanotuj swój identyfikator aplikacji i identyfikator dzierżawy w bezpiecznym miejscu. Są one wymienione w obszarze **Omówienie** na stronie aplikacji.
 
-   ![Obraz utworzonego identyfikatora aplikacji.](../../media/app-and-tenant-ids.png)
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="Okienko Przegląd w portalu Microsoft 365 Defender wiadomości" lightbox="../../media/app-and-tenant-ids.png":::
 
 9. Dodaj aplikację do dzierżawy użytkownika.
 
@@ -136,7 +136,7 @@ Poniższe instrukcje z instrukcjami tworzenia wielodostępnych aplikacji Azure A
 
    Po kliknięciu linku zgody zaloguj się u administratora globalnego dzierżawy użytkownika i zgotuj aplikację.
 
-   ![Obraz zgody.](../../media/app-consent-partner.png)
+   :::image type="content" source="../../media/app-consent-partner.png" alt-text="Strona aplikacji zgody w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/app-consent-partner.png":::
 
    Musisz również poprosić użytkownika o identyfikator dzierżawy. Identyfikator dzierżawy jest jednym z identyfikatorów używanych do uzyskiwania tokenów dostępu.
 
@@ -266,7 +266,8 @@ Pomyślna odpowiedź będzie wyglądać tak:
 
 Na poniższej ilustracji widać dekodowany token nabyte z aplikacji, ```Incidents.Read.All```za pomocą , ```Incidents.ReadWrite.All```i ```AdvancedHunting.Read.All``` uprawnień:
 
-![Obraz sprawdzania poprawności tokenu.](../../media/webapp-decoded-token.png)
+:::image type="content" source="../../media/webapp-decoded-token.png" alt-text="Okienko Token dekodowany w Microsoft 365 Defender sieci Microsoft 365 Defender" lightbox="../../media/webapp-decoded-token.png":::
+
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Używanie tokenu w celu uzyskania dostępu do Microsoft 365 Defender API
 

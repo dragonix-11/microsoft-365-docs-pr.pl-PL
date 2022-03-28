@@ -1,5 +1,5 @@
 ---
-title: Dołączanie i wydoszczenie urządzeń macOS w rozwiązaniach zgodności przy użyciu usługi JAMF Pro dla klientów programu Microsoft Defender for Endpoint (wersja preview)
+title: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak dołączać i wydojać urządzenia macOS do Microsoft 365 zgodności przy użyciu usługi JAMF Pro dla klientów programu Microsoft Defender dla punktów końcowych (wersja zapoznawcza)
-ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: f260d901f8f02c2c02007b2cc0d49ab9ee57dafd
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526474"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716326"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Dołączanie i wydoszczenie urządzeń macOS w rozwiązaniach zgodności przy użyciu usługi JAMF Pro dla klientów programu Microsoft Defender for Endpoint (wersja preview)
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)
 
 Za pomocą usług JAMF Pro w nowych rozwiązaniach dotyczących zgodności można Microsoft 365 macOS.
 
@@ -32,14 +32,13 @@ Za pomocą usług JAMF Pro w nowych rozwiązaniach dotyczących zgodności możn
 
 - Klienci, którzy wdrożyli aplikację MDE na swoich urządzeniach z systemem macOS.
 - [Microsoft 365 punktu końcowego ochrony przed utratą danych (DLP)](./endpoint-dlp-learn-about.md)
-- [Zarządzanie ryzykiem w niejawnym programie testów](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Upewnij się, że urządzenia [z systemem macOS są przyłączone do usługi Azure AD](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Upewnij się, że [urządzenia z systemem macOS są zarządzane za pośrednictwem usługi JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
-- Instalowanie przeglądarki Edge w wersji 95+ na urządzeniach z systemem macOS 
+- Upewnij się, że urządzenia [z systemem macOS](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) są zarządzane za pośrednictwem usługi JAMF pro i są skojarzone z tożsamością (dołączoną do upN usługi Azure AD) za pośrednictwem usługi JAMF Połączenie lub Intune.
+- Instalowanie przeglądarki Edge w wersji 95+ na urządzeniach z systemem macOS
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Urządzenia w nowych rozwiązaniach Microsoft 365 zgodności przy użyciu usługi JAMF Pro
 

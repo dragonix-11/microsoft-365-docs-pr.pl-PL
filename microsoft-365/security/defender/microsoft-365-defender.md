@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 691db83111ba14e9fed7eed36a819479bda15ff5
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 28f50cbd362104ba910ed5560e184036fc7f8703
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63009585"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754640"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Microsoft 365 Defender to ujednolicony pakiet ochrony przed naruszeniem i po nar
 
 Dzięki zintegrowanemu rozwiązaniu Microsoft 365 Defender pracownicy bezpieczeństwa mogą się ze sobą schować sygnalizuje zagrożenia, które otrzymuje każdy z tych produktów, i określają pełny zakres i wpływ zagrożenia, sposób jego wprowadzeniu do środowiska, jaki ma wpływ na organizację i w jaki sposób wpływa on obecnie na organizację. Microsoft 365 Defender automatycznie podejmuje działania w celu zapobiegania atakom i samodzielnej obsługi skrzynek pocztowych, punktów końcowych i tożsamości użytkowników, których to dotyczy.
 
-<center><h2>Microsoft 365 Defender usług</center></h2>
+<center><h2>Usługi Microsoft 365 Defender</center></h2>
 <table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Program Microsoft Defender dla punktu końcowego</b></center></a></td>
 <td><center><b><a href="/microsoft-365/security/office-365-security/overview"><b>Usługa Microsoft Defender dla Office 365</b></center></a></td>
 <td><center><b><a href="/defender-for-identity/"><b>Microsoft Defender for Identity</b></a></center></td>
@@ -109,7 +109,7 @@ Microsoft 365 Defender między produktami:
 Microsoft 365 Defender licencjonowania muszą być spełnione, aby można było włączyć usługę w portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> Microsoft 365 Defender w witrynie Aby uzyskać więcej informacji, zobacz:
 
 - [Wymagania dotyczące licencjonowania](prerequisites.md#licensing-requirements)
-- [Włączanie Microsoft 365 Defender](m365d-enable.md)
+- [Włączanie usługi Microsoft 365 Defender](m365d-enable.md)
 
 ## <a name="the-microsoft-365-defender-portal"></a>Portal Microsoft 365 Defender użytkowników
 
@@ -124,8 +124,8 @@ To jedno okienko zeszytego zawiera funkcje istniejących portali zabezpieczeń f
 
 Jeśli potrzebujesz informacji o tym, co się zmieniło w Centrum zgodności Office 365 Security & lub portalu Microsoft 365 Defender, zobacz:
 
-- [Defender for Office 365 in Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
-- [Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
+- [Ochrona punktu końcowego w usłudze Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 
 > [!NOTE]
 > Portal Microsoft 365 Defender używa i wymusza dostęp oparty na rolach oraz przenosi każdy model zabezpieczeń do ujednoliconego portalu. Każde obciążenie pracą zbiega się z własnym dostępem opartym na rolach. Role już dostępne w tych produktach zostaną automatycznie zbiegły się w portalu Microsoft 365 Defender produktu. Jednak usługa Microsoft Defender dla aplikacji w chmurze nadal będzie obsługiwać własne role i uprawnienia.
@@ -155,7 +155,7 @@ Microsoft 365 Defender *celu większej* przejrzystości i wspólnych celów, pon
 
 Scentralizowane informacje zabezpieczające to jedno miejsce do badania zdarzeń dotyczących zabezpieczeń w różnych Microsoft 365. Podstawowym przykładem są **zdarzenia w** obszarze **zdarzenia & alerty** dotyczące szybkiego uruchamiania aplikacji Microsoft 365 Defender.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Strona Zdarzenia w programie Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Przykład strony Zdarzenia w programie Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
 
 Wybranie nazwy zdarzenia powoduje wyświetlenie strony, która pokazuje wartość scentralizowania informacji dotyczących zabezpieczeń.
 
@@ -299,6 +299,6 @@ Dzięki tej ścieżce nauki z witryny Microsoft Learn możesz zrozumieć, Micros
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Co nowego w programie Microsoft 365 Defender](whats-new.md)
+- [Co nowego w usłudze Microsoft 365 Defender](whats-new.md)
 - [Usługa Microsoft Defender dla Office 365 w programie Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [Program Microsoft Defender dla punktu końcowego w programie Microsoft 365 Defender](microsoft-365-security-center-mde.md)

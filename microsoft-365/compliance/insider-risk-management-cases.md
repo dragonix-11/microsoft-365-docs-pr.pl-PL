@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ab0eb6c9f7ecfbc51de4857d708f1fa34bd3f515
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 59933705bb113e4ad23b12fe8bf00e8d0ca2e701
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313201"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775813"
 ---
 # <a name="insider-risk-management-cases"></a>Przypadki zarządzania ryzykiem w niejawnym programie testów
 
@@ -150,7 +150,7 @@ Aby dodać notatkę do sprawy:
 
 ### <a name="contributors"></a>Współautorzy
 
-Na **karcie Współautorzy** w takim przypadku analitycy ryzyka i osoby chłoną, że mogą dodawać do sprawy innych recenzentów. Domyślnie wszyscy użytkownicy przypisani do analityków  zarządzających ryzykiem w niejawnym programie testów oraz członkowie grupy użytkowników zarządzających ryzykiem w niejawnym programie testów są wymienini jako współautorzy dla każdej aktywnej i zamkniętej sprawy. Tylko użytkownicy z przypisaną **rolą grupy** chętnych do zarządzania ryzykiem w niejawnym programie testów mają uprawnienia do wyświetlania plików i wiadomości w Eksploratorze zawartości.
+Na **karcie Współautorzy** w takim przypadku analitycy ryzyka i osoby chłoną, że mogą dodawać do sprawy innych recenzentów. Domyślnie wszyscy użytkownicy przypisani do analityków  zarządzania ryzykiem w niejawnym programie  testów i grupy osób zarządzających ryzykiem w niejawnym programie testów są wymienini jako współautorzy dla każdej aktywnej i zamkniętej sprawy. Tylko użytkownicy z przypisaną **rolą grupy** chętnych do zarządzania ryzykiem w niejawnym programie testów mają uprawnienia do wyświetlania plików i wiadomości w Eksploratorze zawartości.
 
 Tymczasowy dostęp do sprawy można przyznać, dodając użytkownika jako współautora. Współautorzy mają pełną kontrolę nad zarządzaniem sprawą w danej sprawie z wyjątkiem:
 

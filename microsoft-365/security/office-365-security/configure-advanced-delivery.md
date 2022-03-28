@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak za pomocą zaawansowanych zasad dostarczania w programie Exchange Online Protection (EOP) identyfikować wiadomości, które nie powinny być filtrowane w określonych obsługiwanych scenariuszach (symulowanie wyłudzania informacji innych firm i wiadomości dostarczane do skrzynek pocztowych operacji zabezpieczeń (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bf564765b9bb896fcfcdac01961d414139199603
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1abb2c1710d1a7bd101801110e3c44f3b8e2ae65
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021314"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775879"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurowanie symulowania wyłudzania informacji innych firm do użytkowników i niefiltrowanych wiadomości do skrzynek pocztowych usługi SecOps
 
@@ -446,7 +446,7 @@ Należy zidentyfikować wpis do zmodyfikowania za pomocą wartości adresu URL (
 W tym przykładzie zmodyfikował datę wygaśnięcia określonej pozycji.
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery -Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
 ```
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
@@ -490,7 +490,7 @@ Należy zidentyfikować wpis do zmodyfikowania za pomocą wartości adresu URL (
 W tym przykładzie zmodyfikował datę wygaśnięcia określonej pozycji.
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery -Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
 ```
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).

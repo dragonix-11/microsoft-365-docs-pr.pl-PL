@@ -1,0 +1,1088 @@
+- name: Zgodność platformy Microsoft 365
+  href: index.yml
+- name: 'Dowiedz się, co nowego w zgodności platformy Microsoft 365'
+  href: whats-new.md
+- name: Wersje próbne zgodności
+  items:
+    - name: Informacje o bezpłatnej wersji próbnej zgodności platformy Microsoft 365
+      href: compliance-easy-trials.md
+    - name: Informacje o bezpłatnej wersji próbnej ocen premium menedżera zgodności Microsoft
+      href: compliance-easy-trials-compliance-manager-assessments.md
+- name: Wprowadzenie
+  items:
+    - name: Szybkie zadania umożliwiające rozpoczęcie pracy ze zgodnością
+      href: compliance-quick-tasks.md
+    - name: Katalog rozwiązań platformy Microsoft 365
+      href: microsoft-365-solution-catalog.md
+    - name: Centrum zgodności platformy Microsoft 365
+      href: microsoft-365-compliance-center.md
+    - name: Uprawnienia w centrum zgodności platformy Microsoft 365
+      href: microsoft-365-compliance-center-permissions.md
+    - name: Przekierowywanie użytkowników do centrum zgodności platformy Microsoft 365
+      href: microsoft-365-compliance-center-redirection.md
+    - name: Użyj bezpłatnej subskrypcji usługi Azure Active Directory
+      href: use-your-free-azure-ad-subscription-in-office-365.md
+    - name: Zaplanuj bezpieczeństwo i zgodność w usłudze Office 365
+      href: plan-for-security-and-compliance.md
+    - name: Rozszerzalność zgodności
+      href: compliance-extensibility.md
+- name: Funkcje obejmujące wiele rozwiązań
+  items:
+    - name: Dołączanie urządzeń z systemami Windows 10 i Windows 11
+      items:
+        - name: Omówienie dołączania urządzeń z systemami Windows 10 i Windows 11 do platformy Microsoft 365
+          href: device-onboarding-overview.md
+        - name: Dołączanie urządzeń z systemami Windows 10 i Windows 11 za pomocą zasad grupy
+          href: device-onboarding-gp.md
+        - name: Dołączanie urządzeń z systemami Windows 10 i Windows 11 przy użyciu narzędzi do zarządzania urządzeniami przenośnymi
+          href: device-onboarding-mdm.md
+        - name: Dołączanie urządzeń z systemem Windows 10 z systemem Windows 11 przy użyciu programu Configuration Manager
+          href: device-onboarding-sccm.md
+        - name: Dołączanie urządzeń z systemami Windows 10 i Windows 11 przy użyciu skryptu lokalnego
+          href: device-onboarding-script.md
+        - name: Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)
+          href: device-onboarding-vdi.md
+    - name: Dołączanie urządzeń z systemem macOS (wersja zapoznawcza)
+      items:
+        - name: Omówienie dołączania urządzeń z systemem macOS do platformy Microsoft 365 (wersja zapoznawcza)
+          href: device-onboarding-macos-overview.md
+        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu usługi Intune (wersja zapoznawcza)
+          href: device-onboarding-offboarding-macos-intune.md
+        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu usługi Intune dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)
+          href: device-onboarding-offboarding-macos-intune-mde.md
+        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro (wersja zapoznawcza)
+          href: device-onboarding-offboarding-macos-jamfpro.md
+        - name: Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)
+          href: device-onboarding-offboarding-macos-jamfpro-mde.md
+- name: Zarządzanie łącznikami dla danych innych firm
+  items:
+    - name: Dowiedz się więcej o łącznikach dla danych innych firm
+      href: archiving-third-party-data.md
+    - name: Łączniki danych firmy Microsoft
+      items:
+        - name: Wiadomość serwisu Bloomberg
+          href: archive-bloomberg-message-data.md
+        - name: Dane opieki zdrowotnej w systemie elektronicznej dokumentacji medycznej Epic (wersja zapoznawcza)
+          href: import-epic-data.md
+        - name: Facebook Business
+          href: archive-facebook-data-with-sample-connector.md
+        - name: Ogólne dane opieki zdrowotnej w systemie elektronicznej dokumentacji medycznej (wersja zapoznawcza)
+          href: import-healthcare-data.md
+        - name: Dane kadrowe
+          href: import-hr-data.md
+        - name: Czat ICE
+          href: archive-icechat-data.md
+        - name: Instant Bloomberg
+          href: archive-instant-bloomberg-data.md
+        - name: LinkedIn
+          href: archive-linkedin-data.md
+        - name: Dane wskaźników fizycznych
+          href: import-physical-badging-data.md
+        - name: Slack eDiscovery (wersja zapoznawcza)
+          href: archive-slack-data-microsoft.md
+        - name: Twitter
+          href: archive-twitter-data-with-sample-connector.md
+    - name: Łączniki danych Veritas
+      items:
+        - name: CellTrust
+          href: archive-celltrust-data.md
+        - name: Cisco Jabber w witrynie MS SQL
+          href: archive-ciscojabberonmssql-data.md
+        - name: Cisco Jabber w systemie Oracle
+          href: archive-ciscojabberonoracle-data.md
+        - name: Cisco Jabber w usłudze PostgreSQL
+          href: archive-ciscojabberonpostgresql-data.md
+        - name: EML
+          href: archive-eml-data.md
+        - name: FX Connect
+          href: archive-fxconnect-data.md
+        - name: Jive
+          href: archive-jive-data.md
+        - name: Baza danych MS SQL
+          href: archive-mssqldatabaseimporter-data.md
+        - name: Dokument bazowy
+          href: archive-pivot-data.md
+        - name: Redtail Speak
+          href: archive-redtailspeak-data.md
+        - name: Reuters Dealing
+          href: archive-reutersdealing-data.md
+        - name: Reuters Eikon
+          href: archive-reuterseikon-data.md
+        - name: Reuters FX
+          href: archive-reutersfx-data.md
+        - name: RingCentral
+          href: archive-ringcentral-data.md
+        - name: Czat w usłudze Salesforce
+          href: archive-salesforcechatter-data.md
+        - name: ServiceNow
+          href: archive-servicenow-data.md
+        - name: Skype dla firm
+          href: archive-skypeforbusiness-data.md
+        - name: Slack eDiscovery
+          href: archive-slack-data.md
+        - name: Symphony
+          href: archive-symphony-data.md
+        - name: Rozdzielany tekstem
+          href: archive-text-delimited-data.md
+        - name: Twitter (wersja zapoznawcza)
+          href: archive-veritas-twitter-data.md
+        - name: Webex Teams
+          href: archive-webexteams-data.md
+        - name: Strony internetowe
+          href: archive-webpagecapture-data.md
+        - name: Miejsce pracy z serwisu Facebook
+          href: archive-workplacefromfacebook-data.md
+        - name: XIP
+          href: archive-xip-data.md
+        - name: XSLT/XML
+          href: archive-xslt-xml-data.md
+        - name: Yieldbroker
+          href: archive-yieldbroker-data.md
+        - name: YouTube
+          href: archive-youtube-data.md
+        - name: Spotkania w usłudze Zoom
+          href: archive-zoommeetings-data.md
+    - name: Łączniki danych TeleMessage
+      items:
+        - name: Archiwizator systemu Android
+          href: archive-android-archiver-data.md
+        - name: Archiwizator sieci AT&T SMS/MMS
+          href: archive-att-network-archiver-data.md
+        - name: Archiwizator sieci Bell SMS/MMS
+          href: archive-bell-network-data.md
+        - name: Archiwizator numerów przedsiębiorstwa
+          href: archive-enterprise-number-data.md
+        - name: Archiwizator sieci O2 Telefonica SMS i Głos
+          href: archive-o2-network-data.md
+        - name: Archiwizator sieci Rogers
+          href: archive-rogers-network-archiver-data.md
+        - name: Archiwizator sygnału
+          href: archive-signal-archiver-data.md
+        - name: Archiwizator usługi Telegram
+          href: archive-telegram-archiver-data.md
+        - name: Sieć TELUS
+          href: archive-telus-network-data.md
+        - name: Archiwizator sieci Verizon SMS/MMS
+          href: archive-verizon-network-data.md
+        - name: Archiwizator usługi WeChat
+          href: archive-wechat-data.md
+        - name: Archiwizator usługi WhatsApp
+          href: archive-whatsapp-data.md
+    - name: Łączniki danych 17a-4
+      items:
+        - name: BlackBerry DataParser
+          href: archive-17a-4-blackberry-data.md
+        - name: Bloomberg DataParser
+          href: archive-17a-4-bloomberg-data.md
+        - name: Cisco Jabber DataParser
+          href: archive-17a-4-cisco-jabber-data.md
+        - name: Cisco Webex DataParser
+          href: archive-17a-4-webex-teams-data.md
+        - name: FactSet DataParser
+          href: archive-17a-4-factset-data.md
+        - name: Fuze DataParser
+          href: archive-17a-4-fuze-data.md
+        - name: FX Connect DataParser
+          href: archive-17a-4-fxconnect-data.md
+        - name: ICE DataParser
+          href: archive-17a-4-ice-im-data.md
+        - name: InvestEdge DataParser
+          href: archive-17a-4-investedge-data.md
+        - name: LivePerson Conversational Cloud DataParser
+          href: archive-17a-4-liveperson-data.md
+        - name: Quip DataParser
+          href: archive-17a-4-quip-data.md
+        - name: Refinitiv Eikon Messenger DataParser
+          href: archive-17a-4-refinitiv-messenger-data.md
+        - name: ServiceNow DataParser
+          href: archive-17a-4-servicenow-data.md
+        - name: Skype dla firm Server DataParser
+          href: archive-17a-4-skype-for-business-server-data.md
+        - name: Slack DataParser
+          href: archive-17a-4-slack-data.md
+        - name: SQL DataParser
+          href: archive-17a-4-sql-database-data.md
+        - name: Symphony DataParser
+          href: archive-17a-4-symphony-data.md
+        - name: Zoom DataParser
+          href: archive-17a-4-zoom-data.md
+    - name: Łączniki CellTrust
+      items:
+        - name: CellTrust SL2
+          href: archive-data-from-celltrustsl2.md
+    - name: Współpraca z partnerem w celu archiwizowania danych innych firm
+      href: work-with-partner-to-archive-third-party-data.md
+    - name: Wyszukaj dane innych firm
+      href: use-content-search-to-search-third-party-data-that-was-imported.md
+- name: Zarządzaj ryzykiem wewnętrznym
+  items:
+    - name: Rozwiązania dotyczące ryzyka wewnętrznego platformy Microsoft 365
+      href: insider-risk-solution-overview.md
+    - name: Zgodność w komunikacji
+      items:
+        - name: Omówienie
+          href: communication-compliance-solution-overview.md
+        - name: Dowiedz się więcej o zgodności w komunikacji
+          href: communication-compliance.md
+        - name: Zaplanuj zgodności w komunikacji
+          href: communication-compliance-plan.md
+        - name: Wprowadzenie do zgodności w komunikacji
+          href: communication-compliance-configure.md
+        - name: Wykrywaj sygnały kanału ze zgodnością w komunikacji
+          href: communication-compliance-channels.md
+        - name: Twórz zasady zgodności w komunikacji i zarządzaj nimi
+          href: communication-compliance-policies.md
+        - name: Badaj i koryguj alerty dotyczące zgodności w komunikacji
+          href: communication-compliance-investigate-remediate.md
+        - name: Dowiedz się więcej o raportach zgodności w komunikacji i inspekcjach
+          href: communication-compliance-reports-audits.md
+        - name: Zgodność w komunikacji z rozwiązaniami SIEM
+          href: communication-compliance-siem.md
+        - name: Analiza przypadku — firma Contoso szybko konfiguruje nieodpowiednie zasady tekstowe
+          href: communication-compliance-case-study.md
+    - name: Zarządzanie ryzykiem wewnętrznym
+      items:
+        - name: Omówienie
+          href: insider-risk-management-solution-overview.md
+        - name: Dowiedz się więcej o zarządzaniu ryzykiem wewnętrznym
+          href: insider-risk-management.md
+        - name: Zaplanuj zarządzanie ryzykiem wewnętrznym
+          href: insider-risk-management-plan.md
+        - name: Wprowadzenie do zarządzania ryzykiem wewnętrznym
+          href: insider-risk-management-configure.md
+        - name: Wprowadzenie do ustawień ryzyka wewnętrznego
+          href: insider-risk-management-settings.md
+        - name: Twórz zasady ryzyka wewnętrznego i zarządzaj nimi
+          href: insider-risk-management-policies.md
+        - name: Badaj działania związane z ryzykiem wewnętrznym
+          href: insider-risk-management-activities.md
+        - name: Podejmij działanie w przypadku zdarzeń związanych z ryzykiem wewnętrznym
+          href: insider-risk-management-cases.md
+        - name: Dowiedz się więcej o wykrywaniu sygnału przeglądarki i konfigurowaniu go
+          href: insider-risk-management-browser-support.md
+        - name: Przeglądaj działania za pomocą dziennika inspekcji ryzyka wewnętrznego
+          href: insider-risk-management-audit-log.md
+        - name: Przeglądaj dane za pomocą eksploratora zawartości ryzyka wewnętrznego
+          href: insider-risk-management-content-explorer.md
+        - name: Zarządzaj przepływem pracy za pomocą pulpitu nawigacyjnego użytkowników
+          href: insider-risk-management-users.md
+        - name: Twórz szablony powiadomień o ryzyku wewnętrznym
+          href: insider-risk-management-notices.md
+    - name: Bariery informacyjne
+      items:
+        - name: Omówienie
+          href: information-barriers-solution-overview.md
+        - name: Dowiedz się więcej o barierach informacyjnych
+          href: information-barriers.md
+        - name: Wprowadzenie do barier informacyjnych
+          href: information-barriers-policies.md
+        - name: Zarządzanie barierami informacyjnymi
+          href: information-barriers-edit-segments-policies.md
+        - name: Atrybuty barier informacyjnych
+          href: information-barriers-attributes.md
+        - name: Bariery informacyjne i usługi platformy Microsoft 365
+          items:
+            - name: Microsoft Teams i bariery informacyjne
+              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: Usługa OneDrive i bariery informacyjne
+              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: Usługa SharePoint i bariery informacyjne
+              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+    - name: Privileged Access Management
+      items:
+        - name: Omówienie
+          href: privileged-access-management-solution-overview.md
+        - name: Dowiedz się więcej o usłudze Privileged Access Management
+          href: privileged-access-management-overview.md
+        - name: Wprowadzenie do usługi Privileged Access Management
+          href: privileged-access-management-configuration.md
+    - name: Ochroń dostęp użytkowników i urządzeń
+      href: protect-access-to-data-and-services.md
+    - name: Skrytka klienta
+      href: customer-lockbox-requests.md
+- name: Zarządzaj usługą Information Protection
+  items:
+    - name: 'Poznaj swoje dane, chroń swoje dane, zapobiegaj utracie danych'
+      href: information-protection.md
+    - name: Wdrażanie rozwiązania MIP
+      href: information-protection-solution.md
+    - name: Domyślne etykiety i zasady usługi Microsoft Information Protection
+      href: mip-easy-trials.md
+    - name: Typy informacji poufnych
+      items:
+        - name: Dowiedz się więcej o typach informacji poufnych
+          items:
+            - name: Dowiedz się więcej o typach informacji poufnych
+              href: sensitive-information-type-learn-about.md
+            - name: Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych
+              href: sit-learn-about-exact-data-match-based-sits.md
+            - name: Tworzenie odcisków cyfrowych dokumentów
+              href: document-fingerprinting.md
+            - name: Dowiedz się więcej o nazwanych jednostkach (wersja zapoznawcza)
+              href: named-entities-learn.md
+        - name: Wprowadzenie do typu informacji poufnych
+          items:
+            - name: Twórz niestandardowe typy informacji poufnych — centrum zgodności
+              href: create-a-custom-sensitive-information-type.md
+            - name: Wprowadzenie do dokładnych typów informacji poufnych opartych na dopasowaniu danych
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: Eksportuj dane źródłowe dla dokładnego typu informacji poufnych opartych na dopasowaniu danych
+              href: sit-get-started-exact-data-match-export-data.md
+            - name: Twórz schemat dla dokładnych typów informacji poufnych opartych na dopasowaniu danych
+              href: sit-get-started-exact-data-match-create-schema.md
+            - name: 'Utwórz skrót i przekaż tabelę źródła informacji poufnych dla dokładnych typów informacji poufnych opartych na dopasowaniu danych '
+              href: sit-get-started-exact-data-match-hash-upload.md
+            - name: Twórz dokładny typ/pakiet reguł informacji poufnych opartych na dopasowaniu danych
+              href: sit-get-started-exact-data-match-create-rule-package.md
+            - name: Testuj dokładny typ informacji poufnych oparty na dopasowaniu danych
+              href: sit-get-started-exact-data-match-test.md
+        - name: Użyj typów informacji poufnych
+          items:
+            - name: Dostosuj wbudowany typ informacji poufnych
+              href: customize-a-built-in-sensitive-information-type.md
+            - name: Modyfikuj schematu dokładnego dopasowania danych w celu użycia konfigurowalnego dopasowania
+              href: sit-modify-edm-schema-configurable-match.md
+            - name: Twórz powiadomienia dla działań dokładnego dopasowania danych
+              href: sit-edm-notifications-activities.md
+            - name: Zarządzaj niestandardowymi typami informacji poufnych w centrum zgodności
+              href: sit-manage-custom-sits-compliance-center.md
+            - name: 'Typy informacji poufnych, moduły sprawdzania poprawności wyrażenia regularnego i dodatkowe kontrole'
+              href: sit-regex-validators-additional-checks.md
+            - name: Twórz niestandardowe typy informacji poufnych — PowerShell
+              href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+            - name: Usuwaj niestandardowe typy informacji poufnych — PowerShell
+              href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+            - name: Modyfikuj niestandardowe typy informacji poufnych — PowerShell
+              href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+            - name: Twórz słownik słów kluczowych
+              href: create-a-keyword-dictionary.md
+            - name: Modyfikuj słownik słów kluczowych
+              href: sit-modify-keyword-dictionary.md
+            - name: Zarządzaj schematem dokładnego dopasowania danych
+              href: sit-use-exact-data-manage-schema.md
+            - name: Odśwież plik tabeli źródła informacji poufnych
+              href: sit-use-exact-data-refresh-data.md
+            - name: Używaj nazwanych jednostek w zasadach ochrony przed utratą danych (wersja zapoznawcza)
+              href: named-entities-use.md
+            - name: Typowe scenariusze użycia dla typów informacji poufnych
+              href: sit-common-scenarios.md
+        - name: Dokumentacja dotycząca typu informacji poufnych
+          items:
+            - name: Definicje jednostek typu informacji poufnych
+              href: sensitive-information-type-entity-definitions.md
+            - name: Funkcje typu informacji poufnych
+              href: sit-functions.md
+            - name: Dokumentacja dotycząca niestandardowych filtrów typów informacji poufnych
+              href: sit-custom-sit-filters.md
+    - name: Klasyfikatory z możliwością szkolenia
+      items:
+        - name: Dowiedz się więcej o klasyfikatorach z możliwością szkolenia
+          href: classifier-learn-about.md
+        - name: Wprowadzenie do klasyfikatorów z możliwością szkolenia
+          href: classifier-get-started-with.md
+        - name: Jak ponownie wytrenować klasyfikator w eksploratorze zawartości
+          href: classifier-how-to-retrain-content-explorer.md
+    - name: Klasyfikacja danych
+      items:
+        - name: Dowiedz się więcej o klasyfikacji danych
+          href: data-classification-overview.md
+        - name: Wprowadzenie do eksploratora zawartości
+          href: data-classification-content-explorer.md
+        - name: Wprowadzenie do eksploratora aktywności
+          href: data-classification-activity-explorer.md
+        - name: Akcje etykietowania zgłoszone w eksploratorze działań
+          href: data-classification-activity-explorer-available-events.md
+    - name: Etykiety wrażliwości
+      items:
+        - name: Dowiedz się więcej o etykietach poufności
+          href: sensitivity-labels.md
+        - name: Dlaczego warto wybrać wbudowane etykietowanie MIP dla aplikacji pakietu Office
+          href: sensitivity-labels-aip.md
+        - name: Wprowadzenie do etykiet poufności
+          href: get-started-with-sensitivity-labels.md
+        - name: Twórz o publikuj etykiety poufności
+          href: create-sensitivity-labels.md
+        - name: Ogranicz dostęp do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania
+          href: encryption-sensitivity-labels.md
+        - name: Automatyczne stosowanie etykiety poufności do zawartości
+          href: apply-sensitivity-label-automatically.md
+        - name: 'Używaj etykiet poufności z zespołami, grupami i witrynami'
+          href: sensitivity-labels-teams-groups-sites.md
+        - name: Włącz etykiety poufności dla plików pakietu Office w programie SharePoint i usłudze OneDrive
+          href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: Włącz współtworzenie dokumentów zaszyfrowanych za pomocą etykiet poufności
+          href: sensitivity-labels-coauthoring.md
+        - name: Ustaw domyślny typu linku udostępniania przy użyciu etykiet poufności
+          href: sensitivity-labels-default-sharing-link.md
+        - name: Zarządzanie etykietami poufności w aplikacjach Office
+          href: sensitivity-labels-office-apps.md
+    - name: Szyfrowanie
+      items:
+        - name: Omówienie szyfrowania
+          href: encryption.md
+        - name: Szyfrowanie podwójnymi kluczami (DKE)
+          href: double-key-encryption.md
+        - name: Szyfrowanie podwójnymi kluczami — często zadawane pytania
+          href: double-key-encryption-overview.md
+        - name: Szyfrowanie usługi Office 365
+          href: office-365-service-encryption.md
+        - name: Klucz klienta
+          items:
+            - name: Klucz klienta na platformie Microsoft 365
+              href: customer-key-overview.md
+            - name: Konfiguruj klucz klienta dla platformy Microsoft 365
+              href: customer-key-set-up.md
+            - name: Zarządzaj kluczem klienta dla platformy Microsoft 365
+              href: customer-key-manage.md
+            - name: Tocz lub obracaj klucz klienta lub klucz dostępności
+              href: customer-key-availability-key-roll.md
+            - name: Dowiedz się więcej o kluczu dostępności dla klucza klienta
+              href: customer-key-availability-key-understand.md
+        - name: Szyfrowanie wiadomości e-mail
+          href: email-encryption.md
+          items:
+            - name: Szyfrowanie wiadomości usługi Office 365 (OME)
+              href: ome.md
+            - name: Ustaw nowe możliwości szyfrowania wiadomości usługi Office 365
+              href: set-up-new-message-encryption-capabilities.md
+            - name: Zdefiniuj reguły przepływu poczty e-mail do szyfrowania wiadomości e-mail w usłudze Office 365
+              href: define-mail-flow-rules-to-encrypt-email.md
+            - name: Dodaj markę organizacji do zaszyfrowanych wiadomości
+              href: add-your-organization-brand-to-encrypted-messages.md
+            - name: Twórz zasady typu informacji poufnych dla organizacji przy użyciu szyfrowania wiadomości usługi Office 365
+              href: ome-sensitive-info-types.md
+            - name: Zarządzaj szyfrowaniem wiadomości usługi Office 365
+              href: manage-office-365-message-encryption.md
+            - name: Zaawansowane szyfrowanie wiadomości usługi Office 365
+              href: ome-advanced-message-encryption.md
+            - name: Ustaw datę wygaśnięcia wiadomości e-mail zaszyfrowanych przy użyciu zaawansowanego szyfrowania wiadomości usługi Office 365
+              href: ome-advanced-expiration.md
+            - name: Cofnij wiadomości e-mail zaszyfrowane przy użyciu zaawansowanego szyfrowania wiadomości usługi Office 365
+              href: revoke-ome-encrypted-mail.md
+            - name: Porównanie wersji OME
+              href: ome-version-comparison.md
+            - name: Szyfrowanie wiadomości usługi Office 365 — często zadawane pytania
+              href: ome-faq.yml
+            - name: Jak usługa Exchange Online zabezpiecza Twoje tajne wpisy poczty e-mail
+              href: exchange-online-secures-email-secrets.md
+            - name: Jak usługa Exchange Online używa protokołu TLS do zabezpieczania połączeń poczty e-mail w usłudze Office 365
+              href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: Jak działa SMTP DANE
+              href: how-smtp-dane-works.md
+            - name: Funkcja BitLocker i rozproszony menedżer kluczy (DKM) na potrzeby szyfrowania
+              href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
+            - name: Starsza wersja OME
+              items:
+                - name: Starsze informacje dotyczące szyfrowania wiadomości usługi Office 365
+                  href: legacy-information-for-message-encryption.md
+                - name: Konfiguruj zarządzanie prawami usługi Azure dla poprzedniej wersji szyfrowania wiadomości usługi Office 365
+                  href: set-up-azure-rms-for-previous-version-message-encryption.md
+        - name: Zarządzanie prawami do informacji usługi SharePoint
+          href: set-up-irm-in-sp-admin-center.md
+        - name: Dokumentacja techniczna
+          href: technical-reference-details-about-encryption.md
+        - name: Łańcuchy szyfrowania platformy Microsoft 365
+          href: encryption-office-365-certificate-chains.md
+        - name: Wycofanie protokołu TLS 1.0 i 1.1 dla usługi Office 365
+          href: tls-1.0-and-1.1-deprecation-for-office-365.md
+        - name: Wycofanie protokołów TLS 1.0 i 1.1 w usłudze Office 365 GCC High i DoD
+          href: tls-1-2-in-office-365-gcc.md
+        - name: Protokół TLS 1.2 w usłudze Office 365
+          href: prepare-tls-1.2-in-office-365.md
+        - name: Zmiany certyfikatu TLS pakietu Office
+          href: encryption-office-365-tls-certificates-changes.md
+    - name: Ochrona przed utratą danych (DLP)
+      items:
+        - name: Dowiedz się więcej o DLP
+          items:
+            - name: Dowiedz się więcej o ochronie przed utratą danych
+              href: dlp-learn-about-dlp.md
+            - name: Dowiedz się więcej o ochronie przed utratą danych punktu końcowego
+              href: endpoint-dlp-learn-about.md
+            - name: Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams (wersja zapoznawcza)
+              href: dlp-teams-default-policy.md
+            - name: Dowiedz się więcej na temat lokalnego skanera ochrony przed utratą danych na platformie Microsoft 365
+              href: dlp-on-premises-scanner-learn.md
+            - name: Dowiedz się więcej o rozszerzeniu zgodności firmy Microsoft
+              href: dlp-chrome-learn-about.md
+            - name: Dowiedz się więcej o pulpicie nawigacyjnym alertów ochrony przed utratą danych
+              href: dlp-alerts-dashboard-learn.md
+        - name: Zaplanuj DLP
+          items:
+            - name: Zaplanuj ochronę przed utratą danych
+              href: dlp-overview-plan-for-dlp.md
+            - name: Zaprojektuj zasady DLP
+              href: dlp-policy-design.md
+            - name: Dokumentacja dotycząca zasad ochrony przed utratą danych
+              href: dlp-policy-reference.md
+        - name: Wprowadzenie do DLP
+          items:
+            - name: Konfigurowanie ustawień ochrony przed utratą danych punktu końcowego
+              href: dlp-configure-endpoint-settings.md
+            - name: Wprowadzenie do domyślnych zasad DLP
+              href: get-started-with-the-default-dlp-policy.md
+            - name: Twórz zasady DLP na podstawie szablonu
+              href: create-a-dlp-policy-from-a-template.md
+            - name: 'Twórz, testuj i dostrajaj zasady DLP'
+              href: create-test-tune-dlp-policy.md
+            - name: Wprowadzenie do lokalnego skanera ochrony przed utratą danych na platformie Microsoft 365
+              href: dlp-on-premises-scanner-get-started.md
+            - name: Wprowadzenie do ochrony przed utratą danych punktu końcowego
+              href: endpoint-dlp-getting-started.md
+            - name: Konfiguruj ustawienia serwera proxy urządzenia i połączenia internetowego dla usługi Information Protection
+              href: device-onboarding-configure-proxy.md
+            - name: Wprowadzenie do rozszerzenia zgodności firmy Microsoft
+              href: dlp-chrome-get-started.md
+            - name: Wprowadzenie do pulpitu nawigacyjnego alertu ochrony przed utratą danych
+              href: dlp-alerts-dashboard-get-started.md
+            - name: Wprowadzenie do zasad ochrony przed utratą danych dla Power BI (wersja zapoznawcza)
+              href: dlp-powerbi-get-started.md
+        - name: Korzystaj z DLP
+          items:
+            - name: DLP i Microsoft Teams
+              href: dlp-microsoft-teams.md
+            - name: Korzystanie z ochrony przed utratą danych punktu końcowego
+              href: endpoint-dlp-using.md
+            - name: Korzystaj ze skanera lokalnego w celu ochrony przed utratą danych na platformie Microsoft 365
+              href: dlp-on-premises-scanner-use.md
+            - name: Korzystaj z powiadomień i porad dotyczących zasad w zasadach DLP
+              href: use-notifications-and-policy-tips.md
+            - name: Co obejmują szablony zasad DLP
+              href: what-the-dlp-policy-templates-include.md
+            - name: Twórz zasady DLP w celu ochrony dokumentów z właściwościami FCI lub innymi
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: Wyświetl raporty DLP
+              href: view-the-dlp-reports.md
+            - name: Twórz zapytania w celu znalezienia poufnych danych przechowywanych w witrynach
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: 'Jak działa funkcja DLP między zabezpieczeniami, centrum zgodności i centrum administracyjnym programu Exchange'
+              href: how-dlp-works-between-admin-centers.md
+            - name: Konfiguruj i wyświetlaj alerty dla zasad DLP (wersja zapoznawcza)
+              href: dlp-configure-view-alerts-policies.md
+            - name: Używaj etykiet poufności jako warunku w zasadach DLP
+              href: dlp-sensitivity-label-as-condition.md
+            - name: Używaj zasad ochrony przed utratą danych dla aplikacji w chmurze firm innych niż Microsoft
+              href: dlp-use-policies-non-microsoft-cloud-apps.md
+            - name: Warunki i wyjątki zasad DLP
+              href: dlp-conditions-and-exceptions.md
+            - name: Migruj zasady ochrony przed utratą danych w usłudze Exchange Online do centrum zgodności
+              href: dlp-migrate-exo-policy-to-unified-dlp.md
+            - name: Dokumentacja dotycząca porad dotyczących zasad ochrony przed utratą danych
+              href: dlp-policy-tips-reference.md
+- name: Zarządzaj usługą Information Governance i rekordami
+  items:
+    - name: Zarządzaj swoimi danymi
+      href: manage-information-governance.md
+    - name: Omówienie zachowywania i usuwania danych
+      items:
+        - name: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
+          href: retention.md
+        - name: Schemat blokowy wyników przechowywania i usuwania
+          href: retention-flowchart.md
+        - name: Przechowywanie i usuwanie obciążeń platformy Microsoft 365
+          items:
+            - name: Program SharePoint i usługa OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Yammer
+              href: retention-policies-yammer.md
+            - name: Exchange
+              href: retention-policies-exchange.md
+        - name: Typowe ustawienia przechowywania i usuwania
+          href: retention-settings.md
+        - name: Limity przechowywania i usuwania
+          href: retention-limits.md
+    - name: Zarządzanie informacjami
+      items:
+        - name: Dowiedz się więcej o zarządzaniu informacjami
+          href: information-governance.md
+        - name: Wprowadzenie do zarządzania informacjami
+          href: get-started-with-information-governance.md
+        - name: Utwórz zasady przechowywania
+          href: create-retention-policies.md
+        - name: Używaj etykiet przechowywania dla wyjątków
+          href: create-retention-labels-information-governance.md
+        - name: Archiwizuj dane skrzynki pocztowej
+          items:
+            - name: Dowiedz się więcej o archiwalnych skrzynkach pocztowych
+              href: archive-mailboxes.md
+            - name: Włącz archiwalne skrzynki pocztowe
+              href: enable-archive-mailboxes.md
+            - name: Dowiedz się więcej na temat automatycznego rozszerzania archiwizacji
+              href: autoexpanding-archiving.md
+            - name: Włącz automatycznie rozszerzane archiwizowanie
+              href: enable-autoexpanding-archiving.md
+            - name: Dostosuj zasady archiwizacji i usuwania dla skrzynek pocztowych (MRM)
+              href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
+        - name: Zarządzaj nieaktywnymi skrzynkami pocztowymi
+          items:
+            - name: Dowiedz się więcej o nieaktywnych skrzynkach pocztowych
+              href: inactive-mailboxes-in-office-365.md
+            - name: Twórz nieaktywne skrzynki pocztowe i zarządzaj nimi
+              href: create-and-manage-inactive-mailboxes.md
+            - name: Zmień czas trwania archiwizacji dla nieaktywnej skrzynki pocztowej
+              href: change-the-hold-duration-for-an-inactive-mailbox.md
+            - name: Odzyskaj nieaktywną skrzynkę pocztową
+              href: recover-an-inactive-mailbox.md
+            - name: Przywróć nieaktywną skrzynkę pocztową
+              href: restore-an-inactive-mailbox.md
+            - name: Usuń nieaktywną skrzynkę pocztową
+              href: delete-an-inactive-mailbox.md
+        - name: Importuj pliki PST
+          items:
+            - name: Dowiedz się więcej o importowaniu plików PST
+              href: importing-pst-files-to-office-365.md
+            - name: "Użyj przekazywania sieciowego w\_celu importu plików PST"
+              href: use-network-upload-to-import-pst-files.md
+            - name: Importuj pliki PST za pomocą wysyłki dysków
+              href: use-drive-shipping-to-import-pst-files-to-office-365.md
+            - name: Filtruj dane podczas importowania plików PST
+              href: filter-data-when-importing-pst-files.md
+            - name: Często zadawane pytania dotyczące importowania plików PST
+              href: faqimporting-pst-files-to-office-365.yml
+    - name: Zarządzanie rekordami
+      items:
+        - name: Omówienie zarządzania rekordami
+          items:
+            - name: Dowiedz się więcej o zarządzaniu rekordami
+              href: records-management.md
+            - name: Zasoby dotyczące wymagań prawnych
+              href: retention-regulatory-requirements.md
+            - name: Deklaruj rekordy przy użyciu etykiet przechowywania
+              href: declare-records.md
+            - name: Używaj przechowywania wersji rekordów dla plików
+              href: record-versioning.md
+        - name: Wprowadzenie do zarządzania rekordami
+          href: get-started-with-records-management.md
+        - name: Twórz etykiety przechowywania i zarządzaj nimi za pomocą planu ewidencji
+          href: file-plan-manager.md
+        - name: Rozpocznij przechowywanie po wystąpieniu zdarzenia
+          href: event-driven-retention.md
+        - name: Publikuj i stosuj etykiety przechowywania w aplikacjach
+          href: create-apply-retention-labels.md
+        - name: Automatycznie stosuj etykiety przechowywania do zawartości
+          href: apply-retention-labels-automatically.md
+        - name: Blokuj zasady w celu ograniczenia zmian
+          href: retention-preservation-lock.md
+        - name: Używaj programu PowerShell do tworzenia i publikowania etykiet przechowywania
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: Zarządzaj dokumentami w programie SharePoint za pomocą etykiet przechowywania
+          href: auto-apply-retention-labels-scenario.md
+        - name: Zarządzaj usuwaniem danych
+          href: disposition.md
+- name: Zarządzaj zbieraniem elektronicznych materiałów dowodowych
+  items:
+    - name: Rozwiązania zbierania elektronicznych materiałów dowodowych na platformie Microsoft 365
+      href: ediscovery.md
+    - name: Wyszukiwanie zawartości
+      items:
+        - name: Omówienie wyszukiwania zawartości
+          href: search-for-content.md
+        - name: Szukaj zawartości
+          href: content-search.md
+          items:
+            - name: Zapytania ze słowami kluczowymi i warunki wyszukiwania
+              href: keyword-queries-and-search-conditions.md
+            - name: Twórz zapytania wyszukiwania za pomocą edytora KQL
+              href: ediscovery-kql-editor.md
+            - name: Wyszukaj dane czatu aplikacji Teams dla użytkowników lokalnych
+              href: search-cloud-based-mailboxes-for-on-premises-users.md
+            - name: Konfiguruj filtrowanie uprawnień wyszukiwania
+              href: permissions-filtering-for-content-search.md
+            - name: Eksportowanie wyników wyszukiwania w ramach zbierania elektronicznych materiałów dowodowych
+              href: preview-ediscovery-search-results.md
+            - name: Wyświetl statystyki wyników wyszukiwania
+              href: view-keyword-statistics-for-content-search.md
+            - name: Eksportuj wyniki wyszukiwania
+              href: export-search-results.md
+            - name: Eksportuj raport wyszukiwania
+              href: export-a-content-search-report.md
+            - name: Wyszukaj i usuń wiadomości e-mail
+              href: search-for-and-delete-messages-in-your-organization.md
+            - name: 'Ponów próbę wyszukiwania, które nie powiodło się'
+              href: retry-failed-content-search.md
+            - name: Zachowaj adresatów UDW na potrzeby wyszukiwania
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+        - name: Dokumentacja dotycząca wyszukiwania zawartości
+          items:
+            - name: Dokumentacja dotycząca funkcji wyszukiwania zawartości
+              href: content-search-reference.md
+            - name: Limity wyszukiwania zbierania elektronicznych materiałów dowodowych
+              href: limits-for-content-search.md
+            - name: Zawartość przechowywana w skrzynkach pocztowych na potrzeby zbierania elektronicznych materiałów dowodowych
+              href: what-is-stored-in-exo-mailbox.md
+            - name: Różnice między szacowanymi i rzeczywistymi wynikami wyszukiwania
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: Częściowo indeksowane elementy
+              href: partially-indexed-items-in-content-search.md
+            - name: Badanie częściowo indeksowanych elementów
+              href: investigating-partially-indexed-items-in-ediscovery.md
+            - name: Deduplikacja w wynikach wyszukiwania
+              href: de-duplication-in-ediscovery-search-results.md
+            - name: Odszyfrowywanie w narzędziach zbierania elektronicznych materiałów dowodowych
+              href: ediscovery-decryption.md
+            - name: Zmień rozmiar plików PST podczas eksportowania wyników wyszukiwania
+              href: change-the-size-of-pst-files-when-exporting-results.md
+            - name: Wyłącz raporty podczas eksportowania wyników wyszukiwania
+              href: disable-reports-when-you-export-content-search-results.md
+            - name: 'Sprawdź, czy zapytanie wyszukiwania nie zawiera błędów'
+              href: check-your-content-search-query-for-errors.md
+            - name: Pobierz wyniki wyszukiwania za pomocą przeglądarki Microsoft Edge
+              href: configure-edge-to-export-search-results.md
+            - name: Wyszukaj działania zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji
+              href: search-for-ediscovery-activities-in-the-audit-log.md
+        - name: Skrypty programu PowerShell do wyszukiwania zawartości
+          items:
+            - name: Używaj wyszukiwania zawartości dla kolekcji docelowych
+              href: use-content-search-for-targeted-collections.md
+            - name: Wyszukaj listę użytkowników w skrzynce pocztowej i na koncie usługi OneDrive
+              href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
+            - name: 'Twórz, zgłaszaj i usuwaj wiele wyszukiwań'
+              href: create-report-on-and-delete-multiple-content-searches.md
+            - name: Klonowanie wyszukiwania
+              href: clone-a-content-search.md
+    - name: Podstawowe zbieranie elektronicznych materiałów dowodowych
+      items:
+        - name: Wprowadzenie do podstawowego zbierania elektronicznych materiałów dowodowych
+          href: get-started-core-ediscovery.md
+        - name: Twórz archiwa zbierania elektronicznych materiałów dowodowych
+          href: create-ediscovery-holds.md
+        - name: Wyszukaj zawartość w sprawie
+          href: search-for-content-in-core-ediscovery.md
+        - name: Eksportuj zawartość ze sprawy
+          href: export-content-in-core-ediscovery.md
+        - name: 'Zamykaj, ponowne otwieraj i usuwaj sprawy'
+          href: close-reopen-delete-core-ediscovery-cases.md
+        - name: Dokumentacja dotycząca podstawowego zbierania elektronicznych materiałów dowodowych
+          items:
+            - name: Limity wyszukiwania zbierania elektronicznych materiałów dowodowych
+              href: limits-for-content-search.md
+            - name: Przypisz uprawnienia zbierania elektronicznych materiałów dowodowych
+              href: assign-ediscovery-permissions.md
+            - name: Zapytania ze słowami kluczowymi i warunki wyszukiwania
+              href: keyword-queries-and-search-conditions.md
+            - name: Twórz zapytania wyszukiwania za pomocą edytora KQL
+              href: ediscovery-kql-editor.md
+            - name: Konfiguruj granice zgodności
+              href: set-up-compliance-boundaries.md
+            - name: Konfiguruj filtrowanie uprawnień wyszukiwania
+              href: permissions-filtering-for-content-search.md
+            - name: Zawartość przechowywana w skrzynkach pocztowych na potrzeby zbierania elektronicznych materiałów dowodowych
+              href: what-is-stored-in-exo-mailbox.md
+            - name: Różnice między szacowanymi i rzeczywistymi wynikami wyszukiwania
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: Częściowo indeksowane elementy
+              href: partially-indexed-items-in-content-search.md
+            - name: Badanie częściowo indeksowanych elementów
+              href: investigating-partially-indexed-items-in-ediscovery.md
+            - name: Eksportowanie wyników wyszukiwania w ramach zbierania elektronicznych materiałów dowodowych
+              href: preview-ediscovery-search-results.md
+            - name: Eksportuj raport wyszukiwania
+              href: export-a-content-search-report.md
+            - name: Dodawaj użytkowników do archiwum zbierania elektronicznych materiałów dowodowych za pomocą skryptu
+              href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+            - name: Twórz raporty archiwów za pomocą skryptu
+              href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: Wyświetl statystyki wyników wyszukiwania
+              href: view-keyword-statistics-for-content-search.md
+            - name: Wyszukaj i przeczyść rozlane dane
+              href: data-spillage-scenariosearch-and-purge.md
+            - name: Zachowaj adresatów UDW na potrzeby wyszukiwania
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: Odszyfrowywanie w narzędziach zbierania elektronicznych materiałów dowodowych
+              href: ediscovery-decryption.md
+            - name: Zbieraj informacje diagnostyczne dotyczące zbierania elektronicznych materiałów dowodowych
+              href: ediscovery-diagnostic-info.md
+            - name: 'Ponów próbę wyszukiwania, które nie powiodło się'
+              href: retry-failed-content-search.md
+            - name: Pobierz wyniki wyszukiwania za pomocą przeglądarki Microsoft Edge
+              href: configure-edge-to-export-search-results.md
+            - name: Wyszukaj działania zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji
+              href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: Advanced eDiscovery
+      items:
+        - name: Omówienie
+          href: overview-ediscovery-20.md
+        - name: Konfiguruj zaawansowane zbieranie elektronicznych materiałów dowodowych
+          href: get-started-with-advanced-ediscovery.md
+        - name: Twórz spraw zaawansowanego zbierania elektronicznych materiałów dowodowych
+          items:
+            - name: Twórz sprawę i zarządzaj nią
+              href: create-and-manage-advanced-ediscoveryv2-case.md
+            - name: Użyj nowego formatu sprawy
+              href: advanced-ediscovery-new-case-format.md
+        - name: Przepływ pracy zaawansowanego zbierania elektronicznych materiałów dowodowych dla zawartości aplikacji Teams
+          href: teams-workflow-in-advanced-ediscovery.md
+        - name: Zarządzaj opiekunami i źródłami danych bez opiekunów
+          href: managing-custodians.md
+          items:
+            - name: Dodaj opiekunów do sprawy
+              href: add-custodians-to-case.md
+            - name: Importuj wielu opiekunów do sprawy
+              href: bulk-add-custodians.md
+            - name: Zarządzaj opiekunami
+              href: manage-new-custodians.md
+            - name: Wyświetl aktywność opiekuna
+              href: view-custodian-activity.md
+            - name: Dodaj źródła danych bez opiekunów do sprawy
+              href: non-custodial-data-sources.md
+        - name: Zarządzaj komunikacją opiekunów
+          href: managing-custodian-communications.md
+          items:
+            - name: Utwórz powiadomienie o archiwum
+              href: create-hold-notification.md
+            - name: Korzystaj z edytora komunikacji
+              href: using-communications-editor.md
+            - name: Zarządzaj powiadomieniami o archiwum
+              href: manage-hold-notification.md
+            - name: Potwierdź powiadomienie o archiwum
+              href: acknowledge-hold-notification.md
+            - name: Zarządzaj funkcjonariuszami zarządzającymi
+              href: advanced-ediscovery-issuing-officers.md
+            - name: Zarządzaj szablonami komunikacji opiekunów
+              href: advanced-ediscovery-communications-library.md
+        - name: Zarządzaj archiwami
+          href: managing-holds.md
+          items:
+            - name: Twórz raporty archiwów za pomocą skryptu
+              href: create-a-report-on-holds-in-ediscovery-cases.md
+        - name: Zarządzaj błędami przetwarzania
+          href: processing-data-for-case.md
+          items:
+            - name: Zaawansowane indeksowanie zawartości opiekuna
+              href: indexing-custodian-data.md
+            - name: Korygowanie błędów podczas przetwarzania zawartości
+              href: error-remediation-when-processing-data-in-advanced-ediscovery.md
+            - name: Korygowanie błędu pojedynczego elementu
+              href: single-item-error-remediation.md
+        - name: Zbieraj zawartości dla sprawy
+          items:
+            - name: Dowiedz się więcej o kolekcjach
+              href: collections-overview.md
+            - name: Tworzenie kolekcji roboczej
+              href: create-draft-collection.md
+            - name: Zatwierdź kolekcję roboczą w zestawie do przeglądu
+              href: commit-draft-collection.md
+            - name: Statystyki i raporty kolekcji
+              href: collection-statistics-reports.md
+            - name: Kompiluj zapytania wyszukiwania dla kolekcji
+              href: building-search-queries.md
+            - name: Twórz zapytania wyszukiwania za pomocą edytora KQL
+              href: ediscovery-kql-editor.md
+            - name: Zapytania ze słowami kluczowymi i warunki wyszukiwania
+              href: keyword-queries-and-search-conditions.md
+            - name: Zbieraj załączniki w chmurze
+              href: advanced-ediscovery-cloud-attachments.md
+        - name: Zarządzaj zestawem do przeglądu
+          href: managing-review-sets.md
+          items:
+            - name: Ładuj dane spoza usługi Office 365 do zestawu do przeglądu
+              href: load-non-Office-365-data-into-a-review-set.md
+            - name: Dodaj dane do innego zestawu do przeglądu
+              href: add-data-to-review-set-from-another-review-set.md
+        - name: Przejrzyj zawartość sprawy
+          items:
+            - name: Wykonuj zapytania i filtruj zawartość w zestawie do przeglądu
+              href: review-set-search.md
+            - name: Taguj dokumenty w zestawie do przeglądu
+              href: tagging-documents.md
+            - name: Wyświetlaj dokumenty w zestawie do przeglądu
+              href: view-documents-in-review-set.md
+            - name: Korzystaj z pulpitu nawigacyjnego zestawu do przeglądu
+              href: advanced-ediscovery-dashboard.md
+        - name: Analizuj zawartość sprawy
+          href: analyzing-data-in-review-set.md
+          items:
+            - name: Wykrywanie niepełnych duplikatów
+              href: near-duplicate-detection-in-advanced-ediscovery.md
+            - name: Wątki wiadomości e-mail
+              href: email-threading-in-advanced-ediscovery.md
+            - name: Motywy
+              href: themes-in-advanced-ediscovery.md
+        - name: Użyj kodowania predykcyjnego (wersja zapoznawcza)
+          items:
+            - name: Szybki start — kodowanie predykcyjne
+              href: predictive-coding-quick-start.md
+            - name: Dowiedz się więcej o kodowaniu predykcyjnym
+              href: predictive-coding-overview.md
+            - name: Twórz model kodowania predykcyjnego
+              href: predictive-coding-create-model.md
+            - name: Trenuj model kodowania predykcyjnego
+              href: predictive-coding-train-model.md
+            - name: Zastosuj filtr wyniku przewidywania
+              href: predictive-coding-apply-prediction-filter.md
+            - name: Dokumentacja dotycząca kodowania predykcyjnego
+              href: predictive-coding-reference.md
+        - name: Eksportuj zawartość sprawy
+          href: exporting-data-ediscover20.md
+          items:
+            - name: Pobieraj dokumenty z zestawu do przeglądu
+              href: download-documents-from-review-set.md
+            - name: Eksportuj dokumenty z zestawu do przeglądu
+              href: export-documents-from-review-set.md
+            - name: Eksportuj dokumenty na konto usługi Azure Storage
+              href: download-export-jobs.md
+        - name: Zarządzaj zadaniami
+          href: managing-jobs-ediscovery20.md
+        - name: Konfiguruj ustawienia sprawy
+          items:
+            - name: Zamknij lub usuń sprawę
+              href: close-or-delete-case.md
+            - name: Dodaj członków do sprawy lub ich usuń
+              href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
+            - name: Konfiguruj ustawienia wyszukiwania i analizy
+              href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
+        - name: Dokumentacja dotycząca zaawansowanego zbierania elektronicznych materiałów dowodowych
+          items:
+            - name: Limity zaawansowanego zbierania elektronicznych materiałów dowodowych
+              href: limits-ediscovery20.md
+            - name: Obsługiwane typy plików
+              href: supported-filetypes-ediscovery20.md
+            - name: Pola metadanych dokumentu
+              href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Konfiguruj wersje historyczne
+              href: advanced-ediscovery-historical-versions.md
+            - name: Konfiguruj wykrywanie tajemnicy adwokackiej
+              href: attorney-privilege-detection.md
+            - name: Przypisz uprawnienia zbierania elektronicznych materiałów dowodowych
+              href: assign-ediscovery-permissions.md
+            - name: Zapytania ze słowami kluczowymi i warunki wyszukiwania
+              href: keyword-queries-and-search-conditions.md
+            - name: Konfiguruj granice zgodności
+              href: set-up-compliance-boundaries.md
+            - name: Konfiguruj filtrowanie uprawnień wyszukiwania
+              href: permissions-filtering-for-content-search.md
+            - name: Zawartość przechowywana w skrzynkach pocztowych na potrzeby zbierania elektronicznych materiałów dowodowych
+              href: what-is-stored-in-exo-mailbox.md
+            - name: Odszyfrowywanie w narzędziach zbierania elektronicznych materiałów dowodowych
+              href: ediscovery-decryption.md
+            - name: Zestawy do przeglądu konwersacji
+              href: conversation-review-sets.md
+            - name: Obsługa języka CJK
+              href: ediscovery-cjk-support.md
+            - name: Zbieraj informacje diagnostyczne dotyczące zbierania elektronicznych materiałów dowodowych
+              href: ediscovery-diagnostic-info.md
+            - name: Wyszukaj działania zbierania elektronicznych materiałów dowodowych w dzienniku inspekcji
+              href: search-for-ediscovery-activities-in-the-audit-log.md
+            - name: Rozwiązuj problemy z narzędziem AzCopy
+              href: troubleshooting-azcopy.md
+    - name: Wycofanie starszych narzędzi zbierania elektronicznych materiałów dowodowych
+      href: legacy-ediscovery-retirement.md
+- name: Zarządzaj archiwami
+  items:
+    - name: Jak zidentyfikować typ archiwum umieszczonego w skrzynce pocztowej
+      href: identify-a-hold-on-an-exchange-online-mailbox.md
+    - name: 'Usuń elementy w folderze Elementy do odzyskania, w archiwum skrzynek pocztowych'
+      href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+    - name: Zwiększ limit przydziału elementów odzyskiwalnych dla archiwum skrzynek pocztowych
+      href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Twórz archiwizację w związku z postępowaniem sądowym
+      href: create-a-litigation-hold.md
+    - name: Zachowaj adresatów UDW i rozwiń grupę dystrybucyjną
+      href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+- name: Zarządzaj zasadami inspekcji i alertów
+  items:
+    - name: Rozwiązania inspekcji platformy Microsoft 365
+      href: auditing-solutions-overview.md
+    - name: Inspekcja podstawowa
+      items:
+        - name: Konfiguruj inspekcję podstawową
+          href: set-up-basic-audit.md
+        - name: Przeszukaj dziennik inspekcji
+          href: search-the-audit-log-in-security-and-compliance.md
+        - name: 'Eksportuj, konfiguruj i wyświetlaj rekordy dziennika inspekcji'
+          href: export-view-audit-log-records.md
+        - name: Przeszukaj dziennik inspekcji za pomocą skryptu programu PowerShell
+          href: audit-log-search-script.md
+        - name: Szczegółowe właściwości w dzienniku inspekcji
+          href: detailed-properties-in-the-office-365-audit-log.md
+        - name: Włącz lub wyłącz inspekcję
+          href: turn-audit-log-search-on-or-off.md
+        - name: Badaj typowe problemy przy użyciu dziennika inspekcji
+          href: auditing-troubleshooting-scenarios.md
+        - name: Używaj inspekcji udostępniania w dzienniku inspekcji
+          href: use-sharing-auditing.md
+        - name: Interfejs API działań związanych z zarządzaniem w usłudze Office 365
+          items:
+            - name: Dokumentacja dotycząca interfejsu API działań związanych z zarządzaniem w usłudze Office 365
+              href: /office/office-365-management-api/office-365-management-activity-api-reference
+            - name: Schemat interfejsu API działań związanych z zarządzaniem w usłudze Office 365
+              href: /office/office-365-management-api/office-365-management-activity-api-schema
+            - name: Interfejs API działań zarządzania usługi Office 365 — często zadawane pytania i rozwiązywanie problemów
+              href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
+    - name: Inspekcja zaawansowana
+      items:
+        - name: Omówienie inspekcji zaawansowanej
+          href: advanced-audit.md
+        - name: Konfiguruj inspekcję zaawansowaną
+          href: set-up-advanced-audit.md
+        - name: Zarządzanie zasadami przechowywania dzienników inspekcji
+          href: audit-log-retention-policies.md
+        - name: Używaj inspekcji zaawansowanej do badania kont z naruszonymi zabezpieczeniami
+          href: mailitemsaccessed-forensics-investigations.md
+    - name: Inspekcja skrzynki pocztowej
+      href: enable-mailbox-auditing.md
+    - name: Zasady alertów
+      href: alert-policies.md
+- name: Zarządzaj zagrożeniami dotyczącymi zgodności
+  items:
+    - name: Menedżer zgodności
+      items:
+        - name: Dowiedz się więcej o Menedżerze zgodności
+          href: compliance-manager.md
+        - name: Co nowego w Menedżerze zgodności
+          href: compliance-manager-whats-new.md
+        - name: Menedżer zgodności — szybki start
+          href: compliance-manager-quickstart.md
+        - name: Wprowadzenie do Menedżera zgodności
+          href: compliance-manager-setup.md
+        - name: Kompiluj oceny i zarządzaj nimi
+          href: compliance-manager-assessments.md
+        - name: Dowiedz się więcej o szablonach ocen
+          href: compliance-manager-templates.md
+        - name: Twórz szablony ocen
+          href: compliance-manager-templates-create.md
+        - name: Rozszerzaj szablony ocen
+          href: compliance-manager-templates-extend.md
+        - name: Modyfikuj szablony ocen
+          href: compliance-manager-templates-modify.md
+        - name: Formatuj dane szablonu w programie Excel
+          href: compliance-manager-templates-format-excel.md
+        - name: Lista szablonów Menedżera zgodności
+          href: compliance-manager-templates-list.md
+        - name: Praca z działaniami korygującymi
+          href: compliance-manager-improvement-actions.md
+        - name: Twórz zasady alertów i zarządzaj nimi
+          href: compliance-manager-alert-policies.md
+        - name: 'Dowiedz się, jak jest obliczany wskaźnik zgodności'
+          href: compliance-score-calculation.md
+        - name: Narzędzie Analizator konfiguracji zgodności
+          href: compliance-manager-mcca.md
+        - name: Często zadawane pytania
+          href: compliance-manager-faq.yml
+    - name: Usługa Microsoft Service Trust Portal
+      href: get-started-with-service-trust-portal.md
+    - name: Wskazówki specyficzne dla branży
+      items:
+        - name: Bezpieczeństwo i zgodność usług finansowych
+          href: ../solutions/financial-services-secure-collaboration.md
+        - name: Bezpieczeństwo i zgodność usług energetycznych
+          href: ../solutions/energy-secure-collaboration.md
+- name: Możliwości zgodności hybrydowej
+  items:
+    - name: Szyfrowanie poczty usługi Exchange Online za pomocą usług AD RMS
+      href: information-rights-management-in-exchange-online.md
+      items:
+        - name: Konfiguruj usługę IRM do korzystania z lokalnego serwera usług AD RMS
+          href: configure-irm-to-use-an-on-premises-ad-rms-server.md
+- name: Microsoft 365 Enterprise
+  href: ../enterprise/index.yml
+- name: Centrum zabezpieczeń platformy Microsoft 365
+  href: ../security/index.yml
+- name: Aplikacje usługi Microsoft 365 dla firm
+  href: /office365/admin/admin-home
+- name: Microsoft Priva
+  href: /privacy/priva/
+- name: Rozwiązywanie problemów
+  href: /office365/troubleshoot/microsoft-365-compliance-welcome

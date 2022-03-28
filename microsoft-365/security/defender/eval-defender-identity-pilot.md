@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3801fdb4a7aeda5e75c4e36f622f7e76604d96a6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bba910b46c4b4769e67ae00af0381e129139dfe5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318735"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754562"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Pilotażowa usługa Microsoft Defender dla tożsamości
 
@@ -38,7 +38,7 @@ Ten artykuł dotyczy [kroku 3 z 3](eval-defender-identity-overview.md) w procesi
 
 Aby skonfigurować pilotaż usługi Microsoft Defender dla tożsamości, należy wykonać poniższe czynności. Zalecenia nie obejmują konfigurowania grupy pilotażowej. Najlepszym rozwiązaniem jest zainstalowanie czujnika na wszystkich serwerach z systemem usług Usługi domenowe w usłudze Active Directory (AD DS) i usług federowanych Active Directory (AD FS).
 
-![Procedura dodawania usługi Microsoft Defender dla tożsamości do środowiska oceny usługi Defender.](../../media/defender/m365-defender-identity-pilot-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Procedura pilotażowa programu Microsoft Defender dla tożsamości w środowisku oceny usługi Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
 
 W poniższej tabeli opisano kroki na ilustracji.
 

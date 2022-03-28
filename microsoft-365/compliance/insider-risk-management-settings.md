@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: f80ab9fcb0a3e057a20c22ff05c3a960cdf7eab4
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 4b14f2def771294bdfa05109d6060242736f26d5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512938"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754717"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Wprowadzenie do ustawień zarządzania ryzykiem w niejawnym programie testów
 
@@ -576,11 +576,15 @@ Wykonaj następujące czynności, aby wyłączyć analizę ryzyka niejawnego pro
 
 ## <a name="admin-notifications"></a>Powiadomienia administratora
 
-Powiadomienia administratora automatycznie wysyłają powiadomienia e-mail do użytkowników uwzględnionych w grupach ról Zarządzanie ryzykiem w niejawnym  programie testów *,* Analitycy zarządzających ryzykiem w niejawnym programie testów oraz Grupy ról zarządzania ryzykiem w niejawnym programie testów po wygenerowaniu pierwszego alertu dla nowych zasad. Ta funkcja jest domyślnie włączona dla wszystkich organizacji, a zasady są sprawdzane co 24 godziny dla alertów przy pierwszym czasie. Powiadomienia nie są wysyłane w przypadku alertów, które występują w zasadach po pierwszym alercie.
+Powiadomienia administratora automatycznie wysyłają wiadomości e-mail z powiadomieniem do wybranych grup ról zarządzania ryzykiem w niejawnym programie testów. Możesz włączyć powiadomienia i przypisać grupy ról, które będą otrzymywać powiadomienia dla następujących scenariuszy:
 
-Jeśli w organizacji włączono analizę ryzyka niejawnego programu testów, członkowie grupy  ról Administrator zarządzania ryzykiem w ramach niejawnego programu testów automatycznie otrzymają powiadomienie e-mail o początkowych analizach dotyczących wycieków danych, kradzieży i ekseriwacji.
+- Wyślij powiadomienie e-mail po wygenerowaniu pierwszego alertu dla nowych zasad. W przypadku alertów i powiadomień o nowych terminach zasady są sprawdzane co 24 godziny, a powiadomienia dotyczące kolejnych alertów dotyczących zasad nie są wysyłane.
+- Wysyłaj codzienną wiadomość e-mail, gdy są generowane nowe alerty o wysokim poziomie ważności. Zasady są sprawdzane dla alertów o wysokim poziomie ważności co 24 godziny.
+- Wysyłanie cotygodniowych zasad podsumowania wiadomości e-mail, które mają nierozpoznane ostrzeżenia
 
-Jeśli wolisz wyłączyć powiadomienia administratora, wykonaj następujące czynności:
+Jeśli włączono analizę ryzyka w ramach niejawnego programu testów dla organizacji,  członkowie grupy ról Administrator zarządzania ryzykiem w ramach niejawnego programu testów automatycznie otrzymają powiadomienie e-mail o początkowych informacjach analitycznych dotyczących wycieków danych, kradzieży i działań kradzieży.
+
+Jeśli wolisz wyłączyć powiadomienia administratora i analizy, wykonaj następujące czynności:
 
 1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com) do strony Zarządzanie ryzykiem w niejawnym **programie** >  **testówU** ds. ryzyka.
 2. Wybierz stronę **Powiadomienia administratora** .
@@ -590,5 +594,3 @@ Jeśli wolisz wyłączyć powiadomienia administratora, wykonaj następujące cz
     - **Wysyłanie powiadomienia e-mail, gdy analiza jest wyłączona**
 
 4. Wybierz **pozycję Zapisz,** aby skonfigurować i zakończyć działanie.
-
-![Ustawienia powiadomień administratora zarządzania ryzykiem w niejawnym programie testów.](../media/insider-risk-admin-notifications.png)

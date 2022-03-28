@@ -20,12 +20,12 @@ ms.custom:
 description: W tym artykule dowiesz się, jak za pomocą portalu delist usunąć siebie z listy zablokowanych Microsoft 365 nadawców. Jest to najlepsza odpowiedź na błędy odrzucone przez program Access 5.7.511.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 36187288b2a7acf1a852e6c203cbb84035ba5d7a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 58ddb2913ce7ecd047b1d5acb360c8f4c9ff5074
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320245"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775791"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Korzystanie z portalu delist w celu usunięcia siebie z listy zablokowanych nadawców i adresu 5.7.511 Błędy odrzuconych dostępu
 
@@ -55,7 +55,6 @@ Istnieją dobre powody, dla których nadawcy mogą się pojawiać na liście zab
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
 
-
 ## <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list-after-errors-like-57511-access-denied"></a>Aby użyć portalu delist w celu usunięcia siebie z listy zablokowanych nadawców (po błędach, takich jak 5.7.511 Odmowa dostępu)
 
 1. W przeglądarce internetowej przejdź do .<https://sender.office.com>
@@ -82,13 +81,13 @@ Istnieją dobre powody, dla których nadawcy mogą się pojawiać na liście zab
 Aby [zapobiec blokowaniu](create-safe-sender-lists-in-office-365.md) adresów IP, zobacz Tworzenie list bezpiecznych nadawców w u usługi EOP i Ochrona [przed spamem](outbound-spam-controls.md) ruchu wychodzącego w u usługi EOP.
 
 ### <a name="how-do-fix-error-code-57511"></a>Jak naprawić kod błędu 5.7.511
- 
+
 W przypadku problemu z dostarczaniem wysłanej wiadomości e-mail usługa Microsoft 365 lub Office 365 e-mail z powiadomieniem. Odbierana wiadomość e-mail to powiadomienie o stanie dostarczenia, nazywane także wiadomością dsn lub wiadomością podskokową. Standardowe powiadomienie tego typu jest nazywane raportem o niedostarczeniu, który informuje, że wiadomość nie została dostarczona. W niektórych sytuacjach firma Microsoft musi przeprowadzić dodatkowe badania nad ruchem z Twojego adresu IP, a jeśli otrzymujesz kod błędu NDR 5.7.511, nie będzie można korzystać z portalu delist.
- 
->   550 5.7.511 Odmowa dostępu, zablokowany nadawca[xxx.xxx.xxx.xxx]. Aby zażądać usunięcia z tej listy, przekaż tę wiadomość do delist@messaging.microsoft.com. Aby uzyskać więcej informacji, przejdź do https://go.microsoft.com/fwlink/?LinkId=526653. 
- 
-W wiadomości e-mail, aby zażądać usunięcia z tej listy, podaj pełny kod IDR i adres IP. Firma Microsoft skontaktuje się z Tobą w ciągu 48 godzin, przy użyciu następnych kroków. 
+
+> 550 5.7.511 Odmowa dostępu, zablokowany nadawca[xxx.xxx.xxx.xxx]. Aby zażądać usunięcia z tej listy, przekaż tę wiadomość do delist@messaging.microsoft.com. Aby uzyskać więcej informacji, przejdź do <https://go.microsoft.com/fwlink/?LinkId=526653>.
+
+W wiadomości e-mail, aby zażądać usunięcia z tej listy, podaj pełny kod IDR i adres IP. Firma Microsoft skontaktuje się z Tobą w ciągu 48 godzin, przy użyciu następnych kroków.
 
 ## <a name="more-information"></a>Więcej informacji
-  
-Tutaj można znaleźć formularz delistowania dla **Outlook.com, z** usługi dla klientów [konsumenckich](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). W pierwszej kolejności zapoznaj się z często [zadawanymi](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) pytaniami, aby *zapoznać się z kierunkiem* przesyłania.
+
+Tutaj można znaleźć formularz delistowania dla **Outlook.com, z** usługi dla klientów [konsumenckich](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). W pierwszej kolejności zapoznaj się z często [zadawanymi](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) pytaniami, aby _zapoznać się z kierunkiem_ przesyłania.

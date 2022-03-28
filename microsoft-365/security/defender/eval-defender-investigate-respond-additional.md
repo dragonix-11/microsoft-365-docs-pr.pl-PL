@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0ad2fc9a1566e7816b3ff806b7d07ac29347cc89
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324091"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754779"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Wypróbuj Microsoft 365 Defender reagowania na zdarzenia w środowisku pilotażowym
 
@@ -44,14 +44,15 @@ Po wykonaniu reakcji dotyczącej zdarzenia [w przypadku symulowanego](eval-defen
 | [Określanie priorytetu zdarzeń](#prioritize-incidents) | Użyj filtrowania i sortowania kolejki zdarzeń, aby określić, które zdarzenia należy w następnej kolejności rozwiązać. |
 | [Zarządzanie zdarzeniami](#manage-incidents) | Modyfikowanie właściwości zdarzenia w celu zapewnienia poprawnego przypisywania, dodawania znaczników i komentarzy oraz rozwiązywania problemów. |
 | [Zautomatyzowane badanie i odpowiedź](#examine-automated-investigation-and-response-with-the-action-center) | Użyj funkcji automatycznego badania i odpowiedzi (AIR), aby ułatwić zespołowi ds. bezpieczeństwa wydajniejsze i skuteczniejsze reagowanie na zagrożenia. Centrum akcji to "pojedyncze okienko zeszyt" dla zadań alertów i zdarzeń, takich jak zatwierdzanie oczekujących działań naprawczych. |
-| [Zaawansowane łowy](#use-advanced-hunting) | Za pomocą zapytań możesz proaktywnie przeprowadzać inspekcje zdarzeń w sieci oraz znajdować wskaźniki zagrożeń i jednostki. Korzystasz również z zaawansowanego wyszukiwania podczas badania i rozwiązywania problemów. |
+| [Zaawansowane wyszukiwanie zagrożeń](#use-advanced-hunting) | Za pomocą zapytań możesz proaktywnie przeprowadzać inspekcje zdarzeń w sieci oraz znajdować wskaźniki zagrożeń i jednostki. Korzystasz również z zaawansowanego wyszukiwania podczas badania i rozwiązywania problemów. |
 
 
 ## <a name="prioritize-incidents"></a>Określanie priorytetów zdarzeń
 
 Do kolejki zdarzeń możesz uzyskać dostęp z menu **Zdarzenia & alerty > zdarzenia** na pasku Szybkie uruchamianie portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender zdarzenia.</a> Oto przykład.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Przykład kolejki zdarzeń.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Sekcja Alerty o & zdarzeniach w portalu Microsoft 365 Defender w programie" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+
 
 Sekcja **Najnowsze zdarzenia i** alerty zawiera wykres liczby otrzymywanych alertów i zdarzeń utworzonych w ciągu ostatnich 24 godzin.
 
@@ -63,7 +64,7 @@ Aby zbadać listę zdarzeń i ustalić priorytet ich ważności dla zadania i ba
 
 W domyślnej kolejce zdarzeń wybierz pozycję **Filtry** , aby wyświetlić okienko **Filtry** , w którym możesz określić określony zestaw zdarzeń. Oto przykład.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Przykład okienka filtrów dla kolejki zdarzeń.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Okienko Filtry w sekcji Alerty o & zdarzeniach w portalu Microsoft 365 Defender wiadomości" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 Aby uzyskać więcej informacji, zobacz [Określanie priorytetów zdarzeń](incident-queue.md).
 
@@ -71,7 +72,7 @@ Aby uzyskać więcej informacji, zobacz [Określanie priorytetów zdarzeń](inci
 
 Możesz zarządzać zdarzeniami z **okienka Zarządzanie zdarzeniami** w przypadku zdarzenia. Oto przykład.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Przykład okienka Zarządzanie zdarzeniem w przypadku zdarzenia.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Okienko Zarządzanie zdarzeniami w sekcji Alerty o & zdarzeniach w portalu Microsoft 365 Defender zdarzenia" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 To okienko można wyświetlić za pomocą **linku Zarządzaj incydentem** na stronie:
 
@@ -112,11 +113,12 @@ W zależności od tego, jak są skonfigurowane funkcje automatycznego badania i 
 
 Oto przykład.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Ujednolicone Centrum akcji w Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Ujednolicone Centrum akcji w portalu Microsoft 365 Defender akcji" lightbox="../../media/m3d-action-center-unified.png":::
 
 W Centrum akcji możesz wybrać oczekujące akcje, a następnie zatwierdzić je lub odrzucić w okienku wysuwanych. Oto przykład.
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Zatwierdzanie lub odrzucanie akcji.":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Okienko z opcjami zatwierdzania lub odrzucania akcji w portalu Microsoft 365 Defender zadań" lightbox="../../media/air-actioncenter-itemselected.png":::
+
 
 Zatwierdź (lub odrzuć) oczekujące akcje jak najszybciej, aby zautomatyzowane badania były w stanie wykonać w terminie.
 
@@ -187,7 +189,7 @@ Do tej symulacji jest wymagana pojedyncza wewnętrzna skrzynka pocztowa i urząd
       > [!NOTE]
       > Zobacz następny krok, aby uzyskać informacje na temat opcji filtrowania w celu ograniczenia możliwości zwracania danych.
 
-      ![Przykład zaawansowanych wyników wyszukiwania.](../../media/advanced-hunting-incident-response-try-1.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-1.png" alt-text="Strona zaawansowanego wyszukiwania w Microsoft 365 Defender wyszukiwania" lightbox="../../media/advanced-hunting-incident-response-try-1.png":::
 
         > [!NOTE]
         > Funkcja wyszukiwania zaawansowanego wyświetla wyniki zapytania jako dane tabelarowe. Możesz również wyświetlić dane w innych typach formatów, takich jak wykresy.
@@ -201,7 +203,7 @@ Do tej symulacji jest wymagana pojedyncza wewnętrzna skrzynka pocztowa i urząd
 
    1. Kliknij wiersze wynikowe z zapytania, aby sprawdzić rekord.
 
-      ![Przykład inspekcji panelu bocznego rekordu, który otwiera się po wybraniu zaawansowanego wyniku wyszukiwania.](../../media/advanced-hunting-incident-response-try-2.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-2.png" alt-text="Sekcja Inspekcja rekordu na stronie zaawansowanego wyszukiwania w portalu Microsoft 365 Defender zaawansowanego" lightbox="../../media/advanced-hunting-incident-response-try-2.png":::
 
 4. Po sprawdzeniu, że wiadomości e-mail są już dostępne, dodaj filtr załączników. Skoncentruj się na wszystkich wiadomościach e-mail z załącznikami w środowisku. W przypadku tej symulacyjnej pracy należy się skupić na przychodzących wiadomościach e-mail, a nie na tych, które są wysyłane ze środowiska. Usuń wszelkie filtry dodane w celu zlokalizowania wiadomości i dodaj "| gdzie **AttachmentCount > 0** i **EmailDirection** == **"Inbound""**
 
@@ -259,40 +261,41 @@ Wykrywanie niestandardowe będzie uruchamiać zapytanie zgodnie z ustawioną cz�
 
 1. Na stronie zapytania usuń wiersze 7 i 8, które zostały dodane w kroku 7 instrukcji go wyszukiwania, i kliknij pozycję **Utwórz regułę wykrywania**.
 
-   ![Przykład tego, gdzie możesz kliknąć pozycję create detection rule (utwórz regułę wykrywania) na stronie zaawansowanego wyszukiwania.](../../media/advanced-hunting-incident-response-try-3.png)
+   :::image type="content" source="../../media/advanced-hunting-incident-response-try-3.png" alt-text="Sekcja edytowania zapytania na stronie zaawansowanego wyszukiwania w portalu Microsoft 365 Defender zaawansowanego" lightbox="../../media/advanced-hunting-incident-response-try-3.png":::
 
    > [!NOTE]
    > Jeśli klikniesz **pozycję Utwórz regułę wykrywania** i w zapytaniu będą wystąpiły błędy składni, reguła wykrywania nie zostanie zapisana. Sprawdź dwukrotnie zapytanie, aby upewnić się, że nie wystąpiły żadne błędy.
 
 2. Wypełnij wymagane pola informacjami, które umożliwią zespołowi zabezpieczeń zrozumienie alertu, przyczyny jego wygenerowania i czynności, które mogą być podejmowane przez zespół zabezpieczeń.
 
-   ![Przykład strony tworzenia reguły wykrywania, na której można zdefiniować szczegóły alertu.](../../media/mtp/fig23.png)
+   :::image type="content" source="../../media/mtp/fig23.png" alt-text="Strona Szczegóły alertu w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mtp/fig23.png":::
 
    Zadbaj o czytelność pól, aby ułatwić następnej użytkownikowi podejmowanie decyzji dotyczącej alertu z regułą wykrywania.
 
 3. Wybierz encje, których dotyczy ten alert. W tym przypadku wybierz pozycję **Urządzenie i skrzynka** **pocztowa**.
 
-   ![Przykład strony tworzenie reguły wykrywania, na której można wybrać parametry jednostek, których dotyczy wpływ.](../../media/mtp/fig24.png)
+   :::image type="content" source="../../media/mtp/fig24.png" alt-text="Strona szczegółów jednostek wpływanych na w Microsoft 365 Defender sieci Web" lightbox="../../media/mtp/fig24.png":::
 
 4. Określ, jakie działania należy podjąć w przypadku uruchomienia alertu. W takim przypadku uruchom skanowanie antywirusowe, chociaż można podjąć inne działania.
 
-   ![Przykład strony tworzenia reguły wykrywania, na której można uruchamiać skanowanie antywirusowe po uruchomieniu alertu w celu ochrony przed zagrożeniami.](../../media/mtp/fig25.png)
+   :::image type="content" source="../../media/mtp/fig25.png" alt-text="Strona Akcje w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mtp/fig25.png":::
 
 5. Wybierz zakres reguły alertu. Ponieważ to zapytanie obejmuje urządzenia, grupy urządzeń są istotne w tym niestandardowym wykrywaniu zgodnie z kontekstem programu Microsoft Defender for Endpoint. Podczas tworzenia wykrywania niestandardowego, które nie uwzględnia urządzeń jako jednostek, których to dotyczy, zakres nie ma zastosowania.
 
-   ![Przykład strony tworzenia reguły wykrywania, na której można ustawić zakres reguły alertu, aby zarządzać oczekiwaniami co do wyświetlonych wyników.](../../media/mtp/fig26.png)
+   :::image type="content" source="../../media/mtp/fig26.png" alt-text="Strona Zakres w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mtp/fig26.png":::
+
 
    W ramach tego programu pilotażowego można ograniczyć tę regułę do podzbioru urządzeń testowych w środowisku produkcyjnym.
 
 6. Wybierz pozycję **Utwórz**. Następnie wybierz pozycję **Niestandardowe reguły wykrywania** w panelu nawigacji.
 
-   ![Przykład opcji Niestandardowe reguły wykrywania w menu.](../../media/mtp/fig27a.png)
+   :::image type="content" source="../../media/mtp/fig27a.png" alt-text="Opcja Reguły wykrywania niestandardowego w portalu Microsoft 365 Defender automatycznego" lightbox="../../media/mtp/fig27a.png":::
 
-   ![Przykład strony reguł wykrywania, na której są wyświetlane szczegóły reguły i wykonywania.](../../media/mtp/fig27b.png)
+   :::image type="content" source="../../media/mtp/fig27b.png" alt-text="Strona z regułami wykrywania i szczegółami wykonywania w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mtp/fig27b.png":::
 
    Na tej stronie możesz wybrać regułę wykrywania, co spowoduje otwarcie strony szczegółów.
 
-   ![Przykład strony załączników wiadomości e-mail, na której można zobaczyć stan wykonywania reguły, wyzwalane alerty i akcje, edytować wykrywanie i tak dalej.](../../media/mtp/fig28.png)
+   :::image type="content" source="../../media/mtp/fig28.png" alt-text="Strona z wyświetlonymi szczegółami alertów wyzwalanych w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mtp/fig28.png":::
 
 
 ### <a name="expert-training-on-advanced-hunting"></a>Szkolenia ekspertów dotyczące zaawansowanego wyszukiwania

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano, jak skonfigurować inspekcję zaawansowaną w celu przeprowadzania dochodzenia sądowego w przypadku naruszenia kont użytkowników lub badania innych zdarzeń związanych z zabezpieczeniami.
-ms.openlocfilehash: 34ae98eaafcc3eeb3d6a25a457f017999b8c6078
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dafe53161e04f28f2f5e4ff8dcfa71bab6c1a1f1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984963"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754586"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>Konfigurowanie inspekcji zaawansowanej w programie Microsoft 365
 
@@ -49,9 +49,7 @@ Zaawansowane funkcje inspekcji, takie jak możliwość rejestrować ważne zdarz
 
    Rejestrowanie rekordów inspekcji dla rekordów mailItemsAccessed i Send rozpocznie się w ciągu 24 godzin. Aby rozpocząć rejestrowanie dwóch innych zdarzeń inspekcji zaawansowanej, należy wykonać krok 3: SearchQueryInitiatedExchange i SearchQueryInitiatedSharePoint.
 
-W przypadku organizacji, które przypisują licencje do grup użytkowników przy użyciu licencjonowania grupowego, musisz wyłączyć przypisywanie licencji dla grupy Microsoft 365 zaawansowanej inspekcji. Po zapisaniu zmian sprawdź, czy funkcja Microsoft 365 jest wyłączona dla grupy. Następnie ponownie włącz przypisanie licencji dla grupy. Aby uzyskać instrukcje dotyczące licencjonowania opartego na grupach, zobacz Przypisywanie licencji użytkownikom według [członkostwa w Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
-
-Ponadto, jeśli dostosowano akcje skrzynek pocztowych, które są rejestrowane w skrzynkach pocztowych użytkowników lub udostępnionych skrzynkach pocztowych, żadne nowe zdarzenia inspekcji zaawansowanej wydane przez firmę Microsoft nie będą automatycznie rejestrowane w tych skrzynkach pocztowych. Aby uzyskać informacje na temat zmieniania akcji skrzynki pocztowej, które są rejestrowane w dzienniku inspekcji dla każdego typu logowania, zobacz sekcję "Zmienianie lub przywracanie rejestrowanych domyślnie akcji skrzynki pocztowej" w tece Zarządzanie inspekcją [skrzynki pocztowej](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
+Ponadto, jeśli dostosowano akcje skrzynek pocztowych, które są rejestrowane w skrzynkach pocztowych użytkowników lub udostępnionych skrzynkach pocztowych, żadne nowe zdarzenia inspekcji zaawansowanej publikowane przez firmę Microsoft nie będą automatycznie rejestrowane w tych skrzynkach pocztowych. Aby uzyskać informacje na temat zmieniania akcji skrzynki pocztowej, które są rejestrowane w dzienniku inspekcji dla każdego typu logowania, zobacz sekcję "Zmienianie lub przywracanie rejestrowanych domyślnie akcji skrzynki pocztowej" w tece Zarządzanie inspekcją [skrzynki pocztowej](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
 ## <a name="step-2-enable-advanced-audit-events"></a>Krok 2. Włączanie zdarzeń inspekcji zaawansowanej
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ilustracji zwiększających produktywność
+title: Ilustracje dotyczące produktywności na platformie Microsoft 365
 description: Dowiedz się, jak Microsoft 365 i Microsoft Teams rozwiązania zwiększające produktywność za pomocą tych diagramów architektury.
 ms.author: samanro
 author: samanro
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 89aba3f74925b4c591c523aae5aaeb1a2844b4b9
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: ec1c4942923edb824452c4438f79edff1abfd702
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009789"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775923"
 ---
-# <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 ilustracji zwiększających produktywność
+# <a name="microsoft-365-productivity-illustrations"></a>Ilustracje dotyczące produktywności na platformie Microsoft 365
 
 Seria rozwiązań Microsoft 365 przedsiębiorstwa zawiera wskazówki dotyczące implementowania możliwości Microsoft 365, zwłaszcza w sytuacji, gdy możliwości między technologiami, w tym diagramami Teams architektury.
 
@@ -40,16 +40,14 @@ Znajomość metody (lub kombinacji metod), której należy użyć, i tego, kiedy
 |:-----|:-----|
 |[![Plakat scenariusza komunikacji firmowej firmy Contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Zaktualizowano w styczniu 2022 r.   |Ten plakat ilustruje, jak firma Contoso zapewnia pracownikom informacje i zainteresowanie ich w popularnych scenariuszach komunikacji. Contoso używa różnych aplikacji M365, w tym nowej oferty Viva Connections.<br/><br/>**Pokrewne przewodniki po rozwiązaniach** <br/> <ul><li>[Komunikacja w organizacji: wskazówki, metody i produkty](/sharepoint/corporate-communications-overview)|
 
-
-
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>Grupy dla Microsoft 365 it
 Na poniższej ilustracji przedstawiono informacje dla architektów IT dotyczące Microsoft 365 grupy. Aby uzyskać informacje na temat konfigurowania grup i zespołów Microsoft 365 oraz administrowania nim na poziomie współpracy w organizacji, zobacz Konfigurowanie bezpiecznej współpracy za pomocą aplikacji [Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) oraz Co to jest zarządzanie [współpracą?](/microsoft-365/solutions/collaboration-governance-overview).
 
 | Element | Opis |
 |:-----|:-----|
-|[![Obraz kciuka dla infografiki na temat grup.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Zaktualizowano w maju 2020 r.|Na tych ilustracjach opisano różne typy grup, sposób ich tworzenia i zarządzania oraz kilka zaleceń dotyczących zarządzania.|
+|[![Obraz kciuka dla infografiki na temat grup.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Zaktualizowano w maju 2020 r.|Na tych ilustracjach opisano różne typy grup, sposób ich tworzenia i zarządzania oraz kilka zaleceń dotyczących zarządzania.
 
-## <a name="migrate-to-microsoft-365"></a>Migrowanie do Microsoft 365
+## <a name="migrate-to-microsoft-365"></a>Migracja do platformy Microsoft 365
 
 Firma Microsoft udostępnia narzędzia do migrowania lokalnych sieciowych udziałów plików i witryn programu SharePoint Server w celu Microsoft 365 z wyróżnieniem ochrony i zapewniania bezpieczeństwa zawartości podczas migracji. Ten zestaw ilustracji przedstawia różne dostępne metody przenoszenia zawartości do SharePoint, Teams i OneDrive przepływu danych przez ten proces.
 
@@ -66,7 +64,7 @@ W tym zestawie ilustracji użyto jednego z najbardziej uregulowanych branż, us�
 
 | Element | Opis |
 |:-----|:-----|
-|[![Plakat modelu: Microsoft 365 funkcji ochrony informacji i zgodności.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Angielski: [Pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Pobierz jako plik Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japoński: [Pobierz jako plik PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [Pobierz jako plik Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano w listopadzie 2020 r.|Zawiera: <ul><li>  ochrona informacji firmy Microsoft i ochrona przed utratą danych</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność komunikacji</li><li>Ryzyko niejawnego programu testów</li><li>Ingestion danych innych firm</li>|
+|[![Plakat modelu: Microsoft 365 funkcji ochrony informacji i zgodności.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Angielski: [Pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Pobierz jako plik Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japoński: [Pobierz jako plik PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [Pobierz jako plik Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano w listopadzie 2020 r.|Zawiera: <ul><li>  ochrona informacji firmy Microsoft i ochrona przed utratą danych</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność w komunikacji</li><li>Ryzyko niejawnego programu testów</li><li>Ingestion danych innych firm</li>|
 
 
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>Ochrona zabezpieczeń i informacji dla organizacji wielo regionów
@@ -76,6 +74,15 @@ Ochrona zabezpieczeń i informacji dla organizacji wielo regionów z jedną Micr
 |:-----|:-----|
 |[![Infografika o wielu regionach.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Zaktualizowano marzec 2020 r. |Korzystanie z jednej dzierżawy Microsoft 365 organizacji globalnej to najlepszy wybór i doświadczenie z wielu powodów. Wielu architektów chce jednak spełniać cele w zakresie zabezpieczeń i ochrony informacji w różnych regionach. Ten zestaw tematów zapewnia zalecenia. |
 
+## <a name="security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Wskazówki dotyczące zabezpieczeń kampanii politycznych, organizacji niedochodowych i innych organizacji Agile
+
+Jeśli Twoja organizacja korzysta z metodyki Agile, korzystasz z małego zespołu IT, a profil zagrożeń jest wyższy niż średnia, te wskazówki są przeznaczone dla Ciebie. To rozwiązanie pokazuje, jak szybko utworzyć środowisko przy użyciu podstawowych usług w chmurze, które od początku zawierają bezpieczne kontrolki. Wskazówki te zawierają preskrybujące zalecenia dotyczące zabezpieczeń w celu ochrony danych, tożsamości, poczty e-mail i dostępu za pomocą urządzeń przenośnych.
+
+| Element | Opis |
+|:---|:---|
+|**Wskazówki na temat zabezpieczeń firmy Microsoft dla kampanii politycznych** <br> [:::image type="content" source="../media/d370ce28-ca40-4930-9a2c-907312aa06c8.png" alt-text="Miniatura miniatury mini plakatu na temat wskazówek dotyczących zabezpieczeń.":::](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx)|W tych wskazówkach użyto jako przykładu organizacji kampanii politycznych. Niniejszych wskazówek należy używać jako punktu wyjścia dla dowolnego środowiska.|
+|**Wskazówki dotyczące zabezpieczeń firmy Microsoft dla organizacji niedochodowych** <br> [:::image type="content" source="../media/e4784889-1c69-4067-9a8f-31d31d1eceea.png" alt-text="Miniatura pliku do pobrania ze wskazówkami zabezpieczeń.":::](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx)|Ten przewodnik został nieco zmieniony dla organizacji niedochodowych. Na przykład odnosi się do Office 365 Nonprofit planów. Wskazówki techniczne są takie same jak w przewodniku po rozwiązaniach kampanii politycznych.|
+
 ## <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Microsoft Defender for Endpoint deployment strategy
 
 W zależności od środowiska niektóre narzędzia lepiej nadają się do określonych architektur.
@@ -83,9 +90,7 @@ W zależności od środowiska niektóre narzędzia lepiej nadają się do okreś
 
 | Element | Opis |
 |:-----|:-----|
-|[![Obraz kciuka dla strategii wdrażania programu Microsoft Defender for Endpoint.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   <br>Zaktualizowano we wrześniu 2021 r.| Materiał architektoniczny ułatwia zaplanowanie wdrożenia z następującymi architekturami: <ul><li> Natywne w chmurze </li><li> Współzawłasnie </li><li> Lokalne</li><li>Oceny i lokalne dołączanie</li>
-
-
+|[![Obraz kciuka dla strategii wdrażania programu Microsoft Defender for Endpoint.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   <br>Zaktualizowano we wrześniu 2021 r.| Materiał architektoniczny ułatwia zaplanowanie wdrożenia z następującymi architekturami: <ul><li> Natywne w chmurze </li><li> Współzawłasnie </li><li> Lokalne</li><li>Oceny i lokalne dołączanie</li> |
 <!--
 
 <a name="BKMK_O365IDP"></a>
@@ -98,18 +103,15 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 |[![Model poster: Zero Trust identity and device protection for Microsoft 365.](../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated November 2021|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which Zero Trust capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
 
 --> 
-
-
 <a name="BKMK_ediscovery"></a>
-##Advanced eDiscovery architekturze w Microsoft 365
+
+## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery architekturze w Microsoft 365
 
 Advanced eDiscovery przepływ pracy i przepływ danych, w tym w Microsoft 365 wielolokalizacji.
 
 | Element | Opis |
 |:-----|:-----|
 |[![Plakat modelu: architektura Advanced eDiscovery w Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Wyświetl jako obraz](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Pobierz jako plik PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [Pobierz jako Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Zaktualizowano w październiku 2020 r.|Zawiera: <ul><li>  End-to-end workflow in a single environment</li><li>End-to-end workflow in a Microsoft 365 Multi-Geo environment </li><li>Przepływ danych usługi EDRM obsługujący przepływ pracy usługi EDRM</li> |
-
-
 
 ## <a name="microsoft-telephony-solutions"></a>Rozwiązania telefoniczne firmy Microsoft
 
@@ -120,12 +122,12 @@ Firma Microsoft obsługuje kilka opcji rozpoczynania podróży do programu Teams
 |[![Plakat rozwiązania dla telefonii Microsoft.](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Zaktualizowano marzec 2021 r. | Aby uzyskać więcej informacji, zobacz [Planowanie Teams rozwiązania głosowego](/microsoftteams/cloud-voice-landing-page).|
 
 
-## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Konfigurowanie infrastruktury do pracy hybrydowej
+## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Konfigurowanie infrastruktury na potrzeby pracy hybrydowej
 
 Dzięki Microsoft 365 i innym technologiom chmury firmy Microsoft możesz zapewnić swoim pracownikom bezpieczny dostęp do lokalnych i chmurowych informacji, narzędzi i zasobów organizacji z ich domów.
 
 [![Konfigurowanie infrastruktury dla hybrydowego plakatu służbowego.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
-[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) |  [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
+[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)   <br>
 Zaktualizowano w czerwcu 2021 r.
 
 Aby uzyskać więcej informacji, zobacz artykuł dla tego plakatu: Konfigurowanie infrastruktury do pracy hybrydowej z [Microsoft 365](empower-people-to-work-remotely.md).
@@ -143,6 +145,6 @@ Aby uzyskać więcej informacji, zobacz artykuł dla tego plakatu: [Konfigurowan
 
 ## <a name="see-also"></a>Zobacz też
 
-[Modele architektoniczne SharePoint, Exchange, Skype dla firm i Lync](../enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[Modele architektoniczne dla programów SharePoint, Exchange, Skype dla firm i Lync](../enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
 [Przewodniki laboratorium testowego dotyczące przyjęcia w chmurze](../enterprise/cloud-adoption-test-lab-guides-tlgs.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e127f757b2aaa2865e8cb109699d76ed79f41cb6
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 41427760a0a02f0dafbb9685da457a473698207c
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990278"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755009"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Praca z zaawansowanymi wynikami zapytania wyszukiwania
 
@@ -38,7 +38,7 @@ ms.locfileid: "62990278"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Mimo że możesz [konstruować zaawansowane](advanced-hunting-overview.md) zapytania myśliwskie, aby zwrócić bardzo precyzyjne informacje, możesz również pracować z wynikami zapytania, aby uzyskać bardziej szczegółowe informacje oraz zbadać określone działania i wskaźniki. W wynikach zapytania można podjąć następujące działania:
+Możesz konstruować [zaawansowane zapytania](advanced-hunting-overview.md) myśliwskie, aby zwrócić precyzyjne informacje, ale możesz również pracować z wynikami zapytania, aby uzyskać bardziej szczegółowe informacje oraz zbadać określone działania i wskaźniki. W wynikach zapytania można podjąć następujące działania:
 
 - Wyświetlanie wyników w widoku tabeli lub wykresu
 - Eksportowanie tabel i wykresów
@@ -49,7 +49,7 @@ Mimo że możesz [konstruować zaawansowane](advanced-hunting-overview.md) zapyt
 Domyślnie funkcja wyszukiwania zaawansowanego wyświetla wyniki zapytania jako dane tabelarowe. Możesz również wyświetlić te same dane co wykres. Zaawansowane wyszukiwanie obsługuje następujące widoki:
 
 | Typ widoku | Opis |
-| -- | -- |
+|--|--|
 | **Tabela** | Wyświetla wyniki zapytania w formacie tabelarykim. |
 | **Wykres kolumnowy** | Renderowanie serii unikatowych elementów na osi x jako pionowych słupków, których wysokości reprezentują wartości liczbowe z innego pola |
 | **Skumulowany wykres kolumnowy** | Renderuje serię unikatowych elementów na osi x jako skumulowane słupki pionowe, których wysokości reprezentują wartości liczbowe z innych pól. |
@@ -71,12 +71,12 @@ AlertInfo
 ```
 Podczas renderowania wyników na wykresie kolumnowym są wyświetlane poszczególne wartości ważności w oddzielnej kolumnie:
 
-![Obraz zaawansowanych wyników wyszukiwania wyszukiwania wyświetlanych jako wykres kolumnowy.](../../media/advanced-hunting-column-chart-new.png)
- *Wyniki kwerend dotyczące alertów według ważności wyświetlane jako wykres kolumnowy*
+:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="Przykład wykresu, który przedstawia zaawansowane wyniki wyszukiwania w portalu Microsoft 365 Defender pracy" lightbox="../../media/advanced-hunting-column-chart-new.png":::
+*Wyniki kwerend dotyczące alertów według ważności wyświetlane jako wykres kolumnowy*
 
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Wyłudzanie informacji e-mail w dziesięciu najlepszych domenach nadawców
-Jeśli masz do czynienia z listą wartości, które nie są skończone, `Top` możesz użyć operatora do wykresu tylko wartości dla większości wystąpień. Aby na przykład uzyskać dziesięć najlepszych domen nadawców przy użyciu wiadomości e-mail, które najczęściej wyłudzają informacje, użyj poniższego zapytania:
+Jeśli masz do czynienia z listą wartości, które nie są skończone, `Top` możesz użyć operatora do wykresu tylko wartości dla większości wystąpień. Aby na przykład uzyskać 10 domen nadawców z najwięcej wiadomości e-mail wyłudzających informacje, użyj poniższego zapytania:
 
 ```kusto
 EmailEvents
@@ -86,11 +86,11 @@ EmailEvents
 ```
 Widok wykresu kołowego umożliwia efektywne pokazanie rozkładu między domenami o najwyższej jakości:
 
-![Obraz zaawansowanych wyników wyszukiwania wyszukiwania wyświetlanych jako wykres kołowy.](../../media/advanced-hunting-pie-chart-new.png)
- *Wykres kołowy przedstawiający rozkład wiadomości e-mail wyłudzających informacje w domenach najlepszych nadawców*
+:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="Wykres kołowy, na którym są wyświetlane zaawansowane wyniki wyszukiwania w portalu Microsoft 365 Defender wyszukiwania" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
+*Wykres kołowy, na który widać rozkład wiadomości e-mail wyłudzających informacje w domenach najlepszych nadawców*
 
 #### <a name="file-activities-over-time"></a>Działania związane z plikami w czasie
-Używając operatora `summarize` z funkcją `bin()` , możesz sprawdzić, czy zdarzenia dotyczące określonego wskaźnika są w czasie. Poniższe zapytanie zlicza zdarzenia dotyczące pliku w `invoice.doc` interwałach 30-minutowych w celu pokazania kolekcji aktywności związanych z tym plikiem:
+Używając operatora `summarize` z funkcją `bin()` , możesz sprawdzić, czy zdarzenia dotyczące określonego wskaźnika są w czasie. Poniższe zapytanie zlicza zdarzenia dotyczące pliku w `invoice.doc` 30-minutowych interwałach w celu pokazania kolekcji aktywności związanych z tym plikiem:
 
 ```kusto
 CloudAppEvents
@@ -100,23 +100,23 @@ CloudAppEvents
 ```
 Na poniższym wykresie liniowym wyraźnie wyróżnione są okresy o większej aktywności obejmującej `invoice.doc`: 
 
-![Obraz zaawansowanych wyników wyszukiwania wyszukiwania wyświetlanych jako wykres liniowy.](../../media/line-chart-a.png)
- *Wykres liniowy przedstawiający liczbę zdarzeń dotyczących pliku w czasie*
+:::image type="content" source="../../media/line-chart-a.png" alt-text="Wykres liniowy, na którym są wyświetlane zaawansowane wyniki wyszukiwania w portalu Microsoft 365 Defender wyszukiwania" lightbox="../../media/line-chart-a.png":::
+*Wykres liniowy przedstawiający liczbę zdarzeń dotyczących pliku w czasie*
 
 
 ## <a name="export-tables-and-charts"></a>Eksportowanie tabel i wykresów
 Po uruchomieniu zapytania wybierz pozycję **Eksportuj** , aby zapisać wyniki w pliku lokalnym. Wybrany widok określa sposób eksportowania wyników:
 
-- **Widok tabeli** — wyniki zapytania są eksportowane w postaci tabelarowej jako Microsoft Excel skoroszycie
+- **Widok tabeli** — wyniki zapytania są eksportowane w postaci tabelarowej jako Microsoft Excel skoroszytu
 - **Dowolny wykres** — wyniki zapytania są eksportowane jako obraz JPEG renderowanego wykresu
 
 ## <a name="drill-down-from-query-results"></a>Przechodzenie do szczegółów w wynikach zapytania
 Aby szybko sprawdzić rekord w wynikach zapytania, wybierz odpowiedni wiersz w celu otwarcia **panelu inspekcji** rekordów. Na podstawie wybranego rekordu panel udostępnia następujące informacje:
 
-- **Składniki** majątku — podsumowanie głównych zasobów (skrzynek pocztowych, urządzeń i użytkowników) znalezionych w rekordzie, wzbogacanych o dostępne informacje, takie jak poziomy ryzyka i poziomu ekspozycji
+- **Składniki** majątku — podsumowany widok głównych zasobów (skrzynek pocztowych, urządzeń i użytkowników) znalezionych w rekordzie, wzbogacany o dostępne informacje, takie jak poziomy ryzyka i poziomu ekspozycji
 - **Wszystkie szczegóły** — wszystkie wartości z kolumn w rekordzie  
 
-![Obraz zaznaczonego rekordu z panelem inspekcji rekordu.](../../media/results-inspect-record.png)
+:::image type="content" source="../../media/results-inspect-record.png" alt-text="Wybrany rekord z panelem do sprawdzania rekordu w portalu Microsoft 365 Defender danych" lightbox="../../media/results-inspect-record.png":::
 
 Aby wyświetlić więcej informacji o określonej encji w wynikach zapytania, takiej jak komputer, plik, użytkownik, adres IP lub adres URL, wybierz identyfikator jednostki, aby otworzyć szczegółową stronę profilu dla tej jednostki.
 
@@ -125,9 +125,9 @@ Wybierz trzy kropki z prawej strony dowolnej kolumny w **panelu Inspekcja** reko
 
 - Jawnie poszukaj wybranej wartości (`==`)
 - Wykluczenie zaznaczonej wartości z zapytania (`!=`)
-- Uzyskaj bardziej zaawansowane operatory do dodawania wartości do zapytania, takie jak `contains`, `starts with` i `ends with` 
+- Uzyskaj bardziej zaawansowane operatory do dodawania wartości do zapytania, `contains`takie jak , `starts with`czy `ends with` 
 
-![Obraz zaawansowanego zestawu wyników wyszukiwania.](../../media/work-with-query-tweak-query.png)
+:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="Okienko Typ akcji na stronie Inspekcja rekordu w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/work-with-query-tweak-query.png":::
 
 
 
@@ -136,9 +136,9 @@ Wybierz trzy kropki z prawej strony dowolnej kolumny w **panelu Inspekcja** reko
 
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
 - [Używanie zapytań udostępnionych](advanced-hunting-shared-queries.md)
-- [Przeszukaj urządzenia, wiadomości e-mail, aplikacje i tożsamości](advanced-hunting-query-emails-devices.md)
-- [Opis schematu](advanced-hunting-schema-tables.md)
-- [Stosowanie najlepszych rozwiązań kwerend](advanced-hunting-best-practices.md)
+- [Wyszukiwanie zagrożeń na urządzeniach, w wiadomościach e-mail, aplikacjach i tożsamościach](advanced-hunting-query-emails-devices.md)
+- [Analiza schematu](advanced-hunting-schema-tables.md)
+- [Stosowanie najlepszych rozwiązań dla zapytań](advanced-hunting-best-practices.md)
 - [Wykrywanie niestandardowe — omówienie](custom-detections-overview.md)

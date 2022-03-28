@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd4423ab63019b554157de3a05da3c6c7e7d3d4c
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: eb881611ad4b983eb80d028dfe3dee20c3ed6216
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990512"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754679"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Weź udział w zaawansowanych wyszukiwaniach wyników kwerendy
 
@@ -62,10 +62,10 @@ Aby dowiedzieć się więcej o tym, jak te akcje odpowiedzi są wykonywane za po
 ## <a name="quarantine-files"></a>Poddaj pliki kwarantannie
 Akcję *kwarantanny można* wdrożyć dla plików, aby były one automatycznie poddane kwarantannie w przypadku ich napotkania. Po wybraniu tej akcji możesz wybrać między następującymi kolumnami, aby określić, które pliki w wynikach zapytania mają zostać poddane kwarantannie:
 
-- `SHA1` — W większości zaawansowanych tabel wyszukiwania jest to SHA-1 pliku, na który wpłynęła zarejestrowane działanie. Jeśli na przykład plik został skopiowany, będzie to skopiowany plik.
-- `InitiatingProcessSHA1` — W przypadku większości zaawansowanych tabel myśliwnych jest to plik, który jest odpowiedzialny za inicjowanie zarejestrowanej akcji. Jeśli na przykład został uruchomiony proces podrzędny, będzie to proces nadrzędny. 
-- `SHA256` — Odpowiada wartości SHA-256 pliku zidentyfikowanego w kolumnie `SHA1` .
-- `InitiatingProcessSHA256` — Odpowiada wartości SHA-256 pliku zidentyfikowanego w kolumnie `InitiatingProcessSHA1` .
+- `SHA1`: W większości zaawansowanych tabel myśliwnych ta kolumna odwołuje się do SHA-1 pliku, na który wpływała zanotowana akcja. Na przykład w przypadku skopiowania pliku, którego dotyczy problem, będzie to skopiowany plik.
+- `InitiatingProcessSHA1`: W większości zaawansowanych tabel foremnych ta kolumna odnosi się do pliku, który jest odpowiedzialny za inicjowanie zarejestrowanej akcji. Jeśli na przykład uruchomiono proces podrzędny, ten plik inicjowania będzie częścią procesu nadrzędnego. 
+- `SHA256`: Ta kolumna odpowiada wartości SHA-256 pliku zidentyfikowanego w kolumnie `SHA1` .
+- `InitiatingProcessSHA256`: Ta kolumna odpowiada wartości SHA-256 pliku zidentyfikowanego w kolumnie `InitiatingProcessSHA1` .
 
 Aby dowiedzieć się więcej o tym, jak są podejmowane akcje kwarantanny i jak można je przywrócić, przeczytaj o [akcjach odpowiedzi dotyczących plików](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 
@@ -75,7 +75,7 @@ Aby dowiedzieć się więcej o tym, jak są podejmowane akcje kwarantanny i jak 
 ## <a name="take-action"></a>Działanie
 Aby podjąć dowolną z opisanych akcji, zaznacz jeden lub więcej rekordów w wynikach zapytania, a następnie wybierz pozycję **Akcje**. Kreator przeprowadzi Cię przez proces zaznaczania, a następnie przesyłania preferowanych akcji.
 
-![Obraz zaznaczonego rekordu z panelem inspekcji rekordu.](../../media/take-action-multiple.png)
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="Opcja Akcje w portalu Microsoft 365 Defender użytkownika" lightbox="../../media/take-action-multiple.png":::
 
 ## <a name="review-actions-taken"></a>Przejrzenie działań, które zostały wykonane
 Każda akcja jest pojedynczo rejestrowana w centrum [](m365d-action-center.md) akcji w **obszarze Centrum** >  **akcjiHistory** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Przejdź do centrum akcji, aby sprawdzić stan każdej akcji.
@@ -85,7 +85,7 @@ Każda akcja jest pojedynczo rejestrowana w centrum [](m365d-action-center.md) a
 
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
-- [Praca z wynikami zapytania](advanced-hunting-query-results.md)
-- [Opis schematu](advanced-hunting-schema-tables.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
+- [Praca z wynikami zapytań](advanced-hunting-query-results.md)
+- [Analiza schematu](advanced-hunting-schema-tables.md)
 - [Omówienie Centrum akcji](m365d-action-center.md)

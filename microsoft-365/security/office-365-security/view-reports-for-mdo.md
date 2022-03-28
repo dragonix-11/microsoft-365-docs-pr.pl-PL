@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie programu Defender Office 365 raportów
+title: Wyświetlanie raportów ochrony usługi Office 365 w usłudze Defender
 f1.keywords:
 - CSH
 ms.author: chrisda
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fb48e432d20067f3c6ca1913349152154c57e81
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: 7532d5be8febda1b4dc4dfc0a0860516188ecfc5
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557883"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775625"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów programu Defender Office 365 w portalu Microsoft 365 Defender-
 
@@ -88,8 +88,8 @@ Na stronie **Raport o opóźnieniach** poczty na stronie Raport opóźnień pocz
 
 Niezależnie od wybranej karty na wykresie są wyświetlane wiadomości podzielone na następujące kategorie:
 
-- **Opóźnienie dostarczania poczty**
-- **Detonations**
+- **Ogólne**
+- **Detonacja**
 
 Po umieszczeniu wskaźnika myszy na kategorii na wykresie możesz zobaczyć zestawienie opóźnień w poszczególnych kategoriach.
 
@@ -100,17 +100,20 @@ Jeśli klikniesz **pozycję Filtruj**, możesz filtrować zarówno wykres, jak i
 - **Data (UTC)**: **data rozpoczęcia** i **data zakończenia**
 - **Widok wiadomości**: Jedna z następujących wartości:
   - **Wszystkie wiadomości**
-  - **Wiadomości zawierające załączniki lub adresy URL**
-  - **Detonated messages**
+  - **Detonated messages**: One of the following values:
+    - **Detonacja w tekście**: uwzględnia wiadomości, które są w pełni przetestowane przed dostarczeniem.
+    - **Asynchroniczne detonowanie**
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
 W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 
 - **Data (UTC)**
-- **Percentyl**: **50**, **90** lub **99**
+- **Opóźnienie**
 - **Liczba wiadomości**
-- **Ogólne opóźnienie**
+- **50.percentyl**
+- **90-ty percentyl**
+- **99. percentyl**
 
 Na stronie raportu głównego ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](view-email-security-reports.md#export-report)** Eksportuj jest dostępny.
 
@@ -211,22 +214,13 @@ Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-
 
 Oprócz raportów opisanych w tym artykule dostępnych jest kilka innych raportów, jak opisano w poniższej tabeli:
 
-<br>
-
-****
-
 |Raport|Temat|
 |---|---|
 |**Eksplorator** (Microsoft Defender dla Office 365 Plan 2) lub **wykrywania w** czasie rzeczywistym (Microsoft Defender for Office 365 Plan 1)|[Eksplorator zagrożeń (i wykrywanie w czasie rzeczywistym)](threat-explorer.md)|
 |Raporty zabezpieczeń poczty e-mail, które nie wymagają usługi Defender dla Office 365|[Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail](view-email-security-reports.md)|
 |Raporty przepływu poczty e-mail w centrum Exchange administracyjnego (EAC)|[Raporty przepływu poczty e-mail Exchange centrum administracyjnym](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|
 
 Polecenia cmdlet raportowania programu PowerShell:
-
-<br>
-
-****
 
 |Raport|Temat|
 |---|---|
@@ -237,7 +231,6 @@ Polecenia cmdlet raportowania programu PowerShell:
 |Naruszoni użytkownicy|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |Stan przepływu poczty|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |Fałszywi użytkownicy|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
-|
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Jakie uprawnienia są potrzebne do wyświetlania programu Defender dla Office 365 raportów?
 

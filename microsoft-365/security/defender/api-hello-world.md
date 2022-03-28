@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 1c83a64c3bf1e721ea54b526c0db0c5d7c403fba
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 3a8696a14b85374d4bcb0a8704c14b82fdd845b5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010395"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754599"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World for Microsoft 365 Defender REST API
 
@@ -49,7 +49,7 @@ Ukończenie projektu powinno potrwać od 5 do 10 minut. Ten szacowany czas obejm
 
 2. Przejdź do **Azure Active Directory** >  **Rejestracja aplikacjiAppNew** >  **registration**.
 
-   ![Obraz Microsoft Azure nawigacji do rejestracji aplikacji.](../../media/atp-azure-new-app2.png)
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Sekcja Nowa rejestracja w portalu Microsoft 365 Defender nową" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. W formularzu rejestracji wybierz nazwę aplikacji, a następnie wybierz pozycję **Zarejestruj**. Wybranie przekierowania URI jest opcjonalne. Nie będzie potrzebna do wykonania tego przykładu.
 
@@ -57,26 +57,27 @@ Ukończenie projektu powinno potrwać od 5 do 10 minut. Ten szacowany czas obejm
 
    > [!TIP]
    > *Ochrona przed zagrożeniami firmy Microsoft* to wcześniejsza Microsoft 365 Defender i nie będzie wyświetlana na oryginalnej liście. Aby tekst był wyświetlany, musisz rozpocząć pisanie jego nazwy w polu tekstowym.
-   ![Obraz wyboru uprawnień interfejsu API.](../../media/apis-in-my-org-tab.PNG)
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="Sekcja użycia interfejsów API w portalu Microsoft 365 Defender sieci" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
    - Wybierz **pozycję Uprawnienia** **aplikacjiIncident.Read.All** >  i **wybierz pozycję Dodaj uprawnienia**.
 
-   ![Obraz dostępu do interfejsu API i wyboru interfejsu API.](../../media/request-api-permissions.PNG)
+     :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="Okienko uprawnień aplikacji w portalu Microsoft 365 Defender aplikacji" lightbox="../../media/request-api-permissions.PNG":::
 
 5. Wybierz pozycję **Utłań zgodę administratora**. Za każdym razem, gdy dodajesz uprawnienie, musisz zaznaczyć pozycję Udawaj **administratorów** , aby je obowiązywało.
 
-    ![Obraz części Udzielanie uprawnień.](../../media/grant-consent.PNG)
+    :::image type="content" source="../../media/grant-consent.PNG" alt-text="Sekcja Udzielanie zgody administratora w portalu Microsoft 365 Defender użytkowników" lightbox="../../media/grant-consent.PNG":::
 
 6. Dodaj do aplikacji klucz tajny. Wybierz **pozycję Certyfikaty & sekrety**, dodaj opis tajemnicy, a następnie wybierz pozycję **Dodaj**.
 
     > [!TIP]
     > Po wybraniu **przycisku Dodaj** wybierz **pozycję kopiuj wygenerowaną wartość tajnych**. Po opuszczeniu nie będzie można pobrać wartości tajnej.
 
-    ![Obraz klucza aplikacji Create (Utwórz).](../../media/webapp-create-key2.png)
+    :::image type="content" source="../../media/webapp-create-key2.png" alt-text="Sekcja add secret w Microsoft 365 Defender portal" lightbox="../../media/webapp-create-key2.png":::
+    
 
 7. Zanotuj swój identyfikator aplikacji i identyfikator dzierżawy w bezpiecznym miejscu. Są one wymienione w obszarze **Omówienie** na stronie aplikacji.
 
-   ![Obraz utworzonego identyfikatora aplikacji.](../../media/app-and-tenant-ids.png)
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="Sekcja Omówienie w portalu Microsoft 365 Defender informacje" lightbox="../../media/app-and-tenant-ids.png":::
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Uzyskiwanie tokenu za pomocą aplikacji i uzyskiwanie dostępu do interfejsu API
 
@@ -118,7 +119,7 @@ Aby uzyskać więcej informacji Azure Active Directory tokenów, zobacz [samoucz
 
     Na poniższej ilustracji widać dekodowany token nabyte z aplikacji, ```Incidents.Read.All```za pomocą , ```Incidents.ReadWrite.All```i ```AdvancedHunting.Read.All``` uprawnień:
 
-    ![Obraz jwt.ms.](../../media/api-jwt-ms.png)
+    :::image type="content" source="../../media/api-jwt-ms.png" alt-text="Sekcja Token dekodowany w portalu Microsoft 365 Defender sieci Microsoft 365 Defender" lightbox="../../media/api-jwt-ms.png":::
 
 ### <a name="get-a-list-of-recent-incidents"></a>Uzyskiwanie listy ostatnich zdarzeń
 

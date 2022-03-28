@@ -1,5 +1,5 @@
 ---
-title: Informacje o funkcjach dotyczące wyszukiwania zawartości
+title: Dokumentacja dotycząca funkcji wyszukiwania zawartości
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,14 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Ten artykuł zawiera informacje referencyjne dotyczące narzędzia zbierania elektronicznych materiałów dowodowych przeszukiwania zawartości w p Centrum zgodności platformy Microsoft 365, które ułatwiają poznanie wielu szczegółowych informacji na temat wyszukiwania zawartości.
-ms.openlocfilehash: 0688f3119b500f8e11675aa101d92942a3063e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f2918c378d94fd65d4a89afed50957a2da40a7d
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984612"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716381"
 ---
-# <a name="feature-reference-for-content-search"></a>Informacje o funkcjach dotyczące wyszukiwania zawartości
+# <a name="feature-reference-for-content-search"></a>Dokumentacja dotycząca funkcji wyszukiwania zawartości
 
 W tym artykule opisano funkcje wyszukiwania zawartości.
 
@@ -62,7 +62,7 @@ Używając listy słów kluczowych do utworzenia zapytania wyszukiwania, pamięt
 
 - Jeśli masz zapytanie wyszukiwania zawierające słowa kluczowe zawierające znaki w języku innym niż angielski (na przykład znaki chińskie), możesz kliknąć pozycję Query **language-country/regionQuery**![ language-country/region w obszarze Przeszukiwanie zawartości.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) i wybierz wartość kodu kultury kraju w języku dla wyszukiwania. Domyślny język/region jest neutralny. Jak możesz stwierdzić, czy chcesz zmienić ustawienie języka wyszukiwania zawartości? Jeśli masz określone lokalizacje zawartości zawierające wyszukiwane znaki w języku nieanglojęzycznym, ale wyszukiwanie nie zwraca żadnych wyników, przyczyną może być ustawienie języka.
 
-## <a name="partially-indexed-items"></a>Elementy częściowo indeksowane
+## <a name="partially-indexed-items"></a>Częściowo indeksowane elementy
 
 - Częściowo indeksowane elementy skrzynek pocztowych są uwzględniane w szacowanych wynikach wyszukiwania. Częściowo indeksowane elementy SharePoint i OneDrive nie są uwzględniane w szacowanych wynikach wyszukiwania. Aby uzyskać więcej informacji, zobacz [Częściowo indeksowane elementy podczas zbierania elektronicznych materiałów dowodowych](partially-indexed-items-in-content-search.md).
 
@@ -80,7 +80,7 @@ Wyszukując zawartość w grupach zawartości w grupach, Microsoft Teams i Micro
 
 - Aby wyszukać zawartość w grupach Teams i Microsoft 365, musisz określić skrzynkę pocztową i witrynę SharePoint skojarzonej z zespołem lub grupą.
 
-- Zawartość z kanałów prywatnych jest przechowywana w skrzynce pocztowej każdego użytkownika, a nie w skrzynce pocztowej zespołu. Aby wyszukać zawartość w kanałach prywatnych, zobacz [Zbierania elektronicznych materiałów dowodowych w kanałach prywatnych](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
+- Zawartość z kanałów prywatnych jest przechowywana w skrzynce pocztowej każdego użytkownika, a nie w skrzynce pocztowej zespołu. Aby wyszukać zawartość w kanałach prywatnych, zobacz [Zbierania elektronicznych materiałów dowodowych w kanałach prywatnych i udostępnionych](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels).
 
 - Uruchom polecenie **cmdlet Get-UnifiedGroup** w programie Exchange Online, aby wyświetlić właściwości zespołu lub grupy Microsoft 365 grupy. Jest to dobry sposób na uzyskania adresu URL witryny skojarzonej z zespołem lub grupą. Na przykład następujące polecenie wyświetla wybrane właściwości grupy kierownictwa Microsoft 365 o nazwie Starszy zespół kierownictwa:
 

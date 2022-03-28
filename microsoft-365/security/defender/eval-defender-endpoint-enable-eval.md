@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 846fd6854b8e2dcb408aaa55348380bb91c6b907
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: a12c81635f712dd0fac70101348d30bc1dc4f154
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013683"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754634"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Włączanie programu Microsoft Defender dla środowiska oceny punktu końcowego
 
@@ -39,7 +39,7 @@ Ten artykuł zawiera instrukcje konfigurowania środowiska oceny dla programu Mi
 
 Aby włączyć ocenę dla programu Microsoft Defender dla punktu końcowego, należy wykonać poniższe czynności.
 
-![Kroki włączania programu Microsoft Defender dla punktu końcowego w środowisku oceny programu Microsoft Defender.](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Procedura włączania programu Microsoft Defender dla punktu końcowego w środowisku oceny programu Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
 
 - [Krok 1. Sprawdź stan licencji](#step-1-check-license-state)
 - [Krok 2. Onboard endpoints](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -52,13 +52,14 @@ Najpierw musisz sprawdzić stan licencji, aby sprawdzić, czy została ona popra
 
 1. Aby wyświetlić licencje, przejdź do portalu **Microsoft Azure i** przejdź do sekcji Microsoft Azure [licencji portalu](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) internetowego.
 
-   ![Obraz strony Licencjonowanie platformy Azure.](../../media/defender/atp-licensing-azure-portal.png)
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="Strona Licencjonowanie platformy Azure w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
 1. Ewentualnie w centrum administracyjnym przejdź do **strony** **RozliczeniaSubskrypcje** > .
 
     Na ekranie zobaczysz wszystkie licencje z inicjowaniem obsługi administracyjnej i ich bieżący **stan**.
 
-    ![Obraz licencji rozliczeniowych.](../../media/defender/atp-billing-subscriptions.png)
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="The Billing licenses page in the Microsoft Azure portal" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+    
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Krok nr 2. Onboard endpoints using any of the supported management tools
 

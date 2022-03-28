@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7a7e7a397f9cf9f89b75eb1f515e37a5386a73b1
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: b1381e7c2be2224818c72fb8e269ad65ffcacfc8
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013661"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755023"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Przegląd wymagań architektury programu Microsoft Defender dla punktów końcowych i kluczowych pojęć
 
@@ -42,7 +42,7 @@ Przed włączeniem programu Microsoft Defender for Endpoint upewnij się, że ro
 
 Poniższy diagram przedstawia architekturę i integracje programu Microsoft Defender for Endpoint. 
 
-![Procedura dodawania programu Microsoft Defender Office do środowiska oceny usługi Defender.](../../media/defender/m365-defender-endpoint-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Procedura dodawania programu Microsoft Defender dla Office do środowiska oceny usługi Defender" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
 
 W poniższej tabeli opisano ilustrację.
 
@@ -63,15 +63,15 @@ Pojęcie | Opis | Więcej informacji
 Portal administracyjny | Microsoft 365 Defender w celu monitorowania i pomagania w reagowaniu na alerty o potencjalnych zaawansowanych trwałych działaniach zagrożeń lub naruszeniach danych. | [Omówienie portalu programu Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/portal-overview)
 Zmniejszenie powierzchni ataków | Pomaga zmniejszyć liczbę miejsc ataków, minimalizując miejsca, w których Twoja organizacja jest podatna na cyberataki i ataki. | [Omówienie zmniejszania powierzchni ataków](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
 Wykrywanie punktu końcowego i odpowiedź | Funkcje wykrywania punktu końcowego i odpowiedzi zapewniają zaawansowane wykrywanie ataków w czasie rzeczywistym, które mogą być wykrywane w czasie rzeczywistym. | [Omówienie wykrywanie i reagowanie w punktach końcowych funkcji](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
-Blokowanie i blokowanie zachowania | Możliwości blokowania i blokowania zachowań mogą ułatwić identyfikowanie i zatrzymywanie zagrożeń na podstawie ich zachowań i drzew procesowych, nawet gdy zagrożenie rozpoczęło się. | [Blokowanie i blokowanie zachowań](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
+Blokowanie i blokowanie zachowania | Możliwości blokowania i blokowania zachowań mogą ułatwić identyfikowanie i zatrzymywanie zagrożeń na podstawie ich zachowań i drzew procesowych, nawet gdy zagrożenie rozpoczęło się. | [Blokowanie i ograniczanie behawioralne](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
 Zautomatyzowane badanie i odpowiedź | W automatycznym śledztwie są używane różne algorytmy inspekcji na podstawie procesów, które są używane przez analityków zabezpieczeń i przeznaczone do analizy alertów i natychmiastowego podjęcia działań w celu rozwiązania naruszeń. | [Używanie zautomatyzowanych analiz w celu zbadania i rozwiązania problemów związanych z zagrożeniami](/microsoft-365/security/defender-endpoint/automated-investigations)
 Zaawansowane łowiectwo | Zaawansowane szukanie to oparte na zapytaniach narzędzie do wyszukiwania zagrożeń, które pozwala eksplorować nawet 30 dni pierwotne dane, dzięki czemu możesz aktywnie sprawdzać zdarzenia w swojej sieci w celu znalezienia wskaźników zagrożeń i jednostek. | [Omówienie wyszukiwania zaawansowanego](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)
-Analiza zagrożeń | Analiza zagrożeń to zestaw raportów ekspertów firmy Microsoft ds. zabezpieczeń dotyczących najbardziej istotnych zagrożeń. | [Śledzenie wyłaniających się zagrożeń i reagowanie na nie](/microsoft-365/security/defender-endpoint/threat-analytics)
+Analiza zagrożeń | Analiza zagrożeń to zestaw raportów ekspertów firmy Microsoft ds. zabezpieczeń dotyczących najbardziej istotnych zagrożeń. | [Śledzenie pojawiających się zagrożeń i reagowanie na nie](/microsoft-365/security/defender-endpoint/threat-analytics)
 
 
 Aby uzyskać bardziej szczegółowe informacje o możliwościach programu Microsoft Defender dla punktu końcowego, zobacz Co [to jest program Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
-## <a name="siem-integration"></a>Integracja usług SIEM
+## <a name="siem-integration"></a>Integracja zarządzania informacjami i zdarzeniami zabezpieczeń
 
 Możesz zintegrować usługę Microsoft Defender for Endpoint z programem Microsoft Sentinel, aby bardziej wyczerpująco analizować zdarzenia dotyczące zabezpieczeń w całej organizacji i tworzyć podręczniki w celu efektywnej i natychmiastowej odpowiedzi. 
 
