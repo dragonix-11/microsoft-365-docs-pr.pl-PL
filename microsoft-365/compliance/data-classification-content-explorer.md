@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eksplorator zawartości umożliwia natywnie wyświetlanie elementów oznaczonych etykietami.
-ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: f402df53c19da78435e22717577b351fc302d0f4
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468764"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679967"
 ---
 # <a name="get-started-with-content-explorer"></a>Wprowadzenie do Eksploratora zawartości
 
@@ -34,15 +34,7 @@ Eksplorator zawartości klasyfikacji danych umożliwia natywnie wyświetlanie el
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Każde konto, które uzyskuje dostęp i używa klasyfikacji danych, musi mieć przypisaną do niego licencję z jednej z tych subskrypcji:
-
-- Microsoft 365 (E5)
-- Office 365 (E5)
-- Dodatek Advanced Compliance (E5)
-- Dodatek Zaawansowana inteligencja zagrożeń (E5)
-- Ochrona Microsoft 365 E5/A5 na & informacji
-- zgodność Microsoft 365 E5/A5
-
+Aby uzyskać informacje o wymaganiach [licencyjnych, zobacz Ochrona informacji: Analiza klasyfikacji danych: nad & aktywności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### <a name="permissions"></a>Uprawnienia
 

@@ -18,238 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się, jak skonfigurować zasady ochrony przed utratą danych (DLP) w celu używania Microsoft 365 lokalizacji ochrony przed utratą danych (EPDLP, Endpoint Data Loss Prevention).
-ms.openlocfilehash: cecd489aa5ceb5f0d5d233a4bf09caa24dee6f8b
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: aeb85b883738e94f2d7161cb2bc3434edbb16428
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419159"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680033"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Korzystanie z ochrony przed utratą danych w punkcie końcowym
-
-W tym artykule otworzymy cztery scenariusze tworzenia i modyfikowania zasad DLP, które wykorzystują urządzenia jako lokalizację.
-
-## <a name="dlp-settings"></a>Ustawienia DLP
-
-Przed rozpoczęciem należy skonfigurować ustawienia zasad DLP. Ustawienia są stosowane do wszystkich zasad DLP dla urządzeń. Musisz je skonfigurować, jeśli zamierzasz tworzyć zasady wymuszane:
-
-- ograniczenia ruchu wychodzącego w chmurze
-- ograniczenia dotyczące aplikacji, których nie obowiązują
-
-Lub
-
-- Jeśli chcesz wykluczyć z monitorowania głośne ścieżki plików
-
-  > [!div class="mx-imgBorder"]
-  > ![Ustawienia DLP.](../media/endpoint-dlp-1-using-dlp-settings.png)
-
-### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Ustawienia parametru DLP Windows 10/11 i systemu macOS
-
-|Ustawienie |Windows 10, 1809 i nowsze, Windows 11  |system macOS Catalina 10.15 lub nowszy (wersja zapoznawcza)  |Uwagi  |
-|---------|---------|---------|---------|
-|Wykluczenia ścieżek plików     |Obsługiwane         |Obsługiwane         |System macOS zawiera listę zalecanych wykluczeń, która jest domyślnie włączona          |
-|Aplikacje niedozwolone     |Obsługiwane         |Obsługiwane         |         |
-|Niedozwolone aplikacje Bluetooth aplikacji    |Obsługiwane         |Nie obsługiwane         |         |
-|Ograniczenia przeglądarki i domeny dotyczące elementów poufnych      |Obsługiwane         |Obsługiwane         |         |
-|Dodatkowe ustawienia dotyczące ochrony przed osią danych (DLP) dla punktu końcowego     |Obsługiwane         |Obsługiwane         |W przypadku urządzeń z systemem macOS są obsługiwane tylko domyślne justowania biznesowe         |
-|Zawsze inspekcja działań na plikach dla urządzeń     |Obsługiwane         |Obsługiwane         |         |
-|Automatyczne poddaj plikowi kwarantanny z aplikacji niezaszepowiednianych | Obsługiwane | Nie obsługiwane| |
-|Klasyfikacja zaawansowana | Obsługiwane | Nie obsługiwane| |
-|Uzasadnienie biznesowe w poradach dotyczących zasad | Obsługiwane | Obsługiwane| |
-
-### <a name="advanced-classification-scanning-and-protection"></a>Zaawansowane skanowanie klasyfikacji i ochrona
-
-Zaawansowane skanowanie klasyfikacji i ochrony umożliwia im bardziej zaawansowane Microsoft 365 klasyfikacji danych w chmurze, może skanować, klasyfikować je i zwracać wyniki na komputer lokalny. Oznacza to, że możesz korzystać z [](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) dokładnych technik klasyfikacji dopasowania danych, nazwanych technik klasyfikacji [jednostek (wersja Preview)](named-entities-learn.md#learn-about-named-entities-preview) w zasadach DLP.
-
-W zaawansowanej klasyfikacji zawartość jest wysyłana z urządzenia lokalnego do usług w chmurze w celu skanowania i klasyfikacji. Jeśli użycie przepustowości jest problemem, możesz ustawić w tym ustawieniu globalnym limit, który jest stosowany na urządzenie, w zależności od tego, ile można używać w okresie 24 godzin. Jeśli ustawisz limit użycia przepustowości i zostanie on przekroczony, ochrona DLP przestanie wysyłać zawartość użytkownika do chmury, a klasyfikacja danych będzie nadal lokalnie na urządzeniu. Gdy skumulowane użycie przepustowości spadnie poniżej kroczącego limitu 24-godzinnego, zostanie wznowiona komunikacja z usługami w chmurze.
-
-Jeśli użycie przepustowości nie jest problemem, nie można ustawić limitu i zezwolić na nieograniczone wykorzystanie przepustowości.
-
-Te Windows obsługują zaawansowane skanowanie klasyfikacji i ochrony:
-
-- Windows 10 20H1/20H2/21H1 (KB 5006738)
-- Windows 10 19H1/19H2 (KB 5007189)
-- Windows 10 RS5 (kb 5006744)
-
-> [!NOTE]
-> Obsługa klasyfikacji zaawansowanej jest dostępna dla Office plików (Word, Excel, PowerPoint) i plików PDF.
-
-> [!NOTE]
-> Ocena zasad DLP zawsze odbywa się w chmurze, nawet jeśli zawartość użytkownika nie jest wysyłana.
-
-### <a name="file-path-exclusions"></a>Wykluczenia ścieżek plików
-
-Otwórz [Centrum zgodności](https://compliance.microsoft.com) >  **Zapobieganie utraciedanychUzyszania** >  **danychUkluczenia ścieżek plików w** >  programie **DLP**.
-
-Możesz zechcieć wykluczyć określone ścieżki z monitorowania DLP, alertów DLP i wymuszania zasad DLP na twoich urządzeniach, ponieważ są one zbyt głośne lub nie zawierają plików, które Cię interesują. Pliki w tych lokalizacjach nie będą objęte inspekcją, a wszelkie pliki utworzone lub zmodyfikowane w tych lokalizacjach nie będą podlegać wymuszaniom zasad DLP. W ustawieniach DLP można konfigurować wykluczenia ścieżek.
-
-#### <a name="windows-10-devices"></a>Windows 10 urządzenia
-
-Za pomocą tej logiki można utworzyć ścieżki wykluczeń dla Windows 10 urządzeniach:
-
-- Prawidłowa ścieżka pliku, która kończy się na `\`, co oznacza tylko pliki bezpośrednio pod folderem. <br/>Na przykład: `C:\Temp\`
-
-- Prawidłowa ścieżka pliku, która kończy się na `\*`, co oznacza tylko pliki w podfolderach, oprócz plików bezpośrednio pod folderem. <br/>Na przykład: `C:\Temp\*`
-
-- Prawidłowa ścieżka pliku, która kończy się bez `\` `\*`lub , co oznacza, że wszystkie pliki są bezpośrednio pod folderem i wszystkimi podfolderami. <br/>Na przykład: `C:\Temp`
-
-- Ścieżka z symbolami wieloznacznymi między `\` poszczególnymi bokami. <br/>Na przykład: `C:\Users\*\Desktop\`
-
-- Ścieżka z symbolami wieloznacznymi `\` między poszczególnymi stronami i z `(number)` , aby zapewnić dokładną liczbę podfolderów. <br/>Na przykład: `C:\Users\*(1)\Downloads\`
-
-- Ścieżka ze zmiennymi środowiskowym SYSTEM. <br/>Na przykład: `%SystemDrive%\Test\*`
-
-- Połączenie wszystkich powyższych danych. <br/>Na przykład: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
-
-#### <a name="macos-devices-preview"></a>Urządzenia z systemem macOS (wersja zapoznawcza)
-
-Podobnie jak w Windows 10 możesz dodać własne wykluczenia dla urządzeń macOS.
-
-- Definicje ścieżki pliku nie są bez uwzględniania liter, `User` więc są takie same jak `user`w przypadku plików .
-
-- Obsługiwane są wartości symboli wieloznacznych. Definicja ścieżki może zatem zawierać środek `*` ścieżki lub na jej końcu. Na przykład: `/Users/*/Library/Application Support/Microsoft/Teams/*`
-
-#####  <a name="recommended-file-path-exclusions-preview"></a>Zalecane wykluczenia ścieżek plików (wersja Zapoznawcza)
-
-Ze względów wydajności ochrona przed punktami końcowymi zawiera listę zalecanych wykluczeń ścieżki pliku dla urządzeń z systemem macOS. Te wykluczenia są domyślnie włączone. Możesz je wyłączyć, przełączaąc przełącznik Uwzględnij zalecane wykluczenia ścieżek plików dla komputerów **Mac** . Lista zawiera:
-
-- /Programy/*
-- /System/*
-- /usr/*
-- /Library/*
-- /private/*
-- /opt/*
-- /Użytkownicy/*/Biblioteki/Application Support/Microsoft/Teams/*
-
-### <a name="unallowed-apps"></a>Aplikacje niedozwolone
-
-Zabronione aplikacje to lista tworzyć aplikacje, które nie mają dostępu do pliku chronionego DLP. Jest ona dostępna dla Windows 10 i macOS (wersja zapoznawcza).
-
-Gdy ustawienie Dostępu do zasad **przez** aplikacje niedozwolone jest włączone i aplikacja z listy zabronionej próbuje uzyskać dostęp do pliku chronionego, działanie będzie dozwolone, zablokowane lub zablokowane, ale użytkownicy mogą zastąpić to ograniczenie. Wszystkie działania są sprawdzane i można je przejrzeć w Eksploratorze aktywności.
-
-> [!IMPORTANT]
-> Nie dołączaj ścieżki do pliku wykonywalnego, ale tylko nazwy pliku wykonywalnego (na przykład browser.exe).
-
-#### <a name="macos-devices-preview"></a>Urządzenia z systemem macOS (wersja zapoznawcza)
-
-Podobnie jak na Windows urządzeniach, teraz będzie można uniemożliwić aplikacjom macOS dostęp do poufnych danych, definiując je na liście Aplikacje niedozwolone. 
-
-> [!NOTE]
-> Zwróć uwagę, że aplikacje międzyplatformowe należy wprowadzać przy użyciu ich unikatowych ścieżek odpowiednich do systemu operacyjnego, na który są uruchomione.
-
-Aby znaleźć pełną ścieżkę aplikacji dla komputerów Mac:
-
-1. Na urządzeniu z systemem macOS otwórz **program Monitor aktywności**. Znajdź i kliknij dwukrotnie proces, który chcesz ograniczyć
-
-2. Wybierz **kartę Otwórz pliki i** porty.
-  
-3. W przypadku aplikacji macOS potrzebna jest pełna nazwa ścieżki, łącznie z nazwą aplikacji.
-
-#### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>Ochrona poufnych danych przed aplikacjami do synchronizacji z chmurą
-
-Aby uniemożliwić synchronizowanie poufnych elementów z chmurą przez aplikacje do synchronizacji w chmurze, takie jak *onedrive.exe*, dodaj aplikację do synchronizacji chmury do listy aplikacji Niezaszepłane. Jeśli aplikacja do synchronizacji w chmurze zablokowana przez aplikację do synchronizacji w chmurze spróbuje uzyskać dostęp do elementu chronionego przez blokującą zasady DLP, rozwiązanie DLP może generować powtarzające się powiadomienia. Możesz uniknąć tych powtarzających się powiadomień, włączając opcję **Autopoddaj** kwarantannę w obszarze **Aplikacje niedozwolone**.  
-
-##### <a name="auto-quarantine-preview"></a>Automatyczne poddaj kwarantannie (podgląd)
-
-> [!NOTE]
-> Automatyczna kwarantanna jest obsługiwana tylko Windows 10 w programie
-
-Jeśli ta funkcja jest włączona, auto kwarantanna jest włączana, gdy aplikacja, która nie została włączona, próbuje uzyskać dostęp do poufnego elementu chronionego przez funkcję DLP. Automatyczna kwarantanna powoduje przeniesienie poufnego elementu do skonfigurowanego folderu administratora i pozostawienie **.txtzastępczego** pliku w miejscu oryginału. Tekst w pliku zastępczym można skonfigurować w taki sposób, aby poinformować użytkowników o miejscu, do którego został przeniesiony element, oraz o innych istotnych informacjach.  
-
-Za pomocą automatycznego kwarantanny możesz zapobiec nieskończonemu łańcuchowi powiadomień DLP dla użytkowników i administratorów — zobacz Scenariusz 4. Unikanie w pętli powiadomień [DLP](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview) z aplikacji do synchronizacji chmury za pomocą automatycznego kwarantanny (wersja zapoznawcza).
-
-### <a name="unallowed-bluetooth-apps"></a>Niedozwolone aplikacje Bluetooth aplikacji
-
-Uniemożliwiaj innym osobom przesyłanie plików chronionych przez Twoje zasady za pośrednictwem Bluetooth aplikacji.
-
-### <a name="browser-and-domain-restrictions-to-sensitive-data"></a>Ograniczenia przeglądarki i domeny dotyczące danych poufnych
-
-Ograniczanie plików poufnych, które są zgodne z zasadami, od ich współużytkowania z nieograniczonej domenami usługi w chmurze.
-
-#### <a name="unallowed-browsers"></a>Niedozwolone przeglądarki
-
-W przypadku Windows dodajesz przeglądarki określone przez ich wykonywalne nazwy, które będą blokowane do uzyskiwania dostępu do plików, które są zgodne z warunkami wymuszonych zasad DLP, gdzie ograniczenie przekazywania do usług w chmurze jest ustawione na blokowanie lub blokowanie zastępowania. Jeśli dostęp do pliku zostanie zablokowany dla tych przeglądarek, użytkownicy końcowi zobaczą wyskakujące powiadomienie z prośbą o otwarcie pliku za pośrednictwem programu Microsoft Edge lub wyświetlenie dostosowanego komunikatu, jeśli taki plik został skonfigurowany.
-
-W przypadku urządzeń z systemem macOS należy dodać pełną ścieżkę pliku. Aby znaleźć pełną ścieżkę aplikacji dla komputerów Mac:
-
-1. Na urządzeniu z systemem macOS otwórz **program Monitor aktywności**. Znajdź i kliknij dwukrotnie proces, który chcesz ograniczyć
-
-2. Wybierz **kartę Otwórz pliki i** porty.
-  
-3. W przypadku aplikacji macOS potrzebna jest pełna nazwa ścieżki, łącznie z nazwą aplikacji.
-
-#### <a name="service-domains"></a>Domeny usługi
-
-> [!NOTE]
-> Ustawienie **Domeny usługi dotyczy** tylko plików przekazanych za pomocą programu Microsoft Edge lub Google Chrome z zainstalowanym rozszerzeniem zgodności [firmy Microsoft](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension).
-
-Możesz kontrolować, czy poufne pliki chronione przez zasady mogą być przekazywane z usługi do określonych domen Microsoft Edge.
-
-Jeśli tryb listy jest **ustawiony na Blokowanie**, użytkownik nie będzie mógł przekazywać do tych domen poufnych elementów. Jeśli akcja przekazywania zostanie zablokowana, ponieważ element jestowy pasowany do zasad DLP, zasady DLP wygenerują ostrzeżenie lub zablokują przekazywanie poufnego elementu.
-
-Jeśli dla trybu listy ustawiono zezwalanie **, użytkownicy** będą mogli przekazywać poufne elementy tylko do tych **** domen, a przekazywanie dostępu do wszystkich innych domen jest niedozwolone.
-
-> [!IMPORTANT]
-> Gdy dla trybu ograniczeń usługi jest ustawiona wartość "Zezwalaj", przed wymuszeniami ograniczeń musisz mieć skonfigurowaną co najmniej jedną domenę usługi.
-
-Używanie formatu FQDN domeny usługi bez zakończenia `.` 
-
-Przykład:
-
- `www.contoso.com` 
-
-Symbole wieloznaczne nie są obsługiwane.
-
-### <a name="additional-settings-for-endpoint-dlp"></a>Dodatkowe ustawienia dotyczące ochrony przed dlp punktu końcowego
-
-#### <a name="business-justification-in-policy-tips"></a>Uzasadnienie biznesowe w poradach dotyczących zasad
-
-Możesz kontrolować sposób interakcji użytkowników z opcją justowania firmy w powiadomieniach porad dotyczących zasad DLP. Ta opcja jest wyświetlana, gdy użytkownicy wykonują działania chronione przez ustawienie **Blokuj z zastępowaniem** w zasadach DLP. To ustawienie globalne. Możesz wybrać jedną z następujących opcji:
-
-- **Pokaż opcje domyślne i niestandardowe** pole tekstowe: Domyślnie użytkownicy mogą wybrać wbudowane justowanie lub wprowadzić własny tekst.
-- **Pokaż tylko opcje domyślne**: Użytkownicy mogą wybrać tylko wbudowane justowanie.
-- **Pokaż tylko niestandardowe pole tekstowe**: Użytkownicy mogą wprowadzać tylko własne justowanie. W powiadomieniu z poradami o zasadach użytkownika końcowego zostanie wyświetlone tylko pole tekstowe. 
-
-##### <a name="customizing-the-options-in-the-drop-down-menu"></a>Dostosowywanie opcji w menu rozwijaym
-
-Możesz utworzyć maksymalnie pięć dostosowanych opcji, które będą wyświetlane, gdy użytkownicy będą wchodzić w interakcje z poradą z powiadomieniami o zasadach, wybierając **menu rozwijane Dostosuj opcje**. 
-
-
-|Opcja |Tekst domyślny  |
-|---------|---------|
-|opcja 1    | **Jest to część ustanowionego przepływu pracy biznesowej**  lub można wprowadzić tekst niestandardowy        |
-|opcja 2  |**Mój kierownik zatwierdził tę akcję** lub możesz wprowadzić tekst niestandardowy         |
-|opcja 3   |**Wymagany pilny dostęp; Powiadomię kierownika oddzielnie** lub będzie można wprowadzić tekst niestandardowy          |
-|Pokaż opcję wyników fałszywie dodatnich     |**Informacje w tych plikach nie są poufne lub** możesz wprowadzić tekst niestandardowy          |
-|opcja 5    |**Inny** tekst lub możesz wprowadzić tekst niestandardowy         |
-
-<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
-
-### <a name="always-audit-file-activity-for-devices"></a>Zawsze inspekcja działań na plikach dla urządzeń
-
-Domyślnie, gdy urządzenia są włączone, działania dotyczące plików Office, PDF i CSV są automatycznie sprawdzane i dostępne do przeglądu w Eksploratorze aktywności. Wyłącz tę funkcję, jeśli chcesz, aby to działanie było objęte inspekcją tylko wtedy, gdy włączone urządzenia są uwzględnione w aktywnych zasadach.
-
-Aktywność w zakresie plików będzie zawsze podsyłana w przypadku urządzeń włączonych do pracy, niezależnie od tego, czy są zawarte w aktywnych zasadach.
-
-## <a name="tying-dlp-settings-together"></a>Wiążenie ustawień DLP
-
-Dzięki zasadom DLP i Edge Chromium przeglądarce internetowej możesz ograniczyć niezamierzone udostępnianie elementów poufnych do aplikacji i usług w chmurze, które nie są niedozwolone. Program Edge Chromium rozumie, kiedy element jest ograniczony przez zasady DLP punktu końcowego i wymusza ograniczenia dostępu.
-
-W przypadku używania funkcji DLP punktu końcowego jako lokalizacji w prawidłowo skonfigurowanych zasadach DLP i przeglądarce programu Microsoft Edge niedozwolone przeglądarki zdefiniowane w tych ustawieniach nie będą mieć dostępu do poufnych elementów, które są zgodne z kontrolkami zasad DLP. Zamiast tego użytkownicy będą przekierowywani do używania aplikacji Microsoft Edge które, wraz ze zrozumieniem nałożonych ograniczeń ochrony przed zasadami DLP, mogą blokować lub ograniczać działania, gdy zostaną spełnione warunki zasad DLP.
-
-Aby użyć tego ograniczenia, musisz skonfigurować trzy ważne elementy:
-
-1. Określ miejsca — usługi, domeny, adresy IP — w przypadku których chcesz zapobiec udostępnianiu poufnych elementów.
-
-2. Dodaj przeglądarki, które nie mają dostępu do określonych elementów poufnych w przypadku wystąpienia dopasowania zasad DLP.
-
-3. Skonfiguruj zasady DLP w celu zdefiniowania rodzajów elementów poufnych, dla których przekazywanie powinno być ograniczone do tych miejsc, włączając usługę **Upload** do usług w chmurze i dostęp z wszelkiej **przeglądarki**.
-
-Możesz nadal dodawać nowe usługi, aplikacje i zasady, aby rozszerzać i rozszerzać ograniczenia w celu zaspokojenia potrzeb biznesowych i ochrony poufnych danych. 
-
-Dzięki tej konfiguracji dane pozostają bezpieczne, a jednocześnie nie trzeba ograniczać niepotrzebnych ograniczeń uniemożliwiających użytkownikom uzyskiwanie dostępu do elementów nie poufnych i udostępnianie ich.
-
-## <a name="endpoint-dlp-policy-scenarios"></a>Scenariusze zasad DLP punktu końcowego
 
 Aby ułatwić Ci zapoznanie się z funkcjami DLP w punktach końcowych i ich działaniami w zasadach ochrony przed zasadami DLP, znajdziesz w nim kilka scenariuszy do obserwowania.
 
@@ -261,7 +37,7 @@ Aby ułatwić Ci zapoznanie się z funkcjami DLP w punktach końcowych i ich dzi
 >- [Tworzenie zasad DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md)
 >- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
 
-### <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Scenariusz 1. Tworzenie zasad na podstawie szablonu, tylko inspekcja
+## <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Scenariusz 1. Tworzenie zasad na podstawie szablonu, tylko inspekcja
 
 Te scenariusze wymagają, aby urządzenia były już podłączone i raportowane w Eksploratorze aktywności. Jeśli urządzenia nie zostały jeszcze na nim podłączone, zobacz Wprowadzenie do ochrony przed utratą danych [w punkcie końcowym](endpoint-dlp-getting-started.md).
 
@@ -287,11 +63,11 @@ Te scenariusze wymagają, aby urządzenia były już podłączone i raportowane 
 
 11. Sprawdź, czy w Eksploratorze aktywności nie ma danych z monitorowanych punktów końcowych. Ustaw filtr lokalizacji dla urządzeń i dodaj zasady, a następnie filtruj według nazw zasad, aby zobaczyć wpływ tych zasad. zobacz [Wprowadzenie do Eksploratora aktywności](data-classification-activity-explorer.md), jeśli to konieczne.
 
-12. Spróbuj udostępnić test zawierający zawartość, która wyzwoli warunek danych umożliwiających identyfikację użytkownika (PII) w Stanach Zjednoczonych osobie spoza organizacji. Powinno to wyzwolić zasady.
+12. Spróbuj udostępnić element testowy zawierający zawartość, która wyzwoli warunek danych umożliwiających identyfikację użytkownika (PII) w Stanach Zjednoczonych osobie spoza organizacji. Powinno to wyzwolić zasady.
 
 13. Sprawdź w Eksploratorze aktywności zdarzenie.
 
-### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Scenariusz 2. Modyfikowanie istniejących zasad i ustawianie alertu
+## <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Scenariusz 2. Modyfikowanie istniejących zasad i ustawianie alertu
 
 1. Otwórz stronę [Ochrona przed utratą danych](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -303,8 +79,7 @@ Te scenariusze wymagają, aby urządzenia były już podłączone i raportowane 
 
 5. Przewiń w dół do sekcji **Raporty o incydentach** i ustaw dla administratorów ustawienie **Wysyłaj alert** , gdy wystąpi dopasowanie reguły do **pozycji Wł**. Alerty e-mail będą automatycznie wysyłane do administratora i wszystkich innych osób, które dodasz do listy adresatów. 
 
-   > [!div class="mx-imgBorder"]
-   > ![włączanie raportów o zdarzeniu.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+![włączanie raportów o zdarzeniu.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. Na potrzeby tego scenariusza wybierz pozycję Wyślij alert za każdym razem, **gdy działanie będzie odpowiadać reguły**.
 
@@ -312,11 +87,11 @@ Te scenariusze wymagają, aby urządzenia były już podłączone i raportowane 
 
 8. Zachowaj wszystkie poprzednie ustawienia, wybierając przycisk **Dalej** , a **następnie pozycję Prześlij** zmiany zasad.
 
-9. Spróbuj udostępnić test zawierający zawartość, która wyzwoli warunek danych umożliwiających identyfikację użytkownika (PII) w Stanach Zjednoczonych osobie spoza organizacji. Powinno to wyzwolić zasady.
+9. Spróbuj udostępnić element testowy zawierający zawartość, która wyzwoli warunek danych umożliwiających identyfikację użytkownika (PII) w Stanach Zjednoczonych osobie spoza organizacji. Powinno to wyzwolić zasady.
 
 10. Sprawdź w Eksploratorze aktywności zdarzenie.
 
-### <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>Scenariusz 3. Modyfikowanie istniejących zasad, blokowanie akcji za pomocą zastępowania zezwalania
+## <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>Scenariusz 3. Modyfikowanie istniejących zasad, blokowanie akcji za pomocą zastępowania zezwalania
 
 1. Otwórz stronę [Ochrona przed utratą danych](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -337,7 +112,7 @@ Te scenariusze wymagają, aby urządzenia były już podłączone i raportowane 
 
 8. Zachowaj wszystkie poprzednie ustawienia, wybierając przycisk **Dalej** , a **następnie pozycję Prześlij** zmiany zasad.
 
-9. Spróbuj udostępnić test zawierający zawartość, która wyzwoli warunek danych umożliwiających identyfikację użytkownika (PII) w Stanach Zjednoczonych osobie spoza organizacji. Powinno to wyzwolić zasady.
+9. Spróbuj udostępnić element testowy zawierający zawartość, która wyzwoli warunek danych umożliwiających identyfikację użytkownika (PII) w Stanach Zjednoczonych osobie spoza organizacji. Powinno to wyzwolić zasady.
 
    Na urządzeniu klienckim pojawi się takie wyskakujące okienko:
 
@@ -346,9 +121,9 @@ Te scenariusze wymagają, aby urządzenia były już podłączone i raportowane 
 
 10. Sprawdź w Eksploratorze aktywności zdarzenie.
 
-### <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>Scenariusz 4. Unikanie w pętli powiadomień DLP z aplikacji do synchronizacji chmury z automatycznym kwarantanną (wersja zapoznawcza)
+## <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>Scenariusz 4. Unikanie w pętli powiadomień DLP z aplikacji do synchronizacji chmury z automatycznym kwarantanną (wersja zapoznawcza)
 
-#### <a name="before-you-begin"></a>Przed rozpoczęciem
+### <a name="before-you-begin"></a>Przed rozpoczęciem
 
 W tym scenariuszu synchronizowanie plików z etykietą poufności **Wysoce** poufne OneDrive jest blokowane. Jest to złożony scenariusz z wieloma składnikami i procedurami. Potrzebne są:
 
@@ -362,7 +137,7 @@ Istnieją trzy procedury.
 2. Tworzenie zasad blokowania elementów poufnych, które mają **etykietę Poufność** wysoce poufna.
 3. Utwórz dokument programu Word na urządzeniu Windows 10, na które są kierowane zasady, zastosuj etykietę i skopiuj ją do lokalnego folderu poczty OneDrive użytkowników, który jest synchronizowany.  
 
-#### <a name="configure-endpoint-dlp-unallowed-app-and-auto-quarantine-settings"></a>Konfigurowanie aplikacji usługi DLP dla punktu końcowego i ustawień automatycznej kwarantanny
+### <a name="configure-endpoint-dlp-unallowed-app-and-auto-quarantine-settings"></a>Konfigurowanie aplikacji usługi DLP dla punktu końcowego i ustawień automatycznej kwarantanny
 
 1. Otwórz [ustawienia ochrony przed DLP punktu końcowego](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings)
 
@@ -397,7 +172,7 @@ Istnieją trzy procedury.
 
 9. Wybierz **pozycję Save (Zapisz).**
 
-#### <a name="configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential"></a>Konfigurowanie zasad w celu blokowania synchronizacji OneDrive plików z etykietą poufności Wysoce poufne
+### <a name="configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential"></a>Konfigurowanie zasad w celu blokowania synchronizacji OneDrive plików z etykietą poufności Wysoce poufne
 
 1. Otwórz stronę [Ochrona przed utratą danych](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -429,7 +204,7 @@ Istnieją trzy procedury.
 
 11. Nowe zasady DLP zostaną wyświetlone na liście zasad.
 
-#### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Testowanie automatycznego kwarantanny na Windows 10 urządzenia
+### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Testowanie automatycznego kwarantanny na Windows 10 urządzenia
 
 1. Zaloguj się do komputera Windows 10 przy użyciu konta użytkownika określonego w kroku 5 konfigurowania zasad w celu blokowania OneDrive synchronizacji plików z etykietą poufności [Wysoce poufne.](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential)
 
@@ -457,6 +232,23 @@ Istnieją trzy procedury.
 
 9. Sprawdź w Eksploratorze aktywności zdarzenie.
 
+## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>Scenariusz 5. Ograniczanie niezamierzonego udostępniania do aplikacji i usług w chmurze, które nie są niedozwolone
+
+Dzięki zasadom DLP w punkcie końcowym i przeglądarce internetowej Microsoft Edge możesz ograniczyć niezamierzone udostępnianie elementów poufnych do aplikacji i usług w chmurze, które nie są niedozwolone. Program Edge rozumie, kiedy element jest ograniczony przez zasady DLP punktu końcowego i wymusza ograniczenia dostępu.
+
+Po wybraniu pozycji  Urządzenia jako lokalizacji w prawidłowo skonfigurowanych zasadach DLP i użyciu przeglądarki Microsoft Edge niedozwolone przeglądarki zdefiniowane w tych ustawieniach nie będą mieć dostępu do poufnych elementów, które są zgodne z kontrolkami zasad DLP. Zamiast tego użytkownicy będą przekierowywani do używania aplikacji Microsoft Edge które, wraz ze zrozumieniem nałożonych ograniczeń ochrony przed zasadami DLP, mogą blokować lub ograniczać działania, gdy zostaną spełnione warunki zasad DLP.
+
+Aby użyć tego ograniczenia, musisz skonfigurować trzy ważne elementy:
+
+1. Określ miejsca — usługi, domeny, adresy IP — w przypadku których chcesz zapobiec udostępnianiu poufnych elementów.
+
+2. Dodaj przeglądarki, które nie mają dostępu do określonych elementów poufnych w przypadku wystąpienia dopasowania zasad DLP.
+
+3. Skonfiguruj zasady DLP w celu zdefiniowania rodzajów elementów poufnych, dla których przekazywanie powinno być ograniczone do tych miejsc, włączając usługę **Upload** do usług w chmurze i dostęp z wszelkiej **przeglądarki**.
+
+Możesz nadal dodawać nowe usługi, aplikacje i zasady, aby rozszerzać i rozszerzać ograniczenia w celu zaspokojenia potrzeb biznesowych i ochrony poufnych danych. 
+
+Dzięki tej konfiguracji dane pozostają bezpieczne, a jednocześnie nie trzeba ograniczać niepotrzebnych ograniczeń uniemożliwiających użytkownikom uzyskiwanie dostępu do elementów nie poufnych i udostępnianie ich.
 ## <a name="see-also"></a>Zobacz też
 
 - [Informacje na temat ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-learn-about.md)

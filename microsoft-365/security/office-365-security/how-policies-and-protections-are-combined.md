@@ -17,12 +17,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej na temat kolejności aplikacji ochrony w u Exchange Online Protection (EOP) i jak wartość priorytetu w zasadach ochrony określa, które zasady są stosowane.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5fbccec656e0508535c2fbdaa055777a07968878
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1debec0d2f8ca1498fd674f3d5a2d5a4681196eb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988419"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679791"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Kolejność i pierwszeństwo ochrony poczty e-mail
 
@@ -41,10 +41,6 @@ Istnieją dwa główne czynniki, które określają zasady stosowane do wiadomo�
 
 - **Priorytet typu ochrony przed wiadomościami e-mail**: Tego zamówienia nie można konfigurować i jest opisane w poniższej tabeli:
 
-  <br>
-
-  ****
-
   |Priority (Priorytet)|Ochrona poczty e-mail|Kategoria|Gdzie zarządzać|
   |---|---|---|---|
   |1|Złośliwe oprogramowanie|KOT:MALW|[Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w u usługi EOP](configure-anti-malware-policies.md)|
@@ -55,7 +51,6 @@ Istnieją dwa główne czynniki, które określają zasady stosowane do wiadomo�
   |6<sup>\*</sup>|Personifikacja domeny (domeny chronione)|DIMP|[Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365](configure-mdo-anti-phishing-policies.md)|
   |7|Spam|CAT:SPM|[Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md)|
   |8|Zbiorcze|KOT:ZBIORCZO|[Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md)|
-  |
 
   <sup>\*</sup>Te funkcje są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365.
 
@@ -66,15 +61,10 @@ Istnieją dwa główne czynniki, które określają zasady stosowane do wiadomo�
 
 Rozważ na przykład następujące zasady ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla systemu Office 365, które dotyczą tych samych **użytkowników, oraz** wiadomość, która jest identyfikowana zarówno jako personifikacja użytkownika, jak i spoofing:
 
-<br>
-
-****
-
 |Nazwa zasad|Priority (Priorytet)|Personifikacja użytkownika|Ochrona przed fałszeringem|
 |---|---|---|---|
 |Zasady A|1|Wł.|Wyłączone|
 |Zasady B|2|Wyłączone|Wł.|
-|
 
 1. Wiadomość jest oznaczona i traktowana jako fałsz, ponieważ fałszowanie ma wyższy priorytet (4) niż personifikacja użytkownika (5).
 2. Zasady A są stosowane do użytkowników, ponieważ mają wyższy priorytet niż zasady B.

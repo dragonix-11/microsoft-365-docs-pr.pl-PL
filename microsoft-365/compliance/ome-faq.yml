@@ -8,7 +8,7 @@ metadata:
   manager: laurawi
   ms.date: 07/14/2021
   audience: ITPro
-  ms.topic: overview
+  ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
   search.appverid:
@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: Masz pytanie dotyczące sposobu działania nowych funkcji ochrony wiadomości? Tu znajdziesz odpowiedź.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 9d299ff6e290de5a476f85222c98e4038b724f8e
-  ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+  ms.openlocfilehash: 008d9d93717f97d451acec0c9470ffafbb5f659f
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 02/09/2022
-  ms.locfileid: "63027080"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63679813"
 title: Szyfrowanie wiadomości — często zadawane pytania
 summary: >
   Masz pytanie dotyczące sposobu działania nowych funkcji ochrony wiadomości? Tu znajdziesz odpowiedź. Zobacz też Często zadawane pytania dotyczące ochrony danych w usłudze [Azure Information Protection](/information-protection/get-started/faqs-rms) , aby uzyskać odpowiedzi na pytania dotyczące usługi ochrony danych, usługi Azure Rights Management w usłudze Azure Information Protection.

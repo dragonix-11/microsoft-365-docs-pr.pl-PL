@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Ent_O365
@@ -16,18 +16,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Podsumowanie: Za pomocą programu PowerShell Microsoft 365 tworzyć raporty, których nie można tworzyć w centrum administracyjne platformy Microsoft 365.'
-ms.openlocfilehash: 35c4e810dbbf0006a72c8073c3ead900812f5c66
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f29f9d6ac2f71163118b8e00eb78d39e16e0a79a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973653"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679923"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Tworzenie raportów dla nowych raportów za pomocą programu PowerShell Microsoft 365
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-W tym programie jest dostępnych wiele różnych centrum administracyjne platformy Microsoft 365. Jednak te raporty zawierają tylko tyle informacji, że czasami są potrzebne. Teraz jest potrzebny program PowerShell do Microsoft 365.
+W tym programie jest dostępnych wiele różnych centrum administracyjne platformy Microsoft 365. Jednak te raporty zawierają tylko tyle informacji, że czasami są potrzebne. Teraz jest potrzebny program PowerShell dla Microsoft 365.
   
 W tych artykułach opisano sposób używania programu PowerShell Microsoft 365 w celu uzyskania informacji z Microsoft 365 dzierżawy:
   
@@ -38,9 +38,9 @@ W tych artykułach opisano sposób używania programu PowerShell Microsoft 365 w
     
 - Raporty dotyczące kont użytkowników i licencji:
     
-  - [Wyświetlanie Microsoft 365 licencji i usług za pomocą programu PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
+  - [Wyświetlanie Microsoft 365 i usług za pomocą programu PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-  - [Wyświetlanie Microsoft 365 licencji i nielicencjonowanych użytkowników za pomocą programu PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
+  - [Wyświetlanie Microsoft 365 programu PowerShell dla licencjonowanych i nielicencjonowanych użytkowników](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
     
   - [Wyświetlanie Microsoft 365 licencji konta i usługi za pomocą programu PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     

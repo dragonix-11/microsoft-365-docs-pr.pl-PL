@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 dotyczące wersji próbnej rozwiązań zgodności.
-ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754255"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679901"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Podręcznik wersji próbnej: Microsoft 365 rozwiązania do zgodności
 
@@ -225,7 +225,7 @@ Przy zachowaniu, zbieraniu, analizowaniu i eksportowaniu zawartości, która odp
 Aby uzyskać Advanced eDiscovery lub dodać go jako członka do sprawy Advanced eDiscovery, użytkownikowi muszą zostać przypisane odpowiednie uprawnienia.
 
 1. [Konfigurowanie usługi Advanced eDiscovery — przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
-1. [Dodaj członków do sprawy lub ich usuń](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+1. [Dodawanie lub usuwanie członków w sprawie](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### <a name="step-2-required-create-a-case"></a>Krok 2 (wymagany): Tworzenie sprawy
 
@@ -243,7 +243,7 @@ Więcej organizacji korzysta z Advanced eDiscovery w programie Microsoft 365 w k
 Aby zezwolić osobom w twojej organizacji na rozpoczynanie tworzenia i używania spraw, musisz skonfigurować ustawienia globalne, które będą stosowane do wszystkich spraw w organizacji. Obecnie jedynym ustawieniem globalnym jest wykrywanie uprawnień klienta-klienta **(w** przyszłości będzie dostępnych więcej ustawień globalnych).
 
 1. [Konfigurowanie Advanced eDiscovery — ustawienia globalne Ustawienia](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-advanced-ediscovery)
-1. [Konfiguruj ustawienia wyszukiwania i analizy](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
+1. [Konfigurowanie ustawień wyszukiwania i analizy](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 1. [Zarządzanie zadaniami w u Advanced eDiscovery](managing-jobs-ediscovery20.md)
 
 ### <a name="step-4-optional-compliance-boundaries"></a>Krok 4 (opcjonalnie): [Granice zgodności](set-up-compliance-boundaries.md)
@@ -434,6 +434,6 @@ Aktywne identyfikowanie i ochrona przed zagrożeniami prywatności, takimi jak p
 
 **Dostępne funkcje**: Aby uzyskać pełną listę rozwiązań i funkcji zgodności Microsoft 365 warstwie produktu, wyświetl [Macierz funkcji](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Biblioteka zawartości technicznej zabezpieczeń firmy Microsoft**. Zapoznaj się z tą biblioteką, aby znaleźć interakcyjne przewodniki i inną zawartość edukacyjną odpowiednią do Twoich potrzeb. [Odwiedź bibliotekę](/security).
+**Biblioteka zawartości technicznej zabezpieczeń firmy Microsoft**. Zapoznaj się z tą biblioteką, aby znaleźć interakcyjne przewodniki i inną zawartość edukacyjną odpowiednią do Twoich potrzeb. [Odwiedź bibliotekę](/security/content-library).
 
 **Zasoby zabezpieczeń firmy Microsoft**: od ochrony przed złośliwym oprogramowaniem do zerowego zaufania uzyskaj wszystkie istotne zasoby na potrzeby organizacji dotyczące zabezpieczeń. [Odwiedź stronę Resources (Zasoby](/security/business/resources)).

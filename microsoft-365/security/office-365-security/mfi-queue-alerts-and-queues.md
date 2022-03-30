@@ -13,12 +13,13 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratorzy mogą dowiedzieć się, jak za pomocą widżetu Kolejki na pulpicie nawigacyjnym przepływu poczty w Centrum zgodności usługi & Security & monitorować nieudany przepływ poczty do ich lokalnych lub partnerskich organizacji przez łączniki ruchu wychodzącego.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 197dbf1c50451f205b9a6f692faa7bab3c40fd11
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 54bff65b29555fe0c94c86141cd7a10a77c36219
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021359"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680011"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Szczegółowe informacje o kolejkach w Centrum & zgodności
 
