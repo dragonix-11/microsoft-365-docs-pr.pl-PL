@@ -7,6 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -14,12 +15,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak za pomocą szczegółowych informacji o stanie przepływu poczty e-mail w panelu przepływu poczty e-mail w Centrum zabezpieczeń & zgodności rozwiązywać problemy z przepływem poczty e-mail związane z rekordami MX.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e4ed59e31cd21826eebf306e566610d54635f0c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3994859c1d5a4e0026f61dcc24a9735c6122ad15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984589"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465426"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Najważniejsze informacje o stanie przepływu poczty e-mail domeny w Centrum & zgodności
 
@@ -27,14 +28,14 @@ ms.locfileid: "62984589"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Najważniejsze **informacje o stanie przepływu** poczty e-mail domeny na pulpicie [](https://protection.office.com) nawigacyjnym przepływu poczty w Centrum & zabezpieczeń i zgodności dają bieżący stan przepływu poczty dla organizacji.[](mail-flow-insights-v2.md)
 
 Te informacje pomagają zidentyfikować domeny, w których występują problemy z przepływem ***poczty e-mail, i rozwiązywać je*** . Na przykład domena nie może odbierać zewnętrznych wiadomości e-mail, ponieważ domena wygasła lub domena ma niepoprawny rekord MX.
 
-![Top domain flow status widget in the Mail flow dashboard in the Security & Compliance Center.](../../media/mfi-top-domain-mail-flow-status-widget.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-widget.png" alt-text="The Top domain flow status widget in the Mail flow dashboard in the Security & Compliance Center" lightbox="../../media/mfi-top-domain-mail-flow-status-widget.png":::
 
 Po kliknięciu w **widżecie** przycisku Wyświetl szczegóły zostanie wyświetlone **wysuwne** okno wysuwu stanu domeny z informacjami o stanie poszczególnych domen:
 
@@ -48,7 +49,7 @@ Po kliknięciu w **widżecie** przycisku Wyświetl szczegóły zostanie wyświet
 
 Możesz kliknąć pozycję **Wyświetl więcej,** aby wyświetlić te same informacje dla większej liczby domen.
 
-![Wysuwu szczegóły w szczegółowych informacjach o stanie przepływu poczty w domenie najwyższej jakości.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-view-details.png" alt-text="Wysuw szczegółów w szczegółowych informacjach o stanie przepływu poczty e-mail w górnej domenie" lightbox="../../media/mfi-top-domain-mail-flow-status-view-details.png":::
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -20,14 +20,14 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Przygotowanie i wdrażanie rozszerzenia zgodności firmy Microsoft.
-ms.openlocfilehash: 7b675db1e17e7b7609a7a0394e2dffc8f2a74887
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 5ffd04ee0b89c2e920f55c3e6fbefbab4c82983e
+ms.sourcegitcommit: db2ed146b46ade9ea62eed9cb8efff5fea7a35e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "63015424"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "64481391"
 ---
-# <a name="get-started-with-microsoft-compliance-extension"></a>Wprowadzenie do rozszerzenia zgodności firmy Microsoft
+# <a name="get-started-with-microsoft-compliance-extension"></a>Wprowadzenie z rozszerzeniem zgodności firmy Microsoft
 
 Skorzystaj z tych procedur, aby stosować rozszerzenie zgodności firmy Microsoft.
 
@@ -36,14 +36,14 @@ Skorzystaj z tych procedur, aby stosować rozszerzenie zgodności firmy Microsof
 Aby można było korzystać z rozszerzenia zgodności firmy Microsoft, urządzenie musi być dołączane do funkcji DLP punktu końcowego. Zapoznaj się z tymi artykułami, jeśli jesteś nowym użytkownikm usługi DLP lub usługi DLP punktu końcowego.
 
 - [Dowiedz się więcej o rozszerzeniu zgodności firmy Microsoft](dlp-chrome-learn-about.md)
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
-- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
-- [Tworzenie zasad DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
+- [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
+- [Twórz zasady DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md)
 - [Informacje na temat ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-learn-about.md)
-- [Wprowadzenie do ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-getting-started.md)
+- [Wprowadzenie do ochrony przed utratą danych punktu końcowego](endpoint-dlp-getting-started.md)
 - [Narzędzia i metody dołączania do Windows 10 urządzeniach](device-onboarding-overview.md)
-- [Konfigurowanie ustawień serwera proxy urządzenia i połączenia internetowego w celu ochrony informacji](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
-- [Korzystanie z ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-using.md)
+- [Konfiguruj ustawienia serwera proxy urządzenia i połączenia internetowego dla usługi Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
+- [Korzystanie z ochrony przed utratą danych punktu końcowego](endpoint-dlp-using.md)
 
 ### <a name="skusubscriptions-licensing"></a>Licencjonowanie subskrypcji/licencji na subskrypcje sKU
 
@@ -60,7 +60,7 @@ Aby uzyskać szczegółowe wskazówki dotyczące licencjonowania, [zobacz Micros
 
 - Twoja organizacja musi mieć licencję na DLP punktu końcowego
 - Na urządzeniach musi być uruchomiona Windows 10 x64 kompilacja 1809 lub nowszy.
-- Urządzenie musi mieć wersję klienta ochrony przed złośliwym oprogramowaniem w wersji 4.18.2101.9 lub nowszej. Sprawdź bieżącą wersję, otwierając **aplikację Zabezpieczenia Windows****, wybierz** ikonę Ustawienia, a następnie wybierz pozycję **Informacje**.
+- Urządzenie musi mieć wersję klienta ochrony przed złośliwym oprogramowaniem: 4.18.2202.x lub nowszą. Sprawdź bieżącą wersję, otwierając **aplikację Zabezpieczenia Windows****, wybierz** ikonę Ustawienia, a następnie wybierz pozycję **Informacje**.
 
 
 ### <a name="permissions"></a>Uprawnienia
@@ -81,22 +81,22 @@ W wersji Preview są dostępne role i grupy ról, które możesz przetestować, 
 
 Oto lista dostępnych w wersji Microsoft Information Protection (MIP), które są dostępne w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Administrator ochrony informacji
-- Analityk ochrony informacji
-- Ochrona informacji
-- Czytnik ochrony informacji
+- Information Protection administratorem
+- Information Protection analitykiem
+- Information Protection Ciesom
+- Information Protection czytnik zawartości ekranu
 
 Poniżej znajdziesz listę grup ról miP, które są dostępne w wersji Preview. Aby dowiedzieć się więcej na ten temat, [zobacz Grupy ról w Centrum & zabezpieczeń.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
-- Ochrona informacji
-- Administratorzy ochrony informacji
-- Analitycy ochrony informacji
-- Schoweki ochrony informacji
-- Czytniki informacji
+- Information Protection
+- Information Protection administratorzy
+- Information Protection analityków
+- Information Protection Się
+- Information Protection czytelnicy
 
 ### <a name="overall-installation-workflow"></a>Całkowity przepływ pracy instalacji
 
-Wdrażanie rozszerzenia zgodności firmy Microsoft jest wielofazowym procesem. Możesz zainstalować oprogramowanie na jednym komputerze na raz albo użyć Microsoft Endpoint Manager lub zasady grupy do wdrożeń dla całej organizacji.
+Wdrażanie rozszerzenia zgodności firmy Microsoft jest wielofazowym procesem. Możesz zainstalować oprogramowanie na jednym komputerze na raz albo używać pakietu Microsoft Endpoint Manager lub zasady grupy w przypadku wdrożeń dla całej organizacji.
 
 1. [Przygotuj swoje urządzenia](#prepare-your-devices).
 2. [Selfhost programu Single Machine w konfiguracji podstawowej](#basic-setup-single-machine-selfhost)
@@ -108,53 +108,26 @@ Wdrażanie rozszerzenia zgodności firmy Microsoft jest wielofazowym procesem. M
 
 ### <a name="prepare-infrastructure"></a>Przygotowywanie infrastruktury
 
-W przypadku rozszerzenia zgodności firmy Microsoft na wszystkich monitorowanych urządzeniach z systemem Windows 10 należy usunąć przeglądarkę Google Chrome z listy nieprzesłanych aplikacji i nieprzesłanych przeglądarek. Aby uzyskać więcej informacji, zobacz [Przeglądarki niedozwolone](endpoint-dlp-using.md#unallowed-browsers). Jeśli jest ona wprowadzana tylko na kilku urządzeniach, możesz pozostawić przeglądarkę Chrome na niedozwolonej liście przeglądarek lub aplikacji, których nie chcesz używać. Rozszerzenie zgodności firmy Microsoft ominie ograniczenia dotyczące obu list dla tych komputerów, na których je zainstalowano.
+W przypadku rozszerzenia zgodności firmy Microsoft na wszystkich monitorowanych urządzeniach z systemem Windows 10 należy usunąć przeglądarkę Google Chrome z listy nieprzesłanych aplikacji i nieprzesłanych przeglądarek. Aby uzyskać więcej informacji, zobacz [Przeglądarki niedozwolone](dlp-configure-endpoint-settings.md#unallowed-browsers). Jeśli jest ona wprowadzana tylko na kilku urządzeniach, możesz pozostawić przeglądarkę Chrome na niedozwolonej liście przeglądarek lub aplikacji, których nie chcesz używać. Rozszerzenie zgodności firmy Microsoft ominie ograniczenia dotyczące obu list dla tych komputerów, na których je zainstalowano.
 
 ### <a name="prepare-your-devices"></a>Przygotowywanie urządzeń
 
 1. Aby korzystać z urządzeń, skorzystaj z procedur  poruszanych w tych tematach:
-    1. [Wprowadzenie do ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-getting-started.md)
-    1. [Urządzenia Windows 10 i Windows 11](device-onboarding-overview.md)
-    1. [Konfigurowanie ustawień serwera proxy urządzenia i połączenia internetowego w celu ochrony informacji](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
+    1. [Wprowadzenie do ochrony przed utratą danych punktu końcowego](endpoint-dlp-getting-started.md)
+    1. [Urządzenia Windows 10 i Windows 11 urządzenia przenośne](device-onboarding-overview.md)
+    1. [Konfiguruj ustawienia serwera proxy urządzenia i połączenia internetowego dla usługi Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
 ### <a name="basic-setup-single-machine-selfhost"></a>Selfhost programu Single Machine w konfiguracji podstawowej
 
 Jest to zalecana metoda.
 
-1. Zaloguj się na Windows 10, na którym chcesz zainstalować rozszerzenie zgodności firmy Microsoft, i uruchom ten skrypt programu PowerShell jako administrator.
+1. Przejdź do [rozszerzenia zgodności firmy Microsoft — Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-   ```powershell
-   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ```
-
-2. Przejdź do [rozszerzenia zgodności firmy Microsoft — Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
-
-3. Zainstaluj rozszerzenie, korzystając z instrukcji na Chrome Web Store pliku.
+2. Zainstaluj rozszerzenie, korzystając z instrukcji na Chrome Web Store pliku.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Wdrażanie przy użyciu Microsoft Endpoint Manager
 
 Użyj tej metody konfiguracji w przypadku wdrożeń w całej organizacji.
-
-##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>Włączanie wymaganej wartości rejestru za pośrednictwem Microsoft Endpoint Manager
-
-1. Utwórz skrypt programu PowerShell o następującej zawartości:
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-2. Zaloguj się do [Microsoft Endpoint Manager administracyjnego](https://endpoint.microsoft.com).
-
-3. Przejdź do **opcji** **DevicesScripts** >  i wybierz pozycję **Add (Dodaj**).
-
-4. Przejdź do lokalizacji skryptu utworzonego po wyświetleniu monitu.
-
-5. Wybierz następujące ustawienia:
-    1. Uruchom ten skrypt przy użyciu zalogowanych poświadczeń: NIE
-    1. Wymuszanie sprawdzania podpisu skryptu: NIE
-    1. Uruchom skrypt w 64-bitowym hoście programu PowerShell: YES
-
-6. Wybierz odpowiednie grupy urządzeń i zastosuj zasady.
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft Endpoint Manager Wymuchij instalację
 
@@ -186,43 +159,11 @@ Przed dodaniem rozszerzenia zgodności firmy Microsoft do listy zainstalowanych 
 
 ### <a name="deploy-using-group-policy"></a>Wdrażanie przy użyciu zasady grupy
 
-Jeśli nie chcesz używać programu Microsoft Endpoint Manager, możesz użyć zasad grupy, aby wdrożyć rozszerzenie zgodności firmy Microsoft w organizacji
-
-1. Urządzeniami należy zarządzać za pośrednictwem programu zasady grupy, a także zaimportować wszystkie admx przeglądarki Chrome do zasady grupy Central Store. Aby uzyskać więcej informacji, zobacz Jak utworzyć magazyn centralny dla [zasady grupy administracyjnych i zarządzać nimi w Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
-
-2. Utwórz skrypt programu PowerShell za pomocą tego polecenia programu PowerShell:
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-3. Otwórz **konsolę zasady grupy zarządzania i** przejdź do jednostki organizacyjnej.
-
-4. Kliknij prawym przyciskiem myszy i wybierz **pozycję Utwórz zasadę zasad grupy w tej domenie i kliknij pozycję Połącz ją tutaj**. Po wyświetleniu monitu przypisz opisową nazwę do tego obiektu zasad grupy i zakończ tworzenie tego obiektu.
-
-5. Kliknij prawym przyciskiem myszy pozycję zasad grupy i wybierz pozycję **Edytuj**.
-
-6. Przejdź do **strony Konfiguracja** **komputeraPreferencje** >  >  **Panelu sterowania Ustawienia** >  **Planowane zadania**.
-
-7. Utwórz nowe natychmiastowe zadanie, wybierając  >  prawym przyciskiem myszy i wybierając pozycję Zadanie bezpośrednio **newimmediate (co najmniej Windows 7).**
-
-8. Nadaj zadaniu nazwę & opis.
-
-9. Wybieranie odpowiedniego konta w celu uruchomienia zadania natychmiastowego, na przykład urzędu NT
-
-10. Wybierz **pozycję Uruchom z najwyższymi uprawnieniami**.
-
-11. Skonfiguruj zasady dla Windows 10.
-
-12. Na **karcie Akcje** wybierz akcję **Uruchom program**.
-
-13. Wprowadź ścieżkę do programu/skryptu utworzonego w kroku 1.
-
-14. Wybierz **pozycję Zastosuj**.
+Jeśli nie chcesz używać funkcji Microsoft Endpoint Manager, możesz użyć zasad grupy, aby wdrożyć rozszerzenie zgodności firmy Microsoft w organizacji.
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Dodawanie rozszerzenia Chrome do listy ForceInstall
 
-1. W edytorze zasady grupy zarządzania przejdź do swojej aplikacji OU.
+1. W edytorze zasady grupy zarządzaniem przejdź do twojej aplikacji OU.
 
 2. Rozwiń następującą **ścieżkę Konfiguracja komputera/** > **użytkownikaPoliciesAdministracyjne** **szablony** >  >  administracyjneKlasyfikacyjne  >  szablony **administracyjneGoogleGoogle** >  **ChromeExtensions** > . Ta ścieżka może się różnić w zależności od konfiguracji.
 
@@ -271,7 +212,7 @@ Po usunięciu przeglądarki Chrome z listy niedozwolone przeglądarki/aplikacje 
 
 1. Otwórz stronę [Klasyfikacja danych](https://compliance.microsoft.com/dataclassification?viewid=overview) dla swojej domeny w centrum <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365 wybierz</a> **pozycję Eksplorator aktywności**.
 
-2. Zapoznaj się z procedurami w [tece Wprowadzenie do Eksploratora aktywności](data-classification-activity-explorer.md) , aby uzyskać dostęp do wszystkich danych dla urządzeń z punktami końcowymi i filtrować je.
+2. Skorzystaj z procedur w te Wprowadzenie [w Eksploratorze](data-classification-activity-explorer.md) aktywności, aby uzyskać dostęp do wszystkich danych dla urządzeń z punktami końcowymi i filtrować je.
 
    > [!div class="mx-imgBorder"]
    > ![filtr Eksploratora aktywności dla urządzeń końcowych.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
@@ -284,15 +225,15 @@ Po usunięciu przeglądarki Chrome z listy niedozwolone przeglądarki/aplikacje 
 
 Teraz, gdy masz urządzenia ze swoim systemem i możesz wyświetlać dane dotyczące aktywności w Eksploratorze aktywności, możesz przejść do następnego kroku, w którym utworzysz zasady DLP chroniące poufne elementy.
 
-- [Korzystanie z ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-using.md)
+- [Korzystanie z ochrony przed utratą danych punktu końcowego](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Informacje na temat ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-learn-about.md)
-- [Korzystanie z ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-using.md)
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
-- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
-- [Wprowadzenie do Eksploratora aktywności](data-classification-activity-explorer.md)
+- [Dowiedz się więcej o ochronie przed utratą danych punktu końcowego](endpoint-dlp-learn-about.md)
+- [Korzystanie z ochrony przed utratą danych punktu końcowego](endpoint-dlp-using.md)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
+- [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
+- [Wprowadzenie w Eksploratorze aktywności](data-classification-activity-explorer.md)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/)
 - [Narzędzia i metody dołączania do Windows 10 komputerów](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 subskrypcji](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

@@ -1,5 +1,5 @@
 ---
-title: Dołączanie urządzeń z systemem macOS do Microsoft 365 przegląd (wersja zapoznawcza)
+title: Omówienie dołączania urządzeń z systemem macOS do platformy Microsoft 365 (wersja zapoznawcza)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,43 +14,43 @@ ms.collection:
 search.appverid:
 - MET150
 description: Dowiedz się więcej o dołączaniu urządzeń z systemem macOS do rozwiązań zgodności
-ms.openlocfilehash: 93a930f13a17c19c3ff7209295ddada648b9575a
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 783179ae749ac7cd6de671435927ba5bbdbdacad
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526572"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387020"
 ---
-# <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Dołączanie urządzeń z systemem macOS do Microsoft 365 przegląd (wersja zapoznawcza)
+# <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Omówienie dołączania urządzeń z systemem macOS do platformy Microsoft 365 (wersja zapoznawcza)
 
-Urządzenia z systemem MacOS można dołączać do Microsoft 365 zgodności przy użyciu usługi Intune lub USŁUGI JAMF Pro. Procedury dołączania różnią się w zależności od tego, które rozwiązanie zarządzania jest stosowane. Jeśli Twoje urządzenia z systemem macOS zostały już podłączone do programu Microsoft Defender for Endpoint (MDE), jest mniej kroków. Zobacz [Następne kroki](#next-steps) , aby uzyskać linki do odpowiednich procedur.
+Urządzenia z systemem MacOS można dołączać do Microsoft 365 zgodności przy Intune albo usługi JAMF Pro. Procedury dołączania różnią się w zależności od tego, które rozwiązanie zarządzania jest stosowane. Jeśli Twoje urządzenia z systemem macOS zostały już podłączone do Ochrona punktu końcowego w usłudze Microsoft Defender (MDE), jest mniej kroków. Zobacz [Następne kroki](#next-steps) , aby uzyskać linki do odpowiednich procedur.
 
 **Dotyczy:**
 
-- [Microsoft 365 punktu końcowego ochrony przed utratą danych (DLP)](./endpoint-dlp-learn-about.md)
-- [Zarządzanie ryzykiem w niejawnym programie testów](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Zapobieganie utracie danych w punkcie końcowym (DLP)](./endpoint-dlp-learn-about.md)
+- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
 Przed rozpoczęciem pracy z zasadą DLP punktu końcowego na urządzeniach z systemem macOS (Catalina 10.15 lub nowszym) zapoznaj się z tymi artykułami:
 
-- [Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w punktach końcowych](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
-- [Wprowadzenie do ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+- [Dowiedz się więcej o ochronie przed utratą danych punktu końcowego](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+- [Wprowadzenie do ochrony przed utratą danych punktu końcowego](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 Jeśli w ogóle nie znasz zasad DLP, zapoznaj się również z tymi artykułami:
 
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planowanie ochrony przed utratą danych (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
 - [Informacje dotyczące zasad ochrony przed utratą danych](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 
 Jeśli nie znasz ryzyka niejawnego programu testów, zapoznaj się z tymi artykułami:
 
- - [Zarządzanie ryzykiem w niejawnym programie testów](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
- - [Planowanie zarządzania ryzykiem w niejawnym programie testów](insider-risk-management-plan.md#plan-for-insider-risk-management)
+ - [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+ - [Zaplanuj zarządzanie ryzykiem wewnętrznym](insider-risk-management-plan.md#plan-for-insider-risk-management)
 
-Urządzenia z systemem macOS muszą być już zarządzane za pośrednictwem usługi Intune lub usługi JAMF Pro.
+Urządzenia z systemem macOS muszą być już zarządzane za pośrednictwem usługi Intune lub JAMF Pro.
  
-- Aby przystąpić do usługi Intune, zobacz Przewodnik po wdrażaniu: Zarządzanie urządzeniami [z systemem macOS](/mem/intune/fundamentals/deployment-guide-platform-macos) w usłudze Microsoft Intune i [Rejestrowanie komputera Mac w usłudze Intune — Portal firmy](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- Aby do usługi Intune, zobacz Przewodnik wdrażania: Zarządzanie urządzeniami [z systemem macOS](/mem/intune/fundamentals/deployment-guide-platform-macos) w programie Microsoft Intune i [Rejestrowanie komputera Mac](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) za pomocą Intune — Portal firmy. 
 - Aby wdąć do usługi JAMF Pro zobacz przewodnik administratorów usługi [JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) oraz Przewodnik po instalacji i konfiguracji usługi [JAMF Pro dla komputerów Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/).
 - Instalowanie przeglądarki Edge w wersji 95+ na urządzeniach z systemem macOS 
 
@@ -87,10 +87,7 @@ Jeśli chcesz wboardować urządzenia, które nie zostały jeszcze w nim podłą
    > [!NOTE]
    > Włączanie dołączania do urządzenia trwa zwykle około 60 sekund, ale skontaktuj się z pomocą techniczną firmy Microsoft na maksymalnie 30 minut przed jej rozpoczęciem.
 
-2. Otwórz stronę ustawień Centrum zgodności i wybierz pozycję **Urządzenia w układzie .**
-
-   > [!div class="mx-imgBorder"]
-   > ![włącz zarządzanie urządzeniami.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Otwórz stronę ustawień Centrum zgodności i wybierz **pozycję Włącz monitorowanie urządzeń w systemie macOS**.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -98,13 +95,13 @@ Aby móc odbierać telemetrię czujnika DLP i wymuszać zasady ochrony przed utr
 
 Temat | Opis
 :---|:---
-|[Wdychaj i wydojaj urządzenia z systemem macOS Microsoft 365 rozwiązania zgodności przy użyciu usługi Intune (wersja preview)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|W przypadku urządzeń z systemem macOS zarządzanych za pomocą usługi Intune
-|[Dołączanie i wydojażanie urządzeń macOS w rozwiązaniach zgodności przy użyciu usługi Intune dla klientów programu Microsoft Defender for Endpoint (wersja preview)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |W przypadku urządzeń z systemem macOS zarządzanych za pomocą usługi Intune, na których wdrożono program Microsoft Defender for Endpoint (MDE)
+|[Urządzenia z systemem macOS w nowych i Microsoft 365 zgodności przy Intune (wersja zapoznawcza)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|W przypadku urządzeń z systemem macOS zarządzanych za pośrednictwem systemu Intune
+|[Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu usługi Intune dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |W przypadku urządzeń z systemem macOS zarządzanych za Intune i Ochrona punktu końcowego w usłudze Microsoft Defender (MDE)
 |[Urządzenia z systemem macOS w nowych Microsoft 365 zgodności przy użyciu usługi JAMF Pro (wersja zapoznawcza)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | W przypadku urządzeń macOS zarządzanych za pośrednictwem usługi JAMF Pro
-|[Dołączanie i wydoszczenie urządzeń macOS w rozwiązaniach zgodności przy użyciu usługi JAMF Pro dla klientów programu Microsoft Defender for Endpoint (wersja preview)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|W przypadku urządzeń macOS zarządzanych za pośrednictwem usługi JAMF Pro, na których wdrożono program Microsoft Defender for Endpoint (MDE)
+|[Dołączanie i odłączanie urządzeń z systemem macOS do rozwiązań zgodności przy użyciu narzędzia JAMF Pro dla klientów usługi Ochrony punktu końcowego w usłudze Microsoft Defender (wersja zapoznawcza)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|W przypadku urządzeń z systemem macOS zarządzanych za pośrednictwem usługi JAMF Pro, Ochrona punktu końcowego w usłudze Microsoft Defender w nich wdrożono aplikację MDE
 
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Korzystanie z ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
+- [Korzystanie z ochrony przed utratą danych punktu końcowego](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [Macierz obsługi dla porad dotyczących zasad DLP w aplikacjach firmy Microsoft](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

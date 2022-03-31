@@ -1,5 +1,5 @@
 ---
-title: Informacje o domyślnych zasadach ochrony przed utratą danych w aplikacji Microsoft Teams (wersja zapoznawcza)
+title: Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams (wersja zapoznawcza)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,29 +16,20 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Informacje o domyślnych zasadach ochrony przed utratą danych w aplikacji Microsoft Teams
-ms.openlocfilehash: 61a1ea22362d9e75d605660d29116140f6708003
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 61443cdfdc116e9c25d9dad24c968876ae5d0349
+ms.sourcegitcommit: db2ed146b46ade9ea62eed9cb8efff5fea7a35e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990508"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "64481369"
 ---
-# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Informacje o domyślnych zasadach ochrony przed utratą danych w aplikacji Microsoft Teams (wersja zapoznawcza)
+# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Dowiedz się więcej o domyślnych zasadach ochrony przed utratą danych w usłudze Microsoft Teams (wersja zapoznawcza)
 
 [Funkcje ochrony przed utratą](dlp-learn-about-dlp.md) danych zostały rozszerzone tak, aby obejmowały Microsoft Teams czatów i wiadomości kanałów, w tym wiadomości w kanałach prywatnych. W ramach tej wersji tworzona jest domyślna zasada DLP dla klientów, którzy po raz Microsoft Teams po raz pierwszy, do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365.</a>
 
-## <a name="applies-to"></a>Dotyczy
+## <a name="licensing"></a>Licencjonowanie
 
-Dowolna dzierżawa, która ma licencję na co najmniej jedną z poniższych licencji i ma aktywnych Teams użytkowników
- 
-- ME5, 
-- MA5, 
-- Zgodność Z E5/A5, 
-- IP+G, 
-- OE5, 
-- Zaawansowana zgodność z o365 
-- EMS E5
-
+Aby uzyskać pełne informacje dotyczące licencjonowania ochrony przed utratą danych Microsoft Teams, zobacz [Information Protection: Ochrona przed utratą danych w przypadku Teams](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-teams).
 
 ## <a name="what-does-the-default-policy-do"></a>Do czego mają być włączone zasady domyślne?
 

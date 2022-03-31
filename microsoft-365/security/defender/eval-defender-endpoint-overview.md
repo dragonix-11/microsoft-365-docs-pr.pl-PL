@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 05dbf222762837f2916a76cc5b183a99cd981101
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325953"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755099"
 ---
 # <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>Krok nr 4. Omówienie oceniania usługi Microsoft Defender dla punktu końcowego
 
@@ -41,7 +41,7 @@ W tym artykule przedstawiono proces włączania i pilotażowego programu Microso
 
 Aby włączyć i pilotaż usługi Microsoft Defender dla punktu końcowego, należy wykonać poniższe czynności.
 
-![Procedura dodawania programu Microsoft Defender for Endpoint do środowiska oceny usługi Defender.](../../media/defender/m365-defender-endpoint-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-steps.png" alt-text="Procedura dodawania programu Microsoft Defender for Endpoint do środowiska oceny usługi Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-steps.png":::
 
 
 W poniższej tabeli opisano kroki na ilustracji.
@@ -50,6 +50,4 @@ W poniższej tabeli opisano kroki na ilustracji.
 |---------|---------|
 | [Krok 1. Przegląd wymagań dotyczących architektury i kluczowych pojęć](eval-defender-endpoint-architecture.md)    | Poznaj architekturę programu Defender for Endpoint i dostępne funkcje.       |
 |[Krok 2. Włączanie środowiska oceny](eval-defender-endpoint-enable-eval.md)     |   Postępuj zgodnie z instrukcjami, aby skonfigurować środowisko oceny.      |
-|[Krok 3. Konfigurowanie pilotażu ](eval-defender-endpoint-pilot.md)    |    Sprawdź swoją grupę pilotażową, uruchom symulacje i zapoznaj się z kluczowymi funkcjami i pulpitami nawigacyjnymi.     |
-
-
+|[Krok 3. Konfigurowanie pilotażu ](eval-defender-endpoint-pilot.md)    |    Sprawdź swoją grupę pilotażową, uruchom symulacje i zapoznaj się z kluczowymi funkcjami i pulpitami nawigacyjnymi. |

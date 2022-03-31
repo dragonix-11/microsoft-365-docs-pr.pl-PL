@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2438e7690230af88eae72e0864184e771bdd4135
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: d77bb5f61127475c8c7c00e58af6c19013aaffe2
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504807"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755424"
 ---
 # <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Krok nr 2. Omówienie oceniania usługi Microsoft Defender pod celu tożsamości
 
@@ -43,14 +43,12 @@ ms.locfileid: "63504807"
 
 Aby włączyć i pilotaż usługi Microsoft Defender dla tożsamości, należy wykonać poniższe czynności.
 
-![Procedura dodawania usługi Microsoft Defender dla tożsamości do środowiska oceny usługi Defender.](../../media/defender/m365-defender-identity-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="Procedura dodawania usługi Microsoft Defender for Identity do środowiska oceny usługi Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
 
 W poniższej tabeli opisano kroki opisane na ilustracji.
 
-| |Krok  |Opis  |
+| Serial Number (Numer seryjny)|Krok  |Opis  |
 |---------|---------|---------|
 |1|[Przegląd wymagań dotyczących architektury i kluczowych pojęć](eval-defender-identity-architecture.md)    | Poznaj architekturę usługi Defender for Identity i upewnij się, że Twoje środowisko spełnia wymagania wstępne dotyczące architektury.       |
 |2|[Włączanie środowiska oceny](eval-defender-identity-enable-eval.md)     |   Postępuj zgodnie z instrukcjami, aby skonfigurować środowisko oceny.      |
 |3|[Konfigurowanie pilotażu](eval-defender-identity-pilot.md)     |   Dowiedz się więcej o ustawieniach wzorcowych dla środowiska tożsamości i wypróbuj samouczki usługi Defender dla tożsamości.     |
-||||
-

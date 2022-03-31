@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse uzyskaj pomoc w rozwiązywaniu problemów i komunikatach o błędach.
-ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775461"
+ms.locfileid: "64403682"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Rozwiązywanie problemów i komunikatów o błędach w programie Microsoft 365 Lighthouse
 
@@ -53,8 +53,8 @@ W tym artykule opisano komunikaty o błędach i problemy, które mogą wystąpi�
 
 **Przyczyna:** Dzierżawy Twoich klientów nie spełniają następujących kryteriów:
 
-  - Aby zarządzać usługą tego klienta, musisz mieć delegowaną (DAP) skonfigurowanie dla tego dostawcy usług zarządzanych*
-  - Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3 lub licencję usługi Windows 365 Business
+  - Aby zarządzać dzierżawą klienta, musisz mieć delegowaną (DAP) skonfigurowanie dla tego dostawcy usług zarządzanych*
+  - Musi mieć co najmniej jedną Microsoft 365 Business Premium, Microsoft 365 E3 lub licencję Windows 365 Business licencji
   - Nie może mieć więcej niż 1000 licencjonowanych użytkowników 
 
 **Rozwiązanie:** W poniższej tabeli opisano różne stany dzierżawy wymagające działania i wyjaśniono, jak je rozwiązać.
@@ -107,7 +107,7 @@ W przypadku klientów z relacjami daP administrator partnerów musi przypisać C
 
 **Przyczyna:** Nie ukończono pomyślnie konfiguracji programu Microsoft Intune w dzierżawie klienta.
 
-**Rozwiązanie:** Upewnij się, że ukończono podstawowe kroki konfiguracji usługi Intune w dzierżawie klienta. Jeśli problem nadal występuje po sprawdzeniu, czy konfiguracja usługi Intune jest ukończona dla dzierżawy klienta, skontaktuj się z pomocą techniczną. Aby uzyskać więcej informacji, [zobacz Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Rozwiązanie:** Upewnij się, że zostały wykonane podstawowe kroki konfiguracji Intune w dzierżawie klienta. Jeśli problem będzie nadal występował po sprawdzeniu, Intune że konfiguracja dzierżawy klienta jest ukończona, skontaktuj się z pomocą techniczną. Aby uzyskać więcej informacji, [zobacz Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ### <a name="cant-access-partner-tenant-data-in-lighthouse"></a>Nie można uzyskać dostępu do danych dzierżawy partnera w latarni morskiej
 
@@ -119,9 +119,9 @@ W przypadku klientów z relacjami daP administrator partnerów musi przypisać C
 
 ### <a name="i-dont-see-any-customer-tenant-data-on-the-device-compliance-and-threat-management-pages-of-lighthouse"></a>Nie widzę żadnych danych dzierżawy klienta na stronach zarządzania zagrożeniami i zgodnością urządzeń w aplikacji Lighthouse
 
-**Przyczyna 1:** Dzierżawa klienta nie ukończyła korzystania z usługi Intune. Dane dzierżawy klienta nie będą dostępne na stronach zgodności urządzeń i zarządzania zagrożeniami w usłudze Lighthouse, dopóki dzierżawa klienta nie ukończy korzystania z usługi Intune.
+**Przyczyna 1:** Dzierżawa klienta nie ukończyła procesu dołączania do usługi Intune. Dane dzierżawy klienta nie będą dostępne na stronach zgodności urządzeń i zarządzania zagrożeniami w układzie Lighthouse, dopóki dzierżawa klienta nie ukończy do Intune.
 
-**Rozwiązanie:** Upewnij się, że dzierżawa klienta, dla których próbujesz wyświetlić dane, zakończyła dołączanie do usługi Intune. Po zakończeniu dołączania w usłudze Intune zezwalaj na dane urządzenia pojawiające się w usłudze Lighthouse po 4 godzinach.
+**Rozwiązanie:** Upewnij się, że dzierżawa klienta, dla których próbujesz wyświetlić dane, zakończyła dołączanie do usługi Intune. Po zakończeniu dołączania w Intune, zezwalaj na dane urządzenia w latarni morskiej po 4 godzinach.
 
 **Przyczyna 2:** Dzierżawa klienta została ostatnio wniesona do latarni morskiej Lighthouse i dane nadal są ładowane w latarni morskiej.
 

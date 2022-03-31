@@ -1,6 +1,6 @@
 ---
 title: Techniki na osi czasu urządzenia
-description: Opis osi czasu urządzenia w programie Microsoft Defender dla punktu końcowego
+description: Opis osi czasu urządzenia w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender
 keywords: Oś czasu urządzenia, punkt końcowy, MITRE, MITRE ATT&CK, techniki, taktyka
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 897a8691bc7cbc3c03adcbf5befc2a2da8b12294
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d724b7663bd4484c630e97362eb5766490e1fa8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997878"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465910"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Techniki na osi czasu urządzenia
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Możesz uzyskać więcej informacji w analizie zdarzeń, które wydarzyły się na określonym urządzeniu. Najpierw wybierz interesujące urządzenie z [listy Urządzenia](machines-view-overview.md). Na stronie urządzenia możesz wybrać kartę Oś czasu, aby wyświetlić wszystkie zdarzenia, które wystąpiły na urządzeniu.
 
@@ -35,13 +35,13 @@ Możesz uzyskać więcej informacji w analizie zdarzeń, które wydarzyły się 
 > [!IMPORTANT]
 > Niektóre informacje odnoszą się do wstępnie dzierżawionych funkcji produktu w publicznej wersji zapoznawczej, która może zostać znacznie zmodyfikowana przed jej komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
-W programie Microsoft Defender for Endpoint **techniki** to dodatkowy typ danych na osi czasu zdarzenia. Techniki zapewniają więcej informacji na temat działań związanych z technikami [MITRE ATT&technikami CK](https://attack.mitre.org/) lub podsektami.
+W Ochrona punktu końcowego w usłudze Microsoft Defender **techniki to** dodatkowy typ danych na osi czasu zdarzenia. Techniki zapewniają więcej informacji na temat działań związanych z technikami [MITRE ATT&technikami CK](https://attack.mitre.org/) lub podsektami.
 
 Ta funkcja upraszcza środowisko badania, pomagając analitykom w zrozumieniu działań obserwowanych na urządzeniu. Analitycy mogą następnie podjąć decyzję o dalszym zbadaniu.
 
 W przypadku podglądu publicznego techniki są domyślnie dostępne i wyświetlane razem ze zdarzeniami, gdy jest wyświetlana oś czasu urządzenia.
 
-![Zrzut ekranu przedstawiający techniki na osi czasu urządzenia.](images/device-timeline-2.png)
+:::image type="content" source="images/device-timeline-2.png" alt-text="Techniki na osi czasu urządzenia" lightbox="images/device-timeline-2.png":::
 
 Techniki są wyróżniane pogrubionym tekstem i wyświetlane z niebieską ikoną po lewej stronie. Odpowiadająca mu nazwa&ATT MITRE jest wyświetlana jako tagi w obszarze Informacje dodatkowe.
 
@@ -55,17 +55,17 @@ Wybierz określoną *technikę ataków,* aby otworzyć powiązaną technikę ATT
 
 Możesz skopiować szczegóły encji, gdy zobaczysz niebieską ikonę po prawej stronie. Aby na przykład skopiować plik pokrewny SHA1, wybierz niebieską ikonę strony.
 
-![Kopiowanie szczegółów encji.](images/techniques-side-pane-clickable.png)
+:::image type="content" source="images/techniques-side-pane-clickable.png" alt-text="Szczegóły jednostki do skopiowania" lightbox="images/techniques-side-pane-clickable.png":::
 
 W przypadku wierszy poleceń można wykonać to samo.
 
-![Kopiowanie wiersza polecenia.](images/techniques-side-pane-command.png)
+:::image type="content" source="images/techniques-side-pane-command.png" alt-text="Opcja kopiowania wiersza polecenia" lightbox="images/techniques-side-pane-command.png":::
 
 ## <a name="investigate-related-events"></a>Badanie zdarzeń pokrewnych
 
 Aby użyć [zaawansowanego wyszukiwania](advanced-hunting-overview.md) w celu znalezienia wydarzeń związanych z wybraną techniką, wybierz pozycję **Znajdź powiązane zdarzenia**. Prowadzi to do zaawansowanej strony wyszukiwania z zapytaniem w celu znalezienia wydarzeń związanych z techniką.
 
-![Zaszukaj powiązane zdarzenia.](images/techniques-hunt-for-related-events.png)
+:::image type="content" source="images/techniques-hunt-for-related-events.png" alt-text="Opcja Hunt for related events (Zaszukaj powiązane zdarzenia)" lightbox="images/techniques-hunt-for-related-events.png":::
 
 > [!NOTE]
 > Zapytanie za pomocą **przycisku Wyszukiwania pokrewnych** zdarzeń z okienka bocznego Technika powoduje wyświetlenie wszystkich zdarzeń związanych z wskazaną techniką, ale nie uwzględnia samej techniki w wynikach zapytania.
@@ -80,7 +80,8 @@ Możesz określić, które kolumny mają być wyświetlane. Możesz również fi
 
 Możesz wybrać kolumny do udostępnienia na osi czasu, wybierając **przycisk Wybierz kolumny** .
 
-![Dostosowywanie kolumn.](images/filter-customize-columns.png)
+:::image type="content" source="images/filter-customize-columns.png" alt-text="Okienko, w którym można dostosowywać kolumny" lightbox="images/filter-customize-columns.png":::
+
 
 W tym miejscu możesz wybrać, które informacje mają być zawarte.
 
@@ -88,9 +89,9 @@ W tym miejscu możesz wybrać, które informacje mają być zawarte.
 
 Aby wyświetlić tylko zdarzenia lub techniki, wybierz **pozycję Filtry na** osi czasu urządzenia i wybierz preferowany typ danych do wyświetlenia.
 
-![Zrzut ekranu filtru.](images/device-timeline-filters.png)
+:::image type="content" source="images/device-timeline-filters.png" alt-text="Okienko Filtry" lightbox="images/device-timeline-filters.png":::
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Wyświetlanie i organizowanie listy Urządzenia](machines-view-overview.md)
-- [Flagi zdarzeń osi czasu dla programu Microsoft Defender dla urządzeń końcowych](device-timeline-event-flag.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender flag zdarzeń osi czasu urządzenia](device-timeline-event-flag.md)

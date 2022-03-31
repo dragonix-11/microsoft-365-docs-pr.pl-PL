@@ -14,22 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65df8553f5ee3b7dd7876557398e0d4aa22c7bd5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b0b94e4905a780be9a608c8e91967b47a4db7160
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323531"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465756"
 ---
 # <a name="create-and-manage-device-tags"></a>Tworzenie tagów urządzeń i zarządzanie nimi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Dodaj tagi na urządzeniach, aby utworzyć logiczną przynależność do grupy. Tagi urządzeń obsługują prawidłowe mapowanie sieci, pozwalając na dołączanie różnych tagów w celu przechwycenia kontekstu i umożliwienia dynamicznego tworzenia listy w ramach zdarzenia. Tagi mogą być używane jako filtr **w widoku Spis** urządzeń lub do grupowania urządzeń. Aby uzyskać więcej informacji na temat grupowania urządzeń, zobacz [Tworzenie grup urządzeń i zarządzanie nimi](machine-groups.md).
 
@@ -56,11 +56,12 @@ Aby dodać tagi urządzeń przy użyciu interfejsu API, zobacz [Dodawanie lub us
 
 2. Wybierz **pozycję Zarządzaj tagami** w wierszu Akcje odpowiedzi.
 
-    :::image type="content" alt-text="Obraz przycisku Zarządzaj tagami." source="images/manage-tags-option.png":::
+    :::image type="content" source="images/manage-tags-option.png" alt-text="Obraz przycisku Zarządzaj tagami" lightbox="images/manage-tags-option.png":::
+    
 
 3. Wpisywanie w celu znalezienia lub utworzenia tagów
 
-    :::image type="content" alt-text="Obraz dodawania tagów na urządzeniu1." source="images/create-new-tag.png":::
+    :::image type="content" source="images/create-new-tag.png" alt-text="Dodawanie tagów na urządzeniu1" lightbox="images/create-new-tag.png":::
 
 Tagi są dodawane do widoku urządzenia i będą również odzwierciedlane w widoku **zapasów** Urządzeń. Następnie możesz użyć **filtru Tagi** , aby wyświetlić odpowiednią listę urządzeń.
 
@@ -71,7 +72,7 @@ Tagi są dodawane do widoku urządzenia i będą również odzwierciedlane w wid
 
 W tym widoku możesz również usuwać tagi.
 
-:::image type="content" alt-text="Obraz dodawania tagów na urządzeniu2." source="images/new-tag-label-display.png":::
+:::image type="content" source="images/new-tag-label-display.png" alt-text="Dodawanie tagów na urządzeniu 2" lightbox="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>Dodawanie tagów urządzeń przez ustawienie wartości klucza rejestru
 

@@ -21,16 +21,16 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 5b684a1ead5638a787413d7470cb103cbe55e7df
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 98d2ee2394e4384fbf8d7b2b3832d11a847b8521
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775527"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755157"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>Krok nr 1. Tworzenie środowiska oceny Microsoft 365 Defender w celu większej ochrony przed cyberzabłędem
 
-Możesz dowiedzieć się więcej na temat tego Microsoft Defender XDR i utworzyć je w krokach, które są rozłożone w pozostałej części tej serii:
+LMożesz dowiedzieć się więcej na temat tego Microsoft Defender XDR i utworzyć je w krokach rozmieszczonych w pozostałej części tej serii:
 
 - [Jak utworzyć środowisko](eval-create-eval-environment.md)
 - Konfigurowanie i poznanie poszczególnych technologii tego xdr firmy Microsoft
@@ -44,7 +44,7 @@ Możesz dowiedzieć się więcej na temat tego Microsoft Defender XDR i utworzy�
 
 Kroki w tej serii są uruchamiane od końca, od nauki pojęć związanych z Microsoft 365 Defender XDR do tworzenia tego środowiska oceny i tworzenia środowiska oceny na żywo.
 
-Istnieją dwa typowe sposoby następnego kroku oceny. W tej serii przyjęto założenie, że masz już dzierżawę produkcyjną Microsoft 365 i aktywujesz licencje wersji próbnej E5, aby ocenić Microsoft 365 Defender *w bieżącym środowisku*. Ocena w miejscu pozwoli zachować wszystkie metody zabezpieczeń przy zakupie licencji po okresie oceny.
+Istnieją dwa typowe sposoby następnego kroku oceny. W tej serii założono, że masz już dzierżawę produkcyjną Microsoft 365 i aktywujesz licencje wersji próbnej E5, aby ocenić Microsoft 365 Defender *w bieżącym środowisku*. Ocena w miejscu pozwoli zachować wszystkie metody zabezpieczeń przy zakupie licencji po okresie oceny.
 
 Drugie to konfigurowanie [środowiska laboratorium Microsoft 365 Defender na](setup-m365deval.md) potrzeby oceny. Pamiętaj, że podczas testowania może nie mieć wielu rzeczywistych sygnałów od firmy.
 

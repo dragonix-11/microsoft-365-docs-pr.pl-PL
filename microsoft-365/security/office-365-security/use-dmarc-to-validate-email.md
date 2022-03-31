@@ -18,20 +18,20 @@ ms.collection:
 description: Dowiedz się, jak skonfigurować DMARC (Domain-based Message Authentication, Reporting, and Conformance) do sprawdzania poprawności wiadomości wysłanych z Twojej organizacji.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b166a481bf503ce2d46e79f2cb674861935f4ff
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: cae3f007cc046bfc2afd6bb7322c65fe047816d5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63006564"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465888"
 ---
-# <a name="use-dmarc-to-validate-email"></a>Używanie funkcji DMARC do sprawdzania poprawności wiadomości e-mail
+# <a name="use-dmarc-to-validate-email"></a>Sprawdzanie poprawności poczty e-mail przy użyciu usługi DMARC
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [DMARC](https://dmarc.org) (Domain-based Message Authentication, Reporting, and Conformance) działa z mechanizmami SPF (Sender Policy Framework) i DKIM (DomainKeys Identified Mail) w celu uwierzytelniania nadawców poczty i upewnienia się, że docelowe systemy poczty e-mail zaufają wiadomościom wysyłanym z Twojej domeny. Wdrożenie DMARC za pomocą SPF i DKIM zapewnia dodatkową ochronę przed fałszowaniem i wyłudzaniem informacji e-mail. DMARC ułatwia odbieranie systemów poczty w określaniu, co należy zrobić z wiadomościami wysyłanymi z Twojej domeny, w przypadku których nie są sprawdzane SPF lub DKIM.
@@ -258,7 +258,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 Wszystkie lub większość poczty e-mail będą najpierw kierowane mail.contoso.com, ponieważ jest to podstawowy rekord MX, a następnie poczta zostanie przekierowyowana do usługi EOP. W niektórych przypadkach możesz nawet nie wyświetlić usługi EOP jako rekordu MX i po prostu podłączyć łączniki w celu rozsyłania wiadomości e-mail. Program EOP nie musi być pierwszym wpisem do weryfikacji DMARC. Zapewnia jedynie sprawdzenie poprawności, aby mieć pewność, że wszystkie serwery lokalne/inne niż O365 będą przeprowadzać testy DMARC.  Podczas konfiguracji rekordu TXT DMARC dMARC można wymuszać na domenie klienta (nie na serwerze), ale w rzeczywistości to serwer odbierający musi wykonać wymuszenie.  Jeśli usługę EOP skonfigurujesz jako serwer odbierający, wówczas program EOP będzie wymuszał DMARC.
 
-:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="Grafika rozwiązywania problemów dMARC dzięki uprzejmości Daniela Mande" lightbox="../../media/Tp_DMARCTroublehoot.png":::
+:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="Grafika rozwiązywania problemów dMARC" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
 ## <a name="for-more-information"></a>Aby uzyskać więcej informacji
 

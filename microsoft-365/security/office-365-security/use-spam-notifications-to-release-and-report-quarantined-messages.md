@@ -21,12 +21,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej o powiadomieniach użytkowników końcowych o spamie dla wiadomości poddanych kwarantannie w u Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1950104e910733bfb3f846ff53411a6c75bbd68d
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 706303e7bdab7297fbc1dd353238db3542c28177
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "63007481"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465844"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Używanie powiadomień kwarantanny do zwalniania i zgłaszania poddanych kwarantannie wiadomości
 
@@ -34,7 +34,7 @@ ms.locfileid: "63007481"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 W Microsoft 365 z skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacjach usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online kwarantanna zawiera potencjalnie niebezpieczne lub niechciane wiadomości. Aby uzyskać więcej informacji, zobacz [Poddaj wiadomości kwarantannie w uchęce EOP](quarantine-email-messages.md).
@@ -50,7 +50,7 @@ Administratorzy mogą także użyć ustawień globalnych w zasadach kwarantanny 
 W przypadku udostępnionych skrzynek pocztowych powiadomienia kwarantanny są obsługiwane tylko dla użytkowników, którym udzielono uprawnień Pełny dostęp do udostępnionej skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz [Edytowanie delegowania](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation) udostępnionej skrzynki pocztowej za pomocą programu EAC.
 
 > [!NOTE]
-> Domyślnie wiadomości poddane kwarantannie są stosowane do wyłudzania informacji o wysokiej pewności, złośliwego oprogramowania, reguł przepływu poczty e-mail (nazywanych również regułami transportu) lub zasad załączników programu Sejf w programie Defender dla programu Office 365 są dostępne tylko dla administratorów (domyślnie są używane zasady kwarantanny AdminOnlyAccessPolicy). Aby uzyskać więcej informacji, zobacz [Zarządzanie poddatymi wiadomościami i plikami jako administrator w u usługi EOP](manage-quarantined-messages-and-files.md).
+> Domyślnie wiadomości poddane kwarantannie są nazywane próbami wyłudzania informacji o wysokiej pewności, złośliwym oprogramowaniem, regułami przepływu poczty e-mail (nazywanymi również regułami transportu) lub Sejf Zasady załączników w programie Ochrona usługi Office 365 w usłudze Defender są dostępne tylko dla administratorów (domyślnie są używane zasady kwarantanny AdminOnlyAccessPolicy). Aby uzyskać więcej informacji, zobacz [Zarządzanie poddatymi wiadomościami i plikami jako administrator w u usługi EOP](manage-quarantined-messages-and-files.md).
 >
 > Obecnie powiadomienia kwarantanny nie są obsługiwane dla grup ani wiadomości wyłudzających informacje o wysokiej pewności. 
 
@@ -68,7 +68,7 @@ Domyślnie w powiadomieniu kwarantanny dla wiadomości poddanych kwarantannie ja
 - **Wersja**: Możesz zwolnić wiadomość w tym miejscu bez konieczności przejść do kwarantanny **w Microsoft 365 Defender** portalu.
 - **Recenzja**: Kliknij ten link, aby  przejść do kwarantanny w portalu usługi Microsoft 365 Defender, gdzie możesz (w zależności od tego, dlaczego wiadomość została poddana kwarantannie), zwolnić, usunąć lub zgłosić poddaną kwarantannie wiadomości. Aby uzyskać więcej informacji, zobacz Znajdowanie i zwalnianie poddanych [kwarantannie wiadomości jako użytkownik w u kontie EOP](find-and-release-quarantined-messages-as-a-user.md).
 
-![Przykład powiadomienia o kwarantannie.](../../media/end-user-spam-notification.png)
+:::image type="content" source="../../media/end-user-spam-notification.png" alt-text="Przykład powiadomienia kwarantanny" lightbox="../../media/end-user-spam-notification.png":::
 
 > [!NOTE]
 > Zablokowany nadawca nadal może ci wysyłać wiadomości. Wszystkie wiadomości od tego nadawcy, które przeniosą się do Twojej skrzynki pocztowej, zostaną natychmiast przeniesione do folderu Wiadomości-śmieci. Przyszłe wiadomości od tego nadawcy będą trafiać do folderu Wiadomości-śmieci lub do kwarantanny. Jeśli chcesz usunąć te wiadomości po nadejściu, zamiast kwartylować je, użyj reguł przepływu [poczty (](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) nazywanych również regułami transportu) w celu usunięcia wiadomości przy nadejściu.

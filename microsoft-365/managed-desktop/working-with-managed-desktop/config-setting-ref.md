@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 2005ead772399f26c3537ac8bf36f6b0810b07fb
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 18fc51f37e66cd3212ea1e5af22ed4389d025a05
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63495042"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755077"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Informacje dotyczące ustawień konfigurowalnych — Microsoft Managed Desktop
 
@@ -150,6 +150,7 @@ W przypadku wyjątków dla serwera proxy i witryny proxy muszą być spełnione 
 
 - Musi to być prawidłowy adres serwera i numer portu.
 - Adresy URL muszą być prawidłową witryną http.
+- Wyjątki serwera proxy powinny mieć maksymalnie 2064 znaki. Dotyczy to także dodanych Microsoft Managed Desktop adresowych.
 
 ### <a name="customize-and-deploy-proxies"></a>Dostosowywanie i wdrażanie serwerów proxy
 

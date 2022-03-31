@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) korzystających Microsoft 365 Lighthouse, dowiedz się, jak skonfigurować zabezpieczenia portalu.
-ms.openlocfilehash: 8f8ec851d2ce6795565530e120f3704128336ea2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: dd99330d520b409a93cfd5d1ca777c17b9ef4373
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323125"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775945"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Konfigurowanie Microsoft 365 Lighthouse zabezpieczeń portalu
 
@@ -37,7 +37,7 @@ Gdy użytkownicy po raz pierwszy uzyskają dostęp do latarni morskiej, zostanie
 
 ## <a name="set-up-role-based-access-control"></a>Konfigurowanie kontroli dostępu opartej na rolach
 
-Kontrola dostępu oparta na rolach udziela dostępu do zasobów lub informacji na podstawie ról użytkowników. Dostęp do danych i ustawień dzierżawy klienta w aplikacji Lighthouse jest ograniczony do konkretnych ról w programie Dostawca rozwiązań w chmurze (CSP). Aby skonfigurować role RBAC w latarni lighthouse, zalecamy stosowanie szczegółowych uprawnień administratora delegowanego (GDAP, Granular Delegated Admin Privileges) w celu implementowania szczegółowych przypisań dla użytkowników.
+Kontrola dostępu oparta na rolach udziela dostępu do zasobów lub informacji na podstawie ról użytkowników. Dostęp do danych i ustawień dzierżawy klienta w aplikacji Lighthouse jest ograniczony do konkretnych ról w programie Dostawca rozwiązań w chmurze (CSP). Aby skonfigurować role RBAC w latarni lighthouse, zalecamy stosowanie szczegółowych uprawnień administratora delegowanego (GDAP, Granular Delegated Admin Privileges) w celu implementowania szczegółowych przypisań dla użytkowników. Aby dzierżawa pomyślnie wdała się w usługi, nadal wymagane są delegowane uprawnienia administratora (DAP, Delegated Admin Privileges), ale klienci korzystający tylko z protokołu GDAP będą wkrótce mogli dołączać bez zależności od protokołu DAP. Uprawnienia GDAP mają pierwszeństwo, gdy usługi DAP i GDAP są współistniene dla klienta. 
 
 Aby rozpocząć pracę z GDAP, zobacz [Konfigurowanie ról w celu zarządzania dzierżawami klientów](m365-lighthouse-set-up-roles.md).
 

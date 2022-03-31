@@ -1,5 +1,5 @@
 ---
-title: Sprawdzanie stanu kondycji czujnika w programie Microsoft Defender dla punktu końcowego
+title: Sprawdź stan kondycji czujnika w Ochrona punktu końcowego w usłudze Microsoft Defender
 description: Sprawdź kondycję czujnika na urządzeniach, aby sprawdzić, które z nich są nieprawidłowo skonfigurowane, nieaktywne lub nie zgłaszają danych czujnika.
 keywords: czujnik, kondycja czujnika, nieprawidłowo skonfigurowane, nieaktywne, bez danych czujnika, dane czujnika, zakłócona komunikacja, komunikacja
 ms.prod: m365-security
@@ -15,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 926e23da7e439aa6035574a13bab2752004dd189
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bba5fde870b2916501f4154c6ff628a0d2e3ff1f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "62996766"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465477"
 ---
-# <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Sprawdzanie stanu kondycji czujnika w programie Microsoft Defender dla punktu końcowego
+# <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Sprawdzanie stanu kondycji czujnika w Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
@@ -42,7 +42,7 @@ Na kafelku są dwa wskaźniki stanu, które dostarczają informacji o liczbie ur
 
 Kliknięcie dowolnej grupy pokieruje Cię do **listy** Urządzenia przefiltrowane według wybranej opcji.
 
-![Zrzut ekranu przedstawiający kafelek Urządzenia z czujnikami.](images/atp-devices-with-sensor-issues-tile.png)
+:::image type="content" source="images/atp-devices-with-sensor-issues-tile.png" alt-text="Urządzenia z kafelkiem problemów z czujnikami" lightbox="images/atp-devices-with-sensor-issues-tile.png":::
 
 Na **liście Urządzenia** można filtrować listę stanu kondycji według następującego stanu:
 
@@ -57,7 +57,7 @@ Możesz również pobrać całą listę w formacie CSV przy użyciu **funkcji Ek
 > [!NOTE]
 > Wyeksportuj listę w formacie CSV, aby wyświetlić niefiltrowane dane. Plik CSV będzie zawierać wszystkie urządzenia w organizacji, niezależnie od filtrowania zastosowanego w samym widoku i w zależności od tego, jak duża jest Twoja organizacja, może zająć dużo czasu.
 
-![Zrzut ekranu przedstawiający stronę listy Urządzenia.](images/atp-devices-list-page.png)
+:::image type="content" source="images/atp-devices-list-page.png" alt-text="Karta Eksportuj na stronie listy Urządzenie" lightbox="images/atp-devices-list-page.png":::
 
 Po kliknięciu nieprawidłowo skonfigurowanego lub nieaktywnego urządzenia możesz wyświetlić szczegóły urządzenia.
 

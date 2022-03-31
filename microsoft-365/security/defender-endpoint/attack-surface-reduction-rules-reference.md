@@ -1,7 +1,7 @@
 ---
 title: Informacje dotyczące reguł zmniejszania powierzchni ataków
 description: Zawiera szczegółowe informacje na temat reguł ograniczania powierzchni ataków z jedną regułą.
-keywords: Reguły ograniczania powierzchni ataków, ASR, reguły asr, hips, host intrusion prevention system, reguły ochrony, reguły ochrony przed wirusami, ochrona przed wirusami, zasady ochrony przed nadużyciami, reguły zapobiegania powstawaniu wirusów, program Microsoft Defender for Endpoint, konfigurowanie reguł ASR, opis reguły ASR
+keywords: Reguły zmniejszania powierzchni ataków, ASR, reguły asr, hips, host intrusion prevention system, zasady ochrony, reguły ochrony, zasady ochrony przed wirusami, ochrona przed wirusami, wykorzystywanie reguł, reguły zapobiegania powstawaniu Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł ASR, opis reguły ASR
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,19 +17,19 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 77edaa3d71911bd0594e707996c320285dddabc5
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: b9655189759707e9c4463d3c53a3b0b9fd20e730
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754115"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520585"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Informacje dotyczące reguł zmniejszania powierzchni ataków
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Ten artykuł zawiera informacje na temat reguł ograniczania ataków:
@@ -37,9 +37,10 @@ Ten artykuł zawiera informacje na temat reguł ograniczania ataków:
 - [Obsługiwane wersje systemu operacyjnego](#supported-operating-systems)
 - [Obsługiwane systemy zarządzania konfiguracją](#supported-configuration-management-systems)
 - [Alerty i szczegóły powiadomień dotyczące  per-rule](#per-rule-alert-and-notification-details)
+- [Reguły ASR i macierz identyfikatorów GUID](#asr-rules-and-guids-matrix)
+- [Tryby reguły ASR](#asr-rule-modes)
 - [Opisy dla poszczególnych reguł](#per-rule-descriptions)
   - Opisy reguł
-  - Identyfikatory GUID
   - Nazwy reguł systemu zarządzania konfiguracją
 
 ## <a name="public-preview-supported-operating-systems"></a>Publiczna wersja zapoznawcza: Obsługiwane systemy operacyjne
@@ -132,8 +133,8 @@ Poniżej tej tabeli znajdują się linki do informacji o wersjach systemu zarzą
 
   (<a id="fn1">1</a>) Możesz konfigurować reguły ograniczania powierzchni ataków z każdą regułą przy użyciu identyfikatora GUID dowolnej reguły.
 
-- [Menedżer konfiguracji CB 1710](/configmgr/core/servers/manage/updates)
-- [Menedżer konfiguracji CB 1802](/configmgr/core/servers/manage/updates)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
+- [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_Już nie można Microsoft Endpoint Configuration Manager._
 
@@ -143,7 +144,7 @@ Dla wszystkich reguł w trybie blokowania są generowane wyskakujące powiadomie
 
 W przypadku reguł z określonym "województwem reguły":
 
-- Reguły ASR z kombinacjami \<ASR Rule, Rule State\> są używane do powierzchni alertów (powiadomień toastowych) w usłudze Microsoft Defender dla punktu końcowego tylko dla urządzeń na poziomie bloków chmury o wysokim poziomie chmury. Urządzenia, które nie są na wysokim poziomie bloków chmury, nie będą generować alertów <reguł asr, reguł i kombinacji> reguł
+- Reguły ASR ze \<ASR Rule, Rule State\> kombinacjami są używane do powierzchni alertów (powiadomień Ochrona punktu końcowego w usłudze Microsoft Defender) tylko dla urządzeń o wysokim poziomie bloków chmury. Urządzenia, które nie są na wysokim poziomie bloków chmury, nie będą generować alertów <reguł asr, reguł i kombinacji> reguł
 - EDR alerty są generowane dla reguł ASR w określonych stanach, ale tylko dla urządzeń o wysokim poziomie bloków chmury.
 
 | Nazwa reguły: | Stan reguły: | Generuje alerty w programie EDR? <br> (Tak)&nbsp;\|&nbsp;Nie) | Generuje wyskakujące powiadomienia? <br> (Tak)&nbsp;\|&nbsp;Nie) |
@@ -167,6 +168,27 @@ W przypadku reguł z określonym "województwem reguły":
 |[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury  | N \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury |
 |   |   |   |   |
   
+## <a name="asr-rules-and-guids-matrix"></a>Reguły ASR i macierz identyfikatorów GUID
+
+| Nazwa reguły | Identyfikator GUID reguły |
+|:-----|:-----|
+| Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników | 56a863a9-875e-4185-98a7-b882c64b5ce5 |
+| Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c |
+| Blokowanie tworzenia procesów Office przez wszystkie aplikacje | d4f940ab-401b-4efc-aadc-ad5f3c50688a |
+| Blokowanie wykradania poświadczeń z podsystemu Windows Security Authority (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
+| Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej | be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 |
+| Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryterium listy zaufanej, jego wieku lub wieku. | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
+| Blokowanie wykonywania potencjalnie obcofkowanych skryptów | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
+| Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript | d3e037e1-3eb8-44c8-a917-57927947596d |
+| Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje | 3b576869-a4ec-4529-8536-b80a7769e899 |
+| Blokowanie Office aplikacji ze insektowania kodu do innych procesów | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
+| Blokowanie Office komunikacji z tworzeniem procesów podrzędnych | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
+| Blokowanie utrwaloności za pośrednictwem subskrypcji zdarzeń usługi WMI <br>* Wykluczenia plików i folderów nie są obsługiwane. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
+| Blokowanie procesów pochodzących z poleceń PSExec i WMI | d1e49aac-8f56-4280-b9ba-993a6d77406c |
+| Blokowanie niezaufanych i niepodpisanych procesów uruchamianych z usb | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
+| Blokowanie wywołań interfejsu API Win32 Office makr | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
+| Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup | c1db55ab-c21a-4637-bb3f-a12568109d35 |
+
 ## <a name="asr-rule-modes"></a>Tryby reguły ASR
 
 - **Nieskonfigurowane** **lub Wyłączone**: jest to stan, w którym reguła asR nie została włączona lub została wyłączona. Kod dla tego stanu = 0.
@@ -203,9 +225,9 @@ Reguła **Blokuj nadużycie wykorzystywania narażonych** na zagrożenia podpisa
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-Nazwa usługi Intune: `Block abuse of exploited vulnerable signed drivers` (jeszcze niedostępne)
+Intune Nazwa: `Block abuse of exploited vulnerable signed drivers` (jeszcze niedostępne)
 
-Menedżer konfiguracji: Jeszcze niedostępne
+Configuration Manager: Jeszcze niedostępne
   
 Identyfikator GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
@@ -214,7 +236,7 @@ Advanced hunting action type:
 -->
 
 <!-- 
-Dependencies:
+Dependencies: none provided by engineering
 -->
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader
@@ -223,9 +245,9 @@ Ta reguła zapobiega atakom, blokując proces tworzenia procesów przez program 
 
 W ramach technik społecznościowych lub luk w zabezpieczeniach złośliwe oprogramowanie może pobierać i uruchamiać łady, a także wymykać się z programu Adobe Reader. Blokując procesy podrzędne generowane przez program Adobe Reader, nie można rozpowszechniać złośliwego oprogramowania próbującego użyć go jako wektora.
 
-Nazwa usługi Intune: `Process creation from Adobe Reader (beta)`
+Intune:`Process creation from Adobe Reader (beta)`
 
-Menedżer konfiguracji: Jeszcze niedostępne
+Configuration Manager: Jeszcze niedostępne
 
 Identyfikator GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
@@ -242,9 +264,9 @@ Ta reguła blokuje Office tworzenia procesów podrzędnych przez aplikacje. Offi
 
 Tworzenie złośliwych procesów dzieci to często strategia złośliwego oprogramowania. Złośliwe oprogramowanie, które wykorzystujące Office w wektorze często uruchamia makra VBA i wykorzystując kod w celu pobrania i próby uruchomienia większej liczby plików. Jednak niektóre legalne aplikacje firmowe mogą również generować procesy podrzędne w celu ich zasyłowania. na przykład w celu skonfigurowania ustawień rejestru za pomocą wiersza polecenia lub programu PowerShell.
 
-Nazwa usługi Intune: `Office apps launching child processes`
+Intune:`Office apps launching child processes`
 
-Menedżer konfiguracji: `Block Office application from creating child processes`
+Configuration Manager:`Block Office application from creating child processes`
 
 Identyfikator GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
@@ -267,9 +289,9 @@ LSASS uwierzytelnia użytkowników, którzy logują się na Windows komputerze. 
 > [!IMPORTANT]
 > Domyślny stan reguły zmniejszania powierzchni ataków (ASR, Attack Surface Reduction) "Blokuj kradzież poświadczeń z podsystemu Windows Local Security Authority (lsass.exe)" zmieni się z Nieskonfigurowany na  Skonfigurowany, a tryb domyślny **ustawiony na Zablokuj**. Wszystkie pozostałe reguły asr pozostaną w stanie domyślnym: **Nieskonfigurowane**. Dodatkowa logika filtrowania została już włączona do reguły w celu zmniejszenia powiadomień użytkowników końcowych. Klienci mogą skonfigurować tryb **inspekcji, ostrzegania** lub wyłączenia, co spowoduje zastąpienie trybu domyślnego.  Funkcjonalność tej reguły jest taka sama niezależnie od tego, czy reguła jest skonfigurowana w trybie domyślnym, czy też tryb blokowania jest włączany ręcznie.  
 
-Nazwa usługi Intune: `Flag credential stealing from the Windows local security authority subsystem`
+Intune:`Flag credential stealing from the Windows local security authority subsystem`
 
-Menedżer konfiguracji: `Block credential stealing from the Windows local security authority subsystem`
+Configuration Manager:`Block credential stealing from the Windows local security authority subsystem`
 
 Identyfikator GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
@@ -287,7 +309,7 @@ Ta reguła blokuje uruchamianie następujących typów plików z wiadomości e-m
 - Pliki wykonywalne (na przykład .exe, .dll lub scr)
 - Pliki skryptów (na przykład pliki programu PowerShell ps, Visual Basic vbs lub plik .js JavaScript)
 
-Nazwa usługi Intune: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
+Intune:`Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
 Microsoft Endpoint Manager:`Block executable content from email client and webmail`
 
@@ -303,7 +325,7 @@ Zależności: MDAV
 > [!NOTE]
 > Reguła **Blokuj zawartość wykonywaną z klienta poczty e-mail** i poczty internetowej ma następujące opisy alternatywne, w zależności od tego, której aplikacji używasz:
 >
-> - Intune (Profile konfiguracji): Wykonywanie zawartości wykonywanej (exe, dll, ps, js, vbs itp.) nie jest wykonywane z poczty e-mail (klient poczty internetowej/poczty) (bez wyjątków).
+> - Intune (Profile konfiguracji): Wykonywanie zawartości wykonywalnego (exe, dll, ps, js, vbs itp.) usuniętej z poczty e-mail (klient poczty internetowej/poczty) (bez wyjątków).
 > - Endpoint Manager: Blokuj plik wykonywalny pobierania zawartości z klientów poczty e-mail i poczty internetowej.
 > - zasady grupy: Blokuj wykonywaną zawartość z klienta poczty e-mail i poczty internetowej.
 
@@ -318,9 +340,9 @@ Ta reguła blokuje uruchamianie plików wykonywalnych, takich .exe, .dll lub scr
 >
 > Możesz określić poszczególne pliki lub foldery (używając ścieżek folderów lub w pełni kwalifikowanych nazw zasobów), ale nie możesz określić, których reguł lub wykluczeń należy użyć.
 
-Nazwa usługi Intune: `Executables that don't meet a prevalence, age, or trusted list criteria`
+Intune:`Executables that don't meet a prevalence, age, or trusted list criteria`
 
-Menedżer konfiguracji: `Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
+Configuration Manager:`Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
 
 Identyfikator GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
@@ -337,9 +359,9 @@ Ta reguła wykrywa podejrzane właściwości w scenariuszu obwiedni.
 
 Wykorzystanie skryptów to technika często stosowana zarówno do ukrywania własności intelektualnej, jak i używania aplikacji w celu ukrycia własności intelektualnej i zmniejszenia czasu ładowania skryptów. Autorzy złośliwego oprogramowania używają także funkcji zaszytania, aby utrudnić odczytywanie złośliwego kodu, co zapobiega kontroli osób ludzkich i oprogramowania zabezpieczającego.
 
-Nazwa usługi Intune: `Obfuscated js/vbs/ps/macro code`
+Intune:`Obfuscated js/vbs/ps/macro code`
 
-Menedżer konfiguracji: `Block execution of potentially obfuscated scripts`
+Configuration Manager:`Block execution of potentially obfuscated scripts`
 
 Identyfikator GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
@@ -356,9 +378,9 @@ Ta reguła zapobiega uruchamianiu potencjalnie złośliwej pobranej zawartości 
 
 Mimo że nie jest to typowe, aplikacje firmowe czasami używają skryptów do pobierania i uruchamiania instalatorów.
 
-Nazwa usługi Intune: `js/vbs executing payload downloaded from Internet (no exceptions)`
+Intune:`js/vbs executing payload downloaded from Internet (no exceptions)`
 
-Menedżer konfiguracji: `Block JavaScript or VBScript from launching downloaded executable content`
+Configuration Manager:`Block JavaScript or VBScript from launching downloaded executable content`
 
 Identyfikator GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
@@ -375,7 +397,7 @@ Ta reguła zapobiega tworzeniu potencjalnie złośliwej zawartości wykonywanej 
 
 Złośliwe oprogramowanie, które Office w formacie wektorowym, może próbować się Office i zapisywać złośliwe składniki na dysku. Te złośliwe składniki mogą wystarczyć po ponownym uruchomieniu komputera i są zachowywane w systemie. Dlatego ta reguła będzie chronić się przed wspólną techniką utrwaloności.
 
-Nazwa usługi Intune: `Office apps/macros creating executable content`
+Intune:`Office apps/macros creating executable content`
 
 Nazwa sccm: `Block Office applications from creating executable content`
 
@@ -398,9 +420,9 @@ Nie ma żadnych znanych uzasadnionych celów biznesowych do stosowania podania k
 
 Ta reguła dotyczy programu Word, Excel i PowerPoint.
 
-Nazwa usługi Intune: `Office apps injecting code into other processes (no exceptions)`
+Intune:`Office apps injecting code into other processes (no exceptions)`
 
-Menedżer konfiguracji: `Block Office applications from injecting code into other processes`
+Configuration Manager:`Block Office applications from injecting code into other processes`
 
 Identyfikator GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
@@ -420,9 +442,9 @@ Ta reguła chroni przed atakami ze strony inżynierów społecznościowych i zap
 > [!NOTE]
 > Ta reguła blokuje porady dotyczące zasad DLP i porady dotyczące narzędzi w programie Outlook. Ta reguła dotyczy tylko Outlook i Outlook.com.
 
-Nazwa usługi Intune: `Process creation from Office communication products (beta)`
+Intune:`Process creation from Office communication products (beta)`
 
-Menedżer konfiguracji: Niedostępne
+Configuration Manager: Niedostępne
 
 Identyfikator GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
@@ -442,9 +464,9 @@ Ta reguła zapobiega nadużywaniu funkcji WMI przez złośliwe oprogramowanie do
 
 Zagrożenia bez plików wykorzystują różne taktyki służące do ukrywania się, aby nie być widocznym w systemie plików i aby zyskać okresową kontrolę wykonywania. Niektóre zagrożenia mogą nadużyć dla repozytorium WMI i modelu zdarzeń w celu ukrycia.
 
-Nazwa usługi Intune: Niedostępne
+Intune: Niedostępne
 
-Menedżer konfiguracji: Niedostępne
+Configuration Manager: Niedostępne
 
 Identyfikator GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
@@ -460,11 +482,11 @@ Zależności: MDAV, RPC
 Ta reguła blokuje uruchamianie procesów utworzonych za pośrednictwem programu [PsExec](/sysinternals/downloads/psexec) [i aplikacji WMI](/windows/win32/wmisdk/about-wmi) . Zarówno PsExec, jak i WMI, mogą zdalnie wykonywać kod, dlatego istnieje ryzyko, że złośliwe oprogramowanie będzie używać tej funkcji w celu poleceń i kontroli lub rozpowszechniania zainfekowania sieci organizacji.
 
 > [!WARNING]
-> Tej reguły należy używać tylko wtedy, gdy zarządzasz urządzeniami za pomocą usługi [Intune](/intune) lub innego rozwiązania MDM. Ta reguła jest niezgodna z zarządzaniem za pośrednictwem programu [Microsoft Endpoint Configuration Manager](/configmgr) ponieważ blokuje poprawne działanie Menedżer konfiguracji WMI.
+> Tej reguły należy używać tylko wtedy, gdy zarządzasz urządzeniami za pomocą [Intune lub innym](/intune) rozwiązaniem MDM. Ta reguła jest niezgodna z zarządzaniem za pośrednictwem programu [Microsoft Endpoint Configuration Manager](/configmgr) ponieważ ta reguła blokuje poprawne działanie Configuration Manager WMI.
 
-Nazwa usługi Intune: `Process creation from PSExec and WMI commands`
+Intune:`Process creation from PSExec and WMI commands`
 
-Menedżer konfiguracji: Nie dotyczy
+Configuration Manager: Nie dotyczy
 
 Identyfikator GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
@@ -479,9 +501,9 @@ Zależności: MDAV
 
 Przy użyciu tej reguły administratorzy mogą zapobiec uruchamianiu niepodpisanych lub niezaufanych plików wykonywalnych z wymiennych dysków USB, w tym kart SD. Blokowane typy plików obejmują pliki wykonywalne (na przykład .exe, .dll lub scr)
 
-Nazwa usługi Intune: `Untrusted and unsigned processes that run from USB`
+Intune:`Untrusted and unsigned processes that run from USB`
 
-Menedżer konfiguracji: `Block untrusted and unsigned processes that run from USB`
+Configuration Manager:`Block untrusted and unsigned processes that run from USB`
 
 Identyfikator GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
@@ -503,11 +525,11 @@ Obsługiwane systemy operacyjne:
 - [Windows 10, wersja 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, wersja 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- [Menedżer konfiguracji CB 1710](/configmgr/core/servers/manage/updates)
+- [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
-Nazwa usługi Intune: `Win32 imports from Office macro code`
+Intune:`Win32 imports from Office macro code`
 
-Menedżer konfiguracji: `Block Win32 API calls from Office macros`
+Configuration Manager:`Block Win32 API calls from Office macros`
 
 Identyfikator GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
@@ -531,9 +553,9 @@ Reguła zwykle ma błąd z boku ostrożności, aby zapobiec wymuszaniu okupu.
 > [!NOTE]
 > Aby użyć [tej reguły, należy włączyć ochronę w](enable-cloud-protection-microsoft-defender-antivirus.md) chmurze.
 
-Nazwa usługi Intune: `Advanced ransomware protection`
+Intune:`Advanced ransomware protection`
 
-Menedżer konfiguracji: `Use advanced protection against ransomware`
+Configuration Manager:`Use advanced protection against ransomware`
 
 Identyfikator GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 

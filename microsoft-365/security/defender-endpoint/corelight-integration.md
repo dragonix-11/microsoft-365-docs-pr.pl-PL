@@ -1,5 +1,5 @@
 ---
-title: Włączanie integracji programu Corelight w programie Microsoft Defender for Endpoint
+title: Włączanie integracji z programem Corelight w Ochrona punktu końcowego w usłudze Microsoft Defender
 description: Włącz integrację z programem Corelight, aby uzyskać widoczność informacji skupioną na urządzeniach IoT/OT w obszarach sieci, w których nie wdrożono funkcji MDE
 keywords: Enable siem connector, siem, connector, security information and events
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34e8b1f97319e4881175c7d79629dbed83730738
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 3a7a4b7ab842baaadb276e60037451e8eb919bf9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017933"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465492"
 ---
 # <a name="enable-corelight-data-integration"></a>Włączanie integracji danych z programem Corelight
 
@@ -34,11 +34,11 @@ ms.locfileid: "63017933"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Firma Microsoft współpracuje z firmą [Corelight](https://corelight.com/integrations/iot-security), dostawcą wiodącej w branży platformy do wykrywania i reagowania (NDR, Open Network Detection and Response), aby ułatwić odnajdowanie urządzeń IoT/OT w organizacji. Korzystanie z danych wysyłanych z urządzeń sieciowych Corelight zwiększa Microsoft 365 Defender wgląd w działania sieciowe urządzeń niezamanektowych, w tym komunikację z innymi urządzeniami niezakierowymi lub sieciami zewnętrznymi.
 
-Gdy to źródło danych jest włączone, wszystkie zdarzenia z urządzeń sieciowych Corelight są wysyłane do Microsoft 365 Defender. Te działania możesz wyświetlić na osi czasu dla urządzeń nieza zarządzaniem, dostępnej w spisie urządzeń programu Microsoft Defender for Endpoint. Aby uzyskać więcej informacji, zobacz [Odnajdowanie urządzeń](device-discovery.md).
+Gdy to źródło danych jest włączone, wszystkie zdarzenia z urządzeń sieciowych Corelight są wysyłane do Microsoft 365 Defender. Te działania możesz wyświetlić na osi czasu dla urządzeń nieza zarządzaniem, dostępnej w spisie Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach. Aby uzyskać więcej informacji, zobacz [Odnajdowanie urządzeń](device-discovery.md).
 
 ## <a name="enabling-the-corelight-integration"></a>Włączanie integracji z programem Corelight
 
@@ -52,7 +52,7 @@ Aby włączyć integrację z programem Corelight, musisz wykonać następujące 
 
 1. W okienku nawigacji w portalu wybierz [https://security.microsoft.com](https://security.microsoft.com/) pozycję Ustawienia  \> **Źródeł danych odnajdowania** \> **urządzeń**.
 
-    ![Obraz źródeł danych](images/enable-corelight.png)
+   :::image type="content" source="images/enable-corelight.png" alt-text="Strona źródeł danych w portalu Microsoft 365 Defender sieci Web" lightbox="images/enable-corelight.png":::
 
 2. Wybierz **pozycję Wyślij dane corelight do M365D** i wybierz pozycję **Zapisz**.
 
@@ -81,15 +81,15 @@ Poza tym sprawdzanie poprawności graficznego interfejsu użytkownika wymaga sko
 1. W sekcji konfiguracji graficznego interfejsu użytkownika czujnika Corelight wybierz pozycję **Eksport czujnika** \> **.**
 2. Z listy przejdź do export **to KAFKA** i wybierz przełącznik, aby go włączyć.
 
-   ![Obraz eksportu kafka](images/exporttokafka.png)
+   :::image type="content" source="images/exporttokafka.png" alt-text="Kafka export" lightbox="images/exporttokafka.png":::
 
 3. Następnie włącz eksport do usługi **AZURE DEFENDER FOR IOT** i wprowadź identyfikator dzierżawy w kroku 1 w polu Identyfikator DZIERŻAWY.
 
-   ![Obraz eksportu iot](images/exporttodiot.png)
+   :::image type="content" source="images/exporttodiot.png" alt-text="Eksport iot" lightbox="images/exporttodiot.png":::
 
 4. Wybierz **pozycję Apply Changes (Zastosuj zmiany**).
 
-   ![Zastosuj obraz ](images/corelightapply.png)
+   :::image type="content" source="images/corelightapply.png" alt-text="Ikona Zastosuj zmiany" lightbox="images/corelightapply.png":::
 
 > [!NOTE]
 > Opcje konfiguracji w programie Kafka (z wyjątkiem wykluczeń dziennika i filtrów) nie powinny być zmieniane. Wszelkie wprowadzone zmiany zostaną zignorowane.

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 88b1bc6c46296e3694ef53ae733955a1491b21c7
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: fdba7ee1b1cf2f46bd17c648c7cda48f1ca65490
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010368"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755222"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Tworzenie aplikacji w celu uzyskania Microsoft 365 Defender interfejsów API w imieniu użytkownika
 
@@ -69,11 +69,12 @@ W tym artykule wyjaśniono, jak to zrobić:
 
 2. Przejdź do **Azure Active Directory** >  **Rejestracja aplikacjiAppNew** >  **registration**.
 
-   ![Obraz Microsoft Azure nawigacji do rejestracji aplikacji.](../../media/atp-azure-new-app2.png)
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Opcja Nowa rejestracja w okienku Zarządzanie w Portalu Azure" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. W formularzu wybierz nazwę aplikacji i wprowadź następujące informacje dotyczące przekierowania URI, a następnie wybierz pozycję **Zarejestruj**.
 
-   ![Obraz okna Tworzenie aplikacji.](../../media/nativeapp-create2.PNG)
+   :::image type="content" source="../../media/nativeapp-create2.PNG" alt-text="Okienko rejestracji aplikacji w Portalu Azure" lightbox="../../media/nativeapp-create2.PNG":::
+   
 
    - **Typ aplikacji:** Klient publiczny
    - **Przekierowywanie URI:** https://portal.azure.com
@@ -83,11 +84,11 @@ W tym artykule wyjaśniono, jak to zrobić:
    > [!TIP]
    > *Ochrona przed zagrożeniami firmy Microsoft* to wcześniejsza Microsoft 365 Defender i nie będzie wyświetlana na oryginalnej liście. Aby tekst był wyświetlany, musisz rozpocząć pisanie jego nazwy w polu tekstowym.
 
-   ![Obraz wyboru uprawnień interfejsu API.](../../media/apis-in-my-org-tab.PNG)
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="Okienko interfejsów API Organizacji w portalu Microsoft 365 Defender sieci" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
    - Wybierz **pozycję Uprawnienia delegowane**. Wybierz odpowiednie uprawnienia dla scenariusza (na przykład **Odczyt zdarzenia**), a następnie wybierz pozycję **Dodaj uprawnienia**.
 
-   ![Obraz dostępu do interfejsu API i wyboru interfejsu API.](../../media/request-api-permissions-delegated.PNG)
+     :::image type="content" source="../../media/request-api-permissions-delegated.PNG" alt-text="Okienko Uprawnienia delegowane w portalu Microsoft 365 Defender wiadomości" lightbox="../../media/request-api-permissions-delegated.PNG":::
 
     > [!NOTE]
     > Musisz wybrać odpowiednie uprawnienia dla swojego scenariusza. *Czytanie wszystkich zdarzeń to* tylko przykład. Aby ustalić, jakich uprawnień potrzebujesz, zapoznaj się z sekcją **Uprawnienia** w interfejsie API, który chcesz wywołać.
@@ -96,11 +97,11 @@ W tym artykule wyjaśniono, jak to zrobić:
 
 5. Wybierz pozycję **Utłań zgodę administratora**. Za każdym razem, gdy dodajesz uprawnienie, musisz zaznaczyć pozycję Udawaj **administratorów** , aby je obowiązywało.
 
-   ![Obraz części Udzielanie uprawnień.](../../media/grant-consent-delegated.PNG)
+   :::image type="content" source="../../media/grant-consent-delegated.PNG" alt-text="Okienko wyrażania zgody przez administratora w portalu Microsoft 365 Defender użytkowników" lightbox="../../media/grant-consent-delegated.PNG":::
 
 6. Zanotuj swój identyfikator aplikacji i identyfikator dzierżawy w bezpiecznym miejscu. Są one wymienione w obszarze **Omówienie** na stronie aplikacji.
 
-   ![Obraz utworzonego identyfikatora aplikacji.](../../media/app-and-tenant-ids.png)
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="Okienko Przegląd w portalu Microsoft 365 Defender wiadomości" lightbox="../../media/app-and-tenant-ids.png":::
 
 ## <a name="get-an-access-token"></a>Uzyskiwanie tokenu dostępu
 
@@ -131,7 +132,7 @@ $response.AccessToken
 
 Na poniższej ilustracji widać dekodowany token nabyte z aplikacji, ```Incidents.Read.All```za pomocą , ```Incidents.ReadWrite.All```i ```AdvancedHunting.Read.All``` uprawnień:
 
-![Obraz sprawdzania poprawności tokenu.](../../media/webapp-decoded-token.png)
+:::image type="content" source="../../media/defender-endpoint/webapp-decoded-token.png" alt-text="Sekcja uprawnień w okienku Token dekodowany w portalu Microsoft 365 Defender sieci" lightbox="../../media/defender-endpoint/webapp-decoded-token.png":::
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Używanie tokenu w celu uzyskania dostępu do Microsoft 365 Defender API
 

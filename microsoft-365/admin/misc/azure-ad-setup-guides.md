@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Dowiedz się więcej o przewodnikach konfiguracji Azure Active Directory.
-ms.openlocfilehash: 0150e88f6e5fc4f7a77ecfcecbc61395bf015c51
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 059890bd6a79ced1f7121e973b070790dffd8db9
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017850"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403616"
 ---
 # <a name="azure-active-directory-setup-guides"></a>Azure Active Directory konfiguracji
 
@@ -29,11 +29,22 @@ Przewodniki konfiguracji ułatwiają skonfigurowanie podstawowych funkcji usług
 
 ### <a name="required-permissions"></a>Wymagane uprawnienia
 
-Musisz być członkiem następujących ról administratora:
+Musisz być członkiem następujących ról administracyjnych:
 
-- Administrator globalny: umożliwia korzystanie ze zintegrowanych narzędzi w przewodnikach konfiguracji w celu zmiany danych Microsoft 365 organizacji.
+- administrator globalny: umożliwia stosowanie zintegrowanych narzędzi z przewodnikami konfiguracji do zmieniania danych Microsoft 365 organizacji.
 
 - Czytnik globalny: umożliwia wyświetlanie przewodników konfiguracji, ale nie pozwala na wprowadzanie zmian w dzierżawie.
+
+## <a name="identity-security-for-teams"></a>Zabezpieczenia tożsamości dla Teams
+
+Azure Active Directory (Azure AD) to oparta na chmurze usługa zarządzania tożsamościami i dostępem, która ułatwia Twoim pracownikom logowanie się do aplikacji i usług oraz uzyskiwanie do nich dostępu.
+Ten wykaz zawiera kilka podstawowych funkcji zabezpieczeń, których można użyć, aby zapewnić bezpieczeństwo użytkownikom i wydajniej korzystać z Teams.
+
+### <a name="licensing"></a>Licencjonowanie
+
+Do korzystania z funkcji zabezpieczeń w tym wykazie jest wymagana licencja Azure Active Directory P2.
+
+[Otwieranie wykazu zabezpieczeń tożsamości Teams tożsamości](https://aka.ms/teamsidentity)
 
 ## <a name="azure-active-directory-deployment"></a>Azure Active Directory wdrażania  
 
@@ -45,13 +56,23 @@ Przewodniki konfiguracji zawierają listę kontrolną zadań, które należy wyk
 
 ## <a name="add-or-sync-users-to-your-microsoft-account"></a>Dodawanie użytkowników do konta Microsoft lub synchronizowanie ich z kontem Microsoft  
 
-Ten przewodnik ułatwia konfigurowanie kont użytkowników na platformie Azure i w Microsoft 365. W zależności od środowiska i potrzeb możesz wybrać opcję dodawania użytkowników pojedynczo, migrowania katalogu lokalnego za pomocą synchronizacji w chmurze usługi Azure AD lub usługi Azure AD Połączenie albo rozwiązywania istniejących problemów z synchronizacją.
-
-[Otwórz przewodnik konfiguracji Dodawania lub synchronizowania użytkowników](https://go.microsoft.com/fwlink/?linkid=2183349).
+Ten przewodnik ułatwia skonfigurowanie kont użytkowników na platformie Azure Microsoft 365. W zależności od środowiska i potrzeb możesz wybrać opcję dodawania użytkowników pojedynczo, migrowania katalogu lokalnego za pomocą synchronizacji w chmurze usługi Azure AD lub usługi Azure AD Połączenie albo rozwiązywania istniejących problemów z synchronizacją.
 
 ### <a name="licensing"></a>Licencjonowanie
 
 Korzystanie Azure Active Directory synchronizacji jest bezpłatne i dostępne we wszystkich Microsoft 365 subskrypcji.
+
+[Otwórz przewodnik konfiguracji Dodawania lub synchronizowania użytkowników](https://go.microsoft.com/fwlink/?linkid=2183349).
+
+## <a name="add-a-cloud-app-to-microsoft-365"></a>Dodawanie aplikacji w chmurze do Microsoft 365 
+
+Ten przewodnik ma na celu pomoc w dodadaniu aplikacji w chmurze do Microsoft 365. W przewodniku możesz dodać aplikację do swojej dzierżawy, dodać użytkowników do aplikacji, przypisać role i nie tylko.  Jeśli aplikacja obsługuje funkcję logowania Sign-On (SSO), również ta konfiguracja zostanie przez nas przejdę przez ten proces.
+
+### <a name="licensing"></a>Licencjonowanie
+
+Każda płatna subskrypcja usługi Microsoft 365 jest wyposażona w bezpłatną subskrypcję usługi Azure AD. Za pomocą usługi Azure AD możesz zarządzać swoimi aplikacjami, a także tworzyć konta użytkowników i grup oraz zarządzać nimi.
+
+[Otwieranie przewodnika po konfiguracji dodawania Microsoft 365 chmury](https://aka.ms/AzureAppSetup)
 
 ## <a name="azure-self-service-password-reset-sspr-guide"></a>Przewodnik Self-Service resetowania hasła usługi Azure (SSPR)
 
@@ -81,8 +102,12 @@ Dostęp warunkowy wymaga licencji Azure Active Directory P1 lub P2, wartości do
 
 [Otwieranie przewodnika uwierzytelniania wieloskładnikowego](https://go.microsoft.com/fwlink/?linkid=2183506)
 
-### <a name="the-passwordless-setup-guide"></a>Przewodnik konfiguracji bez haseł
+## <a name="the-passwordless-setup-guide"></a>Przewodnik konfiguracji bez haseł
 
-Przewodnik konfiguracji bez haseł ma na celu pomoc w określeniu najlepszej metody bez haseł dla Twojego środowiska. Metody te obejmują klucze zabezpieczeń, Windows Hello dla firm i aplikację Microsoft Authenticator firm. Jeśli polecane jest Windows Hello dla firm, istnieje sekcja, która zawiera wskazówki dotyczące różnych opcji. Przewodnik zadaje pytania, aby ułatwić tworzenie planu krok po kroku.
+Przewodnik konfiguracji bez haseł ma na celu pomoc w określeniu najlepszej metody bez haseł dla Twojego środowiska. Metody te obejmują klucze zabezpieczeń, Windows Hello dla firm i Microsoft Authenticator aplikacji. Jeśli to Windows Hello dla firm, możesz to zrobić w sekcji. Przewodnik zadaje pytania, aby ułatwić tworzenie planu krok po kroku.
+
+### <a name="licensing"></a>Licencjonowanie
+
+Każda płatna subskrypcja usługi Microsoft 365 jest wyposażona w bezpłatną subskrypcję usługi Azure AD. Za pomocą usługi Azure AD możesz zarządzać swoimi aplikacjami, a także tworzyć konta użytkowników i grup oraz zarządzać nimi.
 
 [Otwórz przewodnik konfiguracji bez haseł](https://go.microsoft.com/fwlink/?linkid=2183427).

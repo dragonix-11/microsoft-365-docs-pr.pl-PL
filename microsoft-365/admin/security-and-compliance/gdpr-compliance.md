@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Dowiedz się, Microsoft 365 dla firm może pomóc w procesie ogólnego rozporządzenia o ochronie danych (RODO).
-ms.openlocfilehash: 07300313cc2ead3d6efba4295a9219e00a6dc2ec
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7c8a2c402e362ede4eb9b2f4ec221dd8556052db
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312407"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403652"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>Uproszczone RODO: przewodnik dla Twojej małej firmy
 
@@ -133,7 +133,8 @@ Jeśli przechowujesz dokumenty fizyczne z danymi osobnymi, upewnij się, że nie
 Jeśli zdecydujesz się przechowywać dane osobowe w chmurze, na przykład za pośrednictwem usługi Microsoft 365, masz funkcje zabezpieczeń, takie jak możliwość zarządzania uprawnieniami do plików i folderów, scentralizowane bezpieczne lokalizacje zapisywania plików (bibliotek dokumentów programu OneDrive lub SharePoint) oraz szyfrowanie danych podczas wysyłania lub pobierania plików. 
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365 funkcje, które mogą pomóc
-Funkcji [DLP możesz użyć w](set-up-compliance.md#watch-set-up-dlp-features) celu ochrony informacji poufnych Twojej firmy. Możesz skonfigurować [zasady DLP, które](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) będą korzystać z szablonu [RODO](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+
+Za pomocą funkcji [Konfigurowanie zgodności możesz](set-up-compliance.md) chronić informacje poufne swojej firmy. Menedżer zgodności pomoże Ci od razu rozpocząć pracę! Na przykład możesz skonfigurować [zasady DLP, które](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) będą używać szablonu [RODO](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>Krok 5. Zachowaj dokumentację działań przetwarzania danych
 

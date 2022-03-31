@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie funkcji zaawansowanych w programie Microsoft Defender for Endpoint
-description: Włącz funkcje zaawansowane, takie jak blokowanie pliku w programie Microsoft Defender dla punktu końcowego.
+title: Konfigurowanie funkcji zaawansowanych w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Włącz funkcje zaawansowane, takie jak blokowanie pliku w Ochrona punktu końcowego w usłudze Microsoft Defender.
 keywords: funkcje zaawansowane, ustawienia, plik zablokowany, zautomatyzowane badanie, automatyczne rozwiązywanie, skype, microsoft defender for identity, office 365, azure information protection, intune
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,17 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 94e5b18ab1090f6fb76cb7734e90411b93b444e7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327703"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465460"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurowanie funkcji zaawansowanych w programie Defender for Endpoint
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -49,7 +49,7 @@ Włącz tę funkcję, aby korzystać z funkcji automatycznego badania i rozwiąz
 ## <a name="live-response"></a>Odpowiedź na żywo
 
 > [!NOTE]
-> Odpowiedź na **żywo wymaga** włączenia automatycznego badania przed włączeniem jej w sekcji ustawień zaawansowanych w portalu programu Microsoft Defender for Endpoint.
+> Odpowiedź na **żywo wymaga włączenia** automatycznego badania przed włączeniem jej w sekcji ustawień zaawansowanych w portalu Ochrona punktu końcowego w usłudze Microsoft Defender zaawansowanej.
 
 Włącz tę funkcję, aby użytkownicy z odpowiednimi uprawnieniami mogą rozpocząć sesję odpowiedzi na żywo na urządzeniach.
 
@@ -69,11 +69,11 @@ Włączenie tej funkcji umożliwia uruchamianie niepodpisanych skryptów w sesji
 
 Potencjalnie niechciane aplikacje (PUA) to kategoria oprogramowania, która może powodować powolne uruchamianie komputera, wyświetlanie nieoczekiwanych reklam lub w najgorszej sytuacji, instalowanie innego oprogramowania, które może być nieoczekiwane lub niechciane.
 
-Włącz tę funkcję, aby potencjalne niechciane aplikacje były naprawiane na wszystkich urządzeniach w dzierżawie, nawet jeśli na tych urządzeniach nie skonfigurowano ochrony za pomocą funkcji PUA. Pomoże to chronić użytkowników przed nieumyślnym zainstalowaniem niechcianych aplikacji na ich urządzeniach. Gdy jest wyłączona, działania naprawcze zależą od konfiguracji urządzenia.
+Włącz tę funkcję, aby potencjalne niechciane aplikacje były naprawiane na wszystkich urządzeniach w dzierżawie, nawet jeśli na tych urządzeniach nie skonfigurowano ochrony za pomocą funkcji PUA. Ta aktywacja tej funkcji pomaga chronić użytkowników przed nieumyślnym zainstalowaniem niechcianych aplikacji na ich urządzeniach. Gdy jest wyłączona, działania naprawcze zależą od konfiguracji urządzenia.
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Ograniczanie korelacji do grup urządzeń z zakresem
 
-Tej konfiguracji można używać w scenariuszach, w których lokalne operacje SOC powinny ograniczać korelacje alertów tylko do grup urządzeń, do których mogą uzyskać dostęp. Włączenie tego ustawienia spowoduje, że zdarzenie składające się z alertów w różnych grupach urządzeń nie będzie już traktowane jako jedno zdarzenie. Lokalny soC może podjąć działania w związku z tym incydentem, ponieważ ma dostęp do jednej z grup urządzeń, w których uczestniczy. Jednak globalna soC będzie widzieć kilka różnych zdarzeń według grupy urządzeń zamiast jednego zdarzenia. Nie zalecamy włączania tego ustawienia, chyba że w ten sposób wywrócą korzyści wynikające z korelacji związanej z incydentami w całej organizacji.
+Tej konfiguracji można używać w scenariuszach, w których lokalne operacje SOC powinny ograniczać korelacje alertów tylko do grup urządzeń, do których mogą uzyskać dostęp. Włączenie tego ustawienia spowoduje, że zdarzenie składające się z alertów dotyczących różnych grup urządzeń nie będzie już traktowane jako jedno zdarzenie. Lokalny soC może podjąć działania w związku z tym incydentem, ponieważ ma dostęp do jednej z grup urządzeń, w których uczestniczy. Jednak globalna soC będzie widzieć kilka różnych zdarzeń według grupy urządzeń zamiast jednego zdarzenia. Nie zalecamy włączania tego ustawienia, chyba że w ten sposób wywrócą korzyści wynikające z korelacji związanej z incydentami w całej organizacji.
 
 > [!NOTE]
 > Zmiana tego ustawienia ma wpływ tylko na korelacje alertów w przyszłości.
@@ -109,7 +109,7 @@ Aby **włączyć opcję Zezwalaj na pliki lub blokuj** je:
 
 1. Przełącz ustawienie w opcji **Wł. i** **Wył**.
  
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Obraz zaawansowanych ustawień funkcji blokowania pliku.":::
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Ekran Punkty końcowe" lightbox="../../media/alloworblockfile.png":::
 
 1. Wybierz **pozycję Zapisz** preferencje u dołu strony.
 
@@ -147,14 +147,14 @@ Aby uzyskać więcej informacji, zobacz [Badanie konta użytkownika](investigate
 
 ## <a name="skype-for-business-integration"></a>Skype dla firm integracji z usługą
 
-Włączenie integracji Skype dla firm klienta umożliwia komunikowanie się z użytkownikami za pomocą Skype dla firm, poczty e-mail lub telefonu. Może to być przydatne, gdy musisz się komunikować z użytkownikiem i zminimalizować ryzyko.
+Włączenie integracji Skype dla firm klienta umożliwia komunikowanie się z użytkownikami za pomocą Skype dla firm, poczty e-mail lub telefonu. Ta aktywacja może być przydatna, gdy musisz się komunikować z użytkownikiem i zminimalizować ryzyko.
 
 > [!NOTE]
 > Gdy urządzenie jest odizolowane od sieci, pojawia się okno podręczne, w którym możesz włączyć komunikację między firmami Outlook i Skype, która umożliwia komunikację z użytkownikiem w przypadku rozłączenia z siecią. To ustawienie dotyczy trybu Skype i Outlook, gdy urządzenia są w trybie izolacji.
 
-## <a name="microsoft-defender-for-identity-integration"></a>Integracja usługi Microsoft Defender dla tożsamości
+## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity integracji z usługą
 
-Integracja z usługą Microsoft Defender for Identity umożliwia bezpośrednie prze przestawnienie danych do innego produktu zabezpieczeń tożsamości firmy Microsoft. Usługa Microsoft Defender for Identity rozszerza analizę o więcej informacji na temat podejrzewanego naruszenia konta i powiązanych zasobów. Włączenie tej funkcji wzbogaci możliwości badania oparte na urządzeniach przez przestawiania ich w sieci z punktu widzenia identyfikacji.
+Integracja z usługą Microsoft Defender for Identity umożliwia bezpośrednie prze przestawnienie do innego produktu zabezpieczeń tożsamości firmy Microsoft. Microsoft Defender for Identity rozszerzy analizę o więcej informacji o podejrzanym, naruszonym koncie i powiązanych zasobach. Włączenie tej funkcji wzbogaci możliwości badania oparte na urządzeniach przez przestawiania ich w sieci z punktu widzenia identyfikacji.
 
 > [!NOTE]
 > Aby włączyć tę funkcję, musisz mieć odpowiednią licencję.
@@ -163,7 +163,7 @@ Integracja z usługą Microsoft Defender for Identity umożliwia bezpośrednie p
 
 Ta funkcja jest dostępna tylko w przypadku aktywnego Office 365 E5 lub dodatku Threat Intelligence. Aby uzyskać więcej informacji, zobacz stronę produktu Office 365 Enterprise E5.
 
-Po włączeniu tej funkcji będzie można dołączać dane z usługi Microsoft Defender for Office 365 do programu Microsoft 365 Defender w celu przeprowadzenia kompleksowego badania zabezpieczeń w skrzynkach pocztowych usługi Office 365 i Windows urządzeniach.
+Po włączeniu tej funkcji będzie można dołączać dane z usługi Ochrona usługi Office 365 w usłudze Microsoft Defender do usługi Microsoft 365 Defender w celu przeprowadzenia kompleksowego badania zabezpieczeń w skrzynkach pocztowych i Office 365 i Windows .
 
 > [!NOTE]
 > Aby włączyć tę funkcję, musisz mieć odpowiednią licencję.
@@ -177,18 +177,18 @@ Spośród dwóch składników Microsoft Threat Expert powiadomienie o atakach ki
 > [!NOTE]
 > Funkcja Microsoft Threat Experts Defender for Endpoint jest dostępna w licencji E5 [dla Enterprise Mobility + Security.](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-## <a name="microsoft-defender-for-cloud-apps"></a>Usługa Microsoft Defender dla aplikacji w chmurze
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Włączenie tego ustawienia przekazuje sygnał punktu końcowego programu Defender do programu Microsoft Defender dla aplikacji w chmurze, aby zapewnić bardziej dogłębną widoczność użycia aplikacji w chmurze. Dane przekazane są przechowywane i przetwarzane w tej samej lokalizacji co dane usługi Defender dla aplikacji w chmurze.
+Włączenie tego ustawienia przekazuje sygnał usługi Defender for Endpoint do Microsoft Defender for Cloud Apps w celu zapewnienia bardziej dogłębnej widoczności użycia aplikacji w chmurze. Dane przekazane są przechowywane i przetwarzane w tej samej lokalizacji, w Defender dla Chmury danych aplikacji.
 
 > [!NOTE]
 > Ta funkcja będzie dostępna w licencji E5 dla systemu [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) na urządzeniach z systemem Windows 10 w wersji 1709 (kompilacja systemu operacyjnego 16299.1085 z [kb4493441](https://support.microsoft.com/help/4493441)), Windows 10 wersja 1803 (kompilacja systemu operacyjnego 17134.704 z [kb4493464](https://support.microsoft.com/help/4493464)), Windows 10, wersja 1809  (Kompilacja 17763.379 systemu operacyjnego z [kb4489899](https://support.microsoft.com/help/4489899)), nowsze wersje Windows 10 lub Windows 11.
 
-### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Włączanie integracji programu Microsoft Defender for Endpoint z portalu usługi Microsoft Defender for Identity
+### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Włączanie integracji Ochrona punktu końcowego w usłudze Microsoft Defender klienta z Microsoft Defender for Identity sieci Microsoft Defender for Identity
 
-Aby uzyskać kontekstową integrację urządzeń w programie Microsoft Defender for Identity, musisz również włączyć tę funkcję w portalu usługi Microsoft Defender dla tożsamości.
+Aby uzyskać kontekstowe integracja urządzeń w aplikacji Microsoft Defender for Identity, musisz również włączyć tę funkcję w portalu Microsoft Defender for Identity sieci.
 
-1. Zaloguj się do portalu [usługi Microsoft Defender for Identity,](https://portal.atp.azure.com/) pełniąc rolę administratora globalnego lub administratora zabezpieczeń.
+1. Zaloguj się do portalu [Microsoft Defender for Identity przy](https://portal.atp.azure.com/) użyciu roli administratora globalnego lub administratora zabezpieczeń.
 
 2. Kliknij **pozycję Utwórz wystąpienie**.
 
@@ -198,7 +198,7 @@ Po zakończeniu kroków integracji w obu portalach odpowiednie alerty będą si�
 
 ## <a name="web-content-filtering"></a>Filtrowanie zawartości sieci Web
 
-Blokowanie dostępu do witryn internetowych zawierających niechcianą zawartość i śledzenie aktywności w sieci Web we wszystkich domenach. Aby określić kategorie zawartości sieci Web, które chcesz blokować, utwórz zasady filtrowania [zawartości sieci Web](https://security.microsoft.com/preferences2/web_content_filtering_policy). Upewnij się, że podczas wdrażania planu bazowego zabezpieczeń programu [Microsoft Defender dla punktu końcowego masz dostęp do ochrony sieci w trybie blokowania](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
+Blokowanie dostępu do witryn internetowych zawierających niechcianą zawartość i śledzenie aktywności w sieci Web we wszystkich domenach. Aby określić kategorie zawartości sieci Web, które chcesz blokować, utwórz zasady filtrowania [zawartości sieci Web](https://security.microsoft.com/preferences2/web_content_filtering_policy). Upewnij się, że podczas wdrażania planu bazowego zabezpieczeń sieci w trybie [blokowania Ochrona punktu końcowego w usłudze Microsoft Defender zabezpieczeń](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Udostępnianie alertów punktu końcowego za pomocą Centrum zgodności firmy Microsoft
 
@@ -208,22 +208,22 @@ Po skonfigurowaniu [wskaźników](/microsoft-365/compliance/insider-risk-managem
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune połączeń
 
-Program Defender for Endpoint można zintegrować z [programem Microsoft Intune](/intune/what-is-intune) w celu umożliwienia [dostępu warunkowego opartego na ryzyku urządzenia](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). Po włączeniu [tej funkcji będzie](configure-conditional-access.md) można udostępnić usługę Defender for Endpoint device w usłudze Intune, aby usprawnić wymuszanie zasad.
+Program Defender for Endpoint można zintegrować z [programem Microsoft Intune](/intune/what-is-intune) w celu umożliwienia [dostępu warunkowego opartego na ryzyku urządzenia](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). Po włączeniu [tej funkcji](configure-conditional-access.md) będzie można udostępnić programowi Defender for Endpoint informacje o urządzeniu z programem Intune, poprawiając wymuszanie zasad.
 
 > [!IMPORTANT]
-> Aby korzystać z tej funkcji, należy włączyć integrację zarówno w usłudze Intune, jak i w usłudze Defender for Endpoint. Aby uzyskać więcej informacji na temat poszczególnych kroków, zobacz [Konfigurowanie dostępu warunkowego w programie Defender dla punktu końcowego](configure-conditional-access.md).
+> Aby korzystać z tej funkcji, należy włączyć integrację zarówno z usługą Intune, jak i usługą Defender for Endpoint. Aby uzyskać więcej informacji na temat poszczególnych kroków, zobacz [Konfigurowanie dostępu warunkowego w programie Defender dla punktu końcowego](configure-conditional-access.md).
 
-Ta funkcja jest dostępna tylko w następujących przypadku:
+Ta funkcja jest dostępna tylko w przypadku następujących wymagań wstępnych:
 
 - Dzierżawa licencjonowana dla usług Enterprise Mobility + Security E3 i Windows E5 (lub Microsoft 365 Enterprise E5)
-- Aktywne środowisko Microsoft Intune z zarządzanym usługą Intune i Windows [przyłączony do usługi Azure AD](/azure/active-directory/devices/concept-azure-ad-join/).
+- Aktywne środowisko Microsoft Intune z dołączanym Intune i Windows [Azure AD](/azure/active-directory/devices/concept-azure-ad-join/).
 
 ### <a name="conditional-access-policy"></a>Zasady dostępu warunkowego
 
-Po włączeniu integracji z usługą Intune usługa Intune automatycznie utworzy klasyczne zasady dostępu warunkowego (UC). Te klasyczne zasady certyfikacji są wymagane do skonfigurowania raportów o stanie w usłudze Intune. Nie należy go usuwać.
+Włączenie integracji Intune warunkowej Intune automatyczne utworzenie klasycznych zasad dostępu warunkowego(UC). Te klasyczne zasady certyfikacji są wymagane do konfigurowania raportów o stanie w celu Intune. Nie należy go usuwać.
 
 > [!NOTE]
-> Klasyczne zasady certyfikacji utworzone przez usługę Intune różnią się od nowoczesnych zasad dostępu warunkowego [, które](/azure/active-directory/conditional-access/overview/) są używane do konfigurowania punktów końcowych.
+> Klasyczne zasady certyfikacji utworzone przez Intune różnią się od nowoczesnych zasad dostępu warunkowego[, które](/azure/active-directory/conditional-access/overview/) są używane do konfigurowania punktów końcowych.
 
 ## <a name="device-discovery"></a>Odnajdowanie urządzeń
 

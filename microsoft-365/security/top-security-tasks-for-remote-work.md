@@ -17,18 +17,18 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Chroń służbową pocztę e-mail i dane przed zagrożeniami cyberzagrożeniami, w tym oprogramowaniem wymuszającym okup, wyłudzaniem informacji i złośliwymi załącznikami.
-ms.openlocfilehash: 584da4e192ddbd8ac5b223e0d292a71f0c35c305
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1277d001118dda764aa9b2a968f1024d5befcac1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63019245"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755063"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 najlepszych zadań dla zespołów ds. zabezpieczeń na rzecz obsługi pracy z domu
 
 Jeśli podoba Ci się [firma Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) , ale nagle okazało się, że obsługujesz głównie pracowników domowych, chcemy pomóc Ci zapewnić, że Twoja organizacja pracuje tak bezpiecznie, jak to możliwe. W tym artykule priorytetyzują zadania, aby ułatwić zespołom zabezpieczeń jak najszybciej zaimplementowanie najważniejszych funkcji zabezpieczeń.
 
-![W celu obsługi pracy z domu należy wykonać te najważniejsze zadania.](../media/security/security-support-remote-work.png)
+:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="12 najlepszych zadań dla zespołów ds. zabezpieczeń na rzecz obsługi pracy z domu" lightbox="../media/security/security-support-remote-work.png":::
 
 Jeśli korzystasz z jednego z planów firmy Microsoft dla firm w małej lub średniej organizacji, zamiast tego zobacz następujące zasoby:
 
@@ -48,19 +48,18 @@ W przypadku klientów korzystających z planów dla przedsiębiorstw firma Micro
 |2|[Ochrona przed zagrożeniami](#2-protect-against-threats)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Konfigurowanie usługi Microsoft Defender dla Office 365](#3-configure-microsoft-defender-for-office-365)|||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Konfigurowanie usługi Microsoft Defender dla tożsamości](#4-configure-microsoft-defender-for-identity)|||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5|[Włączanie Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5|[Włączanie usługi Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6|[Konfigurowanie ochrony aplikacji mobilnej Intune dla telefonów i tabletów](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7|[Konfigurowanie uwierzytelniania wieloskładnikowego i dostępu warunkowego dla gości, w tym ochrony aplikacji intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8|[Rejestrowanie komputerów do zarządzania urządzeniami i wymaganie zgodnych komputerów](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9|[Optymalizowanie sieci pod kątem łączności z chmurą](#9-optimize-your-network-for-cloud-connectivity)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[Szkolenie użytkowników](#10-train-users)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[Wprowadzenie do programu Microsoft Defender dla aplikacji w chmurze](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|12|[Monitorowanie zagrożeń i działania](#12-monitor-for-threats-and-take-action)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|
+|7|[Konfigurowanie uwierzytelniania wieloskładnikowego i dostępu warunkowego dla gości, w tym ochrony aplikacji intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8|[Rejestrowanie komputerów do zarządzania urządzeniami i wymaganie zgodnych komputerów](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9|[Optymalizowanie sieci pod kątem łączności z chmurą](#9-optimize-your-network-for-cloud-connectivity)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Uwzględnione](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[Szkolenie użytkowników](#10-train-users)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[Wprowadzenie do usługi Microsoft Defender for Cloud Apps](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|12|[Monitorowanie zagrożeń i działania](#12-monitor-for-threats-and-take-action)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Dołączona.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Przed rozpoczęciem należy sprawdzić wynik [Microsoft 365 w portalu Microsoft 365 Defender](./defender/microsoft-secure-score.md) <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">sieci.</a> Za pomocą scentralizowanego pulpitu nawigacyjnego możesz monitorować i ulepszać zabezpieczenia tożsamości, Microsoft 365, danych, aplikacji, urządzeń i infrastruktury. Masz punkty za skonfigurowanie zalecanych funkcji zabezpieczeń, wykonywanie zadań związanych z zabezpieczeniami (takich jak wyświetlanie raportów) lub adresowanie rekomendacji za pomocą aplikacji lub oprogramowania innej firmy. Zadania zalecane w tym artykule podniesie Twój wynik.
 
-![Zrzut ekranu przedstawiający program Microsoft Secure Score.](../media/secure-score.png)
+:::image type="content" source="../media/secure-score.png" alt-text="Ekran bezpiecznego wyniku firmy Microsoft w portalu Microsoft 365 Defender sieci Microsoft 365 Defender" lightbox="../media/secure-score.png":::
 
 ## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1. Włączanie uwierzytelniania wieloskładnikowego usługi Azure AD
 
@@ -72,12 +71,11 @@ Zastosowanie tych zasad zajmie tylko kilka minut, ale należy przygotować się 
 
 ****
 
-|Planowanie|Zalecenie|
+|Plan|Zalecenie|
 |---|---|
 |Microsoft 365 (bez planu Azure AD P1 lub P2)|[Włącz domyślne ustawienia zabezpieczeń w usłudze Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Wartości domyślne zabezpieczeń w usłudze Azure AD obejmują uwierzytelniania wieloskładnikowe dla użytkowników i administratorów.|
 |Microsoft 365 E3 (z usługą Azure AD P1)|Użyj [typowych zasad dostępu warunkowego,](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) aby skonfigurować następujące zasady: <br/>- [Wymaganie uwierzytelniania wieloskładnikowego dla administratorów](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Wymaganie uwierzytelniania WIELOSKŁADNIKOWEGO dla wszystkich użytkowników](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Blokowanie starszego uwierzytelniania](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
 |Microsoft 365 E5 (z usługą Azure AD P2)|Korzystając z usługi Azure AD Identity Protection, zacznij implementować zalecany przez firmę Microsoft [zestaw](./office-365-security/identity-access-policies.md) dostępu warunkowego i pokrewnych zasad, tworząc te zasady:<br/> - [Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania jest średnie lub wysokie](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Blokowanie klientów, którzy nie obsługują nowoczesnego uwierzytelniania](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [Zmiana hasła przez użytkowników o wysokim poziomie ryzyka](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
-|
 
 ## <a name="2-protect-against-threats"></a>2. Ochrona przed zagrożeniami
 
@@ -124,7 +122,9 @@ Aby skonfigurować usługę Defender dla usługi Office 365 dla tych obciążeń
 
 Teraz, gdy masz już program Microsoft Defender for Office 365 i program Microsoft Defender for Identity, możesz wyświetlać połączone sygnały z tych funkcji na jednym pulpicie nawigacyjnym. Program [Microsoft 365 Defender](./defender/microsoft-365-defender.md) łączy alerty, zdarzenia, zautomatyzowane badania i odpowiedzi oraz zaawansowane łowy w obciążeniach (Microsoft Defender for Identity, Defender for Office 365, Microsoft Defender for Endpoint i Microsoft Defender for Cloud Apps) w jedno okienko w Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"> portalu</a>.
 
-![Ilustracja pulpitu nawigacyjnego MTP.](../media/top-ten-security-remote-work-mtp-dashboard.png)
+<!--
+:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The MTP dashboard in the Microsoft 365 Defender portal" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
+--> 
 
 Po skonfigurowaniu co najmniej jednego usługi Defender dla Office 365 włącz mtp. Nowe funkcje są stale dodawane do mtp; rozważ zgodę na otrzymywanie funkcji wersji Preview.
 
@@ -213,9 +213,8 @@ Microsoft 365 udostępnia następujące zasoby, które ułatwiają informowanie 
 |Pojęcie|Zasoby|
 |---|---|
 |Microsoft 365|[Dostosowywane ścieżki edukacyjne](/office365/customlearning/) <p>Te zasoby mogą ułatwić ci zskładanie szkoleń dla użytkowników końcowych w organizacji|
-|Microsoft 365 zabezpieczeń|[Edukacja: Zabezpieczanie organizacji za pomocą wbudowanych, inteligentnych zabezpieczeń przed Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Ten moduł umożliwia opisanie Microsoft 365 współpracy funkcji zabezpieczeń i wyartykułować zalety tych funkcji zabezpieczeń.|
+|Zabezpieczenia platformy Microsoft 365|[Edukacja: Zabezpieczanie organizacji za pomocą wbudowanych, inteligentnych zabezpieczeń przed Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Ten moduł umożliwia opisanie Microsoft 365 współpracy funkcji zabezpieczeń i wyartykułować zalety tych funkcji zabezpieczeń.|
 |Uwierzytelnianie wieloskładnikowe|[Weryfikacja dwuetapowa: Co to jest dodatkowa strona weryfikacji?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Ten artykuł ułatwia użytkownikom końcowych zrozumienie, co to jest uwierzytelnianie wieloskładnikowe i dlaczego jest ono używane w Twojej organizacji.|
-|
 
 Oprócz tych wskazówek firma Microsoft zaleca użytkownikom korzystanie z akcji opisanych w tym artykule: Ochrona konta i urządzeń przed [hakerami i złośliwym oprogramowaniem](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Są to między innymi:
 

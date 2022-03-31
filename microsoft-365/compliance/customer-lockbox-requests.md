@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.custom: admindeeplinkMAC
-description: Dowiedz się więcej o żądaniach skrytki klienta, które pozwalają kontrolować, w jaki sposób inżynier pomocy technicznej firmy Microsoft może uzyskać dostęp do Twoich danych, gdy występuje problem.
-ms.openlocfilehash: 532b1b78c40725fa3558768a6b65beda9b8e05b2
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+description: Dowiedz się więcej o żądaniach skrytki klienta, które pozwalają kontrolować, w jaki sposób inżynier pomocy technicznej firmy Microsoft może uzyskać dostęp do Twoich danych, gdy napotkasz problem.
+ms.openlocfilehash: dd62eac46630d92fa5171969d48baec151c92b33
+ms.sourcegitcommit: db2ed146b46ade9ea62eed9cb8efff5fea7a35e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504834"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "64481413"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Skrytka klienta w aplikacji Office 365
 
-Ten artykuł zawiera wskazówki dotyczące wdrażania i konfiguracji skrytki klienta. Skrytka klienta obsługuje żądania dostępu do danych w usługach Exchange Online, SharePoint Online i OneDrive dla Firm. Aby polecić pomoc techniczną dla innych usług, prześlij żądanie w portalu [opinii](https://feedbackportal.microsoft.com).
+Ten artykuł zawiera wskazówki dotyczące wdrażania i konfiguracji skrytki klienta. Skrytka klienta obsługuje żądania dostępu do danych w usługach Exchange Online, SharePoint Online, OneDrive dla Firm i Teams. Aby polecić pomoc techniczną dla innych usług, prześlij żądanie w portalu [opinii](https://feedbackportal.microsoft.com).
 
 Aby zobaczyć opcje licencjonowania użytkowników w celu skorzystania z Microsoft 365 zgodności, zobacz wskazówki Microsoft 365 licencjonowania dotyczące zabezpieczeń [& zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
@@ -35,7 +35,7 @@ Skrytka klienta zapewnia, że firma Microsoft nie może uzyskać dostępu do zaw
 
 Czasami inżynierowie firmy Microsoft pomagają rozwiązywać i rozwiązywać problemy z usługą. Zazwyczaj inżynierowie rozsyłają problemy przy użyciu rozbudowanych narzędzi do debugowania i telemetrii, które firma Microsoft ma dla swoich usług. Jednak w niektórych przypadkach uzyskanie dostępu do zawartości przez inżyniera firmy Microsoft wymaga określenia głównej przyczyny i rozwiązania problemu. Skrytka klienta wymaga, aby inżynier zażądał od Ciebie dostępu jako ostatniego kroku przepływu pracy zatwierdzania. Umożliwia ona zatwierdzanie lub odrzucanie żądania organizacji i zapewnianie kontroli dostępu bezpośredniego do zawartości.
 
-### <a name="customer-lockbox-overview-video"></a>Klip wideo z omówieniem skrytki klienta
+## <a name="customer-lockbox-overview-video"></a>Klip wideo z omówieniem skrytki klienta
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/8fecf10b-1f03-4849-8b67-76d3d2a43f26?autoplay=false]
 
@@ -45,37 +45,37 @@ Te kroki konspektu typowego przepływu pracy, gdy inżynier firmy Microsoft rozp
 
 1. Osoba w organizacji ma problem z jego skrzynką pocztową Microsoft 365 pocztowej.
 
-2. Gdy użytkownik rozwiąże problem, ale nie może go rozwiązać, otwiera żądanie pomocy technicznej za pomocą pomocy technicznej firmy Microsoft.
+2. Gdy użytkownik rozwiąże problem, ale nie może go rozwiązać, otwiera żądanie pomocy technicznej u pomoc techniczna firmy Microsoft.
 
-3. Inżynier pomocy technicznej firmy Microsoft przegląda żądanie usługi i ustala, czy należy uzyskać dostęp do dzierżawy organizacji, aby naprawić problem w Exchange Online.
+3. Inżynier pomocy technicznej firmy Microsoft przegląda żądanie usługi i ustala, czy aby naprawić problem, należy uzyskać dostęp do dzierżawy organizacji.
 
 4. Inżynier pomocy technicznej firmy Microsoft loguje się do narzędzia żądania skrytki klienta i składa żądanie dostępu do danych, które zawiera nazwę dzierżawy organizacji, numer żądania usługi i szacowany czas, przez który inżynier potrzebuje dostępu do danych.
 
-5. Gdy kierownik pomocy technicznej firmy Microsoft zatwierdzi żądanie, skrytka klienta wysyła do organizacji wyznaczony osoba zatwierdzająca w wiadomości e-mail z powiadomieniem o oczekującym żądaniu dostępu od firmy Microsoft.
+5. Gdy kierownik pomoc techniczna firmy Microsoft zatwierdzi żądanie, skrytka klienta wysyła do organizacji wyznaczone osoby zatwierdzające w wiadomości e-mail z powiadomieniem o oczekującym żądaniu dostępu od firmy Microsoft.
 
     ![Przykład powiadomienia e-mail skrytki klienta.](../media/CustomerLockbox1.png)
 
-   Każda osoba z przypisaną rolą administratora [dostępu do skrytki](/office365/admin/add-users/about-admin-roles) klienta w aplikacji centrum administracyjne platformy Microsoft 365 może zatwierdzać żądania skrytki klienta.
+   Każda osoba z przypisaną rolą administratora [dostępu do skrytki](/office365/admin/add-users/about-admin-roles) klienta w aplikacji Centrum administracyjne platformy Microsoft 365 może zatwierdzać żądania skrytki klienta.
 
-6. Osoba zatwierdzająca podpisuje się do centrum administracyjne platformy Microsoft 365 i zatwierdza wniosek. Ten krok wyzwala tworzenie rekordu inspekcji dostępnego przez przeszukiwanie dziennika inspekcji. Aby uzyskać więcej informacji, zobacz [Inspekcja żądań skrytki klienta](#auditing-customer-lockbox-requests).
+6. Osoba zatwierdzająca podpisuje się do Centrum administracyjne platformy Microsoft 365 i zatwierdza wniosek. Ten krok wyzwala tworzenie rekordu inspekcji dostępnego przez przeszukiwanie dziennika inspekcji. Aby uzyskać więcej informacji, zobacz [Inspekcja żądań skrytki klienta](#auditing-customer-lockbox-requests).
 
    Jeśli klient odrzuci żądanie lub nie zatwierdzi go w ciągu 12 godzin, wniosek wygasa i nie jest udzielany inżynierowi firmy Microsoft.
 
    > [!IMPORTANT]
    > Firma Microsoft nie dołącza żadnych linków do powiadomień e-mail skrytki klienta wymagających zalogowania się w Office 365.
 
-7. Gdy osoba zatwierdzająca z organizacji zatwierdzi żądanie, inżynier firmy Microsoft otrzymuje komunikat o zatwierdzeniu, loguje się do dzierżawy w systemie Exchange Online i rozwiązuje problem klienta. Inżynierowie firmy Microsoft mają żądany czas trwania na rozwiązanie problemu, po którym dostęp zostaje automatycznie odwołany.
+7. Gdy osoba zatwierdzająca z organizacji zatwierdzi żądanie, inżynier firmy Microsoft otrzymuje komunikat o zatwierdzeniu, loguje się do dzierżawy i rozwiązuje problem klienta. Inżynierowie firmy Microsoft mają żądany czas trwania na rozwiązanie problemu, po którym dostęp zostaje automatycznie odwołany.
 
 > [!NOTE]
 > W dzienniku inspekcji są rejestrowane wszystkie akcje wykonane przez inżyniera firmy Microsoft. Możesz wyszukiwać i przeglądać te rekordy inspekcji.
 
 ## <a name="turn-customer-lockbox-requests-on-or-off"></a>Włączanie i wyłączanie żądań skrytki klienta
 
-Możesz włączyć kontrolki Skrytki klienta w centrum administracyjne platformy Microsoft 365. Po włączeniu skrytki klienta firma Microsoft musi uzyskać zgodę Twojej organizacji przed uzyskaniem dostępu do zawartości Twojej dzierżawy.
+Możesz włączyć kontrolki Skrytki klienta w Centrum administracyjne platformy Microsoft 365. Po włączeniu skrytki klienta firma Microsoft musi uzyskać zgodę Twojej organizacji przed uzyskaniem dostępu do zawartości Twojej dzierżawy.
 
 1. Za pomocą konta służbowego z przypisaną rolą administratora globalnego lub osoby zatwierdzającej dostęp do **skrytki** klienta przejdź do [https://admin.microsoft.com](https://admin.microsoft.com) strony i zaloguj się.
 
-2. Wybierz **Ustawienia** >  **Org Ustawienia** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & Privacy**</a>.
+2. Wybierz **Ustawienia** >  **Org Ustawienia** >  **Security & Privacy**.
 
 3. Wybierz **pozycję Zabezpieczenia & prywatności**, a następnie wybierz **pozycję Skrytka klienta** w lewej kolumnie. Zaznacz pole **wyboru Wymagaj zatwierdzenia dla wszystkich żądań dostępu** do danych i zapisz zmiany, aby włączyć tę funkcję.
 
@@ -155,7 +155,7 @@ Aby wyeksportować rekordy inspekcji, należy wykonać opisane wcześniej czynno
 Po pobraniu pliku możesz otworzyć go w programie Excel a następnie przefiltrować w kolumnie Operacje, aby wyświetlić rekordy inspekcji dotyczące działań **set-AccessToCustomerDataRequest**. Możesz również filtrować według **kolumny UserIds** (przy użyciu wartości **Operator Microsoft**), aby wyświetlić rekordy inspekcji dotyczące działań wykonanych przez inżynierów firmy Microsoft.
 
 > [!NOTE]
-> Podczas wyświetlania rekordów inspekcji w pliku CSV dodatkowe informacje są zawarte w kolumnie **Dane** inspekcji. Informacje w tej kolumnie znajdują się w obiekcie JSON, który zawiera wiele właściwości skonfigurowanych jako *pary właściwość:* wartość rozdzielone przecinkami. Za pomocą funkcji przekształcania JSON w Edytorze dodatku Power Query w programie Excel można podzielić każdą właściwość w obiekcie JSON w kolumnie **Dane** inspekcji na wiele kolumn, dzięki czemu każda właściwość ma własną kolumnę. Ułatwia to interpretowanie tych informacji. Aby uzyskać szczegółowe instrukcje, zobacz [Formatowanie wyeksportowanego dziennika inspekcji za pomocą Edytora dodatku Power Query](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+> Podczas wyświetlania rekordów inspekcji w pliku CSV dodatkowe informacje są zawarte w kolumnie **Dane** inspekcji. Informacje w tej kolumnie znajdują się w obiekcie JSON, który zawiera wiele właściwości skonfigurowanych jako *pary właściwość:* wartość rozdzielone przecinkami. Za pomocą funkcji przekształcania JSON w Edytor Power Query w programie Excel można podzielić każdą właściwość w obiekcie JSON w kolumnie **Dane** inspekcji na wiele kolumn, dzięki czemu każda właściwość ma własną kolumnę. Ułatwia to interpretowanie tych informacji. Aby uzyskać szczegółowe instrukcje, zobacz [Formatowanie wyeksportowanego dziennika inspekcji przy użyciu Edytor Power Query](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
 
 ### <a name="use-powershell-to-search-and-export-audit-records"></a>Wyszukiwanie i eksportowanie rekordów inspekcji za pomocą programu PowerShell
 
@@ -163,13 +163,13 @@ Alternatywą dla narzędzia do przeszukiwania inspekcji w programie Centrum zgod
 
 Po [nawiązania połączenia Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) uruchom jedno z następujących poleceń. Zamień symbole zastępcze na określony zakres dat.
 
-#### <a name="search-for-set-accesstocustomerdatarequest-activities"></a>Wyszukiwanie Set-AccessToCustomerDataRequest działań
+`Set-AccessToCustomerDataRequest` Wyszukiwanie działań
 
 ```powershell
 Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -Operations Set-AccessToCustomerDataRequest
 ```
 
-#### <a name="search-for-activities-performed-by-microsoft-engineers"></a>Wyszukiwanie działań wykonanych przez inżynierów firmy Microsoft
+Wyszukiwanie działań wykonanych przez inżynierów firmy Microsoft
 
 ```powershell
 Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -UserIds "Microsoft Operator"
@@ -191,7 +191,7 @@ Gdy osoba w Twojej organizacji zatwierdzi lub zablokuje żądanie skrytki klient
 | Działanie   | Set-AccessToCustomerDataRequest; jest to działanie inspekcji rejestrowane po zatwierdzeniu lub odmówiniu żądania skrytki klienta.                                |
 | Element       | Identyfikator Guid żądania skrytki klienta                             |
 
-Poniższy zrzut ekranu przedstawia przykład rekordu inspekcji, który odpowiada zatwierdzonemu żądaniu skrytki klienta. Jeśli żądanie skrytki klienta zostanie odrzucone, wartością parametru **ApprovalDecision** będzie Deny **(Odmów**).
+Poniższy zrzut ekranu przedstawia przykład rekordu inspekcji, który odpowiada zatwierdzonemu żądaniu skrytki klienta. Jeśli żądanie skrytki klienta zostało odrzucone, oznacza to, że wartość `ApprovalDecision` parametru byłaby .`Deny`
 
 ![Rekord inspekcji zatwierdzonego żądania skrytki klienta.](../media/CustomerLockbox9.png)
 
@@ -209,15 +209,15 @@ Działania wykonywane przez inżyniera firmy Microsoft po zatwierdzeniu żądani
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-#### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>Do Microsoft 365 klienta mają zastosowanie usługi Customer Lockbox?
+### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>Do Microsoft 365 klienta mają zastosowanie usługi Customer Lockbox?
 
-Skrytka klienta jest obecnie obsługiwana w usługach Exchange Online, SharePoint Online i OneDrive dla Firm.
+Skrytka klienta jest obecnie obsługiwana w usługach Exchange Online, SharePoint Online, OneDrive dla Firm i Teams.
 
-#### <a name="is-customer-lockbox-available-to-all-customers"></a>Czy Skrytka klienta jest dostępna dla wszystkich klientów?
+### <a name="is-customer-lockbox-available-to-all-customers"></a>Czy Skrytka klienta jest dostępna dla wszystkich klientów?
 
-Skrytka klienta jest dołączona do subskrypcji usługi Microsoft 365 lub Office 365 E5 i może być dodawana do innych planów za pomocą subskrypcji usługi Information Protection and Compliance lub dodatku Advanced Compliance. Aby [uzyskać więcej informacji, zobacz](https://products.office.com/business/office-365-enterprise-e5-business-software) Plany i ceny.
+Skrytka klienta jest dołączona do subskrypcji usługi Microsoft 365 lub Office 365 E5 i może zostać dodana do innych planów za pomocą subskrypcji usługi Information Protection i zgodności lub dodatku Zaawansowanej zgodności. Aby [uzyskać więcej informacji, zobacz](https://products.office.com/business/office-365-enterprise-e5-business-software) Plany i ceny.
 
-#### <a name="what-is-customer-content"></a>Co to jest zawartość dla klientów?
+### <a name="what-is-customer-content"></a>Co to jest zawartość dla klientów?
 
 Zawartość klienta to dane tworzone przez użytkowników usług i Microsoft 365 aplikacji. Oto przykłady zawartości dla klientów:
 
@@ -231,6 +231,20 @@ Zawartość klienta to dane tworzone przez użytkowników usług i Microsoft 365
 
 - Wiadomości błyskawiczne lub konwersacje głosowe
 
+- Tekst wprowadzony w Teams czatach i Teams kanałach, na przykład czaty jeden na jeden, czaty grupowe, kanały udostępnione, kanały prywatne oraz czat spotkania
+
+- Inne dane wklejone do Teams czatów, takie jak fragmenty kodu, obrazy, wiadomości audio i wideo oraz linki
+
+- Dane aplikacji i botów w Teams czatach i Teams kanałach
+
+- Teams aktywności
+
+- Teams i transkrypcje ze spotkania
+
+- Poczta głosowa
+
+- Pliki opublikowane w Teams czatach i Teams kanałach
+
 - Obiekty blob lub dane magazynu strukturalnego wygenerowane przez klienta (na SQL Kontenery)
 
 - Informacje o zabezpieczeniach należących do klienta (na przykład certyfikaty, klucze szyfrowania i hasła)
@@ -239,78 +253,78 @@ Zawartość klienta to dane tworzone przez użytkowników usług i Microsoft 365
 
 Aby uzyskać więcej informacji na temat zawartości Office 365 klientów, zobacz Centrum Office 365 [zaufania](https://products.office.com/business/office-365-trust-center-privacy/).
 
-#### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>KtoTo się z prośbą o dostęp do mojej zawartości?
+### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>KtoTo się z prośbą o dostęp do mojej zawartości?
 
 Administratorzy globalni i każda osoba, która przypisała rolę administratora dostępu do skrytki klienta, jest powiadamiana o tym. Są to również ci sami użytkownicy, którzy mogą zatwierdzać żądania skrytki klienta.
 
-#### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>KtoTo zatwierdzić lub odrzucić te wnioski w mojej organizacji?
+### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>KtoTo zatwierdzić lub odrzucić te wnioski w mojej organizacji?
 
 Administratorzy globalni i każda osoba z przypisaną rolą administratora dostępu do skrytki klienta może zatwierdzać żądania skrytki klienta. Klienci kontrolują te przypisania ról w swoich organizacjach.
 
-#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Jak wybrać opcję skrytki klienta?
+### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Jak mogę się do skrytki klienta?
 
-Administrator globalny może włączyć i skonfigurować Skrytkę klienta w Microsoft 365 lub <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a>.
+Administrator globalny może włączyć i skonfigurować Skrytkę klienta w Centrum administracyjne platformy Microsoft 365.
 
-#### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Jeśli zatwierdźę żądanie skrytki klienta, co może zrobić inżynier i jak będę wiedzieć, co zrobił inżynier firmy Microsoft?
+### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Jeśli zatwierdźę żądanie skrytki klienta, co może zrobić inżynier i jak będę wiedzieć, co zrobił inżynier firmy Microsoft?
 
 Po zatwierdzeniu żądania skrytki klienta inżynier firmy Microsoft udzielił tych niezbędnych uprawnień do uzyskiwania dostępu do zawartości klienta za pomocą wstępnie zatwierdzonych żądań cmdlet. Działania podejmowane przez inżynierów firmy Microsoft w odpowiedzi na żądania skrytki klienta są rejestrowane i dostępne w dzienniku inspekcji w Centrum zabezpieczeń & zgodności.
 
-#### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>Skąd wiadomo, że firma Microsoft jest w trakcie procesu zatwierdzania?
+### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>Jak mogę, że firma Microsoft jest w trakcie procesu zatwierdzania?
 
-Możesz odsyłać do powiadomień e-mail o zatwierdzeniach wysyłanych do administratorów i osób zatwierdzających w Twojej organizacji z historią żądań Skrytki klienta [w centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+Możesz utworzyć odsyłacze do powiadomień e-mail o zatwierdzeniach wysyłanych do administratorów i osób zatwierdzających w Twojej organizacji z historią żądań Skrytki [klienta w Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 Skrytka klienta jest uwzględniona w najnowszym [raporcie inspekcji SOC 1 SSAE 16](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports). Najnowsze raporty można znaleźć w Portalu zaufania [usług firmy Microsoft](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports).
 
-#### <a name="can-microsoft-modify-the-list-of-approvers-for-my-tenant-if-not-how-is-it-prevented"></a>Czy firma Microsoft może zmodyfikować listę osób zatwierdzających dla mojej dzierżawy? Jeśli nie, jak to jest blokowane?
+### <a name="can-microsoft-modify-the-list-of-approvers-for-my-tenant-if-not-how-is-it-prevented"></a>Czy firma Microsoft może zmodyfikować listę osób zatwierdzających dla mojej dzierżawy? Jeśli nie, jak to jest blokowane?
 
-Tylko administrator globalny w Twojej organizacji może określać, kto może zatwierdzać żądania skrytki klienta. Oznacza to, że tylko członkowie grupy administratorów globalnych w organizacji Azure Active Directory mogą określać, kto może zatwierdzać żądania. Członkostwo w grupie administratorów globalnych w programie Azure Active Directory zarządzane jest tylko przez Twoją organizację.
+Tylko administrator globalny w Twojej organizacji może określać, kto może zatwierdzać żądania skrytki klienta. Oznacza to, że tylko członkowie grupy administrator globalny w programie Azure Active Directory mogą określać, kto może zatwierdzać żądania. Członkostwo grupy administrator globalny grupie Azure Active Directory jest zarządzane tylko przez Twoją organizację.
 
-#### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>Co zrobić, jeśli potrzebuję więcej informacji na temat wniosku o dostęp do zawartości w celu jego zatwierdzenia?
+### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>Co zrobić, jeśli potrzebuję więcej informacji na temat wniosku o dostęp do zawartości w celu jego zatwierdzenia?
 
-Każde żądanie skrytki klienta zawiera Microsoft 365 numeru zgłoszenia serwisowego. Aby uzyskać więcej informacji na temat zgłoszenia, możesz skontaktować się z pomocą techniczną firmy Microsoft i uzyskać więcej informacji na temat tego numeru usługi.
+Każde żądanie skrytki klienta zawiera Microsoft 365 numeru zgłoszenia serwisowego. Możesz skontaktować się pomoc techniczna firmy Microsoft uzyskać więcej informacji na temat żądania i uzyskać więcej informacji na temat tego numeru usługi.
 
-#### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Po zatwierdzeniu żądania skrytki klienta, jak długo są ważne uprawnienia?
+### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Po zatwierdzeniu żądania skrytki klienta, jak długo są ważne uprawnienia?
 
 Obecnie maksymalny okres uprawnień dostępu przyznanych inżynierowi firmy Microsoft wynosi 4 godziny. Inżynier firmy Microsoft może również poprosić o krótszy okres.
 
-#### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>Jak mogę uzyskać historię wszystkich żądań skrytki klienta?
+### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>Jak mogę uzyskać historię wszystkich żądań skrytki klienta?
 
-Wszystkie żądania skrytki klienta są przeglądane w [centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+Wszystkie żądania skrytki klienta są przeglądane w [Centrum administracyjne platformy Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
-#### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>Jak skorelować żądania dostępu do zawartości z powiązanymi dziennikami inspekcji?
+### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>Jak mogę skorelować żądania dostępu do zawartości z powiązanymi dziennikami inspekcji?
 
 Kanał aktywności Centrum zgodności zawiera działania dziennika skrytki klienta. Klienci mogą odsyłać odwołania do działań dziennika skrytki klienta z kanału aktywności w odniesieniu do obierania wiadomości e-mail.
 
-#### <a name="what-happens-when-a-customer-doesnt-respond-to-a-customer-lockbox-request"></a>Co się dzieje, gdy klient nie odpowiada na żądanie skrytki klienta?
+### <a name="what-happens-when-a-customer-doesnt-respond-to-a-customer-lockbox-request"></a>Co się dzieje, gdy klient nie odpowiada na żądanie skrytki klienta?
 
 Żądania skrytki klienta mają domyślny czas trwania 12 godzin. Jeśli nie odpowiesz na żądanie w ciągu 12 godzin, wygaśnie.
 
-#### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>Co firma Microsoft robi, gdy klient odrzuca żądanie skrytki klienta?
+### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>Co firma Microsoft robi, gdy klient odrzuca żądanie skrytki klienta?
 
 Jeśli klient odrzuci żądanie skrytki klienta, nie ma dostępu do zawartości klienta. Jeśli użytkownik w Twojej organizacji nadal występuje problem z usługą wymagający od firmy Microsoft uzyskiwania dostępu do zawartości klienta w celu rozwiązania tego problemu, problem z usługą może być nadal występował, a firma Microsoft poinformuje o tym użytkownika.
 
-#### <a name="how-do-i-set-up-alerts-whenever-a-request-has-been-approved"></a>Jak skonfigurować alerty po zatwierdzeniu wniosku?
+### <a name="how-do-i-set-up-alerts-whenever-a-request-has-been-approved"></a>Jak mogę ustawiać alerty po każdym zatwierdzeniu wniosku?
 
-Nie ma wbudowanej opcji powiadamiania administratorów. Jednak administratorzy mogą skonfigurować alerty za pomocą programu [Microsoft Defender dla aplikacji w chmurze](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
+Nie ma wbudowanej opcji powiadamiania administratorów. Jednak administratorzy mogą skonfigurować alerty przy użyciu [Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
 
-#### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>Czy Skrytka klienta chroni przed żądaniami danych od organów ścigania lub innych firm?
+### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>Czy Skrytka klienta chroni przed żądaniami danych od organów ścigania lub innych firm?
 
 L.p. Firma Microsoft poważnie zwraca się do innych podmiotów o dane klientów. Firma Microsoft, jako usługodawca, zawsze wspiera prywatność danych klientów. W przypadku otrzymania wezwania firma Microsoft zawsze próbuje przekierować dane innej firmy do klienta w celu uzyskania tych informacji. (Przeczytaj blog Brada Smitha: [Ochrona danych klientów przed odłogiem rządowym](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Okresowo publikujemy [szczegółowe informacje na temat](https://www.microsoft.com/corporate-responsibility/lerr) próśb firmy Microsoft o egzekwowanie prawa.
 
 Aby uzyskać [więcej](https://www.microsoft.com/trustcenter/default.aspx) informacji, zobacz Centrum zaufania firmy Microsoft dotyczące żądań danych innych firm i sekcję "Ujawnianie danych klientów" w Warunkach usług [online](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .
 
-#### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Jak firma Microsoft gwarantuje, że członek jego personelu nie będzie miał dostępu do zawartości klientów w Office 365 aplikacjach?
+### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Jak firma Microsoft gwarantuje, że członek jego personelu nie będzie miał dostępu do zawartości klientów w Office 365 aplikacjach?
 
-Firma Microsoft wdraża rozbudowane działania naprawcze za pośrednictwem systemów kontroli dostępu oraz środki wykrywające w celu zidentyfikowania i rozwiązania problemów mających na celu obejście tych systemów kontroli dostępu. Microsoft 365 to zasady o jak najmniejszych uprawnieniach i dostępie w czasie rzeczywistym. Dlatego żaden pracownik firmy Microsoft nie ma uprawnienia do ciągłego uzyskiwania dostępu do zawartości klienta. W przypadku uzyskania uprawnienia jest ono udzielone na ograniczony czas trwania. 
+Firma Microsoft wdraża rozbudowane działania naprawcze za pośrednictwem systemów kontroli dostępu oraz środki wykrywające w celu zidentyfikowania i rozwiązania problemów mających na celu obejście tych systemów kontroli dostępu. Microsoft 365 to zasady o jak najmniejszych uprawnieniach i dostępie w czasie rzeczywistym. Dlatego żaden pracownik firmy Microsoft nie ma uprawnienia do ciągłego uzyskiwania dostępu do zawartości klienta. W przypadku uzyskania uprawnienia jest ono udzielone na ograniczony czas trwania.
 
 Microsoft 365 korzysta z systemu kontroli dostępu o nazwie *Skrytka* do przetwarzania żądań uprawnień, które przyznają możliwość wykonywania funkcji operacyjnych i administracyjnych w ramach usługi. Operator musi poprosić o dostęp do zawartości klienta przy użyciu skrytki, co następnie wymaga od drugiej osoby podjęcia działania w związku z żądaniem (na przykład zatwierdzić je) przed uzyskaniem dostępu. Ta druga osoba nie może być osobą żądawcą i musi zostać wyznaczona do zatwierdzania dostępu do zawartości klienta. Tylko w przypadku zatwierdzenia żądania operator uzyskuje tymczasowy dostęp do zawartości klienta. Po wygaśnięciu okresu podwyższenia blokada odwołuje dostęp.
 
 Więcej informacji na [temat](https://www.microsoft.com/licensing/product-licensing/products) ogólnych rozwiązań bezpieczeństwa firmy Microsoft można znaleźć w Warunkach usług online.
 
-#### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>W jakich okolicznościach inżynierowie firmy Microsoft potrzebują dostępu do mojej zawartości?
+### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>W jakich okolicznościach inżynierowie firmy Microsoft potrzebują dostępu do mojej zawartości?
 
 Najczęstszym scenariuszem, w którym inżynierowie firmy Microsoft potrzebują dostępu do zawartości klienta, jest zgłoszenie do pomocy technicznej wymagającej dostępu do rozwiązywania problemów. Podstawową zasadą Microsoft 365 jest to, że usługa działa bez dostępu firmy Microsoft do zawartości klientów. Niemal wszystkie operacje serwisowe wykonywane przez firmę Microsoft są w pełni zautomatyzowane i angażowane przez człowieka są ściśle kontrolowane i wyeksstrowane z dala od treści klienta. Celem tego Microsoft 365 dostępu do zawartości dla klientów w celu obsługi usługi nie jest konieczne, dopóki klient nie zatwierdzi konkretnego żądania dostępu firmy Microsoft.
 
-#### <a name="i-already-thought-my-data-was-secure-with-the-microsoft-cloud-so-why-do-i-need-customer-lockbox"></a>Mam już myśl, że moje dane są bezpieczne za pomocą chmury firmy Microsoft, więc dlaczego potrzebuję skrytki klienta?
+### <a name="i-already-thought-my-data-was-secure-with-the-microsoft-cloud-so-why-do-i-need-customer-lockbox"></a>Mam już myśl, że moje dane są bezpieczne za pomocą chmury firmy Microsoft, więc dlaczego potrzebuję skrytki klienta?
 
 Skrytka klienta zapewnia dodatkową warstwę kontroli, oferując klientom możliwość nadawać klientom jawne autoryzacje dostępu do operacji usługi. Poprzez pokazanie, że procedury są stosowane w celu uzyskania jawnego autoryzacji dostępu do danych, skrytka klienta pomaga również klientom w spełnianiu określonych zobowiązań dotyczących zgodności, takich jak HIPAA i FEDRAMP.

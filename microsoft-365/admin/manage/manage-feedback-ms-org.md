@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Zarządzaj opiniami, które użytkownicy mogą wysyłać do firmy Microsoft na temat produktów firmy Microsoft.
-ms.openlocfilehash: 9b63a4046c9d1ab13ae6b3f4856a521d4c7a9b70
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8cd20b1a6138f389ba996bdaee8cae8ae24d2974
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983941"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403572"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Zarządzanie opiniami firmy Microsoft dla Twojej organizacji
 
-Jako administrator organizacji Microsoft 365, istnieje teraz kilka zasad, które ułatwiają zarządzanie zbieraniem opinii i obsługą klientów użytkowników podczas korzystania z Microsoft 365 aplikacji. Dla każdej z tych zasad możesz tworzyć istniejące grupy usługi Azure Active Directory w organizacji i korzystać z nich. Zasady te mogą kontrolować, w jaki sposób różne działy w organizacji mogą wysyłać opinie do firmy Microsoft. Firma Microsoft przegląda wszystkie opinie przesłane przez klientów i używa tych opinii w celu ulepszenia produktu. Zachowanie włączonych funkcji **opinii pozwala zobaczyć** , co użytkownicy mówią o produktach firmy Microsoft, z których chcą korzystać. Opinie od Twoich użytkowników będą wkrótce dostępne w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365.</a>
+Jako administrator organizacji Microsoft 365, istnieje teraz kilka zasad, które ułatwiają zarządzanie zbieraniem opinii i obsługą klientów użytkowników podczas korzystania z Microsoft 365 aplikacji. Dla każdej z tych zasad możesz tworzyć istniejące grupy usługi Azure Active Directory w organizacji i korzystać z nich. Zasady te mogą kontrolować, w jaki sposób różne działy w organizacji mogą wysyłać opinie do firmy Microsoft. Firma Microsoft przegląda wszystkie opinie przesłane przez klientów i używa tych opinii w celu ulepszenia produktu. Zachowanie włączonych funkcji **opinii pozwala zobaczyć** , co użytkownicy mówią o produktach firmy Microsoft, z których chcą korzystać. Opinie od Twoich użytkowników będą wkrótce dostępne w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365.</a>
 
 Aby dowiedzieć się więcej na temat typów opinii i sposobu, w jaki firma Microsoft korzysta z opinii użytkowników, zobacz Informacje na temat opinii [firmy Microsoft dla Twojej organizacji](../misc/feedback-user-control.md).
 
@@ -69,10 +69,10 @@ Aby można było korzystać z tych zasad, urządzenia muszą mieć minimalny num
 
 |**Kompilacja #**|**Win32**|**iOS**|**Android**|**Mac**|**Web**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|Opinie o produktach|Co najmniej 16.0.13328|Co najmniej 2,42|Co najmniej 16.0.13328|Co najmniej 16,42|Publicznie dostępne|
-|Ankiety dotyczące produktów|Co najmniej 16.0.13328|Co najmniej 2,42|Co najmniej 16.0.13426|Co najmniej 16,42|Oczekujące na rozłożenie|
-|Zbieranie metadanych|Co najmniej 16.0.13328|Co najmniej 2,42|Co najmniej 16.0.13328|Co najmniej 16,42|Publicznie dostępne|
-|Zaangażowanie klientów|Co najmniej 16.0.13328|Co najmniej 2,42|Co najmniej 16.0.13426|Co najmniej 16,42|Oczekujące na rozłożenie|
+|Opinie o produktach|Co najmniej wersja 2010|Co najmniej 2,42|Co najmniej 16.0.13328|Co najmniej 16,42|Publicznie dostępne|
+|Ankiety dotyczące produktów|Co najmniej wersja 2010|Co najmniej 2,42|Co najmniej 16.0.13426|Co najmniej 16,42|Oczekujące na rozłożenie|
+|Zbieranie metadanych|Co najmniej wersja 2010|Co najmniej 2,42|Co najmniej 16.0.13328|Co najmniej 16,42|Publicznie dostępne|
+|Zaangażowanie klientów|Co najmniej wersja 2010|Co najmniej 2,42|Co najmniej 16.0.13426|Co najmniej 16,42|Oczekujące na rozłożenie|
 
 ## <a name="specific-policies-you-can-configure"></a>Konkretne zasady, które można skonfigurować
 
@@ -88,19 +88,11 @@ Aby można było korzystać z tych zasad, urządzenia muszą mieć minimalny num
 
 ## <a name="configure-policies"></a>Konfigurowanie zasad
 
-1. Przejdź do strony i [https://config.office.com](https://config.office.com) zaloguj się.
-1. Wybierz pozycję **Dostosowywanie** , **a następnie pozycję Zarządzanie zasadami**.
-1. Wybierz pozycję **Utwórz**.
-1. Wprowadź **nazwę** i **opis**.
-1. Wybierz grupy usługi Azure Active Directory, które chcesz skonfigurować.
-1. Wyszukaj **opinię i** **ankietę**.
-1. Dla każdej wymienionej zasady ustaw wartość.
-
-Aby uzyskać więcej informacji, zobacz [Omówienie usługi Office w chmurze](/deployoffice/overview-office-cloud-policy-service).
+Aby skonfigurować te ustawienia zasad, możesz użyć usługi Office zasad w chmurze. Aby uzyskać więcej informacji, zobacz [Omówienie usługi Office w chmurze](/deployoffice/overview-office-cloud-policy-service). Możesz wyszukać "opinię" lub "ankietę" w interfejsie użytkownika usługi Office w chmurze, aby znaleźć ustawienia zasad ich konfiguracji. 
 
 Te ustawienia zasad są również dostępne, jeśli używasz programu zasady grupy. Aby użyć tych ustawień zasad, pobierz co najmniej wersję 5146.1000 z plików szablonów administracyjnych [(ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) opublikowanych 22 marca 2021 r.
 
-Te ustawienia zasad znajdują się w obszarze Konfiguracja użytkownika > Zasady -> szablony administracyjne -> Microsoft Office 2016 -> -> Centrum zaufania.
+Te ustawienia zasad znajdują się w obszarze Konfiguracja użytkownika\Zasady\Szablony administracyjne\Microsoft Office 2016\Prywatność\Centrum zaufania.
 
 > [!NOTE]
 > Aktualizacja aplikacji klienckich zajmuje kilka godzin.

@@ -1,0 +1,686 @@
+- name: Dokumentacja i zasoby dotyczące platformy Microsoft 365 dla przedsiębiorstw
+  href: index.yml
+- name: Microsoft 365 dla przedsiębiorstw — omówienie
+  href: microsoft-365-overview.md
+- name: Sieci
+  items:
+    - name: Plan rozwoju
+      href: networking-roadmap-microsoft-365.md
+    - name: Plan
+      items:
+        - name: Łączność sieciowa na platformie Microsoft 365 — omówienie
+          href: microsoft-365-networking-overview.md
+        - name: Zasady dotyczące łączności sieciowej na platformie Microsoft 365
+          href: microsoft-365-network-connectivity-principles.md
+        - name: Ocena łączności sieciowej na platformie Microsoft 365
+          href: assessing-network-connectivity.md
+        - name: Planowanie sieci za pomocą usługi ExpressRoute dla usługi Office 365
+          href: network-planning-with-expressroute.md
+        - name: Planowanie pod kątem urządzeń sieciowych łączących się z usługami Microsoft 365
+          href: plan-for-network-devices.md
+        - name: "Planowanie sieci i migracji dla platformy Microsoft\_365"
+          href: network-and-migration-planning.md
+    - name: Wdrażanie
+      items:
+        - name: Dodawanie domeny
+          href: ../admin/setup/add-domain.md
+        - name: Konfigurowanie punktów końcowych do obejścia
+          items:
+            - name: Usługa Office 365 — usługa sieci Web adresów IP i adresów URL
+              href: microsoft-365-ip-web-service.md
+            - name: 'Dodatkowe punkty końcowe, które nie są dostępne w usłudze sieci Web'
+              href: additional-office365-ip-addresses-and-urls.md
+            - name: Dodatkowe wymagania dotyczące zabezpieczeń sieci dla usługi Office 365 GCC High i DoD
+              href: additional-network-security-requirements-for-office-365-gcchigh-and-dod.md
+            - name: Rekordy DNS dla usługi Office 365 DoD
+              href: dns-records-for-office-365-dod.md
+            - name: Rekordy DNS dla usługi Office 365 GCC High
+              href: dns-records-for-office-365-gcc-high.md
+        - name: Content Delivery Network (CDN) — szybki start
+          href: office-365-cdn-quickstart.md
+        - name: Używanie CDN z usługą SharePoint Online
+          href: use-microsoft-365-cdn-with-spo.md
+        - name: Optymalizowanie łączności dla użytkowników zdalnych
+          items:
+            - name: Omówienie tunelowania podziału sieci VPN
+              href: microsoft-365-vpn-split-tunnel.md
+            - name: Typowe scenariusze tunelowania podziału sieci VPN
+              href: microsoft-365-vpn-common-scenarios.md
+            - name: Implementowanie tunelowania podziału sieci VPN
+              href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: Zabezpieczanie ruchu multimediów aplikacji Teams na potrzeby tunelowania podziału sieci VPN
+              href: microsoft-365-vpn-securing-teams.md
+            - name: Przesyłanie strumieniowe i zdarzenia na żywo w środowiskach sieci VPN
+              href: microsoft-365-vpn-stream-and-live-events.md
+            - name: Optymalizowanie platformy Microsoft 365 dla użytkowników w Chinach
+              href: microsoft-365-networking-china.md
+            - name: Optymalizowanie ruchu platformy Microsoft 365 w przypadku pracowników zdalnych za pomocą natywnego klienta sieci VPN w systemie Windows 10
+              href: /windows/security/identity-protection/vpn/vpn-office-365-optimization
+        - name: ExpressRoute dla usługi Office 365
+          href: azure-expressroute.md
+          items:
+            - name: Implementowanie usługi ExpressRoute
+              href: implementing-expressroute.md
+            - name: Routing przy użyciu usługi ExpressRoute dla usługi Office 365
+              href: routing-with-expressroute.md
+    - name: Zarządzanie
+      items:
+        - name: Punkty końcowe usługi Office 365
+          items:
+            - name: "Punkty końcowe platformy Microsoft\_365"
+              href: microsoft-365-endpoints.md
+            - name: Zarządzanie punktami końcowymi usługi Office 365
+              href: managing-office-365-endpoints.md
+            - name: Punkty końcowe na całym świecie
+              href: urls-and-ip-address-ranges.md
+            - name: Punkty końcowe DoD rządu Stanów Zjednoczonych
+              href: microsoft-365-u-s-government-dod-endpoints.md
+            - name: Punkty końcowe środowisk GCC High rządu Stanów Zjednoczonych
+              href: microsoft-365-u-s-government-gcc-high-endpoints.md
+            - name: Usługa Office 365 obsługiwana przez punkty końcowe 21Vianet
+              href: urls-and-ip-address-ranges-21vianet.md
+        - name: Sieci dostarczania zawartości
+          href: content-delivery-networks.md
+        - name: Obsługa protokołu IPv6 w usługach Office 365
+          href: ipv6-support.md
+        - name: Obsługa translatora NAT za pomocą usługi Office 365
+          href: nat-support-with-microsoft-365.md
+        - name: Żądania sieciowe w pakiecie Office dla komputerów Mac
+          href: network-requests-in-office-2016-for-mac.md
+        - name: Planowanie sieci i dostosowywanie wydajności
+          href: network-planning-and-performance.md
+        - name: Monitorowanie łączności
+          href: monitor-connectivity.md
+        - name: Zarządzanie usługą ExpressRoute
+          href: managing-expressroute-for-connectivity.md
+    - name: Program Networking Partner Program platformy Microsoft 365
+      href: microsoft-365-networking-partner-program.md
+- name: Dzierżawca
+  items:
+    - name: Plan rozwoju
+      href: tenant-roadmap-microsoft-365.md
+    - name: Plan
+      items:
+        - name: 'Subskrypcje, licencje, konta i dzierżawy'
+          href: subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md
+        - name: Plan dla certyfikatów SSL innych firm
+          href: plan-for-third-party-ssl-certificates.md
+        - name: Wskazówki dotyczące konfiguracji
+          href: setup-guides-for-microsoft-365.md
+        - name: Integracja
+          items:
+            - name: Zintegrowane aplikacje i usługa Azure AD
+              href: integrated-apps-and-azure-ads.md
+            - name: Integracja z środowiskiem lokalnym
+              href: microsoft-365-integration.md
+            - name: Integracja platformy Azure
+              href: azure-integration.md
+            - name: Usługa ExpressRoute platformy Azure
+              href: azure-expressroute.md
+        - name: Nowoczesne uwierzytelnianie hybrydowe
+          items:
+            - name: Wymagania wstępne dotyczące programów Skype dla firm Server i Exchange Server
+              href: hybrid-modern-auth-overview.md
+            - name: Konfigurowanie programu Exchange Server
+              href: configure-exchange-server-for-hybrid-modern-authentication.md
+            - name: Konfigurowanie programu Skype dla firm
+              href: configure-skype-for-business-for-hybrid-modern-authentication.md
+            - name: Usuwanie lub wyłączanie w przypadku programów Skype dla firm i Exchange
+              href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+            - name: 'Aplikacje klienckie pakietów Office 2013, Office 2016 i Office 2019'
+              href: modern-auth-for-office-2013-and-2016.md
+        - name: Planowanie uaktualnienia
+          href: plan-upgrade-previous-versions-office.md
+          items:
+            - name: Office 2007
+              items:
+                - name: Uaktualnianie serwerów i klientów pakietu Office 2007
+                  href: upgrade-from-office-2007-servers-and-products.md
+                - name: Wersja klasyczna pakietu Office 2007
+                  href: /DeployOffice/endofsupport/office-2007-end-support-roadmap
+                - name: Exchange 2007
+                  href: exchange-2007-end-of-support.md
+                - name: SharePoint 2007
+                  href: sharepoint-2007-end-of-support.md
+                - name: Serwer \Komunikacja w biurze
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
+                - name: PerformancePoint Server 2007
+                  href: pps-2007-end-of-support.md
+                - name: Project Server 2007
+                  href: project-server-2007-end-of-support.md
+            - name: Office 2010
+              items:
+                - name: Uaktualnianie serwerów i klientów pakietu Office 2010
+                  href: upgrade-from-office-2010-servers-and-products.md
+                - name: Wersja klasyczna pakietu Office 2010
+                  href: /DeployOffice/endofsupport/office-2010-end-support-roadmap
+                - name: Exchange 2010
+                  href: exchange-2010-end-of-support.md
+                - name: SharePoint 2010
+                  href: upgrade-from-sharepoint-2010.md
+                - name: Lync Server 2010
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
+                - name: Project Server 2010
+                  href: project-server-2010-end-of-support.md
+        - name: Izolacja dzierżawy na platformie Microsoft 365
+          href: /compliance/assurance/microsoft-365-isolation-controls
+          items:
+            - name: "Izolacja i kontrola dostępu w\_usłudze Azure Active Directory"
+              href: microsoft-365-isolation-in-azure-active-directory.md
+            - name: Monitorowanie i testowanie granic dzierżawy
+              href: /compliance/assurance/assurance-monitoring-and-testing
+            - name: Limity zasobów
+              href: /compliance/assurance/assurance-resource-limits
+            - name: Izolacja i kontroli dostępu
+              href: microsoft-365-isolation-in-microsoft-365.md
+    - name: Wdrażanie
+      items:
+        - name: Dodawanie domeny
+          href: ../admin/setup/add-domain.md
+    - name: Zarządzanie
+      items:
+        - name: Stan kondycji usługi Microsoft 365
+          href: microsoft-365-service-health.md
+        - name: Monitorowanie usługi Microsoft 365
+          href: microsoft-365-monitoring.md
+          items:
+            - name: Monitorowanie usługi Exchange Online
+              href: microsoft-365-exchange-monitoring.md
+              items:
+                - name: Alerty usługi dotyczące użycia skrzynki pocztowej
+                  href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: Alerty usługi dotyczące opóźnień źródła MRS
+                  href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: "Alerty usługi dotyczące wiadomości w\_kolejce dla adresatów zewnętrznych"
+                  href: microsoft-365-external-recipient-service-alerts.md
+            - name: Monitorowanie aplikacji usługi Microsoft 365
+              href: microsoft-365-apps-monitoring.md
+            - name: Monitorowanie usługi Teams w Microsoft 365
+              href: microsoft-365-teams-monitoring.md
+        - name: Wskazówki dotyczące konfiguracji
+          href: setup-guides-for-microsoft-365.md
+    - name: Wiele dzierżaw
+      items:
+        - name: Współpraca między dzierżawami
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: Migracja skrzynki pocztowej między dzierżawami
+          href: cross-tenant-mailbox-migration.md
+        - name: Migracje z dzierżawy do dzierżawy
+          href: microsoft-365-tenant-to-tenant-migrations.md
+    - name: Multi-geo
+      items:
+        - name: Microsoft 365 Multi-Geo
+          href: microsoft-365-multi-geo.md
+        - name: Teams Multi-Geo
+          href: multi-geo-capabilities-in-teams-in-microsoft-365.md
+        - name: OneDrive and SharePoint Multi-Geo
+          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
+        - name: Exchange Multi-Geo
+          href: multi-geo-capabilities-in-exchange-online.md
+        - name: Plan
+          items:
+            - name: Plan dla funkcji Multi-Geo
+              href: plan-for-multi-geo.md
+            - name: Środowisko administracyjne
+              href: administering-a-multi-geo-environment.md
+            - name: Środowisko użytkownika
+              href: multi-geo-user-experience.md
+        - name: Wdrażanie
+          items:
+            - name: Konfigurowanie usługi Multi-Geo
+              href: multi-geo-tenant-configuration.md
+            - name: Konfigurowanie preferowanej lokalizacji danych
+              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
+            - name: Konfigurowanie wyszukiwania
+              href: configure-search-for-multi-geo.md
+        - name: Zarządzanie
+          items:
+            - name: Administrowanie środowiskiem usługi Multi-Geo
+              href: administering-a-multi-geo-environment.md
+            - name: Zarządzanie przydziałami programu SharePoint
+              href: sharepoint-multi-geo-storage-quota.md
+            - name: Przenoszenie witryny usługi OneDrive
+              href: move-onedrive-between-geo-locations.md
+            - name: Przenoszenie witryny programu SharePoint
+              href: move-sharepoint-between-geo-locations.md
+            - name: Dodawanie lub usuwanie administratora geograficznego
+              href: add-a-sharepoint-geo-admin.md
+            - name: Ograniczanie zawartości do lokalizacji geograficznej
+              href: restrict-content-to-geo-location.md
+            - name: Konfigurowanie zbierania elektronicznych materiałów dowodowych Microsoft 365 Multi-Geo
+              href: multi-geo-ediscovery-configuration.md
+            - name: Tworzenie grupy z określoną preferowaną lokalizacją danych
+              href: multi-geo-add-group-with-pdl.md
+            - name: Usuwanie lokalizacji geograficznej
+              href: delete-a-geo-location.md
+            - name: "Włączanie programu SharePoint Multi-Geo w\_satelickiej lokalizacji geograficznej"
+              href: enabling-SP-multigeo-satellite-geolocation.md
+            - name: Administrowanie programu Exchange Multi-Geo
+              href: administering-exchange-online-multi-geo.md
+    - name: Przenoszenie do nowej lokalizacji geograficznej centrum danych Microsoft 365
+      href: moving-data-to-new-datacenter-geos.md
+      items:
+        - name: Jak zażądać przeniesienia danych
+          href: request-your-data-move.md
+        - name: Podczas przenoszenia danych i po tym procesie
+          href: during-and-after-your-data-move.md
+        - name: Ogólne często zadawane pytania dotyczące przenoszenia danych
+          href: data-move-faq.yml
+        - name: Miejsce przechowywania danych klienta
+          href: o365-data-locations.md
+        - name: Lokalizacje danych dla Unii Europejskiej
+          href: eu-data-storage-locations.md
+- name: Tożsamości
+  items:
+    - name: Omówienie
+      href: deploy-identity-solution-overview.md
+    - name: Krok nr 1. Określanie modelu tożsamości
+      href: deploy-identity-solution-identity-model.md
+    - name: Krok nr 2. Ochrona kont uprzywilejowanych
+      href: protect-your-global-administrator-accounts.md
+    - name: Krok nr 3. Ochrona kont użytkowników
+      href: microsoft-365-secure-sign-in.md
+    - name: Krok nr 4. Wdrażanie modelu tożsamości
+      items:
+        - name: Tożsamość tylko w chmurze
+          href: cloud-only-identities.md
+        - name: Tożsamość hybrydowa
+          items:
+            - name: Przygotowanie do synchronizacji katalogów
+              href: prepare-for-directory-synchronization.md
+            - name: Jak przygotować domenę bez routingu do synchronizacji katalogów
+              href: prepare-a-non-routable-domain-for-directory-synchronization.md
+            - name: Konfigurowanie synchronizacji katalogów
+              href: set-up-directory-synchronization.md
+            - name: Rozwiązania hybrydowe
+              items:
+                - name: Omówienie
+                  href: hybrid-solutions.md
+                - name: Używanie usługi Azure Active Directory na potrzeby uwierzytelniania SharePoint Server 2016
+                  href: /azure/active-directory/saas-apps/sharepoint-on-premises-tutorial
+                - name: Połączenie sieci lokalnej do sieci wirtualnej platformy Azure
+                  href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+                - name: Wdrażanie serwera synchronizacji katalogów w usłudze Azure IaaS
+                  href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+                - name: Wdrażanie uwierzytelniania federacyjnego o wysokiej dostępności na platformie Azure
+                  href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+                  items:
+                    - name: Etap 1 — konfigurowanie platformy Azure
+                      href: high-availability-federated-authentication-phase-1-configure-azure.md
+                    - name: Etap 2 — konfigurowanie kontrolerów domeny
+                      href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                    - name: Etap 3 — konfigurowanie serwerów usług AD FS
+                      href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                    - name: Etap 4 — konfigurowanie serwerów proxy aplikacji sieci Web
+                      href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                    - name: Etap 5 — konfigurowanie uwierzytelniania federacyjnego
+                      href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+                - name: Odzyskiwanie po awarii programu SharePoint Server 2013 na platformie Microsoft Azure
+                  href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+    - name: Zarządzanie
+      items:
+        - name: Konta użytkowników
+          items:
+            - name: Konta użytkowników
+              href: manage-microsoft-365-accounts.md
+            - name: Dodawanie kilku użytkowników jednocześnie
+              href: add-several-users-at-the-same-time.md
+        - name: Licencje
+          href: assign-licenses-to-user-accounts.md
+        - name: Hasła
+          href: manage-microsoft-365-passwords.md
+        - name: Grupy
+          href: manage-microsoft-365-groups.md
+        - name: Nadzór
+          href: manage-microsoft-365-identity-governance.md
+        - name: Synchronizacja katalogów
+          items:
+            - name: Wyświetlanie stanu
+              href: view-directory-synchronization-status.md
+            - name: Identyfikowanie błędów
+              href: identify-directory-synchronization-errors.md
+            - name: Rozwiązywanie problemów
+              href: fix-problems-with-directory-synchronization.md
+            - name: Wyłącz to
+              href: turn-off-directory-synchronization.md
+- name: Oprogramowanie klienckie i serwera
+  items:
+    - name: Plan rozwoju
+      href: client-server-software-roadmap-microsoft-365.md
+    - name: 'Modele architektoniczne dla programów SharePoint, Exchange, Skype dla firm i Lync'
+      href: architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md
+    - name: Plan
+      items:
+        - name: Planowanie uaktualnienia
+          href: plan-upgrade-previous-versions-office.md
+    - name: Wdrażanie
+      items:
+        - name: Office 2007
+          items:
+            - name: Uaktualnianie serwerów i klientów pakietu Office 2007
+              href: upgrade-from-office-2007-servers-and-products.md
+            - name: Wersja klasyczna pakietu Office 2007
+              href: /DeployOffice/office-2007-end-support-roadmap
+            - name: Exchange 2007
+              href: exchange-2007-end-of-support.md
+            - name: SharePoint 2007
+              href: sharepoint-2007-end-of-support.md
+            - name: Serwer \Komunikacja w biurze
+              href: /skypeforbusiness/plan-your-deployment/upgrade
+            - name: PerformancePoint Server 2007
+              href: pps-2007-end-of-support.md
+            - name: Project Server 2007
+              href: project-server-2007-end-of-support.md
+        - name: Office 2010
+          items:
+            - name: Uaktualnianie serwerów i klientów pakietu Office 2010
+              href: upgrade-from-office-2010-servers-and-products.md
+            - name: Wersja klasyczna pakietu Office 2010
+              href: /DeployOffice/office-2010-end-support-roadmap
+            - name: Exchange 2010
+              href: exchange-2010-end-of-support.md
+            - name: SharePoint 2010
+              href: upgrade-from-sharepoint-2010.md
+            - name: Lync Server 2010
+              href: /skypeforbusiness/plan-your-deployment/upgrade
+            - name: Project Server 2010
+              href: project-server-2010-end-of-support.md
+        - name: Office 2013
+          items:
+            - name: Wersja klasyczna pakietu Office 2013
+              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
+            - name: SharePoint 2013
+              href: upgrade-from-sharepoint-2013.md
+            - name: Lync Server 2013
+              href: upgrade-from-lync-2013.md
+            - name: Project Server 2013
+              href: project-server-2013-end-of-support.md
+            - name: Exchange Server 2013
+              href: exchange-2013-end-of-support.md
+- name: Zgodność
+  href: ../compliance/index.yml
+- name: Bezpieczeństwo
+  href: ../security/index.yml
+- name: Usługi w chmurze
+  items:
+    - name: Plan rozwoju
+      href: cloud-services-roadmap-microsoft-365.md
+    - name: Wdrażanie
+      items:
+        - name: Przygotowanie
+          href: configure-services-and-applications.md
+        - name: Exchange Online
+          href: /Exchange/exchange-online
+        - name: SharePoint
+          href: /sharepoint/sharepoint-online
+        - name: Skype dla firm
+          href: /SkypeForBusiness/skype-for-business-online
+        - name: Microsoft Teams
+          href: /MicrosoftTeams/Teams-overview
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: Aktywowanie zarządzania prawami
+          href: activate-rms-in-microsoft-365.md
+        - name: Konfigurowanie opcji wydania
+          href: 'https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47'
+        - name: Szkolenie użytkowników
+          href: /office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users
+    - name: Zarządzanie
+      items:
+        - name: Jak sprawdzić kondycję usługi
+          href: view-service-health.md
+        - name: Opcje pomocy technicznej
+          href: ../admin/get-help-support.md
+        - name: Exchange Online
+          href: /Exchange/exchange-online
+        - name: SharePoint
+          href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
+        - name: Skype dla firm
+          href: /SkypeForBusiness/skype-for-business-online
+        - name: Microsoft Teams
+          href: /microsoftteams/upgrade-monitor-quality
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: Wydajność i dostosowywanie
+          items:
+            - name: Dostosowywanie wydajności platformy Microsoft 365
+              href: tune-microsoft-365-performance.md
+            - name: Dostosowywanie wydajności przy użyciu planów bazowych i historii wydajności
+              href: performance-tuning-using-baselines-and-history.md
+            - name: Dostosowywanie wydajności usługi Exchange Online
+              href: tune-exchange-online-performance.md
+            - name: Dostosowywanie wydajności programu SharePoint
+              href: tune-sharepoint-online-performance.md
+              items:
+                - name: Wprowadzenie do dostosowania wydajności programu SharePoint
+                  href: introduction-to-performance-tuning-for-sharepoint-online.md
+                - name: Diagnozowanie problemów z wydajnością za pomocą programu SharePoint
+                  href: diagnosing-performance-issues-with-sharepoint-online.md
+            - name: Dostosowywanie wydajności usługi Skype dla firm Online
+              href: tune-skype-for-business-online-performance.md
+            - name: Dostosowywanie wydajności usługi Project Online
+              href: /ProjectOnline/tune-project-online-performance
+            - name: Plan rozwiązywania problemów z wydajnością
+              href: performance-troubleshooting-plan.md
+- name: Windows 10
+  items:
+    - name: Jak sprawdzić kondycję wydania
+      href: /windows/deployment/update/check-release-health
+    - name: Wdrażanie i aktualizowanie
+      href: /windows/deployment/
+- name: Aplikacje usługi Microsoft 365 dla przedsiębiorstw
+  href: /deployoffice/deployment-guide-microsoft-365-apps
+- name: Urządzenia Surface
+  href: /surface/deploy
+- name: Zarządzanie urządzeniami
+  items:
+    - name: Plan rozwoju
+      href: device-management-roadmap-microsoft-365.md
+- name: Microsoft Edge
+  href: /deployedge/deploy-edge-plan-deployment
+- name: Przykładowe konfiguracje wdrażania i aktualizowania kanałów
+  items:
+    - name: Omówienie
+      href: deploy-update-channels-examples.md
+    - name: Wdrażanie w szeroki zakresie najnowszych wersji
+      href: deploy-update-channels-examples-rapid-deploy.md
+- name: "Zarządzanie platformą Microsoft\_365 za pomocą programu PowerShell"
+  href: manage-microsoft-365-with-microsoft-365-powershell.md
+  items:
+    - name: Wprowadzenie
+      href: getting-started-with-microsoft-365-powershell.md
+      items:
+        - name: Dlaczego należy używać programu PowerShell
+          href: why-you-need-to-use-microsoft-365-powershell.md
+        - name: "Połączenie z\_platformą Microsoft 365 za pomocą programu PowerShell"
+          href: connect-to-microsoft-365-powershell.md
+        - name: Połączenie ze wszystkimi usługami Microsoft 365 w pojedynczym oknie programu PowerShell
+          href: connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md
+        - name: Tworzenie raportów za pomocą programu PowerShell
+          href: use-windows-powershell-to-create-reports-in-microsoft-365.md
+        - name: Odwołania do polecenia cmdlet dla usług Microsoft 365
+          href: cmdlet-references-for-microsoft-365-services.md
+        - name: Zasoby społeczności programu PowerShell
+          href: microsoft-365-powershell-community-resources.md
+    - name: 'Konta użytkowników, hasła, licencje i grupy'
+      href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
+      items:
+        - name: Konta użytkowników
+          items:
+            - name: Tworzenie
+              href: create-user-accounts-with-microsoft-365-powershell.md
+            - name: Widok
+              href: view-user-accounts-with-microsoft-365-powershell.md
+            - name: Konfigurowanie właściwości
+              href: configure-user-account-properties-with-microsoft-365-powershell.md
+            - name: Przypisywanie ról administratora
+              href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
+            - name: Usuwanie i przywracanie
+              href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
+            - name: Blokuj
+              href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: Hasła
+              href: manage-passwords-with-microsoft-365-powershell.md
+        - name: Licencje i usługi
+          items:
+            - name: Wyświetlanie licencji i usług
+              href: view-licenses-and-services-with-microsoft-365-powershell.md
+            - name: Wyświetlanie licencjonowanych i nielicencjonowanych użytkowników
+              href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
+            - name: Przypisywanie licencji do kont użytkowników
+              href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
+            - name: Wyświetlanie szczegółów dotyczących licencji konta i usług
+              href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: Usuwanie licencji z kont użytkowników
+              href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
+            - name: Wyłączanie dostępu do usług
+              href: disable-access-to-services-with-microsoft-365-powershell.md
+              items:
+                - name: Wyłączanie dostępu do aplikacji Sway
+                  href: disable-access-to-sway-with-microsoft-365-powershell.md
+                - name: Wyłączanie dostępu do usług podczas przypisywania licencji użytkowników
+                  href: disable-access-to-services-while-assigning-user-licenses.md
+        - name: Grupy
+          items:
+            - name: Zarządzanie grupami zabezpieczeń
+              href: manage-security-groups-with-microsoft-365-powershell.md
+            - name: Zachowywanie członkostwa w grupach zabezpieczeń
+              href: maintain-group-membership-with-microsoft-365-powershell.md
+            - name: Zarządzaj grupami platformy Microsoft 365
+              href: manage-microsoft-365-groups-with-powershell.md
+    - name: Zarządzanie programem SharePoint
+      href: manage-sharepoint-online-with-microsoft-365-powershell.md
+      items:
+        - name: Tworzenie witryn usługi SharePoint Online i dodawanie użytkowników
+          href: create-sharepoint-sites-and-add-users-with-powershell.md
+        - name: Zarządzanie użytkownikami i grupami usługi SharePoint Online
+          href: manage-sharepoint-users-and-groups-with-powershell.md
+        - name: Zarządzanie grupami witryn usługi SharePoint Online
+          href: manage-sharepoint-site-groups-with-powershell.md
+    - name: Zarządzanie usługą Exchange Online
+      href: /powershell/exchange/connect-to-exchange-online-powershell
+    - name: Używanie programu PowerShell do migrowania poczty e-mail do platformy Microsoft 365
+      href: use-powershell-for-email-migration-to-microsoft-365.md
+      items:
+        - name: "Używanie programu PowerShell do wykonywania migracji jednorazowej do platformy Microsoft\_365"
+          href: use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md
+        - name: "Używanie programu PowerShell do wykonywania migracji IMAP do platformy Microsoft\_365"
+          href: use-powershell-to-perform-an-imap-migration-to-microsoft-365.md
+        - name: "Używanie programu PowerShell do wykonywania migracji etapowej do platformy Microsoft\_365"
+          href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
+    - name: "Zarządzanie platformą Microsoft 365 za pomocą programu Windows PowerShell w\_przypadku partnerów z\_dostępem delegowanym"
+      href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
+      items:
+        - name: "Zarządzanie dzierżawami platformy Microsoft 365 za pomocą programu Windows PowerShell w\_przypadku partnerów z\_dostępem delegowanym"
+          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+        - name: "Dodawanie domeny do dzierżawy klienta za pomocą programu Windows PowerShell w\_przypadku partnerów z\_dostępem delegowanym"
+          href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
+        - name: "Połączenie z\_usługą Exchange Online za pomocą zdalnego programu Windows PowerShell w\_przypadku partnerów z dostępem delegowanym"
+          href: /powershell/exchange/connect-to-exchange-online-powershell
+        - name: "Pobieranie danych dotyczących raportowania klientów za pomocą programu Windows PowerShell w\_przypadku partnerów z\_dostępem delegowanym"
+          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
+    - name: Zarządzanie aplikacją Microsoft Teams
+      href: /microsoftteams/teams-powershell-install
+    - name: Zarządzanie usługą Skype dla firm Online
+      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
+      items:
+        - name: Zarządzanie zasadami usługi Skype dla firm Online
+          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
+        - name: Przypisywanie zasad usługi Skype dla firm Online na użytkownika
+          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
+    - name: Zarządzanie dodatki za pomocą programu PowerShell dla scentralizowanego wdrażania
+      href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
+- name: Zestaw laboratoryjny wdrażania systemu Windows i usługi Office 365
+  href: modern-desktop-deployment-and-management-lab.md
+- name: Przewodniki laboratorium testowego
+  href: m365-enterprise-test-lab-guides.md
+  items:
+    - name: Konfiguracja podstawowa
+      items:
+        - name: Lekka
+          href: lightweight-base-configuration-microsoft-365-enterprise.md
+        - name: Symulowane przedsiębiorstwo
+          href: simulated-ent-base-configuration-microsoft-365-enterprise.md
+    - name: Tożsamości
+      items:
+        - name: Synchronizacja skrótów haseł
+          href: password-hash-sync-m365-ent-test-environment.md
+        - name: Uwierzytelnianie przekazywane
+          href: pass-through-auth-m365-ent-test-environment.md
+        - name: Uwierzytelnianie federacyjne
+          href: federated-identity-for-your-microsoft-365-dev-test-environment.md
+        - name: Bezproblemowe logowanie jednokrotne w usłudze Microsoft Azure Active Directory
+          href: single-sign-on-m365-ent-test-environment.md
+        - name: Uwierzytelnianie wieloskładnikowe
+          href: multi-factor-authentication-microsoft-365-test-environment.md
+        - name: Ochrona kont administratorów globalnych
+          href: protect-global-administrator-accounts-microsoft-365-test-environment.md
+        - name: Zapisanie zwrotne haseł
+          href: password-writeback-m365-ent-test-environment.md
+        - name: Resetowanie haseł
+          href: password-reset-m365-ent-test-environment.md
+        - name: Automatyczne licencjonowanie i członkostwo w grupach
+          href: automate-licenses-group-membership-microsoft-365-test-environment.md
+        - name: "Ochrona tożsamości w\_usłudze Azure AD"
+          href: azure-ad-identity-protection-microsoft-365-test-environment.md
+        - name: "Dostęp do tożsamość i\_urządzeń"
+          href: identity-device-access-m365-test-environment.md
+          items:
+            - name: Tylko w chmurze
+              href: cloud-only-prereqs-m365-test-environment.md
+            - name: Synchronizacja skrótów haseł
+              href: phs-prereqs-m365-test-environment.md
+            - name: Uwierzytelnianie przekazywane
+              href: pta-prereqs-m365-test-environment.md
+    - name: Zarządzanie urządzeniami przenośnymi
+      items:
+        - name: "Rejestrowanie urządzeń z\_systemem iOS i Android"
+          href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
+        - name: Zasady zgodności urządzeń
+          href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
+    - name: Ochrona informacji
+      items:
+        - name: "Zwiększone zabezpieczenia na platformie Microsoft\_365"
+          href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
+        - name: Klasyfikacja danych
+          href: data-classification-microsoft-365-enterprise-dev-test-environment.md
+        - name: Privileged Access Management
+          href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
+- name: Analiza przypadku firmy Contoso
+  href: contoso-case-study.md
+  items:
+    - name: Omówienie
+      href: contoso-overview.md
+    - name: "Potrzeby i\_infrastruktura IT firmy Contoso"
+      href: contoso-infra-needs.md
+    - name: Sieci
+      href: contoso-networking.md
+    - name: Tożsamości
+      href: contoso-identity.md
+    - name: System Windows10 dla firm
+      href: contoso-win10.md
+    - name: Aplikacje usługi Microsoft 365 dla przedsiębiorstw
+      href: contoso-o365pp.md
+    - name: Zarządzanie urządzeniami przenośnymi
+      href: contoso-mdm.md
+    - name: Ochrona informacji
+      href: contoso-info-protect.md
+    - name: Podsumowanie zabezpieczeń
+      href: contoso-security-summary.md
+- name: "Architektura i\_rozwiązania platformy Microsoft 365"
+  href: ../solutions/index.yml
+- name: Zarządzanie ciągłością biznesową przedsiębiorstwa (EBCM) za pomocą usług w chmurze
+  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
+  items:
+    - name: "Obowiązki klientów i partnerów w\_chmurze EBCM"
+      href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities
+    - name: Sprężystość usług w chmurze Microsoft 365
+      href: /compliance/assurance/assurance-m365-service-resiliency
+    - name: Opracowywanie planu ciągłości
+      href: /compliance/assurance/assurance-developing-your-ebcm-plan
+    - name: Scenariusze ograniczania ryzyka zdarzeń usługi
+      href: /compliance/assurance/assurance-microsoft-365-mitigations
+- name: Przewodnik dotyczący nawigacji
+  href: ../microsoft-365-docs-navigation-guide.md?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
+- name: Microsoft 365 dla firm
+  href: ../admin/index.yml

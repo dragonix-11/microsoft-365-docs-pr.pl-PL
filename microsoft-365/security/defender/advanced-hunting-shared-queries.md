@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 06952be112f4eb28867a4a0cd4bffbee0c664b5c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 96db917808094487039a13740cba80ad751f062f
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021368"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755506"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Korzystanie z zapytań udostępnionych podczas zaawansowanego wyszukiwania
 
@@ -38,7 +38,7 @@ ms.locfileid: "63021368"
 
 [Zaawansowane zapytania](advanced-hunting-overview.md) myśliwskie mogą być udostępniane użytkownikom w tej samej organizacji. Możesz również znaleźć zapytania udostępnione publicznie w GitHub. Te zapytania umożliwiają szybkie prowadzenie określonych scenariuszy wyszukiwania zagrożeń bez konieczności pisania zapytań od podstaw.
 
-![Obraz zapytań udostępnionych.](../../media/shared-query-1.png)
+:::image type="content" source="../../media/shared-query-1.png" alt-text="Informacje dotyczące zapytań udostępnionych w portalu Microsoft 365 Defender sieci Microsoft 365 Defender." lightbox="../../media/shared-query-1.png":::
 
 ## <a name="save-modify-and-share-a-query"></a>Zapisywanie, modyfikowanie i udostępnianie zapytania
 Nowe lub istniejące zapytanie można zapisać w taki sposób, aby było dostępne tylko dla Ciebie lub udostępnione innym użytkownikom w organizacji. 
@@ -49,7 +49,7 @@ Nowe lub istniejące zapytanie można zapisać w taki sposób, aby było dostęp
     
 3. Wprowadź nazwę zapytania. 
 
-   ![Obraz zapisywania zapytania.](../../media/shared-query-2.png)
+   :::image type="content" source="../../media/shared-query-2.png" alt-text="Nowe zapytanie, które niebawem zostanie zapisane w portalu Microsoft 365 Defender." lightbox="../../media/shared-query-2.png":::
 
 4. Wybierz folder, w którym chcesz zapisać zapytanie.
     - **Zapytania udostępnione** — udostępnione wszystkim użytkownikom w organizacji
@@ -60,7 +60,7 @@ Nowe lub istniejące zapytanie można zapisać w taki sposób, aby było dostęp
 ## <a name="delete-or-rename-a-query"></a>Usuwanie lub zmienianie nazwy zapytania
 1. Wybierz trzy kropki z prawej strony zapytania, którego nazwę chcesz zmienić lub usunąć.
 
-    ![Obraz zapytania wybierającego.](../../media/shared-query-3.png)
+    :::image type="content" source="../../media/shared-query-3.png" alt-text="Opcje dla zapytania udostępnionego na stronie zaawansowanego wyszukiwania w portalu Microsoft 365 Defender zaawansowanego" lightbox="../../media/shared-query-3.png":::
 
 2. Wybierz **pozycję Usuń** i potwierdź usunięcie. Możesz też **wybrać pozycję Zmień** nazwę i podać nową nazwę zapytania.
 
@@ -76,8 +76,8 @@ Firma Microsoft ds. zabezpieczeń regularnie udostępnia zaawansowane zapytania 
 
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
-- [Praca z wynikami zapytania](advanced-hunting-query-results.md)
-- [Przeszukaj urządzenia, wiadomości e-mail, aplikacje i tożsamości](advanced-hunting-query-emails-devices.md)
-- [Opis schematu](advanced-hunting-schema-tables.md)
-- [Stosowanie najlepszych rozwiązań kwerend](advanced-hunting-best-practices.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
+- [Praca z wynikami zapytań](advanced-hunting-query-results.md)
+- [Wyszukiwanie zagrożeń na urządzeniach, w wiadomościach e-mail, aplikacjach i tożsamościach](advanced-hunting-query-emails-devices.md)
+- [Analiza schematu](advanced-hunting-schema-tables.md)
+- [Stosowanie najlepszych rozwiązań dla zapytań](advanced-hunting-best-practices.md)

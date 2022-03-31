@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 456f5dae90f2a559e82599271f23bd5f3452ac12
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 58d7a8acd752eda36fe8ee73989105b54e746ddf
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013680"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755551"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Pilotażowa usługa Microsoft Defender dla Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "63013680"
 
 Ten artykuł dotyczy [kroku 3 z 3](eval-defender-office-365-overview.md) w procesie konfigurowania środowiska oceny dla programu Microsoft Defender dla programu Office 365. Aby uzyskać więcej informacji na temat tego procesu, zobacz artykuł [z omówieniem](eval-defender-office-365-overview.md).
 
-Aby skonfigurować i skonfigurować pilotaż programu Microsoft Defender dla systemu Windows, należy wykonać Office 365.
+Aby skonfigurować i skonfigurować pilotaż programu Microsoft Defender dla systemu Microsoft Defender dla systemu Office 365, należy wykonać poniższe Office 365.
 
 ![Kroki tworzenia pilotażu programu Microsoft Defender dla Office 365.](../../media/defender/m365-defender-office-pilot.png)
 
@@ -45,28 +45,28 @@ Aby skonfigurować i skonfigurować pilotaż programu Microsoft Defender dla sys
 
 Podczas oceny usługi Microsoft Defender dla Office 365 można wybrać pilotaż konkretnych użytkowników przed włączeniem i rozpoczęciem wymuszania zasad dla całej organizacji. Tworzenie grup dystrybucyjnych może ułatwić zarządzanie procesami wdrażania. Można na przykład utworzyć grupy, takie jak *Defender for Office 365 Users* (Standard Protection), *Defender for Office 365 Users (* Ściśle chronić), *Defender for Office 365 Users (Użytkownicy* korzystający z programu Office 365 — niestandardowa ochrona) lub *Defender for Office 365 Users* (Wyjątki).
 
-Być może nie wiadomo, dlaczego w tym celu używane są terminy "Standard" i "Strict", ale to się stanie jasne, gdy dowiesz się więcej o programie Defender dla programu Office 365 ustawień wstępnych zabezpieczeń. Nazewnictwo grup "niestandardowe" i "wyjątki" mówi same za siebie, jednak większość użytkowników powinna podlegać standardowym  i ścisłym *grupom* niestandardowym i grupom wyjątków, które będą gromadzić cenne dane dotyczące zarządzania ryzykiem.
+Być może nie będzie wiadomo, dlaczego terminy "Standard" i "Strict" są terminami używanymi w tych grupach, ale to się stanie jasne, gdy dowiesz się więcej o programie Defender Office 365 ustawień wstępnych zabezpieczeń. Nazewnictwo grup "niestandardowe" i "wyjątki" mówi same za siebie, jednak większość użytkowników powinna podlegać standardowym  i ścisłym *grupom* niestandardowym i grupom wyjątków, które będą gromadzić cenne dane dotyczące zarządzania ryzykiem.
 
 ## <a name="step-1-create-pilot-groups"></a>Krok 1. Tworzenie grup pilotażowych
 
 Grupy dystrybucyjne można tworzyć i tworzyć oraz bezpośrednio Exchange Online lub synchronizować z lokalnej usługi Active Directory.
 
-1. Logowanie do centrum Exchange administracyjnego przy użyciu konta, które otrzymało rolę Administrator adresata lub do których zostały delegowane uprawnienia zarządzania grupą.
-2. W menu nawigacji rozwiń pozycję **Adresaci** i wybierz pozycję <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Grupy**</a>.
+1. Zaloguj się do Centrum administracyjnego usługi Exchange(EAC) przy użyciu konta, do których udzielono uprawnień Administrator adresata lub do których zostały delegowane uprawnienia do zarządzania grupą.
+2. W menu nawigacji rozwiń pozycję *Adresaci* i wybierz pozycję *Grupy*.
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="Exchange w menu nawigacji (szybkie uruchamianie) ze strzałką wskazującą pozycję Grupy. Kliknij pozycję Grupy.":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="Menu nawigacji centrum administracyjnego programu Exchange (szybkie uruchamianie) ze strzałką wskazującą pozycję Grupy. Kliknij pozycję Grupy" lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
 
 3. Na pulpicie nawigacyjnym Grupy wybierz pozycję "Dodaj grupę".
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="Dodaj grupy w panelu Grupy.":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="Opcja Dodaj grupy na panelu Grupy w portalu Microsoft 365 Defender grupy" lightbox="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png":::
 
 4. W przypadku typu grupy wybierz pozycję *Dystrybucja* i kliknij przycisk Dalej.
 
-   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="Wybierz tutaj typ grupy dystrybucyjnej.":::
+   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="Strona Wybieranie typu grupy w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png":::
 
 5. Nadaj grupie nazwę i opis, a następnie kliknij przycisk Dalej.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="Nadaj nazwę i opisz grupę.":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="Strona Konfigurowanie podstawowych funkcji w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png":::
 
 ## <a name="step-2-configure-protection"></a>Krok 2. Konfigurowanie ochrony
 
@@ -75,7 +75,7 @@ Niektóre funkcje w programie Defender Office 365 są domyślnie skonfigurowane 
 Niektóre funkcje nie *są jeszcze* skonfigurowane. Dostępne są trzy opcje konfigurowania ochrony:
 
 - **Automatyczne przypisywanie wstępnie ustawionych** zasad [zabezpieczeń — wstępnie](../office-365-security/preset-security-policies.md) ustawione zasady zabezpieczeń są udostępniane jako metoda szybkiego przypisywania jednolitego poziomu ochrony dla wszystkich funkcji. Do wyboru są standardowe ***_ lub _*_ścisłe_**. Dobrym rozwiązaniem jest rozpoczęcie od wstępnie ustawionych zasad zabezpieczeń, a następnie dostosowanie zasad w celu dowiedzenia się więcej o możliwościach i własnym unikatowym środowisku zagrożeń. Zaletą tego jest to, że chronisz grupy użytkowników tak szybko, jak to możliwe, oraz możliwość późniejszego dostosowania ochrony. (Ta metoda jest zalecana).
-- **Ręczne konfigurowanie ochrony według** planu bazowego — jeśli wolisz samodzielnie skonfigurować środowisko, możesz szybko osiągnąć plan bazowy ochrony, korzystając z porad w tece Ochrona [przed zagrożeniami](../office-365-security/protect-against-threats.md). Ta metoda pozwala uzyskać więcej informacji na temat ustawień, które można konfigurować. Oczywiście możesz dostosować te zasady później.
+- **Ręczne konfigurowanie ochrony według** planu bazowego — jeśli wolisz samodzielnie skonfigurować środowisko, możesz szybko osiągnąć plan bazowy ochrony, korzystając z porad w tece Ochrona [przed zagrożeniami](../office-365-security/protect-against-threats.md). Ta metoda pozwala uzyskać więcej informacji na temat konfigurowanych ustawień. Oczywiście możesz dostosować te zasady później.
 - **Konfigurowanie *niestandardowych* zasad ochrony** — w ramach oceny można również tworzyć i przypisywać niestandardowe zasady ochrony. Przed rozpoczęciem dostosowywania zasad należy zrozumieć pierwszeństwo stosowania i wymuszania tych zasad ochrony. W celu zdefiniowania zasad zabezpieczeń dla linków programu Sejf i załączników w celu określenia ustawień wstępnych należy utworzyć pewne zasady nawet w przypadku stosowania Sejf zabezpieczeń.
 
 > [!IMPORTANT]
@@ -83,7 +83,7 @@ Niektóre funkcje nie *są jeszcze* skonfigurowane. Dostępne są trzy opcje kon
 
 ### <a name="assign-preset-security-policies"></a>Przypisywanie wstępnie ustawionych zasad zabezpieczeń
 
-Zaleca się rozpoczęcie od zalecanych zasad planu bazowego  podczas oceniania obiektu MDO, a następnie uściślianie ich w razie potrzeby w trakcie okresu oceny.
+Zalecane jest rozpoczęcie od zalecanych zasad planu  bazowego podczas oceniania obiektu MDO, a następnie uściślinie ich w razie potrzeby w trakcie okresu oceny.
 
 Zalecane usługi EOP i Defender można szybko włączyć Office 365 ochrony i przypisać je określonym użytkownikom pilotażowym lub zdefiniowanym grupom w ramach oceny. Wstępnie ustawione zasady oferują szablon **standardowej** ochrony według planu bazowego lub  bardziej rygorystyczny szablon ścisłej ochrony, który można przypisać niezależnie lub razem.
 
@@ -96,28 +96,28 @@ Poniżej znajduje się artykuł Wstępnie ustawione [zasady zabezpieczeń w usł
 
 3. Na pulpicie nawigacyjnym & zasad kliknij pozycję *Zasady zagrożeń*.
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="a.":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="Element menu Zasady zagrożeń w Microsoft 365 Defender zabezpieczeń" lightbox="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png":::
 
 4. W portalu Microsoft 365 Defender rozwiń pozycję Zarządzanie zagrożeniami z menu nawigacji, a następnie wybierz pozycję Zasady z podmenu.
 5. Na pulpicie nawigacyjnym zasad kliknij pozycję *Wstępnie ustawione zasady zabezpieczeń*.
 
-   :::image type="content" source="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png" alt-text="Kliknij kafelek Wstępnie ustawione zasady zabezpieczeń.":::
+   :::image type="content" source="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png" alt-text="Strona Zasady zagrożeń w Microsoft 365 Defender sieci Web" lightbox="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png":::
 
 6. Kliknij *pozycję Edytuj* , aby skonfigurować i przypisać zasady Standardowe i/lub Ścisłe.
 
-   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-pilot-preset.png" alt-text="W panelu Wstępnie ustawione zasady zabezpieczeń kliknij pozycję Edytuj.":::
+   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-pilot-preset.png" alt-text="Strona Wstępnie ustawione zasady zabezpieczeń w Microsoft 365 Defender sieci Web" lightbox="../../media/mdo-eval/8-mdo-eval-pilot-preset.png":::
 
 7. Dodaj warunki, aby zastosować ochronę podstawową ***EOP** _ do określonych użytkowników pilotażowych lub grup użytkowników (w razie potrzeby), a następnie wybierz pozycję _Next*, aby kontynuować.
 
    Na przykład warunek "Defender for Office 365" do oceny pilotażowej można zastosować, jeśli adresaci są członkami zdefiniowanej grupy Usługi Defender dla usługi *Office 365 Standard Protection*, a następnie zarządzać nimi, po prostu dodając konta do grupy lub usuwając z nich konto.
 
-   :::image type="content" source="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png" alt-text="Dodaj warunki wymagane do zastosowania poziomu zabezpieczeń programu EOP do grupy pilotażowej.":::
+   :::image type="content" source="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png" alt-text="Ochrona eOP dotyczy strony w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png":::
 
 8. Dodaj warunki, aby w razie potrzeby zastosować ochronę podstawową ***MDO** _ do konkretnych użytkowników pilotażowych lub grup użytkowników. Kliknij przycisk _Next*, aby kontynuować.
 
    Na przykład warunek "Defender for Office 365" do oceny pilotażowej można zastosować, jeśli adresaci są członkami zdefiniowanej grupy *Usługi Defender dla usługi Office 365 Standard Protection*, a następnie zarządzać nimi, po prostu dodając/usuwając konta za pośrednictwem tej grupy.
 
-   :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="Dodaj warunki wymagane do zastosowania usługi Defender Office 365 poziomu zabezpieczeń do grupy pilotażowej.":::
+   :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="Ochrona usługi Defender Office 365 mają zastosowanie do strony w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png":::
 
 9. Przejrzyj i potwierdź zmiany dotyczące przypisywania wstępnie ustawionych zasad zabezpieczeń.
 10. Wstępnie ustawione zasady ochrony można zarządzać (ponownie skonfigurować, zastosować ponownie, wyłączyć itp.), wracając do portalu Microsoft 365 Defender > Policies & Rules > Threat Policies > i klikając kafelek Wstępnie ustawione zasady zabezpieczeń.
@@ -162,7 +162,7 @@ Po skonfigurowaniu i skonfigurowaniu pilotażu warto zapoznać się z narzędzia
 
 ## <a name="next-steps"></a>Następne kroki
 
-[Szacowanie programu Microsoft Defender pod celu punktu końcowego](eval-defender-endpoint-overview.md)
+[Ocena ochrony punktu końcowego w usłudze Microsoft Defender](eval-defender-endpoint-overview.md)
 
 Wróć do przeglądu [szacowania programu Microsoft Defender dla programu Office 365](eval-defender-office-365-overview.md)
 

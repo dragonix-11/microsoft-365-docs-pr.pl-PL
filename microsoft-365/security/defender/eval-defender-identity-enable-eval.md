@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ac5c1a1bb541dee61155a55f23a78533c2b5360c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 1be194035348bb8d414b37f16399fdcffe406063
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311609"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755050"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Włączanie środowiska oceny dla programu Microsoft Defender dla tożsamości
 
@@ -37,7 +37,7 @@ Ten artykuł dotyczy [kroku 2 z 2](eval-defender-identity-overview.md) w procesi
 
 Aby skonfigurować środowisko usługi Microsoft Defender dla tożsamości, należy wykonać poniższe czynności. 
 
-![Procedura włączania usługi Microsoft Defender dla tożsamości w środowisku oceny programu Microsoft Defender.](../../media/defender/m365-defender-identity-eval-enable-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-enable-steps.png" alt-text="Procedura włączania usługi Microsoft Defender dla tożsamości w środowisku oceny usługi Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-eval-enable-steps.png":::
 
 - [Krok 1. Konfigurowanie wystąpienia usługi Defender for Identity](#step-1-set-up-the-defender-for-identity-instance)
 - [Krok 2. Instalowanie i konfigurowanie czujnika](#step-2-install-and-configure-the-sensor)
@@ -48,33 +48,30 @@ Aby skonfigurować środowisko usługi Microsoft Defender dla tożsamości, nale
 
 Zaloguj się do portalu usługi Defender for Identity, aby utworzyć wystąpienie, a następnie połączyć to wystąpienie ze środowiskiem usługi Active Directory. 
 
-|  |Krok     |Więcej informacji  |
+|  Krok | Opis     |Więcej informacji  |
 |---------|---------|---------|
 |1     | Tworzenie wystąpienia usługi Defender for Identity        | [Szybki start: tworzenie wystąpienia usługi Microsoft Defender dla tożsamości](/defender-for-identity/install-step1)        |
 |2     | Połączenie wystąpienia usługi Defender for Identity do lasu usługi Active Directory   | [Szybki start: Połączenie do lasu usługi Active Directory](/defender-for-identity/install-step2)  |
-| | |
 
 ## <a name="step-2-install-and-configure-the-sensor"></a>Krok nr 2. Instalowanie i konfigurowanie czujnika
 
 Następnie pobierz, zainstaluj i skonfiguruj czujnik defender dla tożsamości w kontrolerach domeny i serwerach usług AD FS w środowisku lokalnym.
 
-|  |Krok     |Więcej informacji  |
+|  Krok | Opis     |Więcej informacji  |
 |---------|---------|---------|
 |1     | Określ, ile czujnika usługi Microsoft Defender dla tożsamości jest potrzebnych.        | [Planowanie pojemności usługi Microsoft Defender dla tożsamości](/defender-for-identity/capacity-planning)   |
 |2     | Pobierz pakiet instalacyjny czujnika  |  [Szybki start: Pobieranie pakietu instalacyjnego czujnika tożsamości usługi Microsoft Defender for Identity](/defender-for-identity/install-step3)   |
 |3     | Zainstaluj czujnik usługi Defender for Identity    |  [Szybki start: instalowanie czujnika usługi Microsoft Defender for Identity](/defender-for-identity/install-step4)       |
 |4     | Konfigurowanie czujnika       |  [Konfigurowanie ustawień czujnika tożsamości usługi Microsoft Defender ](/defender-for-identity/install-step5)   |
-|   |         |         |
 
 ## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Krok nr 3. Konfigurowanie dziennika zdarzeń i ustawień serwera proxy na komputerach za pomocą czujnika
 
 Na komputerach, na których został zainstalowany czujnik, skonfiguruj ustawienia dziennika Windows i internetowego serwera proxy, aby włączyć i ulepszyć funkcje wykrywania.
 
-|  |Krok     |Więcej informacji  |
+|  Krok | Opis     |Więcej informacji  |
 |---------|---------|---------|
 |1     | Konfigurowanie Windows dziennika zdarzeń         | [Konfigurowanie Windows zdarzeń](/defender-for-identity/configure-windows-event-collection)        |
 |2     | Konfigurowanie ustawień internetowego serwera proxy        | [Konfigurowanie ustawień serwera proxy punktu końcowego i łączności internetowej dla czujnika tożsamości programu Microsoft Defender](/defender-for-identity/configure-proxy)        |
-|   |         |         |
 
 ## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>Krok nr 4. Zezwalanie u defenderowi na tożsamości na identyfikowanie administratorów lokalnych na innych komputerach
 

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Składnik zasad DLP i informacje o konfiguracji
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 4888569318fd24d25368dc1c923a1efced9f4126
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 9b9658db71ea9945cedb746ec688eff5018a4ba4
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675443"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520621"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Informacje dotyczące zasad ochrony przed utratą danych
 
@@ -107,9 +107,9 @@ Zasady DLP mogą znaleźć i chronić elementy zawierające poufne informacje w 
 |SharePoint witryn online   |witryny       | data-at-rest </br> data-in-use | Nie|
 |OneDrive dla Firm konta| konto lub grupa dystrybucyjna |data-at-rest </br> data-in-use|Nie|
 |Teams wiadomości czatu i kanałów     | konto lub grupa dystrybucyjna |data-in-motion </br> data-in-use |  Nie       |
-|Usługa Microsoft Defender dla aplikacji w chmurze   | wystąpienie aplikacji w chmurze       |data-at-rest         | - [Korzystanie z zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż firmy Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Urządzenia  |użytkownik lub grupa         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w punktach końcowych](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Wprowadzenie do ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Konfigurowanie ustawień serwera proxy urządzenia i połączenia internetowego w celu ochrony informacji](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|Repozytoria lokalne (udziały plików i SharePoint)    |repozytorium         | data-at-rest         | - [Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w środowisku lokalnym](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Wprowadzenie do lokalnego skanera ochrony przed utratą danych](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Microsoft Defender for Cloud Apps   | wystąpienie aplikacji w chmurze       |data-at-rest         | - [Korzystanie z zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż firmy Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Urządzenia  |użytkownik lub grupa         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w punktach końcowych](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Wprowadzenie z zapobieganiem utracie danych w punkcie końcowym](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Konfigurowanie ustawień serwera proxy i połączenia internetowego urządzenia dla Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Repozytoria lokalne (udziały plików i SharePoint)    |repozytorium         | data-at-rest         | - [Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w środowisku lokalnym](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Wprowadzenie ze skanerem lokalnym do ochrony przed utratą danych](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| obszary robocze | data-in-use | Nie|
 
 Jeśli zdecydujesz się uwzględnić określone grupy dystrybucyjne Exchange, zasady DLP będą obejmować tylko członków tej grupy. Podobnie wykluczenie grupy dystrybucyjnej spowoduje wykluczenie wszystkich członków tej grupy dystrybucyjnej z oceny zasad. Możesz określić zakres zasad dla członków list dystrybucyjnych, dynamicznych grup dystrybucyjnych i grup zabezpieczeń. Zasady DLP mogą zawierać nie więcej niż 50 takich dołączeń i wykluczeń.
@@ -132,7 +132,7 @@ Zasady DLP wykrywają poufne elementy, dopasowując je do typu informacji poufny
 |OneDrive dla Firm konta| Tak| Tak| Tak|
 |Teams wiadomości czatu i kanałów | Tak| Nie| Nie|
 |Urządzenia |Tak | Tak|  Nie|
-|Usługa Microsoft Defender dla aplikacji w chmurze | Tak| Tak| Tak|
+|Microsoft Defender for Cloud Apps | Tak| Tak| Tak|
 |Repozytoria lokalne| Tak| Tak| Nie|
 |PowerBI|Tak | Tak| Nie|
 
@@ -297,7 +297,7 @@ Dostępne opcje kontekstowe zmieniają się w zależności od wybranej lokalizac
 - Zawartość zawiera
 - Zobacz Działania [punktu końcowego, które można monitorować i podjąć działania w związku z](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Warunki, jakie obsługuje program Microsoft Defender for Cloud Apps
+##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Warunki Microsoft Defender for Cloud Apps obsługuje
 
 - Zawartość zawiera
 - Zawartość jest udostępniana z Microsoft 365
@@ -439,7 +439,7 @@ Po wybraniu jednej z opcji Zastosuj  ograniczenia użytkownik próbuje uzyskać 
 
 Aby uzyskać [więcej informacji](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) , zobacz Ograniczone aplikacje i grupy aplikacji. 
 
-#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Akcje programu Microsoft Defender dla aplikacji w chmurze
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Microsoft Defender for Cloud Apps akcji
 
 - Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacji
 - Ogranicz aplikacje innych firm
@@ -480,7 +480,7 @@ Jeśli na przykład wybierzesz lokalizacje Exchange Urządzenia, będą dostępn
 - Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacji
 - Inspekcja lub ograniczanie działań na Windows urządzeniach
 
-Jeśli wybierzesz pozycję Urządzenia i program Microsoft Defender dla aplikacji w chmurze, będą dostępne następujące akcje:
+Jeśli wybierzesz pozycję Urządzenia i Microsoft Defender for Cloud Apps, będą dostępne następujące akcje:
 
 - Ograniczanie dostępu lub szyfrowanie zawartości w Microsoft 365 lokalizacji
 - Inspekcja lub ograniczanie działań na Windows urządzeniach
@@ -531,9 +531,9 @@ Możesz włączyć/wyłączyć powiadomienia użytkowników dla różnych aplika
 
 i dostosuj tekst wiadomości e-mail, temat oraz tekst porady dotyczącej zasad.
 
-![Opcje konfiguracji powiadomień użytkowników i porad o zasadach dostępne dla aplikacji Exchange, SharePoint, OneDrive, Teams czatów i kanałów oraz usługi Defender dla aplikacji w chmurze](../media/dlp-user-notification-non-devices.png)
+![Opcje konfiguracji powiadomień użytkowników i porad o zasadach, które są dostępne dla Exchange, SharePoint, OneDrive, Teams czatów i kanałów oraz Defender dla Chmury aplikacje](../media/dlp-user-notification-non-devices.png)
 
-Jeśli wybrano tylko opcję Urządzenia, zostaną wyświetlone wszystkie opcje dostępne dla usług Exchange, SharePoint, OneDrive, Teams Czat oraz Kanał i Defender dla aplikacji w chmurze, a także opcję dostosowania tytułu powiadomienia i zawartości wyświetlanej na urządzeniu z systemem Windows 10.
+Jeśli wybrano tylko pozycję Urządzenia, zostaną wyświetlone wszystkie opcje dostępne dla usług Exchange, SharePoint, OneDrive, Teams Czat i Kanał oraz aplikacje Defender dla Chmury oraz możliwość dostosowania tytułu powiadomienia i zawartości wyświetlanej w Windows 10 .
 
 ![Opcje konfiguracji powiadomień użytkownika i porad o zasadach dostępne dla urządzeń](../media/dlp-user-notification-devices.png)  
 
@@ -648,7 +648,7 @@ Jeśli zasady mają wiele reguł, możesz użyć opcji Dodatkowe w celu sterowan
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planowanie ochrony przed utratą danych (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [Tworzenie zasad DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md#create-a-dlp-policy-from-a-template)
-- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [Twórz zasady DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md#create-a-dlp-policy-from-a-template)
+- [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
