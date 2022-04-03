@@ -1,7 +1,7 @@
 ---
 title: Alerty usługi MRS
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Alerty usługi migracji skrzynek pocztowych są służące do monitorowania opóźnień żądań migracji skrzynek pocztowych w organizacji.
-ms.openlocfilehash: 25c569030bd5da914dc6eb7ec0e58ebadfe4d766
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6b4b618bae602c7c06b2d6371e39cc865d0a3407
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63028109"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64567989"
 ---
 # <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>Alerty usługi dotyczące opóźnień źródła MRS w Exchange Online sieci
 
 Alerty usługi replikacji skrzynek pocztowych (MRS, Mailbox Replication Service) informują o ograniczeniach magazynowania lub problemach użycia procesora po stronie dzierżawy (źródła migracji), które mogą opóźniać migrację skrzynek pocztowych w Microsoft 365 organizacji. Te alerty usługi zawierają również linki do zasobów firmy Microsoft, które ułatwiają rozwiązanie tych problemów.
 
-Alerty usługi są wyświetlane w centrum administracyjne platformy Microsoft 365. Aby wyświetlić te alerty usługi, przejdź do strony Kondycja usługi <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**HealthService**</a> >  >  **Exchange Online** a następnie kliknij **kartę Aktywne** problemy.
+Alerty usługi są wyświetlane w Centrum administracyjne platformy Microsoft 365. Aby wyświetlić te alerty usługi, przejdź  > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  do Kondycja usługi **Exchange Online** a następnie kliknij **kartę Aktywne** problemy.
 
 ## <a name="what-do-these-service-alerts-indicate"></a>Co oznaczają te alerty usługi?
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 38bfde92a2988cd8bdbca770402af96a4b9c5134
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321835"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498742"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Określanie priorytetów zdarzeń w Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ Microsoft 365 Defender analizy korelacji i agreguje powiązane alerty oraz zauto
 
 Do kolejki zdarzeń możesz uzyskać dostęp z menu **Zdarzenia & alerty > zdarzenia** na pasku Szybkie uruchamianie portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender zdarzenia.</a> Oto przykład.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Przykład kolejki zdarzeń." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Sekcja Zdarzenie pokazująca kolejkę zdarzeń w portalu Microsoft 365 Defender zdarzenia." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 Sekcja **Najnowsze zdarzenia i** alerty zawiera wykres liczby otrzymywanych alertów i zdarzeń utworzonych w ciągu ostatnich 24 godzin.
 
@@ -66,7 +66,7 @@ Lista **Filtry** nad listą zdarzeń zawiera aktualnie zastosowane filtry.
 
 W domyślnej kolejce zdarzeń możesz wybrać pozycję **Filtruj**,  aby wyświetlić okienko filtru, w którym możesz określić filtrowany zestaw zdarzeń. Oto przykład.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Przykład okienka filtrów dla kolejki zdarzeń." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Okienko Filtry dla kolejki zdarzeń w portalu Microsoft 365 Defender wiadomości." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 Okienko filtru **można też** wyświetlić, wybierając dowolny filtr na liście Filtry nad listą zdarzeń.
 
@@ -78,7 +78,7 @@ W poniższej tabeli wymieniono dostępne nazwy filtrów.
 | Ważność | Istotność zdarzenia jest często podysycana wpływem tego zdarzenia na twoje zasoby. Im wyższa ważność, tym większy wpływ i zazwyczaj wymaga natychmiastowej uwagi. Wybierz **pozycję** Wysoki, **Średni**, **Niski** **lub Informacyjne**. |
 | Przypisanie zdarzenia | Zaznacz przypisanego użytkownika lub użytkowników. |
 | Wiele źródeł usługi  | Określ, czy filtr ma być filtrowany dla więcej niż jednego źródła usługi. |
-| Źródła usług  | Określ zdarzenia zawierające alerty od: Zarządzanie aplikacjami, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
+| Źródła usług  | Określanie zdarzeń zawierających alerty od: zarządzanie Microsoft 365 Defender aplikacją, Ochrona usługi Office 365 w usłudze Microsoft Defender, Ochrona punktu końcowego w usłudze Microsoft Defender, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
 | Tagi | Wybierz jedną lub wiele nazw tagów z listy. |
 | Wiele kategorii  | Określ, czy filtr ma być dla więcej niż jednej kategorii. |
 | Kategorie | Wybieraj kategorie, aby skoncentrować się na konkretnych taktykach, technikach lub elementach ataków. |
@@ -105,7 +105,7 @@ Po skonfigurowaniu przydatnego filtru w kolejce zdarzeń można dodać do zakła
 - Nieprzypisane zdarzenia
 - Zdarzenia o wysokim poziomie ważności, nieprzypisane
 - Przypisane mi zdarzenia
-- Zdarzenia przypisane do mnie i programu Microsoft Defender dla punktu końcowego
+- Zdarzenia przypisane do mnie i dla Ochrona punktu końcowego w usłudze Microsoft Defender
 - Zdarzenia z określonym tagiem lub znacznikiem
 - Zdarzenia z określoną kategorią zagrożeń
 - Zdarzenia z określonymi zagrożeniami

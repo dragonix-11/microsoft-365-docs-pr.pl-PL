@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c3b86a133b5126029378018fdac821d5423b2761
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c31a6e43e66b6e1ffeace75ac2d8419cc764174f
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321867"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499138"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Przygotowywanie zabezpieczenia na wypadek pierwszego zdarzenia
 
@@ -40,26 +40,26 @@ Przygotowanie do obsługi zdarzeń wymaga skonfigurowania wystarczającej ochron
 
 Microsoft 365 Defender pomoc w zakresie kilku aspektów zapobiegania incydentom: 
 
-- Implementowanie struktury [zerowego zaufania](/security/zero-trust/)
+- Implementowanie struktury [Zero Trust](/security/zero-trust/) projektu
 - Określanie wpisu w zabezpieczeniach przez przypisanie wyniku za pomocą bezpiecznego [wyniku firmy Microsoft](microsoft-secure-score.md)
 - Zapobieganie zagrożeń w przypadku oceny luk w zabezpieczeniach w zarządzaniu [zagrożeniami i lukami](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Opis najnowszych zagrożeń bezpieczeństwa, aby przygotować się na nie za pomocą analizy [zagrożeń](threat-analytics.md)
 
-## <a name="step-1-implement-zero-trust"></a>Krok nr 1. Implementowanie zerowego zaufania
+## <a name="step-1-implement-zero-trust"></a>Krok nr 1. Implementowanie Zero Trust
 
-[Zero Trust](/security/zero-trust/) to zintegrowana strategia bezpieczeństwa, która uwzględnia złożony charakter każdego nowoczesnego środowiska, w tym pracowników mobilnych oraz użytkowników, urządzeń, aplikacji i danych niezależnie od tego, gdzie się znajdują. Udostępniając jedno okienko szyby w celu spójnego zarządzania wszystkimi wykrywaniami, program Microsoft 365 Defender może ułatwić zespołowi ds. zabezpieczeń wdrożenie zasad podstawowych zerowego zaufania.[](/security/zero-trust/#guiding-principles-of-zero-trust) 
+[Zero Trust](/security/zero-trust/) to zintegrowana strategia bezpieczeństwa uwzględniająca złożony charakter każdego nowoczesnego środowiska, łącznie z pracownikami telefonów komórkowych oraz użytkownikami, urządzeniami, aplikacjami i danymi niezależnie od tego, gdzie się znajdują. Udostępniając jedno okienko szyby w celu spójnego zarządzania wszystkimi wykrywaniami, program Microsoft 365 Defender może ułatwić zespołowi ds. zabezpieczeń wdrażanie zasad Zero Trust.[](/security/zero-trust/#guiding-principles-of-zero-trust) 
 
-Składniki programu Microsoft 365 Defender mogą wyświetlać naruszenia reguł, które zostały zaimplementowane w celu ustanawiania zasad dostępu warunkowego opartego na zerowym zaufaniu, integrując dane z usługi Microsoft Defender dla punktów końcowych lub innych dostawców zabezpieczeń mobilnych jako źródła informacji dla zasad zgodności urządzeń i implementacji zasad dostępu warunkowego opartych na urządzeniach. 
+Składniki programu Microsoft 365 Defender mogą wyświetlać naruszenia reguł, które zostały zaimplementowane w celu ustanawiania zasad dostępu warunkowego dla programu Zero Trust przez integrowanie danych z Ochrona punktu końcowego w usłudze Microsoft Defender  lub innych dostawców zabezpieczeń mobilnych jako źródła informacji dla zasad zgodności urządzeń i implementacji zasad dostępu warunkowego opartych na urządzeniach. 
 
-Ryzyko związane z urządzeniem ma bezpośredni wpływ na to, jakie zasoby będą dostępne dla użytkownika tego urządzenia. Odmowa dostępu do zasobów na podstawie określonych kryteriów to główny motyw zerowego zaufania, który zawiera Microsoft 365 Defender informacji potrzebnych do określenia kryteriów poziomu zaufania. Na przykład Microsoft 365 Defender udostępnić poziom wersji oprogramowania urządzenia za pośrednictwem strony Zarządzanie zagrożeniami i lukami w zabezpieczeniach, natomiast zasady dostępu warunkowego ograniczają urządzenia, które są nieaktualne lub narażone na wersje.
+Ryzyko związane z urządzeniem ma bezpośredni wpływ na to, jakie zasoby będą dostępne dla użytkownika tego urządzenia. Odmowa dostępu do zasobów na podstawie określonych kryteriów to główny motyw programu Zero Trust, a program Microsoft 365 Defender udostępnia informacje potrzebne do określenia kryteriów poziomu zaufania. Na przykład Microsoft 365 Defender udostępnić poziom wersji oprogramowania urządzenia za pośrednictwem strony Zarządzanie zagrożeniami i lukami w zabezpieczeniach, natomiast zasady dostępu warunkowego ograniczają urządzenia, które są nieaktualne lub narażone na wersje.
 
-Automatyzacja to kluczowy element wdrażania i utrzymywania środowiska zerowego zaufania przy jednoczesnym ograniczeniu liczby alertów, które potencjalnie doprowadzą do zdarzeń reagowania na incydenty (IR). Składniki usługi Microsoft 365 Defender, takie jak działania [naprawcze (znane](m365d-autoir.md) jako badania w związku z incydentem w portalu Microsoft 365 Defender), akcje powiadamiania, a nawet tworzenie biletów pomocy technicznej, na przykład w [SerwisNow](https://microsoft.service-now.com/sp/).
+Automatyzacja to kluczowy element wdrażania i utrzymywania środowiska Zero Trust, a także zmniejszania liczby alertów, które mogą doprowadzić do zdarzeń reagowania na incydenty (IR). Składniki usługi Microsoft 365 Defender, takie jak działania [naprawcze (znane](m365d-autoir.md) jako badania w związku z incydentem w portalu Microsoft 365 Defender), akcje powiadamiania, a nawet tworzenie biletów pomocy technicznej, na przykład w [SerwisNow](https://microsoft.service-now.com/sp/).
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Krok nr 2. Określanie środków na bezpieczeństwo organizacji
 
 Następnie organizacje mogą używać programu [Microsoft Secure Score](microsoft-secure-score.md) w programie Microsoft 365 Defender do określania bieżącej wydajności zabezpieczeń i rozważać zalecenia dotyczące sposobu jej ulepszania. Im wyższa jest ocena, tym więcej zaleceń dotyczących zabezpieczeń i działań udoskonalania zostały wykonane przez organizację. Zalecenia dotyczące bezpiecznego wyniku można podjąć w różnych produktach i umożliwić organizacjom podnoszenie swoich wyników jeszcze wyżej. 
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Przykład wyniku bezpiecznego połączenia firmy Microsoft w centrum zabezpieczeń firmy Microsoft.":::
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Strona Microsoft Secure Score w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/first-incident-prepare/first-incident-secure-score.png":::
  
 ## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Krok nr 3. Ocena luki w zabezpieczeniach organizacji
 
@@ -67,7 +67,7 @@ Zapobieganie incydentom może usprawnić działania związane z zabezpieczeniami
 
 Aby sprawdzić postęp poprawiania oprogramowania, odwiedź stronę Zarządzanie [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) zagrożeniami i lukami w programie Defender for Endpoint, do której można uzyskać dostęp w programie Microsoft 365 Defender za pośrednictwem karty **Więcej** zasobów.
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Przykład strony Zagrożenia i luki w zabezpieczeniach w Centrum zabezpieczeń firmy Microsoft."::: 
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Strona Zagrożenia i luk w zabezpieczeniach w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png"::: 
  
 ## <a name="4-understand-emerging-threats"></a>4. Zrozumienie wyłaniających się zagrożeń
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b4640872f4e4fbdba65b1e29ceee5575e583bac
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6621ca47356f87edd47a905e4edeb592d9b556ff
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330219"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499094"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Krok nr 5. Opracuj i testuj przypadki użycia
 
@@ -56,7 +56,7 @@ Działania nadzorowe SOC związane z tworzeniem przypadków użycia obejmują:
 
 Aby ułatwić proces tworzenia podręcznika i podręcznika, utwórz drzewo decyzji o przypadku użycia. Na poniższym rysunku pokazano przykład.
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Proces decyzji o przypadku użycia." lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Proces decyzyjny w przypadku użycia" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
 
 Po zatwierdzeniu i zatwierdzeniu standardu użycia wysokiego poziomu kolejnym krokiem jest utworzenie i przetestowanie rzeczywistego przypadku użycia. W poniższych sekcjach jako przykładów są wykorzystanie scenariuszy ochrony przed wyłudzaniem informacji oraz zagrożeniami i lukami w zabezpieczeniach.
 
@@ -64,13 +64,13 @@ Po zatwierdzeniu i zatwierdzeniu standardu użycia wysokiego poziomu kolejnym kr
 
 Pierwszym krokiem podczas tworzenia przypadku użycia jest utworzenie konspektu przepływu pracy przy użyciu tablicy historii. Oto przykład wysokiej klasy historii dla nowego powiadomienia o wyłudzaniu informacji dla zespołu analizy zagrożeń.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Przykładowy przepływ pracy dla kampanii zapobiegającej wyłudzaniu informacji." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Przepływ pracy dla kampanii zapobiegającej wyłudzaniu informacji" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-1"></a>Wywoływanie przepływu pracy przypadek użycia, na przykład 1
 
 Kolejnym krokiem po zatwierdzeniu tablicy historii jest wywołanie przepływu pracy przypadków użycia. Oto przykładowy proces kampanii zapobiegającej wyłudzaniu informacji. 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Przykład szczegółowego przepływu pracy dla kampanii zapobiegającej wyłudzaniu informacji." lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Przepływ pracy ze szczegółową sprawą użycia dla kampanii zapobiegającej wyłudzaniu informacji" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
 
 ## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>Przykład 2. Przykład użycia: Skanowanie w przypadku zagrożeń i luk w zabezpieczeniach
 
@@ -78,13 +78,13 @@ Inny scenariusz, w którym można użyć przypadku użycia, służy do skanowani
 
 Oto przykładowy storyboard wysokiego poziomu dla Zarządzanie zagrożeniami i lukami zasobów.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Przykładowy przepływ pracy dla sprawy dotyczącej Zarządzanie zagrożeniami i lukami." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Przepływ pracy przypadek użycia dla Zarządzanie zagrożeniami i lukami" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-2"></a>Wywoływanie przepływu pracy przypadku użycia, na przykład 2
 
 Oto przykładowy proces skanowania zagrożeń i luk w zabezpieczeniach.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Przykład szczegółowego przepływu pracy przypadku użycia dla Zarządzanie zagrożeniami i lukami." lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Przepływ pracy ze szczegółowymi informacjami o przypadku użycia dla Zarządzanie zagrożeniami i lukami" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>Analizowanie danych wyjściowych przypadków użycia i lekcji
 
@@ -95,9 +95,9 @@ Na przykład w scenariuszu ochrony przed wyłudzaniem informacji zespoły SOC mo
 
 | Zespół SOC | Wymaganie | Wymagania dotyczące osób spełniających wymagania | Proces, który spełnia wymagania | Odpowiednie technologie | Zidentyfikowano przerwę | Dziennik zmian przypadków użycia | Wykluczona (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
-| Zespół analizy i analizy zagrożeń | Źródła danych prawidłowo podające aparaty analizy zagrożeń. | Analityk/inżynier analizy zagrożeń | Ustanowione wymagania dotyczące źródeł danych, wyzwalacze analizy zagrożeń z zatwierdzonych źródeł | Microsoft Defender for Identity, Microsoft Defender for Endpoint | Zespół analizy zagrożeń nie używa skryptu automatyzacji do łączenia interfejsu API Microsoft 365 Defender z wyszukiwarkami zagrożeń | Dodawanie Microsoft 365 Defender jako źródeł danych do aparatów zagrożeń <BR> <BR> Aktualizowanie książki uruchamiania przypadków użycia | N |
+| Zespół analizy i analizy zagrożeń | Źródła danych prawidłowo podające aparaty analizy zagrożeń. | Analityk/inżynier analizy zagrożeń | Ustanowione wymagania dotyczące źródeł danych, wyzwalacze analizy zagrożeń z zatwierdzonych źródeł | Microsoft Defender for Identity, Ochrona punktu końcowego w usłudze Microsoft Defender | Zespół analizy zagrożeń nie używa skryptu automatyzacji do łączenia interfejsu API Microsoft 365 Defender z wyszukiwarkami zagrożeń | Dodawanie Microsoft 365 Defender jako źródeł danych do aparatów zagrożeń <BR> <BR> Aktualizowanie książki uruchamiania przypadków użycia | N |
 | Monitorowanie zespołu | Źródła danych są prawidłowo podawanie pulpitów nawigacyjnych monitorowania | Raporty i alerty analityków soc warstwy 1,2 & i alerty | Przepływ pracy do raportowania wyników bezpiecznego & Centrum zgodności | [Alerty w Centrum & zgodności](/microsoft-365/security/office-365-security/alerts)  <br><br> Monitorowanie bezpiecznego wyniku  | Brak mechanizmu dla analityków SOC do zgłaszania udanego nowego wykrywania wariantu wyłudzania informacji w celu zwiększenia bezpiecznego wyniku <br><br> [Raportowanie w Centrum & zabezpieczeń](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Dodawanie procesu śledzenia poprawy bezpiecznego wyniku do raportowania przepływów pracy | N | 
-| Zespół inżynierów i secops | Aktualizacje kontroli zmian są dokonywane w podręcznikach uruchamiania zespołu SOC | Inżynier SOC warstwy 2 | Procedura powiadomień o zmianie kontroli dla podręczników zespołu SOC | Zatwierdzone zmiany dotyczące urządzeń zabezpieczających | Zmiany w Microsoft 365 Defender technologii zabezpieczeń SOC wymagają zatwierdzenia | Dodaj usługę Microsoft Defender for Cloud Apps, Defender for Identity, Defender for Endpoint, Security & Compliance Center do runbooks SOC | T |
+| Zespół inżynierów i secops | Aktualizacje kontroli zmian są dokonywane w podręcznikach uruchamiania zespołu SOC | Inżynier SOC warstwy 2 | Procedura powiadomień o zmianie kontroli dla podręczników zespołu SOC | Zatwierdzone zmiany dotyczące urządzeń zabezpieczających | Zmiany w Microsoft 365 Defender technologii zabezpieczeń SOC wymagają zatwierdzenia | Dodaj Microsoft Defender for Cloud Apps, Defender for Identity, Defender for Endpoint, Security & Compliance Center to SOC runbooks | T |
 |||||||||
 
 Ponadto zespoły SOC mogły także odkryć opisane w poniższej tabeli dotyczące opisanego powyżej Zarządzanie zagrożeniami i lukami scenariuszu:

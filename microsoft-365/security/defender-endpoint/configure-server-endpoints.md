@@ -1,7 +1,7 @@
 ---
-title: Wdowa Windows usługi Microsoft Defender dla punktu końcowego
-description: Na tych Windows, aby wysyłać dane czujnika do czujnika programu Microsoft Defender for Endpoint.
-keywords: serwer onboard, serwer, 2012r2, 2016, 2019, dołączanie do serwera, zarządzanie urządzeniami, konfigurowanie programu Microsoft Defender dla serwerów punktów końcowych, dołączanie programu Microsoft Defender do serwerów punktów końcowych, dołączanie programu Microsoft Defender dla serwerów punktów końcowych
+title: Dołączanie Windows poczty e-mail do Ochrona punktu końcowego w usłudze Microsoft Defender sieci Web
+description: Na tych Windows, aby wysyłać dane czujnika do Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia.
+keywords: serwer onboard, serwer, 2012r2, 2016, 2019, dołączanie do serwera, zarządzanie urządzeniami, konfigurowanie serwerów Ochrona punktu końcowego w usłudze Microsoft Defender, Ochrona punktu końcowego w usłudze Microsoft Defender serwerach Ochrona punktu końcowego w usłudze Microsoft Defender, wniesienie Ochrona punktu końcowego w usłudze Microsoft Defender serwerach
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f6ada6604190ccba270b287201d94ba2acbf6d2
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 14c759cd243b8da9f338b777e430d4de9f735fc1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504844"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498918"
 ---
-# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Wdowa Windows usługi Microsoft Defender dla punktu końcowego
+# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Dołączanie Windows poczty e-mail do Ochrona punktu końcowego w usłudze Microsoft Defender sieci Web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,7 +45,7 @@ ms.locfileid: "63504844"
 
 Program Defender for Endpoint obsługuje również system operacyjny Windows Server. Ta obsługa bezproblemowo udostępnia zaawansowane funkcje wykrywania ataków i badania za pośrednictwem Microsoft 365 Defender zaawansowanej. Obsługa serwera Windows zapewnia bardziej szczegółowe informacje o działaniach serwera, zasięgu wykrywania ataku kernelu i pamięci oraz umożliwia akcje odpowiedzi.
 
-W tym temacie opisano, jak w programie Microsoft Defender for Endpoint Windows poszczególnych serwerów.
+W tym temacie opisano, jak na Windows serwerach sieci Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 Aby uzyskać wskazówki dotyczące pobierania i używania planu bazowego Zabezpieczenia Windows dla Windows, zobacz Zabezpieczenia Windows [bazowe](/windows/device-security/windows-security-baselines).
 
@@ -53,7 +53,7 @@ Aby uzyskać wskazówki dotyczące pobierania i używania planu bazowego Zabezpi
 
 Aby pomyślnie wdować się na serwerach, należy wykonać poniższe ogólne czynności.
 
-![Ilustracja przepływu dołączania do Windows Serwerami i Windows 10 urządzeniami](images/server-onboarding-tools-methods.png)
+:::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="Ilustracja przepływu dołączania do Windows serwerami i Windows 10 urządzeniami" lightbox="images/server-onboarding-tools-methods.png":::
 
 **Windows Server 2012 R2 i Windows Server 2016 (wersja Preview)**
 
@@ -70,7 +70,7 @@ Aby pomyślnie wdować się na serwerach, należy wykonać poniższe ogólne czy
 - Postępuj zgodnie z instrukcjami dołączania dla odpowiedniego narzędzia
 
 >[!IMPORTANT]
->Aby można było zakupić usługę Microsoft Defender for Endpoint Server SKU, musisz już zakupić co najmniej dowolną z następujących subskrypcji: Windows E5/A5, Microsoft 365 E5/A5 lub Zabezpieczenia platformy Microsoft 365 E5 subskrypcji.  Aby uzyskać więcej informacji na temat licencjonowania, zobacz [Postanowienia dotyczące produktu](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
+>Aby można było kupić produkt Ochrona punktu końcowego w usłudze Microsoft Defender Server SKU, musisz już zakupić co najmniej dowolną z następujących usług: Windows E5/A5, Microsoft 365 E5/A5 lub Zabezpieczenia platformy Microsoft 365 E5 subskrypcji.  Aby uzyskać więcej informacji na temat licencjonowania, zobacz [Postanowienia dotyczące produktu](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
 
 
 
@@ -109,12 +109,12 @@ Jeśli serwery były wcześniej wnoszone za pomocą usługi MMA, postępuj zgodn
 
 Następujące informacje szczegółowe dotyczą nowego pakietu rozwiązań ujednoliconych dla pakietów Windows Server 2012 R2 i 2016:
 
-- Upewnij się, że są spełnione wymagania dotyczące łączności określone w punkcie Umożliwianie dostępu do usługi Microsoft Defender dla adresów URL usługi punktu końcowego [na serwerze proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) . Są one równoważne tym, które są Windows Server 2019. 
+- Upewnij się, że są spełnione wymagania dotyczące łączności określone w Ochrona punktu końcowego w usłudze Microsoft Defender dostępu do adresów URL usługi na [serwerze proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Są one równoważne tym, które są Windows Server 2019. 
 - Pracujemy nad badaniem problemu z łącznością serwera Windows Server 2012 R2 z chmurą, gdy jest używany statyczny serwer telemetryczny telemetryczny, a adresy URL odwołań certyfikatów (CRL) nie są osiągalne z poziomu kontekstu konta systemowego. Natychmiastowym ograniczeniem jest użycie alternatywnej opcji serwera proxy, która zapewnia taką łączność, lub skonfigurowanie tego samego serwera proxy za pośrednictwem ustawienia WinInet w kontekście konta SYSTEMowego.
-- Wcześniej korzystanie z programu Microsoft Monitoring Agent (MMA) w programie Windows Server 2016 i innych dozwolonych dla bramy OMS / Log Analytics do świadczenia łączności z usługami w chmurze Defender. Nowe rozwiązanie, takie jak program Microsoft Defender for Endpoint w systemach Windows Server 2019, Windows Server 2022 i Windows 10, nie obsługuje tej bramy.
+- Wcześniej korzystanie z programu Microsoft Monitoring Agent (MMA) w programie Windows Server 2016 i innych dozwolonych dla bramy OMS / Log Analytics do świadczenia łączności z usługami w chmurze Defender. Nowe rozwiązanie, takie jak Ochrona punktu końcowego w usłudze Microsoft Defender w Windows Server 2019, Windows Server 2022 i Windows 10, nie obsługuje tej bramy.
 
-- Na Windows Server 2016 upewnij się, że Program antywirusowy Microsoft Defender zainstalowany, jest aktywny i aktualny. Najnowszą wersję platformy można pobrać i zainstalować przy użyciu usługi Windows Update. Możesz również ręcznie pobrać pakiet aktualizacji z wykazu [usługi Microsoft Update lub](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) [z usługi MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
-- W Windows Server 2012 R2 nie ma interfejsu użytkownika dla Program antywirusowy Microsoft Defender. Ponadto interfejs użytkownika na platformie Windows Server 2016 umożliwia tylko podstawowe operacje. Aby wykonać operacje na urządzeniu lokalnie, zobacz Zarządzanie programem Microsoft Defender dla punktu końcowego za pomocą programu [PowerShell, usługi WMI i MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). W wyniku tego funkcje, które w szczególności są zależne od interakcji użytkownika, takie jak miejsce, w którym użytkownik jest monitowany o podjęcie decyzji lub wykonanie określonego zadania, mogą nie działać zgodnie z oczekiwaniami. Zalecane jest wyłączenie lub wyłączenie interfejsu użytkownika ani nie wymaganie interakcji użytkownika na dowolnym serwerze zarządzanym, ponieważ może to wpłynąć na funkcję ochrony.
+- Na Windows Server 2016 upewnij się, że Program antywirusowy Microsoft Defender zainstalowany, jest aktywny i aktualny. Najnowszą wersję platformy można pobrać i zainstalować przy użyciu programu Windows Update. Możesz również ręcznie pobrać pakiet aktualizacji z wykazu [usługi Microsoft Update lub](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) [z usługi MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
+- W Windows Server 2012 R2 nie ma interfejsu użytkownika dla Program antywirusowy Microsoft Defender. Ponadto interfejs użytkownika na platformie Windows Server 2016 umożliwia tylko podstawowe operacje. Aby wykonać operacje na urządzeniu lokalnie, zobacz Zarządzanie [Ochrona punktu końcowego w usłudze Microsoft Defender za pomocą programu PowerShell, usługi WMI i MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). W wyniku tego funkcje, które w szczególności są zależne od interakcji użytkownika, takie jak miejsce, w którym użytkownik jest monitowany o podjęcie decyzji lub wykonanie określonego zadania, mogą nie działać zgodnie z oczekiwaniami. Zalecane jest wyłączenie lub wyłączenie interfejsu użytkownika ani nie wymaganie interakcji użytkownika na dowolnym serwerze zarządzanym, ponieważ może to wpłynąć na funkcję ochrony.
 - Nie wszystkie reguły zmniejszania powierzchni ataków są dostępne dla wszystkich systemów operacyjnych. Zobacz [Reguły ograniczania powierzchni ataków (ASR](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)).
 - Aby [włączyć ochronę sieci](/microsoft-365/security/defender-endpoint/network-protection), wymagana jest dodatkowa konfiguracja:
   - `Set-MpPreference -EnableNetworkProtection Enabled`
@@ -123,7 +123,7 @@ Następujące informacje szczegółowe dotyczą nowego pakietu rozwiązań ujedn
   - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
   Ponadto na komputerach o dużej ilości ruchu sieciowego zdecydowanie zalecane jest testowanie wydajności w Środowisku przed włączeniem tej funkcji. Może być konieczne uwzględnianie dodatkowego zużycia zasobów.
-- W Windows Server 2012 R2 zdarzenia sieciowe mogą nie zostać wypełnione osią czasu. Ten problem wymaga aktualizacji Windows wydanej w ramach [comiesięcznego wydania z 12 października 2021 r. (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
+- W Windows Server 2012 R2 zdarzenia sieciowe mogą nie zostać wypełnione osią czasu. Ten problem wymaga wydania Windows Update w ramach comiesięcznego rzutu z [12 października 2021 r. (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - Uaktualnienia systemu operacyjnego nie są obsługiwane. Przed uaktualnieniem odinstaluj aplikację Offboard.
 - Automatyczne wykluczenia *dla ról serwera* nie są obsługiwane na Windows Server 2012 R2, jednak wbudowane wykluczenia dotyczące plików systemu operacyjnego są takie. Aby uzyskać więcej informacji na temat dodawania wykluczeń, zobacz Zalecenia dotyczące skanowania wirusów [dla Enterprise komputerów z](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc) obecnie obsługiwanymi wersjami Windows.
 - Jeśli zdecydujesz się na wynosz i odinstalujesz nowoczesne, ujednolicone rozwiązanie i ponownie włożysz poprzedni czujnik EDR MMA, `MsSenseS.exe` mogą wystąpić powtarzające się awarie. 
@@ -143,17 +143,17 @@ Ponowne uruchomienie nie jest wymagane.
 
 <a name="integration-with-azure-defender"></a>
 
-## <a name="integration-with-microsoft-defender-for-cloud"></a>Integracja z usługą Microsoft Defender dla chmury
+## <a name="integration-with-microsoft-defender-for-cloud"></a>Integracja z Microsoft Defender dla Chmury
 
-Program Microsoft Defender for Endpoint bezproblemowo integruje się z programem Microsoft Defender dla chmury. Możesz automatycznie włączać serwery, monitorować je przez usługę Azure Defender w programie Defender for Endpoint i przeprowadzać szczegółowe badania jako klient usługi Microsoft Defender dla chmury.
+Ochrona punktu końcowego w usłudze Microsoft Defender integruje się bezproblemowo z Microsoft Defender dla Chmury. Możesz automatycznie uruchamiać serwery, wyświetlać serwery monitorowane przez usługę Azure Defender w programie Defender for Endpoint i przeprowadzać szczegółowe badania Microsoft Defender dla Chmury klienta.
 
-Aby uzyskać więcej informacji, zobacz [Integracja z programem Microsoft Defender dla chmury](azure-server-integration.md).
-
-> [!NOTE]
-> W Windows Server 2012 R2 i 2016 z systemem nowoczesnego, ujednoliconego rozwiązania w wersji Zapoznawczej integracja z usługą Microsoft Defender dla chmury/ programem Microsoft Defender dla serwerów w celu alertowania i automatycznego wdrażania nie jest jeszcze dostępna. Mimo że możesz ręcznie zainstalować nowe rozwiązanie na tych komputerach, w programie Microsoft Defender dla chmury nie będą wyświetlane alerty.
+Aby uzyskać więcej informacji, [zobacz Integracja z usługą Microsoft Defender dla Chmury](azure-server-integration.md).
 
 > [!NOTE]
-> - Integracja między programem Microsoft Defender dla serwerów i programem Microsoft Defender for Endpoint została rozwinięta w celu obsługi programu Windows Server 2022, [Windows Server 2019 i Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) .
+> W Windows Server 2012 R2 i 2016 z uruchomionym nowoczesnym ujednoliconym rozwiązaniem w wersji Preview integracja z programem Microsoft Defender dla Chmury / Microsoft Defender dla serwerów w celu powiadamiania i automatycznego wdrażania nie jest jeszcze dostępna. Mimo że można ręcznie zainstalować nowe rozwiązanie na tych komputerach, alerty nie będą wyświetlane w Microsoft Defender dla Chmury.
+
+> [!NOTE]
+> - Integracja między programem Microsoft Defender dla serwerów i usługami Ochrona punktu końcowego w usłudze Microsoft Defender została rozszerzona o obsługę systemów Windows Server 2022, [Windows Server 2019 i Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 > - Monitorowanie punktu końcowego serwera korzystające z tej integracji zostało wyłączone dla Office 365 GCC klientów.
 
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 i Windows Server 2016
@@ -174,7 +174,7 @@ Pakiet instalatora sprawdzi, czy następujące składniki zostały już zainstal
 
 **Wymagania wstępne dotyczące Windows Server 2016** 
 
-Poza pełną aktualizacją komputera za pomocą najnowszej aktualizacji skumulowanej (LCU), upewnij się, Program antywirusowy Microsoft Defender jest zainstalowana, jest aktywna i zaktualizowana. Najnowszą wersję platformy można pobrać i zainstalować przy użyciu usługi Windows Update. Możesz również ręcznie pobrać pakiet aktualizacji z wykazu [usługi Microsoft Update lub](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) [z usługi MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64). 
+Poza pełną aktualizacją komputera za pomocą najnowszej aktualizacji skumulowanej (LCU), upewnij się, Program antywirusowy Microsoft Defender jest zainstalowana, jest aktywna i zaktualizowana. Najnowszą wersję platformy można pobrać i zainstalować przy użyciu programu Windows Update. Możesz również ręcznie pobrać pakiet aktualizacji z wykazu [usługi Microsoft Update lub](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) [z usługi MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64). 
 
 > [!NOTE]
 > Aby pomyślnie zaktualizować wbudowaną wersję programu Windows Defender, której numer wersji zaczyna się od wersji 4.10, do najnowszej dostępnej platformy, należy zastosować aktualizację stosu obsługi, a także najnowszą aktualizację skumulowaną (LCU) równą lub późniejszą niż 20 września 2018 r. — KB4457127 (kompilacja systemu operacyjnego 14393.2515).
@@ -183,9 +183,9 @@ Poza pełną aktualizacją komputera za pomocą najnowszej aktualizacji skumulow
 
 Jeśli zamierzasz używać rozwiązania ochrony przed złośliwym oprogramowaniem innej firmy, musisz uruchomić Program antywirusowy Microsoft Defender w trybie pasywnym. Należy pamiętać o ustawianiu trybu pasywnego podczas instalacji i procesu dołączania.
 
-**Nowy pakiet aktualizacji programu Microsoft Defender dla punktu końcowego w systemach Windows Server 2012 R2 i 2016**
+**Nowy pakiet aktualizacji dla pakietu Ochrona punktu końcowego w usłudze Microsoft Defender w Windows Server 2012 R2 i 2016**
 
-Aby otrzymywać regularne ulepszenia i poprawki dotyczące składnika czujnika EDR, upewnij się, Windows, że jest stosowana lub zatwierdzona aktualizacja [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277). Aby dodatkowo aktualizować składniki ochrony, zobacz Zarządzanie [Program antywirusowy Microsoft Defender i stosowanie linii bazowych](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
+Aby otrzymywać regularne ulepszenia produktu i poprawki dla składnika czujnika EDR, upewnij się, Windows Update [kb5005292 jest](https://go.microsoft.com/fwlink/?linkid=2168277) stosowane lub zatwierdzane. Aby dodatkowo aktualizować składniki ochrony, zobacz Zarządzanie [Program antywirusowy Microsoft Defender i stosowanie linii bazowych](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
 ### <a name="onboarding-steps-summary"></a>Podsumowanie kroków dołączania
 
@@ -208,7 +208,7 @@ Musisz pobrać z portalu zarówno pakiety instalacyjne **,** jak  i pakiety doł
    > Jeśli używasz rozwiązania ochrony przed złośliwym oprogramowaniem firmy microsoft, przed rozpoczęciem instalacji dodaj wykluczenia dla programu Program antywirusowy Microsoft Defender (z tej listy procesów programu [Microsoft Defender](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) na karcie Procesy programu Defender) do rozwiązania firmy innych niż Microsoft.  Zalecane jest również dodanie rozwiązań zabezpieczeń innych niż firmy Microsoft do listy wykluczeń programu antywirusowego Defender.
 
 
-Pakiet **instalacyjny zawiera** plik MSI, który instaluje agenta programu Microsoft Defender for Endpoint.
+Pakiet **instalacyjny zawiera** plik MSI, który instaluje Ochrona punktu końcowego w usłudze Microsoft Defender agenta.
 
 Pakiet **dołączający zawiera** następujące pliki:
 
@@ -217,7 +217,7 @@ Pakiet **dołączający zawiera** następujące pliki:
 
 Aby pobrać pakiety, należy wykonać następujące czynności: 
 
-1. W Microsoft 365 Defender przejdź do Ustawienia > **Zarządzanie urządzeniami > dołączanie**.
+1. W Microsoft 365 Defender przejdź do Ustawienia > Zarządzanie urządzeniami > **Dołączanie**.
 
 2. Wybierz **Windows Server 2012 R2 i 2016**.
 
@@ -230,33 +230,33 @@ Aby pobrać pakiety, należy wykonać następujące czynności:
 
 
 ### <a name="step-2-apply-the-installation-and-onboarding-package"></a>KROK 2. Stosowanie pakietu instalacyjnego i dołączania
-W tym kroku zainstalujesz składniki zapobiegania i wykrywania wymagane przed dodaniem urządzenia do środowiska chmury programu Microsoft Defender for Endpoint, aby przygotować komputer doinstalowania. Upewnij się [, że zostały spełnione](#prerequisites) wszystkie wymagania wstępne. 
+W tym kroku zainstalujesz składniki zapobiegania i wykrywania wymagane przed dodaniem urządzenia do Ochrona punktu końcowego w usłudze Microsoft Defender w chmurze, aby przygotować komputer doinstalowania go. Upewnij się [, że zostały spełnione](#prerequisites) wszystkie wymagania wstępne. 
 
    > [!NOTE]
    > Program antywirusowy Microsoft Defender zainstalowany i będzie aktywny, jeśli nie ustawiono trybu pasywnego. 
 
-#### <a name="options-to-install-the-microsoft-defender-for-endpoint-packages"></a>Opcje instalowania pakietów programu Microsoft Defender for Endpoint
+#### <a name="options-to-install-the-microsoft-defender-for-endpoint-packages"></a>Opcje instalowania pakietów Ochrona punktu końcowego w usłudze Microsoft Defender pakietu
 
-W poprzedniej sekcji pobrano pakiet instalacyjny. Pakiet instalacyjny zawiera instalatora wszystkich składników programu Microsoft Defender for Endpoint. 
+W poprzedniej sekcji pobrano pakiet instalacyjny. Pakiet instalacyjny zawiera instalatora wszystkich Ochrona punktu końcowego w usłudze Microsoft Defender składników. 
 
 Aby zainstalować agenta, możesz użyć dowolnej z następujących opcji:
 - [Instalowanie przy użyciu wiersza polecenia](#install-microsoft-defender-for-endpoint-using-the-command-line)
 - [Instalowanie przy użyciu skryptu](#install-microsoft-defender-for-endpoint-using-a-script)
-- [Stosowanie pakietów instalacyjnych i pakietów dołączania przy użyciu zasady grupy](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
+- [Stosowanie pakietów instalacji i pakietów dołączania przy użyciu zasady grupy](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-the-command-line"></a>Instalowanie programu Microsoft Defender For Endpoint przy użyciu wiersza polecenia
-Użyj pakietu instalacyjnego z poprzedniego kroku, aby zainstalować program Microsoft Defender for Endpoint. 
+Użyj pakietu instalacyjnego z poprzedniego kroku, aby zainstalować Ochrona punktu końcowego w usłudze Microsoft Defender. 
 
 
-Uruchom następujące polecenie, aby zainstalować program Microsoft Defender dla punktu końcowego:
+Uruchom następujące polecenie, aby zainstalować Ochrona punktu końcowego w usłudze Microsoft Defender:
 
 ```console
 Msiexec /i md4ws.msi /quiet
 ```
 
-Aby odinstalować, upewnij się, że komputer został wyłączony, używając odpowiedniego skryptu wynoszania. Następnie wykonaj odinstalowanie za pomocą programów \> i funkcji w Panelu \> sterowania Programy i funkcje.
+Aby odinstalować, upewnij się, że komputer został wyłączony, używając odpowiedniego skryptu wynoszania. Następnie odinstaluj za Panel sterowania \> Programy \> i funkcje.
 
-Ewentualnie uruchom następujące polecenie odinstalowywania, aby odinstalować program Microsoft Defender for Endpoint:
+Ewentualnie uruchom następujące polecenie odinstalowywania, aby odinstalować Ochrona punktu końcowego w usłudze Microsoft Defender:
 
 ```console
 Msiexec /x md4ws.msi /quiet
@@ -271,17 +271,17 @@ Przełącznik `/quiet` pominie wszystkie powiadomienia.
 
 Obsługa serwera Windows zapewnia bardziej szczegółowe informacje o działaniach serwera, zasięgu wykrywania ataku kernelu i pamięci oraz umożliwia akcje odpowiedzi.
 
-##### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>Instalowanie programu Microsoft Defender dla punktu końcowego przy użyciu skryptu
+##### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>Instalowanie Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu skryptu
 
 Za pomocą skryptu [instalatora można](server-migration.md#installer-script) zautomatyzować instalację, dezinstalację i dołączanie. Aby uzyskać więcej informacji, zapoznaj się z instrukcjami w poniższej sekcji dotyczącymi używania skryptu w zasady grupy.
 
-##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>Stosowanie pakietów instalacji i dołączania programu Microsoft Defender dla punktów końcowych przy użyciu zasad grupy
+##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>Stosowanie pakietów Ochrona punktu końcowego w usłudze Microsoft Defender instalacji i dołączania przy użyciu zasad grupy
 
-1. Tworzenie zasad grupy: <br> Otwórz [konsolę zasady grupy zarządzania](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), kliknij prawym przyciskiem **myszy zasady grupy obiekty,** które chcesz skonfigurować, a następnie kliknij pozycję **Nowy**. Wprowadź nazwę nowego serwera zasad grupy w wyświetlonym oknie dialogowym i kliknij przycisk **OK**.
+1. Tworzenie zasad grupy: <br> Otwórz [konsolę zasady grupy zarządzania](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), kliknij prawym przyciskiem **myszy zasady grupy obiektami,** które chcesz skonfigurować, a następnie kliknij pozycję **Nowy**. Wprowadź nazwę nowego serwera zasad grupy w wyświetlonym oknie dialogowym i kliknij przycisk **OK**.
 
 2. Otwórz [konsolę zasady grupy zarządzania](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), kliknij prawym przyciskiem myszy obiekt zasady grupy obiekt (GPO), który chcesz skonfigurować, a następnie kliknij polecenie **Edytuj**.
 
-3. W **edytorze zasady grupy zarządzaniem** przejdź do opcji Konfiguracja **komputera,** Preferencje **, a** następnie **Ustawienia Panelu sterowania**.
+3. W **oknie zasady grupy zarządzania** przejdź do opcji Konfiguracja **komputera,** Preferencje **i** **Ustawienia Panelu sterowania**.
 
 4. Kliknij prawym przyciskiem **myszy pozycję Zaplanowane zadania**, wskaż pozycję **Nowe**, a następnie kliknij pozycję **Zadanie natychmiastowe (co najmniej Windows 7).**
 
@@ -310,7 +310,7 @@ Za pomocą skryptu [instalatora można](server-migration.md#installer-script) za
 
 9. Wybierz **przycisk OK** i zamknij wszystkie otwarte okna GPMC.
 
-10. Aby połączyć element zasad grupy z jednostką jednostki organizacyjnej, kliknij prawym przyciskiem myszy i wybierz polecenie **Połącz istniejący element zasad grupy**. W wyświetlonym oknie dialogowym wybierz obiekt, zasady grupy, który chcesz połączyć. Kliknij przycisk **OK**.
+10. Aby połączyć element zasad grupy z jednostką jednostki organizacyjnej, kliknij prawym przyciskiem myszy i wybierz polecenie **Połącz istniejący element zasad grupy**. W wyświetlonym oknie dialogowym wybierz zasady grupy obiekt, który chcesz połączyć. Kliknij przycisk **OK**.
 
 Aby uzyskać dodatkowe ustawienia konfiguracji, zobacz [Konfigurowanie przykładowych ustawień kolekcji i](configure-endpoints-gp.md#configure-sample-collection-settings) [Inne zalecane ustawienia konfiguracji](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
@@ -324,34 +324,25 @@ Poniższe kroki mają zastosowanie tylko w przypadku korzystania z rozwiązania 
     - Typ: `REG_DWORD`
     - Wartość: `1`
 
-2. Uruchom następujące polecenie programu PowerShell, aby sprawdzić, czy tryb pasywny został skonfigurowany:
-
-    ```powershell
-    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-    ```
-
-3. Upewnij się, że odnaleziono ostatnie zdarzenie zawierające zdarzenie pasywne:
-
-    ![Obraz wyniku weryfikacji w trybie pasywnym](images/atp-verify-passive-mode.png)
-
+       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="Wynik weryfikacji w trybie pasywnym" lightbox="images/atp-verify-passive-mode.png":::
 > [!IMPORTANT]
 >
-> - Podczas monitorowania serwerów za pomocą programu Microsoft Defender for Cloud jest automatycznie tworzona dzierżawa usługi Defender dla punktu końcowego (w Stanach Zjednoczonych dla użytkowników w Stanach Zjednoczonych, w Unii Europejskiej dla użytkowników w Unii Europejskiej i w Wielkiej Brytanii dla użytkowników Ze Zjednoczonego Królestwa).
+> - Gdy do monitorowania Microsoft Defender dla Chmury używasz programu Microsoft Defender dla Chmury, jest automatycznie tworzona dzierżawa usługi Defender for Endpoint (w Stanach Zjednoczonych dla użytkowników w Stanach Zjednoczonych, w Unii Europejskiej dla użytkowników w Unii Europejskiej i w Wielkiej Brytanii dla użytkowników Ze Zjednoczonego Królestwa).
 Dane zbierane przez usługę Defender for Endpoint są przechowywane w lokalizacji geograficznej dzierżawy zidentyfikowana podczas inicjowania obsługi administracyjnej.
-> - Jeśli używasz usługi Defender for Endpoint przed użyciem programu Microsoft Defender dla chmury, Twoje dane będą przechowywane w lokalizacji określonej podczas tworzenia dzierżawy, nawet jeśli w późniejszym czasie zintegrowasz ją z programem Microsoft Defender dla chmury.
-> - Po skonfigurowaniu tej konfiguracji nie można zmienić lokalizacji przechowywania danych. Jeśli chcesz przenieść dane do innej lokalizacji, skontaktuj się z pomocą techniczną firmy Microsoft, aby zresetować dzierżawę.
-> - Pakiet onboardingowy dla Windows Server 2019 i Windows Server 2022–Microsoft Endpoint Manager obecnie wysyła skrypt. Aby uzyskać więcej informacji na temat wdrażania skryptów w programie Menedżer konfiguracji, zobacz Pakiety [i programy w Menedżer konfiguracji](/configmgr/apps/deploy-use/packages-and-programs).
+> - Jeśli używasz usługi Defender for Endpoint przed Microsoft Defender dla Chmury usługi Microsoft Defender dla Chmury, Twoje dane będą przechowywane w lokalizacji określonej podczas tworzenia dzierżawy, nawet jeśli zintegrowasz Microsoft Defender dla Chmury z usługą Microsoft Defender dla Chmury w późniejszym czasie.
+> - Po skonfigurowaniu tej konfiguracji nie można zmienić lokalizacji przechowywania danych. Jeśli chcesz przenieść dane do innej lokalizacji, skontaktuj się z administratorem pomoc techniczna firmy Microsoft zresetować dzierżawę.
+> - Pakiet onboardingowy dla Windows Server 2019 i Windows Server 2022–Microsoft Endpoint Manager obecnie wysyła skrypt. Aby uzyskać więcej informacji na temat wdrażania skryptów w programie Configuration Manager, zobacz Pakiety [i programy w programie Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 > - Skrypt lokalny nadaje się do dowodu koncepcji, ale nie powinien być używany do wdrożenia produkcyjnego. W przypadku wdrożenia produkcyjnego zalecamy używanie aplikacji zasady grupy lub Microsoft Endpoint Configuration Manager.
 
 
 
 ## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 oraz Windows Server 2022
 
-Pakiet dołączający do programu Windows Server 2019 i Windows Server 2022 do Microsoft Endpoint Manager obecnie wysyła skrypt. Aby uzyskać więcej informacji na temat wdrażania skryptów w programie Menedżer konfiguracji, zobacz Pakiety [i programy w Menedżer konfiguracji](/configmgr/apps/deploy-use/packages-and-programs).
+Pakiet dołączający do programu Windows Server 2019 i Windows Server 2022 do Microsoft Endpoint Manager obecnie wysyła skrypt. Aby uzyskać więcej informacji na temat wdrażania skryptów w programie Configuration Manager, zobacz Pakiety [i programy w programie Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 
 ### <a name="download-package"></a>Pobierz pakiet
 
-1. W Microsoft 365 Defender przejdź do Ustawienia > **Zarządzanie urządzeniami > dołączanie**.
+1. W Microsoft 365 Defender przejdź do Ustawienia > Zarządzanie urządzeniami > **Dołączanie**.
 
 2. Wybierz **Windows Server 1803 i 2019**.
 
@@ -362,14 +353,14 @@ Pakiet dołączający do programu Windows Server 2019 i Windows Server 2022 do M
 
 ## <a name="verify-the-onboarding-and-installation"></a>Weryfikowanie procesu dołączania i instalowania
 
-Sprawdź, czy Program antywirusowy Microsoft Defender i Program Microsoft Defender for Endpoint są uruchomione.
+Sprawdź, Program antywirusowy Microsoft Defender i Ochrona punktu końcowego w usłudze Microsoft Defender są uruchomione.
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Uruchamianie testu wykrywania w celu zweryfikowania do uruchomienia
 
-Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, zobacz Uruchamianie testu wykrywania na nowo włodarzony [program Microsoft Defender dla urządzenia końcowego](run-detection-test.md).
+Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, [zobacz Uruchamianie testu](run-detection-test.md) wykrywania na nowo Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach.
 
 > [!NOTE]
-> Uruchamianie Program antywirusowy Microsoft Defender nie jest wymagane, ale jest zalecane. Jeśli głównym rozwiązaniem ochrony punktu końcowego jest inny produkt dostawcy oprogramowania antywirusowego, możesz uruchomić program antywirusowy Defender w trybie pasywnym. Można sprawdzić, czy tryb pasywny jest uruchomiony tylko po sprawdzeniu, czy czujnik programu Microsoft Defender for Endpoint (SENSE) jest uruchomiony.
+> Uruchamianie Program antywirusowy Microsoft Defender nie jest wymagane, ale jest zalecane. Jeśli głównym rozwiązaniem ochrony punktu końcowego jest inny produkt dostawcy oprogramowania antywirusowego, możesz uruchomić program antywirusowy Defender w trybie pasywnym. Można sprawdzić, czy tryb pasywny jest uruchomiony tylko po Ochrona punktu końcowego w usłudze Microsoft Defender czujnika (SENSE).
 
 1. Uruchom następujące polecenie, aby sprawdzić, czy Program antywirusowy Microsoft Defender zainstalowano oprogramowanie:
 
@@ -382,9 +373,9 @@ Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, 
     Jeśli wynikiem jest błąd "Określona usługa nie istnieje jako zainstalowana usługa", musisz zainstalować usługę w Program antywirusowy Microsoft Defender. 
 
 
-    Aby uzyskać informacje na temat konfigurowania zasady grupy sieci Program antywirusowy Microsoft Defender na serwerach Windows i zarządzania nimi, zobacz Konfigurowanie i zarządzanie usługą zasady grupy przy użyciu [ustawień Program antywirusowy Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
+    Aby uzyskać informacje na temat konfigurowania zasady grupy sieci Program antywirusowy Microsoft Defender na serwerach Windows i zarządzania nimi, zobacz Konfigurowanie i zarządzanie przy użyciu zasady grupy sieci zasady grupy [ Program antywirusowy Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 
-2. Uruchom następujące polecenie, aby sprawdzić, czy usługa Microsoft Defender dla punktu końcowego jest uruchomiona:
+2. Uruchom następujące polecenie, aby sprawdzić, czy Ochrona punktu końcowego w usłudze Microsoft Defender działa:
 
     `sc.exe query sense`
 
@@ -396,15 +387,15 @@ Postępuj zgodnie z instrukcjami w teście uruchamiania wykrywania na nowo [wnos
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po pomyślnym doniu urządzeń do usługi konieczne będzie skonfigurowanie poszczególnych składników programu Microsoft Defender dla punktu końcowego. Postępuj zgodnie z [porządek](prepare-deployment.md#adoption-order) przyjęcia, aby zostać przewodnikiem po włączaniu poszczególnych składników.
+Po pomyślnym doniu urządzeń do usługi konieczne będzie skonfigurowanie poszczególnych składników oprogramowania Ochrona punktu końcowego w usłudze Microsoft Defender. Postępuj zgodnie z [porządek](prepare-deployment.md#adoption-order) przyjęcia, aby zostać przewodnikiem po włączaniu poszczególnych składników.
 
 ## <a name="offboard-windows-servers"></a>Odsuń Windows serwerach
 
 Wersje Windows Server 2012 R2, Windows Server 2016, Windows Server (KW), Windows Server 2019 i Windows Server 2019 Core można wystartować w taki sam sposób, jak w przypadku urządzeń klienckich firmy Windows 10.
 
 - [Urządzenia wye korzystające z zasady grupy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [Urządzenia wye korzystające z Menedżer konfiguracji](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [Urządzenia wyełowywne i monitorują je przy użyciu narzędzi do zarządzania urządzeniami przenośnymi](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Urządzenia wye korzystające z Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [Urządzenia wyełowywne i monitorują je przy Zarządzanie urządzeniami urządzeniach przenośnych](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 - [Urządzenia wye korzystające ze skryptu lokalnego](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
 W przypadku Windows wersji serwera dostępne są dwie opcje Windows z usługi:
@@ -412,8 +403,8 @@ W przypadku Windows wersji serwera dostępne są dwie opcje Windows z usługi:
 - Odinstalowywanie agenta MMA
 - Usuwanie konfiguracji obszaru roboczego programu Defender for Endpoint
 
->[!NOTE]
-> Poniższe instrukcje dotyczące wywrzenia na Windows serwera mają zastosowanie również w przypadku, gdy jest uruchomiony poprzedni program Microsoft Defender for Endpoint dla systemu Windows Server 2016 i Windows Server 2012 R2, który wymaga użycia programu MMA. Instrukcje migrowania do nowego nieprawionego rozwiązania znajdują się w scenariuszach migracji z serwera [w programie Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> [!NOTE]
+> Poniższe instrukcje dotyczące wywłasniania Windows serwera mają zastosowanie również w przypadku Ochrona punktu końcowego w usłudze Microsoft Defender wersji Windows Server 2016 i Windows Server 2012 R2, która wymaga MMA. Instrukcje migrowania do nowego, ujednoliconego rozwiązania znajdują się w scenariuszach [migracji z serwera w](/microsoft-365/security/defender-endpoint/server-migration) Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
@@ -422,4 +413,4 @@ W przypadku Windows wersji serwera dostępne są dwie opcje Windows z usługi:
 - [Urządzenia Windows urządzeniach](configure-endpoints-non-windows.md)
 - [Konfigurowanie ustawień serwera proxy i łączności internetowej](configure-proxy-internet.md)
 - [Uruchamianie testu wykrywania na nowo w urządzeniu z uruchomionym programem Defender dla punktu końcowego](run-detection-test.md)
-- [Rozwiązywanie problemów z dołączaniem do programu Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender dotyczących dołączania](troubleshoot-onboarding.md)

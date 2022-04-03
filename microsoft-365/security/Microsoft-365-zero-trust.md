@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 9b37e353af74b7a01c0647f99b149f5fac0ae8a3
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 59ebfb9ffb925cc5937802a31902e7c2342fc740
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63011273"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755660"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 planu wdrażania Zerowe zaufanie
 
@@ -36,13 +36,7 @@ Podejście Zerowe zaufanie obejmuje całe cyfrowe rynku i służy jako zintegrow
 
 Na poniższej ilustracji przedstawiono podstawowe elementy współtworące poziom zerowego zaufania.
 
-<!---
-[![Zero Trust security architecture](../media/zero-trust/zero-trust-architecture.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/zero-trust/zero-trust-architecture.png)
--->
-
 :::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="Architektura zabezpieczeń Zero Trust" lightbox="../media/zero-trust/zero-trust-architecture.png":::
-
-
 
 Na ilustracji:
 - Wymuszanie zasad zabezpieczeń stanowi centrum architektury zerowego zaufania. Obejmuje to uwierzytelnianie wieloskładnikowe z dostępem warunkowym, które uwzględnia ryzyko związane z kontem użytkownika, stan urządzenia i inne ustawione kryteria i zasady.
@@ -128,7 +122,7 @@ Przejdź do [**_tematu Ocena i Microsoft 365 Defender_**](defender/eval-overview
 
 |Zawiera  |Wymagania wstępne  |Nie zawiera  |
 |---------|---------|---------|
-| Skonfiguruj środowisko oceny i pilotażu dla wszystkich składników:<br>- Defender for Identity<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Defender dla aplikacji w chmurze<br><br>Ochrona przed zagrożeniami<br><br> Badanie zagrożeń i reagowanie na nie   | Zapoznaj się z wskazówkami, aby przeczytać o wymaganiach dotyczących architektury poszczególnych składników Microsoft 365 Defender.        | Usługa Azure AD Identity Protection nie jest uwzględniona w tym przewodniku po rozwiązaniu. Został on uwzględniony w Kroku 1: Konfigurowanie ochrony dostępu do urządzeń i tożsamości bez zaufania.        |
+| Skonfiguruj środowisko oceny i pilotażu dla wszystkich składników:<br>- Defender for Identity<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Defender dla aplikacji w chmurze<br><br>Ochrona przed zagrożeniami<br><br> Badanie zagrożeń i odpowiadanie na nie   | Zapoznaj się z wskazówkami, aby przeczytać o wymaganiach dotyczących architektury poszczególnych składników Microsoft 365 Defender.        | Usługa Azure AD Identity Protection nie jest uwzględniona w tym przewodniku po rozwiązaniu. Został on uwzględniony w Kroku 1: Konfigurowanie ochrony dostępu do urządzeń i tożsamości bez zaufania.        |
 |    |         |         |
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>Krok nr 5. Ochrona danych poufnych i ich ochrona
@@ -144,7 +138,8 @@ Mimo że ta praca jest reprezentowana w górnej części stosu wdrażania przeds
 
 Microsoft Information Protection zapewnia ramę, proces i możliwości, których można użyć do zrealizowania określonych celów biznesowych.
 
-![Microsoft Information Protection (MIP)](../media/zero-trust/mip-solution-overview.png)
+:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="The Microsoft Information Protection framework" lightbox="../media/zero-trust/mip-solution-overview.png":::
+
 
 Aby uzyskać więcej informacji na temat planowania i wdrażania ochrony informacji, zobacz [**_Wdrażanie Microsoft Information Protection informacji_**](../compliance/information-protection-solution.md). 
 

@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5e1b841c5638bf9228efc844daa58d1d1e170726
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: bf7592055e58f10a3680e6ee712c597780591a47
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754752"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498588"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Run an attack simulation in a Microsoft 365 Defender pilot environment
 
@@ -56,9 +56,9 @@ Portal Microsoft 365 Defender ma wbudowane możliwości tworzenia symulowanych a
 
   W portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender wybierz</a> pozycję **Punkty końcowe > samouczki & symulowania**.
 
-### <a name="defender-for-office-365-attack-simulation-training"></a>Szkolenie z symydyjną Office 365 w programie Defender dla programu Defender
+### <a name="defender-for-office-365-attack-simulation-training"></a>Ochrona usługi Office 365 w usłudze Defender szkolenia symulacyjnego z atakami
 
-Usługa Defender dla Office 365 z programem Microsoft 365 E5 lub Microsoft Defender for Office 365 Plan 2 obejmuje szkolenie symezyjne dotyczące ataków wyłudzających informacje. Podstawowe czynności są następujące:
+Ochrona usługi Office 365 w usłudze Defender z programem Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2 obejmuje szkolenia symezyjne dotyczące prób wyłudzania informacji. Podstawowe czynności są następujące:
 
 1. Tworzenie symulacyjnej
 
@@ -93,11 +93,11 @@ Dla każdej symulacyjnej lub samouczka:
 
 3. Uruchom plik symulacyjnej lub skrypt na urządzeniu testowym zgodnie z instrukcjami w dokumencie.
 
- Aby uzyskać więcej informacji, zobacz [Środowisko programu Microsoft Defender dla punktu końcowego w przypadku symulowanego ataku](/microsoft-365/security/defender-endpoint/attack-simulations).
+ Aby uzyskać więcej informacji, zobacz [Środowisko Ochrona punktu końcowego w usłudze Microsoft Defender symulowanego ataku](/microsoft-365/security/defender-endpoint/attack-simulations).
 
 ## <a name="simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional"></a>Symulowanie ataków za pomocą odizolego kontrolera domeny i urządzenia klienckiego (opcjonalnie)
 
-W tym opcjonalnym ćwiczeniu z reagowaniem na zdarzenia za pomocą skryptu programu PowerShell zasymuluje się atak na odizolowanym kontrolerze domeny (AD DS) i urządzeniu Windows, a następnie za pomocą skryptu programu PowerShell należy zbadać, rozwiązać i rozwiązać to zdarzenie. Usługi domenowe w usłudze Active Directory
+W tym opcjonalnym ćwiczeniu w odpowiedzi na incydenty zasymulujesz atak na odizolowanym kontrolerze domeny (AD DS) i urządzeniu Windows za pomocą skryptu programu PowerShell, a następnie zbadasz, rozwiążesz i rozwiążesz zdarzenie. Active Directory Domain Services
 
 Najpierw musisz dodać punkty końcowe do środowiska pilotażowego.
 
@@ -110,8 +110,8 @@ Najpierw musisz dodać do środowiska pilotażowego AD DS odizolowane urządzeni
 2. Sprawdź, czy twój kontroler domeny:
 
    - Działa Windows Server 2008 R2 lub nowszy.
-   - Zgłasza dane [do usługi Microsoft Defender for Identity](/azure/security-center/security-center-wdatp) i włączył [zarządzanie zdalne](/windows-server/administration/server-manager/configure-remote-management-in-server-manager).
-   - [Włączono integrację usług Microsoft Defender for Identity i Microsoft Defender for Cloud Apps](/cloud-app-security/mdi-integration).
+   - Raporty dla [Microsoft Defender for Identity](/azure/security-center/security-center-wdatp) i włączone [zarządzanie zdalne](/windows-server/administration/server-manager/configure-remote-management-in-server-manager).
+   - Ma [Microsoft Defender for Identity i Microsoft Defender for Cloud Apps włączona integracja](/cloud-app-security/mdi-integration).
    - Ma utworzonego użytkownika testowego w domenie testowej. Uprawnienia na poziomie administratora nie są potrzebne.
 
 3. Sprawdź, czy twoje urządzenie testowe:
@@ -119,7 +119,7 @@ Najpierw musisz dodać do środowiska pilotażowego AD DS odizolowane urządzeni
    - Działa Windows 10 wersji 1903 lub nowszej.
    - Jest przyłączony do domeny AD DS domeny.
    - Ma [Program antywirusowy Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) włączone. Jeśli masz problem z włączeniem Program antywirusowy Windows Defender, zobacz ten [temat rozwiązywania problemów](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
-   - Jest [wnoszona do programu Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+   - Jest [on dołączany do Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 Jeśli korzystasz z grup dzierżawy i urządzeń, utwórz dedykowaną grupę urządzeń dla urządzenia testowego i wypychaj ją na najwyższy poziom.
 
@@ -195,7 +195,7 @@ Teraz, po przełączeniu się do punktu widzenia analityka SOC, możesz rozpocz�
 
 3. Nowe zdarzenie dotyczące symulowanego ataku pojawi się w kolejce zdarzenia.
 
-   :::image type="content" source="../../media/mtp/fig2.png" alt-text="Kolejka Zdarzenia w portalu Microsoft 365 Defender wiadomości" lightbox="../../media/mtp/fig2.png":::
+   :::image type="content" source="../../media/mtp/fig2.png" alt-text="Przykład kolejki Zdarzenia" lightbox="../../media/mtp/fig2.png":::
 
 #### <a name="investigate-the-attack-as-a-single-incident"></a>Badanie ataków jako pojedynczego zdarzenia
 
@@ -211,11 +211,11 @@ Aby wyświetlić zdarzenie:
 
 3. Zaznacz najnowszy element, klikając okrąg znajdujący się po lewej stronie nazwy zdarzenia. Na panelu bocznym są wyświetlane dodatkowe informacje o zdarzeniu, w tym wszystkie związane z nim alerty. Każde zdarzenie ma unikatową nazwę, która opisuje je na podstawie atrybutów uwzględnianych w nim alertów.
 
-   Alerty wyświetlane na pulpicie nawigacyjnym można filtrować według zasobów usługi: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, Microsoft 365 Defender oraz Microsoft Defender for Office 365.
+   Alerty wyświetlane na pulpicie nawigacyjnym można filtrować według zasobów usługi: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, Ochrona punktu końcowego w usłudze Microsoft Defender, Microsoft 365 Defender i Ochrona usługi Office 365 w usłudze Microsoft Defender.
 
 3. Wybierz **pozycję Otwórz stronę zdarzenia,** aby uzyskać więcej informacji o zdarzeniu.
 
-   Na stronie **Zdarzenie** widać wszystkie alerty i informacje dotyczące zdarzenia. Informacje te obejmują jednostki i zasoby, które biorą udział w alercie, źródło wykrywania alertów (na przykład usługa Microsoft Defender dla tożsamości lub program Microsoft Defender dla punktu końcowego) oraz przyczynę ich powiązać. Przeglądanie listy alertów o incydentach zawiera informacje o postępie ataków. W tym widoku możesz wyświetlić i zbadać poszczególne alerty.
+   Na stronie **Zdarzenie** widać wszystkie alerty i informacje dotyczące zdarzenia. Informacje te obejmują jednostki i zasoby, które biorą udział w alercie, źródło wykrywania alertów (takie jak Microsoft Defender for Identity lub Ochrona punktu końcowego w usłudze Microsoft Defender) oraz przyczynę ich powiązać. Przeglądanie listy alertów o incydentach zawiera informacje o postępie ataków. W tym widoku możesz wyświetlić i zbadać poszczególne alerty.
 
    Możesz również **kliknąć pozycję Zarządzaj** zdarzeniem w menu po prawej stronie, aby otagować zdarzenie, przypisać je do siebie i dodać komentarze.
 
@@ -226,19 +226,19 @@ Przyjrzyjmy się niektórym alertom wygenerowanym podczas symulowanego ataku.
 > [!NOTE]
 > W symulowanym ataku zostanie wygenerowanych tylko kilka alertów. W zależności od wersji pakietu Windows i wersji Microsoft 365 Defender na urządzeniu testowym, mogą zostać wyświetlone więcej alertów wyświetlanych w nieco innej kolejności.
 
-:::image type="content" source="../../media/mtp/fig6.png" alt-text="A generated alert in the Microsoft 365 Defender portal" lightbox="../../media/mtp/fig6.png":::
+:::image type="content" source="../../media/mtp/fig6.png" alt-text="Przykład wygenerowanego alertu" lightbox="../../media/mtp/fig6.png":::
 
-##### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint"></a>Alert: zaobserwowano podejrzany proces (źródło: program Microsoft Defender for Endpoint)
+##### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint"></a>Alert: obserwowany podejrzany przebieg procesu (źródło: Ochrona punktu końcowego w usłudze Microsoft Defender)
 
 Zaawansowani atakujący używają zaawansowanych metod, które pozostają w pamięci i ukrywają się przed narzędziami wykrywania. Jedną z typowych technik jest działanie z poziomu zaufanego procesu systemowego, a nie ze złośliwego pliku wykonywalnego, co ułatwia wykrywanie narzędzi i operacji zabezpieczeń w celu wykrycia złośliwego kodu.
 
-Aby umożliwić analitykom SOC wychwycić te zaawansowane ataki, czujniki deep memory w programie Microsoft Defender for Endpoint zapewniają naszą usługę w chmurze wgląd w różne techniki przesyłania kodu krzyżowego. Na poniższej ilustracji pokazano, jak program Defender for Endpoint wykrył i alertował podczas próby wsadu kodu w <i>notepad.exe</i>.
+Aby umożliwić analitykom SOC wychwycić te zaawansowane ataki, czujniki pamięci głębokości w usłudze Ochrona punktu końcowego w usłudze Microsoft Defender zapewniają naszą usługę w chmurze wgląd w szereg różnych technik insekcji kodu krzyżowego. Na poniższej ilustracji pokazano, jak program Defender for Endpoint wykrył i alertował podczas próby wsadu kodu w <i>notepad.exe</i>.
 
-:::image type="content" source="../../media/mtp/fig7.png" alt-text="Alert w celu podania potencjalnie złośliwego kodu w portalu Microsoft 365 Defender sieci Microsoft 365 Defender." lightbox="../../media/mtp/fig7.png":::
+:::image type="content" source="../../media/mtp/fig7.png" alt-text="Przykład alertu w celu podania potencjalnie złośliwego kodu" lightbox="../../media/mtp/fig7.png":::
 
-##### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint"></a>Alert: Nieoczekiwane zachowanie obserwowane w przypadku uruchomienia procesu bez argumentów wiersza polecenia (źródło: Program Microsoft Defender dla punktu końcowego)
+##### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint"></a>Alert: Zachowanie nieoczekiwane obserwowane w przypadku uruchomienia procesu bez argumentów wiersza polecenia (Źródło: Ochrona punktu końcowego w usłudze Microsoft Defender)
 
-Usługa Microsoft Defender for Endpoint wykrywania często jest docelowa najbardziej typowego atrybutu techniki ataków. Ta metoda zapewnia niezawodność i zwiększa słupki dla atakujących w celu przełączenia się do nowszej taktyki.
+Ochrona punktu końcowego w usłudze Microsoft Defender często są kierowane do najczęściej używanego atrybutu techniki ataków. Ta metoda zapewnia niezawodność i zwiększa słupki dla atakujących w celu przełączenia się do nowszej taktyki.
 
 Stosujemy algorytmy edukacyjne na dużą skalę, aby określać normalne zachowanie typowych procesów w organizacji i na całym świecie, i obserwujmy, kiedy te procesy pokazują anomaliczne zachowania. Te anomalne zachowania często wskazują, że wprowadzono niepotrzebny kod i że został uruchomiony w innym zaufanym procesie.
 
@@ -251,44 +251,43 @@ Zwróć uwagę, że szczegóły alertu obejmują zewnętrzny adres IP — wskaź
 
 Wybierz adres IP w drzewie procesu alertu, aby wyświetlić stronę szczegółów adresu IP.
 
-:::image type="content" source="../../media/mtp/fig8.png" alt-text="Alert o nieoczekiwanym zachowaniu po uruchomieniu procesu bez argumentów wiersza polecenia w portalu Microsoft 365 Defender sieci" lightbox="../../media/mtp/fig8.png":::
+:::image type="content" source="../../media/mtp/fig8.png" alt-text="Przykład nieoczekiwanego zachowania po uruchomieniu procesu bez argumentów wiersza polecenia" lightbox="../../media/mtp/fig8.png":::
 
 Na poniższej ilustracji przedstawiono wybraną stronę szczegółów adresu IP (kliknięcie adresu IP w drzewie procesu alertu).
 
-:::image type="content" source="../../media/mtp/fig9.png" alt-text="Strona szczegółów adresu IP w portalu Microsoft 365 Defender adresowej" lightbox="../../media/mtp/fig9.png":::
+:::image type="content" source="../../media/mtp/fig9.png" alt-text="Przykład strony ze szczegółami adresu IP" lightbox="../../media/mtp/fig9.png":::
 
-
-##### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>Alert: Rozpoznanie użytkownika i adresu IP (SMB, User and IP Address Reconnaissance) (Źródło: Microsoft Defender for Identity)
+##### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>Alert: Rozpoznanie użytkownika i adresu IP (SMB, User and IP address reconnaissance) (Źródło: Microsoft Defender for Identity)
 
 Wyliczenie przy użyciu protokołu blokowania wiadomości serwera (SMB, Server Message Block) umożliwia atakującym uzyskanie przez atakujących ostatnich informacji logowania użytkownika, które pomagają im przejść dalej przez sieć w celu uzyskania dostępu do określonego poufnego konta.
 
 Podczas tego wykrywania jest wyzwalany alert, gdy wyliczenie sesji SMB jest uruchamiane na kontrolerze domeny.
 
-:::image type="content" source="../../media/mtp/fig10.png" alt-text="Alert usługi Microsoft Defender dla tożsamości dla użytkowników i adresów IP renaissance w portalu usługi Microsoft 365 Defender sieci Microsoft 365 Defender" lightbox="../../media/mtp/fig10.png":::
+:::image type="content" source="../../media/mtp/fig10.png" alt-text="Przykład alertu Microsoft Defender for Identity adres IP i użytkownika" lightbox="../../media/mtp/fig10.png":::
 
-#### <a name="review-the-device-timeline-with-microsoft-defender-for-endpoint"></a>Przeglądanie osi czasu urządzenia za pomocą programu Microsoft Defender dla punktu końcowego
+#### <a name="review-the-device-timeline-with-microsoft-defender-for-endpoint"></a>Przejrzyj oś czasu urządzenia za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender
 
-Po przeglądaniu różnych alertów dotyczących tego zdarzenia przejdź z powrotem do strony zdarzenia, która była wcześniej analizowana. Wybierz **kartę Urządzenia** na stronie zdarzenia, aby przejrzeć urządzenia uczestniczące w tym zdarzeniu, zgłoszone przez usługę Microsoft Defender for Endpoint i usługę Microsoft Defender for Identity.
+Po przeglądaniu różnych alertów dotyczących tego zdarzenia przejdź z powrotem do strony zdarzenia, która była wcześniej analizowana. Wybierz **kartę Urządzenia** na stronie zdarzenia, aby przejrzeć urządzenia związane z tym zdarzeniem, jak zostało zgłoszone przez Ochrona punktu końcowego w usłudze Microsoft Defender i Microsoft Defender for Identity.
 
 Wybierz nazwę urządzenia, na którym został przeprowadzony atak, aby otworzyć stronę jednostki dla tego konkretnego urządzenia. Na tej stronie widać alerty, które zostały wyzwolone, oraz powiązane zdarzenia.
 
 Wybierz **kartę Oś czasu** , aby otworzyć oś czasu urządzenia i wyświetlić wszystkie zdarzenia i zachowania obserwowane na urządzeniu w kolejności chronologicznej z podniesionym alertami.
 
-:::image type="content" source="../../media/mtp/fig11.png" alt-text="Sekcja Oś czasu urządzenia w portalu Microsoft 365 Defender projektu" lightbox="../../media/mtp/fig11.png":::
+:::image type="content" source="../../media/mtp/fig11.png" alt-text="Przykładowa oś czasu urządzenia z zachowaniami" lightbox="../../media/mtp/fig11.png":::
 
 Rozwinięcie niektórych bardziej interesujących zachowań dostarcza przydatnych informacji, takich jak drzewa rozsyłki.
 
 Na przykład przewiń w dół, aż znajdziesz zdarzenie alertu **Obserwowane zdarzenie podejrzanego procesu.** Wybierzpowershell.exe **przykładowe notepad.exe** zdarzenia procesu poniżej tego zdarzenia, aby wyświetlić pełne drzewo procesu dla tego zachowania pod wykresem jednostki zdarzenia w okienku  bocznym. Jeśli to konieczne, użyj paska wyszukiwania do filtrowania.
 
-:::image type="content" source="../../media/mtp/fig12.png" alt-text="Drzewo procesu procesu wybranego zachowania podczas tworzenia pliku programu PowerShell w portalu Microsoft 365 Defender sieci Microsoft 365 Defender pliku" lightbox="../../media/mtp/fig12.png":::
+:::image type="content" source="../../media/mtp/fig12.png" alt-text="Przykład drzewa procesu dla wybranego zachowania podczas tworzenia pliku programu PowerShell" lightbox="../../media/mtp/fig12.png":::
 
-#### <a name="review-the-user-information-with-microsoft-defender-for-cloud-apps"></a>Przeglądanie informacji o użytkowniku za pomocą programu Microsoft Defender dla aplikacji w chmurze
+#### <a name="review-the-user-information-with-microsoft-defender-for-cloud-apps"></a>Przejrzyj informacje o użytkowniku za pomocą Microsoft Defender for Cloud Apps
 
 Na stronie zdarzenia wybierz kartę Użytkownicy, aby wyświetlić listę użytkowników, którzy biorą udział w atakach. Ta tabela zawiera dodatkowe informacje o poszczególnych użytkownikach, w tym ocenę priorytetu badania **każdego** użytkownika.
 
 Wybierz nazwę użytkownika, aby otworzyć stronę profilu użytkownika, gdzie można przeprowadzić dalsze badanie. [Dowiedz się więcej o badanie ryzykownych użytkowników](/cloud-app-security/tutorial-ueba#identify).
 
-:::image type="content" source="../../media/mtp/fig13.png" alt-text="Strona użytkownika usługi Defender for Cloud Apps w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mtp/fig13.png":::
+:::image type="content" source="../../media/mtp/fig13.png" alt-text="strona Defender dla Chmury użytkowników aplikacji" lightbox="../../media/mtp/fig13.png":::
 
 #### <a name="automated-investigation-and-remediation"></a>Zautomatyzowane badanie i rozwiązywanie problemów
 
@@ -297,9 +296,9 @@ Wybierz nazwę użytkownika, aby otworzyć stronę profilu użytkownika, gdzie m
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Przejdź wstecz do zdarzenia w portalu Microsoft 365 Defender. Karta **Badania na** stronie **Zdarzenie** zawiera zautomatyzowane badania, które zostały wyzwolone przez usługę Microsoft Defender for Identity i Usługę Microsoft Defender for Endpoint. Poniższy zrzut ekranu przedstawia tylko zautomatyzowane badanie wyzwalane przez program Defender for Endpoint. Domyślnie program Defender for Endpoint automatycznie naprawia artefakty znalezione w kolejce, co wymaga działań naprawczych.
+Przejdź wstecz do zdarzenia w portalu Microsoft 365 Defender. Karta **Badania na** stronie **Zdarzenie** zawiera zautomatyzowane badania, które zostały wyzwolone przez Microsoft Defender for Identity i Ochrona punktu końcowego w usłudze Microsoft Defender. Poniższy zrzut ekranu przedstawia tylko zautomatyzowane badanie wyzwalane przez program Defender for Endpoint. Domyślnie program Defender for Endpoint automatycznie naprawia artefakty znalezione w kolejce, co wymaga działań naprawczych.
 
-:::image type="content" source="../../media/mtp/fig14.png" alt-text="Sekcja zautomatyzowanego badania związanego z incydentem w portalu Microsoft 365 Defender." lightbox="../../media/mtp/fig14.png":::
+:::image type="content" source="../../media/mtp/fig14.png" alt-text="Przykład zautomatyzowanego badania związanego ze zdarzeniem" lightbox="../../media/mtp/fig14.png":::
 
 Wybierz alert, który wyzwolił badanie w celu otwarcia strony **Szczegóły** badania. Zobaczysz następujące szczegóły:
 
@@ -311,9 +310,9 @@ Wybierz alert, który wyzwolił badanie w celu otwarcia strony **Szczegóły** b
 > [!NOTE]
 > W zależności od chronometrażu automatyczne badanie może być nadal uruchomione. Przed zebraniem i przeanalizowaniem dowodów oraz przejrzenia wyników poczekaj kilka minut na ukończenie procesu. Odśwież stronę **Szczegóły badania** , aby uzyskać najnowsze wyniki.
 
-:::image type="content" source="../../media/mtp/fig15.png" alt-text="Strona Szczegóły badania w portalu Microsoft 365 Defender w sieci Web" lightbox="../../media/mtp/fig15.png":::
+:::image type="content" source="../../media/mtp/fig15.png" alt-text="Przykład strony Szczegóły badania" lightbox="../../media/mtp/fig15.png":::
 
-W trakcie zautomatyzowanego badania program Microsoft Defender for Endpoint zidentyfikował proces notepad.exe, który został przysłany jako jeden z artefaktów wymagających środków zaradczych. Program Defender for Endpoint automatycznie zatrzymuje podejrzaną autoryzację procesu w ramach automatycznego rozwiązywania problemów.
+Podczas zautomatyzowanego badania Ochrona punktu końcowego w usłudze Microsoft Defender zidentyfikował proces notepad.exe, który został przysłany jako jeden z artefaktów wymagających rozwiązania. Program Defender for Endpoint automatycznie zatrzymuje podejrzaną autoryzację procesu w ramach automatycznego rozwiązywania problemów.
 
 Możesz zobaczyć <i> ,notepad.exe</i> z listy uruchomionych procesów na urządzeniu testowym.
 
@@ -323,7 +322,7 @@ Po zakończeniu badania i potwierdzeniu jego rozwiązania możesz rozwiązać to
 
 Na stronie **Zdarzenie** wybierz pozycję **Zarządzaj zdarzeniem**. Ustaw stan Na wypadek **zdarzenia i** wybierz pozycję **Prawda alert** dla klasyfikacji i testowania **zabezpieczeń** w celu określenia.
 
-:::image type="content" source="../../media/mtp/fig16.png" alt-text="Panel zarządzania zdarzeniami z możliwością rozwiązywania problemów w portalu Microsoft 365 Defender zdarzenia" lightbox="../../media/mtp/fig16.png":::
+:::image type="content" source="../../media/mtp/fig16.png" alt-text="Przykład strony zdarzeń z otwartym panelem zarządzania zdarzeniami, na którym można kliknąć przełącznik, aby rozwiązać problem" lightbox="../../media/mtp/fig16.png":::
 
 Gdy zdarzenie zostanie rozwiązane, rozpozna wszystkie skojarzone alerty w portalu usługi Microsoft 365 Defender powiązanych portalach.
 

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314225"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498646"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Ocenianie postawy dotyczącej zabezpieczeń za pomocą programu Microsoft Secure Score
 
@@ -38,15 +38,15 @@ Microsoft Secure Score to miara stanu zabezpieczeń organizacji. Wyższa liczba 
 Aby szybciej znaleźć potrzebne informacje, działania udoskonalania firmy Microsoft są zorganizowane w grupy:
 
 - Tożsamość (Azure Active Directory kont & ról)
-- Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- Aplikacje (poczta e-mail i aplikacje w chmurze, w tym Office 365 i Microsoft Defender dla aplikacji w chmurze)
+- Device (Ochrona punktu końcowego w usłudze Microsoft Defender, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+- Aplikacje (poczta e-mail i aplikacje w chmurze, Office 365 i Microsoft Defender for Cloud Apps)
 
 >[!NOTE]
->W ostatniej wersji programu Microsoft Secure Score opublikowano ulepszony model oceniania, który tymczasowo niezgodne z bezpiecznym wynikiem tożsamości i interfejsem API Graph. [Wyświetl szczegóły](microsoft-secure-score-whats-new.md)
+>W ostatniej wersji wyników bezpiecznego wyniku firmy Microsoft opublikowano ulepszony model oceniania, który tymczasowo niezgodne z bezpiecznymi ocenami tożsamości i interfejs Graph API. [Wyświetl szczegóły](microsoft-secure-score-whats-new.md)
 
 Na stronie przeglądu wyników bezpiecznego programu Microsoft możesz sprawdzić, jak punkty są podzielone między te grupy i jakie punkty są dostępne. Możesz również uzyskać widok całościowy wyniku, historycznego trendu bezpiecznego wyniku za pomocą porównań wzorcowych i priorytetowych działań udoskonalania, które można podjąć w celu poprawienia wyniku.
 
-![Strona główna Secure Score.](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Strona główna bezpiecznego wyniku w portalu Microsoft 365 Defender sieci Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="check-your-current-score"></a>Sprawdzanie bieżącego wyniku
 
@@ -62,7 +62,7 @@ Poniżej przedstawiono wyniki, które można dodać do widoku ogólnego wyniku, 
 
 Widok ten będzie wyglądał tak, jeśli uwzględniono wszystkie możliwe widoki wyników:
 
-![Bezpieczny wynik, w tym planowany wynik, bieżący wynik licencji i wynik, który można uzyskać.](../../media/secure-score/secure-score-achievable.png)
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="Bezpieczny wynik, w tym planowany wynik, bieżący wynik licencji i wynik, który można uzyskać w portalu Microsoft 365 Defender sieci Microsoft 365 Defender." lightbox="../../media/secure-score/secure-score-achievable.png":::
 
 ## <a name="take-action-to-improve-your-score"></a>Działanie w celu poprawienia wyniku
 
@@ -76,13 +76,13 @@ Klasyfikacja opiera się na liczbie punktów, które pozostało do osiągnięcia
 
 Po wybraniu określonej akcji udoskonalania zostanie wyświetlone wysuwanie pełnej strony.  
 
-![Przykład wysuwu akcji udoskonalania.](../../media/secure-score/secure-score-improvement-action-details.png)
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Wysuw akcji udoskonalania w portalu Microsoft 365 Defender a" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 Aby ukończyć akcję, masz kilka możliwości:
 
 - Wybierz **pozycję Zarządzaj** , aby przejść do ekranu konfiguracji i wprowadzić zmianę. Uzyskasz w ten sposób punkty, które są wartościowe, widoczne na wysuwanych akcjęch. Aktualizacja punktów trwa zwykle około 24 godzin.
 
-- Wybierz **pozycję** Udostępnij, aby skopiować bezpośredni link do akcji udoskonalania. Możesz także wybrać platformę udostępniania linku, taką jak poczta e-mail, Microsoft Teams lub Microsoft Planner.
+- Wybierz **pozycję** Udostępnij, aby skopiować bezpośredni link do akcji udoskonalania. Możesz także wybrać platformę udostępniania linku, taką jak poczta e-mail, adres e-Microsoft Teams lub Microsoft Planner.
 
 Dodaj **notatki** , aby śledzić postęp lub cokolwiek innego, co chcesz skomentować. Jeśli do akcji udoskonalania **dodasz** własne tagi, możesz filtrować je według tych tagów.
 
@@ -123,5 +123,5 @@ Jeśli masz problemy, po daj nam o tym znać, publikując wpis w społeczności 
 
 - [Omówienie bezpiecznego wyniku firmy Microsoft](microsoft-secure-score.md)
 - [Śledzenie historii bezpiecznego wyniku firmy Microsoft i spełnienie celów](microsoft-secure-score-history-metrics-trends.md)
-- [Co będzie wkrótce](microsoft-secure-score-whats-coming.md)
+- [Nadchodzące nowości](microsoft-secure-score-whats-coming.md)
 - [Co nowego](microsoft-secure-score-whats-new.md)

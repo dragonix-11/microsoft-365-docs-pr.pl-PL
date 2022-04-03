@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie alertami programu Microsoft Defender dla punktów końcowych
+title: Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender wiadomości
 description: Za pomocą menu Zarządzaj alertami można zmieniać stan alertów, tworzyć reguły ostrzeżeń w celu ukrywania alertów, przesyłania komentarzy i przeglądania historii zmian dla poszczególnych alertów.
 keywords: zarządzanie alertami, zarządzanie, alerty, stan, nowy, w toku, rozwiązywanie, rozwiązywanie alertów, pomijanie, kompresja, reguły, kontekst, historia, komentarze, zmiany
 ms.prod: m365-security
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 83e7bd2cc46469cb6a5a6bc8c29a8d21dba20b7f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021232"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466196"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Zarządzanie alertami programu Microsoft Defender dla punktów końcowych
+# <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender wiadomości
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -39,7 +39,7 @@ Alertami można zarządzać, wybierając je w kolejce **Alerty** lub na  karcie 
 
 Wybranie alertu w jednym z tych miejsc prowadzi do **okienka Zarządzanie alertami**.
 
-![Obraz okienka zarządzania alertami i kolejki alertów.](images/atp-alerts-selected.png)
+:::image type="content" source="images/atp-alerts-selected.png" alt-text="Okienko zarządzania alertami i kolejka alertów" lightbox="images/atp-alerts-selected.png":::
 
 ## <a name="link-to-another-incident"></a>Link do innego zdarzenia
 
@@ -131,10 +131,10 @@ Dodane komentarze natychmiast pojawiają się w okienku.
 ## <a name="related-topics"></a>Tematy pokrewne
 
 - [Zarządzanie regułami zarządzania regułami](manage-suppression-rules.md)
-- [Wyświetlanie i organizowanie kolejki alertów programu Microsoft Defender dla punktu końcowego](alerts-queue.md)
-- [Badanie alertów programu Microsoft Defender dla punktów końcowych](investigate-alerts.md)
-- [Badanie pliku skojarzonego z alertem programu Microsoft Defender dla punktu końcowego](investigate-files.md)
-- [Badanie urządzeń na liście programu Microsoft Defender dla urządzeń końcowych](investigate-machines.md)
-- [Badanie adresu IP skojarzonego z alertem programu Microsoft Defender dla punktu końcowego](investigate-ip.md)
-- [Badanie domeny skojarzonej z alertem programu Microsoft Defender dla punktu końcowego](investigate-domain.md)
-- [Badanie konta użytkownika w programie Microsoft Defender dla punktu końcowego](investigate-user.md)
+- [Wyświetlanie i organizowanie kolejki Ochrona punktu końcowego w usłudze Microsoft Defender alertów](alerts-queue.md)
+- [Badanie Ochrona punktu końcowego w usłudze Microsoft Defender alertów](investigate-alerts.md)
+- [Badanie pliku skojarzonego z alertem Ochrona punktu końcowego w usłudze Microsoft Defender pliku](investigate-files.md)
+- [Badanie urządzeń na liście Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia](investigate-machines.md)
+- [Badanie adresu IP skojarzonego z alertem Ochrona punktu końcowego w usłudze Microsoft Defender adresu IP](investigate-ip.md)
+- [Badanie domeny skojarzonej z alertem Ochrona punktu końcowego w usłudze Microsoft Defender domeny](investigate-domain.md)
+- [Badanie konta użytkownika w programie Ochrona punktu końcowego w usłudze Microsoft Defender](investigate-user.md)

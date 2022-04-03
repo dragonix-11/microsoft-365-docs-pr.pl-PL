@@ -22,12 +22,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b64cbc55a975ee02bd1bd5d41d30330e8729d4be
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0bd86f7ba05ce04743f547292105875f3b8234b1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329575"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499072"
 ---
 # <a name="the-action-center"></a>Centrum akcji
 
@@ -49,7 +49,7 @@ Ponieważ Centrum akcji udostępnia obszerny Microsoft 365 Defender w pracy, Tw�
 
 Ujednolicone Centrum akcji zawiera[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) listę oczekujących i ukończonych akcji naprawczych dla Twoich urządzeń, wiadomości e& zawartości współpracy i tożsamości w jednym miejscu.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Ujednolicone Centrum akcji w Microsoft 365 Defender portalu." lightbox="../../media/m3d-action-center-unified.png":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Ujednolicone Centrum akcji w portalu Microsoft 365 Defender akcji." lightbox="../../media/m3d-action-center-unified.png":::
 
 Przykład: 
 
@@ -57,12 +57,12 @@ Przykład:
 - Jeśli korzystano z Centrum akcji w centrum Centrum zabezpieczeń usługi Microsoft Defender ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)), wypróbuj ujednolicone Centrum akcji w portalu Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">akcji</a>.
 - Jeśli korzystasz już z portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, zobaczysz kilka ulepszeń w Centrum akcji ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)).
 
-Ujednolicone Centrum akcji łączy działania naprawcze w usługach Defender for Endpoint i Defender for Office 365. Definiuje on język wspólny dla wszystkich działań naprawczych i zapewnia ujednolicone środowisko badania. Zespół operacyjny ds. zabezpieczeń ma "pojedyncze okienko szyb" do wyświetlania działań naprawczych i zarządzania nimi.  
+Ujednolicone Centrum akcji łączy działania naprawcze w usługach Defender for Endpoint i Ochrona usługi Office 365 w usłudze Defender. Definiuje on język wspólny dla wszystkich działań naprawczych i zapewnia ujednolicone środowisko badania. Zespół operacyjny ds. zabezpieczeń ma "pojedyncze okienko szyb" do wyświetlania działań naprawczych i zarządzania nimi.  
 
 Ujednoliconego Centrum akcji możesz używać, jeśli masz odpowiednie uprawnienia i co najmniej jedną z następujących subskrypcji:
 
-- [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/microsoft-defender-endpoint.md)
+- [Ochrona usługi Office 365 w usłudze Defender](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
@@ -115,12 +115,12 @@ Oprócz działań naprawczych, które są podejmowane automatycznie w wyniku zau
 |:-----|:---|
 | **Ręczna akcja urządzenia** | Czynność podejmowane ręcznie na urządzeniu. Przykłady obejmują [izolacji urządzenia](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) lub [kwarantannę pliku](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files). |
 | **Ręczna akcja wiadomości e-mail** | Czynność podejmowane ręcznie na wiadomości e-mail. Przykład obejmuje "miękkie usunięcie" wiadomości e-mail lub [rozwiązywanie problemów z wiadomością](../office-365-security/remediate-malicious-email-delivered-office-365.md). |
-| **Automatyczna akcja urządzenia** | Zautomatyzowane działanie podejmowane w encji, takiej jak plik lub proces. Przykłady zautomatyzowanych akcji to wysłanie pliku do kwarantanny, zatrzymanie procesu i usunięcie klucza rejestru. (Zobacz [Działania naprawcze w programie Microsoft Defender dla punktu końcowego](../defender-endpoint/manage-auto-investigation.md#remediation-actions)). |
-| **Automatyczna akcja wiadomości e-mail** | Zautomatyzowane działanie podejmowane w związku z zawartością wiadomości e-mail, taką jak wiadomość e-mail, załącznik lub adres URL. Przykładami zautomatyzowanych akcji są miękkie usuwanie wiadomości e-mail, blokowanie adresów URL i wyłączanie zewnętrznego przesyłania dalej poczty. (Zobacz [Działania naprawcze w programie Microsoft Defender, aby uzyskać Office 365](../office-365-security/air-remediation-actions.md)). |
+| **Automatyczna akcja urządzenia** | Zautomatyzowane działanie podejmowane w encji, takiej jak plik lub proces. Przykłady zautomatyzowanych akcji to wysłanie pliku do kwarantanny, zatrzymanie procesu i usunięcie klucza rejestru. (Zobacz [Działania naprawcze w programie Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/manage-auto-investigation.md#remediation-actions)). |
+| **Automatyczna akcja wiadomości e-mail** | Zautomatyzowane działanie podejmowane w związku z zawartością wiadomości e-mail, taką jak wiadomość e-mail, załącznik lub adres URL. Przykładami zautomatyzowanych akcji są miękkie usuwanie wiadomości e-mail, blokowanie adresów URL i wyłączanie zewnętrznego przesyłania dalej poczty. (Zobacz [Działania naprawcze w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](../office-365-security/air-remediation-actions.md)). |
 | **Zaawansowana akcja łętwna** | Akcje wykonane na urządzeniach lub w wiadomości e-mail z [zaawansowanymi wyszukiwaniami](./advanced-hunting-overview.md). |
 | **Akcja Eksploratora** | Akcje podejmowane w przypadku zawartości wiadomości e-mail za pomocą [Eksploratora](../office-365-security/threat-explorer.md). |
 | **Ręczne działanie odpowiedzi na żywo** | Akcje wykonane na urządzeniu z [odpowiedzią na żywo](../defender-endpoint/live-response.md). Przykłady: usunięcie pliku, zatrzymanie procesu i usunięcie zaplanowanego zadania. |
-| **Akcja odpowiedzi na żywo** | Akcje wykonane na urządzeniu z interfejsami [API programu Microsoft Defender dla punktów końcowych](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis). Przykłady akcji to odizolowanie urządzenia, uruchamianie skanowania antywirusowego i uzyskiwanie informacji o pliku. |
+| **Akcja odpowiedzi na żywo** | Akcje wykonane na urządzeniu z Ochrona punktu końcowego w usłudze Microsoft Defender [API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis). Przykłady akcji to odizolowanie urządzenia, uruchamianie skanowania antywirusowego i uzyskiwanie informacji o pliku. |
 
 ## <a name="required-permissions-for-action-center-tasks"></a>Wymagane uprawnienia dla zadań Centrum akcji
 
@@ -128,8 +128,8 @@ Aby wykonywać zadania, takie jak zatwierdzanie lub odrzucanie akcji oczekujący
 
 |Działania naprawcze |Wymagane role i uprawnienia |
 |--|----|
-|Program Microsoft Defender w celu rozwiązywania problemów z punktami końcowymi (urządzenia) |**Rola administratora** zabezpieczeń przypisana w usłudze Azure Active Directory (Azure AD) ([https://portal.azure.com](https://portal.azure.com)) lub w centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- lub ---<br/>**Active remediation actions** role assigned in Microsoft Defender for Endpoint <br/> <br/> Aby dowiedzieć się więcej, zobacz następujące zasoby: <br/>- [Wbudowane role w usłudze Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Tworzenie ról w kontrolach dostępu opartych na rolach i zarządzanie nimi (Program Microsoft Defender dla punktu końcowego)](../defender-endpoint/user-roles.md)  |
-|Program Microsoft Defender na Office 365 działania naprawcze (Office zawartości i wiadomości e-mail)  |**Rola administratora** zabezpieczeń przypisana w usłudze Azure AD ([https://portal.azure.com](https://portal.azure.com)) lub w usłudze centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- i --- <br/>**Rola wyszukiwania i przeczyszczania** przypisana w Centrum zgodności & zabezpieczeń ([https://protection.office.com](https://protection.office.com)) <br/><br/>**WAŻNE**: Jeśli masz przypisaną rolę **Administratora** zabezpieczeń tylko w Centrum zgodności usługi Office 365 Security & ([https://protection.office.com](https://protection.office.com)), nie będziesz mieć dostępu do Centrum akcji ani funkcji Microsoft 365 Defender zabezpieczeń. Musisz mieć przypisaną **rolę Administratora** zabezpieczeń w usłudze Azure AD lub centrum administracyjne platformy Microsoft 365. <br/><br/>Aby dowiedzieć się więcej, zobacz następujące zasoby: <br/>- [Wbudowane role w usłudze Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Uprawnienia w Centrum & zgodności](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Ochrona punktu końcowego w usłudze Microsoft Defender działania naprawcze (urządzenia) |**Rola administratora** zabezpieczeń przypisana w usłudze Azure Active Directory (Azure AD) ([https://portal.azure.com](https://portal.azure.com)) lub usłudze Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- lub ---<br/>**Rola aktywnej akcji naprawczych** przypisana w programie Ochrona punktu końcowego w usłudze Microsoft Defender <br/> <br/> Aby dowiedzieć się więcej, zobacz następujące zasoby: <br/>- [Wbudowane role w usłudze Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Tworzenie ról w kontrolach dostępu opartych na rolach i zarządzanie nimi (Ochrona punktu końcowego w usłudze Microsoft Defender)](../defender-endpoint/user-roles.md)  |
+|Ochrona usługi Office 365 w usłudze Microsoft Defender dotyczące rozwiązywania problemów (Office zawartości i wiadomości e-mail)  |**Rola administratora** zabezpieczeń przypisana w usłudze Azure AD ([https://portal.azure.com](https://portal.azure.com)) lub w usłudze Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- i --- <br/>**Rola wyszukiwania i przeczyszczania** przypisana w Centrum zgodności & zabezpieczeń ([https://protection.office.com](https://protection.office.com)) <br/><br/>**WAŻNE**: Jeśli masz przypisaną rolę **Administratora** zabezpieczeń tylko w Centrum zgodności usługi Office 365 Security & ([https://protection.office.com](https://protection.office.com)), nie będziesz mieć dostępu do Centrum akcji ani funkcji Microsoft 365 Defender zabezpieczeń. Musisz mieć przypisaną **rolę Administratora** zabezpieczeń w usłudze Azure AD lub Centrum administracyjne platformy Microsoft 365. <br/><br/>Aby dowiedzieć się więcej, zobacz następujące zasoby: <br/>- [Wbudowane role w usłudze Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Uprawnienia w Centrum & zgodności](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Użytkownicy z przypisaną **rolą administratora globalnego** w usłudze Azure AD mogą zatwierdzić lub odrzucić wszystkie oczekujące akcje w Centrum akcji. Najlepszym rozwiązaniem jest jednak ograniczenie liczby osób z przypisaną rolą **administratora** globalnego. Zalecamy używanie ról **Administrator** **zabezpieczeń, Aktywne** działania naprawcze oraz Ról wyszukiwania i  przeczyszczania wymienionych w poprzedniej tabeli dla uprawnień Centrum akcji.

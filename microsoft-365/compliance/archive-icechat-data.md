@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik w celu importowania i archiwizowania danych z narzędzia CZAT ICE do Microsoft 365. Dzięki temu można archiwizować dane ze źródeł danych innych firm w programie Microsoft 365, aby zarządzać danymi innych firm przy użyciu funkcji zgodności, takich jak archiwizacja ze względu na przepisy prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: c340cbb65d7efaa5cbc14ca977879c09b585031a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c29a39c8c398a0d8721931cbcb770aa18d0f3c4b
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324889"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568099"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Konfigurowanie łącznika do archiwizowania danych czatu ICE
 
@@ -121,14 +121,20 @@ Ostatnim krokiem jest utworzenie łącznika ICE Chat w Centrum zgodności platfo
 
 7. Po pomyślnym weryfikacji połączenia kliknij przycisk **Dalej**.
 
-8. Na stronie **Mapowanie użytkowników zewnętrznych Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i zapewnij niestandardowe mapowanie użytkowników zgodnie z wymaganiami. Na tej stronie możesz pobrać kopię pliku CSV mapowania użytkowników. Możesz dodać mapowania użytkowników do pliku, a następnie przekazać go.
+8. Na stronie **Definiowanie** użytkownika określ użytkowników, dla których mają być importowane dane.
+
+     - **Wszyscy użytkownicy w Organizacji**. Zaznacz tę opcję, aby zaimportować dane wszystkich użytkowników.
+
+     - **Tylko użytkownicy, którzy mają zawieszenie w postępowaniem sądowym**. Zaznacz tę opcję, aby importować dane tylko tych użytkowników, których skrzynki pocztowe są umieszczone w związku z postępowaniem sądowym. Ta opcja powoduje importowanie danych do skrzynek pocztowych użytkowników, dla których właściwość LitigationHoldEnabled ma wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie postępowania w związku z postępowaniem sądowym](create-a-litigation-hold.md).
+
+9. Na stronie **Mapowanie użytkowników zewnętrznych Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i zapewnij niestandardowe mapowanie użytkowników zgodnie z wymaganiami. Na tej stronie możesz pobrać kopię pliku CSV mapowania użytkowników. Możesz dodać mapowania użytkowników do pliku, a następnie przekazać go.
 
    > [!NOTE]
    > Jak wyjaśniono wcześniej, plik CSV niestandardowego mapowania zawiera identyfikator ICE Chat i Microsoft 365 adres skrzynki pocztowej dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe dla każdego elementu czatu, łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli użytkownik nie znajdzie prawidłowego użytkownika programu Microsoft 365 odpowiadającego identyfikatorowi imid czatu ICE, łącznik zaimportuje element do skrzynek pocztowych użytkowników określonych we właściwościach *SenderEmail* i *RecipientEmail* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 za pomocą automatycznego lub niestandardowego mapowania użytkowników, element nie zostanie zaimportowany.
 
-9. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+10. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
 
-10. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika.
+11. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika.
 
 ## <a name="set-up-a-connector-using-private-keys"></a>Konfigurowanie łącznika przy użyciu kluczy prywatnych
 
@@ -196,11 +202,17 @@ Po skonfigurowaniu witryny SFTP czatu ICE Chat następnym krokiem jest utworzeni
 
 7. Po pomyślnym weryfikacji połączenia kliknij przycisk **Dalej**.
 
-8. Na stronie **Mapowanie użytkowników czatu ICE do Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i w razie potrzeby udostępnij niestandardowe mapowanie użytkowników.
+8. Na stronie **Definiowanie** użytkownika określ użytkowników, dla których mają być importowane dane.
+
+     - **Wszyscy użytkownicy w Organizacji**. Zaznacz tę opcję, aby zaimportować dane wszystkich użytkowników.
+
+     - **Tylko użytkownicy, którzy mają zawieszenie w postępowaniem sądowym**. Zaznacz tę opcję, aby importować dane tylko tych użytkowników, których skrzynki pocztowe są umieszczone w związku z postępowaniem sądowym. Ta opcja powoduje importowanie danych do skrzynek pocztowych użytkowników, dla których właściwość LitigationHoldEnabled ma wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie postępowania w związku z postępowaniem sądowym](create-a-litigation-hold.md).
+
+9. Na stronie **Mapowanie użytkowników czatu ICE do Microsoft 365 użytkowników** włącz automatyczne mapowanie użytkowników i w razie potrzeby udostępnij niestandardowe mapowanie użytkowników.
 
    > [!NOTE]
    > Jak wyjaśniono wcześniej, plik CSV niestandardowego mapowania zawiera identyfikator ICE Chat i Microsoft 365 adres skrzynki pocztowej dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe dla każdego elementu czatu, łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli użytkownik nie znajdzie prawidłowego użytkownika programu Microsoft 365 odpowiadającego identyfikatorowi imid czatu ICE, łącznik zaimportuje element do skrzynek pocztowych użytkowników określonych we właściwościach *SenderEmail* i *RecipientEmail* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 za pomocą automatycznego lub niestandardowego mapowania użytkowników, element nie zostanie zaimportowany.
 
-9. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+10. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
 
-10. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika. Kliknij łącznik, aby wyświetlić stronę wysuwu zawierającą informacje o łączniku.
+11. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika. Kliknij łącznik, aby wyświetlić stronę wysuwu zawierającą informacje o łączniku.

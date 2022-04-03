@@ -15,12 +15,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: e47783d2308ca4b94360dd4fa06341d18f8973bb
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
+ms.openlocfilehash: 61e98e18466992a0463aa1f97ce2527b943f8abd
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "63004953"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498676"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft Threat Experts omówienie Microsoft 365 aplikacji
 
@@ -41,9 +44,9 @@ Microsoft Threat Experts — funkcja Eksperci na żądanie pozwala uzyskać pora
 > [!IMPORTANT]
 > Przed zastosowaniem, upewnij się, że są omawiane wymagania dotyczące uprawnień do programu Microsoft Threat Experts — ukierunkowanych powiadomień o atakach z dostawcą usług technicznych firmy Microsoft i zespołem konta.
 
-Jeśli masz już program Microsoft Defender for Endpoint i Microsoft 365 Defender, możesz złożyć wniosek o Microsoft Threat Experts — powiadomienia o atakach kierowane za pośrednictwem ich Microsoft 365 Defender sieci Web. Przejdź do **Ustawienia > końcowych > ogólne > zaawansowane funkcje > Microsoft Threat Experts —** powiadomienia o atakach kierowane i wybierz **pozycję Zastosuj**. Zobacz [Konfigurowanie Microsoft Threat Experts,](./configure-microsoft-threat-experts.md) aby uzyskać pełny opis.
+Jeśli masz już wszystkie Ochrona punktu końcowego w usłudze Microsoft Defender i Microsoft 365 Defender, możesz zastosować do Microsoft Threat Experts — powiadomienia o atakach kierowane za pośrednictwem ich Microsoft 365 Defender portalu. Przejdź do **Ustawienia > końcowych > ogólne > zaawansowane funkcje > Microsoft Threat Experts —** powiadomienia o atakach kierowane i wybierz **pozycję Zastosuj**. Zobacz [Konfigurowanie Microsoft Threat Experts,](./configure-microsoft-threat-experts.md) aby uzyskać pełny opis.
 
-![Zrzut ekranu przedstawiający stronę aplikacji MTE.](../../media/mte/mte-collaboratewithmte.png)
+:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Opcja Funkcje zaawansowane w okienku nawigacji po lewej stronie Punkty końcowe w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 Po zatwierdzeniu aplikacji otrzymasz powiadomienie o ukierunkowanych atakach, gdy ekspert ds. zagrożeń wykryje zagrożenie dla Twojego środowiska.
 
@@ -71,22 +74,27 @@ Możesz również skontaktować się z ekspertami ds. zagrożeń firmy Microsoft
 Opcja **Skonsultuj się z ekspertem** ds. zagrożeń jest dostępna w kilku miejscach w portalu:
 
 - <i>**Menu Akcje strony urządzenia**</i><BR>
-![Zrzut ekranu przedstawiający opcję menu MTE-EOD w menu akcji strony urządzenie.](../../media/mte/device-actions-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="Opcja menu MTE-EOD w menu akcji strony Urządzenie w portalu Microsoft 365 Defender urządzenia" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
 
 - <i>**Menu wysuwu strony spisu urządzeń**</i><BR>
-![Zrzut ekranu przedstawiający opcję menu MTE-EOD na stronie spisu urządzeń.](../../media/mte/device-inventory-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="Opcja menu MTE-EOD na stronie Spis urządzeń w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
 
 - <i>**Menu wysuwu strony Alerty**</i><BR>
-![Zrzut ekranu przedstawiający opcję menu MTE-EOD na stronie alertu.](../../media/mte/alerts-actions-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="Opcja menu MTE-EOD na stronie Alerty w Microsoft 365 Defender sieci Web" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
 
 - <i>**Menu akcji strony Zdarzenia**</i><BR>
-![Zrzut ekranu przedstawiający opcję menu MTE-EOD na stronie zdarzeń.](../../media/mte/incidents-action-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Opcja menu MTE-EOD na stronie Zdarzenia w portalu Microsoft 365 Defender w sieci Web" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
 
 - <i>**Strona spisu zdarzeń**</i><BR>
-![Zrzut ekranu przedstawiający opcję menu MTE-EOD na stronie spisu zdarzeń.](../../media/mte/incidents-inventory-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="Opcja menu MTE-EOD na stronie spisu zdarzeń w portalu Microsoft 365 Defender w sieci Web" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
 
 > [!NOTE]
-> Jeśli masz subskrypcję pomocy technicznej Premier zamapową na licencję usługi Microsoft Defender for Office 365, możesz śledzić stan spraw ekspertów na żądanie za pomocą Centrum usług Firmy Microsoft.
+> Jeśli masz subskrypcję pomocy technicznej Premier zamaponą na Ochrona usługi Office 365 w usłudze Microsoft Defender usługi, możesz śledzić stan spraw ekspertów na żądanie za pomocą Centrum usług Microsoft.
 
 Ten klip wideo zawiera krótkie omówienie Centrum usług firmy Microsoft.
 

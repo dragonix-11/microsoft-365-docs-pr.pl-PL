@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 16654281adf5ca6f31ea2d29aab3387d39424cb1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3034c6020c3d7d04164e37beb1c1186e9aa30958
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325939"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499116"
 ---
 # <a name="responding-to-your-first-incident"></a>Odpowiadanie na pierwsze zdarzenie
 
@@ -52,7 +52,7 @@ Zdarzenia w Microsoft 365 Defender są logicznym punktem wyjścia do analizy i r
 
 ## <a name="next-step"></a>Następny krok
 
-[![Przygotuj swoją organizację i Microsoft 365 dzierżawę.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="Opcja Remediate (Rozwiązywanie problemów) na stronie Odpowiadanie na pierwsze zdarzenie" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
 Upewnij się, że Twoja organizacja i Microsoft 365 są przygotowane [do obsługi zdarzeń](first-incident-prepare.md).
 
@@ -64,9 +64,9 @@ Wskazówki dotyczące reagowania na incydenty dotyczące Microsoft 365 Defender:
 - [Badanie zdarzeń](investigate-incidents.md)
 - [Zarządzanie zdarzeniami](manage-incidents.md)
 
-Dodatkowe przykłady odpowiedzi na pierwsze zdarzenia:
+Więcej przykładów odpowiedzi na pierwsze zdarzenie:
 
-- [Wiadomość e-mail wyłudzająca](first-incident-path-phishing.md)
+- [Poczta e-mail wyłudzająca informacje](first-incident-path-phishing.md)
 - [Ataki bazowe tożsamości](first-incident-path-identity.md)
 
 [Szczegółowe podręczniki reagowania na incydenty](/security/compass/incident-response-playbooks)

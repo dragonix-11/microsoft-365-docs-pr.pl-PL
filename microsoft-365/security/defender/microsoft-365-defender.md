@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 28f50cbd362104ba910ed5560e184036fc7f8703
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 15f4d179d3bc5590e014a15622e462932e8dea7c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754640"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498720"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -49,10 +49,10 @@ Microsoft 365 Defender to ujednolicony pakiet ochrony przed naruszeniem i po nar
 Dzięki zintegrowanemu rozwiązaniu Microsoft 365 Defender pracownicy bezpieczeństwa mogą się ze sobą schować sygnalizuje zagrożenia, które otrzymuje każdy z tych produktów, i określają pełny zakres i wpływ zagrożenia, sposób jego wprowadzeniu do środowiska, jaki ma wpływ na organizację i w jaki sposób wpływa on obecnie na organizację. Microsoft 365 Defender automatycznie podejmuje działania w celu zapobiegania atakom i samodzielnej obsługi skrzynek pocztowych, punktów końcowych i tożsamości użytkowników, których to dotyczy.
 
 <center><h2>Usługi Microsoft 365 Defender</center></h2>
-<table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Program Microsoft Defender dla punktu końcowego</b></center></a></td>
-<td><center><b><a href="/microsoft-365/security/office-365-security/overview"><b>Usługa Microsoft Defender dla Office 365</b></center></a></td>
+<table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Ochrona punktu końcowego w usłudze Microsoft Defender</b></center></a></td>
+<td><center><b><a href="/microsoft-365/security/office-365-security/overview"><b>Ochrona usługi Office 365 w usłudze Microsoft Defender</b></center></a></td>
 <td><center><b><a href="/defender-for-identity/"><b>Microsoft Defender for Identity</b></a></center></td>
-<td><center><b><a href="/cloud-app-security/"><b>Usługa Microsoft Defender dla aplikacji w chmurze</b></a></center></td>
+<td><center><b><a href="/cloud-app-security/"><b>Microsoft Defender for Cloud Apps</b></a></center></td>
 </tr>
 </table>
 <br>
@@ -68,9 +68,9 @@ W tym interakcyjny przewodniku dowiesz się, jak chronić organizację za pomoc�
 Microsoft 365 Defender chronią usługi:
 
 - **Punkty końcowe z usługą Defender for Endpoint** — Defender for Endpoint to ujednolicona platforma punktów końcowych do zapobiegania wykrywaniu naruszenia, wykrywania po naruszeniu, automatycznego badania i reagowania.
-- **Poczta e-mail** i współpraca za pomocą usługi Defender Office 365 — Defender dla programu Office 365 chroni organizację przed złośliwymi zagrożeniami ze strony wiadomości e-mail, linków (adresów URL) i narzędzi do współpracy.
-- Tożsamości z **usługą Defender for Identity i usługą Azure Active Directory (Azure AD) Identity Protection** — usługa Defender dla tożsamości używa sygnałów lokalnych Usługi domenowe w usłudze Active Directory (AD DS) do identyfikowania, wykrywania i badanie zaawansowanych zagrożeń, naruszonych tożsamości i złośliwych działań w ramach niejawnego programu testów skierowanych do organizacji. Usługa Azure AD Identity Protection automatycznie wykrywa i rekultywuje zagrożenia oparte na tożsamości w opartym na chmurze usłudze Azure AD.
-- **Aplikacje z programem Microsoft Defender for Cloud Apps** — Program Microsoft Defender for Cloud Apps to kompleksowe rozwiązanie typu cross-SaaS, które zapewnia pełną widoczność, silne mechanizmy kontroli danych i ulepszoną ochronę przed zagrożeniami w aplikacjach w chmurze.
+- **Poczta e-mail** i współpraca Ochrona usługi Office 365 w usłudze Defender — Ochrona usługi Office 365 w usłudze Defender chroni organizację przed złośliwymi zagrożeniami, które mogą być wyświetlane przez wiadomości e-mail, linki (adresy URL) i narzędzia do współpracy.
+- Tożsamości z **usługą Defender for Identity i usługą Azure Active Directory (Azure AD) Identity Protection** — usługa Defender for Identity używa sygnałów usługi domenowej lokalna usługa Active Directory (AD DS) do identyfikowania, wykrywania i badanie zaawansowanych zagrożeń, naruszonych tożsamości i złośliwych działań w ramach niejawnego programu testów skierowanych do organizacji. Usługa Azure AD Identity Protection automatycznie wykrywa i rekultywuje zagrożenia oparte na tożsamości w opartym na chmurze usłudze Azure AD.
+- **Aplikacje z Microsoft Defender for Cloud Apps** - Microsoft Defender for Cloud Apps to kompleksowe rozwiązanie między usługami SaaS, które zapewnia pełną widoczność, silne mechanizmy kontroli danych i ulepszoną ochronę przed zagrożeniami w aplikacjach w chmurze.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
 
@@ -83,15 +83,15 @@ Microsoft 365 Defender unikatowa warstwa między produktami rozszerza poszczegó
 
 Oto przykład skorelowania wszystkich powiązanych Microsoft 365 Defender w produktach w jedno zdarzenie.
 
-:::image type="content" source="../../media/overview-incident.png" alt-text="Przykład strony podglądu zdarzenia" lightbox="../../media/overview-incident.png":::
+:::image type="content" source="../../media/overview-incident.png" alt-text="Strona przeglądu zdarzeń" lightbox="../../media/overview-incident.png":::
 
 Oto przykład listy alertów pokrewnych dotyczących zdarzenia.
 
-:::image type="content" source="../../media/incident-list.png" alt-text="Przykład listy alertów dotyczących zdarzenia" lightbox="../../media/incident-list.png":::
+:::image type="content" source="../../media/incident-list.png" alt-text="Lista alertów dotyczących zdarzenia" lightbox="../../media/incident-list.png":::
 
 Oto przykład wyszukiwania na podstawie kwerendy na podstawie wiadomości e-mail i nieprzetworzonych danych dla punktu końcowego.
 
-:::image type="content" source="../../media/advanced-hunting.png" alt-text="Przykład zaawansowanego wyszukiwania i kwerendy" lightbox="../../media/advanced-hunting.png":::
+:::image type="content" source="../../media/advanced-hunting.png" alt-text=" Strona zaawansowanego wyszukiwania ze szczegółami zapytania" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender między produktami:
 
@@ -99,10 +99,10 @@ Microsoft 365 Defender między produktami:
 - **Kolejka** połączonych zdarzeń — aby ułatwić specjalistom zabezpieczeń skupienie się na tym, co najważniejsze, zapewniając pełny zakres ataków, zasoby objęte wpływem i automatyczne działania naprawcze są grupowane i publikowane w terminie. 
 - **Automatyczna odpowiedź na zagrożenia** — krytyczne informacje o zagrożeniach są udostępniane w czasie rzeczywistym między produktami Microsoft 365 Defender, aby ułatwić zatrzymanie postępu w ataków. 
 
-   Jeśli na przykład złośliwy plik zostanie wykryty w punkcie końcowym chronionym przez program Defender dla punktu końcowego, poinstruuje program Defender for Office 365, aby przeskanować i usunąć plik ze wszystkich wiadomości e-mail. Plik zostanie zablokowany na pierwszy rzut oka przez cały Microsoft 365 zabezpieczeń.
+   Jeśli na przykład złośliwy plik zostanie wykryty w punkcie końcowym chronionym przez program Defender for Endpoint, poinstruuje użytkownika Ochrona usługi Office 365 w usłudze Defender aby przeskanować i usunąć plik ze wszystkich wiadomości e-mail. Plik zostanie zablokowany na pierwszy rzut oka przez cały Microsoft 365 zabezpieczeń.
 
 - **Samodzielna pomoc w** przypadku naruszonych urządzeń, tożsamości użytkowników i skrzynek pocztowych — program Microsoft 365 Defender korzysta z automatycznych akcji i podręczników opartych na sieci AI do rozwiązywania problemów z zasobami, których to działanie ma wpływ, w bezpiecznym stanie. Microsoft 365 Defender wykorzystuje funkcje automatycznego rozwiązywania problemów związane z produktami pakietu, aby zapewnić, że wszystkie zasoby związane z incydentem, których dotyczy zdarzenie, będą w miarę możliwości automatycznie usuwane.
-- **Poszukiwania zagrożeń między** produktami — zespoły zabezpieczeń mogą wykorzystać ich unikatową wiedzę organizacyjną do wyszukiwania znaków naruszenia przez utworzenie własnych zapytań niestandardowych na nieprzetworzone dane zbierane przez różne produkty ochrony. Microsoft 365 Defender zapewnia oparty na zapytaniach dostęp do 30-dniowych historycznych nieprzetworzonych sygnałów i danych alertów w punkcie końcowym oraz do usługi Defender Office 365 danych.
+- **Poszukiwania zagrożeń między** produktami — zespoły zabezpieczeń mogą wykorzystać ich unikatową wiedzę organizacyjną do wyszukiwania znaków naruszenia przez utworzenie własnych zapytań niestandardowych na nieprzetworzone dane zbierane przez różne produkty ochrony. Microsoft 365 Defender zapewnia oparty na zapytaniach dostęp do 30-dniowych historycznych nieprzetworzonych sygnałów i danych alertów dla różnych punktów końcowych Ochrona usługi Office 365 w usłudze Defender danych.
 
 ## <a name="get-started"></a>Wprowadzenie
 
@@ -117,10 +117,10 @@ Portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blan
 
 To jedno okienko zeszytego zawiera funkcje istniejących portali zabezpieczeń firmy Microsoft, takich jak portal Microsoft 365 Defender i centrum zabezpieczeń Office 365 & zgodności. W portalu Microsoft 365 Defender się szybki dostęp do informacji, prostsze układy i połączenie powiązanych informacji w celu łatwiejszego korzystania z nich. Oto co obejmuje:
 
-- **[Program Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 ułatwia organizacjom zabezpieczanie przedsiębiorstwa za pomocą zestawu funkcji zapobiegania, wykrywania, badań i łowiectw w celu ochrony poczty e-mail Office 365 zasobów.
-- **[Program Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** zapewnia ochronę zapobiegawną, wykrywanie po naruszeniu zabezpieczeń, zautomatyzowane badanie i reagowanie na urządzenia w Twojej organizacji.
+- **[Ochrona usługi Office 365 w usłudze Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)** Ochrona usługi Office 365 w usłudze Microsoft Defender przedsiębiorstwa dzięki zestawowi funkcji zapobiegania, wykrywania, badań i łęki w celu ochrony poczty e-mail oraz Office 365 zasobów.
+- **[Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** zapewnia ochronę zapobiegawną, wykrywanie po naruszeniu zabezpieczeń, zautomatyzowane badanie i reagowanie na urządzenia w Twojej organizacji.
 - **[Microsoft 365 Defender](microsoft-365-defender.md)** jest częścią rozwiązania firmy Microsoft w zakresie rozszerzonego wykrywania i odpowiedzi (XDR, *Extended Detection and Response*), które wykorzystuje portfel zabezpieczeń usługi Microsoft 365 do automatycznego analizowania danych zagrożeń w różnych domenach oraz tworzenia obrazu ataków na jednym pulpicie nawigacyjnym.
-- **[Usługa Microsoft Defender for Cloud Apps](/cloud-app-security/)** to kompleksowe rozwiązanie między usługami SaaS i PaaS, które zapewnia pełną widoczność, silne mechanizmy kontroli danych i ulepszoną ochronę przed zagrożeniami w aplikacjach w chmurze.
+- **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** to kompleksowe rozwiązanie między usługami SaaS i PaaS, które zapewnia pełną widoczność, silne kontrolki danych i ulepszoną ochronę przed zagrożeniami w aplikacjach w chmurze.
 
 Jeśli potrzebujesz informacji o tym, co się zmieniło w Centrum zgodności Office 365 Security & lub portalu Microsoft 365 Defender, zobacz:
 
@@ -128,11 +128,11 @@ Jeśli potrzebujesz informacji o tym, co się zmieniło w Centrum zgodności Off
 - [Ochrona punktu końcowego w usłudze Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 
 > [!NOTE]
-> Portal Microsoft 365 Defender używa i wymusza dostęp oparty na rolach oraz przenosi każdy model zabezpieczeń do ujednoliconego portalu. Każde obciążenie pracą zbiega się z własnym dostępem opartym na rolach. Role już dostępne w tych produktach zostaną automatycznie zbiegły się w portalu Microsoft 365 Defender produktu. Jednak usługa Microsoft Defender dla aplikacji w chmurze nadal będzie obsługiwać własne role i uprawnienia.
+> Portal Microsoft 365 Defender używa i wymusza dostęp oparty na rolach oraz przenosi każdy model zabezpieczeń do ujednoliconego portalu. Każde obciążenie pracą zbiega się z własnym dostępem opartym na rolach. Role już dostępne w tych produktach zostaną automatycznie zbiegły się w portalu Microsoft 365 Defender produktu. Jednak Microsoft Defender for Cloud Apps nadal będą obsługiwać własne role i uprawnienia.
 
 ### <a name="what-to-expect"></a>Czego można się spodziewać
 
-Całą zawartość zabezpieczeń używaną w Centrum zgodności Office 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Security & i</a> Centrum zabezpieczeń Microsoft 365 można teraz znaleźć w portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender zabezpieczeń</a>.
+Całą zawartość zabezpieczeń używaną w Centrum zgodności Office 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">zabezpieczeń</a> & i centrum zgodności Centrum zabezpieczeń platformy Microsoft 365 można teraz znaleźć w portalu Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">zabezpieczeń</a>.
 
 Portal Microsoft 365 Defender pomaga zespołom zabezpieczeń badać ataki i reagować na nie, łącząc sygnały z różnych obciążeń w zestaw ujednoliconych funkcji dla:
 
@@ -141,7 +141,7 @@ Portal Microsoft 365 Defender pomaga zespołom zabezpieczeń badać ataki i reag
 - Centrum akcji
 - Analiza zagrożeń
 
-Microsoft 365 Defender *celu większej* przejrzystości i wspólnych celów, ponieważ łączy program Microsoft Defender for Office 365 usługę Microsoft Defender for Endpoint. Ta korespondencja seryjna została oparta na priorytetach wymienionych poniżej i została wykonana bez poświęcania możliwości, które każdy pakiet zabezpieczeń połączył w kombinacji:
+Microsoft 365 Defender kładą nacisk *na to, co* się łączy, ale także przejrzystość i wspólne cele, Ochrona usługi Office 365 w usłudze Microsoft Defender Ochrona punktu końcowego w usłudze Microsoft Defender. Ta korespondencja seryjna została oparta na priorytetach wymienionych poniżej i została wykonana bez poświęcania możliwości, które każdy pakiet zabezpieczeń połączył w kombinacji:
 
 - Typowe bloki konstrukcyjne
 - Wspólna terminologia
@@ -149,19 +149,19 @@ Microsoft 365 Defender *celu większej* przejrzystości i wspólnych celów, pon
 - Parowalność funkcji z innymi obciążeniami pracą
 
 > [!NOTE]
-> Portal Microsoft 365 Defender jest dostępny bez konieczności kroków migracji i zakupu nowej licencji przez klientów. Ten nowy portal jest na przykład dostępny dla administratorów z subskrypcją E3, podobnie jak dla administratorów korzystających z programu Microsoft Defender dla usług Office 365 Plan 1 i Plan 2. Natomiast klienci korzystający z usług Exchange Online Protection i Defender dla usługi Office 365 Plan 1 widzą tylko funkcje zabezpieczeń, które są przez nich udostępniane w ramach licencji subskrypcji. Portal ma na celu scentralizowanie zabezpieczeń.
+> Portal Microsoft 365 Defender jest dostępny bez konieczności kroków migracji i zakupu nowej licencji przez klientów. Ten nowy portal jest na przykład dostępny dla administratorów z subskrypcją E3, podobnie jak dla administratorów z planem Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1 i Plan 2, ale Exchange Online Protection, lub Ochrona usługi Office 365 w usłudze Defender Plan 1 widzą tylko funkcje zabezpieczeń, które są przez nich wspierane przez licencję subskrypcji. Portal ma na celu scentralizowanie zabezpieczeń.
 
 ### <a name="unified-investigations"></a>Ujednolicone badania
 
 Scentralizowane informacje zabezpieczające to jedno miejsce do badania zdarzeń dotyczących zabezpieczeń w różnych Microsoft 365. Podstawowym przykładem są **zdarzenia w** obszarze **zdarzenia & alerty** dotyczące szybkiego uruchamiania aplikacji Microsoft 365 Defender.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Przykład strony Zdarzenia w programie Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Strona Zdarzenia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/converged-incidents-2.png.png":::
 
 Wybranie nazwy zdarzenia powoduje wyświetlenie strony, która pokazuje wartość scentralizowania informacji dotyczących zabezpieczeń.
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Przykład strony Podsumowanie zdarzenia w programie Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Strona podsumowania dla zdarzenia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/converged-incident-info-3.png":::
 
-U góry strony zdarzenia zobaczysz karty **Podsumowanie, Alerty**, **Urządzenia, Użytkownicy**, Skrzynki **pocztowe, Badania****, Dowód** i odpowiedź oraz **Graph skrzynki** odbiorcze.  Wybierz te karty, aby uzyskać bardziej szczegółowe informacje. Na przykład na karcie  Użytkownicy są wyświetlane informacje dotyczące użytkowników z obciążeń zbiegających się (Microsoft Defender for Endpoint, Microsoft Defender for Identity i Microsoft Defender dla aplikacji w chmurze) oraz zakres źródeł, takich jak lokalne programy Usługi domenowe w usłudze Active Directory (AD DS), Azure AD i innych dostawców tożsamości. Aby uzyskać więcej informacji, zobacz [Badanie użytkowników](investigate-users.md).
+U góry strony zdarzenia zobaczysz karty **Podsumowanie, Alerty**, **Urządzenia, Użytkownicy**, Skrzynki **pocztowe, Badania****, Dowód** i odpowiedź oraz **Graph skrzynki** odbiorcze.  Wybierz te karty, aby uzyskać bardziej szczegółowe informacje. Na przykład **na karcie Użytkownicy** są wyświetlane informacje o użytkownikach z zbieżnych obciążeń (Ochrona punktu końcowego w usłudze Microsoft Defender, Microsoft Defender for Identity i Microsoft Defender for Cloud Apps) oraz zakres źródeł, takich jak usługi lokalna usługa Active Directory domenowe (AD DS), usługa Azure AD i dostawcy tożsamości innych firm. Aby uzyskać więcej informacji, zobacz [Badanie użytkowników](investigate-users.md).
 
 Poeksymaj czas, aby przejrzeć zdarzenia w środowisku, przejść do szczegółów tych kart i przećwiczyć budowanie zrozumienia sposobu uzyskiwania dostępu do informacji dotyczących zdarzeń związanych z różnymi rodzajami zagrożeń.
 
@@ -173,19 +173,19 @@ Typowe kontrolki i zawartość występują w tym samym miejscu lub są zagęszcz
 
 #### <a name="unified-settings"></a>Ujednolicone ustawienia
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="Strona Ustawień w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="Strona Ustawienia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/converged-add-role-9.png":::
 
 #### <a name="permissions--roles"></a>Uprawnienia & ról
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="Strona & uprawnień z wyświetloną rolami punktów końcowych w &, Role i Grupy urządzeń" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/converged-roles-5.png" alt-text="Role punktów końcowych w & wyświetlanymi na stronie Uprawnienia & użytkowników" lightbox="../../media/converged-roles-5.png":::
 
-Dostęp do Microsoft 365 Defender jest skonfigurowany przy użyciu ról globalnych usługi Azure AD lub przy użyciu ról niestandardowych. Aby uzyskać informacje na temat programu Defender dla punktu końcowego, zobacz Przypisywanie dostępu użytkownika [do Microsoft 365 Defender sieci Web](/microsoft-365/security/defender-endpoint/assign-portal-access). W przypadku usługi Defender Office 365 zobacz Uprawnienia w [Centrum zgodności platformy Microsoft 365 i Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
+Dostęp do Microsoft 365 Defender jest skonfigurowany przy użyciu ról globalnych usługi Azure AD lub przy użyciu ról niestandardowych. Aby uzyskać informacje na temat programu Defender dla punktu końcowego, zobacz Przypisywanie dostępu użytkownika [do Microsoft 365 Defender sieci Web](/microsoft-365/security/defender-endpoint/assign-portal-access). Aby Ochrona usługi Office 365 w usłudze Defender, zobacz [Uprawnienia w Centrum zgodności platformy Microsoft 365 i Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
 - Dowiedz się więcej o tym[, jak zarządzać dostępem do Microsoft 365 Defender](m365d-permissions.md)
 - Dowiedz się więcej na temat [tworzenia niestandardowych ról w programie](custom-roles.md) Microsoft 365 Defender
 
 > [!NOTE]
-> Program Microsoft Defender for Endpoint w programie Microsoft 365 Defender obsługuje udzielanie dostępu do zarządzanych dostawców usług zabezpieczeń [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) w taki sam sposób, jak dostęp w portalu [Microsoft 365 Defender.](./mssp-access.md)
+> Ochrona punktu końcowego w usłudze Microsoft Defender w Microsoft 365 Defender obsługuje udzielanie dostępu do zarządzanych dostawców usług zabezpieczeń [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) w ten sam sposób, w jaki dostęp jest udzielany w portalu [Microsoft 365 Defender zabezpieczeń](./mssp-access.md).
 
 #### <a name="integrated-reports"></a>Zintegrowane raporty
 
@@ -202,7 +202,7 @@ Karty można podzielone na następujące kategorie:
 - **Tożsamości —** monitoruj tożsamości w organizacji i śledź podejrzane lub ryzykowne zachowania. [Dowiedz się więcej o ochronie tożsamości](/azure/active-directory/identity-protection/overview-identity-protection).
 - **Dane** — ułatwiają śledzenie działań użytkowników, które mogą prowadzić do nieautoryzowanego ujawnienia danych.
 - **Urządzenia** — uzyskaj aktualne informacje na temat alertów, działań związanych z naruszeniem zabezpieczeń i innych zagrożeń na Twoich urządzeniach.
-- **Aplikacje** — uzyskaj szczegółowe informacje na temat sposobu, w jaki aplikacje w chmurze są używane w Twojej organizacji. [Dowiedz się więcej o wykrytych aplikacjach w usłudze Defender dla aplikacji w chmurze](/cloud-app-security/discovered-apps).
+- **Aplikacje** — uzyskaj szczegółowe informacje na temat sposobu, w jaki aplikacje w chmurze są używane w Twojej organizacji. [Dowiedz się więcej o wykrytych aplikacjach w Defender dla Chmury Aplikacje](/cloud-app-security/discovered-apps).
 
 
 #### <a name="search-across-entities-preview"></a>Wyszukiwanie w różnych jednostkach (wersja Preview)
@@ -214,7 +214,7 @@ Pasek wyszukiwania znajduje się w górnej części strony. Podczas wpisywania s
 W programie Defender można wyszukiwać w następujących jednostkach: Endpoint (Punkt końcowy) i Defender for Identity (Tożsamość): 
 
 - **Urządzenia** — obsługiwane zarówno dla usługi Defender for Endpoint, jak i Defender for Identity. Obsługa używania operatorów wyszukiwania. 
-- **Użytkownicy** — obsługiwana przez usługę Defender for Endpoint, Defender for Identity i Defender for Cloud Apps. 
+- **Użytkownicy** — obsługiwana przez usługę Defender dla punktów końcowych, usługi Defender dla tożsamości Defender dla Chmury aplikacji. 
 - **Pliki, adresy IP i adresy URL —** te same funkcje, które są dostępne w programie Defender for Endpoint.
 
     >[!NOTE]
@@ -232,9 +232,9 @@ W programie Defender można wyszukiwać w następujących jednostkach: Endpoint 
 
 Śledź wyłaniające się zagrożenia i odpowiadaj na nie, Microsoft 365 Defender środowisko zintegrowane analizy zagrożeń:
 
-- Lepsza ochrona danych między programem Microsoft Defender for Endpoint i programem Microsoft Defender for Office 365, co umożliwia połączone zarządzanie zdarzeniami, automatyczne badanie, rozwiązywanie problemów oraz aktywne lub reakcyjne pochylenie przed zagrożeniami w całej domenie.
-- Wykrywanie i środki zaradcze związane z pocztą e-mail z programu Microsoft Defender Office 365 dla programu Office 365, oprócz danych punktu końcowego dostępnych już w programie Microsoft Defender dla punktu końcowego.
-- Widok zdarzeń związanych z zagrożeniami, które agregują alerty w całej historii ataków dotyczących usługi Microsoft Defender dla punktu końcowego i usługi Microsoft Defender dla programu Office 365 w celu zmniejszenia kolejki pracy, a także uproszczenia i przyspieszenia badania.
+- Lepsza ochrona danych między Ochrona punktu końcowego w usłudze Microsoft Defender i Ochrona usługi Office 365 w usłudze Microsoft Defender, zarządzanie połączonymi zdarzeniami, automatyczne badanie, rozwiązywanie problemów oraz aktywne lub reakcyjne pochylenie w związku z zagrożeniami w całej domenie.
+- Wykrywanie i środki zaradcze związane z pocztą e-mail Ochrona usługi Office 365 w usłudze Microsoft Defender, oprócz danych punktu końcowego już dostępnych z Ochrona punktu końcowego w usłudze Microsoft Defender.
+- Widok zdarzeń związanych z zagrożeniami, które agregują alerty w całej historii ataków w różnych programach Ochrona punktu końcowego w usłudze Microsoft Defender i Ochrona usługi Office 365 w usłudze Microsoft Defender w celu zmniejszenia kolejki pracy, a także upraszczają i przyspieszają .
 - Próby ataków wykrytych i zablokowanych przez Microsoft 365 Defender rozwiązania. Dostępne są również dane, które mogą być wykorzystywane do kierowania działań działań zapobiegawczych, które zawęgną ryzyko dalszego ekspozycji i zwiększają odporność.
 - Ulepszony projekt, który umieszcza w centrum uwagi informacje z możliwością działania, które ułatwiają szybkie identyfikowanie danych w celu pilnego skupienia się na tych danych, zbadania ich i wykorzystania w raportach.
 
@@ -242,14 +242,14 @@ W programie Defender można wyszukiwać w następujących jednostkach: Endpoint 
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> zawiera centrum szkoleniowe, które zawiera oficjalne wskazówki z zasobów, takich jak blog poświęcony zabezpieczeniach firmy Microsoft, społeczność zabezpieczeń Firmy Microsoft w serwisie YouTube i oficjalna dokumentacja w docs.microsoft.com.
 
-W centrum nauki wskazówki dotyczące współpracy za pomocą poczty e-mail & (Microsoft Defender dla systemu Office 365) są obok siebie z punktem końcowym (Program Microsoft Defender dla punktu końcowego) i Microsoft 365 Defender zasobów edukacyjnych.
+W centrum nauki wskazówki dotyczące współpracy &-mail (Ochrona usługi Office 365 w usłudze Microsoft Defender) są obok siebie z punktem końcowym (Ochrona punktu końcowego w usłudze Microsoft Defender) i Microsoft 365 Defender  materiały szkoleniowe.
 
-Zostanie otwarte centrum szkoleniowe z Edukacja tematami, takimi jak "Jak badać przy użyciu programu Microsoft 365 Defender?". oraz "Microsoft Defender for Office 365 Best Practices". Ta sekcja jest obecnie projektowana przez grupę produktów zabezpieczeń firmy Microsoft. Każda Edukacja ścieżka odzwierciedla prognozowany czas, który zajmuje na koncepcjach. Na przykład "Kroki do podjęcia, gdy usługa Microsoft Defender dla systemu Office 365 zostanie naruszona", jest przewidujena na 8 minut i jest cennym procesem uczenia się w czasie pracy.
+Zostanie otwarte centrum szkoleniowe z Edukacja tematami, takimi jak "Jak badać przy użyciu programu Microsoft 365 Defender?". i "Ochrona usługi Office 365 w usłudze Microsoft Defender". Ta sekcja jest obecnie projektowana przez grupę produktów zabezpieczeń firmy Microsoft. Każda Edukacja ścieżka odzwierciedla prognozowany czas, który zajmuje na koncepcjach. Na przykład w przypadku naruszenia Ochrona usługi Office 365 w usłudze Microsoft Defender konta użytkownika" przewiduje się, że zajmie to 8 minut i jest cennym procesem uczenia się na bieżąco.
 
 Po kliknięciu zawartości może być przydatne zakładkowanie tej witryny i organizowanie zakładek w folderze "Zabezpieczenia" lub "Krytyczne". Aby wyświetlić wszystkie Edukacja, kliknij link Pokaż wszystko w panelu głównym.
 
 > [!NOTE]
-> W **górnej części** centrum szkoleniowego programu Microsoft 365 Defender znajdują się pomocne filtry, które umożliwiają wybór produktów (obecnie jest Microsoft 365 Defender, Program Microsoft Defender dla punktów końcowych i program Microsoft Defender dla systemu Office 365). Zwróć uwagę, że na liście znajduje się liczba zasobów szkoleniowych dla każdej sekcji, co może ułatwić uczących się śledzenie liczby dostępnych zasobów do szkoleń i nauki.
+> W górnej **części centrum** szkoleniowego Microsoft 365 Defender dostępne są pomocne filtry, które umożliwiają wybór produktów (Microsoft 365 Defender, Ochrona punktu końcowego w usłudze Microsoft Defender i Ochrona usługi Office 365 w usłudze Microsoft Defender). Zwróć uwagę, że na liście znajduje się liczba zasobów szkoleniowych dla każdej sekcji, co może ułatwić uczących się śledzenie liczby dostępnych zasobów do szkoleń i nauki.
 >
 > Oprócz filtru Produktu są wymienione bieżące tematy, typy zasobów (od klipów wideo do seminariów internetowych), poziomy znajomości obszarów zabezpieczeń, ról zabezpieczeń i funkcji produktu.
 
@@ -300,5 +300,5 @@ Dzięki tej ścieżce nauki z witryny Microsoft Learn możesz zrozumieć, Micros
 ## <a name="see-also"></a>Zobacz też
 
 - [Co nowego w usłudze Microsoft 365 Defender](whats-new.md)
-- [Usługa Microsoft Defender dla Office 365 w programie Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
-- [Program Microsoft Defender dla punktu końcowego w programie Microsoft 365 Defender](microsoft-365-security-center-mde.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender w usłudze Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender w programie Microsoft 365 Defender](microsoft-365-security-center-mde.md)

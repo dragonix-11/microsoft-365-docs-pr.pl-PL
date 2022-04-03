@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie zdarzeniami programu Microsoft Defender dla punktu końcowego
+title: Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender zdarzeniami
 description: Zarządzaj zdarzeniami, przypisując je, aktualizując jego stan lub ustawiając jego klasyfikację.
 keywords: zdarzenia, zarządzanie, przypisywanie, stan, klasyfikacja, prawdziwy alert, alert fałsz
 search.product: eADQiWindows 10XVcnh
@@ -18,32 +18,31 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a84f7ba72acb4caf3e229f0bed4d997e123cc7ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011907"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466218"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Zarządzanie zdarzeniami programu Microsoft Defender dla punktu końcowego
+# <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender zdarzeniami
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Zarządzanie zdarzeniami to istotny element każdej operacji jego obsługi. Możesz zarządzać zdarzeniami, wybierając je w kolejce **Zdarzenia** lub **w okienku zarządzania Zdarzeniami**. 
 
 
 Wybranie zdarzenia w **kolejce Zdarzenia** otwiera okienko zarządzania zdarzeniami,  w którym można otworzyć stronę zdarzenia w celu jej szczegółowego otwarcia.
 
-
-![Obraz okienka zarządzania zdarzeniami.](images/atp-incidents-mgt-pane-updated.png)
+:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="Okienko zarządzania zdarzeniami" lightbox="images/atp-incidents-mgt-pane-updated.png":::
 
 Możesz przypisać do siebie zdarzenia, zmienić stan i klasyfikację, zmienić nazwę lub dodać komentarz do nich, aby śledzić ich postęp.
 
@@ -55,8 +54,7 @@ Możesz przypisać do siebie zdarzenia, zmienić stan i klasyfikację, zmienić 
 > Zdarzenia, które istniały przed rozpoczęciem automatycznego nazewnictwa zdarzeń, zachowają swoje nazwy.
 >
 
-
-![Obraz strony szczegółów zdarzenia.](images/atp-incident-details-updated.png)
+:::image type="content" source="images/atp-incident-details-updated.png" alt-text="Strona ze szczegółami zdarzenia" lightbox="images/atp-incident-details-updated.png":::
 
 ## <a name="assign-incidents"></a>Przypisywanie zdarzeń
 Jeśli zdarzenie nie zostało jeszcze przypisane, możesz wybrać pozycję **Przypisz** do mnie, aby przypisać zdarzenie do siebie. W ten sposób przyjmuje się, że właścicielem zdarzenia są nie tylko zdarzenia, ale także wszystkie skojarzone z nim alerty.

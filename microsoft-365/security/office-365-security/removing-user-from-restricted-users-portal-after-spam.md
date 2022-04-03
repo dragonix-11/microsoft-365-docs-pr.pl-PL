@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66b810f7bb6381d405ee7ffc0d6b1cf7a10f2bf2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c375d77c3aa64d996a8d8d2f8dce538829eaa3b2
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033025"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568319"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Usuwanie zablokowanych użytkowników z portalu Użytkownicy z ograniczeniami w programie Microsoft 365
 
@@ -34,16 +34,16 @@ ms.locfileid: "63033025"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Jeśli użytkownik przekroczy jedną z limitów wysyłania połączeń wychodzących określonych w [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) limitach usług lub zasadach spamu wychodzącego[, użytkownikowi](configure-the-outbound-spam-policy.md) zostanie ograniczone ograniczenie dotyczące wysyłania wiadomości e-mail, ale nadal może on odbierać wiadomości e-mail.
 
-Użytkownik zostanie dodany do strony **Użytkownicy** z ograniczeniami w Microsoft 365 Defender sieci Web. Podczas próby wysłania wiadomości e-mail jest zwracana w raporcie o niedostarczeniu (nazywanym również wiadomościami o niedostarczeniu lub wiadomościami zwróconmi) z kodem błędu [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) i następującym tekstem:
+Użytkownik zostanie dodany do strony **Użytkownicy** z ograniczeniami w Microsoft 365 Defender sieci Web. Podczas próby wysłania wiadomości e-mail jest zwracana w raporcie o niedostarczeniu (nazywanym również raportem o niedostarczeniu lub wiadomości zwróconej) z kodem błędu [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) i następującym tekstem:
 
 > "Nie można dostarczyć wiadomości, ponieważ nie rozpoznano Ciebie jako prawidłowego nadawcy. Najczęstszą przyczyną tego jest podejrzewanie, że Twój adres e-mail wysyła spam i nie może już wysyłać wiadomości e-mail.  Skontaktuj się z administratorem poczty e-mail, aby uzyskać pomoc. Serwer zdalny zwrócił "Odmowa dostępu 550 5.1.8, zły nadawca ruchu wychodzącego".
 
-Administratorzy mogą usuwać użytkowników na stronie Użytkownicy z ograniczeniami w programie Microsoft 365 Defender lub Exchange Online PowerShell.
+Administratorzy mogą usuwać użytkowników ze strony **Użytkownicy z ograniczeniami** w programie Microsoft 365 Defender lub Exchange Online PowerShell.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Co należy wiedzieć przed rozpoczęciem?
 
@@ -59,7 +59,7 @@ Administratorzy mogą usuwać użytkowników na stronie Użytkownicy z ogranicze
 
   > [!NOTE]
   >
-  > - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w  aplikacji Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+  > - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w aplikacji  Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
   >
   > - Grupa **ról Zarządzanie organizacją tylko do** odczytu w [programie Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) również zapewnia dostęp tylko do odczytu tej funkcji.
 
@@ -93,7 +93,7 @@ Domyślne zasady alertów o nazwie **Użytkownik z ograniczonymi możliwościami
 > [!IMPORTANT]
 > Aby alerty działały, należy włączona jest przeszukiwanie dziennika inspekcji. Aby uzyskać więcej informacji, zobacz Włączanie lub wyłączanie [przeszukiwania dziennika inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. W portalu Microsoft 365 Defender przejdź do tematu Zasady **&-mail** \> **i współpracy & alertów**\>.
+1. W portalu Microsoft 365 Defender pod adresem <https://security.microsoft.com>przejdź do tematu Zasady **& e-mail** \> **& Zasady** \> **alertów**. Aby przejść bezpośrednio do strony **zasady alertu**, użyj .<https://security.microsoft.com/alertpolicies>
 
 2. Na stronie **Zasady alertów** znajdź i wybierz alert o nazwie Użytkownik ograniczony do wysyłania **wiadomości e-mail**. Zasady można sortować według nazw lub wyszukiwać je za  pomocą pola wyszukiwania.
 

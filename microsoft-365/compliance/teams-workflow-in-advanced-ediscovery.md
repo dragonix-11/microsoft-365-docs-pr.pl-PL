@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z witryny Microsoft Teams w programie Advanced eDiscovery.
-ms.openlocfilehash: 68a255dda7aa9b879c9e608eb99c9575ba691c16
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 9565beea342fe9587195d632fdc94cdc746faf5e
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716229"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568121"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery przepływu pracy dla zawartości w programie Microsoft Teams
 
@@ -41,14 +41,13 @@ Istnieje pięć kategorii zawartości Teams, które można zbierać i przetwarza
 
 Wstępnie wymagane do zarządzania zawartością Teams w programie Advanced eDiscovery jest zrozumienie typu zawartości Teams, która może być zbierana, przetwarzana i przeglądana w programie Advanced eDiscovery oraz miejscu jej przechowywania w programie Microsoft 365. W poniższej tabeli po Teams typ zawartości i miejsce przechowywania każdej z nich.
 
-||Lokalizacja wiadomości i wpisów na czacie  |Lokalizacja plików i załączników |
-|:---------|:---------|:---------|
-|Teams czatów 1:1     |Wiadomości w czatach 1:1 są przechowywane w Exchange Online skrzynki pocztowej wszystkich uczestników czatu. |Pliki udostępnione na czacie 1:1 są przechowywane OneDrive dla Firm konta osoby, która udostępniła plik. |
-|Teams czatów grupowych     |Wiadomości w czatach grupowych są przechowywane Exchange Online skrzynce pocztowej wszystkich uczestników czatu. |Pliki udostępniane w czatach grupowych są przechowywane OneDrive dla Firm konta osoby, która udostępniła plik. |
-|Teams kanałów     |Wszystkie wiadomości i wpisy w kanałach są przechowywane w Exchange Online skojarzonej z zespołem skrzynki pocztowej.|Pliki udostępniane w kanale są przechowywane w SharePoint Online skojarzonej z zespołem.           |
-|Kanały prywatne     |Wiadomości wysłane w kanale prywatnym są przechowywane w Exchange Online pocztowych wszystkich członków kanału prywatnego.|Pliki udostępnione w kanale prywatnym są przechowywane w dedykowanej witrynie SharePoint online skojarzonej z kanałem prywatnym.|
-|Kanały udostępnione     |Wiadomości wysłane w kanale udostępnionym są przechowywane w systemowej skrzynce pocztowej skojarzonej z kanałem udostępnionym. <sup>1</sup>|Pliki udostępniane w kanale udostępnionym są przechowywane w dedykowanej SharePoint Online skojarzonej z kanałem udostępnionym.|
-||||
+|&nbsp;|Lokalizacja wiadomości i wpisów na czacie|Lokalizacja plików i załączników|
+|---|---|---|
+|Teams czatów 1:1|Wiadomości w czatach 1:1 są przechowywane w Exchange Online skrzynki pocztowej wszystkich uczestników czatu.|Pliki udostępnione na czacie 1:1 są przechowywane OneDrive dla Firm konta osoby, która udostępniła plik.|
+|Teams czatów grupowych|Wiadomości w czatach grupowych są przechowywane Exchange Online skrzynce pocztowej wszystkich uczestników czatu.|Pliki udostępniane w czatach grupowych są przechowywane OneDrive dla Firm konta osoby, która udostępniła plik.|
+|Teams kanałów|Wszystkie wiadomości i wpisy w kanałach są przechowywane w Exchange Online skojarzonej z zespołem skrzynki pocztowej.|Pliki udostępniane w kanale są przechowywane w SharePoint Online skojarzonej z zespołem.|
+|Kanały prywatne|Wiadomości wysłane w kanale prywatnym są przechowywane w Exchange Online pocztowych wszystkich członków kanału prywatnego.|Pliki udostępnione w kanale prywatnym są przechowywane w dedykowanej witrynie SharePoint online skojarzonej z kanałem prywatnym.|
+|Kanały udostępnione|Wiadomości wysłane w kanale udostępnionym są przechowywane w systemowej skrzynce pocztowej skojarzonej z kanałem udostępnionym. <sup>1</sup>|Pliki udostępniane w kanale udostępnionym są przechowywane w dedykowanej SharePoint Online skojarzonej z kanałem udostępnionym.|
 
 > [!NOTE]
 > <sup>1</sup> Aby wyszukać (i zachować) wiadomości wysłane w kanale udostępnionym, musisz przeszukać lub określić skrzynkę pocztową Exchange Online dla nadrzędnego zespołu.
@@ -196,11 +195,10 @@ Po dodaniu zawartości Teams konwersacji na czacie do zestawu recenzji wiadomoś
 
 W poniższej tabeli opisano, jak różne typy wiadomości Teams są grupowane według rodziny i konwersacji.
 
-| Teams typ zawartości|Grupowanie według rodziny  |Grupowanie według konwersacji  |
-|:---------|:---------|:---------|
-|Teams czatach grupowych i 1:1   | Transkrypcja i wszystkie jej załączniki oraz wyodrębnione elementy mają ten sam **element FamilyId**. Każda transkrypcja ma unikatowy **identyfikator FamilyId**. |Wszystkie pliki transkrypcji i ich elementy rodzinne w tej samej konwersacji mają ten sam **conversationId**. Obejmuje to następujące elementy:<br/><br/>  — Wszystkie wyodrębnione elementy i załączniki ze wszystkich transkrypcji, które mają ten sam **element ConversationId**. <br/> - Wszystkie transkrypcje dla tej samej konwersacji na czacie<br/> - Wszystkie kopie kopi poszczególnych transkrypcji<br/> - Transkrypcje z kolejnych kolekcji z tej samej konwersacji na czacie <br/><br/>  W Teams czatach grupowych i 1:1 konwersacjach grupowych możesz mieć wiele plików transkrypcji, z których każdy odpowiada różnym ramom czasowym w konwersacji. Ponieważ te pliki transkrypcji są z tej samej konwersacji z tymi samymi uczestnikami, mają ten **samid konwersacji**.|
-|Standardowe, prywatne i udostępnione czaty na kanale    | Każdy wpis oraz wszystkie odpowiedzi i załączniki są zapisywane we własnej transkrypcie. Ten transkrypcja i wszystkie jej załączniki oraz wyodrębnione elementy mają ten sam **element FamilyId**.         |Każdy wpis, jego załączniki i wyodrębnione elementy mają unikatowy identyfikator **ConversationId**. Jeśli istnieją kolejne kolekcje lub nowe odpowiedzi z tego samego wpisu, transkrypcje różnicowe wynikające z tych kolekcji również będą mieć ten sam **conversationId**.|
-||||
+|Teams typ zawartości|Grupowanie według rodziny|Grupowanie według konwersacji|
+|---|---|---|
+|Teams czatach grupowych i 1:1|Transkrypcja i wszystkie jej załączniki oraz wyodrębnione elementy mają ten sam **element FamilyId**. Każda transkrypcja ma unikatowy **identyfikator FamilyId**.|Wszystkie pliki transkrypcji i ich elementy rodzinne w tej samej konwersacji mają ten sam **conversationId**. Obejmuje to następujące elementy: <ul><li>Wszystkie wyodrębnione elementy i załączniki wszystkich transkrypcji, które mają ten sam **conversationId**.</li><li>Wszystkie transkrypcje dla tej samej konwersacji na czacie</li><li>Wszystkie kopie kopi poszczególnych transkrypcji</li><li>Transkrypcje z kolejnych kolekcji z tej samej konwersacji na czacie</li></ul> <br/> W Teams czatach grupowych i 1:1 konwersacjach grupowych możesz mieć wiele plików transkrypcji, z których każdy odpowiada różnym ramom czasowym w konwersacji. Ponieważ te pliki transkrypcji są z tej samej konwersacji z tymi samymi uczestnikami, mają ten **samid konwersacji**.|
+|Standardowe, prywatne i udostępnione czaty na kanale|Każdy wpis oraz wszystkie odpowiedzi i załączniki są zapisywane we własnej transkrypcie. Ten transkrypcja i wszystkie jej załączniki oraz wyodrębnione elementy mają ten sam **element FamilyId**.|Każdy wpis, jego załączniki i wyodrębnione elementy mają unikatowy identyfikator **ConversationId**. Jeśli istnieją kolejne kolekcje lub nowe odpowiedzi z tego samego wpisu, transkrypcje różnicowe wynikające z tych kolekcji również będą mieć ten sam **conversationId**.|
 
 Kontrolka **Grupuj** na pasku poleceń zestawu recenzji umożliwia wyświetlanie Teams grupowanych według rodziny lub konwersacji.
 
@@ -237,11 +235,10 @@ Oto logika używana przez program Advanced eDiscovery do dołączania dodatkowyc
 
 - Zapytania, które używają tylko zakresów dat
 
-| Teams typ zawartości|Zapytania z parametrami wyszukiwania  |Zapytania z zakresami dat  |
-|:---------|:---------|:---------|
-|Teams czatach grupowych i 1:1   |Wiadomości opublikowane 12 godzin przed i 12 godzin po odpowiedziach są grupowane z elementem odpowiedzi w pojedynczym pliku transkrypcji.   |Wiadomości w oknie 24-godzinnym są grupowane w jednym pliku transkrypcji.|
-|Standardowe, prywatne i udostępnione Teams kanałów    |Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji. |Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji.|
-||||
+|Teams typ zawartości|Zapytania z parametrami wyszukiwania|Zapytania z zakresami dat|
+|---|---|---|
+|Teams czatach grupowych i 1:1|Wiadomości opublikowane 12 godzin przed i 12 godzin po odpowiedziach są grupowane z elementem odpowiedzi w pojedynczym pliku transkrypcji.|Wiadomości w oknie 24-godzinnym są grupowane w jednym pliku transkrypcji.|
+|Standardowe, prywatne i udostępnione Teams kanałów|Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji.|Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji.|
 
 ### <a name="deduplication-of-teams-content"></a>Deduplication Teams zawartości
 
@@ -267,19 +264,18 @@ W dużych zestawach recenzji z tysiącami lub milionami elementów może być tr
 
 W poniższej tabeli opisano właściwości metadanych dla Teams zawartości.
 
-|Właściwość Metadane  |Opis  |
-|:---------|:---------|
-|ContainsEditedMessage      | Wskazuje, czy plik transkrypcji zawiera edytowaną wiadomość. Edytowane wiadomości są identyfikowane podczas wyświetlania pliku transkrypcji.|
+|Właściwość Metadane|Opis|
+|---|---|
+|ContainsEditedMessage|Wskazuje, czy plik transkrypcji zawiera edytowaną wiadomość. Edytowane wiadomości są identyfikowane podczas wyświetlania pliku transkrypcji.|
 |ConversationId|Identyfikator GUID identyfikujący konwersację, z która jest skojarzona z elementem. Transkrypcje plików i załączników z tej samej konwersacji mają tę samą wartość dla tej właściwości.|
-|Nazwa konwersacji     | Nazwa konwersacji, z która jest skojarzony plik transkrypcji lub załącznik. W Teams czatach grupowych i 1:1 wartość tej właściwości to upn wszystkich uczestników konwersacji. Na przykład `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams kanału (standardowy, prywatny i udostępniony) mają nazwę konwersacji w następującym formacie: `<Team name>,<Channel name>`.Na przykład `eDiscovery vNext, General`.          |
-|ConversationType     | Wskazuje typ czatu zespołu. W Teams czatach grupowych i 1:1 wartość tej właściwości `Group`wynosi . W przypadku standardowych, prywatnych i udostępnionych czatów na kanale wartość to `Channel`.|
-|Data | Sygnatura czasowa pierwszej wiadomości w pliku transkrypcji.|
+|Nazwa konwersacji|Nazwa konwersacji, z która jest skojarzony plik transkrypcji lub załącznik. W Teams czatach grupowych i 1:1 wartość tej właściwości to upn wszystkich uczestników konwersacji. Na przykład `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams kanału (standardowy, prywatny i udostępniony) mają nazwę konwersacji w następującym formacie: `<Team name>,<Channel name>`.Na przykład `eDiscovery vNext, General`.|
+|ConversationType|Wskazuje typ czatu zespołu. W Teams czatach grupowych i 1:1 wartość tej właściwości `Group`wynosi . W przypadku standardowych, prywatnych i udostępnionych czatów na kanale wartość to `Channel`.|
+|Data|Sygnatura czasowa pierwszej wiadomości w pliku transkrypcji.|
 |FamilyId|Identyfikator GUID identyfikujący plik transkrypcji dla konwersacji na czacie. Załączniki będą mieć tę samą wartość dla tej właściwości, co plik transkrypcji zawierający wiadomość, do których plik został dołączony.|
-|FileClass     |Wskazuje ten typ zawartości. Elementy z Teams mają wartość `Conversation`. Natomiast Exchange e-mail mają wartość `Email`.|          |
-|MessageKind     | Właściwość typu wiadomości. Teams zawartość ma wartość `microsoftteams , im`. |
-|Adresaci     | Lista wszystkich użytkowników, którzy otrzymali wiadomość w ramach transkrypcji.|
-|TeamsChannelName     | Nazwa Teams transkrypcji w kanale.|
-|||
+|FileClass|Wskazuje ten typ zawartości. Elementy z Teams mają wartość `Conversation`. Natomiast Exchange e-mail mają wartość `Email`.|
+|MessageKind|Właściwość typu wiadomości. Teams zawartość ma wartość `microsoftteams , im`.|
+|Adresaci|Lista wszystkich użytkowników, którzy otrzymali wiadomość w ramach transkrypcji.|
+|TeamsChannelName|Nazwa Teams transkrypcji w kanale.|
 
 Aby uzyskać opisy Advanced eDiscovery właściwości metadanych dokumentu, zobacz [Pola metadanych](document-metadata-fields-in-Advanced-eDiscovery.md) dokumentu Advanced eDiscovery.
 

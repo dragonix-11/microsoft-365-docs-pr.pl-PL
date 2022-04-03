@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Dzięki zarządzaniu rekordami Microsoft 365 harmonogramy przechowywania można stosować do planu ewidencji, który zarządza przechowywaniem, deklaracjami rekordów i ich rozsyłaniem.
-ms.openlocfilehash: c7546216a935960e5c4b66b37bb3308d0a69e89e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ce00fdfc6db90b9c65051a31e8768d6cd661072d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324819"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755684"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informacje na temat zarządzania rekordami w Microsoft 365
 
@@ -87,8 +87,8 @@ Standardowa etykieta przechowywania zawiera ustawienia i akcje przechowywania, a
 |Poruszanie się w obrębie <sup>kontenera 3</sup>|Dozwolone |Dozwolone | Dozwolone| Dozwolone|
 |Przechodzenie między kontenerami <sup>3</sup>|Dozwolone |Dozwolone, jeśli nigdy nie odblokowano | **Zablokowane** | **Zablokowane**|
 |Otwieranie/odczytywanie|Dozwolone |Dozwolone | Dozwolone| Dozwolone|
-|Zmień etykietę|Dozwolone |Dozwolone — tylko administrator kontenerów | Dozwolone — tylko administrator kontenerów| **Zablokowane**
-|Usuń etykietę|Dozwolone |Dozwolone — tylko administrator kontenerów | Dozwolone — tylko administrator kontenerów| **Zablokowane**
+|Zmień etykietę|Dozwolone |Dozwolone — tylko administrator kontenerów | **Zablokowane**| **Zablokowane**
+|Usuń etykietę|Dozwolone |Dozwolone — tylko administrator kontenerów | **Zablokowane**| **Zablokowane**
 
 Przypisy dolne:
 
