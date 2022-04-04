@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 14332b2787b59e2ef192741dc97e59a7c7cb5418
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326415"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499512"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Zarządzanie zdarzeniami w Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ Zarządzanie zdarzeniami ma kluczowe znaczenie dla zapewniania nazwania, przypis
 
 Możesz zarządzać zdarzeniami z & i **alertami >** zdarzeniami po szybkim uruchomieniu portalu Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Oto przykład.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Przykład kolejki zdarzeń." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Strona Zdarzenia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 Oto sposoby zarządzania zdarzeniami:
 
@@ -53,7 +53,7 @@ Oto sposoby zarządzania zdarzeniami:
 
 Możesz zarządzać zdarzeniami z **okienka Zarządzanie zdarzeniami** w przypadku zdarzenia. Oto przykład.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Przykład okienka Zarządzanie zdarzeniem w przypadku zdarzenia." lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Okienko Zarządzanie incydentami w portalu Microsoft 365 Defender sieci Microsoft 365 Defender" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 To okienko można wyświetlić za pomocą **linku Zarządzaj incydentem** na stronie:
 

@@ -1,5 +1,5 @@
 ---
-title: Krok 6. Badanie i odpowiadanie przy Microsoft 365 Defender w środowisku pilotażowym
+title: Badanie i odpowiadanie przy Microsoft 365 Defender w środowisku pilotażowym
 description: Skonfiguruj czasy ataków w laboratorium Microsoft 365 Defender testowym lub środowisku pilotażowym, aby wypróbować rozwiązanie zabezpieczeń zaprojektowane w celu nauczenie użytkowników ochrony urządzeń, tożsamości, danych i aplikacji.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e7dafa34daed763bc0da11e5cd11f80b791db508
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a32b6dc2fafb80905c4cba44b79fc24b7e6a3187
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318721"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568623"
 ---
 # <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Krok 6. Badanie i odpowiadanie przy Microsoft 365 Defender w środowisku pilotażowym
 
@@ -37,7 +37,7 @@ Ten artykuł zawiera konspekt procesu tworzenia zdarzeń z samouczkami i symulam
 
 W tym celu należy wykonać następujące czynności.
 
-![Kroki procedury przeprowadzania symulowanej odpowiedzi na zdarzenie w Microsoft 365 Defender oceny.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png" alt-text="Procedura przeprowadzania symulowanej odpowiedzi na zdarzenie w środowisku oceny Microsoft 365 Defender zdarzenia" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png":::
 
 W poniższej tabeli opisano kroki na ilustracji.
 

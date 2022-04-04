@@ -1,5 +1,5 @@
 ---
-title: Akcje dotyczące odpowiedzi dotyczące pliku w programie Microsoft Defender for Endpoint
+title: Akcje dotyczące odpowiedzi na plik w programie Ochrona punktu końcowego w usłudze Microsoft Defender
 description: Akcje dotyczące alertów dotyczących plików można podjąć, zatrzymując i kwartyljąc plik lub blokując plik i sprawdzając szczegóły aktywności.
 keywords: odpowiadanie, zatrzymywanie i kwarantanna, blokowanie pliku, analiza głębokości
 ms.prod: m365-security
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e7253993a1c05bd25e6dd13865826c42dd7603a
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 5c5a457d960f7dd7906c7d26a099d242507fbe86
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400254"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499204"
 ---
 # <a name="take-response-actions-on-a-file"></a>Akcje odpowiedzi dotyczące pliku
 
@@ -27,7 +27,9 @@ ms.locfileid: "63400254"
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -49,17 +51,12 @@ Możesz również przesłać pliki do dogłębnej analizy, aby uruchomić plik w
 
 Niektóre akcje wymagają pewnych uprawnień. W poniższej tabeli opisano działania, jakie niektóre uprawnienia mogą być wykonywane na plikach przenośnych wykonywalnych (PE) i plikach innych niż PE:
 
-<br>
-
-****
-
 |Uprawnienie|Pliki PE|Pliki inne niż PE|
 |---|:---:|:---:|
 |Wyświetlanie danych|X|X|
 |Badanie alertów|&#x2611;|X|
 |Odpowiedź na żywo — podstawowe|X|X|
 |Zaawansowana funkcja odpowiedzi na żywo|&#x2611;|&#x2611;|
-|
 
 Aby uzyskać więcej informacji na temat ról, zobacz [Tworzenie ról w kontrolach dostępu opartych na rolach i zarządzanie nimi](user-roles.md).
 
@@ -70,13 +67,13 @@ Ataki w organizacji można dotrzymywać przez zatrzymanie złośliwego procesu i
 > [!IMPORTANT]
 > Tę czynność można podjąć tylko w przypadku:
 >
-> - Na urządzeniu, na które jest uruchomiona akcja, jest Windows 10 wersji 1703 lub nowszej, Windows 11
+> - Na urządzeniu, na które jest podejmowanie akcji, jest uruchomione Windows 10 wersji 1703 lub nowszej, a Windows 11
 > - Plik nie należy do zaufanych wydawców innych firm ani nie jest podpisyny przez firmę Microsoft
 > - Program antywirusowy Microsoft Defender musi przynajmniej być uruchomiony w trybie pasywnym. Aby uzyskać więcej informacji, [zobacz Program antywirusowy Microsoft Defender zgodności](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 Akcja **Zatrzymaj i poddaj** kwarantannie plik obejmuje zatrzymywanie uruchomionych procesów, kwartyfowanie plików i usuwanie trwałych danych, takich jak klucze rejestru.
 
-Ta akcja  dotyczy urządzeń z systemem Windows 10, wersja 1703 lub nowsza i Windows 11, gdzie plik został obserwowany w ciągu ostatnich 30 dni.
+Ta akcja  dotyczy urządzeń z systemem Windows 10, wersja 1703 lub nowsza oraz Windows 11, gdzie plik został obserwowany w ciągu ostatnich 30 dni.
 
 > [!NOTE]
 > W dowolnym momencie będzie można przywrócić plik z kwarantanny.
@@ -93,15 +90,15 @@ Ta akcja  dotyczy urządzeń z systemem Windows 10, wersja 1703 lub nowsza i Win
 
 2. Przejdź do górnego paska i wybierz pozycję **Zatrzymaj i poddaj kwarantannie plik**.
 
-   ![Obraz akcji zatrzymania i kwarantanny pliku.](images/atp-stop-quarantine-file.png)
+   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="Akcja zatrzymania i kwarantanny pliku" lightbox="images/atp-stop-quarantine-file.png":::
 
 3. Określ przyczynę, a następnie wybierz pozycję **Potwierdź**.
 
-   ![Obraz okna modalnego zatrzymania i kwarantanny pliku.](images/atp-stop-quarantine.png)
+   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="Strona zatrzymania i kwarantanny pliku" lightbox="images/atp-stop-quarantine.png":::
 
    Centrum akcji wyświetla informacje o przesyłania:
 
-   ![Obraz centrum akcji zatrzymania i kwarantanny pliku.](images/atp-stopnquarantine-file.png)
+   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="Centrum akcji zatrzymania i kwarantanny pliku" lightbox="images/atp-stopnquarantine-file.png":::
 
    - **Czas przesłania** — pokazuje, kiedy została przesłana akcja.
    - **Sukces** — pokazuje liczbę urządzeń, na których plik został zatrzymany i poddany kwarantannie.
@@ -114,7 +111,7 @@ Ta akcja  dotyczy urządzeń z systemem Windows 10, wersja 1703 lub nowsza i Win
 
 Po usunięciu pliku z urządzenia jest wyświetlane następujące powiadomienie:
 
-![Obraz powiadomienia użytkownika urządzenia.](images/atp-notification-file.png)
+:::image type="content" source="images/atp-notification-file.png" alt-text="Powiadomienie dla użytkownika urządzenia" lightbox="images/atp-notification-file.png":::
 
 Na osi czasu urządzenia jest dodawane nowe zdarzenie dla każdego urządzenia, na którym plik został zatrzymany i poddany kwarantannie.
 
@@ -150,7 +147,7 @@ Wybranie **opcji Pobierz plik** w akcji odpowiedzi umożliwia pobranie lokalnego
 
 Domyślnie powinno być możliwe pobieranie plików poddanych kwarantannie.
 
-![Obraz akcji pobierania pliku.](images/atp-download-file-action.png)
+:::image type="content" source="images/atp-download-file-action.png" alt-text="Akcja pobierania pliku" lightbox="images/atp-download-file-action.png":::
 
 ### <a name="download-quarantined-files"></a>Pobieranie plików poddanych kwarantannie
 
@@ -173,11 +170,11 @@ Ta funkcja nie będzie działać, jeśli przykładowe przesyłanie zostanie wył
 > - Wersja aparatu antywirusowego to 1.1.17300.4 lub nowsza. Zobacz [Wersje miesięcznej platformy i aparatu](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - Ochrona oparta na chmurze jest włączona. Zobacz [Włączanie ochrony w chmurze.](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - Przykładowe przesyłanie jest włączone
-> - Urządzenia mają Windows 10 w wersji 1703 lub nowszej, albo Windows Server 2016 lub 2019 albo Windows Server 2022 lub Windows 11
+> - Urządzenia mają Windows 10 w wersji 1703 lub nowszej, Windows server 2016 lub 2019 albo Windows Server 2022 lub Windows 11
 
 ### <a name="collect-files"></a>Zbieranie plików
 
-Jeśli plik nie jest jeszcze przechowywany przez program Microsoft Defender dla punktu końcowego, nie możesz go pobrać. Zamiast tego w tej samej lokalizacji będzie  wyświetlony przycisk Odbierz plik. Jeśli w ciągu ostatnich 30 dni nie widać pliku w **organizacji,** wyłączy się zbieranie pliku.
+Jeśli plik nie jest jeszcze przechowywany przez aplikację Ochrona punktu końcowego w usłudze Microsoft Defender, nie możesz go pobrać. Zamiast tego w tej samej lokalizacji będzie  wyświetlony przycisk Odbierz plik. Jeśli w ciągu ostatnich 30 dni nie widać pliku w **organizacji,** wyłączy się zbieranie pliku.
 > [!Important]
 > Plik poddany kwarantannie jako potencjalne zagrożenie sieci może nie być odzyskiwalny. Jeśli użytkownik spróbuje przywrócić plik po kwarantannie, może to oznaczać, że ten plik jest niedostępny. Może to być spowodowane tym, że system nie ma już poświadczeń sieciowych, aby uzyskać dostęp do pliku. Zazwyczaj jest to wynik tymczasowego zalogowania się do folderu systemowego lub udostępnionego i tokeny dostępu wygasły.
 
@@ -191,7 +188,7 @@ Zapobiegaj dalszej propagacji ataków w organizacji, aby zablokować potencjalni
 >
 > - Wersja klienta ochrony przed złośliwym oprogramowaniem musi mieć wersję 4.18.1901.x lub nowszą.
 > - Ta funkcja ma na celu zapobieganie pobieraniu z sieci Web potencjalnie złośliwego oprogramowania (lub potencjalnie złośliwych plików). Obecnie obsługuje przenośne pliki wykonywalne (PE), w tym _pliki.exe_ i _.dll_ pe. Zakres będzie z czasem rozszerzany.
-> - Ta akcja odpowiedzi jest dostępna dla urządzeń w Windows 10, w wersji 1703 lub nowszej i Windows 11.
+> - Ta akcja odpowiedzi jest dostępna dla urządzeń Windows 10 wersji 1703 lub nowszej i dla Windows 11.
 > - Funkcji zezwalania lub blokowania nie można wykonać na plikach, jeśli klasyfikacja pliku istnieje w pamięci podręcznej urządzenia przed akcją zezwalania lub blokowania.
 
 > [!NOTE]
@@ -232,7 +229,7 @@ Centrum **akcji** zawiera informacje o akcjach, które zostały wykonane na urz�
 
 Wyświetlane są również wszystkie inne powiązane szczegóły, takie jak data i godzina przesłania, przesyłający użytkownik oraz czy działanie zakończyło się pomyślnie lub niepowodzeniem.
 
-![Obraz centrum akcji z informacjami.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="Centrum akcji z informacjami" lightbox="images/action-center-details.png":::
 
 ## <a name="deep-analysis"></a>Analiza głębokości
 
@@ -254,12 +251,12 @@ Za pomocą funkcji szczegółowej analizy możesz zbadać szczegóły dowolnego 
 **Opcja Prześlij do dogłębnej** analizy jest włączona, gdy plik jest dostępny w przykładowej kolekcji zaplecza usługi Defender for Endpoint lub jeśli został on obserwowany na urządzeniu z systemem Windows 10 obsługujące przesyłanie do dogłębnej analizy.
 
 > [!NOTE]
-> Zbierane są tylko Windows 10 i Windows 11.
+> Tylko pliki z Windows 10 i Windows 11 mogą być zbierane automatycznie.
 
-Jeśli plik nie został zaobserwowany na urządzeniu z systemem Windows 10 (lub Windows 11), możesz również przesłać próbkę za pośrednictwem portalu Centrum zabezpieczeń firmy [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) i poczekać, aż przycisk Prześlij zostanie udostępnione.
+Możesz również przesłać próbkę za pośrednictwem portalu [Microsoft 365 Defender,](https://www.microsoft.com/security/portal/submission/submit.aspx) jeśli plik nie został zaobserwowany na urządzeniu z systemem Windows 10 (lub Windows 11) i poczekać, aż przycisk Prześlij analiza głębokości stanie  się dostępny.
 
 > [!NOTE]
-> Ze względu na przepływy przetwarzania wewnętrznego w portalu Centrum zabezpieczeń firmy Microsoft może upłynieć do 10 minut opóźnienia między przesyłaniem pliku a dostępnością funkcji analizy poziomej w programie Defender dla punktu końcowego.
+> Ze względu na przepływy przetwarzania zaplecza w portalu usługi Microsoft 365 Defender może upłynieć do 10 minut opóźnienia między przesyłaniem pliku a dostępnością funkcji analizy głębokości w programie Defender dla punktu końcowego.
 
 ### <a name="submit-files-for-deep-analysis"></a>Przesyłanie plików do dogłębnej analizy
 
@@ -271,7 +268,7 @@ Jeśli plik nie został zaobserwowany na urządzeniu z systemem Windows 10 (lub 
 
 2. Na karcie **Analiza** głębokości w widoku pliku wybierz pozycję **Prześlij**.
 
-   ![Pliki PE można przesyłać tylko w sekcji szczegółów pliku.](images/submit-file.png)
+   :::image type="content" source="images/submit-file.png" alt-text="Przycisk Prześlij pliki PE" lightbox="images/submit-file.png":::
 
    > [!NOTE]
    > Obsługiwane są tylko pliki PE, w tym _pliki.exe_ i _.dll_ pe.
@@ -279,7 +276,7 @@ Jeśli plik nie został zaobserwowany na urządzeniu z systemem Windows 10 (lub 
    Zostanie wyświetlony pasek postępu, który zawiera informacje na temat poszczególnych etapów analizy. Następnie można wyświetlić raport po analizie.
 
 > [!NOTE]
-> W zależności od dostępności urządzenia przykładowy czas kolekcji może się różnić. Przykładowy limit czasu wynosi 3 godziny. Kolekcja nie powiedzie się i operacja zostanie przerwać, jeśli nie będzie w tym Windows 10 trybie online (lub Windows 11). Możesz ponownie przesłać pliki do dogłębnej analizy, aby pobrać z pliku nowe dane.
+> W zależności od dostępności urządzenia przykładowy czas kolekcji może się różnić. Przykładowy limit czasu wynosi 3 godziny. Kolekcja nie powiedzie się i operacja zostanie przerwać, jeśli nie będzie w tym Windows 10 trybie online (lub Windows 11) raportowania. Możesz ponownie przesłać pliki do dogłębnej analizy, aby pobrać z pliku nowe dane.
 
 ### <a name="view-deep-analysis-reports"></a>Wyświetlanie raportów z analizą głębokości
 
@@ -295,7 +292,7 @@ Podane szczegóły mogą pomóc w zbadaniu, czy istnieją oznaczenia potencjalne
 1. Wybierz plik przesłany do dogłębnej analizy.
 2. Wybierz **kartę Analiza głębokości** . Jeśli istnieją jakiekolwiek wcześniejsze raporty, podsumowanie raportu będzie wyświetlane na tej karcie.
 
-    ![Raport szczegółowej analizy zawiera szczegółowe informacje dla wielu kategorii.](images/analysis-results-nothing500.png)
+   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="Raport szczegółowej analizy ze szczegółowymi informacjami dla wielu kategorii" lightbox="images/analysis-results-nothing500.png":::
 
 #### <a name="troubleshoot-deep-analysis"></a>Rozwiązywanie problemów z analizą głębokości
 
@@ -326,4 +323,4 @@ Jeśli podczas przesyłania pliku występuje problem, wypróbuj każdą z poniż
 
 - [Akcje dotyczące odpowiedzi na urządzeniu](respond-machine-alerts.md)
 - [Badanie plików](investigate-files.md)
-- [Ręczne działania w odpowiedzi w programie Microsoft Defender dla planu punktu końcowego 1](defender-endpoint-plan-1.md#manual-response-actions)
+- [Ręczne akcje odpowiedzi w ramach Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](defender-endpoint-plan-1.md#manual-response-actions)

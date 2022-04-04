@@ -13,16 +13,31 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 57b4119c1c96132b2f9a5c715cb498f228802fcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c979ace1b5d3f1fa807384c769c5711c9fc2fda7
+ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329855"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63761505"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historia zmian dla Microsoft Managed Desktop dokumentów
 
-Ten artykuł zawiera listę nowych i zaktualizowanych artykułów w [Microsoft Managed Desktop dokumentów](index.yml). Artykuły "Zaktualizowane" zawierały istotne poprawki lub poprawki — nie wymieniono drobnych poprawek, takich jak korekta literówek, stylów lub problemów z formatowaniem. Zawsze możesz wyświetlić historię określonych zatwierdzeń (wraz ze szczegółami wszelkich zmian), odwiedzając stronę po ponownej stronie w [GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+Ten artykuł zawiera listę nowych i zaktualizowanych artykułów w [Microsoft Managed Desktop dokumentów](index.yml). Artykuły "zaktualizowane" zawierały istotne poprawki lub poprawki — nie wymieniono drobnych poprawek, takich jak korekta literówek, stylów lub problemów z formatowaniem. Zawsze możesz wyświetlić historię określonych zatwierdzeń (wraz ze szczegółami wszelkich zmian), odwiedzając stronę po ponownej stronie w [GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="march-2022"></a>Marzec 2022 r.
+
+Nowy lub zmieniony artykuł | Opis
+--- | ---
+| [Informacje dotyczące ustawień konfigurowalnych](working-with-managed-desktop/config-setting-ref.md) | Dodano dodatkowe wymagania dotyczące serwera proxy |
+| [Localize the user experience](get-started/localization.md) | Dodano notatkę do sekcji Instalowanie większej liczby języków |
+| [Informacje dotyczące ustawień konfigurowalnych](working-with-managed-desktop/config-setting-ref.md) | Dodano notatkę na temat starszej wersji edge |
+
+## <a name="february-2022"></a>Luty 2022 r.
+
+Nowy lub zmieniony artykuł | Opis
+--- | ---
+| [Raport metryk usługi](working-with-managed-desktop/service-metrics-report.md) | Dodano raport metryki usługi |
+| [Microsoft Edge](get-started/edge-browser-app.md) | Zaktualizowano artykuł |
 
 ## <a name="october-2021"></a>Październik 2021
 
@@ -154,7 +169,7 @@ Nowy lub zmieniony artykuł | Opis
 
 Nowy lub zmieniony artykuł | Opis
 --- | ---
-[Co to jest Microsoft Managed Desktop?](./intro/index.md) | Zaktualizowano artykuł
+[Co to jest program Microsoft Managed Desktop?](./intro/index.md) | Zaktualizowano artykuł
 [Praca z raportami](working-with-managed-desktop/reports.md) | Zaktualizowano artykuł
 [Prywatność i dane osobowe](service-description/privacy-personal-data.md) | Zaktualizowano artykuł
 [Zgodność](intro/compliance.md) | Zaktualizowano artykuł
@@ -294,7 +309,7 @@ Szczegółowe informacje dotyczące użycia | Nowy artykuł
 Analiza niezawodności | Nowy artykuł
 [Microsoft Managed Desktop urządzenia](service-description/device-list.md) | Zaktualizowano artykuł
 [Microsoft Managed Desktop głównej](./index.yml) | Zaktualizowano artykuł
-[Co to jest Microsoft Managed Desktop?](./intro/index.md) | Zaktualizowano artykuł
+[Co to jest program Microsoft Managed Desktop?](./intro/index.md) | Zaktualizowano artykuł
 [Przygotuj użytkowników do korzystania z urządzeń](get-started/get-started-devices.md) | Zaktualizowano artykuł
 [Wyjątki od planu serwisowego](service-description/customizing.md) | Zaktualizowano artykuł
 

@@ -1,8 +1,8 @@
 ---
-title: Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie Linux za pomocą programu Linux
+title: Wdrażanie oprogramowania Ochrona punktu końcowego w usłudze Microsoft Defender Linux za pomocą systemu Linux
 ms.reviewer: ''
-description: W tym artykule opisano sposób wdrażania programu Microsoft Defender dla punktu końcowego w systemie Linux przy użyciu chętnych.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, dezinstalacja, 8, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
+description: W tym artykule opisano, jak Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux przy użyciu owej aktualizacji.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, instalacja, wdrażanie, dezinstalacja, szemra, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +16,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 305dd74d31f3cbbf07db23f8de89b2b57fe52326
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: a8d92e67e45074fb4084e7fbbc1fa7359b34db36
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63015814"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568385"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie Linux za pomocą programu Linux
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Wdrażanie oprogramowania Ochrona punktu końcowego w usłudze Microsoft Defender Linux za pomocą systemu Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -55,7 +55,7 @@ Pobierz pakiet dołączający z portalu Microsoft 365 Defender sieci:
 2. Z pierwszego menu rozwijanego wybierz Linux **Server** jako system operacyjny. Z drugiego menu rozwijanego wybierz preferowaną metodę wdrażania narzędzie do zarządzania **konfiguracją systemu Linux** .
 3. Wybierz **pozycję Pobierz pakiet dołączający**. Zapisz plik jako WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender zrzut ekranu portalu.](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="Opcja pobrania pakietu onboarded" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. W wierszu polecenia sprawdź, czy masz plik. 
 
@@ -131,7 +131,7 @@ $version = undef
     case $::osfamily {
         'Debian' : {
             apt::source { 'microsoftpackages' :
-                location => "https://packages.microsoft.com/config/${distro}/${version}/prod",
+                location => "https://packages.microsoft.com/${distro}/${version}/prod",
                 release  => $channel,
                 repos    => 'main',
                 key      => {
@@ -142,7 +142,7 @@ $version = undef
         }
         'RedHat' : {
             yumrepo { 'microsoftpackages' :
-                baseurl  => "https://packages.microsoft.com/config/${distro}/${version}/${channel}",
+                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
                 descr    => "packages-microsoft-com-prod-${channel}",
                 enabled  => 1,
                 gpgcheck => 1,

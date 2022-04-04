@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 9838d7f3ffed46c62891822c6e3761e36d49baf5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eec3881d2fdb53bc03e4e730fecaf6f1c78c98c7
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985296"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755846"
 ---
 # <a name="device-profile-page"></a>Strona profilu urządzenia
 
@@ -36,7 +36,7 @@ Jeśli urządzenie jest zarejestrowane w usłudze Microsoft Defender for Endpoin
 
 Strona profilu jest podzielone na kilka szerokich sekcji.
 
-![Obraz strony profilu urządzenia z (1) obszarem karty (2) pasek boczny i (3) akcje wyróżnione na czerwono.](../../media/mtp-device-profile/hybrid-device-overall.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-overall.png" alt-text="Strona Profil urządzenia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mtp-device-profile/hybrid-device-overall.png":::
 
 Pasek boczny (1) zawiera podstawowe informacje o urządzeniu.
 
@@ -48,7 +48,7 @@ Jeśli urządzenie jest zarejestrowane w usłudze Microsoft Defender for Endpoin
 
 Obok głównego obszaru zawartości strony profilu urządzenia znajduje się pasek boczny.
 
-![Obraz karty Pasek boczny dla profilu urządzenia.](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
+:::image type="content" source="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png" alt-text="Karta Pasek boczny dla profilu urządzenia w Microsoft 365 Defender urządzenia" lightbox="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png":::
 
 Pasek boczny zawiera pełną nazwę urządzenia i poziom ekspozycji. W małych podsekcjach przedstawiono również niektóre ważne podstawowe informacje, które można włączać i zamykać, na przykład:
 
@@ -66,7 +66,7 @@ Pasek boczny zawiera pełną nazwę urządzenia i poziom ekspozycji. W małych p
 
 Akcje reagowania to szybki sposób obrony przed zagrożeniami i analizowania ich.
 
-![Obraz paska akcji dla profilu urządzenia.](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="Pasek akcji profilu urządzenia w portalu Microsoft 365 Defender urządzenia" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
 
 > [!IMPORTANT]
 > * [Akcje odpowiedzi](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) są dostępne tylko wtedy, gdy urządzenie jest zarejestrowane w programie Microsoft Defender for Endpoint.
@@ -94,7 +94,7 @@ Urządzenia zarejestrowane w usłudze Microsoft Defender for Endpoint będą ró
 
 Karta domyślna to **Przegląd**. Zapewnia ona krótki przegląd najważniejszych informacji dotyczących zabezpieczeń urządzenia.
 
-![Obraz karty Przegląd dla profilu urządzenia.](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-overview.png" alt-text="Karta Przegląd dla profilu urządzenia w portalu Microsoft 365 Defender urządzenia" lightbox="../../media/mtp-device-profile/hybrid-device-tab-overview.png":::
 
 W tym miejscu możesz szybko sprawdzić aktywne alerty urządzenia i wszystkich obecnie zalogowanych użytkowników.
 
@@ -104,7 +104,7 @@ Jeśli urządzenie jest zarejestrowane w usłudze Microsoft Defender for Endpoin
 
 Karta **Alerty** zawiera listę alertów, które zostały podniesione na urządzeniu, zarówno z programu Microsoft Defender for Identity, jak i z programu Microsoft Defender for Endpoint.
 
-![Obraz karty alertów dla profilu urządzenia.](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-alerts.png" alt-text="Karta Alerty dla profilu urządzenia w Microsoft 365 Defender urządzenia" lightbox="../../media/mtp-device-profile/hybrid-device-tab-alerts.png":::
 
 Możesz dostosować liczbę wyświetlanych elementów oraz kolumny wyświetlane dla poszczególnych elementów. Domyślnym zachowaniem jest lista trzydziestu elementów na stronie.
 
@@ -122,7 +122,7 @@ Karta **Oś** czasu zawiera interakcyjny, chronologiczny wykres wszystkich zdarz
 
 Poniżej wykresu znajduje się lista zdarzeń dla wybranego zakresu dat.
 
-![Obraz karty oś czasu dla profilu urządzenia.](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-timeline.png" alt-text="Karta Oś czasu dla profilu urządzenia w portalu Microsoft 365 Defender urządzenia" lightbox="../../media/mtp-device-profile/hybrid-device-tab-timeline.png":::
 
 Liczbę wyświetlanych elementów i kolumn na liście można dostosować. Kolumny domyślne zawierają listę czasu zdarzenia, aktywnego użytkownika, typu akcji, jednostek (procesów) i dodatkowych informacji o zdarzeniu.
 
@@ -136,7 +136,7 @@ Listę można również wyeksportować do pliku CSV, aby można ją było pobra�
 
 Karta **Zalecenia dotyczące** zabezpieczeń zawiera listę akcji, które można podjąć w celu ochrony urządzenia. Wybranie elementu na tej liście spowoduje otwarcie wysuwu, w którym możesz uzyskać instrukcje dotyczące stosowania zalecenia.
 
-![Obraz karty Zalecenia dotyczące zabezpieczeń dla profilu urządzenia.](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png" alt-text="Karta Zalecenia dotyczące zabezpieczeń dla profilu urządzenia w portalu Microsoft 365 Defender urządzenia" lightbox="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png":::
 
 Podobnie jak w przypadku poprzednich kart można dostosować liczbę wyświetlanych elementów na stronie oraz kolumny, które są widoczne.
 
@@ -146,7 +146,7 @@ Widok domyślny zawiera kolumny ze szczegółami problemami zabezpieczeń, powi�
 
 Karta **Spis oprogramowania** zawiera listę oprogramowania zainstalowanego na urządzeniu.
 
-![Obraz karty spisu oprogramowania dla profilu urządzenia.](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png" alt-text="Karta Spis oprogramowania dla profilu urządzenia w Microsoft 365 Defender urządzenia" lightbox="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png":::
 
 W widoku domyślnym jest wyświetlany dostawca oprogramowania, numer zainstalowanej wersji, liczba znanych użytkowników oprogramowania, szczegółowe informacje o zagrożeniach, kod produktu i tagi. Liczbę wyświetlanych elementów i wyświetlane kolumny można dostosować.
 
@@ -158,7 +158,7 @@ Tę listę można filtrować według kodu produktu.
 
 Karta **Wykryj luki w** zabezpieczeniach zawiera listę typowych luk i luk w zabezpieczeniach (CVE), które mogą mieć wpływ na urządzenie.
 
-![Obraz karty wykrytych luk w zabezpieczeniach profilu urządzenia.](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png" alt-text="Karta Wykryj luki w zabezpieczeniach dla profilu urządzenia w Microsoft 365 Defender urządzenia" lightbox="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png":::
 
 Widok domyślny zawiera listę ważności CVE, wspólnego wyniku luk, oprogramowania związanego z oknem cve, opublikowania życiorysu i ostatniej aktualizacji tego poziomu oraz zagrożeń związanych z oknem cvE.
 
@@ -170,7 +170,7 @@ Wybranie elementu z tej listy spowoduje otwarcie wysuwu z opisem życiorysu.
 
 Karta **Brakujące kb/kb zawiera** listę wszystkich aktualizacji firmy Microsoft, które jeszcze nie zostały zastosowane do urządzenia. Dane "KB" to artykuły z bazy wiedzy [,](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) w których opisano te aktualizacje. na przykład [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-![Obraz brakującej karty KBs dla profilu urządzenia.](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="Karta Brakujące kb/s dla profilu urządzenia w portalu Microsoft 365 Defender urządzenia" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
 
 Widok domyślny zawiera biuletyn zawierający aktualizacje, wersję systemu operacyjnego, produkty, których dotyczy problem, życiorysy, numer KB i tagi.
 
@@ -181,6 +181,6 @@ Wybranie elementu spowoduje otwarcie wysuwu linku do aktualizacji.
 ## <a name="related-topics"></a>Tematy pokrewne
 
 * [Microsoft 365 Defender omówienie](microsoft-365-defender.md)
-* [Włączanie Microsoft 365 Defender](m365d-enable.md)
+* [Włączanie usługi Microsoft 365 Defender](m365d-enable.md)
 * [Badanie jednostek na urządzeniach przy użyciu funkcji odpowiedzi na żywo](../defender-endpoint/live-response.md)
 * [Zautomatyzowane badania i odpowiedzi (AIR) w programie Office 365](../office-365-security/office-365-air.md)

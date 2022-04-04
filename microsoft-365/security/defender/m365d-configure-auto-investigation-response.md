@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 4ec06a96e345345560a2714fa7e23d91a6f5832f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0e38dc36ca85425c033d2b8fd4828043b4043f1a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314220"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499424"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurowanie funkcji automatycznego badania i reagowania na Microsoft 365 Defender
 
@@ -49,10 +49,10 @@ Następnie po skonfigurowaniu wszystkich czynności można wyświetlać działan
 |Wymaganie|Szczegóły|
 |---|---|
 |Wymagania dotyczące subskrypcji|Jedna z tych subskrypcji: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 pomocą Zabezpieczenia platformy Microsoft 365 E5 dodatku</li><li>Microsoft 365 A3 pomocą dodatku Microsoft 365 A5 Security</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 oraz Windows E5</li></ul> <p> Zobacz [Microsoft 365 Defender dotyczące licencjonowania](./prerequisites.md#licensing-requirements).|
-|Wymagania dotyczące sieci|<ul><li>[Usługa Microsoft Defender dla tożsamości włączona](/azure-advanced-threat-protection/what-is-atp)</li><li>[Usługa Microsoft Defender dla aplikacji w chmurze skonfigurowana](/cloud-app-security/what-is-cloud-app-security)</li><li>[Integracja usługi Microsoft Defender dla tożsamości](/cloud-app-security/mdi-integration)</li></ul>|
+|Wymagania dotyczące sieci|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) włączone</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) skonfigurowane</li><li>[Microsoft Defender for Identity integracji z usługą](/cloud-app-security/mdi-integration)</li></ul>|
 |Windows wymagań dotyczących urządzenia|<ul><li>Windows 11</li><li>Windows 10, wersja 1709 lub nowsza (zobacz [Windows o wersji](/windows/release-information/))</li><li>Skonfigurowano następujące usługi ochrony przed zagrożeniami:<ul><li>[Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/configure-endpoints.md)</li><li>[Program antywirusowy Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
-|Ochrona zawartości wiadomości e-mail Office plików|[Usługa Microsoft Defender Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) skonfigurowana|
-|Uprawnienia|Aby skonfigurować funkcje automatycznego badania i odpowiedzi, musisz mieć przypisaną rolę administratora globalnego lub administratora zabezpieczeń w programie Azure Active Directory (<https://portal.azure.com>) lub w centrum administracyjne platformy Microsoft 365 (<https://admin.microsoft.com>). <p> Aby uzyskać uprawnienia wymagane do pracy z automatycznymi możliwościami badania i odpowiedzi, takimi jak przeglądanie, zatwierdzanie lub odrzucanie akcji oczekujących, zobacz Wymagane uprawnienia dla zadań [Centrum akcji](m365d-action-center.md#required-permissions-for-action-center-tasks).|
+|Ochrona zawartości wiadomości e-mail Office plików|[Ochrona usługi Office 365 w usłudze Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) skonfigurowane|
+|Uprawnienia|Aby skonfigurować funkcje automatycznego badania i odpowiedzi, musisz mieć przypisaną rolę administratora globalnego lub administratora zabezpieczeń w programie Azure Active Directory (<https://portal.azure.com>) lub w Centrum administracyjne platformy Microsoft 365 (<https://admin.microsoft.com>). <p> Aby uzyskać uprawnienia wymagane do pracy z automatycznymi możliwościami badania i odpowiedzi, takimi jak przeglądanie, zatwierdzanie lub odrzucanie akcji oczekujących, zobacz Wymagane uprawnienia dla zadań [Centrum akcji](m365d-action-center.md#required-permissions-for-action-center-tasks).|
 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>Przeglądanie lub zmienianie poziomu automatyzacji grup urządzeń
@@ -69,7 +69,7 @@ To, czy są uruchamiane automatyczne badania i czy akcje naprawcze są podejmowa
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Przeglądanie zasad zabezpieczeń i alertów w programie Office 365
 
-Firma Microsoft udostępnia wbudowane [zasady alertów,](../../compliance/alert-policies.md) które ułatwiają identyfikowanie pewnych zagrożeń. Te czynniki ryzyka obejmują Exchange uprawnień administratora, aktywność złośliwego oprogramowania, potencjalne zagrożenia zewnętrzne i wewnętrzne oraz zagrożenia związane z zarządzaniem informacjami. Niektóre alerty mogą [wyzwalać automatyczne badanie i reagowanie Office 365](../office-365-security/office-365-air.md). Upewnij się, [że program Defender Office 365](../office-365-security/defender-for-office-365.md) funkcje są poprawnie skonfigurowane.
+Firma Microsoft udostępnia wbudowane [zasady alertów,](../../compliance/alert-policies.md) które ułatwiają identyfikowanie pewnych zagrożeń. Te czynniki ryzyka obejmują Exchange uprawnień administratora, aktywność złośliwego oprogramowania, potencjalne zagrożenia zewnętrzne i wewnętrzne oraz zagrożenia związane z zarządzaniem informacjami. Niektóre alerty mogą [wyzwalać automatyczne badanie i reagowanie Office 365](../office-365-security/office-365-air.md). Upewnij się, [Ochrona usługi Office 365 w usłudze Defender](../office-365-security/defender-for-office-365.md) skonfigurowane poprawnie.
 
 Niektóre alerty i zasady zabezpieczeń mogą wyzwolić zautomatyzowane badania, jednak żadne akcje naprawcze nie są podejmowane automatycznie w przypadku wiadomości e-mail *i zawartości*. Zamiast tego wszystkie działania naprawcze dotyczące poczty e-mail i zawartości poczty e-mail oczekują na zatwierdzenie przez zespół operacji zabezpieczeń w [Centrum akcji](m365d-action-center.md).
 
@@ -92,7 +92,7 @@ Ustawienia zabezpieczeń w aplikacji Office 365 chronią pocztę e-mail i zawart
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Upewnij się Microsoft 365 Defender że jest włączona
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="Jak się upewnić, Microsoft 365 Defender jest włączona." lightbox="../../media/mtp-enable/mtp-on.png":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="Lewe okienko nawigacji w portalu Microsoft 365 Defender gdy Microsoft 365 Defender jest włączone" lightbox="../../media/mtp-enable/mtp-on.png":::
 
 1. Logowanie się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender-</a>
 

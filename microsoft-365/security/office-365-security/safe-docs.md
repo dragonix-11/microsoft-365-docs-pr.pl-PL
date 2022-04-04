@@ -1,5 +1,5 @@
 ---
-title: Sejf programu Microsoft Defender dla systemu Office 365
+title: Sejf dokumenty w programie Ochrona usługi Office 365 w usłudze Microsoft Defender
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: Dowiedz się Sejf o dokumentach w Microsoft 365 E5/A5 lub zabezpieczeniach Microsoft 365 E5/A5.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: beb34c04f93fe853678b30bcd9b5f7a621f4666b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ab5e35954cac20a18e34f418b5b9fcdc7f2fd007
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021347"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466350"
 ---
 # <a name="safe-documents-in-microsoft-365-e5a5"></a>Sejf dokumentów w Microsoft 365 E5/A5
 
@@ -30,7 +30,7 @@ ms.locfileid: "63021347"
 **Dotyczy**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Sejf Dokumenty to funkcja premium, która używa zaplecza w chmurze programu [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) do skanowania otwartych dokumentów programu Office w widoku chronionym lub [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) funkcji [Application Guard](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) dla systemu Office.
+Sejf Dokumenty to funkcja premium, która korzysta z zaplecza w chmurze usługi Ochrona punktu końcowego w usłudze Microsoft Defender do skanowania otwartych dokumentów programu [Office](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) w widoku chronionym lub funkcji [Application Guard](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) dla systemu Office.[](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 
 Użytkownicy nie potrzebują programu Defender for Endpoint zainstalowanego na swoich urządzeniach lokalnych, aby uzyskać Sejf dokumenty. Użytkownicy mogą Sejf dokumenty, jeśli są spełnione wszystkie poniższe wymagania:
 
@@ -41,7 +41,7 @@ Użytkownicy nie potrzebują programu Defender for Endpoint zainstalowanego na s
   - Microsoft 365 E5
   - Zabezpieczenia platformy Microsoft 365 E5
 
-  Sejf dokumenty nie są zawarte w programie Microsoft Defender dla Office 365 licencjonowania.
+  Sejf dokumenty nie są zawarte w Ochrona usługi Office 365 w usłudze Microsoft Defender licencjonowania.
 
   Aby uzyskać więcej informacji, zobacz [Nazwy produktów i identyfikatory planu usług na temat licencjonowania](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 
@@ -61,13 +61,13 @@ Użytkownicy nie potrzebują programu Defender for Endpoint zainstalowanego na s
 
   > [!NOTE]
   >
-  > - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w  aplikacji Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+  > - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w aplikacji  Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
   >
   > - Grupa **ról Zarządzanie organizacją tylko do** odczytu w [programie Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) również zapewnia dostęp tylko do odczytu tej funkcji.
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Jak firma Microsoft obsługuje Twoje dane?
 
-Aby zapewnić Ci ochronę, usługa Sejf wysyła pliki do chmury [programu Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) w celu analizy. Szczegółowe informacje o tym, jak program Microsoft Defender for Endpoint obsługuje Twoje dane, można znaleźć tutaj: [Usługa Microsoft Defender for Endpoint data storage and privacy (Przechowywanie danych programu Microsoft Defender for Endpoint i prywatność](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)).
+Aby zapewnić Ci ochronę, usługa Sejf wysyła pliki [do Ochrona punktu końcowego w usłudze Microsoft Defender danych](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) w celu analizy. Szczegóły dotyczące sposobu Ochrona punktu końcowego w usłudze Microsoft Defender danych można znaleźć tutaj: Ochrona punktu końcowego w usłudze Microsoft Defender [przechowywania danych i prywatności](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
 Pliki wysłane przez Sejf Dokumenty nie są przechowywane w uchcie defender dla punktu końcowego poza czas potrzebny na analizę (zazwyczaj mniej niż 24 godziny).
 
@@ -83,7 +83,7 @@ Pliki wysłane przez Sejf Dokumenty nie są przechowywane w uchcie defender dla 
 
    Po zakończeniu kliknij przycisk **Zapisz**.
 
-   ![Sejf dokumenty po wybraniu ustawień globalnych na Sejf Załączniki wiadomości.](../../media/safe-docs-global-settings.png)
+   :::image type="content" source="../../media/safe-docs-global-settings.png" alt-text="Ustawienia Sejf dokumentów po wybraniu ustawień globalnych na Sejf Załączniki wiadomości" lightbox="../../media/safe-docs-global-settings.png":::
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Konfigurowanie Exchange Online Dokumentów za pomocą programu PowerShell Sejf Dokumentów
 
@@ -119,13 +119,13 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 - [Wyświetlanie Microsoft 365 licencji konta i usługi za pomocą programu PowerShell](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
 - [Nazwy produktów i identyfikatory planu usług na licencjonowanie](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
-### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Dołączanie do usługi Microsoft Defender for Endpoint w celu umożliwienia możliwości inspekcji
+### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Włączanie usługi Ochrona punktu końcowego w usłudze Microsoft Defender w celu umożliwienia inspekcji
 
-Aby włączyć funkcje inspekcji, na urządzeniu lokalnym musi być zainstalowany program Microsoft Defender for Endpoint. Aby wdrożyć usługę Microsoft Defender dla punktu końcowego, musisz przejść przez poszczególne fazy wdrażania. Po dojechieniu możesz skonfigurować funkcje inspekcji w portalu Microsoft 365 Defender sieci.
+Aby włączyć funkcje inspekcji, na urządzeniu lokalnym musi być Ochrona punktu końcowego w usłudze Microsoft Defender zainstalowany. Aby wdrożyć Ochrona punktu końcowego w usłudze Microsoft Defender, musisz przejść przez poszczególne fazy wdrażania. Po dojechieniu możesz skonfigurować funkcje inspekcji w portalu Microsoft 365 Defender sieci.
 
-Aby dowiedzieć się więcej, [zobacz Temat "Poznaj usługę Programu Microsoft Defender dla punktu końcowego"](/microsoft-365/security/defender-endpoint/onboarding). Jeśli potrzebujesz dodatkowej pomocy, zobacz Rozwiązywanie problemów z dodaniem punktu końcowego do programu [Microsoft Defender](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
+Aby dowiedzieć się więcej, [zobacz Dołączanie do Ochrona punktu końcowego w usłudze Microsoft Defender usługi](/microsoft-365/security/defender-endpoint/onboarding). Jeśli potrzebujesz dodatkowej pomocy, zobacz Rozwiązywanie [Ochrona punktu końcowego w usłudze Microsoft Defender dotyczących dołączania](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
 
-### <a name="how-do-i-know-this-worked"></a>Skąd wiadomo, że to zadziałało?
+### <a name="how-do-i-know-this-worked"></a>Jak mogę, że to zadziałało?
 
 Aby sprawdzić, czy dokumenty są włączone i skonfigurowane Sejf, wykonaj dowolną z następujących czynności:
 

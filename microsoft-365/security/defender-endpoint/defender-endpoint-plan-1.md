@@ -1,5 +1,5 @@
 ---
-title: Omówienie usługi Microsoft Defender dla planu 1 punktu końcowego
+title: Omówienie Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1
 description: Uzyskaj omówienie usługi Defender dla punktu końcowego (plan 1). Poznaj funkcje i możliwości zawarte w tej subskrypcji ochrony punktu końcowego.
 search.appverid: MET150
 author: denisebmsft
@@ -17,34 +17,34 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 50dbe395bee852601aae8e834514c6bbac3dd84d
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d7e7f7d7c22da007187db5df8bd773dca798597c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63009575"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466306"
 ---
-# <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Omówienie usługi Microsoft Defender dla planu 1 punktu końcowego
+# <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Omówienie Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1
 
 **Dotyczy**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Program Microsoft Defender for Endpoint to platforma zabezpieczeń punktów końcowych przedsiębiorstwa zaprojektowana tak, aby pomóc organizacjom, jak Twoja, zapobiegać zaawansowanym zagrożeniam, wykrywać, badać je i reagować na nie. Z prosimy o ogłaszanie, że program Defender for Endpoint jest teraz dostępny w dwóch planach: 
+Ochrona punktu końcowego w usłudze Microsoft Defender to platforma zabezpieczeń punktów końcowych przedsiębiorstwa zaprojektowana tak, aby pomagać organizacjom, jak Twoja, zapobiegać zaawansowanym zagrożeniam, wykrywać je i badać oraz odpowiadać na nie. Z prosimy o ogłaszanie, że program Defender for Endpoint jest teraz dostępny w dwóch planach: 
 
 - **Defender for Endpoint Plan 1**, described in this article; i 
 - **[Program Defender for Endpoint Plan 2, ogólnie](microsoft-defender-endpoint.md)** dostępny i wcześniej znany jako [Defender for Endpoint](microsoft-defender-endpoint.md).
 
 Zielone pola na poniższej ilustracji przedstawiają elementy zawarte w programie Defender for Endpoint Plan 1:
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 diagram":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Co jest inculded with Defender for Endpoint Plan 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 Skorzystaj z tego przewodnika, aby:
 
 - [Uzyskaj omówienie funkcji dostępnych w programie Defender dla punktu końcowego (plan 1)](#defender-for-endpoint-plan-1-capabilities)
-- [Porównanie usługi Defender dla punktu końcowego (plan 1) z planem 2](defender-endpoint-plan-1-2.md)
+- [Porównanie planu 1 ochrony punktu końcowego w usłudze Defender z planem 2](defender-endpoint-plan-1-2.md)
 - [Dowiedz się, jak skonfigurować usługę Defender dla punktu końcowego (plan 1)](mde-p1-setup-configuration.md)
-- [Wprowadzenie do korzystania z portalu Microsoft 365 Defender, w którym możesz wyświetlać zdarzenia i alerty, zarządzać urządzeniami i korzystać z raportów o wykrytych zagrożeniach](mde-plan1-getting-started.md)
+- [Wprowadzenie za pomocą portalu Microsoft 365 Defender, w którym możesz wyświetlać zdarzenia i alerty, zarządzać urządzeniami i korzystać z raportów o wykrytych zagrożeniach](mde-plan1-getting-started.md)
 - [Omówienie konserwacji i operacji](mde-p1-maintenance-operations.md)
 
 > [!TIP]
@@ -62,7 +62,7 @@ Program Defender for Endpoint Plan 1 obejmuje następujące funkcje:
 
 Poniższe sekcje zawierają więcej szczegółowych informacji o tych możliwościach. 
 
-## <a name="next-generation-protection"></a>Ochrona następnej generacji
+## <a name="next-generation-protection"></a>Ochrona nowej generacji
 
 Ochrona następnej generacji obejmuje niezawodną ochronę przed złośliwym oprogramowaniem i oprogramowaniem antywirusowym. Ochrona następnej generacji zapewnia: 
 
@@ -88,7 +88,7 @@ Aby dowiedzieć się więcej, zobacz następujące artykuły:
 - [Akcje dotyczące odpowiedzi na urządzeniach](respond-machine-alerts.md) 
 - [Akcje dotyczące odpowiedzi dotyczące plików](respond-file-alerts.md)
 
-## <a name="attack-surface-reduction"></a>Zmniejszenie powierzchni ataków
+## <a name="attack-surface-reduction"></a>Zmniejszanie obszaru podatnego na ataki
 
 Powierzchnie ataków Twojej organizacji to wszystkie miejsca, w których jest narażona na cyberataki. Za pomocą usługi Defender for Endpoint Plan 1 możesz zmniejszyć liczbę punktów ataków, chroniąc urządzenia i aplikacje używane przez Twoją organizację. Funkcje ograniczania powierzchni ataków zawarte w programie Defender dla planu punktu końcowego 1 opisano w poniższych sekcjach.
 
@@ -165,7 +165,7 @@ Aby dowiedzieć się więcej, [zobacz Microsoft 365 Defender przegląd portalu](
 
 ### <a name="role-based-access-control"></a>Kontrola dostępu oparta na rolach
 
-Za pomocą kontroli dostępu opartej na rolach administrator zabezpieczeń może tworzyć role i grupy w celu udzielenia odpowiedniego dostępu do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). W usłudze RBAC masz pełną kontrolę nad tym, kto może uzyskać dostęp do usługi Defender dla chmury oraz co mogą oni widzieć i robić. 
+Za pomocą kontroli dostępu opartej na rolach administrator zabezpieczeń może tworzyć role i grupy w celu udzielenia odpowiedniego dostępu do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Dzięki RBAC masz pełną kontrolę nad tym, kto ma dostęp do Defender dla Chmury dostępu oraz co mogą oni widzieć i robić. 
 
 Aby dowiedzieć się więcej, zobacz [Zarządzanie dostępem do portalu za pomocą kontroli dostępu opartej na rolach](rbac.md).
 
@@ -178,7 +178,7 @@ Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security
 - Centrum **akcji zawiera** listę działań naprawczych, które zostały wykonane. Jeśli na przykład plik zostanie wysłany do kwarantanny lub adres URL zostanie zablokowany, każda akcja będzie wymieniona w Centrum akcji na **karcie** Historia.
 - Sekcja **Raporty** zawiera raporty, w których są wyświetlane informacje o wykrytych zagrożeniach i o ich stanie. 
 
-Aby dowiedzieć się więcej, [zobacz Rozpoczynanie pracy z programem Microsoft Defender dla punktu końcowego (plan 1](mde-plan1-getting-started.md)).
+Aby dowiedzieć się więcej, [zobacz Wprowadzenie z Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](mde-plan1-getting-started.md).
 
 ### <a name="apis"></a>Interfejsy API
 
@@ -199,7 +199,7 @@ Większość organizacji używa różnych urządzeń i systemów operacyjnych. O
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Porównanie programu Microsoft Defender dla planu punktu końcowego 1 z planem 2](defender-endpoint-plan-1-2.md)
-- [Konfigurowanie usługi Defender dla planu 1 punktu końcowego](mde-p1-setup-configuration.md)
-- [Rozpoczynanie pracy z programem Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
+- [Porównanie Ochrona punktu końcowego w usłudze Microsoft Defender plan 1 z planem 2](defender-endpoint-plan-1-2.md)
+- [Instalowanie i konfigurowanie ochrony punktu końcowego w usłudze Defender (plan 1)](mde-p1-setup-configuration.md)
+- [Wprowadzenie z programem Defender dla punktu końcowego (plan 1)](mde-plan1-getting-started.md)
 - [Zarządzanie programem Defender dla punktu końcowego (plan 1)](mde-p1-maintenance-operations.md)

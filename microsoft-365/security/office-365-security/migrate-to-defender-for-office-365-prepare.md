@@ -1,5 +1,5 @@
 ---
-title: Migrowanie do usługi Microsoft Defender Office 365 etap 1. Przygotowywanie
+title: Migrowanie do Ochrona usługi Office 365 w usłudze Microsoft Defender etap 1. Przygotowywanie
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,28 +16,28 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: migrationguides
-description: Wymagania wstępne dotyczące migrowania z usługi lub urządzenia ochrony innej firmy do programu Microsoft Defender w Office 365 ochrony.
+description: Wymagania wstępne procedury migrowania z usługi lub urządzenia ochrony innej firmy w celu Ochrona usługi Office 365 w usłudze Microsoft Defender ochrony.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f8a35fa7e8ac469a87861d25f45e7078eb4be940
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 019f7152f0f892abd19bb09ffa9449874b00340c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014843"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466592"
 ---
-# <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>Migrowanie do usługi Microsoft Defender dla Office 365 — Etap 1. Przygotowywanie
+# <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>Migrowanie do Ochrona usługi Office 365 w usłudze Microsoft Defender — Etap 1. Przygotowywanie
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 
 <br>
 
-|![Etap 1. Przygotowanie.](../../media/phase-diagrams/prepare.png) <br> Etap 1. Przygotowywanie|[![Etap 2. Konfigurowanie](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [Etap 2. Konfigurowanie](migrate-to-defender-for-office-365-setup.md)|[![Etap 3. Wniesienie](../../media/phase-diagrams/onboard.png)](migrate-to-defender-for-office-365-onboard.md) <br> [Etap 3. Wniesienie](migrate-to-defender-for-office-365-onboard.md)|
+|![Etap 1. Przygotowanie.](../../media/phase-diagrams/prepare.png) <br> Etap 1. Przygotowywanie|[![Etap 2. Konfigurowanie](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Etap 2. Konfigurowanie](migrate-to-defender-for-office-365-setup.md)|[![Etap 3. Wniesienie](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [Etap 3. Wniesienie](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 |*Jesteś tutaj!*|||
 
-Etap **1: Przygotowywanie** migracji do programu **[Microsoft Defender](migrate-to-defender-for-office-365.md#the-migration-process)** dla Office 365! Ten etap migracji obejmuje następujące kroki. Przed rozpoczęciem jakichkolwiek zmian należy zase spisać ustawienia w istniejącej usłudze ochrony. W przeciwnym razie możesz wykonać pozostałe kroki w dowolnej kolejności:
+Etap **1: Przygotowywanie migracji do programu** **[Ochrona usługi Office 365 w usłudze Microsoft Defender](migrate-to-defender-for-office-365.md#the-migration-process)**! Ten etap migracji obejmuje następujące kroki. Przed rozpoczęciem jakichkolwiek zmian należy zase spisać ustawienia w istniejącej usłudze ochrony. W przeciwnym razie możesz wykonać pozostałe kroki w dowolnej kolejności:
 
 1. [Inwentaryzacja ustawień w istniejącej usłudze ochrony](#inventory-the-settings-at-your-existing-protection-service)
 2. [Sprawdzanie istniejącej konfiguracji ochrony w programie Microsoft 365](#check-your-existing-protection-configuration-in-microsoft-365)
@@ -50,11 +50,11 @@ Etap **1: Przygotowywanie** migracji do programu **[Microsoft Defender](migrate-
 
 Dobrym pomysłem jest pełny spis ustawień, reguł, wyjątków i tym podobnej od istniejącej usługi ochrony, ponieważ prawdopodobnie nie będziesz mieć dostępu do informacji po anulowaniu subskrypcji.
 
-**Jednak nie należy automatycznie ani arbitrowo ponownie tworzyć wszystkich istniejących dostosowań w programie Defender dla systemu Office 365.** W najlepszym razie możesz wprowadzić ustawienia, które nie są już wymagane, istotne ani funkcjonalne. Co gorsza, niektóre z poprzednich dostosowań w rzeczywistości mogą spowodować problemy z zabezpieczeniami w programie Defender dla Office 365.
+**Jednak nie należy automatycznie ani arbitrowo ponownie tworzyć wszystkich istniejących dostosowań w programie Ochrona usługi Office 365 w usłudze Defender.** W najlepszym razie możesz wprowadzić ustawienia, które nie są już wymagane, istotne ani funkcjonalne. Co gorsza, niektóre z wcześniejszych dostosowań w rzeczywistości mogą spowodować problemy z zabezpieczeniami w Ochrona usługi Office 365 w usłudze Defender.
 
-Testowanie i obserwacja natywnych możliwości i zachowania usługi Defender dla systemu Office 365 ostatecznie będzie określać konieczne zastąpienia i ustawienia. Pomocne może okazać się podzielnie ustawień istniejącej usługi ochrony na następujące kategorie:
+Testowanie i obserwacje natywnych możliwości i zachowania funkcji aplikacji Ochrona usługi Office 365 w usłudze Defender ostatecznie określają konieczne zastąpienia i ustawienia. Pomocne może okazać się podzielnie ustawień istniejącej usługi ochrony na następujące kategorie:
 
-- **Filtrowanie połączenia lub zawartości**: Prawdopodobnie nie będziesz potrzebować większości tych dostosowań w programie Defender dla systemu Office 365.
+- **Filtrowanie połączenia lub zawartości**: Prawdopodobnie nie będziesz potrzebować większości tych dostosowań w programie Ochrona usługi Office 365 w usłudze Defender.
 - **Routing biznesowy**. Większość dostosowań, które należy ponownie utworzyć, prawdopodobnie znajdzie się w tej kategorii. Na przykład możesz ponownie utworzyć te ustawienia w programie Microsoft 365, Exchange reguł przepływu poczty e-mail (nazywanych także regułami transportu), łączników i wyjątków przed fałszerwną analizą.
 
 Zamiast przesuwać stare ustawienia na Microsoft 365, zalecamy podejście kaskadowe, które obejmuje fazę pilotażową z stale rosnącym członkostwem użytkowników i dostosowywaniem na podstawie obserwacji opartym na równoważeniu kwestii zabezpieczeń z potrzebami biznesowymi organizacji.
@@ -79,7 +79,7 @@ Przejrzyj istniejące funkcje ochrony w programie Microsoft 365 i rozważ usuni�
 
 - Przekazywanie Microsoft 365 e-mail z lokalnych serwerów poczty e-mail za pomocą Microsoft 365 samo w sobie może być złożonym projektem. Prostym przykładem jest niewielka liczba aplikacji lub urządzeń, które wysyłają większość ich wiadomości do adresatów wewnętrznych i nie są używane do wysyłki masowej. Szczegółowe [informacje można znaleźć](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) w tym przewodniku. Bardziej rozbudowane środowiska muszą być bardziej przemyślane. Marketingowe wiadomości e-mail i wiadomości, które mogą być widziane przez adresatów jako spam, są niedozwolone.
 
-- Funkcja Defender Office 365 nie ma funkcji agregowania raportów DMARC. Odwiedź katalog [Microsoft Intelligent Security Association (MISA),](https://www.microsoft.com/misapartnercatalog) aby wyświetlić dostawców zewnętrznych, którzy oferują raporty DMARC dla Microsoft 365.
+- Ochrona usługi Office 365 w usłudze Defender nie ma funkcji agregowania raportów DMARC. Odwiedź katalog [Microsoft Intelligent Security Association (MISA),](https://www.microsoft.com/misapartnercatalog) aby wyświetlić dostawców zewnętrznych, którzy oferują raporty DMARC dla Microsoft 365.
 
 ## <a name="move-features-that-modify-messages-into-microsoft-365"></a>Przenoszenie funkcji modyfikujących wiadomości do Microsoft 365
 
@@ -100,7 +100,7 @@ Firma Microsoft współpracuje z branżą w celu obsługi standardu ARC (Authent
 
 ## <a name="account-for-any-active-phishing-simulations"></a>Konto dla dowolnej aktywnej symulacyjnej próby wyłudzania informacji
 
-Jeśli masz aktywne przykłady wyłudzania informacji od innych firm, musisz zapobiec zidentyfikowaniu wiadomości, linków i załączników jako prób wyłudzenia informacji przez usługę Defender for Office 365. Aby uzyskać więcej informacji, zobacz Konfigurowanie przykładów wyłudzania informacji innych firm [w zaawansowanych zasadach dostarczania](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
+Jeśli masz aktywne przykłady wyłudzania informacji od innych firm, musisz zapobiec zidentyfikowaniu wiadomości, linków i załączników jako prób wyłudzenia informacji przez Ochrona usługi Office 365 w usłudze Defender. Aby uzyskać więcej informacji, zobacz Konfigurowanie przykładów wyłudzania informacji innych firm [w zaawansowanych zasadach dostarczania](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 
 ## <a name="define-spam-and-bulk-user-experiences"></a>Definiowanie spamu i zbiorczego obsługi użytkowników
 
@@ -114,7 +114,7 @@ Jeśli masz aktywne przykłady wyłudzania informacji od innych firm, musisz zap
   - [Spoof intelligence](anti-spoofing-protection.md) will not work properly.
   - Prawdopodobnie otrzymasz dużą liczbę wyników fałszywie dodatnich (dobra wiadomość oznaczona jako zła).
 
-  Ostatecznie decyzja należy do Ciebie, jeśli chcesz uniemożliwić dostarczenie wiadomości e-mail do folderu Wiadomości-śmieci na rzecz dostarczania ich do kwarantanny. Jedno jest jednak pewne: jeśli środowisko programu Defender dla systemu Office 365 różni się od tego, do czego służą Twoi użytkownicy, musisz powiadomić ich i zapewnić podstawowe szkolenie. Wdaj się w nauce z programu pilotażowego i upewnij się, że użytkownicy są przygotowani na nowe zachowanie w celu dostarczania wiadomości e-mail.
+  Ostatecznie decyzja należy do Ciebie, jeśli chcesz uniemożliwić dostarczenie wiadomości e-mail do folderu Wiadomości-śmieci na rzecz dostarczania ich do kwarantanny. Jedno jest jednak pewne: jeśli środowisko w programie Ochrona usługi Office 365 w usłudze Defender różni się od tego, do czego służą Twoi użytkownicy, musisz powiadomić ich i udostępnić im podstawowe szkolenie. Wdaj się w nauce z programu pilotażowego i upewnij się, że użytkownicy są przygotowani na nowe zachowanie w celu dostarczania wiadomości e-mail.
 
 - **Wanted bulk mail vs. unwanted bulk mail**: Many protection systems allow users to allow or block bulk email for themselves. Te ustawienia nie są łatwo migrowane do usługi Microsoft 365, dlatego warto rozważyć współpracę z pracownikami sieci VI i ich pracownikami w celu ponownego odtworzenia istniejących konfiguracji w Microsoft 365.
 
@@ -124,10 +124,10 @@ Jeśli masz aktywne przykłady wyłudzania informacji od innych firm, musisz zap
 
 ## <a name="identify-and-designate-priority-accounts"></a>Identyfikowanie i wyznaczanie kont priorytetowych
 
-Jeśli ta funkcja jest dla Ciebie **dostępna, konta** priorytetowe  i tagi użytkownika mogą pomóc w zidentyfikowaniu ważnych użytkowników Microsoft 365 wyróżniania ich w raportach. Aby uzyskać więcej informacji, zobacz Tagi użytkowników w [programie Microsoft Defender Office 365](user-tags.md) i [Zarządzanie kontami o priorytecie i monitorowanie ich](/microsoft-365/admin/setup/priority-accounts).
+Jeśli ta funkcja jest dla Ciebie **dostępna, konta** priorytetowe  i tagi użytkownika mogą pomóc w zidentyfikowaniu ważnych użytkowników Microsoft 365 wyróżniania ich w raportach. Aby uzyskać więcej informacji, zobacz [Tagi użytkowników w Ochrona usługi Office 365 w usłudze Microsoft Defender](user-tags.md) [i Zarządzanie kontami priorytetów i monitorowanie ich](/microsoft-365/admin/setup/priority-accounts).
 
 ## <a name="next-step"></a>Następny krok
 
-**Gratulacje**! Ukończono etap **Przygotuj** migrację do [programu Microsoft Defender dla systemu Office 365](migrate-to-defender-for-office-365.md#the-migration-process)!
+**Gratulacje**! Ukończono etap **Przygotuj** migrację do programu [Ochrona usługi Office 365 w usłudze Microsoft Defender](migrate-to-defender-for-office-365.md#the-migration-process)!
 
 - Przejdź do [fazy 2. Konfigurowanie](migrate-to-defender-for-office-365-setup.md).

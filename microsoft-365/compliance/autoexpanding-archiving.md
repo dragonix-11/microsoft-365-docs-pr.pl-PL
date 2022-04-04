@@ -1,5 +1,5 @@
 ---
-title: Informacje o automatycznym rozwijaniu archiwizacji
+title: Dowiedz się więcej na temat automatycznego rozszerzania archiwizacji
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Dowiedz się więcej o automatycznym rozwijaniu archiwizacji, która zapewnia dodatkową przestrzeń dyskową archiwum dla Exchange Online skrzynki pocztowe.
-ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b55c0504f04f896377c1e1b0a4dccdacdb8bbc37
+ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328865"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63761549"
 ---
-# <a name="learn-about-auto-expanding-archiving"></a>Informacje o automatycznym rozwijaniu archiwizacji
+# <a name="learn-about-auto-expanding-archiving"></a>Dowiedz się więcej na temat automatycznego rozszerzania archiwizacji
 
 W Office 365 archiwalne skrzynki pocztowe zapewniają użytkownikom dodatkowe miejsce do magazynowania. Po włączeniu archiwaowej skrzynki pocztowej użytkownika dostępnych jest maksymalnie 100 GB dodatkowej przestrzeni dyskowej. W przeszłości po osiągnięciu limitu 100 GB przestrzeni dyskowej organizacje musiały skontaktować się z firmą Microsoft w celu zażądania dodatkowego miejsca do magazynowania dla archiwaowej skrzynki pocztowej. Na tym nie koniec.
 
@@ -79,6 +79,10 @@ Na poniższych zrzutach ekranu przedstawiono listę folderów przed i po tym, ja
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook uzyskiwania dostępu do elementów w archiwum rozwiniętym automatycznie
 
 Aby uzyskać dostęp do wiadomości przechowywanych w archiwum rozszerzonym automatycznie, użytkownicy muszą korzystać z jednego z następujących klientów Outlook klientów:
+
+- Outlook jako część Aplikacje Microsoft 365 dla przedsiębiorstw (wcześniej Office 365 ProPlus)
+
+- Outlook jako część usługi Aplikacje Microsoft 365 dla firm (wcześniej Office 365 Business)
 
 - Outlook 2016 lub Outlook 2019 dla Windows
 

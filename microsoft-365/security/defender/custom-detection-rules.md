@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: dac2a68249d90b212e6bbcaacdec84918560deb5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014673"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755803"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Tworzenie reguł wykrywania niestandardowego i zarządzanie nimi
 
@@ -203,7 +203,7 @@ Aby wyświetlić wszystkie istniejące reguły wykrywania niestandardowego, prze
 
 Aby wyświetlić pełne informacje na temat niestandardowej reguły wykrywania, przejdź do **strony Reguły wykrywania w** aplikacji **HuntingCustom** > , a następnie wybierz jej nazwę. Następnie możesz wyświetlić ogólne informacje dotyczące reguły, w tym informacje o stanie jej uruchomienia i zakresie. Strona zawiera również listę wyzwalanych alertów i akcji.
 
-![Strona szczegółów reguły wykrywania niestandardowego.](../../media/custom-detect-rules-view.png)<br>
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="Strona szczegółów reguły wykrywania niestandardowego w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *Szczegóły reguły wykrywania niestandardowego*
 
 Na tej stronie możesz również podjąć następujące działania dotyczące reguły:

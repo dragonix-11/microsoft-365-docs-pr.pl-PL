@@ -17,12 +17,12 @@ ms.collection:
 description: W celu utrzymania zaufania użytkowników do korzystania z poczty e-mail firma Microsoft stosować różne zasady i technologie w celu ochrony naszych użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2894d565a08cf500199b123a0acd738de129faf0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7af1a901bf9b3b27f08a7a3d36de69d49c2c85e9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984588"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679571"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Usługi dla osób niebędących klientami wysyłające pocztę na Microsoft 365
 
@@ -35,15 +35,12 @@ To omówienie zawiera informacje o korzyściach, które udostępniamy Twojej org
 
 ## <a name="sender-solutions"></a>Rozwiązania dla nadawców
 
-****
-
 |Usługa|Korzyści|
 |---|---|
 |Ta zawartość Pomocy online|Funkcje: <ul><li>Punkt wyjścia w przypadku wszelkich pytań dotyczących dostarczania komunikacji do użytkowników usługi EOP.</li><li>Zawiera prosty przewodnik online z naszymi zasadami i wymaganiami.</li><li>Omówienie filtrów wiadomości-śmieci i technologii uwierzytelniania w firmie Microsoft.</li><ul>|
 |[Pomoc techniczna Microsoft](#microsoft-support)|Zapewnia wsparcie dla samodzielnej pomocy i eskalacji w przypadku problemów z dostarczaniem.|
 |[Portal delist adresów IP ochrony przed spamem](#anti-spam-ip-delist-portal)|Narzędzie do przesyłania żądania delistowania adresów IP. Przed przesłaniem tego żądania na nadawcy spoczywa odpowiedzialność za zapewnienie, że każda kolejna wiadomość pochodząca z odpowiedniego adresu IP nie będzie obraźliwa ani złośliwa.|
 |[Zgłaszanie nadużyć i spamu w przypadku wiadomości-śmieci pochodzących z Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Wiadomości-śmieci i inne niechciane wiadomości e-mail nie są Exchange Online, co zaśmieca Internet i system poczty.|
-|
 
 ## <a name="microsoft-support"></a>Pomoc techniczna Microsoft
 

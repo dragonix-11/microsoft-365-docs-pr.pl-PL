@@ -1,5 +1,5 @@
 ---
-title: Migracja skrzynek pocztowych między dzierżawami
+title: Migracja skrzynki pocztowej między dzierżawami
 description: Jak przenosić skrzynki pocztowe między Microsoft 365 lub Office 365 dzierżawami.
 ms.author: kvice
 author: kelleyvice-msft
@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a368102b6cb4eabaadd459fd185d18e3a7dc7381
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e9ec5c27f5dabfa2df0f12ca6daecfcef860547c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323405"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499380"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migracja skrzynek pocztowych między dzierżawami (wersja Preview)
 
@@ -38,7 +38,7 @@ Migracje skrzynek Exchange między dzierżawami są obsługiwane tylko w trybie 
 W tym artykule opisano proces przenoszenia skrzynek pocztowych między dzierżawami i przedstawiono wskazówki dotyczące sposobu przygotowywania dzierżaw źródłowych i docelowych dla przenoszenia zawartości skrzynki Exchange Online pocztowej.
 
    > [!NOTE]
-   > Ostatnio zaktualizowaliśmy nasze kroki konfiguracji dotyczące włączania migracji skrzynek pocztowych między dzierżawami, aby nie wymagały już magazynu kluczy platformy Azure! Jeśli dołączasz do tej wersji Preview po raz pierwszy, nie musisz nic więcej zrobić i możesz wykonać kroki opisane w tym dokumencie. Jeśli rozpoczęto konfigurowanie dzierżaw przy użyciu poprzedniej metody akv, zdecydowanie zalecamy zatrzymanie lub usunięcie tej konfiguracji, aby rozpocząć korzystanie z tej nowej metody. Jeśli migracja skrzynek pocztowych jest w toku przy użyciu poprzedniej metody akv, poczekaj na ukończenie istniejących migracji i wykonaj poniższe czynności, aby włączyć nową uproszczoną metodę. Kroki konfiguracji wymaganego magazynu kluczy platformy Azure są archiwizowane, ale można **[je znaleźć tutaj](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)**, w celu ich odwołania.
+   > Ostatnio zaktualizowaliśmy nasze kroki konfiguracji dotyczące włączania migracji skrzynek pocztowych między dzierżawami, aby nie wymagały już usługi Azure Key Vault! Jeśli dołączasz do tej wersji Preview po raz pierwszy, nie musisz nic więcej zrobić i możesz wykonać kroki opisane w tym dokumencie. Jeśli rozpoczęto konfigurowanie dzierżaw przy użyciu poprzedniej metody akv, zdecydowanie zalecamy zatrzymanie lub usunięcie tej konfiguracji, aby rozpocząć korzystanie z tej nowej metody. Jeśli migracja skrzynek pocztowych jest w toku przy użyciu poprzedniej metody akv, poczekaj na ukończenie istniejących migracji i wykonaj poniższe czynności, aby włączyć nową uproszczoną metodę. Kroki Key Vault wymaganej konfiguracji usługi Azure są archiwizowane, ale można je **[znaleźć tutaj,](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)** w celu ich odwołania.
 
 ## <a name="preparing-source-and-target-tenants"></a>Przygotowywanie dzierżawy źródłowej i docelowej
 
@@ -50,7 +50,7 @@ Ponadto wymagana jest co najmniej jedna grupa zabezpieczeń z obsługą poczty w
 
 W celu uzyskania identyfikatora Microsoft 365 musisz również komunikować się z zaufaną firmą partnerską (z którą chcesz przenosić skrzynki pocztowe). Ten identyfikator dzierżawy jest używany w polu Nazwa_domeny relacji organizacji.
 
-Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [centrum administracyjne platformy Microsoft 365 i przejdź](https://go.microsoft.com/fwlink/p/?linkid=2024339) do strony [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Kliknij ikonę kopiowania dla właściwości Identyfikator dzierżawy, aby skopiować ją do schowka.
+Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [Centrum administracyjne platformy Microsoft 365 i przejdź](https://go.microsoft.com/fwlink/p/?linkid=2024339) do strony [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Kliknij ikonę kopiowania dla właściwości Identyfikator dzierżawy, aby skopiować ją do schowka.
 
 ### <a name="configuration-steps-to-enable-your-tenants-for-cross-tenant-mailbox-migrations"></a>Czynności konfiguracyjne umożliwiające dzierżawie migrowanie skrzynek pocztowych między dzierżawami
 
@@ -67,7 +67,7 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [centrum admi
 
    ![Azure Active Directory przycisku](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
 
-3. Na lewym pasku nawigacyjnym wybierz pozycję Rejestracja aplikacji.
+3. Na lewym pasku nawigacyjnym wybierz pozycję Rejestracje aplikacji.
 
 4. Wybierz pozycję Nowa rejestracja
 
@@ -79,7 +79,7 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [centrum admi
 
 6. W prawym górnym rogu strony pojawi się okno podręczne z powiadomieniem z powiadomieniem o pomyślnym utworzeniu aplikacji.
 
-7. Wróć do strony głównej, Azure Active Directory i kliknij pozycję Rejestracje aplikacji.
+7. Wstecz do ekranu Azure Active Directory i kliknij przycisk Rejestracje aplikacji.
 
 8. W obszarze Posiadane aplikacje znajdź utworzoną aplikację i kliknij ją.
 
@@ -112,7 +112,7 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [centrum admi
 18. W oknie Dodawanie klienta jako tajnego wprowadź opis i skonfiguruj odpowiednie ustawienia wygasania.
 
       > [!NOTE]
-      > Jest to hasło, które będzie używane podczas tworzenia punktu końcowego migracji. Bardzo ważne jest, aby skopiować to hasło do Schowka i skopiować to hasło do bezpiecznej/tajnej lokalizacji. To jest jedyny taki czas, w których będzie można zobaczyć to hasło. Jeśli w jakiś sposób go utracisz lub chcesz go zresetować, możesz zalogować się z powrotem do naszego portalu Azure Portal, przejść do rejestracji aplikacji, znaleźć aplikację do migracji, wybrać pozycję Tajemnice & certyfikatów i utworzyć nową tajemnicę dla swojej aplikacji.
+      > Jest to hasło, które będzie używane podczas tworzenia punktu końcowego migracji. Bardzo ważne jest, aby skopiować to hasło do Schowka i skopiować to hasło do bezpiecznej/tajnej lokalizacji. To jest jedyny taki czas, w których będzie można zobaczyć to hasło. Jeśli w jakiś sposób go utracisz lub chcesz go zresetować, możesz zalogować się ponownie do naszej usługi Azure Portal, przejść do usługi Rejestracje aplikacji, znaleźć aplikację do migracji, wybrać pozycję Tajemnice & certyfikatów i utworzyć nową tajemnicę dla swojej aplikacji.
 
 19. Teraz, gdy pomyślnie utworzono aplikację do migracji i klucz tajny, należy wyrazić zgodę na aplikację. Aby wyrazić zgodę na aplikację, wróć do strony Azure Active Directory, kliknij pozycję aplikacje Enterprise w lewym okienku nawigacji, znajdź utworzoną aplikację do migracji, zaznacz ją i wybierz pozycję Uprawnienia w lewym okienku nawigacji.
 
@@ -148,7 +148,7 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [centrum admi
    
    # Enable customization if tenant is dehydrated
      $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehy -eq $true) {Enable-OrganizationCustomization}
+     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
      
    $AppId = "[guid copied from the migrations app]"
 
@@ -209,7 +209,7 @@ Aby uzyskać identyfikator dzierżawy subskrypcji, zaloguj się do [centrum admi
 > [!NOTE]
 > Identyfikator dzierżawy wprowadzany jako identyfikator $sourceTenantId i $targetTenantId to identyfikator GUID, a nie nazwa domeny dzierżawy. Aby uzyskać przykład identyfikatora dzierżawy i informacje o znajdowaniu identyfikatora dzierżawy, zobacz Znajdowanie identyfikatora Microsoft 365 [dzierżawy](/onedrive/find-your-office-365-tenant-id).
    
-### <a name="how-do-i-know-this-worked"></a>Skąd wiadomo, że to zadziałało?
+### <a name="how-do-i-know-this-worked"></a>Jak mogę, że to zadziałało?
 
 Konfigurację migracji skrzynek pocztowych między dzierżawami możesz sprawdzić, uruchamiając polecenie cmdlet [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) względem punktu końcowego migracji między dzierżawami utworzonego w dzierżawie docelowej.
 
@@ -284,16 +284,16 @@ Upewnij się, że w organizacji docelowej są ustawione następujące obiekty i 
      |                      |                                                                         |
 
    - Dodatkowe atrybuty mogą być już zawarte w Exchange zapisu hybrydowego. Jeśli nie, powinny być uwzględniane.
-   - msExchBlockedSendersHash — zapisuje bezpieczne i zablokowane dane nadawców w trybie online z klientów do lokalnej usługi Active Directory.
-   - msExchSafeRecipientsHash — zapisuje bezpieczne i zablokowane dane nadawców w trybie online z klientów do lokalnej usługi Active Directory.
-   - msExchSafeSendersHash — zapisuje z powrotem dane bezpiecznych i zablokowanych nadawców w trybie online z klientów do lokalnej usługi Active Directory.
+   - msExchBlockedSendersHash — zapisuje z powrotem dane bezpiecznych i zablokowanych nadawców w trybie online z klientów do lokalna usługa Active Directory.
+   - msExchSafeRecipientsHash — zapisuje z powrotem dane bezpiecznych i zablokowanych nadawców w trybie online z klientów do lokalna usługa Active Directory.
+   - msExchSafeSendersHash — zapisuje z powrotem dane bezpiecznych i zablokowanych nadawców w trybie online z klientów do lokalna usługa Active Directory.
 
 2. Jeśli źródłową skrzynkę pocztową jest w  obiektu LitigationHold, a rozmiar elementów odzyskiwalnych skrzynki pocztowej źródłowych jest większy niż domyślny rozmiar naszej bazy danych (30 GB), przeniesienie nie będzie kontynuowane, ponieważ docelowy przydział jest mniejszy niż rozmiar źródłowej skrzynki pocztowej. Możesz zaktualizować docelowy obiekt MailUser, aby przenieść flagi skrzynki pocztowej ELC ze środowiska źródłowego do docelowego, co wyzwala system docelowy w celu rozszerzenia przydziału użytkownika poczty do 100 GB, umożliwiając tym samym przeniesienie do miejsca docelowego. Poniższe instrukcje działają tylko w przypadku tożsamości hybrydowej z uruchomionym usługą Azure AD Połączenie, ponieważ polecenia do oznaczania flag ELC nie są widoczne dla administratorów dzierżawy.
 
     > [!NOTE]
     > PRZYKŁADOWY — BEZ GWARANCJI
     >
-    > W tym skrypcie założono połączenie zarówno ze źródłową skrzynką pocztową (w celu uzyskania wartości źródłowych), jak i z docelową lokalną usługą Active Directory (w celu sygnatury obiektu ADUser). Jeśli w źródle jest włączony proces sądowy lub odzyskiwanie pojedynczych elementów, ustaw je na koncie docelowym.  Spowoduje to zwiększenie rozmiaru magazynu w koncie docelowym do 100 GB.
+    > W tym skrypcie założono połączenie zarówno ze źródłową skrzynką pocztową (w celu uzyskania wartości źródłowych), jak i z obiektem docelowym lokalna usługa Active Directory (sygnaturą obiektu ADUser). Jeśli w źródle jest włączony proces sądowy lub odzyskiwanie pojedynczych elementów, ustaw je na koncie docelowym.  Spowoduje to zwiększenie rozmiaru magazynu w koncie docelowym do 100 GB.
 
     ```powershell
     $ELCValue = 0
@@ -399,7 +399,7 @@ Get-MoveRequest -Flags "CrossTenant"
 **Czy możesz podać przykładowe skrypty do kopiowania atrybutów używanych podczas testowania?**
 
 > [!NOTE]
-> PRZYKŁADOWE — W STANIE TAKIM, W PRZYPADKU KTÓREGO NIE MA GWARANCJI Ten skrypt zakłada połączenie zarówno ze źródłową skrzynką pocztową (w celu uzyskania wartości źródłowych), jak i z lokalnym obiektem Usługi domenowe w usłudze Active Directory (w celu sygnatury obiektu ADUser). Jeśli w źródle jest włączony proces sądowy lub odzyskiwanie pojedynczych elementów, ustaw je na koncie docelowym.  Spowoduje to zwiększenie rozmiaru magazynu w koncie docelowym do 100 GB.
+> PRZYKŁAD — BEZ GWARANCJI Ten skrypt zakłada połączenie zarówno ze źródłową skrzynką pocztową (w celu uzyskania wartości źródłowych), jak i z docelowymi usługami domenowych lokalna usługa Active Directory (w celu sygnatury obiektu ADUser). Jeśli w źródle jest włączony proces sądowy lub odzyskiwanie pojedynczych elementów, ustaw je na koncie docelowym.  Spowoduje to zwiększenie rozmiaru magazynu w koncie docelowym do 100 GB.
 
 
 
@@ -516,7 +516,7 @@ Tak, jednak uprawnienia do magazynu są przechowywane tylko w sposób opisany w 
 
 - [Microsoft Docs | Zarządzanie uprawnieniami adresatów w aplikacji Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
-- [Pomoc | Microsoft Jak przyznać uprawnienia do Exchange skrzynki Outlook pocztowej w Office 365 dedykowanych](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+- [pomoc techniczna firmy Microsoft | Jak przyznać uprawnienia do Exchange skrzynki Outlook pocztowej w Office 365 dedykowanych](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
 **Masz jakieś zalecenia dotyczące partii?**
 
@@ -540,9 +540,9 @@ Migracja między dzierżawami migruje tylko dane skrzynek pocztowych i nic inneg
 
 Ponieważ migracje między dzierżawami nie eksportują etykiet i nie ma możliwości udostępniania etykiet między dzierżawami, można to osiągnąć tylko przez ponowne utworzyć etykiety w dzierżawie docelowej.
 
-**Czy obsługujesz przenoszenie grup Microsoft 365?**
+**Czy obsługujesz przenoszenie Grupy Microsoft 365?**
 
-Obecnie funkcja migracji skrzynek pocztowych między dzierżawami nie obsługuje migracji Microsoft 365 grup.
+Obecnie funkcja migracji skrzynek pocztowych między dzierżawami nie obsługuje migracji Grupy Microsoft 365.
 
 **Czy administrator dzierżawy źródłowej może przeprowadzać wyszukiwanie zbierania elektronicznych materiałów dowodowych w skrzynce pocztowej po migracji skrzynki pocztowej do nowej/docelowej dzierżawy?**
 
@@ -660,16 +660,16 @@ Nie, po migracji skrzynek pocztowych między dzierżawami nie działa zbierania 
       | Exchange Online — POP                              |
       | Exchange Online Protection                       |
       | Bariery informacyjne                             |
-      | Ochrona informacji dla Office 365 — Premium  |
-      | Ochrona informacji dla Office 365 — standardowe |
+      | Information Protection dla Office 365 — Premium  |
+      | Information Protection dla Office 365 — Standardowe |
       | Szczegółowe informacje przez MyAnalytics                          |
       | Microsoft 365 zaawansowanej inspekcji                  |
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
       | Microsoft MyAnalytics (Pełne)                     |
       | Office 365 Advanced eDiscovery                   |
-      | Microsoft Defender dla Office 365 (Plan 1)       |
-      | Microsoft Defender dla Office 365 (Plan 2)       |
+      | Ochrona usługi Office 365 w usłudze Microsoft Defender (Plan 1)       |
+      | Ochrona usługi Office 365 w usłudze Microsoft Defender (Plan 2)       |
       | Office 365 zarządzanie dostępem z uprawnieniami          |
       | Premium szyfrowania w Office 365                 |
       |                                                  |

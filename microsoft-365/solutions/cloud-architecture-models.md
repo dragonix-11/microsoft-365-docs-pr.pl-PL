@@ -13,18 +13,28 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b0a89bc8a79f3ea2c5c0b3c1f01039944565a75c
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: cdff93ed308767256df1adf8dcf9ce2f3eb095a4
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63014898"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755792"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Ilustracje przedstawiające architektów IT w chmurze firmy Microsoft
 
 Plakaty dotyczące architektury chmury zawierają informacje o usługach firmy Microsoft w chmurze, w tym usługach Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune i Microsoft Dynamics 365 oraz hybrydowych rozwiązaniach lokalnych i chmurowych. 
 
 Z tych zasobów mogą korzystać indyjenci it i architektzy, aby określić idealne rozwiązania dla ich obciążeń i podjąć decyzje dotyczące podstawowych składników infrastruktury, takich jak sieci, tożsamość i zabezpieczenia.
+
+<a name="zero trust"></a>
+### <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 planu wdrażania Zerowe zaufanie
+
+
+Na poniższej ilustracji przedstawiono plan wdrażania w zakresie budowania zabezpieczeń zerowego zaufania za pomocą Microsoft 365. Zero zaufania to nowy model zabezpieczeń, który zakłada naruszenie i sprawdza każde żądanie, tak jakby pochodziło z sieci niepod kontroli. Niezależnie od tego, skąd pochodzi żądanie lub do jakiego zasobu uzyskuje dostęp, w modelu zerowego zaufania uczy nas, jak "nigdy nie ufać, zawsze weryfikować".
+
+| Element | Opis |
+|:-----|:-----|
+|[![Ilustracja przedstawiająca plan Microsoft 365 zerowego zaufania.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Zaktualizowano marzec 2022 r. | Skorzystaj z poniższej ilustracji wraz z tym artykułem: [Microsoft 365 plan wdrażania zerowego zaufania](../security/Microsoft-365-zero-trust.md) <br/><br/>**Pokrewne przewodniki po rozwiązaniach** <br/> <ul><li>[Wdrażanie infrastruktury tożsamości na Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Zalecane konfiguracje tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Zarządzanie urządzeniami za pomocą usługi Intune](manage-devices-with-intune-overview.md)</li><li>[Ocenianie i pilotaż Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Wdrażanie Microsoft Information Protection rozwiązania](../compliance/information-protection-solution.md)</li><li>[Wdrażanie przepisów dotyczących ochrony danych osobowych za pomocą aplikacji Microsoft 365](information-protection-deploy.md)</li></ul>
 
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Typowe ataki i możliwości firmy Microsoft chroniące Twoją organizację
@@ -33,7 +43,7 @@ Dowiedz się więcej o najczęstszych atakach cyberprzestępczych i o tym, jak f
 
 | Element | Opis |
 |:-----|:-----|
-|[![Ilustracja przedstawiająca plakat o typowych atakach.](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Zaktualizowano we wrześniu 2021 r. | Ten plakat przedstawia ścieżkę typowych ataków i opisuje, które funkcje pomagają zatrzymać atakujących na każdym etapie ataków. <br/><br/>**Pokrewne przewodniki po rozwiązaniach** <br/> <ul><li>[Ocenianie i pilotaż Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Zalecane konfiguracje tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Wdrażanie przepisów dotyczących ochrony danych osobowych za pomocą aplikacji Microsoft 365](information-protection-deploy.md)</li><li>[Wdrażanie ochrony przed oprogramowaniem wymuszającym okup dla Microsoft 365 dzierżawy](ransomware-protection-microsoft-365.md)</li><li>[Rozwiązania ryzyka niejawnego programu testów w programie Microsoft 365](../compliance/insider-risk-solution-overview.md)</li></ul>
+|[![Ilustracja przedstawiająca plakat o typowych atakach.](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Zaktualizowano we wrześniu 2021 r. | Ten plakat przedstawia ścieżkę typowych ataków i opisuje, które funkcje pomagają zatrzymać atakujących na każdym etapie ataków. <br/><br/>**Pokrewne przewodniki po rozwiązaniach** <br/> <ul><li>[Ocenianie i pilotaż Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Zalecane konfiguracje tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Wdrażanie przepisów dotyczących ochrony danych osobowych za pomocą aplikacji Microsoft 365](information-protection-deploy.md)</li><li>[Wdrażanie ochrony przed oprogramowaniem wymuszającym okup dla Microsoft 365 dzierżawy](ransomware-protection-microsoft-365.md)</li><li>[Rozwiązania dotyczące ryzyka wewnętrznego na platformie Microsoft 365](../compliance/insider-risk-solution-overview.md)</li></ul>
 
 <a name="identity"></a>
 ### <a name="microsoft-cloud-identity-for-it-architects"></a>Tożsamość chmury firmy Microsoft dla architektów IT
@@ -51,7 +61,7 @@ Co muszą wiedzieć indekscyjni indycyjni indekscyjni indekcyjni instycydowie o 
   
 | Element | Opis |
 |:-----|:-----|
-|[![Miniatura modelu zabezpieczeń w chmurze firmy Microsoft dla architektów przedsiębiorstwa.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Zaktualizowano w lutym 2022 r. | Ten model zawiera: <ul><li>Obowiązki firmy Microsoft w zakresie bezpieczeństwa klienta</li><li>Tożsamość i dostęp do urządzeń</li><li>Ochrona przed zagrożeniami</li><li>Ochrona informacji </li><li>Ochrona aplikacji w chmurze </li></ul><br/>|
+|[![Miniatura modelu zabezpieczeń w chmurze firmy Microsoft dla architektów przedsiębiorstwa.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Zaktualizowano w lutym 2022 r. | Ten model zawiera: <ul><li>Obowiązki firmy Microsoft w zakresie bezpieczeństwa klienta</li><li>Dostęp do tożsamość i urządzeń</li><li>Ochrona przed zagrożeniami</li><li>Ochrona informacji </li><li>Ochrona aplikacji w chmurze </li></ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>Sieci w chmurze firmy Microsoft dla architektów it

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score
+title: Wskaźnik bezpieczeństwa Microsoft
 description: W tym artykule opisano pozycję Microsoft Secure Score Microsoft 365 Defender portalu sieciowego, jak ulepszyć zabezpieczenia oraz czego mogą oczekiwać administratorzy zabezpieczeń.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
 ms.prod: m365-security
@@ -23,14 +23,14 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d31fa35ddf84b63a115cf3128673794617fcc730
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: ed80d57d25fea2f3c19b6fe6363f993569c68a92
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014853"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499453"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft Secure Score
+# <a name="microsoft-secure-score"></a>Wskaźnik bezpieczeństwa Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -49,7 +49,7 @@ Obejrzyj ten klip wideo, aby szybko oomówić wynik bezpiecznego.
 
 Organizacje uzyskują dostęp do niezawodnych wizualizacji metryk i trendów, integracji z innymi produktami firmy Microsoft, porównywania wyników z podobnymi organizacjami i wielu innych. Wynik może także odzwierciedlać, kiedy rozwiązania innych firm zajęły się zalecanymi działaniami.
 
-![Strona główna Secure Score.](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Strona główna programu Microsoft Secure Score w portalu Microsoft 365 Defender sieci Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="how-it-works"></a>Jak to działa
 
@@ -140,5 +140,5 @@ Jeśli masz problemy, po daj nam o tym znać, publikując wpis w społeczności 
 
 - [Ocenianie postawy dotyczącej zabezpieczeń](microsoft-secure-score-improvement-actions.md)
 - [Śledzenie historii bezpiecznego wyniku firmy Microsoft i spełnienie celów](microsoft-secure-score-history-metrics-trends.md)
-- [Co będzie wkrótce](microsoft-secure-score-whats-coming.md)
+- [Nadchodzące nowości](microsoft-secure-score-whats-coming.md)
 - [Co nowego](microsoft-secure-score-whats-new.md)

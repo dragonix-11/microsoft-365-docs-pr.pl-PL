@@ -18,12 +18,12 @@ description: Administratorzy mogą dowiedzieć się więcej o polach nagłówka 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8eaf567e4cbceae66a5acd1fa1a45565f15a4804
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 33cebd8cfd0d61b09a5d4976baec9708082c8ca3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "62990520"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679439"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Nagłówki wiadomości w programie Microsoft 365
 
@@ -60,8 +60,6 @@ Poszczególne pola i wartości są opisane w poniższej tabeli.
 > [!NOTE]
 > Nagłówek **X-Forefront-Antispam-Report** zawiera wiele różnych pól i wartości. Pola, które nie są opisane w tabeli, są używane wyłącznie przez zespół ochrony przed spamem firmy Microsoft do celów diagnostycznych.
 
-****
-
 |Pole|Opis|
 |---|---|
 |`ARC`|Protokół `ARC` ma następujące pola: <ul><li>`AAR`: rejestruje zawartość nagłówka **Authentication-results (Wyniki** uwierzytelniania) z rekordów DMARC.</li><li>`AMS`: zawiera podpisy kryptograficzne wiadomości.</li><li>`AS`: zawiera podpisy kryptograficzne nagłówków wiadomości. To pole zawiera tag sprawdzania poprawności `"cv="`łańcucha o nazwie , który uwzględnia wynik sprawdzania poprawności łańcucha jako **brak, przejście** **lub niepowodzenie****.**</li></ul>|
@@ -87,18 +85,14 @@ Poszczególne pola i wartości są opisane w poniższej tabeli.
 |`SFV:SPM`|Wiadomość została oznaczona jako spam przez filtrowanie spamu.|
 |`SRV:BULK`|Wiadomość została zidentyfikowany jako zbiorcza poczta e-mail za pomocą filtrowania spamu i progu ilości skarg zbiorczych. Gdy _parametr MarkAsSpamBulkMail_ `On` jest (domyślnie jest włączona), zbiorcza wiadomość e-mail jest oznaczona jako spam (SCL 6). Aby uzyskać więcej informacji, [zobacz Konfigurowanie zasad ochrony przed spamem](configure-your-spam-filter-policies.md).|
 |`X-CustomSpam: [ASFOption]`|Wiadomość została dopasowana do ustawienia Zaawansowanego filtru spamu (ASF). Aby wyświetlić wartość nagłówka X dla każdego ustawienia asf, zobacz Zaawansowane ustawienia filtru [spamu (ASF).](advanced-spam-filtering-asf-options.md)|
-|
 
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Pola nagłówka wiadomości X-Microsoft-Antispam
 
 W poniższej tabeli opisano przydatne pola w nagłówku wiadomości **X-Microsoft-Antispam** . Inne pola w tym nagłówku są używane wyłącznie przez zespół ochrony przed spamem firmy Microsoft do celów diagnostycznych.
 
-****
-
 |Pole|Opis|
 |---|---|
 |`BCL`|Zbiorczy poziom skarg (BCL) wiadomości. Wyższa wartość BCL wskazuje, że wiadomości masowej wysyłki z większą prawdopodobieństwem generują skargi (przez co są tym bardziej prawdopodobne, że są spamem). Aby uzyskać więcej informacji, zobacz [Zbiorczy poziom skarg (BCL).](bulk-complaint-level-values.md)|
-|
 
 ## <a name="authentication-results-message-header"></a>Nagłówek wiadomości wyników uwierzytelniania
 
@@ -151,8 +145,6 @@ Na poniższej liście opisano tekst, który jest dodawany do nagłówka **Authen
 
 W poniższej tabeli opisano pola i możliwe wartości dla każdego sprawdzania uwierzytelniania poczty e-mail.
 
-****
-
 |Pole|Opis|
 |---|---|
 |`action`|Oznacza działanie wykonane przez filtr spamu na podstawie wyników sprawdzenia DMARC. Przykład: <ul><li>**oreject** lub **o.reject**: oznacza "odrzuć". W tym Microsoft 365 ta akcja jest używana, gdy odbiera wiadomość, która kończy się niepowodzeniem sprawdzania DMARC z domeny, której rekord TXT DMARC ma zasady p=reject. Zamiast usuwać lub odrzucać wiadomość, Microsoft 365 oznacza wiadomość jako spam. Aby uzyskać więcej informacji o tym, dlaczego Microsoft 365 w ten sposób, zobacz Jak Microsoft 365 poczty przychodzącej, która kończy się [niepowodzeniem DMARC](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine**: Wskazuje, że wiadomości nieukońcowe będą dostarczane jako mniej niż 100% wiadomości nieukońcowych. Oznacza to, że wiadomość nie powiodła się DMARC i zasady zostały ustawione do kwarantanny, ale pole pct nie zostało ustawione na 100%, a system losowo nie określał, aby zastosować akcję DMARC zgodnie z zasadami określonej domeny.</li><li>**pct.reject**: Oznacza, że nieukończyty DMARC zostanie dostarczony w procentach krótszych niż 100% wiadomości. Oznacza to, że wiadomość nie powiodła się DMARC i zasady zostały ustawione na odrzucenie, ale pole pct nie zostało ustawione na 100%, a system losowo nie określał, aby zastosować akcję DMARC zgodnie z zasadami określonej domeny.</li><li>**Permerror**: Podczas oceny DMARC wystąpił błąd trwały, na przykład napotkanie niepoprawnie utworzonego rekordu TXT DMARC w systemie DNS. Próba ponownego przesłania tej wiadomości prawdopodobnie nie zakończy się innym wynikiem. W celu rozwiązania problemu może być konieczne skontaktowanie się z właścicielem domeny.</li><li>**błąd**: Wystąpił tymczasowy błąd podczas oceny DMARC. Możesz mieć możliwość zażądania, aby nadawca ponownie wysłał wiadomość później, aby poprawnie przetworzyć wiadomość e-mail.</li></ul>|
@@ -164,4 +156,3 @@ W poniższej tabeli opisano pola i możliwe wartości dla każdego sprawdzania u
 |`reason`|Przyczyna, dla których uwierzytelnienie złożone zakończyło się niepowodzeniem lub pomyślnie. Wartość jest 3-cyfrowym kodem. Przykład: <ul><li>**000**: W komunikacie nie powiodło się uwierzytelnianie jawne (`compauth=fail`). Na przykład wiadomość odebrana jako DMARC nie powiodła się wraz z akcją kwarantanny lub odrzuceniem.</li><li>**001**: W komunikacie nie powiodło się uwierzytelnianie niejawne (`compauth=fail`). Oznacza to, że w domenie wysyłającej nie zostały opublikowane rekordy uwierzytelniania wiadomości e-mail lub , jeśli tak, miały one słabsze zasady awarii (mechanizm SPF "miękkie niepowodzenie" lub neutralność, zasady DMARC z `p=none`).</li><li>**002**: Organizacja ma zasady dotyczące pary nadawca/domena, za pomocą których nie można wysyłać sfałszowanych wiadomości e-mail. To ustawienie jest ustawiane ręcznie przez administratora.</li><li>**010**: Wiadomość nie powiodła się DMARC z akcją odrzucenia lub kwarantanny, a domena wysyłająca jest jedną z zaakceptowanych domen organizacji (jest to część samoobsługi lub spoofingu wewnątrz organizacji).</li><li>**1xx** lub **7xx**: Wiadomość przeszła uwierzytelnianie (`compauth=pass`). Ostatnie dwie cyfry to wewnętrzne kody używane przez Microsoft 365.</li><li>**2xx**: Komunikat z uwierzytelnianiem niejawnym (soft-passed`compauth=softpass`). Ostatnie dwie cyfry to wewnętrzne kody używane przez Microsoft 365.</li><li>**3xx**: Komunikat nie został sprawdzony pod kątem uwierzytelniania złożonego (`compauth=none`).</li><li>**4xx** lub **9xx**: Komunikat ominął uwierzytelnianie złożone (`compauth=none`). Ostatnie dwie cyfry to wewnętrzne kody używane przez Microsoft 365.</li><li>**6xx**: Wiadomość nie powiodła się niejawnego uwierzytelniania wiadomości e-mail, a domena wysyłająca jest jedną z zaakceptowanych domen organizacji (jest to część fałszowania w organizacji lub samoobsługi wewnątrz organizacji).</li></ul>|
 |`smtp.mailfrom`|Domena adresu `5321.MailFrom` (znana również jako adres MAIL FROM, nadawca P1 lub nadawca koperty). Jest to adres e-mail, który jest używany na przykład w raportach o niedo dostarczeniu (nazywanych również raportami o niedo dostarczeniach lub wiadomościami bounce).|
 |`spf`|W tym artykule opisano wyniki sprawdzenia SPF dla wiadomości. Możliwe wartości: <ul><li>`pass (IP address)`: Sprawdzanie SPF dla wiadomości przekazano i zawiera adres IP nadawcy. Klient jest uprawniony do wysyłania lub przekazywania wiadomości e-mail w imieniu domeny nadawcy.</li><li>`fail (IP address)`: Sprawdzanie SPF dla wiadomości nie powiodło się i zawiera adres IP nadawcy. Jest to czasami nazywane _trudnym niepowodzeniem_.</li><li>`softfail (reason)`: Rekord SPF wyznaczył hosta jako niedozwolonego do wysyłania, ale jest w przejściu.</li><li>`neutral`: Rekord SPF wyraźnie stwierdza, że nie skonserduje, czy adres IP nie jest autoryzowany do wysyłania.</li><li>`none`: Domena nie ma rekordu SPF lub rekord SPF nie jest szacowany jako wynik.</li><li>`temperror`: Wystąpił tymczasowy błąd. Na przykład błąd DNS. To samo sprawdzanie może się powieść w późniejszym czasie.</li><li>`permerror`: Wystąpił błąd trwały. Na przykład domena ma rekord SPF o źle sformatowanym formacie.</li></ul>|
-|

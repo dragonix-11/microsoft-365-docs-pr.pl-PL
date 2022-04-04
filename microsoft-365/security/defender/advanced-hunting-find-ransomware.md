@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-ransomware
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 79dee9b6750e21d9b2482d4a0482d87d7fc7434b
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: e90661932880ee146b8b1b81f8412e97d674749d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "62996816"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755752"
 ---
-# <a name="hunt-for-ransomware"></a>Poszukiwania oprogramowania wymuszającego okup
+# <a name="hunt-for-ransomware"></a>Wyszukiwanie zagrożeń w przypadku oprogramowania wymuszającego okup
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -236,7 +236,7 @@ Konsolidowane zapytanie zwraca następujące wyniki:
 - **TotalEvidenceCount** — liczba obserwowanych znaków
 - **UniqueEvidenceCount** — liczba typów obserwowanych znaków
 
-:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="Przykład konsolidowane zapytanie dotyczące działania oprogramowania wymuszającego okup w portalu Microsoft 365 Defender sieci Microsoft 365 Defender sieci":::
+:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="Przykład konsolidowane zapytanie dotyczące działania oprogramowania wymuszającego okup w portalu Microsoft 365 Defender sieci Microsoft 365 Defender sieci" lightbox="../../media/advanced-hunting-ransomware-query.png":::
 
 *Wyniki kwerend pokazujące urządzenia, których dotyczy problem, i liczby różnych znaków aktywności oprogramowania wymuszającego okup*
 
@@ -248,13 +248,13 @@ Domyślnie w wynikach zapytania są zwracane tylko urządzenia, które mają wi�
 
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
-- [Praca z wynikami zapytania](advanced-hunting-query-results.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
+- [Praca z wynikami zapytań](advanced-hunting-query-results.md)
 - [Używanie zapytań udostępnionych](advanced-hunting-shared-queries.md)
-- [Opis schematu](advanced-hunting-schema-tables.md)
-- [Stosowanie najlepszych rozwiązań kwerend](advanced-hunting-best-practices.md)
+- [Analiza schematu](advanced-hunting-schema-tables.md)
+- [Stosowanie najlepszych rozwiązań dla zapytań](advanced-hunting-best-practices.md)
 
-## <a name="additional-ransomware-resources"></a>Dodatkowe zasoby oprogramowania wymuszającego okup
+## <a name="more-ransomware-resources"></a>Więcej zasobów oprogramowania wymuszającego okup
 
 Najważniejsze informacje od firmy Microsoft:
 
@@ -279,7 +279,7 @@ Microsoft Azure:
 - [Obrony platformy Azure w przypadku ataków na oprogramowanie wymuszające okup](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Zmaksymalizuj odporność oprogramowania wymuszającego okup na platformie Azure Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan tworzenia kopii zapasowej i przywracania w celu ochrony przed oprogramowaniem wymuszającym okup](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Pomóż chronić przed oprogramowaniem wymuszającym okup Microsoft Azure kopii zapasowej](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minutowy klip wideo)
+- [Pomóż chronić przed oprogramowaniem wymuszającym okup Microsoft Azure zapasowej](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minutowy klip wideo)
 - [Odzyskiwanie po najechania na tożsamość tożsamości przez tożsamość](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Zaawansowane wykrywanie wieloetapowego ataku w programie Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
 - [Wykrywanie oprogramowania wymuszającego okup w programie Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
@@ -290,7 +290,7 @@ Program Microsoft Defender dla aplikacji w chmurze:
 
 Wpisy w blogu zespołu zabezpieczeń firmy Microsoft:
 
-- [3 kroki, aby zapobiec oprogramowaniem wymuszającym okup i odzyskać je (wrzesień 2021 r.)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Trzy kroki zapobiegania oprogramowaniem wymuszającym okup i odzyskiwanie go (wrzesień 2021 r.)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [Przewodnik dotyczący zwalczania oprogramowania wymuszającego okup obsługiwany przez człowieka: część 1 (wrzesień 2021 r.)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
   Kluczowe instrukcje dotyczące sposobu, w jaki zespół wykrywanie i odpowiedzi firmy Microsoft przeprowadza badania zdarzeń oprogramowania wymuszającego okup.

@@ -17,12 +17,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej o zasadach ochrony przed wyłudzaniem informacji dostępnych w programach Exchange Online Protection (EOP) i Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 899a76fac01c6058d5642cb52af5a6e8fb7d11ee
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: a0f491c099e5a3b67866738267215e79ff6cbeb0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032140"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679549"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Zasady ochrony przed wyłudzaniem informacji w programie Microsoft 365
 
@@ -44,10 +44,6 @@ Oto przykłady programu Microsoft Defender Office 365 organizacji:
 
 W poniższej tabeli przedstawiono różnice na wysokim poziomie między zasadami ochrony przed wyłudzaniem informacji w u usługi EOP a zasadami ochrony przed wyłudzaniem informacji w programie Defender for Office 365.
 
-<br>
-
-****
-
 |Funkcja|Zasady ochrony przed wyłudzaniem informacji w uchcie EOP|Zasady ochrony przed wyłudzaniem informacji w programie Defender dla Office 365|
 |---|:---:|:---:|
 |Zasady domyślne utworzone automatycznie|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
@@ -57,7 +53,6 @@ W poniższej tabeli przedstawiono różnice na wysokim poziomie między zasadami
 |Pierwszy kontakt porada dotycząca bezpieczeństwa|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru](../../media/checkmark.png)|
 |Ustawienia personifikacji||![Znacznik wyboru](../../media/checkmark.png)|
 |Zaawansowane progi wyłudzania informacji||![Znacznik wyboru](../../media/checkmark.png)|
-|
 
 <sup>\*</sup> W zasadach domyślnych nazwa i opis zasad są tylko do odczytu (opis jest pusty) i nie można określić, kogo dotyczą zasady (zasady domyślne dotyczą wszystkich adresatów).
 

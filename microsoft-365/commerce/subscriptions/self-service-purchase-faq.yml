@@ -8,7 +8,7 @@ metadata:
   manager: scotv
   ms.reviewer: mijeffer, pablom
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection: M365-subscription-management
@@ -20,12 +20,12 @@ metadata:
   - MET150
   description: Znajdź odpowiedzi na często zadawane pytania dotyczące zakupów samoobsługowych.
   ms.date: 09/15/2020
-  ms.openlocfilehash: 026269d86bda075d460e3f62d64bb8a8a36cfaf9
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 288548642ec4d0f9c9d7c49cb3f5fb562e4a049d
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63324903"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63679483"
 title: Zakup samoobsługowy — często zadawane pytania
 summary: >
   Zakup samoobsługowy umożliwia użytkownikom wypróbowanie nowych technologii i opracowywanie rozwiązań, z których ostatecznie korzystają ich większe organizacje. Centralne zaopatrzenie i zespoły IT zapewniają widoczność wszystkim użytkownikom, którzy kupią i wdrażają rozwiązania zakupów samoobsługowych za pośrednictwem <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a>. Administratorzy mogą wyłączyć samoobsługowe zakupy dla  per produktów za pośrednictwem programu PowerShell. Aby dowiedzieć się więcej, [zobacz Korzystanie z usługi AllowSelfServicePurchase dla modułu MS Commerce PowerShell](allowselfservicepurchase-powershell.md).

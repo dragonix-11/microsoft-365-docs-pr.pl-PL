@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 2d5477122a29c672a947a2022f49da3abeb7003b
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498742"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568549"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Określanie priorytetów zdarzeń w Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "64498742"
 **Dotyczy:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender analizy korelacji i agreguje powiązane alerty oraz zautomatyzowane badania z różnych produktów w zdarzenie. Microsoft 365 Defender także wyzwala unikatowe alerty dotyczące działań, które można zidentyfikować wyłącznie jako złośliwe przy całej widoczności Microsoft 365 Defender dla całego pakietu produktów. Ten widok udostępnia analitykom zabezpieczeń szerszą historię ataków, która ułatwia im lepsze zrozumienie złożonych zagrożeń w organizacji i zajmowanie się nimi.
+Microsoft 365 Defender analizy korelacji i agreguje powiązane alerty oraz zautomatyzowane badania z różnych produktów w zdarzenie. Microsoft 365 Defender także wyzwala unikatowe alerty dotyczące działań, które można zidentyfikować wyłącznie jako złośliwe przy całej widoczności w całym pakiecie produktów firmy Microsoft 365 Defender. Ten widok udostępnia analitykom zabezpieczeń szerszą historię ataków, która ułatwia im lepsze zrozumienie złożonych zagrożeń w organizacji i zajmowanie się nimi.
 
 **Kolejka Zdarzenia** zawiera kolekcję zdarzeń utworzonych na różnych urządzeniach, użytkownikach i skrzynkach pocztowych. Ułatwia on sortowanie w ramach zdarzeń w celu priorytetyzowania i tworzenia świadomych decyzji dotyczących reakcji osób, które są nazywane procesem sortowania zdarzeń.
 
@@ -128,8 +128,8 @@ Domyślna lista zdarzeń jest dla zdarzeń, które wystąpiły w ciągu ostatnic
  - 1 dzień
  - 3 dni
  - 1 tydzień
- - 30 dni
- - 30 dni
+ - 30 dni
+ - 30 dni
  - 6 miesięcy
  - Zakres niestandardowy, w którym można określić daty i godziny
 

@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Ta strona docelowa zawiera linki i informacje dotyczące planowania pod względami bezpieczeństwa i zgodności w Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3138671bce7c2a659d0d7981c32e88d7ffdac0b8
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2a238f4d4c5598e9628bb6bb7adb607b7c24c6cb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63005277"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679527"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planowanie zgodności zabezpieczeń &amp;
 

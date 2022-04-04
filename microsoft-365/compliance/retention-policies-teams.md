@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania, które dotyczą Microsoft Teams.
-ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: f2b3b5a61eabbffc50da34b14baa20e025b8da0f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63714879"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568527"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Dowiedz się więcej na temat przechowywania Microsoft Teams
 
@@ -67,7 +67,7 @@ Te skrzynki pocztowe są wymienione według ich atrybutu RecipientTypeDetails:
 
 Inne typy skrzynek pocztowych, takie jak RoomMailbox, które są używane w Teams konferencyjnych, nie są obsługiwane Teams przechowywania.
 
-Teams używa usługi czatu obsługiwanej przez platformę Azure jako podstawowej przestrzeni dyskowej dla wszystkich wiadomości (czatów i wiadomości kanałów). Jeśli ze względu na zgodność Teams wiadomości musisz usunąć takie wiadomości, zasady przechowywania dotyczące Teams mogą usuwać wiadomości po określonym czasie, zależnie od tego, kiedy zostały utworzone. Wiadomości są następnie trwale usuwane zarówno ze skrzynek pocztowych usługi Exchange, w których były przechowywane na poziomie operacji zgodności, jak i z podstawowego miejsca do magazynowania używanego przez podstawową usługę czatu obsługiwanej przez platformę Azure. Aby uzyskać więcej informacji na temat architektury źródłowej, zobacz Zabezpieczenia i zgodność [z przepisami w programie Microsoft Teams](/MicrosoftTeams/security-compliance-overview), a w szczególności [sekcję Architektura ochrony informacji](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+Teams używa usługi czatu obsługiwanej przez platformę Azure jako podstawowej przestrzeni dyskowej dla wszystkich wiadomości (czatów i wiadomości kanałów). Jeśli ze względu na zgodność Teams wiadomości musisz usunąć takie wiadomości, zasady przechowywania dotyczące Teams mogą usuwać wiadomości po określonym czasie, zależnie od tego, kiedy zostały utworzone. Wiadomości są następnie trwale usuwane zarówno ze skrzynek pocztowych usługi Exchange, w których były przechowywane na poziomie operacji zgodności, jak i z podstawowego miejsca do magazynowania używanego przez podstawową usługę czatu obsługiwanej przez platformę Azure. Aby uzyskać więcej informacji na temat architektury źródłowej, zobacz [Zabezpieczenia](/MicrosoftTeams/security-compliance-overview) i zgodność z przepisami w Microsoft Teams, a w szczególności Information Protection [Architekturze](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
 Mimo że te dane z Teams i wiadomości kanałów są przechowywane w skrzynkach pocztowych, musisz skonfigurować zasady przechowywania dla wiadomości Teams kanałów  i Teams lokalizacji czatów. Teams czatów i wiadomości kanałów nie są uwzględniane w zasadach przechowywania, które są skonfigurowane Exchange skrzynek pocztowych użytkowników lub grup. Podobnie zasady przechowywania dla Teams nie mają wpływu na inne elementy poczty e-mail przechowywane skrzynki pocztowe.
 
@@ -100,7 +100,7 @@ W przypadku dwóch ścieżek na diagramie:
 > [!NOTE]
 > Wiadomości przechowywane w skrzynkach pocztowych, w tym foldery ukryte, można wyszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych. Dopóki wiadomości nie zostaną trwale usunięte z folderuHolds, pozostaną one przeszukiwane przez narzędzia zbierania elektronicznych materiałów dowodowych.
 
-Podczas trwałego usuwania wiadomości z folderu Holds. Operacja usunięcia jest powiadamiana o operacji usuwania w usłudze czatu Azure, która następnie przekazuje tę samą operację do Teams klienckiej. Opóźnienia w komunikacji lub buforowaniu mogą wyjaśniać, dlaczego przez krótki czas użytkownicy przypisani do zasad mogą nadal widzieć te wiadomości w swoich aplikacjach usługi Teams, ale dane z tych wiadomości nie są zwracane podczas wyszukiwania zbierania elektronicznych materiałów dowodowych.
+Gdy okres przechowywania wygasa i przenosi wiadomość do folderu DanychSzybkiChta, usługa czatu Azure przekazuje do zaplecza usługi czatu Azure operację usunięcia, która następnie przekazuje tę samą operację do aplikacji klienckiej Teams klienta. Opóźnienia w komunikacji lub buforowaniu mogą wyjaśniać, dlaczego przez krótki czas użytkownicy nadal widzą te wiadomości w swoich Teams aplikacji.
 
 W tym scenariuszu, w którym usługa czatu Azure otrzymuje polecenie usuwania ze względu na zasady przechowywania, odpowiadająca jej wiadomość w aplikacji klienckiej usługi Teams jest usuwana dla wszystkich użytkowników w konwersacji. Niektórzy z tych użytkowników mogą pochodzić z innej organizacji, mają zasady przechowywania z dłuższym okresem przechowywania lub nie są do nich przypisane żadne zasady przechowywania. W przypadku tych użytkowników kopie wiadomości są nadal przechowywane w ich skrzynkach pocztowych i można nadal wyszukiwać zbierania elektronicznych materiałów dowodowych do momentu trwałego usunięcia wiadomości przez inne zasady przechowywania.
 
@@ -210,6 +210,6 @@ Jeśli użytkownik przechowył jakiekolwiek pliki w Teams, [zobacz sekcję](rete
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Jeśli nie wiesz, jak konfigurować przechowywanie w aplikacji Microsoft 365, zobacz [Wprowadzenie do zarządzania informacjami](get-started-with-information-governance.md).
+Jeśli nie wiesz, jak konfigurować przechowywanie w aplikacji Microsoft 365, zobacz zarządzanie Wprowadzenie [informacjami](get-started-with-information-governance.md).
 
 Jeśli możesz już skonfigurować zasady przechowywania dla aplikacji Teams, zobacz Tworzenie [i konfigurowanie zasad przechowywania](create-retention-policies.md).

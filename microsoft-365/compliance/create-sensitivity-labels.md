@@ -1,5 +1,5 @@
 ---
-title: Tworzenie i publikowanie etykiet wrażliwości
+title: Twórz o publikuj etykiety poufności
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Wymagania dotyczące wszystkich Microsoft Information Protection: Tworzenie, konfigurowanie i publikowanie etykiet wrażliwości w celu klasyfikowania i chroninia danych organizacji.'
-ms.openlocfilehash: b5bc61de14f54d65e4ce5eb6f7ae78303626c123
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5c80147c18cff8c27f8c205ab1ed600e892f7335
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032125"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499578"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Tworzenie i konfigurowanie etykiet wrażliwości oraz ich zasad
 
@@ -52,7 +52,7 @@ Administrator globalny Twojej organizacji ma pełne uprawnienia do tworzenia wsz
     ![Utwórz etykietę wrażliwości.](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
-    > Domyślnie dzierżawcy nie mają żadnych etykiet i trzeba je utworzyć. Etykiety na przykładzie zawierają etykiety domyślne, które zostały [zmigrowane z usługi Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
+    > Domyślnie dzierżawcy nie mają żadnych etykiet i trzeba je utworzyć. Etykiety na przykładzie pokazują etykiety domyślne, które zostały [zmigrowane z usługi Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
 3. Na **stronie Definiowanie** zakresu tej etykiety wybrane opcje określają zakres etykiety dla ustawień, które można skonfigurować, oraz miejsce, w którym będą one widoczne po ich opublikowaniu:
 
@@ -96,13 +96,13 @@ Przykład:
 
 - Użyj *parametru LocaleSettings* dla wdrożeń międzynarodowej, aby użytkownicy widzili etykietkę i etykietkę narzędzia w swoim języku lokalnym. W [poniższej sekcji](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) przedstawiono przykładową konfigurację określającą nazwę etykiety i tekst etykiety narzędzia dla języka francuskiego, włoskiego i niemieckiego.
 
-- Ujednolicony klient etykiet usługi Azure Information Protection obsługuje zaawansowaną listę ustawień, [](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) takich jak ustawianie koloru etykiety i stosowanie właściwości niestandardowej podczas stosowania etykiety. Aby uzyskać pełną listę, zobacz [Dostępne zaawansowane ustawienia etykiet w](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) przewodniku administratora tego klienta.
+- Klient ujednoliconej Information Protection Azure Information Protection rozbudowaną listę ustawień zaawansowanych, takich jak ustawianie [](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) koloru etykiety i stosowanie właściwości niestandardowej podczas stosowania etykiety. Aby uzyskać pełną listę, zobacz [Dostępne zaawansowane ustawienia etykiet w](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) przewodniku administratora tego klienta.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Przykładowa konfiguracja konfigurowania etykiety wrażliwości dla różnych języków
 
 W poniższym przykładzie pokazano konfigurację programu PowerShell dla etykiety o nazwie "Publiczna" z tekstem zastępczym etykietki narzędzia. W tym przykładzie nazwa etykiety i tekst etykiety narzędzia są skonfigurowane dla języka francuskiego, włoskiego i niemieckiego.
 
-W wyniku tej konfiguracji użytkownicy korzystający z Office korzystających z tych języków wyświetlania widzą nazwy etykiet i etykietki narzędzi w tym samym języku. Podobnie, jeśli masz zainstalowanego klienta ujednoliconego etykiet usługi Azure Information Protection w celu oznaczania plików z Eksploratora plików, użytkownicy, którzy mają te wersje językowe programu Windows, zobaczą nazwy etykiet i etykietki narzędzi w swoim lokalnym języku, gdy używają akcji oznaczonych prawym przyciskiem myszy do oznaczania etykiet.
+W wyniku tej konfiguracji użytkownicy korzystający z Office korzystających z tych języków wyświetlania widzą nazwy etykiet i etykietki narzędzi w tym samym języku. Podobnie, jeśli masz zainstalowanego klienta ujednoliconego etykiet usługi Azure Information Protection w celu oznaczania plików z usługi Eksplorator plików, użytkownicy, którzy mają te wersje językowe programu Windows, zobaczą nazwy etykiet i etykietki narzędzi w języku lokalnym, gdy używają akcji oznaczonych etykietami prawym przyciskiem myszy.
 
 W przypadku języków, które chcesz obsługiwać, użyj identyfikatorów języka języka [Office (](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers)nazywanych również tagami języków) i określ własne tłumaczenie nazwy etykiety i etykietki narzędzia.
 
@@ -168,20 +168,17 @@ Aby edytować istniejące zasady etykiet, zaznacz je, a następnie wybierz przyc
 
 Ten przycisk powoduje rozpoczęcie **konfiguracji Utwórz zasady** , która pozwala edytować zawarte etykiety i ustawienia etykiet. Po ukończeniu konfiguracji wszystkie zmiany są automatycznie replikowane do wybranych użytkowników i usług.
 
-Gdy używasz wbudowanych etykiet dla aplikacji Office w systemie Windows, macOS, iOS i Android, użytkownicy widzą nowe etykiety w ciągu czterech godzin i w ciągu jednej godziny dla aplikacji Word, Excel i PowerPoint w sieci Web po odświeżeniu przeglądarki. Jednak zezwalaj na replikowanie zmian do wszystkich aplikacji i usług w ciągu 24 godzin.
-
-Inne aplikacje i usługi, które obsługują etykiety wrażliwości, mogą być aktualizowane częściej niż przez 24 godziny przy użyciu własnych harmonogramów aktualizacji i wyzwalaczy aktualizacji zasad. Aby uzyskać szczegółowe informacje, zapoznaj się z dokumentacją. Na przykład w przypadku klienta ujednoliconego etykiet usługi Azure Information Protection zobacz wiersz Aktualizacja zasad  w tabeli Szczegółowe porównania klientów usługi [Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
-
-> [!TIP]
-> Pamiętaj, aby w czynnikach współzależności chronometrażu, które czasami mogą opóźnić działanie etykiet wrażliwości i zasad etykiet zgodnie z oczekiwaniami. Na przykład wypełnianie zmian nowego członkostwa w grupach i grupach, ograniczeń przepustowości i opóźnień replikacji sieci oraz buforowania członkostwa w grupach przez usługę [Azure Information Protection](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) dla etykiet, które stosują szyfrowanie.
-> 
-> W przypadku wielu zależności zewnętrznych, które mają własne cykle chronometrażu, warto zaczekać 24 godziny na rozwiązywanie problemów z etykietami i zasadami etykiet na potrzeby najnowszych zmian.
-
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Dodatkowe ustawienia zasad etykiet z programem PowerShell & Centrum zgodności zabezpieczeń
 
 Dodatkowe ustawienia zasad etykiet są dostępne za pomocą polecenia [cmdlet Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) z programu [Security & Compliance Center w programie PowerShell](/powershell/exchange/scc-powershell).
 
-Ujednolicony klient etykiet usługi Azure Information Protection obsługuje wiele ustawień [](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) zaawansowanych, takich jak migracja z innych rozwiązań etykiet i wyskakujące wiadomości w programie Outlook, które ostrzegają, wyjustują lub blokują wysyłane wiadomości e-mail. Aby uzyskać pełną listę, zobacz [Dostępne zaawansowane ustawienia zasad etykiet](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) z przewodnika administratora tego klienta.
+Klient ujednoliconej etykiet usługi Azure Information Protection obsługuje wiele ustawień zaawansowanych, takich [](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) jak migracja z innych rozwiązań etykiet i wyskakujące wiadomości w programie Outlook, które ostrzegają, wyjustują lub blokują wysyłane wiadomości e-mail. Aby uzyskać pełną listę, zobacz [Dostępne zaawansowane ustawienia zasad etykiet](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) z przewodnika administratora tego klienta.
+
+## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>Kiedy można oczekiwać, że nowe etykiety i zmiany zostaną wprowadzone
+
+W przypadku etykiet i ustawień zasad etykiet należy zezwolić na propagację zmian w usługach po 24 godzinach. Istnieje wiele zależności zewnętrznych, które mają własne cykle chronometrażu, dlatego warto poczekać ten 24-godzinny okres, zanim poświęcisz czas na rozwiązywanie problemów z etykietami i zasadami etykiet na potrzeby ostatnich zmian.
+
+Jednak w niektórych sytuacjach zmiany zasad etykiet i etykiet mogą być wprowadzone znacznie szybciej lub dłużej niż 24 godziny. Na przykład w przypadku nowych i usuniętych etykiet wrażliwości programu Word, Excel i PowerPoint w sieci Web aktualizacje mogą być replikowane w ciągu godziny. Jednak w przypadku konfiguracji zależnych od wypełniania zmian członkostwa w nowych grupach i grupach lub ograniczeń przepustowości i opóźnień replikacji sieci te zmiany mogą potrwać 24–48 godzin.
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Etykiety wrażliwości i ich zasady można stosować w programie PowerShell
 
@@ -222,10 +219,10 @@ Aby skonfigurować etykiety wrażliwości i używać ich w określonych scenariu
 
 - [Ograniczanie dostępu do zawartości przy użyciu szyfrowania etykiet wrażliwości](encryption-sensitivity-labels.md)
 
-- [Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md)
+- [Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md)
 
-- [Używanie etykiet wrażliwości w zespołach, grupach i witrynach](sensitivity-labels-teams-groups-sites.md)
+- [Używaj etykiet poufności z zespołami, grupami i witrynami](sensitivity-labels-teams-groups-sites.md)
 
-- [Włączanie etykiet wrażliwości dla Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+- [Włącz etykiety poufności dla plików pakietu Office w programie SharePoint i usłudze OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 
-Aby monitorować sposób, w jaki są używane etykiety, zobacz [Wprowadzenie do klasyfikacji danych](data-classification-overview.md).
+Aby monitorować sposób, w jaki etykiety są używane, Wprowadzenie [z klasyfikacją danych](data-classification-overview.md).

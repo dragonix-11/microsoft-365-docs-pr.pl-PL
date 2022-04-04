@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 71e4b3d5f2a8cbf147a9aa50dd849be14047e27d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 28b389292ed733318e5796a1be3ed9c11d2df462
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318175"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466614"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Zasady zezwalania na dostęp gości i dostęp użytkownika zewnętrznego B2B
 
-W tym artykule omówiono dostosowywanie zalecanych zasad dostępu do urządzeń i tożsamości zerowego zaufania w celu umożliwienia dostępu gościom i użytkownikom zewnętrznym, którzy mają konto usługi Azure Active Directory (Azure AD) między firmami (B2B). Te wskazówki są opierane na [wspólnych zasadach dostępu do tożsamości i urządzeń](identity-access-policies.md).
+W tym artykule omówiono dostosowywanie zalecanych zasad dostępu do usługi Zero Trust tożsamości i urządzeń w celu umożliwienia dostępu gościom i użytkownikom zewnętrznym, którzy mają konto usługi Azure Active Directory (Azure AD) Business-to-Business (B2B). Te wskazówki są opierane na [wspólnych zasadach dostępu do tożsamości i urządzeń](identity-access-policies.md).
 
 Zalecenia te są przeznaczone do stosowania **do warstwy ochrony** punktu początkowego. Możesz jednak dostosować zalecenia do konkretnych potrzeb w przypadku **przedsiębiorstwa i** **specjalistycznej ochrony** zabezpieczeń.
 
@@ -38,7 +38,7 @@ Udostępnienie ścieżki uwierzytelniania kont B2B w dzierżawie usługi Azure A
 
 Na tym diagramie pokazano zasady, które należy dodać lub zaktualizować wśród wspólnych zasad dostępu do tożsamości i urządzeń w zakresie dostępu gościa i użytkownika zewnętrznego B2B.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="Podsumowanie aktualizacji zasad w celu ochrony dostępu gościa." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="Podsumowanie aktualizacji zasad w celu ochrony dostępu gościa" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
 W poniższej tabeli wymieniono zasady, które należy utworzyć i zaktualizować. Typowe zasady są linkiem do skojarzonych instrukcji konfiguracji podanych w [artykule Typowe zasady](identity-access-policies.md) dostępu do urządzeń i tożsamości.
 
@@ -49,7 +49,7 @@ W poniższej tabeli wymieniono zasady, które należy utworzyć i zaktualizować
 
 Aby uwzględnić lub wykluczyć gości i użytkowników zewnętrznych w zasadach dostępu warunkowego, w przypadku zadań w grupie > Użytkownicy i grupy **>** Dołącz lub Wyklucz **zaznacz pole** wyboru Wszyscy goście i **użytkownicy zewnętrzni**.
 
-![Zrzut ekranu: kontrolki służące do wykluczania gości i użytkowników zewnętrznych.](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="Kontrolki wykluczające gości i użytkowników zewnętrznych" lightbox="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
 
 ## <a name="more-information"></a>Więcej informacji
 
@@ -81,12 +81,12 @@ Tylko jedna organizacja może zarządzać urządzeniem. Jeśli nie wykluczasz go
 
 ## <a name="next-step"></a>Następny krok
 
-![Krok 4. Zasady dotyczące programu Microsoft 365 aplikacji w chmurze i programu Microsoft Defender dla aplikacji w chmurze.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Zasady dotyczące Microsoft 365 i aplikacji w chmurze oraz Microsoft Defender for Cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Skonfiguruj zasady dostępu warunkowego dla:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
-- [Usługa Microsoft Defender dla aplikacji w chmurze](mcas-saas-access-policies.md)
+- [Microsoft Defender for Cloud Apps](mcas-saas-access-policies.md)
  
