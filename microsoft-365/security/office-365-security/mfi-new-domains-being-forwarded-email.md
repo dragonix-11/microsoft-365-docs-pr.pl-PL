@@ -12,12 +12,13 @@ ms.assetid: ''
 description: Administratorzy mogą dowiedzieć się, jak za pomocą szczegółowych informacji o nowych domenach przesyłanych dalej wiadomości e-mail na pulpicie nawigacyjnym przepływu poczty w Centrum zabezpieczeń & zgodności zbadać, kiedy ich użytkownicy przesyłają dalej wiadomości do domen zewnętrznych, które nigdy nie zostały przekazane dalej.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ecc3c00f40d702f74681e9cbc194e83bd27f5df2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: M365-security-compliance
+ms.openlocfilehash: df4f9e79439d435059374dd066a5298ba73d329b
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021305"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679659"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Informacje o nowych domenach przesyłanych dalej w Centrum & zabezpieczeń i zgodności
 

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Znajdź linki do artykułów z informacjami pomocnych w skonfigurowaniu sieci na Microsoft 365, w tym omówienie łączności sieciowej i listę punktów końcowych.
-ms.openlocfilehash: c21a7a09e43957c806bca9dd64d425fcef2415fc
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: c6dbc4362648b3695c23f363c0e6925ead97bacb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "63018943"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680847"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Konfigurowanie sieci pod Microsoft 365
 

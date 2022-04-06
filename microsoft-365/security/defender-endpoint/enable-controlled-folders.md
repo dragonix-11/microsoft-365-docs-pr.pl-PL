@@ -16,20 +16,20 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b62ff851cbee58cf3b29a2b4dde6fb1b6107dd85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327661"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472820"
 ---
 # <a name="enable-controlled-folder-access"></a>Włączanie kontrolowanego dostępu do folderu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -40,9 +40,9 @@ Kontrolowany dostęp do folderu można włączyć przy użyciu dowolnej z tych m
 
 - [Zabezpieczenia Windows aplikacja *](#windows-security-app)
 - [Microsoft Endpoint Manager](#endpoint-manager)
-- [Zarządzanie urządzeniami przenośnymi](#mobile-device-management-mdm)
+- [Aplikacje Zarządzanie urządzeniami-komórkowych (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
-- [zasady grupy](#group-policy)
+- [Zasady grupy](#group-policy)
 - [PowerShell](#powershell)
 
 [Tryb inspekcji](evaluate-controlled-folder-access.md) pozwala sprawdzić, jak będzie działać ta funkcja (i przeglądać zdarzenia) bez wpływu na normalne korzystanie z urządzenia.
@@ -94,7 +94,7 @@ Aby uzyskać więcej informacji na temat wyłączania scalania list lokalnych, z
     > [!NOTE]
     > Symbole wieloznaczne są obsługiwane w aplikacjach, ale nie w przypadku folderów. Podfoldery nie są chronione. Dozwolone aplikacje będą wyzwalać zdarzenia do momentu ich ponownego uruchomienia.
 
-## <a name="mobile-device-management-mdm"></a>Zarządzanie urządzeniami przenośnymi
+## <a name="mobile-device-management-mdm"></a>Aplikacje Zarządzanie urządzeniami-komórkowych (MDM)
 
 Użyj konfiguracji [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) usługodawca (CSP), aby zezwolić aplikacjom na zmiany w chronionych folderach.
 
@@ -115,11 +115,11 @@ Użyj konfiguracji [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedF
 
 6. Po utworzeniu **zasad zamknij.**
 
-## <a name="group-policy"></a>zasady grupy
+## <a name="group-policy"></a>Zasady grupy
 
 1. Na zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](https://technet.microsoft.com/library/cc731212.aspx) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-2. W **edytorze zasady grupy zarządzaniem** przejdź do **strony Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
+2. W **edytorze zasady grupy zarządzania** przejdź do **strony Konfiguracja komputera i** wybierz pozycję **Szablony administracyjne**.
 
 3. Rozwiń drzewo, aby **Windows składniki > Program antywirusowy Microsoft Defender > Windows Defender exploit Guard > kontrolowanego dostępu do folderu**.
 
@@ -130,10 +130,10 @@ Użyj konfiguracji [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedF
    - **Blokuj tylko modyfikację** dysku — próby zapisu na dysku przez niezaufane aplikacje będą rejestrowane w Windows zdarzeń. Dzienniki te można znaleźć w dziennikach **aplikacji** \> i usług firmy Microsoft \> \> Windows Windows Defender \> identyfikatora \> operacyjnego 1123.
    - **Tylko** modyfikacja dysku inspekcji — w dzienniku zdarzeń programu Windows zostaną zarejestrowane tylko próby zapisu na chronionym dysku ( \>  \> w obszarze Dzienniki aplikacji i usług Microsoft **Windows** \> **Windows Defender** \> **Identyfikator** \> operacyjny **1124**). Próby modyfikowania lub usuwania plików w chronionych folderach nie są rejestrowane.
 
-      ![Zrzut ekranu przedstawiający opcję Włączone zasady grupy i Tryb inspekcji wybraną z listy rozwijanej.](../../media/cfa-gp-enable.png)
+    :::image type="content" source="../../media/cfa-gp-enable.png" alt-text="Zaznaczona opcja zasad grupy Włączone i Tryb inspekcji" lightbox="../../media/cfa-gp-enable.png":::
 
 > [!IMPORTANT]
-> Aby w pełni włączyć kontrolowany dostęp do folderu, zasady grupy opcję Włączone i wybierz pozycję  Zablokuj w menu  rozwijaym opcji.
+> Aby w pełni włączyć kontrolowany dostęp do folderu, musisz zasady grupy opcję Włączone i wybrać  pozycję Zablokuj w  menu rozwijaym opcji.
 
 ## <a name="powershell"></a>PowerShell
 
@@ -153,4 +153,4 @@ Umożliwia `Disabled` wyłączenie tej funkcji.
 
 - [Ochrona ważnych folderów za pomocą kontrolowanego dostępu do folderów](controlled-folders.md)
 - [Dostosowywanie kontrolowanego dostępu do folderu](customize-controlled-folders.md)
-- [Szacowanie programu Microsoft Defender pod celu punktu końcowego](evaluate-mde.md)
+- [Ocena ochrony punktu końcowego w usłudze Microsoft Defender](evaluate-mde.md)

@@ -15,20 +15,20 @@ ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 245aad5498793d951de68e5bf4c3e91510c7d774
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9af87907c476b637ddc484bbb3357b143219107e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019382"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473216"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Włączanie i konfigurowanie Program antywirusowy Microsoft Defender w aplikacji zasady grupy
 
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Ochrona zawsze w czasie rzeczywistym składa się z ochrony w czasie rzeczywistym, monitorowania zachowania i heuristics w celu identyfikowania złośliwego oprogramowania na podstawie znanych podejrzanych i złośliwych działań.
 
@@ -36,19 +36,19 @@ Te działania obejmują zdarzenia, takie jak procesy służące do dokonywania n
 
 ## <a name="enable-and-configure-always-on-protection-in-group-policy"></a>Włączanie i konfigurowanie zawsze najbędszej ochrony w zasady grupy
 
-Za pomocą **edytora lokalnego zasady grupy włączyć** i skonfigurować Program antywirusowy Microsoft Defender zawsze wł. ustawień ochrony.
+Za pomocą **Edytora lokalnego zasady grupy włączyć** i skonfigurować Program antywirusowy Microsoft Defender zawsze wł. ustawień ochrony.
 
 Aby włączyć i skonfigurować zawsze włączoną ochronę:
 
-1. Otwórz **Edytor zasady grupy lokalnego** w następujący sposób:
+1. Otwórz **Edytor zasady grupy lokalnych** w następujący sposób:
 
-    1. W polu Windows 10 Windows 11 na pasku zadań wpisz **gpedit**.
+    1. W polu Windows 10 Windows 11 pasku zadań wpisz **gpedit**.
 
-    2. W **obszarze Najlepsze dopasowanie** wybierz pozycję **Edytuj zasady grupy** , aby **uruchomić Edytor zasady grupy grupy**.
+    2. W **obszarze Najlepsze dopasowanie** wybierz pozycję **Edytuj zasady grupy**, aby uruchomić **Edytor zasady grupy grupy**.
     
-       ![GpEdit taskbar search result.](images/gpedit-search.png)
+       :::image type="content" source="images/gpedit-search.png" alt-text="Wynik wyszukiwania na pasku zadań w programie GPEdit w Panelu sterowania" lightbox="images/gpedit-search.png":::
 
-2. W lewym okienku Edytora folderów **zasady grupy rozwiń** drzewo do grupy **Szablony** \>  \> administracyjne konfiguracji komputera i Windows **składniki** \> **Program antywirusowy Microsoft Defender**.
+2. W lewym okienku Edytora folderów **zasady grupy rozwiń** drzewo do  \>  \> grupy Szablony administracyjne konfiguracji komputera **i Windows składniki** \> **Program antywirusowy Microsoft Defender**.
 
 3. Skonfiguruj ustawienie Program antywirusowy Microsoft Defender ochrony przed złośliwym oprogramowaniem.
 
@@ -86,11 +86,11 @@ Aby włączyć i skonfigurować zawsze włączoną ochronę:
 |Włączanie powiadomień o nieprzetworzonej głośności zapisu <p> Informacje o nieprzetworzonej ilości danych będą analizowane za pomocą monitorowania zachowania.|Włączone|
 |Włączanie skanowania w czasie rzeczywistym po włączeniu ochrony w czasie rzeczywistym <p> Możesz niezależnie umożliwić aparatowi Program antywirusowy Microsoft Defender skanowanie uruchomionych procesów w poszukiwaniu podejrzanych zmian lub zachowań. Jest to przydatne, jeśli tymczasowo wyłączono ochronę w czasie rzeczywistym i chcesz automatycznie skanować procesy rozpoczęte w trakcie jej wyłączenia.|Włączone|
 |Definiowanie maksymalnego rozmiaru pobranych plików i załączników do skanowania <p> Można zdefiniować rozmiar w kilobajtach.|Włączone|
-|Konfigurowanie zastępowania ustawień lokalnych w celu włączeń monitorowania zachowania <p> Skonfiguruj zastępowanie lokalne dla konfiguracji monitorowania zachowania. To ustawienie może być ustawiane tylko przez zasady grupy. Włączenie tego ustawienia spowoduje, że ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
-|Konfigurowanie zastępowania ustawień lokalnych w celu skanowania wszystkich pobranych plików i załączników <p> Skonfiguruj lokalne zastępowanie konfiguracji skanowania dla wszystkich pobranych plików i załączników. To ustawienie może być ustawiane tylko przez zasady grupy. Włączenie tego ustawienia spowoduje, że ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
-|Konfigurowanie zastępowania ustawień lokalnych pod celu monitorowania aktywności plików i programów na komputerze <p> Skonfiguruj lokalne zastępowanie konfiguracji monitorowania aktywności plików i programów na komputerze. To ustawienie może być ustawiane tylko przez zasady grupy. Włączenie tego ustawienia spowoduje, że ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
-|Konfigurowanie zastępowania ustawień lokalnych w celu włączoną ochronę w czasie rzeczywistym <p> Skonfiguruj zastępowanie lokalne dla konfiguracji, aby włączyć ochronę w czasie rzeczywistym. To ustawienie może być ustawiane tylko przez zasady grupy. Włączenie tego ustawienia spowoduje, że ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
-|Konfigurowanie zastępowania ustawień lokalnych w celu monitorowania przychodzącej i wychodzącej aktywności plików <p> Skonfiguruj zastępowanie lokalne na poziomie konfiguracji monitorowania aktywności dotyczącej plików przychodzących i wychodzących. To ustawienie może być ustawiane tylko przez zasady grupy. Włączenie tego ustawienia spowoduje, że ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
+|Konfigurowanie zastępowania ustawień lokalnych w celu włączeń monitorowania zachowania <p> Skonfiguruj zastępowanie lokalne dla konfiguracji monitorowania zachowania. To ustawienie można ustawić tylko przez zasady grupy. Jeśli to ustawienie jest włączyć, ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
+|Konfigurowanie zastępowania ustawień lokalnych w celu skanowania wszystkich pobranych plików i załączników <p> Skonfiguruj lokalne zastępowanie konfiguracji skanowania dla wszystkich pobranych plików i załączników. To ustawienie można ustawić tylko przez zasady grupy. Jeśli to ustawienie jest włączyć, ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
+|Konfigurowanie zastępowania ustawień lokalnych pod celu monitorowania aktywności plików i programów na komputerze <p> Skonfiguruj lokalne zastępowanie konfiguracji monitorowania aktywności plików i programów na komputerze. To ustawienie można ustawić tylko przez zasady grupy. Jeśli to ustawienie jest włączyć, ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
+|Konfigurowanie zastępowania ustawień lokalnych w celu włączoną ochronę w czasie rzeczywistym <p> Skonfiguruj zastępowanie lokalne dla konfiguracji, aby włączyć ochronę w czasie rzeczywistym. To ustawienie można ustawić tylko przez zasady grupy. Jeśli to ustawienie jest włączyć, ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
+|Konfigurowanie zastępowania ustawień lokalnych w celu monitorowania przychodzącej i wychodzącej aktywności plików <p> Skonfiguruj zastępowanie lokalne na poziomie konfiguracji monitorowania aktywności dotyczącej plików przychodzących i wychodzących. To ustawienie można ustawić tylko przez zasady grupy. Jeśli to ustawienie jest włączyć, ustawienie preferencji lokalnych będzie mieć pierwszeństwo przed zasady grupy. Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia, zasady grupy będą pierwszeństwo przed ustawieniem preferencji lokalnych.|Włączone|
 |Konfigurowanie monitorowania przychodzącej i wychodzącej aktywności dotyczącej plików i programów <p> Określenie, czy monitorowanie ma być odbierane w przychodzącym, wychodzącym, w obu kierunkach, czy w żaden sposób. Ta akcja jest istotne dla instalacji programu Windows Server, gdy zdefiniowano określone serwery lub role serwera, w których widać duże ilości zmian plików w jednym kierunku i chcesz zwiększyć wydajność sieci. Pełne zaktualizowane punkty końcowe (i serwery) w sieci będą miały niewielki wpływ na wydajność niezależnie od liczby lub kierunku zmian plików.|Włączony (oba wskazówki)|
 
 ## <a name="disable-real-time-protection-in-group-policy"></a>Wyłączanie ochrony w czasie rzeczywistym w programie zasady grupy
@@ -98,16 +98,16 @@ Aby włączyć i skonfigurować zawsze włączoną ochronę:
 > [!WARNING]
 > Wyłączenie ochrony w czasie rzeczywistym znacząco zmniejsza ochronę punktów końcowych i nie jest zalecane.
 
-Główna funkcja ochrony w czasie rzeczywistym jest domyślnie włączona, ale można ją wyłączyć przy użyciu Edytora lokalnego **zasady grupy danych**.
+Główna funkcja ochrony w czasie rzeczywistym jest domyślnie włączona, ale można ją wyłączyć przy użyciu Edytora zasady grupy **danych**.
 
 ### <a name="to-disable-real-time-protection-in-group-policy"></a>Aby wyłączyć ochronę w czasie rzeczywistym w zasadach grupy
 
-1. Otwórz **Edytor zasady grupy lokalnym**.
+1. Otwórz **Edytor zasady grupy lokalnego**.
 
-   1. W polu Windows 10 Windows 11 na pasku zadań wpisz **gpedit**.
-   2. W **obszarze Najlepsze dopasowanie** wybierz pozycję **Edytuj zasady grupy** , aby **uruchomić Edytor zasady grupy grupy**.
+   1. W polu Windows 10 Windows 11 pasku zadań wpisz **gpedit**.
+   2. W **obszarze Najlepsze dopasowanie** wybierz pozycję **Edytuj zasady grupy**, aby uruchomić **Edytor zasady grupy grupy**.
 
-2. W lewym okienku Edytora folderów **zasady grupy rozwiń** \>  \> drzewo do grupy Szablony administracyjne konfiguracji komputera Windows **składniki** \>  \> Program antywirusowy Microsoft Defender **ochronę w czasie rzeczywistym**.
+2. W lewym okienku Edytora folderów **zasady grupy rozwiń** drzewo do grupy Szablony administracyjne konfiguracji  komputera i  \> \> Windows **składniki** \>  \> Program antywirusowy Microsoft Defender **ochronę w czasie rzeczywistym**.
 
 3. W **okienku szczegółów Ochrona w czasie** rzeczywistym po prawej stronie kliknij dwukrotnie pozycję **Wyłącz ochronę w czasie rzeczywistym**.
 

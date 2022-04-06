@@ -18,12 +18,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak wyświetlać, tworzyć, modyfikować i usuwać zasady ochrony przed spamem w u Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ac240f402d230362cb33ea818e62c1e0629eb39
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 8550d55553b1c406fa21ce362e201a8bbe3d5aea
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "63015427"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681309"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurowanie zasad ochrony przed spamem w u usługi EOP
 
@@ -148,10 +148,6 @@ Utworzenie niestandardowych zasad ochrony przed spamem w portalu Microsoft 365 D
      - Znacznik wyboru ( ![Znacznik wyboru.](../../media/checkmark.png)) wskazuje, że akcja jest dostępna (nie wszystkie akcje są dostępne we wszystkich werdyktach).
      - Gwiazdka ( <sup>\*</sup> ) po znaczniku wyboru wskazuje domyślną akcję werdyktu filtrowania spamu.
 
-     <br>
-
-     ****
-
      |Akcja|Spam|High (Wysoki)<br>ufność<br>spam|Wyłudzanie informacji|High (Wysoki)<br>ufność<br>wyłudzanie informacji|Zbiorcze|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Przenoszenie wiadomości do folderu Wiadomości-śmieci**: Wiadomość jest dostarczana do skrzynki pocztowej i przenoszony do folderu Wiadomości-śmieci. <sup>1</sup>|![Znacznik wyboru.](../../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru](../../media/checkmark.png)|![Znacznik wyboru](../../media/checkmark.png)<sup>\*</sup>|
@@ -161,7 +157,6 @@ Utworzenie niestandardowych zasad ochrony przed spamem w portalu Microsoft 365 D
      |**Usuwanie wiadomości**: W trybie dyskretnym usuwa całą wiadomość wraz ze wszystkimi załącznikami.|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru](../../media/checkmark.png)|![Znacznik wyboru](../../media/checkmark.png)||![Znacznik wyboru](../../media/checkmark.png)|
      |**Poddaj wiadomość** kwarantannie: wysyła wiadomość do kwarantanny zamiast do zamierzonych adresatów. <p> Czas, przez jaki wiadomość ma być przechowywane w kwarantannie później w polu **Kwarantanna,** możesz określić. <p> Zasady kwarantanny [stosowane do poddanych](quarantine-policies.md) kwarantannie wiadomości dla werdyktu filtru spamu określa się w **polu Wybierz zasady** , które zostanie wyświetlone. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md). <sup>3</sup>|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru](../../media/checkmark.png)|![Znacznik wyboru](../../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../../media/checkmark.png)|
      |**Brak akcji**|||||![Znacznik wyboru](../../media/checkmark.png)|
-     |
 
      > <sup>1 Program</sup> EOP używa teraz własnego agenta dostarczania przepływu poczty e-mail do rozsyłania wiadomości do folderu Wiadomości-śmieci, zamiast używać reguły wiadomości-śmieci. Parametr _Enabled_ w **poleceniach cmdlet Set-MailboxJunkEmailConfiguration** nie ma już wpływu na przepływ poczty e-mail. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień wiadomości-śmieci Exchange Online pocztowych](configure-junk-email-settings-on-exo-mailboxes.md).
      >

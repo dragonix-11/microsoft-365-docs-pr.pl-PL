@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3179ab18ab27bb41f5c0b1577d73ff48b3470b98
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326079"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681485"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurowanie programu Microsoft Defender dla punktu końcowego w funkcjach systemu iOS
 
@@ -143,6 +143,24 @@ Program Defender for Endpoint w systemie iOS umożliwia administratorom skonfigu
 
 > [!NOTE]
 > Program Defender for Endpoint w systemie iOS obsługuje tworzenie wskaźników niestandardowych tylko dla adresów IP i adresów URL/domen.
+
+## <a name="configure-option-to-send-in-app-feedback"></a>Konfigurowanie opcji wysyłania opinii w aplikacji 
+
+Klienci mają teraz możliwość skonfigurowania możliwości wysyłania danych zwrotnych do firmy Microsoft za pomocą aplikacji Defender for Endpoint. Dane opinii pomagają firmie Microsoft w ulepszaniu produktów i rozwiązywaniu problemów.
+
+> [!NOTE]
+> W przypadku klientów korzystających z chmury dla instytucji rządowych Stanów Zjednoczonych zbieranie danych **opinii jest domyślnie** wyłączone. 
+
+Aby skonfigurować opcję wysyłania danych opinii do firmy Microsoft, należy wykonać następujące czynności:
+
+1. W [Microsoft Endpoint Manager administracyjnego i](https://go.microsoft.com/fwlink/?linkid=2109431) przejdź do **pozycji Zasady** >  **konfiguracji aplikacjiAppAddZa** >  >  **zarządzania urządzeniami**.
+1. Nadaj zasadom nazwę, **Platform > OS/iPadOS**, wybierz typ profilu.
+1. Wybierz **pozycję Microsoft Defender for Endpoint** jako aplikację docelową.
+1. Na Ustawienia wybierz pozycję Użyj projektanta **konfiguracji** i dodaj **defenderSendFeedback** jako klucz i typ wartości jako wartość **logiczną**
+   - Aby usunąć możliwość wysyłania opinii przez użytkowników końcowych, `false` ustaw wartość zasad i przypisz je użytkownikom. Domyślnie ta wartość jest ustawiona na `true`. W przypadku klientów z instytucji rządowych w Usa wartość domyślna to "fałsz".
+   - Dla użytkowników z `true`kluczem ustawionym jako , dostępna będzie opcja wysłania danych opinii do firmy Microsoft w aplikacji (Menu > Pomoc & Opinie > Wyślij opinię do firmy Microsoft)
+1. Kliknij **przycisk Dalej** i przypisz ten profil do urządzeń/użytkowników docelowych.
+
 
 ## <a name="report-unsafe-site"></a>Zgłoś niebezpieczną witrynę
 

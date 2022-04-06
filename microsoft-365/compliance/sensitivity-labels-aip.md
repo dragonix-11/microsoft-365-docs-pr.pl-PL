@@ -1,5 +1,5 @@
 ---
-title: Wybieranie Microsoft Information Protection (MIP) wbudowanych etykiet dla aplikacji usługi Office za pośrednictwem dodatku usługi Azure Information Protection (AIP)
+title: Wybieranie Microsoft Information Protection (MIP) wbudowanych etykiet dla aplikacji usługi Office za pośrednictwem dodatku Azure Information Protection (AIP)
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: W przypadku korzystania z ujednoliconego klienta etykiet usługi Azure Information Protection (AIP) poznaj zalety korzystania z wbudowanych etykiet dla aplikacji Office, a nie dodatku AIP.
-ms.openlocfilehash: 38aee57720f38793f4f61cc871a9bee556e28690
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+description: W przypadku korzystania z ujednoliconego klienta etykiet usługi Azure Information Protection (AIP) poznaj zalety korzystania z wbudowanych etykiet dla aplikacji usługi Office, a nie dodatku AIP.
+ms.openlocfilehash: 88849422d295cc7caf2eb39837f7f1bb82b7a378
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498610"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63704730"
 ---
 # <a name="why-choose-mip-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Dlaczego warto wybrać wbudowane etykiety MIP za pomocą dodatku AIP dla Office aplikacji
 
@@ -38,7 +38,7 @@ Domyślnie wbudowane etykiety są wyłączone w aplikacjach pakietu Office Windo
 
 Po zainstalowaniu klienta AIP, ale jego wyłączeniu w Office, pozostałe funkcje klienta AIP będą nadal obsługiwane:
 
-- Opcje dostępne po kliknięciu prawym przyciskiem myszy Eksplorator plików, które mają być stosowane etykiety do wszystkich typów plików.
+- Opcje dostępne po kliknięciu prawym przyciskiem myszy w Eksploratorze plików służące do stosowania etykiet do wszystkich typów plików.
 
 - Przeglądarka do wyświetlania zaszyfrowanych plików tekstowych, obrazów lub dokumentów PDF.
 
@@ -46,9 +46,9 @@ Po zainstalowaniu klienta AIP, ale jego wyłączeniu w Office, pozostałe funkcj
 
 - Skaner do odnajdywania poufnych informacji przechowywanych w lokalnych magazynach danych, a następnie opcjonalnego oznaczania tej zawartości.
 
-Aby uzyskać więcej informacji o tych możliwościach, które wykraczają poza Office aplikacji usługi [Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide) przewodnik administratora klienta z ujednoliconą etykietą z dokumentacji programu AIP.
+Aby uzyskać więcej informacji o tych możliwościach, które wykraczają poza Office, zobacz ujednolicony przewodnik administratora klienta usługi [Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide) z dokumentacją programu AIP.
 
-Niezależnie od etykiet możesz nadal używać modułu [AIPService](/powershell/module/aipservice) PowerShell do zarządzania usługą szyfrowania na poziomie dzierżawy. Można na przykład skonfigurować dostęp superumiejscowy dla użytkowników, gdy trzeba usunąć szyfrowanie na potrzeby odzyskiwania danych, śledzić i cofać dokumenty otwarte przez klienta usługi AIP oraz konfigurować okres ważności licencji użytkowania dla dostępu w trybie offline. Aby uzyskać więcej informacji, zobacz [Administrowanie ochroną przed platformą Azure Information Protection przy użyciu programu PowerShell](/azure/information-protection/administer-powershell).
+Niezależnie od etykiet możesz nadal używać modułu [AIPService](/powershell/module/aipservice) PowerShell do zarządzania usługą szyfrowania na poziomie dzierżawy. Można na przykład skonfigurować dostęp superumiejscowy dla użytkowników, gdy trzeba usunąć szyfrowanie na potrzeby odzyskiwania danych, śledzić i cofać dokumenty otwarte przez klienta usługi AIP oraz konfigurować okres ważności licencji użytkowania dla dostępu w trybie offline. Aby uzyskać więcej informacji, zobacz [Administrowanie ochroną usługi Azure Information Protection przy użyciu programu PowerShell](/azure/information-protection/administer-powershell).
 
 ## <a name="decide-whether-to-use-built-in-labeling-for-office-apps-or-the-aip-add-in"></a>Zdecyduj, czy chcesz używać wbudowanych etykiet dla Office, czy dodatku AIP
 
@@ -57,7 +57,7 @@ Teraz, gdy klient AIP jest w trybie konserwacji[, nie](https://techcommunity.mic
 - Nie będą obsługiwane żadne nowe funkcje etykiet.
 - Dodatki są mniej stabilne, ponieważ mogą powodować konflikt z innymi dodatki, które mogą powodować zawieszanie Office aplikacji, awarie lub automatyczne wyłączanie tego dodatku.
 - Jako dodatek działa on wolniej i może zostać wyłączony przez użytkowników, aby obejść wymagania dotyczące etykiet.
-- Wszelkie poprawki będą wymagały ponownego zainstalowania Information Protection Azure.
+- Wszelkie poprawki będą wymagały ponownego zainstalowania klienta usługi Azure Information Protection.
 - Środowisko etykiet dla użytkowników różni się nieco od wbudowanych etykiet, które użytkownicy mają na innych urządzeniach (macOS, iOS, Android) i kiedy używają Office dla sieci web. Ta różnica może zwiększyć koszty szkoleń i pomocy technicznej.
 - Są już dostępne nowe Office etykiet, które są obsługiwane tylko przez wbudowane etykiety[, a](#features-supported-only-by-built-in-labeling-for-office-apps) lista rozrasta się cały czas.
 
@@ -71,7 +71,7 @@ Używaj dodatku AIP dla aplikacji pakietu Windows Office tylko wtedy, gdy zosta�
 Niektóre funkcje są obsługiwane tylko przez wbudowane etykiety dla aplikacji Office i nie są obsługiwane przez dodatek AIP. Obejmują one:
 
 - Do automatycznego i zalecanego oznaczania etykiet:
-    - Dostęp do inteligentnych usług klasyfikacji, [które zawierają](classifier-learn-about.md) klasyfikatory przeszkolne, dokładne dopasowanie danych [(EDM)](sit-learn-about-exact-data-match-based-sits.md) i [nazwane jednostki](named-entities-learn.md)
+    - Dostęp do inteligentnych usług klasyfikacji, które zawierają [klasyfikatory](classifier-learn-about.md) przeszkolne, dokładne dopasowanie danych [(EDM)](sit-learn-about-exact-data-match-based-sits.md) i [nazwane jednostki](named-entities-learn.md)
     - Wykrywanie informacji poufnych podczas wpisywania użytkowników
     - W programie Word użytkownicy mogą przeglądać i usuwać identyfikowane poufne treści
 - W przypadku etykiet, które umożliwiają użytkownikom przypisywanie uprawnień, różne uprawnienia (Odczyt lub Zmiana) można przyznać użytkownikom lub grupom.
@@ -88,7 +88,7 @@ Aby być na bieżąco z nowymi możliwościami etykiet dostępnymi dla wbudowany
 
 ## <a name="how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps"></a>Jak wyłączyć dodatek AIP, aby używać wbudowanych etykiet dla Office aplikacji
 
-Po zainstalowaniu klienta AIP w celu rozszerzenia etykiet poza aplikacje usługi Office, ale chcesz uniemożliwić ładowanie dodatku klienta w aplikacjach Office zasady grupy, użyj ustawienia listy zarządzanych dodatków zgodnie z dokumentem Bez dodatków załadowanych z powodu ustawień  zasad grupy dla programów [Office 2013 i Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+Po zainstalowaniu klienta AIP w celu rozszerzenia etykiet poza aplikacje usługi Office, ale chcesz uniemożliwić ładowanie dodatku tego klienta w aplikacjach Office, użyj ustawienia programu zasady grupy Lista zarządzanych dodatków zgodnie z dokumentem Bez dodatków załadowanych  z powodu ustawień zasad grupy dla programów [Office 2013 i Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
 W aplikacjach pakietu Windows Office, które obsługują wbudowane etykiety, użyj konfiguracji programów Microsoft Word 2016, Excel 2016, PowerPoint 2016 i Outlook 2016, określ następujące identyfikatory programowe (ProgID) dla klienta AIP i ustaw opcję na wartość **0: Dodatek jest zawsze wyłączony (zablokowany)**
 
@@ -100,12 +100,12 @@ W aplikacjach pakietu Windows Office, które obsługują wbudowane etykiety, uż
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-Wdąć to ustawienie przy zasady grupy lub przy użyciu usługi Office [zasad chmury](/DeployOffice/overview-office-cloud-policy-service).
+Wdeksuj to ustawienie przy zasady grupy lub przy użyciu Office [zasad chmury](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
-> Jeśli używasz ustawienia zasady grupy Użyj funkcji Wrażliwości w programie **Office**, aby zastosować i wyświetlić etykiety wrażliwości oraz ustawić wartość **1**, mogą wystąpić pewne sytuacje, w których dodatek AIP może być nadal ładowany w Office aplikacjach. Zablokowanie ładowania dodatku w każdej aplikacji zapobiega temu.
+> Jeśli użyjemy ustawienia zasady grupy Użyj funkcji Wrażliwości w programie **Office**, aby zastosować i wyświetlić etykiety wrażliwości oraz ustawić wartość **1**, mogą wystąpić pewne sytuacje, w których dodatek AIP nadal może zostać załadowany w Office aplikacjach. Zablokowanie ładowania dodatku w każdej aplikacji zapobiega temu.
 
-Ewentualnie możesz interakcyjne wyłączyć lub usunąć dodatek **Microsoft Azure Information Protection Office z** programu Word, Excel, PowerPoint i Outlook. Ta metoda jest odpowiednia do jednego komputera i do testowania ad hoc. Aby uzyskać instrukcje, [zobacz Wyświetlanie i](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) instalowanie dodatków oraz zarządzanie nimi w Office programach.
+Ewentualnie możesz interakcyjne wyłączyć lub usunąć dodatek **Microsoft Azure Information Protection** Office z programu Word, Excel, PowerPoint i Outlook. Ta metoda jest odpowiednia do jednego komputera i do testowania ad hoc. Aby uzyskać instrukcje, [zobacz Wyświetlanie i](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) instalowanie dodatków oraz zarządzanie nimi w Office programach.
 
 Niezależnie od metody, którą wybierzesz, zmiany zostaną wprowadzone po ponownym Office ponownego uruchomienia aplikacji.
 

@@ -18,12 +18,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej o dostępnych i preferowanych opcjach zezwalania na wiadomości przychodzące w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1edcbba31075e9880b8ea2034f4ffde50bb71e9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 0370b72ccf29469bd88679d589d715d8897c921f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465734"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681683"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Tworzenie bezpiecznych list nadawców w uchcie EOP
 
@@ -31,7 +31,7 @@ ms.locfileid: "64465734"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Jeśli jesteś klientem usługi Microsoft 365 ze skrzynkami pocztowymi w programie Exchange Online lub klientem autonomicznej usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online, program EOP oferuje wiele sposobów zapewniania, że użytkownicy będą otrzymywać wiadomości e-mail od zaufanych nadawców. Te opcje to między Exchange reguł przepływu poczty e-mail (nazywanych także regułami transportu), nadawców poczty Outlook Sejf, listy dozwolonych adresów IP (filtrowania połączeń) oraz dozwolonych list nadawców lub dozwolonych list domen w zasadach ochrony przed spamem. Te opcje można zbiorczo określić jako listy _bezpiecznych nadawców_.
@@ -101,8 +101,7 @@ W poniższym przykładzie przyjęto, że aby pominąć filtrowanie spamu, contos
 
       Gdy wiadomość pomija filtrowanie spamu ze względu na regułę przepływu poczty, `SFV:SKN` wartość jest stemplowana w nagłówku **X-Forefront-Antispam-Report** . Jeśli wiadomość pochodzi ze źródła, które znajduje się na liście adresów IP, ta wartość również `IPV:CAL` jest dodawana. Te wartości mogą pomóc w rozwiązywaniu problemów.
 
-      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="Ustawienia reguły przepływu poczty e-mail w Programie eAC dotyczące pomijania filtrowania spamu" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
-
+![Ustawienia reguły przepływu poczty e-mail w Aplikacji programu EAC dotyczące pomijania filtrowania spamu.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 ## <a name="use-outlook-safe-senders"></a>Używanie Outlook Sejf nadawców
 

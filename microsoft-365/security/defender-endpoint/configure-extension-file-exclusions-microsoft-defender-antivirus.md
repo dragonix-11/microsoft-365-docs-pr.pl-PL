@@ -15,19 +15,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: be22c80e51551b5de2a2aeed2f0dff0db9a8481f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323657"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472996"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Konfigurowanie i sprawdzanie poprawności wykluczeń na podstawie rozszerzenia pliku i lokalizacji folderu
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Program antywirusowy Microsoft Defender
 
 Można definiować wykluczenia dotyczące Program antywirusowy Microsoft Defender, które dotyczą zaplanowanych skanów[, skanów](schedule-antivirus-scans.md) na żądanie oraz zawsze wł. ochrony i monitorowania w czasie [rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md). [](run-scan-microsoft-defender-antivirus.md) **Ogólnie rzecz biorąc, nie należy stosować wykluczeń**. Jeśli chcesz zastosować wykluczenia, możesz wybrać jeden z kilku rodzajów:
@@ -36,8 +36,8 @@ Można definiować wykluczenia dotyczące Program antywirusowy Microsoft Defende
 - [Wykluczenia dotyczące plików otwieranych przez procesy](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Program antywirusowy Microsoft Defender wykluczenia nie mają zastosowania do innych funkcji programu Microsoft Defender dla punktu końcowego, takich jak wykrywanie i reagowanie w punktach końcowych [(EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), zmniejszenie powierzchni ataków [(ASR, Attack Surface Reduction)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) i kontrolowany dostęp do [folderu](/microsoft-365/security/defender-endpoint/controlled-folders) . Pliki wykluczone przy użyciu metod opisanych w tym artykule nadal mogą wyzwalać alerty EDR innych wykrycia.
-> Aby ogólnie wykluczyć pliki, dodaj je do niestandardowych wskaźników programu Microsoft Defender [for Endpoint.](/microsoft-365/security/defender-endpoint/manage-indicators)
+> Program antywirusowy Microsoft Defender wykluczenia nie mają zastosowania do innych funkcji Ochrona punktu końcowego w usłudze Microsoft Defender, [w tym wykrywanie i reagowanie w punktach końcowych (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), zmniejszenie powierzchni ataków [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) i [kontrolowany dostęp do folderu](/microsoft-365/security/defender-endpoint/controlled-folders). Pliki wykluczone przy użyciu metod opisanych w tym artykule nadal mogą wyzwalać alerty EDR innych wykrycia.
+> Aby ogólnie wykluczyć pliki, dodaj je do Ochrona punktu końcowego w usłudze Microsoft Defender [wskaźników niestandardowych](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem...
 
@@ -77,7 +77,7 @@ W poniższej tabeli przedstawiono kilka przykładów wykluczeń opartych na rozs
 
 - Wykluczenia mają zastosowanie do [zaplanowanych skanów](scheduled-catch-up-scans-microsoft-defender-antivirus.md), skanów [na żądanie](run-scan-microsoft-defender-antivirus.md) i ochrony [w](configure-real-time-protection-microsoft-defender-antivirus.md) czasie rzeczywistym, ale nie w programie Defender for Endpoint. W celu zdefiniowania wykluczeń dla usługi Defender for Endpoint użyj [wskaźników niestandardowych](manage-indicators.md).
 
-- Domyślnie lokalne zmiany wprowadzone na listach (przez użytkowników z uprawnieniami administratora, w tym zmiany wprowadzone za pomocą programu PowerShell i usługi WMI) będą scalane z listami zdefiniowanymi (i wdrożonym) przez usługi zasady grupy, Menedżer konfiguracji lub Intune. Listy zasady grupy mają pierwszeństwo w przypadku konfliktów. Ponadto zmiany na liście wykluczeń wprowadzone przy zasady grupy są widoczne w Zabezpieczenia Windows [aplikacji](microsoft-defender-security-center-antivirus.md).
+- Domyślnie lokalne zmiany wprowadzone na listach (przez użytkowników z uprawnieniami administratora, w tym zmiany wprowadzone przy użyciu programu PowerShell i WMI) będą scalane z listami zdefiniowanymi (i wdrożonych) przez zasady grupy, Configuration Manager lub Intune. Listy zasady grupy mają pierwszeństwo w przypadku konfliktów. Ponadto zmiany listy wykluczeń wprowadzone przy zasady grupy są widoczne w Zabezpieczenia Windows [aplikacji](microsoft-defender-security-center-antivirus.md).
 
 - Aby zezwolić na zastępowanie ustawień wdrożenia zarządzanego przez zmiany lokalne, skonfiguruj scalanie list wykluczeń zdefiniowanych [lokalnie i globalnie](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists).
 
@@ -85,18 +85,18 @@ W poniższej tabeli przedstawiono kilka przykładów wykluczeń opartych na rozs
 
 Możesz wybrać jedną z kilku metod definiowania wykluczeń dla Program antywirusowy Microsoft Defender.
 
-### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Konfigurowanie nazwy pliku, folderu lub wykluczeń rozszerzenia plików przy użyciu usługi Intune
+### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Konfigurowanie Intune plików, folderów i wykluczeń rozszerzenia plików przy użyciu programu Intune plików
 
 Zobacz następujące artykuły:
 
 - [Konfigurowanie ustawień ograniczeń urządzeń w aplikacji Microsoft Intune](/intune/device-restrictions-configure)
-- [Program antywirusowy Microsoft Defender ograniczeń urządzenia dla aplikacji Windows 10 Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [Program antywirusowy Microsoft Defender ograniczeń urządzenia dla Windows 10 w Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Konfigurowanie Menedżer konfiguracji plików, folderów i wykluczeń rozszerzenia plików przy użyciu programu Menedżer konfiguracji plików
+### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Konfigurowanie Configuration Manager plików, folderów i wykluczeń rozszerzenia plików przy użyciu programu Configuration Manager plików
 
 Zobacz [Jak tworzyć i wdrażać zasady ochrony przed złośliwym oprogramowaniem: Ustawienia wykluczeń](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), aby uzyskać szczegółowe informacje na temat Microsoft Endpoint Manager (bieżąca gałąź).
 
-### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Konfigurowanie wykluczeń folderów lub rozszerzeń plików przy użyciu programu zasady grupy plików
+### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Konfigurowanie wykluczeń folderów lub rozszerzeń plików przy użyciu programu zasady grupy
 
 > [!NOTE]
 > W przypadku określenia w pełni kwalifikowanej ścieżki do pliku zostanie wykluczony tylko ten plik. Jeśli wykluczono folder, wszystkie pliki i podkategorie w tym folderze są wykluczane.
@@ -334,7 +334,7 @@ Get-MpPreference
 
 W poniższym przykładzie wyróżnione `ExclusionExtension` są elementy znajdujące się na liście:
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Dane wyjściowe programu PowerShell dla polecenia Get-MpPreference.":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Dane wyjściowe programu PowerShell dla konferencji Get-MpPreference" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 Aby uzyskać więcej informacji, zobacz [Używanie poleceń cmdlet programu PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) do konfigurowania i uruchamiania Program antywirusowy Microsoft Defender i poleceń [cmdlet programu antywirusowego Defender](/powershell/module/defender/).
 
@@ -350,7 +350,7 @@ $WDAVprefs.ExclusionPath
 
 W poniższym przykładzie lista jest dzielona na nowe wiersze dla każdego użycia polecenia `Add-MpPreference` cmdlet:
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Dane wyjściowe programu PowerShell pokazujące tylko wpisy na liście wykluczeń.":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Dane wyjściowe programu PowerShell przedstawiające tylko wpisy na liście wykluczeń" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 Aby uzyskać więcej informacji, zobacz [Używanie poleceń cmdlet programu PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) do konfigurowania i uruchamiania Program antywirusowy Microsoft Defender i poleceń [cmdlet programu antywirusowego Defender](/powershell/module/defender/).
 

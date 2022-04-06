@@ -7,6 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -14,12 +15,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak używać raportu Nie zaakceptowane domeny na pulpicie nawigacyjnym przepływu poczty w Centrum zgodności usługi Security & w celu monitorowania wiadomości od lokalnej organizacji, w której domena nadawcy nie została skonfigurowana w programie Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b698600cb3fbc85ec86bed4da542d23fe5eb17e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25a8b1adb882aa83861e936d48534fc0a5f826e4
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984266"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679681"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Raport o nie zaakceptowanych domenach w Centrum & zabezpieczeń i zgodności
 

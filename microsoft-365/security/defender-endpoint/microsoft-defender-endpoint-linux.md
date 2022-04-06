@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebcfea808e64c89772f36fb22f5dfd75e6e8e27f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525810"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680825"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie
 
@@ -40,6 +40,9 @@ W tym temacie opisano, jak zainstalować, skonfigurować, zaktualizować i używ
 > Uruchamianie innych produktów ochrony punktów końcowych innych firm wraz z programem Microsoft Defender for Endpoint dla systemu Linux może prowadzić do problemów z wydajnością i nieprzewidywalnych efektów ubocznych. Jeśli ochrona punktu końcowego firmy innym niż Microsoft jest bezwzględnym wymaganiem w Twoim środowisku, nadal możesz bezpiecznie korzystać z usługi Defender for Endpoint w systemie Linux EDR po skonfigurowaniu funkcji oprogramowania antywirusowego do uruchamiania w trybie [pasywnym](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Jak zainstalować program Microsoft Defender for Endpoint w systemie Linux
+
+Program Microsoft Defender for Endpoint for Linux zawiera funkcje ochrony przed złośliwym wykrywanie i reagowanie w punktach końcowych (EDR). 
+
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 

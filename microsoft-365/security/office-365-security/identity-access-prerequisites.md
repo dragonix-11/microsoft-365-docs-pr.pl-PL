@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 1dbcfbff2a45cd3dfbc453f84eaa73e178174aee
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312015"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680913"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Wymagania wstępne dotyczące wdrażania zasad dostępu do urządzeń i tożsamości zerowego zaufania
 
@@ -54,7 +54,6 @@ W poniższej tabeli przedstawiono wstępnie wymagane funkcje i ich konfigurację
 |[Włącz Azure Active Directory tożsamości](/azure/active-directory/identity-protection/overview-identity-protection). Usługa Azure AD Identity Protection umożliwia wykrywanie potencjalnych luk w zabezpieczeniach tożsamości organizacji i konfigurowanie automatycznych zasad rozwiązywania problemów na niskie, średnie i wysokie ryzyko związane z logowaniem oraz ryzyko użytkownika.||Microsoft 365 E5 lub Microsoft 365 E3 pomocą dodatku E5 Security|
 |**Włącz nowoczesne uwierzytelnianie** [na Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) dla usługi [Skype dla firm Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Nowoczesne uwierzytelnianie jest wymaganiem wstępnym dla korzystania z uwierzytelniania wieloskładnikowego. Nowoczesne uwierzytelnianie jest domyślnie włączone dla klientów Office 2016 i 2019, klientów SharePoint i OneDrive dla Firm.||Microsoft 365 E3 lub E5|
 |[Włącz funkcję oceny dostępu ciągłego](microsoft-365-continuous-access-evaluation.md) dla usługi Azure AD. Ciągłe ocenianie dostępu proaktywnie kończy aktywne sesje użytkowników i wymusza zmiany zasad dzierżawy w niedalekiej czasie rzeczywistym.||Microsoft 365 E3 lub E5|
-|
 
 ## <a name="recommended-client-configurations"></a>Zalecane konfiguracje klienta
 
@@ -87,7 +86,6 @@ Następujący klienci poczty e-mail obsługują nowoczesne uwierzytelnianie i do
 |**Android**|Outlook dla systemu Android|[Najnowsze](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 i 2016|
 |**Linux**|Nieobsługiwane||
-|
 
 ### <a name="recommended-client-platforms-when-securing-documents"></a>Zalecane platformy klienckie podczas zabezpieczania dokumentów
 
@@ -101,7 +99,6 @@ Poniższe klienty są zalecane, gdy zastosowano zasady bezpiecznych dokumentów.
 |iOS|Obsługiwane|Obsługiwane|Obsługiwane|Obsługiwane|Nie dotyczy|
 |macOS|Obsługiwane|Obsługiwane|nd.|nd.|Nieobsługiwane|
 |Linux|Nieobsługiwane|Nieobsługiwane|Nieobsługiwane|Nieobsługiwane|Nieobsługiwane|
-|
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 obsługi klienta
 

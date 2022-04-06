@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak tworzyć niestandardowe łady dla szkolenia symulacyjnego w programie Microsoft Defender dla programu Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: df939ac031035f8771314bc1941bf44535d65610
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d670236aa81f4b5086263a75bbeceb8ca7e1e25f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032154"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679769"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Tworzenie niestandardowych ładów na platformie Defender for Office 365
 
@@ -174,10 +174,6 @@ Na **stronie Dodawanie wskaźników** kliknij pozycję **Dodaj wskaźnik**. W wy
 
 - **Nazwa wskaźnika** i **lokalizacja wskaźnika**: Te wartości są powiązane. Miejsce, w którym można umieścić wskaźnik, zależy od samego wskaźnika. Dostępne wartości opisano w poniższej tabeli:
 
-  <br>
-
-  ****
-
   |Nazwa wskaźnika|Lokalizacja wskaźnika|
   |---|---|
   |**Typ załącznika**|Treść wiadomości|
@@ -203,7 +199,6 @@ Na **stronie Dodawanie wskaźników** kliknij pozycję **Dodaj wskaźnik**. W wy
   |**Nieprofejny wygląd projektu lub formatowania**|Treść wiadomości|
   |**Hiperłącze adresu URL**|Treść wiadomości|
   |**Jesteś szczególnym użytkownikom**|Treść wiadomości|
-  |
   
   Ta lista jest wyświetlana w taki sposób, aby zawierała najczęstsze wskazówki, które pojawiają się w wiadomościach wyłudzających informacje.
 

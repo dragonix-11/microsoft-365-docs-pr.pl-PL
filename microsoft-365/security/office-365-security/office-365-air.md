@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e01fe2bdc5765c77500ae98e9c8177a35c683fca
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 70a5eba3eb78878cc1f15bdd711a3331e9af870a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324567"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680891"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Zautomatyzowane badania i odpowiedzi (AIR) w programie Microsoft Defender dla Office 365
 
@@ -89,10 +89,6 @@ Ponadto należy zapoznać się z zasadami [alertów](../../compliance/alert-poli
 
 Microsoft 365 zawiera wiele wbudowanych zasad alertów, które ułatwiają identyfikowanie nadużyć Exchange uprawnień administratora, działań złośliwego oprogramowania, potencjalnych zagrożeń zewnętrznych i wewnętrznych oraz zagrożeń związanych z zarządzaniem informacjami. Niektóre z [domyślnych zasad alertów mogą](../../compliance/alert-policies.md#default-alert-policies) wyzwalać automatyczne badania. W poniższej tabeli opisano alerty wyzwalaujące zautomatyzowane badania, ich ważność w portalu Microsoft 365 Defender oraz sposób ich generowania:
 
-<br>
-
-****
-
 |Alert|Ważność|Sposób wygenerowania alertu|
 |---|---|---|
 |Wykryto potencjalnie złośliwe kliknięcie adresu URL|**High (Wysoki)**|Ten alert jest generowany, gdy wystąpi którakolwiek z następujących sytuacji: <ul><li>Użytkownik chroniony za pomocą [linków Sejf w](safe-links.md) organizacji klika złośliwy link</li><li>Zmiany w werdyktach adresów URL są identyfikowane przez usługę Microsoft Defender dla Office 365</li><li>Użytkownicy zastępują Sejf z łączami ostrzegawczymi (w zależności od zasad Sejf [linków sieciowych w organizacji](set-up-safe-links-policies.md)).</li></ul> <p> Aby uzyskać więcej informacji na temat zdarzeń, które powodują wyzwolenie tego alertu, zobacz [Konfigurowanie Sejf linków](set-up-safe-links-policies.md).|
@@ -101,7 +97,6 @@ Microsoft 365 zawiera wiele wbudowanych zasad alertów, które ułatwiają ident
 |Wiadomości e-mail zawierające adresy URL wyłudów są usuwane po dostarczeniu|**Informacyjne**|Ten alert jest generowany, gdy wszystkie wiadomości zawierające frazę phish są dostarczane do skrzynek pocztowych w organizacji. W przypadku wystąpienia tego zdarzenia firma Microsoft usunie zainfekowane wiadomości z Exchange Online pocztowych [za pomocą zap](zero-hour-auto-purge.md).|
 |Wykrywane są podejrzane wzorce wysyłania wiadomości e-mail|**Średni**|Ten alert jest generowany, gdy ktoś z Twojej organizacji wysłał podejrzaną wiadomość e-mail i istnieje ryzyko ograniczenia możliwości wysyłania wiadomości e-mail. Alert jest wczesnym ostrzeżeniem o zachowaniu, które może wskazywać, że konto zostało naruszone, ale nie jest wystarczająco poważne, aby ograniczyć użytkownika. <p> Chociaż zdarza się to rzadko, alert wygenerowany przez te zasady może być anomaly. Warto jednak sprawdzić, czy konto użytkownika [nie zostało naruszone](responding-to-a-compromised-email-account.md).|
 |Użytkownikowi ograniczono możliwości wysyłania wiadomości e-mail|**High (Wysoki)**|Ten alert jest generowany, gdy ktoś z Twojej organizacji ma ograniczenie dostępu do wysyłania poczty wychodzącej. Ten alert zwykle powoduje, że [konto e-mail zostało naruszone](responding-to-a-compromised-email-account.md). <p> Aby uzyskać więcej informacji o użytkownikach z ograniczeniami, zobacz Usuwanie zablokowanych użytkowników z [portalu Użytkownicy z ograniczeniami w programie Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
-|
 
 > [!TIP]
 > Aby dowiedzieć się więcej o zasadach alertów lub edytować ustawienia domyślne, zobacz [Zasady alertów w Centrum zgodności platformy Microsoft 365](../../compliance/alert-policies.md).
@@ -109,10 +104,6 @@ Microsoft 365 zawiera wiele wbudowanych zasad alertów, które ułatwiają ident
 ## <a name="required-permissions-to-use-air-capabilities"></a>Wymagane uprawnienia do używania funkcji AIR
 
 Uprawnienia są udzielane za pośrednictwem określonych ról, takich jak te opisane w poniższej tabeli:
-
-<br>
-
-****
 
 |Zadanie|Role wymagane|
 |---|---|
@@ -147,10 +138,6 @@ Nowy i ulepszony portal Microsoft 365 Defender <https://security.microsoft.com> 
 
 W poniższej tabeli wymieniono zmiany i ulepszenia wprowadzone w programie AIR w programie Microsoft Defender dla Office 365.
 
-<br>
-
-****
-
 |Element|Co się zmienia?|
 |---|---|
 |**Strona Badania**|Zaktualizowana **strona Badania** jest spójna z tym, co widzisz w programie [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Zobaczysz kilka ogólnych zmian formatowania i stylu, które są zgodne z nowym, **ujednoliconym widokiem Badania** . Na przykład wykres badania ma bardziej ujednolicony format.|
@@ -161,7 +148,6 @@ W poniższej tabeli wymieniono zmiany i ulepszenia wprowadzone w programie AIR w
 |**Karta Dowód**|Nowa karta **Dowód** pokazuje kluczowe ustalenia dotyczące encji związane z akcjami. Akcje związane z każdym dowodem można zatwierdzić (lub odrzucić) w okienku bocznym, które jest otwierane po wybraniu akcji oczekującej.|
 |**Centrum akcji**|Zaktualizowane Centrum **akcji** (<https://security.microsoft.com/action-center>) łączy oczekujące i ukończone akcje z poczty e-mail, urządzeń i tożsamości. Aby dowiedzieć się więcej, zobacz Centrum akcji. (Aby dowiedzieć się więcej, zobacz [Centrum akcji](../defender/m365d-action-center.md)).|
 |**Strona Zdarzenia**|Strona **Zdarzenia jest** teraz skorelowana z wieloma badaniami, aby zapewnić lepszy skonsolidowany widok badań. ([Dowiedz się więcej o zdarzeniach](../defender/incidents-overview.md)).|
-|
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -7,7 +7,7 @@ metadata:
   author: efrene
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection:
@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: Dowiedz się więcej o domenach (domenie onmicrosoft i przenoszeniu domeny), znajdując odpowiedzi na swoje pytania w często zadawanych pytaniach.
-  ms.openlocfilehash: 6b99f8d2d6b976add06dea9382a22d0e1a0a2b6c
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 77aecfc77e65939c799e67a3a5cb2f83f357237f
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63328557"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680603"
 title: Często zadawane pytania dotyczące domen
 summary: "\n\nTen artykuł zawiera odpowiedzi na często zadawane pytania dotyczące domen w Microsoft 365.\n\nJeśli nie możesz znaleźć odpowiedzi na swoje pytanie, powiadom nas o tym, pozostawiając komentarz. Dodamy odpowiednią odpowiedź do listy.\n"
 sections:

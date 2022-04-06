@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9a083404da3ad4edc3ccf2f88e1c459dc6f08e2
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 03d4d22bdce9f18b4883437215ea5cba50b3868e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450566"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681353"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Program Microsoft Defender dla punktu końcowego dla klientów z rządem Stanów Zjednoczonych
 
@@ -118,8 +118,8 @@ Windows 7 z dodatkiem SP1 Enterprise (Starsza wersja) <sup>3</sup>|![Tak.](image
 Windows 7 z dodatkiem SP1 Pro (Starsza wersja) <sup>3</sup>|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 Linux|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
 macOS|![Tak.](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)
-Android|![L.p.](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju
-iOS|![L.p.](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju
+Android|![Tak.](images/svg/check-yes.svg) <br /> Podgląd publiczny|![Tak](images/svg/check-yes.svg) <br /> Podgląd publiczny|![Tak](images/svg/check-yes.svg) <br /> Podgląd publiczny
+iOS|![Tak.](images/svg/check-yes.svg) <br /> Podgląd publiczny|![Tak](images/svg/check-yes.svg) <br /> Podgląd publiczny|![Tak](images/svg/check-yes.svg) <br /> Podgląd publiczny
 |
 
 > [!NOTE]
@@ -194,3 +194,23 @@ Są to znane odstępy:
 |Odnajdowanie sieci|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
 |Raporty: Sterowanie urządzeniami, Kondycja urządzenia, Zapora|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
 |Filtrowanie zawartości sieci Web|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
+  
+
+To są funkcje i znane luki w obronie przed zagrożeniami na urządzeniach przenośnych [(program Microsoft Defender dla punktu końcowego w systemie Android & iOS)](mtd.md):
+
+<br />
+
+****
+
+|Nazwa funkcji|GCC|GCC wysoki|DoD|
+|---|:---:|:---:|:---:|
+|Ochrona sieci Web (wskaźniki niestandardowe i ochrona przed wyłudzaniem informacji)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
+|Ochrona przed złośliwym oprogramowaniem (tylko system Android)|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
+|Wykrywanie błędów (tylko w systemie iOS)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
+|Dostęp warunkowy/Uruchamianie warunkowe|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
+|Obsługa mam|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
+|Mechanizmy kontroli prywatności|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|![Tak](images/svg/check-yes.svg)|
+|Zarządzanie zagrożeniami i lukami (TVM)|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
+|Filtrowanie zawartości sieci Web|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
+  
+

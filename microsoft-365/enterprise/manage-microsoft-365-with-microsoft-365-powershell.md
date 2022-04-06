@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -18,13 +18,13 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: Dowiedz się, jak zarządzać Microsoft 365, licencjami i aplikacjami 365 za pomocą programu PowerShell.
-ms.openlocfilehash: 298955f37e3f29843a7efeaf1bdf8ce6f40862fc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak zarządzać Microsoft 365 użytkownikami, licencjami i aplikacjami 365 za pomocą programu PowerShell.
+ms.openlocfilehash: 2fedef0edc9effc73ffbfbd678905e0b8276df8f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62959566"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681243"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Zarządzanie Microsoft 365 za pomocą programu PowerShell
 
@@ -60,7 +60,7 @@ Wybierz jeden z następujących tematów, aby dowiedzieć się, jak zarządzać 
 
 - [**Partnerzy dap (Delegated Access Permissions)**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    Rozpocznij tutaj, jeśli chcesz zarządzać Twoimi dzierżawami Dostawca rozwiązań w chmurze klientów za pomocą programu Syndication i partnerów programu Dostawca rozwiązań w chmurze (C Microsoft 365 SP).
+    Rozpocznij tutaj, jeśli chcesz zarządzać Twoimi dzierżawami klientów za pomocą Dostawca rozwiązań w chmurze i partnerów programu Syndication (C Microsoft 365 SP).
 
 - [**Skype dla firm Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 

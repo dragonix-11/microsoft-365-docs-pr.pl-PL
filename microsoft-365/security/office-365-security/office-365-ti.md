@@ -21,12 +21,12 @@ ms.custom:
 description: Dowiedz się więcej o możliwościach analizy zagrożeń i reakcji w programie Microsoft Defender dla Office 365 ochrony przed zagrożeniami.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce7541010999b87e49880446594a79593a16a30a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 91a366b8169c783671145b73f66b0fde93b5fffe
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312967"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680670"
 ---
 # <a name="threat-investigation-and-response"></a>Badanie zagrożeń i odpowiedź
 
@@ -113,10 +113,6 @@ Usługa Microsoft Defender dla Office 365 korzysta z kontroli dostępu opartej n
 > - [Uprawnienia w Microsoft 365 Defender portalu](permissions-microsoft-365-security-center.md)
 > - [Wbudowane role w usłudze Azure AD](/azure/active-directory/roles/permissions-reference)
 
-<br>
-
-****
-
 |Działanie|Role i uprawnienia|
 |---|---|
 |Korzystanie z pulpitu nawigacyjnego zarządzania & zagrożeniami (lub nowego [pulpitu nawigacyjnego zarządzania zabezpieczeniami)](security-dashboard.md) <p> Wyświetlanie informacji o najnowszych lub bieżących zagrożeniach|Jedna z następujących czynności: <ul><li>**Administrator globalny**</li><li>**Administrator zabezpieczeń**</li><li>**Czytnik zabezpieczeń**</li></ul> <p> Te role można przypisywać w programie Azure Active Directory (<https://portal.azure.com>) lub w centrum administracyjne platformy Microsoft 365 (<https://admin.microsoft.com>).|
@@ -124,7 +120,6 @@ Usługa Microsoft Defender dla Office 365 korzysta z kontroli dostępu opartej n
 |Wyświetlanie zdarzeń (nazywanych również badaniami) <p> Dodawanie wiadomości e-mail do zdarzenia|Jedna z następujących czynności: <ul><li>**Administrator globalny**</li><li>**Administrator zabezpieczeń**</li><li>**Czytnik zabezpieczeń**</li></ul> <p> Te role można przypisywać w programie Azure Active Directory (<https://portal.azure.com>) lub w centrum administracyjne platformy Microsoft 365 (<https://admin.microsoft.com>).|
 |Wyzwalanie akcji wiadomości e-mail w przypadku zdarzenia <p> Znajdowanie i usuwanie podejrzanych wiadomości e-mail|Jedna z następujących czynności: <ul><li>**Administrator globalny**</li><li>**Administrator zabezpieczeń** oraz rola **Wyszukiwania i przeczyszczania**</li></ul> <p> Role **administratora globalnego** i **administratora** zabezpieczeń można przypisywać w programie Azure Active Directory (<https://portal.azure.com>) lub w centrum administracyjne platformy Microsoft 365 (<https://admin.microsoft.com>). <p> Rola **Wyszukiwania i przeczyszczania** musi być przypisana w rolach współpracy poczty **e-mail & w** portalu usługi Microsoft 36 Defender (<https://security.microsoft.com>).|
 |Integracja programu Microsoft Defender dla Office 365 Plan 2 z programem Microsoft Defender for Endpoint <p> Integracja programu Microsoft Defender dla Office 365 Plan 2 z serwerem SIEM|Administrator **globalny lub administrator** zabezpieczeń z  przypisaną rolą administratora zabezpieczeń Azure Active Directory (<https://portal.azure.com>) lub administratorem centrum administracyjne platformy Microsoft 365 ().<https://admin.microsoft.com> <p> --- **plus** --- <p> Odpowiednia rola przypisana w dodatkowych aplikacjach (takich [Centrum zabezpieczeń usługi Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/user-roles) lub serwerze SIEM).|
-|
 
 ## <a name="next-steps"></a>Następne kroki
 

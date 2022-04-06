@@ -19,12 +19,12 @@ ms.custom:
 description: Za pomocą nowego pulpitu nawigacyjnego zabezpieczeń możesz sprawdzać Office 365 stan ochrony przed zagrożeniami oraz wyświetlać alerty zabezpieczeń i działać na ich podstawie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 977fc897ecee859648fb1097e573cd0a8289768e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f9706a92cf07f23656e6865fe69f11b04d58544
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985287"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680525"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Pulpit nawigacyjny zabezpieczeń w Centrum & zgodności
 
@@ -54,14 +54,9 @@ Widżet Podsumowanie zagrożeń zarządzania pozwala od razu sprawdzić, jak Two
 
 Informacje zawarte w podsumowaniu zarządzania zagrożeniami zależą od tego, co obejmuje Twoja subskrypcja. W poniższej tabeli opisano, jakie informacje są Office 365 E3 i Office 365 E5.
 
-<br>
-
-****
-
 |Office 365 E3|Office 365 E5|
 |---|---|
 |Wiadomości z złośliwym oprogramowaniem zablokowane<br>Wiadomości wyłudzdzce informacje zablokowane<br>Wiadomości zgłoszone przez użytkowników<br><br><br><br>|Wiadomości z złośliwym oprogramowaniem zablokowane<br>Wiadomości wyłudzdzce informacje zablokowane<br>Wiadomości zgłoszone przez użytkowników<br>Zero-day malware blocked<br>Wykryto zaawansowane wiadomości wyłudzdzące informacje<br>Zablokowane złośliwe adresy URL|
-|
 
 Aby wyświetlić widżet Podsumowanie zagrożeń zarządzania zagrożeniami lub uzyskać do niego dostęp, musisz mieć uprawnienia do wyświetlania programu Defender dla Office 365 raportów. Aby dowiedzieć się więcej, zobacz [Jakie uprawnienia są potrzebne do wyświetlania programu Defender dla Office 365 raportów?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
@@ -73,15 +68,10 @@ Widżet Stan ochrony przed zagrożeniami umożliwia wyświetlanie skuteczności 
 
 Szczegóły zależą od tego, czy Microsoft 365 obejmuje subskrypcję [usługi Exchange Online Protection](exchange-online-protection-overview.md) (EOP) z [programem Microsoft Defender dla systemu Office 365 lub bez](defender-for-office-365.md) niego.
 
-<br>
-
-****
-
 |Jeśli Subskrypcja obejmuje...|Zobaczysz te szczegóły|
 |---|---|
 |Usługa EOP, ale nie program Microsoft Defender dla Office 365|Złośliwe wiadomości e-mail wykryte i zablokowane przez usługę EOP.<p> Zobacz [Raport o stanie ochrony przed zagrożeniami (EOP).](view-email-security-reports.md#threat-protection-status-report)|
 |Usługa Microsoft Defender dla Office 365|Złośliwa zawartość i złośliwa wiadomość e-mail wykrywane i blokowane przez usługi EOP i Defender dla Office 365 <p> Zagregowana liczba unikatowych wiadomości [e-mail](zero-hour-auto-purge.md) ze złośliwą zawartością zablokowaną przez aparat ochrony przed złośliwym oprogramowaniem, funkcjami automatycznego przeczyszczania zerowej godziny i programem Defender dla programu Office 365 (w tym łączami programu [Sejf](safe-links.md)[,](safe-attachments.md) załącznikami Sejf i wyłudzaniem informacji w programie [Defender dla systemu Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Zobacz [Raport o stanie ochrony przed zagrożeniami](view-reports-for-mdo.md#threat-protection-status-report).|
-|
 
 Aby wyświetlić widżet Stanu ochrony przed zagrożeniami lub uzyskać do niego dostęp, musisz mieć uprawnienia do wyświetlania programu Defender dla Office 365 raportów. Aby dowiedzieć się więcej, zobacz [Jakie uprawnienia są wymagane do wyświetlania programu Defender dla Office 365 raportów?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -93,17 +83,12 @@ Widżet Globalne cotygodniowe wykrywanie zagrożeń wskazuje, ile zagrożeń zos
 
 Metryki są obliczane zgodnie z opisem w poniższej tabeli:
 
-<br>
-
-****
-
 |Metryczny|Sposób obliczania|
 |---|---|
 |Wiadomości zeskanowane|Liczba zeskanowanych wiadomości e-mail pomnożona przez liczbę adresatów|
 |Zagrożenia zatrzymały się|Liczba wiadomości e-mail zidentyfikowanych jako zawierające złośliwe oprogramowanie pomnożona przez liczbę adresatów|
 |Zablokowana przez [defendera dla Office 365](defender-for-office-365.md)|Liczba wiadomości e-mail zablokowanych przez usługę Defender Office 365 pomnożona przez liczbę adresatów|
 |Usunięto po dostarczeniu|Liczba wiadomości usuniętych przez [automatyczne przeczyszczanie zerowe (ZAP)](zero-hour-auto-purge.md) pomnożona przez liczbę adresatów|
-|
 
 ## <a name="malware"></a>Złośliwe oprogramowanie
 

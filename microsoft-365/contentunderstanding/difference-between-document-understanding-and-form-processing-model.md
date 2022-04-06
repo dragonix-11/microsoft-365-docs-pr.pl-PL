@@ -13,20 +13,20 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Zapoznaj się z kluczowymi różnicami między modelem rozumienia dokumentu a modelem przetwarzania formularzy.
-ms.openlocfilehash: 0605beb2b034343cc53e32058905870f75f811a4
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: e5de4c55cc8a559ad03d722b1f7235797db76e07
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419294"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681287"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Różnice między zrozumieniem dokumentu a modelami przetwarzania formularzy 
 
-Zrozumienie zawartości w aplikacji Microsoft SharePoint Syntex umożliwia identyfikowanie i klasyfikowanie dokumentów przekazanych SharePoint bibliotek dokumentów oraz wyodrębnianie odpowiednich informacji z poszczególnych plików.  Na przykład po przesłaniu plików do biblioteki SharePoint dokumentów wszystkie pliki zidentyfikowane jako Zamówienia zakupu są klasyfikowane jako  takie, a następnie wyświetlane w niestandardowym widoku biblioteki dokumentów. Ponadto można pociągnąć określone informacje z każdego pliku (na przykład numer punktu usług  posumowych i sumę *) i* wyświetlić je jako kolumnę w widoku biblioteki dokumentów. 
+Zrozumienie zawartości w aplikacji Microsoft SharePoint Syntex umożliwia identyfikowanie i klasyfikowanie dokumentów przekazanych do SharePoint dokumentów, a następnie wyodrębnianie odpowiednich informacji z poszczególnych plików. Na przykład po przesłaniu plików do biblioteki SharePoint dokumentów wszystkie pliki zidentyfikowane jako Zamówienia zakupu są klasyfikowane jako  takie, a następnie wyświetlane w niestandardowym widoku biblioteki dokumentów. Ponadto można pociągnąć określone informacje z każdego pliku (na przykład numer punktu usług  posumowych i sumę *) i* wyświetlić je jako kolumnę w widoku biblioteki dokumentów. 
 
 Zrozumienie zawartości umożliwia tworzenie *modeli w* celu identyfikowania i wyodrębniania potrzebnych informacji. Modele pomagają rozwiązywać problemy biznesowe związane z wyszukiwaniem, procesami biznesowymi, zgodnością i wieloma innymi.
 
-Można użyć dwóch typów modeli:
+Można użyć dwóch typów modeli niestandardowych:
 
 - [Dokument opisowy modele](document-understanding-overview.md)
 - [Modele przetwarzania formularzy](form-processing-overview.md)
@@ -52,7 +52,7 @@ Modele opisowe dokumentów są tworzone i zarządzane w SharePoint centrum zawar
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat dokumentów wejściowych, [zobacz Wymagania i ograniczenia dotyczące modelu przetwarzania formularzy](/ai-builder/form-processing-model-requirements). 
 
-Modele przetwarzania formularzy są tworzone Power Apps [aplikacji AI Builder](/ai-builder/overview), ale tworzenie rozpoczyna się bezpośrednio z SharePoint dokumentów. Aby można było utworzyć dla biblioteki dokumentów model przetwarzania formularzy, użytkownik musi mieć włączoną funkcję tworzenia modelu przetwarzania formularzy. Administratorzy mogą włączyć tworzenie modelu przetwarzania formularzy w zawartości opisowej ustawienia administratora. Modele przetwarzania formularzy używają przepływów PowerAutomate do przetwarzania plików po ich przesłaniu do biblioteki dokumentów.
+Modele przetwarzania formularzy są tworzone Power Apps [aplikacji AI Builder](/ai-builder/overview), ale tworzenie rozpoczyna się bezpośrednio z SharePoint dokumentów. Aby można było utworzyć dla biblioteki dokumentów model przetwarzania formularzy, użytkownik musi mieć włączoną funkcję tworzenia modelu przetwarzania formularzy. Administratorzy mogą włączyć tworzenie modelu przetwarzania formularzy w zawartości opisowej ustawienia administratora. Modele przetwarzania formularzy Power Automate przepływów do przetwarzania plików po ich przesłaniu do biblioteki dokumentów.
 
 Podczas tworzenia modelu rozumienia dokumentu jest tworzyć nowy typ [SharePoint, który](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) jest zapisywany w galerii typów SharePoint zawartości. Możesz również w razie potrzeby zdefiniować model za pomocą istniejących typów zawartości.
 

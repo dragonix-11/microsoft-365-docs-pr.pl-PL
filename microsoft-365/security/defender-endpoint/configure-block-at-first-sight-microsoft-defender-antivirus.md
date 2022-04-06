@@ -15,19 +15,19 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c955ab15640a8c3154e14ba0201946e109f832a9
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 48a411d836669a47479daa68a83a96c3e65b949f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014699"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473238"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Włączanie bloku na pierwszy rzut oka
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 W tym artykule opisano funkcję antywirusową/ochrony przed złośliwym oprogramowaniem, określaną na pierwszy rzut oka jako "blokuj na pierwszy rzut oka" i jak włączać blokowanie na pierwszy rzut oka dla organizacji.
 
@@ -50,10 +50,10 @@ Jeśli Program antywirusowy Microsoft Defender napotka podejrzany, ale niezauwa�
 
 Program antywirusowy Microsoft Defender technologii wykrywania i zapobiegania wielu problemom w celu zapewnienia dokładnej, inteligentnej i ochrony w czasie rzeczywistym.
 
-![Lista aparatów audio/wideo programu Microsoft Defender.](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Lista aparatów audio/wideo programu Microsoft Defender" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
-> Aby dowiedzieć się więcej, zobacz (Blog) Poznaj zaawansowane technologie i zapoznaj się z podstawowymi tematami programu [Microsoft Defender for Endpoint ochrony następnej generacji](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+> Aby dowiedzieć się więcej, zobacz [(Blog) Poznaj zaawansowane technologie](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/) i zapoznaj się z podstawowymi Ochrona punktu końcowego w usłudze Microsoft Defender ochrony nowej generacji.
 
 ## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Kilka rzeczy, o których należy wiedzieć, na pierwszy rzut oka na blok
 
@@ -83,15 +83,15 @@ Program antywirusowy Microsoft Defender technologii wykrywania i zapobiegania wi
    - **Rozszerzenie czasu na skanowanie plików w chmurze**: 50
    - **Monituj użytkowników przed przykładowym przesłaniem**: Wyślij wszystkie dane bez monitowania
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Blok konfiguracji usługi Intune na pierwszy rzut oka.":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune bloku konfiguracji na pierwszy rzut oka" lightbox="../../media/intune-block-at-first-sight.png":::
 
 4. Zapisz ustawienia.
 
 > [!TIP]
 >
 > - Ustawienie poziomu blokowania pliku na **Wysoki** powoduje zastosowanie silnego poziomu wykrywania. W przypadku mało prawdopodobnego zdarzenia, w przypadku blokowania plików powodujących wykrywanie fałszywych wyników dodatnich legalnych plików, zespół operacji zabezpieczeń może przywrócić pliki poddane [kwarantannie](./restore-quarantined-files-microsoft-defender-antivirus.md).
-> - Aby uzyskać więcej informacji na temat konfigurowania Program antywirusowy Microsoft Defender urządzeń w usłudze Intune, zobacz Konfigurowanie ustawień ograniczeń [urządzeń w usłudze Microsoft Intune](/intune/device-restrictions-configure).
-> - Aby uzyskać listę ograniczeń Program antywirusowy Microsoft Defender urządzeń w usłudze Intune, zobacz Ograniczenia dotyczące urządzeń [Windows 10 (i nowsze) w usłudze Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+> - Aby uzyskać więcej informacji na temat konfigurowania Program antywirusowy Microsoft Defender urządzeń w aplikacji Intune, zobacz Konfigurowanie ustawień ograniczeń [urządzeń w programie Microsoft Intune](/intune/device-restrictions-configure).
+> - Aby uzyskać listę ograniczeń Program antywirusowy Microsoft Defender urządzeniach w programie Intune, zobacz Ograniczenia dotyczące urządzeń Windows 10 (i nowsze[) ustawień](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) w Intune.
 
 ## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Włączanie bloku na pierwszy rzut oka za pomocą Microsoft Endpoint Manager
 
@@ -108,18 +108,18 @@ Program antywirusowy Microsoft Defender technologii wykrywania i zapobiegania wi
    - **Poziom ochrony w chmurze**: Wysoki
    - **Program antywirusowy Microsoft Defender limit czasu w sekundach**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Blokuj ustawienia na pierwszy rzut oka w Endpoint Manager.":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Blokuj ustawienia na pierwszy rzut oka w Microsoft Endpoint Manager widoku" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
 
 4. Zastosuj profil Program antywirusowy Microsoft Defender do grupy, takiej jak Wszyscy **użytkownicy, Wszystkie** urządzenia lub **Wszyscy użytkownicy i urządzenia**. 
 
 ## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Włączanie bloku na pierwszy rzut oka za pomocą zasady grupy
 
 > [!NOTE]
-> Zalecamy korzystanie z usługi Intune lub Microsoft Endpoint Manager aby od pierwszego rzutu oka włączyć blokowanie.
+> Zalecamy korzystanie z Intune lub Microsoft Endpoint Manager, aby od pierwszego rzutu oka włączyć blok.
 
 1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-2. Za pomocą **edytora zasady grupy zarządzania przejdź** do **tematu Konfiguracja** \> **komputera** \> Szablony administracyjne dla **Windows Składniki** \> **Program antywirusowy Microsoft Defender** \> **MAPY**.
+2. Za pomocą **edytora zasady grupy zarządzania przejdź** do **strony Konfiguracja** \> komputera **Szablony** \> administracyjne Windows **Składniki** \> **Program antywirusowy Microsoft Defender** \> **MAPY**.
 
 3. W sekcji MAPY kliknij dwukrotnie pozycję Konfiguruj funkcję **"** Blokuj na pierwszy rzut oka", ustaw dla tej funkcji wartość **Włączone, a** następnie wybierz przycisk **OK**.
 
@@ -128,7 +128,7 @@ Program antywirusowy Microsoft Defender technologii wykrywania i zapobiegania wi
 
 4. W sekcji MAPY kliknij dwukrotnie pozycję **Wyślij próbki plików, gdy jest** wymagana dalsza analiza, i ustaw dla niego wartość **Włączone**. W **obszarze Wyślij próbki plików podczas dalszej analizy** wybierz pozycję **Wyślij wszystkie próbki**, a następnie wybierz przycisk **OK**.
 
-5. W ten sposób możesz ponownie zasady grupy obiekt obiektowy w sieci.
+5. W przypadku ponownego zasady grupy obiektowego w sieci w ten sposób, jak to zwykle robisz.
 
 ## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>Potwierdzanie, że blokowanie na pierwszy rzut oka jest włączone na poszczególnych urządzeniach klienckich
 
@@ -138,14 +138,14 @@ Możesz potwierdzić, że blokowanie na pierwszy rzut oka jest włączone na pos
 
 2. Wybierz **pozycję ochrona & przed** zagrożeniami, a następnie w obszarze **Ustawienia ochrony przed &** wirusami wybierz pozycję **Zarządzaj** Ustawienia.
 
-   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Zrzut ekranu przedstawiający etykietę ustawień ochrony przed & wirusami w Zabezpieczenia Windows aplikacji":::
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Etykieta ustawień ochrony przed & wirusami w Zabezpieczenia Windows aplikacji" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
 3. Upewnij się **, że są włączone zabezpieczenia w** **chmurze i** Automatyczne przesyłanie próbek.
 
 > [!NOTE]
 >
 > - Jeśli wstępnie wymagane ustawienia zostały skonfigurowane i wdrożone przy użyciu programu zasady grupy, ustawienia opisane w tej sekcji będą wyszzarowane i niedostępne do użycia w poszczególnych punktach końcowych.
-> - Zmiany wprowadzone za pośrednictwem zasady grupy obiekt musi najpierw zostać wdrożony w poszczególnych punktach końcowych, aby ustawienie było aktualizowane w Windows Ustawienia.
+> - Zmiany wprowadzone za pośrednictwem obiektu zasady grupy muszą najpierw zostać wdrożone w poszczególnych punktach końcowych, aby ustawienie było aktualizowane w Windows Ustawienia.
 
 ## <a name="validate-block-at-first-sight-is-working"></a>Sprawdzanie działania bloku na pierwszy rzut oka
 
@@ -183,9 +183,9 @@ Blokadę można wyłączyć na pierwszy rzut oka, jeśli ustawienia wymagań wst
 
 ### <a name="turn-off-block-at-first-sight-with-group-policy"></a>Wyłączanie bloku na pierwszy rzut oka za pomocą zasady grupy
 
-1. Na komputerze zasady grupy zarządzania otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
+1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę [zasady grupy zarządzania danymi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-2. Za pomocą zasady grupy **zarządzania przejdź** do **strony Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
+2. Za pomocą **edytora zasady grupy zarządzania przejdź** do **strony Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
 
 3. Rozwiń drzewo przez Windows **składniki Program antywirusowy Microsoft Defender** \>  \> **MAPY**.
 
@@ -202,7 +202,7 @@ Jeśli nie jesteś administratorem przedsiębiorstwa ani administratorem it Pro 
 
 Jeśli masz urządzenie osobiste, którym nie zarządza organizacja, być może zastanawiasz się, jak od początku włączyć lub wyłączyć blokowanie. Za pomocą aplikacji Zabezpieczenia Windows możesz zarządzać blokami od pierwszego rzutu oka.
 
-1. Na komputerze Windows 10 lub Windows 11 otwórz Zabezpieczenia Windows komputera.
+1. Na komputerze Windows 10 lub Windows 11 otwórz aplikację Zabezpieczenia Windows komputera.
 
 2. Wybierz **pozycję Ochrona & przed zagrożeniami**.
 

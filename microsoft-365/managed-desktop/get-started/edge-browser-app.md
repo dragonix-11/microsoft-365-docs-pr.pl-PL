@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: aab02ec260f0131ab32d28834152f50b84abce21
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 6c012b97c3d318e18dda9eb7eaee4336058b792d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016536"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680481"
 ---
 # <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -26,7 +26,7 @@ ms.locfileid: "63016536"
 - Bezproblemowa synchronizacja między urządzeniami za pomocą pomocy technicznej i profilów międzyplatformowych.
 
 > [!IMPORTANT]
-> 15 czerwca 2022 r. zostanie wycofana aplikacja komputerowa Internet Explorer 11 (aby uzyskać listę zakresów pomocy technicznej, zobacz Często zadawane [pytania](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/internet-explorer-11-desktop-app-retirement-faq/ba-p/2366549)). Te same aplikacje i witryny IE11, z których obecnie korzystasz, można otwierać w Microsoft Edge w trybie programu Internet Explorer. [Dowiedz się więcej tutaj](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/).
+> 15 czerwca 2022 r. zostanie wycofana aplikacja komputerowa Internet Explorer 11 (aby uzyskać listę zakresów pomocy technicznej, zobacz Często zadawane [pytania](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/internet-explorer-11-desktop-app-retirement-faq/ba-p/2366549)). Te same aplikacje i witryny IE11, z których obecnie korzystasz, można otwierać w aplikacji Microsoft Edge w trybie przeglądarki Internet Explorer. [Dowiedz się więcej tutaj](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/).
 
 ## <a name="updates-to-microsoft-edge"></a>Aktualizacje Microsoft Edge
 
@@ -75,7 +75,7 @@ Plan bazowy zabezpieczeń dla Microsoft Edge na Microsoft Managed Desktop urząd
 
 | Ustawienie | Wartość domyślna | Opis
 | ------ | ------ | ------ |
-| Włączanie zapisywania haseł w menedżerze haseł | Wyłączone | Menedżer haseł jest domyślnie wyłączony. Jeśli chcesz, aby ta funkcja była włączona, zamieć zgłoszenie do pomocy technicznej, a nasi inżynierowie usługi mogą włączyć to ustawienie w Twoim środowisku. |
+| Włączanie zapisywania haseł w menedżerze haseł | Wyłączone | Menedżer haseł jest domyślnie wyłączony. Jeśli chcesz, aby ta funkcja została włączona, poproś o pomoc techniczną, a nasi inżynierowie mogą włączyć to ustawienie w Twoim środowisku. |
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Tryb programu Internet Explorer w programie Microsoft Edge
 

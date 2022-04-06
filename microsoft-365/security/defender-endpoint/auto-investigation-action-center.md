@@ -19,20 +19,20 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 7c300a6d66ae67d481b61a0a35101a0472031266
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3cd45506601202a4a1bd5a400eeb51a0e07cecc0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327689"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473040"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Odwiedź Centrum akcji, aby wyświetlić działania naprawcze
 
-W trakcie automatycznego badania i po jego zakończeniu są identyfikowane działania naprawcze dotyczące wykrywania zagrożeń. W zależności od określonego zagrożenia i sposobu skonfigurowania programu [Microsoft Defender for Endpoint](/windows/security/threat-protection) dla organizacji niektóre działania naprawcze są podejmowane automatycznie, a inne wymagają zatwierdzenia. Jeśli jesteś częścią zespołu operacji zabezpieczeń organizacji, w Centrum akcji możesz wyświetlać oczekujące i ukończone akcje [](manage-auto-investigation.md#remediation-actions) **zaradcze**.
+W trakcie automatycznego badania i po jego zakończeniu są identyfikowane działania naprawcze dotyczące wykrywania zagrożeń. W zależności od określonego zagrożenia i konfiguracji [Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection) organizacji niektóre akcje naprawcze są podejmowane automatycznie, a inne wymagają zatwierdzenia. Jeśli jesteś częścią zespołu operacji zabezpieczeń organizacji, w Centrum akcji możesz wyświetlać oczekujące i ukończone akcje [](manage-auto-investigation.md#remediation-actions) **zaradcze**.
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="new-a-unified-action-center"></a>(NOWOŚĆ!) Ujednolicone Centrum akcji
@@ -40,22 +40,22 @@ W trakcie automatycznego badania i po jego zakończeniu są identyfikowane dzia�
 
 Z prosimy o ogłaszanie nowego, ujednoliconego Centrum akcji ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))!
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="Centrum akcji w Microsoft 365 Defender akcji.":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="Strona Centrum akcji w Microsoft 365 Defender akcji" lightbox="images/mde-action-center-unified.png":::
 
 W poniższej tabeli porównano nowe, ujednolicone Centrum akcji z poprzednim Centrum akcji.
 
 |Nowe, ujednolicone Centrum akcji  |Poprzednie Centrum akcji  |
 |---------|---------|
-|Lista oczekujących i ukończonych akcji dla urządzeń i poczty e-mail w jednej lokalizacji <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) oraz [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Lista oczekujących i ukończonych akcji dla urządzeń <br/> ([Tylko program Microsoft Defender dla punktu](microsoft-defender-endpoint.md) końcowego)   |
+|Lista oczekujących i ukończonych akcji dla urządzeń i poczty e-mail w jednej lokalizacji <br/>([Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md) plus [Ochrona usługi Office 365 w usłudze Microsoft Defender](/microsoft-365/security/office-365-security/office-365-atp))|Lista oczekujących i ukończonych akcji dla urządzeń <br/> ([Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md) tylko)   |
 |Znajduje się w:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Znajduje się w:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| W portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> wybierz **pozycję Centrum akcji**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Przechodzenie do Centrum akcji w Microsoft 365 Defender akcji."::: | W portalu Microsoft 365 Defender wybierz pozycję **Automatyczne** **badaniaAction** >  Center. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Przechodzenie do Centrum akcji z Microsoft 365 Defender a.":::  |
+| W portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> wybierz **pozycję Centrum akcji**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Okienko nawigacji do Centrum akcji w Microsoft 365 Defender nawigacji" lightbox="images/action-center-nav-new.png"::: | W portalu Microsoft 365 Defender wybierz pozycję **Automatyczne** **badaniaAction** >  Center. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Starsza wersja okienka nawigacji do Centrum akcji w portalu Microsoft 365 Defender nawigacji" lightbox="images/action-center-nav-old.png":::  |
 
-Ujednolicone Centrum akcji łączy działania naprawcze w usługach Defender for Endpoint i Defender for Office 365. Definiuje ona język wspólny dla wszystkich działań naprawczych i zapewnia ujednolicone środowisko badania.
+Ujednolicone Centrum akcji łączy działania naprawcze w usługach Defender for Endpoint i Ochrona usługi Office 365 w usłudze Defender. Definiuje ona język wspólny dla wszystkich działań naprawczych i zapewnia ujednolicone środowisko badania.
 
 Ujednoliconego Centrum akcji możesz używać, jeśli masz odpowiednie uprawnienia i co najmniej jedną z następujących subskrypcji:
 
-- [Defender for Endpoint](microsoft-defender-endpoint.md)
-- [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md)
+- [Ochrona usługi Office 365 w usłudze Defender](/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
 
 > [!TIP]
@@ -77,7 +77,7 @@ Po odwiedzenia Centrum akcji są dostępne dwie karty: **Oczekujące akcje** i *
 
 W Centrum akcji możesz dostosowywać, sortować, filtrować i eksportować dane.
 
-:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Kolumny i filtry w Centrum akcji.":::
+:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Centrum akcji z kolumnami i filtrami" lightbox="images/new-action-center-columnsfilters.png":::
 
 - Zaznacz nagłówek kolumny, aby posortować elementy w kolejności rosnącej lub malejącej.
 - Użyj filtru okresu, aby wyświetlić dane za przeszły dzień, tydzień, 30 dni lub 6 miesięcy.
@@ -89,8 +89,8 @@ W Centrum akcji możesz dostosowywać, sortować, filtrować i eksportować dane
 ## <a name="next-steps"></a>Następne kroki
 
 - [Wyświetlanie i zatwierdzanie działań naprawczych](manage-auto-investigation.md)
-- [Zobacz interakcyjny przewodnik: Badanie i rozwiązywanie problemów związanych z zagrożeniami za pomocą programu Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Zobacz interakcyjny przewodnik: Badanie i rozwiązywanie problemów związanych z zagrożeniami za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender](https://aka.ms/MDATP-IR-Interactive-Guide)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Adres dodatnich/ujemnych wyników fałszywie dodatnich w programie Microsoft Defender dla punktu końcowego](defender-endpoint-false-positives-negatives.md)
+- [Rozwiązywanie problemów z wynikami fałszywie pozytywnymi/negatywnymi w ochronie punktu końcowego w usłudze Microsoft Defender](defender-endpoint-false-positives-negatives.md)

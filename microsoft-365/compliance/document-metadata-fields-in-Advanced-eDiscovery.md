@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: W tym artykule zdefiniowano pola metadanych dla dokumentów w zestawie recenzji w przypadku Advanced eDiscovery w Microsoft 365.
-ms.openlocfilehash: a1ce1cf43cb2b5d741731948288ab60f48cf5352
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e07afbcfff0c6cae748ac6104879ec25f046cbf5
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63014921"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680736"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Pola metadanych dokumentu w Advanced eDiscovery
 
@@ -66,7 +66,7 @@ W poniższej tabeli wymieniono pola metadanych dla dokumentów w zestawie recenz
 |Teams tytuł ogłoszenia|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Tytuł z ogłoszenia [zespołu](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|Ścieżka przekonwertowanego pliku eksportu. Tylko do użytku wewnętrznego firmy Microsoft.|
 |Szybki|Szybki|Szybki|Nazwa elementu-pogotowa, z który był skojarzony element.|
-|Data|Data|Data|Data to pole obliczeniowe zależne od typu pliku.<p>Wiadomość e-mail: Data wysłania<br>Załączniki wiadomości e-mail: Data ostatniej modyfikacji dokumentu; jeśli jest niedostępne, data wysłania rodzica<br>Dokumenty osadzone: data ostatniej modyfikacji dokumentu; Jeśli nie jest dostępna, data ostatniej modyfikacji elementu nadrzędnego<br>Dokumenty spo (zawiera nowoczesne załączniki): SharePoint Data ostatniej modyfikacji; jeśli nie jest dostępna, dokumenty z datą ostatniej modyfikacji<br>Dokumenty Office 365 inne niż: Data ostatniej modyfikacji<br>Spotkania: data rozpoczęcia spotkania<br>Poczta głosowa: Data wysłania<br>Wiadomości błyskawiczne: Data wysłania<br>Teams: Data wysłania|
+|Data|Data|Data|Data to pole obliczeniowe zależne od typu pliku.<p>**Wiadomość e-mail**: Data wysłania<br>**Załączniki wiadomości** e-mail: data ostatniej modyfikacji dokumentu; Jeśli nie jest dostępna, data wysłania rodzica<br>**Dokumenty osadzone**: data ostatniej modyfikacji dokumentu; Jeśli nie jest dostępna, data ostatniej modyfikacji elementu nadrzędnego<br>**dokumenty w użyt. (zawiera nowoczesne załączniki)**: data ostatniej modyfikacji dokumentu; jeśli nie jest dostępny, SharePoint datę ostatniej modyfikacji<br>**Dokumenty Office 365 inne niż**: Data ostatniej modyfikacji<br>**Spotkania**: data rozpoczęcia spotkania<br>**Poczta głosowa**: Data wysłania<br>**Wiadomości błyskawiczne**: Data wysłania<br>**Teams**: Data wysłania|
 |Komentarze dokumentu|DocComments|Doc_comments|Komentarze z metadanych dokumentu.|
 |Firma dokumentów||Doc_company|Firma z metadanych dokumentu.|
 |Data utworzenia dokumentu|CreatedTime|Doc_date_created|Utwórz datę na stronie metadane dokumentu.|

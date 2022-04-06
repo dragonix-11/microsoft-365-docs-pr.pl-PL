@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i łady uruchamiane po spełnionych określonych warunkach w programie Microsoft Defender Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 327091706ed7c8c2a6f1f1180af7888ed67c1a57
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 3ad24a8b6d2be18fb7ef5fd49be7f2197b3be3a7
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526182"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680957"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatyzacje symezyjne dla szkolenia z symezyjną ataków
 
@@ -230,15 +230,10 @@ Na stronie **docelowej** możesz skonfigurować stronę sieci Web, do których u
 
 - **Wybieranie preferencji strony docelowej**: Dostępne wartości zależą od wcześniejszych wyborów na stronie Wybieranie ładowań zgodnie z opisem w poniższej tabeli:[](#select-payloads)
 
-  <br>
-
-  ****
-
   |Zaznaczenie na stronie Wybierz łady|Dostępne wartości dla preferencji Wybierz stronę docelową|
   |---|---|
   |Wybierz ręcznie|Użyj domyślnej strony startowej firmy Microsoft <p> Tworzenie własnej strony docelowej <p> Używanie niestandardowego adresu URL <p> **Uwaga**: wartość **Użyj niestandardowego adresu URL** nie jest dostępna, jeśli na stronie  Wybieranie technik społecznościowych wcześniej wybrano pozycję Załącznik złośliwego [oprogramowania lub](#select-one-or-more-social-engineering-techniques) **Link** do złośliwego oprogramowania.|
   |Randomizuj|Użyj domyślnej strony startowej firmy Microsoft|
-  |
 
   Dostępne wartości **preferencji wybierz stronę docelową** i skojarzone z nimi ustawienia są opisane na poniższej liście:
 

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/14/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Podsumowanie: Skorzystaj z tych przewodników laboratorium testowego, aby skonfigurować środowiska demonstracyjne, próbne lub deweloperska/testowa dla Microsoft 365.'
-ms.openlocfilehash: 802c606375ff6bfd4f2a7d7e1a36301c94bf3b37
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c5fa4efcc032fd166a2e84178138ff7cb4150d6d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984599"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680648"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Test Microsoft 365 z przewodnikami laboratorium testowego
 

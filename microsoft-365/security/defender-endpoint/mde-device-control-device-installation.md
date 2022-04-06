@@ -1,6 +1,6 @@
 ---
-title: Instalacja urządzenia do sterowania urządzeniem programu Microsoft Defender dla punktu końcowego
-description: Ten temat zawiera instrukcje dotyczące instalacji urządzenia do sterowania urządzeniem punktu końcowego programu Microsoft Defender
+title: Ochrona punktu końcowego w usłudze Microsoft Defender instalacja urządzenia sterującego urządzeniem
+description: Ten temat zawiera instrukcje dotyczące instalacji Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia sterującego urządzeniem
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,26 +13,26 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ff727f95dd62c205cee7e9606cb024a5ea88bda
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: ccef3ec748983db89b6ceca9b8092eafbef0d899
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013291"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472622"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Instalacja urządzenia do sterowania urządzeniem programu Microsoft Defender dla punktu końcowego
+# <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Ochrona punktu końcowego w usłudze Microsoft Defender instalacja urządzenia sterującego urządzeniem
 
 **Dotyczy**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Program Microsoft Defender for Endpoint Device Control Installation umożliwia następujące zadanie:
+Ochrona punktu końcowego w usłudze Microsoft Defender instalacja urządzenia sterującego urządzeniem umożliwia wykonania następującego zadania:
 
 - Uniemożliwianie innym osobom instalowania określonych urządzeń.
 - Zezwalaj użytkownikom na instalowanie określonych urządzeń, ale uniemożliwiaj innym.
 
 > [!NOTE]
-> Aby znaleźć różnicę między instalacją urządzenia a wymiennym dostępem do magazynu, zobacz [Program Microsoft Defender for Endpoint Device Control Wymienny Storage nośniku](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
+> Aby znaleźć różnicę między instalacją urządzenia a wymiennym nośnikiem dostępu do magazynu, zobacz Ochrona punktu końcowego w usłudze Microsoft Defender [Wymienna Storage urządzenia](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
 
 |Uprawnienie|Uprawnienie|
 |---|---|
@@ -62,9 +62,9 @@ Aby uzyskać więcej informacji, zobacz [Instalacja urządzenia w aplikacji Wind
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-ids"></a>Zezwalaj na instalację urządzeń, które są zgodne z dowolnym z tych identyfikatorów urządzeń
 
-To ustawienie zasad umożliwia określenie listy identyfikatorów sprzętu podłączanych i odtwarzanych oraz zgodnych identyfikatorów dla urządzeń Windows których instalacja jest dozwolona. To ustawienie zasad jest przeznaczone do stosowania tylko wtedy, gdy  jest włączone ustawienie Zasad zastosuj kolejność warstwową oceny dla opcji Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach z kryteriami.
+To ustawienie zasad umożliwia określenie listy identyfikatorów Plug and Play i zgodnych identyfikatorów dla urządzeń Windows które mogą instalować. To ustawienie zasad jest przeznaczone do stosowania tylko wtedy, gdy  jest włączone ustawienie Zasad zastosuj kolejność warstwową oceny dla opcji Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach z kryteriami.
 
-Jeśli to ustawienie zasad jest włączone wraz z ustawieniem Zastosuj kolejność oceny w warstwie Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach zgodnie z ustawieniem zasad kryterium, program Windows może zainstalować lub zaktualizować dowolne urządzenie z identyfikatorem sprzętu podłącz i odtąd lub zgodnym identyfikatorem na tworzyć, chyba że inne ustawienie zasad w tej samej lub wyższej warstwie hierarchii uniemożliwia taką instalację.  na przykład następujące ustawienia zasad:
+Jeśli to ustawienie zasad jest włączone wraz z ustawieniem Zastosuj kolejność oceny w warstwie Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach zgodnie z ustawieniem zasad kryteriów, program Windows może zainstalować lub zaktualizować każde urządzenie z identyfikatorem sprzętu lub zgodnym identyfikatorem Plug and Play wyświetlone na tworzyć listę, chyba że inne ustawienie zasad na tej samej lub wyższej warstwie hierarchii jest specjalnie zabronione   instalacji, na przykład następujące ustawienia zasad:
 
 - Zapobiegaj instalacji urządzeń, które są zgodne z tymi identyfikatorami.
 - Uniemożliwiaj instalację urządzeń, które są zgodne z dowolnymi identyfikatorami wystąpień tych urządzeń.
@@ -72,13 +72,13 @@ Jeśli to ustawienie zasad jest włączone wraz z ustawieniem Zastosuj kolejnoś
 Jeśli ustawienie Zastosuj **porządek** oceny w warstwie dla opcji Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach jest włączone dla tego ustawienia zasad, wszystkie inne ustawienia zasad zapobiegające instalacji będą miały pierwszeństwo.
 
 > [!NOTE]
-> Ustawienie  zasad Zapobiegaj instalacji urządzeń, które nie są opisane przez inne ustawienia zasad, zostało zastąpione ustawieniem zasad Zastosuj kolejność oceny w warstwie dla opcji Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach zgodnie z ustawieniem zasad kryteria dopasowania dla obsługiwanych wersji docelowych Windows 10 i Windows 11. Zalecane jest użycie ustawienia Zastosuj kolejność oceny w warstwie dla opcji **Zezwalaj** i Zapobiegaj zasadom instalacji urządzeń na wszystkich urządzeniach, jeśli to możliwe.
+> Ustawienie  zasad Zapobiegaj instalacji urządzeń, które nie zostały opisane przez inne ustawienia zasad, zostało zastąpione ustawieniem Zasad Zastosuj kolejność oceny w warstwie do wyboru dla opcji Zezwalaj i Zapobiegaj zasadom instalacji urządzeń na wszystkich urządzeniach zgodnie z ustawieniem zasad dopasowania do obsługiwanych wersji docelowych i Windows 11. Windows 10  Zalecane jest użycie ustawienia Zastosuj kolejność oceny w warstwie dla opcji **Zezwalaj** i Zapobiegaj zasadom instalacji urządzeń na wszystkich urządzeniach, jeśli to możliwe.
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>Zezwalaj na instalację urządzeń, które są zgodne z dowolnym identyfikatorem wystąpienia tych urządzeń
 
-To ustawienie zasad umożliwia określenie listy identyfikatorów wystąpień urządzeń plug and play dla urządzeń Windows których instalacja jest dozwolona. To ustawienie zasad jest przeznaczone do stosowania tylko wtedy, gdy  jest włączone ustawienie Zasad zastosuj kolejność warstwową oceny dla opcji Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach z kryteriami.
+To ustawienie zasad umożliwia określenie listy identyfikatorów wystąpień Plug and Play urządzeń dla urządzeń Windows które mogą zainstalować. To ustawienie zasad jest przeznaczone do stosowania tylko wtedy, gdy  jest włączone ustawienie Zasad zastosuj kolejność warstwową oceny dla opcji Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach z kryteriami.
 
-Jeśli to ustawienie zasad jest włączone wraz z ustawieniem Zastosuj kolejność oceny w warstwie Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach zgodnie z ustawieniem zasad kryterium, program Windows może zainstalować lub zaktualizować dowolne urządzenie z identyfikatorem wystąpienia urządzenia plug and play wyświetlanym na tworzyć listę, chyba że inne ustawienie zasad w tej samej lub wyższej warstwie hierarchii uniemożliwia taką instalację.  na przykład następujące ustawienia zasad:
+Gdy to ustawienie zasad jest włączone wraz z ustawieniem Zastosuj kolejność oceny w warstwie Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach zgodnie z ustawieniem zasad kryterium, program Windows może zainstalować lub zaktualizować każde urządzenie, na którym identyfikator wystąpienia urządzenia programu Plug and Play jest wyświetlany na tworzyć listę, chyba że inne ustawienie zasad na tej samej lub wyższej warstwie w hierarchii wyraźnie zapobiega temu   instalacji, na przykład następujące ustawienia zasad:
 
 - Zapobieganie instalacji urządzeń, które są zgodne z dowolnymi identyfikatorami wystąpień tych urządzeń
 
@@ -126,7 +126,7 @@ Zapobieganie instalacji urządzeń wymiennych
 
 ### <a name="prevent-installation-of-devices-that-match-any-of-these-device-ids"></a>Zapobieganie instalacji urządzeń, które są zgodne z dowolnymi identyfikatorami tych urządzeń
 
-To ustawienie zasad umożliwia określenie listy identyfikatorów sprzętu podłączanych i odtwarzanych oraz zgodnych identyfikatorów dla urządzeń, Windows których instalacja jest Windows. Domyślnie to ustawienie zasad ma pierwszeństwo przed innymi ustawieniami zasad, które umożliwiają Windows instalacji urządzenia.
+To ustawienie zasad umożliwia określenie listy identyfikatorów Plug and Play sprzętu i zgodnych identyfikatorów dla urządzeń, Windows których instalacja jest Windows. Domyślnie to ustawienie zasad ma pierwszeństwo przed innymi ustawieniami zasad, które umożliwiają Windows instalacji urządzenia.
 
 > [!NOTE]
 > Aby włączyć  ustawienie zasad Zezwalaj na instalację urządzeń zgodne z dowolnym z tych ustawień zasad identyfikatorów wystąpień urządzeń w celu zmiany ustawienia zasad na odpowiednie urządzenia, włącz  ustawienie Zastosuj kolejność oceny w warstwie dla opcji Zezwalaj i Zapobiegaj instalacji urządzeń na wszystkich urządzeniach z ustawieniem zasad kryteriów.
@@ -137,7 +137,7 @@ Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia zasad, urządzenia mo�
 
 ### <a name="prevent-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>Zapobieganie instalacji urządzeń, które są zgodne z dowolnymi identyfikatorami wystąpień tych urządzeń
 
-To ustawienie zasad umożliwia określenie listy identyfikatorów wystąpień urządzeń plug and play dla urządzeń, Windows których instalacja nie będzie Windows. To ustawienie zasad ma pierwszeństwo przed innymi ustawieniami zasad, które umożliwiają Windows instalacji urządzenia.
+To ustawienie zasad umożliwia określenie listy identyfikatorów wystąpień Plug and Play urządzeń dla urządzeń, Windows których instalacja nie będzie Windows. To ustawienie zasad ma pierwszeństwo przed innymi ustawieniami zasad, które umożliwiają Windows instalacji urządzenia.
 
 Włączenie tego ustawienia zasad uniemożliwi Windows instalacji urządzenia, na którym identyfikator wystąpienia urządzenia jest wyświetlany na tworzyć listę. Włączenie tego ustawienia zasad na serwerze pulpitu zdalnego ma wpływ na przekierowywanie określonych urządzeń z klienta pulpitu zdalnego do serwera pulpitu zdalnego.
 
@@ -165,9 +165,9 @@ Włączenie tego ustawienia zasad uniemożliwi zainstalowanie Windows wymiennych
 
 Jeśli wyłączysz lub nie skonfigurujesz tego ustawienia zasad, program Windows i aktualizować pakiety sterowników dla urządzeń wymiennych, o ile dozwolone lub zabronione są inne ustawienia zasad.
 
-## <a name="common-removable-storage-access-control-scenarios"></a>Typowe scenariusze sterowania kontrolkami Storage wymiennymi w programie Access
+## <a name="common-removable-storage-access-control-scenarios"></a>Typowe scenariusze Storage Access Control wymiennych
 
-Aby ułatwić Ci zapoznanie się z programem Microsoft Defender for Endpoint Removable Storage Access Control, firma Microsoft umieściła kilka typowych scenariuszy do obserwowania.
+Aby ułatwić zapoznanie się z Ochrona punktu końcowego w usłudze Microsoft Defender wymiennymi Storage Access Control, możemy ci pomóc w kilku typowych scenariuszach.
 
 ### <a name="scenario-1-prevent-installation-of-all-usb-devices-while-allowing-an-installation-of-only-an-authorized-usb-thumb-drive"></a>Scenariusz 1. Uniemożliwianie instalowania wszystkich urządzeń USB, zezwalając jednocześnie na instalację tylko autoryzowanego usb usb-drive
 
@@ -177,9 +177,9 @@ W tym scenariuszu będą używane następujące zasady:
 - Zastosuj kolejność oceny w warstwie dla ustawień Zezwalaj i Uniemożliwiaj instalację urządzeń we wszystkich kryteriach dopasowania urządzenia.
 - Zezwalaj na instalację urządzeń, które są zgodne z dowolnym z tych identyfikatorów wystąpień lub Zezwalaj na instalację urządzeń, które są zgodne z dowolnym z tych identyfikatorów urządzeń.
 
-#### <a name="deploying-and-managing-policy-via-intune"></a>Wdrażanie zasad i zarządzanie nimi za pośrednictwem usługi Intune
+#### <a name="deploying-and-managing-policy-via-intune"></a>Wdrażanie zasad i zarządzanie nimi za pośrednictwem Intune
 
-Funkcja instalacji urządzenia umożliwia stosowanie zasad za pośrednictwem usługi Intune do urządzenia.
+Funkcja instalacji urządzenia umożliwia stosowanie zasad za pośrednictwem Intune urządzenia.
 
 #### <a name="licensing"></a>Licencjonowanie
 
@@ -187,7 +187,7 @@ Przed rozpoczęciem instalacji urządzenia potwierdź swoją Microsoft 365 [urz�
 
 #### <a name="permission"></a>Uprawnienie
 
-W przypadku wdrażania zasad w usłudze Intune konto musi mieć uprawnienia do tworzenia, edytowania, aktualizowania i usuwania profilów konfiguracji urządzenia. Możesz utworzyć role niestandardowe lub użyć dowolnej z wbudowanych ról z tymi uprawnieniami:
+W przypadku wdrażania Intune w programie Intune konto musi mieć uprawnienia do tworzenia, edytowania, aktualizowania lub usuwania profilów konfiguracji urządzenia. Możesz utworzyć role niestandardowe lub użyć dowolnej z wbudowanych ról z tymi uprawnieniami:
 
 - Rola Menedżera zasad i profilu
 - Lub rola niestandardowa z włączonymi uprawnieniami Tworzenie/Edycja/Aktualizacja/Odczyt/Usuwanie/Wyświetlanie raportów dla profilów konfiguracji urządzenia
@@ -200,35 +200,37 @@ W Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint.
 1. Konfigurowanie **Zapobiegaj instalacji urządzeń za pomocą sterowników, które są zgodne z tymi klasami konfiguracji urządzenia**.
 
     - Otwórz okno Endpoint security > Attack surface reduction > Create Policy > Platform: Windows 10 (lub nowsza) & Profile: Device control.
-
-      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="edytuj profil":::
-
+    
+      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="Strona Edytowanie profilu" lightbox="../../media/devicepolicy-editprofile.png":::
+    
 2. Podłącz urządzenie USB. Zostanie wyświetlony następujący komunikat o błędzie:
 
-      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="komunikat o błędzie":::
+      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="Komunikat o błędzie" lightbox="../../media/devicepolicy-errormsg.png":::
 
 3. Włącz **opcję Zastosuj kolejność oceny w warstwie dla ustawienia Zezwalaj i Uniemożliwiaj zasady instalacji urządzeń we wszystkich kryteriach dopasowania urządzeń**.
 
     - **obecnie obsługuje tylko interfejs OMA-URI**: Urządzenia > Profile konfiguracji > Utwórz profil > Platformę: Windows 10 (lub nowsza) & Profil: Niestandardowy
-
-      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="edytowanie wiersza":::
+    
+      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="Strona Edytowanie wiersza" lightbox="../../media/devicepolicy-editrow.png":::
 
 4. Włącz i dodaj dozwolony identyfikator wystąpienia USB — **zezwalaj na instalację urządzeń, które pasują do dowolnego z tych identyfikatorów**.
 
     - Aktualizowanie profilu sterowania urządzeniem w kroku 1
+    
+      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="Identyfikator na stronie Sterowanie urządzeniem" lightbox="../../media/devicepolicy-devicecontrol.png":::
+       
+    Dodawanie PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; Usb\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. Należy się upewnić, że wszystkie urządzenia USB poprzedzające urządzenie docelowe także nie są blokowane (dozwolone). Możesz otworzyć Menedżer urządzeń i zmienić widok na "Urządzenia według połączeń", aby zobaczyć sposób instalacji urządzeń w drzewie sieciPnP. W naszym przypadku następujące urządzenia muszą być dozwolone, więc może być również dozwolony docelowy dysk USB: 
 
-      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="devicecontrol":::
-
-    Dodawanie PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; Usb\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. Należy się upewnić, że wszystkie urządzenia USB poprzedzające urządzenie docelowe także nie są blokowane (dozwolone). Możesz otworzyć Menedżera urządzeń i zmienić widok na "Urządzenia przez połączenia", aby zobaczyć sposób instalacji urządzeń w drzewie PnP. W naszym przypadku następujące urządzenia muszą być dozwolone, więc może być również dozwolony docelowy dysk USB:
+    Dodawanie PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; Usb\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. Należy się upewnić, że wszystkie urządzenia USB poprzedzające urządzenie docelowe także nie są blokowane (dozwolone). Możesz otworzyć Menedżer urządzeń i zmienić widok na "Urządzenia według połączeń", aby zobaczyć sposób instalacji urządzeń w drzewie sieciPnP. W naszym przypadku następujące urządzenia muszą być dozwolone, więc może być również dozwolony docelowy dysk USB:
 
     - "Intel(R) USB 3.0 eXtensible Host Controller – 1.0 (Microsoft)" -> PCI\CC_0C03
     - "Koncentrator główny USB (USB 3.0)" -> USB\ROOT_HUB30
     - "Generic USB Hub" -> USB\USB20_HUB
 
-    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="sterowanie urządzeniem":::
+    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="Element menu Widok na Menedżer urządzeń widoku" lightbox="../../media/devicepolicy-devicemgr.png":::
 
     > [!NOTE]
-    > Niektóre urządzenia w systemie mają kilka warstw łączności w celu zdefiniowania ich instalacji w systemie. Usb thumb drives are such devices. Dlatego podczas blokowania lub zezwalania na nie w systemie należy zrozumieć ścieżkę łączności dla każdego urządzenia. Istnieje kilka ogólnych identyfikatorów urządzeń, które są często używane w systemach i w takich przypadkach mogą stanowić dobry początek tworzenia listy "Zezwalaj". Poniżej przedstawiono przykład (nie zawsze jest to to samo w przypadku wszystkich kodów USB; musisz zrozumieć drzewo sieci PnP urządzenia, którym chcesz zarządzać za pomocą Menedżera urządzeń):
+    > Niektóre urządzenia w systemie mają kilka warstw łączności w celu zdefiniowania ich instalacji w systemie. Usb thumb drives are such devices. Dlatego podczas blokowania lub zezwalania na nie w systemie należy zrozumieć ścieżkę łączności dla każdego urządzenia. Istnieje kilka ogólnych identyfikatorów urządzeń, które są często używane w systemach i w takich przypadkach mogą stanowić dobry początek tworzenia listy "Zezwalaj". Poniżej przedstawiono przykład (nie zawsze jest to to samo w przypadku wszystkich kodów USB; musisz zrozumieć drzewo PnP urządzenia, którym chcesz zarządzać za pośrednictwem Menedżer urządzeń):
     >
     > PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST (dla kontrolerów hostów)/ USB\ROOT_HUB30; USB\ROOT_HUB20 (w przypadku głównych koncentratorów USB)/ USB\USB20_HUB (w przypadku ogólnych koncentratorów USB)/
     >
@@ -238,7 +240,7 @@ W Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint.
 
 5. Podłącz ponownie dozwolone połączenie USB. Zobaczysz, że jest teraz dozwolone i dostępne.
 
-    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="usuń dysk":::
+    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="Strona Usuń szczegóły dysku" lightbox="../../media/devicepolicy-removedrive.png":::
 
 #### <a name="deploying-and-managing-policy-via-group-policy"></a>Wdrażanie zasad i zarządzanie nimi za pośrednictwem zasady grupy
 
@@ -252,7 +254,7 @@ Aby uzyskać dostęp do instalacji urządzenia i korzystać z niego, musisz mie�
 
 Szczegóły wdrażania można znaleźć tutaj: Zarządzanie instalacją urządzeń za [zasady grupy (Windows 10) — Windows klienta](/windows/client-management/manage-device-installation-with-group-policy).
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Wyświetlanie danych kontrolki urządzenia wymiennych Storage kontroli dostępu w programie Microsoft Defender for Endpoint
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Wyświetlanie danych kontrolek urządzeń wymiennych Storage Access Control w programie Ochrona punktu końcowego w usłudze Microsoft Defender
 
 W [portalu Microsoft 365 zabezpieczeń jest](https://sip.security.microsoft.com/homepage) pokazana pamięć wymienna zablokowana przez instalację urządzenia sterującego urządzeniem. Aby uzyskać dostęp Microsoft 365 zabezpieczeń, musisz mieć następującą subskrypcję:
 
@@ -270,7 +272,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-:::image type="content" source="../../media/block-removable-storage2.png" alt-text="blokowanie miejsca do magazynowania":::
+:::image type="content" source="../../media/block-removable-storage2.png" alt-text="Blokowanie miejsca do magazynowania" lightbox="../../media/block-removable-storage2.png":::
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
@@ -289,4 +291,5 @@ DeviceRegistryEvents
 
 Nie wystarczy włączyć tylko jednego identyfikatora sprzętu, aby włączyć jeden dysk USB. Upewnij się, że wszystkie urządzenia USB poprzedzające urządzenie docelowe także nie są blokowane (dozwolone).
 
-:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="Instalacja urządzenia — często zadawane pytania":::
+:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="Często zadawane pytania dotyczące instalacji urządzenia" lightbox="../../media/devicemgrscrnshot.png":::
+

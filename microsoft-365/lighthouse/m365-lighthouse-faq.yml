@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse uzyskaj odpowiedzi na często zadawane pytania dotyczące Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 24edebe8ef0a04c3256937195252fd5421599558
-  ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+  ms.openlocfilehash: 4dcd34b00aed7a28edb2e8ad9b2519940c90fcef
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/24/2022
-  ms.locfileid: "63775439"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680781"
 title: Microsoft 365 Lighthouse często zadawane pytania (często zadawane pytania)
 summary: >
   Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące Microsoft 365 Lighthouse.
@@ -32,7 +32,7 @@ summary: >
 sections:
 - name: Zignorowano
   questions:
-  - question: Co to jest usługa Microsoft 365 Lighthouse?
+  - question: Co to jest Microsoft 365 Lighthouse?
     answer: >
       Microsoft 365 Lighthouse to portal administracyjny, który ułatwia zarządzanym dostawcom usług (MSP) zabezpieczanie urządzeń, danych i użytkowników oraz zarządzanie nimi na skalę dla klientów małych i średnich firm korzystających z usługi Microsoft 365 Business Premium lub Microsoft 365 E3.  Latarnia morska upraszcza dołączanie dzierżawców, zalecając plan bazowy konfiguracji zabezpieczeń dostosowany do wymagań SPP i udostępniając widoki dla wielu dzierżaw we wszystkich środowiskach klientów. Aby uzyskać więcej informacji, zobacz [Omówienie Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
   - question: Jaka jest różnica między usługami Microsoft 365 Lighthouse Azure Lighthouse?
@@ -57,7 +57,7 @@ sections:
     answer: >
       Załadowanie danych dzierżawcy klienta w ramach usługi Lighthouse może potrwać do 48 godzin. Jeśli minąć więcej niż 48 godzin od momentu ukończenia dołączania, skontaktuj się z naszym zespołem pomocy technicznej, aby uzyskać pomoc. Musisz je o tym wiedzieć po zakończeniu dołączania oraz udostępnić odpowiednie zrzuty ekranu i dzienniki. Aby uzyskać więcej informacji, [zobacz Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: Dlaczego widzę dane dla niektórych dzierżaw klientów, ale nie innych?
-    answer: "Aby dane dzierżawy klientów pokazywały się w lighthouse, msp muszą ustanowić dostęp delegowany, aby zarządzać dzierżawą klienta. Aby można było dołączać klientów do usługi Lighthouse, wymagane są delegowane uprawnienia administratora (DAP, Delegated Admin Privileges). W celu zapewnienia bardziej bezpiecznego dostępu delegowanego zalecamy nawiązanie z klientami szczegółowych, delegowanych uprawnień administratora (GDAP, Granular Delegated Admin Privileges). Podczas gdy usługi DAP i GDAP są współistniene, GDAP będą miały pierwszeństwo dla klientów, dla których są dostępne oba modele. Wkrótce klienci, którzy mają tylko GDAP (bez protokołu DAP), będą mogli wdrapać się do latarni morskiej. Aby uzyskać więcej informacji na temat dostępu delegowanego, zobacz [Żądanie relacji odsprzedawcy z klientem w Centrum partnerskim](/partner-center/request-a-relationship-with-a-customer). Dzierżawcy muszą mieć co najmniej jedną Microsoft 365 Business Premium lub Microsoft 365 E3 i mniej niż 1000 licencjonowanych użytkowników w swojej dzierżawie. Aby uzyskać więcej informacji, zobacz [Wymagania Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) i [Microsoft 365 Lighthouse przegląd strony Dzierżawy](m365-lighthouse-tenants-page-overview.md).          \n"
+    answer: "\nAby dane dzierżawy klientów pokazywały się w lighthouse, msp muszą ustanowić z klientami za pośrednictwem Centrum partnerskiego uprawnienia administratora delegowanego (DAP) lub szczegółowe delegowane uprawnienia administratora. Aby uzyskać więcej informacji, zobacz [Żądanie relacji odsprzedawcy z klientem w Centrum partnerskim](/partner-center/request-a-relationship-with-a-customer). Dzierżawcy muszą mieć co najmniej jedną Microsoft 365 Business Premium lub Microsoft 365 E3 i mniej niż 1000 licencjonowanych użytkowników w swojej dzierżawie. Aby uzyskać więcej informacji, zobacz [Wymagania Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) i [Microsoft 365 Lighthouse przegląd strony Dzierżawy](m365-lighthouse-tenants-page-overview.md).\n"
   - question: Co zrobić, jeśli nie chcę widzieć konkretnych dzierżaw w u Microsoft 365 Lighthouse?
     answer: >
       Jeśli nie chcesz widzieć określonych dzierżaw i ich danych w Lighthouse, możesz je dezaktywować. Aby dezaktywować dzierżawę, wykonaj następujące czynności:

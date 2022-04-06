@@ -1,7 +1,7 @@
 ---
 title: Alerty usługi adresatów zewnętrznych
-ms.author: kvice
-author: kelleyvice-msft
+ms.author: markjjo
+author: markjjo
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -19,18 +19,18 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: Alerty usługi adresatów zewnętrznych monitorują skrzynki pocztowe w chmurze, które osiągają limit przydziału skrzynki pocztowej.
-ms.openlocfilehash: 8db8e090ec5430f13153bc3edf5b3315c041d9cf
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 931be51ee51bd5557633415004eed9a1c7e77888
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568011"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63705220"
 ---
 # <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>Alerty usługi dotyczące wiadomości oczekujących na dostarczenie do adresatów zewnętrznych w Exchange Online wiadomości
 
 Alerty usługi informują administratorów o kolejkowania poczty do adresatów zewnętrznych spoza Exchange Online. Alerty te mogą wymagać działań naprawczych spoza firmy Microsoft, ale mogą dostarczyć Ci informacji potrzebnych do działania naprawczego.
 
-Alerty usługi są wyświetlane w Centrum administracyjne platformy Microsoft 365. Aby wyświetlić te alerty usługi, przejdź  > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  do Kondycja usługi **Exchange Online** a następnie kliknij **kartę Aktywne** problemy. Nazwa tych alertów usługi to "Kolejkowanie wiadomości do adresatów zewnętrznych powyżej progów".
+Alerty usługi są wyświetlane w centrum administracyjne platformy Microsoft 365. Aby wyświetlić te alerty usługi, przejdź do strony Kondycja usługi <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**HealthService**</a> >  >  **Exchange Online** a następnie kliknij **kartę Aktywne** problemy. Nazwa tych alertów usługi to "Kolejkowanie wiadomości do adresatów zewnętrznych powyżej progów".
 
 ![Alert usługi o wiadomościach oczekujących na dostarczenie do adresatów zewnętrznych wyświetlany na Exchange Online nawigacyjnym monitorowania poczty.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
 

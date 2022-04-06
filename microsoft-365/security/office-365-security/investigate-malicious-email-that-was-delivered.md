@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b3ff937b014eae69c501812ac542f6537b25f8d
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 4f3c992ad94d63b44d2f89acff6bb295728a0804
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63013342"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681441"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Badanie złośliwych wiadomości e-mail dostarczonych w Microsoft 365
 
@@ -58,16 +58,11 @@ Upewnij się, że są spełnione następujące wymagania:
 
 Aby wykonać określone czynności, takie jak wyświetlanie nagłówków wiadomości lub pobieranie zawartości wiadomości e-mail, musisz dodać rolę  Podgląd do innej odpowiedniej grupy ról. W poniższej tabeli objaśnia się wymagane role i uprawnienia.
 
-<br>
-
-****
-
 |Działanie|Grupa ról|Rola w wersji Preview jest potrzebna?|
 |---|---|---|
 |Analizowanie zagrożeń za pomocą Eksploratora zagrożeń (i wykrywania w czasie rzeczywistym)|Administrator globalny <p> Administrator zabezpieczeń <p> Czytnik zabezpieczeń|Nie|
 |Używanie Eksploratora zagrożeń (i wykrywania w czasie rzeczywistym) do wyświetlania nagłówków wiadomości e-mail oraz wyświetlania podglądu i pobierania poddanych kwarantannie wiadomości e-mail|Administrator globalny <p> Administrator zabezpieczeń <p> Czytnik zabezpieczeń|Nie|
 |Używanie Eksploratora zagrożeń do wyświetlania nagłówków, wyświetlania podglądu wiadomości e-mail (tylko na stronie jednostki poczty e-mail) i pobierania wiadomości e-mail dostarczonych do skrzynek pocztowych|Administrator globalny <p> Administrator zabezpieczeń <p> Czytnik zabezpieczeń <p> Wersja zapoznawcza|Tak|
-|
 
 > [!NOTE]
 > **Wersja Preview** to rola, a nie grupa ról. Rola Preview musi zostać dodana do istniejącej grupy ról lub nowej grupy ról w portalu Microsoft 365 Defender grupy. Aby uzyskać więcej informacji, [zobacz Uprawnienia w portalu Microsoft 365 Defender użytkowników](permissions-microsoft-365-security-center.md).
@@ -138,10 +133,6 @@ Eksplorator zagrożeń to zaawansowany raport, który może służyć do wielu c
 
     **Zastępuje:** Ten filtr pobiera informacje wyświetlane na karcie szczegółów wiadomości i używa go do udostępnienia informacji o tym, gdzie zostały zastąpione zasady organizacji lub użytkowników dotyczące zezwalania na wiadomości i blokowania *ich*. Najważniejsze, aby ten filtr był pomocny zespołowi zabezpieczeń w organizacji w zobaczycej, ile podejrzanych wiadomości e-mail dostarczono z powodu konfiguracji. Umożliwia to użytkownikom modyfikowanie zezwalania i bloków zgodnie z potrzebami. Ten zestaw wyników tego filtru można wyeksportować do arkusza kalkulacyjnego.
 
-    <br>
-
-    ****
-
     |Zastępowanie Eksploratora zagrożeń|Znaczenie|
     |---|---|
     |Dozwolone przez zasady organizacji|Poczta została wpuszona do skrzynki pocztowej zgodnie z zasadami organizacji.|
@@ -149,7 +140,6 @@ Eksplorator zagrożeń to zaawansowany raport, który może służyć do wielu c
     |Rozszerzenie pliku zablokowane przez zasady organizacji|Plik został zablokowany z dostarczeniem do skrzynki pocztowej zgodnie z zasadami organizacji.|
     |Dozwolone przez zasady użytkownika|Poczta została wpuszona do skrzynki pocztowej zgodnie z zasadami użytkownika.|
     |Zablokowane przez zasady użytkownika|Poczta została zablokowana z dostarczeniem do skrzynki pocztowej zgodnie z zasadami użytkownika.|
-    |
 
     **Zagrożenie w adresie** URL: Pole zagrożenia adresu URL zostało uwzględnione  na karcie szczegółów wiadomości e-mail w celu wskazania zagrożenia przedstawionego za pomocą adresu URL. Zagrożenia przedstawione za pomocą adresu URL mogą  obejmować złośliwe *oprogramowanie, wiadomości* o  wyłudzeniu *lub spam**, a* w sekcji zagrożeń adres URL bez zagrożeń będzie zawierał frazę Brak.
 

@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 91dd3dc8563e7bd443362c47190139101a5ede61
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: b5d9346746dba3b7b4c75909cb8e36e47c3c9d99
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016578"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472512"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizator wydajności dla Program antywirusowy Microsoft Defender
 
 **Dotyczy**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **Co to Program antywirusowy Microsoft Defender analizatora wydajności?**
 
@@ -74,7 +74,7 @@ Aby uzyskać więcej informacji na temat parametrów i opcji wiersza polecenia, 
 
 Na podstawie zapytania użytkownik będzie mógł wyświetlać dane dotyczące liczby skanów, czasu trwania (suma/min/średnia/maks/mediana), ścieżki, procesu i przyczyny skanowania. Na poniższej ilustracji przedstawiono przykładowe dane wyjściowe dla prostego zapytania z 10 najwyższych plików w celu oceny wyników skanowania. 
 
-:::image type="content" source="images/example-output.png" alt-text="Przykład danych wyjściowych dla podstawowego zapytania TopFiles":::
+:::image type="content" source="images/example-output.png" alt-text="Przykład danych wyjściowych dla podstawowego zapytania TopFiles" lightbox="images/example-output.png":::
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Dodatkowe funkcje: eksportowanie i konwertowanie na pliki CSV i JSON
 
@@ -120,7 +120,7 @@ Polecenie `New-MpPerformanceRecording` cmdlet zbiera nagranie wydajności Progra
 
 To `New-MpPerformanceRecording` polecenie cmdlet dostarcza szczegółowych informacji o problematycznych plikach, które mogą powodować pogorszenie wydajności Program antywirusowy Microsoft Defender. To narzędzie jest udostępniane w stanie takim, w ile jest, i nie ma na celu dosyć sugestii dotyczących wykluczeń. Wykluczenia mogą zmniejszać poziom ochrony punktów końcowych. O ile takie wyjątki są w nim zdefiniowane, należy zachować ostrożność.
 
-Aby uzyskać więcej informacji na temat Analizatora wydajności, zobacz [Dokumenty Analizatora](/windows-hardware/test/wpt/windows-performance-analyzer) wydajności.
+Aby uzyskać więcej informacji na temat analizatora wydajności, [zobacz Analizator wydajności](/windows-hardware/test/wpt/windows-performance-analyzer) dokumenty.
 
 > [!IMPORTANT]
 > To polecenie cmdlet wymaga podwyższonych uprawnień administratora.
@@ -217,7 +217,7 @@ Get-MpPerformanceReport    [-Path] <String>
 
 Analizator wydajności dostarcza szczegółowych informacji o problematycznych plikach, które mogą powodować pogorszenie wydajności Program antywirusowy Microsoft Defender. To narzędzie jest udostępniane w stanie takim, w ile jest, i nie ma na celu dosyć sugestii dotyczących wykluczeń. Wykluczenia mogą zmniejszać poziom ochrony punktów końcowych. O ile takie wyjątki są w nim zdefiniowane, należy zachować ostrożność.
 
-Aby uzyskać więcej informacji na temat Analizatora wydajności, zobacz [Dokumenty Analizatora](/windows-hardware/test/wpt/windows-performance-analyzer) wydajności.
+Aby uzyskać więcej informacji na temat analizatora wydajności, [zobacz Analizator wydajności](/windows-hardware/test/wpt/windows-performance-analyzer) dokumenty.
 
 **Obsługiwane wersje systemu operacyjnego**
 

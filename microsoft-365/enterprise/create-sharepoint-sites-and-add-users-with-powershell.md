@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Podsumowanie: Za pomocą programu PowerShell możesz tworzyć SharePoint witryny online, a następnie dodawać do nich użytkowników i grupy.'
-ms.openlocfilehash: 76411621c0c313a31e4c92417b4472d6fd34ddac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 95bd3fb5647a5c6680fd9a07ebdf45e106acb095
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62977633"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681375"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Tworzenie SharePoint Online i dodawanie użytkowników za pomocą programu PowerShell
 

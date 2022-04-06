@@ -19,12 +19,12 @@ description: W trakcie automatycznego badania Microsoft 365 i po jego zakończen
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b9389d323c1e775b50bf63beaa33b0c4b0cae6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bf9fe34a88444d9d8ec6dccf4b22a507e55dfb00
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314087"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680803"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Szczegóły i wyniki automatycznego badania Microsoft 365
 
@@ -41,10 +41,6 @@ Gdy w [programie](office-365-air.md) [Microsoft Defender for Office 365](defende
 
 Stan badania wskazuje postęp analizy i akcji. Po prowadzonym śledztwie stan zmienia się w celu wskazania, czy znaleziono zagrożenia i czy zatwierdzono działania.
 
-<br>
-
-****
-
 |Stan|Opis|
 |---|---|
 |**Rozpoczynanie**|Badanie zostało wyzwolone i może rozpocząć się uruchamianie.|
@@ -58,7 +54,6 @@ Stan badania wskazuje postęp analizy i akcji. Po prowadzonym śledztwie stan zm
 |**Zakończone niepowodzeniem**|Co najmniej jeden analizator analizy mógł mieć problem, który nie mógł zostać poprawnie ukończony. <p> **UWAGA** Jeśli po zatwierdzeniu działań naprawczych nie powiedzie się badanie, działania naprawcze nadal mogą się powieść. Wyświetl szczegóły badania.|
 |**W kolejce przez ograniczanie**|Trwa badanie w kolejce. Po zakończeniu innych badań rozpoczyna się w kolejce. Ograniczanie pozwala uniknąć niskiej wydajności usługi.  <p> **PORADA**: Oczekujące akcje mogą ograniczyć liczbę nowych czynności do uruchomienia. Pamiętaj, aby [zatwierdzić (lub odrzucić) oczekujące akcje](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
 |**Zakończone przez ograniczanie**|Jeśli badanie jest przechowywane w kolejce zbyt długo, jest ono zatrzymane. <p> **PORADA**: Możesz [rozpocząć badanie z eksploratora zagrożeń](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
-|
 
 ## <a name="view-details-of-an-investigation"></a>Wyświetlanie szczegółów badania
 

@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d2812f9f2e1100a923dc5f9bb22a9b6df218a78
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3ff4317fc195a175a2b622c13ea4683a5e010b1c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321729"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680714"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Niestandardowe lub inne rozwiązania do raportowania dla programu Microsoft Defender dla Office 365
 
@@ -44,7 +44,6 @@ Usługa [Microsoft Defender dla Office 365](defender-for-office-365.md) umożliw
 |[Wprowadzenie do interfejsów API Office 365 zarządzania](/office/office-365-management-api/get-started-with-office-365-management-apis)|Interfejs API Office 365 zarządzania używa usługi Azure AD do świadczenia usług uwierzytelniania dla Twojej aplikacji na Microsoft 365 danych. Wykonaj czynności opisane w tym artykule, aby skonfigurować tę procedurę.|
 |[Office 365 interfejsu API działań zarządzania](/office/office-365-management-api/office-365-management-activity-api-reference)|Za pomocą interfejsu API działań zarządzania Office 365 możesz pobierać informacje o akcjach i zdarzeniach użytkownika, administratora, systemu oraz zasad z dzienników aktywności usługi Microsoft 365 i Azure AD. Przeczytaj ten artykuł, aby dowiedzieć się więcej o tym, jak to działa.|
 |[Office 365 schemat interfejsu API działań zarządzania](/office/office-365-management-api/office-365-management-activity-api-schema)|Zapoznaj się z omówieniem schematu [Common](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) i usługi [Defender for Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) oraz analizy zagrożeń i schematu reakcji, aby uzyskać informacje o konkretnych typach danych dostępnych za pośrednictwem interfejsu API działań zarządzania Office 365.|
-|
 
 ## <a name="see-also"></a>Zobacz też
 

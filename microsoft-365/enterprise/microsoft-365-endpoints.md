@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: W przypadku docelowych adresów IP i adresów URL dla Microsoft 365 adresów URL skorzystaj z tej listy artykułów dotyczących punktów końcowych Internetowych poszczególnych Microsoft 365 chmur.
-ms.openlocfilehash: ba2cb102bfee3ab49a563b0816b754788dec1015
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: 29b9d720209eee66103ceca9384fc8d18c1621ae
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "63018941"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681551"
 ---
 # <a name="microsoft-365-endpoints"></a>Microsoft 365 punktami końcowymi
 

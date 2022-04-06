@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de26921b0067cbcb5ad6019e0da62d6e5511d440
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: b3ff79ead1e337bb78772109e57d34836d0f4ec9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021344"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681617"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Wykrywanie w Eksploratorze zagrożeń i w czasie rzeczywistym
 
@@ -35,14 +35,9 @@ ms.locfileid: "63021344"
 
 Jeśli Twoja organizacja ma program [Microsoft Defender for Office 365](defender-for-office-365.md) i masz odpowiednie [uprawnienia, masz](#required-licenses-and-permissions) wykrywanie w czasie rzeczywistym lub **Eksploratora (** wcześniej raporty w czasie *rzeczywistym — sprawdź*, co się [nowego).](#new-features-in-threat-explorer-and-real-time-detections) W Centrum zabezpieczeń & zgodności przejdź do strony Zarządzanie zagrożeniami **, a** następnie wybierz pozycję **Wykrywanie**  eksploratora lub **w czasie rzeczywistym**.
 
-<br>
-
-****
-
 |Usługa Microsoft Defender dla Office 365 Plan 2 pozwala zobaczyć:|Usługa Microsoft Defender dla Office 365 Plan 1 pozwala zobaczyć:|
 |---|---|
 |![Eksplorator zagrożeń.](../../media/threatmgmt-explorer.png)|![Wykrywanie w czasie rzeczywistym](../../media/threatmgmt-realtimedetections.png)|
-|
 
 Wykrywanie w Eksploratorze lub w czasie rzeczywistym ułatwia twojemu zespołowi operacyjnemu ds. zabezpieczeń efektywne badanie zagrożeń i reagowanie na nie. Raport przypomina poniższy obraz:
 
@@ -374,26 +369,16 @@ Jak to zrobić? Stan dostarczenia jest teraz podzielone na dwie kolumny:
 
 *Akcja dostarczania* to akcja podjęta w związku z wiadomością e-mail z powodu istniejących zasad lub wykrycia. Oto możliwe działania związane z wiadomością e-mail:
 
-<br>
-
-****
-
 |Dostarczono|Wiadomości-śmieci|Zablokowane|Zamienione|
 |---|---|---|---|
 |Wiadomości e-mail zostały dostarczone do skrzynki odbiorczej lub folderu użytkownika i użytkownik może uzyskać do niego dostęp.|Wiadomość e-mail została wysłana do folderu Wiadomości-śmieci lub Usunięte użytkownika i użytkownik może uzyskać do niego dostęp.|Wiadomości e-mail poddane kwarantannie, które zakończyły się niepowodzeniem lub zostały porzucone. Te wiadomości e-mail są niedostępne dla użytkownika.|Wiadomości e-mail miały złośliwe załączniki .txt plikami ze stanem złośliwych załączników.|
-|
 
 Oto, co użytkownik może, a czego nie może zobaczyć:
-
-<br>
-
-****
 
 |Ułatwienia dostępu dla użytkowników końcowych|Niedostępne dla użytkowników końcowych|
 |---|---|
 |Dostarczono|Zablokowane|
 |Wiadomości-śmieci|Zamienione|
-|
 
 **Lokalizacja dostarczania** zawiera wyniki zasad i wykrycia uruchamianych po dostarczeniu. Jest on połączony z **_akcją dostarczenia_**. Możliwe wartości:
 

@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
@@ -15,12 +16,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak znaleźć i naprawić nieefektywne lub uszkodzone reguły przepływu poczty (nazywane także regułami transportu) w Centrum zgodności usługi Security &, aby zidentyfikować i naprawić nieefektywne lub uszkodzone reguły przepływu poczty (nazywane także regułami transportu) w organizacji.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9866761e683e15d34d81b8ea0962d974b0b474da
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: af6d727f84cdaaed1b7f7558313ac7d080a13c93
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021358"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681529"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Rozwiązywanie problemów dotyczących wolnych reguł przepływu poczty e-mail w Centrum & zgodności
 
