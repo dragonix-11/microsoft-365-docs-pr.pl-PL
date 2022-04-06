@@ -20,12 +20,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się więcej o funkcji załączników Sejf w programie Microsoft Defender dla Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b65813dedcf421e8335dc2433b5befee69cc60e6
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 01721d36967413a7f939d3618340e5630c3d6007
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996264"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683806"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Sejf załączników w programie Microsoft Defender dla Office 365
 
@@ -41,17 +41,12 @@ Sejf załączników wiadomości e-mail jest kontrolowana przez Sejf załącznik�
 
 W poniższej tabeli opisano scenariusze dotyczące załączników programu Sejf w organizacjach Microsoft 365 i Office 365, które zawierają program Microsoft Defender dla programu Office 365 (innymi słowy, brak licencjonowania nigdy nie stanowi problemu w tych przykładach).
 
-<br>
-
-****
-
 |Scenariusz|Result (Wynik)|
 |---|---|
 |W organizacji Microsoft 365 E5 Pat nie skonfigurowano żadnych Sejf załączników.|Pat jest chroniony Sejf załącznikami dzięki wstępnie ustawionym zasadom  zabezpieczeń Wbudowany ochrona, które dotyczą wszystkich adresatów, którzy nie są w inny sposób zdefiniowani w zasadach Sejf Załączniki.|
 |Organizacja Lee ma zasady dotyczące załączników Sejf, które dotyczą tylko pracowników finansi. Lee jest członkiem działu sprzedaży.|Lee i pozostała część działu sprzedaży są chronieni przez załączniki programu Sejf dzięki wstępnie ustawionym zasadom zabezpieczeń Wbudowany ochrona, które mają zastosowanie do wszystkich adresatów, którzy nie są w inny sposób zdefiniowani w zasadach załączników Sejf wiadomości.|
 |Wczoraj administrator w organizacji Marcin utworzył zasady załączników wiadomości Sejf dotyczące wszystkich pracowników. Wcześniej dziś Marcin otrzymał wiadomość e-mail z załącznikiem.|Marcin jest chroniony przez Sejf załączników ze względu na niestandardowe Sejf załączników. <p> Zazwyczaj nowe zasady są stosowane po około 30 minutach.|
 |Organizacja krzysztofa ma od dawna zasady dotyczące załączników Sejf załączników dla wszystkich osób w organizacji. Michał otrzymuje wiadomość e-mail z załącznikiem, a następnie przesyła wiadomość dalej do adresatów zewnętrznych.|Chis jest chroniony przez Sejf załączników. <p> Jeśli adresaci zewnętrzni w organizacji Microsoft 365, wiadomości przekazane są również chronione przez załączniki Sejf wiadomości.|
-|
 
 Sejf Załączniki są skanowane w tym samym regionie, w Microsoft 365, w którym znajdują się Twoje dane. Aby uzyskać więcej informacji na temat lokalizacji geograficznych centrum danych, zobacz [Gdzie znajdują się Twoje dane?](https://products.office.com/where-is-your-data-located?geo=All)
 
@@ -67,10 +62,6 @@ W tej sekcji opisano ustawienia w zasadach Sejf załączników:
 
 - **Sejf załączników odpowiedź z** nieznanym złośliwym oprogramowaniem: To ustawienie steruje akcją skanowania załączników złośliwym oprogramowaniem w Sejf e-mail. Dostępne opcje opisano w poniższej tabeli:
 
-  <br>
-
-  ****
-
   |Opcja|Efekt|Użyj, gdy chcesz:|
   |---|---|---|
   |**Wyłączone**|Załączniki nie są skanowane w poszukiwaniu złośliwego oprogramowania przez Sejf załączników. Wiadomości są nadal skanowane w poszukiwaniu złośliwego oprogramowania za pomocą ochrony [przed złośliwym oprogramowaniem w uciekaniu poczty eOP](anti-malware-protection.md).|Wyłącz skanowanie wybranych adresatów. <p> Zapobieganie niepotrzebnym opóźnieniom routingu poczty wewnętrznej. <p> **Ta opcja nie jest zalecana w przypadku większości użytkowników. Tej opcji należy używać tylko w celu wyłączenia funkcji skanowania załączników Sejf w przypadku adresatów, którzy otrzymają tylko wiadomości od zaufanych nadawców. Zap nie będzie poddać wiadomościom kwarantanny Sejf załączniki zostaną wyłączone, a sygnał złośliwego oprogramowania nie zostanie odebrany. Aby uzyskać szczegółowe informacje, zobacz [Automatyczne czyszczenie o godzinie zero](zero-hour-auto-purge.md)**|
@@ -78,7 +69,6 @@ W tej sekcji opisano ustawienia w zasadach Sejf załączników:
   |**Blokuj**|Zapobiega dostarczaniu wiadomości z załącznikami z wykrytym złośliwym oprogramowaniem. <p> Wiadomości są poddane kwarantannie. Domyślnie tylko administratorzy (nie użytkownicy) mogą przeglądać, zwalniać lub usuwać wiadomości.<sup>\*</sup> <p> Automatycznie blokuje przyszłe wystąpienia wiadomości i załączników. <p> Dostarczenie bezpiecznych wiadomości może się opóźnić ze względu na Sejf załączników.|Chroni organizację przed powtarzających się atakami przy użyciu tych samych załączników złośliwego oprogramowania. <p> Jest to wartość domyślna i zalecana w przypadku standardowych i ściśle [wstępnie ustawionych zasad zabezpieczeń](preset-security-policies.md).|
   |**Zamień**|Usuwa wykryte załączniki złośliwego oprogramowania. <p> Powiadamia adresatów o usunięciu załączników. <p>  Wiadomości zawierające złośliwe załączniki są poddane kwarantannie. Domyślnie tylko administratorzy (nie użytkownicy) mogą przeglądać, zwalniać lub usuwać wiadomości.<sup>\*</sup> <p> Dostarczenie bezpiecznych wiadomości może się opóźnić ze względu na Sejf załączników.|Podnieś widoczność adresatom, że załączniki zostały usunięte z powodu wykrytego złośliwego oprogramowania.|
   |**Dostarczanie dynamiczne**|Natychmiast dostarcza wiadomości, ale zamienia załączniki na symbole zastępcze do Sejf załączników. <p> Wiadomości zawierające złośliwe załączniki są poddane kwarantannie. Domyślnie tylko administratorzy (nie użytkownicy) mogą przeglądać, zwalniać lub usuwać wiadomości.<sup>\*</sup> <p> Aby uzyskać szczegółowe informacje, zobacz sekcję Zasady dynamicznego [dostarczania Sejf](#dynamic-delivery-in-safe-attachments-policies) załączników w dalszej części tego artykułu.|Unikaj opóźnień wiadomości podczas ochrony adresatów przed złośliwymi plikami.|
-  |
 
   <sup>\*</sup>Administratorzy mogą tworzyć i przypisywać zasady _kwarantanny_ w Sejf załączników, które określają, co użytkownicy mogą robić w kwarantannie wiadomości. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 

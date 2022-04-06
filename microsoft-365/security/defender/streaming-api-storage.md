@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 159b4a41d423c2a7af3d367185e29af35a378b6b
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: ed62807c0efc7003bab8fc725c2753c3d91ef1d6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "63004713"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501228"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Skonfiguruj Microsoft 365 Defender, aby przesyłać strumieniowo wydarzenia z zaawansowanego chłonia do Storage konta
 
@@ -51,9 +51,9 @@ ms.locfileid: "63004713"
 4. W **wyświetlonym wysuwanych menu dodaj nowe ustawienia interfejsu API** przesyłania strumieniowego skonfiguruj następujące ustawienia:
    1. **Nazwa**: wybierz nazwę nowych ustawień.
    2. Wybierz **pozycję Przekaż zdarzenia do usługi Azure Storage**.
-   3. W **wyświetlonym Storage Identyfikator** zasobu klienta wpisz swój Storage **zasobu konta**. Aby uzyskać identyfikator **Storage konta**, otwórz Portal Azure <https://portal.azure.com>w witrynie , kliknij pozycję konta programu **Storage** \> \> i przejdź do karty właściwości, skopiuj tekst w obszarze **Storage Identyfikator zasobu konta**.
+   3. W **wyświetlonym Storage Identyfikator** zasobu klienta wpisz swój Storage **zasobu konta**. Aby uzyskać identyfikator **Storage konta**, <https://portal.azure.com>otwórz Azure Portal stronie ,  \> \> kliknij pozycję konta Storage, przejdź do karty właściwości i skopiuj tekst w obszarze **Storage Identyfikator zasobu konta**.
 
-      ![Obraz zasobu Centrum zdarzeń identyfikator1.](../defender-endpoint/images/storage-account-resource-id.png)
+      :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="Identyfikator Storage zasobu klienta" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
 
    4. W menu **wysuwanego menu Dodaj nowe ustawienia interfejsu API przesyłania strumieniowego** wybierz **typy** zdarzeń, które chcesz przesyłać strumieniowo.
 
@@ -63,7 +63,7 @@ ms.locfileid: "63004713"
 
 - Dla każdego typu zdarzenia zostanie utworzony kontener obiektów blob:
 
-  ![Obraz zasobu Centrum zdarzeń o identyfikatorze 2.](../defender-endpoint/images/storage-account-event-schema.png)
+  :::image type="content" source="../defender-endpoint/images/storage-account-event-schema.png" alt-text="Przykład kontenera obiektów blob" lightbox="../defender-endpoint/images/storage-account-event-schema.png":::
 
 - Schemat każdego wiersza w obiekcie blob to następujący kod JSON:
 
@@ -98,7 +98,7 @@ Aby uzyskać typy danych dla naszych właściwości zdarzeń, wykonaj następuj�
 
 - Oto przykład zdarzenia Informacje o urządzeniu:
 
-  ![Obraz zasobu Centrum zdarzeń IDENTYFIKATOR3.](../defender-endpoint/images/machine-info-datatype-example.png)
+  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="Przykładowe zapytanie z informacjami o urządzeniu" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

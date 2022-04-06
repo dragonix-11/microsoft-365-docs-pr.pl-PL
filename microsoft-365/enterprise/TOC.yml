@@ -181,22 +181,15 @@
       items:
         - name: Stan kondycji usługi Microsoft 365
           href: microsoft-365-service-health.md
-        - name: Monitorowanie usługi Microsoft 365
-          href: microsoft-365-monitoring.md
+        - name: Monitorowanie usługi Exchange Online
+          href: microsoft-365-exchange-monitoring.md
           items:
-            - name: Monitorowanie usługi Exchange Online
-              href: microsoft-365-exchange-monitoring.md
-              items:
-                - name: Alerty usługi dotyczące użycia skrzynki pocztowej
-                  href: microsoft-365-mailbox-utilization-service-alerts.md
-                - name: Alerty usługi dotyczące opóźnień źródła MRS
-                  href: microsoft-365-mrs-source-delays-service-alerts.md
-                - name: "Alerty usługi dotyczące wiadomości w\_kolejce dla adresatów zewnętrznych"
-                  href: microsoft-365-external-recipient-service-alerts.md
-            - name: Monitorowanie aplikacji usługi Microsoft 365
-              href: microsoft-365-apps-monitoring.md
-            - name: Monitorowanie usługi Teams w Microsoft 365
-              href: microsoft-365-teams-monitoring.md
+            - name: Alerty usługi dotyczące użycia skrzynki pocztowej
+              href: microsoft-365-mailbox-utilization-service-alerts.md
+            - name: Alerty usługi dotyczące opóźnień źródła MRS
+              href: microsoft-365-mrs-source-delays-service-alerts.md
+            - name: "Alerty usługi dotyczące wiadomości w\_kolejce dla adresatów zewnętrznych"
+              href: microsoft-365-external-recipient-service-alerts.md
         - name: Wskazówki dotyczące konfiguracji
           href: setup-guides-for-microsoft-365.md
     - name: Wiele dzierżaw

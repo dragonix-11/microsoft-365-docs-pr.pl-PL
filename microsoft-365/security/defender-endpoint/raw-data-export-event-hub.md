@@ -1,7 +1,7 @@
 ---
-title: Przesyłanie strumieniowe usługi Microsoft Defender dla zdarzeń punktu końcowego do centrum zdarzeń platformy Azure
-description: Dowiedz się, jak skonfigurować usługę Microsoft Defender for Endpoint w celu przesyłania strumieniowego wydarzeń zaawansowanego chłonia do Centrum wydarzeń.
-keywords: nieprzetworzone eksportowanie danych, interfejs API przesyłania strumieniowego, interfejs API, centrum wydarzeń platformy Azure, magazyn platformy Azure, konto magazynu, zaawansowane szukanie, pierwotne udostępnianie danych
+title: Przesyłanie strumieniowe Ochrona punktu końcowego w usłudze Microsoft Defender do Azure Event Hubs
+description: Dowiedz się, jak skonfigurować usługę Ochrona punktu końcowego w usłudze Microsoft Defender przesyłania strumieniowego wydarzeń zaawansowanego chłonia do Centrum wydarzeń.
+keywords: nieprzetworzone eksportowanie danych, interfejs API przesyłania strumieniowego, interfejs API, Azure Event Hubs, magazyn platformy Azure, konto magazynu, szukanie zaawansowane, pierwotne udostępnianie danych
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b1d313ed2980f84318a590df55e0a8d8e7b152ab
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: eb58e21ee9dc2cf7c1eaf89c8fa9d06edfbbe050
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63013347"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467912"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Konfigurowanie programu Microsoft Defender dla punktu końcowego w celu przesyłania strumieniowego wydarzeń zaawansowanego chłonia do Centrum wydarzeń platformy Azure
+# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Skonfiguruj Ochrona punktu końcowego w usłudze Microsoft Defender, aby przesyłać strumieniowo do Twoich Azure Event Hubs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -48,17 +48,17 @@ ms.locfileid: "63013347"
 
 4. Wybierz nazwę nowych ustawień.
 
-5. Wybierz **pozycję Przekaż wydarzenia do Centrum zdarzeń Azure**.
+5. Wybierz **pozycję Przekaż wydarzenia do Azure Event Hubs**.
 
 6. Wpisz nazwę **Centrum zdarzeń i** identyfikator **zasobu Centrum zdarzeń**.
 
-   Aby uzyskać identyfikator zasobu **Centrum** zdarzeń, przejdź do strony przestrzeni nazw Centrum zdarzeń Azure na karcie właściwości usługi [Azure](https://ms.portal.azure.com/) > \> i skopiuj tekst w obszarze **Identyfikator zasobu**:
+   Aby uzyskać identyfikator zasobu **Centrum** zdarzeń, przejdź do strony przestrzeni nazw usługi Azure Event Hubs na karcie właściwości usługi [Azure](https://ms.portal.azure.com/) > \> i skopiuj tekst w obszarze **Identyfikator zasobu**:
 
-   :::image type="content" alt-text="Obraz zasobu Centrum zdarzeń Identyfikator1." source="images/event-hub-resource-id.png" lightbox="images/event-hub-resource-id.png":::
+   :::image type="content" source="images/event-hub-resource-id.png" alt-text="Zasób Centrum zdarzeń Identyfikator-1" lightbox="images/event-hub-resource-id.png":::
 
 7. Wybierz zdarzenia, które chcesz przesyłać strumieniowo, i kliknij pozycję **Zapisz**.
 
-## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Schemat zdarzeń w Centrum zdarzeń Azure
+## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Schemat zdarzeń w programie Azure Event Hubs
 
 ```json
 {
@@ -74,11 +74,11 @@ ms.locfileid: "63013347"
 }
 ```
 
-- Każda wiadomość centrum zdarzeń w Centrum zdarzeń Azure zawiera listę rekordów.
+- Każda wiadomość centrum zdarzeń w Azure Event Hubs zawiera listę rekordów.
 
-- Każdy rekord zawiera nazwę zdarzenia, czas, gdy usługa Microsoft Defender for Endpoint odebrała zdarzenie, dzierżawa, do której należy (zostaną odebrane tylko zdarzenia z dzierżawy) oraz zdarzenie w formacie JSON we właściwości o nazwie "**properties**".
+- Każdy rekord zawiera nazwę zdarzenia, Ochrona punktu końcowego w usłudze Microsoft Defender czas na otrzymanie zdarzenia, dzierżawę, do której należy (zostaną odebrane tylko zdarzenia z dzierżawy) oraz zdarzenie w formacie JSON we właściwości o nazwie "**properties**".
 
-- Aby uzyskać więcej informacji na temat schematu programu Microsoft Defender dla zdarzeń punktu końcowego, zobacz Omówienie [zaawansowanego](advanced-hunting-overview.md) wyszukiwania.
+- Aby uzyskać więcej informacji na temat schematu Ochrona punktu końcowego w usłudze Microsoft Defender wydarzeń, zobacz Omówienie [zaawansowanego](advanced-hunting-overview.md) wyszukiwania.
 
 - W przypadku wyszukiwania zaawansowanego tabela **DeviceInfo** zawiera kolumnę o nazwie **MachineGroup** , która zawiera grupę urządzenia. Tutaj każde zdarzenie również będzie udekorowane tą kolumną. Aby [uzyskać więcej informacji,](machine-groups.md) zobacz Grupy urządzeń.
 
@@ -98,12 +98,12 @@ Aby uzyskać typy danych dla właściwości zdarzenia, wykonaj następujące czy
 
 - Oto przykład zdarzenia Informacje o urządzeniu:
 
-  ![Obraz zasobu centrum zdarzeń Identyfikator2.](images/machine-info-datatype-example.png)
+  :::image type="content" source="images/machine-info-datatype-example.png" alt-text="Identyfikator zasobu Centrum zdarzeń—2" lightbox="images/machine-info-datatype-example.png":::
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 - [Omówienie wyszukiwania zaawansowanego](advanced-hunting-overview.md)
-- [Microsoft Defender for Endpoint streaming API](raw-data-export.md)
-- [Przesyłanie strumieniowe programu Microsoft Defender dla zdarzeń punktu końcowego do konta magazynu platformy Azure](raw-data-export-storage.md)
-- [Dokumentacja centrum wydarzeń azure](/azure/event-hubs/)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender interfejsu API przesyłania strumieniowego](raw-data-export.md)
+- [Przesyłanie strumieniowe Ochrona punktu końcowego w usłudze Microsoft Defender do konta magazynu platformy Azure](raw-data-export-storage.md)
+- [Azure Event Hubs dokumentacji](/azure/event-hubs/)
 - [Rozwiązywanie problemów z łącznością — Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)

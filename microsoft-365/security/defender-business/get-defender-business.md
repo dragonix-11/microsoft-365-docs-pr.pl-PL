@@ -1,6 +1,6 @@
 ---
-title: Uzyskaj usługę Microsoft Defender dla firm
-description: Uzyskaj usługę Microsoft Defender dla firm
+title: Uzyskiwanie Microsoft Defender dla Firm
+description: Uzyskiwanie Microsoft Defender dla Firm
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -16,126 +16,126 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: c136c873fbe34f3fe227b508aedae168c15f69e1
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: cb85f5391a6ee6c25d4f82f6f6819132bb8d3b02
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63524855"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663055"
 ---
-# <a name="get-microsoft-defender-for-business"></a>Uzyskaj usługę Microsoft Defender dla firm
+# <a name="get-microsoft-defender-for-business"></a>Uzyskiwanie Microsoft Defender dla Firm
 
 > [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
+> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
 > 
-> Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
+> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
 
-Jeśli nie masz jeszcze programu Microsoft Defender dla firm, możesz wybrać jedną z kilku opcji:
+Jeśli nie masz jeszcze Microsoft Defender dla Firm, możesz wybrać jedną z kilku opcji:
 
 - [Praca z dostawcą rozwiązań firmy Microsoft](#work-with-a-microsoft-solution-provider)
 - [Uzyskiwanie usługi Microsoft 365 Business Premium](#get-microsoft-365-business-premium)
-- [Zarejestruj się w programie w wersji Preview](#sign-up-for-the-preview-program)
+- [Tworzenie konta w programie w wersji zapoznawczej](#sign-up-for-the-preview-program)
 
-Jeśli masz konto w wersji próbnej, po otrzymaniu wiadomości e-mail dotyczącej akceptacji możesz aktywować wersję próbną i przypisać licencje [użytkowników, a](#activate-your-trial) następnie przejść do [następnych kroków](#next-steps).
+Jeśli masz konto w wersji próbnej, po otrzymaniu wiadomości e-mail z akceptacją możesz [aktywować wersję próbną i przypisać licencje użytkowników](#activate-your-trial), a następnie przejść do [kolejnych kroków](#next-steps).
 
 >
 > **Masz minutę?**
-> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 ## <a name="work-with-a-microsoft-solution-provider"></a>Praca z dostawcą rozwiązań firmy Microsoft
 
-Firma Microsoft zawiera listę dostawców rozwiązań, którzy są upoważnieni do sprzedaży ofert, w tym usług Microsoft 365 Business Premium i Microsoft Defender dla Firm. 
+Firma Microsoft ma listę dostawców rozwiązań, którzy są upoważnieni do sprzedaży ofert, w tym Microsoft 365 Business Premium i Microsoft Defender dla Firm. 
 
-Aby znaleźć dostawcę rozwiązań w swoim obszarze, zrób tak:
+Aby znaleźć dostawcę rozwiązań w twojej okolicy, wykonaj następujące kroki:
 
-1. Przejdź do strony **Dostawcy rozwiązań firmy Microsoft** ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
+1. Przejdź do strony **Microsoft Solution Providers** ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
  
-2. W polu wyszukiwania wprowadź informacje o lokalizacji i rozmiarze firmy. 
+2. W polu wyszukiwania podaj lokalizację i rozmiar firmy. 
 
-3. W **polu Wyszukaj produkty, usługi, umiejętności, branże** , `Microsoft 365`umieść pozycję , a następnie wybierz pozycję **Przejdź**.
+3. W polu **Wyszukaj produkty, usługi, umiejętności, branże** umieść `Microsoft 365`polecenie , a następnie wybierz pozycję **Go**.
 
-4. Przejrzyj listę wyników. Wybierz dostawcę, aby dowiedzieć się więcej o jego doświadczeniu i oferowanych przez nim usługach. Twój dostawca może pomóc Ci w rejestracji w u defenderze dla firm.
+4. Przejrzyj listę wyników. Wybierz dostawcę, aby dowiedzieć się więcej o swojej wiedzy i udostępnianych przez nich usługach. Twój dostawca może pomóc w utworzeniu konta w usłudze Defender dla Firm.
 
 ## <a name="get-microsoft-365-business-premium"></a>Uzyskiwanie usługi Microsoft 365 Business Premium
 
-*Od 1 marca 2022 r*. w ramach usługi Defender dla firm jest wprowadzana Microsoft 365 Business Premium. 
+*Począwszy od 1 marca 2022 r., usługa Defender for Business jest wdrażana w ramach Microsoft 365 Business Premium*. 
 
-Zobacz [Wypróbowanie lub Microsoft 365 Business Premium](../../business-premium/get-microsoft-365-business-premium.md).
+Zobacz [Try or buy Microsoft 365 Business Premium (Wypróbuj lub kup Microsoft 365 Business Premium](../../business-premium/get-microsoft-365-business-premium.md)).
 
-## <a name="sign-up-for-the-preview-program"></a>Zarejestruj się w programie w wersji Preview
+## <a name="sign-up-for-the-preview-program"></a>Tworzenie konta w programie w wersji zapoznawczej
 
-Uczestnictwo w programie wersji Preview umożliwia wypróbowanie usługi Defender dla firm w ramach subskrypcji autonomicznej. Program w wersji Preview jest dostępny do:
+Udział w programie w wersji zapoznawczej umożliwia wypróbowanie usługi Defender dla Firm jako subskrypcji autonomicznej. Program w wersji zapoznawczej jest dostępny dla:
 
-- Partnerzy firmy Microsoft usług it dla małych i średnich firm
-- Małe i średnie firmy (do 300 pracowników), które jeszcze nie mają Microsoft 365 Business Premium
+- Partnerzy firmy Microsoft, którzy świadczą usługi IT dla małych i średnich firm
+- Małe i średnie przedsiębiorstwa (do 300 pracowników), które nie mają jeszcze Microsoft 365 Business Premium
 
-Poniżej opisano, jak się zarejestrować:
+Oto jak się zarejestrować:
 
-1. Odwiedź [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview)stronę .
+1. Odwiedź stronę [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
-2. Wybierz **pozycję Klient** **lub Partner Firmy Microsoft**.
+2. Wybierz pozycję **Klient** lub **Partner firmy Microsoft**.
 
-3. Zapoznaj się z postanowieniami Umowy dotyczącej programu Microsoft Defender dla firm Preview i zaakceptuj je, a następnie wybierz pozycję **Dalej**.
+3. Przejrzyj i zaakceptuj warunki umowy Microsoft Defender dla Firm Preview, a następnie wybierz pozycję **Dalej**.
 
-4. Wypełnij formularz z informacjami kontaktowymi. 
+4. Wypełnij formularz, korzystając z informacji kontaktowych. 
 
-   - Jeśli jesteś klientem, który współpracuje z partnerem firmy Microsoft, w polu Inne wpisz  nazwę firmy tego partnera. Następnie wybierz pozycję **Submit** (Prześlij).
-   - Jeśli jesteś partnerem firmy Microsoft, koniecznie wskaż typ współpracy i informacje o klientach, z których zamierzasz współpracować.
+   - Jeśli jesteś klientem pracującym z partnerem firmy Microsoft, w polu **Inne** podaj nazwę firmy partnera. Następnie wybierz pozycję **Submit** (Prześlij).
+   - Jeśli jesteś partnerem firmy Microsoft, pamiętaj, aby wskazać typ partnerstwa i informacje o klientach, z którymi planujesz pracować.
 
 5. Po zakończeniu wypełniania formularza wybierz pozycję **Prześlij**.
 
 ## <a name="what-to-expect-after-applying"></a>Czego można oczekiwać po zastosowaniu
 
-Przejmemy wniosek i dokonamy oceny. Otrzymasz wtedy wiadomość e-mail z kodem promocyjnym lub z wyjaśnieniem, dlaczego w tej chwili nie możemy zaoferować Ci programu próbnego.
+Przejrzymy Twoją aplikację i dokonamy ustalenia. Następnie otrzymasz wiadomość e-mail zawierającą kod promocyjny lub wyjaśniającą, dlaczego obecnie nie możemy zaoferować Ci programu próbnego.
 
-Jeśli Twoja wiadomość e-mail zostanie zaakceptowana, będzie zawierać kod licencji, za pomocą których będziesz aktywować wersję próbną usługi Defender dla firm.
+Jeśli zostaniesz zaakceptowany, wiadomość e-mail będzie zawierać kod licencji, którego użyjesz do aktywowania wersji próbnej usługi Defender for Business.
 
 > [!IMPORTANT]
-> Jeśli jesteś partnerem, po zaakceptowaniu Cię do programu w wersji Preview każdy klient musi dokończyć proces opisany w sekcji Rejestracja w programie [w wersji Preview](#sign-up-for-the-preview-program). Upewnij się, że klient określa twoją nazwę partnera firmy Microsoft w **polu** Inne.
+> Jeśli jesteś partnerem, po zaakceptowaniu programu w wersji zapoznawczej każdy klient musi ukończyć proces opisany w sekcji [Zarejestruj się w programie w wersji zapoznawczej](#sign-up-for-the-preview-program). Upewnij się, że klient określa nazwę partnera firmy Microsoft w polu **Inne** .
 
 ## <a name="two-portals-for-setup"></a>Dwa portale do konfiguracji
 
-Gdy wszystko będzie gotowe do rozpoczęcia okresu próbnego, będziesz pracować z dwoma głównymi portalami, aby wszystko skonfigurować. W poniższej tabeli podsumowano dwa główne portale, których będziesz używać: <br/><br/>
+Gdy wszystko będzie gotowe do rozpoczęcia wersji próbnej, będziesz pracować z dwoma głównymi portalami, aby skonfigurować elementy. W poniższej tabeli podsumowano dwa główne portale, których będziesz używać: <br/><br/>
 
 |Portal  |Opis  |
 |---------|---------|
-| The centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Skorzystaj z centrum administracyjne platformy Microsoft 365, aby aktywować wersję próbną i zalogować się po raz pierwszy.<br/><br/> Za pomocą tego centrum administracyjne platformy Microsoft 365: <br/>— Dodawanie lub usuwanie użytkowników<br/>— Przypisywanie licencji użytkowników<br/>- Wyświetlanie produktów i usług<br/>— Wykonywanie zadań konfiguracyjnych dla Microsoft 365 subskrypcji <br/><br/> Aby dowiedzieć się więcej, zobacz [Omówienie centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
-| Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Użyj portalu Microsoft 365 Defender, aby skonfigurować usługę Defender dla firm. <br/><br/>Za pomocą portalu Microsoft 365 Defender będziesz: <br/>- Wyświetlanie urządzeń i zasad ochrony urządzeń<br/>— Wyświetlaj wykryte zagrożenia i podejmiesz działania<br/>- Wyświetlanie zaleceń dotyczących zabezpieczeń i zarządzanie ustawieniami zabezpieczeń <br/><br/>Aby dowiedzieć się więcej, [zobacz Rozpoczynanie korzystania z Microsoft 365 Defender usługi](mdb-get-started.md).        |
+| Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Użyj Centrum administracyjne platformy Microsoft 365, aby aktywować wersję próbną i zalogować się po raz pierwszy.<br/><br/> Użyjesz również Centrum administracyjne platformy Microsoft 365, aby: <br/>— Dodawanie lub usuwanie użytkowników<br/>— Przypisywanie licencji użytkowników<br/>— Wyświetlanie produktów i usług<br/>— Wykonywanie zadań konfiguracji subskrypcji Microsoft 365 <br/><br/> Aby dowiedzieć się więcej, zobacz [Omówienie Centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
+| Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Skonfiguruj i skonfiguruj usługę Defender dla Firm za pomocą portalu Microsoft 365 Defender. <br/><br/>Użyjesz portalu Microsoft 365 Defender, aby: <br/>— Wyświetlanie urządzeń i zasad ochrony urządzeń<br/>— Wyświetlanie wykrytych zagrożeń i podjęcie akcji<br/>— Wyświetlanie zaleceń dotyczących zabezpieczeń i zarządzanie ustawieniami zabezpieczeń <br/><br/>Aby dowiedzieć się więcej, zobacz [Wprowadzenie przy użyciu portalu Microsoft 365 Defender](mdb-get-started.md).        |
 
-Jeśli Twoja firma korzysta z usługi Microsoft 365 Business Premium, to masz Microsoft Intune (część usługi Microsoft Endpoint Manager) i możesz korzystać z centrum administracyjnego usługi Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager umożliwia również zarządzanie urządzeniami i konfigurowanie ustawień zabezpieczeń. Aby dowiedzieć się więcej, [zobacz Microsoft Intune jest dostawcą usługi MDM i mam dla Twoich urządzeń](/mem/intune/fundamentals/what-is-intune).
+Jeśli twoja firma korzysta z Microsoft 365 Business Premium, masz Microsoft Intune (część Microsoft Endpoint Manager) i możesz korzystać z centrum administracyjnego Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager umożliwia również zarządzanie urządzeniami i konfigurowanie ustawień zabezpieczeń. Aby dowiedzieć się więcej, zobacz [Microsoft Intune jest dostawcą zarządzania urządzeniami przenośnymi i zarządzaniem aplikacjami mobilnymi dla urządzeń](/mem/intune/fundamentals/what-is-intune).
 
 ## <a name="activate-your-trial"></a>Aktywowanie wersji próbnej
 
-Po otrzymaniu wiadomości e-mail z akceptacją, oto jak aktywować subskrypcję wersji próbnej: 
+Gdy otrzymasz wiadomość e-mail z akceptacją, oto jak aktywować subskrypcję wersji próbnej: 
 
-1. W wiadomości e-mail dotyczącej akceptacji wybierz link, który zawiera kod promocyjny. 
+1. W wiadomości e-mail z akceptacją wybierz link zawierający kod promocyjny. 
 
-2. Jeśli masz już subskrypcję usługi Microsoft 365, zaloguj się przy użyciu swojego konta. Jeśli nie masz jeszcze subskrypcji, postępuj zgodnie z monitami, aby utworzyć nowe konto. 
+2. Jeśli masz już subskrypcję Microsoft 365, zaloguj się przy użyciu swojego konta. Jeśli nie masz jeszcze subskrypcji, postępuj zgodnie z monitami, aby utworzyć nowe konto. 
 
-3. Gdy zalogujesz się po raz pierwszy, trafisz do centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)). Zobacz [Omówienie centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
+3. Po zalogowaniu się po raz pierwszy przejdziesz do Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)). Zobacz [Omówienie Centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
-4. Skorzystaj z jednej z następujących procedur:
+4. Użyj jednej z następujących procedur:
 
-   - Jeśli konfigurowac subskrypcję usługi Microsoft 365 po raz pierwszy, wybierz pozycję Przejdź do konfiguracji  ze przewodnikiem i wykonaj następujące czynności:
+   - Jeśli konfigurujesz subskrypcję Microsoft 365 po raz pierwszy, wybierz pozycję **Przejdź do konfiguracji z przewodnikiem** i wykonaj następujące kroki:
 
-      a. Zainstaluj aplikację Office lub wybierz pozycję **Kontynuuj,** aby pominąć ten krok. (Później możesz zainstalować aplikacje Office).
+      a. Zainstaluj teraz aplikacje Office lub wybierz pozycję **Kontynuuj**, aby pominąć ten krok. (Aplikacje Office można zainstalować później).
 
-      b. Jeśli Twoja firma ma domenę, możesz ją dodać teraz (ta opcja jest zalecana). Ewentualnie możesz na razie użyć domeny domyślnej `.onmicrosoft.com` .
+      b. Jeśli Twoja firma ma domenę, możesz ją teraz dodać (ta opcja jest zalecana). Alternatywnie możesz na razie użyć domeny domyślnej `.onmicrosoft.com` .
 
-      c. Dodawanie użytkowników i przypisywanie licencji. Każdemu użytkownikowi na liście zostanie automatycznie przypisana licencja. Zobacz [Dodawanie użytkowników i przypisywanie licencji jednocześnie](../../admin/add-users/add-users.md).
+      c. Dodawanie użytkowników i przypisywanie licencji. Każdemu użytkownikowi, który wyświetlisz listę, zostanie automatycznie przypisana licencja. Zobacz [Dodawanie użytkowników i przypisywanie licencji w tym samym czasie](../../admin/add-users/add-users.md).
 
-   - Jeśli dodajesz wersję próbną do istniejącej dzierżawy usługi Microsoft 365, wykonaj następujące czynności, aby przypisać nowe licencje do użytkowników:
+   - Jeśli dodajesz wersję próbną do istniejącej dzierżawy Microsoft 365, wykonaj następujące kroki, aby przypisać nowe licencje użytkownikom:
 
-      a. Przejdź do centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) i zaloguj się.
+      a. Przejdź do Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) i zaloguj się.
 
-      b. W okienku nawigacji wybierz pozycję **Użytkownicy** >  **Aktywuj użytkowników**. Przejrzyj listę użytkowników. 
+      b. W okienku nawigacji wybierz pozycję **UżytkownicyAktywni** >  użytkownicy. Przejrzyj listę użytkowników. 
 
-      c. Aby przypisać licencje, postępuj zgodnie z wskazówkami w [tece Przypisywanie licencji użytkownikom](../../admin/manage/assign-licenses-to-users.md).
+      c. Aby przypisać licencje, postępuj zgodnie ze wskazówkami w [temacie Przypisywanie licencji użytkownikom](../../admin/manage/assign-licenses-to-users.md).
 
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Konfigurowanie i konfigurowanie programu Microsoft Defender dla firm](mdb-setup-configuration.md).
+- [Skonfiguruj i skonfiguruj Microsoft Defender dla Firm](mdb-setup-configuration.md).
 
-- [Dowiedz się, jak uzyskać pomoc i obsługę techniczną dla programu Microsoft Defender dla firm](mdb-get-help.md)
+- [Dowiedz się, jak uzyskać pomoc i pomoc techniczną dla Microsoft Defender dla Firm](mdb-get-help.md)

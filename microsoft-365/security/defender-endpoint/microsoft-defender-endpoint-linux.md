@@ -1,8 +1,8 @@
 ---
 title: Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie
 ms.reviewer: ''
-description: W tym artykule opisano, jak zainstalować program Microsoft Defender for Endpoint w systemie Linux i jak z nich korzystać.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, dezinstalacja, 8, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+description: W tym artykule opisano, jak instalować i Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, installation, deploy, dezinstalacja, 8, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,31 +17,31 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2cd00befebba58dcac8411bb9aa9bce60bd02aac
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680825"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507148"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-W tym temacie opisano, jak zainstalować, skonfigurować, zaktualizować i używać programu Microsoft Defender dla punktu końcowego w systemie Linux.
+W tym temacie opisano, jak instalować, konfigurować, aktualizować i używać oprogramowania Ochrona punktu końcowego w usłudze Microsoft Defender Systemie Linux.
 
 > [!CAUTION]
-> Uruchamianie innych produktów ochrony punktów końcowych innych firm wraz z programem Microsoft Defender for Endpoint dla systemu Linux może prowadzić do problemów z wydajnością i nieprzewidywalnych efektów ubocznych. Jeśli ochrona punktu końcowego firmy innym niż Microsoft jest bezwzględnym wymaganiem w Twoim środowisku, nadal możesz bezpiecznie korzystać z usługi Defender for Endpoint w systemie Linux EDR po skonfigurowaniu funkcji oprogramowania antywirusowego do uruchamiania w trybie [pasywnym](linux-preferences.md#enforcement-level-for-antivirus-engine).
+> Uruchamianie innych produktów ochrony punktów końcowych innych firm wraz Ochrona punktu końcowego w usłudze Microsoft Defender Linux może prowadzić do problemów z wydajnością i nieprzewidywalnych efektów ubocznych. Jeśli ochrona punktu końcowego firmy innym niż Microsoft jest bezwzględnym wymaganiem w Twoim środowisku, nadal możesz bezpiecznie korzystać z usługi Defender for Endpoint w systemie Linux EDR po skonfigurowaniu funkcji oprogramowania antywirusowego do uruchamiania w trybie [pasywnym](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Jak zainstalować program Microsoft Defender for Endpoint w systemie Linux
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Jak zainstalować pakiet Ochrona punktu końcowego w usłudze Microsoft Defender Linux
 
-Program Microsoft Defender for Endpoint for Linux zawiera funkcje ochrony przed złośliwym wykrywanie i reagowanie w punktach końcowych (EDR). 
+Ochrona punktu końcowego w usłudze Microsoft Defender dla systemu Linux zawiera funkcje ochrony przed złośliwym wykrywanie i reagowanie w punktach końcowych (EDR). 
 
 
 ### <a name="prerequisites"></a>Wymagania wstępne
@@ -52,17 +52,17 @@ Program Microsoft Defender for Endpoint for Linux zawiera funkcje ochrony przed 
 - Uprawnienia administracyjne na urządzeniu (w przypadku wdrożenia ręcznego)
 
 > [!NOTE]
-> Program Microsoft Defender dla punktu końcowego w systemie Linux jest niezależny od [agenta OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Program Microsoft Defender for Endpoint korzysta z własnej, niezależnej potoku telemetrii.
+> Ochrona punktu końcowego w usłudze Microsoft Defender linux jest niezależny od [agenta OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Ochrona punktu końcowego w usłudze Microsoft Defender korzysta z własnej, niezależnej potoku telemetrii.
 
 
 ### <a name="installation-instructions"></a>Instrukcje instalacji
 
-Istnieje kilka metod i narzędzi wdrożeniowych, których można użyć do zainstalowania i skonfigurowania programu Microsoft Defender dla punktu końcowego w systemie Linux.
+Istnieje kilka metod i narzędzi wdrożeniowych, których można używać do instalowania i konfigurowania systemu Ochrona punktu końcowego w usłudze Microsoft Defender Linux.
 
 Na ogół należy wykonać następujące czynności:
 
-- Upewnij się, że masz subskrypcję programu Microsoft Defender for Endpoint.
-- Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie Linux przy użyciu jednej z następujących metod wdrażania:
+- Upewnij się, że masz Ochrona punktu końcowego w usłudze Microsoft Defender subskrypcji.
+- Wd Ochrona punktu końcowego w usłudze Microsoft Defender Linux przy użyciu jednej z następujących metod wdrażania:
   - Narzędzie wiersza polecenia:
     - [Wdrażanie ręczne](linux-install-manually.md)
   - Narzędzia do zarządzania przez inne firmy:
@@ -70,14 +70,14 @@ Na ogół należy wykonać następujące czynności:
     - [Wdrażanie przy użyciu narzędzia do zarządzania konfiguracją w sposób ansible](linux-install-with-ansible.md)
     - [Wdrażanie przy użyciu narzędzia do zarządzania konfiguracją oprogramowania](linux-deploy-defender-for-endpoint-with-chef.md)
 
-Jeśli wystąpią jakiekolwiek błędy instalacji, zobacz Rozwiązywanie problemów z instalacją w programie [Microsoft Defender for Endpoint dla systemu Linux](linux-support-install.md).
+Jeśli wystąpią jakiekolwiek błędy instalacji, zobacz Rozwiązywanie problemów z instalacją w systemie [Ochrona punktu końcowego w usłudze Microsoft Defender Linux](linux-support-install.md).
 
 > [!NOTE]
-> Instalowanie programu Microsoft Defender for Endpoint w innej lokalizacji niż ścieżka instalacji domyślnej nie jest obsługiwane. 
+> Instalowanie oprogramowania w innej Ochrona punktu końcowego w usłudze Microsoft Defender lokalizacji innej niż ścieżka instalacji domyślnej nie jest obsługiwane. 
 
 ### <a name="system-requirements"></a>Wymagania systemowe
 
-- Obsługiwane dystrybucje serwera Linux i wersje x64 (AMD64/EM64T):
+- Obsługiwane dystrybucje serwerów Linux oraz procesory x64 (AMD64/EM64T) x86_64 wersjach:
 
   - Red Hat Enterprise Linux w wersji 6.7 lub wyższej
   - System Red Hat Enterprise Linux w wersji 7.2 lub wyższej
@@ -129,23 +129,54 @@ Jeśli wystąpią jakiekolwiek błędy instalacji, zobacz Rozwiązywanie problem
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
+    W systemie Red Hat Enterprise Linux 6 i CentOS 6 lista obsługiwanych wersji kernelów jest:
+       - Dla 6.7: 2.6.32-573.* 
+       - Dla 6.8: 2.6.32-642.* 
+       - Dla 6.9: 2.6.32-696.* 
+       - Dla 6.10: 2.6.32.754.2.1.el6.x86_64 na 2.6.32-754.41.2:
 
-    > [!NOTE]
-    > Po zwolnieniu nowej wersji pakietu pomoc techniczna dla dwóch poprzednich wersji zostanie ograniczona tylko do pomocy technicznej. Wersje starsze niż wymienione w tej sekcji są dostępne tylko dla pomocy technicznej przy uaktualnieniu.
+ > [!NOTE]
+ > Po zwolnieniu nowej wersji pakietu pomoc techniczna dla dwóch poprzednich wersji zostanie ograniczona tylko do pomocy technicznej. Wersje starsze niż wymienione w tej sekcji są dostępne tylko dla pomocy technicznej przy uaktualnieniu.
 
-  - Dla pozostałych obsługiwanych rozkładów wymagana jest minimalna wersja kernelu: 3.10.0-327
+  Lista wersji:
 
-- Mechanizm dostawcy zdarzeń
-  - Red Hat Enterprise Linux 6 i CentOS 6: `Talpa` rozwiązanie oparte na module kernel
-  - Pozostałe obsługiwane rozkłady: `Fanotify`
-    - Opcja `fanotify` kernel musi być włączona
+  - 2.6.32-754.2.1.el6.x86_64 
+  - 2.6.32-754.17.1.el6.x86_64
+  - 2.6.32-754.29.1.el6.x86_64
+  - 2.6.32-754.3.5.el6.x86_64 
+  - 2.6.32-754.18.2.el6.x86_64
+  - 2.6.32-754.29.2.el6.x86_64
+  - 2.6.32-754.6.3.el6.x86_64 
+  - 2.6.32-754.22.1.el6.x86_64
+  - 2.6.32-754.30.2.el6.x86_64
+  - 2.6.32-754.9.1.el6.x86_64 
+  - 2.6.32-754.23.1.el6.x86_64
+  - 2.6.32-754.33.1.el6.x86_64
+  - 2.6.32-754.10.1.el6.x86_64
+  - 2.6.32-754.24.2.el6.x86_64
+  - 2.6.32-754.35.1.el6.x86_64
+  - 2.6.32-754.11.1.el6.x86_64
+  - 2.6.32-754.24.3.el6.x86_64
+  - 2.6.32-754.39.1.el6.x86_64
+  - 2.6.32-754.12.1.el6.x86_64
+  - 2.6.32-754.25.1.el6.x86_64
+  - 2.6.32-754.41.2.el6.x86_64
+  - 2.6.32-754.14.2.el6.x86_64
+  - 2.6.32-754.27.1.el6.x86_64
+  - 2.6.32-754.15.3.el6.x86_64
+  - 2.6.32-754.28.1.el6.x86_64       
 
-      > [!CAUTION]
-      > Uruchamianie programu Defender dla punktu końcowego w systemie `fanotify`Linux obok innych opartych na rozwiązaniach zabezpieczeń nie jest obsługiwane. Może to prowadzić do nieprzewidywalnych wyników, łącznie z zawieszeniem systemu operacyjnego.
+
+- Minimalna wersja kernelu 3.10.0-327
+
+- Opcja `fanotify` kernel musi być włączona
+
+  > [!CAUTION]
+  > Uruchamianie programu Defender dla punktu końcowego w systemie `fanotify`Linux obok innych opartych na rozwiązaniach zabezpieczeń nie jest obsługiwane. Może to prowadzić do nieprzewidywalnych wyników, łącznie z zawieszeniem systemu operacyjnego.
 
 - Miejsce na dysku: 1 GB
 
-- /opt/microsoft/mdatp/sbin/wdavdaemon wymaga uprawnienia wykonywalnego. Aby uzyskać więcej informacji, zobacz "Upewnij się, że daemon ma uprawnienia wykonywalne" w tece Rozwiązywanie problemów z instalacją programu [Microsoft Defender dla punktu końcowego w systemie Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
+- /opt/microsoft/mdatp/sbin/wdavdaemon wymaga uprawnienia wykonywalnego. Aby uzyskać więcej informacji, zobacz "Upewnij się, że daemon ma uprawnienia wykonywalne" w tece Rozwiązywanie problemów z instalacją plików w systemie [Ochrona punktu końcowego w usłudze Microsoft Defender Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
 
 - Podstawowe funkcje: co najmniej 2, 4 preferowane
 
@@ -178,7 +209,7 @@ Po włączeniu usługi może być konieczne skonfigurowanie sieci lub zapory w c
 - Musi być włączona framework inspekcji (`auditd`).
 
   > [!NOTE]
-  > Zdarzenia systemowe przechwytywane przez reguły `/etc/audit/rules.d/` `audit.log`dodawane do będą dodawane do (y) i mogą mieć wpływ na inspekcję hosta i zbieranie danych nadrzędnych. Zdarzenia dodane przez program Microsoft Defender for Endpoint dla systemu Linux zostaną otagowane za pomocą klucza `mdatp` .
+  > Zdarzenia systemowe przechwytywane przez reguły `/etc/audit/rules.d/` `audit.log`dodawane do będą dodawane do (y) i mogą mieć wpływ na inspekcję hosta i zbieranie danych nadrzędnych. Zdarzenia dodawane przez Ochrona punktu końcowego w usłudze Microsoft Defender Linux będą tagowane za pomocą klawisza`mdatp`.
 
 ### <a name="configuring-exclusions"></a>Konfigurowanie wykluczeń
 
@@ -192,13 +223,10 @@ Poniższy arkusz kalkulacyjny zawiera listę usług i skojarzonych z nimi adres�
 
 ****
 
-
 |Arkusz kalkulacyjny listy domen| Opis|
 |---|---|
-|Lista adresów URL punktu końcowego programu Microsoft Defender dla klientów komercyjnych | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Lista adresów URL programu Microsoft Defender dla punktów końcowych dla klientów GCC/DoD| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
-
+|Ochrona punktu końcowego w usłudze Microsoft Defender adresu URL dla klientów komercyjnych| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Ochrona punktu końcowego w usłudze Microsoft Defender url list for Gov/GCC/DoD | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 > [!NOTE]
 > Aby uzyskać bardziej konkretną listę adresów URL, zobacz [Konfigurowanie ustawień łączności internetowej i serwera proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
@@ -215,19 +243,19 @@ Jeśli ruch anonimowy jest blokowany przez serwer proxy lub zaporę, upewnij si�
 >
 > Inspekcja SSL i przechwytywanie serwerów proxy nie są również obsługiwane ze względów bezpieczeństwa. Skonfiguruj wyjątek dla inspekcji SSL i serwera proxy w celu bezpośredniego przejścia danych z programu Defender for Endpoint w systemie Linux do odpowiednich adresów URL bez przecięcia. Dodanie certyfikatu odcięcia do magazynu globalnego nie umożliwi przecięcia.
 
-Aby uzyskać instrukcje rozwiązywania problemów, zobacz [Rozwiązywanie problemów z łącznością z chmurą dla programu Microsoft Defender dla punktu końcowego w systemie Linux](linux-support-connectivity.md).
+Aby uzyskać instrukcje rozwiązywania problemów, zobacz [Rozwiązywanie problemów z łącznością z chmurą dla Ochrona punktu końcowego w usłudze Microsoft Defender Linux](linux-support-connectivity.md).
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>Jak zaktualizować program Microsoft Defender dla punktu końcowego w systemie Linux
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>Jak zaktualizować system Ochrona punktu końcowego w usłudze Microsoft Defender Linux
 
-Firma Microsoft regularnie publikuje aktualizacje oprogramowania w celu zwiększenia wydajności, zabezpieczeń i dostarczania nowych funkcji. Aby zaktualizować program Microsoft Defender dla punktu końcowego w systemie Linux, zobacz Wdrażanie aktualizacji programu [Microsoft Defender dla punktu końcowego w systemie Linux](linux-updates.md).
+Firma Microsoft regularnie publikuje aktualizacje oprogramowania w celu zwiększenia wydajności, zabezpieczeń i dostarczania nowych funkcji. Aby zaktualizować Ochrona punktu końcowego w usłudze Microsoft Defender Linux, zobacz Wdrażanie [aktualizacji dla Ochrona punktu końcowego w usłudze Microsoft Defender Linux](linux-updates.md).
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>Konfigurowanie ochrony punktu końcowego w usłudze Microsoft Defender na Linuxie
 
-Wskazówki dotyczące konfigurowania produktu w środowiskach przedsiębiorstwa można uzyskać w tece Ustawianie preferencji programu [Microsoft Defender dla punktu końcowego w systemie Linux](linux-preferences.md).
+Wskazówki dotyczące konfigurowania produktu w środowiskach przedsiębiorstwa można uzyskać w tece Ustawianie preferencji dotyczących programu [Ochrona punktu końcowego w usłudze Microsoft Defender Linux](linux-preferences.md).
 
-## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Typowe aplikacje do programu Microsoft Defender for Endpoint mogą mieć wpływ
+## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Typowe aplikacje do Ochrona punktu końcowego w usłudze Microsoft Defender mogą mieć wpływ
 
-Duże obciążenia pracą we/wy z określonych aplikacji mogą doświadczać problemów z wydajnością, jeśli zainstalowano program Microsoft Defender for Endpoint. Należą do nich aplikacje dla deweloperów scenariuszy, takich jak Jenkins i Jira, oraz obciążenia baz danych, takie jak OracleDB i Postgres. Jeśli występuje spadek wydajności, rozważ ustawienie wykluczeń dla zaufanych aplikacji, uwzględniając typowe błędy [wykluczeń, Program antywirusowy Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) pamiętać. Aby uzyskać dodatkowe wskazówki, rozważ konsultowanie dokumentacji dotyczącej wykluczeń oprogramowania antywirusowego z aplikacji innych firm.
+Duże obciążenia pracą we/wy z określonych aplikacji mogą doświadczać problemów z Ochrona punktu końcowego w usłudze Microsoft Defender instalacji. Należą do nich aplikacje dla deweloperów scenariuszy, takich jak Jenkins i Jira, oraz obciążenia baz danych, takie jak OracleDB i Postgres. Jeśli występuje spadek wydajności, rozważ ustawienie wykluczeń dla zaufanych aplikacji, uwzględniając typowe błędy [wykluczeń, Program antywirusowy Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) pamiętać. Aby uzyskać dodatkowe wskazówki, rozważ konsultowanie dokumentacji dotyczącej wykluczeń oprogramowania antywirusowego z aplikacji innych firm.
 
 ## <a name="resources"></a>Zasoby
 

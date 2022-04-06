@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować łącznik danych usługi Slack eDiscovery dostarczony przez firmę Microsoft i używać go do importowania i archiwizowania danych wiadomości błyskawicznych.
-ms.openlocfilehash: 2bd4df859d5bb3a4ccd048c83a864d44f81f33bc
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 7882524bb01a1d28c0f4f7c564472961d04baa07
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525075"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501206"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Konfigurowanie łącznika do archiwizowania danych zbierania elektronicznych materiałów dowodowych w u zapasie czasu (wersja zapoznawcza)
 
@@ -77,7 +77,15 @@ Poniższe omówienie przedstawia proces używania łącznika danych firmy Micros
 
    Po kliknięciu **przycisku Zezwalaj** strona zapasu czasu zostanie zamykana i zostanie wyświetlona strona Mapuj użytkowników zbierania elektronicznych materiałów dowodowych Microsoft 365 **slack** w kreatorze łączników.
 
-## <a name="step-3-map-users-and-select-data-types-to-import"></a>Krok 3. Mapowanie użytkowników i wybieranie typów danych do zaimportowania
+## <a name="step-3-specify-the-users-to-import-data-for"></a>Krok 3. Określanie użytkowników, dla których mają być importowane dane
+
+Wybierz jedną z następujących opcji, aby określić użytkowników, których dane zbierania elektronicznych materiałów dowodowych slack chcesz zaimportować.
+
+- **Wszyscy użytkownicy w Organizacji**. Zaznacz tę opcję, aby zaimportować dane wszystkich użytkowników.
+
+- **Tylko użytkownicy, którzy mają zawieszenie w postępowaniem sądowym**. Zaznacz tę opcję, aby importować dane tylko tych użytkowników, których skrzynki pocztowe są umieszczone w związku z postępowaniem sądowym. Ta opcja powoduje importowanie danych do skrzynek pocztowych użytkowników, dla których właściwość LitigationHoldEnabled ma wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie postępowania w związku z postępowaniem sądowym](create-a-litigation-hold.md).
+
+## <a name="step-4-map-users-and-select-data-types-to-import"></a>Krok 4. Mapowanie użytkowników i wybieranie typów danych do zaimportowania
 
 1. Skonfiguruj jedną lub obie z poniższych opcji w celu mapowania użytkowników usługi Slack na ich Microsoft 365 pocztowe.
 
@@ -103,7 +111,7 @@ Poniższe omówienie przedstawia proces używania łącznika danych firmy Micros
 
 3. Po skonfigurowaniu typów danych do importowania kliknij przycisk **Dalej**, przejrzyj ustawienia łącznika, a następnie kliknij przycisk **Zakończ** , aby utworzyć łącznik.
 
-## <a name="step-4-monitor-the-slack-ediscovery-connector"></a>Krok 4. Monitorowanie łącznika usługi Slack eDiscovery
+## <a name="step-5-monitor-the-slack-ediscovery-connector"></a>Krok 5. Monitorowanie łącznika usługi Slack eDiscovery
 
 Po utworzeniu łącznika zbierania elektronicznych materiałów dowodowych zapasu czasu można wyświetlić stan łącznika w Centrum zgodności platformy Microsoft 365.
 

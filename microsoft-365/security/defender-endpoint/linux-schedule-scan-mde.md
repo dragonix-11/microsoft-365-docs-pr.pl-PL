@@ -1,7 +1,7 @@
 ---
-title: Jak zaplanować skany za pomocą programu Microsoft Defender dla punktu końcowego (Linux)
-description: Dowiedz się, jak zaplanować automatyczny czas skanowania dla programu Microsoft Defender for Endpoint (Linux), aby lepiej chronić zasoby organizacji.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint (linux)
+title: Jak planować skanowania za pomocą systemu Ochrona punktu końcowego w usłudze Microsoft Defender (Linux)
+description: Dowiedz się, jak zaplanować automatyczny czas skanowania w systemie Ochrona punktu końcowego w usłudze Microsoft Defender (Linux), aby lepiej chronić zasoby organizacji.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, skans, antivirus, microsoft defender for endpoint (linux)
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,17 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ddb02d67866e675febda59fac15e8e494188a47f
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 05e8fccc200b39a606fa67a857631e215c8d4b1c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996295"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467626"
 ---
-# <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Planowanie skanów za pomocą programu Microsoft Defender dla punktu końcowego (Linux)
+# <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Planowanie skanów za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender (Linux)
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 Aby uruchomić skanowanie systemu Linux, zobacz [Obsługiwane polecenia](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
@@ -95,7 +95,7 @@ Wpisz "`:wq`" bez cudzysłowów podwójnych.
 
 Aby wyświetlić zadania zron, wpisz `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp.":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="Strona mdatp systemu Linux" lightbox="../../media/linux-mdatp-1.png":::
 
 #### <a name="to-inspect-cron-job-runs"></a>Aby sprawdzić, czy zadanie cron jest uruchamiane
 

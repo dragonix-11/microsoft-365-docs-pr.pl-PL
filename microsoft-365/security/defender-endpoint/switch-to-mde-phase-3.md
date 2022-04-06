@@ -1,7 +1,7 @@
 ---
-title: Przełączanie do usługi Microsoft Defender dla punktu końcowego — onboard
-description: Przejdź na usługę Microsoft Defender for Endpoint. Na urządzeniach, a następnie odinstaluj rozwiązanie inne niż firmy Microsoft.
-keywords: migracja, Usługa Microsoft Defender dla punktu końcowego, edr
+title: Przełączanie do Ochrona punktu końcowego w usłudze Microsoft Defender — Wboard
+description: Przejdź na Ochrona punktu końcowego w usłudze Microsoft Defender. Na urządzeniach, a następnie odinstaluj rozwiązanie inne niż firmy Microsoft.
+keywords: migracja, Ochrona punktu końcowego w usłudze Microsoft Defender, edr
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -21,23 +21,23 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 12/02/2021
+ms.date: 03/28/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 3e92a0525dd70c0f420f581f86f4d6ceb7fd6326
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 1397c34e8e4a7f1fcb20df192409bd57bc50f40b
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014706"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507126"
 ---
-# <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Przełączanie do programu Microsoft Defender dla punktu końcowego — etap 3. Etap: wsad
+# <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Przełączanie do Ochrona punktu końcowego w usłudze Microsoft Defender — etap 3. Etap: na wsch.
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| [![Etap 1. Przygotowanie3.](images/phase-diagrams/prepare.png)](switch-to-mde-phase-1.md)<br/>[Etap 1. Przygotowywanie](switch-to-mde-phase-1.md) | [![Etap 2. Konfigurowanie](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[Etap 2. Konfigurowanie](switch-to-mde-phase-2.md) | ![Etap 3. Wniesienie](images/phase-diagrams/onboard.png)<br/>Etap 3. Wniesienie |
+| [![Etap 1. Przygotowanie3.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Etap 1. Przygotowywanie](switch-to-mde-phase-1.md) | [![Etap 2. Konfigurowanie](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Etap 2. Konfigurowanie](switch-to-mde-phase-2.md) | ![Etap 3. Wniesienie](images/phase-diagrams/onboard.png#lightbox)<br/>Etap 3. Wniesienie |
 |--|--|--|
 || |*Jesteś tutaj!* |
 
@@ -50,7 +50,7 @@ ms.locfileid: "63014706"
 5. [Odinstaluj rozwiązanie inne niż firmy Microsoft](#uninstall-your-non-microsoft-solution).
 6. [Upewnij się, że program Defender for Endpoint działa poprawnie](#make-sure-defender-for-endpoint-is-working-correctly).
 
-## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Urządzenia w programie Microsoft Defender dla punktu końcowego
+## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Urządzenia, na których można Ochrona punktu końcowego w usłudze Microsoft Defender
 
 1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
@@ -61,21 +61,21 @@ ms.locfileid: "63014706"
 4. W **obszarze Metoda wdrażania** wybierz opcję. Postępuj zgodnie z linkami i monitami, aby wychować urządzenia organizacji. Potrzebujesz pomocy? Zobacz [metody dołączania](#onboarding-methods) (w tym artykule).
 
 > [!NOTE]
-> Jeśli podczas dołączania coś poszło nie tak, zobacz Rozwiązywanie problemów z dołączaniem do punktu końcowego programu [Microsoft Defender](troubleshoot-onboarding.md). W tym artykule opisano sposób rozwiązywania problemów z dołączaniem i typowych błędów dotyczących punktów końcowych.
+> Jeśli podczas dołączania coś poszło nie tak, zobacz [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender dotyczących dołączania](troubleshoot-onboarding.md). W tym artykule opisano sposób rozwiązywania problemów z dołączaniem i typowych błędów dotyczących punktów końcowych.
 
 ### <a name="onboarding-methods"></a>Metody dołączania
 
 > [!IMPORTANT]
-> Jeśli używasz programu Microsoft Defender dla chmury, zobacz [Integracja z programem Microsoft Defender dla chmury](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
+> Jeśli używasz programu Microsoft Defender dla Chmury, zobacz [Integracja z usługą Microsoft Defender dla Chmury](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
 
 Metody wdrażania różnią się w zależności od systemu operacyjnego i preferowanych metod. W poniższej tabeli wymieniono zasoby pomocne podczas pracy z programem Defender for Endpoint:
 
 |Systemy operacyjne  |Metody  |
 |---------|---------|
-|Windows 10 lub nowszy<br/><br/>Windows Server 2019 lub nowszy<br/><br/>Windows Server w wersji 1803 lub nowszej<br/><br/>Windows Server 2012 R2 i 2016<sup>[[1](#fn1)]<sup>  |   [Skrypt lokalny (do 10 urządzeń)](configure-endpoints-script.md)<br><br/>   [zasady grupy](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Zarządzanie urządzeniami przenośnymi (Intune)](configure-endpoints-mdm.md)<br>    [Skrypty VDI](configure-endpoints-vdi.md) <br><br> **UWAGA**: Skrypt lokalny nadaje się do dowodu koncepcji, ale nie powinien być używany do wdrożenia produkcyjnego. W przypadku wdrożenia produkcyjnego zalecamy używanie aplikacji zasady grupy, Microsoft Endpoint Configuration Manager lub Intune. |
-|Windows Server 2008 R2 z dodatkiem SP1 | [Microsoft Monitoring Agent (MMA) lub](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **UWAGA**: Microsoft Monitoring Agent agentem usługi Azure Log Analytics. Aby dowiedzieć się więcej, zobacz Omówienie [agenta analizy dziennika](/azure/azure-monitor/platform/log-analytics-agent).  |
+|Windows 10 lub nowszy<br/><br/>Windows Server 2019 lub nowszy<br/><br/>Windows Server w wersji 1803 lub nowszej<br/><br/>Windows Server 2012 R2 i 2016<sup>[[1](#fn1)]<sup>  |   [Skrypt lokalny (do 10 urządzeń)](configure-endpoints-script.md)<br><br/>   [Zasady grupy](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Mobile Zarządzanie urządzeniami (Intune)](configure-endpoints-mdm.md)<br>    [Skrypty VDI](configure-endpoints-vdi.md) <br><br> **UWAGA**: Skrypt lokalny nadaje się do dowodu koncepcji, ale nie powinien być używany do wdrożenia produkcyjnego. W przypadku wdrożenia produkcyjnego zalecamy używanie aplikacji zasady grupy, Microsoft Endpoint Configuration Manager lub Intune. |
+|Windows Server 2008 R2 z dodatkiem SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [lub Microsoft Defender dla Chmury](/azure/security-center/security-center-wdatp) <br><br> **UWAGA**: Microsoft Monitoring Agent agentem usługi Azure Log Analytics. Aby dowiedzieć się więcej, zobacz Omówienie [agenta analizy dziennika](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 z dodatkiem SP1 Pro<br/><br/>Windows 7 z dodatkiem SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **UWAGA**: Microsoft Monitoring Agent agentem usługi Azure Log Analytics. Aby dowiedzieć się więcej, zobacz Omówienie [agenta analizy dziennika](/azure/azure-monitor/platform/log-analytics-agent).  
-| macOS (zobacz [Wymagania systemowe](microsoft-defender-endpoint-mac.md) | [Skrypt lokalny](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[Jamf Pro](mac-install-with-jamf.md)<br/><br/>[Zarządzanie urządzeniami przenośnymi](mac-install-with-other-mdm.md)   |
+| macOS (zobacz [Wymagania systemowe](microsoft-defender-endpoint-mac.md) | [Skrypt lokalny](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[Jamf Pro](mac-install-with-jamf.md)<br/><br/>[Urządzenia Zarządzanie urządzeniami](mac-install-with-other-mdm.md)   |
 | Linux (zobacz [Wymagania systemowe](microsoft-defender-endpoint-linux.md#system-requirements)) |  [Skrypt lokalny](linux-install-manually.md) <br><br/> [Wytłaczenie](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)  | 
@@ -133,7 +133,7 @@ Aby ustawić Program antywirusowy Microsoft Defender na pasywny w Windows Server
 >
 > - [zasady grupy preferencja](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
 > - [Local zasady grupy Object tool](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
-> - [Pakiet w programie Menedżer konfiguracji](/mem/configmgr/apps/deploy-use/packages-and-programs)
+> - [Pakiet w programie Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
 ### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>Rozpoczynanie Program antywirusowy Microsoft Defender dnia Windows Server 2016
 
@@ -157,7 +157,10 @@ Jeśli na tym etapie masz:
 - urządzenia organizacji do usługi Defender for Endpoint i
 - Program antywirusowy Microsoft Defender jest zainstalowana i włączona,
 
-Następnie następnym krokiem jest odinstalowanie rozwiązania antywirusowego, ochrony przed złośliwym oprogramowaniem i rozwiązania firmy Microsoft do ochrony przed złośliwym oprogramowaniem. Po odinstalowaniu rozwiązania firmy innym niż firma Microsoft tryb Program antywirusowy Microsoft Defender z trybu pasywnego do trybu aktywnego. W większości przypadków odbywa się to automatycznie.
+Następnie następnym krokiem jest odinstalowanie rozwiązania antywirusowego, ochrony przed złośliwym oprogramowaniem i rozwiązania firmy Microsoft do ochrony przed złośliwym oprogramowaniem. Po odinstalowaniu rozwiązania firmy innym niż firma Microsoft tryb Program antywirusowy Microsoft Defender z trybu pasywnego do trybu aktywnego. W większości przypadków odbywa się to automatycznie. 
+
+> [!IMPORTANT]
+> Jeśli z jakiegoś powodu program Program antywirusowy Microsoft Defender nie przejść w tryb aktywny po odinstalowaniu rozwiązania niebędące oprogramowaniem antywirusowym/złośliwym firmy Microsoft, zobacz wygląda na to, że program Program antywirusowy Microsoft Defender jest zablokowany w trybie [pasywnym](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode).
 
 Aby uzyskać pomoc w odinstalowaniu rozwiązania firmy innych niż Microsoft, skontaktuj się z jego zespołem pomocy technicznej.
 

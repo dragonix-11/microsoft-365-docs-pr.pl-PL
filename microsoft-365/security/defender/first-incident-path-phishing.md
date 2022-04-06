@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 112bfd63a5f3667b22378790b62f3e33fba784d6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 413c4fadcc6de3527643be712713d37a1e2c346c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320301"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501140"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Przykładowy atak wiadomości e-mail wyłudzającej informacje
 
@@ -40,25 +40,25 @@ Microsoft 365 Defender mogą pomóc w wykryciu złośliwych załączników dosta
 
 Na przykład analitykowi przypisano wieloetapowe zdarzenie.
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="Przykład zdarzenia wieloetapowego."::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="Zdarzenie wieloetapowe" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-incident.png":::
 
-Na karcie **Alerty** o zdarzeniu są wyświetlane alerty z usługi Defender Office 365 usługi Microsoft Defender dla aplikacji w chmurze. Analityk może przejść do szczegółów w programie Defender, aby Office 365 alerty, wybierając alerty wiadomości e-mail. Szczegóły alertu są wyświetlane w okienku bocznym.
+Na karcie **Alerty** o zdarzeniu są wyświetlane alerty z Ochrona usługi Office 365 w usłudze Defender i Microsoft Defender for Cloud Apps wiadomości. Analityk może przejść do szczegółów alertów Ochrona usługi Office 365 w usłudze Defender, wybierając alerty wiadomości e-mail. Szczegóły alertu są wyświetlane w okienku bocznym.
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="Przykład alertu e-mail.":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="Alert e-mail" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png":::
  
 Przewijając w dół, jest wyświetlanych więcej informacji, pokazując złośliwe pliki i użytkowników, na które wpływało to zagrożenie.
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="Przykład wpływu alertu e-mail na użytkownika i plik.":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="Wpływ alertu e-mail na użytkownika i plik" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-impact.png":::
   
 Wybranie **opcji Otwórz stronę alertu** umożliwia wyświetlenie określonego alertu, w którym można szczegółowo wyświetlać różne informacje, wybierając link. Rzeczywistą wiadomość e-mail można wyświetlić, wybierając pozycję Wyświetl wiadomości w **Eksploratorze** w dolnej części panelu.
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Przykładowe szczegóły alertu."::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Szczegóły alertu" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png"::: 
 
 To przenosi analityka do strony Zarządzanie zagrożeniami, na której są wyświetlane temat wiadomości e-mail, adresaci, nadawcy i inne informacje. **Zap** w **obszarze Akcje specjalne** informuje analityka, że została zaimplementowana funkcja automatycznego przeczyszczania w godzinach zero. Zap automatycznie wykrywa i usuwa złośliwe i spamowe wiadomości ze skrzynek pocztowych w całej organizacji. Aby uzyskać więcej informacji, [zobacz Automatyczne czyszczenie zerowej godziny (ZAP) w programie Exchange Online](../office-365-security/zero-hour-auto-purge.md).
 
 Inne akcje można podjąć w odniesieniu do określonych wiadomości, wybierając pozycję **Akcje**. 
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="Przykład innych akcji można podjąć w przypadku wiadomości e-mail."::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="Inne akcje, które można podjąć w przypadku wiadomości e-mail" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-actions.png"::: 
 
 ## <a name="next-step"></a>Następny krok
 

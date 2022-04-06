@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e0a8293709da44dc3a46cf565ad099666e8dae24
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 1ba846402bb2ee447ee5f38ff035c119bdc28fc1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "62996775"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467692"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Ograniczone skanowanie okresowe w programie Program antywirusowy Microsoft Defender
 
@@ -29,10 +29,10 @@ ms.locfileid: "62996775"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Ograniczone skanowanie okresowe to specjalny typ wykrywania zagrożeń i środków zaradczych, które można włączyć po zainstalowaniu innego produktu antywirusowego na urządzeniu z systemem Windows 10 lub Windows 11.
+Ograniczone skanowanie okresowe to specjalny typ wykrywania zagrożeń i środków zaradczych, które można włączyć po zainstalowaniu innego produktu antywirusowego na Windows 10 lub Windows 11 urządzeniu.
 
 Tę funkcję można włączyć tylko w określonych sytuacjach. Aby uzyskać więcej informacji na temat ograniczonego skanowania okresowego i Program antywirusowy Microsoft Defender z innymi produktami antywirusowymi, zobacz Program antywirusowy Microsoft Defender [zgodności](microsoft-defender-antivirus-compatibility.md).
 
@@ -44,7 +44,7 @@ Domyślnie program Program antywirusowy Microsoft Defender włączy się na urz�
 
 Jeśli Program antywirusowy Microsoft Defender jest włączone, zostaną wyświetlone opcje zwykłego konfigurowania na tym urządzeniu:
 
-![Zabezpieczenia Windows przedstawiająca opcje audio/wideo programu Microsoft Defender, w tym opcje skanowania, ustawienia i opcje aktualizacji.](images/vtp-wdav.png)
+:::image type="content" source="images/vtp-wdav.png" alt-text="The Zabezpieczenia Windows app showing Microsoft Defender AV options, including scan options, settings, and update options" lightbox="images/vtp-wdav.png":::
 
 Jeśli inny produkt antywirusowy jest zainstalowany i działa poprawnie, Program antywirusowy Microsoft Defender zostanie automatycznie wyłączone. Aplikacja Zabezpieczenia Windows zmieni sekcję Ochrona przed wirusami & **zagrożeniami** w celu pokazania stanu produktu audio/wideo i udostępni link do opcji konfiguracji produktu.
 

@@ -1,0 +1,49 @@
+- name: Microsoft Bookings
+  href: bookings-overview.md
+  items:
+    - name: Konfigurowanie
+      items:
+        - name: Uzyskaj dostęp do aplikacji Bookings
+          href: get-access.md
+        - name: Wprowadź informacje o firmie
+          href: enter-business-information.md
+        - name: Zdefiniuj oferty usług
+          href: define-service-offerings.md
+        - name: Skonfiguruj powiadomienia SMS
+          href: bookings-sms.md
+        - name: Dodaj pracowników do aplikacji Bookings
+          href: add-staff.md
+        - name: 'Zaplanuj dni, w których firma jest zamknięta i urlopy'
+          href: schedule-closures-time-off-vacation.md
+        - name: Ustaw zasady planowania
+          href: set-scheduling-policies.md
+        - name: Dostosuj i opublikuj stronę rezerwacji
+          href: customize-booking-page.md
+        - name: Twórz rezerwację ręczną
+          href: create-a-manual-booking.md
+        - name: Godziny pracy pracowników
+          href: employee-hours.md
+        - name: Dodaj pytania niestandardowe i wymagane do strony rezerwacji
+          href: add-questions.md
+        - name: Ustaw czas buforu
+          href: set-buffer-time.md
+        - name: Metryki i śledzenie aktywności
+          href: metrics-and-activity-tracking.md
+        - name: Ustaw język i strefę czasową
+          href: set-language-time-zones.md
+    - name: Pobierz aplikację Bookings
+      href: get-bookings-app.md
+    - name: Zarządzaj aplikacją Bookings w usłudze Microsoft Teams
+      href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
+    - name: Wirtualne wizyty w aplikacji Microsoft Teams i aplikacji Bookings
+      href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
+    - name: Wykres porównawczy — aplikacja internetowa a aplikacja Teams
+      href: comparison-chart.md
+    - name: Usuń kalendarz rezerwacji
+      href: delete-calendar.md
+    - name: Włącz lub wyłącz aplikację Microsoft Bookings
+      href: turn-bookings-on-or-off.md
+    - name: Raportowanie informacji dotyczących usługi Microsoft Bookings
+      href: reporting-info.md
+    - name: Microsoft Bookings — często zadawane pytania
+      href: bookings-faq.yml

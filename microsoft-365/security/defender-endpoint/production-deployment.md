@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie wdrożenia programu Microsoft Defender dla punktu końcowego
-description: Dowiedz się, jak skonfigurować wdrożenie programu Microsoft Defender dla punktu końcowego
+title: Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender sieci
+description: Dowiedz się, jak skonfigurować wdrożenie pakietu Ochrona punktu końcowego w usłudze Microsoft Defender
 keywords: wdrażanie, konfiguracja, sprawdzanie poprawności licencjonowania, konfiguracja dzierżawy, konfiguracja sieci
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,27 +18,27 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c59e07e1d11be406c1f954a656cef7b32fa2851f
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: e1fbfdaa71cc57a7797a2b95c96a56abba4fcc40
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63013902"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64506994"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Konfigurowanie wdrożenia programu Microsoft Defender dla punktu końcowego
+# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender sieci
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Wdrażanie usługi Defender dla punktu końcowego jest procesem trzyfazowym:
 
-|[![faza wdrażania — przygotowywanie.](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Etap 1. Przygotowywanie](prepare-deployment.md) | ![Faza wdrażania — konfiguracja](images/phase-diagrams/setup.png)<br>Etap 2. Konfigurowanie | [![Faza wdrażania — wdrożenie](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Etap 3. Wniesienie](onboarding.md)|
+|[![faza wdrażania — przygotowywanie.](images/phase-diagrams/prepare.png#lightbox)](prepare-deployment.md)<br>[Etap 1. Przygotowywanie](prepare-deployment.md) | ![Faza wdrażania — konfiguracja](images/phase-diagrams/setup.png#lightbox)<br>Etap 2. Konfigurowanie | [![Faza wdrażania — wdrożenie](images/phase-diagrams/onboard.png#lightbox)](onboarding.md)<br>[Etap 3. Wniesienie](onboarding.md)|
 |---|---|---|
 ||*Jesteś tutaj!*||
 
@@ -51,7 +51,7 @@ W tym scenariuszu wdrażania zostaną Ci opisane następujące kroki:
 - Konfiguracja sieci
 
 > [!NOTE]
-> W celu prowadzenia Cię przez typowe wdrożenie ten scenariusz obejmie tylko wykorzystanie Microsoft Endpoint Configuration Manager. Program Defender for Endpoint obsługuje korzystanie z innych narzędzi wdrażania, ale nie obejmuje tych scenariuszy w przewodniku wdrażania. Aby uzyskać więcej informacji, zobacz [Urządzenia w programie Microsoft Defender dla punktu końcowego](onboard-configure.md).
+> W celu prowadzenia Cię przez typowe wdrożenie ten scenariusz obejmie tylko wykorzystanie Microsoft Endpoint Configuration Manager. Program Defender for Endpoint obsługuje korzystanie z innych narzędzi wdrażania, ale nie obejmuje tych scenariuszy w przewodniku wdrażania. Aby uzyskać więcej informacji, zobacz [Na urządzeniach](onboard-configure.md) Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 ## <a name="check-license-state"></a>Sprawdź stan licencji
 
@@ -59,13 +59,13 @@ Sprawdzanie stanu licencji i jego poprawnej obsługi administracyjnej jest możl
 
 1. Aby wyświetlić licencje, przejdź do portalu **Microsoft Azure i** przejdź do sekcji Microsoft Azure [licencji portalu](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) internetowego.
 
-   ![Obraz strony Licencjonowanie platformy Azure.](images/atp-licensing-azure-portal.png)
+   :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="Strona Licencjonowanie platformy Azure" lightbox="images/atp-licensing-azure-portal.png":::
 
 1. Ewentualnie w centrum administracyjnym przejdź do pozycji **Subskrypcje** **rozliczeniowe**\>.
 
     Na ekranie zobaczysz wszystkie licencje z inicjowaniem obsługi administracyjnej i ich bieżący **stan**.
 
-    ![Obraz licencji rozliczeniowych.](images/atp-billing-subscriptions.png)
+    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="Strona licencji rozliczeniowych" lightbox="images/atp-billing-subscriptions.png":::
 
 ## <a name="cloud-service-provider-validation"></a>Sprawdzanie poprawności dostawcy usług w chmurze
 
@@ -75,28 +75,28 @@ Aby uzyskać dostęp do licencji, dla których jest zapewniana inicjowanie obsł
 
 2. Kliknięcie linku **Portalu partnerskiego** spowoduje otwarcie opcji **Administrator w** imieniu użytkownika i zapewni Ci dostęp do centrum administracyjnego klientów.
 
-   ![Obraz portalu administracyjnego usługi O365.](images/atp-O365-admin-portal-customer.png)
+   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="Portalu Office 365 administracyjnego" lightbox="images/atp-O365-admin-portal-customer.png":::
 
 ## <a name="tenant-configuration"></a>Konfiguracja dzierżawy
 
-Dołączanie do programu Microsoft Defender for Endpoint jest łatwe. Z menu nawigacji wybierz dowolny element w sekcji Punkty końcowe lub dowolną Microsoft 365 Defender, taką jak Zdarzenia, Myśli, Centrum akcji lub Analiza zagrożeń, aby zainicjować proces dołączania.
+Dołączanie do Ochrona punktu końcowego w usłudze Microsoft Defender jest łatwe. Z menu nawigacji wybierz dowolny element w sekcji Punkty końcowe lub dowolną Microsoft 365 Defender, taką jak Zdarzenia, Myśli, Centrum akcji lub Analiza zagrożeń, aby zainicjować proces dołączania.
 
 Z przeglądarki internetowej przejdź do portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender sieci Web</a>.
 
 ## <a name="data-center-location"></a>Lokalizacja centrum danych
-Program Microsoft Defender for Endpoint będzie przechowywać i przetwarzać dane w tej [samej lokalizacji,](/microsoft-365/security/defender/m365d-enable) w Microsoft 365 Defender. Jeśli usługa Microsoft 365 Defender nie została jeszcze włączona, włączenie do programu Microsoft Defender for Endpoint spowoduje również włączenie programu Microsoft 365 Defender i automatyczne wybrana nowa lokalizacja centrum danych na podstawie lokalizacji aktywnych usług zabezpieczeń usługi Microsoft 365. Wybrana lokalizacja centrum danych zostanie pokazana na ekranie.
+Ochrona punktu końcowego w usłudze Microsoft Defender będą przechowywane i przetwarzane w tej [samej lokalizacji co używane przez firmę Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). Jeśli Microsoft 365 Defender nie zostało jeszcze włączone, włączenie dołączania do usługi Ochrona punktu końcowego w usłudze Microsoft Defender spowoduje również włączenie Microsoft 365 Defender i automatyczne wybrana nowa lokalizacja centrum danych na podstawie lokalizacji aktywnego użytkownika Microsoft 365 zabezpieczeń. Wybrana lokalizacja centrum danych zostanie pokazana na ekranie.
 
 ## <a name="network-configuration"></a>Konfiguracja sieci
 
 Jeśli organizacja nie wymaga, aby punkty końcowe korzystały z serwera proxy w celu uzyskania dostępu do Internetu, pomiń tę sekcję.
 
-Czujnik programu Microsoft Defender for Endpoint wymaga, Windows Http (WinHTTP) firmy Microsoft do zgłaszania danych czujnika i komunikowania się z usługą Microsoft Defender for Endpoint. Osadzony czujnik programu Microsoft Defender for Endpoint działa w kontekście systemowym przy użyciu konta LocalSystem. Czujnik korzysta z usług Microsoft Windows HTTP (WinHTTP) w celu umożliwienia komunikacji z usługą w chmurze programu Microsoft Defender for Endpoint. Ustawienie konfiguracji WinHTTP jest niezależne od ustawień serwera Windows proxy przeglądania Internetu (WinINet) i może wykrywać tylko serwer proxy przy użyciu następujących metod odnajdowania:
+Czujnik Ochrona punktu końcowego w usłudze Microsoft Defender wymaga od firmy Microsoft Windows HTTP (WinHTTP) zgłaszania danych czujnika i komunikowania się z Ochrona punktu końcowego w usłudze Microsoft Defender serwisem. Osadzony Ochrona punktu końcowego w usłudze Microsoft Defender działa w kontekście systemowym przy użyciu konta LocalSystem. Czujnik używa usług Microsoft Windows HTTP (WinHTTP) w celu umożliwienia komunikacji z usługą Ochrona punktu końcowego w usłudze Microsoft Defender w chmurze. Ustawienie konfiguracji WinHTTP jest niezależne od ustawień serwera Windows proxy przeglądania Internetu (WinINet) i może wykrywać tylko serwer proxy przy użyciu następujących metod odnajdowania:
 
 - **Metody wykrywania automatycznego**:
   - Przezroczysty serwer proxy
   - Protokół automatycznego wykrywania proxy sieci Web (WPAD)
 
-  Jeśli w topologii sieci wdrożono przezroczysty serwer proxy lub tablet WPAD, nie ma potrzeby żadnych specjalnych ustawień konfiguracji. Aby uzyskać więcej informacji na temat wykluczeń adresu URL punktu końcowego programu Microsoft Defender na serwerze proxy, zobacz sekcję Adresy URL usługi proxy w tym dokumencie, aby uzyskać listę adresów URL dla adresów [URL](production-deployment.md#proxy-service-urls) i konfigurowanie ustawień serwera proxy i łączności [internetowej](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+  Jeśli w topologii sieci wdrożono przezroczysty serwer proxy lub tablet WPAD, nie ma potrzeby żadnych specjalnych ustawień konfiguracji. Aby uzyskać więcej informacji na temat Ochrona punktu końcowego w usłudze Microsoft Defender URL wykluczeń adresów URL w serwerze [](production-deployment.md#proxy-service-urls) proxy, zobacz sekcję Adresy URL usługi proxy w tym dokumencie, aby uzyskać listę adresów URL ze zezwalaniami lub na temat Konfigurowania ustawień serwera proxy i łączności [internetowej urządzenia](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 - **Ręczna statyczna konfiguracja serwera proxy**:
   - Konfiguracja oparta na rejestrze
@@ -106,22 +106,22 @@ Czujnik programu Microsoft Defender for Endpoint wymaga, Windows Http (WinHTTP) 
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Ręczne konfigurowanie serwera proxy przy użyciu statycznego serwera proxy opartego na rejestrze
 
-Skonfiguruj statyczny serwer proxy oparty na rejestrze, aby umożliwić raportowanie danych diagnostycznych i komunikowanie się z usługami programu Microsoft Defender for Endpoint tylko w programie Microsoft Defender for Endpoint, jeśli komputer nie ma możliwości nawiązania połączenia z Internetem. Statyczny serwer proxy można skonfigurować za pośrednictwem zasady grupy (GP). Zasady grupy można znaleźć w obszarze:
+Skonfiguruj statyczny serwer proxy oparty na rejestrze, aby umożliwić tylko czujnikowi Ochrona punktu końcowego w usłudze Microsoft Defender zgłaszanie danych diagnostycznych i komunikowanie się z usługami firmy Ochrona punktu końcowego w usłudze Microsoft Defender, jeśli komputer nie jest dozwolony do łączenia się z Internet. Statyczny serwer proxy można skonfigurować za pośrednictwem zasady grupy (GP). Zasady grupy można znaleźć w obszarze:
 
 - Szablony administracyjne Windows \> kompilacji zbierania \> \> i podglądu danych składników Konfiguruj uwierzytelniony serwer proxy dla usługi połączonego interfejsu użytkownika i telemetrii
 - Ustaw dla ustawienia **Włączone i** wybierz **pozycję Wyłącz uwierzytelniony serwer proxy**
 
 1. Otwórz Konsolę zarządzania zasadami grupy.
 2. Utwórz zasady lub edytuj istniejące zasady zgodnie z praktykami organizacyjnymi.
-3. Edytuj zasady grupy i przejdź do szablonu administracyjnego **Windows kompilacji \> \> zbierania danych składników i podglądu Konfiguruj uwierzytelnione użycie serwera proxy dla usługi połączonego interfejsu użytkownika i telemetrii.\>**
+3. Edytuj zasady grupy i przejdź do szablonu administracyjnego **Windows kompilacji \> \> zbierania danych składników i podglądu Konfiguruj uwierzytelnione użycie serwera proxy dla usługi połączonego użytkownika i telemetrii.\>**
 
-   ![Obraz zasady grupy konfiguracji.](images/atp-gpo-proxy1.png)
+   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Opcje związane z konfiguracją zasad użytkowania" lightbox="images/atp-gpo-proxy1.png":::
 
 4. Wybierz **pozycję Włączone**.
 5. Wybierz **pozycję Wyłącz uwierzytelniony serwer proxy**.
 6. Przejdź do **szablonu administracyjnego Windows \> kompilacji zbierania \> \> i podglądu składników Konfiguruj połączone środowisko użytkownika i telemetrię**.
 
-    ![Obraz zasady grupy konfiguracji.](images/atp-gpo-proxy2.png)
+   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Opcje związane z konfiguracją połączonego interfejsu użytkownika i telemetrii" lightbox="images/atp-gpo-proxy2.png":::
 
 7. Wybierz **pozycję Włączone**.
 8. Wprowadź nazwę **serwera proxy**.
@@ -165,9 +165,9 @@ Down-Level to stacje robocze Windows 7 z dodatkiem SP1 i Windows 8.1, Windows Se
 
 ### <a name="proxy-service-urls"></a>Adresy URL usługi serwera proxy
 
-Adresy URL, które zawierają wersję 20, są potrzebne tylko w przypadku, Windows 10, wersji 1803 lub Windows 11 urządzeń. Jest ona potrzebna tylko `us-v20.events.data.microsoft.com` w przypadku, gdy urządzenie jest Windows 10 wersji 1803 lub Windows 11.
+Adresy URL, które zawierają wersję 20, są potrzebne tylko w przypadku, Windows 10, wersji 1803 lub Windows 11 urządzeniach. Jest ona potrzebna tylko wtedy, `us-v20.events.data.microsoft.com` gdy urządzenie jest Windows 10 wersji 1803 lub Windows 11.
 
-Jeśli serwer proxy lub zapora blokuje ruch anonimowy, ponieważ czujnik programu Microsoft Defender for Endpoint łączy się z kontekstu systemowego, upewnij się, że ruch anonimowy jest dozwolony w podanych adresach URL.
+Jeśli serwer proxy lub zapora blokuje ruch anonimowy, ponieważ czujnik Ochrona punktu końcowego w usłudze Microsoft Defender łączy się z kontekstu systemowego, upewnij się, że ruch anonimowy jest dozwolony w podanych adresach URL.
 
 Poniższy arkusz kalkulacyjny zawiera listę usług i skojarzonych z nimi adresów URL, z których sieć musi nawiązać połączenie. Upewnij się, że nie ma żadnych reguł zapory lub filtrowania sieci, które odmówią dostępu do tych adresów URL, lub może być konieczne utworzenie reguły zezwalania *przeznaczonej* specjalnie dla tych adresów URL.
 
@@ -178,10 +178,9 @@ Poniższy arkusz kalkulacyjny zawiera listę usług i skojarzonych z nimi adres�
 
 |Arkusz kalkulacyjny listy domen| Opis|
 |---|---|
-|Lista adresów URL punktu końcowego programu Microsoft Defender dla klientów komercyjnych | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Lista adresów URL programu Microsoft Defender dla punktów końcowych dla klientów GCC/DoD| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
+|Ochrona punktu końcowego w usłudze Microsoft Defender adresu URL dla klientów komercyjnych| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Ochrona punktu końcowego w usłudze Microsoft Defender url list for Gov/GCC/DoD | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 ## <a name="next-step"></a>Następny krok
 
-![**Etap 3. Wsuń**.](images/onboard.png) <br> [Etap 3. Etap 3.](onboarding.md) Dołączanie urządzeń do usługi, aby usługa Microsoft Defender for Endpoint uzyskać od nich dane czujnika.
+[![**Etap 3. Wsuń**.](images/onboard.png#lightbox)] <br> [Etap 3. Wsuń](onboarding.md) urządzenia do usługi, aby usługa Ochrona punktu końcowego w usłudze Microsoft Defender uzyskać od nich dane czujnika.

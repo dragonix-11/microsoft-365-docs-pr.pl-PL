@@ -1,6 +1,6 @@
 ---
 title: Filtrowanie zawartości sieci Web
-description: Za pomocą filtrowania zawartości sieci Web w programie Microsoft Defender for Endpoint można śledzić i regulować dostęp do witryn internetowych na podstawie ich kategorii zawartości.
+description: Filtrowanie zawartości sieci Web w programie Ochrona punktu końcowego w usłudze Microsoft Defender umożliwia śledzenie i regulowanie dostępu do witryn internetowych na podstawie ich kategorii zawartości.
 keywords: ochrona sieci Web, ochrona przed zagrożeniami internetowymi, przeglądanie Internetu, monitorowanie, raporty, karty, lista domen, zabezpieczenia, wyłudzanie informacji, złośliwe oprogramowanie, exploit, witryny internetowe, ochrona sieci, Edge, Internet Explorer, Chrome, Firefox, przeglądarka internetowa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,26 +15,26 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 14d45f4ac22a9707b380d817cb89da1bbee562e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 24cdf18ad510902a533834da2f3595acaa9b33d7
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326513"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595263"
 ---
 # <a name="web-content-filtering"></a>Filtrowanie zawartości sieci Web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Filtrowanie zawartości sieci Web jest częścią funkcji ochrony sieci [Web](web-protection-overview.md) w programie Microsoft Defender dla punktu końcowego. Pozwala organizacji śledzić dostęp do witryn internetowych i regulować go na podstawie ich kategorii zawartości. Wiele z tych witryn sieci Web, chociaż nie jest złośliwych, może być problematycznych ze względu na zgodność z przepisami, użycie przepustowości lub inne problemy.
+Filtrowanie zawartości sieci Web jest częścią funkcji ochrony sieci [Web](web-protection-overview.md) w programie Ochrona punktu końcowego w usłudze Microsoft Defender. Pozwala organizacji śledzić dostęp do witryn internetowych i regulować go na podstawie ich kategorii zawartości. Wiele z tych witryn sieci Web, chociaż nie jest złośliwych, może być problematycznych ze względu na zgodność z przepisami, użycie przepustowości lub inne problemy.
 
 Skonfiguruj zasady dla różnych grup urządzeń, aby blokować określone kategorie. Zablokowanie kategorii uniemożliwia użytkownikom w określonych grupach urządzeń uzyskiwanie dostępu do adresów URL skojarzonych z tą kategorią. W przypadku kategorii, która nie jest blokowana, adresy URL są automatycznie insektowane. Użytkownicy mogą bez zakłóceń uzyskać dostęp do adresów URL, a Ty zbierasz statystyki dostępu, aby ułatwić tworzenie bardziej niestandardowych decyzji dotyczących zasad. Użytkownicy zobaczą powiadomienie o zablokowaniu, jeśli element na wyświetlanej stronie będzie dzwonić do zablokowanego zasobu.
 
@@ -44,7 +44,7 @@ Filtrowanie zawartości sieci Web jest dostępne w głównych przeglądarkach in
 
 - Użytkownicy nie mogą uzyskać dostępu do witryn internetowych w kategoriach zablokowanych, niezależnie od tego, czy przeglądają witryny lokalne, czy z dala od sieci.
 
-- Twój zespół zabezpieczeń może wygodnie wdrażać zasady dla grup użytkowników za pomocą grup urządzeń zdefiniowanych w ustawieniach kontroli dostępu opartych na rolach programu [Microsoft Defender dla punktu końcowego](/microsoft-365/security/defender-endpoint/rbac).
+- Zespół zabezpieczeń może wygodnie wdrażać zasady w grupach użytkowników za pomocą grup urządzeń zdefiniowanych w Ochrona punktu końcowego w usłudze Microsoft Defender [kontroli dostępu opartej na rolach](/microsoft-365/security/defender-endpoint/rbac).
 
 - Twój zespół zabezpieczeń może uzyskać dostęp do raportów sieci Web w tej samej lokalizacji centralnej z widocznością na rzeczywistych blokach i użyciu sieci Web.
 
@@ -52,17 +52,17 @@ Filtrowanie zawartości sieci Web jest dostępne w głównych przeglądarkach in
 
 Przed wypróbowaniem tej funkcji upewnij się, że są spełnione następujące wymagania:
 
-- Subskrypcja obejmuje jedną z następujących usług: Windows 10 Enterprise E5, Microsoft 365 E5, Zabezpieczenia platformy Microsoft 365 E5, Microsoft 365 E3 + Zabezpieczenia platformy Microsoft 365 E5 lub autonomiczną licencję programu Microsoft Defender for Endpoint. 
+- Subskrypcja obejmuje jedną z następujących usług: Windows 10 Enterprise E5, Microsoft 365 E5, Zabezpieczenia platformy Microsoft 365 E5, Microsoft 365 E3 + Zabezpieczenia platformy Microsoft 365 E5 dodatku lub licencji Ochrona punktu końcowego w usłudze Microsoft Defender autonomicznej. 
 
 - Masz dostęp do portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender sieci.</a>
 
-- Na urządzeniach organizacji działa aktualizacja Windows 10 rocznicowa (wersja 1607) lub nowsza albo Windows 11 z najnowszymi aktualizacjami oprogramowania antywirusowego/ochrony przed [złośliwym oprogramowaniem](manage-updates-baselines-microsoft-defender-antivirus.md).
+- Na urządzeniach organizacji jest Windows 10 rocznicowa aktualizacja (wersja 1607) lub nowsza albo Windows 11 z najnowszymi aktualizacjami oprogramowania antywirusowego/ochrony przed [złośliwym oprogramowaniem](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 - Windows Defender i Ochrona sieci są włączone na urządzeniach organizacji.
 
 ## <a name="data-handling"></a>Obsługa danych
 
-Dane są przechowywane w regionie wybranym w ramach ustawień obsługi danych programu [Microsoft Defender for Endpoint](data-storage-privacy.md). Twoje dane nie opuszczą centrum danych w tym regionie. Ponadto Twoje dane nie będą udostępniane innym podmiotom, w tym naszym dostawcom danych.
+Dane są przechowywane w regionie wybranym w ramach ustawień obsługi Ochrona punktu końcowego w usłudze Microsoft Defender [danych](data-storage-privacy.md). Twoje dane nie opuszczą centrum danych w tym regionie. Ponadto Twoje dane nie będą udostępniane innym podmiotom, w tym naszym dostawcom danych.
 
 ## <a name="turn-on-web-content-filtering"></a>Włączanie filtrowania zawartości sieci Web
 
@@ -134,7 +134,7 @@ Edukacja płciowa **: witryny**, które dyskutują o płci i erotyce w czytelny 
 
 **Czat**: Witryny, które są przede wszystkim internetowymi pokojami rozmów.
 
-**Gry**: Witryny związane z grami wideo lub komputerowymi, w tym witryny promujące granie przez hostowanie usług online lub informacji związanych z grami.
+**Gry**: Witryny związane z grami wideo lub komputerowymi, w tym witryny promujące gry poprzez Usługi online lub informacje związane z grami.
 
 **Wiadomości błyskawiczne**: Witryny, których można używać do pobierania oprogramowania do wiadomości błyskawicznych lub wiadomości błyskawicznych klienta.
 
@@ -203,9 +203,9 @@ Zostanie otwarty panel, w którym można wybrać priorytet, i dodać więcej szc
 
 ### <a name="url-category-lookup"></a>Odnośnik kategorii adresu URL
 
-Aby ustalić kategorię witryny internetowej, możesz użyć funkcji wyszukiwania adresów URL dostępnej w portalu Microsoft 365 Defender sieci Web (<https://security.microsoft.com>) w obszarze **Wyszukiwanie punktów końcowych**\>. W wynikach wyszukiwania adresu URL kategoria filtrowania zawartości sieci Web jest wyświetlana w obszarze **Szczegóły adresu URL/domeny**. Administratorzy mogą także sporyć o kategorię domeny bezpośrednio z tej strony, jak pokazano na poniższej ilustracji. Jeśli wynik kategorii nie jest wyświetlany, adres URL nie jest obecnie przypisany do istniejącej kategorii filtrowania zawartości sieci Web.
+Aby ustalić kategorię witryny internetowej, możesz użyć funkcji wyszukiwania adresów URL dostępnej w portalu Microsoft 365 Defender sieci Web (<https://security.microsoft.com>) w obszarze **Wyszukiwanie punktów końcowych**\>. W wynikach wyszukiwania adresu URL kategoria filtrowania zawartości sieci Web jest wyświetlana w obszarze **Szczegóły adresu URL/domeny**. Jeśli wynik kategorii nie jest wyświetlany, adres URL nie jest obecnie przypisany do istniejącej kategorii filtrowania zawartości sieci Web.
 
-![Obraz wyników wyszukiwania kategorii filtrowania zawartości sieci Web.](../../media/web-content-filtering-category-lookup.png)
+<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
 
 ## <a name="web-content-filtering-cards-and-details"></a>Karty i szczegóły filtrowania zawartości sieci Web
 
@@ -217,25 +217,25 @@ Ta karta zawiera listę nadrzędnych kategorii zawartości sieci Web z najwięks
 
 W ciągu pierwszych 30 dni korzystania z tej funkcji twoja organizacja może nie mieć wystarczającej ilości danych, aby wyświetlić te informacje.
 
-![Obraz aktywności w Internecie według karty kategorii.](images/web-activity-by-category600.png)
+:::image type="content" source="images/web-activity-by-category600.png" alt-text="Aktywność w Internecie według karty kategorii" lightbox="images/web-activity-by-category600.png":::
 
 ### <a name="web-content-filtering--summary-card"></a>Karta podsumowania filtrowania zawartości sieci Web
 
 Na tej karcie jest wyświetlany rozkład prób zablokowania dostępu w poszczególnych nadrzędnych kategoriach zawartości sieci Web. Wybierz jeden z kolorowych pasków, aby wyświetlić więcej informacji na temat określonej nadrzędnej kategorii sieci Web.
 
-![Obraz karty podsumowania filtrowania zawartości sieci Web.](images/web-content-filtering-summary.png)
+:::image type="content" source="images/web-content-filtering-summary.png" alt-text="Karta podsumowania filtrowania zawartości sieci Web" lightbox="images/web-content-filtering-summary.png":::
 
 ### <a name="web-activity-summary-card"></a>Karta podsumowania aktywności w sieci Web
 
 Ta karta zawiera łączną liczbę żądań zawartości sieci Web we wszystkich adresach URL.
 
-![Obraz karty podsumowania aktywności w sieci Web.](images/web-activity-summary.png)
+:::image type="content" source="images/web-activity-summary.png" alt-text="Karta podsumowania aktywności w sieci Web" lightbox="images/web-activity-summary.png":::
 
 ### <a name="view-card-details"></a>Wyświetl szczegóły karty
 
 Aby uzyskać dostęp do szczegółów **raportu dla** każdej karty, wybierz wiersz tabeli lub kolorowy pasek na karcie. Strona szczegółów raportu dla każdej karty zawiera rozbudowane dane statystyczne dotyczące kategorii zawartości sieci Web, domen witryn sieci Web i grup urządzeń.
 
-![Obraz szczegółów raportu ochrony sieci Web.](images/web-protection-report-details.png)
+:::image type="content" source="images/web-protection-report-details.png" alt-text="Szczegóły raportu ochrony sieci Web" lightbox="images/web-protection-report-details.png":::
 
 - **Kategorie sieci Web**: Zawiera listę kategorii zawartości sieci Web, do których dostęp miały próby uzyskania dostępu w organizacji. Wybierz konkretną kategorię, aby otworzyć wysuwne podsumowanie.
 
@@ -256,7 +256,7 @@ Ochrona sieci obecnie nie obsługuje inspekcji SSL, co może powodować, że nie
 ## <a name="see-also"></a>Zobacz też
 
 - [Omówienie ochrony sieci Web](web-protection-overview.md)
-- [Ochrona przed zagrożeniami internetowymi](web-threat-protection.md)
-- [Monitorowanie zabezpieczeń sieci Web](web-protection-monitoring.md)
-- [Reagowanie na zagrożenia w sieci Web](web-protection-response.md)
+- [Ochrona przed zagrożeniami sieci Web](web-threat-protection.md)
+- [Monitoruj bezpieczeństwo sieci Web](web-protection-monitoring.md)
+- [Odpowiadaj na zagrożenia sieci Web](web-protection-response.md)
 - [Wymagania dotyczące ochrony sieci](web-content-filtering.md)

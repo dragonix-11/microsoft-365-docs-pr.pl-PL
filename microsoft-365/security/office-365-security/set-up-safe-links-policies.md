@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie zasad Sejf Linków w programie Microsoft Defender dla Office 365
+title: Konfigurowanie zasad Sejf linków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,40 +16,40 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: Administratorzy mogą dowiedzieć się, jak wyświetlać, tworzyć, modyfikować i usuwać Sejf Linki do stron internetowych oraz ustawienia linków Sejf linków globalnych w programie Microsoft Defender dla Office 365.
+description: Administratorzy mogą dowiedzieć się, jak wyświetlać, tworzyć, modyfikować i usuwać zasady linków Sejf oraz ustawienia linków globalnych Sejf w programie Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d4cbaccab3eca371114eec92fe1bf89b2c0e353
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7a352391a0acc595463a8363da315e8dda2758c1
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312981"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507236"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurowanie zasad Sejf Linków w programie Microsoft Defender dla Office 365
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurowanie zasad Sejf linków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Ten artykuł jest przeznaczony dla klientów biznesowych korzystających z programu [Microsoft Defender dla Office 365](defender-for-office-365.md). Jeśli jesteś użytkownikiem domowym i szukasz informacji na temat bezpiecznych linków w u Outlook, zobacz [Zaawansowane zabezpieczenia Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Ten artykuł jest przeznaczony dla klientów biznesowych, którzy [mają Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md). Jeśli jesteś użytkownikiem domowym i szukasz informacji na temat bezpiecznych linków w u Outlook, zobacz [Zaawansowane zabezpieczenia Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Sejf Linki w programie [Microsoft Defender dla programu Office 365](defender-for-office-365.md) zapewniają skanowanie adresów URL przychodzących wiadomości e-mail w przepływie poczty e-mail oraz czas weryfikacji kliknięciem adresów URL i linków w wiadomościach e-mail oraz w innych lokalizacjach. Aby uzyskać więcej informacji, zobacz [linki Sejf w programie Microsoft Defender dla Office 365](safe-links.md).
+Sejf w programie [Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md) umożliwia skanowanie adresów URL przychodzących wiadomości e-mail w przepływie poczty e-mail oraz czas weryfikacji kliknięciem adresów URL i linków w wiadomościach e-mail oraz w innych lokalizacjach. Aby uzyskać więcej informacji, [zobacz Sejf linków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](safe-links.md).
 
-Mimo że nie istnieją domyślne zasady Sejf, wstępnie ustawione zasady zabezpieczeń wbudowanej  ochrony zapewniają ochronę linków programu Sejf wszystkim adresatom (użytkownikom, którzy nie są zdefiniowani w niestandardowych zasadach Sejf Linków). Aby uzyskać więcej informacji, zobacz [Wstępnie ustawione zasady zabezpieczeń w usługach EOP i Microsoft Defender for Office 365](preset-security-policies.md).
+Mimo że nie istnieją domyślne zasady Sejf, wstępnie ustawione zasady zabezpieczeń wbudowanej  ochrony zapewniają ochronę linków programu Sejf wszystkim adresatom (użytkownikom, którzy nie są zdefiniowani w niestandardowych zasadach Sejf Linków). Aby uzyskać więcej informacji, zobacz [Wstępnie ustawione zasady zabezpieczeń w uchcie eOP i programie Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md).
 
 Możesz również użyć procedur określonej w tym artykule, aby utworzyć Sejf linków do witryn, które dotyczą konkretnych użytkowników, grup lub domen.
 
 > [!NOTE]
 >
-> Poza zasadami linków do stron **Sejf konfigurowane** są ustawienia globalne Sejf linków. Aby uzyskać instrukcje, [zobacz Konfigurowanie ustawień globalnych Sejf linków w programie Microsoft Defender dla Office 365](configure-global-settings-for-safe-links.md).
+> Poza zasadami linków do stron **Sejf konfigurowane** są ustawienia globalne Sejf linków. Aby uzyskać instrukcje, [zobacz Konfigurowanie ustawień globalnych Sejf linków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-global-settings-for-safe-links.md).
 >
-> Administratorzy powinni rozważyć różne ustawienia konfiguracji linków Sejf sieci. Jedną z dostępnych opcji jest uwzględnianie informacji umożliwiających identyfikację użytkownika w Sejf linków. Ta funkcja umożliwia *zespołom Security Ops* badanie potencjalnego naruszenia bezpieczeństwa użytkownika, podjęcia działań naprawczych i ograniczenia kosztownych naruszeń zabezpieczeń.
+> Administratorzy powinni rozważyć różne ustawienia konfiguracji linków Sejf sieci. Jedną z dostępnych opcji jest uwzględnianie informacji umożliwiających identyfikację użytkownika w Sejf linków. Ta funkcja umożliwia zespołom ds. zabezpieczeń (SecOps)badanie potencjalnych naruszeń użytkowników, działania naprawcze i ograniczanie kosztownych naruszeń zabezpieczeń.
 
-Zasady programu Sejf Links można skonfigurować w portalu usługi Microsoft 365 Defender lub w programie PowerShell (Exchange Online PowerShell dla uprawnionych organizacji Microsoft 365 ze skrzynkami pocztowymi w programie Exchange Online; autonomiczny program PowerShell usługi EOP dla organizacji bez Exchange Online, ale za pomocą programu Microsoft Defender Office 365 subskrypcji dodatków).
+Zasady programu Sejf Links można skonfigurować w portalu usługi Microsoft 365 Defender lub w programie PowerShell (Exchange Online PowerShell dla uprawnionych organizacji Microsoft 365 ze skrzynkami pocztowymi w programie Exchange Online; autonomiczny program PowerShell usługi EOP dla organizacji bez Exchange Online, ale z Ochrona usługi Office 365 w usłudze Microsoft Defender subskrypcji dodatków).
 
 Podstawowe elementy zasad grupy Sejf łącza:
 
@@ -78,14 +78,14 @@ W Exchange Online PowerShell lub autonomicznym programie PowerShell usługi EOP 
 
   > [!NOTE]
   >
-  > - Dodanie użytkowników do odpowiedniej Azure Active Directory głównej w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia w portalu Microsoft 365 Defender oraz uprawnienia do innych funkcji w  Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+  > - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia _w portalu usługi_ Microsoft 365 Defender oraz uprawnienia do innych funkcji w Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
   . - Grupa **ról Zarządzanie organizacją tylko** do odczytu w [programie Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) umożliwia również dostęp tylko do odczytu tej funkcji.
 
 - Aby uzyskać informacje o naszych zalecanych Sejf zasadach dotyczących linków, [zobacz Sejf ustawienia zasad linków](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 - Zezwalaj na zastosowanie nowych lub zaktualizowanych zasad do 6 godzin.
 
-- [Nowe funkcje są stale dodawane do programu Microsoft Defender dla Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). W związku z dodaniem nowych funkcji może być konieczne dostosowanie istniejących zasad Sejf linków.
+- [Nowe funkcje są stale dodawane do Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). W związku z dodaniem nowych funkcji może być konieczne dostosowanie istniejących zasad Sejf linków.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Tworzenie zasad Microsoft 365 Defender w portalu Sejf sieci Sejf
 
@@ -104,7 +104,7 @@ Utworzenie niestandardowych zasad Sejf linków w portalu usługi Microsoft 365 D
 
 4. Na **wyświetlonej stronie Użytkownicy i** domeny określ adresatów wewnętrznych, do których mają zastosowanie zasady (warunki adresata):
    - **Użytkownicy**: określone skrzynki pocztowe, użytkownicy poczty lub kontakty poczty w organizacji.
-   - **Grupy**: Określone grupy dystrybucyjne, grupy zabezpieczeń z obsługą poczty lub Microsoft 365 w organizacji.
+   - **Grupy**: Określone grupy dystrybucyjne, grupy zabezpieczeń z obsługą poczty Grupy Microsoft 365 organizacji.
    - **Domeny**: Wszyscy adresaci w określonych [zaakceptowanych domenach](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) w organizacji.
 
    Kliknij w odpowiednim polu, zacznij wpisywać wartość i wybierz odpowiednią wartość z wyników. Powtórz ten proces tyle razy, ile to konieczne. Aby usunąć istniejącą wartość, kliknij przycisk usuń. ![Ikona usuń.](../../media/m365-cc-sc-remove-selection-icon.png) obok tej wartości.
@@ -123,8 +123,8 @@ Utworzenie niestandardowych zasad Sejf linków w portalu usługi Microsoft 365 D
        - **Przed dostarczeniem** wiadomości poczekaj na ukończenie skanowania adresów URL: wybierz tę opcję, aby przed dostarczeniem wiadomości czekać na ukończenie skanowania adresu URL w czasie rzeczywistym.
      - **Stosowanie Sejf** do wiadomości e-mail wysyłanych w organizacji: wybierz tę opcję, aby zastosować zasady połączeń Sejf do wiadomości między nadawcami wewnętrznymi i adresatami wewnętrznymi.
    - **Wybierz akcję dla** nieznanych lub potencjalnie złośliwych adresów URL w programie Microsoft Teams: Wybierz  pozycję Wł Sejf, aby włączyć ochronę linków w Teams. Zwróć uwagę, że może to potrwać do 24 godzin.
-   - **Nie śledź kliknięć użytkownika**: Pozostaw to ustawienie niewyznane, aby włączyć śledzenie kliknięć adresów URL w wiadomościach e-mail przez użytkowników.
-   - **Nie zezwalaj użytkownikom na** klikanie w celu oryginalnego adresu URL: zaznacz tę opcję, aby zablokować użytkownikom możliwość klikania pierwotnego adresu URL na stronach [ostrzegawczych](safe-links.md#warning-pages-from-safe-links).
+   - **Śledź kliknięcia użytkowników**: pozostaw tę opcję zaznaczoną, aby umożliwić śledzenie kliknięć przez użytkownika adresów URL w wiadomościach e-mail.
+   - **Pozwól użytkownikom przejść do pierwotnego adresu URL**: Wyczyść tę opcję, aby zablokować użytkownikom możliwość klikania pierwotnego adresu URL na [stronach ostrzegawczych](safe-links.md#warning-pages-from-safe-links).
    - **Nie redaguj następujących adresów URL**: Zezwala na dostęp do określonych adresów URL, które w przeciwnym razie byłyby blokowane przez Sejf url.
 
      W polu wpisz adres URL lub wartość, a następnie kliknij przycisk **Dodaj**. Powtarzaj ten krok tyle razy, ile to konieczne.
@@ -254,7 +254,7 @@ Tworzenie zasad Sejf linków sieciowych w programie PowerShell jest procesem dwu
 Aby utworzyć zasady bezpiecznych linków, użyj poniższej składni:
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
 > [!NOTE]
@@ -270,11 +270,11 @@ W tym przykładzie są owane zasady bezpiecznych linków o nazwie Contoso All z 
 - Włącz skanowanie klikowanych adresów URL w czasie rzeczywistym, w tym klikane linki, które wskazują pliki.
 - Przed dostarczeniem wiadomości poczekaj na ukończenie skanowania adresów URL.
 - Włącz skanowanie adresów URL i ponowne pismo wiadomości wewnętrznych.
-- Śledź kliknięcia użytkowników związane z ochroną usługi Sejf Links (nie używamy parametru _DoNotTrackUserClicks_, $false wartość domyślna to $false, co oznacza śledzenie kliknięć użytkownika).
+- Śledź kliknięcia użytkowników związane z ochroną usługi Sejf (nie używamy parametru _TrackUserClicks_, a wartość domyślna to $true).
 - Nie zezwalaj użytkownikom na klikanie w celu oryginalnego adresu URL.
 
 ```PowerShell
-New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
+New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).
@@ -468,7 +468,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Aby sprawdzić, Sejf linki skanują wiadomości, sprawdź dostępną usługę Microsoft Defender dla Office 365 raportów. Aby uzyskać więcej informacji, zobacz Wyświetlanie raportów dotyczących usługi [Defender dla](view-reports-for-mdo.md) Office 365 [i Używanie Eksploratora w Microsoft 365 Defender sieci.](threat-explorer.md)
+Aby sprawdzić, Sejf linki skanują wiadomości, sprawdź dostępne Ochrona usługi Office 365 w usłudze Microsoft Defender raporty. Aby uzyskać więcej informacji, zobacz [Wyświetlanie](view-reports-for-mdo.md) raportów Ochrona usługi Office 365 w usłudze Defender i [Używanie Eksploratora w portalu Microsoft 365 Defender sieci.](threat-explorer.md)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Skąd wiadomo, że te procedury działały?
 

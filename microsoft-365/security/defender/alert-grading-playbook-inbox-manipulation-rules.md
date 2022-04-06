@@ -1,7 +1,7 @@
 ---
-title: Ocenianie alertów dotyczących podejrzanych reguł manipulowania skrzynką odbiorczą
-description: Ocenianie alertów w przypadku podejrzanych reguł manipulowania skrzynką odbiorczą w celu przejrzenia alertów i podjęcia zalecanych działań w celu podjęcia działań naprawczych po atakach i ochrony sieci.
-keywords: zdarzenia, alerty, badanie, analizowanie, odpowiedź, korelacja, atak, komputery, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, poczta e-mail, 365, microsoft, m365
+title: Klasyfikacja alertów dla reguł manipulowania podejrzaną skrzynką odbiorczą
+description: Klasyfikacja alertów dla reguł podejrzanej manipulacji skrzynką odbiorczą w celu przejrzenia alertów i podjęcia zalecanych działań w celu skorygowania ataku i ochrony sieci.
+keywords: zdarzenia, alerty, badanie, analizowanie, reagowanie, korelacja, atak, maszyny, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, poczta e-mail, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,123 +21,120 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 89d068feb5051a72e7592b7ea365b2e253e35115
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e663d02037633599b9dffc19e1ebbd174aa279e1
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325981"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663187"
 ---
-# <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>Ocenianie alertów dotyczących podejrzanych reguł manipulowania skrzynką odbiorczą
+# <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>Klasyfikacja alertów dla reguł manipulowania podejrzaną skrzynką odbiorczą
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 - Microsoft 365 Defender
 
-Zagrożenie może korzystać z naruszonych kont użytkowników do wielu złośliwych celów, takich jak czytanie wiadomości e-mail w skrzynce odbiorczej użytkownika, tworzenie reguł skrzynki odbiorczej w celu przesyłania dalej wiadomości e-mail na konta zewnętrzne, usuwanie śladów i wysyłanie wiadomości wyłudzających informacje. Złośliwe reguły skrzynki odbiorczej są typowe w przypadku biznesowych kampanii w celu naruszenia zabezpieczeń poczty e-mail i wyłudzania informacji, dlatego ważne jest, aby stale je monitorować. 
+Aktorzy zagrożeń mogą używać kont użytkowników, których zabezpieczenia zostały naruszone, do wielu złośliwych celów, w tym do odczytywania wiadomości e-mail w skrzynce odbiorczej użytkownika, tworzenia reguł skrzynki odbiorczej w celu przekazywania wiadomości e-mail do kont zewnętrznych, usuwania śladów i wysyłania wiadomości wyłudzających informacje. Złośliwe reguły skrzynki odbiorczej są powszechne podczas biznesowych naruszeń zabezpieczeń poczty e-mail i kampanii wyłudzania informacji i ważne jest, aby stale je monitorować.
 
-Ten podręcznik ułatwia badanie wszelkich zdarzeń związanych z podejrzanymi regułami manipulowania skrzynkami odbiorczymi skonfigurowanymi przez atakujących oraz działania zalecane w celu korygowania ataków i ochrony sieci użytkownika. Ten podręcznik jest dla zespołów ds. zabezpieczeń, w tym analityków SOC (Security Operations Center) i administratorów IT, którzy przeglądają, analizują i oceniają alerty. Możesz szybko oceniać alerty jako prawdziwe dodatnie (TP) lub false positive (TP) i podjąć zalecane działania dla alertów TP, aby rozwiązać ten atak. 
+Ten podręcznik pomaga zbadać wszelkie zdarzenia związane z podejrzanymi regułami manipulowania skrzynką odbiorczą skonfigurowanymi przez osoby atakujące i podjąć zalecane działania w celu skorygowania ataku i ochrony sieci. Ten podręcznik jest przeznaczony dla zespołów zabezpieczeń, w tym analityków centrum operacji zabezpieczeń (SOC) i administratorów IT, którzy przeglądają, badają i oceniają alerty. Alerty można szybko ocenić jako prawdziwie dodatnie (TP) lub fałszywie dodatnie (TP) i podjąć zalecane działania dla alertów TP w celu skorygowania ataku.
 
-Wyniki korzystania z tego podręcznika są takie:
+Wyniki korzystania z tego podręcznika to:
 
-- Zidentyfikowaliśmy alerty skojarzone z regułami manipulowania skrzynką odbiorczą jako złośliwe (TP) lub działania skojarzeń (FP).
+- Alerty skojarzone z regułami manipulowania skrzynką odbiorczą zostały zidentyfikowane jako złośliwe działania (TP) lub niegroźne (FP).
 
-  W przypadku złośliwego pliku usunięto reguły manipulowania złośliwymi skrzynkami odbiorczymi.
+  W przypadku złośliwego działania usunięto złośliwe reguły manipulowania skrzynką odbiorczą.
 
-- Jeśli wiadomości e-mail zostały przekazane na złośliwy adres e-mail, zostały wykonane odpowiednie czynności.
+- Podjęto niezbędne działania, jeśli wiadomości e-mail zostały przekazane na złośliwy adres e-mail.
 
 ## <a name="inbox-manipulation-rules"></a>Reguły manipulowania skrzynką odbiorczą
 
-Reguły skrzynki odbiorczej są ustawione tak, aby automatycznie zarządzać wiadomościami e-mail na podstawie wstępnie zdefiniowanych kryteriów. Możesz na przykład utworzyć regułę skrzynki odbiorczej w celu przenoszenia wszystkich wiadomości od menedżera do innego folderu lub przesyłania dalej odebranych wiadomości na inny adres e-mail.
+Reguły skrzynki odbiorczej są ustawiane tak, aby automatycznie zarządzały wiadomościami e-mail na podstawie wstępnie zdefiniowanych kryteriów. Możesz na przykład utworzyć regułę skrzynki odbiorczej, aby przenieść wszystkie komunikaty z menedżera do innego folderu lub przekazać wiadomości otrzymane na inny adres e-mail.
 
-### <a name="malicious-inbox-manipulation-rules"></a>Reguły manipulowania złośliwymi skrzynkami odbiorczymi
+### <a name="malicious-inbox-manipulation-rules"></a>Złośliwe reguły manipulowania skrzynką odbiorczą
 
-Atakujący mogą skonfigurować reguły wiadomości e-mail w celu ukrywania przychodzących wiadomości e-mail w naruszonej skrzynce pocztowej użytkownika w celu przesłania ich złośliwych działań przed użytkownikiem. Ponadto mogą ustawiać reguły w naruszonej skrzynce pocztowej użytkownika w celu usuwania wiadomości e-mail, przenoszenia wiadomości e-mail do innego mniej zauważalnego folderu (na przykład RSS) lub przesyłania poczty dalej na konto zewnętrzne. Niektóre reguły mogą przenosić wszystkie wiadomości e-mail do innego folderu i oznaczać je jako "przeczytane", natomiast niektóre reguły mogą przenosić tylko wiadomości zawierające określone słowa kluczowe w wiadomości e-mail lub temacie. 
+Osoby atakujące mogą skonfigurować reguły poczty e-mail, aby ukryć przychodzące wiadomości e-mail w skrzynce pocztowej użytkownika, których bezpieczeństwo zostało naruszone, aby ukryć złośliwe działania użytkownika. Mogą również ustawić reguły w skrzynce pocztowej użytkownika, których zabezpieczenia zostały naruszone, aby usuwać wiadomości e-mail, przenosić wiadomości e-mail do innego mniej zauważalnego folderu (takiego jak RSS) lub przekazywać wiadomości e-mail do konta zewnętrznego. Niektóre reguły mogą przenosić wszystkie wiadomości e-mail do innego folderu i oznaczać je jako "przeczytane", podczas gdy niektóre reguły mogą przenosić tylko wiadomości zawierające określone słowa kluczowe w wiadomości e-mail lub temacie.
 
-Na przykład regułę skrzynki odbiorczej można skonfigurować tak, aby między innymi wyszukiwała słowa kluczowe, takie jak "faktura", "wyłudzać", "nie odpowiadaj", "podejrzane wiadomości e-mail" lub "spam" i przenosić je na zewnętrzne konto e-mail. Atakujący mogą też rozpowszechniać spam, wiadomości e-mail służące do wyłudzania informacji lub złośliwe oprogramowanie, co może wymagać wykorzystania naruszonej skrzynki pocztowej użytkownika. 
+Na przykład regułę skrzynki odbiorczej można ustawić tak, aby wyszukiwała słowa kluczowe, takie jak "faktura", "phish", "nie odpowiadaj", "podejrzana wiadomość e-mail" lub "spam" między innymi, i przenosiła je na zewnętrzne konto e-mail. Osoby atakujące mogą również używać skrzynki pocztowej użytkownika, którego zabezpieczenia zostały naruszone, do rozpowszechniania spamu, wiadomości e-mail wyłudzających informacje lub złośliwego oprogramowania.
 
-## <a name="workflow"></a>Przepływ pracy
+## <a name="workflow"></a>Przepływu pracy
 
-Oto przepływ pracy do identyfikowania podejrzanych działań w ramach reguły manipulowania skrzynką odbiorczą.
+Oto przepływ pracy umożliwiający zidentyfikowanie podejrzanych działań reguł manipulowania skrzynką odbiorczą.
 
-:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png" alt-text="Przepływ pracy badania alertu dla reguł manipulowania skrzynką odbiorczą" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png":::
-
+:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png" alt-text="Przepływ pracy badania alertów dla reguł manipulowania skrzynką odbiorczą" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png":::
 
 ## <a name="investigation-steps"></a>Kroki badania
 
-Ta sekcja zawiera szczegółowe instrukcje dotyczące reagowania na incydenty, a także kroki zalecane w celu ochrony organizacji przed dalszymi atakami.
+Ta sekcja zawiera szczegółowe wskazówki krok po kroku dotyczące reagowania na zdarzenie i wykonania zalecanych kroków w celu ochrony organizacji przed dalszymi atakami.
 
-### <a name="1-review-the-alerts"></a>1. Przeglądanie alertów
+### <a name="1-review-the-alerts"></a>1. Przejrzyj alerty
 
 Oto przykład alertu reguły manipulowania skrzynką odbiorczą w kolejce alertów.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-queue.png" alt-text="Przykład reguły manipulowania skrzynką odbiorczą" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-queue.png":::
 
-Oto przykładowe szczegóły alertu, który został wyzwolony przez regułę manipulowania złośliwą skrzynką odbiorczą.
+Oto przykład szczegółów alertu, który został wyzwolony przez złośliwą regułę manipulowania skrzynką odbiorczą.
 
-:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-description.png" alt-text="Szczegóły alertu wyzwolone przez regułę manipulowania złośliwą skrzynką odbiorczą" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-description.png":::
+:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-description.png" alt-text="Szczegóły alertu, który został wyzwolony przez złośliwą regułę manipulowania skrzynką odbiorczą" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-description.png":::
 
+### <a name="2-investigate-inbox-manipulation-rule-parameters"></a>2. Badanie parametrów reguły manipulowania skrzynką odbiorczą
 
-### <a name="2-investigate-inbox-manipulation-rule-parameters"></a>2. Badanie parametrów reguły manipulowania skrzynką odbiorczą 
-
-Określ, czy reguły wyglądają podejrzanie, zgodnie z następującymi parametrami lub kryteriami reguły:
+Ustal, czy reguły wyglądają podejrzanie zgodnie z następującymi parametrami lub kryteriami reguły:
 
 - Słowa kluczowe
 
-   Atakujący może stosować regułę manipulowania wyłącznie do wiadomości e-mail z określonymi wyrazami. Te słowa kluczowe można znaleźć w pewnych atrybutach, takich jak: "BodyContainsWords", "SubjectContainsWords" lub "SubjectOrBodyContainsWords". 
+   Osoba atakująca może zastosować regułę manipulacji tylko do wiadomości e-mail zawierających określone słowa. Słowa kluczowe można znaleźć w niektórych atrybutach, takich jak: "BodyContainsWords", "SubjectContainsWords" lub "SubjectOrBodyContainsWords".
 
-   Jeśli istnieją filtry według słów kluczowych, sprawdź, czy słowa kluczowe wyglądają podejrzanie (typowe scenariusze to filtrowanie wiadomości e-mail związanych z działaniami atakujących, takimi jak "wyłudzy", "spam", "nie odpowiadaj".
+   Jeśli istnieją filtrowanie według słów kluczowych, sprawdź, czy słowa kluczowe wydają się podejrzane (typowe scenariusze to filtrowanie wiadomości e-mail związanych z działaniami osoby atakującej, takich jak "phish", "spam", "nie odpowiadaj" między innymi).
 
-   Jeśli filtr nie jest filtrowany, może być również podejrzany.
+   Jeśli nie ma żadnego filtru, może to być również podejrzane.
 
 - Folder docelowy
 
-   Aby uniknąć wykrywania zabezpieczeń, atakujący może przenieść te wiadomości do mniej zauważalnego folderu i oznaczać te wiadomości jako przeczytane (na przykład do folderu "RSS"). Jeśli atakujący stosuje akcje "MoveToFolder" i "MarkAsRead", sprawdź, czy folder docelowy jest w jakiś sposób powiązany ze słowami kluczowymi w  reguły, aby zdecydować, czy wydaje się podejrzany, czy nie. 
+   Aby uniknąć wykrywania zabezpieczeń, osoba atakująca może przenieść wiadomości e-mail do mniej zauważalnego folderu i oznaczyć wiadomości e-mail jako przeczytane (na przykład folder "RSS"). Jeśli osoba atakująca zastosuje akcję "MoveToFolder" i "MarkAsRead", sprawdź, czy folder docelowy jest w jakiś sposób powiązany ze słowami kluczowymi w regule, aby zdecydować, czy wydaje się to podejrzane.
 
 - Usuń wszystko
 
-   Niektórzy atakujący usuną tylko wszystkie przychodzące wiadomości e-mail, aby ukryć ich aktywność. Na ogół reguła "usuń wszystkie przychodzące wiadomości e-mail" bez filtrowania ich za pomocą słów kluczowych jest wskaźnikiem złośliwej aktywności. 
- 
-Oto przykład konfiguracji reguły "usuń wszystkie przychodzące wiadomości e-mail" (jak w przypadku rawEventData.Parameters) odpowiedniego dziennika zdarzeń. 
+   Niektórzy atakujący po prostu usunie wszystkie przychodzące wiadomości e-mail, aby ukryć swoją aktywność. Przeważnie reguła "usuń wszystkie przychodzące wiadomości e-mail" bez filtrowania ich za pomocą słów kluczowych jest wskaźnikiem złośliwego działania.
 
-:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png" alt-text="Przykład usuwania konfiguracji reguły wszystkich przychodzących wiadomości e-mail" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png":::
+Oto przykład konfiguracji reguły "usuń wszystkie przychodzące wiadomości e-mail" (jak pokazano w pliku RawEventData.Parameters) odpowiedniego dziennika zdarzeń.
 
+:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png" alt-text="Przykład konfiguracji reguły usuwania wszystkich przychodzących wiadomości e-mail" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png":::
 
-### <a name="3-investigate-the-ip-address"></a>3. Badanie adresu IP
+### <a name="3-investigate-the-ip-address"></a>3. Zbadaj adres IP
 
-Przejrzyj atrybuty adresu IP, dla których wystąpiło odpowiednie zdarzenie związane z tworzeniem reguł:
+Przejrzyj atrybuty adresu IP, który wykonał odpowiednie zdarzenie tworzenia reguły:
 
-- Wyszukaj inne podejrzane działania w chmurze pochodzące z tego samego adresu IP w dzierżawie. Podejrzane działanie może na przykład wymagać wielu nieudanych prób logowania. 
-- Czy ten użytkownik jest wspólnym i rozsądnym użytkownikiem u każdego z tych użytkowników?
+- Wyszukaj inne podejrzane działania w chmurze pochodzące z tego samego adresu IP w dzierżawie. Na przykład podejrzane działania mogą być wieloma nieudanymi próbami logowania.
+- Czy usługodawca jest typowy i rozsądny dla tego użytkownika?
 - Czy lokalizacja jest wspólna i rozsądna dla tego użytkownika?
 
-### <a name="4-investigate-suspicious-activity-by-the-user-prior-to-creating-the-rules"></a>4. Badanie podejrzanych działań przez użytkownika przed utworzeniem reguł
+### <a name="4-investigate-suspicious-activity-by-the-user-prior-to-creating-the-rules"></a>4. Badanie podejrzanych działań użytkownika przed utworzeniem reguł
 
-Możesz przeglądać wszystkie działania użytkowników przed ich utworzeniam, sprawdzać wskaźniki naruszenia i badać działania użytkowników, które wydają się podejrzane. 
+Możesz przejrzeć wszystkie działania użytkowników przed utworzeniem reguł, sprawdzić wskaźniki naruszenia zabezpieczeń i zbadać akcje użytkownika, które wydają się podejrzane.
 
-Na przykład w przypadku wielu nieudanych logowania sprawdź: 
+Na przykład w przypadku wielu nieudanych logowań sprawdź:
 
-- Aktywność logowania 
+- Działanie logowania
 
-   Sprawdź, czy działanie logowania przed utworzeniem reguły nie jest podejrzane. (common location /ISP/user-agent). 
+   Sprawdź, czy działanie logowania przed utworzeniem reguły nie jest podejrzane. (wspólna lokalizacja / usługodawca sieciowy / użytkownik-agent).
 
 - Alerty
 
-   Sprawdź, czy użytkownik otrzymał alerty przed utworzeniem reguł. Może to oznaczać, że konto użytkownika może zostać naruszone. Na przykład: niemożliwe alerty dotyczące podróży, kraj rzadko się powiodło, między innymi wiele nieudanych logowania).
+   Sprawdź, czy użytkownik otrzymał alerty przed utworzeniem reguł. Może to wskazywać, że konto użytkownika może zostać naruszone. Na przykład alert o niemożliwej podróży, rzadki kraj, wiele nieudanych logowań, między innymi).
 
-- Zdarzenie
+- Incydent
 
-   Sprawdź, czy alert jest skojarzony z innymi alertami wskazującymi na zdarzenie. Jeśli tak, sprawdź, czy zdarzenie zawiera inne prawdziwe alerty dodatnie.
+   Sprawdź, czy alert jest skojarzony z innymi alertami wskazującymi zdarzenie. Jeśli tak, sprawdź, czy zdarzenie zawiera inne prawdziwie dodatnie alerty.
 
-## <a name="advanced-hunting-queries"></a>Zaawansowane zapytania myśliwskie
+## <a name="advanced-hunting-queries"></a>Zaawansowane zapytania dotyczące wyszukiwania zagrożeń
 
-[Zaawansowane wyszukiwania](advanced-hunting-overview.md) to oparte na zapytaniach narzędzie do wyszukiwania zagrożeń, które umożliwia sprawdzanie zdarzeń w sieci w celu znalezienia wskaźników zagrożeń. 
+[Zaawansowane wyszukiwanie zagrożeń](advanced-hunting-overview.md) to narzędzie do wyszukiwania zagrożeń oparte na zapytaniach, które umożliwia inspekcję zdarzeń w sieci w celu zlokalizowania wskaźników zagrożeń.
 
-Użyj tego zapytania, aby znaleźć wszystkie nowe zdarzenia reguł skrzynki odbiorczej w określonym oknie czasu.  
+Użyj tego zapytania, aby znaleźć wszystkie nowe zdarzenia reguł skrzynki odbiorczej w określonym przedziale czasu.
 
 ```kusto
-let start_date = now(-10h); 
+let start_date = now(-10h);
 let end_date = now();
 let user_id = ""; // enter here the user id
 CloudAppEvents
@@ -148,54 +145,54 @@ CloudAppEvents
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```
 
-Kolumna *RuleConfig* (Konfiguracja reguły) będzie zawierała nową konfigurację reguły skrzynki odbiorczej.
+Kolumna *RuleConfig* zawiera nową konfigurację reguły skrzynki odbiorczej.
 
-Użyj tego zapytania, aby sprawdzić, czy jest to popularne dla użytkownika przez sprawdzenie historii użytkownika.
+Użyj tego zapytania, aby sprawdzić, czy usługodawca jest typowy dla użytkownika, przeglądając historię użytkownika.
 
 ```kusto
-let alert_date = now(); //enter alert date 
-let timeback = 60d; 
-let userid = ""; //enter here user id 
-CloudAppEvents 
-| where Timestamp between ((alert_date-timeback)..(alert_date-1h)) 
-| where AccountObjectId == userid 
-| make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by ISP 
+let alert_date = now(); //enter alert date
+let timeback = 60d;
+let userid = ""; //enter here user id
+CloudAppEvents
+| where Timestamp between ((alert_date-timeback)..(alert_date-1h))
+| where AccountObjectId == userid
+| make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by ISP
 ```
 
-Użyj tego zapytania, aby sprawdzić, czy kraj jest wspólny dla użytkownika, patrząc na historię użytkownika.
+Użyj tego zapytania, aby sprawdzić, czy kraj jest typowy dla użytkownika, przeglądając historię użytkownika.
 
 ```kusto
-let alert_date = now(); //enter alert date 
-let timeback = 60d; 
-let userid = ""; //enter here user id 
-CloudAppEvents 
-| where Timestamp between ((alert_date-timeback)..(alert_date-1h)) 
-| where AccountObjectId == userid 
+let alert_date = now(); //enter alert date
+let timeback = 60d;
+let userid = ""; //enter here user id
+CloudAppEvents
+| where Timestamp between ((alert_date-timeback)..(alert_date-1h))
+| where AccountObjectId == userid
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by CountryCode
 ```
 
-Użyj tego zapytania, aby sprawdzić, czy agent użytkownika jest często spotykany przez użytkownika, patrząc na historię użytkownika.
+Użyj tego zapytania, aby sprawdzić, czy agent użytkownika jest typowy dla użytkownika, przeglądając historię użytkownika.
 
 ```kusto
-let alert_date = now(); //enter alert date 
-let timeback = 60d; 
-let userid = ""; //enter here user id 
-CloudAppEvents 
-| where Timestamp between ((alert_date-timeback)..(alert_date-1h)) 
-| where AccountObjectId == userid 
+let alert_date = now(); //enter alert date
+let timeback = 60d;
+let userid = ""; //enter here user id
+CloudAppEvents
+| where Timestamp between ((alert_date-timeback)..(alert_date-1h))
+| where AccountObjectId == userid
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by UserAgent
 ```
 
 ## <a name="recommended-actions"></a>Zalecane akcje
 
 1. Wyłącz regułę złośliwej skrzynki odbiorczej.
-2. Zresetuj poświadczenia konta użytkownika. Możesz także sprawdzić, czy konto użytkownika zostało naruszone przez program Microsoft Defender for Cloud Apps, co jest sygnałem zabezpieczeń z usługi Azure Active Directory (Azure AD) Identity Protection.
-3. Wyszukaj inne złośliwe działania wykonywane przez konto użytkownika, na które wpływa to zagrożenie.
-4. Aby znaleźć inne naruszone konta użytkowników, sprawdź, czy w dzierżawie nie ma innych podejrzanych działań pochodzących od tego samego adresu IP lub od tego samego istego adresu internetowego.
+2. Zresetuj poświadczenia konta użytkownika. Możesz również sprawdzić, czy bezpieczeństwo konta użytkownika zostało naruszone za pomocą Microsoft Defender for Cloud Apps, który pobiera sygnały zabezpieczeń z usługi Azure Active Directory (Azure AD) Identity Protection.
+3. Wyszukaj inne złośliwe działania wykonywane przez konto użytkownika, na które ma to wpływ.
+4. Sprawdź inne podejrzane działania w dzierżawie, które pochodzą z tego samego adresu IP lub z tego samego usługodawcy sieciowego (jeśli usługodawca sieciowy jest nietypowy), aby znaleźć inne konta użytkowników, których bezpieczeństwo zostało naruszone.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Omówienie oceny alertów](alert-grading-playbooks.md)
-- [Podejrzane działania w zakresie przesyłania dalej poczty e-mail](alert-grading-playbook-email-forwarding.md)
-- [Podejrzane reguły przesyłania dalej skrzynki odbiorczej](alert-grading-playbook-inbox-forwarding-rules.md)
-- [Badanie alertów](investigate-alerts.md)
+- [Omówienie klasyfikacji alertów](alert-grading-playbooks.md)
+- [Podejrzane działania w zakresie przesyłania dalej wiadomości e-mail](alert-grading-playbook-email-forwarding.md)
+- [Podejrzane reguły przesyłania dalej w skrzynce odbiorczej](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Badaj alerty](investigate-alerts.md)

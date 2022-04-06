@@ -1,5 +1,5 @@
 ---
-title: Widoki kampanii w programie Microsoft Defender dla Office 365 plan
+title: Widoki kampanii w Ochrona usługi Office 365 w usłudze Microsoft Defender projektu
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,24 +17,24 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Dowiedz się więcej o widokach kampanii w programie Microsoft Defender dla Office 365.
+description: Informacje o widokach kampanii w programie Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8fad29e82b647d309d3b7046e36bd03b64de81d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: eb1e5e6e740accdb9c6102b798df8e60ab47dfff
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682554"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467736"
 ---
-# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Widoki kampanii w programie Microsoft Defender dla Office 365
+# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Widoki kampanii w ochronie usługi Office 365 w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md)
 
-Widoki kampanii to funkcja programu Microsoft Defender dla systemu Office 365 (plan 2) (na przykład Microsoft 365 E5 lub organizacji z dodatku Defender for Office 365 Plan 2). Widoki kampanii w portalu Microsoft 365 Defender identyfikują i kategoryzują ataki służące do wyłudzania informacji w usłudze. Widoki kampanii mogą ułatwić:
+Widoki kampanii to funkcja dostępna Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2 (na przykład w Microsoft 365 E5 lub organizacjach z dodatku Ochrona usługi Office 365 w usłudze Defender Plan 2). Widoki kampanii w portalu Microsoft 365 Defender identyfikują i kategoryzują ataki służące do wyłudzania informacji w usłudze. Widoki kampanii mogą ułatwić:
 
 - Efektywne badanie i reagowanie na ataki służące do wyłudzania informacji.
 - Lepsze zrozumienie zakresu ataków.
@@ -59,7 +59,7 @@ Kampania może być krótka lub może obejmować kilka dni, tygodni lub miesięc
 
 Widoki kampanii są dostępne w portalu Microsoft 365 Defender pod <https://security.microsoft.com> adresem Poczta **& kampanie** \> dotyczące współpracy lub bezpośrednio pod adresem .<https://security.microsoft.com/campaigns>
 
-![Omówienie kampanii w portalu Microsoft 365 Defender sieci.](../../media/campaigns-overview.png)
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="Omówienie kampanii w portalu Microsoft 365 Defender sieci" lightbox="../../media/campaigns-overview.png":::
 
 Do widoków kampanii możesz również uzyskać dostęp w:
 
@@ -93,7 +93,7 @@ Tabela poniżej wykresu na stronie przeglądu zawiera następujące informacje n
   - **Phish**: Jeśli jest dostępny, markę, która jest wyłuddawana w tej kampanii. Na przykład `Microsoft`, `365`, `Unknown``Outlook`, lub `DocuSign`.
   - **Złośliwe** oprogramowanie: Na przykład lub `HTML/PHISH` `HTML/<MalwareFamilyName>`.
 
-  Tam, gdzie jest to możliwe, markę, która jest wyłuddawana w ramach tej kampanii. Gdy wykrywanie jest sterowane przez program Defender Office 365 technologii, do wartości podtypu jest dodawany prefiks **ATP**-.
+  Tam, gdzie jest to możliwe, markę, która jest wyłuddawana w ramach tej kampanii. Gdy wykrywanie jest sterowane przez Ochrona usługi Office 365 w usłudze Defender, do wartości podtypu jest dodawany prefiks **ATP**-.
 
 - **Adresaci**: liczba użytkowników, do których kierowano w ramach tej kampanii.
 
@@ -113,7 +113,7 @@ Karta **Pochodzenie kampanii** pokazuje źródła wiadomości na mapie świata.
 
 W górnej części strony **Kampanii znajduje** się kilka ustawień filtrów i zapytań, które ułatwiają znajdowanie i odizolowanie określonych kampanii.
 
-![Filtry kampanii.](../../media/campaign-filters-and-settings.png)
+:::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="Filtry kampanii" lightbox="../../media/campaign-filters-and-settings.png":::
 
 Najbardziej podstawowym filtrowaniem, które można wykonać, jest data/godzina rozpoczęcia i data/godzina zakończenia.
 
@@ -170,7 +170,7 @@ Po utworzeniu filtru podstawowego lub zaawansowanego można go zapisać przy **u
 
 Aby wyeksportować wykres lub listę kampanii, kliknij pozycję Eksportuj i wybierz pozycję **Eksportuj dane wykresu** lub **Eksportuj listę kampanii**.
 
-Jeśli masz subskrypcję programu Microsoft Defender for Endpoint, możesz kliknąć pozycję **MDE Ustawienia**, aby połączyć lub odłączyć informacje dotyczące kampanii za pomocą usługi Microsoft Defender for Endpoint. Aby uzyskać więcej informacji, zobacz [Integracja programu Microsoft Defender w celu Office 365 z programem Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md).
+Jeśli masz subskrypcję usługi Ochrona punktu końcowego w usłudze Microsoft Defender, możesz kliknąć pozycję **MdE Ustawienia**, aby połączyć lub odłączyć informacje dotyczące kampanii Ochrona punktu końcowego w usłudze Microsoft Defender. Aby uzyskać więcej informacji, zobacz [Integracja Ochrona usługi Office 365 w usłudze Microsoft Defender z Ochrona punktu końcowego w usłudze Microsoft Defender](integrate-office-365-ti-with-mde.md).
 
 ## <a name="campaign-details"></a>Szczegóły kampanii
 
@@ -192,7 +192,7 @@ U góry widoku szczegółów kampanii dostępne są następujące informacje o k
 - Data/godzina rozpoczęcia oraz filtry danych/godzin zakończenia dla przepływu kampanii zgodnie z opisem w następnej sekcji.
 - Interakcyjna oś czasu działań kampanii: Oś czasu pokazuje aktywność w całym okresie trwania kampanii. Możesz zatrzymać wskaźnik myszy na punktach danych na wykresie, aby wyświetlić liczbę wykrytych wiadomości.
 
-![Informacje dotyczące kampanii.](../../media/campaign-details-campaign-info.png)
+:::image type="content" source="../../media/campaign-details-campaign-info.png" alt-text="Informacje dotyczące kampanii" lightbox="../../media/campaign-details-campaign-info.png":::
 
 ### <a name="campaign-flow"></a>Przepływ kampanii
 
@@ -201,7 +201,7 @@ W środku widoku szczegółów kampanii ważne szczegóły dotyczące kampanii p
 > [!TIP]
 > Informacja wyświetlana na diagramie przepływu jest kontrolowana przez filtr zakresu dat na osi czasu zgodnie z opisem w poprzedniej sekcji.
 
-![Szczegóły kampanii, które nie zawierają kliknięć adresu URL użytkownika.](../../media/campaign-details-no-recipient-actions.png)
+:::image type="content" source="../../media/campaign-details-no-recipient-actions.png" alt-text="Szczegóły kampanii, które nie zawierają kliknięć adresu URL użytkownika" lightbox="../../media/campaign-details-no-recipient-actions.png":::
 
 Gdy najedziesz kursorem na poziomy pasek na diagramie, zobaczysz liczbę powiązanych wiadomości (na przykład wiadomości z określonego źródłowego adresu IP, wiadomości ze źródłowego adresu IP, używając określonej domeny nadawcy itp.).
 
@@ -222,7 +222,7 @@ Diagram zawiera następujące informacje:
   |**Blok dzierżawy**<sup>\*\*</sup>|`SFV:SKA`|Wiadomość została zablokowana przez filtrowanie spamu ze względu na ustawienia w zasadach ochrony przed spamem. Na przykład nadawca został na liście dozwolonych nadawców lub na liście domen dozwolonych.|
   |**Zezwalaj użytkownikom**<sup>\*</sup>|`SFV:SFE`|Wiadomość pominięta w filtrowaniu spamu, ponieważ nadawca był na liście Sejf nadawców.|
   |**Blokowanie użytkowników**<sup>\*\*</sup>|`SFV:BLK`|Wiadomość została zablokowana przez filtrowanie spamu, ponieważ nadawca był na liście zablokowanych nadawców użytkownika.|
-  |**ZAP**|n/a|[Automatyczne czyszczenie zerowe (ZAP)](zero-hour-auto-purge.md) przeniesiono dostarczoną wiadomość do folderu wiadomości-śmieci lub kwarantanny. Działanie konfiguruje się w zasadach [ochrony przed spamem](configure-your-spam-filter-policies.md).|
+  |**ZAP**|nie dotyczy|[Automatyczne czyszczenie zerowe (ZAP)](zero-hour-auto-purge.md) przeniesiono dostarczoną wiadomość do folderu wiadomości-śmieci lub kwarantanny. Działanie konfiguruje się w zasadach [ochrony przed spamem](configure-your-spam-filter-policies.md).|
 
   <sup>\*</sup> Przejrzyj zasady ochrony przed spamem, ponieważ dozwolona wiadomość prawdopodobnie zostałaby zablokowana przez usługę.
 
@@ -253,7 +253,7 @@ Jeśli użytkownik kliknął adres URL ładowania w wiadomości służącej do w
 - **Dozwolone**
 - **BlockPage**: Adresat kliknął adres URL ładowania, ale jego dostęp do złośliwej witryny sieci Web został zablokowany przez zasady usługi [Sejf Linki](safe-links.md) w Twojej organizacji.
 - **BlockPageOverride**: Adresat kliknął adres URL ładowania w wiadomości, ale Sejf Linki próbowały je zatrzymać, ale mógł zastąpić blok. Sprawdź zasady [Sejf sieci Web](set-up-safe-links-policies.md), aby zobaczyć, dlaczego użytkownicy mogą zastępować werdykt linków Sejf i kontynuować pracę ze złośliwą witryną sieci Web.
-- **PendingDetonationPage**: Sejf Załączniki w programie Microsoft Defender Office 365 są w trakcie otwierania i badanie adresu URL ładowania w środowisku komputera wirtualnego.
+- **PendingDetonationPage**: Sejf załączników w programie Ochrona usługi Office 365 w usłudze Microsoft Defender jest w trakcie otwierania i badanie adresu URL ładowania w środowisku komputera wirtualnego.
 - **PendingDetonationPageOverride**: Adresat mógł zastąpić proces detonacji ładowania i otworzyć adres URL bez oczekiwania na wyniki.
 
 ### <a name="tabs"></a>Karty

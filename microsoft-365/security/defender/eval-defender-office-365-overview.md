@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0fece71510237f086e6a6f499a9b6b8b76de2a0e
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 6acfec658ee7c104ae58974390ba39da8bc171f9
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500304"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569892"
 ---
 # <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>Krok nr 3. Włączanie i pilotaż Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -42,7 +42,7 @@ Aby włączyć i pilotaż programu Ochrona usługi Office 365 w usłudze Microso
 
 W poniższej tabeli opisano kroki na ilustracji.
 
-| Serial Number (Numer seryjny)|Krok  |Opis  |
+| Numer kroku | Link  |Opis  |
 |---------|---------|---------|
 |1|[Przegląd wymagań dotyczących architektury i kluczowych pojęć](eval-defender-office-365-architecture.md)    | Zrozum architekturę programu Defender Office i upewnij się, że Twoje Exchange Online spełnia wymagania wstępne dotyczące architektury.       |
 |2|[Włączanie środowiska oceny](eval-defender-office-365-enable-eval.md)     |   Postępuj zgodnie z instrukcjami, aby skonfigurować środowisko oceny.      |

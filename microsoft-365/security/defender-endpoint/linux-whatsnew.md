@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 45b5bbcc1268c1f425b914a3f8279fe8dcc583f2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 993820bace174d993ed81fafb7f1f3b1c7645d37
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569958"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500898"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Co nowego w systemie Ochrona punktu końcowego w usłudze Microsoft Defender Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="1016274-30122022162740"></a>101.62.74 (30.122022.16274.0)
 
@@ -46,7 +46,6 @@ ms.locfileid: "64569958"
 ## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
 
 - Narzędzie wiersza polecenia obsługuje teraz przywracanie plików poddanych kwarantannie do lokalizacji innej niż ta, w której plik został pierwotnie wykryty. Można to zrobić za pośrednictwem .`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`
-- Począwszy od tej wersji, ochronę sieci dla systemu Linux można oceniać na żądanie
 - Poprawki błędów
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)

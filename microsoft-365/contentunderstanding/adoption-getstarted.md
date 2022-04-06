@@ -1,8 +1,8 @@
 ---
-title: 'Wdrożenie usługi Microsoft SharePoint Syntex: wprowadzenie'
-description: Dowiedz się, jak używać i wdrażać SharePoint Syntex twojej organizacji, aby pomóc Ci w rozwiązywaniu problemów biznesowych.
-ms.author: samanro
-author: samanro
+title: Wprowadzenie wdrożenia aplikacji Microsoft SharePoint Syntex
+description: Dowiedz się, jak używać i wdrażać SharePoint Syntex w organizacji, aby ułatwić usprawnianie procesów biznesowych.
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.date: ''
 audience: admin
@@ -14,14 +14,14 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 172c0a681bc8e7c7867e4bcba1c75f94cfc12e60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 40af6061029785705d262f3b8c5134531e76885f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986311"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467648"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Wdrożenie usługi Microsoft SharePoint Syntex: wprowadzenie
+# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Wprowadzenie wdrożenia aplikacji Microsoft SharePoint Syntex
 
 Inteligentne usługi zawartości dostępne w programie SharePoint Syntex się z trzema częściami:
 
@@ -70,7 +70,7 @@ Skorzystaj z [przykładowych scenariuszy i używaj przypadków,](adoption-scenar
 
 Określ, kto w Twojej organizacji będzie tworzyć modele i zarządzać nimi. Mogą w to uczestniczyć następujące role.
 
-| SharePoint/Administrator wiedzy | Administrator platformy Power Platform | Menedżer wiedzy | Właściciel modelu |
+| SharePoint/Administrator wiedzy | Administrator platformy Power | Menedżer wiedzy | Właściciel modelu |
 |:-------|:-------|:-------|:-------|
 | AAD rola| AAD rola | AAD rola | Mistrzowie |
 | Konfigurowanie przetwarzania formularza | Konfigurowanie środowiska dataverse do przetwarzania formularzy | Zbieranie przypadków użycia | Zbieranie spraw użycia biznesowego |

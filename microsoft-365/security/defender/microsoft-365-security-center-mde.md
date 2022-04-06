@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: f50a6750c3f5cd39e68a39cf000ff60e4fec8ef2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: fa9833572a57e0ea81978f25a7d8d34db068109a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568699"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501118"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Ochrona punktu końcowego w usłudze Microsoft Defender w programie Microsoft 365 Defender
 
@@ -46,7 +46,7 @@ Na obrazie i w poniższej tabeli przedstawiono zmiany w nawigacji między Centru
 |---------|---------|
 | Pulpity nawigacyjne <ul><li>Operacje zabezpieczeń</li><li>Analiza zagrożeń</li></ul>  |Home <ul><li>Analiza zagrożeń</li></ul>   |
 | Zdarzenia | Alerty o & zdarzeniach |
-| Spisz urządzeń | Spisz urządzeń |
+| Spis urządzeń | Spis urządzeń |
 | Kolejka alertów | Alerty o & zdarzeniach |
 | Zautomatyzowane badania | Centrum akcji |
 | Zaawansowane wyszukiwanie zagrożeń | Goniące |
@@ -75,7 +75,7 @@ Ochrona punktu końcowego w usłudze Microsoft Defender w programie Microsoft 36
 >- Departament Obrony Stanów Zjednoczonych
 >- Wszystkie instytucje rządowe Stanów Zjednoczonych z licencjami komercyjnymi
 
-Spójrz na Microsoft 365 Defender .<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>
+Zobacz Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 
 Dowiedz się więcej o zaletach: [Omówienie funkcji Microsoft 365 Defender](microsoft-365-defender.md)
 
@@ -98,7 +98,7 @@ Ta tabela zawiera krótkie odwołanie do zmian między Centrum zabezpieczeń us�
 |---------|---------|
 |Wyszukiwanie   |  Pasek wyszukiwania znajduje się w górnej części strony. Sugestie są udostępniane podczas pisania. W programie Defender można wyszukiwać w następujących jednostkach: Endpoint (Punkt końcowy) i Defender for Identity (Tożsamość): <br><br> - **Urządzenia** — obsługiwane zarówno dla usługi Defender for Endpoint, jak i Defender for Identity. Możesz nawet używać operatorów wyszukiwania, na przykład za pomocą operatora "zawiera" w celu wyszukania części nazwy hosta. <br><br> - **Użytkownicy** — obsługiwana zarówno w przypadku usługi Defender for Endpoint, jak i Defender for Identity. <br><br> - **Pliki, adresy IP i adresy URL —** te same funkcje, które są dostępne w programie Defender for Endpoint. <br> UWAGA: *Wyszukiwania adresów IP i URL są zgodne z dokładnym dopasowaniem i nie są wyświetlane na stronie wyników wyszukiwania — prowadzą bezpośrednio do strony encji.  <br><br> - **Program tvm** — te same funkcje, które są dostępne w programie Defender dla punktu końcowego (luki w zabezpieczeniach, oprogramowaniu i zaleceniach). <br><br>  Strona rozszerzonych wyników wyszukiwania scentralizować wyniki ze wszystkich jednostek.  |
 |[Pulpit nawigacyjny](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  To jest pulpit nawigacyjny operacji zabezpieczeń. Zapoznaj się z omówieniem ile aktywnych alertów zostało wyzwolono, które urządzenia są zagrożenia, którzy użytkownicy są zagrożenia, oraz poziomu ważności dla alertów, urządzeń i użytkowników. Możesz również sprawdzić, czy w jakimkolwiek urządzeniu nie ma problemów z czujnikiem, ogólną kondycją usługi i w jaki sposób wykryto wszelkie nierozpoznane alerty. |
-|Spisz urządzeń | Brak zmian. |
+|Spis urządzeń | Brak zmian. |
 |[Zarządzanie lukami w zabezpieczeniach](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Nazwa została skrócona, aby zmieściła się w okienku nawigacji. Jest on taki sam jak sekcja Zarządzanie zagrożeniami i lukami, ze wszystkimi stronami poniżej.     |
 | Partnerzy i interfejsy API | Brak zmian. |
 | Oceny & samouczków    |     Nowe funkcje testowania i nauki.     |

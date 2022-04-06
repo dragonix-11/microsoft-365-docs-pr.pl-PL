@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Zasady przechowywania skutecznie kontrolują zawartość generną przez użytkowników za pomocą wiadomości e-mail, dokumentów i konwersacji. Zachowaj to, co chcesz, i pozbądź się tego, czego nie chcesz.
-ms.openlocfilehash: 94388a375c3c50d97e696637ef6ef4ebefc96aab
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 5a57093ed4ecd5b87a62701e3c055888ed16a5ca
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715498"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595329"
 ---
 # <a name="create-and-configure-retention-policies"></a>Tworzenie i konfigurowanie zasad przechowywania
 
@@ -112,7 +112,7 @@ Aby uzyskać szczegółowe informacje techniczne dotyczące sposobu przechowywan
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Dodatkowe zasady przechowywania wymagane do obsługi Teams
 
-Teams to nie tylko czaty i wiadomości na kanałach. Jeśli masz zespoły utworzone w grupie programu Microsoft 365 (dawniej Office 365), musisz dodatkowo skonfigurować zasady przechowywania, które obejmują grupę Microsoft 365 przy użyciu lokalizacji grupy usługi Microsoft 365. Te zasady przechowywania mają zastosowanie do zawartości w skrzynce pocztowej, witrynie i plikach grupy.
+Teams to nie tylko czaty i wiadomości na kanałach. Jeśli masz zespoły utworzone w grupie programu Microsoft 365 (dawniej Office 365), musisz dodatkowo skonfigurować zasady przechowywania, które obejmują Microsoft 365 grupy przy użyciu **Grupy Microsoft 365 lokalizacji.** Te zasady przechowywania mają zastosowanie do zawartości w skrzynce pocztowej, witrynie i plikach grupy.
 
 Jeśli masz witryny zespołu, które nie są połączone z grupą programu Microsoft 365, potrzebujesz zasad przechowywania, które obejmują witryny SharePoint lub lokalizacje  kont programu **OneDrive**, aby przechowywać i usuwać pliki w Teams:
 
@@ -128,7 +128,7 @@ Zasady przechowywania stosowane do grup usługi Microsoft 365, witryn usługi Sh
 ### <a name="retention-policy-for-yammer-locations"></a>Zasady przechowywania Yammer lokalizacji
 
 > [!NOTE]
-> Zasady przechowywania Yammer są w wersji Preview i obecnie nie informują użytkowników o usunięciu wiadomości w wyniku zasad przechowywania.
+> Zasady przechowywania Yammer obecnie nie informują użytkowników o usunięciu wiadomości w wyniku zasad przechowywania.
 >
 > Aby można było korzystać z tej funkcji, Yammer musi być [trybem natywnym](/yammer/configure-your-yammer-network/overview-native-mode), a nie trybem hybrydowym.
 
@@ -143,11 +143,6 @@ Zasady przechowywania stosowane do grup usługi Microsoft 365, witryn usługi Sh
     - Jeśli wybrano **adaptacyjny**: Na  stronie Wybieranie zakresów i lokalizacji adaptacyjnych zasad wybierz pozycję  Dodaj zakresy i wybierz co najmniej jeden z utworzonych adaptacyjnych zakresów. Następnie wybierz jedną lub więcej lokalizacji. Lokalizacje, które można wybrać, zależą od [dodanych typów](retention-settings.md#configuration-information-for-adaptive-scopes) zakresów. Jeśli na przykład dodano tylko typ zakresu **użytkownika, można** wybrać wiadomości Yammer, ale nie Yammer **wiadomości społeczności**. 
     
     - Jeśli wybrano pozycję **Statyczny**:  Na stronie Wybierz lokalizacje do zastosowania zasad włącz jedną lub obie lokalizacje dla ustawienia Yammer: **Yammer** i wiadomości Yammer **użytkowników**.
-        
-        > [!IMPORTANT]
-        > Mimo że możesz utworzyć zasady przechowywania tylko dla Yammer wiadomości od użytkowników, zasady przechowywania dla tej lokalizacji mogą usuwać wiadomości społeczności z aplikacji Yammer dla wszystkich członków społeczności.
-        > 
-        > Jeśli wybierzesz tę opcję, a zasady przechowywania zostaną skonfigurowane do usuwania wiadomości od użytkowników, upewnij się, że rozumiesz ten wpływ. Aby uzyskać więcej informacji, zobacz [Jak działa przechowywanie w Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
         
         Domyślnie są zaznaczone wszystkie społeczności i użytkownicy, ale można to uściślić, określając społeczności i użytkowników do uwzględniania lub wykluczania.
         
@@ -165,9 +160,9 @@ Aby uzyskać więcej informacji o tym, jak działają zasady przechowywania Yamm
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Dodatkowe zasady przechowywania potrzebne do obsługi Yammer
 
-Yammer to nie tylko wiadomości od społeczności i wiadomości prywatnych. Aby zachowywać i usuwać wiadomości e-mail w sieci Yammer, skonfiguruj dodatkowe zasady przechowywania, które będą zawierały wszystkie grupy Microsoft 365 używane dla sieci Yammer, używając lokalizacji grupy usługi Microsoft 365. 
+Yammer to nie tylko wiadomości od społeczności i wiadomości prywatnych. Aby zachowywać i usuwać wiadomości e-mail w sieci Yammer, skonfiguruj dodatkowe zasady przechowywania, które obejmują wszystkie grupy usługi Microsoft 365 używane w sieci Yammer, przy użyciu **Grupy Microsoft 365 lokalizacji.** 
 
-Aby zachować i usunąć pliki przechowywane w Yammer, potrzebne są zasady przechowywania, które obejmują lokalizację grupy Microsoft 365 lub lokalizacje kont OneDrive konta: 
+Aby zachować i usunąć pliki przechowywane w u Yammer, potrzebne są zasady przechowywania, które obejmują lokalizację Grupy Microsoft 365 lub lokalizacji  kont OneDrive konta:
 
 - Pliki udostępniane w wiadomościach prywatnych są przechowywane OneDrive konta użytkownika, który udostępnił plik. 
 
@@ -200,7 +195,7 @@ Skorzystaj z następujących instrukcji dotyczących zasad przechowywania, któr
     Informacje specyficzne dla lokalizacji:
     - [Exchange e-mail i Exchange foldery publiczne](retention-settings.md#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [SharePoint witryny i konta OneDrive](retention-settings.md#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
-    - [Microsoft 365 grupy](retention-settings.md#configuration-information-for-microsoft-365-groups)
+    - [Grupy Microsoft 365](retention-settings.md#configuration-information-for-microsoft-365-groups)
     - [Skype dla firm](retention-settings.md#configuration-information-for-skype-for-business)
 
 5. W **przypadku opcji Zdecyduj, czy** chcesz zachować zawartość, usunąć ją, czy obie strony, określ opcje konfiguracji zachowywania i usuwania zawartości.
@@ -241,6 +236,6 @@ Po utworzeniu i zapisaniu zasad nie można zmieniać niektórych ustawień, taki
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli niektóre elementy dla grup usługi Exchange, SharePoint, OneDrive lub Microsoft 365 wymagają innych ustawień przechowywania niż skonfigurowane ustawienia zasad przechowywania, utwórz etykiety przechowywania dla tych [wyjątków](create-retention-labels-information-governance.md).
+Jeśli niektóre elementy dla aplikacji Exchange, SharePoint, OneDrive lub Grupy Microsoft 365 wymagają innych ustawień przechowywania niż skonfigurowane ustawienia zasad przechowywania, utwórz etykiety przechowywania dla tych [wyjątków](create-retention-labels-information-governance.md).
 
 Jeśli jednak szukasz zarządzania cyklem życia dokumentów o wysokiej wartości w przypadku wymogów przechowywania dokumentacji biznesowej, prawnych lub prawnych, użyj planu ewidencji, aby utworzyć etykiety przechowywania i zarządzać [nimi](file-plan-manager.md).

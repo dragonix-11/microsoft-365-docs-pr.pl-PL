@@ -19,12 +19,12 @@ ms.collection:
 description: Jakie są najlepsze rozwiązania dotyczące usługi Exchange Online Protection (EOP) i programu Defender w zakresie Office 365 zabezpieczeń? Jakie są bieżące zalecenia dotyczące ochrony standardowej? Czego należy używać, aby być bardziej rygorystycznym? Jakie dodatkowe dodatki otrzymasz, jeśli korzystasz również z programu Defender dla Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66d221b422236c6818ebb146babc0cc90eab1206
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 078fbe60b18c06b46c4da0935fce3c4ad867908b
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "63015759"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683718"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Zalecane ustawienia usług EOP i Microsoft Defender w Office 365 zabezpieczeń
 
@@ -56,10 +56,6 @@ Funkcje ochrony przed spamem, ochrony przed złośliwym oprogramowaniem i przed 
 
 Aby utworzyć i skonfigurować zasady ochrony przed spamem, zobacz Konfigurowanie zasad ochrony [przed spamem w u usługi EOP](configure-your-spam-filter-policies.md).
 
-<br>
-
-****
-
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
 |**Próg masowej poczty e-mail & właściwości spamu**|||||
@@ -85,15 +81,10 @@ Aby utworzyć i skonfigurować zasady ochrony przed spamem, zobacz Konfigurowani
 |Dozwolone domeny nadawców <p> _AllowedSenderDomains_|Brak|Brak|Brak|Dodawanie domen do listy dozwolonych nadawców to bardzo zły pomysł. Atakujący będą mogli wysyłać Ci wiadomości e-mail, które w przeciwnym razie zostaną odfiltrowane. <p> Użyj szczegółowych [](learn-about-spoof-intelligence.md) informacji o analizie fałszowania i listy zablokowanych[/](tenant-allow-block-list.md)zezwalających na dostęp do dzierżawy, aby przejrzeć wszystkich nadawców, którzy podszywają się pod adresy e-mail nadawców w domenach poczty e-mail Twojej organizacji lub podszywają się pod adresy e-mail nadawców w domenach zewnętrznych.|
 |Zablokowani nadawcy <p> _BlockedSenders_|Brak|Brak|Brak||
 |Zablokowane domeny nadawcy <p> _BlockedSenderDomains_|Brak|Brak|Brak||
-|
 
 #### <a name="asf-settings-in-anti-spam-policies"></a>Ustawienia asf w zasadach ochrony przed spamem
 
 W tabeli w tej sekcji opisano ustawienia zaawansowanego filtru spamu (ASF, Advanced Spam Filter) dostępne w zasadach ochrony przed spamem. Wszystkie te ustawienia są Wyłączone **zarówno dla** poziomów **standardowych,** **jak i ścisłych** . Aby uzyskać więcej informacji o ustawieniach asf, zobacz Zaawansowane ustawienia filtru [spamu (ASF) w uciekaniu poczty e-mail](advanced-spam-filtering-asf-options.md).
-
-<br>
-
-****
 
 |Nazwa funkcji zabezpieczeń|Komentowanie|
 |---|---|
@@ -113,7 +104,6 @@ W tabeli w tej sekcji opisano ustawienia zaawansowanego filtru spamu (ASF, Advan
 |**Trudno nie można przefiltrować identyfikatora** nadawcy (_MarkAsSpamFromAddressAuthFail_)||
 |**Backscatter** (_MarkAsSpamNdrBackscatter_)||
 |**Tryb testowy** (_TestModeAction_)|W przypadku ustawień asf,  które obsługują akcję Testuj, możesz skonfigurować akcję trybu testowania na wartość **Brak, Dodaj** domyślny tekst **nagłówka X** lub Wyślij wiadomość **UDW** (`None`, `AddXHeader`lub ).`BccMessage` Aby uzyskać więcej informacji, zobacz [Włączanie, wyłączanie i testowanie ustawień asf](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
-|
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Ustawienia zasad spamu ruchu wychodzącego eOP
 
@@ -124,10 +114,6 @@ Aby uzyskać więcej informacji o domyślnych limitach wysyłania w usłudze, zo
 > [!NOTE]
 > Zasady spamu wychodzącego nie są częścią standardowych ani ściśle wstępnie ustawionych zasad zabezpieczeń. Wartości **Standardowe** i **Ścisłe** wskazują nasze **wartości zalecane** w domyślnych zasadach spamu wychodzącego lub niestandardowych niestandardowych zasadach, które tworzysz.
 
-<br>
-
-****
-
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
 |**Ustawianie limitu wiadomości zewnętrznych** <p> _RecipientLimitExternalPerHour_|0|500|400|Wartość domyślna 0 oznacza używanie wartości domyślnych usługi.|
@@ -137,15 +123,10 @@ Aby uzyskać więcej informacji o domyślnych limitach wysyłania w usłudze, zo
 |**Reguły automatycznego przesyłania dalej** <p> _AutoForwardingMode_|**Automatyczne — sterowane przez system** <p> `Automatic`|**Automatyczne — sterowane przez system** <p> `Automatic`|**Automatyczne — sterowane przez system** <p> `Automatic`|
 |**Wysyłanie kopii wiadomości wychodzących, które przekraczają te limity, do tych użytkowników i grup** <p> _BccSuspi dpiOutboundMail_ <p> _UDWSuspipitrwałaOutboundAdditionalRecipients_|Nie wybrano <p> `$false` <p> Puste|Nie wybrano <p> `$false` <p> Puste|Nie wybrano <p> `$false` <p> Puste|Nie mamy konkretnych zaleceń dla tego ustawienia. <p> To ustawienie działa tylko w domyślnych zasadach spamu wychodzącego. Nie działa on w niestandardowych, niestandardowych zasadach spamu wychodzących, które tworzysz.|
 |**Powiadamianie tych użytkowników i grup w przypadku zablokowania nadawcy z powodu wysyłania spamu wychodzącego** <p> _NotifyOutboundSpam_ <p> _NotifyOutboundSpamRecipients_|Nie wybrano <p> `$false` <p> Puste|Nie wybrano <p> `$false` <p> Puste|Nie wybrano <p> `$false` <p> Puste|Domyślne zasady [alertów](../../compliance/alert-policies.md) o  nazwie Użytkownik z ograniczonymi możliwościami wysyłania wiadomości e-mail już wysyłają powiadomienia e-mail do członków grupy **TenantAdmins** **(** administratorzy globalni), gdy użytkownicy zostaną zablokowani ze względu na przekroczenie limitów określonych w zasadach. **Zdecydowanie zalecamy korzystanie z zasad alertów** zamiast tego ustawienia w zasadach spamu ruchu wychodzącego do powiadamiania administratorów i innych użytkowników. Aby uzyskać instrukcje, [zobacz Weryfikowanie ustawień alertów dla użytkowników z ograniczeniami](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).|
-|
 
 ### <a name="eop-anti-malware-policy-settings"></a>Ustawienia zasad ochrony przed złośliwym oprogramowaniem firmy EOP
 
 Aby tworzyć i konfigurować zasady ochrony przed złośliwym oprogramowaniem, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w uciek usługi EOP](configure-anti-malware-policies.md).
-
-<br>
-
-****
 
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
@@ -171,15 +152,10 @@ Aby tworzyć i konfigurować zasady ochrony przed złośliwym oprogramowaniem, z
 |**Dostosowywanie powiadomień dotyczących wiadomości od nadawców zewnętrznych**||||Te ustawienia są używane tylko wtedy, gdy jest zaznaczona opcja Powiadamiaj nadawców zewnętrznych,  gdy wiadomości są poddane kwarantannie jako złośliwe **oprogramowanie lub** Powiadom administratora o niedostarczanych wiadomościach od nadawców zewnętrznych.|
 |**Temat** <p> _CustomExternalSubject_|Puste <p> `$null`|Puste <p> `$null`|Puste <p> `$null`||
 |**Komunikat** <p> _CustomExternalBody_|Puste <p> `$null`|Puste <p> `$null`|Puste <p> `$null`||
-|
 
 ### <a name="eop-anti-phishing-policy-settings"></a>Ustawienia zasad ochrony przed wyłudzaniem informacji w uchcie EOP
 
 Aby uzyskać więcej informacji o tych ustawieniach, zobacz [Fałsz ustawienia](set-up-anti-phishing-policies.md#spoof-settings). Aby skonfigurować te ustawienia, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w u usługi EOP](configure-anti-phishing-policies-eop.md).
-
-<br>
-
-****
 
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
@@ -190,7 +166,6 @@ Aby uzyskać więcej informacji o tych ustawieniach, zobacz [Fałsz ustawienia](
 |**Pokazywanie pierwszego kontaktu porada dotycząca bezpieczeństwa** <p> _EnableFirstContactSafetyTips_|Nie wybrano <p> `$false`|Nie wybrano <p> `$false`|Nie wybrano <p> `$false`|Aby uzyskać więcej informacji, zobacz [Pierwszy kontakt porada dotycząca bezpieczeństwa](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
 |**Pokaż (?) dla nieuwierzytanych nadawców w celu fałszowania** <p> _EnableUnauthenticatedSender_|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Dodaje znak zapytania (?) do zdjęcia nadawcy w programie Outlook niezidentyfikowanych nadawców. Aby uzyskać więcej informacji, zobacz [Nieuwierzyta nadawca](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 |**Pokaż tag "za pośrednictwem"** <p> _EnableViaTag_|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Dodaje tag za pośrednictwem (chris@contoso.com przez fabrikam.com) do adresu Od, jeśli różni się on od domeny w podpisie DKIM lub adresu **MAIL FROM** . <p> Aby uzyskać więcej informacji, zobacz [Nieuwierzyta nadawca](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Program Microsoft Defender dla Office 365 zabezpieczeń
 
@@ -214,22 +189,13 @@ Klienci usługi EOP mogą uzyskać podstawowe funkcje ochrony przed wyłudzaniem
 
 Aby uzyskać więcej informacji na temat tego ustawienia, zobacz Zaawansowane progi wyłudzania informacji w zasadach ochrony przed wyłudzaniem informacji w [programie Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Aby skonfigurować to ustawienie, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Defender dla Office 365](configure-mdo-anti-phishing-policies.md).
 
-<br>
-
-****
-
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
 |**Próg wyłudzania informacji e-mail** <p> _PhishThresholdLevel_|**1 — Standardowy** <p> `1`|**2. Agresywne** <p> `2`|**3 . Bardziej agresywne** <p> `3`||
-|
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365
 
 Aby uzyskać więcej informacji na temat tych ustawień, zobacz Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji w [programie Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Aby skonfigurować te ustawienia, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Defender dla Office 365](configure-mdo-anti-phishing-policies.md).
-
-<br>
-
-****
 
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
@@ -248,17 +214,12 @@ Aby uzyskać więcej informacji na temat tych ustawień, zobacz Ustawienia perso
 |**Pokaż identyfikator personifikacji porada dotycząca bezpieczeństwa** <p> _EnableSimilarUsersSafetyTips_|Wyłączone <p> `$false`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`||
 |**Pokaż domenę personifikacji porada dotycząca bezpieczeństwa** <p> _EnableSimilarDomainsSafetyTips_|Wyłączone <p> `$false`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`||
 |**Pokaż nietypowe znaki personifikacji porada dotycząca bezpieczeństwa** <p> _EnableUnusualCharactersSafetyTips_|Wyłączone <p> `$false`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`||
-|
 
 #### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Ustawienia zasad ochrony przed wyłudzaniem informacji usługi EOP w programie Microsoft Defender dla Office 365
 
 Są to te same ustawienia, które są dostępne w ustawieniach zasad ochrony [przed spamem w u programie EOP](#eop-anti-spam-policy-settings).
 
 Ustawienia fałsz są powiązane ze sobą, ale ustawienie Pokaż pierwszy kontakt **porada dotycząca bezpieczeństwa** nie ma zależności od ustawień fałszowania.
-
-<br>
-
-****
 
 |Nazwa funkcji zabezpieczeń|Domyślne|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|---|
@@ -269,7 +230,6 @@ Ustawienia fałsz są powiązane ze sobą, ale ustawienie Pokaż pierwszy kontak
 |**Pokazywanie pierwszego kontaktu porada dotycząca bezpieczeństwa** <p> _EnableFirstContactSafetyTips_|Nie wybrano <p> `$false`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Aby uzyskać więcej informacji, zobacz [Pierwszy kontakt porada dotycząca bezpieczeństwa](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
 |**Pokaż (?) dla nieuwierzytanych nadawców w celu fałszowania** <p> _EnableUnauthenticatedSender_|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Dodaje znak zapytania (?) do zdjęcia nadawcy w programie Outlook niezidentyfikowanych nadawców. Aby uzyskać więcej informacji, zobacz [Nieuwierzyta nadawca](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 |**Pokaż tag "za pośrednictwem"** <p> _EnableViaTag_|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Dodaje tag za pośrednictwem (chris@contoso.com przez fabrikam.com) do adresu Od, jeśli różni się on od domeny w podpisie DKIM lub adresu **MAIL FROM** . <p> Aby uzyskać więcej informacji, zobacz [Nieuwierzyta nadawca](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|
 
 ### <a name="safe-attachments-settings"></a>Sejf ustawienia załączników
 
@@ -288,16 +248,11 @@ Aby skonfigurować te ustawienia, zobacz Włączanie załączników wiadomości 
 
 W programie PowerShell możesz użyć polecenia cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) dla tych ustawień.
 
-<br>
-
-****
-
 |Nazwa funkcji zabezpieczeń|Domyślne|Wbudowana ochrona|Komentowanie|
 |---|:---:|:---:|---|
 |**Włącz defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Wyłączone <p> `$false`|Wł. <p> `$true`|Aby uniemożliwić użytkownikom pobieranie złośliwych plików, zobacz Używanie programu SharePoint Online PowerShell w celu uniemożliwienie użytkownikom [pobierania złośliwych plików](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
 |**Włączanie dokumentów Sejf dla Office klientów** <p> _EnableSafeDocs_|Wyłączone <p> `$false`|Wł. <p> `$true`|Ta funkcja jest dostępna i znacząca tylko w przypadku licencji, które nie są zawarte w programie Defender Office 365 (na przykład dla Microsoft 365 E5 lub Zabezpieczenia platformy Microsoft 365 E5). Aby uzyskać więcej informacji, [zobacz Sejf Dokumenty w programie Microsoft 365 E5](safe-docs.md).|
 |**Zezwalaj użytkownikom na klikanie w widoku chronionym, Sejf plik został oznaczony jako złośliwy** <p> _AllowSafeDocsOpen_|Wyłączone <p> `$false`|Wyłączone <p> `$false`|To ustawienie jest powiązane z Sejf dokumentów.|
-|
 
 #### <a name="safe-attachments-policy-settings"></a>Sejf zasad Załączniki
 
@@ -310,17 +265,12 @@ W programie PowerShell do tych ustawień są służące polecenia cmdlet [New-Sa
 >
 > Wartość **Domyślna w kolumnie** niestandardowej odwołuje się do wartości domyślnych w nowych Sejf tworzyć załączniki. Pozostałe kolumny wskazują (chyba że zaznaczono inaczej) wartości skonfigurowane w odpowiednich wstępnie ustawionych zasadach zabezpieczeń.
 
-<br>
-
-****
-
 |Nazwa funkcji zabezpieczeń|Domyślne w niestandardowym|Wbudowana ochrona|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|:---:|---|
 |**Sejf załączników odpowiedź z nieznanym złośliwym oprogramowaniem** <p> _Włączanie_ i _działanie_|**Wyłączone** <p> `-Enable $false` i `-Action Block`|**Blokuj** <p> `-Enable $true` i `-Action Block`|**Blokuj** <p> `-Enable $true` i `-Action Block`|**Blokuj** <p> `-Enable $true` i `-Action Block`|Gdy parametr _Enable_ $false, wartość parametru _Action_ nie ma znaczenia.|
 |**Zasady kwarantanny** (_tag kwarantanny_)|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Gdy tworzysz nowe zasady załączników Sejf, wartość pusta oznacza, że do definiowania funkcji historycznych dla wiadomości poddanych kwarantannie przez program Sejf Attachments (AdminOnlyAccessPolicy) są używane domyślne zasady kwarantanny. <p> Administratorzy mogą tworzyć i wybierać niestandardowe zasady kwarantanny definiujące więcej możliwości dla użytkowników. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).|
 |**Przekierowywanie załącznika z wykrytymi załącznikami** : **Włącz przekierowywanie** <p> _Przekierowywanie_ <p> _RedirectAddress (Przekierowywanie)_|Nie wybrano i nie podano żadnego adresu e-mail. <p> `-Redirect $false` <p> _RedirectAddress jest_ pusta (`$null`)|Nie wybrano i nie podano żadnego adresu e-mail. <p> `-Redirect $false` <p> _RedirectAddress jest_ pusta (`$null`)|Zaznaczono i określono adres e-mail. <p> `$true` <p> adres e-mail|Zaznaczono i określono adres e-mail. <p> `$true` <p> adres e-mail|Przekieruj wiadomości do administratora zabezpieczeń w celu ich przejrzenia. <p> **Uwaga**: To ustawienie nie jest skonfigurowane w zasadach zabezpieczeń **Standardowa****, Ścisła** ani Wbudowana ochrona. Wartości **Standardowe** i **Ścisłe** **wskazują nasze zalecane** wartości w nowych Sejf tworzyć załączniki.|
 |**Stosowanie odpowiedzi Sejf wykrywania załączników, jeśli skanowanie nie jest ukończone (limit czasu lub błędy)** <p> _ActionOnError_|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`|Zaznaczone <p> `$true`||
-|
 
 ### <a name="safe-links-settings"></a>Sejf ustawienia linków
 
@@ -339,17 +289,12 @@ Aby skonfigurować te ustawienia, zobacz [Konfigurowanie ustawień globalnych po
 
 W programie PowerShell możesz użyć polecenia cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) dla tych ustawień.
 
-<br>
-
-****
-
 |Nazwa funkcji zabezpieczeń|Domyślne|Wbudowana ochrona|Komentowanie|
 |---|:---:|:---:|---|
 |**Blokowanie następujących adresów URL** <p> _ExcludedUrls_|Puste <p> `$null`|Puste <p> `$null`|Nie mamy konkretnych zaleceń dla tego ustawienia. <p> Aby uzyskać więcej informacji, zobacz ["Blokowanie następujących adresów URL" w celu Sejf url](safe-links.md#block-the-following-urls-list-for-safe-links).
 |**Używanie Sejf w Office 365 aplikacji** <p> _EnableSafeLinksForO365Clients_|Wł. <p> `$true`|Wł. <p> `$true`|Używaj Sejf w obsługiwanych aplikacjach Office 365 i mobilnych (dla systemów iOS i Android). Aby uzyskać więcej informacji, [zobacz Sejf Ustawienia linków dla Office 365 aplikacji](safe-links.md#safe-links-settings-for-office-365-apps).|
 |**Nie śledź, gdy użytkownicy klikną chronione linki w Office 365 aplikacji** <p> _TrackClicks_|Wł. <p> `$false`|Wyłączone <p> `$true`|Wyłączenie tego ustawienia (ustawienie _śledzenia kliknięć_ `$true`na ) umożliwia śledzenie kliknięć użytkowników w obsługiwanych Office 365 aplikacjach.|
 |**Nie pozwól użytkownikom na kliknięcie w oryginalnym adresie URL w Office 365 aplikacjach** <p> _AllowClickThrough_|Wł. <p> `$false`|Wł. <p> `$false`|Włączenie tego ustawienia (ustawienie _opcji AllowClickThrough_ to `$false`) zapobiega kliknięciu pierwotnego adresu URL w obsługiwanych Office 365 aplikacjach.|
-|
 
 #### <a name="safe-links-policy-settings"></a>Sejf zasad Linków
 
@@ -361,10 +306,6 @@ W programie PowerShell do tych ustawień są służące polecenia cmdlet [New-Sa
 > Zgodnie z wcześniejszym opisem nie istnieją żadne domyślne zasady Sejf, ale wstępnie ustawione zasady zabezpieczeń dla Sejf Linki są przypisywane do wszystkich [ adresatów](preset-security-policies.md).
 >
 > Kolumna **Domyślna w kolumnie** niestandardowej odwołuje się do wartości domyślnych w nowych Sejf tworzyć linki. Pozostałe kolumny wskazują (chyba że zaznaczono inaczej) wartości skonfigurowane w odpowiednich wstępnie ustawionych zasadach zabezpieczeń.
-
-<br>
-
-****
 
 |Nazwa funkcji zabezpieczeń|Domyślne w niestandardowym|Wbudowana ochrona|Standard|Ścisłe|Komentowanie|
 |---|:---:|:---:|:---:|:---:|---|
@@ -381,7 +322,6 @@ W programie PowerShell do tych ustawień są służące polecenia cmdlet [New-Sa
 |**Nie omów następujących adresów URL** <p> _DoNotRewriteUrls_|Nie wybrano <p> puste|Nie wybrano <p> puste|Nie wybrano <p> puste|Nie wybrano <p> puste|Nie mamy konkretnych zaleceń dla tego ustawienia. Aby uzyskać więcej informacji, zobacz [listy "Nie](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) robisz ponownie następujących adresów URL" w zasadach dotyczących Sejf URL.|
 |**Powiadomienie**||||||
 |**Jak chcesz powiadomić użytkowników?**|**Używanie domyślnego tekstu powiadomień**|**Używanie domyślnego tekstu powiadomień**|**Używanie domyślnego tekstu powiadomień**|**Używanie domyślnego tekstu powiadomień**|Nie mamy konkretnych zaleceń dla tego ustawienia. <p> Możesz wybrać pozycję **Użyj niestandardowego tekstu powiadomień** (_Tekst Powiadomienia_ niestandardowego), aby wprowadzić niestandardowy tekst powiadomienia. Możesz również zaznaczyć **pole wyboru Użyj Microsoft Translator** do automatycznej lokalizacji (_użyj tekstuTranslatedNotificationText_), aby przetłumaczyć niestandardowy tekst powiadomienia na język użytkownika.
-|
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 

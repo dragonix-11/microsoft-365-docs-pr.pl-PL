@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do zgodności komunikacji
+title: Wprowadzenie do zgodności w komunikacji
 description: Skonfiguruj zasady zgodności komunikacji, aby skonfigurować komunikację użytkowników do przeglądu.
 f1.keywords:
 - NOCSH
@@ -21,14 +21,14 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2e14e523c9aa662afc0ee38572f8a19be6f851b5
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: d9d418cee35976e621c173b3563b04ee8bdce7ca
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009696"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595309"
 ---
-# <a name="get-started-with-communication-compliance"></a>Wprowadzenie do zgodności komunikacji
+# <a name="get-started-with-communication-compliance"></a>Wprowadzenie do zgodności w komunikacji
 
 Za pomocą zasad zgodności komunikacji możesz identyfikować komunikację użytkowników w celu weryfikacji przez wewnętrznych lub zewnętrznych recenzentów. Aby uzyskać więcej informacji na temat tego, jak zasady zgodności komunikacji mogą ułatwić monitorowanie komunikacji w organizacji[, zobacz Zasady](communication-compliance.md) zgodności komunikacji w Microsoft 365. Jeśli chcesz sprawdzić, jak firma Contoso szybko skonfigurowała zasady zgodności komunikacji w celu monitorowania nieodpowiedniej zawartości w korespondencji Microsoft Teams, Exchange Online i Yammer, zapoznaj się z analizą [przypadku.](communication-compliance-case-study.md)
 
@@ -36,14 +36,14 @@ Za pomocą zasad zgodności komunikacji możesz identyfikować komunikację uży
 
 Przed rozpoczęciem pracy ze zgodnością komunikacji należy potwierdzić Microsoft 365 [subskrypcji](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) usługi i wszelkich dodatków. Aby uzyskać dostęp do zgodności komunikacji i korzystać z nich, twoja organizacja musi mieć jedną z następujących subskrypcji lub dodatków:
 
-- Microsoft 365 E5/A5/G5 (płatna lub próbna)
-- Microsoft 365 E3/A3/G5 + Microsoft 365 E5 zgodności ze standardem Microsoft 365 E5/A5/G5
-- Microsoft 365 E3/A3/G5 + Microsoft 365 E5/A5/G5 zarządzanie ryzykiem niejawnego programu testów
+- Microsoft 365 E5/A5/F5/G5 (wersja płatna lub próbna)
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5 zgodności ze standardem Microsoft 365 E5/A5/F5/G5
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5/A5/F5/G5 Zarządzanie ryzykiem w ramach niejawnego programu testów
 - Office 365 Enterprise E5 (płatna lub próbna)
 - Office 365 A5 (płatna lub próbna)
 - Office 365 Enterprise E3 + Office 365 Advanced Compliance (nie jest już dostępna dla nowych subskrypcji, zobacz uwagę)
 
-Użytkownikom uwzględnionym w zasadach zgodności komunikacji należy przypisać jedną z powyższych licencji.
+Użytkownikom uwzględnionym w zasadach zgodności komunikacji należy przypisać jedną z powyższych licencji. Aby uzyskać więcej informacji na temat subskrypcji i licencjonowania, [Microsoft 365 wskazówki dotyczące zabezpieczeń & zgodnością](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 > [!IMPORTANT]
 > Zgodność komunikacji jest obecnie dostępna w dzierżawach hostowanych w regionach geograficznych i krajach obsługiwanych przez zależności usługi Azure. Aby sprawdzić, czy zgodność komunikacji jest obsługiwana przez Twoją organizację, zobacz Dostępność usługi [Azure dependency według kraju/regionu](/troubleshoot/azure/general/dependency-availability-by-country).
@@ -155,7 +155,7 @@ Skorzystaj z poniższego wykresu, aby ułatwić konfigurowanie grup w organizacj
 
 | **Członek zasad** | **Obsługiwane grupy** | **Nieobsługiwane grupy** |
 |:-----|:-----|:-----|
-|Nadzór nad użytkownikami <br> Wykluczeni użytkownicy | Grupy dystrybucyjne <br> Microsoft 365 grupy | Dynamiczne grupy dystrybucyjne <br> Zagnieżdżone grupy dystrybucyjne <br> Grupy zabezpieczeń z obsługą poczty <br> Microsoft 365 grup z członkostwem dynamicznym |
+|Nadzór nad użytkownikami <br> Wykluczeni użytkownicy | Grupy dystrybucyjne <br> Grupy Microsoft 365 | Dynamiczne grupy dystrybucyjne <br> Zagnieżdżone grupy dystrybucyjne <br> Grupy zabezpieczeń z obsługą poczty <br> Microsoft 365 grup z członkostwem dynamicznym |
 | Recenzentzy | Brak | Grupy dystrybucyjne <br> Dynamiczne grupy dystrybucyjne <br> Zagnieżdżone grupy dystrybucyjne <br> Grupy zabezpieczeń z obsługą poczty |
 
 Po przypisaniu grupy *dystrybucyjnej* do zasad zasady monitoruje wszystkie wiadomości e-mail i czaty Teams wiadomości od poszczególnych użytkowników *w grupie dystrybucyjnej*. Po przypisaniu grupy *Microsoft 365* w zasadach zasady monitoruje wszystkie wiadomości e-mail i czaty Teams wysyłane do grupy Microsoft 365*, *a* nie poszczególne wiadomości e-mail i czaty otrzymane przez poszczególnych członków grupy. Korzystanie z grup dystrybucyjnych w zasadach zgodności komunikacji jest zalecane, aby poszczególne wiadomości e-mail i Teams czaty od poszczególnych użytkowników są automatycznie monitorowane.
@@ -194,7 +194,7 @@ Aby zarządzać nadzorowanych użytkowników w dużych organizacjach przedsiębi
 Aby uzyskać więcej informacji na temat konfigurowania grup, zobacz:
 
 - [Tworzenie grup dystrybucyjnych i zarządzanie nimi](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Omówienie grup Microsoft 365 grupy](/office365/admin/create-groups/office-365-groups)
+- [Omówienie Grupy Microsoft 365](/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Krok 4 (opcjonalnie): sprawdzanie, czy Yammer jest w trybie natywnym
 

@@ -535,8 +535,6 @@
               href: dlp-chrome-get-started.md
             - name: Wprowadzenie do pulpitu nawigacyjnego alertu ochrony przed utratą danych
               href: dlp-alerts-dashboard-get-started.md
-            - name: Wprowadzenie do zasad ochrony przed utratą danych dla Power BI (wersja zapoznawcza)
-              href: dlp-powerbi-get-started.md
         - name: Korzystaj z DLP
           items:
             - name: DLP i Microsoft Teams

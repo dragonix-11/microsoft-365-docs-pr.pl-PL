@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 3057e66352b9bd658ddd4958986cbefd61e4e187
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 6effe1ffefaf7faeb90258163c539cdddcec2679
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682950"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570002"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Zalecenia dotyczące zasad dotyczące zabezpieczania SharePoint witryn i plików
 
-W tym artykule opisano sposób wdrażania zalecanych zasad dostępu do urządzeń i tożsamości bez zaufania w celu ochrony SharePoint i OneDrive dla Firm. Te wskazówki są opierane na [wspólnych zasadach dostępu do tożsamości i urządzeń](identity-access-policies.md).
+W tym artykule opisano, jak wdrożyć zalecane zasady Zero Trust tożsamości i dostępu do urządzeń w celu ochrony SharePoint i OneDrive dla Firm. Te wskazówki są opierane na [wspólnych zasadach dostępu do tożsamości i urządzeń](identity-access-policies.md).
 
 Zalecenia te są oparte na trzech różnych warstwach zabezpieczeń i ochrony dla plików SharePoint, które można stosować w zależności od stopnia szczegółowości Twoich **potrzeb: punktu** początkowego **,** przedsiębiorstwa i wyspecjalizowanego **zabezpieczeń**. Możesz dowiedzieć się więcej o tych warstwach zabezpieczeń i zalecanych systemach operacyjnych klientów, do których odwołujemy się w [omówieniem](microsoft-365-policies-configurations.md).
 
@@ -38,7 +38,7 @@ Oprócz wdrażania tych wskazówek pamiętaj o skonfigurowaniu witryn SharePoint
 
 Aby chronić pliki w SharePoint i OneDrive, na poniższym diagramie pokazano zasady, które należy aktualizować na przykładach typowych zasad dostępu do urządzeń i tożsamości.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="Podsumowanie aktualizacji zasad w celu ochrony dostępu do SharePoint." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="Podsumowanie aktualizacji zasad w celu ochrony dostępu do SharePoint" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
 
 Jeśli podczas tworzenia SharePoint uwzględniono zasady wspólne, wystarczy utworzyć tylko nowe zasady. W przypadku zasad dostępu warunkowego SharePoint także OneDrive.
 
@@ -60,7 +60,7 @@ W poniższej tabeli wymieniono zasady, które należy przejrzeć i zaktualizowa�
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Stosowanie ograniczeń wymuszonych przez aplikację w SharePoint
 
-Jeśli implementujesz kontrolki dostępu w programie SharePoint, musisz utworzyć te zasady dostępu warunkowego w usłudze Azure AD, aby skonfigurować zasady konfigurowane w usłudze Azure AD SharePoint. Te zasady dotyczą wszystkich użytkowników, ale mają wpływ tylko na dostęp do witryn określanych przy użyciu programu PowerShell podczas tworzenia kontrolek dostępu w programie SharePoint.
+Jeśli w usłudze SharePoint implementuje się kontrolki dostępu, zasady dostępu warunkowego są tworzone w usłudze Azure AD w celu skonfigurowania zasad skonfigurowanych w usłudze SharePoint. Domyślnie te zasady dotyczą wszystkich użytkowników, ale mają wpływ tylko na dostęp do witryn określanych przy użyciu programu PowerShell podczas tworzenia kontrolek dostępu w programie SharePoint. Zasady można też określić w zakresie dla konkretnych użytkowników, grup lub witryn.
 
 Aby skonfigurować te zasady, zobacz "Blokowanie lub ograniczanie dostępu do określonych SharePoint witryn lub kont OneDrive" w tece Kontrolowanie dostępu z [](/sharepoint/control-access-from-unmanaged-devices)urządzeń niezawiąanych.
 
@@ -79,7 +79,7 @@ Ważne jest, aby zrozumieć, że SharePoint witryn są zazwyczaj oparte na potrz
 
 Na poniższej ilustracji przedstawiono przykłady ochrony SharePoint dostępu do urządzeń w celu ochrony dostępu użytkownika do witryn.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="Przykład ochrony SharePoint dostępu do urządzenia." lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="Przykład ochrony witryn za SharePoint dostępu do urządzenia" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
 
 Jakub ma przypisane zasady dostępu warunkowego, ale może mieć dostęp do witryn SharePoint firmowej lub specjalistycznej ochrony zabezpieczeń.
 
@@ -89,7 +89,8 @@ Jakub ma przypisane zasady dostępu warunkowego, ale może mieć dostęp do witr
 
 ## <a name="next-step"></a>Następny krok
 
-![Krok 4. Zasady dotyczące aplikacji Microsoft 365 chmurze.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Krok 4. Zasady dotyczące aplikacji Microsoft 365 chmurze" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+
 
 Skonfiguruj zasady dostępu warunkowego dla:
 

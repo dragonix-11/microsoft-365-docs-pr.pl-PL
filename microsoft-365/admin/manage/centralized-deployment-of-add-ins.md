@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Określ, czy dzierżawa i użytkownicy spełniają wymagania, aby można było używać funkcji scentralizowanego wdrażania Office dodatków.
-ms.openlocfilehash: 4a64a9dd9a15c9bc877288aa9ac8fc62c40cee51
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 856e48db79627e0e736c05fe0062680017e24418
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019255"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64506972"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Określanie, czy scentralizowane wdrażanie dodatków działa w Twojej organizacji
 
@@ -36,9 +36,7 @@ Scentralizowane wdrażanie jest zalecaną dla większości klientów, najbogatsz
 Scentralizowane wdrażanie zapewnia następujące korzyści:
 
 - Administrator może wdrożyć i przypisać dodatek bezpośrednio do użytkownika, do wielu użytkowników za pośrednictwem grupy lub do wszystkich osób w organizacji (zobacz sekcję Wymagania administratora, aby uzyskać informacje).
-
 - Gdy zostanie uruchomiony odpowiedni Office, dodatek zostanie automatycznie pobrany. Jeśli dodatek obsługuje polecenia dodatku, automatycznie pojawi się na wstążce w Office aplikacji.
-
 - Dodatki nie są już wyświetlane dla użytkowników, jeśli administrator wyłączy lub usunie dodatek albo jeśli został on usunięty z programu Azure Active Directory lub z grupy, do których został przypisany.
 
 Scentralizowane wdrażanie obsługuje trzy platformy klasyczne, Windows komputerów Mac oraz aplikacje online Office komputerów Mac. Scentralizowane wdrażanie obsługuje również systemy iOS i Android (Outlook tylko dodatki dla urządzeń przenośnych).
@@ -92,7 +90,6 @@ Aby wdrożyć dodatek za pośrednictwem scentralizowanego wdrażania, musisz by�
 >
 > ![obraz](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
-
 ### <a name="centralized-deployment-compatibility-checker"></a>Sprawdzanie zgodności w ramach scentralizowanego wdrażania
 
 Za pomocą narzędzia sprawdzania zgodności funkcji Scentralizowane wdrażanie możesz sprawdzić, czy użytkownicy w Twojej dzierżawie są skonfigurowani do korzystania z funkcji Scentralizowane wdrażanie dla programów Word, Excel i PowerPoint. Narzędzie sprawdzania zgodności nie jest wymagane na potrzeby obsługi programu Outlook. Pobierz sprawdzanie [zgodności](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
@@ -107,28 +104,24 @@ Za pomocą narzędzia sprawdzania zgodności funkcji Scentralizowane wdrażanie 
    Import-Module O365CompatibilityChecker
    ```
 
-3. Uruchom polecenie **Invoke-CompatabilityCheck** :
+3. Uruchom polecenie **Invoke-CompatibilityCheck** :
 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   To polecenie monituje o  *_polecenie TenantDomain_* (na przykład *TailspinToysIncorporated.onmicrosoft).</span> com*) i  *_TenantAdmin_* (użyj poświadczeń administratora globalnego), a następnie zażąda zgody.
+
+   To polecenie wyświetla monit dla poświadczeń _TenantDomain_ (na przykład _TailspinToysIncorporated.onmicrosoft.com_) i _TenantAdmin_ (użyj poświadczeń administratora globalnego), a następnie żąda zgody.
 
    > [!NOTE]
-   > W zależności od liczby użytkowników w dzierżawie narzędzie sprawdzania może ukończyć pracę w ciągu kilku minut lub godzin. 
-  
+   > W zależności od liczby użytkowników w dzierżawie narzędzie sprawdzania może ukończyć pracę w ciągu kilku minut lub godzin.
+
 Gdy narzędzie zakończy pracę, utworzy plik wyjściowy w formacie CSV. Plik jest domyślnie zapisywany **w bieżącym katalogu** roboczym. Plik wyjściowy zawiera następujące informacje:
 
 - Nazwa użytkownika
-
 - Identyfikator użytkownika (adres e-mail użytkownika)
-
 - Gotowość do używania funkcji Scentralizowane wdrażanie  jeśli pozostałe punkty są prawdziwe
-
 - Office plan — plan Office licencji na
-
 - Aktywowany pakiet Office  jeśli pakiet Office został aktywowany
-
 - Obsługiwana skrzynka pocztowa  jeśli skrzynka pocztowa obsługuje protokół OAuth
 
 > [!NOTE]
@@ -147,7 +140,6 @@ Zapoznaj się z następującym przykładem, w którym do dodatku przypisano Anet
 
 ![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
-
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Określanie, czy grupa zawiera grupy zagnieżdżone
 
 Najłatwiejszym sposobem określenia, czy grupa zawiera grupy zagnieżdżone, jest wyświetlenie wizytówki grupy w programie Outlook. Jeśli w polu Do wiadomości e-mail  zostanie wprowadzeniu nazwy grupy, a następnie podczas jej rozpoznawania wybierzesz jej nazwę, będzie ona pokazywana, czy zawiera użytkowników lub grupy zagnieżdżone. W poniższym przykładzie karta **Członkowie** wizytówki grupy Test w programie Outlook nie zawiera użytkowników, ale zawiera dwie podgrupy.
@@ -158,16 +150,16 @@ Można także przeprowadzić wyszukiwanie odwrotnie, sprawdzając, czy dana grup
 
 ![Karta Członkostwo na Outlook wizytówki.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Możesz także użyć interfejsu API Graph w usłudze Azure Active Directory, aby uruchomić zapytanie w celu znalezienia listy grup należących do danej grupy. Aby uzyskać więcej informacji, zobacz [Operacje na grupach | Materiały referencyjne interfejsu API Graph](/previous-versions/azure/ad/graph/api/groups-operations).
+Możesz także użyć interfejsu API Graph w usłudze Azure Active Directory, aby uruchomić zapytanie w celu znalezienia listy grup należących do danej grupy. Aby uzyskać więcej informacji, zobacz [Operacje na grupach| interfejs Graph API odwołanie.](/previous-versions/azure/ad/graph/api/groups-operations)
 
 ### <a name="contacting-microsoft-for-support"></a>Kontaktowanie się z firmą Microsoft w celu uzyskania pomocy technicznej
 
 Jeśli u Ciebie lub u Twoich użytkowników wystąpią problemy podczas ładowania dodatku podczas korzystania z aplikacji sieci Web firmy Office (Word, Excel itp.), które zostały wdrożone w sposób scentralowany, może być konieczne skontaktowanie się z pomocą techniczną firmy Microsoft (dowiedz się, jak to [zrobić](../../business-video/get-help-support.md)). Podaj następujące informacje o swoim środowisku Microsoft 365 w bilecie pomocy technicznej.
 
-| Platforma | Informacje dotyczące debugowania |
-|:-----|:-----|
-|Pakiet Office | Dzienniki Charles/Fiddler  <br/>  Identyfikator dzierżawy ([dowiedz się, jak to zrobić](/onedrive/find-your-office-365-tenant-id))  <br/>  Identyfikator korelacji. Wyświetl źródło jednej ze stron pakietu Office i poszukaj wartości Identyfikator korelacji, a następnie wyślij ją do pomocy technicznej:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
-|Klienci rozbudowani (system Windows, komputery Mac) | Dzienniki Charles/Fiddler  <br/>  Numery kompilacji aplikacji klienckiej (najlepiej jako zrzut ekranu **z pliku/konta**) |
+|Platforma|Informacje dotyczące debugowania|
+|---|---|
+|Pakiet Office|Dzienniki Charles/Fiddler <br/> Identyfikator dzierżawy ([dowiedz się, jak to zrobić](/onedrive/find-your-office-365-tenant-id)) <br/> Identyfikator korelacji. Wyświetl źródło jednej ze stron pakietu Office i poszukaj wartości Identyfikator korelacji, a następnie wyślij ją do pomocy technicznej:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
+|Klienci rozbudowani (system Windows, komputery Mac)|Dzienniki Charles/Fiddler <br/> Numery kompilacji aplikacji klienckiej (najlepiej jako zrzut ekranu **z pliku/konta**)|
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
@@ -175,4 +167,3 @@ Jeśli u Ciebie lub u Twoich użytkowników wystąpią problemy podczas ładowan
 [Zarządzanie dodatki w centrum administracyjnym](manage-addins-in-the-admin-center.md) (artykuł)\
 [Często zadawane pytania dotyczące scentralizowanego](../manage/centralized-deployment-faq.yml) wdrażania (artykuł)\
 [Uaktualnianie Microsoft 365 dla firm do najnowszej wersji Office klienta](../setup/upgrade-users-to-latest-office-client.md) (artykuł)
- 

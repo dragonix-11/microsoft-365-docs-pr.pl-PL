@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 05e16a32fb21f682a756c32201a69c192d398184
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5a95980147c66fa8655f5c1b2ebe8adfff9e87c0
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321811"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501272"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Szczegóły i wyniki zautomatyzowanego badania
 
@@ -41,7 +41,7 @@ Dzięki Microsoft 365 Defender [po zakończeniu](m365d-autoir.md) automatycznego
 
 ## <a name="new-unified-investigation-page"></a>(NOWY) Strona ujednoliconego badania
 
-Strona badania została ostatnio zaktualizowana w celu dołączania informacji z różnych urządzeń, poczty e-mail i zawartości współpracy. Nowa, ujednolicona strona badania definiuje wspólny język i zapewnia ujednolicone środowisko dla automatycznego badania w programie [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) i [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md). Aby uzyskać dostęp do ujednoliconej strony badania, wybierz link na żółtym banerze, który będzie wyświetlony na:
+Strona badania została ostatnio zaktualizowana w celu dołączania informacji z różnych urządzeń, poczty e-mail i zawartości współpracy. Nowa, ujednolicona strona badania definiuje wspólny język i zapewnia ujednolicone środowisko dla automatycznego badania w różnych [Ochrona punktu końcowego w usłudze Microsoft Defender i](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) [Ochrona usługi Office 365 w usłudze Microsoft Defender](../office-365-security/defender-for-office-365.md). Aby uzyskać dostęp do ujednoliconej strony badania, wybierz link na żółtym banerze, który będzie wyświetlony na:
 
 - Dowolna strona badania w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Centrum Office 365 zabezpieczeń & zgodności</a>
 - Dowolna strona badania w Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))
@@ -89,23 +89,23 @@ Strona ze szczegółami zdarzenia umożliwia wyświetlenie szczegółowych infor
 
 Oto przykład.
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Przykład strony badania." lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Strona badania w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## <a name="investigation-details"></a>Szczegóły badania
 
 Widok szczegółów badania umożliwia wyświetlanie przeszłych, bieżących i oczekujących działań związanych z badaniem. Oto przykład.
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Przykład szczegółów badania." lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Strona szczegółów badania w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mtp-air-investdetails.png":::
 
 W widoku Szczegóły badania możesz wyświetlić informacje  na kartach Wykres **badania,** Alerty **, Urządzenia****,** **Tożsamości****, Ustalenia** **klucza,** Encje **, Dziennik** i Akcje oczekujące opisane w poniższej tabeli.
 
 > [!NOTE]
-> Konkretne karty, które widzisz na stronie szczegółów badania, zależą od tego, co obejmuje Twoja subskrypcja. Jeśli na przykład Twoja subskrypcja nie zawiera programu Microsoft Defender for Office 365 Plan 2, nie zobaczysz karty **Skrzynki** pocztowe.
+> Konkretne karty, które widzisz na stronie szczegółów badania, zależą od tego, co obejmuje Twoja subskrypcja. Jeśli na przykład Twoja subskrypcja nie obejmuje subskrypcji Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2, nie zobaczysz karty **Skrzynki** pocztowe.
 
 | Tab | Opis |
 |:--------|:--------|
 | **Wykres badania** | Zapewnia wizualną reprezentację badania. Przedstawia znalezione jednostki i wyświetla znalezione zagrożenia oraz alerty oraz informacje o tym, czy jakieś działania oczekują na zatwierdzenie.<br/>Możesz wybrać element na wykresie, aby wyświetlić więcej szczegółów. Na przykład **wybranie ikony Dowód** przenosi do karty Dowód, gdzie  można zobaczyć wykryte jednostki i ich werdykty. |
-| **Alerty** | Wyświetla alerty skojarzone z badaniem. Alerty mogą pochodzić z funkcji ochrony przed zagrożeniami na urządzeniu użytkownika, w Office aplikacji Microsoft Defender dla aplikacji w chmurze i innych Microsoft 365 Defender funkcje.|
+| **Alerty** | Wyświetla alerty skojarzone z badaniem. Alerty mogą pochodzić z funkcji ochrony przed zagrożeniami na urządzeniach użytkowników, w Office, aplikacjach Microsoft Defender for Cloud Apps i innych Microsoft 365 Defender funkcjach.|
 | **Urządzenia** | Zawiera listę urządzeń uwzględnionych w śledztwie wraz z ich poziomem rozwiązywania problemów. (Poziomy rozwiązywania problemów odpowiadają [poziomowi automatyzacji grup urządzeń](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)). |
 | **Skrzynki pocztowe** |Zawiera listę skrzynek pocztowych, na które mają wpływ wykryte zagrożenia.  |
 | **Użytkownicy**  | Lista kont użytkowników, na które mają wpływ wykryte zagrożenia. |

@@ -1,5 +1,5 @@
 ---
-title: Reagowanie na urządzenie w programie Microsoft Defender dla punktu końcowego
+title: Akcje dotyczące odpowiedzi na urządzeniu w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender
 description: Wykonywanie akcji odpowiedzi na urządzeniu, takich jak odizolowanie urządzeń, zbieranie pakietu badania, zarządzanie tagami, uruchamianie skanowania audio/wideo i ograniczanie wykonywania aplikacji.
 keywords: odpowiadanie, odizolowanie, odizolowanie urządzenia, zbieranie pakietu badania, centrum akcji, ograniczanie, zarządzanie tagami, skanowanie audio/wideo, ograniczanie aplikacji
 ms.prod: m365-security
@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00347aabe38e4e74374f0b96d189051ebb56af3b
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: f1fa77f33988893967e71b82cc81059429e41d55
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016003"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501294"
 ---
 # <a name="take-response-actions-on-a-device"></a>Akcje dotyczące odpowiedzi na urządzeniu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender dla Firm](/microsoft-365/security/defender-business/mdb-overview)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
@@ -45,6 +46,7 @@ Akcje odpowiedzi są uruchamiane wzdłuż górnej części strony określonego u
 - Centrum akcji
 
 [![Obraz akcji odpowiedzi.](images/response-actions.png)](images/response-actions.png#lightbox)
+
 
  Strony urządzeń można znaleźć w dowolnym z następujących widoków:
 
@@ -97,11 +99,11 @@ Alternatywny sposób:
 
 1. Wybierz **pozycję Centrum** akcji w sekcji akcji odpowiedzi na stronie urządzenia.
 
-    ![Obraz przycisku Centrum akcji.](images/action-center-package-collection.png)
+   :::image type="content" source="images/action-center-package-collection.png" alt-text="Opcja Centrum akcji" lightbox="images/action-center-package-collection.png":::
 
 2. W wysuwaniu Centrum akcji wybierz pozycję **Pakiet kolekcji dostępny do** pobrania pliku zip.
 
-    ![Obraz przycisku pobierania pakietu.](images/collect-package.png)
+   :::image type="content" source="images/collect-package.png" alt-text="Opcja pobierania pakietu" lightbox="images/collect-package.png":::
 
 Pakiet zawiera następujące foldery:
 
@@ -137,7 +139,7 @@ W ramach procesu badania lub odpowiedzi możesz zdalnie zainicjować skanowanie 
 
 Po wybraniu opcji **Uruchom skanowanie antywirusowe** wybierz typ skanowania, który chcesz uruchomić (szybkie lub pełne) i dodaj komentarz przed potwierdzeniem skanowania.
 
-![Obraz powiadomienia w celu wybrania szybkiego skanowania lub pełnego skanowania i dodania komentarza.](images/run-antivirus.png)
+:::image type="content" source="images/run-antivirus.png" alt-text="Powiadomienie z zaznaczeniem opcji szybkiego skanowania lub pełnego skanowania i dodania komentarza" lightbox="images/run-antivirus.png":::
 
 Centrum akcji będzie wyświetlać informacje o skanowaniach, a oś czasu urządzenia będzie zawierać nowe zdarzenie, odzwierciedlające, że akcja skanowania została przesłana na urządzeniu. Alerty audio/wideo programu Microsoft Defender będą odzwierciedlać wszystkie wykrywanie powierzchni podczas skanowania.
 
@@ -153,7 +155,7 @@ Centrum akcji będzie wyświetlać informacje o skanowaniach, a oś czasu urząd
 Oprócz zawierają one ataki przez zatrzymanie złośliwych procesów, można także zablokować urządzenie i uniemożliwić uruchamianie kolejnych prób potencjalnie złośliwych programów.
 
 >[!IMPORTANT]
-> - Ta akcja jest dostępna dla urządzeń Windows 10 wersji 1709 lub nowszej, Windows 11 i Windows Server 2016. 
+> - Ta akcja jest dostępna dla urządzeń Windows 10, wersja 1709 lub nowsza, Windows 11 i Windows Server 2016. 
 > - Ta funkcja jest dostępna, jeśli Twoja organizacja używa Program antywirusowy Microsoft Defender.
 > - Ta akcja musi spełniać wymagania dotyczące Windows Defender zasad integralności kontroli aplikacji i podpisywania. Aby uzyskać więcej informacji, zobacz [Formaty zasad integralności kodu i podpisywanie](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
@@ -164,13 +166,13 @@ Aby ograniczyć uruchamianie aplikacji, stosowane są zasady integralności kodu
 
 Po wybraniu opcji **Ogranicz wykonywanie aplikacji** na stronie urządzenia wpisz komentarz i wybierz pozycję **Potwierdź**. Centrum akcji będzie wyświetlać informacje o skanowaniach, a oś czasu urządzenia będzie zawierać nowe zdarzenie.
 
-![Obraz powiadomienia o ograniczeniach aplikacji.](images/restrict-app-execution.png)
+:::image type="content" source="images/restrict-app-execution.png" alt-text="Powiadomienie dotyczące ograniczeń aplikacji" lightbox="images/restrict-app-execution.png":::
 
 ### <a name="notification-on-device-user"></a>Powiadomienie dla użytkownika urządzenia
 
 Jeśli aplikacja jest ograniczona, zostanie wyświetlone następujące powiadomienie informujące użytkownika o ograniczeniu uruchamiania aplikacji:
 
-![Obraz ograniczenia aplikacji.](images/atp-app-restriction.png)
+:::image type="content" source="images/atp-app-restriction.png" alt-text="Komunikat ograniczenia aplikacji" lightbox="images/atp-app-restriction.png":::
 
 >[!NOTE]
 >Powiadomienie nie jest dostępne w Windows Server 2016 i Windows Server 2012 R2.
@@ -181,9 +183,9 @@ W zależności od wagi ataków i wrażliwości urządzenia może być konieczne 
 
 >[!IMPORTANT]
 >- Ta akcja nie jest obecnie obsługiwana w systemach macOS i Linux. Użyj funkcji odpowiedzi na żywo, aby uruchomić akcję. Aby uzyskać więcej informacji na temat odpowiedzi na żywo, zobacz [Badanie jednostek na urządzeniach przy użyciu funkcji odpowiedzi na żywo.](live-response.md)
->- Pełna izolacji jest dostępna dla urządzeń w Windows 10, wersjach 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 i Windows Server 2022.
->- Izolacji selektywnej jest dostępna dla urządzeń Windows 10 urządzeniach w wersji 1709 lub nowszej i Windows 11.
->- W przypadku odizolowania urządzenia dozwolone są tylko niektóre procesy i miejsca docelowe. Dlatego urządzenia, które znajdują się za pełnym szyfrowaniem VPN, nie będą mogły uzyskać dostępu do usługi Microsoft Defender for Endpoint w chmurze, gdy urządzenie jest odizolowane. Zalecamy korzystanie z sieci VPN rozdzielaowej dla programu Microsoft Defender dla punktu końcowego i Program antywirusowy Microsoft Defender opartego na chmurze ruchu związanego z ochroną.
+>- Pełna izolacji jest dostępna dla urządzeń Windows 10 w wersjach 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 i Windows Server 2022.
+>- Izolacji selektywnej jest dostępna dla urządzeń Windows 10, wersji 1709 lub nowszej i Windows 11.
+>- W przypadku odizolowania urządzenia dozwolone są tylko niektóre procesy i miejsca docelowe. Dlatego urządzenia, które znajdują się za pełnym szyfrowaniem VPN, nie będą mogły uzyskać dostępu do usługi Ochrona punktu końcowego w usłudze Microsoft Defender chmurze po odizolowanym urządzeniu. Zalecamy używanie sieci VPN z rozdzielanym rozdzielanym rozdzielaniem na Ochrona punktu końcowego w usłudze Microsoft Defender sieci Program antywirusowy Microsoft Defender związanych z ochroną chmury.
 
 Ta funkcja izolacji urządzenia odłącza naruszone urządzenie z sieci, zachowując łączność z usługą Defender for Endpoint, która nadal monitoruje urządzenie.
 
@@ -194,7 +196,7 @@ Na Windows 10, w wersji 1709 lub nowszej, będziesz mieć większą kontrolę na
 
 Po wybraniu opcji **Wyizoluj urządzenie** na stronie urządzenia wpisz komentarz i wybierz pozycję **Potwierdź**. Centrum akcji będzie wyświetlać informacje o skanowaniach, a oś czasu urządzenia będzie zawierać nowe zdarzenie.
 
-![Obraz urządzenia wyizoluj.](images/isolate-device.png)
+:::image type="content" source="images/isolate-device.png" alt-text="Strona szczegółów odizolowanych urządzeń" lightbox="images/isolate-device.png":::
 
 > [!NOTE]
 > Urządzenie pozostanie połączone z usługą Defender for Endpoint, nawet jeśli jest odizolowane od sieci. Jeśli wybrano opcję włączenia funkcji Outlook i Skype dla firm komunikacji, będzie można komunikować się z użytkownikiem, gdy urządzenie jest odizolowane.
@@ -203,7 +205,7 @@ Po wybraniu opcji **Wyizoluj urządzenie** na stronie urządzenia wpisz komentar
 
 Gdy urządzenie jest wyizolowane, jest wyświetlane następujące powiadomienie informujące użytkownika, że urządzenie jest odizolowane od sieci:
 
-![Obraz brak połączenia sieciowego.](images/atp-notification-isolate.png)
+:::image type="content" source="images/atp-notification-isolate.png" alt-text="Brak komunikatu o połączeniu sieciowym" lightbox="images/atp-notification-isolate.png":::
 
 ## <a name="consult-a-threat-expert"></a>Skonsultuj się z ekspertem ds. zagrożeń
 
@@ -222,10 +224,11 @@ Centrum **akcji** zawiera informacje o akcjach, które zostały wykonane na urz�
 
 Wyświetlane są również wszystkie inne powiązane szczegóły, na przykład data/godzina przesłania, przesyłający użytkownik i jeśli działanie zakończyło się powodzeniem lub niepowodzeniem.
 
-![Obraz centrum akcji z informacjami.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="Centrum akcji z informacjami" lightbox="images/action-center-details.png":::
+
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Akcje odpowiedzi dotyczące pliku](respond-file-alerts.md)
-- [Ręczne działania w odpowiedzi w programie Microsoft Defender dla planu punktu końcowego 1](defender-endpoint-plan-1.md#manual-response-actions)
+- [Ręczne akcje odpowiedzi w ramach Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [Nieścisłości raportu](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

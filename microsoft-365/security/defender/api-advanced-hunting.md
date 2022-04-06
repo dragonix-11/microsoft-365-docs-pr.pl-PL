@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 94ce63f30b0016a920fdca60dd10b486922ffa32
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 05957fcf7cf2b3b03fbc757fc8b21e67156b285a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63010372"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500832"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender zaawansowanego interfejsu API łowiectwo
 
@@ -61,8 +61,8 @@ Jedno z następujących uprawnień jest wymagane do wywołania zaawansowanego in
 
 Typ uprawnień | Uprawnienie | Nazwa wyświetlana uprawnień
 -|-|-
-Aplikacja | Advanced Zygmki.Read.All | Uruchamianie zapytań zaawansowanych
-Delegowane (konto służbowe) | Advanced Zygmki.Odczyt | Uruchamianie zapytań zaawansowanych
+Aplikacja | AdvancedQuery.Read.All| Uruchamianie zapytań zaawansowanych
+Delegowane (konto służbowe) | AdvancedQuery.Read | Uruchamianie zapytań zaawansowanych
 
 >[!Note]
 > W przypadku uzyskiwania tokenu przy użyciu poświadczeń użytkownika:

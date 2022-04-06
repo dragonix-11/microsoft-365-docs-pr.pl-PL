@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 33961088105e838add3634024bb85807a6550eb7
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: d8524715ad0e450671faeaeb0714992e297a02df
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450734"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595191"
 ---
 # <a name="communication-compliance-policies"></a>Zasady zgodności komunikacji
 
@@ -81,6 +81,32 @@ Aby skopiować zasady i utworzyć nowe zasady, wykonaj następujące czynności:
 2. Wybierz **przycisk kopiuj** pasek poleceń zasad na pasku poleceń lub wybierz polecenie Kopiuj **zasady** z menu akcji zasad.
 3. W **okienku Kopiowanie** zasad możesz zaakceptować domyślną nazwę zasad w polu **Nazwa** zasad lub zmienić nazwę zasad. Nazwa zasad dla nowych zasad nie może być taka sama jak istniejąca, aktywna lub dezaktywowana zasada. Wypełnij pole **Opis** zgodnie z potrzebami.
 4. Jeśli nie potrzebujesz dalszego dostosowywania zasad, wybierz pozycję Kopiuj **zasady** , aby ukończyć proces. Jeśli chcesz zaktualizować konfigurację nowych zasad, wybierz pozycję **Dostosuj zasady**. Zostanie uruchomiony kreator zasad ułatwiający aktualizowanie i dostosowywanie nowych zasad.
+
+## <a name="user-reported-messages-policy"></a>Zasady wiadomości zgłoszonych przez użytkowników
+
+W ramach wielowarstwowej obrony w celu wykrywania i korygowania nieodpowiednich wiadomości w organizacji można uzupełnić zasady zgodności komunikacji przy użyciu wiadomości zgłoszonych przez użytkowników w Microsoft Teams. Ta funkcja umożliwia użytkownikom w organizacji samodzielne zgłaszanie nieodpowiednich wiadomości, takich jak napastliwość lub język ojczysty, udostępnianie treści dla dorosłych oraz udostępnianie poufnych lub poufnych informacji, co pomaga pielęgnować bezpieczne i zgodne środowisko pracy.
+
+Domyślnie włączone w centrum administracyjnym usługi [Teams](/microsoftteams/manage-teams-in-modern-portal) opcja Zgłoś problem w wiadomościach  programu Teams umożliwia użytkownikom w organizacji przesyłanie nieodpowiednich wiadomości do przeglądu przez recenzentów zgodności komunikacji dla zasad. Te wiadomości są obsługiwane przez domyślne zasady systemowe, które obsługują raportowanie wiadomości w Teams, czatach grupowych i prywatnych.
+
+![Zgłoś problem w zakresie zgodności komunikacji.](../media/communication-compliance-report-a-concern-full-menu.png)
+
+Gdy użytkownik przesyła wiadomość czatu do Teams do przeglądu, jest kopiowana do zasad wiadomości zgłoszonych przez użytkownika. Zgłoszone wiadomości początkowo pozostają widoczne dla wszystkich członków czatu i nie ma żadnych powiadomień dla członków czatu ani osoby przesyłacej, że wiadomość została zgłoszone w czacie kanałowym, prywatnym lub grupowym. Użytkownik nie może zgłosić tej samej wiadomości więcej niż raz, a wiadomość pozostaje widoczna dla wszystkich użytkowników uwzględnionych w sesji czatu w procesie przeglądu zasad. 
+
+W trakcie procesu przeglądu recenzentzy zgodności komunikacji mogą wykonywać [wszystkie standardowe działania](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) naprawcze dotyczące wiadomości, w tym usuwanie wiadomości z Teams czatu. W zależności od sposobu działania naprawczego wiadomości nadawca i adresaci wiadomości będą widzieć różne [](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) powiadomienia w Teams czatach po przejrzeniu.
+
+![Zasady wiadomości zgłoszonych przez użytkowników do komunikacji.](../media/communication-compliance-user-reported-messages-policy.png)
+
+Wiadomości z czatów Teams zgłoszonych przez użytkowników są jedynymi wiadomościami przetwarzami przez zasady wiadomości zgłoszonymi przez użytkowników i można je modyfikować tylko przydzielonych recenzentów. Nie można edytować wszystkich innych właściwości zasad. Podczas tworzenia zasad początkowi recenzentzy przypisani do zasad są członkami grupy ról Administratorzy  zgodności komunikacji (jeśli przypisano do nich co najmniej jednego użytkownika) lub wszystkich członków grupy ról Administrator globalny organizacji. Kreator zasad to losowo wybrany użytkownik z grupy ról Administratorzy  zgodności komunikacji (jeśli jest wypełniany co najmniej jednym użytkownikiem) lub losowo wybrany użytkownik z grupy ról Administrator globalny organizacji.  
+
+Administratorzy powinni natychmiast przypisywać niestandardowych recenzentów do tych zasad, odpowiednio do potrzeb organizacji. Może to dotyczyć recenzentów, takich jak inspektor zgodności, inspektor ryzyka lub członkowie działu kadr. Aby dostosować recenzentów do wiadomości na czacie przesłanych jako wiadomości zgłoszone przez użytkowników, wykonaj następujące czynności:
+
+1. Zaloguj się [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com/) przy użyciu poświadczeń dla konta administratora w Twojej Microsoft 365 organizacji.
+2. Na stronie Centrum zgodności platformy Microsoft 365 do tematu **Zgodność komunikacji**.
+3. Na karcie **Zasady** wybierz zasady wiadomości *zgłoszonych przez* użytkownika i wybierz pozycję **Edytuj**.
+4. W **okienku Monitor wiadomości zgłoszonych przez** użytkowników przypisz recenzentów zasad. Recenzentzy muszą mieć skrzynki pocztowe hostowane w Exchange Online. Po dodaniu recenzentów do zasad automatycznie otrzymuje on wiadomość e-mail z powiadomieniem o przypisaniu do zasad i linkami do informacji o procesie sprawdzania.
+5. Wybierz **Zapisz**.
+
+Aby uniemożliwić użytkownikom raportowanie Teams *wiadomościach z* opcją Zgłoś problem, wyłącz opcję  raportowania dla użytkowników końcowych w centrum [Teams administracyjnego](/microsoftteams/manage-teams-in-modern-portal).
 
 ## <a name="storage-limit-notification-preview"></a>Storage powiadomienia o limitach (wersja zapoznawcza)
 

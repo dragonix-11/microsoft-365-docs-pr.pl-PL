@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ad8ae319be7515282dc51e9dd9a519660b5d91f6
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: 7f13c11f73d9ddbb9d074782a03fa408ef2c3ec6
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014822"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595241"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Pomoc techniczna dla administratorów Microsoft Managed Desktop
 
@@ -75,7 +75,10 @@ Możesz edytować szczegóły sprawy, na przykład zaktualizować kontakt podsta
 
 Po rozstrzygnięcie sprawy nie można jej już edytować. Jeśli żądanie zostało rozwiązane przez mniej niż 24 godziny, zamiast opcji **Edytuj** będzie dostępna opcja ponownej aktywacji. Po ponownej aktywacji możesz ponownie edytować żądanie.  
 
-### <a name="provide-feedback"></a>Opinie
+> [!NOTE]
+> Poziom ważności można ustawić tylko dla niektórych typów żądań pomocy technicznej. Jeśli po utworzeniu wniosku o pomoc techniczną nie możesz wybrać poziomu ważności, nie możesz edytować swojego wniosku o pomoc techniczną.
+
+### <a name="provide-feedback"></a>Przekazywanie opinii
 
 Twoja opinia jest dla nas pomocna i za jej pomocą usprawnia obsługę administracyjną.
 

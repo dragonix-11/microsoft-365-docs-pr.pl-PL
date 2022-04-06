@@ -16,13 +16,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: ''
 ms.localizationpriority: medium
-description: Dowiedz się, jak zaplanować i uruchomić próbny program pilotażowy dla SharePoint Syntex organizacji.
-ms.openlocfilehash: 74b44c14140f26e0744aac73fd948e58d9d33e24
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak zaplanować, zarejestrować i uruchomić próbny program pilotażowy dla SharePoint Syntex twojej organizacji.
+ms.openlocfilehash: fc4221b0022aca8a0564c78e64d94028f6483104
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983314"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507104"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Uruchom wersję próbną usługi Microsoft SharePoint Syntex
 
@@ -39,12 +39,12 @@ Wersję próbną można pobrać z jednego z następujących źródeł:
 
 - Strona [SharePoint Syntex produktu](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
 
-- [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com)
+- The [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com)
     1. Zaloguj się do [Centrum administracyjnego usługi Microsoft 365](https://admin.microsoft.com).
     2. Przejdź do **usługi** <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**BillingPurchase**</a> >  Services.
     3. Przewiń w dół **do sekcji Dodatki** .
     4. Na kafelku SharePoint Syntex wybierz pozycję **Szczegóły**.
-    5. Wybierz **pozycję Uzyskaj bezpłatną wersję próbną**.
+    5. Wybierz **pozycję Rozpocznij bezpłatną wersję próbną**.
     6. Aby potwierdzić wersję próbną, wykonaj pozostałe kroki kreatora.
 
 Aby aktywować wersję próbną, Microsoft 365 administratorem globalnym lub administratorem rozliczeń.
@@ -112,4 +112,4 @@ Jeśli nie zakupisz licencji po wersji próbnej:
 
 ## <a name="see-also"></a>Zobacz też
 
-[Wdrożenie usługi Microsoft SharePoint Syntex: wprowadzenie](adoption-getstarted.md)
+[Wdrożenie SharePoint Syntex firmy Microsoft: Wprowadzenie](adoption-getstarted.md)

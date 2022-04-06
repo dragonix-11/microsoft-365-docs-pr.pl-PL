@@ -15,21 +15,21 @@ ms.assetid: ''
 ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się więcej o zagadnieniach związanych z wdrażaniem oraz często zadawanych pytaniach dotyczących symulacyjnej i szkolenia w zakresie ataków w programie Microsoft 365 E5 lub programie Microsoft Defender dla organizacji Office 365 Plan 2.
+description: Administratorzy mogą dowiedzieć się więcej o zagadnieniach związanych z wdrażaniem i często zadawanych pytaniach dotyczących symulacyjnej i szkolenia w zakresie ataków w organizacjach Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 57b4d684e52fd51a2ece279cc7322389a953a17c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "62999359"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467802"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Zagadnienia dotyczące wdrażania szkoleń w czasie ataków i często zadawane pytania
 
-Szkolenie symulacyjne dotyczące ataków umożliwia organizacjom z planem 2 programu Microsoft 365 E5 lub Microsoft Office 365 Defender dla organizacji plan 2 mierzenie ryzyka ze strony socjowej i zarządzanie nim, umożliwiając tworzenie i zarządzanie symulacjami wyłudzania informacji obsługiwanymi przez łady wyłudzania informacji w świecie rzeczywistym, w których są odkażowane łady służące do wyłudzania informacji. Szkolenia ukierunkowane na działanie hiper targeted, dostarczone we współpracy z zabezpieczeniamiNova, pomagają w ulepszaniu wiedzy i zmieniania zachowań pracowników.
+Szkolenie symulacyjne z atakami Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender Organizacje planują 2 na mierzenie ryzyka socjowego i zarządzanie nim przez umożliwienie tworzenia i zarządzania symulacyjnych wyłudzania informacji obsługiwanych w świecie rzeczywistym, w których są odimowane łady służące do wyłudzania informacji. Szkolenia ukierunkowane na działanie hiper targeted, dostarczone we współpracy z zabezpieczeniamiNova, pomagają w ulepszaniu wiedzy i zmieniania zachowań pracowników.
 
-Aby uzyskać więcej informacji na temat rozpoczynania szkolenia z użyciem symezyjny ataków, zobacz [Wprowadzenie do szkolenia z użyciem symezyjny ataków](attack-simulation-training-get-started.md).
+Aby uzyskać więcej informacji na temat rozpoczynania szkolenia z symezyjną ataków, zobacz Wprowadzenie [szkolenia z użyciem symezyjnych](attack-simulation-training-get-started.md) ataków.
 
 Mimo że całe środowisko tworzenia i planowania przebiegów symulacyjnych zostało zaprojektowane tak, aby było swobodne i nieczytarne, czasy bieżące na skalę przedsiębiorstwa często wymagają planowania. Ten artykuł pomaga w odniesieniu do konkretnych wyzwań, które widzą jako nasi klienci, podczas uruchamiania symulacyjnych w swoich środowiskach.
 
@@ -39,25 +39,25 @@ Mimo że całe środowisko tworzenia i planowania przebiegów symulacyjnych zost
 
 Usługa reputacji adresu URL może zidentyfikować co najmniej jeden z adresów URL używanych przez szkolenie symulacyjne z atakami jako niebezpieczne. Przeglądanie Sejf Google Chrome blokuje niektóre symulowane adresy URL służące do wyłudzania informacji z treściwą wiadomością **z wyprzedzeniem**. Mimo że pracujemy z wieloma dostawcami reputacji adresów URL, aby zawsze zezwalać na adresy URL symulowania, nie zawsze mamy pełny zakres.
 
-![W przeglądarce Google Chrome jest wyświetlane ostrzeżenie z deceptywną witryną z wyprzedzeniem.](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
+:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Ostrzeżenie z wyprzedzeniem dotyczące witryny z deceptywną witryną w przeglądarce Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
 Zwróć uwagę, że ten problem nie wpływa Microsoft Edge.
 
 W ramach fazy planowania sprawdź dostępność adresu URL w obsługiwanych przeglądarkach sieci Web, zanim użyjemy adresu URL w kampanii służącej do wyłudzania informacji. Jeśli adresy URL są zablokowane przez usługę Google [Sejf Przeglądania](https://support.google.com/chrome/a/answer/7532419) internetu, postępuj zgodnie z tą wytycznymi firmy Google, aby zezwolić na dostęp do adresów URL.
 
-Aby uzyskać [listę adresów](attack-simulation-training-get-started.md) URL używanych obecnie podczas szkolenia z użyciem symezyjny ataków, zobacz Wprowadzenie do szkolenia z użyciem symezyjny ataków.
+Aby uzyskać [Wprowadzenie](attack-simulation-training-get-started.md) adresów URL używanych obecnie w trakcie szkolenia symulacyjnego w zakresie ataków, zobacz korzystanie z szkolenia symulacyjnego w zakresie ataków.
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Symulacja wyłudzania informacji i adresy URL administratorów zablokowane przez sieciowe rozwiązania serwera proxy i sterowniki filtrów
 
 Zarówno adresy URL dla symulacyjnych wyłudzania informacji, jak i adresy URL administratorów mogą być blokowane lub upuszczane przez pośrednie urządzenia zabezpieczające lub filtry. Przykład:
 
 - Zapory
-- Rozwiązania WAF (Web Application Firewall)
+- Web Application Firewall (WAF)
 - Sterowniki filtru innych firm (na przykład filtry trybu kernelgo)
 
 W tej warstwie zablokowano kilku klientów, jednak tak się dzieje. Jeśli wystąpią problemy, rozważ skonfigurowanie następujących adresów URL tak, aby pomijać skanowanie urządzeń zabezpieczających lub filtry zgodnie z wymaganiami:
 
-- Symulowane adresy URL służące do wyłudzania informacji, zgodnie z opisem [w tece szkoleniowej wprowadzenie do korzystania z symezyjnej pracy z atakami](attack-simulation-training-get-started.md).
+- Symulowane adresy URL służące do wyłudzania informacji, jak opisano [Wprowadzenie przy użyciu szkolenia z użyciem symezyjnej próby wyłudzenia informacji](attack-simulation-training-get-started.md).
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -96,11 +96,11 @@ Każda kampania symulacyjna ma cykl życia. Podczas tworzenia po raz pierwszy sy
 
 Podczas gdy symulowanie znajduje **się w stanie** zaplanowanym, raporty symulacyjne będą przeważnie puste. Na tym etapie aparat symulowania rozwiązuje adresy e-mail użytkowników docelowych, rozszerza grupy dystrybucyjne, usuwa użytkowników gości z listy itp.:
 
-![Szczegóły symulacyjne przedstawiające czas symulowania w stanie według harmonogramu.](../../media/attack-sim-training-faq-scheduled-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="Szczegóły symulacyjne przedstawiające czas symulowania w stanie według harmonogramu" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
 Gdy symulowanie przejdzie na **etap W toku** , zauważysz informacje, które zaczynają docierać do raportowania:
 
-![Szczegóły symulacyjne przedstawiające czas symulowania w stanie W toku.](../../media/attack-sim-training-faq-in-progress-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="Szczegóły symulacyjne przedstawiające czas symulowania w stanie w toku" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
 Aktualizacja poszczególnych raportów symulacyjnych po przejściu do stanu W **toku** może potrwać do 30 minut. Dane raportu są nadal kompilowane, aż do momentu osiągnięcia przez symulacyjne **stanu Ukończono** . Aktualizacje raportowania występują w następujących interwałach:
 
@@ -166,7 +166,7 @@ Zauważ, że synchronizacja zmiany konfiguracji może potrwać do 30 minut we ws
 
 O: Tak, możesz! Na ostatniej **stronie symulacyjnej przeglądu** w kreatorze w celu utworzenia nowej symulacyjnej istnieje opcja **Wyślij test**. Ta opcja spowoduje wysłanie przykładowego komunikatu symulacyjnego wyłudzania informacji do obecnie zalogowanego użytkownika. Po zweryfikowaniu wiadomości służącej do wyłudzania informacji w skrzynce odbiorczej możesz przesłać symulację.
 
-![Przycisk wysyłania testu na stronie symulacyjnej recenzji.](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="Przycisk Wyślij test na stronie symulacyjnej recenzji" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>P. Czy można kierować użytkowników należących do innej dzierżawy w ramach tej samej kampanii symulacyjnej?
 
