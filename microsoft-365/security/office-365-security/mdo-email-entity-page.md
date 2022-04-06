@@ -1,5 +1,5 @@
 ---
-title: Strona jednostki poczty e Office 365-mail usługi Microsoft Defender
+title: Strona Ochrona usługi Office 365 w usłudze Microsoft Defender e-mail
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Klienci korzystający z Office 365 E5 Microsoft Defender dla komputerów Office 365 E5 oraz P1 i P2 mogą teraz wyświetlać 360 stopni każda wiadomość e-mail ze stroną jednostki poczty e-mail.
-ms.openlocfilehash: 263411d6f0c9931dfd03fbf8b89fd24a86c3c9e6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Ochrona usługi Office 365 w usłudze Microsoft Defender E5, P1 i P2 mogą teraz wyświetlać 360 stopni każda wiadomość e-mail ze stroną jednostki poczty e-mail.
+ms.openlocfilehash: d75ebd9b54fc5e7919154a4f65e0d5fc0e77e117
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032143"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475460"
 ---
 # <a name="the-email-entity-page"></a>Strona jednostki e-mail
 
@@ -32,7 +32,7 @@ ms.locfileid: "63032143"
 - [Korzystanie z kart stron encji e-mail](#use-email-entity-page-tabs)
 - [Nowa strona encji poczty e-mail](#new-to-the-email-entity-page)
 
-Administratorzy usług Microsoft Defender for Office 365 E5 i Defender dla Office P1 i P2 mają widok poczty e-mail o 360 stopniach za pomocą strony jednostki **poczty e-mail**. Ta strona przechodnia do poczty e-mail została utworzona w celu ulepszania informacji dostarczanych w [wysuwanych szczegółach wiadomości e-mail](threat-explorer-views.md) w Eksploratorze zagrożeń.
+Administratorzy usług Ochrona usługi Office 365 w usłudze Microsoft Defender E5 i Defender dla Office P1 i P2 mają widok poczty e-mail o 360 stopniach za pomocą strony jednostki **poczty e-mail**. Ta strona przechodnia do poczty e-mail została utworzona w celu ulepszania informacji dostarczanych w [wysuwanych szczegółach wiadomości e-mail](threat-explorer-views.md) w Eksploratorze zagrożeń.
 
 ## <a name="reach-the-email-entity-page"></a>Docieranie do strony jednostki poczty e-mail
 
@@ -40,9 +40,9 @@ Strona jednostki poczty e-mail jest dostępna w portalu Microsoft 365 Defender p
 
 W **Eksploratorze** wybierz temat wiadomości e-mail, której badasz. U góry wysuwanych wiadomości e-mail zostanie wyświetlany złoty pasek. To zaproszenie do nowej strony zawiera informacje "Wypróbuj stronę nowej jednostki poczty e-mail z wzbogaceniem danych...". Wybierz pozycję , aby wyświetlić nową stronę.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="Zostanie wyświetlony złoty transparent z wyrazami *Wypróbuj stronę nowej jednostki poczty e-mail z wzbogaceniem danych*, aby przejść do nowego programu.":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="Złoty transparent z wyrazami *Wypróbuj stronę nowej jednostki poczty e-mail z wzbogaceniem danych*, aby przejść do nowego programu" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
-:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="Ta grafika przedstawiająca stronę jednostki poczty e-mail skupia się na nagłówkach, które zobaczysz. Zwróć uwagę, że w tym miejscu jest wyświetlany nagłówek wiadomości e-mail.":::
+:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="Grafika przedstawiająca stronę jednostki poczty e-mail skupiną na nagłówkach, które będą" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
 > Uprawnienia wymagane do wyświetlania i używania tej strony są takie same jak uprawnienia do wyświetlania **Eksploratora**. Administrator musi być członkiem grupy Administrator globalny lub czytelnik globalny albo Administrator zabezpieczeń lub Czytelnik zabezpieczeń. Aby uzyskać więcej informacji, [zobacz Uprawnienia w portalu Microsoft 365 Defender użytkowników](permissions-microsoft-365-security-center.md).
@@ -53,15 +53,15 @@ Struktura ma być łatwa do odczytania i nawigowania jednym rzutem oka. Różne 
 
 1. Większość wymaganych pól jest po lewej stronie wysuwania. Te szczegóły są "przyklejone", co oznacza, że są zakotwiczone po lewej stronie niezależnie od karty, do których przechodzisz w pozostałej części wysuwu.
 
-    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Grafika przedstawiająca stronę jednostki wiadomości e-mail z wyróżniona lewą stroną. Tutaj znajdują się tytuł i fakty dotyczące dostarczania poczty.":::
+    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Grafika przedstawiająca stronę jednostki poczty e-mail z wyróżniona lewą stroną" lightbox="../../media/email-entities-3-left-panel.png":::
 
 2. W prawym górnym rogu znajdują się akcje, które można podjąć w wiadomości e-mail. Wszystkie akcje, które można podjąć za pomocą **Eksploratora** , będą również dostępne za pośrednictwem strony jednostki poczty e-mail.
 
-    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Grafika przedstawiająca stronę jednostki poczty e-mail z wyróżniona stroną *po prawej*, tym razem. Są tu dostępne akcje, takie jak &quot;Podgląd wiadomości e-mail&quot; i &quot;Przejdź do kwarantanny&quot;.":::
+    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Grafika przedstawiająca stronę jednostki poczty e-mail z wyróżniona prawą stroną" lightbox="../../media/email-entities-5-preview.png":::
 
 3. Bardziej dogłębną analizę można wykonać, sortując pozostałą część strony. Sprawdź szczegóły wykrywania wiadomości e-mail, stan uwierzytelniania wiadomości e-mail i nagłówek. W tym obszarze należy w zależności od sytuacji, ale informacje w tych kartach są dostępne dla każdej wiadomości e-mail.
 
-    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="Główny panel tej strony zawiera nagłówek wiadomości e-mail i stan uwierzytelniania.":::
+    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="Główny panel strony z nagłówkiem wiadomości e-mail i stanem uwierzytelniania" lightbox="../../media/email-entities-4-middle-panel.png":::
 
 ### <a name="use-email-entity-page-tabs"></a>Korzystanie z kart stron encji e-mail
 
@@ -102,7 +102,7 @@ Użytkownicy zobaczą wzbogacenie szczegółów detonacji dotyczących znanych z
 1. Behavior *Details* (Szczegóły zachowania) to eksport, który przedstawia szczegóły dotyczące zachowania, takie jak dokładne zdarzenia, które miały miejsce podczas detonacji, oraz obserwowalne elementy, które zawierają adresy URL, adresy IP, domeny i pliki odnalezione podczas detonacji (i które mogą być problematyczne lub ciesze). Należy pamiętać, że szczegóły zachowania mogą nie obejmować:
     - Pliki kontenerów.zip na .rar, które są w posiadaniu innych plików.
 
-:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Zrzut ekranu przedstawiający podsumowanie detonacji pokazujące łańcuch, podsumowanie, szczegóły detonacji i zrzut ekranu pod nagłówkiem *Analiza głębokości*.":::
+:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Podsumowanie detonacji pokazujące łańcuch, podsumowanie, szczegóły detonacji i zrzut ekranu pod nagłówkiem *Analiza głębokości*" lightbox="../../media/email-entities-6-detonation-page.png":::
 
 ### <a name="other-innovations"></a>Inne innowacje
 

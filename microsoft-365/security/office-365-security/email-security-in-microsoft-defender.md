@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczenia poczty e-mail za pomocą Eksploratora zagrożeń w programie Microsoft Defender dla Office 365
+title: Zabezpieczenia poczty e-mail przy użyciu Eksploratora zagrożeń w Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -17,14 +17,14 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3ee97c54174fc7aaa2cd6d653dcd9fdd8298376d
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: da555769cbff177fff7de4ee4a25908e1eee3782
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021188"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475130"
 ---
-# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Zabezpieczenia poczty e-mail za pomocą Eksploratora zagrożeń w programie Microsoft Defender dla Office 365
+# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Zabezpieczenia poczty e-mail przy użyciu Eksploratora zagrożeń w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 W tym artykule:
 
@@ -39,7 +39,7 @@ W tym artykule wyjaśniono, jak wyświetlać i badać próby wyłudzania informa
 
 **Dotyczy:**
 
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="view-malware-detected-in-email"></a>Wyświetlanie złośliwego oprogramowania wykrytego w wiadomości e-mail
@@ -56,13 +56,13 @@ Aby wyświetlić informacje o złośliwym oprogramowaniu wykryte w wiadomościac
 
 3. Kliknij **pozycję Nadawca**, a następnie **z** \> listy **rozwijanej wybierz** pozycję Technologia wykrywania podstawowego.
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="technologii wykrywania złośliwego oprogramowania.":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="Technologia wykrywania złośliwego oprogramowania" lightbox="../../media/exploreremailmalwaredetectiontech-newimg.png":::
 
    Technologie wykrywania są teraz dostępne jako filtry raportu.
 
 4. Wybierz opcję, a następnie kliknij pozycję **Odśwież** , aby zastosować ten filtr (nie odświeżaj okna przeglądarki).
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="wybranej technologii wykrywania.":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="Wybrana technologia wykrywania" lightbox="../../media/exploreremailmalwaredetectiontech2-new.png":::
 
    Raport zostanie odświeżony w celu pokazania wyników wykrytych w wiadomościach e-mail przez złośliwe oprogramowanie przy użyciu wybranej opcji technologii. Tutaj możesz przeprowadzić dalszą analizę.
 
@@ -79,7 +79,7 @@ Możesz użyć **opcji Oczyszczanie** raportu w Eksploratorze, aby zgłosić wia
 4. Przewiń w dół listę opcji, aby przejść do sekcji **Rozpocznij nowe przesyłanie** , a następnie wybierz pozycję **Wyczyść raport**. Zostanie wyświetlone wysuw.
 
    > [!div class="mx-imgBorder"]
-   > ![Opcja Oczyszczanie raportu w Eksploratorze.](../../media/report-clean-option-explorer.png) 
+   > :::image type="content" source="../../media/report-clean-option-explorer.png" alt-text="Opcja Oczyszczanie raportu w Eksploratorze" lightbox="../../media/report-clean-option-explorer.png":::
 
 5. Przesuń suwak do przycisku **Wł**. Z listy rozwijanej określ, przez ile dni wiadomość ma zostać usunięta, dodaj notatkę w razie potrzeby, a następnie wybierz pozycję **Prześlij**. 
 
@@ -94,13 +94,13 @@ Próby wyłudzenia informacji możesz wyświetlić za pomocą adresów URL w wia
 2. Z listy **rozwijanej** Widok wybierz pozycję Wiadomość **e-mail** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu Widok w Eksploratorze w kontekście wyłudzania informacji.](../../media/ExplorerViewEmailPhishMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="Menu Widok w Eksploratorze w kontekście wyłudzania informacji" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
 
 3. Kliknij **pozycję Nadawca**, a następnie wybierz pozycję **Adresy URL** \> **Kliknij werdykt** na liście rozwijanej.
 
 4. W wyświetlonych opcjach wybierz jedną lub więcej opcji, takich jak **Zablokowane i Zablokuj** **zastąpione, a** następnie kliknij pozycję **Odśwież (nie** odśwież okna przeglądarki).
 
-    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="Adresy URL i klikanie werdyktów.":::
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="Adresy URL i klikanie werdyktów" lightbox="../../media/threatexploreremailphishclickverdict-new.png":::
 
    Raport zostanie odświeżony w celu pokazania dwóch różnych tabel adresów URL na karcie **adresy** URL w obszarze raportu:
 
@@ -111,7 +111,7 @@ Próby wyłudzenia informacji możesz wyświetlić za pomocą adresów URL w wia
    W obu tabelach adresów URL są wyświetlane najważniejsze adresy URL w wiadomościach e-mail wyłudzających informacje według akcji dostarczenia i lokalizacji. W tabelach są wyświetlane kliknięcia adresów URL, które zostały zablokowane lub odwiedzone pomimo ostrzeżenia, dzięki czemu można zobaczyć, jakie potencjalne złe linki zostały przedstawione użytkownikom i które kliknął. Tutaj możesz przeprowadzić dalszą analizę. Poniżej wykresu można na przykład zobaczyć górne adresy URL wiadomości e-mail, które zostały zablokowane w środowisku organizacji.
 
    > [!div class="mx-imgBorder"]
-   > ![Adresy URL Eksploratora, które zostały zablokowane.](../../media/ExplorerPhishClickVerdictURLs.png)
+   > :::image type="content" source="../../media/ExplorerPhishClickVerdictURLs.png" alt-text="Adresy URL Eksploratora, które zostały zablokowane" lightbox="../../media/ExplorerPhishClickVerdictURLs.png":::
 
    Wybierz adres URL, aby wyświetlić bardziej szczegółowe informacje.
 
@@ -134,7 +134,7 @@ W menu wysuwanych wiadomości e-mail lub adresów URL, górnych kliknięciach i 
 ## <a name="start-automated-investigation-and-response"></a>Rozpoczynanie automatycznego badania i odpowiedzi
 
 > [!NOTE]
-> Funkcje automatycznego badania i odpowiedzi są dostępne w programie *Microsoft Defender dla Office 365 Plan 2* i *Office 365 E5*.
+> Funkcje automatycznego badania i odpowiedzi są dostępne w *programach Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2* i *Office 365 E5*.
 
 [Zautomatyzowane badania i odpowiedzi](automated-investigation-response-office.md) mogą zaoszczędzić czas i nakład pracy zespołowej związanej z operacjami zabezpieczeń, ale mogą pomóc w zbadaniu i ograniczania cyberataków. Oprócz konfigurowania alertów, które mogą wyzwalać podręcznik zabezpieczeń, możesz uruchomić zautomatyzowany proces badania i odpowiedzi z widoku w Eksploratorze. Aby uzyskać szczegółowe informacje, [zobacz Przykład: Administrator zabezpieczeń wyzwala badanie z Eksploratora](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 

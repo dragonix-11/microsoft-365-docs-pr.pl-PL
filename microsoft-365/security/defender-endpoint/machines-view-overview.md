@@ -1,5 +1,5 @@
 ---
-title: Spisz urządzeń
+title: Spis urządzeń
 description: Informacje o dostępnych funkcjach, których można używać z listy Urządzenia, takich jak sortowanie, filtrowanie i eksportowanie listy w celu ulepszania badań.
 keywords: sortuj, filtruj, eksportuj, csv, nazwa urządzenia, domena, ostatnio widziany, wewnętrzny adres IP, stan kondycji, aktywne alerty, aktywne wykrywanie złośliwego oprogramowania, kategoria zagrożeń, przeglądanie alertów, sieć, połączenie, złośliwe oprogramowanie, typ, kradzież haseł, oprogramowanie wymuszające okup, exploit, zagrożenia, ogólne złośliwe oprogramowanie, niechciane oprogramowanie
 ms.prod: m365-security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d254eee546187311a25a0e6cc433005a26ff57e6
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: a9753cdc818aefdf33411bd237327310dfc512ab
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632432"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474756"
 ---
-# <a name="device-inventory"></a>Spisz urządzeń
+# <a name="device-inventory"></a>Spis urządzeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "64632432"
 **Dotyczy:**
 
 - [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
@@ -109,14 +109,14 @@ Liczba w górnej części każdej karty zostanie zaktualizowana na podstawie bie
 Filtr | Opis
 :---|:---
 **Poziom ryzyka** </br> | Poziom ryzyka odzwierciedla ogólną ocenę ryzyka urządzenia na podstawie kombinacji czynników, w tym typów i istotności aktywnych alertów na urządzeniu. Rozwiązywanie aktywnych alertów, zatwierdzanie działań naprawczych i pomijanie kolejnych alertów może obniżyć poziom ryzyka.
-**Poziom ekspozycji** </br> | Poziom ekspozycji odzwierciedla bieżącą ekspozycję na urządzenie na podstawie skumulowanego wpływu jego oczekujących zaleceń dotyczących zabezpieczeń. Możliwe poziomy są niskie, średnie i wysokie. Niska ekspozycja oznacza, że Urządzenia są mniej narażone na wykorzystywanie. </br> </br> Jeśli poziom ekspozycji mówi "Brak dostępnych danych", istnieje kilka powodów, dla których może tak być:</br>— Urządzenie zatrzymało raportowanie przez ponad 30 dni. W takim przypadku jest ona uznawana za nieaktywną, a ekspozycja nie jest obliczana.</br>- System operacyjny urządzenia nie jest obsługiwany — zobacz [minimalne wymagania dotyczące systemu Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/minimum-requirements).</br>— Urządzenie ze przestarzałym agentem (mało prawdopodobne).
+**Poziom ekspozycji** </br> | Poziom ekspozycji odzwierciedla bieżącą ekspozycję na urządzenie na podstawie skumulowanego wpływu jego oczekujących zaleceń dotyczących zabezpieczeń. Możliwe poziomy są niskie, średnie i wysokie. Niska ekspozycja oznacza, że Urządzenia są mniej narażone na wykorzystywanie. </br> </br> Jeśli poziom ekspozycji mówi "Brak dostępnych danych", istnieje kilka powodów, dla których może tak być:</br>— Urządzenie zatrzymało raportowanie przez ponad 30 dni. W takim przypadku jest ona uznawana za nieaktywną, a ekspozycja nie jest obliczana.</br>- System operacyjny urządzenia nie jest obsługiwany — zobacz [minimalne wymagania dotyczące systemu Ochrona punktu końcowego w usłudze Microsoft Defender](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/minimum-requirements.md).</br>— Urządzenie ze przestarzałym agentem (mało prawdopodobne).
 **Tagi** </br> | Filtruj listę według grupowania i tagów dodanych do poszczególnych urządzeń. Zobacz [Tworzenie tagów urządzeń i zarządzanie nimi](machine-tags.md).
 **Wartość urządzenia**</br> | Filtruj listę według tego, czy urządzenie zostało oznaczone jako wysokie lub niskie.
 **Stan wykluczenia** </br> | Przefiltruj listę według tego, czy urządzenie zostało wykluczone. Aby uzyskać więcej informacji, zobacz [Wyklucz urządzenia](exclude-devices.md).
 **Platforma systemu operacyjnego** </br>| Filtrowanie według platform systemu operacyjnego, które chcesz zbadać </br></br>(_Tylko komputery i urządzenia przenośne oraz urządzenia IoT_)
 **Widziane jako pierwsze** </br> | Filtruj widok według tego, kiedy urządzenie było najpierw widoczne w sieci lub kiedy zostało zgłoszone po raz pierwszy przez Ochrona punktu końcowego w usłudze Microsoft Defender sieci.</br></br>(_Tylko komputery i urządzenia przenośne oraz urządzenia IoT_)
 **Wersje systemu Windows** </br> | Filtruj według Windows, które chcesz zbadać.</br></br> (_Tylko komputery i urządzenia przenośne_)
-**Stan kondycji czujnika** </br> | Filtruj według następujących stanów kondycji czujnika, aby urządzenia podłączone do Ochrona punktu końcowego w usłudze Microsoft Defender:</br> - **Aktywny**: Urządzenia, które aktywnie raportują dane czujnika do usługi.</br> - **Nieaktywny**: Urządzenia, które przestały wysyłać sygnały przez ponad 7 dni. </br> - **Nieprawidłowo skonfigurowane**: Urządzenia, które zakłócają komunikację z usługą lub nie mogą wysyłać danych czujnika. </br> Nieprawidłowo skonfigurowane urządzenia można dodatkowo sklasyfikować jako: </br>  - Brak danych czujnika </br>  - Komunikacja z ograniczoną komunikacją </br>  Aby uzyskać więcej informacji na temat sposobu rozwiązania problemów z nieprawidłowo skonfigurowanymi urządzeniami, zobacz Rozwiązywanie problemów [z czujnikiami o złej kondycji](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors).</br></br> (_Tylko komputery i urządzenia przenośne_)
+**Stan kondycji czujnika** </br> | Filtruj według następujących stanów kondycji czujnika, aby urządzenia podłączone do Ochrona punktu końcowego w usłudze Microsoft Defender:</br> - **Aktywny**: Urządzenia, które aktywnie raportują dane czujnika do usługi.</br> - **Nieaktywny**: Urządzenia, które przestały wysyłać sygnały przez ponad 7 dni. </br> - **Nieprawidłowo skonfigurowane**: Urządzenia, które zakłócają komunikację z usługą lub nie mogą wysyłać danych czujnika. </br> Nieprawidłowo skonfigurowane urządzenia można dodatkowo sklasyfikować jako: </br>  - Brak danych czujnika </br>  - Komunikacja z ograniczoną komunikacją </br>  Aby uzyskać więcej informacji na temat sposobu rozwiązania problemów z nieprawidłowo skonfigurowanymi urządzeniami, zobacz Rozwiązywanie problemów [z czujnikiami o złej kondycji](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/fix-unhealthy-sensors.md).</br></br> (_Tylko komputery i urządzenia przenośne_)
 **Stan dorównania** </br> | Stan dołączania wskazuje, czy urządzenie jest obecnie Ochrona punktu końcowego w usłudze Microsoft Defender lub nie. Filtr można filtrować według następujących stanów: </br> - **Onboarded**: Punkt końcowy jest dołączany do Ochrona punktu końcowego w usłudze Microsoft Defender.  </br> - **Może zostać wnoszony**: Punkt końcowy został wykryty w sieci jako obsługiwane urządzenie, ale nie jest on obecnie wnoszony. Firma Microsoft zdecydowanie zaleca dołączanie tych urządzeń. </br> - **Nieobsługiwane**: Punkt końcowy został wykryty w sieci, ale nie jest obsługiwany przez Ochrona punktu końcowego w usłudze Microsoft Defender. </br> - **Za mało informacji**: System nie może ustalić możliwości obsługi urządzenia.</br></br> (_Tylko komputery i urządzenia przenośne_)
 **Stan oprogramowania antywirusowego** </br> | Filtruj widok według tego, czy stan oprogramowania antywirusowego jest wyłączony, nie jest aktualizowany czy nieznany.</br></br> (_Tylko komputery i urządzenia przenośne_)
 **Grupa** </br> | Filtruj listę według grupy, która cię interesuje. </br></br> (_Tylko komputery i urządzenia przenośne_)

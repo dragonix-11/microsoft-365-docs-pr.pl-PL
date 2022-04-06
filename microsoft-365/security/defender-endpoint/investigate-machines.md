@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 71755add523b3426d144f748ab3582e3a3975dc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324175"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475240"
 ---
-# <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Badanie urządzeń na liście programu Microsoft Defender dla urządzeń końcowych
+# <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Badanie urządzeń na liście Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
@@ -53,7 +53,7 @@ Podczas zbadania określonego urządzenia zobaczysz:
 - Karty (omówienie, alerty, oś czasu, zalecenia dotyczące zabezpieczeń, spis oprogramowania, wykrytych luk, brakujące KB)
 - Karty (aktywne alerty, zalogowani użytkownicy, ocena zabezpieczeń)
 
-![Obraz widoku urządzenia.](images/specific-device.png)
+:::image type="content" source="images/specific-device.png" alt-text="Widok urządzenia" lightbox="images/specific-device.png":::
 
 > [!NOTE]
 > Ze względu na ograniczenia związane z produktem profil urządzenia nie uwzględnia żadnych dowodów cyberprzedażeń podczas określania ramy czasowej ostatnio widzianej (jak widać również na stronie urządzenia).
@@ -91,13 +91,13 @@ Karty te zawierają istotne informacje dotyczące ochrony przed zagrożeniami i 
 
 Na **karcie Omówienie** są wyświetlane [karty aktywnych](#cards) alertów, zalogowanych użytkowników i oceny zabezpieczeń.
 
-![Obraz karty Przegląd na stronie urządzenia.](images/overview-device.png)
+:::image type="content" source="images/overview-device.png" alt-text="Karta Przegląd na stronie urządzenia" lightbox="images/overview-device.png":::
 
 ### <a name="alerts"></a>Alerty
 
 Karta **Alerty** zawiera listę alertów skojarzonych z urządzeniem. Ta lista jest filtrowaną wersją kolejki alertów i zawiera krótki opis alertu, ważności (wysoki, średni, niski, informacyjny), stanu w kolejce (nowy, w toku, rozwiązany), klasyfikacja (nie ustawiona, alert fałsz, alert prawda), stan badania, kategoria alertu, kto jest adresowany do alertu i ostatnie działanie.[](alerts-queue.md) Możesz również filtrować alerty.
 
-![Obraz alertów dotyczących urządzenia.](images/alerts-device.png)
+:::image type="content" source="images/alerts-device.png" alt-text="Karta alertów dotyczących urządzenia" lightbox="images/alerts-device.png":::
 
 Po wybraniu ikony koła z lewej strony alertu pojawi się wysuw. W tym panelu możesz zarządzać alertem i wyświetlać więcej szczegółowych informacji, takich jak numer zdarzenia i urządzenia pokrewne. Jednocześnie można wybrać wiele alertów.
 
@@ -118,7 +118,7 @@ Oś czasu pozwala także selektywnie przejść do szczegółów zdarzeń, które
 > - [5031](/windows/security/threat-protection/auditing/event-5031) — aplikacja zablokowana z zaakceptowaniem połączeń przychodzących w sieci
 > - [5157](/windows/security/threat-protection/auditing/event-5157) — zablokowane połączenie
 
-![Obraz osi czasu urządzenia ze zdarzeniami.](images/timeline-device.png)
+:::image type="content" source="images/timeline-device.png" alt-text="Oś czasu urządzenia ze zdarzeniami" lightbox="images/timeline-device.png":::
 
 Niektóre funkcje są dostępne:
 
@@ -146,47 +146,47 @@ Wybierz zdarzenie, aby wyświetlić odpowiednie szczegóły dotyczące tego zdar
 
 Aby dokładniej sprawdzić wydarzenia i powiązane wydarzenia, możesz szybko uruchomić zaawansowane zapytanie [](advanced-hunting-overview.md) myśliwskie, wybierając pozycję Wyszukiwanie **powiązanych wydarzeń**. Zapytanie zwróci wybrane zdarzenie i listę innych zdarzeń, które wystąpiły w tym samym czasie w tym samym punkcie końcowym.
 
-![Obraz panelu szczegółów zdarzenia.](images/event-details.png)
+:::image type="content" source="images/event-details.png" alt-text="Panel szczegółów zdarzenia" lightbox="images/event-details.png":::
 
 ### <a name="security-recommendations"></a>Zalecenia dotyczące zabezpieczeń
 
-**Zalecenia dotyczące** zabezpieczeń są generowane z programu Microsoft Defender dla funkcji zarządzania zagrożeniami [&](tvm-dashboard-insights.md) punktów końcowych. Wybranie zalecenia spowoduje wyświetlenie panelu, w którym można wyświetlić odpowiednie szczegóły, takie jak opis zalecenia i potencjalne zagrożenia związane z nieuchwaloną treścią. Aby [uzyskać szczegółowe informacje, zobacz](tvm-security-recommendation.md) Zalecenia dotyczące zabezpieczeń.
+**Zalecenia dotyczące** zabezpieczeń są generowane na Ochrona punktu końcowego w usłudze Microsoft Defender [funkcji zarządzania & zagrożeniami](tvm-dashboard-insights.md) i zagrożeniami. Wybranie zalecenia spowoduje wyświetlenie panelu, w którym można wyświetlić odpowiednie szczegóły, takie jak opis zalecenia i potencjalne zagrożenia związane z nieuchwaloną treścią. Aby [uzyskać szczegółowe informacje, zobacz](tvm-security-recommendation.md) Zalecenia dotyczące zabezpieczeń.
 
-![Obraz karty Zalecenia dotyczące zabezpieczeń.](images/security-recommendations-device.png)
+:::image type="content" source="images/security-recommendations-device.png" alt-text="Karta Zalecenia dotyczące zabezpieczeń" lightbox="images/security-recommendations-device.png":::
 
 ### <a name="software-inventory"></a>Spis oprogramowania
 
 Karta **Spis** oprogramowania umożliwia wyświetlanie oprogramowania na urządzeniu wraz z jego wadami i zagrożeniami. Wybranie nazwy oprogramowania spowoduje wyświetlenie strony szczegółów oprogramowania, na której można przeglądać zalecenia dotyczące zabezpieczeń, wykryć luki w zabezpieczeniach, zainstalowane urządzenia i rozpowszechniać wersje. Aby [uzyskać szczegółowe informacje,](tvm-software-inventory.md) zobacz Spis oprogramowania
 
-![Obraz karty spisu oprogramowania.](images/software-inventory-device.png)
+:::image type="content" source="images/software-inventory-device.png" alt-text="Karta Spis oprogramowania" lightbox="images/software-inventory-device.png":::
 
 ### <a name="discovered-vulnerabilities"></a>Wykrywanie luk
 
 Karta **Wykryte luki** w zabezpieczeniach zawiera nazwę, ważność i informacje o zagrożeniach dotyczące wykrytych luk na urządzeniu. Wybranie konkretnych luk spowoduje pokazanie opisu i szczegółów.
 
-![Obraz karty wykrytych luk.](images/discovered-vulnerabilities-device.png)
+:::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="Karta Wykryj luki" lightbox="images/discovered-vulnerabilities-device.png":::
 
 ### <a name="missing-kbs"></a>Brakujące KB
 Karta **Brakujące kb/kb zawiera** listę brakujących aktualizacji zabezpieczeń dla urządzenia.
 
-![Obraz brakującej karty KBS.](images/missing-kbs-device.png)
+:::image type="content" source="images/missing-kbs-device.png" alt-text="Karta Brakujące kb/s" lightbox="images/missing-kbs-device.png":::
 
 ## <a name="cards"></a>Karty
 
 ### <a name="active-alerts"></a>Aktywne alerty
 
-Na **karcie Zaawansowana ochrona przed** zagrożeniami w usłudze Azure zostanie ogólne omówienie alertów dotyczących urządzenia i ich poziomu ryzyka, o ile włączono funkcję Usługi Microsoft Defender dla tożsamości i są aktywne alerty. Więcej informacji na ten temat zawiera temat "Alerty".
+Na **karcie Zaawansowana ochrona przed** zagrożeniami w usłudze Azure zostanie ogólne omówienie alertów związanych z urządzeniem i ich poziomem ryzyka, o ile włączono funkcję Microsoft Defender for Identity i są aktywne alerty. Więcej informacji na ten temat zawiera temat "Alerty".
 
-![Obraz aktywnej karty alertów.](images/risk-level-small.png)
+:::image type="content" source="images/risk-level-small.png" alt-text="Karta aktywnych alertów" lightbox="images/risk-level-small.png":::
 
 > [!NOTE]
-> Aby korzystać z tej funkcji, należy włączyć integrację zarówno z usługą Microsoft Defender for Identity, jak i Usługą Defender for Endpoint. W programie Defender for Endpoint możesz włączyć tę funkcję w zaawansowanych funkcjach. Aby uzyskać więcej informacji na temat włączania funkcji zaawansowanych, zobacz [Włączanie funkcji zaawansowanych](advanced-features.md).
+> Aby korzystać z tej funkcji, należy włączyć integrację zarówno z usługą Microsoft Defender for Identity, jak i usługą Defender for Endpoint. W programie Defender for Endpoint możesz włączyć tę funkcję w zaawansowanych funkcjach. Aby uzyskać więcej informacji na temat włączania funkcji zaawansowanych, zobacz [Włączanie funkcji zaawansowanych](advanced-features.md).
 
 ### <a name="logged-on-users"></a>Zalogowani użytkownicy
 
 Karta **Zalogowani użytkownicy** zawiera informacje o tym, ilu użytkowników zalogowało się w ciągu ostatnich 30 dni, oraz użytkowników, którzy są najczęściej i najczęstsi. Wybranie linku "Zobacz wszystkich użytkowników" spowoduje otwarcie okienka szczegółów, w którym są wyświetlane informacje, takie jak typ użytkownika, typ logowania oraz czas pierwszego i ostatniego wyświetlenie użytkownika. Aby uzyskać więcej informacji, zobacz [Badanie jednostek użytkowników](investigate-user.md).
 
-![Obraz okienka szczegółów użytkownika.](images/logged-on-users.png)
+:::image type="content" source="images/logged-on-users.png" alt-text="Okienko szczegółów użytkownika" lightbox="images/logged-on-users.png":::
 
 > [!NOTE]
 > Wartość "najczęściej odwiedzanych" użytkowników jest obliczana tylko na podstawie dowodów użytkowników, którzy pomyślnie zalogowali się interakcyjnie.
@@ -196,13 +196,13 @@ Karta **Zalogowani użytkownicy** zawiera informacje o tym, ilu użytkowników z
 
 Karta **Oceny zabezpieczeń zawiera** informacje o ogólnym poziomie ochrony, zaleceniach dotyczących zabezpieczeń, zainstalowanym oprogramowaniu i wykrytych lukach. Poziom ekspozycji urządzenia jest ustalany na podstawie skumulowanego wpływu jego oczekujących zaleceń dotyczących zabezpieczeń.
 
-![Obraz karty oceny zabezpieczeń.](images/security-assessments.png)
+:::image type="content" source="images/security-assessments.png" alt-text="Karta oceny zabezpieczeń" lightbox="images/security-assessments.png":::
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Wyświetlanie i organizowanie kolejki alertów programu Microsoft Defender dla punktu końcowego](alerts-queue.md)
-- [Zarządzanie alertami programu Microsoft Defender dla punktów końcowych](manage-alerts.md)
-- [Badanie alertów programu Microsoft Defender dla punktów końcowych](investigate-alerts.md)
+- [Wyświetlanie i organizowanie kolejki Ochrona punktu końcowego w usłudze Microsoft Defender alertów](alerts-queue.md)
+- [Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender wiadomości](manage-alerts.md)
+- [Badanie Ochrona punktu końcowego w usłudze Microsoft Defender alertów](investigate-alerts.md)
 - [Badanie pliku skojarzonego z alertem programu Defender dla punktu końcowego](investigate-files.md)
 - [Badanie adresu IP skojarzonego z alertem programu Defender dla punktu końcowego](investigate-ip.md)
 - [Badanie domeny skojarzonej z alertem programu Defender dla punktu końcowego](investigate-domain.md)

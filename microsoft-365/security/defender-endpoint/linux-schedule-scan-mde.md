@@ -1,7 +1,7 @@
 ---
-title: Jak zaplanować skanowanie za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender (Linux)
-description: Dowiedz się, jak zaplanować automatyczny czas skanowania dla Ochrona punktu końcowego w usłudze Microsoft Defender (Linux), aby lepiej chronić zasoby organizacji.
-keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, scans, antivirus, microsoft defender for endpoint (linux)
+title: Jak planować skanowania za pomocą systemu Ochrona punktu końcowego w usłudze Microsoft Defender (Linux)
+description: Dowiedz się, jak zaplanować automatyczny czas skanowania w systemie Ochrona punktu końcowego w usłudze Microsoft Defender (Linux), aby lepiej chronić zasoby organizacji.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, skans, antivirus, microsoft defender for endpoint (linux)
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,22 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 706284ed0adf49c4da6357b6bb8217d5a14268e1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 05e8fccc200b39a606fa67a857631e215c8d4b1c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663495"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467626"
 ---
-# <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Planowanie skanowania za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender (Linux)
+# <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Planowanie skanów za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender (Linux)
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-Aby uruchomić skanowanie dla systemu Linux, zobacz [Obsługiwane polecenia](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
+Aby uruchomić skanowanie systemu Linux, zobacz [Obsługiwane polecenia](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
-Systemy Linux (i Unix) mają narzędzie o nazwie **crontab** (podobne do harmonogramu zadań), które umożliwia uruchamianie zaplanowanych zadań.
+Linux (i Unix) ma narzędzie o **nazwie crontab** (podobne do Task Scheduler), które umożliwia uruchamianie zaplanowanych zadań.
 
 ## <a name="pre-requisite"></a>Wymagania wstępne
 
@@ -42,32 +42,32 @@ Systemy Linux (i Unix) mają narzędzie o nazwie **crontab** (podobne do harmono
 > - `America/Chicago`
 > - `America/Denver`
 
-## <a name="to-set-the-cron-job"></a>Aby ustawić zadanie Cron
+## <a name="to-set-the-cron-job"></a>Aby ustawić zadanie cron
 
 Użyj następujących poleceń:
 
-### <a name="backup-crontab-entries"></a>Tworzenie kopii zapasowych wpisów crontab
+### <a name="backup-crontab-entries"></a>Kopie zapasowe wpisów crontab
 
 ```bash
 sudo crontab -l > /var/tmp/cron_backup_200919.dat
 ```
 
 > [!NOTE]
-> Gdzie 200919 == YRMMDD
+> Gdzie 200919 ==MMDD RRMMDD
 
 > [!TIP]
-> Zrób to przed edycją lub usunięciem.
+> Zrób to przed edytowaniem lub usuwaniem.
 
-Aby edytować kartę crontab i dodać nowe zadanie jako użytkownik główny:
+Aby edytować kartę crontab i dodać nowe zadanie jako użytkownika głównego:
 
 ```bash
 sudo crontab -e
 ```
 
 > [!NOTE]
-> Domyślny edytor to VIM.
+> Edytor domyślny to VIM.
 
-Mogą zostać wyświetlone następujące informacje:
+Mogą zostać wyświetlony:
 
 ```outbou
 0 * * * * /etc/opt/microsoft/mdatp/logrorate.sh
@@ -84,20 +84,20 @@ CRON_TZ=America/Los_Angeles
 ```
 
 > [!NOTE]
-> W tym przykładzie ustawiliśmy ją na 00 minut, o godzinie 2:00. (godzina w formacie 24-godzinnym), dowolny dzień miesiąca, dowolny miesiąc, w soboty. Oznacza to, że będzie działać w soboty o godzinie 2:00. Pacyfik (UTC -8).
+> W tym przykładzie ustawiono ją na 00 minut przed godziną 2:00. (godzina w formacie 24-godzinnym), każdy dzień miesiąca, dowolny miesiąc, w soboty. Oznacza to, że będzie uruchamiać soboty o godzinie 2:00. Pacyfik (UTC -8).
 
-Naciśnij klawisz "Esc"
+Naciśnij klawisz Esc.
 
 Wpisz "`:wq`" bez cudzysłowów podwójnych.
 
 > [!NOTE]
 > w == write, q == quit
 
-Aby wyświetlić zadania cron, wpisz `sudo crontab -l`
+Aby wyświetlić zadania zron, wpisz `sudo crontab -l`
 
 :::image type="content" source="../../media/linux-mdatp-1.png" alt-text="Strona mdatp systemu Linux" lightbox="../../media/linux-mdatp-1.png":::
 
-#### <a name="to-inspect-cron-job-runs"></a>Aby sprawdzić przebiegi zadania cron
+#### <a name="to-inspect-cron-job-runs"></a>Aby sprawdzić, czy zadanie cron jest uruchamiane
 
 ```bash
 sudo grep mdatp /var/log/cron
@@ -109,11 +109,11 @@ sudo grep mdatp /var/log/cron
 sudo nano mdatp_cron_job.log
 ```
 
-## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Dla tych, którzy używają rozwiązania Ansible, Chef lub Puppet
+## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Dla osób, które używają ansible, Kucha i Chłoń
 
 Użyj następujących poleceń:
 
-### <a name="to-set-cron-jobs-in-ansible"></a>Aby ustawić zadania cron w aplikacji Ansible
+### <a name="to-set-cron-jobs-in-ansible"></a>Aby ustawić zadania w języku Ansible
 
 ```bash
 cron - Manage cron.d and crontab entries
@@ -129,7 +129,7 @@ cron resource
 ```
 Zobacz <https://docs.chef.io/resources/cron/> , aby uzyskać więcej informacji.
 
-### <a name="to-set-cron-jobs-in-puppet"></a>Aby ustawić zadania cron w puppet
+### <a name="to-set-cron-jobs-in-puppet"></a>Aby ustawić zadania cron w ciesie
 
 ```bash
 Resource Type: cron
@@ -137,25 +137,25 @@ Resource Type: cron
 
 Zobacz <https://puppet.com/docs/puppet/5.5/types/cron.html> , aby uzyskać więcej informacji.
 
-Automatyzowanie za pomocą platformy Puppet: zadania cron i zaplanowane zadania
+Automatyzowanie za pomocą pochłoń: zadania cron i zaplanowane zadania
 
 Zobacz [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) , aby uzyskać więcej informacji.
 
 ## <a name="additional-information"></a>Informacje dodatkowe
 
-### <a name="to-get-help-with-crontab"></a>Aby uzyskać pomoc dotyczącą crontab
+### <a name="to-get-help-with-crontab"></a>Aby uzyskać pomoc na karcie crontab
 
 ```bash
 man crontab
 ```
 
-### <a name="to-get-a-list-of-crontab-file-of-the-current-user"></a>Aby uzyskać listę pliku crontab bieżącego użytkownika
+### <a name="to-get-a-list-of-crontab-file-of-the-current-user"></a>Aby uzyskać listę plików crontab bieżącego użytkownika
 
 ```bash
 crontab -l
 ```
 
-### <a name="to-get-a-list-of-crontab-file-of-another-user"></a>Aby uzyskać listę pliku crontab innego użytkownika
+### <a name="to-get-a-list-of-crontab-file-of-another-user"></a>Aby uzyskać listę plików crontab innego użytkownika
 
 ```bash
 crontab -u username -l
@@ -168,7 +168,7 @@ crontab -l > /var/tmp/cron_backup.dat
 ```
 
 > [!TIP]
-> Zrób to przed edycją lub usunięciem.
+> Zrób to przed edytowaniem lub usuwaniem.
 
 ### <a name="to-restore-crontab-entries"></a>Aby przywrócić wpisy crontab
 
@@ -176,19 +176,19 @@ crontab -l > /var/tmp/cron_backup.dat
 crontab /var/tmp/cron_backup.dat
 ```
 
-### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>Aby edytować kartę crontab i dodać nowe zadanie jako użytkownik główny
+### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>Aby edytować kartę crontab i dodać nowe zadanie jako użytkownika głównego
 
 ```bash
 sudo crontab -e
 ```
 
-### <a name="to-edit-the-crontab-and-add-a-new-job"></a>Aby edytować kartę crontab i dodać nowe zadanie
+### <a name="to-edit-the-crontab-and-add-a-new-job"></a>Aby edytować kartę zadań i dodać nowe zadanie
 
 ```bash
 crontab -e
 ```
 
-### <a name="to-edit-other-users-crontab-entries"></a>Aby edytować wpisy crontab innych użytkowników
+### <a name="to-edit-other-users-crontab-entries"></a>Aby edytować wpisy crontab innego użytkownika
 
 ```bash
 crontab -u username -e
@@ -208,9 +208,9 @@ crontab -u username -r
 
 ### <a name="explanation"></a>Objaśnienie
 
-+—————- minuty (wartości: 0–59) (znaki specjalne: , \- \* /)  <br>
-| +————- godzina (wartości: 0–23) (znaki specjalne: , \- \* /) <br>
-| | +———- dzień miesiąca (wartości: 1–31) (znaki specjalne: , \- \* / L W C)  <br>
-| | | +——- miesiąc (wartości: 1–12) (znaki specjalne: , \- \* / )  <br>
-| | | | +— dzień tygodnia (wartości: 0–6) (niedziela=0 lub 7) (znaki specjalne: , \- \* / L W C) <br>
-polecenie | | | | |*****, które ma zostać wykonane
++—————- minut (wartości: 0 – 59) (znaki specjalne: , - * /)  <br>
+| +————- godziny (wartości: 0 – 23) (znaki specjalne: , - * /) <br>
+| | +———- dnia miesiąca (wartości: 1 – 31) (znaki specjalne: , - * / L W C)  <br>
+| | | +——- miesiąc (wartości: 1 – 12) (znaki specjalne: ,- * / )  <br>
+| | | | + — dzień tygodnia (wartości: 0 - 6) (niedziela=0 lub 7) (znaki specjalne: , - * / L W C) <br>
+| | | | |*****, które ma zostać wykonane

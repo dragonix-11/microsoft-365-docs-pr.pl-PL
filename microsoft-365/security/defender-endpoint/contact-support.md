@@ -1,6 +1,6 @@
 ---
-title: Skontaktuj się z pomocą techniczną programu Microsoft Defender, aby uzyskać pomoc techniczną dla punktu końcowego
-description: Dowiedz się, jak skontaktować się z programem Microsoft Defender w celu kontaktu z pomocą techniczną dla punktu końcowego
+title: Skontaktuj się Ochrona punktu końcowego w usłudze Microsoft Defender pomocą techniczną
+description: Dowiedz się, jak skontaktować się Ochrona punktu końcowego w usłudze Microsoft Defender pomocą techniczną
 keywords: pomoc techniczna, kontakt, pomoc techniczna Premier, rozwiązania, problemy, sprawa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60a389d2422a2d3b2f50f77bc978f9f9bbc4a087
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bbf7be489f969007badb4d00fb25ce22eb991f55
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016550"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475350"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>Skontaktuj się z pomocą techniczną programu Microsoft Defender, aby uzyskać pomoc techniczną dla punktu końcowego
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>Skontaktuj się Ochrona punktu końcowego w usłudze Microsoft Defender pomocą techniczną
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -56,11 +56,11 @@ Dostęp do nowego widżetu pomocy technicznej można uzyskać na dwa sposoby:
 
 1. Kliknij znak zapytania w prawym górnym rogu portalu, a następnie kliknij pozycję "Pomoc techniczna Microsoft":
 
-    :::image type="content" source="../../media/contactsupport.png" alt-text="Pomoc techniczna Microsoft.":::
+   :::image type="content" source="../../media/contactsupport.png" alt-text="Ikona pomocy technicznej firmy Microsoft w portalu Microsoft 365 Defender sieci Microsoft 365 Defender" lightbox="../../media/contactsupport.png":::
 
 2. Klikanie pozycji **Potrzebujesz pomocy?**  w prawym dolnym rogu portalu Microsoft 365 Defender witryny:
 
-    ![Obraz przycisku Potrzebujesz pomocy.](images/need-help-option.png)
+   :::image type="content" source="images/need-help-option.png" alt-text="Przycisk Potrzebujesz pomocy" lightbox="images/need-help-option.png":::
 
 W widżecie będą dostępne dwie opcje:
 
@@ -71,7 +71,7 @@ W widżecie będą dostępne dwie opcje:
 
 Ta opcja zawiera artykuły, które mogą być związane z pytaniem, które możesz zadać. Po prostu zacznij wpisywać pytanie w polu wyszukiwania, a zostaną surfacedowane artykuły związane z wyszukiwaniem.
 
-:::image type="content" source="../../media/contactsupport1.png" alt-text="Jak możemy ci pomóc?":::
+:::image type="content" source="../../media/contactsupport1.png" alt-text="Jak możemy ci pomóc?" lightbox="../../media/contactsupport1.png":::
 
 Jeśli sugerowane artykuły nie są wystarczające, możesz otworzyć żądanie usługi.
 
@@ -84,13 +84,11 @@ Dowiedz się, jak otworzyć bilety pomocy technicznej, kontaktując się z pomoc
 
 ### <a name="contact-support"></a>Kontakt z pomocą techniczną
 
-:::image type="content" source="../../media/contactsupport2.png" alt-text="skontaktuj się z pomocą techniczną 2."::: </br>
-
-:::image type="content" source="../../media/contactsupport2.png" alt-text="skontaktuj się z pomocą techniczną 2":::
+:::image type="content" source="../../media/contactsupport2.png" alt-text="Kontakt z pomocą techniczną 2" lightbox="../../media/contactsupport2.png"::: </br>
 
 1. Wpisz tytuł i opis problemu, którego dotyczy problem, numer telefonu i adres e-mail, pod którym możemy się z Toem okazać.
 2. (Opcjonalnie) Dołącz maksymalnie pięć załączników istotnych dla problemu, aby zapewnić dodatkowy kontekst dla sprawy pomocy technicznej.
-3. Wybierz swoją strefę czasową i język alternatywny, jeśli ma zastosowanie. Wniosek zostanie wysłany do zespołu pomocy technicznej Microsoft. Zespół wkrótce odpowie na Twoje żądanie usługi.
+3. Wybierz swoją strefę czasową i język alternatywny, jeśli ma zastosowanie. Prośba zostanie wysłana do zespołu pomoc techniczna firmy Microsoft zespołu. Zespół wkrótce odpowie na Twoje żądanie usługi.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

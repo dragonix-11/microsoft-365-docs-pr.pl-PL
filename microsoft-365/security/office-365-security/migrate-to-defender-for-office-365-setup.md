@@ -1,5 +1,5 @@
 ---
-title: Migrowanie do programu Microsoft Defender Office 365 Etap 2. Konfiguracja
+title: Migrowanie Ochrona usługi Office 365 w usłudze Microsoft Defender etap 2. Konfigurowanie
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,28 +16,28 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: migrationguides
-description: W celu rozpoczęcia migracji z usługi lub urządzenia ochrony innej firmy do programu Microsoft Defender w celu Office 365 ochrony.
+description: Czynności, które należy wykonać, aby rozpocząć  migrowanie z usługi lub urządzenia ochrony innej firmy w celu Ochrona usługi Office 365 w usłudze Microsoft Defender ochrony.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc16da76f4b863800bb4f1e7573bbe2fa106b4cf
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: f4f6e1d557915fe40dc570cd58374371e0e9b6a3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013294"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474932"
 ---
-# <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migrowanie do programu Microsoft Defender Office 365 — etap 2. Konfigurowanie
+# <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Migrowanie do Ochrona usługi Office 365 w usłudze Microsoft Defender — Etap 2. Konfigurowanie
 
 **Dotyczy:**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 
 <br>
 
-|[![Etap 1. Przygotowanie.](../../media/phase-diagrams/prepare.png)](migrate-to-defender-for-office-365-prepare.md) <br> [Etap 1. Przygotowywanie](migrate-to-defender-for-office-365-prepare.md)|![Etap 2. Konfigurowanie.](../../media/phase-diagrams/setup.png) <br> Etap 2. Konfigurowanie|[![Etap 3. Wsad.](../../media/phase-diagrams/onboard.png)](migrate-to-defender-for-office-365-onboard.md) <br> [Etap 3. Wniesienie](migrate-to-defender-for-office-365-onboard.md)|
+|[![Etap 1. Przygotowanie.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [Etap 1. Przygotowywanie](migrate-to-defender-for-office-365-prepare.md)|![Etap 2. Konfigurowanie.](../../media/phase-diagrams/setup.png) <br> Etap 2. Konfigurowanie|[![Etap 3. Wsad.](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [Etap 3. Wniesienie](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 ||*Jesteś tutaj!*||
 
-Etap **2: Konfigurowanie** migracji do programu **[Microsoft Defender](migrate-to-defender-for-office-365.md#the-migration-process)** dla systemu Office 365! Ten etap migracji obejmuje następujące kroki:
+Etap **2 : Konfigurowanie** migracji do programu **[Ochrona usługi Office 365 w usłudze Microsoft Defender](migrate-to-defender-for-office-365.md#the-migration-process)**! Ten etap migracji obejmuje następujące kroki:
 
 1. [Tworzenie grup dystrybucyjnych dla użytkowników pilotażowych](#step-1-create-distribution-groups-for-pilot-users)
 2. [Konfigurowanie przesyłania użytkowników do raportowania wiadomości użytkownika](#step-2-configure-user-submission-for-user-message-reporting)
@@ -49,11 +49,11 @@ Etap **2: Konfigurowanie** migracji do programu **[Microsoft Defender](migrate-t
 
 Grupy dystrybucyjne są wymagane Microsoft 365 w następujących aspektach migracji:
 
-- Wyjątki od reguły **przepływu poczty SCL=-1**: chcesz, aby użytkownicy pilotażowi uzyskać pełny efekt ochrony usługi Defender dla usługi Office 365, więc ich wiadomości przychodzące muszą być skanowane przez program Defender w celu uzyskania dostępu do Office 365. Możesz to zrobić, definiując użytkowników pilotażowych w odpowiednich grupach dystrybucyjnych w programie Microsoft 365 i konfigurując te grupy jako wyjątki od reguły przepływu poczty SCL=-1.
+- **Wyjątki od reguły przepływu poczty SCL=-1**: chcesz, aby użytkownicy pilotażowi uzyskać pełny efekt ochrony Ochrona usługi Office 365 w usłudze Defender, więc ich wiadomości przychodzące muszą być skanowane przez Ochrona usługi Office 365 w usłudze Defender. Możesz to zrobić, definiując użytkowników pilotażowych w odpowiednich grupach dystrybucyjnych w programie Microsoft 365 i konfigurując te grupy jako wyjątki od reguły przepływu poczty SCL=-1.
 
-  Zgodnie z opisem w kroku 2 w aplikacji [: (](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)Opcjonalnie) Wyklucz użytkowników pilotażowych z filtrowania według istniejącej usługi ochrony, rozważ możliwość wykluczania tych samych użytkowników pilotażowych z funkcji skanowania za pomocą istniejącej usługi ochrony. Wyeliminowanie możliwości filtrowania przez istniejącą usługę ochrony i wyłączności korzystania z usługi Defender dla systemu Office 365 jest najlepszą i najbliższą reprezentacją tego, co się stanie po ukończeniu migracji.
+  Zgodnie z opisem w kroku 2 w aplikacji [: (](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)Opcjonalnie) Wyklucz użytkowników pilotażowych z filtrowania według istniejącej usługi ochrony, rozważ możliwość wykluczania tych samych użytkowników pilotażowych z funkcji skanowania za pomocą istniejącej usługi ochrony. Wyeliminowanie możliwości filtrowania przez istniejącą usługę ochrony i korzystania wyłącznie z usługi Ochrona usługi Office 365 w usłudze Defender jest najlepszym i najbliższym odzwierciedleniem tego, co się stanie po ukończeniu migracji.
 
-- **Testowanie poszczególnych funkcji ochrony Office 365** Defender: Nawet w przypadku użytkowników pilotażowych nie chcesz włączać wszystkich funkcji jednocześnie. Etapowe podejście do funkcji ochrony, które są dostępne dla użytkowników pilotażowych, znacznie ułatwi rozwiązywanie problemów i dostosowywanie ich. Z myślą o tym zalecamy następujące grupy dystrybucyjne:
+- **Testowanie określonych Ochrona usługi Office 365 w usłudze Defender ochrony**: Nawet w przypadku użytkowników pilotażowych nie chcesz włączać wszystkich funkcji jednocześnie. Etapowe podejście do funkcji ochrony, które są dostępne dla użytkowników pilotażowych, znacznie ułatwi rozwiązywanie problemów i dostosowywanie ich. Z myślą o tym zalecamy następujące grupy dystrybucyjne:
   - **Grupa Sejf pilotażowa załączników**: **Na przykład MDOPilotSafeAttachments\_**
   - **Grupa Sejf pilotażowa**: **Na przykład MDOPilotSafeLinks\_**
   - **Grupa pilotażowa dla standardowych** ustawień zasad ochrony przed spamem i wyłudzania informacji: **Na przykład MDOPilotSpamPhishStandard\_\_**
@@ -61,15 +61,15 @@ Grupy dystrybucyjne są wymagane Microsoft 365 w następujących aspektach migra
 
 W celu zachowania przejrzystości użyjemy tych konkretnych nazw grup w tym artykule, ale możesz korzystać z własnej konwencji nazewnictwa.
 
-Gdy wszystko będzie gotowe do rozpoczęcia testowania, dodaj te grupy jako wyjątki od reguły [przepływu poczty SCL=-1](#step-3-maintain-or-create-the-scl-1-mail-flow-rule). Podczas tworzenia zasad dla różnych funkcji ochrony w programie Defender Office 365 dla systemu Office 365 te grupy będą używać jako warunków, które określają, kogo dotyczą zasady.
+Gdy wszystko będzie gotowe do rozpoczęcia testowania, dodaj te grupy jako wyjątki od reguły [przepływu poczty SCL=-1](#step-3-maintain-or-create-the-scl-1-mail-flow-rule). Podczas tworzenia zasad dla różnych funkcji ochrony w programie Ochrona usługi Office 365 w usłudze Defender te grupy będą używać jako warunków definiującego, kogo dotyczą zasady.
 
 **Uwagi**:
 
-- Terminy Standardowy i Ścisłe pochodzą z naszych [zalecanych ustawień](recommended-settings-for-eop-and-office365.md) zabezpieczeń, które są również używane w wstępnie [ustawionych zasadach zabezpieczeń](preset-security-policies.md). Najlepiej byłoby określić użytkowników pilotażowych w ramach standardowych i ściśle wstępnie ustawionych zasad zabezpieczeń, ale nie możemy tego zrobić. Dlaczego? Ponieważ nie można dostosowywać ustawień w wstępnie ustawionych zasadach zabezpieczeń (w szczególności akcji, które są podejmowane na wiadomościach lub dostosowania ustawień ochrony personifikacji). Podczas testowania migracji chcesz sprawdzić, co program Defender dla systemu Office 365 zrobi dla wiadomości, sprawdzić, czy jest to możliwe, i ewentualnie dostosować konfiguracje zasad, aby zezwolić na te wyniki lub zapobiec ich.
+- Terminy Standardowy i Ścisłe pochodzą z naszych [zalecanych ustawień](recommended-settings-for-eop-and-office365.md) zabezpieczeń, które są również używane w wstępnie [ustawionych zasadach zabezpieczeń](preset-security-policies.md). Najlepiej byłoby określić użytkowników pilotażowych w ramach standardowych i ściśle wstępnie ustawionych zasad zabezpieczeń, ale nie możemy tego zrobić. Dlaczego? Ponieważ nie można dostosowywać ustawień w wstępnie ustawionych zasadach zabezpieczeń (w szczególności akcji, które są podejmowane na wiadomościach lub dostosowania ustawień ochrony personifikacji). Podczas testowania migracji należy sprawdzić, co Ochrona usługi Office 365 w usłudze Defender zrobić w przypadku komunikatów, zweryfikować, czy jest to możliwe, i ewentualnie dostosować konfiguracje zasad, aby zezwolić na te wyniki lub zapobiec im.
 
   Zamiast wstępnie ustawionych zasad zabezpieczeń należy ręcznie utworzyć zasady niestandardowe z ustawieniami bardzo podobnymi do tych, które w niektórych przypadkach różnią się od ustawień standardowych i ścisłych wstępnie ustawionych zasad zabezpieczeń.
 
-- Jeśli chcesz poeksperymentować z ustawieniami, które znacznie różnią się od naszych wartości zalecanych standardowo lub ściśle, rozważ utworzenie i użycie dodatkowych i określonych grup dystrybucyjnych dla użytkowników pilotażowych w tych scenariuszach. Za pomocą Analizatora konfiguracji możesz sprawdzić, jakie są zabezpieczenia Twoich ustawień. Aby uzyskać instrukcje, [zobacz Analizator konfiguracji do ochrony zasad ochrony w usługach EOP i Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md).
+- Jeśli chcesz poeksperymentować z ustawieniami, które znacznie różnią się od naszych wartości zalecanych standardowo lub ściśle, rozważ utworzenie i użycie dodatkowych i określonych grup dystrybucyjnych dla użytkowników pilotażowych w tych scenariuszach. Za pomocą Analizatora konfiguracji możesz sprawdzić, jakie są zabezpieczenia Twoich ustawień. Aby uzyskać instrukcje, [zobacz Analizator konfiguracji do obsługi zasad ochrony w usługach EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](configuration-analyzer-for-security-policies.md).
 
   W większości organizacji najlepiej jest zacząć od zasad ściśle dostosowanych do zalecanych ustawień standardowych. Po tak dużej uwagi i opinii, ile można zrobić w dostępnych ramach czasowych, możesz później przejść do bardziej agresywnych ustawień. Ochrona personifikacji i dostarczanie do folderu Wiadomości-śmieci a dostarczanie do kwarantanny może wymagać dostosowania.
 
@@ -77,7 +77,7 @@ Gdy wszystko będzie gotowe do rozpoczęcia testowania, dodaj te grupy jako wyj�
 
 ## <a name="step-2-configure-user-submission-for-user-message-reporting"></a>Krok 2. Konfigurowanie przesyłania użytkownika na przykład dla raportowania wiadomości użytkownika
 
-Możliwość zidentyfikowania wyników fałszywie dodatnich lub wyników fałszywie ujemnych z programu Defender Office 365 jest ważną częścią migracji.
+Możliwość zidentyfikowania wyników fałszywie dodatnich lub wyników fałszywie ujemnych na Ochrona usługi Office 365 w usłudze Defender jest ważną częścią migracji.
 
 Możesz określić skrzynkę pocztową programu Exchange Online, aby odbierać wiadomości raportowe przez użytkowników jako złośliwe. Aby uzyskać więcej instrukcji, zobacz [Ustawienia wiadomości zgłoszonych przez użytkowników](user-submission.md). Ta skrzynka pocztowa może otrzymywać kopie wiadomości przesłanych przez użytkowników do firmy Microsoft, a także przechwycić wiadomości bez zgłaszania ich firmie Microsoft (zespół zabezpieczeń może ręcznie analizować i przesyłać wiadomości). Takie podejście do przecięcia nie umożliwia jednak usługi automatycznego dostrajania i nauki.
 
@@ -121,7 +121,7 @@ Aby uzyskać więcej informacji, zobacz Ustawianie poziomu ufności filtru spamu
 
 Pierwszą rzeczą, którą należy zrobić, jest skonfigurowanie ulepszonego filtrowania łączników [(](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)nazywanego również pomiń na *liście) na* łączniku używanym do przepływu poczty z istniejącej usługi ochrony do Microsoft 365. Raport wiadomości [przychodzących pomaga](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) w zidentyfikowaniu łącznika.
 
-Program Defender wymaga ulepszonego filtrowania łączników, aby program Office 365 w celu zobaczenia, skąd w rzeczywistości pochodziły wiadomości internetowe. Ulepszone filtrowanie łączników znacznie zwiększa dokładność stosu filtrowania firmy Microsoft (zwłaszcza analizy fałszowania[, a](anti-spoofing-protection.md) także funkcji po naruszeniu zabezpieczeń w Eksploratorze [](threat-explorer.md) zagrożeń i funkcji automatycznego wykrywania & [odpowiedzi (AIR](automated-investigation-response-office.md)).
+Ulepszone filtrowanie łączników jest wymagane przez Ochrona usługi Office 365 w usłudze Defender, aby sprawdzić, skąd w rzeczywistości pochodziły wiadomości internetowe. Ulepszone filtrowanie łączników znacznie zwiększa dokładność stosu filtrowania firmy Microsoft (zwłaszcza analizy fałszowania[, a](anti-spoofing-protection.md) także funkcji po naruszeniu zabezpieczeń w Eksploratorze [](threat-explorer.md) zagrożeń i funkcji automatycznego wykrywania & [odpowiedzi (AIR](automated-investigation-response-office.md)).
 
 Aby poprawnie włączyć rozszerzone filtrowanie łączników, musisz dodać publiczne **adresy IP** \***\*\***\* wszystkich usług innych firm i/lub lokalnych hostów systemu poczty e-mail, którzy przekierują pocztę przychodzących do Microsoft 365.
 
@@ -132,14 +132,14 @@ Aby upewnić się, że ulepszone filtrowanie łączników działa, upewnij się,
 
 ## <a name="step-5-create-pilot-protection-policies"></a>Krok 5. Tworzenie zasad ochrony pilotażowej
 
-Tworząc zasady produkcyjne, nawet jeśli nie są one stosowane do wszystkich użytkowników, możesz przetestować funkcje, takie jak Eksplorator zagrożeń po [](threat-explorer.md) naruszeniu zabezpieczeń, i przetestować integrację usługi Defender dla programu Office 365 z procesami zespołu reagowania na zabezpieczenia.
+Tworząc zasady produkcyjne, nawet jeśli nie są stosowane do wszystkich użytkowników, możesz przetestować funkcje, takie jak Eksplorator zagrożeń, po [](threat-explorer.md) naruszeniu zabezpieczeń, i przetestować integrację usługi Ochrona usługi Office 365 w usłudze Defender z procesami zespołu reagowania na zabezpieczenia.
 
 > [!IMPORTANT]
 > Zasady mogą być objęte zakresem użytkowników, grup lub domen. Nie zaleca się mieszania wszystkich trzech zasad, ponieważ tylko użytkownicy, którzy pasują do wszystkich trzech, będą wchodzić w zakres tych zasad. W przypadku zasad pilotażowych zalecamy korzystanie z grup lub użytkowników. W przypadku zasad produkcyjnych zalecamy używanie domen. Niezwykle ważne jest, aby zrozumieć, że  tylko podstawowa domena poczty e-mail użytkownika określa, czy użytkownik wchodzi w zakres tych zasad. Zatem jeśli przełączysz rekord MX dla domeny pomocniczej użytkownika, upewnij się, że jego domena podstawowa jest również objęta zasadami.
 
 ### <a name="create-pilot-safe-attachments-policies"></a>Tworzenie zasad załączników Sejf pilotażowych
 
-[Sejf Załączniki to](safe-attachments.md) najłatwiejsza funkcja usługi Defender Office 365 włączyć i przetestować przed przełączeniem rekordu MX. Sejf mają następujące zalety:
+[Sejf Załączniki to](safe-attachments.md) najłatwiejsza Ochrona usługi Office 365 w usłudze Defender włączyć i przetestować przed przełączeniem rekordu MX. Sejf mają następujące zalety:
 
 - Minimalna konfiguracja.
 - Bardzo mała szansa na wyniki fałszywie dodatnie.
@@ -190,7 +190,7 @@ W przypadku wykrywania personifikacji zignoruj zalecane działania standardowe i
 - **Jeśli wiadomość zostanie wykryta jako spersonifikowana domena**
 - **Jeśli w analizie skrzynki pocztowej zostanie wykryty personifikowany użytkownik**
 
-Użyj szczegółowych informacji o personifikacji, aby obserwować wyniki. Aby uzyskać więcej informacji, zobacz [Informacje o personifikacji w programie Defender dla Office 365](impersonation-insight.md).
+Użyj szczegółowych informacji o personifikacji, aby obserwować wyniki. Aby uzyskać więcej informacji, zobacz [Szczegółowe informacje dotyczące personifikacji Ochrona usługi Office 365 w usłudze Defender](impersonation-insight.md).
 
 Dostosujesz ochronę przed fałszerością (dostosuj dopuszcza i blokuje) i włączysz każdą akcję ochrony personifikacji w celu kwarantanny lub przenoszenia wiadomości do folderu Wiadomości-śmieci (na podstawie rekomendacji standardowych lub ścisłych). Możesz obserwować wyniki i dostosować ich ustawienia odpowiednio do potrzeb.
 
@@ -198,10 +198,10 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 
 - [Ochrona przed fałszerami](anti-spoofing-protection.md)
 - [Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-- [Skonfiguruj zasady ochrony przed wyłudzaniem informacji w programie Defender dla Office 365](configure-mdo-anti-phishing-policies.md).
+- [Skonfiguruj zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="next-step"></a>Następny krok
 
-**Gratulacje**! Ukończono etap **konfiguracji migracji** do programu [Microsoft Defender dla systemu Office 365](migrate-to-defender-for-office-365.md#the-migration-process)!
+**Gratulacje**! Ukończono etap **konfiguracji** migracji do programu [Ochrona usługi Office 365 w usłudze Microsoft Defender](migrate-to-defender-for-office-365.md#the-migration-process)!
 
 - Przejdź do [fazy 3. Do pracy](migrate-to-defender-for-office-365-onboard.md).

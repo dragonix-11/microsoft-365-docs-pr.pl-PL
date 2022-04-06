@@ -15,12 +15,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak używać szczegółowych informacji o uwierzytelnieniu SMTP i raportów na pulpicie nawigacyjnym przepływu poczty w Centrum zgodności usługi & w celu monitorowania nadawców wiadomości e-mail w organizacji, które wysyłają wiadomości e-mail przy użyciu uwierzytelnionego protokołu SMTP (SMTP AUTH).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e21e9fae80880b479070b1920379b925bf7074c7
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8c2152820e7f3d5dbf04534e5f0b0fec344ecc7b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681133"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474998"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Szczegółowe informacje o klientach uwierzytelniania SMTP i raport w Centrum & zgodności
 
@@ -28,18 +28,18 @@ ms.locfileid: "63681133"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Szczegółowe informacje dotyczące klientów **usługi SMTP Auth** na [](mail-flow-insights-v2.md) pulpicie nawigacyjnym przepływu poczty i skojarzonym z nim raportem Klienci uwierzytelniania [SMTP](#smtp-auth-clients-report) w Centrum zgodności [usługi Zabezpieczenia &](https://protection.office.com) wyróżnieniem użycia protokołu przesyłania klienta SMTP AUTH przez użytkowników lub konta systemowe w organizacji. Ten starszy protokół (który używa parametru smtp.office365.com) oferuje tylko uwierzytelnianie podstawowe i jest podatny na użycie przez naruszone konta do wysyłania wiadomości e-mail. Szczegółowe informacje i raporty pozwalają sprawdzić nietypowe działania dotyczące przesyłania wiadomości e-mail przy użyciu protokołu SMTP AUTH. Pokazano też dane użycia protokołu TLS dla klientów lub urządzeń korzystających z protokołu SMTP AUTH.
 
 Widżet wskazuje liczbę użytkowników lub kont usług, które w ciągu ostatnich 7 dni używały protokołu SMTP Auth.
 
-![Widżet klientów protokołu SMTP Auth na pulpicie nawigacyjnym przepływu poczty w Centrum & zabezpieczeń i zgodności.](../../media/mfi-smtp-auth-clients-report-widget.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-widget.png" alt-text="Widżet klientów uwierzytelniania SMTP na pulpicie nawigacyjnym przepływu poczty w Centrum & zabezpieczeń" lightbox="../../media/mfi-smtp-auth-clients-report-widget.png":::
 
 Jeśli klikniesz liczbę wiadomości na widżecie, **zostanie wyświetlone wysuwne okno wysuwu klientów usługi SMTP Auth** . Wysuw zawiera zagregowany widok użycia i wielkości TLS z ostatniego tygodnia.
 
-![Wysuwne szczegóły po kliknięciu widżetu Klienci protokołu SMTP Auth na pulpicie nawigacyjnym przepływu poczty e-mail.](../../media/mfi-smtp-auth-clients-report-details.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-details.png" alt-text="Wysuwne menu Szczegóły po kliknięciu widżetu Klienci uwierzytelniania SMTP na pulpicie nawigacyjnym przepływu poczty" lightbox="../../media/mfi-smtp-auth-clients-report-details.png":::
 
 Możesz kliknąć link raport klienci **uwierzytelniania SMTP** , aby przejść do raportu klientów usługi SMTP Auth zgodnie z opisem w następnej sekcji.
 
@@ -53,11 +53,11 @@ Sekcja przeglądu zawiera następujące wykresy:
 
 - **Wyświetlanie danych według:** Wysyłanie woluminu: Domyślnie na wykresie jest pokazana liczba wiadomości klienckich protokołu SMTP Auth, które zostały wysłane ze wszystkich domen (Pokaż dane dla **:** Domyślnie wybrana jest opcja Wszystkie domeny nadawcy). Możesz filtrować wyniki do określonej domeny nadawcy, klikając pozycję  Pokaż dane dla i wybierając domenę nadawcy z listy rozwijanej. Po umieszczeniu wskaźnika myszy na określonym punkcie danych (dzień) zostanie pokazana liczba wiadomości.
 
-  ![Widok woluminu wysyłania w raporcie Klienci uwierzytelniania SMTP w Centrum & zgodności.](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
+  :::image type="content" source="../../media/mfi-smtp-auth-clients-report-sending-volume-view.png" alt-text="The Sending volume view in the SMTP Auth clients report in the Security & Compliance Center" lightbox="../../media/mfi-smtp-auth-clients-report-sending-volume-view.png":::
 
 - **Wyświetlanie danych według: Użycie protokołu TLS**: na wykresie przedstawiono procent użycia protokołu TLS dla wszystkich wiadomości klienta uwierzytelniania SMTP w wybranym okresie. Ten wykres pozwala identyfikować użytkowników i konta systemowe, które nadal używa starszych wersji usługi TLS, i podjąć w związku z tym działania.
 
-  ![Widok użycia protokołu TLS w raporcie Klienci uwierzytelniania SMTP w Centrum & zabezpieczeń.](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
+  :::image type="content" source="../../media/mfi-smtp-auth-clients-report-tls-usage-view.png" alt-text="Widok użycia protokołu TLS w raporcie Klienci uwierzytelniania SMTP w Centrum & zabezpieczeń" lightbox="../../media/mfi-smtp-auth-clients-report-tls-usage-view.png":::
 
 Jeśli klikniesz **pozycję Filtry** w widoku raportu, możesz określić zakres dat w **datach Rozpoczęcie** i **Data zakończenia**.
 
@@ -88,7 +88,7 @@ Jeśli klikniesz **pozycję Filtry** w widoku tabeli szczegółów, możesz okre
 
 Jeśli zaznaczysz wiersz, podobne szczegóły zostaną wyświetlone w wysuwanych informacjach:
 
-![Wysuwowe szczegóły z tabeli szczegółów widoku użycia protokołu TLS w raporcie Klienci uwierzytelniania SMTP.](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png" alt-text="Wysuwowe szczegóły z tabeli szczegółów widoku użycia protokołu TLS w raporcie Klienci protokołu SMTP Auth" lightbox="../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png":::
 
 Kliknij **pozycję Poproś o** raport, aby uzyskać bardziej szczegółową wersję raportu w wiadomości e-mail. Można określić zakres dat i adresatów raportu.
 

@@ -1,7 +1,7 @@
 ---
-title: Połączone aplikacje w programie Microsoft Defender for Endpoint
+title: Połączone aplikacje w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.reviewer: ''
-description: Wyświetl połączone aplikacje partnerskie, które używają standardowego protokołu OAuth 2.0 do uwierzytelniania i zapewnienia tokenów do używania z interfejsami API programu Microsoft Defender dla punktów końcowych.
+description: Wyświetlanie połączonych aplikacji partnerów, które używają standardowego protokołu OAuth 2.0 do uwierzytelniania i zapewnienia tokenów do używania z Ochrona punktu końcowego w usłudze Microsoft Defender API.
 keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,20 +15,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4dd630dd2b35c2fedc0340cd873ff065b2685b41
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 9e15103f4366d0717af9cec44d516b4b16a7160a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996272"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475570"
 ---
-# <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Połączone aplikacje w programie Microsoft Defender for Endpoint
+# <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Połączone aplikacje w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -36,7 +36,7 @@ ms.locfileid: "62996272"
 
 Połączone aplikacje są zintegrowane z platformą Defender for Endpoint przy użyciu interfejsów API.
 
-Aplikacje używają standardowego protokołu OAuth 2.0 do uwierzytelniania i uwierzytelniania tokenów do używania z interfejsami API programu Microsoft Defender dla punktów końcowych. Ponadto aplikacje usługi Azure Active Directory (Azure AD) umożliwiają administratorom dzierżawy ustawienie jawnej kontroli nad tym, do których interfejsów API można uzyskiwać dostęp przy użyciu odpowiedniej aplikacji.
+Aplikacje używają standardowego protokołu OAuth 2.0 do uwierzytelniania i uwierzytelniania tokenów do używania z Ochrona punktu końcowego w usłudze Microsoft Defender API. Ponadto aplikacje usługi Azure Active Directory (Azure AD) umożliwiają administratorom dzierżawy ustawienie jawnej kontroli nad tym, do których interfejsów API można uzyskiwać dostęp przy użyciu odpowiedniej aplikacji.
 
 Aby korzystać [z interfejsów](/microsoft-365/security/defender-endpoint/apis-intro) API z połączenią aplikacją, należy wykonać poniższe czynności.
 
@@ -44,10 +44,10 @@ W menu nawigacji po lewej stronie wybierz pozycję **Partnerzy & INTERFEJSY API*
 
 ## <a name="view-connected-application-details"></a>Wyświetlanie szczegółów połączonej aplikacji
 
-Strona Połączone aplikacje zawiera informacje o aplikacjach usługi Azure AD połączonych z programem Microsoft Defender for Endpoint w organizacji. Możesz przejrzeć użycie połączonych aplikacji: ostatnio widziane, liczbę żądań w ciągu ostatnich 24 godzin i zażądać trendów w ciągu ostatnich 30 dni.
+Strona Połączone aplikacje zawiera informacje o aplikacjach usługi Azure AD połączonych Ochrona punktu końcowego w usłudze Microsoft Defender Twojej organizacji. Możesz przejrzeć użycie połączonych aplikacji: ostatnio widziane, liczbę żądań w ciągu ostatnich 24 godzin i zażądać trendów w ciągu ostatnich 30 dni.
 
-![Obraz połączonych aplikacji.](images/connected-apps.png)
+:::image type="content" source="images/connected-apps.png" alt-text="Połączone aplikacje" lightbox="images/connected-apps.png":::
  
 ## <a name="edit-reconfigure-or-delete-a-connected-application"></a>Edytowanie, ponowne konfigurowanie lub usuwanie połączonej aplikacji
 
-Link **Otwórz ustawienia aplikacji powoduje** otwarcie odpowiedniej strony zarządzania aplikacją usługi Azure AD w portalu Azure Portal. W portalu Azure Portal możesz zarządzać uprawnieniami, ponownie skonfigurować lub usunąć połączone aplikacje.
+Link **Otwórz ustawienia aplikacji powoduje** otwarcie odpowiedniej strony zarządzania aplikacją usługi Azure AD w Azure Portal. Z poziomu Azure Portal możesz zarządzać uprawnieniami, ponownie skonfigurować lub usunąć połączone aplikacje.

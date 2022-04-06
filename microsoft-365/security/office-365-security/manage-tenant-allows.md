@@ -16,12 +16,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować zezwalają na to w portalu zabezpieczeń na liście zezwalania/blokowania dzierżawy.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3823290e9f239b14e4bf97fe1ae8ef7020561697
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 755a23d7cddbeb2943809681fc90556a2adac25b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314116"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475548"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Opcja Dodaj na liście zezwalania/blokowania dzierżawy
 
@@ -29,7 +29,7 @@ ms.locfileid: "63314116"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Administratorzy nie mogą dodawać zezwalają bezpośrednio na listę zezwalania/blokowania dzierżawy. Zamiast tego możesz użyć procesu przesyłania administratora w celu przesłania wiadomości, która została zablokowana, dzięki czemu odpowiedni adres URL, plik i/lub nadawcy zostaną dodani do listy zezwalania/blokowania dzierżawy. Jeśli blok pliku, adresu URL lub nadawcy nie został zablokowany, nie zostanie utworzony zezwalanie. W większości przypadków, gdy wiadomość została określona jako fałszywie dodatnia, która została niepoprawnie zablokowana, zezwala się na to tak długo, jak jest to konieczne, aby zapewnić czas systemowy umożliwiający im naturalne zezwalanie.
@@ -55,9 +55,7 @@ Zezwalaj nadawcom (lub domenom) na stronie **Przesyłanie** w Microsoft 365 Defe
 
 7. Po zakończeniu kliknij przycisk **Prześlij** .
 
-> [!div class="mx-imgBorder"]
 > ![Prześlij złośliwe oprogramowanie do firmy Microsoft na przykład do analizy.](../../media/admin-submission-allow-messages.png)
-
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Dodawanie adresu URL umożliwia korzystanie z portalu Materiały
 
 Zezwalaj na adresy URL na **stronie Przesyłanie** w Microsoft 365 Defender.
@@ -78,7 +76,6 @@ Zezwalaj na adresy URL na **stronie Przesyłanie** w Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Prześlij adres URL do analizy.](../../media/submit-url-for-analysis.png)
-
 ## <a name="add-file-allows-using-the-submissions-portal"></a>Opcja Dodaj plik umożliwia korzystanie z portalu Materiały
 
 Zezwalaj na pliki **na stronie Przesyłanie** w Microsoft 365 Defender.

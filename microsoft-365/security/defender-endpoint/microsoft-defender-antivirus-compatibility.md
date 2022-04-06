@@ -18,19 +18,19 @@ ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: be29874a087936c7131492bde1a3f541e7d00f43
-ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
+ms.openlocfilehash: e8a1e08242ab3f884115c414f8a1ba80f5f2aa17
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64645083"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507082"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi
 
 **Dotyczy:**
 
 - Program antywirusowy Microsoft Defender
-- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -146,7 +146,7 @@ W tabeli w tej sekcji podsumowano funkcje i możliwości, które aktywnie dział
 > [!IMPORTANT]
 > Następująca tabela ma wyłącznie informacyjne informacje. Nie wyłączaj **funkcji, takich** jak ochrona w czasie rzeczywistym, ochrona w chmurze lub ograniczone skanowanie okresowe, jeśli używasz programu Program antywirusowy Microsoft Defender w trybie pasywnym lub jeśli używasz programu [EDR](edr-in-block-mode.md) w trybie blokowania, który działa w tle w celu wykrywania i korygowania złośliwych artefaktów, które zostały wykryte po naruszeniu zabezpieczeń.
 
- | Ochrona | Program antywirusowy Microsoft Defender <br/>(*Tryb aktywny*) | Program antywirusowy Microsoft Defender <br/>(*Tryb pasywny*) | Program antywirusowy Microsoft Defender <br/>(*Wyłączone lub odinstalowane*) | [Funkcja EDR w trybie blokowania](edr-in-block-mode.md) | 
+ | Ochrona | Program antywirusowy Microsoft Defender <br/>(*Tryb aktywny*) | Program antywirusowy Microsoft Defender <br/>(*Tryb pasywny*) | Program antywirusowy Microsoft Defender <br/>(*Wyłączone lub odinstalowane*) | [EDR w trybie blokowania](edr-in-block-mode.md) | 
  |:---|:---|:---|:---|:---| 
  | [Ochrona w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md) | Tak | Zobacz <sup>notatkę [[4](#fn4)]</sup> | Nie | Nie | 
  | [Ochrona w chmurze](enable-cloud-protection-microsoft-defender-antivirus.md) | Tak | Nie  | Nie | Nie | 
@@ -161,7 +161,7 @@ W tabeli w tej sekcji podsumowano funkcje i możliwości, które aktywnie dział
 
 (<a id="fn5">5</a>) Jeśli Program antywirusowy Microsoft Defender tryb pasywny, skanowanie nie jest zaplanowane.
 
-(<a id="fn6">6</a>) Gdy Program antywirusowy Microsoft Defender tryb pasywny, nie są one korygowane w przypadku zagrożeń. Jednak wykrywanie i reagowanie punktu końcowego [(EDR) w trybie blokowania](edr-in-block-mode.md) może rozwiązać te zagrożenia. W takim przypadku mogą być wyświetlane alerty pokazujące, Program antywirusowy Microsoft Defender jako źródło, nawet jeśli Program antywirusowy Microsoft Defender jest w trybie pasywnym.
+(<a id="fn6">6</a>) Gdy Program antywirusowy Microsoft Defender tryb pasywny, nie są one korygowane w przypadku zagrożeń. Jednak wykrywanie i reagowanie punktu końcowego [(EDR) w trybie blokowania umożliwia rozwiązywanie problemów związanych z zagrożeniami](edr-in-block-mode.md). W takim przypadku mogą być wyświetlane alerty pokazujące, Program antywirusowy Microsoft Defender jako źródło, nawet jeśli Program antywirusowy Microsoft Defender jest w trybie pasywnym.
 
 > [!NOTE]
 > [Microsoft 365 punktu końcowego](/microsoft-365/compliance/endpoint-dlp-learn-about) ochrona przed utratą danych nadal normalnie działa, gdy Program antywirusowy Microsoft Defender jest aktywny lub pasywny.
@@ -188,16 +188,16 @@ Aby potwierdzić stan Program antywirusowy Microsoft Defender, można użyć jed
 
 W tabeli w tej sekcji opisano różne stany, które mogą być Program antywirusowy Microsoft Defender.
 
- |  Stan  |  Efekt  | 
+ |  Stan  |  Co się dzieje  | 
  |:---|:---| 
  |  Tryb aktywny  |  W trybie aktywnym Program antywirusowy Microsoft Defender jako aplikacja antywirusowa na komputerze. Ustawienia skonfigurowane przy użyciu Configuration Manager, zasady grupy, Microsoft Intune lub innych produktów do zarządzania. Pliki są skanowane, są naprawiane zagrożenia, a informacje o wykrywaniu są raportowane w narzędziu konfiguracji (takim jak Configuration Manager lub aplikacja Program antywirusowy Microsoft Defender na samym punkcie końcowym).  | 
  |  Tryb pasywny  |  W trybie pasywnym Program antywirusowy Microsoft Defender nie jest używana jako aplikacja antywirusowa, a zagrożenia nie są  korygowane przez Program antywirusowy Microsoft Defender. Natomiast wykrywanie i reagowanie punktu końcowego [(EDR)](edr-in-block-mode.md) w trybie blokowania może pomóc w eliminowaniu zagrożeń. <br/><br/> Pliki są skanowane przez EDR, a także są udostępniane raporty dotyczące wykrywania zagrożeń udostępnianych w usłudze Defender for Endpoint. Mogą być wyświetlane alerty Program antywirusowy Microsoft Defender źródła, nawet jeśli Program antywirusowy Microsoft Defender jest w trybie pasywnym. <br/><br/> Gdy Program antywirusowy Microsoft Defender jest pasywny, nadal można zarządzać aktualizacjami dla aplikacji [Program antywirusowy Microsoft Defender, ale](manage-updates-baselines-microsoft-defender-antivirus.md) nie można przenosić nowych Program antywirusowy Microsoft Defender  w tryb aktywny, jeśli Twoje urządzenia mają produkt antywirusowy firmy Microsoft, który zapewnia ochronę w czasie rzeczywistym przed złośliwym oprogramowaniem. <br/><br/> W celu zapewnienia optymalnej ochrony i wykrywania w warstwie zabezpieczeń pamiętaj o tym, aby pobrać aktualizacje oprogramowania antywirusowego i ochrony przed złośliwym oprogramowaniem, nawet Program antywirusowy Microsoft Defender działa w trybie pasywnym. Zobacz [Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> Zwróć uwagę, że tryb pasywny jest obsługiwany tylko w Windows Server 2012 R2 & 2016, gdy komputer jest wnoszony przy użyciu [nowoczesnego, ujednoliconego rozwiązania](/microsoft-365/security/defender-endpoint/configure-server-endpoints).  | 
- |  Wyłączona <br/><br/> lub <br/><br/> Odinstalowane  |  Po wyłączeniu lub odinstalowaniu Program antywirusowy Microsoft Defender nie jest używana jako aplikacja antywirusowa. Pliki nie są skanowane, a działania zagrożeń nie są korygowane. <br/><br/> Wyłączanie lub odinstalowywanie Program antywirusowy Microsoft Defender nie jest zalecane. Jeśli to możliwe, zachowaj pasywne Program antywirusowy Microsoft Defender w trybie pasywnym, jeśli używasz rozwiązania innego niż firmy Microsoft w celu ochrony przed złośliwym oprogramowaniem/oprogramowaniem antywirusowym. <br/><br/> W przypadkach Program antywirusowy Microsoft Defender gdy program Program antywirusowy Microsoft Defender jest wyłączony automatycznie, można go ponownie włączyć automatycznie, jeśli produkt inny niż firmy Microsoft antywirusowy/chroniący przed złośliwym kodem wygaśnie lub w inny sposób przestanie zapewniać ochronę w czasie rzeczywistym przed wirusami, złośliwym oprogramowaniem lub innymi zagrożeniami. Automatyczne ponowne włączenie programu Program antywirusowy Microsoft Defender pozwala zapewnić zachowanie ochrony antywirusowej dla punktów końcowych. <br/><br/> Możesz również okresowo przeprowadzać ograniczone [skanowanie, które](limited-periodic-scanning-microsoft-defender-antivirus.md) działa z aparatem Program antywirusowy Microsoft Defender, w celu okresowego sprawdzania zagrożeń, jeśli korzystasz z aplikacji antywirusowej innych niż firmy Microsoft.  | 
+ |  Wyłączone <br/><br/> lub <br/><br/> Odinstalowane  |  Po wyłączeniu lub odinstalowaniu Program antywirusowy Microsoft Defender nie jest używana jako aplikacja antywirusowa. Pliki nie są skanowane, a działania zagrożeń nie są korygowane. <br/><br/> Wyłączanie lub odinstalowywanie Program antywirusowy Microsoft Defender nie jest zalecane. Jeśli to możliwe, zachowaj pasywne Program antywirusowy Microsoft Defender w trybie pasywnym, jeśli używasz rozwiązania innego niż firmy Microsoft w celu ochrony przed złośliwym oprogramowaniem/oprogramowaniem antywirusowym. <br/><br/> W przypadkach Program antywirusowy Microsoft Defender gdy program Program antywirusowy Microsoft Defender jest wyłączony automatycznie, można go ponownie włączyć automatycznie, jeśli produkt inny niż firmy Microsoft antywirusowy/chroniący przed złośliwym kodem wygaśnie lub w inny sposób przestanie zapewniać ochronę w czasie rzeczywistym przed wirusami, złośliwym oprogramowaniem lub innymi zagrożeniami. Automatyczne ponowne włączenie programu Program antywirusowy Microsoft Defender pozwala zapewnić zachowanie ochrony antywirusowej dla punktów końcowych. <br/><br/> Możesz również okresowo przeprowadzać ograniczone [skanowanie, które](limited-periodic-scanning-microsoft-defender-antivirus.md) działa z aparatem Program antywirusowy Microsoft Defender, w celu okresowego sprawdzania zagrożeń, jeśli korzystasz z aplikacji antywirusowej innych niż firmy Microsoft.  | 
 
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Program antywirusowy Microsoft Defender na Windows klientach](microsoft-defender-antivirus-in-windows-10.md)
 - [Program antywirusowy Microsoft Defender na Windows Server](microsoft-defender-antivirus-on-windows-server.md)
-- [Funkcja EDR w trybie blokowania](edr-in-block-mode.md)
+- [EDR w trybie blokowania](edr-in-block-mode.md)
 - [Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w punktach końcowych](/microsoft-365/compliance/endpoint-dlp-learn-about)

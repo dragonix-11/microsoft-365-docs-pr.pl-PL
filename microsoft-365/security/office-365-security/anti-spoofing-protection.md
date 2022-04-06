@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: Administratorzy mogą dowiedzieć się więcej o funkcjach ochrony przed fałszerzami dostępnych w programie Exchange Online Protection (EOP), które mogą pomóc w zminimalizowaniu ataków na wyłudzanie informacji ze strony sfałszowanych nadawców i domen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b93f2e1543a70ca7b5dde8ab5e83d48fba5f5a5e
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 140ed15b793b5d6b74b39a35b854b7432a658bc3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "63012510"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475174"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Ochrona przed fałszeringem w uciekaniu poczty eop
 
@@ -35,7 +35,7 @@ ms.locfileid: "63012510"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 W Microsoft 365 z skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacjach usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online program EOP zawiera funkcje chroniące organizację przed fałszywymi (sfałszowaymi) nadawcami.
@@ -48,24 +48,24 @@ W umiędzy EOP są dostępne następujące technologie ochrony przed fałszerami
 
   Program EOP analizuje i blokuje wiadomości, których nie można uwierzytelnić za pomocą kombinacji standardowych metod uwierzytelniania poczty e-mail i technik reputacji nadawcy.
 
-  ![Testy ochrony przed fałszer kontrolą EOP.](../../media/eop-anti-spoofing-protection.png)
+  :::image type="content" source="../../media/eop-anti-spoofing-protection.png" alt-text="Testy ochrony przed fałszerszem programu EOP" lightbox="../../media/eop-anti-spoofing-protection.png":::
 
 - **Szczegółowe informacje o analizie** fałszowania: Przeglądanie fałszywych wiadomości od nadawców w domenach wewnętrznych i zewnętrznych w ciągu ostatnich 7 dni oraz zezwalanie na tych nadawców lub blokowanie ich. Aby uzyskać więcej informacji, zobacz [Spoof intelligence insight in EOP (Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)).
 
 - Zezwalanie na spoofed nadawców lub blokowanie ich na liście zezwalania **/** blokowania dzierżawy: Gdy zastąpisz werdykt w analizie fałszowania, fałszywy nadawca stanie się ręcznym wpisem zezwalania lub blokowania, który pojawia się tylko na karcie Fałsz na liście zezwalania/blokowania dzierżawy. Możesz również ręcznie utworzyć zezwalanie na nadawców lub blokować ich wpisy podszywają się pod nadawców, zanim zostaną one wykryte przez sfałszowaną inteligencję. Aby uzyskać więcej informacji, zobacz [Zarządzanie listą zezwalania/blokowania dzierżawy w u usługi EOP](tenant-allow-block-list.md).
 
-- **Zasady ochrony przed wyłudzaniem** informacji: W usługach EOP i Microsoft Defender dla systemu Office 365 zasady ochrony przed wyłudzaniem informacji zawierają następujące ustawienia ochrony przed fałszerniem:
+- **Zasady ochrony przed wyłudzaniem** informacji: W Ochrona usługi Office 365 w usłudze Microsoft Defender EOP i programie EOP zasady ochrony przed wyłudzaniem informacji zawierają następujące ustawienia ochrony przed fałszerniem:
   - Włącz lub wyłącz analizę fałszowania.
   - Włączanie lub wyłączanie identyfikacji nieuwierzytanych Outlook nadawców.
   - Określ akcję dla zablokowanych sfałszowanych nadawców.
 
   Aby uzyskać więcej informacji, zobacz [Ustawienia fałszowania w zasadach ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md#spoof-settings).
 
-  **Uwaga**: Zasady ochrony przed wyłudzaniem informacji w programie Defender Office 365 ochrony przed dodawaniem, w tym ochrony **przed personifikacji**. Aby uzyskać więcej informacji, zobacz [Ustawienia wyłączności w zasadach ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+  **Uwaga**: Zasady ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender zawierają ochronę przed dodawaniem, w tym ochronę **przed personifikacjami**. Aby uzyskać więcej informacji, zobacz [Ustawienia wyłączności w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 - **Raport Fałsz wykrywanie**: Aby uzyskać więcej informacji, zobacz [Raport Fałsz wykrywanie](view-email-security-reports.md#spoof-detections-report).
 
-  **Uwaga**: Program Defender dla Office 365 organizacji może też wyświetlać informacje o próbach wyłudzania informacji za pomocą wykrywania w czasie rzeczywistym (plan 1) lub Eksploratora zagrożeń (plan 2). Aby uzyskać więcej informacji, [zobacz Microsoft 365 i reagowanie na zagrożenia](office-365-ti.md).
+  **Uwaga**: Ochrona usługi Office 365 w usłudze Defender organizacji mogą również wyświetlać informacje o próbach wyłudzania informacji za pomocą wykrywania w czasie rzeczywistym (plan 1) lub Eksploratora zagrożeń (plan 2). Aby uzyskać więcej informacji, [zobacz Microsoft 365 i reagowanie na zagrożenia](office-365-ti.md).
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Jak spoofing jest używany w atakach wyłudzających informacje
 

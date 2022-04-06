@@ -1,7 +1,7 @@
 ---
-title: Witaj świecie dla programu Microsoft Defender dla interfejsu API punktu końcowego
+title: Hello world interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.reviewer: ''
-description: Utwórz praktyczne wywołanie interfejsu API w stylu "Witaj świecie" do interfejsu API programu Microsoft Defender for Endpoint.
+description: Utwórz praktyczne wywołanie interfejsu API w stylu "Witaj świecie" do interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender API.
 keywords: api, obsługiwane api, zaawansowane szukanie, zapytanie, microsoft defender atp, microsoft defender for endpoint
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,24 +16,24 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 55d01dfe6d0b6fd69bf32016b1b5dd585827e168
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: bd8f48e8396225fc03441cfc7c8ed69fa3f378bb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996869"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475614"
 ---
-# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API — Hello World
+# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Ochrona punktu końcowego w usłudze Microsoft Defender API — Hello world
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
->Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -51,15 +51,15 @@ Procedura trwa tylko 5 minut w dwóch krokach:
 
 ### <a name="do-i-need-a-permission-to-connect"></a>Czy potrzebuję uprawnienia do nawiązywania połączenia?
 
-Na etapie rejestracji aplikacji musisz mieć rolę **administratora** globalnego w dzierżawie usługi Azure Active Directory (Azure AD).
+Na etapie rejestracji aplikacji musisz mieć **administrator globalny w** dzierżawie usługi Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Krok 1. Tworzenie aplikacji w aplikacji Azure Active Directory
 
-1. Zaloguj się do [platformy Azure](https://portal.azure.com) u użytkownika **administratora globalnego** .
+1. Zaloguj się do [platformy Azure](https://portal.azure.com) **u administrator globalny** użytkownika.
 
-2. Przejdź do **Azure Active Directory** \> **Rejestracja aplikacji Nowa** \> **rejestracja**.
+2. Przejdź do **Azure Active Directory** \> **Rejestracje aplikacji** \> **Rejestracja**.
 
-   :::image type="content" alt-text="Obraz Microsoft Azure nawigacji do rejestracji aplikacji." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="The Rejestracje aplikacji option under the Manage pane in the Azure Active Directory portal"  lightbox="images/atp-azure-new-app2.png":::
 
 3. W formularzu rejestracji wybierz nazwę aplikacji, a następnie kliknij pozycję **Zarejestruj**.
 
@@ -70,11 +70,11 @@ Na etapie rejestracji aplikacji musisz mieć rolę **administratora** globalnego
      > [!NOTE]
      > Funkcja WindowsDefenderATP nie jest wyświetlana na oryginalnej liście. Aby tekst był wyświetlany, musisz rozpocząć pisanie jego nazwy w polu tekstowym.
 
-     :::image type="content" alt-text="Obraz dostępu do interfejsu API i wybranego interfejsu API1." source="images/add-permission.png" lightbox="images/add-permission.png":::
+     :::image type="content" source="images/add-permission.png" alt-text="Opcja uprawnień interfejsu API w okienku Zarządzanie w portalu Azure Active Directory sieci" lightbox="images/add-permission.png":::
 
    - Wybierz **pozycję Alert uprawnień** **aplikacji.Odczyt**\>.> kliknij **pozycję Dodaj uprawnienia**.
 
-     :::image type="content" alt-text="Obraz dostępu do interfejsu API i wybranego interfejsu API2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
+     :::image type="content" source="images/application-permissions.png" alt-text="Typ uprawnień i okienka ustawień na stronie Żądanie uprawnień interfejsu API" lightbox="images/application-permissions.png":::
 
      > [!IMPORTANT]
      > Należy wybrać odpowiednie uprawnienia. "Czytaj wszystkie alerty" to tylko przykład!
@@ -90,7 +90,7 @@ Na etapie rejestracji aplikacji musisz mieć rolę **administratora** globalnego
    > [!NOTE]
    > Za każdym razem, gdy dodajesz uprawnienie, musisz **kliknąć pozycję** Udawaj zgodę, aby nowe uprawnienie było skuteczne.
 
-   ![Obraz części Udzielanie uprawnień.](images/grant-consent.png)
+   :::image type="content" source="images/grant-consent.png" alt-text="Opcja udzielania zgody na uprawnienia w Azure Active Directory portalu" lightbox="images/grant-consent.png":::
 
 6. Dodaj do aplikacji klucz tajny.
 
@@ -99,13 +99,13 @@ Na etapie rejestracji aplikacji musisz mieć rolę **administratora** globalnego
     > [!IMPORTANT]
     > Po kliknięciu przycisku Dodaj **skopiuj wygenerowaną wartość tajnych**. Po opuszczeniu programu nie będzie można ich odzyskać!
 
-    ![Obraz klucza aplikacji Create (Utwórz).](images/webapp-create-key2.png)
+    :::image type="content" source="images/webapp-create-key2.png" alt-text="Pozycja menu & Certyfikaty w okienku Zarządzanie w portalu Azure Active Directory wiadomości" lightbox="images/webapp-create-key2.png":::
 
 7. Zategolij swój identyfikator aplikacji i identyfikator dzierżawy.
 
    Na stronie aplikacji przejdź do strony **Omówienie i** skopiuj następujące elementy:
 
-   ![Obraz utworzonego identyfikatora aplikacji.](images/app-and-tenant-ids.png)
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Okienko szczegółów aplikacji w obszarze pozycji menu Przegląd w Azure Active Directory aplikacji" lightbox="images/app-and-tenant-ids.png":::
 
 Ukończono! Aplikacja została pomyślnie zarejestrowana!
 
@@ -143,7 +143,7 @@ Ukończono! Aplikacja została pomyślnie zarejestrowana!
   - Wklej w górnym polu.
   - Odszukaj sekcję "role". Znajdź rolę _Alert.Read.All_ .
 
-  :::image type="content" alt-text="Obraz jwt.ms." source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
+  :::image type="content" source="images/api-jwt-ms.png" alt-text="Okienko Token dekodowany dla jwt.ms" lightbox="images/api-jwt-ms.png":::
 
 ### <a name="lets-get-the-alerts"></a>Pozwala na uzyskiwanie alertów!
 
@@ -196,6 +196,6 @@ Wszystko gotowe! Udało Ci się:
 
 ## <a name="related-topic"></a>Temat pokrewny
 
-- [Interfejsy API programu Microsoft Defender dla punktów końcowych](exposed-apis-list.md)
-- [Uzyskiwanie dostępu do programu Microsoft Defender dla punktu końcowego w kontekście aplikacji](exposed-apis-create-app-webapp.md)
-- [Dostęp do programu Microsoft Defender dla punktu końcowego z kontekstem użytkownika](exposed-apis-create-app-nativeapp.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender interfejsów API](exposed-apis-list.md)
+- [Uzyskiwanie Ochrona punktu końcowego w usłudze Microsoft Defender z kontekstem aplikacji](exposed-apis-create-app-webapp.md)
+- [Uzyskiwanie Ochrona punktu końcowego w usłudze Microsoft Defender z kontekstem użytkownika](exposed-apis-create-app-nativeapp.md)
