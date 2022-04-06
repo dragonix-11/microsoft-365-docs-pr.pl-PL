@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 0bab6d8aa8aaef29b67ed8460f2d48e65cd24aa1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4bba9797572193199dba0bd4c928693d94bf00de
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314325"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569163"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Badanie zdarzeń w Microsoft 365 Defender
 
@@ -48,11 +48,11 @@ Przed rozpoczęciem pracy nad szczegółami sprawdź właściwości i podsumowan
 
 Możesz rozpocząć od wybrania zdarzenia w kolumnie znacznika wyboru. Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Przykład zaznaczania zdarzenia z kolumny znacznika wyboru." lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Wybieranie zdarzenia w portalu Microsoft 365 Defender-" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
 Gdy to zrobisz, zostanie otwarte okienko podsumowania z kluczowymi informacjami o zdarzeniu, takimi jak ważność, do kogo jest przypisane, oraz [miTRE ATT&CK&trade;](https://attack.mitre.org/) kategorii dla zdarzenia. Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Przykład okienka podsumowania dla zdarzenia." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Okienko, w którym są wyświetlane szczegóły podsumowania zdarzenia w portalu Microsoft 365 Defender projektu." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
 W tym miejscu możesz wybrać pozycję **Otwórz stronę zdarzenia**. Zostanie otwarta strona główna zdarzenia, na której znajdziesz więcej informacji podsumowujących oraz karty alertów, urządzeń, użytkowników, badań i dowodów.
 
@@ -62,7 +62,7 @@ Możesz również otworzyć stronę główną zdarzenia, wybierając nazwę zdar
 
 Strona **Podsumowanie** pozwala w skrócie spojrzeć na najważniejsze informacje na temat zdarzenia.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Przykład strony podsumowania zdarzenia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Podsumowanie informacji o zdarzeniu w portalu Microsoft 365 Defender." lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Informacje w tych sekcjach są uporządkowane.
 
@@ -82,12 +82,12 @@ Na karcie **Alerty** możesz wyświetlić kolejkę alertów dla alertów dotycz�
 
 - Ważność.
 - Jednostki, które uczestniczyły w alercie.
-- Źródło alertów (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Defender for Cloud Apps i dodatek do zarządzania aplikacjami).
+- Źródło alertów (alertów, Microsoft Defender for Identity, Ochrona punktu końcowego w usłudze Microsoft Defender, Ochrona usługi Office 365 w usłudze Microsoft Defender Defender dla Chmury aplikacje i dodatek do zarządzania aplikacjami).
 - Powód, dla którego łączyli się ze sobą.
 
 Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Przykład strony Alerty dla zdarzenia." lightbox="../../media/investigate-incidents/incident-alerts.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Okienko Alerty dla zdarzenia w portalu Microsoft 365 Defender wiadomości" lightbox="../../media/investigate-incidents/incident-alerts.png":::
 
 Domyślnie alerty są uporządkowane chronologicznie, aby można było zobaczyć, jak z czasem przebiegł atak. Po wybraniu alertu w ramach zdarzenia program Microsoft 365 Defender informacje o alertach specyficzne dla kontekstu ogólnego zdarzenia. 
 
@@ -95,7 +95,7 @@ Możesz zobaczyć zdarzenia alertu, które inne wyzwalane alerty spowodowały bi
 
 Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Przykład strony ze szczegółami alertu w obrębie zdarzenia." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Szczegóły alertu w ramach zdarzenia w portalu Microsoft 365 Defender wypadku." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
 
 Strona alertu o zdarzeniu zawiera następujące sekcje:
 
@@ -117,11 +117,11 @@ Dowiedz się, jak używać kolejki alertów i stron alertów w celu [zbadania al
 
 Karta **Urządzenia** zawiera listę wszystkich urządzeń związanych z zdarzeniem. Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Przykład strony Urządzenia dla zdarzenia." lightbox="../../media/investigate-incidents/incident-devices.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Strona Urządzenia dla zdarzenia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/investigate-incidents/incident-devices.png":::
 
 Możesz zaznaczyć znacznik wyboru dla urządzenia, aby wyświetlić szczegółowe informacje o urządzeniu, dane katalogu, aktywne alerty i zalogowani użytkownicy. Wybierz nazwę urządzenia, aby wyświetlić szczegóły dotyczące urządzenia w spisie urządzeń programu Defender for Endpoint. Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Przykład strony urządzeń dla usługi Defender for Endpoint." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Strona Stan zasobów związanych z zapasami urządzeń w Ochrona punktu końcowego w usłudze Microsoft Defender." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 Na stronie urządzenia możesz zebrać dodatkowe informacje o urządzeniu, takie jak wszystkie związane z nim alerty, oś czasu i zalecenia dotyczące zabezpieczeń. Na przykład na karcie Oś  czasu możesz przewijać maszynną oś czasu i wyświetlać wszystkie zdarzenia i zachowania obserwowane na komputerze w kolejności chronologicznej z podniesionym alertami.
 
@@ -132,7 +132,7 @@ Na stronie urządzenia możesz zebrać dodatkowe informacje o urządzeniu, takie
 
 Na **karcie** Użytkownicy jest wymieniona lista wszystkich użytkowników, którzy zidentyfikowani są częścią zdarzenia lub są powiązani z nim. Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Przykład strony Użytkownicy dla zdarzenia." lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Strona Użytkownicy w portalu Microsoft 365 Defender sieci Web." lightbox="../../media/investigate-incidents/incident-users.png":::
 
 Możesz zaznaczyć znacznik wyboru dla użytkownika, aby wyświetlić szczegóły zagrożenia konta użytkownika, jego ekspozycji i informacji kontaktowych. Wybierz nazwę użytkownika, aby wyświetlić dodatkowe szczegóły konta użytkownika.
 
@@ -143,15 +143,15 @@ Dowiedz się, jak wyświetlać dodatkowe informacje o użytkownikach i zarządza
 
 Karta **Skrzynki** pocztowe zawiera listę wszystkich skrzynek pocztowych, które zostały zidentyfikowane jako część zdarzenia lub które są związane z nim. Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Przykład strony Skrzynki pocztowe dla zdarzenia." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Strona Skrzynki pocztowe dla zdarzenia w portalu Microsoft 365 Defender sieci Web." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-Możesz zaznaczyć znacznik wyboru skrzynki pocztowej, aby wyświetlić listę aktywnych alertów. Wybierz nazwę skrzynki pocztowej, aby wyświetlić dodatkowe szczegóły skrzynki pocztowej na stronie Eksploratora dla usługi Defender dla Office 365.
+Możesz zaznaczyć znacznik wyboru skrzynki pocztowej, aby wyświetlić listę aktywnych alertów. Wybierz nazwę skrzynki pocztowej, aby wyświetlić dodatkowe szczegóły skrzynki pocztowej na stronie Eksploratora dla Ochrona usługi Office 365 w usłudze Defender.
 
 ## <a name="investigations"></a>Badania
 
-Karta **Badania zawiera** listę [wszystkich zautomatyzowanych](m365d-autoir.md) badań wyzwalanych przez alerty dotyczące tego zdarzenia. Automatyczne badania będą wykonywać akcje naprawcze lub zaczekaj na zatwierdzenie akcji przez analityków w zależności od tego, jak skonfigurowano automatyczne badania do uruchamiania w usługach Defender for Endpoint i Defender for Office 365.
+Karta **Badania zawiera** listę [wszystkich zautomatyzowanych](m365d-autoir.md) badań wyzwalanych przez alerty dotyczące tego zdarzenia. Automatyczne badania będą wykonywać akcje naprawcze lub poczekać na zatwierdzenie akcji przez analityków w zależności od tego, jak skonfigurowano automatyczne badania do uruchamiania w programie Defender dla punktów końcowych i Ochrona usługi Office 365 w usłudze Defender.
 
-:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Przykład strony Badania zdarzenia." lightbox="../../media/investigate-incidents/incident-investigations.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Strona Badania zdarzenia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
 Wybierz badanie, aby przejść do jego strony szczegółów, aby uzyskać pełne informacje na temat stanu badania i rozwiązywania problemów. Jeśli w ramach badania istnieją akcje oczekujące na zatwierdzenie, zostaną one wyświetlone na karcie Historia akcji **oczekujących** . Działania w ramach rozwiązywania problemów.
 
@@ -169,7 +169,7 @@ Aby uzyskać więcej informacji, zobacz [Automatyczne badanie i odpowiedź w pro
 
 Karta **Dowód i odpowiedź** zawiera wszystkie obsługiwane zdarzenia i podejrzane jednostki w alertach dotyczących zdarzenia. Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Przykład strony dowodów i odpowiedzi dotyczącej zdarzenia." lightbox="../../media/investigate-incidents/incident-evidence.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Strona dowodów i odpowiedzi na zdarzenie w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/investigate-incidents/incident-evidence.png":::
 
 Microsoft 365 Defender automatycznie bada wszystkie zdarzenia obsługiwane przez zdarzenia oraz podejrzane jednostki w alertach, udostępniając Ci informacje o ważnych wiadomościach e-mail, plikach, procesach, usługach, adresach IP i innych elementach. Ułatwia to szybkie wykrywanie i blokowanie potencjalnych zagrożeń związanych z tym zdarzeniem.
 
@@ -184,16 +184,16 @@ Na **Graph** zaawansowanej możesz:
 1. Odtwarzaj alerty i węzły na wykresie w czasie, gdy występowały, aby zrozumieć chronologicznie atak.
 
 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Przykład odtwarzania alertów i węzłów na Graph głównej":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Odtwarzanie alertów i węzłów na Graph głównej":::
  
 
 2. Otwórz okienko encji, aby przejrzeć szczegóły encji i działać na działaniach naprawczych, takich jak usuwanie pliku lub odizolowanie urządzenia.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Przykład okienka encji na Graph głównej" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Okienko encji na stronie Graph w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
 
 3. Wyróżnianie alertów na podstawie jednostki, z którą są powiązane.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Przykład wyróżnienia alertu na Graph głównej" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Wyróżnienie alertu na Graph ekranie" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## <a name="next-steps"></a>Następne kroki
 

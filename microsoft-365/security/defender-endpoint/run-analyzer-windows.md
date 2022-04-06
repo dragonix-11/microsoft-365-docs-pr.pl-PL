@@ -1,6 +1,6 @@
 ---
 title: Uruchamianie analizatora klienta na Windows
-description: Dowiedz się, jak uruchomić program Microsoft Defender for Endpoint Client Analyzer w programie Windows.
+description: Dowiedz się, jak uruchomić analizatora Ochrona punktu końcowego w usłudze Microsoft Defender klienta w Windows.
 keywords: analizator klienta, czujnik rozwiązywania problemów, analizator, mdeanalyzer, okna
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 092a89e41efebafae36e81f5faa7cd3b52fde8d9
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 5fa284f5c57214f356bb6b90e12ca60ae019d277
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "63009741"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467142"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Uruchamianie analizatora klienta na Windows
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 1. Pobierz narzędzie [analizator klienta MDE](https://aka.ms/mdatpanalyzer) na Windows komputera, który chcesz zbadać.
 
@@ -61,17 +61,17 @@ Poza powyższymi informacjami dostępna jest również opcja zbierania dziennik�
 Wszystkie skrypty i moduły programu PowerShell dołączone do analizatora są podpisane przez firmę Microsoft.
 Jeśli pliki zostały w jakikolwiek sposób zmodyfikowane, analizator powinien zakończyć działanie z następującym błędem:
 
-![Obraz błędu analizatora klienta](images/sigerror.png)
+:::image type="content" source="images/sigerror.png" alt-text="Błąd analizatora klienta" lightbox="images/sigerror.png":::
 
 
 Jeśli ten błąd jest wyświetlany, wynik issuerInfo.txt będzie zawierał szczegółowe informacje o tym, dlaczego wystąpił i jaki plik został w związku z tym:
 
-![Obraz informacji o wystawcy](images/issuerinfo.png)
+:::image type="content" source="images/issuerinfo.png" alt-text="Informacje o wystawcy" lightbox="images/issuerinfo.png":::
 
 
 Przykładowa zawartość po MDEClientAnalyzer.ps1 zmodyfikowania:
 
-![Obraz zmodyfikowanego pliku ps1](images/modified-ps1.png)
+:::image type="content" source="images/modified-ps1.png" alt-text="Zmodyfikowany plik ps1" lightbox="images/modified-ps1.png":::
 
 
 

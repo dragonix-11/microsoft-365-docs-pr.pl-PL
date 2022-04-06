@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie programu Microsoft Defender dla punktu końcowego (plan 1)
+title: Konfigurowanie i konfigurowanie usługi Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1
 description: Dowiedz się, jak skonfigurować usługę Defender dla punktu końcowego (plan 1). Przejrzyj wymagania, zaplanuj swój projekt i skonfiguruj środowisko.
 search.appverid: MET150
 author: denisebmsft
@@ -16,23 +16,23 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: b169910c9f0ae96b68711b065af4e6147ddd3ae2
-ms.sourcegitcommit: f8267a0860de62dbd53ebb8a151a8e71a8ccda6a
+ms.openlocfilehash: 741450f2573e0d750a1d3de5012f97cf16a0780d
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016039"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569097"
 ---
-# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Konfigurowanie programu Microsoft Defender dla punktu końcowego (plan 1)
+# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Konfigurowanie i konfigurowanie usługi Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 W tym artykule opisano, jak skonfigurować usługę Defender dla punktu końcowego (plan 1). Niezależnie od tego, czy korzystasz z pomocy, czy też samodzielnie to robisz, możesz użyć tego artykułu jako przewodnika podczas wdrażania.  
 
 ## <a name="the-setup-and-configuration-process"></a>Proces konfiguracji
 
-:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Konfigurowanie i przepływ wdrażania dla programu Microsoft Defender dla punktu końcowego (plan 1)":::
+:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Konfigurowanie i przepływ wdrażania dla Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1" lightbox="images/mde-p1-deploymentflow.png":::
 
 Proces konfiguracji ogólnej dla programu Defender dla punktu końcowego (plan 1) jest następujący: <br/><br/>
 
@@ -53,10 +53,10 @@ W poniższej tabeli wymieniono podstawowe wymagania dotyczące usługi Defender 
 
 | Wymaganie | Opis |
 |:---|:---|
-| Wymagania dotyczące licencjonowania | Defender for Endpoint Plan 1 (dawniej: Microsoft Defender for Endpoint Lite)|
+| Wymagania dotyczące licencjonowania | Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1 |
 | Wymagania dotyczące przeglądarki | Microsoft Edge <br/> Internet Explorer w wersji 11 <br/> Google Chrome |
 | Systemy operacyjne | Windows 10, wersja 1709 lub nowsza <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) lub 10.14.6 (Mojave) <br/>iOS <br/>System operacyjny Android  |
-| Datacenter | Jedna z następujących lokalizacji centrów danych: <br/>- Unia Europejska <br/>— Zjednoczone Królestwo <br/>- Stany Zjednoczone |
+| Datacenter | Jedna z następujących lokalizacji centrów danych: <br/>- Unia Europejska <br/>— Zjednoczone Królestwo <br/>— Stany Zjednoczone |
 
 
 ## <a name="plan-your-deployment"></a>Planowanie wdrożenia
@@ -65,9 +65,9 @@ Podczas planowania wdrożenia możesz wybrać jedną z kilku różnych architekt
 
 | Metoda | Opis |
 |:---|:---|
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (zawarte w p Microsoft Endpoint Manager) | Zarządzanie punktami końcowymi w natywnym środowisku chmury za pomocą usługi Intune |
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) i [Menedżer konfiguracji](/mem/configmgr/core/understand/introduction) (zawarte w Microsoft Endpoint Manager) | Zarządzanie punktami końcowymi i obciążeniami w środowisku lokalnym i w chmurze za pomocą usługi Intune i usługi Menedżer konfiguracji |
-| [Menedżer konfiguracji](/mem/configmgr/core/understand/introduction) | Ochrona lokalnych Menedżer konfiguracji końcowych za pomocą opartego na chmurze rozwiązania Defender for Endpoint |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (zawarte w p Microsoft Endpoint Manager) | Zarządzanie Intune punktami końcowymi w środowisku natywnym chmury |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) i [Configuration Manager](/mem/configmgr/core/understand/introduction) (zawarte w p Microsoft Endpoint Manager) | Zarządzanie Intune i Configuration Manager i obciążeniami, które obejmują lokalne i chmurowe środowisko |
+| [Menedżer konfiguracji](/mem/configmgr/core/understand/introduction) | Ochrona Configuration Manager punktów końcowych za pomocą opartego na chmurze rozwiązania Defender for Endpoint |
 | Skrypt lokalny pobrany z portalu Microsoft 365 Defender sieci Microsoft 365 Defender | Używanie skryptów lokalnych w punktach końcowych w celu uruchomienia pilotażu lub uruchomienia tylko kilku urządzeń |
 
 Aby dowiedzieć się więcej o opcjach wdrażania, zobacz [Planowanie wdrożenia usługi Defender na punktu końcowego](deployment-strategy.md). Następnie pobierz następujący plakat: 
@@ -77,7 +77,7 @@ Aby dowiedzieć się więcej o opcjach wdrażania, zobacz [Planowanie wdrożenia
 **[Pobierz plakat wdrażania](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)**
 
 > [!TIP]
-> Aby uzyskać bardziej szczegółowe informacje na temat planowania wdrożenia, zobacz [Planowanie wdrożenia programu Microsoft Defender dla punktu końcowego](deployment-strategy.md).
+> Aby uzyskać bardziej szczegółowe informacje na temat planowania wdrożenia, zobacz [Planowanie Ochrona punktu końcowego w usłudze Microsoft Defender wdrażania](deployment-strategy.md).
 
 ## <a name="set-up-your-tenant-environment"></a>Konfigurowanie środowiska dzierżawy
 
@@ -104,7 +104,7 @@ W poniższej tabeli opisano kluczowe role, które należy rozważyć dla usługi
 
 | Rola | Opis |
 |:---|:---|
-| Administratorzy globalni (nazywani również administratorami globalnymi) <br/><br/> *Najlepszym rozwiązaniem jest ograniczenie liczby administratorów globalnych.* | Administratorzy globalni mogą wykonywać wszelkiego rodzaju zadania. Osoba, która załozyła konto w Twojej firmie w Microsoft 365 lub u usługi Microsoft Defender for Endpoint Plan 1, jest domyślnie administratorem globalnym. <br/><br/> Administratorzy globalni mogą uzyskać dostęp do ustawień oraz zmieniać je we wszystkich Microsoft 365 portalach, takich jak: <br/>— centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portalu ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft Endpoint Manager administracyjne ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| Administratorzy globalni (nazywani również administratorami globalnymi) <br/><br/> *Najlepszym rozwiązaniem jest ograniczenie liczby administratorów globalnych.* | Administratorzy globalni mogą wykonywać wszelkiego rodzaju zadania. Osoba, która załozyła konto w firmie w Microsoft 365 lub u Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1, jest domyślnie administratorem globalnym. <br/><br/> Administratorzy globalni mogą uzyskać dostęp do ustawień oraz zmieniać je we wszystkich Microsoft 365 portalach, takich jak: <br/>- Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portalu ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- Microsoft Endpoint Manager administracyjne ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | Administratorzy zabezpieczeń (nazywani również administratorami zabezpieczeń) | Administratorzy zabezpieczeń mogą wykonywać zadania operatorów zabezpieczeń oraz następujące zadania: <br/>- Monitorowanie zasad związanych z zabezpieczeniami <br/>- Zarządzanie zagrożeniami zabezpieczeń i alertami <br/>— Wyświetlanie raportów |
 | Operator zabezpieczeń | Operatory zabezpieczeń mogą wykonywać zadania czytnika zabezpieczeń oraz następujące zadania: <br/>— Wyświetlać informacje o wykrytych zagrożeniach <br/>- Badanie wykrytych zagrożeń i reagowanie na nie  |
 | Czytelnik zabezpieczeń | Czytniki zabezpieczeń mogą wykonywać następujące zadania: <br/>- Wyświetlanie zasad związanych z zabezpieczeniami w Microsoft 365 usługach <br/>- Wyświetlanie zagrożeń bezpieczeństwa i alertów <br/>— Wyświetlanie raportów  |
@@ -119,8 +119,8 @@ Gdy wszystko będzie gotowe do korzystania z punktów końcowych organizacji, mo
 
 |System operacyjny punktu końcowego | Metody dołączania|
 |---|---|
-| Windows 10 | [Skrypt lokalny (do 10 urządzeń)](configure-endpoints-script.md) <br>  [zasady grupy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Menedżer urządzeń przenośnych](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Skrypty VDI](configure-endpoints-vdi.md)  |
-| macOS | [Skrypty lokalne](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Zarządzanie urządzeniami przenośnymi](mac-install-with-other-mdm.md) |
+| Windows 10 | [Skrypt lokalny (do 10 urządzeń)](configure-endpoints-script.md) <br>  [Zasady grupy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Urządzenie Menedżer urządzeń](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Skrypty VDI](configure-endpoints-vdi.md)  |
+| macOS | [Skrypty lokalne](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Urządzenia Zarządzanie urządzeniami](mac-install-with-other-mdm.md) |
 | iOS |[Oparte na aplikacji](ios-install.md) |
 | Android | [Microsoft Endpoint Manager](android-intune.md) |
 
@@ -130,7 +130,7 @@ Następnie przejdź do konfigurowania funkcji ograniczania powierzchni ataków n
 
 Zalecamy [używanie Microsoft Endpoint Manager do](/mem) zarządzania urządzeniami i ustawieniami zabezpieczeń organizacji, jak pokazano na poniższej ilustracji:
  
-:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Zasady zabezpieczeń punktów końcowych w programie MEM":::
+:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Zasady zabezpieczeń punktów końcowych w portalu Endpoint Manager Micorosft" lightbox="../../media/mde-p1/endpoint-policies.png":::
 
 Aby skonfigurować ochronę następnej generacji w programie Microsoft Endpoint Manager, wykonaj następujące czynności:
 
@@ -163,7 +163,7 @@ Zmniejszenie powierzchni ataków ma na celu zmniejszenie liczby miejsc i sposob�
 
 Reguły zmniejszania powierzchni ataków są dostępne na urządzeniach z systemem Windows. Zalecamy używanie Microsoft Endpoint Manager, jak pokazano na poniższej ilustracji:
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Reguły zmniejszania powierzchni ataków w Microsoft Endpoint Manager":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Reguły zmniejszania powierzchni ataków w portalu Microsoft Endpoint Manager użytkowników" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
 1. Przejdź do Microsoft Endpoint Manager administracyjnego ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) i zaloguj się.
 
@@ -199,7 +199,7 @@ Uzyskujesz środki zaradcze przed oprogramowaniem wymuszającym okup przez kontr
 
 Zalecamy używanie programu Microsoft Endpoint Manager w celu skonfigurowania kontrolowanego dostępu do folderu.
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Zasady asr w programie Microsoft Endpoint Manager":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="Zasady asr w portalu Microsoft Endpoint Manager użytkowników" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
 1. Przejdź do Microsoft Endpoint Manager administracyjnego ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) i zaloguj się. 
 
@@ -231,7 +231,7 @@ Zalecamy używanie programu Microsoft Endpoint Manager w celu skonfigurowania ko
 
 Możesz skonfigurować usługę Defender for Endpoint, aby blokować lub zezwalać na urządzenia przenośne i pliki na urządzeniach wymiennych. Zalecamy skonfigurowanie Microsoft Endpoint Manager sterowania urządzeniem przy użyciu przeglądarki.
 
-:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft Endpoint Manager szablonów administracyjnych":::
+:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="Microsoft Endpoint Manager szablonów administracyjnych" lightbox="../../media/mde-p1/mem-admintemplates.png":::
 
 1. Przejdź do Microsoft Endpoint Manager administracyjnego ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) i zaloguj się. 
 
@@ -258,13 +258,13 @@ Możesz skonfigurować usługę Defender for Endpoint, aby blokować lub zezwala
 10. Na karcie **Recenzja + tworzenie** przejrzyj ustawienia zasad, a następnie wybierz pozycję **Utwórz**. Zasady zostaną zastosowane do wszystkich punktów końcowych, które wkrótce zostały zastosowane do usługi Defender for Endpoint.
 
 > [!TIP]
-> Aby uzyskać więcej informacji, zobacz [Jak sterować urządzeniami USB i innymi nośnikami wymiennymi przy użyciu programu Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
+> Aby uzyskać więcej informacji, zobacz Jak sterować [urządzeniami USB i innymi nośnikami wymiennymi przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender](control-usb-devices-using-intune.md).
 
 ### <a name="network-protection"></a>Ochrona sieci
 
 Dzięki ochronie sieci można chronić organizację przed niebezpiecznymi domenami, które mogą czynami wyłudzania informacji, oszustwami i złośliwą zawartością w Internecie. Zalecamy włączenie Microsoft Endpoint Manager sieci za pomocą programu Microsoft Microsoft Endpoint Manager.
 
-:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Profil ochrony punktu końcowego w aplikacji Microsoft Endpoint Manager":::
+:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="Profil ochrony punktu końcowego w Microsoft Endpoint Manager sieci Web" lightbox="../../media/mde-p1/mem-endpointprotectionprofile.png":::
 
 1. Przejdź do Microsoft Endpoint Manager administracyjnego ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) i zaloguj się. 
 
@@ -352,7 +352,7 @@ Dzięki ochronie sieci Web możesz chronić urządzenia organizacji przed zagro�
 
 Zapora sieciowa pomaga zmniejszyć ryzyko zagrożenia bezpieczeństwa sieci. Zespół zabezpieczeń może ustawić reguły, które określają dozwolony ruch do lub z urządzeń organizacji. Zalecamy skonfigurowanie Microsoft Endpoint Manager sieciowej za pomocą Microsoft Endpoint Manager sieci. 
 
-:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="Zasady zapory w programie Microsoft Endpoint Manager":::
+:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="Zasady zapory w portalu Microsoft Endpoint Manager sieci" lightbox="../../media/mde-p1/mem-firewallpolicy.png":::
 
 Aby skonfigurować podstawowe ustawienia zapory, wykonaj następujące czynności:
 
@@ -403,4 +403,4 @@ Aby uzyskać pomoc w planowaniu wdrożenia WDAC, zobacz następujące zasoby:
 
 Po zakończeniu procesu konfiguracji kolejnym krokiem jest wprowadzenie usługi Defender dla punktu końcowego. 
 
-- [Rozpoczynanie pracy z programem Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
+- [Wprowadzenie z programem Defender dla punktu końcowego (plan 1)](mde-plan1-getting-started.md)

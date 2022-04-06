@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
@@ -15,20 +16,20 @@ ms.custom:
 description: Dowiedz się Exchange Online Protection (EOP) może pomóc chronić lokalną organizację poczty e-mail w środowisku autonomicznym i hybrydowym.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef4443c0ee9b029133bb2abfabdd9a2f00a52203
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: 3fb49a24ae378be990efd727450a06889cc50679
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63014881"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473370"
 ---
-# <a name="exchange-online-protection-overview"></a>Exchange Online Protection omówienie
+# <a name="exchange-online-protection-overview"></a>Omówienie usługi Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Exchange Online Protection (EOP) to oparta na chmurze usługa filtrowania, która chroni organizację przed spamem, złośliwym oprogramowaniem i innymi zagrożeniami dla poczty e-mail. Program EOP jest uwzględniony we wszystkich Microsoft 365 z Exchange Online pocztowymi.
@@ -36,7 +37,7 @@ Exchange Online Protection (EOP) to oparta na chmurze usługa filtrowania, któr
 > [!NOTE]
 > Ponadto program EOP jest dostępny samodzielnie w celu ochrony lokalnych skrzynek pocztowych i w środowiskach hybrydowych w celu ochrony lokalnych skrzynek Exchange pocztowych. Aby uzyskać więcej informacji, zobacz [Autonomiczne Exchange Online Protection](/exchange/standalone-eop/standalone-eop).
 
-Instrukcje dotyczące skonfigurowania funkcji zabezpieczeń usługi EOP oraz porównanie dodatkowych zabezpieczeń, które można uzyskać w programie Microsoft Defender dla systemu Office 365, zobacz Ochrona [przed zagrożeniami](protect-against-threats.md). Zalecane ustawienia funkcji usługi EOP znajdują się w tece Zalecane ustawienia usługi [EOP i Microsoft Defender w Office 365 zabezpieczeń](recommended-settings-for-eop-and-office365.md).
+Instrukcje dotyczące skonfigurowania funkcji zabezpieczeń programu EOP oraz porównanie dodatkowych zabezpieczeń, które można uzyskać w Ochrona usługi Office 365 w usłudze Microsoft Defender, zobacz Ochrona [przed zagrożeniami](protect-against-threats.md). Zalecane ustawienia dla funkcji programu EOP są dostępne w tece [Zalecane ustawienia dla Ochrona usługi Office 365 w usłudze Microsoft Defender EOP](recommended-settings-for-eop-and-office365.md).
 
 W dalszej części tego artykułu wyjaśniono, jak działa program EOP i jakie funkcje są dostępne w uchcie EOP.
 
@@ -44,7 +45,7 @@ W dalszej części tego artykułu wyjaśniono, jak działa program EOP i jakie f
 
 Aby dowiedzieć się, jak działa program EOP, warto sprawdzić, jak przetwarza przychodzącą pocztę e-mail:
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Grafika przedstawiająca wiadomości e-mail z Internetu lub opinie klientów przechodzące do usługi EOP i za pośrednictwem połączenia, złośliwego oprogramowania, filtrowania reguł przepływu poczty (Mailflow Rules-slash-Policy Filtering) oraz filtrowania zawartości przed werdyktem wiadomości-śmieci lub kwarantanny albo dostarczania poczty przez użytkowników końcowych.":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Grafika przedstawiająca wiadomości e-mail z Internetu lub opinie klientów przechodzące do usługi EOP i za pośrednictwem połączenia, złośliwego oprogramowania, filtrowania reguł przepływu poczty i filtrowania zawartości przed werdyktem wiadomości-śmieci lub kwarantanny albo dostarczania poczty użytkownika końcowego" lightbox="../../media/tp_emailprocessingineopt3.png":::
 
 1. Gdy wiadomość przychodząca wprowadza usługę EOP, na początku przechodzi przez filtrowanie połączeń, które sprawdza reputację nadawcy. Obecnie większość spamu jest zatrzymywana i odrzucana przez firmę EOP. Aby uzyskać więcej informacji, zobacz [Konfigurowanie filtrowania połączeń](configure-the-connection-filter-policy.md).
 
@@ -78,12 +79,9 @@ Aby uzyskać informacje o wymaganiach, ważnych limitach i dostępności funkcji
 - EOP korzysta z bogatej listy domen, które są znane z wysyłania spamu.
 - Program EOP używa wielu aparatów chroniących przed złośliwym oprogramowaniem, które pomagają automatycznie chronić naszych klientów przez cały czas.
 - Usługa EOP sprawdza aktywny ład w treści wiadomości i wszystkie załączniki wiadomości pod kątem złośliwego oprogramowania.
-- Aby uzyskać zalecane wartości zasad ochrony, zobacz Zalecane ustawienia usług [EOP i Microsoft Defender](recommended-settings-for-eop-and-office365.md) w Office 365 zabezpieczeń.
+- Aby uzyskać zalecane wartości zasad ochrony, zobacz [Zalecane ustawienia dla zabezpieczeń Ochrona usługi Office 365 w usłudze Microsoft Defender EOP](recommended-settings-for-eop-and-office365.md).
 - Aby uzyskać szybkie instrukcje dotyczące konfigurowania zasad ochrony, zobacz [Ochrona przed zagrożeniami](protect-against-threats.md).
 
-<br>
-
-****
 |Funkcja|Komentarze|
 |---|---|
 |**Ochrona**||
@@ -94,7 +92,7 @@ Aby uzyskać informacje o wymaganiach, ważnych limitach i dostępności funkcji
 |Ochrona przed wyłudzaniem informacji|[Zasady ochrony przed wyłudzaniem informacji w programie Microsoft 365](set-up-anti-phishing-policies.md) <p> [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w u usługi EOP](configure-anti-phishing-policies-eop.md)|
 |Ochrona przed fałszerami|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) <p> [Zarządzanie listą zezwalania/blokowania dzierżawy](tenant-allow-block-list.md)|
 |Automatyczne przeczyszczanie (ZAP) o zerowej godzinie dla dostarczonego złośliwego oprogramowania, wiadomości o spamie i wiadomości wyłudzających informacje|[ZAP w Exchange Online](zero-hour-auto-purge.md)|
-|Wstępnie ustawione zasady zabezpieczeń|[Wstępnie ustawione zasady zabezpieczeń w usługach EOP i Microsoft Defender dla systemu Office 365](preset-security-policies.md) <p> [Analizator konfiguracji do obsługi zasad ochrony w usługach EOP i Microsoft Defender dla Office 365](configuration-analyzer-for-security-policies.md)|
+|Wstępnie ustawione zasady zabezpieczeń|[Wstępne ustawienie zasad zabezpieczeń w usłudze EOP i ochronie usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md) <p> [Analizator konfiguracji do zasad ochrony w usługach EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](configuration-analyzer-for-security-policies.md)|
 |Lista zezwalania/blokowania dzierżawy|[Zarządzanie listą zezwalania/blokowania dzierżawy](tenant-allow-block-list.md)|
 |Blokowanie list nadawców wiadomości|[Tworzenie list zablokowanych nadawców w uciekinie eop](create-block-sender-lists-in-office-365.md)|
 |Listy zezwalania nadawcom wiadomości|[Tworzenie bezpiecznych list nadawców w uchcie EOP](create-safe-sender-lists-in-office-365.md)|
@@ -105,7 +103,7 @@ Aby uzyskać informacje o wymaganiach, ważnych limitach i dostępności funkcji
 |Kwarantanna — administratorzy|[Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako administrator w u usługi EOP](manage-quarantined-messages-and-files.md) <p> [Wiadomości poddane kwarantannie — często zadawane pytania](quarantine-faq.yml) <p> [Zgłaszanie wiadomości i plików do firmy Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Nagłówki wiadomości w programie Microsoft 365](anti-spam-message-headers.md) <p> Za pomocą Analizatora nagłówka wiadomości możesz analizować nagłówki wiadomości poddanych [kwarantannie](https://mha.azurewebsites.net/).|
 |Kwarantanna — użytkownicy końcowi|[Znajdowanie i wypuszczenie wiadomości poddanych kwarantannie jako użytkownik w u kontie EOP](find-and-release-quarantined-messages-as-a-user.md) <p> [Używanie powiadomień kwarantanny do zwalniania i zgłaszania poddanych kwarantannie wiadomości](use-spam-notifications-to-release-and-report-quarantined-messages.md) <p> [Zasady kwarantanny](quarantine-policies.md)|
 |**Przepływ poczty e-mail**||
-|Reguły przepływu poczty e-mail|[Reguły przepływu poczty (reguły transportu) w programie Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Warunki i wyjątki (wyjątki) reguły przepływu poczty e-mail w programie Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Akcje reguły przepływu poczty e-mail Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Zarządzanie regułami przepływu poczty e-mail w Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procedury reguł przepływu poczty e-mail Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
+|Reguły przepływu poczty e-mail|[Reguły przepływu (transportu) poczty e-mail w usłudze Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Warunki i wyjątki (wyjątki) reguły przepływu poczty e-mail w programie Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Akcje reguły przepływu poczty e-mail Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Zarządzanie regułami przepływu poczty e-mail w Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procedury reguł przepływu poczty e-mail Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
 |Zaakceptowane domeny|[Zarządzanie zaakceptowanymi domenami w Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)|
 |Łączniki|[Konfigurowanie przepływu poczty e-mail przy użyciu łączników w Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)|
 |Ulepszone filtrowanie łączników|[Ulepszone filtrowanie łączników w Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
@@ -125,5 +123,5 @@ Aby uzyskać informacje o wymaganiach, ważnych limitach i dostępności funkcji
 |**Inne funkcje**||
 |Geograficznie nadmiarowa globalna sieć serwerów|EOP działa w globalnej sieci centrów danych zaprojektowanych tak, aby zapewnić najlepszą dostępność. Aby uzyskać więcej informacji, zobacz sekcję centrów [danych programu EOP](#eop-datacenters) we wcześniejszej części tego artykułu.|
 |Kolejkowanie wiadomości, gdy serwer lokalny nie może zaakceptować poczty|Wiadomości odroczone pozostają w naszych kolejkach przez jeden dzień. Próby ponowienia wiadomości są oparte na błędzie zwracany przez nas z systemu poczty adresata. Średnio co 5 minut są pobieranie wiadomości. Aby uzyskać więcej informacji, zobacz [Wiadomość odroczona i](eop-queued-deferred-and-bounced-messages-faq.yml) odroczona w kolejce usługi EOP — często zadawane pytania.|
-|Szyfrowanie wiadomości usługi Office 365 jako dodatek|Aby uzyskać więcej informacji, zobacz [Szyfrowanie w Office 365](../../compliance/encryption.md).|
+|Office 365 szyfrowanie wiadomości dostępne jako dodatek|Aby uzyskać więcej informacji, zobacz [Szyfrowanie w Office 365](../../compliance/encryption.md).|
 |||

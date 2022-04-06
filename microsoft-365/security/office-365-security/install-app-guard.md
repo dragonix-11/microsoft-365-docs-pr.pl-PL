@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Uzyskaj najnowszą wersję izolacji sprzętowej. Zapobieganie bieżącym i pojawiającym się atakom, na przykład wykorzystaniom lub złośliwym linkom, w celu zakłócania wydajności pracowników i zabezpieczeń przedsiębiorstwa.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a483c6430721e0540a7012dabfcbd4480fd7ad8
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: da61ee2f5e29501e033ad44bc3fdb04ee2c042f0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675377"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473326"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard dla Office dla administratorów
 
@@ -39,7 +39,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) p
 
 ### <a name="minimum-software-requirements"></a>Minimalne wymagania dotyczące oprogramowania
 
-* **Windows**: Windows 10 Enterprise, kompilacja klienta w wersji 2004 (20H1) 19041 lub nowsza. Obsługiwane są wszystkie Windows 11. 
+* **Windows**: Windows 10 Enterprise, kompilacja klienta w wersji 2004 (20H1) 19041 lub nowsza. Wszystkie wersje Windows 11 są obsługiwane. 
 * **Office**: Office i Miesięczny kanał Enterprise, kompilacja 2011 16.0.13530.10000 lub nowsza. Office Semi-Annual Enterprise, kompilacja 2108 lub nowsza. Obsługiwane są wersje 32-bitowe i 64-bitowe Office.
 * **Pakiet aktualizacji**: skumulowana Windows 10 aktualizacji zabezpieczeń [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
@@ -61,7 +61,7 @@ Aby dowiedzieć się więcej o Office kanałach aktualizacji, zobacz [Omówienie
 
 2. Wybierz **Microsoft Defender Application Guard** w Windows Funkcje i wybierz przycisk **OK**. Włączenie funkcji Application Guard spowoduje monit o ponowne uruchomienie systemu. Możesz zdecydować się na ponowne uruchomienie teraz lub po kroku 3.
 
-   ![Windows dialogowe Funkcje ag.](../../media/ag03-deploy.png)
+   :::image type="content" source="../../media/ag03-deploy.png" alt-text="Okno Windows funkcje ag" lightbox="../../media/ag03-deploy.png":::
 
    Tę funkcję można również włączyć, uruchamiając następujące polecenie programu PowerShell jako administrator:
 
@@ -71,7 +71,7 @@ Aby dowiedzieć się więcej o Office kanałach aktualizacji, zobacz [Omówienie
 
 3. Wyszukaj Microsoft Defender Application Guard **w** trybie zarządzanym zasady grupy **\\\\w grupie Szablony administracyjne Windows składniki\\ Microsoft Defender Application Guard**. Włącz te zasady, ustawiając wartość w obszarze Opcje jako **2** lub **3**, a następnie wybierając przycisk **OK** lub **Zastosuj**.
 
-   ![Włącz ag in Managed Mode.](../../media/ag04-deploy.png)
+   :::image type="content" source="../../media/ag04-deploy.png" alt-text="Opcja włącz ag w trybie zarządzanym" lightbox="../../media/ag04-deploy.png":::
 
    Zamiast tego możesz ustawić odpowiednie zasady CSP:
 
@@ -88,15 +88,15 @@ Ten krok gwarantuje, że do firmy Microsoft trafiają dane niezbędne do zidenty
 
 1. Otwórz **Ustawienia** z menu Start.
 
-   ![menu Start.](../../media/ag05-diagnostic.png)
+   :::image type="content" source="../../media/ag05-diagnostic.png" alt-text="The menu Start" lightbox="../../media/ag05-diagnostic.png":::
 
 2. Na **Windows Ustawienia** wybierz pozycję **Prywatność**.
 
-   ![Windows Ustawienia menu.](../../media/ag06-diagnostic.png)
+   :::image type="content" source="../../media/ag06-diagnostic.png" alt-text="Menu Windows Ustawienia" lightbox="../../media/ag06-diagnostic.png":::
 
 3. W obszarze Prywatność wybierz pozycję **Diagnostyka & opinie i** wybierz pozycję **Opcjonalne dane diagnostyczne**.
 
-   ![Menu Diagnostyka i opinia.](../../media/ag07a-diagnostic.png)
+   :::image type="content" source="../../media/ag07a-diagnostic.png" alt-text="Menu Diagnostyka i opinia" lightbox="../../media/ag07a-diagnostic.png":::
 
 Aby uzyskać więcej informacji na temat Windows diagnostycznych, zobacz Konfigurowanie Windows [diagnostycznych w organizacji](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management).
 
@@ -108,13 +108,13 @@ Aby potwierdzić, że funkcja Application Guard Office jest włączona, uruchom 
 
 Przy pierwszym otwarciu niezaufanego pliku może zostać wyświetlony Office powitalny, taki jak w poniższym przykładzie. Może on być wyświetlany przez jakiś czas, gdy jest Office application Guard for Office i plik jest otwierany. Kolejne otwarcie niezaufanych plików powinno być szybsze.
 
-![aplikacja pakietu Office ekran powitalny.](../../media/ag08-confirm.png)
+:::image type="content" source="../../media/ag08-confirm.png" alt-text="Strona aplikacja pakietu Office powitalnego" lightbox="../../media/ag08-confirm.png":::
 
 Po otwarciu pliku powinien być wyświetlanych kilka wskaźników wizualnych, że plik został otwarty w programie Application Guard dla aplikacji Office:
 
 * Objaśnienie na wstążce
 
-  ![Plik doc przedstawiający małą notatkę z rozszerzenia App Guard.](../../media/ag09-confirm.png)
+  :::image type="content" source="../../media/ag09-confirm.png" alt-text="Plik doc przedstawiający małą notatkę z rozszerzeniem App Guard" lightbox="../../media/ag09-confirm.png":::
 
 * Ikona aplikacji z tarczą na pasku zadań
 
@@ -186,21 +186,21 @@ Jeśli podczas uruchamiania programu Application Guard dla aplikacji Office wyst
 
 Możesz również przesłać opinię z programu Office, jeśli problem występuje po otwarciu Office w aplikacji Application Guard. Informacje na temat [przesyłania Office niejawnego](https://insider.office.com/handbook) programu testów znajdziesz w podręczniku niejawnego programu testów.
 
-## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Integracja z programem Microsoft Defender for Endpoint i programem Microsoft Defender dla Office 365
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Integracja z Ochrona punktu końcowego w usłudze Microsoft Defender i Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-Application Guard for Office jest zintegrowany z programem Microsoft Defender for Endpoint, co zapewnia monitorowanie i ostrzeganie o złośliwych działaniach, które mają miejsce w odizolowanym środowisku.
+Application Guard for Office is integrated with Ochrona punktu końcowego w usłudze Microsoft Defender to provide monitoring and alerting on malicious activity that happens in the isolated environment.
 
-[Sejf dokumenty na platformie Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) to funkcja, która używa programu Microsoft Defender for Endpoint do skanowania dokumentów otwieranych w funkcji Application Guard dla systemu Office. Aby uzyskać dodatkową warstwę ochrony, użytkownicy nie mogą opuszczać do Office do czasu ustalenia wyników skanowania.
+[Sejf dokumenty na platformie Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) to funkcja, która używa programu Ochrona punktu końcowego w usłudze Microsoft Defender do skanowania dokumentów otwieranych w aplikacji Application Guard dla systemu Office. Aby uzyskać dodatkową warstwę ochrony, użytkownicy nie mogą opuszczać do Office do czasu ustalenia wyników skanowania.
 
-Program Microsoft Defender for Endpoint to platforma zabezpieczeń, która ma pomóc sieciom przedsiębiorstwa zapobiegać zaawansowanym zagrożeniam, wykrywać je, badać i reagować na nie. Aby uzyskać więcej szczegółowych informacji na temat tej platformy, zobacz [Program Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Aby dowiedzieć się więcej o dołączaniu urządzeń do tej platformy, zobacz Urządzenia dołączane do usługi [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
+Ochrona punktu końcowego w usłudze Microsoft Defender to platforma zabezpieczeń, która ma pomóc sieciom przedsiębiorstwa zapobiegać zaawansowanym zagrożeniam, wykrywać i badać je oraz odpowiadać na nie. Aby uzyskać więcej informacji na temat tej platformy, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Aby dowiedzieć się więcej o dołączaniu urządzeń do tej platformy, zobacz [Urządzenia](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) na urządzeniach w Ochrona punktu końcowego w usłudze Microsoft Defender usługi.
 
-Możesz również skonfigurować usługę Microsoft Defender dla Office 365 do współpracy z usługą Defender for Endpoint. Aby uzyskać więcej informacji, zobacz [Integracja usługi Defender w celu Office 365 z programem Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md).
+Możesz również skonfigurować program Ochrona usługi Office 365 w usłudze Microsoft Defender do pracy z usługą Defender dla punktu końcowego. Aby uzyskać więcej informacji, zobacz [Integracja Ochrona usługi Office 365 w usłudze Defender z Ochrona punktu końcowego w usłudze Microsoft Defender](integrate-office-365-ti-with-mde.md).
 
 ## <a name="limitations-and-considerations"></a>Ograniczenia i zagadnienia
 
 * Application Guard for Office is a protected mode that isolates untrusted documents so so that they cannot access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. W wyniku tego, jeśli użytkownik spróbuje uzyskać dostęp do funkcji, która ma zależność od takiego dostępu, na przykład wstawienie obrazu z pliku lokalnego na dysku, dostęp zakończy się niepowodzeniem i wyświetli monit podobny do poniższego przykładu. Aby włączyć niezaufany dokument w celu uzyskiwania dostępu do zaufanych zasobów, użytkownicy muszą usunąć z dokumentu ochronę funkcji Application Guard. 
 
-  ![Okno dialogowe z komunikatem Aby ułatwić zachowanie bezpieczeństwa, ta funkcja nie jest dostępna.](../../media/ag10-limitations.png)
+  :::image type="content" source="../../media/ag09-confirm.png" alt-text="Okno dialogowe z komunikatem o zabezpieczeniach i stanem funkcji" lightbox="../../media/ag09-confirm.png":::
 
   > [!NOTE]
   > Porada użytkownikom, aby usuwali ochronę tylko wtedy, gdy ufają plikowi i jego źródle lub miejscu, z którego pochodzi.
@@ -241,5 +241,5 @@ Gdy ta heuristic zostanie spełniony, Office wstępnie utworzy kontener Applicat
 * Domyślnym ustawieniem zasad ochrony nieobsługiwanych typów plików jest blokowanie otwierania niezaufanych nieobsługiwanych typów plików, które są szyfrowane lub mają ustawione zarządzanie prawami do informacji (IRM). Dotyczy to plików, które Microsoft Information Protection etykiety wrażliwości przy użyciu szyfrowania (poufne lub wysoce poufne).
 * Pliki CSV i HTML nie są obecnie obsługiwane.
 * Program Application Guard Office obecnie nie działa z skompresowanym woluminami plików NTFS. Jeśli jest wyświetlany komunikat o błędzie "ERROR_VIRTUAL_DISK_LIMITATION", spróbuj dekompresowanie głośności.
-* Aktualizacje programu .NET mogą powodować niepowodzenie otwierania plików w funkcji Application Guard. Aby obejść ten problem, użytkownicy mogą ponownie uruchomić swoje urządzenie, gdy dotkną tego błędu. Dowiedz się więcej o problemie w tece Komunikat o błędzie wyświetlany podczas próby otwarcia Windows Defender Application Guard [lub Windows piaskownicy](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Aktualizacje programu .NET mogą powodować niepowodzenie otwierania plików w funkcji Application Guard. Aby obejść ten problem, użytkownicy mogą ponownie uruchomić swoje urządzenie, gdy dotkną tego błędu. Dowiedz się więcej o tym problemie w tece Komunikat o błędzie wyświetlany podczas próby otwarcia Windows Defender Application Guard [lub Piaskownica systemu Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
 * Aby uzyskać [więcej informacji, zobacz Często Microsoft Defender Application Guard — informacje.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

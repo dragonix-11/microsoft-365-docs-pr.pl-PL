@@ -22,12 +22,12 @@ ms.custom:
 description: Administratorzy mogą uzyskać informacje na temat kwarantanny Exchange Online Protection (EOP), która zawiera potencjalnie niebezpieczne lub niechciane wiadomości.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 509e093d1618cf17d8f5f880aa82a2c54e8204bf
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: ac2d1bf550fd340c1e94ed5f3503352b40ba6556
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996222"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682774"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>Poddaj kwarantannie wiadomości e-mail w usługach EOP i Defender for Office 365
 
@@ -40,7 +40,7 @@ ms.locfileid: "62996222"
 
 W Microsoft 365 z skrzynkami pocztowymi w organizacjach Exchange Online lub organizacji autonomicznych usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online dostęp do kwarantanny może zawierać potencjalnie niebezpieczne lub niechciane wiadomości.
 
-Zasady ochrony przed złośliwym oprogramowaniem automatycznie poddaj wiadomości *kwarantannie,* jeśli załącznik zawiera złośliwe oprogramowanie. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w uchcie EOP](configure-anti-malware-policies.md).
+Zasady ochrony przed złośliwym oprogramowaniem automatycznie poddaj wiadomości _kwarantannie,_ jeśli załącznik zawiera złośliwe oprogramowanie. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w uchcie EOP](configure-anti-malware-policies.md).
 
 Domyślnie policy antyspamowe poddają wiadomości służące do wyłudzania informacji o dużej pewności, a także wysyłają spam, spam o dużej pewności i zbiorcze wiadomości e-mail do folderu wiadomości-śmieci użytkownika. Możesz jednak również tworzyć i dostosowywać zasady ochrony przed spamem w celu kwarantanny spamu, spamu o dużej pewności i zbiorczej poczty e-mail. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md).
 
@@ -58,10 +58,6 @@ Z wiadomościami poddanymi kwarantannie mogą pracować zarówno użytkownicy, j
 
 - Czas, przez jaki wiadomości poddane kwarantannie są przechowywane w kwarantannie, zanim wygaśnie, zależy od tego, dlaczego wiadomość została poddana kwarantannie. Funkcje kwarantanny wiadomości i odpowiadające im okresy przechowywania są opisane w poniższej tabeli:
 
-  <br>
-
-  ****
-
   |Powód kwarantanny|Domyślny okres przechowywania|Możliwość dostosowania?|Komentarze|
   |---|---|:---:|---|
   |Wiadomości poddane kwarantannie według zasad ochrony przed spamem: spam, spam o dużej pewności, wyłudzanie informacji, próby wyłudzenia dużej pewności lub zbiorcze.|15 dni: <ul><li>W domyślnych zasadach ochrony przed spamem.</li><li>W zasadach ochrony przed spamem tworzyć w programie PowerShell.</li></ul> <p> 30 dni w zasadach ochrony przed spamem tworzyć w portalu Microsoft 365 Defender wiadomości.|Tak|Tę wartość można skonfigurować w zasadach ochrony przed spamem. Aby uzyskać więcej informacji, zobacz ustawienie Zachowaj **spam** w kwarantannie przez tę wiele dni (_QuarantineRetentionPeriod_) w tece Konfigurowanie zasad ochrony [przed spamem](configure-your-spam-filter-policies.md).|
@@ -70,7 +66,6 @@ Z wiadomościami poddanymi kwarantannie mogą pracować zarówno użytkownicy, j
   |Wiadomości poddane kwarantannie przez Sejf Zasady załączników w programie Defender Office 365 wiadomości (wiadomości złośliwego oprogramowania).|15 dni|Nie||
   |Wiadomości poddane kwarantannie według reguł przepływu poczty: akcja to Dostarczanie wiadomości do **hostowanej** kwarantanny (_Kwarantanna_).|30 dni|Nie||
   |Pliki poddane kwarantannie przez Sejf załączników do SharePoint, OneDrive i Microsoft Teams (plików złośliwego oprogramowania).|15 dni|Nie||
-  |
 
   Gdy wiadomość wygaśnie z kwarantanny, nie można jej odzyskać.
 

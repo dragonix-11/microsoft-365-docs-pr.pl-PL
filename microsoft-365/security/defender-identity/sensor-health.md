@@ -8,12 +8,13 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 936b14ceaa5f80e9371e776727bbb5304c60590d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.collection: M365-security-compliance
+ms.openlocfilehash: f55cb36d9960fef2da977a2c50ebab5a9e0e9122
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "63004715"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682025"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Kondycja i ustawienia czujnika tożsamości usługi Microsoft Defender w aplikacji Microsoft 365 Defender
 

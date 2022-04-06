@@ -17,16 +17,16 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak używać zasad kwarantanny w celu kontrolowania, co użytkownicy mogą robić w przypadku wiadomości poddanych kwarantannie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f015951fec4ea8fb9d433c8b48ccb26cd9e1222
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5133b98609c29e54361b8fe108e8810858f0d8c8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321295"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467120"
 ---
 # <a name="quarantine-policies"></a>Zasady kwarantanny
 
-Zasady kwarantanny (wcześniej nazywane tagami kwarantanny _) w_ programach Exchange Online Protection (EOP) i Microsoft Defender dla Office 365 pozwalają administratorom kontrolować, co użytkownicy mogą robić w kwarantannie wiadomości w zależności od tego, dlaczego wiadomość została poddana kwarantannie.
+Zasady kwarantanny (wcześniej nazywane tagami kwarantanny _) w_ programie Exchange Online Protection (EOP) i programie Ochrona usługi Office 365 w usłudze Microsoft Defender umożliwiają administratorom kontrolowanie, co użytkownicy mogą robić w kwarantannie wiadomości na podstawie przyczyny kwarantanny wiadomości.
 
 W tradycyjnej bazie danych dozwolonych lub odrzucono poziomy interakcji w kwarantannie wiadomości w zależności od tego, dlaczego wiadomość została poddana kwarantannie. Na przykład użytkownicy mogą wyświetlać i zwalniać wiadomości poddanych kwarantannie przez filtrowanie spamu jako spam lub zbiorczo, ale nie mogą wyświetlać ani zwalniać wiadomości poddanych kwarantannie jako złośliwe oprogramowanie lub oprogramowanie pod kątem wysokiej pewności.
 
@@ -42,10 +42,6 @@ Poszczególne uprawnienia do kwarantanny są łączone z następującymi wstępn
 
 Poszczególne uprawnienia do kwarantanny zawarte w wstępnie ustawionych grupach uprawnień są opisane w poniższej tabeli:
 
-<br>
-
-****
-
 |Uprawnienie|Brak dostępu|Ograniczony dostęp|Pełny dostęp|
 |---|:---:|:---:|:---:|
 |**Blokowanie nadawcy** (_PermissionToBlockSender_)||![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
@@ -53,11 +49,8 @@ Poszczególne uprawnienia do kwarantanny zawarte w wstępnie ustawionych grupach
 |**Podgląd** (_permissionToPreview_)||![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
 |**Zezwalanie adresatom na wydanie wiadomości z kwarantanny** (_PermissionToRelease_)|||![Znacznik wyboru.](../../media/checkmark.png)|
 |**Zezwalaj adresatom na żądanie przesłania wiadomości** do kwarantanny (_PermissionToRequestRelease_)||![Znacznik wyboru](../../media/checkmark.png)||
-|
 
 Domyślne zasady kwarantanny, skojarzone z nimi grupy uprawnień oraz informacje o tym, czy powiadomienia kwarantanny są włączone, są opisane w poniższej tabeli:
-
-<br>
 
 |Domyślne zasady kwarantanny|Użyta grupa uprawnień|Włączono powiadomienia kwarantanny?|
 |---|---|---|
@@ -151,10 +144,6 @@ Parametr _EndUserQuarantinePermissionsValue_ używa wartości dziesiętnej przek
 
 Wymaganą kolejność i wartości dla poszczególnych uprawnień opisano w poniższej tabeli:
 
-<br>
-
-****
-
 |Uprawnienie|Wartość dziesiętna|Wartość binarna|
 |---|:---:|:---:|
 |PermissionToViewHeader<sup>\*</sup>|128|10000000|
@@ -165,7 +154,6 @@ Wymaganą kolejność i wartości dla poszczególnych uprawnień opisano w poni�
 |PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
 |PermissionToPreview|2|00000010|
 |PermissionToDelete|1|00000001|
-|
 
 <sup>\*</sup>Wartość 0 nie powoduje ukrycia przycisku Wyświetl  nagłówek wiadomości w szczegółach wiadomości poddanej kwarantannie (przycisk jest zawsze dostępny).
 
@@ -174,10 +162,6 @@ Wymaganą kolejność i wartości dla poszczególnych uprawnień opisano w poni�
 <sup>\*\*\*</sup> Nie ustawiaj wartości obu tych wartości na 1. Ustaw jedną wartość na 1, a drugą na 0 lub wartość 0 obu na 0.
 
 W przypadku uprawnień z ograniczonym dostępem wymagane wartości:
-
-<br>
-
-****
 
 |Uprawnienie|Ograniczony dostęp|
 |---|:--:|
@@ -191,7 +175,6 @@ W przypadku uprawnień z ograniczonym dostępem wymagane wartości:
 |PermissionToDelete|1|
 |Wartość binarna|00011011|
 |Wartość dziesiętna do użycia|27|
-|
 
 W tym przykładzie są pisywane nowe zasady kwarantanny o nazwie Ograniczony dostęp z włączonymi powiadomieniami kwarantanny, w których są przypisywane uprawnienia Ograniczony dostęp zgodnie z opisem w poprzedniej tabeli.
 
@@ -207,18 +190,13 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz New-Quar
 
 W _obsługiwanych_ funkcjach ochrony, które poddasz kwarantannie wiadomości e-mail, możesz przypisać zasady kwarantanny do dostępnych akcji kwarantanny. Funkcje kwarantanny wiadomości i dostępność zasad kwarantanny są opisane w poniższej tabeli:
 
-<br>
-
-****
-
 |Funkcja|Czy zasady kwarantanny są obsługiwane?|Domyślne zasady kwarantanny używane|
 |---|:---:|---|
 |[Zasady ochrony przed spamem](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**Spam o dużej pewności** (_HighConfidenceSpamAction_)</li><li>**Wyłudzanie** informacji (_phishSpamAction_)</li><li>**Wyłudzanie informacji** o wysokiej pewności (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Tak|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>AdminOnlyAccessPolicy (Brak dostępu)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li></ul>|
-|Zasady ochrony przed wyłudzaniem informacji: <ul><li>[Ochrona przed fałszerami](set-up-anti-phishing-policies.md#spoof-settings) (_UwierzytelnianieFailucja_)</li><li>[Ochrona personifikacji w uchcie Defender dla Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Jeśli wiadomość zostanie wykryta jako personifikowany użytkownik** (_TargetedUserProtectionAction_)</li><li>**Jeśli wiadomość zostanie wykryta jako spersonifikowana domena** (_TargetedDomainProtectionAction_)</li><li>**Jeśli inteligencja skrzynek pocztowych wykryje i personifikuje** użytkownika (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Tak|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>Ochrona personifikacji:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li></ul></li></ul>|
+|Zasady ochrony przed wyłudzaniem informacji: <ul><li>[Ochrona przed fałszerami](set-up-anti-phishing-policies.md#spoof-settings) (_UwierzytelnianieFailucja_)</li><li>[Ochrona personifikacji w Ochrona usługi Office 365 w usłudze Defender](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**Jeśli wiadomość zostanie wykryta jako personifikowany użytkownik** (_TargetedUserProtectionAction_)</li><li>**Jeśli wiadomość zostanie wykryta jako spersonifikowana domena** (_TargetedDomainProtectionAction_)</li><li>**Jeśli inteligencja skrzynek pocztowych wykryje i personifikuje** użytkownika (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Tak|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>Ochrona personifikacji:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (pełny dostęp)</li></ul></li></ul>|
 |[Zasady ochrony przed złośliwym oprogramowaniem](configure-anti-malware-policies.md): Wszystkie wykryte wiadomości są zawsze poddane kwarantannie.|Tak|AdminOnlyAccessPolicy (Brak dostępu)|
-|[Sejf załączników](safe-attachments.md): <ul><li>W przypadku wiadomości e-mail z załącznikami poddanymi kwarantannie jako złośliwe oprogramowanie Sejf zasady dotyczące załączników (_Włączanie_ i _działanie_)</li><li>Pliki poddane kwarantannie jako złośliwe oprogramowanie [przez Sejf załączników do SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Tak</li><li>Nie</li></ul>|<ul><li>AdminOnlyAccessPolicy (Brak dostępu)</li><li>n/a</li></ul>|
-|[Reguły przepływu poczty](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (nazywane także regułami transportu) z akcją: **Dostarczanie** wiadomości do hostowanej kwarantanny (_Kwarantanna_).|Nie|n/a|
-|
+|[Sejf załączników](safe-attachments.md): <ul><li>W przypadku wiadomości e-mail z załącznikami poddanymi kwarantannie jako złośliwe oprogramowanie Sejf zasady dotyczące załączników (_Włączanie_ i _działanie_)</li><li>Pliki poddane kwarantannie jako złośliwe oprogramowanie [przez Sejf załączników do SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Tak</li><li>Nie</li></ul>|<ul><li>AdminOnlyAccessPolicy (Brak dostępu)</li><li>nie dotyczy</li></ul>|
+|[Reguły przepływu poczty](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (nazywane także regułami transportu) z akcją: **Dostarczanie** wiadomości do hostowanej kwarantanny (_Kwarantanna_).|Nie|nie dotyczy|
 
 <sup>\*</sup> Jak [opisano wcześniej w tym artykule](#full-access-permissions-and-quarantine-notifications), organizacja może używać funkcji NotificationEnabledPolicy zamiast wartości DefaultFullAccessPolicy. Jedyna różnica między tymi dwoma zasadami kwarantanny to, że powiadomienia kwarantanny są włączone w notificationEnabledPolicy i wyłączone w defaultFullAccessPolicy.
 
@@ -247,7 +225,7 @@ Domyślne zasady kwarantanny, wstępnie ustawione grupy uprawnień i uprawnienia
 
    **Uwaga**: Gdy tworzysz nowe zasady, wartość pustych  zasad Wybierz kwarantannę wskazuje domyślne zasady kwarantanny dla tego werdyktu. Podczas późniejszego edytowania zasad puste wartości są zamieniane na rzeczywiste domyślne nazwy zasad kwarantanny zgodnie z opisem w poprzedniej tabeli.
 
-   ![Poddaj kwarantannie wybrane ustawienia zasad ochrony przed spamem.](../../media/quarantine-tags-in-anti-spam-policies.png)
+   :::image type="content" source="../../media/quarantine-tags-in-anti-spam-policies.png" alt-text="The Quarantine policy selections in an anti-spam policy" lightbox="../../media/quarantine-tags-in-anti-spam-policies.png":::
 
 Pełne instrukcje dotyczące tworzenia i modyfikowania zasad ochrony przed spamem opisano w tece Konfigurowanie zasad ochrony [przed spamem w uciekaniu usługi EOP](configure-your-spam-filter-policies.md).
 
@@ -298,7 +276,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-Host
 
 ### <a name="anti-phishing-policies"></a>Zasady ochrony przed wyłudzaniem informacji
 
-Funkcje spoof intelligence są dostępne w programach EOP i Defender for Office 365. Ochrona personifikacji użytkownika, ochrona personifikacji domeny i inteligencja skrzynek pocztowych są dostępne tylko w u kont Office 365. Aby uzyskać więcej informacji, zobacz [Zasady ochrony przed wyłudzaniem informacji w programie Microsoft 365](set-up-anti-phishing-policies.md).
+Funkcje analizy fałszerów są dostępne w UAD i Ochrona usługi Office 365 w usłudze Defender. Ochrona personifikacji użytkownika, ochrona personifikacji domeny i inteligencja skrzynek pocztowych są dostępne tylko w Ochrona usługi Office 365 w usłudze Defender. Aby uzyskać więcej informacji, zobacz [Zasady ochrony przed wyłudzaniem informacji w programie Microsoft 365](set-up-anti-phishing-policies.md).
 
 1. W portalu [Microsoft 365 Defender przejdź](https://security.microsoft.com) \> do sekcji Zasady & **e-mail** **&** \>  \> zasad ochrony przed zagrożeniami, które mają na celu ochrona przed wyłudzaniem informacji.
 
@@ -327,12 +305,12 @@ Funkcje spoof intelligence są dostępne w programach EOP i Defender for Office 
 
    **Uwaga**: Po utworzeniu nowych zasad pusta wartość zasad Zastosuj  kwarantannę wskazuje domyślne zasady kwarantanny dla tej akcji. Podczas późniejszego edytowania zasad puste wartości są zamieniane na rzeczywiste domyślne nazwy zasad kwarantanny zgodnie z opisem w poprzedniej tabeli.
 
-   ![Poddaj kwarantannie wybory zasad w zasadach ochrony przed wyłudzaniem informacji.](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="Opcje zasad kwarantanny w zasadach ochrony przed wyłudzaniem informacji" lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
 
 Pełne instrukcje dotyczące tworzenia i modyfikowania zasad ochrony przed wyłudzaniem informacji są dostępne w następujących tematach:
 
 - [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w u usługi EOP](configure-anti-phishing-policies-eop.md)
-- [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365](configure-mdo-anti-phishing-policies.md)
+- [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md)
 
 #### <a name="anti-phishing-policies-in-powershell"></a>Zasady ochrony przed wyłudzaniem informacji w programie PowerShell
 
@@ -352,7 +330,7 @@ Jeśli wolisz używać programu PowerShell do przypisywania zasad kwarantanny w 
   Get-AntiPhishPolicy | Format-List Name,Enable*Intelligence,Enable*Protection,*Action,*QuarantineTag
   ```
 
-  Aby uzyskać informacje o domyślnych wartościach akcji oraz wartościach akcji zalecanych dla ustawień Standardowe i Ścisłe, zobacz Ustawienia zasad ochrony przed wyłudzaniem informacji usługi [EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) i Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji w uchcie [Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+  Aby uzyskać informacje o domyślnych wartościach akcji oraz wartościach akcji zalecanych dla ustawień Standardowe i Ścisłe, zobacz Ustawienia zasad ochrony przed wyłudzaniem informacji [eOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) i Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji w [programie Ochrona usługi Office 365 w usłudze Microsoft Defender](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 - Podczas tworzenia zasad ochrony przed wyłudzaniem informacji akcja zapobiegająca wyłudzaniu informacji bez odpowiedniego [](#step-2-assign-a-quarantine-policy-to-supported-features) parametru zasad kwarantanny oznacza, że są używane domyślne zasady kwarantanny dla tego werdyktu.
 
@@ -437,7 +415,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
 
-### <a name="safe-attachments-policies-in-defender-for-office-365"></a>Sejf załączników w programie Defender dla Office 365
+### <a name="safe-attachments-policies-in-defender-for-office-365"></a>Sejf załączników w aplikacji Ochrona usługi Office 365 w usłudze Defender
 
 1. W portalu [Microsoft 365 Defender przejdź](https://security.microsoft.com) \> do sekcji Zasady & e-mail **&** \>  \> zasady zagrożeń **Sejf załączników** **w sekcji** Zasady.
 
@@ -457,7 +435,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-Malw
 
    **Uwaga**: Po utworzeniu nowych zasad pusta wartość zasad kwarantanny wskazuje, że są używane domyślne zasady kwarantanny. Podczas późniejszego edytowania zasad pusta wartość jest zamieniana na rzeczywistą domyślną nazwę zasad kwarantanny zgodnie z opisem w poprzedniej tabeli.
 
-Pełne instrukcje dotyczące tworzenia i modyfikowania zasad załączników Sejf opisano w tece Konfigurowanie załączników Sejf w programie [Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
+Pełne instrukcje dotyczące tworzenia i modyfikowania Sejf załączników opisano w te Sejf Zasady załączników [w](set-up-safe-attachments-policies.md) p Ochrona usługi Office 365 w usłudze Microsoft Defender.
 
 #### <a name="safe-attachments-policies-in-powershell"></a>Sejf dotyczące załączników w programie PowerShell
 
@@ -515,7 +493,7 @@ Globalne ustawienia zasad kwarantanny umożliwiają dostosowanie powiadomień kw
 
      Poniższy zrzut ekranu przedstawia dostosowaną nazwę wyświetlaną w powiadomieniu kwarantanny:
 
-     ![Dostosowana nazwa wyświetlana nadawcy w powiadomieniu kwarantanny.](../../media/quarantine-tags-esn-customization-display-name.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="Niestandardowa nazwa wyświetlana nadawcy w powiadomieniu kwarantanny" lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
 
    - **Zastrzeżenie**: Dodaj niestandardowe zastrzeżenie u dołu powiadomień kwarantanny. Zlokalizowany tekst ( **Zastrzeżenie z Twojej organizacji:** jest zawsze uwzględniany jako pierwszy), a po nim określony tekst.
 
@@ -523,19 +501,19 @@ Globalne ustawienia zasad kwarantanny umożliwiają dostosowanie powiadomień kw
 
      Na poniższym zrzucie ekranu przedstawiono dostosowane zastrzeżenie w powiadomieniu kwarantanny:
 
-     ![Niestandardowe zastrzeżenie u dołu powiadomienia kwarantanny.](../../media/quarantine-tags-esn-customization-disclaimer.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="Niestandardowe zastrzeżenie u dołu powiadomienia kwarantanny" lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
    - **Wybierz język**: Powiadomienia kwarantanny są już zlokalizowane w zależności od ustawień językowych adresata. Dla wartości Nazwa wyświetlana i Zastrzeżenie można określić tekst niestandardowy w różnych  **językach**.
 
      Wybierz co najmniej jeden język w pierwszym polu języka, a następnie kliknij przycisk **Dodaj**. Możesz wybrać wiele języków, klikając pozycję **Dodaj** po każdym z nich. W polu Język sekcji są wszystkie wybrane języki:
 
-     ![Wybrane języki w drugim polu języka w ustawieniach powiadomień globalnego kwarantanny w zasadach kwarantanny.](../../media/quarantine-tags-esn-customization-selected-languages.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="Języki wybrane w drugim polu języka w ustawieniach powiadomień globalnego kwarantanny w zasadach kwarantanny" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
    - **Użyj logo firmy**: wybierz tę opcję, aby zastąpić domyślne logo firmy Microsoft używane u góry powiadomień kwarantanny. Zanim to zrobisz, należy postępować zgodnie z instrukcjami w temacie Dostosowywanie motywu Microsoft 365 [organizacji](../../admin/setup/customize-your-organization-theme.md) w celu przekazania niestandardowego logo.
 
      Poniższy zrzut ekranu przedstawia niestandardowe logo w powiadomieniu kwarantanny:
 
-     ![Niestandardowe logo w powiadomieniu kwarantanny.](../../media/quarantine-tags-esn-customization-logo.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="Niestandardowe logo w powiadomieniu kwarantanny" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
 
    - **Wysyłaj użytkownikom końcowych powiadomienia o spamie co (dni)**: wybierz częstotliwość powiadomień kwarantanny.
 
@@ -670,14 +648,14 @@ Jeśli zasady kwarantanny **przypiszeją** uprawnienia Ograniczony dostęp, uży
   - **Usuwanie z kwarantanny**
   - **Blokowanie nadawcy**
 
-  ![Dostępne przyciski w szczegółach wiadomości poddanych kwarantannie, jeśli zasady kwarantanny nadają użytkownikowi uprawnienia Ograniczony dostęp.](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-limited-access.png" alt-text="Przyciski dostępne w szczegółach wiadomości poddanej kwarantannie, jeśli zasady kwarantanny dają użytkownikowi uprawnienia ograniczonego dostępu" lightbox="../../media/quarantine-tags-quarantined-message-details-limited-access.png":::
 
 - **Poddaj powiadomienia** kwarantannie: Dostępne są następujące przyciski:
   - **Blokowanie nadawcy**
   - **Zażądaj wydania**
-  - **Recenzja**
+  - **Przegląd**
 
-  ![Dostępne przyciski w powiadomieniu kwarantanny, jeśli zasady kwarantanny nadają użytkownikowi uprawnienia Ograniczony dostęp.](../../media/quarantine-tags-esn-limited-access.png)
+  :::image type="content" source="../../media/quarantine-tags-esn-limited-access.png" alt-text="Przyciski dostępne w powiadomieniu kwarantanny, jeśli zasady kwarantanny nadają użytkownikowi uprawnienia ograniczonego dostępu" lightbox="../../media/quarantine-tags-esn-limited-access.png":::
 
 #### <a name="full-access"></a>Pełny dostęp
 
@@ -690,14 +668,14 @@ Jeśli zasady kwarantanny **przypiszeją** uprawnienia Pełny dostęp (wszystkie
   - **Usuwanie z kwarantanny**
   - **Blokowanie nadawcy**
 
-  ![Dostępne przyciski w szczegółach wiadomości poddanych kwarantannie, jeśli zasady kwarantanny dają użytkownikowi uprawnienia Pełny dostęp.](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-full-access.png" alt-text="Przyciski dostępne w szczegółach wiadomości poddanej kwarantannie, jeśli zasady kwarantanny dają użytkownikowi uprawnienia pełnego dostępu" lightbox="../../media/quarantine-tags-quarantined-message-details-full-access.png":::
 
 - **Poddaj powiadomienia** kwarantannie: Dostępne są następujące przyciski:
   - **Blokowanie nadawcy**
   - **Wydanie**
-  - **Recenzja**
+  - **Przegląd**
 
-  ![Dostępne przyciski w powiadomieniu kwarantanny, jeśli zasady kwarantanny nadają użytkownikowi uprawnienia Pełny dostęp.](../../media/quarantine-tags-esn-full-access.png)
+  :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="Przyciski dostępne w powiadomieniu kwarantanny, jeśli zasady kwarantanny dają użytkownikowi uprawnienia pełnego dostępu" lightbox="../../media/quarantine-tags-esn-full-access.png":::
 
 ### <a name="individual-permissions"></a>Indywidualne uprawnienia
 

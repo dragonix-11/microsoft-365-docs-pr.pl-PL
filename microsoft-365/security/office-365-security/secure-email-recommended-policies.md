@@ -20,16 +20,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b4b47b5cd5b7f345d21f2fa60deec736d931c62f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682444"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473436"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Zalecenia dotyczące zasad dotyczące zabezpieczania poczty e-mail
 
-W tym artykule opisano sposób wdrażania zalecanych zasad dostępu do urządzeń i tożsamości zerowego zaufania w celu ochrony poczty e-mail i klientów poczty e-mail organizacji, które obsługują nowoczesne uwierzytelnianie i dostęp warunkowy. Te wskazówki są kompilacją wspólnych zasad dostępu do [urządzeń](identity-access-policies.md) i tożsamości, a także zawierają dodatkowe zalecenia.
+W tym artykule opisano sposób wdrażania zalecanych zasad dostępu do usługi Zero Trust i dostępu do urządzeń w celu ochrony poczty e-mail i klientów poczty e-mail organizacji, które obsługują nowoczesne uwierzytelnianie i dostęp warunkowy. Te wskazówki są kompilacją wspólnych zasad dostępu do [urządzeń](identity-access-policies.md) i tożsamości, a także zawierają dodatkowe zalecenia.
 
 Zalecenia te są oparte na trzech różnych warstwach zabezpieczeń i ochrony, które można stosować w zależności od stopnia szczegółowości Twoich **potrzeb: punktu** początkowego **,** przedsiębiorstwa i **wyspecjalizowanego zabezpieczeń**. Możesz dowiedzieć się więcej o tych warstwach zabezpieczeń i zalecanych systemach operacyjnych klientów, do których odwoływowały się te zalecenia we wprowadzeniu zalecanych zasad zabezpieczeń [i konfiguracji](microsoft-365-policies-configurations.md).
 
@@ -39,7 +39,7 @@ Te zalecenia wymagają, aby użytkownicy korzystali z nowoczesnych klientów poc
 
 Aby chronić pocztę e-mail, na poniższym diagramie pokazano zasady do zaktualizowania na stronie wspólnej zasad dostępu do urządzeń i tożsamości.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Podsumowanie aktualizacji zasad w celu ochrony dostępu do Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Podsumowanie aktualizacji zasad w celu ochrony dostępu do usługi Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
 Zwróć uwagę na dodanie nowych zasad do blokowania Exchange Online ActiveSync. Wymusza to korzystanie z Outlook urządzenia przenośnego.
 
@@ -60,7 +60,7 @@ Jeśli podczas ich Exchange Online do Outlook uwzględniono zasady, wystarczy ut
 
 Exchange ActiveSync służy do synchronizowania wiadomości i danych kalendarza na komputerach i urządzeniach przenośnych.
 
-W przypadku urządzeń przenośnych klienci programu Exchange ActiveSync z nowoczesnym uwierzytelnianiem, którzy nie obsługują zasad ochrony aplikacji Intune (lub klientów obsługiwanych, których nie zdefiniowano w zasadach ochrony aplikacji), Exchange ActiveSync klienci, którzy używają uwierzytelniania podstawowego, są blokowani na podstawie zasad dostępu warunkowego utworzonych w te sposób Wymagaj zatwierdzonych aplikacji i ochrony [aplikacji.](identity-access-policies.md#require-approved-apps-and-app-protection)
+W przypadku urządzeń przenośnych klienci programu Exchange ActiveSync z nowoczesnym uwierzytelnianiem nie obsługujący zasad ochrony aplikacji programu Intune (lub obsługiwani klienci, którzy nie są zdefiniowani w zasadach ochrony aplikacji) oraz [klienci programu Exchange ActiveSync, którzy używają uwierzytelniania podstawowego, są blokowani na podstawie zasad dostępu warunkowego utworzonych w Wymagaj zatwierdzonych aplikacji i ochrony aplikacji](identity-access-policies.md#require-approved-apps-and-app-protection).
 
 Aby zablokować Exchange ActiveSync przy użyciu uwierzytelniania podstawowego na innych urządzeniach, wykonaj czynności opisane Exchange ActiveSync Blokowanie połączeń na wszystkich urządzeniach[, co](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices) uniemożliwi łączenie się klientów usługi Exchange ActiveSync korzystających z uwierzytelniania podstawowego na urządzeniach innych niż urządzenia przenośne Exchange Online.
 
@@ -86,7 +86,7 @@ W tym celu należy wykonać następujące czynności:
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-5. W portalu Azure Portal utwórz nowe zasady dostępu warunkowego z tymi ustawieniami:
+5. W Azure Portal utwórz nowe zasady dostępu warunkowego z tymi ustawieniami:
 
     \> Zadania **Użytkownicy i grupy**: Wybierz odpowiednich użytkowników i grupy, które chcesz uwzględnić lub wykluczyć.
 
@@ -102,13 +102,13 @@ Aby uzyskać informacje na temat konfigurowania tych zasad, zobacz Zarządzanie 
 
 ## <a name="set-up-message-encryption"></a>Konfigurowanie szyfrowania wiadomości
 
-Dzięki nowym możliwościom Szyfrowanie wiadomości usługi Office 365 (OME), które wykorzystują funkcje ochrony w usłudze Azure Information Protection, Twoja organizacja może łatwo udostępniać chronioną pocztę e-mail wszystkim osobom na dowolnym urządzeniu. Użytkownicy mogą wysyłać i odbierać chronione wiadomości z Microsoft 365 organizacji, a także osób niebędących klientami, korzystając z Outlook.com, Gmail i innych usług poczty e-mail.
+Dzięki nowym funkcjom szyfrowania wiadomości Office 365 (OME), które wykorzystują funkcje ochrony w usłudze Azure Information Protection, Twoja organizacja może łatwo udostępniać chronioną pocztę e-mail wszystkim osobom na dowolnym urządzeniu. Użytkownicy mogą wysyłać i odbierać chronione wiadomości z Microsoft 365 organizacji, a także osób niebędących klientami, korzystając z Outlook.com, Gmail i innych usług poczty e-mail.
 
-Aby uzyskać więcej informacji, [zobacz Konfigurowanie nowych Szyfrowanie wiadomości usługi Office 365 funkcji](../../compliance/set-up-new-message-encryption-capabilities.md).
+Aby uzyskać więcej informacji, [zobacz Konfigurowanie nowych funkcji Office 365 szyfrowania wiadomości](../../compliance/set-up-new-message-encryption-capabilities.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-![Krok 4. Zasady dotyczące aplikacji Microsoft 365 chmurze.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Zasady dotyczące aplikacji Microsoft 365 chmurze" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Skonfiguruj zasady dostępu warunkowego dla:
 

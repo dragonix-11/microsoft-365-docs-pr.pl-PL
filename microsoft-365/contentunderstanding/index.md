@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak znaleźć zasoby dla aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: 3b8c85cfd405e68884df844c502473cdd95a4fa5
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
-ms.translationtype: MT
+ms.openlocfilehash: 1b57283b5818a7fa502e112d903f873863a6e1b6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449432"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682069"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Wprowadzenie do aplikacji Microsoft SharePoint Syntex
 
@@ -41,7 +41,7 @@ Zasoby na tej stronie są przeznaczone do rozpoczęcia nauki i korzystania z Sha
 
 ## <a name="get-started"></a>Wprowadzenie
 
-Zasoby w tej sekcji pomogą Ci dowiedzieć się więcej o trzech metodach klasyfikacji i wyodrębniania danych używanych przez program SharePoint Syntex: opis dokumentu, przetwarzanie formularzy i wstępne wykupy.
+Zasoby w tej sekcji ułatwiają więcej informacji na temat metod klasyfikacji i wyodrębniania danych używanych przez SharePoint Syntex. Istnieją dwa niestandardowe typy modeli — opis [dokumentu](document-understanding-overview.md) i przetwarzanie [formularzy](form-processing-overview.md) — oraz [wstępnie utworzony](prebuilt-overview.md) typ modelu.
 
 > [!NOTE]
 > Możesz rozpocząć pracę z SharePoint Syntex bez kupowania licencji, tworząc centrum zawartości w centrum SharePoint [administracyjnego](create-a-content-center.md). Nielicencjonowani użytkownicy mogą tworzyć modele opisowe dokumentów, ale nie mogą stosować ich do biblioteki dokumentów.

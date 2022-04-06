@@ -20,40 +20,40 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b3ff79ead1e337bb78772109e57d34836d0f4ec9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 29a00c20333c27fcd8138063f31316241b784572
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681617"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467032"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Wykrywanie w Eksploratorze zagrożeń i w czasie rzeczywistym
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Jeśli Twoja organizacja ma program [Microsoft Defender for Office 365](defender-for-office-365.md) i masz odpowiednie [uprawnienia, masz](#required-licenses-and-permissions) wykrywanie w czasie rzeczywistym lub **Eksploratora (** wcześniej raporty w czasie *rzeczywistym — sprawdź*, co się [nowego).](#new-features-in-threat-explorer-and-real-time-detections) W Centrum zabezpieczeń & zgodności przejdź do strony Zarządzanie zagrożeniami **, a** następnie wybierz pozycję **Wykrywanie**  eksploratora lub **w czasie rzeczywistym**.
+Jeśli Twoja organizacja ma [Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md) i masz odpowiednie [uprawnienia, masz](#required-licenses-and-permissions) wykrywanie Eksploratora lub czasu rzeczywistego **(wcześniej** raporty w czasie *rzeczywistym — sprawdź*, co się [nowego).](#new-features-in-threat-explorer-and-real-time-detections) W Centrum zabezpieczeń & zgodności przejdź do strony Zarządzanie zagrożeniami **, a** następnie wybierz pozycję **Wykrywanie**  eksploratora lub **w czasie rzeczywistym**.
 
-|Usługa Microsoft Defender dla Office 365 Plan 2 pozwala zobaczyć:|Usługa Microsoft Defender dla Office 365 Plan 1 pozwala zobaczyć:|
+|W Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2 zobaczysz:|Po Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1 zobaczysz:|
 |---|---|
 |![Eksplorator zagrożeń.](../../media/threatmgmt-explorer.png)|![Wykrywanie w czasie rzeczywistym](../../media/threatmgmt-realtimedetections.png)|
 
 Wykrywanie w Eksploratorze lub w czasie rzeczywistym ułatwia twojemu zespołowi operacyjnemu ds. zabezpieczeń efektywne badanie zagrożeń i reagowanie na nie. Raport przypomina poniższy obraz:
 
-![Przejdź do Eksploratora zarządzania zagrożeniami \> .](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Element menu Eksplorator w portalu zabezpieczeń & zgodności" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
 
 Ten raport umożliwia:
 
 - [Zobacz złośliwe oprogramowanie wykryte przez Microsoft 365 funkcje zabezpieczeń](#see-malware-detected-in-email-by-technology)
 - [Wyświetlanie adresu URL wyłudzania informacji i klikanie danych werdyktu](#view-phishing-url-and-click-verdict-data)
-- [Uruchamianie zautomatyzowanego procesu badania i odpowiedzi z widoku w Eksploratorze](#start-automated-investigation-and-response) (tylko program Defender Office 365 Plan 2)
+- [Uruchamianie zautomatyzowanego procesu badania i odpowiedzi z widoku](#start-automated-investigation-and-response) w Eksploratorze (tylko Ochrona usługi Office 365 w usłudze Defender Plan 2)
 - [Badanie złośliwych wiadomości e-mail i nie tylko](#more-ways-to-use-explorer-and-real-time-detections)
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Ulepszenia dotyczące pracy z zagrożeniami podczas chłoniania
 
 
-### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>Wprowadzenie do identyfikatora alertu dla usługi Defender Office 365 alertów w wykryciach w Eksploratorze/czasie rzeczywistym
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>Wprowadzenie do identyfikatora alertu dla alertów Ochrona usługi Office 365 w usłudze Defender wykrywania w Eksploratorze/czasie rzeczywistym
 
 Obecnie w przypadku przechodzenia z alertu do Eksploratora zagrożeń zostanie otwarty widok filtrowany w Eksploratorze z widokiem filtrowany według identyfikatora zasad alertu (identyfikator zasad, który jest identyfikator unikatowy dla zasad alertu).
 Wprowadzamy ten identyfikator alertu (zobacz przykład identyfikatora alertu poniżej) w Eksploratorze zagrożeń i wykrywaniu w czasie rzeczywistym, dzięki czemu widać wiadomości związane z określonym alertem, a także liczbę wiadomości e-mail. Możesz również sprawdzić, czy wiadomość była częścią alertu, a także przejść z tej wiadomości do konkretnego alertu.
@@ -61,10 +61,10 @@ Wprowadzamy ten identyfikator alertu (zobacz przykład identyfikatora alertu pon
 Identyfikator alertu jest dostępny w adresie URL podczas wyświetlania pojedynczego alertu. Przykład: `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`.
 
 > [!div class="mx-imgBorder"]
-> ![Filtrowanie identyfikatora alertu.](../../media/AlertID-Filter.png)
+> :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Filtrowanie identyfikatora alertu" lightbox="../../media/AlertID-Filter.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Identyfikator alertu w wysuwanym czacie szczegółów.](../../media/AlertID-DetailsFlyout.png)
+> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="Identyfikator alertu w wysuwanym czacie szczegółów" lightbox="../../media/AlertID-DetailsFlyout.png":::
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Rozszerzanie limitu przechowywania danych i wyszukiwania w Eksploratorze (i wykrywania w czasie rzeczywistym) dla dzierżaw wersji próbnej z 7 do 30 dni
 
@@ -80,7 +80,7 @@ W ramach tej aktualizacji liczba wierszy rekordów poczty e-mail, które można 
 > [!NOTE]
 > Funkcja tagów użytkowników jest w wersji *Preview*, nie jest dostępna dla wszystkich i może ulec zmianie. Aby uzyskać informacje na temat harmonogramu wydania, zapoznaj się z Microsoft 365 przewodnik.
 
-Tagi użytkowników identyfikują konkretne grupy użytkowników w uchcie Microsoft Defender dla Office 365. Aby uzyskać więcej informacji o tagach, w tym o licencjonowaniu i konfiguracji, zobacz [Tagi użytkownika](user-tags.md).
+Tagi użytkowników identyfikują konkretne grupy użytkowników w Ochrona usługi Office 365 w usłudze Microsoft Defender. Aby uzyskać więcej informacji o tagach, w tym o licencjonowaniu i konfiguracji, zobacz [Tagi użytkownika](user-tags.md).
 
 W Eksploratorze zagrożeń możesz zobaczyć informacje o tagach użytkowników w następujących środowiskoch.
 
@@ -89,7 +89,7 @@ W Eksploratorze zagrożeń możesz zobaczyć informacje o tagach użytkowników 
 Kolumna **Tagi** w siatce wiadomości e-mail zawiera wszystkie tagi, które zostały zastosowane do skrzynek pocztowych nadawcy lub adresata. Domyślnie w pierwszej kolejności są wyświetlane tagi systemowe, takie jak konta priorytetów.
 
 > [!div class="mx-imgBorder"]
-> ![Filtrowanie tagów w widoku siatki wiadomości e-mail.](../../media/tags-grid.png)
+> :::image type="content" source="../../media/tags-grid.png" alt-text="The Filter tags in email grid view" lightbox="../../media/tags-grid.png":::
 
 #### <a name="filtering"></a>Filtrowanie
 
@@ -98,7 +98,7 @@ Tagów można używać jako filtru. Przeszukaj tylko priorytetowe konta lub scen
 [![Filtrowanie tagów.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Nie filtruj tagów.](../../media/tags-filter-not.png)
+> :::image type="content" source="../../media/tags-filter-not.png" alt-text="Tagi, które nie są filtrowane" lightbox="../../media/tags-filter-not.png":::
 
 #### <a name="email-detail-flyout"></a>Wysuwny szczegół wiadomości e-mail
 
@@ -106,14 +106,14 @@ Aby wyświetlić poszczególne tagi dla nadawcy i adresata, wybierz temat, aby w
 Informacje o poszczególnych tagach nadawcy i adresata obejmują również wyeksportowane dane CSV, w których te szczegóły są wyświetlane w dwóch osobnych kolumnach.
 
 > [!div class="mx-imgBorder"]
-> ![Tagi szczegółów wiadomości e-mail.](../../media/tags-flyout.png)
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="Tagi szczegółów wiadomości e-mail" lightbox="../../media/tags-flyout.png":::
 
 Informacje o znacznikach są również wyświetlane w wysuwanych kliknięciach adresu URL. Aby go wyświetlić, przejdź do widoku Wyłudzy lub Wszystkie wiadomości e-mail, a następnie do **karty Adresy URL** lub **Kliknięcia adresu URL** . Wybierz poszczególne wysuwne informacje o adresie URL, aby wyświetlić dodatkowe szczegóły dotyczące kliknięć tego adresu URL, łącznie z tagami skojarzonymi z tym kliknięciem.
 
 ### <a name="updated-timeline-view"></a>Zaktualizowany widok osi czasu
 
 > [!div class="mx-imgBorder"]
-> ![Tagi adresu URL.](../../media/tags-urls.png)
+> :::image type="content" source="../../media/tags-urls.png" alt-text="Tagi adresu URL" lightbox="../../media/tags-urls.png":::
 >
 Dowiedz się więcej, oglądając [ten klip wideo](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
@@ -137,12 +137,12 @@ Zestaw technologii wykrywania zawiera teraz nowe metody wykrywania, a także tec
 Na karcie Szczegóły wysuwana wiadomość e-mail możesz teraz zobaczyć konkretne zagrożenie dla **adresu URL.** Zagrożenie może mieć *na przykład złośliwe oprogramowanie*, *wyłudzy*, *spam* *lub brak*).
 
 > [!div class="mx-imgBorder"]
-> ![Zagrożenia w adresie URL.](../../media/URL_Threats.png)
+> :::image type="content" source="../../media/URL_Threats.png" alt-text="Zagrożenia związane z adresem URL" lightbox="../../media/URL_Threats.png":::
 
 ### <a name="updated-timeline-view-upcoming"></a>Zaktualizowany widok osi czasu (nadchodzące)
 
 > [!div class="mx-imgBorder"]
-> ![Zaktualizowany widok osi czasu.](../../media/Email_Timeline.png)
+> :::image type="content" source="../../media/Email_Timeline.png" alt-text="Zaktualizowany widok osi czasu" lightbox="../../media/Email_Timeline.png":::
 
 Widok osi czasu zawiera wszystkie zdarzenia dostarczenia i po dostarczeniu. Zawiera informacje o zagrożeń zidentyfikowanych w tym momencie dla podzestawu tych zdarzeń. Widok osi czasu zawiera również informacje na temat wszelkich dodatkowych działań (takich jak zap lub ręczne działania naprawcze) wraz z ich wynikiem. Informacje widoku osi czasu obejmują:
 
@@ -159,7 +159,7 @@ Obecnie lokalizacja dostarczania jest dostępna w siatce poczty e-mail i wysuwan
 **Oryginalna lokalizacja dostarczania** zawiera więcej informacji o tym, gdzie wiadomość e-mail została początkowo dostarczona. **W ostatniej lokalizacji dostarczania** wiadomość e-mail trafiała po działaniach systemowych, takich jak *ZAP* lub akcje administratora, takie jak *Przenieś do elementów usuniętych*. Najnowsza lokalizacja dostarczania ma zamierzenie informujące administratorów o ostatniej znanej lokalizacji wiadomości po dostarczeniu lub o wszelkich działaniach systemowych/a administrujący. Wiadomość e-mail nie zawiera żadnych akcji użytkownika końcowego. Jeśli na przykład użytkownik usunął wiadomość lub przeniesiono wiadomość do archiwum/pst, lokalizacja "dostarczanie" wiadomości nie zostanie zaktualizowana. Jeśli jednak akcja systemowa zaktualizowała lokalizację (na przykład zap, co spowoduje przeniesienie wiadomości e-mail do **kwarantanny), lokalizacja** najnowszej dostawy będzie pokazywana jako "kwarantanna".
 
 > [!div class="mx-imgBorder"]
-> ![Zaktualizowano lokalizacje dostarczania.](../../media/Updated_Delivery_Location.png)
+> :::image type="content" source="../../media/Updated_Delivery_Location.png" alt-text="Zaktualizowane lokalizacje dostarczania" lightbox="../../media/Updated_Delivery_Location.png":::
 
 > [!NOTE]
 > W kilku przypadkach lokalizacja **dostarczania i akcja** dostarczenia mogą  być wyświetlane jako "nieznane":
@@ -169,7 +169,7 @@ Obecnie lokalizacja dostarczania jest dostępna w siatce poczty e-mail i wysuwan
 > - **Nie można określić ostatniej** lokalizacji dostarczania, jeśli próbowano wybrać akcję administratora/systemu (na przykład ZAP), ale wiadomość nie została odnaleziona. Zazwyczaj akcja ma miejsce po tym, jak użytkownik przeniosł lub usunął wiadomość. W takich przypadkach sprawdź **kolumnę Wynik/Szczegóły** w widoku osi czasu. Poszukaj instrukcji "Wiadomość przeniesiona lub usunięta przez użytkownika".
 
 > [!div class="mx-imgBorder"]
-> ![Lokalizacje dostarczania osi czasu.](../../media/Updated_Timeline_Delivery_Location.png)
+> :::image type="content" source="../../media/Updated_Timeline_Delivery_Location.png" alt-text="Lokalizacje dostarczania osi czasu" lightbox="../../media/Updated_Timeline_Delivery_Location.png":::
 
 ### <a name="additional-actions"></a>Dodatkowe akcje
 
@@ -179,7 +179,7 @@ Obecnie lokalizacja dostarczania jest dostępna w siatce poczty e-mail i wysuwan
 > W ramach oczekujących zmian wartość "Usunięte przez ZAP" obecnie jest powierzchniowa w filtrze Akcja dostarczania zostanie usunięta. Możesz wyszukać wszystkie wiadomości e-mail za pomocą zap w ramach **dodatkowych akcji**.
 
 > [!div class="mx-imgBorder"]
-> ![Dodatkowe akcje w Eksploratorze.](../../media/Additional_Actions.png)
+> :::image type="content" source="../../media/Additional_Actions.png" alt-text="Dodatkowe akcje w Eksploratorze" lightbox="../../media/Additional_Actions.png":::
 
 ### <a name="system-overrides"></a>Zastępowanie systemu
 
@@ -198,7 +198,7 @@ Obecnie lokalizacja dostarczania jest dostępna w siatce poczty e-mail i wysuwan
 [![Zastępowanie systemu w Eksploratorze.](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![Siatka zastępowania systemu w Eksploratorze.](../../media/System_Overrides_Grid.png)
+> :::image type="content" source="../../media/System_Overrides_Grid.png" alt-text="Siatka zastępowania systemu w Eksploratorze" lightbox="../../media/System_Overrides_Grid.png":::
 
 ### <a name="improvements-for-the-url-and-clicks-experience"></a>Ulepszenia obsługi adresów URL i kliknięć
 
@@ -236,14 +236,14 @@ Teraz możesz sortować i filtrować według systemowych lub niestandardowych ta
 > Filtrowanie i sortowanie według tagów użytkowników jest obecnie dostępne w publicznej wersji Preview. Ta funkcja może zostać znacząco zmodyfikowana przed jej komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, w odniesieniu do podanych informacji na jej temat.
 
 > [!div class="mx-imgBorder"]
-> ![Kolumna Znaczniki w Eksploratorze.](../../media/threat-explorer-tags.png)
+> :::image type="content" source="../../media/threat-explorer-tags.png" alt-text="Kolumna Tagi w Eksploratorze" lightbox="../../media/threat-explorer-tags.png":::
 
 ### <a name="timezone-improvements"></a>Ulepszenia strefy czasowej
 
 Zobaczysz strefę czasową dla rekordów poczty e-mail w portalu, a także dla wyeksportowanych danych. Będzie on widoczny w różnych środowiskoch, takich jak siatka wiadomości e-mail, wysuwne informacje szczegółów, oś czasu wiadomości e-mail i podobne wiadomości e-mail, więc strefa czasowa zestawu wyników jest wyczyścina.
 
 > [!div class="mx-imgBorder"]
-> ![Wyświetl strefę czasową w Eksploratorze.](../../media/TimezoneImprovements.png)
+> :::image type="content" source="../../media/TimezoneImprovements.png" alt-text="The View time zone in Explorer" lightbox="../../media/TimezoneImprovements.png":::
 
 ### <a name="update-in-the-refresh-process"></a>Aktualizowanie w procesie odświeżania
 
@@ -252,21 +252,21 @@ Niektórzy użytkownicy skomentują pomylenia z automatycznym odświeżaniem (na
 W standpoint środowisko, użytkownik może stosować i usuwać różne zakresy filtrów (z zestawu filtrów i daty) i wybrać przycisk odświeżania, aby filtrować wyniki po zdefiniowanym zapytaniu. Przycisk odświeżania jest teraz wyróżniony na ekranie. Zaktualizowaliśmy także powiązane etykietki narzędzi i dokumentację w produktach.
 
 > [!div class="mx-imgBorder"]
-> ![Wybierz pozycję Odśwież, aby filtrować wyniki.](../../media/ManualRefresh.png)
+> :::image type="content" source="../../media/ManualRefresh.png" alt-text="Przycisk Odśwież w celu filtrowania wyników" lightbox="../../media/ManualRefresh.png":::
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>Przechodzenie do szczegółów wykresu w celu dodania do filtrów
 
 Teraz możesz utworzyć wykres wartości legendy, aby dodać je jako filtry. Wybierz przycisk **Odśwież** , aby przefiltrować wyniki.
 
 > [!div class="mx-imgBorder"]
-> ![Przechodzenie do szczegółów wykresów i filtrowanie.](../../media/ChartDrilldown.png)
+> :::image type="content" source="../../media/ChartDrilldown.png" alt-text="Przechodzenie do szczegółów wykresów w celu filtrowania" lightbox="../../media/ChartDrilldown.png":::
 
 ### <a name="in-product-information-updates"></a>Aktualizacje informacji w produktach
 
 W obrębie produktu są teraz dostępne dodatkowe szczegóły, na przykład łączna liczba wyników wyszukiwania w siatce (patrz poniżej). Ulepszyliśmy etykiety, komunikaty o błędach i etykietki narzędzi, aby zapewnić więcej informacji na temat filtrów, jakości wyszukiwania i zestawu wyników.
 
 > [!div class="mx-imgBorder"]
-> ![Wyświetl informacje o produkcie.](../../media/ProductInfo.png)
+> :::image type="content" source="../../media/ProductInfo.png" alt-text="Informacje w produktach do wyświetlenia" lightbox="../../media/ProductInfo.png":::
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>Rozszerzone funkcje w Eksploratorze zagrożeń
 
@@ -277,7 +277,7 @@ Dzisiaj udostępniamy listę użytkowników, do których najgorętniej dostępni
 Możesz wyeksportować listę docelowych użytkowników (maksymalnie do 3000) wraz z liczbą prób analizy w trybie offline dla każdego widoku poczty e-mail. Ponadto wybranie liczby prób (na przykład 13 prób na poniższej ilustracji) spowoduje otwarcie widoku filtrowanego w Eksploratorze zagrożeń, dzięki czemu będzie można wyświetlać więcej szczegółów wiadomości e-mail i zagrożeń dla tego użytkownika.
 
 > [!div class="mx-imgBorder"]
-> ![Najgorętsi użytkownicy docelowi.](../../media/Top_Targeted_Users.png)
+> :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="Użytkownicy z najwyższymi celami" lightbox="../../media/Top_Targeted_Users.png":::
 
 ### <a name="exchange-transport-rules"></a>Exchange reguł transportu
 
@@ -298,7 +298,7 @@ Będzie można zobaczyć zarówno identyfikator GUID, jak i nazwę reguł transp
 > W siatce wiadomości e-mail, wysuwanych szczegółach i wyeksportowanych plikach CSV są wyświetlane wartości Nazwa/identyfikator GUID, jak pokazano poniżej.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange reguły transportu.](../../media/ETR_Details.png)
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Reguły Exchange transportu" lightbox="../../media/ETR_Details.png":::
 
 ### <a name="inbound-connectors"></a>Łączniki ruchu przychodzącego
 
@@ -307,7 +307,7 @@ Będzie można zobaczyć zarówno identyfikator GUID, jak i nazwę reguł transp
 Wyszukiwanie łączników ma charakter "zawiera", co oznacza, że powinno również działać wyszukiwanie części słów kluczowych. W widoku siatki głównej, menu wysuwanym Szczegóły i wyeksportowanym pliku CSV łączniki są wyświetlane w formacie Nazwa/identyfikator GUID, jak pokazano poniżej:
 
 > [!div class="mx-imgBorder"]
-> ![Szczegóły łącznika.](../../media/Connector_Details.png)
+> :::image type="content" source="../../media/Connector_Details.png" alt-text="Szczegóły łącznika" lightbox="../../media/Connector_Details.png":::
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nowe funkcje w Eksploratorze zagrożeń i wykrywaniu w czasie rzeczywistym
 
@@ -345,7 +345,7 @@ W tym przykładzie użyto Eksploratora zagrożeń.
 
 5. Wybierz temat **dowolnej** wiadomości  >  na karcie Szczegóły wiadomości e-mail, aby wyświetlić dodatkowe informacje o personifikacji dotyczące użytkownika lub domeny i lokalizacji *Wykryte*.
 
-    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Okienko szczegółów Eksploratora zagrożeń dla chronionego użytkownika pokazującego lokalizację wykrywania i wykryte zagrożenie (tutaj podszywanie się pod użytkownika).":::
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Okienko szczegółów Eksploratora zagrożeń dla chronionego użytkownika pokazującego lokalizację wykrywania i wykryte zagrożenie (tutaj podszywanie się pod użytkownika)" lightbox="../../media/threat-ex-views-impersonated-user-image.png":::
 
 > [!NOTE]
 > W kroku 3 lub 5, jeśli wybierzesz technologię  wykrywania i wybierzesz odpowiednio domenę  personifikacji lub użytkownika personifikacji,  >  informacje na karcie Szczegóły poczty *e-mail* dotyczące użytkownika lub domeny,  a lokalizacja Wykryte będą wyświetlane tylko w wiadomościach powiązanych z użytkownikiem lub domeną wymienionych na stronie zasad przeciw wyłudzaniu informacji.
@@ -412,7 +412,7 @@ Postępuj zgodnie z tą ścieżką, aby uzyskać dostęp do tej samej lokalizacj
 > Identyfikator wiadomości sieciowej mapuje kliknięcie z powrotem na określoną pocztę podczas wyszukiwania w identyfikatorze za pomocą Eksploratora lub narzędzi innych firm. Takie wyszukiwania identyfikują wiadomość e-mail skojarzoną z wynikiem kliknięcia. Skorelowanie identyfikatora wiadomości sieciowych umożliwia szybszą i bardziej zaawansowaną analizę.
 
 > [!div class="mx-imgBorder"]
-> ![Klika kartę w Eksploratorze.](../../media/tp_ExportClickResultAndNetworkID.png)
+> :::image type="content" source="../../media/tp_ExportClickResultAndNetworkID.png" alt-text="Karta Kliknięcia w Eksploratorze" lightbox="../../media/tp_ExportClickResultAndNetworkID.png":::
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Wyświetlanie złośliwego oprogramowania wykrytego w wiadomości e-mail za pomocą technologii
 
@@ -423,19 +423,19 @@ Załóżmy, że chcesz widzieć złośliwe oprogramowanie wykryte w wiadomościa
 2. W menu **Widok** wybierz polecenie Wyślij wiadomość **e-mail do złośliwego** \> **oprogramowania**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu Widok w Eksploratorze.](../../media/ExplorerViewEmailMalwareMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailMalwareMenu.png" alt-text="Menu Widok dla Eksploratora" lightbox="../../media/ExplorerViewEmailMalwareMenu.png":::
 
 3. Kliknij **pozycję Nadawca**, a następnie wybierz **pozycję Technologia wykrywania** \> **podstawowego**.
 
    Technologie wykrywania są teraz dostępne jako filtry raportu.
 
    > [!div class="mx-imgBorder"]
-   > ![Technologie wykrywania złośliwego oprogramowania.](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > :::image type="content" source="../../media/ExplorerEmailMalwareDetectionTech.png" alt-text="Technologie wykrywania złośliwego oprogramowania" lightbox="../../media/ExplorerEmailMalwareDetectionTech.png":::
 
 4. Wybierz opcję. Następnie wybierz przycisk **Odśwież,** aby zastosować ten filtr.
 
    > [!div class="mx-imgBorder"]
-   > ![Wybrana technologia wykrywania.](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > :::image type="content" source="../../media/ExplorerEmailMalwareDetectionTechATP.png" alt-text="Wybrana technologia wykrywania" lightbox="../../media/ExplorerEmailMalwareDetectionTechATP.png":::
 
 Raport zostanie odświeżony w celu pokazania wyników wykrytych w wiadomościach e-mail przez złośliwe oprogramowanie przy użyciu wybranej opcji technologii. Tutaj możesz przeprowadzić dalszą analizę.
 
@@ -450,14 +450,14 @@ Aby przeglądać adresy URL wyłudków w wiadomościach i klikać adresy URL w w
 2. W menu **Widok** wybierz polecenie Wiadomość **e-mail** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu Widok w Eksploratorze w kontekście wyłudzania informacji.](../../media/ExplorerViewEmailPhishMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="Menu Widok w Eksploratorze w kontekście wyłudzania informacji" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
 
 3. Kliknij **pozycję Nadawca**, a następnie wybierz pozycję **Adresy URL** \> **Kliknij werdykt**.
 
 4. Wybierz jedną lub więcej opcji, takich jak **Zablokowane i Zablokuj** **zastąpione, a** następnie wybierz przycisk Odśwież w  tym samym wierszu co opcje, aby zastosować ten filtr. Nie odświeżaj okna przeglądarki.
 
    > [!div class="mx-imgBorder"]
-   > ![Adresy URL i klikanie werdyktów.](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > :::image type="content" source="../../media/ThreatExplorerEmailPhishClickVerdictOptions.png" alt-text="Adresy URL i klikanie werdyktów" lightbox="../../media/ThreatExplorerEmailPhishClickVerdictOptions.png":::
 
    Raport zostanie odświeżony w celu pokazania dwóch różnych tabel adresów URL na karcie adres URL w obszarze raportu:
 
@@ -468,7 +468,7 @@ Aby przeglądać adresy URL wyłudków w wiadomościach i klikać adresy URL w w
    W obu tabelach adresów URL są wyświetlane najważniejsze adresy URL w wiadomościach e-mail wyłudzających informacje według akcji dostarczenia i lokalizacji. W tabelach są wyświetlane kliknięcia adresów URL, które zostały zablokowane lub odwiedzone pomimo ostrzeżenia, dzięki czemu można zobaczyć, jakie potencjalne złe linki zostały przedstawione użytkownikom i czy zostały klikone. Tutaj możesz przeprowadzić dalszą analizę. Poniżej wykresu można na przykład zobaczyć górne adresy URL wiadomości e-mail, które zostały zablokowane w środowisku organizacji.
 
    > [!div class="mx-imgBorder"]
-   > ![Adresy URL Eksploratora, które zostały zablokowane.](../../media/ExplorerPhishClickVerdictURLs.png)
+   > :::image type="content" source="../../media/ExplorerPhishClickVerdictURLs.png" alt-text="Adresy URL Eksploratora, które zostały zablokowane" lightbox="../../media/ExplorerPhishClickVerdictURLs.png":::
 
    Wybierz adres URL, aby wyświetlić bardziej szczegółowe informacje.
 
@@ -497,21 +497,21 @@ Załóżmy, że chcesz, aby użytkownicy w organizacji zgłaszali wiadomości [e
 2. W menu **Widok** wybierz polecenie Wyślij **materiały pocztą e-mail**\>.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu Widok w Eksploratorze wiadomości e-mail.](../../media/explorer-view-menu-email-user-reported.png)
+   > :::image type="content" source="../../media/explorer-view-menu-email-user-reported.png" alt-text="Menu Widok w Eksploratorze wiadomości e-mail" lightbox="../../media/explorer-view-menu-email-user-reported.png":::
 
 3. Kliknij **pozycję Nadawca**, a następnie wybierz **pozycję Typ** \> **raportu podstawowego**.
 
 4. Wybierz opcję, na przykład **Phish**, a następnie wybierz przycisk **Odśwież** .
 
    > [!div class="mx-imgBorder"]
-   > ![Wyłudzy z zgłoszonymi przez użytkowników.](../../media/EmailUserReportedReportType.png)
+   > :::image type="content" source="../../media/EmailUserReportedReportType.png" alt-text="Fraza wyłudowa zgłaszana przez użytkownika" lightbox="../../media/EmailUserReportedReportType.png":::
 
-Raport zostanie odświeżony w celu pokazania danych o wiadomościach e-mail zgłoszonych przez osoby w Twojej organizacji jako próba wyłudzenia informacji. Możesz użyć tych informacji do przeprowadzenia dalszej analizy i, w razie potrzeby, dostosować swoje zasady ochrony przed wyłudzaniem informacji w programie [Microsoft Defender dla](configure-mdo-anti-phishing-policies.md) Office 365.
+Raport zostanie odświeżony w celu pokazania danych o wiadomościach e-mail zgłoszonych przez osoby w Twojej organizacji jako próba wyłudzenia informacji. Możesz użyć tych informacji do przeprowadzenia dalszej analizy i, w razie potrzeby, dostosować swoje zasady ochrony przed wyłudzaniem informacji [w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="start-automated-investigation-and-response"></a>Rozpoczynanie automatycznego badania i odpowiedzi
 
 > [!NOTE]
-> Funkcje automatycznego badania i odpowiedzi są dostępne w programie *Microsoft Defender dla Office 365 Plan 2* i *Office 365 E5*.
+> Funkcje automatycznego badania i odpowiedzi są dostępne w *programach Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2* i *Office 365 E5*.
 
 [Zautomatyzowane badania i odpowiedzi](automated-investigation-response-office.md) mogą zaoszczędzić czas i nakład pracy zespołowej związanej z operacjami zabezpieczeń, ale mogą pomóc w zbadaniu i ograniczania cyberataków. Oprócz konfigurowania alertów, które mogą wyzwalać podręcznik zabezpieczeń, możesz uruchomić zautomatyzowany proces badania i odpowiedzi z widoku w Eksploratorze. Aby uzyskać szczegółowe informacje, [zobacz Przykład: Administrator zabezpieczeń wyzwala badanie z Eksploratora](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
@@ -527,11 +527,11 @@ Oprócz scenariuszy opisanych w tym artykule dostępnych jest wiele innych opcji
 
 ## <a name="required-licenses-and-permissions"></a>Wymagane licencje i uprawnienia
 
-Program [Microsoft Defender for Office 365](defender-for-office-365.md) może korzystać z wykrywania w Eksploratorze lub czasie rzeczywistym.
+Musisz [mieć Ochrona usługi Office 365 w usłudze Microsoft Defender do](defender-for-office-365.md) korzystania z wykrywania w Eksploratorze lub czasie rzeczywistym.
 
-- Eksplorator jest dołączony do usługi Defender dla Office 365 Plan 2.
-- Raport wykrywanie w czasie rzeczywistym jest zawarty w programie Defender for Office 365 Plan 1.
-- Zaplanuj przypisanie licencji wszystkim użytkownikom, którzy powinni być chronieni przez defendera dla Office 365. Wykrywanie Eksploratora i w czasie rzeczywistym pokazuje dane wykrywania licencjonowanych użytkowników.
+- Eksplorator jest dołączony do Ochrona usługi Office 365 w usłudze Defender Plan 2.
+- Raport Wykrywanie w czasie rzeczywistym jest uwzględniany w Ochrona usługi Office 365 w usłudze Defender Plan 1.
+- Zaplanuj przypisanie licencji wszystkim użytkownikom, którzy powinni być chronieni przez Ochrona usługi Office 365 w usłudze Defender. Wykrywanie Eksploratora i w czasie rzeczywistym pokazuje dane wykrywania licencjonowanych użytkowników.
 
 Aby można było wyświetlać i używać wykrywania w Eksploratorze lub w czasie rzeczywistym, trzeba mieć odpowiednie uprawnienia, takie jak uprawnienia przyznany administratorowi zabezpieczeń lub czytnikowi zabezpieczeń.
 
@@ -555,10 +555,10 @@ Aby dowiedzieć się więcej o rolach i uprawnieniach, zobacz następujące zaso
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>Różnice między wykrywaniem w Eksploratorze zagrożeń a wykrywaniem w czasie rzeczywistym
 
-- Raport *Wykrywanie w czasie rzeczywistym jest* dostępny w programie Defender dla Office 365 Plan 1. *Eksplorator zagrożeń jest* dostępny w programie Defender dla Office 365 Plan 2.
+- Raport *Wykrywanie w czasie rzeczywistym* jest dostępny w programie Ochrona usługi Office 365 w usłudze Defender Plan 1. *Eksplorator zagrożeń jest* dostępny w Ochrona usługi Office 365 w usłudze Defender Plan 2.
 - Raport Wykrywanie w czasie rzeczywistym umożliwia wyświetlanie wykrywania w czasie rzeczywistym. W Eksploratorze zagrożeń jest to również możliwe, ale podano też dodatkowe szczegóły dotyczące danego ataku.
 - Widok *Cała poczta e-mail* jest dostępny w Eksploratorze zagrożeń, ale nie w raporcie wykrywania w czasie rzeczywistym.
-- W Eksploratorze zagrożeń dostępnych jest więcej funkcji filtrowania i dostępnych akcji. Aby uzyskać więcej informacji, zobacz [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- W Eksploratorze zagrożeń dostępnych jest więcej funkcji filtrowania i dostępnych akcji. Aby uzyskać więcej informacji, [zobacz Ochrona usługi Office 365 w usłudze Microsoft Defender Opis usługi: dostępność funkcji w Ochrona usługi Office 365 w usłudze Defender planów](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 ## <a name="other-articles"></a>Inne artykuły
 

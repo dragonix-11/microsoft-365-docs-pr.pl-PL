@@ -1,0 +1,59 @@
+### YamlMime:FAQ
+metadata:
+  title: Deweloper oprogramowania — często zadawane pytania
+  ms.reviewer: 
+  description: Ta strona zawiera odpowiedzi na typowe pytania, które otrzymujemy od deweloperów oprogramowania
+  keywords: wdsi, software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
+  search.product: eADQiWindows 10XVcnh
+  ms.prod: m365-security
+  ms.mktglfcycl: deploy
+  ms.sitesec: library
+  ms.pagetype: security
+  ms.author: dansimp
+  author: dansimp
+  ms.localizationpriority: medium
+  manager: dansimp
+  audience: ITPro
+  ms.collection: M365-security-compliance
+  ms.topic: faq
+  ms.technology: m365d
+  ms.openlocfilehash: 732361669e667aeab4f6781c8a82e7989ecf5b03
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63706300"
+title: Deweloper oprogramowania — często zadawane pytania
+summary: Ta strona zawiera odpowiedzi na typowe pytania, które otrzymujemy od deweloperów oprogramowania. Aby uzyskać ogólne wskazówki dotyczące przesyłania plików w nieprawidłowym oprogramowaniu lub złośliwym oprogramowaniu, przeczytaj przewodnik przesyłania.
+sections:
+- name: Zignorowano
+  questions:
+  - question: >
+      Czy firma Microsoft akceptuje pliki na listę znaną lub do programu zapobiegania wynikom fałszywie dodatnim?
+    answer: >
+      L.p. Nie akceptujemy tych próśb od deweloperów oprogramowania. Podpisując pliki programu w spójny sposób za pomocą certyfikatu cyfrowego wystawionego przez zaufany główny urząd certyfikacji, ułatwia naszemu zespołowi badawczemu szybkie zidentyfikowanie źródła programu i zastosowanie wcześniej uzyskanej wiedzy. W niektórych przypadkach może to spowodować szybkie dodanie programu do znanej listy. Znacznie rzadziej program in doda Twój certyfikat cyfrowy do listy zaufanych wydawców.
+  - question: >
+      Jak zaprzecić wykrywaniu programu?
+    answer: >
+      Prześlij plik jako dewelopera oprogramowania. Zaczekaj na ostateczną oznaczenie zgłoszenia.
+
+
+      Jeśli nie podoba Ci się nasze określenie zgłoszenia, skontaktuj się z firmą Microsoft za pomocą formularza kontaktu dewelopera dostarczonego z wynikami przesyłania. Podane informacje będą przez nas następnie w razie potrzeby analizować.
+
+
+      Zachęcamy wszystkich dostawców oprogramowania i deweloperów do przeczytania informacji o tym, jak firma [Microsoft identyfikuje złośliwe oprogramowanie i potencjalnie](criteria.md) niechciane aplikacje.
+  - question: >
+      Dlaczego firma Microsoft prosi o kopię mojego programu?
+    answer: >
+      Dostarczanie kopii może pomóc w naszej analizie. Uczestnicy usługa Microsoft Active Protection [(MAPS)](https://www.microsoft.com/msrc/mapp) mogą od czasu do czasu odbierać takie wnioski. Żądania przestaną być realizowane po otrzymaniu i przetworzeniu pliku przez nasze systemy.
+  - question: >
+      Dlaczego firma Microsoft sklasyfikuje mój instalator jako pakiet oprogramowania?
+    answer: >
+      Zawiera instrukcje dotyczące  offer a program klasyfikowany jako niechciane oprogramowanie. Możesz sprawdzić kryteria [, których](criteria.md) używamy do sprawdzania aplikacji pod uwagę zachowań uznanych za niechciane.
+  - question: >
+      Dlaczego zapora Windows Defender blokuje mój program?
+    answer: >
+      Bloki zapory nie są powiązane z Program antywirusowy Microsoft Defender i innym złośliwym oprogramowaniem firmy Microsoft. [Dowiedz się więcej Windows Defender zaporze](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md).
+  - question: >
+      Dlaczego ten Microsoft Defender SmartScreen mówi, że mój program nie jest zazwyczaj pobierany?
+    answer: Nie jest to związane z Program antywirusowy Microsoft Defender i innym złośliwym oprogramowaniem firmy Microsoft. [Informacje o Microsoft Defender SmartScreen](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)

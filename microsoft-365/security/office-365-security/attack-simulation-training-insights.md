@@ -13,16 +13,16 @@ ms.collection:
 ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, w jaki sposób szkolenia symulacyjne dotyczące ataków w portalu Microsoft 365 Defender wpływają na użytkowników i mogą uzyskać szczegółowe informacje na temat wyników symulacyjnych i wyników szkoleń.
 ms.technology: mdo
-ms.openlocfilehash: c06cea01fcc7bb8fdc9c869fe8117f85eb627685
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: a360343fd4406dc79d072927fef41369bbe21ed8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021366"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473898"
 ---
-# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Szczegółowe informacje i raporty na temat szkolenia symydacyjnego z tematem ataków w programie Defender dla Office 365
+# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Szczegółowe informacje i raporty na temat szkolenia z symydyki ataków w programie Ochrona usługi Office 365 w usłudze Defender
 
-**Dotyczy programu** [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+**Dotyczy planu** [Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
 W szkoleniu symulacyjnej platformy Microsoft Defender dla programu Office Plan 2 lub Microsoft 365 E5 firma Microsoft udostępnia szczegółowe informacje i raporty na temat wyników symulacyjnych i odpowiadających im szkoleń. Te informacje informują Cię o postępie gotowości użytkowników do zagrożeń, a także zalecane następne kroki w celu lepszego przygotowania użytkowników do przyszłych ataków.
 
@@ -33,7 +33,7 @@ Szczegółowe informacje i raporty są dostępne w następujących lokalizacjach
 
 W dalszej części tego artykułu opisano dostępne informacje.
 
-Aby uzyskać informacje na temat szkolenia z symezyjną ataków, zobacz Wprowadzenie do szkolenia z użyciem [symezyjny](attack-simulation-training-get-started.md) ataków.
+Aby uzyskać informacje na temat szkoleń z użyciem symezyjny ataków, [zobacz Wprowadzenie szkolenia z użyciem symezyjki ataków](attack-simulation-training-get-started.md).
 
 ## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>Szczegółowe informacje i raporty na karcie Przegląd w szkolenie dotyczące symezyjny ataków
 
@@ -49,9 +49,9 @@ Aby wyświetlić szczegóły, możesz wybrać symulowanie.
 
 Wybranie **opcji Wyświetl wszystkie czasy symulacyjne** umożliwia wyświetlenie **karty Symulatory** .
 
-Wybranie **opcji Uruchom symulowanie** uruchamia kreatora tworzenia symulacyjnej. Aby uzyskać więcej informacji, zobacz [Symulowanie ataku służącego do wyłudzania informacji w programie Defender dla Office 365](attack-simulation-training.md).
+Wybranie **opcji Uruchom symulowanie** uruchamia kreatora tworzenia symulacyjnej. Aby uzyskać więcej informacji, zobacz [Symulowanie ataku służącego do wyłudzania informacji w Ochrona usługi Office 365 w usłudze Defender](attack-simulation-training.md).
 
-![Karta ostatniej symulacyjnej karty Przegląd w obszarze Szkolenie z symulacyjnej gry w programie Microsoft 365 Defender zaawansowanej.](../../media/attack-sim-training-overview-recent-simulations-card.png)
+:::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="Karta Ostatnie symulacje na karcie Przegląd w szkoleniu z symulacyjnej symulacyjnej gry w portalu Microsoft 365 Defender informacje" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
 
 ### <a name="behavior-impact-on-compromise-rate-card"></a>Wpływ zachowania na kartę oceny naruszenia
 
@@ -69,7 +69,7 @@ Na karcie są również wyświetlane następujące informacje podsumowujące:
 - **użytkownicy są mniej podatni** na próby wyłudzania informacji: Różnica między rzeczywistą liczbą użytkowników, których bezpieczeństwo zostało naruszone przez symulowany atak, a przewidywaną szybkością naruszenia. W przyszłości ta liczba użytkowników będzie mniej prawdopodobna w przypadku podobnych ataków.
 - **x% lepsze niż przewidywana stopa**: wskazuje, jak użytkownicy ogólnie porównali się z przewidywaną stopą naruszenia.
 
-![Wpływ na zachowanie na kartę oceny naruszenia na karcie Omówienie w szkoleniu z symulacja ataków w portalu Microsoft 365 Defender sieci.](../../media/attack-sim-training-overview-behavior-impact-card.png)
+:::image type="content" source="../../media/attack-sim-training-overview-behavior-impact-card.png" alt-text="Karta Omówienie w obszarze szkolenia z symulacja ataków w portalu Microsoft 365 Defender ma wpływ na kartę oceny naruszenia" lightbox="../../media/attack-sim-training-overview-behavior-impact-card.png":::
 
 Aby wyświetlić bardziej szczegółowy raport, kliknij pozycję **Wyświetl symulacje i raport ze** szkoleniem. Ten raport został [wyjaśniony w dalszej części tego artykułu](#training-efficacy-tab-for-the-attack-simulation-report).
 
@@ -77,11 +77,11 @@ Aby wyświetlić bardziej szczegółowy raport, kliknij pozycję **Wyświetl sym
 
 Na **karcie** Przegląd na karcie Omówienie  na karcie Symulowany jest pokazana wartość procentowa użytkowników w organizacji, którzy otrzymali platformę symulacyjna **(** Symulowani użytkownicy) względem użytkowników, którzy nie otrzymali symulacyjnej **pracy (użytkownicy** niesymulujący). Możesz zatrzymać wskaźnik myszy na sekcji na wykresie, aby wyświetlić rzeczywistą liczbę użytkowników w poszczególnych kategoriach.
 
-Wybranie **funkcji Launch symulacyjnej dla niesymulacyjnych** użytkowników uruchamia kreatora tworzenia symulacyjnego, w którym użytkownicy, którzy nie otrzymują tej symulacyjnej pracy, są automatycznie wybrani na **stronie Użytkownik docelowy** . Aby uzyskać więcej informacji, zobacz [Symulowanie ataku służącego do wyłudzania informacji w programie Defender dla Office 365](attack-simulation-training.md).
+Wybranie **funkcji Launch symulacyjnej dla niesymulacyjnych** użytkowników uruchamia kreatora tworzenia symulacyjnego, w którym użytkownicy, którzy nie otrzymują tej symulacyjnej pracy, są automatycznie wybrani na **stronie Użytkownik docelowy** . Aby uzyskać więcej informacji, zobacz [Symulowanie ataku służącego do wyłudzania informacji w Ochrona usługi Office 365 w usłudze Defender](attack-simulation-training.md).
 
 Wybranie **opcji Wyświetl raport zasięgu symulacyjnego** umożliwia wyświetlenie karty [Zasięg użytkownika w raporcie symulacyjnej ataków](#user-coverage-tab-for-the-attack-simulation-report).
 
-![Karta przeglądu symulowania na karcie Przegląd w szkoleniu symezyjny ataków w portalu Microsoft 365 Defender czas.](../../media/attack-sim-training-overview-sim-coverage-card.png)
+:::image type="content" source="../../media/attack-sim-training-overview-sim-coverage-card.png" alt-text="Karta przeglądu symulacyjnego na karcie Przegląd w szkoleniu symulacyjnej ataków w portalu Microsoft 365 Defender zaawansowanej" lightbox="../../media/attack-sim-training-overview-sim-coverage-card.png":::
 
 ### <a name="training-completion-card"></a>Karta ukończenia szkolenia
 
@@ -114,9 +114,9 @@ Wybranie **opcji Wyświetl raport powtarzania odwłaścicieli** umożliwia wyśw
 
 Karta **Rekomendacje** na **karcie Omówienie** sugeruje różne typy symulowań do uruchomienia.
 
-Wybranie **przycisku Uruchom teraz** spowoduje uruchomienie kreatora tworzenia symulacji z automatycznie wybranym typem symulacji na **stronie Wybierz technikę** . Aby uzyskać więcej informacji, zobacz [Symulowanie ataku służącego do wyłudzania informacji w programie Defender dla Office 365](attack-simulation-training.md).
+Wybranie **przycisku Uruchom teraz** spowoduje uruchomienie kreatora tworzenia symulacji z automatycznie wybranym typem symulacji na **stronie Wybierz technikę** . Aby uzyskać więcej informacji, zobacz [Symulowanie ataku służącego do wyłudzania informacji w Ochrona usługi Office 365 w usłudze Defender](attack-simulation-training.md).
 
-![Rekomendacje na karcie Omówienie w szkoleniu z symezyjną ataków w portalu Microsoft 365 Defender zaawansowanej.](../../media/attack-sim-training-overview-recommendations-card.png)
+:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="Karta Rekomendacje na karcie Omówienie w szkoleniu z symezyjną ataków w portalu Microsoft 365 Defender informacje" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
 
 ### <a name="attack-simulation-report"></a>Raport symulacyjnych ataków
 
@@ -126,7 +126,7 @@ Raport **symezyjny ataków można** otworzyć z karty **Przegląd** , klikając 
 
 Na stronie **Raport symulacyjnych ataków** domyślnie wybrana jest karta Szkolenie **.** Ta karta zawiera te same informacje, które są dostępne w obszarze  Zachowanie na kartę oceny naruszenia, z dodatkowymi kontekstami samej symulacyjnej.
 
-![Karta szkolenia w raporcie symulacyjnej ataków w portalu Microsoft 365 Defender sieci.](../../media/attack-sim-report-training-efficacy-view.png)
+:::image type="content" source="../../media/attack-sim-report-training-efficacy-view.png" alt-text="Karta Szkolenia w raporcie symulacyjnej ataków w portalu Microsoft 365 Defender sieci Microsoft 365 Defender." lightbox="../../media/attack-sim-report-training-efficacy-view.png":::
 
 Wykres przedstawia **przewidywaną stopę naruszenia i** **wskaźnik rzeczywistego naruszenia**. Po umieszczeniu wskaźnika myszy na sekcji wykresu zostaną wyświetlone rzeczywiste wartości procentowe.
 
@@ -150,7 +150,7 @@ Jeśli klikniesz ikonę ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) 
 
 #### <a name="user-coverage-tab-for-the-attack-simulation-report"></a>Karta zasięgu użytkownika dla raportu symulacyjnego ataków
 
-![Karta zasięgu użytkowników w raporcie symulacyjnej ataków w portalu Microsoft 365 Defender sieci.](../../media/attack-sim-report-user-coverage-view.png)
+:::image type="content" source="../../media/attack-sim-report-user-coverage-view.png" alt-text="Karta Zasięg użytkownika w raporcie symulacyjnej ataków w portalu Microsoft 365 Defender sieci" lightbox="../../media/attack-sim-report-user-coverage-view.png":::
 
 Na karcie **Zakres użytkowników** wykres przedstawia symulowanych użytkowników i  **użytkowników niesymulowany**. Po umieszczeniu wskaźnika myszy na punkcie danych na wykresie zostaną wyświetlone rzeczywiste wartości.
 
@@ -174,7 +174,7 @@ Jeśli klikniesz ikonę ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) 
 
 #### <a name="training-completion-tab-for-the-attack-simulation-report"></a>Karta Ukończenie szkolenia dla raportu symulacyjnego ataków
 
-![Karta Ukończenie szkolenia w raporcie symulacyjnej ataków w portalu Microsoft 365 Defender zaawansowanej.](../../media/attack-sim-report-training-completion-view.png)
+:::image type="content" source="../../media/attack-sim-report-training-completion-view.png" alt-text="Karta Ukończenie szkolenia w raporcie symulacyjnej ataków w portalu Microsoft 365 Defender sieci Microsoft 365 Defender." lightbox="../../media/attack-sim-report-training-completion-view.png":::
 
 Na karcie **Ukończenie** szkolenia na wykresie przedstawiono liczbę symulacyjnych ukończonych **, w** toku i nieukończonych. Po umieszczeniu wskaźnika myszy na sekcji wykresu zostaną wyświetlone rzeczywiste wartości.
 
@@ -207,7 +207,7 @@ Jeśli klikniesz ikonę ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) 
 
 #### <a name="repeat-offenders-tab-for-the-attack-simulation-report"></a>Repeat offenders tab for the Attack simulation report
 
-![Repeat offenders tab in the Attack simulation report in the Microsoft 365 Defender portal.](../../media/attack-sim-report-repeat-offenders-view.png)
+:::image type="content" source="../../media/attack-sim-report-repeat-offenders-view.png" alt-text="Karta Repeat offenders (Powtarzanie) w raporcie symulacyjnej gry w portalu Microsoft 365 Defender informacje" lightbox="../../media/attack-sim-report-repeat-offenders-view.png":::
 
 Repeat _offender to_ użytkownik, który został naruszony przez następujące po sobie symulowania. Domyślna liczba następujących po sobie przykładów to dwie, ale można **zmienić** wartość na karcie Ustawienia szkolenia z symulacyjnej ataków w .<https://security.microsoft.com/attacksimulator?viewid=setting>
 
@@ -261,11 +261,11 @@ Sekcja **Wpływ na symulacyjne** na stronie szczegółów symulacyjnej pokazuje,
 
 - Linki: **Wprowadzono poświadczenia** i **nie wprowadzono poświadczeń**.
 
-  ![Sekcja wpływ na symulacyjne ze szczegółami symulacyjnej pracy związanej z linkiem.](../../media/attack-sim-training-sim-details-sim-impact-links.png)
+  :::image type="content" source="../../media/attack-sim-training-sim-details-sim-impact-links.png" alt-text="Sekcja Wpływ na platformę Symulacyjna zawiera szczegółowe informacje na temat symulacyjnej pracy związanej z linkami" lightbox="../../media/attack-sim-training-sim-details-sim-impact-links.png":::
 
 - Załączniki: **Otwarty załącznik** i **Nie otwarto załącznika**.
 
-  ![Sekcja wpływ na wyniki symulacyjne dla szczegółów symezyjnych związanych z załącznikami.](../../media/attack-sim-training-sim-details-sim-impact-attachments.png)
+  :::image type="content" source="../../media/attack-sim-training-sim-details-sim-impact-attachments.png" alt-text="Sekcja Wpływ na symulacyjne dla szczegółów symulacyjnych związanych z załącznikami" lightbox="../../media/attack-sim-training-sim-details-sim-impact-attachments.png":::
 
 Po umieszczeniu wskaźnika myszy na sekcji na wykresie zostaną wyświetlone rzeczywiste liczby dla każdej kategorii.
 
@@ -279,28 +279,28 @@ Sekcja **Cała aktywność użytkownika** na stronie szczegółów symulacyjnej 
   - **EmailLinkClicked**: Ilu użytkowników kliknął link w komunikacie symulacyjnej.
   - **CredSupplied**: Po kliknięciu linku ilu użytkowników podało poświadczenia.
 
-    ![Sekcja wszystkich działań użytkownika, aby uzyskać szczegółowe informacje na temat symulacyjnej pracy użytkownika związanej z linkiem.](../../media/attack-sim-training-sim-details-all-user-activity-links.png)
+    :::image type="content" source="../../media/attack-sim-training-sim-details-all-user-activity-links.png" alt-text="Sekcja Cała aktywność użytkownika, aby uzyskać szczegółowe informacje na temat symulacyjnej pracy użytkownika związanej z linkiem" lightbox="../../media/attack-sim-training-sim-details-all-user-activity-links.png":::
 
 - Załączniki:
   - **AttachmentOpened**: Ilu użytkowników otworzyło załącznik w komunikacie symulacyjnej.
 
-    ![Wszystkie sekcje aktywności użytkownika dotyczące szczegółów symulacyjnych związanych z załącznikami.](../../media/attack-sim-training-sim-details-all-user-activity-attachments.png)
+    :::image type="content" source="../../media/attack-sim-training-sim-details-all-user-activity-attachments.png" alt-text="Sekcja Cała aktywność użytkownika na temat szczegółów symulacyjnych związanych z załącznikami" lightbox="../../media/attack-sim-training-sim-details-all-user-activity-attachments.png":::
 
 ### <a name="training-completion-section"></a>Sekcja ukończenia szkolenia
 
 Sekcja **Ukończenie szkolenia** na stronie szczegółów symulacyjnej zawiera informacje o szkoleniach wymaganych do ukończenia symulacyjnej oraz o tym, ilu użytkowników ukończyło szkolenia.
 
-![Sekcja ukończenia szkolenia dla szczegółów symulacyjnych związanych z załącznikami.](../../media/attack-sim-training-sim-details-training-completed.png)
+:::image type="content" source="../../media/attack-sim-training-sim-details-training-completed.png" alt-text="Sekcja Ukończenie szkolenia dla szczegółów symulacyjnych związanych z załącznikami" lightbox="../../media/attack-sim-training-sim-details-training-completed.png":::
 
 ## <a name="recommended-actions-section"></a>Sekcja Zalecane akcje
 
 Sekcja **Zalecane akcje** na stronie szczegółów symulowania zawiera zalecane akcje z bezpiecznego wyniku firmy [Microsoft](../defender/microsoft-secure-score.md) oraz wpływ akcji na Wynik bezpiecznego. Te zalecenia są oparte na ładowarce użytej w czasie symulacyjnej i pomagają chronić użytkowników i środowisko. Wybranie **z listy akcji** Ulepszenie przenosi Cię do lokalizacji, w ramach która zostanie zaimplementowana sugerowana akcja.
 
-![Sekcja Akcje zalecenia na szkolenie dotyczące symezyjny ataków.](../../media/attack-sim-training-sim-details-recommended-actions.png)
+:::image type="content" source="../../media/attack-sim-training-sim-details-recommended-actions.png" alt-text="Sekcja Akcje zalecenia na temat szkolenia dotyczącego symezyjny ataków" lightbox="../../media/attack-sim-training-sim-details-recommended-actions.png":::
 
 ## <a name="related-links"></a>Linki pokrewne
 
-[Wprowadzenie do korzystania ze szkolenia symulacyjnego w zakresie ataków](attack-simulation-training-get-started.md)
+[Wprowadzenie z użyciem szkolenia symulacyjnego w zakresie ataków](attack-simulation-training-get-started.md)
 
 [Tworzenie symulacyjnej próby wyłudzania informacji](attack-simulation-training.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Rozwiązywanie problemów z wydajnością
-description: Rozwiązywanie problemów z wysokim użyciem procesora związanych z usługą ochrony w czasie rzeczywistym w programie Microsoft Defender for Endpoint.
+description: Rozwiązywanie problemów z wysokim użyciem procesora związanych z usługą ochrony w czasie rzeczywistym w programie Ochrona punktu końcowego w usłudze Microsoft Defender.
 keywords: rozwiązywanie problemów, wydajność, wysokie wykorzystanie procesora, wysokie użycie procesora, błąd, poprawka, aktualizacja zgodności, oms, monitor, raport, Program antywirusowy Microsoft Defender
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1dfe480f36d99acfdc9dcb36e63d2eed4f22054a
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: acd778b614128dc4927766e329f8d63fcd3fad54
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63013297"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467186"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Rozwiązywanie problemów z wydajnością związanych z ochroną w czasie rzeczywistym
 
@@ -30,9 +30,9 @@ ms.locfileid: "63013297"
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Jeśli Twój system ma wysokie problemy z użyciem procesora lub wydajnością związane z usługą ochrony w czasie rzeczywistym w programie Microsoft Defender for Endpoint, możesz przesłać zgłoszenie do pomocy technicznej firmy Microsoft. Postępuj zgodnie z instrukcjami [w zbieranie Program antywirusowy Microsoft Defender diagnostycznych](collect-diagnostic-data.md).
+Jeśli Twój system ma wysokie zużycie procesora lub problemy z wydajnością związane z usługą ochrony w czasie rzeczywistym w programie Ochrona punktu końcowego w usłudze Microsoft Defender, możesz przesłać zgłoszenie do pomocy technicznej firmy Microsoft. Postępuj zgodnie z instrukcjami [w zbieranie Program antywirusowy Microsoft Defender diagnostycznych](collect-diagnostic-data.md).
 
 Jako administrator możesz również samodzielnie rozwiązywać te problemy.
 
@@ -47,7 +47,7 @@ Możesz również udostępnić dodatkowe dzienniki do przesyłania do pomocy tec
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>Skontaktuj się z dostawcą, aby uzyskać informacje o wykluczeniach oprogramowania antywirusowego
 
-Jeśli możesz łatwo zidentyfikować oprogramowanie wpływające na wydajność systemu, przejdź do bazy wiedzy dostawcy oprogramowania lub centrum pomocy technicznej dostawcy. Wyszukaj, czy ma zalecenia dotyczące wykluczeń oprogramowania antywirusowego. Jeśli witryna internetowa dostawcy ich nie zawiera, możesz utworzyć zgłoszenie do pomocy technicznej wraz z nim i poprosić o opublikowanie go.
+Jeśli możesz łatwo zidentyfikować oprogramowanie wpływające na wydajność systemu, przejdź do centrum pomocy technicznej baza wiedzy dostawcy. Wyszukaj, czy ma zalecenia dotyczące wykluczeń oprogramowania antywirusowego. Jeśli witryna internetowa dostawcy ich nie zawiera, możesz utworzyć zgłoszenie do pomocy technicznej wraz z nim i poprosić o opublikowanie go.
 
 Zalecamy, aby dostawcy oprogramowania przestrzegali różnych wytycznych w zakresie współpracy z branżą [w celu zminimalizowania wyników fałszywie dodatnich](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). Dostawca może przesłać swoje oprogramowanie za [pośrednictwem portalu Microsoft Security Intelligence firmowego](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
@@ -87,7 +87,7 @@ Monitor procesu (ProcMon) to zaawansowane narzędzie do monitorowania, które um
     1. Zaznacz pole obok **odblokowania**.
     1. Wybierz **pozycję Zastosuj**.
 
-    ![Usuń ZESZYT.](images/procmon-motw.png)
+    :::image type="content" source="images/procmon-motw.png" alt-text="Strona Usuń z aplikacji ZESZYT" lightbox="images/procmon-motw.png":::
 
 3. Rozpakuj plik, aby `C:\temp` ścieżka folderu to .`C:\temp\ProcessMonitor`
 
@@ -100,21 +100,21 @@ Monitor procesu (ProcMon) to zaawansowane narzędzie do monitorowania, które um
 
         Ponieważ rejestrowanie jest uruchamiane automatycznie, wybierz ikonę lupy, aby zatrzymać bieżące przechwytywanie, lub użyj skrótu klawiaturowego **Ctrl+E**.
 
-        ![Ikona lupy.](images/procmon-magglass.png)
+        :::image type="content" source="images/procmon-magglass.png" alt-text="Ikona lupy" lightbox="images/procmon-magglass.png":::
 
         Aby sprawdzić, czy przechwytywanie zostało zatrzymane, sprawdź, czy ikona lupy jest teraz wyświetlana z czerwonym znakem X.
 
-        ![ukośnik czerwony.](images/procmon-magglass-stop.png)
+        :::image type="content" source="images/procmon-magglass-stop.png" alt-text="Czerwony ukośnik" lightbox="images/procmon-magglass-stop.png":::
 
         Następnie, aby wyczyścić wcześniejsze przechwytywanie, wybierz ikonę gumki.
 
-        ![.](images/procmon-eraser-clear.png)
+        :::image type="content" source="images/procmon-eraser-clear.png" alt-text="Ikona wyczyść" lightbox="images/procmon-eraser-clear.png":::
 
         Możesz też użyć skrótu klawiaturowego **Ctrl+X**.
 
     2. Drugi sposób to uruchomienie wiersza polecenia **jako administrator,** a następnie uruchomienie ze ścieżki Monitor procesu:
 
-        ![cmd procmon.](images/cmd-procmon.png)
+       :::image type="content" source="images/cmd-procmon.png" alt-text="Polecenie cmd procmon" lightbox="images/cmd-procmon.png":::
 
         ```console
         Procmon.exe /AcceptEula /Noconnect /Profiling
@@ -123,11 +123,11 @@ Monitor procesu (ProcMon) to zaawansowane narzędzie do monitorowania, które um
         > [!TIP]
         > Podczas przechwytywania danych okno procMon może być jak najmniejsze, co pozwala na łatwe rozpoczęcie i zatrzymanie śledzenia.
         >
-        > ![Minimalizowanie procmon.](images/procmon-minimize.png)
+        > :::image type="content" source="images/procmon-minimize.png" alt-text="Strona z wyświetlonym zminimalizowanym procmonem" lightbox="images/procmon-minimize.png":::
 
 7. Po zakończeniu jednej z procedur w kroku 6 zobaczysz opcję ustawienia filtrów. Wybierz przycisk **OK**. Zawsze możesz filtrować wyniki po zakończeniu przechwytywania.
 
-    ![Odfiltruj Nazwa procesu To Wyklucz system.](images/procmon-filter-options.png)
+   :::image type="content" source="images/procmon-filter-options.png" alt-text="Strona, na której zostanie wybrana nazwa Odfiltruj proces wyklucz" lightbox="images/procmon-filter-options.png":::
 
 8. Aby rozpocząć przechwytywanie, ponownie wybierz ikonę lupy.
 
@@ -140,7 +140,7 @@ Monitor procesu (ProcMon) to zaawansowane narzędzie do monitorowania, które um
 
 11. Aby zapisać przechwycony obraz pod unikatową nazwą i w formacie pml, wybierz pozycję **Plik** , a następnie wybierz pozycję **Zapisz....** Pamiętaj, aby zaznaczyć przyciski radiowe **Wszystkie zdarzenia** i **Natywny format monitora procesu (PML**).
 
-    ![zapisz ustawienia.](images/procmon-savesettings1.png)
+    :::image type="content" source="images/procmon-savesettings1.png" alt-text="Strona ustawień zapisywania" lightbox="images/procmon-savesettings1.png":::
 
 12. Aby poprawić śledzenie, zmień ścieżkę domyślną z miejsca, w `C:\temp\ProcessMonitor\LogFile.PML` `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` którym:
     - `%ComputerName%` to nazwa urządzenia
@@ -171,35 +171,36 @@ Ewentualnie możesz również użyć narzędzia wiersza polecenia *wpr.exe*, kt�
 
 2. W *Windows wydajności kliknij* prawym przyciskiem myszy pozycję Windows **Wydajności**.
 
-    ![menu Start.](images/wpr-01.png)
+   :::image type="content" source="images/wpr-01.png" alt-text="The menu Start" lightbox="images/wpr-01.png":::
 
     Wybierz **pozycję Więcej**. Wybierz **pozycję Uruchom jako administrator**.
 
 3. Gdy zostanie wyświetlone okno dialogowe Kontrola konta użytkownika, wybierz pozycję **Tak**.
 
-    ![UAC.](images/wpt-yes.png)
+   :::image type="content" source="images/wpt-yes.png" alt-text="Strona UAC" lightbox="images/wpt-yes.png":::
 
-4. Następnie pobierz profil analizy [programu Microsoft Defender for Endpoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) i zapisz go jako `MDAV.wprp` folder, na przykład `C:\temp`.
+4. Następnie pobierz profil [Ochrona punktu końcowego w usłudze Microsoft Defender analizie](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) danych i zapisz go jako `MDAV.wprp` w folderze, na przykład `C:\temp`.
 
 5. W oknie dialogowym WPR wybierz pozycję **Więcej opcji**.
 
-    ![Wybierz więcej opcji.](images/wpr-03.png)
+   :::image type="content" source="images/wpr-03.png" alt-text="Strona, na której można wybrać więcej opcji" lightbox="images/wpr-03.png":::
+
 
 6. Wybierz **pozycję Dodaj profile i** przejdź do ścieżki `MDAV.wprp` pliku.
 
-7. Następnie w obszarze Niestandardowe miary o nazwie *Microsoft Defender for Endpoint analysis* (Analiza punktu końcowego) powinien być wyświetlony nowy zestaw profilów.
+7. Następnie w obszarze Wymiary niestandardowe powinien być wyświetlony nowy zestaw profilów o nazwie Ochrona punktu końcowego w usłudze Microsoft Defender *pod* nim.
 
-    ![w pliku.](images/wpr-infile.png)
+   :::image type="content" source="images/wpr-infile.png" alt-text="Plik w" lightbox="images/wpr-infile.png":::
 
     > [!WARNING]
     > Jeśli Twój Windows Server ma co najmniej 64 GB pamięci RAM, użyj niestandardowych miar `Microsoft Defender for Endpoint analysis for large servers` zamiast `Microsoft Defender for Endpoint analysis`. W przeciwnym razie system może zużywać dużą ilość niestronicowej puli pamięci lub buforów, które mogą prowadzić do niestabilności systemu. Można wybrać profile do dodania, rozwijając **analizę zasobów**.
     Ten profil niestandardowy zapewnia niezbędny kontekst do szczegółowej analizy wydajności.
 
-8. Aby użyć niestandardowych miar programu Microsoft Defender dla profilu analizy szczegółowego punktu końcowego w interfejsie użytkownika usługi WPR:
+8. Aby użyć niestandardowego profilu Ochrona punktu końcowego w usłudze Microsoft Defender szczegółowego profilu analizy w interfejsie użytkownika funkcji WPR:
 
     1. Upewnij się, że żadne profile nie są zaznaczone w grupach Klasy pierwszego *poziomu,* *Analiza zasobów* i *Analiza scenariuszy* .
     2. Wybierz **pozycję Wymiary niestandardowe**.
-    3. Wybierz **pozycję Microsoft Defender do analizy punktu końcowego**.
+    3. Wybierz **Ochrona punktu końcowego w usłudze Microsoft Defender analizę**.
     4. Wybierz **pozycję Verbose (Pełne** informacje) *w obszarze Detail level (* Poziom szczegółów).
     5. W **obszarze Tryb** **rejestrowania wybierz** pozycję Plik lub Pamięć.
 
@@ -208,14 +209,14 @@ Ewentualnie możesz również użyć narzędzia wiersza polecenia *wpr.exe*, kt�
 
 9. Teraz możesz już zbierać dane. Zamknij wszystkie aplikacje, które nie są istotne dla powtórzenia problemu z wydajnością. Możesz wybrać pozycję **Ukryj opcje,** aby zachować małą ilość miejsca zajmowanego przez okno WPR.
 
-    ![Ukrywanie opcji.](images/wpr-08.png)
+   :::image type="content" source="images/wpr-08.png" alt-text="Opcje ukrywania" lightbox="images/wpr-08.png":::
 
     > [!TIP]
     > Spróbuj uruchomić śledzenie od pełnej liczby sekund. Na przykład 01:30:00. Ułatwi to analizowanie danych. Ponadto staraj się śledzić sygnaturę czasową dokładnie tego, kiedy problem jest powtarzany.
 
 10. Kliknij przycisk **Start**.
 
-    ![Wybierz pozycję Początek śledzenia.](images/wpr-09.png)
+    :::image type="content" source="images/wpr-09.png" alt-text="Strona Record system information (Rejestrowanie informacji o systemie)" lightbox="images/wpr-09.png":::
 
 11. Odtprodukuj problem.
 
@@ -224,38 +225,38 @@ Ewentualnie możesz również użyć narzędzia wiersza polecenia *wpr.exe*, kt�
 
 12. Wybierz **Zapisz**.
 
-    ![Wybierz pozycję zapisz.](images/wpr-10.png)
+    :::image type="content" source="images/wpr-10.png" alt-text="Opcja Zapisz" lightbox="images/wpr-10.png":::
 
 13. Wypełnij wpisz **szczegółowy opis problemu,** aby uzyskać informacje o problemie i instrukcje dotyczące jego odtworzenia.
 
-    ![Wypełnij szczegóły.](images/wpr-12.png)
+    :::image type="content" source="images/wpr-12.png" alt-text="Okienko, w którym należy wypełnić" lightbox="images/wpr-12.png":::
 
     1. Wybierz **pozycję Nazwa pliku:,** aby określić miejsce, w którym zostanie zapisany plik śledzenia. Domyślnie jest on zapisywany w .`%user%\Documents\WPR Files\`
     1. Wybierz **Zapisz**.
 
 14. Poczekaj na scalenie śledzenia.
 
-    ![OGÓLNY śledzenia danych śledzenia.](images/wpr-13.png)
+    :::image type="content" source="images/wpr-13.png" alt-text="Ogólne śledzenia zbierania danych pZP" lightbox="images/wpr-13.png":::
 
 15. Po zapisaniu śledzenia wybierz pozycję **Otwórz folder**.
 
-    ![Zapisane wyniki śledzenia WPR.](images/wpr-14.png)
+    :::image type="content" source="images/wpr-14.png" alt-text="Strona z powiadomieniem o zapisaniu śledzenia wpr" lightbox="images/wpr-14.png":::
 
-    Dołącz zarówno plik, jak i folder do swojego przesłania do pomocy technicznej firmy Microsoft.
+    Dołącz zarówno plik, jak i folder do swojego przesyłania do pliku pomoc techniczna firmy Microsoft.
 
-    ![Plik i folder.](images/wpr-15.png)
+    :::image type="content" source="images/wpr-15.png" alt-text="Szczegóły pliku i folderu" lightbox="images/wpr-15.png":::
 
 ### <a name="capture-performance-logs-using-the-wpr-cli"></a>Przechwytywanie dzienników wydajności przy użyciu interfejsu wideo usługi WPR
 
 Narzędzie wiersza polecenia, *wpr.exe* jest częścią systemu operacyjnego, zaczynając od Windows 8. Aby zebrać dane śledzenia DANYCH SPR za pomocą narzędzia wiersza polecenia, wpr.exe:
 
-1. Pobierz **[profil analizy programu Microsoft Defender for Endpoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** , aby uzyskać wyniki `MDAV.wprp` śledzenia wydajności do pliku o nazwie w katalogu lokalnym, takim jak `C:\traces`.
+1. Pobierz **[Ochrona punktu końcowego w usłudze Microsoft Defender analizy](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** wydajności, aby uzyskać `MDAV.wprp` wyniki śledzenia wydajności do pliku o nazwie w katalogu lokalnym, takim jak `C:\traces`.
 
 2. Kliknij prawym przyciskiem myszy **ikonę Menu Start** i wybierz pozycję Windows PowerShell **(Administrator)** lub Wiersz polecenia **(Administrator),** aby otworzyć okno wiersza polecenia Administrator.
 
 3. Gdy zostanie wyświetlone okno dialogowe Kontrola konta użytkownika, wybierz pozycję **Tak**.
 
-4. W wierszu z podwyższonym poziomem uprawnień uruchom następujące polecenie, aby uruchomić śledzenie wydajności programu Microsoft Defender for Endpoint:
+4. W wierszu polecenia z podwyższonym poziomem uprawnień uruchom następujące polecenie, aby uruchomić Ochrona punktu końcowego w usłudze Microsoft Defender śledzenie wydajności:
 
     ```console
     wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode

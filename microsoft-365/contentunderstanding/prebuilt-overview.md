@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się więcej o wbudowanych modelach w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: e7a23174deb5726bf05ee7af3fbc089e2d0820bd
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 1146e4947392ce0e0848632e55f22e5b8b8d2d91
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63015937"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569053"
 ---
 # <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Omówienie wbudowanych modeli w aplikacji Microsoft SharePoint Syntex
 
@@ -36,6 +36,8 @@ Po opublikowaniu modelu zastosuj go do dowolnej biblioteki SharePoint dokumentó
 ## <a name="requirements"></a>Wymagania
 
 - Obsługiwane formaty plików: JPEG, PNG, BMP, TIFF i PDF (osadzone w tekście lub skanowane).
+
+- Obsługiwane języki: obecnie obsługiwane są tylko faktury Stany Zjednoczone języka angielskiego. Obsługiwane są potwierdzenia sprzedaży w języku angielskim z Australii, Kanady, Stany Zjednoczone, Wielkiej Brytanii i Indii.
 
 - Osadzone w tekście pliki PDF najlepiej wyeliminować możliwość błędu wyodrębniania znaków i lokalizacji.
 

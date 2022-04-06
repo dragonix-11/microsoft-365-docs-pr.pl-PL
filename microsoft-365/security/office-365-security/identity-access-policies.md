@@ -1,6 +1,6 @@
 ---
-title: Typowe zasady zerowego zaufania w zakresie tożsamości i dostępu do urządzeń — Microsoft 365 dla firm i | Microsoft Docs
-description: W tym artykule opisano zalecane typowe zasady i konfiguracje dostępu do urządzeń i tożsamości bez zaufania.
+title: Typowe Zero Trust tożsamości i dostępu do urządzeń — Microsoft 365 dla firm | Microsoft Docs
+description: W tym artykule opisano zalecane typowe Zero Trust tożsamości oraz konfiguracji i zasad dostępu do urządzeń.
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -20,16 +20,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 36df54090e80de180ffa16f41641daa6b6966eb9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2a12a4198b91ab6ec91e0b49b9de3647e25d0be0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681331"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473854"
 ---
-# <a name="common-zero-trust-identity-and-device-access-policies"></a>Typowe zasady dostępu do urządzeń i tożsamości bez zaufania
+# <a name="common-zero-trust-identity-and-device-access-policies"></a>Typowe Zero Trust tożsamości i dostępu do urządzeń
 
-W tym artykule opisano typowe zalecane zasady dostępu do urządzeń i tożsamości zerowego zaufania w celu zabezpieczania dostępu do usług Microsoft 365 w chmurze, w tym aplikacji lokalnych opublikowanych w programie proxy aplikacji usługi Azure Active Directory (Azure AD).
+W tym artykule opisano typowe zalecane zasady Zero Trust tożsamości i dostępu do urządzeń w celu zabezpieczania dostępu do usług Microsoft 365 w chmurze, w tym aplikacji lokalnych opublikowanych w usłudze Azure Active Directory (Azure AD) serwer proxy aplikacji.
 
 W tym przewodniku omówiono sposób wdrażania zalecanych zasad w nowo aprowizowanym środowisku. Skonfigurowanie tych zasad w osobnym środowisku laboratoryjnym umożliwia zrozumienie i ocenę zalecanych zasad przed stagowaniem procesu ich stosowania w środowiskach przedprodukcji i produkcji. Nowo aprowowane środowisko może być oparte na chmurze lub hybrydowe, aby odzwierciedlało Twoje potrzeby w zakresie oceny.
 
@@ -37,7 +37,7 @@ W tym przewodniku omówiono sposób wdrażania zalecanych zasad w nowo aprowizow
 
 Na poniższym diagramie przedstawiono zalecany zestaw zasad. Pokazano w nim, której warstwy ochrony obowiązują poszczególne zasady, i czy zasady dotyczą komputerów PC, telefonów i tabletów, czy obu kategorii urządzeń. Ponadto wskazuje miejsce, w którym konfigurujesz te zasady.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="Typowe zasady konfigurowania tożsamości zerowego zaufania i dostępu do urządzeń." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="Typowe zasady konfigurowania tożsamości i Zero Trust dostępu do urządzeń." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
 
 
 <!--
@@ -52,7 +52,7 @@ Here's a one-page PDF summary:
 W dalszej części tego artykułu opisano sposób konfigurowania tych zasad.
 
 > [!NOTE]
-> Wymaganie korzystania z uwierzytelniania wieloskładnikowego (MFA) jest zalecane przed zarejestrowaniem urządzeń w usłudze Intune w celu zapewnienia, że urządzenie znajduje się w posiadaniu zamierzonego użytkownika. Aby wymusić zasady zgodności urządzeń, musisz zarejestrować urządzenia w usłudze Intune.
+> Wymaganie użycia uwierzytelniania wieloskładnikowego (MFA) jest zalecane przed zarejestrowaniem urządzeń w programie Intune w celu zapewnienia, że urządzenie znajduje się w posiadaniu zamierzonego użytkownika. Aby można było wymuszać zasady zgodności urządzeń, Intune urządzenia należy je zarejestrować w programie Windows.
 
 Aby zapewnić Ci czas na wykonanie tych zadań, zalecamy zaimplementowanie zasad punktu początkowego w kolejności wymienionej w tej tabeli. Jednak zasady uwierzytelniania wieloskładnikowego dla przedsiębiorstw i wyspecjalizowane poziomy zabezpieczeń można zaimplementować w dowolnym momencie.
 
@@ -61,11 +61,11 @@ Aby zapewnić Ci czas na wykonanie tych zadań, zalecamy zaimplementowanie zasad
 |**Punkt początkowy**|[Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania *jest średnie* lub *wysokie*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 lub Microsoft 365 E3 pomocą dodatku E5 Security|
 ||[Blokowanie klientów, którzy nie obsługują nowoczesnego uwierzytelniania](#block-clients-that-dont-support-multi-factor)|Klienci, którzy nie używają nowoczesnego uwierzytelniania, mogą pominąć zasady dostępu warunkowego, dlatego należy je zablokować.|Microsoft 365 E3 lub E5|
 ||[Zmiana hasła przez użytkowników o wysokim poziomie ryzyka](#high-risk-users-must-change-password)|Wymusza na użytkownikach zmianę hasła podczas logowania się w przypadku wykrycia dla ich konta aktywności o wysokim poziomie ryzyka.|Microsoft 365 E5 lub Microsoft 365 E3 pomocą dodatku E5 Security|
-||[Stosowanie ochrony danych zasad ochrony aplikacji (APP)](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 lub E5|
+||[Stosowanie ochrony danych zasad ochrony aplikacji (APP)](#apply-app-data-protection-policies)|Jedna Intune app Protection na platformę (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 lub E5|
 ||[Wymaganie zatwierdzonych aplikacji i ochrony aplikacji](#require-approved-apps-and-app-protection)|Wymusza ochronę aplikacji mobilnej dla telefonów i tabletów za pomocą systemu iOS, iPadOS lub Android.|Microsoft 365 E3 lub E5|
 |**Enterprise**|[Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania jest *niskie*, *średnie* lub *wysokie*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 lub Microsoft 365 E3 pomocą dodatku E5 Security|
 ||[Definiowanie zasad zgodności urządzeń](#define-device-compliance-policies)|Jedna zasada dla każdej platformy.|Microsoft 365 E3 lub E5|
-||[Wymaganie zgodności komputerów i urządzeń przenośnych](#require-compliant-pcs-and-mobile-devices)|Wymusza zarządzanie usługą Intune zarówno na komputerach PC (Windows lub macOS), jak i na telefonach i tabletach (z systemem iOS, iPadOS lub Android).|Microsoft 365 E3 lub E5|
+||[Wymaganie zgodności komputerów i urządzeń przenośnych](#require-compliant-pcs-and-mobile-devices)|Wymusza zarządzanie Intune komputerach (Windows lub macOS) i telefonach i tabletach (z systemem iOS, iPadOS lub Android).|Microsoft 365 E3 lub E5|
 |**Wyspecjalizowane zabezpieczenia**|[*Zawsze wymagaj* uwierzytelniania wieloskładnikowego](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 lub E5|
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Przypisywanie zasad do grup i użytkowników
@@ -76,7 +76,7 @@ Zalecanym rozwiązaniem jest utworzenie grupy usługi Azure AD dla wykluczenia d
 
 Oto przykład przypisania grupy i wykluczeń, które wymagają uwierzytelniania MFA.
 
-![Przykład przypisywania grup i wykluczeń zasad uwierzytelniania wieloskładnikowego.](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png" alt-text="Przykładowe przypisywanie grup i wykluczenia dla zasad uwierzytelniania wieloskładnikowego" lightbox="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png":::
 
 Oto wyniki:
 
@@ -94,7 +94,7 @@ Podczas stosowania wyższych poziomów ochrony do grup i użytkowników należy 
 
 Wszystkie grupy usługi Azure AD utworzone w ramach tych zaleceń należy tworzyć jako Microsoft 365 grupy. Jest to ważne w przypadku wdrażania etykiet wrażliwości podczas zabezpieczania dokumentów w Microsoft Teams i SharePoint.
 
-![Przykład tworzenia grupy Microsoft 365 grupy.](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="Tworzenie grupy Microsoft 365 grupy" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Wymaganie uwierzytelniania wieloskładnikowego na podstawie ryzyka logowania
 
@@ -102,7 +102,7 @@ Użytkownicy powinni rejestrować się w celu uwierzytelniania WIELOSKŁADNIKowe
 
 Po zarejestrowaniu użytkowników możesz wymagać uwierzytelniania MFA w celu logowania się przy użyciu nowych zasad dostępu warunkowego.
 
-1. Przejdź do portalu [Azure Portal](https://portal.azure.com) i zaloguj się przy użyciu poświadczeń.
+1. Przejdź do [Azure Portal](https://portal.azure.com) i zaloguj się przy użyciu poświadczeń.
 2. Na liście usług platformy Azure wybierz pozycję **Azure Active Directory**.
 3. Na liście **Zarządzaj** wybierz pozycję **Zabezpieczenia**, a następnie wybierz pozycję **Dostęp warunkowy**.
 4. Wybierz **pozycję Nowe** zasady i wpisz nazwę nowych zasad.
@@ -213,7 +213,7 @@ Struktury ochrony danych aplikacji są zorganizowane na trzy osobne poziomy konf
 
 Aby zapoznać się z konkretnymi zaleceniami dla poszczególnych poziomu konfiguracji i minimalnymi aplikacjami, które muszą być chronione, zapoznaj się z zasadami ochrony danych [przy użyciu zasad ochrony aplikacji](/mem/intune/apps/app-protection-framework).
 
-Zgodnie z zasadami opisanymi w tece Zero Trust identity and [device access configurations](microsoft-365-policies-configurations.md) (Konfiguracje dostępu do urządzeń) warstwy punktu początkowego i Enterprise są blisko mapowane z ustawieniami rozszerzonej ochrony danych (poziom 2) dla przedsiębiorstw. Poziom specjalistycznej warstwy ochrony zabezpieczeń jest blisko ustawień poziomu 3 w przedsiębiorstwie o wysokim poziomie ochrony danych.
+Zgodnie z zasadami opisanymi [](microsoft-365-policies-configurations.md)w Zero Trust konfiguracji tożsamości i dostępu do urządzeń warstwy punktu początkowego i Enterprise są blisko mapowane na ustawienia rozszerzonej ochrony danych poziomu 2 w przedsiębiorstwie. Poziom specjalistycznej warstwy ochrony zabezpieczeń jest blisko ustawień poziomu 3 w przedsiębiorstwie o wysokim poziomie ochrony danych.
 
 |Poziom ochrony|Zasady ochrony aplikacji|Więcej informacji|
 |---|---|---|
@@ -224,15 +224,15 @@ Zgodnie z zasadami opisanymi w tece Zero Trust identity and [device access confi
 Aby utworzyć nowe zasady ochrony aplikacji dla każdej platformy (w systemach iOS i Android) w obrębie systemu Microsoft Endpoint Manager przy użyciu ustawień struktury ochrony danych, możesz:
 
 1. Ręcznie utwórz zasady, korzystając z procedury opisanej [w jak tworzyć](/mem/intune/apps/app-protection-policies) i wdrażać zasady ochrony aplikacji za pomocą Microsoft Intune.
-2. Zaimportuj [przykładowe szablony JSON struktury konfiguracji](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) zasad ochrony aplikacji Intune za pomocą [skryptów programu PowerShell usługi Intune](https://github.com/microsoftgraph/powershell-intune-samples).
+2. Zaimportuj [Intune JSON programu App Protection Policy Framework](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) za pomocą [Intune skryptów programu PowerShell tego programu](https://github.com/microsoftgraph/powershell-intune-samples).
 
 ## <a name="require-approved-apps-and-app-protection"></a>Wymaganie zatwierdzonych aplikacji i ochrony aplikacji
 
-Aby wymusić zasady ochrony aplikacji zastosowane w usłudze Intune, musisz utworzyć zasady dostępu warunkowego, aby wymagać zatwierdzonych aplikacji klienckich i warunków określonych w zasadach ochrony aplikacji.
+Aby wymusić Ochrona aplikacji stosowanych w programie Intune, musisz utworzyć zasady dostępu warunkowego, aby wymagać zatwierdzonych aplikacji klienckich i warunków określonych w zasadach ochrony aplikacji.
 
-Wymuszanie zasad ochrony aplikacji wymaga zestawu zasad opisanego w tece Wymaganie zasad ochrony aplikacji dla dostępu do aplikacji w chmurze [za pomocą dostępu warunkowego](/azure/active-directory/conditional-access/app-protection-based-conditional-access). Te zasady są zawarte w tym zalecanym zestawie zasad konfiguracji tożsamości i dostępu.
+Wymuszanie Ochrona aplikacji wymaga zestawu zasad opisanego w tece Wymaganie zasad ochrony aplikacji dla dostępu do aplikacji w chmurze [za pomocą dostępu warunkowego](/azure/active-directory/conditional-access/app-protection-based-conditional-access). Te zasady są zawarte w tym zalecanym zestawie zasad konfiguracji tożsamości i dostępu.
 
-Aby utworzyć zasady dostępu warunkowego, które wymagają zatwierdzonych aplikacji i ochrony aplikacji, wykonaj czynności opisane w tece Wymagaj zatwierdzonych aplikacji klienckich lub zasad ochrony aplikacji na urządzeniach [przenośnych, co](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices) zezwala tylko na dostęp do kont w aplikacjach mobilnych chronionych przez zasady ochrony aplikacji na dostęp do Microsoft 365 końcowych.
+Aby utworzyć zasady dostępu warunkowego, które wymagają zatwierdzonych aplikacji i ochrony aplikacji, wykonaj czynności opisane w tece Wymagaj zatwierdzonych aplikacji klienckich lub zasad ochrony aplikacji na urządzeniach [przenośnych, co](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices) umożliwia dostęp do punktów końcowych aplikacji mobilnych chronionych za pomocą zasad Ochrona aplikacji Microsoft 365.
 
    > [!NOTE]
    > Te zasady zapewniają użytkownikom urządzeń przenośnych dostęp do wszystkich Microsoft 365 końcowych przy użyciu odpowiednich aplikacji.
@@ -260,7 +260,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 ## <a name="define-device-compliance-policies"></a>Definiowanie zasad zgodności urządzeń
 
-Zasady zgodności urządzeń określają wymagania, które muszą spełnić urządzenia, aby być określone jako zgodne. Zasady zgodności urządzeń usługi Intune tworzy się z poziomu Microsoft Endpoint Manager administracyjnego.
+Zasady zgodności urządzeń określają wymagania, które muszą spełnić urządzenia, aby być określone jako zgodne. Zasady zgodności Intune urządzenia tworzy się z poziomu Microsoft Endpoint Manager administracyjnego.
 
 Należy utworzyć zasady dla każdej platformy komputera, telefonu lub tabletu:
 
@@ -275,7 +275,7 @@ Aby utworzyć zasady zgodności urządzeń, zaloguj się do centrum administracy
 
 Aby zasady zgodności urządzeń zostały wdrożone, muszą być przypisane do grup użytkowników. Zasady przypisuje się po ich utworzeniu i zapisaniu. W centrum administracyjnym wybierz zasady, a następnie wybierz **pozycję Zadania**. Po wybraniu grup, do których chcesz otrzymać zasady, wybierz pozycję Zapisz, aby zapisać przypisanie do grupy i wdrożyć zasady.
 
-Aby uzyskać szczegółowe instrukcje dotyczące tworzenia zasad zgodności w usłudze Intune, zobacz Tworzenie [](/mem/intune/protect/create-compliance-policy) zasad zgodności Microsoft Intune w dokumentacji usługi Intune.
+Aby uzyskać szczegółowe instrukcje dotyczące tworzenia zasad zgodności w programie Intune, zobacz Tworzenie zasad zgodności w programie [Microsoft Intune](/mem/intune/protect/create-compliance-policy) w Intune dokumentacji.
 
 ### <a name="recommended-settings-for-ios"></a>Zalecane ustawienia dla systemu iOS
 
@@ -298,7 +298,7 @@ W przypadku urządzeń nadzorowanych:
 - Ulepszone zabezpieczenia (poziom 2) — firma Microsoft zaleca tę konfigurację w przypadku urządzeń, na których użytkownicy mają dostęp do informacji poufnych lub poufnych. Ta konfiguracja wprowadza mechanizmy kontroli udostępniania danych i blokuje dostęp do urządzeń USB. Ta konfiguracja ma zastosowanie do większości użytkowników urządzeń przenośnych, którzy mają dostęp do danych służbowych lub szkolnych na urządzeniu.
 - Wysoki poziom zabezpieczeń (poziom 3) — firma Microsoft zaleca tę konfigurację dla urządzeń używanych przez określonych użytkowników lub grupy o wyjątkowo wysokim poziomie ryzyka (użytkownicy, którzy przetwarzają bardzo poufne dane, gdy nieuprawnione ujawnienie powoduje znaczną utratę istotnych informacji w organizacji). W tej konfiguracji obowiązują silniejsze zasady dotyczące haseł, wyłączane są niektóre funkcje urządzeń, wymuszane są dodatkowe ograniczenia transferu danych i aplikacje muszą być instalowane za pośrednictwem programu zakupów wymaganych przy użyciu systemu firmy Apple (volume purchase program).
 
-Zgodnie z zasadami opisanymi w tece Zero Trust identity and [device access configurations](microsoft-365-policies-configurations.md) (Konfiguracje dostępu do urządzeń) warstwy punktu początkowego i Enterprise są blisko mapowane z rozszerzonymi ustawieniami zabezpieczeń poziomu 2. Warstwa wyspecjalizowanej ochrony zabezpieczeń jest blisko odwętego od ustawień zabezpieczeń poziomu 3.
+Zgodnie z zasadami opisanymi [](microsoft-365-policies-configurations.md)w Zero Trust konfiguracji tożsamości i dostępu do urządzeń warstwy punktu początkowego i Enterprise są blisko mapowane na rozszerzone ustawienia zabezpieczeń poziomu 2. Warstwa wyspecjalizowanej ochrony zabezpieczeń jest blisko odwętego od ustawień zabezpieczeń poziomu 3.
 
 |Poziom ochrony  |Zasady dotyczące urządzeń |Więcej informacji  |
 |---------|---------|---------|
@@ -320,15 +320,15 @@ Framework konfiguracji zabezpieczeń systemu Android Enterprise jest zorganizowa
 W przypadku Enterprise profilów służbowych systemu Android:
 
 - Ulepszone zabezpieczenia profilu służbowego (poziom 2) — firma Microsoft zaleca użycie tej konfiguracji jako minimalnej konfiguracji zabezpieczeń dla urządzeń osobistych, na których użytkownicy mają dostęp do danych służbowych lub szkolnych. Ta konfiguracja wprowadza wymagania dotyczące haseł, oddziela dane służbowe i osobiste oraz sprawdza poprawność atestacji urządzeń z systemem Android.
-- Profil służbowy o wysokim poziomie zabezpieczeń (poziom 3) — firma Microsoft zaleca tę konfigurację dla urządzeń używanych przez określonych użytkowników lub grupy o wyjątkowo wysokim poziomie ryzyka (użytkownicy, którzy przetwarzają bardzo poufne dane, gdy nieuprawnione ujawnienie powoduje znaczną utratę istotnych informacji w organizacji). Ta konfiguracja wprowadza obronę przed zagrożeniami na urządzeniach przenośnych lub usługę Microsoft Defender for Endpoint, ustawia minimalną wersję systemu Android, forsuje silniejsze zasady dotyczące haseł oraz dodatkowo ogranicza pracę i osobiste wyciągi barwne.
+- Profil służbowy o wysokim poziomie zabezpieczeń (poziom 3) — firma Microsoft zaleca tę konfigurację dla urządzeń używanych przez określonych użytkowników lub grupy o wyjątkowo wysokim poziomie ryzyka (użytkownicy, którzy przetwarzają bardzo poufne dane, gdy nieuprawnione ujawnienie powoduje znaczną utratę istotnych informacji w organizacji). Ta konfiguracja wprowadza obronę przed zagrożeniami na urządzeniach przenośnych Ochrona punktu końcowego w usłudze Microsoft Defender zabezpieczeń, ustawia minimalną wersję systemu Android, cyceruje silniejsze zasady dotyczące haseł oraz dodatkowo ogranicza pracę i osobistej wyciągi barwne.
 
 W przypadku urządzeń Enterprise z systemem Android:
 
 - W pełni zarządzane zabezpieczenia podstawowe (poziom 1) — firma Microsoft zaleca użycie tej konfiguracji jako minimalnej konfiguracji zabezpieczeń dla urządzenia przedsiębiorstwa. Ta konfiguracja ma zastosowanie do większości użytkowników mobilnych, którzy mają dostęp do danych służbowych lub szkolnych. Ta konfiguracja wprowadza wymagania dotyczące haseł, określa minimalną wersję systemu Android i podlega pewnym ograniczeniom urządzeń.
 - W pełni zarządzane rozszerzone zabezpieczenia (poziom 2) — firma Microsoft zaleca tę konfigurację w przypadku urządzeń, na których użytkownicy mają dostęp do informacji poufnych lub poufnych. Ta konfiguracja powoduje, że zasady dotyczące haseł są silniejsze, a funkcje użytkownika/konta są wyłączane.
-- W pełni zarządzane wysoki poziom zabezpieczeń (poziom 3) — firma Microsoft zaleca tę konfigurację dla urządzeń używanych przez określonych użytkowników lub grupy o wyjątkowo wysokim poziomie ryzyka (użytkownicy, którzy przetwarzają bardzo poufne dane, gdy nieuprawnione ujawnienie powoduje znaczną utratę istotnych informacji w organizacji). Ta konfiguracja zwiększa minimalną wersję systemu Android, wprowadza ochronę przed zagrożeniami na urządzeniach przenośnych lub usługę Microsoft Defender for Endpoint i wymusza dodatkowe ograniczenia dotyczące urządzeń.
+- W pełni zarządzane wysoki poziom zabezpieczeń (poziom 3) — firma Microsoft zaleca tę konfigurację dla urządzeń używanych przez określonych użytkowników lub grupy o wyjątkowo wysokim poziomie ryzyka (użytkownicy, którzy przetwarzają bardzo poufne dane, gdy nieuprawnione ujawnienie powoduje znaczną utratę istotnych informacji w organizacji). Ta konfiguracja zwiększa minimalną wersję systemu Android, wprowadza ochronę przed zagrożeniami na urządzeniach przenośnych Ochrona punktu końcowego w usłudze Microsoft Defender oraz wymusza dodatkowe ograniczenia urządzeń.
 
-Zgodnie z zasadami opisanymi w tece Zero Trust identity and [device access configurations](microsoft-365-policies-configurations.md) (Konfiguracje dostępu do urządzeń) warstwy początkowy i Enterprise ochrony są blisko mapowane na podstawowe zabezpieczenia poziomu 1 dla urządzeń należących do użytkownika i rozszerzone ustawienia zabezpieczeń poziomu 2 w pełni zarządzanych urządzeń. Warstwa wyspecjalizowanej ochrony zabezpieczeń jest blisko odwętego od ustawień zabezpieczeń poziomu 3.
+Zgodnie z zasadami opisanymi w konfiguracjach tożsamości i dostępu do urządzeń warstwy początkowy i Enterprise ochrony są blisko mapowane na podstawowe zabezpieczenia poziomu 1 dla urządzeń należących do użytkownika i rozszerzone ustawienia zabezpieczeń poziomu 2 dla w pełni zarządzanych urządzeń. [Zero Trust](microsoft-365-policies-configurations.md) Warstwa wyspecjalizowanej ochrony zabezpieczeń jest blisko odwętego od ustawień zabezpieczeń poziomu 3.
 
 W przypadku Enterprise profilów służbowych systemu Android:
 
@@ -356,7 +356,7 @@ Aby **sprawdzić kondycję > Windows reguł oceny** usług kondycji, zobacz tę 
 
 W **przypadku właściwości urządzenia** określ odpowiednie wartości dla wersji systemu operacyjnego na podstawie zasad zabezpieczeń i IT.
 
-Aby **Menedżer konfiguracji zgodności**, wybierz pozycję **Wymagaj**.
+Aby **Configuration Manager zgodności**, wybierz pozycję **Wymagaj**.
 
 W **przypadku zabezpieczeń systemu** zobacz tę tabelę.
 
@@ -374,7 +374,7 @@ W **przypadku zabezpieczeń systemu** zobacz tę tabelę.
 |Zabezpieczenia urządzenia|Zapora|Wymagaj|Wybieranie|
 ||Oprogramowanie antywirusowe|Wymagaj|Wybieranie|
 ||Ochrona przed złośliwym oprogramowaniem|Wymagaj|Wybieranie <p> To ustawienie wymaga oprogramowania szpiegującego zarejestrowanego w Zabezpieczenia Windows programie.|
-|Defender for Cloud|Microsoft Defender Antimalware|Wymagaj|Wybieranie|
+|Defender dla Chmury|Microsoft Defender Antimalware|Wymagaj|Wybieranie|
 ||Minimalna wersja programu Microsoft Defender w celu ochrony przed złośliwym oprogramowaniem||Wpisać <p> Obsługiwane tylko w przypadku Windows 10 komputera. Firma Microsoft zaleca, aby wersje najnowszej wersji nie zawierały więcej niż pięciu wersji.|
 ||Aktualny podpis w programie Microsoft Defender w celu ochrony przed złośliwym oprogramowaniem|Wymagaj|Wybieranie|
 ||Ochrona w czasie rzeczywistym|Wymagaj|Wybieranie <p> Obsługiwane tylko dla Windows 10 komputerów stacjonarnych i nowszych|
@@ -383,7 +383,7 @@ W **przypadku zabezpieczeń systemu** zobacz tę tabelę.
 
 |Wpisać|Właściwości|Value|Akcja|
 |---|---|---|---|
-|Reguły programu Microsoft Defender dla punktu końcowego w centrum Microsoft Endpoint Manager administracyjnego|[Wymaganie, aby urządzenie było na poziomie lub poniżej wyniku ryzyka związanego z maszyną](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Średni|Wybieranie|
+|Ochrona punktu końcowego w usłudze Microsoft Defender w centrum administracyjnym usługi Microsoft Endpoint Manager administracyjnego|[Wymaganie, aby urządzenie było na poziomie lub poniżej wyniku ryzyka związanego z maszyną](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Średni|Wybieranie|
 
 <!--
 ## Require compliant PCs (but not compliant phones and tablets)
@@ -420,7 +420,7 @@ To require compliant PCs:
 
 Aby wymagać zgodności dla wszystkich urządzeń:
 
-1. Przejdź do portalu [Azure Portal](https://portal.azure.com) i zaloguj się przy użyciu poświadczeń.
+1. Przejdź do [Azure Portal](https://portal.azure.com) i zaloguj się przy użyciu poświadczeń.
 2. Na liście usług platformy Azure wybierz pozycję **Azure Active Directory**.
 3. Na liście **Zarządzaj** wybierz pozycję **Zabezpieczenia**, a następnie wybierz pozycję **Dostęp warunkowy**.
 4. Wybierz **pozycję Nowe** zasady i wpisz nazwę nowych zasad.
@@ -442,6 +442,6 @@ Aby wymagać zgodności dla wszystkich urządzeń:
 
 ## <a name="next-step"></a>Następny krok
 
-[![Krok 3. Zasady dotyczące gości i użytkowników zewnętrznych.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![Krok 3. Zasady dotyczące gości i użytkowników zewnętrznych.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](identity-access-policies-guest-access.md)
 
 [Dowiedz się więcej o zaleceniach dotyczących zasad dla gości i użytkowników zewnętrznych](identity-access-policies-guest-access.md)

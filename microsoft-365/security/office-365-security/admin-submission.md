@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Administratorzy mogą dowiedzieć się, jak za pomocą portalu Przesyłanie w portalu Microsoft 365 Defender przesyłać podejrzane wiadomości e-mail, podejrzewane wiadomości wyłudzające informacje, spam i inne potencjalnie niebezpieczne wiadomości, adresy URL i załączniki wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a897ba6973dfba86e3d0628088bad419c61c04c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324048"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682642"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Korzystanie z portalu Przesyłanie w celu przesyłania podejrzanych wiadomości-śmieci, wyłudków, adresów URL i plików do firmy Microsoft
 
@@ -51,10 +51,10 @@ Aby uzyskać inne sposoby przesyłania wiadomości e-mail, adresów URL i załą
 
 - Otwierasz portal Microsoft 365 Defender w witrynie <https://security.microsoft.com/>. Aby przejść bezpośrednio do **strony Materiały**, użyj .<https://security.microsoft.com/reportsubmission>
 
-- Aby przesłać wiadomości i pliki do firmy Microsoft, musisz być członkiem jednej z następujących grup ról:
+- Aby przesłać wiadomości i pliki do firmy Microsoft, musisz mieć jedną z następujących ról:
   - **Administrator zabezpieczeń** lub **czytnik zabezpieczeń** w [portalu Microsoft 365 Defender sieci.](permissions-microsoft-365-security-center.md)
   
-    Należy pamiętać, że członkostwo w tej grupie ról jest wymagane [do wyświetlania](#view-user-submissions-to-microsoft) przesyłania użytkowników do niestandardowej skrzynki pocztowej w sposób opisany w dalszej części tego artykułu.
+    Jedna z tych ról jest wymagana [do wyświetlania](#view-user-submissions-to-microsoft) przesyłania użytkowników do niestandardowej skrzynki pocztowej w sposób opisany w dalszej części tego artykułu.
 
 - Administratorzy mogą przesyłać wiadomości w wieku do 30 dni, jeśli są nadal dostępne w skrzynce pocztowej i nie są czyszowane przez użytkownika ani innego administratora.
 

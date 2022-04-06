@@ -15,12 +15,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak za pomocą mapy przepływu poczty na pulpicie nawigacyjnym przepływu poczty e-mail w Centrum zgodności usługi & Security & wizualizować i śledzić przepływy poczty e-mail z organizacji przez łączniki i bez użycia łączników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53c86584680f14c68b8d69ac0a0c2fc51933db28
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bd8df34c9484b7a2b8aa2bdd57d160e22f71d247
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680143"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473810"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mapa przepływu poczty e-mail w Centrum & zgodności
 
@@ -28,12 +28,12 @@ ms.locfileid: "63680143"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Mapa **przepływu poczty na** pulpicie [nawigacyjnym](mail-flow-insights-v2.md) przepływu poczty w Centrum [&](https://protection.office.com) zabezpieczeń pozwala uzyskać szczegółowe informacje na temat przepływów poczty przez Twoją organizację. Za pomocą tych informacji można identyfikować wzorce, identyfikować anomalie i rozsyłać problemy w ich przypadku.
 
-![Widżet mapy przepływu poczty e-mail na pulpicie nawigacyjnym przepływu poczty w Centrum & zgodności.](../../media/mfi-mail-flow-map-widget.png)
+:::image type="content" source="../../media/mfi-mail-flow-map-widget.png" alt-text="Widżet mapy przepływu poczty e-mail na pulpicie nawigacyjnym przepływu poczty w Centrum & zgodności" lightbox="../../media/mfi-mail-flow-map-widget.png":::
 
 Domyślnie na wykresie nazywanym diagramem *Sankey* widżet pokazuje wzorzec przepływu poczty e-mail z poprzedniego dnia. Możesz użyć strzałki w lewo w ![lewo.](../../media/scc-left-arrow.png) i strzałka w prawo ![Strzałka w prawo](../../media/scc-right-arrow.png) , aby wyświetlić informacje z różnych dni. Każdy inny kolor reprezentuje przepływ poczty na innym łączniku ruchu przychodzącego lub wychodzącego (lub bez użycia łączników). Po umieszczeniu wskaźnika myszy na określonym kolorze zostanie wyświetlona liczba wiadomości dla tego typu łącznika.
 
@@ -45,11 +45,11 @@ W widoku raportu są dostępne następujące wykresy:
 
 - **Pokaż dane dla: Omówienie**: to po prostu większy widok widżetu. Po umieszczeniu wskaźnika myszy na określonym kolorze zostanie wyświetlona liczba wiadomości dla tego typu łącznika.
 
-  ![Widok Przegląd w raporcie Mapa przepływu poczty e-mail.](../../media/mfi-mail-flow-map-report-overview.png)
+    :::image type="content" source="../../media/mfi-mail-flow-map-report-overview.png" alt-text="Widok Przegląd w raporcie Mapa przepływu poczty e-mail" lightbox="../../media/mfi-mail-flow-map-report-overview.png":::
 
 - **Pokaż dane dla: Szczegóły:** Ten widok zawiera szczegółowe informacje o łącznikach i domenach docelowych. Zostaną wyświetlone domeny nadawcy i adresata, a pozostałe zostaną wyświetlone w obszarze **Inne**. Po umieszczeniu wskaźnika myszy na określonym kolorze i sekcji zostanie wyświetlona liczba wiadomości.
 
-  ![Widok szczegółowy w raporcie mapa przepływu poczty e-mail.](../../media/mfi-mail-flow-map-report-detail.png)
+    :::image type="content" source="../../media/mfi-mail-flow-map-report-detail.png" alt-text="Widok Szczegóły w raporcie Mapa przepływu poczty e-mail" lightbox="../../media/mfi-mail-flow-map-report-detail.png":::
 
 Jeśli klikniesz **pozycję Filtry** w widoku raportu, możesz określić zakres dat w **datach Rozpoczęcie** i **Data zakończenia**.
 
@@ -71,7 +71,7 @@ Jeśli klikniesz **pozycję Filtry** w widoku tabeli szczegółów, możesz okre
 
 Jeśli zaznaczysz wiersz, podobne szczegóły zostaną wyświetlone w wysuwanych informacjach:
 
-![Wysuw szczegółów z tabeli szczegółów na mapie przepływu poczty.](../../media/mfi-mail-flow-map-view-details-table-details.png)
+:::image type="content" source="../../media/mfi-mail-flow-map-view-details-table-details.png" alt-text="Wysuw szczegółów z tabeli szczegóły na mapie przepływu poczty" lightbox="../../media/mfi-mail-flow-map-view-details-table-details.png":::
 
 Aby wysłać raport pocztą e-mail z określonym zakresem dat do jednego lub większej liczby adresatów, kliknij pozycję **Poproś o pobranie**.
 

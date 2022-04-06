@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e819a9de9d5ccd66caab4bc13d8b11c1a95ab03
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bd76eed421f4d926a956508961dc44a643dbb125
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681727"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467098"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Uprawnienia w Microsoft 365 Defender portalu
 
@@ -33,7 +33,7 @@ ms.locfileid: "63681727"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Musisz zarządzać scenariuszami zabezpieczeń, które obejmują wszystkie Microsoft 365 zabezpieczeń. Potrzebujesz też elastycznego nadawać odpowiednie uprawnienia administratora odpowiednim osobom w organizacji.
@@ -55,7 +55,7 @@ Grupa **ról to** zestaw ról, które umożliwiają innym osobom pełninie swoic
 
 Portal Microsoft 365 Defender zawiera> domyślnych grup ról dla typowych zadań i funkcji, które musisz przypisać. Ogólnie rzecz biorąc, zalecamy po prostu dodawanie pojedynczych użytkowników jako **członków** do domyślnych grup ról.
 
-![Diagram przedstawiający relację grup ról z rolami i członkami.](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+:::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="Relacja grupy ról z jej rolami i członkami" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Role i grupy ról w portalu Microsoft 365 Defender grupy
 
@@ -65,7 +65,7 @@ Następujące typy ról i grup ról są dostępne na stronie Uprawnienia **& w**
 
 - **Współpraca przy &** e-mail: są to te same grupy ról, które są dostępne w Centrum zgodności usługi & Security &, ale możesz nimi zarządzać bezpośrednio w portalu Microsoft 365 Defender zabezpieczeń. Przypisane tutaj uprawnienia są specyficzne dla portalu usługi Microsoft 365 Defender, usługi Centrum zgodności platformy Microsoft 365 i Centrum zgodności usługi Security & i nie obejmują wszystkich uprawnień, które są potrzebne w innych obciążeniach Microsoft 365.
 
-![Uprawnienia & w portalu Microsoft 365 Defender sieci Web.](../../media/m365-sc-permissions-and-roles-page.png)
+:::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="Strona Uprawnienia & w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Role usługi Azure AD w portalu Microsoft 365 Defender sieci Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Po otwarciu portalu usługi Microsoft 365 Defender <https://security.microsoft.c
 
 Po wybraniu roli zostanie wyświetlone wysuwne okno wysuwu szczegółów zawierające opis roli i przypisań użytkowników. Aby jednak zarządzać tymi zadaniami, musisz kliknąć pozycję Zarządzaj członkami w **usłudze Azure AD** w wysuwanych szczegółach.
 
-![Link do zarządzania uprawnieniami w aplikacji Azure Active Directory.](../../media/permissions-manage-in-azure-ad-link.png)
+:::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="Link do zarządzania uprawnieniami w aplikacji Azure Active Directory" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
 
 Aby uzyskać więcej informacji, [zobacz Wyświetlanie i przypisywanie ról administratora w Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
@@ -85,7 +85,7 @@ Aby uzyskać więcej informacji, [zobacz Wyświetlanie i przypisywanie ról admi
 |**Operator zabezpieczeń**|Wyświetlaj i badaj aktywne zagrożenia oraz odpowiadaj na nie Microsoft 365 użytkowników, urządzeń i zawartości. Aby uzyskać więcej informacji, zobacz [Operator zabezpieczeń](/azure/active-directory/roles/permissions-reference#security-operator).|
 |**Czytelnik zabezpieczeń**|Wyświetlaj i badaj aktywne zagrożenia dla użytkowników Microsoft 365, urządzeń i zawartości, ale (w przeciwieństwie do operatora zabezpieczeń) nie mają one uprawnień do reagowania poprzez podejmowanie działań. Aby uzyskać więcej informacji, zobacz [Czytnik zabezpieczeń](/azure/active-directory/roles/permissions-reference#security-reader).|
 |**Administrator zabezpieczeń**|Możesz kontrolować ogólne bezpieczeństwo organizacji, zarządzając zasadami zabezpieczeń, przeglądając analizy zabezpieczeń i raporty w różnych Microsoft 365 produktach oraz na bieżąco kontrolować zagrożenia. Aby uzyskać więcej informacji, zobacz [Administrator zabezpieczeń](/azure/active-directory/roles/permissions-reference#security-administrator).|
-|**Czytelnik globalny**|Wersja tylko do odczytu roli **administratora globalnego** . Wyświetlanie wszystkich ustawień i informacji administracyjnych w Microsoft 365. Aby uzyskać więcej informacji, zobacz [Czytnik globalny](/azure/active-directory/roles/permissions-reference#global-reader).|
+|**Czytelnik globalny**|Wersja tylko do odczytu roli **administrator globalny**. Wyświetlanie wszystkich ustawień i informacji administracyjnych w Microsoft 365. Aby uzyskać więcej informacji, zobacz [Czytnik globalny](/azure/active-directory/roles/permissions-reference#global-reader).|
 |**Administrator symezyjki ataków**|Tworzenie wszystkich aspektów tworzenia symydyty ataków i zarządzanie nimi, uruchamianie/planowanie symulacyjnej oraz przeglądanie wyników symulacyjnych.[](attack-simulation-training.md) Aby uzyskać więcej informacji, zobacz [Administrator symulowania ataków](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
 |**Autor ataku ładu**|Twórz łady ataków, ale nie uruchamiaj ich ani nie planuj. Aby uzyskać więcej informacji, zobacz [Autorem ataku opłaty](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 

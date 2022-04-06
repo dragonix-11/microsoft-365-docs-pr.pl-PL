@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 364e83d03da53f5e6ffa8cecda4847e13c38f60e
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 68d6c0bed1f9484f4eed45924c57357b1c490e8f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499490"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569383"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Analiza raportu analityka w analizie zagrożeń w programie Microsoft 365 Defender
 
@@ -106,7 +106,7 @@ Wykrywanie pozwala automatycznie identyfikować i zatrzymywać śledzone zagroż
 Zaawansowane zapytania myśliwskie w raportach analityków zostały przesłoone przez analityków firmy Microsoft i są gotowe do pracy w zaawansowanym [edytorze zapytań myśliwnych](https://security.microsoft.com/advanced-hunting). Za pomocą tych zapytań można też tworzyć niestandardowe [](custom-detection-rules.md) reguły wykrywania, które powodują wyzwalanie alertów dotyczących przyszłych dopasowania.
 
 >[!NOTE]
-> Analiza zagrożeń jest również dostępna [w Ochrona punktu końcowego w usłudze Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Nie ma jednak integracji danych między programem Microsoft Defender for Office i Ochrona punktu końcowego w usłudze Microsoft Defender, które mają Microsoft 365 Defender analizy zagrożeń.
+> Analiza zagrożeń jest również dostępna [w Ochrona punktu końcowego w usłudze Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Nie ma jednak integracji danych między programem Microsoft Defender for Office i Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

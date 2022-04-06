@@ -1,5 +1,5 @@
 ---
-title: 'Migrowanie do programu Microsoft Defender Office 365 etap 3. etap: wsad'
+title: 'Migrowanie do Ochrona usługi Office 365 w usłudze Microsoft Defender etap 3. Etap: wsad'
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,28 +16,28 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: migrationguides
-description: Wykonaj kroki migracji z usługi lub urządzenia innej firmy do programu Microsoft Defender w celu Office 365 ochrony.
+description: Wykonaj czynności wymagane do migrowania z usługi lub urządzenia ochrony innej firmy w celu Ochrona usługi Office 365 w usłudze Microsoft Defender ochrony.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3798bdb28bb44b5148574b4c09a372ff564e47e5
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 9160a6fc79ba94e4cb86fb0f96f46e565c0f613c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63009827"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467516"
 ---
-# <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrowanie do usługi Microsoft Defender dla Office 365 — Etap 3. Etap: wsuń
+# <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrowanie do Ochrona usługi Office 365 w usłudze Microsoft Defender — Etap 3. Wsad.
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 
 <br>
 
-|[![Etap 1. Przygotowanie.](../../media/phase-diagrams/prepare.png)](migrate-to-defender-for-office-365-prepare.md) <br> [Etap 1. Przygotowywanie](migrate-to-defender-for-office-365-prepare.md)|[![Etap 2. Konfigurowanie.](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [Etap 2. Konfigurowanie](migrate-to-defender-for-office-365-setup.md)|![Etap 3. Wsad.](../../media/phase-diagrams/onboard.png) <br> Etap 3. Wniesienie|
+|[![Etap 1. Przygotowanie.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [Etap 1. Przygotowywanie](migrate-to-defender-for-office-365-prepare.md)|[![Etap 2. Konfigurowanie.](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Etap 2. Konfigurowanie](migrate-to-defender-for-office-365-setup.md)|![Etap 3. Wsad.](../../media/phase-diagrams/onboard.png) <br> Etap 3. Wniesienie|
 |---|---|---|
 |||*Jesteś tutaj!*|
 
-Etap **3 : Etap 3: Etap** migracji do programu **[Microsoft Defender dla](migrate-to-defender-for-office-365.md#the-migration-process)** Office 365! Ten etap migracji obejmuje następujące kroki:
+Etap **3 : Etap 3 : etap** migracji do programu **[Ochrona usługi Office 365 w usłudze Microsoft Defender](migrate-to-defender-for-office-365.md#the-migration-process)**! Ten etap migracji obejmuje następujące kroki:
 
 1. [Rozpoczynanie dołączania do Teams](#step-1-begin-onboarding-security-teams)
 2. [(Opcjonalnie) Wykluczanie użytkowników pilotażowych z filtrowania według istniejącej usługi ochrony](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
@@ -50,7 +50,7 @@ Etap **3 : Etap 3: Etap** migracji do programu **[Microsoft Defender dla](migrat
 
 ## <a name="step-1-begin-onboarding-security-teams"></a>Krok 1. Rozpoczęcie dołączania do Teams
 
-Jeśli Twoja organizacja ma zespół odpowiedzi zabezpieczeń, na tym czas zacząć integrację usługi Microsoft Defender for Office 365 z procesami reakcji, w tym z systemami biletowymi. To cały temat, ale czasami jest przeoczył. Wczesne przygotowanie zespołu reagowania na zabezpieczenia zapewni gotowość Twojej organizacji do reagowania na zagrożenia podczas przełączania rekordów MX. Aby reagowanie na incydenty było potrzebne do obsługi następujących zadań:
+Jeśli Twoja organizacja ma zespół ds. zabezpieczeń, na tym czas zacząć integrować Ochrona usługi Office 365 w usłudze Microsoft Defender z procesami reakcji, w tym z systemami biletowania. To cały temat, ale czasami jest przeoczył. Wczesne przygotowanie zespołu reagowania na zabezpieczenia zapewni gotowość Twojej organizacji do reagowania na zagrożenia podczas przełączania rekordów MX. Aby reagowanie na incydenty było potrzebne do obsługi następujących zadań:
 
 - Poznaj nowe narzędzia i zintegruj je z istniejącymi przepływami. Przykład:
   - Ważne jest zarządzanie kwarantanną wiadomości przez administratora. Aby uzyskać instrukcje, zobacz [Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako administrator](manage-quarantined-messages-and-files.md).
@@ -59,7 +59,7 @@ Jeśli Twoja organizacja ma zespół odpowiedzi zabezpieczeń, na tym czas zacz�
 - Dostosowywanie alertów [dla](../../compliance/alert-policies.md) procesów organizacyjnych.
 - Zarządzanie kolejką zdarzeń i rozwiązywanie potencjalnych zagrożeń.
 
-Jeśli Twoja organizacja zakupiła usługę Microsoft Defender dla systemu Office 365 Plan 2, powinna zacząć zaznajomić się z funkcjami, takimi jak Eksplorator zagrożeń, łowiectwo zaawansowane i zdarzenia. Aby uzyskać odpowiednie szkolenia, zobacz <https://aka.ms/mdoninja>.
+Jeśli Twoja organizacja zakupiła plan 2 Ochrona usługi Office 365 w usłudze Microsoft Defender, powinna zacząć zaznajomić się z funkcjami, takimi jak Eksplorator zagrożeń, szukanie zaawansowane i zdarzenia. Aby uzyskać odpowiednie szkolenia, zobacz <https://aka.ms/mdoninja>.
 
 Jeśli zespół odpowiedzi zabezpieczeń zbiera i analizuje niefiltrowane wiadomości, możesz skonfigurować skrzynkę pocztową usługi SecOps w celu odbierania tych niefiltrowanych wiadomości. Aby uzyskać instrukcje, [zobacz Konfigurowanie skrzynek pocztowych usługi SecOps w zaawansowanych zasadach dostarczania](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -67,18 +67,18 @@ Jeśli zespół odpowiedzi zabezpieczeń zbiera i analizuje niefiltrowane wiadom
 
 Aby uzyskać więcej informacji na temat integracji ze swoim SIEM/SOAR, zobacz następujące artykuły:
 
-- [Omówienie Microsoft 365 Defender API](/microsoft-365/security/defender/api-overview)
+- [Omówienie interfejsów API usługi Microsoft 365 Defender](/microsoft-365/security/defender/api-overview)
 - [Interfejs API przesyłania strumieniowego](/microsoft-365/security/defender/streaming-api)
-- [Zaawansowany interfejs API łowiectwo](/microsoft-365/security/defender/api-advanced-hunting)
+- [Interfejs API zaawansowanego wyszukiwania zagrożeń](/microsoft-365/security/defender/api-advanced-hunting)
 - [Interfejsy API zdarzeń](/microsoft-365/security/defender/api-incident)
 
-Jeśli Twoja organizacja nie ma zespołu reagowania na zabezpieczenia ani nie ma istniejących przepływów procesu, możesz użyć tego czasu, aby zapoznać się z podstawowymi funkcjami łowy i odpowiedzi w programie Defender for Office 365. Aby uzyskać więcej informacji, zobacz [Badanie zagrożeń i odpowiedź na nie](office-365-ti.md).
+Jeśli Twoja organizacja nie ma zespołu reagowania na zabezpieczenia ani nie ma istniejących przepływów procesu, możesz użyć tego czasu, aby zapoznać się z podstawowymi funkcjami chłoniania i reagowania w Ochrona usługi Office 365 w usłudze Defender. Aby uzyskać więcej informacji, zobacz [Badanie zagrożeń i odpowiedź na nie](office-365-ti.md).
 
 ### <a name="rbac-roles"></a>Role RBAC
 
-Uprawnienia usługi Defender dla Office 365 są oparte na kontroli dostępu opartej na rolach (RBAC, role based access control) i wyjaśniono je w tece Uprawnienia Microsoft 365 Defender [portalu](permissions-microsoft-365-security-center.md). Oto ważne kwestie, o których należy pamiętać:
+Uprawnienia w Ochrona usługi Office 365 w usłudze Defender są oparte na kontroli dostępu opartej na rolach (RBAC, role based access control) i wyjaśniono je w tece Uprawnienia w portalu usługi [Microsoft 365 Defender rolach](permissions-microsoft-365-security-center.md). Oto ważne kwestie, o których należy pamiętać:
 
-- Role usługi Azure AD nadawaj uprawnienia **wszystkim obciążeniam** pracą w Microsoft 365. Jeśli na przykład dodasz użytkownika do administratora zabezpieczeń w portalu Azure Portal, będzie miał uprawnienia Administratora zabezpieczeń wszędzie.
+- Role usługi Azure AD nadawaj uprawnienia **wszystkim obciążeniam** pracą w Microsoft 365. Jeśli na przykład dodasz użytkownika do administratora zabezpieczeń w centrum Azure Portal, będzie miał uprawnienia Administratora zabezpieczeń wszędzie.
 - Poczta & e-mail w portalu Microsoft 365 Defender nadać uprawnienia do portalu Microsoft 365 Defender, centrum Centrum zgodności platformy Microsoft 365 i starszego Centrum zgodności & zabezpieczeń. Jeśli na przykład dodasz użytkownika do administratora zabezpieczeń w portalu Microsoft 365 Defender, będzie miał dostęp administrator zabezpieczeń tylko w portalu Microsoft 365 Defender, portalu  usługi Centrum zgodności platformy Microsoft 365 oraz centrum zabezpieczeń i zgodności &. Wyśrodkuj.
 - Wiele funkcji w portalu Microsoft 365 Defender jest opartych na poleceniach cmdlet programu Exchange Online PowerShell i dlatego wymaga członkostwa w grupach ról w odpowiadających im rolach (technicznie, grupach ról) w programie Exchange Online (w szczególności w celu uzyskania dostępu do odpowiednich Exchange Online  Polecenia cmdlet programu PowerShell).
 - W portalu Microsoft 365 Defender w usłudze & są dostępne role współpracy z innymi użytkownikami poczty e-mail, które nie są równoważne z rolami usługi Azure AD i są ważne w przypadku operacji zabezpieczeń (na przykład rola Podgląd oraz rola Wyszukiwanie i przeczyszczanie).
@@ -87,7 +87,7 @@ Zazwyczaj tylko podzbiór pracowników ochrony będzie potrzebować dodatkowych 
 
 ## <a name="step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service"></a>Krok 2. (Opcjonalnie) Wykluczanie użytkowników pilotażowych z filtrowania według istniejącej usługi ochrony
 
-Mimo że ten krok nie jest wymagany, rozważ skonfigurowanie użytkowników pilotażowych tak, aby pomijali filtrowanie według istniejącej usługi ochrony. Ta akcja umożliwia ułaścicieli Office 365 obsługę wszystkich  obowiązków w zakresie filtrowania i ochrony w przypadku użytkowników pilotażowych. Jeśli nie wykluczono użytkowników pilotażowych z istniejącej usługi ochrony, usługa Defender for Office 365 efektywnie działa tylko w przypadku nieodebranych informacji z innej usługi (filtrowanie wiadomości, które już zostały odfiltrowane).
+Mimo że ten krok nie jest wymagany, rozważ skonfigurowanie użytkowników pilotażowych tak, aby pomijali filtrowanie według istniejącej usługi ochrony. Ta akcja umożliwia **Ochrona usługi Office 365 w usłudze Defender wszystkich obowiązków** w zakresie filtrowania i ochrony w przypadku użytkowników pilotażowych. Jeśli nie wykluczono użytkowników pilotażowych z istniejącej usługi ochrony, Ochrona usługi Office 365 w usłudze Defender efektywnie działa tylko na nieodebranych wynikach z innej usługi (filtrowanie wiadomości, które już zostały odfiltrowane).
 
 > [!NOTE]
 > Ten krok jest jawnie wymagany, jeśli bieżąca usługa ochrony udostępnia zawijanie linków, ale chcesz pilotażować Sejf linki. Podwójne zawijanie linków nie jest obsługiwane.
@@ -127,7 +127,7 @@ Gdy wszystko będzie gotowe, wykonaj następujące czynności, aby umożliwić d
 
 - W zasadach ochrony przed wyłudzaniem informacji z ustawieniami ścisłej ochrony zmień  wartość w te sposób: Jeśli inteligencja skrzynek pocztowych wykryje i podszyje się pod użytkownika, z poddaj wiadomość **kwarantannie**.
 
-Aby zmodyfikować zasady, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Defender dla Office 365](configure-mdo-anti-phishing-policies.md).
+Aby zmodyfikować zasady, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender](configure-mdo-anti-phishing-policies.md).
 
 Po obserwowaniu wyników i wróceniu jakichkolwiek zmian przejdź do następnej sekcji w celu kwarantanny wiadomości wykrytych przez personifikację użytkownika.
 
@@ -137,7 +137,7 @@ W obu zasadach ochrony przed wyłudzaniem informacji na podstawie ustawień stan
 
 Sprawdź szczegółowe [informacje o personifikacji](impersonation-insight.md) , aby zobaczyć, co jest blokowane w przypadku prób personifikacji użytkownika.
 
-Aby zmodyfikować zasady, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Defender dla Office 365](configure-mdo-anti-phishing-policies.md).
+Aby zmodyfikować zasady, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender](configure-mdo-anti-phishing-policies.md).
 
 Po obserwowaniu wyników i wreguleniu przejdź do następnej sekcji w celu kwarantanny wiadomości wykrytych przez personifikację domeny.
 
@@ -147,7 +147,7 @@ W obu zasadach ochrony przed wyłudzaniem informacji opartych na ustawieniach st
 
 Sprawdź szczegółowe [informacje o personifikacji](impersonation-insight.md) , aby zobaczyć, co jest blokowane w przypadku prób personifikacji domeny.
 
-Aby zmodyfikować zasady, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Defender dla Office 365](configure-mdo-anti-phishing-policies.md).
+Aby zmodyfikować zasady, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender](configure-mdo-anti-phishing-policies.md).
 
 Sprawdź wyniki i w razie potrzeby wprowadzić odpowiednie zmiany.
 
@@ -155,12 +155,12 @@ Sprawdź wyniki i w razie potrzeby wprowadzić odpowiednie zmiany.
 
 Gdy użytkownicy pilotażowi zgłaszają wyniki fałszywie dodatnie i fałszywie ujemne, wiadomości będą wyświetlane na stronie Przesyłanie w Microsoft 365 Defender [sieci Web](admin-submission.md). Błędniezidentyfikowane wiadomości można zgłosić do firmy Microsoft w celu analizy, a następnie, w razie potrzeby, za pomocą tych informacji, dostosować ustawienia i wyjątki w ramach zasad pilotażowych.
 
-Aby monitorować ustawienia ochrony i iterować ustawienia ochrony w programie Defender for Office 365, użyj następujących Office 365:
+Poniższe funkcje monitorują ustawienia ochrony w przeglądarce i monitorują ich Ochrona usługi Office 365 w usłudze Defender:
 
 - [Kwarantanna](manage-quarantined-messages-and-files.md)
 - [Eksplorator zagrożeń](email-security-in-microsoft-defender.md)
 - [Raporty zabezpieczeń poczty e-mail](view-email-security-reports.md)
-- [Defender for Office 365 reports](view-reports-for-mdo.md)
+- [Ochrona usługi Office 365 w usłudze Defender raportów](view-reports-for-mdo.md)
 - [Szczegółowe informacje dotyczące przepływu poczty e-mail](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [Raporty przepływu poczty e-mail](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
@@ -192,7 +192,7 @@ Wykonaj czynności opisane w tej sekcji, gdy wszystko będzie gotowe do przełą
 
 2. Wyłącz regułę przepływu poczty SCL=-1 (możesz ją wyłączyć bez jej usuwania).
 
-3. Sprawdź, czy poprzednie zmiany zostały wprowadzone i czy program Defender dla systemu Office 365 jest teraz poprawnie włączony dla wszystkich użytkowników. Obecnie wszystkie funkcje ochrony usługi Defender dla systemu Office 365 mogą działać na pocztę dla wszystkich adresatów, ale ta poczta została już przeskanowana przez istniejącą usługę ochrony.
+3. Sprawdź, czy poprzednie zmiany zostały wprowadzone i czy funkcja Ochrona usługi Office 365 w usłudze Defender jest teraz poprawnie włączona dla wszystkich użytkowników. Obecnie wszystkie funkcje ochrony programu Ochrona usługi Office 365 w usłudze Defender mogą działać na pocztę dla wszystkich adresatów, ale ta poczta została już przeskanowana przez istniejącą usługę ochrony.
 
 Na tym etapie możesz wstrzymać rejestrowanie i dostosowywanie danych na dużą skalę.
 
@@ -223,10 +223,10 @@ Zachęcamy do wstrzymywania i oceniania w dowolnym momencie. Ale pamiętaj: po w
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulacje! Ukończono migrację do [usługi Microsoft Defender dla systemu Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! Ponieważ zostały one opisane w tym przewodniku migracji, pierwsze kilka dni, w których poczta jest dostarczana bezpośrednio Microsoft 365 powinna być znacznie płynniejsze.
+Gratulacje! Migracja została [ukończona do Ochrona usługi Office 365 w usłudze Microsoft Defender](migrate-to-defender-for-office-365.md#the-migration-process)! Ponieważ zostały one opisane w tym przewodniku migracji, pierwsze kilka dni, w których poczta jest dostarczana bezpośrednio Microsoft 365 powinna być znacznie płynniejsze.
 
-Teraz rozpoczynasz normalną operację i konserwację usługi Defender dla systemu Office 365. Monitoruj i obserwuj, czy problemy są podobne do tych, które wystąpiły podczas pilotażu, ale na większą skalę. Analiza [fałszerska](learn-about-spoof-intelligence.md) i analiza [personifikacji](impersonation-insight.md) będą najbardziej pomocne, ale rozważ regularne wykonywanie następujących działań:
+Teraz rozpoczynasz normalną operację i konserwację Ochrona usługi Office 365 w usłudze Defender. Monitoruj i obserwuj, czy problemy są podobne do tych, które wystąpiły podczas pilotażu, ale na większą skalę. Analiza [fałszerska](learn-about-spoof-intelligence.md) i analiza [personifikacji](impersonation-insight.md) będą najbardziej pomocne, ale rozważ regularne wykonywanie następujących działań:
 
-- Przeglądanie przesyłania użytkowników, zwłaszcza wiadomości [wyłudzających informacje zgłoszonych przez użytkowników](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)
+- Przeglądanie przesyłania użytkowników, zwłaszcza wiadomości [wyłudzających informacje zgłoszonych przez użytkowników](automated-investigation-response-office.md)
 - Przesłonięcia recenzji w [raporcie o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
 - Użyj [zapytania wyszukiwania zaawansowanego](/microsoft-365/security/defender/advanced-hunting-example) , aby szukać możliwości i ryzykownych wiadomości.

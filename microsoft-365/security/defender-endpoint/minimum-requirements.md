@@ -1,5 +1,5 @@
 ---
-title: Minimalne wymagania programu Microsoft Defender dla punktu końcowego
+title: Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender
 description: Opis wymagań licencjonowania dotyczących urządzeń dołączających do usługi
 keywords: wymagania minimalne, licencjonowanie, tabela porównania
 ms.prod: m365-security
@@ -16,33 +16,33 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 03ac5ed0d63fb88639e9b7e1b55987bf328476e1
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 754537d11a4c183cd1057b94d583a31543d9e4a5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419075"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467362"
 ---
-# <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Minimalne wymagania programu Microsoft Defender dla punktu końcowego
+# <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 Istnieją pewne minimalne wymagania dotyczące urządzeń dołączających do usługi. Dowiedz się więcej o licencjonowaniu, wymaganiach dotyczących sprzętu i oprogramowania oraz innych ustawieniach konfiguracji na urządzeniach podłączonych do usługi.
 
 > [!TIP]
 >
-> - W tym artykule opisano minimalne wymagania dotyczące programu Microsoft Defender dla punktu końcowego (plan 2). Jeśli szukasz informacji na temat programu Defender dla punktu końcowego (plan 1), zobacz Wymagania dotyczące usługi [Defender dla punktu końcowego (plan 1](mde-p1-setup-configuration.md#review-the-requirements)).
+> - W tym artykule opisano minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2. Jeśli szukasz informacji na temat programu Defender dla punktu końcowego (plan 1), zobacz Wymagania dotyczące usługi [Defender dla punktu końcowego (plan 1](mde-p1-setup-configuration.md#review-the-requirements)).
 > - Dowiedz się więcej o najnowszych ulepszeniach w programie Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Program Defender for Endpoint zademonstrował wiodące w branży kable i funkcje wykrywania w ostatnim czasie oceny miTRE. Przeczytaj: [Szczegółowe informacje z miTRE ATT&oceny na podstawie CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
-Aby uzyskać informacje o wymaganiach licencjonowania programu Microsoft Defender dla punktu końcowego, zobacz [Program Microsoft Defender, aby uzyskać informacje o licencjonowaniu punktu końcowego](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
+Aby uzyskać informacje o wymaganiach licencjonowania Ochrona punktu końcowego w usłudze Microsoft Defender, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender informacje o licencjonowaniu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 
 Aby uzyskać szczegółowe informacje o licencjonowaniu, zobacz witrynę [Warunki](https://www.microsoft.com/licensing/terms/) produktu i współpracy z zespołem klienta, aby dowiedzieć się więcej o warunkach i postanowieniach.
@@ -76,7 +76,7 @@ Dostęp do usługi Defender for Endpoint odbywa się za pośrednictwem przegląd
 - Windows 10 Enterprise IoT
 
     >[!NOTE]
-    >Mimo że program Windows 10 IoT Enterprise jest obsługiwanym przez system operacyjny w programie Microsoft Defender for Endpoint i umożliwia im rozpowszechnianie go w ramach produktu lub rozwiązania, klienci powinni postępować zgodnie ze wskazówkami OEM/ODM, które mają na celu uzyskanie pomocy technicznej i oprogramowania zainstalowanego na hoście.
+    >Mimo że program Windows 10 IoT Enterprise jest obsługiwanym systemem operacyjnym w programie Ochrona punktu końcowego w usłudze Microsoft Defender i umożliwia im rozpowszechnianie go w ramach produktu lub rozwiązania, klienci powinni postępować zgodnie ze wskazówkami OEM/ODM wokół zainstalowanego oprogramowania i możliwości obsługi technicznej na komputerze hosta.
 
 - Windows 10 Education
 - Windows 10 Pro
@@ -101,11 +101,11 @@ Aby uzyskać więcej informacji na temat obsługiwanych wersji Windows 10, zobac
 > [!NOTE]
 > Komputery z wersjami programu Windows (takimi jak Windows CE i Windows 10 Mobile) nie są obsługiwane.
 >
-> Maszyny wirtualne uruchomione Windows 10 Enterprise 2016 LTSB mogą napotkać problemy z wydajnością, jeśli są uruchomione na platformach innych niż firmy Microsoft do wirtualizacji.
+> Virtual Machines uruchomione Windows 10 Enterprise 2016 LTSB mogą wystąpić problemy z wydajnością, jeśli są uruchomione na platformach innych niż Microsoft Virtualization.
 >
 > W przypadku środowisk wirtualnych zalecamy używanie programu Windows 10 Enterprise LTSC 2019 lub nowszego.
 
-Gdy składniki będą aktualne w systemach operacyjnych Microsoft Windows, pomoc techniczna programu Microsoft Defender for Endpoint będzie podlegać cyklowi życia odpowiedniego systemu operacyjnego. Aby uzyskać więcej informacji, zobacz Często [zadawane pytania dotyczące cyklu życia](/lifecycle/faq/general-lifecycle). Nowe funkcje lub funkcje są zwykle udostępniane tylko w systemach operacyjnych, które jeszcze nie zakończyły ich cyklu życia. Aktualizacje analizy zabezpieczeń (aktualizacje definicji i aparatu) oraz logika wykrywania będą nadal udostępniane do co najmniej:
+Gdy składniki są aktualne w systemach operacyjnych microsoft Windows, pomoc techniczna Ochrona punktu końcowego w usłudze Microsoft Defender cykl życia odpowiedniego systemu operacyjnego. Aby uzyskać więcej informacji, zobacz Często [zadawane pytania dotyczące cyklu życia](/lifecycle/faq/general-lifecycle). Nowe funkcje lub funkcje są zwykle udostępniane tylko w systemach operacyjnych, które jeszcze nie zakończyły ich cyklu życia. Aktualizacje analizy zabezpieczeń (aktualizacje definicji i aparatu) oraz logika wykrywania będą nadal udostępniane do co najmniej:
 
 - Data [zakończenia pomocy technicznej](/lifecycle/products/) (dla systemów operacyjnych, które nie mają programu rozszerzonej aktualizacji zabezpieczeń).
 - Data [zakończenia ESU](/lifecycle/faq/extended-security-updates) (dla systemów operacyjnych, które mają program ESU).
@@ -124,17 +124,17 @@ Gdy składniki będą aktualne w systemach operacyjnych Microsoft Windows, pomoc
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Wymagania dotyczące sieci i magazynowania danych oraz konfiguracji
 
-Przy pierwszym uruchomieniu kreatora dołączania musisz wybrać miejsce przechowywania informacji związanych z punktem końcowym programu Microsoft Defender: w Unii Europejskiej, Zjednoczonym Królestwie lub w centrum danych Stanów Zjednoczonych.
+Przy pierwszym uruchomieniu kreatora dołączania musisz wybrać miejsce przechowywania informacji związanych z usługą Ochrona punktu końcowego w usłudze Microsoft Defender: w Unii Europejskiej, Wielkiej Brytanii lub w centrum Stany Zjednoczone danych.
 
 > [!NOTE]
 >
 > - Po pierwszej konfiguracji nie można zmienić lokalizacji przechowywania danych.
-> - Zapoznaj się [z tematem Przechowywanie danych i](data-storage-privacy.md) prywatność w programie Microsoft Defender for Endpoint, aby uzyskać więcej informacji na temat tego, gdzie i jak firma Microsoft przechowuje Twoje dane.
+> - Zapoznaj się [Ochrona punktu końcowego w usłudze Microsoft Defender przechowywaniem i prywatnością](data-storage-privacy.md) danych, aby uzyskać więcej informacji na temat miejsca i sposobu przechowywania danych przez firmę Microsoft.
 
 ### <a name="diagnostic-data-settings"></a>Ustawienia danych diagnostycznych
 
 > [!NOTE]
-> Program Microsoft Defender for Endpoint nie wymaga żadnego konkretnego poziomu diagnostycznego, jeśli jest włączony.
+> Ochrona punktu końcowego w usłudze Microsoft Defender nie wymaga żadnego określonego poziomu diagnostycznego, jeśli jest włączony.
 
 Upewnij się, że usługa danych diagnostycznych jest włączona na wszystkich urządzeniach w organizacji.
 Domyślnie ta usługa jest włączona. Warto sprawdzić, czy będziesz mieć pewność, że otrzymasz od nich dane czujnika.
@@ -153,7 +153,7 @@ Domyślnie ta usługa jest włączona. Warto sprawdzić, czy będziesz mieć pew
 
    Jeśli usługa jest włączona, wynik powinien wyglądać tak, jak na poniższym zrzucie ekranu:
 
-   ![Wynik polecenia zapytania sc w celu rozwiązania diagtrack.](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Wynik polecenia zapytania sc w celu rozwiązania diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
 Musisz skonfigurować usługę tak, aby uruchamiała się automatycznie, jeśli **START_TYPE nie jest** ustawiona **na AUTO_START**.
 
@@ -204,9 +204,9 @@ Jeśli wnoszysz serwery i Program antywirusowy Microsoft Defender nie jest aktyw
 
 Jeśli używasz programu Program antywirusowy Microsoft Defender jako podstawowego produktu ochrony przed złośliwym kodem na swoich urządzeniach, agent programu Defender for Endpoint pomyślnie zostanie uruchomiony.
 
-Jeśli korzystasz z rozwiązań do zarządzania urządzeniami przenośnymi lub programu Microsoft Endpoint Manager (bieżąca gałąź), musisz upewnić się, że sterownik Program antywirusowy Microsoft Defender ELAM jest włączony. Aby uzyskać więcej informacji, [zobacz Program antywirusowy Microsoft Defender wyłączyć zasady](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Jeśli korzystasz z rozwiązań mobilnych Zarządzanie urządzeniami lub Microsoft Endpoint Manager (bieżąca gałąź), musisz upewnić się, że sterownik Program antywirusowy Microsoft Defender ELAM jest włączony. Aby uzyskać więcej informacji, [zobacz Program antywirusowy Microsoft Defender wyłączyć zasady](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Konfigurowanie wdrożenia programu Microsoft Defender dla punktu końcowego](production-deployment.md)
-- [Urządzenia wyniesiene na urządzeniach w](onboard-configure.md)
+- [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender sieci](production-deployment.md)
+- [Dołączanie urządzeń](onboard-configure.md)

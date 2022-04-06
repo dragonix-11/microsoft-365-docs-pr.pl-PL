@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c2ebb60d3cd5514d003991d26c5070b05e89fb37
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 69c211e02b5bea12431e17bf2256405f96977b53
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013837"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467428"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Zarządzanie źródłami aktualizacji Program antywirusowy Microsoft Defender ochrony
 
@@ -28,8 +28,8 @@ ms.locfileid: "63013837"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -42,7 +42,7 @@ Zapewnienie aktualnej ochrony antywirusowej jest bardzo ważne. Istnieją dwa sk
 W tym artykule opisano sposób określania miejsca, z którego mają być pobierane aktualizacje (ta kolejność jest również określana jako kolejność rezerwowa). Zobacz [temat Program antywirusowy Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md) i stosowanie planu bazowego, aby uzyskać omówienie sposobu działania aktualizacji i sposobu konfigurowania innych aspektów aktualizacji (na przykład planowania aktualizacji).
 
 > [!IMPORTANT]
-> Program antywirusowy Microsoft Defender aktualizacje analizy zabezpieczeń są dostarczane za pośrednictwem usługi Windows Update, a począwszy od poniedziałku 21 października 2019 r., wszystkie aktualizacje analizy zabezpieczeń będą podpisane wyłącznie przez sha-2. Aby zaktualizować analizy zabezpieczeń, należy zaktualizować urządzenia, aby obsługiły sha-2. Aby dowiedzieć się więcej, zobacz [Wymaganie obsługi podpisywania kodu SHA-2 2 dla programu Windows i programu WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
+> Program antywirusowy Microsoft Defender aktualizacje analizy zabezpieczeń są dostarczane za pośrednictwem systemu Windows Update, a począwszy od poniedziałku 21 października 2019 r., wszystkie aktualizacje analizy zabezpieczeń będą podpisane wyłącznie przez sha-2. Aby zaktualizować analizy zabezpieczeń, należy zaktualizować urządzenia, aby obsługiły sha-2. Aby dowiedzieć się więcej, zobacz [Wymaganie obsługi podpisywania kodu SHA-2 2 dla programu Windows i programu WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 <a id="fallback-order"></a>
 
@@ -65,7 +65,7 @@ Istnieje pięć lokalizacji, w których można określić, gdzie punkt końcowy 
 - [Sieciowy udział plików](#unc-share)
 - [Aktualizacje analizy zabezpieczeń dla Program antywirusowy Microsoft Defender i innego złośliwego oprogramowania](https://www.microsoft.com/wdsi/defenderupdates) <sup>firmy Microsoft [[2](#fn1)]<sup></sup>
 
-(<a id="fn1">1</a>) Wewnętrzny serwer aktualizacji definicji usługi Intune — jeśli korzystasz z usług SCCM/SUP w celu uzyskiwania aktualizacji definicji dla usługi Program antywirusowy Microsoft Defender i chcesz uzyskać dostęp do usługi Windows Update na urządzeniach klienckich, możesz przejść do współzawładowania i odładować obciążenie pracą ochrony punktu końcowego do usługi Intune. W zasadach ochrony przed złośliwym oprogramowaniem skonfigurowanych w usłudze Intune jest dostępna opcja "wewnętrzny serwer aktualizacji definicji", który można skonfigurować do używania lokalnego programu WSUS jako źródła aktualizacji. Pozwala to kontrolować, które aktualizacje z oficjalnego serwera organizacji WU zostały zatwierdzone do przedsiębiorstwa, a także pomóc serwerowi proxy i zapisać ruch sieciowy w oficjalnej sieci Windows UPdates.
+(<a id="fn1">1</a>) Intune Internal Definition Update Server — jeśli korzystasz z usług SCCM/SUP w celu uzyskiwania aktualizacji definicji dla usługi Program antywirusowy Microsoft Defender i potrzebujesz dostępu do usługi Windows Update na urządzeniach klienckich zablokowanych, możesz przejść do współzawładowania i odładować obciążenie pracą ochrony punktu końcowego do Intune. W zasadach ochrony przed złośliwym oprogramowaniem skonfigurowanych w programie Intune dostępna jest opcja "wewnętrzny serwer aktualizacji definicji", który można skonfigurować do używania lokalnego programu WSUS jako źródła aktualizacji. Pozwala to kontrolować, które aktualizacje z oficjalnego serwera organizacji WU zostały zatwierdzone do przedsiębiorstwa, a także pomóc serwerowi proxy i zapisać ruch sieciowy w oficjalnej sieci Windows UPdates.
 
 (<a id="fn1">2</a>) Zasady i rejestr mogą mieć na liście zabezpieczenia Centrum firmy Microsoft ds. ochrony przed złośliwym oprogramowaniem (MMPC) lub wcześniejszą nazwę.
 
@@ -86,7 +86,7 @@ Każde źródło ma typowe scenariusze, które zależą od konfiguracji sieci, a
 |Microsoft Update|Chcesz, aby punkty końcowe łączyły się bezpośrednio z usługą Microsoft Update. Może to być przydatne w przypadku punktów końcowych, które nieregularnie łączą się z siecią przedsiębiorstwa, lub jeśli nie zarządza się aktualizacjami za pomocą usługi Windows Server Update Service.|
 |Udział plików|Masz urządzenia inne niż połączone z Internetem (takie jak maszyny wirtualne). Aktualizacje udziału sieciowego można pobrać za pomocą podłączonego do Internetu hosta maszyny wirtualnej, z którego maszyny wirtualne mogą uzyskać aktualizacje. Zobacz przewodnik [wdrażania VDI](deployment-vdi-microsoft-defender-antivirus.md) , aby dowiedzieć się, jak można używać udziałów plików w środowiskach infrastruktury pulpitów wirtualnych (VDI).|
 |Microsoft Endpoint Manager|Używasz programu Microsoft Endpoint Manager do aktualizowania punktów końcowych.|
-|Aktualizacje analizy zabezpieczeń dla Program antywirusowy Microsoft Defender i innego złośliwego oprogramowania firmy Microsoft (wcześniej nazywanego MMPC)|[Upewnij się, że urządzenia zostały zaktualizowane, aby obsługiły sha-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Program antywirusowy Microsoft Defender aktualizacje analizy zabezpieczeń są dostarczane za pośrednictwem usługi Windows Update, a począwszy od poniedziałku 21 października 2019 r. aktualizacje analizy zabezpieczeń SHA-2 będą podpisane wyłącznie przez aktualizację SHA-2. <br/>Pobierz najnowsze aktualizacje ochrony z powodu ostatniej infekcji lub aby pomóc w zapewnianiu silnego, podstawowego obrazu wdrożenia [VDI](deployment-vdi-microsoft-defender-antivirus.md). Tej opcji na ogół należy używać tylko jako ostatecznego źródła zwrotnego, a nie jako źródła podstawowego. Będzie on używany tylko w przypadku, gdy nie można pobierać aktualizacji Windows usługi aktualizacji serwera lub usługi Microsoft Update przez określoną [liczbę dni](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
+|Aktualizacje analizy zabezpieczeń dla Program antywirusowy Microsoft Defender i innego złośliwego oprogramowania firmy Microsoft (wcześniej nazywanego MMPC)|[Upewnij się, że urządzenia zostały zaktualizowane, aby obsługiły sha-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Program antywirusowy Microsoft Defender aktualizacje analizy zabezpieczeń są dostarczane za pośrednictwem firmy Windows Update, a od poniedziałku 21 października 2019 r. aktualizacje analizy zabezpieczeń sha-2 będą podpisane wyłącznie przez sha-2. <br/>Pobierz najnowsze aktualizacje ochrony z powodu ostatniej infekcji lub aby pomóc w zapewnianiu silnego, podstawowego obrazu wdrożenia [VDI](deployment-vdi-microsoft-defender-antivirus.md). Tej opcji na ogół należy używać tylko jako ostatecznego źródła zwrotnego, a nie jako źródła podstawowego. Będzie on używany tylko w przypadku, gdy nie można pobierać aktualizacji Windows usługi aktualizacji serwera lub usługi Microsoft Update przez określoną [liczbę dni](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 Możesz zarządzać kolejnością, w jakiej źródła aktualizacji są używane z zasady grupy, Microsoft Endpoint Configuration Manager cmdlet programu PowerShell i WMI.
 
@@ -97,9 +97,9 @@ Procedury w tym artykule najpierw opisują sposób ustawienia kolejności, a nas
 
 ## <a name="use-group-policy-to-manage-the-update-location"></a>Zarządzanie lokalizacją zasady grupy za pomocą programu Zasady grupy
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
+1. Na zasady grupy zarządzania komputerami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
 
-2. W zasady grupy **zarządzania przejdź** do **konfiguracji komputera**.
+2. W zasady grupy **zarządzania przejdź** do **konfiguracja komputera**.
 
 3. Kliknij **pozycję Zasady** , **a następnie pozycję Szablony administracyjne**.
 
@@ -109,7 +109,7 @@ Procedury w tym artykule najpierw opisują sposób ustawienia kolejności, a nas
 
    2. Wprowadź kolejność źródeł oddzielonych pojedynczą rurą, na przykład: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, jak pokazano na poniższym zrzucie ekranu.
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="ustawienie zasad grupy z listą źródeł.":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="Ustawienie zasad grupy z listą źródeł" lightbox="../../media/wdav-order-update-sources.png":::
 
    3. Wybierz przycisk **OK**. Zostanie ustawiona kolejność źródeł aktualizacji ochrony.
 
@@ -122,7 +122,7 @@ Procedury w tym artykule najpierw opisują sposób ustawienia kolejności, a nas
 > [!NOTE]
 > W Windows 10, od wersji 1703 do 1809 włącznie ścieżka zasad to **Windows Składniki > Program antywirusowy Microsoft Defender > Aktualizacje** podpisu Dla systemu Windows 10 w wersji 1903 ścieżka zasad to Windows **Składniki > Program antywirusowy Microsoft Defender > aktualizacji analizy zabezpieczeń**
 
-## <a name="use-configuration-manager-to-manage-the-update-location"></a>Zarządzanie Menedżer konfiguracji za pomocą programu Windows
+## <a name="use-configuration-manager-to-manage-the-update-location"></a>Zarządzanie Configuration Manager za pomocą programu Windows
 
 Zobacz [Konfigurowanie aktualizacji analizy zabezpieczeń dla programu Endpoint Protection](/configmgr/protect/deploy-use/endpoint-definition-updates), aby uzyskać szczegółowe informacje na temat Microsoft Endpoint Manager (bieżąca gałąź).
 
@@ -155,7 +155,7 @@ Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
 - [Windows Defender interfejsów API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>Zarządzanie lokalizacją aktualizacji za pomocą usługi Zarządzanie urządzeniami przenośnymi
+## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>Zarządzanie lokalizacją aktualizacji Zarządzanie urządzeniami funkcji Zarządzanie urządzeniami przenośnymi (MDM)
 
 Aby [uzyskać szczegółowe informacje na temat konfigurowania usługi MDM, zobacz CSP zasad — Defender/SignatureUpdateFallbackOrder](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) .
 

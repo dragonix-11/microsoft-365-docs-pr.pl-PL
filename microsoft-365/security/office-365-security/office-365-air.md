@@ -1,6 +1,6 @@
 ---
-title: Automatyczne badanie i reagowanie w programie Microsoft Defender dla Office 365
-keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
+title: Zautomatyzowane badanie i reagowanie w Ochrona usługi Office 365 w usłudze Microsoft Defender
+keywords: AIR, autoIR, Ochrona punktu końcowego w usłudze Microsoft Defender, zautomatyzowany, badania, odpowiedzi, działania naprawcze, zagrożenia, zaawansowane, zagrożenia, ochrona
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -16,28 +16,28 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Wprowadzenie do korzystania z funkcji automatycznego badania i odpowiedzi w programie Microsoft Defender dla systemu Office 365.
+description: Wprowadzenie automatyczne badanie i reagowanie w programie Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 70a5eba3eb78878cc1f15bdd711a3331e9af870a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e9cd2388d3551ccc0c180d20a92ec0c513472797
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680891"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473678"
 ---
-# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Zautomatyzowane badania i odpowiedzi (AIR) w programie Microsoft Defender dla Office 365
+# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Zautomatyzowane badania i odpowiedzi (AIR) w programie Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Program Microsoft Defender dla Office 365](defender-for-office-365.md) oferuje zaawansowane funkcje automatycznego badania i odpowiedzi (AIR), które mogą zaoszczędzić czas i nakład pracy zespołowej związanej z zabezpieczeniami. W przypadku wyzwalania alertów to zespół operacyjny zabezpieczeń może je przeglądać, priorytetyzować i odpowiadać na nie. Śledzenie liczby alertów przychodzących może być przytłaczające. Automatyzowanie niektórych z tych zadań może być pomocne.
+[Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md) zaawansowane funkcje automatycznego badania i reakcji (AIR), które mogą zaoszczędzić czas i nakład pracy zespołowej związanej z zabezpieczeniami. W przypadku wyzwalania alertów to zespół operacyjny zabezpieczeń może je przeglądać, priorytetyzować i odpowiadać na nie. Śledzenie liczby alertów przychodzących może być przytłaczające. Automatyzowanie niektórych z tych zadań może być pomocne.
 
 Funkcja AIR umożliwia Twojemu zespołowi ds. bezpieczeństwa wydajniejsze i skuteczniejsze działanie. Funkcje AIR obejmują zautomatyzowane procesy badania w reakcji na znane obecnie zagrożenia. Odpowiednie działania naprawcze oczekują zatwierdzenia, umożliwiając Twoje zespołowi ds. bezpieczeństwa skuteczne reagowanie na wykryte zagrożenia. Dzięki air Twój zespół operacyjny ds. zabezpieczeń może skoncentrować się na zadaniach o wyższym priorytecie bez utraty wzroku ważnych alertów, które są wyzwalane.
 
@@ -62,7 +62,7 @@ Zostanie wyzwolony alert i podręcznik zabezpieczeń uruchomi automatyczne badan
 4. Zespół operacyjny ds. zabezpieczeń przegląda [wyniki badania i](air-view-investigation-results.md) zalecenia, [a następnie zatwierdza lub](air-review-approve-pending-completed-actions.md) odrzuca działania naprawcze.
 5. Ponieważ oczekujące działania naprawcze zostaną zatwierdzone (lub odrzucone), zautomatyzowane badanie zostaje zakończone.
 
-W programie Microsoft Defender Office 365 działania naprawcze nie są podejmowane automatycznie. Działania naprawcze są podejmowane tylko po zatwierdzeniu ich przez zespół zabezpieczeń Twojej organizacji. Funkcje AIR oszczędzają czas pracy zespołu związanego z zabezpieczeniami, identyfikując działania naprawcze i podając szczegółowe informacje potrzebne do podejmowania przejętej decyzji.
+W Ochrona usługi Office 365 w usłudze Microsoft Defender działania naprawcze nie są podejmowane automatycznie. Działania naprawcze są podejmowane tylko po zatwierdzeniu ich przez zespół zabezpieczeń Twojej organizacji. Funkcje AIR oszczędzają czas pracy zespołu związanego z zabezpieczeniami, identyfikując działania naprawcze i podając szczegółowe informacje potrzebne do podejmowania przejętej decyzji.
 
 W trakcie każdego zautomatyzowanego badania i po jego zakończeniu twój zespół operacyjny zabezpieczeń może:
 
@@ -75,7 +75,7 @@ W trakcie każdego zautomatyzowanego badania i po jego zakończeniu twój zespó
 
 ## <a name="how-to-get-air"></a>Jak uzyskać air
 
-Funkcje AIR są zawarte w [programie Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) pod warunkiem skonfigurowania zasad i alertów. Potrzebujesz pomocy? Postępuj zgodnie z [wskazówkami w tece](protect-against-threats.md) Ochrona przed zagrożeniami, aby skonfigurować następujące ustawienia ochrony:
+Funkcje AIR są zawarte w [programie Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) pod warunkiem skonfigurowania zasad i alertów. Potrzebujesz pomocy? Postępuj zgodnie z [wskazówkami w tece](protect-against-threats.md) Ochrona przed zagrożeniami, aby skonfigurować następujące ustawienia ochrony:
 
 - [Rejestrowanie inspekcji](../../compliance/turn-audit-log-search-on-or-off.md) (powinna być włączona)
 - [Ochrona przed złośliwym oprogramowaniem](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -91,7 +91,7 @@ Microsoft 365 zawiera wiele wbudowanych zasad alertów, które ułatwiają ident
 
 |Alert|Ważność|Sposób wygenerowania alertu|
 |---|---|---|
-|Wykryto potencjalnie złośliwe kliknięcie adresu URL|**High (Wysoki)**|Ten alert jest generowany, gdy wystąpi którakolwiek z następujących sytuacji: <ul><li>Użytkownik chroniony za pomocą [linków Sejf w](safe-links.md) organizacji klika złośliwy link</li><li>Zmiany w werdyktach adresów URL są identyfikowane przez usługę Microsoft Defender dla Office 365</li><li>Użytkownicy zastępują Sejf z łączami ostrzegawczymi (w zależności od zasad Sejf [linków sieciowych w organizacji](set-up-safe-links-policies.md)).</li></ul> <p> Aby uzyskać więcej informacji na temat zdarzeń, które powodują wyzwolenie tego alertu, zobacz [Konfigurowanie Sejf linków](set-up-safe-links-policies.md).|
+|Wykryto potencjalnie złośliwe kliknięcie adresu URL|**High (Wysoki)**|Ten alert jest generowany, gdy wystąpi którakolwiek z następujących sytuacji: <ul><li>Użytkownik chroniony za pomocą [linków Sejf w](safe-links.md) organizacji klika złośliwy link</li><li>Zmiany w werdyktach adresów URL są identyfikowane przez Ochrona usługi Office 365 w usłudze Microsoft Defender</li><li>Użytkownicy zastępują Sejf z łączami ostrzegawczymi (w zależności od zasad Sejf [linków sieciowych w organizacji](set-up-safe-links-policies.md)).</li></ul> <p> Aby uzyskać więcej informacji na temat zdarzeń, które powodują wyzwolenie tego alertu, zobacz [Konfigurowanie Sejf linków](set-up-safe-links-policies.md).|
 |Wiadomość e-mail jest zgłaszana przez użytkownika jako złośliwe oprogramowanie lub wyłudzy|**Informacyjne**|Ten alert jest generowany, gdy użytkownicy w organizacji zgłaszają wiadomości jako wiadomości wyłudzdzce informacje przy użyciu dodatku Report [Message](enable-the-report-message-add-in.md) (Wiadomość raportu) lub [dodatku Wyłudzanie informacji (Report Phishing).](enable-the-report-phish-add-in.md)|
 |Wiadomości e-mail zawierające złośliwe oprogramowanie są usuwane po dostarczeniu|**Informacyjne**|Ten alert jest generowany, gdy wszystkie wiadomości e-mail zawierające złośliwe oprogramowanie są dostarczane do skrzynek pocztowych w organizacji. Jeśli to zdarzenie wystąpi, firma Microsoft usunie zainfekowane wiadomości z Exchange Online pocztowych za pomocą automatycznego przeczyszczania [bez godzin (ZAP](zero-hour-auto-purge.md)).|
 |Wiadomości e-mail zawierające adresy URL wyłudów są usuwane po dostarczeniu|**Informacyjne**|Ten alert jest generowany, gdy wszystkie wiadomości zawierające frazę phish są dostarczane do skrzynek pocztowych w organizacji. W przypadku wystąpienia tego zdarzenia firma Microsoft usunie zainfekowane wiadomości z Exchange Online pocztowych [za pomocą zap](zero-hour-auto-purge.md).|
@@ -112,7 +112,7 @@ Uprawnienia są udzielane za pośrednictwem określonych ról, takich jak te opi
 
 ## <a name="required-licenses"></a>Wymagane licencje
 
-[Licencje usługi Microsoft Defender Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) powinny być przypisane do:
+[Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) powinny być przypisane do:
 
 - Administratorzy zabezpieczeń (w tym administratorzy globalni)
 - Zespół operacyjny Twojej organizacji ds. zabezpieczeń (w tym czytelnicy zabezpieczeń i osoby pełniące rolę **Wyszukiwania i przeczyszczania** )
@@ -120,11 +120,11 @@ Uprawnienia są udzielane za pośrednictwem określonych ról, takich jak te opi
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Zmiany w portalu Microsoft 365 Defender zostaną wkrótce wprowadzone
 
-Jeśli już korzystasz z funkcji AIR w programie Microsoft Defender dla programu Office 365, chcesz zobaczyć pewne zmiany w ulepszonym portalu Microsoft 365 Defender [sieci.](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
+Jeśli korzystasz już z funkcji AIR w programie Ochrona usługi Office 365 w usłudze Microsoft Defender, za jakiś czas zobaczysz pewne zmiany w ulepszonym portalu Microsoft 365 Defender [air](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Ujednolicone Centrum akcji.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Ujednolicone Centrum akcji" lightbox="../../media/m3d-action-center-unified.png":::
 
-Nowy i ulepszony portal Microsoft 365 Defender <https://security.microsoft.com> łączy funkcje AIR w programie [Microsoft Defender for Office 365](defender-for-office-365.md) oraz [w programie Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md). Dzięki tym aktualizacjom i ulepszeniom Twój zespół operacyjny ds. zabezpieczeń będzie mógł wyświetlać szczegółowe informacje o zautomatyzowanych badaniach i działaniach naprawczych w ramach poczty e-mail, zawartości współpracy, kont użytkowników i urządzeń w jednym miejscu.
+Nowy i ulepszony Microsoft 365 Defender łączy <https://security.microsoft.com> funkcje AIR w programach [Ochrona usługi Office 365 w usłudze Microsoft Defender i in](defender-for-office-365.md) [ Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/automated-investigations.md). Dzięki tym aktualizacjom i ulepszeniom Twój zespół operacyjny ds. zabezpieczeń będzie mógł wyświetlać szczegółowe informacje o zautomatyzowanych badaniach i działaniach naprawczych w ramach poczty e-mail, zawartości współpracy, kont użytkowników i urządzeń w jednym miejscu.
 
 > [!TIP]
 > Nowy portal Microsoft 365 Defender zastępuje następujące centra administracyjne:
@@ -136,11 +136,11 @@ Nowy i ulepszony portal Microsoft 365 Defender <https://security.microsoft.com> 
 
 ### <a name="what-to-expect"></a>Czego można się spodziewać
 
-W poniższej tabeli wymieniono zmiany i ulepszenia wprowadzone w programie AIR w programie Microsoft Defender dla Office 365.
+W poniższej tabeli wymieniono zmiany i ulepszenia wprowadzone w programie AIR w programie Ochrona usługi Office 365 w usłudze Microsoft Defender.
 
 |Element|Co się zmienia?|
 |---|---|
-|**Strona Badania**|Zaktualizowana **strona Badania** jest spójna z tym, co widzisz w programie [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Zobaczysz kilka ogólnych zmian formatowania i stylu, które są zgodne z nowym, **ujednoliconym widokiem Badania** . Na przykład wykres badania ma bardziej ujednolicony format.|
+|**Strona Badania**|Zaktualizowana **strona Badania** jest spójna z tym, co widzisz w [Ochrona punktu końcowego w usłudze Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Zobaczysz kilka ogólnych zmian formatowania i stylu, które są zgodne z nowym, **ujednoliconym widokiem Badania** . Na przykład wykres badania ma bardziej ujednolicony format.|
 |**Karta** Użytkownicy|Karta **Użytkownicy** jest teraz **kartą Skrzynki** pocztowe. Szczegółowe informacje o użytkownikach znajdują się na karcie **Skrzynka** pocztowa.|
 |**Karta Poczta e-mail**|**Usunięto** kartę Poczta e-mail. Odwiedź **kartę Jednostki**, aby wyświetlić listę elementów grup poczty e-mail i poczty e-mail.|
 |**Karta Jednostki**|Karta **Jednostki** ma styl karty na karcie, który zawiera widok podsumowania oraz możliwość filtrowania według typu encji. Na **karcie Jednostki** **oprócz opcji Otwórz** w Eksploratorze jest teraz dostępna opcja Idź do **wyszukiwania** . Teraz możesz używać [Eksploratora lub](threat-explorer.md) [zaawansowanego](../defender-endpoint/advanced-hunting-overview.md) wyszukiwania, aby znaleźć jednostki i zagrożenia, oraz filtrować według wyników.|

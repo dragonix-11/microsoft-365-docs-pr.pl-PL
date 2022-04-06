@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dowiedz się Sejf ochrony linków w uchcie Defender Office 365 ochrony organizacji przed wyłudzaniem informacji i innymi atakami, w których są złośliwe adresy URL. Odkryj Teams Sejf linków i zobacz grafiki wiadomości Sejf linków.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 736efeb805e45170ec6471b57fc35005d0a12311
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8bd4773d3f712adf13ac2a006f5d8450c58fc89a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320329"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682091"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Sejf linków w programie Microsoft Defender dla Office 365
 
@@ -84,10 +84,6 @@ Ten artykuł zawiera szczegółowe opisy następujących typów ustawień linkó
 
 W poniższej tabeli opisano scenariusze dla linków usługi Sejf w organizacjach Microsoft 365 i Office 365, które zawierają usługę Defender for Office 365 (w przykładach należy pamiętać, że brak licencjonowania nigdy nie stanowi problemu).
 
-<br>
-
-****
-
 |Scenariusz|Result (Wynik)|
 |---|---|
 |Marcin jest członkiem działu marketingu. Sejf Ochrona linków dla aplikacji Office 365 jest włączona w ustawieniach globalnych usługi Sejf Links i istnieją zasady linków programu Sejf dotyczące członków działu marketingu. Marcin otwiera prezentację PowerPoint wiadomości e-mail, a następnie klika adres URL w prezentacji.|Marcin jest chroniony za pomocą Sejf linków. <p> Marcin jest uwzględniony w zasadach Sejf Linki sieci Web, a ochrona linków Sejf dla Office 365 jest włączona. <p> Aby uzyskać więcej informacji na temat wymagań dotyczących ochrony linków Sejf w aplikacjach pakietu Office 365, zobacz sekcję Ustawienia linków Sejf dla aplikacji Office 365 [w](#safe-links-settings-for-office-365-apps) dalszej części tego artykułu.|
@@ -95,7 +91,6 @@ W poniższej tabeli opisano scenariusze dla linków usługi Sejf w organizacjach
 |W organizacji Pata żaden administrator nie utworzył żadnych zasad Sejf Linków, ale ochrona linków Sejf dla aplikacji Office 365 jest włączona. Pat otwiera dokument programu Word i klika adres URL w pliku.|Pat nie jest chroniony przez Sejf linków. <p> Ochrona linków Sejf dla aplikacji Office 365 jest włączana globalnie, ale Pat nie jest uwzględniana w żadnych aktywnych zasadach linków do usługi Sejf, więc ochrony nie można stosować.|
 |W organizacji Lee skonfigurowano `https://tailspintoys.com` na liście Blokuj następujące adresy **URL** w ustawieniach globalnych usługi Sejf url. Zasady Sejf linków, które zawierają Lee już istnieją. Lee otrzymuje wiadomość e-mail zawierającą adres URL `https://tailspintoys.com/aboutus/trythispage`. Lee klika adres URL.|Adres URL może być automatycznie zablokowany dla Lee. zależy to od wpisu adresu URL na liście i od używanego klienta poczty e-mail Lee. Aby uzyskać więcej informacji, zobacz [sekcję "](#block-the-following-urls-list-for-safe-links)Blokowanie następujących adresów URL" w sekcji Sejf linków w dalszej części tego artykułu.|
 |Ewa i Ewa pracują dla contoso.com. Już dawno temu administratorzy skonfigurowali zasady Sejf linków, które dotyczą zarówno Anny, jak i Anny. Ewa wysyła wiadomość e-mail do Anny, nie wiedząc, że wiadomość zawiera złośliwy adres URL.|Anny jest chroniona przez link **Sejf, jeśli** stosowana do niej Sejf Linków wiadomości została skonfigurowana do stosowania do wiadomości między adresatami wewnętrznymi. Aby uzyskać więcej informacji, zobacz Sejf [ustawień linków](#safe-links-settings-for-email-messages) do wiadomości e-mail w dalszej części tego artykułu.|
-|
 
 ## <a name="safe-links-settings-for-email-messages"></a>Sejf linków dla wiadomości e-mail
 
@@ -281,17 +276,12 @@ Listę adresów URL można skonfigurować w ustawieniach globalnych programu Sej
 
 Przykłady wartości, które można wprowadzić, oraz ich wyników są opisane w poniższej tabeli:
 
-<br>
-
-****
-
 |Value|Result (Wynik)|
 |---|---|
 |`contoso.com` <p> lub <p> `*contoso.com*`|Blokuje domeny, poddomeny i ścieżki. Na przykład `https://www.contoso.com`, `https://sub.contoso.com`i są `https://contoso.com/abc` blokowane.|
 |`https://contoso.com/a`|Bloki `https://contoso.com/a` , ale nie dodatkowe podpathie, takie jak `https://contoso.com/a/b`.|
 |`https://contoso.com/a*`|Bloki `https://contoso.com/a` i dodatkowe podpathie, takie jak `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Blokuje poddomenę (w`toys` tym przykładzie), ale zezwalaj na klikanie innych adresów URL domeny (takich jak lub `https://contoso.com` `https://home.contoso.com`).|
-|
 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>W zasadach nie należy ponownie pisać następujących adresów URL w Sejf Url
 
@@ -323,17 +313,12 @@ Aby dodać wpisy do listy w nowych lub istniejących zasadach Sejf linków sieci
 
 Przykłady wartości, które można wprowadzić, oraz ich wyników są opisane w poniższej tabeli:
 
-<br>
-
-****
-
 |Value|Result (Wynik)|
 |---|---|
 |`contoso.com`|Umożliwia dostęp do poddomen `https://contoso.com` i ścieżek, ale nie do poddomen.|
 |`*.contoso.com/*`|Umożliwia dostęp do domeny, poddomen i ścieżek ( `https://www.contoso.com`na przykład , `https://www.contoso.com`, `https://maps.contoso.com`lub `https://www.contoso.com/a`). <p> Wpis ten z natury jest lepszy niż `*contoso.com*`, ponieważ nie pozwala na potencjalnie fałszywe witryny, takie jak `https://www.falsecontoso.com``https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Umożliwia dostęp do `https://contoso.com/a`, ale nie podpaths, takich jak `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Umożliwia dostęp do `https://contoso.com/a` takich podpath i ich podpaths, jak `https://contoso.com/a/b`|
-|
 
 ## <a name="warning-pages-from-safe-links"></a>Strony ostrzegawcze z Sejf linków
 

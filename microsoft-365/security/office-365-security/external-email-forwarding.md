@@ -16,12 +16,12 @@ ms.custom:
 description: W tym artykule omówiono tematy, takie jak zewnętrzne przesyłanie dalej poczty e-mail, Automatyczne przesyłanie dalej, wiadomości odmówiono dostępu 5.7.520, wyłączanie zewnętrznego przesyłania dalej, "Administrator wyłączył przesyłanie dalej zewnętrzne" oraz wychodzące zasady ochrony przed spamem.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14b41f21efe3608096636444afd4b36de3742a85
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8df0ff9902fe22fd44a0d15f7f01e13e791c7b12
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681419"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473612"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Sterowanie automatycznym zewnętrznym przesyłaniem dalej wiadomości e-mail w Microsoft 365
 
@@ -29,7 +29,7 @@ ms.locfileid: "63681419"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Jako administrator możesz podlegać wymogom firmy w zakresie ograniczania lub sterowania automatycznie przesyłaną dalej wiadomością do adresatów zewnętrznych (adresatów spoza organizacji). Przesyłanie dalej wiadomości e-mail może być przydatne, ale może także stanowić zagrożenie bezpieczeństwa ze względu na możliwość ujawnienia informacji. Atakujący mogą używać tych informacji do ataków na Twoją organizację lub partnerów.
@@ -84,14 +84,15 @@ Poniższe informacje są wymagane do utworzenia reguły przepływu poczty e-mail
   - **Nazwa nagłówka**: `X-MS-Exchange-Inbox-Rules-Loop`
   - **Wartość nagłówka**: `.`
 
-  Warunek wygląda następująco: **Nagłówek "X-MS-Exchange-Skrzynka odbiorcza-pętla-reguły"** odpowiada **"".**
+  Warunek wygląda następująco: **"X-MS-Exchange-Skrzynka odbiorcza-Reguły-Loop'** odpowiada **"".**
 
   Ten warunek będzie odpowiadać dowolnej wartości nagłówka.
 
 - (Opcjonalnie) **Wykonaj następujące (** działanie): Możesz skonfigurować akcję opcjonalną. Na przykład można użyć  \> akcji Modyfikuj właściwości wiadomości, aby ustawić nagłówek **wiadomości z nazwą** nagłówka **X-Forwarded** i wartością **Prawda**. Jednak skonfigurowanie akcji nie jest wymagane.
 - Ustaw **inspekcję tego dziennika z poziomem ważności** do wartości **Niski**, **Średni** lub **Wysoki**. To ustawienie umożliwia uzyskiwanie szczegółowych informacji o [użytkownikach](view-email-security-reports.md#exchange-transport-rule-report) przesyłanych dalej Exchange raportu reguł transportu.
 
-![Właściwości reguły przepływu poczty e-mail dla reguły identyfikowania wiadomości przesyłanych dalej.](../../media/mail-flow-rule-for-forwarded-messages.png)
+:::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="Właściwości reguły przepływu poczty e-mail dla reguły identyfikowania wiadomości przesyłanych dalej" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
+
 
 ## <a name="blocked-email-forwarding-messages"></a>Zablokowano przesyłanie dalej wiadomości e-mail
 

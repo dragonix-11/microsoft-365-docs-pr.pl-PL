@@ -13,12 +13,12 @@ ms.collection:
 description: Dowiedz się, jak raportować wyniki fałszywie dodatnie i ujemne Outlook funkcji Komunikat raportu.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5539525b6d752223c4895fc62ff49a90768a5b5
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: f2181df44f8d193f8c19c508451733773bd20708
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "62996813"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473509"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Zgłaszanie wyników fałszywie dodatnich i ujemnych w Outlook
 
@@ -26,7 +26,7 @@ ms.locfileid: "62996813"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
@@ -69,9 +69,9 @@ W przypadku wiadomości w skrzynce odbiorczej lub dowolnym innym folderze poczty
 
 1. Wybierz **wielokropek** Więcej akcji w prawym górnym rogu zaznaczonej wiadomości, wybierz pozycję Zgłoś wiadomość z  menu rozwijanego, a następnie **wybierz pozycję** Wiadomości-śmieci lub Wyłudzanie **informacji**.
 
-   ![Komunikat raportu — więcej akcji.](../../media/report-message-more-actions.png)
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="Ikona Więcej akcji" lightbox="../../media/report-message-more-actions.png":::
 
-   ![Wiadomość raportu — wiadomości-śmieci i wyłudzanie informacji.](../../media/report-message-junk-phishing.png)
+   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="Opcja Wiadomości-śmieci i wyłudzanie informacji w okienku Wiadomość raportu" lightbox="../../media/report-message-junk-phishing.png":::
 
 2. Wybrane wiadomości zostaną wysłane do firmy Microsoft w celu analizy oraz:
    - Przeniesiono do folderu Wiadomości-śmieci, jeśli zostały zgłoszone jako spam.
@@ -81,9 +81,9 @@ W przypadku wiadomości w skrzynce odbiorczej lub dowolnym innym folderze poczty
 
 1. Wybierz **wielokropek** Więcej akcji w prawym górnym rogu zaznaczonej wiadomości, wybierz polecenie Zgłoś wiadomość z  menu rozwijanego, a następnie wybierz pozycję **Wiadomość niebędąka śmieciem**.
 
-   ![Komunikat raportu — więcej akcji.](../../media/report-message-more-actions.png)
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="Ikona udostępniaca więcej akcji" lightbox="../../media/report-message-more-actions.png":::
 
-   ![Wiadomość raportu — nie wiadomość-śmieć.](../../media/report-message-not-junk.png)
+   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="Opcja Wiadomość niebędące śmieciem w okienku Wiadomość raportu" lightbox="../../media/report-message-not-junk.png":::
 
 2. Wybrana wiadomość zostanie wysłana do firmy Microsoft w celu analizy i przeniesiona do skrzynki odbiorczej lub dowolnego innego określonego folderu.
 

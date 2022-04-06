@@ -15,12 +15,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak za pomocą raportu Szczegóły niedo dostarczenia na pulpicie nawigacyjnym przepływu poczty w Centrum zgodności usługi & Security & monitorować najczęściej napotkane kody błędów w raportach o niedo dostarczeniu (nazywanych również raportami o niedo dostarczenia lub wiadomościach zwracanych) od nadawców w organizacji.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73d48b831f42deca83b6b1b62fde09cd6c44562e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bc408f6bb28b11e77c49755b888c44e0ea4d9f57
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679637"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473744"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Raport o niedo dostarczenia w Centrum & zgodności z zabezpieczeniami
 
@@ -28,12 +28,12 @@ ms.locfileid: "63679637"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Raport o **niedo** dostarczenia na pulpicie [](mail-flow-insights-v2.md) nawigacyjnym przepływu poczty w Centrum zgodności usługi [&](https://protection.office.com) zabezpieczeń zawiera informacje o najczęściej występujących kodach błędów w raportach o niedo dostarczenia (nazywanych również raportami o niedo dostarczenia lub wiadomościach zwracanych) dla użytkowników w organizacji. Ten raport zawiera szczegółowe informacje o raportach o stanie dostarczenia, co umożliwia rozwiązywanie problemów z dostarczaniem wiadomości e-mail.
 
-![Widżet raportu o niedo dostarczenia na pulpicie nawigacyjnym przepływu poczty w Centrum & zgodności.](../../media/mfi-non-delivery-report-widget.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-widget.png" alt-text="Widżet raportu o niedo dostarczenia na pulpicie nawigacyjnym przepływu poczty w Centrum & zabezpieczeń" lightbox="../../media/mfi-non-delivery-report-widget.png":::
 
 ## <a name="report-view-for-the-non-delivery-report"></a>Widok raportu o niedo dostarczenia
 
@@ -43,7 +43,7 @@ Domyślnie jest wyświetlane działanie dla wszystkich kodów błędów. Jeśli 
 
 Jeśli najedziesz kursorem na określony kolor (kod błędu) określonego dnia na wykresie, zobaczysz łączną liczbę komunikatów o błędzie.
 
-![Widok raportu w raporcie o niedotrzymanych domenach.](../../media/mfi-non-delivery-report-overview-view.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-overview-view.png" alt-text="Widok raportu w raporcie o niedotrzymanych domenach" lightbox="../../media/mfi-non-delivery-report-overview-view.png":::
 
 ## <a name="details-table-view-for-the-non-delivery-report"></a>Widok tabeli Szczegóły dla raportu o niedo dostarczenia
 
@@ -65,7 +65,8 @@ Po zaznaczeniu wiersza w tabeli zostanie wyświetlone wysuwne okno z następują
 - **Liczba**
 - **Przykładowe wiadomości**: Możesz kliknąć pozycję **Wyświetl przykładowe wiadomości**, [](message-trace-scc.md) aby wyświetlić wyniki śledzenia wiadomości dla przykładowych wiadomości, których dotyczy problem.
 
-![Wysuw szczegółów po wybraniu wiersza w widoku tabeli Szczegóły w raporcie O niedo dostarczenia.](../../media/mfi-non-delivery-report-details-flyout.png)
+
+:::image type="content" source="../../media/mfi-non-delivery-report-details-flyout.png" alt-text="Wysuwana informacja Szczegóły po wybraniu wiersza w widoku tabeli Szczegóły w raporcie o niedo dostarczenia" lightbox="../../media/mfi-non-delivery-report-details-flyout.png":::
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
