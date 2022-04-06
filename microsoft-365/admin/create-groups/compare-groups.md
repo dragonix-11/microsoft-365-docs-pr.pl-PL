@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 grupy otrzymają grupową pocztę e-mail i udostępniony obszar roboczy na konwersacje, pliki i zdarzenia kalendarza, usługę Stream i usługę Planner.
-ms.openlocfilehash: cc70fdf534b7240fd914c42f01b2c89843d1372f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 72da8af8acd0725a5d7509b84f08e4220f7772d4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019251"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594714"
 ---
 # <a name="compare-groups"></a>Porównanie grup
 
-W <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**sekcji Grupy**</a> na centrum administracyjne platformy Microsoft 365 możesz tworzyć grupy tego typu i zarządzać nimi: 
+W <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**sekcji Grupy**</a> na Centrum administracyjne platformy Microsoft 365 możesz tworzyć grupy tego typu i zarządzać nimi: 
 
-- **Microsoft 365 grupy są** używane do współpracy między użytkownikami, zarówno z firmy, jak i spoza firmy. Obejmują one usługi współpracy, takie jak SharePoint i Planner.
+- **Grupy Microsoft 365** są używane do współpracy między użytkownikami, zarówno z firmy, jak i spoza firmy. Obejmują one usługi współpracy, takie jak SharePoint i Planner.
 - **Grupy dystrybucyjne** służą do wysyłania powiadomień e-mail do grupy osób.
 - **Grupy zabezpieczeń** służą do udzielania dostępu do zasobów, takich jak witryny SharePoint sieci Web.
 - **Grupy zabezpieczeń z obsługą poczty służą** do udzielania dostępu do zasobów, takich jak SharePoint, i powiadomień e-mail do tych użytkowników.
@@ -44,26 +44,28 @@ W <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**
 
 Niektóre grupy zezwalają na dynamiczne członkostwo lub pocztę e-mail.
 
-||Microsoft 365 grupy|Grupy dystrybucyjne|Grupy zabezpieczeń|Grupy zabezpieczeń z obsługą poczty|Udostępnione skrzynki pocztowe|Dynamiczne grupy dystrybucyjne|
+||Grupy Microsoft 365|Grupy dystrybucyjne|Grupy zabezpieczeń|Grupy zabezpieczeń z obsługą poczty|Udostępnione skrzynki pocztowe|Dynamiczne grupy dystrybucyjne|
 |:----|:----|:----|:----|:----|:----|:----|
 |**Z obsługą poczty**|Tak|Tak|Nie|Tak|Tak|Tak|
 |**Dynamiczne członkostwo w usłudze Azure AD**|Tak|Nie|Tak|Nie|Nie|Nie|
 
 Wszystkich tych typów grup można używać razem z Power Automate.
 
-## <a name="microsoft-365-groups"></a>Microsoft 365 grupy
+## <a name="microsoft-365-groups"></a>Grupy Microsoft 365
 
-Microsoft 365 grupy są używane do współpracy między użytkownikami, zarówno z firmy, jak i spoza firmy. Wraz z Microsoft 365 grupy członkowie otrzymają grupową pocztę e-mail i udostępniony obszar roboczy na konwersacje, pliki i zdarzenia kalendarza, usługę Stream i usługę Planner.
+Grupy Microsoft 365 są używane do współpracy między użytkownikami, zarówno z firmy, jak i spoza firmy. Wraz z Microsoft 365 grupy członkowie otrzymają grupową pocztę e-mail i udostępniony obszar roboczy na konwersacje, pliki i zdarzenia kalendarza, usługę Stream i usługę Planner.
 
 Do grupy można dodawać osoby spoza organizacji, o ile administrator włączył tę [funkcję](manage-guest-access-in-groups.md). Można także zezwolić nadawcom zewnętrznym na wysyłanie wiadomości e-mail na adres e-mail grupy.
 
-Microsoft 365 grupy można skonfigurować pod celu dynamicznego członkostwa w programie [Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), co pozwala na automatyczne dodawać i usuwać członków grupy na podstawie atrybutów użytkowników, takich jak dział, lokalizacja, stanowisko itp.
+Grupy Microsoft 365 skonfigurować dynamiczne członkostwo w programie [Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), co pozwala na automatyczne dodawać lub usuwać członków grupy na podstawie atrybutów użytkowników, takich jak dział, lokalizacja, stanowisko itp.
 
-Microsoft 365 można uzyskiwać dostęp do grup za pośrednictwem aplikacji mobilnych, takich Outlook dla systemu iOS i Outlook dla systemu Android.
+Grupy Microsoft 365 można uzyskać do nich dostęp za pośrednictwem aplikacji mobilnych, takich Outlook dla systemu iOS i Outlook dla systemu Android.
 
 Członkowie grupy mogą wysyłać wiadomości e-mail w imieniu grupy, jeśli [ta funkcja została włączona przez administratora](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
-Microsoft 365 grup nie obsługują zagnieżdżania w innych grupach Microsoft 365 ani w grupach dystrybucyjnych lub grup zabezpieczeń.
+Grupy Microsoft 365 zagnieżdżania w innych grupach Grupy Microsoft 365 ani w grupach dystrybucyjnych ani zabezpieczeń.
+
+Grupy Microsoft 365 można dodać do jednej z trzech grup usługi SharePoint (Właściciele, Członkowie lub Odwiedzający), aby nadać uprawnienia do witryny.
 
 ## <a name="distribution-groups"></a>Grupy dystrybucyjne
 
@@ -71,11 +73,11 @@ Microsoft 365 grup nie obsługują zagnieżdżania w innych grupach Microsoft 36
 
 Grupy dystrybucyjne najlepiej sprawdzają się w sytuacjach, w których trzeba rozpowszechnić informacje wśród określonej grupy osób, na przykład „Osoby w budynku A” lub „Wszyscy w firmie Contoso”.
 
-Grupy dystrybucyjne można [uaktualnić do Microsoft 365 grup](../manage/upgrade-distribution-lists.md).
+Grupy dystrybucyjne można [uaktualnić do Grupy Microsoft 365](../manage/upgrade-distribution-lists.md).
 
 Grupy dystrybucyjne można dodawać do zespołu w programie Microsoft Teams, ale do grupy są dodawana tylko ich członkowie, a nie sama grupa.
 
-Microsoft 365 grupy nie mogą być członkami grup dystrybucyjnych.
+Grupy Microsoft 365 nie mogą być członkami grup dystrybucyjnych.
 
 ## <a name="dynamic-distribution-groups"></a>Dynamiczne grupy dystrybucyjne 
 
@@ -93,7 +95,7 @@ Grupy zabezpieczeń można [skonfigurować na potrzeby członkostwa dynamicznego
 
 Grupy zabezpieczeń można dodawać do zespołu.
 
-Microsoft 365 grupy nie mogą być członkami grup zabezpieczeń.
+Grupy Microsoft 365 nie mogą być członkami grup zabezpieczeń.
 
 ## <a name="mail-enabled-security-groups"></a>Grupy zabezpieczeń z obsługą poczty
 
@@ -117,8 +119,8 @@ Nie jest możliwe migrowanie udostępnionej skrzynki pocztowej do Microsoft 365 
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Informacje o Microsoft 365 grupy](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Dowiedz się więcej o Grupy Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Uaktualnianie list dystrybucyjnych do Microsoft 365 grup w Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
+[Uaktualnianie list dystrybucyjnych do Grupy Microsoft 365 w Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
 
 [Dlaczego należy uaktualnić listy dystrybucyjne do grup w programie Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

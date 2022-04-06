@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Tworzenie zasad przechowywania z automatycznymi etykietami, aby można było automatycznie stosować etykiety w celu zachowania tego, co jest potrzebne, i usunięcia tego, co nie jest potrzebne
-ms.openlocfilehash: d1060bb4330c2dbb23c241cb3095f3b30869b58a
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 2d141ef349c456b9e8397ea1c96a4e450eaa73fc
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013852"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500443"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości
 
@@ -127,7 +127,7 @@ Exchange:
 |Typy informacji poufnych — wbudowane| Tak | Nie |
 |Typy informacji poufnych — niestandardowe| Tak | Nie |
 |Określone słowa kluczowe lub właściwości, które można wyszukiwać| Tak |Tak |
-|Klasyfikatorzy przeszkoli| Tak | Tak (tylko ostatnie sześć miesięcy) |
+|Klasyfikatory z możliwością szkolenia| Tak | Tak (tylko ostatnie sześć miesięcy) |
 
 SharePoint i OneDrive:
 
@@ -136,7 +136,7 @@ SharePoint i OneDrive:
 |Typy informacji poufnych — wbudowane| Tak | Tak |
 |Typy informacji poufnych — niestandardowe| Tak | Nie |
 |Określone słowa kluczowe lub właściwości, które można wyszukiwać| Tak |Tak |
-|Klasyfikatorzy przeszkoli| Tak | Tak (tylko ostatnie sześć miesięcy) |
+|Klasyfikatory z możliwością szkolenia| Tak | Tak (tylko ostatnie sześć miesięcy) |
 
 Ponadto w tym SharePoint nie są obsługiwane elementy, które są w wersji roboczej lub które nigdy nie zostały opublikowane.
 
@@ -145,13 +145,13 @@ Ponadto w tym SharePoint nie są obsługiwane elementy, które są w wersji robo
 > [!IMPORTANT]
 > W przypadku wiadomości e-mail, które są automatycznie stosowane przez identyfikację informacji poufnych, są automatycznie uwzględniane wszystkie skrzynki pocztowe, w tym skrzynki pocztowe z Microsoft 365 grup.
 > 
-> Mimo że skrzynki pocztowe grup zazwyczaj były uwzględniane przez wybranie lokalizacji grup usługi **Microsoft 365, w** przypadku tej konkretnej konfiguracji zasad lokalizacja grup obejmuje tylko witryny SharePoint połączone z Microsoft 365 grupy.
+> Mimo że skrzynki pocztowe grupy zazwyczaj były uwzględniane przez wybranie lokalizacji grupy **Grupy Microsoft 365, Grupy Microsoft 365** w przypadku tej konkretnej konfiguracji zasad lokalizacja grup obejmuje tylko witryny SharePoint połączone z grupą Microsoft 365 grupy.
 
 Po utworzeniu zasad automatycznego stosowania etykiet przechowywania dla informacji poufnych jest wyświetlona ta sama lista szablonów zasad co w przypadku tworzenia zasad ochrony przed utratą danych (DLP). Każdy szablon jest wstępnie skonfigurowany do wyszukiwania konkretnych typów informacji poufnych. W poniższym przykładzie typy informacji poufnych znajdują się w  kategorii Prywatność oraz w szablonie danych umożliwiających identyfikację użytkownika **(PII**):
 
 ![Szablony zasad z typami informacji poufnych.](../media/sensitive-info-configuration.png)
 
-Aby dowiedzieć się więcej o typach informacji poufnych, zobacz [Informacje o typach informacji poufnych](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Obecnie w [tym scenariuszu nie są](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) obsługiwane dodatkowe typy informacji [](document-fingerprinting.md) poufnych oparte na dokładnym dopasowaniu danych i linie papilarne dokumentów.
+Aby dowiedzieć się więcej o typach informacji poufnych, zobacz [Informacje o typach informacji poufnych](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Obecnie w [tym scenariuszu nie są](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) obsługiwane dokładne typy informacji poufnych i linie papilarne dokumentów.[](document-fingerprinting.md)
 
 Po wybraniu szablonu zasad można dodawać lub usuwać wszelkie typy informacji poufnych, a także zmieniać poziom ufności i liczbę wystąpień. W poprzednim przykładowym zrzucie ekranu te opcje zostały zmienione, dzięki czemu etykieta przechowywania będzie stosowana automatycznie tylko wtedy, gdy:
   
@@ -176,17 +176,17 @@ Etykiety można automatycznie stosować do zawartości za pomocą zapytania zawi
 
 ![Edytor zapytań.](../media/new-retention-query-editor.png)
 
-Aby uzyskać więcej informacji na temat składni zapytania w języku Keyword Query Language (KQL), zobacz Informacje dotyczące składni w języku [KQL (Keyword Query Language](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)).
+Aby uzyskać więcej informacji na temat składni zapytania w języku słowa kluczowego (KQL), zobacz Informacje o składni języka KQL [słów kluczowych](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 Zasady oparte na zapytaniach stosowane automatycznie używają tego samego indeksu wyszukiwania, co wyszukiwanie zawartości zbierania elektronicznych materiałów dowodowych w celu identyfikowania zawartości. Aby uzyskać więcej informacji na temat właściwości, których można użyć, zobacz Zapytania słów kluczowych i [warunki wyszukiwania dotyczące wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
 
 W przypadku używania słów kluczowych lub właściwości uwzględnianych w wyszukiwaniu w celu automatycznego stosowania etykiet przechowywania należy uwzględnić kilka elementów:
 
-- Na SharePoint KQL nie są obsługiwane właściwości przeszukane i właściwości niestandardowe, a dla dokumentów należy używać tylko wstępnie zdefiniowanych właściwości zarządzanych. Za pomocą mapowań na poziomie dzierżawy można jednak używać wstępnie zdefiniowanych właściwości zarządzanych, które są domyślnie włączone jako obiekty uściślające (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09 i RefinableDouble00-09). Aby uzyskać więcej informacji, zobacz [Omówienie właściwości przeszukanych](/SharePoint/technical-reference/crawled-and-managed-properties-overview) i zarządzanych w programie SharePoint Server, a aby uzyskać instrukcje, zobacz Tworzenie [nowej właściwości zarządzanej](/sharepoint/manage-search-schema#create-a-new-managed-property).
+- Na SharePoint właściwości przeszukane i właściwości niestandardowe nie są obsługiwane w tych zapytaniach KQL i dla dokumentów należy używać tylko wstępnie zdefiniowanych właściwości zarządzanych. Za pomocą mapowań na poziomie dzierżawy można jednak używać wstępnie zdefiniowanych właściwości zarządzanych, które są domyślnie włączone jako obiekty uściślające (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09 i RefinableDouble00-09). Aby uzyskać więcej informacji, zobacz [Omówienie właściwości przeszukanych](/SharePoint/technical-reference/crawled-and-managed-properties-overview) i zarządzanych w programie SharePoint Server, a aby uzyskać instrukcje, zobacz Tworzenie [nowej właściwości zarządzanej](/sharepoint/manage-search-schema#create-a-new-managed-property).
 
-- Jeśli zamapujesz właściwość niestandardową na jedną z właściwości uściślających, odczekaj 24 godziny przed użyciem jej w zapytaniu KQL w celu użycia etykiety przechowywania.
+- Jeśli zamapujesz właściwość niestandardową na jedną z właściwości uściślijących, odczekaj 24 godziny przed użyciem jej w zapytaniu KQL do przechowywania etykiety przechowywania.
 
-- Mimo SharePoint można zmienić nazwę właściwości zarządzanych przy użyciu aliasów, nie należy ich używać na etykietach dla zapytań KQL. Zawsze określ rzeczywistą nazwę właściwości zarządzanej, na przykład "RefinableString01".
+- Mimo SharePoint nazw właściwości zarządzanych za pomocą aliasów nie należy ich używać KQL etykietach. Zawsze określ rzeczywistą nazwę właściwości zarządzanej, na przykład "RefinableString01".
 
 - Aby wyszukać wartości zawierające spacje lub znaki specjalne, należy użyć znaków podwójnego cudzysłowu (`" "`) w celu wyszukania frazy, `subject:"Financial Statements"`na przykład .
 
@@ -313,7 +313,7 @@ Po wybraniu etykiety do użycia w celu automatycznego stosowania etykiet przecho
 Podczas konfigurowania lokalizacji dla tej opcji możesz wybrać:
 
 - **SharePoint** udostępnionych plików przechowywanych w witrynach SharePoint do komunikacji, witryn zespołowych, które nie są połączone przez Microsoft 365 grupy i witryny klasyczne. 
-- **Microsoft 365 grupy dla** plików udostępnionych, które są przechowywane w witrynach zespołowych połączonych Microsoft 365 grupy.
+- **Grupy Microsoft 365** udostępnionych plików, które są przechowywane w witrynach zespołowych połączonych Microsoft 365 grupy.
 - **OneDrive dla plików** udostępnionych przechowywanych w folderze OneDrive.
 
 Aby zachować lub usunąć oryginalne pliki, wiadomości e-mail lub wiadomości e-mail oraz wiadomości Teams e-mail, należy utworzyć osobne zasady przechowywania.

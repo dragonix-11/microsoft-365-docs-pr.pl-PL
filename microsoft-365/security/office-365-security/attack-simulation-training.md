@@ -11,22 +11,22 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Administratorzy mogą dowiedzieć się, jak symulować ataki służące do wyłudzania informacji i szkolenie użytkowników w zakresie zapobiegania wyłudzaniu informacji przy użyciu szkolenia symezyjnego w programie Microsoft Defender dla programu Office 365 Plan 2.
+description: Administratorzy mogą dowiedzieć się, jak symulować ataki służące do wyłudzania informacji i szkolenie użytkowników w zakresie zapobiegania wyłudzaniu informacji przy użyciu szkolenia symezyjnego w zakresie Ochrona usługi Office 365 w usłudze Microsoft Defender (plan 2).
 ms.technology: mdo
-ms.openlocfilehash: 5ce7b58410ea53e4f11d746ebc4583b125f1ade6
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 924fef8e5aba8a797cf6754b6c507624e51a64c2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494432"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474316"
 ---
-# <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Symulowanie ataków phishingowego za pomocą szkolenia symezyjnego ataków w programie Defender dla Office 365
+# <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Symulowanie ataków wyłudzających informacje za pomocą szkolenia symezyjnego ataków w programie Ochrona usługi Office 365 w usłudze Defender
 
-**Dotyczy programu** [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+**Dotyczy planu** [Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
-Szkolenie symulacyjne dotyczące ataków w programie Microsoft Defender Office 365 plan 2 lub program Microsoft 365 E5 umożliwia uruchamianie symulacyjnych cyberataków w organizacji. Te symulacje testują zasady i praktyki dotyczące zabezpieczeń, a także przeszkoli pracowników w zakresie zwiększania ich wiedzy i zmniejszenia ich wrażliwości na ataki. Ten artykuł zawiera informacje o tworzeniu symulowanego ataku służącego do wyłudzania informacji przy użyciu szkolenia z użyciem symezyjnej próby wyłudzenia informacji.
+Szkolenie symulacyjne z Ochrona usługi Office 365 w usłudze Microsoft Defender w planie 2 lub programie Microsoft 365 E5 umożliwia uruchomienie symulacyjnych cyberataków w organizacji. Te symulacje testują zasady i praktyki dotyczące zabezpieczeń, a także przeszkoli pracowników w zakresie zwiększania ich wiedzy i zmniejszenia ich wrażliwości na ataki. Ten artykuł zawiera informacje o tworzeniu symulowanego ataku służącego do wyłudzania informacji przy użyciu szkolenia z użyciem symezyjnej próby wyłudzenia informacji.
 
-Aby uzyskać informacje na temat szkolenia z symezyjną ataków, zobacz Wprowadzenie do szkolenia z użyciem [symezyjny](attack-simulation-training-get-started.md) ataków.
+Aby uzyskać informacje na temat szkoleń z użyciem symezyjny ataków, [zobacz Wprowadzenie szkolenia z użyciem symezyjki ataków](attack-simulation-training-get-started.md).
 
 Aby rozpocząć symulowany atak wyłudzania informacji, wykonaj następujące czynności:
 
@@ -36,7 +36,7 @@ Aby rozpocząć symulowany atak wyłudzania informacji, wykonaj następujące cz
 
 2. Na karcie **Symulacje** wybierz pozycję ![Uruchom ikonę symulacyjnej.](../../media/m365-cc-sc-create-icon.png) **Uruchamianie symulacyjnej**.
 
-   ![Launch a simulation button on the Simulations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-launch.png)
+   :::image type="content" source="../../media/attack-sim-training-simulations-launch.png" alt-text="Przycisk Launch a simulation (Uruchom platformę symulacyjna) na karcie Symulacje w szkoleniu z symulacyjnej gry w Microsoft 365 Defender danych" lightbox="../../media/attack-sim-training-simulations-launch.png":::
 
 3. Zostanie otwarty kreator tworzenia symulowania. W dalszej części tego artykułu opisano strony i ustawienia, które zawierają.
 
@@ -55,7 +55,7 @@ Na stronie **Select technique (** Wybierz technikę) wybierz dostępną technik�
 
 Kliknięcie linku **Wyświetl szczegóły** w opisie spowoduje otwarcie wysuwu szczegółów, opisujące technikę i kroki symulacyjne wynikające z tej techniki.
 
-![Wysuwające szczegółowe informacje dotyczące techniki chowania poświadczeń na stronie Wybierz technikę.](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="Wysuuwana informacja Details (Szczegóły) dla techniki zbiorów poświadczeń na stronie Select technique (Technika wybierania)" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
@@ -102,14 +102,14 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
-![Wybierz stronę ładowania w szkoleniu z symezyjną ataków w portalu Microsoft 365 Defender sieci Web.](../../media/attack-sim-training-simulations-select-payload.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="The Select payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
 
 Jeśli wybierzesz ład z listy, szczegóły dotyczące tego ładu zostaną wyświetlone w wysuwanych informacjach:
 
 - Karta **Przegląd** zawiera przykład i inne szczegóły dotyczące ładu.
 - Karta **Uruchomiono symulatory** zawiera nazwę **symulacyjnej**, **szybkość** klikania, **naruszone tempo** i **działanie**.
 
-![Wysuwowe informacje o szczegółach ładowania w szkoleniu symulacyjnych ataków w Microsoft 365 Defender sieci Microsoft 365 Defender sieci.](../../media/attack-sim-training-simulations-select-payload-details.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Wysuwowe informacje o szczegółach obciążenia w szkoleniu symulacyjnych ataków w portalu Microsoft 365 Defender sieci Microsoft 365 Defender." lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
 
 Jeśli wybierzesz ład z listy, klikając jego nazwę, zostanie wyświetlona ![ikona Wyślij testowy ład.](../../media/m365-cc-sc-create-icon.png) **Przycisk Wyślij test** jest wyświetlany na stronie głównej, gdzie możesz wysłać kopię wiadomości e-mail z obciążeniem do siebie (obecnie zalogowanego użytkownika) do inspekcji.
 
@@ -138,7 +138,7 @@ Na stronie **Użytkownicy docelowi** wybierz osoby, które otrzymają symulowani
         - **Użytkownicy, którzy nie są docelowi w czasie symulacyjnej pracy w ciągu ostatnich trzech miesięcy**
         - **Powtarzanie czynności przez offenders**
 
-      - **Tagi użytkowników**: Tagi użytkownika to identyfikatory dla określonych grup użytkowników (na przykład konta o priorytecie). Aby uzyskać więcej informacji, zobacz [Tagi użytkownika w programie Microsoft Defender dla Office 365](user-tags.md).
+      - **Tagi użytkowników**: Tagi użytkownika to identyfikatory dla określonych grup użytkowników (na przykład konta o priorytecie). Aby uzyskać więcej informacji, zobacz [Tagi użytkowników w aplikacji Ochrona usługi Office 365 w usłudze Microsoft Defender](user-tags.md).
 
           Użyj następujących opcji:
 
@@ -156,7 +156,7 @@ Na stronie **Użytkownicy docelowi** wybierz osoby, które otrzymają symulowani
         - **Zaznaczanie całego tytułu**
         - Wybierz istniejące wartości Title.
 
-      ![Filtrowanie użytkowników na stronie Użytkownicy docelowi w szkoleniu z symezyjną ataków w portalu Microsoft 365 Defender sieci Web.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="The User filtering on the Target users page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       Po zidentyfikowaniu kryteriów użytkownicy, których dotyczy problem, są pokazywani  w wyświetlonej sekcji Lista użytkowników, w której można wybrać niektórych lub wszystkich wykrytych adresatów.
 
@@ -194,7 +194,7 @@ Na stronie **Przypisywanie** szkolenia możesz przypisać szkolenia dla symulacy
       - **7 dni po zakończeniu symulacyjnej pracy**
   - **Brak szkolenia**: Jeśli wybierzesz tę wartość, jedyną opcją na stronie jest przycisk **Dalej, który** przenosi Cię do [**strony docelowej**](#landing-page) .
 
-![Dodaj zalecane szkolenie na stronie Szkolenie dotyczące zadań do wykonania w trybie szkolenia symendacyjnego w portalu Microsoft 365 Defender ataków.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="Opcja dodania zalecanego szkolenia na stronie Training assignment (Szkolenie dotyczące zadań do wykonania) w szkoleniu z symendyy ataków w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### <a name="training-assignment"></a>Zadanie szkoleniowe
 
@@ -236,7 +236,7 @@ Dla każdego szkolenia z listy musisz wybrać, kto otrzymuje szkolenie, wybieraj
 
 Jeśli nie chcesz używać wyświetlonego szkolenia, kliknij ikonę ![Usuń szkolenie.](../../media/m365-cc-sc-delete-icon.png) **Usuń**.
 
-![Strona przydzielania szkoleń w szkoleniu z symezyjną ataków w portalu Microsoft 365 Defender sieci Web.](../../media/attack-sim-training-training-assignment.png)
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Strona Szkoleń z szkoleniami szkoleniowym w zakresie symezyjnych ataków w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
@@ -280,7 +280,7 @@ Strony docelowe firmy Microsoft są dostępne w 12 językach: chiński (uproszcz
 Po zakończeniu kliknij przycisk **Dalej**.
 
 > [!NOTE]
-> Niektóre znaki towarowe, znaki logo, symbole, insignias i inne identyfikatory źródłowe są chronione na mocy ustaw i ustaw lokalnych, stanowych i federalnych. Nieuprawnione użycie takich wskaźników może nachylić użytkowników do odpowiedzialności, w tym także karnej. Choć nie jest to rozbudowana lista, obejmuje to: Szomówienie, Wicedyrecja i Kopercie, CIA, FBI, Ubezpieczenia społecznego, Opieki medycznej i Anny, Amerykańskiej Administracji Skarbowej i Igrzysk Olimpijskich. Oprócz korzystania z tych kategorii znaków towarowych, korzystanie z znaku towarowego innej firmy i modyfikowanie go wiąże się z ryzykiem. Używanie znaków towarowych i logo w ładowarce byłoby mniej ryzykowne, szczególnie w przypadku, gdy organizacja zezwala na użycie tych znaków. Jeśli masz jakiekolwiek dodatkowe pytania dotyczące tego, co jest lub czego nie należy używać podczas tworzenia lub konfigurowania ładowania, skonsultuj się z doradcami  prawne.
+> Niektóre znaki towarowe, znaki logo, symbole, insignias i inne identyfikatory źródłowe są chronione na mocy ustaw i ustaw lokalnych, stanowych i federalnych. Nieuprawnione użycie takich wskaźników może nachylić użytkowników do odpowiedzialności, w tym także karnej. Choć nie jest to rozbudowana lista, obejmuje on takie wartości jak: Konsercja, Wicedyt, Anny, CiA, FBI, Social Security, Medicare i Teżid, Stany Zjednoczone Internal Revenue Service i Igrzyska Olimpijskie. Oprócz korzystania z tych kategorii znaków towarowych, korzystanie z znaku towarowego innej firmy i modyfikowanie go wiąże się z ryzykiem. Używanie znaków towarowych i logo w ładowarce byłoby mniej ryzykowne, szczególnie w przypadku, gdy organizacja zezwala na użycie tych znaków. Jeśli masz jakiekolwiek dodatkowe pytania dotyczące tego, co jest lub czego nie należy używać podczas tworzenia lub konfigurowania ładowania, skonsultuj się z doradcami  prawne.
 
 ## <a name="select-end-user-notification"></a>Wybierz powiadomienie użytkownika końcowego
 
@@ -374,4 +374,4 @@ Możesz wybrać pozycję **Edytuj** w każdej sekcji, aby zmodyfikować ustawien
 
 Po zakończeniu kliknij pozycję **Prześlij**.
 
-![Strona symulacyjna przeglądu w szkoleniu symulacyjnej atak w portalu Microsoft 365 Defender sieci Web.](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="Strona symulacyjna recenzji w szkoleniu symulacyjnej gry w portalu Microsoft 365 Defender ataku" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::

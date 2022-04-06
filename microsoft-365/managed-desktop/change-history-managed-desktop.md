@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: c979ace1b5d3f1fa807384c769c5711c9fc2fda7
-ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
+ms.openlocfilehash: e697d9caf2b35dd0dedb9632b968cb095b792520
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63761505"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595052"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historia zmian dla Microsoft Managed Desktop dokumentów
 
@@ -28,6 +28,8 @@ Ten artykuł zawiera listę nowych i zaktualizowanych artykułów w [Microsoft M
 
 Nowy lub zmieniony artykuł | Opis
 --- | ---
+| [Obrazy urządzeń](service-description/device-images.md) | Dodano Windows 10 Pro sekcji |
+| [Pomoc techniczna dla administratorów](working-with-managed-desktop/admin-support.md) | Dodano notatkę o ważności do sekcji Edytowanie szczegółów sprawy |
 | [Informacje dotyczące ustawień konfigurowalnych](working-with-managed-desktop/config-setting-ref.md) | Dodano dodatkowe wymagania dotyczące serwera proxy |
 | [Localize the user experience](get-started/localization.md) | Dodano notatkę do sekcji Instalowanie większej liczby języków |
 | [Informacje dotyczące ustawień konfigurowalnych](working-with-managed-desktop/config-setting-ref.md) | Dodano notatkę na temat starszej wersji edge |
@@ -79,7 +81,7 @@ Nowy lub zmieniony artykuł | Opis
 [Włączanie funkcji pomocy technicznej dla użytkowników](get-started/enable-support.md) | Nowy artykuł
 [Włącz usługę Enterprise State Roaming](get-started/enterprise-state-roaming.md) | Zaktualizowano artykuł
 [Microsoft Managed Desktop i Windows 11](intro/win11-overview.md) | Nowy artykuł
-[Podgląd i testowanie Windows 11 z Microsoft Managed Desktop](working-with-managed-desktop/test-win11-mmd.md) | Nowy artykuł
+[Podgląd i testowanie Windows 11 za pomocą Microsoft Managed Desktop](working-with-managed-desktop/test-win11-mmd.md) | Nowy artykuł
 [Procedura rejestrowania urządzeń przez partnerów](get-started/partner-registration.md) | Zaktualizowano artykuł
 [Zarejestruj nowe urządzenia samodzielnie](get-started/manual-registration.md) |Zaktualizowano artykuł
 [Pomoc techniczna dla administratorów Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Zaktualizowano artykuł
@@ -233,7 +235,7 @@ Nowy lub zmieniony artykuł | Opis
 --- | ---
 [Microsoft Managed Desktop wymagań dotyczących aplikacji](service-description/mmd-app-requirements.md) | Zaktualizowano artykuł
 [Zgodność](intro/compliance.md) | Zaktualizowano artykuł
-[Wprowadzenie do sterowania aplikacją](get-started/get-started-app-control.md) | Zaktualizowano artykuł
+[Wprowadzenie z kontrolką aplikacji](get-started/get-started-app-control.md) | Zaktualizowano artykuł
 [Praca z kontrolką aplikacji](working-with-managed-desktop/work-with-app-control.md) | Zaktualizowano artykuł
 [Wymagania wstępne dotyczące Microsoft Managed Desktop](get-ready/prerequisites.md) | Zaktualizowano artykuł
 [Kontrolka aplikacji](service-description/app-control.md) | Zaktualizowano artykuł
@@ -405,7 +407,7 @@ Nowy lub zmieniony artykuł | Opis
 [Omówienie ustawień konfigurowalnych](working-with-managed-desktop/config-setting-overview.md) | Nowy artykuł
 [Informacje dotyczące ustawień konfigurowalnych](working-with-managed-desktop/config-setting-ref.md) | Nowy artykuł
 [Śledzenie i wdrażanie ustawień konfigurowalnych](working-with-managed-desktop/config-setting-deploy.md) | Nowy artykuł
-[Wprowadzenie do urządzeń](get-started/get-started-devices.md) | Nowy artykuł
+[Wprowadzenie z urządzeniami](get-started/get-started-devices.md) | Nowy artykuł
 
 ## <a name="january-2019"></a>Styczeń 2019 r.
 

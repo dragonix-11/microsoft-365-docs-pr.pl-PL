@@ -19,12 +19,12 @@ ms.custom:
 description: Dowiedz się, jak możesz zwiększyć możliwość dostarczania wiadomości e-mail do użytkowników w sieci Microsoft 365. Dowiedz się także, jak zgłaszać wiadomości-śmieci & prób wyłudzania informacji jako gość.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f738b5575d4ac2831d067ca12993042a05a2024
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 0313025675c59d563a96d2554a94b5102080a3d5
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996231"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682994"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Wysyłanie poczty do Microsoft 365
 
@@ -34,12 +34,9 @@ Te artykuły pomagają nadawcom zewnętrznym ulepszyć swoją reputację i zwię
 
 Jeśli nie jesteś klientem, ale próbujesz wysłać pocztę do kogoś, kto jest, jesteś we właściwym miejscu. Jeśli jesteś administratorem i potrzebujesz pomocy dotyczącej szukicia spamu, to nie jest właściwa sekcja dla Ciebie. Zamiast tego przejdź do [ochrony przed spamem i złośliwym oprogramowaniem w programie Microsoft 365](anti-spam-and-anti-malware-protection.md).
 
-****
-
 |Aby uzyskać informacje na temat...|Zobacz...|
 |---|---|
 |Usługi dostarczane administratorom systemów poczty e-mail, którzy wysyłają do klientów indywidualne i zbiorcze wiadomości e-mail.|[Usługi dla osób niebędących klientami wysyłające pocztę na Office 365](services-for-non-customers.md)|
 |Jak rozwiązać problemy z dotarciem do klientów za pośrednictwem Microsoft 365 e-mail. Najlepsze rozwiązania dotyczące wysyłania poczty masowej do Microsoft 365 adresatów.|[Rozwiązywanie problemów z wiadomościami wysyłanymi na Office 365](troubleshooting-mail-sent-to-office-365.md)|
 |Jak Microsoft 365 wiadomości-śmieci, takie jak wyłudzanie informacji i fałszowanie wiadomości, przed wysyłaniem do klientów.|[Ochrona przed spamem w programie Microsoft 365](anti-spam-protection.md)|
 |W jaki sposób, administrator wysyłający wiadomości e-mail Microsoft 365 do klientów, może uniknąć blokowania wiadomości e-mail, korzystając z naszych zasad ochrony przed spamem. To jest potrzebne informacje prawne.|[Informacje: Zasady, wskazówki i wskazówki](reference-policies-practices-and-guidelines.md)|
-|

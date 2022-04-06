@@ -19,12 +19,12 @@ ms.custom:
 description: Dowiedz się, jak zaktualizować rekord usługi nazw domen (DNS) w celu używania struktury zasad dotyczących nadawców (SPF) z domeną niestandardową w usłudze Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab7bd0e579bfe26236eb009dc09689ddb90f2782
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: a25efbce5b9f8141575a88baa3fdd85b099dfbd6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "62988672"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682972"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Konfigurowanie spf w celu zapobiegania fałszerszem
 
@@ -77,10 +77,6 @@ Rekord TXT SPF dla Office 365 zostanie wykonany w zewnętrznym systemie DNS dla 
 
 1. Upewnij się, że znasz składnię spf w poniższej tabeli.
 
-    <br>
-
-    ****
-
     |Element|Jeśli używasz...|Czy jest to popularne dla klientów?|Dodaj to...|
     |---|---|---|---|
     |1|Dowolny system poczty e-mail (wymagany)|Wspólne. Wszystkie rekordy TXT SPF zaczynają się od tej wartości|`v=spf1`|
@@ -90,7 +86,6 @@ Rekord TXT SPF dla Office 365 zostanie wykonany w zewnętrznym systemie DNS dla 
     |5|System poczty e-mail innej firmy|Nie typowe|`include:<domain_name>` <p> \<domain_name\> jest domeną systemu poczty e-mail innej firmy.|
     |6|Lokalnego systemu poczty e-mail. Na przykład Exchange Online Protection i inny system poczty e-mail|Nie typowe|Użyj jednego z tych dla każdego dodatkowego systemu poczty: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> są \<domain_name\> adresem IP i domeną innego systemu poczty e-mail, który wysyła pocztę w imieniu Twojej domeny.|
     |7|Dowolny system poczty e-mail (wymagany)|Wspólne. Wszystkie rekordy TXT SPF kończą się tą wartością|`<enforcement rule>` <p> Może to być jedna z kilku wartości. Zalecamy korzystanie z tej wartości `-all`.|
-    |
 
 2. Jeśli jeszcze tego nie zrobiono, stworzymy rekord TXT SPF, używając składni z tabeli.
 

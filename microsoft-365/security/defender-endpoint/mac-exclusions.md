@@ -1,7 +1,7 @@
 ---
-title: Konfigurowanie i weryfikowanie wykluczeń programu Microsoft Defender dla punktu końcowego na komputerze Mac
-description: Podaj i zweryfikuj wykluczenia dla programu Microsoft Defender dla punktu końcowego na komputerze Mac. Wykluczenia można ustawić dla plików, folderów i procesów.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, exclusions, scans, antivirus
+title: Konfigurowanie i sprawdzanie poprawności wykluczeń dla Ochrona punktu końcowego w usłudze Microsoft Defender komputerów Mac
+description: Podaj i zweryfikuj wykluczenia dla Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac. Wykluczenia można ustawić dla plików, folderów i procesów.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, wykluczenia, skany, oprogramowanie antywirusowe
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,21 +15,21 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a069e3dd3ef99f094f96318277e077c56b7cb974
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: bc16b601181775b3b12f1db0fcceecaa2bca33a8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011419"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474096"
 ---
-# <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Konfigurowanie i weryfikowanie wykluczeń programu Microsoft Defender dla punktu końcowego w systemie macOS
+# <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Konfigurowanie i weryfikowanie wykluczeń dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -71,13 +71,13 @@ Symbol wieloznaczny|Opis|Przykład|Dopasowania|Nie jest zgodne
 
 ### <a name="from-the-management-console"></a>Z konsoli zarządzania
 
-Aby uzyskać więcej informacji na temat konfigurowania wykluczeń z usługi JAMF, Intune lub innej konsoli zarządzania, zobacz Ustawianie preferencji usługi Defender dla punktu końcowego na [komputerze Mac](mac-preferences.md).
+Aby uzyskać więcej informacji na temat konfigurowania wykluczeń z usługi JAMF, Intune lub innej konsoli zarządzania, zobacz Ustawianie preferencji usługi Defender dla punktu końcowego [na komputerze Mac](mac-preferences.md).
 
 ### <a name="from-the-user-interface"></a>Z interfejsu użytkownika
 
 Otwórz aplikację Defender for Endpoint i przejdź do strony **Zarządzaj** \> ustawieniami **Dodaj lub** usuń wykluczenie..., jak pokazano na poniższym zrzucie ekranu:
 
-![Zrzut ekranu: zarządzanie wykluczeniami.](images/mdatp-37-exclusions.png)
+:::image type="content" source="images/mdatp-37-exclusions.png" alt-text="Strona Zarządzanie wykluczeniami" lightbox="images/mdatp-37-exclusions.png":::
 
 Wybierz typ wykluczenia, który chcesz dodać, i postępuj zgodnie z monitami.
 

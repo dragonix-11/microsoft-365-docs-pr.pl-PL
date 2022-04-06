@@ -1,7 +1,7 @@
 ---
-title: Tworzenie aplikacji w celu uzyskania dostępu do programu Microsoft Defender dla punktu końcowego bez użytkownika
+title: Tworzenie aplikacji w celu uzyskania dostępu Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika
 ms.reviewer: ''
-description: Dowiedz się, jak zaprojektować aplikację sieci Web, aby uzyskać dostęp programowy do usługi Microsoft Defender for Endpoint bez użytkownika.
+description: Dowiedz się, jak zaprojektować aplikację sieci Web, aby uzyskać dostęp programowy Ochrona punktu końcowego w usłudze Microsoft Defender dostępu bez użytkownika.
 keywords: apis, api Graph, obsługiwane api, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,45 +16,45 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e32f05792b4658c7d7b42f78e88d989dfb134a78
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c26bc9762b76deff0dddb04f98e2630e789ee6b5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996875"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474492"
 ---
-# <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Tworzenie aplikacji w celu uzyskania dostępu do programu Microsoft Defender dla punktu końcowego bez użytkownika
+# <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Tworzenie aplikacji w celu uzyskania dostępu Ochrona punktu końcowego w usłudze Microsoft Defender bez użytkownika
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:** 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Na tej stronie opisano, jak utworzyć aplikację w celu uzyskania dostępu programowego do usługi Defender for Endpoint bez użytkownika. Jeśli potrzebujesz dostępu programowego do usługi Defender for Endpoint w imieniu użytkownika, zobacz Uzyskiwanie [dostępu z kontekstem użytkownika](exposed-apis-create-app-nativeapp.md). Jeśli nie masz pewności, którego dostępu potrzebujesz, zobacz [Wprowadzenie](apis-intro.md).
+Na tej stronie opisano, jak utworzyć aplikację w celu uzyskania dostępu programowego do usługi Defender for Endpoint bez użytkownika. Jeśli potrzebujesz dostępu programowego do usługi Defender for Endpoint w imieniu użytkownika, zobacz Uzyskiwanie [dostępu z kontekstem użytkownika](exposed-apis-create-app-nativeapp.md). Jeśli nie masz pewności, którego dostępu potrzebujesz[, zobacz Wprowadzenie](apis-intro.md).
 
-Program Microsoft Defender for Endpoint udostępnia większość danych i akcji za pośrednictwem zestawu programistycznych interfejsów API. Te interfejsy API pomogą Ci zautomatyzować przepływy robocze i wprowadzać innowacje w oparciu o możliwości usługi Defender for Endpoint. Dostęp do interfejsu API wymaga uwierzytelniania OAuth2.0. Aby uzyskać więcej informacji, zobacz [Kod autoryzacji protokołu OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Ochrona punktu końcowego w usłudze Microsoft Defender udostępnia większość danych i akcji za pośrednictwem zestawu interfejsów API programistycznych. Te interfejsy API pomogą Ci zautomatyzować przepływy robocze i wprowadzać innowacje w oparciu o możliwości usługi Defender for Endpoint. Dostęp do interfejsu API wymaga uwierzytelniania OAuth2.0. Aby uzyskać więcej informacji, zobacz [Kod autoryzacji protokołu OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Aby korzystać z interfejsów API, musisz wykonać następujące czynności:
 - Utwórz aplikację usługi Azure Active Directory (Azure AD).
 - Uzyskaj token dostępu przy użyciu tej aplikacji.
 - Użyj tego tokenu, aby uzyskać dostęp do usługi Defender for Endpoint API.
 
-W tym artykule wyjaśniono, jak utworzyć aplikację usługi Azure AD, uzyskać token dostępu do programu Microsoft Defender dla punktu końcowego i zweryfikować token.
+W tym artykule wyjaśniono, jak utworzyć aplikację usługi Azure AD, uzyskać token dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender i zweryfikować token.
 
 ## <a name="create-an-app"></a>Tworzenie aplikacji
 
 1. Zaloguj się do [platformy Azure](https://portal.azure.com) przy użyciu użytkownika z rolą **administratora globalnego** .
 
-2. Przejdź do **Azure Active Directory** \> **Rejestracja aplikacji Nowa** \> **rejestracja**. 
+2. Przejdź do **Azure Active Directory** \> **Rejestracje aplikacji** \> **Rejestracja**. 
 
-    :::image type="content" alt-text="Obraz Microsoft Azure nawigacji do rejestracji aplikacji." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
+    :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Okienko rejestracji aplikacji" lightbox="images/atp-azure-new-app2.png":::
 
 3. W formularzu rejestracji wybierz nazwę aplikacji, a następnie wybierz pozycję **Zarejestruj**.
 
@@ -63,11 +63,11 @@ W tym artykule wyjaśniono, jak utworzyć aplikację usługi Azure AD, uzyskać 
    > [!NOTE]
    > *Funkcja WindowsDefenderATP* nie jest wyświetlana na oryginalnej liście. Zacznij pisać jego nazwę w polu tekstowym, aby ją wyświetlić.
 
-   :::image type="content" alt-text="dodaj uprawnienie." source="images/add-permission.png" lightbox="images/add-permission.png":::
+   :::image type="content" source="images/add-permission.png" alt-text="Okienko uprawnień interfejsu API" lightbox="images/add-permission.png":::
 
    Wybierz **pozycję Uprawnienia aplikacji** \> **Alert.Odczyt.Wszystko**, a następnie wybierz **pozycję Dodaj uprawnienia**.
 
-   :::image type="content" alt-text="uprawnienia aplikacji." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
+   :::image type="content" source="images/application-permissions.png" alt-text="Okienko informacji o uprawnieniach aplikacji" lightbox="images/application-permissions.png":::
 
      Należy wybrać odpowiednie uprawnienia. "Czytaj wszystkie alerty" to tylko przykład. Przykład:
 
@@ -80,20 +80,20 @@ W tym artykule wyjaśniono, jak utworzyć aplikację usługi Azure AD, uzyskać 
      > [!NOTE]
      > Za każdym razem, gdy dodajesz uprawnienie, musisz **wybrać pozycję** Udawaj zgodę, aby nowe uprawnienie było skuteczne.
 
-    ![Udzielanie uprawnień.](images/grant-consent.png)
+    :::image type="content" source="images/grant-consent.png" alt-text="Strona udzielanie uprawnień" lightbox="images/grant-consent.png":::
 
 6. Aby dodać do aplikacji klucz tajny, wybierz pozycję Certyfikaty **& sekretów**, dodaj opis do tajemnicy, a następnie wybierz pozycję **Dodaj**.
 
     > [!NOTE]
     > Po wybraniu **przycisku Dodaj** wybierz **pozycję kopiuj wygenerowaną wartość tajnych**. Po opuszczeniu tej wartości nie będzie można jej pobrać.
 
-    ![Obraz klucza aplikacji Create (Utwórz).](images/webapp-create-key2.png)
+      :::image type="content" source="images/webapp-create-key2.png" alt-text="Opcja utwórz aplikację" lightbox="images/webapp-create-key2.png":::
 
 7. Zategolij swój identyfikator aplikacji i identyfikator dzierżawy. Na stronie aplikacji przejdź do strony **Omówienie i** skopiuj następujące informacje.
 
-   :::image type="content" alt-text="Obraz utworzonego identyfikatora aplikacji." source="images/app-and-tenant-ids.png" lightbox="images/app-and-tenant-ids.png":::
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Identyfikatory utworzonej aplikacji i dzierżawy" lightbox="images/app-and-tenant-ids.png":::
 
-8. **Tylko dla programu Microsoft Defender dla partnerów punktu końcowego**. Ustaw aplikację jako wielodostępną (dostępną we wszystkich dzierżawach po zgodzie). Jest to **wymagane** w przypadku aplikacji innych firm (na przykład w przypadku tworzenia aplikacji przeznaczonej do uruchamiania w dzierżawie wielu klientów). Nie **jest to** wymagane, jeśli utworzysz usługę, którą chcesz uruchomić tylko w dzierżawie (na przykład jeśli utworzysz aplikację do własnego użycia, która będzie wchodzić w interakcje tylko z Twoimi danymi). Aby ustawić aplikację jako wielodostępną:
+8. **Dotyczy Ochrona punktu końcowego w usłudze Microsoft Defender partnerów**. Ustaw aplikację jako wielodostępną (dostępną we wszystkich dzierżawach po zgodzie). Jest to **wymagane** w przypadku aplikacji innych firm (na przykład w przypadku tworzenia aplikacji przeznaczonej do uruchamiania w dzierżawie wielu klientów). Nie **jest to** wymagane, jeśli utworzysz usługę, którą chcesz uruchomić tylko w dzierżawie (na przykład jeśli utworzysz aplikację do własnego użycia, która będzie wchodzić w interakcje tylko z Twoimi danymi). Aby ustawić aplikację jako wielodostępną:
 
     - Przejdź do **uwierzytelniania** i dodaj jako `https://portal.azure.com` redirect **URI (Przekieruj URI**).
 
@@ -201,11 +201,11 @@ Upewnij się, że masz poprawny token:
 
 1. Sprawdź, czy masz "role" z wymaganymi uprawnieniami.
 
-   Na poniższej ilustracji widać dekodowany token pozyskany z aplikacji z uprawnieniami do wszystkich ról programu Microsoft Defender dla punktu końcowego:
+   Na poniższej ilustracji widać dekodowany token nabytego z aplikacji z uprawnieniami do wszystkich Ochrona punktu końcowego w usłudze Microsoft Defender ról użytkownika:
 
-   :::image type="content" alt-text="Obraz sprawdzania poprawności tokenu." source="images/webapp-decoded-token.png" lightbox="images/webapp-decoded-token.png":::
+   :::image type="content" source="images/webapp-decoded-token.png" alt-text="Część ze szczegółami tokenu" lightbox="images/webapp-decoded-token.png":::
 
-## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Korzystanie z tokenu w celu uzyskania dostępu do programu Microsoft Defender for Endpoint API
+## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Uzyskiwanie dostępu do interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender tokenu
 
 1. Wybierz interfejs API, którego chcesz użyć. Aby uzyskać więcej informacji, zobacz [Obsługiwany program Defender dla interfejsów API punktów końcowych](exposed-apis-list.md).
 1. Ustaw nagłówek autoryzacji w żądaniu http, które wysyłasz na adres "Bearer {token}" (Bearer jest schematem autoryzacji).
@@ -226,5 +226,5 @@ var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Obsługiwana usługa Microsoft Defender dla interfejsów API punktów końcowych](exposed-apis-list.md)
-- [Uzyskiwanie dostępu do programu Microsoft Defender dla punktu końcowego w imieniu użytkownika](exposed-apis-create-app-nativeapp.md)
+- [Obsługiwane Ochrona punktu końcowego w usłudze Microsoft Defender API](exposed-apis-list.md)
+- [Uzyskiwanie Ochrona punktu końcowego w usłudze Microsoft Defender w imieniu użytkownika](exposed-apis-create-app-nativeapp.md)

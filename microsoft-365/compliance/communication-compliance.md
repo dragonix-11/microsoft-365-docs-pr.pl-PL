@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się więcej o zgodności komunikacji
+title: Dowiedz się więcej o zgodności w komunikacji
 description: Informacje na temat zgodności komunikacji w programie Microsoft 365
 f1.keywords:
 - NOCSH
@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c82514fda095d91ea4daa798450954fb9f5dac61
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 7690b93646c9b60467ca898c6167d72a7e819bb4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450482"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594801"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Informacje na temat zgodności komunikacji w programie Microsoft 365
 
@@ -117,7 +117,7 @@ Nowe interakcyjne pulpity nawigacyjne dla alertów, dopasowania zasad, akcji i t
 
 Zasady zgodności komunikacji skanują i przechwytują wiadomości z różnych kanałów komunikacji, aby ułatwić szybkie przeglądanie i rozwiązywanie problemów ze zgodnością:
 
-- **Microsoft Teams**: Komunikacja na czacie dla publicznych i prywatnych [](/MicrosoftTeams/Teams-overview) kanałów Microsoft Teams i poszczególnych czatów jest obsługiwana w celu zapewnienia zgodności z przepisami jako autonomicznego źródła kanału lub z innymi Microsoft 365 usługami. Podczas wybierania użytkowników i grup do nadzór nad zasadami zgodności komunikacji konieczne będzie ręczne dodanie pojedynczych użytkowników, grup dystrybucyjnych Microsoft Teams kanałów dystrybucyjnych.
+- **Microsoft Teams**: Komunikacja na czacie dla publicznych i prywatnych [](/MicrosoftTeams/Teams-overview) kanałów Microsoft Teams i poszczególnych czatów jest obsługiwana w celu zapewnienia zgodności z przepisami jako autonomicznego źródła kanału lub z innymi Microsoft 365 usługami. Podczas wybierania użytkowników i grup do nadzór nad zasadami zgodności komunikacji konieczne będzie ręczne dodanie pojedynczych użytkowników, grup dystrybucyjnych Microsoft Teams kanałów dystrybucyjnych. Teams użytkownicy mogą również samodzielnie raportować nieodpowiednie wiadomości w kanałach prywatnych i grupowych oraz czatach w celu ich przejrzenia i rozwiązania.
 - **Exchange Online**: Wszystkie skrzynki pocztowe hostowane [na Exchange Online](/Exchange/exchange-online) w Twojej Microsoft 365 są uprawnione do skanowania. Wiadomości e-mail i załączniki spełniające warunki zasad zgodności komunikacji są natychmiast dostępne do monitorowania i w raportach zgodności. Exchange Online jest teraz opcjonalnym kanałem źródłowym i nie jest już wymagany w zasadach zgodności komunikacji.
 - **Yammer**: Wiadomości prywatne i konwersacje społeczności publicznej w programie [Yammer](/yammer/yammer-landing-page) są obsługiwane przez zasady zgodności komunikacji. Yammer jest kanałem opcjonalnym i musi być w trybie [](/yammer/configure-your-yammer-network/overview-native-mode) natywnym, aby obsługiwać skanowanie wiadomości i załączników.
 - **Skype dla firm Online**: Zasady zgodności komunikacji obsługują skanowanie komunikacji za pośrednictwem czatu i skojarzonych załączników w u [Skype dla firm Online](/SkypeForBusiness/skype-for-business-online).
@@ -133,7 +133,7 @@ Do identyfikowania i rozwiązywania problemów ze zgodnością ze zgodnością w
 
 ![Przepływ pracy zgodności komunikacji.](../media/communication-compliance-workflow.png)
 
-### <a name="configure"></a>Konfigurowanie
+### <a name="configure"></a>Konfiguruj
 
 W tym kroku przepływu pracy określasz wymagania dotyczące zgodności i konfigurujesz odpowiednie zasady zgodności komunikacji. Szablony zasad to świetny sposób nie tylko na szybkie skonfigurowanie nowych zasad zgodności, ale również na szybkie modyfikowanie i aktualizowanie zasad w przypadku zmiany wymagań. Na przykład możesz zechcieć szybko przetestować zasady dotyczące nieodpowiedniej zawartości dotyczącej komunikacji dla małej grupy użytkowników przed skonfigurowaniem zasad dla wszystkich użytkowników w organizacji.
 
@@ -148,11 +148,12 @@ W tym celu możesz wybrać jeden z następujących szablonów Centrum zgodności
 - **Monitorowanie zgodności z przepisami finansowymi**. Użyj tego szablonu, aby szybko utworzyć zasady do skanowania komunikacji w poszukiwaniu odwołań do standardowych warunków finansowych związanych ze standardami regulacyjną.
 - **Monitorowanie konfliktu zainteresowań**. Użyj tego szablonu, aby szybko utworzyć zasady do monitorowania komunikacji między dwoma grupami lub dwoma użytkownikami w celu uniknięcia konfliktów zainteresowania.
 - **Zasady niestandardowe**. Użyj tego szablonu, aby skonfigurować określone kanały komunikacji, poszczególne warunki wykrywania oraz ilość zawartości do monitorowania i przeglądu w organizacji.
+- **Zasady wiadomości zgłoszonych przez użytkowników**: Te zasady systemu obsługują wiadomości z kanału, grupy i prywatnych czatów zgłoszonych przez użytkowników. Domyślnie włączone w centrum Teams administracyjnego.
 
 >[!TIP]
 >Zalecane [akcje ułatwiają](communication-compliance-configure.md#recommended-actions-preview) ustalenie, czy są potrzebne zasady typu informacji poufnych lub czy trzeba zaktualizować istniejące nieodpowiednie zasady dotyczące zawartości.
 
-### <a name="investigate"></a>Badanie
+### <a name="investigate"></a>Zbadaj
 
 W tym kroku przyjrzysz się bliżej problemom wykrytym jako pasujące do Twoich zasad zgodności komunikacji. Ten krok obejmuje następujące akcje dostępne w Centrum zgodności platformy Microsoft 365:
 
@@ -162,7 +163,7 @@ W tym kroku przyjrzysz się bliżej problemom wykrytym jako pasujące do Twoich 
 - **Przeglądanie historii aktywności użytkowników**: Umożliwia wyświetlanie historii działań dotyczących wiadomości użytkowników i działań naprawczych, takich jak wcześniejsze powiadomienia i eskalacja, w przypadku dopasowania zasad.
 - **Filtry**. Użyj filtrów, takich jak nadawca, adresat, data i temat, aby szybko zawęzić alerty o wiadomościach, które chcesz przejrzeć.
 
-### <a name="remediate"></a>Działania naprawcze
+### <a name="remediate"></a>Korygowanie
 
 Następnym krokiem jest naprawienie badanych problemów ze zgodnością w komunikacji przy użyciu następujących opcji:
 

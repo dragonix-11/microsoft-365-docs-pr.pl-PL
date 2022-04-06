@@ -19,12 +19,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej na temat poziomu ufności filtru spamu stosowanego do wiadomości w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a5a7bfd34fdb23b0bef94119f53adaa9ecc0c4a1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7783eb0655a6e3b0457a45057b920c87388e4c05
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984265"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682928"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Poziom ufności filtru spamu (SCL) w uchcie EOP
 
@@ -39,15 +39,12 @@ W organizacjach Microsoft 365 ze skrzynkami pocztowymi w organizacjach Exchange 
 
 Co oznacza wartość SCL i domyślne akcje podejmowane na wiadomościach, opisano w poniższej tabeli. Aby uzyskać więcej informacji na temat akcji, jakie można podjąć na podstawie werdyktu filtrowania spamu, zobacz Konfigurowanie zasad ochrony przed [spamem w uciekaniu poczty eOP](configure-your-spam-filter-policies.md).
 
-****
-
 |SCL|Definicja|Akcja domyślna|
 |:---:|---|---|
 |-1|Wiadomość pominięta w filtrowaniu spamu. Na przykład wiadomość pochodzi od bezpiecznego nadawcy, została wysłana do bezpiecznego adresata lub pochodzi z serwera źródła poczty e-mail na liście zezwalań adresów IP. Aby uzyskać więcej informacji, zobacz [Tworzenie bezpiecznych list nadawców w uciekacej u eop](create-safe-sender-lists-in-office-365.md).|Dostarczanie wiadomości do skrzynki odbiorczej adresatów.|
 |0, 1|Filtrowanie spamu określone, że wiadomość nie jest spamem.|Dostarczanie wiadomości do skrzynki odbiorczej adresatów.|
 |5, 6|Filtrowanie spamu oznaczało wiadomość jako **spam**|Dostarczanie wiadomości do folderu wiadomości-śmieci adresatów.|
 |9|Filtrowanie spamu oznaczało wiadomość jako **spam o dużej pewności**|Dostarczanie wiadomości do folderu wiadomości-śmieci adresatów.|
-|
 
 Przy filtrowaniu spamu nie jest używany filtr filtr spamu.
 

@@ -2,7 +2,7 @@
 title: Analiza zagrożeń w aplikacji Microsoft 365 Defender
 ms.reviewer: ''
 description: Dowiedz się więcej o wyłaniających się zagrożeniach i technikach ataków oraz o tym, jak je zatrzymać. Oceń ich wpływ na organizację i oceń odporność organizacji.
-keywords: analiza zagrożeń, ocena ryzyka, Microsoft 365 Defender, M365D, stan zaradczy, bezpieczna konfiguracja, usługa Microsoft Defender dla programu Office 365, usługa Microsoft Defender dla analizy zagrożeń Office 365, analiza zagrożeń MDO, zintegrowane dane analizy zagrożeń MDE i MDO, integracja danych analizy zagrożeń, zintegrowane Microsoft 365 Defender analizy zagrożeń
+keywords: analiza zagrożeń, ocena ryzyka, Microsoft 365 Defender, M365D, stan zaradczy, bezpieczna konfiguracja, Ochrona usługi Office 365 w usłudze Microsoft Defender, Ochrona usługi Office 365 w usłudze Microsoft Defender analizy zagrożeń, analizy zagrożeń MDO, zintegrowane dane analizy zagrożeń MDE i MDO, integracja danych analizy zagrożeń, zintegrowane analizy Microsoft 365 Defender zagrożeń
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5cb9f0db07ad29618e0dc9d053f4904a70ca52f6
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 40e14f0bb6e38a6923e5e1d454981d49932f7ea1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450090"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500700"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Analiza zagrożeń w aplikacji Microsoft 365 Defender
 
@@ -53,7 +53,7 @@ Obejrzyj ten krótki klip wideo, aby dowiedzieć się więcej o tym, jak analiza
 
 Możesz uzyskać dostęp do analizy zagrożeń z lewej górnej strony paska nawigacyjnego portalu zabezpieczeń lub z dedykowanej karty pulpitu nawigacyjnego, która pokazuje najważniejsze zagrożenia dla Twojej organizacji zarówno pod względem wpływu, jak i ekspozycji. Microsoft 365
 
-![Obraz pulpitu nawigacyjnego analizy zagrożeń.](../../media/threat-analytics/ta_inlandingpage_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="Strona docelowa analizy zagrożeń" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
 Zagrożenia o wysokim poziomie wpływu mają największy potencjał, który może spowodować krzywdę, natomiast zagrożenia wysokiego poziomu ekspozycji są tym, na które Twoje zasoby są najbardziej narażone. Widoczność aktywnych lub trwających kampanii i wiedza o tym, co należy zrobić za pomocą analizy zagrożeń, może ułatwić zespołowi ds. zabezpieczeń podejmowanie świadomych decyzji.
 
@@ -79,7 +79,7 @@ Pulpit nawigacyjny analizy zagrożeń ([security.microsoft.com/threatanalytics3]
 
 Wybierz zagrożenie z pulpitu nawigacyjnego, aby wyświetlić raport o tym zagrożeńu.
 
-![Zrzut ekranu przedstawiający pulpit nawigacyjny analizy zagrożeń.](../../media/threat-analytics/ta_dashboard_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="Pulpit nawigacyjny analizy zagrożeń" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
 _Pulpit nawigacyjny analizy zagrożeń. Możesz również wybrać pole Wyszukaj, aby na klawiaturze dodać słowo kluczowe związane z raportem analizy zagrożeń, który chcesz przeczytać._
 
@@ -98,7 +98,7 @@ Każdy raport analizy zagrożeń zawiera informacje w kilku sekcjach:
 
 Sekcja **Omówienie** zawiera podgląd szczegółowego raportu analityka. Zawiera on również wykresy, które podkreślają wpływ zagrożenia na organizację i ekspozycję użytkowników za pośrednictwem nieprawidłowo skonfigurowanych i nieskomponowanych urządzeń.
 
-![Obraz sekcji przeglądu raportu analizy zagrożeń.](../../media/threat-analytics/ta_overview_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_overview_mtp.png" alt-text="Sekcja przeglądu raportu analizy zagrożeń" lightbox="../../media/threat-analytics/../../media/threat-analytics/ta_overview_mtp.png":::
 
 _Sekcja Przegląd raportu analizy zagrożeń_
 
@@ -139,15 +139,15 @@ Zespół analizy zagrożeń firmy Microsoft dodał tagi zagrożeń do każdego r
   - Grupa działań
 - Tagi zagrożeń są prezentowane w górnej części strony analizy zagrożeń. Liczba dostępnych raportów pod każdym tagiem jest licznikami.
 
-  ![znaczniki zagrożeń.](../../media/threat-analytics/ta-threattags-mtp.png)
+  :::image type="content" source="../../media/threat-analytics/ta-threattags-mtp.png" alt-text="Tagi zagrożeń" lightbox="../../media/threat-analytics/ta-threattags-mtp.png":::
 
 - Listę można też sortować według tagów zagrożeń:
 
-  ![listy.](../../media/threat-analytics//ta-taglist-mtp.png)
+  :::image type="content" source="../../media/threat-analytics//ta-taglist-mtp.png" alt-text="Sekcja Znaczniki zagrożeń" lightbox="../../media/threat-analytics//ta-taglist-mtp.png":::
 
 - Filtry są dostępne dla 1 tagu zagrożeń i typu raportu:
 
-  ![filtry.](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+  :::image type="content" source="../../media/threat-analytics/ta-threattag-filters-mtp.png" alt-text="Strona Filtry" lightbox="../../media/threat-analytics/ta-threattag-filters-mtp.png":::
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Raport analityka: Uzyskiwanie informacji ekspertów na temat specjalistów od zabezpieczeń firmy Microsoft
 
@@ -157,9 +157,9 @@ W sekcji **Raport analityka** przeczytaj szczegółowy opis eksperta. Większoś
 
 ### <a name="related-incidents-view-and-manage-related-incidents"></a>Zdarzenia pokrewne: wyświetlanie powiązanych zdarzeń i zarządzanie nimi
 
-Na **karcie Zdarzenia pokrewne** jest wyświetlona lista wszystkich zdarzeń związanych z monitorowanym zagrożeniem. Możesz przypisywać zdarzenia lub zarządzać alertami połączonymi z każdym zdarzeniem.
+Na **karcie Zdarzenia pokrewne** jest wyświetlona lista wszystkich zdarzeń związanych z monitorowanym zagrożeniem. Możesz przypisywać zdarzenia lub zarządzać alertami połączonymi z każdym zdarzeniem. 
 
-![Obraz sekcji związanej z incydentami w raporcie analizy zagrożeń.](../../media/threat-analytics/ta_related_incidents_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_related_incidents_mtp.png" alt-text="Sekcja powiązanych zdarzeń w raporcie analizy zagrożeń" lightbox="../../media/threat-analytics/ta_related_incidents_mtp.png":::
 
 _Sekcja powiązanych zdarzeń w raporcie analizy zagrożeń_
 
@@ -167,20 +167,20 @@ _Sekcja powiązanych zdarzeń w raporcie analizy zagrożeń_
 
 Za środek trwały zostanie uznany wpływ, jeśli zostanie on rozwiązany przez aktywny alert, który nie został rozwiązany. Karta **Zasoby, których** wpływ ma wpływ, zawiera listę następujących typów środków trwałych, których wpływ będzie mieć wpływ:
 
-- **Urządzenia, których problem ma** wpływ, czyli punkty końcowe, które nie zostały rozwiązane w programie Microsoft Defender dla alertów dotyczących punktów końcowych. Alerty te zwykle są wyzsłane na podstawie znanych wskaźników zagrożeń i działań.
-- **Skrzynki pocztowe, których to** wpływ — skrzynki pocztowe, które otrzymały wiadomości e-mail, wyzwolone przez program Microsoft Defender Office 365 alerty. Mimo że większość wiadomości wywołujących alerty jest zwykle blokowana, zasady na poziomie użytkownika lub organizacji mogą zastępować filtry.
+- **Urządzenia, których problem może** wpływać — punkty końcowe, które nie mają rozwiązania Ochrona punktu końcowego w usłudze Microsoft Defender alertów. Alerty te zwykle są wyzsłane na podstawie znanych wskaźników zagrożeń i działań.
+- **Skrzynki pocztowe, których problem może** wpływać na skrzynki pocztowe, które otrzymały wiadomości e-mail z Ochrona usługi Office 365 w usłudze Microsoft Defender alertami. Mimo że większość wiadomości wywołujących alerty jest zwykle blokowana, zasady na poziomie użytkownika lub organizacji mogą zastępować filtry.
 
-![Obraz sekcji zasobów, na które wpływa raport analizy zagrożeń.](../../media/threat-analytics/ta_impacted_assets_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="Sekcja &quot;Zasoby, których to wpływa&quot; w raporcie analizy zagrożeń" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
 
 _Sekcja "Zasoby, których to wpływa" w raporcie analizy zagrożeń_
 
 ### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>Uniemożliwiane próby wiadomości e-mail: Wyświetlanie wiadomości e-mail z zablokowanymi lub wiadomościami-śmieciami z zagrożeniami
 
-Program Microsoft Defender for Office 365 zazwyczaj blokuje wiadomości e-mail ze znanymi wskaźnikami zagrożeń, w tym złośliwymi linkami lub załącznikami. W niektórych przypadkach aktywne mechanizmy filtrowania, które sprawdzają podejrzaną zawartość, będą zamiast tego wysyłać do folderu wiadomości-śmieci wiadomości e-mail zawierające zagrożenia. W obu przypadkach szanse na uruchomienie kodu złośliwego oprogramowania na urządzeniu są ograniczone.
+Ochrona usługi Office 365 w usłudze Microsoft Defender zazwyczaj blokuje wiadomości e-mail ze znanymi wskaźnikami zagrożeń, w tym złośliwymi linkami lub załącznikami. W niektórych przypadkach aktywne mechanizmy filtrowania, które sprawdzają podejrzaną zawartość, będą zamiast tego wysyłać do folderu wiadomości-śmieci wiadomości e-mail zawierające zagrożenia. W obu przypadkach szanse na uruchomienie kodu złośliwego oprogramowania na urządzeniu są ograniczone.
 
-Karta **Uniemożliwiane próby wysłania wiadomości e-mail** zawiera listę wszystkich wiadomości e-mail, które zostały zablokowane przed dostarczeniem lub wysłane do folderu wiadomości-śmieci przez usługę Microsoft Defender dla systemu Office 365.
+Karta **Uniemożliwiaj próby wysłania** wiadomości e-mail zawiera listę wszystkich wiadomości e-mail, które zostały zablokowane przed dostarczeniem lub wysłane do folderu wiadomości-śmieci przez Ochrona usługi Office 365 w usłudze Microsoft Defender.
 
-![Obraz sekcji informacji o próbach wiadomości e-mail w raporcie analizy zagrożeń.](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="Sekcja informacji o próbach wiadomości e-mail w raporcie analizy zagrożeń" lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
 
 _Sekcja informacji o próbach wiadomości e-mail w raporcie analizy zagrożeń_
 
@@ -196,9 +196,9 @@ W sekcji **Ekspozycja &** środki zaradcze przejrzyj listę konkretnych zaleceń
 
 Środki zaradcze zawarte w tej sekcji zawierają dane [Zarządzanie zagrożeniami i lukami, które](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) zawierają również szczegółowe informacje na temat przechodzenia do szczegółów z różnych łączy w raporcie.
 
-![Obraz sekcji dotyczącej zagrożeń w raporcie analizy zagrożeń ze szczegółami bezpiecznej konfiguracji.](../../media/threat-analytics/ta_mitigations_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="Sekcja środków zaradczych w raporcie analizy zagrożeń ze szczegółami bezpiecznej konfiguracji" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
-![Obraz sekcji dotyczącej zagrożeń w raporcie analizy zagrożeń ze szczegółami luk.](../../media/threat-analytics/ta_mitigations_mtp2.png)
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp2.png" alt-text="Sekcja środków zaradczych w raporcie analizy zagrożeń ze szczegółami luk w zabezpieczeniach" lightbox="../../media/threat-analytics/ta_mitigations_mtp2.png":::
 
 _Sekcja & wpływu na raport analizy zagrożeń_
 
@@ -246,15 +246,15 @@ Aby skonfigurować powiadomienia e-mail na temat raportów analizy zagrożeń, w
 ## <a name="additional-report-details-and-limitations"></a>Dodatkowe szczegóły i ograniczenia dotyczące raportu
 
 > [!NOTE]
-> W ramach ujednoliconego systemu zabezpieczeń analiza zagrożeń jest teraz dostępna nie tylko dla programu Microsoft Defender for Endpoint, ale również dla programu Microsoft Defender dla posiadaczy licencji Office E5.
+> W ramach ujednoliconego systemu zabezpieczeń analiza zagrożeń jest teraz dostępna nie tylko dla użytkowników pakietu Ochrona punktu końcowego w usłudze Microsoft Defender, ale również dla programu Microsoft Defender dla posiadaczy licencji Office E5.
 >
-> Jeśli nie korzystasz z portalu zabezpieczeń Microsoft 365 (Microsoft 365 Defender), możesz również wyświetlić szczegóły raportu (bez programu Microsoft Defender dla danych programu Office) w portalu programu Centrum zabezpieczeń usługi Microsoft Defender (program Microsoft Defender dla Punkt końcowy).
+> Jeśli nie korzystasz z portalu zabezpieczeń usługi Microsoft 365 (Microsoft 365 Defender), możesz również wyświetlić szczegóły raportu (bez programu Microsoft Defender dla danych programu Office) w portalu Centrum zabezpieczeń usługi Microsoft Defender ( Ochrona punktu końcowego w usłudze Microsoft Defender).
 
 Aby uzyskać dostęp do raportów analizy zagrożeń, musisz mieć określone role i uprawnienia. Aby [uzyskać szczegółowe informacje, zobacz](custom-roles.md) Role niestandardowe w kontrolach dostępu opartych na Microsoft 365 Defender rolach.
 
-- Aby wyświetlać alerty, zdarzenia lub dane zasobów, których to problem, musisz mieć uprawnienia do usługi Microsoft Defender dla programu Office lub usługi Microsoft Defender dla danych alertów punktu końcowego lub obu tych usług.
+- Aby wyświetlać alerty, zdarzenia lub dane zasobów, których to problem, musisz mieć uprawnienia do usługi Microsoft Defender dla systemu Office lub Ochrona punktu końcowego w usłudze Microsoft Defender alertów lub obu tych alertów.
 - Aby wyświetlić uniemożliwiane próby poczty e-mail, musisz mieć uprawnienia do programu Microsoft Defender do Office przechowywania danych.
-- Aby wyświetlić środki zaradcze, musisz mieć uprawnienia do Zarządzanie zagrożeniami i lukami danych w programie Microsoft Defender for Endpoint.
+- Aby wyświetlić środki zaradcze, musisz mieć uprawnienia do Zarządzanie zagrożeniami i lukami danych w Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 Patrząc na dane analizy zagrożeń, pamiętaj o następujących czynnikach:
 

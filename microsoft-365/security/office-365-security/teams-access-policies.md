@@ -20,16 +20,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ec4aa28c25982ea81662ff26fa19f615d13cd314
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: b659853d9323b4a1503cd75cff66a83cbd06e85e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465404"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682906"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Zalecenia dotyczące zasad dotyczące zabezpieczania Teams czatów, grup i plików
 
-W tym artykule opisano, jak wdrożyć zalecane zasady Zero Trust tożsamości i dostępu do urządzeń w celu ochrony Microsoft Teams czatów, grup i zawartości, takiej jak pliki i kalendarze. Ten przewodnik opiera się na wspólnych zasadach dostępu do [tożsamości](identity-access-policies.md) i urządzeń oraz zawiera dodatkowe informacje Teams specyficzne dla urządzenia. Ponieważ Teams z innymi naszymi produktami, zobacz też Zalecenia dotyczące zasad [](sharepoint-file-access-policies.md) dotyczące SharePoint witryn i plików oraz Zalecenia dotyczące zasad dotyczące [zabezpieczania poczty e-mail](secure-email-recommended-policies.md).
+W tym artykule opisano, jak wdrożyć zalecane zasady dostępu do urządzeń i tożsamości bez zaufania w celu ochrony Microsoft Teams czatów, grup i zawartości, takiej jak pliki i kalendarze. Ten przewodnik opiera się na wspólnych zasadach dostępu do [tożsamości](identity-access-policies.md) i urządzeń oraz zawiera dodatkowe informacje Teams specyficzne dla urządzenia. Ponieważ Teams z innymi naszymi produktami, zobacz też Zalecenia dotyczące zasad [](sharepoint-file-access-policies.md) dotyczące SharePoint witryn i plików oraz Zalecenia dotyczące zasad dotyczące [zabezpieczania poczty e-mail](secure-email-recommended-policies.md).
 
 Zalecenia te są oparte na trzech różnych warstwach zabezpieczeń i ochrony dla Teams, które można stosować w zależności od stopnia szczegółowości Twoich potrzeb: punktu początkowego, przedsiębiorstwa i wyspecjalizowanego zabezpieczeń. Więcej informacji o tych warstwach zabezpieczeń i zalecanych zasadach można znaleźć w te zaleceniach w konfiguracjach tożsamości [i dostępu do urządzeń](microsoft-365-policies-configurations.md).
 
@@ -49,7 +49,7 @@ Aby rozpocząć pracę z usługami zależnych, nie Microsoft Teams. Wszystkie te
 
 Aby chronić czat, grupy i zawartość w Teams, na poniższym diagramie pokazano zasady, które należy aktualizować na przykładach typowych zasad dostępu do urządzeń i tożsamości. Przy każdej aktualizacji zasad upewnij się, że Teams usługi zależne są uwzględnione w przypisaniu aplikacji w chmurze.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="Podsumowanie aktualizacji zasad w celu ochrony dostępu do usług Teams i ich usług zależnych" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="Podsumowanie aktualizacji zasad w celu ochrony dostępu do usług Teams i ich usług zależnych." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 
 Te usługi to usługi zależne, które należy uwzględnić przy przypisywaniu aplikacji w chmurze dla Teams:
 
@@ -58,7 +58,7 @@ Te usługi to usługi zależne, które należy uwzględnić przy przypisywaniu a
 - Exchange Online
 - Skype dla firm Online
 - Microsoft Stream (nagrania ze spotkań)
-- Microsoft Planner (zadania aplikacji Planner i dane planu)
+- Microsoft Planner (zadania usługi Planner i dane planu)
 
 W poniższej tabeli wymieniono [zasady, które](identity-access-policies.md) trzeba ponownie wyświetlać, oraz linki do poszczególnych zasad we wspólnych zasadach dostępu do tożsamości i urządzeń, które mają szerszy zestaw zasad dla wszystkich Office aplikacji.
 
@@ -77,7 +77,7 @@ W poniższej tabeli wymieniono [zasady, które](identity-access-policies.md) trz
 
 Na poniższym diagramie pokazano usługi, na których Teams korzysta. Aby uzyskać więcej informacji i ilustracji, zobacz Microsoft Teams i powiązane usługi zwiększające produktywność w Microsoft 365 [dla architektów IT](../../solutions/productivity-illustrations.md).
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="Diagram przedstawiający Teams zależności między SharePoint, OneDrive dla Firm i Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="Diagram przedstawiający Teams zależności między SharePoint, OneDrive dla Firm i Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 
 ## <a name="guest-and-external-access-for-teams"></a>Dostęp gościa i dostępu zewnętrznego do Teams
 
@@ -140,7 +140,7 @@ Aby uzyskać więcej informacji na temat zasad uprawnień aplikacji, zobacz [Zar
 
 ## <a name="next-steps"></a>Następne kroki
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Krok 4. Zasady dotyczące aplikacji Microsoft 365 chmurze" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+![Krok 4. Zasady dotyczące aplikacji Microsoft 365 chmurze.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Skonfiguruj zasady dostępu warunkowego dla:
 

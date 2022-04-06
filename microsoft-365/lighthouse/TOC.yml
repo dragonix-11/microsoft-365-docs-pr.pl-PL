@@ -1,64 +1,64 @@
 - name: Microsoft 365 Lighthouse
   items:
-    - name: Omówienie Microsoft 365 Lighthouse
+    - name: Omówienie portalu Microsoft 365 Lighthouse
       href: m365-lighthouse-overview.md
-    - name: Wymagania dotyczące Microsoft 365 Lighthouse
+    - name: Wymagania dotyczące portalu Microsoft 365 Lighthouse
       href: m365-lighthouse-requirements.md
 - name: Wprowadzenie
   items:
-    - name: Zarejestruj się
+    - name: Tworzenie konta
       href: m365-lighthouse-sign-up.md
-- name: Zabezpieczanie Microsoft 365 Lighthouse
+- name: Zabezpieczenie portalu Microsoft 365 Lighthouse
   items:
     - name: Konfigurowanie zabezpieczeń portalu
       href: m365-lighthouse-configure-portal-security.md
-    - name: Konfigurowanie ról
-      href: m365-lighthouse-set-up-roles.md
+    - name: Omówienie uprawnień
+      href: m365-lighthouse-overview-of-permissions.md
     - name: Przeglądanie dzienników inspekcji
       href: m365-lighthouse-review-audit-logs.md
 - name: Ochrona klientów za pomocą planu bazowego
   items:
-    - name: Omówienie wdrażania standardowych konfiguracji dzierżawy przy użyciu planu bazowego
+    - name: Omówienie wdrażania standardowych konfiguracji dzierżawy przy użyciu planów bazowych
       href: m365-lighthouse-deploy-standard-tenant-configurations-overview.md
-    - name: Wdrażanie planu bazowego
+    - name: Wdrażanie planów bazowych
       href: m365-lighthouse-deploy-baselines.md
 - name: Zarządzanie dzierżawami
   items:
-    - name: Omówienie strony Dzierżawy
+    - name: Omówienie strony dzierżawy
       href: m365-lighthouse-tenants-page-overview.md
     - name: Zarządzanie listą dzierżaw
       href: m365-lighthouse-manage-tenant-list.md
-    - name: Wyświetlanie kondycji usług dzierżawy
+    - name: Wyświetlanie kondycji usługi dzierżawy
       href: m365-lighthouse-view-service-health.md
 - name: Zarządzanie użytkownikami w dzierżawach
   items:
-    - name: Omówienie strony Użytkownicy
+    - name: Omówienie strony użytkowników
       href: m365-lighthouse-users-page-overview.md
     - name: Blokowanie logowania użytkownika
       href: m365-lighthouse-block-user-signin.md
     - name: Zarządzanie uwierzytelnianiem wieloskładnikowym
       href: m365-lighthouse-manage-mfa.md
-    - name: Zarządzanie samodzielnego resetowania hasła
+    - name: Zarządzanie samodzielnym resetowaniem hasła
       href: m365-lighthouse-manage-sspr.md
     - name: Resetowanie hasła użytkownika
       href: m365-lighthouse-reset-user-password.md
-    - name: Wyszukiwanie użytkowników
+    - name: Wyszukaj użytkowników
       href: m365-lighthouse-search-for-users.md
-    - name: Wyświetlanie ryzykownych użytkowników i zarządzanie nimi
+    - name: Podgląd i zarządzanie użytkownikami stwarzającymi zagrożenie
       href: m365-lighthouse-view-manage-risky-users.md
 - name: Zarządzanie urządzeniami
   items:
     - name: Omówienie strony zgodności urządzenia
       href: m365-lighthouse-device-compliance-page-overview.md
-    - name: Porównanie ustawień zasad zgodności urządzeń
+    - name: Porównanie ustawień zasad zgodności urządzenia
       href: m365-lighthouse-compare-compliance-policies.md
-    - name: Omówienie Windows usługi Windows 365 (Komputery w chmurze)
+    - name: Omówienie strony usługi Windows 365 (komputery w chmurze)
       href: m365-lighthouse-win365-page-overview.md
 - name: Zarządzanie zagrożeniami
   items:
-    - name: Omówienie strony Zarządzanie zagrożeniami
+    - name: Omówienie strony zarządzania zagrożeniami
       href: m365-lighthouse-threat-management-page-overview.md
-    - name: Ograniczanie zagrożeń za pomocą Program antywirusowy Microsoft Defender
+    - name: Ograniczanie zagrożeń za pomocą programu antywirusowego Microsoft Defender
       href: m365-lighthouse-mitigate-threats.md
 - name: Uzyskiwanie pomocy i obsługi technicznej
   items:
@@ -66,7 +66,7 @@
       href: m365-lighthouse-get-help-and-support.md
     - name: Znane problemy
       href: m365-lighthouse-known-issues.md
-    - name: Rozwiązywanie problemów i komunikatów o błędach
+    - name: Rozwiązywanie i usuwanie problemów i komunikatów o błędach
       href: m365-lighthouse-troubleshoot.md
-    - name: Często zadawane pytania (często zadawane pytania)
+    - name: Często zadawane pytania
       href: m365-lighthouse-faq.yml

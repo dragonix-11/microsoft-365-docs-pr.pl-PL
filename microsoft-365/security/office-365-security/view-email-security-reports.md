@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1d7d3dab26d4f9034294b2780875d33cb2fbef3
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: b6d085d2e3c1e9c1e032f468f56d67a393269fe1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557949"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683060"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail
 
@@ -48,10 +48,6 @@ W portalu usługi Microsoft 365 Defender <https://security.microsoft.com> pod ad
 
 Raporty Exchange Online Protection (EOP) i Microsoft Defender dla programu Office 365 w portalu programu Microsoft 365 Defender, które zostały zamienione, przeniesione lub wycofane, opisano w poniższej tabeli.
 
-<br>
-
-****
-
 |Przestarzały raport i polecenia cmdlet|Nowy raport i polecenia cmdlet|Identyfikator Centrum wiadomości|Data|
 |---|---|:---:|:---:|
 |**Śledzenie adresu URL** <p> Get-URLTrace|[Raport ochrony adresu URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC2399999|Czerwiec 2021|
@@ -62,9 +58,8 @@ Raporty Exchange Online Protection (EOP) i Microsoft Defender dla programu Offic
 |**Złośliwe oprogramowanie wykryte w raporcie poczty e-mail** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Raport o stanie ochrony przed zagrożeniami: Wyświetlanie danych za pomocą złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Czerwiec 2021|
 |**Raport wykrywania spamu** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Raport o stanie ochrony przed zagrożeniami: Wyświetlanie danych według wiadomości e-mail ze \> spamem](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Październik 2021|
 |Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|Maj 2022 r.|
-|**Exchange reguł transportu** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange raportu o regułach transportu w Programie komunikacji elektronicznej](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> brak polecenia cmdlet|MC316157|Kwiecień 2022 r.|
+|**Exchange reguł transportu** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange raportu o regułach transportu w Programie komunikacji elektronicznej](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|Kwiecień 2022 r.|
 |Get-MailTrafficTopReport|[Raport o stanie ochrony przed zagrożeniami: Wyświetlanie danych za pomocą złośliwego oprogramowania poczty e-mail \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Uwaga**: Nie zastępuje on funkcji raportowania szyfrowania w aplikacji Get-MailTrafficTopReport.|MC315742|Kwiecień 2022 r.|
-|
 
 ## <a name="compromised-users-report"></a>Raport naruszonych użytkowników
 
@@ -341,7 +336,7 @@ Raport **Wykrywanie fałszu** zawiera informacje o wiadomościach zablokowanych 
 
 Widok zagregowany raportu umożliwia filtrowanie przez 90 dni, natomiast widok szczegółowy umożliwia filtrowanie tylko przez dziesięć dni.
 
-Aby wyświetlić raport w portalu Microsoft 365 Defender,  \>  \> przejdź do tematu Raporty wiadomości e-mail i & e-mail & **raportów współpracy**. Na stronie **Raporty &-mail** znajdź pozycję Wykrywanie **fałszu** , a następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz program <https://security.microsoft.com/reports/SpoofMailReportV2>.
+Aby wyświetlić raport w portalu Microsoft 365 Defender,  \>  \> przejdź do tematu Raporty wiadomości e-mail i & e-mail & **raportów współpracy**. Na stronie **Raporty &-mail** znajdź pozycję Wykrywanie **fałszu** , a następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz program <https://security.microsoft.com/reports/SpoofMailReport>.
 
 ![Widżet Wykrywanie fałszu na stronie Raporty o & e-mail.](../../media/spoof-detections-widget.png)
 

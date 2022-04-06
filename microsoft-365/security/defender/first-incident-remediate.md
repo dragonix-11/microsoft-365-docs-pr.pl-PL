@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: b6872fb13ba1a32f081b5fcc82fd590f2c196a6c
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499952"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569562"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Krok nr 2. Rozwiązywanie pierwszego zdarzenia
 
@@ -90,8 +90,6 @@ Oto przykład.
 Podręczniki można również tworzyć podczas przeglądu [po](first-incident-post.md) incydentach w celu tworzenia działań naprawczych na podstawie rozwiązanych zdarzeń. 
 
 ## <a name="next-step"></a>Następny krok
-
-[![Krok 3. Dowiedz się, jak przeprowadzić przegląd zdarzenia po zdarzeniu.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 Dowiedz się, [jak przeprowadzić przegląd po zdarzeniu.](first-incident-post.md)
 

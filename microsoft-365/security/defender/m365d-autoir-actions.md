@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 775781a5df9149ae99f1a051303f5d55c23f1bab
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a77a64e2323cc836df9b19694deb5c32ee877fb8
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323237"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500810"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Wyświetlanie akcji i zarządzanie nimi w Centrum akcji
 
@@ -57,7 +57,7 @@ Jak najszybciej należy zatwierdzić (lub odrzucić) oczekujące akcje, aby zaut
 
 3. W Centrum akcji **na karcie** Oczekiwanie zaznacz element na liście. Zostanie otwarte okienko wysuwu. Oto przykład.
 
-   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Przykład zatwierdzania lub odrzucania akcji." lightbox="../../media/air-actioncenter-itemselected.png":::
+   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Opcje zatwierdzania lub odrzucania akcji" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 4. Przejrzyj informacje w okienku wysuwu, a następnie zrób tak:
    - Wybierz **pozycję Otwórz stronę badania,** aby wyświetlić więcej szczegółów dotyczących badania.

@@ -1,7 +1,7 @@
 ---
-title: Co nowego w programie Microsoft Defender dla punktu końcowego na komputerze Mac
-description: Dowiedz się więcej o głównych zmianach dotyczących poprzednich wersji programu Microsoft Defender dla punktu końcowego na komputerze Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
+title: Co nowego w programie Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac
+description: Poznaj główne zmiany wprowadzone w poprzednich wersjach programu Ochrona punktu końcowego w usłudze Microsoft Defender komputerów Mac.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, instalacja, macos, whatsnew
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -15,22 +15,26 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 80245af54aa6f7a3328515257fe6e6e73f0739b0
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: d8b2c7725354facb01f8b12af502aae19856afe8
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401038"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500744"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Co nowego w programie Microsoft Defender dla punktu końcowego na komputerze Mac
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Co nowego w programie Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1016169-20122022161690"></a>101.61.69 (20.122022.16169.0)
+
+- Poprawki błędów
 
 ## <a name="1016091-20122021160910"></a>101.60.91 (20.122021.16091.0)
 
@@ -39,8 +43,8 @@ ms.locfileid: "63401038"
 ## <a name="1015950-20122021159500"></a>101.59.50 (20.122021.15950.0)
 
 - Ta wersja dodaje obsługę systemu macOS 12.3. Począwszy od wersji 12.3 w systemie macOS, [firma Apple usuwa język Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). Domyślnie w systemie macOS nie będzie preinstalowana wersja w języku Python. **WYMAGANE DZIAŁANIE**: 
-  - Użytkownicy muszą zaktualizować program Microsoft Defender for Endpoint dla komputerów Mac do wersji 101.59.50 (lub nowszej) przed zaktualizowaniem swoich urządzeń do systemu macOS Monterey 12.3 (lub nowszego). Ta minimalna wersja 101.59.50 jest wymagane do wyeliminowania problemów związanych z programem Python z programem Microsoft Defender for Endpoint dla komputerów Mac w systemie macOS Monterey.
-  - W przypadku wdrożeń zdalnych istniejące konfiguracje usługi MDM muszą zostać zaktualizowane do programu Microsoft Defender dla punktu końcowego dla komputerów Mac w wersji 101.59.50 (lub nowszej). Wypychanie za pośrednictwem usługi MDM starszej wersji programu Microsoft Defender dla punktu końcowego dla komputerów Mac do systemu macOS Monterey 12.3 (lub nowszego) spowoduje niepowodzenie instalacji.
+  - Użytkownicy muszą zaktualizować system Ochrona punktu końcowego w usłudze Microsoft Defender dla komputerów Mac do wersji 101.59.50 (lub nowszej) przed zaktualizowaniem swoich urządzeń do systemu macOS Monterey 12.3 (lub nowszego). Ta minimalna wersja 101.59.50 jest wymagane do wyeliminowania problemów związanych z językem Python w programie Ochrona punktu końcowego w usłudze Microsoft Defender dla komputerów Mac w systemie macOS Monterey.
+  - W przypadku wdrożeń zdalnych istniejące konfiguracje usługi MDM muszą zostać zaktualizowane do Ochrona punktu końcowego w usłudze Microsoft Defender 101.59.50 dla komputerów Mac (lub nowszej). Wypychanie przez usługę MDM starszej wersji Ochrona punktu końcowego w usłudze Microsoft Defender dla komputerów Mac do systemu macOS Monterey 12.3 (lub nowszego) spowoduje niepowodzenie instalacji.
 
 ## <a name="1015910-20122012159100"></a>101.59.10 (20.122012.15910.0)
 
@@ -58,10 +62,10 @@ ms.locfileid: "63401038"
 - Nazwa aplikacji została zmieniona z "Microsoft Defender ATP" na "Microsoft Defender". Użytkownicy końcowi będą obserwować następujące zmiany:
   - Ścieżka instalacji aplikacji została zmieniona z `/Application/Microsoft Defender ATP.app` `/Applications/Microsoft Defender.app`na .
   - W ramach obsługi użytkownika wystąpienia "Microsoft Defender ATP" zostały zastąpione przez program "Microsoft Defender"
-- Rozwiązano problem, gdy niektóre aplikacje VPN nie mogły się połączyć z powodu filtru zawartości sieci, który jest rozpowszechniany z programem Microsoft Defender for Endpoint dla komputerów Mac
-- Rozwiązano problem wykryty w systemie macOS 12.2 beta 2, w którym nie można otworzyć pakietu instalacyjnego z powodu zmiany systemu operacyjnego uniemożliwiającego instalowanie pakietów o określonych cechach. Mimo że ta zmiana systemu operacyjnego nie jest uwzględniona w ostatecznej wersji systemu macOS 12.2, prawdopodobnie zostanie ona ponownie włączona w przyszłej wersji systemu macOS. W związku z tym zachęcamy wszystkich administratorów przedsiębiorstwa do odświeżenia pakietu Microsoft Defender for Endpoint w ich konsoli zarządzania do tej wersji produktu (lub nowszej).
+- Rozwiązano problem, gdy niektóre aplikacje VPN nie mogły się połączyć z powodu filtru zawartości sieci, który jest rozpowszechniany z programem Ochrona punktu końcowego w usłudze Microsoft Defender dla komputerów Mac
+- Rozwiązano problem wykryty w systemie macOS 12.2 beta 2, w którym nie można otworzyć pakietu instalacyjnego z powodu zmiany systemu operacyjnego uniemożliwiającego instalowanie pakietów o określonych cechach. Mimo że ta zmiana systemu operacyjnego nie jest uwzględniona w ostatecznej wersji systemu macOS 12.2, prawdopodobnie zostanie ona ponownie włączona w przyszłej wersji systemu macOS. W związku z tym zachęcamy wszystkich administratorów przedsiębiorstwa do odświeżenia pakietu Ochrona punktu końcowego w usłudze Microsoft Defender w ich konsoli zarządzania do tej wersji produktu (lub nowszej).
 - Rozwiązano problem spotykany na niektórych urządzeniach M1, na których produkt utknął z nieprawidłowymi definicjami złośliwych kodów i nie mógł pomyślnie zaktualizować do zestawu roboczej definicji.
-- `mdatp health` Rozszerzono dane wyjściowe o `full_disk_access_enabled` dodatkowy atrybut, który może zostać użyty w celu określenia, czy pełny dostęp na dysku został przyznany wszystkim składnikom programu Microsoft Defender for Endpoint dla komputerów Mac.
+- `mdatp health`Rozszerzono dane wyjściowe o `full_disk_access_enabled` dodatkowy atrybut, który może zostać użyty w celu określenia, czy pełny dostęp do dysku został przyznany wszystkim składnikom programu Ochrona punktu końcowego w usłudze Microsoft Defender komputerów Mac.
 - Ulepszenia wydajności & poprawki błędów
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
@@ -117,7 +121,7 @@ ms.locfileid: "63401038"
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0)
 
-- Rozwiązano problem, w którym współbieżny dostęp do keychain z usługi Microsoft Defender for Endpoint i innych aplikacji może powodować uszkodzenie keychain.
+- Rozwiązano problem, gdy współbieżny dostęp do keychain z programu Ochrona punktu końcowego w usłudze Microsoft Defender i innych aplikacji może powodować uszkodzenie keychain.
 
 ## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0)
 
@@ -133,7 +137,7 @@ ms.locfileid: "63401038"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
-- Program Microsoft Defender for Endpoint w systemie macOS jest teraz dostępny w wersji preview dla klientów z wersjami dla instytucji rządowych Stanów Zjednoczonych. Aby uzyskać więcej informacji, zobacz [Program Microsoft Defender for Endpoint dla klientów z instytucji rządowych Stanów Zjednoczonych](gov.md).
+- Ochrona punktu końcowego w usłudze Microsoft Defender macOS jest teraz dostępny w wersji preview dla klientów z wersjami dla instytucji rządowych Stanów Zjednoczonych. Aby uzyskać więcej informacji, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych Stanów Zjednoczonych](gov.md).
 - Ulepszenia wydajności (w szczególności w sytuacji, gdy jest używana aplikacja kod XCode) & poprawki błędów.
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
@@ -154,7 +158,7 @@ ms.locfileid: "63401038"
 > [!NOTE]
 > W tym wydaniu stara składnia narzędzia wiersza polecenia została wycofana. Aby uzyskać informacje na temat nowej składni, zobacz [Zasoby](mac-resources.md#configuring-from-the-command-line).
 
-- Dodano nowy przełącznik wiersza polecenia, aby wyłączyć rozszerzenie sieci: `mdatp system-extension network-filter disable`. To polecenie może być przydatne do rozwiązywania problemów z siecią, które mogą być związane z programem Microsoft Defender for Endpoint na komputerze Mac
+- Dodano nowy przełącznik wiersza polecenia, aby wyłączyć rozszerzenie sieci: `mdatp system-extension network-filter disable`. To polecenie może być przydatne do rozwiązywania problemów z siecią, które mogą być związane z programem Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac
 - Ulepszenia wydajności & poprawki błędów
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
@@ -169,7 +173,7 @@ ms.locfileid: "63401038"
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
 
-- Usunięto warunki, gdy program Microsoft Defender dla punktu końcowego wyzwalał błąd macOS 11 (Big Sur), który pojawia się w paniki kernelu
+- Usunięto warunki, gdy Ochrona punktu końcowego w usłudze Microsoft Defender wyzwolił błąd macOS 11 (Big Sur), który pojawia się w paniki kernelu
 - Usunięto wyciek pamięci w rozszerzeniu systemu zabezpieczeń punktu końcowego podczas uruchamiania na komputerze Mac 11 (Big Sur)
 - Poprawki błędów
 
@@ -187,7 +191,7 @@ ms.locfileid: "63401038"
 
 - Ta wersja produktu została zweryfikowana w systemie macOS Big Sur 11 beta 9
 
-- Nowa składnia narzędzia `mdatp` wiersza polecenia jest teraz składnią domyślną. Aby uzyskać więcej informacji na temat nowej składni, zobacz [Zasoby dotyczące programu Microsoft Defender dla punktu końcowego w systemie macOS.](mac-resources.md#configuring-from-the-command-line)
+- Nowa składnia narzędzia `mdatp` wiersza polecenia jest teraz składnią domyślną. Aby uzyskać więcej informacji na temat nowej składni, zobacz [Zasoby dla użytkowników Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS.](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
   > Stara składnia narzędzia wiersza polecenia zostanie usunięta z produktu **1 stycznia 2021 r**.
@@ -244,15 +248,15 @@ ms.locfileid: "63401038"
 
 ## <a name="1010031"></a>101.00.31
 
-- Ulepszone [środowisko dołączania produktu dla użytkowników usługi Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)
+- Ulepszone [środowisko dołączania do produktu dla Intune użytkowników](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - [Wykluczenia oprogramowania antywirusowego obsługują teraz symbole wieloznaczne](mac-exclusions.md#supported-exclusion-types)
-- Dodano możliwość wyzwalania skanów antywirusowych z menu kontekstowego systemu macOS. Teraz możesz kliknąć prawym przyciskiem myszy plik lub folder w programie Finder i wybrać polecenie **Skanuj za pomocą programu Microsoft Defender w celu wybrania punktu końcowego**
+- Dodano możliwość wyzwalania skanów antywirusowych z menu kontekstowego systemu macOS. Teraz możesz kliknąć prawym przyciskiem myszy plik lub folder w programie Finder i wybrać pozycję **Skanuj za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender**
 - Zmiany na starszą wersję produktu w miejscu są teraz jawnie niedozwolone przez instalatora. Jeśli chcesz zmienić wersję na starszą, najpierw odinstaluj istniejącą wersję i ponownie skonfiguruj swoje urządzenie
 - Inne ulepszenia wydajności & poprawek błędów
 
 ## <a name="1009027"></a>100.90.27
 
-- Teraz możesz ustawić [kanał aktualizacji dla programu](mac-updates.md#set-the-channel-name) Microsoft Defender dla punktu końcowego w systemie macOS, który różni się od kanału aktualizacji dla całego systemu
+- Teraz możesz [ustawić kanał aktualizacji dla programu](mac-updates.md#set-the-channel-name) Ochrona punktu końcowego w usłudze Microsoft Defender macOS inny niż kanał aktualizacji dla całego systemu
 - Ikona nowego produktu
 - Inne ulepszenia w zakresie obsługi użytkowników
 - Poprawki błędów
@@ -289,7 +293,7 @@ ms.locfileid: "63401038"
 
 ## <a name="1007942"></a>100.79.42
 
-- Rozwiązano problem, gdy program Microsoft Defender dla punktu końcowego na komputerze Mac czasami zakłócał program Time Machine
+- Rozwiązano problem, gdy Ochrona punktu końcowego w usłudze Microsoft Defender komputerze Mac czasami zakłócało program Time Machine
 - Dodano nowy przełącznik do narzędzia wiersza polecenia w celu przetestowania łączności z usługą zaplecza
 
   ```bash
@@ -305,7 +309,7 @@ ms.locfileid: "63401038"
 
 ## <a name="1007099"></a>100.70.99
 
-- Rozwiązano problem, który wpływa na możliwość uaktualnienia niektórych użytkowników do systemu macOS Catalina po włączeniu ochrony w czasie rzeczywistym. Ten sporadyczne problem został spowodowany przez program Microsoft Defender for Endpoint blokujący pliki w pakiecie uaktualniania Catalina podczas skanowania ich w celu skanowania ich w celu ochrony przed zagrożeniami, co powodowało błędy w sekwencji uaktualniania.
+- Rozwiązano problem, który wpływa na możliwość uaktualnienia niektórych użytkowników do systemu macOS Catalina po włączeniu ochrony w czasie rzeczywistym. Ten sporadyczne problem został spowodowany zablokowaniem Ochrona punktu końcowego w usłudze Microsoft Defender w pakiecie uaktualniania Catalina podczas skanowania ich w celu skanowania ich w celu usunięcia zagrożeń, co powodowało błędy w sekwencji uaktualniania.
 
 ## <a name="1006899"></a>100.68.99
 
@@ -317,9 +321,9 @@ ms.locfileid: "63401038"
 - Dodano obsługę systemu macOS Catalina
 
   > [!CAUTION]
-  > System macOS 10.15 (Catalina) zawiera nowe udoskonalenia zabezpieczeń i prywatności. Począwszy od tej wersji aplikacje nie mogą domyślnie uzyskać dostępu do określonych lokalizacji na dysku (takich jak Dokumenty, Pliki do pobrania, Pulpit itp.) bez wyraźnej zgody. W przypadku braku tej zgody usługa Microsoft Defender for Endpoint nie może w pełni chronić Twojego urządzenia.
+  > System macOS 10.15 (Catalina) zawiera nowe udoskonalenia zabezpieczeń i prywatności. Począwszy od tej wersji aplikacje nie mogą domyślnie uzyskać dostępu do określonych lokalizacji na dysku (takich jak Dokumenty, Pliki do pobrania, Pulpit itp.) bez wyraźnej zgody. W przypadku braku tej zgody Ochrona punktu końcowego w usłudze Microsoft Defender może w pełni chronić Twojego urządzenia.
   >
-  > Mechanizm udzielania tej zgody zależy od sposobu wdrożenia programu Microsoft Defender dla punktu końcowego:
+  > Mechanizm udzielania tej zgody zależy od tego, jak wdrożono Ochrona punktu końcowego w usłudze Microsoft Defender:
   >
   > - Zaktualizowane instrukcje znajdziesz w temacie Wdrażanie [ręczne](mac-install-manually.md#how-to-allow-full-disk-access) .
   > - Aby uzyskać informacje na temat wdrożeń zarządzanych, zobacz zaktualizowane instrukcje w tematach wdrażania opartych na technologii [JAMF](mac-install-with-jamf.md) [Microsoft Intune na temat wdrażania opartego na usługach](mac-install-with-intune.md#create-system-configuration-profiles).

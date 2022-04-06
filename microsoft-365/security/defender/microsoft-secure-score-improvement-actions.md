@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 8991c2aca277d2a08e5f8924a5e5cb354df6dc1f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498646"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569453"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Ocenianie postawy dotyczącej zabezpieczeń za pomocą programu Microsoft Secure Score
 
@@ -80,7 +80,7 @@ Po wybraniu określonej akcji udoskonalania zostanie wyświetlone wysuwanie peł
 
 Aby ukończyć akcję, masz kilka możliwości:
 
-- Wybierz **pozycję Zarządzaj** , aby przejść do ekranu konfiguracji i wprowadzić zmianę. Uzyskasz w ten sposób punkty, które są wartościowe, widoczne na wysuwanych akcjęch. Aktualizacja punktów trwa zwykle około 24 godzin.
+- Wybierz **pozycję Zarządzaj Microsoft 365 Defender**, aby przejść do ekranu konfiguracji i wprowadzić zmiany. Uzyskasz punkty za akcję widoczne w wysuwanych akcjęch. Aktualizacja punktów trwa zwykle około 24 godzin.
 
 - Wybierz **pozycję** Udostępnij, aby skopiować bezpośredni link do akcji udoskonalania. Możesz także wybrać platformę udostępniania linku, taką jak poczta e-mail, adres e-Microsoft Teams lub Microsoft Planner.
 

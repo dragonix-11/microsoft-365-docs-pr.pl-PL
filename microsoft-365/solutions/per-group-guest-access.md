@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Dowiedz się, jak uniemożliwić dodanie gości do określonej grupy
-ms.openlocfilehash: 8a8a62b2a320fe000580651a2577f625a9ce1b90
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 4b9ebc6366934db52c30d51091ac9991ff82d8c3
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63005224"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570068"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Zapobieganie dodaniu gości do określonej grupy Microsoft 365 lub zespołu Microsoft Teams zespołu
 
@@ -35,16 +35,16 @@ Możesz również zapobiec dodatku nowych gości do poszczególnych grup przy u�
 
 Aby zmienić ustawienie dostępu gościa na poziomie grupy Azure Active Directory należy użyć wersji Preview programu [PowerShell dla programu Graph](/powershell/azure/active-directory/install-adv2) (nazwa modułu **AzureADPreview**):
 
-- Jeśli wcześniej nie zainstalowano żadnej wersji modułu programu PowerShell usługi Azure AD, zobacz Instalowanie modułu [usługi Azure AD](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) i postępuj zgodnie z instrukcjami, aby zainstalować publiczną wersję Preview.
+- Jeśli nie zainstalowano jeszcze żadnej wersji modułu programu Azure AD PowerShell, zobacz [Instalowanie modułu usługi Azure AD](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) i postępuj zgodnie z instrukcjami, aby zainstalować publiczną wersję zapoznawczą.
 
-- Jeśli masz zainstalowaną wersję 2.0 modułu programu PowerShell usługi Azure AD (AzureAD), `Uninstall-Module AzureAD` musisz odinstalować go, uruchamiając w sesji programu PowerShell, a następnie zainstalować wersję Preview `Install-Module AzureADPreview`, uruchamiając program .
+- Jeśli masz zainstalowaną ogólnie dostępną wersję modułu Azure AD PowerShell (AzureAD) w wersji 2.0, musisz ją odinstalować, uruchamiając `Uninstall-Module AzureAD` w sesji programu PowerShell, a następnie zainstalować wersję zapoznawczą, uruchamiając `Install-Module AzureADPreview`.
 
-- Jeśli masz już zainstalowaną wersję Preview, `Install-Module AzureADPreview` uruchom program, aby upewnić się, że jest to najnowsza wersja tego modułu.
+- Jeśli masz już zainstalowaną wersję zapoznawczą, uruchom `Install-Module AzureADPreview` , aby upewnić się, że jest to najnowsza wersja tego modułu.
 
 > [!NOTE]
 > Aby uruchomić te polecenia, musisz mieć uprawnienia administratora globalnego. 
 
-Uruchom poniższy skrypt, zmieniając */<GroupName/>* nazwę grupy, w której chcesz zablokować dostęp gościa.
+Uruchom poniższy skrypt, zmieniając *\<GroupName\>* nazwę grupy, w której chcesz zablokować dostęp gościa.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -111,7 +111,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [Tworzenie planu zarządzania współpracą](collaboration-governance-first.md)
 
-[Zarządzanie członkostwem w grupie w centrum administracyjne platformy Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
+[Zarządzanie członkostwem w grupie w Centrum administracyjne platformy Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
   
 [Azure Active Directory dostępu](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 

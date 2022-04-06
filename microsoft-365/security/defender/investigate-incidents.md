@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 4bba9797572193199dba0bd4c928693d94bf00de
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 776680db7b2666cc964f82e88cd6af9e6bab7558
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569163"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500260"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Badanie zdarzeń w Microsoft 365 Defender
 
@@ -52,7 +52,7 @@ Możesz rozpocząć od wybrania zdarzenia w kolumnie znacznika wyboru. Oto przyk
 
 Gdy to zrobisz, zostanie otwarte okienko podsumowania z kluczowymi informacjami o zdarzeniu, takimi jak ważność, do kogo jest przypisane, oraz [miTRE ATT&CK&trade;](https://attack.mitre.org/) kategorii dla zdarzenia. Oto przykład.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Okienko, w którym są wyświetlane szczegóły podsumowania zdarzenia w portalu Microsoft 365 Defender projektu." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Okienko z wyświetlonymi szczegółami podsumowania zdarzenia w portalu Microsoft 365 Defender projektu." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
 W tym miejscu możesz wybrać pozycję **Otwórz stronę zdarzenia**. Zostanie otwarta strona główna zdarzenia, na której znajdziesz więcej informacji podsumowujących oraz karty alertów, urządzeń, użytkowników, badań i dowodów.
 

@@ -1,6 +1,6 @@
 ---
 title: Adres naruszonych kont użytkowników przy użyciu automatycznego badania i odpowiedzi
-keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection, compromised
+keywords: AIR, autoIR, Ochrona punktu końcowego w usłudze Microsoft Defender, zautomatyzowane, badania, odpowiedzi, działania naprawcze, zagrożenia, zaawansowane, zagrożenia, ochrona, naruszone
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,25 +13,25 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: ''
 ms.date: 06/10/2021
-description: Dowiedz się, jak przyspieszyć proces wykrywania naruszonych kont użytkowników i rozwiązywania związanych z nim problemów za pomocą zautomatyzowanych funkcji badania i odpowiedzi w programie Microsoft Defender dla systemu Office 365 Plan 2.
+description: Dowiedz się, jak przyspieszyć proces wykrywania naruszonych kont użytkowników i rozwiązywania związanych z nim problemów za pomocą funkcji automatycznego badania i odpowiedzi w programie Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbc3c6c8a81d59bebbd5272e13e0f96de2257623
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c1488598eb3a198a70997e755fe77a8a0c97e1c0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63028112"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474367"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adres naruszonych kont użytkowników przy użyciu automatycznego badania i odpowiedzi
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[Program Microsoft Defender dla Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) oferuje zaawansowane [funkcje automatycznego badania i](office-365-air.md) odpowiedzi (AIR). Takie możliwości mogą zaoszczędzić wiele czasu i wysiłku zespołu operacyjnego w związku z zagrożeniami. Firma Microsoft będzie nadal ulepszać funkcje zabezpieczeń. Ostatnio funkcje AIR zostały rozszerzone tak, aby zawierały naruszony podręcznik zabezpieczeń użytkowników (obecnie dostępny w wersji Preview). Przeczytaj ten artykuł, aby dowiedzieć się więcej o podręczniku zabezpieczeń użytkownika, który został naruszony. Aby uzyskać więcej szczegółowych informacji, zapoznaj się z wpisem w blogu Przyspieszyć wykrywanie naruszenia bezpieczeństwa użytkowników i [reagowanie na nie Office 365 za pomocą programu Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053).
+[Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) obejmuje zaawansowane funkcje automatycznego [badania i odpowiedzi](office-365-air.md) (AIR). Takie możliwości mogą zaoszczędzić wiele czasu i wysiłku zespołu operacyjnego w związku z zagrożeniami. Firma Microsoft będzie nadal ulepszać funkcje zabezpieczeń. Ostatnio funkcje AIR zostały rozszerzone tak, aby zawierały naruszony podręcznik zabezpieczeń użytkowników (obecnie dostępny w wersji Preview). Przeczytaj ten artykuł, aby dowiedzieć się więcej o podręczniku zabezpieczeń użytkownika, który został naruszony. Aby uzyskać [więcej szczegółowych informacji](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053), zapoznaj się z wpisem w blogu Przyspieszyć wykrywanie naruszenia bezpieczeństwa użytkowników i ograniczanie zakresu naruszenia Ochrona usługi Office 365 w usłudze Microsoft Defender blogu.
 
 ![Zautomatyzowane badanie w przypadku naruszonego użytkownika.](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -43,7 +43,7 @@ Podręcznik zabezpieczeń użytkowników, w przypadku których naruszono zabezpi
 
 ## <a name="compromised-user-alerts"></a>Naruszone alerty użytkownika
 
-W przypadku naruszenia konta użytkownika występują nietypowe lub nietypowe zachowania. Na przykład wiadomości wyłudzają informacje i spam mogą być wysyłane wewnętrznie z zaufanego konta użytkownika. Program Defender for Office 365 może wykryć takie anomalii w wzorcach poczty e-mail i działaniach współpracy w ramach Office 365. Gdy tak się stanie, alerty są wyzwalane i rozpoczyna się proces ograniczania zagrożeń.
+W przypadku naruszenia konta użytkownika występują nietypowe lub nietypowe zachowania. Na przykład wiadomości wyłudzają informacje i spam mogą być wysyłane wewnętrznie z zaufanego konta użytkownika. Ochrona usługi Office 365 w usłudze Defender wykryć takie anomalie w wzorcach poczty e-mail i aktywności współpracy w ramach Office 365. Gdy tak się stanie, alerty są wyzwalane i rozpoczyna się proces ograniczania zagrożeń.
 
 Oto przykładowy alert, który został wyzwolony z powodu podejrzanego wysyłania wiadomości e-mail:
 
@@ -72,11 +72,11 @@ Dostępnych jest kilka opcji przechodzenia do listy użytkowników z ograniczeni
 
 2. Na stronie **Alerty** filtruj wyniki według okresu i zasad o nazwie Użytkownik **ograniczony do wysyłania wiadomości e-mail**.
 
-   ![Strona Alerty w portalu Microsoft 365 Defender filtrowane w przypadku użytkowników z ograniczeniami.](../../media/m365-sc-alerts-page-with-restricted-user.png)
+   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="Strona Alerty w portalu Microsoft 365 Defender z filtrami dla użytkowników z ograniczeniami" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
 3. Jeśli wybierzesz wpis, klikając nazwę, zostanie otwarta strona Użytkownik  z ograniczeniami do wysyłania wiadomości e-mail z dodatkowymi szczegółami do przejrzenia. Obok **przycisku Zarządzaj alertem** możesz kliknąć ikonę ![Więcej opcji.](../../media/m365-cc-sc-more-actions-icon.png) **Więcej opcji**, a następnie wybierz **pozycję Wyświetl ograniczone szczegóły użytkownika**, aby  przejść do strony Użytkownicy z ograniczeniami, gdzie możesz [zwolnić użytkownika z ograniczeniami](removing-user-from-restricted-users-portal-after-spam.md).
 
-   ![Użytkownik z ograniczonymi możliwościami wysyłania wiadomości e-mail z Centrum alertów.](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
+  :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="Użytkownik z ograniczonymi możliwościami wysyłania wiadomości e-mail" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
 
 ### <a name="view-details-about-automated-investigations"></a>Wyświetlanie szczegółów zautomatyzowanych badań
 
@@ -98,6 +98,6 @@ Aby dowiedzieć się więcej, [zobacz Wyświetlanie szczegółów badania](air-v
 
 - [Znajdowanie i badanie złośliwych wiadomości e-mail w programie Office 365](investigate-malicious-email-that-was-delivered.md)
 
-- [Dowiedz się więcej o programie AIR w programie Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Informacje o programie AIR w programie Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 - [Odwiedź Microsoft 365 Przewodnik po aktualizacjach, aby zobaczyć, co zostanie wkrótce wyedytować](https://www.microsoft.com/microsoft-365/roadmap?filters=)

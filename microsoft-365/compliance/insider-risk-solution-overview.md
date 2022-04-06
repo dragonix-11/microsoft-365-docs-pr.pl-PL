@@ -1,5 +1,5 @@
 ---
-title: Rozwiązania ryzyka niejawnego programu testów
+title: Rozwiązania dotyczące ryzyka wewnętrznego
 description: Dowiedz się, jak zminimalizować ryzyko w organizacji dzięki rozwiązaniom ryzyka niejawnego programu testów w programie Microsoft 365.
 keywords: Microsoft 365, ryzyko niejawnego programu testów, zgodność
 ms.localizationpriority: medium
@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: de4fb39219674c23b35672d6d12a8b124e748866
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 381b9cafe50f8a9aa3788e17668d642b291d5279
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "63005237"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594867"
 ---
-# <a name="insider-risk-solutions-in-microsoft-365"></a>Rozwiązania ryzyka niejawnego programu testów w programie Microsoft 365
+# <a name="insider-risk-solutions-in-microsoft-365"></a>Rozwiązania ryzyka wewnętrznego na platformie Microsoft 365
 
 Czynniki ryzyka związane z niejawnym programem testów są jednym z najgorętszych specjalistów ds. zabezpieczeń i zgodności w nowoczesnym miejscu pracy. Badania branżowe pokazują, że czynniki ryzyka związane z niejawnym programem testów są często skojarzone z określonymi zdarzeniami lub działaniami użytkowników. Ochrona organizacji przed tymi zagrożeniami może być trudnym do zidentyfikowania i trudnym do zminimalizowania. Ryzyko związane z niejawnym programem testów obejmuje luki w zabezpieczeniach w różnych obszarach i może powodować poważne problemy dla organizacji, takie jak utrata własności intelektualnej, molestowanie w miejscu pracy i nie tylko. Na poniższej ilustracji przedstawiono typowe czynniki ryzyka związane z niejawnym programem testów:
 
@@ -31,7 +31,7 @@ Czynniki ryzyka związane z niejawnym programem testów są jednym z najgorętsz
 
 Microsoft 365 funkcje ochrony przed ryzykiem są zaprojektowane i wbudowane w nasze produkty i rozwiązania ryzyka niejawnego programu testów. Te rozwiązania współpracują i używają zaawansowanych usług oraz wskaźników innych firm, aby ułatwić szybkie identyfikowanie i trygorienie działań ryzyka oraz działanie na ich podstawie. Większość rozwiązań oferuje kompleksowy przepływ pracy wykrywania, alertów i środków zaradczych dla analityków danych i osób schłodnych w celu szybkiego korygowania tych czynników.
 
-| Ikona czynnika ryzyka | Czynniki ryzyka | Zgodność komunikacji | Zarządzanie ryzykiem w niejawnym programie testów | Bariery informacyjne | Zarządzanie dostępem z uprawnieniami |
+| Ikona czynnika ryzyka | Czynniki ryzyka | Zgodność w komunikacji | Zarządzanie ryzykiem wewnętrznym | Bariery informacyjne | Privileged Access Management |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
 | ![Ikona rozlanie danych.](../media/ir-risk-data-spillage.png)| Rozlanie danych | ![Obsługiwane](../media/check-mark.png) | ![Obsługiwane](../media/check-mark.png) |  |  |
 | ![Ikona naruszenia poufności.](../media/ir-risk-confidentiality-violations.png)| Naruszenia poufności | ![Obsługiwane](../media/check-mark.png) | ![Obsługiwane](../media/check-mark.png) | ![Obsługiwane](../media/check-mark.png) |  |
@@ -46,22 +46,22 @@ Microsoft 365 funkcje ochrony przed ryzykiem są zaprojektowane i wbudowane w na
 | ![Ikona naruszenia zabezpieczeń.](../media/ir-risk-security-violations.png)| Naruszenia zabezpieczeń |  | ![Obsługiwane](../media/check-mark.png) |  | ![Obsługiwane](../media/check-mark.png) |
 | ![Ikona naruszenia zgodności z przepisami.](../media/ir-risk-regulatory-compliance-violations.png)| Naruszenia zgodności z przepisami | ![Obsługiwane](../media/check-mark.png) | ![Obsługiwane](../media/check-mark.png) | ![Obsługiwane](../media/check-mark.png) |  |
 
-## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 rozwiązań ryzyka w niejawnym programie testów
+## <a name="microsoft-365-insider-risk-solutions"></a>Rozwiązania dotyczące ryzyka wewnętrznego platformy Microsoft 365
 
 Aby chronić organizację przed zagrożeniami w niejawnym programie testów, skorzystaj z tych Microsoft 365 funkcji i funkcji.
 
-### <a name="communication-compliance"></a>Zgodność komunikacji
+### <a name="communication-compliance"></a>Zgodność w komunikacji
 
 Zgodność komunikacji pomaga zminimalizować ryzyko związane z komunikacją, pomagając wykrywać, przechwytywać i działać na nieodpowiednich wiadomościach w organizacji. Zgodność komunikacji jest dostępna w następujących subskrypcjach:
 
-- Microsoft 365 E5/A5/G5 (płatna lub próbna)
-- Microsoft 365 E3/A3/G5 + Microsoft 365 E5 zgodności ze standardem Microsoft 365 E5/A5/G5
-- Microsoft 365 E3/A3/G5 + Microsoft 365 E5/A5/G5 zarządzanie ryzykiem niejawnego programu testów
+- Microsoft 365 E5/A5/F5/G5 (wersja płatna lub próbna)
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5 zgodności ze standardem Microsoft 365 E5/A5/F5/G5
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5/A5/F5/G5 Zarządzanie ryzykiem w ramach niejawnego programu testów
 - Office 365 Enterprise E5 (płatna lub próbna)
 - Office 365 A5 (płatna lub próbna)
-- Office 365 Enterprise E3 + Office 365 Advanced Compliance (nie jest już dostępna dla nowych subskrypcji)
+- Office 365 Enterprise E3 + Office 365 Advanced Compliance (nie jest już dostępna dla nowych subskrypcji, zobacz uwagę)
 
-### <a name="insider-risk-management"></a>Zarządzanie ryzykiem w niejawnym programie testów
+### <a name="insider-risk-management"></a>Zarządzanie ryzykiem wewnętrznym
 
 Zarządzanie ryzykiem niejawnego programu testów pomaga zminimalizować ryzyko wewnętrzne, umożliwiając wykrywanie, badanie i działanie w przypadku złośliwych i niezamierzonych działań w organizacji.
 
@@ -84,7 +84,7 @@ Bariery informacyjne są dostępne w następujących subskrypcjach:
 - Microsoft 365 E3/A3/A1 + Microsoft 365 E5 zgodności ze standardem Microsoft 365 E5/A5
 - Microsoft 365 E3/A3/A1 + Microsoft 365 E5/A5 zarządzanie ryzykiem niejawnego programu testów
 
-### <a name="privileged-access-management"></a>Zarządzanie dostępem z uprawnieniami
+### <a name="privileged-access-management"></a>Privileged Access Management
 
 Zarządzanie dostępem z uprawnieniami umożliwia szczegółową kontrolę dostępu nad Exchange Online i zadaniami administratora w aplikacji Office 365. Pomaga chronić organizację przed naruszeniem zabezpieczeń, które korzystają z istniejących kont administratora o uprawnieniach z dostępem do poufnych danych lub dostępem do krytycznych ustawień konfiguracji.
 
@@ -95,9 +95,9 @@ Zarządzanie dostępem z uprawnieniami jest dostępne w następujących subskryp
 - Office 365 Enterprise E5 (płatna lub próbna)
 - Office 365 A5 (płatna lub próbna)
 - Microsoft 365 E3 + Zgodność platformy Microsoft 365 E5 subskrypcji
-- Microsoft 365 E3 subskrypcji + Microsoft 365 E5 ochrony informacji i zarządzania informacjami oraz zarządzania
+- Microsoft 365 E3 subskrypcji + Microsoft 365 E5 Information Protection i dodatku do zarządzania
 - Microsoft 365 A3 + Microsoft 365 A5 zgodności z przepisami
-- Microsoft 365 A3 subskrypcji + Microsoft 365 A5 ochrony informacji i zarządzania informacjami
+- Microsoft 365 A3 subskrypcji + Microsoft 365 A5 Information Protection i dodatku Do zarządzania
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>Wdrażanie Microsoft 365 rozwiązań ryzyka w niejawnym programie testów
 
@@ -116,7 +116,7 @@ Aby ułatwić zaplanowanie zintegrowanej strategii wdrożenia funkcji Microsoft 
 
 | Element | Opis |
 |:-----|:------------|
-|[![Plakat modelu: Microsoft 365 funkcji ochrony informacji i zgodności.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Pobierz jako Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano w październiku 2020 r.|Zawiera: <ul><li>  ochrona informacji firmy Microsoft i ochrona przed utratą danych</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność komunikacji</li><li>Zarządzanie ryzykiem w niejawnym programie testów</li><li>Ingestion danych innych firm</li>|
+|[![Plakat modelu: Microsoft 365 funkcji ochrony informacji i zgodności.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Pobierz jako plik PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Pobierz jako Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Zaktualizowano w październiku 2020 r.|Zawiera: <ul><li>  Ochrona informacji i ochrona przed utratą danych firmy Microsoft</li><li>Zasady przechowywania i etykiety przechowywania </li><li>Bariery informacyjne</li><li>Zgodność w komunikacji</li><li>Zarządzanie ryzykiem wewnętrznym</li><li>Ingestion danych innych firm</li>|
 
 ## <a name="training"></a>Szkolenia
 
@@ -127,7 +127,7 @@ Microsoft 365 udostępnia następujące zasoby, które ułatwiają informowanie 
 | Rozwiązanie/obszar | Zasoby |
 |:------------------|:--------------|
 | Zarządzanie ryzykiem niejawnego programu testów w programie Microsoft 365 |[Pełna ścieżka nauki](/learn/paths/m365-compliance-insider) <br> Ta ścieżka nauki obejmuje wszystkie indywidualne moduły rozwiązań do komunikacji w zakresie zgodności, zarządzania ryzykiem w niejawnym programie testów, barier informacyjnych i zarządzania dostępem uprzywilejowanym. Wybierz tę ścieżkę nauki, aby ukończyć wszystkie moduły. |
-| Zgodność komunikacji | [Edukacja: Przygotowanie zgodności komunikacji w programie Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Ten moduł ułatwia zasygnalizowanie podstaw identyfikowania i korygowania naruszeń zasad dotyczących kodeksu postępowania z zachowaniem zgodności komunikacji, obejmują wymagania wstępne wymagane przed utworzeniem zasad zgodności komunikacji oraz informacje na temat typów wbudowanych, wstępnie zdefiniowanych szablonów zasad dotyczących zgodności komunikacji. |
-| Zarządzanie ryzykiem w niejawnym programie testów | [Edukacja: Zarządzanie ryzykiem w niejawnym programie testów w programie Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> W tym module dowiesz się, jak zarządzanie ryzykiem niejawnego programu testów w programie Microsoft 365 może pomóc zapobiegać, wykrywać i zawierać czynniki ryzyka wewnętrznego w organizacji, poznać typy wbudowanych, wstępnie zdefiniowanych szablonów zasad, zrozumieć podstawowe wymagania wstępne wymagane przed utworzeniem zasad ryzyka w ramach niejawnego programu testów i objaśnić typy działań, jakie można podjąć w przypadku niejawnego programu testów zarządzania ryzykiem. |
+| Zgodność w komunikacji | [Edukacja: Przygotowanie zgodności komunikacji w programie Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Ten moduł ułatwia zasygnalizowanie podstaw identyfikowania i korygowania naruszeń zasad dotyczących kodeksu postępowania z zachowaniem zgodności komunikacji, obejmują wymagania wstępne wymagane przed utworzeniem zasad zgodności komunikacji oraz informacje na temat typów wbudowanych, wstępnie zdefiniowanych szablonów zasad dotyczących zgodności komunikacji. |
+| Zarządzanie ryzykiem wewnętrznym | [Edukacja: Zarządzanie ryzykiem w niejawnym programie testów w programie Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> W tym module dowiesz się, jak zarządzanie ryzykiem niejawnego programu testów w programie Microsoft 365 może pomóc zapobiegać, wykrywać i zawierać czynniki ryzyka wewnętrznego w organizacji, poznać typy wbudowanych, wstępnie zdefiniowanych szablonów zasad, zrozumieć podstawowe wymagania wstępne wymagane przed utworzeniem zasad ryzyka w ramach niejawnego programu testów i objaśnić typy działań, jakie można podjąć w przypadku niejawnego programu testów zarządzania ryzykiem. |
 | Bariery informacyjne | [Edukacja: Planowanie barier informacyjnych](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Ten moduł ułatwia naukę, w jaki sposób zasady zawarte w barierze informacyjnej mogą ułatwić organizacji zachowanie zgodności z odpowiednimi normami i przepisami branżowymi, zawiera listę typów sytuacji, w których mogą obowiązywać bariery informacyjne, wyjaśnia proces tworzenia zasad barier informacyjnych i pomaga w rozwiązywaniu nieoczekiwanych problemów po wtargeniu barier informacyjnych. |
-| Zarządzanie dostępem z uprawnieniami | [Edukacja: Implementowanie zarządzania dostępem z uprawnieniami](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Ten moduł ułatwia zrozumienie różnic między zarządzaniem dostępem z uprawnieniami a zarządzaniem tożsamością z uprawnieniami, zrozumienie przepływu procesu zarządzania dostępem z uprawnieniami oraz zrozumienie podstaw konfigurowania i włączania zarządzania dostępem uprzywilejowanym. |
+| Privileged Access Management | [Edukacja: Implementowanie zarządzania dostępem z uprawnieniami](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Ten moduł ułatwia zrozumienie różnic między zarządzaniem dostępem z uprawnieniami a zarządzaniem tożsamością z uprawnieniami, zrozumienie przepływu procesu zarządzania dostępem z uprawnieniami oraz zrozumienie podstaw konfigurowania i włączania zarządzania dostępem uprzywilejowanym. |

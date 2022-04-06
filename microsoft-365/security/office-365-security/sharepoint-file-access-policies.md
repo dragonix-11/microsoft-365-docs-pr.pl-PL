@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f024f9d93b44e6d6a679311af914330f0e3db37c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3057e66352b9bd658ddd4958986cbefd61e4e187
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312939"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682950"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Zalecenia dotyczące zasad dotyczące zabezpieczania SharePoint witryn i plików
 
@@ -57,7 +57,6 @@ W poniższej tabeli wymieniono zasady, które należy przejrzeć i zaktualizowa�
 ||[SharePoint kontroli dostępu](#sharepoint-access-control-policies): Zezwalaj na dostęp tylko w przeglądarce do określonych witryn SharePoint z urządzeń niezawiązywanych.|Uniemożliwia to edytowanie i pobieranie plików. Do określania witryn użyj programu PowerShell.|
 |**Wyspecjalizowane zabezpieczenia**|[*Zawsze wymagaj* uwierzytelniania wieloskładnikowego](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Dołącz SharePoint do przypisywania aplikacji w chmurze.|
 ||[SharePoint kontroli dostępu](#use-app-enforced-restrictions-in-sharepoint): Blokowanie dostępu do określonych witryn SharePoint z urządzeń niezawiązywanych.|Do określania witryn użyj programu PowerShell.|
-|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Stosowanie ograniczeń wymuszonych przez aplikację w SharePoint
 

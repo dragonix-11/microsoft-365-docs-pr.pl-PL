@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5658d2cbb0fd3f8307ceb6cb46057237436271eb
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 064ce5f796d59994b9d7ec4c3403711b1d683e56
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63006554"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500480"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Skonfiguruj Microsoft 365 Defender, aby przesyłać strumieniowo wydarzenia z łowiectwo do Centrum wydarzeń Azure
 
@@ -70,7 +70,7 @@ Po utworzeniu przestrzeni nazw Centrum zdarzeń należy:
 
    Aby uzyskać identyfikator **zasobu Centrum** zdarzeń, przejdź do strony przestrzeni nazw centrum zdarzeń Azure na karcie **AzureProperties** [](https://ms.portal.azure.com/) >  > skopiuj tekst w obszarze **Identyfikator zasobu**:
 
-   ![Obraz zasobu Centrum zdarzeń Identyfikator1.](../defender-endpoint/images/event-hub-resource-id.png)
+   :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="Identyfikator zasobu Centrum zdarzeń" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
 8. Przejdź do [obsługiwanego typu Microsoft 365 Defender w interfejsie API przesyłania strumieniowego](supported-event-types.md) zdarzeń, aby sprawdzić stan obsługi typów zdarzeń w interfejsie API przesyłania strumieniowego Microsoft 365 strumieniowego.
 
@@ -116,7 +116,7 @@ Aby uzyskać typy danych dla właściwości zdarzenia, wykonaj następujące czy
 
 - Oto przykład zdarzenia Informacje o urządzeniu:
 
-  ![Obraz zasobu Centrum zdarzeń o identyfikatorze 2.](../defender-endpoint/images/machine-info-datatype-example.png)
+  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="Przykładowe zapytanie dotyczące informacji o urządzeniu" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

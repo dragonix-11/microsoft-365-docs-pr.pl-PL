@@ -1,5 +1,5 @@
 ---
-title: Raport kondycji i zgodności urządzeń w programie Microsoft Defender for Endpoint
+title: Raport kondycji i zgodności urządzeń w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender
 description: Śledzenie wykrywania stanu kondycji urządzenia, stanu oprogramowania antywirusowego, platformy systemu operacyjnego i Windows 10 za pomocą raportu kondycji i zgodności urządzeń
 keywords: stan kondycji, oprogramowanie antywirusowe, platforma systemu operacyjnego, wersja systemu Windows 10, wersja, kondycja, zgodność, stan
 ms.prod: m365-security
@@ -14,29 +14,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eaa9d05fd62127949e6a0b40de8d42a79c446d4d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bf89c0e57cbe14980b15ecf6f5a88f6db2b83e84
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "62996738"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474030"
 ---
-# <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Raport kondycji i zgodności urządzeń w programie Microsoft Defender for Endpoint
+# <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Raport kondycji i zgodności urządzeń w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Raport o stanie urządzeń zawiera szczegółowe informacje o urządzeniach w Organizacji. Raport zawiera popularne informacje pokazujące stan kondycji czujnika, stan oprogramowania antywirusowego, platformy systemu operacyjnego i Windows 10 (i Windows 11).
+Raport o stanie urządzeń zawiera szczegółowe informacje o urządzeniach w Organizacji. Raport zawiera popularne informacje pokazujące stan kondycji czujnika, stan oprogramowania antywirusowego, platformy systemu operacyjnego i wersje Windows 10 (i Windows 11).
 
 Pulpit nawigacyjny ma strukturę dwóch sekcji:
 
-:::image type="content" alt-text="Obraz raportu urządzenia." source="images/device-reports.png" lightbox="images/device-reports.png":::
+:::image type="content" source="images/device-reports.png" alt-text="Raport urządzenia" lightbox="images/device-reports.png":::
 
 
 <br>

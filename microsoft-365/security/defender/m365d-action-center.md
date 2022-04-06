@@ -22,12 +22,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 0bd86f7ba05ce04743f547292105875f3b8234b1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: e4ac7636b019b0e8c1d00487e95335ede4600d85
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499072"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570046"
 ---
 # <a name="the-action-center"></a>Centrum akcji
 
@@ -82,7 +82,7 @@ Po odwiedzenia Centrum akcji są dostępne dwie karty: **Oczekujące akcje** i *
 
 W Centrum akcji możesz dostosowywać, sortować, filtrować i eksportować dane.
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Funkcje sortowania, filtrowania i dostosowywania w Centrum akcji." lightbox="../../media/m3d-action-center-columnsfilters.png":::
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Funkcje sortowania, filtrowania i dostosowywania w Centrum akcji" lightbox="../../media/m3d-action-center-columnsfilters.png":::
 
 - Zaznacz nagłówek kolumny, aby posortować elementy w kolejności rosnącej lub malejącej.
 - Użyj filtru okresu, aby wyświetlić dane za przeszły dzień, tydzień, 30 dni lub 6 miesięcy.
@@ -95,14 +95,14 @@ W Centrum akcji możesz dostosowywać, sortować, filtrować i eksportować dane
 
 Wszystkie akcje, niezależnie od tego, czy oczekują na zatwierdzenie, czy zostały już wykonane, są śledzone w Centrum akcji. Dostępne są następujące akcje:
 
-- Zbierz pakiet badania 
+- Zbieraj pakiet badań 
 - Wyizoluj urządzenie (tę akcję można cofnąć) 
-- Urządzenie wye startowe 
+- Odłącz komputer 
 - Wykonywanie kodu wydania 
 - Zwolnienie z kwarantanny 
 - Przykład żądania 
 - Ograniczanie wykonywania kodu (tę akcję można cofnąć) 
-- Uruchom skanowanie antywirusowe 
+- Uruchomiono skanowanie antywirusowe 
 - Zatrzymywanie i kwarantanna 
 
 Oprócz działań naprawczych, które są podejmowane automatycznie w wyniku zautomatyzowanych [badań, Centrum](m365d-autoir.md) akcji śledzi również akcje wykonane przez Twój zespół zabezpieczeń w celu rozwiązania wykrytych zagrożeń oraz akcje wykonane w wyniku funkcji ochrony przed zagrożeniami w programie Microsoft 365 Defender. Aby uzyskać więcej informacji na temat automatycznych i ręcznych działań naprawczych, zobacz [Akcje naprawcze](m365d-remediation-actions.md).

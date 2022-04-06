@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 22a8c8cdd5ebcaa8038c37b73aeeb6c5f80d4267
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d740ab4fb999697edc9ce7c8f662f6d5c6681fdf
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021266"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500502"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Śledzenie historii bezpiecznego wyniku firmy Microsoft i spełnienie celów
 
@@ -40,13 +40,13 @@ Wyświetl na karcie Historia wykres wyników **swojej organizacji w** czasie.
 
 Poniżej wykresu znajduje się lista wszystkich akcji podjętych w wybranym zakresie czasowym i ich atrybutów, takich jak punkty i kategorie wynikowe. Zakres dat i filtr można dostosowywać według kategorii.
 
-![Historia aktywności.](../../media/secure-score/secure-score-history-activity.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-activity.png" alt-text="Przykład strony opisujące historię aktywności w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/secure-score/secure-score-history-activity.png":::
 
 Jeśli wybierzesz akcję udoskonalania skojarzoną z działaniem, zostanie wyświetlone wysuwanie pełnej akcji udoskonalania.
 
 Aby wyświetlić całą historię dla danego działania udoskonalania, wybierz link historii w wysuwanych wynikach.
 
-![Ulepszenie historii akcji.](../../media/secure-score/secure-score-history-flyout.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="Okienko Historia dotyczące akcji udoskonalania w portalu Microsoft 365 Defender użytkowników" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
 
 ## <a name="discover-trends-and-set-goals"></a>Odkrywanie trendów i ustawianie celów
 
@@ -66,7 +66,7 @@ Istnieją dwa miejsca, w których można porównać swoje wyniki z organizacjami
 
 Wykres słupkowy porównania jest dostępny na **karcie** Omówienie. Umieść wskaźnik myszy na wykresie, aby wyświetlić wynik i szansę sprzedaży wyników. 
 
-**Organizacje, takie** jak Twoja, to średni wynik innych dzierżaw w tym samym regionie (pod warunkiem, że mamy co najmniej pięć lub więcej dzierżaw do porównania) z wielkością organizacji podobną do Twojej.
+:::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="Przykład wykresu słupkowego podobnych wyników organizacji w portalu Microsoft 365 Defender danych" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
 
 Dane porównania są anonimizowane, więc nie wiemy dokładnie, w których dokładnie są pozostałe dzierżawy.
 
@@ -76,7 +76,7 @@ Dane porównania są anonimizowane, więc nie wiemy dokładnie, w których dokł
 
 Na karcie **Metryki &** trendów sprawdź, jak bezpieczny wynik organizacji wypada w czasie z innymi osobami.
 
-![Line graph of similar organization's scores over time.](../../media/secure-score/secure-score-comparison-trend.png)
+:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="Przykład wykresu liniowego podobnych wyników organizacji w czasie w portalu Microsoft 365 Defender danych" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
 
 ## <a name="we-want-to-hear-from-you"></a>Chcemy usłyszeć Od Ciebie
 
@@ -86,5 +86,5 @@ Jeśli masz problemy, po daj nam o tym znać, publikując wpis w społeczności 
 
 - [Omówienie bezpiecznego wyniku firmy Microsoft](microsoft-secure-score.md)
 - [Ocenianie postawy dotyczącej zabezpieczeń](microsoft-secure-score-improvement-actions.md)
-- [Co będzie wkrótce](microsoft-secure-score-whats-coming.md)
+- [Nadchodzące nowości](microsoft-secure-score-whats-coming.md)
 - [Co nowego](microsoft-secure-score-whats-new.md)

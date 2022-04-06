@@ -1,7 +1,7 @@
 ---
-title: Rozwiązywanie problemów z wydajnością programu Microsoft Defender dla punktu końcowego w systemie macOS
-description: Rozwiązywanie problemów z wydajnością programu Microsoft Defender for Endpoint w systemie macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance
+title: Rozwiązywanie problemów z wydajnością aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS
+description: Rozwiązywanie problemów z wydajnością w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, wydajność
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,42 +15,43 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1d39bd46afae270fc7ac2a9fab8b5f4a2b4aaeb2
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: e83400e444d4c8c733bea5552a31954bb019e358
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011366"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474052"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Rozwiązywanie problemów z wydajnością programu Microsoft Defender dla punktu końcowego w systemie macOS
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Rozwiązywanie problemów z wydajnością aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
 
-- [Program Microsoft Defender for Endpoint w systemie macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](microsoft-defender-endpoint-mac.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-W tym temacie przedstawiono kilka ogólnych kroków, które można wykorzystać do zawężenia problemów z wydajnością związanych z programem Microsoft Defender for Endpoint w systemie macOS.
+W tym temacie przedstawiono kilka ogólnych kroków, które można wykorzystać do zawężenia problemów z wydajnością związanych z Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS.
 
-Ochrona w czasie rzeczywistym (RTP) to funkcja usługi Microsoft Defender for Endpoint w systemie macOS, która nieustannie monitoruje i chroni Twoje urządzenie przed zagrożeniami. Obejmuje on monitorowanie plików i procesów oraz inne heuristics.
+Ochrona w czasie rzeczywistym (RTP) to funkcja, która Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS, która nieustannie monitoruje i chroni Twoje urządzenie przed zagrożeniami. Obejmuje on monitorowanie plików i procesów oraz inne heuristics.
 
-W zależności od uruchomionej aplikacji i charakterystyki urządzenia, uruchamianie programu Microsoft Defender for Endpoint w systemie macOS może mieć suboptimalną wydajność. W szczególności procesy systemowe lub aplikacje, które przez krótki czas uzyskają dostęp do wielu zasobów, mogą prowadzić do problemów z wydajnością usługi Microsoft Defender for Endpoint w systemie macOS.
+W zależności od uruchomionej aplikacji i charakterystyki urządzenia wydajność może być suboptimalna, gdy Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS. W szczególności aplikacje lub procesy systemowe, które w krótkim czasie uzyskają dostęp do wielu zasobów, mogą powodować problemy z wydajnością w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS.
 
 Aby rozwiązać te problemy i zminimalizować te problemy, można wykonać następujące czynności:
 
-1. Wyłącz ochronę w czasie rzeczywistym przy użyciu jednej z następujących metod i sprawdź, czy wydajność nie poprawia się. Ta metoda pozwala zawęzić zagadnienia związane z wydajnością usługi Microsoft Defender dla punktu końcowego w systemie macOS.
+1. Wyłącz ochronę w czasie rzeczywistym przy użyciu jednej z następujących metod i sprawdź, czy wydajność nie poprawia się. Ta metoda pozwala zawęzić zakres Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS.
 
       Jeśli Twoje urządzenie nie jest zarządzane przez Twoją organizację, ochronę w czasie rzeczywistym można wyłączyć przy użyciu jednej z następujących opcji:
 
-    - Z interfejsu użytkownika. Otwórz program Microsoft Defender for Endpoint w systemie macOS i przejdź do **strony Zarządzanie ustawieniami**.
+    - Z interfejsu użytkownika. Otwórz Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS i przejdź do **okna Zarządzanie ustawieniami**.
 
-      ![Zrzut ekranu przedstawiający zarządzanie ochroną w czasie rzeczywistym.](images/mdatp-36-rtp.png)
+      :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" Strona Zarządzanie ochroną w czasie rzeczywistym" lightbox="images/mdatp-36-rtp.png":::
+      
 
     - Z terminalu. Ze względów bezpieczeństwa ta operacja wymaga podwyższenia.
 
@@ -58,7 +59,7 @@ Aby rozwiązać te problemy i zminimalizować te problemy, można wykonać nast�
       mdatp config real-time-protection --value disabled
       ```
 
-      Jeśli Twoje urządzenie jest zarządzane przez Twoją organizację, administrator może wyłączyć ochronę w czasie rzeczywistym, korzystając z instrukcji podanych w tece Ustawianie preferencji usługi Microsoft Defender dla punktu końcowego w [systemie macOS](mac-preferences.md).
+      Jeśli Twoje urządzenie jest zarządzane przez Twoją organizację, administrator może wyłączyć ochronę w czasie rzeczywistym, korzystając z instrukcji w te sposób: Ustawianie preferencji dla aplikacji dla systemu [Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md).
 
       Jeśli problem z wydajnością będzie nadal występował, gdy ochrona w czasie rzeczywistym jest wyłączona, źródłem problemu może być wykrywanie i reagowanie w punktach końcowych składnikiem. W takim przypadku skontaktuj się z działem obsługi klienta, aby uzyskać dalsze instrukcje i środki zaradcze.
 
@@ -153,6 +154,6 @@ Aby rozwiązać te problemy i zminimalizować te problemy, można wykonać nast�
       > [!NOTE]
       > Aplikacja przechowuje statystyki w pamięci i śledzi tylko aktywność plików od jej rozpoczęcia i została włączona ochrona w czasie rzeczywistym. Nie są liczone procesy uruchomione przed lub podczas okresów, w których ochrona w czasie rzeczywistym była wyłączona. Ponadto zliczane są tylko zdarzenia, które wyzwoliły skany.
       >
-6. Skonfiguruj usługę Microsoft Defender dla punktu końcowego w systemie macOS z wykluczeniami dla procesów lub lokalizacji dysków, które współtwoarzą problemy z wydajnością, i ponownie włącz ochronę w czasie rzeczywistym.
+6. Skonfiguruj Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS z wykluczeniami dla procesów lub lokalizacji dyskowych, które sprzyjają problemom z wydajnością, i ponownie włącz ochronę w czasie rzeczywistym.
 
-     Aby [uzyskać szczegółowe informacje, zobacz Konfigurowanie i weryfikowanie wykluczeń programu Microsoft Defender dla punktu końcowego w systemie macOS](mac-exclusions.md) .
+     Aby uzyskać szczegółowe informacje, zobacz Konfigurowanie i weryfikowanie wykluczeń Ochrona punktu końcowego w usłudze Microsoft Defender [w systemie macOS](mac-exclusions.md).

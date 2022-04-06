@@ -10,8 +10,8 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47ee051ab30669241a3283f1fb3f8fe86cf67f65
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: c451266d8cc11fc877f1c6c9f1c214959fe41938
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557847"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683170"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Uprawnienia w Centrum & zgodności
 
@@ -62,10 +62,6 @@ Aby dowiedzieć się, jak udzielić dostępu do Centrum & zgodności zabezpiecze
 
 > [!NOTE]
 > Aby wyświetlić **kartę Uprawnienia** w Centrum zabezpieczeń & zgodności, musisz być administratorem. W szczególności musisz mieć przypisaną rolę zarządzanie rolami, która domyślnie jest przypisana tylko do grupy ról Zarządzanie organizacją  w Centrum zabezpieczeń & zgodności. Ponadto rola Zarządzanie **rolami** umożliwia użytkownikom wyświetlanie, tworzenie i modyfikowanie grup ról.
-
-<br>
-
-****
 
 |Grupa ról|Opis|Przypisane role domyślne|
 |---|---|---|
@@ -117,7 +113,6 @@ Aby dowiedzieć się, jak udzielić dostępu do Centrum & zgodności zabezpiecze
 |**Użytkownik zapewniania ochrony usługi**|Członkowie mogą uzyskać dostęp do sekcji Zapewnianie ochrony usługi w Centrum & zabezpieczeń. Zapewnianie ochrony usługi zawiera raporty i dokumenty opisujące zasady firmy Microsoft dotyczące zabezpieczeń danych klientów przechowywanych w Microsoft 365. Ponadto udostępnia niezależne raporty z inspekcji raportów z inspekcji Microsoft 365. Aby uzyskać więcej informacji, zobacz [Zapewnianie ochrony usługi w Centrum & zabezpieczeń](../../compliance/service-assurance.md).|Widok zapewniania ochrony usługi|
 |**Administratorzy żądania praw podstawowych**|Tworzenie podstawowych żądań praw.|Zarządzanie sprawą <p> Administrator żądania praw podstawowych <p> View-Only sprawy|
 |**Przegląd nadzorczy**|Członkowie mogą tworzyć zasady definiujące, które wiadomości mają być przeglądane w organizacji i zarządzać nimi. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad zgodności komunikacji dla organizacji](../../compliance/communication-compliance-configure.md).|Administrator przeglądu nadzorczych|
-|
 
 > [!NOTE]
 > <sup>1</sup> Ta grupa ról nie przypisuje członkom uprawnień niezbędnych do przeszukiwania dziennika inspekcji ani do korzystania z raportów, które mogą zawierać dane programu Exchange, takich jak zasady DLP lub program Defender dla raportów programu Office 365. Aby przeszukiwać dziennik inspekcji lub wyświetlać wszystkie raporty, użytkownik musi mieć przypisane uprawnienia w programie Exchange Online. Jest to spowodowane tym, że polecenie cmdlet służące do przeszukiwania dziennika inspekcji jest poleceniem cmdlet Exchange Online cmdlet. Administratorzy globalni mogą przeszukiwać dziennik inspekcji i wyświetlać wszystkie raporty, ponieważ są one automatycznie dodawane jako członkowie grupy ról Zarządzanie organizacją w u Exchange Online. Aby uzyskać więcej informacji, zobacz [Przeszukiwanie dziennika inspekcji w Centrum & zabezpieczeń](../../compliance/search-the-audit-log-in-security-and-compliance.md).
@@ -169,10 +164,6 @@ Zauważ, że do grupy ról Zarządzanie organizacją domyślnie nie są przypisa
 - Administrator żądania praw podstawowych
 - Administrator przeglądu nadzorczych
 - Menedżer allowblocklist dzierżawy
-
-<br>
-
-****
 
 |Rola|Opis|Domyślne przypisania grup ról|
 |---|---|---|
@@ -252,4 +243,3 @@ Zauważ, że do grupy ról Zarządzanie organizacją domyślnie nie są przypisa
 |**Adresaci tylko do odczytu**|Wyświetlanie informacji o użytkownikach i grupach.|Administrator zgodności <p> Administrator danych dotyczących zgodności <p> Czytnik globalny <p> Administrator przepływu poczty e-mail <p> Zarządzanie organizacją|
 |**Zarządzanie rekordami tylko do odczytu**|Wyświetl konfigurację funkcji zarządzania rekordami.|Administrator zgodności <p> Administrator danych dotyczących zgodności <p> <p> Czytnik globalny <p> Zarządzanie organizacją|
 |**Zarządzanie przechowywaniem tylko w widoku**|Wyświetl konfigurację zasad przechowywania, etykiet przechowywania i zasad etykiet przechowywania.|Administrator zgodności <p> Administrator danych dotyczących zgodności <p> Administrator globalny <p> Zarządzanie organizacją|
-|

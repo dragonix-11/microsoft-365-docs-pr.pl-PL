@@ -15,19 +15,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9a67b05f089fd25e26f22508cbedb8f4b3ce086a
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472996"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595087"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Konfigurowanie i sprawdzanie poprawności wykluczeń na podstawie rozszerzenia pliku i lokalizacji folderu
 
 **Dotyczy:**
 
 - [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
 
 Można definiować wykluczenia dotyczące Program antywirusowy Microsoft Defender, które dotyczą zaplanowanych skanów[, skanów](schedule-antivirus-scans.md) na żądanie oraz zawsze wł. ochrony i monitorowania w czasie [rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md). [](run-scan-microsoft-defender-antivirus.md) **Ogólnie rzecz biorąc, nie należy stosować wykluczeń**. Jeśli chcesz zastosować wykluczenia, możesz wybrać jeden z kilku rodzajów:
@@ -39,7 +39,7 @@ Można definiować wykluczenia dotyczące Program antywirusowy Microsoft Defende
 > Program antywirusowy Microsoft Defender wykluczenia nie mają zastosowania do innych funkcji Ochrona punktu końcowego w usłudze Microsoft Defender, [w tym wykrywanie i reagowanie w punktach końcowych (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), zmniejszenie powierzchni ataków [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) i [kontrolowany dostęp do folderu](/microsoft-365/security/defender-endpoint/controlled-folders). Pliki wykluczone przy użyciu metod opisanych w tym artykule nadal mogą wyzwalać alerty EDR innych wykrycia.
 > Aby ogólnie wykluczyć pliki, dodaj je do Ochrona punktu końcowego w usłudze Microsoft Defender [wskaźników niestandardowych](/microsoft-365/security/defender-endpoint/manage-indicators).
 
-## <a name="before-you-begin"></a>Przed rozpoczęciem...
+## <a name="before-you-begin"></a>Przed rozpoczęciem
 
 Zobacz [Rekomendacje o definiowaniu wykluczeń](configure-exclusions-microsoft-defender-antivirus.md) przed zdefiniowaniem list wykluczeń.
 
@@ -52,8 +52,7 @@ Aby wykluczyć określone pliki z Program antywirusowy Microsoft Defender, zmody
 >
 > Wykluczenia automatyczne mają zastosowanie tylko Windows Server 2016 i nowszych. Te wykluczenia nie są widoczne w aplikacji Zabezpieczenia Windows ani w programie PowerShell.
 
-W poniższej tabeli przedstawiono kilka przykładów wykluczeń opartych na rozszerzeniu pliku i lokalizacji folderu. 
-<br/><br/>
+W poniższej tabeli przedstawiono kilka przykładów wykluczeń opartych na rozszerzeniu pliku i lokalizacji folderu.
 
 |Wykluczenie|Przykłady|Lista wykluczeń|
 |---|---|---|
@@ -111,7 +110,7 @@ Zobacz [Jak tworzyć i wdrażać zasady ochrony przed złośliwym oprogramowanie
     1. Ustaw dla opcji wartość **Włączone**.
     2. W sekcji **Opcje** wybierz pozycję **Pokaż**.
     3. Określ każdy folder w swoim wierszu pod **kolumną Nazwa** wartości.
-    4. Jeśli plik jest określony, wprowadź w pełni kwalifikowaną ścieżkę do pliku, w tym literę dysku, ścieżkę folderu, nazwę pliku i rozszerzenie. 
+    4. Jeśli plik jest określony, wprowadź w pełni kwalifikowaną ścieżkę do pliku, w tym literę dysku, ścieżkę folderu, nazwę pliku i rozszerzenie.
     5. Wprowadź **wartość 0** w **kolumnie** Wartość.
 
 5. Wybierz pozycję **OK**.
@@ -138,8 +137,6 @@ Format dla tych cmdlet jest następujący:
 
 W poniższej tabeli wymieniono polecenia cmdlet, `<cmdlet>` których można używać w części polecenia cmdlet programu PowerShell:
 
-<br/><br/>
-
 |Akcja konfiguracji|Polecenie cmdlet programu PowerShell|
 |:---|:---|
 |Tworzenie lub zastępowanie listy|`Set-MpPreference`|
@@ -147,8 +144,6 @@ W poniższej tabeli wymieniono polecenia cmdlet, `<cmdlet>` których można uży
 |Usuwanie elementu z listy|`Remove-MpPreference`|
 
 W poniższej tabeli wymieniono wartości, których można `<exclusion list>` użyć w części polecenia cmdlet programu PowerShell:
-
-<br/><br/>
 
 |Typ wykluczenia|Parametr programu PowerShell|
 |---|---|
@@ -225,8 +220,6 @@ W poniższej tabeli opisano sposób, w jaki można używać symboli wieloznaczny
 
 W poniższej tabeli wymieniono i opisano zmienne środowiska konta systemowego.
 
-<br/><br/>
-
 |Ta zmienna środowiskowa systemu...|Przekierowuje do tego|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -296,8 +289,8 @@ Elementy z listy wykluczeń można pobrać przy użyciu jednej z następujących
 
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
-- MpCmdRun
-- PowerShell
+- [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
+- [PowerShell](/powershell/module/defender)
 - [Zabezpieczenia Windows aplikacji](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]

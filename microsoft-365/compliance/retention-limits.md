@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Opis maksymalnej liczby zasad i elementów na zasady dotyczące zasad przechowywania i zasad etykiet przechowywania
-ms.openlocfilehash: 4cd8fc5f141f9e039a271e8534e156e4df0582e9
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 4c175a9e43440c58f74da334a38bc73dae5b76e4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419131"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595021"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limity dotyczące zasad przechowywania i zasad etykiet przechowywania
 
@@ -76,7 +76,7 @@ W przypadku użycia zakresów statycznych i opcjonalnej konfiguracji w celu doł
 Maksymalna liczba elementów na zasady dla przechowywania w zakresach statycznych:
 
 - Exchange skrzynek pocztowych: 1000
-- Microsoft 365 grup: 1000
+- Grupy Microsoft 365: 1000
 - Teams wiadomości w kanale: 1000
 - Teams czatów: 1000
 - Yammer wiadomości społeczności: 1000
@@ -116,8 +116,16 @@ SharePoint przykład:
 
 W przypadku [zawartości zawartości](disposition.md) należy pamiętać o pewnych ograniczeniach:
 
-- 1 000 000 elementów oczekujących na rozsyłanie na etap dla każdej etykiety przechowywania
-
-- Dowód usuwania przez maksymalnie siedem lat po zrzucie produktu z ograniczeniem do 1000 000 pozycji na etykietę przechowywania dla tego okresu. 
+- Maksymalna liczba na dzierżawcę:
     
-Jeśli jest konieczne potwierdzenie ich rozsyłania większe niż ten limit 1 000 000 elementów oznaczonych jako rekordy, skontaktuj się z pomocą [techniczną firmy Microsoft](../admin/get-help-support.md).
+    - 16 000 000 elementów w jednym z następujących stanów recenzji rozsyłania: oczekujące rozsyłanie lub zatwierdzone rozsyłanie
+        
+    - 16 000 000 elementów oznaczonych jako rekordy automatycznie usuwane (bez recenzji usuwania)
+
+- Maksymalna liczba dla każdej etykiety przechowywania:
+    
+    - 1 000 000 elementów oczekujących na rozsyłanie na etap dla każdej etykiety przechowywania
+    
+    - Dowód usuwania przez maksymalnie siedem lat po zrzucie produktu z ograniczeniem do 1000 000 pozycji na etykietę przechowywania dla tego okresu. 
+        
+        Jeśli jest konieczne potwierdzenie ich rozsyłania większe niż ten limit 1000 000 elementów oznaczonych jako rekordy, skontaktuj się z [pomoc techniczna firmy Microsoft.](../admin/get-help-support.md)

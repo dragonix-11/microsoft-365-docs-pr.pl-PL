@@ -1,7 +1,7 @@
 ---
 title: Microsoft Threat Experts
 ms.reviewer: ''
-description: Microsoft Threat Experts zapewnia dodatkową warstwę wiedzy specjalistycznej dla programu Microsoft Defender for Endpoint.
+description: Microsoft Threat Experts zapewnia dodatkową warstwę wiedzy specjalistycznej dla Ochrona punktu końcowego w usłudze Microsoft Defender.
 keywords: zarządzana usługa chłoniania zagrożeń, zarządzane chłonienie zagrożeń, usługa zarządzanych wykrywania i odpowiedzi (MDR, MTE, Microsoft Threat Experts, MTE-TAN, powiadomienie o atakach kierowanego, powiadomienie o atakach kierowanego
 search.product: Windows 10
 ms.prod: m365-security
@@ -18,22 +18,22 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc9f0f4410e3f62a6f787efd01d899250cd67a93
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 82fbe21e4d18a741da4a098b8e24a303f4d47008
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011339"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473964"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Threat Experts
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft Threat Experts to zarządzana usługa chłonięcia zagrożeniami, która zapewnia centrach operacji zabezpieczeń (SOCs, Security Operation Center) z monitorowaniem i analizą na poziomie ekspertów, aby zapewnić, że nie przegapisz ważnych zagrożeń w Twoich unikatowych środowiskach.
 
@@ -44,7 +44,7 @@ Ta usługa wyszukiwania zagrożeń zarządzanych przez ekspertów udostępnia sz
 > [!NOTE]
 > Przed zastosowaniem do usługi zarządzanego wyszukiwania zagrożeń omówij wymagania dotyczące uprawnień z dostawcą usług technicznych firmy Microsoft i zespołem konta.
 
-Jeśli jesteś klientem programu Microsoft Defender dla punktu końcowego, musisz zastosować do usługi **Microsoft Threat Experts —** powiadomienia o atakach kierowanego, aby uzyskać specjalne szczegółowe informacje i analizy, które ułatwiają identyfikowanie najważniejszych zagrożeń w środowisku w celu szybkiego reagowania na nie.
+Jeśli jesteś klientem usługi Ochrona punktu końcowego w usłudze Microsoft Defender, musisz zastosować do usługi **Microsoft Threat Experts —** powiadomienia o atakach kierowanego, aby uzyskać specjalne szczegółowe informacje i analizy, które ułatwiają identyfikowanie najważniejszych zagrożeń w środowisku w celu szybkiego reagowania na nie.
 
 Aby zarejestrować się do Microsoft Threat Experts — korzyści z powiadomień dotyczących ukierunkowanych ataków,  \>  \>  \>  \> przejdź do Ustawienia punktów końcowych Ogólne funkcje zaawansowane Microsoft Threat Experts **—** powiadomienia o atakach kierowanego, które mają zastosowanie. Po zaakceptowaniu otrzymasz zalety powiadomień o atakach ukierunkowanych.
 
@@ -73,19 +73,19 @@ Opcja **Skonsultuj się** z ekspertem ds. zagrożeń jest dostępna w kilku miej
 
 - ***Menu Pomoc i obsługa techniczna***
 
-  ![Zrzut ekranu przedstawiający opcję menu MTE-EOD.](images/mte-eod-menu.png)
+  :::image type="content" source="images/mte-eod-menu.png" alt-text="Element menu MTE-EOD" lightbox="images/mte-eod-menu.png":::
 
 - ***Menu Akcje strony urządzenia***
 
-  ![Zrzut ekranu przedstawiający opcję menu akcji strony urządzenia MTE-EOD.](images/mte-eod-machines.png)
+  :::image type="content" source="images/mte-eod-machines.png" alt-text="Opcja menu akcji strony urządzenia MTE-EOD" lightbox="images/mte-eod-machines.png":::
 
 - ***Menu akcji strony Alerty***
 
-  ![Zrzut ekranu przedstawiający opcję menu akcji strony alertu MTE-EOD.](images/mte-eod-alerts.png)
+  :::image type="content" source="images/mte-eod-alerts.png" alt-text="Opcja menu akcji strony alertów MTE-EOD" lightbox="images/mte-eod-alerts.png":::
 
 - ***Menu Akcje strony pliku***
 
-  ![Zrzut ekranu przedstawiający opcję menu akcji strony pliku MTE-EOD.](images/mte-eod-file.png)
+  :::image type="content" source="images/mte-eod-file.png" alt-text="Opcja menu akcji strony pliku MTE-EOD" lightbox="images/mte-eod-file.png":::
 
 > [!NOTE]
 > Jeśli chcesz śledzić stan spraw ekspertów na żądanie za pośrednictwem centrum Usług Firmy Microsoft, strzygniesz się z menedżerem klienta ds. klientów i kontem produktywnych spraw.

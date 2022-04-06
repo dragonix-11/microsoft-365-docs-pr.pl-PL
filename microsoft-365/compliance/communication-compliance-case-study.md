@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7532051d649be4d0e9320a372c53686879c31972
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 7235bbdfb956369eebe960568921bc4bba86651a
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "63015734"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595131"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Analiza przypadku — firma Contoso szybko konfiguruje nieodpowiednie zasady dotyczące tekstu dla Microsoft Teams, Exchange i komunikacji Yammer tekstowej
 
@@ -56,26 +56,21 @@ Administratorzy IT i specjaliści ds. zgodności firmy Contoso uczestniczyli w i
 
 Pierwszym krokiem jest potwierdzenie, że licencjonowanie oprogramowania Contoso w Microsoft 365 obsługuje rozwiązanie do zapewnienia zgodności komunikacji. Aby uzyskać dostęp do zgodności komunikacji i korzystać z niej, administratorzy IT firmy Contoso muszą sprawdzić, czy firma Contoso ma jedną z następujących funkcji:
 
-- Microsoft 365 E5 (płatna lub próbna)
-- Microsoft 365 E3 + Zgodność platformy Microsoft 365 E5 subskrypcji
-- Microsoft 365 E3 + Microsoft 365 E5 zarządzanie ryzykiem w niejawnym programie testów
-- Microsoft 365 A5 (płatna lub próbna)
-- Microsoft 365 A3 + Microsoft 365 A5 zgodności z przepisami
-- Microsoft 365 A3 subskrypcji + Microsoft 365 A5 zarządzanie ryzykiem w niejawnym programie testów
-- Microsoft 365 G5 (płatna lub próbna)
-- Microsoft 365 G5 + Microsoft 365 zgodności Microsoft 365 G5
-- Microsoft 365 G5 + Microsoft 365 zarządzanie ryzykiem w ramach niejawnego programu testów G5
+- Microsoft 365 E5/A5/F5/G5 (wersja płatna lub próbna)
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5 zgodności ze standardem Microsoft 365 E5/A5/F5/G5
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5/A5/F5/G5 Zarządzanie ryzykiem w ramach niejawnego programu testów
 - Office 365 Enterprise E5 (płatna lub próbna)
+- Office 365 A5 (płatna lub próbna)
 - Office 365 Enterprise E3 + Office 365 Advanced Compliance (nie jest już dostępna dla nowych subskrypcji, zobacz uwagę)
 
-Muszą oni również potwierdzić, że do użytkowników uwzględnionych w zasadach zgodności komunikacji należy przypisać jedną z powyższych licencji.
+Użytkownikom uwzględnionym w zasadach zgodności komunikacji należy przypisać jedną z powyższych licencji. Aby uzyskać więcej informacji na temat subskrypcji i licencjonowania, [Microsoft 365 wskazówki dotyczące zabezpieczeń & zgodnością](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 > [!IMPORTANT]
 > Office 365 Advanced Compliance jest już sprzedawana jako subskrypcja autonomiczna. Gdy wygasają bieżące subskrypcje, klienci powinni przejść do jednej z powyższych subskrypcji, która zawiera takie same lub dodatkowe funkcje zgodności.
 
 Administratorzy IT firmy Contoso mogą wykonać następujące czynności, aby zweryfikować obsługę licencjonowania dla firmy Contoso:
 
-1. Administratorzy IT logują się do centrum administracyjne platformy Microsoft 365 <https://admin.microsoft.com> i przejdź do witryny centrum administracyjne platformy Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**BillingLicenses**</a> > .
+1. Administratorzy IT logują się do Centrum administracyjne platformy Microsoft 365 <https://admin.microsoft.com> i przejdź do witryny Centrum administracyjne platformy Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**BillingLicenses**</a> > .
 
 2. Tutaj potwierdzili oni, że mają jedną z opcji [licencji,](communication-compliance-configure.md#subscriptions-and-licensing) która obejmuje obsługę zgodności komunikacji.
 
@@ -110,7 +105,7 @@ Po skonfigurowaniu uprawnień do zgodności komunikacji administratorzy IT firmy
 - Rozpoczynanie bezpośrednio od rozwiązania do zapewnienia zgodności komunikacji
 - Rozpoczynając od Centrum zgodności platformy Microsoft 365
 - Rozpoczynanie od Microsoft 365 rozwiązania
-- Rozpoczynając od centrum administracyjne platformy Microsoft 365
+- Rozpoczynając od Centrum administracyjne platformy Microsoft 365
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>Rozpoczynanie bezpośrednio od rozwiązania do zapewnienia zgodności komunikacji
 
@@ -130,9 +125,9 @@ Administratorzy IT firmy Contoso i specjaliści ds. zgodności mogą również z
 
 ![Wykaz rozwiązań.](../media/communication-compliance-case-solution.png)
 
-### <a name="starting-from-the-microsoft-365-admin-center"></a>Rozpoczynając od centrum administracyjne platformy Microsoft 365
+### <a name="starting-from-the-microsoft-365-admin-center"></a>Rozpoczynając od Centrum administracyjne platformy Microsoft 365
 
-Aby uzyskać dostęp do zgodności komunikacji na początku centrum administracyjne platformy Microsoft 365, administratorzy IT i specjaliści ds. zgodności firmy Contoso logują się do centrum administracyjne platformy Microsoft 365 [(https://admin.microsoft.com)](https://admin.microsoft.com)i przejdź do [ Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com)
+Aby uzyskać dostęp do zgodności komunikacji na początku Centrum administracyjne platformy Microsoft 365, administratorzy IT i specjaliści ds. zgodności firmy Contoso logują się do Centrum administracyjne platformy Microsoft 365 [(https://admin.microsoft.com)](https://admin.microsoft.com)i przejdź do [ Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com)
 
 ![Link zgodności komunikacji.](../media/communication-compliance-case-compliance-link.png)
 
@@ -170,7 +165,7 @@ Specjaliści ds. zgodności Firmy Contoso chcą dodać wszystkich użytkowników
 
 Muszą utworzyć nową grupę, aby uwzględnić wszystkich użytkowników firmy Contoso, więc mogą wykonać następujące czynności:
 
-1. Administratorzy IT firmy Contoso logują się do centrum administracyjne platformy Microsoft 365 [grupy (https://admin.microsoft.com)](https://admin.microsoft.com) i przejdź do centrum administracyjne platformy Microsoft 365 > **Grupy** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
+1. Administratorzy IT firmy Contoso logują się do Centrum administracyjne platformy Microsoft 365 [(https://admin.microsoft.com)](https://admin.microsoft.com) i przejdź do Centrum administracyjne platformy Microsoft 365 > **Grupy** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
 2. Wybieraj **pozycję Dodaj grupę** i wykonaj zadania kreatora, aby utworzyć nową *Microsoft 365 lub* *grupę dystrybucyjną*.
 
     ![Grupy.](../media/communication-compliance-case-all-employees.png)
@@ -183,7 +178,7 @@ Muszą utworzyć nową grupę, aby uwzględnić wszystkich użytkowników firmy 
 
 Po zakończeniu wszystkich wymagań wstępnych administratorzy IT i specjaliści ds. zgodności firmy Contoso mogą skonfigurować zasady zgodności komunikacji w celu monitorowania nieodpowiedniego tekstu. Skonfigurowanie tych zasad za pomocą nowego nieodpowiedniego szablonu zasad tekstowych jest proste i szybkie.
 
-1. Administratorzy IT i specjaliści ds. zgodności firmy Contoso logują się do **Centrum zgodności platformy Microsoft 365 i w** okienku nawigacji po lewej **stronie wybierz pozycję** Zgodność komunikacji. Ta akcja spowoduje otwarcie **pulpitu nawigacyjnego Przegląd** , który zawiera szybkie linki do szablonów zasad zgodności komunikacji. Wybierają szablon **Monitor dla nieodpowiedniego tekstu** , wybierając **pozycję Wprowadzenie** do szablonu.
+1. Administratorzy IT i specjaliści ds. zgodności firmy Contoso logują się do **Centrum zgodności platformy Microsoft 365 i w** okienku nawigacji po lewej **stronie wybierz pozycję** Zgodność komunikacji. Ta akcja spowoduje otwarcie **pulpitu nawigacyjnego Przegląd** , który zawiera szybkie linki do szablonów zasad zgodności komunikacji. Wybierają szablon **Monitor dla nieodpowiedniego** tekstu, wybierając **Wprowadzenie** szablonu.
 
     ![Szablon tekstowy zgodny ze zgodnością komunikacji.](../media/communication-compliance-case-template.png)
 

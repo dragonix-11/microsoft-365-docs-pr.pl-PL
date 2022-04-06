@@ -17,12 +17,12 @@ description: Dowiedz się, jak korzystać z Eksploratora zagrożeń i raportu wy
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 959d3d676f07a7816b622d5db53252c846340d2a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d21773694e1dc9472a9a8ac566c8eaacc00fcab8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988004"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682862"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Widoki w Eksploratorze zagrożeń i wykrywania w czasie rzeczywistym
 
@@ -42,8 +42,6 @@ ms.locfileid: "62988004"
 
 Przy pierwszym otwarciu Eksploratora (lub raportu wykrywanie w czasie rzeczywistym) w widoku domyślnym są wykrywane złośliwe oprogramowanie w wiadomościach e-mail z ostatnich 7 dni. Ten raport może również zawierać program Microsoft Defender do wykrywania Office 365, takich jak złośliwe adresy URL wykryte w linkach programu [Sejf](safe-links.md) oraz złośliwych plików wykrytych przez załączniki Sejf[.](safe-attachments.md) Ten raport można zmodyfikować tak, aby zawierał dane z ostatnich 30 dni (za pomocą programu Microsoft Defender dla Office 365 P2). Subskrypcje wersji próbnej będą zawierać dane tylko z ostatnich siedmiu dni.
 
-****
-
 |Subskrypcja|Narzędzie|Dni danych|
 |---|---|---|
 |Program Microsoft Defender dla Office 365 P1|Wykrywanie w czasie rzeczywistym|7|
@@ -51,7 +49,6 @@ Przy pierwszym otwarciu Eksploratora (lub raportu wykrywanie w czasie rzeczywist
 |Usługa Microsoft Defender dla Office 365 P1 płatna wersja próbna programu Defender dla Office 365 P2|Eksplorator zagrożeń|7|
 |Microsoft Defender dla Office 365 P2|Eksplorator zagrożeń|7|
 |Usługa Microsoft Defender dla Office 365 P2|Eksplorator zagrożeń|30|
-|
 
 > [!NOTE]
 > Wkrótce rozszerzymy limit przechowywania danych Eksploratora (i wykrywania w czasie rzeczywistym) i wyszukiwania dla dzierżaw wersji próbnej z 7 do 30 dni. Ta zmiana jest śledzona w ramach elementu planu nr 70544 i jest obecnie w fazie wdrażania.

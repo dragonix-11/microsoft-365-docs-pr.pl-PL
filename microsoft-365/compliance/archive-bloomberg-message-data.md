@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik danych w celu importowania i archiwizowania danych za pomocą narzędzia poczty e-mail Bloomberg Message w programie Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w programie Microsoft 365, aby zarządzać danymi innych firm przy użyciu funkcji zgodności, takich jak archiwizacja ze względu na przepisy prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 3897909c185aabad48483db9b42fcf6b552a68a3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5b1f32760542bf9ace2adaa8640571f665ba3ffb
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317839"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569870"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Konfigurowanie łącznika do archiwizowania danych wiadomości Bloomberga
 
@@ -145,14 +145,20 @@ Ostatnim krokiem jest utworzenie łącznika Wiadomości Kwiatberga w Centrum zgo
 
 7. Po pomyślnym weryfikacji połączenia kliknij przycisk **Dalej**.
 
-8. Na stronie **Map Bloomberg Message users to Microsoft 365 users (Wiadomości bloomberga**) włącz automatyczne mapowanie użytkowników i zapewnij niestandardowe mapowanie użytkowników zgodnie z wymaganiami.
+8. Na stronie **Definiowanie** użytkownika określ użytkowników, dla których mają być importowane dane.
+
+     - **Wszyscy użytkownicy w Organizacji**. Zaznacz tę opcję, aby zaimportować dane wszystkich użytkowników.
+
+     - **Tylko użytkownicy, którzy mają zawieszenie w postępowaniem sądowym**. Zaznacz tę opcję, aby importować dane tylko tych użytkowników, których skrzynki pocztowe są umieszczone w związku z postępowaniem sądowym. Ta opcja powoduje importowanie danych do skrzynek pocztowych użytkowników, dla których właściwość LitigationHoldEnabled ma wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie postępowania w związku z postępowaniem sądowym](create-a-litigation-hold.md).
+
+9. Na stronie **Map Bloomberg Message users to Microsoft 365 users (Wiadomości bloomberga**) włącz automatyczne mapowanie użytkowników i zapewnij niestandardowe mapowanie użytkowników zgodnie z wymaganiami.
 
    > [!NOTE]
    > Łącznik zaim importuje elementy wiadomości do skrzynki pocztowej określonego użytkownika. W skrzynce pocztowej określonego użytkownika jest tworzony nowy folder o nazwie **BloombergMessage** , do których elementy zostaną zaimportowane. Łącznik działa przy użyciu wartości właściwości *CorporateEmailAddress* . Każda wiadomość czatu zawiera tę właściwość, a jej adres e-mail zostanie wypełniony adresem e-mail każdego uczestnika wiadomości czatu. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości *CorporateEmailAddress* możesz także zdefiniować mapowanie niestandardowe, przesyłając plik mapowania plików CSV. Plik mapowania powinien zawierać identyfikator UUID Bloomberga i odpowiedni Microsoft 365 adres skrzynki pocztowej dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu wiadomości łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli użytkownik nie znajdzie prawidłowego Microsoft 365 odpowiadającego identyfikatorowi UUID użytkownika Bloomberga, łącznik użyje właściwości *CorporateEmailAddress* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w pliku mapowania niestandardowego lub właściwości *CorporateEmailAddress* elementu wiadomości, element nie zostanie zaimportowany.
 
-9. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+10. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
 
-10. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika. Kliknij łącznik, aby wyświetlić stronę wysuwu zawierającą informacje o łączniku.
+11. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika. Kliknij łącznik, aby wyświetlić stronę wysuwu zawierającą informacje o łączniku.
 
 ## <a name="set-up-a-connector-using-private-keys"></a>Konfigurowanie łącznika przy użyciu kluczy prywatnych
 
@@ -223,14 +229,20 @@ Po skonfigurowaniu witryny Bloomberg SFTP kolejnym krokiem jest utworzenie łąc
 
 7. Po pomyślnym weryfikacji połączenia kliknij przycisk **Dalej**.
 
-8. Na stronie **Map Bloomberg Message users to Microsoft 365 users (Wiadomości bloomberga**) włącz automatyczne mapowanie użytkowników i zapewnij niestandardowe mapowanie użytkowników zgodnie z wymaganiami.
+8. Na stronie **Definiowanie użytkownika** określ użytkowników, dla których mają być importowane dane
+
+     - **Wszyscy użytkownicy w Organizacji**. Zaznacz tę opcję, aby zaimportować dane wszystkich użytkowników.
+
+     - **Tylko użytkownicy, którzy mają zawieszenie w postępowaniem sądowym**. Zaznacz tę opcję, aby importować dane tylko tych użytkowników, których skrzynki pocztowe są umieszczone w związku z postępowaniem sądowym. Ta opcja powoduje importowanie danych do skrzynek pocztowych użytkowników, dla których właściwość LitigationHoldEnabled ma wartość True. Aby uzyskać więcej informacji, zobacz [Tworzenie postępowania w związku z postępowaniem sądowym](create-a-litigation-hold.md).
+
+9. Na stronie **Map Bloomberg Message users to Microsoft 365 users (Wiadomości bloomberga**) włącz automatyczne mapowanie użytkowników i zapewnij niestandardowe mapowanie użytkowników zgodnie z wymaganiami.
 
    > [!NOTE]
    > Łącznik zaim importuje elementy wiadomości do skrzynki pocztowej określonego użytkownika. W skrzynce pocztowej określonego użytkownika jest tworzony nowy folder o nazwie **BloombergMessage** , do których elementy zostaną zaimportowane. Łącznik działa przy użyciu wartości właściwości *CorporateEmailAddress* . Każda wiadomość czatu zawiera tę właściwość, a jej adres e-mail zostanie wypełniony adresem e-mail każdego uczestnika wiadomości czatu. Oprócz automatycznego mapowania użytkowników przy użyciu wartości właściwości *CorporateEmailAddress* możesz także zdefiniować mapowanie niestandardowe, przesyłając plik mapowania plików CSV. Plik mapowania powinien zawierać identyfikator UUID Bloomberga i odpowiedni Microsoft 365 adres skrzynki pocztowej dla każdego użytkownika. Jeśli włączysz automatyczne mapowanie użytkowników i udostępnisz mapowanie niestandardowe, dla każdego elementu wiadomości łącznik najpierw przyjrzy się plikowi mapowania niestandardowego. Jeśli użytkownik nie znajdzie prawidłowego Microsoft 365 odpowiadającego identyfikatorowi UUID użytkownika Bloomberga, łącznik użyje właściwości *CorporateEmailAddress* elementu czatu. Jeśli łącznik nie znajdzie prawidłowego użytkownika Microsoft 365 w pliku mapowania niestandardowego lub właściwości *CorporateEmailAddress* elementu wiadomości, element nie zostanie zaimportowany.
 
-9. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
+10. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie kliknij przycisk **Zakończ,** aby utworzyć łącznik.
 
-10. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika. Kliknij łącznik, aby wyświetlić stronę wysuwu zawierającą informacje o łączniku.
+11. Przejdź do **strony Łączniki** danych, aby wyświetlić postęp procesu importowania nowego łącznika. Kliknij łącznik, aby wyświetlić stronę wysuwu zawierającą informacje o łączniku.
 
 ## <a name="known-issues"></a>Znane problemy
 

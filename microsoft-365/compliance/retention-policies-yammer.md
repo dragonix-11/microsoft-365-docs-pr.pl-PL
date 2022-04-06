@@ -17,19 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania, które dotyczą Yammer.
-ms.openlocfilehash: 3759f39a9ef2067d9719d4cf83d73ee7b67ef125
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 48b7f00df2f01d1b84af1962d91551752334c8b1
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010637"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595109"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Informacje na temat przechowywania danych dla Yammer
 
 >*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-> [!NOTE]
-> Ta funkcja jest w wersji Preview i może ulec zmianie.
 
 Informacje zawarte w tym artykule uzupełnia informacje [dotyczące przechowywania,](retention.md) ponieważ zawierają informacje specyficzne dla Yammer.
 
@@ -61,11 +58,6 @@ Przy użyciu zasad przechowywania można zachować dane z wiadomości społeczno
 Kopie wiadomości społeczności mogą być również przechowywane w ukrytym folderze skrzynek pocztowych użytkowników, gdy @wzmiankują użytkowników lub informują użytkownika o odpowiedzi. Mimo że te wiadomości są wiadomościami wysyłanymi do społeczności, zasady przechowywania Yammer wiadomości użytkowników będą często zawierać kopie wiadomości od społeczności. W efekcie wiadomości użytkowników nie są ograniczone do wiadomości prywatnych.
 
 Te ukryte foldery nie są przeznaczone do bezpośredniego dostępu dla użytkowników lub administratorów, ale zamiast tego przechowuj dane, które administratorzy zgodności mogą wyszukiwać za pomocą narzędzi zbierania elektronicznych materiałów dowodowych.
-
-> [!IMPORTANT]
-> Ponieważ kopie wiadomości społeczności mogą być również przechowywane w skrzynkach pocztowych użytkowników, zasady przechowywania z akcją usunięcia wiadomości użytkowników programu Yammer mogą powodować, że oryginalna wiadomość społeczności nie będzie już widoczna dla użytkowników w aplikacji Yammer.
-> 
-> Jednak kopia oryginalnej wiadomości jest nadal dostępna w ukrytym folderze skrzynki pocztowej grupy społeczności i dostępna za pomocą wyszukiwania zbierania elektronicznych materiałów dowodowych w celu zapewnienia zgodności.
 
 Mimo że wiadomości są przechowywane w programie Exchange, wiadomości Yammer są uwzględniane tylko w zasadach przechowywania skonfigurowanych dla wiadomości społeczności usługi **Yammer** lub lokalizacji wiadomości Yammer użytkowników.
 
@@ -185,12 +177,12 @@ Jeśli użytkownik przechowył jakiekolwiek pliki w u Yammer, [zobacz sekcję](r
 
 ## <a name="limitations"></a>Ograniczenia
 
-Yammer przechowywania są obecnie w wersji Preview i nieustannie pracujemy nad optymalizacją funkcji przechowywania. Do tego czasu należy pamiętać o następujących ograniczeniach podczas korzystania z przechowywania wiadomości Yammer wiadomości i wiadomości użytkowników:
+Korzystając z przechowywania wiadomości e-mail i wiadomości Yammer użytkowników, należy pamiętać o następujących ograniczeniach:
 
 - Po wybraniu pozycji **Edytuj** dla lokalizacji **Yammer wiadomości od** użytkowników mogą być wyświetlane goście i użytkownicy niebędący skrzynkami pocztowymi. Zasady przechowywania nie są przeznaczone dla tych użytkowników, więc ich nie wybieraj.
 
 ## <a name="configuration-guidance"></a>Wskazówki dotyczące konfiguracji
 
-Jeśli nie wiesz, jak konfigurować przechowywanie w aplikacji Microsoft 365, zobacz [Wprowadzenie do zarządzania informacjami](get-started-with-information-governance.md).
+Jeśli nie wiesz, jak konfigurować przechowywanie w aplikacji Microsoft 365, zobacz zarządzanie Wprowadzenie [informacjami](get-started-with-information-governance.md).
 
 Jeśli możesz już skonfigurować zasady przechowywania dla aplikacji Yammer, zobacz [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md).

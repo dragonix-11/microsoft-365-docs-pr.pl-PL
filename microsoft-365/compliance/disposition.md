@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitoruj usuwanie zawartości i zarządzaj nimi podczas korzystania z recenzji usuwania lub elementów oznaczonych jako rekordy są automatycznie usuwane zgodnie z skonfigurowanymi ustawieniami.
-ms.openlocfilehash: 2d078eb00ffa6d2dd8279c7e5eb65a8fcfb6fa53
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: dbc713c665367bb973fb8faded24015ad6c2d5c3
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419187"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594823"
 ---
 # <a name="disposition-of-content"></a>Disposition of content
 
@@ -51,7 +51,7 @@ Dodatkowo:
 
 - Domyślnie każda osoba mająca dostęp **do strony Disposition** widzi tylko te elementy, do których została przypisana. Aby administrator zarządzania rekordami mógł wyświetlić wszystkie elementy przypisane do wszystkich użytkowników oraz wszystkie etykiety przechowywania skonfigurowane do przeglądania rozsyłania: Przejdź  >  do ustawień zarządzania rekordamiWyświetlanie w celu wybrania, a następnie włączenia grupy zabezpieczeń z obsługą poczty, która zawiera konta administratora.
     
-    Microsoft 365 grupy i grupy zabezpieczeń, które nie mają włączonej obsługi poczty, nie obsługują tej funkcji i nie są wyświetlane na liście do wybrania. Jeśli chcesz utworzyć nową grupę zabezpieczeń z obsługą poczty, użyj linku do centrum administracyjne platformy Microsoft 365, <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a> aby utworzyć nową grupę. 
+    Microsoft 365 grupy i grupy zabezpieczeń, które nie mają włączonej obsługi poczty, nie obsługują tej funkcji i nie są wyświetlane na liście do wybrania. Jeśli chcesz utworzyć nową grupę zabezpieczeń z obsługą poczty, użyj linku do Centrum administracyjne platformy Microsoft 365, <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a> aby utworzyć nową grupę. 
     
     > [!IMPORTANT]
     > Po włączeniu grupy nie można jej zmienić w centrum zgodności. W następnej sekcji opisano sposób włączania innej grupy przy użyciu programu PowerShell.
@@ -187,14 +187,16 @@ Jak widać w przedstawionym przykładzie, obsługiwane akcje to:
   
 - **Zatwierdzanie usuwania**:
     - Jeśli ta akcja jest wybrana na pośredni etap przeglądu rozsyłania (skonfigurowano wiele etapów): Element przechodzi do następnego etapu procesu ich rozsyłania.
-    - Jeśli ta czynność jest wybrana na ostatni etap kontroli usuwania lub istnieje tylko jeden etap usuwania: Element jest oznaczony jako kwalifikuje się do trwałego usunięcia, co nastąpi w ciągu 7 dni.
+    - Jeśli ta czynność jest zaznaczona w ostatnim etapie przeglądania usuwania lub istnieje tylko jeden etap usuwania: Element jest oznaczony jako uprawniony do trwałego usunięcia, który wówczas czynność czasomierza ma zostać podjęte w ciągu 7 dni. Dokładny chronometraż elementu, który następnie zostanie trwale usunięty, zależy od obciążenia pracą. Aby uzyskać więcej informacji, zobacz [Jak](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) działa przechowywanie SharePoint i OneDrive [Jak](retention-policies-exchange.md#how-retention-works-for-exchange) działa przechowywanie w Exchange.
+
 - **Etykieta ponownie**:
     - Jeśli ta akcja jest zaznaczona, element kończy proces przeglądania ich rozsyłania oryginalnej etykiety. Następnie element podlega ustawień przechowywania na nowo wybranej etykiecie przechowywania.
+
 - **Rozszerz**:
     - Po wybraniu tej akcji przegląd rozsyłania jest w praktyce zawieszany do końca rozszerzonego okresu, a następnie przegląd rozsyłania jest wyzwalany ponownie od pierwszego etapu.
+
 - **Dodaj recenzentów**:
     - Po wybraniu tej akcji użytkownik jest monitowany o określenie i dodanie innych użytkowników do recenzji.
-    
     > [!NOTE]
     > Ta akcja nie spowoduje automatycznego udzielenia [wymaganych uprawnień](#permissions-for-disposition) dodanym użytkownikom. Osoby, które nie mają tych uprawnień, nie mogą uczestniczyć w recenzji rozsyłania.
 

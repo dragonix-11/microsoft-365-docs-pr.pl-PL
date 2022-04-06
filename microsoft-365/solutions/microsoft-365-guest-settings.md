@@ -20,22 +20,22 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Dowiedz się więcej o ustawieniach udostępniania gościa dostępnych w Microsoft 365 które mogą mieć wpływ na udostępnianie osobom spoza organizacji.
-ms.openlocfilehash: 2b6aac7a02c6c7c5feda041a2b06147c67dfa285
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9cb6eb52c523bba624af5f830c3c34c4edaf86b8
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316537"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594845"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informacje dotyczące ustawień udostępniania dla gości na platformie Microsoft 365
 
-Ten artykuł zawiera informacje o różnych ustawieniach, które mogą mieć wpływ na udostępnianie obciążeń pracą usługi Microsoft 365 osobom spoza organizacji: Teams, Microsoft 365 Groups, SharePoint i OneDrive. Te ustawienia znajdują się w centrach administracyjnych usługi Azure Active Directory, platformy Microsoft 365, usługi Teams i programu SharePoint.
+Ten artykuł zawiera informacje o różnych ustawieniach, które mogą mieć wpływ na udostępnianie obciążeń pracą usługi Microsoft 365 osobom spoza organizacji: Teams, Grupy Microsoft 365, SharePoint i OneDrive. Te ustawienia znajdują się w centrach administracyjnych usługi Azure Active Directory, platformy Microsoft 365, usługi Teams i programu SharePoint.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
-**Rola administratora:** Administrator globalny
+**Rola administratora: administrator globalny**
 
-Azure Active Directory to usługa katalogowa używana przez firmę Microsoft 365. Ustawienia Azure Active Directory relacje organizacyjne mają bezpośredni wpływ na udostępnianie w Teams, grupach Microsoft 365, grupach SharePoint i OneDrive.
+Azure Active Directory to usługa katalogowa używana przez firmę Microsoft 365. Ustawienia Azure Active Directory relacje organizacyjne mają bezpośredni wpływ na udostępnianie Teams, Grupy Microsoft 365, SharePoint i OneDrive.
 
 > [!NOTE]
 > Te ustawienia mają wpływ SharePoint tylko SharePoint [i OneDrive usługi Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview). W poniższej tabeli przyjęto założenie, że zostało to skonfigurowane.
@@ -57,30 +57,30 @@ Te ustawienia mają wpływ na sposób zapraszania użytkowników do katalogu. Ni
 
 ## <a name="microsoft-365"></a>Microsoft 365
 
-**Rola administratora:** Administrator globalny
+**Rola administratora: administrator globalny**
 
-Grupa centrum administracyjne platformy Microsoft 365 ma ustawienia udostępniania na poziomie organizacji oraz grup Microsoft 365 grupy.
+Ta Centrum administracyjne platformy Microsoft 365 ma ustawienia udostępniania na poziomie organizacji oraz do Grupy Microsoft 365.
 
 ### <a name="sharing"></a>Udostępnianie
 
-**Nawigacja:** [centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) >  **Ustawienia** >  **Ustawianie zabezpieczeń** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**& prywatnośćUstawianie**</a> > .
+**Nawigacja:** [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) >  **Ustawienia** >  **Ustawianie zabezpieczeń** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**& prywatnośćUstawianie**</a> > .
 
-![Zrzut ekranu przedstawiający ustawienie zabezpieczeń i prywatności udostępniania gościa w centrum administracyjne platformy Microsoft 365.](../media/sharepoint-security-privacy-sharing-setting.png)
+![Zrzut ekranu przedstawiający ustawienie zabezpieczeń i prywatności udostępniania gościa w Centrum administracyjne platformy Microsoft 365.](../media/sharepoint-security-privacy-sharing-setting.png)
 
 | Ustawienie | Domyślne | Opis |
 |:-----|:-----|:-----|
 |Umożliwianie użytkownikom dodawania nowych gości do organizacji|Wł.|Gdy jest **ustawiona wartość Tak**, członkowie usługi Azure AD mogą zapraszać gości za pośrednictwem usługi Azure AD. w przypadku ustawienia **na wartość Nie**, nie mogą. W przypadku ustawienia **Tak członkowie grupy** Microsoft 365 mogą zapraszać gości za zgodą właściciela; w przypadku ustawienia Nie członkowie grupy Microsoft 365 mogą zapraszać gości z zatwierdzeniem właściciela, ale ich właściciele muszą być administratorami globalnymi. <p> Pamiętaj, **że w usłudze** Azure AD członkowie mogą zapraszać członków (w odróżnieniu od gości), a nie do członków witryny lub grupy w Microsoft 365. <p> Jest to identyczne z ustawieniem **Członkowie mogą zapraszać** w Azure Active Directory Relacje organizacyjne.|
 
-### <a name="microsoft-365-groups"></a>Microsoft 365 grupy
+### <a name="microsoft-365-groups"></a>Grupy Microsoft 365
 
-**Nawigacja:** [centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) >  **Ustawienia** >  **Utorze ustawień > Microsoft 365** grupy
+**Nawigacja:** [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com) >  **Ustawienia** >  **Utor ustawień** > Grupy Microsoft 365
 
-![Zrzut ekranu przedstawiający Microsoft 365 gości grup w aplikacji centrum administracyjne platformy Microsoft 365.](../media/office-365-groups-guest-settings.png)
+![Zrzut ekranu przedstawiający Grupy Microsoft 365 gościa w aplikacji Centrum administracyjne platformy Microsoft 365.](../media/office-365-groups-guest-settings.png)
 
 | Ustawienie | Domyślne | Opis |
 |:-----|:-----|:-----|
-|Umożliwianie członkom grupy spoza organizacji uzyskiwania dostępu do zawartości grupy|Wł.|Gdy jest **ustawiona wartość Wł**., goście mogą uzyskać dostęp do zawartości grup. gdy jest **ustawiona na wartość Wyłączone**, nie mogą. To ustawienie powinno być wł **.** w każdym scenariuszu, w którym goście komunikują się Microsoft 365 grupami lub Teams.|
-|Umożliwianie właścicielom grup dodawania do grup osób spoza organizacji|Wł.|Gdy **jest** wł., właściciele grup Microsoft 365 lub grupy Teams mogą zapraszać nowych gości do grupy. Gdy **jest** wyłączona, nie mogą. To ustawienie powinno być wł **.** w każdym scenariuszu, w którym goście mają zostać dodani do grup.|
+|Umożliwianie członkom grupy spoza organizacji uzyskiwania dostępu do zawartości grupy|Wł.|Gdy jest **ustawiona wartość Wł**., goście mogą uzyskać dostęp do zawartości grup. gdy jest **ustawiona na wartość Wyłączone**, nie mogą. To ustawienie powinno być wł **.** w każdym scenariuszu, w którym goście komunikują się Grupy Microsoft 365 lub Teams.|
+|Umożliwianie właścicielom grup dodawania do grup osób spoza organizacji|Wł.|Gdy **jest** wł., właściciele Grupy Microsoft 365 lub Teams mogą zapraszać nowych gości do grupy. Gdy **jest** wyłączona, nie mogą. To ustawienie powinno być wł **.** w każdym scenariuszu, w którym goście mają zostać dodani do grup.|
 
 Te ustawienia znajdują się na poziomie organizacji. Aby [uzyskać informacje na temat](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) zmieniania tych ustawień na poziomie grupy za pomocą programu PowerShell, zobacz Tworzenie ustawień dla określonej grupy.
 
@@ -143,13 +143,13 @@ Główny Teams dostępu gościa: Zezwalaj na dostęp gościa Teams gościa w pro
 
 **Rola administratora: administrator** SharePoint administrator
 
-Te ustawienia mają wpływ na wszystkie witryny w organizacji. Nie wpływają one bezpośrednio Microsoft 365 grup ani grup Teams, jednak zalecamy, aby wyrównać te ustawienia z ustawieniami grup Microsoft 365 i grupy Teams, aby uniknąć problemów z interfejsem użytkownika. Jeśli na przykład udostępnianie gości jest dozwolone w programie Teams, SharePoint, goście w programie Teams nie będą mieli dostępu do karty Pliki, ponieważ pliki Teams są przechowywane w programie SharePoint).
+Te ustawienia mają wpływ na wszystkie witryny w organizacji. Nie mają one wpływu Grupy Microsoft 365 ani Teams, jednak zalecamy ich dostosowanie do ustawień usług Grupy Microsoft 365 i Teams w celu uniknięcia problemów ze środowiskami użytkownika. Jeśli na przykład udostępnianie gości jest dozwolone w programie Teams, SharePoint, goście w programie Teams nie będą mieli dostępu do karty Pliki, ponieważ pliki Teams są przechowywane w programie SharePoint).
 
 ### <a name="sharepoint-and-onedrive-sharing-settings"></a>SharePoint i OneDrive udostępniania
 
 Ponieważ OneDrive to hierarchia witryn w SharePoint, ustawienia udostępniania na poziomie organizacji mają bezpośredni OneDrive tak samo jak inne SharePoint witryn.
 
-**Nawigacja:** SharePoint centrum administracyjnym > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**udostępnianie**</a>
+**Nawigacja:** SharePoint administracyjne > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**ZasadSharing**</a>  > 
 
 ![Zrzut ekranu SharePoint ustawień udostępniania na poziomie organizacji.](../media/external-sharing.png)
 
@@ -160,14 +160,14 @@ Ponieważ OneDrive to hierarchia witryn w SharePoint, ustawienia udostępniania 
 
 ### <a name="sharepoint-and-onedrive-advanced-sharing-settings"></a>SharePoint i OneDrive zaawansowane ustawienia udostępniania
 
-**Nawigacja:** SharePoint centrum administracyjnym > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**udostępnianie**</a>
+**Nawigacja:** SharePoint administracyjne > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**ZasadSharing**</a>  > 
 
 ![Zrzut ekranu SharePoint dodatkowych ustawień udostępniania na poziomie organizacji.](../media/external-sharing.png)
 
 | Ustawienie | Domyślne | Opis |
 |:-----|:-----|:-----|
 |Ograniczanie udostępniania zewnętrznego według domeny|Wyłączone|To ustawienie umożliwia określenie listy dozwolonych lub zablokowanych domen do udostępniania. Po określonym dozwolonym domenie zaproszenia do udostępniania mogą być wysyłane tylko do tych domen. Po określonej domenie odrzuconej nie można wysyłać do tych domen zaproszeń do udostępniania. <p> To ustawienie ma wpływ na SharePoint i OneDrive witryn internetowych w organizacji.|
-|Zezwalanie na zewnętrzne udostępnianie plików tylko użytkownikom w określonych grupach zabezpieczeń|Wyłączone|Jeśli chcesz ograniczyć liczbę osób, które mogą udostępniać gościom w programach SharePoint i OneDrive, możesz to zrobić przez ograniczenie udostępniania do osób w określonych grupach zabezpieczeń. Te ustawienia nie mają wpływu na udostępnianie za pośrednictwem Microsoft 365 Grup ani Teams. Goście zaproszeni za pośrednictwem grupy lub zespołu również mieli dostęp do skojarzonej witryny, chociaż udostępnianie dokumentów i folderów mogło być wykonywane tylko przez osoby z określonych grup zabezpieczeń. <p> Dla każdej określonej grupy możesz wybrać, którzy z tych użytkowników mogą udostępniać za pomocą linków Każdy.|
+|Zezwalanie na zewnętrzne udostępnianie plików tylko użytkownikom w określonych grupach zabezpieczeń|Wyłączone|Jeśli chcesz ograniczyć liczbę osób, które mogą udostępniać gościom w programach SharePoint i OneDrive, możesz to zrobić przez ograniczenie udostępniania do osób w określonych grupach zabezpieczeń. Te ustawienia nie mają wpływu na udostępnianie za pośrednictwem Grupy Microsoft 365 ani Teams. Goście zaproszeni za pośrednictwem grupy lub zespołu również mieli dostęp do skojarzonej witryny, chociaż udostępnianie dokumentów i folderów mogło być wykonywane tylko przez osoby z określonych grup zabezpieczeń. <p> Dla każdej określonej grupy możesz wybrać, którzy z tych użytkowników mogą udostępniać za pomocą linków Każdy.|
 |Goście muszą zalogować się przy użyciu tego samego konta, do którego są wysyłane zaproszenia do udostępniania.|Wyłączone|Uniemożliwia gościom realizowanie zaproszeń do udostępniania witryn przy użyciu adresu e-mail innego niż adres, na który wysłano zaproszenie. <p> [SharePoint i OneDrive usługi Azure AD (wersja Preview)](/sharepoint/sharepoint-azureb2b-integration-preview) nie używają tego ustawienia, ponieważ wszyscy goście są dodawana do katalogu na podstawie adresu e-mail, na który wysłano zaproszenie. Alternatywnych adresów e-mail nie można używać do uzyskiwania dostępu do witryny.|
 |Zezwalanie gościom na udostępnianie elementów, które nie są ich właścicielami|Wł.|Gdy **jest** w pozycji Wł., goście mogą udostępniać użytkownikom lub gościom elementy, które nie są ich właścicielami. gdy **wyłączone** , nie mogą. Goście zawsze mogą udostępniać elementy, dla których mają pełną kontrolę.|
 |Osoby, które używają kodu weryfikacyjnego, muszą je ponownie uwierzytelnić po upływie tylu dni|Wyłączone|To ustawienie pozwala na wymaganie, aby użytkownicy uwierzytelniający się za pomocą kodu dostępu z jednego kodu dostępu musieli ponownie uwierzytelniać się po określonej liczbie dni.|
@@ -177,7 +177,7 @@ Ponieważ OneDrive to hierarchia witryn w SharePoint, ustawienia udostępniania 
 
 Gdy pliki i foldery są udostępniane w programach SharePoint i OneDrive, adresatom udostępniania jest wysyłany link z uprawnieniami do pliku lub folderu, a nie bezpośredni dostęp do pliku lub folderu. Dostępnych jest kilka typów linków i można wybrać domyślny typ linku prezentowany użytkownikom, którzy współużytkują plik lub folder. Możesz również ustawić uprawnienia i opcje wygasania dla linków *Każdy* .
 
-**Nawigacja:** SharePoint centrum administracyjnym > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**udostępnianie**</a>
+**Nawigacja:** SharePoint administracyjne > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**ZasadSharing**</a>  > 
 
 ![Zrzut ekranu SharePoint ustawień udostępniania plików i folderów na poziomie organizacji.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -234,7 +234,7 @@ W poniższej tabeli przedstawiono domyślne ustawienie udostępniania dla poszcz
 |:-----|:-----|
 |Klasyczne|**Tylko osoby w Twojej organizacji**|
 |OneDrive|**Każdy**|
-|Witryny połączone z grupą (w tym Teams)|**Nowi i istniejący goście**, jeśli Microsoft 365 ustawienia Pozwalaj  właścicielom grup dodawać osoby spoza organizacji do grup jest wł **.; w** przeciwnym razie **tylko istniejący goście**|
+|Witryny połączone z grupą (w tym Teams)|**Nowi i istniejący goście**, jeśli **Grupy Microsoft 365 ustawienia** Pozwalaj właścicielom grup dodawać osoby spoza organizacji do grup jest **Wł.;** w przeciwnym razie **tylko istniejący goście**|
 |Komunikacja|**Tylko osoby w Twojej organizacji**|
 |Nowoczesne witryny bez grupy (#STS3 TeamSite)|**Tylko osoby w Twojej organizacji**|
 
@@ -247,4 +247,4 @@ W poniższej tabeli przedstawiono domyślne ustawienie udostępniania dla poszcz
 
 [Dostęp dla gości w programie Microsoft Teams](/MicrosoftTeams/guest-access)
 
-[Dodawanie gości do grup Microsoft 365 grupy](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Dodawanie gości do Grupy Microsoft 365](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)

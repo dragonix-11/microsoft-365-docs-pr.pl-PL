@@ -1,6 +1,6 @@
 ---
 title: Przejrzyj wymagania dotyczące architektury i koncepcje planowania związane z Ochrona usługi Office 365 w usłudze Microsoft Defender
-description: Diagram techniczny bazy Ochrona usługi Office 365 w usłudze Microsoft Defender w programie Microsoft 365 Defender pomaga zrozumieć tożsamość w programie Microsoft 365 przed rozpoczęciem tworzenia laboratorium próbnego lub środowiska pilotażowego.
+description: Diagram techniczny programu Ochrona usługi Office 365 w usłudze Microsoft Defender w programie Microsoft 365 Defender pomaga zrozumieć tożsamość w Microsoft 365 przed rozpoczęciem tworzenia laboratorium próbnego lub środowiska pilotażowego.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b0f12d50cd37832a5c9055fdabcffa0968645682
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 0ce03f919d3a4012952ab7d2056b33f2eeb71926
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498962"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569474"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Przegląd Ochrona usługi Office 365 w usłudze Microsoft Defender i kluczowych pojęć związanych z architekturą
 

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 41ba3bcf31725cd5a9fb8b25bc22b6c8bb591363
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 7173d45fed25fe1d0d1e93dbcc259046c1f221cd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569296"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474272"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Jak działa automatyczne badanie i reagowanie w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -77,7 +77,7 @@ Działania naprawcze to końcowa faza podręcznika. W tym etapie są podejmowane
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Przykład: Administrator zabezpieczeń wyzwala badanie z Eksploratora zagrożeń
 
-Poza zautomatyzowanymi badaniami wyzwolanych przez alert zespół operacji zabezpieczeń Twojej organizacji może wyzwolić automatyczne badanie z widoku w [Eksploratorze zagrożeń](threat-explorer.md). To badanie także tworzy alert, dzięki czemu Microsoft 365 Defender zdarzenia i zewnętrzne narzędzia SIEM mogą zobaczyć, że to badanie zostało wyzwolone.
+Poza zautomatyzowanymi badaniami wyzwolanych przez alert zespół operacji zabezpieczeń Twojej organizacji może wyzwolić automatyczne badanie z widoku w [Eksploratorze zagrożeń](threat-explorer.md).  To badanie także tworzy alert, dzięki czemu Microsoft 365 Defender zdarzenia i zewnętrzne narzędzia SIEM mogą zobaczyć, że to badanie zostało wyzwolone.
 
 Załóżmy na przykład, że używasz widoku Złośliwe **oprogramowanie** w Eksploratorze. Korzystając z kart poniżej wykresu, wybierz kartę Poczta **e-mail** . Jeśli wybierzesz co najmniej jeden element na liście, zostanie uaktywniony przycisk **+** Akcje.
 
