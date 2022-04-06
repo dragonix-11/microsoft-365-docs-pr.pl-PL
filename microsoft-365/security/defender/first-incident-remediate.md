@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321323"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499952"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Krok nr 2. Rozwiązywanie pierwszego zdarzenia
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender udostępnia kilka akcji naprawczych, które analitycy mog
 
 ## <a name="actions-on-devices"></a>Akcje na urządzeniach
 
-- **Odizoluj** urządzenie — ta aktywność natychmiast blokuje cały ruch sieciowy (internetowy i wewnętrzny), aby zminimalizować rozpowszechnianie złośliwego oprogramowania i umożliwić analitykom kontynuowanie analizy bez możliwości kontynuowania ataków przez złośliwego podmiotu. Jedyne dozwolone połączenie jest z chmurą usługi Microsoft Defender for Identity, więc usługa Microsoft Defender dla tożsamości może nadal monitorować urządzenie. 
+- **Odizoluj** urządzenie — ta aktywność natychmiast blokuje cały ruch sieciowy (internetowy i wewnętrzny), aby zminimalizować rozpowszechnianie złośliwego oprogramowania i umożliwić analitykom kontynuowanie analizy bez możliwości kontynuowania ataków przez złośliwego podmiotu. Jedyne dozwolone połączenie jest z chmurą usługi Microsoft Defender for Identity, więc Microsoft Defender for Identity kontynuować monitorowanie urządzenia. 
 - **Ogranicz uruchamianie aplikacji** — aby ograniczyć uruchamianie aplikacji, są stosowane zasady integralności kodu, które umożliwiają uruchamianie plików tylko wtedy, gdy są podpisane za pomocą certyfikatu wydanego przez firmę Microsoft. Ta metoda ograniczeń może pomóc zapobiec kontrolowaniu przez atakującego naruszonych urządzeń i wykonywaniu dalszych złośliwych działań.
 - **Uruchom skanowanie antywirusowe** — skanowanie Program antywirusowy Microsoft Defender może być uruchamiane wraz z innymi rozwiązaniami antywirusowymi, niezależnie od tego, czy program antywirusowy Defender jest aktywnym rozwiązaniem antywirusowym. Jeśli głównym rozwiązaniem ochrony punktu końcowego jest inny produkt dostawcy oprogramowania antywirusowego, możesz uruchomić program antywirusowy Defender w trybie pasywnym.
 - **Inicjowanie automatycznego badania** — możesz rozpocząć nowe zautomatyzowane badanie ogólnego przeznaczenia na urządzeniu. Gdy jest uruchomione badanie, wszelkie inne alerty wygenerowane z urządzenia będą dodawane do trwającego automatycznego badania do czasu jego ukończenia. Ponadto, jeśli to samo zagrożenie będzie widoczne na innych urządzeniach, zostaną one dodane do badania.
@@ -52,7 +52,7 @@ Microsoft 365 Defender udostępnia kilka akcji naprawczych, które analitycy mog
 
 ## <a name="actions-on-files"></a>Akcje dotyczące plików
 
-- **Zatrzymaj i poddaj** plikowi kwarantanny — ta akcja obejmuje zatrzymywanie uruchomionych procesów, kwartylowanie plików oraz usuwanie trwałych danych, takich jak wszystkie klucze rejestru. Ta akcja  dotyczy urządzeń z systemem Windows 11 lub Windows 10, wersja 1703 lub nowsza, na których plik został obserwowany w ciągu ostatnich 30 dni. 
+- **Zatrzymaj i poddaj** plikowi kwarantanny — ta akcja obejmuje zatrzymywanie uruchomionych procesów, kwartylowanie plików oraz usuwanie trwałych danych, takich jak wszystkie klucze rejestru. Ta akcja ma miejsce na urządzeniach Windows 11 lub Windows 10, w wersji 1703 lub nowszej, na których plik został obserwowany w ciągu ostatnich 30 dni. 
 - **Dodaj wskaźniki, aby zablokować** lub zezwolić na plik — zapobiegaj dalszej propagacji ataków w organizacji, blokując potencjalnie złośliwe pliki lub podejrzewane złośliwe oprogramowanie. Ta operacja zapobiegnie odczytywaniu, zapisywaniu i wykonaniu pliku na urządzeniach w organizacji.
 - **Pobierz lub zbierz plik —** ta akcja umożliwia analitykom pobranie pliku w chronionym hasłem pliku .zip do dalszej analizy przez organizację.
 - **Analiza głębokości** — ta akcja wykonuje plik w bezpiecznym, w pełni o przyrządowym środowisku w chmurze. Wyniki dogłębnej analizy pokazują działania pliku, obserwowane zachowania i skojarzone artefakty, takie jak porzucone pliki, modyfikacje rejestru i komunikacja z adresami IP. 
@@ -64,11 +64,11 @@ Kontynuując przykład w [teście Wykrywanie, ocenianie i](first-incident-analyz
 3. Upewnij się, że złośliwy plik został poddany kwarantannie z SharePoint
 4. Sprawdzanie, na które punkty końcowe wpływało złośliwe oprogramowanie
 5. Odbudowywanie systemów
-6. Sprawdzanie, czy są podobne alerty programu Microsoft Defender dla aplikacji w chmurze dla innych użytkowników
-7. Tworzenie niestandardowego wskaźnika w programie Microsoft Defender dla punktu końcowego w celu zablokowania adresu IP Tor
-8. Utwórz akcję zarządzania w usłudze Microsoft Defender dla aplikacji w chmurze dla tego typu alertu, na przykład w przypadku alertów pokazanych na poniższej ilustracji:
+6. Sprawdzanie, czy są podobne Microsoft Defender for Cloud Apps alertów dla innych użytkowników
+7. Tworzenie niestandardowego wskaźnika w programie Ochrona punktu końcowego w usłudze Microsoft Defender w celu zablokowania adresu IP Tora
+8. Utwórz akcję zarządzania w Microsoft Defender for Cloud Apps dla tego typu alertu, na przykład dla alertów pokazanych na poniższej ilustracji:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Przykład działań dotyczących zarządzania w portalu usługi Microsoft Defender for Cloud Apps.":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Akcje zarządzania w portalu Microsoft Defender for Cloud Apps zarządzania" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 Większość działań naprawczych można stosować i śledzić w Microsoft 365 Defender.
 
@@ -85,7 +85,7 @@ Podręczniki używają Power Automate do tworzenia niestandardowych przepływów
 
 Oto przykład.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Przykład niestandardowego przepływu Power Automate automatyzacji procesu."::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Niestandardowy Power Automate przepływ automatyzacji procesu procesów" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
  
 Podręczniki można również tworzyć podczas przeglądu [po](first-incident-post.md) incydentach w celu tworzenia działań naprawczych na podstawie rozwiązanych zdarzeń. 
 

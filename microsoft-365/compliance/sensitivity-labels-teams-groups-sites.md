@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Etykiety wrażliwości chronią zawartość w SharePoint i Microsoft Teams sieci Web Microsoft 365 grupy.
-ms.openlocfilehash: b5eb295e83e2a87a538201fe58c221f3f9400f97
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 759f7a6403eb41a6a853ed1f9b844ebd1ef679cc
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63714922"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500018"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Używanie etykiet wrażliwości w celu ochrony zawartości Microsoft Teams, grup Microsoft 365 i SharePoint internetowych
 
@@ -190,14 +190,16 @@ Poniższe wskazówki możesz stosować podczas tworzenia, modyfikowania i usuwan
 
 ### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>Tworzenie i publikowanie etykiet skonfigurowanych dla witryn i grup
 
-Po utworzeniu i opublikowaniu nowej etykiety wrażliwości jest ona widoczna dla użytkowników w zespołach, grupach i witrynach w ciągu jednej godziny. Jednak po zmodyfikowaniu istniejącej etykiety można zezwolić na nie do 24 godzin. Skorzystaj z następujących wskazówek, aby opublikować etykietę dla użytkowników, gdy etykieta ta jest skonfigurowana dla ustawień witryny i grupy:
+Skorzystaj z następujących wskazówek, aby opublikować etykietę dla użytkowników, gdy etykieta ta jest skonfigurowana dla ustawień witryny i grupy:
 
 1. Po utworzeniu i skonfigurowaniu etykiety wrażliwości dodaj tę etykietę do zasad etykiet, które dotyczą tylko kilku użytkowników testowych.
 
 2. Poczekaj, aż zmiana się zreplikuje:
-
-   - Nowa etykieta: Poczekaj godzinę.
-   - Istniejąca etykieta: Odczekaj 24 godziny.
+    
+   - Nowa etykieta: Poczekaj co najmniej godzinę.
+   - Istniejąca etykieta: Odczekaj co najmniej 24 godziny.
+    
+    Aby uzyskać więcej informacji na temat chronometrażu etykiet, zobacz Kiedy można oczekiwać, że nowe etykiety i [zmiany zostaną wprowadzone](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect).
 
 3. Po tym okresie oczekiwania użyj jednego z testowych kont użytkowników, aby utworzyć witrynę zespołu, grupy Microsoft 365 lub witryny sieci SharePoint z etykietą utworzoną w kroku 1.
 
@@ -205,7 +207,7 @@ Po utworzeniu i opublikowaniu nowej etykiety wrażliwości jest ona widoczna dla
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>Modyfikowanie opublikowanych etykiet skonfigurowanych dla witryn i grup
 
-Najlepszym rozwiązaniem jest, aby nie zmieniać ustawień witryny ani grupy na etykietę wrażliwości, gdy etykieta została zastosowana do zespołów, grup ani witryn. Jeśli tak jest, pamiętaj, aby zaczekać 24 godziny na replikowanie zmian do wszystkich kontenerów, do których zastosowano etykietę.
+Najlepszym rozwiązaniem jest, aby nie zmieniać ustawień witryny ani grupy na etykietę wrażliwości, gdy etykieta została zastosowana do zespołów, grup ani witryn. Jeśli tak się stanie, pamiętaj, aby zaczekać co najmniej 24 godziny na replikowanie zmian we wszystkich kontenerach, do których zastosowano etykietę.
 
 Ponadto, jeśli wprowadzone zmiany obejmują ustawienie Dostęp **użytkowników** zewnętrznych:
 
@@ -219,7 +221,7 @@ Jeśli usuniesz etykietę wrażliwości, która ma włączone ustawienia witryny
 
 1. Usuń etykietę wrażliwości ze wszystkich zasad etykiet, które zawierają etykietę.
 
-2. Odczekaj godzinę.
+2. Poczekaj co najmniej godzinę.
 
 3. Po upływie tego okresu oczekiwania spróbuj utworzyć zespół, grupę lub witrynę i upewnij się, że etykieta nie jest już widoczna.
 
@@ -240,11 +242,11 @@ Jeśli musisz zastosować etykietę wrażliwości do wielu witryn, możesz uży�
 
 Teraz możesz zastosować etykiety wrażliwości do grup Microsoft 365 grupy. Wróć do dokumentacji usługi Azure AD, aby uzyskać instrukcje:
 
-- [Przypisywanie etykiety do nowej grupy w portalu Azure Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
+- [Przypisywanie etykiety do nowej grupy w Azure Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
 
-- [Przypisywanie etykiety do istniejącej grupy w Portalu Azure](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
+- [Przypisywanie etykiety do istniejącej grupy w Azure Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
-- [Usuń etykietę z istniejącej grupy w Portalu Azure](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
+- [Usuwanie etykiety z istniejącej grupy w Azure Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
 
 ### <a name="apply-a-sensitivity-label-to-a-new-team"></a>Stosowanie etykiet wrażliwości do nowego zespołu
 

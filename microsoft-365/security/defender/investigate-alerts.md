@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: c09a3880a9f117d0ce5ce6e5edf3736192fc9c95
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712845"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499864"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Badanie alertów w programie Microsoft 365 Defender
 
@@ -45,15 +45,15 @@ W Microsoft 365 Defender powiązanych ze sobą alertów są agregowane w celu [f
 
 **Kolejka alertów** zawiera bieżący zestaw alertów. Do kolejki alertów można dostać się z menu Zdarzenia **& alerty > alerty** na pasku Szybkie uruchamianie Microsoft 365 Defender [w witrynie.](https://go.microsoft.com/fwlink/p/?linkid=2077139)
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Przykład kolejki alertów w portalu Microsoft 365 Defender wiadomości":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Sekcja Alerty w portalu Microsoft 365 Defender wiadomości" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png":::
 
-Alerty z różnych rozwiązań zabezpieczeń firmy Microsoft, takich jak Microsoft Defender for Endpoint, Microsoft Defender for Office 365 i Microsoft 365 Defender są wyświetlane tutaj.
+Alerty od różnych rozwiązań zabezpieczeń firmy Microsoft, takich Ochrona punktu końcowego w usłudze Microsoft Defender, Ochrona usługi Office 365 w usłudze Microsoft Defender i Microsoft 365 Defender .
 
 Domyślnie w kolejce alertów w portalu Microsoft 365 Defender są wyświetlane nowe alerty w toku z ostatnich 30 dni. Najnowszy alert znajduje się u góry listy, więc jest on najpierw wyświetlony. 
 
 W domyślnej kolejce alertów możesz wybrać  pozycję Filtruj, aby wyświetlić okienko **Filtr**, w którym możesz określić podzestaw alertów. Oto przykład.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Example of the filters pane for the alerts queue in the Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Sekcja Filtry w portalu Microsoft 365 Defender filtru." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
 
 Alerty można filtrować według tych kryteriów:
 
@@ -63,9 +63,9 @@ Alerty można filtrować według tych kryteriów:
 - Jednostki (mają wpływ środki trwałe)
 - Stan zautomatyzowanego badania
 
-## <a name="required-roles-for-defender-for-office-365-alerts"></a>Role wymagane dla usługi Defender dla Office 365 alertów
+## <a name="required-roles-for-defender-for-office-365-alerts"></a>Role wymagane dla alertów Ochrona usługi Office 365 w usłudze Defender użytkownika
 
-Aby uzyskać dostęp do usługi Microsoft Defender na potrzeby alertów, musisz mieć dowolną z następujących Office 365 alertów:
+Aby uzyskać dostęp do alertów, musisz mieć dowolną z następujących Ochrona usługi Office 365 w usłudze Microsoft Defender alertów:
 
 - W Azure Active Directory globalnej usługi Azure AD:
 
@@ -91,7 +91,9 @@ Aby uzyskać dostęp do usługi Microsoft Defender na potrzeby alertów, musisz 
 
 Aby wyświetlić stronę alertu głównego, wybierz nazwę alertu. Oto przykład.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Przykład strony szczegółów alertu w portalu Microsoft 365 Defender sieci Web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Szczegóły alertu w portalu Microsoft 365 Defender w programie" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+
+Możesz również wybrać akcję **Otwórz stronę alertu głównego** w **okienku Zarządzanie alertami** .
 
 Strona alertu składa się z tych sekcji: 
 
@@ -102,7 +104,7 @@ Na stronie alertu możesz wybrać wielokropek (**...**) obok dowolnej jednostki,
 
 ### <a name="alert-sources"></a>Źródła alertów
 
-Microsoft 365 Defender alerty mogą pochodzić z rozwiązań, takich jak Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps oraz dodatek do zarządzania aplikacjami dla programu Microsoft Defender dla aplikacji w chmurze. Możesz zauważyć alerty ze wstępnie wpisanym znakiem. W poniższej tabeli podajemy wskazówki, które ułatwiają zrozumienie mapowania źródeł alertów na podstawie znaku, który przed alertem został wpisowany.
+Microsoft 365 Defender alerty mogą pochodzić z rozwiązań, Ochrona punktu końcowego w usłudze Microsoft Defender, Ochrona usługi Office 365 w usłudze Microsoft Defender Microsoft Defender for Cloud Apps i dodatek do zarządzania aplikacją dla Microsoft Defender for Cloud Apps. Możesz zauważyć alerty ze wstępnie wpisanym znakiem. W poniższej tabeli podajemy wskazówki, które ułatwiają zrozumienie mapowania źródeł alertów na podstawie znaku, który przed alertem został wpisowany.
 
 > [!NOTE]
 > - Wstępnie określone identyfikatory GUID są specyficzne tylko dla ujednoliconych funkcji, takich jak ujednolicona kolejka alertów, strona ujednoliconych alertów, ujednolicone badanie i ujednolicone zdarzenie.
@@ -110,7 +112,7 @@ Microsoft 365 Defender alerty mogą pochodzić z rozwiązań, takich jak Microso
 
 | Źródło alertu | Znak ze znakiem przedimka |
 | :---|:--- |
-| Usługa Microsoft Defender dla Office 365 | `fa{GUID}` <br> Przykład: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Ochrona usługi Office 365 w usłudze Microsoft Defender | `fa{GUID}` <br> Przykład: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Ochrona punktu końcowego w usłudze Microsoft Defender | `da` lub niestandardowe `ed` alerty wykrywania <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Przykład: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Przykład: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
@@ -138,7 +140,7 @@ Po wybraniu encji, która ma być zainteresowana, strona szczegółów zmienia s
 
 Aby zarządzać alertem, wybierz **pozycję Zarządzaj alertem** w sekcji szczegółów podsumowania na stronie alertu. Oto przykładowe okienko zarządzania **alertami w przypadku pojedynczego alertu** .
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Przykład okienka Zarządzanie alertami w Microsoft 365 Defender alertów":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Sekcja Zarządzanie alertami w portalu Microsoft 365 Defender alertów" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
 Okienko **zarządzanie alertami** umożliwia wyświetlanie i określanie:
 
@@ -157,7 +159,7 @@ Okienko **zarządzanie alertami** umożliwia wyświetlanie i określanie:
 - Komentarz alertu.
 
 > [!NOTE]
-> Jednym ze sposobów zarządzania alertami dzięki użyciu tagów. Funkcja otagowania dla programu Microsoft Defender Office 365 jest stopniowo wdawana i jest obecnie w wersji Zapoznawczej. <br>
+> Jednym ze sposobów zarządzania alertami dzięki użyciu tagów. Funkcja tagowania dla Ochrona usługi Office 365 w usłudze Microsoft Defender jest stopniowo wdawana i jest obecnie w wersji zapoznawczej. <br>
 > Obecnie zmodyfikowane nazwy tagów są stosowane tylko do alertów *utworzonych po* aktualizacji. Alerty wygenerowane przed modyfikacją nie będą odzwierciedlać zaktualizowanej nazwy tagu. 
 
 Aby zarządzać *zestawem alertów podobnych* do poszczególnych alertów, wybierz pozycję Wyświetl podobne alerty w polu **SZCZEGÓŁOWE** INFORMACJE w sekcji szczegółów podsumowania na stronie alertu.
@@ -194,9 +196,9 @@ Nowoczesne zespoły ds. zabezpieczeń (SecOps) wymagają automatyzacji, aby efek
 
 Jeśli oba te oznaczenia są prawdziwe, program SecOps oznacza alert jako legalną podróż i rozwiązuje go. Po rozpoznaniu alertu Microsoft Teams powiadomienie jest publikowane w tym programie.
 
-### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Połączenie Power Automate do programu Microsoft Defender dla aplikacji w chmurze
+### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Połączenie Power Automate do Microsoft Defender for Cloud Apps
 
-Aby utworzyć automatyzację, potrzebujesz tokenu API, aby można było połączyć Power Automate usługą Microsoft Defender dla aplikacji w chmurze.
+Aby utworzyć automatyzację, potrzebny jest token API, aby można było połączyć Power Automate z Microsoft Defender for Cloud Apps.
 
 1. Kliknij **Ustawienia**, wybierz pozycję **Rozszerzenia zabezpieczeń**, a następnie kliknij pozycję **Dodaj token** na karcie **Tokeny API**.
 
@@ -206,7 +208,7 @@ Aby utworzyć automatyzację, potrzebujesz tokenu API, aby można było połącz
 
 Aby uzyskać szczegółowy opis procesu krok po kroku, zobacz klip wideo [tutaj](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn).
 
-W tym klipie wideo opisano również, jak połączyć zasilanie z programem Defender dla aplikacji w chmurze.
+W tym klipie wideo opisano również, jak połączyć automatyzowanie zasilania z Defender dla Chmury apps.
 
 ## <a name="next-steps"></a>Następne kroki
 

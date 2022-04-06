@@ -1,5 +1,5 @@
 ---
-title: Co nowego w programie Microsoft 365 Defender
+title: Co nowego w usłudze Microsoft 365 Defender
 description: Lista nowych funkcji w programie Microsoft 365 Defender
 keywords: co nowego w programie Microsoft 365 Defender, ga, ogólnie dostępne, funkcje, dostępne, nowe
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: edaa7398b8d3213479c9b81af248b928f7b3f3e0
-ms.sourcegitcommit: f8267a0860de62dbd53ebb8a151a8e71a8ccda6a
+ms.openlocfilehash: aebf7a82a886540374176c06535e9f0097e73a03
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016057"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499820"
 ---
-# <a name="whats-new-in-microsoft-365-defender"></a>Co nowego w programie Microsoft 365 Defender
+# <a name="whats-new-in-microsoft-365-defender"></a>Co nowego w usłudze Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,12 +40,18 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 Aby uzyskać więcej informacji o nowościach w innych produktach zabezpieczeń Microsoft Defender, zobacz:
 
-- [Co nowego w programie Microsoft Defender dla systemu Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
-- [Co nowego w programie Microsoft Defender dla punktu końcowego](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
-- [Co nowego w programie Microsoft Defender dla tożsamości](/defender-for-identity/whats-new)
-- [Co nowego w programie Microsoft Defender dla aplikacji w chmurze](/cloud-app-security/release-notes)
+- [Co nowego w ochronie usługi Office 365 w usłudze Microsoft Defender?](../office-365-security/whats-new-in-defender-for-office-365.md)
+- [Co nowego w ochronie punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
+- [Co nowego w programie Microsoft Defender for Identity](/defender-for-identity/whats-new)
+- [Co nowego w programie Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 Za pośrednictwem centrum wiadomości możesz również otrzymywać aktualizacje produktów i ważne [powiadomienia](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
+
+
+
+## <a name="march-2022"></a>Marzec 2022 r.
+
+- (Wersja zapoznawcza) Kolejka zdarzeń została rozszerzona o kilka funkcji, które ułatwiają badanie danych. Udoskonalenia obejmują między innymi możliwość wyszukiwania zdarzeń według identyfikatora lub nazwy, określania niestandardowego zakresu czasu i innych.
 
 ## <a name="december-2021"></a>Grudzień 2021
 
@@ -53,7 +59,7 @@ Za pośrednictwem centrum wiadomości możesz również otrzymywać aktualizacje
 
 ## <a name="november-2021"></a>Listopad 2021
 
-- (Wersja zapoznawcza) Funkcja dodatku do zarządzania aplikacjami aplikacji Defender dla chmury jest teraz dostępna w Microsoft 365 Defender. Zarządzanie aplikacjami zapewnia funkcję zarządzania zabezpieczeniami i zasadami opracowaną dla aplikacji z obsługą protokołu OAuth, które mają Microsoft 365 dostępu do danych za pośrednictwem interfejsów API Graph Microsoft. Zarządzanie aplikacjami zapewnia pełną widoczność, działania naprawcze i zarządzanie tym, w jaki sposób te aplikacje i ich użytkownicy mają dostęp do Twoich poufnych danych przechowywanych w programie Microsoft 365 i udostępniaj je, udostępniając szczegółowe informacje oraz automatyczne alerty i działania zasad, a także zapewniają dostęp do nich. [Dowiedz się więcej o zarządzaniu aplikacją](/cloud-app-security/app-governance-manage-app-governance).
+- (Wersja zapoznawcza) Funkcja dodatku do zarządzania aplikacjami dla aplikacji Defender dla Chmury jest teraz dostępna w Microsoft 365 Defender. Zarządzanie aplikacjami zapewnia funkcję zarządzania zabezpieczeniami i zasadami opracowaną dla aplikacji z obsługą protokołu OAuth, które mają Microsoft 365 dostępu do danych za pośrednictwem interfejsów API Graph Microsoft. Zarządzanie aplikacjami zapewnia pełną widoczność, działania naprawcze i zarządzanie tym, w jaki sposób te aplikacje i ich użytkownicy mają dostęp do Twoich poufnych danych przechowywanych w programie Microsoft 365 i udostępniaj je, udostępniając szczegółowe informacje oraz automatyczne alerty i działania zasad, a także zapewniają dostęp do nich. [Dowiedz się więcej o zarządzaniu aplikacją](/cloud-app-security/app-governance-manage-app-governance).
 - (Wersja zapoznawcza) [Zaawansowana](advanced-hunting-overview.md) strona wyszukiwania ma teraz obsługę wielostronicową, inteligentne przewijanie, usprawnione karty schematów, opcje szybkiego edytowania zapytań, wskaźnik użycia zasobów zapytań i inne ulepszenia usprawniające i bardziej precyzyjne wykonywanie zapytań.
 - (Wersja zapoznawcza) Teraz możesz użyć linku [](advanced-hunting-link-to-incident.md) do funkcji zdarzenia, aby dołączyć zdarzenia lub rekordy z zaawansowanych zapytań wyszukiwania bezpośrednio do nowego lub istniejącego zdarzenia, które badasz.
 
@@ -63,15 +69,15 @@ Za pośrednictwem centrum wiadomości możesz również otrzymywać aktualizacje
 
 ## <a name="september-2021"></a>Wrzesień 2021
 
-- (GA) Program Microsoft Defender for Office 365 danych zdarzeń jest dostępny w interfejsie API przesyłania strumieniowego Microsoft 365 Defender zdarzeń. Dostępność i stan typów zdarzeń można sprawdzić w obsługiwanych typach zdarzeń Microsoft 365 Defender [interfejsie API przesyłania strumieniowego](supported-event-types.md).
-- (GA) Program Microsoft Defender for Office 365 data available in advanced hunting is now general available.
+- (GA) Ochrona usługi Office 365 w usłudze Microsoft Defender danych zdarzeń są dostępne w interfejsie API przesyłania strumieniowego Microsoft 365 Defender zdarzeń. Dostępność i stan typów zdarzeń można sprawdzić w obsługiwanych typach zdarzeń Microsoft 365 Defender [interfejsie API przesyłania strumieniowego](supported-event-types.md).
+- (GA) Ochrona usługi Office 365 w usłudze Microsoft Defender są teraz dostępne dane podczas zaawansowanego wyszukiwania.
 - (GA) Przypisywanie zdarzeń i alertów do kont użytkowników
 
   Do konta użytkownika możesz przypisać zdarzenie i wszystkie skojarzone z nim alerty, w okienku Zarządzaj zdarzeniem w okienku Zarządzanie  zdarzeniem lub Zarządzanie **alertem**.
 
 ## <a name="august-2021"></a>Sierpień 2021
 
-- (Wersja zapoznawcza) Program Microsoft Defender do Office 365 danych dostępnych podczas szukania zaawansowanego
+- (Wersja zapoznawcza) Ochrona usługi Office 365 w usłudze Microsoft Defender danych dostępnych podczas wyszukiwania zaawansowanego
 
   Nowe kolumny w tabelach wiadomości e-mail mogą zapewniać więcej informacji o zagrożeniach opartych na wiadomościach e-mail, co zapewnia dokładniejszą analizę przy użyciu zaawansowanych narzędzi do wyszukiwania. Teraz możesz uwzględnić kolumnę w `AuthenticationDetails` tabelach [EmailEvents](./advanced-hunting-emailevents-table.md), `FileSize` [EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)`ThreatTypes` `DetectionMethods` i [EmailPostDeliveryEvents](./advanced-hunting-emailpostdeliveryevents-table.md).
 
@@ -121,11 +127,11 @@ Za pośrednictwem centrum wiadomości możesz również otrzymywać aktualizacje
 
 - Microsoft 365 Defender
 
-  Ulepszona [Microsoft 365 Defender](https://security.microsoft.com) jest teraz dostępna. To nowe środowisko łączy funkcje Defender for Endpoint (Punkt końcowy), Defender for Office 365 for Office 365 (Defender for Identity) i (nie tylko) w jeden portal. To nowa dom do zarządzania mechanizmami kontroli zabezpieczeń. [Dowiedz się, co nowego](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
+  Ulepszona [Microsoft 365 Defender](https://security.microsoft.com) jest teraz dostępna. To nowe środowisko łączy w jeden portal funkcje: Defender for Endpoint, Ochrona usługi Office 365 w usłudze Defender, Defender for Identity i inne. To nowa dom do zarządzania mechanizmami kontroli zabezpieczeń. [Dowiedz się, co nowego](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 - [Microsoft 365 Defender raportu analizy zagrożeń](threat-analytics.md)
 
-  Analiza zagrożeń ułatwia reagowanie i minimalizowanie wpływu aktywnych ataków. Możesz również dowiedzieć się więcej o próbach ataków zablokowanych przez firmy Microsoft 365 Defender i podejmować działania działańczych, które złagodnią ryzyko dalszego kontaktu z ryzykiem oraz zwiększają odporność. W ramach ujednoliconego systemu zabezpieczeń analiza zagrożeń jest teraz dostępna dla programu Microsoft Defender dla punktów końcowych i programu Microsoft Defender dla posiadaczy licencji Office E5.
+  Analiza zagrożeń ułatwia reagowanie i minimalizowanie wpływu aktywnych ataków. Możesz również dowiedzieć się więcej o próbach ataków zablokowanych przez firmy Microsoft 365 Defender i podejmować działania działańczych, które złagodnią ryzyko dalszego kontaktu z ryzykiem oraz zwiększają odporność. W ramach ujednoliconego systemu zabezpieczeń analiza zagrożeń jest teraz dostępna dla posiadaczy licencji Ochrona punktu końcowego w usłudze Microsoft Defender i programu Microsoft Defender Office E5.
 
 ## <a name="march-2021"></a>Marzec 2021 r.
 
@@ -133,8 +139,3 @@ Za pośrednictwem centrum wiadomości możesz również otrzymywać aktualizacje
 
   Znajdowanie informacji o wydarzeniach w różnych aplikacjach i usługach w chmurze objętych Microsoft Cloud App Security. Ta tabela zawiera również informacje dostępne wcześniej w `AppFileEvents` tabeli.
 
-## <a name="february-2021"></a>Luty 2021 r.
-
-- (Wersja zapoznawcza) Rozszerzony Microsoft 365 Defender [(https://security.microsoft.com)](https://security.microsoft.com)jest teraz dostępny w publicznej wersji Preview. To nowe środowisko wprowadza w centrum funkcje: Defender for Endpoint Office 365 Defender. [Dowiedz się więcej o tym, co się zmieniło](microsoft-365-defender.md#the-microsoft-365-defender-portal).
-
-- **[(Preview) Microsoft 365 Defender API](api-overview.md)** — interfejsy API Microsoft 365 Defender najwyższego poziomu umożliwiają automatyzowanie przepływów pracy na podstawie udostępnionych zdarzeń i zaawansowanych tabel chłoń.

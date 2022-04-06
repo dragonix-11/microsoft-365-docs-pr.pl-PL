@@ -20,12 +20,12 @@ ms.custom: ''
 description: Dowiedz się więcej o widokach kampanii w programie Microsoft Defender dla Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 479963323dad613f3a17a527f94bbd5963487f76
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d8fad29e82b647d309d3b7046e36bd03b64de81d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021365"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682554"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Widoki kampanii w programie Microsoft Defender dla Office 365
 
@@ -211,10 +211,6 @@ Diagram zawiera następujące informacje:
 - **Domeny nadawcy**
 - **Werdykty filtrów**: wartości werdyktów są związane z dostępnymi werdyktami filtrowania spamu i wyłudzania informacji, zgodnie z opisem w nagłówkach wiadomości ochrony przed [spamem](anti-spam-message-headers.md). Dostępne wartości opisano w poniższej tabeli:
 
-  <br>
-
-  ****
-
   |Value|Werdykt filtru spamu|Opis|
   |---|---|---|
   |**Dozwolone**|`SFV:SKN` <p> `SFV:SKI`|Wiadomość została oznaczona jako niebędąca spamem i(lub pominięta) filtrowaniem przed rozpoczęciem oceny przez filtrowanie spamu. Na przykład wiadomość została oznaczona przez regułę przepływu poczty jako niebędąc spamem (znana również jako reguła transportu). <p> W wiadomości pominięto filtrowanie spamu z innych przyczyn. Na przykład nadawca i adresat mogą być w tej samej organizacji.|
@@ -227,7 +223,6 @@ Diagram zawiera następujące informacje:
   |**Zezwalaj użytkownikom**<sup>\*</sup>|`SFV:SFE`|Wiadomość pominięta w filtrowaniu spamu, ponieważ nadawca był na liście Sejf nadawców.|
   |**Blokowanie użytkowników**<sup>\*\*</sup>|`SFV:BLK`|Wiadomość została zablokowana przez filtrowanie spamu, ponieważ nadawca był na liście zablokowanych nadawców użytkownika.|
   |**ZAP**|n/a|[Automatyczne czyszczenie zerowe (ZAP)](zero-hour-auto-purge.md) przeniesiono dostarczoną wiadomość do folderu wiadomości-śmieci lub kwarantanny. Działanie konfiguruje się w zasadach [ochrony przed spamem](configure-your-spam-filter-policies.md).|
-  |
 
   <sup>\*</sup> Przejrzyj zasady ochrony przed spamem, ponieważ dozwolona wiadomość prawdopodobnie zostałaby zablokowana przez usługę.
 

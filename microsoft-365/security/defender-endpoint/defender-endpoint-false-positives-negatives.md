@@ -1,7 +1,7 @@
 ---
-title: Rozwiązywanie problemów z wynikami fałszywie pozytywnymi/negatywnymi w ochronie punktu końcowego w usłudze Microsoft Defender
-description: Dowiedz się, jak obsługiwać wyniki fałszywie dodatnie lub ujemne z Ochrona punktu końcowego w usłudze Microsoft Defender.
-keywords: oprogramowanie antywirusowe, wyjątek, wykluczenie, Ochrona punktu końcowego w usłudze Microsoft Defender, wynik fałszywie dodatni, wynik fałszywie ujemny, zablokowany plik, zablokowany adres URL
+title: Adres dodatnich/ujemnych wyników fałszywie dodatnich w programie Microsoft Defender dla punktu końcowego
+description: Dowiedz się, jak obsługiwać wyniki fałszywie dodatnie lub ujemne wyniki fałszywie ujemne w programie Microsoft Defender for Endpoint.
+keywords: oprogramowanie antywirusowe, wyjątek, wykluczenie, program Microsoft Defender dla punktu końcowego, wynik fałszywie dodatni, wynik fałszywie ujemny, zablokowany plik, zablokowany adres URL
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -23,24 +23,24 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 160108e123f5ba38a7c7af8c36ebb17431e860ad
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 214aafec22e26e5c69b40021eecb185a8dbfcbb2
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472974"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681639"
 ---
-# <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Rozwiązywanie problemów z wynikami fałszywie pozytywnymi/negatywnymi w ochronie punktu końcowego w usłudze Microsoft Defender
+# <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Adres dodatnich/ujemnych wyników fałszywie dodatnich w programie Microsoft Defender dla punktu końcowego
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-W rozwiązaniach ochrony punktów końcowych wartość fałszywie dodatnia jest jednostką, taką jak plik lub proces, który został wykryty i zidentyfikowany jako złośliwy, nawet jeśli w rzeczywistości nie jest to zagrożenie. Wartość fałszywa ujemna to podmiot, który nie został wykryty jako zagrożenie, mimo że w rzeczywistości jest złośliwy. Wyniki fałszywie dodatnie/ujemne mogą występować w przypadku każdego rozwiązania w zakresie ochrony przed zagrożeniami, [łącznie Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md).
+W rozwiązaniach ochrony punktów końcowych wartość fałszywie dodatnia jest jednostką, taką jak plik lub proces, który został wykryty i zidentyfikowany jako złośliwy, nawet jeśli w rzeczywistości nie jest to zagrożenie. Wartość fałszywa ujemna to podmiot, który nie został wykryty jako zagrożenie, mimo że w rzeczywistości jest złośliwy. Wyniki fałszywie dodatnie/ujemne mogą występować w przypadku dowolnego rozwiązania ochrony przed zagrożeniami, łącznie z [programem Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
-:::image type="content" source="images/false-positives-overview.png" alt-text="Definicja wyników fałszywie dodatnich i ujemnych w portalu Ochrona punktu końcowego w usłudze Microsoft Defender danych" lightbox="images/false-positives-overview.png":::
+![Definicja wartości fałszywie dodatnich i ujemnych w programie Defender dla punktu końcowego.](images/false-positives-overview.png)
 
 Na szczęście można wykonać kroki w celu rozwiązania i zmniejszenia tego typu problemów. Jeśli w programie Microsoft 365 Defender są dodatnie/ujemne wyniki fałszywie dodatnie[, operacje](/microsoft-365/security/defender/microsoft-365-defender) zabezpieczeń mogą podjąć odpowiednie kroki, korzystając z następującego procesu:
 
@@ -52,10 +52,10 @@ Na szczęście można wykonać kroki w celu rozwiązania i zmniejszenia tego typ
 
 Jeśli po wykonaniu zadań opisanych w tym artykule nadal występują problemy z wynikami fałszywie dodatnimi/ujemnymi, możesz uzyskać pomoc. Zobacz [Nadal potrzebujesz pomocy?](#still-need-help)
 
-:::image type="content" source="images/false-positives-step-diagram.png" alt-text="Kroki, które należy wykonać w celu rozwiązania problemów z wartościami fałszywie dodatnimi i ujemnmi" lightbox="images/false-positives-step-diagram.png":::
+![Kroki w celu rozwiązania problemów z wartościami fałszywie dodatnimi i ujemnym.](images/false-positives-step-diagram.png)
 
 > [!NOTE]
-> Ten artykuł jest przeznaczony jako wskazówki dla operatorów zabezpieczeń i administratorów zabezpieczeń korzystających z [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md).
+> Ten artykuł jest przeznaczony jako wskazówki dla operatorów zabezpieczeń i administratorów zabezpieczeń korzystających z programu [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
 ## <a name="part-1-review-and-classify-alerts"></a>Część 1. Przeglądanie i klasyfikowanie alertów
 
@@ -71,19 +71,19 @@ Zanim sklasyfikuje się lub pominie alert, określ, czy jest on dokładny, dodat
 
 2. W okienku nawigacji wybierz pozycję **Kolejka alertów**.
 
-3. Wybierz alert, aby uzyskać więcej szczegółów dotyczących tego alertu. (Zobacz [Przeglądanie alertów w programie Ochrona punktu końcowego w usłudze Microsoft Defender](review-alerts.md)).
+3. Wybierz alert, aby uzyskać więcej szczegółów dotyczących tego alertu. (Zobacz Przeglądanie [alertów w programie Microsoft Defender dla punktu końcowego](review-alerts.md)).
 
 4. W zależności od stanu alertu, zrób tak, jak to opisano w poniższej tabeli:
 
    |Stan alertu|Co należy zrobić|
    |---|---|
    |Alert jest dokładny|Przypisz alert, a następnie [przejdę jego dalsze](investigate-alerts.md) badanie.|
-   |Alert jest fałszywie dodatni|1. [Sklasyfikuj alert](#classify-an-alert) jako wynik fałszywie dodatni.<br/><br/>2. [Pomiń alert](#suppress-an-alert).<br/><br/>3. [Tworzenie wskaźnika dla](#indicators-for-microsoft-defender-for-endpoint) Ochrona punktu końcowego w usłudze Microsoft Defender.<br/><br/>4. [Prześlij plik do firmy Microsoft w celu analizy](#part-4-submit-a-file-for-analysis).|
+   |Alert jest fałszywie dodatni|1. [Sklasyfikuj alert](#classify-an-alert) jako wynik fałszywie dodatni.<br/><br/>2. [Pomiń alert](#suppress-an-alert).<br/><br/>3. [Tworzenie wskaźnika dla programu](#indicators-for-microsoft-defender-for-endpoint) Microsoft Defender dla punktu końcowego.<br/><br/>4. [Prześlij plik do firmy Microsoft w celu analizy](#part-4-submit-a-file-for-analysis).|
    |Alert jest dokładny, ale niedokładny (nieistotny)|[Sklasyfikowanie alertu](#classify-an-alert) jako prawdziwego dodatniego, a następnie pominięcie [alertu](#suppress-an-alert).|
 
 ### <a name="classify-an-alert"></a>Klasyfikowanie alertu
 
-Alerty mogą być klasyfikowane jako wynik fałszywie dodatni lub jako prawdziwe Microsoft 365 Defender. Klasyfikowanie alertów ułatwia Ochrona punktu końcowego w usłudze Microsoft Defender tak, aby z czasem było więcej prawdziwych alertów i mniej fałszywych alertów.
+Alerty mogą być klasyfikowane jako wynik fałszywie dodatni lub jako prawdziwe Microsoft 365 Defender. Klasyfikowanie alertów ułatwia przeszkolić usługę Microsoft Defender w witrynie Endpoint, dzięki czemu z czasem będziesz widzieć więcej prawdziwych alertów i mniej fałszywych alertów.
 
 1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
@@ -94,7 +94,7 @@ Alerty mogą być klasyfikowane jako wynik fałszywie dodatni lub jako prawdziwe
 4. W sekcji **Zarządzanie alertami** wybierz pozycję Alert **prawda** lub **Alert fałsz**. (Użyj **alertu Fałsz,** aby sklasyfikować wyniki fałszywie dodatnie).
 
 > [!TIP]
-> Aby uzyskać więcej informacji o pomijaniu alertów, zobacz [Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender alertami](/microsoft-365/security/defender-endpoint/manage-alerts). Jeśli Twoja organizacja korzysta z serwera informacji o zabezpieczeniach i zarządzania zdarzeniami (SIEM, security information and event management), również tam zdefiniuj regułę konfiguracji.
+> Aby uzyskać więcej informacji o pomijaniu alertów, zobacz [Zarządzanie alertami programu Microsoft Defender dla punktu końcowego](/microsoft-365/security/defender-endpoint/manage-alerts). Jeśli Twoja organizacja korzysta z serwera informacji o zabezpieczeniach i zarządzania zdarzeniami (SIEM, security information and event management), również tam zdefiniuj regułę konfiguracji.
 
 ### <a name="suppress-an-alert"></a>Pomijanie alertu
 
@@ -162,7 +162,7 @@ Po przejrzeniu i cofeniu akcji, które zostały wykonane w wyniku wyników wynik
 ### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>Usuwanie pliku z kwarantanny na wielu urządzeniach
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="Plik kwarantanny" lightbox="images/autoir-quarantine-file-1.png":::
+> ![Poddaj plikowi kwarantanny.](images/autoir-quarantine-file-1.png)
 
 1. W lewym okienku nawigacji w portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender kliknij</a> pozycję **Centrum akcji**.
 
@@ -194,21 +194,21 @@ Możesz wycofać i usunąć plik z kwarantanny, jeśli określono, że jest on o
 
 ## <a name="part-3-review-or-define-exclusions"></a>Część 3. Przeglądanie lub definiowanie wykluczeń
 
-Wyjątkiem są jednostki, takie jak plik lub adres URL, określone jako wyjątek do działań naprawczych. Wykluczona jednostka może być wykrywana, ale w jej encji nie są podejmowane żadne działania naprawcze. Oznacza to, że wykryty plik lub proces nie zostanie zatrzymany, wysłany do kwarantanny, usunięty ani w inny sposób zmieniony przez Ochrona punktu końcowego w usłudze Microsoft Defender.
+Wyjątkiem są jednostki, takie jak plik lub adres URL, określone jako wyjątek do działań naprawczych. Wykluczona jednostka może być wykrywana, ale w jej encji nie są podejmowane żadne działania naprawcze. Oznacza to, że wykryty plik lub proces nie zostanie zatrzymany, wysłany do kwarantanny, usunięty ani w inny sposób zmieniony przez usługę Microsoft Defender for Endpoint.
 
-Aby zdefiniować wykluczenia na Ochrona punktu końcowego w usłudze Microsoft Defender, wykonaj następujące zadania:
+Aby zdefiniować wykluczenia w programie Microsoft Defender for Endpoint, wykonaj następujące zadania:
 
 - [Definiowanie wykluczeń dla Program antywirusowy Microsoft Defender](#exclusions-for-microsoft-defender-antivirus)
-- [Tworzenie wskaźników zezwalania na Ochrona punktu końcowego w usłudze Microsoft Defender](#indicators-for-microsoft-defender-for-endpoint)
+- [Tworzenie wskaźników "zezwalania" dla programu Microsoft Defender dla punktu końcowego](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> Program antywirusowy Microsoft Defender wykluczeń mają zastosowanie tylko do ochrony antywirusowej, a nie dla innych Ochrona punktu końcowego w usłudze Microsoft Defender możliwości. Aby ogólnie wykluczyć pliki, użyj wykluczeń Program antywirusowy Microsoft Defender niestandardowych [wskaźników dla](/microsoft-365/security/defender-endpoint/manage-indicators) Ochrona punktu końcowego w usłudze Microsoft Defender.
+> Program antywirusowy Microsoft Defender wykluczeń dotyczą tylko ochrony antywirusowej, a nie innych funkcji programu Microsoft Defender for Endpoint. Aby ogólnie wykluczyć pliki, użyj wykluczeń Program antywirusowy Microsoft Defender wskaźników [niestandardowych](/microsoft-365/security/defender-endpoint/manage-indicators) dla programu Microsoft Defender for Endpoint.
 
 Procedury w tej sekcji opisują sposób definiowania wykluczeń i wskaźników.
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Wykluczenia dotyczące Program antywirusowy Microsoft Defender
 
-Ogólnie nie należy definiować wykluczeń dla Program antywirusowy Microsoft Defender. Należy pamiętać, aby oszczędnie definiować wykluczenia i uwzględniać tylko pliki, foldery, procesy i pliki otwierane w procesie, których wynikiem są wyniki fałszywie dodatnie. Ponadto należy regularnie przeglądać zdefiniowane wykluczenia. Zalecamy używanie programu [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) do definiowania i edytowania wykluczeń oprogramowania antywirusowego, ale możesz używać innych metod, takich jak [zasady grupy (zobacz](/azure/active-directory-domain-services/manage-group-policy) [Zarządzanie](manage-mde-post-migration.md) Ochrona punktu końcowego w usłudze Microsoft Defender.
+Ogólnie nie należy definiować wykluczeń dla Program antywirusowy Microsoft Defender. Należy pamiętać, aby oszczędnie definiować wykluczenia i uwzględniać tylko pliki, foldery, procesy i pliki otwierane w procesie, których wynikiem są wyniki fałszywie dodatnie. Ponadto należy regularnie przeglądać zdefiniowane wykluczenia. Zalecamy używanie programu [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) do definiowania i edytowania wykluczeń oprogramowania antywirusowego, ale możesz używać innych metod, takich jak [zasady grupy](/azure/active-directory-domain-services/manage-group-policy) (zobacz Zarządzanie [programem Microsoft Defender dla punktu końcowego](manage-mde-post-migration.md).
 
 > [!TIP]
 > Potrzebujesz pomocy dotyczącej wykluczeń oprogramowania antywirusowego? Zobacz [Konfigurowanie i weryfikowanie wykluczeń Program antywirusowy Microsoft Defender skanowania.](configure-exclusions-microsoft-defender-antivirus.md)
@@ -245,11 +245,11 @@ Ogólnie nie należy definiować wykluczeń dla Program antywirusowy Microsoft D
 
 9. Na karcie **Recenzja + tworzenie** przejrzyj ustawienia, a następnie wybierz pozycję **Utwórz**.
 
-### <a name="indicators-for-microsoft-defender-for-endpoint"></a>Wskaźniki dla Ochrona punktu końcowego w usłudze Microsoft Defender
+### <a name="indicators-for-microsoft-defender-for-endpoint"></a>Wskaźniki dla programu Microsoft Defender dla punktu końcowego
 
-[Wskaźniki](/microsoft-365/security/defender-endpoint/manage-indicators) (w szczególności wskaźniki naruszenia bezpieczeństwa lub IOCs) umożliwiają Twojemu zespołowi operacyjnemu ds. zabezpieczeń definiowanie wykrywania, zapobiegania i wykluczania jednostek. Na przykład możesz określić, które pliki mają być pominięte w skanach i działaniach naprawczych w programie Ochrona punktu końcowego w usłudze Microsoft Defender. Wskaźników można też używać do generowania alertów dla określonych plików, adresów IP lub adresów URL.
+[Wskaźniki](/microsoft-365/security/defender-endpoint/manage-indicators) (w szczególności wskaźniki naruszenia bezpieczeństwa lub IOCs) umożliwiają Twojemu zespołowi operacyjnemu ds. zabezpieczeń definiowanie wykrywania, zapobiegania i wykluczania jednostek. Możesz na przykład określić, że określone pliki mają być pominięte w skanach i działaniach naprawczych w programie Microsoft Defender for Endpoint. Wskaźników można też używać do generowania alertów dla określonych plików, adresów IP lub adresów URL.
 
-Aby określić jednostki jako wyjątki dla Ochrona punktu końcowego w usłudze Microsoft Defender, utwórz wskaźniki "zezwalaj" dla tych jednostek. Takie wskaźniki "zezwalania" w programie Ochrona punktu końcowego w usłudze Microsoft Defender się do [ochrony następnej](microsoft-defender-antivirus-in-windows-10.md) [generacji, wykrywanie i reagowanie w punktach końcowych](overview-endpoint-detection-response.md) automatycznego badania i rozwiązywania [problemów & działania naprawcze](/microsoft-365/security/defender-endpoint/automated-investigations).
+Aby określić jednostki jako wykluczenia dla programu Microsoft Defender dla punktu końcowego, utwórz wskaźniki "zezwalaj" dla tych jednostek. Takie wskaźniki "zezwalania" w programie Microsoft Defender dla punktu końcowego dotyczą ochrony następnej [generacji, wykrywanie i reagowanie w punktach końcowych](microsoft-defender-antivirus-in-windows-10.md) [i automatycznego](overview-endpoint-detection-response.md) badania & [rozwiązywania problemów](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 Wskaźniki "Zezwalaj" można utworzyć dla:
 
@@ -257,7 +257,7 @@ Wskaźniki "Zezwalaj" można utworzyć dla:
 - [Adresy IP, adresy URL i domeny](#indicators-for-ip-addresses-urls-or-domains)
 - [Certyfikaty aplikacji](#indicators-for-application-certificates)
 
-:::image type="content" source="images/false-positives-indicators.png" alt-text="Typy wskaźników" lightbox="images/false-positives-indicators.png":::
+![Diagram typów wskaźników.](images/false-positives-indicators.png)
 
 #### <a name="indicators-for-files"></a>Wskaźniki plików
 
@@ -298,7 +298,7 @@ Przed utworzeniem wskaźników dla certyfikatów aplikacji upewnij się, że są
 
 ## <a name="part-4-submit-a-file-for-analysis"></a>Część 4. Przesyłanie pliku do analizy
 
-Jednostki, takie jak pliki i wykrywanie bez plików, można przesyłać do firmy Microsoft w celu analizy. Analiza zabezpieczeń firmy Microsoft analizuje wszystkie zgłoszenia, a ich wyniki pomagają Ochrona punktu końcowego w usłudze Microsoft Defender funkcji ochrony przed zagrożeniami. Po zalogowaniu się w witrynie przesyłania możesz śledzić swoje zgłoszenia.
+Jednostki, takie jak pliki i wykrywanie bez plików, można przesyłać do firmy Microsoft w celu analizy. Analizują one wszystkie zgłoszenia, a ich wyniki pomagają w przekazywaniu informacji o możliwościach ochrony przed zagrożeniami w programie Microsoft Defender dla punktów końcowych. Po zalogowaniu się w witrynie przesyłania możesz śledzić swoje zgłoszenia.
 
 ### <a name="submit-a-file-for-analysis"></a>Przesyłanie pliku do analizy
 
@@ -310,7 +310,7 @@ Jeśli masz plik, który został błędnie wykryty jako złośliwy lub nieodebra
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>Przesyłanie wykrywania bez pliku do analizy
 
-Jeśli na podstawie zachowania coś zostało wykryte jako złośliwe oprogramowanie, a nie masz pliku, `Mpsupport.cab` możesz przesłać plik do analizy. Plik można pobrać *.cab*, używając narzędzia Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) na Windows 10 lub Windows 11.
+Jeśli na podstawie zachowania coś zostało wykryte jako złośliwe oprogramowanie, a nie masz pliku, `Mpsupport.cab` możesz przesłać plik do analizy. Plik można *pobrać.cabza* pomocą narzędzia Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) na Windows 10 lub Windows 11.
 
 1. Przejdź do ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, a następnie uruchom jako `MpCmdRun.exe` administrator.
 
@@ -339,7 +339,7 @@ Aby sprawdzić aktualizacje dotyczące przesyłania, zaloguj się w Microsoft Se
 
 ## <a name="part-5-review-and-adjust-your-threat-protection-settings"></a>Część 5. Przeglądanie i dostosowywanie ustawień ochrony przed zagrożeniami
 
-Ochrona punktu końcowego w usłudze Microsoft Defender oferuje wiele różnych opcji, w tym możliwość dostosowania ustawień dla różnych funkcji i możliwości. Jeśli wyniki fałszywie dodatnie są liczne, należy zapoznać się z ustawieniami ochrony przed zagrożeniami w organizacji. Może być konieczne dostosowanie:
+Program Microsoft Defender for Endpoint oferuje wiele różnych opcji, w tym możliwość dostosowania ustawień dla różnych funkcji i możliwości. Jeśli wyniki fałszywie dodatnie są liczne, należy zapoznać się z ustawieniami ochrony przed zagrożeniami w organizacji. Może być konieczne dostosowanie:
 
 - [Ochrona w chmurze](#cloud-delivered-protection)
 - [Działania naprawcze dotyczące potencjalnie niechcianych aplikacji](#remediation-for-potentially-unwanted-applications)
@@ -352,7 +352,7 @@ Sprawdź, czy poziom ochrony przed wiadomościami e-Program antywirusowy Microso
 > [!TIP]
 > Aby dowiedzieć się więcej o konfigurowaniu ochrony w chmurze, zobacz Określanie poziomu ochrony przed wiadomościami [w chmurze](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-Zalecamy edytowanie [lub Microsoft Endpoint Manager](/mem/endpoint-manager-overview) ustawień ochrony w chmurze przy użyciu programu zasady grupy. Możesz jednak użyć innych metod, takich [jak](/azure/active-directory-domain-services/manage-group-policy) zasady grupy (zobacz Zarządzanie [Ochrona punktu końcowego w usłudze Microsoft Defender).](manage-mde-post-migration.md)
+Zalecamy edytowanie [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) ustawień ochrony w chmurze przy użyciu programu Microsoft Endpoint Manager, ale możesz używać innych metod, takich jak [program zasady grupy](/azure/active-directory-domain-services/manage-group-policy) (zobacz Zarządzanie [programem Microsoft Defender dla punktu końcowego](manage-mde-post-migration.md)).
 
 #### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Przeglądanie Microsoft Endpoint Manager i edytowanie ustawień ochrony w chmurze (dla istniejących zasad)
 
@@ -396,7 +396,7 @@ Potencjalnie niechciane aplikacje (PUA) to kategoria oprogramowania, która moż
 
 W zależności od aplikacji, z których korzysta Twoja organizacja, w wyniku ustawień ochrony pua mogą być wynikiem wyników fałszywie dodatnich. Jeśli to konieczne, rozważ zastosowanie ochrony przed uruchomieniem funkcji pua w trybie inspekcji przez jakiś czas lub zastosowanie ochrony za pobłędzie do podzestawu urządzeń w organizacji. Ochronę za pomocą zabezpieczeń po stronie użytkownika można skonfigurować na Microsoft Edge przeglądarkach i na Program antywirusowy Microsoft Defender.
 
-Zalecamy edytowanie [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) ustawień ochrony za pomocą funkcji PUA, jednak możesz używać innych metod, takich jak [zasady grupy (zobacz](/azure/active-directory-domain-services/manage-group-policy) Zarządzanie [Ochrona punktu końcowego w usłudze Microsoft Defender.](manage-mde-post-migration.md)
+Zalecamy edytowanie [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) ustawień ochrony za pomocą funkcji PUA, jednak możesz używać innych metod, takich jak [zasady grupy](/azure/active-directory-domain-services/manage-group-policy) (zobacz Zarządzanie [programem Microsoft Defender dla punktu końcowego](manage-mde-post-migration.md)).
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Edytowanie Microsoft Endpoint Manager poziomu zabezpieczeń (dla istniejących profilów konfiguracji)
 
@@ -456,6 +456,6 @@ Jeśli wszystkie kroki opisane w tym artykule zostały już przez Ciebie opisane
 
 ## <a name="see-also"></a>Zobacz też
 
-[Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender](manage-mde-post-migration.md)
+[Zarządzanie usługą Microsoft Defender dla punktu końcowego](manage-mde-post-migration.md)
 
 [Omówienie portalu Microsoft 365 Defender użytkowników](/microsoft-365/security/defender-endpoint/use)

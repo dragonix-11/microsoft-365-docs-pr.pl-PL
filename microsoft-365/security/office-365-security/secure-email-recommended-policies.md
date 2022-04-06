@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b708d7aa993bdcd74b6fe00f633e3f7933ff04b8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321743"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682444"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Zalecenia dotyczące zasad dotyczące zabezpieczania poczty e-mail
 
@@ -55,7 +55,6 @@ Jeśli podczas ich Exchange Online do Outlook uwzględniono zasady, wystarczy ut
 |**Enterprise**|[Wymagaj uwierzytelniania wieloskładnikowego, gdy ryzyko logowania *jest niskie, średnie* lub *wysokie*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Uwzględnianie Exchange Online przy przypisywaniu aplikacji w chmurze|
 ||[Wymaganie zgodności komputerów i *urządzeń* przenośnych](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Uwzględnianie Exchange Online na liście aplikacji w chmurze|
 |**Wyspecjalizowane zabezpieczenia**|[*Zawsze wymagaj* uwierzytelniania wieloskładnikowego](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Uwzględnianie Exchange Online przy przypisywaniu aplikacji w chmurze|
-|
 
 ## <a name="block-activesync-clients"></a>Blokowanie klientów programu ActiveSync
 

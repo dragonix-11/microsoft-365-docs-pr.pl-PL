@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Wdeksuj pakiet konfiguracji na urządzeniu infrastruktury pulpitów wirtualnych (VDI), aby były one dołączane do usługi ochrony przed utratą danych Microsoft 365 punktów końcowych.
-ms.openlocfilehash: 6ac13edde066319a5174234450dac67c29209b1b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 00804c93022f21715e3604eeb45c22caa4745f91
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "62999370"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682157"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych
 
@@ -64,7 +64,7 @@ Poniższe kroki poprowadzi Cię przez dołączanie urządzeń VDI i będą wyró
 
 4. Kliknij **pozycję Pobierz pakiet** i zapisz .zip pliku.
 
-5. Skopiuj pliki z folderu DeviceCompliancePackage wyodrębniony z pliku .zip `golden/master` do obrazu pod ścieżką `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+5. Skopiuj pliki z folderu DeviceCompliancePackage wyodrębniony z pliku .zip `golden` do obrazu pod ścieżką `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
 
 6. Jeśli nie implementujesz pojedynczej pozycji dla każdego urządzenia, skopiuj kod DeviceComplianceOnboardingScript.cmd.
 
@@ -90,9 +90,9 @@ Poniższe kroki poprowadzi Cię przez dołączanie urządzeń VDI i będą wyró
 
 10. Przetestuj swoje rozwiązanie:
     1. Utwórz pulę przy użyciu jednego urządzenia.
-    1. Logowanie na urządzeniu.
-    1. Logowanie z urządzenia.
-    1. Logowanie się na urządzeniu z innym użytkownikiem.
+    1. Zaloguj się na urządzeniu.
+    1. Wyloguj się z urządzenia.
+    1. Zaloguj się na urządzeniu z innym użytkownikiem.
     1. **W przypadku wpisu pojedynczego dla każdego urządzenia**: Sprawdź tylko jedną pozycję w Centrum zabezpieczeń usługi Microsoft Defender.
        **W przypadku wielu wpisów dla każdego urządzenia**: Sprawdź wiele wpisów w Centrum zabezpieczeń usługi Microsoft Defender.
 
@@ -102,7 +102,7 @@ Poniższe kroki poprowadzi Cię przez dołączanie urządzeń VDI i będą wyró
 
 ## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Aktualizowanie nietrwałych obrazów infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure)
 
-Jako najlepsze rozwiązanie zalecamy używanie narzędzi obsługi w trybie offline do poprawiania obrazów złotych/wzorcowych.
+Jako najlepsze rozwiązanie zalecamy używanie narzędzi obsługi w trybie offline do poprawiania złotych obrazów.
 
 Możesz na przykład użyć poniższych poleceń, aby zainstalować aktualizację, podczas gdy obraz pozostaje w trybie offline:
 
@@ -120,7 +120,7 @@ Aby uzyskać więcej informacji na temat poleceń ROZM i obsługi w trybie offli
 
 Jeśli obsługa w trybie offline nie jest rentowną opcją dla nietrwałych środowisk VDI, należy podjąć następujące kroki w celu zapewnienia spójności i kondycji czujnika:
 
-1. Po uruchomieniu wzorca w celu obsługi lub poprawiania poprawek w trybie online uruchom skrypt wywrócący, aby wyłączyć czujnik monitorowania Microsoft 365 urządzenia. Aby uzyskać więcej informacji, zobacz [Urządzenia przenośne korzystające ze skryptu lokalnego](device-onboarding-script.md#offboard-devices-using-a-local-script).
+1. Po uruchomieniu złotego obrazu do obsługi lub poprawiania w trybie online uruchom skrypt wybiegania, aby wyłączyć czujnik monitorowania Microsoft 365 urządzenia. Aby uzyskać więcej informacji, zobacz [Urządzenia przenośne korzystające ze skryptu lokalnego](device-onboarding-script.md#offboard-devices-using-a-local-script).
 
 2. Upewnij się, że czujnik został zatrzymany, uruchamiając poniższe polecenie w oknie CMD:
 
@@ -140,7 +140,7 @@ Jeśli obsługa w trybie offline nie jest rentowną opcją dla nietrwałych śro
     exit
     ```
 
-5. Ponownie zaklej złoty/wzorzec tak jak zwykle.
+5. Ponownie zaklej złoty obraz tak jak zwykle.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

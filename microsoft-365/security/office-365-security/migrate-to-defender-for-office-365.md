@@ -19,12 +19,12 @@ ms.custom: ''
 description: Dowiedz się, jak przeprowadzić migrację z usług i urządzeń ochrony innych firm, takich jak Google Postini, Zapora antywirusowa i spam Barracuda lub Cisco IronPort do programu Microsoft Defender w celu Office 365 ochrony.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c80d9e6005b5f9f329164dbc4ba0ebfed6a05a1b
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: af24829f8d3e4186de6e1c537d545515667627b8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "62990519"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682356"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>Migrowanie z usługi lub urządzenia ochrony innej firmy do programu Microsoft Defender dla Office 365
 
@@ -76,16 +76,11 @@ Proces migrowania z usługi ochrony innej firmy do programu Defender Office 365 
 
 ![Proces migrowania do programu Defender w Office 365.](../../media/phase-diagrams/migration-phases.png)
 
-<p>
-
-****
-
 |Faza|Opis|
 |---|---|
 |[Przygotowywanie do migracji](migrate-to-defender-for-office-365-prepare.md)|<ol><li>[Inwentaryzacja ustawień w istniejącej usłudze ochrony](migrate-to-defender-for-office-365-prepare.md#inventory-the-settings-at-your-existing-protection-service)</li><li>[Sprawdzanie istniejącej konfiguracji ochrony w programie Microsoft 365](migrate-to-defender-for-office-365-prepare.md#check-your-existing-protection-configuration-in-microsoft-365)</li><li>[Sprawdzanie konfiguracji routingu poczty](migrate-to-defender-for-office-365-prepare.md#check-your-mail-routing-configuration)</li><li>[Przenoszenie funkcji modyfikujących wiadomości do Microsoft 365](migrate-to-defender-for-office-365-prepare.md#move-features-that-modify-messages-into-microsoft-365)</li><li>[Definiowanie spamu i zbiorczego obsługi użytkowników](migrate-to-defender-for-office-365-prepare.md#define-spam-and-bulk-user-experiences)</li><li>[Identyfikowanie i wyznaczanie kont priorytetowych](migrate-to-defender-for-office-365-prepare.md#identify-and-designate-priority-accounts)</li></ol>|
 |[Konfigurowanie usługi Defender dla Office 365](migrate-to-defender-for-office-365-setup.md)|<ol><li>[Tworzenie grup dystrybucyjnych dla użytkowników pilotażowych](migrate-to-defender-for-office-365-setup.md#step-1-create-distribution-groups-for-pilot-users)</li><li>[Konfigurowanie przesyłania użytkowników do raportowania wiadomości użytkownika](migrate-to-defender-for-office-365-setup.md#step-2-configure-user-submission-for-user-message-reporting)</li><li>[Obsługa lub tworzenie reguły przepływu poczty SCL=-1](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule)</li><li>[Konfigurowanie ulepszonego filtrowania dla łączników](migrate-to-defender-for-office-365-setup.md#step-4-configure-enhanced-filtering-for-connectors)</li><li>[Tworzenie zasad ochrony pilotażowej](migrate-to-defender-for-office-365-setup.md#step-5-create-pilot-protection-policies)</li></ol>|
 |[Onboard to Defender for Office 365](migrate-to-defender-for-office-365-onboard.md)|<ol><li>[Rozpoczynanie dołączania do Teams](migrate-to-defender-for-office-365-onboard.md#step-1-begin-onboarding-security-teams)</li><li>[(Opcjonalnie) Wykluczanie użytkowników pilotażowych z filtrowania według istniejącej usługi ochrony](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)</li><li>[Dostosowywanie spoof intelligence](migrate-to-defender-for-office-365-onboard.md#step-3-tune-spoof-intelligence)</li><li>[Dostosowywanie ochrony personifikacji i analizy skrzynki pocztowej](migrate-to-defender-for-office-365-onboard.md#step-4-tune-impersonation-protection-and-mailbox-intelligence)</li><li>[Używanie danych  przysyłanych przez użytkowników do mierzenia i dostosowania](migrate-to-defender-for-office-365-onboard.md#step-5-use-data-from-user-submissions-to-measure-and-adjust)</li><li>[(Opcjonalnie) Dodawanie kolejnych użytkowników do pilotażu i iteratu](migrate-to-defender-for-office-365-onboard.md#step-6-optional-add-more-users-to-your-pilot-and-iterate)</li><li>[Rozszerzanie Microsoft 365 na wszystkich użytkowników i wyłączanie reguły przepływu poczty SCL=-1](migrate-to-defender-for-office-365-onboard.md#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)</li><li>[Przełączanie rekordów MX](migrate-to-defender-for-office-365-onboard.md#step-8-switch-your-mx-records)</li></ol>|
-|
 
 ## <a name="next-step"></a>Następny krok
 

@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie raportów ochrony usługi Office 365 w usłudze Defender
+title: Wyświetlanie programu Defender Office 365 raportów
 f1.keywords:
 - CSH
 ms.author: chrisda
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7532d5be8febda1b4dc4dfc0a0860516188ecfc5
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: de0dd5b7c0466a722a788ee3fe4e6c843d70f5eb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775625"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680979"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów programu Defender Office 365 w portalu Microsoft 365 Defender-
 
@@ -88,8 +88,8 @@ Na stronie **Raport o opóźnieniach** poczty na stronie Raport opóźnień pocz
 
 Niezależnie od wybranej karty na wykresie są wyświetlane wiadomości podzielone na następujące kategorie:
 
-- **Ogólne**
-- **Detonacja**
+- **Opóźnienie dostarczania poczty**
+- **Detonations**
 
 Po umieszczeniu wskaźnika myszy na kategorii na wykresie możesz zobaczyć zestawienie opóźnień w poszczególnych kategoriach.
 
@@ -100,20 +100,17 @@ Jeśli klikniesz **pozycję Filtruj**, możesz filtrować zarówno wykres, jak i
 - **Data (UTC)**: **data rozpoczęcia** i **data zakończenia**
 - **Widok wiadomości**: Jedna z następujących wartości:
   - **Wszystkie wiadomości**
-  - **Detonated messages**: One of the following values:
-    - **Detonacja w tekście**: uwzględnia wiadomości, które są w pełni przetestowane przed dostarczeniem.
-    - **Asynchroniczne detonowanie**
+  - **Wiadomości zawierające załączniki lub adresy URL**
+  - **Detonated messages**
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
 W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 
 - **Data (UTC)**
-- **Opóźnienie**
+- **Percentyl**: **50**, **90** lub **99**
 - **Liczba wiadomości**
-- **50.percentyl**
-- **90-ty percentyl**
-- **99. percentyl**
+- **Ogólne opóźnienie**
 
 Na stronie raportu głównego ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](view-email-security-reports.md#export-report)** Eksportuj jest dostępny.
 

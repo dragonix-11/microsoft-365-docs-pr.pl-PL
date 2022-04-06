@@ -17,12 +17,12 @@ ms.collection:
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować ustawienia wiadomości-śmieci w Exchange Online pocztowych. Wiele z tych ustawień jest dostępnych dla użytkowników w Outlook lub Outlook w sieci Web.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3a55b1f49430d3c2a61b0db44e3ce8f8a060093
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9e2db8fc6c88e3945081d3b2800aa5ea9cd57a11
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "62988690"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682466"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurowanie ustawień wiadomości-śmieci w Exchange Online pocztowych
 
@@ -65,17 +65,12 @@ Administratorzy mogą za pomocą programu Exchange Online PowerShell konfigurowa
 
 Zbiór listy bezpiecznych adresów w skrzynce pocztowej zawiera listę Sejf nadawców, listę Sejf adresatów oraz listę zablokowanych nadawców. Domyślnie użytkownicy mogą skonfigurować kolekcję listy bezpiecznych adresów we własnej skrzynce pocztowej w Outlook lub Outlook w sieci Web. Administratorzy mogą używać odpowiednich parametrów w poleceniach **cmdlet Set-MailboxJunkEmailConfiguration** , aby skonfigurować kolekcję listy bezpiecznych adresów w skrzynce pocztowej użytkownika. Te parametry opisano w poniższej tabeli.
 
-<br>
-
-****
-
 |Parametr na Set-MailboxJunkEmailConfiguration|Outlook w sieci Web ustawienia|
 |---|---|
 |_BlockedSendersAndDomains_|**Przenoszenie wiadomości e-mail od tych nadawców lub domen do folderu Wiadomości-śmieci**|
 |_ContactsTrusted_|**Ufaj wiadomościom e-mail od moich kontaktów**|
 |_TrustedListsOnly_|**Ufaj tylko wiadomościom e-mail z adresów na Sejf nadawców i domen oraz na listach Sejf adresowych**|
 |_TrustedSendersAndDomains_<sup>\*</sup>|**Nie przekieruj wiadomości e-mail od tych nadawców do folderu Wiadomości-śmieci**|
-|
 
 <sup>\*</sup>**Uwagi**:
 

@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 8a8de691ff08b50b56c34ed9e779cc97d48c5fcd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bf6a6ecf48889228391688e41fb79070c3194a1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755838"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682223"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Konfigurowanie funkcji i zarządzanie Microsoft Threat Experts za pośrednictwem Microsoft 365 Defender
 
@@ -52,15 +52,15 @@ Jeśli masz już program Microsoft Defender for Endpoint i Microsoft 365 Defende
 
 2. Wybierz **pozycję Zastosuj**.
 
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Strona Microsoft Threat Experts ustawień w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mte/mte-collaboratewithmte.png":::
+    ![Obraz Microsoft Threat Experts ustawień.](../../media/mte/mte-collaboratewithmte.png)
 
 3. Wprowadź swoje imię i nazwisko (nazwę) oraz adres e-mail, aby firma Microsoft skontaktowały się z Tobą w sprawie Twojej aplikacji.
 
-    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="Strona Microsoft Threat Experts aplikacji w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/mte/mte-apply.png":::
-  
+    ![Obraz Microsoft Threat Experts aplikacji.](../../media/mte/mte-apply.png)
+
 4. Przeczytaj zasady [zachowania poufności informacji](https://privacy.microsoft.com/en-us/privacystatement), a **następnie po wybraniu** przycisku Prześlij wybierz pozycję Prześlij. Po zatwierdzeniu aplikacji otrzymasz powitaną wiadomość e-mail.
 
-    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="Potwierdzenie Microsoft Threat Experts aplikacji w portalu Microsoft 365 Defender adresowej" lightbox="../../media/mte/mte-applicationconfirmation.png":::
+    ![Obraz potwierdzenia Microsoft Threat Experts aplikacji.](../../media/mte/mte-applicationconfirmation.png)
 
 5. Gdy otrzymasz powitaną wiadomość e-mail, automatycznie zaczniesz otrzymywać powiadomienia o ukierunkowanych atakach.
 
@@ -105,13 +105,13 @@ Możesz skontaktować się Microsoft Threat Experts z wewnątrz Microsoft 365 De
 
 2. Z górnego menu wybierz pozycję **? Skonsultuj się z ekspertem ds. zagrożeń**.
 
-    :::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="The Microsoft Threat Experts Experts on Demand from the menu in the Microsoft 365 Defender portal" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
+    ![Obraz menu Microsoft Threat Experts ekspertów na żądanie.](../../media/mte/incidents-action-mte-highlighted.png)
 
     Zostanie otwarty wysuwny ekran.
 
     Nagłówek wskaże, czy masz subskrypcję wersji próbnej, czy pełną Microsoft Threat Experts — Subskrypcję ekspertów na żądanie.
 
-    :::image type="content" source="../../media/mte/mte-trial.png" alt-text="Ekran Microsoft Threat Experts subskrypcji wersji próbnej usługi Microsoft Threat Experts Experts on Demand w portalu Microsoft 365 Defender w wersji próbnej" lightbox="../../media/mte/mte-trial.png":::
+    ![Obraz ekranu Microsoft Threat Experts subskrypcji próbnej Experts on Demand.](../../media/mte/mte-trial.png)
 
     Pole **Temat badania** zostanie już wypełnione linkiem do odpowiedniej strony dla twojego żądania.
 

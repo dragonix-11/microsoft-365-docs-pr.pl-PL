@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: dowiedz się więcej o warunkach i wyjątkach dotyczących zasad dlp
-ms.openlocfilehash: 771674b82e50987397fc1ae754f0b96719a04ae5
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 9b735d139950399fb80e9063e7d9fdd1176c2d2b
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401126"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500062"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Warunki, wyjątki i akcje zasad DLP
 
@@ -122,8 +122,8 @@ Aby skonfigurować lokalizację adresu nadawcy na poziomie reguły DLP, parametr
 |---|---|---|---|
 |Załącznik jest chroniony hasłem|warunek: *DocumentIsPasswordProtected* <br/> wyjątek: *ExceptIfDocumentIsPasswordProtected*|brak|Wiadomości, w których załącznik jest chroniony hasłem (i dlatego nie można ich zeskanować). Wykrywanie haseł działa tylko w Office, plikach .zip plikach i plikach 0,7z.|
 |Rozszerzenie pliku załącznika to|warunek: *ContentExtensionMatchesWords* <br/> wyjątek: *ExceptIfContentExtensionMatchesWords*|Wyrazy|Wiadomości, w których rozszerzenie pliku załącznika jest takie, jak dowolne z określonych wyrazów.|
-|Nie można było zeskanować zawartości dowolnego załącznika wiadomości e-mail|warunek: *DocumentIsUnsupported* <br/>wyjątek: *ExceptIf DocumentIsUnsupported*|n/a|Wiadomości, w których załącznik nie został natywnie rozpoznany przez Exchange Online.|
-|Zawartość każdego załącznika wiadomości e-mail nie ukończono skanowania|warunek: *ProcessingLimitExceeded* <br/> wyjątek: *ExceptIfProcessingLimitExceeded*|n/a|Wiadomości, w przypadku których aparat reguł nie mógł ukończyć skanowania załączników. Możesz użyć tego warunku do utworzenia reguł, które współpracują ze sobą w celu identyfikowania i przetwarzania wiadomości, w przypadku których nie można w pełni zeskanować zawartości.|
+|Nie można było zeskanować zawartości dowolnego załącznika wiadomości e-mail|warunek: *DocumentIsUnsupported* <br/>wyjątek: *ExceptIf DocumentIsUnsupported*|nie dotyczy|Wiadomości, w których załącznik nie został natywnie rozpoznany przez Exchange Online.|
+|Zawartość każdego załącznika wiadomości e-mail nie ukończono skanowania|warunek: *ProcessingLimitExceeded* <br/> wyjątek: *ExceptIfProcessingLimitExceeded*|nie dotyczy|Wiadomości, w przypadku których aparat reguł nie mógł ukończyć skanowania załączników. Możesz użyć tego warunku do utworzenia reguł, które współpracują ze sobą w celu identyfikowania i przetwarzania wiadomości, w przypadku których nie można w pełni zeskanować zawartości.|
 |Nazwa dokumentu zawiera wyrazy|warunek: *DocumentNameMatchesWords* <br/> wyjątek: *ExceptIfDocumentNameMatchesWords*|Wyrazy|Wiadomości, w których nazwa pliku załącznika odpowiada dowolnej z określonych wyrazów.|
 |Nazwa dokumentu pasuje do wzorców|warunek: *DocumentNameMatchesPatterns* <br/> wyjątek: *ExceptIfDocumentNameMatchesPatterns*|Desenie|Wiadomości, w których nazwa pliku załącznika zawiera wzorce tekstu zgodne z określonymi wyrażeniami regularnymi.|
 |Właściwość dokumentu to|warunek: *ContentPropertyContainsWords* <br/> wyjątek: *ExceptIfContentPropertyContainsWords*|Wyrazy|Wiadomości lub dokumenty, w których rozszerzenie pliku załącznika jest takie, jak dowolne z określonych wyrazów.|
@@ -153,8 +153,8 @@ Aby skonfigurować lokalizację adresu nadawcy na poziomie reguły DLP, parametr
 |---|---|---|---|
 |Ważność|warunek: *WithImportance* <br/> wyjątek: *ExceptIfWithImportance*|Ważność|Wiadomości oznaczone określonym poziomem ważności.|
 |Zestaw znaków zawartości zawiera wyrazy|warunek: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|Zestawy znaków|Wiadomości, które mają dowolną z nazw określonego zestawu znaków.|
-|Zastępuje nadawcę|warunek: *HasSenderOverride* <br/> wyjątek: *ExceptIfHasSenderOverride*|n/a|Wiadomości, w przypadku których nadawca postanowił zastąpić zasady ochrony przed utratą danych (DLP). Aby uzyskać więcej informacji o zasadach ochrony przed utratą danych, zobacz [Informacje na temat ochrony przed utratą danych](./dlp-learn-about-dlp.md).|
-|Dopasowania typu wiadomości|warunek: *MessageTypeMatches* <br/> wyjątek: *ExceptIfMessageTypeMatches*|MessageType (Typ komunikatu)|Wiadomości określonego typu.|
+|Zastępuje nadawcę|warunek: *HasSenderOverride* <br/> wyjątek: *ExceptIfHasSenderOverride*|nie dotyczy|Wiadomości, w przypadku których nadawca postanowił zastąpić zasady ochrony przed utratą danych (DLP). Aby uzyskać więcej informacji o zasadach ochrony przed utratą danych, zobacz [Informacje na temat ochrony przed utratą danych](./dlp-learn-about-dlp.md).|
+|Dopasowania typu wiadomości|warunek: *MessageTypeMatches* <br/> wyjątek: *ExceptIfMessageTypeMatches*|MessageType (Typ komunikatu)|Wiadomości określonego typu. **Uwaga**: Dostępne typy wiadomości to: Odpowiedź automatyczna, Automatyczne przesyłanie dalej, Zaszyfrowane (S/MIME), Kalendarz, Zarządzanie uprawnieniami (zarządzanie prawami), Poczta głosowa, Podpisane, Potwierdzenie przeczytania i Żądanie zatwierdzenia. |
 |Rozmiar wiadomości jest większy lub równy|warunek: *MessageSizeOver* <br/> wyjątek: *ExceptIfMessageSizeOver*|`Size`|Wiadomości, w których całkowity rozmiar (wiadomość plus załączniki) jest większy lub równy określonej wartości. **Uwaga**: Limity rozmiaru wiadomości w skrzynkach pocztowych są sprawdzane przed regułami przepływu poczty. Wiadomość, która jest za duża w przypadku skrzynki pocztowej, zostanie odrzucona, zanim reguła z tym warunkiem będzie mogła działać na tej wiadomości.|
 |
 
@@ -177,8 +177,8 @@ W poniższej tabeli opisano akcje dostępne w ramach zasad DLP.
 |Dodawanie menedżera nadawcy jako adresata|AddRecipients|Pierwsza właściwość: *AddedManagerAction*</br>Druga właściwość: *Pole*|Dodaje menedżera nadawcy do wiadomości jako określony typ adresata (Do, DW, UDW) lub przekierowuje wiadomość do menedżera nadawcy bez powiadomienia nadawcy lub adresata. Ta akcja działa tylko wtedy, gdy atrybut Menedżera nadawcy jest zdefiniowany w usłudze Active Directory. Ten parametr ma składnię: @{AddManagerAsRecipientType = "<To \|DW \|UDW>"}|
 Przedimek tematu|PrependSubject|Ciąg|Dodaje określony tekst na początku pola Temat wiadomości. Rozważ użycie spacji lub dwukropka (:) jako ostatni znak określonego tekstu, aby odróżnić go od pierwotnego tekstu tematu.</br>Aby zapobiec dodaniu tego samego ciągu do wiadomości, które już zawierają tekst w temacie (na przykład odpowiedzi), dodaj od reguły wyjątek "Temat zawiera wyrazy" (ExceptIfSubjectContainsWords).|
 |Stosowanie zastrzeżenia w formacie HTML|ApplyHtmlDisclaimer|Pierwsza właściwość: *Tekst*</br>Druga właściwość: *Lokalizacja*</br>Trzecia właściwość: *Akcja rezerwowa*|Stosuje określone zastrzeżenie języka HTML do wymaganej lokalizacji wiadomości.</br>Ten parametr ma składnię: @{ Text = " " ; Location = <Dołącz \|>; FallbackAction = <Wrap \|Ignore \|Reject> }|
-|Usuwanie Szyfrowanie wiadomości usługi Office 365 i ochrony praw|RemoveRMSTemplate|n/a|Usuwa Office 365 szyfrowania zastosowanego do wiadomości e-mail|
-|Dostarczanie wiadomości do hostowanej kwarantanny |_Kwarantanna_|n/a| Ta akcja jest obecnie dostępna w **publicznej wersji zapoznawczej**. W tej fazie w wiadomościach e-mail poddanych kwarantannie przez zasady DLP będzie pokazywany typ zasad ExchangeTransportRule.</br> Wiadomość jest dostarczana do kwarantanny w u usługi EOP. Aby uzyskać więcej informacji, zobacz [Poddaj wiadomościom w kwarantannie usługi EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
+|Usuwanie Office 365 wiadomości i ochrony praw|RemoveRMSTemplate|nie dotyczy|Usuwa Office 365 szyfrowania zastosowanego do wiadomości e-mail|
+|Dostarczanie wiadomości do hostowanej kwarantanny |_Kwarantanna_|nie dotyczy| Ta akcja jest obecnie dostępna w **publicznej wersji zapoznawczej**. W tej fazie w wiadomościach e-mail poddanych kwarantannie przez zasady DLP będzie pokazywany typ zasad ExchangeTransportRule.</br> Wiadomość jest dostarczana do kwarantanny w u usługi EOP. Aby uzyskać więcej informacji, zobacz [Poddaj wiadomościom w kwarantannie usługi EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
 |
 
 <!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: </br>- **Replace** all matches in the subject with the replacement text </br>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. </br>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->

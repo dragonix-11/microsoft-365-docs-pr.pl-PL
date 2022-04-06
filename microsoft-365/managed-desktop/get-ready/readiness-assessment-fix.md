@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: badf2d65f2b29e265a1312cb1d5f4802a44f3cb3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8457331f0895c66d1aa0ad54cfc43cd001a9bd9e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011403"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681089"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Rozwiązywanie problemów znalezionych przez narzędzie do oceny gotowości
 
@@ -68,7 +68,7 @@ Zasady dostępu warunkowego nie mogą uniemożliwić Microsoft Managed Desktop a
 
 | Result (Wynik)  | Znaczenie |
 | ----- | ----- |
-| Jeszcze nie gotowe | Masz co najmniej jedną zasady dostępu warunkowego, która jest przeznaczony dla wszystkich użytkowników. <br><br> Podczas rejestracji wykluczymy wszystkie Microsoft Managed Desktop z odpowiednich zasad dostępu warunkowego i zastosujemy nowe zasady dostępu warunkowego, aby ograniczyć dostęp do tych kont. <br><br> Po zarejestrowaniu możesz przejrzeć Microsoft Managed Desktop dostępu warunkowego w programie Microsoft Endpoint Manager. Aby uzyskać więcej informacji o tych kontach usług, zobacz [Standardowe procedury operacyjne](../service-description/operations-and-monitoring.md#standard-operating-procedures). |
+| Jeszcze nie gotowe | Masz co najmniej jedną zasady dostępu warunkowego, która jest przeznaczony dla wszystkich użytkowników. <br><br> Podczas rejestracji spróbujemy wykluczyć wszystkie konta Microsoft Managed Desktop z odpowiednich zasad dostępu warunkowego i zastosować nowe zasady dostępu warunkowego, aby ograniczyć dostęp do tych kont. Jednak jeśli się nie powiedzie, może to spowodować błędy podczas rejestracji. Aby uzyskać najlepsze rozwiązanie, utwórz zadanie docelowe konkretnej grupy usługi Azure AD, która nie zawiera Microsoft Managed Desktop kont usługi. <br><br> Po zarejestrowaniu możesz przejrzeć Microsoft Managed Desktop dostępu warunkowego w programie Microsoft Endpoint Manager. Aby uzyskać więcej informacji o tych kontach usług, zobacz [Standardowe procedury operacyjne](../service-description/operations-and-monitoring.md#standard-operating-procedures). |
 | Porada | Masz zasady dostępu warunkowego, które mogą uniemożliwić Microsoft Managed Desktop zarządzanie Microsoft Managed Desktop siecią. <br><br> Podczas rejestracji wykluczymy wszystkie Microsoft Managed Desktop z odpowiednich zasad dostępu warunkowego i zastosujemy nowe zasady dostępu warunkowego, aby ograniczyć dostęp do tych kont. <br><br> Aby uzyskać więcej informacji na temat tych kont usług, zobacz [Standardowe procedury operacyjne](../service-description/operations-and-monitoring.md#standard-operating-procedures). |
 | Error | Rola administratora usługi Intune nie ma wystarczających uprawnień do tego sprawdzenia. Aby można było uruchomić to sprawdzanie, musisz mieć przypisane następujące role usługi Azure AD: <ul><li>Czytnik zabezpieczeń</li><li>Administrator zabezpieczeń</li><li>Administrator dostępu warunkowego</li><li>Czytnik globalny</li><li>Administrator urządzeń</li></ul>
 ### <a name="device-compliance-policies"></a>Zasady zgodności urządzeń

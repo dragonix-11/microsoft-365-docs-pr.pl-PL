@@ -15,14 +15,16 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.collection: m365initiative-m365-defender
+ms.collection:
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b94e7f959c44e44e5b61dfd0536b3c1077d0edc5
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 7b9443cac6543ac14f6d94bd2809b5263be0a860
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014685"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681837"
 ---
 # <a name="protect-your-network"></a>Ochrona sieci
 
@@ -54,7 +56,7 @@ Ochrona sieci wymaga Windows 10 Pro lub Enterprise i Program antywirusowy Micros
 
 ****
 
-|Windows wersji|Program antywirusowy Microsoft Defender|
+|Wersje systemu Windows|Program antywirusowy Microsoft Defender|
 |---|---|
 |Windows 10 1709 lub nowsza <p> Windows 11 <p> Windows Server 1803 lub nowszy|[Program antywirusowy Microsoft Defender w czasie rzeczywistym i](configure-real-time-protection-microsoft-defender-antivirus.md) [musi być włączona ochrona w](enable-cloud-protection-microsoft-defender-antivirus.md) chmurze|
 |

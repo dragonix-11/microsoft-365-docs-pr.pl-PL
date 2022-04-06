@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: c8bf111acd41ede8a493672234de4e4a33ccd105
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 7e8fbeab380ceac3531e2a288fb5e8fb5f43e166
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775857"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682378"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Konfiguracje zerowym zaufaniem tożsamości i dostępu do urządzeń
 
@@ -39,7 +39,7 @@ Aby zająć się tym nowym światem przetwarzania danych, firma Microsoft zdecyd
 
 - Użyj dostępu z najmniejszymi uprawnieniami
 
-  Ogranicz dostęp użytkowników dzięki technologii Just-In-Time i Just-Enough-Access (JIT/JEA), adaptacyjnym zasadom opartym na ryzyko i ochronie danych.
+  Ogranicz dostęp użytkowników dzięki technologii Just-In-Time i Just-Enough-Access (JIT/JEA), adaptacyjnym zasadom opartym na ryzyko i ochronie danych.  
 
 - Założono naruszenie
 
@@ -154,7 +154,7 @@ Usługa Azure AD zapewnia pełny zestaw możliwości zarządzania tożsamościam
 |[Dostęp warunkowy](/azure/active-directory/conditional-access/overview)|Usługa Azure AD ocenia warunki logowania użytkownika i ustala dozwolony dostęp za pomocą zasad dostępu warunkowego. W tych wskazówkach popisano na przykład, jak utworzyć zasady dostępu warunkowego w celu wymagania zgodności urządzenia w celu uzyskania dostępu do danych poufnych. Znacznie zmniejsza to ryzyko, że haker na własnych urządzeniach i skradzione poświadczenia będą mieć dostęp do Twoich danych poufnych. Chroni także poufne dane na urządzeniach, ponieważ muszą one spełniać określone wymagania dotyczące kondycji i zabezpieczeń.|Microsoft 365 E3 lub E5|
 |[Grupy usługi Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|Zasady dostępu warunkowego, zarządzanie urządzeniami za pomocą usługi Intune, a nawet uprawnienia do plików i witryn w organizacji opierają się na przypisaniu ich do kont użytkowników lub grup usługi Azure AD. Zalecamy utworzenie grup usługi Azure AD, które odpowiadają wprowadzanych poziomach ochrony. Na przykład pracownicy kierownictwa są prawdopodobnie wyższymi wartościami dla hakerów. Dlatego warto dodać konta użytkowników tych pracowników do grupy usługi Azure AD i przypisać tę grupę do zasad dostępu warunkowego i innych zasad, które wymuszają wyższy poziom ochrony dostępu.|Microsoft 365 E3 lub E5|
 |[Rejestracja urządzenia](/azure/active-directory/devices/overview)|Zarejestrujesz urządzenie w usłudze Azure AD, aby utworzyć dla tego urządzenia tożsamość. Ta tożsamość jest używana do uwierzytelniania urządzenia, gdy użytkownik się w niej znajduje, i do stosowania zasad dostępu warunkowego wymagających komputerów przyłączonych do domeny lub zgodnych. Aby uzyskać te wskazówki, skorzystaj z rejestrowania urządzeń w celu automatycznego zarejestrowania komputerów Windows przyłączone do domeny. Rejestracja urządzeń jest wymaganie wstępne do zarządzania urządzeniami za pomocą usługi Intune.|Microsoft 365 E3 lub E5|
-|[Ochrona tożsamości w usłudze Azure AD](/azure/active-directory/identity-protection/overview)|Pozwala wykrywać potencjalne luki w zabezpieczeniach tożsamości organizacji i konfigurować automatyczne zasady rozwiązywania problemów do niskiego, średniego i wysokiego ryzyka związanego z logowaniem oraz ryzyka użytkownika. Te wskazówki są oparte na tej ocenie ryzyka w celu zastosowania zasad dostępu warunkowego w przypadku uwierzytelniania wieloskładnikowego. Wskazówki te obejmują również zasady dostępu warunkowego, które wymagają od użytkowników zmiany hasła w przypadku wykrycia dla konta aktywności o wysokim poziomie ryzyka.|Microsoft 365 E5 Microsoft 365 E3 E5 Security, EMS E5 lub licencji Azure AD — wersja Premium P2 E5|
+|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Pozwala wykrywać potencjalne luki w zabezpieczeniach tożsamości organizacji i konfigurować automatyczne zasady rozwiązywania problemów do niskiego, średniego i wysokiego ryzyka związanego z logowaniem oraz ryzyka użytkownika. Te wskazówki są oparte na tej ocenie ryzyka w celu zastosowania zasad dostępu warunkowego w przypadku uwierzytelniania wieloskładnikowego. Wskazówki te obejmują również zasady dostępu warunkowego, które wymagają od użytkowników zmiany hasła w przypadku wykrycia dla konta aktywności o wysokim poziomie ryzyka.|Microsoft 365 E5 Microsoft 365 E3 E5 Security, EMS E5 lub licencji Azure AD — wersja Premium P2 E5|
 |[Samodzielne resetowanie hasła (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Zezwalaj użytkownikom na bezpieczne i bez interwencji działu pomocy technicznej, zapewniając weryfikację wielu metod uwierzytelniania, które administrator może kontrolować.|Microsoft 365 E3 lub E5|
 |[Ochrona hasłem w usłudze Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)|Wykrywaj i blokuj znane słabe hasła i ich warianty oraz dodatkowe słaby terminy specyficzne dla Twojej organizacji. Domyślne globalne listy zablokowanych haseł są automatycznie stosowane do wszystkich użytkowników w dzierżawie usługi Azure AD. Możesz zdefiniować dodatkowe wpisy na niestandardowej liście zablokowanych haseł. Gdy użytkownicy zmieniają lub resetują swoje hasła, te listy zablokowanych haseł są sprawdzane, aby wymusić stosowanie silnych haseł.|Microsoft 365 E3 lub E5|
 

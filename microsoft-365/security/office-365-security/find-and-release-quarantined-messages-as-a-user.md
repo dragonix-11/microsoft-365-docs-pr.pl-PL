@@ -20,12 +20,12 @@ ms.custom:
 description: Użytkownicy mogą dowiedzieć się, jak wyświetlać wiadomości poddane kwarantannie i zarządzać nimi w Exchange Online Protection (EOP), które powinny zostać do nich dostarczone.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1cfdd441cff8481ef1ec7ea5ef3cabc54f062694
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021203"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682400"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Znajdowanie i wypuszczenie wiadomości poddanych kwarantannie jako użytkownik w u kontie EOP
 
@@ -39,10 +39,6 @@ ms.locfileid: "63021203"
 W Microsoft 365 z skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacjach usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online kwarantanna zawiera potencjalnie niebezpieczne lub niechciane wiadomości. Aby uzyskać więcej informacji, zobacz [Kwarantanna w uchcie eOP](quarantine-email-messages.md).
 
 Jako zwykły użytkownik (nie administrator) domyślne funkcje dostępne  dla Ciebie jako adresata poddaną kwarantannie wiadomości są opisane w poniższej tabeli:
-
-<br>
-
-****
 
 |Powód kwarantanny|Widok|Wydanie|Usuń|
 |---|:---:|:---:|:---:|
@@ -64,7 +60,6 @@ Jako zwykły użytkownik (nie administrator) domyślne funkcje dostępne  dla Ci
 |Sejf załączników do SharePoint, OneDrive i Microsoft Teams, które poddasz kwarantannie złośliwe pliki jako złośliwe oprogramowanie.||||
 |**Reguły przepływu poczty (reguły transportu)**||||
 |Reguły przepływu poczty e-mail służące do kwarantanny wiadomości e-mail.||||
-|
 
 _Zasady kwarantanny_ określają, co użytkownicy mogą robić w kwarantannie wiadomości na podstawie przyczyny kwarantanny wiadomości w [obsługiwanych funkcjach](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Domyślne zasady kwarantanny wymuszają funkcje historyczne zgodnie z opisem w poprzedniej tabeli. Administratorzy mogą tworzyć i stosować niestandardowe zasady kwarantanny definiujące mniej restrykcyjne lub bardziej restrykcyjne funkcje dla użytkowników korzystających z obsługiwanych funkcji. Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 

@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Po utworzeniu etykiety wrażliwości możesz automatycznie przypisać etykietę do plików i wiadomości e-mail lub poprosić użytkowników o wybranie etykiety, która jest zalecana.
-ms.openlocfilehash: 166905abb1dc08bcf9fe34e80c3ff3f44813501b
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 80f3b5c69e482301dd8c4e926959087c7149a529
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449810"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499666"
 ---
-# <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiet wrażliwości do zawartości
+# <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiety poufności do zawartości
 
 >*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -45,7 +45,7 @@ Istnieją dwie różne metody automatycznego stosowania etykiet wrażliwości do
 
 - **Etykiety po** stronie klienta, gdy użytkownicy edytują dokumenty lub tworzą wiadomości e-mail (także odpowiadaj na nie lub przesyłaj je dalej): użyj etykiety skonfigurowanej do automatycznego oznaczania plików i wiadomości e-mail (obejmuje Excel, PowerPoint i Outlook).
 
-    Ta metoda obsługuje polecanie etykiet użytkownikom, a także automatyczne stosowanie etykiety. Jednak w obu przypadkach użytkownik decyduje, czy zaakceptować, czy odrzucić tę etykietę w celu zapewnienia prawidłowego oznaczania zawartości. To etykiety po stronie klienta mają minimalne opóźnienia w przypadku dokumentów, ponieważ tę etykietę można zastosować nawet przed zapisaniem dokumentu. Jednak nie wszystkie aplikacje klienckie obsługują automatyczne oznaczanie etykiet. Ta funkcja jest obsługiwana przez wbudowane etykiety w niektórych wersjach programu [Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps), a także przez ujednoliconego klienta etykiet usługi Azure Information Protection.
+    Ta metoda obsługuje polecanie etykiet użytkownikom, a także automatyczne stosowanie etykiety. Jednak w obu przypadkach użytkownik decyduje, czy zaakceptować, czy odrzucić tę etykietę w celu zapewnienia prawidłowego oznaczania zawartości. To etykiety po stronie klienta mają minimalne opóźnienia w przypadku dokumentów, ponieważ tę etykietę można zastosować nawet przed zapisaniem dokumentu. Jednak nie wszystkie aplikacje klienckie obsługują automatyczne oznaczanie etykiet. Ta funkcja jest obsługiwana przez wbudowane etykiety w niektórych wersjach programu [Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps), a także w kliencie usługi Azure Information Protection etykiet ujednoliconej.
 
     Aby uzyskać instrukcje dotyczące konfiguracji, [zobacz Jak skonfigurować automatyczne oznaczanie etykiet dla Office na](#how-to-configure-auto-labeling-for-office-apps) tej stronie.
 
@@ -70,8 +70,8 @@ Istnieją dwie różne metody automatycznego stosowania etykiet wrażliwości do
     Specyficzne dla automatycznego oznaczania etykiet dla Exchange:
     
     - W odróżnieniu od ręcznego oznaczania etykiet lub automatycznego oznaczania etykiet za pomocą aplikacji pakietu Office załączniki PDF oraz załączniki Office są również skanowane w celu zachowania określonych warunków określonych w zasadach automatycznego oznaczania etykiet. W przypadku dopasowania wiadomość e-mail jest oznaczona etykietą, ale nie załącznikiem.
-        - W przypadku plików PDF, jeśli etykieta stosuje szyfrowanie, te pliki są szyfrowane przy użyciu narzędzia [Szyfrowanie wiadomości usługi Office 365 (OME),](ome.md) gdy dla dzierżawy włączono [załączniki PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - Dla tych Office obsługiwane są pliki programu Word, PowerPoint i Excel. Jeśli etykieta stosuje szyfrowanie, są one szyfrowane przy użyciu Szyfrowanie wiadomości usługi Office 365 [(OME).](ome.md)
+        - W przypadku plików PDF, jeśli etykieta stosuje szyfrowanie, te pliki są szyfrowane przy użyciu narzędzia [Office 365 Message Encryption (OME),](ome.md) gdy dla dzierżawy włączono [załączniki PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - Dla tych Office obsługiwane są pliki programu Word, PowerPoint i Excel. Jeśli etykieta stosuje szyfrowanie, są one szyfrowane przy użyciu Office 365 [OME (Message Encryption).](ome.md)
     - Jeśli masz reguły przepływu poczty e-mail lub zasady ochrony przed utratą danych (DLP), które stosują szyfrowanie IRM: jeśli zawartość jest identyfikowana przez te reguły i zasady automatycznego oznaczania etykiet, etykieta jest stosowana. Exchange Jeśli ta etykieta ma zastosowanie szyfrowanie, ustawienia usługi IRM na Exchange przepływu poczty e-mail lub zasady DLP są ignorowane. Jeśli jednak etykieta nie zastosuje szyfrowania, oprócz etykiety zostaną zastosowane ustawienia usługi IRM z reguł przepływu poczty e-mail lub zasad DLP.
     - Wiadomość e-mail z szyfrowaniem IRM bez etykiet zostanie zastąpiona etykietą z dowolnymi ustawieniami szyfrowania, jeśli zostanie dopasowana za pomocą automatycznego oznaczania etykiet.
     - Przychodząca wiadomość e-mail jest oznaczana w przypadku dopasowania do warunków automatycznego oznaczania etykiet. Jeśli ta etykieta jest skonfigurowana do [szyfrowania](encryption-sensitivity-labels.md), to szyfrowanie jest zawsze stosowane, gdy nadawca pochodzi z Twojej organizacji. Domyślnie to szyfrowanie nie jest stosowane, gdy nadawca znajduje się poza organizacją, ale można je zastosować, konfigurując  dodatkowe ustawienia poczty e-mail i określając właściciela zarządzania prawami.
@@ -140,7 +140,7 @@ Konfigurowalne ustawienie zasad automatycznego oznaczania wiadomości e-mail zna
 
 Aby uzyskać wbudowane etykiety w Office, sprawdź minimalne wersje wymagane do automatycznego oznaczania etykiet w Office aplikacjach.[](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
 
-Ujednolicony klient etykiet usługi Azure Information Protection obsługuje automatyczne oznaczanie etykiet tylko w przypadku wbudowanych i niestandardowych typów informacji poufnych i nie obsługuje klasyfikatorów przeszkolnych ani typów informacji poufnych, które używają funkcji Dokładne dopasowanie danych (EDM) lub nazwanych jednostek.
+Klient ujednoliconej etykiet usługi Azure Information Protection obsługuje automatyczne oznaczanie etykiet tylko dla wbudowanych i niestandardowych typów informacji poufnych i nie obsługuje klasyfikatorów przeszkolnych ani typów informacji poufnych, które używają funkcji Dokładne dopasowanie danych (EDM) lub nazwanych obiektów.
 
 Ustawienia automatycznego oznaczania etykiet dla Office są dostępne po utworzeniu lub [edytowaniu etykiety wrażliwości](create-sensitivity-labels.md). Upewnij się **& że** w zakresie etykiety wybrano opcję Pliki i wiadomości e-mail:
 
@@ -199,13 +199,13 @@ Jeśli wolisz, możesz polecić użytkownikom stosowanie etykiety. Po użyciu te
 
 ![Opcja polecania użytkownikom etykiety wrażliwości.](../media/Sensitivity-labels-Recommended-label-option.png)
 
-Oto przykład monitu z ujednoliconego klienta etykiet usługi Azure Information Protection, gdy konfigurujesz warunek w celu zastosowania etykiety jako zalecanej akcji, z etykietą zasad niestandardowych. Możesz wybrać tekst, który ma być wyświetlany w poradzie dotyczącej zasad.
+Oto przykład monitu z klienta ujednoliconej etykiet usługi Azure Information Protection podczas konfigurowania warunku do stosowania etykiety jako zalecanej akcji z etykietą niestandardową poradą o zasadach. Możesz wybrać tekst, który ma być wyświetlany w poradzie dotyczącej zasad.
 
-![Monituj o zastosowanie zalecanej etykiety.](../media/Sensitivity-label-Prompt-for-required-label.png)
+![Monituj o zastosowanie zalecanej etykiety.](../media/Sensitivity-label-prompt-for-required-label.png)
 
 ### <a name="when-automatic-or-recommended-labels-are-applied"></a>W przypadku stosowania etykiet automatycznych lub zalecanych
 
-Implementacja automatycznego i zalecanego oznaczania etykiet w aplikacjach Office zależy od tego, czy używasz etykiet wbudowanych w program Office, czy ujednoliconego klienta etykiet usługi Azure Information Protection. Jednak w obu przypadkach:
+Implementacja automatycznego i zalecanego oznaczania etykiet w aplikacjach Office zależy od tego, czy używasz etykiet wbudowanych w usługę Office, czy klienta ujednoliconego Information Protection azure Information Protection etykiet. Jednak w obu przypadkach:
 
 - W dokumentach i wiadomościach e-mail, które wcześniej były ręcznie lub automatycznie oznaczane z większą wrażliwością, nie można używać etykiet automatycznych. Pamiętaj, że do dokumentu lub wiadomości e-mail możesz zastosować tylko jedną etykietę wrażliwości (oprócz jednej etykiety przechowywania).
 
@@ -219,7 +219,7 @@ Specyficzne dla wbudowanych etykiet:
 
 - Aby uzyskać szczegółowe informacje na temat stosowania tych etykiet w aplikacjach pakietu Office, przykładowych zrzutów ekranu i wykrywania poufnych informacji, zobacz Automatyczne stosowanie etykiet wrażliwości do plików i wiadomości e-mail w aplikacji [Office.](https://support.microsoft.com/office/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
 
-Specyficzne dla klienta ujednoliconego etykiet usługi Azure Information Protection:
+Specyficzne dla klienta usługi Azure Information Protection etykiet ujednoliconej:
 
 - Automatyczne i zalecane etykiety dotyczą programu Word, Excel i PowerPoint podczas zapisywania dokumentu oraz do Outlook podczas wysyłania wiadomości e-mail.
 
@@ -235,7 +235,7 @@ Przed skonfigurowaniem zasad automatycznego oznaczania upewnij się, że wymagan
 
 - Tryb symulowania:
   - Inspekcja dla Microsoft 365 musi być włączona. Jeśli musisz włączyć inspekcję lub nie masz pewności, czy inspekcja jest już własna, zobacz Włączanie lub wyłączanie przeszukiwania dziennika [inspekcji](turn-audit-log-search-on-or-off.md).
-  - Aby wyświetlić zawartość plików lub wiadomości e-mail w widoku źródłowym, musisz  mieć rolę Podgląd zawartości klasyfikacji danych, która jest zawarta w grupie ról podglądu zawartości Eksploratora zawartości, lub  grupy ról Ochrona informacji i ochrona informacji (obecnie w wersji Preview).  Bez wymaganej roli okienko podglądu nie jest widać po zaznaczeniu elementu na karcie **Elementy dopasowane** . Administratorzy globalni domyślnie nie mają tej roli.
+  - Aby wyświetlić zawartość pliku lub wiadomości e-mail w widoku źródłowym, musisz  mieć rolę Podgląd zawartości klasyfikacji danych, która jest dostępna  w grupie ról Podgląd zawartości Eksploratora zawartości, lub grupy ról Podgląd zawartości programu **Information Protection** i **Information Protection** (obecnie dostępne w wersji zapoznawczej). Bez wymaganej roli okienko podglądu nie jest widać po zaznaczeniu elementu na karcie **Elementy dopasowane** . Administratorzy globalni domyślnie nie mają tej roli.
 
 - Aby automatycznie oznaczać pliki w SharePoint i OneDrive:
   - Włączono [etykiety wrażliwości dla Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -395,7 +395,7 @@ Po pierwszym włączeniu zasad początkowo jest widać wartość 0, aby oznacza�
 Wyniki zasad auto etykiet można również wyświetlić przy użyciu [Eksploratora](data-classification-content-explorer.md) zawartości, gdy masz odpowiednie [uprawnienia](data-classification-content-explorer.md#permissions):
 
 - **Grupa ról Podgląd listy Eksploratora** zawartości umożliwia wyświetlanie etykiety pliku, ale nie zawartości pliku.
-- **Grupa ról podglądu zawartości** w Eksploratorze  zawartości oraz grupy  ról Pochłonia informacji i Ochrona informacji (obecnie dostępne w wersji zapoznawczej) umożliwiają wyświetlanie zawartości pliku.
+- **Grupy ról podglądu zawartości** w Eksploratorze zawartości **oraz** grupy Information Protection i **Information Protection** Grupy ról (obecnie dostępne w wersji zapoznawczej) eksploratora zawartości umożliwiają wyświetlanie zawartości pliku.
 
 > [!TIP]
 > Za pomocą Eksploratora zawartości można również identyfikować lokalizacje, w których znajdują się dokumenty z informacjami poufnymi, ale nie mają etykiety. Korzystając z tych informacji, rozważ dodanie tych lokalizacji do zasad auto etykiet i dołącz jako reguły określone typy informacji poufnych.
@@ -447,7 +447,7 @@ Mimo że automatyczne oznaczanie etykiet jest jednym z najbardziej efektywnych s
 
 - W SharePoint Syntex można zastosować etykietę wrażliwości do modelu zrozumienia [dokumentu, dzięki](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) czemu dokumenty zidentyfikowane w bibliotece dokumentów SharePoint są automatycznie oznaczane.
 
-- W przypadku korzystania z ujednoliconego klienta etykiet usługi [Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2):
+- W przypadku korzystania z [klienta usługi Azure Information Protection etykiet ujednoliconej](/azure/information-protection/rms-client/aip-clientv2):
 
   - W przypadku plików w lokalnych magazynach danych, takich jak udziały sieciowe i biblioteki programu SharePoint Server: Skaner umożliwia [](/azure/information-protection/deploy-aip-scanner) odnajdowanie poufnych informacji w tych plikach i odpowiednie oznaczanie ich etykietami. Jeśli planujesz migrację lub przekazanie tych plików do usługi SharePoint w programie Microsoft 365, użyj skanera do oznaczania plików etykietami przed przeniesieniem ich do chmury.
 

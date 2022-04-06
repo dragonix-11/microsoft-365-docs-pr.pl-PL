@@ -1,7 +1,7 @@
 ---
 title: Wymagania wstępne wdrażania reguł asr
 description: Ten temat zawiera omówienie i wstępnie wymagane wskazówki dotyczące wdrażania reguł ograniczania powierzchni ataków (ASR).
-keywords: Wdrażanie reguł ograniczania powierzchni ataków, wdrażanie asr, włączanie reguł asr, konfigurowanie funkcji asr, systemu ochrony przed nieuprawnianiem hostów, reguł ochrony, reguł ochrony przed wykorzystywaniem luk, ochrony przed wykorzystywaniem, regułami wykorzystania luk, regułami zapobiegania powstawaniu dzieci, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł asr
+keywords: Wdrażanie reguł ograniczania powierzchni ataków, wdrażanie ASR, włączanie reguł asr, konfigurowanie funkcji asr, systemu ochrony przed nieuprawnianiem hosta, reguł ochrony, reguł ochrony przed wykorzystywaniem luk, ochrony przed wykorzystywaniem, regułami wykorzystania luk, regułami zapobiegania powstawaniu przed wirusami, program Microsoft Defender for Endpoint, konfigurowanie reguł asr
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,18 +20,18 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 4703867449877a35d6621b76072b9420a0cdbdec
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: 37eb6edb32c78df7ae23fe7cb52b249f81ca18b3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520556"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682179"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>Wymagania wstępne wdrażania reguł asr
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Powierzchnie ataków to wszystkie miejsca, w których Twoja organizacja jest narażona na cyberataki i ataki. Powierzchnie ataków organizacji obejmują wszystkie miejsca, w których atakujący mogą naruszonć urządzenia lub sieci organizacji. Zmniejszenie powierzchni ataków oznacza ochronę urządzeń i sieci organizacji, co pozostawia atakującym mniej sposobów ataków. Skonfigurowanie reguł zmniejszania powierzchni ataków (ASR, Attack Surface Reduction) — jednej z wielu funkcji zabezpieczeń, które można Ochrona punktu końcowego w usłudze Microsoft Defender — może pomóc.
+Powierzchnie ataków to wszystkie miejsca, w których Twoja organizacja jest narażona na cyberataki i ataki. Powierzchnie ataków organizacji obejmują wszystkie miejsca, w których atakujący mogą naruszonć urządzenia lub sieci organizacji. Zmniejszenie powierzchni ataków oznacza ochronę urządzeń i sieci organizacji, co pozostawia atakującym mniej sposobów ataków. Skonfigurowanie reguł zmniejszania powierzchni ataków (ASR, Attack Surface Reduction) — jednej z wielu funkcji zabezpieczeń znalezionych w programie Microsoft Defender for Endpoint — może być pomocne.
 
 Reguły ASR mają na celu określone zachowania oprogramowania, takie jak:
 
@@ -46,9 +46,9 @@ Podczas wstępnego przygotowania należy pamiętać o zrozumieniu możliwości s
 >[!IMPORTANT]
 >Ten przewodnik zawiera obrazy i przykłady, które ułatwiają skonfigurowanie reguł asr. te obrazy i przykłady mogą nie odzwierciedlać najlepszych opcji konfiguracji dla Twojego środowiska.
 
-Przed rozpoczęciem zapoznaj się z [](overview-attack-surface-reduction.md)omówieniem zmniejszenia powierzchni ataków i Reguł zmniejszania powierzchni ataków bez zamierzeniu [— część 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420), aby uzyskać informacje o podstawach. Aby zrozumieć obszary zasięgu i potencjalny wpływ, zapoznaj się z bieżącym zestawem reguł asr. zobacz [Informacje dotyczące reguł zmniejszania powierzchni ataków](attack-surface-reduction-rules-reference.md).  Podczas poznania zestawu reguł ASR warto zanotować mapowania identyfikatorów GUID  per-rule. zobacz: [Reguły asr i macierz identyfikatorów GUID](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
+Przed rozpoczęciem zapoznaj się z [](overview-attack-surface-reduction.md)omówieniem zmniejszenia powierzchni ataków i Reguł zmniejszania powierzchni ataków bez zamierzeniu [— część 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420), aby uzyskać informacje o podstawach. Aby zrozumieć obszary zasięgu i potencjalny wpływ, zapoznaj się z bieżącym zestawem reguł asr. zobacz [Informacje dotyczące reguł zmniejszania powierzchni ataków](attack-surface-reduction-rules-reference.md).
 
-Reguły ASR to tylko jedna funkcja funkcji ograniczania powierzchni ataków w Ochrona punktu końcowego w usłudze Microsoft Defender. Ten dokument zawiera bardziej szczegółowe informacje na temat skutecznego wdrażania reguł asr w celu zatrzymania zaawansowanych zagrożeń, takich jak oprogramowanie wymuszające okup obsługiwane przez człowieka i inne zagrożenia.  
+Reguły ASR to tylko jedna funkcja funkcji ograniczania powierzchni ataków w programie Microsoft Defender for Endpoint. Ten dokument zawiera bardziej szczegółowe informacje na temat skutecznego wdrażania reguł asr w celu zatrzymania zaawansowanych zagrożeń, takich jak oprogramowanie wymuszające okup obsługiwane przez człowieka i inne zagrożenia.  
 
 ### <a name="rules-by-category"></a>Reguły według kategorii
 
@@ -73,10 +73,10 @@ Chociaż istnieje wiele metod implementowania reguł asr, ten przewodnik jest op
 
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM)
-- Windows 10 i Windows 11 urządzenia
-- Ochrona punktu końcowego w usłudze Microsoft Defender E5 lub Windows E5
+- Windows 10 i Windows 11 urządzeń
+- Program Microsoft Defender dla licencji endpoint E5 Windows E5
 
-Aby w pełni wykorzystać reguły asr i raportowanie, zalecamy używanie licencji usługi Microsoft 365 Defender E5 lub Windows E5 i A5. Dowiedz się więcej: [Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender](minimum-requirements.md).
+Aby w pełni wykorzystać reguły asr i raportowanie, zalecamy używanie licencji usługi Microsoft 365 Defender E5 lub Windows E5 i A5. Dowiedz się więcej: [Minimalne wymagania dotyczące programu Microsoft Defender dla punktu końcowego](minimum-requirements.md).
 
 >[!Note]
 >Istnieje wiele metod konfigurowania reguł asr. Reguły ASR można skonfigurować przy użyciu: Microsoft Endpoint Manager (MEM), PowerShell, zasady grupy, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
@@ -122,10 +122,10 @@ Niektóre reguły nie działają dobrze, jeśli wyeksłowane, wewnętrznie oprac
 Tak jak w przypadku każdej nowej, szerokiej implementacji, która może mieć potencjalnie wpływ na twoją działalność biznesową, ważne jest, aby w planowaniu i implementacji znaleźć się w metodyce. Ze względu na zaawansowane możliwości reguł ASR w celu zapobiegania złośliwemu oprogramowaniu konieczne jest staranne planowanie i wdrażanie tych reguł, aby zagwarantować, że będą one najlepiej działać w przypadku unikatowych przepływów pracy klienta. Aby pracować w środowisku, należy starannie zaplanować, przetestować, zaimplementować i operacyjnie reguły asr.  
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Fazy wdrażania reguł asr" lightbox="images/asr-rules-deployment-phases.png":::
+> ![Fazy wdrażania reguł asr](images/asr-rules-deployment-phases.png)
 
 >[!Note]
->W przypadku klientów korzystających z systemu HIPS innych niż firma Microsoft i które przejdą do zasad zmniejszania powierzchni ataków firmy Ochrona punktu końcowego w usłudze Microsoft Defender: firma Microsoft zaleca klientom wdrożenie rozwiązania HIPS obok własnego wdrożenia reguł ASR do momentu przejścia z trybu inspekcji do trybu blokowania. Pamiętaj, że aby uzyskać zalecenia dotyczące wykluczeń, musisz się z dostawcą oprogramowania antywirusowego innej firmy.  
+>W przypadku klientów korzystających z systemu HIPS innych niż firma Microsoft i przejścia do zasad zmniejszania powierzchni ataków programu Microsoft Defender for Endpoint: firma Microsoft zaleca klientom uruchomienie rozwiązania HIPS obok wdrożenia reguł ASR do momentu przejścia z trybu inspekcji do trybu blokowania. Pamiętaj, że aby uzyskać zalecenia dotyczące wykluczeń, musisz się z dostawcą oprogramowania antywirusowego innej firmy.  
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tym zbiorze wdrożeń
 
@@ -163,7 +163,7 @@ Tak jak w przypadku każdej nowej, szerokiej implementacji, która może mieć p
 
 ### <a name="microsoft-defender"></a>Microsoft Defender
 
-[Rozwiązywanie problemów z wynikami fałszywie pozytywnymi/negatywnymi w ochronie punktu końcowego w usłudze Microsoft Defender](defender-endpoint-false-positives-negatives.md)
+[Adres dodatnich/ujemnych wyników fałszywie dodatnich w programie Microsoft Defender dla punktu końcowego](defender-endpoint-false-positives-negatives.md)
 
 [Ochrona i Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 
@@ -177,7 +177,7 @@ Tak jak w przypadku każdej nowej, szerokiej implementacji, która może mieć p
 
 [Tworzenie planu wdrażania dla Windows](/windows/deployment/update/create-deployment-plan)
 
-[Używanie kontroli dostępu opartej na rolach (RBAC, role based access control) i tagów zakresów dla rozpowszechniania it w Intune](/mem/intune/fundamentals/scope-tags)
+[Używanie kontroli dostępu opartej na rolach (RBAC, role based access control) i tagów zakresów dla rozpowszechniania it w usłudze Intune](/mem/intune/fundamentals/scope-tags)
 
 [Przypisywanie profilów urządzeń w Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 
@@ -185,7 +185,7 @@ Tak jak w przypadku każdej nowej, szerokiej implementacji, która może mieć p
 
 [Microsoft Endpoint Manager administracyjne](https://endpoint.microsoft.com/#home)
 
-[Zmniejszanie obszaru podatnego na ataki](https://security.microsoft.com/asr?viewid=detections)
+[Zmniejszenie powierzchni ataków](https://security.microsoft.com/asr?viewid=detections)
 
 [Konfiguracje reguł asr](https://security.microsoft.com/asr?viewid=configuration)
 

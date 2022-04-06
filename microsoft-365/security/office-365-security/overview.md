@@ -16,12 +16,12 @@ ms.collection:
 description: Zabezpieczenia w Office 365, od usługi EOP do programu Defender Office 365 planów 1 i 2, konfiguracji standardowej i ścisłej konfiguracji zabezpieczeń i nie tylko. Dowiedz się, co masz i jak zabezpieczyć swoje właściwości.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20bb1dcf9c34f0f7507d8fec7c9025de03461533
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 31eaa1c2ae44799c15a782d121ad2068eaa40c25
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317027"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681111"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Omówienie zabezpieczeń Office 365 Microsoft Defender
 
@@ -52,7 +52,6 @@ Być może wiesz, że te trzy składniki zostały omówione w ten sposób:
 |EOP|Microsoft Defender dla Office 365 P1|Microsoft Defender dla Office 365 P2|
 |---|---|---|
 |Zapobiega szerokiemu, znanemu atakowi opartemu na woluminie.|Chroni pocztę e-mail i współpracę przed złośliwym oprogramowaniem, wyłudami i firmowymi zabezpieczeniami poczty e-mail.|Dodaje badania po naruszeniu, łowiectwo i reakcję, a także automatyzację i symulacyjne (na szkoleniach).|
-|
 
 Pod względem architektury zacznijmy jednak od pojęcia każdej z nich jako skumulowanych warstw zabezpieczeń z wyróżnieniem zabezpieczeń. Bardziej przypomina to:
 
@@ -86,7 +85,6 @@ zaczynając od **Exchange Online Protection**:
 |Zapobieganie/wykrywanie|Badanie|Odpowiadanie|
 |---|---|---|
 |Do technologii należą:<ul><li>spam</li><li>phish</li><li>złośliwe oprogramowanie</li><li>poczta masowa</li><li>fałszywa inteligencja</li><li>wykrywanie personifikacji</li><li>Kwarantanna administratora</li><li>Przesyłanie przez administratora i użytkownika wyników wyników fałszywie dodatnich i wyników fałszywie ujemnych</li><li>Zezwalaj na/blokuj dla adresów URL i plików</li><li>Raporty</li></ul>|<li>Przeszukiwanie dziennika inspekcji</li><li>Śledzenie wiadomości</li>|<li>Automatyczne czyszczenie zerowej godziny (ZAP)</li><li>Uściślij i testuj listy zezwalania i blokowania</li>|
-|
 
 Jeśli chcesz przejść do programu EOP, przejdź **[do tego artykułu](exchange-online-protection-overview.md)**.
 

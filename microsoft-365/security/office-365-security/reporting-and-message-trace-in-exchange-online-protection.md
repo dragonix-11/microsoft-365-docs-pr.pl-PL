@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
@@ -15,12 +16,12 @@ ms.custom:
 description: W tym artykule dowiesz się o raportach i narzędziach do rozwiązywania problemów dostępnych dla administratorów usługi Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d4f0289054baec0e5bcedf4e9e3d434ab51ef92b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 929fce14a9e128b724b4aa69d88e4a3062ed5640
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986435"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682422"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Raportowanie i śledzenie wiadomości w u usługi EOP
 
@@ -71,16 +72,11 @@ Zobacz [Śledzenie wiadomości w portalu Microsoft 365 Defender sieci.](message-
 
 W poniższej tabeli opisano, kiedy i jak długo są dostępne dane raportowania i śledzenia wiadomości usługi EOP.
 
-<br>
-
-****
-
 |Typ raportu|Dostępne dane (okres wstecz)|Opóźnienie|
 |---|---|---|
 |Raporty podsumowujące dotyczące ochrony poczty|90 dni|Agregacja danych wiadomości jest zazwyczaj ukończona w ciągu 24–48 godzin. Niektóre nieznaczne zagregowane zmiany przyrostowe mogą występować maksymalnie przez 5 dni.|
 |Raporty szczegółowe dotyczące ochrony poczty|90 dni|W przypadku danych szczegółowych, które mają mniej niż 7 dni, dane powinny być wyświetlane w ciągu 24 godzin, ale mogą nie być ukończone do 48 godzin. Niektóre drobne zmiany przyrostowe mogą występować maksymalnie przez 5 dni. <p> Aby wyświetlić raporty szczegółowe dla wiadomości, które mają więcej niż 7 dni, wyniki mogą potrwać do kilku godzin.|
 |Dane śledzenia wiadomości|90 dni|Po uruchomieniu śledzenia wiadomości w przypadku wiadomości, które mają mniej niż 7 dni, powinny one zostać wyświetlone w ciągu 5–30 minut.<p> W przypadku uruchomienia śledzenia wiadomości, które mają więcej niż 7 dni, wyniki mogą potrwać do kilku godzin.|
-|
 
 > [!NOTE]
 > Dostępność i opóźnienie danych są takie same niezależnie od tego, czy zażądano ich za pośrednictwem centrum administracyjnego, czy zdalnej obsługi programu PowerShell.

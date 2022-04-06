@@ -1,7 +1,7 @@
 ---
-title: Usługa Microsoft Defender dla Office 365 w programie Microsoft 365 Defender
+title: Ochrona usługi Office 365 w usłudze Microsoft Defender w usłudze Microsoft 365 Defender
 description: Zapoznaj się ze zmianami wprowadzonymi w Centrum & zgodności w Microsoft 365 Defender.
-keywords: Microsoft 365 zabezpieczeń, Wprowadzenie do programu Microsoft 365 Defender, programu Microsoft Defender dla programu Office 365, programu Microsoft Defender for Endpoint, MDO, MDE, pojedynczego okienka szyb, nowego portalu zabezpieczeń, nowego portalu zabezpieczeń programu Defender
+keywords: Microsoft 365, Wprowadzenie do Microsoft 365 Defender, Ochrona usługi Office 365 w usłudze Microsoft Defender, Ochrona punktu końcowego w usłudze Microsoft Defender, MDO, MDE, pojedyncze okienko szyb, nowy portal zabezpieczeń, nowy portal zabezpieczeń Defender
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,20 +17,20 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: c38054e55442a01d8e659ab4281e4790f57c7755
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: a42805ea9b803818bd538e24a3fa626a00dac348
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63013385"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499842"
 ---
-# <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Usługa Microsoft Defender dla Office 365 w programie Microsoft 365 Defender
+# <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Ochrona usługi Office 365 w usłudze Microsoft Defender w usłudze Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
-- [Usługa Microsoft Defender dla Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 ## <a name="quick-reference"></a>Podręczny przewodnik
 
@@ -68,15 +68,15 @@ Jeśli szukasz elementów związanych ze zgodnością, odwiedź witrynę <a href
 
 ## <a name="new-and-improved-capabilities"></a>Nowe i ulepszone funkcje
 
-Pasek nawigacji po lewej stronie (pasek Szybkie uruchamianie) będzie wyglądać znajomo. W tym programie Defender dla chmury jest jednak kilka nowych i zaktualizowanych elementów.
+Pasek nawigacji po lewej stronie (pasek Szybkie uruchamianie) będzie wyglądać znajomo. W tej aplikacji jest jednak kilka nowych i zaktualizowanych elementów Defender dla Chmury.
 
 Ujednolicone rozwiązanie Microsoft 365 Defender umożliwia łączenie sygnałów zagrożeń i określanie pełnego zakresu i wpływu zagrożenia oraz jego wpływu na organizację.
 
-:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Obraz Microsoft 365 Defender zbiegających się.":::
+:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Środowisko Microsoft 365 Defender zbieżne" lightbox="../../media/M365-defender-converge-experience.png":::
 
-Program Defender for Office 365 chroni organizację przed złośliwymi zagrożeniami, które mogą być ze strony wiadomości e-mail, linków (adresów URL) i narzędzi do współpracy.
+Ochrona usługi Office 365 w usłudze Defender chroni organizację przed złośliwymi zagrożeniami, które mogą być publikowane przez wiadomości e-mail, linki (adresy URL) i narzędzia do współpracy.
 
-:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Obraz usługi Defender for Office 365.":::
+:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Portal Ochrona usługi Office 365 w usłudze Defender użytkowników" lightbox="../../media/Defender-for-O365.png":::
 
 ### <a name="incidents-and-alerts"></a>Zdarzenia i alerty
 
@@ -85,7 +85,7 @@ Program Defender for Office 365 chroni organizację przed złośliwymi zagrożen
 - [Dowiedz się więcej o badaniach](incidents-overview.md)
 - [Dowiedz się więcej o zarządzaniu alertami](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-![Pasek Szybkie uruchamianie alertów i akcji.](../../media/converge-1-alerts-and-actions.png)
+:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="Pasek szybkie uruchamianie alertów i akcji w portalu Microsoft 365 Defender wiadomości" lightbox="../../media/converge-1-alerts-and-actions.png":::
 
 ### <a name="hunting"></a>Goniące
 
@@ -93,7 +93,7 @@ Aktywne wyszukiwanie zagrożeń, złośliwego oprogramowania i złośliwych dzia
 
 [Niestandardowe reguły wykrywania](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) można utworzyć na pomocą zaawansowanych zapytań wyszukiwania, aby aktywnie obserwować zdarzenia, które mogą być chwycone przez naruszenie działań i nieprawidłowo skonfigurowane urządzenia.
 
-Oto przykład [zaawansowanego wyszukiwania w](advanced-hunting-example.md) programie Microsoft Defender dla Office 365.
+Oto przykład [zaawansowanego wyszukiwania](advanced-hunting-example.md) w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 
 ### <a name="action-center"></a>Centrum akcji
 
@@ -105,7 +105,7 @@ Dowiedz się więcej o [Centrum akcji](m365d-action-center.md).
 
 Uzyskaj analizę zagrożeń od ekspertów od specjalistów ds. zabezpieczeń firmy Microsoft. Analiza zagrożeń pomaga zespołom zabezpieczeń zwiększyć efektywność w przypadku wyłaniających się zagrożeń. Analiza zagrożeń obejmuje:
 
-- Wykrywanie i środki zaradcze związane z pocztą e-mail z programu Microsoft Defender dla Office 365. Jest to dodatek do danych punktu końcowego, które są już dostępne z usługi Microsoft Defender for Endpoint.
+- Wykrywanie i środki zaradcze związane z pocztą e-mail Ochrona usługi Office 365 w usłudze Microsoft Defender. Jest to dodatek do danych punktu końcowego, które są już dostępne w Ochrona punktu końcowego w usłudze Microsoft Defender.
 - Widok zdarzeń związanych z zagrożeniami.
 - Ulepszone środowisko do szybkiego identyfikowania i używania informacji z możliwością działania w raportach.
 
@@ -117,7 +117,7 @@ Dowiedz się więcej na temat śledzenia wyłaniających się zagrożeń i reago
 
 Śledź i badaj zagrożenia dotyczące poczty e-mail użytkowników, śledź kampanie i nie tylko. Jeśli używasz Centrum zgodności z zabezpieczeniami &, to będzie znane.
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="Menu szybkiego uruchamiania wiadomości e-mail & Collab (lub MSDO) po lewej stronie Microsoft 365 Defender.":::
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="Menu szybkiego uruchamiania wiadomości e-mail & Collab (lub MSDO) w lewym okienku nawigacji w Microsoft 365 Defender nawigacji" lightbox="../../media/converge-3-email-and-collab-new.png":::
 
 #### <a name="email-entity-page"></a>Strona jednostki e-mail
 
@@ -127,11 +127,11 @@ Strona [encji E-mail](../office-365-security/mdo-email-entity-page.md) *ujednoli
 
 Wyświetlaj raporty, zmieniaj ustawienia i modyfikuj role użytkowników.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Menu Szybkie uruchamianie dla Microsoft 365 Defender i raportowania po lewej stronie Microsoft 365 Defender strony.":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Menu Szybkie uruchamianie dla uprawnień Microsoft 365 Defender i raportowania w lewym okienku nawigacji w Microsoft 365 Defender nawigacji" lightbox="../../media/converge-4-access-and-reporting-new.png":::
 
 > [!NOTE]
 > DKIM (DomainKeys Identified Mail) zapewnia, że docelowe systemy poczty e-mail zaufają wiadomościom wychodzącym z Twojej domeny niestandardowej.
-> W przypadku usługi Defender Office 365 użytkowników możesz teraz  zarządzać klawiszami *DKIM* i obracać je za pomocą programu Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>lub  \>  \> \> \> przejść do sekcji **DKIM** Reguły zasad zagrożeń & reguły zasad ochrony przed zagrożeniami.
+> W Ochrona usługi Office 365 w usłudze Defender użytkowników możesz teraz zarządzać klawiszami *DKIM* i obracać je za pośrednictwem programu Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>lub  \>  \>  \> \> przejść do sekcji **DKIM** Reguły zasad zagrożeń & reguły zasad ochrony przed zagrożeniami.
 >
 > Aby uzyskać więcej informacji, zobacz [Używanie funkcji DKIM do sprawdzania poprawności wychodzących](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email) wiadomości e-mail wysłanych z domeny niestandardowej.
 
@@ -145,7 +145,7 @@ Ta tabela zawiera krótkie informacje na temat zarządzania zagrożeniami, w prz
 
 |Obszar|Opis zmiany|
 |---|---|
-|[Badanie](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|Łączy funkcje AIR w programie [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) [i Defender for Endpoint](../defender-endpoint/automated-investigations.md). Dzięki tym aktualizacjom i ulepszeniom Twój zespół operacyjny ds. zabezpieczeń będzie mógł wyświetlać szczegółowe informacje o zautomatyzowanych badaniach i działaniach naprawczych w ramach poczty e-mail, zawartości współpracy, kont użytkowników i urządzeń w jednym miejscu.|
+|[Badanie](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|Łączy funkcje AIR w programach [Ochrona usługi Office 365 w usłudze Defender](/microsoft-365/security/office-365-security/defender-for-office-365) [i Defender for Endpoint](../defender-endpoint/automated-investigations.md). Dzięki tym aktualizacjom i ulepszeniom Twój zespół operacyjny ds. zabezpieczeń będzie mógł wyświetlać szczegółowe informacje o zautomatyzowanych badaniach i działaniach naprawczych w ramach poczty e-mail, zawartości współpracy, kont użytkowników i urządzeń w jednym miejscu.|
 |[Kolejka alertów](../../compliance/alert-policies.md)|Okienko **wysuwu alertów** Widoku w Centrum & zabezpieczeń zawiera teraz linki do Microsoft 365 Defender. Kliknij link **Otwórz stronę alertu** i Microsoft 365 Defender otwierane. Dostęp do strony **Wyświetlanie alertów można** uzyskać, klikając dowolny alert Office 365 w kolejce alertów.|
 |[Szkolenie z symeny ataków](../office-365-security/attack-simulation-training-insights.md)|Korzystanie ze szkolenia z użyciem symezyjnej ataków do uruchamiania realistycznych scenariuszy ataków w organizacji. Takie symulowane ataki mogą pomóc w przeszkolić pracowników przed rzeczywistymi atakami, które mają wpływ na organizację. Szkolenie symulacyjne dotyczące ataków obejmuje więcej opcji, rozszerzone raporty i ulepszone przepływy szkoleniowe, które ułatwiają korzystanie z tych symulacyjnych i szkoleniowych scenariuszy ataków i zarządzanie nimi.|
 |
@@ -156,22 +156,22 @@ Nie ma zmian w tych obszarach:
 - [Zasady & reguł](../../compliance/alert-policies.md)
 - [Kampania](../office-365-security/campaigns.md)
 - [Materiały](../office-365-security/admin-submission.md)
-- [Recenzja](./m365d-action-center.md)
+- [Przegląd](./m365d-action-center.md)
 - [Śledzenie zagrożeń](../office-365-security/threat-trackers.md)
 
 Sprawdź też **sekcję Informacje pokrewne** u dołu tego artykułu.
 
 > [!IMPORTANT]
-> Portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender łączy</a> funkcje zabezpieczeń w systemach <https://securitycenter.windows.com>, i <https://protection.office.com>. To, co zostanie wyświetlony, będzie jednak zależne od Twojej subskrypcji. Jeśli na przykład masz tylko usługę Microsoft Office 365 Defender dla planu 1 lub 2 w ramach subskrypcji autonomicznych, nie zobaczysz funkcji Zabezpieczenia punktów końcowych i usługi Defender dla usługi Office Plan 1 nie będą widziały elementów, takich jak Analiza zagrożeń.
+> Portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender łączy</a> funkcje zabezpieczeń w systemach <https://securitycenter.windows.com>, i <https://protection.office.com>. To, co zostanie wyświetlony, będzie jednak zależne od Twojej subskrypcji. Jeśli na przykład masz tylko plan Ochrona usługi Office 365 w usłudze Microsoft Defender 1 lub 2 w ramach subskrypcji autonomicznych, nie zobaczysz funkcji Zabezpieczenia punktów końcowych i Usługi Defender dla usługi Office Plan 1 nie będą widziały elementów takich jak Analiza zagrożeń.
 
 > [!TIP]
-> Wszystkie Exchange Online Protection (EOP) będą zawarte w programie Microsoft 365 Defender, ponieważ EOP jest podstawowym elementem usługi Defender for Office 365.
+> Wszystkie Exchange Online Protection (EOP) zostaną uwzględnione w programie Microsoft 365 Defender, ponieważ EOP jest podstawowym elementem Ochrona usługi Office 365 w usłudze Defender.
 
 ## <a name="microsoft-365-defender-home-page"></a>Microsoft 365 Defender strona główna
 
 Na stronie głównej portalu są zawarte ważne informacje podsumowujące dotyczące stanu zabezpieczeń Microsoft 365 sieci.
 
-Korzystając z **przewodnika z przewodnikiem** , możesz skorzystać z krótkiego przewodnika po stronach punktów końcowych lub wiadomości e-mail & współpracy. Zwróć uwagę, że to, co zostanie tutaj widzine, zależy od tego, czy masz licencję usługi Defender dla programu Office 365 i/lub Defender dla punktu końcowego.
+Korzystając z **przewodnika z przewodnikiem** , możesz skorzystać z krótkiego przewodnika po stronach punktów końcowych lub wiadomości e-mail & współpracy. Pamiętaj, że to, co zostanie tutaj wyświetlony, zależy od tego, czy masz licencję usługi Ochrona usługi Office 365 w usłudze Defender i/lub Defender dla punktu końcowego.
 
 Znajduje się również link do Centrum zabezpieczeń & zgodności w celu porównania. Ostatni link znajduje się na stronie Co **nowego** , która opisuje najnowsze aktualizacje.
 

@@ -12,12 +12,13 @@ ms.assetid: ''
 description: Administratorzy mogą dowiedzieć się, jak za pomocą szczegółowych informacji o nowych użytkownikach przesyłających dalej wiadomości e-mail w Centrum zgodności usługi & Security & zbadać, kiedy użytkownicy w ich organizacji będą przesyłać dalej wiadomości do nowych domen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e5ec29849c50f8d012de1886e997b67f1f191ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 35ec1573096ecce392979cba11c6e55b1a1adcce
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984372"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681771"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nowi użytkownicy mogą przesyłać dalej informacje dotyczące poczty e-mail w Centrum & zgodności
 

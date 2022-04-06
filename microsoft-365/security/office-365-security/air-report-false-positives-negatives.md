@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 98164fd42a0ed2e2d79e2319823363057d15e7d3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4b1de0e19cbf241936aa02f957cdd0920f2a580a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318609"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682488"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Jak raportować wyniki fałszywie dodatnie/ujemne w funkcji automatycznego badania i odpowiedzi
 
@@ -68,15 +68,10 @@ Jeśli w większości przypadków akcję zaradczych została podjęta w związku
 
 Za pomocą Eksploratora zagrożeń zespół operacyjny zabezpieczeń może znaleźć wiadomość e-mail, na które wpływa akcja, i potencjalnie cofnąć akcję.
 
-<br>
-
-****
-
 |Scenariusz|Opcje cofania|Dowiedz się więcej|
 |---|---|---|
 |Wiadomość e-mail została rozsyłana do folderu wiadomości-śmieci użytkownika|<ul><li>Przenoszenie wiadomości do folderu Elementy usunięte użytkownika</li><li>Przenoszenie wiadomości do skrzynki odbiorczej użytkownika</li><li>Usuwanie wiadomości</li></ul>|[Znajdowanie i badanie złośliwych wiadomości e-mail dostarczonych w Office 365](investigate-malicious-email-that-was-delivered.md)|
 |Wiadomość e-mail lub plik został poddany kwarantannie|<ul><li>Zwolnij wiadomość e-mail lub plik</li><li> Usuwanie wiadomości e-mail lub pliku</li></ul>|[Zarządzanie wiadomościami poddanymi kwarantannie jako administrator](manage-quarantined-messages-and-files.md)|
-|
 
 ### <a name="undo-an-action-in-the-action-center"></a>Cofanie akcji w Centrum akcji
 

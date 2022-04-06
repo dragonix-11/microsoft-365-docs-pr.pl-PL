@@ -13,12 +13,13 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Firma Microsoft udostępnia pomoc dla usługi EOP w różnych miejscach i metodach, w tym w przypadku samodzielnej obsługi i wsparcia asystego.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4db5851edcbb4daa2a0be1fa36770b7bb2d4b94
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 080a61b0ed20843d5962f1901b8d8fece73d8f4b
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62995984"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681045"
 ---
 # <a name="help-and-support-for-eop"></a>Pomoc i obsługa techniczna dla programu EOP
 
@@ -77,8 +78,6 @@ Aby uzyskać więcej informacji o tym, w jaki sposób pomoc techniczna Premier m
 
 Firma Microsoft udostępnia lokalne lub bezpłatne numery telefonów do pomocy technicznej dotyczącej produktów na całym świecie. Wiele z tych centrów pomocy technicznej zapewnia pomoc w twoim języku lokalnym w godzinach pracy lub w języku angielskim 24 godziny dziennie. Jeśli nie widzisz swojej lokalizacji na poniższej liście, użyj wirtualnego agenta, jak opisano powyżej, aby znaleźć twój lokalny numer telefonu pomocy technicznej.
 
-****
-
 |Kraj lub region|Pytania dotyczące przed zakupem i rozliczeniami|Pytania dotyczące pomocy technicznej|
 |---|---|---|
 |Brazylia|Bezpłatne: 08007621146 <br> Lokalne: 1147001999|Takie same|
@@ -89,7 +88,6 @@ Firma Microsoft udostępnia lokalne lub bezpłatne numery telefonów do pomocy t
 |Hiszpania|Połączenie bezpłatne: 900 814 197 <br> Lokalna: 912 718 160|Takie same|
 |Zjednoczone Królestwo|Połączenie bezpłatne: 0800 032 6417 <br> Lokalnie: 0203 450 6455|Takie same|
 |Stany Zjednoczone|Połączenie bezpłatne: 1-877-913-2707|Bezpłatne: 1-800-865-9408|
-|
 
 ## <a name="for-more-information-about-eop-documentation"></a>Aby uzyskać więcej informacji na temat dokumentacji programu EOP
 

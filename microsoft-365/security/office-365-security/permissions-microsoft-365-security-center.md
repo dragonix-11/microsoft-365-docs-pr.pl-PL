@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 74e9f6e0ae60b322ed4ec50c5b1a9db278dbb2e6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4e819a9de9d5ccd66caab4bc13d8b11c1a95ab03
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021249"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681727"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Uprawnienia w Microsoft 365 Defender portalu
 
@@ -77,10 +77,6 @@ Po wybraniu roli zostanie wyświetlone wysuwne okno wysuwu szczegółów zawiera
 
 Aby uzyskać więcej informacji, [zobacz Wyświetlanie i przypisywanie ról administratora w Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
-<br>
-
-****
-
 |Rola|Opis|
 |---|---|
 |**Administrator globalny**|Dostęp do wszystkich funkcji administracyjnych we wszystkich Microsoft 365 usługach. Tylko administratorzy globalni mogą przypisywać inne role administratora. Aby uzyskać więcej informacji, zobacz [Administrator globalny /Administrator firmy](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
@@ -92,7 +88,6 @@ Aby uzyskać więcej informacji, [zobacz Wyświetlanie i przypisywanie ról admi
 |**Czytelnik globalny**|Wersja tylko do odczytu roli **administratora globalnego** . Wyświetlanie wszystkich ustawień i informacji administracyjnych w Microsoft 365. Aby uzyskać więcej informacji, zobacz [Czytnik globalny](/azure/active-directory/roles/permissions-reference#global-reader).|
 |**Administrator symezyjki ataków**|Tworzenie wszystkich aspektów tworzenia symydyty ataków i zarządzanie nimi, uruchamianie/planowanie symulacyjnej oraz przeglądanie wyników symulacyjnych.[](attack-simulation-training.md) Aby uzyskać więcej informacji, zobacz [Administrator symulowania ataków](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
 |**Autor ataku ładu**|Twórz łady ataków, ale nie uruchamiaj ich ani nie planuj. Aby uzyskać więcej informacji, zobacz [Autorem ataku opłaty](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
-|
 
 ### <a name="email--collaboration-roles-in-the-microsoft-365-defender-portal"></a>Wysyłanie & e-mail do ról współpracy w portalu Microsoft 365 Defender-mail
 

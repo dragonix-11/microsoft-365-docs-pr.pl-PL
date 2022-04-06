@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 25cdc0610f11d1bcd7e8c27faa1cdc9453677d51
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 233c9993c8cd5978bcdfcbb54db8b9688c3ac056
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320885"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500040"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Reagowanie na incydenty Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Samodzielnie zarządzasz zdarzeniami **z & i alertami > zdarzeniami** podczas sz
 
 Wybranie nazwy zdarzenia powoduje wyświetlenie podsumowania zdarzenia i zapewnia dostęp do kart z dodatkowymi informacjami. Oto przykład.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Przykład strony podsumowania zdarzenia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Strona podsumowania dla zdarzenia w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Dodatkowe karty dla zdarzenia to:
 
@@ -113,7 +113,7 @@ Oto relacja między zdarzeniem i jego danymi a kartami zdarzenia w portalu Micro
 
 Oto przykładowy przepływ pracy do odpowiadania na zdarzenia w aplikacji Microsoft 365 z portalem Microsoft 365 Defender zadań.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Przykład przepływu pracy reagowania na incydenty dla Microsoft 365." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Przykład przepływu pracy reagowania na incydenty dla portalu Microsoft 365 Defender zdarzenia." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 Na bieżąco określ zdarzenia o najwyższym priorytecie do analizy i rozwiązania w kolejce zdarzeń i przygotuj je do reakcji. Jest to kombinacja:
 
@@ -153,7 +153,7 @@ Aby uzyskać więcej informacji na temat reakcji na incydenty w produktach firmy
 
 Oto przykład operacji zabezpieczeń (SecOps) dla Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Przykład operacji zabezpieczeń na Microsoft 365 Defender." lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Przykład operacji zabezpieczeń na Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 Codzienne zadania mogą obejmować:
 
@@ -215,7 +215,7 @@ Wykonaj poniższe czynności, aby utworzyć nową regułę i dostosować ustawie
     - **Uwzględnij nazwę organizacji w wiadomości** e-mail — wybierz, czy nazwa organizacji ma być wyświetlana w powiadomieniu e-mail.
     - **Dołącz link do portalu specyficznego** dla dzierżawy — wybierz, czy chcesz dodać link z identyfikatorem dzierżawy w powiadomieniu e-mail o uzyskiwaniu dostępu do określonej Microsoft 365 dzierżawy.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Ustawienia powiadomień dotyczących powiadomień e-mail o incydentach." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Strona Ustawienia powiadomień dla powiadomień e-mail o incydentach w Microsoft 365 Defender sieci Web." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
 5. Wybierz pozycję **Dalej**. Na stronie **Adresaci** dodaj adresy e-mail, na które będą wysyłane powiadomienia o incydentach. Wybierz **pozycję Dodaj** po wpisaniu każdego nowego adresu e-mail. Aby przetestować powiadomienia i upewnić się, że adresaci otrzymają je w skrzynkach odbiorczych, wybierz pozycję **Wyślij testową wiadomość e-mail**. 
 6. Wybierz pozycję **Dalej**. Na **stronie Recenzja** reguły przejrzyj ustawienia reguły, a następnie wybierz pozycję **Utwórz regułę**. W zależności od ustawień adresaci zaczną otrzymywać powiadomienia o incydentach za pośrednictwem poczty e-mail.
@@ -247,7 +247,7 @@ Skorzystaj z tej tabeli, aby uzyskać poziom doświadczenia w analizie zabezpiec
 | Poziom | Kroki |
 |:-------|:-----|
 | **Nowy** | <ol><li> Zapoznaj się [z instruktażem](first-incident-overview.md) Odpowiadanie na pierwsze zdarzenie, aby zapoznać się z przewodnikiem po typowym procesie analizy, rozwiązywania problemów i przeglądu po incydentach w portalu Microsoft 365 Defender za pomocą przykładowego ataku. </li><li> Zobacz, które zdarzenia powinny [być priorytetyzowane](incident-queue.md) na podstawie istotności i innych czynników. </li><li> [Zarządzanie zdarzeniami](manage-incidents.md), które obejmują zmienianie nazw, przypisywanie, klasyfikowanie oraz dodawanie tagów i komentarzy na podstawie przepływu pracy zarządzania zdarzeniami.</li></ol> |
-| **Wystąpił** | <ol><li> Rozpoczynanie pracy z kolejką zdarzeń **ze strony Zdarzenia** w portalu Microsoft 365 Defender sieci Web. W tym miejscu można wykonywać następujące czynności: </li> <ul><li> Zobacz, które zdarzenia powinny [być priorytetyzowane](incident-queue.md) na podstawie istotności i innych czynników. </li><li> [Zarządzanie zdarzeniami](manage-incidents.md), które obejmują zmienianie nazw, przypisywanie, klasyfikowanie oraz dodawanie tagów i komentarzy na podstawie przepływu pracy zarządzania zdarzeniami. </li><li> [Wykonuj](investigate-incidents.md) badania zdarzeń. </li></ul> </li><li> Śledzenie wyłaniających się zagrożeń i reagowanie na nie za pomocą [analizy zagrożeń](threat-analytics.md). </li><li>  Aktywne wyszukiwanie zagrożeń za pomocą [zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md). </li><li> W tych [podręcznikach do reagowania](/security/compass/incident-response-playbooks) na incydenty znajdziesz szczegółowe wskazówki dotyczące prób wyłudzania informacji, haseł i wyrażania zgody na aplikacje. </li></ol> |
+| **Wystąpił** | <ol><li> Wprowadzenie kolejką zdarzeń ze strony **Zdarzenia** w portalu Microsoft 365 Defender zdarzenia. W tym miejscu można wykonywać następujące czynności: </li> <ul><li> Zobacz, które zdarzenia powinny [być priorytetyzowane](incident-queue.md) na podstawie istotności i innych czynników. </li><li> [Zarządzanie zdarzeniami](manage-incidents.md), które obejmują zmienianie nazw, przypisywanie, klasyfikowanie oraz dodawanie tagów i komentarzy na podstawie przepływu pracy zarządzania zdarzeniami. </li><li> [Wykonuj](investigate-incidents.md) badania zdarzeń. </li></ul> </li><li> Śledzenie wyłaniających się zagrożeń i reagowanie na nie za pomocą [analizy zagrożeń](threat-analytics.md). </li><li>  Aktywne wyszukiwanie zagrożeń za pomocą [zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md). </li><li> W tych [podręcznikach do reagowania](/security/compass/incident-response-playbooks) na incydenty znajdziesz szczegółowe wskazówki dotyczące prób wyłudzania informacji, haseł i wyrażania zgody na aplikacje. </li></ol> |
 
 
 ### <a name="security-team-role"></a>Rola zespołu zabezpieczeń
@@ -256,7 +256,7 @@ Postępuj zgodnie z tą tabelą w zależności od roli zespołu zabezpieczeń.
 
 | Rola | Kroki |
 |:-------|:-----|
-| Odpowiadanie na incydenty (warstwa 1) | Rozpoczynanie pracy z kolejką zdarzeń **ze strony Zdarzenia** w portalu Microsoft 365 Defender sieci Web. W tym miejscu można wykonywać następujące czynności: <ul><li> Zobacz, które zdarzenia powinny [być priorytetyzowane](incident-queue.md) na podstawie istotności i innych czynników. </li><li> [Zarządzanie zdarzeniami](manage-incidents.md), które obejmują zmienianie nazw, przypisywanie, klasyfikowanie oraz dodawanie tagów i komentarzy na podstawie przepływu pracy zarządzania zdarzeniami. </li></ul> |
+| Odpowiadanie na incydenty (warstwa 1) | Wprowadzenie kolejką zdarzeń ze strony **Zdarzenia** w portalu Microsoft 365 Defender zdarzenia. W tym miejscu można wykonywać następujące czynności: <ul><li> Zobacz, które zdarzenia powinny [być priorytetyzowane](incident-queue.md) na podstawie istotności i innych czynników. </li><li> [Zarządzanie zdarzeniami](manage-incidents.md), które obejmują zmienianie nazw, przypisywanie, klasyfikowanie oraz dodawanie tagów i komentarzy na podstawie przepływu pracy zarządzania zdarzeniami. </li></ul> |
 | Security szybki lub analityk (warstwa 2) | <ol><li> [Przejmij](investigate-incidents.md) badania nad zdarzeniami **na stronie** Zdarzenia w Microsoft 365 Defender sieci Web. </li><li> W tych [podręcznikach do reagowania](/security/compass/incident-response-playbooks) na incydenty znajdziesz szczegółowe wskazówki dotyczące prób wyłudzania informacji, haseł i wyrażania zgody na aplikacje. </li></ol> |
 | Zaawansowani analitycy zabezpieczeń lub zaawansowani analitycy zagrożeń (warstwa 3) | <ol><li>[Przejmij](investigate-incidents.md) badania nad zdarzeniami **na stronie** Zdarzenia w Microsoft 365 Defender sieci Web. </li><li> Śledzenie wyłaniających się zagrożeń i reagowanie na nie za pomocą [analizy zagrożeń](threat-analytics.md). </li><li> Aktywne wyszukiwanie zagrożeń za pomocą [zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md). </li><li> W tych [podręcznikach do reagowania](/security/compass/incident-response-playbooks) na incydenty znajdziesz szczegółowe wskazówki dotyczące prób wyłudzania informacji, haseł i wyrażania zgody na aplikacje. |
 | Menedżer SOC | Zobacz, jak [zintegrować Microsoft 365 Defender z Centrum operacji zabezpieczeń (SOC).](integrate-microsoft-365-defender-secops.md) |

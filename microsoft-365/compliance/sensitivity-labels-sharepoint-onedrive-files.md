@@ -1,5 +1,5 @@
 ---
-title: Włączanie etykiet wrażliwości dla Office w SharePoint i OneDrive
+title: Włącz etykiety poufności dla plików pakietu Office w programie SharePoint i usłudze OneDrive
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratorzy mogą włączyć obsługę etykiet wrażliwości dla plików programu Word, Excel i PowerPoint w plikach SharePoint i OneDrive.
-ms.openlocfilehash: 08c3daab9195e98c3b099255f1e7fb38a2324c33
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 12180dcc748764b1d73f6ad8a5c0ef7c77cd2b27
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320021"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499974"
 ---
-# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Włączanie etykiet wrażliwości dla Office w SharePoint i OneDrive
+# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Włącz etykiety poufności dla plików pakietu Office w programie SharePoint i usłudze OneDrive
 
 >*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -67,7 +67,7 @@ Jeśli obecnie chronisz dokumenty w usztywnianiu SharePoint za pomocą usługi Z
 
 ## <a name="requirements"></a>Wymagania
 
-Te nowe funkcje działają tylko z [etykietami wrażliwości](sensitivity-labels.md) . Jeśli obecnie masz etykiety usługi Azure Information Protection, najpierw przemigruj je do etykiet wrażliwości, aby umożliwić włączenie tych funkcji dla nowych przesyłanych plików. Aby uzyskać instrukcje, [zobacz Jak przeprowadzić migrację etykiet usługi Azure Information Protection do ujednoliconych etykiet wrażliwości](/azure/information-protection/configure-policy-migrate-labels).
+Te nowe funkcje działają tylko z [etykietami wrażliwości](sensitivity-labels.md) . Jeśli obecnie masz etykiety poczty e Information Protection Azure, najpierw przemigruj je do etykiet wrażliwości, aby można było włączyć te funkcje dla nowych przesyłanych plików. Aby uzyskać instrukcje, [zobacz Jak przeprowadzić migrację etykiet usługi Azure Information Protection do ujednoliconych etykiet wrażliwości](/azure/information-protection/configure-policy-migrate-labels).
 
 Użyj aplikacji synchronizacja usługi OneDrive w wersji 19.002.0121.0008 lub nowszej w systemie Windows oraz w wersji 19.002.0107.0008 lub nowszej na komputerze Mac. Obie te wersje zostały wydane 28 stycznia 2019 r. i są obecnie wydane we wszystkich pierścieniach. Aby uzyskać więcej informacji, zobacz informacje [OneDrive o wersji](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). Po włączeniu etykiet wrażliwości dla Office w SharePoint i OneDrive, użytkownikom, którzy uruchamiają starszą wersję aplikacji do synchronizacji, zostanie wyświetlony monit o jej zaktualizowanie.
 
@@ -79,7 +79,7 @@ Użyj aplikacji synchronizacja usługi OneDrive w wersji 19.002.0121.0008 lub no
 
 - SharePoint i OneDrive etykiet wrażliwości nie są automatycznie stosowane do istniejących plików, które zostały już zaszyfrowane przy użyciu etykiet usługi Azure Information Protection. Aby funkcje działały po włączeniu etykiet wrażliwości dla Office w programach SharePoint i OneDrive, wykonaj następujące zadania:
 
-    1. Upewnij się, że etykiety usługi [Azure Information Protection zostały](/azure/information-protection/configure-policy-migrate-labels) zmigrowane do etykiet wrażliwości i [opublikowane](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) na Centrum zgodności platformy Microsoft 365.
+    1. Upewnij się, że etykiety usługi [Azure Information Protection zostały](/azure/information-protection/configure-policy-migrate-labels) zmigrowane do etykiet wrażliwości i [opublikowane](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) na ich Centrum zgodności platformy Microsoft 365.
     2. Pobierz pliki oznaczone etykietą, a następnie przekaż je do ich oryginalnej lokalizacji w SharePoint lub OneDrive.
 
 - SharePoint i OneDrive nie mogą przetwarzać plików zaszyfrowanych, gdy etykieta, która zastosować szyfrowanie, ma dowolną z następujących konfiguracji [szyfrowania](encryption-sensitivity-labels.md#configure-encryption-settings):
@@ -93,7 +93,7 @@ Użyj aplikacji synchronizacja usługi OneDrive w wersji 19.002.0121.0008 lub no
 
 - Jeśli dokument jest oznaczony etykietą wyewidencjonowaną w programie [SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), kolumna  Czułość w bibliotece dokumentów nie będzie wyświetlać nazwy etykiety, dopóki dokument nie zostanie zaewidencjonowany, a następnie otwarty w SharePoint.
 
-- Jeśli etykietowany i zaszyfrowany dokument zostanie pobrany z usługi SharePoint lub OneDrive przez aplikację lub usługę korzystającą z nazwy głównej usługi, a następnie przekazany ponownie z etykietą, która stosuje różne ustawienia szyfrowania, przekazywanie nie powiedzie się. Przykładowy scenariusz to program Microsoft Defender for Cloud Apps zmienia etykietę poufności w pliku z  Poufne na Wysoce **poufne** lub z **Poufne** na **Ogólne**.
+- Jeśli etykietowany i zaszyfrowany dokument zostanie pobrany z usługi SharePoint lub OneDrive przez aplikację lub usługę korzystającą z nazwy głównej usługi, a następnie przekazany ponownie z etykietą, która stosuje różne ustawienia szyfrowania, przekazywanie nie powiedzie się. Przykładowy scenariusz to zmiana Microsoft Defender for Cloud Apps poufnej w pliku z Poufne na Wysoce poufne  lub z **Poufne** na **Ogólne**.
     
     Przekazywanie nie kończy się niepowodzeniem, jeśli aplikacja lub usługa najpierw uruchamia polecenie cmdlet [Unlock-SPOSensitivityLabeledFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile), zgodnie z objaśnieniem w sekcji Usuwanie szyfrowania dokumentu z [etykietami.](#remove-encryption-for-a-labeled-document) Przed przekazaniem oryginalny plik zostanie usunięty lub jego nazwa zostanie zmieniona.
 
@@ -190,11 +190,9 @@ W przypadku korzystania z etykiet wrażliwości SharePoint i OneDrive należy pa
 
 Na przykład: Tworzysz i publikujesz nową etykietę wrażliwości, która stosuje szyfrowanie, i jest ona bardzo szybko wyświetlana w aplikacji klasycznej użytkownika. Użytkownik stosuje tę etykietę do dokumentu, a następnie przekaże ją do SharePoint lub OneDrive. Jeśli replikacja etykiet nie została ukończona dla usługi, nowe funkcje nie zostaną zastosowane do tego dokumentu podczas przekazywania. W wyniku tego dokument nie zostanie zwrócony w wynikach wyszukiwania ani zbierania elektronicznych materiałów dowodowych i nie będzie można go otworzyć w Office dla sieci web.
 
-Następujące zmiany replikują się w ciągu jednej godziny: Nowe i usunięte etykiety wrażliwości oraz ustawienia zasad wrażliwości, które zawierają etykiety w zasadach.
+Aby uzyskać więcej informacji na temat chronometrażu etykiet, zobacz Kiedy można oczekiwać, że nowe etykiety i [zmiany zostaną wprowadzone](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect).
 
-Poniższe zmiany replikują się w ciągu 24 godzin: Zmiany ustawień wrażliwości etykiet dla istniejących etykiet.
-
-Ponieważ opóźnienie replikacji dla nowych etykiet wrażliwości wynosi tylko godzinę, nie można w tym przykładzie uruchomić scenariusza. Jednak w celu zabezpieczenia przed opublikowaniem nowych etykiet zalecamy opublikowanie ich tylko kilku użytkownikom testowym, odczekaj godzinę, a następnie zweryfikuj zachowanie etykiet na SharePoint i OneDrive. W ostatnim kroku udostępnij etykietę większej liczby użytkowników, dodając więcej użytkowników do istniejących zasad etykiet lub dodając etykietę do istniejących zasad etykiet dla standardowych użytkowników. Etykieta jest już synchronizowana z etykietą u użytkowników SharePoint i OneDrive.
+W celu zabezpieczenia przed opublikowaniem nowych etykiet zalecamy opublikowanie nowych etykiet tylko kilku użytkownikom testowym, odczekaj co najmniej godzinę, a następnie zweryfikuj zachowanie etykiet na SharePoint i OneDrive. Zanim etykieta będzie dostępna dla większej liczby użytkowników, poczekaj co najmniej dzień, dodając więcej użytkowników do istniejących zasad etykiet lub dodając etykietę do istniejących zasad etykiet dla standardowych użytkowników. Do czasu, gdy standardowi użytkownicy zobaczą etykietę, zostanie ona już zsynchronizowana z etykietą SharePoint i OneDrive.
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint zarządzanie prawami do informacji (IRM) i etykiety wrażliwości
 
@@ -215,7 +213,6 @@ Można jednak używać razem obu rozwiązań ochrony, a zachowanie jest następu
 - Jeśli włączono dowolne z dodatkowych ustawień biblioteki usługi IRM, które obejmują uniemożliwianie użytkownikom przekazywania dokumentów, które nie obsługują usługi IRM, te ustawienia są wymuszane.
 
 Dzięki temu zachowaniu możesz mieć pewność, że wszystkie pliki Office i PDF są chronione przed nieautoryzowanym dostępem, jeśli zostaną pobrane, nawet jeśli nie są oznaczone etykietą. Jednak przekazane pliki oznaczone etykietą nie będą korzystać z nowych możliwości.
-
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>Wyszukiwanie dokumentów według etykiety wrażliwości
 
@@ -245,7 +242,7 @@ Aby uzyskać więcej informacji na temat używania właściwości zarządzanych,
 
 ## <a name="remove-encryption-for-a-labeled-document"></a>Usuwanie szyfrowania dla dokumentu z etykietą
 
-Rzadko zdarza się, że administrator SharePoint musi usunąć szyfrowanie z dokumentu przechowywanego w SharePoint. Każdy użytkownik, który ma [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) przypisane prawo do korzystania z usługi Zarządzanie prawami dostępu do eksportu lub pełnej kontroli dla tego dokumentu, może usunąć szyfrowanie zastosowane przez usługę Azure Rights Management z usługi Azure Information Protection. Na przykład użytkownicy z jednym z tych praw użytkowania mogą zastąpić etykietę, która stosuje szyfrowanie, etykietą bez szyfrowania. Użytkownik [super może](/azure/information-protection/configure-super-users) również pobrać plik i zapisać kopię lokalną bez szyfrowania.
+Rzadko zdarza się, że administrator SharePoint musi usunąć szyfrowanie z dokumentu przechowywanego w SharePoint. Każdy użytkownik, który ma [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) przypisane prawo do korzystania z usługi Zarządzanie prawami do eksportu lub pełnej kontroli dla tego dokumentu, może usunąć szyfrowanie zastosowane przez usługę Azure Rights Management z usługi Azure Information Protection. Na przykład użytkownicy z jednym z tych praw użytkowania mogą zastąpić etykietę, która stosuje szyfrowanie, etykietą bez szyfrowania. Użytkownik [super może](/azure/information-protection/configure-super-users) również pobrać plik i zapisać kopię lokalną bez szyfrowania.
 
 Ewentualnie administrator globalny lub administrator SharePoint może [](/sharepoint/sharepoint-admin-role) uruchomić polecenie cmdlet [Unlock-SPOSensitivityLabeledFile,](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) co spowoduje usunięcie zarówno etykiety wrażliwości, jak i szyfrowania. To polecenie cmdlet jest uruchamiane nawet wtedy, gdy administrator nie ma uprawnień dostępu do witryny lub pliku albo jeśli usługa Azure Rights Management jest niedostępna.
 
@@ -261,7 +258,7 @@ Wymagania:
 
 - Szyfrowanie zostało zastosowane na etykiecie wrażliwości z ustawieniami szyfrowania zdefiniowanymi przez administratora (ustawienia [Przypisz uprawnienia teraz](encryption-sensitivity-labels.md#assign-permissions-now) etykiet). [To polecenie](encryption-sensitivity-labels.md#double-key-encryption) cmdlet nie obsługuje szyfrowania podwójnie klucza.
 
-Tekst justowania zostanie dodany do zdarzenia [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) inspekcji etykiety Usunięto etykietę wrażliwości z **pliku, a** akcja odszyfrowywania jest również rejestrowana w rejestrowaniu użycia ochrony dla usługi [Azure Information Protection](/azure/information-protection/log-analyze-usage).
+Tekst justowania zostanie dodany do zdarzenia [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) inspekcji w przypadku usunięcia etykiety wrażliwości z **pliku, a** akcja odszyfrowania jest również rejestrowana w rejestrowaniu użycia ochrony dla usługi [Azure Information Protection](/azure/information-protection/log-analyze-usage).
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Jak wyłączyć etykiety wrażliwości dla SharePoint i OneDrive (rezygnacja)
 

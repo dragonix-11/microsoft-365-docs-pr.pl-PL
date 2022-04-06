@@ -7,6 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -14,12 +15,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak używać szczegółowych informacji o uwierzytelnieniu SMTP i raportów na pulpicie nawigacyjnym przepływu poczty w Centrum zgodności usługi & w celu monitorowania nadawców wiadomości e-mail w organizacji, które wysyłają wiadomości e-mail przy użyciu uwierzytelnionego protokołu SMTP (SMTP AUTH).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30e3ff41068b80ad7c308fcb8163cb2748118e11
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e21e9fae80880b479070b1920379b925bf7074c7
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983298"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681133"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Szczegółowe informacje o klientach uwierzytelniania SMTP i raport w Centrum & zgodności
 

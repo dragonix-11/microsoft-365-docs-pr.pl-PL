@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Dowiedz się, jak używać filtrów do tworzenia, edytowania i usuwania niestandardowego widoku użytkownika w Microsoft 365.
-ms.openlocfilehash: 479f6c566cea407e75c6fb14f76db418c127aeb4
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: cf3e286a7d8f0e9b5f9741541974b2125df505ad
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017857"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499600"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Tworzenie, edytowanie i usuwanie niestandardowego widoku użytkownika
 
@@ -118,7 +118,7 @@ Możesz również filtrować według dodatkowych szczegółów profilu użytkown
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Omówienie centrum administracyjne platformy Microsoft 365](Omówienie centrum administracyjne platformy Microsoft 365](.. /admin-overview/admin-center-overview.md) (wideo)\
+[Omówienie Centrum administracyjne platformy Microsoft 365](../admin-overview/admin-center-overview.md) (wideo)\
 [Role administratorów](../add-users/about-admin-roles.md) (klip wideo)\ Informacje
 [Dostosowywanie Microsoft 365 organizacji](../setup/customize-your-organization-theme.md) (artykuł)
 

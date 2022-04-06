@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do Microsoft 365 Defender
+title: Rozpoczynanie pracy z usługą Microsoft 365 Defender
 ms.reviewer: ''
 description: Dowiedz się, jakie czynności należy wykonać, aby rozpocząć pracę z Microsoft 365 Defender
 keywords: wprowadzenie, usługa Microsoft 365 Defender, włączanie, wdrażanie i wdrażanie
@@ -20,14 +20,14 @@ ms.collection:
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 747f8e389b90e20aad7162277b3e62b0a80ae3c7
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 4429226eaebc254676fac5589a2a25ca51acdeb6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "63020819"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499930"
 ---
-# <a name="get-started-with-microsoft-365-defender"></a>Wprowadzenie do Microsoft 365 Defender
+# <a name="get-started-with-microsoft-365-defender"></a>Rozpoczynanie pracy z usługą Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Microsoft 365 Defender to ujednolicone środowisko, w którym możesz monitorowa
 
 Niezależnie od tego, czy jesteś nowym użytkownikiem pakietu produktów zabezpieczających firmy Microsoft, czy znasz poszczególne przepływy pracy, ten temat zawiera przewodnik po prostych krokach, które należy wykonać, aby rozpocząć pracę z usługą Microsoft 365 Defender.
 
-![Obraz rozpoczynania pracy z Microsoft 365 Defender czynności.](../../media/mtp/get-started-m365d.png)
+:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="Czynności, które należy wykonać, aby rozpocząć pracę z Microsoft 365 Defender portalem" lightbox="../../media/mtp/get-started-m365d.png":::
 
 Aby rozpocząć, musisz wykonać następujące czynności:
 
@@ -58,6 +58,6 @@ Włączenie Microsoft 365 Defender i wdrażanie usług zapewni Ci dostęp do nas
 | Funkcja | Opis |
 | ------ | ------ |
 | Ochrona punktu końcowego w usłudze Microsoft Defender | Pakiet ochrony punktu końcowego zbudowany wokół zaawansowanych czujnikach zachowania, analizy w chmurze i analizy zagrożeń |
-|Usługa Microsoft Defender dla Office 365 | Zaawansowana ochrona aplikacji i danych w aplikacji Office 365, w tym poczty e-mail i innych narzędzi do współpracy |
+|Ochrona usługi Office 365 w usłudze Microsoft Defender | Zaawansowana ochrona aplikacji i danych w aplikacji Office 365, w tym poczty e-mail i innych narzędzi do współpracy |
 | Microsoft Defender for Identity | Obrona przed zaawansowanymi zagrożeniami, naruszonymi tożsamościami i złośliwymi testerami za pomocą skorelowanych sygnałów usługi Active Directory |
-| Usługa Microsoft Defender dla aplikacji w chmurze | Identyfikuj i zwalczaj cyberataki w twoich usługach w chmurze firmy Microsoft i innych firm |
+| Microsoft Defender for Cloud Apps | Identyfikuj i zwalczaj cyberataki w twoich usługach w chmurze firmy Microsoft i innych firm |

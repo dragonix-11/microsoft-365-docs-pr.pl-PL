@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a00dc92383e71d105faf0975468e47bc38ed60e
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: 0f5d82e9baaca7209f8a91a7f1984aa38e3102e6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "63015793"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681749"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Oceń program Microsoft Defender pod Office 365
 
@@ -92,10 +92,6 @@ Będziesz mieć 30-dniowy okres z ocenymi, aby monitorować zaawansowane zagroż
 
 Potrzebne są następujące role:
 
-<br>
-
-****
-
 |Zadanie|Rola (w Exchange Online)|
 |---|---|
 |Uzyskaj bezpłatną wersję próbną lub kup program Microsoft Defender dla Office 365 (plan 2)|Rola administratora rozliczeń LUB rola administratora globalnego|
@@ -103,7 +99,6 @@ Potrzebne są następujące role:
 |Edytowanie zasad oceny|Rola zdalnej i zaakceptowanych domen; Rola administratora zabezpieczeń|
 |Usuwanie zasad oceny|Rola zdalnej i zaakceptowanych domen; Rola administratora zabezpieczeń |
 |Wyświetlanie raportu oceny|Rola administratora zabezpieczeń LUB rola czytnika zabezpieczeń|
-|
 
 ### <a name="enhanced-filtering-for-connectors"></a>Ulepszone filtrowanie łączników
 
