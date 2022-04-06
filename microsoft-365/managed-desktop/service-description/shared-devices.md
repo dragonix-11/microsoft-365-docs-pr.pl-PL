@@ -9,126 +9,136 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 5ed7373bdcf9a8f2c8eda53c0bd249c6ba825992
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: ad9cb5e69585f0c014050b51b719e539111cf9fa
+ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525588"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64687190"
 ---
 # <a name="shared-devices"></a>Urządzenia udostępnione
 
-Microsoft Managed Desktop umożliwia zarejestrowanie urządzeń w "trybie urządzenia udostępnionego", podobnie jak w trybie urządzenia udostępnionego oferowanym przez [Microsoft Intune.](/mem/intune/configuration/shared-user-device-settings)
+Microsoft Managed Desktop umożliwia rejestrowanie urządzeń w "trybie urządzenia udostępnionego", podobnie jak w przypadku trybu urządzenia udostępnionego oferowanego przez [Microsoft Intune](/mem/intune/configuration/shared-user-device-settings).
 
-Urządzenia w tym trybie są zoptymalizowane pod kątem sytuacji, w których użytkownicy nie są powiązani z jednym biurkiem i często zmieniają urządzenia. Mogą to być na przykład pracownicy pierwszej linii (na przykład pracownicy bankowi lub pracownicy, którzy się w nim znajduje). W tym trybie możesz zastosować dowolne profile Microsoft Managed Desktop do [](profiles.md) urządzeń. W przypadku urządzeń zarejestrowanych w tym trybie występują pewne istotne różnice:
+Urządzenia w tym trybie są zoptymalizowane pod kątem sytuacji, w których użytkownicy nie są powiązani z pojedynczym biurkiem i często zmieniają urządzenia. Na przykład pracownicy pierwszej linii, tacy jak kasjerzy bankowi lub personel pielęgniarski. W tym trybie można zastosować [dowolny z profilów](profiles.md) Microsoft Managed Desktop do urządzeń. Urządzenia zarejestrowane w tym trybie mają pewne istotne różnice:
 
-- [Przestrzeń dyskowa](#device-storage) urządzeń jest zoptymalizowana dla użytkowników udostępnionych.
+- [Magazyn urządzeń](#device-storage) jest zoptymalizowany pod kątem użytkowników udostępnionych.
 - [Nieaktywne konta](#deletion-of-inactive-accounts) są usuwane.
-- [Konta gości](#guest-accounts) nie są domyślnie obsługiwane.
-- [Microsoft 365 Aplikacje na](#microsoft-365-apps-for-enterprise) urządzenia współużytkowane są zoptymalizowane pod kątem licencjonowania przedsiębiorstwa.
+- [Konta gościa](#guest-accounts) nie są domyślnie obsługiwane.
+- [Microsoft 365 Aplikacje](#microsoft-365-apps-for-enterprise) do licencjonowania przedsiębiorstwa są zoptymalizowane pod kątem urządzeń udostępnionych.
 
-Ponieważ dokonasz wyboru korzystania z trybu urządzenia udostępnionego w punkcie rejestracji w programie Microsoft Managed Desktop, jeśli chcesz później wyjść z tego trybu, musisz go ponownie derejestrować i zarejestrować.
+Ponieważ wybierasz tryb urządzenia udostępnionego w punkcie rejestracji w Microsoft Managed Desktop, jeśli chcesz później zmienić tryb, musisz go ponownie zarejestrować i zarejestrować.
 
 ## <a name="when-to-use-shared-device-mode"></a>Kiedy używać trybu urządzenia udostępnionego
 
-W każdej sytuacji, w której użytkownicy często zmieniają urządzenia.
+Każda sytuacja, w której użytkownicy często zmieniają urządzenia.
 
-Na przykład informacje bankowe mogą być w jednej lokalizacji służącej do zarządzania wpłatymi, ale przesuną się na back office, aby pomóc klientom z kredytem hipotecznym. W każdej z tych lokalizacji urządzenie działa w różnych aplikacjach i jest zoptymalizowane pod kątem tych zadań, chociaż jest używane przez wiele osób.
+Na przykład kasjerzy bankowi mogą znajdować się w jednej lokalizacji zarządzającej depozytami, ale przenieść się do zaplecza, aby pomóc klientom z kredytem hipotecznym. W każdej z tych lokalizacji urządzenie uruchamia różne aplikacje i jest zoptymalizowane pod kątem tych zadań, chociaż jest używane przez wiele osób.
 
-Pracownicy osobowi zazwyczaj poruszają się między pomieszczeniami i biurami w interakcji z pacjentami. Mogą zalogować się na stacji roboczej w biurze, ale połączyć się ze swoim pulpitem zdalnym i zrobić notatki, a następnie powtórzyć ten proces w innym pomieszczeniu z innym pacjentem.
+Personel pielęgniarski zazwyczaj przemieszcza się między pokojami i biurami podczas interakcji z pacjentami. Mogą zalogować się do stacji roboczej w biurze, ale połączyć się ze swoim pulpitem zdalnym i robić notatki i powtarzać ten proces w innym pomieszczeniu z innym pacjentem.
 
 ## <a name="when-not-to-use-shared-device-mode"></a>Kiedy nie używać trybu urządzenia udostępnionego
 
 Tryb urządzenia udostępnionego nie jest dobrym wyborem w takich sytuacjach:
 
 - Gdy pliki użytkownika muszą być przechowywane lokalnie, a nie w chmurze
-- Jeśli środowisko użytkownika musi być inne dla różnych użytkowników urządzenia
-- Jeśli zestaw aplikacji wymaga znacznie poszczególnych użytkowników
+- Jeśli środowisko użytkownika musi być inne dla różnych użytkowników na urządzeniu
+- Jeśli zestaw aplikacji, których potrzebuje każdy użytkownik, znacznie się różni
 
-## <a name="enroll-new-devices-in-shared-device-mode"></a>Rejestrowanie nowych urządzeń w trybie urządzenia udostępnionego
+## <a name="register-new-devices-in-shared-device-mode"></a>Rejestrowanie nowych urządzeń w trybie urządzenia udostępnionego
 
-Niezależnie od tego, czy Rejestracja jest przez Ciebie czy partnera, możesz zdecydować się na użycie trybu urządzenia udostępnionego.
+Począwszy od 2203 r., niezależnie od tego, czy ty lub partner obsługujesz rejestrację urządzeń, możesz użyć profilu [trybu samodzielnego wdrażania rozwiązania Windows Autopilot](/mem/autopilot/self-deploying) w Microsoft Managed Desktop.
 
-Jeśli rejestrujesz urządzenia samodzielnie, wykonaj czynności opisane w tece Ręczna [rejestracja, a](../get-started/manual-registration.md) następnie dodaj je do grupy Nowoczesne urządzenia miejsca pracy **— Tryb współużytkowania** urządzenia.
+Jeśli samodzielnie rejestrujesz urządzenia, musisz zaimportować nowe urządzenia do bloku Windows Urządzenia rozwiązania Autopilot.
 
-> [!WARNING]
-> Nie próbuj konwertować żadnych istniejących Microsoft Managed Desktop na tryb urządzenia udostępnione, po prostu dodając je do tej grupy. Stosowane zasady mogą potencjalnie powodować trwałe OneDrive plików.
+**Aby zaimportować nowe urządzenia do bloku urządzenia rozwiązania Windows Autopilot:**
 
-Jeśli masz urządzenia zarejestrowania przez partnera, wykonaj czynności opisane w tece [Rejestracja](../get-started/partner-registration.md) partnera, ale dołącz do tagu grupy wpis **-Shared** , jak pokazano w poniższej tabeli:
+1. Zbierz [skrót sprzętu](../get-started/manual-registration.md#obtain-the-hardware-hash) dla nowych urządzeń, do które chcesz przypisać profil trybu samodzielnego wdrażania rozwiązania Windows Autopilot.
+2. Przejdź do [portalu Microsoft Endpoint Manager](https://endpoint.microsoft.com).
+2. Wybierz pozycję **Urządzenia** z menu nawigacji po lewej stronie.
+3. W sekcji **Według platformy** wybierz pozycję **Windows**. Następnie wybierz pozycję **Windows Rejestracja**.
+4. W sekcji **Windows Autopilot Deployment Program** wybierz pozycję **Urządzenia**.
+5. [Zaimportuj](../get-started/manual-registration.md#register-devices-by-using-the-admin-portal) plik .CSV zawierający wszystkie skróty sprzętowe zebrane w kroku 1.
+6. Po przekazaniu Windows urządzeń z rozwiązaniem Autopilot należy edytować atrybut tagu grupy zaimportowanych urządzeń, aby Microsoft Managed Desktop mogli je zarejestrować przy użyciu profilu trybu samodzielnego wdrażania rozwiązania Windows Autopilot. Poniżej przedstawiono atrybuty tagów grupy. Musisz dołączyć **element -Shared** do tagu grupy, jak pokazano w poniższej tabeli:
 
 | Profil urządzenia | Tag grupy rozwiązania Autopilot (tryb standardowy) | Tag grupy (tryb urządzenia udostępnionego) |
 | ----- | ----- | ----- |
-| Poufne dane | Microsoft365Managed_SensitiveData |  Microsoft365Managed_SensitiveData-Shared |
-| Użytkownik zasilania | Microsoft365Managed_PowerUser | Nieobsługiwane |
+| Dane poufne | Microsoft365Managed_SensitiveData |  Microsoft365Managed_SensitiveData-Shared |
+| Użytkownik usługi Power | Microsoft365Managed_PowerUser | Nieobsługiwane |
 | Standard  | Microsoft365Managed_Standard | Microsoft365Managed_Standard-Shared |
 
-## <a name="consequences-of-shared-device-mode"></a>Konsekwencje trybu współużytkowania urządzenia
+> [!WARNING]
+> Nie próbuj edytować atrybutu karty grupy, dołączając **polecenie -Shared** do urządzeń wcześniej zaimportowanych do rozwiązania Windows Autopilot. Urządzenia już zaimportowane do rozwiązania Windows Autopilot przy użyciu jednego z tagów grupy Microsoft Managed Desktop, począwszy od *Microsoft365Managed_*, ale bez początkowego dołączania **elementu -Shared**, są już częścią innej grupy Azure Active Directory. Ta grupa Azure Active Directory nie ma przypisanego profilu trybu samodzielnego wdrażania rozwiązania Windows Autopilot. Jeśli konieczne jest ponowne przeznaczenie istniejącego urządzenia jako urządzenia udostępnionego, należy usunąć i ponownie zarejestrować urządzenie w rozwiązaniu Windows Autopilot.
 
-### <a name="device-storage"></a>Pamięć urządzenia
+Jeśli masz urządzenia zarejestrowane przez partnera, wykonaj kroki opisane w temacie [Rejestracja partnera](../get-started/partner-registration.md), ale dołącz **ciąg -Shared** do tagu grupy, jak pokazano w powyższej tabeli.
 
-Użytkownicy urządzeń udostępnionych muszą mieć kopię zapasową swoich danych w chmurze, aby można było obserwować je na innych urządzeniach. Po zarejestrowaniu urządzeń w trybie urządzenia udostępnionego włącz funkcje plików na OneDrive oraz przekierowywania znanego [folderu](/onedrive/redirect-known-folders).[](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) Ta metoda minimalizuje wpływ każdego profilu użytkownika na magazyn urządzenia. Urządzenia w trybie urządzenia udostępnionego automatycznie usuwają profile użytkowników, jeśli wolne miejsce na dysku jest poniżej 25%. Ta aktywność jest zaplanowana na północ w godzinach lokalnych na urządzeniu, chyba że ilość miejsca do magazynowania zostanie bardzo ograniczona.
+## <a name="consequences-of-shared-device-mode"></a>Konsekwencje trybu urządzenia udostępnionego
 
-Microsoft Managed Desktop tych operacji jest używany program CSP [SharedPC](/mem/intune/configuration/shared-user-device-settings-windows), dlatego należy się upewnić, że nie należy korzystać z tych zasad CSP samodzielnie.
+### <a name="device-storage"></a>Magazyn urządzeń
+
+Użytkownicy urządzeń udostępnionych muszą mieć kopie zapasowe danych w chmurze, aby mogli śledzić je na innych urządzeniach. Po zarejestrowaniu urządzeń w trybie urządzenia udostępnionego należy włączyć funkcje przekierowania [plików na żądanie](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) i [znanych folderów](/onedrive/redirect-known-folders) OneDrive. Takie podejście minimalizuje wpływ każdego profilu użytkownika na magazyn urządzeń. Urządzenia w trybie urządzenia udostępnionego automatycznie usuwają profile użytkowników, jeśli wolne miejsce na dysku spadnie poniżej 25%. To działanie jest zaplanowane na północ w czasie lokalnym urządzenia, chyba że magazyn stanie się krytycznie ograniczony.
+
+Microsoft Managed Desktop używa dostawcy CSP [sharedPC](/mem/intune/configuration/shared-user-device-settings-windows) do wykonywania tych operacji, więc upewnij się, że nie używasz tych dostawców CSP samodzielnie.
 
 > [!IMPORTANT]
-> Szkolenie użytkowników, że po pobraniu dużego pliku powinni potwierdzić, że przed wylogowanium widzą oni zieloną ikonę czeku. Jeśli jego konto zostanie usunięte w ramach operacji oczyszczania i plik nie zostanie całkowicie przekazany OneDrive, plik zostanie trwale utracony.
+> Wytrenuj użytkowników, że po pobraniu dużego pliku przed wylogowaniem powinni potwierdzić, że widzą zieloną ikonę wyboru w pliku. Jeśli ich konto zostanie usunięte w ramach operacji oczyszczania, a plik nie zostanie całkowicie przekazany w OneDrive, plik zostanie trwale utracony.
 
 ### <a name="deletion-of-inactive-accounts"></a>Usuwanie nieaktywnych kont
 
-Tryb urządzenia udostępnionego usuwa wszelkie konta, na które nie było zalogowanych dłużej niż 30 dni.
+Tryb urządzenia udostępnionego usuwa wszystkie konta, które nie zostały zalogowane przez więcej niż 30 dni.
 
-### <a name="guest-accounts"></a>Konta gości
+### <a name="guest-accounts"></a>Konta gościa
 
-Urządzenia w trybie urządzenia udostępnionego zezwalają tylko na konta przyłączone do domeny. Jeśli potrzebujesz kont gościa na urządzeniu, możesz złożyć wniosek o [](../working-with-managed-desktop/admin-support.md) zmianę i poprosić o ich włączoną obsługę.
+Urządzenia w trybie urządzenia udostępnionego zezwalają tylko na konta przyłączone do domeny. Jeśli potrzebujesz kont gościa na urządzeniu, możesz złożyć [żądanie zmiany](../working-with-managed-desktop/admin-support.md) , aby zażądać ich włączenia.
 
 ### <a name="microsoft-365-apps-for-enterprise"></a>Aplikacje usługi Microsoft 365 dla przedsiębiorstw
 
-[Aplikacje Microsoft 365 dla przedsiębiorstw](/microsoft-365/managed-desktop/get-started/m365-apps) zwykle pozwala podanemu użytkownikowi zainstalować te aplikacje tylko na pięciu urządzeniach jednocześnie. W trybie współużytkowania urządzeń aplikacje nie są wliczane do limitu, więc mogą z nich korzystać podczas roamingu między urządzeniami. Wdrażanie i aktualizacje Aplikacje Microsoft 365 dla przedsiębiorstw działają normalnie.
+[Aplikacje Microsoft 365 dla przedsiębiorstw](/microsoft-365/managed-desktop/get-started/m365-apps) zwykle umożliwia danemu użytkownikowi instalowanie tych aplikacji tylko na pięciu urządzeniach w tym samym czasie. W trybie urządzenia udostępnionego aplikacje nie są wliczane do limitu, więc mogą z nich korzystać podczas roamingu między urządzeniami. Wdrażanie i aktualizacje Aplikacje Microsoft 365 dla przedsiębiorstw działają jak zwykle.
 
 ### <a name="device-profiles"></a>Profile urządzeń
 
-W trybie urządzenia udostępnionego możesz mieć tylko jeden [profil](profiles.md) urządzenia na danym urządzeniu. Ponadto profil urządzenia użytkownika w programie Power nie jest obecnie obsługiwany w trybie urządzenia udostępnionego.
+W trybie urządzenia udostępnionego można mieć tylko jeden [profil urządzenia](profiles.md) na danym urządzeniu. Ponadto profil urządzenia użytkownika usługi Power nie jest obecnie obsługiwany w trybie urządzenia udostępnionego.
 
 ### <a name="apps-and-policies-assigned-to-users"></a>Aplikacje i zasady przypisane do użytkowników
 
-Na urządzeniach udostępnionych do grup urządzeń, a nie do grup użytkowników, należy przypisać wszystkie aplikacje lub *zasady, które* zarządzasz samodzielnie. Przypisywanie do grup urządzeń zapewnia, że każdy użytkownik ma bardziej spójne środowisko. Wyjątkiem jest [Portal firmy](#deploying-apps-with-company-portal).
+Na urządzeniach udostępnionych należy przypisać wszystkie aplikacje lub zasady, którymi zarządzasz samodzielnie, do *grup urządzeń*, a nie do grup użytkowników. Przypisanie do grup urządzeń gwarantuje, że każdy użytkownik ma bardziej spójne środowisko. Wyjątek jest [Portal firmy](#deploying-apps-with-company-portal).
 
 ## <a name="limitations-of-shared-device-mode"></a>Ograniczenia trybu urządzenia udostępnionego
 
 ### <a name="windows-hello"></a>Windows Hello
 
-Windows Hello korzysta z emulacji kart inteligentnych do bezpiecznego buforowania pinów [użytkowników,](/windows/security/identity-protection/hello-for-business/hello-faq) minimalizując liczbę uwierzytelnień użytkowników. Jednak Windows tylko 10 kart inteligentnych jednocześnie na danym urządzeniu. Gdy 11. użytkownik się pojawi po raz pierwszy, jedno z istniejących kont utraci kartę inteligentną. Będzie mógł się zalogować, ale numer PIN nie będzie buforowany.
+Windows Hello używa emulacji kart inteligentnych do [bezpiecznego buforowania numerów PIN użytkowników](/windows/security/identity-protection/hello-for-business/hello-faq), minimalizując liczbę uwierzytelnień użytkowników. Jednak Windows zezwala tylko na 10 kart inteligentnych jednocześnie na danym urządzeniu. Gdy 11 użytkownik zaloguje się po raz pierwszy, jedno z istniejących kont utraci kartę inteligentną. Będą mogli się zalogować, ale ich numer PIN nie zostanie zapisany w pamięci podręcznej.
 
 ### <a name="universal-print"></a>Drukowanie uniwersalne
 
-Gdy narzędzie Drukowanie uniwersalne instaluje drukarkę dla jednego użytkownika na urządzeniu udostępnionym, która jest dostępna dla wszystkich użytkowników tego urządzenia. Użytkownicy korzystający z udostępnionych urządzeń nie mogą odizolować drukarek od innych użytkowników.
+Gdy drukowanie uniwersalne instaluje drukarkę dla jednego użytkownika na urządzeniu udostępnionym, drukarka staje się dostępna dla wszystkich użytkowników tego urządzenia. Nie ma możliwości izolowania drukarek między użytkownikami na urządzeniach udostępnionych.
 
-## <a name="limitations-of-shared-device-mode-in-the-public-preview-release"></a>Ograniczenia trybu współużytkowania urządzenia w publicznej wersji Preview
+## <a name="limitations-of-shared-device-mode-in-the-public-preview-release"></a>Ograniczenia trybu urządzenia udostępnionego w publicznej wersji zapoznawczej
 
-### <a name="primary-user"></a>Użytkownik główny
+### <a name="primary-user"></a>Użytkownik podstawowy
 
-Każde Microsoft Intune ma głównego użytkownika, który jest przypisywany po skonfigurowaniu urządzenia przez funkcję Autopilot. Jednak w przypadku współużytknia urządzeń usługa Intune wymaga usunięcia podstawowego użytkownika.
+Każde urządzenie Microsoft Intune ma użytkownika podstawowego, który jest przypisywany, gdy urządzenie jest skonfigurowane przez rozwiązanie Autopilot. Jednak gdy urządzenia są współużytkowane, Intune wymaga usunięcia użytkownika podstawowego.
 
 > [!IMPORTANT]
-> Gdy tryb urządzenia udostępnionego jest w publicznej wersji zapoznawczej, pamiętaj o usunięciu użytkownika podstawowego, korzystając z następujących kroków: zaloguj się do centrum administracyjnego usługi Microsoft Endpoint Manager, > wybierz pozycję **UrządzeniaWszystkie** urządzenia, wybierz urządzenie, a następnie wybierz pozycję **PropertiesRemove**> **primary user** (Usuń użytkownika podstawowego) i usuń wymienionego tam użytkownika.
+> Jeśli tryb urządzenia udostępnionego jest w publicznej wersji zapoznawczej, usuń użytkownika podstawowego, wykonując następujące kroki: zaloguj się do centrum administracyjnego Microsoft Endpoint Manager, wybierz pozycję **UrządzeniaWszystkie**> urządzenia, wybierz urządzenie, a następnie wybierz pozycję **WłaściwościUsuń**> użytkownika podstawowego i usuń wymienionego tam użytkownika.
 
-### <a name="deploying-apps-with-company-portal"></a>Wdrażanie aplikacji za pomocą aplikacji Portal firmy
+### <a name="deploying-apps-with-company-portal"></a>Wdrażanie aplikacji za pomocą Portal firmy
 
-Niektóre aplikacje prawdopodobnie nie muszą być obecne na wszystkich urządzeniach, więc możesz preferować, aby użytkownicy instalują te aplikacje tylko wtedy, gdy ich potrzebują, z usługi [Portal firmy](/mem/intune/user-help/install-apps-cpapp-windows).
+Niektóre aplikacje prawdopodobnie nie muszą być obecne na wszystkich urządzeniach, więc możesz chcieć, aby użytkownicy instalowali te aplikacje tylko wtedy, gdy ich potrzebują z [Portal firmy](/mem/intune/user-help/install-apps-cpapp-windows).
 
 Microsoft Managed Desktop domyślnie wyłącza Portal firmy dla urządzeń w trybie urządzenia udostępnionego. Jeśli chcesz włączyć Portal firmy, możesz złożyć [żądanie zmiany](../working-with-managed-desktop/admin-support.md). Należy jednak pamiętać o pewnych ograniczeniach tej funkcji w tej publicznej wersji zapoznawczej:
 
-- Aby udostępnić aplikację użytkownikom w usłudze Portal firmy, przypisz grupę użytkowników do tej aplikacji w usłudze Intune, [a](/mem/intune/apps/apps-deploy) następnie dodaj poszczególnych użytkowników do tej grupy użytkowników.
-- Urządzenia nie mogą mieć [podstawowego użytkownika](#primary-user).
-- Aby odinstalować aplikację, która została zainstalowana przez Portal firmy, musisz odinstalować tę aplikację od wszystkich użytkowników na tym urządzeniu.
+- Aby udostępnić aplikację użytkownikom w Portal firmy, [przypisz grupę użytkowników](/mem/intune/apps/apps-deploy) do tej aplikacji w Intune, a następnie dodaj każdego użytkownika do tej grupy użytkowników.
+- Urządzenia nie mogą mieć [użytkownika podstawowego](#primary-user).
+- Aby odinstalować aplikację zainstalowaną przez użytkownika za pośrednictwem Portal firmy, należy odinstalować aplikację od wszystkich użytkowników na tym urządzeniu.
 
 > [!CAUTION]
-> Portal firmy nie obsługuje aplikacji przypisanych do grup urządzeń, jeśli są dostępne.
+> Portal firmy nie obsługuje aplikacji przypisanych do grup urządzeń jako dostępne.
 
-### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>Ponowne rozsuniecie Aplikacje Microsoft 365 dla Enterprise
+### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>Ponowne wdrażanie Aplikacje Microsoft 365 dla Enterprise
 
-Jeśli podczas publicznej wersji zapoznawczej należy ponownie Aplikacje Microsoft 365, użytkownicy muszą skontaktować się z lokalnym personelem pomocy technicznej, aby poprosić agenta o zainstalowanie pakietu Aplikacje Microsoft 365 dla przedsiębiorstw na tym urządzeniu.
+W publicznej wersji zapoznawczej, jeśli Aplikacje Microsoft 365 muszą zostać ponownie wdrożone, użytkownicy muszą skontaktować się z lokalnym personelem pomocy technicznej, aby zażądać podniesienia poziomu agenta i ponownej instalacji Aplikacje Microsoft 365 dla przedsiębiorstw na tym urządzeniu.
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
 
-Gdy użytkownik Teams aplikacji po raz pierwszy, zostanie wyświetlony monit o zaktualizowanie aplikacji, zanim będzie mógł jej używać. Gdy zezwalają na aktualizację, Teams się w tle.
+Gdy użytkownik uruchomi Teams po raz pierwszy, zostanie wyświetlony monit o zaktualizowanie aplikacji, zanim będzie mógł z niej korzystać. Po zezwoleniu na aktualizację Teams będzie aktualizowana w tle.
