@@ -1,5 +1,5 @@
 ---
-title: Badanie alertów programu Microsoft Defender dla punktów końcowych
+title: Badanie Ochrona punktu końcowego w usłudze Microsoft Defender alertów
 description: Za pomocą opcji badania możesz uzyskać szczegółowe informacje na temat alertów mających wpływ na Twoją sieć, ich znaczenie i sposób ich rozwiązywania.
 keywords: badanie, analiza, urządzenia, urządzenie, kolejka alertów, pulpit nawigacyjny, adres IP, plik, przesyłanie, przesyłanie, deep analysis, oś czasu, wyszukiwanie, domena, adres URL, ADRES IP
 ms.prod: m365-security
@@ -17,20 +17,20 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f228d0ca44589b9c140226c2b39984c717c7d9f8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: e2ebdffa171266fdc0ec77047c9fecc5be9e56ba
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011379"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471170"
 ---
-# <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Badanie alertów w programie Microsoft Defender dla punktu końcowego
+# <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Badanie alertów w programie Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatealerts-abovefoldlink)
@@ -39,7 +39,7 @@ Badanie alertów mających wpływ na sieć, zrozumienie ich znaczenie i sposób 
 
 Wybierz alert z kolejki alertów, aby przejść do strony alertów. Ten widok zawiera tytuł alertu, zasoby, okienko boczne szczegółów i historię alertu.
 
-Na stronie alertu rozpocznij badanie, wybierając odpowiednie zasoby lub dowolne jednostki w widoku drzewa alertów. Okienko szczegółów zostanie automatycznie wypełnione  szczegółami na temat wybranej treści. Aby sprawdzić, jakiego rodzaju informacje można wyświetlić tutaj, przeczytaj Przeglądanie [alertów w programie Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/review-alerts).
+Na stronie alertu rozpocznij badanie, wybierając odpowiednie zasoby lub dowolne jednostki w widoku drzewa alertów. Okienko szczegółów zostanie automatycznie wypełnione  szczegółami na temat wybranej treści. Aby sprawdzić, jakiego rodzaju informacje można wyświetlić w tym miejscu, przeczytaj przeglądanie [alertów](/microsoft-365/security/defender-endpoint/review-alerts) w Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 ## <a name="investigate-using-the-alert-story"></a>Badanie za pomocą historii alertów
 
@@ -52,7 +52,7 @@ Rozwijaj encje, aby wyświetlać szczegóły jednym rzutem oka. Wybranie encji s
 > [!NOTE]
 > Sekcja artykułu alertu może zawierać więcej niż jeden alert, a dodatkowe alerty dotyczące tego samego drzewa wykonywania pojawiają się przed wybranym alertem lub po nim.
 
-![Przykładowa historia alertu z alertem w fokusie i niektórymi rozwiniętymi kartami.](images/alert-story-tree.png)
+:::image type="content" source="images/alert-story-tree.png" alt-text="Alert z alertem w centrum uwagi i rozwiniętymi kartami" lightbox="images/alert-story-tree.png":::
 
 ## <a name="take-action-from-the-details-pane"></a>Działanie z okienka szczegółów
 
@@ -62,19 +62,19 @@ Po zakończeniu badania wróć do rozpoczętego alertu, oznacz stan alertu jako 
 
 Aby sklasyfikować ją jako prawdziwy alert, można także wybrać wyznaczanie, jak pokazano na poniższej ilustracji.
 
-![Fragment okienka szczegółów z rozstrzygniętym alertem i rozwiniętą rozwijanej listy określania.](images/alert-details-resolved-true.png)
+:::image type="content" source="images/alert-details-resolved-true.png" alt-text="Okienko szczegółów z rozstrzygniętym alertem i rozwiniętą menu rozwijanego wyznaczania" lightbox="images/alert-details-resolved-true.png":::
 
 W przypadku wystąpienia fałszywych alertów alertów z aplikacja LOB utwórz regułę częściowego alertu, aby uniknąć tego typu alertu w przyszłości.
 
-![Akcje i klasyfikacja w okienku szczegółów z wyróżniona regułą reguły.](images/alert-false-suppression-rule.png)
+:::image type="content" source="images/alert-false-suppression-rule.png" alt-text="Akcje i klasyfikacja w okienku szczegółów z wyróżniona regułą reguły ekgresu" lightbox="images/alert-false-suppression-rule.png":::
 
 > [!TIP]
 > Jeśli występują problemy, które nie zostały opisane powyżej, 🙂 użyj przycisku, aby przekazać opinię lub otworzyć zgłoszenie do pomocy technicznej.
 
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [Wyświetlanie i organizowanie kolejki alertów programu Microsoft Defender dla punktu końcowego](alerts-queue.md)
-- [Zarządzanie alertami programu Microsoft Defender dla punktów końcowych](manage-alerts.md)
+- [Wyświetlanie i organizowanie kolejki Ochrona punktu końcowego w usłudze Microsoft Defender alertów](alerts-queue.md)
+- [Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender wiadomości](manage-alerts.md)
 - [Badanie pliku skojarzonego z alertem programu Defender dla punktu końcowego](investigate-files.md)
 - [Badanie urządzeń na liście Usługi Defender dla urządzeń końcowych](investigate-machines.md)
 - [Badanie adresu IP skojarzonego z alertem programu Defender dla punktu końcowego](investigate-ip.md)

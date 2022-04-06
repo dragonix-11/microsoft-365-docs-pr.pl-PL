@@ -1,6 +1,6 @@
 ---
-title: Monitorowanie zabezpieczeń przeglądania Internetu w programie Microsoft Defender dla punktu końcowego
-description: Monitorowanie zabezpieczeń przeglądania Internetu za pomocą ochrony sieci Web w programie Microsoft Defender for Endpoint
+title: Monitorowanie zabezpieczeń przeglądania Internetu w programie Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Używanie ochrony sieci Web w programie Ochrona punktu końcowego w usłudze Microsoft Defender do monitorowania zabezpieczeń przeglądania Internetu
 keywords: ochrona sieci Web, ochrona przed zagrożeniami internetowymi, przeglądanie Internetu, monitorowanie, raporty, karty, lista domen, zabezpieczenia, wyłudzanie informacji, złośliwe oprogramowanie, exploit, witryny internetowe, ochrona sieci, Edge, Internet Explorer, Chrome, Firefox, przeglądarka internetowa
 search.appverid: met150
 ms.prod: m365-security
@@ -15,33 +15,33 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d10354f68dd5ba26db7f4260425559167c8888c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cf702dbcbec1bf9141827610c1304a0f19e13b90
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63007880"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475878"
 ---
 # <a name="monitor-web-browsing-security"></a>Monitorowanie zabezpieczeń przeglądania Internetu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Ochrona sieci Web umożliwia monitorowanie zabezpieczeń przeglądania sieci Web organizacji za pomocą raportów w obszarze Raporty **> ochrony sieci Web** w portalu Microsoft 365 Defender sieci Web. Raport zawiera karty zawierające statystyki wykrywania zagrożeń w sieci Web.
 
 - **Wykrywanie zagrożeń internetowych z** czasem — na tej popularnej karcie jest wyświetlana liczba zagrożeń internetowych wykrytych według typu w wybranym okresie (Ostatnie 30 dni, Ostatnie 3 miesiące, Ostatnie 6 miesięcy)
 
-  :::image type="content" alt-text="Obraz karty pokazującej wykrywanie zagrożeń internetowych w czasie." source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
+  :::image type="content" source="images/wtp-blocks-over-time.png" alt-text="Karta z wykrywaniem ochrony przed zagrożeniami w sieci Web z  czasem" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Podsumowanie ochrony przed zagrożeniami** internetowymi — na tej karcie jest wyświetlana całkowita liczba wykrycia zagrożeń internetowych w ciągu ostatnich 30 dni, przedstawiająca rozkład między różnymi typami zagrożeń internetowych. Zaznaczenie wycinka powoduje otwarcie listy domen znalezionych razem ze złośliwymi lub niechcianymi witrynami sieci Web.
 
-  :::image type="content" alt-text="Obraz przedstawiający kartę z podsumowaniem ochrony przed zagrożeniami internetowymi." source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
+  :::image type="content" source="images/wtp-summary.png" alt-text="Karta z podsumowaniem ochrony przed zagrożeniami sieci Web"  lightbox="images/wtp-summary.png":::
 
 > [!NOTE]
 > Może upłynie do 12 godzin, zanim blokadę odzwierciedli się na kartach lub na liście domen.

@@ -20,19 +20,19 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d9d8ee89aaa551c5fecf7c38fe0dbba97ed7fc8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: dbaf395f10eaac7ff508b03f6f079f94bdd6cebd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032148"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475812"
 ---
-# <a name="impersonation-insight-in-defender-for-office-365"></a>Informacje dotyczące personifikacji w uchcie defender dla Office 365
+# <a name="impersonation-insight-in-defender-for-office-365"></a>Szczegółowe informacje o personifikacji w Ochrona usługi Office 365 w usłudze Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
@@ -45,7 +45,7 @@ Personifikacja to miejsce, w którym nadawca wiadomości e-mail wygląda bardzo 
 
 Personifikacja domeny różni się od [spoofingu domeny](anti-spoofing-protection.md), ponieważ spersonifikowana domena jest zwykle rzeczywistą, zarejestrowaną domeną. Wiadomości od nadawców w domenie personifikacji mogą i często przechodzą zwykłe testy uwierzytelniania poczty e-mail, które w przeciwnym razie identyfikują próby fałszowania (SPF, DKIM i DMARC).
 
-Ochrona przed personifikacjami jest częścią ustawień zasad ochrony przed wyłudzaniem informacji, które są dostępne wyłącznie w programie Microsoft Defender dla Office 365. Aby uzyskać więcej informacji na temat tych ustawień, zobacz Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji w [programie Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+Ochrona przed personifikacjami jest częścią ustawień zasad ochrony przed wyłudzaniem informacji, które są wyłącznie Ochrona usługi Office 365 w usłudze Microsoft Defender. Aby uzyskać więcej informacji na temat tych ustawień, zobacz [Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 Za pomocą szczegółowych informacji o personifikacji w portalu Microsoft 365 Defender możesz szybko identyfikować wiadomości od spersonifikowanych nadawców lub domen nadawców skonfigurowanych do ochrony personifikacji.
 
@@ -61,9 +61,9 @@ Za pomocą szczegółowych informacji o personifikacji w portalu Microsoft 365 D
 
   Aby uzyskać więcej informacji, [zobacz Uprawnienia w portalu Microsoft 365 Defender użytkowników](permissions-microsoft-365-security-center.md).
 
-  **Uwaga**: Dodanie użytkowników do odpowiedniej roli Azure Active Directory w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia w portalu Microsoft 365 Defender oraz uprawnienia do innych funkcji w  Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+  **Uwaga**: Dodanie użytkowników do odpowiedniej roli Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia w portalu usługi Microsoft 365 Defender oraz uprawnienia do innych funkcji w  Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
 
-- Włączanie i konfigurowanie ochrony przed personifikacjami w zasadach ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365. Ochrona personifikacji nie jest domyślnie włączona. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365](configure-mdo-anti-phishing-policies.md).
+- Włączanie i konfigurowanie ochrony przed personifikacjami w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender. Ochrona personifikacji nie jest domyślnie włączona. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Otwórz szczegółowe informacje o personifikacji w Microsoft 365 Defender wiadomości
 
@@ -71,7 +71,7 @@ Za pomocą szczegółowych informacji o personifikacji w portalu Microsoft 365 D
 
 2. Na stronie **ochrony przed wyłudzaniem** informacji o personifikacji wygląda ona następująco:
 
-   ![Szczegółowe informacje o personifikacji i spoof intelligence na stronie zasad ochrony przed wyłudzaniem informacji.](../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png)
+   :::image type="content" source="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png" alt-text="Szczegółowe informacje o personifikacji i spoof intelligence na stronie zasad ochrony przed wyłudzaniem informacji" lightbox="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png":::
 
    Szczegółowe informacje są dostępne w dwóch trybach:
 

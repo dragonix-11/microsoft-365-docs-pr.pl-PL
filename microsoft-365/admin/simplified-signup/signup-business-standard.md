@@ -1,5 +1,5 @@
 ---
-title: Utwórz konto Microsoft 365 Business Standard
+title: Zarejestruj się, aby uzyskać Microsoft 365 Business Standard
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,146 +14,148 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Kup Microsoft 365 Business Standard i skonfiguruj organizację.
-ms.openlocfilehash: 2f4f282f204926c37271a6720abe23fa60053a98
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: b72a0b2c1024690813ea697978c23b07d9a801d4
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651394"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638054"
 ---
-# <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Tworzenie konta w celu utworzenia subskrypcji Microsoft 365 Business Standard
+# <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Zarejestruj się w celu Microsoft 365 Business Standard subskrypcji usługi
 
-Chcesz zarejestrować się w celu utworzenia subskrypcji Microsoft 365 Business Standard?
+Chcesz zarejestrować się w celu Microsoft 365 Business Standard subskrypcji?
 
-Istnieje kilka sposobów rozpoczęcia pracy:
+Istnieje kilka sposobów rozpoczynania pracy:
 
-- **[Kup](https://go.microsoft.com/fwlink/?linkid=2109654) Microsoft 365 Business Standard i wykonaj własną konfigurację**. Aby kupić Microsoft 365 Business Standard, [wykonaj poniższe kroki](#sign-up-steps).
-- **W przypadku partnerów firmy Microsoft**: jeśli jesteś partnerem, zobacz [Get Microsoft 365 Business (Uzyskiwanie Microsoft 365 Business](../../business/get-microsoft-365-business.md)).
+- **[Kup](https://go.microsoft.com/fwlink/?linkid=2109654) Microsoft 365 Business Standard i dokończ własną konfigurację**. Aby kupić Microsoft 365 Business Standard, [wykonaj poniższe czynności](#sign-up-steps).
+- **W przypadku partnerów firmy Microsoft**: Jeśli jesteś partnerem, zobacz Uzyskiwanie Microsoft 365 [Biznesowe](../../business/get-microsoft-365-business.md).
 
-## <a name="sign-up-for-microsoft-365-for-business"></a>Tworzenie konta w Microsoft 365 dla firm
+**Potrzebujesz czegoś innego?** Można:
+
+- [Zarejestruj się w planie domowym lub rodzinnym](https://go.microsoft.com/fwlink/?linkid=2109398) , jeśli nie kupujesz usługi dla firmy.
+
+> [!IMPORTANT]
+> Microsoft 365 Business Standard są przeznaczone do użytku komercyjnego i są przeznaczone dla klientów biznesowych oraz dla przedsiębiorstw.
+
+## <a name="sign-up-for-microsoft-365-for-business"></a>Rejestracja w Microsoft 365 dla firm
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
+## <a name="sign-up-steps"></a>Procedura rejestracji
+
+Aby zarejestrować się i kupić Microsoft 365 Business Standard, wykonaj następujące czynności.
 
 > [!IMPORTANT]
-> Microsoft 365 Business Standard subskrypcje są przeznaczone do użytku komercyjnego i są przeznaczone dla klientów biznesowych i korporacyjnych.
+> Osoba, która tworzy konto w Microsoft 365 dla firm (zwykle jest to właściciel firmy) automatycznie staje się administratorem technicznym organizacji. Jeśli chcesz uzyskać pomoc przy zarządzaniu usługami firmy Microsoft, możesz dodać inne osoby Microsoft 365 administratorów. Aby uzyskać [więcej informacji, zobacz Przypisywanie ról](../add-users/assign-admin-roles.md) administratora.
 
-
-## <a name="sign-up-steps"></a>Kroki tworzenia konta
-
-Aby zarejestrować się i zakupić Microsoft 365 Business Standard, wykonaj następujące kroki.
-
-> [!IMPORTANT]
-> Osoba, która rejestruje się w Microsoft 365 dla firm (zazwyczaj właściciel firmy) automatycznie staje się administratorem technicznym organizacji. Możesz dodać inne osoby jako administratorów, jeśli chcesz uzyskać pomoc w zarządzaniu usługami Microsoft 365. Aby uzyskać więcej informacji, zobacz [Przypisywanie ról administratora](../add-users/assign-admin-roles.md) .
-
-1. Na [stronie Microsoft 365 dla firm](https://go.microsoft.com/fwlink/?linkid=2109654) wybierz pozycję **Zobacz plany & cennik**.
-2. Na następnej stronie zapoznaj się z miesięcznym kosztem, a następnie przewiń stronę w dół, aby dowiedzieć się więcej o tym, co znajduje się w Microsoft 365. W obszarze Microsoft 365 Business Standard wybierz pozycję **Kup teraz**.
-3. Na stronie **Podziękowania za wybranie Microsoft 365 Business Standard** wprowadź swoje informacje, aby rozpocząć pracę. Wybierz pozycję **Dalej**.
-4. Wprowadź adres e-mail, którego już używasz. Może to być dowolny adres używany przez firmę Microsoft do komunikowania się z Tobą podczas instalacji. Jest to również adres, pod którym wyślemy Ci informacje o rachunku i odnowieniach. Następnie wybierz pozycję **Skonfiguruj konto**.
-5. Wprowadź swoje imię i nazwisko, numer telefonu służbego, rozmiar firmy, nazwę firmy i lokalizację. Wybierz pozycję **Dalej**.
+1. Na stronie [Microsoft 365 dla firm wybierz](https://go.microsoft.com/fwlink/?linkid=2109654) pozycję **Zobacz plany i & ceny**.
+2. Na następnej stronie dowiedz się, jaki jest koszt miesięczny, a następnie przewiń stronę w dół, aby dowiedzieć się więcej o tym, co zawiera Microsoft 365. W Microsoft 365 Business Standard wybierz pozycję **Kup teraz**.
+3. Na stronie **Dziękujemy za wybranie Microsoft 365 Business Standard** wprowadź informacje, aby rozpocząć. Wybierz pozycję **Dalej**.
+4. Wprowadź adres e-mail, który już używasz. Może to być dowolny adres, z którego firma Microsoft ma się komunikować podczas instalacji. Jest to również adres, pod którym wyślemy Ci informacje o rachunku i odnowieniach. Następnie wybierz pozycję **Skonfiguruj konto**.
+5. Wprowadź imię i nazwisko, służbowy numer telefonu, rozmiar firmy, nazwę firmy i lokalizację. Wybierz pozycję **Dalej**.
 
    > [!NOTE]
-   > Nazwa firmy jest wyświetlana w centrum administracyjnym. W tym miejscu zarządzasz Microsoft 365 użytkownikami, licencjami oraz innymi funkcjami i usługami. Uwzględniamy ją również w dowolnych wewnętrznych adresach URL witryny SharePoint.
+   > W centrum administracyjnym jest wyświetlana nazwa Twojej firmy. W tym miejscu możesz zarządzać Microsoft 365 użytkownikami, licencjami oraz innymi funkcjami i usługami. Jest on także uwzględniany we wszystkich wewnętrznych adresach URL SharePoint witryny.
 
-6. Pomóż nam upewnić się, że to Ty. Wprowadź liczbę, za pomocą którego możemy się z Tobą skontaktować, a następnie wybierz pozycję **Wyślij kod weryfikacyjny**. Otrzymasz tekst. Wprowadź kod i wybierz pozycję **Weryfikuj**.
+6. Pomóż nam upewnić się, że to Ty. Wprowadź numer, za pomocą których możemy się z Tobą się z Tobą sycą, a następnie wybierz **pozycję Wyślij kod weryfikacyjny**. Otrzymasz wiadomość SMS. Wprowadź kod i wybierz pozycję **Weryfikuj**.
 
-7. Zdecyduj, w jaki sposób zalogujesz się do Microsoft 365. Możesz [utworzyć nowe biznesowe konto e-mail, dodając domenę](#option-2-create-a-new-business-email-account-and-attach-a-domain) lub [loguj się przy użyciu bieżącej osobistej poczty e-mail](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
+7. Zdecyduj, jak będziesz się logować, aby Microsoft 365. Możesz utworzyć [nowe biznesowe konto e-mail, dodając domenę](#option-2-create-a-new-business-email-account-and-attach-a-domain) lub [logjąc się przy użyciu bieżącego osobistego adresu e-mail](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
 
-## <a name="choosing-the-right-business-subscription"></a>Wybieranie odpowiedniej subskrypcji biznesowej
+## <a name="choosing-the-right-business-subscription"></a>Wybieranie odpowiedniej subskrypcji dla firm
 
-Podczas rejestrowania się w Microsoft 365 Business Standard masz 2 opcje rozpoczęcia pracy. Oceń trzy kluczowe czynniki, aby wybrać, które najlepiej spełniają Twoje potrzeby:
+Podczas rejestracji Microsoft 365 Business Standard masz 2 opcje rozpoczynania pracy. Oceń trzy kluczowe czynniki, aby wybrać to, które najlepiej odpowiada Twoim potrzebom:
 
-- Których aplikacji i usług chcesz używać od razu?
+- Z jakich aplikacji i usług chcesz od razu korzystać?
 
-- Ile masz umiejętności technicznych?
+- Ile umiejętności technicznych posiadasz?
 
-- Czy firma Microsoft musi działać jako podmiot przetwarzający twoje dane?
+- Czy potrzebujesz, aby firma Microsoft działała jako podmiot przetwarzający Twoje dane?
 
-W poniższej tabeli przedstawiono poszczególne opcje.
+W poniższej tabeli przedstawiono poszczególne wybory.
 
-|&nbsp;|**Opcja 1** — zaloguj się przy użyciu Outlook, Hotmail, Yahoo, Gmail lub innego konta [e-mail (uproszczona rejestracja)](#terms-of-service-update-for-simplified-sign-up-mode)|**Opcja 2** — dodawanie domeny biznesowej i tworzenie nowego biznesowego konta e-mail |
+|&nbsp;|**Opcja 1**. Logowanie się za pomocą Outlook, Hotmail, Yahoo, Gmail lub innego konta [e-mail (uproszczone logowanie)](#terms-of-service-update-for-simplified-sign-up-mode)|**Opcja 2** . Dodawanie domeny biznesowej i tworzenie nowego firmowego konta e-mail |
 |---|---|---|
-|Dostępne aplikacje i usługi|Użyj programu Word, Excel, PowerPoint, OneDrive, Teams, Access. Ten zestaw aplikacji jest najlepszy dla bardzo małych firm, które nie potrzebują markowej wiadomości e-mail od razu lub które już używają markowej poczty e-mail od innego dostawcy i nie zamierzają przełączać się do korzystania z usługi Microsoft Exchange. Użyjesz Outlook z istniejącym kontem e-mail (czy to outlook.com, Hotmail, Yahoo, Gmail lub innym).|Użyj programu Word, Excel, PowerPoint, OneDrive, Teams, Access. Microsoft 365 Business Standard z opcją 2 umożliwia również dostęp do szerokiej gamy dodatkowych usług: nowe, markowe biznesowe konta e-mail z Outlook, kalendarze udostępnione w firmie, Bookings planowanie terminów i nagrania spotkań. Udostępniona oferta magazynu dokumentów i witryn SharePoint, Microsoft Planner i Listy Microsoft, Microsoft 365 Business Standard i Aplikacje Microsoft 365 dla firm dodatkowe usługi z opcją 2. Łatwiejsze udostępnianie dokumentów w firmie, obsługa potrzeb związanych ze zgodnością w twojej branży, dostęp i kontrola nad korzystaniem z usług przez pracowników oraz najszerszy zakres integracji aplikacji innych niż Microsoft (np. Salesforce, Adobe), które działają w ramach Teams i Office.|
-|Wymagana wiedza|Rozpocznijmy pracę bez wiedzy technicznej.|Wymaga zakupu domeny lub posiadania domeny. Może być potrzebna wiedza techniczna, aby udowodnić własność domeny.|
-|Obsługa danych|Dostępne w ramach Dodatku do [umowy o świadczenie usług firmy Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) i jest najlepsze dla firm, które chcą korzystać z narzędzi do pracy zdalnej i współpracy oraz są zadowolone z tego, że firma Microsoft pełni rolę administratora twoich danych zgodnie z [oświadczeniem o ochronie prywatności firmy Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Subskrybenci usług korzystających z tej opcji nie będą mieli dostępu do zawartości lub danych użytkownika danej osoby, dopóki domena nie zostanie dołączona. Subskrybenci powinni oceniać kwestie związane z własnością danych i prawami własności intelektualnej na podstawie ich potrzeb. Jeśli na przykład pracujesz wspólnie z innymi użytkownikami nad dokumentem przechowywanym na ich koncie, mogą oni zdecydować, że te dokumenty będą niedostępne. W związku z tym należy odpowiednio ocenić kwestie związane z własnością danych i prawami własności intelektualnej. Osobno użytkownicy mogą zdecydować, że nie będą przesyłać dokumentów na swoje uproszczone konto Sign-Up do subskrypcji konta domeny, nawet po zaproszeniu ich do tego. Oznacza to, że ich dokumenty mogą również nie być dostępne dla Ciebie, nawet jeśli później dodasz konto domeny|Dostępna w ramach [umowy subskrypcji usługi Microsoft Online](https://go.microsoft.com/fwlink/p/?linkid=2180430) i jest najlepsza dla firm, które potrzebują firmy Microsoft do działania jako podmiot przetwarzający swoje dane w ramach [dodatku do ochrony danych](https://go.microsoft.com/fwlink/p/?linkid=2180314) firmy Microsoft i potrzebują naszego pełnego pakietu narzędzi do pracy zdalnej i współpracy. Subskrybenci, którzy są w branżach regulowanych lub szukają większej kontroli, zarówno nad korzystaniem z usług przez pracowników, jak i nad przetwarzaniem powiązanych danych przez firmę Microsoft, powinni wybrać opcję 2 i dołączyć domenę i zarejestrować się w ramach umowy na poziomie przedsiębiorstwa konta domeny.|
+|Dostępne aplikacje i usługi|Używaj programu Word, Excel, PowerPoint, OneDrive, Teams Access. Ten zestaw aplikacji jest najlepszy dla bardzo małych firm, które nie potrzebują markowych wiadomości e-mail od razu lub używają już markowych wiadomości e-mail od innego dostawcy i nie planują korzystania z usługi Microsoft Exchange. Będziesz używać programu Outlook-mail z istniejącym kontem e-mail (czy outlook.com, Hotmail, Yahoo, Gmail lub innym).|Używaj programu Word, Excel, PowerPoint, OneDrive, Teams Access. Microsoft 365 Business Standard z opcją 2 umożliwia również dostęp do szerokiej gamy dodatkowych usług: nowe, markowe firmowe konta e-mail z usługą Outlook, kalendarze udostępnione w twojej firmie, planowanie terminów Bookings i nagrania spotkań. Współużytkowanie i SharePoint dokumentów, Microsoft Planner i Listy Microsoft, Microsoft 365 Business Standard i Aplikacje Microsoft 365 dla firm witryn dodatkowe usługi z opcją 2. Łatwiejsze udostępnianie dokumentów w firmie, obsługa potrzeb w zakresie zgodności z przepisami w swojej branży, dostęp i kontrola nad korzystaniem z usług przez pracowników oraz najszerszy zakres integracji aplikacji innych niż firmy Microsoft (np. Salesforce, Adobe), które działają w usługach Teams i Office.|
+|Wymagana wiedza|Zaczynasz bez wiedzy technicznej.|Wymaga zakupu domeny lub być właścicielem domeny. Do udowodnienia własności domeny może być potrzebna znajomość techniczna.|
+|Obsługa danych|Dostępne w ramach uzupełnienia umowy o świadczenie usług firmy [Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) i są najlepsze dla firm, które chcą korzystać z niektórych narzędzi do pracy zdalnej i współpracy oraz mają instrukcje, jak firma Microsoft pełnić funkcję administratora danych w ramach zasad zachowania poufności [informacji firmy Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Subskrybenci korzystający z tej opcji nie będą mieli dostępu do zawartości ani danych użytkownika, dopóki domena nie zostanie dołączona. Subskrybenci powinni oceniać zagadnienia związane z własnością danych i prawami własności intelektualnej w zależności od swoich potrzeb. Jeśli na przykład współpracujesz z innymi użytkownikami nad dokumentem przechowywanym na jego koncie, mogą oni zdecydować się na sprawić, że te dokumenty będą dla Ciebie niedostępne. Dlatego należy odpowiednio oceniać zagadnienia związane z własnością danych i prawami własności intelektualnej. Niezależnie od tego użytkownicy mogą nie przesyłać dokumentów z konta Sign-Up uproszczonego do subskrypcji konta domeny, nawet po ich zaproszeniu. Oznacza to, że dokumenty tej osoby mogą być również niedostępne, nawet jeśli dodasz konto domeny później|Dostępna w ramach umowy subskrypcyjnej dotyczącej usług online firmy [Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180430) i jest najlepsza dla firm, które muszą działać jako podmiot przetwarzający swoje dane w ramach dodatku Microsoft [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) i potrzebują pełnego pakietu narzędzi do pracy zdalnej i współpracy. Subskrybenci, którzy są branżami uregulowanym lub chcą mieć większą kontrolę nad korzystaniem z usług przez Twoich pracowników i nad przetwarzaniem powiązanych danych przez firmę Microsoft, powinni wybrać opcję 2 i dołączyć domenę oraz zarejestrować się w ramach umowy enterprise-level konta domeny.|
 
-Użyj tych trzech czynników, aby określić, która z tych dwóch opcji jest najlepsza dla Twoich potrzeb biznesowych.
+Te trzy czynniki określają, która z tych dwóch opcji jest najlepsza dla Twoich potrzeb biznesowych.
 
-### <a name="option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account"></a>Opcja 1: Zaloguj się przy użyciu konta Outlook, Hotmail, Yahoo, Gmail lub innego konta e-mail
+### <a name="option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account"></a>Opcja 1. Logowanie się przy użyciu konta Outlook, Hotmail, Yahoo lub Gmail albo innego konta e-mail
 
-Zalogujesz się, aby Microsoft 365 przy użyciu tego adresu e-mail. Na przykład alliebellew@hotmail.com.
+Aby zalogować się do usługi Microsoft 365 tym adresie e-mail. Na przykład: alliebellew@hotmail.com.
 
-:::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Zrzut ekranu: zaloguj się przy użyciu osobistej wiadomości e-mail.":::
+:::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Zrzut ekranu: Zaloguj się przy użyciu osobistego adresu e-mail.":::
 
-1. Utwórz hasło na następnej stronie i wybierz pozycję **Utwórz konto** , aby kontynuować. Na następnej stronie przeczytaj o sposobie obsługi twoich danych i określ, czy chcesz, aby partnerzy firmy Microsoft skontaktowali się z Tobą. Wybierz pozycję **Dalej**.
+1. Utwórz hasło na następnej stronie i wybierz pozycję **Utwórz konto** , aby kontynuować. Na następnej stronie przeczytaj o tym, jak obsługujemy Twoje dane, i wybierz, czy partnerzy firmy Microsoft mają się z Tobą kontaktować. Wybierz pozycję **Dalej**.
 
-2. Wybierz liczbę licencji Microsoft 365 Business Standard, które chcesz uzyskać w organizacji, a następnie wybierz pozycję **Dodaj formę płatności** i kontynuuj wyewidencjonuj **zamówienie.**
+2. Wybierz, ile Microsoft 365 Business Standard licencji dla organizacji, wybierz pozycję Dodaj metodę płatności i przejdź  do finalizacji zakupu, aby **zrealizować zamówienie**.
 
-3. Na stronie **Szczegóły potwierdzenia** przekażemy Ci więcej informacji na temat Twojej subskrypcji. Teraz możesz przejść do Centrum administracyjne platformy Microsoft 365, aby dodawać użytkowników, instalować Office aplikacje, zapraszać zespół do korzystania z Microsoft 365 i nie tylko. Wyślemy Ci również wiadomość e-mail z instrukcjami konfigurowania Microsoft 365 Business Standard.
+3. Na stronie **Szczegóły potwierdzenia** podamy Ci więcej informacji na temat Twojej subskrypcji. Teraz możesz przejść do zespołu, Centrum administracyjne platformy Microsoft 365 dodać użytkowników, zainstalować aplikacje pakietu Office, zaprosić zespół do korzystania Microsoft 365 i nie tylko. Wyślemy Ci również wiadomość e-mail z instrukcjami na Microsoft 365 Business Standard.
 
-Pamiętaj, że ta opcja nie zapewnia markowej poczty e-mail, kontroli administratora na potrzeby korzystania z usług przez innych użytkowników ani obsługi zgodności specyficznej dla branży. Subskrybenci nie mają dostępu ani kontroli nad użyciem lub dokumentami innych użytkowników (pracowników) w ramach tej opcji Użytkownicy mogą nie przesyłać danych utworzonych w magazynie, takich jak OneDrive/Teams na uaktualnione konto domeny na poziomie przedsiębiorstwa, jeśli nie wybierzesz opcji 2 natychmiast.
+Pamiętaj, że ta opcja nie zapewnia oznaczania poczty e-mail, kontroli administratora w celu używania usług przez innych użytkowników ani obsługi zgodności z przepisami w danej branży. Subskrybenci nie mają żadnego dostępu ani kontroli nad korzystaniem przez innych użytkowników (pracowników) ani nad dokumentami w ramach tej opcji Użytkownicy mogą nie przesyłać danych utworzonych w magazynie, takich jak OneDrive/Teams, do uaktualnionego konta domeny na poziomie przedsiębiorstwa, jeśli nie należy natychmiast wybrać opcji 2.
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
-### <a name="option-2-create-a-new-business-email-account-and-attach-a-domain"></a>Opcja 2. Tworzenie nowego biznesowego konta e-mail i dołączanie domeny
+### <a name="option-2-create-a-new-business-email-account-and-attach-a-domain"></a>Opcja 2. Tworzenie nowego firmowego konta e-mail i dołączanie domeny
 
-Dzięki tej opcji będziesz mieć możliwość używania Microsoft 365 Exchange jako profesjonalnego, markowego dostawcy poczty e-mail. Wszyscy użytkownicy będą mieć udostępniony adres e-mail domeny. Na przykład ich nazwa użytkownika, a następnie @contoso.com. Ty i Twoi użytkownicy logujesz się do Microsoft 365 przy użyciu tego nowego adresu e-mail. Gdy będziesz postępować zgodnie z tym procesem (dodaj domenę i utwórz nowe biznesowe konta e-mail), uzyskasz dostęp do wszystkich funkcji dostępnych w Microsoft 365 Business Standard. Aby uzyskać instrukcje dotyczące kupowania lub dodawania domeny, zobacz [Konfigurowanie Microsoft 365 Business Standard](../setup/setup-business-standard.md).
+W przypadku tej opcji możesz używać poczty e Microsoft 365 Exchange jako profesjonalnego, markowego dostawcy poczty e-mail. Wszyscy użytkownicy będą mieli adres e-mail w domenie udostępnionej. Na przykład nazwa użytkownika i @contoso.com. Ty i Twoi użytkownicy logujecie się Microsoft 365 za pomocą tego nowego adresu e-mail. Jeśli będziesz postępować zgodnie z tym procesem (dodać domenę i utworzyć nowe firmowe konta e-mail), będziesz mieć dostęp do wszystkich funkcji w aplikacji Microsoft 365 Business Standard. Aby uzyskać instrukcje dotyczące kupowania lub dodawania domeny, zobacz [Konfigurowanie Microsoft 365 Business Standard](../setup/setup-business-standard.md).
 
-:::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="Zrzut ekranu: Zaloguj się przy użyciu nowej służbowych wiadomości e-mail.":::
+:::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="Zrzut ekranu: Zaloguj się przy użyciu nowego firmowego adresu e-mail.":::
 
-Ta opcja zapewnia natychmiastowy dostęp do pełnego zestawu funkcji w ramach subskrypcji Microsoft 365 Business, ale może wymagać wykonania kroków technicznych z góry.
+Ta opcja zapewnia natychmiastowy dostęp do pełnego pakietu funkcji w subskrypcji usługi Microsoft 365 Dla firm, ale może wymagać od razu ukończenia kroków technicznych.
 
-Jeśli chcesz dodać domenę i utworzyć firmowe konto e-mail, możesz wykonać kroki opisane w poniższych artykułach:
+Jeśli chcesz dodać domenę i utworzyć biznesowe konto e-mail, możesz wykonać czynności opisane w poniższych artykułach:
 
 - [Dodawanie domeny do Microsoft 365](../setup/add-domain.md)
-- [Zakończ konfigurowanie](../setup/setup-business-standard.md#finish-setting-up)
+- [Kończanie konfigurowania](../setup/setup-business-standard.md#finish-setting-up)
 
-## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>Aktualizacja warunków użytkowania uproszczonego trybu rejestracji
+## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>Aktualizacja warunków użytkowania usługi dla trybu uproszczonego rejestracji
 
-**Dotyczy: istniejący subskrybenci Microsoft 365 Business Standard, którzy wcześniej kupili w uproszczonym trybie rejestracji**.
+**Dotyczy: Obecni subskrybenci usługi Microsoft 365 Business Standard, którzy wcześniej kupowali przy użyciu trybu uproszczonego rejestracji**.
 
-Jeśli wcześniej używano uproszczonego trybu rejestracji do zakupu subskrypcji biznesowej przed październikiem 2021 r. bez dodawania domeny biznesowej, może być konieczne zaakceptowanie nowych warunków świadczenia usługi dla nieprzerwanej usługi i użycia aplikacji Microsoft Office. Po zalogowaniu się do Microsoft 365 Centrum administracyjnego mogą być wysyłane wiadomości e-mail lub monity w aplikacji.
+Jeśli wcześniej używano trybu uproszczonego rejestracji do zakupu subskrypcji dla firm przed październikem 2021 r. bez dodawania domeny biznesowej, może być konieczne zaakceptowanie nowych warunków użytkowania usługi w celu nieprzerwanego korzystania z usługi i używania aplikacji pakietu Microsoft Office firm. Być może przysłano Ci wiadomości e-mail lub będziesz widzieć monity w aplikacji po zalogowaniu się do Microsoft 365 administracyjnego.
 
-Uproszczone warunki użytkowania rejestracji zostały ostatnio zaktualizowane, a w szczególności objaśniają licencjonowanie i własność danych dla subskrypcji biznesowych dla wielu użytkowników. W przypadku dalszej obsługi subskrypcji biznesowej możesz odwiedzić [centrum administracyjne Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) i nadal korzystać z **uproszczonej rejestracji** (i wyrazić zgodę na korzystanie z dodatkowej umowy usług firmy Microsoft) lub odwiedzić [centrum administracyjne Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) i dodać **domenę biznesową** (i korzystać z umowy microsoft online services agreement). Aby pomóc Ci wybrać, który z tych dwóch trybów najlepiej odpowiada Twoim potrzebom, zapoznaj się z tabelą w górnej części tego artykułu.
+Ostatnio zaktualizowano warunki użytkowania uproszczonego rejestracji, w tym w szczególności objaśniono licencjonowanie i własność danych dla subskrypcji dla wielu firm. Aby kontynuować korzystanie z subskrypcji dla firm, możesz odwiedzić Centrum administracyjne programu [Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) i nadal korzystać z uproszczonego **konta (i** zgodzić się na korzystanie z uzupełnienia umowy o świadczenie usług firmy Microsoft) lub odwiedzić Centrum administracyjne usługi [Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2024339) i dodać domenę biznesową **(oraz** korzystać z Umowy o świadczenie usług online firmy Microsoft). Aby ułatwić ci wybranie tego, który z tych dwóch trybów najlepiej odpowiada Twoim potrzebom, zapoznaj się z tabelą u góry tego artykułu.
 
-Jeśli zdecydujesz się nie akceptować zaktualizowanych warunków uproszczonej rejestracji lub dodać domenę biznesową, subskrypcja nie zostanie automatycznie odnowiona, a po zakończeniu bieżącej umowy subskrypcji utracisz dostęp do aplikacji Office. Dane OneDrive zostaną zachowane przez 90 dni, aby można było wykonać ich kopie, a następnie zostaną usunięte.
+Jeśli nie zaakceptujesz zaktualizowanych warunków uproszczonego rejestracji lub dodania domeny biznesowej, Twoja subskrypcja nie zostanie automatycznie odnowiona i na końcu bieżącej umowy subskrypcji utracisz dostęp do aplikacji pakietu Office firm. Twoje OneDrive będą przechowywane przez 90 dni na skopiowanie ich kopii, a następnie zostaną usunięte.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>Co to jest służbowa poczta e-mail i jakie są zalety jej konfigurowania?
+### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>Co to jest firmowa poczta e-mail i jakie są korzyści z jej konfigurowania?
 
-Służbowa wiadomość e-mail to wiadomość e-mail używająca własnej nazwy domeny. Jeśli na przykład jesteś właścicielem nazwy `contoso.com`domeny, możesz utworzyć witrynę internetową przy użyciu adresu URL `www.contoso.com`, ale możesz również mieć niestandardowy adres e-mail, taki jak yourname@contoso.com. Jest to nazywane markową firmową wiadomością e-mail, ponieważ nadaje twojej wiadomości e-mail profesjonalny wygląd.
+Biznesowa wiadomość e-mail to wiadomość e-mail, która korzysta z twojej nazwy domeny. Jeśli na przykład jesteś `contoso.com`właścicielem nazwy domeny, możesz utworzyć witrynę internetową za pomocą adresu URL `www.contoso.com`, ale możesz także utworzyć niestandardowy adres e-mail, taki jak adres yourname@contoso.com. Jest to nazywane markową firmową wiadomością e-mail, ponieważ nadaje twojej wiadomości profesjonalny wygląd.
 
-### <a name="how-do-i-get-a-new-business-email-address"></a>Jak mogę uzyskać nowy biznesowy adres e-mail?
+### <a name="how-do-i-get-a-new-business-email-address"></a>Jak mogę uzyskać nowy firmowy adres e-mail?
 
-Istnieją trzy opcje uzyskiwania firmowej poczty e-mail.
+Dostępne są trzy opcje uzyskiwania firmowej poczty e-mail.
 
-- Możesz bezpłatnie użyć sugerowanej domeny onmicrosoft.com (someone@mybusiness.onmicrosoft.com).
+- Sugerowaną domenę można onmicrosoft.com bezpłatnie (someone@mybusiness.onmicrosoft.com).
 - Możesz kupić nową domenę, aby mieć bardziej kompaktowy adres e-mail (mybusinessname@contoso.com).
-- Używasz już posiadanej nazwy domeny.
+- Używasz nazwy domeny, która już należy do Ciebie.
 
-### <a name="why-might-i-need-to-verify-my-domain-to-create-a-business-email"></a>Dlaczego muszę zweryfikować domenę, aby utworzyć firmową wiadomość e-mail?
+### <a name="why-might-i-need-to-verify-my-domain-to-create-a-business-email"></a>Dlaczego muszę zweryfikować moją domenę, aby utworzyć biznesowy adres e-mail?
 
-Jeśli zdecydujesz się na korzystanie z domeny, którą już posiadasz, możesz użyć jej na potrzeby swojego adresu e-mail z Microsoft 365. W ramach procesu tworzenia konta prosimy o zweryfikowanie domeny, aby można było wysyłać wiadomości e-mail za pośrednictwem Microsoft 365. Potwierdza to, że jesteś właścicielem domeny, która wysyła wiadomości e-mail z tą tożsamością, co zwiększa bezpieczeństwo i zapobiega fałszywym działaniom.
+Jeśli wybierzesz domenę, która już należy do Ciebie, możesz używać jej do swoich adresów e-mail w Microsoft 365. W ramach procesu tworzenia konta prosimy o zweryfikowanie domeny, aby można było wysyłać wiadomości e-mail za pośrednictwem Microsoft 365. Potwierdzi to, że jesteś właścicielem domeny, która wysyła wiadomości e-mail przy użyciu tej tożsamości, co zwiększa bezpieczeństwo i zapobiega nieuczciwościom.
 
-### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>Czy jest korzyść z płacenia miesięcznie a rocznie?
+### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>Czy istnieje korzyść z płacenia co miesiąc a co rok?
 
 Aby zapewnić klientom największą elastyczność, dostępne są różne opcje płatności.
 
-- plany Microsoft 365 Business Basic, Aplikacje dla firm, Business Standard i Business Premium są dostępne dla miesięcznej płatności zobowiązania lub rocznej płatności zobowiązania.
-- Miesięczna płatność zobowiązania: płacisz miesiąc po miesiącu i możesz anulować ją w dowolnym momencie.
-- Roczna płatność zobowiązań: tworzysz konto w ramach subskrypcji jednorocznych, ale możesz płacić miesiąc do miesiąca lub płacić za cały rok podczas rejestracji. Istnieje rabat za korzystanie z tej opcji płatności.
+- Microsoft 365 Business Basic, Aplikacje dla firm, Business Standard i Business Premium są dostępne w przypadku miesięcznej płatności zobowiązania lub rocznej płatności zobowiązania.
+- Miesięczna płatność ze zobowiązaniem: Płacisz z miesiąca na miesiąc i możesz anulować usługę w dowolnym momencie.
+- Roczna płatność za zobowiązanie: załóższ subskrypcję roczną, ale możesz wybrać płatność z miesiąca na miesiąc lub płatność za cały rok podczas rejestracji. Korzystanie z tej opcji płatności jest dyskontowe.
 
 ### <a name="how-does-recurring-billing-work"></a>Jak działa rozliczanie cykliczne?
 
-Gdy rozliczenia cykliczne są włączone, subskrypcja będzie nadal rozliczana co roku w dniu subskrypcji. Jeśli subskrypcja jest aktywna, możesz ją wyłączyć lub ponownie włączyć w centrum administracyjnym. Dowiedz się więcej na [stronie Włączanie lub wyłączanie rozliczeń cyklicznych](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
+Jeśli Rozliczanie cykliczne jest wł. subskrypcja będzie rozliczana każdego roku w dniu jej zasubskrybowania. Jeśli Twoja subskrypcja jest aktywna, możesz wyłączyć lub ponownie włączyć ją w centrum administracyjnym. Aby uzyskać więcej informacji [, zobacz Wyłączanie lub włączanie rozliczania cyklicznego](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
-### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>Co zrobić, jeśli chcę zmienić nazwę firmy?
+### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>Co zrobić, jeśli chcę zmienić nazwę swojej firmy?
 
-Skontaktuj się z naszymi ekspertami ds. pomocy technicznej dla małych firm, którzy mogą pomóc w zmianie nazwy firmy. Dowiedz się więcej na [stronie Uzyskiwanie pomocy technicznej](../get-help-support.md).
+Skontaktuj się z ekspertami pomocy technicznej dla małych firm, którzy pomogą Ci zmienić nazwę Twojej firmy. Dowiedz się więcej na [stronie Uzyskaj pomoc techniczną](../get-help-support.md).
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 
-[Konfigurowanie Microsoft 365 Business Standard przy użyciu nowej lub istniejącej domeny](../setup/setup-business-standard.md)
+[Konfigurowanie Microsoft 365 Business Standard nowej lub istniejącej domeny](../setup/setup-business-standard.md)
 
 [Zapraszanie użytkowników do Microsoft 365 Business Standard](user-invite-business-standard.md)

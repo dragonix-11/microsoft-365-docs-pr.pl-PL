@@ -1,7 +1,7 @@
 ---
 title: Integrowanie narzędzi SIEM z Ochrona punktu końcowego w usłudze Microsoft Defender
-description: Dowiedz się, jak cytować alerty i zdarzenia oraz zintegrować narzędzia SIEM.
-keywords: konfigurowanie siem, narzędzi do zarządzania informacjami i zdarzeniami zabezpieczeń, splunku, arcusight, niestandardowych wskaźników, interfejsu API rest, definicji alertów, wskaźników naruszenia bezpieczeństwa
+description: Dowiedz się, jak pozyskiwać zdarzenia i alerty oraz integrować narzędzia SIEM.
+keywords: konfigurowanie narzędzi do zarządzania informacjami o zabezpieczeniach i zdarzeniami, splunk, arcsight, niestandardowe wskaźniki, interfejs API rest, definicje alertów, wskaźniki naruszenia zabezpieczeń
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,82 +15,82 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed88048b506ecfcddb8394667e7d800927fc1d83
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: d679ac0d01a7e922e49b72b574a43e6f684179f9
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634916"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664507"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Integrowanie narzędzi SIEM z Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-## <a name="ingest-alerts-using-security-information-and-events-management-siem-tools"></a>Alerty dotyczące alertów przy użyciu narzędzi do zarządzania informacjami i zdarzeniami zabezpieczeń
+## <a name="ingest-alerts-using-security-information-and-events-management-siem-tools"></a>Pozyskiwanie alertów przy użyciu narzędzi do zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM)
 
 > [!NOTE]
 >
-> [Ochrona punktu końcowego w usłudze Microsoft Defender alert](alerts.md) pochodzi z co najmniej jednego podejrzanego lub złośliwego zdarzenia, które wystąpiło na urządzeniu, i powiązanych ze nim informacji. Interfejs API Ochrona punktu końcowego w usłudze Microsoft Defender alertów to najnowszy interfejs API do użycia alertów i zawiera szczegółową listę powiązanych dowodów dla każdego alertu. Aby uzyskać więcej informacji, zobacz [Metody i właściwości alertów oraz](alerts.md) [Alerty listy](get-alerts.md).
+> [Ochrona punktu końcowego w usłudze Microsoft Defender Alert](alerts.md) składa się z jednego lub kilku podejrzanych lub złośliwych zdarzeń, które wystąpiły na urządzeniu, oraz powiązanych z nimi szczegółów. Interfejs API alertów Ochrona punktu końcowego w usłudze Microsoft Defender jest najnowszym interfejsem API do użycia alertów i zawiera szczegółową listę powiązanych dowodów dla każdego alertu. Aby uzyskać więcej informacji, zobacz [Metody alertów i właściwości](alerts.md) oraz [Lista alertów](get-alerts.md).
 
-Ochrona punktu końcowego w usłudze Microsoft Defender obsługuje narzędzia do zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM, Security Information And Event Management), które pozwalają na korzystanie z informacji z dzierżawy przedsiębiorstwa w programie Azure Active Directory (AAD) przy użyciu protokołu uwierzytelniania OAuth 2.0 dla zarejestrowanego AAD  aplikacja reprezentująca określone rozwiązanie SIEM lub łącznik zainstalowany w Twoim środowisku.
+Ochrona punktu końcowego w usłudze Microsoft Defender obsługuje narzędzia do zarządzania informacjami o zabezpieczeniach i zdarzeniami (SIEM) pozyskujące informacje z dzierżawy przedsiębiorstwa w Azure Active Directory (AAD) przy użyciu protokołu uwierzytelniania OAuth 2.0 dla zarejestrowanego AAD  aplikacja reprezentująca określone rozwiązanie SIEM lub łącznik zainstalowany w środowisku.
 
 Więcej informacji można znaleźć w następujących artykułach:
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender licencji i warunków użytkowania interfejsów API](api-terms-of-use.md) 
+- [licencja i warunki użytkowania interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender](api-terms-of-use.md) 
 - [Uzyskaj dostęp do interfejsów API usługi ochrony punktu końcowego w usłudze Microsoft Defender](apis-intro.md)
-- [Hello world przykład (w tym artykule opisano, jak zarejestrować aplikację w aplikacji Azure Active Directory)](api-hello-world.md)
+- [Hello world przykład (opisuje sposób rejestrowania aplikacji w Azure Active Directory)](api-hello-world.md)
 - [Uzyskiwanie dostępu za pomocą kontekstu aplikacji](exposed-apis-create-app-webapp.md)
 
 
 Ochrona punktu końcowego w usłudze Microsoft Defender obecnie obsługuje następujące integracje rozwiązań SIEM: 
 
-- [Instytucyjanie zdarzeń i alertów z Microsoft 365 Defender i Ochrona punktu końcowego w usłudze Microsoft Defender i alertów interfejsów API rest](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
-- [Inesting Ochrona punktu końcowego w usłudze Microsoft Defender events from the Microsoft 365 Defender event streaming API](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
+- [Pozyskiwanie zdarzeń i alertów z Microsoft 365 Defender i Ochrona punktu końcowego w usłudze Microsoft Defender zdarzeń i alertów interfejsów API REST](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
+- [Pozyskiwanie zdarzeń Ochrona punktu końcowego w usłudze Microsoft Defender z interfejsu API przesyłania strumieniowego zdarzeń Microsoft 365 Defender](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
 
-## <a name="ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis"></a>Instytucyjanie zdarzeń i alertów z Microsoft 365 Defender i Ochrona punktu końcowego w usłudze Microsoft Defender i alertów interfejsów API rest
+## <a name="ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis"></a>Pozyskiwanie zdarzeń i alertów z Microsoft 365 Defender i Ochrona punktu końcowego w usłudze Microsoft Defender zdarzeń i alertów interfejsów API REST
 
-### <a name="ingesting-incidents-from-the-microsoft-365-defender-incidents-rest-api"></a>Insesting incidents from the Microsoft 365 Defender incidents REST API
+### <a name="ingesting-incidents-from-the-microsoft-365-defender-incidents-rest-api"></a>Pozyskiwanie zdarzeń z interfejsu API REST zdarzeń Microsoft 365 Defender
 
-Aby uzyskać więcej informacji na temat interfejsu API Microsoft 365 Defender zdarzeń, zobacz Metody [i właściwości zdarzeń](../defender/api-incident.md).
+Aby uzyskać więcej informacji na temat interfejsu API zdarzeń Microsoft 365 Defender, zobacz [metody i właściwości zdarzeń](../defender/api-incident.md).
 
-### <a name="ingesting-alerts-from-the-microsoft-defender-for-endpoint-alerts-rest-api"></a>Alerty dotyczące alertów z interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender REST
+### <a name="ingesting-alerts-from-the-microsoft-defender-for-endpoint-alerts-rest-api"></a>Pozyskiwanie alertów z interfejsu API REST alertów Ochrona punktu końcowego w usłudze Microsoft Defender
 
-Aby uzyskać więcej informacji na temat interfejsu API Ochrona punktu końcowego w usłudze Microsoft Defender alertów, zobacz Metody [i właściwości alertów](alerts.md).
+Aby uzyskać więcej informacji na temat interfejsu API alertów Ochrona punktu końcowego w usłudze Microsoft Defender, zobacz [metody alertów i właściwości](alerts.md).
 
-## <a name="siem-tool-integration-with-microsoft-defender-for-endpoint"></a>Integracja narzędzi SIEM z programem Ochrona punktu końcowego w usłudze Microsoft Defender
+## <a name="siem-tool-integration-with-microsoft-defender-for-endpoint"></a>Integracja narzędzi SIEM z Ochrona punktu końcowego w usłudze Microsoft Defender
 
 ### <a name="splunk"></a>Splunk
 
-Za pomocą Microsoft 365 Defender Splunk, który obsługuje:
+Korzystanie z dodatku Microsoft 365 Defender dla aplikacji Splunk, który obsługuje:
 
-- Alerty dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender użytkownika
-- Aktualizowanie alertów w programie Ochrona punktu końcowego w usłudze Microsoft Defender z poziomu splunk
+- Pozyskiwanie alertów Ochrona punktu końcowego w usłudze Microsoft Defender
+- Aktualizowanie alertów w Ochrona punktu końcowego w usłudze Microsoft Defender z poziomu programu Splunk
 
-Aby uzyskać więcej informacji na temat dodatku Microsoft 365 Defender splunk, zobacz [splunkbase](https://splunkbase.splunk.com/app/4959/).
+Aby uzyskać więcej informacji na temat dodatku Microsoft 365 Defender dla aplikacji Splunk, zobacz [splunkbase](https://splunkbase.splunk.com/app/4959/).
 
-### <a name="micro-focus-arcsight"></a>Arcsight z mikro fokusem
+### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
-Nowy program SmartConnector do obsługi Microsoft 365 Defender zdarzeń, które zawierają alerty ze wszystkich produktów firmy Microsoft 365 Defender — w tym z programu Ochrona punktu końcowego w usłudze Microsoft Defender — do usługi ArcSight i mapuje je na wspólne wydarzenie (CEF).
+Nowy program SmartConnector do Microsoft 365 Defender pozyskuje zdarzenia zawierające alerty ze wszystkich produktów Microsoft 365 Defender — w tym z Ochrona punktu końcowego w usłudze Microsoft Defender — do usługi ArcSight i mapuje je na swoje wspólne zdarzenie Framework (CEF).
 
-Aby uzyskać więcej informacji na temat nowego programu ArcSight SmartConnector dla Microsoft 365 Defender, zobacz [dokumentację produktu ArcSight](https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors/microsoft-365-defender/index.html).
+Aby uzyskać więcej informacji na temat nowego programu ArcSight SmartConnector for Microsoft 365 Defender, zobacz [dokumentację produktu ArcSight](https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors/microsoft-365-defender/index.html).
 
-Program SmartConnector zastępuje poprzednią usługę FlexConnector dla Microsoft 365 Defender.
+Funkcja SmartConnector zastępuje poprzednią funkcję FlexConnector dla Microsoft 365 Defender.
 
 ### <a name="ibm-qradar"></a>IBM QRadar
 
 >[!NOTE]
->Integracja oprogramowania IBM QRadar z usługą Microsoft 365 Defender, która zawiera Ochrona punktu końcowego w usłudze Microsoft Defender, jest teraz obsługiwana przez nowy moduł obsługi Microsoft 365 Defender (DSM, Device Support Module), [który Microsoft 365 Defender interfejsu API przesyłania](../defender/streaming-api.md) strumieniowego, który umożliwia korzystanie z danych zdarzeń przesyłania strumieniowego z Microsoft 365 Defender produktów, w tym Ochrona punktu końcowego w usłudze Microsoft Defender. Aby uzyskać więcej informacji na temat nowego serwera dsM usługi QRadar Microsoft 365 Defender, zobacz Dokumentacja produktu [firmy IBM QRadar](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender), a aby uzyskać więcej informacji na temat typów zdarzeń obsługiwanych przez interfejs API przesyłania strumieniowego, zobacz Obsługiwane [typy zdarzeń](../defender/supported-event-types.md).
+>Integracja rozwiązania IBM QRadar z usługą Microsoft 365 Defender obejmująca Ochrona punktu końcowego w usłudze Microsoft Defender jest teraz obsługiwana przez nowy moduł Microsoft 365 Defender Device Support Module (DSM), który wywołuje [ Microsoft 365 Defender interfejs API przesyłania strumieniowego](../defender/streaming-api.md), który umożliwia pozyskiwanie danych zdarzeń przesyłania strumieniowego z produktów Microsoft 365 Defender, w tym Ochrona punktu końcowego w usłudze Microsoft Defender. Aby uzyskać więcej informacji na temat nowego modułu DSM Microsoft 365 Defender QRadar, zobacz [Dokumentacja produktu IBM QRadar](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender), a aby uzyskać więcej informacji na temat obsługiwanych typów zdarzeń interfejsu API przesyłania strumieniowego, zobacz [Obsługiwane typy zdarzeń](../defender/supported-event-types.md).
 
-Nowi klienci nie są już dołączani przy użyciu poprzedniego modułu obsługi urządzeń ATP (DSM, QRadar Microsoft Defender) i zachęcamy istniejących klientów do przyjęcia nowej usługi dsM usługi Microsoft 365 Defender jako pojedynczego punktu integracji ze wszystkimi produktami firmy Microsoft 365 Defender.
+Nowi klienci nie są już dołączani przy użyciu poprzedniego modułu DSM (QRadar Microsoft Defender ATP Device Support Module), a istniejący klienci są zachęcani do przyjęcia nowej Microsoft 365 Defender DSM jako jednego punktu integracji ze wszystkimi produktami Microsoft 365 Defender.
 
-## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Inesting Ochrona punktu końcowego w usłudze Microsoft Defender events from the Microsoft 365 Defender event streaming API
+## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Pozyskiwanie zdarzeń Ochrona punktu końcowego w usłudze Microsoft Defender z interfejsu API przesyłania strumieniowego zdarzeń Microsoft 365 Defender
 
-Microsoft 365 Defender strumieniowe dane zdarzeń obejmują alerty i inne zdarzenia z usługi Ochrona punktu końcowego w usłudze Microsoft Defender i innych produktów Microsoft Defender. Te zdarzenia mogą być przesyłane strumieniowo do konta usługi Azure Storage lub do Azure Event Hubs. Model integracji za pośrednictwem centrów zdarzeń jest obecnie obsługiwany przez firmę Splunk i ibm QRadar.
+Microsoft 365 Defender dane zdarzeń przesyłania strumieniowego obejmują alerty i inne zdarzenia z Ochrona punktu końcowego w usłudze Microsoft Defender i innych produktów usługi Microsoft Defender. Te zdarzenia mogą być przesyłane strumieniowo do konta Storage platformy Azure lub do Azure Event Hubs. Model integracji za pośrednictwem centrów zdarzeń jest obecnie obsługiwany przez firmy Splunk i IBM QRadar.
 
-Aby uzyskać więcej informacji, [zobacz integracja Microsoft 365 Defender SIEM](../defender/configure-siem-defender.md).
+Aby uzyskać więcej informacji, zobacz [integrację Microsoft 365 Defender SIEM](../defender/configure-siem-defender.md).

@@ -1,7 +1,7 @@
 ---
-title: Na urządzeniach Windows przy użyciu Menedżer konfiguracji
-description: Użyj Menedżer konfiguracji, aby wdrożyć pakiet konfiguracji na urządzeniach, aby były one dołączane do usługi Defender for Endpoint.
-keywords: urządzenia onboard przy użyciu programu sccm, zarządzanie urządzeniami, konfigurowanie programu Microsoft Defender dla urządzeń z punktami końcowymi
+title: Na urządzeniach Windows przy użyciu aplikacji Configuration Manager
+description: Użyj Configuration Manager, aby wdrożyć pakiet konfiguracji na urządzeniach, aby były one dołączane do usługi Defender for Endpoint.
+keywords: urządzenia onboard przy użyciu programu sccm, zarządzania urządzeniami, Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,31 +16,31 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: b506cf15e2d08568633533ba29af5e2f809c2134
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d67a4ca067f16d74b15a1d7ece5c47d563f1a941
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998104"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471918"
 ---
-# <a name="onboard-windows-devices-using-configuration-manager"></a>Na urządzeniach Windows przy użyciu Menedżer konfiguracji
+# <a name="onboard-windows-devices-using-configuration-manager"></a>Na urządzeniach Windows przy użyciu aplikacji Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager bieżąca gałąź
-- System Center 2012 R2 Menedżer konfiguracji
+- System Center 2012 R2 Configuration Manager
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 
-Za pomocą programu Menedżer konfiguracji punktów końcowych można dodać do usługi Microsoft Defender for Endpoint. 
+Możesz użyć programu Configuration Manager do donia punktów końcowych usługi Ochrona punktu końcowego w usłudze Microsoft Defender sieci web. 
 
-Dostępnych jest kilka opcji, których można używać do korzystania z urządzeń Menedżer konfiguracji:
+Istnieje kilka opcji, których można używać do wyniania urządzeń przy użyciu Configuration Manager:
 - [Urządzenia wyniesiene przy użyciu System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
 - [Dołączanie dzierżawy](/mem/configmgr/tenant-attach/)
 
@@ -51,21 +51,21 @@ Na Windows Server 2012 R2 i Windows Server 2016 — po wykonaniu kroków dołąc
 > [!NOTE]
 > Program Defender for Endpoint nie obsługuje dołączania w fazie ["Out-of-Box Experience" (OOBE](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) ). Upewnij się, że użytkownicy zakończyli działanie programu OOBE po Windows instalacji lub uaktualnieniu.
 >
-> W aplikacji mobilnej można utworzyć regułę wykrywania w celu ciągłego sprawdzania Menedżer konfiguracji czy urządzenie zostało w nim włoone. Aplikacja to inny typ obiektu niż pakiet i program.
-> Jeśli urządzenie nie zostało jeszcze naniesone (ze względu na oczekiwanie na ukończenie zadania WOOBE lub z dowolnego innego powodu), program Menedżer konfiguracji spróbuje ponownie wniesieć urządzenie, dopóki reguła nie wykryje zmiany statusu.
+> W aplikacji mobilnej można utworzyć regułę wykrywania w celu ciągłego sprawdzania Configuration Manager czy urządzenie zostało w nim włoone. Aplikacja to inny typ obiektu niż pakiet i program.
+> Jeśli urządzenie nie zostało jeszcze naniesone (ze względu na oczekiwanie na ukończenie zadania przez urządzenie OOBE lub z dowolnego innego powodu), program Configuration Manager spróbuje ponownie wniesieć urządzenie, dopóki reguła nie wykryje zmiany stanu.
 >
 > Takie działanie można osiągnąć, tworząc sprawdzanie reguły wykrywania, jeśli wartość rejestru "OnboardingState" (wartość typu REG_DWORD) = 1.
 > Ta wartość rejestru znajduje się w folderze "HKLM\SOFTWARE\Microsoft\Windows Threat Protection\Status".
-Aby uzyskać więcej informacji, zobacz Konfigurowanie metod wykrywania [w programie System Center 2012 R2 Menedżer konfiguracji](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
+Aby uzyskać więcej informacji, [zobacz Konfigurowanie metod wykrywania w programie System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
 
 ### <a name="configure-sample-collection-settings"></a>Konfigurowanie ustawień kolekcji przykładowych
 
 Dla każdego urządzenia możesz ustawić wartość konfiguracji, aby określić, czy próbki mogą być pobierane z urządzenia w przypadku złożenia żądania za pośrednictwem programu Microsoft 365 Defender w celu przesłania pliku do dogłębnej analizy.
 
 > [!NOTE]
-> Te ustawienia konfiguracji są zwykle wykonywane za pośrednictwem Menedżer konfiguracji.
+> Te ustawienia konfiguracji są zwykle wykonywane za pośrednictwem Configuration Manager.
 
-Możesz ustawić regułę zgodności dla elementu konfiguracji w programie Menedżer konfiguracji, aby zmienić przykładowe ustawienie udostępniania na urządzeniu.
+Możesz ustawić regułę zgodności dla elementu konfiguracji w programie Configuration Manager, aby zmienić przykładowe ustawienie udostępniania na urządzeniu.
 
 Ta reguła powinna dotyczyć  elementu konfiguracji reguły zgodności, który ustawia wartość klucza rejestru na docelowych urządzeniach w celu upewninia się, że jest to skarga.
 
@@ -84,7 +84,7 @@ Gdzie typ klucza to D-WORD. Dopuszczalne wartości:
 
 Wartość domyślna w przypadku, gdy klucz rejestru nie istnieje, to 1.
 
-Aby uzyskać więcej informacji na System Center Configuration Manager zgodności, zobacz Wprowadzenie do ustawień zgodności w [programie System Center 2012 R2 Menedżer konfiguracji](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Aby uzyskać więcej informacji na System Center Configuration Manager zgodności, zobacz Wprowadzenie do ustawień zgodności System Center [2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="other-recommended-configuration-settings"></a>Inne zalecane ustawienia konfiguracji
 
@@ -92,7 +92,7 @@ Po dojechania urządzeń do usługi ważne jest, aby korzystać z zawartych w ni
 
 ### <a name="device-collection-configuration"></a>Konfiguracja kolekcji urządzeń
 
-Jeśli korzystasz z programu Endpoint Menedżer konfiguracji w wersji 2002 lub nowszej, możesz poszerzyć wdrożenie tak, aby uwzględniało serwery lub klientów  down-level.
+Jeśli korzystasz z programu Endpoint Configuration Manager w wersji 2002 lub nowszej, możesz poszerzyć wdrożenie tak, aby uwzględniało serwery lub klientów  down-level.
 
 ### <a name="next-generation-protection-configuration"></a>Konfiguracja ochrony następnej generacji
 
@@ -111,7 +111,7 @@ Zalecane są następujące ustawienia konfiguracji:
 
 - Typ członkostwa w usłudze Cloud Protection: Członkostwo zaawansowane
 
-#### <a name="attack-surface-reduction"></a>Zmniejszenie powierzchni ataków
+#### <a name="attack-surface-reduction"></a>Zmniejszanie obszaru podatnego na ataki
 
 Skonfiguruj wszystkie dostępne reguły do inspekcji.
 
@@ -130,9 +130,9 @@ Aby uzyskać więcej informacji, zobacz [Szacowanie kontrolowanego dostępu do f
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Uruchamianie testu wykrywania w celu zweryfikowania do uruchomienia
 
-Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, zobacz Uruchamianie testu wykrywania na nowo włodarzony [program Microsoft Defender dla urządzenia końcowego](run-detection-test.md).
+Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, [zobacz Uruchamianie testu](run-detection-test.md) wykrywania na nowo Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach.
 
-## <a name="offboard-devices-using-configuration-manager"></a>Urządzenia wye korzystające z Menedżer konfiguracji
+## <a name="offboard-devices-using-configuration-manager"></a>Urządzenia wye korzystające z Configuration Manager
 
 Ze względów bezpieczeństwa pakiet używany na urządzeniach offboardowych wygaśnie po 30 dniach od daty jego pobrania. Pakiety wynoszące wygasłe wysłane na urządzenie zostaną odrzucone. Podczas pobierania pakietu wynegocjowego będziesz o nich powiadamiać o dacie wygaśnięcia pakietów oraz o tym, że zostanie on także uwzględniony w nazwie pakietu.
 
@@ -143,7 +143,7 @@ Ze względów bezpieczeństwa pakiet używany na urządzeniach offboardowych wyg
 
 Jeśli używasz bieżącej Microsoft Endpoint Manager, [zobacz Tworzenie pliku konfiguracji wye dołączania](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Urządzenia przenośne korzystające z System Center 2012 R2 Menedżer konfiguracji
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Urządzenia przenośne korzystające z System Center 2012 R2 Configuration Manager
 
 1. Pobierz pakiet wynos ze <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender:</a>
     1. W okienku nawigacji **wybierz pozycję Ustawienia** \> **Punkty końcowe** \> **Zarządzanie urządzeniami** \>**: wyczyszczycie**.  
@@ -153,7 +153,7 @@ Jeśli używasz bieżącej Microsoft Endpoint Manager, [zobacz Tworzenie pliku k
 
 2. Wyodrębnianie zawartości pliku .zip do udostępnionej lokalizacji tylko do odczytu, do której dostęp mogą uzyskać administratorzy sieci, którzy wdrożyą pakiet. Plik powinien mieć nazwę *: WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Wdeksuj pakiet, korzystając z procedury opisanej w artykule pakiety i programy [System Center 2012 R2 Menedżer konfiguracji](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) pakietu.
+3. Wdeksuj pakiet, korzystając z procedury opisanej w artykule pakiety i programy [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) pakietu.
 
    Wybierz wstępnie zdefiniowaną kolekcję urządzeń, w których chcesz wdrożyć pakiet.
 
@@ -162,9 +162,9 @@ Jeśli używasz bieżącej Microsoft Endpoint Manager, [zobacz Tworzenie pliku k
 
 ## <a name="monitor-device-configuration"></a>Monitorowanie konfiguracji urządzenia
 
-Jeśli korzystasz z bieżącej Microsoft Endpoint Manager, użyj wbudowanego pulpitu nawigacyjnego programu Defender for Endpoint w konsoli Menedżer konfiguracji sieci Web. Aby uzyskać więcej informacji, zobacz [Defender for Endpoint — Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+Jeśli korzystasz z Microsoft Endpoint Manager, użyj wbudowanego pulpitu nawigacyjnego programu Defender for Endpoint w konsoli Configuration Manager sieci Web. Aby uzyskać więcej informacji, zobacz [Defender for Endpoint — Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Jeśli używasz programu System Center 2012 R2 Menedżer konfiguracji, monitorowanie składa się z dwóch części:
+Jeśli używasz programu System Center 2012 R2 Configuration Manager, monitorowanie składa się z dwóch części:
 
 1. Potwierdzanie, że pakiet konfiguracji został poprawnie wdrożony i działa (lub został pomyślnie uruchomiony) na urządzeniach w sieci.
 
@@ -172,7 +172,7 @@ Jeśli używasz programu System Center 2012 R2 Menedżer konfiguracji, monitorow
 
 ### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>Upewnij się, że pakiet konfiguracji został poprawnie wdrożony
 
-1. W konsoli Menedżer konfiguracji nawigacji kliknij pozycję **Monitorowanie** w dolnej części okienka nawigacji.
+1. W konsoli Configuration Manager nawigacji kliknij pozycję **Monitorowanie** w dolnej części okienka nawigacji.
 
 2. Wybierz **pozycję Omówienie** , a **następnie Pozycję Wdrożenia**.
 
@@ -180,13 +180,13 @@ Jeśli używasz programu System Center 2012 R2 Menedżer konfiguracji, monitorow
 
 4. Przejrzyj wskaźniki stanu w obszarze **Statystyka ukończenia** i **Stan zawartości**.
 
-    W przypadku wdrożeń nieudanych (urządzeń z błędem **, wymagań** lub stanu niepowodzeniem **) może** być konieczne rozwiązanie problemów z urządzeniami. Aby uzyskać więcej informacji, zobacz Rozwiązywanie [problemów z dołączaniem do programu Microsoft Defender dla punktów końcowych](troubleshoot-onboarding.md).
+    W przypadku wdrożeń nieudanych (urządzeń z błędem **, wymagań** lub stanu niepowodzeniem **) może** być konieczne rozwiązanie problemów z urządzeniami. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender problemów z dołączaniem](troubleshoot-onboarding.md).
 
-    ![Menedżer konfiguracji pokazuje pomyślne wdrożenie bez błędów.](images/sccm-deployment.png)
+    :::image type="content" source="images/sccm-deployment.png" alt-text="The Configuration Manager showing successful deployment with no errors" lightbox="images/sccm-deployment.png":::
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Sprawdzanie, czy urządzenia są zgodne z usługą Microsoft Defender for Endpoint
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Sprawdzanie, czy urządzenia są zgodne z usługą Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia
 
-Możesz ustawić regułę zgodności dla elementu konfiguracji w programie System Center 2012 R2 Menedżer konfiguracji monitorowanie wdrożenia.
+Możesz ustawić regułę zgodności dla elementu konfiguracji w programie System Center 2012 R2 Configuration Manager monitorowanie wdrożenia.
 
 Ta reguła powinna *być elementem* konfiguracji reguły zgodności, który nie naprawia działania, który monitoruje wartość klucza rejestru na urządzeniach docelowych.
 
@@ -198,12 +198,12 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-Aby uzyskać więcej informacji, [zobacz Wprowadzenie do ustawień zgodności w programie System Center 2012 R2 Menedżer konfiguracji](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Aby uzyskać więcej informacji, [zobacz Wprowadzenie do ustawień zgodności w programie System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Na urządzeniach Windows przy użyciu aplikacji zasady grupy](configure-endpoints-gp.md)
-- [Na urządzeniach Windows urządzeniach przenośnych za pomocą narzędzi do zarządzania urządzeniami przenośnymi](configure-endpoints-mdm.md)
+- [Na urządzeniach Windows przenośnych za pomocą narzędzi mobilnych Zarządzanie urządzeniami urządzeniach przenośnych](configure-endpoints-mdm.md)
 - [Dołączanie Windows przy użyciu skryptu lokalnego](configure-endpoints-script.md)
-- [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)
-- [Uruchamianie testu wykrywania na nowo w urządzeniu z uruchomionym programem Microsoft Defender dla punktu końcowego](run-detection-test.md)
-- [Rozwiązywanie problemów z dołączaniem do programu Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](configure-endpoints-vdi.md)
+- [Uruchamianie testu wykrywania na nowo włodowym Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia](run-detection-test.md)
+- [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender problemów z dołączaniem](troubleshoot-onboarding.md)

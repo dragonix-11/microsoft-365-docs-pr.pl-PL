@@ -1,8 +1,8 @@
 ---
-title: Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie Linux za pomocą urządzenia Ansible
+title: Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux za pomocą urządzenia Ansible
 ms.reviewer: ''
-description: W tym artykule opisano, jak wdrożyć program Microsoft Defender for Endpoint w systemie Linux przy użyciu narzędzia Ansible.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, dezinstalacja, 8, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
+description: W tym artykule opisano, Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux przy użyciu narzędzia Ansible.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, instalacja, wdrażanie, dezinstalacja, szemra, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,20 +16,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a2c29d27814b4ed8c199b7a4db1ee10ce37b86c
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 57f0687fce422f26b76fc8b98a06ce0566f90f60
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63013326"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476076"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Wdrażanie programu Microsoft Defender dla punktu końcowego w systemie Linux za pomocą urządzenia Ansible
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux za pomocą urządzenia Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -75,7 +75,7 @@ Pobierz pakiet dołączający z portalu Microsoft 365 Defender sieci:
 2. Z pierwszego menu rozwijanego wybierz Linux **Server** jako system operacyjny. Z drugiego menu rozwijanego wybierz preferowaną metodę wdrażania narzędzie do zarządzania **konfiguracją systemu Linux** .
 3. Wybierz **pozycję Pobierz pakiet dołączający**. Zapisz plik jako WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender zrzut ekranu portalu.](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="Opcja Pobierz pakiet dołączający" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. W wierszu polecenia sprawdź, czy masz plik. Wyodrębnianie zawartości archiwum:
 

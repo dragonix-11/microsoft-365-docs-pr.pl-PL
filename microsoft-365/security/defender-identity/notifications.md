@@ -1,6 +1,6 @@
 ---
-title: Powiadomienia usługi Microsoft Defender dla tożsamości w aplikacji Microsoft 365 Defender
-description: Dowiedz się, jak skonfigurować powiadomienia usługi Microsoft Defender dla tożsamości w aplikacji Microsoft 365 Defender.
+title: Microsoft Defender for Identity powiadomienia w aplikacji Microsoft 365 Defender
+description: Dowiedz się, jak Microsoft Defender for Identity powiadomienia w aplikacji Microsoft 365 Defender.
 ms.date: 05/20/2021
 ms.topic: how-to
 author: dcurwin
@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fa740b483cd1a9591f7d4f7ef1961c5e96d4d44b
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 89ed7ae50bf89c28bde81ea02e8905d0056ede53
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682245"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470928"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Powiadomienia usługi Defender dla tożsamości w programie Microsoft 365 Defender
 
@@ -23,7 +23,7 @@ ms.locfileid: "63682245"
 - Microsoft 365 Defender
 - Defender for Identity
 
-W tym artykule wyjaśniono, jak pracować z powiadomieniami usługi [Microsoft Defender dla](/defender-for-identity) tożsamości w aplikacji [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+W tym artykule wyjaśniono, jak pracować z [powiadomieniami Microsoft Defender for Identity](/defender-for-identity) w aplikacji [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 > [!IMPORTANT]
 > W ramach schłodowania w Microsoft 365 Defender tożsamości niektóre opcje i szczegóły zmieniły się od ich lokalizacji w portalu usługi Defender dla tożsamości. Zapoznaj się ze szczegółami poniżej, aby dowiedzieć się, gdzie znaleźć zarówno znane, jak i nowe funkcje.
@@ -34,17 +34,18 @@ W Microsoft 365 Defender usługi Defender dla tożsamości możesz dodać adresa
 
 1. Na <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> **przejdź do Ustawienia** i **Tożsamości**.
 
-    ![Przejdź do Ustawienia, a następnie do identities.](../../media/defender-identity/settings-identities.png)
+  :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="Opcja Tożsamości w kolumnie Nazwa" lightbox="../../media/defender-identity/settings-identities.png":::
+
 
 1. Wybierz pozycję **Powiadomienia o problemach z kondycją**.
 
 1. Wprowadź adres e-mail adresata. Wybierz opcję **Dodaj**.
 
-    ![Wprowadź adres e-mail, w przypadku problemów ze kondycją.](../../media/defender-identity/health-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/health-email-recipient.png" alt-text="Element podmenu Powiadomienia o problemach z kondycją" lightbox="../../media/defender-identity/health-email-recipient.png":::
 
 1. Gdy program Defender dla tożsamości wykryje problem z kondycją, adresaci otrzymają wiadomość e-mail z powiadomieniem o szczegółach.
 
-    ![Przykładowa wiadomość e-mail o problemie z kondycją.](../../media/defender-identity/health-email.png)
+   :::image type="content" source="../../media/defender-identity/health-email.png" alt-text="Wiadomość e-mail o problemie z kondycją" lightbox="../../media/defender-identity/health-email.png":::
 
     > [!NOTE]
     > Wiadomość e-mail zawiera dwa linki do szczegółowych informacji o problemie. Możesz przejść do Centrum **kondycji MDI** lub nowego centrum **kondycji w uściślicie M365D**.
@@ -55,13 +56,13 @@ W Microsoft 365 Defender możesz dodać adresatów do powiadomień e-mail o wykr
 
 1. Na <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> **przejdź do Ustawienia** i **Tożsamości**.
 
-    ![Przejdź do Ustawienia, a następnie do identities.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="Opcja Tożsamości" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. Wybierz pozycję **Powiadomienia alertów**.
 
 1. Wprowadź adres e-mail adresata. Wybierz opcję **Dodaj**.
 
-    ![Wprowadź adres e-mail wykrytych alertów.](../../media/defender-identity/alert-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/alert-email-recipient.png" alt-text="Element podmenu Powiadomienia alertów" lightbox="../../media/defender-identity/alert-email-recipient.png":::
 
 ## <a name="syslog-notifications"></a>Powiadomienia syslogu
 
@@ -72,17 +73,17 @@ Program Defender for Identity może powiadamiać Cię o wykryciu podejrzanych dz
 
 1. Na <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> **przejdź do Ustawienia** i **Tożsamości**.
 
-    ![Przejdź do Ustawienia, a następnie do identities.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="Opcja Tożsamości w kolumnie Nazwa" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. Wybierz **pozycję Powiadomienia syslogu**.
 
 1. Aby włączyć powiadomienie systemu, ustaw przełącznik usługi **Syslog** w pozycji " **wł** ".
 
-    ![Włącz usługę syslog.](../../media/defender-identity/syslog-service.png)
+   :::image type="content" source="../../media/defender-identity/syslog-service.png" alt-text="Opcja usługi Syslog, która może być włączona" lightbox="../../media/defender-identity/syslog-service.png":::
 
 1. Wybierz **pozycję Konfiguruj usługę**. Zostanie otwarte okienko, w którym możesz wprowadzić szczegóły usługi syslog.
 
-    ![Wprowadź szczegóły usługi syslog.](../../media/defender-identity/syslog-sensor.png)
+   :::image type="content" source="../../media/defender-identity/syslog-sensor.png" alt-text="Strona, na której wprowadzasz szczegóły usługi Syslog" lightbox="../../media/defender-identity/syslog-sensor.png":::
 
 1. Wprowadź następujące szczegóły:
 
@@ -97,7 +98,7 @@ Program Defender for Identity może powiadamiać Cię o wykryciu podejrzanych dz
 
 1. Po skonfigurowaniu usługi **Syslog** możesz wybrać typy powiadomień (alertów i problemów dotyczących kondycji) do wysyłania do serwera syslogu.
 
-    ![Skonfigurowano usługę Syslog.](../../media/defender-identity/syslog-configured.png)
+   :::image type="content" source="../../media/defender-identity/syslog-configured.png" alt-text="Zaznaczona opcja Skonfigurowano usługę Syslog" lightbox="../../media/defender-identity/syslog-configured.png":::
 
 ## <a name="see-also"></a>Zobacz też
 

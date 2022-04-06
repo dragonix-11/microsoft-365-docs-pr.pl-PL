@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 73f07a7346edbaebe7e53cd4e17e29a5e6764073
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 099bd5c458a863576c8030a86d6923065228e307
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "62996746"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470752"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Zbieranie Program antywirusowy Microsoft Defender diagnostycznych
 
@@ -31,8 +31,8 @@ ms.locfileid: "62996746"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 W tym artykule opisano sposób zbierania danych diagnostycznych, które mogą być używane przez zespoły pomocy technicznej i inżynierów firmy Microsoft w celu rozwiązywania problemów, które mogą wystąpić podczas korzystania z Program antywirusowy Microsoft Defender.
 
@@ -119,21 +119,22 @@ W przypadku parametru SupportLogLocation w ścieżce docelowej zostanie utworzon
 
 Możesz także określić miejsce, w którym plik .cab ma zostać utworzony przy użyciu obiektu zasady grupy danych (GPO).
 
-1. Otwórz Edytor zasady grupy sieci lokalnej i znajdź dla tego edytora GPO SupportLogLocation w lokalizacji: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`.
+1. Otwórz Edytor zasady grupy lokalnej i znajdź dla tego edytora GPO SupportLogLocation w lokalizacji: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`.
 
 2. Wybierz **pozycję Definiuj ścieżkę katalogu, aby skopiować pliki dziennika pomocy technicznej**.
 
-   ![Zrzut ekranu przedstawiający edytor lokalnych zasad grupy](images/GPO1-SupportLogLocationDefender.png)
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="Edytor lokalnych zasad grupy" lightbox="images/GPO1-SupportLogLocationDefender.png":::
 
-   ![Zrzut ekranu przedstawiający ustawienie Definiowanie ścieżki dla plików dziennika](images/GPO2-SupportLogLocationGPPage.png)
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="Ustawienie definiowania ścieżki dla plików dziennika" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
 
-    ![Zrzut ekranu przedstawiający edytor lokalnych zasad grupy.](images/GPO1-SupportLogLocationDefender.png)  
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="Edytor lokalnych zasad grupy" lightbox="images/GPO1-SupportLogLocationDefender.png"::: 
         
-     ![Zrzut ekranu przedstawiający ustawienie definiowania ścieżki dla plików dziennika.](images/GPO2-SupportLogLocationGPPage.png)  
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="Ścieżka definiowania do konfigurowania ustawień plików dziennika" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
+ 
 3. W Edytorze zasad wybierz pozycję **Włączone**.
 
 4. Określ ścieżkę katalogu, do której chcesz skopiować pliki dziennika pomocy technicznej, w **polu** Opcje.
-     ![Zrzut ekranu przedstawiający ustawienie niestandardowe Włączone ścieżki katalogu.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
+   :::image type="content" source="images/GPO3-SupportLogLocationGPPageEnabledExample.png" alt-text="Ustawienie niestandardowe Włączone ścieżki katalogu" lightbox="images/GPO3-SupportLogLocationGPPageEnabledExample.png":::
 5. Wybierz **przycisk OK** lub **Zastosuj**.
 
 ## <a name="see-also"></a>Zobacz też

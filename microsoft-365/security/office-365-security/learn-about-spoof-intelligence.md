@@ -20,12 +20,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się więcej o analizie fałszer Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bf0ed143f5bfb78ff1d6af4005a4b5ec64fd90e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ba31c5022cb8f449ce9e1e1a4ba65e87afd0b464
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021308"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471456"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Spoof intelligence insight in EOP
 
@@ -33,7 +33,7 @@ ms.locfileid: "63021308"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
@@ -83,10 +83,10 @@ W dalszej części tego artykułu wyjaśniono, jak korzystać z analiz fałszers
 
   > [!NOTE]
   >
-  > - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w  aplikacji Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+  > - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w aplikacji  Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
   > - Grupa **ról Zarządzanie organizacją tylko do** odczytu w [programie Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) również zapewnia dostęp tylko do odczytu tej funkcji.
 
-- Zasady ochrony przed wyłudzaniem informacji są włączane i wyłączane w usługach EOP i Microsoft Defender for Office 365. Funkcja analizy fałszowania jest domyślnie włączona. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed](configure-anti-phishing-policies-eop.md) wyłudzaniem informacji w uwitrynie EOP lub Konfigurowanie zasad [ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla systemu Office 365](configure-mdo-anti-phishing-policies.md).
+- Zasady ochrony przed wyłudzaniem informacji są włączane i wyłączane w usługach EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender. Funkcja analizy fałszowania jest domyślnie włączona. Aby uzyskać więcej informacji, zobacz Konfigurowanie zasad ochrony przed wyłudzaniem [informacji w u usługi EOP](configure-anti-phishing-policies-eop.md) lub Konfigurowanie zasad ochrony przed wyłudzaniem informacji [w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
 
 - Aby uzyskać informacje o naszych zalecanych ustawieniach ochrony przed fałszerami, zobacz Ustawienia zasad ochrony przed wyłudzaniem informacji [eOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings).
 
@@ -96,7 +96,7 @@ W dalszej części tego artykułu wyjaśniono, jak korzystać z analiz fałszers
 
 2. Na stronie **Listy zezwalania/blokowania dzierżawy** informacje o analizie dotyczącej fałszowania wyglądają następująco:
 
-   ![Szczegółowe informacje dotyczące ochrony przed fałszerami na stronie zasad ochrony przed wyłudzaniem informacji.](../../media/m365-sc-spoof-intelligence-insight.png)
+   :::image type="content" source="../../media/m365-sc-spoof-intelligence-insight.png" alt-text="Informacje dotyczące ochrony przed fałszerami na stronie zasad ochrony przed wyłudzaniem informacji" lightbox="../../media/m365-sc-spoof-intelligence-insight.png":::
 
    Szczegółowe informacje są dostępne w dwóch trybach:
 
@@ -123,7 +123,7 @@ Na stronie **Spoof intelligence insight** (Analiza fałszowania) wyświetlanej p
   - **Zewnętrzne**: sfałszowany nadawca znajduje się w domenie zewnętrznej.
 - **Akcja**: Ta wartość jest **dozwolona lub** **zablokowana**:
   - **Dozwolone**: Domena nie sprawdza jawnego uwierzytelniania wiadomości e-mail [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) i [DMARC](use-dmarc-to-validate-email.md). Jednak ta domena przeszła niejawne testy uwierzytelniania wiadomości e-mail ([uwierzytelnianie złożone](email-validation-and-authentication.md#composite-authentication)). W wyniku tego nie zostały podjęte żadne działania zapobiegające podszywce się nad wiadomością.
-  - **Zablokowane**: Wiadomości z połączenia domeny sfałszowanej i infrastruktury wysyłania są  oznaczane jako złe przez spoof intelligence. Akcja przejmowana przez sfałszowane wiadomości jest kontrolowana przez domyślne zasady ochrony przed wyłudzaniem informacji lub niestandardowe zasady ochrony przed wyłudzaniem informacji (wartość domyślna to Przenoszenie wiadomości do folderu **Wiadomości-śmieci**). Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365](configure-mdo-anti-phishing-policies.md).
+  - **Zablokowane**: Wiadomości z połączenia domeny sfałszowanej i infrastruktury wysyłania są  oznaczane jako złe przez spoof intelligence. Akcja przejmowana przez sfałszowane wiadomości jest kontrolowana przez domyślne zasady ochrony przed wyłudzaniem informacji lub niestandardowe zasady ochrony przed wyłudzaniem informacji (wartość domyślna to Przenoszenie wiadomości do folderu **Wiadomości-śmieci**). Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
 
 Możesz kliknąć wybrane nagłówki kolumn, aby posortować wyniki.
 
@@ -143,7 +143,7 @@ Po wybraniu pozycji z listy zostanie wyświetlone wysuwne okno wysuwu szczegół
 - Co należy zrobić.
 - Podsumowanie domeny, które zawiera większość tych samych informacji ze strony głównej analizy fałszowania.
 - WhoIs data about the sender.
-- Link do otwierania [Eksploratora zagrożeń w](threat-explorer.md) celu wyświetlenia dodatkowych szczegółów dotyczących nadawcy  \> w obszarze **Wyświetlanie informacji o wiadomościach phish** w programie Microsoft Defender dla Office 365.
+- Link do otwierania [Eksploratora zagrożeń w](threat-explorer.md) celu wyświetlenia dodatkowych szczegółów dotyczących nadawcy w obszarze **Wyświetlanie** \> **informacji o wiadomościach phish** w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 - Podobne wiadomości, które zobaczyliśmy w Twojej dzierżawie od tego samego nadawcy.
 
 ### <a name="about-allowed-spoofed-senders"></a>Informacje o dozwolonych sfałszowanych nadawcach

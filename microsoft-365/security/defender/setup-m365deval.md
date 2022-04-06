@@ -1,7 +1,7 @@
 ---
-title: Konfigurowanie laboratorium Microsoft 365 Defender próbnego lub środowiska pilotażowego
-description: Program Access Microsoft 365 Defender następnie skonfiguruj środowisko laboratorium Microsoft 365 Defender próbnego
-keywords: Microsoft 365 Defender konfiguracji wersji próbnej, Microsoft 365 Defender pilotażowej, Microsoft 365 Defender, Microsoft 365 Defender laboratorium oceny
+title: Konfigurowanie laboratorium próbnego Microsoft 365 Defender lub środowiska pilotażowego
+description: Uzyskaj dostęp do portalu Microsoft 365 Defender, a następnie skonfiguruj środowisko laboratorium Microsoft 365 Defender próbnego
+keywords: Microsoft 365 Defender konfiguracja wersji próbnej, Microsoft 365 Defender konfiguracja pilotażowa, spróbuj Microsoft 365 Defender, Microsoft 365 Defender konfigurację laboratorium ewaluacyjnego
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 681d9798c6f16f5829bdb4e5272abc3eac719a59
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 5d516a7062d8c6f617cee2a260f27ee896689f2c
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500986"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667345"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>Konfigurowanie wersji próbnej Microsoft 365 Defender w środowisku laboratoryjnym 
 
@@ -34,111 +34,111 @@ ms.locfileid: "64500986"
 **Dotyczy:**
 - Microsoft 365 Defender 
 
-Ten temat zawiera wskazówki dotyczące skonfigurowania dedykowanego środowiska laboratoryjnych. Aby uzyskać informacje na temat konfigurowania wersji próbnej w środowisku produkcyjnym, zobacz nowy przewodnik dotyczący oceny i [Microsoft 365 Defender](eval-overview.md) pilotażowego. 
+W tym temacie opisano konfigurowanie dedykowanego środowiska laboratoryjnego. Aby uzyskać informacje na temat konfigurowania wersji próbnej w środowisku produkcyjnym, zobacz nowy przewodnik [Evaluate and pilot Microsoft 365 Defender (Ocena i pilotaż Microsoft 365 Defender](eval-overview.md)). 
 
-## <a name="create-an-office-365-e5-trial-tenant"></a>Tworzenie dzierżawy Office 365 E5 próbnej
+## <a name="create-an-office-365-e5-trial-tenant"></a>Tworzenie dzierżawy wersji próbnej Office 365 E5
 >[!NOTE]
->Jeśli masz już istniejącą subskrypcję usługi Office 365 lub Azure Active Directory, możesz pominąć procedurę tworzenia Office 365 E5 wersji próbnej.
+>Jeśli masz już istniejącą subskrypcję Office 365 lub Azure Active Directory, możesz pominąć kroki tworzenia dzierżawy Office 365 E5 wersji próbnej.
 
-1. Przejdź do portalu [Office 365 E5 produktu i](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) wybierz pozycję **Bezpłatna wersja próbna**.
+1. Przejdź do [portalu produktu Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) i wybierz pozycję **Bezpłatna wersja próbna**.
 
-   :::image type="content" source="../../media/mtp-eval-9.png" alt-text="Strona Office 365 E5 wersji próbnej" lightbox="../../media/mtp-eval-9.png":::
+   :::image type="content" source="../../media/mtp-eval-9.png" alt-text="Strona bezpłatnej wersji próbnej Office 365 E5" lightbox="../../media/mtp-eval-9.png":::
   
-2. Ukończ rejestrację w wersji próbnej, wprowadzając swój adres e-mail (osobisty lub firmowy). Kliknij **pozycję Skonfiguruj konto**.
+2. Zakończ rejestrację próbną, wprowadzając swój adres e-mail (osobisty lub firmowy). Kliknij **pozycję Skonfiguruj konto**.
 
-   :::image type="content" source="../../media/mtp-eval-10.png" alt-text="Strona konfiguracji Office 365 E5 rejestracji wersji próbnej" lightbox="../../media/mtp-eval-10.png":::
+   :::image type="content" source="../../media/mtp-eval-10.png" alt-text="Strona konfiguracji rejestracji wersji próbnej Office 365 E5" lightbox="../../media/mtp-eval-10.png":::
 
-3. Wprowadź swoje imię, nazwisko, służbowy numer telefonu, nazwę firmy, rozmiar firmy oraz kraj lub region.  
+3. Podaj imię, nazwisko, numer telefonu służbowego, nazwę firmy, rozmiar firmy oraz kraj lub region.  
 
-   :::image type="content" source="../../media/mtp-eval-11.png" alt-text="Strona konfiguracji Office 365 E5 próbnej z prośbą o imię i nazwisko, telefon i szczegóły firmy" lightbox="../../media/mtp-eval-11.png":::
+   :::image type="content" source="../../media/mtp-eval-11.png" alt-text="Strona konfiguracji rejestracji wersji próbnej Office 365 E5 z prośbą o podanie nazwy, telefonu i szczegółów firmy" lightbox="../../media/mtp-eval-11.png":::
    
    > [!NOTE]
-   > Kraj lub region ustawiony tutaj określa region centrum danych, Office 365 będzie hostowany.
+   > Kraj lub region, który został tutaj ustawiony, określa region centrum danych, w Office 365 będzie hostowany.
   
-4. Wybierz preferencje weryfikacji: za pośrednictwem wiadomości SMS lub połączenia. Kliknij **pozycję Wyślij kod weryfikacyjny**. 
+4. Wybierz preferencję weryfikacji: za pośrednictwem wiadomości SMS lub połączenia. Kliknij **pozycję Wyślij kod weryfikacyjny**. 
 
-   :::image type="content" source="../../media/mtp-eval-12.png" alt-text="Strona konfiguracji Office 365 E5 wersji próbnej z pytaniem o preferencje weryfikacji" lightbox="../../media/mtp-eval-12.png":::
+   :::image type="content" source="../../media/mtp-eval-12.png" alt-text="Strona konfiguracji rejestracji wersji próbnej Office 365 E5 z prośbą o preferencję weryfikacji" lightbox="../../media/mtp-eval-12.png":::
 
 5. Ustaw niestandardową nazwę domeny dla dzierżawy, a następnie kliknij przycisk **Dalej**.
 
-   :::image type="content" source="../../media/mtp-eval-13.png" alt-text="Strona konfiguracji Office 365 E5 rejestracji wersji próbnej, na której można skonfigurować niestandardową nazwę domeny" lightbox="../../media/mtp-eval-13.png":::
+   :::image type="content" source="../../media/mtp-eval-13.png" alt-text="Strona konfiguracji rejestracji wersji próbnej Office 365 E5, na której można skonfigurować niestandardową nazwę domeny" lightbox="../../media/mtp-eval-13.png":::
  
-6. Skonfiguruj pierwszą tożsamość, która będzie administratorem globalnym dzierżawy. Wypełnij pola **Nazwa** i **hasło**. Kliknij **pozycję Zarejestruj się**.
+6. Skonfiguruj pierwszą tożsamość, która będzie administratorem globalnym dzierżawy. Wypełnij **pola Nazwa** i **Hasło**. Kliknij **pozycję Zarejestruj się**.
 
-   :::image type="content" source="../../media/mtp-eval-14.png" alt-text="Strona Office 365 E5 rejestracji wersji próbnej, na której można ustawić tożsamość biznesową" lightbox="../../media/mtp-eval-14.png":::
+   :::image type="content" source="../../media/mtp-eval-14.png" alt-text="Strona konfiguracji rejestracji wersji próbnej Office 365 E5, na której można ustawić tożsamość biznesową" lightbox="../../media/mtp-eval-14.png":::
 
-7. Kliknij **pozycję Przejdź do instalatora**, aby ukończyć inicjowanie obsługi Office 365 E5 próbnej dzierżawy.
+7. Kliknij **pozycję Przejdź do instalatora**, aby ukończyć aprowizację dzierżawy Office 365 E5 wersji próbnej.
 
-   :::image type="content" source="../../media/mtp-eval-15.png" alt-text="Strona Office 365 E5 rejestracji wersji próbnej z monitem o kliknięcie przycisku Przejdź do konfiguracji" lightbox="../../media/mtp-eval-15.png":::
+   :::image type="content" source="../../media/mtp-eval-15.png" alt-text="Strona konfiguracji rejestracji wersji próbnej Office 365 E5 monitująca o kliknięcie przycisku Przejdź do instalatora" lightbox="../../media/mtp-eval-15.png":::
 
-8. Połączenie firmowej do dzierżawy Office 365 dzierżawy. [Opcjonalnie] Wybierz **Połączenie nazwę domeny, która już należy do** Ciebie, i wpisz nazwę domeny. Kliknij **Dalej**.
+8. Połączenie domenę firmową do dzierżawy Office 365. [Opcjonalnie] Wybierz **Połączenie domenę, którą już posiadasz**, i wpisz nazwę domeny. Kliknij **Dalej**.
 
-   :::image type="content" source="../../media/mtp-eval-16.png" alt-text="Strona Office 365 E5, na której należy spersonalizować logowanie i adres e-mail" lightbox="../../media/mtp-eval-16.png":::
+   :::image type="content" source="../../media/mtp-eval-16.png" alt-text="Strona konfiguracji Office 365 E5, na której należy spersonalizować logowanie i wiadomość e-mail" lightbox="../../media/mtp-eval-16.png":::
  
-9. Dodaj rekord TXT lub MX, aby sprawdzić poprawność własności domeny. Po dodaniu rekordu TXT lub MX do domeny wybierz pozycję **Weryfikuj**.
+9. Dodaj rekord TXT lub MX, aby zweryfikować własność domeny. Po dodaniu rekordu TXT lub MX do domeny wybierz pozycję **Sprawdź**.
 
-   :::image type="content" source="../../media/mtp-eval-17.png" alt-text="Strona Office 365 E5 konfiguracyjna, na której należy dodać rekord TXT rekordu MX w celu zweryfikowania domeny" lightbox="../../media/mtp-eval-17.png":::
+   :::image type="content" source="../../media/mtp-eval-17.png" alt-text="Strona konfiguracji Office 365 E5, na której należy dodać rekord TXT MX, aby zweryfikować domenę" lightbox="../../media/mtp-eval-17.png":::
  
-10. [Opcjonalnie] Utwórz więcej kont użytkowników dla swojej dzierżawy. Możesz pominąć ten krok, klikając przycisk **Dalej**.
+10. [Opcjonalnie] Utwórz więcej kont użytkowników dla dzierżawy. Możesz pominąć ten krok, klikając przycisk **Dalej**.
 
-    :::image type="content" source="../../media/mtp-eval-18.png" alt-text="Strona Office 365 E5 konfiguracyjna, na której można dodać więcej użytkowników" lightbox="../../media/mtp-eval-18.png":::
+    :::image type="content" source="../../media/mtp-eval-18.png" alt-text="Strona konfiguracji Office 365 E5, na której można dodać więcej użytkowników" lightbox="../../media/mtp-eval-18.png":::
  
-11. [Opcjonalnie] Pobierz Office aplikacji. Kliknij **przycisk Dalej** , aby pominąć ten krok. 
+11. [Opcjonalnie] Pobierz aplikacje Office. Kliknij przycisk **Dalej** , aby pominąć ten krok. 
 
-    :::image type="content" source="../../media/mtp-eval-19.png" alt-text="Strona Office 365 E5, na której można zainstalować aplikacje pakietu Office firm" lightbox="../../media/mtp-eval-19.png":::
+    :::image type="content" source="../../media/mtp-eval-19.png" alt-text="Strona Office 365 E5, na której można instalować aplikacje Office" lightbox="../../media/mtp-eval-19.png":::
 
 12. [Opcjonalnie] Migrowanie wiadomości e-mail. Ponownie możesz pominąć ten krok.
 
-    :::image type="content" source="../../media/mtp-eval-20.png" alt-text="Informacje Office 365 E5, gdzie można określić, czy wiadomości e-mail mają być migrowane, czy nie" lightbox="../../media/mtp-eval-20.png":::
+    :::image type="content" source="../../media/mtp-eval-20.png" alt-text="Office 365 E5, w którym można określić, czy chcesz migrować wiadomości e-mail, czy nie" lightbox="../../media/mtp-eval-20.png":::
  
-13. Wybierz Usługi online. Wybierz **Exchange** i kliknij przycisk **Dalej**. 
+13. Wybierz pozycję Usługi online. Wybierz **pozycję Exchange** i kliknij przycisk **Dalej**. 
 
-    :::image type="content" source="../../media/mtp-eval-21.png" alt-text="Miejsce Office 365 E5, w którym można wybrać Usługi online" lightbox="../../media/mtp-eval-21.png":::
+    :::image type="content" source="../../media/mtp-eval-21.png" alt-text="Office 365 E5, w którym można wybrać Usługi online" lightbox="../../media/mtp-eval-21.png":::
 
-14. Dodaj rekordy MX, CNAME i TXT do swojej domeny. Po zakończeniu wybierz pozycję **Weryfikuj**.
+14. Dodaj rekordy MX, CNAME i TXT do domeny. Po zakończeniu wybierz pozycję **Sprawdź**.
 
-    :::image type="content" source="../../media/mtp-eval-22.png" alt-text="W Office 365 E5 można dodać rekordy DNS" lightbox="../../media/mtp-eval-22.png":::
+    :::image type="content" source="../../media/mtp-eval-22.png" alt-text="W tym miejscu Office 365 E5 można dodać rekordy DNS" lightbox="../../media/mtp-eval-22.png":::
  
-15. Gratulacje! Zakończono inicjowanie obsługi Office 365 dzierżawy.
+15. Gratulacje, zakończono aprowizację dzierżawy Office 365.
 
-    :::image type="content" source="../../media/mtp-eval-23.png" alt-text="Strona Office 365 E5 potwierdzenia ukończenia konfiguracji" lightbox="../../media/mtp-eval-23.png":::
+    :::image type="content" source="../../media/mtp-eval-23.png" alt-text="Strona potwierdzenia ukończenia konfiguracji Office 365 E5" lightbox="../../media/mtp-eval-23.png":::
     
 
-## <a name="enable-microsoft-365-trial-subscription"></a>Włączanie Microsoft 365 próbnej
+## <a name="enable-microsoft-365-trial-subscription"></a>Włączanie subskrypcji wersji próbnej Microsoft 365
 
 >[!NOTE]
->Zarejestrowanie się w celu korzystania z wersji próbnej daje Ci 25 licencji użytkowników, których możesz używać przez miesiąc. Zobacz [Wypróbowanie lub zakup Microsoft 365,](../../commerce/try-or-buy-microsoft-365.md) aby uzyskać szczegółowe informacje.
+>Rejestracja w wersji próbnej daje 25 licencji użytkowników do użycia przez miesiąc. Aby uzyskać szczegółowe informacje[, zobacz Try or buy a Microsoft 365 subscription (Wypróbuj lub kup subskrypcję Microsoft 365](../../commerce/try-or-buy-microsoft-365.md)).
 
-1. W [Administracja Microsoft 365 usługi kliknij](https://admin.microsoft.com/) **pozycję Rozliczenia**, a następnie przejdź do **strony Zakup usług**.
+1. W [centrum Administracja Microsoft 365](https://admin.microsoft.com/) kliknij pozycję **Rozliczenia**, a następnie przejdź do pozycji **Kup usługi**.
 
-2. Wybierz **Microsoft 365 E5** i kliknij pozycję **Rozpocznij bezpłatny okres próbny**. 
+2. Wybierz **pozycję Microsoft 365 E5** i kliknij pozycję **Rozpocznij bezpłatną wersję próbną**. 
 
-   :::image type="content" source="../../media/mtp-eval-24.png" alt-text="Strona Microsoft 365 E5 Rozpoczynanie bezpłatnej wersji próbnej" lightbox="../../media/mtp-eval-24.png":::
+   :::image type="content" source="../../media/mtp-eval-24.png" alt-text="Strona Microsoft 365 E5 Rozpocznij bezpłatną wersję próbną" lightbox="../../media/mtp-eval-24.png":::
 
-3. Wybierz preferencje weryfikacji: za pośrednictwem wiadomości SMS lub połączenia. Po wybraniu tej opcji wprowadź numer telefonu, wybierz pozycję Tekst do **mnie** **lub Zadzwoń** do mnie w zależności od wybranej opcji.
+3. Wybierz preferencję weryfikacji: za pośrednictwem wiadomości SMS lub połączenia. Po podjęciu decyzji wprowadź numer telefonu, wybierz pozycję **Wyślij wiadomość SMS** lub **Zadzwoń do mnie** w zależności od wybranego wyboru.
 
-   :::image type="content" source="../../media/mtp-eval-25.png" alt-text="Strona Microsoft 365 E5 Rozpocznij bezpłatny okres próbny z prośbą o dane kontaktowe w celu wysłania kodu w celu udowodnienia, że nie jesteś robotem" lightbox="../../media/mtp-eval-25.png":::
+   :::image type="content" source="../../media/mtp-eval-25.png" alt-text="Strona Microsoft 365 E5 Rozpocznij bezpłatną wersję próbną z prośbą o podanie danych kontaktowych w celu wysłania kodu, aby udowodnić, że nie jesteś robotem" lightbox="../../media/mtp-eval-25.png":::
  
-4. Wprowadź kod weryfikacyjny i kliknij pozycję **Rozpocznij bezpłatny okres próbny**.
+4. Wprowadź kod weryfikacyjny i kliknij pozycję **Rozpocznij bezpłatną wersję próbną**.
 
-   :::image type="content" source="../../media/mtp-eval-26.png" alt-text="Strona Microsoft 365 E5 Rozpocznij bezpłatny okres próbny, na której możesz wypełnić kod weryfikacyjny wysłany przez system, aby potwierdzić, że nie jesteś robotem" lightbox="../../media/mtp-eval-26.png":::
+   :::image type="content" source="../../media/mtp-eval-26.png" alt-text="Strona Microsoft 365 E5 Rozpocznij bezpłatną wersję próbną, na której można wypełnić kod weryfikacyjny wysłany przez system, aby udowodnić, że nie jesteś robotem" lightbox="../../media/mtp-eval-26.png":::
 
-5. Kliknij **pozycję Wypróbuj teraz**, aby potwierdzić Microsoft 365 E5 próbną.
+5. Kliknij **pozycję Wypróbuj teraz**, aby potwierdzić Microsoft 365 E5 wersji próbnej.
 
-   :::image type="content" source="../../media/mtp-eval-27.png" alt-text="The Microsoft 365 E5 Start free trial page where you should clock the Try now button to start" lightbox="../../media/mtp-eval-27.png":::
+   :::image type="content" source="../../media/mtp-eval-27.png" alt-text="Strona Microsoft 365 E5 Rozpocznij bezpłatną wersję próbną, na której należy uruchomić przycisk Wypróbuj teraz" lightbox="../../media/mtp-eval-27.png":::
  
-6. Przejdź do centrum **Administracja Microsoft 365** >  **UsersActivsActive** >  **użytkowników**. Wybierz swoje konto użytkownika, wybierz **pozycję Zarządzaj licencjami produktów**, a następnie zamień licencję z aplikacji Office 365 E5 do **Microsoft 365 E5**. Kliknij **Zapisz**.
+6. Przejdź do **obszaru Administracja Microsoft 365** CenterUsersActive users ( Centrum  >  Administracja Microsoft 365 **UżytkownicyAktywni** >  **użytkownicy**). Wybierz konto użytkownika, wybierz pozycję **Zarządzaj licencjami produktów**, a następnie zamień licencję z Office 365 E5 na **Microsoft 365 E5**. Kliknij **Zapisz**.
 
-   :::image type="content" source="../../media/mtp-eval-28.png" alt-text="Strona Administracja Microsoft 365 Centrum danych, na której można wybrać Microsoft 365 E5 licencji" lightbox="../../media/mtp-eval-28.png":::
+   :::image type="content" source="../../media/mtp-eval-28.png" alt-text="Strona centrum Administracja Microsoft 365, na której można wybrać licencję Microsoft 365 E5" lightbox="../../media/mtp-eval-28.png":::
  
 7. Ponownie wybierz konto administratora globalnego, a następnie kliknij pozycję **Zarządzaj nazwą użytkownika**.
 
-   :::image type="content" source="../../media/mtp-eval-29.png" alt-text="Strona Centrum Administracja Microsoft 365, gdzie można wybrać pozycję Konto i Zarządzanie nazwą użytkownika" lightbox="../../media/mtp-eval-29.png":::
+   :::image type="content" source="../../media/mtp-eval-29.png" alt-text="Strona centrum Administracja Microsoft 365, na której można wybrać pozycję Konto i zarządzać nazwą użytkownika" lightbox="../../media/mtp-eval-29.png":::
 
-8. [Opcjonalnie] Zmień domenę *z onmicrosoft.com* na własną domenę w zależności od tego, co wybrano w poprzednich krokach. Kliknij przycisk **Zapisz zmiany**.
+8. [Opcjonalnie] Zmień domenę z *onmicrosoft.com* na własną domenę — w zależności od tego, co wybrano w poprzednich krokach. Kliknij przycisk **Zapisz zmiany**.
 
-   :::image type="content" source="../../media/mtp-eval-30.png" alt-text="Strona Administracja Microsoft 365 Center, na której można zmienić preferencje domeny" lightbox="../../media/mtp-eval-30.png":::
+   :::image type="content" source="../../media/mtp-eval-30.png" alt-text="Strona centrum Administracja Microsoft 365, na której można zmienić preferencje domeny" lightbox="../../media/mtp-eval-30.png":::
 
 ## <a name="next-step"></a>Następny krok
-|[Etap 3. Konfigurowanie & wsadu](config-m365d-eval.md) | Skonfiguruj każdy Microsoft 365 Defender w celu Microsoft 365 Defender laboratorium próbnego lub środowiska pilotażowego i wsaduj punkty końcowe.
+|[Faza 3. Konfigurowanie dołączania &](config-m365d-eval.md) | Skonfiguruj każdy filar Microsoft 365 Defender dla laboratorium próbnego Microsoft 365 Defender lub środowiska pilotażowego i dołącz punkty końcowe.
 |:-------|:-----|

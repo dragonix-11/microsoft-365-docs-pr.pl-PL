@@ -1,7 +1,7 @@
 ---
-title: Ochrona punktu końcowego w usłudze Microsoft Defender wymienna ochrona Storage urządzenia
-description: Opis funkcji, które pomagają uniemożliwić użytkownikowi lub komputerowi korzystanie z nieautoryzowanego nośnika magazynu wymiennych
-keywords: nośnik magazynu wymiennych
+title: Ochrona punktu końcowego w usłudze Microsoft Defender ochrony Storage wymiennej kontrolki urządzenia
+description: Zapoznaj się z możliwościami, które pomagają uniemożliwić użytkownikom lub komputerom korzystanie z nieautoryzowanych wymiennych nośników magazynu
+keywords: wymienny nośnik magazynu
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,102 +14,102 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5913df59cb12d2f4d2d9dbec9c426bbf71769848
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 3d679cfa4f09b06e2c7923ee1fe6e47247d90f76
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569540"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665079"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Ochrona punktu końcowego w usłudze Microsoft Defender wymienna ochrona Storage urządzenia
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Ochrona punktu końcowego w usłudze Microsoft Defender ochrony Storage wymiennej kontrolki urządzenia
 
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Ochrona magazynu urządzenia kontrolą wymienną w programie Ochrona punktu końcowego w usłudze Microsoft Defender uniemożliwia użytkownikom, punktom końcowym i obu tych urządzeń korzystanie z nieautoryzowanych nośników magazynu wymiennych.
+Ochrona magazynu wymiennego sterowania urządzeniami w Ochrona punktu końcowego w usłudze Microsoft Defender uniemożliwia użytkownikom, punktom końcowym lub obu osobom korzystanie z nieautoryzowanych wymiennych nośników magazynu.
 
 ## <a name="protection-policies"></a>Zasady ochrony
 
-### <a name="removable-storage-access-control"></a>Kontrolka dostępu do magazynu wymiennych
+### <a name="removable-storage-access-control"></a>Kontrola dostępu do magazynu wymiennego
 
 **Możliwości**
 
-- *Inspekcja* Odczyt, pisanie lub wykonywanie dostępu do magazynu wymiennych na podstawie różnych właściwości urządzenia z wyłączeniem lub wyłączeniem.
-- *Zapobiegaj* Odczyt, pisanie lub wykonywanie dostępu z wykluczeniem lub bez nich — zezwalanie na określone urządzenie na podstawie różnych właściwości urządzenia.
+- *Inspekcji* Dostęp do odczytu lub zapisu lub wykonywania do magazynu wymiennego na podstawie różnych właściwości urządzenia z wykluczeniem lub bez.
+- *Zapobiec* Dostęp do odczytu lub zapisu lub wykonywania z wykluczeniem lub bez nich — zezwalaj na określone urządzenie na podstawie różnych właściwości urządzenia.
 
-**Windows 10 i Windows 11 pomocy technicznej**:
+**szczegóły pomocy technicznej Windows 10 i Windows 11**:
 
-- Stosowane na poziomie urządzenia, na poziomie użytkownika. lub oba. Zezwalaj tylko określonym osobom na wykonywanie operacji odczytu/zapisu/wykonywania na określonym magazynie wymiennym na określonym komputerze.
-- Obsługa MEM OMA-URI i zasad GPO.
-- Obsługiwane są ["Właściwości](#device-properties) urządzenia" zgodnie z ich ustawieniami.
-- Aby uzyskać informacje o funkcji Windows [wymiennych](device-control-removable-storage-access-control.md) danych, zobacz Informacje Access Control.
+- Stosowane na poziomie urządzenia, na poziomie użytkownika. lub obu tych elementów. Zezwalaj tylko określonym osobom wykonującym dostęp do odczytu/zapisu/wykonywania do określonego magazynu wymiennego na określonej maszynie.
+- Obsługa identyfikatora OMA-URI i obiektu zasad grupy MEM.
+- Obsługiwane "[Właściwości urządzenia](#device-properties)" na liście.
+- Aby uzyskać informacje o funkcji w Windows, zobacz [Access Control magazynu wymiennego](device-control-removable-storage-access-control.md).
 
 **Obsługiwana platforma** — Windows 10, Windows 11
 
-**Szczegóły pomocy technicznej dla systemu macOS**:
+**Szczegóły pomocy technicznej systemu macOS**:
 
 - Stosowane na poziomie urządzenia: te same zasady mają zastosowanie do każdego zalogowanego użytkownika.
-- Aby uzyskać informacje dotyczące systemu macOS, zobacz [Sterowanie urządzeniem dla systemu macOS](mac-device-control-overview.md).
+- Aby uzyskać informacje o konkretnym systemie macOS, zobacz [Kontrola urządzenia dla systemu macOS](mac-device-control-overview.md).
 
-**Obsługiwana platforma** — system macOS Catalina 10.15.4+ (z włączonymi rozszerzeniami systemu)
+**Obsługiwana platforma** — macOS Catalina 10.15.4+ (z włączonymi rozszerzeniami systemowymi)
 
 
 ### <a name="device-installation"></a>Instalacja urządzenia
 
-**Możliwości** — zapobieganie instalacji z wyłączeniem lub z wyłączeniem na podstawie różnych właściwości urządzenia.
+**Możliwości** — zapobiegaj instalacji z wykluczeniem lub bez wykluczeń na podstawie różnych właściwości urządzenia.
 
-**Windows 10 i Windows 11 pomocy technicznej**:
+**szczegóły pomocy technicznej Windows 10 i Windows 11**:
 
 - Stosowane na poziomie urządzenia: te same zasady mają zastosowanie do każdego zalogowanego użytkownika.
-- Obsługuje Microsoft Endpoint Manager i zasady grupy obiektów.
-- Obsługiwane są ["Właściwości](#device-properties) urządzenia" zgodnie z ich ustawieniami.
-- Aby uzyskać więcej informacji na Windows, zobacz Jak sterować urządzeniami USB i innymi nośnikami [wymiennymi przy użyciu](control-usb-devices-using-intune.md) Ochrona punktu końcowego w usłudze Microsoft Defender.
+- Obsługuje obiekty Microsoft Endpoint Manager i zasady grupy.
+- Obsługiwane "[Właściwości urządzenia](#device-properties)" na liście.
+- Aby uzyskać więcej informacji na temat Windows, zobacz [Jak kontrolować urządzenia USB i inne nośniki wymienne przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender](control-usb-devices-using-intune.md).
 
 **Obsługiwana platforma** — Windows 10, Windows 11
 
-**Szczegóły pomocy technicznej dla systemu macOS**:
+**Szczegóły pomocy technicznej systemu macOS**:
 
-- Zastosowane na poziomie urządzenia: te same zasady mają zastosowanie do każdego zalogowanego użytkownika
-- Aby uzyskać informacje dotyczące systemu macOS, zobacz [Sterowanie urządzeniem dla systemu macOS](mac-device-control-overview.md).
+- Stosowane na poziomie urządzenia: te same zasady mają zastosowanie do każdego zalogowanego użytkownika
+- Aby uzyskać informacje o konkretnym systemie macOS, zobacz [Kontrola urządzenia dla systemu macOS](mac-device-control-overview.md).
 
-**Obsługiwana platforma** — system macOS Catalina 10.15.4+ (z włączonymi rozszerzeniami systemu) lub nowszy
+**Obsługiwana platforma** — macOS Catalina 10.15.4+ (z włączonymi rozszerzeniami systemowymi) lub nowszym
 
 ### <a name="endpoint-dlp-removable-storage"></a>Magazyn wymienny DLP punktu końcowego
 
 **Możliwości** — inspekcja, ostrzeganie lub uniemożliwianie użytkownikowi kopiowania elementu lub informacji na nośnik wymienny lub urządzenie USB.
 
-**Opis** — aby uzyskać więcej informacji na temat Windows, zobacz [Informacje Microsoft 365 ochrony przed utratą danych w punktach końcowych](../../compliance/endpoint-dlp-learn-about.md).
+**Opis** — aby uzyskać więcej informacji na temat Windows, zobacz [Dowiedz się więcej o zapobieganiu utracie danych punktu końcowego Microsoft 365](../../compliance/endpoint-dlp-learn-about.md).
 
 **Obsługiwana platforma** — Windows 10, Windows 11
 
-### <a name="bitlocker"></a>BitLocker
+### <a name="bitlocker"></a>Funkcją bitlocker
 
 **Możliwości**:
 
-- Blokuj dane, które mają być zapisywane na dyskach wymiennych, które nie są chronione funkcją BitLocker.
-- Blokowanie dostępu do dysków wymiennych, chyba że zostały zaszyfrowane na komputerze należącym do Twojej organizacji
+- Blokuj dane, które mają być zapisywane na dyskach wymiennych, które nie są chronione przez funkcję BitLocker.
+- Blokuj dostęp do dysków wymiennych, chyba że zostały one zaszyfrowane na komputerze należącym do organizacji
 
-**Opis** — aby uzyskać więcej informacji na temat funkcji Windows, zobacz [BitLocker — dysk wymienny Ustawienia](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
+**Opis** — aby uzyskać więcej informacji na temat Windows, zobacz [Funkcja BitLocker — dysk wymienny Ustawienia](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
 
 **Obsługiwana platforma** — Windows 10, Windows 11
 
 ## <a name="device-properties"></a>Właściwości urządzenia
 
-Ochrona punktu końcowego w usłudze Microsoft Defender wymiennymi kontrolkami urządzeń Storage ochronę pozwala na ograniczenie dostępu do magazynu wymiennych na podstawie właściwości opisanych w poniższej tabeli:
+Ochrona punktu końcowego w usłudze Microsoft Defender Device Control Removable Storage Protection umożliwia ograniczenie dostępu do magazynu wymiennego na podstawie właściwości opisanych w poniższej tabeli:
 
 <br/><br/>
 
 |Nazwa właściwości|Odpowiednie zasady|Dotyczy systemów operacyjnych|Opis|
 |---|---|---|---|
-|Klasa urządzenia|[Jak sterować urządzeniami USB i innymi nośnikami wymiennymi przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender](control-usb-devices-using-intune.md)|System Windows|Aby uzyskać informacje na temat formatów identyfikatora urządzenia, zobacz [Klasa konfiguracji urządzenia](/windows-hardware/drivers/install/overview-of-device-setup-classes). Dwa poniższe linki zawierają pełną listę klas konfiguracji urządzenia. Klasy "System Use" dotyczą głównie urządzeń, które pochodzą z fabrycznego komputera/komputera, natomiast klasy "Dostawca" dotyczą głównie urządzeń, które mogą być połączone z istniejącym komputerem/komputerem: Zdefiniowane przez system zajęcia konfiguracji urządzeń dostępne dla dostawców [— sterowniki Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors) i Klasy konfiguracji urządzeń zdefiniowane przez system zarezerwowane do użycia przez system [— Windows sterowniki](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use). **Uwaga**: Instalację urządzenia można stosować do dowolnych urządzeń, nie tylko do magazynu wymiennych.|
-|Identyfikator podstawowy|[Pamięć wymienna Access Control](device-control-removable-storage-access-control.md)|System Windows|Identyfikator podstawowy zawiera nośnik wymienny, dysk CD/DVD i Windows Portable Device/WPD.|
-|Identyfikator urządzenia|[Pamięć wymienna Access Control](device-control-removable-storage-access-control.md); <p> [Jak sterować urządzeniami USB i innymi nośnikami wymiennymi przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender](control-usb-devices-using-intune.md)|System Windows|Aby uzyskać informacje na temat formatów identyfikatorów urządzeń, zobacz Standardowe identyfikatory [USB](/windows-hardware/drivers/install/standard-usb-identifiers), na przykład USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07.|
-|Identyfikator sprzętu|[Pamięć wymienna Access Control](device-control-removable-storage-access-control.md) <p> [Jak sterować urządzeniami USB i innymi nośnikami wymiennymi przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender](control-usb-devices-using-intune.md)|System Windows|Ciąg zidentyfikował urządzenie w systemie, na przykład USBSTOR\DiskGeneric_Flash_Disk___8.07; **Uwaga**: Identyfikator sprzętu nie jest unikatowy. różne urządzenia mogą mieć taką samą wartość.|
-|Identyfikator wystąpienia|[Pamięć wymienna Access Control](device-control-removable-storage-access-control.md) <p> Instalowanie urządzenia|System Windows|Ciąg jednoznacznie identyfikuje urządzenie w systemie, na przykład USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
-|Przyjazna nazwa|[Pamięć wymienna Access Control](device-control-removable-storage-access-control.md)|System Windows|Ciąg dołączony do urządzenia, na przykład Generic Flash Disk USB Device|
-|Identyfikator dostawcy / identyfikator produktu|[Pamięć wymienna Access Control](device-control-removable-storage-access-control.md)|System Windows <p> macOS|Identyfikator dostawcy to czterocyfrowy kod dostawcy przypisany mu przez komitet USB. Identyfikator produktu to czterocyfrowy kod produktu przypisany przez dostawcę do urządzenia. Symbol wieloznaczny Pomocy technicznej.|
-|Numer seryjny|[Pamięć wymienna Access Control](device-control-removable-storage-access-control.md)|System Windows <p> macOS |Na przykład `<SerialNumberId>002324B534BCB431B000058A</SerialNumberId>`|
+|Klasa urządzenia|[Jak kontrolować urządzenia USB i inne nośniki wymienne przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender](control-usb-devices-using-intune.md)|System Windows|Aby uzyskać informacje o formatach identyfikatorów urządzeń, zobacz [klasa konfiguracji urządzenia](/windows-hardware/drivers/install/overview-of-device-setup-classes). Poniższe dwa linki zawierają pełną listę klas konfiguracji urządzeń. Klasy "System Use" odnoszą się głównie do urządzeń z komputerem/maszyną z fabryki, natomiast klasy "Dostawca" odnoszą się głównie do urządzeń, które mogą być podłączone do istniejącego komputera/maszyny: [klasy konfiguracji urządzeń zdefiniowane przez system dostępne dla dostawców — sterowniki Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors) i [klasy konfiguracji urządzeń zdefiniowane przez system zarezerwowane do użytku systemowego — sterowniki Windows](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use). **Uwaga**: Instalacja urządzenia może być stosowana do wszystkich urządzeń, a nie tylko do magazynu wymiennego.|
+|Identyfikator podstawowy|[Wymienny Access Control magazynu](device-control-removable-storage-access-control.md)|System Windows|Identyfikator podstawowy obejmuje magazyn wymienny oraz dysk CD/DVD i Windows Urządzenia przenośne/WPD.|
+|Identyfikator urządzenia|[magazyn wymienny Access Control](device-control-removable-storage-access-control.md); <p> [Jak kontrolować urządzenia USB i inne nośniki wymienne przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender](control-usb-devices-using-intune.md)|System Windows|Aby uzyskać informacje o formatach identyfikatorów urządzeń, zobacz [Standardowe identyfikatory USB](/windows-hardware/drivers/install/standard-usb-identifiers), na przykład USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
+|Identyfikator sprzętu|[Wymienny Access Control magazynu](device-control-removable-storage-access-control.md) <p> [Jak kontrolować urządzenia USB i inne nośniki wymienne przy użyciu Ochrona punktu końcowego w usłudze Microsoft Defender](control-usb-devices-using-intune.md)|System Windows|Ciąg zidentyfikował urządzenie w systemie, na przykład USBSTOR\DiskGeneric_Flash_Disk___8.07; **Uwaga**: identyfikator sprzętu nie jest unikatowy; różne urządzenia mogą współużytkować tę samą wartość.|
+|Identyfikator wystąpienia|[Wymienny Access Control magazynu](device-control-removable-storage-access-control.md) <p> Instalowanie urządzenia|System Windows|Ciąg jednoznacznie identyfikuje urządzenie w systemie, na przykład USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
+|Przyjazna nazwa|[Wymienny Access Control magazynu](device-control-removable-storage-access-control.md)|System Windows|Ciąg dołączony do urządzenia, na przykład ogólne urządzenie USB z dyskiem flash|
+|Identyfikator dostawcy/identyfikator produktu|[Wymienny Access Control magazynu](device-control-removable-storage-access-control.md)|System Windows <p> macOS|Identyfikator dostawcy to czterocyfrowy kod dostawcy przypisywany przez komitet USB do dostawcy. Identyfikator produktu to czterocyfrowy kod produktu przypisany do urządzenia przez dostawcę; Obsługa symbolu wieloznaczowego.|
+|Identyfikator numeru seryjnego|[Wymienny Access Control magazynu](device-control-removable-storage-access-control.md)|System Windows <p> macOS |Na przykład `<SerialNumberId>002324B534BCB431B000058A</SerialNumberId>`|

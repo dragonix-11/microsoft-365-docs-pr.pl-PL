@@ -1,6 +1,6 @@
 ---
 title: Analizator wydajności dla Program antywirusowy Microsoft Defender
-description: W tym artykule opisano procedurę dostosowania wydajności Program antywirusowy Microsoft Defender.
+description: Opisuje procedurę dostosowywania wydajności Program antywirusowy Microsoft Defender.
 keywords: tune, performance, microsoft defender for endpoint, defender antivirus
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,92 +14,92 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b5d9346746dba3b7b4c75909cb8e36e47c3c9d99
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 7d24fe9a20c54a24a9c3406c66c1c591790bafc5
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472512"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667389"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizator wydajności dla Program antywirusowy Microsoft Defender
 
 **Dotyczy**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
-**Co to Program antywirusowy Microsoft Defender analizatora wydajności?**
+**Co to jest Program antywirusowy Microsoft Defender analizator wydajności?**
 
-W niektórych przypadkach może być konieczne dostosowanie wydajności programu Program antywirusowy Microsoft Defender skanuje określone pliki i foldery. Analizator wydajności to narzędzie wiersza polecenia programu PowerShell, które pomaga określić, które pliki, rozszerzenia plików i procesy mogą powodować problemy z wydajnością w poszczególnych punktach końcowych. Te informacje mogą być używane do lepszego oceniania problemów z wydajnością i stosowania działań naprawczych.
+W niektórych przypadkach może być konieczne dostrojenie wydajności Program antywirusowy Microsoft Defender podczas skanowania określonych plików i folderów. Analizator wydajności to narzędzie wiersza polecenia programu PowerShell, które pomaga określić, które pliki, rozszerzenia plików i procesy mogą powodować problemy z wydajnością poszczególnych punktów końcowych. Te informacje mogą służyć do lepszej oceny problemów z wydajnością i stosowania akcji korygowania.
 
-Dostępne są między innymi następujące opcje do przeanalizowania:
+Niektóre opcje analizy obejmują:
 
-- Najważniejsze pliki wpływające na czas skanowania
+- Najważniejsze pliki, które mają wpływ na czas skanowania
 - Najważniejsze procesy wpływające na czas skanowania
-- Najważniejsze rozszerzenia plików, które wpływają na czas skanowania
-- Kombinacje — na przykład najważniejsze pliki na rozszerzenie, najlepsze skany w trakcie każdego pliku, najlepsze skany na plik w trakcie procesu
+- Najważniejsze rozszerzenia plików, które mają wpływ na czas skanowania
+- Kombinacje — na przykład najważniejsze pliki na rozszerzenie, najczęściej skanowane na plik, najczęściej skanowane na plik na proces
 
-## <a name="running-performance-analyzer"></a>Uruchamianie Analizatora wydajności
+## <a name="running-performance-analyzer"></a>Uruchamianie analizatora wydajności
 
-Proces wysokiego poziomu dla uruchomionego analizatora wydajności obejmuje następujące kroki:
+Proces wysokiego poziomu dotyczący uruchamiania analizatora wydajności obejmuje następujące kroki:
 
-1. Uruchom Analizatora wydajności, aby zebrać nagranie wydajności Program antywirusowy Microsoft Defender zdarzeń w punkcie końcowym.
+1. Uruchom analizator wydajności, aby zebrać rejestrowanie wydajności Program antywirusowy Microsoft Defender zdarzeń w punkcie końcowym.
 
    > [!NOTE]
-   > Wydajność Program antywirusowy Microsoft Defender zdarzeń typu **Microsoft-Antimalware-Engine** jest rejestrowana za pośrednictwem analizatora wydajności.
+   > Wydajność zdarzeń Program antywirusowy Microsoft Defender typu **Microsoft-Antimalware-Engine** jest rejestrowana za pośrednictwem analizatora wydajności.
 
-2. Przeanalizuj wyniki skanowania przy użyciu różnych raportów nagrań.
+2. Przeanalizuj wyniki skanowania przy użyciu różnych raportów nagrywania.
 
-## <a name="using-performance-analyzer"></a>Używanie Analizatora wydajności
+## <a name="using-performance-analyzer"></a>Korzystanie z analizatora wydajności
 
-Aby rozpocząć nagrywanie zdarzeń systemowych, otwórz program PowerShell w trybie administracyjnym i wykonaj następujące czynności:
+Aby rozpocząć rejestrowanie zdarzeń systemowych, otwórz program PowerShell w trybie administracyjnym i wykonaj następujące kroki:
 
 1. Uruchom następujące polecenie, aby rozpocząć nagrywanie:
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    gdzie `-RecordTo` parametr określa pełną lokalizację ścieżki, w której zapisano plik śledzenia. Aby uzyskać więcej informacji o poleceniach cmdlet, [Program antywirusowy Microsoft Defender polecenia cmdlet](/powershell/module/defender).
+    gdzie `-RecordTo` parametr określa pełną lokalizację ścieżki, w której jest zapisywany plik śledzenia. Aby uzyskać więcej informacji na temat poleceń cmdlet, zobacz [Program antywirusowy Microsoft Defender poleceń cmdlet](/powershell/module/defender).
 
-2. Jeśli istnieją procesy lub usługi, które powinny mieć wpływ na wydajność, odtąd wykonywać odpowiednie zadania.
+2. Jeśli istnieją procesy lub usługi, które mają wpływ na wydajność, odtwórz sytuację, wykonując odpowiednie zadania.
 
-3. Naciśnij **klawisz ENTER** , aby zatrzymać i zapisać nagranie, lub **klawisze Ctrl+C** , aby anulować nagrywanie.
+3. Naciśnij **klawisz ENTER** , aby zatrzymać i zapisać nagrywanie, lub **klawisze Ctrl+C** , aby anulować nagrywanie.
 
-4. Analizowanie wyników przy użyciu parametru analizatora `Get-MpPerformanceReport`wydajności. Na przykład podczas wykonywania `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`polecenia użytkownik ma dostęp do listy dziesięciu najlepszych skanów w poszukiwaniu 3 najwyższych plików wpływających na wydajność. 
+4. Przeanalizuj wyniki przy użyciu parametru analizatora `Get-MpPerformanceReport`wydajności. Na przykład podczas wykonywania polecenia `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`użytkownik otrzymuje listę dziesięciu pierwszych skanów dla 3 pierwszych plików wpływających na wydajność. 
 
 Aby uzyskać więcej informacji na temat parametrów i opcji wiersza polecenia, zobacz [New-MpPerformanceRecording](#new-mpperformancerecording) i [Get-MpPerformanceReport](#get-mpperformancereport).
 
 > [!NOTE]
-> Jeśli podczas uruchamiania nagrywania zostanie wyświetlany komunikat o błędzie "Nie można uruchomić rejestrowania wydajności, ponieważ rejestrator wydajności Windows już nagrywa", uruchom następujące polecenie, aby zatrzymać istniejące śledzenia za pomocą nowego polecenia: **wpr -cancel -instancename MSFT_MpPerformanceRecording**
+> Jeśli podczas uruchamiania nagrania zostanie wyświetlony błąd "Nie można rozpocząć rejestrowania wydajności, ponieważ Windows rejestrator wydajności jest już nagrywany", uruchom następujące polecenie, aby zatrzymać istniejący ślad za pomocą nowego polecenia: **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
-### <a name="performance-tuning-data-and-information"></a>Dostosowywanie wydajności danych i informacji
+### <a name="performance-tuning-data-and-information"></a>Dane i informacje dotyczące dostrajania wydajności
 
-Na podstawie zapytania użytkownik będzie mógł wyświetlać dane dotyczące liczby skanów, czasu trwania (suma/min/średnia/maks/mediana), ścieżki, procesu i przyczyny skanowania. Na poniższej ilustracji przedstawiono przykładowe dane wyjściowe dla prostego zapytania z 10 najwyższych plików w celu oceny wyników skanowania. 
+Na podstawie zapytania użytkownik będzie mógł wyświetlać dane pod kątem liczby skanów, czasu trwania (łączna/minimalna/średnia/maksymalna/mediana), ścieżki, procesu i przyczyny skanowania. Na poniższej ilustracji przedstawiono przykładowe dane wyjściowe dla prostego zapytania 10 pierwszych plików pod kątem wpływu skanowania. 
 
-:::image type="content" source="images/example-output.png" alt-text="Przykład danych wyjściowych dla podstawowego zapytania TopFiles" lightbox="images/example-output.png":::
+:::image type="content" source="images/example-output.png" alt-text="Przykładowe dane wyjściowe podstawowego zapytania TopFiles" lightbox="images/example-output.png":::
 
-### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Dodatkowe funkcje: eksportowanie i konwertowanie na pliki CSV i JSON
+### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Dodatkowe funkcje: eksportowanie i konwertowanie do plików CSV i JSON
 
 Wyniki analizatora wydajności można również wyeksportować i przekonwertować na plik CSV lub JSON.
-Przykłady opisujące proces eksportowania i konwertowania za pomocą przykładowych kodów przedstawiono poniżej.
+Przykłady opisujące proces "eksportowania" i "konwertowania" za pomocą przykładowych kodów można znaleźć poniżej.
 
-#### <a name="for-csv"></a>W przypadku pliku CSV
+#### <a name="for-csv"></a>Dla pliku CSV
 
 - **Aby wyeksportować**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
 - **Aby przekonwertować**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
-#### <a name="for-json"></a>W przypadku JSON
+#### <a name="for-json"></a>W przypadku formatu JSON
 
 - **Aby przekonwertować**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
 ### <a name="requirements"></a>Wymagania
-Program antywirusowy Microsoft Defender wydajności ma następujące wymagania wstępne:
+Program antywirusowy Microsoft Defender analizator wydajności ma następujące wymagania wstępne:
 
-- Obsługiwane Windows wersji: Windows 10, Windows 11 i Windows Server 2016 i wyżej
+- Obsługiwane wersje Windows: Windows 10, Windows 11 i Windows Server 2016 i nowsze
 - Wersja platformy: 4.18.2108.7+
 - Wersja programu PowerShell: PowerShell w wersji 5.1, PowerShell ISE, zdalny program PowerShell (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
-## <a name="powershell-reference"></a>Informacje o programie PowerShell
-Istnieją dwa nowe polecenia cmdlet programu PowerShell używane do dostosowania wydajności Program antywirusowy Microsoft Defender: 
+## <a name="powershell-reference"></a>Dokumentacja programu PowerShell
+Istnieją dwa nowe polecenia cmdlet programu PowerShell służące do dostosowywania wydajności Program antywirusowy Microsoft Defender: 
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)
@@ -107,7 +107,7 @@ Istnieją dwa nowe polecenia cmdlet programu PowerShell używane do dostosowania
 
 ### <a name="new-mpperformancerecording"></a>New-MpPerformanceRecording
 
-W poniższej sekcji opisano informacje dotyczące nowego polecenia cmdlet programu PowerShell New-MpPerformanceRecording. To polecenie cmdlet zbiera nagranie wydajności Program antywirusowy Microsoft Defender skanów.
+W poniższej sekcji opisano odwołanie do nowego polecenia cmdlet programu PowerShell New-MpPerformanceRecording. To polecenie cmdlet zbiera nagranie wydajności skanowania Program antywirusowy Microsoft Defender.
 
 #### <a name="syntax-new-mpperformancerecording"></a>Składnia: New-MpPerformanceRecording
 
@@ -116,25 +116,25 @@ New-MpPerformanceRecording -RecordTo <String >
 ```
 
 #### <a name="description-new-mpperformancerecording"></a>Opis: New-MpPerformanceRecording
-Polecenie `New-MpPerformanceRecording` cmdlet zbiera nagranie wydajności Program antywirusowy Microsoft Defender skanów. Te nagrania wydajności zawierają zdarzenia procesu procesu kernelu MICROSOFT-Antimalware Engine i NT i można je analizować po zbiorze za pomocą polecenia cmdlet [Get-MpPerformanceReport](#get-mpperformancereport) .
+Polecenie `New-MpPerformanceRecording` cmdlet zbiera nagranie wydajności skanowania Program antywirusowy Microsoft Defender. Te nagrania wydajności zawierają zdarzenia procesu jądra Microsoft-Antimalware-Engine i NT i mogą być analizowane po zebraniu za pomocą polecenia cmdlet [Get-MpPerformanceReport](#get-mpperformancereport) .
 
-To `New-MpPerformanceRecording` polecenie cmdlet dostarcza szczegółowych informacji o problematycznych plikach, które mogą powodować pogorszenie wydajności Program antywirusowy Microsoft Defender. To narzędzie jest udostępniane w stanie takim, w ile jest, i nie ma na celu dosyć sugestii dotyczących wykluczeń. Wykluczenia mogą zmniejszać poziom ochrony punktów końcowych. O ile takie wyjątki są w nim zdefiniowane, należy zachować ostrożność.
+To `New-MpPerformanceRecording` polecenie cmdlet zapewnia wgląd w problematyczne pliki, które mogą powodować obniżenie wydajności Program antywirusowy Microsoft Defender. To narzędzie jest dostarczane jako "AS IS" i nie ma na celu przedstawienia sugestii dotyczących wykluczeń. Wykluczenia mogą zmniejszyć poziom ochrony punktów końcowych. Wykluczenia, jeśli istnieją, powinny być definiowane z ostrożnością.
 
-Aby uzyskać więcej informacji na temat analizatora wydajności, [zobacz Analizator wydajności](/windows-hardware/test/wpt/windows-performance-analyzer) dokumenty.
+Aby uzyskać więcej informacji na temat analizatora wydajności, zobacz [Analizator wydajności](/windows-hardware/test/wpt/windows-performance-analyzer) dokumentacji.
 
 > [!IMPORTANT]
-> To polecenie cmdlet wymaga podwyższonych uprawnień administratora.
+> To polecenie cmdlet wymaga uprawnień administratora z podwyższonym poziomem uprawnień.
 
 **Obsługiwane wersje systemu operacyjnego**
 
 Windows wersji 10 lub nowszej.
 
 > [!NOTE]
-> Ta funkcja jest dostępna od wersji platformy 4.18.2108.X i nowszych.
+> Ta funkcja jest dostępna od wersji platformy 4.18.2108.X lub nowszej.
 
 #### <a name="examples-new-mpperformancerecording"></a>Przykłady: New-MpPerformanceRecording
 
-##### <a name="example-1-collect-a-performance-recording-and-save-it"></a>Przykład 1. Zbieranie nagrania z wydajności i zapisywanie go
+##### <a name="example-1-collect-a-performance-recording-and-save-it"></a>Przykład 1. Zbieranie nagrania wydajności i zapisywanie go
 
 ```powershell
 New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
@@ -142,19 +142,19 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 
 Powyższe polecenie zbiera nagranie wydajności i zapisuje je w określonej ścieżce: **.\Defender-scans.etl**.
 
-##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>Przykład 2. Zbieranie nagrania wydajności dla zdalnej sesji programu PowerShell
+##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>Przykład 2. Zbieranie nagrania wydajności dla sesji zdalnego programu PowerShell
 
 ```powershell
 $s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
 New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $s
 ```
 
-Powyższe polecenie zbiera nagranie wydajności z serwera Server02 (określone przez argument $s sesji parametru) i zapisuje je w określonej ścieżce: **C:\LocalPathOnServer02\trace.etl** w programie Server02.
+Powyższe polecenie zbiera rejestrowanie wydajności na serwerze Server02 (zgodnie z argumentem $s sesji parametru) i zapisuje je w określonej ścieżce: **C:\LocalPathOnServer02\trace.etl** na serwerze Server02.
 
 #### <a name="parameters-new-mpperformancerecording"></a>Parametry: New-MpPerformanceRecording
 
-##### <a name="-recordto"></a>— RecordTo
-Określa lokalizację zapisywania nagrania wydajności programu Microsoft Defender Antimalware.
+##### <a name="-recordto"></a>-RecordTo
+Określa lokalizację, w której ma zostać zapisane nagranie wydajności ochrony przed złośliwym kodem w usłudze Microsoft Defender.
 
 ```yaml
 Type: String
@@ -164,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-##### <a name="-session"></a>— Sesja 
-Określa obiekt PSSession, w którym ma być tworzyć i zapisywać Program antywirusowy Microsoft Defender wydajności. W przypadku użycia tego parametru parametr RecordTo odwołuje się do ścieżki lokalnej na komputerze zdalnym. Dostępny na platformie Defender w wersji 4.18.2201.10.
+##### <a name="-session"></a>-Session 
+Określa obiekt PSSession, w którym należy utworzyć i zapisać Program antywirusowy Microsoft Defender rejestrowania wydajności. W przypadku użycia tego parametru parametr RecordTo odwołuje się do ścieżki lokalnej na komputerze zdalnym. Dostępne z platformą Defender w wersji 4.18.2201.10.
 
 ```yaml
 Type: PSSession[]
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-W poniższej sekcji opisano Get-MpPerformanceReport cmdlet programu PowerShell. Analizuje i raporty dotyczące Program antywirusowy Microsoft Defender wydajności MDAV.
+W poniższej sekcji opisano polecenie cmdlet programu PowerShell Get-MpPerformanceReport. Analizuje i raportuje rejestrowanie wydajności Program antywirusowy Microsoft Defender (MDAV).
 
 #### <a name="syntax-get-mpperformancereport"></a>Składnia: Get-MpPerformanceReport
 
@@ -213,40 +213,40 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>Opis: Get-MpPerformanceReport
-`Get-MpPerformanceReport` Polecenie cmdlet analizuje poprzednio zebrane nagranie wydajności programu Program antywirusowy Microsoft Defender ([New-MpPerformanceRecording](#new-mpperformancerecording)) i raportuje ścieżki plików, rozszerzenia plików oraz procesy, które powodują największe Program antywirusowy Microsoft Defender skanów.
+Polecenie `Get-MpPerformanceReport` cmdlet analizuje wcześniej zebrane Program antywirusowy Microsoft Defender rejestrowanie wydajności ([New-MpPerformanceRecording](#new-mpperformancerecording)) i raportuje ścieżki plików, rozszerzenia plików i procesy, które powodują największy wpływ na Program antywirusowy Microsoft Defender skanowania.
 
-Analizator wydajności dostarcza szczegółowych informacji o problematycznych plikach, które mogą powodować pogorszenie wydajności Program antywirusowy Microsoft Defender. To narzędzie jest udostępniane w stanie takim, w ile jest, i nie ma na celu dosyć sugestii dotyczących wykluczeń. Wykluczenia mogą zmniejszać poziom ochrony punktów końcowych. O ile takie wyjątki są w nim zdefiniowane, należy zachować ostrożność.
+Analizator wydajności zapewnia wgląd w problematyczne pliki, które mogą powodować obniżenie wydajności Program antywirusowy Microsoft Defender. To narzędzie jest dostarczane jako "AS IS" i nie ma na celu przedstawienia sugestii dotyczących wykluczeń. Wykluczenia mogą zmniejszyć poziom ochrony punktów końcowych. Wykluczenia, jeśli istnieją, powinny być definiowane z ostrożnością.
 
-Aby uzyskać więcej informacji na temat analizatora wydajności, [zobacz Analizator wydajności](/windows-hardware/test/wpt/windows-performance-analyzer) dokumenty.
+Aby uzyskać więcej informacji na temat analizatora wydajności, zobacz [Analizator wydajności](/windows-hardware/test/wpt/windows-performance-analyzer) dokumentacji.
 
 **Obsługiwane wersje systemu operacyjnego**
 
 Windows wersji 10 lub nowszej.
 
 > [!NOTE]
-> Ta funkcja jest dostępna od wersji platformy 4.18.2108.X i nowszych.
+> Ta funkcja jest dostępna od wersji platformy 4.18.2108.X lub nowszej.
 
 #### <a name="examples-get-mpperformancereport"></a>Przykłady: Get-MpPerformanceReport
 
-##### <a name="example-1-single-query"></a>Przykład 1. Jedno zapytanie 
+##### <a name="example-1-single-query"></a>Przykład 1: pojedyncze zapytanie 
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:20
 ```
 
-##### <a name="example-2-multiple-queries"></a>Przykład 2. Wiele zapytań 
+##### <a name="example-2-multiple-queries"></a>Przykład 2: Wiele zapytań 
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10
 ```
 
-##### <a name="example-3-nested-queries"></a>Przykład 3. Zapytania zagnieżdżone 
+##### <a name="example-3-nested-queries"></a>Przykład 3: Zapytania zagnieżdżone 
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensionsPerProcess:3 -TopScansPerExtensionPerProcess:3
 ```
 
-##### <a name="example-4-using--minduration-parameter"></a>Przykład 4. Użycie parametru -MinDuration
+##### <a name="example-4-using--minduration-parameter"></a>Przykład 4. Używanie parametru -MinDuration
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
@@ -254,8 +254,8 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 
 #### <a name="parameters-get-mpperformancereport"></a>Parametry: Get-MpPerformanceReport
 
-##### <a name="-minduration"></a>— MinDuration
-Określa minimalny czas trwania każdego skanowania lub całkowitego czasu trwania skanowania plików, rozszerzeń i procesów zawartych w raporcie. przyjmuje wartości, takie jak  **0,1234567sec**, **0,1234 ms**, **0,1us** lub prawidłowy czasowy.
+##### <a name="-minduration"></a>-MinDuration
+Określa minimalny czas trwania skanowania lub łączny czas trwania skanowania plików, rozszerzeń i procesów zawartych w raporcie; akceptuje wartości takie jak  **0.1234567sec**, **0.1234ms**, **0.1us** lub prawidłowy timeSpan.
 
 ```yaml
 Type: String
@@ -265,8 +265,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-##### <a name="-path"></a>— Ścieżka
-Określa ścieżki do jednej lub wielu lokalizacji.
+##### <a name="-path"></a>-Ścieżka
+Określa ścieżki do co najmniej jednej lokalizacji.
 
 ```yaml
 Type: String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topextensions"></a>-TopExtensions 
-Określa liczbę najwyższych rozszerzeń do wyprowadzeń posortowanych według "Czas trwania".
+Określa, ile górnych rozszerzeń do danych wyjściowych, posortowane według "Czas trwania".
 
 ```yaml
 Type: Int32
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess 
-Określa liczbę najwyższych rozszerzeń do wyprowadzania dla każdego procesu, sortowanych według "Czas trwania".
+Określa, ile górnych rozszerzeń do danych wyjściowych dla każdego górnego procesu, posortowane według "Czas trwania".
 
 ```yaml
 Type: Int32
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfiles"></a>-TopFiles
-Żąda raportu o najwyższej jakości plików i określa, ile najwyższych plików ma być wyprowadzanych, posortowanych według "Czas trwania".
+Żąda raportu z najwyższą liczbą plików i określa liczbę najważniejszych plików do danych wyjściowych posortowanych według wartości "Czas trwania".
 
 
 ```yaml
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperextension"></a>-TopFilesPerExtension 
-Określa, ile najwyższych plików wyjściowych ma być wyprowadzanych dla każdego najwyższego rozszerzenia, posortowanych według "Czas trwania".
+Określa liczbę najlepszych plików do wyświetlenia dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
 
 
 ```yaml
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
-Określa liczbę najwyższych plików wyjściowych dla każdego procesu, posortowanych według "Czas trwania".
+Określa liczbę najlepszych plików do wyświetlenia dla każdego najwyższego procesu posortowanego według "Czas trwania".
 
 ```yaml
 Type: Int32
@@ -334,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topprocesses"></a>-TopProcesses
-Żąda raportu o najlepszych procesach i określa liczbę procesów, które mają być wyprowadzone, sortowanych według "Czasu trwania".
+Żąda raportu top-processes i określa, ile z najważniejszych procesów do danych wyjściowych, posortowane według "Czas trwania".
 
 ```yaml
 Type: Int32
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension 
-Określa liczbę procesów, które mają być wyprowadzone dla każdego najwyższego rozszerzenia, posortowanych według "Czas trwania".
+Określa liczbę najlepszych procesów do wyświetlenia dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
 
 
 ```yaml
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 
 
 ### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
-Określa liczbę procesów, które mają być wyprowadzone w przypadku każdego najwyższego pliku, sortowanych według "Czas trwania".
+Określa liczbę najważniejszych procesów do wyświetlenia dla każdego najwyższego pliku posortowanych według "Czas trwania".
 
 
 ```yaml
@@ -370,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscans"></a>-TopScans
-Żąda raportu z górnym skanowaniem i określa liczbę skanów do wyprowadzowania, posortowanych według "Czas trwania".
+Żąda najwyższego skanowania raportu i określa, ile top skanowania do danych wyjściowych, posortowane według "Czas trwania".
 
 
 ```yaml
@@ -382,8 +382,8 @@ Accept wildcard characters: False
 ```
 
 
-### <a name="-topscansperextension"></a>-TopKansPerExtension
-Określa liczbę skanów w górnym rogu do wyprowadzeniu dla każdego górnego rozszerzenia, sortowanych według "Czas trwania".
+### <a name="-topscansperextension"></a>-TopScansPerExtension
+Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
 
 
 ```yaml
@@ -395,8 +395,8 @@ Accept wildcard characters: False
 ```
 
 
-### <a name="-topscansperextensionperprocess"></a>-TopKansPerExtensionPerProcess 
-Określa liczbę skanów w górnym rogu dla każdego górnego rozszerzenia dla każdego procesu, posortowane według "Czas trwania".
+### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess 
+Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego górnego rozszerzenia dla każdego najwyższego procesu posortowanego według "Czas trwania".
 
 
 ```yaml
@@ -408,8 +408,8 @@ Accept wildcard characters: False
 ```
 
 
-### <a name="-topscansperfile"></a>-TopFileSPerFile
-Określa liczbę skanów w górnym rogu dla każdego najlepszego pliku, sortowanych według "Czas trwania".
+### <a name="-topscansperfile"></a>-TopScansPerFile
+Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego najwyższego pliku posortowanego według "Czas trwania".
 
 
 ```yaml
@@ -420,21 +420,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperextension"></a>-TopFilesPerFilePerExtension 
-Określa liczbę skanów w górnym rogu dla każdego najlepszego pliku dla każdego najwyższego rozszerzenia, posortowanych według "Czas trwania".
-
-
-```yaml
-Type: Int32
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-
-### <a name="-topscansperfileperprocess"></a>-TopFilesPerFilePerProcess 
-Określa liczbę skanów w górnym rogu każdego najlepszego pliku w każdym górnym procesie, posortowanych według "Czas trwania".
+### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension 
+Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego najwyższego pliku dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
 
 
 ```yaml
@@ -446,8 +433,8 @@ Accept wildcard characters: False
 ```
 
 
-### <a name="-topscansperprocess"></a>-TopKansPerProcess 
-Określa liczbę najwyższych skanów do wyprowadzania dla każdego najlepszego procesu w raporcie Najważniejsze procesy, sortowanych według "Czas trwania".
+### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess 
+Określa, ile najczęściej skanuje dane wyjściowe dla każdego najwyższego pliku dla każdego najwyższego procesu, posortowane według "Czas trwania".
 
 
 ```yaml
@@ -458,8 +445,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperextension"></a>-TopKansPerProcessPerExtension
-Określa liczbę skanów w górnym rogu każdego procesu dla każdego najwyższego rozszerzenia, sortowanych według "Czas trwania".
+
+### <a name="-topscansperprocess"></a>-TopScansPerProcess 
+Określa, ile najlepszych skanów do danych wyjściowych dla każdego najwyższego procesu w raporcie Top Processes posortowane według "Czas trwania".
 
 
 ```yaml
@@ -470,8 +458,20 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperfile"></a>-TopFilesPerProcessPerFile
-Określa liczbę skanów w górnym rogu każdego najlepszego procesu dla każdego najlepszego pliku, posortowanych według "Czas trwania".
+### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
+Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego najwyższego procesu dla każdego górnego rozszerzenia posortowanego według "Czas trwania".
+
+
+```yaml
+Type: Int32
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
+Określa liczbę najczęściej skanowanych danych wyjściowych dla każdego najwyższego procesu dla każdego najwyższego pliku posortowanego według "Czas trwania".
 
 
 ```yaml

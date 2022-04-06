@@ -1,6 +1,6 @@
 ---
-title: Samouczki i symulowania w programie Microsoft Defender dla firm
-description: Dowiedz się więcej o kilku samouczkach pomocnych w rozpoczynaniu korzystania z usługi Defender dla firm
+title: Samouczki i symulacje w Microsoft Defender dla Firm
+description: Dowiedz się więcej o kilku samouczkach ułatwiających rozpoczęcie korzystania z usługi Defender dla Firm
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -16,77 +16,77 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: b28e28b2504ed2234f2f48a9763827fc7b063af8
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 98ead4a77c275e0e4aeeab90e87e0b468a9b7bb8
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525504"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665981"
 ---
-# <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Samouczki i symulowania w programie Microsoft Defender dla firm
+# <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Samouczki i symulacje w Microsoft Defender dla Firm
 
 > [!IMPORTANT]
-> Usługa Microsoft Defender dla firm jest teraz w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj [, aby](https://aka.ms/mdb-preview) poprosić o to. W najbliższych tygodniach nawiązemy wstępną ofertę klientów i partnerów oraz rozszerzymy jej wersja zapoznawczą, aby rozszerzyć jej dostępność do ogólnej dostępności. Pamiętaj, że wersja Preview zostanie uruchamiana z [początkowym zestawem scenariuszy](#try-these-preview-scenarios), a funkcje będą regularnie dodajemy.
+> Microsoft Defender dla Firm jest teraz w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview), aby go zażądać. W najbliższych tygodniach dołączymy początkowy zestaw klientów i partnerów i rozszerzymy wersję zapoznawczą prowadzącą do ogólnej dostępności. Pamiętaj, że wersja zapoznawcza zostanie uruchomiona z [początkowym zestawem scenariuszy](#try-these-preview-scenarios) i będziemy regularnie dodawać możliwości.
 > 
-> Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
+> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
 
-Jeśli właśnie ukończono konfigurowanie programu Microsoft Defender dla firm, być może zastanawiasz się, od czego zacząć, aby dowiedzieć się, jak działa program Defender dla firm. W tym artykule opisano scenariusze wersji Preview do wypróbowania oraz kilka samouczków i symulacyjnych dostępnych dla usługi Defender dla firm. Te zasoby pomogą Ci zobaczyć, jak może działać w firmie defender dla firm.
+Jeśli właśnie ukończono konfigurowanie Microsoft Defender dla Firm, możesz się zastanawiać, od czego zacząć uczyć się, jak działa usługa Defender for Business. W tym artykule opisano scenariusze w wersji zapoznawczej do wypróbowania oraz kilka samouczków i symulacji dostępnych dla usługi Defender dla firm. Te zasoby ułatwiają sprawdzenie, jak usługa Defender dla Firm może działać dla Twojej firmy.
 
 >
 > **Masz minutę?**
-> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
-## <a name="try-these-preview-scenarios"></a>Wypróbuj te scenariusze w wersji Preview
+## <a name="try-these-preview-scenarios"></a>Wypróbuj te scenariusze w wersji zapoznawczej
 
-W poniższej tabeli podsumowano kilka scenariuszy do wypróbowania za pomocą programu Defender dla firm. 
+W poniższej tabeli przedstawiono kilka scenariuszy, w których można wypróbować usługę Defender dla Firm. 
 <br/><br/>
 
 
 | Scenariusz  | Opis  |
 |---------|---------|
-| Urządzenia w tablicy korzystające ze skryptu lokalnego <br/>(*nie do wdrożenia produkcyjnego*)     | W programie Defender dla firm możesz wboardować do dziesięciu Windows 10 i 11 urządzeń, używając skryptu, który możesz pobrać i uruchomić na każdym urządzeniu. Ta usługa pozwala ocenić, jak usługa Defender dla firm będzie działać w Twoim środowisku, skrypt tworzy zaufanie w usłudze Azure Active Directory (Azure AD) i rejestruje urządzenie za pomocą programu Microsoft Intune. Aby dowiedzieć się więcej, zobacz [Skrypt lokalny w programie Defender dla firm](mdb-onboard-devices.md#local-script-in-defender-for-business).         |
-| Urządzenia w urządzeniach w urządzeniu Microsoft Intune     | Jeśli korzystano już z programu Microsoft Intune przed uzyskaniem usługi Defender for Endpoint, możesz nadal używać programu Microsoft Intune urządzeniach. Wypróbuj dołączanie na urządzenia macOS, iOS i Android z systemem Microsoft Intune. Aby dowiedzieć się więcej, zobacz [Rejestracja urządzenia w Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
-| Edytowanie zasad zabezpieczeń     | Jeśli zarządzasz zasadami zabezpieczeń w programie Defender dla firm, możesz wyświetlać  i edytować zasady na stronie Konfiguracja urządzenia. Aby dowiedzieć się więcej, [zobacz Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm](mdb-view-edit-policies.md).        |
-| Wykonywanie symulowanego ataku   | W programie Defender dla firm dostępnych jest kilka samouczków i symulacyjnych. Te samouczki i czasy symulowania zostały zaprojektowane tak, aby pokazać, jak funkcje ochrony przed zagrożeniami usługi Defender dla firm mogą działać w Twojej firmie. Aby wypróbować co najmniej jeden z samouczków, zobacz [Polecane samouczki dotyczące programu Microsoft Defender dla firm](#recommended-tutorials-for-defender-for-business).         |
-| Wyświetlanie zdarzeń w programie Microsoft 365 Lighthouse     | Jeśli jesteś [użytkownikiem Microsoft Cloud Solution Provider](/partner-center/enrolling-in-the-csp-program) korzystającym z Microsoft 365 Lighthouse, wkrótce będzie można wyświetlać zdarzenia z dzierżaw klientów w portalu Microsoft 365 Lighthouse sieci. Aby dowiedzieć się więcej, zobacz [Microsoft 365 Lighthouse programu Microsoft Defender dla firm](mdb-lighthouse-integration.md).       |
+| Dołączanie urządzeń przy użyciu skryptu lokalnego <br/>(*nie w przypadku wdrożenia produkcyjnego*)     | W usłudze Defender dla firm możesz dołączyć maksymalnie dziesięć urządzeń Windows 10 i 11 przy użyciu skryptu pobranego i uruchomionego na każdym urządzeniu. Nadaje się do oceny sposobu działania usługi Defender dla firm w twoim środowisku, a skrypt tworzy relację zaufania z Azure Active Directory (Azure AD) i rejestruje urządzenie za pomocą Microsoft Intune. Aby dowiedzieć się więcej, zobacz [Skrypt lokalny w usłudze Defender dla Firm](mdb-onboard-devices.md#local-script-in-defender-for-business).         |
+| Dołączanie urządzeń przy użyciu Microsoft Intune     | Jeśli używasz już Microsoft Intune przed uzyskaniem usługi Defender for Endpoint, możesz nadal używać Microsoft Intune do dołączania urządzeń. Spróbuj dołączyć urządzenia z systemami macOS, iOS i Android przy użyciu Microsoft Intune. Aby dowiedzieć się więcej, zobacz [Rejestrowanie urządzeń w Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
+| Edytowanie zasad zabezpieczeń     | Jeśli zarządzasz zasadami zabezpieczeń w usłudze Defender dla Firm, użyj strony **Konfiguracja urządzenia** , aby wyświetlić i edytować zasady. Aby dowiedzieć się więcej, zobacz [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](mdb-view-edit-policies.md).        |
+| Wykonywanie symulowanego ataku   | W usłudze Defender dla Firm dostępnych jest kilka samouczków i symulacji. Te samouczki i symulacje zostały zaprojektowane tak, aby z pierwszej ręki pokazać, jak funkcje ochrony przed zagrożeniami w usłudze Defender for Business mogą działać dla Twojej firmy. Aby wypróbować co najmniej jeden z samouczków, zobacz [Zalecane samouczki dotyczące Microsoft Defender dla Firm](#recommended-tutorials-for-defender-for-business).         |
+| Wyświetlanie zdarzeń w Microsoft 365 Lighthouse     | Jeśli używasz [Microsoft Cloud Solution Provider](/partner-center/enrolling-in-the-csp-program) Microsoft 365 Lighthouse, wkrótce będzie można wyświetlać zdarzenia w dzierżawach klientów w portalu Microsoft 365 Lighthouse. Aby dowiedzieć się więcej, zobacz [Microsoft 365 Lighthouse i Microsoft Defender dla Firm](mdb-lighthouse-integration.md).       |
 
 
-## <a name="recommended-tutorials-for-defender-for-business"></a>Polecane samouczki dotyczące programu Defender dla firm
+## <a name="recommended-tutorials-for-defender-for-business"></a>Zalecane samouczki dotyczące usługi Defender dla firm
 
-W poniższej tabeli opisano zalecane samouczki dla klientów usługi Defender dla firm:
+W poniższej tabeli opisano zalecane samouczki dla klientów usługi Defender dla Firm:
 <br/><br/>
 
 
 | Samouczek  | Opis  |
 |---------|---------|
-| **Dokument jest upuszczany w backdoor**     | Symulowanie ataków, która wprowadza złośliwe oprogramowanie oparte na plikach na urządzeniu testowym. W tym samouczku opisano, jak pobrać plik symulacyjnej i jak go używać oraz co należy obserwować w portalu Microsoft 365 Defender projektu. <br/><br/>Ten samouczek wymaga Microsoft Word na urządzeniu testowym.   |
-| **Samouczek odpowiedzi na żywo**     | Dowiedz się, jak używać podstawowych i zaawansowanych poleceń z odpowiedzią na żywo. Dowiedz się, jak znaleźć podejrzany plik, rozwiązać jego działania naprawcze i zebrać informacje na urządzeniu.   |
-| **Zarządzanie & zagrożeniami (podstawowe scenariusze)**     | Dowiedz się więcej Zarządzanie zagrożeniami i lukami za pomocą trzech scenariuszy: <br/><br/>1. Zmniejsz zagrożenie i narażenie Twojej firmy na luki w zabezpieczeniach. <br/>2. Żądanie rozwiązania problemów. <br/>3. Tworzenie wyjątku dla zaleceń dotyczących zabezpieczeń. <br/><br/> Zagrożenia i zarządzanie lukami w zabezpieczeniach wykorzystania opartego na ryzyku podejścia do odnajdowania, ustalania priorytetu i korygowania luk w punktach końcowych i błędnej konfiguracji.      |
+| **Dokument porzuca tylne drzwi**     | Symulowanie ataku, który wprowadza złośliwe oprogramowanie oparte na plikach na urządzeniu testowym. W samouczku opisano sposób pobierania i używania pliku symulacji oraz tego, co należy obserwować w portalu Microsoft 365 Defender. <br/><br/>Ten samouczek wymaga zainstalowania Microsoft Word na urządzeniu testowym.   |
+| **Samouczek dotyczący odpowiedzi na żywo**     | Dowiedz się, jak używać podstawowych i zaawansowanych poleceń z odpowiedzią na żywo. Dowiedz się, jak zlokalizować podejrzany plik, skorygować plik i zebrać informacje na urządzeniu.   |
+| **Zarządzanie lukami w zabezpieczeniach & zagrożeń (scenariusze podstawowe)**     | Dowiedz się więcej o Zarządzanie zagrożeniami i lukami w trzech scenariuszach: <br/><br/>1. Zmniejsz narażenie firmy na zagrożenia i luki w zabezpieczeniach. <br/>2. Zażądaj korygowania. <br/>3. Utwórz wyjątek dla zaleceń dotyczących zabezpieczeń. <br/><br/> Zagrożenia i zarządzanie lukami w zabezpieczeniach korzystają z opartego na ryzyku podejścia do odnajdywania, określania priorytetów i korygowania luk w zabezpieczeniach i błędnych konfiguracji punktów końcowych.      |
 
-Każdy samouczek zawiera dokument instruktażowy, w którym wyjaśniono scenariusz, jak to działa i co należy zrobić.
+Każdy samouczek zawiera przewodnik wyjaśniający scenariusz, jego działanie i czynności do wykonania.
 
 > [!TIP]
-> W dokumentach instruktażowych zobaczysz odwołania do programu Microsoft Defender for Endpoint. Samouczki wymienione w tym artykule mogą być używane z usługą Defender for Endpoint lub Defender for Business.
+> W dokumentach przewodnika zostaną wyświetlone odwołania do Ochrona punktu końcowego w usłudze Microsoft Defender. Samouczków wymienionych w tym artykule można używać z usługą Defender for Endpoint lub Defender for Business.
 
 ## <a name="how-to-access-the-tutorials"></a>Jak uzyskać dostęp do samouczków
 
-1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
 2. W okienku nawigacji w obszarze **Punkty końcowe** wybierz pozycję **Samouczki**.
 
 3. Wybierz jeden z następujących samouczków:
 
-   - **Dokument jest upuszczany w backdoor**
-   - **Samouczek odpowiedzi na żywo**
-   - **Zarządzanie & zagrożeniami (podstawowe scenariusze)**
+   - **Dokument porzuca tylne drzwi**
+   - **Samouczek dotyczący odpowiedzi na żywo**
+   - **Zarządzanie lukami w zabezpieczeniach & zagrożeń (scenariusze podstawowe)**
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Zarządzanie urządzeniami w programie Microsoft Defender dla firm](mdb-manage-devices.md)
+- [Zarządzanie urządzeniami w Microsoft Defender dla Firm](mdb-manage-devices.md)
 
-- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md)
+- [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md)
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
+- [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
 
-- [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md)
+- [Przeglądanie akcji korygowania w centrum akcji](mdb-review-remediation-actions.md)

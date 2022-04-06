@@ -1,6 +1,6 @@
 ---
-title: Wdowa do usługi Microsoft Defender for Endpoint
-description: Dowiedz się, jak wdać punkty końcowe programu Microsoft Defender dla usługi punktu końcowego
+title: Dołączanie do usługi Ochrona punktu końcowego w usłudze Microsoft Defender sieciOwej
+description: Dowiedz się, jak ować punkty końcowe w celu Ochrona punktu końcowego w usłudze Microsoft Defender usługi
 keywords: microsoft defender for endpoint, onboard, deploy
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,24 +18,24 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78f78208798635fb38381deaba3fa2f20e373bea
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 387598581ec52de2089bee2a98a15dcc60a54bd9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63014720"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471698"
 ---
-# <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Wdowa do usługi Microsoft Defender for Endpoint
+# <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Dołączanie do usługi Ochrona punktu końcowego w usłudze Microsoft Defender sieciOwej
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Poznaj różne fazy wdrażania programu Microsoft Defender dla punktu końcowego i dowiedz się, jak skonfigurować funkcje w ramach rozwiązania.
+Zapoznaj się z różnymi etapami wdrażania Ochrona punktu końcowego w usłudze Microsoft Defender i sposobu konfigurowania funkcji w ramach rozwiązania.
 
 
 Oto czynności, które należy wykonać, aby wdrożyć usługę Defender dla punktu końcowego:
@@ -43,7 +43,8 @@ Oto czynności, które należy wykonać, aby wdrożyć usługę Defender dla pun
 - Krok 1. Dołączanie punktów końcowych do usługi
 - Krok 2. Konfigurowanie funkcji
 
-![Ilustracja przedstawiająca kroki wdrażania](images/deployment-steps.png)
+:::image type="content" source="images/deployment-steps.png" alt-text="Kroki wdrażania" lightbox="images/deployment-steps.png":::
+
 
 
 
@@ -64,8 +65,8 @@ W poniższej tabeli wymieniono dostępne narzędzia na podstawie punktu końcowe
 
 | Punkt końcowy     | Opcje narzędzia                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Skrypt lokalny (do 10 urządzeń)](configure-endpoints-script.md) <br>  [zasady grupy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Menedżer urządzeń przenośnych](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Skrypty VDI](configure-endpoints-vdi.md) <br> [Integracja z usługą Microsoft Defender dla chmury](azure-server-integration.md) |
-| **macOS**    | [Skrypty lokalne](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Zarządzanie urządzeniami przenośnymi](mac-install-with-other-mdm.md) |
+| **Windows**  |  [Skrypt lokalny (do 10 urządzeń)](configure-endpoints-script.md) <br>  [Zasady grupy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Urządzenie Menedżer urządzeń](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Skrypty VDI](configure-endpoints-vdi.md) <br> [Integracja z Microsoft Defender dla Chmury](azure-server-integration.md) |
+| **macOS**    | [Skrypty lokalne](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Urządzenia Zarządzanie urządzeniami](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Skrypt lokalny](linux-install-manually.md) <br> [Wytłaczenie](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
@@ -77,10 +78,10 @@ Po dojechiniu do punktów końcowych skonfigurujesz funkcje. W poniższej tabeli
 | Funkcja | Opis |
 |-|-|
 | [Wykrywanie punktu & odpowiedzi (EDR)](overview-endpoint-detection-response.md) | Program Defender for Endpoint wykrywanie i reagowanie w punktach końcowych funkcje zaawansowane wykrywania ataków, które są blisko czasu rzeczywistego i które oferują akcję. Analitycy zabezpieczeń mogą efektywnie określać priorytety alertów, zyskać wgląd w pełny zakres naruszenia zabezpieczeń oraz podjąć działania w celu reagowania na zagrożenia. |
-| [Zarządzanie & zagrożeniami i zagrożeniami](next-gen-threat-and-vuln-mgt.md) | Zarządzanie & zagrożeniami i zagrożeniami to składnik programu Microsoft Defender for Endpoint, który zapewnia administratorom zabezpieczeń i zespołom operacji zabezpieczeń unikatową wartość, w tym: — Funkcje analizy w czasie rzeczywistym (wykrywanie i reagowanie w punktach końcowych) (EDR ) szczegółowe informacje skorelowane z lukami w punktach końcowych — nieoceniony kontekst luki w zabezpieczeniach urządzenia podczas badania zdarzeń — wbudowane procesy rozwiązywania problemów za pośrednictwem usług Microsoft Intune i Microsoft System Center Configuration Manager.  |
+| [Zarządzanie & zagrożeniami i zagrożeniami](next-gen-threat-and-vuln-mgt.md) | Zarządzanie & zagrożeniami i zagrożeniami to składnik usługi Ochrona punktu końcowego w usłudze Microsoft Defender. Udostępnia on unikatowe wartości zarówno administratorom zabezpieczeń, jak i zespołom operacji zabezpieczeń, w tym: — Funkcje zarządzania wykrywanie i reagowanie w punktach końcowych czasie rzeczywistym (EDR ) szczegółowe informacje skorelowane z lukami w punktach końcowych — nieoceniony kontekst luki w zabezpieczeniach urządzenia podczas badania zdarzeń — wbudowane procesy rozwiązywania problemów za pośrednictwem usług Microsoft Intune i Microsoft System Center Configuration Manager.  |
 | [Ochrona następnej generacji (NGP)](microsoft-defender-antivirus-windows.md) | Program antywirusowy Microsoft Defender to wbudowane rozwiązanie ochrony przed złośliwym oprogramowaniem, które zapewnia ochronę komputerów stacjonarnych, przenośnych i serwerów następnej generacji. Program antywirusowy Microsoft Defender zawiera:<br> <br>- Zapewnianie ochrony w chmurze w celu natychmiastowego wykrywania i blokowania nowych i pojawiających się zagrożeń. Oprócz uczenia maszynowego i inteligentnego Graph ochrona w chmurze jest częścią technologii nowej generacji, które są zaawansowane dla Program antywirusowy Microsoft Defender.<br> <br> - Skanowanie zawsze przy użyciu zaawansowanego monitorowania zachowania plików i procesów oraz innych funkcji heuristics (nazywanych również "ochroną w czasie rzeczywistym").<br><br> - Dedykowane aktualizacje ochrony oparte na uczeniem maszynowym, analizie danych big-data przez ludzi oraz szczegółowe badania nad odpornością na zagrożenia. |
-| [Zmniejszenie powierzchni ataków (ASR)](overview-attack-surface-reduction.md) | Funkcje ograniczania powierzchni ataków w programie Microsoft Defender dla punktu końcowego pomagają chronić urządzenia i aplikacje w organizacji przed nowymi i pojawiającymi się zagrożeniami. |
-| [Działania naprawcze & autowywiadu (AIR)](automated-investigations.md) | Program Microsoft Defender for Endpoint używa zautomatyzowanych analiz w celu znacznego zmniejszenia liczby alertów, które trzeba zbadać indywidualnie. Funkcja automatycznego badania korzysta z różnych algorytmów inspekcji i procesów używanych przez analityków (takich jak podręczniki) do badania alertów i podejmowania natychmiastowych działań naprawczych w celu rozwiązania naruszeń. Znacząco zmniejsza to liczbę alertów, umożliwiając ekspertom z operacji zabezpieczeń skoncentrowanie się na bardziej zaawansowanych zagrożeniach i innych inicjatywach o wysokich wartościach. |
+| [Zmniejszenie powierzchni ataków (ASR)](overview-attack-surface-reduction.md) | Funkcje ograniczania powierzchni ataków w Ochrona punktu końcowego w usłudze Microsoft Defender chronią urządzenia i aplikacje w organizacji przed nowymi i pojawiającymi się zagrożeniami. |
+| [Działania naprawcze & autowywiadu (AIR)](automated-investigations.md) | Ochrona punktu końcowego w usłudze Microsoft Defender korzysta z automatycznego badania w celu znacznego zmniejszenia liczby alertów, które trzeba osobno badać. Funkcja automatycznego badania korzysta z różnych algorytmów inspekcji i procesów używanych przez analityków (takich jak podręczniki) do badania alertów i podejmowania natychmiastowych działań naprawczych w celu rozwiązania naruszeń. Znacząco zmniejsza to liczbę alertów, umożliwiając ekspertom z operacji zabezpieczeń skoncentrowanie się na bardziej zaawansowanych zagrożeniach i innych inicjatywach o wysokich wartościach. |
 | [Microsoft Threat Experts (MTE)](microsoft-threat-experts.md) | Microsoft Threat Experts to zarządzana służba chłoń, która zapewnia centrach operacji zabezpieczeń (SOC, Security Operation Center) z specjalistycznej kontroli i analizy, aby zapewnić, że nie przegapisz krytycznych zagrożeń w ich unikatowych środowiskach.      |
 
 Po dojściu do punktów końcowych skonfigurujesz różne funkcje, takie jak wykrywanie i reagowanie w punktach końcowych, ochrona następnej generacji i zmniejszenie obszarów ataków.

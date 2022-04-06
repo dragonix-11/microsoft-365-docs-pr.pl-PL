@@ -1,7 +1,7 @@
 ---
-title: Konfigurowanie funkcji i zarządzanie Microsoft Threat Experts za pośrednictwem Microsoft 365 Defender
-description: Zasubskrybuj ekspertów ds. zagrożeń firmy Microsoft za Microsoft 365 Defender, aby konfigurować i używać go oraz zarządzać nimi w codziennych działaniach związanych z zabezpieczeniami i administrowaniem zabezpieczeniami.
-keywords: Microsoft Threat Experts, zarządzana służba chłoniania zagrożeń, MTE, firma Microsoft zarządzała usługą chowania
+title: Konfigurowanie możliwości Microsoft Threat Experts i zarządzanie nimi za pośrednictwem Microsoft 365 Defender
+description: Subskrybowanie ekspertów ds. zagrożeń firmy Microsoft za pośrednictwem Microsoft 365 Defender w celu konfigurowania i używania ich w codziennych operacjach zabezpieczeń i administrowaniu zabezpieczeniami.
+keywords: Microsoft Threat Experts, zarządzana usługa wyszukiwania zagrożeń, MTE, zarządzana usługa wyszukiwania zagrożeń firmy Microsoft
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -17,14 +17,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 0bf6a6ecf48889228391688e41fb79070c3194a1
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: cd8f7e65c409138d6404a734b098e70e6d419cbb
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682223"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667279"
 ---
-# <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Konfigurowanie funkcji i zarządzanie Microsoft Threat Experts za pośrednictwem Microsoft 365 Defender
+# <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Konfigurowanie możliwości Microsoft Threat Experts i zarządzanie nimi za pośrednictwem Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,137 +38,137 @@ ms.locfileid: "63682223"
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
 > [!IMPORTANT]
-> Przed zastosowaniem, upewnij się, że zostały omówione wymagania dotyczące uprawnień do programu Microsoft Threat Experts — powiadomienia o atakach kierowanej pod zarządzaniem usługą chłoniania zagrożeń z dostawcą pomocy technicznej firmy Microsoft i zespołem konta.
+> Przed zastosowaniem należy omówić wymagania dotyczące uprawnień dla usługi Microsoft Threat Experts — Targeted Attack Notifications managed threat hunting service z dostawcą usług technicznych firmy Microsoft i zespołem kont.
 
-Aby otrzymywać powiadomienia o atakach ukierunkowanych, musisz wdrożyć Microsoft 365 Defender z zarejestrowanymi urządzeniami. Następnie prześlij aplikację za pośrednictwem portalu M365 dla Microsoft Threat Experts — powiadomienia o atakach ukierunkowanych.
+Aby otrzymywać powiadomienia o atakach ukierunkowanych, konieczne będzie wdrożenie Microsoft 365 Defender z zarejestrowanymi urządzeniami. Następnie prześlij aplikację za pośrednictwem portalu M365, aby uzyskać Microsoft Threat Experts — powiadomienia o atakach ukierunkowanych.
 
-Skontaktuj się ze swoim zespołem ds. klientów lub przedstawicielem firmy Microsoft, aby zasubskrybować usługę Microsoft Threat Experts — Experts on Demand. Ekspertów na żądanie pozwala konsultować się z naszymi ekspertami ds. zagrożeń, jak chronić twoją organizację przed odpowiednimi wykryciami i adwersjami.
+Skontaktuj się z zespołem ds. konta lub przedstawicielem firmy Microsoft, aby zasubskrybować Microsoft Threat Experts — Eksperci na żądanie. Usługa Experts on Demand umożliwia skonsultowanie się z naszymi ekspertami w dziedzinie zagrożeń, aby dowiedzieć się, jak chronić organizację przed odpowiednimi wykryciami i przeciwnikami.
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Zastosuj do Microsoft Threat Experts — usługa powiadomień o atakach ukierunkowanych
+## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Ubiegaj się o Microsoft Threat Experts — docelowa usługa powiadomień o atakach
 
-Jeśli masz już program Microsoft Defender for Endpoint i Microsoft 365 Defender, możesz złożyć wniosek o Microsoft Threat Experts — powiadomienia o atakach kierowane za pośrednictwem ich Microsoft 365 Defender sieci Web.  Powiadomienia o atakach ukierunkowanych przyznają Ci specjalne informacje i analizy, które ułatwiają identyfikowanie najważniejszych zagrożeń dla organizacji, dzięki czemu możesz szybko na nie reagować.
+Jeśli masz już Ochrona punktu końcowego w usłudze Microsoft Defender i Microsoft 365 Defender, możesz ubiegać się o Microsoft Threat Experts — ukierunkowane powiadomienia o ataku za pośrednictwem ich Microsoft 365 Defender portalu.  Powiadomienia o ukierunkowanych atakach zapewniają specjalny wgląd i analizę, aby ułatwić identyfikację najbardziej krytycznych zagrożeń dla organizacji, dzięki czemu możesz szybko na nie reagować.
 
-1. W okienku nawigacji przejdź do Ustawienia > **punktów końcowych > Ogólne > zaawansowane funkcje > Microsoft Threat Experts — powiadomienia o atakach ukierunkowanych**.
+1. W okienku nawigacji przejdź do **obszaru Ustawienia > Punkty końcowe > Funkcje ogólne > zaawansowane > Microsoft Threat Experts — powiadomienia o atakach docelowych**.
 
-2. Wybierz **pozycję Zastosuj**.
+2. Wybierz pozycję **Zastosuj**.
 
-    ![Obraz Microsoft Threat Experts ustawień.](../../media/mte/mte-collaboratewithmte.png)
+    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Strona ustawień Microsoft Threat Experts w portalu Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
-3. Wprowadź swoje imię i nazwisko (nazwę) oraz adres e-mail, aby firma Microsoft skontaktowały się z Tobą w sprawie Twojej aplikacji.
+3. Wprowadź imię i nazwisko i adres e-mail, aby firma Microsoft mogła skontaktować się z Tobą w kwestii Twojej aplikacji.
 
-    ![Obraz Microsoft Threat Experts aplikacji.](../../media/mte/mte-apply.png)
+    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="Strona aplikacji Microsoft Threat Experts w portalu Microsoft 365 Defender" lightbox="../../media/mte/mte-apply.png":::
+  
+4. Przeczytaj [oświadczenie o ochronie prywatności](https://privacy.microsoft.com/en-us/privacystatement), a następnie wybierz pozycję **Prześlij** po zakończeniu. Po zatwierdzeniu aplikacji otrzymasz powitalną wiadomość e-mail.
 
-4. Przeczytaj zasady [zachowania poufności informacji](https://privacy.microsoft.com/en-us/privacystatement), a **następnie po wybraniu** przycisku Prześlij wybierz pozycję Prześlij. Po zatwierdzeniu aplikacji otrzymasz powitaną wiadomość e-mail.
+    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="Potwierdzenie aplikacji Microsoft Threat Experts w portalu Microsoft 365 Defender" lightbox="../../media/mte/mte-applicationconfirmation.png":::
 
-    ![Obraz potwierdzenia Microsoft Threat Experts aplikacji.](../../media/mte/mte-applicationconfirmation.png)
+5. Po otrzymaniu powitalnej wiadomości e-mail automatycznie zaczniesz otrzymywać powiadomienia o ukierunkowanych atakach.
 
-5. Gdy otrzymasz powitaną wiadomość e-mail, automatycznie zaczniesz otrzymywać powiadomienia o ukierunkowanych atakach.
+6. Stan możesz zweryfikować, odwiedzając stronę **Ustawienia > Endpoints > General > Advanced features (Punkty końcowe ogólne > zaawansowane).** Po zatwierdzeniu przełącznik **Microsoft Threat Experts — powiadomienie o ataku docelowym** będzie widoczny **i włączony.**
 
-6. Możesz zweryfikować swój status, odwiedzając Ustawienia > **punktów końcowych > ogólne > funkcje zaawansowane**. Po zatwierdzeniu przełącznik **powiadomienia o Microsoft Threat Experts —** ukierunkowany atak będzie widoczny i **włączony**.
+## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>Gdzie zobaczysz powiadomienia o ukierunkowanym ataku z Microsoft Threat Experts
 
-## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>Miejsce, w którym są wyświetlane powiadomienia o atakach ukierunkowanych z aplikacji Microsoft Threat Experts
+Możesz otrzymywać powiadomienia o ataku ukierunkowanym z Microsoft Threat Experts za pośrednictwem następujących nośników:
 
-Możesz otrzymywać powiadomienia o atakach ukierunkowanych od Microsoft Threat Experts za pośrednictwem następujących mediów:
+- Strona **zdarzeń** portalu Microsoft 365 Defender
+- Pulpit nawigacyjny **alertów** portalu Microsoft 365 Defender
+- Interfejs [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) alertów OData i [interfejs API REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- [Tabela DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) w obszarze Zaawansowane wyszukiwanie zagrożeń
+- Skrzynka odbiorcza, jeśli zdecydujesz się na wysyłanie do Ciebie ukierunkowanych powiadomień o atakach za pośrednictwem poczty e-mail. Zobacz [Tworzenie reguły powiadomień e-mail](#create-an-email-notification-rule) poniżej.
 
-- Strona Microsoft 365 Defender zdarzenia w **portalu**
-- Pulpit Microsoft 365 Defender alertów **w portalu**
-- Interfejs API alertów [](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) OData i [interfejs API rest](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
-- [DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) table in Advanced hunting
-- Skrzynka odbiorcza, jeśli zdecydujesz się na wysyłanie do Ciebie za pośrednictwem poczty e-mail powiadomień o atakach ukierunkowanych. Zobacz [Tworzenie reguły powiadomienia e-mail](#create-an-email-notification-rule) poniżej.
+### <a name="create-an-email-notification-rule"></a>Tworzenie reguły powiadomień e-mail
 
-### <a name="create-an-email-notification-rule"></a>Tworzenie reguły powiadomienia e-mail
+Możesz utworzyć reguły wysyłania powiadomień e-mail dla adresatów powiadomień. Aby uzyskać szczegółowe informacje, zobacz  [Konfigurowanie powiadomień o alertach](/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) w celu tworzenia, edytowania, usuwania lub rozwiązywania problemów z powiadomieniami e-mail.
 
-Możesz utworzyć reguły w celu wysyłania powiadomień e-mail do adresatów powiadomień. Aby uzyskać szczegółowe informacje, zobacz  [Konfigurowanie powiadomień alertów](/windows/security/threat-protection/microsoft-defender-atp/configure-email-notifications) w celu tworzenia, edytowania, usuwania i rozwiązywania problemów z powiadomieniami e-mail.
+## <a name="view-targeted-attack-notifications"></a>Wyświetlanie powiadomień o ukierunkowanych atakach
 
-## <a name="view-targeted-attack-notifications"></a>Wyświetlanie powiadomień o atakach ukierunkowanych
+Po skonfigurowaniu systemu do odbierania powiadomień e-mail rozpoczniesz otrzymywanie powiadomienia o ataku ukierunkowanym z Microsoft Threat Experts w wiadomości e-mail.
 
-Po skonfigurowaniu systemu do odbierania wiadomości e-mail z powiadomieniem o Microsoft Threat Experts e-mail zaczniesz otrzymywać powiadomienia o ukierunkowanych atakach od innych osób.
+1. Wybierz link w wiadomości e-mail, aby przejść do odpowiedniego kontekstu alertu na **pulpicie nawigacyjnym z tagiem Eksperci od zagrożeń**.
 
-1. Wybierz link w wiadomości e-mail, aby przejść do odpowiedniego kontekstu alertu na pulpicie nawigacyjnym oznaczonym **ekspertami** ds. zagrożeń.
+2. Na stronie **Alerty** wybierz ten sam temat alertu co ten, który został wyświetlony w wiadomości e-mail, aby wyświetlić dalsze szczegóły.
 
-2. Na stronie **Alerty** wybierz ten sam temat alertu, który został odebrany w wiadomości e-mail, aby wyświetlić więcej szczegółów.
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Subskrybowanie Microsoft Threat Experts — eksperci na żądanie
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Subskrybuj Microsoft Threat Experts — Eksperci na żądanie
+Jeśli jesteś już klientem Ochrona punktu końcowego w usłudze Microsoft Defender, możesz skontaktować się z przedstawicielem firmy Microsoft, aby zasubskrybować Microsoft Threat Experts — Eksperci na żądanie.
 
-Jeśli jesteś już klientem programu Microsoft Defender for Endpoint, możesz skontaktować się z przedstawicielem firmy Microsoft w celu zasubskrybowania usługi Microsoft Threat Experts — Experts on Demand.
+## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Skontaktuj się z ekspertem ds. zagrożeń firmy Microsoft w sprawie podejrzanych działań związanych z cyberbezpieczeństwem w organizacji
 
-## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Skonsultuj się z ekspertem ds. zagrożeń firmy Microsoft w sprawie podejrzanych działań chłonianych w Twojej organizacji
-
-Możesz skontaktować się Microsoft Threat Experts z wewnątrz Microsoft 365 Defender adresowej. Eksperci mogą ułatwić zrozumienie złożonych zagrożeń i powiadomień o atakach ukierunkowanych. Nawiązyj kontakt z ekspertami, aby uzyskać szczegółowe informacje na temat alertów i zdarzeń lub porady dotyczące postępowania z naruszeniami zabezpieczeń. Uzyskaj wgląd w kontekst analizy zagrożeń opisany na pulpicie nawigacyjnym portalu.
+Możesz skontaktować się z Microsoft Threat Experts z poziomu portalu Microsoft 365 Defender. Eksperci mogą pomóc w zrozumieniu złożonych zagrożeń i ukierunkowanych powiadomień o atakach. Skontaktuj się z ekspertami, aby uzyskać więcej informacji na temat alertów i zdarzeń, lub porady dotyczące obsługi naruszenia zabezpieczeń. Uzyskaj wgląd w kontekst analizy zagrożeń opisany przez pulpit nawigacyjny portalu.
 
 > [!NOTE]
 >
-> - Zapytania alertów dotyczące dostosowanych danych analizy zagrożeń twojej organizacji nie są obecnie obsługiwane. Aby uzyskać szczegółowe informacje, skonsultuj się ze swoim zespołem ds. zabezpieczeń lub reagowania na incydenty.
-> - Aby przesłać zapytanie za  pomocą formularza Skonsultuj się z ekspertem ds. zagrożeń, musisz mieć uprawnienie Zarządzanie  ustawieniami zabezpieczeń w centrum zabezpieczeń w portalu Microsoft 365 Defender.
+> - Zapytania dotyczące alertów związane z dostosowanymi danymi analizy zagrożeń w organizacji nie są obecnie obsługiwane. Aby uzyskać szczegółowe informacje, skontaktuj się z zespołem ds. operacji zabezpieczeń lub reagowania na zdarzenia.
+> - Musisz mieć **uprawnienie Zarządzaj ustawieniami zabezpieczeń w centrum zabezpieczeń** w portalu Microsoft 365 Defender, aby przesłać zapytanie za pośrednictwem formularza **Consult a threat expert (Skonsultuj się z ekspertem** ds. zagrożeń).
 
-1. Przejdź do strony portalu powiązanej z informacjami, które chcesz zbadać, na przykład **Urządzenie,** **Alert** lub **Zdarzenie**. Przed wysłaniem żądania badania upewnij się, że strona portalu powiązana z Twoim zapytaniem jest w widoku.
+1. Przejdź do strony portalu związanej z informacjami, które chcesz zbadać: na przykład **Urządzenie**, **Alert** lub **Incydent**. Przed wysłaniem żądania zbadania upewnij się, że strona portalu powiązana z zapytaniem jest widoczna.
 
-2. Z górnego menu wybierz pozycję **? Skonsultuj się z ekspertem ds. zagrożeń**.
+2. Z górnego menu wybierz pozycję **? Skontaktuj się z ekspertem ds. zagrożeń**.
 
-    ![Obraz menu Microsoft Threat Experts ekspertów na żądanie.](../../media/mte/incidents-action-mte-highlighted.png)
+    :::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Microsoft Threat Experts Eksperci na żądanie z menu w portalu Microsoft 365 Defender" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
 
-    Zostanie otwarty wysuwny ekran.
+    Zostanie otwarty ekran wysuwany.
 
-    Nagłówek wskaże, czy masz subskrypcję wersji próbnej, czy pełną Microsoft Threat Experts — Subskrypcję ekspertów na żądanie.
+    Nagłówek wskazuje, czy korzystasz z subskrypcji wersji próbnej, czy pełnej Microsoft Threat Experts — subskrypcja eksperci na żądanie.
 
-    ![Obraz ekranu Microsoft Threat Experts subskrypcji próbnej Experts on Demand.](../../media/mte/mte-trial.png)
+    :::image type="content" source="../../media/mte/mte-trial.png" alt-text="Ekran subskrypcji wersji próbnej Microsoft Threat Experts Experts on Demand w portalu Microsoft 365 Defender" lightbox="../../media/mte/mte-trial.png":::
 
-    Pole **Temat badania** zostanie już wypełnione linkiem do odpowiedniej strony dla twojego żądania.
+    Pole **Temat badania** zostanie już wypełnione linkiem do odpowiedniej strony żądania.
 
-3. W następnym polu podaj wystarczającą ilość informacji, aby Microsoft Threat Experts kontekst do rozpoczęcia badania.
+3. W następnym polu podaj wystarczającą ilość informacji, aby nadać Microsoft Threat Experts kontekst wystarczająco dużo, aby rozpocząć badanie.
 
-4. Wprowadź adres e-mail, z który chcesz się korespondować Microsoft Threat Experts.
+4. Wprowadź adres e-mail, którego chcesz użyć, aby odpowiadać Microsoft Threat Experts.
 
 > [!NOTE]
-> Jeśli chcesz śledzić stan spraw ekspertów na żądanie za pośrednictwem centrum Usług Microsoft, strzygow się z menedżerem ds. klientów technicznych.
+> Jeśli chcesz śledzić stan spraw eksperci na żądanie za pośrednictwem Centrum usług firmy Microsoft, skontaktuj się z menedżerem konta technicznego.
 
-Ten klip wideo zawiera krótkie omówienie Centrum usług firmy Microsoft.
+Obejrzyj to wideo, aby zapoznać się z krótkim omówieniem Centrum usług firmy Microsoft.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
 ## <a name="sample-investigation-topics"></a>Przykładowe tematy badania
 
-### <a name="alert-information"></a>Informacje alertu
+### <a name="alert-information"></a>Informacje o alertach
 
-- Został nam ostrzegany nowy typ alertu o nieużywanym pliku binarnym. Możemy udostępnić identyfikator alertu. Czy możesz nam powiedzieć więcej na temat tego alertu i w jaki sposób możemy go dokładniej zbadać?
-- Zauważyliśmy dwie podobne ataki, w których obie próbowały wykonywać złośliwe skrypty programu PowerShell, ale generować inne alerty. Jeden z nich to "wiersz polecenia programu PowerShell", a drugi to "Wykryto złośliwy plik na podstawie wskazania dostarczonego przez usługę O365". Jaka jest różnica?
-- Dzisiaj otrzymaliśmy nietypowy alert o nieprawidłowej liczbie nieudanych logowania z urządzenia wysokiego profilu użytkownika. Nie ma dodatkowych dowodów na te próby. Jak Microsoft 365 Defender zobaczyć te próby? Jakie typy logowania są monitorowane?
-- Czy możesz dać więcej kontekstu lub więcej informacji na temat alertu "Obserwowane podejrzane zachowanie przez narzędzie systemowe"?
-- Został obserwowany alert o tytule "Tworzenie reguły przesyłania dalej/przekierowywania". Sądzę, że to działanie jest wytęźliwe. Czy możesz mi powiedzieć, dlaczego otrzymałem alert?
+- Widzieliśmy nowy rodzaj alertu dla living-off-the-land binarnych. Możemy podać identyfikator alertu. Czy możesz powiedzieć nam więcej o tym alercie i o tym, jak możemy go dokładniej zbadać?
+- Zaobserwowaliśmy dwa podobne ataki, które próbują wykonać złośliwe skrypty programu PowerShell, ale generują różne alerty. Jednym z nich jest "Podejrzany wiersz polecenia programu PowerShell", a drugi to "Wykryto złośliwy plik na podstawie wskazania dostarczonego przez usługę O365". Jaka jest różnica?
+- Dzisiaj otrzymaliśmy nietypowy alert o nietypowej liczbie nieudanych logowań z urządzenia użytkownika o wysokim profilu. Nie możemy znaleźć żadnych dalszych dowodów na te próby. Jak Microsoft 365 Defender zobaczyć te próby? Jakiego typu logowania są monitorowane?
+- Czy możesz podać więcej kontekstu lub szczegółowych informacji na temat alertu "Zaobserwowano podejrzane zachowanie narzędzia systemowego"?
+- Zaobserwowano alert o nazwie "Tworzenie reguły przekazywania/przekierowania". Uważam, że działalność jest łagodna. Czy możesz mi powiedzieć, dlaczego otrzymałem alert?
 
-### <a name="possible-machine-compromise"></a>Możliwe złamanie komputera
+### <a name="possible-machine-compromise"></a>Możliwe naruszenie zabezpieczeń maszyny
 
-- Czy możesz pomóc w wyjaśnić, dlaczego na wielu urządzeniach w naszej organizacji jest wyświetlany komunikat lub alert o "Nieznanym procesie obserwowanym"? Dziękujemy za wszelkie dane wejściowe w celu wyjaśnienia, czy te wiadomości lub alerty są związane ze złośliwą aktywnością.
-- Czy możesz pomóc w weryfikacji możliwego naruszenia zabezpieczeń systemu z ostatniego tygodnia? Zachowuje się podobnie jak w przypadku poprzedniego wykrywania złośliwego oprogramowania w tym samym systemie sześć miesięcy temu.
+- Czy możesz wyjaśnić, dlaczego na wielu urządzeniach w naszej organizacji jest wyświetlany komunikat lub alert dotyczący "zaobserwowanego nieznanego procesu"? Doceniamy wszelkie dane wejściowe, aby wyjaśnić, czy ten komunikat lub alert jest związany ze złośliwym działaniem.
+- Czy możesz pomóc w zweryfikowaniu możliwego kompromisu w następującym systemie, pochodzącym z zeszłego tygodnia? Działa podobnie jak poprzednie wykrywanie złośliwego oprogramowania w tym samym systemie sześć miesięcy temu.
 
 ### <a name="threat-intelligence-details"></a>Szczegóły analizy zagrożeń
 
-- Wykryliśmy wiadomość e-mail wyłudzającą informacje, która dostarczyć użytkownikowi złośliwy dokument programu Word. Dokument spowodował serię podejrzanych zdarzeń, w wyniku których wyzwoliło wiele alertów dla konkretnej rodziny złośliwego oprogramowania. Czy masz jakieś informacje o tym złośliwym oprogramowaniu? Jeśli tak, czy możesz wysłać nam link?
-- Ostatnio pojawił się wpis w blogu o zagrożeń, które mają na celu kierowanie branży. Czy możesz pomóc nam zrozumieć, jaką ochronę Microsoft 365 Defender przed tym aktorem zagrożeń?
-- Ostatnio obserwowaliśmy kampanię wyłudzania informacji prowadzonej wobec naszej organizacji. Czy możesz nas poinformować, czy dotyczy to konkretnie naszej firmy, czy pionowej?
+- Wykryliśmy wiadomość e-mail wyłudzającą informacje, która dostarczyła użytkownikowi złośliwy dokument programu Word. Dokument spowodował serię podejrzanych zdarzeń, które wyzwoliły wiele alertów dla określonej rodziny złośliwego oprogramowania. Czy masz jakieś informacje na temat tego złośliwego oprogramowania? Jeśli tak, czy możesz wysłać nam link?
+- Niedawno zobaczyliśmy wpis w blogu o zagrożeniu, które jest skierowane do naszej branży. Czy możesz pomóc nam zrozumieć, jaką ochronę zapewnia Microsoft 365 Defender przed tym aktorem zagrożeń?
+- Ostatnio zaobserwowaliśmy kampanię wyłudzania informacji prowadzoną przeciwko naszej organizacji. Czy możesz nam powiedzieć, czy było to skierowane specjalnie do naszej firmy, czy do pionu?
 
-### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft Threat Experts alertów użytkownika
+### <a name="microsoft-threat-experts-alert-communications"></a>komunikacja alertów Microsoft Threat Experts
 
-- Czy Twój zespół reagowania na incydenty może pomóc nam w odpowiedzi na powiadomienie o docelowym ataków, które dostaliśmy?
-- Otrzymaliśmy to powiadomienie o atakach ukierunkowanych od firmy Microsoft Threat Experts. Nie mamy własnego zespołu reagowania na incydenty. Co możemy teraz zrobić i jak możemy się z nim pomylić?
-- Otrzymaliśmy powiadomienie o ukierunkowanych atakach od firmy Microsoft Threat Experts. Jakie dane możesz nam przekazać, które możemy przekazać naszemu zespołowi reagowania na incydenty?
+- Czy twój zespół reagowania na zdarzenia może pomóc nam w rozwiązaniu otrzymanego powiadomienia o ataku?
+- Otrzymaliśmy to ukierunkowane powiadomienie o ataku od Microsoft Threat Experts. Nie mamy własnego zespołu reagowania na zdarzenia. Co możemy teraz zrobić i jak możemy powstrzymać zdarzenie?
+- Otrzymaliśmy powiadomienie o ataku ukierunkowanym od Microsoft Threat Experts. Jakie dane można nam podać, które możemy przekazać naszemu zespołowi reagowania na zdarzenia?
 
 > [!NOTE]
-> Microsoft Threat Experts jest zarządzaną usługą chłoniania zagrożeń, a nie usługą reagowania na incydenty. Możesz jednak współpracować ze swoim zespołem reagowania na incydenty w celu rozwiązania problemów wymagających reakcji na incydent. Jeśli nie masz własnego zespołu reagowania na incydenty i potrzebujesz pomocy firmy Microsoft, możesz zaangażować się w zespół odpowiedzi css na zdarzenia (CIRT, CSS Incident Response Team). Mogą oni utworzyć bilet, aby pomóc w zaadresować Twoje zapytanie.
+> Microsoft Threat Experts jest zarządzaną usługą wyszukiwania zagrożeń, a nie usługą reagowania na zdarzenia. Możesz jednak skontaktować się z własnym zespołem reagowania na zdarzenia, aby rozwiązać problemy wymagające reakcji na zdarzenia. Jeśli nie masz własnego zespołu ds. reagowania na zdarzenia i chcesz uzyskać pomoc firmy Microsoft, możesz skontaktować się z zespołem CSS Cybersecurity Incident Response Team (CIRT). Mogą otworzyć bilet, aby pomóc w rozwiązaniu twojego zapytania.
 
 ## <a name="scenario"></a>Scenariusz
 
-### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Otrzymywanie raportu o postępie w śledztwie zarządzanym
+### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Otrzymywanie raportu postępu dotyczącego zapytania dotyczącego wyszukiwania zagrożeń zarządzanych
 
-Odpowiedź od Microsoft Threat Experts będzie się różnić w zależności od zapytania. Zazwyczaj otrzymujesz jedną z następujących odpowiedzi:
+Odpowiedź od Microsoft Threat Experts będzie się różnić w zależności od zapytania. Zazwyczaj otrzymasz jedną z następujących odpowiedzi:
 
-- Więcej informacji jest potrzebnych do kontynuowania badania
-- Do określenia kontekstu technicznego potrzebny jest plik lub kilka przykładów plików
+- Aby kontynuować dochodzenie, potrzebne są dodatkowe informacje
+- Plik lub kilka przykładów plików jest potrzebnych do określenia kontekstu technicznego
 - Badanie wymaga więcej czasu
-- Początkowe informacje wystarczyły do prowadzonego badania
+- Wstępne informacje wystarczyły, aby zakończyć dochodzenie
 
-Jeśli ekspert prosi o dodatkowe informacje lub próbki plików, niezwykle ważne jest szybkie reagowanie w celu prowadzonego badania.
+Jeśli ekspert zażąda więcej informacji lub przykładów plików, kluczowe jest szybkie reagowanie, aby kontynuować dochodzenie.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Microsoft Threat Experts omówienie](microsoft-threat-experts.md)
+- [Przegląd ekspertów ds. zagrożeń firmy Microsoft](microsoft-threat-experts.md)

@@ -1,7 +1,7 @@
 ---
 title: Stosowanie reguł zmniejszania powierzchni ataków w celu zapobiegania zainfekowaniu złośliwym oprogramowaniem
 description: Reguły ograniczania powierzchni ataków mogą zapobiegać używaniu aplikacji i skryptów w celu zainfekowania urządzeń złośliwym oprogramowaniem.
-keywords: Reguły zmniejszania powierzchni ataków, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, prevention, Microsoft Defender for Endpoint
+keywords: Reguły zmniejszania powierzchni ataków, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, prevention, Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,23 +21,23 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 53f338ec713038841ab5cc089c12cebf7fe46131
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c09405043caeea57fdad1c241dfcd70e47ccd6f1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680626"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470737"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Omówienie reguł zmniejszania powierzchni ataków
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Dlaczego reguły ograniczania powierzchni ataków są ważne
 
-Miejsce ataków organizacji obejmuje wszystkie miejsca, w których atakujący mogą naruszonć urządzenia lub sieci organizacji. Zmniejszenie powierzchni ataków oznacza ochronę urządzeń i sieci organizacji, co pozostawia atakującym mniej sposobów przeprowadzania ataków. Skonfigurowanie reguł ograniczania powierzchni ataków w programie Microsoft Defender dla punktu końcowego może pomóc!
+Miejsce ataków organizacji obejmuje wszystkie miejsca, w których atakujący mogą naruszonć urządzenia lub sieci organizacji. Zmniejszenie powierzchni ataków oznacza ochronę urządzeń i sieci organizacji, co pozostawia atakującym mniej sposobów przeprowadzania ataków. Konfigurowanie reguł ograniczania powierzchni ataków w programie Ochrona punktu końcowego w usłudze Microsoft Defender może pomóc!
 
 Reguły zmniejszania powierzchni ataków mają na celu określone zachowania oprogramowania, takie jak:
 
@@ -53,7 +53,7 @@ Aby uzyskać więcej informacji na temat konfigurowania reguł zmniejszania powi
 
 Możesz ocenić wpływ reguły ograniczania powierzchni ataków na Twoją sieć, otwierając w programie Zarządzanie zagrożeniami i lukami zalecenia dotyczące [bezpieczeństwa dla tej Zarządzanie zagrożeniami i lukami](/windows/security/threat-protection/#tvm).
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="Reguła ograniczania powierzchni ataków jest reco zabezpieczeń.":::
+:::image type="content" source="images/asrrecommendation.png" alt-text="Zalecenie ASR" lightbox="images/asrrecommendation.png":::
 
 W okienku szczegółów zalecenia sprawdź wpływ na użytkowników, aby określić procent urządzeń, na których urządzenia mogą zaakceptować nowe zasady umożliwiające regułę w trybie blokowania bez negatywnego wpływu na wydajność.
 
@@ -88,7 +88,7 @@ Aby uzyskać więcej informacji i uzyskać aktualizacje, zobacz [Aktualizacja pl
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Przypadki, w których tryb  warnowania nie jest obsługiwany
 
-Tryb ostrzegania nie jest obsługiwany w przypadku trzech reguł zmniejszania powierzchni ataków podczas ich konfigurowania w Microsoft Endpoint Manager. (Jeśli używasz tego zasady grupy do konfigurowania reguł zmniejszania powierzchni ataków, obsługiwany jest tryb ostrzegania). Trzy reguły, które nie obsługują trybu ostrzegania podczas ich konfigurowania w aplikacji Microsoft Endpoint Manager są następujące:
+Tryb ostrzegania nie jest obsługiwany w przypadku trzech reguł zmniejszania powierzchni ataków podczas ich konfigurowania w Microsoft Endpoint Manager. (Jeśli używasz zasady grupy do konfigurowania reguł zmniejszania powierzchni ataków, obsługiwany jest tryb  ostrzeżenie. Trzy reguły, które nie obsługują trybu ostrzegania podczas ich konfigurowania w aplikacji Microsoft Endpoint Manager są następujące:
 
 - [Blokowanie uruchamiania pobranej zawartości](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) wykonywalnego (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`) przez język JavaScript lub VBScript
 - [Blokowanie okresu dzięki subskrypcji zdarzeń usługi WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
@@ -133,7 +133,7 @@ Mimo że reguły zmniejszania powierzchni ataków nie wymagają licencji [Window
 - Monitorowanie, analiza i przepływy pracy dostępne w [programie Defender dla punktu końcowego](microsoft-defender-endpoint.md)
 - Funkcje raportowania i konfiguracji w [programie Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Te funkcje zaawansowane nie są dostępne w przypadku licencji Windows Professional E3 Windows E3. Jeśli jednak masz te licencje, możesz użyć podglądu zdarzeń i dzienników Program antywirusowy Microsoft Defender, aby przejrzeć zdarzenia reguły ograniczania powierzchni ataków.
+Te funkcje zaawansowane nie są dostępne w przypadku licencji Windows Professional E3 Windows E3. Jeśli jednak masz te licencje, możesz za pomocą dzienników logowania i Podgląd zdarzeń i Program antywirusowy Microsoft Defender przejrzeć zdarzenia reguły ograniczania powierzchni ataków.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Przeglądanie zdarzeń zmniejszenia powierzchni ataków w portalu Microsoft 365 Defender ataków
 
@@ -148,13 +148,13 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Przeglądanie zdarzeń zmniejszenia powierzchni ataków w Windows Zdarzeń
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Przeglądanie zdarzeń zmniejszenia powierzchni ataków w Windows Podgląd zdarzeń
 
 Możesz przejrzeć dziennik Windows, aby wyświetlić zdarzenia generowane przez reguły ograniczania powierzchni ataków:
 
 1. Pobierz pakiet [oceny i](https://aka.ms/mp7z2w) wyodrębnij plik *cfa-events.xml* w łatwo dostępnej lokalizacji na urządzeniu.
 
-2. Wprowadź wyrazy (*Podgląd zdarzeń*) w menu Start, aby otworzyć Windows zdarzeń.
+2. Wprowadź wyrazy (*Podgląd zdarzeń*) w menu Start, aby otworzyć Windows Podgląd zdarzeń.
 
 3. W **obszarze Akcje** wybierz pozycję **Importuj widok niestandardowy...**.
 
@@ -170,4 +170,4 @@ Możesz utworzyć widok niestandardowy, który filtruje zdarzenia w celu pokazan
 |1121|Zdarzenie, gdy reguła zostanie wyzb. w trybie blokowania|
 |1122|Zdarzenie, gdy reguła jest w trybie inspekcji|
 
-"Wersja aparatu" wymieniona w dzienniku zdarzeń ograniczania powierzchni ataków jest generowana przez program Defender for Endpoint, a nie przez system operacyjny. Program Defender for Endpoint jest zintegrowany z systemami Windows 10 i Windows 11, więc ta funkcja działa na wszystkich urządzeniach z zainstalowanymi systemami Windows 10 i Windows 11.
+"Wersja aparatu" wymieniona w dzienniku zdarzeń ograniczania powierzchni ataków jest generowana przez program Defender for Endpoint, a nie przez system operacyjny. Program Defender for Endpoint jest zintegrowany z usługami Windows 10 i Windows 11, więc ta funkcja działa na wszystkich urządzeniach z zainstalowanymi Windows 10 i Windows 11 komputerze.

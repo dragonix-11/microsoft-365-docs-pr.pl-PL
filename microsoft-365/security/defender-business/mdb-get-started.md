@@ -1,6 +1,6 @@
 ---
-title: Rozpoczynanie korzystania z portalu Microsoft 365 Defender-
-description: Zobacz, jak rozpocząć korzystanie z Microsoft 365 Defender usługi. Dowiedz się, jak poruszać się po portalu oraz wyświetlać bieżący stan zabezpieczeń i zalecenia
+title: Wprowadzenie przy użyciu portalu Microsoft 365 Defender
+description: Zobacz, jak rozpocząć korzystanie z portalu Microsoft 365 Defender. Dowiedz się, jak nawigować po portalu i wyświetlać bieżący stan zabezpieczeń i zalecenia
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -18,83 +18,83 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 3e46ee70c1c745c336d049f039de04282c5848d8
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: c5a940676eab6ae3a07c526ecb1bd910ed8751fe
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525392"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667147"
 ---
-# <a name="get-started-using-the-microsoft-365-defender-portal"></a>Rozpoczynanie korzystania z portalu Microsoft 365 Defender-
+# <a name="get-started-using-the-microsoft-365-defender-portal"></a>Wprowadzenie przy użyciu portalu Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
+> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
 > 
-> Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
+> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
 
-Po najechaniu w programie Microsoft Defender dla firm należy zapoznać się z portalem Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Ten artykuł zawiera następujące sekcje:
+Po zarejestrowaniu się w Microsoft Defender dla Firm warto zapoznać się z portalem Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Ten artykuł zawiera następujące sekcje:
 
-- [Jak nawigować po Microsoft 365 Defender portalu](#navigate-the-microsoft-365-defender-portal)
+- [Jak nawigować po portalu Microsoft 365 Defender](#navigate-the-microsoft-365-defender-portal)
 
-- [Edukacja na temat zdarzeń i akcji reagowania](#complete-a-learning-module-about-incidents-and-response-actions) 
+- [Edukacja moduły dotyczące zdarzeń i akcji reagowania](#complete-a-learning-module-about-incidents-and-response-actions) 
 
 - [Następne kroki](#next-steps)
 
 >
 > **Masz minutę?**
-> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
-## <a name="navigate-the-microsoft-365-defender-portal"></a>Poruszanie się Microsoft 365 Defender portalu
+## <a name="navigate-the-microsoft-365-defender-portal"></a>Nawigowanie po portalu Microsoft 365 Defender
 
-Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) to jedna usługa w przypadku używania programu Microsoft Defender dla firm i zarządzania nimi. Zawiera transparent powitalny i objaśnienia, które ułatwiają rozpoczynanie pracy, karty, które zawierają istotne informacje, oraz pasek nawigacyjny, który zapewnia łatwy dostęp do różnych funkcji i możliwości.
+Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) to punkt obsługi do korzystania z Microsoft Defender dla Firm i zarządzania nimi. Zawiera baner powitalny i objaśnienia ułatwiające rozpoczęcie pracy, karty, które udostępniają odpowiednie informacje, oraz pasek nawigacyjny, który zapewnia łatwy dostęp do różnych funkcji i możliwości.
  
-Po chwili zapoznaj się z portalem informacyjnym, Microsoft 365 Defender portalem.
+Poświęć chwilę na zapoznanie się z portalem Microsoft 365 Defender.
 
-:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portalu":::
+:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="portal Microsoft 365 Defender":::
 
 ### <a name="use-the-navigation-bar"></a>Korzystanie z paska nawigacyjnego
 
-Użyj paska nawigacyjnego po lewej stronie ekranu, aby uzyskać dostęp do zdarzeń, wyświetlać raporty i zarządzać zasadami zabezpieczeń. W poniższej tabeli opisano elementy, które są zobaczyć na pasku nawigacyjnym.
+Użyj paska nawigacyjnego po lewej stronie ekranu, aby uzyskać dostęp do zdarzeń, wyświetlić raporty i zarządzać zasadami zabezpieczeń. W poniższej tabeli opisano elementy widoczne na pasku nawigacyjnym.
 
 | Element | Opis |
 |:---|:---|
-| **Strona główna** | Przenosi Cię do strony głównej w programie Microsoft 365 Defender. Strona główna zawiera karty z wyróżnieniami aktywnych zagrożeń, które zostały wykryte, oraz zalecenia dotyczące zabezpieczania danych i urządzeń firmy. <br/><br/>Rekomendacje są dostępne w programie Defender dla firm, mogą zaoszczędzić czas i wysiłku zespołu zabezpieczeń. Rekomendacje są oparte na najlepszych rozwiązaniach branżowych. Aby dowiedzieć się więcej o zaleceniach, zobacz [Zalecenia dotyczące zabezpieczeń — Zarządzanie zagrożeniami i lukami](../defender-endpoint/tvm-security-recommendation.md). |
-| **Zdarzenia** | Pozwala wyświetlić listę ostatnich zdarzeń. W przypadku wyzwalania alertów są tworzone zdarzenia. Zdarzenie może zawierać wiele alertów. Pamiętaj, aby regularnie przeglądać zdarzenia. <br/><br/>Aby dowiedzieć się więcej o zdarzeniach, zobacz [Wyświetlanie zdarzeń i zarządzanie nimi w u programie Microsoft Defender dla firm](mdb-view-manage-incidents.md).|
-| **Centrum akcji** | Umożliwia dostęp do listy akcji odpowiedzi, w tym akcji ukończonych lub oczekujących. <br/>— Wybierz **kartę** Historia, aby wyświetlić wykonane akcje. Niektóre akcje są podejmowane automatycznie. inne są wykonywane ręcznie lub ukończone po zatwierdzeniu. <br/>— Wybierz kartę **Oczekujące** , aby wyświetlić akcje wymagające zatwierdzenia w celu kontynuowania. <br/><br/>Aby dowiedzieć się więcej o Centrum akcji, zobacz [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md). |
-| **Analiza zagrożeń** | Pozwala spojrzeć na bieżące zagrożenia, a także pozwala jednym rzutem oka zobaczyć obszar zagrożeń. Analiza zagrożeń obejmuje również raporty i informacje od użytkowników zabezpieczeń firmy Microsoft. <br/><br/>Aby dowiedzieć się więcej na temat analizy zagrożeń, zobacz Śledzenie wyłaniających się zagrożeń i odpowiadanie [na nie za pomocą analizy zagrożeń](../defender-endpoint/threat-analytics.md). |
-| **Secure score** | Przedstawia informacje o pozycji zabezpieczeń firmy i oferuje sugestie dotyczące jego poprawy.<br/><br/>Aby dowiedzieć się więcej na temat bezpiecznego wyniku, zobacz [Wynik bezpiecznego wyniku firmy Microsoft dla urządzeń](../defender-endpoint/tvm-microsoft-secure-score-devices.md). |
-| **Edukacja centrum** | Zapewnia dostęp do szkoleń zabezpieczeń i innych zasobów za pośrednictwem ścieżek nauki dołączonych do subskrypcji. Możesz filtrować według produktu, poziomu umiejętności, roli i nie tylko. Centrum Edukacja może ułatwić Twoje zespołowi zabezpieczeń podjęcie pracy nad funkcjami zabezpieczeń i możliwościami usługi Defender & dla firm i większej liczby ofert firmy Microsoft, takich jak [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) i [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md).  |
-| **Punkty końcowe** >  **Wyszukiwanie** | Umożliwia wyszukanie jednego lub większej liczby urządzeń, które zostały podłączone do usługi Microsoft Defender dla firm. |
-| **Punkty końcowe** >  **Spis urządzeń** | Umożliwia wyszukanie jednego lub większej liczby urządzeń, które zostały podłączone do usługi Microsoft Defender dla firm. |
-| **Punkty końcowe** >  **Zarządzanie lukami w zabezpieczeniach** | Udostępnia pulpit nawigacyjny, zalecenia, działania naprawcze, spis oprogramowania oraz listę potencjalnych problemów w firmie. |
-| **Punkty końcowe** >  **Samouczki** | Zapewnia dostęp do instruktaży i symulowań, aby dowiedzieć się więcej na temat działania funkcji ochrony przed zagrożeniami. <br/><br/>Przed **podjęciem próby uzyskania pliku symulacyjnego** dla każdego samouczka wybierz link Przeczytaj instruktaż. Niektóre symeony wymagają Office takich jak Microsoft Word, aby przeczytać instruktaż. |
-| **Punkty końcowe** >  **Konfiguracja urządzenia** | Zawiera listę zasad zabezpieczeń według systemu operacyjnego i typu. <br/><br/>Aby dowiedzieć się więcej na temat zasad zabezpieczeń, zobacz [Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm](mdb-view-edit-policies.md). |
-| **Raporty** | Zawiera listę dostępnych raportów zabezpieczeń. Raporty te pozwalają przeglądać trendy zabezpieczeń, wyświetlać szczegółowe informacje na temat wykrywania zagrożeń i alertów oraz dowiedzieć się więcej o urządzeniach, które są narażone na zagrożenia w firmie. |
-| **Kondycja** | Umożliwia wyświetlenie stanu kondycji usługi i zaplanowanie nadchodzących zmian. <br/>— Wybierz **pozycję Kondycja** usługi, aby wyświetlić stan kondycji Microsoft 365 usług uwzględnionych w subskrypcji firmowej. <br/>— Wybierz **pozycję Centrum wiadomości,** aby dowiedzieć się więcej na temat planowanych zmian i tego, czego można oczekiwać.  |
-| **Uprawnienia & ról** | Umożliwia przypisywanie uprawnień osobom w firmie, które będą zarządzać zabezpieczeniami oraz wyświetlać zdarzenia i raporty w portalu Microsoft 365 Defender sieci. Ponadto możesz skonfigurować grupy urządzeń i zarządzać nimi w celu wsadu na urządzenia firmy i przypisywania zasad ochrony przed zagrożeniami.  |
-| **Ustawienia** | Umożliwia edytowanie ustawień portalu usługi Microsoft 365 Defender usługi Microsoft Defender dla firm. Na przykład możesz korzystać z aplikacji (lub aplikacji offboard) i urządzeń firmy (nazywanych również punktami końcowymi). Można również zdefiniować reguły, takie jak reguły alertów i skonfigurować wskaźniki blokowania lub zezwalania na określone pliki lub procesy.  |
+| **Strona główna** | Spowoduje to przejście do strony głównej w Microsoft 365 Defender. Strona główna zawiera karty z wyróżnionymi aktywnymi zagrożeniami, które zostały wykryte, oraz zalecenia ułatwiające zabezpieczenie danych i urządzeń firmy. <br/><br/>Rekomendacje są zawarte w usłudze Defender for Business, mogą zaoszczędzić czas i nakład pracy zespołu ds. zabezpieczeń. Rekomendacje są oparte na najlepszych rozwiązaniach branżowych. Aby dowiedzieć się więcej na temat zaleceń, zobacz [Zalecenia dotyczące zabezpieczeń — Zarządzanie zagrożeniami i lukami](../defender-endpoint/tvm-security-recommendation.md). |
+| **Zdarzenia** | Spowoduje to przejście do listy ostatnich zdarzeń. W miarę wyzwalania alertów tworzone są zdarzenia. Zdarzenie może zawierać wiele alertów. Pamiętaj, aby regularnie przeglądać zdarzenia. <br/><br/>Aby dowiedzieć się więcej o zdarzeniach, zobacz [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md).|
+| **Centrum akcji** | Spowoduje to przejście do listy akcji odpowiedzi, w tym zakończonych lub oczekujących akcji. <br/>— Wybierz kartę **Historia** , aby wyświetlić podjęte akcje. Niektóre akcje są wykonywane automatycznie; inne są wykonywane ręcznie lub ukończone po ich zatwierdzeniu. <br/>— Wybierz kartę **Oczekujące** , aby wyświetlić akcje wymagające zatwierdzenia. <br/><br/>Aby dowiedzieć się więcej na temat Centrum akcji, zobacz [Przeglądanie akcji korygowania w Centrum akcji](mdb-review-remediation-actions.md). |
+| **Analiza zagrożeń** | Pozwala zapoznać się z bieżącymi zagrożeniami i zapewnia wgląd w krajobraz zagrożeń. Analiza zagrożeń obejmuje również raporty i informacje od badaczy zabezpieczeń firmy Microsoft. <br/><br/>Aby dowiedzieć się więcej na temat analizy zagrożeń, zobacz [Śledzenie pojawiających się zagrożeń i reagowanie na nie za pośrednictwem analizy zagrożeń](../defender-endpoint/threat-analytics.md). |
+| **Wskaźnik bezpieczeństwa** | Zapewnia reprezentację pozycji bezpieczeństwa twojej firmy i oferuje sugestie, aby ją ulepszyć.<br/><br/>Aby dowiedzieć się więcej na temat wskaźnika bezpieczeństwa, zobacz [Wskaźnik bezpieczeństwa firmy Microsoft dla urządzeń](../defender-endpoint/tvm-microsoft-secure-score-devices.md). |
+| **centrum Edukacja** | Zapewnia dostęp do szkoleń dotyczących zabezpieczeń i innych zasobów za pośrednictwem ścieżek szkoleniowych dołączonych do Subskrypcji. Możesz filtrować według produktu, poziomu umiejętności, roli i innych elementów. Centrum Edukacja może pomóc zespołowi ds. zabezpieczeń w zakresie funkcji zabezpieczeń & możliwości w usłudze Defender dla Firm i innych ofert firmy Microsoft, takich jak [Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/microsoft-defender-endpoint.md) i [ Ochrona usługi Office 365 w usłudze Microsoft Defender](../office-365-security/defender-for-office-365.md).  |
+| **Punkty końcowe** >  **Szukaj** | Umożliwia wyszukiwanie co najmniej jednego urządzenia, które zostało dołączone do Microsoft Defender dla Firm. |
+| **Punkty końcowe** >  **Spis urządzeń** | Umożliwia wyszukiwanie co najmniej jednego urządzenia, które zostało dołączone do Microsoft Defender dla Firm. |
+| **Punkty końcowe** >  **Zarządzanie lukami w zabezpieczeniach** | Udostępnia pulpit nawigacyjny, rekomendacje, działania korygujące, spis oprogramowania i listę potencjalnych słabych stron w firmie. |
+| **Punkty końcowe** >  **Samouczki** | Zapewnia dostęp do przewodników i symulacji, aby dowiedzieć się więcej o sposobie działania funkcji ochrony przed zagrożeniami. <br/><br/>Przed podjęciem próby pobrania pliku symulacji dla każdego **samouczka** wybierz link Przeczytaj przewodnik. Niektóre symulacje wymagają Office aplikacji, takich jak Microsoft Word, aby przeczytać przewodnik. |
+| **Punkty końcowe** >  **Konfiguracja urządzenia** | Wyświetla listę zasad zabezpieczeń według systemu operacyjnego i typu. <br/><br/>Aby dowiedzieć się więcej na temat zasad zabezpieczeń, zobacz [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](mdb-view-edit-policies.md). |
+| **Raporty** | Wyświetla listę dostępnych raportów zabezpieczeń. Te raporty umożliwiają wyświetlanie trendów zabezpieczeń, wyświetlanie szczegółowych informacji o wykrywaniu zagrożeń i alertach oraz uzyskiwanie dodatkowych informacji o urządzeniach firmy narażonych na zagrożenia. |
+| **Kondycja** | Umożliwia wyświetlanie stanu kondycji usługi i planowanie nadchodzących zmian. <br/>— Wybierz **pozycję Kondycja usługi**, aby wyświetlić stan kondycji usług Microsoft 365 uwzględnionych w subskrypcji firmy. <br/>— Wybierz pozycję **Centrum komunikatów** , aby dowiedzieć się więcej o planowanych zmianach i oczekiwaniach.  |
+| **Uprawnienia & ról** | Umożliwia przypisywanie uprawnień osobom w firmie, które będą zarządzać zabezpieczeniami oraz wyświetlać zdarzenia i raporty w portalu Microsoft 365 Defender. Umożliwia również konfigurowanie grup urządzeń i zarządzanie nimi w celu dołączania urządzeń firmy i przypisywania zasad ochrony przed zagrożeniami.  |
+| **Ustawienia** | Umożliwia edytowanie ustawień portalu Microsoft 365 Defender i Microsoft Defender dla Firm. Na przykład możesz dołączyć (lub odłączyć) i urządzenia firmy (nazywane również punktami końcowymi). Można również zdefiniować reguły, takie jak reguły pomijania alertów, i skonfigurować wskaźniki do blokowania lub zezwalania na niektóre pliki lub procesy.  |
 | **Więcej zasobów** | Przejdź do innych portali, takich jak Azure Active Directory. Pamiętaj, że portal Microsoft 365 Defender powinien spełniać Twoje potrzeby bez konieczności przechodzenia do innych portali. |
 
-## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>Ukończenie modułu szkoleniowego na temat zdarzeń i akcji reagowania
+## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>Ukończenie modułu szkoleniowego dotyczącego zdarzeń i akcji reagowania
 
-Zobacz moduł nauki Wykrywanie problemów [dotyczących](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/) zabezpieczeń i odpowiadanie na nie, aby uzyskać przegląd zdarzeń i działań reagowania. Dowiesz się więcej o kolejkach zdarzeń, alertach i akcjach odpowiedzi, które możesz podjąć. Ten kurs pomoże Ci w rozpoczynania pracy nad zdarzeniami w programie Defender dla firm.
+Zapoznaj się z modułem szkoleniowym [Wykrywanie problemów z zabezpieczeniami i reagowanie na nie](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/), aby uzyskać przegląd zdarzeń i akcji reagowania. Poznasz kolejkę zdarzeń, alerty i akcje reagowania, które możesz wykonać. Ten kurs pomoże Ci rozpocząć pracę z incydentami w usłudze Defender dla Firm.
 
 > [!NOTE]
-> Chociaż moduł [nauki (Wykrywanie](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/) problemów z zabezpieczeniami i odpowiadanie na nie) w rzeczywistości jest dla programu Microsoft Defender for Endpoint, podstawowe pojęcia i ogólny przepływ są podobne do tego, co widzisz w programie Defender dla firm.
+> Mimo że moduł szkoleniowy ([Wykrywanie problemów z zabezpieczeniami i reagowanie na nie](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) jest faktycznie przeznaczony dla Ochrona punktu końcowego w usłudze Microsoft Defender, podstawowe pojęcia i ogólny przepływ są podobne do tych, które zobaczysz w usłudze Defender for Business.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy masz już omówienie usługi Defender dla firm, wypróbuj co najmniej jedno z następujących zadań:
+Teraz, gdy masz omówienie usługi Defender dla Firm, spróbuj wykonać co najmniej jedno z następujących zadań:
 
-- [Wypróbuj samouczki i symulowania w programie Microsoft Defender dla firm](mdb-tutorials.md)
+- [Wypróbuj samouczki i symulacje w Microsoft Defender dla Firm](mdb-tutorials.md)
 
-- [Zarządzanie urządzeniami w programie Microsoft Defender dla firm](mdb-manage-devices.md)
+- [Zarządzanie urządzeniami w Microsoft Defender dla Firm](mdb-manage-devices.md)
 
-- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md)
+- [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md)
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
+- [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
 
-- [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md)
+- [Przeglądanie akcji korygowania w centrum akcji](mdb-review-remediation-actions.md)
 
-- [Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla firm](mdb-view-edit-policies.md)
+- [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](mdb-view-edit-policies.md)

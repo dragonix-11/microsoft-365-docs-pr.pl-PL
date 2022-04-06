@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się więcej o zasadach ochrony przed wyłudzaniem informacji dostępnych w programach Exchange Online Protection (EOP) i Microsoft Defender for Office 365.
+description: Administratorzy mogą dowiedzieć się więcej o zasadach ochrony przed wyłudzaniem informacji dostępnych w programach Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a0f491c099e5a3b67866738267215e79ff6cbeb0
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 5389e83634bc92dd01908b16e8ca0a76dd76c765
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679549"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475702"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Zasady ochrony przed wyłudzaniem informacji w programie Microsoft 365
 
@@ -30,21 +30,21 @@ ms.locfileid: "63679549"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Zasady konfigurowania ustawień ochrony przed wyłudzaniem informacji są dostępne w organizacjach Microsoft 365 ze skrzynkami pocztowymi usługi Exchange Online, autonomicznych organizacjach usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online oraz w programie Microsoft Defender dla Office 365 organizacji.
+Zasady konfigurowania ustawień ochrony przed wyłudzaniem informacji są dostępne w organizacjach Microsoft 365 ze skrzynkami pocztowymi firmy Exchange Online, w autonomicznych organizacjach Exchange Online Protection (EOP) bez Exchange Online skrzynek pocztowych oraz Ochrona usługi Office 365 w usłudze Microsoft Defender organizacji.
 
-Oto przykłady programu Microsoft Defender Office 365 organizacji:
+Oto przykłady Ochrona usługi Office 365 w usłudze Microsoft Defender organizacji:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5 itp.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
-- [Program Microsoft Defender Office 365 jako dodatek](https://products.office.com/exchange/advance-threat-protection)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender jako dodatek](https://products.office.com/exchange/advance-threat-protection)
 
-W poniższej tabeli przedstawiono różnice na wysokim poziomie między zasadami ochrony przed wyłudzaniem informacji w u usługi EOP a zasadami ochrony przed wyłudzaniem informacji w programie Defender for Office 365.
+W poniższej tabeli przedstawiono różnice między zasadami ochrony przed wyłudzaniem informacji w UAD a zasadami ochrony przed Ochrona usługi Office 365 w usłudze Defender wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender:
 
-|Funkcja|Zasady ochrony przed wyłudzaniem informacji w uchcie EOP|Zasady ochrony przed wyłudzaniem informacji w programie Defender dla Office 365|
+|Funkcja|Zasady ochrony przed wyłudzaniem informacji w uchcie EOP|Zasady ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender|
 |---|:---:|:---:|
 |Zasady domyślne utworzone automatycznie|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
 |Tworzenie zasad niestandardowych|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
@@ -59,13 +59,13 @@ W poniższej tabeli przedstawiono różnice na wysokim poziomie między zasadami
 Aby skonfigurować zasady ochrony przed wyłudzaniem informacji, zobacz następujące artykuły:
 
 - [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w u usługi EOP](configure-anti-phishing-policies-eop.md)
-- [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365](configure-mdo-anti-phishing-policies.md)
+- [Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md)
 
-W dalszej części tego artykułu opisano ustawienia dostępne w zasadach ochrony przed wyłudzaniem informacji w programach EOP i Defender for Office 365.
+W dalszej części tego artykułu opisano ustawienia dostępne w zasadach ochrony przed wyłudzaniem informacji w umacie EOP i Ochrona usługi Office 365 w usłudze Defender.
 
 ## <a name="common-policy-settings"></a>Ustawienia wspólnych zasad
 
-Poniższe ustawienia zasad są dostępne w zasadach ochrony przed wyłudzaniem informacji w programach EOP i Defender for Office 365:
+Poniższe ustawienia zasad są dostępne w zasadach ochrony przed wyłudzaniem informacji w u Ochrona usługi Office 365 w usłudze Defender:
 
 - **Nazwa**: Nie można zmienić nazwy domyślnych zasad ochrony przed wyłudzaniem informacji. Po utworzeniu niestandardowych zasad ochrony przed wyłudzaniem informacji nie można zmienić ich nazw w portalu Microsoft 365 Defender informacje.
 
@@ -85,13 +85,13 @@ Poniższe ustawienia zasad są dostępne w zasadach ochrony przed wyłudzaniem i
     - **Domeny**
 
   > [!NOTE]
-  > W niestandardowych zasadach ochrony przed wyłudzaniem informacji w celu zidentyfikowania adresatów wiadomości, których dotyczą te zasady, wymagane jest  co najmniej jedno zaznaczenie ustawień Użytkownicy **,** grupy i <u>domeny</u>. Zasady ochrony przed wyłudzaniem informacji w programie Defender Office 365 [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) mają również ustawienia personifikacji, w których można określić adresy e-mail poszczególnych nadawców lub domeny nadawcy, które będą otrzymywać ochronę przed personifikacji zgodnie z opisem w dalszej części tego artykułu.<u></u>
+  > W niestandardowych zasadach ochrony przed wyłudzaniem informacji w celu zidentyfikowania adresatów wiadomości, których dotyczą te zasady, wymagane jest  co najmniej jedno zaznaczenie ustawień Użytkownicy **,** grupy i <u>domeny</u>. Zasady ochrony przed wyłudzaniem informacji w programie [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Ochrona usługi Office 365 w usłudze Defender także ustawienia personifikacji, gdzie można określić adresy e-mail poszczególnych nadawców lub domeny nadawców, które będą otrzymywać ochronę przed personifikacji zgodnie z opisem w dalszej części tego artykułu.<u></u>
 
 ## <a name="spoof-settings"></a>Spoof settings
 
 Spoofing (Fałszowanie) jest wyświetlany w sytuacji, gdy adres Nadawca w wiadomości e-mail (adres nadawcy wyświetlany w klientach poczty e-mail) nie jest taki, jak domena źródła poczty e-mail. Aby uzyskać więcej informacji na temat fałszowania, zobacz Ochrona [przed fałszowaniem w programie Microsoft 365](anti-spoofing-protection.md).
 
-Poniższe ustawienia fałszowania są dostępne w zasadach ochrony przed wyłudzaniem informacji w programach EOP i Defender for Office 365:
+Poniższe ustawienia fałszowania są dostępne w zasadach ochrony przed wyłudzaniem informacji w u Ochrona usługi Office 365 w usłudze Defender:
 
 - **Włącz analizę fałszowania**: Pozwala włączać lub wyłączać funkcję fałszowania. Zalecamy pozostawienie jej włączonej.
 
@@ -118,7 +118,7 @@ Poniższe ustawienia fałszowania są dostępne w zasadach ochrony przed wyłudz
 
 ### <a name="unauthenticated-sender"></a>Nieuwierzyta nadawca
 
-Powiadomienia nieuwierzytanych nadawców są częścią ustawień [](#spoof-settings) fałszowania dostępnych w zasadach ochrony przed wyłudzaniem informacji w programach EOP i Defender Office 365 jak opisano w poprzedniej sekcji. Następujące ustawienia są dostępne tylko wtedy, gdy jest włączona sfałszowana inteligencja:
+Powiadomienia nieuwierzytanych nadawców są częścią ustawień [](#spoof-settings) fałszowania dostępnych w zasadach ochrony przed wyłudzaniem informacji w uchcie EOP i w Ochrona usługi Office 365 w usłudze Defender zgodnie z opisem w poprzedniej sekcji. Następujące ustawienia są dostępne tylko wtedy, gdy jest włączona sfałszowana inteligencja:
 
 - **Pokaż (?)** dla nieuwierzytanych nadawców w celu fałszowania: To powiadomienie powoduje dodanie znaku zapytania do zdjęcia nadawcy w polu Od, jeśli wiadomość nie przejdzie testów SPF lub DKIM i wiadomość nie przejdzie uwierzytelniania DMARC lub [złożonego](email-validation-and-authentication.md#composite-authentication). Gdy to ustawienie jest wyłączone, znak zapytania nie jest dodawany do fotografii nadawcy.
 
@@ -135,14 +135,14 @@ Aby uzyskać więcej informacji, zobacz [Identyfikowanie podejrzanych wiadomośc
 
 ## <a name="first-contact-safety-tip"></a>Pierwszy kontakt porada dotycząca bezpieczeństwa
 
-Ustawienia **Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa** są dostępne w usługach EOP i Defender dla Office 365 i nie są zależne od ustawień ochrony przed fałszerami i personifikacji. Przedstawione porada dotycząca bezpieczeństwa są wyświetlane adresatom w następujących scenariuszach:
+Ustawienia **Pokaż pierwszy kontakt porada dotycząca bezpieczeństwa** są dostępne w usługach EOP i Ochrona usługi Office 365 w usłudze Defender organizacji i nie są zależne od ustawień ochrony przed fałszerami i personifikacji. Przedstawione porada dotycząca bezpieczeństwa są wyświetlane adresatom w następujących scenariuszach:
 
 - Gdy po raz pierwszy otrzyma wiadomość od nadawcy
 - Nie są one często wysyłane do nadawcy.
 
-![Pierwszy kontakt porada dotycząca bezpieczeństwa wiadomości z jednym adresatem.](../../media/safety-tip-first-contact-one-recipient.png)
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="Pierwszy kontakt porada dotycząca bezpieczeństwa wiadomości z jednym adresatem" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-![Pierwszy kontakt porada dotycząca bezpieczeństwa wiadomości z wieloma adresatami.](../../media/safety-tip-first-contact-multiple-recipients.png)
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Pierwszy kontakt porada dotycząca bezpieczeństwa wiadomości z wieloma adresatami" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 Ta funkcja zapewnia dodatkową warstwę ochrony przed potencjalnymi atakami personifikacji, dlatego zalecamy jej włączenie.
 
@@ -151,14 +151,14 @@ Pierwszy kontakt porada dotycząca bezpieczeństwa zastępuje również konieczn
 > [!NOTE]
 > Jeśli wiadomość ma wielu adresatów, to czy porada jest wyświetlana i dla kogo jest oparty model dla większości. Jeśli większość adresatów nigdy lub nie otrzymuje wiadomości od tego nadawcy, adresaci, których to dotyczy, otrzymają poradę Niektórzy adresaci, którzy otrzymali **tę wiadomość.** Jeśli obawiasz się, że takie zachowanie ujawnia nawyki dotyczące komunikacji jednego adresata drugiemu, nie włączaj pierwszego kontaktu porada dotycząca bezpieczeństwa i zamiast tego używaj reguł przepływu poczty e-mail.
 
-## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Ustawienia wyłączności w zasadach ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365
+## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Ustawienia wyłączności w zasadach ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-W tej sekcji opisano ustawienia zasad, które są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w programie Defender for Office 365.
+W tej sekcji opisano ustawienia zasad, które są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender.
 
 > [!NOTE]
-> Domyślne zasady ochrony przed wyłudzaniem informacji w programie Defender Office 365 zapewniają ochronę przed [fałszerami](set-up-anti-phishing-policies.md#spoof-settings) i analizą skrzynek pocztowych dla wszystkich adresatów. Jednak inne dostępne funkcje ochrony [personifikacji](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) i ustawienia [zaawansowane](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) nie są konfigurowane ani włączone w zasadach domyślnych. Aby włączyć wszystkie funkcje ochrony, zmodyfikuj domyślne zasady ochrony przed wyłudzaniem informacji lub utwórz dodatkowe zasady ochrony przed wyłudzaniem informacji.
+> Domyślne zasady ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender zapewniają ochronę przed [fałszerami](set-up-anti-phishing-policies.md#spoof-settings) i analizą skrzynek pocztowych dla wszystkich adresatów. Jednak inne dostępne funkcje ochrony [personifikacji](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) i ustawienia [zaawansowane](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) nie są konfigurowane ani włączone w zasadach domyślnych. Aby włączyć wszystkie funkcje ochrony, zmodyfikuj domyślne zasady ochrony przed wyłudzaniem informacji lub utwórz dodatkowe zasady ochrony przed wyłudzaniem informacji.
 
-### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365
+### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Ustawienia personifikacji w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 Personifikacja to miejsce, w którym nadawca lub domena poczty e-mail nadawcy w wiadomości wygląda podobnie do rzeczywistego nadawcy lub domeny:
 
@@ -170,7 +170,7 @@ Personifikacja to miejsce, w którym nadawca lub domena poczty e-mail nadawcy w 
 
 Spersonifikowana domena może być w inny sposób uznawana za legalną (zarejestrowaną domenę, skonfigurowane rekordy uwierzytelniania poczty e-mail itp.), z wyjątkiem sytuacji, gdy jej celem jest nakłonienie adresatów.
 
-Poniższe ustawienia personifikacji są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w programie Defender dla Office 365:
+Następujące ustawienia personifikacji są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender:
 
 - **Włączanie ochrony dla użytkowników**: zapobiega personifikacji określonych wewnętrznych lub zewnętrznych adresów e-mail **jako nadawców wiadomości**. Na przykład otrzymasz wiadomość e-mail od wiceprezesa ds. firmy z prośbą o wysłanie jej pewnych wewnętrznych informacji o firmie. Czy możesz to zrobić? Wiele osób przysłało odpowiedź bez przemyślenia.
 
@@ -229,13 +229,13 @@ Poniższe ustawienia personifikacji są dostępne tylko w zasadach ochrony przed
 
 - **Dodaj zaufanych nadawców i domeny**: Wyjątki od ustawień ochrony personifikacji. Wiadomości od określonych nadawców i domen nadawcy nigdy nie są klasyfikowane przez zasady jako ataki oparte na personifikacji. Innymi słowy, akcja dla chronionych nadawców, chronionych domen lub ochrony skrzynki pocztowej nie jest stosowana do tych zaufanych nadawców ani domen nadawców. Maksymalne ograniczenie dla tych list to 1024 wpisy.
 
-### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365
+### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Zaawansowane progi wyłudzania informacji w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-Poniższe zaawansowane progi wyłudzania informacji są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w programie Defender for Office 365. Te progi sterują wrażliwością na stosowanie modeli uczenia maszynowego do wiadomości w celu określenia werdyktu wyłudzania informacji:
+Poniższe zaawansowane progi wyłudzania informacji są dostępne tylko w zasadach ochrony przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender. Te progi sterują wrażliwością na stosowanie modeli uczenia maszynowego do wiadomości w celu określenia werdyktu wyłudzania informacji:
 
 - **1 — Standardowe**: jest to wartość domyślna. Ważność akcji podejmowanej w  związku z wiadomością zależy od stopnia pewności, że wiadomość jest próbą wyłudzenia informacji (niska, średnia, wysoka lub bardzo wysoka pewność). Na przykład w wiadomościach zidentyfikowanych jako próby wyłudzenia informacji o bardzo wysokim stopniu ufności stosowane są najbardziej poważne akcje, natomiast w wiadomościach oznaczonych jako próby wyłudzenia informacji o niskim stopniu pewności stosowane są mniej poważne akcje.
 - **2 . Agresywne**: Wiadomości zidentyfikowane jako próby wyłudzenia informacji z dużą pewnością są traktowane tak, jakby zostały zidentyfikowane z bardzo dużą pewnością siebie.
 - **3 — Bardziej** agresywne: Wiadomości zidentyfikowane jako próby wyłudzenia informacji z średnią lub wysokim stopniem ufności są traktowane tak, jakby zostały zidentyfikowane z bardzo wysokim stopniem ufności.
 - **4 —** Najbardziej agresywne: Wiadomości zidentyfikowane jako próby wyłudzenia informacji z niskim, średnim lub wysokim stopniem ufności są traktowane tak, jakby zostały zidentyfikowane z bardzo dużą pewnością.
 
-W przypadku zwiększenia tego ustawienia prawdopodobieństwo wyników fałszywie dodatnich (oznaczanych jako złe) wzrasta. Aby uzyskać informacje na temat zalecanych ustawień, zobacz zasady ochrony przed wyłudzaniem informacji w programie [Microsoft Defender Office 365 ustawienia.](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)
+W przypadku zwiększenia tego ustawienia prawdopodobieństwo wyników fałszywie dodatnich (oznaczanych jako złe) wzrasta. Aby uzyskać informacje na temat zalecanych ustawień, zobacz zasady [ochrony przed wyłudzaniem informacji Ochrona usługi Office 365 w usłudze Microsoft Defender sieci.](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)

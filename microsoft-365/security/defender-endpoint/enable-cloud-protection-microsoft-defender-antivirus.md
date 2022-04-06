@@ -15,18 +15,18 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 95abb603983ea16192d93b12757cde6fba026047
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 78f992e20ee0c0c2505777295ca3ba34a5c4ea66
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63015944"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470642"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Włączanie ochrony chmury w aplikacji Program antywirusowy Microsoft Defender
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Program antywirusowy Microsoft Defender
 
 [Ochrona chmury w Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) zapewnia dokładną, inteligentną ochronę w czasie rzeczywistym. Ochrona chmury powinna być domyślnie włączona; można jednak skonfigurować ochronę chmury odpowiednio do potrzeb organizacji.
@@ -35,8 +35,8 @@ ms.locfileid: "63015944"
 
 Ochronę Program antywirusowy Microsoft Defender w chmurze możesz włączyć lub wyłączyć, używając jednej z kilku metod:
 
-- Microsoft Endpoint Manager, które obejmują Microsoft Intune i Menedżer konfiguracji
-- zasady grupy
+- Microsoft Endpoint Manager, które obejmują Microsoft Intune i Configuration Manager
+- Zasady grupy
 - Polecenia cmdlet programu PowerShell
 
 Możesz również włączyć lub wyłączyć ochronę w chmurze dla poszczególnych punktów końcowych przy Zabezpieczenia Windows aplikacji. 
@@ -44,9 +44,9 @@ Możesz również włączyć lub wyłączyć ochronę w chmurze dla poszczególn
 Aby uzyskać więcej informacji na temat określonych wymagań dotyczących łączności sieciowej w celu zapewnienia, że punkty końcowe mogą łączyć się z usługą ochrony w chmurze, zobacz Konfigurowanie i weryfikowanie [połączeń sieciowych](configure-network-connections-microsoft-defender-antivirus.md).
 
 > [!NOTE]
-> W Windows 10 i Windows 11 nie ma żadnej różnicy między opcjami raportowania podstawowego i zaawansowanego opisanymi w tym artykule.  Jest to starsza różnica i wybranie jednego z tych ustawień spowoduje taki sam poziom ochrony w chmurze. Nie ma żadnej różnicy w typie ani ilości udostępnianych informacji. Aby uzyskać więcej informacji na temat tego, co zbieramy, zobacz [Oświadczenie o ochronie prywatności firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=521839).
+> W Windows 10 i Windows 11 nie ma żadnej różnicy między opcjami raportowania podstawowego i  zaawansowanego  opisanymi w tym artykule. Jest to starsza różnica i wybranie jednego z tych ustawień spowoduje taki sam poziom ochrony w chmurze. Nie ma żadnej różnicy w typie ani ilości udostępnianych informacji. Aby uzyskać więcej informacji na temat tego, co zbieramy, zobacz [Oświadczenie o ochronie prywatności firmy Microsoft](https://go.microsoft.com/fwlink/?linkid=521839).
 
-## <a name="use-intune-to-turn-on-cloud-protection"></a>Włączanie ochrony w chmurze za pomocą usługi Intune
+## <a name="use-intune-to-turn-on-cloud-protection"></a>Włączanie Intune w chmurze za pomocą usługi Intune
 
 1. Przejdź do Microsoft Endpoint Manager administracyjnego ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) i zaloguj się.
 
@@ -60,7 +60,7 @@ Aby uzyskać więcej informacji na temat określonych wymagań dotyczących łą
 
 6. Z listy **rozwijanej Monituj użytkowników przed przykładowym przesłaniem** wybierz pozycję **Automatycznie wyślij wszystkie dane**.
 
-Aby uzyskać więcej informacji o profilach urządzeń w usłudze Intune, w tym o tworzeniu i konfigurowaniu ich ustawień, zobacz Co to są Microsoft Intune [profilów urządzeń?](/intune/device-profiles)
+Aby uzyskać więcej informacji Intune profilów urządzeń, w tym tworzyć i konfigurować ich ustawienia, zobacz Co to są Microsoft Intune [profilów urządzeń?](/intune/device-profiles)
 
 ## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-protection"></a>Włączanie Microsoft Endpoint Manager w chmurze za pomocą aplikacji Microsoft Microsoft Endpoint Manager
 
@@ -70,7 +70,7 @@ Aby uzyskać więcej informacji o profilach urządzeń w usłudze Intune, w tym 
 
 3. Wybierz profil antywirusowy. (Jeśli nie masz jeszcze profilu lub chcesz utworzyć nowy profil, zobacz Konfigurowanie ustawień ograniczeń urządzeń w aplikacji [Microsoft Intune](/intune/device-restrictions-configure).
 
-4. Wybierz **pozycję Właściwości**. Następnie obok ustawień **konfiguracji wybierz** pozycję **Edytuj**.
+4. Wybierz polecenie **Właściwości**. Następnie obok ustawień **konfiguracji wybierz** pozycję **Edytuj**.
 
 5. **Rozwiń pozycję Ochrona** w chmurze, a następnie na liście **Poziom ochrony w** chmurze wybierz jedną z następujących opcji:
    - **Wysoka**: stosuje wysoki poziom wykrywania.
@@ -85,7 +85,7 @@ Aby uzyskać więcej informacji na temat Microsoft Endpoint Configuration Manage
 
 1. Na zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-2. W zasady grupy **zarządzania przejdź** do **konfiguracja komputera**.
+2. W **zasady grupy zarządzania przejdź** do **konfiguracja komputera**.
 
 3. Wybierz **pozycję Szablony administracyjne**.
 
@@ -109,7 +109,7 @@ Aby uzyskać więcej informacji na temat Microsoft Endpoint Configuration Manage
 
    >[!NOTE]
    > Opcja **Wyślij bezpieczne próbki** (1) oznacza, że większość próbek zostanie wysłana automatycznie. Pliki, które mogą zawierać informacje osobiste, nadal będą wymagały dodatkowego potwierdzenia.
-   > Ustawienie opcji Zawsze **monituj** (0) spowoduje obniżenie stanu ochrony urządzenia. Ustawienie wartości **Nigdy nie wysyłaj** (2) oznacza, że funkcja Blokuj od pierwszego rzutu [w programie](configure-block-at-first-sight-microsoft-defender-antivirus.md) Microsoft Defender dla punktu końcowego nie będzie działać.
+   > Ustawienie opcji Zawsze **monituj** (0) spowoduje obniżenie stanu ochrony urządzenia. Ustawienie wartości **Nigdy nie wysyłaj** (2) oznacza, że [](configure-block-at-first-sight-microsoft-defender-antivirus.md) funkcja blokuj po pierwszym Ochrona punktu końcowego w usłudze Microsoft Defender nie będzie działać.
 
 7. Wybierz przycisk **OK**.
 
@@ -126,7 +126,7 @@ Aby uzyskać więcej informacji na temat używania programu PowerShell z program
 
 > [!IMPORTANT]
 > Możesz ustawić **wartość -SubmitSamplesConsent na** `SendSafeSamples` (ustawienie domyślne, zalecane) `NeverSend`lub `AlwaysPrompt`. To `SendSafeSamples` ustawienie oznacza, że większość próbek zostanie wysłana automatycznie. Pliki, które mogą zawierać informacje osobiste, będą zawierać monit o kontynuowanie i będą wymagały potwierdzenia.
-> Ustawienia `NeverSend` obniżą `AlwaysPrompt` poziom ochrony urządzenia. Ponadto to ustawienie `NeverSend` oznacza, że funkcja Blokuj [na pierwszy rzut](configure-block-at-first-sight-microsoft-defender-antivirus.md) oka programu Microsoft Defender dla punktu końcowego nie będzie działać.
+> Ustawienia `NeverSend` obniżą `AlwaysPrompt` poziom ochrony urządzenia. Ponadto ustawienie to `NeverSend` oznacza, że funkcja [](configure-block-at-first-sight-microsoft-defender-antivirus.md) Blokuj po pierwszym Ochrona punktu końcowego w usłudze Microsoft Defender nie będzie działać.
 
 ## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-protection"></a>Włączanie Windows ochrony w chmurze za pomocą instrukcji zarządzania danymi (WMI)
 
@@ -142,16 +142,18 @@ Aby uzyskać więcej informacji na temat dozwolonych parametrów, zobacz Windows
 ## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Włączanie ochrony chmury dla poszczególnych klientów za pomocą Zabezpieczenia Windows klienta
 
 > [!NOTE]
-> Jeśli dla ustawienia Skonfiguruj lokalne zastępowanie ustawień raportowania usługi **Microsoft MAPS** zasady grupy jest ustawiona wartość **Wyłączone, ustawienie** ochrony oparte na chmurze w programie Windows Ustawienia będzie wyszatywne i niedostępne. Zmiany wprowadzone za pośrednictwem zasady grupy obiekt musi najpierw zostać wdrożony w poszczególnych punktach końcowych, aby ustawienie było aktualizowane w Windows Ustawienia.
+> Jeśli dla ustawienia Skonfiguruj lokalne zastępowanie ustawień raportowania usługi **Microsoft MAPS** zasady grupy ustawiono wartość **Wyłączone, ustawienie** ochrony oparte  na chmurze w programie Windows Ustawienia będzie wyszatywne i niedostępne. Zmiany wprowadzone za pośrednictwem obiektu zasady grupy muszą najpierw zostać wdrożone w poszczególnych punktach końcowych, aby ustawienie było aktualizowane w Windows Ustawienia.
 
 1. Otwórz aplikację Zabezpieczenia Windows, wybierając ikonę tarczy na pasku zadań lub wyszukując w menu **Start Zabezpieczenia Windows.**
 
 2. Wybierz **kafelek Ochrona przed &** przed zagrożeniami (lub ikonę tarczy na lewym pasku menu), a następnie w obszarze Zarządzanie  ustawieniami **wybierz & ustawienia ochrony przed zagrożeniami**.
 
-3. Upewnij się **, że funkcja Ochrona w chmurze** **i Automatyczne przesyłanie próbki** są przełączone do **włączoną**.
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Ustawienia ochrony przed & wirusami" lightbox="../../media/wdav-protection-settings-wdsc.png":::
+
+3. Upewnij się **, że funkcja Ochrona w chmurze** **i Automatyczne przesyłanie próbek** są przełączone na **włączoną**.
 
    > [!NOTE]
-   > Jeśli automatyczne przesyłanie próbek zostało skonfigurowane z zasady grupy, ustawienie będzie wyszańone i niedostępne.
+   > Jeśli automatyczne przesyłanie próbek zostało skonfigurowane z programem zasady grupy, ustawienie będzie wyszańone i niedostępne.
 
 ## <a name="see-also"></a>Zobacz też
 

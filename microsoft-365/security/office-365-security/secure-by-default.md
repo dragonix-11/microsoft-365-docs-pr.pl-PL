@@ -1,5 +1,5 @@
 ---
-title: Domyślnie bezpieczne w aplikacji Office 365
+title: Domyślnie zabezpieczanie w Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,70 +14,70 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Dowiedz się więcej o domyślnym ustawieniu zabezpieczeń w u Exchange Online Protection (EOP)
+description: Dowiedz się więcej o domyślnym ustawieniu zabezpieczeń w Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 59f29b0e923bdeb7481a64fb9ba1c3890e2b1369
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 09395775cc5ecbd420dc7197664401c01c24d6c3
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775505"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664221"
 ---
-# <a name="secure-by-default-in-office-365"></a>Domyślnie bezpieczne w aplikacji Office 365
+# <a name="secure-by-default-in-office-365"></a>Domyślnie zabezpieczanie w Office 365
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-"Domyślnie bezpieczne" to termin używany do definiowania najbezpieczniejszych ustawień domyślnych.
+"Domyślnie bezpieczne" to termin używany do definiowania ustawień domyślnych, które są najbezpieczniejsze, jak to możliwe.
 
-Jednak zabezpieczenia muszą być zrównoważone pod względami produktywności. Może to obejmować równoważenie na różnych platformach:
+Jednak bezpieczeństwo musi być zrównoważone z wydajnością. Może to obejmować równoważenie między:
 
-- **Użyteczność**: Ustawienia nie powinny być schowek w sposób zwiększający produktywność użytkowników.
+- **Użyteczność**: Ustawienia nie powinny stać na drodze do produktywności użytkowników.
 - **Ryzyko**: Zabezpieczenia mogą blokować ważne działania.
-- **Starsze ustawienia**: Niektóre konfiguracje starszych produktów i funkcji mogą wymagać obsługi ze względów biznesowych, nawet jeśli nowe, nowoczesne ustawienia zostały ulepszone.
+- **Starsze ustawienia**: Niektóre konfiguracje starszych produktów i funkcji mogą wymagać konserwacji ze względów biznesowych, nawet jeśli nowe, nowoczesne ustawienia zostaną ulepszone.
 
-Microsoft 365, w których skrzynki pocztowe są Exchange Online, są chronione przez Exchange Online Protection (EOP). Ta ochrona obejmuje:
+Microsoft 365 organizacje ze skrzynkami pocztowymi w Exchange Online są chronione przez Exchange Online Protection (EOP). Ta ochrona obejmuje:
 
-- Wiadomość e-mail z podejrzanym złośliwym oprogramowaniem zostanie automatycznie poddana kwarantannie. Informacja o tym, czy adresaci są powiadamiani o wiadomościach poddanych kwarantannie złośliwego oprogramowania, jest kontrolowana przez zasady kwarantanny i ustawienia w zasadach ochrony przed złośliwym oprogramowaniem. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w uchcie EOP](configure-anti-malware-policies.md).
-- Wiadomości e-mail zidentyfikowane jako próby wyłudzenia dużej pewności będą obsługiwane zgodnie z działaniem zasad ochrony przed spamem. Zobacz [Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md).
+- Wiadomość e-mail z podejrzeniem złośliwego oprogramowania zostanie automatycznie poddana kwarantannie. To, czy adresaci są powiadamiani o komunikatach o złośliwym oprogramowaniu poddanym kwarantannie, jest kontrolowane przez zasady kwarantanny i ustawienia zasad ochrony przed złośliwym oprogramowaniem. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem w ramach EOP](configure-anti-malware-policies.md).
+- Wiadomość e-mail zidentyfikowana jako wyłudzająca informacje o wysokim poziomie zaufania będzie obsługiwana zgodnie z akcją zasad ochrony przed spamem. Zobacz [Konfigurowanie zasad ochrony przed spamem w ramach EOP](configure-your-spam-filter-policies.md).
 
-Aby uzyskać więcej informacji na temat programu EOP, Exchange Online Protection [omówienie](exchange-online-protection-overview.md).
+Aby uzyskać więcej informacji na temat EOP, zobacz [omówienie Exchange Online Protection](exchange-online-protection-overview.md).
 
-Firma Microsoft chce, aby klienci domyślnie zapewniali bezpieczeństwo, dlatego niektóre zastąpień dzierżaw nie są stosowane do złośliwego oprogramowania ani do wyłudzania informacji o wysokiej pewności. Oto niektóre z tych zastąpień:
+Ponieważ firma Microsoft chce domyślnie zapewnić bezpieczeństwo naszym klientom, niektóre przesłonięcia dzierżaw nie są stosowane w przypadku złośliwego oprogramowania ani wyłudzania informacji o wysokim poziomie zaufania. Te przesłonięcia obejmują:
 
-- Listy dozwolonych nadawców lub dozwolonych domen (zasady ochrony przed spamem)
-- Outlook Sejf nadawców
-- Lista zezwalań adresów IP (filtrowanie połączeń)
-- Exchange przepływu poczty e-mail (nazywane także regułami transportu)
+- Listy dozwolonych nadawców lub listy dozwolonych domen (zasady ochrony przed spamem)
+- nadawcy Outlook Sejf
+- Lista dozwolonych adresów IP (filtrowanie połączeń)
+- Exchange reguł przepływu poczty (znanej również jako reguły transportu)
 
-Więcej informacji na temat tych zastępować można znaleźć w artykule Tworzenie [list bezpiecznych nadawców](create-safe-sender-lists-in-office-365.md).
+Więcej informacji na temat tych przesłoń można znaleźć na [stronie Tworzenie list bezpiecznych nadawców](create-safe-sender-lists-in-office-365.md).
 
 > [!NOTE]
-> Akcja Przenieś wiadomość do folderu Wiadomości-śmieci została wycofana w przypadku werdyktu wiadomości e-mail służącej do wyłudzania informacji (High **confidence phishing email**) w zasadach ochrony przed spamem usługi EOP. Zasady ochrony przed spamem, które używają tej akcji do wyłudzania informacji o dużej pewności, zostaną przekonwertowane na wiadomości **kwarantanny**. Akcja **Przekieruj wiadomość na adres e-mail** w celu wyłudzania informacji o wysokiej pewności pozostaje nienaruszona.
+> Wycofaliśmy akcję **Przenoszenie wiadomości do folderu Wiadomości-śmieci** dla werdyktu **wiadomości e-mail o wysokim poziomie ufności** w zasadach ochrony przed spamem w ramach EOP. Zasady ochrony przed spamem, które używają tej akcji do wyłudzania informacji o wysokim poziomie zaufania, zostaną przekonwertowane na **komunikaty kwarantanny**. Akcja **Przekierowanie wiadomości do adresu e-mail** w przypadku wiadomości wyłudzających informacje o wysokim poziomie ufności nie ma wpływu.
 
-Opcja Bezpieczne domyślnie nie jest ustawieniem, które można włączać i wyłączać, ale filtrowanie działa poza polem, aby zachować potencjalnie niebezpieczne lub niechciane wiadomości ze skrzynek pocztowych. Wiadomości służące do wyłudzania informacji o wysokim poziomie pewności i złośliwego oprogramowania należy poddać kwarantannie. Domyślnie tylko administratorzy mogą zarządzać wiadomościami poddanymi kwarantannie jako złośliwe oprogramowanie lub wyłudzaniem informacji o wysokiej pewności, a także mogą zgłaszać wynik fałszywie dodatni firmie Microsoft. Aby uzyskać więcej informacji, zobacz [Zarządzanie poddatymi wiadomościami i plikami jako administrator w u usługi EOP](manage-quarantined-messages-and-files.md).
+Ustawienie Bezpieczne domyślnie nie jest ustawieniem, które można włączyć lub wyłączyć, ale jest to sposób, w jaki nasze filtrowanie działa po wyczyszczeniu, aby zachować potencjalnie niebezpieczne lub niechciane wiadomości poza skrzynkami pocztowymi. Złośliwe oprogramowanie i wiadomości wyłudzające informacje o wysokim poziomie zaufania powinny zostać poddane kwarantannie. Domyślnie tylko administratorzy mogą zarządzać komunikatami, które zostały poddane kwarantannie jako złośliwe oprogramowanie lub wyłudzanie informacji o wysokim poziomie zaufania, a także mogą zgłaszać fałszywe alarmy firmie Microsoft stamtąd. Aby uzyskać więcej informacji, zobacz [Manage quarantined messages and files as an admin in EOP (Zarządzanie komunikatami i plikami poddanymi kwarantannie jako administrator w ramach EOP](manage-quarantined-messages-and-files.md)).
 
-## <a name="more-on-why-were-doing-this"></a>Więcej informacji o tym, dlaczego to robisz
+## <a name="more-on-why-were-doing-this"></a>Więcej informacji na temat tego, dlaczego to robimy
 
-Istotą bezpieczeństwa domyślnie jest: to samo dzieje się w przypadku wiadomości, która zostałaby zrobiona, jeśli wiadomość była złośliwa, nawet jeśli skonfigurowano wyjątek, który pozwala na dostarczyć wiadomość. Jest to takie samo podejście, które zawsze było używane w przypadku złośliwego oprogramowania i teraz rozszerzamy to samo zachowanie na wiadomości służące do wyłudzania informacji o wysokiej pewności.
+Domyślnym duchem bezpieczeństwa jest: podejmujemy tę samą akcję względem komunikatu, który należy wykonać, jeśli wiadomo, że komunikat jest złośliwy, nawet jeśli skonfigurowany wyjątek w przeciwnym razie zezwoli na dostarczenie komunikatu. Jest to takie samo podejście, które zawsze stosowaliśmy w przypadku złośliwego oprogramowania, a teraz rozszerzamy to samo zachowanie na wiadomości wyłudzające informacje o wysokim poziomie zaufania.
 
-Nasze dane wskazują, że użytkownik jest 30 razy bardziej prawdopodobny, aby kliknąć złośliwy link w wiadomościach w folderze Wiadomości-śmieci, a nie w kwarantannie. Nasze dane również wskazują, że wskaźnik fałszywie dodatni (oznaczane jako złe wiadomości) dla wiadomości wyłudzających informacje o wysokiej pewności jest bardzo niski, a administratorzy mogą rozstrzygnieć wszelkie wyniki fałszywie dodatnie przy użyciu przesyłania administratora.
+Nasze dane wskazują, że użytkownik jest 30 razy bardziej skłonny do kliknięcia złośliwego linku w wiadomościach w folderze Wiadomości-śmieci w porównaniu z kwarantanną. Nasze dane wskazują również, że wskaźnik fałszywie dodatni (dobre komunikaty oznaczone jako złe) dla wiadomości wyłudzających informacje o wysokim poziomie pewności jest bardzo niski, a administratorzy mogą rozpoznać wszelkie fałszywie dodatnie dane przy użyciu przesłanych przez administratorów.
 
-Ustaliliśmy również, że listy dozwolonych nadawców i domen w zasadach ochrony przed spamem oraz listy dozwolonych nadawców Sejf w programie Outlook były zbyt szerokie i powodowały więcej uszkodzenia niż dobre.
+Ustaliliśmy również, że dozwolony nadawca i listy dozwolonych domen w zasadach ochrony przed spamem i Sejf nadawców w Outlook są zbyt szerokie i wyrządzają więcej szkody niż pożytku.
 
-Aby to zrobić w inny sposób: jako usługa zabezpieczeń pracujemy w Twoim imieniu, aby zapobiec naruszenia bezpieczeństwa Twoich użytkowników.
+Mówiąc inaczej: jako usługa zabezpieczeń działamy w Twoim imieniu, aby uniemożliwić użytkownikom naruszenie zabezpieczeń.
 
 ## <a name="exceptions"></a>Wyjątki
 
-Zastępowanie należy rozważyć tylko w następujących scenariuszach:
+Należy rozważyć użycie przesłonięcia tylko w następujących scenariuszach:
 
-- Symulacyjne próby wyłudzania informacji: Symulowane ataki mogą ułatwić zidentyfikowanie użytkowników, którzy mogą być podatni na ataki, zanim prawdziwe ataki będą mieć wpływ na organizację. Aby zapobiec filtrowaniu wiadomości symulacyjnych wyłudzania informacji, zobacz Konfigurowanie prób wyłudzania informacji z innych firm [w zaawansowanych zasadach dostarczania](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
-- Skrzynki pocztowe zabezpieczeń/usługi SecOps: dedykowane skrzynki pocztowe używane przez zespoły zabezpieczeń do odfiltrowywowanych wiadomości (zarówno tych dobrych, jak i złych). Teams następnie sprawdzić, czy zawierają one złośliwą zawartość. Aby uzyskać więcej informacji, [zobacz Konfigurowanie skrzynek pocztowych usługi SecOps w zaawansowanych zasadach dostarczania](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
-- Filtry innych firm: Domyślnie bezpieczne ma zastosowanie tylko wtedy, gdy dla rekordu MX domeny jest ustawiona wartość Exchange Online Protection (contoso.mail.protection.outlook.com). Jeśli jest ustawiona na inną usługę lub urządzenie, można domyślnie zastąpić ustawienie Bezpieczne regułą transportu, aby [](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) pominąć wszelkie filtrowanie spamu. Po wykryciu przez firmę Microsoft wiadomości z regułą "wysoka ufność" i w miejscu te wiadomości nadal odbierają wiadomości w Skrzynce odbiorczej. 
-- Wyniki fałszywie dodatnie: możesz zezwolić tymczasowo na niektóre wiadomości, które są nadal analizowane przez firmę Microsoft za pośrednictwem [przesyłania przez administratora](admin-submission.md). Tak jak w przypadku wszystkich zastępować, zaleca się ich tymczasowe zastępowanie.
+- Symulacje wyłudzania informacji: symulowane ataki mogą pomóc w identyfikacji narażonych użytkowników, zanim rzeczywisty atak wpłynie na organizację. Aby zapobiec filtrowaniu komunikatów symulacji wyłudzania informacji, zobacz [Konfigurowanie symulacji wyłudzania informacji innych firm w zaawansowanych zasadach dostarczania](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
+- Skrzynki pocztowe zabezpieczeń/SecOps: dedykowane skrzynki pocztowe używane przez zespoły zabezpieczeń do pobierania niefiltrowanych wiadomości (zarówno dobrych, jak i złych). Teams następnie sprawdzić, czy zawierają złośliwą zawartość. Aby uzyskać więcej informacji, zobacz [Konfigurowanie skrzynek pocztowych SecOps w zaawansowanych zasadach dostarczania](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+- Filtry innych firm: Zabezpieczenia domyślnie mają zastosowanie tylko wtedy, gdy rekord MX dla domeny jest ustawiony na Exchange Online Protection (contoso.mail.protection.outlook.com). Jeśli jest ona ustawiona na inną usługę lub urządzenie, można domyślnie zastąpić funkcję Secure [regułą transportu](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) , aby pominąć wszystkie filtrowanie spamu. Gdy firma Microsoft wykryje komunikaty jako phish o wysokim poziomie ufności z tą regułą, nadal są dostarczane do skrzynki odbiorczej. 
+- Wyniki fałszywie dodatnie: możesz tymczasowo zezwolić na niektóre komunikaty, które są nadal analizowane przez [firmę Microsoft za pośrednictwem przesyłania przez administratora](admin-submission.md). Podobnie jak w przypadku wszystkich przesłonięcia, zaleca się, aby były tymczasowe.

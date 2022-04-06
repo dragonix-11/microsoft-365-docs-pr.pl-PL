@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: be2352ef44d8e9f7430cde39a71c7b7b1167a874
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 2535845c52285b1ce28fbe142709089778503c09
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634102"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469586"
 ---
 # <a name="web-content-filtering"></a>Filtrowanie zawartości sieci Web
 
@@ -28,7 +28,7 @@ ms.locfileid: "64634102"
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -52,7 +52,7 @@ Filtrowanie zawartości sieci Web jest dostępne w głównych przeglądarkach in
 
 Przed wypróbowaniem tej funkcji upewnij się, że są spełnione następujące wymagania:
 
-- Subskrypcja obejmuje jedną z następujących usług: Windows 10 Enterprise E5, Microsoft 365 E5, Zabezpieczenia platformy Microsoft 365 E5, Microsoft 365 E3 lub Ochrona punktu końcowego w usłudze Microsoft Defender autonomiczna. 
+- Subskrypcja obejmuje jedną z następujących usług: Windows 10 Enterprise E5, Microsoft 365 E5, Zabezpieczenia platformy Microsoft 365 E5, Microsoft 365 E3 + Zabezpieczenia platformy Microsoft 365 E5 dodatku lub licencji Ochrona punktu końcowego w usłudze Microsoft Defender autonomicznej. 
 
 - Masz dostęp do portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender sieci.</a>
 
@@ -203,9 +203,9 @@ Zostanie otwarty panel, w którym można wybrać priorytet, i dodać więcej szc
 
 ### <a name="url-category-lookup"></a>Odnośnik kategorii adresu URL
 
-Aby ustalić kategorię witryny internetowej, możesz użyć funkcji wyszukiwania adresów URL dostępnej w portalu Microsoft 365 Defender sieci Web (<https://security.microsoft.com>) w obszarze **Wyszukiwanie punktów końcowych**\>. W wynikach wyszukiwania adresu URL kategoria filtrowania zawartości sieci Web jest wyświetlana w obszarze **Szczegóły adresu URL/domeny**. Jeśli wynik kategorii nie jest wyświetlany, adres URL nie jest obecnie przypisany do istniejącej kategorii filtrowania zawartości sieci Web.
+Aby ustalić kategorię witryny internetowej, możesz użyć funkcji wyszukiwania adresów URL dostępnej w portalu Microsoft 365 Defender sieci Web (<https://security.microsoft.com>) w obszarze **Wyszukiwanie punktów końcowych**\>. W wynikach wyszukiwania adresu URL kategoria filtrowania zawartości sieci Web jest wyświetlana w obszarze **Szczegóły adresu URL/domeny**. Administratorzy mogą także sporyć o kategorię domeny bezpośrednio z tej strony, jak pokazano na poniższej ilustracji. Jeśli wynik kategorii nie jest wyświetlany, adres URL nie jest obecnie przypisany do istniejącej kategorii filtrowania zawartości sieci Web.
 
-<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
+:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="Wyniki wyszukiwania kategorii filtrowania zawartości sieci Web" lightbox="../../media/web-content-filtering-category-lookup.png":::
 
 ## <a name="web-content-filtering-cards-and-details"></a>Karty i szczegóły filtrowania zawartości sieci Web
 
@@ -256,7 +256,7 @@ Ochrona sieci obecnie nie obsługuje inspekcji SSL, co może powodować, że nie
 ## <a name="see-also"></a>Zobacz też
 
 - [Omówienie ochrony sieci Web](web-protection-overview.md)
-- [Ochrona przed zagrożeniami sieci Web](web-threat-protection.md)
-- [Monitoruj bezpieczeństwo sieci Web](web-protection-monitoring.md)
-- [Odpowiadaj na zagrożenia sieci Web](web-protection-response.md)
+- [Ochrona przed zagrożeniami internetowymi](web-threat-protection.md)
+- [Monitorowanie zabezpieczeń sieci Web](web-protection-monitoring.md)
+- [Reagowanie na zagrożenia w sieci Web](web-protection-response.md)
 - [Wymagania dotyczące ochrony sieci](web-content-filtering.md)

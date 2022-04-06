@@ -20,12 +20,12 @@ ms.custom:
 description: Użytkownicy mogą dowiedzieć się, jak wyświetlać wiadomości poddane kwarantannie i zarządzać nimi w Exchange Online Protection (EOP), które powinny zostać do nich dostarczone.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 44b1d86d441be5582b8c4b3381a383b2e03417a1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682400"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471544"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Znajdowanie i wypuszczenie wiadomości poddanych kwarantannie jako użytkownik w u kontie EOP
 
@@ -33,7 +33,7 @@ ms.locfileid: "63682400"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 W Microsoft 365 z skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacjach usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online kwarantanna zawiera potencjalnie niebezpieczne lub niechciane wiadomości. Aby uzyskać więcej informacji, zobacz [Kwarantanna w uchcie eOP](quarantine-email-messages.md).
@@ -50,12 +50,12 @@ Jako zwykły użytkownik (nie administrator) domyślne funkcje dostępne  dla Ci
 |Wyłudzanie informacji o wysokiej pewności||||
 |**Zasady ochrony przed wyłudzaniem informacji**||||
 |Ochrona przed fałszerami w UOP|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
-|Personifikacja ochrony użytkownika w programie Defender dla Office 365|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
-|Personifikowana ochrona domeny w uchcie Defender dla Office 365|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
-|Ochrona skrzynki pocztowej w uchcie Defender dla Office 365|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
+|Personifikowana ochrona użytkownika w Ochrona usługi Office 365 w usłudze Defender|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
+|Personifikowana ochrona domeny w Ochrona usługi Office 365 w usłudze Defender|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
+|Ochrona skrzynki pocztowej przed analizą w Ochrona usługi Office 365 w usłudze Defender|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|![Znacznik wyboru.](../../media/checkmark.png)|
 |**Zasady ochrony przed złośliwym oprogramowaniem**||||
 |Wiadomości e-mail z załącznikami poddanymi kwarantannie jako złośliwe oprogramowanie.||||
-|**Sejf załączników w programie Defender dla Office 365**||||
+|**Sejf załączników w programie Ochrona usługi Office 365 w usłudze Defender**||||
 |Sejf załączników, które poddasz wiadomościom e-mail ze złośliwymi załącznikami jako złośliwe oprogramowanie.||||
 |Sejf załączników do SharePoint, OneDrive i Microsoft Teams, które poddasz kwarantannie złośliwe pliki jako złośliwe oprogramowanie.||||
 |**Reguły przepływu poczty (reguły transportu)**||||
@@ -142,7 +142,7 @@ Po odnalezieniu określonej wiadomości poddanej kwarantannie zaznacz ją, aby w
 
 Po wybraniu z listy wiadomości poddanej kwarantannie w wysuwanych szczegółach są dostępne następujące informacje.
 
-![Wysuw szczegółów wiadomości poddanej kwarantannie.](../../media/quarantine-user-message-details.png)
+:::image type="content" source="../../media/quarantine-user-message-details.png" alt-text="Wysuw szczegółów wiadomości poddanej kwarantannie" lightbox="../../media/quarantine-user-message-details.png":::
 
 Po zaznaczeniu wiadomości e-mail na liście w wysuwanych okienku Szczegóły są **wyświetlane następujące szczegóły** wiadomości:
 
@@ -161,7 +161,7 @@ Aby podjąć działanie w związku z wiadomością, zobacz następną sekcję.
 > [!NOTE]
 > Aby pozostać w wysuwanych szczegółach, ale zmienić obecnie poddaną kwarantannie wiadomość, użyj strzałek w górę i w dół u góry wysuwanych.
 >
-> ![Strzałki w górę i w dół w wysuwanych szczegółach wiadomości poddanej kwarantannie.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="Strzałki w górę i w dół w wysuwanych szczegółach wiadomości poddanej kwarantannie" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-email"></a>Działania w przypadku poddanych kwarantannie wiadomości e-mail
 
@@ -170,7 +170,7 @@ Aby podjąć działanie w związku z wiadomością, zobacz następną sekcję.
 
 Po wybraniu poddaną kwarantannie wiadomości z listy w wysuwanych szczegółach są dostępne następujące akcje:
 
-![Dostępne akcje w wysuwanych szczegółach wiadomości poddanej kwarantannie.](../../media/quarantine-user-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-details-flyout-actions.png" alt-text="Dostępne akcje w wysuwanych szczegółach wiadomości poddanej kwarantannie" lightbox="../../media/quarantine-user-message-details-flyout-actions.png":::
 
 - ![Ikona zwolnienia wiadomości e-mail.](../../media/m365-cc-sc-check-mark-icon.png) **Zwolnij wiadomość e-mail**<sup>\*</sup>: Dostarcza wiadomość do skrzynki odbiorczej.
 
@@ -197,7 +197,8 @@ Jeśli nie zwolnisz lub nie usuniesz wiadomości, zostanie ona usunięta po upł
 > [!NOTE]
 > Na urządzeniach przenośnych tekst opisu nie jest dostępny na ikonach akcji.
 >
-> ![Szczegóły wiadomości poddanej kwarantannie z wyróżniona dostępnymi akcjami.](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-user-message-details-flyout-mobile-actions.png" alt-text="Szczegóły wiadomości poddanej kwarantannie z wyróżniona dostępnymi akcjami" lightbox="../../media/quarantine-user-message-details-flyout-mobile-actions.png":::
+
 >
 > Ikony w kolejności i odpowiadające im opisy są podsumowywane w poniższej tabeli:
 >
@@ -213,7 +214,7 @@ Jeśli nie zwolnisz lub nie usuniesz wiadomości, zostanie ona usunięta po upł
 
 Po zaznaczeniu wielu poddanych kwarantannie wiadomości na liście (maksymalnie 100) przez kliknięcie pustego obszaru z lewej strony pierwszej kolumny zostanie wyświetlona lista rozwijana Akcje zbiorcze, na której możesz podjąć następujące czynności:
 
-![Lista rozwijana akcji zbiorczych dla wiadomości poddanych kwarantannie.](../../media/quarantine-user-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="Lista rozwijana akcji zbiorczych dla wiadomości w kwarantannie" lightbox="../../media/quarantine-user-message-bulk-actions.png":::
 
 - ![Ikona zwolnienia wiadomości e-mail.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Delivers the messages to your Inbox.
 - ![Ikona Usuń z kwarantanny.](../../media/m365-cc-sc-delete-icon.png) **Usuwanie wiadomości**: Po kliknięciu przycisku **Tak** w wyświetlonym ostrzeżeń wiadomości są natychmiast usuwane z kwarantanny, a nie wysyłane do oryginalnych adresatów.

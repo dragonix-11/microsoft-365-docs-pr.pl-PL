@@ -1,7 +1,7 @@
 ---
-title: Wdrażanie wdrożenia reguł ograniczania powierzchni ataków (ASR, Attack Surface Reduction)
-description: Zapewnia wskazówki dotyczące wdrażania reguł ograniczania powierzchni ataków.
-keywords: Wdrażanie reguł ograniczania powierzchni ataków, wdrażanie asr, włączanie reguł asr, konfigurowanie funkcji asr, systemu ochrony przed nieuprawnianiem hostów, reguł ochrony, reguł ochrony przed wykorzystywaniem luk, ochrony przed wykorzystywaniem, regułami wykorzystania luk, regułami zapobiegania powstawaniu dzieci, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł asr
+title: Wdrażanie reguł zmniejszania obszaru ataków (ASR)
+description: Zawiera wskazówki dotyczące wdrażania reguł zmniejszania obszaru ataków.
+keywords: Wdrażanie reguł zmniejszania obszaru ataków, wdrażanie usługi ASR, włączanie reguł asr, konfigurowanie usługi ASR, system zapobiegania włamaniom do hostów, reguły ochrony, reguły ochrony przed lukami w zabezpieczeniach, reguły antyeksploatowania, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł usługi ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,95 +20,95 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: c85dcb985210167e04b51092d66fb59080280581
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 675d881c3737b67cfdc0207be85285f71455d65c
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477352"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666971"
 ---
-# <a name="step-3-implement-asr-rules"></a>Krok 3. Implementowanie reguł asr
+# <a name="step-3-implement-asr-rules"></a>Krok 3: Implementuj reguły usługi ASR
 
-Implementowanie reguł zmniejszania powierzchni ataków (ASR) powoduje przeniesienie pierwszego pierścienia testowego do stanu włączonego i funkcjonalnego.
+Implementowanie reguł zmniejszania obszaru ataków (ASR) powoduje przeniesienie pierwszego pierścienia testowego w włączony stan funkcjonalny.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="Procedura wdrażania reguł ASR" lightbox="images/asr-rules-implementation-steps.png":::
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="Procedura implementowania reguł usługi ASR" lightbox="images/asr-rules-implementation-steps.png":::
   
 
-## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>Krok 1. Przejście reguł asr z inspekcji do bloku
+## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>Krok 1. Przenoszenie reguł usługi ASR z inspekcji do bloku
 
-1. Gdy wszystkie wykluczenia zostaną określone w trybie inspekcji, zacznij ustawiać tryb "blokowania" niektórych reguł asr, zaczynając od reguły, która ma najmniej zdarzeń wyzwalanych. Zobacz" [Włączanie reguł ograniczania powierzchni ataków](enable-attack-surface-reduction.md).
-2. Przejrzyj stronę raportowania w portalu Microsoft 365 Defender; zobacz [Raport o ochronie przed zagrożeniami w Ochrona punktu końcowego w usłudze Microsoft Defender](threat-protection-reports.md). Przejrzyj też opinie od mistrzów ASR.
-3. Uściślij wykluczenia lub utwórz nowe wykluczenia określone jako konieczne.
-4. Przełączanie reguł sprawiające problemy z powrotem do kontroli.
+1. Po określeniu wszystkich wykluczeń w trybie inspekcji rozpocznij ustawianie niektórych reguł usługi ASR na tryb "blokuj", zaczynając od reguły, która ma najmniejszą liczba wyzwalanych zdarzeń. Zobacz" [Włączanie reguł zmniejszania obszaru podatnego na ataki](enable-attack-surface-reduction.md).
+2. Przejrzyj stronę raportowania w portalu Microsoft 365 Defender. Zobacz [Raport dotyczący ochrony przed zagrożeniami w Ochrona punktu końcowego w usłudze Microsoft Defender](threat-protection-reports.md). Przejrzyj również opinie mistrzów usługi ASR.
+3. Uściślij wykluczenia lub utwórz nowe wykluczenia zgodnie z potrzebami.
+4. Przełącz problematyczne reguły z powrotem na inspekcję.
 
   >[!Note]
-  >W przypadku problematycznych reguł (czyli reguł tworzących zbyt wiele szumów) lepszym rozwiązaniem jest tworzenie wykluczeń niż wyłączenie reguł lub powrót do inspekcji. Musisz określić, co najlepiej jest dla Twojego środowiska.
+  >W przypadku problematycznych reguł (reguł tworzących zbyt dużo szumu) lepiej jest tworzyć wykluczenia niż wyłączać reguły lub przełączać się z powrotem na inspekcję. Musisz określić, co jest najlepsze dla Twojego środowiska.
 
   >[!Tip]
-  >Jeśli jest to możliwe, skorzystaj z ustawienia trybu ostrzegawczych w zasadach, aby ograniczyć przerwy w pracy. Włączenie reguł asr w trybie ostrzegawczym umożliwia przechwytywanie zdarzeń wyzwalanych i wyświetlanie ich potencjalnych zakłóceń bez blokowania dostępu użytkowników końcowych. Dowiedz się więcej: [Tryb ostrzegania dla użytkowników](attack-surface-reduction.md#warn-mode-for-users).
+  >Jeśli jest dostępna, skorzystaj z ustawienia Tryb ostrzeżenia w regułach, aby ograniczyć zakłócenia. Włączenie reguł usługi ASR w trybie ostrzeżenia umożliwia przechwytywanie wyzwalanych zdarzeń i wyświetlanie ich potencjalnych zakłóceń bez faktycznego blokowania dostępu użytkowników końcowych. Dowiedz się więcej: [Tryb ostrzegania dla użytkowników](attack-surface-reduction.md#warn-mode-for-users).
 
-### <a name="how-does-warn-mode-work"></a>Jak działa tryb ostrzegawcy?
+### <a name="how-does-warn-mode-work"></a>Jak działa tryb ostrzeżenia?
 
-Tryb ostrzegania jest w praktyce instrukcjami blokowania, ale z opcją "Odblokowywanie" kolejnych wykonywania danego przepływu lub aplikacji. Tryb ostrzegawczy jest odblokowywany na urządzeniu, w kombinacji użytkowników, plików i procesów. Informacje o trybie ostrzegania są przechowywane lokalnie i mają czas trwania 24 godzin.
+Tryb ostrzeżenia jest faktycznie instrukcją bloku, ale z opcją "Odblokuj" kolejne wykonania danego przepływu lub aplikacji. Tryb ostrzeżenia odblokowuje na poszczególnych urządzeniach, użytkownikach, plikach i kombinacjach procesów. Informacje o trybie ostrzegania są przechowywane lokalnie i mają czas trwania 24 godzin.
 
-### <a name="step-2-expand-deployment-to-ring-n--1"></a>Krok 2. Rozwijanie wdrożenia, aby dzwonić n + 1
+### <a name="step-2-expand-deployment-to-ring-n--1"></a>Krok 2. Rozwiń wdrożenie, aby utworzyć pierścień n + 1
 
-Jeśli masz pewność, że reguły asr dla pierścienia 1 zostały poprawnie skonfigurowane, możesz zmienić zakres wdrożenia do następnego pierścienia (zadzwoń n + 1).
+Jeśli masz pewność, że poprawnie skonfigurowano reguły asr dla pierścienia 1, możesz poszerzyć zakres wdrożenia do następnego pierścienia (pierścień n + 1).
 
-Proces wdrażania (kroki 1–3) zasadniczo jest taki sam dla każdego kolejnego pierścienia:
+Proces wdrażania, kroki 1–3, jest zasadniczo taki sam dla każdego kolejnego pierścienia:
 
-1. Testowanie reguł w inspekcji
-2. Przeglądanie zdarzeń inspekcji wyzwalanych przez asr w portalu Microsoft 365 Defender użytkowników
+1. Reguły testów w obszarze Inspekcja
+2. Przejrzyj zdarzenia inspekcji wyzwalane przez usługę ASR w portalu Microsoft 365 Defender
 3. Tworzenie wykluczeń
-4. Przegląd: uściślij, dodaj lub usuń wykluczenia w razie potrzeby
-5. Ustawianie reguł jako "bloku"
-6. Przejrzyj stronę raportowania w portalu Microsoft 365 Defender sieci Web.
+4. Przegląd: uściślaj, dodaj lub usuń wykluczenia w razie potrzeby
+5. Ustaw reguły na "blokuj"
+6. Przejrzyj stronę raportowania w portalu Microsoft 365 Defender.
 7. Tworzenie wykluczeń.
-8. Wyłącz reguły sprawiające problemy lub przełącz je z powrotem na inspekcję.
+8. Wyłącz problematyczne reguły lub przełącz je z powrotem na inspekcję.
 
-#### <a name="customize-attack-surface-reduction-rules"></a>Dostosowywanie reguł zmniejszania powierzchni ataków
+#### <a name="customize-attack-surface-reduction-rules"></a>Dostosowywanie reguł zmniejszania obszaru ataków
 
-W miarę rozszerzania wdrażania reguł ograniczania powierzchni ataków może być konieczne lub korzystne dostosowanie włączonych reguł ograniczania powierzchni ataków.
+W miarę rozszerzania wdrożenia reguł zmniejszania obszaru ataków może okazać się konieczne lub korzystne dostosowanie włączonych reguł zmniejszania obszaru ataków.
 
-##### <a name="exclude-files-and-folders"></a>Wyklucz pliki i foldery
+##### <a name="exclude-files-and-folders"></a>Wykluczanie plików i folderów
 
-Możesz wykluczyć pliki i foldery z oceny przez reguły ograniczania powierzchni ataków. Wykluczony plik nie będzie blokowany, nawet jeśli reguła zmniejszania powierzchni ataków wykryje, że plik zawiera złośliwe zachowanie.
+Można wykluczyć pliki i foldery z oceny przez reguły zmniejszania obszaru ataków. Jeśli plik zostanie wykluczony, nie zostanie zablokowany, nawet jeśli reguła zmniejszania obszaru ataków wykryje, że plik zawiera złośliwe zachowanie.
 
-Rozważ na przykład regułę oprogramowania wymuszającego okup:
+Rozważmy na przykład regułę wymuszania okupu:
 
-Reguła oprogramowania wymuszającego okup została zaprojektowana tak, aby ułatwić klientom korporacyjnym zmniejszenie ryzyka związanego z atakami oprogramowania wymuszającego okup przy jednoczesnym zapewnieniu ciągłości działania. Domyślnie błędy reguł oprogramowania wymuszającego okup są zbędne i chronią przed plikami, które jeszcze nie osiągnąć odpowiedniej reputacji i zaufania. W celu ponownego przesuńenia danych reguła oprogramowania wymuszającego okup wyzwala tylko pliki, które nie uzyskały wystarczającej reputacji i pozytywnej reputacji, na podstawie metryk użycia milionów klientów. Zazwyczaj bloki są rozwiązywane samodzielnie, ponieważ wartości "reputacji i zaufania" każdego pliku są stopniowo uaktualniane jako wzrost użycia, które nie są problematyczne.
+Reguła wymuszania okupu ma na celu pomoc klientom korporacyjnym w zmniejszeniu ryzyka ataków wymuszających okup przy jednoczesnym zapewnieniu ciągłości działania. Domyślnie błędy reguły wymuszania okupu po stronie ostrożności i ochrony przed plikami, które nie osiągnęły jeszcze wystarczającej reputacji i zaufania. Aby ponownie zaimponować, reguła wymuszania okupu wyzwala tylko pliki, które nie zyskały wystarczającej pozytywnej reputacji i rozpowszechnienia na podstawie metryk użycia milionów naszych klientów. Zazwyczaj bloki są rozwiązywane samodzielnie, ponieważ wartości "reputacji i zaufania" poszczególnych plików są przyrostowo uaktualniane w miarę wzrostu użycia bez problemów.
 
-W przypadkach, gdy bloki nie zostaną rozwiązane w terminie, klienci mogą — na własne _ryzyko — skorzystać_ z funkcji mechanizmu samoobsługi lub funkcji opartego na wskaźniku naruszenia zabezpieczeń (IOC, Indicator of Compromise, allow list) w celu odblokowania samych plików.
-
-> [!WARNING]
-> Wykluczenie lub odblokowanie plików lub folderów może potencjalnie umożliwić uruchamianie i zainfekowanie urządzeń niebezpiecznymi plikami. Wykluczenie plików lub folderów może znacznie zmniejszyć ochronę zapewnianą przez reguły zmniejszania obszaru podatnego na ataki. Pliki, które zostałyby zablokowane przez regułę, będą mogły być uruchamiane i nie będą rejestrowane żadne raporty ani zdarzenia.
-
-Wykluczenie dotyczy wszystkich reguł, które zezwalają na wykluczenia. Możesz określić pojedynczy plik, ścieżkę folderu lub w pełni kwalifikowaną nazwę domeny zasobu. Nie można jednak ograniczyć wykluczenia do konkretnej reguły.
-
-Wykluczenie jest stosowane tylko w momencie uruchamiania aplikacji lub usługi wykluczonych. Jeśli na przykład dodasz wykluczenie dla usługi aktualizacji, która jest już uruchomiona, usługa aktualizacji będzie nadal wyzwalać zdarzenia do momentu zatrzymania i ponownego uruchomienia usługi.
-
-Zmniejszenie powierzchni ataków obsługuje zmienne środowiskowe i symbole wieloznaczne. Aby uzyskać informacje na temat używania symboli wieloznacznych, zobacz Używanie symboli wieloznacznych w nazwach plików i ścieżkach folderów [lub na listach wykluczeń rozszerzenia](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
-Jeśli występują problemy z regułami wykrywania plików, które uważasz, że nie powinny być wykrywane, przetestuj regułę w [trybie inspekcji](evaluate-attack-surface-reduction.md).
-
-Aby uzyskać [szczegółowe informacje na temat każdej](attack-surface-reduction-rules-reference.md) reguły, zobacz temat z informacjami na temat reguł ograniczania powierzchni ataków.
-
-##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Wykluczanie plików i folderów za pomocą zasady grupy plików i folderów
-
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](https://technet.microsoft.com/library/cc731212.aspx) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
-
-2. W **administracyjnym zasady grupy zarządzania** przejdź do **strony Konfiguracja komputera** i kliknij pozycję **Szablony administracyjne**.
-
-3. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> **Microsoft Defender Exploit Guard** \> **zmniejszenie powierzchni ataków**.
-
-4. Kliknij dwukrotnie ustawienie **Wyklucz pliki i ścieżki z zasad** zmniejszania powierzchni ataków i ustaw opcję **Włączone**. Wybierz **pozycję** Pokaż i wprowadź każdy plik lub folder w **kolumnie Nazwa** wartości. Wprowadź **wartość 0** w **kolumnie Wartość** dla każdego elementu.
+W przypadkach, w których bloki nie są rozwiązywane samodzielnie w odpowiednim czasie, klienci mogą - _na własne ryzyko_ - korzystać z mechanizmu samoobsługowego lub funkcji "listy dozwolonych" opartej na wskaźniku kompromisu (MKOl) w celu odblokowania samych plików.
 
 > [!WARNING]
-> Cudzysłowów nie należy używać, ponieważ nie są obsługiwane  w przypadku kolumny Nazwa wartości ani **dla kolumny** Wartość.
+> Wykluczenie lub odblokowanie plików lub folderów może potencjalnie umożliwić uruchamianie niebezpiecznych plików i infekowanie urządzeń. Wykluczenie plików lub folderów może znacznie zmniejszyć ochronę zapewnianą przez reguły zmniejszania obszaru podatnego na ataki. Pliki, które zostałyby zablokowane przez regułę, będą mogły być uruchamiane i nie będą rejestrowane żadne raporty ani zdarzenia.
 
-##### <a name="use-powershell-to-exclude-files-and-folders"></a>Wykluczanie plików i folderów za pomocą programu PowerShell
+Wykluczenie dotyczy wszystkich reguł, które zezwalają na wykluczenia. Możesz określić pojedynczy plik, ścieżkę folderu lub w pełni kwalifikowaną nazwę domeny zasobu. Nie można jednak ograniczyć wykluczenia do określonej reguły.
 
-1. Wpisz **tekst powershell** w menu Start kliknij prawym **przyciskiem myszy Windows PowerShell** a następnie wybierz **pozycję Uruchom jako administrator**.
+Wykluczenie jest stosowane tylko wtedy, gdy zostanie uruchomiona wykluczona aplikacja lub usługa. Jeśli na przykład dodasz wykluczenie dla usługi aktualizacji, która jest już uruchomiona, usługa aktualizacji będzie nadal wyzwalać zdarzenia, dopóki usługa nie zostanie zatrzymana i ponownie uruchomiona.
+
+Redukcja obszaru ataków obsługuje zmienne środowiskowe i symbole wieloznaczne. Aby uzyskać informacje na temat korzystania z symboli wieloznacznych, zobacz [używanie symboli wieloznacznych na liście wykluczeń nazwy pliku i folderu lub rozszerzenia](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+Jeśli występują problemy z regułami wykrywania plików, które uważasz, że nie powinny zostać wykryte, [użyj trybu inspekcji, aby przetestować regułę](evaluate-attack-surface-reduction.md).
+
+Aby uzyskać szczegółowe informacje na temat każdej reguły, zobacz temat [dotyczący reguł zmniejszania obszaru ataków](attack-surface-reduction-rules-reference.md) .
+
+##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Używanie zasady grupy do wykluczania plików i folderów
+
+1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](https://technet.microsoft.com/library/cc731212.aspx), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i wybierz pozycję **Edytuj**.
+
+2. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera** i kliknij pozycję **Szablony administracyjne**.
+
+3. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> **Microsoft Defender Exploit Guard** \> **zmniejszanie obszaru podatnego na ataki**.
+
+4. Kliknij dwukrotnie ustawienie **Wyklucz pliki i ścieżki z reguł zmniejszania obszaru ataków** i ustaw opcję **Włączone**. Wybierz pozycję **Pokaż** i wprowadź każdy plik lub folder w kolumnie **Nazwa wartości** . Wprowadź **wartość 0** w kolumnie **Wartość** dla każdego elementu.
+
+> [!WARNING]
+> Nie używaj cudzysłowów, ponieważ nie są one obsługiwane w kolumnie **Nazwa wartości** ani w kolumnie **Wartość** .
+
+##### <a name="use-powershell-to-exclude-files-and-folders"></a>Wykluczanie plików i folderów przy użyciu programu PowerShell
+
+1. Wpisz **program PowerShell** w menu Start, kliknij prawym przyciskiem myszy **Windows PowerShell** i wybierz pozycję **Uruchom jako administrator**.
 
 2. Wprowadź następujące polecenie cmdlet:
 
@@ -116,25 +116,25 @@ Aby uzyskać [szczegółowe informacje na temat każdej](attack-surface-reductio
     Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"
     ```
 
-    Nadal używaj dodawania `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` kolejnych folderów do listy.
+    Nadal używaj polecenia `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` , aby dodać więcej folderów do listy.
 
     > [!IMPORTANT]
-    > Użyj, `Add-MpPreference` aby dołączyć aplikacje do listy lub dodać je do listy. Użycie polecenia `Set-MpPreference` cmdlet spowoduje zastąpienie istniejącej listy.
+    > Służy `Add-MpPreference` do dołączania lub dodawania aplikacji do listy. `Set-MpPreference` Użycie polecenia cmdlet spowoduje zastąpienie istniejącej listy.
 
-##### <a name="use-mdm-csps-to-exclude-files-and-folders"></a>Wykluczanie plików i folderów za pomocą csP usługi MDM
+##### <a name="use-mdm-csps-to-exclude-files-and-folders"></a>Używanie dostawców CSP mdm do wykluczania plików i folderów
 
-Aby dodać wykluczenia, użyj konfiguracji [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) usługodawca (CSP).
+Aby dodać wykluczenia, użyj dostawcy usługi konfiguracji [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) .
 
 ##### <a name="customize-the-notification"></a>Dostosowywanie powiadomienia
 
-Możesz dostosować powiadomienie o tym, kiedy reguła zostanie wyzwolona, i blokuje aplikację lub plik. Zobacz [Zabezpieczenia Windows.](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)
+Powiadomienie można dostosować w przypadku wyzwolenia reguły i zablokowania aplikacji lub pliku. Zobacz [artykuł Zabezpieczenia Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center).
 
-## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tym zbiorze wdrożeń
+## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tej kolekcji wdrożeń
 
-[Wymagania wstępne wdrażania reguł asr](attack-surface-reduction-rules-deployment.md)
+[Wymagania wstępne dotyczące wdrażania reguł ASR](attack-surface-reduction-rules-deployment.md)
 
-[Krok 1. Planowanie wdrożenia reguł ASR](attack-surface-reduction-rules-deployment-plan.md)
+[Krok 1. Zaplanuj wdrożenie reguł usługi ASR](attack-surface-reduction-rules-deployment-plan.md)
 
-[Krok 2. Testowanie reguł asr](attack-surface-reduction-rules-deployment-test.md)
+[Krok 2. Testuj reguły usługi ASR](attack-surface-reduction-rules-deployment-test.md)
 
-[Krok 4. Operacyjne reguły asr](attack-surface-reduction-rules-deployment-operationalize.md)
+[Krok 4: Operacjonalizowanie reguł usługi ASR](attack-surface-reduction-rules-deployment-operationalize.md)

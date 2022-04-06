@@ -1,7 +1,7 @@
 ---
 title: Szczegółowe informacje na pulpicie nawigacyjnym — Zarządzanie zagrożeniami i lukami
 description: Pulpit Zarządzanie zagrożeniami i lukami może ułatwić secopom i administratorom zabezpieczeń zająć się zagrożeniami bezpieczeństwa i zwiększyć odporność ich organizacji na zagrożenia bezpieczeństwa.
-keywords: Program Microsoft Defender for Endpoint-tvm, Microsoft Defender for Endpoint-tvm dashboard, threat & zarządzanie lukami w zabezpieczeniach, Zarządzanie zagrożeniami i lukami, risk-based threat & zarządzanie lukami w zabezpieczeniach, konfiguracja zabezpieczeń, microsoft Secure Score dla urządzeń, wynik ekspozycji
+keywords: Ochrona punktu końcowego w usłudze Microsoft Defender-tvm, Ochrona punktu końcowego w usłudze Microsoft Defender-tvm, zagrożenia & zarządzanie lukami w zabezpieczeniach, Zarządzanie zagrożeniami i lukami, informacje o ryzyku związane z & zarządzanie lukami w zabezpieczeniach, konfiguracja zabezpieczeń, wynik bezpiecznego zabezpieczenia firmy Microsoft dla urządzeń, wynik ochrony przed zagrożeniami
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb93b179b9d342a4a0d098ddb889a94371fbabc4
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 76eedd78e6bc6a95450a50c04d4f85b0de46db8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63016576"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472490"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Szczegółowe informacje na pulpicie nawigacyjnym — Zarządzanie zagrożeniami i lukami
 
@@ -30,7 +30,7 @@ ms.locfileid: "63016576"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,7 +58,7 @@ Obejrzyj ten klip wideo, aby szybko o tym, co znajduje się na Zarządzanie zagr
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>Zagrożenia i zarządzanie lukami w zabezpieczeniach nawigacyjny
 
-:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="Pulpit nawigacyjny zarządzania zagrożeniami i lukami w zabezpieczeniach dla urządzeń.":::
+:::image type="content" source="../../media/tvmdashboard.png" alt-text="Pulpit nawigacyjny zarządzania zagrożeniami i lukami w zabezpieczeniach dla urządzeń" lightbox="../../media/tvmdashboard.png":::
 
 <br>
 
@@ -76,7 +76,7 @@ Obejrzyj ten klip wideo, aby szybko o tym, co znajduje się na Zarządzanie zagr
 |**Najlepiej widoczne urządzenia**|Wyświetlaj dostępne nazwy urządzeń i ich poziom ekspozycji. Wybierz nazwę urządzenia z listy, aby przejść do strony urządzenia, na której możesz wyświetlać alerty, zagrożenia, zdarzenia, zalecenia dotyczące zabezpieczeń, zainstalowane oprogramowanie oraz wykryć luki w zabezpieczeniach związane z dostępnymi urządzeniami. Wybierz **pozycję Pokaż więcej** , aby wyświetlić pozostałą część listy dostępnych urządzeń. Z listy urządzeń możesz zarządzać tagami, inicjować zautomatyzowane badania, rozpoczynać sesję odpowiedzi na żywo, zbierać pakiet badania, uruchamiać skanowanie antywirusowe, ograniczać wykonywanie aplikacji i izolować urządzenie.|
 |
 
-Aby uzyskać więcej informacji na temat ikon używanych w całym portalu, zobacz Ikony programu [Microsoft Defender dla punktów końcowych](portal-overview.md#microsoft-defender-for-endpoint-icons).
+Aby uzyskać więcej informacji na temat ikon używanych w całym portalu, zobacz Ochrona punktu końcowego w usłudze Microsoft Defender [ikony](portal-overview.md#microsoft-defender-for-endpoint-icons).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

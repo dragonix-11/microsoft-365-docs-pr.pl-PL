@@ -10,20 +10,20 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i łady uruchamiane po spełnionych określonych warunkach w programie Microsoft Defender Office 365 Plan 2.
+description: Administratorzy mogą dowiedzieć się, jak tworzyć zautomatyzowane symulacje zawierające określone techniki i łady uruchamiane po spełnionych określonych warunkach w Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
-ms.openlocfilehash: 3ad24a8b6d2be18fb7ef5fd49be7f2197b3be3a7
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e1e71fc5a901612a132d57afd663364f9a10daf4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680957"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472446"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatyzacje symezyjne dla szkolenia z symezyjną ataków
 
-**Dotyczy programu** [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+**Dotyczy planu** [Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
-Aby uzyskać informacje na temat szkolenia z symezyjną ataków, zobacz Wprowadzenie do szkolenia z użyciem [symezyjny](attack-simulation-training-get-started.md) ataków.
+Aby uzyskać informacje na temat szkoleń z użyciem symezyjny ataków, [zobacz Wprowadzenie szkolenia z użyciem symezyjki ataków](attack-simulation-training-get-started.md).
 
 Aby utworzyć automatyzację symulacyjna, wykonaj następujące czynności:
 
@@ -33,7 +33,7 @@ Aby utworzyć automatyzację symulacyjna, wykonaj następujące czynności:
 
 2. Na karcie **Automatyzacje symulacyjne** wybierz pozycję Utwórz ![ikonę automatyzacji.](../../media/m365-cc-sc-create-icon.png) **Tworzenie automatyzacji**.
 
-   ![Przycisk automatyzacji utwórz na karcie Automatyzacja symulacyjna w szkoleniu symezyjny ataków w portalu Microsoft 365 Defender zaawansowanej.](../../media/attack-sim-training-sim-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Przycisk Create simulation (Utwórz symulację) na karcie Automatyzacja symulacyjnej w szkoleniu z symulacyjnej Microsoft 365 Defender czasowej" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. Zostanie otwarty kreator tworzenia. W dalszej części tego artykułu opisano strony i ustawienia, które zawierają.
 
@@ -61,7 +61,7 @@ Na stronie **Wybieranie technik społecznościowych** wybierz jedną lub więcej
 
 Kliknięcie linku **Wyświetl szczegóły** w opisie spowoduje otwarcie wysuwu szczegółów, opisujące technikę i kroki symulacyjne wynikające z tej techniki.
 
-![Wysuwające szczegółowe informacje dotyczące techniki poświadczeń chyłej na stronie Wybieranie technik społecznościowych.](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="Wysuw szczegółów techniki chyłej poświadczeń na stronie Wybieranie technik społecznościowych" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
@@ -110,7 +110,7 @@ W przypadku wybrania ładu z listy przez kliknięcie nazwy szczegóły dotycząc
 - Karta **Przegląd** zawiera przykład i inne szczegóły dotyczące ładu.
 - Karta **Uruchomiono symulatory** zawiera nazwę **symulacyjnej**, **szybkość** klikania, **naruszone tempo** i **działanie**.
 
-![Wysuwowe informacje o szczegółach ładowania w szkoleniu symulacyjnych ataków w Microsoft 365 Defender sieci Microsoft 365 Defender sieci.](../../media/attack-sim-training-simulations-select-payload-details.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Wysuwowe informacje o szczegółach obciążenia w szkoleniu symulacyjnych ataków w portalu Microsoft 365 Defender sieci Microsoft 365 Defender." lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
 
 Po zakończeniu kliknij przycisk **Dalej**.
 
@@ -140,7 +140,7 @@ Na stronie **Użytkownicy docelowi** wybierz osoby, które otrzymają symulowani
         - **Zaznaczanie całego tytułu**
         - Wybierz istniejące wartości Title.
 
-      ![Filtrowanie użytkowników na stronie Użytkownicy docelowi w szkoleniu z symezyjną ataków w portalu Microsoft 365 Defender sieci Web.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="Filtrowanie użytkowników na stronie Użytkownicy docelowi w szkoleniu z symezyjną ataków w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       Po zidentyfikowaniu kryteriów użytkownicy, których dotyczy problem, są pokazywani  w wyświetlonej sekcji Lista użytkowników, w której można wybrać niektórych lub wszystkich wykrytych adresatów.
 
@@ -178,7 +178,7 @@ Na stronie **Przypisywanie** szkolenia możesz przypisać szkolenia dla symulacy
       - **7 dni po zakończeniu symulacyjnej pracy**
   - **Brak szkolenia**: Jeśli wybierzesz tę wartość, jedyną opcją na stronie jest przycisk **Dalej, który** przenosi Cię do [**strony docelowej**](#landing-page) .
 
-![Dodaj zalecane szkolenie na stronie Szkolenie dotyczące zadań do wykonania w trybie szkolenia symendacyjnego w portalu Microsoft 365 Defender ataków.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="Opcja dodania zalecanego szkolenia na stronie Training assignment (Szkolenie dotyczące zadań do wykonania) w szkoleniu z symendyy ataków w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### <a name="training-assignment"></a>Zadanie szkoleniowe
 
@@ -220,7 +220,7 @@ Dla każdego szkolenia z listy musisz wybrać, kto otrzymuje szkolenie, wybieraj
 
 Jeśli nie chcesz używać wyświetlonego szkolenia, kliknij ikonę ![Usuń.](../../media/m365-cc-sc-delete-icon.png) **Usuń**.
 
-![Strona przydzielania szkoleń w szkoleniu z symezyjną ataków w portalu Microsoft 365 Defender sieci Web.](../../media/attack-sim-training-training-assignment.png)
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Strona Szkoleń z szkoleniami szkoleniowym w zakresie symezyjnych ataków w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 Po zakończeniu kliknij przycisk **Dalej**.
 

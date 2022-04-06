@@ -1,7 +1,7 @@
 ---
-title: Wykluczanie urządzeń w programie Microsoft Defender for Endpoint
-description: Wykluczanie urządzeń z listy zasobów w spisie urządzeń
-keywords: wykluczanie
+title: Wykluczanie urządzeń w Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Wykluczanie urządzeń z listy spisu urządzeń
+keywords: Wykluczyć
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c17bea7b6a3decdb1cf20f21067c316366c2afed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cbfc82f56cc1922a663c31defe30dc61c2d3dd9b
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63705070"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664155"
 ---
 # <a name="exclude-devices"></a>Wyklucz urządzenia
 
@@ -27,82 +27,82 @@ ms.locfileid: "63705070"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
+> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 ## <a name="exclude-devices-from-threat-and-vulnerability-management"></a>Wykluczanie urządzeń z Zarządzanie zagrożeniami i lukami
 
-Wykluczanie urządzeń, które są nieaktywne, zduplikowane lub znajdują się poza zakresem, umożliwia skoncentrowanie się na odnajdowanie zagrożeń i ustalanie ich priorytetów na aktywnych urządzeniach. To działanie może także pomóc odzwierciedlić bardziej dokładną Zarządzanie zagrożeniami i lukami wyników ekspozycji, ponieważ urządzenia wykluczone nie będą widoczne w Twoich Zarządzanie zagrożeniami i lukami raportach.
+Wyłączenie urządzeń, które są nieaktywne, zduplikowane lub poza zakresem, pozwala skupić się na odnajdyowaniu i określaniu priorytetów zagrożeń na aktywnych urządzeniach. Ta akcja może również pomóc odzwierciedlić dokładniejszy wynik Zarządzanie zagrożeniami i lukami ekspozycji, ponieważ wykluczone urządzenia nie będą widoczne w raportach Zarządzanie zagrożeniami i lukami.
 
-Po wykluczenia urządzeń nie będzie można wyświetlać zaktualizowanych ani odpowiednich informacji dotyczących luk i zainstalowanych na nich oprogramowania. Wpływa on na wszystkie Zarządzanie zagrożeniami i lukami, raporty i powiązane tabele podczas zaawansowanego wyszukiwania.
+Po wykluczeniu urządzeń nie będzie można wyświetlać zaktualizowanych ani istotnych informacji o lukach w zabezpieczeniach i zainstalowanym oprogramowaniu na tych urządzeniach. Ma wpływ na wszystkie Zarządzanie zagrożeniami i lukami stron, raportów i powiązanych tabel w zaawansowanym polowaniu.
 
-Mimo że funkcja wykluczenia urządzenia usuwa dane urządzenia ze stron zarządzanie lukami w zabezpieczeniach i raportów, urządzenia pozostają połączone z siecią i nadal mogą stanowić zagrożenie dla organizacji. W każdej chwili będzie można anulować wykluczenie urządzenia.
+Mimo że funkcja wykluczania urządzenia usuwa dane urządzenia z zarządzanie lukami w zabezpieczeniach stron i raportów, urządzenia pozostają połączone z siecią i nadal mogą stanowić zagrożenie dla organizacji. Wykluczenie urządzenia będzie można anulować w dowolnym momencie.
 
 ## <a name="how-to-exclude-a-device"></a>Jak wykluczyć urządzenie
 
-Możesz wykluczyć jedno lub wiele urządzeń jednocześnie.
+Jednocześnie można wykluczyć pojedyncze urządzenie lub wiele urządzeń.
 
-### <a name="exclude-a-single-device"></a>Wykluczanie jednego urządzenia
+### <a name="exclude-a-single-device"></a>Wykluczanie pojedynczego urządzenia
 
-1. Przejdź na stronę **Spis urządzeń** i wybierz urządzenie, które chcesz wykluczyć.
-2. Wybierz **pozycję** Wyklucz na pasku akcji na stronie spisu urządzeń lub z menu akcji w wysuwanych urządzeniach.
+1. Przejdź do strony **Spis urządzeń** i wybierz urządzenie do wykluczenia.
+2. Wybierz pozycję **Wyklucz** na pasku akcji na stronie spisu urządzeń lub z menu akcji w wysuwanym urządzeniu.
 
-![Obraz opcji menu Wyklucz urządzenie.](images/exclude-devices-menu.png)
+   ![Obraz przedstawiający opcję menu wykluczania urządzenia.](images/exclude-devices-menu.png)
 
- 3. Wybierz uzasadnienie:
+3. Wybierz uzasadnienie:
 
     - Nieaktywne urządzenie
-    - Duplikowanie urządzenia
+    - Zduplikowane urządzenie
     - Urządzenie nie istnieje
-    - Poza zakresem  
+    - Poza zakresem
     - Inne
 
 4. Wpisz notatkę i wybierz pozycję **Wyklucz urządzenie**.
 
-![Obraz wykluczającego urządzenia.](images/exclude-device.png)
+![Obraz przedstawiający wykluczanie urządzenia.](images/exclude-device.png)
 
-Możesz również wykluczyć urządzenie z jego strony urządzenia.
+Można również wykluczyć urządzenie ze strony urządzenia.
 
 > [!NOTE]
-> Wykluczanie aktywnych urządzeń nie jest zalecane, ponieważ szczególnie ryzykowne jest nieoekronowanie ich informacji o luki w zabezpieczeniach. Jeśli urządzenie jest aktywne i spróbujesz je wykluczyć, zostanie wyświetlony komunikat ostrzegawczy i okno podręczne potwierdzenia z pytaniem, czy na pewno chcesz wykluczyć aktywne urządzenie.
+> Wykluczanie aktywnych urządzeń nie jest zalecane, ponieważ szczególnie ryzykowne jest brak wglądu w informacje o lukach w zabezpieczeniach. Jeśli urządzenie jest aktywne i próbujesz je wykluczyć, zostanie wyświetlony komunikat ostrzegawczy i wyskakujące okno dialogowe z potwierdzeniem z pytaniem, czy na pewno chcesz wykluczyć aktywne urządzenie.
 
-Pełne wykluczenie urządzenia z zarządzanie lukami w zabezpieczeniach i danych może potrwać do 10 godzin.
+Całkowite wykluczenie urządzenia z zarządzanie lukami w zabezpieczeniach widoków i danych może potrwać do 10 godzin.
 
-Urządzenia wykluczonych są nadal widoczne na liście w spisie urządzeń. Do zarządzania widokiem urządzeń wykluczonych możesz użyć:
+Wykluczone urządzenia są nadal widoczne na liście Spis urządzeń. Widok wykluczonych urządzeń można zarządzać za pomocą:
 
-- Dodanie **kolumny Stan wykluczeń** do widoku spisu urządzeń.
-- Wyświetlanie  **odpowiedniej listy urządzeń za pomocą filtru** województwoWysyłki .
+- Dodawanie kolumny **Stan wykluczenia** do widoku spisu urządzeń.
+- Użyj filtru **Stanu wykluczenia** , aby wyświetlić odpowiednią listę urządzeń.
 
 ![Obraz stanu wykluczenia.](images/exclusion-state.png)
 
-### <a name="bulk-device-exclusion"></a>Zbiorcze wykluczenie urządzeń
+### <a name="bulk-device-exclusion"></a>Zbiorcze wykluczenie urządzenia
 
-Możesz także wykluczyć wiele urządzeń jednocześnie:
+Można również wykluczyć wiele urządzeń w tym samym czasie:
 
-1. Przejdź do strony **Spis urządzeń** i wybierz urządzenia, które chcesz wykluczyć.
+1. Przejdź do strony **Spis urządzeń** i wybierz urządzenia do wykluczenia.
 
 2. Na pasku akcji wybierz pozycję **Wyklucz**.
 
-3. Wybierz uzasadnienie, a następnie wybierz **pozycję Wyklucz urządzenie**.
+3. Wybierz uzasadnienie i wybierz pozycję **Wyklucz urządzenie**.
 
-Jeśli wybierzesz wiele urządzeń na liście urządzeń z różnymi stanami wykluczeń, wysuw wybrane urządzenia zostaną wyświetlona informacja o tym, ile z wybranych urządzeń zostało już wykluczonych. Możesz ponownie wykluczyć urządzenia, ale uzasadnienie i notatki zostaną zastąpione.
+Jeśli wybierzesz wiele urządzeń na liście urządzeń z różnymi stanami wykluczeń, wysuwane wykluczenie wybranych urządzeń będzie zawierać szczegółowe informacje na temat liczby wybranych urządzeń, które zostały już wykluczone. Można wykluczyć urządzenia ponownie, ale uzasadnienie i notatki zostaną zastąpione.
 
 ![Obraz wykluczania zbiorczego](images/exclude-device-bulk.png)
 
-Gdy urządzenie zostanie wykluczony, po dojściu do strony urządzenia wykluczonym urządzeniu nie będzie można wyświetlić danych dotyczących wykrytych luk w zabezpieczeniach, spisu oprogramowania ani zaleceń dotyczących zabezpieczeń. Dane nie będą też wyświetlane na stronach zarządzanie lukami w zabezpieczeniach, powiązanych zaawansowanych tabelach myśliwnych i raporcie urządzeń narażonych na zagrożenia.
+Po wykluczeniu urządzenia, jeśli przejdziesz do strony urządzenia wykluczonego urządzenia, nie będzie można wyświetlić danych dotyczących wykrytych luk w zabezpieczeniach, spisu oprogramowania ani zaleceń dotyczących zabezpieczeń. Dane nie będą również wyświetlane na stronach zarządzanie lukami w zabezpieczeniach, powiązanych zaawansowanych tabelach zagrożeń i raportach urządzeń narażonych na zagrożenia.
 
 ## <a name="stop-excluding-a-device"></a>Zatrzymywanie wykluczania urządzenia
 
-W każdej chwili możesz przestać wykluczać urządzenie. Gdy urządzenia nie zostaną już wykluczone, ich dane luk będą widoczne na zarządzanie lukami w zabezpieczeniach, raportach i w zaawansowanym szukaniu. Może upłynieć do 8 godzin, aż zmiany zajdą w życie.
+W dowolnym momencie będzie można przestać wykluczać urządzenie. Gdy urządzenia nie zostaną już wykluczone, ich dane luk w zabezpieczeniach będą widoczne na zarządzanie lukami w zabezpieczeniach stronach, raportach i w zaawansowanym polowaniu. Wprowadzenie zmian może potrwać do 8 godzin.
 
-1. Przejdź do spisu urządzeń, wybierz urządzenie wykluczonych, aby otworzyć wysuwne menu, a następnie wybierz pozycję **Szczegóły wykluczenia**
-2. Wybierz pozycję **Zatrzymaj wykluczenie**
+1. Przejdź do spisu urządzeń, wybierz wykluczone urządzenie, aby otworzyć wysuwane urządzenie, a następnie wybierz pozycję **Szczegóły wykluczenia**
+2. Wybierz pozycję **Zatrzymaj wykluczanie**
 
-![Obraz szczegółów wykluczenia](images/exclusion-details.png)
+![Obraz przedstawiający szczegóły wykluczenia](images/exclusion-details.png)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Spis urządzeń](machines-view-overview.md)
+- [Spisz urządzeń](machines-view-overview.md)

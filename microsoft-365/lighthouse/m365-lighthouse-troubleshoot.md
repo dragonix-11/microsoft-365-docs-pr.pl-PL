@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse uzyskaj pomoc w rozwiązywaniu problemów i komunikatach o błędach.
-ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 24f282420bb69188106178cefc6fb89968f4fcf6
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632366"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645039"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Rozwiązywanie problemów i komunikatów o błędach w programie Microsoft 365 Lighthouse
 
@@ -54,7 +54,7 @@ W tym artykule opisano komunikaty o błędach i problemy, które mogą wystąpi�
 **Przyczyna:** Dzierżawy Twoich klientów nie spełniają następujących kryteriów:
 
   - Aby zarządzać dzierżawą klienta, należy skonfigurować dostęp delegowany dla dostawcy usług zarządzanych*
-  - Musi mieć co najmniej jedną Microsoft 365 Business Premium, Microsoft 365 E3 lub licencję Windows 365 Business licencji
+  - Musi mieć co najmniej jedną Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business licencji
   - Nie może mieć więcej niż 1000 licencjonowanych użytkowników 
 
 **Rozwiązanie:** W poniższej tabeli opisano różne stany dzierżawy wymagające działania i wyjaśniono, jak je rozwiązać.
@@ -137,4 +137,4 @@ Jeśli po zakończeniu rozwiązywania problemów dane nadal nie są wyświetlane
 
 [Znane problemy dotyczące Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (artykuł)\
 [Microsoft 365 Lighthouse faq](m365-lighthouse-faq.yml) (artykuł)\
-[Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (artykuł)
+[Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (artykuł)

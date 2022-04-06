@@ -20,20 +20,20 @@ ms.custom:
 description: Dowiedz się, jak używać DKIM (DomainKeys Identified Mail) z usługą Microsoft 365 w celu zapewnienia, że wiadomości wysyłane z Twojej domeny niestandardowej są zaufane przez docelowe systemy poczty e-mail.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25333a1616bb1f4e4e529c17813bdd58f4c768b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fd236ff616ab585909b210c9c1b9a8f12b2e9fe2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312953"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472270"
 ---
-# <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Używanie funkcji DKIM do sprawdzania poprawności wychodzących wiadomości e-mail wysłanych z domeny niestandardowej
+# <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Sprawdzanie poprawności wychodzących wiadomości e-mail wysyłanych z domeny niestandardowej za pomocą funkcji DKIM
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
  Ten artykuł zawiera listę czynności, które należy wykonać w celu używania dKIM (DomainKeys Identified Mail) z usługą Microsoft 365, aby zapewnić, że docelowe systemy poczty e-mail będą ufać wiadomościom wychodzącym wysyłanym z domeny niestandardowej.
@@ -89,17 +89,19 @@ Po dodaniu domeny wykonaj czynności przedstawione poniżej, aby skonfigurować 
 
 Krok 1. Kliknij domenę, którą chcesz skonfigurować na stronie DKIM (https://security.microsoft.com/dkimv2 lub https://protection.office.com/dkimv2)).
 
-![Strona DKIM w portalu Microsoft 365 Defender z wybraną domeną.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+:::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="Strona DKIM w portalu Microsoft 365 Defender z wybraną domeną" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 
 Krok 2. Przesuń przełącznik do przycisku **Włącz**. Zostanie otwarte okno podręczne z informacją o konieczności dodania rekordów CNAME.
 
-![Przesuń przełącznik do opcji Włączone, aby włączyć funkcję DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png" alt-text="Wysuw szczegółów domeny z przyciskiem Utwórz klucze DKIM" lightbox="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png":::
 
 Krok 3. Kopiowanie nazw CNAMES wyświetlanych w oknie podręcznym
 
+:::image type="content" source="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png" alt-text="Okno podręczne Publikowanie rekordów CNAME zawierające dwa rekordy CNAME do skopiowania" lightbox="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png":::
+
 Krok 4. Publikowanie skopiowanych rekordów CNAME na serwerze DNS usługodawca.
 
-W witrynie internetowej dostawcy DNS dodaj rekordy CNAME dla funkcji DKIM, które chcesz włączyć. Upewnij się, że w polach są ustawione następujące wartości dla każdego z nich:
+W witrynie internetowej dostawcy DNS dodaj rekordy CNAME dla funkcji DKIM, które chcesz włączyć. Upewnij się, że pola są ustawione następujące wartości dla każdego z nich:
 
 ```text
 Record Type: CNAME (Alias)
@@ -110,7 +112,7 @@ TTL: 3600 (or your provider default)
 
 Krok 5. Powrót do strony DKIM, aby włączyć funkcję DKIM.
 
-![Przesuń przełącznik do opcji Włączone, aby włączyć funkcję DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png" alt-text="Przełącznik umożliwiający włączenie funkcji DKIM" lightbox="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png":::
 
 Jeśli zobaczysz komunikat o błędzie CNAME, może to być spowodowane tym, że:
 
@@ -229,7 +231,7 @@ TTL:                3600
 ### <a name="steps-to-enable-dkim-signing-for-your-custom-domain"></a>Procedura włączania podpisywania DKIM dla domeny niestandardowej
 <a name="EnableDKIMinO365"> </a>
 
-Po opublikowaniu rekordów CNAME w systemie DNS możesz włączyć podpisywanie DKIM za pośrednictwem Microsoft 365. Możesz to zrobić za pośrednictwem centrum administracyjne platformy Microsoft 365 lub przy użyciu programu PowerShell.
+Po opublikowaniu rekordów CNAME w systemie DNS możesz włączyć podpisywanie DKIM za pośrednictwem Microsoft 365. Możesz to zrobić za pośrednictwem Centrum administracyjne platformy Microsoft 365 lub programu PowerShell.
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Aby włączyć podpisywanie DKIM dla domeny niestandardowej w Microsoft 365 Defender sieci Microsoft 365 Defender sieci
 
@@ -248,7 +250,7 @@ Po opublikowaniu rekordów CNAME w systemie DNS możesz włączyć podpisywanie 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Aby włączyć podpisywanie DKIM dla domeny niestandardowej przy użyciu programu PowerShell
 
 > [!IMPORTANT]
-> :::image type="content" source="../../media/dkim.png" alt-text="Błąd &quot;Nie zapisano kluczy DKIM dla tej domeny&quot;.":::
+> :::image type="content" source="../../media/dkim.png" alt-text="Błąd &quot;Brak kluczy DKIM zapisanych dla tej domeny&quot;" lightbox="../../media/dkim.png":::
 > Jeśli konfigurujesz usługę DKIM po raz pierwszy i zostanie wyświetlony komunikat o błędzie "Brak kluczy DKIM zapisanych dla tej domeny" wykonaj poniższe polecenie w kroku 2 ( `Set-DkimSigningConfig -Identity contoso.com -Enabled $true`na przykład ), aby zobaczyć klucz.
 
 1. [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
@@ -408,4 +410,5 @@ Następnie zobacz Używanie funkcji [**DMARC do sprawdzania poprawności wiadomo
 
 Obrót klawiszy za pośrednictwem programu PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Używanie funkcji DMARC do sprawdzania poprawności wiadomości e-mail](use-dmarc-to-validate-email.md)
+[Sprawdzanie poprawności poczty e-mail przy użyciu usługi DMARC](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide&preserve-view=true)
+

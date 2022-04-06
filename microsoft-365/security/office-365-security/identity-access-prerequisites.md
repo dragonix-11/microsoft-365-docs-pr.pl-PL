@@ -1,6 +1,6 @@
 ---
 title: Wymagania wstępne są wymagane do wdrożenia zasad dostępu do urządzeń i tożsamości — Microsoft 365 dla przedsiębiorstw i | Microsoft Docs
-description: W tym artykule opisano wymagania wstępne, które należy spełnić, aby korzystać z zasad i konfiguracji dostępu do urządzeń i tożsamości bez zaufania.
+description: W tym artykule opisano wymagania wstępne, które należy spełnić, aby używać tożsamości Zero Trust i konfiguracji oraz zasad i konfiguracji dostępu do urządzeń.
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -19,20 +19,20 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8123b3602569ec1effcbf79cb12d242ab19d960e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680913"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472358"
 ---
-# <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Wymagania wstępne dotyczące wdrażania zasad dostępu do urządzeń i tożsamości zerowego zaufania
+# <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Wymagania wstępne dotyczące implementowania Zero Trust tożsamości i dostępu do urządzeń
 
-W tym artykule opisano wymagania wstępne, których administratorzy muszą spełnić, aby użyć zalecanych zasad dostępu do urządzeń i tożsamości zerowego zaufania oraz korzystania z dostępu warunkowego. Omówiono w nim również zalecane ustawienia domyślne dotyczące konfigurowania platform klienckich w celu najlepszego logowania jednokrotnego (SSO).
+W tym artykule opisano wymagania wstępne, których administratorzy muszą spełnić, aby użyć zalecanych Zero Trust tożsamości i dostępu do urządzeń oraz korzystania z dostępu warunkowego. Omówiono w nim również zalecane ustawienia domyślne dotyczące konfigurowania platform klienckich w celu najlepszego logowania jednokrotnego (SSO).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed użyciem zalecanych zasad dostępu do urządzeń i tożsamości bez zaufania Twoja organizacja musi spełniać wymagania wstępne. Wymagania te różnią się w przypadku różnych wymienionych modeli tożsamości i uwierzytelniania:
+Przed użyciem zalecanych Zero Trust tożsamości i dostępu do urządzeń Twoja organizacja musi spełniać wymagania wstępne. Wymagania te różnią się w przypadku różnych wymienionych modeli tożsamości i uwierzytelniania:
 
 - Tylko w chmurze
 - Tryb hybrydowy z uwierzytelnianiem synchronizacji skrótów haseł (PHS)
@@ -61,9 +61,9 @@ W tej sekcji opisano domyślne konfiguracje klienta platformy, zalecane jest zap
 
 ### <a name="windows-devices"></a>Windows urządzenia
 
-Zalecamy korzystanie Windows 11 lub Windows 10 (wersja 2004 lub nowsza), ponieważ platforma Azure została zaprojektowana tak, aby zapewnić najsłanniejsze środowisko logowania jednokrotnego możliwe zarówno w środowisku lokalnym, jak i w usłudze Azure AD. Urządzenia służbowe powinny być skonfigurowane tak, aby bezpośrednio dołączały do usługi Azure AD lub jeśli organizacja korzysta z lokalnego sprzężenia z domeną usługi AD, te urządzenia powinny być skonfigurowane w taki sposób, aby były automatycznie i dyskretnie rejestrowane w usłudze [Azure AD](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup).
+Zalecamy korzystanie Windows 11 lub Windows 10 (wersja 2004 lub nowsza), ponieważ platforma Azure została zaprojektowana tak, aby zapewnić płynniejsze środowisko logowania jednokrotnego możliwe zarówno w środowisku lokalnym, jak i w usłudze Azure AD. Urządzenia służbowe powinny być skonfigurowane tak, aby bezpośrednio dołączały do usługi Azure AD lub jeśli organizacja korzysta z lokalnego sprzężenia z domeną usługi AD, te urządzenia powinny być skonfigurowane w taki sposób, aby były automatycznie i dyskretnie rejestrowane w usłudze [Azure AD](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup).
 
-W przypadku Windows byOD użytkownicy mogą używać funkcji **Dodaj konto służbowe**. Użytkownicy przeglądarki Google Chrome na urządzeniach z systemem Windows Windows 11 lub Windows 10 muszą zainstalować rozszerzenie, aby uzyskać taki sam [](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) sposób płynnego logowania jak dla Microsoft Edge użytkowników. Ponadto, jeśli Twoja organizacja ma urządzenia z systemem Windows 8 lub 8.1 przyłączone do domeny, możesz zainstalować aplikację Microsoft Workplace Join dla komputerów Windows 10 komputerach. [Pobierz pakiet, aby zarejestrować urządzenia](https://www.microsoft.com/download/details.aspx?id=53554) w usłudze Azure AD.
+W przypadku Windows byOD użytkownicy mogą używać funkcji **Dodaj konto służbowe**. Użytkownicy przeglądarki Google Chrome na Windows 11 lub Windows 10 muszą zainstalować rozszerzenie, aby uzyskać taki sam sposób płynnego logowania [](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) jak użytkownicy Microsoft Edge użytkowników. Ponadto, jeśli Twoja organizacja ma urządzenia z systemem Windows 8 lub 8.1 przyłączone do domeny, możesz zainstalować aplikację Microsoft Workplace Join dla komputerów Windows 10 komputerach. [Pobierz pakiet, aby zarejestrować urządzenia](https://www.microsoft.com/download/details.aspx?id=53554) w usłudze Azure AD.
 
 ### <a name="ios-devices"></a>Urządzenia z systemem iOS
 
@@ -73,7 +73,7 @@ Zalecamy zainstalowanie tej aplikacji [Microsoft Authenticator na](/azure/multi-
 
 Zalecamy, aby użytkownicy [zainstalowali aplikację Intune — Portal firmy i](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) aplikację [Microsoft Authenticator](/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) przed wdrożeniem zasad dostępu warunkowego lub gdy będzie to wymagane podczas niektórych prób uwierzytelniania. Po zainstalowaniu aplikacji można poprosić użytkowników o zarejestrowanie się w usłudze Azure AD lub zarejestrowanie urządzenia w usłudze Intune. To zależy od skonfigurowanych zasad dostępu warunkowego.
 
-Zalecamy również, aby urządzenia będące własnością organizacji zostały znormalizowane w programach OEM i wersjach, które obsługują system Android for Work lub Samsung Knox w celu umożliwienia zarządzania kontami poczty i ochrony za pomocą zasad MDM usługi Intune.
+Zalecamy również, aby urządzenia będące własnością organizacji zostały znormalizowane w programach OEM i wersjach, które obsługują system Android for Work lub Samsung Knox w celu umożliwienia zarządzania kontami poczty i ochrony przez zasady usługi Intune MDM.
 
 ### <a name="recommended-email-clients"></a>Polecani klienci poczty e-mail
 
@@ -122,6 +122,6 @@ Oto kilka dodatkowych zaleceń:
 
 ## <a name="next-step"></a>Następny krok
 
-[![Krok 2. Konfigurowanie wspólnych zasad dostępu warunkowego i tożsamości zerowego zaufania.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![Krok 2. Konfigurowanie typowych zasad dostępu Zero Trust dostępu warunkowego.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
 
-[Konfigurowanie wspólnych zasad zerowego zaufania i dostępu do urządzeń](identity-access-policies.md)
+[Konfigurowanie wspólnych zasad Zero Trust tożsamości i dostępu do urządzeń](identity-access-policies.md)

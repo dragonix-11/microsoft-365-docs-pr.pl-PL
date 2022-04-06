@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 36713496b5885866dd21a3402dcfe66b4af5b76e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0208e21394e350c2b5ffffdca6f8e14ebba227c8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998114"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476054"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Tworzenie reguły powiadomienia w przypadku korzystania z lokalnego skryptu dołączania lub wybierania
 
@@ -28,11 +28,11 @@ ms.locfileid: "62998114"
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -54,18 +54,19 @@ Musisz mieć dostęp do:
 
 2. Przejdź do **strony Moje przepływy > nowe > zaplanowane — z pustego**.
 
-    ![Obraz przepływu.](images/new-flow.png)
+   :::image type="content" source="images/new-flow.png" alt-text="Przepływ" lightbox="images/new-flow.png":::
+
 
 3. Tworzenie zaplanowanego przepływu.
    1. Wprowadź nazwę przepływu.
    2. Określ czas rozpoczęcia i czas.
    3. Określ częstotliwość. Na przykład co 5 minut.
 
-    ![Obraz przepływu powiadomień.](images/build-flow.png)
+   :::image type="content" source="images/build-flow.png" alt-text="Przepływ powiadomień" lightbox="images/build-flow.png":::
 
 4. Wybierz przycisk +, aby dodać nową akcję. Nowa akcja będzie żądaniem HTTP do interfejsu API defender for Endpoint security center. Możesz również zamienić go na dostępny w oknie "WDATP Connector" (akcja: "Komputery — pobierz listę komputerów").
 
-    ![Obraz cyklu i dodawania akcji.](images/recurrence-add.png)
+   :::image type="content" source="images/recurrence-add.png" alt-text="Cykl i dodanie akcji" lightbox="images/recurrence-add.png":::
 
 5. Wprowadź następujące pola HTTP:
 
@@ -78,19 +79,19 @@ Musisz mieć dostęp do:
    - Typ poświadczeń: Wybierz opcję "Tajna".
    - Tajny: Zaloguj się do usługi i https://portal.azure.com przejdź do **Azure Active Directory > rejestracji** aplikacji i uzyskaj wartość Identyfikatora dzierżawy.
 
-    ![Obraz warunków PROTOKOŁU HTTP.](images/http-conditions.png)
+    :::image type="content" source="images/http-conditions.png" alt-text="Warunki HTTP" lightbox="images/http-conditions.png":::
 
 6. Dodaj nowy krok, wybierając pozycję **Dodaj nową** akcję, a następnie wyszukaj pozycję **Operacje na** danych i **wybierz pozycję Analizowanie JSON**.
 
-    ![Obraz operacji na danych.](images/data-operations.png)
+   :::image type="content" source="images/data-operations.png" alt-text="Wpis operacji danych" lightbox="images/data-operations.png":::
 
 7. Dodaj treść w **polu** Zawartość.
 
-    ![Obraz analizowania JSON.](images/parse-json.png)
+   :::image type="content" source="images/parse-json.png" alt-text="Sekcja analizowania JSON" lightbox="images/parse-json.png":::
 
 8. Wybierz link **Użyj przykładowego obciążenia do wygenerowania** schematu.
 
-    ![Obraz parse json z obciążeniem.](images/parse-json-schema.png)
+   :::image type="content" source="images/parse-json-schema.png" alt-text="Analizowanie JSON z obciążeniem" lightbox="images/parse-json-schema.png":::
 
 9. Skopiuj i wklej następujący fragment kodu JSON:
 
@@ -179,22 +180,22 @@ Musisz mieć dostęp do:
     - Jeśli tak, powiadomienie nie zostanie wyzwolone
     - Jeśli nie, zarejestruje nowe urządzenia na liście SharePoint, a do administratora punktu końcowego zostanie wysłane powiadomienie.
 
-    ![Obraz zastosowania do każdego z nich.](images/flow-apply.png)
+    :::image type="content" source="images/flow-apply.png" alt-text="Zastosowanie przepływu do każdego elementu" lightbox="images/flow-apply.png":::
 
-    ![Obraz stosowania do każdego z elementów z elementami do uzyskania.](images/apply-to-each.png)
+    :::image type="content" source="images/apply-to-each.png" alt-text="Zastosowanie przepływu do elementu Pobierz elementy" lightbox="images/apply-to-each.png":::
 
 11. W **obszarze** Warunek dodaj następujące wyrażenie: "length(body('Get_items')?' wartość'])" i ustaw warunek na wartość 0.
 
-    ![Obraz zastosowania do każdego warunku.](images/apply-to-each-value.png)
-    ![ Obraz warunku1.](images/conditions-2.png)
-    ![ Obraz warunku2.](images/condition3.png)
-    ![ Obraz wysyłania wiadomości e-mail.](images/send-email.png)
+    :::image type="content" source="images/apply-to-each-value.png" alt-text="Zastosowanie przepływu do każdego warunku" lightbox="images/apply-to-each-value.png":::
+    :::image type="content" source="images/conditions-2.png" alt-text="Warunek-1" lightbox="images/conditions-2.png":::
+    :::image type="content" source="images/condition3.png" alt-text="Warunek-2" lightbox="images/condition3.png":::
+    :::image type="content" source="images/send-email.png" alt-text="Sekcja Wysyłanie wiadomości e-mail" lightbox="images/send-email.png":::
 
 ## <a name="alert-notification"></a>Powiadomienie alertu
 
 Poniższy obraz zawiera przykład powiadomienia e-mail.
 
-![Obraz powiadomienia e-mail.](images/alert-notification.png)
+:::image type="content" source="images/alert-notification.png" alt-text="Ekran powiadomienia e-mail" lightbox="images/alert-notification.png":::
 
 ## <a name="tips"></a>Wskazówki
 

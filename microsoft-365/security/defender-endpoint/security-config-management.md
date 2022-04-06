@@ -1,7 +1,7 @@
 ---
-title: Zarządzaj ustawieniami konfiguracji programu Microsoft Defender for Endpoint na urządzeniach za pomocą programu Microsoft Endpoint Manager
-description: Dowiedz się, jak włączyć ustawienia zabezpieczeń w u Microsoft Endpoint Manager programie Microsoft Defender for Endpoint.
-keywords: zarządzanie urządzeniami, konfigurowanie programu Microsoft Defender dla urządzeń końcowych, Microsoft Endpoint Manager
+title: Zarządzaj ustawieniami konfiguracji usługi ochrony punktu końcowego w usłudze Microsoft Defender na urządzeniach z programem Microsoft Endpoint Manager
+description: Dowiedz się, jak włączyć ustawienia zabezpieczeń w Microsoft Endpoint Manager za pośrednictwem Ochrona punktu końcowego w usłudze Microsoft Defender.
+keywords: zarządzanie urządzeniami, konfigurowanie urządzeń Ochrona punktu końcowego w usłudze Microsoft Defender, Microsoft Endpoint Manager
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e21346b48f65016465e669369aa14b3f4c85c23b
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 272425ede6895c84c88aa1c4ea165bc0787238bb
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527102"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665893"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Zarządzaj ustawieniami konfiguracji programu Microsoft Defender for Endpoint na urządzeniach za pomocą programu Microsoft Endpoint Manager
+# <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Zarządzaj ustawieniami konfiguracji usługi ochrony punktu końcowego w usłudze Microsoft Defender na urządzeniach z programem Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 
-- [Zarządzanie programem Microsoft Defender for Endpoint na urządzeniach za pomocą Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
+- [Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach przy użyciu Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,48 +38,48 @@ ms.locfileid: "63527102"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-Zarządzanie zabezpieczeniami dla programu Microsoft Defender for Endpoint to funkcja dla urządzeń, które nie są zarządzane przez Microsoft Endpoint Manager, Microsoft Intune lub Microsoft Endpoint Configuration Manager, do odbierania konfiguracji zabezpieczeń dla programu Microsoft Defender bezpośrednio z Endpoint Manager.
+Zarządzanie zabezpieczeniami dla Ochrona punktu końcowego w usłudze Microsoft Defender to funkcja dla urządzeń, które nie są zarządzane przez Microsoft Endpoint Manager, Microsoft Intune lub Microsoft Endpoint Configuration Manager, aby odbierać konfiguracje zabezpieczeń usługi Microsoft Defender bezpośrednio z Endpoint Manager.
 
 
-Aby uzyskać więcej informacji na temat zarządzania konfiguracją zabezpieczeń, w tym wymagań wstępnych, obsługiwanych platform i nie tylko, zobacz Zarządzanie programem [Microsoft Defender for Endpoint na](/mem/intune/protect/mde-security-integration) urządzeniach z systemem Microsoft Endpoint Manager.
+Aby uzyskać więcej informacji na temat zarządzania konfiguracją zabezpieczeń, w tym wymagania wstępne, obsługiwane platformy i nie tylko, zobacz [Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach z Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
 
 
 [!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 
 >[!NOTE]
->Ta funkcja jest wprowadzana stopniowo. 
+>Ta funkcja jest wdrażana stopniowo. 
 
-Aby uzyskać więcej informacji na temat zarządzania konfiguracją zabezpieczeń, zobacz [Zarządzanie programem Microsoft Defender dla punktu końcowego na urządzeniach z systemem Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
+Aby uzyskać więcej informacji na temat zarządzania konfiguracją zabezpieczeń, zobacz [Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach z Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
-Jeśli wystąpią problemy z rejestracją, zobacz [Rozwiązywanie problemów z konfiguracją zabezpieczeń podczas dołączania](troubleshoot-security-config-mgt.md).
+Jeśli wystąpią problemy z rejestracją, zobacz [Rozwiązywanie problemów z dołączaniem do usługi Security Configuration Management](troubleshoot-security-config-mgt.md).
 
 > [!NOTE]
-> Ta funkcja nie dotyczy urządzeń, które zostały już zarejestrowane w usłudze Microsoft Endpoint Manager (Intune lub Menedżer konfiguracji). Urządzenia zarejestrowane w usłudze Intune nadal będą otrzymywać zasady za pośrednictwem ustanowionego kanału zarządzania.
+> Ta funkcja nie ma zastosowania do urządzeń, które zostały już zarejestrowane w Microsoft Endpoint Manager (Intune lub Configuration Manager). Urządzenia zarejestrowane w Intune będą nadal otrzymywać zasady za pośrednictwem ustalonego kanału zarządzania.
 
-## <a name="identify-onboarded-devices"></a>Identyfikowanie urządzeń podłączonych do urządzenia
+## <a name="identify-onboarded-devices"></a>Identyfikowanie dołączonych urządzeń
 
-Skorzystaj z poniższych kroków, aby sprawdzić, czy punkty końcowe pomyślnie ukończyły proces dołączania do usługi Zarządzanie zabezpieczeniami programu Microsoft Defender for Endpoint.
+Wykonaj poniższe kroki, aby sprawdzić, czy punkty końcowe pomyślnie ukończyły proces dołączania usługi Security Management for Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-1.  Sprawdź, czy urządzenie jest wyświetlane w sekcji Spis urządzeń [w](https://security.microsoft.com/) Microsoft 365 Defender.
+1.  Sprawdź, czy urządzenie jest wyświetlane w sekcji Spis urządzeń [w Microsoft 365 Defender](https://security.microsoft.com/).
 
-2.  W portalu [Azure Active Directory upewnij](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/) się, że urządzenie zostało pomyślnie zarejestrowane.
+2.  W [portalu Azure Active Directory](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/) sprawdź, czy urządzenie zostało pomyślnie zarejestrowane.
 
-3.  W centrum [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview) administracyjnego sprawdź, czy urządzenie zostało pomyślnie zarejestrowane, szukając go w sekcji Urządzenia **> Wszystkie** urządzenia.
+3.  W [centrum administracyjnym Microsoft Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview) sprawdź, czy urządzenie zostało pomyślnie zarejestrowane, przeglądając je w sekcji **Urządzenia > Wszystkie urządzenia**.
 
 
-## <a name="offboard-devices"></a>Urządzenia przenośne
-Aby uzyskać informacje o urządzeniach wynoszowanych za pośrednictwem zarządzania zabezpieczeniami dla programu Microsoft Defender for Endpoint, zobacz Urządzenia wynoszone z usługi [Microsoft Defender for Endpoint](offboard-machines.md).
+## <a name="offboard-devices"></a>Urządzenia odłączone
+Aby odłączyć urządzenia, które zostały dołączone za pośrednictwem usługi Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender, zobacz [Odłącz urządzenia z usługi Ochrona punktu końcowego w usłudze Microsoft Defender](offboard-machines.md).
 
 >[!NOTE]
->Wyniesienie [spowoduje wyłączenie ochrony przed naruszeniami](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) , jeśli jest włączona.
+>Odłączanie [spowoduje wyłączenie ochrony przed naruszeniami](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) , jeśli jest włączona.
 
 ## <a name="troubleshooting-security-management"></a>Rozwiązywanie problemów z zarządzaniem zabezpieczeniami 
-Aby rozwiązać problemy z zarządzaniem zabezpieczeniami dla programu Microsoft Defender dla rejestrowania punktu końcowego, zobacz Rozwiązywanie problemów dotyczących dołączania związanych z zarządzaniem zabezpieczeniami programu [Microsoft Defender dla punktu końcowego](troubleshoot-security-config-mgt.md).
+Aby rozwiązać problemy z zarządzaniem zabezpieczeniami w Ochrona punktu końcowego w usłudze Microsoft Defender rejestracji, zobacz [Rozwiązywanie problemów z dołączaniem związanych z usługą Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender](troubleshoot-security-config-mgt.md).
 
 ## <a name="related-topic"></a>Temat pokrewny
-- [Rozwiązywanie problemów z dołączaniem związanych z zarządzaniem zabezpieczeniami dla programu Microsoft Defender dla punktu końcowego](troubleshoot-security-config-mgt.md)
-- [Zarządzanie programem Microsoft Defender for Endpoint na urządzeniach za pomocą Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-mde-security-configuration-management)
+- [Rozwiązywanie problemów z dołączaniem związanych z usługą Security Management dla Ochrona punktu końcowego w usłudze Microsoft Defender](troubleshoot-security-config-mgt.md)
+- [Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender na urządzeniach przy użyciu Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-mde-security-configuration-management)

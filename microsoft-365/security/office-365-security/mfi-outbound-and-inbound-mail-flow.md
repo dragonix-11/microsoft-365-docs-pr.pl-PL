@@ -14,12 +14,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Administratorzy mogą dowiedzieć się więcej o przepływie poczty wychodzącej i przychodzącej na pulpicie nawigacyjnym przepływu poczty w Centrum zabezpieczeń & zgodności.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5de9c699a12a7c3f282c4e1752eb23c5842a8c5d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 3bc9d6c08dfc1c232018d79e988d741505079604
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679615"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475724"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Szczegółowe informacje o przepływie poczty wychodzącej i przychodzącej w Centrum & zabezpieczeń i zgodności
 
@@ -27,14 +27,14 @@ ms.locfileid: "63679615"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Szczegółowe **informacje o** przepływie poczty wychodzącej i przychodzącej na pulpicie nawigacyjnym przepływu poczty w Centrum zgodności usługi [& Security &](https://protection.office.com) łączą [](view-mail-flow-reports.md#connector-report) informacje z raportu łącznika i byłego raportu przeglądu **usługi TLS** w jednym miejscu.[](mail-flow-insights-v2.md)
 
 W widżecie jest wyświetlane szyfrowanie TLS używane na poziomie połączenia, gdy wiadomości są dostarczane do i z organizacji. Połączenia ustanowione z innymi usługami poczty e-mail są szyfrowane przez szyfrowanie TLS, gdy szyfrowanie TLS jest oferowane przez obie strony. Widżet umożliwia migawkę przepływu poczty z ostatniego tygodnia.
 
-![Widżet przychodzącego i wychodzącego przepływu poczty e-mail na pulpicie nawigacyjnym przepływu poczty w Centrum & zabezpieczeń.](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png" alt-text="Widżet wychodzącego i przychodzącego przepływu poczty e-mail na pulpicie nawigacyjnym przepływu poczty w Centrum & zgodności" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png":::
 
 Informacje w widżecie są związane z łącznikami i ochroną wiadomości TLS w Microsoft 365. Aby uzyskać więcej informacji, zobacz następujące tematy:
 
@@ -46,7 +46,7 @@ Informacje w widżecie są związane z łącznikami i ochroną wiadomości TLS w
 
 Gdy klikniesz **pozycję Wyświetl szczegóły** w widżecie, wysuuwana wiadomość chroniona podczas przesyłania **(przez TLS)** pokazuje ochronę TLS dla wiadomości wprowadzanych i opuszczających organizację.
 
-![Wiadomości chronione podczas przesyłania (przez TLS) wyświetlane po kliknięciu przycisku Wyświetl szczegóły na widżetze wychodzącej i przychodzącej poczty e-mail.](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png" alt-text="Wysuw wiadomości chronionych przez TLS wyświetlany po kliknięciu przycisku Wyświetl szczegóły na widżetze wychodzącej i przychodzącej poczty e-mail" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png":::
 
 Obecnie TLS 1.2 jest najbezpiecznszą wersją usługi TLS oferowaną przez firmę Microsoft 365. Często musisz znać szyfrowanie TLS, które jest używane do inspekcji zgodności. Prawdopodobnie nie masz bezpośredniej relacji z większości źródłowych i docelowych serwerów poczty e-mail (nie jesteś ich właścicielem ani firmą Microsoft), dlatego nie masz wielu opcji ulepszenia szyfrowania TLS używanego przez te serwery.
 

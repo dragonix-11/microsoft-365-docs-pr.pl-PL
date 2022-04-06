@@ -1,7 +1,7 @@
 ---
-title: Krok nr 5. Opracuj i testuj przypadki użycia
-description: Podstawy opracowywania i testowania przypadków użycia podczas integrowania Microsoft 365 Defender z operacjami zabezpieczeń.
-keywords: zdarzenia, alerty, badanie, korelacja, ataki, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, poczta e-mail, 365, microsoft, m365, reagowanie na incydenty, cyberataki, zabezpieczenia, operacje zabezpieczeń, soc
+title: Krok nr 5. Opracowywanie i testowanie przypadków użycia
+description: Podstawy tworzenia i testowania przypadków użycia podczas integrowania Microsoft 365 Defender z operacjami zabezpieczeń.
+keywords: zdarzenia, alerty, badanie, korelacja, atak, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, adres e-mail, 365, microsoft, m365, reagowanie na zdarzenia, cyberatak, secops, operacje zabezpieczeń, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,131 +22,131 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6621ca47356f87edd47a905e4edeb592d9b556ff
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 732b10bceaa3509f28f607228dc20ad6e941cb2f
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499094"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664463"
 ---
-# <a name="step-5-develop-and-test-use-cases"></a>Krok nr 5. Opracuj i testuj przypadki użycia
+# <a name="step-5-develop-and-test-use-cases"></a>Krok nr 5. Opracowywanie i testowanie przypadków użycia
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 - Microsoft 365 Defender
 
-Zalecane metody wdrażania usługi Microsoft 365 Defender w Centrum zabezpieczeń (SOC, Security Operations Center) zależą od bieżącego zestawu narzędzi, procesów i zestawów umiejętności dostępnych w zespole SOC. Zapewnienie ochrony przed cyberatakami na różnych platformach może być trudne ze względu na ogromną ilość danych pochodzących z dziesiątek, a nawet setek źródeł zabezpieczeń. 
+Zalecane metody wdrażania Microsoft 365 Defender w centrum operacji zabezpieczeń (SOC) zależą od bieżącego zestawu narzędzi, procesów i zestawów umiejętności zespołu SOC. Utrzymanie higieny cybernetycznej na różnych platformach może być trudne ze względu na ogromną ilość danych pochodzących z dziesiątek, jeśli nie setek źródeł bezpieczeństwa. 
 
-Narzędzia zabezpieczeń są ze sobą powiązane. Włączenie jednej funkcji w technologii zabezpieczeń lub zmiana procesu może spowodować przerwę w pracy drugiej. Z tego powodu firma Microsoft zaleca, aby Twój zespół SOC sformalizować metodę definiowania i ustalania priorytetów przypadków użycia. Przypadki użycia ułatwiają definiowanie wymagań i procesów testowych dla operacji SOC w różnych zespołach. Tworzy metodologię przechwytywania metryk w celu określenia, czy właściwe role i kombinacje zadań są dostosowane do odpowiedniego zespołu za pomocą odpowiednich umiejętności. 
+Narzędzia zabezpieczeń są ze sobą powiązane. Włączenie jednej funkcji w technologii zabezpieczeń lub zmiana procesu może z kolei złamać inną. Z tego powodu firma Microsoft zaleca zespołowi SOC sformalizowanie metody definiowania i określania priorytetów przypadków użycia. Przypadki użycia ułatwiają definiowanie wymagań i procesów testowych dla operacji SOC w różnych zespołach. Tworzy metodologię przechwytywania metryk w celu określenia, czy odpowiednie role i kombinacja zadań są dopasowane do odpowiedniego zespołu z odpowiednimi zestawami umiejętności. 
 
-## <a name="develop-and-formalize-use-case-process"></a>Opracowywanie i sformalizowanie procesu przypadków użycia
+## <a name="develop-and-formalize-use-case-process"></a>Opracowywanie i formalizowanie procesu przypadków użycia
 
-SoC powinien zdefiniować wysokopoziomowy standard i proces opracowywania spraw użycia, który będzie uregulowany przez zespół soc nadzór. Zespół nadzorcy SOC powinien współpracować z Twoją firmą, IT, prawny, działem kadr i innymi grupami, aby ustalić priorytety przypadków użycia dla SOC, które ostatecznie trafią do podręczników i podręczników zespołu SOC. Priorytet przypadków użycia jest oparty na celach, takich jak zgodność z przepisami lub prywatność.
+SOC powinna zdefiniować wysoki poziom standardu i proces opracowywania przypadków użycia, który byłby regulowany przez zespół nadzoru SOC. Zespół nadzoru SOC powinien współpracować z Twoją firmą, działem IT, działem prawnym, kadrą i innymi grupami, aby ustalić priorytet przypadków użycia soc, które ostatecznie trafią do elementów runbook i podręczników zespołu SOC. Priorytetowe przypadki użycia są oparte na celach, takich jak zgodność lub prywatność.
 
-Działania nadzorowe SOC związane z tworzeniem przypadków użycia obejmują: 
+Działania związane z nadzorem SOC związane z opracowywaniem przypadków użycia obejmują: 
 
 - Wymagania
-- Potrzeby w zakresie personelu lub szkolenia
+- Potrzeby kadrowe lub szkoleniowe
 - Licencje na oprogramowanie
-- Dostawca zawierająca umowę
+- Kontraktowanie dostawcy
 - Zarządzanie planem
 - Obsługa rejestru przypadków użycia
 - Obsługa/aktualizowanie szablonów
 
-Aby ułatwić proces tworzenia podręcznika i podręcznika, utwórz drzewo decyzji o przypadku użycia. Na poniższym rysunku pokazano przykład.
+Aby ułatwić procesy tworzenia elementów runbook i podręczników, utwórz drzewo decyzyjne przypadków użycia. Na tej ilustracji przedstawiono przykład.
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Proces decyzyjny w przypadku użycia" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Proces podejmowania decyzji w sprawie użycia" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
 
-Po zatwierdzeniu i zatwierdzeniu standardu użycia wysokiego poziomu kolejnym krokiem jest utworzenie i przetestowanie rzeczywistego przypadku użycia. W poniższych sekcjach jako przykładów są wykorzystanie scenariuszy ochrony przed wyłudzaniem informacji oraz zagrożeniami i lukami w zabezpieczeniach.
+Po zdefiniowaniu i zatwierdzeniu standardowego przypadku użycia wysokiego poziomu następnym krokiem jest utworzenie i przetestowanie rzeczywistego przypadku użycia. W poniższych sekcjach użyto scenariuszy ochrony przed wyłudzaniem informacji i zagrożeń oraz skanowania luk w zabezpieczeniach jako przykładów.
 
-## <a name="use-case-example-1-new-phishing-variant"></a>Przykład użycia przypadku 1: Nowy wariant wyłudzania informacji
+## <a name="use-case-example-1-new-phishing-variant"></a>Przykład przypadku użycia 1: nowy wariant wyłudzania informacji
 
-Pierwszym krokiem podczas tworzenia przypadku użycia jest utworzenie konspektu przepływu pracy przy użyciu tablicy historii. Oto przykład wysokiej klasy historii dla nowego powiadomienia o wyłudzaniu informacji dla zespołu analizy zagrożeń.
+Pierwszym krokiem tworzenia przypadku użycia jest przedstawienie przepływu pracy przy użyciu tablicy scenariuszy. Oto przykład tablicy historii wysokiego poziomu dla nowego powiadomienia o wyłudzaniu informacji dla zespołu analizy zagrożeń.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Przepływ pracy dla kampanii zapobiegającej wyłudzaniu informacji" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Przepływ pracy przypadku użycia kampanii chroniącej przed wyłudzaniem informacji" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
 
-### <a name="invoke-the-use-case-workflow-for-example-1"></a>Wywoływanie przepływu pracy przypadek użycia, na przykład 1
+### <a name="invoke-the-use-case-workflow-for-example-1"></a>Wywołaj przepływ pracy przypadku użycia, na przykład 1
 
-Kolejnym krokiem po zatwierdzeniu tablicy historii jest wywołanie przepływu pracy przypadków użycia. Oto przykładowy proces kampanii zapobiegającej wyłudzaniu informacji. 
+Po zatwierdzeniu tablicy scenariuszy następnym krokiem jest wywołanie przepływu pracy przypadku użycia. Oto przykładowy proces kampanii chroniącej przed wyłudzaniem informacji. 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Przepływ pracy ze szczegółową sprawą użycia dla kampanii zapobiegającej wyłudzaniu informacji" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Szczegółowy przepływ pracy przypadków użycia dla kampanii chroniącej przed wyłudzaniem informacji" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
 
-## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>Przykład 2. Przykład użycia: Skanowanie w przypadku zagrożeń i luk w zabezpieczeniach
+## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>Przykład przypadku użycia 2: skanowanie zagrożeń i luk w zabezpieczeniach
 
-Inny scenariusz, w którym można użyć przypadku użycia, służy do skanowania zagrożeń i luk w zabezpieczeniach. W tym przykładzie SOC wymaga korygowania zagrożeń i luk w zabezpieczeniach przed zasobami za pośrednictwem zatwierdzonych procesów, które obejmują skanowanie zasobów. 
+Innym scenariuszem, w którym można użyć przypadku użycia, jest skanowanie zagrożeń i luk w zabezpieczeniach. W tym przykładzie soc wymaga, aby zagrożenia i luki w zabezpieczeniach były korygowane względem zasobów za pośrednictwem zatwierdzonych procesów, które obejmują skanowanie zasobów. 
 
-Oto przykładowy storyboard wysokiego poziomu dla Zarządzanie zagrożeniami i lukami zasobów.
+Oto przykładowa scenorys wysokiego poziomu dla Zarządzanie zagrożeniami i lukami zasobów.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Przepływ pracy przypadek użycia dla Zarządzanie zagrożeniami i lukami" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Przepływ pracy przypadku użycia dla Zarządzanie zagrożeniami i lukami" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
-### <a name="invoke-the-use-case-workflow-for-example-2"></a>Wywoływanie przepływu pracy przypadku użycia, na przykład 2
+### <a name="invoke-the-use-case-workflow-for-example-2"></a>Wywołaj przepływ pracy przypadku użycia, na przykład 2
 
 Oto przykładowy proces skanowania zagrożeń i luk w zabezpieczeniach.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Przepływ pracy ze szczegółowymi informacjami o przypadku użycia dla Zarządzanie zagrożeniami i lukami" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Szczegółowy przepływ pracy przypadków użycia dla Zarządzanie zagrożeniami i lukami" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
  
-### <a name="analyze-the-use-case-output-and-lessons-learned"></a>Analizowanie danych wyjściowych przypadków użycia i lekcji
+### <a name="analyze-the-use-case-output-and-lessons-learned"></a>Analizowanie danych wyjściowych przypadków użycia i wyciągniętych wniosków
 
-Po zatwierdzeniu i przetestowaniu przypadku użycia należy zidentyfikować odstępy między zespołami zabezpieczeń, a także osoby, procesy i Microsoft 365 Defender technologii. Microsoft 365 Defender technologii powinny być analizowane w celu określenia, czy są one w stanie uzyskać oczekiwane wyniki. Można je śledzić za pomocą listy kontrolnej lub macierzy. 
+Po zatwierdzeniu i przetestowaniu przypadku użycia należy zidentyfikować luki między zespołami ds. zabezpieczeń wraz z osobami, procesami i zaangażowanymi technologiami Microsoft 365 Defender. Microsoft 365 Defender technologie powinny być analizowane w celu określenia, czy są w stanie osiągnąć pożądane wyniki. Można je śledzić za pomocą listy kontrolnej lub macierzy. 
 
-Na przykład w scenariuszu ochrony przed wyłudzaniem informacji zespoły SOC mogły wykryć dane w tej tabeli.
+Na przykład w przykładzie scenariusza ochrony przed wyłudzaniem informacji zespoły SOC mogły wprowadzić odkrycia w tej tabeli.
 
 
-| Zespół SOC | Wymaganie | Wymagania dotyczące osób spełniających wymagania | Proces, który spełnia wymagania | Odpowiednie technologie | Zidentyfikowano przerwę | Dziennik zmian przypadków użycia | Wykluczona (Y/N) |
+| Zespół SOC | Wymóg | Osoby spełniające wymagania | Proces spełniający wymagania | Odpowiednia technologia | Zidentyfikowano lukę | Dziennik zmian przypadków użycia | Wykluczenie (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
-| Zespół analizy i analizy zagrożeń | Źródła danych prawidłowo podające aparaty analizy zagrożeń. | Analityk/inżynier analizy zagrożeń | Ustanowione wymagania dotyczące źródeł danych, wyzwalacze analizy zagrożeń z zatwierdzonych źródeł | Microsoft Defender for Identity, Ochrona punktu końcowego w usłudze Microsoft Defender | Zespół analizy zagrożeń nie używa skryptu automatyzacji do łączenia interfejsu API Microsoft 365 Defender z wyszukiwarkami zagrożeń | Dodawanie Microsoft 365 Defender jako źródeł danych do aparatów zagrożeń <BR> <BR> Aktualizowanie książki uruchamiania przypadków użycia | N |
-| Monitorowanie zespołu | Źródła danych są prawidłowo podawanie pulpitów nawigacyjnych monitorowania | Raporty i alerty analityków soc warstwy 1,2 & i alerty | Przepływ pracy do raportowania wyników bezpiecznego & Centrum zgodności | [Alerty w Centrum & zgodności](/microsoft-365/security/office-365-security/alerts)  <br><br> Monitorowanie bezpiecznego wyniku  | Brak mechanizmu dla analityków SOC do zgłaszania udanego nowego wykrywania wariantu wyłudzania informacji w celu zwiększenia bezpiecznego wyniku <br><br> [Raportowanie w Centrum & zabezpieczeń](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Dodawanie procesu śledzenia poprawy bezpiecznego wyniku do raportowania przepływów pracy | N | 
-| Zespół inżynierów i secops | Aktualizacje kontroli zmian są dokonywane w podręcznikach uruchamiania zespołu SOC | Inżynier SOC warstwy 2 | Procedura powiadomień o zmianie kontroli dla podręczników zespołu SOC | Zatwierdzone zmiany dotyczące urządzeń zabezpieczających | Zmiany w Microsoft 365 Defender technologii zabezpieczeń SOC wymagają zatwierdzenia | Dodaj Microsoft Defender for Cloud Apps, Defender for Identity, Defender for Endpoint, Security & Compliance Center to SOC runbooks | T |
+| Zespół ds. analizy zagrożeń i analizy | Źródła danych prawidłowo zasilają aparaty analizy zagrożeń. | Analityk/inżynier analizy zagrożeń | Ustanowione wymagania dotyczące źródła danych, wyzwalacze analizy zagrożeń z zatwierdzonych źródeł | Microsoft Defender for Identity, Ochrona punktu końcowego w usłudze Microsoft Defender | Zespół analizy zagrożeń nie używał skryptu automatyzacji do łączenia interfejsu API Microsoft 365 Defender z aparatami intel zagrożeń | Dodawanie Microsoft 365 Defender jako źródeł danych do aparatów zagrożeń <BR> <BR> Aktualizowanie książki przebiegu przypadku użycia | N |
+| Zespół ds. monitorowania | Źródła danych prawidłowo podają pulpity nawigacyjne monitorowania | Alerty & monitorowania & warstwy 1,2 SOC | Przepływ pracy raportowania wskaźnika bezpieczeństwa centrum zgodności & zabezpieczeń | [Alerty w Centrum zgodności & zabezpieczeń](/microsoft-365/security/office-365-security/alerts)  <br><br> Monitorowanie wskaźnika bezpieczeństwa  | Brak mechanizmu zgłaszania przez analityków SOC pomyślnego wykrywania nowych wariantów wyłudzania informacji w celu poprawy wskaźnika bezpieczeństwa <br><br> [Raportowanie w Centrum zgodności & zabezpieczeń](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Dodawanie procesu śledzenia poprawy wskaźnika bezpieczeństwa do przepływów pracy raportowania | N | 
+| Zespół inżynierów i secops | Aktualizacje kontroli zmian są wprowadzane w elementach Runbook zespołu SOC | Inżynier SOC warstwy 2 | Procedura powiadamiania o zmianie kontrolki dla elementów Runbook zespołu SOC | Zatwierdzone zmiany w urządzeniach zabezpieczeń | Zmiany Microsoft 365 Defender łączności z technologią zabezpieczeń SOC wymagają zatwierdzenia | Dodaj Microsoft Defender for Cloud Apps, Defender for Identity, Defender for Endpoint, Security & Compliance Center do elementów runbook SOC | T |
 |||||||||
 
-Ponadto zespoły SOC mogły także odkryć opisane w poniższej tabeli dotyczące opisanego powyżej Zarządzanie zagrożeniami i lukami scenariuszu:
+Ponadto zespoły SOC mogły wykonać odkrycia opisane w poniższej tabeli w odniesieniu do scenariusza Zarządzanie zagrożeniami i lukami opisanego powyżej:
 
-| Zespół SOC | Wymaganie | Wymagania dotyczące osób spełniających wymagania | Proces, który spełnia wymagania | Odpowiednie technologie | Zidentyfikowano przerwę | Dziennik zmian przypadków użycia | Wykluczona (Y/N) |
+| Zespół SOC | Wymóg | Osoby spełniające wymagania | Proces spełniający wymagania | Odpowiednia technologia | Zidentyfikowano lukę | Dziennik zmian przypadków użycia | Wykluczenie (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
-| Nadzór SOC | Wszystkie zasoby połączone z zatwierdzonymi sieciami są identyfikowane i kategoryzowane | Nadzór SOC, właściciele BU, właściciele aplikacji, właściciele zasobów IT itp. | Scentralizowany system zarządzania zasobami do odnajdowania i tworzenia listy kategorii elementów zawartości oraz atrybutów na podstawie ryzyka. | ServiceNow lub inne zasoby. <br><br>[Microsoft 365 spisu urządzeń](/security/defender-endpoint/device-discovery) | Odnaleziono tylko 70% zasobów. Microsoft 365 Defender środków zaradczych obowiązuje tylko w przypadku znanych zasobów | Usługi zarządzania cyklem życia dla osób dorosłych, Microsoft 365 Defender mają dostęp do 100% zasobów | N |
-| Funkcje & SecOps Teams | Rozwiązywanie problemów o wysokim wpływie i krytycznych luk w zabezpieczeniach zasobów jest korygowane zgodnie z zasadami | Inżynierowie secops, analitycy SOC: luka w & zgodności, inżynieria zabezpieczeń | Zdefiniowany proces kategoryzowania luk w zabezpieczeniach o wysokim poziomie ryzyka i krytycznym poziomie wykorzystania | [Pulpity nawigacyjne zarządzania zagrożeniami i lukami w zabezpieczeniach](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Program Defender for Endpoint zidentyfikował urządzenia o wysokim poziomie wydajności i alertach bez planu rozwiązywania problemów ani wdrożenia zalecanych działań firmy Microsoft | Dodaj przepływ pracy do powiadamiania właścicieli zasobów, gdy działania naprawcze są wymagane w ciągu 30 dni od zasady. Wdrożenie systemu biletowania w celu powiadamiania właścicieli zasobów o krokach rozwiązywania problemów. | N |
-| Monitorowanie Teams | Stan zagrożenia i luki w zabezpieczeniach jest zgłaszany za pośrednictwem firmowego portalu intranetowego | Analityk SOC warstwy 2 | Raporty wygenerowane automatycznie Microsoft 365 Defender z postępem rozwiązywania problemów dotyczących zasobów | [Alerty w Centrum & zgodności](/microsoft-365/security/office-365-security/alerts) <br><br> Monitorowanie bezpiecznego wyniku | Właściciele zasobów nie mogą raportować żadnych widoków ani raportów na pulpicie nawigacyjnym dotyczących zagrożeń i luk w zabezpieczeniach. | Utwórz skrypt automatyzacji, aby wypełnić stan rozwiązywania problemów z zabezpieczeniami o wysokim poziomie ryzyka i krytycznym poziomie wykorzystania zasobów w organizacji. | N |
+| Nadzór SOC | Wszystkie zasoby połączone z zatwierdzonymi sieciami są identyfikowane i kategoryzowane | Nadzór SOC, właściciele BU, właściciele aplikacji, właściciele zasobów IT itp. | Scentralizowany system zarządzania zasobami umożliwiający odnajdywanie i wyświetlanie listy kategorii i atrybutów zasobów na podstawie ryzyka. | ServiceNow lub inne zasoby. <br><br>[spis urządzeń Microsoft 365](/security/defender-endpoint/device-discovery) | Odnaleziono tylko 70% zasobów. Microsoft 365 Defender śledzenie korygowania obowiązujące tylko w przypadku znanych zasobów | Dojrzałe usługi zarządzania cyklem życia zasobów w celu zapewnienia, że Microsoft 365 Defender ma 100% pokrycia | N |
+| Inżynieria & SecOps Teams | Wysoki wpływ i krytyczne luki w zabezpieczeniach zasobów są korygowane zgodnie z zasadami | Inżynierowie secOps, analitycy SOC: luka w zabezpieczeniach & zgodności, inżynieria zabezpieczeń | Zdefiniowany proces kategoryzowania luk w zabezpieczeniach wysokiego ryzyka i krytycznych | [Pulpity nawigacyjne zarządzania zagrożeniami i lukami w zabezpieczeniach](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Usługa Defender for Endpoint zidentyfikowała urządzenia o dużym wpływie i wysokim poziomie alertów bez planu korygowania ani implementacji zalecanego działania firmy Microsoft | Dodaj przepływ pracy do powiadamiania właścicieli zasobów, gdy działanie korygujące jest wymagane w ciągu 30 dni dla zasad; Zaimplementuj system biletów, aby powiadomić właścicieli zasobów o krokach korygowania. | N |
+| Monitorowanie Teams | Stan zagrożenia i luki w zabezpieczeniach jest zgłaszany za pośrednictwem firmowego portalu intranetowego | Analityk SOC warstwy 2 | Automatycznie generowane raporty z Microsoft 365 Defender pokazujące postęp korygowania zasobów | [Alerty w Centrum zgodności & zabezpieczeń](/microsoft-365/security/office-365-security/alerts) <br><br> Monitorowanie wskaźnika bezpieczeństwa | Brak widoków ani raportów pulpitu nawigacyjnego przekazywanych właścicielom zasobów dotyczących zagrożeń i stanu luk w zabezpieczeniach zasobów. | Utwórz skrypt automatyzacji, aby wypełnić stan korygowania luk w zabezpieczeniach dotyczących wysokiego ryzyka i krytycznego zasobu w organizacji. | N |
 |||||||||
 
-W tych przykładowych przypadkach testów dostrzeżono kilka luk w wymaganiach zespołu SOC, które zostały określone jako linie bazowe obowiązków każdego zespołu. Lista kontrolna przypadków użycia może być tak wyczerpująca, jak to konieczne, aby upewnić się, że zespół SOC jest przygotowany na integrację tego Microsoft 365 Defender z nowymi lub istniejącymi wymaganiami soC. Ponieważ będzie to proces iteracyjny, proces opracowywania przypadków użycia i zawartość wyjściowa przypadków użycia w naturalny sposób będą służyć aktualizowaniu i wywrzeniu wniosków o zajęciach prowadzonych przez SOC.
+W takich przykładowych przypadkach użycia testy ujawniły kilka luk w wymaganiach zespołu SOC, które zostały ustanowione jako punkty odniesienia dla obowiązków każdego zespołu. Lista kontrolna przypadków użycia może być tak kompleksowa, jak to konieczne, aby upewnić się, że zespół SOC jest przygotowany do integracji Microsoft 365 Defender z nowymi lub istniejącymi wymaganiami SOC. Ponieważ będzie to proces iteracyjny, proces tworzenia przypadków użycia i zawartość wyjściowa przypadku użycia będą naturalnie służyć do aktualizowania i dojrzewania elementów Runbook SOC z wyciągniętymi doświadczeniami.
 
-## <a name="update-production-runbooks-and-playbooks"></a>Aktualizowanie podręczników i podręczników produkcyjnych
+## <a name="update-production-runbooks-and-playbooks"></a>Aktualizowanie produkcyjnych elementów Runbook i podręczników
 
-Po zakończeniu testowania przypadków użycia w przypadku wszystkich luk wnioski i zebrane w nich metryki można włączyć do podręczników produkcyjnych (procesów operacyjnych) i podręczników zespołu SOC (odpowiedzi na incydenty i procedury eskalacji). 
+Po skorygowaniu wszystkich luk w testach przypadków użycia zebrane w nich wnioski i metryki można włączyć do produkcyjnych elementów Runbook zespołu SOC (procesów operacyjnych) i podręczników (odpowiedzi na zdarzenia i procedury eskalacji). 
 
-Konserwacja podręczników i podręczników zespołu SOC można zorganizować na wiele sposobów. Każdy zespół soc może być odpowiedzialny za własny lub może być dostępna jedna scentralizowana wersja dla wszystkich zespołów do udostępnienia w centralnym repozytorium. Zarządzanie podręcznikiem i podręcznikami dla poszczególnych organizacji jest oparte na wielkości, poszczególnych umiejętnościach, rolach i podziałze obowiązków. Po zaktualizowaniu podręcznika należy postępować zgodnie z procesem aktualizacji podręcznika. 
+Konserwację elementów runbook i podręczników zespołu SOC można organizować na wiele sposobów. Każdy zespół SOC może być odpowiedzialny za własne lub może istnieć jedna scentralizowana wersja dla wszystkich zespołów do udostępniania w centralnym repozytorium. Zarządzanie elementami runbook i podręcznikami dla poszczególnych organizacji zależy od rozmiaru, zestawu umiejętności, ról i podziału obowiązków. Po zaktualizowaniu elementu Runbook powinien nastąpić proces aktualizacji podręcznika. 
 
-## <a name="use-a-standard-framework-for-escalation"></a>Używanie standardowej struktury do eskalacji
+## <a name="use-a-standard-framework-for-escalation"></a>Używanie standardowej struktury na potrzeby eskalacji
 
-Podręczniki to czynności, które zespoły SOC będą musiały wykonać w przypadku wystąpienia rzeczywistego zdarzenia, na podstawie pomyślnej integracji i przetestowania przypadku użycia. Dlatego bardzo ważne jest, aby SOC podlegał formalnemu podejściem do reagowania na incydenty, takim jak standard [NIST Incident Response Standard](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) , który stał się jednym z najlepszych standardów branżowych w zakresie reagowania na incydenty.
+Podręczniki to kroki, które zespoły SOC będą musiały wykonać w przypadku wystąpienia rzeczywistego zdarzenia w oparciu o pomyślną integrację i test przypadku użycia. Dlatego konieczne jest, aby SOC przestrzegała sformalizowanego podejścia do reagowania na zdarzenia, takiego jak [NIST Incident Response Standard](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf) , który stał się jednym z wiodących standardów branżowych w zakresie reagowania na zdarzenia.
 
-Czteroetapowy proces reagowania na zdarzenia w programie NIST obejmuje cztery fazy:
+Czteroetapowy proces reagowania na zdarzenia NIST obejmuje cztery fazy:
 
 1.  Przygotowanie
 2.  Wykrywanie i analiza
-3.  Zawieranie, tylko wiadowanie i odzyskiwanie
-4.  Działania po zdarzeniu
+3.  Hermetyzowanie, eliminowanie i odzyskiwanie
+4.  Działanie po zdarzeniu
 
-### <a name="example-tracking-preparation-phase-activity"></a>Przykład: Śledzenie aktywności fazy przygotowawowej
+### <a name="example-tracking-preparation-phase-activity"></a>Przykład: Śledzenie działania fazy przygotowywania
 
-Jedną z podstawowych podstaw podręcznika eskalacji jest zapewnienie niewielkiej niejednoznaczności co do tego, co każdy zespół soc powinien zrobić przed zdarzeniem lub zdarzeniem, w jego trakcie i po nim. Dlatego warto wyświetlić instrukcje krok po kroku. 
+Jedną z podstawowych podstaw podręcznika eskalacji jest zapewnienie niewielkiej dwuznaczności co do tego, co każdy zespół SOC ma robić przed, w trakcie i po zdarzeniu lub zdarzeniu. W związku z tym dobrym rozwiązaniem jest wyświetlenie listy instrukcji krok po kroku. 
 
-Na przykład faza przygotowawcza może zawierać macierz zadań jeżeli/to lub XoR. W przypadku nowego przykładu użycia wariantu wyłudzania informacji taka macierz może wyglądać tak:
+Na przykład faza przygotowania może obejmować macierz zadań if/then lub XoR. W przypadku nowego przykładowego przypadku użycia wariantu wyłudzania informacji taka macierz może wyglądać następująco:
 
-| Dlaczego jest objęte gwarancją eskalacji? | Następny krok |
+| Dlaczego eskalacja jest uzasadniona? | Następny krok |
 |:-------|:-----|
-| Alert w monitorze SOC oceniony jako **krytyczny** wyzwolony > **500/godzinę** | Przejdź do podręcznika A, sekcji 2, Działania 5 (z linkiem do sekcji podręcznika) |
-| Oprogramowanie e Commerce zgłosiło potencjalne ataki DDoS | Wywołaj podręcznik B-sekcja C, Działanie 19 (z linkiem do sekcji podręcznika) |
-| Kierownictwo zgłosił podejrzaną wiadomość e-mail jako próbę wyłudzenia informacji | Przejdź do podręcznika 5, sekcji 2, działania 5 (z linkiem do sekcji podręcznika) |
+| Alert w monitorowaniu SOC oceniony jako wyzwalany **krytycznie** > **500/godzinę** | Przejdź do podręcznika A, sekcji 2, działania 5 (z linkiem do sekcji podręcznika) |
+| eCommerce zgłosiło potencjalny atak DDoS | Wywoływanie podręcznika B-Sekcja C, Działanie 19 (z linkiem do sekcji podręcznika) |
+| Kierownictwo zgłosiło podejrzaną wiadomość e-mail jako próbę wyłudzania informacji | Przejdź do podręcznika 5, sekcji 2, działania 5 (z linkiem do sekcji podręcznika) |
 |||
 
-Po wykonaniu fazy przygotowawczych organizacje powinny wywoływać pozostałe fazy zgodnie z NIST:
+Po wykonaniu fazy przygotowania organizacje powinny wywoływać pozostałe fazy zgodnie z opisem WUS:
 
 - Wykrywanie i analiza
-- Zawieranie, tylko wiadowanie i odzyskiwanie
-- Działania po zdarzeniu 
+- Hermetyzowanie, eliminowanie i odzyskiwanie
+- Działanie po zdarzeniu 
 
 ## <a name="next-step"></a>Następny krok
 
-[Krok 6. Identyfikowanie zadań konserwacji soc](integrate-microsoft-365-defender-secops-tasks.md)
+[Krok 6. Identyfikowanie zadań konserwacji SOC](integrate-microsoft-365-defender-secops-tasks.md)

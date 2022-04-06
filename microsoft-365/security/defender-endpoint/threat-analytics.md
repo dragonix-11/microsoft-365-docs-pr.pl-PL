@@ -1,5 +1,5 @@
 ---
-title: Śledzenie wyłaniających się zagrożeń i reagowanie na nie za pomocą usługi Microsoft Defender for Endpoint analizy zagrożeń
+title: Śledzenie wyłaniających się zagrożeń i reagowanie na nie za Ochrona punktu końcowego w usłudze Microsoft Defender analizy zagrożeń
 ms.reviewer: ''
 description: Zrozumienie wyłaniających się zagrożeń i technik ataków oraz sposobu ich zatrzymania. Oceń ich wpływ na organizację i oceń odporność organizacji.
 keywords: analiza zagrożeń, ocena ryzyka, środki zaradcze systemu operacyjnego, środki zaradcze mikrokodu, stan złagodzenia
@@ -19,22 +19,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1c86dad2f303df149921efab87d3ffd026e0f93d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0ca4aea3281d6bb375e7b5ff5223cb40e9a980ac
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997877"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471082"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Śledzenie wyłaniających się zagrożeń i reagowanie na nie za pomocą analizy zagrożeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 W związku z coraz bardziej zaawansowanymi mechanizmami adwersji i nowymi zagrożeniami coraz częściej trzeba mieć możliwość szybkiego rozwiązania:
 
@@ -66,7 +66,7 @@ Pulpit nawigacyjny analizy zagrożeń to doskonały punkt wyjścia do uzyskiwani
 
 Wybierz zagrożenie z pulpitu nawigacyjnego, aby wyświetlić raport o tym zagrożeńu.
 
-![Obraz pulpitu nawigacyjnego analizy zagrożeń.](images/ta_dashboard.png)
+:::image type="content" source="images/ta_dashboard.png" alt-text="Pulpit nawigacyjny analizy zagrożeń" lightbox="images/ta_dashboard.png":::
 
 ## <a name="view-a-threat-analytics-report"></a>Wyświetlanie raportu analizy zagrożeń
 
@@ -76,8 +76,8 @@ Każdy raport analizy zagrożeń zawiera informacje w trzech sekcjach: **Przegl�
 
 Sekcja **Omówienie** zawiera podgląd szczegółowego raportu analityka. Zawiera również wykresy, które podkreślają wpływ zagrożenia na organizację i ekspozycję użytkowników za pośrednictwem nieprawidłowo skonfigurowanych i nieskomponowanych urządzeń.
 
-![Obraz sekcji przeglądu raportu analizy zagrożeń.](images/ta-overview.png)
- _Sekcja Przegląd raportu analizy zagrożeń_
+:::image type="content" source="images/ta-overview.png" alt-text="Sekcja Przegląd raportu analizy zagrożeń" lightbox="images/ta-overview.png":::
+_Sekcja Przegląd raportu analizy zagrożeń_
 
 #### <a name="assess-the-impact-to-your-organization"></a>Ocenianie wpływu na organizację
 
@@ -112,7 +112,8 @@ W sekcji **Środki zaradcze** przejrzyj listę konkretnych zaleceń, które mog�
 
 Środki zaradcze zawarte w tej sekcji zawierają dane [Zarządzanie zagrożeniami i lukami, które](next-gen-threat-and-vuln-mgt.md) zawierają również szczegółowe informacje na temat przechodzenia do szczegółów z różnych łączy w raporcie.
 
-![Obraz sekcji dotyczącej zagrożeń w raporcie analizy zagrożeń.](images/ta-mitigations.png)
+:::image type="content" source="images/ta-mitigations.png" alt-text="Sekcja Środki zaradcze w raporcie analizy zagrożeń" lightbox="images/ta-mitigations.png":::
+
 
 _Sekcja środki zaradcze w raporcie analizy zagrożeń_
 

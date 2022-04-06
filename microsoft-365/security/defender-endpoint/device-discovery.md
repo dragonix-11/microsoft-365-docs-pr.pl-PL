@@ -1,7 +1,7 @@
 ---
-title: Omówienie odnajdowania urządzeń
-description: Dowiedz się, jak korzystać z odnajdowania punktów końcowych Microsoft 365 Defender w celu znalezienia urządzeń nieza zarządzania w Twojej sieci
-keywords: odnajdowanie urządzeń, odnajdowanie, pasywne, aktywne, sieci, widoczność, serwer, stacja robocza, urządzenia w trybie onboard, urządzenia nieza zarządzania
+title: Omówienie wykrywania urządzeń
+description: Dowiedz się, jak korzystać z odnajdywania punktów końcowych w Microsoft 365 Defender, aby znaleźć niezarządzane urządzenia w sieci
+keywords: odnajdywanie, odnajdywanie, pasywne, proaktywne, sieć, widoczność, serwer, stacja robocza, dołączanie, urządzenia niezarządzane
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,117 +20,117 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 926d23cb4e9abcecd9d34e976dee60851471613b
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f6046576fcea2fe961e73e88168c6254a2d95a40
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472930"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665057"
 ---
-# <a name="device-discovery-overview"></a>Omówienie odnajdowania urządzeń
+# <a name="device-discovery-overview"></a>Omówienie wykrywania urządzeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Ochrona środowiska wymaga spisu urządzeń dostępnych w sieci. Jednak urządzenia do mapowania w sieci często mogą być kosztowne, trudne i czasochłonne.
+Ochrona środowiska wymaga spisu urządzeń znajdujących się w sieci. Jednak mapowanie urządzeń w sieci często może być kosztowne, trudne i czasochłonne.
 
-Ochrona punktu końcowego w usłudze Microsoft Defender oferuje funkcję odnajdowania urządzeń, która ułatwia znajdowanie niezakierowane urządzeń połączonych z siecią firmową bez konieczności obsługi dodatkowych urządzeń czy uciążliwych zmian w procesach. Odnajdowanie urządzeń używa w sieci nowych punktów końcowych do zbierania, skanowania lub skanowania sieci w celu odnalezienia urządzeń niezakierowanych. Funkcja odnajdowania urządzeń umożliwia odnajdowanie:
+Ochrona punktu końcowego w usłudze Microsoft Defender zapewnia funkcję odnajdywania urządzeń, która ułatwia znajdowanie niezarządzanych urządzeń połączonych z siecią firmową bez konieczności stosowania dodatkowych urządzeń lub kłopotliwych zmian procesów. Odnajdywanie urządzeń używa dołączonych punktów końcowych w sieci do zbierania, sondowania lub skanowania sieci w celu odnalezienia urządzeń niezarządzanych. Funkcja odnajdywania urządzeń umożliwia odnajdywanie następujących elementów:
 
-- Enterprise punkty końcowe (stacje robocze, serwery i urządzenia przenośne), które nie zostały jeszcze Ochrona punktu końcowego w usłudze Microsoft Defender
+- Enterprise punkty końcowe (stacje robocze, serwery i urządzenia przenośne), które nie zostały jeszcze dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender
 - Urządzenia sieciowe, takie jak routery i przełączniki
-- Urządzenia IoT, takie jak drukarki i kamery
+- Urządzenia IoT, takie jak drukarki i aparaty fotograficzne
 
-Nieznane i niezakierowane urządzenia mogą stanowić istotne ryzyko dla sieci — niezależnie od tego, czy jest to drukarka bez wysyłki, urządzenia sieciowe z słabymi konfiguracjami zabezpieczeń, czy serwer bez kontroli zabezpieczeń. Po odnalezioniu urządzeń możesz:
+Nieznane i niezarządzane urządzenia wiążą się ze znacznymi zagrożeniami dla sieci — niezależnie od tego, czy jest to drukarka nienadzorowana, urządzenia sieciowe ze słabymi konfiguracjami zabezpieczeń, czy serwer bez mechanizmów kontroli zabezpieczeń. Po odnalezieniu urządzeń można wykonywać następujące czynności:
 
-- Wdowywają nieza zarządzania punktami końcowymi usługi, zwiększając widoczność zabezpieczeń na tych usługach.
-- Zmniejsz powierzchnię ataków, identyfikując i oceniając luki w zabezpieczeniach oraz wykrywając luki w konfiguracji.
+- Dołączanie niezarządzanych punktów końcowych do usługi, co zwiększa widoczność zabezpieczeń.
+- Zmniejsz obszar ataków, identyfikując i oceniając luki w zabezpieczeniach oraz wykrywając luki w konfiguracji.
 
-Obejrzyj ten klip wideo, aby szybko dowiedzieć się, jak odnajdować urządzenia:
+Obejrzyj to wideo, aby zapoznać się z szybkim omówieniem sposobu odnajdywania urządzeń:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
 
-W połączeniu z tą funkcją w ramach istniejącego Zarządzanie zagrożeniami i lukami dostępne jest zalecenie dotyczące zabezpieczeń Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia.
+W połączeniu z tą funkcją zalecenie dotyczące zabezpieczeń dołączania urządzeń do Ochrona punktu końcowego w usłudze Microsoft Defender jest dostępne w ramach istniejącego środowiska Zarządzanie zagrożeniami i lukami.
 
-## <a name="discovery-methods"></a>Metody odnajdowania
+## <a name="discovery-methods"></a>Metody odnajdywania
 
-Możesz wybrać tryb odnajdowania, który ma być używany przez urządzenia dołączane. Tryb steruje poziomem widoczności, który możesz uzyskać dla urządzeń niezawiązywnych w Twojej sieci firmowej.
+Możesz wybrać tryb odnajdywania używany przez dołączone urządzenia. Tryb steruje poziomem widoczności, który można uzyskać dla urządzeń niezarządzanych w sieci firmowej.
 
-Dostępne są dwa tryby odnajdowania:
+Dostępne są dwa tryby odnajdywania:
 
-- **Podstawowe odnajdowanie**: W tym trybie punkty końcowe będą pasywnie zbierać zdarzenia w Twojej sieci i wyodrębniać z nich informacje o urządzeniach. Podstawowe odnajdowanie używa danych binarnych SenseNDR.exe pasywnego zbierania danych sieciowych i ruch sieciowy nie zostanie zainicjowany. Punkty końcowe będą po prostu wyodrębniać dane z każdego ruchu sieciowego widocznego na urządzeniu wewnegłym. W przypadku podstawowego odnajdowania uzyskasz tylko ograniczoną widoczność nieza zarządzania punktami końcowymi w Twojej sieci.
+- **Podstawowe odnajdywanie**: w tym trybie punkty końcowe będą pasywnie zbierać zdarzenia w sieci i wyodrębniać z nich informacje o urządzeniu. Podstawowe odnajdywanie używa danych binarnych SenseNDR.exe do pasywnego zbierania danych sieciowych i nie zostanie zainicjowany żaden ruch sieciowy. Punkty końcowe po prostu wyodrębnią dane z każdego ruchu sieciowego, który jest widoczny dla dołączonego urządzenia. W przypadku podstawowego odnajdywania uzyskasz tylko ograniczoną widoczność niezarządzanych punktów końcowych w sieci.
 
-- **Odnajdowanie standardowe** (zalecane): Ten tryb umożliwia punktom końcowym aktywnie znajdowanie urządzeń w Twojej sieci w celu wzbogacenia zebranych danych i znalezienia większej liczby urządzeń — pomaga w budowaniu niezawodnego i spójnego spisu urządzeń. Oprócz urządzeń obserwowanych przy użyciu metody pasywnej tryb standardowy korzysta również z typowych protokołów odnajdowania, które korzystają z zapytań wielocastowych w sieci, aby znaleźć jeszcze więcej urządzeń. W trybie standardowym są używane inteligentne, aktywne funkcje  probowania w celu odnajdowania dodatkowych informacji o obserwowanych urządzeniach w celu wzbogacenia istniejących informacji o urządzeniach. Po włączeniu trybu standardowego aktywność sieciowa wygenerowana przez czujnik odnajdowania może być niewielka i generowana przez ten czujnik, co może być obserwowane przez narzędzia do monitorowania sieci w organizacji.
+- **Odnajdywanie** standardowe (zalecane): ten tryb umożliwia punktom końcowym aktywne znajdowanie urządzeń w sieci w celu wzbogacenia zebranych danych i odnalezienia większej liczby urządzeń , co ułatwia tworzenie niezawodnego i spójnego spisu urządzeń. Oprócz urządzeń obserwowanych przy użyciu metody pasywnej tryb standardowy wykorzystuje również typowe protokoły odnajdywania korzystające z zapytań multiemisji w sieci w celu znalezienia jeszcze większej liczby urządzeń. Tryb standardowy używa inteligentnego, aktywnego sondowania w celu odnalezienia dodatkowych informacji o obserwowanych urządzeniach w celu wzbogacenia istniejących informacji o urządzeniu. Po włączeniu trybu standardowego minimalne i znikome działanie sieci generowane przez czujnik odnajdywania może być obserwowane przez narzędzia do monitorowania sieci w organizacji.
 
-Możesz zmienić i dostosować ustawienia odnajdowania, aby uzyskać więcej informacji, zobacz Konfigurowanie [odnajdowania urządzeń](configure-device-discovery.md).
+Aby uzyskać więcej informacji, możesz zmienić i dostosować ustawienia odnajdywania, aby uzyskać więcej informacji, zobacz [Konfigurowanie odnajdywania urządzeń](configure-device-discovery.md).
 
 > [!IMPORTANT]
-> Odnajdowanie standardowe to tryb domyślny dla wszystkich klientów rozpoczynających się 19 lipca 2021 r. Możesz zmienić tę konfigurację na podstawową za pośrednictwem strony ustawień. W przypadku wybrania trybu podstawowego uzyskasz tylko ograniczoną widoczność nieza zarządzania punktami końcowymi w Twojej sieci.
+> Odnajdywanie standardowe jest trybem domyślnym dla wszystkich klientów od 19 lipca 2021 r. Tę konfigurację można zmienić na podstawową za pośrednictwem strony ustawień. Jeśli wybierzesz tryb podstawowy, uzyskasz tylko ograniczoną widoczność niezarządzanych punktów końcowych w sieci.
 
 > [!NOTE]
-> Aparat odnajdowania rozróżnia zdarzenia sieciowe odbierane w sieci firmowej, a nie poza siecią firmową. Urządzenia, które nie są połączone z sieciami firmowymi, nie zostaną wykryte ani nie będą wymienione w spisie urządzeń.
+> Aparat odnajdywania rozróżnia zdarzenia sieciowe odbierane w sieci firmowej i poza siecią firmową. Urządzenia, które nie są połączone z sieciami firmowymi, nie zostaną odnalezione ani wymienione w spisie urządzeń.
 
-## <a name="device-inventory"></a>Spis urządzeń
+## <a name="device-inventory"></a>Spisz urządzeń
 
-Urządzenia, które zostały odkryte, ale nie zostały jeszcze naniesone i zabezpieczone przez aplikację Ochrona punktu końcowego w usłudze Microsoft Defender zostaną podane w spisie urządzeń na karcie Komputery i urządzenia przenośne.
+Urządzenia, które zostały odnalezione, ale nie zostały jeszcze dołączone i zabezpieczone przez Ochrona punktu końcowego w usłudze Microsoft Defender, zostaną wymienione w spisie urządzeń na karcie Komputery i urządzenia przenośne.
 
-Aby ocenić te urządzenia, możesz użyć filtru na liście zasobów urządzeń o nazwie Stan dołączania, który może mieć dowolną z następujących wartości:
+Aby ocenić te urządzenia, możesz użyć filtru na liście spisu urządzeń o nazwie Stan dołączania, który może mieć dowolną z następujących wartości:
 
-- Onboarded: Punkt końcowy jest dołączany do Ochrona punktu końcowego w usłudze Microsoft Defender.
-- Może zostać wnoszony: Punkt końcowy został wykryty w sieci, a system operacyjny został zidentyfikowany jako obsługiwany przez program Ochrona punktu końcowego w usłudze Microsoft Defender, ale obecnie nie jest on dołączany. Zdecydowanie zalecamy dołączanie tych urządzeń.
-- Nieobsługiwane: Punkt końcowy został wykryty w sieci, ale nie jest obsługiwany przez Ochrona punktu końcowego w usłudze Microsoft Defender.
-- Za mało informacji: System nie mógł określić możliwości obsługi urządzenia. Włączenie standardowego odnajdowania na większej liczby urządzeń w sieci może wzbogacić wykryte atrybuty.
+- Dołączone: punkt końcowy jest dołączany do Ochrona punktu końcowego w usłudze Microsoft Defender.
+- Można dołączyć: punkt końcowy został odnaleziony w sieci, a system operacyjny został zidentyfikowany jako obsługiwany przez Ochrona punktu końcowego w usłudze Microsoft Defender, ale nie jest obecnie dołączony. Zdecydowanie zalecamy dołączenie tych urządzeń.
+- Nieobsługiwane: punkt końcowy został odnaleziony w sieci, ale nie jest obsługiwany przez Ochrona punktu końcowego w usłudze Microsoft Defender.
+- Niewystarczające informacje: system nie może określić możliwości obsługi urządzenia. Włączenie odnajdywania standardowego na większej liczby urządzeń w sieci może wzbogacić odnalezione atrybuty.
 
 :::image type="content" source="images/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="Pulpit nawigacyjny spisu urządzeń" lightbox="images/2b62255cd3a9dd42f3219e437b956fb9.png":::
 
 > [!TIP]
-> Zawsze możesz zastosować filtry, aby wykluczyć urządzenia nieza zarządzanie z listy zasobów w spisie urządzeń. Możesz również użyć kolumny stanu dołączania w zapytaniach interfejsu API, aby odfiltrować urządzenia nieza zarządzanie.
+> Zawsze można stosować filtry, aby wykluczyć urządzenia niezarządzane z listy spisu urządzeń. Możesz również użyć kolumny stanu dołączania w zapytaniach interfejsu API, aby odfiltrować urządzenia niezarządzane.
 
 Aby uzyskać więcej informacji, zobacz [Spis urządzeń](machines-view-overview.md).
 
-## <a name="network-device-discovery"></a>Odnajdowanie urządzeń sieciowych
+## <a name="network-device-discovery"></a>Odnajdywanie urządzeń sieciowych
 
-Duża liczba niezamanektowanych urządzeń sieciowych wdrożonych w organizacji jest dużym obszarem ataków i stanowi istotne ryzyko dla całego przedsiębiorstwa. Ochrona punktu końcowego w usłudze Microsoft Defender odnajdowania sieci pomagają zapewnić wykrywanie, dokładne klasyfikacje i dodanie urządzeń sieciowych do spisu zasobów.
+Duża liczba niezarządzanych urządzeń sieciowych wdrożonych w organizacji tworzy dużą powierzchnię ataku i stanowi znaczne zagrożenie dla całego przedsiębiorstwa. Ochrona punktu końcowego w usłudze Microsoft Defender możliwości odnajdywania sieci ułatwiają wykrywanie, dokładne klasyfikowanie i dodawanie urządzeń sieciowych do spisu zasobów.
 
-Urządzenia sieciowe nie są zarządzane jako standardowe punkty końcowe, ponieważ program Defender for Endpoint nie ma wbudowanego czujnika w urządzenia sieciowe. Te typy urządzeń wymagają podejścia bez agenta, w którym skanowanie zdalne uzyska niezbędne informacje z urządzeń. W tym celu na każdym Ochrona punktu końcowego w usłudze Microsoft Defender sieci zostanie użyte wyznaczony urządzenie do wykonywania okresowych uwierzytelnionych skanów wstępnie skonfigurowanych urządzeń sieciowych. Po odkrytiu funkcje łączności usługi Defender for Endpoint Zarządzanie zagrożeniami i lukami zintegrowanych przepływów pracy w celu zabezpieczenia przełączników, routerów, kontrolerów WLAN, zapór i bram VPN.
+Urządzenia sieciowe nie są zarządzane jako standardowe punkty końcowe, ponieważ usługa Defender dla punktu końcowego nie ma czujnika wbudowanego w same urządzenia sieciowe. Tego typu urządzenia wymagają podejścia bez agenta, w którym zdalne skanowanie będzie uzyskiwać niezbędne informacje z urządzeń. W tym celu wyznaczone urządzenie Ochrona punktu końcowego w usłudze Microsoft Defender będzie używane w każdym segmencie sieci do przeprowadzania okresowych uwierzytelnionych skanów wstępnie skonfigurowanych urządzeń sieciowych. Po odnalezieniu funkcje Zarządzanie zagrożeniami i lukami usługi Defender for Endpoint zapewniają zintegrowane przepływy pracy w celu zabezpieczenia odnalezionych przełączników, routerów, kontrolerów sieci WLAN, zapór i bram sieci VPN.
 
 Aby uzyskać więcej informacji, zobacz [Urządzenia sieciowe](network-devices.md).
 
-## <a name="device-discovery-integrations"></a>Integracje odnajdowania urządzeń
+## <a name="device-discovery-integrations"></a>Integracje odnajdywania urządzeń
 
-Aby rozwiązać problem uzyskania wystarczającej widoczności w celu zlokalizowania, zidentyfikowania i zabezpieczenia pełnego spisu wyposażeniaotowego/IOT Ochrona punktu końcowego w usłudze Microsoft Defender obsługuje teraz następujące funkcje integracji:
+Aby sprostać wyzwaniu, które polega na uzyskaniu wystarczającej widoczności do lokalizowania, identyfikowania i zabezpieczania pełnego spisu zasobów OT/IOT, Ochrona punktu końcowego w usłudze Microsoft Defender teraz obsługuje następujące integracje:
 
-- **Corelight**: Firma Microsoft współpracuje z firmą Corelight, aby odbierać dane z urządzeń sieciowych corelight. Zapewnia to Microsoft 365 Defender lepszą widoczność działań sieciowych urządzeń niezawiązyanych, w tym komunikacji z innymi urządzeniami niezamanektowymi lub sieciami zewnętrznymi. Aby uzyskać więcej informacji, zobacz [Włączanie integracji danych z programem Corelight](corelight-integration.md).
+- **Corelight**: Firma Microsoft nawiązała współpracę z firmą Corelight w celu odbierania danych z urządzeń sieciowych Corelight. Zapewnia to Microsoft 365 Defender ze zwiększonym wglądem w działania sieciowe urządzeń niezarządzanych, w tym komunikację z innymi urządzeniami niezarządzanymi lub sieciami zewnętrznymi. Aby uzyskać więcej informacji, zobacz [Włączanie integracji danych Corelight](corelight-integration.md).
 
-- **Microsoft Defender for IoT**: Ta integracja łączy możliwości odnajdowania urządzeń firmy Ochrona punktu końcowego w usłudze Microsoft Defender, z bezbłędnym monitorowaniem usługi Microsoft Defender dla IoT, aby zabezpieczyć urządzenia IoT przedsiębiorstwa połączone z siecią IT (na przykład VoIP, Voice over Internet Protocol), drukarki i inteligentne telewizory. Aby uzyskać więcej informacji, zobacz [Włączanie integracji z usługą Microsoft Defender dla IoT](enable-microsoft-defender-for-iot-integration.md).
+- **Microsoft Defender for IoT**: ta integracja łączy możliwości odnajdywania urządzeń Ochrona punktu końcowego w usłudze Microsoft Defender z funkcjami monitorowania bez agenta usługi Microsoft Defender for IoT, aby zabezpieczyć urządzenia IoT przedsiębiorstwa podłączone do sieci IT (na przykład voice over Internet Protocol (VoIP), drukarki i inteligentne telewizory). Aby uzyskać więcej informacji, zobacz [Włączanie integracji usługi Microsoft Defender for IoT](enable-microsoft-defender-for-iot-integration.md).
 
-## <a name="vulnerability-assessment-on-discovered-devices"></a>Ocena luk w zabezpieczeniach wykrytych urządzeń
+## <a name="vulnerability-assessment-on-discovered-devices"></a>Ocena luk w zabezpieczeniach na odnalezionych urządzeniach
 
-Luki w zabezpieczeniach i czynniki ryzyka związane z urządzeniami, a także inne odkryte urządzenia w sieci, które nie są niezawiązane, są częścią bieżących przepływów telewizyjnych w ramach "Zabezpieczenia Rekomendacje" i reprezentujących je na stronach encji w portalu.
-Wyszukaj zalecenia dotyczące zabezpieczeń związane z SSH, aby znaleźć luki w zabezpieczeniach związane z zabezpieczeniami SSH, które są związane z urządzeniami nieza zarządzaniem i zarządzanymi.
+Luki w zabezpieczeniach i zagrożenia na urządzeniach oraz inne odnalezione urządzenia niezarządzane w sieci są częścią bieżących przepływów programu TVM w obszarze "Rekomendacje zabezpieczeń" i są reprezentowane na stronach jednostek w portalu.
+Wyszukaj rekomendacje dotyczące zabezpieczeń dotyczące protokołu "SSH", aby znaleźć luki w zabezpieczeniach protokołu SSH powiązane z urządzeniami niezarządzanymi i zarządzanymi.
 
-:::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Pulpit nawigacyjny z zaleceniami o zabezpieczeniach" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Pulpit nawigacyjny zaleceń dotyczących zabezpieczeń" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
 
-## <a name="use-advanced-hunting-on-discovered-devices"></a>Użyj zaawansowanego wyszukiwania na wykrytych urządzeniach
+## <a name="use-advanced-hunting-on-discovered-devices"></a>Używanie zaawansowanego wyszukiwania zagrożeń na odnalezionych urządzeniach
 
-Za pomocą zapytań wyszukiwania zaawansowanego możesz uzyskać widoczność na wykrytych urządzeniach.
-Szczegółowe informacje o wykrytych punktach końcowych znajdziesz w tabeli DeviceInfo lub informacje o tych urządzeniach powiązane z siecią w tabeli DeviceNetworkInfo.
+Możesz użyć zapytań zaawansowanego wyszukiwania zagrożeń, aby uzyskać wgląd w odnalezione urządzenia.
+Znajdź szczegółowe informacje o odnalezionych punktach końcowych w tabeli DeviceInfo lub informacje dotyczące sieci dotyczące tych urządzeń w tabeli DeviceNetworkInfo.
 
-:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Strona zaawansowanego wyszukiwania, na której można używać zapytań" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
+:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Strona Zaawansowane wyszukiwanie zagrożeń, na której można używać zapytań" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
-Odnajdowanie urządzeń korzysta Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach podłączonych do sieci jako sieciowego źródła danych do atrybutu działań na urządzeniach niewnienych. Oznacza to, że jeśli urządzenie z systemem Ochrona punktu końcowego w usłudze Microsoft Defender jest komunikowane z urządzeniem niewłokim, działania na tym urządzeniu są widoczne na osi czasu oraz w tabeli Zaawansowane chłonie DeviceNetworkEvents.
+Odnajdywanie urządzeń korzysta z Ochrona punktu końcowego w usłudze Microsoft Defender dołączonych urządzeń jako źródła danych sieciowych w celu przypisywania działań do urządzeń nieprzysłanych. Oznacza to, że jeśli urządzenie Ochrona punktu końcowego w usłudze Microsoft Defender dołączone do urządzenia komunikuje się z urządzeniem nieprzydzielinym, działania na urządzeniu bez dołączenia można zobaczyć na osi czasu i w tabeli Zaawansowane wyszukiwanie zagrożeń DeviceNetworkEvents.
 
-Nowe zdarzenia są oparte na połączeniach TCP (Transmission Control Protocol) i będą dopasowane do bieżącego schematu DeviceNetworkEvents. Ruch wychodzący TCP do Ochrona punktu końcowego w usłudze Microsoft Defender z urządzenia bez włączonej Ochrona punktu końcowego w usłudze Microsoft Defender włączony.
+Nowe zdarzenia są oparte na połączeniach protokołu TCP (Transmission Control Protocol) i będą pasować do bieżącego schematu DeviceNetworkEvents. Ruch przychodzący TCP do urządzenia z włączoną obsługą Ochrona punktu końcowego w usłudze Microsoft Defender z Ochrona punktu końcowego w usłudze Microsoft Defender nie jest włączony.
 
 Dodano również następujące typy akcji:
 
 - ConnectionAttempt — próba nawiązania połączenia TCP (syn)
 - ConnectionAcknowledged — potwierdzenie, że połączenie TCP zostało zaakceptowane (syn\ack)
 
-Możesz wypróbować to zapytanie przykładowe:
+Możesz wypróbować to przykładowe zapytanie:
 
 ```text
 DeviceNetworkEvents
@@ -140,5 +140,5 @@ DeviceNetworkEvents
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Konfigurowanie odnajdowania urządzeń](configure-device-discovery.md)
-- [Odnajdowanie urządzeń : często zadawane pytania](device-discovery-faq.md)
+- [Konfiguruj wykrywanie urządzeń](configure-device-discovery.md)
+- [Często zadawane pytania dotyczące odnajdywania urządzeń](device-discovery-faq.md)

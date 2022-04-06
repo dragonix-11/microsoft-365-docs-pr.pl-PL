@@ -1,6 +1,6 @@
 ---
-title: Zapora w programie Microsoft Defender dla firm
-description: Dowiedz się Windows Defender zaporze programu Microsoft Defender dla firm, w tym o ustawieniach konfiguracji
+title: Zapora w Microsoft Defender dla Firm
+description: Dowiedz się więcej o zaporze Windows Defender w Microsoft Defender dla Firm, w tym o ustawieniach konfiguracji
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -16,64 +16,64 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 92db1711fa5aefb8920c35a8665cf322b3f0f5ef
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: fb506a1d2cc28329f9d6ef9975a10b0661379bb9
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525864"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664617"
 ---
-# <a name="firewall-in-microsoft-defender-for-business"></a>Zapora w programie Microsoft Defender dla firm
+# <a name="firewall-in-microsoft-defender-for-business"></a>Zapora w Microsoft Defender dla Firm
 
 > [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
+> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
 > 
-> Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
+> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
 
-Usługa Microsoft Defender dla firm zawiera funkcje zapory Windows Defender [sieciowej](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Ochrona za pomocą zapory pomaga zabezpieczyć urządzenia za pomocą reguł, które określają ruch sieciowy, który może napływać do urządzeń lub z nich przepływać. 
+Microsoft Defender dla Firm obejmuje możliwości zapory z [usługą Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Ochrona zapory ułatwia zabezpieczanie urządzeń za pomocą reguł określających, który ruch sieciowy może wprowadzać lub przepływać z urządzeń. 
 
-Za pomocą ochrony zapory możesz określić, czy zezwalać na połączenia na urządzeniach w różnych lokalizacjach, czy blokować je. Na przykład ustawienia zapory mogą zezwalać na połączenia przychodzące na urządzeniach połączonych z siecią wewnętrzną firmy, ale zapobiegać tym połączeniom, gdy urządzenie znajduje się w sieci z niezaufanymi urządzeniami.
+Za pomocą ochrony zapory można określić, czy zezwalać na połączenia na urządzeniach w różnych lokalizacjach, czy blokować je. Na przykład ustawienia zapory mogą zezwalać na połączenia przychodzące na urządzeniach połączonych z siecią wewnętrzną firmy, ale zapobiegać tym połączeniom, gdy urządzenie znajduje się w sieci z niezaufanymi urządzeniami.
 
 **W tym artykule opisano**:
 
-- [Domyślne ustawienia zapory w programie Defender dla firm](#default-firewall-settings-in-defender-for-business)
+- [Domyślne ustawienia zapory w usłudze Defender dla Firm](#default-firewall-settings-in-defender-for-business)
 
-- [Ustawienia zapory, które można skonfigurować w programie Defender dla firm](#firewall-settings-you-can-configure-in-defender-for-business)
+- [Ustawienia zapory, które można skonfigurować w usłudze Defender dla Firm](#firewall-settings-you-can-configure-in-defender-for-business)
 
 >
 > **Masz minutę?**
-> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
-## <a name="default-firewall-settings-in-defender-for-business"></a>Domyślne ustawienia zapory w programie Defender dla firm
+## <a name="default-firewall-settings-in-defender-for-business"></a>Domyślne ustawienia zapory w usłudze Defender dla Firm
 
-Usługa Microsoft Defender dla firm zawiera domyślne zasady zapory i ustawienia, które pomagają chronić urządzenia firmowe od pierwszego dnia. Po dołączonach urządzeń firmy do programu Microsoft Defender dla Firm domyślne zasady zapory są następujące:
+Microsoft Defender dla Firm zawiera domyślne zasady zapory i ustawienia ułatwiające ochronę urządzeń firmy od pierwszego dnia. Gdy tylko urządzenia firmy zostaną dołączone do Microsoft Defender dla Firm, domyślne zasady zapory będą działać w następujący sposób:
 
-- Połączenia wychodzące z urządzeń są domyślnie dozwolone, niezależnie od lokalizacji.
-- Gdy urządzenia są połączone z siecią firmową, wszystkie połączenia przychodzące są domyślnie blokowane.
-- Gdy urządzenia są połączone z siecią publiczną lub prywatną, wszystkie połączenia przychodzące są domyślnie blokowane.
+- Połączenia wychodzące z urządzeń są domyślnie dozwolone niezależnie od lokalizacji.
+- Gdy urządzenia są połączone z siecią firmy, wszystkie połączenia przychodzące są domyślnie blokowane.
+- Gdy urządzenia są połączone z siecią publiczną lub siecią prywatną, wszystkie połączenia przychodzące są domyślnie blokowane.
 
-W programie Microsoft Defender dla Firm można definiować wyjątki w celu blokowania lub zezwalania na połączenia przychodzące. Wyjątki te można zdefiniować, tworząc reguły niestandardowe. Zobacz [Zarządzanie regułami niestandardowymi dla zasad zapory](mdb-custom-rules-firewall.md).
+W Microsoft Defender dla Firm można zdefiniować wyjątki, aby blokować lub zezwalać na połączenia przychodzące. Te wyjątki można zdefiniować, tworząc reguły niestandardowe. Zobacz [Zarządzanie regułami niestandardowymi dla zasad zapory](mdb-custom-rules-firewall.md).
 
-## <a name="firewall-settings-you-can-configure-in-defender-for-business"></a>Ustawienia zapory, które można skonfigurować w programie Defender dla firm
+## <a name="firewall-settings-you-can-configure-in-defender-for-business"></a>Ustawienia zapory, które można skonfigurować w usłudze Defender dla Firm
 
-Usługa Microsoft Defender dla firm zapewnia ochronę za pomocą zapory Windows Defender sieciowej. W poniższej tabeli wymieniono ustawienia, które można skonfigurować pod celu ochrony za pomocą zapory w programie Microsoft Defender dla firm. <br/><br/>
+Microsoft Defender dla Firm obejmuje ochronę zapory za pośrednictwem zapory Windows Defender. W poniższej tabeli wymieniono ustawienia, które można skonfigurować pod kątem ochrony zapory w Microsoft Defender dla Firm. <br/><br/>
 
 | Ustawienie | Opis |
 |--|--|
-| **Sieć domenowa** | Profil sieci domeny dotyczy sieci firmowej. Ustawienia zapory sieci Twojej domeny mają zastosowanie do połączeń przychodzących inicjowanych na innych urządzeniach w tej samej sieci. Domyślnie dla połączeń przychodzących ustawiono opcję **Blokuj wszystkie**.  |
-| **Sieć publiczna** | Profil sieci publicznej dotyczy sieci, która może być dostępna w lokalizacji publicznej, takiej jak kawiarnia lub lotniska. Ustawienia zapory dla sieci publicznych mają zastosowanie do połączeń przychodzących inicjowanych na innych urządzeniach w tej samej sieci. Ponieważ sieć publiczna może zawierać urządzenia, których nie znasz lub które nie są zaufane, połączenia przychodzące są domyślnie ustawione **jako Zablokuj wszystko** .  |
-| **Sieć prywatna** | Profil sieci prywatnej dotyczy sieci w lokalizacji prywatnej, takiej jak Twój dom. Ustawienia zapory dla sieci prywatnych mają zastosowanie do połączeń przychodzących inicjowanych na innych urządzeniach w tej samej sieci. Ogólnie w sieci prywatnej zakłada się, że wszystkie inne urządzenia w tej samej sieci są urządzeniami zaufanymi. Jednak domyślnie dla połączeń przychodzących ustawiono opcję **Blokuj wszystkie**. |
-| **Reguły niestandardowe** | [Reguły niestandardowe](mdb-custom-rules-firewall.md) umożliwiają blokowanie określonych połączeń lub zezwalanie na nie. Załóżmy na przykład, że chcesz zablokować wszystkie połączenia przychodzące na urządzeniach połączonych z siecią prywatną z wyjątkiem połączeń za pośrednictwem określonej aplikacji na urządzeniu. W tym przypadku należy ustawić opcję **Sieć** prywatna tak, aby blokowała wszystkie połączenia przychodzące, a następnie dodać regułę niestandardową definiującą wyjątek. <br/><br/>Możesz użyć reguł niestandardowych w celu zdefiniowania wyjątków dla określonych plików lub aplikacji, adresu IP lub zakresu adresów IP. <br/><br/>Oto kilka przykładowych wartości, których możesz użyć, w zależności od typu tworzyć reguły niestandardowe: <br/><br/>Ścieżka pliku aplikacji: `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe` <br/><br/>IP: Prawidłowy adres IPv4/IPv6, taki jak `192.168.1.0` lub `192.168.1.0/24` <br/><br/>IP: prawidłowy zakres adresów IPv4/IPv6 sformatowany tak `192.168.1.0-192.168.1.9` , jak (bez spacji) |
+| **Sieć domeny** | Profil sieci domeny ma zastosowanie do sieci firmowej. Ustawienia zapory dla sieci domeny mają zastosowanie do połączeń przychodzących inicjowanych na innych urządzeniach znajdujących się w tej samej sieci. Domyślnie połączenia przychodzące są ustawione na **wartość Blokuj wszystkie**.  |
+| **Sieć publiczna** | Profil sieci publicznej ma zastosowanie do sieci, która może być używana w lokalizacji publicznej, takiej jak kawiarnia lub lotnisko. Ustawienia zapory dla sieci publicznych mają zastosowanie do połączeń przychodzących inicjowanych na innych urządzeniach znajdujących się w tej samej sieci. Ponieważ sieć publiczna może zawierać urządzenia, które nie są znane lub nie są zaufane, połączenia przychodzące są domyślnie ustawione na **wartość Blokuj wszystkie** .  |
+| **Sieć prywatna** | Profil sieci prywatnej ma zastosowanie do sieci w lokalizacji prywatnej, takiej jak twój dom. Ustawienia zapory dla sieci prywatnych mają zastosowanie do połączeń przychodzących inicjowanych na innych urządzeniach znajdujących się w tej samej sieci. Ogólnie rzecz biorąc, w sieci prywatnej zakłada się, że wszystkie inne urządzenia w tej samej sieci są zaufanymi urządzeniami. Jednak domyślnie połączenia przychodzące są ustawione na **wartość Blokuj wszystkie**. |
+| **Reguły niestandardowe** | [Reguły niestandardowe](mdb-custom-rules-firewall.md) umożliwiają blokowanie lub zezwalanie na określone połączenia. Załóżmy na przykład, że chcesz zablokować wszystkie połączenia przychodzące na urządzeniach połączonych z siecią prywatną, z wyjątkiem połączeń za pośrednictwem określonej aplikacji na urządzeniu. W takim przypadku należy ustawić **opcję Sieć prywatna** w celu zablokowania wszystkich połączeń przychodzących, a następnie dodać regułę niestandardową definiującą wyjątek. <br/><br/>Reguły niestandardowe umożliwiają definiowanie wyjątków dla określonych plików lub aplikacji, adresu protokołu internetowego (IP) lub zakresu adresów IP. <br/><br/>W zależności od typu tworzonej reguły niestandardowej poniżej przedstawiono przykładowe wartości, których można użyć: <br/><br/>Ścieżka pliku aplikacji: `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe` <br/><br/>ADRES IP: prawidłowy adres IPv4/IPv6, taki jak `192.168.11.0` lub `192.168.1.0/24` <br/><br/>ADRES IP: prawidłowy zakres adresów IPv4/IPv6, sformatowany jak `192.168.1.0-192.168.1.9` (bez spacji) |
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Zarządzanie ustawieniami zapory w programie Microsoft Defender dla firm](mdb-custom-rules-firewall.md)
+- [Zarządzanie ustawieniami zapory w Microsoft Defender dla Firm](mdb-custom-rules-firewall.md)
 
-- [Dowiedz się więcej o Windows Defender sieciowej](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [Dowiedz się więcej o zaporze Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 
-- [Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md)
+- [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md)
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
+- [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
 
-- [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md)
+- [Przeglądanie akcji korygowania w centrum akcji](mdb-review-remediation-actions.md)

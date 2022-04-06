@@ -1,7 +1,7 @@
 ---
-title: Wymagania wstępne wdrażania reguł asr
-description: Ten temat zawiera omówienie i wstępnie wymagane wskazówki dotyczące wdrażania reguł ograniczania powierzchni ataków (ASR).
-keywords: Wdrażanie reguł ograniczania powierzchni ataków, wdrażanie ASR, włączanie reguł asr, konfigurowanie funkcji asr, systemu ochrony przed nieuprawnianiem hosta, reguł ochrony, reguł ochrony przed wykorzystywaniem luk, ochrony przed wykorzystywaniem, regułami wykorzystania luk, regułami zapobiegania powstawaniu przed wirusami, program Microsoft Defender for Endpoint, konfigurowanie reguł asr
+title: Wymagania wstępne dotyczące wdrażania reguł ASR
+description: Zawiera omówienie i wskazówki dotyczące wymagań wstępnych dotyczących wdrażania reguł zmniejszania obszaru ataków (ASR).
+keywords: Wdrażanie reguł zmniejszania obszaru ataków, wdrażanie usługi ASR, włączanie reguł asr, konfigurowanie usługi ASR, system zapobiegania włamaniom do hostów, reguły ochrony, reguły ochrony przed lukami w zabezpieczeniach, reguły antyeksploatowania, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł usługi ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,173 +20,173 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 37eb6edb32c78df7ae23fe7cb52b249f81ca18b3
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 0180bfcef9d478dcf8e334a180ea3df993585e00
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682179"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666421"
 ---
-# <a name="asr-rules-deployment-prerequisites"></a>Wymagania wstępne wdrażania reguł asr
+# <a name="asr-rules-deployment-prerequisites"></a>Wymagania wstępne dotyczące wdrażania reguł ASR
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Powierzchnie ataków to wszystkie miejsca, w których Twoja organizacja jest narażona na cyberataki i ataki. Powierzchnie ataków organizacji obejmują wszystkie miejsca, w których atakujący mogą naruszonć urządzenia lub sieci organizacji. Zmniejszenie powierzchni ataków oznacza ochronę urządzeń i sieci organizacji, co pozostawia atakującym mniej sposobów ataków. Skonfigurowanie reguł zmniejszania powierzchni ataków (ASR, Attack Surface Reduction) — jednej z wielu funkcji zabezpieczeń znalezionych w programie Microsoft Defender for Endpoint — może być pomocne.
+Powierzchnie ataków to wszystkie miejsca, w których organizacja jest narażona na ataki cybernetyczne i ataki. Obszar ataków organizacji obejmuje wszystkie miejsca, w których osoba atakująca może naruszyć bezpieczeństwo urządzeń lub sieci organizacji. Zmniejszenie obszaru ataków oznacza ochronę urządzeń i sieci organizacji, co sprawia, że osoby atakujące mają mniej sposobów ataku. Konfigurowanie reguł zmniejszania obszaru ataków (ASR) — jednej z wielu funkcji zabezpieczeń znajdujących się w Ochrona punktu końcowego w usłudze Microsoft Defender — może pomóc.
 
-Reguły ASR mają na celu określone zachowania oprogramowania, takie jak:
+Reguły usługi ASR dotyczą pewnych zachowań oprogramowania, takich jak:
 
-- Uruchamianie plików wykonywalnych i skryptów próbujących pobierać lub uruchamiać pliki
-- Uruchamianie skryptów zasłoconych lub w inny sposób podejrzanych skryptów
-- Zachowania, które aplikacje zwykle nie występują w trakcie normalnej pracy
+- Uruchamianie plików wykonywalnych i skryptów, które próbują pobrać lub uruchomić pliki
+- Uruchamianie zaciemnionych lub w inny sposób podejrzanych skryptów
+- Zachowania, których aplikacje zwykle nie występują podczas normalnej codziennej pracy
 
-Zmniejszenie różnych powierzchni ataków pozwala zapobiec atakom w pierwszej kolejności.
+Zmniejszając różne powierzchnie ataków, możesz przede wszystkim zapobiec atakom.
 
-Podczas wstępnego przygotowania należy pamiętać o zrozumieniu możliwości systemów, które należy wprowadzić. Znajomość tych możliwości pomoże w określeniu, które reguły asr są najważniejsze dla ochrony organizacji. Ponadto istnieje kilka wymagań wstępnych, w których należy wziąć udział w przygotowaniu wdrożenia usługi ASR.
+Podczas wstępnego przygotowywania ważne jest, aby zrozumieć możliwości systemów, które zostaną wprowadzone. Zrozumienie możliwości pomoże Ci określić, które reguły usługi ASR są najważniejsze dla ochrony organizacji. Ponadto istnieje kilka wymagań wstępnych, które należy spełnić podczas przygotowywania wdrożenia usługi ASR.
 
 >[!IMPORTANT]
->Ten przewodnik zawiera obrazy i przykłady, które ułatwiają skonfigurowanie reguł asr. te obrazy i przykłady mogą nie odzwierciedlać najlepszych opcji konfiguracji dla Twojego środowiska.
+>Ten przewodnik zawiera obrazy i przykłady ułatwiające podjęcie decyzji o sposobie konfigurowania reguł usługi ASR. te obrazy i przykłady mogą nie odzwierciedlać najlepszych opcji konfiguracji środowiska.
 
-Przed rozpoczęciem zapoznaj się z [](overview-attack-surface-reduction.md)omówieniem zmniejszenia powierzchni ataków i Reguł zmniejszania powierzchni ataków bez zamierzeniu [— część 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420), aby uzyskać informacje o podstawach. Aby zrozumieć obszary zasięgu i potencjalny wpływ, zapoznaj się z bieżącym zestawem reguł asr. zobacz [Informacje dotyczące reguł zmniejszania powierzchni ataków](attack-surface-reduction-rules-reference.md).
+Przed rozpoczęciem zapoznaj się [z omówieniem zmniejszania obszaru podatnego na ataki](overview-attack-surface-reduction.md) i [demistyfikacją reguł zmniejszania obszaru podatnego na ataki — część 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) , aby uzyskać podstawowe informacje. Aby zrozumieć obszary pokrycia i potencjalny wpływ, zapoznaj się z bieżącym zestawem reguł usługi ASR; zobacz [Dokumentacja reguł zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md).  Podczas zapoznania się z zestawem reguł usługi ASR zanotuj mapowania identyfikatorów GUID dla reguł; zobacz: [Macierz reguł i identyfikatorów GUID usługi ASR](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
 
-Reguły ASR to tylko jedna funkcja funkcji ograniczania powierzchni ataków w programie Microsoft Defender for Endpoint. Ten dokument zawiera bardziej szczegółowe informacje na temat skutecznego wdrażania reguł asr w celu zatrzymania zaawansowanych zagrożeń, takich jak oprogramowanie wymuszające okup obsługiwane przez człowieka i inne zagrożenia.  
+Reguły asr to tylko jedna z możliwości zmniejszania obszaru ataków w ramach Ochrona punktu końcowego w usłudze Microsoft Defender. Ten dokument zawiera bardziej szczegółowe informacje na temat efektywnego wdrażania reguł usługi ASR w celu powstrzymania zaawansowanych zagrożeń, takich jak oprogramowanie wymuszające okup obsługiwane przez człowieka i inne zagrożenia.  
 
 ### <a name="rules-by-category"></a>Reguły według kategorii
 
-Jak opisano [w](attack-surface-reduction.md) tece Używaj reguł zmniejszania powierzchni ataków, aby zapobiegać zainfekowaniu złośliwym oprogramowaniem, istnieje wiele reguł usuwania powierzchni ataków w ramach usługi MDE, które możesz włączyć do ochrony swojej organizacji. Poniżej przedstawiono reguły podzielone według kategorii:
+Jak opisano w artykule [Używanie reguł zmniejszania obszaru ataków w celu zapobiegania infekcji złośliwym oprogramowaniem](attack-surface-reduction.md), w środowisku MDE istnieje wiele reguł zmniejszania obszaru ataków, które można włączyć w celu ochrony organizacji. Poniżej przedstawiono reguły podzielone według kategorii:
 
 <br/>
 
-| Zagrożenia polymorphic | Ruchy boczne i & kradzież poświadczeń | Reguły aplikacji zwiększających produktywność |  Reguły poczty e-mail | Reguły skryptów | Różne reguły |
+| Zagrożenia polimorficzne | Przenoszenie poprzeczne & kradzież poświadczeń | Reguły aplikacji zwiększających produktywność |  Reguły poczty e-mail | Reguły skryptów | Reguły błędów |
 |:---|:---|:---|:---|:---|:---|
-| Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one wymagań co najmniej 1000 komputerów, wieku (24 godziny) lub kryteriów listy zaufanych | Blokowanie procesów pochodzących z poleceń PSExec i WMI | Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje | Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej | Blokowanie kodu makra JS/VBS/PS/makra | Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników <sup>[[1](#fn1)]<sup></sup>  |
-| Blokowanie niezaufanych i niepodpisanych procesów uruchamianych z usb | Blokowanie kradzieży poświadczeń z podsystemu Windows Security Authority (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Blokowanie Office aplikacji przed tworzeniem procesów podrzędnych |  Blokowanie tworzenia procesów Office do komunikacji tylko przez aplikacje komunikacyjne | Blokowanie uruchamiania pobranej zawartości wykonywanej przez JS/VBS | |
-| Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup | Blokowanie utrwaloności za pośrednictwem subskrypcji zdarzeń usługi WMI | Blokowanie Office aplikacji z uwzględnieniem kodu w innych procesach | Blokowanie Office aplikacji do komunikacji z tworzeniem procesów podrzędnych | | |
-| | | Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader | | | |
+| Blokuj uruchamianie plików wykonywalnych, chyba że spełniają one częstość występowania (1000 maszyn), wiek (24 godziny) lub kryteria listy zaufanych | Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI | Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office | Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej | Blokuj zaciemniony kod JS/VBS/PS/macro | Blokowanie nadużyć wobec wykorzystywanych kierowców <sup>podpisanych w trudnej sytuacji [[1](#fn1)]<sup></sup>  |
+| Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB | Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Blokowanie tworzenia procesów podrzędnych przez aplikacje Office |  Blokuj tworzenie procesów podrzędnych tylko Office aplikacjom komunikacyjnym | Blokuj uruchamianie pobranej zawartości wykonywalnej JS/VBS | |
+| Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup | Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI | Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów | Blokowanie tworzenia procesów podrzędnych przez aplikacje komunikacji Office | | |
+| | | Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych | | | |
 
-(<a id="fn1">1</a>) Blokowanie _nadużyć wykorzystywania wyeksowanych_ podatnych na zagrożenia sterowników podpisanych nie jest obecnie dostępne w zabezpieczeniach punktów końcowych MEM. Tę regułę można skonfigurować przy [użyciu narzędzia OMA-URI MEM](enable-attack-surface-reduction.md#mem).
+(<a id="fn1">1</a>) _Blokowanie nadużywania wykorzystywanych, narażonych na zagrożenia sterowników podpisanych_ nie jest obecnie dostępne w zabezpieczeniach punktu końcowego MEM. Tę regułę można skonfigurować przy użyciu [identyfikatora OMA-URI MEM](enable-attack-surface-reduction.md#mem).
 
-(<a id="fn1">2</a>) Niektóre reguły asr generują dużo szumu, ale nie blokują funkcjonalności. Jeśli na przykład aktualizujesz przeglądarkę Chrome; Przeglądarka Chrome będzie mieć dostęp do lsass.exe; hasła są przechowywane w lsass na urządzeniu. Jednak przeglądarka Chrome nie powinna mieć dostępu do urządzenia lsass.exe. Włączenie reguły blokowania dostępu do lsass spowoduje wygenerowanie wielu zdarzeń. Są to dobre zdarzenia, ponieważ proces aktualizacji oprogramowania nie powinien mieć dostępu do lsass.exe. Włączenie tej reguły zablokuje dostęp do aktualizacji przeglądarki Chrome, ale nie zablokuje możliwości aktualizacji w przeglądarce Chrome. jest tak też w przypadku innych aplikacji, które niepotrzebnie dzwonią do lsass.exe. Reguła _blokowania dostępu do lsass blokuje_ niepotrzebne połączenia z usługą lsass, ale nie blokuje uruchamiania aplikacji.
+(<a id="fn1">2</a>) Niektóre reguły usługi ASR generują znaczny szum, ale nie blokują funkcjonalności. Jeśli na przykład aktualizujesz przeglądarę Chrome; Przeglądarka Chrome będzie uzyskiwać dostęp do lsass.exe; hasła są przechowywane w systemie lsass na urządzeniu. Przeglądarka Chrome nie powinna jednak uzyskiwać dostępu do lsass.exe urządzeń lokalnych. Jeśli włączysz regułę, aby zablokować dostęp do lsass, spowoduje to wygenerowanie wielu zdarzeń. Te zdarzenia są dobrymi zdarzeniami, ponieważ proces aktualizacji oprogramowania nie powinien uzyskiwać dostępu lsass.exe. Włączenie tej reguły zablokuje dostęp aktualizacji przeglądarki Chrome do systemu lsass, ale nie zablokuje aktualizacji przeglądarki Chrome. Dotyczy to również innych aplikacji, które wywołują niepotrzebne wywołania lsass.exe. _Blokuj dostęp do reguły lsass_ zablokuje niepotrzebne wywołania lsass, ale nie zablokuje uruchamiania aplikacji.
 
 ### <a name="infrastructure-requirements"></a>Wymagania dotyczące infrastruktury
 
-Chociaż istnieje wiele metod implementowania reguł asr, ten przewodnik jest oparty na infrastrukturze składającej się z:
+Mimo że istnieje wiele metod implementowania reguł usługi ASR, ten przewodnik jest oparty na infrastrukturze składającej się z następujących elementów:
 
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM)
-- Windows 10 i Windows 11 urządzeń
-- Program Microsoft Defender dla licencji endpoint E5 Windows E5
+- urządzenia Windows 10 i Windows 11
+- licencje Ochrona punktu końcowego w usłudze Microsoft Defender E5 lub Windows E5
 
-Aby w pełni wykorzystać reguły asr i raportowanie, zalecamy używanie licencji usługi Microsoft 365 Defender E5 lub Windows E5 i A5. Dowiedz się więcej: [Minimalne wymagania dotyczące programu Microsoft Defender dla punktu końcowego](minimum-requirements.md).
+Aby w pełni wykorzystać reguły i raportowanie usługi ASR, zalecamy korzystanie z licencji Microsoft 365 Defender E5 lub Windows E5 i A5. Dowiedz się więcej: [Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender](minimum-requirements.md).
 
 >[!Note]
->Istnieje wiele metod konfigurowania reguł asr. Reguły ASR można skonfigurować przy użyciu: Microsoft Endpoint Manager (MEM), PowerShell, zasady grupy, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
->Jeśli korzystasz z konfiguracji infrastruktury innej niż wymieniona w powyższych  wymaganiach dotyczących infrastruktury, [tutaj możesz dowiedzieć](enable-attack-surface-reduction.md) się więcej o wdrażaniu reguł ograniczania powierzchni ataków przy użyciu innych konfiguracji: Włączanie reguł ograniczania powierzchni ataków.  
+>Istnieje wiele metod konfigurowania reguł usługi ASR. Reguły usługi ASR można skonfigurować przy użyciu: Microsoft Endpoint Manager (MEM), PowerShell, zasady grupy, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
+>Jeśli używasz innej konfiguracji infrastruktury niż wymieniona w _wymaganiach dotyczących infrastruktury_ (powyżej), możesz dowiedzieć się więcej na temat wdrażania reguł zmniejszania obszaru ataków przy użyciu innych konfiguracji tutaj: [Włącz reguły zmniejszania obszaru ataków](enable-attack-surface-reduction.md).  
 
-### <a name="asr-rules-dependencies"></a>Zależności reguł ASR
+### <a name="asr-rules-dependencies"></a>Zależności reguł usługi ASR
 
-Program antywirusowy Microsoft Defender musi być włączone i skonfigurowane jako podstawowe rozwiązanie antywirusowe, a także musi być w następującym trybie:
+Program antywirusowy Microsoft Defender musi być włączona i skonfigurowana jako podstawowe rozwiązanie antywirusowe i musi być w następującym trybie:
 
-- Podstawowe rozwiązanie antywirusowe/ochrony przed złośliwym oprogramowaniem  
-- Stan: tryb aktywny
+- Podstawowe rozwiązanie antywirusowe/chroniące przed złośliwym kodem  
+- Stan: Tryb aktywny
 
-Program antywirusowy Microsoft Defender nie mogą być w żadnym z następujących trybów:
+Program antywirusowy Microsoft Defender nie może być w żadnym z następujących trybów:
 
-- Strona pasywna
-- Tryb pasywny z wykrywaniem punktu końcowego i odpowiedzią (EDR) w trybie blokowania
-- Ograniczone skanowanie okresowe (LPS)
-- Wyłączone
+- Pasywne
+- Tryb pasywny z wykrywaniem i reagowaniem punktów końcowych (EDR) w trybie bloku
+- Ograniczone okresowe skanowanie (LPS)
+- Wył.
 
-Zobacz: [Ochrona i ochrona w chmurze Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
+Zobacz: [Ochrona i Program antywirusowy Microsoft Defender dostarczane w chmurze](cloud-protection-microsoft-defender-antivirus.md).
 
-### <a name="cloud-protection-maps-must-be-enabled"></a>Musi być włączona ochrona w chmurze (MAPY)
+### <a name="cloud-protection-maps-must-be-enabled"></a>Usługa Cloud Protection (MAPS) musi być włączona
 
-Program antywirusowy Microsoft Defender bezproblemowo współpracuje z usługami firmy Microsoft w chmurze. Te usługi ochrony w chmurze, nazywane także usługą Microsoft Advanced Protection Service (MAPS), rozszerzają standardową ochronę w czasie rzeczywistym, zapewniając prawdopodobnie najlepszą ochronę antywirusową. Ochrona chmury jest bardzo ważna w celu zapobiegania naruszeniem bezpieczeństwa przez złośliwe oprogramowanie i krytycznym składnikiem reguł asr.
-[Włączanie ochrony w chmurze w programie Program antywirusowy Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
+Program antywirusowy Microsoft Defender bezproblemowo współpracuje z usługami firmy Microsoft w chmurze. Te usługi ochrony w chmurze, nazywane również usługą Microsoft Advanced Protection Service (MAPS), zwiększają standardową ochronę w czasie rzeczywistym, zapewniając prawdopodobnie najlepszą ochronę antywirusową. Ochrona w chmurze ma kluczowe znaczenie dla zapobiegania naruszeniom złośliwego oprogramowania i krytycznego składnika reguł usługi ASR.
+[Włącz ochronę dostarczaną przez chmurę w Program antywirusowy Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Program antywirusowy Microsoft Defender składniki muszą być wersjami bieżącymi
+### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>składniki Program antywirusowy Microsoft Defender muszą być bieżącymi wersjami
 
-Następujące Program antywirusowy Microsoft Defender składowe nie mogą być starsze niż dwie wersje, które są obecnie najbardziej dostępne:
+Następujące Program antywirusowy Microsoft Defender wersje składników muszą być nie więcej niż dwie wersje starsze niż najbardziej dostępna wersja:
 
-- **Program antywirusowy Microsoft Defender aktualizacji platformy — Program antywirusowy Microsoft Defender** platformie jest aktualizowana co miesiąc.
-- **Program antywirusowy Microsoft Defender wersji aparatu — Program antywirusowy Microsoft Defender** jest aktualizowany co miesiąc.
-- **Program antywirusowy Microsoft Defender** zabezpieczeń — firma Microsoft stale aktualizuje analizę zabezpieczeń programu Microsoft Defender (znaną także jako definicja i podpis) w celu rozwiązania najnowszych zagrożeń oraz udoskonalenia logiki wykrywania.
+- **wersja aktualizacji platformy Program antywirusowy Microsoft Defender** — platforma Program antywirusowy Microsoft Defender jest aktualizowana co miesiąc.
+- **Program antywirusowy Microsoft Defender wersji aparatu** — aparat Program antywirusowy Microsoft Defender jest aktualizowany co miesiąc.
+- **Program antywirusowy Microsoft Defender analizy zabezpieczeń** — firma Microsoft stale aktualizuje analizę zabezpieczeń usługi Microsoft Defender (znaną również jako definicja i podpis) w celu rozwiązania najnowszych zagrożeń oraz uściślenia logiki wykrywania.
 
-Utrzymywanie Program antywirusowy Microsoft Defender wersji pomaga zmniejszyć reguły ASR wyników fałszywie dodatnich i zwiększyć Program antywirusowy Microsoft Defender wykrywania. Aby uzyskać więcej szczegółowych informacji na temat bieżących wersji i sposobu aktualizowania poszczególnych składników Program antywirusowy Microsoft Defender odwiedź Program antywirusowy Microsoft Defender [pomocy technicznej platformy](manage-updates-baselines-microsoft-defender-antivirus.md).
+Utrzymywanie bieżących wersji Program antywirusowy Microsoft Defender pomaga zmniejszyć liczbę reguł asr wyników fałszywie dodatnich i zwiększa możliwości wykrywania Program antywirusowy Microsoft Defender. Aby uzyskać więcej informacji na temat bieżących wersji i sposobu aktualizowania różnych składników Program antywirusowy Microsoft Defender, odwiedź [stronę obsługa platformy Program antywirusowy Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-### <a name="caveat"></a>Zastrzeżenie
+### <a name="caveat"></a>Zastrzeżeniem
 
-Niektóre reguły nie działają dobrze, jeśli wyeksłowane, wewnętrznie opracowane aplikacje i skrypty są w wysokim użyciu. Wdrażanie reguł ASR jest trudniejsze, jeśli podpisywanie kodu nie jest wymuszane.
+Niektóre reguły nie działają dobrze, jeśli niepodpisane, wewnętrznie opracowane aplikacje i skrypty są w dużym użyciu. Wdrażanie reguł usługi ASR jest trudniejsze, jeśli podpisywanie kodu nie jest wymuszane.
 
-## <a name="asr-rules-deployment-steps"></a>Kroki wdrażania reguł ASR
+## <a name="asr-rules-deployment-steps"></a>Kroki wdrażania reguł usługi ASR
 
-Tak jak w przypadku każdej nowej, szerokiej implementacji, która może mieć potencjalnie wpływ na twoją działalność biznesową, ważne jest, aby w planowaniu i implementacji znaleźć się w metodyce. Ze względu na zaawansowane możliwości reguł ASR w celu zapobiegania złośliwemu oprogramowaniu konieczne jest staranne planowanie i wdrażanie tych reguł, aby zagwarantować, że będą one najlepiej działać w przypadku unikatowych przepływów pracy klienta. Aby pracować w środowisku, należy starannie zaplanować, przetestować, zaimplementować i operacyjnie reguły asr.  
+Podobnie jak w przypadku każdej nowej implementacji na szeroką skalę, która może potencjalnie mieć wpływ na operacje biznesowe, ważne jest, aby być metodycznym w planowaniu i implementacji. Ze względu na zaawansowane możliwości reguł usługi ASR w zapobieganiu złośliwemu oprogramowaniu należy starannie zaplanować i wdrożyć te reguły, aby upewnić się, że działają najlepiej w przypadku unikatowych przepływów pracy klientów. Aby pracować w środowisku, musisz dokładnie planować, testować, implementować i obsługiwać reguły usługi ASR.  
 
 > [!div class="mx-imgBorder"]
-> ![Fazy wdrażania reguł asr](images/asr-rules-deployment-phases.png)
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Fazy wdrażania reguł usługi ASR" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
->W przypadku klientów korzystających z systemu HIPS innych niż firma Microsoft i przejścia do zasad zmniejszania powierzchni ataków programu Microsoft Defender for Endpoint: firma Microsoft zaleca klientom uruchomienie rozwiązania HIPS obok wdrożenia reguł ASR do momentu przejścia z trybu inspekcji do trybu blokowania. Pamiętaj, że aby uzyskać zalecenia dotyczące wykluczeń, musisz się z dostawcą oprogramowania antywirusowego innej firmy.  
+>W przypadku klientów, którzy korzystają z rozwiązania HIPS firmy innej niż Microsoft i przechodzą na Ochrona punktu końcowego w usłudze Microsoft Defender reguły zmniejszania obszaru podatnego na ataki: firma Microsoft zaleca klientom równoległe uruchamianie rozwiązania HIPS z wdrożeniem reguł usługi ASR do momentu przejścia z trybu inspekcji na tryb bloku. Należy pamiętać, że aby uzyskać zalecenia dotyczące wykluczeń, należy skontaktować się z dostawcą oprogramowania antywirusowego innej firmy.  
 
-## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tym zbiorze wdrożeń
+## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tej kolekcji wdrożeń
 
-[Etap 1. Planowanie](attack-surface-reduction-rules-deployment-plan.md)
+[Faza 1. Plan](attack-surface-reduction-rules-deployment-plan.md)
 
-[Etap 2. Testowanie](attack-surface-reduction-rules-deployment-test.md)
+[Faza 2. Test](attack-surface-reduction-rules-deployment-test.md)
 
-[Etap 3. Implementowanie](attack-surface-reduction-rules-deployment-implement.md)
+[Faza 3. Implementowanie](attack-surface-reduction-rules-deployment-implement.md)
 
-[Etap 4. Operacyjne](attack-surface-reduction-rules-deployment-operationalize.md)
+[Faza 4. Operacjonalizowanie](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="reference"></a>Odwołanie
 
 ### <a name="blogs"></a>Blogi
 
-[Reguły zmniejszania powierzchni ataków bez zadyskonu — część 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420)
+[Demistyfikacja reguł zmniejszania obszaru podatnego na ataki — część 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420)
 
-[Bezmyślne reguły zmniejszania powierzchni ataków — część 2](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-2/ba-p/1326565)
+[Demistyfikacja reguł zmniejszania powierzchni ataków — część 2](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-2/ba-p/1326565)
 
-[Bezmyślne reguły zmniejszania powierzchni ataków — część 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968)
+[Demistyfikacja reguł zmniejszania powierzchni ataków — część 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968)
 
-[Bezmyślne reguły zmniejszania powierzchni ataków — część 4](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-4/ba-p/1384425)
+[Demistyfikacja reguł zmniejszania obszaru podatnego na ataki — część 4](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-4/ba-p/1384425)
 
-### <a name="asr-collection"></a>Kolekcja ASR
+### <a name="asr-collection"></a>Kolekcja usługi ASR
 
-[Omówienie zmniejszania powierzchni ataków](overview-attack-surface-reduction.md)
+[Omówienie zmniejszania obszaru podatnego na ataki](overview-attack-surface-reduction.md)
 
-[Stosowanie reguł zmniejszania powierzchni ataków w celu zapobiegania zainfekowaniu złośliwym oprogramowaniem](attack-surface-reduction.md)
+[Używanie reguł zmniejszania obszaru ataków w celu zapobiegania infekcji złośliwym oprogramowaniem](attack-surface-reduction.md)
 
-[Włączanie reguł ograniczania powierzchni ataków](enable-attack-surface-reduction.md)
+[Włączanie reguł zmniejszania obszaru ataków](enable-attack-surface-reduction.md)
 
-[Informacje dotyczące reguł zmniejszania powierzchni ataków](attack-surface-reduction-rules-reference.md)
+[Dokumentacja reguł zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md)
 
-[Zmniejszenie powierzchni ataków — często zadawane pytania](attack-surface-reduction-faq.yml)
+[Zmniejszanie obszaru podatnego na ataki — często zadawane pytania](attack-surface-reduction-faq.yml)
 
 ### <a name="microsoft-defender"></a>Microsoft Defender
 
-[Adres dodatnich/ujemnych wyników fałszywie dodatnich w programie Microsoft Defender dla punktu końcowego](defender-endpoint-false-positives-negatives.md)
+[Rozwiązywanie problemów z wynikami fałszywie pozytywnymi/negatywnymi w ochronie punktu końcowego w usłudze Microsoft Defender](defender-endpoint-false-positives-negatives.md)
 
-[Ochrona i Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+[Ochrona i Program antywirusowy Microsoft Defender dostarczane przez chmurę](cloud-protection-microsoft-defender-antivirus.md)
 
-[Włączanie ochrony w chmurze w aplikacji Program antywirusowy Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
+[Włączanie ochrony dostarczanej w chmurze w Program antywirusowy Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 [Konfigurowanie i weryfikowanie wykluczeń na podstawie rozszerzenia, nazwy lub lokalizacji](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-[Program antywirusowy Microsoft Defender platformy](manage-updates-baselines-microsoft-defender-antivirus.md)
+[obsługa platformy Program antywirusowy Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)
 
-[Omówienie spisu w centrum Aplikacje Microsoft 365 administracyjnego](/deployoffice/admincenter/inventory)
+[Omówienie spisu w centrum administracyjnym Aplikacje Microsoft 365](/deployoffice/admincenter/inventory)
 
-[Tworzenie planu wdrażania dla Windows](/windows/deployment/update/create-deployment-plan)
+[Tworzenie planu wdrożenia dla Windows](/windows/deployment/update/create-deployment-plan)
 
-[Używanie kontroli dostępu opartej na rolach (RBAC, role based access control) i tagów zakresów dla rozpowszechniania it w usłudze Intune](/mem/intune/fundamentals/scope-tags)
+[Używanie kontroli dostępu opartej na rolach (RBAC) i tagów zakresu dla rozproszonej infrastruktury IT w Intune](/mem/intune/fundamentals/scope-tags)
 
 [Przypisywanie profilów urządzeń w Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 
-### <a name="management-sites"></a>Witryny zarządzania
+### <a name="management-sites"></a>Lokacje zarządzania
 
-[Microsoft Endpoint Manager administracyjne](https://endpoint.microsoft.com/#home)
+[centrum administracyjne Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)
 
-[Zmniejszenie powierzchni ataków](https://security.microsoft.com/asr?viewid=detections)
+[Zmniejszanie obszaru podatnego na ataki](https://security.microsoft.com/asr?viewid=detections)
 
-[Konfiguracje reguł asr](https://security.microsoft.com/asr?viewid=configuration)
+[Konfiguracje reguł usługi ASR](https://security.microsoft.com/asr?viewid=configuration)
 
-[Reguły ASR Wykluczenia](https://security.microsoft.com/asr?viewid=exclusions)
+[Wykluczenia reguł usługi ASR](https://security.microsoft.com/asr?viewid=exclusions)

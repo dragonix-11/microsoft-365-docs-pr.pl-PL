@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c43fdfe746575837e8e5c8f36992f5fa6e2fec96
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: df79062d1dafcd8d82dfa4ff9b9847ff4fad1775
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679505"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476142"
 ---
 # <a name="evaluate-network-protection"></a>Ocenianie ochrony sieci
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [Ochrona sieci](network-protection.md) pomaga zapobiegać używaniu przez pracowników dowolnej aplikacji w celu uzyskania dostępu do niebezpiecznych domen, które mogą czynami wyłudzania informacji, oszustwami i złośliwą zawartością w Internecie.
@@ -62,14 +62,14 @@ Włącz ochronę sieci w trybie inspekcji, aby sprawdzić, które adresy IP i do
 
     Połączenie sieciowe będzie dozwolone i zostanie wyświetlony komunikat testowy.
     
-    ![Przykładowe powiadomienie z komunikatem Połączenie zablokowane: Administrator IT Zabezpieczenia Windows zablokował to połączenie sieciowe. Skontaktuj się z działem pomocy technicznej IT.](images/np-notif.png)
+    :::image type="content" source="images/np-notif.png" alt-text="Powiadomienie o zablokowaniu połączenia" lightbox="images/np-notif.png":::
 
 > [!NOTE]
 > Połączenia sieciowe mogą być pomyślne, nawet jeśli witryna jest blokowana przez ochronę sieci. Aby dowiedzieć się więcej, zobacz [Ochrona sieci i trójkierunkowy uścisk dłoni TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Przeglądanie zdarzeń ochrony sieci w przeglądarce Windows zdarzeń
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Przeglądanie zdarzeń ochrony sieci w programie Windows Podgląd zdarzeń
 
-Aby przejrzeć aplikacje, które zostałyby zablokowane, otwórz podgląd zdarzeń i przefiltruj identyfikator zdarzenia 1125 w dzienniku operacyjnym firmy Microsoft-Windows-Windows Defender-operacyjnym. W poniższej tabeli wymieniono wszystkie zdarzenia ochrony sieci.
+Aby przejrzeć aplikacje, które zostałyby zablokowane, otwórz program Podgląd zdarzeń i odfiltruj identyfikator zdarzenia 1125 w dzienniku Windows-Windows Defender/operacyjnym firmy Microsoft. W poniższej tabeli wymieniono wszystkie zdarzenia ochrony sieci.
 
 | Identyfikator zdarzenia | Provide/Source | Opis |
 |---|---|---|

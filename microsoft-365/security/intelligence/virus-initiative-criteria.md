@@ -1,8 +1,8 @@
 ---
 title: Microsoft Virus Initiative
 ms.reviewer: ''
-description: Microsoft Virus Initiative (MVI) ułatwia organizacjom, które ujęły produkty antywirusowe lub ochrony przed złośliwym oprogramowaniem, integrują się Windows oprogramowaniem telemetrii z firmą Microsoft.
-keywords: zabezpieczenia, złośliwe oprogramowanie, MVI, Centrum firmy Microsoft ds. ochrony przed złośliwym oprogramowaniem, MMPC, alliances, WDSI
+description: Inicjatywa Microsoft Virus Initiative (MVI) pomaga organizacjom, które tworzą oprogramowanie antywirusowe lub produkty chroniące przed złośliwym kodem integrują się z Windows i udostępniają dane telemetryczne firmie Microsoft.
+keywords: zabezpieczenia, złośliwe oprogramowanie, MVI, Centrum firmy Microsoft ds. ochrony przed złośliwym oprogramowaniem, MMPC, sojusze, WDSI
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -14,46 +14,46 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 521d663fd8966bfd2f253377941d27e2587904bd
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 911deac49606116ca7aece9d37a9aa3d7164fe3f
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63706030"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665321"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft Virus Initiative
 
-Microsoft Virus Initiative (MVI, Microsoft Virus Initiative) ułatwia organizacjom opracowywanie lepszych, niezawodnych i dostosowanych do technologii i strategii firmy Microsoft rozwiązań zabezpieczeń.
+Inicjatywa Microsoft Virus Initiative (MVI) pomaga organizacjom opracowywać lepsze rozwiązania w zakresie zabezpieczeń, które są wydajne, niezawodne i zgodne z technologią i strategią firmy Microsoft.
 
 ## <a name="become-a-member"></a>Zostań członkiem
 
-Możesz zażądać członkostwa, jeśli jesteś przedstawicielem organizacji, która opracowuje i tworzy technologię antyszybową lub antywirusową. 
+Możesz zażądać członkostwa, jeśli jesteś przedstawicielem organizacji, która opracowuje i produkuje oprogramowanie chroniące przed złośliwym kodem lub technologię antywirusową. 
 
-Aby można było zakwalifikować się do programu MVI, Twoja organizacja musi spełniać wszystkie następujące wymagania:
+Aby zakwalifikować się do programu MVI, organizacja musi spełnić wszystkie następujące wymagania:
 
-1)  Twoje rozwiązanie zabezpieczające zastępuje albo uzupełnienie Program antywirusowy Microsoft Defender.
+1)  Twoje rozwiązanie zabezpieczeń zastępuje lub uzupełnia Program antywirusowy Microsoft Defender.
 
-2)  Twoja organizacja jest odpowiedzialna zarówno za opracowywanie i rozpowszechnianie aktualizacji aplikacji dla klientów końcowych, którzy mają problemy ze zgodnością z Windows.
+2)  Twoja organizacja jest odpowiedzialna zarówno za opracowywanie, jak i dystrybucję aktualizacji aplikacji dla klientów końcowych, którzy odpowiadają na zgodność z Windows.
 
-3)  Twoja organizacja musi być aktywna w branży ochrony przed złośliwym oprogramowaniem i mieć dodatnią reputację, na co wskazuje uczestnictwo w konferencjach branżowych lub recenzowane w standardowym raporcie branżowym, takim jak AV-Comparatives, OPSWAT lub Gartner.
+3)  Twoja organizacja musi być aktywna w branży ochrony przed złośliwym kodem i mieć pozytywną reputację, o czym świadczy udział w konferencjach branżowych lub przegląd w standardowym raporcie branżowym, takim jak AV-Comparatives, OPSWAT lub Gartner.
 
-4)  Twoja organizacja musi podpisać umowę o nie ujawnianiu informacji (NDA) z firmą Microsoft.
+4)  Twoja organizacja musi podpisać umowę o zachowaniu poufności (NDA) z firmą Microsoft.
 
-5)  Twoja organizacja musi podpisać umowę licencyjną na program. Utrzymywanie niniejszej umowy licencyjnej wymaga, aby użytkownik przestrzegał wszystkich wymagań dotyczących programu ochrony przed złośliwym kodem. Te wymagania określają zachowanie aplikacji ochrony przed złośliwym oprogramowaniem niezbędne w celu zapewnienia odpowiedniej interakcji z Windows.
+5)  Organizacja musi podpisać umowę licencyjną programu. Utrzymanie tej umowy licencyjnej wymaga spełnienia wszystkich wymagań programowych dotyczących aplikacji chroniących przed złośliwym kodem. Te wymagania określają zachowanie aplikacji chroniących przed złośliwym kodem niezbędne do zapewnienia właściwej interakcji z Windows.
 
-6)  Aplikacja jest przesyłana do firmy Microsoft w celu okresowego testowania wydajności i przeglądu funkcji.
+6)  Musisz przesłać aplikację do firmy Microsoft w celu okresowego testowania wydajności i przeglądu funkcji.
 
-7)  Twoje rozwiązanie musi zostać certyfikowane przez niezależne testowanie przez co najmniej jedną branżową organizację i musi być utrzymywane rocznie certyfikacja.
+7)  Rozwiązanie musi być certyfikowane w drodze niezależnych testów przez co najmniej jedną organizację ze standardami branżowymi, a roczna certyfikacja musi być utrzymywana.
 
-Dostawca testów | Typ testowy laboratorium | Minimalny poziom/wynik
+Dostawca testów | Typ testu laboratoryjnego | Minimalny poziom/wynik
 ------------- |---------------|----------------------
-AV-Comparatives | Real-World test ochrony </br> https://www.av-comparatives.org/testmethod/real-world-protection-tests/ |"Zatwierdzone" klasyfikacja z JSW w 2016 r.
-AV-Test | Musi przejść testy Windows. Certyfikaty dla komputerów Mac i Linux nie są akceptowane </br> https://www.av-test.org/en/about-the-institute/certification/ | Osiągnięcia osiągnięcia "av-TEST Certified" (dla użytkowników domowych) lub "AV-TEST Approved" (dla użytkowników korporacyjnych)
-Laboratorium ICSA | Wykrywanie punktu końcowego ochrony przed złośliwym oprogramowaniem </br> https://www.icsalabs.com/technology-program/anti-virus/criteria |PASS/Certified
-Laboratorium SKD | Produkt wymagań certyfikacji: oprogramowanie antywirusowe lub ochrony przed złośliwym kodem </br> http://www.skdlabs.com/html/english/ </br> http://www.skdlabs.com/cert/ |SkD Labs Star Check Certification Requirements Pass >= 98,5% w przypadku testów na żądanie, przy programie Access i testach całkowitego wykrywania 
-VB 100 |    VB100 Certification Test V1.1 </br> https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/ | Certyfikacja VB100
-Laboratorium Zachód |   Certyfikat znacznika wyboru </br> http://www.checkmarkcertified.com/sme/  | Ocena "A" na wydajność zabezpieczeń produktu
+AV-Comparatives | test ochrony Real-World </br> https://www.av-comparatives.org/testmethod/real-world-protection-tests/ |Ocena "Approved" z av comparatives
+AV-Test | Musi przejść testy dla Windows. Certyfikaty dla komputerów Mac i Linux nie są akceptowane </br> https://www.av-test.org/en/about-the-institute/certification/ | Uzyskiwanie certyfikatu "AV-TEST Certified" (dla użytkowników domowych) lub "ZATWIERDZONE PRZEZ AV-TEST" (dla użytkowników firmowych)
+Laboratoria ICSA | Wykrywanie ochrony przed złośliwym oprogramowaniem w punkcie końcowym </br> https://www.icsalabs.com/technology-program/anti-virus/criteria |PASS/Certified
+Laboratoria SKD | Wymagania dotyczące certyfikacji Produkt: Oprogramowanie antywirusowe lub chroniące przed złośliwym kodem </br> http://www.skdlabs.com/html/english/ </br> http://www.skdlabs.com/cert/ |Skd Labs Star Check Certification Requirements Pass >= 98.5% with On Demand, On Access and Total Detection tests 
+VB 100 |    Test certyfikacji VB100 v1.1 </br> https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/ | Certyfikacja VB100
+Laboratoria Zachodniego Wybrzeża |   Checkmark Certified </br> http://www.checkmarkcertified.com/sme/  | Ocena "A" dotycząca wydajności zabezpieczeń produktów
 
 ## <a name="apply-now"></a>Zastosuj teraz
 
-Jeśli Twoja organizacja spełnia te kryteria i jest zainteresowana dołączeniem, [zgłoś członkostwo teraz](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxusDUkejalGp0OAgRTWC7BUQVRYUEVMNlFZUjFaUDY2T1U1UDVVU1NKVi4u).
+Jeśli Twoja organizacja spełnia te kryteria i jest zainteresowana dołączeniem, [teraz złóż wniosek o członkostwo](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxusDUkejalGp0OAgRTWC7BUQVRYUEVMNlFZUjFaUDY2T1U1UDVVU1NKVi4u).

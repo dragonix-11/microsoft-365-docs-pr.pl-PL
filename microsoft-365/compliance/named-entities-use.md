@@ -1,5 +1,5 @@
 ---
-title: Używanie nazwanych obiektów w zasadach ochrony przed utratą danych (wersja zapoznawcza)
+title: Używaj nazwanych jednostek w zasadach ochrony przed utratą danych (wersja zapoznawcza)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -15,49 +15,49 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-description: Skorzystaj z tych procedur, aby korzystać z nazwanych obiektów w zasadach ochrony przed utratą danych.
-ms.openlocfilehash: 5adb410689e597395f1b13152ed62af75fa111d6
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Te procedury umożliwiają korzystanie z nazwanych jednostek w zasadach ochrony przed utratą danych
+ms.openlocfilehash: 9b3a8899ef4b64c682289e29df19648a00d4f048
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525225"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665167"
 ---
-# <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Używanie nazwanych obiektów w zasadach ochrony przed utratą danych (wersja zapoznawcza)
+# <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Używaj nazwanych jednostek w zasadach ochrony przed utratą danych (wersja zapoznawcza)
 
 > [!IMPORTANT]
-> Funkcja nazwanych jednostek jest obecnie wprowadzana i będzie wyświetlana w dzierżawie, gdy będzie dla Ciebie dostępna. Sprawdź je w Eksploratorze zawartości i w przepływie tworzenia zasad ochrony przed utratą danych (DLP). 
+> Funkcja nazwanych jednostek jest wdrażana i będzie wyświetlana w dzierżawie, gdy będzie dostępna dla Ciebie. Sprawdź je w Eksploratorze zawartości i w przepływie tworzenia zasad ochrony przed utratą danych (DLP). 
 
-Przeczytaj Informacje [o nazwanych jednostkach (wersja zapoznawcza)](named-entities-learn.md) przed rozpoczęciem ich używania.
+Przeczytaj artykuł [Dowiedz się więcej o nazwanych jednostkach (wersja zapoznawcza)](named-entities-learn.md) przed rozpoczęciem ich używania.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-### <a name="skusubscriptions-licensing"></a>Licencjonowanie subskrypcji/licencji na subskrypcje sKU
+### <a name="skusubscriptions-licensing"></a>Licencjonowanie jednostek SKU/subskrypcji
 
 Musisz mieć jedną z tych subskrypcji
 
-- Ochrona informacji i zarządzanie
+- Information Protection i ład
 - Zgodność platformy Microsoft 365 E5
 - Office 365 E5
 - Microsoft 365 E5
 
-Aby uzyskać szczegółowe informacje o licencjonowaniu, [zobacz opis usługi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
+Aby uzyskać szczegółowe informacje o licencjonowaniu, zobacz [opis usługi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
 ### <a name="permissions"></a>Uprawnienia
 
-Konto, za pomocą których tworzysz i edytujesz zasady ochrony przed utratą danych (DLP), musi mieć uprawnienia roli zarządzanie zgodnością **DLP** . Aby uzyskać więcej informacji, zobacz [Zapewnianie użytkownikom dostępu do Centrum Office 365 zgodności](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Konto używane do tworzenia i edytowania zasad ochrony przed utratą danych (DLP) musi mieć uprawnienia roli **DLP Compliance Management** . Aby uzyskać więcej informacji, zobacz [Udzielanie użytkownikom dostępu do Centrum zgodności Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
 ## <a name="supported-locations"></a>Obsługiwane lokalizacje
 
-Aby wykrywać i chronić poufne elementy w tych lokalizacjach, można używać nazwanych identyfikatorów SIT encji i rozszerzonych zasad:
+Do wykrywania i ochrony poufnych elementów w tych lokalizacjach można używać nazwanych interfejsów SIC jednostek i rozszerzonych zasad:
 
-- SharePoint witryn
-- OneDrive konta
-- Teams wiadomości czatu i kanałów
-- Urządzenia (Windows 10 punktów końcowych)
+- witryny SharePoint
+- konta OneDrive
+- Teams wiadomości czatu i kanału
+- Urządzenia (Windows 10 urządzenia punktu końcowego)
 
-Nazwane jednostki SIT i rozszerzone zasady nie są obsługiwane w przypadku:
+Nazwane jednostki SIC i rozszerzone zasady nie są obsługiwane w następujących celach:
 
 
 - Repozytoria lokalne
@@ -65,59 +65,59 @@ Nazwane jednostki SIT i rozszerzone zasady nie są obsługiwane w przypadku:
 
 ## <a name="create-and-edit-enhanced-policies"></a>Tworzenie i edytowanie rozszerzonych zasad
 
-Aby utworzyć lub edytować zasady DLP, skorzystaj z procedur zobacz Tworzenie [, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md).
+Aby utworzyć lub edytować zasady DLP, użyj procedur w [sekcji Tworzenie, testowanie i dostrajanie zasad DLP](create-test-tune-dlp-policy.md).
 
-## <a name="workloads-and-services-that-support-named-entities"></a>Obciążenia pracą i usługi, które obsługują nazwane jednostki
+## <a name="workloads-and-services-that-support-named-entities"></a>Obciążenia i usługi obsługujące nazwane jednostki
 
 
-- **Usługa zbierania elektronicznych materiałów dowodowych platformy Microsoft 3655** obsługuje użycie nazwanych jednostek w usługach obsługi wiadomości e-mail.
-- **Program Microsoft Defender for Cloud Apps** obsługuje korzystanie z nazwanych jednostek w zasadach usługi Defender for Cloud Apps.
-- **Zarządzanie ryzykiem w niejawnym** programie testów obsługuje użycie nazwanych jednostek w usługach arytmie.
-- **Zgodność komunikacji** nie obsługuje używania nazwanych jednostek w Exchange transportu i danych w miejscu.
-- **Microsoft Information Governance** (MIG) nie obsługuje używania nazwanych jednostek w Exchange reguł transportu i danych w miejscu.
+- **Usługa Microsoft 3655 eDiscovery** obsługuje korzystanie z nazwanych jednostek w usługach Substrate.
+- **Microsoft Defender for Cloud Apps** obsługuje używanie nazwanych jednostek w zasadach Defender dla Chmury Apps.
+- **Usługa Insider Risk Management** obsługuje korzystanie z nazwanych jednostek w usługach Substrate.
+<!--- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
+- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
  
-### <a name="unified-dlp"></a>Ujednolicony system DLP
+### <a name="unified-dlp"></a>Ujednolicony DLP
 
-|Obciążenie pracą/usługi  |Publiczna obsługa podglądu dla nazwanych obiektów  |
+|Obciążenie/usługi  |Publiczna obsługa wersji zapoznawczej dla jednostek nazwanych  |
 |---------|---------|
-|porada Office klientów win32    |nie jest obsługiwane  |
-|Office klientów usługi WAC    |obsługiwane         |
-|Porada w zakresie zasad OWA     |nie jest obsługiwane         |
-|Outlook zasad     |nie jest obsługiwane |
-|Punkty końcowe (Windows 10 urządzenia)     |obsługiwane  |
-|Exchange reguły transportu     |nie jest obsługiwane |
-|OneDrive dla Firm danych w spoczynku     |obsługiwane         |
-|SharePoint danych online w spoczynku     |obsługiwane         |
-|Teams danych w spoczynku     |obsługiwane         |
-|Dane w spoczynku wiadomości e-mail     |nie jest obsługiwane         |
-|Usługa Microsoft Defender dla aplikacji w chmurze     |obsługiwane         |
+|porada dotycząca zasad klientów Office Win32    |nieobsługiwane  |
+|porada dotycząca zasad klientów Office WAC    |Obsługiwane         |
+|Porada dotycząca zasad OWA     |nieobsługiwane         |
+|Porada dotycząca zasad Outlook     |nieobsługiwane |
+|Punkty końcowe (urządzenia Windows 10)     |Obsługiwane  |
+|reguły transportu Exchange     |nieobsługiwane |
+|OneDrive dla Firm danych magazynowanych     |Obsługiwane         |
+|SharePoint Dane w trybie online magazynowane     |Obsługiwane         |
+|Teams danych magazynowanych     |Obsługiwane         |
+|Dane w spoczynku wiadomości e-mail     |nieobsługiwane         |
+|Microsoft Defender for Cloud Apps     |Obsługiwane         |
 
-### <a name="autolabeling"></a>Autolabelowanie
+### <a name="autolabeling"></a>Automatyczne etykietowanie
 
-|Obciążenie pracą/usługi |Publiczna obsługa podglądu dla nazwanych obiektów  |
+|Obciążenie/usługi |Publiczna obsługa wersji zapoznawczej dla jednostek nazwanych  |
 |---------|---------|
-|Office klientów win32 w trybie offline   |obsługiwane, użytkownik musi wybrać etykietę i ręcznie zastosować |
-|Online Office klientów win32 w trybie online|obsługiwane ze starym schematem ufności |
-|Outlook online   |obsługiwane ze starym schematem ufności  |
-|Office klienta aplikacji WAC     |obsługiwane |
-|OWA     |obsługiwane |
-|Exchange transport     |nie jest obsługiwane |
-|OneDrive dla Firm danych w spoczynku     |obsługiwane |
-|SharePoint danych online w spoczynku|obsługiwane|
-|Skaner usługi Azure Information Protection (AIP)|nie jest obsługiwane|
+|Office klientów Win32 w trybie offline   |obsługiwane, użytkownik musi wybrać etykietę i ręcznie zastosować |
+|Klienci online Office Win32 online|obsługiwane za pomocą starego schematu ufności |
+|Outlook online   |obsługiwane za pomocą starego schematu ufności  |
+|klient Office WAC     |Obsługiwane |
+|OWA     |Obsługiwane |
+|transport Exchange     |nieobsługiwane |
+|OneDrive dla Firm danych magazynowanych     |Obsługiwane |
+|SharePoint Dane w trybie online magazynowane|Obsługiwane|
+|Skaner usługi Azure Information Protection (AIP)|nieobsługiwane|
 
 ## <a name="known-issues"></a>Znane problemy
 
 |Problem  |Wpływ  |
 |---------|---------|
-|Porady dotyczące zasad DLP (OWA, Outlook i Office Win32)     |   Porady dotyczące zasad z warunkiem jednostki będą powodować "brak dopasowania"      |
-| Obsługa azjatyckich języków dla imienia i nazwiska osoby (chiński, japoński, koreański)    | Nazwane jednostki obsługiwane tylko dla zestawu znaków opartych na alfabetu łacińskim (czyli nazwa kanji nie jest obsługiwana) dla imienia i nazwiska osoby        |
-|Repozytoria lokalne    | Nie obsługiwane jako obciążenie pracą|
+|Porady dotyczące zasad DLP (klienci OWA, Outlook, Office Win32)     |   Porady dotyczące zasad dotyczące warunku jednostki spowodują "brak dopasowania"      |
+| Obsługa języka azjatyckiego dla nazwy osoby (chiński, japoński, koreański)    | Jednostki nazwane obsługiwane tylko dla zestawu znaków opartych na języku łacińskim (czyli kanji nie jest obsługiwane) dla nazwy osoby        |
+|Repozytoria lokalne    | Nieobsługiwane jako obciążenie|
 
 <!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
-## <a name="for-further-information"></a>Więcej informacji
+## <a name="for-further-information"></a>Aby uzyskać więcej informacji
 <!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->
-- [Dowiedz się więcej o nazwanych jednostkach (wersja zapoznawcza)](named-entities-learn.md).
-- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md)
-- [Tworzenie zasad DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md)
+- [Dowiedz się więcej o nazwanych jednostkach (wersja zapoznawcza).](named-entities-learn.md)
+- [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
+- [Twórz zasady DLP na podstawie szablonu](create-a-dlp-policy-from-a-template.md)

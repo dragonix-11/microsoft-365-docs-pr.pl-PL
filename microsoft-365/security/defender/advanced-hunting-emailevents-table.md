@@ -1,7 +1,7 @@
 ---
-title: Tabela EmailEvents w zaawansowanym schemacie wyszukiwania
-description: Informacje o wydarzeniach związanych z Microsoft 365 e-mail w tabeli EmailEvents zaawansowanego schematu wyszukiwania
-keywords: zaawansowane szukanie, schłodzenie przed zagrożeniami, Microsoft 365 Defender, microsoft 365, m365, wyszukiwanie, zapytanie, telemetria, informacje o schemacie, kusto, tabela, kolumna, typ danych, opis, EmailEvents, identyfikator wiadomości sieciowej, nadawca, adresat, identyfikator załącznika, nazwa załącznika, werdykt złośliwego oprogramowania, werdykt wyłudzania informacji, liczba załączników, liczba linków, liczba adresów URL
+title: Tabela EmailEvents w zaawansowanym schemacie wyszukiwania zagrożeń
+description: Informacje o zdarzeniach skojarzonych z wiadomościami e-mail Microsoft 365 w tabeli EmailEvents zaawansowanego schematu wyszukiwania zagrożeń
+keywords: zaawansowane wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, Microsoft 365 Defender wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, odwołanie do schematu, kusto, tabela, kolumna, typ danych, opis, EmailEvents, identyfikator wiadomości sieciowej, nadawca, adresat, identyfikator załącznika, nazwa załącznika, werdykt złośliwego oprogramowania, werdykt wyłudzania informacji, liczba załączników, liczba linków, liczba adresów URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: baf6e8d6d896e31b5092f7d2b8948bb7771382bd
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: f4456dc29f4d62703041b9c386aa7c9fa132695a
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63017919"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667367"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -33,59 +33,59 @@ ms.locfileid: "63017919"
 
 - Microsoft 365 Defender
 
-Tabela `EmailEvents` w zaawansowanym [schemacie chłoniania](advanced-hunting-overview.md) zawiera informacje o wydarzeniach dotyczących przetwarzania wiadomości e-mail w programie Microsoft Defender for Office 365. To odwołanie pozwala konstruować zapytania, które zwracają informacje z tej tabeli.
+Tabela `EmailEvents` w zaawansowanym schemacie [wyszukiwania zagrożeń](advanced-hunting-overview.md) zawiera informacje o zdarzeniach związanych z przetwarzaniem wiadomości e-mail na Ochrona usługi Office 365 w usłudze Microsoft Defender. To odwołanie służy do konstruowania zapytań, które zwracają informacje z tej tabeli.
 
->[!TIP]
-> Aby uzyskać szczegółowe informacje na temat typów zdarzeń (`ActionType` wartości) obsługiwanych w tabeli, użyj wbudowanego schematu referencyjnego dostępnego w usłudze Defender dla chmury.
+> [!TIP]
+> Aby uzyskać szczegółowe informacje na temat typów zdarzeń (`ActionType`wartości) obsługiwanych przez tabelę, użyj wbudowanego odwołania do schematu dostępnego w Defender dla Chmury.
 
-Aby uzyskać informacje o innych tabelach w zaawansowanym schemacie łęgowania, [zapoznaj się z zaawansowanymi informacjami na temat wyszukiwania](advanced-hunting-schema-tables.md).
+Aby uzyskać informacje na temat innych tabel w zaawansowanym schemacie wyszukiwania zagrożeń, [zobacz zaawansowane informacje dotyczące wyszukiwania zagrożeń](advanced-hunting-schema-tables.md).
 
 > [!IMPORTANT]
-> Niektóre informacje odnoszą się do wstępnie wypuszczonych produktów, które mogą zostać znacząco zmodyfikowane przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+> Niektóre informacje odnoszą się do wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
 | Nazwa kolumny | Typ danych | Opis |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Data i godzina nagrania zdarzenia |
+| `Timestamp` | `datetime` | Data i godzina zarejestrowania zdarzenia |
 | `NetworkMessageId` | `string` | Unikatowy identyfikator wiadomości e-mail wygenerowany przez Microsoft 365 |
-| `InternetMessageId` | `string` | Publiczny identyfikator wiadomości e-mail ustawiany przez wysyłający system poczty e-mail |
-| `SenderMailFromAddress` | `string` | Sender email address in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
-| `SenderFromAddress` | `string` | Adres e-mail nadawcy w nagłówku OD, który jest widoczny dla adresatów wiadomości e-mail w ich klientach poczty e-mail |
-| `SenderDisplayName` | `string` | Imię i nazwisko nadawcy wyświetlane w książce adresowej. Zwykle jest to połączenie imienia lub danego imienia, inicjała środkowego oraz nazwiska lub nazwiska. |
+| `InternetMessageId` | `string` | Publiczny identyfikator wiadomości e-mail ustawionej przez system wysyłania wiadomości e-mail |
+| `SenderMailFromAddress` | `string` | Adres e-mail nadawcy w nagłówku MAIL FROM, znany również jako nadawca koperty lub adres Return-Path |
+| `SenderFromAddress` | `string` | Adres e-mail nadawcy w nagłówku FROM, który jest widoczny dla adresatów poczty e-mail na klientach poczty e-mail |
+| `SenderDisplayName` | `string` | Nazwa nadawcy wyświetlana w książce adresowej, zazwyczaj kombinacja danego lub imienia, inicjał środkowy oraz nazwisko lub nazwisko |
 | `SenderObjectId` | `string` |Unikatowy identyfikator konta nadawcy w usłudze Azure AD |
-| `SenderMailFromDomain` | `string` | Domena nadawcy w nagłówku MAIL FROM, z nazwą nadawcy koperty lub Return-Path adres |
-| `SenderFromDomain` | `string` | Domena nadawcy w nagłówku FROM, który jest widoczny dla adresatów wiadomości e-mail w ich klientach poczty e-mail |
-| `SenderIPv4` | `string` | Adres IPv4 ostatniego wykrytego serwera poczty, który przekazał wiadomość |
-| `SenderIPv6` | `string` | Adres IPv6 ostatniego wykrytego serwera poczty, który przekazał wiadomość |
-| `RecipientEmailAddress` | `string` | Adres e-mail adresata lub adres e-mail odbiorcy po rozwinięciu listy dystrybucyjnej |
-| `RecipientObjectId` | `string` | Unikatowy identyfikator adresata poczty e-mail w usłudze Azure AD |
+| `SenderMailFromDomain` | `string` | Domena nadawcy w nagłówku MAIL FROM, znana również jako nadawca koperty lub adres Return-Path |
+| `SenderFromDomain` | `string` | Domena nadawcy w nagłówku FROM, która jest widoczna dla adresatów poczty e-mail na klientach poczty e-mail |
+| `SenderIPv4` | `string` | Adres IPv4 ostatniego wykrytego serwera poczty, który przekaźnikował wiadomość |
+| `SenderIPv6` | `string` | Adres IPv6 ostatniego wykrytego serwera poczty, który przekaźnikował wiadomość |
+| `RecipientEmailAddress` | `string` | Adres e-mail odbiorcy lub adres e-mail odbiorcy po rozszerzeniu listy dystrybucyjnej |
+| `RecipientObjectId` | `string` | Unikatowy identyfikator adresata wiadomości e-mail w usłudze Azure AD |
 | `Subject` | `string` | Temat wiadomości e-mail |
-| `EmailClusterId` | `string` | Identyfikator grupy podobnych wiadomości e-mail grupowanych na podstawie analizy heuristycznej ich zawartości |
-| `EmailDirection` | `string` | Kierunek wiadomości e-mail względem Twojej sieci: przychodzący, wychodzący, wewnątrz organizacji |
-| `DeliveryAction` | `string` | Akcja dostarczenia wiadomości e-mail: Dostarczono, Wiadomości-śmieci, Zablokowane lub Zamienione |
-| `DeliveryLocation` | `string` | Lokalizacja, w której wiadomość e-mail została dostarczona: Skrzynka odbiorcza/folder, Lokalnie/Zewnętrzne, Wiadomości-śmieci, Kwarantanna, Niepowodzenie, Upuszczenie, Elementy usunięte |
-| `ThreatTypes` | `string` | Werdykt z stosu filtrowania wiadomości e-mail na temat tego, czy wiadomość e-mail zawiera złośliwe oprogramowanie, wyłudzanie informacji lub inne zagrożenia |
-| `ThreatNames` | `string` |Nazwa wykrywania w przypadku znalezionego złośliwego oprogramowania lub innych zagrożeń |
-| `DetectionMethods` | `string` | Metody używane do wykrywania złośliwego oprogramowania, wyłudzania informacji lub innych zagrożeń znalezionych w wiadomości e-mail |
-| `ConfidenceLevel` | `string` | Lista poziomów ufności wszystkich werdyktów spamu lub próby wyłudzenia informacji. W przypadku spamu w tej kolumnie jest podany poziom ufności filtru spamu, który wskazuje, że wiadomość e-mail została pominięta (-1), która nie jest spamem (0,1), została znaleziona jako spam z umiarkowaną ufnością (5,6) lub została znaleziona jako spam z dużą pewnością (9). W przypadku wyłudzania informacji ta kolumna wyświetla, czy poziom ufności jest "Wysoki" czy "Niski". |
-| `EmailAction` | `string` | Ostateczna akcja podjęta w związku z wiadomością e-mail na podstawie werdyktu filtru, zasad i akcji użytkownika: Przeniesienie wiadomości do folderu wiadomości-śmieci, Dodawanie nagłówka X, Modyfikowanie tematu, Przekierowywanie wiadomości, Usuwanie wiadomości, wysyłanie do kwarantanny, Brak wykonanej akcji, wiadomość UDW |
-| `EmailActionPolicy` | `string` | Zasady akcji, które zostały wprowadzone: Ochrona przed dużą pewnośćą, ochrona przed złośliwym oprogramowaniem, poczta masowa ochrony przed wiadomościami, wyłudzanie informacji o wyłudzaniu informacji, personifikacja użytkowników przed wyłudzaniem informacji, wyłudzanie informacji, personifikacja wyłudzania informacji, załączniki ochrony przed złośliwym oprogramowaniem, załączniki Sejf, reguły transportu firmy Enterprise (ETR) |
-| `EmailActionPolicyGuid` | `string` | Unikatowy identyfikator zasady, która określała ostateczną akcję poczty |
+| `EmailClusterId` | `string` | Identyfikator grupy podobnych wiadomości e-mail klastrowanych na podstawie heurystycznej analizy ich zawartości |
+| `EmailDirection` | `string` | Kierunek wiadomości e-mail względem sieci: przychodzący, wychodzący, wewnątrz organizacji |
+| `DeliveryAction` | `string` | Akcja dostarczania wiadomości e-mail: dostarczona, zablokowana, zablokowana lub zamieniona |
+| `DeliveryLocation` | `string` | Lokalizacja, w której została dostarczona wiadomość e-mail: Skrzynka odbiorcza/Folder, Lokalna/Zewnętrzna, Śmieci, Kwarantanna, Niepowodzenie, Porzucone, Usunięte elementy |
+| `ThreatTypes` | `string` | Werdykt ze stosu filtrowania wiadomości e-mail dotyczący tego, czy wiadomość e-mail zawiera złośliwe oprogramowanie, wyłudzanie informacji lub inne zagrożenia |
+| `ThreatNames` | `string` |Wykryto nazwę wykrywania złośliwego oprogramowania lub innych zagrożeń |
+| `DetectionMethods` | `string` | Metody służące do wykrywania złośliwego oprogramowania, wyłudzania informacji lub innych zagrożeń znalezionych w wiadomości e-mail |
+| `ConfidenceLevel` | `string` | Lista poziomów ufności wszelkich werdyktów dotyczących spamu lub wyłudzania informacji. W przypadku spamu ta kolumna pokazuje poziom ufności spamu (SCL), wskazujący, czy wiadomość e-mail została pominięta (-1), która nie jest spamem (0,1), została uznana za spam z umiarkowanym zaufaniem (5,6) lub uznany za spam z dużą pewnością (9). W przypadku wyłudzania informacji w tej kolumnie jest wyświetlana informacja o tym, czy poziom ufności to "Wysoki" czy "Niski". |
+| `EmailAction` | `string` | Ostateczna akcja wykonywana w wiadomości e-mail na podstawie werdyktu filtru, zasad i akcji użytkownika: przenoszenie wiadomości do folderu wiadomości-śmieci, dodawanie nagłówka X, modyfikowanie tematu, wiadomości przekierowania, usuwanie wiadomości, wysyłanie do kwarantanny, Brak wykonania akcji, wiadomość Bcc |
+| `EmailActionPolicy` | `string` | Zasady akcji, które weszły w życie: Antispam high-confidence, Antispam, Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Sejf Attachments, Enterprise Transport Rules (ETR) |
+| `EmailActionPolicyGuid` | `string` | Unikatowy identyfikator zasad, które określają ostateczną akcję poczty |
 | `AttachmentCount` | `int` | Liczba załączników w wiadomości e-mail |
 | `UrlCount` | `int` | Liczba osadzonych adresów URL w wiadomości e-mail |
 | `EmailLanguage` | `string` | Wykryty język zawartości wiadomości e-mail |
-| `Connectors` | `string` | Niestandardowe instrukcje definiujące przepływ poczty e-mail organizacji i sposób rozsyłania wiadomości e-mail |
-| `OrgLevelAction` | `string` | Działanie podejmowane w związku z wiadomością e-mail w odpowiedzi na dopasowania do zasad zdefiniowanych na poziomie organizacji |
-| `OrgLevelPolicy` | `string` | Zasady organizacji, które wyzwoliły akcję podejmowane na wiadomości e-mail |
-| `UserLevelAction` | `string` | Działanie podejmowane w związku z wiadomością e-mail w odpowiedzi na dopasowania do zasad skrzynki pocztowej zdefiniowanych przez adresata |
-| `UserLevelPolicy` | `string` | Zasady skrzynki pocztowej użytkownika końcowego, które wyzwoliły akcję podejmowane na wiadomości e-mail |
-| `ReportId` | `long` | Identyfikator zdarzenia oparty na liczniku powtarzających się. Aby zidentyfikować unikatowe zdarzenia, należy użyć tej kolumny w połączeniu z kolumnami DeviceName i Timestamp. |
-| `AuthenticationDetails` | `string` | Lista zdanych lub nieudanych werdyktów przez protokoły uwierzytelniania poczty e-mail, takie jak DMARC, DKIM, SPF lub połączenie wielu typów uwierzytelniania (CompAuth) |
+| `Connectors` | `string` | Instrukcje niestandardowe definiujące przepływ poczty organizacji i sposób kierowania wiadomości e-mail |
+| `OrgLevelAction` | `string` | Akcja wykonywana w wiadomości e-mail w odpowiedzi na dopasowania do zasad zdefiniowanych na poziomie organizacji |
+| `OrgLevelPolicy` | `string` | Zasady organizacyjne, które wyzwoliły akcję podjętą w wiadomości e-mail |
+| `UserLevelAction` | `string` | Akcja wykonywana w wiadomości e-mail w odpowiedzi na dopasowania do zasad skrzynki pocztowej zdefiniowanych przez adresata |
+| `UserLevelPolicy` | `string` | Zasady skrzynki pocztowej użytkownika końcowego, które wyzwoliły akcję podjętą w wiadomości e-mail |
+| `ReportId` | `long` | Identyfikator zdarzenia na podstawie licznika powtarzającego się. Aby zidentyfikować unikatowe zdarzenia, ta kolumna musi być używana w połączeniu z kolumnami DeviceName i Timestamp. |
+| `AuthenticationDetails` | `string` | Lista werdyktów dotyczących przebiegu lub niepowodzenia za pomocą protokołów uwierzytelniania poczty e-mail, takich jak DMARC, DKIM, SPF lub kombinacja wielu typów uwierzytelniania (CompAuth) |
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
+- [Omówienie zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
 - [Używanie zapytań udostępnionych](advanced-hunting-shared-queries.md)
-- [Przeszukaj urządzenia, wiadomości e-mail, aplikacje i tożsamości](advanced-hunting-query-emails-devices.md)
-- [Opis schematu](advanced-hunting-schema-tables.md)
-- [Stosowanie najlepszych rozwiązań kwerend](advanced-hunting-best-practices.md)
+- [Wyszukiwanie zagrożeń na urządzeniach, w wiadomościach e-mail, aplikacjach i tożsamościach](advanced-hunting-query-emails-devices.md)
+- [Analiza schematu](advanced-hunting-schema-tables.md)
+- [Stosowanie najlepszych rozwiązań dla zapytań](advanced-hunting-best-practices.md)

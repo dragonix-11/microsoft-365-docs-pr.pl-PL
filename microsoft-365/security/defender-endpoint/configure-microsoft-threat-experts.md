@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie funkcji zarządzania Microsoft Threat Experts i zarządzanie nimi
+title: Konfigurowanie funkcji usługi Microsoft Threat Experts i zarządzanie nimi
 ms.reviewer: ''
 description: Zarejestruj się w ekspertach ds. zagrożeń firmy Microsoft, aby konfigurować i używać go oraz zarządzać nimi w codziennych działaniach związanych z zabezpieczeniami i administrowaniem zabezpieczeniami.
 keywords: Microsoft Threat Experts, zarządzana służba chłoniania zagrożeń, MTE, firma Microsoft zarządzała usługą chowania
@@ -18,19 +18,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28533f2ad3fcf547cab95812048b3de8af3bcb9a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 152c0c54138841d9159c7230fc043307979e4546
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324273"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471830"
 ---
-# <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Konfigurowanie funkcji zarządzania Microsoft Threat Experts i zarządzanie nimi
+# <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Konfigurowanie funkcji usługi Microsoft Threat Experts i zarządzanie nimi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -52,15 +52,15 @@ Jeśli jesteś już klientem programu Defender dla punktu końcowego, możesz ap
 
 2. Kliknij przycisk **Zastosuj**.
 
-    ![Obraz Microsoft Threat Experts ustawień.](images/mte-collaboratewithmte.png)
+   :::image type="content" source="images/mte-collaboratewithmte.png" alt-text="Ustawienia Microsoft Threat Experts sieci" lightbox="images/mte-collaboratewithmte.png":::
 
 3. Wprowadź swoją nazwę i adres e-mail, aby firma Microsoft może wrócić do Ciebie w aplikacji.
 
-    ![Obraz Microsoft Threat Experts aplikacji.](images/mte-apply.png)
+   :::image type="content" source="images/mte-apply.png" alt-text="Pole Name (Nazwa) na Microsoft Threat Experts aplikacji" lightbox="images/mte-apply.png":::
 
 4. Przeczytaj zasady [zachowania poufności informacji](https://privacy.microsoft.com/privacystatement), a **następnie po pracy** kliknij przycisk Prześlij. Po zatwierdzeniu aplikacji otrzymasz powitaną wiadomość e-mail.
 
-    ![Obraz potwierdzenia Microsoft Threat Experts aplikacji.](images/mte-applicationconfirmation.png)
+   :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Komunikat Microsoft Threat Experts potwierdzenia aplikacji" lightbox="images/mte-applicationconfirmation.png":::
 
 Po zaakceptowaniu otrzymasz powitaną wiadomość e-mail i zobaczysz, że  przycisk Zastosuj zmienia się w przełącznik, który jest "wł". Jeśli chcesz usunąć się z usługi powiadomień ukierunkowanych ataków, przesuń przełącznik "wyłączone" i kliknij pozycję Preferencje zapisywania u dołu strony.
 
@@ -105,15 +105,15 @@ Możesz współpracuje z innymi Microsoft Threat Experts, którzy mogą być zaa
 
 2. W prawym górnym menu po prawej stronie kliknij **ikonę ?** . Następnie wybierz opcję **Skonsultuj się z ekspertem ds. zagrożeń**.
 
-    ![Obraz menu Microsoft Threat Experts ekspertów na żądanie.](images/mte-eod-menu.png)
+    :::image type="content" source="images/mte-eod-menu.png" alt-text="Element menu Microsoft Threat Experts Experts on Demand" lightbox="images/mte-eod-menu.png":::
 
     Zostanie otwarty wysuwny ekran. Na poniższym obrazie pokazano, kiedy masz subskrypcję wersji próbnej.
 
-    ![Obraz ekranu Microsoft Threat Experts ekspertów na żądanie.](images/mte-eod.png)
+    :::image type="content" source="images/mte-eod.png" alt-text="Strona Microsoft Threat Experts ekspertów na żądanie" lightbox="images/mte-eod.png":::
 
     Na poniższym obrazie przedstawiono pełną subskrypcję usługi Microsoft Threat Experts — Subskrypcja usługi Experts on-Demand.
 
-    ![Obraz pełnego ekranu Microsoft Threat Experts ekspertów na żądanie.](images/mte-eod-fullsubscription.png)
+    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="Strona pełnej Microsoft Threat Experts ekspertów ds. klientów na żądanie" lightbox="images/mte-eod-fullsubscription.png":::
 
     Pole **Temat zapytania** jest wstępnie wypełnione linkiem do odpowiedniej strony dla twojego żądania badania. Może to być na przykład link do zdarzenia, alertu lub strony ze szczegółami urządzenia, które było widać podczas wywłasniania wniosku.
 

@@ -9,27 +9,27 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: pahuijbr, shwjha
+ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 01/26/2022
+ms.date: 04/01/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 4962537e86010fceeb2845fdd6408270c97742dc
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 412033e274cce22b9350292c612b91ef6e34e209
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469762"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634850"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Program antywirusowy Microsoft Defender na Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
 Program antywirusowy Microsoft Defender jest dostępna w następujących wersjach/wersjach programu Windows Server:
 
@@ -39,15 +39,9 @@ Program antywirusowy Microsoft Defender jest dostępna w następujących wersjac
 - System Windows Server 2016
 - Windows Server 2012 R2 (wymaga Ochrona punktu końcowego w usłudze Microsoft Defender)
 
-W niektórych przypadkach Program antywirusowy Microsoft Defender jest nazywane *Endpoint Protection*, jednak aparat ochrony jest taki sam. Chociaż funkcje, konfiguracja i zarządzanie są w dużym stopniu takie same w przypadku Program antywirusowy Microsoft Defender w systemach [Windows 10](microsoft-defender-antivirus-windows.md) i Windows 11, istnieje kilka istotnych różnic w Windows Server:
-
-- Na Windows serwera automatyczne [wykluczenia](configure-server-exclusions-microsoft-defender-antivirus.md) są stosowane na podstawie zdefiniowanej roli serwera.
-
-- W Windows Server, jeśli używasz rozwiązania antywirusowego lub ochrony przed złośliwym oprogramowaniem innego niż firmy Microsoft, Program antywirusowy Microsoft Defender nie włącza się automatycznie ani do trybu pasywnego, ani wyłączonego. Można jednak ustawić tryb Program antywirusowy Microsoft Defender lub wyłączony ręcznie.
-
 ## <a name="setting-up-microsoft-defender-antivirus-on-windows-server"></a>Konfigurowanie Program antywirusowy Microsoft Defender na Windows Server
 
-Proces konfigurowania i uruchamiania programu Program antywirusowy Microsoft Defender na platformie serwera składa się z kilku kroków:
+Proces konfigurowania i uruchamiania programu Program antywirusowy Microsoft Defender w Windows Server obejmuje następujące czynności:
 
 1. [Włącz interfejs](#enable-the-user-interface-on-windows-server).
 2. [Instalowanie Program antywirusowy Microsoft Defender](#install-microsoft-defender-antivirus-on-windows-server).
@@ -59,70 +53,40 @@ Proces konfigurowania i uruchamiania programu Program antywirusowy Microsoft Def
 
 ## <a name="enable-the-user-interface-on-windows-server"></a>Włączanie interfejsu użytkownika na Windows Server
 
-Domyślnie na Program antywirusowy Microsoft Defender i działa on na Windows Server. Czasami interfejs użytkownika jest domyślnie instalowany, ale interfejs użytkownika nie jest wymagany. Do zarządzania plikami możesz używać zasady grupy PowerShell, programu PowerShell Program antywirusowy Microsoft Defender.
+> [!IMPORTANT]
+> Jeśli korzystasz z pakietu Windows Server 2012 R2, zobacz [Opcje instalowania Ochrona punktu końcowego w usłudze Microsoft Defender](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
-Jeśli na serwerze nie zainstalowano graficznego interfejsu użytkownika i chcesz go zainstalować, należy użyć kreatora Dodawania ról i funkcji lub poleceń cmdlet programu PowerShell.
+Domyślnie na Program antywirusowy Microsoft Defender i działa on na Windows Server. Czasami interfejs użytkownika jest domyślnie instalowany. Interfejs użytkownika nie jest wymagany. do zarządzania plikami możesz używać programu PowerShell, zasady grupy lub innych Program antywirusowy Microsoft Defender. Jednak wiele organizacji woli używać graficznego interfejsu użytkownika na Program antywirusowy Microsoft Defender. Aby zainstalować interfejs użytkownika przy użyciu jednej z procedur z poniższej tabeli:
 
-> [!NOTE]
-> Ta opcja nie jest dostępna w przypadku Windows Server 2012 R2. Aby uzyskać więcej informacji, [zobacz Opcje instalowania Ochrona punktu końcowego w usłudze Microsoft Defender](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
-
-### <a name="turn-on-the-gui-using-the-add-roles-and-features-wizard"></a>Włączanie graficznego interfejsu użytkownika przy użyciu Kreatora dodawania ról i funkcji
-
-1. Zobacz [Instalowanie ról, usług ról i funkcji przy użyciu Kreatora](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard) dodawania ról i funkcji, a następnie korzystanie z Kreatora dodawania **ról i funkcji**.
-
-2. Po otworzyeniu kroku **Funkcje** kreatora w **obszarze** Funkcje Windows Defender wybierz graficznego interfejsu użytkownika, aby **Windows Defender** opcje.
-
-   W Windows Server 2016 dodawania **ról i funkcji Kreator** dodawania funkcji wygląda następująco:
-
-   :::image type="content" source="images/server-add-gui.png" alt-text="Kreator dodawania ról i funkcji z wyświetloną opcją graficznego Windows Defender graficznego." lightbox="images/server-add-gui.png":::
-
-   W Windows Server 2019 i Windows Server 2022 Kreator dodawania **ról** i funkcji jest podobny.
-
-### <a name="turn-on-the-gui-using-powershell"></a>Włączanie graficznego interfejsu użytkownika przy użyciu programu PowerShell
-
-Następujące polecenie cmdlet programu PowerShell włączy interfejs:
-
-```powershell
-Install-WindowsFeature -Name Windows-Defender-GUI
-```
+| Procedura | Co należy zrobić |
+|:---|:---|
+| Włączanie graficznego interfejsu użytkownika przy użyciu Kreatora dodawania ról i funkcji | 1. Zobacz Instalowanie [ról, usług ról](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard) i funkcji przy użyciu Kreatora dodawania ról i funkcji, a następnie korzystanie z Kreatora dodawania **ról i funkcji**. <br/><br/>2. Po otworzyeniu kroku **Funkcje** kreatora w obszarze Funkcje Windows Defender wybierz graficznego interfejsu **użytkownika, aby** **Windows Defender** graficzne. |
+| Włączanie graficznego interfejsu użytkownika przy użyciu programu PowerShell | 1. Na Windows otwórz program Windows PowerShell jako administrator. <br/><br/>2. Uruchom następujące polecenie cmdlet programu PowerShell: `Install-WindowsFeature -Name Windows-Defender-GUI` |
 
 ## <a name="install-microsoft-defender-antivirus-on-windows-server"></a>Instalowanie Program antywirusowy Microsoft Defender na Windows Server
 
-Jeśli chcesz zainstalować lub ponownie zainstalować pakiet Program antywirusowy Microsoft Defender w programie Windows Server, możesz to zrobić za pomocą Kreatora dodawania ról i **funkcji lub programu** PowerShell.
+Jeśli chcesz zainstalować lub ponownie zainstalować pakiet Program antywirusowy Microsoft Defender na Windows Server, użyj jednej z procedur z poniższej tabeli:
 
-### <a name="use-the-add-roles-and-features-wizard-to-install-microsoft-defender-antivirus"></a>Instalowanie nowych użytkowników za pomocą Kreatora dodawania ról i funkcji Program antywirusowy Microsoft Defender
+| Procedura | Co należy zrobić |
+|:---|:---|
+| Instalowanie nowych użytkowników za pomocą Kreatora dodawania ról i funkcji Program antywirusowy Microsoft Defender | 1. Zobacz Instalowanie [lub odinstalowywanie ról, usług ról](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard) lub funkcji i korzystanie z Kreatora dodawania **ról i funkcji**. <br/><br/>2. Po dojechu do kroku **Funkcje** kreatora wybierz Program antywirusowy Microsoft Defender kreatora. Wybierz też opcję **graficznego interfejsu użytkownika Windows Defender** interfejsu użytkownika. |
+| Instalowanie programu PowerShell Program antywirusowy Microsoft Defender | 1. Na Windows otwórz program Windows PowerShell jako administrator. <br/><br/>2. Uruchom następujące polecenie cmdlet programu PowerShell: `Install-WindowsFeature -Name Windows-Defender` |
 
-1. Zapoznaj się [z tym artykułem](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard) i użyj **Kreatora dodawania ról i funkcji**.
-
-2. Po **dojechu** do kroku Funkcje kreatora wybierz Program antywirusowy Microsoft Defender kreatora. Wybierz też opcję **graficznego interfejsu użytkownika Windows Defender** interfejsu użytkownika.
-
-### <a name="use-powershell-to-install-microsoft-defender-antivirus"></a>Instalowanie programu PowerShell Program antywirusowy Microsoft Defender
-
-Aby zainstalować Program antywirusowy Microsoft Defender programu PowerShell, uruchom następujące polecenie cmdlet:
-
-```powershell
-Install-WindowsFeature -Name Windows-Defender
-```
-
-Komunikaty o zdarzeniach aparatu ochrony przed złośliwym oprogramowaniem dołączonego Program antywirusowy Microsoft Defender można znaleźć w Program antywirusowy Microsoft Defender [Zdarzenia](troubleshoot-microsoft-defender-antivirus.md).
+> [!NOTE]
+> Komunikaty o zdarzeniach aparatu ochrony przed złośliwym oprogramowaniem dołączonego Program antywirusowy Microsoft Defender można znaleźć w Program antywirusowy Microsoft Defender [Zdarzenia](troubleshoot-microsoft-defender-antivirus.md).
 
 ## <a name="verify-microsoft-defender-antivirus-is-running"></a>Sprawdzanie Program antywirusowy Microsoft Defender czy jest uruchomiony
 
-Po Program antywirusowy Microsoft Defender instalacji następnym krokiem jest sprawdzenie, czy jest uruchomiony. Na punkcie Windows serwera uruchom następujące polecenie cmdlet programu PowerShell:
+Po zainstalowaniu (lub ponownym zainstalowaniu) programu Program antywirusowy Microsoft Defender następnym krokiem jest sprawdzenie, czy program jest uruchomiony. Użyj poleceń cmdlet programu PowerShell z poniższej tabeli:
 
-```powershell
-Get-Service -Name windefend
-```
-
-Aby sprawdzić, czy ochrona zapory jest włączona, uruchom następujące polecenie cmdlet programu PowerShell:
-
-```powershell
-Get-Service -Name mpssvc
-```
+| Procedura | Polecenie cmdlet programu PowerShell |
+|:---|:---|
+| Sprawdzanie, czy Program antywirusowy Microsoft Defender działa | `Get-Service -Name windefend` |
+| Sprawdzanie, czy jest włączona ochrona zapór | `Get-Service -Name mpssvc` |
 
 Jako alternatywy dla programu PowerShell możesz użyć wiersza polecenia, aby sprawdzić, Program antywirusowy Microsoft Defender działa. W tym celu uruchom następujące polecenie z wiersza polecenia:
 
-```console
+```cmd
 sc query Windefend
 ```
 
@@ -130,17 +94,15 @@ Polecenie `sc query` zwraca informacje o Program antywirusowy Microsoft Defender
 
 Aby wyświetlić wszystkie usługi, które nie są uruchomione, uruchom następujące polecenie cmdlet programu PowerShell:
 
-```console
+```cmd
 sc query state= all
 ```
 
 ## <a name="update-antimalware-security-intelligence"></a>Aktualizacja analizy zabezpieczeń przed złośliwym kodem
 
-Aby uzyskać zaktualizowaną ochronę przed złośliwym kodem, musisz mieć Windows Update działającej usługi. Jeśli korzystasz z usługi zarządzania aktualizacjami, na przykład programu Windows Server Update Services (WSUS), upewnij się, że aktualizacje dla programu Program antywirusowy Microsoft Defender Funkcje analizy zabezpieczeń są zatwierdzone dla komputerów, których zarządzasz.
+Aby uzyskać regularne aktualizacje analizy zabezpieczeń, usługa Windows Update musi być uruchomiona. Jeśli korzystasz z usługi zarządzania aktualizacjami, na przykład programu Windows Server Update Services (WSUS), upewnij się, że aktualizacje dla programu Program antywirusowy Microsoft Defender Funkcje analizy zabezpieczeń są zatwierdzone dla komputerów, których zarządzasz.
 
 Domyślnie aktualizacje Windows Update są automatycznie pobieranie i instalowanie na Windows Server 2019 lub Windows Server 2022 lub Windows Server 2016. Tę konfigurację można zmienić przy użyciu jednej z następujących metod:
-
-<br/><br/>
 
 | Metoda | Opis |
 |---|---|
@@ -148,21 +110,18 @@ Domyślnie aktualizacje Windows Update są automatycznie pobieranie i instalowan
 | **Zasady grupy** | Konfigurację usługi Windows Update i zarządzanie nimi można uzyskać, używając ustawień dostępnych w programie zasady grupy w następującej ścieżce: Szablony administracyjne **\Windows Składniki\Windows Update\Konfigurowanie** aktualizacji automatycznych |
 | Klucz rejestru **AUOptions** | Dwie poniższe wartości umożliwiają automatyczne Windows Update pobierania i instalowania aktualizacji analizy zabezpieczeń: <br/><br/> **4** -  **Automatyczne instalowanie aktualizacji**. Ta wartość powoduje, że wszystkie aktualizacje są instalowane automatycznie, w tym aktualizacje Windows Defender aktualizacje analizy zabezpieczeń. <br/><br/> **3** -  **Pobieraj aktualizacje, ale pozwól mi wybrać, czy chcesz je zainstalować**. Ta wartość umożliwia Windows Defender automatyczne pobieranie i instalowanie aktualizacji analizy zabezpieczeń, ale inne aktualizacje nie są instalowane automatycznie. |
 
-Aby zapewnić ochronę przed złośliwym oprogramowaniem, zalecamy włączenie następujących usług:
+Aby zapewnić ochronę przed złośliwym oprogramowaniem, włącz następujące usługi:
 
 - Raportowanie błędów systemu Windows usługi
 - Windows Update usługi
 
 W poniższej tabeli wymieniono usługi dla Program antywirusowy Microsoft Defender i usługi zależne.
 
-<br/><br/>
-
-
 | Nazwa usługi | Lokalizacja pliku | Opis |
 |---|---|---|
-| Windows Defender (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | Jest to główna Program antywirusowy Microsoft Defender, która musi być uruchomiona przez cały czas.|
+| Windows Defender (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | Jest to główna Program antywirusowy Microsoft Defender, która musi być zawsze uruchomiona.|
 | Raportowanie błędów systemu Windows (Wersvc) | `C:\WINDOWS\System32\svchost.exe -k WerSvcGroup` | Ta usługa wysyła raporty o błędach z powrotem do firmy Microsoft. |
-| Windows Defender MpsSvc | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | Zalecamy pozostawienie włączonej Windows Defender Zapory sieciowej. |
+| Windows Defender MpsSvc | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | Zalecamy, aby włączyć Windows Defender Zapory sieciowej. |
 | Windows Update (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| Windows Update jest niezbędne do uzyskania aktualizacji analizy zabezpieczeń i aktualizacji aparatu ochrony przed złośliwym kodem |
 
 ## <a name="submit-samples"></a>Prześlij próbki
@@ -172,13 +131,12 @@ Przykładowe przesyłanie umożliwia firmie Microsoft zbieranie próbek potencja
 ### <a name="submit-a-file"></a>Przesyłanie pliku
 
 1. Przejrzyj przewodnik [przesyłania](/windows/security/threat-protection/intelligence/submission-guide).
+
 2. Odwiedź [przykładowy portal przesyłania](https://www.microsoft.com/wdsi/filesubmission) i prześlij plik.
 
 ### <a name="enable-automatic-sample-submission"></a>Włączanie automatycznego przesyłania próbek
 
 Aby włączyć automatyczne przesyłanie próbek, uruchom konsolę Windows PowerShell jako administrator i ustaw dane wartości **SubmitSamplesConsent** zgodnie z jednym z następujących ustawień:
-
-<br/><br/>
 
 |Ustawienie|Opis|
 |---|---|
@@ -190,7 +148,6 @@ Aby włączyć automatyczne przesyłanie próbek, uruchom konsolę Windows Power
 > [!NOTE]
 > Ta opcja nie jest dostępna w przypadku Windows Server 2012 R2. 
 
-
 ## <a name="configure-automatic-exclusions"></a>Konfigurowanie wykluczeń automatycznych
 
 W celu zapewnienia bezpieczeństwa i wydajności niektóre wykluczenia są dodawane automatycznie na podstawie ról i funkcji instalowanych podczas korzystania z programu Program antywirusowy Microsoft Defender w systemie Windows Server 2016 lub 2019 albo Windows Server 2022.
@@ -199,52 +156,31 @@ Zobacz [Konfigurowanie wykluczeń w Program antywirusowy Microsoft Defender na W
 
 ## <a name="passive-mode-and-windows-server"></a>Tryb pasywny i Windows serwera
 
-Jeśli używasz produktu antywirusowego innego niż firmy Microsoft jako podstawowego rozwiązania antywirusowego w programie Windows Server, musisz ustawić tryb Program antywirusowy Microsoft Defender pasywny lub wyłączony.
+Jeśli używasz produktu antywirusowego innego niż firmy Microsoft jako podstawowego rozwiązania antywirusowego w programie Windows Server, musisz ustawić tryb Program antywirusowy Microsoft Defender pasywny lub wyłączony. Jeśli punkt Windows serwera jest dołączany do Ochrona punktu końcowego w usłudze Microsoft Defender, możesz Program antywirusowy Microsoft Defender tryb pasywny. Jeśli nie korzystasz z programu Ochrona punktu końcowego w usłudze Microsoft Defender, ustaw dla Program antywirusowy Microsoft Defender tryb wyłączony. 
 
-Aby uzyskać więcej informacji, zobacz [Instalowanie Program antywirusowy Microsoft Defender na Windows Server](microsoft-defender-antivirus-on-windows-server.md#install-microsoft-defender-antivirus-on-windows-server).
+> [!TIP]
+> Zobacz [Program antywirusowy Microsoft Defender z innymi produktami zabezpieczającymi](microsoft-defender-antivirus-compatibility.md).
 
-
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>Ustawianie Program antywirusowy Microsoft Defender do trybu pasywnego przy użyciu klucza rejestru
-
-Można ustawić tryb Program antywirusowy Microsoft Defender pasywnego, ustawiając następujący klucz rejestru:
-- Ścieżka: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Nazwa: `ForceDefenderPassiveMode`
-- Typ: `REG_DWORD`
-- Wartość: `1`
-
-### <a name="disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard"></a>Wyłączanie Program antywirusowy Microsoft Defender przy użyciu kreatora Usuwanie ról i funkcji
-
-1. Zobacz [Instalowanie lub odinstalowywanie ról, usług ról lub funkcji](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard) i korzystanie z Kreatora **usuwania ról i funkcji**.
-
-2. Po **dojechu** do kroku Funkcje kreatora wyczyść opcję Windows Defender **Funkcje**.
-
-    Jeśli wyczyścisz **Windows Defender** w sekcji Funkcje Windows Defender, zostanie wyświetlony  monit o usunięcie graficznego interfejsu użytkownika dla **Windows Defender**.
-
-    Program antywirusowy Microsoft Defender działać normalnie bez interfejsu użytkownika, ale nie można włączyć interfejsu użytkownika, jeśli wyłączysz podstawową **Windows Defender** interfejsu.
-
-### <a name="turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell"></a>Wyłączanie interfejsu Program antywirusowy Microsoft Defender przy użyciu programu PowerShell
-
-Aby wyłączyć graficzne Program antywirusowy Microsoft Defender użytkownika, użyj następującego polecenia cmdlet programu PowerShell:
-
-```powershell
-Uninstall-WindowsFeature -Name Windows-Defender-GUI
-```
-
-### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>Używasz programu Windows Server 2012 R2 lub Windows Server 2016?
-
-Teraz można uruchamiać Program antywirusowy Microsoft Defender w trybie pasywnym na Windows Server 2012 R2 i Windows Server 2016. Aby uzyskać więcej informacji, [zobacz Opcje instalowania Ochrona punktu końcowego w usłudze Microsoft Defender](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
-
-<br/><br/>
+W poniższej tabeli opisano metody ustawienia trybu Program antywirusowy Microsoft Defender na pasywny, wyłączenia Program antywirusowy Microsoft Defender i odinstalowywania Program antywirusowy Microsoft Defender:
 
 | Procedura | Opis |
 |---|---|
-| Wyłączanie Program antywirusowy Microsoft Defender przy użyciu zasady grupy | W Edytorze zasady grupy kliknij  >  pozycję Szablon administracyjny **Windows Składnik** >  **Endpoint Protection** >  **Wyzysłane Endpoint Protection**, a następnie wybierz **pozycję EnabledOK** > . |
-| Wyłączanie Program antywirusowy Microsoft Defender przy użyciu klucza rejestru | Aby użyć klucza rejestru [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) , `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`przejdź do pozycji , a następnie ustaw lub utwórz wpis DWORD o nazwie `DisableAntiSpyware`. Ustaw wartość tego `1` klucza na (co oznacza wartość klucza *rejestru na prawda*). |
+| Ustawianie Program antywirusowy Microsoft Defender na tryb pasywny przy użyciu klucza rejestru | Ustaw klucz rejestru ForceDefenderPassiveMode w następujący sposób: <br/>— Ścieżka: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br/>- Nazwa: `ForceDefenderPassiveMode` <br/>- Wpisz: `REG_DWORD` <br/>- Wartość: `1` |
+| Wyłączanie interfejsu Program antywirusowy Microsoft Defender przy użyciu programu PowerShell | Otwórz Windows PowerShell jako administrator i uruchom następujące polecenie cmdlet programu PowerShell:`Uninstall-WindowsFeature -Name Windows-Defender-GUI`
 | Wyłączanie Program antywirusowy Microsoft Defender przy użyciu programu PowerShell | Użyj następującego polecenia cmdlet programu PowerShell: `Set-MpPreference -DisableRealtimeMonitoring $true` |
+| Wyłączanie Program antywirusowy Microsoft Defender przy użyciu kreatora Usuwanie ról i funkcji | Zobacz [Instalowanie lub odinstalowywanie ról, usług ról lub funkcji](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#remove-roles-role-services-and-features-by-using-the-remove-roles-and-features-wizard) i korzystanie z Kreatora **usuwania ról i funkcji**. <br/><br/>Po **dojechu** do kroku Funkcje kreatora wyczyść opcję Windows Defender **Funkcje**. <br/><br/> Jeśli wyczyścisz **Windows Defender** w sekcji Funkcje Windows Defender, zostanie wyświetlony  monit o usunięcie graficznego interfejsu użytkownika dla **Windows Defender**.<br/><br/>Program antywirusowy Microsoft Defender działać normalnie bez interfejsu użytkownika, ale nie można włączyć interfejsu użytkownika, jeśli wyłączysz podstawową **Windows Defender** interfejsu. |
 | Odinstalowywanie Program antywirusowy Microsoft Defender przy użyciu programu PowerShell | Użyj następującego polecenia cmdlet programu PowerShell: `Uninstall-WindowsFeature -Name Windows-Defender` |
+| Wyłączanie Program antywirusowy Microsoft Defender przy użyciu zasady grupy | W Edytorze zasady grupy kliknij  >  pozycję Szablon administracyjny **Windows Składnik** >  **Endpoint Protection** >  **Wyzysłane Endpoint Protection**, a następnie wybierz **pozycję EnabledOK** > . |
 
+### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>Używasz programu Windows Server 2012 R2 lub Windows Server 2016?
+
+Jeśli komputer Windows jest Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze, możesz teraz uruchamiać Program antywirusowy Microsoft Defender trybie pasywnym na Windows Server 2012 R2 i Windows Server 2016. Zobacz następujące artykuły:
+
+- [Opcje instalowania Ochrona punktu końcowego w usłudze Microsoft Defender](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages)
+
+- [Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi](microsoft-defender-antivirus-compatibility.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Program antywirusowy Microsoft Defender w programie Windows](microsoft-defender-antivirus-windows.md)
-- [Program antywirusowy Microsoft Defender zgodności](microsoft-defender-antivirus-compatibility.md)
+- [Program antywirusowy Microsoft Defender w systemie Windows](microsoft-defender-antivirus-windows.md)
+

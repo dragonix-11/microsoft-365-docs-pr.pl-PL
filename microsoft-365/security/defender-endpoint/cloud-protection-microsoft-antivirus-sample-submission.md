@@ -1,5 +1,5 @@
 ---
-title: Ochrona chmury i przesyłanie próbek w aplikacji Program antywirusowy Microsoft Defender
+title: Ochrona chmury i przykładowe przesyłanie w Program antywirusowy Microsoft Defender
 description: Informacje o zabezpieczeniach i zabezpieczeniach w chmurze Program antywirusowy Microsoft Defender
 keywords: Program antywirusowy Microsoft Defender, technologie następnej generacji, przykładowe przesyłanie oprogramowania antywirusowego, audio/wideo następnej generacji, uczenie maszynowe, ochrona przed złośliwym kodem, zabezpieczenia, defender, chmura, ochrona dostarczana w chmurze
 ms.prod: m365-security
@@ -15,32 +15,32 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9df9c387f24671d6790d9219590eeac490f2f1aa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a647617de3706481c2e12f4e1772f5bc609db6fc
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328137"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470686"
 ---
-# <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Ochrona chmury i przesyłanie próbek w aplikacji Program antywirusowy Microsoft Defender
+# <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Ochrona chmury i przykładowe przesyłanie w Program antywirusowy Microsoft Defender
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Program antywirusowy Microsoft Defender
 
 Program antywirusowy Microsoft Defender korzysta z wielu inteligentnych mechanizmów wykrywania złośliwego oprogramowania. Jedną z najbardziej zaawansowanych możliwości jest możliwość korzystania z możliwości chmury w zakresie wykrywania złośliwego oprogramowania i wykonywania szybkich analiz. Ochrona chmury i automatyczne przesyłanie próbek współpracują z programem Program antywirusowy Microsoft Defender, aby chronić się przed nowymi i wyłaniających się zagrożeniami. 
 
 W przypadku wykrycia podejrzanego lub złośliwego pliku do usługi w chmurze jest wysyłana próbka danych do analizy, Program antywirusowy Microsoft Defender blokuje plik. Zaraz po dokonanym określaniu, co się stanie szybko, plik zostanie wydany lub zablokowany przez Program antywirusowy Microsoft Defender. 
 
-Ten artykuł zawiera omówienie ochrony chmury i automatycznego przesyłania próbek w aplikacji Program antywirusowy Microsoft Defender. Aby dowiedzieć się więcej o ochronie chmury, zobacz [Ochrona i ochrona Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
+Ten artykuł zawiera omówienie ochrony chmury i automatycznego przesyłania przykładów na stronie Program antywirusowy Microsoft Defender. Aby dowiedzieć się więcej o ochronie chmury, zobacz [Ochrona i ochrona Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
 ## <a name="how-cloud-protection-and-sample-submission-work-together"></a>Jak współpracują ze sobą ochrona chmury i przykładowe przesyłanie
 
-Aby zrozumieć, jak ochrona chmury współpracuje z przykładowym przesyłaniem, warto zrozumieć, w jaki sposób usługa Defender for Endpoint chroni się przed zagrożeniami. Funkcja inteligentnego zabezpieczeń firmy Microsoft Graph monitoruje dane zagrożeń za pomocą bardzo dużej sieci czujnika. Modele maszynowego uczenia opartego na chmurze firmy Microsoft, które mogą oceniać pliki na podstawie sygnałów od klienta i rozległej sieci czujnika oraz danych w inteligentnym systemie zabezpieczeń, Graph. Takie podejście umożliwia programowi Defender for Endpoint blokowanie wielu nigdy wcześniej widocznych zagrożeń. 
+Aby zrozumieć, jak ochrona chmury współpracuje z przykładowym przesyłaniem, warto zrozumieć, w jaki sposób usługa Defender for Endpoint chroni się przed zagrożeniami. Funkcja inteligentnego zabezpieczeń firmy Microsoft Graph monitoruje dane zagrożeń za pomocą bardzo dużej sieci czujnika. Modele maszynowego uczenia opartego na chmurze firmy Microsoft, które mogą oceniać pliki na podstawie sygnałów od klienta i rozległej sieci czujników oraz danych w inteligentnych zabezpieczeniach w Graph. Takie podejście umożliwia programowi Defender for Endpoint blokowanie wielu nigdy wcześniej widocznych zagrożeń. 
 
 Poniższy obraz przedstawia przepływ ochrony chmury i przykładowego przesyłania za pomocą Program antywirusowy Microsoft Defender:
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="Przepływ ochrony w chmurze":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="Przepływ ochrony w chmurze" lightbox="images/cloud-protection-flow.png":::
 
 Program antywirusowy Microsoft Defender i ochrony chmury automatycznie blokują na pierwszy rzut oka większość nowych, nigdy wcześniej widocznych zagrożeń, używając następujących metod:
 
@@ -80,7 +80,7 @@ Program antywirusowy Microsoft Defender i ochrony chmury automatycznie blokują 
          - "Nie wysyłaj" jest równoważne z ustawieniem "Wyłączone" w zasadach macOS.
          - Metadane są wysyłane do wykrywania nawet wtedy, gdy przesyłanie przykładowe jest wyłączone
 
-   3. Po przesłaniu metadanych i/lub plików do ochrony chmury możesz wykorzystać próbki **,** **detonację** lub modele  maszynowego uczenia maszynowego do analizy dużych danych, aby osiągnąć werdykt. Wyłączenie ochrony w chmurze ogranicza analizę wyłącznie do tego, co klient może zapewnić za pośrednictwem lokalnych modeli uczenia maszynowego i podobnych funkcji.
+   3. Po przesłaniu metadanych i/lub plików do ochrony chmury możesz użyć przykładów **,** **detonacji** lub modeli  maszynowego uczenia maszynowego do analizy danych w celu osiągnięcia werdyktu. Wyłączenie ochrony w chmurze ogranicza analizę wyłącznie do tego, co klient może zapewniać za pośrednictwem lokalnych modeli maszynowego uczenia i podobnych funkcji.
 
 > [!IMPORTANT]
 > [Blokowanie na pierwszy rzut oka (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) zapewnia detonację i analizę w celu określenia, czy plik lub proces jest bezpieczny. Usługi BAFS mogą chwilę opóźnić otwieranie pliku do czasu jego werdyktu. Jeśli wyłączysz przesyłanie przykładowe, usługi BAFS również będą wyłączone, a analiza plików będzie ograniczona tylko do metadanych. Zalecamy, aby włączyć przesyłanie przykładowe i usługi BAFS. Aby dowiedzieć się więcej, [zobacz Co to jest "blok na pierwszy rzut oka"?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
@@ -97,11 +97,11 @@ Oprócz konfigurowania poziomu ochrony w chmurze możesz skonfigurować przykła
 - **Automatyczne wysyłanie wszystkich próbek**  
 - **Nie wysyłaj próbek**  
 
-Aby uzyskać informacje o opcjach konfiguracji przy użyciu usługi Intune, Menedżer konfiguracji, GPO lub PowerShell, zobacz Włączanie ochrony chmury w [Program antywirusowy Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
+Aby uzyskać informacje o opcjach konfiguracji przy Intune, Configuration Manager, zasad grupy lub programu PowerShell, zobacz Włączanie ochrony chmury [w](enable-cloud-protection-microsoft-defender-antivirus.md) Program antywirusowy Microsoft Defender.
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>Przykłady metadanych wysyłanych do usługi ochrony w chmurze
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="obraz przedstawiający przykłady metadanych wysyłanych do ochrony chmury w aplikacji Program antywirusowy Microsoft Defender":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Przykłady metadanych wysyłanych do ochrony chmury w portalu Program antywirusowy Microsoft Defender danych" lightbox="images/cloud-protection-metadata-sample.png":::
 
 W poniższej tabeli podano przykłady metadanych wysyłanych do analizy za pomocą ochrony chmury:
 
@@ -120,13 +120,13 @@ Ponadto program Defender for Endpoint otrzymał wiele certyfikatów zgodności, 
 - ISO 27001
 - ISO 27018
 - SOC I, II, III
-- i PCI
+- PCI
 
 Aby uzyskać więcej informacji, zapoznaj się z następującymi zasobami:
 
 - [Oferty dotyczące zgodności z platformą Azure](/azure/storage/common/storage-compliance-offerings) 
 - [Portal zaufania usług](https://servicetrust.microsoft.com)
-- [Usługa Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md#data-storage-location)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender przechowywania danych i prywatności](data-storage-privacy.md#data-storage-location)
 
 ## <a name="other-file-sample-submission-scenarios"></a>Inne przykładowe scenariusze przesyłania plików
 

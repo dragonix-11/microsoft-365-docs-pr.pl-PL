@@ -1,8 +1,8 @@
 ---
-title: Jak chronić przed atakami wyłudzających informacje
+title: Jak chronić przed atakami wyłudzania informacji
 ms.reviewer: ''
-description: Dowiedz się, jak działa wyłudzanie informacji, dostarczaj do urządzeń złośliwe oprogramowanie i co możesz zrobić, aby się ochronić
-keywords: zabezpieczenia, złośliwe oprogramowanie, wyłudzanie informacji, informacje, oszustwo, socjopcja, ochrona, ochrona, trendy, ataki kierowane
+description: Dowiedz się, jak działa wyłudzanie informacji, dostarczać złośliwe oprogramowanie do swoich urządzeń i co możesz zrobić, aby się chronić
+keywords: zabezpieczenia, złośliwe oprogramowanie, wyłudzanie informacji, oszustwo, inżynieria społeczna, przynęta, przynęta, ochrona, trendy, atak ukierunkowany
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,88 +15,88 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 39b998b69b62a8c927ff26c1325d8a88812e0be6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 1f414c80d3c0b5478112cd402f8e3839908787d4
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63706040"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666773"
 ---
-# <a name="how-to-protect-against-phishing-attacks"></a>Jak chronić przed atakami wyłudzających informacje
+# <a name="how-to-protect-against-phishing-attacks"></a>Jak chronić przed atakami wyłudzania informacji
 
-Ataki służące do wyłudzania informacji próbują ukraść informacje poufne za pośrednictwem wiadomości e-mail, witryn internetowych, wiadomości SMS lub innych form komunikacji elektronicznej. Kontakty te wyglądają jak oficjalne wiadomości od legalnych firm lub osób.
+Ataki wyłudzające informacje próbują wykraść poufne informacje za pośrednictwem wiadomości e-mail, witryn internetowych, wiadomości tekstowych lub innych form komunikacji elektronicznej. Starają się wyglądać jak oficjalna komunikacja od legalnych firm lub osób fizycznych.
 
-Cyberprzestępcy często usiłują ukraść nazwy użytkowników, hasła, dane kart kredytowych, informacje o koncie bankowym lub inne poświadczenia. Używają one skradzionych informacji do celów złośliwych, takich jak włamanie się, kradzież tożsamości czy kradzież pieniędzy bezpośrednio z kont bankowych i kart kredytowych. Informacje te można również sprzedawać na rynkach cyberprzestępców.
+Cyberprzestępcy często próbują ukraść nazwy użytkownika, hasła, dane karty kredytowej, informacje o koncie bankowym lub inne poświadczenia. Wykorzystują skradzione informacje do złośliwych celów, takich jak hakowanie, kradzież tożsamości lub kradzież pieniędzy bezpośrednio z kont bankowych i kart kredytowych. Informacje te mogą być również sprzedawane na podziemnych rynkach cyberprzestępców.
 
-Ataki ze społeczności są przeznaczone do korzystania z możliwości użytkownika poklatkowe w podejmowaniu decyzji. Nie podawać informacji poufnych ani osobistych za pośrednictwem poczty e-mail, nieznanych witryn internetowych lub przez telefon. Pamiętaj, że wiadomości e-mail służące do wyłudzania informacji wyglądają jak prawdziwe.
+Ataki inżynierii społecznej mają na celu wykorzystanie możliwości użytkownika w podejmowaniu decyzji. Bądź świadomy i nigdy nie podaj informacji poufnych lub osobistych za pośrednictwem poczty e-mail lub nieznanych witryn internetowych lub przez telefon. Pamiętaj, że wiadomości e-mail wyłudzające informacje są zaprojektowane tak, aby były uzasadnione.
 
-## <a name="learn-the-signs-of-a-phishing-scam"></a>Poznaj znaki wyłudzania informacji
+## <a name="learn-the-signs-of-a-phishing-scam"></a>Poznaj oznaki oszustwa polegającego na wyłudzaniu informacji
 
-Najlepszą ochroną jest świadomość i edukacja. Nie otwieraj załączników ani linków w niezamówionych wiadomościach e-mail, nawet jeśli pochodzą z rozpoznanego źródła. Jeśli wiadomość e-mail jest nieoczekiwana, nie należy otwierać załącznika i zweryfikować adres URL.
+Najlepszą ochroną jest świadomość i edukacja. Nie otwieraj załączników ani linków w niechcianych wiadomościach e-mail, nawet jeśli wiadomości e-mail pochodzą z rozpoznanego źródła. Jeśli wiadomość e-mail jest nieoczekiwana, należy uważać na otwarcie załącznika i zweryfikowanie adresu URL.
 
-Przedsiębiorstwa powinny kształcić i przeszkolić pracowników w zakresie wszelkich komunikacji żądanych informacji osobistych lub finansowych. Powinni również poinstruować pracowników, aby natychmiast zgłaszali zagrożenie zespołowi ds. bezpieczeństwa w firmie.
+Przedsiębiorstwa powinny edukować i szkolić swoich pracowników, aby uważali na wszelkie komunikaty, które żądają informacji osobistych lub finansowych. Powinni oni również poinstruować pracowników, aby natychmiast zgłosili zagrożenie zespołowi ds. operacji zabezpieczeń firmy.
 
 Oto kilka oznak wyłudzania informacji:
 
-* Linki lub adresy URL udostępniane w wiadomościach e-mail nie wskazują odpowiedniej lokalizacji ani nie wskazują witryny innej firmy, która nie jest powiązana z nadawcą wiadomości e-mail. Na przykład na obrazie poniżej podanego adresu URL nie odpowiada adresowi URL, do który zostanie wykonane.
+* Linki lub adresy URL podane w wiadomościach e-mail **nie wskazują prawidłowej lokalizacji** lub wskazują witrynę innej firmy, która nie jest powiązana z nadawcą wiadomości e-mail. Na przykład na poniższej ilustracji podany adres URL nie jest zgodny z adresem URL, do który zostanie wyświetlony.
 
-    ![Przykład umieszczenia wskaźnika myszy na adresie URL.](../../media/security-intelligence-images/url-hover.png)
+    ![przykład umieszczenia wskaźnika myszy nad adresem URL.](../../media/security-intelligence-images/url-hover.png)
 
-* Istnieje prośba **o dane osobowe** , takie jak numery PESEL, informacje bankowe lub finansowe. Oficjalna korespondencja zasadniczo nie poprosi Cię o informacje osobiste w formie wiadomości e-mail.
+* Istnieje **prośba o dane osobowe** , takie jak numery ubezpieczenia społecznego lub informacje bankowe lub finansowe. Oficjalna komunikacja zwykle nie będzie żądać od Ciebie danych osobowych w formie wiadomości e-mail.
 
-* **Elementy w adresie e-mail zostaną zmienione** , tak aby przypominały na tyle podobny do prawdziwego adresu e-mail, ale dodano cyfry lub zmieniono litery.
+* **Elementy na adresie e-mail zostaną zmienione** tak, aby były wystarczająco podobne do prawidłowego adresu e-mail, ale dodały cyfry lub zmienione litery.
 
-* Wiadomość jest **nieoczekiwana i niezamawiana**. Jeśli nagle otrzymasz wiadomość e-mail od jednostki lub osoby, której rzadko się zajmujesz, rozważ tę wiadomość e-mail podejrzaną.
+* Wiadomość jest **nieoczekiwana i niechciana**. Jeśli nagle otrzymasz wiadomość e-mail od jednostki lub osoby, z którą rzadko masz do czynienia, rozważ to podejrzane wiadomości e-mail.
 
-* Ten komunikat lub załącznik zawiera prośbę o włączenie **makr, dostosowanie ustawień zabezpieczeń lub zainstalowanie aplikacji**. Normalne wiadomości e-mail nie będą chcieć tego robić.
+* Komunikat lub załącznik z prośbą o **włączenie makr, dostosowanie ustawień zabezpieczeń lub zainstalowanie aplikacji**. Zwykłe wiadomości e-mail nie będą cię o to prosić.
 
-* Komunikat zawiera **błędy**. Poprawne wiadomości firmowe mają mniejsze prawdopodobieństwo, że zawierają błędy typograficzne lub gramatyczne albo zawierają nieprawidłowe informacje.
+* Komunikat zawiera **błędy**. Uzasadnione komunikaty firmowe są mniej narażone na błędy typograficzne lub gramatyczne lub zawierają nieprawidłowe informacje.
 
-* Adres **nadawcy nie odpowiada podpisowi** w samej wiadomości. Wiadomość e-mail rzekomo pochodzi z firmy Mary of Contoso Corp, ale adres nadawcy to jan<span></span>@example.com.
+* **Adres nadawcy nie jest zgodny z podpisem** samej wiadomości. Na przykład wiadomość e-mail jest rzekomo od Mary z Contoso Corp, ale adres nadawcy to john<span></span>@example.com.
 
-* W **polu "** Do" znajduje się wielu adresatów, którzy wyglądają jak losowe adresy. Wiadomości firmowe zazwyczaj są wysyłane bezpośrednio do poszczególnych adresatów.
+* W polu "Do" znajduje się **wielu adresatów** , którzy wydają się być adresami losowymi. Komunikaty firmowe są zwykle wysyłane bezpośrednio do poszczególnych adresatów.
 
-* Pozdrowienie w samej wiadomości nie **ma dla Ciebie adresu osobistego**. Oprócz wiadomości, w których błędnie adresują się inne osoby, powitania, które błędnie wymuszają nazwę użytkownika lub ściągają je bezpośrednio z adresu e-mail, zwykle są złośliwe.
+* Powitanie samej wiadomości **nie zwraca się do Ciebie osobiście**. Oprócz wiadomości, które omyłkowo odnoszą się do innej osoby, pozdrowienia, które nadużywają Twojego imienia i nazwiska lub ściągają twoje imię i nazwisko bezpośrednio z adresu e-mail, wydają się być złośliwe.
 
-* Witryna internetowa wygląda znajomo, ale występują niespójności lub błędy **, które są nieprawidłowości**. Do znaków ostrzegawczych należą nieaktualne logo, literówki lub prośba użytkowników o poprosienie o dodatkowe informacje, o które użytkownik nie jest pytany w przypadku legalnych witryn logowania.
+* Witryna wygląda znajomo, ale istnieją **niespójności lub rzeczy, które nie są w porządku**. Znaki ostrzegawcze obejmują nieaktualne logo, literówki lub poproś użytkowników o podanie dodatkowych informacji, które nie są monitowane przez uzasadnione witryny logowania.
 
-* Otwarta strona nie **jest stroną na żywo, a** raczej obrazem zaprojektowanym tak, aby wyglądał jak witryna, która jest znana Ci z pracy. Może zostać wyświetlone okno podręczne z prośbą o poświadczenia.
+* Otwarta strona nie jest **stroną na żywo**, ale raczej obrazem zaprojektowanym tak, aby wyglądała jak witryna, którą znasz. Może zostać wyświetlone okno podręczne, które żąda poświadczeń.
 
-W razie wątpliwości skontaktuj się z firmą za pośrednictwem znanych kanałów, aby sprawdzić, czy podejrzane wiadomości e-mail są w rzeczywistości prawdziwe.
+W razie wątpliwości skontaktuj się z firmą za pomocą znanych kanałów, aby sprawdzić, czy jakiekolwiek podejrzane wiadomości e-mail są w rzeczywistości uzasadnione.
 
 ## <a name="software-solutions-for-organizations"></a>Rozwiązania programowe dla organizacji
 
-* [Microsoft Edge](/microsoft-edge/deploy/index) i [Windows Defender Application Guard](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) oferują ochronę przed coraz większymi zagrożeniami ukierunkowanych ataków przy użyciu wiodącej w branży technologii Hyper-V virtualization firmy Microsoft. Jeśli przeglądana witryna internetowa jest uważane za niezaufaną, kontener hyper-V odizoluje to urządzenie od reszty sieci, uniemożliwiając tym samym dostęp do danych przedsiębiorstwa.
+* [Microsoft Edge](/microsoft-edge/deploy/index) i [Windows Defender Application Guard](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) zapewniają ochronę przed rosnącym zagrożeniem ukierunkowanymi atakami przy użyciu wiodącej w branży technologii wirtualizacji funkcji Hyper-V firmy Microsoft. Jeśli przeglądana witryna internetowa zostanie uznana za niezaufaną, kontener funkcji Hyper-V odizoluje to urządzenie od pozostałej części sieci, uniemożliwiając dostęp do danych przedsiębiorstwa.
 
-* [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) zapewnia niezawodność klasy korporacyjnej oraz ochronę przed spamem i złośliwym oprogramowaniem przy zachowaniu dostępu do poczty e-mail w nagłych w sytuacjach awaryjnych i po ich zakończeniu.  Korzystając z różnych warstw filtrowania, program EOP może zapewniać różne kontrolki filtrowania spamu, takie jak kontrolki poczty masowej i spam międzynarodowy, co dodatkowo usprawnia usługi ochrony.
+* [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) oferuje niezawodność klasy korporacyjnej i ochronę przed spamem i złośliwym oprogramowaniem, zachowując jednocześnie dostęp do poczty e-mail w nagłych wypadkach i po nich.  Korzystając z różnych warstw filtrowania, funkcja EOP może udostępniać różne mechanizmy kontroli filtrowania spamu, takie jak zbiorcze kontrole poczty e-mail i spam międzynarodowy, co jeszcze bardziej usprawni usługi ochrony.
 
-* Użyj [programu Microsoft Defender dla Office 365](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc) ochrony poczty e-mail, plików i magazynu online przed złośliwym oprogramowaniem. Zapewnia on ochronę treści w Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online i OneDrive dla Firm. Zabezpieczając niebezpieczne załączniki i rozszerzając ochronę przed złośliwymi linkami, uzupełnia on funkcje zabezpieczeń programu Exchange Online Protection, aby zapewnić lepszą ochronę przez zero dni.
+* Użyj [Ochrona usługi Office 365 w usłudze Microsoft Defender](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc), aby chronić pocztę e-mail, pliki i magazyn online przed złośliwym oprogramowaniem. Oferuje ona holistyczną ochronę w usługach Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online i OneDrive dla Firm. Ochrona przed niebezpiecznymi załącznikami i rozszerzanie ochrony przed złośliwymi linkami uzupełnia funkcje zabezpieczeń Exchange Online Protection w celu zapewnienia lepszej ochrony zero-day.
 
-## <a name="what-to-do-if-youve-been-a-victim-of-a-phishing-scam"></a>Co zrobić, jeśli padłeś ofiarą próby wyłudzenia informacji
+## <a name="what-to-do-if-youve-been-a-victim-of-a-phishing-scam"></a>Co zrobić, jeśli padłeś ofiarą oszustwa polegającego na wyłudzaniu informacji
 
-Jeśli uważasz, że jesteś ofiarą ataku, który ma na celu wyłudzanie informacji:
+Jeśli uważasz, że padłeś ofiarą ataku wyłudzania informacji:
 
-1. Skontaktuj się z administratorem IT, jeśli używasz komputera służbowego
+1. Skontaktuj się z administratorem IT, jeśli jesteś na komputerze służbowym
 2. Natychmiast zmień wszystkie hasła skojarzone z kontami
-3. Zgłaszanie wszelkich nieuprawnianych działań firmie bankowej i karty kredytowej
+3. Zgłaszanie wszelkich fałszywych działań bankowi i firmie zajmującej się kartami kredytowymi
 
 ### <a name="reporting-spam"></a>Zgłaszanie spamu
 
-- **Outlook.com**: Jeśli otrzymasz podejrzaną wiadomość e-mail z prośbą o informacje osobiste, zaznacz pole wyboru obok tej wiadomości w Outlook odbiorczej. Wybierz strzałkę obok pozycji **Wiadomość-śmieć**, a następnie wybierz pozycję **Wyłudzanie informacji**.
+- **Outlook.com**: Jeśli otrzymasz podejrzaną wiadomość e-mail z prośbą o podanie danych osobowych, zaznacz pole wyboru obok wiadomości w skrzynce odbiorczej Outlook. Wybierz strzałkę obok pozycji **Śmieci**, a następnie wybierz pozycję **Wyłudzanie informacji**.
 
-- **Microsoft Office Outlook**: W podejrzanej wiadomości wybierz pozycję Zgłoś **wiadomość na** wstążce, a następnie wybierz pozycję Wyłudzanie **informacji**.
+- **Microsoft Office Outlook**: w podejrzanej wiadomości wybierz pozycję **Komunikat raportu** na wstążce, a następnie wybierz pozycję **Wyłudzanie informacji**.
 
-- **Microsoft 365**: Użyj portalu Przesyłanie w [programie Microsoft 365 Defender](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft), aby przesłać do firmy Microsoft próbkę wiadomości-śmieci lub próby wyłudzenia informacji w celu analizy. Aby uzyskać więcej informacji, zobacz [Zgłaszanie wiadomości i plików do firmy Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft).
+- **Microsoft 365**: użyj [portalu Przesyłania w Microsoft 365 Defender](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft), aby przesłać przykład wiadomości-śmieci lub wyłudzanie informacji do firmy Microsoft w celu analizy. Aby uzyskać więcej informacji, zobacz [Zgłaszanie komunikatów i plików do firmy Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft).
 
-- **Grupa robocza ochrona przed wyłudzaniem** informacji: phishing-report@us-cert.gov. Grupa korzysta z raportów generowanych na podstawie wiadomości e-mail wysyłanych w celu zwalczania prób wyłudzania informacji i hakerów. W związku z tym są zaangażowani dostawcy usług internetowych, dostawcy zabezpieczeń, instytucje finansowe i instytucje porządkowe.
+- **Grupa robocza chroniąca przed wyłudzaniem informacji**: phishing-report@us-cert.gov. Grupa używa raportów generowanych z wiadomości e-mail wysyłanych do walki z oszustwami phishingowymi i hakerami. Zaangażowani są dostawcy usług internetowych, dostawcy zabezpieczeń, instytucje finansowe i organy ścigania.
 
-### <a name="if-youre-on-a-suspicious-website"></a>Jeśli używasz podejrzanej witryny internetowej
+### <a name="if-youre-on-a-suspicious-website"></a>Jeśli korzystasz z podejrzanej witryny internetowej
 
-- **Microsoft Edge**: Będąc w podejrzanej witrynie, wybierz ikonę **Więcej (...)** >  Pomoc i opinieRaportuj >  **niebezpieczną witrynę**. Postępuj zgodnie z wyświetlanymi na niej instrukcjami, aby zgłosić witrynę.
+- **Microsoft Edge**: Gdy jesteś w podejrzanej witrynie, wybierz **ikonę** >  Więcej (...)**Pomoc i opinieRaportuj** >  **niebezpieczną witrynę**. Postępuj zgodnie z instrukcjami wyświetlanymi na stronie internetowej, aby zgłosić witrynę internetową.
 
-- **Internet Explorer**: Gdy znajdujesz się w podejrzanej witrynie, wybierz ikonę koła zębatego, wskaż pozycję **Bezpieczeństwo, a** następnie wybierz pozycję Zgłoś niebezpieczną **witrynę internetową**. Postępuj zgodnie z wyświetlanymi na niej instrukcjami, aby zgłosić witrynę.
+- **Internet Explorer**: gdy jesteś w podejrzanej witrynie, wybierz ikonę koła zębatego, wskaż pozycję **Bezpieczeństwo**, a następnie wybierz pozycję **Zgłoś niebezpieczną witrynę internetową**. Postępuj zgodnie z instrukcjami wyświetlanymi na stronie internetowej, aby zgłosić witrynę internetową.
 
-## <a name="more-information-about-phishing-attacks"></a>Więcej informacji o atakach wyłudzających informacje
+## <a name="more-information-about-phishing-attacks"></a>Więcej informacji na temat ataków wyłudzania informacji
 
-- [Chroń się przed wyłudzaniem informacji](https://support.microsoft.com/help/4033787/windows-protect-yourself-from-phishing)
+- [Ochrona przed wyłudzaniem informacji](https://support.microsoft.com/help/4033787/windows-protect-yourself-from-phishing)
 - [Trendy wyłudzania informacji](phishing-trends.md)

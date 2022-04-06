@@ -1,7 +1,7 @@
 ---
-title: Praca z zaawansowanymi wynikami wyszukiwania w programie Microsoft 365 Defender
-description: W większości przypadków wyniki zapytania są zwracane przez zaawansowane szukanie w Microsoft 365 Defender
-keywords: zaawansowane szukanie, szukanie zagrożeń, cyberzagrożenia, Microsoft 365 Defender, microsoft 365, m365, wyszukiwanie, zapytanie, telemetria, wykrywanie niestandardowe, schemat, kusto, wizualizacja, wykres, filtry, przechodzenie do szczegółów
+title: Praca z zaawansowanymi wynikami zapytania wyszukiwania zagrożeń w Microsoft 365 Defender
+description: Jak najlepiej wykorzystać wyniki zapytania zwracane przez zaawansowane wyszukiwanie zagrożeń w Microsoft 365 Defender
+keywords: zaawansowane wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, wyszukiwanie zagrożeń, wykrywanie zagrożeń cybernetycznych, Microsoft 365 Defender, microsoft 365, m365, wyszukiwanie, zapytanie, telemetria, wykrywanie niestandardowe, schemat, kusto, wizualizacja, wykres, filtry, przechodzenie do szczegółów
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,17 +20,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 41427760a0a02f0dafbb9685da457a473698207c
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bfec0b56a67b1242d8dfd76b845aa273a76d27e
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755009"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667257"
 ---
-# <a name="work-with-advanced-hunting-query-results"></a>Praca z zaawansowanymi wynikami zapytania wyszukiwania
+# <a name="work-with-advanced-hunting-query-results"></a>Praca z zaawansowanymi wynikami zapytania wyszukiwania zagrożeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Dotyczy:**
 - Microsoft 365 Defender
@@ -38,59 +37,64 @@ ms.locfileid: "63755009"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Możesz konstruować [zaawansowane zapytania](advanced-hunting-overview.md) myśliwskie, aby zwrócić precyzyjne informacje, ale możesz również pracować z wynikami zapytania, aby uzyskać bardziej szczegółowe informacje oraz zbadać określone działania i wskaźniki. W wynikach zapytania można podjąć następujące działania:
+Chociaż możesz utworzyć zaawansowane zapytania [wyszukiwania zagrożeń](advanced-hunting-overview.md) w celu zwrócenia dokładnych informacji, możesz również pracować z wynikami zapytania, aby uzyskać dalszy wgląd i zbadać konkretne działania i wskaźniki. Możesz wykonać następujące akcje w wynikach zapytania:
 
-- Wyświetlanie wyników w widoku tabeli lub wykresu
+- Wyświetlanie wyników jako tabeli lub wykresu
 - Eksportowanie tabel i wykresów
-- Przechodzenie do szczegółów szczegółowych informacji o encji
-- Poprawianie zapytań bezpośrednio z wyników lub stosowanie filtrów
+- Przechodzenie do szczegółów szczegółowych informacji o jednostce
+- Dostosowywanie zapytań bezpośrednio z wyników lub stosowanie filtrów
 
 ## <a name="view-query-results-as-a-table-or-chart"></a>Wyświetlanie wyników zapytania jako tabeli lub wykresu
-Domyślnie funkcja wyszukiwania zaawansowanego wyświetla wyniki zapytania jako dane tabelarowe. Możesz również wyświetlić te same dane co wykres. Zaawansowane wyszukiwanie obsługuje następujące widoki:
+
+Domyślnie zaawansowane wyszukiwanie zagrożeń wyświetla wyniki zapytania jako dane tabelaryczne. Możesz również wyświetlić te same dane co wykres. Zaawansowane wyszukiwanie zagrożeń obsługuje następujące widoki:
 
 | Typ widoku | Opis |
 |--|--|
-| **Tabela** | Wyświetla wyniki zapytania w formacie tabelarykim. |
-| **Wykres kolumnowy** | Renderowanie serii unikatowych elementów na osi x jako pionowych słupków, których wysokości reprezentują wartości liczbowe z innego pola |
-| **Skumulowany wykres kolumnowy** | Renderuje serię unikatowych elementów na osi x jako skumulowane słupki pionowe, których wysokości reprezentują wartości liczbowe z innych pól. |
-| **Wykres kołowy** | Renderuje pies sekcji z unikatowymi elementami. Rozmiar każdego koła odpowiada wartościom liczbowym z innego pola. |
-| **Wykres pierścieniowy** | Renderuje łuki sekcji reprezentujące unikatowe elementy. Długość każdego łuku odpowiada wartościom liczbowym z innego pola. |
-| **Wykres liniowy** | Kreśl wartości liczbowe dla serii unikatowych elementów i łączy wartości kreślone. |
-| **Wykres punktowy** | Kreśl wartości liczbowe dla serii unikatowych elementów. |
-| **Wykres obszarowy** | Kreśli wartości liczbowe dla serii unikatowych elementów i wypełnia sekcje poniżej kreślonych wartości. |
+| **Tabeli** | Wyświetla wyniki zapytania w formacie tabelarycznym |
+| **Wykres kolumnowy** | Renderuje serię unikatowych elementów na osi x jako pionowe słupki, których wysokość reprezentuje wartości liczbowe z innego pola |
+| **Skumulowany wykres kolumnowy** | Renderuje serię unikatowych elementów na osi x jako skumulowane słupki pionowe, których wysokość reprezentuje wartości liczbowe z jednego lub kilku innych pól |
+| **Wykres kołowy** | Renderuje fragmenty reprezentujące unikatowe elementy. Rozmiar każdego tortu reprezentuje wartości liczbowe z innego pola. |
+| **Wykres pierścieniowy** | Renderuje łuki przekrojowe reprezentujące unikatowe elementy. Długość każdego łuku reprezentuje wartości liczbowe z innego pola. |
+| **Wykres liniowy** | Wykreśla wartości liczbowe dla serii unikatowych elementów i łączy wykreślone wartości |
+| **Wykres punktowy** | Wykreśla wartości liczbowe dla serii unikatowych elementów |
+| **Wykres warstwowy** | Kreśli wartości liczbowe dla serii unikatowych elementów i wypełnia sekcje poniżej wykreślonych wartości |
 
-### <a name="construct-queries-for-effective-charts"></a>Konstruowanie zapytań w celu efektywnego tworzenia wykresów
-Podczas renderowania wykresów zaawansowane wyszukiwania automatycznie identyfikują interesujące kolumny i wartości liczbowe do agregowania. Aby uzyskać wykresy opisowe, konstruuj zapytania, aby zwracać określone wartości, które mają być widoczne jako wizualizowane. Oto kilka przykładowych zapytań i wykresów wynikowych.
+### <a name="construct-queries-for-effective-charts"></a>Konstruowanie zapytań dla efektywnych wykresów
+
+Podczas renderowania wykresów zaawansowane wyszukiwanie zagrożeń automatycznie identyfikuje interesujące kolumny i wartości liczbowe do zagregowania. Aby uzyskać istotne wykresy, skonstruuj zapytania, aby zwracać określone wartości, które chcesz wyświetlić, zwizualizowane. Oto kilka przykładowych zapytań i wykresów wynikowych.
 
 #### <a name="alerts-by-severity"></a>Alerty według ważności
-Użyj operatora `summarize` , aby uzyskać liczbę liczb wartości, które mają zostać na wykresie. Poniższe zapytanie używa operatora `summarize` w celu uzyskania liczby alertów według ważności.
+
+Użyj operatora, `summarize` aby uzyskać liczbę liczbową wartości, które chcesz utworzyć na wykresie. Poniższe zapytanie używa `summarize` operatora w celu uzyskania liczby alertów według ważności.
 
 ```kusto
 AlertInfo
 | summarize Total = count() by Severity
 ```
-Podczas renderowania wyników na wykresie kolumnowym są wyświetlane poszczególne wartości ważności w oddzielnej kolumnie:
 
-:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="Przykład wykresu, który przedstawia zaawansowane wyniki wyszukiwania w portalu Microsoft 365 Defender pracy" lightbox="../../media/advanced-hunting-column-chart-new.png":::
-*Wyniki kwerend dotyczące alertów według ważności wyświetlane jako wykres kolumnowy*
+Podczas renderowania wyników wykres kolumnowy wyświetla każdą wartość ważności jako oddzielną kolumnę:
 
+:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="Przykład wykresu, który wyświetla zaawansowane wyniki wyszukiwania zagrożeń w portalu Microsoft 365 Defender" lightbox="../../media/advanced-hunting-column-chart-new.png":::
+*Wyniki zapytań dla alertów według ważności wyświetlanych jako wykres kolumnowy*
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Wyłudzanie informacji e-mail w dziesięciu najlepszych domenach nadawców
-Jeśli masz do czynienia z listą wartości, które nie są skończone, `Top` możesz użyć operatora do wykresu tylko wartości dla większości wystąpień. Aby na przykład uzyskać 10 domen nadawców z najwięcej wiadomości e-mail wyłudzających informacje, użyj poniższego zapytania:
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Wyłudzanie informacji o wiadomościach e-mail w dziesięciu najważniejszych domenach nadawcy
+
+Jeśli masz do czynienia z listą wartości, które nie są skończone, możesz użyć `Top` operatora do wykresu tylko wartości z większością wystąpień. Aby na przykład uzyskać 10 najważniejszych domen nadawców z największą liczba wiadomości e-mail wyłudzających informacje, użyj poniższego zapytania:
 
 ```kusto
 EmailEvents
-| where ThreatTypes has "Phish" 
-| summarize Count = count() by SenderFromDomain 
+| where ThreatTypes has "Phish"
+| summarize Count = count() by SenderFromDomain
 | top 10 by Count
 ```
-Widok wykresu kołowego umożliwia efektywne pokazanie rozkładu między domenami o najwyższej jakości:
 
-:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="Wykres kołowy, na którym są wyświetlane zaawansowane wyniki wyszukiwania w portalu Microsoft 365 Defender wyszukiwania" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
-*Wykres kołowy, na który widać rozkład wiadomości e-mail wyłudzających informacje w domenach najlepszych nadawców*
+Użyj widoku wykresu kołowego, aby skutecznie pokazać dystrybucję w najważniejszych domenach:
 
-#### <a name="file-activities-over-time"></a>Działania związane z plikami w czasie
-Używając operatora `summarize` z funkcją `bin()` , możesz sprawdzić, czy zdarzenia dotyczące określonego wskaźnika są w czasie. Poniższe zapytanie zlicza zdarzenia dotyczące pliku w `invoice.doc` 30-minutowych interwałach w celu pokazania kolekcji aktywności związanych z tym plikiem:
+:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="Wykres kołowy przedstawiający zaawansowane wyniki wyszukiwania zagrożeń w portalu Microsoft 365 Defender" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
+*Wykres kołowy przedstawiający dystrybucję wiadomości e-mail wyłudzających informacje w domenach nadawcy*
+
+#### <a name="file-activities-over-time"></a>Działania dotyczące plików w czasie
+`summarize` Za pomocą operatora z funkcją `bin()` można sprawdzić zdarzenia dotyczące określonego wskaźnika w czasie. Poniższe zapytanie zlicza zdarzenia dotyczące pliku `invoice.doc` w 30-minutowych interwałach, aby pokazać skoki aktywności związane z tym plikiem:
 
 ```kusto
 CloudAppEvents
@@ -98,44 +102,46 @@ CloudAppEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-Na poniższym wykresie liniowym wyraźnie wyróżnione są okresy o większej aktywności obejmującej `invoice.doc`: 
 
-:::image type="content" source="../../media/line-chart-a.png" alt-text="Wykres liniowy, na którym są wyświetlane zaawansowane wyniki wyszukiwania w portalu Microsoft 365 Defender wyszukiwania" lightbox="../../media/line-chart-a.png":::
+Poniższy wykres liniowy wyraźnie wyróżnia okresy z większą aktywnością obejmującą `invoice.doc`:
+
+:::image type="content" source="../../media/line-chart-a.png" alt-text="Wykres liniowy przedstawiający zaawansowane wyniki wyszukiwania zagrożeń w portalu Microsoft 365 Defender" lightbox="../../media/line-chart-a.png":::
 *Wykres liniowy przedstawiający liczbę zdarzeń dotyczących pliku w czasie*
 
-
 ## <a name="export-tables-and-charts"></a>Eksportowanie tabel i wykresów
+
 Po uruchomieniu zapytania wybierz pozycję **Eksportuj** , aby zapisać wyniki w pliku lokalnym. Wybrany widok określa sposób eksportowania wyników:
 
-- **Widok tabeli** — wyniki zapytania są eksportowane w postaci tabelarowej jako Microsoft Excel skoroszytu
+- **Widok tabeli** — wyniki zapytania są eksportowane w formie tabelarycznej jako skoroszyt Microsoft Excel
 - **Dowolny wykres** — wyniki zapytania są eksportowane jako obraz JPEG renderowanego wykresu
 
-## <a name="drill-down-from-query-results"></a>Przechodzenie do szczegółów w wynikach zapytania
-Aby szybko sprawdzić rekord w wynikach zapytania, wybierz odpowiedni wiersz w celu otwarcia **panelu inspekcji** rekordów. Na podstawie wybranego rekordu panel udostępnia następujące informacje:
+## <a name="drill-down-from-query-results"></a>Przechodzenie do szczegółów z wyników zapytania
 
-- **Składniki** majątku — podsumowany widok głównych zasobów (skrzynek pocztowych, urządzeń i użytkowników) znalezionych w rekordzie, wzbogacany o dostępne informacje, takie jak poziomy ryzyka i poziomu ekspozycji
-- **Wszystkie szczegóły** — wszystkie wartości z kolumn w rekordzie  
+Aby szybko sprawdzić rekord w wynikach zapytania, wybierz odpowiedni wiersz, aby otworzyć panel **Inspekcja rekordów** . Panel zawiera następujące informacje na podstawie wybranego rekordu:
 
-:::image type="content" source="../../media/results-inspect-record.png" alt-text="Wybrany rekord z panelem do sprawdzania rekordu w portalu Microsoft 365 Defender danych" lightbox="../../media/results-inspect-record.png":::
+- **Zasoby** — podsumowany widok głównych zasobów (skrzynek pocztowych, urządzeń i użytkowników) znalezionych w rekordzie, wzbogacony o dostępne informacje, takie jak poziomy ryzyka i narażenia
+- **Wszystkie szczegóły** — wszystkie wartości z kolumn w rekordzie
 
-Aby wyświetlić więcej informacji o określonej encji w wynikach zapytania, takiej jak komputer, plik, użytkownik, adres IP lub adres URL, wybierz identyfikator jednostki, aby otworzyć szczegółową stronę profilu dla tej jednostki.
+:::image type="content" source="../../media/results-inspect-record.png" alt-text="Wybrany rekord z panelem do inspekcji rekordu w portalu Microsoft 365 Defender" lightbox="../../media/results-inspect-record.png":::
 
-## <a name="tweak-your-queries-from-the-results"></a>Poprawianie zapytań z wyników
-Wybierz trzy kropki z prawej strony dowolnej kolumny w **panelu Inspekcja** rekordów. Za pomocą tych opcji można:
+Aby wyświetlić więcej informacji o określonej jednostce w wynikach zapytania, takich jak maszyna, plik, użytkownik, adres IP lub adres URL, wybierz identyfikator jednostki, aby otworzyć szczegółową stronę profilu dla tej jednostki.
 
-- Jawnie poszukaj wybranej wartości (`==`)
-- Wykluczenie zaznaczonej wartości z zapytania (`!=`)
-- Uzyskaj bardziej zaawansowane operatory do dodawania wartości do zapytania, `contains`takie jak , `starts with`czy `ends with` 
+## <a name="tweak-your-queries-from-the-results"></a>Dostosowywanie zapytań na podstawie wyników
 
-:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="Okienko Typ akcji na stronie Inspekcja rekordu w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/work-with-query-tweak-query.png":::
+Wybierz trzy kropki po prawej stronie dowolnej kolumny w panelu **Inspekcja rekordu** . Możesz użyć opcji, aby:
 
+- Jawne wyszukiwanie wybranej wartości (`==`)
+- Wyklucz wybraną wartość z zapytania (`!=`)
+- Uzyskiwanie bardziej zaawansowanych operatorów do dodawania wartości do zapytania, takich jak `contains`, `starts with`i `ends with`
 
+:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="Okienko Typ akcji na stronie Inspekcja rekordu w portalu Microsoft 365 Defender" lightbox="../../media/work-with-query-tweak-query.png":::
 
->[!NOTE]
->Niektóre tabele w tym artykule mogą nie być dostępne w programie Microsoft Defender for Endpoint. [Włącz Microsoft 365 Defender](m365d-enable.md), aby poszukać zagrożeń przy użyciu większej liczby źródeł danych. Możesz przenieść zaawansowane przepływy pracy wyszukiwania z programu Microsoft Defender for Endpoint do programu Microsoft 365 Defender, korzystając z procedury migrowania zaawansowanych zapytań myśliwnych z programu [Microsoft Defender dla punktu końcowego](advanced-hunting-migrate-from-mde.md).
+> [!NOTE]
+> Niektóre tabele w tym artykule mogą nie być dostępne w Ochrona punktu końcowego w usłudze Microsoft Defender. [Włącz Microsoft 365 Defender](m365d-enable.md), aby wyszukiwać zagrożenia przy użyciu większej liczby źródeł danych. Zaawansowane przepływy pracy wyszukiwania zagrożeń można przenieść z Ochrona punktu końcowego w usłudze Microsoft Defender do Microsoft 365 Defender, wykonując kroki opisane w [temacie Migrowanie zaawansowanych zapytań wyszukiwania zagrożeń z Ochrona punktu końcowego w usłudze Microsoft Defender](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
+
+- [Omówienie zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md)
 - [Nauka języka zapytań](advanced-hunting-query-language.md)
 - [Używanie zapytań udostępnionych](advanced-hunting-shared-queries.md)
 - [Wyszukiwanie zagrożeń na urządzeniach, w wiadomościach e-mail, aplikacjach i tożsamościach](advanced-hunting-query-emails-devices.md)

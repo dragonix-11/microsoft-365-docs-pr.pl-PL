@@ -1,8 +1,8 @@
 ---
-title: Rozwiązywanie problemów z portalem MSI spowodowanych przez blokadę administratora
+title: Rozwiązywanie problemów z błędami portalu MSI spowodowanymi przez blok administratora
 description: Rozwiązywanie problemów z błędami portalu MSI
 ms.reviewer: ''
-keywords: zabezpieczenia, przykładowa pomoc przy przesyłaniu, plik złośliwego oprogramowania, plik antywirusowy, plik trojański, prześlij, wyślij do firmy Microsoft, prześlij próbkę, wirus, trojański, robak, niezakrywony, nie wykrywa, wysyłaj wiadomości e-mail do firmy Microsoft, wysyłaj wiadomości e-mail z złośliwym oprogramowaniem, sądzę, że jest to wirus, do którego mogę wysłać wirusa, to ten wirus, MSE, nie wykrywa, nie ma podpisu, nie wykrywa, podejrzewa plik,  MMPC, Centrum firmy Microsoft ds. ochrony przed złośliwym oprogramowaniem, analityk, WDSI, analizy zabezpieczeń
+keywords: zabezpieczenia, przykładowe przesyłanie pomocy, plik złośliwego oprogramowania, plik wirusa, plik trojański, przesyłanie, wysyłanie do firmy Microsoft, przesyłanie przykładu, wirus, trojan, robak, niewykryte, nie wykrywa, e-mail microsoft, złośliwe oprogramowanie e-mail, myślę, że to jest złośliwe oprogramowanie, myślę, że to wirus, gdzie mogę wysłać wirusa, jest to wirus, MSE, nie wykrywa, nie ma podpisu, nie wykrywania, podejrzany plik,  MMPC, Centrum firmy Microsoft ds. ochrony przed złośliwym oprogramowaniem, naukowcy, analityk, WDSI, analiza bezpieczeństwa
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,80 +15,87 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: e70eb5192a1fd6171b8e515509ad336aa99a2c63
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 544e96bd0a3985856f47bc8df424a2c2932f3c7e
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63705780"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665673"
 ---
-# <a name="troubleshooting-malware-submission-errors-caused-by-administrator-block"></a>Rozwiązywanie problemów z błędami przesyłania złośliwego oprogramowania spowodowanymi przez blokadę administratora
-W niektórych przypadkach blok administratora może powodować problemy z przesyłaniem, gdy próbujesz przesłać do analizy potencjalnie zainfekowany plik do witryny internetowej analizy zabezpieczeń firmy [Microsoft](https://www.microsoft.com/wdsi) . Poniżej przedstawiono proces rozwiązywania tego problemu.
+# <a name="troubleshooting-malware-submission-errors-caused-by-administrator-block"></a>Rozwiązywanie problemów z błędami przesyłania złośliwego oprogramowania spowodowanymi przez blok administratora
 
-## <a name="review-your-settings"></a>Przejrzyj ustawienia
-Otwórz ustawienia aplikacji Azure [Enterprise.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/) W **Enterprise** AplikacjeUżytkowcy  >   mogą wyrażać zgodę na uzyskiwanie przez aplikacje dostępu do danych firmy w ich imieniu, sprawdź, czy jest zaznaczona opcja Tak lub Nie.
+W niektórych przypadkach blok administratora może powodować problemy z przesyłaniem podczas próby przesłania potencjalnie zainfekowanego pliku do [witryny internetowej analizy zabezpieczeń firmy Microsoft](https://www.microsoft.com/wdsi) w celu analizy. W poniższym procesie pokazano, jak rozwiązać ten problem.
 
-- Jeśli **nie** jest wybrane, administrator usługi Azure AD dla dzierżawy klienta będzie musiał udzielić zgody dla organizacji. W zależności od konfiguracji usługi Azure AD użytkownicy mogą mieć możliwość przesyłania żądania bezpośrednio z tego samego okna dialogowego. Jeśli nie ma opcji prośby o zgodę administratora, użytkownicy muszą zażądać dodania tych uprawnień do swojego administratora usługi Azure AD. Przejdź do następnej sekcji, aby uzyskać więcej informacji.
+## <a name="review-your-settings"></a>Przeglądanie ustawień
 
-- Jeśli **wybrano** pozycję Tak, upewnij się, że Windows Defender dla aplikacji do analizy zabezpieczeń Włączono logowanie dla użytkowników **?** jest ustawione na wartość **Tak** [na platformie Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d).Jeśli **nie** jest zaznaczone, musisz poprosić administratora usługi Azure AD o jej włączenie. 
-  
-## <a name="implement-required-enterprise-application-permissions"></a>Implementowanie wymaganych Enterprise aplikacji 
+Otwórz [ustawienia aplikacji usługi Azure Enterprise](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/). W obszarze **Enterprise** AplikacjeUżytkownicy  >  **mogą wyrazić zgodę na aplikacje uzyskujące dostęp do danych firmy w ich imieniu**, sprawdź, czy wybrano opcję Tak lub Nie.
+
+- Jeśli wybrano pozycję **Nie** , administrator usługi Azure AD dla dzierżawy klienta będzie musiał wyrazić zgodę dla organizacji. W zależności od konfiguracji usługi Azure AD użytkownicy mogą mieć możliwość przesłania żądania bezpośrednio z tego samego okna dialogowego. Jeśli nie ma opcji żądania zgody administratora, użytkownicy muszą zażądać dodania tych uprawnień do administratora usługi Azure AD. Przejdź do poniższej sekcji, aby uzyskać więcej informacji.
+
+- Jeśli **wybrano** opcję Tak, upewnij się, że ustawienie aplikacji Windows Defender Security Intelligence **Włączone dla użytkowników do logowania?** jest ustawione na wartość **Tak** na [platformie Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d). Jeśli wybrano opcję **Nie** , musisz zażądać włączenia go przez administratora usługi Azure AD.
+
+## <a name="implement-required-enterprise-application-permissions"></a>Implementowanie wymaganych uprawnień aplikacji Enterprise
+
 Ten proces wymaga administratora globalnego lub administratora aplikacji w dzierżawie.
- 1. Otwórz [Enterprise Ustawienia aplikacji](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Permissions/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d). 
- 2. Wybierz **pozycję Utłań zgodę administratora dla organizacji**.
- 3. Jeśli możesz to zrobić, przejrzyj uprawnienia interfejsu API wymagane dla tej aplikacji, jak pokazano na poniższej ilustracji. Ułać zgodę dzierżawy.
 
-    ![obraz udzielenia zgody.](../../media/security-intelligence-images/msi-grant-admin-consent.jpg)
+1. Otwórz [Enterprise Ustawienia aplikacji](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Permissions/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d).
+2. Wybierz pozycję **Udziel zgody administratora dla organizacji**.
+3. Jeśli możesz to zrobić, przejrzyj uprawnienia interfejsu API wymagane dla tej aplikacji, jak pokazano na poniższej ilustracji. Podaj zgodę dla dzierżawy.
 
-  4. Jeśli administrator otrzyma komunikat o błędzie podczas próby wyrażenia zgody ręcznie, wypróbuj ewentualne obejścia Dla opcji [1](#option-1-approve-enterprise-application-permissions-by-user-request) lub Opcja [2](#option-2-provide-admin-consent-by-authenticating-the-application-as-an-admin) .
-  
-## <a name="option-1-approve-enterprise-application-permissions-by-user-request"></a>Opcja 1 Zatwierdzanie uprawnień aplikacji przedsiębiorstwa na żądanie użytkownika
-> [!Note]
-> To jest obecnie funkcja w wersji Preview.
+    ![obraz udzielania zgody.](../../media/security-intelligence-images/msi-grant-admin-consent.jpg)
 
-Azure Active Directory będą musieli zezwolić użytkownikom na zażądanie zgody administratora na aplikacje. Sprawdź, czy ustawienie w innych aplikacjach jest [skonfigurowane Enterprise tak](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/).
+4. Jeśli administrator otrzyma błąd podczas próby ręcznego udzielenia zgody, spróbuj zastosować [opcję 1](#option-1-approve-enterprise-application-permissions-by-user-request) lub [opcję 2](#option-2-provide-admin-consent-by-authenticating-the-application-as-an-admin) jako możliwe obejścia.
 
-![Enterprise ustawień użytkownika aplikacji.](../../media/security-intelligence-images/msi-enterprise-app-user-setting.jpg)
+## <a name="option-1-approve-enterprise-application-permissions-by-user-request"></a>Opcja 1. Zatwierdzanie uprawnień aplikacji przedsiębiorstwa według żądania użytkownika
 
-Więcej informacji zawiera przepływ pracy Konfigurowanie [zgody administratora](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+> [!NOTE]
+> Jest to obecnie funkcja w wersji zapoznawczej.
 
-Po zweryfikowaniu tego ustawienia użytkownicy mogą przejść przez proces logowania klienta przedsiębiorstwa w witrynie [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) i przesłać prośbę o zgodę administratora, w tym o uzasadnienie.
+Azure Active Directory administratorzy będą musieli zezwolić użytkownikom na żądanie zgody administratora na aplikacje. Sprawdź, czy ustawienie jest skonfigurowane na **wartość Tak** w [aplikacjach Enterprise](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/).
+
+![Enterprise ustawienia użytkownika aplikacji.](../../media/security-intelligence-images/msi-enterprise-app-user-setting.jpg)
+
+Więcej informacji można znaleźć w [temacie Konfigurowanie przepływu pracy zgody administratora](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+
+Po zweryfikowaniu tego ustawienia użytkownicy mogą przejść przez logowanie klienta przedsiębiorstwa w analizie [zabezpieczeń firmy Microsoft](https://www.microsoft.com/wdsi/filesubmission) i przesłać żądanie zgody administratora, w tym uzasadnienie.
 
 ![Przepływ logowania firmy Contoso.](../../media/security-intelligence-images/msi-contoso-approval-required.png)
 
-Administrator będzie mógł przeglądać i zatwierdzać uprawnienia aplikacji Żądania zgody administratora [platformy Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests/menuId/).
+Administrator będzie mógł przeglądać i zatwierdzać uprawnienia aplikacji [żądania zgody administratora platformy Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests/menuId/).
 
-Po wyrażenia zgody wszyscy użytkownicy w dzierżawie będą mogli używać aplikacji.
-  
-## <a name="option-2-provide-admin-consent-by-authenticating-the-application-as-an-admin"></a>Opcja 2 Wyrażenie zgody administratora przez uwierzytelnienie aplikacji jako administratora 
-Ten proces wymaga, aby administratorzy globalni przechodzili przez proces logowania Enterprise się przez analizę zabezpieczeń [firmy Microsoft](https://www.microsoft.com/wdsi/filesubmission).
+Po wyrażeniu zgody wszyscy użytkownicy w dzierżawie będą mogli korzystać z aplikacji.
+
+## <a name="option-2-provide-admin-consent-by-authenticating-the-application-as-an-admin"></a>Opcja 2. Udzielanie zgody administratora przez uwierzytelnienie aplikacji jako administratora
+
+Ten proces wymaga, aby administratorzy globalni przechodzili przez przepływ logowania Enterprise klienta w [analizie zabezpieczeń firmy Microsoft](https://www.microsoft.com/wdsi/filesubmission).
 
 ![Przepływ logowania zgody.](../../media/security-intelligence-images/msi-microsoft-permission-required.jpg)
 
-Następnie administratorzy przejrzyj uprawnienia i upewnij się, że wybierasz pozycję Zgoda **w** imieniu twojej organizacji, a następnie wybierz pozycję **Zaakceptuj**.
+Następnie administratorzy przejrzyj uprawnienia i upewnij się, że wybierzesz pozycję **Zgoda w imieniu organizacji**, a następnie wybierz pozycję **Akceptuj**.
 
-Wszyscy użytkownicy w dzierżawie będą mogli używać tej aplikacji.
+Wszyscy użytkownicy w dzierżawie będą teraz mogli korzystać z tej aplikacji.
 
 ## <a name="option-3-delete-and-readd-app-permissions"></a>Opcja 3. Usuwanie i odczytywanie uprawnień aplikacji
-Jeśli żadna z tych opcji nie rozwiąże problemu, spróbuj wykonać następujące czynności (jako administrator):
 
-1. Usuń poprzednie konfiguracje aplikacji. Przejdź do [Enterprise aplikacji i](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/982e94b2-fea9-4d1f-9fca-318cda92f90b) wybierz pozycję **usuń**.
+Jeśli żadna z tych opcji nie rozwiąże problemu, spróbuj wykonać następujące kroki (jako administrator):
+
+1. Usuń poprzednie konfiguracje aplikacji. Przejdź do [Enterprise aplikacji](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/982e94b2-fea9-4d1f-9fca-318cda92f90b) i wybierz pozycję **usuń**.
 
    ![Usuń uprawnienia aplikacji.](../../media/security-intelligence-images/msi-properties.png)
 
-2. Przechwyć tenantID z [właściwości](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+2. Przechwytywanie identyfikatora TenantID z [właściwości](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 
-3. Zastąp element {tenant-id} określoną dzierżawą, która musi udzielić zgody na tę aplikację, w poniższym adresie URL. Skopiuj ten adres URL do przeglądarki. Pozostałe parametry są już ukończone. 
+3. Zastąp element {tenant-id} określoną dzierżawą, która musi udzielić zgody tej aplikacji w poniższym adresie URL. Skopiuj ten adres URL do przeglądarki. Pozostałe parametry są już ukończone.
 ``https://login.microsoftonline.com/{tenant-id}/v2.0/adminconsent?client_id=f0cf43e5-8a9b-451c-b2d5-7285c785684d&state=12345&redirect_uri=https%3a%2f%2fwww.microsoft.com%2fwdsi%2ffilesubmission&scope=openid+profile+email+offline_access``
 
-   ![Potrzebne uprawnienia.](../../media/security-intelligence-images/msi-microsoft-permission-requested-your-organization.png)
+   ![Wymagane uprawnienia.](../../media/security-intelligence-images/msi-microsoft-permission-requested-your-organization.png)
 
-4. Przejrzyj uprawnienia wymagane przez aplikację, a następnie wybierz pozycję **Zaakceptuj**. 
+4. Przejrzyj uprawnienia wymagane przez aplikację, a następnie wybierz pozycję **Akceptuj**.
 
-5. Potwierdź, że uprawnienia zostały zastosowane w [portalu Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Permissions/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/ce60a464-5fca-4819-8423-bcb46796b051).
+5. Upewnij się, że uprawnienia są stosowane w [Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Permissions/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/ce60a464-5fca-4819-8423-bcb46796b051).
 
-   ![Sprawdź, czy uprawnienia zostały zastosowane.](../../media/security-intelligence-images/msi-permissions.jpg)
-   
-6. Zaloguj się do analizy [zabezpieczeń firmy Microsoft](https://www.microsoft.com/wdsi/filesubmission) jako użytkownik przedsiębiorstwa z kontem bez administratora, aby sprawdzić, czy masz dostęp.
+   ![Sprawdź, czy są stosowane uprawnienia.](../../media/security-intelligence-images/msi-permissions.jpg)
 
- Jeśli po tych czynnościach rozwiązywania problemów ostrzeżenie nie zostanie rozwiązane, zadzwoń do pomocy technicznej firmy Microsoft.
+6. Zaloguj się do [analizy zabezpieczeń firmy Microsoft](https://www.microsoft.com/wdsi/filesubmission) jako użytkownik przedsiębiorstwa z kontem nieadministracyjnym, aby sprawdzić, czy masz dostęp.
+
+ Jeśli ostrzeżenie nie zostanie rozwiązane po wykonaniu tych kroków rozwiązywania problemów, zadzwoń do pomocy technicznej firmy Microsoft.

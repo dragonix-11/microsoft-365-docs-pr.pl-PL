@@ -1,7 +1,7 @@
 ---
 title: Wynik ekspozycji w Zarządzanie zagrożeniami i lukami
 description: Wynik Zarządzanie zagrożeniami i lukami najbezpieczniej jest odzwierciedlać narażenie organizacji na zagrożenia bezpieczeństwa bezpieczeństwa.
-keywords: wynik ekspozycji, program Microsoft Defender dla wyników ekspozycji w punkcie końcowym, Program Microsoft Defender dla programu Endpoint oceny ekspozycji w programie tvm, wynik ekspozycji organizacji w organizacji, wynik programu tvm, Zarządzanie zagrożeniami i lukami, Microsoft Defender for Endpoint
+keywords: wynik ekspozycji, Ochrona punktu końcowego w usłudze Microsoft Defender wyników ekspozycji, Ochrona punktu końcowego w usłudze Microsoft Defender wyników ekspozycji w programie tvm, wynik ekspozycji organizacji, wynik ekspozycji organizacji telewizyjnej, Zarządzanie zagrożeniami i lukami, Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a82d49e7ac6f87847e7ac61cc4451ad63c2bdeef
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f65b48f37d1cf141611af075e55328226db6c6bd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997369"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471588"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Ocena ekspozycji — Zarządzanie zagrożeniami i lukami
 
@@ -29,11 +29,11 @@ ms.locfileid: "62997369"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Twój wynik ekspozycji jest widoczny na [pulpicie nawigacyjnym zarządzanie lukami w zabezpieczeniach zagrożenia](tvm-dashboard-insights.md) w portalu Microsoft 365 Defender sieci. Odzwierciedla to, jak narażona na zagrożenia bezpieczeństwa w organizacji jest. Niska ocena ekspozycji oznacza, że urządzenia są mniej narażone na wykorzystywanie.
 
@@ -43,7 +43,7 @@ Twój wynik ekspozycji jest widoczny na [pulpicie nawigacyjnym zarządzanie luka
 
 Karta umożliwia wyświetlenie wysokiego poziomu trendu wyników ekspozycji w czasie. Wszelkie kolekcje na wykresie stanowią wizualną wskazówkę, że naświetlasz zagrożenie wysoką wigorą, które możesz dokładniej zbadać.
 
-![Karta wyników ekspozycji.](images/tvm_exp_score.png)
+:::image type="content" source="images/tvm_exp_score.png" alt-text="Karta wyników ekspozycji" lightbox="images/tvm_exp_score.png":::
 
 ## <a name="how-it-works"></a>Jak to działa
 

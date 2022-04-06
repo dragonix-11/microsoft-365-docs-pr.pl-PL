@@ -15,22 +15,22 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 013b189dca95fc63dc8d189d020fcf3f7727cf82
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 881ae2de7a6c752c2be9bfc5ccdbe350050f340b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "62996769"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472006"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Ochrona i Program antywirusowy Microsoft Defender
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Program antywirusowy Microsoft Defender
 
 Technologie następnej generacji w Program antywirusowy Microsoft Defender natychmiastową, automatyczną ochronę przed nowymi i wyłaniających się zagrożeniami. Aby dynamicznie identyfikować nowe zagrożenia, technologie następnej generacji działają z dużymi zestawami połączonych danych w inteligentnych systemach zabezpieczeń firmy Microsoft Graph oraz zaawansowanych systemach sztucznej inteligencji sterowanej przez zaawansowane modele uczenia maszynowego. Ochrona chmury współpracuje z Program antywirusowy Microsoft Defender, aby zapewniać dokładną, inteligentną ochronę w czasie rzeczywistym. 
 
-[:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagram przedstawiający współpracę ochrony chmury z siecią Program antywirusowy Microsoft Defender":::](enable-cloud-protection-microsoft-defender-antivirus.md)
+[:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagram przedstawiający współpracę ochrony chmury z siecią Program antywirusowy Microsoft Defender" lightbox="images/mde-cloud-protection.png":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > Zalecamy, aby ochrona chmury została włączona. Aby dowiedzieć się więcej, zobacz [Dlaczego ochrona chmury powinna być włączona dla Program antywirusowy Microsoft Defender](why-cloud-protection-should-be-on-mdav.md). 
@@ -41,7 +41,7 @@ Program antywirusowy Microsoft Defender bezproblemowo współpracuje z usługami
 
 W poniższych wpisach w blogu pokazano, jak działa ochrona chmury:
 
-- [Poznaj zaawansowane technologie w centrum ochrony następnej generacji programu Microsoft Defender for Endpoint](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
+- [Poznaj zaawansowane technologie w centrum ochrony Ochrona punktu końcowego w usłudze Microsoft Defender nowej generacji](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 
 - [Dlaczego Program antywirusowy Microsoft Defender jest najbardziej wdrożony w przedsiębiorstwie](https://www.microsoft.com/security/blog/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise) 
 

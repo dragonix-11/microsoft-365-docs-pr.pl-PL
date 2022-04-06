@@ -21,22 +21,22 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak podnieść poziom ustawień zabezpieczeń i korzystać z raportów, alertów i badań dla kont priorytetowych w swoich Microsoft 365 organizacjach.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f27e146df680b36c117816f0a07e45e0345c647a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c997f38e06444aab8ff6de550759959eb8f71d9f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675421"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470774"
 ---
-# <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Zalecenia dotyczące zabezpieczeń dla kont priorytetowych w Microsoft 365
+# <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Zalecenia dotyczące zabezpieczeń dla kont priorytetowych na platformie Microsoft 365
 
 Nie wszystkie konta użytkowników mają dostęp do tych samych informacji o firmie. Niektóre konta mają dostęp do informacji poufnych, takich jak dane finansowe, informacje o rozwoju produktu, dostęp partnera do krytycznych systemów kompilacji i nie tylko. W przypadku naruszenia bezpieczeństwa konta, które mają dostęp do bardzo poufnych informacji, stanowią poważne zagrożenie. Konta tego typu są kontami _o priorytecie_. Konta o priorytecie obejmują (ale nie są ograniczone do) klientów z programem ceos, cisos, cfos, konta administratora infrastruktury, tworzenie kont systemowych i nie tylko.
 
 Dla atakujących zwykłe ataki służące do wyłudzania informacji służące do wyłudzania informacji w przypadku zwykłych lub nieznanych użytkowników są nieefektywne. Natomiast wyłudzanie _informacji i ataki_ kont o priorytetach docelowych są bardzo satysfakcjonujące dla atakujących. Z tego względu konta o priorytecie wymagają silniejszej niż zwykła ochrona, aby zapobiec utracie konta.
 
-Microsoft 365 usługi Microsoft Defender dla Office 365 zawierają kilka kluczowych funkcji, które zapewniają dodatkowe warstwy zabezpieczeń kont priorytetowych. W tym artykule opisano te funkcje i sposób ich używania.
+Microsoft 365 i Ochrona usługi Office 365 w usłudze Microsoft Defender zawierają kilka kluczowych funkcji, które zapewniają dodatkowe warstwy zabezpieczeń dla kont priorytetowych. W tym artykule opisano te funkcje i sposób ich używania.
 
-![Podsumowanie zaleceń dotyczących zabezpieczeń w postaci ikony.](../../media/security-recommendations-for-priority-users.png)
+:::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="Podsumowanie zaleceń dotyczących zabezpieczeń w formie ikony" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
 |Zadanie|Wszystkie Office 365 Enterprise planów|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
@@ -67,19 +67,19 @@ Warto również zauważyć, że uwierzytelnianie podstawowe jest w trakcie proce
 
 ## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>Użyj ścisłych wstępnie ustawionych zasad zabezpieczeń dla kont priorytetowych
 
-Użytkownicy o wysokim priorytecie wymagają bardziej rygorystycznych działań w celu ochrony różnych zabezpieczeń dostępnych w programach Exchange Online Protection (EOP) i Defender for Office 365.
+Użytkownicy o wysokim priorytecie wymagają bardziej rygorystycznych działań w celu ochrony różnych zabezpieczeń, które są Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Defender.
 
 Na przykład zamiast dostarczać do folderu Wiadomości-śmieci wiadomości klasyfikowane jako spam należy poddać kwarantannie te same wiadomości, o ile są przeznaczone dla kont priorytetowych.
 
 Tę rygorystyczną podejście można wdrożyć dla kont priorytetowych przy użyciu profilu Ścisłe w wstępnie ustawionych zasadach zabezpieczeń.
 
-Wstępnie ustawione zasady zabezpieczeń są wygodną i centralną lokalizacją do stosowania naszych zalecanych ustawień zasad ścisłej ochrony wszystkich zabezpieczeń w usługach EOP i Defender dla Office 365. Aby uzyskać więcej informacji, zobacz [Wstępnie ustawione zasady zabezpieczeń w usługach EOP i Microsoft Defender for Office 365](preset-security-policies.md).
+Wstępnie ustawione zasady zabezpieczeń są wygodną i centralną lokalizacją do stosowania naszych zalecanych ustawień zasad ścisłej ochrony wszystkich zabezpieczeń w usługach EOP i Ochrona usługi Office 365 w usłudze Defender. Aby uzyskać więcej informacji, zobacz [Wstępnie ustawione zasady zabezpieczeń w uchcie eOP i programie Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md).
 
-Aby uzyskać szczegółowe informacje o tym, czym różnią się ustawienia ścisłych zasad od ustawień domyślnych i standardowych, zobacz Zalecane ustawienia usług [EOP i Microsoft Defender w Office 365 zabezpieczeń](recommended-settings-for-eop-and-office365.md).
+Aby uzyskać szczegółowe informacje o tym, czym różnią się ustawienia ścisłych zasad od ustawień domyślnych i standardowych, zobacz Zalecane ustawienia dla programu [EOP Ochrona usługi Office 365 w usłudze Microsoft Defender zabezpieczeń](recommended-settings-for-eop-and-office365.md).
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>Stosowanie tagów użytkowników do kont priorytetowych
 
-Tagi użytkowników w programie Microsoft Defender dla usługi Office 365 Plan 2 (w ramach usługi Microsoft 365 E5 lub subskrypcji dodatków) to sposób na szybkie identyfikowanie i klasyfikowanie konkretnych użytkowników lub grup użytkowników w raportach i badaniach zdarzeń.
+Tagi użytkowników Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2 (w ramach usługi Microsoft 365 E5 lub subskrypcji dodatków) są sposobem na szybkie identyfikowanie i klasyfikowanie konkretnych użytkowników lub grup użytkowników w raportach i badaniach zdarzeń.
 
 **Konta o** priorytecie to typ wbudowanego tagu użytkownika (nazywanego _tagiem systemowym_), który umożliwia identyfikowanie zdarzeń i alertów dotyczących kont priorytetów. Aby uzyskać więcej informacji o **kontach priorytetowych**, zobacz [Zarządzanie kontami priorytetów i monitorowanie ich](../../admin/setup/priority-accounts.md).
 
@@ -87,13 +87,13 @@ Możesz również tworzyć tagi niestandardowe, aby dodatkowo identyfikować i k
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Monitorowanie priorytetów kont w alertach, raportach i wykrywaniach
 
-Po zabezpieczeniu i oznaczeniu priorytetowych użytkowników możesz używać dostępnych raportów, alertów i badań w usługach EOP i Defender dla usługi Office 365 do szybkiego identyfikowania zdarzeń lub wykrycia dotyczących kont priorytetowych. Funkcje obsługi tagów użytkowników są opisane w poniższej tabeli.
+Po zabezpieczeniu i oznaczeniu priorytetowych użytkowników możesz używać dostępnych raportów, alertów i badań w usługach EOP i Ochrona usługi Office 365 w usłudze Defender, aby szybko identyfikować zdarzenia lub wykrywanie z użyciem kont priorytetowych. Funkcje obsługi tagów użytkowników są opisane w poniższej tabeli.
 
 |Funkcja|Opis|
 |---|---|
 |Alerty|Tagi użytkowników, których dotyczy problem, są widoczne i dostępne jako filtry na stronie **Alerty** w Microsoft 365 Defender sieci Web. Aby uzyskać więcej informacji, zobacz [Wyświetlanie alertów](../../compliance/alert-policies.md#viewing-alerts).|
-|Eksplorator <p> Wykrywanie w czasie rzeczywistym|W **Eksploratorze** (Defender dla usługi Office 365 Plan 2) lub Wykrywaniu w czasie rzeczywistym (Defender dla usługi Office 365 Plan 1) tagi użytkownika są widoczne w widoku siatki poczty e-mail i w wysuwanym oknie szczegółów wiadomości **e-mail**. Tagi użytkowników są również dostępne jako właściwość z filtrowaniem. Aby uzyskać więcej informacji, zobacz  [Tagi w Eksploratorze](threat-explorer.md#tags-in-threat-explorer).|
-|Widoki kampanii|Tagi użytkowników są jedną z wielu właściwości, które można filtrować w widokach kampanii w programie Microsoft Defender Office 365 Plan 2. Aby uzyskać więcej informacji, zobacz [Widoki kampanii](campaigns.md).|
+|Eksplorator <p> Wykrywanie w czasie rzeczywistym|W **Eksploratorze** (Ochrona usługi Office 365 w usłudze Defender Plan 2) lub Wykrywania w czasie rzeczywistym (Ochrona usługi Office 365 w usłudze Defender Plan 1) tagi użytkowników są widoczne w widoku siatki wiadomości e-mail i w wysuwanym oknie szczegółów wiadomości **e-mail**. Tagi użytkowników są również dostępne jako właściwość z filtrowaniem. Aby uzyskać więcej informacji, zobacz  [Tagi w Eksploratorze](threat-explorer.md#tags-in-threat-explorer).|
+|Widoki kampanii|Tagi użytkowników są jedną z wielu właściwości, które można filtrować w widokach kampanii Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2. Aby uzyskać więcej informacji, zobacz [Widoki kampanii](campaigns.md).|
 |Raport o stanie ochrony przed zagrożeniami|W niemal wszystkich widokach i tabelach szczegółów w raporcie o stanie ochrony przed zagrożeniami można filtrować wyniki według kont **priorytetów**. Aby uzyskać więcej informacji, zobacz [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).|
 |Raport Problemy z pocztą e-mail dla kont priorytetowych|Raport **Problemy z pocztą** e-mail dla kont priorytetowych w centrum administracyjnym usługi Exchange zawiera informacje o niedostarczanych i opóźnionych wiadomościach dla kont **priorytetowych**. Aby uzyskać więcej informacji, zobacz [Raport Problemy z pocztą e-mail dla kont priorytetowych](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 
@@ -108,9 +108,9 @@ Microsoft 365 udostępnia następujące zasoby, które ułatwiają informowanie 
 |Pojęcie|Zasoby|Opis|
 |---|---|---|
 |Microsoft 365|[Dostosowywane ścieżki edukacyjne](/office365/customlearning/)|Te zasoby mogą ułatwić ci złożycie szkolenia dla użytkowników w organizacji.|
-|Microsoft 365 zabezpieczeń|[Edukacja: Zabezpieczanie organizacji za pomocą wbudowanych, inteligentnych zabezpieczeń przed Microsoft 365](/learn/modules/security-with-microsoft-365)|Ten moduł umożliwia opisanie Microsoft 365 współpracy funkcji zabezpieczeń i wyartykułować zalety tych funkcji zabezpieczeń.|
+|Centrum zabezpieczeń platformy Microsoft 365|[Edukacja: Zabezpieczanie organizacji za pomocą wbudowanych, inteligentnych zabezpieczeń przed Microsoft 365](/learn/modules/security-with-microsoft-365)|Ten moduł umożliwia opisanie Microsoft 365 współpracy funkcji zabezpieczeń i wyartykułować zalety tych funkcji zabezpieczeń.|
 |Uwierzytelnianie wieloskładnikowe|[Weryfikacja dwuetapowa: Co to jest dodatkowa strona weryfikacji?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Ten artykuł ułatwia użytkownikom końcowych zrozumienie, co to jest uwierzytelnianie wieloskładnikowe i dlaczego jest ono używane w Twojej organizacji.|
-|Szkolenie z symeny ataków|[Wprowadzenie do korzystania ze szkolenia symulacyjnego w zakresie ataków](attack-simulation-training-get-started.md)|Szkolenie symulacyjne dotyczące ataków w programie Microsoft Defender dla programu Office 365 Plan 2 umożliwia administratorowi konfigurowanie, uruchamianie i śledzenie symulowanych ataków na wyłudzanie informacji w odniesieniu do określonych grup użytkowników.|
+|Szkolenie z symeny ataków|[Wprowadzenie z użyciem szkolenia symulacyjnego w zakresie ataków](attack-simulation-training-get-started.md)|Szkolenie symulacyjne dotyczące Ochrona usługi Office 365 w usłudze Microsoft Defender w programie Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2 umożliwia administratorowi konfigurowanie, uruchamianie i śledzenie symulowanych ataków na wyłudzanie informacji w odniesieniu do określonych grup użytkowników.|
 
 Ponadto firma Microsoft zaleca użytkownikom korzystanie z akcji opisanych w tym artykule: Ochrona konta i urządzeń przed [hakerami i złośliwym oprogramowaniem](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Są to między innymi:
 
@@ -120,4 +120,4 @@ Ponadto firma Microsoft zaleca użytkownikom korzystanie z akcji opisanych w tym
 
 ## <a name="see-also"></a>Zobacz też
 
-[Ogłaszanie ochrony konta priorytetowego w programie Microsoft Defender dla Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)
+[Ogłaszanie ochrony konta priorytetowego w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

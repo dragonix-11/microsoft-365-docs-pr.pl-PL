@@ -1,7 +1,7 @@
 ---
-title: Krok nr 3. Przeprowadzanie przeglądu pierwszego zdarzenia po zdarzeniu
-description: Jak przeglądać pierwsze zdarzenie w aplikacji Microsoft 365 Defender.
-keywords: zdarzenia, alerty, badanie, korelacja, atak, komputery, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, poczta e-mail, 365, microsoft, m365
+title: Krok nr 3. Przeprowadzanie przeglądu po zdarzeniu pierwszego incydentu
+description: Jak przeprowadzić przegląd pierwszego incydentu w Microsoft 365 Defender.
+keywords: zdarzenia, alerty, badanie, korelacja, atak, maszyny, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, poczta e-mail, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,40 +22,40 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3139cab64a967ed65a16867b53ad57a6913afd2c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d2d137ea2a97bb183187ca83eb12a34ab336bc53
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325897"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666003"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Krok nr 3. Przeprowadzanie przeglądu pierwszego zdarzenia po zdarzeniu
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Krok nr 3. Przeprowadzanie przeglądu po zdarzeniu pierwszego incydentu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 - Microsoft 365 Defender
 
-National Institute of Standards and Technology (NIST) zaleca, że gdy wszystkie kroki zostały wykonane w celu odzyskania po ataków, organizacje muszą przejrzeć zdarzenie, aby dowiedzieć się od niego i ulepszyć zapewnianie bezpieczeństwa lub procesy. Ocena różnych aspektów obsługi zdarzeń staje się ważna podczas przygotowywania się na następne zdarzenie.
+National Institute of Standards and Technology (NIST) zaleca, aby po wykonaniu wszystkich kroków w celu odzyskania sprawności po ataku organizacje muszą dokonać przeglądu incydentu, aby wyciągnąć z niego wnioski i poprawić stan bezpieczeństwa lub procesy. Ocena różnych aspektów obsługi incydentów staje się ważna podczas przygotowywania się do następnego incydentu.
 
-Microsoft 365 Defender w wykonywaniu działań po incydentach, udostępniając organizacji alerty zgodne z [miTRE ATT&CK Framework](https://attack.mitre.org/). Wszystkie etykiety rozwiązań programu Microsoft Defender atakują się zgodnie z att&CK, czyli techniką CK.
+Microsoft 365 Defender może pomóc w wykonywaniu działań po zdarzeniu, udostępniając organizacji alerty zgodne z programem [MITRE ATT&CK Framework](https://attack.mitre.org/). Wszystkie rozwiązania usługi Microsoft Defender etykietują ataki zgodnie z taktyką lub techniką CK&ATT.
 
-Mapując alerty na tę branżę, możesz:
+Mapowanie alertów na tę platformę branżową umożliwia:
 
 - Przeprowadzanie analizy luk w zabezpieczeniach.
-- Określanie adversary i przypisanie kampanii.
-- Wykonywanie analizy trendu.
-- Zidentyfikuj luki w umiejętnościach w wiedzy dotyczącej metody ataków.
-- Utwórz podręcznik Power Automate w celu szybszego rozwiązywania problemów.
+- Określanie przeciwnika i przypisywania kampanii.
+- Wykonaj analizę trendu.
+- Identyfikowanie luk w umiejętnościach w rozpoznawaniu metod ataku.
+- Utwórz podręcznik Power Automate, aby przyspieszyć korygowanie.
 
-Działania w zakresie przeglądu po zdarzeniu mogą również skutkować dostosowaniem konfiguracji zabezpieczeń i procesów zespołu zabezpieczeń w celu usprawnienia procesu reakcji Twojej organizacji.
+Działanie po przeglądzie po zdarzeniu może również spowodować dostrojenie konfiguracji zabezpieczeń i procesów zespołu ds. zabezpieczeń w celu usprawnienia możliwości reagowania organizacji.
 
 ## <a name="next-step"></a>Następny krok
 
 Zobacz następujące dodatkowe ścieżki badania:
 
-- [Wiadomość e-mail wyłudzająca](first-incident-path-phishing.md)
-- [Ataki oparte na tożsamości](first-incident-path-identity.md)
+- [Poczta e-mail wyłudzająca informacje](first-incident-path-phishing.md)
+- [Atak oparty na tożsamościach](first-incident-path-identity.md)
 
 
 ## <a name="see-also"></a>Zobacz też

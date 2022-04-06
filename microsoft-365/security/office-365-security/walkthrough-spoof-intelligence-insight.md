@@ -21,19 +21,19 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62be716a9663820f90d5c4f125f4634b3b399547
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: f433c93d9bba13822cf84ff8740f86d95cf2befe
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "63010422"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471346"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Zarządzanie fałszywymi nadawcami przy użyciu zasad ochrony przed fałszerami i informacjami o fałszerce w u usługi EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
@@ -59,7 +59,7 @@ Do zarządzania analizą spoof intelligence można używać w portalu usługi Mi
 
   **Uwagi**:
 
-  - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w  aplikacji Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+  - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w aplikacji  Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
   - Grupa **ról Zarządzanie organizacją tylko do** odczytu w [programie Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) również zapewnia dostęp tylko do odczytu tej funkcji.
 
 - Opcje ochrony przed fałszerami są opisane w tece Ustawienia [fałszowania w zasadach ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md#spoof-settings).
@@ -67,7 +67,7 @@ Do zarządzania analizą spoof intelligence można używać w portalu usługi Mi
 - W zasadach ochrony przed wyłudzaniem informacji można włączać, wyłączać i konfigurować ustawienia ochrony przed fałszerami. Aby uzyskać instrukcje dotyczące subskrypcji, zobacz jeden z następujących tematów:
 
   - [Skonfiguruj zasady ochrony przed wyłudzaniem informacji w u usługi EOP](configure-anti-phishing-policies-eop.md).
-  - [Skonfiguruj zasady ochrony przed wyłudzaniem informacji w programie Microsoft Defender na Office 365](configure-mdo-anti-phishing-policies.md).
+  - [Skonfiguruj zasady ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
 
 - Aby uzyskać informacje o naszych zalecanych ustawieniach ochrony przed fałszerami, zobacz Ustawienia zasad ochrony przed wyłudzaniem informacji [eOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
@@ -87,7 +87,7 @@ Istnieją dwa sposoby zezwalania na spoofed nadawców i blokowania ich:
 
 2. Na stronie **Zasady ochrony przed spamem** wybierz pozycję Zasady **ochrony przed fałszerami** , klikając nazwę.
 
-   ![Wybierz zasady ochrony przed fałszerami.](../../media/anti-spam-settings-spoof-intelligence-policy.png)
+   :::image type="content" source="../../media/anti-spam-settings-spoof-intelligence-policy.png" alt-text="Opcja wyboru zasad ochrony przed fałszerami" lightbox="../../media/anti-spam-settings-spoof-intelligence-policy.png":::
 
 3. W **wyświetlonym wysuwanych zasadach** ochrony przed fałszerami zaznacz jedną z następujących opcji:
    - **Pokaż nadawców, którzy już przejrzeli**
@@ -101,7 +101,7 @@ Istnieją dwa sposoby zezwalania na spoofed nadawców i blokowania ich:
    - **Tak**: zezwalaj na fałszywy nadawcę.
    - **Nie**: oznacz wiadomość jako fałszywą. Akcja jest kontrolowana przez domyślne zasady ochrony przed wyłudzaniem informacji lub niestandardowe zasady ochrony przed wyłudzaniem informacji. Aby uzyskać więcej informacji, zobacz [Ustawienia fałszowania w zasadach ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md#spoof-settings).
 
-   ![Zrzut ekranu przedstawiający wysuwne informacje o fałszywych nadawcach oraz informacje o tym, czy nadawca może fałszować.](../../media/spoof-allow-block-flyout.png)
+   :::image type="content" source="../../media/spoof-allow-block-flyout.png" alt-text="Wysuwają się informacje o fałszywych nadawcach oraz o tym, czy nadawca może fałszować" lightbox="../../media/spoof-allow-block-flyout.png":::
 
    Kolumny i wartości, które widzisz, zostały objaśnione na poniższej liście:
 
@@ -196,7 +196,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-Phis
 
 3. Szczegółowe informacje na pulpicie nawigacyjnym są podane w ten sposób:
 
-   ![Zrzut ekranu przedstawiający szczegółowe informacje dotyczące fałszowania danych.](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+   :::image type="content" source="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png" alt-text="Analiza fałszowania" lightbox="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png":::
 
    Ten wgląd ma dwa tryby:
 
@@ -232,7 +232,7 @@ Aby uzyskać szczegółowe informacje o składni i parametrach, [zobacz Set-Phis
 
    W tym miejscu możesz również dodać lub usunąć parę infrastruktury domen/wysyłania z listy Dozwolonych **do fałszowania** nadawców listy dozwolonych. Wystarczy odpowiednio ustawić przełącznik.
 
-   ![Zrzut ekranu przedstawiający domenę w okienku szczegółów fałszowania informacji.](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+   :::image type="content" source="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png" alt-text="Domena w okienku szczegółów informacji dotyczących fałszowania informacji" lightbox="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png":::
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Skąd wiadomo, że te procedury działały?
 

@@ -1,6 +1,6 @@
 ---
-title: Wdrażanie programu Microsoft Defender dla punktu końcowego w pierścieniach
-description: Dowiedz się, jak wdrożyć program Microsoft Defender for Endpoint w pierścieniach
+title: Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w pierścieniach
+description: Dowiedz się, jak wdrożyć Ochrona punktu końcowego w usłudze Microsoft Defender w pierścieniach
 keywords: wdrażanie, pierścienie, ocena, pilot, niejawny program testów szybki, niejawny program testów wolny, konfiguracja, wdrożenie, faza, wdrożenie, wdrażanie, wdrażanie, konfigurowanie
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,24 +16,24 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7a9673591f4d77197390541a58169a58b04fe91
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 116960ed6e7d4a765479f0c76715e48ec8312e3b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021190"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472094"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Wdrażanie programu Microsoft Defender dla punktu końcowego w pierścieniach
+# <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w pierścieniach
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Wdrażanie programu Microsoft Defender dla punktu końcowego można wykonać przy użyciu wdrożenia opartego na pierścieniu.
+Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender można wykonać przy użyciu wdrożenia opartego na pierścieniu.
 
 Pierścienie wdrażania można stosować w następujących scenariuszach:
 
@@ -42,7 +42,7 @@ Pierścienie wdrażania można stosować w następujących scenariuszach:
 
 ## <a name="new-deployments"></a>Nowe wdrożenia
 
-![Obraz pierścieni wdrażania.](images/deployment-rings.png)
+:::image type="content" source="images/deployment-rings.png" alt-text="Pierścienie wdrożenia" lightbox="images/deployment-rings.png":::
 
 Metoda oparta na pierścieniu jest metodą identyfikowania zestawu punktów końcowych do doniania i sprawdzania, czy są spełnione określone kryteria, przed przystąpieniem do wdrażania usługi na większym zestawie urządzeń. Możesz zdefiniować kryteria wyjścia dla każdego pierścienia i upewnić się, że są one odpowiednie, zanim przejdą do następnego pierścienia.
 
@@ -78,14 +78,14 @@ Zidentyfikuj niewielką liczbę komputerów testowych w środowisku, aby do usł
 
 ### <a name="pilot"></a>Pilot
 
-Program Microsoft Defender for Endpoint obsługuje różne punkty końcowe, które możesz dodać do usługi. W tym pierścieniu określ kilka urządzeń do wdrożenia i na podstawie kryteriów wyjścia, które zdefiniowasz, przejdź do następnego pierścienia wdrożenia.
+Ochrona punktu końcowego w usłudze Microsoft Defender obsługuje wiele punktów końcowych, które można dodać do usługi. W tym pierścieniu określ kilka urządzeń do wdrożenia i na podstawie kryteriów wyjścia, które zdefiniowasz, przejdź do następnego pierścienia wdrożenia.
 
 W poniższej tabeli przedstawiono obsługiwane punkty końcowe i odpowiadające im narzędzie, za pomocą których można dodać urządzenia do usługi.
 
 | Punkt końcowy     | Narzędzie wdrażania                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Skrypt lokalny (do 10 urządzeń)](configure-endpoints-script.md) <br> UWAGA: Jeśli chcesz wdrożyć więcej niż 10 urządzeń w środowisku produkcyjnym, zamiast tego użyj metody zasady grupy lub innych obsługiwanych narzędzi wymienionych poniżej.<br>  [zasady grupy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Menedżer urządzeń przenośnych](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Skrypty VDI](configure-endpoints-vdi.md) <br> [Integracja z usługą Microsoft Defender dla chmury](configure-server-endpoints.md#integration-with-azure-defender)  |
-| **macOS**    | [Skrypt lokalny](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Zarządzanie urządzeniami przenośnymi](mac-install-with-other-mdm.md) |
+| **Windows**  |  [Skrypt lokalny (do 10 urządzeń)](configure-endpoints-script.md) <br> UWAGA: Jeśli chcesz wdrożyć więcej niż 10 urządzeń w środowisku produkcyjnym, użyj zamiast tego metody zasady grupy lub innych obsługiwanych narzędzi wymienionych poniżej.<br>  [Zasady grupy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Urządzenie Menedżer urządzeń](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Skrypty VDI](configure-endpoints-vdi.md) <br> [Integracja z Microsoft Defender dla Chmury](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **macOS**    | [Skrypt lokalny](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Urządzenia Zarządzanie urządzeniami](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Skrypt lokalny](linux-install-manually.md) <br> [Wytłaczenie](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               |
@@ -94,11 +94,11 @@ W poniższej tabeli przedstawiono obsługiwane punkty końcowe i odpowiadające 
 
 Na tym etapie możesz użyć materiałów do planowania wdrożenia, aby ułatwić Ci zaplanowanie wdrożenia.[](deployment-strategy.md)
 
-Użyj poniższego materiału, aby wybrać odpowiednią architekturę programu Microsoft Defender for Endpoint, która najlepiej będzie odpowiedni dla Twojej organizacji.
+Użyj następującego materiału, aby wybrać odpowiednią architekturę Ochrona punktu końcowego w usłudze Microsoft Defender najlepszą dla Twojej organizacji.
 
 |**Element**|**Opis**|
 |:-----|:-----|
-|[![Obraz kciuka dla strategii wdrażania programu Microsoft Defender for Endpoint.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   | Materiał architektoniczny ułatwia zaplanowanie wdrożenia z następującymi architekturami: <ul><li> Natywne w chmurze </li><li> Współzawłasnie </li><li> Lokalne</li><li>Oceny i lokalne dołączanie</li></ul>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Strategia w zakresie Ochrona punktu końcowego w usłudze Microsoft Defender wdrażania" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   | Materiał architektoniczny ułatwia zaplanowanie wdrożenia z następującymi architekturami: <ul><li> Natywne w chmurze </li><li> Współzawłasnie </li><li> Lokalne</li><li>Oceny i lokalne dołączanie</li></ul>
 
 ## <a name="existing-deployments"></a>Istniejące wdrożenia
 
@@ -120,7 +120,8 @@ W systemach macOS i Linux możesz skorzystać z kilku systemów i uruchomić go 
 
 Wybór kanału zależy od typu i częstotliwości aktualizacji oferowanych dla Twojego urządzenia. Urządzenia w wersji Beta są pierwszymi urządzeniami, które otrzymują aktualizacje i nowe funkcje, a następnie są dostępne w wersji Preview, a w końcu bieżącej.
 
-![Obraz pierścieni niejawnego programu testów.](images/insider-rings.png)
+:::image type="content" source="images/insider-rings.png" alt-text="Pierścienie niejawnego programu testów" lightbox="images/insider-rings.png":::
+
 
 W celu wyświetlania w wersji zapoznawczej nowych funkcji i wczesnych opinii zaleca się skonfigurowanie niektórych urządzeń w przedsiębiorstwie do korzystania z wersji Beta lub Preview.
 

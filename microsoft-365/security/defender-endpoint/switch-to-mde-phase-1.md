@@ -21,23 +21,23 @@ ms.topic: article
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 11/30/2021
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: aa0bd45c1765e2aa794e00e437bf08a63d1d742f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 33ad09cb87c80aecbaa72ebe9fb2b6523962498f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476736"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634432"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Przełączanie do Ochrona punktu końcowego w usłudze Microsoft Defender — etap 1. Przygotowywanie
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| ![Etap 1. Przygotowanie.](images/phase-diagrams/prepare.png#lightbox)<br/>Etap 1. Przygotowywanie | [![Etap 2. Konfigurowanie](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Etap 2. Konfigurowanie](switch-to-mde-phase-2.md) | [![Etap 3. Wniesienie](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Etap 3. Wniesienie](switch-to-mde-phase-3.md) |
+| ![Etap 1. Przygotowanie.](images/phase-diagrams/prepare.png#lightbox)<br/>Faza 1. Przygotowanie | [![Faza 2. Konfiguracja](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Faza 2. Konfiguracja](switch-to-mde-phase-2.md) | [![Faza 3. Dołączenie](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Faza 3. Dołączenie](switch-to-mde-phase-3.md) |
 |--|--|--|
 |*Jesteś tutaj!*| | |
 
@@ -63,8 +63,6 @@ Potrzebujesz pomocy? Zapoznaj się z dokumentacją swojego dostawcy rozwiązań.
 ### <a name="make-sure-your-organizations-devices-are-up-to-date"></a>Upewniaj się, że urządzenia w Twojej organizacji są aktualne
 
 Potrzebujesz pomocy przy aktualizowaniu urządzeń w Twojej organizacji? Zobacz następujące zasoby:
-
-<br/><br/>
 
 |System operacyjny|Zasób|
 |---|---|
@@ -104,7 +102,9 @@ Uprawnienia do portalu Microsoft 365 Defender można przyznać przy użyciu pods
     Jeśli Twoja organizacja wymaga metody innej Intune, wybierz jedną z następujących opcji:
 
     - [Menedżer konfiguracji](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
+
     - [Zaawansowane zasady grupy zaawansowane](/microsoft-desktop-optimization-pack/agpm)
+    
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
 3. Udzielanie dostępu do portalu Microsoft 365 Defender sieci. (Potrzebujesz pomocy? Zobacz [Zarządzanie dostępem do portalu przy użyciu RBAC](rbac.md).
@@ -113,17 +113,14 @@ Uprawnienia do portalu Microsoft 365 Defender można przyznać przy użyciu pods
 
 Aby umożliwić komunikację między urządzeniami i usługą Defender for Endpoint, skonfiguruj ustawienia serwera proxy i Internetu. W poniższej tabeli znajdują się linki do zasobów, za pomocą których można skonfigurować ustawienia serwera proxy i Internetu dla różnych systemów operacyjnych i możliwości:
 
-<br/><br/>
-
 |Możliwości|System operacyjny|Zasoby|
 |---|---|---|
 |[Wykrywanie punktu końcowego i](overview-endpoint-detection-response.md) odpowiedź (EDR)|[Windows 10](/windows/release-health/release-information) lub nowszy<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 lub nowszy](/windows-server/get-started/whats-new-in-windows-server-1803)|[Konfigurowanie ustawień serwera proxy komputera i łączności internetowej](configure-proxy-internet.md)|
 |EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 z dodatkiem SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 z dodatkiem SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Konfigurowanie ustawień serwera proxy i łączności internetowej](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
 |EDR|macOS (zobacz [Wymagania systemowe](microsoft-defender-endpoint-mac.md)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
-|[Program antywirusowy Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 lub nowszy](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Konfigurowanie i sprawdzanie poprawności Program antywirusowy Microsoft Defender połączeń sieciowych](configure-network-connections-microsoft-defender-antivirus.md)|
+|[Program antywirusowy Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) lub nowszy <br/><br/>Windows Server 2022 <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> [Windows Server 1803 lub nowszy](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Skonfiguruj i zweryfikuj połączenia sieciowe programu antywirusowego Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)|
 |Oprogramowanie antywirusowe|macOS (zobacz [Wymagania systemowe](microsoft-defender-endpoint-mac.md)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
 |Oprogramowanie antywirusowe|Linux (zobacz [Wymagania systemowe](microsoft-defender-endpoint-linux.md#system-requirements))|[Program Defender dla punktu końcowego w systemie Linux: połączenia sieciowe](microsoft-defender-endpoint-linux.md#network-connections)|
-
 
 ## <a name="next-step"></a>Następny krok
 
