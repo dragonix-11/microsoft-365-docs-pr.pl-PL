@@ -24,27 +24,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Ochrona przed wyłudzaniem informacji i innymi atakami za pomocą Microsoft 365.
-ms.openlocfilehash: b1a6b5a80b00df010d4733c1b7cb8ce1d16a95d9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 09e72221e23f4f0d1e2f4a5e7dcb81abff46dcf2
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011431"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634256"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Chroń się przed wyłudzaniem informacji i innymi atakami
 
 Microsoft 365 Business Premium zawiera wiele zabezpieczeń przed atakami, ale możesz wykonać pewne czynności samodzielnie, aby ograniczyć i zminimalizować ryzyko ataków online.
 
 - **Spam lub wiadomości-śmieci** Istnieje wiele powodów, dla których wiadomości-śmieci mogą być odbierane, a nie wszystkie wiadomości-śmieci są takie same. Możesz jednak ograniczyć to, co trafia do Ciebie, co zmniejszy ryzyko ataków, odfiltrując wiadomości-śmieci.
+
 - **Wyłudzanie informacji** Wiadomość wyłudzająca informacje wygląda na legalną, ale w przypadku próby wyłudzenia danych osobowych lub kradzieży pieniędzy.
+
 - **Fałszowanie** Oszuści mogą również użyć techniki o nazwie spoofing, która wygląda jak wiadomość e-mail otrzymana od Ciebie. 
+
 - **Złośliwe** oprogramowanie to złośliwe oprogramowanie, które można zainstalować na komputerze, zazwyczaj instalowane po kliknięciu linku lub otwarciu dokumentu z wiadomości e-mail. Istnieją różne typy złośliwego oprogramowania (na przykład oprogramowanie wymuszające okup, gdy komputer jest przejmuje), ale nie chcesz ich mieć. 
 
 ## <a name="best-practices"></a>Najważniejsze wskazówki
 
 ### <a name="reduce-spam-mail"></a>Zmniejszanie liczby wiadomości-śmieci
 
-Postępuj zgodnie z [tymi 10 poradami dotyczącymi pomagania w ograniczaniu spamu](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
+Postępuj zgodnie z [tymi 10 poradami dotyczącymi pomagania w ograniczaniu spamu](https://support.microsoft.com/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
 ### <a name="report-it"></a>Zgłoś to!
 
@@ -78,5 +81,6 @@ Pobierz tę infografikę z poradami dla Ciebie i członków zespołu kampanii:
 Dowiedz się więcej o tym, jak to zrobić:
 
 - [Zadbaj o bezpieczeństwo swoich plików i informacji dzięki Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+
 - [Zachowaj bezpieczeństwo i prywatną pracę](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6d085d2e3c1e9c1e032f468f56d67a393269fe1
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b3b69b25f74f66a5ea0d8c63600f5eab0e780edb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683060"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477242"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail
 
@@ -33,20 +33,20 @@ ms.locfileid: "63683060"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 W portalu usługi Microsoft 365 Defender <https://security.microsoft.com> pod adresem pomaga sprawdzić, jak funkcje zabezpieczeń poczty e-mail, takie jak funkcje ochrony przed spamem i złośliwym oprogramowaniem w programie Microsoft 365, chronią Twoją organizację. Jeśli masz odpowiednie [uprawnienia](#what-permissions-are-needed-to-view-these-reports), możesz wyświetlać i pobierać te raporty w sposób opisany w tym artykule.
 
 > [!NOTE]
 >
-> Niektóre raporty na stronie Raporty dotyczące współpracy **& e-mail** wymagają usługi Microsoft Defender dla Office 365. Aby uzyskać informacje na temat tych raportów, zobacz [Wyświetlanie Office 365 Defender w portalu Microsoft 365 Defender raportach](view-reports-for-mdo.md).
+> Niektóre raporty na stronie Raporty dotyczące współpracy **& wiadomości e-mail** wymagają Ochrona usługi Office 365 w usłudze Microsoft Defender. Aby uzyskać informacje na temat tych raportów, zobacz [Ochrona usługi Office 365 w usłudze Defender raportów w portalu Microsoft 365 Defender raportach](view-reports-for-mdo.md).
 >
 > Raporty dotyczące przepływu poczty e-mail znajdują się teraz w centrum Exchange administracyjnego. Aby uzyskać więcej informacji na temat tych raportów, zobacz [Raporty przepływu poczty e-mail w nowej Exchange administracyjnego](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
 ## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>Zmiany raportu zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail
 
-Raporty Exchange Online Protection (EOP) i Microsoft Defender dla programu Office 365 w portalu programu Microsoft 365 Defender, które zostały zamienione, przeniesione lub wycofane, opisano w poniższej tabeli.
+Raporty Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender w portalu Microsoft 365 Defender, które zostały zamienione, przeniesione lub wycofane, są opisane w poniższej tabeli.
 
 |Przestarzały raport i polecenia cmdlet|Nowy raport i polecenia cmdlet|Identyfikator Centrum wiadomości|Data|
 |---|---|:---:|:---:|
@@ -68,7 +68,7 @@ Raporty Exchange Online Protection (EOP) i Microsoft Defender dla programu Offic
 
 Raport **Naruszoni użytkownicy** zawiera liczbę kont użytkowników oznaczonych jako **podejrzane** lub **ograniczone w ciągu** ostatnich 7 dni. Konta w jednym z tych stanów są problematyczne, a nawet naruszone. W przypadku częstego używania tego raportu można dostrzec kolekcje, a nawet trendy w podejrzanych lub ograniczonych kontach. Aby uzyskać więcej informacji o naruszonych użytkownikach, zobacz [Odpowiadanie na naruszone konto e-mail](responding-to-a-compromised-email-account.md).
 
-![Widżet Naruszoni użytkownicy na stronie Raporty dotyczące & e-mail.](../../media/compromised-users-report-widget.png)
+:::image type="content" source="../../media/compromised-users-report-widget.png" alt-text="Widżet Naruszoni użytkownicy na stronie Raporty dotyczące współpracy & wiadomości e-mail" lightbox="../../media/compromised-users-report-widget.png":::
 
 Widok agregowania przedstawia dane z ostatnich 90 dni, a widok szczegółów zawiera dane z ostatnich 30 dni.
 
@@ -96,16 +96,24 @@ Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj*
 
 Na stronie **Naruszoni użytkownicy** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Utwórz harmonogram](#schedule-report)**, ikona ![Żądaj raportu.](../../media/m365-cc-sc-download-icon.png) **[Zażądaj raportu](#request-report)** i ikony ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
-![Widok raportu w raporcie Naruszoni użytkownicy.](../../media/compromised-users-report-activity-view.png)
+:::image type="content" source="../../media/compromised-users-report-activity-view.png" alt-text="Widok Raportu w raporcie Naruszoni użytkownicy" lightbox="../../media/compromised-users-report-activity-view.png":::
 
 ## <a name="exchange-transport-rule-report"></a>Exchange reguł transportu
 
+Raport **Exchange reguł transportu** pokazuje wpływ reguł przepływu poczty e-mail (nazywanych również regułami transportu) na wiadomości przychodzące i wychodzące w organizacji.
+
+Aby wyświetlić raport w portalu Microsoft 365 Defender,  \>  \> przejdź do tematu Raporty wiadomości e-mail i & e-mail & **raportów współpracy**. Na stronie **Raporty &-mail znajdź** regułę **Exchange transportu**, a następnie kliknij pozycję **Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz program <https://security.microsoft.com/reports/ETRRuleReport>.
+
+:::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="Widżet Exchange reguł transportu na stronie Raporty o & poczty e-mail" lightbox="../../media/transport-rule-report-widget.png":::
+
+Na stronie **Exchange raport o regułach** transportu dostępne wykresy i dane opisano w poniższych sekcjach.
 > [!NOTE]
 > Raport **Exchange transportu jest** teraz dostępny w EAC. Aby uzyskać więcej informacji, [Exchange raport reguł transportu w nowej Wiadomości e-mail](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
+
 ### <a name="chart-breakdown-by-direction"></a>Podział wykresu według kierunku
 
-![Widok kierunku dla Exchange reguł transportu w raporcie Exchange transportu.](../../media/transport-rule-report-etr-direction-view.png)
+:::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="Widok Kierunek dla reguł Exchange transportu w raporcie reguły transportu Exchange transportu" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
 
 Jeśli wybierzesz **pozycję Podział wykresu według kierunku**, będą dostępne następujące wykresy:
 
@@ -135,7 +143,7 @@ Na stronie **Exchange reguły** transportu ikona ![Utwórz harmonogram.](../../m
 
 ### <a name="chart-breakdown-by-severity"></a>Podział wykresu według ważności
 
-![Widok ważności dla Exchange transportu w raporcie reguły Exchange transportu.](../../media/transport-rule-report-etr-severity-view.png)
+:::image type="content" source="../../media/transport-rule-report-etr-severity-view.png" alt-text="Widok Ważności dla reguł Exchange transportu w raporcie reguły transportu Exchange transportu" lightbox="../../media/transport-rule-report-etr-severity-view.png":::
 
 Jeśli wybierzesz **pozycję Zestawienie wykresu według ważności**, dostępne są następujące wykresy:
 
@@ -175,11 +183,11 @@ Raport **o stanie przepływu** poczty jest inteligentnym raportem, który przeds
 
 Aby wyświetlić raport w portalu Microsoft 365 Defender pod <https://security.microsoft.com>adresem ,  \> przejdź do tematu Raporty wiadomości e-mail i & **e-mail** \> & **do współpracy**. Na stronie **Raporty &-mail znajdź** pozycję Podsumowanie **stanu przepływu** poczty, a następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz program <https://security.microsoft.com/reports/mailflowStatusReport>.
 
-![Widżet podsumowania stanu przepływu poczty na stronie Raporty o & poczty e-mail.](../../media/mail-flow-status-report-widget.png)
+:::image type="content" source="../../media/mail-flow-status-report-widget.png" alt-text="Widżet podsumowania stanu przepływu poczty na stronie Raporty o & poczty e-mail" lightbox="../../media/mail-flow-status-report-widget.png":::
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>Widok typu dla raportu o stanie przepływu poczty
 
-![Widok typu w raporcie o stanie przepływu poczty.](../../media/mail-flow-status-report-type-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-type-view.png" alt-text="Widok Typ w raporcie o stanie przepływu poczty" lightbox="../../media/mail-flow-status-report-type-view.png":::
 
 Na stronie **Raport o stanie przepływu** **poczty domyślnie wybrana** jest karta Typ. Wykres przedstawia następujące informacje dotyczące określonego zakresu dat:
 
@@ -188,7 +196,7 @@ Na stronie **Raport o stanie przepływu** **poczty domyślnie wybrana** jest kar
 - **Złośliwe oprogramowanie**: Wiadomości e-mail, które są blokowane jako złośliwe oprogramowanie przez różne filtry.
 - **Wiadomość e-mail wyłudzająca** informacje: Wiadomość e-mail zablokowana przez różne filtry jako próby wyłudzenia informacji.
 - **Spam**: Wiadomości e-mail, które są blokowane jako spam przez różne filtry.
-- **Ochrona krawędzi**: Poczta e-mail odrzucona na krawędzi/obwodzie przed rozpoczęciem oceny przez usługę EOP lub Defender dla systemu Office 365.
+- **Ochrona krawędzi**: Poczta e-mail odrzucona na krawędzi/obwodzie przed rozpoczęciem oceny przez usługę EOP lub Ochrona usługi Office 365 w usłudze Defender.
 - **Reguły wiadomości**: Wiadomości e-mail, na które zostały wysłane reguły przepływu poczty (nazywane także regułami transportu).
 
 Tabela szczegółów pod wykresem zawiera następujące informacje:
@@ -211,7 +219,7 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
   - **Spam**
   - **Ochrona krawędzi**
   - **Reguły wiadomości**
-  - **Wiadomość e-mail wyłudzająca**
+  - **Poczta e-mail wyłudzająca informacje**
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
@@ -226,7 +234,7 @@ Na stronie **Raport o stanie przepływu** poczty e-mail ikona ![Utwórz harmonog
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Widok kierunku dla raportu o stanie przepływu poczty
 
-![Widok kierunku w raporcie o stanie przepływu poczty.](../../media/mail-flow-status-report-direction-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-direction-view.png" alt-text="Widok Kierunek w raporcie o stanie przepływu poczty" lightbox="../../media/mail-flow-status-report-direction-view.png":::
 
 Jeśli klikniesz **kartę Kierunek** , wykres przedstawia następujące informacje dla określonego zakresu dat:
 
@@ -243,7 +251,7 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
   - **Spam**
   - **Ochrona krawędzi**
   - **Reguły wiadomości**
-  - **Wiadomość e-mail wyłudzająca**
+  - **Poczta e-mail wyłudzająca informacje**
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
@@ -260,11 +268,11 @@ Na stronie **Raport o stanie przepływu** poczty e-mail ikona ![Utwórz harmonog
 
 W **widoku Mailflow można** sprawdzić, jak funkcje ochrony przed zagrożeniami w wiadomościach e-mail firmy Microsoft filtrowały przychodzące i wychodzące wiadomości e-mail w organizacji. W tym widoku diagram przepływu poziomego (nazywany diagramem _Sankey_ ) zawiera szczegółowe informacje na temat łącznej liczby wiadomości e-mail oraz tego, jak skonfigurowane funkcje ochrony przed zagrożeniami, takie jak ochrona brzegowa, ochrona przed złośliwym oprogramowaniem, ochrona przed wyłudzaniem informacji, ochrona przed spamem i fałszowanie wpływają na tę liczbę.
 
-![Widok przepływu poczty w raporcie o stanie przepływu poczty.](../../media/mail-flow-status-report-mailflow-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view.png" alt-text="Widok Przepływ poczty w raporcie o stanie przepływu poczty" lightbox="../../media/mail-flow-status-report-mailflow-view.png":::
 
 Widok zagregowany i widok tabeli szczegółów umożliwiają filtrowanie przez 90 dni.
 
-Informacje na diagramie są kodowane kolorami przez **usługę EOP** lub **Defender dla Office 365** technologii.
+Informacje na diagramie są kodowane kolorami przez **usługę EOP** lub **Ochrona usługi Office 365 w usłudze Defender** technologii.
 
 Diagram jest zorganizowany w następujące poziome paski:
 
@@ -277,8 +285,8 @@ Diagram jest zorganizowany w następujące poziome paski:
   - **Blok złośliwego** oprogramowania: Wiadomości zidentyfikowane jako złośliwe oprogramowanie za pomocą różnych filtrów.<sup>\*</sup>
   - **Blok phish**: wiadomości zidentyfikowane jako wyłudzy podczas przetwarzania przy pomocą różnych filtrów.<sup>\*</sup>
   - **Blok spamu**: Wiadomości zidentyfikowane jako spam podczas przetwarzania przy pomocą różnych filtrów.<sup>\*</sup>
-  - **Blok personifikacji**: Komunikaty wykryte jako personifikacja użytkownika lub personifikacja domeny w uchcie Defender Office 365.<sup>\*</sup>
-  - **Blok detonacji**: Wiadomości wykrywane podczas detonacji pliku lub adresu URL przez Sejf zasady załączników lub Sejf w programie Defender for Office 365.<sup>\*</sup>
+  - **Blok personifikacji**: Komunikaty wykryte jako personifikacja użytkownika lub personifikacja domeny w Ochrona usługi Office 365 w usłudze Defender.<sup>\*</sup>
+  - **Blok detonacji**: Wiadomości wykryte podczas detonacji pliku lub adresu URL przez Sejf zasady załączników lub Sejf linków w programie Ochrona usługi Office 365 w usłudze Defender.<sup>\*</sup>
   - **Usunięto ZAP**: Wiadomości usuwane przez automatyczne przeczyszczanie zerowej godziny (ZAP).<sup>\*</sup>
   - **Dostarczono**: Wiadomości dostarczane do użytkowników z powodu ich zezwalania.<sup>\*</sup>
 
@@ -286,7 +294,7 @@ Jeśli najedziesz kursorem na poziomy pasek na diagramie, zobaczysz liczbę powi
 
 <sup>\*</sup> Jeśli klikniesz ten element, diagram zostanie rozwinięty w celu pokazania dodatkowych szczegółów. Aby uzyskać opis każdego elementu w rozwiniętych węzłach, zobacz [Technologie wykrywania](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
 
-![Szczegóły bloku wyłudzania informacji w widoku Przepływ poczty w raporcie o stanie przepływu poczty.](../../media/mail-flow-status-report-mailflow-view-details.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view-details.png" alt-text="Szczegóły bloku wyłudzania informacji w widoku Przepływ poczty w raporcie o stanie przepływu poczty" lightbox="../../media/mail-flow-status-report-mailflow-view-details.png":::
 
 Tabela szczegółów pod diagramem zawiera następujące informacje:
 
@@ -312,7 +320,7 @@ Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj*
 
 Na stronie Raport **o stanie przepływu** poczty możesz kliknąć pozycję Pokaż  trendy, aby wyświetlić wykresy trendów w wyświetlonym **wysuwanych** trendach przepływu poczty.
 
-![Wysuw trendów przepływu poczty w widoku Przepływ poczty w raporcie o stanie przepływu poczty.](../../media/mail-flow-status-report-mailflow-view-show-trends.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view-show-trends.png" alt-text="Wysuw trendów przepływu poczty w widoku Przepływ poczty w raporcie o stanie przepływu poczty" lightbox="../../media/mail-flow-status-report-mailflow-view-show-trends.png":::
 
 Na stronie **Raport o stanie przepływu** poczty e-mail ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Przycisk** Eksportuj jest dostępny.
 
@@ -323,7 +331,7 @@ Na stronie **Raport o stanie przepływu** poczty e-mail ikona ![Eksportuj.](../.
 
 ## <a name="mail-latency-report"></a>Raport opóźnień poczty
 
-Raport **Opóźnienie poczty w uchcie** programu Defender Office 365 zawiera informacje dotyczące opóźnień dostarczenia i detonacji poczty, które wystąpiły w Twojej organizacji. Aby uzyskać więcej informacji, zobacz [Raport o opóźnieniach poczty](view-reports-for-mdo.md#mail-latency-report).
+Raport **Opóźnienie poczty w programie** Ochrona usługi Office 365 w usłudze Defender zawiera informacje o opóźnieniu dostarczenia i detonacji poczty, które wystąpiły w Twojej organizacji. Aby uzyskać więcej informacji, zobacz [Raport o opóźnieniach poczty](view-reports-for-mdo.md#mail-latency-report).
 
 ## <a name="spam-detections-report"></a>Raport Wykrywanie spamu
 
@@ -338,7 +346,7 @@ Widok zagregowany raportu umożliwia filtrowanie przez 90 dni, natomiast widok s
 
 Aby wyświetlić raport w portalu Microsoft 365 Defender,  \>  \> przejdź do tematu Raporty wiadomości e-mail i & e-mail & **raportów współpracy**. Na stronie **Raporty &-mail** znajdź pozycję Wykrywanie **fałszu** , a następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz program <https://security.microsoft.com/reports/SpoofMailReport>.
 
-![Widżet Wykrywanie fałszu na stronie Raporty o & e-mail.](../../media/spoof-detections-widget.png)
+:::image type="content" source="../../media/spoof-detections-widget.png" alt-text="Widżet Wykrywanie fałszu na stronie Raporty o & e-mail" lightbox="../../media/spoof-detections-widget.png":::
 
 Na wykresie przedstawiono następujące informacje:
 
@@ -361,7 +369,7 @@ Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozyc
   - **Inne**
 - **Spoof type**: **Internal** and **External**
 
-![Spoof mail report page in the Microsoft 365 Defender portal.](../../media/spoof-detections-report-page.png)
+:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="Strona raportu Fałsz w portalu Microsoft 365 Defender-mail" lightbox="../../media/spoof-detections-report-page.png":::
 
 Tabela szczegółów pod wykresem zawiera następujące informacje:
 
@@ -386,7 +394,7 @@ Raport **Przesyłanie zawiera** informacje o elementach zgłoszonych firmie Micr
 
 Aby wyświetlić raport w portalu Microsoft 365 Defender pod <https://security.microsoft.com>adresem ,  \> przejdź do tematu Raporty wiadomości e-mail i & **e-mail** \> & **do współpracy**. Na stronie **Raporty &-mail znajdź** pozycję **Materiały** , a następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz program <https://security.microsoft.com/adminSubmissionReport>. Aby przejść do [przesyłania przez administratora w portalu Microsoft 365 Defender,](admin-submission.md) kliknij pozycję **Przejdź do przesyłania**. Administratorzy będą mogli wyświetlać raport z ostatnich 30 dni.
 
-![Widżet Przesyłanie na stronie Wiadomości e-mail & do współpracy.](../../media/submissions-report-widget.png)
+:::image type="content" source="../../media/submissions-report-widget.png" alt-text="Widżet Przesyłanie na stronie Raporty o współpracy & e-mail" lightbox="../../media/submissions-report-widget.png":::
 
 Na wykresie przedstawiono następujące informacje:
 
@@ -418,22 +426,22 @@ Tabela szczegółów pod wykresem zawiera te same informacje i zawiera te same o
 
 Na **stronie Materiały** **[dostępny jest przycisk](#export-report)** Eksportuj.
 
-![Strona raportu Przesyłanie w Microsoft 365 Defender sieci Web.](../../media/submissions-report-page.png)
+:::image type="content" source="../../media/submissions-report-page.png" alt-text="Strona raportu Przesyłanie w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/submissions-report-page.png":::
 
 ## <a name="threat-protection-status-report"></a>Raport o stanie ochrony przed zagrożeniami
 
-Raport **o stanie ochrony przed** zagrożeniami jest dostępny zarówno w programie EOP, jak i Defender dla systemu Office 365, jednak raporty zawierają inne dane. Na przykład klienci usługi EOP mogą wyświetlać informacje o złośliwym oprogramowaniu wykrytym w wiadomościach e-mail, ale nie mogą wyświetlać informacji o złośliwych plikach wykrytych przez załączniki usługi [Sejf dla SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Raport **o stanie ochrony przed** zagrożeniami jest dostępny zarówno w UEOP, jak i w programie Ochrona usługi Office 365 w usłudze Defender, jednak raporty zawierają inne dane. Na przykład klienci usługi EOP mogą wyświetlać informacje o złośliwym oprogramowaniu wykrytym w wiadomościach e-mail, ale nie mogą wyświetlać informacji o złośliwych plikach wykrytych przez załączniki usługi [Sejf dla SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-Raport zawiera liczbę wiadomości [e-mail](zero-hour-auto-purge.md) ze złośliwą zawartością, takimi jak pliki lub adresy URL witryn internetowych zablokowane przez aparat ochrony przed złośliwym oprogramowaniem, funkcja automatycznego przeczyszczania (ZAP) o zerowej godzinie oraz funkcja programu Defender dla usługi [Office 365](safe-links.md), takie jak linki programu Sejf[,](safe-attachments.md) załączniki Sejf i funkcje ochrony przed personifikacjami w zasadach ochrony przed wyłudzaniem [informacji.](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Za pomocą tych informacji można identyfikować trendy lub określać, czy zasady organizacji wymagają korekty.
+Raport zawiera liczbę wiadomości [e-mail](zero-hour-auto-purge.md) ze złośliwą zawartością, na przykład pliki lub adresy URL witryn internetowych zablokowane przez aparat ochrony przed złośliwym oprogramowaniem, automatyczne przeczyszczanie (ZAP) o zerowej godzinie oraz funkcje Ochrona usługi Office 365 w usłudze Defender, takie jak linki programu [Sejf](safe-links.md)[,](safe-attachments.md) [załączniki Sejf i funkcje ochrony przed personifikacji w zasadach ochrony przed wyłudzaniem informacji](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Za pomocą tych informacji można identyfikować trendy lub określać, czy zasady organizacji wymagają korekty.
 
 **Uwaga**: Ważne jest, aby zrozumieć, że jeśli wiadomość zostanie wysłana do pięciu adresatów, będziemy liczą ją jako pięć różnych wiadomości, a nie jedną wiadomość.
 
 Aby wyświetlić raport w portalu Microsoft 365 Defender,  \>  \> przejdź do tematu Raporty wiadomości e-mail i & e-mail & **raportów współpracy**. Na stronie **Raporty o & wiadomości e-mail** znajdź pozycję Stan **ochrony przed zagrożeniami** , a następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz jeden z następujących adresów URL:
 
-- Defender dla Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
+- Ochrona usługi Office 365 w usłudze Defender:<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
 
-![Widżet stanu ochrony przed zagrożeniami na stronie Raporty o & e-mail.](../../media/threat-protection-status-report-widget.png)
+:::image type="content" source="../../media/threat-protection-status-report-widget.png" alt-text="Widżet stanu ochrony przed zagrożeniami na stronie Raporty o & e-mail" lightbox="../../media/threat-protection-status-report-widget.png":::
 
 Domyślnie wykres przedstawia dane z ostatnich 7 dni. Jeśli klikniesz **pozycję Filtr** na  stronie Raport o stanie ochrony przed zagrożeniami, możesz wybrać przedział dat 90-dniowy (subskrypcje wersji próbnej mogą być ograniczone do 30 dni). Tabela szczegółów umożliwia filtrowanie przez 30 dni.
 
@@ -441,7 +449,7 @@ Dostępne widoki opisano w poniższych sekcjach.
 
 ### <a name="view-data-by-overview"></a>Wyświetlanie danych według o omówienie
 
-![Widok przeglądu w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-overview-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-overview-view.png" alt-text="Widok Przegląd w raporcie o stanie ochrony przed zagrożeniami" lightbox="../../media/threat-protection-status-report-overview-view.png":::
 
 Na **wykresie w widoku Wyświetl** dane według podglądu są wyświetlane następujące informacje dotyczące wykrywania:
 
@@ -460,7 +468,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
   - **Wyłudzy wiadomości e-mail**
   - **Wysyłanie wiadomości e-mail ze spamem**
   - **Złośliwe oprogramowanie do zawartości**
-- **Chronione przez**: **MDO** (Defender for Office 365) i **EOP**.
+- **Chronione przez**: **MDO** (Ochrona usługi Office 365 w usłudze Defender) i **EOP**.
 - **Tag**: **Wszyscy lub** określony tag użytkownika (w tym konta priorytetów). Aby uzyskać więcej informacji o tagach użytkowników, zobacz [Tagi użytkowników](user-tags.md).
 - **Kierunek**:
   - **Wszystkie**
@@ -480,14 +488,14 @@ Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj*
 
 ### <a name="view-data-by-email--phish-and-chart-breakdown-by-detection-technology"></a>Wyświetlanie danych według wiadomości e-mail \> phish i podziału wykresu według technologii wykrywania
 
-![Widok technologii wykrywania dla wiadomości e-mail wyłudzających informacje w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-detection-tech-view.png" alt-text="Widok Technologii wykrywania dla wiadomości e-mail wyłudzających informacje w raporcie o stanie ochrony przed zagrożeniami" lightbox="../../media/threat-protection-status-report-phishing-detection-tech-view.png":::
 
 > [!NOTE]
 > Począwszy od maja 2021 r., wykrywanie wyłudzania informacji w wiadomościach e-mail zostało zaktualizowane w celu dołączyć załączniki **wiadomości zawierające adresy** URL służące do wyłudzania informacji. Ta zmiana może spowodować zmianę **\>** niektórych woluminów wykrywania na zewnątrz widoku Wyświetlanie danych przez złośliwe oprogramowanie w wiadomościach e-mail i wyświetlanie danych **według wiadomości e-mail \> phish**. Oznacza to, że załączniki wiadomości z adresami URL do wyłudzania informacji, które zazwyczaj były identyfikowane jako złośliwe oprogramowanie, mogą zostać zidentyfikowane jako próby wyłudzenia informacji.
 
 Na **wykresie w widokach Wyświetlanie \>** danych według wiadomości e-mail i Phish oraz **Chart według** technologii wykrywania są wyświetlane następujące informacje:
 
-- **Złośliwy reputacja adresu**<sup>\*</sup> URL: Reputacja złośliwego adresu URL generowana przez usługę Defender dla Office 365 danych w innych Microsoft 365 klientach.
+- **Złośliwy reputacja adresu**<sup>\*</sup> URL: złośliwy adres URL wygenerowany na podstawie Ochrona usługi Office 365 w usłudze Defender danych w innych Microsoft 365 klientach.
 - **Filtr zaawansowany**: Sygnały wyłudzania informacji na podstawie uczenia maszynowego.
 - **Filtr ogólny**: Sygnały wyłudzania informacji na podstawie reguł analityka.
 - **Spoof intra-org**: Sender is trying to spoof the recipient domain.
@@ -506,7 +514,7 @@ Na **wykresie w widokach Wyświetlanie \>** danych według wiadomości e-mail i 
 - **Reputacja detonacji pliku**<sup>\*</sup>
 - **Kampania**<sup>\*</sup>
 
-<sup>\*</sup>Tylko Office 365 Defender
+<sup>\*</sup>Ochrona usługi Office 365 w usłudze Defender tylko
 
 W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 
@@ -523,7 +531,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 - **Data rozpoczęcia (UTC)** **i** **data zakończenia**
 - **Wykrywanie**: te same wartości co na wykresie.
-- **Chroniony przez**: **MDO** (Defender for Office 365) lub **EOP**
+- **Chroniony przez**: **MDO** (Ochrona usługi Office 365 w usłudze Defender) lub **EOP**
 - **Kierunek**:
   - **Wszystkie**
   - **Przychodzący**
@@ -547,7 +555,7 @@ Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](..
 
 ### <a name="view-data-by-email--spam-and-chart-breakdown-by-detection-technology"></a>Wyświetlanie danych według wiadomości e-mail \> ze spamem i zestawieniem wykresów według technologii wykrywania
 
-![Widok technologii wykrywania spamu w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-spam-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-spam-detection-tech-view.png" alt-text="Widok Technologii wykrywania dla spamu w raporcie o stanie ochrony przed zagrożeniami" lightbox="../../media/threat-protection-status-report-spam-detection-tech-view.png":::
 
 Na wykresie **w widoku Wyświetlanie danych według wiadomości e-mail \> ze spamem** i wykresu według technologii wykrywania są wyświetlane następujące informacje:
 
@@ -598,7 +606,7 @@ Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](..
 
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>Wyświetlanie danych według złośliwego oprogramowania poczty \> e-mail i podziału wykresów według technologii wykrywania
 
-![Widok technologii wykrywania złośliwego oprogramowania w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-malware-detection-tech-view.png" alt-text="Widok technologii wykrywania złośliwego oprogramowania w raporcie o stanie ochrony przed zagrożeniami" lightbox="../../media/threat-protection-status-report-malware-detection-tech-view.png":::
 
 > [!NOTE]
 > Począwszy od maja 2021 r., wykrywanie złośliwego oprogramowania w wiadomościach e-mail zostało zaktualizowane, aby uwzględnić szkodliwe **adresy URL** w załącznikach wiadomości. Ta zmiana może spowodować przesunięcie **\>** części głośności wykrywania z widoku Wyświetlanie danych przy poczty e-mail Phish i wyświetlanie danych **przez złośliwe oprogramowanie pocztą e-mail\>**. Innymi słowy, szkodliwe adresy URL w załącznikach wiadomości, które były zazwyczaj identyfikowane jako próby wyłudzenia informacji, mogą zostać zidentyfikowane jako złośliwe oprogramowanie.
@@ -606,7 +614,7 @@ Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](..
 Na wykresie **przedstawiono następujące informacje w \>** widokach  Wyświetlanie danych według złośliwego oprogramowania poczty e-mail i wykresu według technologii wykrywania:
 
 - **Detonacja plików**<sup>\*</sup>: Wykrywanie przy Sejf załączników.
-- **Reputacja detonacji plików**<sup>\*</sup>: Cała złośliwa reputacja pliku generowana przez program Defender Office 365 detonations.
+- **Reputacja detonacji plików**<sup>\*</sup>: Cała złośliwa reputacja pliku generowana Ochrona usługi Office 365 w usłudze Defender detonations.
 - **Reputacja pliku**
 - **Aparat ochrony przed złośliwym oprogramowaniem**<sup>\*</sup>: Wykrywanie z aparatów chroniących przed złośliwym oprogramowaniem.
 - **Blok typu pliku zasad ochrony przed złośliwym** oprogramowaniem: Są to wiadomości e-mail odfiltrowane ze względu na typ złośliwego pliku zidentyfikowanego w wiadomości.
@@ -630,7 +638,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 - **Data rozpoczęcia (UTC)** **i** **data zakończenia**
 - **Wykrywanie**: te same wartości co na wykresie.
-- **Chroniony przez**: **MDO** (Defender for Office 365) lub **EOP**
+- **Chroniony przez**: **MDO** (Ochrona usługi Office 365 w usłudze Defender) lub **EOP**
 - **Kierunek**:
   - **Wszystkie**
   - **Przychodzący**
@@ -654,7 +662,7 @@ Na stronie **Stan ochrony przed tym stanem** kliknij ikonę ![Utwórz harmonogra
 
 ### <a name="chart-breakdown-by-policy-type"></a>Podział wykresu według typu zasad
 
-![Widok typu zasad dla wiadomości e-mail wyłudzających informacje, wiadomości e-mail przed spamem lub wiadomości e-mail z złośliwym oprogramowaniem w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-policy-type-view.png" alt-text="Widok typu zasad dla wiadomości e-mail wyłudzających informacje, wiadomości e-mail ze spamem lub wiadomości e-mail z złośliwym oprogramowaniem w raporcie o stanie ochrony przed zagrożeniami" lightbox="../../media/threat-protection-status-report-phishing-policy-type-view.png":::
 
 W **widokach \>** Wyświetlanie danych według wiadomości e-mail i Phish, **Wyświetlanie danych według wiadomości e-mail ze spamem \>** lub Wyświetlanie danych w widokach złośliwego oprogramowania w wiadomościach e-mail wybierz pozycję Podział wykresu według **typu** zasad, aby wyświetlić na wykresie następujące informacje: **\>**
 
@@ -680,7 +688,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 - **Data rozpoczęcia (UTC)** **i** **data zakończenia**
 - **Wykrywanie**:
-  - **Złośliwy reputacja adresu**<sup>\*</sup> URL: Reputacja złośliwego adresu URL generowana przez usługę Defender dla Office 365 danych w innych Microsoft 365 klientach.
+  - **Złośliwy reputacja adresu**<sup>\*</sup> URL: złośliwy adres URL wygenerowany na podstawie Ochrona usługi Office 365 w usłudze Defender danych w innych Microsoft 365 klientach.
   - **Filtr zaawansowany**: Sygnały wyłudzania informacji na podstawie uczenia maszynowego.
   - **Filtr ogólny**: Sygnały wyłudzania informacji na podstawie reguł analityka.
   - **Spoof intra-org**: Sender is trying to spoof the recipient domain.
@@ -698,7 +706,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
   - **Detonacja pliku**<sup>\*</sup>
   - **Reputacja detonacji pliku**<sup>\*</sup>
   - **Kampania**<sup>\*</sup>
-- **Chroniony przez**: **MDO** (Defender for Office 365) lub **EOP**
+- **Chroniony przez**: **MDO** (Ochrona usługi Office 365 w usłudze Defender) lub **EOP**
 - **Kierunek**:
   - **Wszystkie**
   - **Przychodzący**
@@ -716,7 +724,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 - **Nazwa zasad (tylko widok tabeli szczegółów)**: **Wszystkie** lub określone zasady.
 - **Adresaci**
 
-<sup>\*</sup>Tylko Office 365 Defender
+<sup>\*</sup>Ochrona usługi Office 365 w usłudze Defender tylko
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
@@ -724,7 +732,7 @@ Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](..
 
 ### <a name="chart-breakdown-by-delivery-status"></a>Podział wykresu według stanu dostawy
 
-![Widok stanu dostarczenia wiadomości e-mail służącej do wyłudzania informacji i wiadomości e-mail z złośliwym oprogramowaniem w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-delivery-status-view.png" alt-text="Widok Stan dostarczenia wiadomości e-mail wyłudzających informacje i wiadomości e-mail z złośliwym oprogramowaniem w raporcie o stanie ochrony przed zagrożeniami" lightbox="../../media/threat-protection-status-report-phishing-delivery-status-view.png":::
 
 W **widokach \>** Wyświetlanie danych według wiadomości e-mail Phish, **Wyświetlanie danych według wiadomości e-mail ze spamem \>** lub Wyświetlanie danych za pomocą widoków złośliwego oprogramowania e-mail wybierz pozycję Podział wykresu według **stanu** dostarczenia pokazuje na wykresie następujące informacje: **\>**
 
@@ -753,7 +761,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 
 - **Data rozpoczęcia (UTC)** **i** **data zakończenia**
 - **Wykrywanie**:
-  - **Złośliwy reputacja adresu**<sup>\*</sup> URL: Reputacja złośliwego adresu URL generowana przez usługę Defender dla Office 365 danych w innych Microsoft 365 klientach.
+  - **Złośliwy reputacja adresu**<sup>\*</sup> URL: złośliwy adres URL wygenerowany na podstawie Ochrona usługi Office 365 w usłudze Defender danych w innych Microsoft 365 klientach.
   - **Filtr zaawansowany**: Sygnały wyłudzania informacji na podstawie uczenia maszynowego.
   - **Filtr ogólny**: Sygnały wyłudzania informacji na podstawie reguł analityka.
   - **Spoof intra-org**: Sender is trying to spoof the recipient domain.
@@ -771,7 +779,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
   - **Detonacja pliku**<sup>\*</sup>
   - **Reputacja detonacji pliku**<sup>\*</sup>
   - **Kampania**<sup>\*</sup>
-- **Chroniony przez**: **MDO** (Defender for Office 365) lub **EOP**
+- **Chroniony przez**: **MDO** (Ochrona usługi Office 365 w usłudze Defender) lub **EOP**
 - **Kierunek**:
   - **Wszystkie**
   - **Przychodzący**
@@ -789,7 +797,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 - **Nazwa zasad (tylko widok tabeli szczegółów)**: **Wszystkie** lub określone zasady.
 - **Adresaci**
 
-<sup>\*</sup>Tylko Office 365 Defender
+<sup>\*</sup>Ochrona usługi Office 365 w usłudze Defender tylko
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
@@ -797,9 +805,9 @@ Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](..
 
 ### <a name="view-data-by-content--malware"></a>Wyświetlanie danych według złośliwego oprogramowania do wyświetlania \> zawartości
 
-![Widok złośliwego oprogramowania w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-content-malware-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-content-malware-view.png" alt-text="Widok Złośliwe oprogramowanie zawartości w raporcie o stanie ochrony przed zagrożeniami" lightbox="../../media/threat-protection-status-report-content-malware-view.png":::
 
-W widoku **Wyświetl dane według złośliwego \> oprogramowania** zawartości na wykresie dla programu Microsoft Defender dla Office 365 organizacji:
+W widoku **Wyświetl dane według złośliwego \> oprogramowania** zawartości na wykresie dla użytkowników Ochrona usługi Office 365 w usłudze Microsoft Defender organizacji:
 
 - **Aparat ochrony przed złośliwym oprogramowaniem**: złośliwe pliki wykryte w SharePoint, OneDrive i Microsoft Teams przez wbudowane wykrywanie wirusów w [Microsoft 365](virus-detection-in-spo.md).
 - **Detonacja MDO**: złośliwe pliki wykrywane przez użytkowników [Sejf załączników do SharePoint, OneDrive i innych Microsoft Teams](mdo-for-spo-odb-and-teams.md).
@@ -826,7 +834,7 @@ Na stronie **Stan ochrony przed zagrożeniami** ikona ![Utwórz harmonogram.](..
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-reason"></a>Wyświetlanie danych według zastępowania systemu i podziału wykresu według przyczyny
 
-![Zastępowanie wiadomości i Podział wykresu według przyczyny w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
+:::image type="content" source="../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png" alt-text="Widok Zastępowanie wiadomości i Wykres według przyczyny w raporcie o stanie ochrony przed zagrożeniami" lightbox="../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png":::
 
 W widoku **Wyświetl dane według zastępowania systemu** i **Podział** wykresu według przyczyny na wykresie są wyświetlane następujące informacje o przyczynach:
 
@@ -872,7 +880,7 @@ Na stronie **Stan ochrony przed zagrożeniami** kliknij ikonę ![Eksportuj.](../
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-delivery-location"></a>Wyświetlanie danych według zastępowania systemu i podziału wykresu według lokalizacji dostarczania
 
-![Zastępowanie wiadomości i podział wykresu według widoku Lokalizacja dostarczania w raporcie o stanie ochrony przed zagrożeniami.](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
+:::image type="content" source="../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png" alt-text="Widok Zastępowanie wiadomości i Wykres według lokalizacji dostarczania w raporcie o stanie ochrony przed zagrożeniami" lightbox="../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png":::
 
 Na wykresie **w widokach** Wyświetlanie danych według zastępowania systemu i **Podział** wykresu według lokalizacji dostarczania są wyświetlane następujące informacje o przyczynach:
 
@@ -921,7 +929,7 @@ Jeśli klikniesz **pozycję Filtruj**, dostępne są następujące filtry:
 - **Nazwa zasad (tylko widok tabeli szczegółów)**: **Wszystkie**
 - **Adresaci**
 
-<sup>\*</sup>Tylko Office 365 Defender
+<sup>\*</sup>Ochrona usługi Office 365 w usłudze Defender tylko
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
@@ -933,7 +941,7 @@ W **raporcie Najważniejsze złośliwe oprogramowanie** są raporty o różnych 
 
 Aby wyświetlić raport w portalu Microsoft 365 Defender,  \>  \> przejdź do tematu Raporty wiadomości e-mail i & e-mail & **raportów współpracy**. Na stronie **Raporty &-mail znajdź** najlepsze złośliwe **oprogramowanie** , a następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz program <https://security.microsoft.com/reports/TopMalware>.
 
-![Top malware widget on the Email & collaboration reports.](../../media/top-malware-report-widget.png)
+:::image type="content" source="../../media/top-malware-report-widget.png" alt-text="The Top malware widget on the Email & collaboration reports page" lightbox="../../media/top-malware-report-widget.png":::
 
 Po umieszczeniu wskaźnika nad wycinkiem na wykresie kołowym możesz zobaczyć nazwę rodzaju złośliwego oprogramowania oraz informacje o tym, ile wiadomości zostało wykrytych jako złośliwe oprogramowanie.
 
@@ -946,20 +954,20 @@ Jeśli klikniesz **pozycję Filtr**, możesz określić zakres dat w **datach Ro
 
 Na stronie **Najlepsze złośliwe oprogramowanie** ikona ![Utwórz harmonogram.](../../media/m365-cc-sc-create-icon.png) **[Ikona Utwórz harmonogram](#schedule-report)** i ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Dostępne](#export-report)** są przyciski eksportu.
 
-![Widok najlepszego raportu złośliwego oprogramowania.](../../media/top-malware-report-view.png)
+:::image type="content" source="../../media/top-malware-report-view.png" alt-text="Widok raportu najlepszego złośliwego oprogramowania" lightbox="../../media/top-malware-report-view.png":::
 
 ## <a name="top-senders-and-recipients-report"></a>Raport Najgorętsi nadawcy i adresaci
 
-**Raporty Najgorętsi** nadawcy i adresaci są dostępne zarówno w usługach EOP, jak i Defender dla usługi Office 365, jednak raporty zawierają inne dane. Na przykład klienci usługi EOP mogą wyświetlać informacje na temat najgorętszego złośliwego oprogramowania, spamu i wyłudzania informacji (fałszowania), ale nie mogą wyświetlać informacji o złośliwym oprogramowaniu wykrytym przez załączniki usługi [Sejf](safe-attachments.md) lub wyłudzanie informacji wykryte przez ochronę przed personifikacjami[.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+Raport **Najgorętsi** nadawcy i adresaci jest dostępny zarówno w usługach EOP, Ochrona usługi Office 365 w usłudze Defender, ale raporty zawierają inne dane. Na przykład klienci usługi EOP mogą wyświetlać informacje na temat najgorętszego złośliwego oprogramowania, spamu i wyłudzania informacji (fałszowania), ale nie mogą wyświetlać informacji o złośliwym oprogramowaniu wykrytym przez załączniki usługi [Sejf](safe-attachments.md) lub wyłudzanie informacji wykryte przez ochronę przed personifikacjami[.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-**Najgoręci** nadawcy i adresaci to najgoręci nadawcy w organizacji, a także najgoręci adresaci wiadomości wykrytych przez usługi EOP i Defender dla funkcji ochrony przed Office 365. Domyślnie raport przedstawia dane z ostatniego tygodnia, ale są dostępne dane z ostatnich 90 dni.
+**Najgoręci** nadawcy i adresaci to najgoręci nadawcy w organizacji, a także najgoręci adresaci wiadomości wykrytych przez usługę EOP i Ochrona usługi Office 365 w usłudze Defender ochrony. Domyślnie raport przedstawia dane z ostatniego tygodnia, ale są dostępne dane z ostatnich 90 dni.
 
 Aby wyświetlić raport w portalu Microsoft 365 Defender pod <https://security.microsoft.com>adresem ,  \> przejdź do tematu Raporty wiadomości e-mail i & **e-mail** \> & **do współpracy**. Na stronie **Raporty &-mail** znajdź raport Najgorętsi nadawcy i adresaci **, a** następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz jeden z następujących adresów URL:
 
-- Defender dla Office 365:<https://security.microsoft.com/reports/TopSenderRecipientsATP>
+- Ochrona usługi Office 365 w usłudze Defender:<https://security.microsoft.com/reports/TopSenderRecipientsATP>
 - EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
 
-![Widżet Najgorętsi nadawcy i adresaci na pulpicie nawigacyjnym Raporty.](../../media/top-senders-and-recipients-widget.png)
+:::image type="content" source="../../media/top-senders-and-recipients-widget.png" alt-text="Widżet Najgorętsi nadawcy i adresaci na pulpicie nawigacyjnym Raporty" lightbox="../../media/top-senders-and-recipients-widget.png":::
 
 Po umieszczeniu wskaźnika myszy na wycięciem na wykresie kołowym możesz wyświetlić liczbę wiadomości od nadawcy lub adresata.
 
@@ -985,11 +993,11 @@ Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj*
 
 Na stronie **Najgoręci nadawcy i adresaci** kliknij ikonę ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **Przycisk** Eksportuj jest dostępny.
 
-![Pokaż dane dla widoku Najgorętsi nadawcy poczty w raporcie Najgoręci nadawcy i adresaci.](../../media/top-senders-and-recipients-report-view.png)
+:::image type="content" source="../../media/top-senders-and-recipients-report-view.png" alt-text="The Show data for Top mail senders in the Top senders and recipients report" lightbox="../../media/top-senders-and-recipients-report-view.png":::
 
 ## <a name="url-protection-report"></a>Raport ochrony adresu URL
 
-Raport **o ochronie adresu URL** jest dostępny tylko w programie Microsoft Defender dla Office 365. Aby uzyskać więcej informacji, zobacz [Raport o ochronie adresów URL](view-reports-for-mdo.md#url-protection-report).
+Raport **o ochronie adresu URL** jest dostępny tylko w Ochrona usługi Office 365 w usłudze Microsoft Defender. Aby uzyskać więcej informacji, zobacz [Raport o ochronie adresów URL](view-reports-for-mdo.md#url-protection-report).
 
 ## <a name="user-reported-messages-report"></a>Raport wiadomości zgłoszony przez użytkownika
 
@@ -1000,7 +1008,7 @@ Raport **"** Użytkownik zgłosił wiadomości" zawiera informacje o wiadomości
 
 Aby wyświetlić raport w portalu Microsoft 365 Defender,  \>  \> przejdź do tematu Raporty wiadomości e-mail i & e-mail & **raportów współpracy**. Na stronie **Raporty &-mail znajdź** pozycję **Wiadomości** zgłoszone przez użytkowników, a następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz program <https://security.microsoft.com/reports/userSubmissionReport>. Aby przejść do [przesyłania przez administratora w portalu Microsoft 365 Defender,](admin-submission.md) kliknij pozycję **Przejdź do przesyłania**.
 
-![Widżet wiadomości zgłoszonych przez użytkownika na & wiadomości e-mail do współpracy.](../../media/user-reported-messages-widget.png)
+:::image type="content" source="../../media/user-reported-messages-widget.png" alt-text="Widżet wiadomości zgłoszonych przez użytkownika na stronie Raporty o & e-mail" lightbox="../../media/user-reported-messages-widget.png":::
 
 Możesz filtrować zarówno wykres, jak i tabelę szczegółów, klikając pozycję **Filtruj** i wybierając jedną lub więcej z następujących wartości w wyświetlonym wysuwaniu:
 
@@ -1027,7 +1035,7 @@ Aby zgrupować pozycje, kliknij pozycję **Grupuj** i wybierz jedną z następuj
 - **Ponowny wynik**
 - **Phish simulation**
 
-![Raport wiadomości zgłoszony przez użytkownika.](../../media/user-reported-messages-report.png)
+:::image type="content" source="../../media/user-reported-messages-report.png" alt-text="Raport z komunikatami zgłoszonymi przez użytkownika" lightbox="../../media/user-reported-messages-report.png":::
 
 Tabela szczegółów pod wykresem zawiera następujące informacje:
 
@@ -1045,7 +1053,7 @@ Aby przesłać wiadomość do firmy Microsoft w celu analizy, wybierz wpis wiado
 - **Zgłaszanie wyłudzania informacji**
 - **Zgłaszanie złośliwego oprogramowania**
 - **Zgłaszanie spamu**
-- **Wyzwalanie badania** (Defender dla Office 365)
+- **Wyzwalanie badania** (Ochrona usługi Office 365 w usłudze Defender)
 
 Na stronie **Użytkownik zgłosił wiadomości** ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](#export-report)** Eksportuj jest dostępny.
 
@@ -1060,7 +1068,7 @@ Aby móc wyświetlać raporty opisane w tym artykule i korzystać z nich, musisz
 
 Aby uzyskać więcej informacji, [zobacz Uprawnienia w portalu Microsoft 365 Defender użytkowników](permissions-microsoft-365-security-center.md).
 
-**Uwaga**: Dodanie użytkowników do odpowiedniej roli Azure Active Directory w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia w portalu Microsoft 365 Defender oraz uprawnienia do innych funkcji w  Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+**Uwaga**: Dodanie użytkowników do odpowiedniej roli Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia w portalu usługi Microsoft 365 Defender oraz uprawnienia do innych funkcji w  Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Co zrobić, jeśli w raportach nie są wyświetlane dane?
 
@@ -1176,4 +1184,4 @@ Każdy wyeksportowany .csv jest ograniczony do 150 000 wierszy. Jeśli dane zawi
 
 [Wyświetlanie raportów przepływu poczty e-mail w Microsoft 365 Defender poczty](view-mail-flow-reports.md)
 
-[Wyświetlanie raportów usługi Defender dla Office 365](view-reports-for-mdo.md)
+[Wyświetlanie raportów dla Ochrona usługi Office 365 w usłudze Defender](view-reports-for-mdo.md)

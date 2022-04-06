@@ -1,6 +1,6 @@
 ---
-title: Uruchom test wykrywania na urządzeniu, aby sprawdzić, czy zostało ono poprawnie zainstalowane w programie Microsoft Defender for Endpoint
-description: Uruchom skrypt testu wykrywania na urządzeniu ostatnio podłączonym do usługi Microsoft Defender for Endpoint, aby sprawdzić, czy zostało ono poprawnie dodane.
+title: Uruchom test wykrywania na urządzeniu, aby sprawdzić, czy zostało ono poprawnie Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Uruchom skrypt testu wykrywania na urządzeniu ostatnio podłączonym do usługi Ochrona punktu końcowego w usłudze Microsoft Defender, aby sprawdzić, czy zostało ono poprawnie dodane.
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41ba14fd2e4a9e3726e4ef4287812cf8d3ffb2d1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1d8459633d00d759fda1584e0084cd8ed4e12633
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011931"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477264"
 ---
-# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Uruchamianie testu wykrywania na nowo w urządzeniu z uruchomionym programem Microsoft Defender dla punktu końcowego
+# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Uruchamianie testu wykrywania na nowo włodowym Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,16 +36,16 @@ ms.locfileid: "63011931"
 - Windows Server, wersja 1803
 - Windows Server 2019
 - Windows Server 2022
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Dodanie urządzenia do usługi Microsoft Defender for Endpoint w celu zarządzania jest również nazywane urządzeniami dołączania. Wnoszenie umożliwia urządzeniam zgłaszanie sygnałów o ich stanie kondycji do usługi.
+Po dodaniu urządzenia do usługi Ochrona punktu końcowego w usłudze Microsoft Defender do zarządzania jest to również nazywane urządzeniami dołączania. Wnoszenie umożliwia urządzeniam zgłaszanie sygnałów o ich stanie kondycji do usługi.
 
 Sprawdzenie, czy urządzenie zostało pomyślnie dodane do usługi, jest kluczowym etapem całego procesu wdrażania. Zapewnia, że wszystkie oczekiwane urządzenia są zarządzane. 
 
-## <a name="verify-microsoft-defender-for-endpoint-onboarding-of-a-device-using-a-powershell-detection-test"></a>Weryfikowanie programu Microsoft Defender pod celu do wykrycia punktu końcowego urządzenia przy użyciu testu wykrywania programu PowerShell
+## <a name="verify-microsoft-defender-for-endpoint-onboarding-of-a-device-using-a-powershell-detection-test"></a>Weryfikowanie Ochrona punktu końcowego w usłudze Microsoft Defender dołączania urządzenia przy użyciu testu wykrywania programu PowerShell
 
 Uruchom następujący skrypt programu PowerShell na nowo zainstalowanym urządzeniu, aby sprawdzić, czy urządzenie prawidłowo zgłasza się do usługi Defender for Endpoint.
 
@@ -56,8 +56,8 @@ Uruchom następujący skrypt programu PowerShell na nowo zainstalowanym urządze
 
    1. Kliknij prawym przyciskiem **myszy pozycję Wiersz polecenia i** wybierz **pozycję Uruchom jako administrator**.
 
-      ![Okno menu Start z punktem Uruchom jako administrator.](images/run-as-admin.png)
-
+      :::image type="content" source="images/run-as-admin.png" alt-text="The menu Start pointing to Run as administrator" lightbox="images/run-as-admin.png":::
+    
 3. Po wyświetleniu monitu skopiuj i uruchom następujące polecenie:
 
    ```powershell
@@ -70,4 +70,4 @@ Okno Wiersz polecenia zostanie zamknięte automatycznie. Jeśli efekt się powie
 
 - [Urządzenia Windows urządzeniach](configure-endpoints.md)
 - [Serwery wsadowe](configure-server-endpoints.md)
-- [Rozwiązywanie problemów z dołączaniem do programu Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
+- [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender problemów z dołączaniem](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

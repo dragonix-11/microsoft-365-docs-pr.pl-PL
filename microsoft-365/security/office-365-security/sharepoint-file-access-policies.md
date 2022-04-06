@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6effe1ffefaf7faeb90258163c539cdddcec2679
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 4425ee0a4ee9abb7c87be7ed45d9f5c94b84cdc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570002"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477022"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Zalecenia dotyczące zasad dotyczące zabezpieczania SharePoint witryn i plików
 
@@ -60,7 +60,7 @@ W poniższej tabeli wymieniono zasady, które należy przejrzeć i zaktualizowa�
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Stosowanie ograniczeń wymuszonych przez aplikację w SharePoint
 
-Jeśli w usłudze SharePoint implementuje się kontrolki dostępu, zasady dostępu warunkowego są tworzone w usłudze Azure AD w celu skonfigurowania zasad skonfigurowanych w usłudze SharePoint. Domyślnie te zasady dotyczą wszystkich użytkowników, ale mają wpływ tylko na dostęp do witryn określanych przy użyciu programu PowerShell podczas tworzenia kontrolek dostępu w programie SharePoint. Zasady można też określić w zakresie dla konkretnych użytkowników, grup lub witryn.
+Jeśli implementujesz kontrolki dostępu w programie SharePoint, musisz utworzyć te zasady dostępu warunkowego w usłudze Azure AD, aby skonfigurować zasady konfigurowane w usłudze Azure AD SharePoint. Te zasady dotyczą wszystkich użytkowników, ale mają wpływ tylko na dostęp do witryn określanych przy użyciu programu PowerShell podczas tworzenia kontrolek dostępu w programie SharePoint.
 
 Aby skonfigurować te zasady, zobacz "Blokowanie lub ograniczanie dostępu do określonych SharePoint witryn lub kont OneDrive" w tece Kontrolowanie dostępu z [](/sharepoint/control-access-from-unmanaged-devices)urządzeń niezawiąanych.
 

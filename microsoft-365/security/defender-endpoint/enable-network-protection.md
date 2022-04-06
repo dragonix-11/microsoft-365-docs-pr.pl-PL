@@ -1,6 +1,6 @@
 ---
 title: Włączanie ochrony sieci
-description: Włącz ochronę sieci za zasady grupy, PowerShell lub Zarządzanie urządzeniami przenośnymi i Menedżer konfiguracji.
+description: Włącz ochronę sieci za zasady grupy, PowerShell lub Mobile Zarządzanie urządzeniami i Configuration Manager.
 keywords: Ochrona sieci, wykorzystywanie, złośliwa witryna internetowa, ip, domena, domeny, włączanie, włączanie
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,20 +15,20 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 4c3b74179294d0b028dd07c3a6f4f28e844237d3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401150"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469938"
 ---
 # <a name="turn-on-network-protection"></a>Włączanie ochrony sieci
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -56,17 +56,16 @@ Jeśli brakuje klucza, przejdź do **części SOFTWARE** \> **Microsoft Windows 
    - 1 lub **Wł.**
    - 2 lub **tryb inspekcji**
 
-    :::image type="content" alt-text="Klucz rejestru ochrony sieci." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-    
-    
+    :::image type="content" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="Klucz rejestru usługi Network Protection" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
+
 ## <a name="enable-network-protection"></a>Włączanie ochrony sieci
 
 Włącz ochronę sieci, używając dowolnej z tych metod:
 
 - [PowerShell](#powershell)
-- [Zarządzanie urządzeniami przenośnymi](#mobile-device-management-mdm)
+- [Aplikacje Zarządzanie urządzeniami-komórkowych (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
-- [zasady grupy](#group-policy)
+- [Zasady grupy](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
 ### <a name="powershell"></a>PowerShell
@@ -112,7 +111,7 @@ Użyj konfiguracji [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection
 
 7. Przejrzyj wszystkie informacje, a następnie wybierz pozycję **Utwórz**.
 
-### <a name="group-policy"></a>zasady grupy
+### <a name="group-policy"></a>Zasady grupy
 
 Aby włączyć ochronę sieci na komputerach przyłącznych do domeny lub na komputerze autonomicznym, skorzystaj z poniższej procedury.
 
@@ -120,9 +119,9 @@ Aby włączyć ochronę sieci na komputerach przyłącznych do domeny lub na kom
 
     *— Lub —*
 
-    Na komputerze zasady grupy zarządzania domenami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](https://technet.microsoft.com/library/cc731212.aspx) prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
+    Na przyłączeniu do domeny zasady grupy zarządzania domenami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](https://technet.microsoft.com/library/cc731212.aspx) prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-2. W **edytorze zasady grupy zarządzaniem** przejdź do **strony Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
+2. W **edytorze zasady grupy zarządzania** przejdź do **strony Konfiguracja komputera i** wybierz pozycję **Szablony administracyjne**.
 
 3. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> **Windows Defender ochrona sieci Exploit Guard**\>.
 
@@ -135,7 +134,7 @@ Aby włączyć ochronę sieci na komputerach przyłącznych do domeny lub na kom
     - **Tryb inspekcji** — jeśli użytkownik odwiedza złośliwy adres IP lub domenę, zdarzenie zostanie zarejestrowane w Windows zdarzeń. Jednak użytkownikowi nie zostanie zablokowana blokada na ten adres.
 
    > [!IMPORTANT]
-   > Aby w pełni włączyć ochronę sieci, należy zasady grupy opcję **Włączone**, a następnie wybrać pozycję Zablokuj w menu  rozwijaym opcji.
+   > Aby w pełni włączyć ochronę sieci, należy zasady grupy opcję **Włączone**, a następnie wybrać polecenie Zablokuj w menu  rozwijaym opcji.
 
 Upewnij się, że ochronę sieci włączono na komputerze lokalnym przy użyciu edytora rejestru:
 
@@ -170,7 +169,7 @@ Upewnij się, że ochronę sieci włączono na komputerze lokalnym przy użyciu 
 
 
 > [!IMPORTANT]
-> Po wdrożeniu zasad exploit Guard z programu Menedżer konfiguracji ustawienia exploit Guard nie zostaną usunięte z klientów po usunięciu wdrożenia. `Delete not supported` jest rejestrowane w pliku Menedżer konfiguracji exploitGuardHandler.log klienta po usunięciu wdrożenia exploit guard klienta. <!--CMADO8538577-->
+> Po wdrożeniu zasad exploit Guard z programu Configuration Manager ustawienia exploit Guard nie zostaną usunięte z klientów w przypadku usunięcia wdrożenia. `Delete not supported`jest rejestrowany w pliku Configuration Manager exploitGuardHandler.log klienta po usunięciu wdrożenia exploit Guard tego klienta. <!--CMADO8538577-->
 > Aby usunąć te ustawienia, w kontekście systemu można uruchomić następujący skrypt programu PowerShell:<!--CMADO9907132-->
 >
 > ```powershell

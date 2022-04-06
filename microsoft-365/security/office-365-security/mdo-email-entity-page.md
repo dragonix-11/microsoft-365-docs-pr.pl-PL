@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 04/01/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Ochrona usługi Office 365 w usłudze Microsoft Defender E5, P1 i P2 mogą teraz wyświetlać 360 stopni każda wiadomość e-mail ze stroną jednostki poczty e-mail.
-ms.openlocfilehash: d75ebd9b54fc5e7919154a4f65e0d5fc0e77e117
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1b74c4c79d05a4a52434810527c92de801b329f0
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475460"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634828"
 ---
 # <a name="the-email-entity-page"></a>Strona jednostki e-mail
 
@@ -88,7 +88,7 @@ Administratorzy mogą wyświetlać podgląd wiadomości e-mail w skrzynkach pocz
 
 Te szczegóły są specyficzne dla załączników wiadomości e-mail i adresów URL. Użytkownicy mogą zobaczyć te szczegóły, przechodząc do Eksploratora i stosując  filtr technologii wykrywania ustawiony na detonację pliku lub detonację adresu URL. Wiadomości e-mail filtrowane w celu detonowania plików będą zawierać złośliwy plik ze szczegółami detonacji, a wiadomości odfiltrowane pod adresami URL zawierają złośliwy adres URL i szczegóły dotyczące jego detonacji.
 
-Użytkownicy zobaczą wzbogacenie szczegółów detonacji dotyczących znanych złośliwych załączników lub adresów URL znalezionych w ich wiadomościach e-mail, które zostały zdetonowane dla określonej dzierżawy. Składa się ona z łańcucha detonacji, podsumowania detonacji, zrzutów ekranu i informacji obserwowanych zachowania, aby ułatwić klientom zrozumienie, dlaczego załącznik lub adres URL został uznany za złośliwy i detonowany.
+Użytkownicy zobaczą wzbogacenie szczegółów detonacji dotyczących znanych złośliwych załączników lub adresów URL znalezionych w ich wiadomościach e-mail, które zostały zdetonowane dla określonej dzierżawy. Opis będzie zawierać łańcuch detonacji, podsumowanie detonacji, zrzut ekranu i obserwowane zachowanie, aby ułatwić klientom zrozumienie, dlaczego załącznik lub adres URL został uznany za złośliwy i detonowany.
 
 1. *Łańcuch detonacji*. Jedno detonowanie pliku lub adresu URL może wyzwolić wiele dat. Łańcuch detonacji śledzi ścieżkę detonations, w tym oryginalny złośliwy plik lub adres URL, który spowodował werdykt, oraz wszystkie inne pliki lub adresy URL, na które wpływa detonacja. Te adresy URL lub dołączone pliki mogą nie być bezpośrednio obecne w wiadomości e-mail, ale uwzględniając analizę, ważne jest ustalenie, dlaczego plik lub adres URL został znaleziony jako złośliwy.  
 
@@ -119,6 +119,14 @@ Użytkownicy zobaczą wzbogacenie szczegółów detonacji dotyczących znanych z
 - *Poziom skarg zbiorczych*: zbiorczy poziom skarg (BCL, Bulk Complaint Level) wiadomości. Wyższa wartość BCL wskazuje, że wiadomość e-mail zbiorcza z większą prawdopodobieństwem generuje skargi (jest to naturalne, jeśli wiadomość e-mail prawdopodobnie jest spamem).
 
 - *Poziom ufności filtru* spamu: poziom ufności filtru spamu wiadomości. Wyższa wartość oznacza, że wiadomość jest bardziej prawdopodobna jako spam.
+
+- *Typ klienta*: wskazuje typ klienta, z którego zostały wysłane wiadomości e-mail, takie jak REST.
+
+- *Przesyłanie dalej*: W scenariuszach z autoforwaridngiem wskazuje użytkownika przesyłającego dalej, a także typ przesyłania dalej, taki jak Przekazywanie ETR lub SMTP. 
+
+- *Lista dystrybucyjna*: wyświetla listę dystrybucyjną, jeśli adresat pozyskał wiadomość e-mail jako członek tej listy. Lista dystrybucyjna najwyższego poziomu jest pokazana, jeśli są to zagnieżdżone listy dystrybucyjne.  
+
+- *Do, DW*: wskazuje adresy, które są wymienione w polach Do, DW w wiadomości e-mail. Informacje w tych polach są ograniczone do 5000 znaków. 
 
 - *Nazwa domeny*: jest nazwą domeny nadawcy.
 

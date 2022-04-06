@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d8524715ad0e450671faeaeb0714992e297a02df
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: ab3b274ee07b343528c9b25f36dccc86d18e7ef8
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595191"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635004"
 ---
 # <a name="communication-compliance-policies"></a>Zasady zgodności komunikacji
 
@@ -96,7 +96,7 @@ W trakcie procesu przeglądu recenzentzy zgodności komunikacji mogą wykonywać
 
 ![Zasady wiadomości zgłoszonych przez użytkowników do komunikacji.](../media/communication-compliance-user-reported-messages-policy.png)
 
-Wiadomości z czatów Teams zgłoszonych przez użytkowników są jedynymi wiadomościami przetwarzami przez zasady wiadomości zgłoszonymi przez użytkowników i można je modyfikować tylko przydzielonych recenzentów. Nie można edytować wszystkich innych właściwości zasad. Podczas tworzenia zasad początkowi recenzentzy przypisani do zasad są członkami grupy ról Administratorzy  zgodności komunikacji (jeśli przypisano do nich co najmniej jednego użytkownika) lub wszystkich członków grupy ról Administrator globalny organizacji. Kreator zasad to losowo wybrany użytkownik z grupy ról Administratorzy  zgodności komunikacji (jeśli jest wypełniany co najmniej jednym użytkownikiem) lub losowo wybrany użytkownik z grupy ról Administrator globalny organizacji.  
+Wiadomości z czatów Teams zgłoszonych przez użytkowników są jedynymi wiadomościami przetwarzami przez zasady wiadomości zgłoszonymi przez użytkowników i można je modyfikować tylko przydzielonych recenzentów. Innych właściwości zasad nie można edytować. Podczas tworzenia zasad początkowi recenzentzy przypisani do zasad są członkami grupy ról Administratorzy  zgodności komunikacji (jeśli przypisano do nich co najmniej jednego użytkownika) lub wszystkich członków grupy ról Administrator globalny organizacji. Kreator zasad to losowo wybrany użytkownik z grupy ról Administratorzy  zgodności komunikacji (jeśli jest wypełniany co najmniej jednym użytkownikiem) lub losowo wybrany użytkownik z grupy ról Administrator globalny organizacji.  
 
 Administratorzy powinni natychmiast przypisywać niestandardowych recenzentów do tych zasad, odpowiednio do potrzeb organizacji. Może to dotyczyć recenzentów, takich jak inspektor zgodności, inspektor ryzyka lub członkowie działu kadr. Aby dostosować recenzentów do wiadomości na czacie przesłanych jako wiadomości zgłoszone przez użytkowników, wykonaj następujące czynności:
 
@@ -220,7 +220,7 @@ W poniższej tabeli wyjaśniono więcej na temat poszczególnych warunków.
 | **Wiadomości są klasyfikowane przy użyciu dowolnych z tych etykiet**  <br><br> **Wiadomość nie jest klasyfikowana przy użyciu żadnej z tych etykiet** | Zasady mają być stosowane, gdy określone etykiety przechowywania są uwzględniane lub wykluczane w wiadomości. Etykiety przechowywania należy skonfigurować oddzielnie, a w ramach tego warunku wybierane są skonfigurowane etykiety. Każda etykieta, która zostanie przez Ciebie wybrać, jest stosowana osobno (tylko jedna z tych etykiet musi mieć zastosowanie do zasad, które będą stosowane do wiadomości). Aby uzyskać więcej informacji na temat etykiet przechowywania, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).|
 | **Wiadomość zawiera dowolny z tych wyrazów**  <br><br> **Wiadomość nie zawiera żadnego z tych wyrazów** | Aby zastosować zasady, gdy określone wyrazy lub frazy zostaną uwzględnione lub wykluczone w wiadomości, wprowadź poszczególne wyrazy rozdzielone przecinkami. W przypadku fraz o dwóch lub więcej wyrazach ujmij je w cudzysłów. Każdy wprowadzany wyraz lub każda w wprowadzana fraza jest stosowana osobno (tylko jeden wyraz musi być stosowany do zasad do wiadomości). Aby uzyskać więcej informacji na temat wprowadzania wyrazów lub fraz, zobacz następną sekcję Dopasowywanie wyrazów i fraz do wiadomości e-mail [lub załączników](communication-compliance-policies.md#Matchwords).|
 | **Załącznik zawiera dowolny z tych wyrazów**  <br><br> **Załącznik nie zawiera żadnego z tych wyrazów** | Aby zastosować zasady, gdy określone wyrazy lub frazy zostaną uwzględnione lub wykluczone w załączniku wiadomości (na przykład w dokumencie programu Word), wprowadź poszczególne wyrazy rozdzielone przecinkami. W przypadku fraz o dwóch lub więcej wyrazach ujmij je w cudzysłów. Każdy wprowadzany wyraz lub każda w wprowadzana fraza jest stosowana osobno (tylko jeden wyraz musi być stosowany do zasad do załącznika). Aby uzyskać więcej informacji na temat wprowadzania wyrazów lub fraz, zobacz następną sekcję Dopasowywanie wyrazów i fraz do wiadomości e-mail [lub załączników](communication-compliance-policies.md#Matchwords).|
-| **Załącznik jest dowolnym z tych typów plików**  <br><br> **Załącznik nie jest jednym z tych typów plików** | Aby nadzorować komunikację z określonymi typami załączników lub wykluczać z nich, wprowadź rozszerzenia plików (takie jak .exe lub .pdf). Jeśli chcesz uwzględnić lub wykluczyć wiele rozszerzeń plików, wprowadź je w oddzielnych wierszach. Aby zastosować zasady, tylko jedno rozszerzenie załącznika musi być zgodne.|
+| **Załącznik jest dowolnym z tych typów plików**  <br><br> **Załącznik nie jest jednym z tych typów plików** | Aby nadzorować komunikację z określonymi typami załączników lub wykluczać z nich, wprowadź rozszerzenia plików (takie jak .exe lub .pdf). Jeśli chcesz uwzględnić lub wykluczyć wiele rozszerzeń plików, wprowadź typy plików rozdzielone przecinkami (na przykład *.exe,.pdf,.zip*). Aby zastosować zasady, tylko jedno rozszerzenie załącznika musi być zgodne.|
 | **Rozmiar wiadomości jest większy niż**  <br><br> **Rozmiar wiadomości nie jest większy niż** | Aby przejrzeć wiadomości na podstawie określonego rozmiaru, należy użyć tych warunków do określenia maksymalnego lub minimalnego rozmiaru wiadomości, która może być zanim zostanie zweryfikowana. Jeśli na przykład określisz, że rozmiar wiadomości jest większy **niż** \> **1,0 MB**, wszystkie wiadomości o rozmiarze 1,01 MB i większym będą podlegać recenzji. Dla tego warunku możesz wybrać bajty, kilobajty, megabajty lub gigabajty.|
 | **Rozmiar załącznika jest większy niż**  <br><br> **Rozmiar załącznika nie jest większy niż** | Aby przejrzeć wiadomości na podstawie rozmiaru załączników, określ maksymalny lub minimalny rozmiar załącznika przed przejrzeniem wiadomości i jej załączników. Jeśli na przykład określisz  \>, że rozmiar załącznika jest większy niż **2,0 MB**, wszystkie wiadomości z załącznikami o rozmiarze 2,01 MB lub więcej będą podlegać recenzji. Dla tego warunku możesz wybrać bajty, kilobajty, megabajty lub gigabajty.|
 

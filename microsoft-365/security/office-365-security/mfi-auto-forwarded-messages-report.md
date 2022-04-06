@@ -13,12 +13,12 @@ description: Administratorzy mogą dowiedzieć się więcej o raporcie Wiadomoś
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 05ad934fbc7736c0cfbb86f7411a2ca73705112f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4603e7d895c847513a41dc52764070f970a50d15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680165"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476384"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Szczegółowe informacje o wiadomościach przesyłanych automatycznie w Centrum & zabezpieczeń
 
@@ -26,12 +26,12 @@ ms.locfileid: "63680165"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Szczegółowe **informacje o** automatycznie przesyłanych wiadomościach na [](mail-flow-insights-v2.md) pulpicie nawigacyjnym przepływu poczty w Centrum zgodności usługi [& Security & zawierają](https://protection.office.com) informacje o wiadomościach, które są automatycznie przekazywane z organizacji do adresatów w domenach zewnętrznych.
 
-![Widżet wiadomości automatycznie przesyłanych dalej w Centrum & zgodności.](../../media/mfi-auto-forwarded-messages.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="Widżet, który w Centrum zgodności programu & jest & wiadomości przesyłanych dalej" lightbox="../../media/mfi-auto-forwarded-messages.png":::
 
 ## <a name="auto-forwarded-messages-details"></a>Szczegóły wiadomości przesyłanych automatycznie
 
@@ -52,7 +52,7 @@ Po kliknięciu liczby wiadomości w widżecie zostanie wyświetlone okienko wysu
   - **Nowi użytkownicy (w zeszłym tygodniu)**
   - Link do raportu [do przesyłania dalej modyfikacji,](mfi-new-users-forwarding-email.md#forwarding-modifications-report) aby uzyskać więcej szczegółowych informacji.
 
-![Wysuwowe informacje dotyczące raportu wiadomości przesyłanych automatycznie w centrum zabezpieczeń & zgodności.](../../media/mfi-auto-forwarded-messages-details.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages-details.png" alt-text="Widżet wiadomości automatycznie przesyłanych dalej w Centrum & zabezpieczeń" lightbox="../../media/mfi-auto-forwarded-messages-details.png":::
 
 ## <a name="insights"></a>Szczegółowe informacje
 

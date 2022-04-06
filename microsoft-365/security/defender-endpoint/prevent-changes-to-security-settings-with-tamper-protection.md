@@ -21,19 +21,19 @@ ms.date: 01/18/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ef9db769811c3848646c0bf7b8f7755941918362
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 4413704981343a067ab5923ce644f62c62b034c8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "63009738"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476824"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Ochrona ustawień zabezpieczeń za pomocą ochrony przed naruszeniami
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Ochrona przed naruszeniami jest dostępna dla urządzeń z jedną z następujących wersji programu Windows:
 
@@ -81,8 +81,8 @@ Ochrona przed naruszeniami nie uniemożliwia wyświetlania ustawień zabezpiecze
 |Aby wykonać to zadanie...|Zobacz tę sekcję...|
 |---|---|
 |Zarządzanie ochroną przed naruszeniami w dzierżawie <p> Włączanie lub Microsoft 365 Defender ochrony przed naruszeniami za pomocą portalu ochrony przed naruszeniami|[Zarządzanie ochroną przed naruszeniami w organizacji przy użyciu narzędzia Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)|
-|Dostosowywanie ustawień ochrony przed naruszeniami w organizacji <p> Aby włączyć lub wyłączyć ochronę przed Microsoft Endpoint Manager, użyj usługi Intune (Microsoft Endpoint Manager). Tę metodę można skonfigurować ochronę przed naruszeniami dla niektórych lub wszystkich użytkowników.|[Zarządzanie ochroną przed naruszeniami w organizacji przy użyciu Microsoft Endpoint Manager](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager)|
-|Włączanie lub wyłączanie ochrony przed naruszeniami w organizacji za pomocą aplikacji Menedżer konfiguracji|[Zarządzanie ochroną przed naruszeniami w organizacji za pomocą dołączania dzierżawy Menedżer konfiguracji wersji 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)|
+|Dostosowywanie ustawień ochrony przed naruszeniami w organizacji <p> Użyj Intune (Microsoft Endpoint Manager), aby włączyć lub wyłączyć ochronę przed naruszeniami. Tę metodę można skonfigurować ochronę przed naruszeniami dla niektórych lub wszystkich użytkowników.|[Zarządzanie ochroną przed naruszeniami w organizacji przy użyciu Microsoft Endpoint Manager](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager)|
+|Włączanie lub wyłączanie ochrony przed naruszeniami w organizacji za pomocą aplikacji Configuration Manager|[Zarządzanie ochroną przed naruszeniami w organizacji za pomocą dołączania dzierżawy Configuration Manager wersji 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)|
 |Włączanie lub wyłączanie ochrony przed naruszeniami na poszczególnych urządzeniach|[Zarządzanie ochroną przed naruszeniami na poszczególnych urządzeniach](#manage-tamper-protection-on-an-individual-device)|
 |Wyświetlanie szczegółów prób naruszenia na urządzeniach|[Wyświetlanie informacji o próbach naruszenia](#view-information-about-tampering-attempts)|
 |Przejrzyj zalecenia dotyczące zabezpieczeń|[Przejrzyj zalecenia dotyczące zabezpieczeń](#review-your-security-recommendations)|
@@ -106,11 +106,11 @@ Ochronę przed naruszeniami można włączać i wyłączać dla dzierżawy za Mi
 
 - Obecnie opcja zarządzania zabezpieczeniami przed naruszeniami w portalu Microsoft 365 Defender jest domyślnie włączona dla nowych wdrożeń. W przypadku istniejących wdrożeń ochrona przed naruszeniami jest dostępna z określoną zgodyą. Aby się w tym programie wybrać, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">w portalu Microsoft 365 Defender wybierz</a> pozycję **Zaawansowane** \> funkcje ochrony przed Ustawienia **punktami** \> **końcowymi**\>.
 
-- Gdy używasz portalu Microsoft 365 Defender do zarządzania zabezpieczeniami przed naruszeniami, nie musisz używać usługi Intune ani metody dołączania dzierżawy.
+- Podczas korzystania z portalu Microsoft 365 Defender do zarządzania zabezpieczeniami przed naruszeniami nie musisz używać metody dołączania Intune ani dzierżawy.
 
-- Jeśli zarządzasz ochroną przed naruszeniami w portalu usługi Microsoft 365 Defender, ustawienie to jest stosowane w całej dzierżawie, co ma wpływ na wszystkie urządzenia z systemem Windows 10, Windows 10 Enterprise w wielu sesjach, Windows 11 Windows 11 Enterprise  wiele sesji, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 lub Windows Server 2022. Aby dostosować ochronę przed naruszeniami (na przykład ochrony przed naruszeniami na niektórych urządzeniach, ale wyłączoną dla [](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager) innych), używaj aplikacji sieci Microsoft Endpoint Manager lub Menedżer konfiguracji dołączania [dzierżawy](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
+- Jeśli zarządzasz ochroną przed naruszeniami w portalu usługi Microsoft 365 Defender, ustawienie to jest stosowane w całej dzierżawie, co ma wpływ na wszystkie urządzenia z systemem Windows 10, Windows 10 Enterprise, wielosekwowym lub Windows 11, Windows 11 Enterprise  wiele sesji, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 lub Windows Server 2022. Aby dostosować ochronę przed naruszeniami (na przykład ochrony przed naruszeniami na niektórych urządzeniach, ale wyłączoną dla [](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager) innych), użyj funkcji ochrony przed Microsoft Endpoint Manager lub Configuration Manager [dołączania dzierżawy](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
-- Jeśli masz środowisko hybrydowe, ustawienia ochrony przed naruszeniami skonfigurowane w usłudze Intune mają pierwszeństwo przed ustawieniami skonfigurowanymi w portalu Microsoft 365 Defender sieci.
+- Jeśli masz środowisko hybrydowe, ustawienia ochrony przed naruszeniami skonfigurowane w Intune mają pierwszeństwo przed ustawieniami skonfigurowanymi w portalu Microsoft 365 Defender sieci.
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>Wymagania dotyczące zarządzania zabezpieczeniami przed naruszeniami w Microsoft 365 Defender zabezpieczeń
 
@@ -130,7 +130,7 @@ Ochronę przed naruszeniami można włączać i wyłączać dla dzierżawy za Mi
 
 Aby uzyskać więcej informacji o wersjach, [zobacz Windows 10 informacje o wersji](/windows/release-health/release-information).
 
-- Twoje urządzenia muszą być [podłączone do programu Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
+- Urządzenia muszą być [podłączone do Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/onboarding).
 
 - Urządzenia muszą być w wersji na platformie `4.18.2010.7` chroniącej przed złośliwym oprogramowaniem (lub wspomniano) i wersji aparatu ochrony przed `1.1.17600.5` złośliwym oprogramowaniem (lub wspomniano wyżej). ([Zarządzaj Program antywirusowy Microsoft Defender i stosowanie planu bazowego](manage-updates-baselines-microsoft-defender-antivirus.md)).
 
@@ -138,7 +138,7 @@ Aby uzyskać więcej informacji o wersjach, [zobacz Windows 10 informacje o wers
 
 ### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-365-defender-portal"></a>Włączanie lub wyłączanie ochrony przed naruszeniami w portalu Microsoft 365 Defender użytkowników
 
-:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Włącz ochronę przed naruszeniami w portalu Microsoft 365 Defender użytkowników.":::
+:::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Włączanie ochrony przed naruszeniami w portalu Microsoft 365 Defender użytkowników" lightbox="../../media/mde-turn-tamperprotectionon.png":::
 
 1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
@@ -148,11 +148,11 @@ Aby uzyskać więcej informacji o wersjach, [zobacz Windows 10 informacje o wers
 
 ## <a name="manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager"></a>Zarządzanie ochroną przed naruszeniami w organizacji przy użyciu Microsoft Endpoint Manager
 
-Jeśli Twoja organizacja używa programu Microsoft Endpoint Manager (MEM), możesz włączyć lub wyłączyć ochronę przed naruszeniami w organizacji w centrum administracyjnym usługi Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Usługa Intune umożliwia dostosowanie ustawień ochrony przed naruszeniami. Jeśli na przykład chcesz włączyć ochronę przed naruszeniami na niektórych urządzeniach, ale nie wszystkich, użyj usługi Intune.
+Jeśli Twoja organizacja używa programu Microsoft Endpoint Manager (MEM), możesz włączyć lub wyłączyć ochronę przed naruszeniami w organizacji w centrum administracyjnym usługi Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Możesz Intune, aby dostosować ustawienia ochrony przed naruszeniami. Jeśli na przykład chcesz włączyć ochronę przed naruszeniami na niektórych urządzeniach, ale nie na wszystkich, użyj Intune.
 
 ### <a name="requirements-for-managing-tamper-protection-in-endpoint-manager"></a>Wymagania dotyczące zarządzania zabezpieczeniami przed naruszeniami w Endpoint Manager
 
-- Twoje urządzenia muszą być [podłączone do programu Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
+- Urządzenia muszą być [podłączone do Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/onboarding).
 
 - Musisz mieć [przypisane odpowiednie uprawnienia](/microsoft-365/security/defender-endpoint/assign-portal-access) , takie jak administrator globalny, administrator zabezpieczeń lub operacje zabezpieczeń.
 
@@ -166,7 +166,7 @@ Jeśli Twoja organizacja używa programu Microsoft Endpoint Manager (MEM), może
 
 ### <a name="turn-tamper-protection-on-or-off-in-microsoft-endpoint-manager"></a>Włączanie (lub wyłączanie) ochrony przed naruszeniami w Microsoft Endpoint Manager
 
-![Włącz ochronę przed naruszeniami za pomocą Endpoint Manager.](images/turnontamperprotectinmem.png)
+:::image type="content" source="images/turnontamperprotectinmem.png" alt-text="Włączanie ochrony przed naruszeniami przy użyciu Intune" lightbox="images/turnontamperprotectinmem.png":::
 
 1. W centrum [Microsoft Endpoint Manager przejdź](https://go.microsoft.com/fwlink/?linkid=2109431) do pozycji Zabezpieczenia punktu **końcowego** \> oprogramowania antywirusowego **, a** następnie wybierz pozycję **+ Utwórz zasady**.
 
@@ -179,14 +179,14 @@ Jeśli Twoja organizacja używa programu Microsoft Endpoint Manager (MEM), może
 
 3. Przypisz profil do jednej lub większej liczby grup.
  
-### <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Zarządzanie ochroną przed naruszeniami w organizacji za Menedżer konfiguracji 2006
+### <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Zarządzanie ochroną przed naruszeniami w organizacji za Configuration Manager wersji 2006
 
-Jeśli korzystasz z programu Menedżer konfiguracji w wersji [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), możesz zarządzać ustawieniami ochrony przed naruszeniami w usługach Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 i Windows Server 2022 przy użyciu metody o nazwie *dołączanie dzierżawy*. Dołączanie dzierżawy umożliwia synchronizowanie urządzeń lokalnych z Menedżer konfiguracji Microsoft Endpoint Manager centrum administracyjnego programu Microsoft Endpoint Manager, a następnie dostarczanie zasad konfiguracji zabezpieczeń punktów końcowych do lokalnych kolekcji & urządzeniach.
+Jeśli korzystasz z programu Configuration Manager w wersji [2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), możesz zarządzać ustawieniami ochrony przed naruszeniami na komputerach Windows 10, Windows 10 Enterprise w wielu sesjach, Windows 11, Windows 11 Enterprise w wielu sesjach, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 i Windows Server 2022 przy użyciu metody o nazwie *dołączanie dzierżawy*. Dołączanie dzierżawy umożliwia synchronizowanie urządzeń lokalnych z systemem Configuration Manager z centrum administracyjnym programu Microsoft Endpoint Manager, a następnie dostarczanie zasad konfiguracji zabezpieczeń punktów końcowych do lokalnych kolekcji & urządzeń.
 
 > [!NOTE]
-> Procedura ta może zostać użyta do rozszerzenia ochrony przed naruszeniami na urządzeniach z systemem Windows 10, Windows 10 Enterprise w wielu sesjach, Windows 11, Windows 11 Enterprise, Windows Server 2019 i Windows Server 2022. Upewnij się, że wymagania wstępne i inne informacje są dostępne w zasobach wymienionych w tej procedurze.
+> Procedura ta może służyć do rozszerzania ochrony przed naruszeniami na urządzeniach z systemem Windows 10, Windows 10 Enterprise, z wieloma sesjami, Windows 11, Windows 11 Enterprise w wielu sesjach, na urządzeniach z systemem Windows Server 2019 i Windows Server 2022. Upewnij się, że wymagania wstępne i inne informacje są dostępne w zasobach wymienionych w tej procedurze.
 
-1. Konfigurowanie dołączania dzierżawy. Aby dowiedzieć się więcej, zobacz [Wprowadzenie: Tworzenie i wdrażanie zasad zabezpieczeń punktów końcowych w centrum administracyjnym](/mem/configmgr/tenant-attach/endpoint-security-get-started).
+1. Konfigurowanie dołączania dzierżawy. Aby dowiedzieć się więcej, [zobacz Wprowadzenie: Tworzenie i wdrażanie](/mem/configmgr/tenant-attach/endpoint-security-get-started) zasad zabezpieczeń punktów końcowych w centrum administracyjnym.
 
 2. W centrum [Microsoft Endpoint Manager przejdź](https://go.microsoft.com/fwlink/?linkid=2109431) do pozycji Zabezpieczenia punktu **końcowego** \> oprogramowania antywirusowego **, a** następnie wybierz pozycję **+ Utwórz zasady**.
 
@@ -200,7 +200,7 @@ Jeśli korzystasz z programu Menedżer konfiguracji w wersji [2006](/mem/configm
 Zobacz następujące zasoby:
 
 - [Ustawienia profilu Zabezpieczenia Windows w programie Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings)
-- [Blog Community: ogłaszanie ochrony przed naruszeniami dla klientów dołączania Menedżer konfiguracji dzierżawy](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
+- [Blog Community tech: Ogłaszanie ochrony przed naruszeniami dla klientów dołączania Configuration Manager dzierżawy](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
 ## <a name="manage-tamper-protection-on-an-individual-device"></a>Zarządzanie ochroną przed naruszeniami na poszczególnych urządzeniach
 
@@ -215,7 +215,7 @@ Jeśli jesteś użytkownikiem domowym lub nie podlegasz ustawień zarządzanych 
 
 W aplikacji usługi Zabezpieczenia Windows jest Zabezpieczenia Windows:
 
-![Ochrona przed naruszeniami włączona w Windows 10 Home.](images/tamperprotectionturnedon.png)
+:::image type="content" source="images/tamperprotectionturnedon.png" alt-text="Włączanie ochrony przed naruszeniami w Windows 10 Home" lightbox="images/tamperprotectionturnedon.png":::
 
 1. Wybierz **przycisk Start** i zacznij pisać *Zabezpieczenia*. W wynikach wyszukiwania wybierz pozycję **Zabezpieczenia Windows**.
 
@@ -243,15 +243,15 @@ Próby naruszenia zwykle oznaczają większe cyberataki. Bad  przekonspewuje pr�
 
 W przypadku wykrycia próby naruszenia w portalu sieci Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) jest [Microsoft 365 Defender alert](/microsoft-365/security/defender-endpoint/portal-overview).
 
-![Microsoft 365 Defender.](images/tamperattemptalert.png)
+:::image type="content" source="images/tamperattemptalert.png" alt-text="Portal Microsoft 365 Defender użytkowników" lightbox="images/tamperattemptalert.png":::
 
-Za [wykrywanie i reagowanie w punktach końcowych](overview-endpoint-detection-response.md) i [zaawansowane funkcje](advanced-hunting-overview.md) wyszukiwania w programie Microsoft Defender for Endpoint Twój zespół operacyjny bezpieczeństwa może zbadać te próby i rozwiązać je.
+Używając [wykrywanie i reagowanie w punktach końcowych](overview-endpoint-detection-response.md) zaawansowanych [funkcji](advanced-hunting-overview.md) łowiectwo w programie Ochrona punktu końcowego w usłudze Microsoft Defender, Twój zespół operacyjny bezpieczeństwa może zbadać te próby i rozwiązać je.
 
 ## <a name="review-your-security-recommendations"></a>Przejrzyj zalecenia dotyczące zabezpieczeń
 
 Ochrona przed naruszeniami jest [zintegrowana z możliwościami & zarządzania lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md) . [Zalecenia dotyczące zabezpieczeń](tvm-security-recommendation.md) obejmują upewnioną, że ochrona przed naruszeniami jest włączona. Możesz na przykład wyszukiwać informacje dotyczące *manipulowania*. W wynikach wyszukiwania możesz wybrać pozycję **Włącz ochronę** przed naruszeniami, aby dowiedzieć się więcej i włączyć tę opcję.
 
-![Włącz ochronę przed naruszeniami.](images/tamperprotectsecurityrecos.png)
+:::image type="content" source="images/tamperprotectsecurityrecos.png" alt-text="Włączanie ochrony przed naruszeniami w Centrum zabezpieczeń usługi Microsoft Defender zabezpieczeń" lightbox="images/tamperprotectsecurityrecos.png":::
 
 Aby dowiedzieć się więcej o zarządzaniu & zagrożeniami, zobacz Informacje o pulpicie nawigacyjnym — informacje [Zarządzanie zagrożeniami i lukami](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
@@ -259,7 +259,7 @@ Aby dowiedzieć się więcej o zarządzaniu & zagrożeniami, zobacz Informacje o
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>W jakich wersjach programu Windows skonfigurować ochronę przed naruszeniami?
 
-Windows 10 systemu operacyjnego [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) lub nowszego wraz z [programem Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
+Windows 10 system operacyjny [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) lub nowszy razem [z Ochrona punktu końcowego w usłudze Microsoft Defender.](/microsoft-365/security/defender-endpoint)
   
 Windows 10 Enterprise wielu sesji
 
@@ -267,7 +267,7 @@ Windows 11
 
 Windows 11 Enterprise wielu sesji
   
-Jeśli korzystasz z programu Menedżer konfiguracji w wersji 2006 z dołączoną dzierżawą, ochronę przed naruszeniami można wydłużyć do wersji Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 i Windows Server 2022. Zobacz [Dołączanie dzierżawy: Tworzenie i wdrażanie zasad ochrony punktu końcowego Oprogramowania antywirusowego w centrum administracyjnym (wersja Preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
+Jeśli korzystasz z programu Configuration Manager w wersji 2006, razem z dołączaniem dzierżawy ochronę przed naruszeniami można wydłużyć do wersji Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 i Windows Server 2022. Zobacz [Dołączanie dzierżawy: Tworzenie i wdrażanie zasad ochrony punktu końcowego Oprogramowania antywirusowego w centrum administracyjnym (wersja Preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>Czy ochrona przed naruszeniami będzie mieć wpływ na rejestrację oprogramowania antywirusowego niebędące przez firmę Microsoft w Zabezpieczenia Windows aplikacji?
 
@@ -275,37 +275,37 @@ L.p. Produkty antywirusowe innych niż firmy Microsoft będą nadal rejestrować
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>Co się stanie, Program antywirusowy Microsoft Defender nie jest aktywne na urządzeniu?
 
-Urządzenia, które są podłączone do programu Microsoft Defender dla punktu końcowego, Program antywirusowy Microsoft Defender działają w trybie pasywnym. W takich przypadkach ochrona przed naruszeniami będzie nadal chronić usługę i jej funkcje.
+Urządzenia, które są podłączone do Ochrona punktu końcowego w usłudze Microsoft Defender będą Program antywirusowy Microsoft Defender uruchomione w trybie pasywnym. W takich przypadkach ochrona przed naruszeniami będzie nadal chronić usługę i jej funkcje.
 
-### <a name="how-do-i-turn-tamper-protection-on-or-off"></a>Jak włączyć lub wyłączyć ochronę przed naruszeniami?
+### <a name="how-do-i-turn-tamper-protection-on-or-off"></a>Jak mogę włączyć lub wyłączyć ochronę przed naruszeniami?
 
 Jeśli jesteś użytkownikiem domowym, zobacz Zarządzanie ochroną przed naruszeniami [na poszczególnych urządzeniach](#manage-tamper-protection-on-an-individual-device).
 
-Jeśli jesteś organizacją korzystającą z programu [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), powinno być możliwe zarządzanie ochroną przed naruszeniami w usłudze Intune podobnie jak zarządzanie innymi funkcjami ochrony punktu końcowego. Zobacz następujące sekcje tego artykułu:
+Jeśli jesteś organizacją korzystającą z usługi [Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint), możesz zarządzać zabezpieczeniami przed Intune podobnie jak innymi funkcjami ochrony punktu końcowego. Zobacz następujące sekcje tego artykułu:
 
 - [Zarządzanie zabezpieczeniami przed naruszeniami przy użyciu Microsoft Endpoint Manager](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager)
 - [Zarządzanie zabezpieczeniami przed naruszeniami przy użyciu Microsoft 365 Defender zabezpieczeń](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)
 
-### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Jak skonfigurowanie ochrony przed naruszeniami w usłudze Intune wpływa na sposób zarządzania Program antywirusowy Microsoft Defender za pomocą usługi zasady grupy?
+### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Jak skonfigurowanie ochrony przed naruszeniami w programie Intune wpływa na sposób zarządzania Program antywirusowy Microsoft Defender za pomocą zasady grupy?
 
 Zasady grupy nie dotyczą ochrony przed naruszeniami. Zmiany wprowadzone w ustawieniach Program antywirusowy Microsoft Defender są ignorowane w przypadku korzystania z ochrony przed naruszeniami.
 
 ### <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>Jeśli używamy Microsoft Intune do konfigurowania ochrony przed naruszeniami, czy ma ona zastosowanie tylko do całej organizacji?
 
-Masz elastyczność w konfigurowaniu ochrony przed naruszeniami w usłudze Intune. Możesz kierować zawartość do całej organizacji lub wybierać konkretne urządzenia i grupy użytkowników.
+Konfigurowanie ochrony przed naruszeniami przy użyciu aplikacji Intune jest elastyczne. Możesz kierować zawartość do całej organizacji lub wybierać konkretne urządzenia i grupy użytkowników.
 
 ### <a name="can-i-configure-tamper-protection-with-microsoft-endpoint-configuration-manager"></a>Czy mogę skonfigurować ochronę przed naruszeniami za pomocą Microsoft Endpoint Configuration Manager?
 
 Jeśli używasz dołączania dzierżawy, możesz użyć Microsoft Endpoint Configuration Manager. Zobacz następujące zasoby:
 
-- [Zarządzanie ochroną przed naruszeniami w organizacji za Menedżer konfiguracji 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
-- [Blog Community: Ogłaszanie ochrony przed naruszeniami dla klientów dołączania Menedżer konfiguracji dzierżawy](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
+- [Zarządzanie ochroną przed naruszeniami w organizacji za Configuration Manager wersji 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
+- [Blog Community: Ogłaszanie ochrony przed naruszeniami dla klientów dołączania Configuration Manager dzierżawy](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
-### <a name="i-have-the-windows-e3-enrollment-can-i-use-configuring-tamper-protection-in-intune"></a>Mam Windows E3. Czy mogę używać konfigurowania ochrony przed naruszeniami w usłudze Intune?
+### <a name="i-have-the-windows-e3-enrollment-can-i-use-configuring-tamper-protection-in-intune"></a>Mam Windows E3. Czy mogę korzystać z funkcji konfigurowania ochrony przed naruszeniami w Intune?
 
-Obecnie konfigurowanie ochrony przed naruszeniami w usłudze Intune jest dostępne tylko dla klientów korzystających z programu [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
+Obecnie konfigurowanie ochrony przed naruszeniami w programie Intune jest dostępne tylko dla klientów, którzy mają [Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint).
 
-### <a name="what-happens-if-i-try-to-change-microsoft-defender-for-endpoint-settings-in-intune-microsoft-endpoint-configuration-manager-and-windows-management-instrumentation-when-tamper-protection-is-enabled-on-a-device"></a>Co się stanie, jeśli spróbuję zmienić ustawienia programu Microsoft Defender dla punktu końcowego w usłudze Intune, Microsoft Endpoint Configuration Manager i Windows Management Instrumentation po włączeniu ochrony przed naruszeniami na urządzeniu?
+### <a name="what-happens-if-i-try-to-change-microsoft-defender-for-endpoint-settings-in-intune-microsoft-endpoint-configuration-manager-and-windows-management-instrumentation-when-tamper-protection-is-enabled-on-a-device"></a>Co się stanie, jeśli spróbuję zmienić Ochrona punktu końcowego w usłudze Microsoft Defender w programach Intune, Microsoft Endpoint Configuration Manager i Windows Management Instrumentation podczas ochrony przed naruszeniami jest włączona na urządzeniu?
 
 Nie będzie można zmieniać funkcji chronionych za pomocą ochrony przed naruszeniami. takie żądania zmiany są ignorowane.
 
@@ -313,9 +313,9 @@ Nie będzie można zmieniać funkcji chronionych za pomocą ochrony przed narusz
 
 L.p. Administratorzy lokalni nie mogą zmieniać ani modyfikować ustawień ochrony przed naruszeniami.
 
-### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>Co się stanie, jeśli urządzenie jest w nim dołoowane do usługi Microsoft Defender for Endpoint, a następnie przechodzi w stan poza tablicą?
+### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>Co się stanie, jeśli urządzenie zostanie na nim Ochrona punktu końcowego w usłudze Microsoft Defender, a następnie przejdzie w stan poza tablicą?
 
-Jeśli urządzenie jest odłączone od programu Microsoft Defender for Endpoint, ochrona przed naruszeniami jest włączona, co jest stanem domyślnym dla urządzeń niezakierowanych.
+Jeśli urządzenie jest odłączone od urządzenia Ochrona punktu końcowego w usłudze Microsoft Defender, ochrona przed naruszeniami jest włączona, co jest stanem domyślnym dla urządzeń niezamaniowanych.
 
 ### <a name="if-the-status-of-tamper-protection-changes-are-alerts-shown-in-the-microsoft-365-defender-portal"></a>Jeśli stan ochrony przed naruszeniami jest inny, czy alerty są wyświetlane w Microsoft 365 Defender zabezpieczeń?
 
@@ -331,6 +331,6 @@ Zespół operacyjny ds. zabezpieczeń może również korzystać z zapytań łow
 
 [Pomóż zabezpieczyć Windows PC za pomocą Endpoint Protection dla Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
-[Omówienie programu Microsoft Defender dla punktu końcowego](/microsoft-365/security/defender-endpoint)
+[Omówienie funkcji Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint)
 
-[Razem lepiej: program Program antywirusowy Microsoft Defender i program Microsoft Defender dla punktu końcowego](why-use-microsoft-defender-antivirus.md)
+[Razem lepiej: Program antywirusowy Microsoft Defender i Ochrona punktu końcowego w usłudze Microsoft Defender](why-use-microsoft-defender-antivirus.md)

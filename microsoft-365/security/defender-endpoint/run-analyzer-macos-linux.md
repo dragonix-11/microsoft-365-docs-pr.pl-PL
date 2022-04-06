@@ -1,6 +1,6 @@
 ---
 title: Uruchamianie analizatora klienta w systemie macOS lub Linux
-description: Dowiedz się, jak uruchomić program Microsoft Defender for Endpoint Client Analyzer w systemie macOS lub Linux
+description: Dowiedz się, jak uruchomić analizatora Ochrona punktu końcowego w usłudze Microsoft Defender klienta w systemie macOS lub Linux
 keywords: analizator klienta, czujnik rozwiązywania problemów, analizator, mdeanalyzer, macos, linux, mdeanalyzer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f6767b1a788129266bff713a6608277a2450598c
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: d56cbb48697c4804aa493d945ff81c52e12f86c5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775901"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470092"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Uruchamianie analizatora klienta w systemach macOS i Linux
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="running-the-analyzer-through-gui-scenario"></a>Uruchamianie analizatora przy użyciu scenariusza graficznego interfejsu użytkownika
 
@@ -74,7 +74,7 @@ Otwórz terminal lub SSH na odpowiednim komputerze i uruchom następujące polec
 
 Przykład:
 
-![Obraz przykładowego wiersza polecenia.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+:::image type="content" source="images/4ca188f6c457e335abe3c9ad3eddda26.png" alt-text="Przykład wiersza polecenia" lightbox="images/4ca188f6c457e335abe3c9ad3eddda26.png":::
 
 Dodatkowa pomoc w składni:
 
@@ -113,7 +113,7 @@ Dodatkowa pomoc w składni:
 
 - Processes_information.txt
 
-  Opis: zawiera szczegóły uruchomionych procesów związanych z programem Microsoft Defender for Endpoint w systemie.
+  Opis: zawiera szczegóły uruchomionego Ochrona punktu końcowego w usłudze Microsoft Defender powiązanych procesów w systemie.
 
 - Log.txt
 

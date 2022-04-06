@@ -1,7 +1,7 @@
 ---
-title: Wdowe Windows do programu Microsoft Defender dla punktu końcowego za pośrednictwem zasady grupy
-description: Użyj zasady grupy, aby wdrożyć pakiet konfiguracji na Windows urządzeniach, aby zostały one do nich podłączone.
-keywords: konfigurowanie urządzeń przy użyciu zasad grupy, zarządzanie urządzeniami, konfigurowanie programu Microsoft Defender dla urządzeń końcowych, dołączanie programu Microsoft Defender dla urządzeń końcowych, zasady grupy
+title: Na urządzeniach Windows, które można Ochrona punktu końcowego w usłudze Microsoft Defender przez zasady grupy
+description: Użyj zasady grupy, aby wdrożyć pakiet konfiguracji na Windows urządzeniach, aby zostały one do nich dołoowane do usługi.
+keywords: konfigurowanie urządzeń przy użyciu zasad grupy, zarządzania urządzeniami, Ochrona punktu końcowego w usłudze Microsoft Defender urządzeń, urządzeń Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach Ochrona punktu końcowego w usłudze Microsoft Defender, zasady grupy
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 3b20242247e33f8550ce4d153c2f2618c64d7007
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e05927829ec680a303972090dc050514c31cdbc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324343"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468970"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Na urządzeniach Windows przy użyciu aplikacji zasady grupy 
 
@@ -31,19 +31,19 @@ ms.locfileid: "63324343"
 
 **Dotyczy:**
 
-- zasady grupy
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Zasady grupy
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 > [!NOTE]
-> Aby wdrożyć zasady grupy GP, musisz korzystać z programu Windows Server 2008 R2 lub nowszego.
+> Aby wdrożyć pakiet za pomocą zasady grupy GP, musisz być na Windows Server 2008 R2 lub nowszym.
 >
-> W przypadku Windows Server 2019 i Windows Server 2022 może być konieczne zastąpienie katalogu NT AUTHORITY\Well-Known-System-Account zarządzaniem NT AUTHORITY\SYSTEM pliku XML, który jest zasady grupy preferencji serwera.
+> W przypadku systemów Windows Server 2019 i Windows Server 2022 może być konieczne zastąpienie katalogu NT AUTHORITY\Well-Known-System-Account na NT AUTHORITY\SYSTEM pliku XML, który tworzy preferencja zasady grupy.
 
 > [!NOTE]
-> Jeśli używasz nowego, ujednoliconego rozwiązania Microsoft Defender for Endpoint dla wersji Windows Server 2012 R2 i 2016, upewnij się, że używasz najnowszych plików ADMX w Twoim centralnym magazynie, aby uzyskać dostęp do odpowiednich opcji zasad programu Microsoft Defender dla punktu końcowego. Informacje na [temat tworzenia i](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) zarządzania centralną magazynem witryn zasady grupy administracyjnego w programie Windows oraz pobierania najnowszych plików do używania z **Windows 10.**
+> Jeśli korzystasz z nowego, ujednoliconego rozwiązania Ochrona punktu końcowego w usłudze Microsoft Defender dla wersji Windows Server 2012 R2 i 2016, upewnij się, że używasz najnowszych plików ADMX w centralnym magazynie, aby uzyskać dostęp do właściwych Ochrona punktu końcowego w usłudze Microsoft Defender opcji zasad. Informacje na [temat tworzenia i](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) zarządzania centralnym magazynem dla szablonów administracyjnych zasady grupy w programie Windows oraz pobierania najnowszych plików do użytku z **Windows 10.**
 
 Zapoznaj się z [plikiem PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) aby zobaczyć różne ścieżki wdrożenia programu Defender dla punktu końcowego.
 
@@ -59,11 +59,11 @@ Zapoznaj się z [plikiem PDF](https://download.microsoft.com/download/5/6/0/5609
 
 2. Wyodrębnianie zawartości pliku .zip do udostępnionej lokalizacji tylko do odczytu, do której dostęp jest możliwy na urządzeniu. Powinien mieć folder o nazwie *OptionalParamsPolicy* i plik *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Aby utworzyć nowy obiekt zasad grupy, otwórz zasady grupy [zarządzania](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) danymi (GPMC), kliknij prawym przyciskiem myszy zasady grupy **obiekty** , które chcesz skonfigurować, a następnie kliknij pozycję **Nowy**. Wprowadź nazwę nowego serwera zasad grupy w wyświetlonym oknie dialogowym i kliknij przycisk **OK**.
+3. Aby utworzyć nowy obiekt zasad grupy, otwórz konsolę [zarządzania zasady grupy (](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)GPMC), kliknij prawym przyciskiem myszy zasady grupy **obiektami**, które chcesz skonfigurować, i kliknij pozycję **Nowy**. Wprowadź nazwę nowego serwera zasad grupy w wyświetlonym oknie dialogowym i kliknij przycisk **OK**.
 
 4. Otwórz [konsolę zasady grupy zarządzania](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), kliknij prawym przyciskiem myszy obiekt zasady grupy obiekt (GPO), który chcesz skonfigurować, a następnie kliknij polecenie **Edytuj**.
 
-5. W **edytorze zasady grupy zarządzaniem** przejdź do opcji Konfiguracja **komputera,** Preferencje **, a** następnie **Ustawienia Panelu sterowania**.
+5. W **oknie zasady grupy zarządzania** przejdź do opcji Konfiguracja **komputera,** Preferencje **i** **Ustawienia Panelu sterowania**.
 
 6. Kliknij prawym przyciskiem **myszy pozycję Zaplanowane zadania**, wskaż pozycję **Nowe**, a następnie kliknij pozycję **Zadanie natychmiastowe (co najmniej Windows 7).**
 
@@ -77,7 +77,7 @@ Zapoznaj się z [plikiem PDF](https://download.microsoft.com/download/5/6/0/5609
 
 11. Wybierz **przycisk OK** i zamknij wszystkie otwarte okna GPMC.
 
-12. Aby połączyć element zasad grupy z jednostką jednostki organizacyjnej, kliknij prawym przyciskiem myszy i wybierz polecenie **Połącz istniejący element zasad grupy**. W wyświetlonym oknie dialogowym wybierz obiekt, zasady grupy, który chcesz połączyć. Kliknij przycisk **OK**.
+12. Aby połączyć element zasad grupy z jednostką jednostki organizacyjnej, kliknij prawym przyciskiem myszy i wybierz polecenie **Połącz istniejący element zasad grupy**. W wyświetlonym oknie dialogowym wybierz zasady grupy obiekt, który chcesz połączyć. Kliknij przycisk **OK**.
 
 > [!TIP]
 > Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, zobacz Uruchamianie testu wykrywania na nowo włodarzony [program Defender dla urządzenia końcowego](run-detection-test.md).
@@ -102,9 +102,9 @@ Możesz użyć funkcji zasady grupy (GP) do skonfigurowania ustawień, takich ja
 
     - Kopiowanie _pliku AtpConfiguration.adml_ do pliku _\\\<forest.root\>\\\\SysVolPoliciesPolicyDefinitionsen-US\\\<forest.root\>\\\\\\_
 
-2. Otwórz zasady grupy [zarządzania usługami](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), kliknij prawym przyciskiem myszy odpowiedni serwer zasad grupy, a następnie kliknij polecenie **Edytuj**.
+2. Otwórz [konsolę zasady grupy zarządzania](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), kliknij prawym przyciskiem myszy odpowiedni serwer zasad grupy, a następnie kliknij polecenie **Edytuj**.
 
-3. W zasady grupy **zarządzania przejdź** do **konfiguracja komputera**.
+3. W **zasady grupy zarządzania przejdź** do **konfiguracja komputera**.
 
 4. Kliknij **pozycję Zasady**, **a następnie pozycję Szablony administracyjne**.
 
@@ -119,7 +119,7 @@ Możesz użyć funkcji zasady grupy (GP) do skonfigurowania ustawień, takich ja
 
 ### <a name="update-endpoint-protection-configuration"></a>Aktualizowanie konfiguracji ochrony punktu końcowego
 
-Po skonfigurowaniu skryptu dołączania kontynuuj edytowanie tych samych zasad grupy, aby dodać konfiguracje ochrony punktu końcowego. Przekonuj edycję zasad grupy z systemu z systemem Windows 10 lub Server 2019, Windows 11 lub Windows Server 2022, aby mieć pewność, że masz wszystkie wymagane funkcje Program antywirusowy Microsoft Defender. W celu zarejestrowania ustawień konfiguracji usługi Defender ATP może być konieczne zamknięcie i ponowne otwarcie obiektu zasad grupy.
+Po skonfigurowaniu skryptu dołączania kontynuuj edytowanie tych samych zasad grupy, aby dodać konfiguracje ochrony punktu końcowego. Przekonuj edycję zasad grupy z systemu z systemem Windows 10 lub Server 2019, Windows 11 lub Windows Server 2022, aby mieć pewność, że masz wszystkie wymagane funkcje Program antywirusowy Microsoft Defender grupy. W celu zarejestrowania ustawień konfiguracji usługi Defender ATP może być konieczne zamknięcie i ponowne otwarcie obiektu zasad grupy.
 
 Wszystkie zasady znajdują się w obszarze `Computer Configuration\Policies\Administrative Templates`.
 
@@ -183,7 +183,7 @@ Pobierz bieżącą listę reguł zmniejszania powierzchni ataków, ds identyfika
 
    Spowoduje to skonfigurowanie każdej z nich tylko do inspekcji.
 
-   ![Obraz konfiguracji ograniczania powierzchni ataków.](images/asr-guid.png)
+   :::image type="content" source="images/asr-guid.png" alt-text="Konfiguracja zmniejszania powierzchni ataków" lightbox="images/asr-guid.png":::
 
 Zasady|Lokalizacja|Ustawienie
 ---|---|---
@@ -191,7 +191,7 @@ Konfigurowanie kontrolowanego dostępu do folderu| \Windows Components\Program a
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Uruchamianie testu wykrywania w celu zweryfikowania do uruchomienia
 
-Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, zobacz Uruchamianie testu wykrywania na nowo włodarzony [program Microsoft Defender dla urządzenia końcowego](run-detection-test.md).
+Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, [zobacz Uruchamianie testu](run-detection-test.md) wykrywania na nowo Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach.
 
 ## <a name="offboard-devices-using-group-policy"></a>Urządzenia wye korzystające z zasady grupy
 
@@ -214,7 +214,7 @@ Ze względów bezpieczeństwa pakiet używany na urządzeniach offboardowych wyg
 
 3. Otwórz [konsolę zasady grupy zarządzania](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), kliknij prawym przyciskiem myszy obiekt zasady grupy obiekt (GPO), który chcesz skonfigurować, a następnie kliknij polecenie **Edytuj**.
 
-4. W **oknie zasady grupy zarządzania** przejdź do opcji Konfiguracja komputera **,** Preferencje **, a** następnie **Ustawienia Panelu sterowania**.
+4. W **oknie zasady grupy zarządzania** przejdź do opcji Konfiguracja komputera **, Preferencje**, a następnie **Ustawienia Panelu sterowania**.
 
 5. Kliknij prawym przyciskiem myszy **pozycję Zaplanowane zadania**, wskaż pozycję **Nowe**, a następnie kliknij pozycję **Zadanie natychmiastowe**.
 
@@ -233,7 +233,7 @@ Ze względów bezpieczeństwa pakiet używany na urządzeniach offboardowych wyg
 
 ## <a name="monitor-device-configuration"></a>Monitorowanie konfiguracji urządzenia
 
-Dzięki zasady grupy nie ma opcji monitorowania wdrażania zasad na urządzeniach. Monitorowanie można monitorować bezpośrednio w portalu lub przy użyciu różnych narzędzi wdrożeniowych.
+Po zasady grupy nie ma opcji monitorowania wdrażania zasad na urządzeniach. Monitorowanie można monitorować bezpośrednio w portalu lub przy użyciu różnych narzędzi wdrożeniowych.
 
 ## <a name="monitor-devices-using-the-portal"></a>Monitorowanie urządzeń za pomocą portalu
 
@@ -252,55 +252,53 @@ Utwórz nową zasady grupy lub pogrupuj te ustawienia z innymi zasadami. Zależy
 
 2. Przejdź do **strony Computer** **ConfigurationPoliciesAdministrative** >  >  **Templates** >  **Windows Components** >  **Program antywirusowy Microsoft Defender** >  **Ochrona w czasie rzeczywistym**.
 
-    :::image type="content" source="images/realtime-protect.png" alt-text="ochrony w czasie rzeczywistym.":::
+    :::image type="content" source="images/realtime-protect.png" alt-text="Ochrona w czasie rzeczywistym" lightbox="images/realtime-protect.png":::
 
 1. W folderze Kwarantanna skonfiguruj usuwanie elementów z folderu kwarantanny.
 
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="usuwanie elementów w folderze kwarantanny.":::
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="Usuwanie elementów z folderu kwarantanny" lightbox="images/removal-items-quarantine1.png":::
 
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="po usunięciu kwarantanny przez usunięcie konfiguracji.":::
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="Kwarantanna usuwania konfiguracji" lightbox="images/config-removal-items-quarantine2.png":::
 
 4. W folderze Skanowanie skonfiguruj ustawienia skanowania.
 
-    :::image type="content" source="images/gpo-scans.png" alt-text="skany gpo.":::
+    :::image type="content" source="images/gpo-scans.png" alt-text="skany gpo" lightbox="images/gpo-scans.png":::
 
 ### <a name="monitor-all-files-in-real-time-protection"></a>Monitorowanie wszystkich plików w ochronie w czasie rzeczywistym
 
 Przejdź do **szablonów administracyjnych zasad** \>  \> konfiguracji **komputera** \> **i Windows składników Program antywirusowy Microsoft Defender** \>  \> **ochrony w czasie rzeczywistym**.
 
- Ponieważ wartość ustawienia "Skanuj pliki przychodzące i wychodzące" wynosi 0, zasady grupy dotyczące ustawienia "Konfigurowanie monitorowania przychodzącego i wychodzącego pliku i działania programu" dla ustawienia "pełny dostęp dwukierunkowy" zostaną wyłączone.
-
-:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="konfigurowanie monitorowania przychodzącej aktywności dotyczącej plików wychodzących.":::
+:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="Konfigurowanie monitorowania przychodzącej aktywności dotyczącej plików wychodzących" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>Konfigurowanie Windows Defender SmartScreen
 
 1. Przejdź do **strony Szablony administracyjne** **zasad** \> konfiguracji \> **komputera** \> **i Windows składników Windows Defender** \> **SmartScreen** \> **Explorer**.
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer.":::
+   :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Konfigurowanie eksploratora ekranu inteligentnego usługi Windows Defender" lightbox="images/config-windows-def-smartscr-explorer.png":::
  
 2. Przejdź do **strony Computer** **ConfigurationPoliciesAdministrative** >  >  **Templates** >  **Windows Components** >  **Windows Defender SmartScreen** >  **Microsoft Edge**.
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen Edge.":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Konfigurowanie programu Windows Defender Smart Screen Edge" lightbox="images/config-windows-def-smartscr-explorer.png":::
 
 ### <a name="configure-potentially-unwanted-applications"></a>Konfigurowanie potencjalnie niechcianych aplikacji
 
 Przejdź do **strony Szablony** **administracyjne zasad konfiguracji** \> \> **komputera** \> **Windows składniki Program antywirusowy Microsoft Defender**\>.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config potential unwanted app.":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="Config potential unwanted app" lightbox="images/config-potential-unwanted-apps.png":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="możliwości konfiguracji.":::
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potencjalny konfiguracyjny" lightbox="images/config-potential-unwanted-apps2.png":::
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Konfigurowanie ochrony przed dostarczaniem w chmurze i automatyczne wysyłanie próbek
 
  Przejdź do **strony Szablony** **administracyjne** \> zasad konfiguracji \> **komputera** \> **Windows składniki Program antywirusowy Microsoft Defender** \> \> **MAPY**.
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="mapy.":::
+:::image type="content" source="images/gpo-maps1.png" alt-text="mapy" lightbox="images/gpo-maps1.png":::
 
-:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="bloku na pierwszy rzut oka.":::
+:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="Blokuj na pierwszy rzut oka" lightbox="images/gpo-maps-block-atfirst-sight.png":::
 
-:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="dołączanie do aplikacji Mapy Microsoft.":::
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="Dołącz do aplikacji Mapy Microsoft" lightbox="images/gpo-maps-join-ms-maps.png":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="wyślij próbkę pliku, gdy jest wymagana dalsza analiza.":::
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="Wyślij próbkę pliku, gdy jest wymagana dalsza analiza" lightbox="images/send-file-sample-further-analysis-require.png":::
 
 > [!NOTE]
 > Opcja **Wyślij wszystkie próbki** umożliwia najbardziej analizę czasników/skryptów/dokumentów, co zwiększa bezpieczeństwo.
@@ -312,23 +310,23 @@ Aby uzyskać więcej informacji, zobacz Włączanie ochrony chmury w [usłudze P
 
 Przejdź do **strony Szablony administracyjne** **zasad** \> konfiguracji \> **komputera** \> **i Windows składniki Program antywirusowy Microsoft Defender** \>  \> **aktualizacje analizy zabezpieczeń**.
 
-:::image type="content" source="images/signature-update-1.png" alt-text="aktualizowanie podpisu.":::
+:::image type="content" source="images/signature-update-1.png" alt-text="Aktualizacja podpisu" lightbox="images/signature-update-1.png":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="aktualizacja definicji podpisu.":::
+:::image type="content" source="images/signature-update-2.png" alt-text="Aktualizacja definicji podpisu" lightbox="images/signature-update-2.png":::
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Konfigurowanie limitu czasu i poziomu ochrony przed dostarczaniem w chmurze
 
 Przejdź do **strony Szablony administracyjne zasad** \>  \> konfiguracji  **komputera** \> **Windows składniki Program antywirusowy Microsoft Defender** \> \> **MpEngine**.
 Skonfigurowanie zasad na poziomie ochrony w chmurze do **domyślnego Program antywirusowy Microsoft Defender blokowania zasad** spowoduje ich wyłączenie. Jest to wymagane do ustawienia domyślnego poziomu ochrony dla okien.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="rozszerzona kontrola konfiguracji w chmurze.":::
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="Rozszerzony sprawdzanie konfiguracji w chmurze" lightbox="images/config-extended-cloud-check.png":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="poziom ochrony chmury.":::
+:::image type="content" source="images/cloud-protection-level.png" alt-text="poziom ochrony chmury konfiguracji" lightbox="images/cloud-protection-level.png":::
 
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Na urządzeniach Windows urządzeniach przy użyciu Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Na urządzeniach Windows urządzeniach przenośnych za pomocą narzędzi do zarządzania urządzeniami przenośnymi](configure-endpoints-mdm.md)
+- [Na urządzeniach Windows przenośnych za pomocą narzędzi mobilnych Zarządzanie urządzeniami urządzeniach przenośnych](configure-endpoints-mdm.md)
 - [Dołączanie Windows przy użyciu skryptu lokalnego](configure-endpoints-script.md)
-- [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)
-- [Uruchamianie testu wykrywania na nowo w urządzeniu z uruchomionym programem Microsoft Defender dla urządzeń z punktami końcowymi](run-detection-test.md)
-- [Rozwiązywanie problemów z dołączaniem do programu Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](configure-endpoints-vdi.md)
+- [Uruchamianie testu wykrywania na nowo Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach](run-detection-test.md)
+- [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender problemów z dołączaniem](troubleshoot-onboarding.md)

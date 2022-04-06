@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 3dfdd9f5187fba9a1e19e56a4df24cf1f7eff44b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 469edf3e8ae856ea6e94bada8ffb9d6c97ba8b66
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322439"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634476"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -27,10 +27,7 @@ Większość dostawców sprzętu nie dołącza jeszcze Teams w ramach obrazów. 
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune zmian
 
-Microsoft Managed Desktop dwie aplikacje do Twojej organizacji usługi Azure AD na Microsoft Teams. Są one wdrażane w klientach 64-bitowych lub 32-bitowych, odpowiednio do urządzenia:  
-
-- Nowoczesne miejsce pracy — Teams Instalatora komputera x64  
-- Nowoczesne miejsce pracy — Teams Instalatora komputera x32
+Microsoft Managed Desktop dodanie Microsoft Teams dzierżawy: Nowoczesne miejsce pracy — Teams Machine Wide Installer x64  
 
 ## <a name="updates"></a>Aktualizacje
 

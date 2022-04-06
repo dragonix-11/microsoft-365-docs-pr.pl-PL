@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 24cdf18ad510902a533834da2f3595acaa9b33d7
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: be2352ef44d8e9f7430cde39a71c7b7b1167a874
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595263"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634102"
 ---
 # <a name="web-content-filtering"></a>Filtrowanie zawartości sieci Web
 
@@ -52,7 +52,7 @@ Filtrowanie zawartości sieci Web jest dostępne w głównych przeglądarkach in
 
 Przed wypróbowaniem tej funkcji upewnij się, że są spełnione następujące wymagania:
 
-- Subskrypcja obejmuje jedną z następujących usług: Windows 10 Enterprise E5, Microsoft 365 E5, Zabezpieczenia platformy Microsoft 365 E5, Microsoft 365 E3 + Zabezpieczenia platformy Microsoft 365 E5 dodatku lub licencji Ochrona punktu końcowego w usłudze Microsoft Defender autonomicznej. 
+- Subskrypcja obejmuje jedną z następujących usług: Windows 10 Enterprise E5, Microsoft 365 E5, Zabezpieczenia platformy Microsoft 365 E5, Microsoft 365 E3 lub Ochrona punktu końcowego w usłudze Microsoft Defender autonomiczna. 
 
 - Masz dostęp do portalu <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender sieci.</a>
 

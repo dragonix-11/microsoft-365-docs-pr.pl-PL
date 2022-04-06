@@ -1,7 +1,7 @@
 ---
 title: Sterowanie urządzeniem dla systemu macOS
-description: Dowiedz się, jak skonfigurować program Microsoft Defender for Endpoint na komputerze Mac w celu zmniejszenia zagrożeń związanych z nośnikami wymiennymi, takimi jak urządzenia USB.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, wymienny, multimedia
+description: Dowiedz się, jak skonfigurować Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac w celu zmniejszenia zagrożeń związanych z nośnikami wymiennymi, takimi jak urządzenia USB.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, urządzenie, control, usb, wymienne, multimedia
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -15,23 +15,23 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fbe693272a2f2893dff5f8614f3f9eff301069fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011316"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477308"
 ---
 # <a name="device-control-for-macos"></a>Sterowanie urządzeniem dla systemu macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="requirements"></a>Wymagania
 
@@ -39,7 +39,7 @@ Sterowanie urządzeniem dla systemu macOS ma następujące wymagania wstępne:
 
 > [!div class="checklist"]
 >
-> - Uprawnienie Do programu Microsoft Defender dla punktu końcowego (może być próbna)
+> - Ochrona punktu końcowego w usłudze Microsoft Defender uprawnienia (może być próbna)
 > - Minimalna wersja systemu operacyjnego: macOS 11 lub nowsza
 > - Minimalna wersja produktu: 101.34.20
 
@@ -72,7 +72,7 @@ Zasady sterowania urządzeniami mogą służyć do:
 
 Jeśli wprowadzone zasady sterowania urządzeniem są wymuszane na urządzeniu (na przykład dostęp do nośniki wymiennych jest ograniczony), użytkownikowi jest wyświetlane powiadomienie.
 
-![Powiadomienie dotyczące sterowania urządzeniem.](images/mac-device-control-notification.png)
+:::image type="content" source="images/mac-device-control-notification.png" alt-text="Powiadomienie o kontrolce urządzenia" lightbox="images/mac-device-control-notification.png":::
 
 Gdy użytkownicy końcowi klikną to powiadomienie, w domyślnej przeglądarce zostanie otwarta strona sieci Web. Możesz skonfigurować adres URL, który jest otwierany po kliknięciu powiadomienia przez użytkowników końcowych.
 
@@ -329,7 +329,7 @@ W poniższym przykładzie pokazano, jak można połączyć wszystkie powyższe p
 
 W poniższych dokumentach podano więcej przykładów zasad sterowania urządzeniami:
 
-- [Przykłady zasad sterowania urządzeniami dla usługi Intune](mac-device-control-intune.md)
+- [Przykłady zasad sterowania urządzeniami dla Intune](mac-device-control-intune.md)
 - [Przykłady zasad sterowania urządzeniami dla jamf](mac-device-control-jamf.md)
 
 #### <a name="look-up-device-identifiers"></a>Sprawdź identyfikatory urządzeń
@@ -340,25 +340,26 @@ Aby znaleźć identyfikator dostawcy, identyfikator produktu i numer seryjny urz
 1. Podłącz urządzenie USB, dla którego chcesz sprawdzić identyfikatory.
 1. W menu najwyższego poziomu w systemie macOS wybierz pozycję **Informacje o tym komputerze Mac**.
 
-    ![Ten komputer Mac — informacje.](images/mac-device-control-lookup-1.png)
+   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="Strona Informacje o tym komputerze Mac" lightbox="images/mac-device-control-lookup-1.png":::
 
 1. Wybierz **pozycję Raport systemowy**.
 
-    ![Raport o systemie.](images/mac-device-control-lookup-2.png)
+   :::image type="content" source="images/mac-device-control-lookup-2.png" alt-text="Raport systemowy" lightbox="images/mac-device-control-lookup-2.png":::
 
 1. W lewej kolumnie wybierz pozycję **USB**.
 
-    ![Widok wszystkich urządzeń USB.](images/mac-device-control-lookup-3.png)
+   :::image type="content" source="images/mac-device-control-lookup-3.png" alt-text="Widok wszystkich urządzeń USB" lightbox="images/mac-device-control-lookup-3.png":::
+    
 
 1. W **obszarze Drzewo urządzeń USB** przejdź do podłączonego urządzenia USB.
 
-    ![Szczegóły urządzenia USB.](images/mac-device-control-lookup-4.png)
+   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="Szczegóły urządzenia USB" lightbox="images/mac-device-control-lookup-4.png":::
 
 1. Zostanie wyświetlony identyfikator dostawcy, identyfikator produktu i numer seryjny. Dodając identyfikator dostawcy i identyfikator produktu do zasad nośniki wymiennych, wystarczy dodać część `0x`po . Na przykład na poniższej ilustracji identyfikator dostawcy to `1000` , a identyfikator produktu to `090c`.
 
 #### <a name="discover-usb-devices-in-your-organization"></a>Odkryj urządzenia USB w swojej organizacji
 
-W programie Microsoft Defender for Endpoint advanced hunting możesz wyświetlać zdarzenia dotyczące montażu, unmount i zmieniania głośności z urządzeń USB. Te zdarzenia mogą być pomocne przy identyfikowaniu podejrzanych działań w zakresie użycia lub przeprowadzaniu wewnętrznych badań.
+Możesz wyświetlać zdarzenia dotyczące montażu, unmount i głośności pochodzące z urządzeń USB w Ochrona punktu końcowego w usłudze Microsoft Defender wyszukiwania zaawansowanego. Te zdarzenia mogą być pomocne przy identyfikowaniu podejrzanych działań w zakresie użycia lub przeprowadzaniu wewnętrznych badań.
 
 ```bash
 DeviceEvents
@@ -368,13 +369,13 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>Wdrażanie zasad sterowania urządzeniami
 
-Zasady sterowania urządzeniami muszą zostać uwzględnione obok innych ustawień produktu, zgodnie z opisem w tece Ustawianie preferencji programu [Microsoft Defender dla punktu końcowego w systemie macOS](mac-preferences.md).
+Zasady sterowania urządzeniem muszą być uwzględnione obok innych ustawień produktu, tak jak to opisano w tece Ustawianie preferencji Ochrona punktu końcowego w usłudze Microsoft Defender [w systemie macOS](mac-preferences.md).
 
 Ten profil można wdrożyć, korzystając z instrukcji podanych w [tece Wdrożenie profilu konfiguracji](mac-preferences.md#configuration-profile-deployment).
 
 ## <a name="troubleshooting-tips"></a>Porady dotyczące rozwiązywania problemów
 
-Po wypchnieniu profilu konfiguracji za pośrednictwem usługi Intune lub JAMF możesz sprawdzić, czy produkt został pomyślnie odebrany przez produkt, uruchamiając następujące polecenie z aplikacji Terminal:
+Po wypychaniu profilu konfiguracji przez program Intune lub JAMF możesz sprawdzić, czy produkt został pomyślnie odebrany przez produkt, uruchamiając następujące polecenie z aplikacji Terminal:
 
 ```bash
 mdatp device-control removable-media policy list
@@ -403,5 +404,5 @@ W powyższym przykładzie `read` `execute` jest podłączone tylko jedno wymienn
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Przykłady zasad sterowania urządzeniami dla usługi Intune](mac-device-control-intune.md)
+- [Przykłady zasad sterowania urządzeniami dla Intune](mac-device-control-intune.md)
 - [Przykłady zasad sterowania urządzeniami dla jamf](mac-device-control-jamf.md)

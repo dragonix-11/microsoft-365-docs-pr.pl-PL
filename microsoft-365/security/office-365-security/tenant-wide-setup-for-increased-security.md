@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie dzierżawy Microsoft 365 w celu zwiększenia zabezpieczeń
+title: Konfigurowanie dzierżawy platformy Microsoft 365 w celu zwiększenia bezpieczeństwa
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -21,20 +21,20 @@ ms.custom:
 description: W tym temacie oowiemy zalecane konfiguracje ustawień dla całej dzierżawy, które wpływają na bezpieczeństwo Twojego Microsoft 365 sieci.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94da7316c5e749cf6dcc5e038c185bea4790765f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 96f31d0fb9eb3ef9d6eaec396fdac8fe96b96c3d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682884"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476362"
 ---
-# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurowanie dzierżawy Microsoft 365 w celu zwiększenia zabezpieczeń
+# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurowanie dzierżawy platformy Microsoft 365 w celu zwiększenia bezpieczeństwa
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 W tym temacie oowiemy zalecane konfiguracje ustawień dla całej dzierżawy, które wpływają na bezpieczeństwo Twojego Microsoft 365 sieci. Twoje potrzeby w zakresie zabezpieczeń mogą wymagać większej lub mniejszej liczby zabezpieczeń. Na początek skorzystaj z tych zaleceń.
@@ -49,10 +49,10 @@ Portal Microsoft 365 Defender zawiera funkcje chroniące środowisko. Obejmuje o
 
 |Obszar|Zasady domyślne?|Zalecenie|
 |---|---|---|
-|**Ochrona przed wyłudzaniem informacji**|Tak|Skonfiguruj domyślne zasady ochrony przed wyłudzaniem informacji w sposób opisany tutaj: Konfigurowanie ustawień ochrony przed wyłudzaniem informacji w usługach [EOP i Defender for Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> Więcej informacji: <ul><li>[Zasady ochrony przed wyłudzaniem informacji w programie Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Zalecane ustawienia zasad ochrony przed wyłudzaniem informacji w programie Microsoft Defender dla Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Szczegółowe informacje o personifikacji](impersonation-insight.md)</li><li>[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)</li><li>[Zarządzaj listą zezwalania/blokowania dzierżawy](tenant-allow-block-list.md).</li></ul>|
+|**Ochrona przed wyłudzaniem informacji**|Tak|Skonfiguruj domyślne zasady ochrony przed wyłudzaniem informacji zgodnie z opisem w tym miejscu: Konfigurowanie ustawień ochrony przed wyłudzaniem informacji [w usługach EOP i Ochrona usługi Office 365 w usłudze Defender](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> Więcej informacji: <ul><li>[Zasady ochrony przed wyłudzaniem informacji w programie Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Zalecane ustawienia zasad ochrony przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Szczegółowe informacje o personifikacji](impersonation-insight.md)</li><li>[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)</li><li>[Zarządzaj listą zezwalania/blokowania dzierżawy](tenant-allow-block-list.md).</li></ul>|
 |**Aparat ochrony przed złośliwym oprogramowaniem**|Tak|Skonfiguruj domyślne zasady ochrony przed złośliwym oprogramowaniem zgodnie z opisem w tym miejscu: [Konfigurowanie ustawień ochrony przed złośliwym oprogramowaniem w u usługi EOP](protect-against-threats.md#part-1---anti-malware-protection-in-eop). <p> Więcej informacji: <ul><li>[Ochrona przed złośliwym oprogramowaniem](anti-malware-protection.md)</li><li>[Zalecane ustawienia zasad ochrony przed złośliwym oprogramowaniem](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem](configure-anti-malware-policies.md)</li></ul>|
-|**Sejf załączników w programie Defender dla Office 365**|Nie|Skonfiguruj ustawienia globalne dla załączników Sejf i utwórz zasady załączników wiadomości Sejf zgodnie z opisem w tym miejscu: Konfigurowanie ustawień załączników Sejf w programie [Microsoft Defender dla systemu Office 365](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365). <p> Więcej informacji: <ul><li>[Zalecane Sejf załączników](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Sejf załączników w programie Microsoft Defender dla Office 365](safe-attachments.md)</li><li>[Konfigurowanie zasad Sejf załączników](set-up-safe-attachments-policies.md)</li><li>[Sejf załączników do SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Bezpieczne dokumenty w usłudze Microsoft 365 E5](safe-docs.md)</li></ul>|
-|**Sejf linków w programie Microsoft Defender dla Office 365**|Nie|Skonfiguruj ustawienia globalne dla usługi Sejf Links i utwórz zasady usługi Sejf Links w sposób opisany tutaj: Konfigurowanie ustawień linków Sejf w programie [Microsoft Defender dla systemu Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> Więcej informacji: <ul><li>[Zalecane Sejf linków](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Konfigurowanie zasad Sejf linków](set-up-safe-links-policies.md)</li><li>[Sejf linków w programie Microsoft Defender dla Office 365](safe-links.md)</li><li>[Konfigurowanie ustawień globalnych dla programu Sejf Links w programie Microsoft Defender dla Office 365](configure-global-settings-for-safe-links.md)</li></ul>|
+|**Sejf załączników w programie Ochrona usługi Office 365 w usłudze Defender**|Nie|Skonfiguruj ustawienia globalne załączników Sejf i utwórz zasady załączników wiadomości Sejf w sposób opisany tutaj: Konfigurowanie Sejf [załączników](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365) w przeglądarce Ochrona usługi Office 365 w usłudze Microsoft Defender. <p> Więcej informacji: <ul><li>[Zalecane Sejf załączników](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Sejf załączników w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](safe-attachments.md)</li><li>[Konfigurowanie zasad Sejf załączników](set-up-safe-attachments-policies.md)</li><li>[Sejf załączników do SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Bezpieczne dokumenty w usłudze Microsoft 365 E5](safe-docs.md)</li></ul>|
+|**Sejf linków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender**|Nie|Skonfiguruj ustawienia globalne dla linków Sejf i utwórz zasady usługi Sejf w sposób opisany tutaj: Konfigurowanie ustawień Sejf [linków w przeglądarce Ochrona usługi Office 365 w usłudze Microsoft Defender](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> Więcej informacji: <ul><li>[Zalecane Sejf linków](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Konfigurowanie zasad Sejf linków](set-up-safe-links-policies.md)</li><li>[Sejf linków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](safe-links.md)</li><li>[Konfigurowanie ustawień globalnych linków Sejf w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-global-settings-for-safe-links.md)</li></ul>|
 |**Ochrona przed spamem (filtrowanie poczty)**|Tak|Konfigurowanie domyślnych zasad ochrony przed spamem zgodnie z opisem w tym miejscu: [Konfigurowanie ustawień ochrony przed spamem w u usługi EOP](protect-against-threats.md#part-3---anti-spam-protection-in-eop) <p> Więcej informacji: <ul><li>[Zalecane ustawienia zasad ochrony przed spamem](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[Ochrona przed spamem w uciekaniu poczty eop](anti-spam-protection.md)</li><li>[Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md)</li></ul>|
 |***Uwierzytelnianie pocztą e-mail***|Tak|Uwierzytelnianie wiadomości e-mail używa rekordów DNS do dodawania weryfikowalnych informacji do wiadomości e-mail dotyczących źródła i nadawcy wiadomości. Microsoft 365 automatycznie konfiguruje uwierzytelnianie poczty e-mail dla swojej domeny domyślnej (onmicrosoft.com), ale administratorzy usługi Microsoft 365 też mogą konfigurować uwierzytelnianie poczty e-mail dla domen niestandardowych. Używane są trzy metody uwierzytelniania: <ul><li>Spf (Lub Framework zasad dotyczących nadawców).</li><ul><li>Aby uzyskać informacje o konfiguracji, [zobacz Konfigurowanie spf w programie Microsoft 365 zapobiegania fałszersce](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>DKIM (DomainKeys Identified Mail).</li><ul><li>Zobacz [Używanie funkcji DKIM do sprawdzania poprawności wychodzących wiadomości e-mail wysłanych z domeny niestandardowej](use-dkim-to-validate-outbound-email.md).</li><li>Po skonfigurowaniu funkcji DKIM włącz ją w portalu Microsoft 365 Defender sieci.</li></ul><li>DMARC (Domain-based Message Authentication, Reporting, and Conformance).</li><ul><li>W przypadku konfiguracji funkcji DMARC [Użyj funkcji DMARC do sprawdzania poprawności wiadomości e-mail w Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
 
@@ -66,7 +66,7 @@ Odwiedź te raporty i pulpity nawigacyjne, aby dowiedzieć się więcej na temat
 |Pulpit nawigacyjny|Opis|
 |---|---|
 |Raporty zabezpieczeń poczty e-mail|Raporty te są dostępne w programie Exchange Online Protection. Aby uzyskać więcej informacji, [zobacz Wyświetlanie raportów zabezpieczeń poczty e-mail w Microsoft 365 Defender poczty e-mail](view-email-security-reports.md).|
-|Defender for Office 365 reports|Raporty są dostępne tylko w programie Defender dla Office 365. Aby uzyskać więcej informacji, [zobacz Wyświetlanie raportów programu Defender Office 365 w portalu Microsoft 365 Defender użytkowników](view-reports-for-mdo.md).|
+|Ochrona usługi Office 365 w usłudze Defender raportów|Raporty są dostępne tylko w Ochrona usługi Office 365 w usłudze Defender. Aby uzyskać więcej informacji, [zobacz Wyświetlanie Ochrona usługi Office 365 w usłudze Defender raportów w Microsoft 365 Defender portalu.](view-reports-for-mdo.md)|
 |Raporty przepływu poczty e-mail i szczegółowe informacje|Te raporty i szczegółowe informacje są dostępne w centrum Exchange administracyjnego (EAC). Aby uzyskać więcej informacji, zobacz [Raporty przepływu poczty e-mail](/exchange/monitoring/mail-flow-reports/mail-flow-reports) i [Szczegółowe informacje o przepływie poczty](/exchange/monitoring/mail-flow-insights/mail-flow-insights).|
 |[Eksplorator zagrożeń (lub wykrywanie w czasie rzeczywistym)](threat-explorer.md)|Jeśli badasz lub masz do czynienia z atakiem twojej dzierżawy, użyj Eksploratora (lub wykrywania w czasie rzeczywistym) do przeanalizowania zagrożeń. Eksplorator (i raport wykrywanie w czasie rzeczywistym) pokazuje ilość ataków w czasie i umożliwia analizowanie tych danych przez rodziny zagrożeń, infrastrukturę atakującą i nie tylko. Możesz również oznaczyć podejrzaną wiadomość e-mail na liście Zdarzenia.|
 
@@ -114,21 +114,21 @@ W międzyczasie można to zrobić przy użyciu jednej z następujących metod: w
 - Użyj programu PowerShell, zobacz [Blokowanie aplikacji, które nie używają nowoczesnego uwierzytelniania](/mem/intune/protect/app-modern-authentication-block).
 - Skonfiguruj to w centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a> na stronie "Dostęp urządzeń" — "Sterowanie dostępem z aplikacji, które nie używają nowoczesnego uwierzytelniania". Wybierz pozycję Zablokuj.
 
-## <a name="get-started-with-defender-for-cloud-apps-or-office-365-cloud-app-security"></a>Rozpoczynanie pracy z aplikacjami lub usługami w chmurze za pomocą usługi Defender Office 365 Cloud App Security
+## <a name="get-started-with-defender-for-cloud-apps-or-office-365-cloud-app-security"></a>Wprowadzenie z Defender dla Chmury i Office 365 Cloud App Security
 
 Za Office 365 Cloud App Security oceniaj ryzyko, ostrzegaj o podejrzanych działaniach i automatycznie podejmiesz działania. Wymaga Office 365 E5 planu.
 
-Możesz też skorzystać z usługi Microsoft Defender for Cloud Apps, aby uzyskać bardziej szczegółowe informacje nawet po przyznaniu dostępu, kompleksowych kontroli i ulepszoną ochronę dla wszystkich aplikacji w chmurze, w tym dla Office 365.
+Możesz również skorzystać z Microsoft Defender for Cloud Apps, aby uzyskać bardziej szczegółowe informacje nawet po przyznaniu dostępu, pełną kontrolę i ulepszoną ochronę dla wszystkich aplikacji w chmurze, w tym dla Office 365.
 
-Ponieważ to rozwiązanie zaleca plan EMS E5, zalecamy rozpoczęcie od programu Defender for Cloud Apps, aby można było używać go z innymi aplikacjami SaaS w Twoim środowisku. Zacznij od domyślnych zasad i ustawień.
+Ponieważ to rozwiązanie zaleca plan EMS E5, zalecamy rozpoczęcie od oprogramowania Defender dla Chmury Apps, aby można było używać go z innymi aplikacjami SaaS w Twoim środowisku. Zacznij od domyślnych zasad i ustawień.
 
 Więcej informacji:
 
-- [Wdrażanie usługi Defender dla aplikacji w chmurze](/cloud-app-security/getting-started-with-cloud-app-security)
-- [Więcej informacji na temat programu Microsoft Defender dla aplikacji w chmurze](https://www.microsoft.com/cloud-platform/cloud-app-security)
-- [Co to jest usługa Defender dla aplikacji w chmurze?](/cloud-app-security/what-is-cloud-app-security)
+- [Wdrażanie Defender dla Chmury aplikacji](/cloud-app-security/getting-started-with-cloud-app-security)
+- [Więcej informacji na temat Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Co to są Defender dla Chmury aplikacji?](/cloud-app-security/what-is-cloud-app-security)
 
-![Pulpit nawigacyjny usługi Defender for Cloud Apps.](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+:::image type="content" source="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png" alt-text="Pulpit Defender dla Chmury nawigacyjny aplikacje" lightbox="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png":::
 
 ## <a name="additional-resources"></a>Dodatkowe materiały
 

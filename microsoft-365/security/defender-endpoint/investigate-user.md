@@ -1,7 +1,7 @@
 ---
-title: Badanie konta użytkownika w programie Microsoft Defender dla punktu końcowego
+title: Badanie konta użytkownika w programie Ochrona punktu końcowego w usłudze Microsoft Defender
 description: Badanie konta użytkownika pod uwagę w przypadku potencjalnego naruszenia poświadczeń lub przeskok na skojarzone konto użytkownika w trakcie badania.
-keywords: badanie, konto, użytkownik, podmiot użytkownika, alert, usługa Microsoft Defender dla punktu końcowego
+keywords: badanie, konto, użytkownik, jednostka użytkownika, alert, Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +15,20 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: feebff9361f1504e94069e82a3de87a2e1d95c0c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 76b0b7405c8dc1c434fbc9f991903b25d8b9d4f4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312675"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469344"
 ---
-# <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Badanie konta użytkownika w programie Microsoft Defender dla punktu końcowego
+# <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Badanie konta użytkownika w programie Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -48,19 +48,19 @@ W tych widokach jest dostępny link do konta użytkownika, który można klikną
 
 Podczas badania jednostki konta użytkownika zobaczysz:
 
-- Szczegóły konta użytkownika, alerty usługi Microsoft Defender dla tożsamości oraz zalogowane urządzenia, rola, typ logowania i inne szczegóły
+- Szczegóły konta użytkownika, Microsoft Defender for Identity i zalogowane urządzenia, rola, typ logowania i inne szczegóły
 - Omówienie zdarzeń i urządzeń użytkownika
 - Alerty dotyczące tego użytkownika
 - Obserwowane w organizacji (urządzenia zalogowane do)
 
-![Obraz strony szczegółów encji konta użytkownika.](images/atp-user-details-view.png)
+:::image type="content" source="images/atp-user-details-view.png" alt-text="Strona szczegółów encji konta użytkownika" lightbox="images/atp-user-details-view.png":::
 
 ### <a name="user-details"></a>Szczegóły użytkownika
 
-Okienko  szczegółów użytkownika po lewej stronie zawiera informacje o użytkowniku, takie jak pokrewne zdarzenia otwarte, aktywne alerty, nazwa SAM, identyfikator SID, alerty usługi Microsoft Defender dla tożsamości, liczba urządzeń, na których użytkownik jest zalogowany, oraz informacje o pierwszym i ostatnim widzieli, rolach i typach logowania. W zależności od włączonych funkcji integracji zobaczysz inne szczegóły. Jeśli na przykład włączysz integrację usługi Skype dla firm, będzie można skontaktować się z użytkownikiem z portalu. Sekcja **Azure ATP alerts** (Alerty ATP) platformy Azure zawiera link, który umożliwia dostęp do strony Microsoft Defender for Identity, jeśli włączono funkcję Microsoft Defender for Identity i istnieją alerty dotyczące użytkownika. Na stronie Microsoft Defender for Identity zostaną podane dodatkowe informacje o alertach.
+Okienko  szczegółów użytkownika po lewej stronie zawiera informacje o użytkowniku, takie jak pokrewne zdarzenia otwarte, aktywne alerty, nazwa SAM, identyfikator SID, alerty Microsoft Defender for Identity, liczba urządzeń, na których użytkownik jest zalogowany, oraz czas pierwszego i ostatniego widzianego przez użytkownika, roli i typów logowania. W zależności od włączonych funkcji integracji zobaczysz inne szczegóły. Jeśli na przykład włączysz integrację usługi Skype dla firm, będzie można skontaktować się z użytkownikiem z portalu. Sekcja **Azure ATP alerts** (Alerty ATP) platformy Azure zawiera link, który spowoduje Microsoft Defender for Identity strony usługi Microsoft Defender for Identity, jeśli włączono funkcję Microsoft Defender for Identity i istnieją alerty dotyczące użytkownika. Strona Microsoft Defender for Identity zawiera więcej informacji o alertach.
 
 > [!NOTE]
-> Aby korzystać z tej funkcji, należy włączyć integrację zarówno z usługą Microsoft Defender for Identity, jak i Usługą Defender for Endpoint. W programie Defender for Endpoint możesz włączyć tę funkcję w zaawansowanych funkcjach. Aby uzyskać więcej informacji na temat włączania funkcji zaawansowanych, zobacz [Włączanie funkcji zaawansowanych](advanced-features.md).
+> Aby korzystać z tej funkcji, należy włączyć integrację zarówno z usługą Microsoft Defender for Identity, jak i usługą Defender for Endpoint. W programie Defender for Endpoint możesz włączyć tę funkcję w zaawansowanych funkcjach. Aby uzyskać więcej informacji na temat włączania funkcji zaawansowanych, zobacz [Włączanie funkcji zaawansowanych](advanced-features.md).
 
 Przegląd, Alerty i Obserwowane w organizacji to różne karty z różnymi atrybutami konta użytkownika.
 
@@ -101,9 +101,9 @@ Można filtrować wyniki według następujących okresów:
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Wyświetlanie i organizowanie kolejki alertów programu Microsoft Defender dla punktu końcowego](alerts-queue.md)
-- [Zarządzanie alertami programu Microsoft Defender dla punktów końcowych](manage-alerts.md)
-- [Badanie alertów programu Microsoft Defender dla punktów końcowych](investigate-alerts.md)
+- [Wyświetlanie i organizowanie kolejki Ochrona punktu końcowego w usłudze Microsoft Defender alertów](alerts-queue.md)
+- [Zarządzanie alertami Ochrona punktu końcowego w usłudze Microsoft Defender wiadomości](manage-alerts.md)
+- [Badanie Ochrona punktu końcowego w usłudze Microsoft Defender alertów](investigate-alerts.md)
 - [Badanie pliku skojarzonego z alertem programu Defender dla punktu końcowego](investigate-files.md)
 - [Badanie urządzeń na liście Usługi Defender dla urządzeń końcowych](investigate-machines.md)
 - [Badanie adresu IP skojarzonego z alertem programu Defender dla punktu końcowego](investigate-ip.md)

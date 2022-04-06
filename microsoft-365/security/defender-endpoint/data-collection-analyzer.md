@@ -16,31 +16,31 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 513432dfb24af89451c4d8290ce5fde0951819b9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2825bc87750dc9bb130e35f9a4997283e470f869
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322705"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469894"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Zbieranie danych na potrzeby zaawansowanego rozwiązywania problemów na Windows
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Podczas współpracy z specjalistami pomocy technicznej firmy Microsoft możesz zostać poproszony o użycie analizatora klienta do zbierania danych na potrzeby rozwiązywania bardziej złożonych scenariuszy. Skrypt analizatora obsługuje inne parametry w tym celu i może zbierać konkretny zestaw dzienników na podstawie obserwowanych symptomów, które należy zbadać.
 
 Uruchom polecenie **"MDEClientAnalyzer.cmd /?**' aby wyświetlić listę dostępnych parametrów i ich opis:
 
-![Obraz parametrów analizatora klienta w wierszu polecenia.](images/d89a1c04cf8441e4df72005879871bd0.png)
+:::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="Parametry dla parametru MDEClientAnalyzer.cmd" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
 > Gdy zostanie użyty dowolny parametr zaawansowanego rozwiązywania problemów, analizator także dzwoni [ ](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus)MpCmdRun.exew celu zbierania Program antywirusowy Microsoft Defender powiązanych dzienników pomocy technicznej.
 
 **-h** - Rozmowy z [rejestratorem Windows](/windows-hardware/test/wpt/wpr-command-line-options) wydajności w celu zebrania szczegółowego ogólnego śledzenia wydajności poza standardowym zestawem dzienników.
 
-**-l** — połączenia z wbudowanym [monitorem Windows wydajności](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters), aby zbierać uproszczone dane śledzenia z monitorem wydajności. Może to być przydatne w przypadku diagnozowania problemów z obniżeniem wydajności, które występują w czasie, ale trudnych do odtworzenia na żądanie.
+**-l** - Połączenia wbudowane [w Windows monitor wydajności,](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) aby zbierać uproszczone śledzenia perfmon. Może to być przydatne w przypadku diagnozowania problemów z obniżeniem wydajności, które występują w czasie, ale trudnych do odtworzenia na żądanie.
 
 **-c** — połączenia z [monitorem procesu w](/sysinternals/downloads/procmon) celu zaawansowanego monitorowania systemu plików w czasie rzeczywistym, rejestru oraz aktywności procesu/wątku. Jest to szczególnie przydatne podczas rozwiązywania problemów z różnymi scenariuszami zgodności aplikacji.
 
@@ -69,7 +69,7 @@ Uruchom polecenie **"MDEClientAnalyzer.cmd /?**' aby wyświetlić listę dostęp
 
 Analizator i wszystkie powyższe flagi scenariuszy można zainicjować zdalnie, uruchamiając polecenie "RemoteMDEClientAnalyzer.cmd", które jest także powiązane z zestawem narzędzi analizatora:
 
-![Obraz wiersza polecenia z informacjami analizatora.](images/57cab9d82d08f672a92bf9e748ac9572.png)
+:::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="Parametry dla remoteMDEClientAnalyzer.cmd" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
 >

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie i wyświetlanie wyjątków dla zaleceń dotyczących zabezpieczeń — Zarządzanie zagrożeniami i lukami
 description: Tworzenie i monitorowanie wyjątków dla zaleceń dotyczących zabezpieczeń w programie Zarządzanie zagrożeniami i lukami.
-keywords: Program Microsoft Defender for Endpoint remediation programu tvm, Microsoft Defender for Endpoint tvm, Zarządzanie zagrożeniami i lukami, threat & zarządzanie lukami w zabezpieczeniach, threat & zarządzanie lukami w zabezpieczeniach  remediation, tvm remediation intune, tvm remediation sccm
+keywords: Ochrona punktu końcowego w usłudze Microsoft Defender działania naprawcze w programie tvm, Ochrona punktu końcowego w usłudze Microsoft Defender tvm, Zarządzanie zagrożeniami i lukami, zagrożenia & zarządzanie lukami w zabezpieczeniach, działania naprawcze & zarządzanie lukami w zabezpieczeniach i zarządzania zagrożeniami, intune działania naprawcze w programie tvm, program tvm remediation sccm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3986d44027824f2ba9ca508567d518cce270450
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 00d7afd9daec71a14d4b789d1d6dcfe5eaf07d83
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63007883"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477198"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Tworzenie i wyświetlanie wyjątków dla zaleceń dotyczących zabezpieczeń — Zarządzanie zagrożeniami i lukami
 
@@ -29,11 +29,11 @@ ms.locfileid: "63007883"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Alternatywą dla żądania rozwiązania problemów, gdy w danej chwili zalecenie nie jest istotne, możesz utworzyć wyjątki dla zaleceń. Jeśli Twoja organizacja ma grupy urządzeń, będzie można zakresować wyjątek do konkretnych grup urządzeń. W przypadku wybranych grup urządzeń można utworzyć wyjątki lub dla wszystkich grup urządzeń, które już istnieją i istnieją.
 
@@ -43,19 +43,19 @@ W przypadku utworzenia wyjątku dla zalecenia zalecenie nie będzie aktywne do k
 
 Tylko użytkownicy z uprawnieniami do obsługi wyjątków mogą zarządzać wyjątkami (w tym tworzeniem lub anulowaniem). [Dowiedz się więcej o rolach RBAC](user-roles.md).
 
-![Widok uprawnień do obsługi wyjątków.](images/tvm-exception-permissions.png)
+:::image type="content" source="images/tvm-exception-permissions.png" alt-text="Uprawnienie do obsługi wyjątków" lightbox="images/tvm-exception-permissions.png":::
 
 ## <a name="create-an-exception"></a>Tworzenie wyjątku
 
 Wybierz zalecenie zabezpieczeń, dla których chcesz utworzyć wyjątek, a następnie wybierz pozycję **Opcje** wyjątków i wypełnij formularz.
 
-![Pokazywanie, gdzie przycisk "opcje wyjątków" znajduje się w wysuwanych menu z zaleceniem zabezpieczeń.](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="Lokalizacja przycisku opcji wyjątków w wysuwanych poleceniach zabezpieczeń" lightbox="images/tvm-exception-options.png":::
 
 ### <a name="exception-by-device-group"></a>Wyjątek według grupy urządzeń
 
 Zastosuj wyjątek do wszystkich bieżących grup urządzeń lub wybierz określone grupy urządzeń. Przyszłe grupy urządzeń nie będą uwzględniane w wyjątku. Grupy urządzeń, które już mają wyjątek, nie będą wyświetlane na liście. Jeśli wybierzesz tylko niektóre grupy urządzeń, stan zalecenia zmieni się z "aktywne" na "częściowy wyjątek". Stan zmieni się na "pełny wyjątek", jeśli wybierzesz wszystkie grupy urządzeń.
 
-![Lista rozwijana grupy urządzeń.](images/tvm-exception-device-group-500.png)
+:::image type="content" source="images/tvm-exception-device-group-500.png" alt-text="Lista rozwijana grupy Urządzenie" lightbox="images/tvm-exception-device-group-500.png":::
 
 #### <a name="filtered-views"></a>Widoki filtrowane
 
@@ -63,27 +63,27 @@ Jeśli na dowolnej stronie ustawień filtrowanych urządzeń jest wyświetlana g
 
 Jest to przycisk filtrowania według grupy urządzeń na dowolnej Zarządzanie zagrożeniami i lukami stronie:
 
-![Pokazywanie wybranego filtru grup urządzeń.](images/tvm-selected-device-groups.png)
+:::image type="content" source="images/tvm-selected-device-groups.png" alt-text="Wybrany filtr grup urządzeń" lightbox="images/tvm-selected-device-groups.png":::
 
 Widok wyjątków z odfiltrowanych grup urządzeń:
 
-![Lista rozwijana filtrowanych grup urządzeń.](images/tvm-exception-device-filter500.png)
+:::image type="content" source="images/tvm-exception-device-filter500.png" alt-text="Lista rozwijana filtrowanych grup urządzeń" lightbox="images/tvm-exception-device-filter500.png":::
 
 #### <a name="large-number-of-device-groups"></a>Duża liczba grup urządzeń
 
 Jeśli Twoja organizacja ma więcej niż 20 grup urządzeń, wybierz pozycję **Edytuj** obok opcji filtrowanych grup urządzeń.
 
-![Pokazuje, jak edytować dużą liczbę grup.](images/tvm-exception-edit-groups.png)
+:::image type="content" source="images/tvm-exception-edit-groups.png" alt-text="Procedura edytowania dużej liczby grup" lightbox="images/tvm-exception-edit-groups.png":::
 
 Zostanie wyświetlone wysuwne pole, w którym możesz wyszukiwać i wybierać grupy urządzeń do uwzględnionia. Wybierz ikonę znacznika wyboru pod ikony Wyszukaj, aby zaznaczyć lub usunąć zaznaczenie wszystkich.
 
-![Wyświetlanie wysuwu dużej grupy urządzeń.](images/tvm-exception-device-group-flyout-400.png)
+:::image type="content" source="images/tvm-exception-device-group-flyout-400.png" alt-text="Wysuuwana grupa urządzeń dużych urządzeń" lightbox="images/tvm-exception-device-group-flyout-400.png":::
 
 ### <a name="global-exceptions"></a>Wyjątki globalne
 
 Jeśli masz uprawnienia administratora globalnego, możesz utworzyć i anulować wyjątek globalny. Dotyczy to **wszystkich bieżących** i przyszłych grup urządzeń w organizacji i tylko użytkownik z podobnym uprawnieniem może go zmienić. Stan zalecenia zmieni się z "aktywny" na "pełny wyjątek".
 
-![Pokazywanie opcji wyjątku globalnego.](images/tvm-exception-global.png)
+:::image type="content" source="images/tvm-exception-global.png" alt-text="Opcja wyjątku globalnego" lightbox="images/tvm-exception-global.png":::
 
 Warto pamiętać o kilku kwestiach:
 
@@ -107,7 +107,7 @@ Przejdź do karty **Wyjątki** na stronie **Działania naprawcze** . Filtrowanie
 
  Wybierz wyjątek, aby otworzyć wysuwną ulotkę ze szczegółami. Wyjątki dla każdej grupy urządzeń będą zawierały listę wszystkich grup urządzeń, których wyjątek można wyeksportować. Możesz także wyświetlić pokrewne zalecenie lub anulować wyjątek.
 
-![Karta Wyjątki na stronie Działania naprawcze.](images/tvm-exception-view.png)
+:::image type="content" source="images/tvm-exception-view.png" alt-text="Karta Wyjątki na stronie Działania naprawcze" lightbox="images/tvm-exception-view.png":::
 
 ## <a name="how-to-cancel-an-exception"></a>Jak anulować wyjątek
 
@@ -115,25 +115,25 @@ Aby anulować wyjątek, przejdź do karty **Wyjątki** na stronie **Działania n
 
 Aby anulować wyjątek dla wszystkich grup urządzeń lub dla wyjątku globalnego, wybierz przycisk **Anuluj wyjątek dla wszystkich grup** urządzeń. Możesz anulować wyjątki tylko dla grup urządzeń, do których masz uprawnienia.
 
-![Przycisk Anuluj.](images/tvm-exception-cancel.png)
+:::image type="content" source="images/tvm-exception-cancel.png" alt-text="Przycisk Anuluj" lightbox="images/tvm-exception-cancel.png":::
 
 ### <a name="cancel-the-exception-for-a-specific-device-group"></a>Anulowanie wyjątku dla określonej grupy urządzeń
 
 Wybierz określoną grupę urządzeń, aby anulować wyjątek dla tej grupy. Dla grupy urządzeń pojawi się wysuw i możesz wybrać anuluj **wyjątek**.
 
-![Pokazuje, jak wybrać konkretną grupę urządzeń.](images/tvm-exception-device-group-hover.png)
+:::image type="content" source="images/tvm-exception-device-group-hover.png" alt-text="Procedura wybierania określonej grupy urządzeń" lightbox="images/tvm-exception-device-group-hover.png":::
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>Wpływ na widok po zastosowaniu wyjątków
 
 Na stronie Rekomendacje wybierz pozycję Dostosuj kolumny i zaznacz  pola wyboru Urządzenia udostępniane (po wyjątkach **)** i Wpływ **(po wyjątkach).**
 
-![Pokazywanie opcji dostosowywania kolumn.](images/tvm-after-exceptions.png)
+:::image type="content" source="images/tvm-after-exceptions.png" alt-text="Opcje dostosowywania kolumn" lightbox="images/tvm-after-exceptions.png":::
 
 W kolumnie dostępne urządzenia (po wyjątkach) są widoczne pozostałe urządzenia, które są nadal narażone na luki po zastosowaniu wyjątków. Wyjątek, który wpływa na ekspozycję, to na przykład "kontrola strony trzeciej" i "alternatywne środki zaradcze". Inne justowania nie zmniejszają ekspozycji urządzenia i są nadal uznawane za ujawnione.
 
 Wpływ (po wyjątkach) pokazuje pozostały wpływ na wynik ekspozycji lub bezpieczny wynik po zastosowaniu wyjątków. Wyjątki mające wpływ na wyniki obejmują "kontrolkę innej firmy" i "alternatywne ograniczenie". Inne justowanie nie zmniejsza ekspozycji urządzenia, a zatem wynik ekspozycji i bezpiecznej oceny nie zmieniają się.
 
-![Wyświetlanie kolumn w tabeli.](images/tvm-after-exceptions-table.png)
+:::image type="content" source="images/tvm-after-exceptions-table.png" alt-text="Kolumny w tabeli" lightbox="images/tvm-after-exceptions-table.png":::
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

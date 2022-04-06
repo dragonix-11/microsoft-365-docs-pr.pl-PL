@@ -17,22 +17,43 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się, co nowego w Mangeru zgodności, a co nowego. Przeczytaj o zaktualizowanych ocenach, nowych szablonach oceniania, nowych akcjach i nie tylko.
-ms.openlocfilehash: 48aed2e173231e3945bcdd3de73052de9f970a5b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0f368be06b33f485ff687c998615fb8578845daf
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317657"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634212"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Co nowego w Menedżerze zgodności firmy Microsoft
 
 **W tym artykule:** Dowiedz się więcej o najnowszych aktualizacjach w Menedżerze zgodności.
 
-## <a name="february-2022"></a>Luty 2022 r.
+## <a name="march-2022"></a>Marzec 2022 r.
+
+### <a name="new-templates-available"></a>Dostępne są nowe szablony
+
+Menedżer zgodności opublikował następujące nowe szablony ocen:
+
+**Globalna**
+- ISO 37301
+- NIST 800-207 - architektura Zero Trust
+- SIG 2022
+
+**Rząd Stanów Zjednoczonych**
+- CMMC v2 level 1
+- CMMC v2 level 2
+
+**Ameryka Północna**
+- Information Security Management Act — prowincja Kolumbii Brytyjskiej, Kalifornia
+
+Wyświetl pełną [listę szablonów formularzy oceniania](compliance-manager-templates-list.md).
 
 ### <a name="continuous-compliance-assessment-of-improvement-actions"></a>Ciągła ocena zgodności działań udoskonalania
 
 Dodamy zautomatyzowane testowanie i generowanie dowodów dla ponad 35 działań udoskonalania w Menedżerze zgodności, które wcześniej nie zostały objęte bezpiecznego wyniku. W ramach ciągłej oceny zgodności możesz otrzymywać aktualizacje dotyczące tych działań udoskonalania, które zostały ukończone, jeśli są one odpowiednie dla Twojej oceny zgodności i masz licencję na dostęp do odpowiednich rozwiązań. Ciągła ocena zgodności daje również użytkownikom wgląd w logikę oceniania działań udoskonalania oraz dostarcza szczegółowych informacji i dowodów na to, dlaczego otrzymano określony wynik. Ta funkcja współpracuje z istniejącymi integracjami z Microsoft 365 bezpiecznego wyniku, a wszelkie skonfigurowane wcześniej automatyczne akcje będą nadal działać bez żadnych danych. Dowiedz się więcej o [zautomatyzowanych ustawieniach testowania](compliance-manager-setup.md#set-up-automated-testing).
+
+## <a name="february-2022"></a>Luty 2022 r.
+
 ### <a name="alerts-and-alert-policies"></a>Alerty i zasady alertów
 
 Użytkownicy mogą teraz ustawiać alerty o zmianach w Menedżerze zgodności, które organizacja chce śledzić. Za pomocą kreatora łatwej konfiguracji możesz utworzyć zasady alertów w celu tworzenia powiadomień w przypadku zdarzeń następujących typów: zmiana wyniku akcji udoskonalania, zmiana przydziału akcji udoskonalania, zmiana testowania lub stanu implementacji w działaniu usprawniacym oraz przekazanie lub usunięcie pliku na karcie Dokumenty akcji udoskonalania. Aby dowiedzieć się więcej, zobacz [Alerty Menedżera zgodności i zasady alertów](compliance-manager-alert-policies.md).
@@ -43,18 +64,18 @@ Twoja organizacja może teraz uzyskać zalecenia z Menedżera zgodności dotycz�
 
 ## <a name="november-2021"></a>Listopad 2021
 
-### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>Integracja zerowym zaufaniem dla szablonu Planu bazowego ochrony danych
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>Zero Trust szablonu Plan bazowy ochrony danych
 
-Zero zaufania to proaktywne, zintegrowane podejście do zabezpieczeń na wszystkich warstwach cyfrowego rynku, które jawnie i nieprzerwanie sprawdza każdą transakcję, zapewnia najmniejsze uprawnienia i korzysta z analizy, zaawansowanych wykrywania oraz reakcji w czasie rzeczywistym na zagrożenia. Szablon Planu bazowego ochrony danych Menedżera zgodności, dostępny dla wszystkich użytkowników, integruje teraz 57 nowych kontrolek i 36 nowych akcji dla zerowego zaufania dostosowanych do następujących rodzin kontrolek:
+Zero Trust to proaktywne, zintegrowane podejście do zabezpieczeń na wszystkich warstwach cyfrowego rynku, które jawnie i nieprzerwanie sprawdza każdą transakcję, zapewnia najmniejsze uprawnienia i korzysta z analizy, zaawansowanych wykrywania oraz reakcji w czasie rzeczywistym na zagrożenia. Szablon Planu bazowego ochrony danych Menedżera zgodności, dostępny dla wszystkich użytkowników, teraz integruje 57 nowych kontrolek i 36 nowych akcji dla programu Zero Trust dostosowanych do następujących rodzin kontrolek:
 
-- Aplikacja zerowego zaufania
-- Wskazówki dotyczące tworzenia aplikacji bez zaufania
-- Punkt końcowy zerowego zaufania
-- Dane zerowego zaufania
-- Tożsamość zerowego zaufania
-- Infrastruktura zerowego zaufania
-- Sieć zerowego zaufania
-- Widoczność, automatyzacja i wartość bez zaufania
+- Zero Trust aplikacji
+- Zero Trust tworzenia aplikacji
+- Zero Trust punkt końcowy
+- Zero Trust danych
+- Zero Trust tożsamości
+- Zero Trust infrastruktury
+- Zero Trust Network
+- Zero Trust widoczność, automatyzacja i miksowanie
 
 ### <a name="new-preview-templates"></a>Nowe szablony podglądu
 

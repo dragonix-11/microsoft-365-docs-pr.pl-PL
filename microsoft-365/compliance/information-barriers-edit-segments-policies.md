@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie zasadami barier informacyjnych
-description: Dowiedz się, jak edytować lub usuwać zasady z barier informacyjnych.
+description: Dowiedz się, jak edytować lub usuwać zasady i segmenty z barier informacyjnych.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,44 +12,46 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: e5a8eac15ebb76d9b3c2c95b3eff2cf3bd29772e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc8cc7e4fcbfb9fe9c2ee0f1c531511d9c2fa0b6
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985305"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634366"
 ---
-# <a name="manage-information-barrier-policies"></a>Zarządzanie zasadami barier informacyjnych
+# <a name="manage-information-barriers-policies"></a>Zarządzanie zasadami barier informacyjnych
 
-Po [zdefiniowanych zasadach bariery](information-barriers-policies.md) informacyjnej może być konieczne wstanie wprowadzić zmiany w tych zasadach lub segmentach użytkowników w ramach rozwiązywania problemów lub regularnej konserwacji.[](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
+Po [zdefiniowanych zasadach barier](information-barriers-policies.md) informacyjnych może być konieczne wprowadzanie zmian w zasadach lub segmentach użytkowników w ramach rozwiązywania [](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) problemów lub regularnej konserwacji.
 
 ## <a name="what-do-you-want-to-do"></a>Co chcesz zrobić?
 
 |**Akcja**|**Opis**|
 |:---------|:--------------|
-| [Edytowanie atrybutów konta użytkownika](#edit-user-account-attributes) | Wypełnij atrybuty w Azure Active Directory których można używać do definiowania segmentów.<br/>Edytowanie atrybutów konta użytkownika, gdy użytkownicy nie są uwzględniane w segmentach, w których powinni się znaleźć, zmienianie segmentów, w których znajdują się użytkownicy, lub definiowanie segmentów przy użyciu różnych atrybutów. |
-| [Edytowanie segmentu](#edit-a-segment) | Edytuj segmenty, jeśli chcesz zmienić sposób zdefiniowanego segmentu. <br/>Na przykład możesz mieć pierwotnie zdefiniowane segmenty przy użyciu *funkcji Department* i teraz chcesz użyć innego atrybutu, na przykład *MemberOf*. |
-| [Edytowanie zasad](#edit-a-policy) | Edytuj zasady barier informacyjnej, jeśli chcesz zmienić sposób działania zasad.<br/>Na przykład zamiast blokowania komunikacji między dwoma segmentami możesz zezwolić na komunikację tylko między określonymi segmentami. |
+| [Edytowanie atrybutów konta użytkownika](#edit-user-account-attributes) | Wypełnij atrybuty w Azure Active Directory których można używać do definiowania segmentów. <br> Edytuj atrybuty konta użytkownika, gdy użytkownicy nie są uwzględnieni w segmentach, w których powinni się znaleźć, aby zmienić segmenty, w których znajdują się użytkownicy, lub zdefiniować segmenty za pomocą różnych atrybutów. |
+| [Edytowanie segmentu](#edit-a-segment) | Edytuj segmenty, jeśli chcesz zmienić sposób zdefiniowanego segmentu. <br> Na przykład możesz mieć pierwotnie zdefiniowane segmenty przy użyciu *funkcji Department* i teraz chcesz użyć innego atrybutu, na przykład *MemberOf*. |
+| [Edytowanie zasad](#edit-a-policy) | Edytuj zasady zawarte w barierach informacyjnych, jeśli chcesz zmienić sposób działania zasad.<br> Na przykład zamiast blokowania komunikacji między dwoma segmentami możesz zezwolić na komunikację tylko między określonymi segmentami. |
 | [Ustawianie zasad jako nieaktywnych](#set-a-policy-to-inactive-status) |Ustaw dla zasad status nieaktywny, jeśli chcesz wprowadzić zmiany w zasadach lub gdy nie chcesz, aby były obowiązywać. |
-| [Usuwanie zasad](#remove-a-policy) | Usuń zasady barier informacyjnej, gdy nie potrzebujesz już konkretnych zasad. |
-| [Zatrzymywanie aplikacji zasad](#stop-a-policy-application) | To działanie należy podjąć, aby zatrzymać proces stosowania zasad barier informacyjnych.<br/> Zatrzymanie aplikacji zasad nie jest natychmiastowe i nie powoduje cofnięcia zasad już zastosowanych do użytkowników. |
-| [Definiowanie zasad na barierach informacyjnych](information-barriers-policies.md) | Zdefiniuj zasady barier informacyjnej, jeśli takie zasady nie są jeszcze przez Ciebie określone, i musisz ograniczyć lub ograniczyć komunikację między określonymi grupami użytkowników. |
+| [Usuwanie zasad](#remove-a-policy) | Usuwaj bariery informacyjne, gdy nie potrzebujesz już określonej zasady. |
+| [Usuwanie segmentu](#remove-a-segment) | Usuwanie segmentu barier informacyjnych, gdy nie potrzebujesz już konkretnego segmentu. |
+| [Usuwanie zasad i segmentu](#remove-a-policy-and-segment) | Jednocześnie usuń zasady i segment informacji. |
+| [Zatrzymywanie aplikacji zasad](#stop-a-policy-application) | To działanie należy podjąć, aby zatrzymać proces stosowania barier informacyjnych. <br> Zatrzymywanie aplikacji zasad nie jest natychmiastowe i nie umożliwia cofnięcia zasad, które zostały już zastosowane do użytkowników. |
+| [Definiowanie zasad na barierach informacyjnych](information-barriers-policies.md) | Zdefiniuj zasady dotyczące informacji, które nie są jeszcze przez Ciebie zawarte, i musisz ograniczyć lub ograniczyć komunikację między określonymi grupami użytkowników. |
 | [Rozwiązywanie problemów z barierami informacyjnymi](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Zapoznaj się z tym artykułem w przypadku nieoczekiwanych problemów z barierami informacyjnymi. |
 
-> [!IMPORTANT]
-> Aby wykonać zadania opisane w tym artykule, musisz mieć przypisaną odpowiednią rolę, taką jak jedna z następujących czynności:<br/>— Microsoft 365 Enterprise administrator globalny<br/>— Administrator globalny<br/>- Administrator zgodności<br/>- Zarządzanie zgodnością IB (jest to nowa rola!)<br><br>Aby dowiedzieć się więcej o wymaganiach wstępnych dla barier informacyjnych, zobacz Wymagania wstępne (aby poznać zasady barier [informacyjnej).](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> Upewnij się, [że łączysz się z Centrum & zgodności programu PowerShell](/powershell/exchange/connect-to-scc-powershell).
+>[!IMPORTANT]
+>Aby wykonać zadania opisane w tym artykule, musisz mieć przypisaną odpowiednią rolę, taką jak jedna z następujących czynności:<br>— Microsoft 365 Enterprise administrator globalny<br>— Administrator globalny<br>- Administrator zgodności<br>- Zarządzanie zgodnością IB (jest to nowa rola!)<br><br>Aby dowiedzieć się więcej o wymaganiach wstępnych dotyczących barier informacyjnych, zobacz [Wymagania wstępne (w przypadku zasad barier informacyjnych).](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> Upewnij się, [że łączysz się z Centrum & zgodności programu PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="edit-user-account-attributes"></a>Edytowanie atrybutów konta użytkownika
 
-Ta procedura umożliwia edytowanie atrybutów, które są używane do segmentowania użytkowników. Jeśli na przykład używasz atrybutu Department (Dział), a co najmniej jedno konto użytkownika nie ma obecnie żadnych wartości wymienionych jako Department (Dział), musisz edytować te konta, aby uwzględnić informacje z działu. Atrybuty konta użytkownika służą do definiowania segmentów, dzięki czemu można przypisywać zasady bariery informacyjnej.
+Ta procedura umożliwia edytowanie atrybutów, które są używane do segmentowania użytkowników. Jeśli na przykład używasz atrybutu Department (Dział), a co najmniej jedno konto użytkownika nie zawiera obecnie żadnych wartości wymienionych dla ustawienia Department (Dział), musisz edytować te konta, aby uwzględnić informacje z działu. Atrybuty konta użytkownika służą do definiowania segmentów, aby można było przypisywać zasady zawarte w informacjach.
 
 1. Aby wyświetlić szczegóły określonego konta użytkownika, takie jak wartości atrybutów i przypisane segmenty, użyj polecenia cmdlet **Get-InformationBarrierRecipientStatus** z parametrami tożsamości.
 
     |**Składnia**|**Przykład**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Możesz użyć dowolnej wartości, która jednoznacznie identyfikuje każdego użytkownika, na przykład nazwy, aliasu, nazwy odróżnianej, kanonicznego nazwy domeny, adresu e-mail lub identyfikatora GUID. <p> (Możesz też użyć tego polecenia cmdlet dla jednego użytkownika: `Get-InformationBarrierRecipientStatus -Identity <value>`) |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> W tym przykładzie używamy dwóch kont użytkowników w programie Office 365: *meganb* dla *Megan* i *alexa dla* *Alexa*. |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <br> Możesz użyć dowolnej wartości, która jednoznacznie identyfikuje każdego użytkownika, na przykład nazwy, aliasu, nazwy odróżnianej, kanonicznego nazwy domeny, adresu e-mail lub identyfikatora GUID. <br> (Możesz też użyć tego polecenia cmdlet dla jednego użytkownika: `Get-InformationBarrierRecipientStatus -Identity <value>`) |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <br> W tym przykładzie używamy dwóch kont użytkowników w programie Office 365: *meganb* dla *Megan* i *alexa dla* *Alexa*. |
 
-2. Określ atrybuty, które chcesz edytować dla swoich profilów kont użytkowników. Aby uzyskać więcej informacji, zobacz [Atrybuty, aby uzyskać informacje na temat zasad bariery informacyjnej](information-barriers-attributes.md). 
+2. Określ atrybuty, które chcesz edytować dla swoich profilów kont użytkowników. Aby uzyskać więcej informacji, [zobacz Atrybuty, aby uzyskać informacje na temat zasad.](information-barriers-attributes.md)
 
 3. Edytuj co najmniej jedno konto użytkownika, aby uwzględnić wartości atrybutu wybranego w poprzednim kroku. Aby podjąć tę czynność, należy skorzystać z jednej z następujących procedur:
 
@@ -65,7 +67,7 @@ Ta procedura umożliwia edytowanie definicji segmentu użytkownika. Na przykład
 
     Składnia: `Get-OrganizationSegment`
 
-    Zostanie wyświetlona lista segmentów i szczegółów poszczególnych segmentów, takich jak typ segmentu, jego wartość UserGroupFilter, kto go utworzył lub ostatnio zmodyfikował, identyfikator GUID i tak dalej.
+    Zostanie wyświetlona lista segmentów i szczegółów poszczególnych segmentów, takich jak typ segmentu, jego wartość UserGroupFilter, nazwa użytkownika, który go utworzył lub ostatnio zmodyfikował, identyfikator GUID i tak dalej.
 
     > [!TIP]
     > Wydrukuj lub zapisz listę segmentów do późniejszego odwołania. Jeśli na przykład chcesz edytować segment, musisz znać jego nazwę lub zidentyfikować wartość (jest to używane z parametrem Identity).
@@ -74,13 +76,13 @@ Ta procedura umożliwia edytowanie definicji segmentu użytkownika. Na przykład
 
     |**Składnia**|**Przykład**|
     |:---------|:----------|
-    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p> W tym przykładzie dla segmentu, który ma identyfikator GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*, zaktualizowaliśmy nazwę działu na "HRDept". |
+    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <br> W tym przykładzie zaktualizowano nazwę działu na *HRDept* dla segmentu przy użyciu identyfikatora GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*. |
 
-Po zakończeniu edytowania segmentów w organizacji można zdefiniować lub [](information-barriers-policies.md#step-3-define-information-barrier-policies) [edytować zasady zawarte w](#edit-a-policy) informacjach.
+3. Po zakończeniu edytowania segmentów w organizacji można zdefiniować lub [](information-barriers-policies.md#step-3-define-information-barrier-policies) [edytować](#edit-a-policy) zasady informacyjne.
 
 ## <a name="edit-a-policy"></a>Edytowanie zasad
 
-1. Aby wyświetlić listę bieżących zasad bariery informacyjnej, użyj polecenia **cmdlet Get-InformationBarrierPolicy** .
+1. Aby wyświetlić listę bieżących barier informacyjnych, użyj polecenia cmdlet **Get-InformationBarrierPolicy** .
 
     Składnia: `Get-InformationBarrierPolicy`
 
@@ -92,65 +94,159 @@ Po zakończeniu edytowania segmentów w organizacji można zdefiniować lub [](i
 
     Załóżmy, że chcemy go zmienić, aby osoby w  segmencie badań mogą komunikować się tylko z osobami *w tym* segmencie. Aby wprowadzić tę zmianę, użyjmy tego polecenia cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
-    W tym przykładzie zmieniliśmy segment "SegmentsBlocked" na "SegmentsAllowed" i określono segment *KADR* .
+    W tym przykładzie zmieniliśmy segment *SegmentyBlokowane* na *SegmentyWszystkie* i określono *segment KADR* .
 
-3. Po zakończeniu edytowania zasad zastosuj zmiany. (Zobacz [Stosowanie zasad bariery informacyjnej](information-barriers-policies.md#step-4-apply-information-barrier-policies)).
+3. Po zakończeniu edytowania zasad zastosuj zmiany. (Zobacz [Stosowanie zasad barier informacyjnych](information-barriers-policies.md#step-4-apply-information-barrier-policies)).
 
 ## <a name="set-a-policy-to-inactive-status"></a>Ustawianie zasad jako nieaktywnych
 
-1. Aby wyświetlić listę bieżących zasad bariery informacyjnej, użyj polecenia **cmdlet Get-InformationBarrierPolicy** .
+1. Aby wyświetlić listę bieżących barier informacyjnych, użyj polecenia cmdlet **Get-InformationBarrierPolicy** .
 
     Składnia: `Get-InformationBarrierPolicy`
 
     Na liście wyników znajdź zasady, które chcesz zmienić (lub usunąć). Zanotuj identyfikator GUID i nazwę zasad.
 
-2. Aby ustawić stan zasad jako nieaktywny, użyj polecenia cmdlet **Set-InformationBarrierPolicy** z parametrem Identity i parametrem State ustawionym na wartość Nieaktywny.
+2. Aby ustawić stan zasad jako nieaktywny, użyj polecenia cmdlet **Set-InformationBarrierPolicy** z parametrem *Identity* i parametrem *State* ustawionym na wartość *Nieaktywny*.
 
     |**Składnia**|**Przykład**|
     |:---------|:----------|
-    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p> W tym przykładzie ustawiono zasady bariery informacyjnej, które mają identyfikator GUID *43c37853-ea10-4b90-a23d-ab8c9377247* jako nieaktywny. |
+    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <br> W tym przykładzie zasady informacyjne, które mają identyfikator GUID *43c37853-ea10-4b90-a23d-ab8c9377247* , są ustawione na status nieaktywny. |
 
 3. Aby zastosować zmiany, użyj polecenia **cmdlet Start-InformationBarrierPoliciesApplication** .
 
     Składnia: `Start-InformationBarrierPoliciesApplication`
 
-    Zmiany są stosowane w organizacji przez  użytkowników. Jeśli Twoja organizacja jest duża, ukończenie tego procesu może potrwać co najmniej 24 godziny. Zgodnie z ogólnymi wytycznymi przetwarzanie 5000 kont użytkowników trwa około godziny.
+    Zmiany są stosowane w organizacji użytkownika po użytkowniku. Jeśli Twoja organizacja jest duża, ukończenie tego procesu może potrwać co najmniej 24 godziny. Zgodnie z ogólnymi wytycznymi przetwarzanie 5000 kont użytkowników trwa około godziny.
 
-W tym momencie jedną lub więcej zasad dotyczących informacji jest ustawiony status nieaktywny. W tym miejscu możesz wykonać dowolną z następujących czynności:
+4. W tym momencie jedną lub więcej barier informacyjnych jest ustawionych jako nieaktywny status. W tym miejscu możesz wykonać dowolną z następujących czynności:
 
-- Zachowanie jej bez wpływu na użytkowników (zasada ustawiona na "status nieaktywny" nie ma wpływu na użytkowników)
-- [Edytowanie zasad](#edit-a-policy) 
-- [Usuwanie zasad](#remove-a-policy)
+    - Zachowanie jej bez wpływu na użytkowników (zasada ustawiona na "status nieaktywny" nie ma wpływu na użytkowników)
+    - [Edytowanie zasad](#edit-a-policy) 
+    - [Usuwanie zasad](#remove-a-policy)
 
 ## <a name="remove-a-policy"></a>Usuwanie zasad
 
-1. Aby wyświetlić listę bieżących zasad bariery informacyjnej, użyj polecenia **cmdlet Get-InformationBarrierPolicy** .
+1. Aby wyświetlić listę bieżących barier informacyjnych, użyj polecenia cmdlet **Get-InformationBarrierPolicy** .
 
     Składnia: `Get-InformationBarrierPolicy`
 
-    Na liście wyników znajdź zasady, które chcesz usunąć. Zanotuj identyfikator GUID i nazwę zasad. Upewnij się, że zasady są ustawione na status nieaktywny.
+    Na liście wyników znajdź zasady, które chcesz usunąć. Zanotuj identyfikator GUID i nazwę zasad. 
 
-2. Użyj polecenia **cmdlet Remove-InformationBarrierPolicy** z parametrem Identity.
+2. Upewnij się, że zasady są ustawione na status nieaktywny. Aby ustawić stan zasad jako nieaktywny, użyj Set-InformationBarrierPolicy cmdlet z parametrem Identity i parametrem State ustawionym na wartość Nieaktywny.
 
     |**Składnia**|**Przykład**|
     |:---------|:----------|
-    | `Remove-InformationBarrierPolicy -Identity GUID` | `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <p> W tym przykładzie usuwamy zasady o identyfikatorze GUID *43c37853-ea10-4b90-a23d-ab8c93772471*. |
+    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive`  | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <br> W tym przykładzie zasady dotyczące barier informacyjnych, które mają identyfikator GUID *43c37853-ea10-4b90-a23d-ab8c9377247* , są statusem nieaktywnym. |
 
-    Gdy zostanie wyświetlony monit, potwierdź zmianę.
-
-3. Powtórz kroki 1–2 dla każdej zasady, którą chcesz usunąć.
-
-4. Po zakończeniu usuwania zasad zastosuj zmiany. Aby to zrobić, użyj **polecenia cmdlet Start-InformationBarrierPoliciesApplication** .
+3. Aby zastosować zmiany do zasad, użyj polecenia **cmdlet Start-InformationBarrierPoliciesApplication** .
 
     Składnia: `Start-InformationBarrierPoliciesApplication`
 
-    Zmiany są stosowane w organizacji przez  użytkowników. Jeśli Twoja organizacja jest duża, ukończenie tego procesu może potrwać co najmniej 24 godziny.
+    Zmiany są stosowane w organizacji użytkownika po użytkowniku. Jeśli Twoja organizacja jest duża, ukończenie tego procesu może potrwać co najmniej 24 godziny. Zgodnie z ogólnymi wytycznymi przetwarzanie 5000 kont użytkowników trwa około godziny.
+
+4. Użyj polecenia **cmdlet Remove-InformationBarrierPolicy** z parametrem Identity.
+
+    |**Składnia**|**Przykład**|
+    |:---------|:----------|
+    | `Remove-InformationBarrierPolicy -Identity GUID` | `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <br> W tym przykładzie usuwamy zasady o identyfikatorze GUID *43c37853-ea10-4b90-a23d-ab8c93772471*. |
+
+    Gdy zostanie wyświetlony monit, potwierdź zmianę.
+
+## <a name="remove-a-segment"></a>Usuwanie segmentu
+
+1. Aby wyświetlić wszystkie istniejące segmenty, użyj polecenia cmdlet **Get-OrganizationSegment** .
+
+    Składnia: `Get-OrganizationSegment`
+
+    Zostanie wyświetlona lista segmentów i szczegółów poszczególnych segmentów, takich jak typ segmentu, jego wartość UserGroupFilter, nazwa użytkownika, który go utworzył lub ostatnio zmodyfikował, identyfikator GUID i tak dalej.
+
+    >[!TIP]
+    >Wydrukuj lub zapisz listę segmentów do późniejszego odwołania. Jeśli na przykład chcesz edytować segment, musisz znać jego nazwę lub zidentyfikować wartość (jest to używane z parametrem Identity).
+
+2. Określ segment do usunięcia i upewnij się, że zasady IB skojarzone z tym segmentem zostały usunięte. Aby uzyskać [szczegółowe informacje, zobacz](#remove-a-policy) procedurę Usuwania zasad.
+
+3. Edytuj segment, który zostanie usunięty, aby usunąć relację użytkowników z tym segmentem. Ta akcja aktualizuje definicję segmentu i usuwa wszystkich użytkowników z tego segmentu. W celu usunięcia użytkowników z segmentu przed usunięciem użyjesz parametru UserGroupFilter.
+
+    Aby edytować segment, użyj polecenia cmdlet **Set-OrganizationSegment** z *parametrem Identity* i odpowiednimi szczegółami.
+
+    |**Składnia**|**Przykład**|
+    |:---------|:----------|
+    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> W tym przykładzie dla segmentu, który ma identyfikator GUID c96e0837-c232-4a8a-841e-ef45787d8fcd, zdefiniowali nazwę działu jako *Fałszywy* Dział w celu usunięcia użytkowników z tego segmentu. W tym przykładzie jest używany *atrybut Department* , ale możesz użyć innych atrybutów, jeśli to konieczne. W tym przykładzie *użyto usługi FakeDept* , ponieważ nie istnieje i z pewnością nie zawiera żadnych użytkowników. |
+
+4. Aby zastosować zmiany, użyj polecenia **cmdlet Start-InformationBarrierPoliciesApplication** .
+
+    Składnia: `Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink`
+
+    >[!NOTE]
+    >Atrybut *CleanupGroupSegmentLink* usuwa skojarzenia grup z segmentem bez skojarzeń użytkowników.
+
+    Zmiany są stosowane w organizacji użytkownika po użytkowniku. Jeśli Twoja organizacja jest duża, ukończenie tego procesu może potrwać co najmniej 24 godziny. Zgodnie z ogólnymi wytycznymi przetwarzanie 5000 kont użytkowników trwa około godziny.
+
+5. Aby usunąć segment, użyj polecenia cmdlet **Remove-OrganizationSegment** z *parametrem Identity* i odpowiednimi szczegółami.
+
+    |**Składnia**|**Przykład**|
+    |:---------|:----------|
+    | `Remove-OrganizationSegment -Identity GUID` | `Remove-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <br> W tym przykładzie segment, który ma identyfikator GUID c96e0837-c232-4a8a-841e-ef45787d8fcd, został usunięty. |
+
+## <a name="remove-a-policy-and-segment"></a>Usuwanie zasad i segmentu
+
+1. Aby wyświetlić listę bieżących barier informacyjnych, użyj polecenia cmdlet **Get-InformationBarrierPolicy** .
+
+    Składnia: `Get-InformationBarrierPolicy`
+
+    Na liście wyników znajdź zasady, które chcesz usunąć. Zanotuj identyfikator GUID i nazwę zasad.
+
+2. Aby wyświetlić wszystkie istniejące segmenty, użyj polecenia cmdlet **Get-OrganizationSegment** .
+
+    Składnia: `Get-OrganizationSegment`
+
+    Zostanie wyświetlona lista segmentów i szczegółów poszczególnych segmentów, takich jak typ segmentu, jego wartość parametru *UserGroupFilter* , nazwa użytkownika, który go utworzył lub ostatnio zmodyfikował, identyfikator GUID i tak dalej.
+
+    >[!TIP]
+    >Wydrukuj lub zapisz listę segmentów do późniejszego odwołania. Jeśli na przykład chcesz edytować segment, musisz znać jego nazwę lub zidentyfikować wartość (jest to używane z parametrem Identity).
+
+3. Aby ustawić stan zasad, które mają zostać usunięte jako nieaktywne, użyj polecenia cmdlet **Set-InformationBarrierPolicy** z parametrem *Identity* i parametrem *State* ustawionym na Wartość nieaktywny *.*
+
+    |**Składnia**|**Przykład**|
+    |:---------|:----------|
+    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Inactive` <br> W tym przykładzie ustawiono zasady dotyczące barier informacyjnych, które mają identyfikator GUID 43c37853-ea10-4b90-a23d-ab8c93772471 na status nieaktywny. |
+
+4. Edytuj segment, który zostanie usunięty, aby usunąć relację użytkowników z tym segmentem. Ta akcja aktualizuje definicję segmentu i usuwa wszystkich użytkowników z tego segmentu. W celu usunięcia użytkowników z segmentu przed usunięciem użyjesz parametru *UserGroupFilter* .
+
+    Aby edytować segment, użyj polecenia cmdlet **Set-OrganizationSegment** z *parametrem Identity* i odpowiednimi szczegółami.
+
+    |**Składnia**|**Przykład**|
+    |:---------|:----------|
+    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> W tym przykładzie dla segmentu, który ma identyfikator GUID c96e0837-c232-4a8a-841e-ef45787d8fcd, zaktualizowaliśmy nazwę działu na *FakeDept* , aby usunąć użytkowników z tego segmentu. W tym przykładzie jest używany *atrybut Department* , ale możesz użyć innych atrybutów, jeśli to konieczne. W tym przykładzie *użyto systemu FakeDept* , ponieważ takie dane nie istnieją i z pewnością nie zawierają żadnych użytkowników. |
+
+5. Aby zastosować zmiany, użyj polecenia **cmdlet Start-InformationBarrierPoliciesApplication** .
+
+    Składnia: `Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink`
+
+    >[!NOTE]
+    >Atrybut *CleanupGroupSegmentLink* usuwa skojarzenia grup z segmentem bez skojarzeń użytkowników.
+
+    Zmiany są stosowane w organizacji użytkownika po użytkowniku. Jeśli Twoja organizacja jest duża, ukończenie tego procesu może potrwać co najmniej 24 godziny. Zgodnie z ogólnymi wytycznymi przetwarzanie 5000 kont użytkowników trwa około godziny.
+
+6. Użyj polecenia **cmdlet Remove-InformationBarrierPolicy** z *parametrem Identity* .
+
+    |**Składnia**|**Przykład**|
+    |:---------|:----------|
+    | `Remove-InformationBarrierPolicy -Identity GUID` | `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <br> W tym przykładzie zasady z identyfikatorem GUID *43c37853-ea10-4b90-a23d-ab8c93772471* zostaną usunięte. |
+
+    Gdy zostanie wyświetlony monit, potwierdź zmianę.
+
+7. Aby usunąć segment, użyj polecenia cmdlet **Remove-OrganizationSegment** z *parametrem Identity* i odpowiednimi szczegółami.
+
+    |**Składnia**|**Przykład**|
+    |:---------|:----------|
+    | `Remove-OrganizationSegment -Identity GUID` | `Remove-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <br> W tym przykładzie segment o identyfikatorze GUID c96e0837-c232-4a8a-841e-ef45787d8fcd został usunięty. |
 
 ## <a name="stop-a-policy-application"></a>Zatrzymywanie aplikacji zasad
 
-Jeśli po zastosowaniu zasad bariery informacyjnej chcesz zatrzymać ich stosowanie, skorzystaj z poniższej procedury. Rozpoczęcie procesu potrwa około 30–35 minut.
+Jeśli po włożeniu barier informacyjnych chcesz zatrzymać ich stosowanie, skorzystaj z poniższej procedury. Rozpoczęcie procesu potrwa około 30–35 minut.
 
-1. Aby wyświetlić stan najnowszej aplikacji zasad bariery informacyjnej, użyj polecenia cmdlet **Get-InformationBarrierPoliciesApplicationStatus** .
+1. Aby wyświetlić stan najnowszej aplikacji zasad barier informacyjnych, użyj polecenia cmdlet **Get-InformationBarrierPoliciesApplicationStatus** .
 
     Składnia: `Get-InformationBarrierPoliciesApplicationStatus`
 
@@ -160,7 +256,7 @@ Jeśli po zastosowaniu zasad bariery informacyjnej chcesz zatrzymać ich stosowa
 
     |**Składnia**|**Przykład**|
     |:---------|:----------|
-    | `Stop-InformationBarrierPoliciesApplication -Identity GUID` | `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p> W tym przykładzie powstrzymuje się zastosowanie zasad bariery informacyjnej. |
+    | `Stop-InformationBarrierPoliciesApplication -Identity GUID` | `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p> W tym przykładzie zatrzymujemy bariery informacyjne przed zastosowaniem zasad. |
 
 ## <a name="resources"></a>Zasoby
 
@@ -169,5 +265,5 @@ Jeśli po zastosowaniu zasad bariery informacyjnej chcesz zatrzymać ich stosowa
 - [Dowiedz się więcej o barierach informacyjnych w Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [Dowiedz się więcej o barierach informacyjnych w SharePoint Online](/sharepoint/information-barriers)
 - [Dowiedz się więcej o barierach informacyjnych w programie OneDrive](/onedrive/information-barriers)
-- [Atrybuty zasad bariery informacyjnej](information-barriers-attributes.md)
+- [Atrybuty zasad barier informacyjnych](information-barriers-attributes.md)
 - [Rozwiązywanie problemów z barierami informacyjnymi](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

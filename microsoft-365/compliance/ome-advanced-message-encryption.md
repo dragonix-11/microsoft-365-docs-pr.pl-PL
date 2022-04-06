@@ -9,35 +9,37 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 03/04/2022
+ms.date: 04/01/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Zaawansowane szyfrowanie wiadomości ułatwia organizacjom spełnienie wymagań dotyczących zgodności, umożliwiając administratorom jeszcze większe możliwości związane z chronionymi wiadomościami.
-ms.openlocfilehash: 8d09481b5a5f78d9dc4e5725896297a6881e6172
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 74d94bdb837531fdbbb819c86f9dbb7dd80272e8
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512548"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634344"
 ---
 # <a name="advanced-message-encryption"></a>Zaawansowane szyfrowanie wiadomości
 
-Zaawansowane szyfrowanie wiadomości usługi Office 365 jest zawarta w usługach [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5 i Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing) i Office 365 Education A5. Jeśli Twoja organizacja ma subskrypcję, która nie zawiera subskrypcji usługi Zaawansowane szyfrowanie wiadomości usługi Office 365, możesz ją kupić za pomocą dodatku Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing) lub dodatku Office 365 Advanced Compliance SKU dla usług Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), Office 365 jednostki SKU produktów lub Microsoft 365 E5/A5 dodatku do SKU ochrony informacji i zarządzania dla systemu Microsoft 365 A3/E3.
+Zaawansowane szyfrowanie wiadomości usługi Office 365 jest zawarta w usługach [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5 i Microsoft 365 E5 (Nonprofit Staff Pricing), Office 365 Enterprise E5 (Nonprofit Staff Pricing) i Office 365 Education A5. Aby używać funkcji odwołania i wygasania zaawansowanego szyfrowania wiadomości, włącz **Premium szyfrowanie** Office 365 w licencji E5.
+
+Jeśli Twoja organizacja ma subskrypcję, która nie zawiera subskrypcji usługi Zaawansowane szyfrowanie wiadomości usługi Office 365, możesz ją kupić za pomocą dodatku Zgodność platformy Microsoft 365 E5 SKU dla Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing) lub dodatku Office 365 Advanced Compliance SKU dla usług Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Staff Pricing), Office 365 jednostki SKU produktów lub Microsoft 365 E5/A5 dla Information Protection SKU zarządzania dla Microsoft 365 A3/E3.
 
 Zaawansowane szyfrowanie wiadomości ułatwia klientom spełnienie wymagań dotyczących zgodności, które wymagają bardziej elastycznej kontroli nad adresatami zewnętrznymi i ich dostępu do zaszyfrowanych wiadomości e-mail. Dzięki funkcji zaawansowanego szyfrowania wiadomości Office 365 możesz kontrolować poufne wiadomości e-mail udostępniane poza organizacją przy użyciu automatycznych zasad. Te zasady są konfigurowane w celu identyfikowania typów informacji poufnych, takich jak identyfikatory PII, identyfikatory finansowe lub identyfikatory kondycji, albo można używać słów kluczowych w celu zwiększenia ochrony. Po skonfigurowaniu zasad możesz sparować zasady z niestandardowymi, znakowanych szablonami wiadomości e-mail, a następnie dodać datę wygaśnięcia, aby uzyskać dodatkową kontrolę nad wiadomościami e-mail, które pasują do zasad. Ponadto administratorzy mogą dodatkowo kontrolować zaszyfrowane wiadomości e-mail uzyskiwane do nich zewnętrznie za pośrednictwem bezpiecznego portalu sieci Web przez odwołanie dostępu do poczty w dowolnym momencie.
 
 Datę wygaśnięcia można odwołać i ustawić tylko w przypadku wiadomości e-mail wysyłanych do adresatów zewnętrznych.
 
-## <a name="get-started-with-office-365-advanced-message-encryption"></a>Wprowadzenie do Zaawansowane szyfrowanie wiadomości usługi Office 365
+## <a name="get-started-with-office-365-advanced-message-encryption"></a>Wprowadzenie pomocą Zaawansowane szyfrowanie wiadomości usługi Office 365
 
 W poniższych artykułach opisano sposób skonfigurowania zaawansowanego szyfrowania wiadomości i korzystania z nich.
 
 Twoja organizacja musi mieć subskrypcję, która obejmuje Zaawansowane szyfrowanie wiadomości usługi Office 365. Aby uzyskać szczegółowe informacje na temat obsługiwanych subskrypcji, zobacz Opis [usługi zasad wiadomości i zgodności](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
 
-Jeśli nie masz jeszcze Szyfrowanie wiadomości usługi Office 365, zobacz [Konfigurowanie nowych i Szyfrowanie wiadomości usługi Office 365 możliwości](set-up-new-message-encryption-capabilities.md).
+Jeśli nie masz jeszcze Office 365 szyfrowania wiadomości, zobacz Konfigurowanie nowych funkcji szyfrowania Office 365 [wiadomości](set-up-new-message-encryption-capabilities.md).
 
 Dzięki funkcji zaawansowanego szyfrowania wiadomości możesz nie ograniczać się do jednego szablonu  marki. Zamiast tego można utworzyć wiele szablonów marki i używać ich. Dodanie niestandardowych  brandingów umożliwia również śledzenie odwołań zaszyfrowanych wiadomości. Aby uzyskać informacje, [zobacz Dodawanie marki organizacji do zaszyfrowanych wiadomości](add-your-organization-brand-to-encrypted-messages.md). W przypadku używania niestandardowych  brandingów adresaci zewnętrzni otrzymają powiadomienie e-mail zawierające link do portalu OME. Reguła przepływu poczty e-mail określa, którego szablonu  brandingu używają wiadomości e-mail z powiadomieniem i portalu OME. Dzięki temu bezpieczna zawartość nie jest wysyłana poza organizację.
 

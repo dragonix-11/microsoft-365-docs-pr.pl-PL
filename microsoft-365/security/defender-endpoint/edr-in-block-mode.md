@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 04/04/2022
+ms.date: 04/01/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: eb40eaee9043e81331eca98c85f1467111cc37e4
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: 898d6de45830068ad300a64a3312cff3d5914323
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638361"
+ms.locfileid: "64634300"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Wykrywanie punktu końcowego i odpowiedź (EDR) w trybie blokowania
 
@@ -115,6 +115,10 @@ Można również zdefiniować wykluczenie dla Program antywirusowy Microsoft Def
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>Czy muszę włączać tryb EDR blokowania, jeśli mam Program antywirusowy Microsoft Defender na urządzeniach?
 
 Podstawowym celem usuwania EDR w trybie blokowania jest korygowanie problemów z wykrywaniem naruszeń, które zostały nieodebrane przez produkt antywirusowy innych niż firmy Microsoft. Włączanie trybu blokowania EDR w trybie blokowania Program antywirusowy Microsoft Defender jest w trybie aktywnym, ponieważ ochrona w czasie rzeczywistym ma być najpierw wykrywana i korygowana. Zalecamy włączenie trybu EDR w punktach końcowych, na których program Microsoft Defender dla oprogramowania antywirusowego działa w trybie pasywnym. EDR wykrywania mogą być automatycznie korygowane przez ochronę [pua](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) lub przez automatyczne wykrywanie & [w](automated-investigations.md) trybie blokowania.
+
+- Gdy Program antywirusowy Microsoft Defender jest w trybie pasywnym, EDR trybie blokowania zapewnia kolejną warstwę obrony wraz z Ochrona punktu końcowego w usłudze Microsoft Defender.
+
+- Gdy program Program antywirusowy Microsoft Defender jest w trybie aktywnym, tryb EDR tryb blokowania nie umożliwia dodatkowego skanowania, ale umożliwia programowi Program antywirusowy Microsoft Defender automatyczne akcje dotyczące po naruszeniu zabezpieczeń i zachowań EDR wykrywania.
 
 ### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>Czy EDR w trybie blokowania będzie miało wpływ na ochronę antywirusową użytkownika?
 

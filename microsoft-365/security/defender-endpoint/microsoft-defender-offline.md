@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 75179fc3daf8e375ace6cc4c1566abf1e18cdfaa
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: ccb65b865afdf2a0ec0210c3593daee1cb5c09b6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63018911"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476846"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Uruchamianie i przeglądanie wyników skanowania Microsoft Defender Offline aplikacji
 
@@ -28,14 +28,14 @@ ms.locfileid: "63018911"
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender Offline to narzędzie do skanowania przed złośliwym kodem, które umożliwia uruchamianie i uruchamianie skanowania z zaufanego środowiska. Skanowanie jest uruchamiane poza normalnym procesem Windows, więc może kierować złośliwe oprogramowanie, które próbuje obejść powłokę Windows, takie jak wirusy i zestawy główne, które infekują lub zastąpią główny rekord rozruchu (MBR).
 
 Możesz użyć Microsoft Defender Offline, jeśli podejrzewasz zainfekowanie złośliwym oprogramowaniem lub chcesz potwierdzić dokładny oczyszczanie punktu końcowego po epidemii złośliwego oprogramowania.
 
-W Windows 10 i Windows 11 można uruchamiać Microsoft Defender Offline jednym kliknięciem bezpośrednio z Zabezpieczenia Windows [aplikacji](microsoft-defender-security-center-antivirus.md). W poprzednich wersjach pakietu Windows użytkownik musiał zainstalować aplikację Microsoft Defender Offline, aby uruchomić ponownie punkt końcowy i załadować nośnik startowy.
+W Windows 10 i Windows 11 można Microsoft Defender Offline uruchamiać jednym kliknięciem bezpośrednio z Zabezpieczenia Windows [aplikacji](microsoft-defender-security-center-antivirus.md). W poprzednich wersjach pakietu Windows użytkownik musiał zainstalować aplikację Microsoft Defender Offline, aby uruchomić ponownie punkt końcowy i załadować nośnik startowy.
 
 ## <a name="prerequisites-and-requirements"></a>wymagania wstępne i wymagania
 
@@ -57,7 +57,7 @@ Aby można Microsoft Defender Offline z punktu końcowego, użytkownik musi być
 Microsoft Defender Offline korzysta z najnowszych aktualizacji ochrony dostępnych w punkcie końcowym; jest on aktualizowany Program antywirusowy Windows Defender aktualizacji.
 
 > [!NOTE]
-> Przed uruchomieniem skanowania w trybie offline należy spróbować zaktualizować ochronę audio/wideo programu Microsoft Defender. Możesz wymusić aktualizację za pomocą programu zasady grupy lub jednak normalnie wdrażasz aktualizacje w punktach końcowych lub ręcznie pobrać i zainstalować najnowsze aktualizacje ochrony z poziomu [Centrum firmy Microsoft ds. ochrony przed złośliwym oprogramowaniem.](https://www.microsoft.com/security/portal/definitions/adl.aspx)
+> Przed uruchomieniem skanowania w trybie offline należy spróbować zaktualizować ochronę audio/wideo programu Microsoft Defender. Możesz wymusić aktualizację przy użyciu programu zasady grupy lub też normalnie wdrożyć aktualizacje w punktach końcowych lub ręcznie pobrać i zainstalować najnowsze aktualizacje ochrony z aplikacji [Centrum firmy Microsoft ds. ochrony przed złośliwym oprogramowaniem](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
 Aby uzyskać [więcej informacji, Program antywirusowy Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md) temat Zarządzanie aktualizacjami analizy zabezpieczeń.
 
@@ -69,15 +69,15 @@ Konieczność przeprowadzenia skanowania w trybie offline pojawi się również 
 
 Monit może zostać wyświetlony za pośrednictwem powiadomienia, podobnego do następującego:
 
-:::image type="content" source="../../media/notification.png" alt-text="Powiadomienie o uruchomieniu Microsoft Defender Offline.":::
+:::image type="content" source="../../media/notification.png" alt-text="Powiadomienie o uruchomieniu Microsoft Defender Offline" lightbox="../../media/notification.png":::
 
 Użytkownik zostanie także powiadomiony w Windows Defender klienta.
 
-W Menedżer konfiguracji można określić stan punktów końcowych, przechodząc do tematu Monitorowanie > Przegląd > przegląd > Endpoint Protection stan **> System Center Endpoint Protection zabezpieczeń**.
+W Configuration Manager można określić stan punktów końcowych, przechodząc do tematu Monitorowanie > **Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status (Omówienie > zabezpieczeń > Endpoint Protection stan > System Center Endpoint Protection stanu**.
 
 Microsoft Defender Offline skanowania są oznaczone w obszarze Stan **rozwiązywania problemów ze złośliwym oprogramowaniem jako** **wymagane skanowanie w trybie offline**.
 
-:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender Offline skanowania jest wymagane.":::
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="Wskaźnik skanowania w poszukiwaniu Microsoft Defender Offline" lightbox="../../media/sccm-wdo.png":::
 
 ## <a name="configure-notifications"></a>Konfigurowanie powiadomień
 
@@ -124,7 +124,7 @@ Aby uzyskać więcej informacji, zobacz następujące informacje:
 
 ### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>Korzystanie z aplikacji Windows Defender Security w celu uruchomienia skanowania w trybie offline
 
-1. Otwórz aplikację Zabezpieczenia Windows, klikając ikonę tarczy na pasku zadań lub wyszukując w menu **startowym pozycję Defender for Cloud**.
+1. Otwórz aplikację Zabezpieczenia Windows, klikając ikonę tarczy na pasku zadań lub wyszukując w menu start przycisk **Defender dla Chmury**.
 
 2. Kliknij **kafelek Ochrona przed & wirusami** (lub ikonę tarczy na lewym pasku menu), a następnie **etykietę Skanowanie** zaawansowane:
 

@@ -16,21 +16,21 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 8334ce03bac5b7d4518433f83ab34d5f86e71339
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507519"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634168"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Rozwiązywanie problemów podczas przełączania się na Ochrona punktu końcowego w usłudze Microsoft Defender
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dla administratorów zabezpieczeń, którzy mają problemy podczas przełączania rozwiązania ochrony punktu końcowego innych niż firma Microsoft na Ochrona punktu końcowego w usłudze Microsoft Defender.
@@ -41,28 +41,8 @@ Po rozpoczęciu pracy z usługą Defender for Endpoint zaczniesz od ochrony prze
 
 Aby rozwiązać ten problem, zrób tak:
 
-1. [Ustaw dla klucza rejestru DisableAntiSpyware wartość false](#set-the-disableantispyware-registry-key-to-false).
-2. [Dodaj Ochrona punktu końcowego w usłudze Microsoft Defender do listy wykluczeń](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
-3. [Ustaw Program antywirusowy Microsoft Defender tryb pasywny](#set-microsoft-defender-antivirus-to-passive-mode-manually) ręcznie.
-
-### <a name="set-the-disableantispyware-registry-key-to-false"></a>Ustawianie dla klucza rejestru DisableAntiSpyware wartości false
-
-W przeszłości klawisz rejestru [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) był używany do wyłączania programu Program antywirusowy Microsoft Defender i wdrażania innego produktu antywirusowego, takiego jak firma McAfee, Oprogramowania lub inne. **Ogólnie rzecz biorąc,** ten klucz rejestru nie powinien być ustawiony na urządzeniach Windows i punktach końcowych.  `DisableAntiSpyware` Jeśli jednak to zrobisz, oto jak ustawić wartość tego klucza na fałsz:
-
-1. Na urządzeniu Windows Server otwórz Edytor rejestru.
-
-2. Przejdź do `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
-
-3. W tym folderze odszukaj wpis DWORD o **nazwie DisableAntiSpyware**.
-   - Jeśli nie widzisz tego wpisu, wszystko jest już ustawione.
-   - Jeśli zostanie wyświetlony temat **DisableAntiSpyware**, przejdź do kroku 4.
-
-4. Kliknij prawym przyciskiem myszy wartość DisableAntiSpyware DWORD, a następnie wybierz pozycję **Modify (Modyfikuj**).
-
-5. Ustaw wartość na `0`. Ta akcja ustawia wartość klucza rejestru na *fałsz*.
-
-> [!TIP]
-> Aby dowiedzieć się więcej o tym kluczu rejestru, zobacz [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
+1. [Dodaj Ochrona punktu końcowego w usłudze Microsoft Defender do listy wykluczeń](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+2. [Ustaw Program antywirusowy Microsoft Defender tryb pasywny](#set-microsoft-defender-antivirus-to-passive-mode-manually) ręcznie.
 
 ### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Dodawanie Ochrona punktu końcowego w usłudze Microsoft Defender do listy wykluczeń
 

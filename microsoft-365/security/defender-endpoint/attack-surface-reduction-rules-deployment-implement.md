@@ -1,7 +1,7 @@
 ---
 title: Wdrażanie wdrożenia reguł ograniczania powierzchni ataków (ASR, Attack Surface Reduction)
 description: Zapewnia wskazówki dotyczące wdrażania reguł ograniczania powierzchni ataków.
-keywords: Wdrażanie reguł ograniczania powierzchni ataków, wdrażanie ASR, włączanie reguł asr, konfigurowanie funkcji asr, systemu ochrony przed nieuprawnianiem hosta, reguł ochrony, reguł ochrony przed wykorzystywaniem luk, ochrony przed wykorzystywaniem, regułami wykorzystania luk, regułami zapobiegania powstawaniu przed wirusami, program Microsoft Defender for Endpoint, konfigurowanie reguł asr
+keywords: Wdrażanie reguł ograniczania powierzchni ataków, wdrażanie asr, włączanie reguł asr, konfigurowanie funkcji asr, systemu ochrony przed nieuprawnianiem hostów, reguł ochrony, reguł ochrony przed wykorzystywaniem luk, ochrony przed wykorzystywaniem, regułami wykorzystania luk, regułami zapobiegania powstawaniu dzieci, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł asr
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,24 +20,25 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 2ca83735eab465e3a5ec6b25156143fde1719c0a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c85dcb985210167e04b51092d66fb59080280581
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683126"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477352"
 ---
 # <a name="step-3-implement-asr-rules"></a>Krok 3. Implementowanie reguł asr
 
 Implementowanie reguł zmniejszania powierzchni ataków (ASR) powoduje przeniesienie pierwszego pierścienia testowego do stanu włączonego i funkcjonalnego.
 
 > [!div class="mx-imgBorder"]
-> ![Kroki implementacji reguł ASR](images/asr-rules-implementation-steps.png)
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="Procedura wdrażania reguł ASR" lightbox="images/asr-rules-implementation-steps.png":::
+  
 
 ## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>Krok 1. Przejście reguł asr z inspekcji do bloku
 
 1. Gdy wszystkie wykluczenia zostaną określone w trybie inspekcji, zacznij ustawiać tryb "blokowania" niektórych reguł asr, zaczynając od reguły, która ma najmniej zdarzeń wyzwalanych. Zobacz" [Włączanie reguł ograniczania powierzchni ataków](enable-attack-surface-reduction.md).
-2. Przejrzyj stronę raportowania w portalu Microsoft 365 Defender; zobacz Raport [o ochronie przed zagrożeniami w programie Microsoft Defender dla punktu końcowego](threat-protection-reports.md). Przejrzyj też opinie od mistrzów ASR.
+2. Przejrzyj stronę raportowania w portalu Microsoft 365 Defender; zobacz [Raport o ochronie przed zagrożeniami w Ochrona punktu końcowego w usłudze Microsoft Defender](threat-protection-reports.md). Przejrzyj też opinie od mistrzów ASR.
 3. Uściślij wykluczenia lub utwórz nowe wykluczenia określone jako konieczne.
 4. Przełączanie reguł sprawiające problemy z powrotem do kontroli.
 
@@ -92,11 +93,11 @@ Jeśli występują problemy z regułami wykrywania plików, które uważasz, że
 
 Aby uzyskać [szczegółowe informacje na temat każdej](attack-surface-reduction-rules-reference.md) reguły, zobacz temat z informacjami na temat reguł ograniczania powierzchni ataków.
 
-##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Wykluczanie plików zasady grupy folderów za pomocą funkcji plików
+##### <a name="use-group-policy-to-exclude-files-and-folders"></a>Wykluczanie plików i folderów za pomocą zasady grupy plików i folderów
 
 1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](https://technet.microsoft.com/library/cc731212.aspx) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-2. W **administracyjnym zasady grupy zarządzania** przejdź do **strony Konfiguracja komputera i** kliknij pozycję **Szablony administracyjne**.
+2. W **administracyjnym zasady grupy zarządzania** przejdź do **strony Konfiguracja komputera** i kliknij pozycję **Szablony administracyjne**.
 
 3. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> **Microsoft Defender Exploit Guard** \> **zmniejszenie powierzchni ataków**.
 

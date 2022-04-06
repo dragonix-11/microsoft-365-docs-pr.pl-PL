@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, dlaczego i jak utworzyć witrynę SharePoint komunikacji dla kampanii lub firmy z firmami Microsoft 365.
-ms.openlocfilehash: d2634f8793c142cc34d6c1708481aa8e4df3184b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ba0f8f559bc8843a61baca1bbb6615c596ffdc65
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326331"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634388"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>Tworzenie witryny komunikacji w programie SharePoint
 
@@ -40,9 +40,13 @@ Doskonałym sposobem na komunikowanie priorytetów, udostępnianie dokumentów s
 W witrynie do komunikacji uwzględnij następujące elementy:
 
 1. Dodaj logo i kolory jako obraz nagłówka i motyw.
+
 2. Prowadź ze swoją strategią, wiadomością, ważnymi dokumentami, katalogiem i często zadawanymi pytaniami w **swoim składników Web Part Element główny**.
+
 3. Dołącz do zespołu oświadczenie dyrektora generalnego lub kandydata w składników **Web Part tekstu**.
+
 4. Dodaj zdarzenia do składników **Web Part** Zdarzenia, aby wszyscy widzili nadchodzące wydarzenia.
+
 5. Dodawanie zdjęć, których mogą używać inne osoby lub które mogą je udostępniać, do składników **Web Part Galeria obrazów**.
 
 ![Diagram strony komunikacji SharePoint z obszarem wspólnych elementów potrzebnych dla kampanii.](../media/m365-democracy-comms-site.png)
@@ -58,7 +62,9 @@ Poniższe linki do plików PowerPoint PDF można pobrać i wydrukować w formaci
 ## <a name="set-it-up"></a>Konfigurowanie
 
 1. Zaloguj się do https://Office.com.
+
 2. W lewym górnym rogu strony wybierz ikonę Uruchamianie aplikacji, a następnie wybierz **SharePoint aplikacji.** Jeśli nie widzisz kafelka **SharePoint, kliknij** kafelek Witryny lub pozycję SharePoint, jeśli nie  jest widoczny.
+
 3. U góry strony SharePoint głównej kliknij pozycję **+ Utwórz** witrynę i wybierz opcję **Witryna do** komunikacji.
 
 Dowiedz się [wszystkiego na temat witryn komunikacji](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) i sposobu [tworzenia witryny do komunikacji w u SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).

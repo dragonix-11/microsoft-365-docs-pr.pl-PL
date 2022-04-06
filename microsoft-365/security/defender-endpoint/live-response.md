@@ -1,5 +1,5 @@
 ---
-title: Badanie jednostek na urządzeniach przy użyciu funkcji odpowiedzi na żywo w programie Microsoft Defender for Endpoint
+title: Badanie jednostek na urządzeniach przy użyciu funkcji live response w programie Ochrona punktu końcowego w usłudze Microsoft Defender
 description: Uzyskaj dostęp do urządzenia przy użyciu bezpiecznego połączenia powłoki zdalnej w celu pracy badania i natychmiastowego reagowania na urządzenie w czasie rzeczywistym.
 keywords: zdalna, powłoka, połączenie, na żywo, odpowiedź, w czasie rzeczywistym, polecenie, skrypt, remediate, hunt, export, log, drop, download, file,
 ms.prod: m365-security
@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 882454e00517624c3bc43e87308007b00ece9507
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 8987c5642ea48e4c7887735cc0fce0e5bfccc119
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449746"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470400"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Badanie jednostek na urządzeniach przy użyciu funkcji odpowiedzi na żywo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -101,7 +101,7 @@ Zanim zainicjujesz sesję na urządzeniu, upewnij się, że spełniasz następuj
 
   Zostanie wyświetlony następujący komunikat o błędzie:
 
-  ![Obraz komunikatu o błędzie.](images/live-response-error.png)
+  :::image type="content" source="images/live-response-error.png" alt-text="Komunikat o błędzie" lightbox="images/live-response-error.png":::
 
 - **Włączanie niepodpisanych skryptów wykonywania odpowiedzi na żywo** (opcjonalnie).
 
@@ -344,7 +344,7 @@ processes > output.txt
 
 Wybierz **kartę Dziennik poleceń** , aby wyświetlić polecenia używane na urządzeniu w trakcie sesji. Każde polecenie jest śledzone ze pełnymi szczegółami, takimi jak:
 
-- Identyfikator
+- ID
 - Wiersz polecenia
 - Czas trwania
 - Pasek boczny stanu i danych wejściowych lub wyjściowych

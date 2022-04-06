@@ -1,7 +1,7 @@
 ---
-title: Rozwiązywanie problemów z rozszerzeniem kernel w programie Microsoft Defender for Endpoint w systemie macOS
-description: Rozwiązywanie problemów związanych z rozszerzeniem kernel w programie Microsoft Defender for Endpoint w systemie macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, extension
+title: Rozwiązywanie problemów z rozszerzeniem kernel w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS
+description: Rozwiązywanie problemów związanych z rozszerzeniem kernel w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, kernel, extension
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,34 +15,34 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba52d9587a2ac530eabeacf8c72336751a1a17d7
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 72d1aab8be071b5f4ec66988b35655571625b409
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63026628"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477286"
 ---
-# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Rozwiązywanie problemów z rozszerzeniem kernel w programie Microsoft Defender for Endpoint w systemie macOS
+# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Rozwiązywanie problemów z rozszerzeniem kernel w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
 
-- [Program Microsoft Defender for Endpoint w systemie macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](microsoft-defender-endpoint-mac.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Ten artykuł zawiera informacje na temat rozwiązywania problemów z rozszerzeniem kernel zainstalowanym jako część programu Microsoft Defender for Endpoint w systemie macOS.
+Ten artykuł zawiera informacje na temat rozwiązywania problemów z rozszerzeniem kernel zainstalowanym w ramach programu Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS.
 
 Od wersji macOS High Sierra (10.13) system macOS wymaga jawnego zatwierdzenia wszystkich rozszerzeń kernelu, zanim będą one mogły działać na urządzeniu.
 
-Jeśli nie zatwierdzisz rozszerzenia kernel podczas wdrażania/instalacji programu Microsoft Defender for Endpoint w systemie macOS, aplikacja wyświetli baner z monitem o włączenie tej funkcji:
+Jeśli nie zatwierdzisz rozszerzenia kernel podczas wdrażania/instalacji pakietu Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS, aplikacja wyświetli baner z monitem o włączenie tej funkcji:
 
-   ![RTP disabled screenshot (Wyłączony rTP).](images/mdatp-32-main-app-fix.png)
+:::image type="content" source="images/mdatp-32-main-app-fix.png" alt-text="Wyłączony RTP" lightbox="images/mdatp-32-main-app-fix.png":::
 
 Możesz również uruchomić .```mdatp health``` Raportuje on, czy jest włączona ochrona w czasie rzeczywistym, ale nie jest dostępna. Oznacza to, że rozszerzenie kernelu nie jest zatwierdzone do uruchomienia na urządzeniu.
 
@@ -56,7 +56,7 @@ real_time_protection_available              : true
 ...
 ```
 
-Poniższe sekcje zawierają wskazówki dotyczące sposobu rozwiązania tego problemu w zależności od metody użytej do wdrożenia programu Microsoft Defender for Endpoint w systemie macOS.
+Poniższe sekcje zawierają wskazówki dotyczące sposobu rozwiązania tego problemu w zależności od metody, za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS.
 
 ## <a name="managed-deployment"></a>Wdrożenie zarządzane
 
@@ -71,7 +71,7 @@ Jeśli od zainstalowania produktu minęło mniej niż 30 minut,  \> przejdź do 
 
 Jeśli nie widzisz tego monitu, oznacza to, że minęło co najmniej 30 minut, a rozszerzenie kernel nadal nie zostało zatwierdzone do uruchomienia na urządzeniu:
 
-![Okno Zabezpieczeń i prywatności po wyświetleniu monitu o wygaśnięcie zrzutu ekranu.](images/mdatp-33-securityprivacysettings-noprompt.png)
+:::image type="content" source="images/mdatp-33-securityprivacysettings-noprompt.png" alt-text="Okno Zabezpieczeń i prywatności po wygaśnięciu monitu" lightbox="images/mdatp-33-securityprivacysettings-noprompt.png":::
 
 W takim przypadku należy wykonać poniższe czynności, aby ponownie uruchomić przepływ zatwierdzania.
 

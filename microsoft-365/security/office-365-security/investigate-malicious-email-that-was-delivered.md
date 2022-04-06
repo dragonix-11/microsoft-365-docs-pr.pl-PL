@@ -1,6 +1,6 @@
 ---
 title: Badanie złośliwych wiadomości e-mail dostarczonych w Microsoft 365, Znajdowanie i badanie złośliwych wiadomości e-mail
-keywords: TIMailData-Inline, Security Incident, incident, Microsoft Defender for Endpoint PowerShell, malware email, compromised users, email phish, email malware, read email headers, read headers, open email headers, special actions
+keywords: TIMailData-Inline, Security Incident, incident, Ochrona punktu końcowego w usłudze Microsoft Defender PowerShell, malware email, compromised users, email phish, email malware, read email headers, read headers, open email headers, special actions
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f3c992ad94d63b44d2f89acff6bb295728a0804
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 48deec7763981b10daf1d0c16cbef95d0e2dbaeb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681441"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476538"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Badanie złośliwych wiadomości e-mail dostarczonych w Microsoft 365
 
@@ -34,10 +34,10 @@ ms.locfileid: "63681441"
 
 **Dotyczy:**
 
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Program Microsoft Defender for Office 365](defender-for-office-365.md) umożliwia badanie działań, które nałożyły ryzyko osób w organizacji, oraz podejmie działania w celu ochrony organizacji. Jeśli na przykład należysz do zespołu zabezpieczeń organizacji, możesz znaleźć i zbadać podejrzane wiadomości e-mail, które zostały dostarczone. Możesz to zrobić przy użyciu [Eksploratora zagrożeń (lub wykrywania w czasie rzeczywistym](threat-explorer.md)).
+[Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md) umożliwia badanie działań, które ryzykują osoby w organizacji, oraz działania w celu ochrony organizacji. Jeśli na przykład należysz do zespołu zabezpieczeń organizacji, możesz znaleźć i zbadać podejrzane wiadomości e-mail, które zostały dostarczone. Możesz to zrobić przy użyciu [Eksploratora zagrożeń (lub wykrywania w czasie rzeczywistym](threat-explorer.md)).
 
 > [!NOTE]
 > Przejdź tutaj do artykułu o rozwiązywaniu [problemów](remediate-malicious-email-delivered-office-365.md).
@@ -46,7 +46,7 @@ ms.locfileid: "63681441"
 
 Upewnij się, że są spełnione następujące wymagania:
 
-- Twoja organizacja korzysta [z programu Microsoft Defender Office 365](defender-for-office-365.md), a licencje [są przypisywane do użytkowników](../../admin/manage/assign-licenses-to-users.md).
+- Twoja organizacja [ma Ochrona usługi Office 365 w usłudze Microsoft Defender](defender-for-office-365.md)[, a licencje są przypisywane do użytkowników](../../admin/manage/assign-licenses-to-users.md).
 
 - [Rejestrowanie inspekcji](../../compliance/turn-audit-log-search-on-or-off.md) jest włączone dla organizacji.
 
@@ -67,7 +67,7 @@ Aby wykonać określone czynności, takie jak wyświetlanie nagłówków wiadomo
 > [!NOTE]
 > **Wersja Preview** to rola, a nie grupa ról. Rola Preview musi zostać dodana do istniejącej grupy ról lub nowej grupy ról w portalu Microsoft 365 Defender grupy. Aby uzyskać więcej informacji, [zobacz Uprawnienia w portalu Microsoft 365 Defender użytkowników](permissions-microsoft-365-security-center.md).
 >
-> Administrator globalny ma przypisaną rolę administratorów centrum administracyjne platformy Microsoft 365 stronie <https://admin.microsoft.com>. Role administratora zabezpieczeń i czytnika zabezpieczeń są przypisywane w Microsoft 365 Defender sieci.
+> Administrator globalny ma przypisaną rolę administratorów Centrum administracyjne platformy Microsoft 365 stronie <https://admin.microsoft.com>. Role administratora zabezpieczeń i czytnika zabezpieczeń są przypisywane w Microsoft 365 Defender sieci.
 
 Rozumiemy, że przeglądanie i pobieranie wiadomości e-mail to działania poufne, więc inspekcja jest włączona dla tych działań. Gdy administrator wykona te działania w wiadomości e-mail, dzienniki inspekcji są generowane dla tego samego pliku i są widoczne w portalu   \> <https://security.microsoft.com> usługi Microsoft 365 Defender na karcie Przeszukiwanie inspekcji, a następnie filtruj według nazwy administratora w polu Użytkownicy. W filtrowanych wynikach zostanie pokazana aktywność **AdminMailAccess**. Wybierz wiersz, aby wyświetlić szczegóły w sekcji **Więcej** informacji o podglądzie lub pobraniu wiadomości e-mail.
 
@@ -84,11 +84,11 @@ Eksplorator zagrożeń to zaawansowany raport, który może służyć do wielu c
 
 2. Z menu **Widok** wybierz z listy rozwijanej pozycję **Wyślij** \> wszystkie wiadomości e-mail pocztą e-mail.
 
-    ![Menu Widok w Eksploratorze zagrożeń i Poczta e-mail — opcje Złośliwe oprogramowanie, Wyłudzy, Materiały i Wszystkie wiadomości e-mail, także Zawartość — Złośliwe oprogramowanie.](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    :::image type="content" source="../../media/tp-InvestigateMalEmail-viewmenu.png" alt-text="Lista rozwijana Złośliwe oprogramowanie" lightbox="../../media/tp-InvestigateMalEmail-viewmenu.png":::
 
     Widok *Złośliwe* oprogramowanie jest obecnie widokiem domyślnym i przechwytuje wiadomości e-mail, w których wykryto zagrożenie złośliwym oprogramowaniem. Widok *Phish* działa tak samo jak widok Phish.
 
-    Jednak w *widoku Wszystkie wiadomości* e-mail jest wymieniona każda wiadomość odebrana przez organizację niezależnie od tego, czy zagrożenia zostały wykryte. Jak możesz sobie wyobrazić, jest to mnóstwo danych, dlatego w tym widoku jest przedstawiany symbol zastępczy z prośbą o zastosowanie filtru. (Ten widok jest dostępny tylko dla usługi Defender dla klientów Office 365 P2).
+    Jednak w *widoku Wszystkie wiadomości* e-mail jest wymieniona każda wiadomość odebrana przez organizację niezależnie od tego, czy zagrożenia zostały wykryte. Jak możesz sobie wyobrazić, jest to mnóstwo danych, dlatego w tym widoku jest przedstawiany symbol zastępczy z prośbą o zastosowanie filtru. (Ten widok jest dostępny tylko dla Ochrona usługi Office 365 w usłudze Defender P2).
 
     *Widok Przesłane* materiały zawiera wszystkie wiadomości przesłane przez administratora lub użytkownika, które zostały zgłoszone firmie Microsoft.
 
@@ -104,11 +104,11 @@ Eksplorator zagrożeń to zaawansowany raport, który może służyć do wielu c
 
    Filtrowanie zaawansowane to świetny dodatek do funkcji wyszukiwania. Wartość logiczna NIE w filtrach domeny **Adresat**, **Nadawca** i Nadawca umożliwia administratorom badanie, wykluczając wartości. Ta opcja nie powoduje **zaznaczenia równa się** . Ta opcja umożliwia administratorom wykluczanie niechcianych skrzynek pocztowych z prowadzonych spraw (na przykład skrzynek pocztowych alertów i domyślnych skrzynek pocztowych odpowiedzi) i jest przydatna w przypadkach, gdy administratorzy wyszukują określony temat (na przykład Uwaga), gdzie adresata można ustawić na wartość Brak wartości *defaultMail@contoso.com*. To jest dokładne wyszukiwanie wartości.
 
-   ![Adresatów — "Nie zawiera żadnego z" filtru zaawansowanego.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-AdvancedFilter.png" alt-text="Okienko Adresaci" lightbox="../../media/tp-InvestigateMalEmail-AdvancedFilter.png":::
 
    Dodanie filtru czasu do daty rozpoczęcia i daty zakończenia ułatwia zespołowi zabezpieczeń szybkie przechodzenie do szczegółów. Najmniejszy dozwolony czas trwania to 30 minut. Jeśli możesz zawęzić podejrzaną akcję do czasu (np. została ona wykonana 3 godziny temu), ograniczy to kontekst i pomoże w skojarze problemu.
 
-   ![Opcja filtrowania według godzin w celu zawężenia ilości danych, które zespół bezpieczeństwa danych musi przetworzyć, a jej najkrótszy czas trwania wynosi 30 minut.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-FilterbyHours.png" alt-text="Opcja filtrowania według godzin" lightbox="../../media/tp-InvestigateMalEmail-FilterbyHours.png":::
 
 6. **Pola w Eksploratorze zagrożeń**: Eksplorator zagrożeń udostępnia znacznie więcej informacji o wiadomościach związanych z zabezpieczeniami *, takich* jak akcja *dostarczania, lokalizacja* *dostarczania, akcja* specjalna *,* kierunkowość *,* zastępowanie i zagrożenia w adresie *URL*. Umożliwia to również zespołowi ds. zabezpieczeń organizacji badanie z większą pewnością.
 
@@ -188,10 +188,10 @@ Lokalizacja dostarczania zawiera wyniki zasad i wykrycia uruchamianych po dostar
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Remediate malicious email delivered in Office 365](remediate-malicious-email-delivered-office-365.md)
+[Korygowanie złośliwych wiadomości e-mail dostarczanych w usłudze Office 365](remediate-malicious-email-delivered-office-365.md)
 
-[Usługa Microsoft Defender dla Office 365](office-365-ti.md)
+[Ochrona usługi Office 365 w usłudze Microsoft Defender](office-365-ti.md)
 
 [Ochrona przed zagrożeniami w Office 365](protect-against-threats.md)
 
-[Wyświetlanie raportów usługi Defender dla Office 365](view-reports-for-mdo.md)
+[Wyświetlanie raportów dla Ochrona usługi Office 365 w usłudze Defender](view-reports-for-mdo.md)

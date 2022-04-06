@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f1d00c12512b70ffd62372aaeae787acf1911573
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 294531305321901dfa704462471d1573b9cb4b88
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330289"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635114"
 ---
 # <a name="device-images"></a>Obrazy urządzeń
 
@@ -28,6 +28,11 @@ Niezależnie od tego, czy zamówisz [](#existing-devices) nowe [urządzenia](#ne
 W przypadku zamówienia nowego urządzenia [od zatwierdzonego](device-requirements.md#minimum-requirements) producenta wykonaj poniższe czynności, aby upewnić się, że urządzenia są w nich zainstalowane Microsoft Managed Desktop obrazem i konfiguracją oprogramowania.
 
 Za każdym razem, gdy zamierzasz zarejestrować określony model urządzenia w usłudze po raz pierwszy, warto przetestować przykład, aby upewnić się, że zapewni to oczekiwaną obsługę użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie nowych urządzeń](/microsoft-365/managed-desktop/get-started/validate-device).
+
+### <a name="windows-10-pro"></a>Windows 10 Pro
+Jeśli chcesz zamówić urządzenia za pomocą Windows 10, pracuj bezpośrednio u swojego przedstawiciela handlowego OEM. Od 1 listopada 2022 r. program dla producentów OEM może sprzedawać wyłącznie produkty Windows 10 Pro ramach Windows 11 Pro licencji na starszą Windows 10 Pro starszą wersję. Aby uzyskać więcej informacji, [Windows 10 daty](/lifecycle/products/windows-10-enterprise-and-education?msclkid=4a74c7b9b04111eca478c6fdafbc51a5) wycofania z Windows 10 wersji.
+
+Dla klientów zainteresowanych przejściem do Windows 11 znajdziesz więcej informacji na temat zalecanego [procesu tutaj](/microsoft-365/managed-desktop/intro/win11-overview). 
 
 ### <a name="dell"></a>Dell
 

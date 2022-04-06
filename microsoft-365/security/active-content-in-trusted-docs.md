@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: Administratorzy mogą dowiedzieć się, jak tworzyć zasady blokowania zawartości aktywnej w Office dokumentach
-ms.openlocfilehash: 89f2e51253d3c2fda0140dd7be8bc86b1fda2cf5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 33d53ab14fec1b6cd16b8de95befe8bc8a898e16
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682818"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468926"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Zarządzanie zawartością aktywną w Office dokumentów
 
@@ -35,17 +35,17 @@ Wcześniej, gdy użytkownicy zidentyfikowali dokumenty jako zaufane dokumenty, i
 
 Zaktualizowana logika Centrum zaufania jest opisana na poniższym diagramie:
 
-:::image type="content" source="../media/office-trust-center-flow.png" alt-text="Przykład schematu blokowego z opisem logiki Centrum zaufania w portalu Microsoft 365 Defender zaufania" lightbox="../media/office-trust-center-flow.png":::
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="Schemat blokowy z opisem logiki Centrum zaufania w portalu Microsoft 365 Defender zaufania" lightbox="../media/office-trust-center-flow.png":::
 
 1. Użytkownik otwiera dokument programu Office zawierający zawartość aktywną.
 
 2. Jeśli dokument pochodzi z zaufanej lokalizacji, zostanie otwarty z włączoną zawartością aktywną. Jeśli dokument nie pochodzi z zaufanej lokalizacji, ocena będzie kontynuowana.
 
-3. W tym miejscu ma zostać wprowadzone zaktualizowane zachowanie:
+3. Oto zaktualizowane zachowanie zostanie wprowadzone:
    - Wcześniej następne oceniane ustawienie było, gdyby użytkownik zidentyfikował ten dokument jako zaufany dokument. W przypadku gdyby tak było, dokument zostanie otwarty z włączoną zawartością aktywną.
    - Teraz, niezależnie od tego, czy użytkownik zidentyfikował dokument jako zaufany dokument, nie jest tu rozważany (obecnie w kroku 8).
 
-     Jest to podstawowa zmiana w zachowaniu: zasady chmury (krok 4), zasady grupy (krok 6) i ustawienia lokalne (krok 7) są sprawdzane  przed oznaczeniem zaufanego dokumentu przez użytkownika. Jeśli którykolwiek z tych kroków blokuje dostęp do zawartości aktywnej i żaden z kroków nie zezwala na zastępowanie przez użytkownika, oznacza to, że identyfikacja przez użytkownika dokumentu jako zaufanego dokumentu nie ma znaczenia.
+     Podstawową zmianę zachowania opisano w następujący sposób: zasady chmury (krok 4), zasady grupy (krok 6) i ustawienia lokalne (krok 7) są sprawdzane przed  oznaczeniem zaufanego dokumentu przez użytkownika. Jeśli którykolwiek z tych kroków blokuje dostęp do zawartości aktywnej i żaden z kroków nie zezwala na zastępowanie przez użytkownika, oznacza to, że identyfikacja przez użytkownika dokumentu jako zaufanego dokumentu nie ma znaczenia.
 
 4. Zasady chmury są sprawdzane, aby sprawdzić, czy tego typu zawartość aktywna jest dozwolona, czy blokowana. Jeśli zawartość aktywna nie zostanie zablokowana, ocena będzie kontynuowana do kroku 6.
 
@@ -81,7 +81,7 @@ Aby uzyskać więcej informacji, zapoznaj się z następującymi artykułami:
 Administratorzy mają wiele sposobów konfigurowania Office w organizacji. Przykład:
 
 - **Office usługi zasad** w chmurze: Skonfiguruj zasady oparte na użytkownikach, które mają zastosowanie do użytkownika na dowolnym urządzeniu, które ma dostęp do plików w aplikacji Office za pomocą konta usługi Azure AD. Zapoznaj się z krokami [tworzenia konfiguracji zasad Office chmurze](/DeployOffice/overview-office-cloud-policy-service) w [usłudze Office w chmurze](https://config.office.com/officeSettings/officePolicies).
-- **Office usługi Intune**: Użyj wykazu usługi Intune Ustawienia lub szablonów administracyjnych, aby wdrożyć zasady usługi HKCU na Windows 10 KOMPUTERACH: W centrum administracyjnym [MEM](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) w obszarze **Profile** \> konfiguracji **urządzeń**.
+- **Office** w programie Intune: Użyj wykazu Intune Ustawienia lub szablonów administracyjnych, aby wdrożyć zasady usługi HKCU na Windows 10 PC: W centrum administracyjnym [MEM](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles)  \> w obszarze Profile konfiguracji **urządzeń.**
   - ***Szablony administracyjne***: Zobacz instrukcje dotyczące używania Windows 10 do [konfigurowania szablonów administracyjnych](/mem/intune/configuration/administrative-templates-windows).
   - ***Ustawienia (wersja zapoznawcza)***: Zobacz instrukcje dotyczące korzystania [z Ustawienia (wersja zapoznawcza)](/mem/intune/configuration/settings-catalog).
 - **Zasady grupy**. Użyj lokalnego usługi Active Directory, aby wdrożyć obiekty zasad grupy (GPOs) u użytkowników i komputerów. Aby utworzyć zasadę zasad grupy dla tego ustawienia, pobierz najnowsze pliki szablonów administracyjnych [(ADMX/ADML) i narzędzie do dostosowywania usługi Office dla wersji Aplikacje Microsoft 365 dla przedsiębiorstw, Office 2019 i Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
@@ -102,7 +102,7 @@ Dostępne są następujące zasady:
 - **Wyłącz zaufane dokumenty: wyjątki** dla grup.
 - **Wyłącz całą zawartość aktywną**: Wyjątki dla poszczególnych osób.
 
-W poniższych sekcjach opisano ustawienia kontrolujące zawartość aktywną. Te zasady, jeśli zostaną zastosowane do użytkowników, będą wymuszane w zaufanych dokumentach, a poprzednie środowisko użytkownika końcowego może nie być takie same. Tabele zawierają również zalecane ustawienie planu bazowego zabezpieczeń i identyfikują inne ustawienia, w których użytkownik może zastąpić monit (umożliwiający użytkownikowi włączenie zawartości aktywnej).
+W poniższych sekcjach opisano ustawienia kontrolujące zawartość aktywną. Te zasady, jeśli mają zastosowanie do użytkowników, będą wymuszane w zaufanych dokumentach, a poprzednie środowisko użytkownika końcowego może nie być takie same. Tabele zawierają również zalecane ustawienie planu bazowego zabezpieczeń i identyfikują inne ustawienia, w których użytkownik może zastąpić monit (umożliwiający użytkownikowi włączenie zawartości aktywnej).
 
 ### <a name="hkey_current_user-settings"></a>HKEY_CURRENT_USER ustawienia
 
@@ -143,7 +143,7 @@ W poniższych sekcjach opisano ustawienia kontrolujące zawartość aktywną. Te
 |Makra|Excel|Skanowanie zaszyfrowanych makr w Excel otwartych skoroszytach XML|**Skanowanie zaszyfrowanych makr (domyślnie)**|Nie|
 |Makra|Pakiet Office|Zezwalanie VBA na ładowanie odwołań typulib według ścieżki z niezaufanych lokalizacji intranetowych|**Wyłączone**|Nie|
 |Makra|Pakiet Office|Zabezpieczenia automatyzacji|**Używanie poziomu zabezpieczeń makr aplikacji**|Nie|
-|Makra|Pakiet Office|Wyłączanie dodatkowych testów zabezpieczeń w odwołaniach do biblioteki VBA, które mogą odwoływać się do niebezpiecznych lokalizacji na komputerze lokalnym|**Wyłączone**|Nie|
+|Makra|Pakiet Office|Wyłącz inne testy zabezpieczeń odwołań do bibliotek VBA, które mogą odwoływać się do niebezpiecznych lokalizacji na komputerze lokalnym|**Wyłączone**|Nie|
 |Makra|Pakiet Office|Zakres skanowania w czasie wykonywania makr|**Włącz dla wszystkich dokumentów**|Nie|
 |Makra|Pakiet Office|Ufaj tylko makrom VBA, które używają podpisów V3|Nie jest to ustawienie planu bazowego zabezpieczeń.|Nie|
 |Makra|Outlook|Outlook tryb zabezpieczeń|**Korzystanie Outlook zabezpieczeń zasady grupy**|Wymagane do włączenia wszystkich Outlook GPO. <p> Wspomniano jako zależność (te zasady nie blokują samej zawartości aktywnej).|
@@ -162,7 +162,7 @@ W poniższych sekcjach opisano ustawienia kontrolujące zawartość aktywną. Te
 |---|---|---|---|---|
 |ActiveX|Pakiet Office|Ogranicz ActiveX instalacji|excel.exe = Prawda <p> exprwd.exe = Prawda <p> groove.exe = Prawda <p> msaccess.exe = Prawda <p> mse7.exe = Prawda <p> mspub.exe = Prawda <p> onent.exe = Prawda <p> outlook.exe = Prawda <p> powerpnt.exe = Prawda <p> pptview.exe = Prawda <p> spDesign.exe = Prawda <p> visio.exe = Prawda <p> winproj.exe = Prawda <p> winword.exe = Prawda|Nie|
 |Dodatki z & rozszerzalności|Pakiet Office|Zarządzanie zasobami dodatków|excel.exe = Prawda <p> exprwd.exe = Prawda <p> groove.exe = Prawda <p> msaccess.exe = Prawda <p> mse7.exe = Prawda <p> mspub.exe = Prawda <p> onent.exe = Prawda <p> outlook.exe = Prawda <p> powerpnt.exe = Prawda <p> pptview.exe = Prawda <p> spDesign.exe = Prawda <p> visio.exe = Prawda <p> winproj.exe = Prawda <p> winword.exe = Prawda|Nie|
-|Dodatki z & rozszerzalności|Pakiet Office|Blokowanie aktywacji w programie Flash Office dokumentach|Zobacz pliki ADMX/ADML przewodnika po zabezpieczeniach firmy Microsoft, aby uzyskać listę plików COM killbits w celu zablokowania wszystkich aktywacji programu Flash w Microsoft 365 aplikacjach. Pliki ADMX/ADML dla planu bazowego zabezpieczeń przedsiębiorstwa są dostępne w zestawie [narzędzi do zgodności zabezpieczeń](https://www.microsoft.com/download/details.aspx?id=55319).|Nie|
+|Dodatki z & rozszerzalności|Pakiet Office|Blokowanie aktywacji w programie Flash Office dokumentach|Zobacz pliki ADMX/ADML przewodnika po zabezpieczeniach firmy Microsoft, aby uzyskać listę plików COM killbits w celu zablokowania wszystkich aktywacji programu Flash w Microsoft 365 aplikacji. Pliki ADMX/ADML dla planu bazowego zabezpieczeń przedsiębiorstwa są dostępne w zestawie [narzędzi do zgodności zabezpieczeń](https://www.microsoft.com/download/details.aspx?id=55319).|Nie|
 |Jscript & VBScript|Pakiet Office|Ograniczanie wykonywania starszych JScript w Office|**Włączone**: <p> Access: 69632 <p> Excel: 69632 <p> OneNote: 69632 <p> Outlook: 69632 <p> PowerPoint: 69632 <p> Project: 69632 <p> Publisher: 69632 <p> Visio: 69632 <p> Word: 69632|Nie|
 |Jscript & VBScript|Pakiet Office|Ograniczenia zabezpieczeń okien w skryptach|excel.exe = Prawda <p> exprwd.exe = Prawda <p> groove.exe = Prawda <p> msaccess.exe = Prawda <p> mse7.exe = Prawda <p> mspub.exe = Prawda <p> onent.exe = Prawda <p> outlook.exe = Prawda <p> powerpnt.exe = Prawda <p> pptview.exe = Prawda <p> spDesign.exe = Prawda <p> visio.exe = Prawda <p> winproj.exe = Prawda <p> winword.exe = Prawda|Nie|
 |

@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Określanie miejsca przechowywania Microsoft 365 klientów na całym świecie
-ms.openlocfilehash: c88eceadf6c00d165b0ac032fab19596abec49e1
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 17675917a737717c352125d23a32b432e681a77f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525476"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634564"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Miejsce przechowywania Microsoft 365 danych klienta
 
@@ -30,7 +30,7 @@ W poniższych tabelach pokazano, gdzie dane klientów są przechowywane w miejsc
 
 Jeśli Twoja firma znajduje się w Unii Europejskiej, zobacz Lokalizacje danych krajów Unii [Europejskiej](EU-data-storage-locations.md) , aby uzyskać więcej informacji. 
 
-Klienci powinni wyświetlać informacje o lokalizacji danych określonej dzierżawy na centrum administracyjne platformy Microsoft 365 w **Ustawienia** >  **Org** <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**UstawieniaOrganizacjiNa**</a> >  karcie **ProfilOrganizacja** >  Lokalizacja danych. Jeśli zażądano przeniesienia do nowej lokalizacji [geograficznej, informacje](request-your-data-move.md) o lokalizacji danych w centrum administracyjne platformy Microsoft 365 mogą pokazywać tylko nowe dane geolokalizacji, nawet jeśli podczas przejścia część danych może być tymczasowo przechowywana w poprzedniej lokalizacji geograficznej. 
+Klienci powinni wyświetlać informacje o lokalizacji danych określonej dzierżawy na Centrum administracyjne platformy Microsoft 365 w **Ustawienia** >  **Org** <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**ustawieniaOrganizacja**</a> >  na karcie **ProfilOrganizacja** >  Lokalizacja danych. Jeśli [zażądano](request-your-data-move.md) przeniesienia do nowej lokalizacji geograficznej, informacje o lokalizacji danych w Centrum administracyjne platformy Microsoft 365 mogą pokazywać tylko nowe dane geolokalizacji, nawet jeśli podczas przejścia część danych może być tymczasowo przechowywana na poprzedniej lokalizacji geograficznej. 
 
 Nowe Microsoft 365 dzierżawy są domyślnie oznaczane wartością Geo na podstawie kraju transakcji skojarzonego z pierwszą subskrypcją tej dzierżawy.
 
@@ -38,7 +38,7 @@ Informacje o zobowiązaniach kontraktowych dotyczących lokalizacji przechowywan
 
 Aby Azure Active Directory danych, odwiedź stronę AAD [Mapa danych](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
-Jeśli adres rozliczeniowy klienta znajduje się poza Europą i klient ma subskrypcję usługi Office 365 Education, bez względu na sekcję "Lokalizacja danych klienta w rest for Core Online Services" ost, firma Microsoft może zapewniać obsługę dzierżawy usługi Office 365 klienta w, przenosić dane klienta do i przechowywać dane klienta w dowolnym miejscu w Europie lub Ameryce Północnej.  Jeśli adres rozliczeniowy klienta znajduje się w Europie i klient ma subskrypcję usługi Office 365 Education, bez względu na sekcję "Lokalizacja danych klienta w rest for Core Online Services" ost, firma Microsoft może zapewniać obsługę dzierżawy usługi Office 365 klienta w, przenosić dane klienta do i przechowywać dane klienta w dowolnym miejscu w Unii Europejskiej.
+Jeśli adres rozliczeniowy klienta znajduje się poza Europą i klient ma subskrypcję usługi Office 365 Education, bez względu na sekcję "Lokalizacja danych klienta w rest for Core Online Services" ost, firma Microsoft może zapewniać obsługę dzierżawy usługi Office 365 klienta w, przenosić dane klienta do i przechowywać dane klienta w dowolnym miejscu w Europie lub Ameryka Północna.  Jeśli adres rozliczeniowy klienta znajduje się w Europie i klient ma subskrypcję usługi Office 365 Education, bez względu na sekcję "Lokalizacja danych klienta w rest for Core Online Services" ost, firma Microsoft może zapewniać obsługę dzierżawy usługi Office 365 klienta w, przenosić dane klienta do i przechowywać dane klienta w dowolnym miejscu w Unii Europejskiej.
 
 
 
@@ -93,30 +93,30 @@ Przejrzyj stronę [Produkty dostępne według regionu](https://go.microsoft.com/
 
 Żądanie klienta może być obsługiwane przez serwery w innym regionie niż lokalizacja, w której dane są przechowywane w miejscu. Może się tak zdarzyć, gdy decyzje dotyczące routingu sieciowego wybierają inny serwer na przetwarzanie żądania, ale w takich przypadkach dane nie są przenoszone do nowej lokalizacji spoczynku.
 
-### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Jakie są wyjątki dla lokalizacji danych usługi Intune?
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Jakie są wyjątki dla Intune danych?
 
-Firma Microsoft nie będzie przechowywać danych klienta usługi Intune w miejscu poza wskazaną lokalizacją geograficzną. chyba że:
+Firma Microsoft nie będzie przechowywać Intune danych klientów poza wskazaną lokalizacją geograficzną. chyba że:
 
 - Firma Microsoft musi świadczyć pomoc techniczną, rozwiązywać problemy z usługą lub przestrzegać wymogów prawnych.
 - Klient konfiguruje konto w celu umożliwienia takiego przechowywania danych klienta, na przykład dzięki użyciu następujących funkcji:
 
   - Funkcje zaprojektowane pod kątem działania globalnego, takie jak Content Delivery Network (CDN), które zapewniają globalną usługę buforowania danych i przechowuje dane klientów w lokalizacjach na całym świecie.
 
-  - Azure Active Directory (Azure AD), która może globalnie przechowywać dane katalogowe. Nie dotyczy wdrożeń usługi Azure AD w Stanach Zjednoczonych (gdzie dane usługi Azure AD są przechowywane wyłącznie w Stanach Zjednoczonych) ani w Europie (gdzie dane usługi Azure AD są przechowywane w Europie lub Stanach Zjednoczonych).
+  - Azure Active Directory (Azure AD), która może globalnie przechowywać dane katalogowe. Nie dotyczy wdrożeń usługi Azure AD w programie Stany Zjednoczone (gdzie dane usługi Azure AD są przechowywane wyłącznie w programie Stany Zjednoczone) ani w Europie (gdzie dane usługi Azure AD są przechowywane w Europie lub w Stany Zjednoczone).
    
-  - W wersji Preview, beta lub innych usługach przedpremierowych, które zwykle przechowują dane klientów w Stanach Zjednoczonych, ale mogą one być przechowywane globalnie.
+  - W wersji Preview, beta lub innych usługach przedpremierowych, które zwykle przechowują dane klientów w p Stany Zjednoczone ale mogą one być przechowywane globalnie.
 
-Niezależnie od tego firma Microsoft nie kontroluje ani nie ogranicza danych geograficznych, z których klienci lub ich użytkownicy końcowi mogą uzyskać dostęp do danych klientów. Podobnie, gdy dane klientów w innych usługach zostaną następnie zintegrowane z usługą Intune, dane tego klienta będą nadal przechowywane zgodnie z własnymi zobowiązaniami geograficznymi drugiej usługi (jeśli takowe są). w chmurze będzie przechowywana tylko kopia danych klienta zintegrowanych z usługą Intune.  
+Niezależnie od tego firma Microsoft nie kontroluje ani nie ogranicza danych geograficznych, z których klienci lub ich użytkownicy końcowi mogą uzyskać dostęp do danych klientów. Podobnie, gdy dane klienta w innych usługach zostaną następnie zintegrowane z usługą Intune, dane tego klienta będą nadal przechowywane zgodnie z zobowiązaniami geolokalizacji innych usług (jeśli są dostępne). W określonych danych geograficznych dla usługi Intune będzie przechowywana tylko kopia danych klienta zintegrowanych z usługą Intune.  
 
 ### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>Jakie są zagadnienia związane z Microsoft Viva danych?
 
-- Viva Connections
+- Zasoby Viva
 
   - Dane pulpitu nawigacyjnego, zasobów i aplikacji klasycznej są przechowywane w SharePoint Online. 
   
   - Kanał informacyjny zawiera zawartość z witryny SharePoint Online (Wiadomości), Strumień (przechowywana w miejscu w SharePoint Online) i Yammer (przechowywana w miejscu w Yammer).  
   
-- Viva Szczegółowe informacje
+- Szczegółowe informacje Viva
 
   - Miejsce przechowywania danych dla aplikacji Osobiste jest oparte na lokalizacji skrzynki pocztowej użytkownika.
   
@@ -132,7 +132,7 @@ Następujące globalne lokalizacje geograficzne mogą przechowywać dane w spocz
 
 | Global Geographies | Lokalizacje, w których mogą być przechowywane dane klienta |
 | --- | --- |
-| Global Geography 1–EMEA (Europa, Bliski Wschód i Afryka) | Austria, Finlandia, Francja, Irlandia, Holandia |
+| Global Geography 1–EMEA (Europa, Bliski Wschód i Afryka) | Austria, Finlandia, Francja, Irlandia, Holandia, Szwecja |
 | Global Geography 2 — Azja pacyfik | Hongkong, Japonia, Malezja, Singapur, Korea Południowa |
 | Global Geography 3 — Ameryka Północna | Brazylia, Chile, Stany Zjednoczone |
 
@@ -145,7 +145,7 @@ W przypadku centrów danych specyficznych dla kraju/regionu w poniższej częśc
 | Australia | Sydney, Melbourne |
 | Brazylia | Rio, Campinas |
 | Kanada | Quebec City, Toronto |
-| Unia Europejska | Austria (Austria), Finlandia (Helsinki), Francja (Paryż, Marsyjska), Irlandia (Dublin), Holandia (Amsterdam) |
+| Unia Europejska | Austria (Austria), Finlandia (Helsinki), Francja (Paryż, Marseille), Irlandia (Dublin), Holandia (Amsterdam), Szwecja (Gävle, Sandliaen, Staffanstorp) |
 | Francja | Paryż, Marseille |
 | Niemcy | Do tej 2020 roku, Berlin |
 | Indie | Chennai, Mumbai, Pune |
@@ -180,13 +180,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="aland-islands"></a>Wyspy Alandzkie
@@ -208,13 +208,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="albania"></a>Albania
@@ -236,13 +236,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="algeria"></a>Algieria
@@ -264,13 +264,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="american-samoa"></a>Samoa Amerykańskie
@@ -292,13 +292,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="andorra"></a>Andora
@@ -320,13 +320,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="angola"></a>Angola
@@ -348,13 +348,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="anguilla"></a>Anguilla
@@ -376,13 +376,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="antarctica"></a>Antarktyda
@@ -404,13 +404,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="antigua-and-barbuda"></a>Antigua i Barbuda
@@ -432,13 +432,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="argentina"></a>Argentyna
@@ -460,13 +460,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="armenia"></a>Armenia
@@ -488,13 +488,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="aruba"></a>Aruba
@@ -516,13 +516,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="australia"></a>Australia
@@ -544,13 +544,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Australia |
 | Tablica | Australia |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Australia |
-| Viva Tematy | Australia |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Australia |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Australia |
+| Tematy Viva | Australia |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Australia |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="austria"></a>Austria
@@ -572,13 +572,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="azerbaijan"></a>Azerbejdżan
@@ -600,13 +600,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bahamas"></a>Bahamy
@@ -628,13 +628,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bahrain"></a>Bahrajn
@@ -656,13 +656,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bangladesh"></a>Bangladesz
@@ -684,13 +684,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="barbados"></a>Barbados
@@ -712,13 +712,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -741,13 +741,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="belgium"></a>Belgia
@@ -769,13 +769,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="belize"></a>Belize
@@ -797,13 +797,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="benin"></a>Benin
@@ -825,13 +825,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bermuda"></a>Bermudy
@@ -853,13 +853,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bhutan"></a>Bhutan
@@ -881,13 +881,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bolivia"></a>Boliwia
@@ -909,13 +909,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bonaire"></a>Bonaire
@@ -937,13 +937,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bosnia-and-herzegovina"></a>Bośnia i Hercegowina
@@ -965,13 +965,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="botswana"></a>Botswana
@@ -993,13 +993,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bouvet-island"></a>Wyspa Bouveta
@@ -1021,13 +1021,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="brazil"></a>Brazylia
@@ -1049,13 +1049,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Brazylia |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Brazylia |
-| Viva Tematy | Brazylia |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Brazylia |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Brazylia |
+| Tematy Viva | Brazylia |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Brazylia |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="british-indian-ocean-territory"></a>Brytyjskie Terytorium Oceanu Indyjskiego
@@ -1077,16 +1077,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="british-virgin-islands"></a>Brytyjskie Wyspy Dziewicze
+## <a name="british-virgin-islands"></a>Brytyjskich Wysp Dziewicze
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -1105,13 +1105,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="brunei"></a>Brunei
@@ -1133,13 +1133,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="bulgaria"></a>Bułgaria
@@ -1161,13 +1161,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="burkina-faso"></a>Burkina Faso
@@ -1189,13 +1189,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="burundi"></a>Burundi
@@ -1217,16 +1217,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="cambodia"></a>Kambodża
+## <a name="cambodia"></a>Cambodia
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -1245,13 +1245,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="cameroon"></a>Kamerun
@@ -1273,13 +1273,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="canada"></a>Kanada
@@ -1301,13 +1301,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Kanada |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Kanada |
-| Viva Tematy | Kanada |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Kanada |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Kanada |
+| Tematy Viva | Kanada |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Kanada |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="cape-verde"></a>Cape Verde
@@ -1329,13 +1329,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="cayman-islands"></a>Cayman Islands
@@ -1357,13 +1357,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="central-african-republic"></a>Republika Środkowoafrykańska
@@ -1385,13 +1385,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="chad"></a>Czad
@@ -1413,13 +1413,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="chile"></a>Chile
@@ -1441,13 +1441,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="china"></a>Chiny
@@ -1469,13 +1469,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="christmas-island"></a>Wyspa Bożego Narodzenia
@@ -1497,13 +1497,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="cocos-keeling-islands"></a>Wyspy Kokosowe
@@ -1525,13 +1525,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="colombia"></a>Kolumbia
@@ -1553,13 +1553,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="comoros"></a>Komory
@@ -1581,13 +1581,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -1610,13 +1610,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -1639,13 +1639,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -1668,13 +1668,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="costa-rica"></a>Kostaryka
@@ -1696,13 +1696,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="cote-divoire"></a>Cote D'Ivoire
@@ -1724,13 +1724,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="croatia"></a>Chorwacja
@@ -1752,13 +1752,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="curacao"></a>Curacao
@@ -1780,13 +1780,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="cyprus"></a>Cypr
@@ -1808,13 +1808,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="czech-republic"></a>Republika Czeska
@@ -1836,13 +1836,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="denmark"></a>Dania
@@ -1864,13 +1864,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="djibouti"></a>Dżibuti
@@ -1892,13 +1892,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="dominica"></a>Dominika
@@ -1920,13 +1920,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="dominican-republic"></a>Dominikana
@@ -1948,13 +1948,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="ecuador"></a>Ekwador
@@ -1976,13 +1976,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="egypt"></a>Egipt
@@ -2004,13 +2004,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="el-salvador"></a>Salwador
@@ -2032,13 +2032,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="equatorial-guinea"></a>Gwinea Równikowa
@@ -2060,16 +2060,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="eritrea"></a>Erytrea
+## <a name="eritrea"></a>Eritrea
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -2088,13 +2088,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="estonia"></a>Estonia
@@ -2116,13 +2116,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="ethiopia"></a>Etiopia
@@ -2144,13 +2144,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="falkland-islands-malvinas"></a>Falklandy (Malwiny)
@@ -2172,13 +2172,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="faroe-islands"></a>Faroe Islands
@@ -2200,13 +2200,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="federated-states-of-micronesia"></a>Federowane Stany Mikronezja
@@ -2228,13 +2228,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="fiji"></a>Fidżi
@@ -2256,13 +2256,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Australia |
 | Tablica | Australia |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Australia |
-| Viva Tematy | Australia |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Australia |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Australia |
+| Tematy Viva | Australia |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Australia |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="finland"></a>Finlandia
@@ -2284,13 +2284,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="france"></a>Francja
@@ -2312,13 +2312,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Francja |
-| Viva Tematy | Francja |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Francja |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Francja |
+| Tematy Viva | Francja |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Francja |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="french-guiana"></a>Gujana Francuska
@@ -2340,16 +2340,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="french-polynesia"></a>Polinezja Francuska
+## <a name="french-polynesia"></a>Polinezja francuska
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -2368,13 +2368,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="french-southern-territories"></a>Francuskie Terytoria Południowe
@@ -2396,13 +2396,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="gabon"></a>Gabon
@@ -2424,13 +2424,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="gambia"></a>Gambia
@@ -2452,13 +2452,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="georgia"></a>Gruzja
@@ -2480,13 +2480,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="germany"></a>Niemcy
@@ -2508,13 +2508,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Niemcy |
-| Viva Tematy | Niemcy |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Niemcy |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Niemcy |
+| Tematy Viva | Niemcy |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Niemcy |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="ghana"></a>Ghana
@@ -2536,13 +2536,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="gibraltar"></a>Gibraltar
@@ -2564,13 +2564,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="greece"></a>Grecja
@@ -2592,13 +2592,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -2621,13 +2621,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="grenada"></a>Grenada
@@ -2649,13 +2649,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="guadeloupe"></a>Gwadelupa
@@ -2677,13 +2677,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="guam"></a>Guam
@@ -2705,13 +2705,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="guatemala"></a>Gwatemala
@@ -2733,13 +2733,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="guernsey"></a>Guernsey
@@ -2761,13 +2761,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="guinea"></a>Gwinea
@@ -2789,16 +2789,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="guinea-bissau"></a>Guinea-Bissau
+## <a name="guinea-bissau"></a>Gwinea Bissau
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -2817,13 +2817,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="guyana"></a>Gujana
@@ -2845,13 +2845,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="haiti"></a>Haiti
@@ -2873,13 +2873,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="heard-and-mcdonald-islands"></a>Wyspy Heard i McDonalda
@@ -2901,13 +2901,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="herzegovina"></a>Hercegowina
@@ -2929,13 +2929,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="holy-see-vatican-city-state"></a>Stolica Watykańska
@@ -2957,13 +2957,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="honduras"></a>Honduras
@@ -2985,16 +2985,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="hong-kong-sar"></a>SER Hongkong
+## <a name="hong-kong-sar"></a>Specjalny Region Administracyjny Hongkong
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -3013,13 +3013,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="hungary"></a>Węgry
@@ -3041,13 +3041,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="iceland"></a>Islandia
@@ -3069,13 +3069,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -3098,13 +3098,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Indie |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Indie |
-| Viva Tematy | Indie |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Indie |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Indie |
+| Tematy Viva | Indie |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Indie |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="indonesia"></a>Indonezja
@@ -3126,13 +3126,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="iraq"></a>Irak
@@ -3154,13 +3154,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="ireland"></a>Irlandia
@@ -3182,13 +3182,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="isle-of-man"></a>Wyspa Man
@@ -3210,13 +3210,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="israel"></a>Izrael
@@ -3238,13 +3238,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="italy"></a>Włochy
@@ -3266,13 +3266,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="jamaica"></a>Jamajka
@@ -3294,13 +3294,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="japan"></a>Japonia
@@ -3322,13 +3322,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Japonia |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Japonia |
-| Viva Tematy | Japonia |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Japonia |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Japonia |
+| Tematy Viva | Japonia |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Japonia |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="jersey"></a>Jersey
@@ -3350,13 +3350,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="jordan"></a>Jordania
@@ -3378,13 +3378,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="kazakhstan"></a>Kazachstan
@@ -3406,13 +3406,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="kenya"></a>Kenia
@@ -3434,13 +3434,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="kiribati"></a>Kiribati
@@ -3462,13 +3462,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="south-korea"></a>Korea Południowa
@@ -3490,13 +3490,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Korea Południowa |
-| Viva Tematy | Korea Południowa |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Korea Południowa |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Korea Południowa |
+| Tematy Viva | Korea Południowa |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Korea Południowa |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="kosovo"></a>Kosowo
@@ -3518,13 +3518,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="kuwait"></a>Kuwejt
@@ -3546,13 +3546,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="kyrgyzstan"></a>Kirgistan
@@ -3574,13 +3574,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="laos"></a>Laos
@@ -3602,13 +3602,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="latvia"></a>Łotwa
@@ -3630,13 +3630,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="lebanon"></a>Liban
@@ -3658,13 +3658,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -3687,13 +3687,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -3716,13 +3716,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="libya"></a>Libia
@@ -3744,13 +3744,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -3773,13 +3773,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Szwajcaria |
-| Viva Tematy | Szwajcaria |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Szwajcaria |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Szwajcaria |
+| Tematy Viva | Szwajcaria |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Szwajcaria |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="lithuania"></a>Litwa
@@ -3801,13 +3801,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="luxembourg"></a>Luksemburg
@@ -3829,13 +3829,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="madagascar"></a>Madagaskar
@@ -3857,13 +3857,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="malawi"></a>Malawi
@@ -3885,13 +3885,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="malaysia"></a>Malezja
@@ -3913,13 +3913,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="maldives"></a>Malediwy
@@ -3941,13 +3941,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="mali"></a>Mali
@@ -3969,13 +3969,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="malta"></a>Malta
@@ -3997,13 +3997,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="marshall-islands"></a>Wyspy Marshalla
@@ -4025,13 +4025,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="martinique"></a>Martynika
@@ -4053,13 +4053,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="mauritania"></a>Mauretania
@@ -4081,13 +4081,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="mauritius"></a>Mauritius
@@ -4109,13 +4109,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="mayotte"></a>Majotta
@@ -4137,13 +4137,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="mexico"></a>Meksyk
@@ -4165,13 +4165,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="moldova"></a>Mołdawia
@@ -4193,13 +4193,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="monaco"></a>Monako
@@ -4221,13 +4221,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="mongolia"></a>Mongolia
@@ -4249,13 +4249,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="montenegro"></a>Czarnogóra
@@ -4277,13 +4277,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="montserrat"></a>Montserrat
@@ -4303,15 +4303,15 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Stany Zjednoczone |
 | Usługi programu OneNote | Stany Zjednoczone |
 | Stream | Stany Zjednoczone |
-| Microsoft Whiteboard | Stany Zjednoczone |
+| Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="morocco"></a>Maroko
@@ -4331,15 +4331,15 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Yammer | Global Geography 1–EMEA |
 | Usługi programu OneNote | Global Geography 1–EMEA |
 | Stream | Global Geography 1–EMEA |
-| Microsoft Whiteboard | Stany Zjednoczone |
+| Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="mozambique"></a>Mozambik
@@ -4361,13 +4361,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="myanmar"></a>Mjanma
@@ -4389,13 +4389,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="namibia"></a>Namibia
@@ -4417,13 +4417,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="nauru"></a>Nauru
@@ -4445,13 +4445,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -4474,13 +4474,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -4503,13 +4503,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="netherlands-antilles"></a>Antyle Holenderskie
@@ -4531,13 +4531,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -4560,13 +4560,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="new-zealand"></a>Nowa Zelandia
@@ -4588,13 +4588,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Australia |
 | Tablica | Australia |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Australia |
-| Viva Tematy | Australia |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Australia |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Australia |
+| Tematy Viva | Australia |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Australia |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="nicaragua"></a>Nikaragua
@@ -4616,13 +4616,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="niger"></a>Niger
@@ -4644,13 +4644,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="nigeria"></a>Nigeria
@@ -4672,13 +4672,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="niue"></a>Niue
@@ -4700,16 +4700,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="norfolk-island"></a>Wyspa Norfolk
+## <a name="norfolk-island"></a>Terytorium Wyspy Norfolk
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -4728,13 +4728,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="northern-mariana-islands"></a>Mariany Północne
@@ -4756,13 +4756,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="norway"></a>Norwegia
@@ -4784,13 +4784,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Global Geography 1–EMEA |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Norwegia |
-| Viva Tematy | Norwegia |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Norwegia |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Norwegia |
+| Tematy Viva | Norwegia |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Norwegia |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 
 </p></details>
 
@@ -4813,13 +4813,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="pakistan"></a>Pakistan
@@ -4841,13 +4841,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="palau"></a>Palau
@@ -4869,13 +4869,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="palestinian-authority"></a>Autonomia Palestyńska
@@ -4897,13 +4897,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="panama"></a>Panama
@@ -4925,13 +4925,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="papua-new-guinea"></a>Papua-Nowa Gwinea
@@ -4953,13 +4953,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="paraguay"></a>Paragwaj
@@ -4981,13 +4981,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="peru"></a>Peru
@@ -5009,13 +5009,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="philippines"></a>Filipiny
@@ -5037,13 +5037,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="pitcairn"></a>Pitcairn
@@ -5065,13 +5065,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="poland"></a>Polska
@@ -5093,13 +5093,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="portugal"></a>Portugalia
@@ -5121,13 +5121,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="puerto-rico"></a>Portoryko
@@ -5149,13 +5149,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="qatar"></a>Katar
@@ -5177,13 +5177,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="republic-of-macedonia"></a>Republika Macedońskia
@@ -5205,13 +5205,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="runion"></a>Réunion
@@ -5233,13 +5233,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="romania"></a>Rumunia
@@ -5261,13 +5261,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="russian-federation"></a>Federacja Rosyjska
@@ -5290,13 +5290,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="rwanda"></a>Rwanda
@@ -5319,13 +5319,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="saint-helena"></a>Święta Helena
@@ -5348,13 +5348,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="saint-kitts-and-nevis"></a>Saint Kitts i Nevis
@@ -5376,13 +5376,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="saint-lucia"></a>Saint Lucia
@@ -5404,16 +5404,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="saint-martin"></a>Saint Martin
+## <a name="saint-martin"></a>Saint-Martin
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -5432,16 +5432,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="saint-pierre-and-miquelon"></a>Saint Pierre i Miquelon
+## <a name="saint-pierre-and-miquelon"></a>Saint-Pierre i Miquelon
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -5460,13 +5460,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="saint-vincent-and-the-grenadines"></a>Saint Vincent i Grenadyny
@@ -5488,13 +5488,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="saint-barthlemy"></a>Saint-Barthélemy
@@ -5516,13 +5516,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="samoa"></a>Samoa
@@ -5544,13 +5544,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="san-marino"></a>San Marino
@@ -5572,16 +5572,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="sao-tome-and-principe"></a>Wyspy Świętego Tome iPrincipe
+## <a name="sao-tome-and-principe"></a>Wyspy Świętego Tomasza i Książęca
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -5600,13 +5600,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="saudi-arabia"></a>Arabia Saudyjska
@@ -5628,13 +5628,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="senegal"></a>Senegal
@@ -5656,13 +5656,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="serbia"></a>Serbia
@@ -5684,13 +5684,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="seychelles"></a>Seszele
@@ -5712,13 +5712,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="sierra-leone"></a>Sierra Leone
@@ -5740,13 +5740,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="singapore"></a>Singapur
@@ -5768,13 +5768,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="sint-maarten"></a>Sint Maarten
@@ -5796,13 +5796,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="slovakia"></a>Słowacja
@@ -5824,13 +5824,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="slovenia"></a>Słowenia
@@ -5852,13 +5852,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="solomon-islands"></a>Wyspy Salomona
@@ -5880,13 +5880,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="somalia"></a>Somalia
@@ -5909,13 +5909,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="south-africa"></a>Republika Południowej Afryki
@@ -5937,13 +5937,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Republika Południowej Afryki |
-| Viva Tematy | Republika Południowej Afryki |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Republika Południowej Afryki |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Republika Południowej Afryki |
+| Tematy Viva | Republika Południowej Afryki |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Republika Południowej Afryki |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
  </p></details>
 
 ## <a name="south-georgia-and-the-south-sandwich-islands"></a>Georgia Południowa i Sandwich Południowy
@@ -5965,13 +5965,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="spain"></a>Hiszpania
@@ -5993,13 +5993,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Unia Europejska |
-| Viva Tematy | Unia Europejska |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Unia Europejska |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Unia Europejska |
+| Tematy Viva | Unia Europejska |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Unia Europejska |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="sri-lanka"></a>Sri Lanka
@@ -6021,13 +6021,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="suriname"></a>Surinam
@@ -6049,13 +6049,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="svalbard-and-jan-mayen-islands"></a>Svalbard i Jan Mayen Islands
@@ -6077,16 +6077,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="swaziland"></a>Rzeszów
+## <a name="swaziland"></a>Eswatinia
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -6105,13 +6105,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="sweden"></a>Szwecja
@@ -6133,13 +6133,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Szwecja |
-| Viva Tematy | Szwecja |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Szwecja |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Szwecja |
+| Tematy Viva | Szwecja |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Szwecja |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="switzerland"></a>Szwajcaria
@@ -6161,13 +6161,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Unia Europejska |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Szwajcaria |
-| Viva Tematy | Szwajcaria |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Szwajcaria |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Szwajcaria |
+| Tematy Viva | Szwajcaria |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Szwajcaria |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="taiwan"></a>Tajwan
@@ -6189,13 +6189,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="tajikistan"></a>Tadżykistan
@@ -6217,13 +6217,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="united-republic-of-tanzania"></a>Zjednoczone Królestwo Tanzanii
@@ -6245,13 +6245,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="thailand"></a>Tajlandia
@@ -6273,16 +6273,16 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
-## <a name="timor-leste"></a>Timor-Leste
+## <a name="timor-leste"></a>Demokratyczna Republika Timoru Wschodniego
 <details><summary>Kliknij, aby rozwinąć</summary><p>
 
 | Usługa | Lokalizacja |
@@ -6301,13 +6301,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="togo"></a>Togo
@@ -6329,13 +6329,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="tokelau"></a>Tokelau
@@ -6357,13 +6357,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="tonga"></a>Tonga
@@ -6385,13 +6385,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="trinidad-and-tobago"></a>Trinidad i Tobago
@@ -6413,13 +6413,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="tunisia"></a>Tunezja
@@ -6441,13 +6441,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="turkey"></a>Turcja
@@ -6469,13 +6469,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="turkmenistan"></a>Turkmenistan
@@ -6497,13 +6497,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="turks-and-caicos-islands"></a>Turks i Caicos
@@ -6525,13 +6525,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="tuvalu"></a>Tuvalu
@@ -6553,13 +6553,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="us-virgin-islands"></a>Wyspy Dziewicze Stanów Zjednoczonych
@@ -6581,13 +6581,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="uganda"></a>Uganda
@@ -6609,13 +6609,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="ukraine"></a>Ukraina
@@ -6637,13 +6637,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="united-arab-emirates"></a>Zjednoczone Emiraty Arabskie
@@ -6665,13 +6665,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Zjednoczone Emiraty Arabskie |
-| Viva Tematy | Zjednoczone Emiraty Arabskie |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Zjednoczone Emiraty Arabskie |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Zjednoczone Emiraty Arabskie |
+| Tematy Viva | Zjednoczone Emiraty Arabskie |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Zjednoczone Emiraty Arabskie |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
  </p></details>
 
 ## <a name="united-kingdom"></a>Zjednoczone Królestwo
@@ -6693,13 +6693,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Zjednoczone Królestwo |
 | Tablica | Unia Europejska |
 | Formularze | Unia Europejska |
-| Viva Connections | Zjednoczone Królestwo |
-| Viva Tematy | Zjednoczone Królestwo |
-| Viva Edukacja | Unia Europejska |
-| Viva Szczegółowe informacje - Personal | Zjednoczone Królestwo |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Unia Europejska |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Zjednoczone Królestwo |
+| Tematy Viva | Zjednoczone Królestwo |
+| Nauka Viva | Unia Europejska |
+| Szczegółowe informacje Viva — Osobiste | Zjednoczone Królestwo |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Unia Europejska |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="united-states"></a>Stany Zjednoczone
@@ -6721,13 +6721,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="uruguay"></a>Urugwaj
@@ -6749,13 +6749,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 3 — Ameryka Północna |
-| Viva Tematy | Global Geography 3 — Ameryka Północna |
-| Viva Edukacja | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Personal | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 3 — Ameryka Północna |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 3 — Ameryka Północna |
+| Tematy Viva | Global Geography 3 — Ameryka Północna |
+| Nauka Viva | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 3 — Ameryka Północna |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="us-minor-outlying-islands"></a>Odląskie Mniejsze Wyspy Stanów Zjednoczonych
@@ -6777,13 +6777,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="uzbekistan"></a>Uzbekistan
@@ -6805,13 +6805,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="vanuatu"></a>Vanuatu
@@ -6833,13 +6833,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="venezuela"></a>Wenezuela
@@ -6860,13 +6860,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Stany Zjednoczone |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Stany Zjednoczone |
-| Viva Tematy | Stany Zjednoczone |
-| Viva Edukacja | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Personal | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Stany Zjednoczone |
+| Tematy Viva | Stany Zjednoczone |
+| Nauka Viva | Stany Zjednoczone |
+| Szczegółowe informacje Viva — Osobiste | Stany Zjednoczone |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Stany Zjednoczone |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 
@@ -6889,13 +6889,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="wallis-and-futuna-islands"></a>Wallis i Futuna
@@ -6917,13 +6917,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 2 — Azja pacyfik |
 | Tablica | Stany Zjednoczone |
 | Formularze | Stany Zjednoczone |
-| Viva Connections | Global Geography 2 — Azja pacyfik |
-| Viva Tematy | Global Geography 2 — Azja pacyfik |
-| Viva Edukacja | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Personal | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 2 — Azja pacyfik |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 2 — Azja pacyfik |
+| Tematy Viva | Global Geography 2 — Azja pacyfik |
+| Nauka Viva | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 2 — Azja pacyfik |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="western-sahara"></a>Sahara Zachodnia
@@ -6945,13 +6945,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="yemen"></a>Jemen
@@ -6973,13 +6973,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="zambia"></a>Zambia
@@ -7001,13 +7001,13 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>
 
 ## <a name="zimbabwe"></a>Zimbabwe
@@ -7029,11 +7029,11 @@ Nowe Microsoft 365 są domyślnie oznaczane wartością Geo w zależności od kr
 | Stream | Global Geography 1–EMEA |
 | Tablica | Stany Zjednoczone |
 | Formularze | Global Geography 1–EMEA |
-| Viva Connections | Global Geography 1–EMEA |
-| Viva Tematy | Global Geography 1–EMEA |
-| Viva Edukacja | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Personal | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Manager/Leader AAD tylko dane organizacji | Global Geography 1–EMEA |
-| Viva Szczegółowe informacje - Kierownik/Kierownik tylko z danymi hr z innej firmy | Stany Zjednoczone |
-| Viva Szczegółowe informacje - Advanced | Stany Zjednoczone |
+| Zasoby Viva | Global Geography 1–EMEA |
+| Tematy Viva | Global Geography 1–EMEA |
+| Nauka Viva | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — Osobiste | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — tylko dane menedżera/kierownika AAD organizacji | Global Geography 1–EMEA |
+| Szczegółowe informacje Viva — kierownik/kierownik tylko z danymi HR z innej firmy | Stany Zjednoczone |
+| Szczegółowe informacje Viva — zaawansowane | Stany Zjednoczone |
 </p></details>

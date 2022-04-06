@@ -19,22 +19,22 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 7b9443cac6543ac14f6d94bd2809b5263be0a860
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4c922ef443dbe6e4a1b55159f2c27b35926ff886
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681837"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634454"
 ---
-# <a name="protect-your-network"></a>Ochrona sieci
+# <a name="protect-your-network"></a>Chroń sieć
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="overview-of-network-protection"></a>Omówienie ochrony sieci
 
@@ -43,7 +43,7 @@ Ochrona sieci pomaga chronić urządzenia przed zdarzeniami internetowymi. Ochro
 Ochrona sieci rozszerza ochronę sieci [Web na](web-protection-overview.md) poziom systemu operacyjnego. Zapewnia on funkcje ochrony sieci Web w przeglądarce Microsoft Edge innym obsługiwanym przeglądarkom i aplikacjom niebędący przeglądarkami. Ponadto ochrona sieci zapewnia widoczność i blokowanie wskaźników naruszenia zabezpieczeń (IOCs) w przypadku korzystania z wykrywania punktu [końcowego i odpowiedzi](overview-endpoint-detection-response.md). Na przykład ochrona sieci działa ze [wskaźnikami](manage-indicators.md) niestandardowymi, które mogą być służące do blokowania określonych domen lub nazw hostów.
 
 > [!TIP]
-> Zobacz witrynę testową programu Microsoft Defender for Endpoint [w demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) , aby dowiedzieć się, jak działa ochrona sieci.
+> Zobacz Ochrona punktu końcowego w usłudze Microsoft Defender testowego miejsca [w demo.wd.microsoft.com,](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) aby zobaczyć, jak działa ochrona sieci.
 
 > [!NOTE]
 > Witryna pokazowa usługi Defender for Endpoint w demo.wd.microsoft.com jest przestarzała i zostanie usunięta w przyszłości.
@@ -72,7 +72,7 @@ Aby uzyskać więcej informacji na temat włączania ochrony sieci, zobacz **[W�
 
 ## <a name="viewing-network-protection-events"></a>Wyświetlanie zdarzeń ochrony sieci
 
-Ochrona sieci działa najlepiej z [programem Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), który udostępnia szczegółowe raporty dotyczące zdarzeń ochrony przed wykorzystywaniem luk i bloków w ramach [scenariuszy analizy alertów](investigate-alerts.md).
+Ochrona sieci działa najlepiej w [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md), co umożliwia szczegółowe raportowanie zdarzeń i bloków ochrony w ramach [scenariuszy analizy alertów](investigate-alerts.md).
 
 Gdy ochrona sieci blokuje połączenie, w Centrum akcji jest wyświetlane powiadomienie. Zespół operacyjny ds. zabezpieczeń [może dostosować powiadomienie](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) , dostosowując je do szczegółów i informacji kontaktowych organizacji. Ponadto można włączać i dostosowywać indywidualne reguły ograniczania powierzchni ataków, aby odpowiadały określonym technikom do monitorowania.
 
@@ -80,7 +80,7 @@ Za pomocą trybu [inspekcji można również](audit-windows-defender.md) ocenić
 
 ## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>Przeglądanie zdarzeń ochrony sieci w portalu Microsoft 365 Defender sieci
 
-Program Microsoft Defender for Endpoint udostępnia szczegółowe raportowanie zdarzeń i bloków w ramach scenariuszy analizy [alertów](investigate-alerts.md). Możesz wyświetlić te szczegóły w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) w kolejce [alertów](review-alerts.md) lub przy użyciu [zaawansowanego wyszukiwania](advanced-hunting-overview.md). Jeśli korzystasz [z trybu inspekcji](audit-windows-defender.md), możesz użyć zaawansowanego wyszukiwania, aby zobaczyć, jak ustawienia ochrony sieci wywrze wpływ na Twoje środowisko, jeśli zostały włączone.
+Ochrona punktu końcowego w usłudze Microsoft Defender udostępnia szczegółowe raportowanie zdarzeń i bloków w ramach scenariuszy analizy [alertów](investigate-alerts.md). Możesz wyświetlić te szczegóły w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) w kolejce [alertów](review-alerts.md) lub przy użyciu [zaawansowanego wyszukiwania](advanced-hunting-overview.md). Jeśli korzystasz [z trybu inspekcji](audit-windows-defender.md), możesz użyć zaawansowanego wyszukiwania, aby zobaczyć, jak ustawienia ochrony sieci wywrze wpływ na Twoje środowisko, jeśli zostały włączone.
 
 Oto przykładowa kwerenda dla zaawansowanego wyszukiwania:
 
@@ -89,7 +89,7 @@ DeviceNetworkEvents
 |where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Przeglądanie zdarzeń ochrony sieci w przeglądarce Windows zdarzeń
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Przeglądanie zdarzeń ochrony sieci w programie Windows Podgląd zdarzeń
 
 Możesz przejrzeć dziennik Windows zdarzeń, aby zobaczyć zdarzenia utworzone w przypadku bloków dostępu do złośliwego adresu IP lub domeny (inspekcji lub ochrony sieci):
 
@@ -142,7 +142,11 @@ W Windows 10 Enterprise wersji 1909 dla wielu sesji (i więcej) używanej w prog
 
 1. Aby [zastosować zasady,](enable-network-protection.md) użyj polecenia Włącz ochronę sieci i postępuj zgodnie z instrukcjami.
 
-2. Wykonaj następujące polecenie programu PowerShell: `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+2. Wykonaj następujące polecenia programu PowerShell:
+  - `Set-MpPreference -EnableNetworkProtection Enabled`
+  - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+  - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
+  - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
 ## <a name="network-protection-troubleshooting"></a>Rozwiązywanie problemów z ochroną sieci
 

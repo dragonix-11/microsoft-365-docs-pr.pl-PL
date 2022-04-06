@@ -1,7 +1,7 @@
 ---
 title: Spis oprogramowania w Zarządzanie zagrożeniami i lukami
-description: Strona spisu oprogramowania dla usługi Microsoft Defender for Endpoint Zarządzanie zagrożeniami i lukami ilu luk i błędów zostało wykrytych w oprogramowaniu.
-keywords: Zarządzanie zagrożeniami i lukami, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint software inventory, Microsoft Defender for Endpoint threat & zarządzanie lukami w zabezpieczeniach, Microsoft Defender for Endpoint threat & zarządzanie lukami w zabezpieczeniach spis oprogramowania, program Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
+description: Strona spisu oprogramowania dla Ochrona punktu końcowego w usłudze Microsoft Defender firmy Zarządzanie zagrożeniami i lukami pokazuje, ile luk i błędów zostało wykrytych w oprogramowaniu.
+keywords: Zarządzanie zagrożeniami i lukami, Ochrona punktu końcowego w usłudze Microsoft Defender, Ochrona punktu końcowego w usłudze Microsoft Defender spisu oprogramowania, Ochrona punktu końcowego w usłudze Microsoft Defender zagrożenia & zarządzanie lukami w zabezpieczeniach, Ochrona punktu końcowego w usłudze Microsoft Defender zagrożenia & zarządzanie lukami w zabezpieczeniach spis oprogramowania, Ochrona punktu końcowego w usłudze Microsoft Defender spis oprogramowania telewizyjnego, spis oprogramowania telewizyjnego
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e6bf614730caa9060a334c0a01c2dfe64b24df78
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cbd4634e779fe2bf853aaf014b59b1e7e1c1928f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325264"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470048"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Spis oprogramowania — Zarządzanie zagrożeniami i lukami
 
@@ -30,7 +30,7 @@ ms.locfileid: "63325264"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -47,7 +47,7 @@ Możesz usunąć filtr **DOSTĘPNY WWK** , aby uzyskać dalszą widoczność i z
 
 ## <a name="how-it-works"></a>Jak to działa
 
-W obszarze odnajdowania używamy tego samego zestawu sygnałów, które są odpowiedzialne za wykrywanie i ocenianie luk w zabezpieczeniach w programie [Microsoft Defender](overview-endpoint-detection-response.md) w zakresie wykrywania punktu końcowego i możliwości reakcji.
+W obszarze odnajdowania używamy tego samego zestawu sygnałów, które są odpowiedzialne za wykrywanie i ocenę luk w zabezpieczeniach podczas wykrywania i Ochrona punktu końcowego w usłudze Microsoft Defender [wykrywania i reagowania](overview-endpoint-detection-response.md).
 
 Ponieważ jest to czas rzeczywisty, w ciągu kilku minut podczas ich odkrywania będą luki w zabezpieczeniach. Aparat automatycznie pobiera informacje z wielu kanałów informacyjnych zabezpieczeń. W rzeczywistości zobaczysz, czy dane oprogramowanie jest połączone z kampanią zagrożenia na żywo. Udostępnia również link do raportu analizy zagrożeń, gdy tylko będzie dostępny.
 
@@ -58,7 +58,7 @@ Aby uzyskać dostęp do strony spisu **oprogramowania, wybierz** pozycję Spis o
 Wyświetlaj oprogramowanie na poszczególnych urządzeniach na poszczególnych stronach z [listy urządzeń](machines-view-overview.md).
 
 > [!NOTE]
-> Jeśli wyszukuje oprogramowanie za pomocą globalnego wyszukiwania programu Microsoft Defender for Endpoint, pamiętaj, aby zamiast spacji umieścić podkreślenie. Aby na przykład uzyskać najlepsze wyniki wyszukiwania, wpisz "windows_10" lub "windows_11" zamiast "Windows 10" lub "Windows 11".
+> Jeśli wyszukuje oprogramowanie za pomocą Ochrona punktu końcowego w usłudze Microsoft Defender wyszukiwanie globalne, pamiętaj o włoceniu podkreślenia zamiast spacji. Aby na przykład uzyskać najlepsze wyniki wyszukiwania, wpisz "windows_10" lub "windows_11" zamiast "Windows 10" lub "Windows 11".
 
 ## <a name="software-inventory-overview"></a>Omówienie spisu oprogramowania
 
@@ -66,7 +66,7 @@ Wyświetlaj oprogramowanie na poszczególnych urządzeniach na poszczególnych s
 
 Domyślnie widok jest filtrowany według **kodu produktu (CPE): Dostępny**. Widok listy można również filtrować na podstawie wad oprogramowania, zagrożeń z nimi związanych oraz znaczników, takich jak informacje o tym, czy oprogramowanie zakończyło wsparcie techniczne.
 
-:::image type="content" alt-text="Przykład strony docelowej spisu oprogramowania." source="images/software-inventory-page.png" lightbox="images/tvm-software-inventory.png":::
+:::image type="content" source="images/tvm-software-inventory.png" alt-text="Strona startowa spisu oprogramowania" lightbox="images/tvm-software-inventory.png":::
 
 Wybierz oprogramowanie, które chcesz zbadać. Zostanie otwarty panel wysuwu z bardziej zwartym widokiem informacji na stronie. Możesz przejść do bardziej dogłębnego badania i wybrać pozycję **Otwórz** stronę oprogramowania lub oflagować wszelkie niespójności techniczne, wybierając pozycję Zgłoś nieścisłości.
 
@@ -74,7 +74,7 @@ Wybierz oprogramowanie, które chcesz zbadać. Zostanie otwarty panel wysuwu z b
 
 Oprogramowanie, które nie jest obecnie obsługiwane przez zagrożenia & zarządzanie lukami w zabezpieczeniach, może się znaleźć na stronie spisu oprogramowania. Ponieważ nie jest to obsługiwane, dostępne będą tylko ograniczone dane. Filtruj według nieobsługiwanego oprogramowania za pomocą opcji "Niedostępne" w sekcji "Brak"
 
-:::image type="content" alt-text="Nieobsługiwany filtr oprogramowania." source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
+:::image type="content" source="images/tvm-unsupported-software-filter.png" alt-text="Filtr Nieobsługiwane oprogramowanie" lightbox="images/tvm-unsupported-software-filter.png":::
 
 Poniższe informacje oznaczają, że oprogramowanie nie jest obsługiwane:
 
@@ -97,7 +97,7 @@ Zapoznaj się z dowodami wykrycia określonego oprogramowania na urządzeniu z r
 
 Wybierz nazwę oprogramowania, aby otworzyć wysuwne informacje, a następnie odszukaj sekcję "Dowód oprogramowania".
 
-:::image type="content" alt-text="Przykład dowodu z Windows 10 z listy urządzeń, pokazujący ścieżkę rejestru dowodów oprogramowania." source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
+:::image type="content" source="images/tvm-software-evidence.png" alt-text="Lista Windows 10 z listy urządzeń" lightbox="images/tvm-software-evidence.png":::
 
 ## <a name="software-pages"></a>Strony oprogramowania
 
@@ -117,7 +117,7 @@ Strony oprogramowania można wyświetlać na kilka sposobów:
   - Urządzenia, na których jest zainstalowane oprogramowanie (wraz z nazwą urządzenia, domeną, systemem operacyjnym i innymi).
   - Lista wersji oprogramowania (w tym liczba urządzeń, na których jest zainstalowana wersja, liczba wykrytych luk i nazwy zainstalowanych urządzeń).
 
-    :::image type="content" alt-text="Strona przykładowa oprogramowania dla programu Visual Studio 2017 ze szczegółami oprogramowania, brakami, urządzeniami ujawnionym i innymi." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
+    :::image type="content" source="images/tvm-software-page-example.png" alt-text="The Visual Studio 2017 with the software details,  jego słabe, exposed devices, and more" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>Nieścisłości raportu
 
@@ -142,4 +142,4 @@ Zgłoś nieścisłości, gdy zostaną podane nieprawidłowe informacje o lukach 
 - [Omówienie zagrożeń i zarządzanie lukami w zabezpieczeniach wiadomości](next-gen-threat-and-vuln-mgt.md)
 - [Zalecenia dotyczące zabezpieczeń](tvm-security-recommendation.md)
 - [Oś czasu zdarzenia](threat-and-vuln-mgt-event-timeline.md)
-- [Wyświetlanie i organizowanie listy programu Microsoft Defender dla urządzeń końcowych](machines-view-overview.md)
+- [Wyświetlanie i organizowanie listy Ochrona punktu końcowego w usłudze Microsoft Defender Urządzenia](machines-view-overview.md)

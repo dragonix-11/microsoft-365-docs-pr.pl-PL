@@ -1,7 +1,7 @@
 ---
 title: Ograniczanie problemów bezbłędnych dni — Zarządzanie zagrożeniami i lukami
 description: Dowiedz się, jak znaleźć i zminimalizować luki w zabezpieczeniach 0-dniowych w Twoim środowisku za pośrednictwem Zarządzanie zagrożeniami i lukami.
-keywords: Microsoft Defender for Endpoint tvm zero-day vulnerabilities, tvm, threat & zarządzanie lukami w zabezpieczeniach, zero day, 0-day, mitigate 0-day vulnerabilities, vulnerable CVE
+keywords: Ochrona punktu końcowego w usłudze Microsoft Defender programów tvm bezbłędnych dni, program tvm, & zarządzanie lukami w zabezpieczeniach zagrożenia, zero dni, 0 dni, ograniczanie 0-dniowych luk, narażenie na luki w zabezpieczeniach cvE
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f4a3e227dd43a812bea64e227e315d207eb6fc7b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 2de9f0a3a0d860b2513c8947a1fe92563b516444
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63012521"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476604"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Ograniczanie problemów bezbłędnych dni — Zarządzanie zagrożeniami i lukami
 
@@ -29,11 +29,11 @@ ms.locfileid: "63012521"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Zerodniowa luka to zagrożenie w oprogramowaniu, dla którego nie opublikowano żadnej oficjalnej poprawki ani aktualizacji zabezpieczeń. Dostawca oprogramowania może, ale nie musi wiedzieć o lukie, i nie są dostępne żadne publiczne informacje o tym czynniku. Luki w zabezpieczeniach typu "zerodniowy" często mają wysoki poziom ważności i są aktywnie używane.
 
@@ -50,11 +50,11 @@ Po odnalezioniu zerowej luki w zabezpieczeniach informacje na jej temat zostaną
 
 Poszukaj rekomendacji z tagiem "zerodniowym" na karcie "Najważniejsze zalecenia dotyczące zabezpieczeń".
 
-![Najważniejsze zalecenia z tagiem bez dni.](images/tvm-zero-day-top-security-recommendations.png)
+:::image type="content" source="images/tvm-zero-day-top-security-recommendations.png" alt-text="Najważniejsze zalecenia z tagiem zerodniowym" lightbox="images/tvm-zero-day-top-security-recommendations.png":::
 
 Znajdź najlepsze oprogramowanie z tagiem "zero-day" na karcie "Oprogramowanie najbardziej narażone na zagrożenia".
 
-![Najlepiej narażone na oprogramowanie z tagiem zerodniowym.](images/tvm-zero-day-top-software.png)
+:::image type="content" source="images/tvm-zero-day-top-software.png" alt-text="Najlepiej narażone oprogramowanie z tagiem &quot;zero-day&quot;" lightbox="images/tvm-zero-day-top-software.png":::
 
 ### <a name="weaknesses-page"></a>Strona słabe
 
@@ -64,19 +64,19 @@ Poszukaj nazwanej 0-dniowej luki w zabezpieczeniach wraz z opisem i szczegółam
 
 - Jeśli do tej luki nie przypisano identyfikatora CVE, można go znaleźć pod wewnętrzną, tymczasową nazwą o nazwie "TVM-XXXX-XXXX". Nazwa zostanie zaktualizowana po przypisaniu oficjalnego identyfikatora CVE, ale nadal będzie można wyszukiwać poprzednią nazwę wewnętrzną w panelu bocznym.
 
-:::image type="content" alt-text="Przykład zerowym dniem dla strony słabej CVE-2020-17087." source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
+:::image type="content" source="images/tvm-zero-day-weakness-name.png" alt-text="Przykład zerowej dni dla CVE-2020-17087 na stronie Braki" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### <a name="software-inventory-page"></a>Strona spisu oprogramowania
 
 Poszukaj oprogramowania z tagiem "zero-day". Filtruj według tagu "zero-day", aby wyświetlić tylko oprogramowanie z bezbłędną luką.
 
-:::image type="content" alt-text="Przykład zerowej Windows Server 2016 na stronie spisu oprogramowania." source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
+:::image type="content" source="images/tvm-zero-day-software-inventory.png" alt-text="Przykład zerowej Windows Server 2016 na stronie spisu oprogramowania" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### <a name="software-page"></a>Strona oprogramowania
 
 Poszukaj tagu "zerodniowego" dla każdego oprogramowania, na które wpływa usterki bezdniowe.
 
-:::image type="content" alt-text="Przykład zerowym dniem dla Windows Server 2016 oprogramowania." source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
+:::image type="content" source="images/tvm-zero-day-software-page.png" alt-text="Przykład zerowej dni na Windows Server 2016 oprogramowania" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### <a name="security-recommendations-page"></a>Strona Zalecenia dotyczące zabezpieczeń
 
@@ -84,7 +84,7 @@ Wyświetl jasne sugestie dotyczące środków zaradczych i środków zaradczych,
 
 Jeśli jest dostępne oprogramowanie z 0-dniową luką w zabezpieczeniach i dodatkowymi lukimi w zabezpieczeniach, otrzymasz jedno zalecenie dotyczące wszystkich luk w zabezpieczeniach.
 
-:::image type="content" alt-text="Zero-dniowy przykład Windows Server 2016 na stronie zalecenia dotyczące zabezpieczeń." source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
+:::image type="content" source="images/tvm-zero-day-security-recommendation.png" alt-text="Przykład zerowej dni Windows Server 2016 na stronie zalecenia dotyczące zabezpieczeń." lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>Usuwanie luk w zabezpieczeniach z dniem zerodniowym
 
@@ -94,7 +94,7 @@ Będzie dostępny link do opcji złagodzenia wpływu i obejść, jeśli są one 
 
 Otwórz opcje rozwiązywania problemów i wybierz typ uwagi. W przypadku problemów bezbłędnych bezbłędnie zaleca się opcję "wymaganej uwagi", ponieważ aktualizacja nie została jeszcze opublikowana. Nie można wybrać daty wykonania, ponieważ nie ma żadnej konkretnej akcji do wykonania. Jeśli istnieją starsze luki w zabezpieczeniach tego oprogramowania, które chcesz naprawić, możesz zastąpić opcję działań naprawczych "wymagana uwaga" i wybrać pozycję "aktualizuj".
 
-![Przykład wysuwu z Windows Server 2016 na stronie zalecenia dotyczące zabezpieczeń.](images/tvm-zero-day-recommendation-flyout400.png)
+:::image type="content" source="images/tvm-zero-day-recommendation-flyout400.png" alt-text="Przykład zerowego dnia wysuwu informacji o zabezpieczeniach Windows Server 2016 stronie Zalecenia dotyczące zabezpieczeń" lightbox="images/tvm-zero-day-recommendation-flyout400.png":::
 
 ## <a name="track-zero-day-remediation-activities"></a>Śledzenie działań naprawczych bez dni
 

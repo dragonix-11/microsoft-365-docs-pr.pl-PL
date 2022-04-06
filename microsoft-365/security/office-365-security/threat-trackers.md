@@ -19,12 +19,12 @@ ms.custom: ''
 description: Dowiedz się więcej na temat śledzenia zagrożeń, w tym nowych funkcji monitorów godnych uwagi, które pomagają w śledzenia problemów dotyczących zabezpieczeń w organizacji.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9015e94869db88be750ca522173a0dc6d55383e7
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: d9adc6cd356187a8dbbb35719ab9b8e96499c8bd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632804"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468992"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Śledzenie zagrożeń — nowe i godne uwagi
 
@@ -49,9 +49,9 @@ Większość stron śledzenia zawiera numery trendów, które są okresowo aktua
 
 :::image type="content" source="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png" alt-text="Przykład informacji dotyczących kampanii w Eksploratorze" lightbox="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png":::
 
-Śledzenie to tylko kilka z wielu świetnych funkcji, które są dostępne w Ochrona usługi Office 365 w usłudze Microsoft Defender [Plan 2](office-365-ti.md). Śledzenie zagrożeń zawiera [następujące monitory](#noteworthy-trackers) warte [uwagi, śledzenie](#trending-trackers) trendów, [śledzone](#tracked-queries) zapytania i [zapisane zapytania](#saved-queries).
+Śledzenie to tylko kilka z wielu świetnych funkcji, które są dostępne w Ochrona usługi Office 365 w usłudze Microsoft Defender [Plan 2](office-365-ti.md). Śledzenie zagrożeń zawiera [między innymi śledzenie warte uwagi](#noteworthy-trackers)[, śledzenie](#trending-trackers) trendów, [śledzone zapytania](#tracked-queries) i [zapisane zapytania](#saved-queries).
 
-Aby wyświetlić śledzenie zagrożeń dla organizacji i korzystać z nich, otwórz portal <https://security.microsoft.com>wiadomości Microsoft 365 Defender w witrynie , a następnie przejdź do narzędzia Do śledzenia zagrożeń dla & **poczty** \> **e-mail**. Aby przejść bezpośrednio do strony **śledzenie zagrożeń**, użyj .<https://security.microsoft.com/threattrackerv2>
+Aby wyświetlić śledzenie zagrożeń dla organizacji i korzystać z nich, otwórz portal <https://security.microsoft.com>wiadomości Microsoft 365 Defender w witrynie , a następnie przejdź do narzędzia Do śledzenia zagrożeń dla & **poczty** \> **e-mail**. Aby przejść bezpośrednio do strony **śledzenie zagrożeń**, użyj .<https://security.microsoft.com/threattracker>
 
 > [!NOTE]
 > Aby korzystać z funkcji śledzenia zagrożeń, musisz być administratorem globalnym, administratorem zabezpieczeń lub czytelnikiem zabezpieczeń. Zobacz [Uprawnienia w portalu Microsoft 365 Defender witryny](permissions-microsoft-365-security-center.md).
@@ -64,7 +64,7 @@ Zazwyczaj warto wiedzieć, że śledzenie będzie publikowane przez kilka tygodn
 
 ### <a name="trending-trackers"></a>Śledzenie trendów
 
-Popularne śledzenie (wcześniej nazywane kampaniami) wyróżnia nowe zagrożenia otrzymane w wiadomościach e-mail organizacji w ciągu ostatniego tygodnia. Widok Śledzenie trendów udostępnia dynamiczne oceny zagrożeń związanych z pocztą e-mail wpływających na środowisko Office 365 organizacji. W tym widoku przedstawiono trendy w zakresie złośliwego oprogramowania na poziomie dzierżawy, identyfikujące rodziny złośliwego oprogramowania w coraz większym stopniu, płaskie lub malejące, co zapewnia administratorom większą kontrolę nad zagrożeniami wymagającym dalszej uwagi.
+Popularne śledzenie (wcześniej nazywane kampaniami) wyróżnia nowe zagrożenia otrzymane w wiadomościach e-mail organizacji w ciągu ostatniego tygodnia.
 
 :::image type="content" source="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png" alt-text="Przykład trendów kampanii z złośliwym oprogramowaniem" lightbox="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png":::
 

@@ -1,7 +1,7 @@
 ---
-title: Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure)
-description: Wdeksuj pakiet konfiguracji na urządzeniu infrastruktury pulpitów wirtualnych (VDI), aby były one dołączane do usługi Programu Microsoft Defender dla punktu końcowego.
-keywords: konfigurowanie urządzenia infrastruktury pulpitów wirtualnych (VDI), vdi, zarządzanie urządzeniami, konfigurowanie programu Microsoft Defender dla punktów końcowych, punktów końcowych
+title: Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)
+description: Wdeksuj pakiet konfiguracji na urządzeniu infrastruktury pulpitów wirtualnych (VDI), aby były one dołączane do Ochrona punktu końcowego w usłudze Microsoft Defender komputerów.
+keywords: konfigurowanie urządzeń infrastruktury pulpitów wirtualnych (VDI), vdi, zarządzanie urządzeniami, Ochrona punktu końcowego w usłudze Microsoft Defender, punkty końcowe
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,19 +18,24 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: 7342f368063c2c9024c4942c33a2e41f28eebd36
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: e292c2f1e0d01e51e3962b71a940927078ab95ad
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449824"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634718"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure) w Microsoft 365 Defender
+
+Infrastruktura pulpitów wirtualnych (VDI, Virtual Desktop Infrastructure) to pojęcie infrastruktury IT, które pozwala użytkownikom końcowych na uzyskiwanie dostępu do wystąpień pulpitów wirtualnych przedsiębiorstwa z niemal każdego urządzenia (takiego jak komputer osobisty, smartfon lub tablet), dzięki temu nie trzeba w organizacji dostarczać użytkownikom fizycznych komputerów. Używanie urządzeń VDI zmniejsza koszty, ponieważ działy IT nie są już odpowiedzialne za zarządzanie, naprawianie i zamienianie fizycznych punktów końcowych. Autoryzowani użytkownicy mogą uzyskać dostęp do tych samych serwerów firmowych, plików, aplikacji i usług z dowolnego zatwierdzonego urządzenia za pośrednictwem bezpiecznego klienta stacjonarnego lub przeglądarki.
+
+Podobnie jak każdy inny system w środowisku IT, te systemy również powinny mieć wykrywanie i reagowanie punktu końcowego (EDR) oraz rozwiązanie antywirusowe do ochrony przed zaawansowanymi zagrożeniami i atakami.
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Urządzenia infrastruktury pulpitów wirtualnych (VDI)
 - Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
@@ -38,32 +43,34 @@ ms.locfileid: "63449824"
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **Trwałe sieci VDI** -  [Dołączanie trwałego komputera VDI](configure-endpoints.md) do programu Microsoft Defender for Endpoint jest obsługiwane tak samo, jak w przypadku komputera fizycznego, takiego jak komputer stacjonarny lub przenośny. Zasady grupy, Microsoft Endpoint Manager i inne metody mogą być używane do wschowania komputera trwałego. W portalu Microsoft 365 Defender w obszarzehttps://security.microsoft.com) dołączania wybierz preferowaną metodę dołączania i postępuj zgodnie z instrukcjami dla tego typu. 
+  > **Trwałe sieci VDI** -  [Dołączanie trwałego komputera VDI](configure-endpoints.md) do Ochrona punktu końcowego w usłudze Microsoft Defender jest obsługiwane tak samo jak w przypadku komputera fizycznego, takiego jak komputer stacjonarny lub przenośny. Zasady grupy, Microsoft Endpoint Manager i inne metody mogą być używane do wschowania komputera trwałego. W portalu Microsoft 365 Defender w obszarzehttps://security.microsoft.com) dołączania wybierz preferowaną metodę dołączania i postępuj zgodnie z instrukcjami dla tego typu. 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Wnoszenie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)
 
 Program Defender for Endpoint obsługuje dołączanie nietrwałych sesji VDI.
 
-Podczas dołączania interfejsów VDI mogą wiązać się ze swoimi wyzwaniami. Oto typowe wyzwania związane z tym scenariuszem:
+Podczas dołączania wystąpień VDI mogą wiązać się problemy. Oto typowe wyzwania związane z tym scenariuszem:
 
 - Szybkie wczesne dołączanie do krótkiej sesji, która musi zostać wproszona do usługi Defender for Endpoint przed rzeczywistym inicjowaniem obsługi administracyjnej.
 - Nazwa urządzenia jest zwykle używana ponownie dla nowych sesji.
 
-Urządzenia VDI mogą być wyświetlane w portalu programu Defender for Endpoint jako:
+W środowisku VDI wystąpienia VDI mogą mieć krótkie cykle życia. Urządzenia VDI mogą być wyświetlane w portalu programu Defender for Endpoint jako:
 
-- Jedna pozycja dla każdego urządzenia.
+
+- Pojedynczy wpis portalu dla każdego wystąpienia VDI. Jeśli wystąpienie VDI zostało już w nim Ochrona punktu końcowego w usłudze Microsoft Defender i w pewnym momencie usunięte, a następnie ponownie utworzone z tą samą nazwą hosta, w portalu NIE zostanie utworzony nowy obiekt reprezentujący to wystąpienie VDI. 
+
 
   > [!NOTE]
   > W takim przypadku podczas tworzenia  sesji musi być skonfigurowana ta sama nazwa urządzenia, na przykład przy użyciu nienadzorowanych plików odpowiedzi.
 
-- Wiele wpisów dla każdego urządzenia — po jednym dla każdej sesji.
+- Wiele wpisów dla każdego urządzenia — po jednym dla każdego wystąpienia VDI.
 
 Poniższe kroki poprowadzi Cię przez dołączanie urządzeń VDI i będą wyróżniać kroki dla 1 i wielu wpisów.
 
 > [!WARNING]
 > W środowiskach, w których występują niskie konfiguracje zasobów, procedura rozruchu VDI może spowolnić dołączanie czujnika punktu końcowego programu Defender.
 
-### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>Na Windows 10, lub Windows 11 lub Windows Server 2012 R2 lub nowszy
+### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>Dla Windows 10, Windows 11 lub Windows Server 2012 R2 lub nowszego
 
 > [!NOTE]
 > Windows Server 2016 i Windows Server 2012 R2 muszą zostać przygotowane przez zastosowanie pakietu instalacyjnego najpierw, zgodnie z instrukcjami w Windows [Onboard,](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) aby ta funkcja działała.
@@ -83,9 +90,9 @@ Poniższe kroki poprowadzi Cię przez dołączanie urządzeń VDI i będą wyró
     2. Jeśli implementujesz pojedynczą pozycję dla każdego urządzenia, skopiuj zarówno Onboard-NonPersistentMachine.ps1 WindowsDefenderATPOnboardingScript.cmd.
 
     > [!NOTE]
-    > Jeśli nie widzisz folderu, może `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` to być ukryte. Musisz wybrać opcję Pokaż ukryte **pliki i** foldery w Eksploratorze plików.
+    > Jeśli nie widzisz folderu, może `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` to być ukryte. Musisz wybrać opcję Pokaż ukryte **pliki i foldery** z Eksplorator plików.
 
-3. Otwórz okno Edytora zasady grupy komputera i przejdź do **strony Konfiguracja** \> **komputera Windows Ustawienia** \> **uruchamianie skryptów**\>.
+3. Otwórz okno Edytor zasady grupy i przejdź do **strony Konfiguracja** \>  \> komputera Windows Ustawienia **uruchamiania skryptów**\>.
 
    > [!NOTE]
    > Domeny zasady grupy być także używane do wnoszania nietrwałych urządzeń VDI.
@@ -115,7 +122,7 @@ Poniższe kroki poprowadzi Cię przez dołączanie urządzeń VDI i będą wyró
 ## <a name="for-downlevel-skus-windows-server-2008-r2"></a>Dla skośnych jednostki SKU (Windows Server 2008 R2)
 
 > [!NOTE]
-> Poniższe instrukcje dotyczące innych Windows serwera mają zastosowanie również w przypadku, gdy jest uruchomiona poprzednia wersja programu Microsoft Defender for Endpoint dla systemu Windows Server 2016 i Windows Server 2012 R2 wymagająca oprogramowania MMA. Instrukcje migrowania do nowego, ujednoliconego rozwiązania znajdują się w scenariuszach migracji [serwera w programie Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> Poniższe instrukcje dotyczące Windows serwera mają zastosowanie również w przypadku uruchamiania poprzedniej wersji Ochrona punktu końcowego w usłudze Microsoft Defender dla systemu Windows Server 2016 i Windows Server 2012 R2, która wymaga oprogramowania MMA. Instrukcje migrowania do nowego, ujednoliconego rozwiązania znajdują się w scenariuszach [migracji z serwera w](/microsoft-365/security/defender-endpoint/server-migration) Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 > [!NOTE]
 > Poniższy rejestr jest istotny tylko wtedy, gdy celem jest uzyskanie "jednej propozycji dla każdego urządzenia".
@@ -178,8 +185,8 @@ Jeśli obsługa w trybie offline nie jest rentowną opcją dla nietrwałych śro
 5. W zwykły sposób ponownie wytłuchaj obraz złotego/wzorcowego.
 
 ## <a name="related-topics"></a>Tematy pokrewne
-- [Na urządzeniach Windows przy użyciu aplikacji zasady grupy](configure-endpoints-gp.md)
-- [Na urządzeniach Windows urządzeniach przy użyciu Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Na urządzeniach Windows urządzeniach przenośnych za pomocą narzędzi do zarządzania urządzeniami przenośnymi](configure-endpoints-mdm.md)
-- [Dołączanie Windows przy użyciu skryptu lokalnego](configure-endpoints-script.md)
-- [Rozwiązywanie problemów z dołączaniem do programu Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [Dołącz urządzenia z systemem Windows przy użyciu zasad grupy](configure-endpoints-gp.md)
+- [Dołącz urządzenia z systemem Windows przy użyciu menedżera konfiguracji punktu końcowego Microsoft](configure-endpoints-sccm.md)
+- [Dołącz urządzenia z systemem Windows przy użyciu narzędzi do zarządzania urządzeniami przenośnymi](configure-endpoints-mdm.md)
+- [Dołącz urządzenia z systemem Windows przy użyciu skryptu lokalnego](configure-endpoints-script.md)
+- [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender problemów z dołączaniem](troubleshoot-onboarding.md)

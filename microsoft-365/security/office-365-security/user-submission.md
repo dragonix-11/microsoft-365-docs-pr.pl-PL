@@ -18,12 +18,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować skrzynkę pocztową do zbierania spamu i wiadomości e-mail wyłudzających informacje zgłaszanych przez użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 525b761b09a68c3e44443cec7bf718d9eaa4d8d1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9a38943b492e6bdae151a7906d1c8146a649949d
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327213"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634036"
 ---
 # <a name="user-reported-message-settings"></a>Ustawienia wiadomości zgłoszone przez użytkownika
 
@@ -31,7 +31,7 @@ ms.locfileid: "63327213"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 W Microsoft 365 z Exchange Online można określić skrzynkę pocztową do odbierania wiadomości zgłaszanych przez użytkowników jako złośliwe. Gdy użytkownicy zgłaszają wiadomości przy użyciu różnych opcji raportowania, za pomocą tej skrzynki pocztowej można przechwytywać wiadomości (wysyłać je tylko do niestandardowej skrzynki pocztowej) lub odbierać kopie wiadomości (wysyłanych do niestandardowej skrzynki pocztowej i firmy Microsoft). Ta funkcja działa z następującymi opcjami raportowania wiadomości:
@@ -55,7 +55,7 @@ Użyj następujących artykułów, aby skonfigurować wymagane wymagania wstępn
 
 - Utwórz zasady ochrony przed  [spamem](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies), które obejmują niestandardową skrzynkę pocztową, w której są wyłączone wartości ZAP dla spamu i ZAP dla wyłudzania **informacji (** \> nie jest zaznaczona sekcja Automatyczne przeczyszczanie zerowej godziny Włączono automatyczne przeczyszczanie bez godzin).
 
-Jeśli masz program Microsoft Defender dla systemu Office 365, skonfiguruj też następujące ustawienia, aby nasze zaawansowane filtrowanie nie miało wpływu na komunikaty raportowania dla użytkowników:
+Jeśli masz Ochrona usługi Office 365 w usłudze Microsoft Defender, skonfiguruj też następujące ustawienia, aby nasze zaawansowane filtrowanie nie miało wpływu na komunikaty raportowania dla użytkowników:
 
 - [Utwórz zasady usługi Sejf](set-up-safe-links-policies.md), które obejmują niestandardową skrzynkę pocztową, w której skanowanie łączy Sejf jest wyłączone (wybierz akcję dla nieznanych, potencjalnie złośliwych adresów **URL** w sekcji Wiadomości, sekcja \> **Wyłączone**).
 
@@ -71,7 +71,7 @@ Po zweryfikowaniu, że skrzynka pocztowa spełnia wszystkie odpowiednie wymagani
 
   - **Zarządzanie organizacją** lub **administrator zabezpieczeń** w [witrynie Uprawnienia w Microsoft 365 Defender sieci.](permissions-microsoft-365-security-center.md)
 
-- Potrzebujesz dostępu do programu Exchange Online PowerShell. Jeśli konto, które próbujesz użyć, nie ma dostępu do programu Exchange Online PowerShell, po określeniu skrzynki pocztowej przesyłania zostanie wyświetlony komunikat o błędzie, który wygląda następująco:
+- Potrzebujesz dostępu do programu Exchange Online PowerShell. Jeśli konto, które próbujesz użyć, nie ma dostępu do programu Exchange Online PowerShell, podczas określania skrzynki pocztowej przesyłania zostanie wyświetlony komunikat o błędzie, który wygląda następująco:
 
   > Określanie adresu e-mail w domenie
 
@@ -141,8 +141,8 @@ Aby prawidłowo zidentyfikować oryginalne dołączone wiadomości, wiadomości 
 Jeśli chcesz określić zgłoszoną przyczynę oryginalnych załączonych wiadomości, wiadomości wysyłane do niestandardowej skrzynki pocztowej (nie modyfikuj załączników) muszą zaczynać się od jednego z następujących prefiksów w temacie (tytuł koperty):
 
 - 1| lub Wiadomości-śmieci:
-- 2| lub Niebędące śmieciem
-- 3| lub wyłudzanie informacji
+- 2| lub Nie wiadomości-śmieci:
+- 3| lub wyłudzanie informacji:
 
 Przykład:
 

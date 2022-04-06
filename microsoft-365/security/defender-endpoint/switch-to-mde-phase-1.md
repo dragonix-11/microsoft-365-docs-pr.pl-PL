@@ -1,7 +1,7 @@
 ---
-title: Przełączanie do programu Microsoft Defender dla punktu końcowego — przygotowywanie
-description: Przygotuj się do przełączenia do programu Microsoft Defender dla punktu końcowego. Zaktualizuj urządzenia i skonfiguruj połączenia sieciowe.
-keywords: migracja, program Microsoft Defender for Endpoint, najlepsze rozwiązanie
+title: Przełączanie do Ochrona punktu końcowego w usłudze Microsoft Defender — Przygotowywanie
+description: Przygotuj się do przełączenia do Ochrona punktu końcowego w usłudze Microsoft Defender. Zaktualizuj urządzenia i skonfiguruj połączenia sieciowe.
+keywords: migracja, Ochrona punktu końcowego w usłudze Microsoft Defender i najlepsze rozwiązanie
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -23,21 +23,21 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: d9d122c9d114aa135eb2a82e1168eabec2aeec7b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: aa0bd45c1765e2aa794e00e437bf08a63d1d742f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63009167"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476736"
 ---
-# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Przełączanie do programu Microsoft Defender dla punktu końcowego — etap 1. Przygotowywanie
+# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Przełączanie do Ochrona punktu końcowego w usłudze Microsoft Defender — etap 1. Przygotowywanie
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| ![Etap 1. Przygotowanie.](images/phase-diagrams/prepare.png)<br/>Etap 1. Przygotowywanie | [![Etap 2. Konfigurowanie](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[Etap 2. Konfigurowanie](switch-to-mde-phase-2.md) | [![Etap 3. Wniesienie](images/phase-diagrams/onboard.png)](switch-to-mde-phase-3.md)<br/>[Etap 3. Wniesienie](switch-to-mde-phase-3.md) |
+| ![Etap 1. Przygotowanie.](images/phase-diagrams/prepare.png#lightbox)<br/>Etap 1. Przygotowywanie | [![Etap 2. Konfigurowanie](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Etap 2. Konfigurowanie](switch-to-mde-phase-2.md) | [![Etap 3. Wniesienie](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Etap 3. Wniesienie](switch-to-mde-phase-3.md) |
 |--|--|--|
 |*Jesteś tutaj!*| | |
 
@@ -74,7 +74,7 @@ Potrzebujesz pomocy przy aktualizowaniu urządzeń w Twojej organizacji? Zobacz 
 |Android|[Sprawdzanie & wersji systemu Android](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101: Aktualizowanie systemu](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
-## <a name="get-microsoft-defender-for-endpoint"></a>Uzyskaj program Microsoft Defender dla punktu końcowego
+## <a name="get-microsoft-defender-for-endpoint"></a>Pobierz Ochrona punktu końcowego w usłudze Microsoft Defender
 
 Teraz, gdy urządzenia w organizacji zostały zaktualizowane, następnym krokiem jest oprogramowanie Defender for Endpoint, przypisanie licencji i upewninie się, że usługa jest aprowowana.
 
@@ -99,13 +99,13 @@ Uprawnienia do portalu Microsoft 365 Defender można przyznać przy użyciu pods
 
 1. Zaplanuj role i uprawnienia administratorów zabezpieczeń i operatorów zabezpieczeń. Zobacz [Kontrola dostępu oparta na rolach](prepare-deployment.md#role-based-access-control).
 
-2. Konfigurowanie RBAC. Zalecamy skonfigurowanie RBAC za pomocą usługi [Intune](/mem/intune/fundamentals/what-is-intune), zwłaszcza jeśli Twoja organizacja używa kombinacji urządzeń z systemem Windows 10, macOS, iOS i Android. Zobacz [Konfigurowanie RBAC przy użyciu usługi Intune](/mem/intune/fundamentals/role-based-access-control).
+2. Konfigurowanie RBAC. Zalecamy skonfigurowanie RBAC [Intune](/mem/intune/fundamentals/what-is-intune), zwłaszcza jeśli Twoja organizacja używa kombinacji urządzeń z systemem Windows 10, macOS, iOS i Android. Zobacz [Konfigurowanie RBAC przy użyciu Intune](/mem/intune/fundamentals/role-based-access-control).
 
-    Jeśli Twoja organizacja wymaga metody innej niż Intune, wybierz jedną z następujących opcji:
+    Jeśli Twoja organizacja wymaga metody innej Intune, wybierz jedną z następujących opcji:
 
     - [Menedżer konfiguracji](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
     - [Zaawansowane zasady grupy zaawansowane](/microsoft-desktop-optimization-pack/agpm)
-    - [Windows administracyjne](/windows-server/manage/windows-admin-center/overview)
+    - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
 3. Udzielanie dostępu do portalu Microsoft 365 Defender sieci. (Potrzebujesz pomocy? Zobacz [Zarządzanie dostępem do portalu przy użyciu RBAC](rbac.md).
 

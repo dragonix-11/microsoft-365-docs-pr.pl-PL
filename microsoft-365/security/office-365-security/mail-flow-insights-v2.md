@@ -14,12 +14,12 @@ description: Administratorzy mogą dowiedzieć się więcej o szczegółowych in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 176681b5fe780f0aeb4a0c8502b3e919e7ebcadc
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b5cc3eba5807838b0a797f606d8a6aa3c152f60c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682532"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476472"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Szczegółowe informacje o przepływie poczty w Centrum & zgodności
 
@@ -27,12 +27,12 @@ ms.locfileid: "63682532"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Administratorzy mogą za pomocą pulpitu nawigacyjnego przepływu poczty e-mail w Centrum & zgodności usługi Security & odnajdować trendy i szczegółowe informacje oraz podjąć działania w celu rozwiązania problemów związanych z przepływem poczty e-mail w organizacji.
 
-![Pulpit nawigacyjny przepływu poczty w Centrum & zgodności.](../../media/mail-flow-dashboard-v2.png)
+:::image type="content" source="../../media/mail-flow-dashboard-v2.png" alt-text="Pulpit nawigacyjny przepływu poczty w Centrum & zgodności" lightbox="../../media/mail-flow-dashboard-v2.png":::
 
 Dostępne informacje:
 
@@ -75,7 +75,7 @@ Pulpit nawigacyjny przepływu poczty e-mail jest dostępny dla członków nastę
 - **MailFlow Administrator w** Centrum & zgodności. Jeśli to konto nie jest także członkiem grupy ról Zarządzanie organizacją lub administrator Exchange, rozważ następujące problemy:
   - Użytkownik musi zalogować się do Centrum zabezpieczeń & zgodności bezpośrednio na stronie <https://protection.office.com>.
   - Użytkownik będzie miał uprawnienia tylko do odczytu do pulpitu nawigacyjnego przepływu poczty.
-  - Użytkownik nie będzie miał dostępu do centrum administracyjne platformy Microsoft 365.
+  - Użytkownik nie będzie miał dostępu do Centrum administracyjne platformy Microsoft 365.
 
 Aby uzyskać więcej informacji o uprawnieniach, zobacz Uprawnienia w [Centrum zabezpieczeń & zgodności](permissions-in-the-security-and-compliance-center.md) i Zapewnianie użytkownikom dostępu do Centrum zabezpieczeń & [zgodności](grant-access-to-the-security-and-compliance-center.md).
 

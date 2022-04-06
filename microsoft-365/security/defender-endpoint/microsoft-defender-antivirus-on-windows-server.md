@@ -17,19 +17,19 @@ ms.date: 01/26/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 0ea2184720467b3756b5cde8c8973e8952d5b50c
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 4962537e86010fceeb2845fdd6408270c97742dc
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63009567"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469762"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Program antywirusowy Microsoft Defender na Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Program antywirusowy Microsoft Defender jest dostępna w następujących wersjach/wersjach programu Windows Server:
 
@@ -37,7 +37,7 @@ Program antywirusowy Microsoft Defender jest dostępna w następujących wersjac
 - Windows Server 2019
 - Windows Server w wersji 1803 lub nowszej
 - System Windows Server 2016
-- Windows Server 2012 R2 (wymaga programu Microsoft Defender dla punktu końcowego)
+- Windows Server 2012 R2 (wymaga Ochrona punktu końcowego w usłudze Microsoft Defender)
 
 W niektórych przypadkach Program antywirusowy Microsoft Defender jest nazywane *Endpoint Protection*, jednak aparat ochrony jest taki sam. Chociaż funkcje, konfiguracja i zarządzanie są w dużym stopniu takie same w przypadku Program antywirusowy Microsoft Defender w systemach [Windows 10](microsoft-defender-antivirus-windows.md) i Windows 11, istnieje kilka istotnych różnic w Windows Server:
 
@@ -64,7 +64,7 @@ Domyślnie na Program antywirusowy Microsoft Defender i działa on na Windows Se
 Jeśli na serwerze nie zainstalowano graficznego interfejsu użytkownika i chcesz go zainstalować, należy użyć kreatora Dodawania ról i funkcji lub poleceń cmdlet programu PowerShell.
 
 > [!NOTE]
-> Ta opcja nie jest dostępna w przypadku Windows Server 2012 R2. Aby uzyskać więcej informacji, [zobacz Opcje instalowania programu Microsoft Defender dla punktu końcowego](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
+> Ta opcja nie jest dostępna w przypadku Windows Server 2012 R2. Aby uzyskać więcej informacji, [zobacz Opcje instalowania Ochrona punktu końcowego w usłudze Microsoft Defender](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 ### <a name="turn-on-the-gui-using-the-add-roles-and-features-wizard"></a>Włączanie graficznego interfejsu użytkownika przy użyciu Kreatora dodawania ról i funkcji
 
@@ -74,7 +74,7 @@ Jeśli na serwerze nie zainstalowano graficznego interfejsu użytkownika i chces
 
    W Windows Server 2016 dodawania **ról i funkcji Kreator** dodawania funkcji wygląda następująco:
 
-   ![Dodaj role i kreatora funkcji z wyświetloną graficznego interfejsu użytkownika Windows Defender opcji.](images/server-add-gui.png)
+   :::image type="content" source="images/server-add-gui.png" alt-text="Kreator dodawania ról i funkcji z wyświetloną opcją graficznego Windows Defender graficznego." lightbox="images/server-add-gui.png":::
 
    W Windows Server 2019 i Windows Server 2022 Kreator dodawania **ról** i funkcji jest podobny.
 
@@ -136,22 +136,22 @@ sc query state= all
 
 ## <a name="update-antimalware-security-intelligence"></a>Aktualizacja analizy zabezpieczeń przed złośliwym kodem
 
-Aby uzyskać zaktualizowaną analizę zabezpieczeń przed złośliwym kodem, musisz mieć Windows uruchomiona usługa aktualizacji oprogramowania. Jeśli korzystasz z usługi zarządzania aktualizacjami, na przykład programu Windows Server Update Services (WSUS), upewnij się, że aktualizacje dla programu Program antywirusowy Microsoft Defender Funkcje analizy zabezpieczeń są zatwierdzone dla komputerów, których zarządzasz.
+Aby uzyskać zaktualizowaną ochronę przed złośliwym kodem, musisz mieć Windows Update działającej usługi. Jeśli korzystasz z usługi zarządzania aktualizacjami, na przykład programu Windows Server Update Services (WSUS), upewnij się, że aktualizacje dla programu Program antywirusowy Microsoft Defender Funkcje analizy zabezpieczeń są zatwierdzone dla komputerów, których zarządzasz.
 
-Domyślnie aktualizacja Windows nie pobiera i nie instaluje aktualizacji automatycznie na serwerze Windows Server 2019 lub Windows Server 2022 lub Windows Server 2016. Tę konfigurację można zmienić przy użyciu jednej z następujących metod:
+Domyślnie aktualizacje Windows Update są automatycznie pobieranie i instalowanie na Windows Server 2019 lub Windows Server 2022 lub Windows Server 2016. Tę konfigurację można zmienić przy użyciu jednej z następujących metod:
 
 <br/><br/>
 
 | Metoda | Opis |
 |---|---|
-| **Windows w** Panelu sterowania | **Zainstalowanie aktualizacji powoduje automatyczne** zainstalowanie wszystkich aktualizacji, w tym aktualizacji analizy Windows Defender zabezpieczeń. <br/><br/> **Pobieraj aktualizacje, ale zdecyduję**, czy je zainstalować, Windows Defender automatyczne pobieranie i instalowanie aktualizacji analizy zabezpieczeń, ale inne aktualizacje nie są instalowane automatycznie. |
-| **zasady grupy** | Aktualizację usługi Windows i zarządzanie nimi można skonfigurować przy użyciu ustawień dostępnych w programie zasady grupy w następującej ścieżce: Szablony administracyjne **\Windows Składniki\Windows Update\Konfigurowanie** aktualizacji automatycznych |
-| Klucz rejestru **AUOptions** | Dwie poniższe wartości umożliwiają automatyczne Windows aktualizacji zabezpieczeń w celu automatycznego pobierania i instalowania aktualizacji analizy zabezpieczeń: <br/><br/> **4** -  **Automatyczne instalowanie aktualizacji**. Ta wartość powoduje, że wszystkie aktualizacje są instalowane automatycznie, w tym aktualizacje Windows Defender aktualizacje analizy zabezpieczeń. <br/><br/> **3** -  **Pobieraj aktualizacje, ale pozwól mi wybrać, czy chcesz je zainstalować**. Ta wartość umożliwia Windows Defender automatyczne pobieranie i instalowanie aktualizacji analizy zabezpieczeń, ale inne aktualizacje nie są instalowane automatycznie. |
+| **Windows Update** w programie Panel sterowania | **Zainstalowanie aktualizacji powoduje automatyczne** zainstalowanie wszystkich aktualizacji, w tym aktualizacji analizy Windows Defender zabezpieczeń. <br/><br/> **Pobieraj aktualizacje, ale zdecyduję**, czy je zainstalować, Windows Defender automatyczne pobieranie i instalowanie aktualizacji analizy zabezpieczeń, ale inne aktualizacje nie są instalowane automatycznie. |
+| **Zasady grupy** | Konfigurację usługi Windows Update i zarządzanie nimi można uzyskać, używając ustawień dostępnych w programie zasady grupy w następującej ścieżce: Szablony administracyjne **\Windows Składniki\Windows Update\Konfigurowanie** aktualizacji automatycznych |
+| Klucz rejestru **AUOptions** | Dwie poniższe wartości umożliwiają automatyczne Windows Update pobierania i instalowania aktualizacji analizy zabezpieczeń: <br/><br/> **4** -  **Automatyczne instalowanie aktualizacji**. Ta wartość powoduje, że wszystkie aktualizacje są instalowane automatycznie, w tym aktualizacje Windows Defender aktualizacje analizy zabezpieczeń. <br/><br/> **3** -  **Pobieraj aktualizacje, ale pozwól mi wybrać, czy chcesz je zainstalować**. Ta wartość umożliwia Windows Defender automatyczne pobieranie i instalowanie aktualizacji analizy zabezpieczeń, ale inne aktualizacje nie są instalowane automatycznie. |
 
 Aby zapewnić ochronę przed złośliwym oprogramowaniem, zalecamy włączenie następujących usług:
 
 - Raportowanie błędów systemu Windows usługi
-- Windows usługi aktualizacji
+- Windows Update usługi
 
 W poniższej tabeli wymieniono usługi dla Program antywirusowy Microsoft Defender i usługi zależne.
 
@@ -163,7 +163,7 @@ W poniższej tabeli wymieniono usługi dla Program antywirusowy Microsoft Defend
 | Windows Defender (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | Jest to główna Program antywirusowy Microsoft Defender, która musi być uruchomiona przez cały czas.|
 | Raportowanie błędów systemu Windows (Wersvc) | `C:\WINDOWS\System32\svchost.exe -k WerSvcGroup` | Ta usługa wysyła raporty o błędach z powrotem do firmy Microsoft. |
 | Windows Defender MpsSvc | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | Zalecamy pozostawienie włączonej Windows Defender Zapory sieciowej. |
-| Windows (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| Windows aktualizacja jest potrzebna do uzyskania aktualizacji analizy zabezpieczeń i aktualizacji aparatu ochrony przed złośliwym kodem |
+| Windows Update (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| Windows Update jest niezbędne do uzyskania aktualizacji analizy zabezpieczeń i aktualizacji aparatu ochrony przed złośliwym kodem |
 
 ## <a name="submit-samples"></a>Prześlij próbki
 
@@ -232,13 +232,13 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 ### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>Używasz programu Windows Server 2012 R2 lub Windows Server 2016?
 
-Teraz można uruchamiać Program antywirusowy Microsoft Defender w trybie pasywnym na Windows Server 2012 R2 i Windows Server 2016. Aby uzyskać więcej informacji, [zobacz Opcje instalowania programu Microsoft Defender dla punktu końcowego](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
+Teraz można uruchamiać Program antywirusowy Microsoft Defender w trybie pasywnym na Windows Server 2012 R2 i Windows Server 2016. Aby uzyskać więcej informacji, [zobacz Opcje instalowania Ochrona punktu końcowego w usłudze Microsoft Defender](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 <br/><br/>
 
 | Procedura | Opis |
 |---|---|
-| Wyłączanie Program antywirusowy Microsoft Defender przy użyciu zasady grupy | W Edytorze zasady grupy lokalnym  >  przejdź do szablonu administracyjnego **Windows składnik** >  **Endpoint Protection** >  **Wyzysłane Endpoint Protection**, a następnie wybierz **pozycję EnabledOK** > . |
+| Wyłączanie Program antywirusowy Microsoft Defender przy użyciu zasady grupy | W Edytorze zasady grupy kliknij  >  pozycję Szablon administracyjny **Windows Składnik** >  **Endpoint Protection** >  **Wyzysłane Endpoint Protection**, a następnie wybierz **pozycję EnabledOK** > . |
 | Wyłączanie Program antywirusowy Microsoft Defender przy użyciu klucza rejestru | Aby użyć klucza rejestru [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) , `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`przejdź do pozycji , a następnie ustaw lub utwórz wpis DWORD o nazwie `DisableAntiSpyware`. Ustaw wartość tego `1` klucza na (co oznacza wartość klucza *rejestru na prawda*). |
 | Wyłączanie Program antywirusowy Microsoft Defender przy użyciu programu PowerShell | Użyj następującego polecenia cmdlet programu PowerShell: `Set-MpPreference -DisableRealtimeMonitoring $true` |
 | Odinstalowywanie Program antywirusowy Microsoft Defender przy użyciu programu PowerShell | Użyj następującego polecenia cmdlet programu PowerShell: `Uninstall-WindowsFeature -Name Windows-Defender` |

@@ -1,7 +1,7 @@
 ---
 title: Oś czasu zdarzenia w programie Zarządzanie zagrożeniami i lukami
 description: Oś czasu zdarzeń to kanał aktualności ryzyka, który ułatwia interpretowanie tego, jak czynnik ryzyka zostanie wprowadzony do organizacji i jakie środki zaradcze miały miejsce w celu jego zmniejszenia.
-keywords: oś czasu zdarzeń, oś czasu zdarzenia programu Microsoft Defender dla punktu końcowego, program Microsoft Defender dla osi czasu zdarzeń programu Tvm, program Zarządzanie zagrożeniami i lukami, program Microsoft Defender dla punktu końcowego
+keywords: oś czasu zdarzenia, Ochrona punktu końcowego w usłudze Microsoft Defender oś czasu zdarzenia, Ochrona punktu końcowego w usłudze Microsoft Defender osi czasu zdarzenia programu tvm, Zarządzanie zagrożeniami i lukami, Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fe3139f12b863b54d336e52939ffbb3057df6b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 81c3a3a6d1d35551eec34d0fe12aba2f1fc6ec5e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316005"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469696"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>Oś czasu wydarzenia — Zarządzanie zagrożeniami i lukami
 
@@ -27,17 +27,17 @@ ms.locfileid: "63316005"
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Oś czasu zdarzeń to kanał wiadomości ryzyka, który ułatwia interpretowanie tego, jak ryzyko jest wprowadzane w organizacji w ramach nowych luk lub luk w zabezpieczeniach. Możesz wyświetlić zdarzenia, które mogą mieć wpływ na ryzyko Twojej organizacji. Można na przykład znaleźć nowe luki w zabezpieczeniach, które zostały wprowadzone, luki, które stały się wykorzystywane, wykorzystywanie luk dodanych do zestawu exploitów i nie tylko.
 
 Oś czasu wydarzenia zawiera również historię wyników ekspozycji [](tvm-exposure-score.md) i wyników bezpiecznego działania firmy [Microsoft](tvm-microsoft-secure-score-devices.md) dla urządzeń, dzięki czemu możesz ustalić przyczynę dużych zmian. Zdarzenia mogą mieć wpływ na twoje urządzenia lub wyniki dla urządzeń. Ogranicz ekspozycję użytkowników, uwzględniając działania, które należy rozwiązać, na podstawie priorytetowych [zaleceń dotyczących zabezpieczeń](tvm-security-recommendation.md).
 
 > [!TIP]
-> Aby uzyskać wiadomości e-mail dotyczące nowych zdarzeń luk w zabezpieczeniach, zobacz Konfigurowanie powiadomień [e-mail z luk w zabezpieczeniach w programie Microsoft Defender dla punktu końcowego](configure-vulnerability-email-notifications.md)
+> Aby uzyskać wiadomości e-mail dotyczące nowych zdarzeń luk w zabezpieczeniach, zobacz [Konfigurowanie powiadomień e-mail dotyczących luk w zabezpieczeniach w programie Ochrona punktu końcowego w usłudze Microsoft Defender](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-event-timeline-page"></a>Przechodzenie do strony osi czasu zdarzenia
 
@@ -53,18 +53,18 @@ Na Zarządzanie zagrożeniami i lukami nawigacyjnym umieść wskaźnik myszy na 
 
 Jeśli nie ma żadnych zdarzeń mających wpływ na Twoje urządzenia lub wyniki dla urządzeń, nie zostaną wyświetlone żadne zdarzenia.
 
-![Wskaźnik wskaźnika ekspozycji.](images/tvm-event-timeline-exposure-score350.png) 
-![ Wskaźnik bezpieczeństwa firmy Microsoft dla urządzeń jest umieszczany na wskaźniku myszy.](images/tvm-event-timeline-device-hover360.png)
+:::image type="content" source="images/tvm-event-timeline-exposure-score350.png" alt-text="Wskaźnik czasu ekspozycji" lightbox="images/tvm-event-timeline-exposure-score350.png":::
+:::image type="content" source="images/tvm-event-timeline-device-hover360.png" alt-text="Wskaźnik bezpieczeństwa urządzeń firmy Microsoft" lightbox="images/tvm-event-timeline-device-hover360.png":::
 
 ### <a name="drill-down-to-events-from-that-day"></a>Przechodzenie do szczegółów zdarzeń z tego dnia
 
 Wybranie **opcji Pokaż wszystkie zdarzenia z tego** dnia umożliwia wyświetlanie strony osi czasu zdarzenia z niestandardowym zakresem dat dla tego dnia.
 
-![Oś czasu zdarzenia wybrany niestandardowy zakres dat.](images/tvm-event-timeline-drilldown.png)
+:::image type="content" source="images/tvm-event-timeline-drilldown.png" alt-text="Strona osi czasu zdarzenia" lightbox="images/tvm-event-timeline-drilldown.png":::
 
 Wybierz **pozycję Niestandardowy zakres** , aby zmienić zakres dat na inny niestandardowy lub wstępnie ustawiony zakres czasu.
 
-![Opcje zakresu dat osi czasu wydarzenia.](images/tvm-event-timeline-dates.png)
+:::image type="content" source="images/tvm-event-timeline-dates.png" alt-text="Opcje zakresu dat osi czasu wydarzenia" lightbox="images/tvm-event-timeline-dates.png":::
 
 ## <a name="event-timeline-overview"></a>Omówienie osi czasu wydarzenia
 
@@ -78,7 +78,7 @@ Funkcje:
 
 Dwie duże liczby w górnej części strony pokazują liczbę nowych luk i luk, które można wykorzystać, a nie zdarzenia. Niektóre zdarzenia mogą mieć wiele luk, a niektóre luki w zabezpieczeniach mogą mieć wiele zdarzeń.
 
-![Strona osi czasu zdarzenia.](images/tvm-event-timeline-overview-mixed-type.png)
+:::image type="content" source="images/tvm-event-timeline-overview-mixed-type.png" alt-text="Oś czasu zdarzenia" lightbox="images/tvm-event-timeline-overview-mixed-type.png":::
 
 ### <a name="columns"></a>Kolumny
 
@@ -110,7 +110,7 @@ Po wybraniu zdarzenia zostanie wyświetlone wysuwne informacje z listą szczegó
 
 Strzałka poniżej "trendu wyników" pomaga ustalić, czy to zdarzenie potencjalnie zostało podniesione, czy niższy wynik ekspozycji organizacyjnej. Wyższy wynik ekspozycji oznacza, że urządzenia są bardziej narażone na wykorzystywanie.
 
-![Wysuuwana oś czasu zdarzenia.](images/tvm-event-timeline-flyout500.png)
+:::image type="content" source="images/tvm-event-timeline-flyout500.png" alt-text="Wysuuwana oś czasu zdarzenia" lightbox="images/tvm-event-timeline-flyout500.png":::
 
 W tym miejscu wybierz **pozycję Przejdź do pokrewnego zalecenia zabezpieczeń** , aby wyświetlić zalecenie dotyczące luki w zabezpieczeniach związanej z nową luką w oprogramowaniu na [stronie zalecenia dotyczące zabezpieczeń](tvm-security-recommendation.md). Po przeczytaniu opisu i luk w zabezpieczeniach w treści zalecenia zabezpieczeń możesz przesłać żądanie naprawy i śledzić je na [stronie rozwiązywania problemów](tvm-remediation.md).
 
@@ -120,11 +120,11 @@ Aby otworzyć stronę oprogramowania, wybierz zdarzenie, > w wysuwanych oknach w
 
 Zostanie wyświetlana pełna strona ze wszystkimi szczegółami określonego oprogramowania. Aby wyświetlić oś czasu zdarzeń dla danego oprogramowania, kliknij wskaźnik myszy na wykresie.
 
-![Strona oprogramowania z wykresem osi czasu zdarzenia.](images/tvm-event-timeline-software2.png)
+:::image type="content" source="images/tvm-event-timeline-software2.png" alt-text="Strona oprogramowania z wykresem osi czasu zdarzenia" lightbox="images/tvm-event-timeline-software2.png":::
 
 Przejdź do karty osi czasu zdarzenia, aby wyświetlić wszystkie zdarzenia związane z tym oprogramowaniem. Można też wyświetlić zalecenia dotyczące zabezpieczeń, informacje dotyczące wykrytych luk, zainstalowanych urządzeń i rozpowszechniania wersji.
 
-![Strona oprogramowania z kartą osi czasu zdarzenia.](images/tvm-event-timeline-software-pages.png)
+:::image type="content" source="images/tvm-event-timeline-software-pages.png" alt-text="Strona oprogramowania z kartą osi czasu zdarzenia" lightbox="images/tvm-event-timeline-software-pages.png":::
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

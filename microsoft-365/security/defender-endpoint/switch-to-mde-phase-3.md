@@ -21,23 +21,23 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 1397c34e8e4a7f1fcb20df192409bd57bc50f40b
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 4f387ae01af51292667f810176970f3607b489b3
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507126"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634410"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Przełączanie do Ochrona punktu końcowego w usłudze Microsoft Defender — etap 3. Etap: na wsch.
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| [![Etap 1. Przygotowanie3.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Etap 1. Przygotowywanie](switch-to-mde-phase-1.md) | [![Etap 2. Konfigurowanie](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Etap 2. Konfigurowanie](switch-to-mde-phase-2.md) | ![Etap 3. Wniesienie](images/phase-diagrams/onboard.png#lightbox)<br/>Etap 3. Wniesienie |
+| [![Etap 1. Przygotowanie3.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Faza 1. Przygotowanie](switch-to-mde-phase-1.md) | [![Faza 2. Konfiguracja](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Faza 2. Konfiguracja](switch-to-mde-phase-2.md) | ![Faza 3. Dołączenie](images/phase-diagrams/onboard.png#lightbox)<br/>Faza 3. Dołączenie |
 |--|--|--|
 || |*Jesteś tutaj!* |
 
@@ -80,15 +80,11 @@ Metody wdrażania różnią się w zależności od systemu operacyjnego i prefer
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)  | 
 
-
 (<a id="fn1">1</a>) Windows Server 2016 i Windows Server 2012 R2 muszą zostać naniesone, korzystając z instrukcji podanych w te Windows[.](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)
-
 
 ## <a name="run-a-detection-test"></a>Uruchamianie testu wykrywania
 
 Aby sprawdzić, czy urządzenia zainstalowane na tych urządzeniach są poprawnie połączone z programem Defender for Endpoint, możesz uruchomić test wykrywania.
-
-<br/><br/>
 
 |System operacyjny|Wskazówki|
 |---|---|
@@ -102,8 +98,6 @@ Aby sprawdzić, czy urządzenia zainstalowane na tych urządzeniach są poprawni
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Potwierdzanie, Program antywirusowy Microsoft Defender jest w trybie pasywnym dla punktów końcowych
 
 Po doprowadzeniu punktów końcowych do usługi Defender for Endpoint następnym krokiem jest upewninie się, że Program antywirusowy Microsoft Defender działa w trybie pasywnym. Możesz użyć jednej z kilku metod, zgodnie z opisem w poniższej tabeli:
-
-<br/><br/>
 
 |Metoda|Co należy zrobić|
 |---|---|
@@ -120,12 +114,12 @@ Po doprowadzeniu punktów końcowych do usługi Defender for Endpoint następnym
 
 Aby ustawić Program antywirusowy Microsoft Defender na pasywny w Windows Server, wersji 1803 lub nowszej albo Windows Server 2019 lub Windows Server 2022, wykonaj następujące czynności:
 
-1. Otwórz Edytor rejestru, a następnie przejdź do:
-
-   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+1. Otwórz Edytor rejestru, a następnie przejdź do .`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 
 2. Edytuj (lub utwórz) wpis DWORD o nazwie **ForceDefenderPassiveMode** i określ następujące ustawienia:
+
    - Ustaw wartość dword na **1**.
+
    - W **obszarze Podstawa** wybierz **pozycję Szesnastkowy**.
 
 > [!NOTE]
@@ -146,6 +140,7 @@ Zapewnienie Program antywirusowy Microsoft Defender na bieżąco jest niezbędne
 Istnieją dwa typy aktualizacji związanych z Program antywirusowy Microsoft Defender aktualnymi aktualizacjami:
 
 - Aktualizacje analizy zabezpieczeń
+
 - Aktualizacje produktów
 
 Aby pobrać aktualizacje, postępuj zgodnie ze wskazówkami w te [Program antywirusowy Microsoft Defender i stosowanie planu bazowego](manage-updates-baselines-microsoft-defender-antivirus.md).
@@ -155,6 +150,7 @@ Aby pobrać aktualizacje, postępuj zgodnie ze wskazówkami w te [Program antywi
 Jeśli na tym etapie masz:
 
 - urządzenia organizacji do usługi Defender for Endpoint i
+
 - Program antywirusowy Microsoft Defender jest zainstalowana i włączona,
 
 Następnie następnym krokiem jest odinstalowanie rozwiązania antywirusowego, ochrony przed złośliwym oprogramowaniem i rozwiązania firmy Microsoft do ochrony przed złośliwym oprogramowaniem. Po odinstalowaniu rozwiązania firmy innym niż firma Microsoft tryb Program antywirusowy Microsoft Defender z trybu pasywnego do trybu aktywnego. W większości przypadków odbywa się to automatycznie. 
@@ -169,7 +165,9 @@ Aby uzyskać pomoc w odinstalowaniu rozwiązania firmy innych niż Microsoft, sk
 Po doinstalowaniu usługi Defender for Endpoint i odinstalowaniu rozwiązania, które było wcześniej inne niż firma Microsoft, następnym krokiem jest upewninie się, że program Defender for Endpoint działa poprawnie. Dobrym sposobem wykonania tego zadania jest odwiedzenie witryny scenariuszy pokazu programu Defender dla punktu końcowego ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Wypróbuj jeden lub więcej scenariuszy pokazu na tej stronie, w tym co najmniej następujące:
 
 - Ochrona w chmurze
+
 - Potencjalnie niechciane aplikacje (PUA)
+
 - Network Protection (NP)
 
 > [!NOTE]
@@ -180,4 +178,5 @@ Po doinstalowaniu usługi Defender for Endpoint i odinstalowaniu rozwiązania, k
 **Gratulacje**! Ukończono migrację [do usługi Defender dla punktu końcowego](switch-to-mde-overview.md#the-migration-process)!
 
 - [Odwiedź pulpit nawigacyjny operacji zabezpieczeń](security-operations-dashboard.md) w portalu Microsoft 365 Defender sieci ([https://security.microsoft.com](https://security.microsoft.com)).
+
 - [Zarządzanie programem Defender dla punktu końcowego po migracji](manage-mde-post-migration.md).

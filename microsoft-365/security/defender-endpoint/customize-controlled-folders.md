@@ -15,23 +15,23 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 04e7617825a3e14eac541b296cbed9f4dd95e206
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683762"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469322"
 ---
 # <a name="customize-controlled-folder-access"></a>Dostosowywanie kontrolowanego dostępu do folderu
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Kontrolowany dostęp do folderu pomaga chronić cenne dane przed złośliwymi aplikacjami i zagrożeniami, takimi jak oprogramowanie wymuszające okup. Kontrolowany dostęp do folderu jest obsługiwany na Windows Server 2019, Windows Server 2022, Windows 10 i Windows 11 klientów. W tym artykule opisano sposób dostosowywania funkcji kontrolowanego dostępu do folderu i przedstawiono następujące sekcje:
+Kontrolowany dostęp do folderu pomaga chronić cenne dane przed złośliwymi aplikacjami i zagrożeniami, takimi jak oprogramowanie wymuszające okup. Kontrolowany dostęp do folderu jest obsługiwany na Windows Server 2019, Windows Server 2022, Windows 10 i Windows 11 klienckich. W tym artykule opisano sposób dostosowywania funkcji kontrolowanego dostępu do folderu i przedstawiono następujące sekcje:
 
 - [Ochrona dodatkowych folderów](#protect-additional-folders)
 - [Dodawanie aplikacji, które powinny mieć dostęp do folderów chronionych](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -61,23 +61,23 @@ Aby dodać i usunąć chronione foldery, Zabezpieczenia Windows użyć aplikacji
 
 4. W sekcji **Kontrolowany dostęp do folderu** wybierz pozycję **Foldery chronione**.
 
-5. Wybierz **pozycję Tak** w **wierszu polecenia Kontrola dostępu użytkownika** . Zostanie **wyświetlone okienko Foldery** chronione.
+5. W **wierszu** polecenia **Użytkownik Access Control wybierz pozycję** Tak. Zostanie **wyświetlone okienko Foldery** chronione.
 
 6. Wybierz **pozycję Dodaj chroniony folder i** postępuj zgodnie z monitami, aby dodać foldery.
 
-### <a name="use-group-policy-to-protect-additional-folders"></a>Ochrona zasady grupy folderów za pomocą funkcji folderów
+### <a name="use-group-policy-to-protect-additional-folders"></a>Ochrona zasady grupy folderów za pomocą programu Outlook
 
-1. Na komputerze zasady grupy zarządzania otwórz [konsolę zasady grupy zarządzania danymi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true). 
+1. Na komputerze zasady grupy zarządzania otwórz [konsolę zasady grupy zarządzania.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true) 
 
 2. Kliknij prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-3. W **Edytorze zasady grupy zarządzaniem** przejdź do **strony Szablony** **administracyjne Zasady konfiguracji** \> \> **komputera**.
+3. W **Edytorze zasady grupy zarządzania przejdź** do **strony Szablony** **administracyjne Zasady konfiguracji** \> \> **komputera**.
 
 4. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> Windows Defender dostęp do folderów z **kontrolą** **exploit guard**\>. <br/>**UWAGA**: W starszych wersjach programu Windows może być **Program antywirusowy Windows Defender zamiast** **Program antywirusowy Microsoft Defender**.
 
 5. Kliknij dwukrotnie **pozycję Skonfigurowane foldery chronione**, a następnie ustaw **opcję Włączone.** Wybierz **pozycję** Pokaż i określ foldery, które chcesz chronić.
 
-6. Wdeksuj obiekt zasady grupy tak jak zwykle.
+6. Wdeksuj zasady grupy obiekt w ten sposób, jak to zwykle robisz.
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>Ochrona dodatkowych folderów za pomocą programu PowerShell
 
@@ -90,7 +90,7 @@ Aby dodać i usunąć chronione foldery, Zabezpieczenia Windows użyć aplikacji
     ```
 3. Powtórz krok 2 dla każdego folderu, który chcesz chronić. Chronione foldery są widoczne w Zabezpieczenia Windows aplikacji.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Okno programu PowerShell z pokazanym poleceniem cmdlet.":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Okno programu PowerShell z pokazanym poleceniem cmdlet" lightbox="images/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > Użyj, `Add-MpPreference` aby dołączyć aplikacje do listy lub dodać je do listy, a nie .`Set-MpPreference` Użycie polecenia `Set-MpPreference` cmdlet spowoduje zastąpienie istniejącej listy.
@@ -120,13 +120,13 @@ Dozwolona aplikacja lub usługa ma dostęp do zapisu w folderze kontrolowanym ty
 
 4. Wybierz **pozycję Dodaj dozwoloną aplikację i** postępuj zgodnie z monitami, aby dodać aplikacje.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="Dodaj dozwolony przycisk aplikacji.":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="Przycisk Dodaj dozwoloną aplikację" lightbox="images/cfa-allow-app.png":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>Zezwalaj zasady grupy aplikacji za pomocą aplikacji
 
 1. Na zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-2. W **edytorze zasady grupy zarządzaniem** przejdź do **strony Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
+2. W **edytorze zasady grupy zarządzania** przejdź do **strony Konfiguracja komputera i** wybierz pozycję **Szablony administracyjne**.
 
 3. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> Windows Defender dostęp do folderów z **kontrolą** **exploit guard**\>.
 
@@ -149,7 +149,7 @@ Dozwolona aplikacja lub usługa ma dostęp do zapisu w folderze kontrolowanym ty
 
    Nadal używaj dodawania `Add-MpPreference -ControlledFolderAccessAllowedApplications` kolejnych aplikacji do listy. Aplikacje dodane przy użyciu tego polecenia cmdlet będą widoczne w Zabezpieczenia Windows aplikacji.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Polecenie cmdlet programu PowerShell umożliwiające aplikację.":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Polecenie cmdlet programu PowerShell umożliwiające aplikację" lightbox="images/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > Użyj, `Add-MpPreference` aby dołączyć aplikacje do listy lub dodać je do listy. Użycie polecenia `Set-MpPreference` cmdlet spowoduje zastąpienie istniejącej listy.
@@ -160,14 +160,14 @@ Użyj pliku [konfiguracji ./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAll
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>Zezwalanie podpisanym plikom wykonywalnym na uzyskiwanie dostępu do folderów chronionych
 
-Program Microsoft Defender for Endpoint certificate and file indicators can allow signed wykonywaable files to access protected folders. Aby uzyskać szczegóły implementacji, [zobacz Tworzenie wskaźników na podstawie certyfikatów](indicator-certificates.md).
+Ochrona punktu końcowego w usłudze Microsoft Defender certyfikatu i plików mogą zezwalać podpisanym plikom wykonywalnym na uzyskiwanie dostępu do folderów chronionych. Aby uzyskać szczegóły implementacji, [zobacz Tworzenie wskaźników na podstawie certyfikatów](indicator-certificates.md).
 
 > [!Note]
 > Nie dotyczy to aparatów skryptów, w tym programu PowerShell.
 
 ## <a name="customize-the-notification"></a>Dostosowywanie powiadomienia
 
-Aby uzyskać więcej informacji na temat dostosowywania powiadomienia o wyzwoleniu reguły i blokowania aplikacji lub pliku, zobacz Konfigurowanie powiadomień [alertów w programie Microsoft Defender dla punktu końcowego](configure-email-notifications.md).
+Aby uzyskać więcej informacji na temat dostosowywania powiadomienia o wyzwoleniu reguły i blokowania aplikacji lub pliku, zobacz Konfigurowanie [powiadomień alertów w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender](configure-email-notifications.md).
 
 ## <a name="see-also"></a>Zobacz też
 

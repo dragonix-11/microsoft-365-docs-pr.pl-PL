@@ -1,7 +1,7 @@
 ---
 title: Blokowanie zachowania klienta
-description: Blokowanie zachowania klienta jest częścią funkcji blokowania zachowania i blokowania w programie Microsoft Defender for Endpoint
-keywords: blokowanie zachowań, szybka ochrona, zachowanie klienta, program Microsoft Defender for Endpoint
+description: Blokowanie zachowania klienta jest częścią funkcji blokowania zachowania i blokowania jej na stronie Ochrona punktu końcowego w usłudze Microsoft Defender
+keywords: blokowanie zachowań, szybka ochrona, zachowanie klienta, Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -16,17 +16,17 @@ ms.custom:
 - edr
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: c5a738584f1705365db1c4fad61f190a42d97660
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8da3f04af66568bbe79dd6a74c38b30a8a1ab891
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330233"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470224"
 ---
 # <a name="client-behavioral-blocking"></a>Blokowanie zachowania klienta
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -35,7 +35,7 @@ ms.locfileid: "63330233"
 
 Blokowanie zachowania klienta jest składnikiem funkcji blokowania [zachowania i blokowania w](behavioral-blocking-containment.md) programie Defender for Endpoint. W przypadku wykrycia podejrzanych zachowań na urządzeniach (nazywanych również klientami lub punktami końcowymi) artefakty (takie jak pliki lub aplikacje) są automatycznie blokowane, sprawdzane i naprawiane.
 
-:::image type="content" alt-text="Ochrona chmury i klienta." source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Ochrona chmury i klienta" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 Ochrona antywirusowa działa najlepiej w połączeniu z ochroną chmury.
 
@@ -77,5 +77,5 @@ Jeśli Twoja organizacja używa programu Defender for Endpoint, blokowanie zacho
 - [Defender for Endpoint baselines](configure-machines-security-baseline.md)
 - [Urządzenia podłączone do usługi Defender for Endpoint](onboard-configure.md)
 - [EDR w trybie blokowania](edr-in-block-mode.md)
-- [Zmniejszenie powierzchni ataków](attack-surface-reduction.md)
+- [Zmniejszanie obszaru podatnego na ataki](attack-surface-reduction.md)
 - [Ochrona następnej generacji](configure-microsoft-defender-antivirus-features.md) (funkcje ochrony przed złośliwym oprogramowaniem i oprogramowanie antywirusowe oraz inne funkcje ochrony przed zagrożeniami)

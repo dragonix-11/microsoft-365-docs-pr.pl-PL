@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 741450f2573e0d750a1d3de5012f97cf16a0780d
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: e2a8f7166e1fa3a05b95b1a48dbf91b30ef34224
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569097"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470378"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Konfigurowanie i konfigurowanie usługi Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1
 
@@ -53,7 +53,7 @@ W poniższej tabeli wymieniono podstawowe wymagania dotyczące usługi Defender 
 
 | Wymaganie | Opis |
 |:---|:---|
-| Wymagania dotyczące licencjonowania | Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1 |
+| Wymagania dotyczące licencjonowania | Defender for Endpoint Plan 1 (dawniej nazywany Ochrona punktu końcowego w usłudze Microsoft Defender Lite)|
 | Wymagania dotyczące przeglądarki | Microsoft Edge <br/> Internet Explorer w wersji 11 <br/> Google Chrome |
 | Systemy operacyjne | Windows 10, wersja 1709 lub nowsza <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina) lub 10.14.6 (Mojave) <br/>iOS <br/>System operacyjny Android  |
 | Datacenter | Jedna z następujących lokalizacji centrów danych: <br/>- Unia Europejska <br/>— Zjednoczone Królestwo <br/>— Stany Zjednoczone |

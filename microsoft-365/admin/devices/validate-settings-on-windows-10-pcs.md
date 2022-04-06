@@ -27,31 +27,31 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Dowiedz się, jak sprawdzić Microsoft 365 ustawienia ochrony aplikacji dla firm miały wpływ na ustawienia ochrony aplikacji Windows 10 urządzeniach.
-ms.openlocfilehash: be25acb8414705c48a8763a0530ec2a70565de83
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 47c220b36050376d1eddf7d83435f175e00f88cb
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313597"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633288"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Sprawdzanie poprawności ustawień ochrony urządzeń dla Windows 10 PC
 
 > [!NOTE]
-> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender dla Firm jest wprowadzana u klientów Microsoft 365 Business Premium począwszy od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Sprawdzanie, Windows 10 urządzenia są ustawione
 
-Po [skonfigurowaniu zasad urządzeń](protection-settings-for-windows-10-pcs.md) może upłynieć kilka godzin, aż te zasady zajdą w życie na urządzeniach użytkowników. Aby potwierdzić, że zasady te obowiązywały, możesz Windows Ustawienia ekranów na urządzeniach użytkowników. Ponieważ użytkownicy nie będą mogli modyfikować ustawień aktualizacji Windows i ustawień Program antywirusowy Microsoft Defender na ich Windows 10 urządzeniach, wiele opcji zostanie wyszarzeni.
+Po [skonfigurowaniu zasad urządzeń](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md) może upłynieć kilka godzin, aż te zasady zajdą w życie na urządzeniach użytkowników. Aby potwierdzić, że zasady te obowiązywały, możesz Windows Ustawienia ekranów na urządzeniach użytkowników. Ponieważ użytkownicy nie będą mogli modyfikować ustawień ustawień Windows Update i Program antywirusowy Microsoft Defender na swoich Windows 10 urządzeniach, wiele opcji zostanie wyszarzeni.
   
-1. Przejdź do **Ustawienia** \> **Opcje &amp; ponownego** \> **uruchamiania Windows** \> aktualizacji i upewnij się, że wszystkie ustawienia są wyszarowane. 
+1. Przejdź do **Ustawienia** \> **Opcje &amp; ponownego** \> **uruchamiania Windows Update** \> i upewnij się, że wszystkie ustawienia są wyszarowane. 
     
     ![Wszystkie opcje Uruchom ponownie są wyszarowane.](../../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Przejdź do **Ustawienia** \> **Opcje &amp;** **aktualizacji Windows** \> \> Zaawansowane i upewnij się, że wszystkie ustawienia są wyszarowane. 
+2. Przejdź do **Ustawienia** \> **Aktualizowanie &amp; zabezpieczeń** \> **Windows Update** \> **opcje Zaawansowane** i upewnij się, że wszystkie ustawienia są wyszarowane. 
     
     ![Windows opcje aktualizacji zaawansowanych są wyszarowane.](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. Przejdź do **Ustawienia** \> **Opcje &amp;** **zaawansowane aktualizacji Windows** \> \> Opcje **aktualizacji** \> Wybierz **sposób dostarczenia aktualizacji**.
+3. Przejdź do **Ustawienia** \> **Opcje &amp;** **zaawansowane Windows Update** \> \> opcje **aktualizacji** \> **Wybierz sposób dostarczenia aktualizacji**.
     
     Upewnij się, że widzisz komunikat (kolor czerwony), że niektóre ustawienia są ukryte lub zarządzane przez Twoją organizację, a wszystkie opcje są wyszarowane.
     
@@ -65,6 +65,7 @@ Po [skonfigurowaniu zasad urządzeń](protection-settings-for-windows-10-pcs.md)
   
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Microsoft 365 i zasoby dla firm](/admin)\
-[Konfigurowanie urządzeń dla komputerów Windows 10](protection-settings-for-windows-10-pcs.md)
- [Najedna 10](../security-and-compliance/secure-your-business-data.md) sposobów zabezpieczania Microsoft 365 dla firm
+[Microsoft 365 i zasoby dla firm](/admin)
+
+[Konfigurowanie urządzeń dla komputerów Windows 10](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
+ [Najedna 10](../../admin/security-and-compliance/secure-your-business-data.md) sposobów zabezpieczania Microsoft 365 dla firm

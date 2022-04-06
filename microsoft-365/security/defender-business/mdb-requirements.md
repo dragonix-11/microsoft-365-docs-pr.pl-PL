@@ -1,13 +1,13 @@
 ---
-title: Wymagania dotyczące usługi Microsoft Defender dla firm
-description: Wymagania dotyczące licencji, sprzętu i oprogramowania usługi Microsoft Defender dla firm
+title: Wymagania dotyczące Microsoft Defender dla Firm
+description: Microsoft Defender dla Firm licencji, sprzętu i oprogramowania
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/01/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,21 +17,21 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 17954ec9c01a053f847a7d8a74188edf2f4e4091
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 9fd082160640c239424ec75ff58c695a0175d630
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525546"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634938"
 ---
-# <a name="microsoft-defender-for-business-requirements"></a>Wymagania programu Microsoft Defender dla firm
+# <a name="microsoft-defender-for-business-requirements"></a>Microsoft Defender dla Firm wymagań
 
 > [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
+> Microsoft Defender dla Firm jest wprowadzana u [klientów Microsoft 365 Business Premium](../../business-premium/index.md) począwszy od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
 > 
 > Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
 
-W tym artykule opisano wymagania dotyczące programu Microsoft Defender dla firm.
+W tym artykule opisano wymagania dotyczące Microsoft Defender dla Firm.
 
 ## <a name="what-to-do"></a>Co należy zrobić
 
@@ -41,22 +41,21 @@ W tym artykule opisano wymagania dotyczące programu Microsoft Defender dla firm
 
 >
 > **Masz minutę?**
-> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">ankietę na temat Microsoft Defender dla Firm</a>. Chcemy ją usłyszeć!
 >
 
 ## <a name="review-the-requirements"></a>Przejrzyj wymagania
 
-W poniższej tabeli wymieniono podstawowe wymagania dotyczące konfigurowania i używania programu Microsoft Defender dla firm. <br/><br/>
+W poniższej tabeli wymieniono podstawowe wymagania dotyczące konfigurowania i używania tych Microsoft Defender dla Firm. <br/><br/>
 
 | Wymaganie | Opis |
 |:---|:---|
-| Subskrypcja | Microsoft 365 Business Premium <br/>--- lub ---<br/>Microsoft Defender for Business (autonomiczny, obecnie w wersji Preview). <br/><br/> Zobacz [Jak uzyskać usługę Microsoft Defender dla firm](get-defender-business.md).<br/><br/>Zwróć uwagę, że jeśli masz wiele subskrypcji, najwyższa subskrypcja ma pierwszeństwo. Jeśli na przykład masz usługę Microsoft Defender for Endpoint Plan 2 (zakupioną lub próbną subskrypcję) i otrzymasz usługę Microsoft Defender for Business, usługa Defender dla punktu końcowego (plan 2) ma pierwszeństwo. W takim przypadku nie zobaczysz usługi Defender dla firm.  |
-| Datacenter | Jedna z następujących lokalizacji centrów danych: <br/>- Unia Europejska <br/>— Zjednoczone Królestwo <br/>- Stany Zjednoczone |
-| Konta użytkowników | Konta użytkowników są tworzone w centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/><br/>Licencje usługi Microsoft Defender dla firm są przypisywane w centrum administracyjne platformy Microsoft 365<br/><br/>Aby uzyskać pomoc na temat tego zadania, zobacz [Dodawanie użytkowników i przypisywanie licencji](../../admin/add-users/add-users.md). |
-| Uprawnienia  | Aby zarejestrować się w programie Microsoft Defender dla firm, musisz być administratorem globalnym.<br/><br/>Aby uzyskać dostęp do portalu Microsoft 365 Defender, użytkownicy muszą mieć przypisaną jedną z następujących ról [w usłudze Azure AD](mdb-roles-permissions.md): <br/>- Czytnik zabezpieczeń<br/>- Administrator zabezpieczeń<br/>— Administrator globalny<br/><br/>Aby dowiedzieć się więcej, zobacz [Role i uprawnienia w programie Microsoft Defender dla firm](mdb-roles-permissions.md). |
+| Subskrypcja | Microsoft 365 Business Premium <br/>--- lub ---<br/>Microsoft Defender dla Firm (autonomiczna, obecnie w wersji Preview). <br/><br/> Zobacz [Jak uzyskać Microsoft Defender dla Firm](get-defender-business.md).<br/><br/>Zwróć uwagę, że jeśli masz wiele subskrypcji, najwyższa subskrypcja ma pierwszeństwo. Jeśli na przykład masz plan 2 Ochrona punktu końcowego w usłudze Microsoft Defender (kupioną lub próbną subskrypcję) i masz Microsoft Defender dla Firm, pierwszeństwo ma program Defender dla planu 2 punktów końcowych. W takim przypadku nie zobaczysz usługi Defender dla firm.  |
+| Datacenter | Jedna z następujących lokalizacji centrów danych: <br/>- Unia Europejska <br/>— Zjednoczone Królestwo <br/>— Stany Zjednoczone |
+| Konta użytkowników | Konta użytkowników są tworzone w Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/><br/>Microsoft Defender dla Firm licencje są przypisywane w Centrum administracyjne platformy Microsoft 365<br/><br/>Aby uzyskać pomoc na temat tego zadania, zobacz [Dodawanie użytkowników i przypisywanie licencji](../../admin/add-users/add-users.md). |
+| Uprawnienia  | Aby zarejestrować się w Microsoft Defender dla Firm, musisz być administratorem globalnym.<br/><br/>Aby uzyskać dostęp do portalu Microsoft 365 Defender, użytkownicy muszą mieć przypisaną jedną z następujących ról [w usłudze Azure AD](mdb-roles-permissions.md): <br/>- Czytnik zabezpieczeń<br/>- Administrator zabezpieczeń<br/>— Administrator globalny<br/><br/>Aby dowiedzieć się więcej, zobacz [Role i uprawnienia w aplikacji Microsoft Defender dla Firm](mdb-roles-permissions.md). |
 | Wymagania dotyczące przeglądarki | Microsoft Edge lub Google Chrome |
-| System operacyjny | Aby można było zarządzać urządzeniami w programie Microsoft Defender dla firm, na tych urządzeniach musi być uruchomiony jeden z następujących systemów operacyjnych: <br/>— Windows 10 Business lub nowszy <br/>— Windows 10 Professional lub nowszy <br/>— Windows 10 Enterprise lub nowszy <br/><br/>Upewnij się, [że zainstalowano kb5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) . <br/><br/>Jeśli zarządzasz już urządzeniami w programie Microsoft Intune (lub Microsoft Endpoint Manager), możesz je dodać do usługi Defender dla firm. |
-| Integracja z Microsoft Endpoint Manager  | Jeśli planujesz wboardować urządzenia przy użyciu konfiguracji zabezpieczeń programu [Microsoft Defender dla](mdb-onboard-devices.md#microsoft-defender-for-business-security-configuration) firm, muszą być spełnione następujące wymagania:<br/><br/>Wymagania wstępne muszą być spełnione w celu [zarządzania zabezpieczeniami dla programu Microsoft Defender dla punktu końcowego](/mem/intune/protect/mde-security-integration).<br/>— Usługa Azure AD musi być skonfigurowana w taki sposób, aby między urządzeniami firmy a usługą Azure AD było tworzone zaufanie. <br/>— Program Defender dla firm musi mieć włączoną funkcję zarządzania zabezpieczeniami w Microsoft Endpoint Manager.<br/><br/>Urządzenia muszą mieć możliwość łączenia się z następującymi adresami URL:<br/>- `enterpriseregistration.windows.net` (w przypadku rejestracji w usłudze Azure AD)<br/>- `login.microsoftonline.com` (w przypadku rejestracji w usłudze Azure AD)<br/>- `*.dm.microsoft.com` (Symbol wieloznaczny (*) obsługuje punkty końcowe usługi w chmurze, które są używane do rejestrowania, zaewidencjonowania i raportowania oraz mogą zmieniać się wraz ze skalami usług). |
+| System operacyjny | Aby zarządzać urządzeniami Microsoft Defender dla Firm urządzeniach musi być uruchomiony jeden z następujących systemów operacyjnych: <br/>— Windows 10 Business lub nowszy <br/>— Windows 10 Professional lub nowszy <br/>— Windows 10 Enterprise lub nowszy <br/><br/>Upewnij się, [że zainstalowano kb5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) . <br/><br/>Jeśli zarządzasz już urządzeniami w programie Microsoft Intune (lub Microsoft Endpoint Manager), możesz je dodać do usługi Defender dla firm. |
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD) służy](/azure/active-directory/fundamentals/active-directory-whatis) do zarządzania uprawnieniami użytkowników i grupami urządzeń. Usługa Azure AD jest zawarta w subskrypcji usługi Defender dla firm. 
@@ -68,5 +67,5 @@ W poniższej tabeli wymieniono podstawowe wymagania dotyczące konfigurowania i 
 
 Przejdź do:
 
-- [Krok 2. Przypisywanie ról i uprawnień w programie Microsoft Defender dla firm](mdb-roles-permissions.md) 
+- [Krok 2. Przypisywanie ról i uprawnień w aplikacji Microsoft Defender dla Firm](mdb-roles-permissions.md) 
  

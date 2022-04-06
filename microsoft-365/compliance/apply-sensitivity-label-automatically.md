@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Po utworzeniu etykiety wrażliwości możesz automatycznie przypisać etykietę do plików i wiadomości e-mail lub poprosić użytkowników o wybranie etykiety, która jest zalecana.
-ms.openlocfilehash: 80f3b5c69e482301dd8c4e926959087c7149a529
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499666"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634630"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatyczne stosowanie etykiety poufności do zawartości
 
@@ -275,18 +275,6 @@ Symulowane wdrożenie działa podobnie jak parametr WhatIf dla programu PowerShe
 Tryb symulowania pozwala również stopniowo zwiększać zakres zasad auto etykiet przed wdrożeniem. Na przykład można zacząć od jednej lokalizacji, na przykład SharePoint dokumentów, z jedną biblioteką dokumentów. Następnie, w przypadku zmian iteracyjnych, zwiększ zakres do wielu witryn, a następnie do innej lokalizacji, na przykład OneDrive.
 
 Ponadto można użyć trybu symulowania, aby przedstawić przybliżenie czasu potrzebnego do uruchomienia zasad auto etykiet, co pomoże zaplanować i zaplanować, kiedy zostanie uruchomione bez użycia trybu symulacyjnego.
-
-#### <a name="deleted-onedrive-accounts-and-simulation-results"></a>Usunięte OneDrive i wyniki symulacyjne
-
-Można oczekiwać rozbieżności w wynikach symulacyjnych, gdy usunięte OneDrive są nadal na [etapie przechowywania procesu usuwania](/onedrive/retention-and-deletion#the-onedrive-deletion-process). Na przykład pracownik opuścił organizację, a jego kierownik ma tymczasowy dostęp do plików OneDrive użytkownika.
-
-W tym scenariuszu, jeśli konto OneDrive zostało określone za pomocą adresu URL w zasadach auto etykiet, pliki dopasowane z usuniętego konta OneDrive są uwzględniane w wynikach symulacyjnych.
-
-Jeśli jednak konto OneDrive nie zostało określone przez adres URL, ale zostało uwzględnione w ustawieniu **domyślnym** Wszystkie:
-- Gdy SharePoint danych zostanie uwzględniona w zasadach, dopasowane pliki z usuniętego konta OneDrive będą wyświetlane jako elementy SharePoint w wynikach symulacyjnych.
-- Jeśli SharePoint lokalizacji użytkownika nie jest uwzględnione w zasadach, dopasowane pliki z usuniętego OneDrive nie są uwzględniane w wynikach symulacyjnych.
-
-We wszystkich przypadkach dopasowane pliki są oznaczane etykietą, aż OneDrive konto zostanie trwale usunięte. Wymienione rozbieżności w wyświetlaniu dotyczą tylko wyników symulacyjnych.
 
 ### <a name="creating-an-auto-labeling-policy"></a>Tworzenie zasad automatycznego oznaczania etykiet
 

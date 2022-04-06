@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d54d8ecf2d0c365168ae636cbe85ef1da9cfb6b1
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 26a792a753b0855a12cd994256cef93a64a5a159
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997812"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469234"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Uniemożliwianie użytkownikom oglądania interfejsu Program antywirusowy Microsoft Defender interakcji z nim
 
@@ -29,10 +29,10 @@ ms.locfileid: "62997812"
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Za pomocą funkcji zasady grupy można uniemożliwić użytkownikom korzystającym z punktów końcowych wyświetlanie Program antywirusowy Microsoft Defender końcowych. Możesz również uniemożliwić wsłuchiwowanie skanów.
+Możesz użyć zasady grupy, aby uniemożliwić użytkownikom korzystającym z punktów końcowych wyświetlanie Program antywirusowy Microsoft Defender sieci. Możesz również uniemożliwić wsłuchiwowanie skanów.
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Ukrywanie Program antywirusowy Microsoft Defender sieci Web
 
@@ -40,24 +40,24 @@ W Windows 10 wersji 1703 ukrycie interfejsu spowoduje ukrycie powiadomień progr
 
 Po ustawieniu **Włączone:**
 
-:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="Zrzut ekranu Zabezpieczenia Windows sekcje ochrony przed wirusami i zagrożeniami bez ikony tarczy.":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="Sekcja Zabezpieczenia Windows zabezpieczeń bez ikony tarczy oraz sekcji ochrony przed wirusami i zagrożeniami" lightbox="../../media/wdav-headless-mode-off-1703.png":::
 
 Po ustawieniu **wartości Wyłączone lub** nieskonfigurowane:
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Zrzut ekranu przedstawiający Zabezpieczenia Windows z ikoną tarczy i sekcjami ochrony przed zagrożeniami.":::
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Sekcja Zabezpieczenia Windows z ikoną tarczy i sekcjami ochrony przed zagrożeniami" lightbox="../../media/wdav-headless-mode-1703.png":::
 
 > [!NOTE]
-> Ukrycie interfejsu uniemożliwi także Program antywirusowy Microsoft Defender w punkcie końcowym. Powiadomienia programu Microsoft Defender dla punktu końcowego będą nadal wyświetlane. Możesz także skonfigurować powiadomienia [wyświetlane w punktach końcowych pojedynczo.](configure-notifications-microsoft-defender-antivirus.md)
+> Ukrycie interfejsu uniemożliwi także Program antywirusowy Microsoft Defender w punkcie końcowym. Ochrona punktu końcowego w usłudze Microsoft Defender powiadomienia będą nadal wyświetlane. Możesz także skonfigurować powiadomienia [wyświetlane w punktach końcowych pojedynczo.](configure-notifications-microsoft-defender-antivirus.md)
 
 We wcześniejszych wersjach programu Windows 10 ustawienie spowoduje ukrycie Windows Defender klienta. Jeśli użytkownik spróbuje go otworzyć, otrzyma ostrzeżenie o treści "Twoja administrator systemu dostępu do tej aplikacji".
 
-:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Komunikat ostrzegawczy, gdy w programie Windows 10 w wersji wcześniejszej niż 1703 włączono tryb bezgłowy":::
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Komunikat ostrzegawczy po włączeniu trybu bezgłownego w programie Windows 10 w wersjach starszych niż 1703" lightbox="../../media/wdav-headless-mode-1607.png":::
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>Ukrywanie interfejsu audio/wideo programu Microsoft Defender za pomocą funkcji zasady grupy użytkowników
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
+1. Na zasady grupy zarządzania komputerami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
 
-2. Za pomocą **zasady grupy zarządzania przejdź** do **opcji Konfiguracja komputera**.
+2. Za pomocą **edytora zasady grupy zarządzania przejdź** do **opcji Konfiguracja komputera**.
 
 3. Kliknij **pozycję Szablony administracyjne**.
 
@@ -74,11 +74,11 @@ Możesz uniemożliwić użytkownikom wsłuchianie skanów, co może być pomocne
 > [!NOTE]
 > To ustawienie nie jest obsługiwane w Windows 10.
 
-### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>Za zasady grupy, aby uniemożliwić użytkownikom wsłuchiwanie skanowania
+### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>Użyj zasady grupy, aby uniemożliwić użytkownikom wstrzymanie skanowania
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
+1. Na zasady grupy zarządzania komputerami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
 
-2. Za pomocą **zasady grupy zarządzania przejdź** do **opcji Konfiguracja komputera**.
+2. Za pomocą **edytora zasady grupy zarządzania przejdź** do **opcji Konfiguracja komputera**.
 
 3. Kliknij **pozycję Szablony administracyjne**.
 

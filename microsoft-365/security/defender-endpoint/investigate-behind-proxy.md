@@ -1,6 +1,6 @@
 ---
 title: Badanie zdarzeń połączenia, które występują za serwerów proxy przesyłania dalej
-description: Dowiedz się, jak korzystać z zaawansowanego monitorowania poziomu HTTP za pomocą ochrony sieci w programie Microsoft Defender for Endpoint, który pokazuje rzeczywisty obiekt docelowy, a nie serwer proxy.
+description: Dowiedz się, jak korzystać z zaawansowanego monitorowania poziomu HTTP za pomocą ochrony sieci Ochrona punktu końcowego w usłudze Microsoft Defender sieci, która pokazuje rzeczywisty obiekt docelowy, a nie serwer proxy.
 keywords: proxy, ochrona sieci, serwer proxy przesyłania dalej, zdarzenia sieciowe, inspekcja, blokowanie, nazwy domen, domena
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 580f41c24d6d78fb9e5ac7e20eb80e6ae78a505b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021322"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469806"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Badanie zdarzeń połączenia, które występują za serwerów proxy przesyłania dalej
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
@@ -58,13 +58,13 @@ Aby uzyskać więcej informacji, zobacz [Włączanie ochrony sieci](enable-netwo
 
 Gdy ochrona sieci jest włączona, na osi czasu urządzenia adres IP będzie nadal reprezentował serwer proxy, podczas gdy zostanie wyświetlony rzeczywisty adres docelowy.
 
-![Obraz zdarzeń sieciowych na osi czasu urządzenia.](images/atp-proxy-investigation.png)
+:::image type="content" source="images/atp-proxy-investigation.png" alt-text="Zdarzenia sieciowe na osi czasu urządzenia" lightbox="images/atp-proxy-investigation.png":::
 
 Inne zdarzenia wyzwalane przez warstwę ochrony sieci są teraz dostępne do powierzchni rzeczywistych nazw domen nawet za serwerem proxy.
 
 Informacje o zdarzeniu:
 
-![Obraz pojedynczego zdarzenia sieciowego.](images/atp-proxy-investigation-event.png)
+:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="Adresy URL pojedynczego zdarzenia sieciowego" lightbox="images/atp-proxy-investigation-event.png":::
 
 ## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Wyszukiwanie wydarzeń na połączeniach przy użyciu zaawansowanego wyszukiwania
 
@@ -78,7 +78,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-![Obraz zaawansowanego zapytania myśliwego.](images/atp-proxy-investigation-ah.png)
+:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="Zaawansowane zapytanie myśliwskie" lightbox="images/atp-proxy-investigation-ah.png":::
 
 Możesz również filtrować zdarzenia związane z połączeniem z samym serwerem proxy.
 

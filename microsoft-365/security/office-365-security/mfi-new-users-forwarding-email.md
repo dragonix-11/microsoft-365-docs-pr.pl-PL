@@ -13,12 +13,12 @@ description: Administratorzy mogą dowiedzieć się, jak za pomocą szczegółow
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 35ec1573096ecce392979cba11c6e55b1a1adcce
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7e7f97f2f246be609db813f1d42ef6aed6a152a9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681771"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470268"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nowi użytkownicy mogą przesyłać dalej informacje dotyczące poczty e-mail w Centrum & zgodności
 
@@ -26,7 +26,7 @@ ms.locfileid: "63681771"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Jest to podejrzane, gdy nowe konta użytkowników w Twojej organizacji nagle zaczną przesyłać dalej wiadomości e-mail do domen zewnętrznych.
@@ -35,11 +35,11 @@ Szczegółowe **informacje o nowych** domenach w Centrum & zabezpieczeń [](http
 
 Ta informacja jest widoczna tylko po wykryciu problemu i pojawia się na stronie [Raport przesyłany](view-mail-flow-reports.md#forwarding-report) dalej.
 
-![Nowi użytkownicy przesyłają dalej informacje dotyczące poczty e-mail.](../../media/mfi-new-users-forwarding-email.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="Nowi użytkownicy przesyłający dalej informacje o wiadomościach e-mail" lightbox="../../media/mfi-new-users-forwarding-email.png":::
 
 Po kliknięciu widżetu zostanie wyświetlone wysuwne okno, w którym można znaleźć więcej szczegółowych informacji na temat wiadomości przesyłanych dalej, w tym [](#forwarding-modifications-report) link do raportu o zmianach w przesyłaniu dalej zgodnie z opisem w dalszej części tego artykułu.
 
-![Wysuw szczegółów wyświetlany po kliknięciu pozycji Nowi użytkownicy przesyłający dalej informacje o wiadomościach e-mail.](../../media/mfi-new-users-forwarding-email-details.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="Wysuw szczegółów wyświetlany po kliknięciu pozycji Nowi użytkownicy przesyłający dalej informacje e-mail" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
 
 Możesz również przejść do tej strony szczegółów, gdy wybierzesz szczegółowe informacje po kliknięciu przycisku Wyświetl wszystkie w obszarze Najważniejsze informacje **& zalecenia** na (**Pulpit** \> nawigacyjny **Raporty** lub <https://protection.office.com/insightdashboard>).
 
@@ -67,11 +67,11 @@ W widoku raportu są dostępne następujące wykresy:
 
 - **Pokaż dane dla: Nowi użytkownicy przesyłania dalej**:
 
-  ![Widok Nowi użytkownicy przesyłający dalej w raporcie do modyfikacji przesyłania dalej.](../../media/forwarding-modifications-report-new-forwarding-users.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="Widok Nowi użytkownicy przesyłający dalej w raporcie Modyfikowanie przesyłania dalej" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
 
 - **Pokaż dane dla: Nowe domeny przesyłania dalej**:
 
-  ![Nowy widok domen przesyłanych dalej w raporcie o zmianach w przesyłaniu dalej.](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="Widok Nowe domeny przekazane dalej w raporcie Modyfikowanie przesyłania dalej" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
 
 Jeśli klikniesz **pozycję Filtry** w widoku raportu, możesz określić zakres dat w **datach Rozpoczęcie** i **Data zakończenia**.
 
@@ -107,9 +107,9 @@ W przypadku wybrania wiersza z tabeli zostanie wyświetlone **wysuwne okno** Szc
 - **Szczegóły**
 - **Liczba**
 - **Data rozpoczęcia**
-- **Zalecenie**: W tym miejscu możesz kliknąć link, aby zarządzać użytkownikiem w centrum administracyjne platformy Microsoft 365.
+- **Zalecenie**: W tym miejscu możesz kliknąć link, aby zarządzać użytkownikiem w Centrum administracyjne platformy Microsoft 365.
 
-![Wysuw szczegółów z tabeli szczegółów widoku Nowi użytkownicy przesyłający dalej w raporcie Do modyfikowania przesyłania dalej.](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="The Details flyout from the details table of the New forwarding users view in the Forwarding modifications report" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
 
 Aby wrócić do widoku raportów, kliknij pozycję **Wyświetl raport**.
 

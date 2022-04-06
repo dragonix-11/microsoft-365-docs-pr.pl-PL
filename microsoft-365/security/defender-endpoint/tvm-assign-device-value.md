@@ -1,7 +1,7 @@
 ---
 title: Przypisywanie wartości urządzenia — Zarządzanie zagrożeniami i lukami
 description: Dowiedz się, jak przypisać do urządzenia wartość niską, normalną lub wysoką, aby ułatwić odróżnienie priorytetów zasobów.
-keywords: Microsoft Defender for Endpoint device value, Zarządzanie zagrożeniami i lukami device value, high value devices, device value exposure score
+keywords: Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia, Zarządzanie zagrożeniami i lukami urządzenia, urządzenia o wysokiej wartości, ocena ekspozycji na wartość urządzenia
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,23 +16,23 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb8c0bd0870ea240e64c33dfac2fd6c00156def8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ff6d61e02ff923cc9406412c81e9a67799e6880a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998110"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477225"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Przypisywanie wartości urządzenia — Zarządzanie zagrożeniami i lukami
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -59,10 +59,11 @@ Przykłady urządzeń, do których powinna być przypisana wysoka wartość:
 
 2. Wybierz **pozycję Wartość urządzenia** z trzech kropek obok paska akcji w górnej części strony.
 
-    ![Przykład listy rozwijanej wartości urządzenia.](images/tvm-device-value-dropdown.png)
+   :::image type="content" source="images/tvm-device-value-dropdown.png" alt-text="Opcja wartości Urządzenia" lightbox="images/tvm-device-value-dropdown.png":::
 
 3. Zostanie wyświetlone wysuw z bieżącą wartością urządzenia i jej wartością. Sprawdź wartość urządzenia i wybierz to, które najlepiej pasuje do twojego urządzenia.
-![Przykład wysuwu wartości urządzenia.](images/tvm-device-value-flyout.png)
+
+:::image type="content" source="images/tvm-device-value-flyout.png" alt-text="Strona wartości Urządzenia" lightbox="images/tvm-device-value-flyout.png":::
 
 ## <a name="how-device-value-impacts-your-exposure-score"></a>Jak wartość urządzenia wpływa na wynik ekspozycji
 

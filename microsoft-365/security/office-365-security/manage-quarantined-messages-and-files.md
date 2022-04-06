@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się, jak wyświetlać wiadomości poddanych kwarantannie i zarządzać nimi dla wszystkich użytkowników usługi Exchange Online Protection (EOP). Administratorzy w organizacjach z programem Microsoft Defender dla Office 365 mogą również zarządzać plikami poddanymi kwarantannie w usługach SharePoint Online, OneDrive dla Firm i Microsoft Teams.
+description: Administratorzy mogą dowiedzieć się, jak wyświetlać wiadomości poddanych kwarantannie i zarządzać nimi dla wszystkich użytkowników usługi Exchange Online Protection (EOP). Administratorzy w organizacjach z Ochrona usługi Office 365 w usłudze Microsoft Defender mogą również zarządzać plikami poddanymi kwarantannie w usługach SharePoint Online, OneDrive dla Firm i Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7787943ad16a3ae641b475b01b7e1dd8bb7f51d2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 449886f6272c81f9947fd3e7ea869e565326578f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318217"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469652"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako administrator w u usługi EOP
 
@@ -32,7 +32,7 @@ ms.locfileid: "63318217"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 W Microsoft 365 z skrzynkami pocztowymi w organizacjach Exchange Online lub autonomicznych organizacjach usługi Exchange Online Protection (EOP) bez skrzynek pocztowych usługi Exchange Online kwarantanna zawiera potencjalnie niebezpieczne lub niechciane wiadomości. Aby uzyskać więcej informacji, zobacz [Poddaj wiadomościom w kwarantannie usługi EOP](quarantine-email-messages.md).
@@ -41,7 +41,7 @@ Administratorzy mogą wyświetlać, zwalniać i usuwać wszystkie typy wiadomoś
 
 Domyślnie tylko administratorzy mogą zarządzać wiadomościami poddanymi kwarantannie jako złośliwe oprogramowanie, wyłudzaniem dużej pewności lub ze względu na reguły przepływu poczty (nazywane także regułami transportu). Jednak administratorzy _mogą używać zasad_ kwarantanny w celu określenia, co użytkownicy mogą robić w kwarantannie wiadomości w zależności od tego, dlaczego wiadomość została poddana kwarantannie (dla obsługiwanych funkcji). Aby uzyskać więcej informacji, zobacz [Zasady kwarantanny](quarantine-policies.md).
 
-Administratorzy w organizacjach z programem Microsoft Defender dla usługi Office 365 mogą również zarządzać plikami poddanymi kwarantannie przez Sejf Załączniki wiadomości SharePoint[, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Administratorzy w organizacjach Ochrona usługi Office 365 w usłudze Microsoft Defender mogą również zarządzać plikami poddanymi kwarantannie przez administratorów Sejf Załączniki wiadomości SharePoint[, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 W portalu usługi Microsoft 365 Defender lub programie PowerShell (Exchange Online PowerShell dla organizacji z skrzynkami pocztowymi w programie Exchange Online i zarządzaniu nimi; autonomiczny program Power Microsoft 365 Shell usługi EOP dla organizacji bez Exchange Online skrzynki pocztowe).
 
@@ -59,11 +59,11 @@ W portalu usługi Microsoft 365 Defender lub programie PowerShell (Exchange Onli
 
   **Uwagi**:
 
-  - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w  aplikacji Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+  - Dodanie użytkowników do odpowiedniej Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia i uprawnienia do innych funkcji w aplikacji  Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
   - Grupa **ról Zarządzanie organizacją tylko do** odczytu w [programie Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) również zapewnia dostęp tylko do odczytu tej funkcji.
   - <sup>\*</sup>Członkowie grupy ról **Administrator** kwarantanny w rolach współpracy poczty **e-mail &** w [portalu Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) muszą być także członkami grupy ról Zarządzanie wiadomościami w  programie [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups), aby wykonać procedury kwarantanny w programie Exchange Online PowerShell.
 
-- Poddaj je kwarantannie wiadomości są zachowywane przez domyślny okres w zależności od tego, dlaczego zostały poddane kwarantannie. Po wygaśnięciu okresu przechowywania wiadomości są automatycznie usuwane i nie można ich odzyskać. Aby uzyskać więcej informacji, zobacz [Poddaj kwarantannie wiadomości e-mail w usługach EOP i Defender for Office 365](quarantine-email-messages.md).
+- Poddaj je kwarantannie wiadomości są zachowywane przez domyślny okres w zależności od tego, dlaczego zostały poddane kwarantannie. Po wygaśnięciu okresu przechowywania wiadomości są automatycznie usuwane i nie można ich odzyskać. Aby uzyskać więcej informacji, zobacz [Poddaj wiadomościom w kwarantannie usługi EOP i Ochrona usługi Office 365 w usłudze Defender](quarantine-email-messages.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>Zarządzanie wiadomościami Microsoft 365 Defender-mail poddanych kwarantannie za pomocą portalu zarządzania wiadomościami e-mail poddanymi kwarantannie
 
@@ -110,7 +110,7 @@ W portalu usługi Microsoft 365 Defender lub programie PowerShell (Exchange Onli
      - **Reguła transportu** (reguła przepływu poczty e-mail)
      - **Zbiorcze**
      - **Spam**
-     - **Złośliwe oprogramowanie**: Zasady ochrony przed złośliwym oprogramowaniem w usługach EOP Sejf załączników w programie Defender dla Office 365. Wartość **Typ zasad** wskazuje, która funkcja została użyta.
+     - **Złośliwe oprogramowanie**: Zasady ochrony przed złośliwym oprogramowaniem w usługach EOP Sejf załączników w programie Ochrona usługi Office 365 w usłudze Defender. Wartość **Typ zasad** wskazuje, która funkcja została użyta.
      - **Wyłudzanie** informacji: Werdykt filtru spamu był w kwarantannie przed wyłudzaniem informacji lub wyłudzaniem informacji w kwarantannie (ustawienia [spoof settings](set-up-anti-phishing-policies.md#spoof-settings) lub [impersonation protection](set-up-anti-phishing-policies).
      - **Wyłudzanie informacji o wysokiej pewności**
    - **Adresat**: **Wszyscy użytkownicy lub** **Tylko ja**. Użytkownicy końcowi mogą zarządzać tylko w kwarantannie wysyłanymi do nich wiadomościami.
@@ -141,7 +141,7 @@ Po odnalezieniu określonej wiadomości poddanej kwarantannie zaznacz ją, aby w
 
 Po wybraniu z listy wiadomości poddanej kwarantannie w wysuwanych szczegółach są dostępne następujące informacje.
 
-![Wysuw szczegółów wiadomości poddanej kwarantannie.](../../media/quarantine-message-details-flyout.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="Wysuw szczegółów wiadomości poddanej kwarantannie" lightbox="../../media/quarantine-message-details-flyout.png":::
 
 - **Identyfikator wiadomości**: unikatowy identyfikator globalny wiadomości. Dostępne w **polu nagłówka Identyfikatora** wiadomości w nagłówku wiadomości.
 - **Adres nadawcy**
@@ -152,7 +152,7 @@ Po wybraniu z listy wiadomości poddanej kwarantannie w wysuwanych szczegółach
 - **Nazwa zasad**
 - **Liczba adresatów**
 - **Adresaci**: Jeśli wiadomość zawiera wielu adresatów, należy kliknąć pozycję Podgląd  wiadomości lub Wyświetl  nagłówek wiadomości, aby wyświetlić pełną listę adresatów.
-- **Tag adresata**: Aby uzyskać więcej informacji, zobacz [Tagi użytkownika w programie Microsoft Defender dla Office 365](user-tags.md).
+- **Tag adresata**: Aby uzyskać więcej informacji, zobacz [Tagi użytkowników w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](user-tags.md).
 - **Wygasa:** Data/godzina, kiedy wiadomość zostanie automatycznie i trwale usunięta z kwarantanny.
 - **Opublikowano dla**: Wszystkie adresy e-mail (jeśli są), na które została wydana wiadomość.
 - **Jeszcze nie opublikowano** dla: Wszystkie adresy e-mail (jeśli są), na które wiadomość nie została jeszcze wydana.
@@ -162,13 +162,13 @@ Aby podjąć działanie w związku z wiadomością, zobacz następną sekcję.
 > [!NOTE]
 > Aby pozostać w wysuwanych szczegółach, ale zmienić obecnie poddaną kwarantannie wiadomość, użyj strzałek w górę i w dół u góry wysuwanych.
 >
-> ![Strzałki w górę i w dół w wysuwanych szczegółach wiadomości poddanej kwarantannie.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="Strzałki w górę i w dół w wysuwanych szczegółach wiadomości poddanej kwarantannie" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-email"></a>Działania w przypadku poddanych kwarantannie wiadomości e-mail
 
 Po wybraniu poddaną kwarantannie wiadomości z listy w wysuwanych szczegółach są dostępne następujące akcje:
 
-![Dostępne akcje w wysuwanych szczegółach wiadomości poddanej kwarantannie.](../../media/quarantine-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout-actions.png" alt-text="The Available actions in the details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout-actions.png":::
 
 - ![Ikona zwolnienia wiadomości e-mail.](../../media/m365-cc-sc-check-mark-icon.png) **Zwolnij wiadomość e-mail**<sup>\*</sup>: W wyświetlonym okienku wysuwu skonfiguruj następujące opcje:
   - **Dodaj nadawcę do listy zezwalań w Twojej** organizacji: wybierz tę opcję, aby zapobiec kwarantannie wiadomości od tego nadawcy.
@@ -234,7 +234,7 @@ Jeśli nie zwolnisz lub nie usuniesz wiadomości, zostanie ona usunięta po upł
 > [!NOTE]
 > Na urządzeniach przenośnych tekst opisu nie jest dostępny na ikonach akcji.
 >
-> ![Szczegóły wiadomości poddanej kwarantannie z wyróżniona dostępnymi akcjami.](../../media/quarantine-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-mobile-actions.png" alt-text="Szczegóły wiadomości poddanej kwarantannie z wyróżnieniami dostępnych akcji" lightbox="../../media/quarantine-message-details-flyout-mobile-actions.png":::
 >
 > Ikony w kolejności i odpowiadające im opisy są podsumowywane w poniższej tabeli:
 >
@@ -253,7 +253,7 @@ Jeśli nie zwolnisz lub nie usuniesz wiadomości, zostanie ona usunięta po upł
 
 Po zaznaczeniu wielu poddanych kwarantannie wiadomości na liście (maksymalnie 100) przez kliknięcie pustego obszaru z lewej strony pierwszej kolumny zostanie wyświetlona lista rozwijana Akcje zbiorcze, na której możesz podjąć następujące czynności:
 
-![Lista rozwijana akcji zbiorczych dla wiadomości poddanych kwarantannie.](../../media/quarantine-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="Lista rozwijana Akcje zbiorcze dla wiadomości w kwarantannie" lightbox="../../media/quarantine-message-bulk-actions.png":::
 
 - ![Ikona zwolnienia wiadomości e-mail.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Releases messages to all recipients. W wyświetlonym wysuwzie możesz wybrać następujące opcje, które są takie same jak w przypadku zwolnienia jednej wiadomości:
   - **Dodawanie nadawcy do listy zezwalań w organizacji**
@@ -272,12 +272,12 @@ Po zaznaczeniu wielu poddanych kwarantannie wiadomości na liście (maksymalnie 
 - ![Ikona pobierania wiadomości e-mail.](../../media/m365-cc-sc-download-icon.png) **Pobieranie wiadomości**
 - ![Ikona Prześlij tylko.](../../media/m365-cc-sc-create-icon.png) **Tylko przesyłanie**
 
-## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Zarządzaj plikami poddanymi kwarantannie za pomocą portalu Microsoft 365 Defender usługi Defender dla Office 365
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Zarządzanie plikami poddanymi kwarantannie w portalu Microsoft 365 Defender w programie Ochrona usługi Office 365 w usłudze Defender
 
 > [!NOTE]
-> Procedury dotyczące plików poddanych kwarantannie w tej sekcji są dostępne tylko dla programu Microsoft Defender dla subskrybentów usługi Office 365 Plan 1 lub Plan 2.
+> Procedury dotyczące plików poddanych kwarantannie w tej sekcji są dostępne tylko dla subskrybentów Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1 lub Plan 2.
 
-W organizacjach z programem Defender Office 365 administratorzy mogą zarządzać plikami poddanymi kwarantannie przez Sejf Załączniki dla SharePoint, OneDrive i Microsoft Teams. Aby włączyć ochronę tych plików, zobacz [Włączanie załączników Sejf załączników wiadomości SharePoint, OneDrive i Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+W organizacjach Ochrona usługi Office 365 w usłudze Defender, administratorzy mogą zarządzać plikami poddanymi kwarantannie przez użytkownika Sejf Załączniki do SharePoint, OneDrive i Microsoft Teams. Aby włączyć ochronę tych plików, zobacz [Włączanie załączników Sejf załączników wiadomości SharePoint, OneDrive i Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Wyświetlanie plików poddanych kwarantannie
 
@@ -312,7 +312,7 @@ Po odnalezieniu określonego pliku poddanego kwarantannie wybierz go, aby wyświ
 
 Po wybraniu z listy pliku poddanego kwarantannie w wysuwanych szczegółach są dostępne następujące informacje:
 
-![Wysuw szczegółów pliku poddanego kwarantannie.](../../media/quarantine-file-details-flyout.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout.png" alt-text="Wysuw szczegółów pliku poddanego kwarantannie" lightbox="../../media/quarantine-file-details-flyout.png":::
 
 - **Nazwa pliku**
 - **Adres URL** pliku: adres URL, który definiuje lokalizację pliku (na przykład w aplikacji SharePoint online).
@@ -333,13 +333,13 @@ Aby podjąć działanie na pliku, zobacz następną sekcję.
 > [!NOTE]
 > Aby pozostać w wysuwanych szczegółach i zmienić plik poddany kwarantannie, użyj strzałek w górę i w dół u góry wysuwanych.
 >
-> ![Strzałki w górę i w dół w wysuwanych szczegółach pliku poddanego kwarantannie.](../../media/quarantine-file-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="Strzałki w górę i w dół w wysuwanych szczegółach plików poddanych kwarantannie" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-files"></a>Działanie w przypadku plików poddanych kwarantannie
 
 Po wybraniu z listy pliku poddanego kwarantannie w wysuwanych szczegółach są dostępne następujące akcje:
 
-![Dostępne akcje w wysuwanych szczegółach pliku poddanego kwarantannie.](../../media/quarantine-file-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout-actions.png" alt-text="Akcje w wysuwanych szczegółach pliku poddanego kwarantannie" lightbox="../../media/quarantine-file-details-flyout-actions.png":::
 
 - ![Ikona zwolnij plik.](../../media/m365-cc-sc-check-mark-icon.png) **Plik wydania**<sup>\*</sup>: W wyświetlonym okienku wysuwu włącz lub wyłącz pliki raportów do analizy dla firmy **Microsoft**, a następnie kliknij pozycję **Zwolnij**.
 - ![Ikona zwolnij plik.](../../media/m365-cc-sc-check-mark-icon.png)
@@ -355,7 +355,7 @@ Jeśli nie zwolnisz lub nie usuniesz pliku, zostanie on usunięty po wygaśnięc
 
 Po zaznaczeniu wielu poddanych kwarantannie plików na liście (maksymalnie 100) przez kliknięcie pustego obszaru z lewej strony kolumny Temat zostanie wyświetlona lista rozwijana Akcje zbiorcze, na której możesz podjąć następujące czynności: 
 
-![Lista rozwijana akcji zbiorczych dla plików poddanych kwarantannie.](../../media/quarantine-file-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="Lista rozwijana Akcje zbiorcze dla plików w kwarantannie" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 - ![Ikona zwolnij plik.](../../media/m365-cc-sc-check-mark-icon.png) **Plik wydania**: W wyświetlonym okienku wysuwu włącz lub wyłącz pliki raportów do analizy dla firmy **Microsoft**, a następnie kliknij pozycję **Zwolnij**.
 - ![Ikona Usuń z kwarantanny.](../../media/m365-cc-sc-delete-icon.png) **Usuń z kwarantanny**: Po kliknięciu przycisku **Tak** w wyświetlonym ostrzeżeń plik zostanie natychmiast usunięty.

@@ -6,7 +6,7 @@ metadata:
   ms.author: krowley
   author: kccross
   manager: laurawi
-  ms.date: 07/14/2021
+  ms.date: 04/01/2022
   audience: ITPro
   ms.topic: faq
   ms.service: O365-seccomp
@@ -16,58 +16,58 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: Masz pytanie dotyczące sposobu działania nowych funkcji ochrony wiadomości? Tu znajdziesz odpowiedź.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 008d9d93717f97d451acec0c9470ffafbb5f659f
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 4506c54fde73b7d7c8f4e50ff8edbfca0ef44717
+  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63679813"
+  ms.lasthandoff: 04/04/2022
+  ms.locfileid: "64634982"
 title: Szyfrowanie wiadomości — często zadawane pytania
 summary: >
-  Masz pytanie dotyczące sposobu działania nowych funkcji ochrony wiadomości? Tu znajdziesz odpowiedź. Zobacz też Często zadawane pytania dotyczące ochrony danych w usłudze [Azure Information Protection](/information-protection/get-started/faqs-rms) , aby uzyskać odpowiedzi na pytania dotyczące usługi ochrony danych, usługi Azure Rights Management w usłudze Azure Information Protection.
+  Masz pytanie dotyczące sposobu działania nowych funkcji ochrony wiadomości? Tu znajdziesz odpowiedź. Zobacz też Często zadawane pytania dotyczące ochrony danych w usłudze [Azure Information Protection, aby uzyskać odpowiedzi](/information-protection/get-started/faqs-rms) na pytania dotyczące usługi ochrony danych, usługi Azure Rights Management w usłudze Azure Information Protection.
 sections:
 - name: Zignorowano
   questions:
-  - question: Co to jest Szyfrowanie wiadomości usługi Office 365 (OME)?
+  - question: Co to jest Office 365 szyfrowania wiadomości (OME)?
     answer: OME łączy funkcje szyfrowania poczty e-mail i zarządzania prawami dostępu. Funkcje zarządzania prawami są obsługiwane przez usługę Azure Information Protection.
   - question: >
       KtoTo używać OME?
-    answer: "Możesz korzystać z nowych funkcji OME pod następującymi warunkami:\n  \n- Jeśli jeszcze nigdy nie ustawiono usługi OME ani IRM dla Exchange Online w Office 365.\n\n- Jeśli masz już usługę OME i IRM, możesz wykonać te czynności, jeśli korzystasz z usługi Azure Rights Management z usługi Azure Information Protection.\n\n- Jeśli używasz programu Exchange Online usługą zarządzania prawami dostępu w usłudze Active Directory (AD RMS), nie możesz od razu włączyć tych nowych funkcji. Zamiast tego należy najpierw przeprowadzić [migrację usług AD RMS do usługi Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) . Po zakończeniu migracji możesz pomyślnie skonfigurować obiekt OME.\n\n  Jeśli zdecydujesz się nadal korzystać z lokalnych usług AD RMS z usługą Exchange Online zamiast migrowania do usługi Azure Information Protection, nie będziesz mógł korzystać z tych nowych funkcji.\n"
+    answer: "Możesz korzystać z nowych funkcji OME pod następującymi warunkami:\n  \n- Jeśli jeszcze nigdy nie ustawiono usługi OME ani IRM dla Exchange Online w Office 365.\n\n- Jeśli masz już usługę OME i IRM, możesz wykonać te czynności, jeśli korzystasz z usługi Azure Rights Management z usługi Azure Information Protection.\n\n- Jeśli używasz programu Exchange Online usługą zarządzania prawami dostępu w usłudze Active Directory (AD RMS), nie możesz od razu włączyć tych nowych funkcji. Zamiast tego należy najpierw przeprowadzić [migrację usług AD RMS do usługi Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) usługi. Po zakończeniu migracji możesz pomyślnie skonfigurować obiekt OME.\n\n  Jeśli zdecydujesz się nadal korzystać z lokalnych usług AD RMS z usługą Exchange Online zamiast migrowania do usługi Azure Information Protection, nie będziesz mógł korzystać z tych nowych funkcji.\n"
   - question: >
       Jakich subskrypcji potrzebuję, aby korzystać z nowych funkcji OME?
     answer: >
       Aby korzystać z nowych funkcji OME, potrzebujesz jednego z następujących planów:
 
 
-      - Szyfrowanie wiadomości usługi Office 365 jest oferowana w ramach usług Office 365 Enterprise E3 i E5, Microsoft 365 Enterprise E3 i E5, Microsoft 365 Business Premium, Office 365 A1, A3, A5, a Office 365 dla instytucji rządowych G3 i G5. Nie potrzebujesz dodatkowych licencji, aby uzyskać nowe funkcje ochrony obsługiwane przez usługę Azure Information Protection.
+      - Office 365 szyfrowanie wiadomości jest oferowane w ramach usług Office 365 Enterprise E3 i E5, Microsoft 365 Enterprise E3 i E5, Microsoft 365 Business Premium, Office 365 A1, A3 i A5 oraz Office 365 dla instytucji rządowych G3 i G5. Nie potrzebujesz dodatkowych licencji, aby uzyskać nowe funkcje ochrony obsługiwane przez usługę Azure Information Protection.
 
 
-      - Możesz również dodać plan 1 usługi Azure Information Protection do następujących planów, aby uzyskać nowe funkcje usługi Szyfrowanie wiadomości usługi Office 365: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard lub Office 365 Enterprise E1.
+      - Możesz również dodać usługę Azure Information Protection Plan 1 do następujących planów, aby otrzymać nowe funkcje szyfrowania wiadomości usługi Office 365: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard lub Office 365 Enterprise E1.
 
 
-      - Każdy użytkownik, który korzysta Szyfrowanie wiadomości usługi Office 365 musi posiadać licencję, aby ta funkcja została objęta funkcją.
+      - Każdy użytkownik, który korzysta Office 365 szyfrowanie wiadomości, musi mieć licencję na tę funkcję.
 
 
-      - Aby uzyskać pełną listę, zobacz [Exchange Online opisów](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) Szyfrowanie wiadomości usługi Office 365.
+      - Aby uzyskać pełną listę, zobacz [opisy Exchange Online usługi](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) do szyfrowania Office 365 wiadomości.
   - question: >
       Czy mogę używać programu Exchange Online z własnym kluczem (BYOK) w usłudze Azure Information Protection?
-    answer: "Tak! Firma Microsoft zaleca, aby przed skonfigurowaniem programu OME wykonać kroki niezbędne do skonfigurowania programu BYOK.\n  \nAby uzyskać więcej informacji na temat programu BYOK, zobacz [Planowanie i implementowanie klucza dzierżawy usługi Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key).\n  \n"
+    answer: "Tak! Firma Microsoft zaleca, aby przed skonfigurowaniem programu OME wykonać kroki niezbędne do skonfigurowania programu BYOK.\n  \nAby uzyskać więcej informacji na temat programu BYOK, zobacz [Planowanie i implementowanie klucza Information Protection dzierżawy usługi Azure](/information-protection/plan-design/plan-implement-tenant-key).\n  \n"
   - question: >
-      Czy OME i BYOK z usługą Azure Information Protection zmieniają podejście firmy Microsoft do żądań danych innych firm, takich jak wezwania?
-    answer: "L.p. Narzędzie OME i opcja podania i kontrolowania Twoich własnych kluczy szyfrowania, nazywanych BYOK, z usługi Azure Information Protection, nie były przeznaczone do odpowiadania na wezwania służące do wykonywania działań porządkowych. Standard OME z standardem BYOK dla usługi Azure Information Protection został zaprojektowany dla organizacji, w których jest skupiona na zgodności. Firma Microsoft poważnie zwraca się do innych podmiotów o dane klientów. Jako administrator usługodawca, zawsze wspieramy prywatność Twoich danych. W przypadku uzyskania wezwania zawsze próbujemy przekierować stronę trzecią bezpośrednio do Ciebie w celu uzyskania tych informacji. (Przeczytaj blog Brada Smitha: [Ochrona danych klientów przed odłogiem rządowym](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Okresowo publikujemy szczegółowe informacje o obierania przez nas żądania. Aby uzyskać więcej informacji dotyczących żądań danych innych firm, zobacz Odpowiadanie na żądania organów administracji państwowej i przepisów prawa dotyczące uzyskiwania dostępu do danych klientów w Centrum zaufania firmy Microsoft.[](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Zobacz też \"Ujawnienie danych klientów\" w Warunkach [usług online (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .\n  \n"
+      Czy OME i BYOK z usługą Azure Information Protection zmienić podejście firmy Microsoft do żądań danych innych firm, takich jak wezwania?
+    answer: "L.p. Standard OME i możliwość podania i kontrolowania Twoich własnych kluczy szyfrowania, nazywanych BYOK, z usługi Azure Information Protection nie były przeznaczone do reagowania na wezwania służące do wykonywania działań porządkowych. Narzędzie OME z standardem BYOK dla platformy Azure Information Protection zostało zaprojektowane dla organizacji skupionych na zgodności z przepisami. Firma Microsoft poważnie zwraca się do innych podmiotów o dane klientów. Jako administrator usługodawca, zawsze wspieramy prywatność Twoich danych. W przypadku uzyskania wezwania zawsze próbujemy przekierować stronę trzecią bezpośrednio do Ciebie w celu uzyskania tych informacji. (Przeczytaj blog Brada Smitha: [Ochrona danych klientów przed odłogiem rządowym](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Okresowo publikujemy szczegółowe informacje o obierania przez nas żądania. Aby uzyskać więcej informacji dotyczących żądań danych innych firm, zobacz Odpowiadanie na żądania organów administracji państwowej i przepisów prawa dotyczące uzyskiwania dostępu do danych klientów w Centrum zaufania firmy Microsoft.[](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Zobacz też \"Ujawnienie danych klientów\" w Warunkach [usług online (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .\n  \n"
   - question: >
-      Jak ta funkcja jest powiązana ze starszymi Szyfrowanie wiadomości usługi Office 365 (OME) i funkcjami usługi Zarządzanie prawami do informacji (IRM)?
-    answer: "Nowe funkcje dla Szyfrowanie wiadomości usługi Office 365 to nowa wersja istniejących rozwiązań IRM i starszych rozwiązań OME. Bardziej szczegółowe informacje można znaleźć w poniższej tabeli.\n  \n**Porównanie starszych funkcji OME, IRM i nowych funkcji OME**\n\n| Funkcja | Poprzednie wersje OME | IRM | Nowe funkcje OME |\n|:-----|:-----|:-----|:-----|\n|**Wysyłanie zaszyfrowanej wiadomości e-mail**|Tylko za pośrednictwem Exchange przepływu poczty e-mail|Użytkownik końcowy inicjowany z usługi Outlook dla Windows, Outlook dla komputerów Mac lub Outlook w sieci Web, lub za pośrednictwem Exchange przepływu poczty e-mail|Użytkownik końcowy inicjowany z usługi Outlook dla Windows, Outlook dla komputerów Mac lub Outlook w sieci Web lub za pomocą reguł przepływu poczty e-mail|\n|**Zarządzanie prawami**|-|Opcja Nie przesyłaj dalej i szablony niestandardowe|Opcja Nie przesyłaj dalej, opcja tylko szyfrowania, szablony domyślne i niestandardowe|\n|**Obsługiwany typ adresata**|Tylko adresaci zewnętrzni|Tylko adresaci wewnętrzni|Adresaci wewnętrzni i zewnętrzni|\n|**Środowisko obsługi dla adresata**|Adresaci zewnętrzni otrzymali wiadomość w formacie HTML, która została pobrana i otwarta w przeglądarce lub pobrana aplikacja mobilna.|Adresaci wewnętrzni otrzymywali zaszyfrowane wiadomości e-mail Outlook w Windows, Outlook dla komputerów Mac i Outlook w sieci Web.|Adresaci wewnętrzni i zewnętrzni odbierają wiadomości e-mail Outlook w aplikacjach Windows, Outlook dla komputerów Mac, Outlook w sieci Web, Outlook dla systemu Android i Outlook  dla systemu iOS lub za pośrednictwem portalu sieci Web, niezależnie od tego, czy znajdują się one w tej samej organizacji, czy w dowolnej organizacji. Portal OME nie wymaga osobnego pobrania.|\n|**Wniesienie pomocy technicznej do swojego klucza**|Niedostępny|Niedostępny| Obsługiwane są program BYOK|\n"
+      Jak ta funkcja jest powiązana ze starszymi Office 365 szyfrowania wiadomości (OME) i funkcji zarządzania prawami do informacji (IRM)?
+    answer: "Nowe funkcje szyfrowania wiadomości Office 365 to nowość istniejących rozwiązań IRM i starszych rozwiązań OME. Bardziej szczegółowe informacje można znaleźć w poniższej tabeli.\n  \n**Porównanie starszych funkcji OME, IRM i nowych funkcji OME**\n\n| Funkcja | Poprzednie wersje OME | IRM | Nowe funkcje OME |\n|:-----|:-----|:-----|:-----|\n|**Wysyłanie zaszyfrowanej wiadomości e-mail**|Tylko za pośrednictwem Exchange przepływu poczty e-mail|Użytkownik końcowy inicjowany z usługi Outlook dla Windows, Outlook dla komputerów Mac lub Outlook w sieci Web, lub za pośrednictwem Exchange przepływu poczty e-mail|Użytkownik końcowy inicjowany z usługi Outlook dla Windows, Outlook dla komputerów Mac lub Outlook w sieci Web lub za pomocą reguł przepływu poczty e-mail|\n|**Zarządzanie prawami**|-|Opcja Nie przesyłaj dalej i szablony niestandardowe|Opcja Nie przesyłaj dalej, opcja tylko szyfrowania, szablony domyślne i niestandardowe|\n|**Obsługiwany typ adresata**|Tylko adresaci zewnętrzni|Tylko adresaci wewnętrzni|Adresaci wewnętrzni i zewnętrzni|\n|**Środowisko obsługi dla adresata**|Adresaci zewnętrzni otrzymali wiadomość w formacie HTML, która została pobrana i otwarta w przeglądarce lub pobrana aplikacja mobilna.|Adresaci wewnętrzni otrzymywali zaszyfrowane wiadomości e-mail Outlook w Windows, Outlook dla komputerów Mac i Outlook w sieci Web.|Adresaci wewnętrzni i zewnętrzni odbierają wiadomości e-mail Outlook w aplikacjach Windows, Outlook dla komputerów Mac, Outlook w sieci Web, Outlook dla systemu Android i Outlook  dla systemu iOS lub za pośrednictwem portalu sieci Web, niezależnie od tego, czy znajdują się one w tej samej organizacji, czy w dowolnej organizacji. Portal OME nie wymaga osobnego pobrania.|\n|**Wniesienie pomocy technicznej do swojego klucza**|Niedostępny|Niedostępny| Obsługiwane są program BYOK|\n"
   - question: >
-      Jak włączyć nowe funkcje OME dla mojej organizacji?
-    answer: "Zobacz [Konfigurowanie nowych Szyfrowanie wiadomości usługi Office 365 funkcji](set-up-new-message-encryption-capabilities.md).\n  \n"
+      Jak mogę włączyć nowe funkcje OME dla mojej organizacji?
+    answer: "Zobacz [Konfigurowanie nowych funkcji Office 365 szyfrowania wiadomości](set-up-new-message-encryption-capabilities.md).\n  \n"
   - question: >
       Czy poprzednia wersja OME będzie przestarzała?
     answer: >
       Nadal możesz używać poprzedniej wersji OME, która obecnie nie będzie przestarzała. Zdecydowanie jednak zachęcamy organizacje do korzystania z nowego i ulepszonego rozwiązania OME. Jeśli jeszcze nie wdrożono jeszcze usługi OME, nie można skonfigurować nowego wdrożenia poprzedniej wersji usługi OME.
   - question: >
       Czy moja organizacja korzysta z usługi Zarządzanie prawami dostępu w usłudze Active Directory. Czy mogę korzystać z tej funkcji?
-    answer: "L.p. Jeśli używasz programu Exchange Online usługą zarządzania prawami dostępu w usłudze Active Directory (AD RMS), nie możesz od razu włączyć tych nowych funkcji. Zamiast tego należy najpierw przeprowadzić [migrację usług AD RMS do usługi Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) .\n  \n"
+    answer: "L.p. Jeśli używasz programu Exchange Online usługą zarządzania prawami dostępu w usłudze Active Directory (AD RMS), nie możesz od razu włączyć tych nowych funkcji. Zamiast tego należy najpierw przeprowadzić [migrację usług AD RMS do usługi Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) usługi.\n  \n"
   - question: >
       Moja organizacja ma wdrożenie Exchange hybrydowe. Czy mogę używać tej funkcji?
     answer: "Lokalni użytkownicy mogą wysyłać zaszyfrowane wiadomości przy Exchange Online przepływu poczty. Aby to zrobić, musisz rozsyłać wiadomości e-mail za pośrednictwem Exchange Online. Aby uzyskać więcej informacji, [zobacz Część 2. Konfigurowanie poczty tak, aby przepływała](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365) z serwera poczty e-mail do Microsoft 365.\n  \n"
@@ -87,8 +87,12 @@ sections:
     answer: >
       Tak. Maksymalny rozmiar wiadomości, w tym załączników, to 25 MB. Aby uzyskać więcej informacji, zobacz [Limity wiadomości](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
   - question: >
+      Jakie typy wiadomości obsługuje portal OME?
+    answer: >
+      Portal OME obsługuje tylko pocztę. Portal nie obsługuje innych typów wiadomości, takich jak kalendarz lub poczta głosowa.
+  - question: >
       Jakie typy plików są obsługiwane jako załączniki w chronionych wiadomościach e-mail? Czy załączniki dziedziczą zasady ochrony skojarzone z chronionymi wiadomościami e-mail?
-    answer: "Do chronionej poczty możesz dołączyć dowolny typ pliku. Z jednym wyjątkiem zasady ochrony są stosowane tylko do formatów plików wymienionych w typach plików obsługiwanych [przez klienta usługi Azure Information Protection](/information-protection/rms-client/client-admin-guide-file-types). Edytor OME nie obsługuje wersji 97–2003 następujących programów pakietu Office: Word (.doc), Excel (.xls) i PowerPoint (.ppt).\n\nJeśli jest obsługiwany format pliku, na przykład plik programu Word Excel, PowerPoint, plik jest zawsze chroniony, nawet po pobraniu załącznika przez adresata. Na przykład załóżmy, że załącznik jest chroniony przez pole Nie przesyłaj dalej. Oryginalny adresat pobierze plik, utworzy wiadomość do nowego adresata i dołączy plik. Gdy nowy adresat otrzyma plik, adresat nie będzie mógł otworzyć chronionego pliku.\n  \n"
+    answer: "Do chronionej poczty możesz dołączyć dowolny typ pliku. Z jednym wyjątkiem zasady ochrony są stosowane tylko do formatów plików wymienionych w typach plików obsługiwanych przez Information Protection [Azure](/information-protection/rms-client/client-admin-guide-file-types). Edytor OME nie obsługuje wersji 97–2003 następujących programów pakietu Office: Word (.doc), Excel (.xls) i PowerPoint (.ppt).\n\nJeśli jest obsługiwany format pliku, na przykład plik programu Word Excel, PowerPoint, plik jest zawsze chroniony, nawet po pobraniu załącznika przez adresata. Na przykład załóżmy, że załącznik jest chroniony przez pole Nie przesyłaj dalej. Oryginalny adresat pobierze plik, utworzy wiadomość do nowego adresata i dołączy plik. Gdy nowy adresat otrzyma plik, adresat nie będzie mógł otworzyć chronionego pliku.\n  \n"
   - question: >
       Czy załączniki w plikach PDF są obsługiwane?
     answer: >
@@ -111,7 +115,7 @@ sections:
       ```
 
 
-      Szyfrowanie plików PDF pozwala chronić poufne dokumenty PDF za pośrednictwem bezpiecznej komunikacji lub bezpiecznej współpracy. W przypadku Outlook poczty e-mail wiadomości i niechronione załączniki PDF dziedziczą zasady OME ochrony przed utratą danych (DLP, data loss prevention) lub regułę przepływu poczty w Exchange Online. Ponadto jeśli użytkownik Outlook w sieci Web dołącza niechroniony dokument PDF i stosuje ochronę wiadomości, wiadomość dziedziczy ochronę wiadomości. Zaszyfrowane załączniki można otwierać tylko w aplikacjach, które obsługują chronione pliki PDF (na przykład w portalu OME i w przeglądarce Azure Information Protection Viewer).
+      Szyfrowanie plików PDF pozwala chronić poufne dokumenty PDF za pośrednictwem bezpiecznej komunikacji lub bezpiecznej współpracy. W przypadku Outlook poczty e-mail wiadomości i niechronione załączniki PDF dziedziczą zasady OME ochrony przed utratą danych (DLP, data loss prevention) lub regułę przepływu poczty w Exchange Online. Ponadto jeśli użytkownik Outlook w sieci Web dołącza niechroniony dokument PDF i stosuje ochronę wiadomości, wiadomość dziedziczy ochronę wiadomości. Użytkownicy mogą otwierać zaszyfrowane załączniki tylko w aplikacjach, które obsługują chronione pliki PDF (na przykład w portalu OME i usłudze Azure Information Protection Viewer).
 
 
       > [!IMPORTANT]
@@ -201,7 +205,7 @@ sections:
       - Przy użyciu aplikacji mobilnej nie można otwierać załączników do wiadomości e-mail odbieranych na urządzeniach Outlook przenośnych.
 
 
-      - W Outlook Win32 użytkownicy przypisani do udostępnionej skrzynki pocztowej za pośrednictwem grupy zabezpieczeń z obsługą poczty e-mail zobaczą wiadomość z powiadomieniem, aby wyświetlić zaszyfrowaną pocztę przy użyciu przeglądarki internetowej.  Aby można było wyświetlić zaszyfrowaną pocztę bezpośrednio w systemie Outlook Win32, klienci ujednoliconej etykiet usługi Outlook i usługi Azure Information Protection wymagają bezpośredniego przypisania użytkownika do udostępnionej skrzynki pocztowej z włączonymi uprawnieniami pełnego dostępu i automatycznym mapowaniem. Automatyczne mapowanie jest domyślnie włączone dla Exchange Online.
+      - W Outlook Win32 użytkownicy przypisani do udostępnionej skrzynki pocztowej za pośrednictwem grupy zabezpieczeń z obsługą poczty e-mail zobaczą wiadomość z powiadomieniem, aby wyświetlić zaszyfrowaną pocztę przy użyciu przeglądarki internetowej.  Aby wyświetlić zaszyfrowaną pocztę bezpośrednio w systemie Outlook Win32, usługa Outlook i klienci ujednoliconego mapowania usługi Azure Information Protection wymagają bezpośredniego przypisania użytkownika do udostępnionej skrzynki pocztowej z włączonymi uprawnieniami pełnego dostępu i automatycznym mapowaniem. Automatyczne mapowanie jest domyślnie włączone dla Exchange Online.
 
 
       **Aby przypisać użytkownika do udostępnionej skrzynki pocztowej**

@@ -1,5 +1,5 @@
 ---
-title: Informacje o programie Microsoft Defender dla Office 365 próbnej
+title: Informacje o Ochrona usługi Office 365 w usłudze Microsoft Defender próbnej
 f1.keywords: ''
 ms.author: chrisda
 author: chrisda
@@ -18,27 +18,27 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
-description: Administratorzy mogą dowiedzieć się więcej o trybie próbnym programu Microsoft Defender dla Office 365
-ms.openlocfilehash: 40ad151dfa4ee26bf1e6177dda170cc2998c7c7e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Administratorzy mogą dowiedzieć się więcej o trybie próbnym usługi Ochrona usługi Office 365 w usłudze Microsoft Defender
+ms.openlocfilehash: f1bb280502908143171cbc7b08df7080d0040df2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683872"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477110"
 ---
-# <a name="about-the-microsoft-defender-for-office-365-trial"></a>Informacje o programie Microsoft Defender dla Office 365 próbnej
+# <a name="about-the-microsoft-defender-for-office-365-trial"></a>Informacje o Ochrona usługi Office 365 w usłudze Microsoft Defender próbnej
 
 > [!IMPORTANT]
-> Szybko rozpoczynaj pracę z naszym łatwym w użyciu podręcznikiem do obsługi wersji próbnej programu [Microsoft Defender dla systemu Office 365](trial-playbook-defender-for-office-365.md). Ten podręcznik pomoże Ci w jak najlepiej korzystać z bezpłatnej wersji próbnej, pokazując, jak chronić organizację za pomocą programu Microsoft Defender dla systemu Office 365.
+> Wprowadzenie dzięki naszemu łatwemu w użyciu podręcznikowi do [obsługi wersji Ochrona usługi Office 365 w usłudze Microsoft Defender](trial-playbook-defender-for-office-365.md). Ten podręcznik pomoże Ci w jak najlepiej korzystać z bezpłatnej wersji próbnej, pokazując, jak chronić organizację przed Ochrona usługi Office 365 w usłudze Microsoft Defender.
 
-Usługa Microsoft Defender for Office 365 chroni organizację przed złośliwymi zagrożeniami, które mogą być wyświetlane przez wiadomości e-mail, linki (adresy URL) i narzędzia do współpracy. Program Defender for Office 365 oferuje:
+Ochrona usługi Office 365 w usłudze Microsoft Defender chroni organizację przed złośliwymi zagrożeniami, które są wyświetlane za pomocą wiadomości e-mail, linków (adresów URL) i narzędzi do współpracy. Ochrona usługi Office 365 w usłudze Defender zawiera:
 
 - **Zasady ochrony przed zagrożeniami**: Zdefiniuj zasady ochrony przed zagrożeniami, aby ustawić odpowiedni poziom ochrony dla organizacji.
-- **Raporty**: Wyświetlaj raporty w czasie rzeczywistym, aby monitorować program Defender Office 365 wydajności w organizacji.
+- **Raporty**: Wyświetlaj raporty w czasie rzeczywistym, aby monitorować Ochrona usługi Office 365 w usłudze Defender wydajności w organizacji.
 - **Możliwości analizy zagrożeń i reagowania** na nie: Używaj narzędzi wiodących do badania, zrozumienia, symulowania i zapobiegania zagrożeniam.
 - **Funkcje automatycznego badania i reagowania**: Oszczędzaj czas i wysiłku podczas badań i ograniczania zagrożeń.
 
-Wersja próbna programu Microsoft Defender Office 365 to prosty sposób na bezpłatne wypróbowanie możliwości usługi Defender dla systemu Office 365 Plan 2 po zaledwie kilku kliknięciach. Te funkcje wysokiego poziomu opisano w poniższej tabeli:
+Wersja Ochrona usługi Office 365 w usłudze Microsoft Defender to prosty sposób na bezpłatne wypróbowanie możliwości aplikacji Ochrona usługi Office 365 w usłudze Defender Plan 2 po zaledwie kilku kliknięciach. Te funkcje wysokiego poziomu opisano w poniższej tabeli:
 
 |Funkcja|Opis|
 |---|---|
@@ -50,45 +50,45 @@ Wersja próbna programu Microsoft Defender Office 365 to prosty sposób na bezp�
 |[Zautomatyzowane badania i odpowiedzi (AIR)](office-365-air.md)<sup>\*</sup>|Automatycznie lokalizuj i reagozuj obiekty zagrożeń w przypadku wyzwolenia alertów.|
 |[Szkolenie z symeny ataków](attack-simulation-training.md)<sup>\*</sup>|Szkolenie użytkowników w celu odpowiedniego identyfikowania ataków wyłudzających informacje i odpowiadania na nie.|
 |[Widoki kampanii](campaigns.md)<sup>\*</sup>|Badanie i reagowanie na dużą skalę złośliwych wiadomości e-mail.|
-|[Raporty z użyciem programu Defender Office 365 możliwości](view-reports-for-mdo.md)|Wyświetlaj raporty, w tym informacje na temat stanu ochrony przed zagrożeniami, ochrony przed zagrożeniami za pośrednictwem adresów URL, opóźnień poczty i nie tylko.|
+|[Raporty korzystające Ochrona usługi Office 365 w usłudze Defender funkcji](view-reports-for-mdo.md)|Wyświetlaj raporty, w tym informacje na temat stanu ochrony przed zagrożeniami, ochrony przed zagrożeniami za pośrednictwem adresów URL, opóźnień poczty i nie tylko.|
 |[Priorytetowa ochrona konta](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Użytkownicy zidentyfikowani jako konta o priorytecie są tagowane w alertach, raportach i badaniach, aby się wyróżniali. W filtrach można także użyć tagu Priority (Priorytet).|
 
-<sup>\*</sup>Ta funkcja jest wyłącznie na platformie Defender Office 365 Plan 2.
+<sup>\*</sup>Ta funkcja jest dostępna wyłącznie Ochrona usługi Office 365 w usłudze Defender Plan 2.
 
-## <a name="set-up-a-defender-for-office-365-trial"></a>Konfigurowanie usługi Defender dla Office 365 próbnej
+## <a name="set-up-a-defender-for-office-365-trial"></a>Konfigurowanie wersji Ochrona usługi Office 365 w usłudze Defender próbnej
 
-Wersja próbna umożliwia organizacjom łatwe konfigurowanie i konfigurowanie programu Defender na Office 365 możliwości. Podczas instalacji zasady, które są przeznaczone wyłącznie dla usługi Defender dla usługi Office 365 (w szczególności załączniki Sejf wiadomości [e-mail](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Sejf[, linki](safe-attachments.md) do wiadomości e-mail i wiadomości [Microsoft Teams](safe-links.md) oraz ochrona przed personifikacjami w zasadach ochrony przed wyłudzaniem informacji) są stosowane przy użyciu szablonu Standardowe w celu ustawienia wstępnie ustawionych zasad [zabezpieczeń.](preset-security-policies.md)
+Wersja próbna umożliwia organizacjom łatwe konfigurowanie i konfigurowanie międzynarodowych Ochrona usługi Office 365 w usłudze Defender biznesowych. Podczas instalacji są dostępne wyłącznie zasady wyłącznie dla Ochrona usługi Office 365 w usłudze Defender (w szczególności do załączników wiadomości e-mail programu [Sejf](safe-attachments.md), linków do wiadomości [e-mail Sejf wiadomości e-mail](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) i wiadomości [Microsoft Teams](safe-links.md) oraz ochrony przed personifikacjami w zasadach ochrony przed wyłudzaniem informacji ) są stosowane do wstępnie ustawionych zasad zabezpieczeń przy użyciu [szablonu Standardowy](preset-security-policies.md).
 
 Domyślnie te zasady są zakresowane do wszystkich użytkowników w organizacji, ale podczas konfigurowania wersji próbnej lub po jej zakończeniu możesz zmienić przypisanie zasad do konkretnych użytkowników.
 
 > [!NOTE]
-> Istniejące zasady ochrony przed spamem są prawdopodobnie skonfigurowane pod akcją Przenieś wiadomość do folderu Wiadomości-śmieci, aby mieć pewność, że werdykt spamu jest zasadą ochrony przed spamem. Szablon Standardowy dla wstępnie ustawionych zasad zabezpieczeń używa akcji  Kwarantanna wiadomości w celu zabezpieczenia przed spamem o dużej pewności, a wstępnie ustawione zasady zabezpieczeń są zawsze stosowane przed zastosowaniem niestandardowych zasad ochrony przed spamem lub domyślnymi zasadami ochrony przed spamem. Aby uzyskać więcej informacji na temat ustawień domyślnych, standardowych i ścisłych, zobacz Zalecane ustawienia usług [EOP i Microsoft Defender w Office 365 zabezpieczeń](recommended-settings-for-eop-and-office365.md).
+> Istniejące zasady ochrony przed spamem są prawdopodobnie skonfigurowane pod akcją Przenieś wiadomość do folderu Wiadomości-śmieci, aby mieć pewność, że werdykt spamu jest zasadą ochrony przed spamem. Szablon Standardowy dla wstępnie ustawionych zasad zabezpieczeń używa akcji  Kwarantanna wiadomości w celu zabezpieczenia przed spamem o dużej pewności, a wstępnie ustawione zasady zabezpieczeń są zawsze stosowane przed zastosowaniem niestandardowych zasad ochrony przed spamem lub domyślnymi zasadami ochrony przed spamem. Aby uzyskać więcej informacji na temat ustawień domyślnych, standardowych i ścisłych, zobacz Zalecane ustawienia dla Ochrona usługi Office 365 w usłudze Microsoft Defender [EOP](recommended-settings-for-eop-and-office365.md).
 
 Inne obciążenia pracą są również dostępne w celu ochrony (na przykład załączniki Sejf załączników do SharePoint[, OneDrive oraz](mdo-for-spo-odb-and-teams.md) linków Microsoft Teams i Sejf do obsługiwanych Office 365 [aplikacji](safe-links.md#safe-links-settings-for-office-365-apps).
 
-Podczas konfigurowania wersji próbnej funkcje reakcji, które są dostępne wyłącznie w programie Defender dla programu Office 365 (plan 2), na przykład [air](office-365-air.md) i [Eksplorator](threat-explorer.md) zagrożeń, są również ustawione dla całej organizacji. Określanie zakresu zasad nie jest wymagane.
+Podczas konfigurowania wersji próbnej funkcje reagowania dostępne wyłącznie Ochrona usługi Office 365 w usłudze Defender Plan 2 (na przykład [PROGRAM AIR](office-365-air.md) i Eksplorator zagrożeń są również ustawione dla [](threat-explorer.md) całej organizacji. Określanie zakresu zasad nie jest wymagane.
 
 ## <a name="licensing"></a>Licencjonowanie
 
-W ramach konfiguracji wersji próbnej program Defender for Office 365 jest automatycznie stosowany do organizacji. Licencje są bezpłatne przez pierwsze 90 dni.
+W ramach konfiguracji wersji próbnej licencje Ochrona usługi Office 365 w usłudze Defender są automatycznie stosowane do organizacji. Licencje są bezpłatne przez pierwsze 90 dni.
 
 Na karcie licencjonowania dla wersji próbnej są podane następujące informacje:
 
-![Karta licencjonowania w programie Microsoft Defender dla Office 365 próbnej.](../../media/mdo-trial-licensing-card.png)
+:::image type="content" source="../../media/mdo-trial-licensing-card.png" alt-text="Karta Licencjonowanie w wersji Ochrona usługi Office 365 w usłudze Microsoft Defender próbnej" lightbox="../../media/mdo-trial-licensing-card.png":::
 
 - **Sekcja Typ** użycia:
-  - **Wersja** próbna: liczba wersji próbnej usługi Defender Office 365 licencji dostępnych do użycia.
+  - **Wersja** próbna: liczba licencji Ochrona usługi Office 365 w usłudze Defender wersji próbnej, których możesz używać.
 
     > [!NOTE]
     > W innych lokalizacjach może być dostępna wartość 300 dla liczby dostępnych licencji wersji próbnej. Ta wartość jest niepoprawna (chyba że organizacja ma dokładnie 300 użytkowników). Liczba dostępnych licencji wersji próbnych odpowiada rozmiarowi Twojej organizacji, a nie dowolnej wartości 300.
 
-  - **Zapłacono**: liczba płatnych licencji Office 365 Defender (jeśli jest).
+  - **Zapłacono**: liczba płatnych Ochrona usługi Office 365 w usłudze Defender licencji (jeśli są).
 
-- **Sekcja** Użycia: Ilu Twoich użytkowników jest objętych zasadami dostępu do usługi Defender Office 365 użytkowników.
+- **Sekcja** Użycie: ilu Twoich użytkowników podlega Ochrona usługi Office 365 w usłudze Defender zasad.
   - **Wykrywanie & odpowiedzi**: Całkowita liczba użytkowników uwzględnionych w następujących scenariuszach:
     - Podczas okresu próbnego zasady te są określone dla konkretnych użytkowników.
     - Masz niestandardowe ustawienia dotyczące konkretnych użytkowników.
-  - **Pełna ochrona**: Całkowita liczba użytkowników chronionych przez program Defender dla funkcji Office 365 Plan 2 (AIR, Eksplorator zagrożeń, szkolenia dotyczące symulacyjnych ataków itp.).
+  - **Pełna ochrona**: Całkowita liczba użytkowników chronionych za pomocą funkcji planu Ochrona usługi Office 365 w usłudze Defender Plan 2 (air, Eksplorator zagrożeń, szkolenie z symulacyjnych ataków itp.).
 
 ## <a name="permissions"></a>Uprawnienia
 
@@ -100,39 +100,39 @@ Po rozpoczęciu okresu próbnego może upłynieć do 2 godzin, aż zmiany i aktu
 
 ## <a name="availability"></a>Dostępność
 
-Wersja próbna usługi Defender for Office 365 jest stopniowo wprowadzana u istniejących klientów, którzy spełniają określone kryteria i nie mają istniejących licencji usługi Defender dla usługi Office 365 Plan 2 (uwzględnionych w ich subskrypcji lub jako dodatek).
+Wersja Ochrona usługi Office 365 w usłudze Defender jest stopniowo wprowadzana u istniejących klientów, którzy spełniają określone kryteria i nie mają istniejących licencji usługi Ochrona usługi Office 365 w usłudze Defender Plan 2 (uwzględnionych w ich subskrypcji lub jako dodatek).
 
 ## <a name="terms-and-conditions"></a>Warunki i postanowienia
 
-Aby uzyskać więcej informacji, zobacz [Program Microsoft Defender Office 365 warunki & próbnego](defender-for-office-365-trial-terms-and-conditions.md).
+Aby uzyskać więcej informacji, [Ochrona usługi Office 365 w usłudze Microsoft Defender postanowienia dotyczące wersji & próbnej](defender-for-office-365-trial-terms-and-conditions.md).
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="q-how-do-i-extend-the-trial"></a>P: Jak przedłużyć okres próbny?
+### <a name="q-how-do-i-extend-the-trial"></a>P: Jak mogę przedłużenie okresu próbnego?
 
 O: Zobacz [Przedłużanie okresu próbnego](/microsoft-365/commerce/try-or-buy-microsoft-365#extend-your-trial).
 
 ### <a name="q-what-happens-to-my-data-after-the-trial-expires"></a>P: Co się stanie z moimi danymi po wygaśnięciu wersji próbnej?
 
-O: Gdy wersja próbna wygaśnie, przez 30 dni będziesz mieć dostęp do danych wersji próbnej (danych z funkcji usługi Defender dla Office 365, których wcześniej nie masz). Po tym 30-dniowym okresie wszystkie zasady i dane, które były skojarzone z programem Defender dla Office 365 próbnej, zostaną usunięte.
+O: Gdy wersja próbna wygaśnie, przez 30 dni będziesz mieć dostęp do danych wersji próbnej (danych z funkcji w programie Ochrona usługi Office 365 w usłudze Defender, których wcześniej nie masz). Po tym 30-dniowym okresie wszystkie zasady i dane, które zostały skojarzone z Ochrona usługi Office 365 w usłudze Defender próbną, zostaną usunięte.
 
-### <a name="q-how-many-times-can-i-use-the-defender-for-office-365-trial-in-my-organization"></a>P. Ile razy mogę używać programu Defender na Office 365 próbnej w mojej organizacji?
+### <a name="q-how-many-times-can-i-use-the-defender-for-office-365-trial-in-my-organization"></a>P. Ile razy mogę używać wersji próbnej Ochrona usługi Office 365 w usłudze Defender organizacji?
 
-O: Maksymalnie 2 razy. Jeśli twoja pierwsza wersja próbna wygaśnie, musisz poczekać co najmniej 30 dni po dacie wygaśnięcia, zanim będzie można ponownie zarejestrować się w programie Defender Office 365 próbnym. Po drugiej próbie nie możesz zarejestrować się do innej wersji próbnej.
+O: Maksymalnie 2 razy. Jeśli twoja pierwsza wersja próbna wygaśnie, musisz poczekać co najmniej 30 dni po dacie wygaśnięcia, zanim będzie można ponownie zarejestrować się w Ochrona usługi Office 365 w usłudze Defender próbnym. Po drugiej próbie nie możesz zarejestrować się do innej wersji próbnej.
 
-## <a name="learn-more-about-defender-for-office-365"></a>Dowiedz się więcej o uchcie programu Defender dla Office 365
+## <a name="learn-more-about-defender-for-office-365"></a>Dowiedz się więcej o Ochrona usługi Office 365 w usłudze Defender
 
-Program Defender Office 365 pomaga organizacjom zabezpieczyć swoje przedsiębiorstwa, oferując pełną gamę możliwości.
+Ochrona usługi Office 365 w usłudze Defender przedsiębiorstwa, oferując pełną gamę możliwości.
 
-Więcej informacji na temat programu Defender dla Office 365 znajdziesz w tym [interakcyjny przewodniku](https://aka.ms/MS365D.InteractiveGuide).
+Więcej informacji na temat Ochrona usługi Office 365 w usłudze Defender znajdziesz w tym [interakcyjny przewodniku](https://aka.ms/MS365D.InteractiveGuide).
 
-![Microsoft Defender dla Office 365 diagram koncepcyjny.](../../media/microsoft-defender-for-office-365.png)
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="Diagram Ochrona usługi Office 365 w usłudze Microsoft Defender koncepcyjny" lightbox="../../media/microsoft-defender-for-office-365.png":::
 
 ### <a name="prevention"></a>Zapobieganie
 
 Zaawansowany stos filtrowania zapobiega rozmaitym atakom opartym na woluminie i celom, w tym biznesowym utracie poczty e-mail, wyłudzaniu poświadczeń, oprogramowaniu wymuszającemu okup i zaawansowanemu oprogramowaniu złośliwym.
 
-- [Zasady ochrony przed wyłudzaniem informacji: Ustawienia wyłączności w programie Defender dla Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+- [Zasady ochrony przed wyłudzaniem informacji: Ustawienia wyłączności w programie Ochrona usługi Office 365 w usłudze Defender](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 - [Sejf załączników](safe-attachments.md)
 - [Bezpieczne linki](safe-links.md)
 
@@ -140,14 +140,14 @@ Zaawansowany stos filtrowania zapobiega rozmaitym atakom opartym na woluminie i 
 
 Wiodąca w branży AI wykrywa złośliwą i podejrzaną zawartość oraz skoreluje wzorce ataków, aby zidentyfikować kampanie mające na celu ochronę przed złośliwymi reklamami.
 
-- [Widoki kampanii w programie Microsoft Defender dla Office 365](campaigns.md)
+- [Widoki kampanii w ochronie usługi Office 365 w usłudze Microsoft Defender](campaigns.md)
 
 ### <a name="investigation-and-hunting"></a>Badania i łowiec
 
 Zaawansowane środowisko pomaga identyfikować, priorytetyzować i badać zagrożenia, dzięki zaawansowanym możliwościom wyszukiwania w celu śledzenia ataków na Office 365.
 
 - [Wykrywanie w Eksploratorze zagrożeń i w czasie rzeczywistym](threat-explorer.md)
-- [Raporty w czasie rzeczywistym w programie Defender dla Office 365](view-reports-for-mdo.md)
+- [Raporty w czasie rzeczywistym w programie Ochrona usługi Office 365 w usłudze Defender](view-reports-for-mdo.md)
 - [Śledzenie zagrożeń — nowe i godne uwagi](threat-trackers.md)
 - Integracja [z Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -155,20 +155,20 @@ Zaawansowane środowisko pomaga identyfikować, priorytetyzować i badać zagro�
 
 Rozbudowane funkcje reagowania na incydenty i automatyzacji zwiększaj skuteczność i wydajność Twojego zespołu zabezpieczeń.
 
-- [Zautomatyzowane badania i odpowiedzi (AIR) w programie Microsoft Defender dla Office 365](office-365-air.md)
+- [Zautomatyzowane badania i odpowiedzi (AIR) w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](office-365-air.md)
 
 ### <a name="awareness-and-training"></a>Świadomość i szkolenia
 
 Rozbudowane funkcje symulacyjne i szkoleniowe oraz zintegrowane środowisko w aplikacjach klienckich, które rozbudowuje świadomość użytkowników.
 
-- [Wprowadzenie do korzystania ze szkolenia symulacyjnego w zakresie ataków](attack-simulation-training-get-started.md)
+- [Wprowadzenie z użyciem szkolenia symulacyjnego w zakresie ataków](attack-simulation-training-get-started.md)
 
 ### <a name="security-posture"></a>Postawa zabezpieczeń
 
 Zalecane szablony i szczegółowe informacje o konfiguracji ułatwiają klientom uzyskiwanie i bezpieczeństwo.
 
-- [Wstępnie ustawione zasady zabezpieczeń w usługach EOP i Microsoft Defender dla systemu Office 365](preset-security-policies.md)
-- [Analizator konfiguracji do zasad ochrony w usługach EOP i Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md).
+- [Wstępne ustawienie zasad zabezpieczeń w usłudze EOP i ochronie usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md)
+- [Analizator konfiguracji do zasad ochrony w usługach EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender](configuration-analyzer-for-security-policies.md).
 
 ## <a name="give-feedback"></a>Opinie
 

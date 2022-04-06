@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse uzyskaj odpowiedzi na często zadawane pytania dotyczące Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 4dcd34b00aed7a28edb2e8ad9b2519940c90fcef
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 84339dd1e4dfe57765200dba42b8d8a954a41f49
+  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63680781"
+  ms.lasthandoff: 04/04/2022
+  ms.locfileid: "64635048"
 title: Microsoft 365 Lighthouse często zadawane pytania (często zadawane pytania)
 summary: >
   Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące Microsoft 365 Lighthouse.
@@ -32,32 +32,32 @@ summary: >
 sections:
 - name: Zignorowano
   questions:
-  - question: Co to jest Microsoft 365 Lighthouse?
+  - question: Co to jest usługa Microsoft 365 Lighthouse?
     answer: >
-      Microsoft 365 Lighthouse to portal administracyjny, który ułatwia zarządzanym dostawcom usług (MSP) zabezpieczanie urządzeń, danych i użytkowników oraz zarządzanie nimi na skalę dla klientów małych i średnich firm korzystających z usługi Microsoft 365 Business Premium lub Microsoft 365 E3.  Latarnia morska upraszcza dołączanie dzierżawców, zalecając plan bazowy konfiguracji zabezpieczeń dostosowany do wymagań SPP i udostępniając widoki dla wielu dzierżaw we wszystkich środowiskach klientów. Aby uzyskać więcej informacji, zobacz [Omówienie Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+      Microsoft 365 Lighthouse to portal administracyjny, który ułatwia zarządzanym dostawcom usług (MSP) zabezpieczanie urządzeń, danych i użytkowników oraz zarządzanie nimi na skalę dla klientów małych i średnich firm korzystających z usług firmy Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business. Latarnia morska upraszcza dołączanie dzierżawców, zalecając plan bazowy konfiguracji zabezpieczeń dostosowany do wymagań SPP i udostępniając widoki dla wielu dzierżaw we wszystkich środowiskach klientów. Aby uzyskać więcej informacji, zobacz [Omówienie Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
   - question: Jaka jest różnica między usługami Microsoft 365 Lighthouse Azure Lighthouse?
     answer: >
-      Microsoft 365 Lighthouse się na usługach Microsoft 365 a nie na platformie Azure. Chociaż usługa Azure Lighthouse jest wbudowana w Portal Azure i umożliwia partnerom IT zarządzanie wieloma dzierżawami platformy Azure, Microsoft 365 Lighthouse to autonomiczny portal, który ułatwia msp zarządzanie wieloma dzierżawami Microsoft 365 Business Premium lub Microsoft 365 E3 klientów. Aby uzyskać więcej informacji Microsoft 365 Lighthouse, zobacz [Omówienie Microsoft 365 Lighthouse](m365-lighthouse-overview.md). Aby uzyskać więcej informacji o usłudze Azure Lighthouse, zobacz [Co to jest usługa Azure Lighthouse?](/azure/lighthouse/overview)
+      Microsoft 365 Lighthouse się na usługach Microsoft 365 a nie na platformie Azure. Chociaż usługa Azure Lighthouse jest wbudowana w usługę Azure Portal i umożliwia partnerom IT zarządzanie wieloma dzierżawami platformy Azure, Microsoft 365 Lighthouse to autonomiczny portal, który ułatwia msi Microsoft 365 Business Premium zarządzanie wieloma Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business dzierżaw klientów. Aby uzyskać więcej informacji Microsoft 365 Lighthouse, zobacz [Omówienie Microsoft 365 Lighthouse](m365-lighthouse-overview.md). Aby uzyskać więcej informacji o usłudze Azure Lighthouse, zobacz [Co to jest usługa Azure Lighthouse?](/azure/lighthouse/overview)
   - question: Ile Microsoft 365 Lighthouse?
     answer: >
-      Korzystanie z latarni morskiej nie wiąże się z żadnymi dodatkowymi kosztami w celu zarządzania Microsoft 365 Business Premium usługami i Microsoft 365 E3 połączonymi urządzeniami. Lighthouse jest dostępna dla klientów z obsługą małych i średnich firm, które mają relację Dostawca rozwiązań w chmurze (CSP) z klientami. Należy pamiętać, że dostawcy pośredni nie są obecnie obsługiwani przez firmę Lighthouse. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+      Z używaniem usługi Lighthouse do zarządzania usługami Microsoft 365 Business Premium, Microsoft 365 E3 usługami i połączonymi urządzeniami nie są Windows 365 Business dodatkowe koszty. Lighthouse jest dostępna dla klientów z obsługą małych i średnich firm, które mają relację Dostawca rozwiązań w chmurze (CSP) z klientami. Należy pamiętać, że dostawcy pośredni nie są obecnie obsługiwani przez firmę Lighthouse. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: Jakie są wymagania dotyczące korzystania z Microsoft 365 Lighthouse?
     answer: >
       Aby uzyskać listę bieżących wymagań, zobacz [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: W których krajach i regionach są Microsoft 365 Lighthouse dostępne?
     answer: >
-      Latarnia morska jest dostępna we wszystkich krajach, Microsoft 365 jest dostępna, z wyjątkiem Chin i Japonii. Jednak funkcje w latarni morskiej, takie jak zarządzanie urządzeniami i zarządzanie zagrożeniami, korzystają z usługi Microsoft Intune, a zarządzanie użytkownikami opiera się na usłudze Azure Active Directory (Azure AD), a w niektórych krajach i regionach usługa Intune i usługa Azure AD mogą być niedostępne. Aby uzyskać pełną listę usług Microsoft 365, Azure AD i Intune, zobacz [Dostępność za międzynarodowy](https://www.microsoft.com/microsoft-365/business/international-availability).
+      Latarnia morska jest dostępna we wszystkich krajach, Microsoft 365 jest dostępna, z wyjątkiem Chin i Japonii. Jednak funkcje w usłudze Lighthouse, takie jak zarządzanie urządzeniami i zarządzanie zagrożeniami, korzystają z usługi Microsoft Intune, a zarządzanie użytkownikami jest zależne od usługi Azure Active Directory (Azure AD), a usługi Intune i Azure AD mogą być niedostępne w niektórych krajach i regionach. Aby uzyskać pełną listę usług Microsoft 365, Azure AD i Intune, zobacz [Dostępność za pomocą rozwiązań międzynarodowych](https://www.microsoft.com/microsoft-365/business/international-availability).
 
 
       Latarnia morska nie jest dostępna w chmurach narodowych.
-  - question: Jak zapisać się na Microsoft 365 Lighthouse?
+  - question: Jak mogę się w celu Microsoft 365 Lighthouse?
     answer: >
       Aby zarejestrować się w lighthouse, musisz zarejestrować się w programie CSP. Obecnie nie możemy obsługiwać dostawców pośrednich. Aby uzyskać instrukcje dotyczące rejestracji, zobacz Logowanie [się w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). Aby dowiedzieć się więcej o programie CSP, zobacz omówienie [Dostawca rozwiązań w chmurze programu.](/partner-center/csp-overview)
   - question: Rejestracja zakończyła się, dlatego nie widzę żadnych danych dzierżawy klienta?
     answer: >
       Załadowanie danych dzierżawcy klienta w ramach usługi Lighthouse może potrwać do 48 godzin. Jeśli minąć więcej niż 48 godzin od momentu ukończenia dołączania, skontaktuj się z naszym zespołem pomocy technicznej, aby uzyskać pomoc. Musisz je o tym wiedzieć po zakończeniu dołączania oraz udostępnić odpowiednie zrzuty ekranu i dzienniki. Aby uzyskać więcej informacji, [zobacz Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: Dlaczego widzę dane dla niektórych dzierżaw klientów, ale nie innych?
-    answer: "\nAby dane dzierżawy klientów pokazywały się w lighthouse, msp muszą ustanowić z klientami za pośrednictwem Centrum partnerskiego uprawnienia administratora delegowanego (DAP) lub szczegółowe delegowane uprawnienia administratora. Aby uzyskać więcej informacji, zobacz [Żądanie relacji odsprzedawcy z klientem w Centrum partnerskim](/partner-center/request-a-relationship-with-a-customer). Dzierżawcy muszą mieć co najmniej jedną Microsoft 365 Business Premium lub Microsoft 365 E3 i mniej niż 1000 licencjonowanych użytkowników w swojej dzierżawie. Aby uzyskać więcej informacji, zobacz [Wymagania Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) i [Microsoft 365 Lighthouse przegląd strony Dzierżawy](m365-lighthouse-tenants-page-overview.md).\n"
+    answer: "Aby dane dzierżawy klientów pokazywały się w lighthouse, msp muszą ustanowić dostęp delegowany, aby zarządzać dzierżawą klienta. Aby można było dołączać klientów do usługi Lighthouse, wymagane są delegowane uprawnienia administratora (DAP, Delegated Admin Privileges). W celu zapewnienia bardziej bezpiecznego dostępu delegowanego zalecamy nawiązanie z klientami szczegółowych, delegowanych uprawnień administratora (GDAP, Granular Delegated Admin Privileges). Zobacz [Omówienie uprawnień w programie Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md), aby uzyskać dodatkowe informacje o tym, jakie role dzierżawy delegowanej i partnerskiej są zalecane do korzystania z usługi Lighthouse. Podczas gdy usługi DAP i GDAP są współistniene, GDAP będą miały pierwszeństwo dla klientów, dla których są dostępne oba modele. Wkrótce klienci, którzy mają tylko GDAP (bez protokołu DAP), będą mogli wdrapać się do latarni morskiej. Aby uzyskać więcej informacji na temat dostępu delegowanego, zobacz [Żądanie relacji odsprzedawcy z klientem w Centrum partnerskim](/partner-center/request-a-relationship-with-a-customer). Dzierżawcy muszą mieć co najmniej jedną licencję usługi Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business oraz mniej niż 1000 licencjonowanych użytkowników w swojej dzierżawie. Aby uzyskać więcej informacji, zobacz [Wymagania Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) i [Microsoft 365 Lighthouse przegląd strony Dzierżawy](m365-lighthouse-tenants-page-overview.md).  \n"
   - question: Co zrobić, jeśli nie chcę widzieć konkretnych dzierżaw w u Microsoft 365 Lighthouse?
     answer: >
       Jeśli nie chcesz widzieć określonych dzierżaw i ich danych w Lighthouse, możesz je dezaktywować. Aby dezaktywować dzierżawę, wykonaj następujące czynności:
@@ -72,16 +72,16 @@ sections:
           > Po dezaktywowania dzierżawy nie możesz podjąć żadnych działań w tej dzierżawie do czasu zakończenia dezaktywowania. Dezaktywacja może potrwać do 48 godzin.
 
       Aby dowiedzieć się więcej o dzierżawach, zobacz [omówienie Microsoft 365 Lighthouse dzierżaw.](m365-lighthouse-tenants-page-overview.md)
-  - question: Czy Microsoft 365 Lighthouse będzie działać, jeśli moja dzierżawa klienta ma inne subskrypcje oprócz subskrypcji Microsoft 365 Business Premium lub Microsoft 365 E3?
+  - question: Czy Microsoft 365 Lighthouse działać, jeśli moja dzierżawa klienta ma inne subskrypcje oprócz subskrypcji Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business?
     answer: >
-      Lighthouse ułatwia zarządzanie dzierżawami klientów, Microsoft 365 Business Premium lub Microsoft 365 E3 w miejscu licencji dla użytkowników. W przypadku użytkowników z dzierżawami klientów, którzy nie mają licencji usługi Business Premium lub E3, funkcjonalność usługi Lighthouse będzie ograniczona. Jeśli na przykład użytkownik nie posiada licencji usługi Intune, urządzenia tego użytkownika, stan zgodności urządzenia i stan zagrożeń będą niedostępne. a jeśli brakuje użytkownikowi licencji, która obejmuje usługę Azure AD P1, jego hasło i zarządzanie logowaniem będą niedostępne. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
-  - question: Jak zakwalifikować się do zarządzania komputerami w chmurze klienta w Microsoft 365 Lighthouse?
+      Lighthouse ułatwia zarządzanie dzierżawami klientów, które Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business w miejscu dla ich użytkowników. W przypadku użytkowników w dzierżawach klientów, którzy nie mają tych licencji, funkcjonalność usługi Lighthouse będzie ograniczona. Jeśli na przykład użytkownik nie ma licencji, która obejmuje usługę Intune, urządzenia tego użytkownika, stan zgodności urządzenia i stan zagrożeń będą niedostępne, a w przypadku braku licencji usługi Azure AD P1 dla użytkownika jego hasło i zarządzanie logowaniem będą niedostępne. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: Jak mogę się do zarządzania komputerami w chmurze klienta w Microsoft 365 Lighthouse?
     answer: >
       Jeśli spełniasz wymagania dotyczące korzystania z latarni morskiej, masz odpowiednie kwalifikacje do zarządzania komputerami w chmurze klienta w usłudze Lighthouse. Aby uzyskać listę bieżących wymagań, zobacz [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: Gdzie mogę kupić licencje Windows 365 (Cloud PC) dla swoich klientów?
     answer: >
-      Licencje na usługę Windows 365 można kupić za pośrednictwem wszystkich dostępnych komercyjnych kanałów sprzedaży firmy Microsoft. Jedna zakupiona licencja jest równoważna zakupowi jednego komputera w chmurze. Obecnie każdemu użytkownikowi można przypisywać tylko jeden komputer w chmurze tego samego typu, ale może mieć przypisanych wiele komputerów w chmurze, jeśli mają różne typy SKU. Aby porównać Windows i ceny usługi 365, zobacz Uzyskiwanie dostępu Windows [365 Cloud PC, który jest odpowiedni dla Ciebie](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
-  - question: Jak uzyskać pomoc i obsługę techniczną?
+      Licencje możesz Windows 365 za pośrednictwem wszystkich dostępnych komercyjnych kanałów sprzedaży firmy Microsoft. Jedna zakupiona licencja jest równoważna zakupowi jednego komputera w chmurze. Obecnie każdemu użytkownikowi można przypisywać tylko jeden komputer w chmurze tego samego typu, ale może mieć przypisanych wiele komputerów w chmurze, jeśli mają różne typy SKU. Aby porównać Windows 365 i ceny, zobacz Komputer w chmurze Windows 365 [odpowiedni dla Ciebie](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
+  - question: Jak mogę uzyskać pomoc i obsługę techniczną?
     answer: >
       W latarni morskiej wybierz **pozycję ?** u góry portalu, aby otworzyć **okienko** Pomoc. Tutaj możesz uzyskać dostęp do artykułów z samodzielną pomocą lub skontaktować się z pomocą techniczną. Aby uzyskać więcej informacji o opcjach pomocy i pomocy technicznej, zobacz [Uzyskiwanie pomocy i obsługi technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: Gdzie mogę przesłać opinię i pomysły?
@@ -89,7 +89,7 @@ sections:
       Twoja opinia ma znaczenie i jest dla nas ważna! Istnieje kilka różnych sposobów przesyłania opinii:
 
 
-      - Przejdź do [strony Microsoft 365 Lighthouse opinie](https://aka.ms/m365lighthouseuservoice). Możesz rozpoczynać konwersacje na temat aplikacji Lighthouse i Windows 365, publikować pytania dla innych partnerów lub pracowników firmy Microsoft, udzielać opinii i pomysłów dotyczących funkcji i nie tylko.
+      - Przejdź do [strony Microsoft 365 Lighthouse opinie](https://aka.ms/m365lighthouseuservoice). Możesz rozpoczynać konwersacje na temat latarni morskiej i Windows 365, publikować pytania dla innych partnerów lub pracowników firmy Microsoft, udzielać opinii i pomysłów na funkcje i nie tylko.
 
       - Wybierz ikonę Opinia w prawym górnym rogu latarni morskiej.
 

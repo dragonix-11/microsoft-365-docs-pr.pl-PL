@@ -1,5 +1,5 @@
 ---
-title: Stos ochrony przed zagrożeniami krok po kroku w programie Microsoft Defender dla Office 365
+title: Stos ochrony przed zagrożeniami krok po kroku w programie Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -10,23 +10,23 @@ ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
-description: Postępuj zgodnie ze ścieżką przychodzącej wiadomości w stosie filtrowania zagrożeń w programie Microsoft Defender, aby Office 365.
+description: Postępuj zgodnie ze ścieżką wiadomości przychodzącej w stosie filtrowania zagrożeń w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 62d7ac9f13f59fce3b635f6d1dace2f22ee7f503
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e7be5c66e0ca3841a8bc4fd76555feaeafb1bd17
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683828"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469036"
 ---
-# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Ochrona przed zagrożeniami krok po kroku w programie Microsoft Defender dla Office 365
+# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Ochrona przed zagrożeniami krok po kroku w programie Ochrona usługi Office 365 w usłudze Microsoft Defender
 
-Program Microsoft Defender for Office 365 ochrony lub filtrowania można podzielić na cztery fazy, tak jak w tym artykule. Ogólnie mówiąc, wiadomości przychodzące przechodzą przez wszystkie te etapy przed dostarczeniem, ale rzeczywista ścieżka, jaką zajmuje wiadomość e-mail, podlega programowi Defender organizacji w Office 365 konfiguracji.
+Sposób Ochrona usługi Office 365 w usłudze Microsoft Defender ochrony lub filtrowania można podzielić na 4 fazy, tak jak w tym artykule. Ogólnie rzecz biorąc, wiadomości przychodzące przechodzą przez wszystkie te etapy przed dostarczeniem, ale rzeczywista ścieżka wiadomości e-mail zależy od konfiguracji Ochrona usługi Office 365 w usłudze Defender organizacji.
 
 > [!TIP]
-> Bądź na bieżąco do końca tego artykułu *, aby uzyskać* ujednoliconą grafikę ze wszystkich 4 faz programu Defender w celu Office 365 ochrony!
+> Bądź na bieżąco do końca tego artykułu *, aby uzyskać* ujednoliconą grafikę ze wszystkich 4 faz Ochrona usługi Office 365 w usłudze Defender ochrony!
 
 ## <a name="phase-1---edge-protection"></a>Faza 1 — Ochrona krawędzi
 
@@ -34,7 +34,7 @@ Niestety, bloki programu Edge, które kiedyś  miały krytyczne znaczenie, są t
 
 Bloki edge są zaprojektowane tak, aby zostały automatycznie. W przypadku wyników fałszywie dodatnich nadawcy zostaną powiadomieni i powiadomieni o tym, jak rozwiązać swój problem. Łączniki od zaufanych partnerów o ograniczonej reputacji mogą zapewnić zapewnianie dostawy lub tymczasowe zastępowanie można wprowadzić podczas dołączania nowych punktów końcowych.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Etap 1. filtrowania w programie Defender for Office 365 To Edge Protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Filtrowanie faz 1 w programie Ochrona usługi Office 365 w usłudze Defender" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png":::
 
 1. **Ograniczanie sieci** chroni Office 365 i klientów przed atakami typu "odmowa usługi" (DOS, Denial of Service) przez ograniczenie liczby wiadomości, które mogą być przesyłane przez określony zestaw infrastruktury.
 
@@ -52,7 +52,7 @@ Bloki edge są zaprojektowane tak, aby zostały automatycznie. W przypadku wynik
 
 Funkcje analizy nadawców są niezbędne do wychwytywania spamu, zbiorczego, personifikacji i nieautoryzowanych wiadomości spoofof, a także do wykrywania wyłudzeń informacji. Większość tych funkcji można konfigurować osobno.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Etap 2. filtrowania w uchcie defender for Office 365 jest inteligencja nadawców.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Etap 2 filtrowania w programie Ochrona usługi Office 365 w usłudze Defender to Inteligencja nadawców" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png":::
 
 1. **Wyzwalacze wykrywania** naruszenia zabezpieczeń konta i alerty są wywoływane, gdy konto ma anomalne zachowanie, zgodne z naruszoniem. W niektórych przypadkach konto użytkownika jest zablokowane i nie może wysyłać kolejnych wiadomości e-mail, dopóki nie zostanie rozwiązany przez zespół operacyjny zabezpieczeń organizacji.
 
@@ -82,7 +82,7 @@ Funkcje analizy nadawców są niezbędne do wychwytywania spamu, zbiorczego, per
 
 W tej fazie stos filtrowania zacznie obsługiwać konkretną zawartość wiadomości, w tym jej hiperlinki i załączniki.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="Etap 3 filtrowania w mdo to filtrowanie zawartości.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="Filtrowanie faz 3 w mdo to filtrowanie zawartości" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
 1. **Reguły transportu** (nazywane także regułami przepływu poczty e-mail Exchange regułami transportu) umożliwiają administratorowi szeroki zakres działań w przypadku, gdy dla wiadomości jest spełniony tak samo szeroki zakres warunków. Wszystkie wiadomości, które przepływają przez Twoją organizację, są oceniane pod względem włączonych reguł przepływu poczty/reguł transportu.
 
@@ -90,7 +90,7 @@ W tej fazie stos filtrowania zacznie obsługiwać konkretną zawartość wiadomo
 
 3. Aparaty antywirusowe są również używane do oznaczania wszystkich załączników jako prawda, dzięki czemu blokowanie typu może  blokować wszystkie załączniki typów określonych przez administratora.
 
-4. Za każdym razem, Office 365 program Microsoft Defender dla programu Office 365 wykryje złośliwy załącznik, do reputacji usługi Exchange Online Protection (EOP) zostanie dodany skrót pliku i skrót jego zawartości aktywnej. **Blokowanie reputacji załączników** blokuje ten plik we wszystkich Office 365 i na punktach końcowych, za pośrednictwem połączeń w chmurze MSAV.
+4. Gdy Ochrona usługi Office 365 w usłudze Microsoft Defender złośliwy załącznik, do reputacji usługi Exchange Online Protection (EOP) jest dodawany skrót pliku i skrót jego zawartości aktywnej. **Blokowanie reputacji załączników** blokuje ten plik we wszystkich Office 365 i na punktach końcowych, za pośrednictwem połączeń w chmurze MSAV.
 
 5. **Grupowanie heuristyczne pozwala** stwierdzić, że plik jest podejrzany na podstawie heuristicsów dostarczania. W przypadku wykrycia podejrzanego załącznika cała kampania zostanie wstrzymana i plik zostanie w trybie piaskownicy. Jeśli plik zostanie znaleziony jako złośliwy, cała kampania zostanie zablokowana.
 
@@ -100,7 +100,7 @@ W tej fazie stos filtrowania zacznie obsługiwać konkretną zawartość wiadomo
 
 8. **Heuristics zawartości mogą** wykrywać podejrzane wiadomości na podstawie struktury i częstotliwości wyrazów w treści wiadomości przy użyciu modeli uczenia maszynowego.
 
-9. **Sejf w trybie** piaskownicy każdy załącznik w programie Defender dla Office 365 dla klientów korzystających z analizy dynamicznej w celu wykrywania nigdy wcześniej widocznych zagrożeń.
+9. **Sejf w trybie** piaskownicy załączniki są Ochrona usługi Office 365 w usłudze Defender dla klientów korzystających z analizy dynamicznej w celu wykrywania nigdy wcześniej widocznych zagrożeń.
 
 10. **Detonacja połączonej** zawartości traktuje każdy adres URL, który zawiera link do pliku w wiadomości e-mail, jako załącznik, asynchronicznie w trybie piaskownicy w czasie dostarczania.
 
@@ -110,9 +110,9 @@ W tej fazie stos filtrowania zacznie obsługiwać konkretną zawartość wiadomo
 
 Ostatni etap odbywa się po dostarczeniu poczty lub pliku, czyli w przypadku poczty z różnych skrzynek pocztowych, plików i linków wyświetlanych w klientach, takich jak Microsoft Teams.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Etap 4. filtrowania w programie Defender for Office 365 to Ochrona po dostarczeniu.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Filtrowanie faz 4 w programie Ochrona usługi Office 365 w usłudze Defender jest ochrona po dostarczeniu" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
-1. **Sejf Linki** to Office 365 usługi Defender w celu ochrony przed godzinami klikania. Każdy adres URL w każdej wiadomości jest zawijany w celu wskazania serwerów usługi Microsoft Sejf Links. Po kliknięciu adresu URL jest on sprawdzany pod kątem najnowszej reputacji, zanim użytkownik zostanie przekierowany do witryny docelowej. Adres URL jest asynchronicznie w trybie piaskownicy w celu zaktualizowania jego reputacji.
+1. **Sejf linki** Ochrona usługi Office 365 w usłudze Defender czasu kliknięcia. Każdy adres URL w każdej wiadomości jest zawijany w celu wskazania serwerów usługi Microsoft Sejf Links. Po kliknięciu adresu URL jest on sprawdzany pod kątem najnowszej reputacji, zanim użytkownik zostanie przekierowany do witryny docelowej. Adres URL jest asynchronicznie w trybie piaskownicy w celu zaktualizowania jego reputacji.
 
 2. **Automatyczne przeczyszczanie** zerowej godziny w celu wyłudzania informacji wykrywa i wykrywa złośliwe wiadomości służące do wyłudzania informacji, które już zostały dostarczone do Exchange Online pocztowych.
 
@@ -134,10 +134,10 @@ Ostatni etap odbywa się po dostarczeniu poczty lub pliku, czyli w przypadku poc
 
 Końcowy diagram (tak jak wszystkie części diagramu redagowania go) może ulec zmianie w miarę rozwoju *i rozwoju produktu*. Dodaj zakładkę do tej strony  i użyj opcji opinii, która jest dostępna u dołu, jeśli chcesz poprosić o aktualizacje po aktualizacji. W przypadku rekordów jest to stos ze wszystkimi fazami w kolejności:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Wszystkie fazy filtrowania w programie Defender dla Office 365 kolejności, od 1 do 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Wszystkie fazy filtrowania w Ochrona usługi Office 365 w usłudze Defender kolejności, od 1 do 4" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
 ## <a name="more-information"></a>Więcej informacji
 
-Czy musisz skonfigurować usługę Microsoft Defender dla programu Office 365 ***right now** _? Użyj tego stosu, _now*, z [tym](protect-against-threats.md) krokiem krok po kroku w celu rozpoczęcia ochrony organizacji.
+Czy musisz teraz skonfigurować Ochrona usługi Office 365 w usłudze Microsoft Defender ***?** Użyj tego stosu, _now*, z [tym](protect-against-threats.md) krokiem krok po kroku w celu rozpoczęcia ochrony organizacji.
 
 *Specjalnie dziękujemy zespołowi MSFTTracyP i zespołowi piszącemu dokumenty do Giudora Garruba za tę zawartość*.

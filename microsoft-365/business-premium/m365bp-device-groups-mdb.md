@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: a5a0b932e88fb4c4232e4afca8f2307e40088e6b
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 2cc874580dad24e1b3d5349d6075956a9e518704
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63705520"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634652"
 ---
 # <a name="device-groups-in-microsoft-365-business-premium"></a>Grupy urządzeń w aplikacji Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium obejmuje ochronę punktu końcowego za pośrednictwem usługi Microsoft Defender dla firm. Zasady ochrony urządzeń są stosowane do urządzeń za pośrednictwem określonych kolekcji nazywanych grupami urządzeń. 
+Microsoft 365 Business Premium obejmuje ochronę punktu końcowego za pośrednictwem Microsoft Defender dla Firm. Zasady ochrony urządzeń są stosowane do urządzeń za pośrednictwem określonych kolekcji nazywanych grupami urządzeń. 
 
 **W tym artykule opisano**:  
 
@@ -41,7 +41,7 @@ W ramach subskrypcji masz domyślne grupy urządzeń, których możesz używać.
 
 Wszystkie grupy urządzeń, w tym domyślne grupy urządzeń i wszystkie niestandardowe grupy urządzeń, które [zdefiniowasz, są przechowywane w usłudze Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
-## <a name="how-do-i-create-a-new-device-group"></a>Jak utworzyć nową grupę urządzeń?
+## <a name="how-do-i-create-a-new-device-group"></a>Jak mogę utworzyć nową grupę urządzeń?
 
 Podczas tworzenia lub edytowania zasad ochrony urządzeń możesz utworzyć nową grupę urządzeń. 
 
@@ -52,10 +52,11 @@ Podczas tworzenia lub edytowania zasad ochrony urządzeń możesz utworzyć now�
 3. Aby to zrobić, zrób tak:
 
     1. Wybierz istniejące zasady, a następnie wybierz pozycję **Edytuj**.
+    
     2. Wybierz **pozycję + Dodaj** , aby utworzyć nowe zasady.
 
     > [!TIP]
-    > Aby uzyskać pomoc w tworzeniu lub edytowaniu zasad, zobacz [Wyświetlanie i edytowanie zasad w u programie Microsoft Defender dla firm](m365bp-view-edit-create-mdb-policies.md).
+    > Aby uzyskać pomoc w tworzeniu lub edytowaniu zasad, zobacz [Wyświetlanie i edytowanie zasad w programie Microsoft Defender dla Firm](m365bp-view-edit-create-mdb-policies.md).
 
 4. W kroku **Informacje ogólne** przejrzyj informacje, w razie potrzeby przeedytuj je, a następnie wybierz przycisk **Dalej**.
 
@@ -67,7 +68,7 @@ Podczas tworzenia lub edytowania zasad ochrony urządzeń możesz utworzyć now�
 
 8. W kroku **Grupy** urządzeń przejrzyj listę grup urządzeń dla zasad. W razie potrzeby usuń grupę z listy. Następnie wybierz przycisk **Dalej**.
 
-9. Na stronie **Ustawienia konfiguracji** przejrzyj i edytuj ustawienia zgodnie z potrzebami, a następnie wybierz pozycję **Dalej**. Aby uzyskać więcej informacji o tych ustawieniach, zobacz [Opis ustawień konfiguracji następnej generacji w programie Microsoft Defender dla firm](../security/defender-business/mdb-next-gen-configuration-settings.md).
+9. Na stronie **Ustawienia konfiguracji** przejrzyj i edytuj ustawienia zgodnie z potrzebami, a następnie wybierz pozycję **Dalej**. Aby uzyskać więcej informacji o tych ustawieniach, zobacz Opis ustawień konfiguracji następnej [generacji w programie Microsoft Defender dla Firm](../security/defender-business/mdb-next-gen-configuration-settings.md).
 
 10. W kroku **Przejrzyj zasady** przejrzyj wszystkie ustawienia, wprowadzić wszelkie potrzebne zmiany, a następnie wybierz pozycję **Utwórz zasady** lub **Aktualizuj zasady**.
 

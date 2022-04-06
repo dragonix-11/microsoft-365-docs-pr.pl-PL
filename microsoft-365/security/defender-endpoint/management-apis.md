@@ -1,7 +1,7 @@
 ---
 title: Omówienie zarządzania i interfejsów API
 ms.reviewer: ''
-description: Informacje o narzędziach do zarządzania i kategoriach interfejsu API w programie Microsoft Defender for Endpoint
+description: Informacje o narzędziach do zarządzania i kategoriach interfejsu API w programie Ochrona punktu końcowego w usłudze Microsoft Defender
 keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entitys, entity, user context, application context, streaming
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 36975b55d8f26ae7788495543ae42922ea404c66
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: cc73531540222791eb39eeca74570f34ff78a1b7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "63010432"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469784"
 ---
 # <a name="overview-of-management-and-apis"></a>Omówienie zarządzania i interfejsów API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mgt-apis-abovefoldlink)
@@ -41,7 +41,7 @@ Potwierdzając, że środowiska i struktury klientów mogą się różnić, prog
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Dołączanie punktów końcowych i dostęp do portalu
 
-Dołączanie urządzeń jest w pełni zintegrowane z usługami Microsoft Endpoint Manager i Microsoft Intune dla urządzeń klienckich oraz z programem Microsoft Defender dla urządzeń serwerowych, co zapewnia kompleksowe środowisko konfiguracji, wdrażania i monitorowania. Ponadto program Microsoft Defender for Endpoint zasady grupy narzędzia innych firm używane do zarządzania urządzeniami.
+Dołączanie urządzeń jest w pełni zintegrowane z usługami Microsoft Endpoint Manager i Microsoft Intune dla urządzeń klienckich oraz z programem Microsoft Defender dla urządzeń serwerowych, co zapewnia kompleksowe środowisko konfiguracji, wdrażania i monitorowania. Ponadto program Ochrona punktu końcowego w usłudze Microsoft Defender obsługuje zasady grupy i inne narzędzia innych firm używane do zarządzania urządzeniami.
 
 Program Defender for Endpoint zapewnia szczegółowe sterowanie tym, co użytkownicy z dostępem do portalu mogą widzieć i robić przez elastyczność kontroli dostępu opartej na rolach (RBAC, role based access control). Model RBAC obsługuje wszystkie odmiany struktury zespołów ds. zabezpieczeń:
 
@@ -51,19 +51,19 @@ Program Defender for Endpoint zapewnia szczegółowe sterowanie tym, co użytkow
 
 ## <a name="available-apis"></a>Dostępne interfejsy API
 
-Rozwiązanie Microsoft Defender for Endpoint jest zbudowane na platformie gotowej do integracji.
+To Ochrona punktu końcowego w usłudze Microsoft Defender jest zbudowane na platformie gotowej do integracji.
 
 Program Defender for Endpoint udostępnia większość danych i akcji za pośrednictwem zestawu programistycznych interfejsów API. Te interfejsy API umożliwią Automatyzowanie przepływów pracy i wprowadzanie innowacji w oparciu o funkcje usługi Defender for Endpoint.
 
-![Obraz dostępnych interfejsów API i integracji w programie Microsoft Defender for Endpoint.](images/mdatp-apis.png)
+:::image type="content" source="images/mdatp-apis.png" alt-text="Dostępny interfejs API i integracja w Ochrona punktu końcowego w usłudze Microsoft Defender" lightbox="images/mdatp-apis.png":::
 
 Interfejsy API usługi Defender dla punktu końcowego można pogrupowane w trzy grupy:
 
-- Interfejsy API programu Microsoft Defender dla punktów końcowych
+- Ochrona punktu końcowego w usłudze Microsoft Defender interfejsów API
 - Interfejs API przesyłania strumieniowego danych nieprzetworzonego
-- Integracja usług SIEM
+- Integracja zarządzania informacjami i zdarzeniami zabezpieczeń
 
-## <a name="microsoft-defender-for-endpoint-apis"></a>Interfejsy API programu Microsoft Defender dla punktów końcowych
+## <a name="microsoft-defender-for-endpoint-apis"></a>Ochrona punktu końcowego w usłudze Microsoft Defender interfejsów API
 
 Usługa Defender for Endpoint oferuje model warstwowego interfejsu API uwzględniający dane i możliwości w modelu ustrukturyzowanym, przejrzystym i łatwym w użyciu, który jest ujawniony za pomocą standardowego modelu uwierzytelniania i autoryzacji opartego na usłudze Azure AD, który umożliwia dostęp w kontekście użytkowników lub aplikacji SaaS. Model interfejsu API został zaprojektowany w celu udostępnienia jednostek i możliwości w spójnej formie.
 
@@ -79,7 +79,7 @@ Interfejs **API odpowiedzi** udostępnia możliwość wykonywania działań w us
 
 Interfejs API przesyłania strumieniowego nieprzetworzonych danych w programie Defender for Endpoint umożliwia klientom przesyłanie zdarzeń w czasie rzeczywistym i alertów z ich wystąpień w momencie wystąpienia w pojedynczym strumieniu danych, co zapewnia mechanizm dostarczania o małych opóźnieniach i wysokiej przepływności.
 
-Informacje o zdarzeniach usługi Defender for Endpoint są wypychane bezpośrednio do magazynu platformy Azure w celu przechowywania danych przez dłuższy czas lub do centrum zdarzeń platformy Azure w celu ich użycia przez usługi wizualizacji lub dodatkowe aparaty przetwarzania danych.
+Informacje o zdarzeniach usługi Defender for Endpoint są wypychane bezpośrednio do magazynu platformy Azure w celu przechowywania danych przez dłuższy czas lub do Azure Event Hubs do użycia przez usługi wizualizacji lub dodatkowe aparaty przetwarzania danych.
 
 Aby uzyskać więcej informacji, zobacz [Nieprzetworzone interfejs API przesyłania strumieniowego danych](raw-data-export.md).
 
@@ -92,6 +92,6 @@ Włączenie integracji informacji zabezpieczeń i zarządzania zdarzeniami (SIEM
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Uzyskiwanie dostępu do interfejsów API programu Microsoft Defender dla punktów końcowych](apis-intro.md)
+- [Uzyskiwanie dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender API](apis-intro.md)
 - [Obsługiwane interfejsy API](exposed-apis-list.md)
 - [Szanse partnerów technicznych](partner-integration.md)

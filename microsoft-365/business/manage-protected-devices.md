@@ -27,13 +27,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: Dowiedz się, jak usuwać firmowe dane z urządzeń zarządzanych za pomocą zasad ochrony oraz resetować Windows 10 urządzenia do ustawień fabrycznych.
-ms.openlocfilehash: 623bdad413a46f572618c83f68a7f13448fd9988
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak usuwać firmowe dane z urządzeń zarządzanych za pomocą zasad ochrony, a także jak zresetować ustawienia Windows 10 ich ustawień fabrycznych.
+ms.openlocfilehash: 3532194321b99b2469b6a283fda4a2188b25a46c
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160617"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635136"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Zarządzanie urządzeniami chronionymi za pomocą Microsoft 365 Business Premium
 
@@ -41,6 +41,6 @@ Gdy użytkownik połączy swoje urządzenie z Twoją organizacją, logując się
 
 ## <a name="related-content"></a>Zawartość pokrewna
   
-[Usuwanie danych firmowych z urządzeń](remove-company-data.md) (artykuł)\
+[Usuwanie danych firmowych z urządzeń](/business-premium/m365bp-remove-company-data.md) (artykuł)\
 [Resetowanie Windows 10 do ustawień fabrycznych](reset-devices-to-factory-settings.md) (artykuł)\
-[Dodawanie urządzenia zarządzanego](./app-protection-settings-for-android-and-ios.md) (artykuł)
+[Dodawanie urządzenia zarządzanego](/business-premium/m365bp-app-protection-settings-for-android-and-ios.md) (artykuł)

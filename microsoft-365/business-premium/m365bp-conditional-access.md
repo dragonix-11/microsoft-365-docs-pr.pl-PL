@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak domyślne ustawienia zabezpieczeń pomagają chronić twoją organizację przed atakami związanymi z tożsamością, udostępniając wstępnie skonfigurowane ustawienia zabezpieczeń dla Microsoft 365 Business Premium.
-ms.openlocfilehash: dfd0d3edff541d828b70d383641aaf66c93826b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9684dc2be113d6f511f1a84e8865ac04a6881ecc
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63705140"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634674"
 ---
 # <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>Włączanie domyślnych ustawień zabezpieczeń dla Microsoft 365 Business Premium
 
@@ -41,7 +41,7 @@ Jeśli Twoja subskrypcja została utworzona 22 października 2019 r. lub późni
 
 Aby włączyć domyślne ustawienia zabezpieczeń w usłudze Azure Active Directory (Azure AD) lub sprawdzić, czy są już włączone:
 
-1. Zaloguj się <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">do centrum centrum administracyjne platformy Microsoft 365</a> zabezpieczeń, administratorem dostępu warunkowego lub poświadczeń administratora globalnego.
+1. Zaloguj się <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">do centrum Centrum administracyjne platformy Microsoft 365</a> zabezpieczeń, administratora dostępu warunkowego lub poświadczeń administratora globalnego.
 
 2. W okienku po lewej stronie wybierz pozycję **Pokaż wszystko, a** następnie w obszarze **Centra** administracyjne wybierz pozycję **Azure Active Directory**.
 
@@ -76,9 +76,13 @@ Ustawienia domyślne zabezpieczeń są dostępne dla wszystkich klientów, natom
 Jeśli chcesz używać dostępu warunkowego do konfigurowania zasad podobnych do tych włączonych domyślnie przez zabezpieczenia, skorzystaj z następujących przewodników krok po kroku:
 
 - [Wymaganie uwierzytelniania wieloskładnikowego dla administratorów](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+
 - [Wymaganie uwierzytelniania wieloskładnikowego do zarządzania platformą Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+
 - [Blokowanie starszego uwierzytelniania](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+
 - [Wymaganie uwierzytelniania WIELOSKŁADNIKOWEGO dla wszystkich użytkowników](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+
 - [Wymaganie rejestracji uwierzytelniania wieloskładnikowego usługi Azure AD —](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) wymaga usługi Azure AD Identity Protection, która jest częścią Azure Active Directory — wersja Premium P2
 
 Aby dowiedzieć się więcej o dostępie warunkowym, zobacz [Co to jest dostęp warunkowy?](/azure/active-directory/conditional-access/overview) Aby uzyskać więcej informacji na temat tworzenia zasad dostępu warunkowego, [zobacz Tworzenie zasad dostępu warunkowego](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).

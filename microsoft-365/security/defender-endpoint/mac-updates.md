@@ -1,7 +1,7 @@
 ---
-title: Wdrażanie aktualizacji dla programu Microsoft Defender dla punktu końcowego na komputerze Mac
-description: Kontrolowanie aktualizacji programu Microsoft Defender dla punktu końcowego na komputerze Mac w środowiskach przedsiębiorstwa.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, updates, deploy
+title: Wdrażanie aktualizacji dla programu Ochrona punktu końcowego w usłudze Microsoft Defender komputerów Mac
+description: Kontroluj aktualizacje dla Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac w środowiskach przedsiębiorstwa.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, aktualizacje, wdrażanie
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,32 +15,32 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ceff362daeb2054b6037ea0eecbeafbb9dbed4f3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 0b9ddf9693a242b3b8c466cfa1616b62c5eb73b9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63019238"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469300"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Wdrażanie aktualizacji programu Microsoft Defender dla punktu końcowego w systemie macOS
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Wdrażanie aktualizacji dla aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender systemie macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
 
-- [Program Microsoft Defender for Endpoint w systemie macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](microsoft-defender-endpoint-mac.md)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Firma Microsoft regularnie publikuje aktualizacje oprogramowania w celu zwiększenia wydajności, zabezpieczeń i dostarczania nowych funkcji.
 
-Aby zaktualizować program Microsoft Defender for Endpoint w systemie macOS, używany jest program o nazwie Microsoft AutoUpdate (MAU). Domyślnie program MAU automatycznie sprawdza aktualizacje codziennie, ale możesz zmienić to ustawienie na cotygodniowe, miesięczne lub ręczne.
+Aby zaktualizować Ochrona punktu końcowego w usłudze Microsoft Defender systemie macOS, używany jest program o nazwie Microsoft AutoUpdate (MAU). Domyślnie program MAU automatycznie sprawdza aktualizacje codziennie, ale możesz zmienić to ustawienie na cotygodniowe, miesięczne lub ręczne.
 
-![Zrzut ekranu: mau.](images/MDATP-34-MAU.png)
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
 Jeśli zdecydujesz się wdrożyć aktualizacje za pomocą narzędzi do dystrybucji oprogramowania, musisz skonfigurować program MAU tak, aby ręcznie sprawdzał aktualizacje oprogramowania. Preferencje można wdrożyć, aby skonfigurować sposób i czas, w którym program MAU sprawdza aktualizacje dla komputerów Mac w organizacji.
 
@@ -48,7 +48,7 @@ Jeśli zdecydujesz się wdrożyć aktualizacje za pomocą narzędzi do dystrybuc
 
 Program MAU zawiera narzędzie wiersza polecenia, nazywane *msupdate*, zaprojektowane dla administratorów IT, aby mieli bardziej dokładną kontrolę nad stosowanymi aktualizacjami. Instrukcje dotyczące korzystania z tego narzędzia można znaleźć w tece Aktualizowanie [Office dla komputerów Mac przy użyciu programu msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
-W programie MAU identyfikator aplikacji Microsoft Defender for Endpoint w systemie macOS to *WDAV00*. Aby pobrać i zainstalować najnowsze aktualizacje programu Microsoft Defender dla punktu końcowego w systemie macOS, wykonaj następujące polecenie w oknie programu Terminal:
+W programie MAU identyfikator aplikacji dla programu Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS to *WDAV00*. Aby pobrać i zainstalować najnowsze aktualizacje programu Ochrona punktu końcowego w usłudze Microsoft Defender macOS, wykonaj następujące polecenie w oknie aplikacji Terminal:
 
 ```dos
 ./msupdate --install --apps wdav00
@@ -87,7 +87,7 @@ Kanał `Current` zawiera najbardziej stabilną wersję produktu.
 |||
 
 > [!WARNING]
-> To ustawienie zmienia kanał dla wszystkich aplikacji zaktualizowanych za pomocą programu Microsoft AutoUpdate. Aby zmienić kanał tylko dla programu Microsoft Defender dla punktu końcowego w systemie macOS, `[channel-name]` wykonaj następujące polecenie po zamianie na odpowiedni kanał:
+> To ustawienie zmienia kanał dla wszystkich aplikacji zaktualizowanych za pomocą programu Microsoft AutoUpdate. Aby zmienić kanał tylko dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS, po `[channel-name]` zamianie go na odpowiedni kanał wykonaj następujące polecenie:
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -276,7 +276,7 @@ Poniższy profil konfiguracji służy do:
 Aby skonfigurować jednostkę MAU, możesz wdrożyć ten profil konfiguracji za pomocą narzędzia do zarządzania, z których korzysta twój przedsiębiorstwo:
 
 - Z usługi JAMF przekaż ten profil konfiguracji i ustaw domenę preferencji na *com.microsoft.autoupdate2*.
-- Z usługi Intune przekaż ten profil konfiguracji i ustaw nazwę niestandardowego profilu konfiguracji na *com.microsoft.autoupdate2*.
+- Z Intune przekaż ten profil konfiguracji i ustaw nazwę niestandardowego profilu konfiguracji na *com.microsoft.autoupdate2*.
 
 ## <a name="resources"></a>Zasoby
 

@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Administratorzy mogą dowiedzieć się, jak za pomocą portalu Przesyłanie w portalu Microsoft 365 Defender przesyłać podejrzane wiadomości e-mail, podejrzewane wiadomości wyłudzające informacje, spam i inne potencjalnie niebezpieczne wiadomości, adresy URL i załączniki wiadomości e-mail do firmy Microsoft w celu ponownego skanowania.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d0d699c3344cc16f3e15996139f1d2d8b608ba50
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682642"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477154"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Korzystanie z portalu Przesyłanie w celu przesyłania podejrzanych wiadomości-śmieci, wyłudków, adresów URL i plików do firmy Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "63682642"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 
 
 W Microsoft 365 organizacji ze skrzynkami pocztowymi usługi Exchange Online administratorzy mogą za pomocą portalu Przesyłanie w portalu Microsoft 365 Defender wysyłać wiadomości e-mail, adresy URL i załączniki do firmy Microsoft w celu skanowania.
@@ -84,7 +84,7 @@ Aby uzyskać inne sposoby przesyłania wiadomości e-mail, adresów URL i załą
 
 3. Wybierz menu **rozwijane Oznacz jako i powiadom** , a następnie **wybierz pozycję** \> Nie znaleziono zagrożeń **wyłudzających informacje** lub **Wiadomości-śmieci**.
 
-   :::image type="content" alt-text="Wysyłanie wiadomości z portalu." source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
+   :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="Strona Przesyłanie" lightbox="../../media/unified-submission-user-reported-message.png":::
 
 Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny. Powiadomienie e-mail jest wysyłane automatycznie z portalu do użytkownika, który zgłosił wiadomość.
 
@@ -108,7 +108,7 @@ Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny
 5. Po zakończeniu kliknij pozycję **Prześlij**.
 
     > [!div class="mx-imgBorder"]
-    > ![Przykład nowego przesyłania adresu URL.](../../media/submission-flyout-email.png)
+    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="Proces przesyłania nowego adresu URL" lightbox="../../media/submission-flyout-email.png":::
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Wysyłanie podejrzanego adresu URL do firmy Microsoft
 
@@ -125,7 +125,7 @@ Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny
 4. Po zakończeniu kliknij pozycję **Prześlij**.
 
     > [!div class="mx-imgBorder"]
-    > ![Przykład nowego przesłania wiadomości e-mail.](../../media/submission-url-flyout.png)
+    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="Proces przesyłania nowej wiadomości e-mail" lightbox="../../media/submission-url-flyout.png":::
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Przesyłanie podejrzanego załącznika wiadomości e-mail do firmy Microsoft
 
@@ -142,7 +142,7 @@ Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny
 4. Po zakończeniu kliknij pozycję **Prześlij**.
 
     > [!div class="mx-imgBorder"]
-    > ![Przykład nowego przesyłania załącznika.](../../media/submit-email-attachment-for-analysis.png)
+    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="Proces przesyłania nowego załącznika" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
 > Jeśli filtrowanie złośliwego oprogramowania zastąpiło załączniki wiadomości alertem o złośliwym Text.txt pliku, należy przesłać oryginalną wiadomość z kwarantanny zawierającej oryginalne załączniki. Aby uzyskać więcej informacji na temat kwarantanny i sposobu usuwania wiadomości z wynikami fałszywie dodatnimi złośliwego oprogramowania, zobacz Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako [administrator](manage-quarantined-messages-and-files.md).
@@ -178,7 +178,7 @@ Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nowe opcje dostosowywania kolumn dla przesyłania administratorów.](../../media/submit-admin-submissios-customize-columns.png)
+     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="Opcje kolumny Nowe dostosowywanie dla przesyłania administratorów" lightbox="../../media/admin-submission-customize-columns.png":::
 
    - Aby filtrować pozycje, kliknij pozycję **Filtruj**. Dostępne filtry:
      - **Data przesłana**: **Data rozpoczęcia** **i Data zakończenia**.
@@ -195,7 +195,7 @@ Zgłoszony komunikat zostanie oznaczony jako wynik fałszywie dodatni lub ujemny
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nowe opcje filtrowania dla przesyłania przez administratora.](../../media/submit-admin-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="Opcje nowego filtru dla przesyłania przez administratora" lightbox="../../media/admin-submission-filters.png":::
 
    - Aby zgrupować pozycje, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
      - **Brak**
@@ -263,7 +263,7 @@ Jeśli wdrożono dodatek Report [Message](enable-the-report-message-add-in.md) (
      Po zakończeniu kliknij przycisk **Zastosuj**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nowe opcje filtrowania dla przesyłania użytkowników.](../../media/submit-user-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="Opcje nowego filtru dla przesyłania użytkowników" lightbox="../../media/admin-submission-reported-messages.png":::
 
    - Aby zgrupować pozycje, kliknij pozycję **Grupuj** i wybierz jedną z następujących wartości z listy rozwijanej:
      - **Brak**
@@ -298,4 +298,4 @@ Na karcie **Użytkownik zgłosił wiadomości** wybierz wiadomość z listy, kli
 - **Wyzwalanie badania**
 
 > [!div class="mx-imgBorder"]
-> ![Nowe opcje na przycisku Akcja.](../../media/admin-submission-main-action-button.png)
+> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="Opcje Nowe na przycisku Akcja" lightbox="../../media/admin-submission-main-action-button.png":::
