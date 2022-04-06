@@ -1,7 +1,7 @@
 ---
 title: Zalecenia dotyczące zabezpieczeń przez Zarządzanie zagrożeniami i lukami
 description: Uzyskaj zalecenia dotyczące zabezpieczeń z akcjami określone pod względami zagrożenia, prawdopodobieństwa naruszenia zabezpieczeń i wartości w Zarządzanie zagrożeniami i lukami.
-keywords: Zarządzanie zagrożeniami i lukami, Microsoft Defender for Endpoint tvm security recommendation, cycycyjna zalecenia, zalecenie dotyczące bezpieczeństwa z akcjami
+keywords: Zarządzanie zagrożeniami i lukami, Ochrona punktu końcowego w usłudze Microsoft Defender, zalecenie dotyczące bezpieczeństwa tvm, zalecenie dotyczące bezpieczeństwa, zalecenie dotyczące akcji
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57c1909ff54fea6b9151e212f465abb75bab48f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e7ff7a98e8550996068686b5b0805ea3a72cd6ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325323"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468572"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Zalecenia dotyczące zabezpieczeń — Zarządzanie zagrożeniami i lukami
 
@@ -29,18 +29,18 @@ ms.locfileid: "63325323"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Braki chwalone w organizacji są mapowane na zalecenia dotyczące zabezpieczeń z akcjami i priorytetyzowane na ich wpływ. Zalecenia z określonymi priorytetami pomagają skrócić czas, aby zminimalizować luki w zabezpieczeniach lub je rozwiązać oraz ułatwić zapewnienie zgodności z przepisami.
 
 Każde zalecenie dotyczące zabezpieczeń zawiera kroki rozwiązywania problemów z działaniami. W celu pomocy w zarządzaniu zadaniami można również wysłać Microsoft Intune zadania Microsoft Endpoint Configuration Manager. Gdy zmienia się poziom zagrożeń, zalecenie zmienia się również w momencie, gdy stale zbiera informacje z Twojego środowiska.
 
 > [!TIP]
-> Aby uzyskać wiadomości e-mail dotyczące nowych zdarzeń luk w zabezpieczeniach, zobacz Konfigurowanie powiadomień [e-mail z luk w zabezpieczeniach w programie Microsoft Defender dla punktu końcowego](configure-vulnerability-email-notifications.md)
+> Aby uzyskać wiadomości e-mail dotyczące nowych zdarzeń luk w zabezpieczeniach, zobacz [Konfigurowanie powiadomień e-mail dotyczących luk w zabezpieczeniach w programie Ochrona punktu końcowego w usłudze Microsoft Defender](configure-vulnerability-email-notifications.md)
 
 ## <a name="how-it-works"></a>Jak to działa
 
@@ -70,7 +70,8 @@ Przejdź do menu **nawigacji Zarządzania lukami** w zabezpieczeniach i wybierz 
 
 Jeśli jesteś administratorem zabezpieczeń w danym dniu, możesz sprawdzić na pulpicie nawigacyjnym [](tvm-dashboard-insights.md) Zarządzanie zagrożeniami i lukami, aby wyświetlić wyniki ekspozycji obok [](tvm-exposure-score.md) wyniku bezpiecznego wyniku działania firmy Microsoft dla [urządzeń](tvm-microsoft-secure-score-devices.md). Celem tego **jest obniżenie poziomu** ochrony organizacji przed lukami w zabezpieczeniach oraz zwiększenie  bezpieczeństwa urządzeń organizacji w celu większej odporności na ataki zagrożenia bezpieczeństwa bezpieczeństwa. Górna lista zaleceń dotyczących zabezpieczeń może pomóc w osiągnięciu tego celu.
 
-![Przykład karty Najważniejsze zalecenia dotyczące zabezpieczeń z czterema zaleceniami zabezpieczeń.](images/top-security-recommendations350.png)
+:::image type="content" source="images/top-security-recommendations350.png" alt-text="Karta Najważniejsze zalecenia dotyczące zabezpieczeń" lightbox="images/top-security-recommendations350.png":::
+
 
 W najważniejszych zaleceniach dotyczących zabezpieczeń wymieniono możliwości doskonalenia priorytetyzowane na podstawie ważnych czynników wymienionych w poprzedniej sekcji: zagrożenia, prawdopodobieństwa naruszenia i wartości. Wybranie zalecenia spowoduje przysłanie strony zaleceń dotyczących zabezpieczeń ze szczegółami.
 
@@ -81,9 +82,9 @@ Wyświetl zalecenia, liczbę odnalezionych braków, pokrewne składniki, szczeg�
 Kolor wykresu **Naświetlone urządzenia** zmienia się wraz ze zmianami trendu. Jeśli liczba ujawnionych urządzeń rośnie, kolor zmienia się na czerwony. Jeśli liczba ujawnionych urządzeń się zmniejszy, kolor wykresu zmieni się na zielony.
 
 > [!NOTE]
-> Zagrożenia i zarządzanie lukami w zabezpieczeniach urządzenia, które były używania do **30** dni temu. Różni się to od pozostałej części usługi Microsoft Defender for Endpoint, gdzie urządzenie, które nie było używane przez ponad 7 dni, ma status "Nieaktywny".
+> Zagrożenia i zarządzanie lukami w zabezpieczeniach urządzenia, które były używania do **30** dni temu. To urządzenie różni się od Ochrona punktu końcowego w usłudze Microsoft Defender, jeśli urządzenie nie było używane przez ponad 7 dni, ma status "Nieaktywny".
 
-![Przykład strony docelowej w celu zalecenia zabezpieczeń.](images/tvmsecrec-updated.png)
+:::image type="content" source="images/tvmsecrec-updated.png" alt-text="Strona docelowa w celu zalecenia zabezpieczeń" lightbox="images/tvmsecrec-updated.png":::
 
 ### <a name="icons"></a>Ikony
 
@@ -97,7 +98,7 @@ Przydatne ikony także szybko zwracają Twoją uwagę na:
 
 Wybierz zalecenie zabezpieczeń, które chcesz zbadać lub przetworzyć.
 
-:::image type="content" alt-text="Przykładowa strona wysuwana z zaleceniem zabezpieczeń." source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
+:::image type="content" source="images/secrec-flyouteolsw.png" alt-text="Wysuwana strona zalecenia zabezpieczeń" lightbox="images/secrec-flyouteolsw.png":::
 
 W wysuwanych menu możesz wybrać dowolną z następujących opcji:
 
@@ -122,7 +123,7 @@ Jeśli liczba ujawnionych urządzeń znacznie się zwiększy lub zwiększy wpły
 
 ## <a name="request-remediation"></a>Żądanie środków zaradczych
 
-Działania Zarządzanie zagrożeniami i lukami zasypuje przerwy między zabezpieczeniami i administratorami IT za pośrednictwem przepływu pracy żądania zaradczego. Administratorzy zabezpieczeń, na przykład ty, mogą poprosić administratora IT o naprawienie luki na stronie zalecenia **zabezpieczeń w** usłudze Intune. [Dowiedz się więcej o opcjach rozwiązywania problemów](tvm-remediation.md)
+Działania Zarządzanie zagrożeniami i lukami zasypuje przerwy między zabezpieczeniami i administratorami IT za pośrednictwem przepływu pracy żądania zaradczego. Administratorzy zabezpieczeń, na przykład ty, mogą poprosić administratora IT o naprawienie luki na stronie zalecenia **zabezpieczeń w celu** Intune. [Dowiedz się więcej o opcjach rozwiązywania problemów](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>Jak zażądać środków zaradczych
 
@@ -140,7 +141,7 @@ Gdy dla zalecenia jest tworzony wyjątek, zalecenie nie jest już aktywne. Stan 
 
 Wybierz zalecenie dotyczące zabezpieczeń, dla których chcesz utworzyć wyjątek, a następnie wybierz pozycję **Opcje wyjątków**.
 
-![Pokazywanie, gdzie przycisk "opcje wyjątków" znajduje się w wysuwanych menu z zaleceniem zabezpieczeń.](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="Przycisk opcji wyjątków w wysuwanych poleceniach zabezpieczeń" lightbox="images/tvm-exception-options.png":::
 
 Wypełnij formularz i prześlij. Aby wyświetlić wszystkie wyjątki (bieżącą i przeszłe), przejdź [](tvm-remediation.md) do strony Działania naprawcze w menu Zarządzanie & zagrożeniami i lukami w zabezpieczeniach, **a** następnie wybierz kartę **Wyjątki**. Dowiedz się więcej na temat tworzenia [wyjątku.](tvm-exception.md#create-an-exception)
 
@@ -152,7 +153,7 @@ Jeśli zostaną wyświetlony niejasne, niejasne, niedokładne, niepełne lub ju�
 
 2. Wybierz trzy kropki obok zalecenia zabezpieczeń, które chcesz zgłosić, a następnie wybierz pozycję Zgłoś **nieścisłości**.
 
-    ![Pokazywanie, gdzie przycisk "Nieścisłość raportu" znajduje się w wysuwanej wysuwanej treści zalecenia zabezpieczeń.](images/report-inaccuracy500.png)
+   :::image type="content" source="images/report-inaccuracy500.png" alt-text="Przycisk Nieścisłości raportu" lightbox="images/report-inaccuracy500.png":::
 
 3. W okienku wysuwu wybierz kategorię nieścisłości z menu rozwijanego, wprowadź swój adres e-mail i szczegóły dotyczące nieścisłości.
 

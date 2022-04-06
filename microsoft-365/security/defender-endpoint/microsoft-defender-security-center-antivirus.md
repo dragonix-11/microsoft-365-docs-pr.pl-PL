@@ -16,18 +16,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5ad0d64ff2f296d0e8282afb02cbe7fc2bb21470
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1c5177946ff3d54ab64c78e9013a8e0c07b0fd11
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63032092"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468132"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Program antywirusowy Microsoft Defender w aplikacji Zabezpieczenia Windows aplikacji
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 W Windows 10 1703 i nowszych wersjach aplikacja Windows Defender jest częścią Zabezpieczenia Windows.
 
@@ -42,11 +42,11 @@ Ustawienia, które były wcześniej częścią klienta Windows Defender i głów
 
 Aby uzyskać [Zabezpieczenia Windows](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) na temat innych funkcji zabezpieczeń Windows, które mogą być monitorowane w tej aplikacji, zobacz ten artykuł.
 
-Ta Zabezpieczenia Windows to interfejs klienta w Windows 10 wersji 1703 i nowszych. Nie jest to pierwszy Microsoft 365 Defender sieci Web używany do przeglądania programu [Microsoft Defender dla punktu końcowego i zarządzania nim](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+Ta Zabezpieczenia Windows to interfejs klienta w Windows 10 wersji 1703 i nowszych. Nie jest to pierwszy Microsoft 365 Defender sieci Web używany do przeglądania witryn i zarządzania [nimi Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Przeglądanie ustawień ochrony przed wirusami i zagrożeniami w Zabezpieczenia Windows aplikacji
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Ustawienia ochrony przed wirusami i zagrożeniami w Zabezpieczenia Windows aplikacji.":::
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Ustawienia ochrony przed wirusami i zagrożeniami w Zabezpieczenia Windows aplikacji" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
 1. Otwórz aplikację Zabezpieczenia Windows, klikając ikonę tarczy na pasku zadań lub wyszukując w menu start przycisk **Zabezpieczenia Windows**.
 
@@ -55,7 +55,7 @@ Ta Zabezpieczenia Windows to interfejs klienta w Windows 10 wersji 1703 i nowszy
 W poniższych sekcjach opisano sposób wykonywania niektórych z najczęściej wykonywanych zadań podczas przeglądania lub interakcji z ochroną przed zagrożeniami zapewnianą przez aplikację Program antywirusowy Microsoft Defender w Zabezpieczenia Windows aplikacji.
 
 > [!NOTE]
-> Jeśli te ustawienia są skonfigurowane i wdrożone przy użyciu programu zasady grupy, ustawienia opisane w tej sekcji będą wyszzarowane i niedostępne do użycia w poszczególnych punktach końcowych. Zmiany wprowadzone za pośrednictwem zasady grupy obiekt musi najpierw zostać wdrożony w poszczególnych punktach końcowych, aby ustawienie było aktualizowane w Windows Ustawienia. W [temacie Konfigurowanie interakcji użytkownika końcowego z programem Program antywirusowy Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md) opisano, jak można skonfigurować ustawienia zastępowania zasad lokalnych.
+> Jeśli te ustawienia zostały skonfigurowane i wdrożone przy użyciu zasady grupy, ustawienia opisane w tej sekcji będą wyszarzędne i niedostępne do użycia w poszczególnych punktach końcowych. Zmiany wprowadzone za pośrednictwem obiektu zasady grupy muszą najpierw zostać wdrożone w poszczególnych punktach końcowych, aby ustawienie było aktualizowane w Windows Ustawienia. W [temacie Konfigurowanie interakcji użytkownika końcowego z programem Program antywirusowy Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md) opisano, jak można skonfigurować ustawienia zastępowania zasad lokalnych.
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>Uruchamianie skanowania za pomocą Zabezpieczenia Windows aplikacji
 
@@ -67,7 +67,7 @@ W poniższych sekcjach opisano sposób wykonywania niektórych z najczęściej w
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>Przejrzyj wersję aktualizacji analizy zabezpieczeń i pobierz najnowsze aktualizacje w aplikacji usługi Zabezpieczenia Windows.
 
-:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Numer wersji analizy zabezpieczeń.":::
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Numer wersji analizy zabezpieczeń" lightbox="../../media/wdav-wdsc-defs.png":::
 
 1. Otwórz aplikację Zabezpieczenia Windows, wyszukując w menu Start pozycję *Zabezpieczenia*, a następnie **wybierając pozycję Zabezpieczenia Windows**.
 

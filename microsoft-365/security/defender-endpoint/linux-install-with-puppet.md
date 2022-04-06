@@ -1,8 +1,8 @@
 ---
-title: Wdrażanie oprogramowania Ochrona punktu końcowego w usłudze Microsoft Defender Linux za pomocą systemu Linux
+title: Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux za pomocą platformy Puppet
 ms.reviewer: ''
-description: W tym artykule opisano, jak Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux przy użyciu owej aktualizacji.
-keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, instalacja, wdrażanie, dezinstalacja, szemra, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
+description: Opis sposobu wdrażania Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux przy użyciu platformy Puppet.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +16,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8d92e67e45074fb4084e7fbbc1fa7359b34db36
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 5ec3eb5d12933b33f4af7d5af96b4ab54fda4604
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568385"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663803"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Wdrażanie oprogramowania Ochrona punktu końcowego w usłudze Microsoft Defender Linux za pomocą systemu Linux
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux za pomocą platformy Puppet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,58 +32,63 @@ ms.locfileid: "64568385"
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-W tym artykule opisano sposób wdrażania programu Defender dla punktu końcowego w systemie Linux przy użyciu technologii 8. Pomyślne wdrożenie wymaga wykonania wszystkich z następujących zadań:
+W tym artykule opisano sposób wdrażania usługi Defender for Endpoint w systemie Linux przy użyciu platformy Puppet. Pomyślne wdrożenie wymaga wykonania wszystkich następujących zadań:
 
-- [Pobierz pakiet dołączający](#download-the-onboarding-package)
-- [Utwórz manifest manifestu w kiecie](#create-a-puppet-manifest)
+- [Pobieranie pakietu dołączania](#download-the-onboarding-package)
+- [Tworzenie manifestu platformy Puppet](#create-a-puppet-manifest)
 - [Wdrożenie](#deployment)
-- [Sprawdź stan dołączania](#check-onboarding-status)
+- [Sprawdzanie stanu dołączania](#check-onboarding-status)
 
 ## <a name="prerequisites-and-system-requirements"></a>Wymagania wstępne i wymagania systemowe
 
- Opis wymagań wstępnych i wymagań systemowych dla bieżącej wersji oprogramowania można znaleźć na stronie głównej programu [Defender for Endpoint w systemie Linux](microsoft-defender-endpoint-linux.md).
+ Opis wymagań wstępnych i wymagań systemowych dotyczących bieżącej wersji oprogramowania można znaleźć [na stronie głównej usługi Defender for Endpoint w systemie Linux](microsoft-defender-endpoint-linux.md).
 
-Ponadto w przypadku wdrożenia z zadaniami kondyscyjną należy zapoznać się z zadaniami administracyjnymi, mieć skonfigurowane ustawienia Szybka i dowiedzieć się, jak wdrażać pakiety. Można wykonać to samo zadanie na wiele sposobów. W poniższych instrukcjach założono, że są dostępne obsługiwane moduły na przykład *apt* , aby ułatwić wdrożenie pakietu. Twoja organizacja może używać innego przepływu pracy. Aby uzyskać szczegółowe informacje [, zapoznaj się z dokumentacją](https://puppet.com/docs) treści.
+Ponadto w przypadku wdrażania platformy Puppet musisz znać zadania administracyjne platformy Puppet, skonfigurować platformę Puppet i wiedzieć, jak wdrażać pakiety. Platforma Puppet ma wiele sposobów wykonania tego samego zadania. W tych instrukcjach założono dostępność obsługiwanych modułów Puppet, takich jak *apt* , aby ułatwić wdrożenie pakietu. Twoja organizacja może używać innego przepływu pracy. Aby uzyskać szczegółowe informacje, zapoznaj się z [dokumentacją platformy Puppet](https://puppet.com/docs) .
 
-## <a name="download-the-onboarding-package"></a>Pobierz pakiet dołączający
+## <a name="download-the-onboarding-package"></a>Pobieranie pakietu dołączania
 
-Pobierz pakiet dołączający z portalu Microsoft 365 Defender sieci:
+Pobierz pakiet dołączania z portalu Microsoft 365 Defender:
 
-1. W Microsoft 365 Defender sieci Web przejdź do Ustawienia > **punkty końcowe > zarządzanie urządzeniami > dołączanie**.
-2. Z pierwszego menu rozwijanego wybierz Linux **Server** jako system operacyjny. Z drugiego menu rozwijanego wybierz preferowaną metodę wdrażania narzędzie do zarządzania **konfiguracją systemu Linux** .
-3. Wybierz **pozycję Pobierz pakiet dołączający**. Zapisz plik jako WindowsDefenderATPOnboardingPackage.zip.
+1. W portalu Microsoft 365 Defender przejdź do **obszaru Ustawienia > Punkty końcowe > Zarządzanie urządzeniami > dołączanie**.
+2. W pierwszym menu rozwijanym wybierz pozycję **Linux Server** jako system operacyjny. W drugim menu rozwijanym wybierz **preferowane narzędzie do zarządzania konfiguracją systemu Linux** jako metodę wdrażania.
+3. Wybierz pozycję **Pobierz pakiet dołączania**. Zapisz plik jako WindowsDefenderATPOnboardingPackage.zip.
 
-   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="Opcja pobrania pakietu onboarded" lightbox="images/portal-onboarding-linux-2.png":::
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="Opcja pobrania dołączony pakiet" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. W wierszu polecenia sprawdź, czy masz plik. 
 
     ```bash
     ls -l
     ```
+
     ```Output
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
-5. Wyodrębnianie zawartości archiwum.
+
+5. Wyodrębnij zawartość archiwum.
+
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-a-puppet-manifest"></a>Tworzenie manifestu manifestu manifestu w celu utworzenia pliku manifestu
+## <a name="create-a-puppet-manifest"></a>Tworzenie manifestu platformy Puppet
 
-Musisz utworzyć manifest w celu wdrożenia programu Defender dla punktu końcowego w systemie Linux na urządzeniach zarządzanych przez serwer szosowy. W tym przykładzie korzysta się z modułów *mi* *i yumrepo* dostępnych w programieLabs oraz założono, że moduły zostały zainstalowane na serwerze Szyb.
+Należy utworzyć manifest platformy Puppet do wdrażania usługi Defender for Endpoint w systemie Linux na urządzeniach zarządzanych przez serwer Puppet. W tym przykładzie użyto modułów *apt* i *yumrepo* dostępnych z platformy puppetlabs i przyjęto założenie, że moduły zostały zainstalowane na serwerze Puppet.
 
-Utwórz foldery *install_mdatp/plików* *i pliki install_mdatp/manifestów* w folderze modułów instalacji Folder. Ten folder zwykle znajduje się w *katalogu /etc/ftplabs/code/environments/production/modules* na serwerze Szybki. Skopiuj utworzony mdatp_onboard.json do folderu install_mdatp */pliki* . Tworzenie *init.pp* zawierający instrukcje dotyczące wdrażania:
+Utwórz foldery *install_mdatp/files* i *install_mdatp/manifesty* w folderze modules instalacji puppet. Ten folder zazwyczaj znajduje się w *folderze /etc/puppetlabs/code/environments/production/modules na serwerze* Puppet. Skopiuj utworzony powyżej plik mdatp_onboard.json do folderu *install_mdatp/files* . Tworzenie *pliku init.pp* plik zawierający instrukcje wdrażania:
 
 ```bash
 pwd
 ```
+
 ```Output
 /etc/puppetlabs/code/environments/production/modules
 ```
@@ -91,6 +96,7 @@ pwd
 ```bash
 tree install_mdatp
 ```
+
 ```Output
 install_mdatp
 ├── files
@@ -101,21 +107,21 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>Zawartość `install_mdatp/manifests/init.pp`
 
-Program Defender dla punktu końcowego w systemie Linux można wdrożyć w jednym z następujących kanałów (oznaczonych poniżej jako *[kanał]**):* niejawni testerzy — szybkie aktualizacji, *testerzy- wolne* lub *powolni.* Każdy z tych kanałów odpowiada repozytorium oprogramowania Linux.
+Usługę Defender for Endpoint w systemie Linux można wdrożyć z jednego z następujących kanałów (oznaczonego poniżej jako *[channel]*): *insiders-fast*, *insiders-slow* lub *prod*. Każdy z tych kanałów odpowiada repozytorium oprogramowania systemu Linux.
 
-Wybór kanału zależy od typu i częstotliwości aktualizacji oferowanych dla Twojego urządzenia. Urządzenia w *niejawnych* programach testów — szybkie aktualizacje to pierwsze urządzenia, które otrzymują aktualizacje i nowe funkcje, a następnie niejawni testerzy — *wolne* aktualizacje, a w końcu *— prod*.
+Wybór kanału określa typ i częstotliwość aktualizacji oferowanych urządzeniu. Urządzenia w *insiders-fast* są pierwszymi, które otrzymują aktualizacje i nowe funkcje, a następnie *wewnętrznych powolny* i ostatnio przez *prod*.
 
-W celu wyświetlania w wersji zapoznawczej nowych funkcji i wczesnych opinii zaleca się skonfigurowanie niektórych urządzeń w przedsiębiorstwie do korzystania  z szybkich lub wolnych niejawnych *testerów*.
+Aby zapoznać się z nowymi funkcjami i przekazać wczesną opinię, zaleca się skonfigurowanie niektórych urządzeń w przedsiębiorstwie tak, aby *korzystały z funkcji insiders-fast* lub *insiders-slow*.
 
 > [!WARNING]
-> Przełączenie kanału po początkowej instalacji wymaga ponownego zainstalowania produktu. Aby przełączyć kanał produktu: odinstaluj istniejący pakiet, ponownie skonfiguruj urządzenie do korzystania z nowego kanału, a następnie postępuj zgodnie z instrukcjami w tym dokumencie, aby zainstalować pakiet z nowej lokalizacji.
+> Przełączenie kanału po początkowej instalacji wymaga ponownej instalacji produktu. Aby przełączyć kanał produktu: odinstaluj istniejący pakiet, skonfiguruj ponownie urządzenie do korzystania z nowego kanału i wykonaj kroki opisane w tym dokumencie, aby zainstalować pakiet z nowej lokalizacji.
 
-Zanotuj swój rozkład i wersję oraz określ najbliższy wpis w obszarze `https://packages.microsoft.com/config/[distro]/`.
+Zanotuj dystrybucję i wersję oraz zidentyfikuj najbliższy wpis w obszarze `https://packages.microsoft.com/config/[distro]/`.
 
-W poniższych poleceniach zastąp *wartości [distro]* i *[version]* zidentyfikowanymi informacjami:
+W poniższych poleceniach zastąp *ciąg [dystrybucja]* i *[wersja]* zidentyfikowanymi informacjami:
 
 > [!NOTE]
-> W przypadku redhat, Oracle Linux, Amazon Linux 2 i CentOS 8, zastąp *[distro]* na 'rnog'.
+> W przypadku systemów RedHat, Oracle Linux, Amazon Linux 2 i CentOS 8 zastąp *ciąg [dystrybucja]* ciągiem "rhel".
 
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
@@ -181,26 +187,28 @@ $version = undef
 
 ## <a name="deployment"></a>Wdrożenie
 
-Dołącz powyższy manifest do swojej witryny.pp w tym pliku:
+Uwzględnij powyższy manifest w pliku site.pp Plik:
 
 ```bash
 cat /etc/puppetlabs/code/environments/production/manifests/site.pp
 ```
+
 ```Output
 node "default" {
     include install_mdatp
 }
 ```
 
-Urządzenia zarejestrowanego agenta okresowo ankietują serwer Proxy i instalują nowe profile konfiguracji i zasady zaraz po ich wykryciu.
+Zarejestrowane urządzenia agenta okresowo sondują serwer Puppet Server i instalują nowe profile konfiguracji i zasady natychmiast po ich wykryciu.
 
-## <a name="monitor-puppet-deployment"></a>Monitorowanie wdrożenia z działaniami w celu monitorowania danych
+## <a name="monitor-puppet-deployment"></a>Monitorowanie wdrożenia platformy Puppet
 
-Na urządzeniu agenta możesz także sprawdzić stan dołączania, uruchamiając program:
+Na urządzeniu agenta możesz również sprawdzić stan dołączania, uruchamiając następujące polecenie:
 
 ```bash
 mdatp health
 ```
+
 ```Output
 ...
 licensed                                : true
@@ -208,39 +216,39 @@ org_id                                  : "[your organization identifier]"
 ...
 ```
 
-- **licencjonowane**: Potwierdzi to, że urządzenie jest powiązane z Twoją organizacją.
+- **licencja**: Potwierdza to, że urządzenie jest powiązane z Twoją organizacją.
 
-- **orgId**: Jest to identyfikator organizacji usługi Defender for Endpoint.
+- **orgId**: jest to identyfikator organizacji usługi Defender for Endpoint.
 
-## <a name="check-onboarding-status"></a>Sprawdź stan dołączania
+## <a name="check-onboarding-status"></a>Sprawdzanie stanu dołączania
 
-Możesz sprawdzić, czy urządzenia zostały poprawnie zainstalowane, tworząc skrypt. Na przykład poniższy skrypt sprawdza stan dołączania zarejestrowanych urządzeń:
+Możesz sprawdzić, czy urządzenia zostały prawidłowo dołączone, tworząc skrypt. Na przykład następujący skrypt sprawdza zarejestrowane urządzenia pod kątem stanu dołączania:
 
 ```bash
 mdatp health --field healthy
 ```
 
-Powyższe polecenie jest drukowane, `1` jeśli produkt jest wnoszony i działa zgodnie z oczekiwaniami.
+Powyższe polecenie jest drukowane `1` , jeśli produkt jest dołączony i działa zgodnie z oczekiwaniami.
 
 > [!IMPORTANT]
-> Przy pierwszym uruchamianiu produktu są pobierane najnowsze definicje ochrony przed złośliwym kodem. W zależności od połączenia internetowego może to potrwać do kilku minut. W tym czasie powyższe polecenie zwraca wartość `0`.
+> Gdy produkt zostanie uruchomiony po raz pierwszy, pobierze najnowsze definicje ochrony przed złośliwym kodem. W zależności od połączenia internetowego może to potrwać do kilku minut. W tym czasie powyższe polecenie zwraca wartość `0`.
 
-Jeśli produkt nie jest w dobrej kondycji, kod wyjścia (który `echo $?`można sprawdzić przez ) wskazuje problem:
+Jeśli produkt nie jest w dobrej kondycji, kod zakończenia (który można sprawdzić za pomocą `echo $?`) wskazuje problem:
 
-- 1, jeśli urządzenie nie zostało jeszcze naniesone.
-- 3, jeśli nie można nawiązać połączenia z daemonem.
+- 1, jeśli urządzenie nie zostało jeszcze dołączone.
+- 3, jeśli nie można nawiązać połączenia z demonem.
 
 ## <a name="log-installation-issues"></a>Problemy z instalacją dziennika
 
- Aby uzyskać więcej informacji na temat sposobu znalezienia automatycznie wygenerowanego dziennika, który jest tworzony przez instalatora w przypadku wystąpienia błędu, zobacz Problemy z [instalacją dziennika](linux-resources.md#log-installation-issues).
+ Aby uzyskać więcej informacji na temat znajdowania automatycznie wygenerowanego dziennika utworzonego przez instalatora w przypadku wystąpienia błędu, zobacz [Problemy z instalacją dziennika](linux-resources.md#log-installation-issues).
 
 ## <a name="operating-system-upgrades"></a>Uaktualnienia systemu operacyjnego
 
-Podczas uaktualniania systemu operacyjnego do nowej wersji głównych należy najpierw odinstalować program Defender for Endpoint dla systemu Linux, zainstalować uaktualnienie, a na koniec ponownie skonfigurować program Defender dla punktu końcowego w systemie Linux na urządzeniu.
+Podczas uaktualniania systemu operacyjnego do nowej wersji głównej należy najpierw odinstalować usługę Defender for Endpoint w systemie Linux, zainstalować uaktualnienie, a na koniec ponownie skonfigurować usługę Defender dla punktu końcowego w systemie Linux na urządzeniu.
 
-## <a name="uninstallation"></a>Dezinstalacja
+## <a name="uninstallation"></a>Dezinstalacji
 
-Tworzenie modułu *podobnego remove_mdatp* do *install_mdatp* z następującą zawartością w *init.pp* w tym pliku:
+Utwórz moduł *remove_mdatp* podobny do *install_mdatp* z następującą zawartością w *pliku init.pp* Plik:
 
 ```bash
 class remove_mdatp {

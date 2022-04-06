@@ -11,30 +11,30 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Administratorzy mogą dowiedzieć się, jak tworzyć niestandardowe łady dla szkolenia symulacyjnego w programie Microsoft Defender dla programu Office 365 Plan 2.
+description: Administratorzy mogą dowiedzieć się, jak tworzyć niestandardowe łady dla szkolenia z symulacyjnego ataku w Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: d670236aa81f4b5086263a75bbeceb8ca7e1e25f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8aa81a1940e564e9877af6a1848ff439aea58d8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679769"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468506"
 ---
-# <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Tworzenie niestandardowych ładów na platformie Defender for Office 365
+# <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Tworzenie niestandardowych ładów na szkolenia symulacyjne dotyczące ataków w programie Ochrona usługi Office 365 w usłudze Defender
 
-**Dotyczy programu** [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+**Dotyczy planu** [Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
-W szkoleniu symulacyjnych ataków _ładład jest_ wiadomością e-mail wyłudzającą informacje i stronami sieci Web przedstawionymi użytkownikom w symulacyjnych. Szkolenie symulacyjne dotyczące ataków w programie Microsoft 365 E5 lub programie Microsoft Defender dla programu Office 365 Plan 2 oferuje niezawodny wbudowany katalog ładowania dla dostępnych technik społecznościowych. Można jednak utworzyć niestandardowe łady, które będą lepiej działać w Twojej organizacji.
+W szkoleniu symulacyjnych ataków _ładład jest_ wiadomością e-mail wyłudzającą informacje i stronami sieci Web przedstawionymi użytkownikom w symulacyjnych. Szkolenie symulacyjne dotyczące Microsoft 365 E5 ataków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender (plan 2) oferuje niezawodny wbudowany wykaz zasobów dla dostępnych technik socjograficznych. Można jednak utworzyć niestandardowe łady, które będą lepiej działać w Twojej organizacji.
 
 W tym artykule opisano, jak tworzyć własne łady w szkoleniu z symezyjną ataków. Niestandardowe łady można tworzyć w następujących lokalizacjach:
 
 - Karta **Ładowania**: W <https://security.microsoft.com>portalu Microsoft 365 Defender pod adresem przejdź  \> do szkolenia & e-mail **do szkolenia** z symulacjami \> ataków w ramach współpracy **.** Aby przejść bezpośrednio do karty **Łady**, użyj klawisza <https://security.microsoft.com/attacksimulator?viewid=payload>.
-- Podczas tworzenia symulacyjnego: Niestandardowe łady można tworzyć na stronie  Wybieranie ładownika (trzecia strona) kreatora tworzenia symulacyjnej. Aby uzyskać więcej informacji, zobacz [Symulowanie ataku służącego do wyłudzania informacji w programie Defender dla Office 365](attack-simulation-training.md).
+- Podczas tworzenia symulacyjnego: Niestandardowe łady można tworzyć na stronie  Wybieranie ładownika (trzecia strona) kreatora tworzenia symulacyjnej. Aby uzyskać więcej informacji, zobacz [Symulowanie ataku służącego do wyłudzania informacji w Ochrona usługi Office 365 w usłudze Defender](attack-simulation-training.md).
 
-Aby uzyskać informacje na temat szkolenia z symezyjną ataków, zobacz Wprowadzenie do szkolenia z użyciem [symezyjny](attack-simulation-training-get-started.md) ataków.
+Aby uzyskać informacje na temat szkoleń z użyciem symezyjny ataków, [zobacz Wprowadzenie szkolenia z użyciem symezyjki ataków](attack-simulation-training-get-started.md).
 
 > [!NOTE]
-> Niektóre znaki towarowe, znaki logo, symbole, insignias i inne identyfikatory źródłowe są chronione na mocy ustaw i ustaw lokalnych, stanowych i federalnych. Nieuprawnione użycie takich wskaźników może nachylić użytkowników do odpowiedzialności, w tym także karnej. Choć nie jest to rozbudowana lista, obejmuje to: Szomówienie, Wicedyrecja i Kopercie, CIA, FBI, Ubezpieczenia społecznego, Opieki medycznej i Anny, Amerykańskiej Administracji Skarbowej i Igrzysk Olimpijskich. Oprócz korzystania z tych kategorii znaków towarowych, korzystanie z znaku towarowego innej firmy i modyfikowanie go wiąże się z ryzykiem. Używanie znaków towarowych i logo w ładowarce byłoby mniej ryzykowne, szczególnie w przypadku, gdy organizacja zezwala na użycie tych znaków. Jeśli masz jakiekolwiek dodatkowe pytania dotyczące tego, co jest lub czego nie należy używać podczas tworzenia lub konfigurowania ładowania, skonsultuj się z doradcami  prawne.
+> Niektóre znaki towarowe, znaki logo, symbole, insignias i inne identyfikatory źródłowe są chronione na mocy ustaw i ustaw lokalnych, stanowych i federalnych. Nieuprawnione użycie takich wskaźników może nachylić użytkowników do odpowiedzialności, w tym także karnej. Choć nie jest to rozbudowana lista, obejmuje on takie wartości jak: Konsercja, Wicedyt, Anny, CiA, FBI, Social Security, Medicare i Teżid, Stany Zjednoczone Internal Revenue Service i Igrzyska Olimpijskie. Oprócz korzystania z tych kategorii znaków towarowych, korzystanie z znaku towarowego innej firmy i modyfikowanie go wiąże się z ryzykiem. Używanie znaków towarowych i logo w ładowarce byłoby mniej ryzykowne, szczególnie w przypadku, gdy organizacja zezwala na użycie tych znaków. Jeśli masz jakiekolwiek dodatkowe pytania dotyczące tego, co jest lub czego nie należy używać podczas tworzenia lub konfigurowania ładowania, skonsultuj się z doradcami  prawne.
 
 ## <a name="create-a-payload"></a>Tworzenie ładu
 
@@ -147,7 +147,7 @@ Na **stronie Konfigurowanie** ładu to czas na tworzenie ładu. Wiele dostępnyc
       - **Wstaw nazwę**: Wartość dodana w treści wiadomości to `${userName}`.
       - **Wstaw wiadomość** e-mail: Wartość dodana w treści wiadomości to `${emailAddress}`.
 
-      ![Sekcja Wiadomość e-mail na stronie Konfigurowanie obciążenia w kreatorze tworzenia przepływu pracy w sekcji Szkolenia symulacyjne dotyczące ataków w programie Microsoft Defender dla systemu Office 365.](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+      :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="Sekcja Wiadomość e-mail na stronie Konfigurowanie obciążenia w kreatorze tworzenia przepływu pracy w sekcji Szkolenia dotyczące symezyjów ataków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
       **Kontrolka łączenia wyłudzania** informacji: Ta kontrolka jest dostępna tylko w przypadku wybrania opcji Poświadczenie **zbiorów**, **Link** w załączniku lub Adres **URL dysków** na **stronie Techniki wybierania** . Użyj tej kontrolki, aby wstawić wcześniej wybrany adres URL w sekcji **Link wyłudzania** informacji.
 
@@ -204,7 +204,7 @@ Na **stronie Dodawanie wskaźników** kliknij pozycję **Dodaj wskaźnik**. W wy
 
   Jeśli jako lokalizację wskaźnika wybierzesz temat wiadomości e-mail lub treść wiadomości, dostępny jest przycisk  Zaznacz tekst. Kliknij ten przycisk, aby zaznaczyć tekst w temacie wiadomości lub w treści wiadomości, w którym ma się pojawić wskaźnik. Po zakończeniu kliknij pozycję **Wybierz**.
 
-  ![Zaznaczona lokalizacja tekstu w treści wiadomości, aby dodać ją do wskaźnika w kreatorze tworzenia przepływu pracy w szkoleniu symezyjny ataków.](../../media/attack-sim-training-payloads-add-indicators-select-location.png)
+  :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="Selected text location in the message body to add to a indicator in the payload creation wizard in Attack simulation training" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
   - **Opis wskaźnika**: możesz zaakceptować domyślny opis wskaźnika lub dostosować go.
 
@@ -232,15 +232,15 @@ Na głównej **stronie Przeglądanie ładu** możesz wybrać pozycję **Edytuj w
 
 Po zakończeniu kliknij pozycję **Prześlij**. Na wyświetlonej stronie potwierdzenia kliknij pozycję **Gotowe**.
 
-![Przejrzyj stronę szkoleń z symezyjną ataku w portalu Microsoft 365 Defender sieci Web.](../../media/attack-sim-training-payloads-review-payload.png)
+:::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="Strona Przeglądanie obciążenia w szkoleniu z symydyjną ataku w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 > [!IMPORTANT]
 > Utworzone łady będą mieć wartość **Dzierżawa** dla **właściwości Źródło** . Podczas tworzenia symulowań i wybierania ładowań upewnij się, że nie odfiltrowywuje się **wartości źródłowej** **dzierżawy**.
 
 ## <a name="related-links"></a>Linki pokrewne
 
-[Wprowadzenie do korzystania ze szkolenia symulacyjnego w zakresie ataków](attack-simulation-training-get-started.md)
+[Wprowadzenie z użyciem szkolenia symulacyjnego w zakresie ataków](attack-simulation-training-get-started.md)
 
 [Tworzenie symulacyjnej próby wyłudzania informacji](attack-simulation-training.md)
 
-[Uzyskaj szczegółowe informacje dzięki szkoleniom symulacyjnych ataków](attack-simulation-training-insights.md)
+[Uzyskuj szczegółowe informacje dzięki szkoleniu związanemu z symulacją ataku](attack-simulation-training-insights.md)

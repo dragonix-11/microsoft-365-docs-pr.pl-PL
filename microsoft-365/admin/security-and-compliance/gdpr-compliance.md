@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Dowiedz się, Microsoft 365 dla firm może pomóc w procesie ogólnego rozporządzenia o ochronie danych (RODO).
-ms.openlocfilehash: 7c8a2c402e362ede4eb9b2f4ec221dd8556052db
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: d5c24fe2f2295e99798fcc5382dc284cec01d385
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403652"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632410"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>Uproszczone RODO: przewodnik dla Twojej małej firmy
 
@@ -134,7 +134,7 @@ Jeśli zdecydujesz się przechowywać dane osobowe w chmurze, na przykład za po
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365 funkcje, które mogą pomóc
 
-Za pomocą funkcji [Konfigurowanie zgodności możesz](set-up-compliance.md) chronić informacje poufne swojej firmy. Menedżer zgodności pomoże Ci od razu rozpocząć pracę! Na przykład możesz skonfigurować [zasady DLP, które](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) będą używać szablonu [RODO](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+Za pomocą funkcji [Konfigurowanie zgodności możesz](../../business-premium/m365bp-set-up-compliance.md) chronić informacje poufne swojej firmy. Menedżer zgodności pomoże Ci od razu rozpocząć pracę! Na przykład możesz skonfigurować [zasady DLP, które](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) będą używać szablonu [RODO](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>Krok 5. Zachowaj dokumentację działań przetwarzania danych
 

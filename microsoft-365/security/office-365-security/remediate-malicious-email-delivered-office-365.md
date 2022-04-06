@@ -14,21 +14,21 @@ search.appverid: MET150
 description: Działania naprawcze w przypadku zagrożeń
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 49cd5f532f41fd05090592136e28ca2462a9efd6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 3ba8564ef5ecbd261dc47b2f0a48d6d4d77d620a
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681177"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638320"
 ---
-# <a name="remediate-malicious-email-delivered-in-office-365"></a>Remediate malicious email delivered in Office 365
+# <a name="remediate-malicious-email-delivered-in-office-365"></a>Korygowanie złośliwych wiadomości e-mail dostarczanych w usłudze Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md)
 
-Działania naprawcze oznaczają podejmowanie określonych działań w celu ochrony przed zagrożeniami. Złośliwe wiadomości e-mail wysyłane do organizacji mogą być czyszczone przez system, przez automatyczne przeczyszczenie bezgodzinne (ZAP) lub przez zespoły zabezpieczeń w ramach działań naprawczych, takich jak przenoszenie do skrzynki odbiorczej *, przechodzenie* do wiadomości-śmieci *, przechodzenie* do elementów usuniętych *,* niechciane usunięcie lub usuwanie *twarde.* Usługa Microsoft Defender dla Office 365 Plan 2/E5 umożliwia zespołom zabezpieczeń korygowanie zagrożeń w wiadomościach e-mail i funkcjach współpracy za pośrednictwem ręcznego i automatycznego badania.
+Działania naprawcze oznaczają podejmowanie określonych działań w celu ochrony przed zagrożeniami. Złośliwe wiadomości e-mail wysyłane do organizacji mogą być czyszczone przez system, przez automatyczne przeczyszczenie bezgodzinne (ZAP) lub przez zespoły zabezpieczeń w ramach działań naprawczych, takich jak przenoszenie do skrzynki odbiorczej *, przechodzenie* do wiadomości-śmieci *, przechodzenie* do elementów usuniętych *,* niechciane usunięcie lub usuwanie *twarde.* Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2/E5 umożliwia zespołom zabezpieczeń korygowanie zagrożeń związanych z pocztą e-mail i współpracą za pomocą ręcznego i automatycznego badania.
 
 > [!NOTE]
 > Aby zaradić w złośliwych wiadomościach  e-mail, zespoły zabezpieczeń muszą mieć przypisaną rolę wyszukiwania i przeczyszczania. Przypisywanie ról odbywa się [za pośrednictwem uprawnień w portalu Microsoft 365 Defender zadań](permissions-microsoft-365-security-center.md).
@@ -42,19 +42,21 @@ Administratorzy mogą podjąć wymagane działania w związku z wiadomościami e
 *Ręczne szukanie* odbywa się, gdy zespoły zabezpieczeń ręcznie identyfikują zagrożenia za pomocą funkcji wyszukiwania i filtrowania w Eksploratorze. Ręczne rozwiązywanie problemów z pocztą e-mail może zostać wyzwolone za pośrednictwem dowolnego widoku poczty e-mail *(Złośliwe* *oprogramowanie,* Wyłudzy lub Wszystkie wiadomości e-mail *) po* zidentyfikowaniu zestawu wiadomości e-mail, które wymagają rozwiązania.
 
 > [!div class="mx-imgBorder"]
-> [![Ręczne wyszukiwania w Office 365 w Eksploratorze zagrożeń według daty.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Zrzut ekranu przedstawiający ręczne wyszukiwania w Office 365 w Eksploratorze zagrożeń według daty.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Za pomocą Eksploratora zespoły ds. zabezpieczeń mogą wybierać wiadomości e-mail na kilka sposobów:
 
 - Ręczne wybieranie wiadomości e-mail: Korzystanie z filtrów w różnych widokach. Zaznacz maksymalnie 100 wiadomości e-mail, które chcesz rozwiązać.
 
-- Zaznaczenie zapytania: umożliwia zaznaczenie całego zapytania za pomocą przycisku **zaznacz wszystko** u góry. To samo zapytanie jest również wyświetlane w szczegółach przesyłania poczty w Centrum akcji.
+- Zaznaczenie zapytania: umożliwia zaznaczenie całego zapytania za pomocą przycisku **zaznacz wszystko** u góry. To samo zapytanie jest również wyświetlane w szczegółach przesyłania poczty w Centrum akcji. Klienci mogą przesyłać za pomocą Eksploratora zagrożeń maksymalnie 200 000 wiadomości e-mail.  
 
 - Wybór zapytania z wyłączeniem: Czasami zespoły ds. operacji zabezpieczeń mogą chcieć rozwiązać ten proces, zaznaczając całe zapytanie i wykluczając określone wiadomości e-mail z zapytania ręcznie. W tym celu administrator może użyć pola wyboru Zaznacz  wszystko i przewinąć w dół, aby ręcznie wykluczyć wiadomości e-mail. Kwerenda może zawierać maksymalnie 1000 wiadomości e-mail. Maksymalna liczba wykluczeń to 100.
 
 Po wybraniu wiadomości e-mail za pomocą Eksploratora możesz rozpocząć działania naprawcze, podejmowanie bezpośrednich działań lub kolejkowanie wiadomości e-mail dla akcji:
 
-- Bezpośrednie zatwierdzanie: Gdy akcje, takie jak przechodzenie do skrzynki odbiorczej *, przechodzenie* do wiadomości-śmieci *,* przechodzenie do elementów usuniętych *,* niechyłne usunięcie lub usuwanie bezpośrednie, są wybierane przez pracowników zabezpieczeń, którzy mają odpowiednie uprawnienia, a następnie są wykonywane następne kroki rozwiązywania problemów, a następnie rozpoczyna się proces rozwiązywania problemów w celu wykonania wybranej akcji. Tymczasowe wysuwanie pokazuje działania naprawcze w toku.
+- Bezpośrednie zatwierdzanie: Gdy akcje, takie jak przechodzenie do skrzynki odbiorczej *, przechodzenie* do wiadomości-śmieci *,* przechodzenie do elementów usuniętych *,* niechyłne usunięcie lub usuwanie bezpośrednie, są wybierane przez pracowników zabezpieczeń, którzy mają odpowiednie uprawnienia, a następnie są wykonywane następne kroki rozwiązywania problemów, a następnie rozpoczyna się proces rozwiązywania problemów w celu wykonania wybranej akcji.
+> [!NOTE]
+>Gdy działania naprawcze zostaną rozpostartowane, zostaną wygenerowane alert i równolegle badanie. W kolejce alertów jest wyświetlany alert o nazwie "Akcja administracyjna przesłana przez administratora", która informuje, że pracownicy zabezpieczeń pobrali działania naprawcze w encji. Zawiera szczegółowe informacje, takie jak imię i nazwisko osoby, która wykonała akcję, link do badania, godzina itp. Warto wiedzieć, że za każdym razem, gdy są wykonywane działania naprawcze, takie jak działania naprawcze w jednostkach. Wszystkie te akcje można trcakowane na karcie Historia & **Akcji** \>   ->  i przesyłaniaHistory (publiczna wersja zapoznawcza).
 
 - Zatwierdzanie dwuetapowe: Administratorzy, którzy nie mają odpowiednich uprawnień lub muszą zaczekać na wykonanie akcji, mogą wykonać akcję "Dodaj do działań naprawczych". W takim przypadku kierowane wiadomości e-mail są dodawane do kontenera rozwiązywania problemów. Zatwierdzenie jest wymagane przed wykonaniem działań naprawczych.
 
@@ -63,19 +65,27 @@ Po wybraniu wiadomości e-mail za pomocą Eksploratora możesz rozpocząć dzia�
 > [!div class="mx-imgBorder"]
 > [![Poczta z złośliwym oprogramowaniem na stronie "Zamapowana" przedstawiająca czas wykonywania za pomocą zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-W Centrum akcji są wyświetlane wszystkie działania naprawcze (bezpośrednie lub dwuetapowe), które utworzono w Eksploratorze, oraz zatwierdzone działania pochodzące z automatycznego badania. Dostęp do nich można uzyskać za pośrednictwem lewego panelu **nawigacyjnego w centrum** \> **akcji Recenzja**.
+W Centrum akcji są wyświetlane wszystkie działania naprawcze (zatwierdzenia bezpośrednie) utworzone w Eksploratorze, Szukanie zaawansowane lub Zautomatyzowane badanie. Dostęp do nich można uzyskać za pośrednictwem lewego panelu nawigacyjnego w **obszarze Akcje & Centrum**   ->  akcjiSyłki \>**na karcie Historia**.
 
-> [!div class="mx-imgBorder"]
-> [![Centrum akcji z listą zagrożeń według dat i ważności.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
+W Centrum akcji są wyświetlane wszystkie działania naprawcze (zatwierdzenia bezpośrednie), które zostały utworzone w Eksploratorze lub w trybie zaawansowanego wyszukiwania lub przy użyciu automatycznego badania. Dostęp do nich można uzyskać za pośrednictwem lewego panelu nawigacyjnego w **obszarze Akcje & Centrum**   ->  akcjiSyłki \>**na karcie Historia**. 
 
-Centrum akcji zawiera wszystkie działania naprawcze z ostatnich 30 dni. Akcje wykonane za pomocą Eksploratora są wyświetlane według nazwy udostępnianej przez zespół operacji zabezpieczeń podczas tworzenia środków zaradczych. Akcje wykonane w ramach zautomatyzowanych badań mają tytuły, które zaczynają się od powiązanego alertu, który wyzwolił badanie, na przykład "Zap klaster poczty e-mail... ".
+Czynności ręczne oczekujące na zatwierdzenie w ramach dwuetapowego procesu zatwierdzania (1. dodaj do działań naprawczych przez jednego członka zespołu ds. operacji zabezpieczeń (2). przeglądane i zatwierdzone przez innego członka zespołu operacji zabezpieczeń)  \> są widoczne tylko w starszych wersjach Centrum akcji w centrum akcji recenzji Ochrona usługi Office 365 w usłudze Defender, a nie na zdarzeniach/badaniach i w Ujednoliconym Centrum akcji.
 
-Otwórz dowolny element rozwiązywania problemów, aby wyświetlić dotyczące go szczegóły, w tym jego nazwę, datę utworzenia, opis, zagrożenia i stan. Pokazano też dwie poniższe karty.
+> [!NOTE]
+> Zatwierdzanie dwuetapowe: akcje dostępne tylko w Centrum akcji pakietu Office  **— Recenzja** \> **— Centrum akcji**
 
-- **Karta Przesyłanie** poczty: Wyświetla liczbę wiadomości e-mail przesłanych za pomocą Eksploratora zagrożeń lub zautomatyzowanych badań, które mają zostać rozwiązane. Takie wiadomości e-mail mogą mieć możliwość akcji lub nie.
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="Ujednolicone Centrum akcji wyświetla 30 dni działań naprawczych.":::
+
+Ujednolicone Centrum akcji pokazuje działania naprawcze z ostatnich 30 dni. Akcje wykonywane za pomocą Eksploratora są wyświetlane pod nazwą podaną przez zespół operacji zabezpieczeń podczas tworzenia działania naprawczego, a także identyfikator zatwierdzenia i identyfikator badania. Akcje wykonywane w ramach zautomatyzowanych badań mają tytuły, które rozpoczynają się od alertu pokrewnego, który spowodował badanie, takiego jak grup poczty *e-mail Zap*.
+
+Otwórz dowolny element rozwiązywania problemów, aby wyświetlić szczegółowe informacje na jego temat, w tym nazwę działania naprawczego, identyfikator zatwierdzenia, identyfikator badania, datę utworzenia, opis, stan, źródło akcji, typ akcji, decyzja o stanie. Powoduje również otwarcie okienka bocznego ze szczegółami akcji, szczegółami grup poczty e-mail, alertem i szczegółami zdarzenia.
+
+- *Otwórz stronę Badanie,* zostanie otwarta strona Badanie administratora zawierająca mniej szczegółów i kart. Zawiera on takie szczegóły jak: alert pokrewny, jednostka wybrana do działania naprawczego, podjęte działania, stan działań naprawczych, liczba jednostek, dzienniki, osoba zatwierdzająca działanie. To badanie pozwala śledzić badania wykonane ręcznie przez administratora i zawiera szczegółowe informacje na temat zaznaczeń wybranych przez administratora, dlatego jest nazywane badaniem akcji administratora. Nie trzeba działać w przypadku badania i ostrzegać o tym, że stan jest już zatwierdzony.   
+- *Liczba wiadomości e-mail* Wyświetla liczbę wiadomości e-mail przesłanych za pomocą Eksploratora zagrożeń. Takie wiadomości e-mail mogą mieć możliwość akcji lub nie. 
+- *Dzienniki akcji* Przedstawia szczegóły dotyczące stanu rozwiązywania problemów, na przykład stan "pomyślny/ nieudany/ już w lokalizacji docelowej"
 
   > [!div class="mx-imgBorder"]
-  > [![Centrum akcji z zagrożeniami, które nie mogą być akcjami ani działaniem.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![Zrzut ekranu przedstawiający Centrum akcji z zagrożeniami, które nie mogą być akcjami i bez akcji.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
   - **Z akcją**: Wiadomości e-mail w następujących lokalizacjach skrzynek pocztowych w chmurze można przenosić i używać do tego celu:
     - Skrzynka odbiorcza
@@ -107,14 +117,8 @@ Otwórz dowolny element rozwiązywania problemów, aby wyświetlić dotyczące g
 
   W razie potrzeby administratorzy mogą podjąć działania na wiadomościach e-mail w kwarantannie, ale w razie potrzeby wygasną one poza kwarantanną, jeśli nie zostaną ręcznie wyczyszone. Domyślnie wiadomości e-mail poddane kwarantannie z powodu złośliwej zawartości nie są dostępne dla użytkowników, więc personel zabezpieczeń nie musi nic zrobić, aby usunąć zagrożenia w kwarantannie. Jeśli wiadomości e-mail są lokalne lub zewnętrzne, można skontaktować się z użytkownikiem w celu ich rozwiązania. Administratorzy mogą też usuwać wiadomości przy użyciu osobnych narzędzi serwera/zabezpieczeń poczty e-mail. Te wiadomości *e-mail* można zidentyfikować, stosując w Eksploratorze lokalizację dostarczania = filtr zewnętrzny. W przypadku nieudanych lub upuszczanych wiadomości e-mail lub wiadomości e-mail niedostępnych dla użytkowników nie będzie żadnych wiadomości e-mail, których nie będzie można zmniejszyć, ponieważ te wiadomości e-mail nie trafią do skrzynki pocztowej.
 
-  Na poniższej ilustracji przedstawiono wygląd przesyłania w Centrum akcji. Działania naprawcze mogą zawierać wiele elementów przesyłania. Jeśli wiele akcji zostanie zatwierdzonych w ramach jednego zautomatyzowanego badania, każda akcja grupowania poczty e-mail lub poczty e-mail jest wyświetlana w ramach tych samych działań naprawczych, co inne przesyłanie.
-
-  > [!div class="mx-imgBorder"]
-  > [![Zap email cluster flyout panel.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
-
-  Wybierz element przesyłania poczty, aby wyświetlić szczegóły dotyczące tych działań naprawczych, takie jak zapytanie (gdy działania naprawcze są wyzwolone przez zautomatyzowane badania lub eksploratora przez wybranie zapytania) oraz czas rozpoczęcia i zakończenia działań naprawczych. Jest w nim również wyświetlana lista komunikatów, które zostały przesłane w celu rozwiązania problemów. Gdy wiadomości wychodzą poza okres przechowywania w Eksploratorze, wiadomości znikają z tej listy. Na liście są również wyświetlane poszczególne wiadomości, których rozwiązywanie można rozwiązać.
-
-- **Dzienniki akcji**: Na tej karcie są wyświetlane wiadomości, których działania zostały rozwiązane, w tym zatwierdzone daty, administrator, który zatwierdził akcję, działanie, stan i liczby.
+ 
+- **Dzienniki akcji**: W tym miejscu są wyświetlane wiadomości, których działania naprawcze zostały rozwiązane, zakończyły się pomyślnie i nie powiodły się, już w lokalizacji docelowej.
 
   Stan może być:
 
@@ -139,5 +143,9 @@ Akcje mogą być podejmowane tylko w przypadku wiadomości w folderach Skrzynka 
 Wybierz dowolny element w dzienniku akcji, aby wyświetlić szczegóły dotyczące rozwiązywania problemów. Jeśli szczegóły mówią "pomyślnie" lub "nie znaleziono w skrzynce pocztowej", oznacza to, że ten element został już usunięty ze skrzynki pocztowej. Czasami podczas rozwiązywania problemów występuje błąd systemu. W takich przypadkach warto ponownie wykonać działania naprawcze.
 
 W przypadku rozwiązywania problemów z dużymi partiami poczty e-mail wyeksportuj za pośrednictwem przesyłania poczty wiadomości wysłanych w celu ich rozwiązania oraz wiadomości, które zostały rozwiązane za pośrednictwem dzienników akcji. Limit eksportu został zwiększony do 100 000 rekordów.
+
+ Administratorzy mogą podjąć działania naprawcze, takie jak przenoszenie wiadomości e-mail do folderu Wiadomości-śmieci, Skrzynka odbiorcza lub Elementy usunięte i usuwanie akcji, takich jak "miękkie usunięcie" lub "trudne usunięcie" ze stron zaawansowanego wyszukiwania.
+
+:::image type="content" source="../../media/microsoft-365-defender-advanced-hunting-actions-pane.png" alt-text="Panel Zaawansowane szukanie, Weź udział w akcjach z wyborem akcji.":::
 
 Działania naprawcze w celu zmniejszenia zagrożeń, rozwiązania podejrzanych wiadomości e-mail i zapewnienia bezpieczeństwa organizacji.

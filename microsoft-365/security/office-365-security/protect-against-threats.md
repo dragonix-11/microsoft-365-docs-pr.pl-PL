@@ -1,5 +1,5 @@
 ---
-title: Ochrona przed zagrożeniami w programie Microsoft Defender Office 365, ochrona przed złośliwym oprogramowaniem, ochrona przed wyłudzaniem informacji, ochrona przed spamem, linki Sejf, załączniki programu Sejf, półgodzinne automatyczne przeczyszczanie (ZAP), konfiguracja zabezpieczeń MDO
+title: Ochrona przed zagrożeniami w programach Ochrona usługi Office 365 w usłudze Microsoft Defender, anti-malware, anti-phishing, anti-spam, linki Sejf, załączniki Sejf, automatyczne przeczyszczanie zerowej godziny (ZAP), konfiguracja zabezpieczeń MDO
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ description: Administratorzy mogą dowiedzieć się więcej o ochronie przed Mic
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 280cbd310742ecfe31ac8b565d285f7b464d3e24
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e5a0be5171a2de07792cd259dc6547046d7c1630
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683850"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507192"
 ---
 # <a name="protect-against-threats"></a>Ochrona przed zagrożeniami
 
@@ -33,15 +33,15 @@ ms.locfileid: "63683850"
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Oto przewodnik Szybki start, który dzieli konfigurację programu Defender na Office 365 części. Jeśli dopiero zaczynasz korzystać z funkcji ochrony przed zagrożeniami w programie Office 365, nie wiesz, od czego zacząć, lub jeśli najlepiej się *uczysz, użyj* tych wskazówek jako listy kontrolnej i punktu wyjścia.
+Oto przewodnik Szybki start, który dzieli konfigurację Ochrona usługi Office 365 w usłudze Defender na fragmenty. Jeśli dopiero zaczynasz korzystać z funkcji ochrony przed zagrożeniami w programie Office 365, nie wiesz, od czego zacząć, lub jeśli najlepiej się *uczysz, użyj* tych wskazówek jako listy kontrolnej i punktu wyjścia.
 
 > [!IMPORTANT]
 > **Początkowe zalecane ustawienia są dostępne dla** każdego rodzaju zasad, jednak dostępnych jest wiele opcji i możesz dostosować je do potrzeb konkretnej organizacji. Zezwalaj około 30 minut na sposób pracy zasad lub zmian przez centrum danych.
 >
-> Aby pominąć ręczną konfigurację większości zasad w Office 365 Defender, można użyć wstępnie ustawionych zasad zabezpieczeń na poziomie Standardowy lub Ścisłe. Aby uzyskać więcej informacji, zobacz [Wstępnie ustawione zasady zabezpieczeń w usługach EOP i Microsoft Defender for Office 365](preset-security-policies.md).
+> Aby pominąć ręczną konfigurację większości zasad w programie Ochrona usługi Office 365 w usłudze Defender, można użyć wstępnie ustawionych zasad zabezpieczeń na poziomie Standardowy lub Ścisłe. Aby uzyskać więcej informacji, zobacz [Wstępnie ustawione zasady zabezpieczeń w uchcie eOP i programie Ochrona usługi Office 365 w usłudze Microsoft Defender](preset-security-policies.md).
 
 ## <a name="requirements"></a>Wymagania
 
@@ -50,7 +50,7 @@ Oto przewodnik Szybki start, który dzieli konfigurację programu Defender na Of
 Funkcje ochrony przed zagrożeniami *są zawarte we* wszystkich subskrypcjach produktów firmy Microsoft Office 365, jednak niektóre subskrypcje mają zaawansowane funkcje. W poniższej tabeli wymieniono funkcje ochrony zawarte w tym artykule oraz minimalne wymagania dotyczące subskrypcji.
 
 > [!TIP]
-> Zwróć uwagę, że oprócz wskazówek, jak włączyć *inspekcję, wykonać* kroki w celu uruchomienia ochrony przed złośliwym oprogramowaniem, ochrony przed wyłudzaniem informacji i ochrony przed spamem, które są oznaczone jako część Office 365 Exchange Online Protection (**EOP**). Może to wydawać się nietypowe w Office 365 Defender, dopóki nie pamiętasz (**Defender dla systemu Office 365**) zawiera i tworzy program EOP.
+> Zwróć uwagę, że oprócz wskazówek, jak włączyć *inspekcję, wykonać* kroki w celu uruchomienia ochrony przed złośliwym oprogramowaniem, ochrony przed wyłudzaniem informacji i ochrony przed spamem, które są oznaczone jako część Office 365 Exchange Online Protection (**EOP**). Może to wydawać się nieparzyste Ochrona usługi Office 365 w usłudze Defender artykułu, dopóki nie pamiętasz (**Ochrona usługi Office 365 w usłudze Defender**) zawiera i tworzysz program EOP.
 
 |Typ ochrony|Wymaganie subskrypcji|
 |---|---|
@@ -58,11 +58,11 @@ Funkcje ochrony przed zagrożeniami *są zawarte we* wszystkich subskrypcjach pr
 |Ochrona przed złośliwym oprogramowaniem|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Ochrona przed wyłudzaniem informacji|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Ochrona przed spamem|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Ochrona przed złośliwymi adresami URL i plikami w wiadomościach e-mail Office dokumentach (linki Sejf i załączniki Sejf wiadomości)|[Usługa Microsoft Defender dla Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Ochrona przed złośliwymi adresami URL i plikami w wiadomościach e-mail Office dokumentach (linki Sejf i załączniki Sejf wiadomości)|[Ochrona usługi Office 365 w usłudze Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Role i uprawnienia
 
-Aby skonfigurować usługę Defender Office 365 zasady, musisz mieć przypisaną odpowiednią rolę. W poniższej tabeli znajdziesz role, które mogą wykonać te czynności.
+Aby skonfigurować Ochrona usługi Office 365 w usłudze Defender, musisz mieć przypisaną odpowiednią rolę. W poniższej tabeli znajdziesz role, które mogą wykonać te czynności.
 
 |Rola lub grupa ról|Gdzie można dowiedzieć się więcej|
 |---|---|
@@ -97,13 +97,13 @@ Aby uzyskać więcej informacji na temat zalecanych ustawień ochrony przed zło
 
 Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed złośliwym oprogramowaniem, zobacz Konfigurowanie zasad ochrony przed złośliwym oprogramowaniem [w uciekaniu usługi EOP](configure-anti-malware-policies.md).
 
-## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>Część 2. Ochrona przed wyłudzaniem informacji w programach EOP i Defender dla Office 365
+## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>Część 2. Ochrona przed wyłudzaniem informacji w UOS i Ochrona usługi Office 365 w usłudze Defender
 
-[Ochrona przed wyłudzaniem informacji](anti-phishing-protection.md) jest dostępna w subskrypcjach, które zawierają [usługę EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Zaawansowana ochrona przed wyłudzaniem informacji jest dostępna w [programie Defender dla Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+[Ochrona przed wyłudzaniem informacji](anti-phishing-protection.md) jest dostępna w subskrypcjach, które zawierają [usługę EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Zaawansowana ochrona przed wyłudzaniem informacji jest [dostępna w Ochrona usługi Office 365 w usłudze Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-Aby uzyskać więcej informacji na temat zalecanych ustawień zasad ochrony przed wyłudzaniem informacji, zobacz Ustawienia zasad ochrony przed wyłudzaniem informacji usługi [EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) i Ustawienia zasad ochrony przed wyłudzaniem informacji w programie [Microsoft Defender dla systemu Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
+Aby uzyskać więcej informacji na temat zalecanych ustawień zasad ochrony przed wyłudzaniem informacji, zobacz Ustawienia zasad ochrony przed wyłudzaniem informacji [eOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) i Ustawienia zasad ochrony przed wyłudzaniem informacji w [programie Ochrona usługi Office 365 w usłudze Microsoft Defender](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-Poniżej opisano procedurę konfigurowania domyślnych zasad ochrony przed wyłudzaniem informacji. Ustawienia, które są dostępne tylko w programie Defender Office 365 są wyraźnie oznaczone.
+Poniżej opisano procedurę konfigurowania domyślnych zasad ochrony przed wyłudzaniem informacji. Ustawienia, które są dostępne tylko w Ochrona usługi Office 365 w usłudze Defender są wyraźnie oznaczone.
 
 1. Otwórz stronę **ochrony przed wyłudzaniem** informacji w portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com/antiphishing>.
 
@@ -139,11 +139,11 @@ Poniżej opisano procedurę konfigurowania domyślnych zasad ochrony przed wyłu
 
      Po zakończeniu kliknij przycisk **Zapisz**.
 
-   <sup>\*</sup>To ustawienie jest dostępne tylko w programie Defender dla Office 365.
+   <sup>\*</sup>To ustawienie jest dostępne tylko w programie Ochrona usługi Office 365 w usłudze Defender.
 
 4. Kliknij **przycisk Zapisz,** a następnie kliknij przycisk **Zamknij.**
 
-Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed wyłudzaniem informacji, zobacz Konfigurowanie zasad ochrony przed wyłudzaniem informacji w uwitrynie [EOP](configure-anti-phishing-policies-eop.md) i Konfigurowanie zasad ochrony przed wyłudzaniem informacji w programie [Microsoft Defender dla Office 365](configure-mdo-anti-phishing-policies.md).
+Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed wyłudzaniem informacji, zobacz Konfigurowanie zasad ochrony przed wyłudzaniem informacji w u usługi [EOP](configure-anti-phishing-policies-eop.md) i Konfigurowanie zasad ochrony przed wyłudzaniem informacji w [programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>Część 3. Ochrona przed spamem w uciekaniu poczty eop
 
@@ -186,18 +186,18 @@ Aby uzyskać więcej informacji na temat zalecanych ustawień ochrony przed spam
 
 Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania zasad ochrony przed spamem, zobacz [Konfigurowanie zasad ochrony przed spamem w u usługi EOP](configure-your-spam-filter-policies.md).
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Część 4. Ochrona przed złośliwymi adresami URL i plikami (linki Sejf i załączniki Sejf w programie Defender dla Office 365)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Część 4. Ochrona przed złośliwymi adresami URL i plikami (linki Sejf i załączniki Sejf w folderze Ochrona usługi Office 365 w usłudze Defender)
 
-Ochrona przed złośliwymi adresami URL i plikami po kliknięciu jest dostępna w subskrypcjach zawierających usługę [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Te zasady są ustawiane za [pomocą Sejf załączników](safe-attachments.md) [i Sejf linków](safe-links.md).
+Ochrona przed złośliwymi adresami URL i plikami po kliknięciu jest dostępna w subskrypcjach zawierających [Ochrona usługi Office 365 w usłudze Microsoft Defender.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) Te zasady są ustawiane za [pomocą Sejf załączników](safe-attachments.md) [i Sejf linków](safe-links.md).
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Sejf załączników w programie Microsoft Defender dla Office 365
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Sejf załączników w aplikacji Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 Aby uzyskać więcej informacji na temat zalecanych ustawień dla załączników Sejf, zobacz .[ Sejf ustawienia załączników](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
 1. Otwórz stronę **Sejf załączników** w portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com/safeattachmentv2>.
 
 2. Na stronie **Sejf Załączniki** kliknij pozycję **Ustawienia** globalne, a następnie skonfiguruj następujące ustawienia w wyświetlonym wysuwanych oknie wysuwanych:
-   - **Włącz defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)).
+   - **Włącz Ochrona usługi Office 365 w usłudze Defender dla SharePoint, OneDrive i Microsoft Teams**: Włącz to ustawienie (![włącz).](../../media/scc-toggle-on.png)
 
      > [!IMPORTANT]
      > **Przed włączeniem załączników Sejf dla aplikacji SharePoint,** OneDrive i Microsoft Teams upewnij się, że rejestrowanie inspekcji jest włączone w organizacji. Ta akcja jest zazwyczaj wykonywana przez osobę, która ma rolę Dzienniki inspekcji przypisaną do Exchange Online. Aby uzyskać więcej informacji, zobacz Włączanie lub wyłączanie wyszukiwania w [dzienniku inspekcji](../../compliance/turn-audit-log-search-on-or-off.md).
@@ -230,11 +230,11 @@ Aby uzyskać więcej informacji na temat zalecanych ustawień dla załączników
 
 Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania Sejf zasad załączników i ustawień globalnych dotyczących załączników Sejf, zobacz następujące tematy:
 
-- [Konfigurowanie zasad Sejf załączników w programie Microsoft Defender dla Office 365](set-up-safe-attachments-policies.md)
+- [Konfigurowanie zasad Sejf załączników w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-attachments-policies.md)
 - [Włącz załączniki Sejf załączników wiadomości SharePoint, OneDrive i Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
 - [Bezpieczne dokumenty w usłudze Microsoft 365 E5](safe-docs.md)
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Sejf linki w programie Microsoft Defender dla Office 365
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Sejf linków w aplikacji Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 Aby uzyskać więcej informacji na temat zalecanych ustawień linków Sejf, zobacz Sejf [ustawienia linków](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
@@ -255,16 +255,20 @@ Aby uzyskać więcej informacji na temat zalecanych ustawień linków Sejf, zoba
      - **Nazwa**: Wprowadź coś unikatowego i opisowego.
      - **Opis**. Wprowadź opcjonalny opis.
    - **Strona Użytkownicy i domeny**: ponieważ są to Twoje pierwsze zasady i prawdopodobnie chcesz zmaksymalizować zasięg, rozważ wprowadzenie zaakceptowanych [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) domen w **polu** Domeny. W przeciwnym razie możesz użyć pól **Użytkownicy** i  Grupy, aby uzyskać bardziej szczegółową kontrolę. Możesz określić wyjątki, wybierając pozycję **Wyklucz tych użytkowników, grupy i domeny i** wprowadzając wartości.
-   - **Strona ustawień** ochrony:
-     - **Wybierz akcję dla nieznanych, potencjalnie złośliwych adresów URL w wiadomościach**: Włącz to **ustawienie**.
-     - **Wybierz akcję dla nieznanych lub potencjalnie złośliwych adresów URL** w Microsoft Teams: Włącz to **ustawienie**. Od marca 2020 r. to ustawienie jest dostępne w wersji Preview i jest dostępne lub działa tylko dla członków programu Microsoft Teams Technology Adoption Program (TAP).
-     - **Stosowanie skanowania w czasie rzeczywistym podejrzanych linków i linków, które** wskazują pliki: Wybierz to ustawienie (włącz).
+   - **Adres URL & stronie ustawień ochrony** :
+     - **Akcja na potencjalnie złośliwych adresach URL w sekcji Wiadomości e-mail** :
+       - **Wł.: Sejf sprawdza** listę znanych, złośliwych linków, gdy użytkownicy klikają linki w wiadomości e-mail: Wybierz jego ustawienie (włącz).
+       - **Stosowanie Sejf do wiadomości e-mail wysyłanych** w organizacji: Wybierz to ustawienie (włącz).
+       - **Stosowanie skanowania w czasie rzeczywistym podejrzanych linków i linków, które** wskazują pliki: Wybierz to ustawienie (włącz).
        - **Przed dostarczeniem wiadomości poczekaj**, aż skanowanie adresów URL zostanie ukończone: wybierz to ustawienie (włącz).
-     - **Stosowanie Sejf do wiadomości e-mail wysyłanych** w organizacji: Wybierz to ustawienie (włącz).
-     - **Nie śledź kliknięć użytkownika**: sprawdź, czy to ustawienie nie jest zaznaczone (wyłączone).
-     - **Nie pozwól użytkownikom na kliknięcie w oryginalnym adresie URL**: sprawdź, czy to ustawienie jest włączone (zaznaczone).
-     - Wyświetlanie **brandingu organizacji** na stronach powiadomień i ostrzeżeń: Zaznaczenie tego ustawienia (włączenie go) jest istotne dopiero po zakończeniu instrukcje w temacie [](../../admin/setup/customize-your-organization-theme.md) Dostosowywanie motywu Microsoft 365 organizacji w celu przekazania logo firmy.
-     - **Nie przepisuj następujących adresów URL**: Nie mamy konkretnych zaleceń dla tego ustawienia. Aby uzyskać więcej informacji, zobacz [listy "Nie](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) robisz ponownie następujących adresów URL" w zasadach dotyczących Sejf URL.
+       - **Nie redaguj adresów URL, sprawdzaj** tylko za pośrednictwem interfejsu API Sejf Link: Sprawdź, czy to ustawienie nie jest zaznaczone (wyłącz tę opcję).
+     - **Nie przepisuj w wiadomości e-mail** następujących adresów URL: Nie mamy konkretnych zaleceń dla tego ustawienia. Aby uzyskać więcej informacji, zobacz [listy "Nie](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) robisz ponownie następujących adresów URL" w zasadach dotyczących Sejf URL.
+     - **Akcja w przypadku potencjalnie złośliwych adresów URL w Microsoft Teams** adresach URL:
+       - ***Wł.: Sejf** sprawdza listę znanych, złośliwych linków, gdy użytkownicy klikają linki w aplikacji Microsoft Teams: Wybierz to ustawienie (włącz).
+     - **Kliknij sekcję ustawień** ochrony:
+       - **Śledź kliknięcia użytkowników**: Sprawdź, czy to ustawienie jest zaznaczone (włączone).
+       - **Pozwól użytkownikom na kliknięcie pierwotnego adresu URL**: Wyłącz to ustawienie (nie zaznaczone).
+       - Wyświetlanie **brandingu organizacji** na stronach powiadomień i ostrzeżeń: Zaznaczenie tego ustawienia (włączenie go) jest istotne dopiero po zakończeniu instrukcje w temacie [](../../admin/setup/customize-your-organization-theme.md) Dostosowywanie motywu Microsoft 365 organizacji w celu przekazania logo firmy.
    - **Strona** powiadomienia:
      - **Jak chcesz powiadomić użytkowników?** sekcja: Opcjonalnie możesz wybrać pozycję Użyj **niestandardowego tekstu powiadomień** , aby wprowadzić niestandardowy tekst powiadomienia. Aby przetłumaczyć niestandardowy tekst powiadomienia na język użytkownika **Microsoft Translator** użyć funkcji automatycznego tłumaczenia niestandardowego tekstu powiadomień. W przeciwnym razie **pozostaw zaznaczoną opcję Użyj domyślnego tekstu** powiadomień.
 
@@ -272,8 +276,8 @@ Aby uzyskać więcej informacji na temat zalecanych ustawień linków Sejf, zoba
 
 Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania Sejf linków i ustawień globalnych linków do witryn Sejf, zobacz następujące tematy:
 
-- [Konfigurowanie zasad Sejf Linków w programie Microsoft Defender dla Office 365](set-up-safe-links-policies.md)
-- [Konfigurowanie ustawień globalnych dla programu Sejf Links w programie Microsoft Defender dla Office 365](configure-global-settings-for-safe-links.md)
+- [Konfigurowanie zasad Sejf linków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](set-up-safe-links-policies.md)
+- [Konfigurowanie ustawień globalnych linków Sejf w programie Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-global-settings-for-safe-links.md)
 
 ### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>Teraz możesz skonfigurować alerty dotyczące wykrytych plików w SharePoint Online lub OneDrive dla Firm
 
@@ -312,7 +316,7 @@ Aby dowiedzieć się więcej o zasadach alertów, zobacz [Zasady alertów w Cent
 > Po zakończeniu konfigurowania możesz rozpocząć badania obciążenia pracą, korzystając z poniższych linków:
 >
 > - [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report)
-> - [Zarządzaj plikami poddanymi kwarantannie za pomocą portalu Microsoft 365 Defender usługi Defender dla Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+> - [Zarządzanie plikami poddanymi kwarantannie w portalu Microsoft 365 Defender w programie Ochrona usługi Office 365 w usłudze Defender](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 > - [Co należy zrobić w przypadku, gdy złośliwy plik zostanie znaleziony w SharePoint Online, OneDrive lub Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 > - [Zarządzanie wiadomościami i plikami poddanymi kwarantannie jako administrator w Microsoft 365](manage-quarantined-messages-and-files.md)
 
@@ -322,6 +326,6 @@ Po skonfigurowaniu funkcji ochrony przed zagrożeniami pamiętaj o tym, aby moni
 
 |Co należy zrobić|Zasoby, aby dowiedzieć się więcej|
 |---|---|
-|Wyświetlanie raportów w celu wyświetlenia informacji o tym, jak działają funkcje ochrony przed zagrożeniami w organizacji|[Raporty zabezpieczeń poczty e-mail](view-email-security-reports.md) <p> [Raporty dotyczące programu Microsoft Defender dla Office 365](view-reports-for-mdo.md) <p> [Eksplorator zagrożeń](threat-explorer.md)|
+|Wyświetlanie raportów w celu wyświetlenia informacji o tym, jak działają funkcje ochrony przed zagrożeniami w organizacji|[Raporty zabezpieczeń poczty e-mail](view-email-security-reports.md) <p> [Raporty dla Ochrona usługi Office 365 w usłudze Microsoft Defender](view-reports-for-mdo.md) <p> [Eksplorator zagrożeń](threat-explorer.md)|
 |Okresowe przeglądanie i poprawianie zasad ochrony przed zagrożeniami zgodnie z potrzebami|[Secure Score](../defender/microsoft-secure-score.md) <p> [Microsoft 365 analizy zagrożeń i funkcji reakcji](./office-365-ti.md)|
 |Obserwowanie nowych funkcji i aktualizacji usługi|[Opcje wydania standardowego i kierowanego](../../admin/manage/release-options-in-office-365.md) <p> [Centrum wiadomości](../../admin/manage/message-center.md) <p> [Plan działania usługi Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Opisy usług](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

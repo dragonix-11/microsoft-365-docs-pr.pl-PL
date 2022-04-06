@@ -1,5 +1,5 @@
 ---
-title: Wyświetlanie programu Defender Office 365 raportów
+title: Wyświetlanie raportów ochrony usługi Office 365 w usłudze Defender
 f1.keywords:
 - CSH
 ms.author: chrisda
@@ -16,27 +16,27 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratorzy mogą dowiedzieć się, jak znaleźć i używać programu Defender do Office 365, które są dostępne w portalu Microsoft 365 Defender sieci.
+description: Administratorzy mogą dowiedzieć się, jak znaleźć raporty Ochrona usługi Office 365 w usłudze Defender i korzystać z nich dostępne w portalu Microsoft 365 Defender sieci.
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de0dd5b7c0466a722a788ee3fe4e6c843d70f5eb
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bcc77aaac71c8f8b4c3d3635b596a56ac12a3d7d
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680979"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507496"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów programu Defender Office 365 w portalu Microsoft 365 Defender-
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie Ochrona usługi Office 365 w usłudze Defender w portalu Microsoft 365 Defender użytkowników
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 1 i plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Program Microsoft Defender dla organizacji Office 365 (na przykład subskrypcje usługi Microsoft 365 E5 lub usługa Microsoft Defender dla usługi Office 365 Plan 1 lub Program Microsoft Defender dla dodatków Office 365 Plan 2) zawiera wiele różnych raportów dotyczących zabezpieczeń. Jeśli masz odpowiednie [uprawnienia](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), możesz wyświetlać i pobierać te raporty w portalu Microsoft 365 Defender sieci.
+Ochrona usługi Office 365 w usłudze Microsoft Defender (na przykład Microsoft 365 E5 subskrypcji usługi Ochrona usługi Office 365 w usłudze Microsoft Defender planie 1 lub Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2) zawierają różne raporty dotyczące zabezpieczeń. Jeśli masz odpowiednie [uprawnienia](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), możesz wyświetlać i pobierać te raporty w portalu Microsoft 365 Defender sieci.
 
 ## <a name="view-and-download-reports"></a>Wyświetlanie oraz pobieranie raportów
 
@@ -50,11 +50,11 @@ Program Microsoft Defender dla organizacji Office 365 (na przykład subskrypcje 
 
 1. W portalu Microsoft 365 Defender w witrynie <https://security.microsoft.com>, przejdź do strony **RaportyMail** >  **& do** \> **pobrania**. Aby przejść bezpośrednio do strony **Raporty do pobrania** , użyj przycisku <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
-![Wyślij & e-mail do raportów o współpracy w Microsoft 365 Defender sieci Web.](../../media/email-collaboration-download-reports.png)
+:::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="Strona Raportów & wiadomości e-mail w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/email-collaboration-download-reports.png":::
 
 > [!NOTE]
 >
-> Raporty zabezpieczeń poczty e-mail, które nie wymagają usługi Defender Office 365 opisano w tece Wyświetlanie raportów dotyczących zabezpieczeń poczty [e-mail w Microsoft 365 Defender portalu](view-email-security-reports.md).
+> Raporty zabezpieczeń poczty e-mail, które nie wymagają Ochrona usługi Office 365 w usłudze Defender opisano w tece Wyświetlanie raportów dotyczących zabezpieczeń poczty e-mail w [portalu Microsoft 365 Defender wiadomości e-mail](view-email-security-reports.md).
 >
 > Raporty związane z przepływem poczty e-mail znajdują się teraz w centrum Exchange administracyjnego (EAC). Aby uzyskać więcej informacji na temat tych raportów, zobacz [Raporty przepływu poczty e-mail w nowej Exchange administracyjnego](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
@@ -78,7 +78,8 @@ Aby wyświetlić raport, otwórz portal Microsoft 365 Defender <https://security
 
 Na stronie **Raporty &-mail znajdź** pozycję **Raport** opóźnień poczty, a następnie kliknij **pozycję Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, użyj funkcji <https://security.microsoft.com/mailLatencyReport>.
 
-![Widżet raportu opóźnień poczty e-mail na & raportów o współpracy poczty e-mail.](../../media/mail-latency-report-widget.png)
+
+:::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="Widżet raportu opóźnienie poczty na stronie Raporty o & poczty e-mail" lightbox="../../media/mail-latency-report-widget.png":::
 
 Na stronie **Raport o opóźnieniach** poczty na stronie Raport opóźnień poczty dostępne są **następujące karty:**
 
@@ -88,47 +89,50 @@ Na stronie **Raport o opóźnieniach** poczty na stronie Raport opóźnień pocz
 
 Niezależnie od wybranej karty na wykresie są wyświetlane wiadomości podzielone na następujące kategorie:
 
-- **Opóźnienie dostarczania poczty**
-- **Detonations**
+- **Ogólne**
+- **Detonacja**
 
 Po umieszczeniu wskaźnika myszy na kategorii na wykresie możesz zobaczyć zestawienie opóźnień w poszczególnych kategoriach.
 
-![Widok 50-ego percentylu raportu Opóźnienie poczty.](../../media/mail-latency-report-50th-percentile-view.png)
+:::image type="content" source="../../media/mail-latency-report-50th-percentile-view.png" alt-text="Widok 50-ego percentylu raportu z opóźnieniami poczty" lightbox="../../media/mail-latency-report-50th-percentile-view.png":::
 
 Jeśli klikniesz **pozycję Filtruj**, możesz filtrować zarówno wykres, jak i tabelę szczegółów według następujących wartości:
 
 - **Data (UTC)**: **data rozpoczęcia** i **data zakończenia**
 - **Widok wiadomości**: Jedna z następujących wartości:
   - **Wszystkie wiadomości**
-  - **Wiadomości zawierające załączniki lub adresy URL**
-  - **Detonated messages**
+  - **Detonated messages**: One of the following values:
+    - **Detonacja w tekście**: uwzględnia wiadomości, które są w pełni przetestowane przed dostarczeniem.
+    - **Asynchroniczne detonowanie**
 
 Po zakończeniu konfigurowania filtrów kliknij pozycję **Zastosuj,** **Anuluj** lub **Wyczyść filtry**.
 
 W tabeli szczegółów poniżej wykresu dostępne są następujące informacje:
 
 - **Data (UTC)**
-- **Percentyl**: **50**, **90** lub **99**
+- **Opóźnienie**
 - **Liczba wiadomości**
-- **Ogólne opóźnienie**
+- **50.percentyl**
+- **90-ty percentyl**
+- **99. percentyl**
 
 Na stronie raportu głównego ikona ![Eksportuj.](../../media/m365-cc-sc-download-icon.png) **[Przycisk](view-email-security-reports.md#export-report)** Eksportuj jest dostępny.
 
 ## <a name="threat-protection-status-report"></a>Raport o stanie ochrony przed zagrożeniami
 
-Raport **o stanie ochrony** przed zagrożeniami to jeden widok, który zawiera informacje o złośliwej zawartości oraz złośliwych wiadomościach [e-mail](exchange-online-protection-overview.md) wykrytych i blokowanych przez programy Exchange Online Protection (EOP) i Microsoft Defender for Office 365. Aby uzyskać więcej informacji, zobacz [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
+Raport **o stanie ochrony** przed zagrożeniami to jeden widok, który zawiera informacje o złośliwej zawartości i złośliwych wiadomościach [e-mail](exchange-online-protection-overview.md) wykrytych i blokowanych przez usługę Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Microsoft Defender. Aby uzyskać więcej informacji, zobacz [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report).
 
 ## <a name="top-senders-and-recipients-report"></a>Raport Najgorętsi nadawcy i adresaci
 
-W **raporcie Najgoręci** nadawcy i adresaci są wyświetleń najgorętsi adresaci usługi EOP i usługi Defender Office 365 funkcji ochrony. Aby uzyskać więcej informacji, zobacz [Raport Najgorętsi nadawcy i adresaci](view-email-security-reports.md#top-senders-and-recipients-report).
+W **raporcie Najgoręci** nadawcy i adresaci są wyświetleń najgorętsi adresaci usług EOP i Ochrona usługi Office 365 w usłudze Defender ochrony. Aby uzyskać więcej informacji, zobacz [Raport Najgorętsi nadawcy i adresaci](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## <a name="url-protection-report"></a>Raport ochrony adresu URL
 
-Raport **o ochronie adresu URL** zawiera widoki podsumowania i trendu dotyczące wykrytych zagrożeń oraz akcji podjętych po kliknięciu adresu URL w Sejf [linków](safe-links.md). W tym raporcie nie będą klikane dane użytkowników, do których zastosowano zasady połączeń Sejf ma zaznaczoną opcję **Nie** śledź kliknięć użytkowników.
+Raport **o ochronie adresu URL** zawiera widoki podsumowania i trendu dotyczące wykrytych zagrożeń oraz akcji podjętych po kliknięciu adresu URL w Sejf [linków](safe-links.md). Ten raport nie będzie miał kliknięcia danych od użytkowników, do których zastosowano zasady połączeń Sejf w przypadku, gdy nie  jest zaznaczona opcja Śledź kliknięcia użytkowników.
 
 Aby wyświetlić raport, otwórz portal [Microsoft 365 Defender,](https://security.microsoft.com) \> przejdź do strony Raporty wiadomości e-mail i & **e-mail** \> & **raportów współpracy**. Na stronie **Raporty o & wiadomości e-mail** znajdź stronę **ochrony adresu URL,** a następnie kliknij pozycję **Wyświetl szczegóły**. Aby przejść bezpośrednio do raportu, otwórz program <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
-![Widżet raportu ochrony adresu URL na stronie Raporty o & e-mail.](../../media/url-protection-report-widget.png)
+:::image type="content" source="../../media/url-protection-report-widget.png" alt-text="Widżet raportu ochrony adresu URL na stronie Raporty o & poczty e-mail" lightbox="../../media/url-protection-report-widget.png":::
 
 Dostępne widoki na stronie Raport ochrony **adresu URL** opisano w poniższych sekcjach.
 
@@ -137,7 +141,7 @@ Dostępne widoki na stronie Raport ochrony **adresu URL** opisano w poniższych 
 
 ### <a name="view-data-by-url-click-protection-action"></a>Akcja ochrony przed kliknięciem w adresie URL umożliwia wyświetlenie danych według adresu URL
 
-![Widok akcji ochrony przed kliknięciem adresu URL w raporcie ochrony adresu URL.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="The view namely URL click protection action in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
 
 Widok **akcji Wyświetl dane według adresu URL ochrony** kliknięciem przedstawia liczbę kliknięć adresu URL (kliknięcia) przez użytkowników w organizacji oraz wyniki kliknięcia:
 
@@ -180,7 +184,7 @@ Na stronie raportu głównego ikona Utwórz ![harmonogram.](../../media/m365-cc-
 
 ### <a name="view-data-by-url-click-by-application"></a>Wyświetlanie danych według adresu URL przez kliknięcie według aplikacji
 
-![Adres URL kliknij według widoku aplikacji w raporcie ochrony adresu URL.](../../media/url-threat-protection-report-url-click-by-application-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-by-application-view.png" alt-text="Widok akcji ochrony przed kliknięciem adresu URL w raporcie ochrony adresu URL" lightbox="../../media/url-threat-protection-report-url-click-by-application-view.png":::
 
 Widok **Wyświetl dane według adresu URL kliknięcia według aplikacji** pokazuje liczbę kliknięć adresu URL według aplikacji, które obsługują Sejf internetowych:
 
@@ -213,8 +217,8 @@ Oprócz raportów opisanych w tym artykule dostępnych jest kilka innych raport�
 
 |Raport|Temat|
 |---|---|
-|**Eksplorator** (Microsoft Defender dla Office 365 Plan 2) lub **wykrywania w** czasie rzeczywistym (Microsoft Defender for Office 365 Plan 1)|[Eksplorator zagrożeń (i wykrywanie w czasie rzeczywistym)](threat-explorer.md)|
-|Raporty zabezpieczeń poczty e-mail, które nie wymagają usługi Defender dla Office 365|[Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail](view-email-security-reports.md)|
+|**Eksplorator** (Ochrona usługi Office 365 w usłudze Microsoft Defender (plan 2) lub wykrywanie **w** czasie rzeczywistym (Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1)|[Eksplorator zagrożeń (i wykrywanie w czasie rzeczywistym)](threat-explorer.md)|
+|Raporty zabezpieczeń poczty e-mail, które nie wymagają Ochrona usługi Office 365 w usłudze Defender|[Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender-mail](view-email-security-reports.md)|
 |Raporty przepływu poczty e-mail w centrum Exchange administracyjnego (EAC)|[Raporty przepływu poczty e-mail Exchange centrum administracyjnym](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 
 Polecenia cmdlet raportowania programu PowerShell:
@@ -229,7 +233,7 @@ Polecenia cmdlet raportowania programu PowerShell:
 |Stan przepływu poczty|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |Fałszywi użytkownicy|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Jakie uprawnienia są potrzebne do wyświetlania programu Defender dla Office 365 raportów?
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Jakie uprawnienia są wymagane do wyświetlania Ochrona usługi Office 365 w usłudze Defender raportów?
 
 Aby móc wyświetlać raporty opisane w tym artykule i korzystać z nich, musisz być członkiem jednej z następujących grup ról w portalu Microsoft 365 Defender grupy:
 
@@ -240,11 +244,11 @@ Aby móc wyświetlać raporty opisane w tym artykule i korzystać z nich, musisz
 
 Aby uzyskać więcej informacji, [zobacz Uprawnienia w portalu Microsoft 365 Defender użytkowników](permissions-microsoft-365-security-center.md).
 
-**Uwaga**: Dodanie użytkowników do odpowiedniej roli Azure Active Directory w aplikacji centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia w portalu Microsoft 365 Defender oraz uprawnienia do innych funkcji w  Microsoft 365. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+**Uwaga**: Dodanie użytkowników do odpowiedniej roli Azure Active Directory w aplikacji Centrum administracyjne platformy Microsoft 365 zapewnia użytkownikom wymagane uprawnienia w portalu usługi Microsoft 365 Defender oraz uprawnienia do innych funkcji w  Microsoft 365. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Co zrobić, jeśli w raportach nie są wyświetlane dane?
 
-Jeśli nie widzisz danych w programie Defender dla Office 365, upewnij się, że zasady zostały poprawnie skonfigurowane. Aby [Sejf](set-up-safe-links-policies.md) program Defender Office 365 był w miejscu, Sejf musi [](set-up-safe-attachments-policies.md) mieć zdefiniowane zasady linków oraz zasady załączników. Zobacz też [Ochrona przed spamem i złośliwym oprogramowaniem](anti-spam-and-anti-malware-protection.md).
+Jeśli nie widzisz danych w raportach Ochrona usługi Office 365 w usłudze Defender, upewnij się, że zasady zostały poprawnie skonfigurowane. Aby zapewnić, [Sejf](set-up-safe-links-policies.md) organizacji muszą być zdefiniowane zasady linków Sejf [](set-up-safe-attachments-policies.md) Ochrona usługi Office 365 w usłudze Defender i zasady załączników. Zobacz też [Ochrona przed spamem i złośliwym oprogramowaniem](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

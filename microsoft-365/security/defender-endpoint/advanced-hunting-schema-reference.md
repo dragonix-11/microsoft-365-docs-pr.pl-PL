@@ -15,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 290d302f815de38c4cd84f417118205ed6504fe2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2e45a4ae78d0beb9bc57b72a59b9cf1376ac7da7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021324"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468352"
 ---
-# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Opis zaawansowanego schematu wyszukiwania w programie Microsoft Defender dla punktu końcowego
+# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Opis zaawansowanego schematu wyszukiwania w programie Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
@@ -35,20 +35,20 @@ ms.locfileid: "63021324"
 
 Zaawansowany [schemat wyszukiwania](advanced-hunting-overview.md) składa się z wielu tabel, które dostarczają informacji o wydarzeniach lub o urządzeniach i innych jednostkach. Aby skutecznie tworzyć zapytania obejmujące wiele tabel, musisz zrozumieć tabele i kolumny w zaawansowanym schemacie wyszukiwania.
 
-## <a name="get-schema-information-in-the-defender-for-cloud"></a>Uzyskiwanie informacji o schemacie w usłudze Defender dla chmury
+## <a name="get-schema-information-in-the-defender-for-cloud"></a>Informacje o schemacie w Defender dla Chmury
 
 Podczas konstruowania zapytań użyj wbudowanego odwołania do schematu, aby szybko uzyskać następujące informacje o każdej tabeli w schemacie:
 
 - **Opis tabel**: typ danych zawartych w tabeli i źródło tych danych.
 - **Kolumny**: Wszystkie kolumny w tabeli.
-- **Typy akcji**: Możliwe wartości w kolumnie `ActionType` reprezentujące typy zdarzeń obsługiwane przez tabelę. Jest to dostępne tylko w przypadku tabel zawierających informacje o zdarzeniach.
+- **Typy akcji**: Możliwe wartości w kolumnie `ActionType` reprezentujące typy zdarzeń obsługiwane przez tabelę. Te wartości są udostępniane tylko w przypadku tabel zawierających informacje o zdarzeniach.
 - **Przykładowe zapytanie**: Przykładowe zapytania, które oferują możliwości korzystania z tabeli.
 
 ### <a name="access-the-schema-reference"></a>Uzyskiwanie dostępu do informacji o schemacie
 
 Aby szybko uzyskać dostęp do odwołania do schematu, wybierz akcję **Wyświetl** odwołanie obok nazwy tabeli w reprezentacji schematu. Możesz również wybrać pozycję **Odwołanie do schematu** , aby wyszukać tabelę.
 
-![Obraz przedstawiający sposób uzyskiwania dostępu do informacji o schemacie w portalu.](images/ah-reference.png)
+:::image type="content" source="images/ah-reference.png" alt-text="Strona zaawansowanego wyszukiwania" lightbox="images/ah-reference.png":::
 
 ## <a name="learn-the-schema-tables"></a>Informacje o tabelach schematów
 
@@ -81,15 +81,15 @@ Nazwy tabel i kolumn są również wymienione w portalu Microsoft 365 Defender, 
 |
 
 > [!TIP]
-> Użyj [zaawansowanego](/microsoft-365/security/defender/advanced-hunting-overview) wyszukiwania w Microsoft 365 Defender, aby poszukać zagrożeń za pomocą danych z usługi Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender dla aplikacji w chmurze i Microsoft Defender for Identity. [Włącz Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> Użyj [zaawansowanego wyszukiwania w Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview), aby poszukać zagrożeń za pomocą danych z usługi Defender dla punktów końcowych, Ochrona usługi Office 365 w usłudze Microsoft Defender, Microsoft Defender for Cloud Apps i Microsoft Defender for Identity. [Włącz Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
-Aby dowiedzieć się więcej na temat przenoszenia zaawansowanych przepływów pracy wyszukiwania z programu Microsoft Defender for Endpoint do Microsoft 365 Defender zobacz Migrowanie zaawansowanych zapytań myśliwnych z programu [Microsoft Defender dla punktu końcowego](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+Aby dowiedzieć się więcej na temat przenoszenia zaawansowanych przepływów pracy łowiectwo z Ochrona punktu końcowego w usłudze Microsoft Defender do Microsoft 365 Defender zobacz Migrowanie zaawansowanych zapytań [łowiec z Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 - [Omówienie zaawansowanego wyszukiwania](advanced-hunting-overview.md)
-- [Poznaw język zapytań](advanced-hunting-query-language.md)
-- [Praca z wynikami zapytania](advanced-hunting-query-results.md)
-- [Stosowanie najlepszych rozwiązań kwerend](advanced-hunting-best-practices.md)
+- [Nauka języka zapytań](advanced-hunting-query-language.md)
+- [Praca z wynikami zapytań](advanced-hunting-query-results.md)
+- [Stosowanie najlepszych rozwiązań dla zapytań](advanced-hunting-best-practices.md)
 - [Wykrywanie niestandardowe — omówienie](overview-custom-detections.md)
 - [Zaawansowane zmiany schematu łęgowania](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/advanced-hunting-data-schema-changes/ba-p/1043914)

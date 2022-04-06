@@ -1,7 +1,7 @@
 ---
-title: Zwiększanie zgodności z planem bazowym zabezpieczeń programu Microsoft Defender for Endpoint
-description: Plan bazowy zabezpieczeń programu Microsoft Defender for Endpoint określa mechanizmy kontroli zabezpieczeń w celu zapewnienia optymalnej ochrony.
-keywords: Zarządzanie usługą Intune, usługa Microsoft Defender for Endpoint, Microsoft Defender, Microsoft Defender for Endpoint ASR, plan bazowy zabezpieczeń
+title: Zwiększanie zgodności z planem bazowym Ochrona punktu końcowego w usłudze Microsoft Defender zabezpieczeń
+description: Podstawowa Ochrona punktu końcowego w usłudze Microsoft Defender zabezpieczeń określa mechanizmy kontroli zabezpieczeń w celu zapewnienia optymalnej ochrony.
+keywords: Intune zarządzanie zabezpieczeniami, Ochrona punktu końcowego w usłudze Microsoft Defender, Program Microsoft Defender, Ochrona punktu końcowego w usłudze Microsoft Defender asr, plan bazowy zabezpieczeń
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,50 +14,50 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 95790626461d7db02f3837321e0d9075e0597515
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1980567c93364f35923a9a7f2433733e05878e61
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998102"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467978"
 ---
-# <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Zwiększanie zgodności z planem bazowym zabezpieczeń programu Microsoft Defender for Endpoint
+# <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Zwiększanie zgodności z planem bazowym Ochrona punktu końcowego w usłudze Microsoft Defender zabezpieczeń
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Plan bazowy zabezpieczeń zapewnia, że funkcje zabezpieczeń są skonfigurowane zgodnie z wytycznymi ekspertów ds. zabezpieczeń i ekspertów Windows administratorów systemu. Po wdrożeniu program Defender for Endpoint security baseline ustawia program Defender dla kontroli zabezpieczeń punktu końcowego w celu zapewnienia optymalnej ochrony.
 
-Aby poznać linie bazowe zabezpieczeń i sposób ich przypisywania w usłudze Intune przy użyciu profilów konfiguracji, [przeczytaj te często zadawane pytania](/intune/security-baselines#q--a).
+Aby poznać linie bazowe zabezpieczeń i sposób ich przypisywania Intune profilów konfiguracji, [przeczytaj te często zadawane pytania](/intune/security-baselines#q--a).
 
 Zanim będzie można wdrożyć i śledzić zgodność z planami bazowymi zabezpieczeń:
 
-- [Rejestrowanie urządzeń w zarządzaniu usługą Intune](configure-machines.md#enroll-devices-to-intune-management)
+- [Rejestrowanie urządzeń w celu Intune zarządzania](configure-machines.md#enroll-devices-to-intune-management)
 - [Upewnij się, że masz niezbędne uprawnienia](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Porównanie programu Microsoft Defender dla punktu końcowego i podstawowych Windows zabezpieczeń usługi Intune
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Porównanie Ochrona punktu końcowego w usłudze Microsoft Defender i podstawowych Windows Intune zabezpieczeń
 
-Plan bazowy usługi Windows Intune zapewnia kompleksowy zestaw zalecanych ustawień wymaganych do bezpiecznego skonfigurowania urządzeń z systemem Windows, w tym ustawień przeglądarki, ustawień programu PowerShell i ustawień niektórych funkcji zabezpieczeń, takich jak Program antywirusowy Microsoft Defender. Natomiast plan bazowy usługi Defender for Endpoint zawiera ustawienia, które optymalizują wszystkie kontrolki zabezpieczeń w usłudze Defender pod kątem stosu punktów końcowych, w tym ustawienia dla programu wykrywanie i reagowanie w punktach końcowych (EDR), a także ustawienia w planie bazowym zabezpieczeń usługi Windows Intune. Aby uzyskać więcej informacji o poszczególnych planach bazowych, zobacz:
+Plan bazowy Windows Intune zabezpieczeń udostępnia kompleksowy zestaw zalecanych ustawień wymaganych do bezpiecznego konfigurowania urządzeń z systemem Windows, w tym ustawień przeglądarki, ustawień programu PowerShell i ustawień niektórych funkcji zabezpieczeń, takich jak Program antywirusowy Microsoft Defender. Natomiast plan bazowy usługi Defender dla punktu końcowego zawiera ustawienia, które optymalizują wszystkie kontrolki zabezpieczeń w stosie programu Defender dla punktu końcowego, w tym ustawienia dla programu wykrywanie i reagowanie w punktach końcowych (EDR), a także ustawienia w planie bazowym zabezpieczeń programu Windows Intune. Aby uzyskać więcej informacji o poszczególnych planach bazowych, zobacz:
 
-- [Windows podstawowych ustawień zabezpieczeń dla usługi Intune](/intune/security-baseline-settings-windows)
-- [Ustawienia linii bazowej programu Microsoft Defender dla punktu końcowego dla usługi Intune](/intune/security-baseline-settings-defender-atp)
+- [Windows podstawowych ustawień zabezpieczeń dla Intune](/intune/security-baseline-settings-windows)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender planu bazowego dla Intune](/intune/security-baseline-settings-defender-atp)
 
-Najlepiej jest wtedy, gdy urządzenia wdrożone w usłudze Defender for Endpoint są wdrożone według planu bazowego: plan bazowy zabezpieczeń usługi Windows Intune, który wstępnie zabezpiecza program Windows, a następnie usługa Defender for Endpoint security baseline jest wdrożona w warstwie u góry w celu optymalnego skonfigurowania programu Defender pod względem zabezpieczeń punktu końcowego. Aby korzystać z najnowszych danych na temat zagrożeń i czynników ryzyka oraz minimalizować konflikty w przypadku rozwoju planu bazowego, zawsze zastosuj najnowsze wersje linii bazowych we wszystkich produktach zaraz po ich ich zastosowaniu.
+Najlepiej jest wtedy, gdy urządzenia w programie Defender dla punktu końcowego są wdrożone według planu bazowego: planu bazowego zabezpieczeń programu Windows Intune, który wstępnie zabezpiecza program Windows, a następnie usługi Defender for Endpoint security baseline w warstwie u góry w celu optymalnego skonfigurowania programu Defender pod względem kontroli zabezpieczeń punktu końcowego. Aby korzystać z najnowszych danych na temat zagrożeń i czynników ryzyka oraz minimalizować konflikty w przypadku rozwoju planu bazowego, zawsze zastosuj najnowsze wersje linii bazowych we wszystkich produktach zaraz po ich ich zastosowaniu.
 
 > [!NOTE]
 > Plan bazowy zabezpieczeń programu Defender for Endpoint został zoptymalizowany pod kątem urządzeń fizycznych i nie jest obecnie zalecany do używania na wirtualnych maszyn wirtualnych (VM) ani w punktach końcowych VDI. Niektóre ustawienia planu bazowego mogą mieć wpływ na zdalne sesje interakcyjne w środowiskach zwirtualizowanych.
 
 ## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>Monitorowanie zgodności z planem bazowym zabezpieczeń programu Defender for Endpoint
 
-Karta **Plan bazowy** zabezpieczeń w [](configure-machines.md) zarządzaniu konfiguracją urządzenia zawiera przegląd zgodności na wszystkich Windows 10 i Windows 11 urządzeń, do których przypisano plan bazowy zabezpieczeń Defender for Endpoint.
+Karta **Planu bazowego zabezpieczeń** w [](configure-machines.md) zarządzaniu konfiguracją urządzenia zawiera przegląd zgodności na wszystkich Windows 10 i Windows 11, do których przypisano plan bazowy zabezpieczeń Programu Defender for Endpoint.
 
-![Karta planu bazowego zabezpieczeń.](images/secconmgmt_baseline_card.png)
+:::image type="content" source="images/secconmgmt_baseline_card.png" alt-text="Karta Planu bazowego zabezpieczeń" lightbox="images/secconmgmt_baseline_card.png":::
 
 *Karta przedstawiająca zgodność z planem bazowym zabezpieczeń programu Defender for Endpoint*
 
@@ -68,47 +68,47 @@ Na każdym urządzeniu jest podawany jeden z następujących typów stanu:
 - **Nieprawidłowo skonfigurowane**: Co najmniej jedno ustawienie planu bazowego nie jest poprawnie skonfigurowane na urządzeniu i występuje konflikt, błąd lub stan oczekiwania.
 - **Nie dotyczy**: Na urządzeniu nie ma zastosowania co najmniej jedno ustawienie linii bazowej.
 
-Aby przejrzeć określone urządzenia, wybierz **pozycję Konfiguruj plan bazowy zabezpieczeń** na karcie. Umożliwia to zarządzanie urządzeniami w usłudze Intune. W tym miejscu wybierz **pozycję Stan** urządzenia, aby sprawdzić nazwy i statusy urządzeń.
+Aby przejrzeć określone urządzenia, wybierz **pozycję Konfiguruj plan bazowy zabezpieczeń** na karcie. W ten sposób możesz Intune zarządzanie urządzeniami. W tym miejscu wybierz **pozycję Stan** urządzenia, aby sprawdzić nazwy i statusy urządzeń.
 
 > [!NOTE]
-> Rozbieżność może wystąpić w przypadku zagregowanych danych wyświetlanych na stronie zarządzania konfiguracją urządzenia oraz na ekranach przeglądu w usłudze Intune.
+> Rozbieżność danych zagregowanych może być wyświetlanych na stronie zarządzania konfiguracją urządzenia oraz na ekranach przeglądu w Intune.
 
-## <a name="review-and-assign-the-microsoft-defender-for-endpoint-security-baseline"></a>Przeglądanie i przypisywanie planu bazowego zabezpieczeń programu Microsoft Defender for Endpoint
+## <a name="review-and-assign-the-microsoft-defender-for-endpoint-security-baseline"></a>Przeglądanie i przypisywanie planu Ochrona punktu końcowego w usłudze Microsoft Defender zabezpieczeń
 
-Zarządzanie konfiguracją urządzeń monitoruje podstawową zgodność tylko Windows 10 i Windows 11 urządzeń, do których przypisano plan bazowy zabezpieczeń programu Microsoft Defender for Endpoint. Możesz w wygodny sposób przejrzeć plan bazowy i przypisać go do urządzeń w usłudze Zarządzania urządzeniami w usłudze Intune.
+Zarządzanie konfiguracją urządzeń monitoruje podstawową zgodność tylko Windows 10 i Windows 11, które zostały specjalnie przypisane do Ochrona punktu końcowego w usłudze Microsoft Defender zabezpieczeń. Możesz wygodnie przeglądać plan bazowy i przypisywać go do urządzeń w Intune zarządzanie urządzeniami.
 
-1. Wybierz **pozycję Konfiguruj plan bazowy zabezpieczeń** na **karcie Plan bazowy zabezpieczeń** , aby przejść do opcji Zarządzanie urządzeniami w usłudze Intune. Podobny przegląd zgodności bazowej jest wyświetlany.
+1. Wybierz **pozycję Konfiguruj plan bazowy zabezpieczeń** na **karcie Plan bazowy** zabezpieczeń, aby przejść Intune zarządzanie urządzeniami. Podobny przegląd zgodności bazowej jest wyświetlany.
 
    > [!TIP]
-   > Możesz również przejść do planu bazowego zabezpieczeń programu Defender for Endpoint w portalu usługi Microsoft Azure z witryny Wszystkie usługi **> Intune > Zabezpieczenia urządzeń >** Plan bazowy zabezpieczeń > Plan bazowy programu Microsoft Defender ATP.
+   > Możesz również przejść do planu bazowego zabezpieczeń programu Defender for Endpoint w portalu Microsoft Azure z poziomu strony Wszystkie usługi > Intune > Zabezpieczenia urządzeń **> Security baselines > Microsoft Defender ATP baseline**.
 
 2. Utwórz nowy profil.
 
-   ![Omówienie planu bazowego zabezpieczeń programu Microsoft Defender for Endpoint w usłudze Intune.](images/secconmgmt_baseline_intuneprofile1.png)<br>
-   *Omówienie planu bazowego zabezpieczeń programu Microsoft Defender for Endpoint w usłudze Intune*
+   :::image type="content" source="images/secconmgmt_baseline_intuneprofile1.png" alt-text="Karta Tworzenie profilu w przeglądzie planu bazowego Ochrona punktu końcowego w usłudze Microsoft Defender zabezpieczeń na karcie Intune" lightbox="images/secconmgmt_baseline_intuneprofile1.png":::<br>
+   *Ochrona punktu końcowego w usłudze Microsoft Defender planu bazowego zabezpieczeń na Intune*
 
 3. Podczas tworzenia profilu możesz przeglądać i dostosowywać określone ustawienia dla planu bazowego.
 
-   ![Opcje planu bazowego zabezpieczeń podczas tworzenia profilu w usłudze Intune.](images/secconmgmt_baseline_intuneprofile2.png)<br>
-   *Opcje planu bazowego zabezpieczeń podczas tworzenia profilu w usłudze Intune*
+   :::image type="content" source="images/secconmgmt_baseline_intuneprofile2.png" alt-text="Opcje linii bazowej zabezpieczeń podczas tworzenia profilu w Intune" lightbox="images/secconmgmt_baseline_intuneprofile2.png":::<br>
+   *Opcje planu bazowego zabezpieczeń podczas tworzenia profilu w Intune*
 
 4. Przypisz profil do odpowiedniej grupy urządzeń.
 
-   ![Profile bazowe zabezpieczeń w usłudze Intune.](images/secconmgmt_baseline_intuneprofile3.png)<br>
-   *Przypisywanie profilu planu bazowego zabezpieczeń w usłudze Intune*
+   :::image type="content" source="images/secconmgmt_baseline_intuneprofile3.png" alt-text="Profile bazowe zabezpieczeń w u Intune" lightbox="images/secconmgmt_baseline_intuneprofile3.png":::<br>
+   *Przypisywanie profilu planu bazowego zabezpieczeń na stronie Intune*
 
 5. Utwórz profil, aby go zapisać i wdrożyć w przypisanej grupie urządzeń.
 
-   ![Przypisywanie planu bazowego zabezpieczeń w usłudze Intune.](images/secconmgmt_baseline_intuneprofile4.png)<br>
-   *Tworzenie profilu planu bazowego zabezpieczeń w usłudze Intune*
+   :::image type="content" source="images/secconmgmt_baseline_intuneprofile4.png" alt-text="Przypisywanie planu bazowego zabezpieczeń na Intune" lightbox="images/secconmgmt_baseline_intuneprofile4.png":::<br>
+   *Tworzenie profilu planu bazowego zabezpieczeń na Intune*
 
 > [!TIP]
-> Linie bazowe zabezpieczeń w usłudze Intune zapewniają wygodny sposób bezpiecznego i bezpiecznego korzystania z urządzeń. [Dowiedz się więcej o planach bazowych zabezpieczeń w usłudze Intune](/intune/security-baselines).
+> Linie bazowe zabezpieczeń na Intune to wygodny sposób na pełne zabezpieczanie i ochronę urządzeń. [Dowiedz się więcej o planach bazowych zabezpieczeń na Intune](/intune/security-baselines).
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 - [Upewnij się, że urządzenia są poprawnie skonfigurowane](configure-machines.md)
-- [Uzyskiwanie urządzeń podłączonych do programu Microsoft Defender dla punktu końcowego](configure-machines-onboarding.md)
+- [Dołączanie urządzeń do Ochrona punktu końcowego w usłudze Microsoft Defender](configure-machines-onboarding.md)
 - [Optymalizowanie wdrażania reguł asr i wykrywanie](configure-machines-asr.md)

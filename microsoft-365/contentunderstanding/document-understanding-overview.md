@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się więcej o zrozumieniu dokumentu w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: 4c4910ac2cec9688af60c6999e67e1be41701ef3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c7488fcb44116f030d538b416af1f04b33382519
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322593"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507328"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Omówienie opisów dokumentów w aplikacji Microsoft SharePoint Syntex
 
@@ -33,7 +33,7 @@ ms.locfileid: "63322593"
 W zrozumieniu dokumentu są używane modele sztucznej inteligencji w celu zautomatyzowania klasyfikacji plików i wyodrębniania informacji. Najlepiej się sprawdza w przypadku dokumentów niestrukturryzowanych, takich jak listy lub umowy. Te dokumenty muszą zawierać tekst, który można zidentyfikować na podstawie fraz lub wzorców. Wskazany tekst wyznacza zarówno typ pliku, który jest (jego klasyfikacja), jak i to, co chcesz wyodrębnić (jego wyodrębniacze).
 
 > [!NOTE]
-> Zobacz [przykłady SharePoint Syntex: Wprowadzenie](./adoption-getstarted.md) do tego przewodnika, aby uzyskać więcej informacji na temat przykładów scenariuszy opisanych w dokumentach.
+> Zobacz [przykłady SharePoint Syntex: Wprowadzenie,](./adoption-getstarted.md) aby uzyskać więcej informacji na temat przykładów scenariuszy opisów dokumentów.
 
 Dokumenty opisowe modele są tworzone i zarządzane w typie witryny SharePoint *nazywanej centrum zawartości*. Po zastosowaniu do biblioteki SharePoint dokumentów model jest skojarzony z typem zawartości i zawiera kolumny do przechowywania wyodrębnianych informacji. Tworzyć typy zawartości są przechowywane w galerii SharePoint typów zawartości. Możesz także użyć istniejących typów zawartości, aby użyć ich schematu.
 
@@ -112,7 +112,8 @@ Modele opisowe dokumentów obsługują następujące typy plików:
 
 ### <a name="supported-languages"></a>Obsługiwane języki
 
-Modele opisowe dokumentów obsługują następujące języki:
+Modele opisowe dokumentów *obsługują wszystkie* języki oparte na alfabetu łacińskiego, w tym:
+
 - English
 - French
 - German

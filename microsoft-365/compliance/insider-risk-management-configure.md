@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 05375332df6542cd87e986bba68ef7c6753f8e36
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754212"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637967"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Wprowadzenie do zarządzania ryzykiem wewnętrznym
 
@@ -36,9 +36,9 @@ Aby uzyskać więcej informacji o tym, w jaki sposób zasady ryzyka niejawnego p
 
 Przed rozpoczęciem pracy z zarządzaniem ryzykiem w ramach niejawnego programu testów należy potwierdzić Microsoft 365 [subskrypcji](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) i wszystkich dodatków. Aby uzyskać dostęp do zarządzania ryzykiem w ramach niejawnego programu testów i korzystać z niego, Twoja organizacja musi mieć jedną z następujących subskrypcji lub dodatków:
 
-- Microsoft 365 E5/A5/G5 (płatna lub próbna)
-- Microsoft 365 E3/A3/G3 + Microsoft 365 E5 zgodności ze standardem Microsoft 365 E5/A5/G5
-- Microsoft 365 E3/A3/G3 + Microsoft 365 E5/A5/G5 zarządzanie ryzykiem niejawnego programu testów
+- Microsoft 365 E5/A5/F5/G5 (wersja płatna lub próbna)
+- Microsoft 365 E3/A3/F3/G3 + Microsoft 365 E5/A5/F5/G5 ze zgodnością
+- Microsoft 365 E3/A3/F3/G3 + Microsoft 365 E5/A5/F5/G5 Zarządzanie ryzykiem w niejawnym programie testów
 - Office 365 E3 + Enterprise Mobility and Security E3 + Zgodność platformy Microsoft 365 E5 pakietu
 
 Użytkownikom uwzględnionym w zasadach zarządzania ryzykiem w niejawnym programie testów należy przypisać jedną z powyższych licencji.
@@ -221,13 +221,13 @@ Zarządzanie ryzykiem w niejawnym programie testów umożliwia importowanie dany
 
 Zobacz artykuł [Konfigurowanie łącznika do](import-physical-badging-data.md) importowania danych z fizycznymi zabezpieczeniami, aby uzyskać instrukcje krok po kroku dotyczące konfigurowania łącznika fizycznego do blokowania w organizacji. Po skonfigurowaniu łącznika wróć do tych kroków konfiguracji.
 
-### <a name="configure-microsoft-defender-for-endpoint-optional"></a>Konfigurowanie programu Microsoft Defender dla punktu końcowego (opcjonalnie)
+### <a name="configure-microsoft-defender-for-endpoint-optional"></a>Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender (opcjonalnie)
 
-[Program Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to platforma zabezpieczeń punktów końcowych przedsiębiorstwa, która ma ułatwić sieciom przedsiębiorstwa zapobieganie zaawansowanym zagrożeniam, wykrywanie, badanie i reagowanie na nie. Aby poprawić widoczność naruszeń zabezpieczeń w organizacji, możesz zaimportować i odfiltrować usługę Defender, aby uzyskać alerty punktu końcowego w przypadku działań używanych w zasadach utworzonych na podstawie szablonów zasad naruszenia zabezpieczeń zarządzania ryzykiem w ramach niejawnego programu testów.
+[Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to platforma zabezpieczeń punktów końcowych przedsiębiorstwa, która ma ułatwić sieciom przedsiębiorstwa zapobieganie zaawansowanym zagrożeniam, wykrywanie, badanie i reagowanie na nie. Aby poprawić widoczność naruszeń zabezpieczeń w organizacji, możesz zaimportować i odfiltrować usługę Defender, aby uzyskać alerty punktu końcowego w przypadku działań używanych w zasadach utworzonych na podstawie szablonów zasad naruszenia zabezpieczeń zarządzania ryzykiem w ramach niejawnego programu testów.
 
-W przypadku tworzenia zasad naruszenia zabezpieczeń usługa Microsoft Defender for Endpoint musi być skonfigurowana w organizacji i włączyć usługę Defender for Endpoint na potrzeby integracji zarządzania ryzykiem w niejawnym programie testów w Centrum zabezpieczeń Defender, aby importować alerty o naruszeniach zabezpieczeń. Aby uzyskać więcej informacji o wymaganiach, zobacz [artykuł Minimalne wymagania programu Microsoft Defender dla punktu końcowego](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) .
+W przypadku tworzenia zasad naruszenia zabezpieczeń musisz skonfigurować usługę Ochrona punktu końcowego w usłudze Microsoft Defender w organizacji i włączyć usługę Defender for Endpoint na potrzeby integracji zarządzania ryzykiem w programie Defender Security Center, aby importować alerty o naruszeniach zabezpieczeń. Aby uzyskać więcej informacji o wymaganiach, zobacz [artykuł Minimalne wymagania Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements).
 
-Zobacz artykuł [Konfigurowanie zaawansowanych funkcji w programie Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) , aby uzyskać szczegółowe instrukcje dotyczące konfigurowania programu Defender dla punktu końcowego na poziomie integracji zarządzania ryzykiem w niejawnym programie testów. Po skonfigurowaniu programu Microsoft Defender dla punktu końcowego wróć do tych kroków konfiguracji.
+Zobacz artykuł [Konfigurowanie zaawansowanych funkcji w programie Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) , aby uzyskać szczegółowe instrukcje dotyczące konfigurowania programu Defender dla punktu końcowego na poziomie integracji zarządzania ryzykiem w niejawnym programie testów. Po skonfigurowaniu odpowiedniego Ochrona punktu końcowego w usłudze Microsoft Defender wróć do tych kroków konfiguracji.
 
 ## <a name="step-5-required-configure-insider-risk-settings"></a>Krok 5 (wymagany): Konfigurowanie ustawień ryzyka niejawnego programu testów
 
@@ -247,7 +247,7 @@ Przed skonfigurowaniem zasad zdefiniuj następujące ustawienia ryzyka niejawneg
     - [Wykluczenia typów plików](insider-risk-management-settings.md#file-type-exclusions)
     - [Minimalna liczba codziennych wydarzeń, aby zwiększyć liczbę wyników dla nietypowej aktywności](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Alert o poziomie głośności](insider-risk-management-settings.md#alert-volume)
-    - [Stan alertu programu Microsoft Defender dla punktu końcowego](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [Ochrona punktu końcowego w usłudze Microsoft Defender stan alertu](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Ustawienia domeny](insider-risk-management-settings.md#domains)
 6. Na stronie **Eksportowanie alertów** włącz eksportowanie informacji alertów o ryzyku niejawnego programu testów przy użyciu Office 365 API zarządzania danymi.
 7. Na stronie **Grupy użytkowników o priorytecie** utwórz grupę użytkowników o priorytecie i dodaj użytkowników, jeśli nie została utworzona w **kroku 3**.

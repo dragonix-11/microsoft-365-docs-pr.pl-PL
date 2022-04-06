@@ -1,6 +1,6 @@
 ---
-title: Kondycja i ustawienia czujnika tożsamości usługi Microsoft Defender w aplikacji Microsoft 365 Defender
-description: Dowiedz się, jak skonfigurować usługę Microsoft Defender pod jej czujnikami tożsamości i monitorować ich stan Microsoft 365 Defender
+title: Microsoft Defender for Identity kondycji i ustawień czujnika w Microsoft 365 Defender
+description: Dowiedz się, jak skonfigurować Microsoft Defender for Identity i monitorować ich stan zdrowia w Microsoft 365 Defender
 ms.date: 06/07/2021
 ms.topic: how-to
 author: dcurwin
@@ -9,21 +9,21 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f55cb36d9960fef2da977a2c50ebab5a9e0e9122
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 246fd5ca880ca2d7e187283d06f19d071f5d7e0e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682025"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468528"
 ---
-# <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Kondycja i ustawienia czujnika tożsamości usługi Microsoft Defender w aplikacji Microsoft 365 Defender
+# <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender for Identity kondycji i ustawień czujnika w Microsoft 365 Defender
 
 **Dotyczy:**
 
 - Microsoft 365 Defender
 - Defender for Identity
 
-W tym artykule wyjaśniono, jak skonfigurować i monitorować czujnik [tożsamości programu Microsoft Defender](/defender-for-identity) [w Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+W tym artykule wyjaśniono, jak konfigurować i [monitorować Microsoft Defender for Identity](/defender-for-identity) [czujniki Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
 >W ramach schłodowania w Microsoft 365 Defender tożsamości niektóre opcje i szczegóły zmieniły się od ich lokalizacji w portalu usługi Defender dla tożsamości. Zapoznaj się ze szczegółami poniżej, aby dowiedzieć się, gdzie znaleźć zarówno znane, jak i nowe funkcje.
@@ -32,7 +32,7 @@ W tym artykule wyjaśniono, jak skonfigurować i monitorować czujnik [tożsamo�
 
 1. Na <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> **przejdź do Ustawienia** i **Tożsamości**.
 
-    ![Przejdź do Ustawienia, a następnie do identities.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="Opcja Tożsamości na stronie Ustawienia sieci Web" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. Wybierz stronę **Czujniki** , na której są wyświetlane wszystkie czujniki usługi Defender for Identity. Dla każdego czujnika zobaczysz jego nazwę, członkostwo w domenie, numer wersji, jeśli aktualizacje powinny być opóźnione, stan usługi, stan aktualizacji, stan kondycji, liczbę problemów dotyczących kondycji oraz czas utworzenia czujnika.
 
@@ -45,7 +45,7 @@ W tym artykule wyjaśniono, jak skonfigurować i monitorować czujnik [tożsamo�
 
     [![Filtry czujnika.](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
 
-    ![Czujnik filtrowany.](../../media/defender-identity/filtered-sensor.png)
+    :::image type="content" source="../../media/defender-identity/filtered-sensor.png" alt-text="Czujnik filtrowany" lightbox="../../media/defender-identity/filtered-sensor.png":::
 
 1. Jeśli wybierzesz jeden z czujnika, zostanie otwarte okienko z informacjami o czujniku i jego stanie kondycji.
 
@@ -53,17 +53,18 @@ W tym artykule wyjaśniono, jak skonfigurować i monitorować czujnik [tożsamo�
 
 1. Jeśli wybierzesz dowolny z problemów z kondycją, zostanie otwarte okienko ze szczegółami na ich temat. Jeśli wybierzesz problem zamknięty, możesz otworzyć go ponownie w tym miejscu.
 
-    ![Szczegóły problemu.](../../media/defender-identity/issue-details.png)
+   :::image type="content" source="../../media/defender-identity/issue-details.png" alt-text="Szczegóły problemu" lightbox="../../media/defender-identity/issue-details.png":::
+    
 
 1. Jeśli wybierzesz **pozycję Zarządzaj czujnikiem**, zostanie otwarte okienko, w którym możesz skonfigurować szczegóły czujnika.
 
-    ![Zarządzaj czujnikem.](../../media/defender-identity/manage-sensor.png)
+   :::image type="content" source="../../media/defender-identity/manage-sensor.png" alt-text="Opcja Zarządzaj czujnikiem" lightbox="../../media/defender-identity/manage-sensor.png":::
 
-    ![Skonfiguruj szczegóły czujnika.](../../media/defender-identity/configure-sensor-details.png)
+   :::image type="content" source="../../media/defender-identity/configure-sensor-details.png" alt-text="Strona, na której konfiguruje się ustawienia czujnika" lightbox="../../media/defender-identity/configure-sensor-details.png":::
 
 1. Na stronie **Czujniki** możesz wyeksportować listę czujniki do pliku .csv, wybierając pozycję **Eksportuj**.
 
-    ![Eksportuj listę czujnika.](../../media/defender-identity/export-sensors.png)
+   :::image type="content" source="../../media/defender-identity/export-sensors.png" alt-text="Lista czujników eksportu" lightbox="../../media/defender-identity/export-sensors.png":::
 
 ## <a name="add-a-sensor"></a>Dodaj czujnik
 
@@ -71,11 +72,11 @@ Na stronie **Czujniki** możesz dodać nowy czujnik.
 
 1. Wybierz **pozycję Dodaj czujnik**.
 
-    ![Dodaj czujnik.](../../media/defender-identity/add-sensor.png)
+   :::image type="content" source="../../media/defender-identity/add-sensor.png" alt-text="Opcja Dodaj czujnik" lightbox="../../media/defender-identity/add-sensor.png":::
 
 1. Zostanie otwarte okienko z przyciskiem pobierania instalatora czujnika i wygenerowanym kluczem dostępu.
 
-    ![Pobierz instalatora i klucz dostępu.](../../media/defender-identity/installer-access-key.png)
+   :::image type="content" source="../../media/defender-identity/installer-access-key.png" alt-text="Opcje pobierania instalatora i ponownego generowania klucza" lightbox="../../media/defender-identity/installer-access-key.png":::
 
 1. Wybierz **pozycję Pobierz instalatora** , aby zapisać pakiet lokalnie. Plik zip zawiera następujące pliki:
 

@@ -1,5 +1,5 @@
 ---
-title: Krok nr 3. Konfigurowanie zasad zgodności dla urządzeń za pomocą usługi Intune
+title: Krok nr 3. Konfigurowanie zasad zgodności dla urządzeń z Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -7,7 +7,7 @@ f1.keywords:
 - Intune device compliance policy
 manager: dougeby
 audience: ITPro
-description: Dowiedz się, jak tworzyć zasady zgodności urządzeń określające minimalne wymagania dotyczące uzyskiwania dostępu do środowiska przez urządzenie.
+description: Dowiedz się, jak utworzyć zasady zgodności urządzeń określające minimalne wymagania dotyczące dostępu urządzenia do środowiska.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
@@ -17,32 +17,32 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 7e55ad6bf1d1cb7d95e43cb23b9c74decc8548df
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: f93642984ecb2439ab6e4ad484ea4f6f3303c0ce
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "63015769"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651372"
 ---
-# <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Krok nr 3. Konfigurowanie zasad zgodności dla urządzeń za pomocą usługi Intune
+# <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Krok nr 3. Konfigurowanie zasad zgodności dla urządzeń z Intune
 
-Zarejestrowanie urządzeń w zarządzaniu umożliwia jeszcze większe bezpieczeństwo i kontrolę nad danymi w środowisku. [Krok 2. Zarejestruj urządzenia w szczegółach](manage-devices-with-intune-enroll.md) zarządzania, jak to zrobić za pomocą usługi Intune i rozwiązania Autopilot. W tym artykule o pierwszym kroku, czyli skonfigurowaniu zasad zgodności urządzeń. 
+Rejestrowanie urządzeń w celu Intune daje możliwość uzyskania jeszcze większego bezpieczeństwa i kontroli nad danymi w środowisku. [Krok 2. Rejestrowanie urządzeń w celu Intune](manage-devices-with-intune-enroll.md) szczegółów, jak to zrobić przy użyciu Intune. W tym artykule opisano następny krok, który polega na skonfigurowaniu zasad zgodności urządzeń. 
 
 ![Kroki zarządzania urządzeniami](../media/devices/intune-mdm-step-2.png#lightbox)
 
-Chcesz mieć pewność, że urządzenia, które mają dostęp do Twoich aplikacji i danych, spełniają minimalne wymagania, na przykład są chronione hasłem lub przypinaniem, a system operacyjny jest aktualny. Zasady zgodności są sposobem definiowania wymagań, które muszą spełnić urządzenia. MEM używa tych zasad zgodności do oznaczania urządzenia jako zgodnego lub niezgodnego Ten stan binarny jest przekazywany do usługi Azure AD, która może używać tego stanu w zasadach dostępu warunkowego w celu umożliwienia lub uniemożliwiania urządzeniu uzyskiwania dostępu do zasobów. 
+Chcesz mieć pewność, że urządzenia uzyskujące dostęp do aplikacji i danych spełniają minimalne wymagania, na przykład są chronione hasłem lub przypinaniem, a system operacyjny jest aktualny. Zasady zgodności to sposób definiowania wymagań, które muszą spełniać urządzenia. Usługa MEM używa tych zasad zgodności do oznaczania urządzenia jako zgodnego lub niezgodnego Ten stan binarny jest przekazywany do usługi Azure AD, która może używać tego stanu w regułach dostępu warunkowego, aby zezwolić urządzeniu na dostęp do zasobów lub uniemożliwić mu dostęp do zasobów. 
 
 ## <a name="configuring-device-compliance-policies"></a>Konfigurowanie zasad zgodności urządzeń
 
-Te wskazówki są ściśle skoordynowane z zalecanymi zasadami [dostępu do tożsamości i](../security/office-365-security/microsoft-365-policies-configurations.md) urządzeń bez zaufania.
+Te wskazówki są ściśle skoordynowane z zalecanymi [zasadami Zero Trust tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md).
 
-Na poniższej ilustracji przedstawiono miejsce, w którym definiowanie zasad zgodności jest zgodne z ogólnym zestawem zalecanych zasad zerowego zaufania. 
+Na tej ilustracji przedstawiono, gdzie praca nad definiowaniem zasad zgodności mieści się w ogólnym Zero Trust zalecanego zestawu zasad. 
 
-[![Zasady zerowego zaufania w zakresie tożsamości i dostępu do urządzeń](../media/devices/identity-device-define-compliance.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-define-compliance.png)
+[![Zero Trust zasad dostępu do tożsamości i urządzeń](../media/devices/identity-device-define-compliance.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-define-compliance.png)
 
-Na poniższej ilustracji zdefiniowanie zasad zgodności urządzeń jest współzależnością osiągnięcia zalecanego poziomu ochrony w ramach struktury zerowego zaufania. 
+Na tej ilustracji definiowanie zasad zgodności urządzeń jest zależnością w celu osiągnięcia zalecanego poziomu ochrony w ramach struktury Zero Trust. 
 
-Aby skonfigurować zasady zgodności urządzeń, skorzystaj z zalecanych wskazówek i ustawień określonych w zasadach zerowego zaufania dotyczących tożsamości [i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md). W poniższej tabeli znajdują się linki bezpośrednio do instrukcji dotyczących konfigurowania tych zasad w usłudze Intune, w tym do zalecanych ustawień poszczególnych platform.
+Aby skonfigurować zasady zgodności urządzeń, skorzystaj z zalecanych wskazówek i ustawień określonych w [zasadach Zero Trust tożsamości i dostępu do urządzeń](../security/office-365-security/microsoft-365-policies-configurations.md). Poniższa tabela zawiera linki bezpośrednio do instrukcji dotyczących konfigurowania tych zasad w Intune, w tym zalecanych ustawień dla każdej platformy.
 
 
 |Policies (zasady) |Więcej informacji  |Licencjonowanie |
@@ -52,4 +52,4 @@ Aby skonfigurować zasady zgodności urządzeń, skorzystaj z zalecanych wskazó
 
 ## <a name="next-steps"></a>Następne kroki
 
-Przejdź do [kroku 4. Wymagaj urządzeń o dobrej kondycji](manage-devices-with-intune-require-compliance.md) i zgodności, aby uzyskać instrukcje dotyczące tworzenia reguły dostępu warunkowego w usłudze Azure AD.
+Przejdź do [kroku 4. Wymagaj urządzeń w dobrej kondycji i zgodnych,](manage-devices-with-intune-require-compliance.md) aby uzyskać instrukcje dotyczące tworzenia reguły dostępu warunkowego w usłudze Azure AD.

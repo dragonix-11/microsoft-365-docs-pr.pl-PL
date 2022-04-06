@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 381b9cafe50f8a9aa3788e17668d642b291d5279
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 351c0842de5bd4483ad594ad628e119b00437aa6
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594867"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638229"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Rozwiązania ryzyka wewnętrznego na platformie Microsoft 365
 
@@ -67,9 +67,9 @@ Zarządzanie ryzykiem niejawnego programu testów pomaga zminimalizować ryzyko 
 
 Zarządzanie ryzykiem niejawnego programu testów jest dostępne w następujących subskrypcjach:
 
-- Microsoft 365 E5/A5/G5 (płatna lub próbna)
-- Microsoft 365 E3/A3/G3 + Microsoft 365 E5 zgodności ze standardem Microsoft 365 E5/A5/G5
-- Microsoft 365 E3/A3/G3 + Microsoft 365 E5/A5/G5 zarządzanie ryzykiem niejawnego programu testów
+- Microsoft 365 E5/A5/F5/G5 (wersja płatna lub próbna)
+- Microsoft 365 E3/A3/F3/G3 + Microsoft 365 E5/A5/F5/G5 ze zgodnością
+- Microsoft 365 E3/A3/F3/G3 + Microsoft 365 E5/A5/F5/G5 Zarządzanie ryzykiem w niejawnym programie testów
 - Office 365 E3 + Enterprise Mobility and Security E3 + Zgodność platformy Microsoft 365 E5 pakietu
 
 ### <a name="information-barriers"></a>Bariery informacyjne

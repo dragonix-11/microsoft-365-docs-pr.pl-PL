@@ -1,51 +1,51 @@
-- name: Microsoft Defender for Business
+- name: Microsoft Defender dla Firm
   href: index.yml
   items:
     - name: Omówienie
       items:
-        - name: Co to jest usługa Microsoft Defender dla firm?
+        - name: Co to jest usługa Microsoft Defender dla Firm?
           href: mdb-overview.md
         - name: Uproszczony proces konfiguracji
           href: mdb-simplified-configuration.md
         - name: Porównanie planów dla małych i średnich firm
           href: compare-mdb-m365-plans.md
-        - name: Integracja z Microsoft 365 Lighthouse
+        - name: Integracja z usługą Microsoft 365 Lighthouse
           href: mdb-lighthouse-integration.md
     - name: Wprowadzenie
       items:
-        - name: Uzyskaj usługę Defender dla firm
+        - name: Pobierz usługę Defender dla Firm
           href: get-defender-business.md
         - name: Korzystanie z kreatora konfiguracji
           href: mdb-use-wizard.md
-        - name: Wprowadzenie do korzystania z portalu
+        - name: 'Wprowadzenie, jak korzystać z portalu'
           href: mdb-get-started.md
-        - name: Wyświetlanie pulpitu zarządzanie lukami w zabezpieczeniach pulpitu nawigacyjnego
+        - name: Wyświetlanie pulpitu nawigacyjnego dotyczącego zarządzania lukami w zabezpieczeniach
           href: mdb-view-tvm-dashboard.md
-        - name: Wypróbuj samouczki i symulowania
+        - name: Wypróbuj samouczki i symulacje
           href: mdb-tutorials.md
-    - name: Konfigurowanie i konfigurowanie usługi Defender dla firm
+    - name: Instalowanie i konfigurowanie usługi Defender dla Firm
       items:
         - name: Omówienie konfiguracji
           href: mdb-setup-configuration.md
-        - name: Krok 1. Przejrzyj wymagania
+        - name: Krok 1. Przegląd wymagań
           href: mdb-requirements.md
         - name: Krok 2. Przypisywanie ról i uprawnień
           href: mdb-roles-permissions.md
         - name: Krok 3. Konfigurowanie powiadomień e-mail
           href: mdb-email-notifications.md
-        - name: Krok 4. Urządzenia wyniesiene na urządzeniach
+        - name: Krok 4. Dołączanie urządzeń
           href: mdb-onboard-devices.md
         - name: Krok 5. Konfigurowanie zasad zabezpieczeń
           href: mdb-configure-security-settings.md
-    - name: Wyświetlanie wykrytych zagrożeń i reagowanie na nie
+    - name: Wyświetlanie zagrożeń i reagowanie na nie
       items:
         - name: Wyświetlanie zdarzeń i zarządzanie nimi
           href: mdb-view-manage-incidents.md
-        - name: Reagowanie na zagrożenia i ograniczanie ich
+        - name: Reagowanie na zagrożenia i ich eliminowanie
           href: mdb-respond-mitigate-threats.md
-        - name: Przeglądanie działań naprawczych
+        - name: Przegląd działań naprawczych
           href: mdb-review-remediation-actions.md
-        - name: Wyświetlanie raportów i korzystanie z nich
+        - name: Wyświetlanie i używanie raportów
           href: mdb-reports.md
     - name: Zarządzanie zasadami zabezpieczeń
       items:
@@ -53,7 +53,7 @@
           href: mdb-view-edit-create-policies.md
         - name: Kolejność zasad
           href: mdb-policy-order.md
-        - name: Ustawienia ochrony następnej generacji
+        - name: Ustawienia ochrony nowej generacji
           href: mdb-next-gen-configuration-settings.md
         - name: Ustawienia zapory
           href: mdb-firewall.md
@@ -74,6 +74,6 @@
         - name: Rozwiązywanie problemów
           href: mdb-troubleshooting.yml
         - name: Microsoft 365 Business Premium
-          href: /microsoft-365/business-premium
+          href: /microsoft-365/business-premium/
         - name: Microsoft 365 Lighthouse
           href: /microsoft-365/lighthouse/m365-lighthouse-overview

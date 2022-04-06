@@ -1,22 +1,22 @@
 ### YamlMime:Landing
-title: Biblioteka szkoleniowa dla administratorów
-summary: Dowiedz się, jak skonfigurować konto służbowe Microsoft 365 zarządzać nimi, dzięki krótkim klipom wideo.
+title: Biblioteka wideo szkoleń dla administratorów
+summary: Dowiedz się, jak skonfigurować platformę Microsoft 365 dla swojej firmy i zarządzać nią za pomocą krótkich klipów wideo.
 metadata:
-  title: Biblioteka szkoleniowa dla administratorów
-  description: Dowiedz się, jak skonfigurować konto służbowe Microsoft 365 zarządzać nimi, dzięki krótkim klipom wideo.
+  title: Biblioteka wideo szkoleń dla administratorów
+  description: Dowiedz się, jak skonfigurować platformę Microsoft 365 dla swojej firmy i zarządzać nią za pomocą krótkich klipów wideo.
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: landing-page
   author: efrene
   ms.author: efrene
-  ms.date: 02/25/2022
+  ms.date: 03/31/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: daa4b3f2892a27229404dd61a836792a4b35eef5
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 9d9a9515cf9bda34d49cd927e0b59e90fa0c79ed
+  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63315865"
+  ms.lasthandoff: 04/04/2022
+  ms.locfileid: "64633200"
 landingContent:
 - title: Wprowadzenie
   linkLists:
@@ -119,16 +119,16 @@ landingContent:
   - linkListType: video
     links:
     - text: Zabezpieczanie Windows 10 Pro urządzeniach
-      url: devices/protection-settings-for-windows-10-pcs.md
+      url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
     - text: Zabezpieczanie Office w systemie iOS
-      url: devices/app-protection-settings-for-android-and-ios.md
+      url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
 - title: Zabezpieczenia & zgodności
   linkLists:
   - linkListType: video
     links:
     - text: Omówienie zabezpieczeń Microsoft 365 Business Premium zabezpieczeń
       url: security-and-compliance/secure-your-business-data.md
-    - text: (NOWOŚĆ!) Microsoft Defender for Business
+    - text: (NOWOŚĆ!) Microsoft Defender dla Firm
       url: /microsoft-365/security/defender-business/index.yml
     - text: Zabezpieczanie kont pracowników za pomocą uwierzytelniania wieloskładnikowego
       url: security-and-compliance/set-up-multi-factor-authentication.md
@@ -143,9 +143,9 @@ landingContent:
     - text: Zarządzanie bezpiecznymi linkami
       url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
     - text: Zapobieganie utracie danych
-      url: security-and-compliance/set-up-compliance.md
+      url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
     - text: Tworzenie etykiet wrażliwości
-      url: security-and-compliance/set-up-compliance.md
+      url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
 - title: Pomoc techniczna
   linkLists:
   - linkListType: video

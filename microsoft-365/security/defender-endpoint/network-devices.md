@@ -17,36 +17,36 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2affbe19484348a511487930d034da6799ca348c
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f6092800de89ebfdeed35230b1ade296e0396a85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63018907"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468782"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Odnajdowanie urządzeń sieciowych i zarządzanie lukami w zabezpieczeniach
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Zagrożenia i zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]
 > W [opublikowanym](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \(w blogu 04–13–2021 \) blogu odnajdowanie i ocenianie luk w zabezpieczeniach urządzeń sieciowych zawiera szczegółowe informacje na temat nowych funkcji odnajdowania urządzeń sieciowych w uchcie Defender for Endpoint. Ten artykuł zawiera omówienie wyzwania, w przypadku którym  zaprojektowano odnajdowanie urządzeń sieciowych, oraz szczegółowe informacje o rozpoczynaniu korzystania z tych nowych funkcji.
 
 Funkcje odnajdowania sieci są dostępne w sekcji **Spis** urządzeń w portalu Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">sieci</a> i Microsoft 365 Defender sieci.
 
-W każdym segmencie sieci zostanie użyty wskazany program Microsoft Defender for Endpoint do okresowego uwierzytelniania skanów wstępnie skonfigurowanych urządzeń sieciowych. Po odkrytiu funkcje łączności usługi Defender for Endpoint Zarządzanie zagrożeniami i lukami zintegrowanych przepływów pracy w celu zabezpieczenia przełączników, routerów, kontrolerów WLAN, zapór i bram VPN.
+W każdym Ochrona punktu końcowego w usłudze Microsoft Defender będzie używane wyznaczony urządzenie do okresowego uwierzytelniania skanów wstępnie skonfigurowanych urządzeń sieciowych. Po odkrytiu funkcje łączności usługi Defender for Endpoint Zarządzanie zagrożeniami i lukami zintegrowanych przepływów pracy w celu zabezpieczenia przełączników, routerów, kontrolerów WLAN, zapór i bram VPN.
 
 Gdy urządzenia sieciowe zostaną wykryte i sklasyfikowane, administratorzy zabezpieczeń będą mogli otrzymywać najnowsze zalecenia dotyczące zabezpieczeń oraz przeglądać niedawno wykryte luki w zabezpieczeniach na urządzeniach sieciowych wdrożonych w ich organizacjach.
 
 ## <a name="approach"></a>Podejście
 
-Urządzenia sieciowe nie są zarządzane jako standardowe punkty końcowe, ponieważ program Defender for Endpoint nie ma wbudowanego czujnika w urządzenia sieciowe. Te typy urządzeń wymagają podejścia bez agenta, w którym skanowanie zdalne uzyska niezbędne informacje z urządzeń. W zależności od topologii i charakterystyk sieci jedno urządzenie lub kilka urządzeń podłączonych do programu Microsoft Defender for Endpoint będzie przeprowadzać uwierzytelnione skany urządzeń sieciowych przy użyciu SNMP (tylko do odczytu).
+Urządzenia sieciowe nie są zarządzane jako standardowe punkty końcowe, ponieważ program Defender for Endpoint nie ma wbudowanego czujnika w urządzenia sieciowe. Te typy urządzeń wymagają podejścia bez agenta, w którym skanowanie zdalne uzyska niezbędne informacje z urządzeń. W zależności od topologii i charakterystyk sieci jedno urządzenie lub kilka urządzeń podłączonych do programu Ochrona punktu końcowego w usłudze Microsoft Defender będzie przeprowadzać uwierzytelnione skany urządzeń sieciowych przy użyciu SNMP (tylko do odczytu).
 
 Należy pamiętać o dwóch typach urządzeń:
 
@@ -108,7 +108,7 @@ Do skonfigurowania zadań oceniania jest wymagana następująca opcja uprawnień
 2. Pobierz skaner sieciowy i zainstaluj go na wskazanym urządzeniu do oceny punktu końcowego programu Defender.
 
     > [!div class="mx-imgBorder"]
-    > ![Przycisk Pobierz skaner.](images/assessment-jobs-download-scanner.png)
+    > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="Przycisk Pobierz skaner" lightbox="images/assessment-jobs-download-scanner.png":::
 
 ## <a name="network-scanner-installation--registration"></a>Instalacja skanera sieciowego & rejestracji
 
@@ -132,7 +132,7 @@ Na stronie Zadania oceny w **programie Ustawienia** wybierz **pozycję Dodaj zad
 Aby zapobiec duplikowaniu urządzeń w spisie urządzeń sieciowych, upewnij się, że każdy adres IP jest skonfigurowany tylko raz na wielu urządzeniach do oceny.
 
 > [!div class="mx-imgBorder"]
-> ![Przycisk Dodaj zadanie oceny sieci.](images/assessment-jobs-add.png)
+> :::image type="content" source="images/assessment-jobs-add.png" alt-text="Przycisk Dodaj zadanie oceny sieci" lightbox="images/assessment-jobs-add.png":::
 
 Dodawanie kroków zadania oceny sieci:
 
@@ -162,7 +162,7 @@ Po wyświetlniu wyników możesz wybrać urządzenia, które będą uwzględnian
 Nowo wykryte urządzenia będą widoczne na nowej karcie **Urządzenia** sieciowe na **stronie spisu** urządzeń. Po dodaniu zadania oceniania może upłynie do dwóch godzin, dopóki urządzenia nie zostaną zaktualizowane.
 
 > [!div class="mx-imgBorder"]
-> ![Sekcja Urządzenia sieciowe w spisie urządzeń.](images/assessment-jobs-device-inventory.png)
+> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="Sekcja Urządzenia sieciowe w spisie urządzeń" lightbox="images/assessment-jobs-device-inventory.png":::
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 

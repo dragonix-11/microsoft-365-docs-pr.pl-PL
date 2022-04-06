@@ -19,23 +19,23 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 11/30/2021
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 79c56345177b84cd6acbfa6c9a694ab56bc76c1c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5dd5c78c366a708104b4662be86d71056d6a726a
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466658"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632716"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Przełączanie do Ochrona punktu końcowego w usłudze Microsoft Defender — etap 2. Konfigurowanie
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Etap 1. Przygotowanie.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Etap 1. Przygotowywanie](switch-to-mde-phase-1.md)|![Etap 2. Konfigurowanie.](images/phase-diagrams/setup.png#lightbox)<br/>Etap 2. Konfigurowanie|[![Etap 3. Etap 3. Etap 3.](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Etap 3. Wniesienie](switch-to-mde-phase-3.md)|
+|[![Etap 1. Przygotowanie.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Faza 1. Przygotowanie](switch-to-mde-phase-1.md)|![Etap 2. Konfigurowanie.](images/phase-diagrams/setup.png#lightbox)<br/>Faza 2. Konfiguracja|[![Etap 3. Etap 3. Etap 3.](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Faza 3. Dołączenie](switch-to-mde-phase-3.md)|
 |---|---|---|
 ||*Jesteś tutaj!*||
 
@@ -52,34 +52,14 @@ ms.locfileid: "64466658"
 W niektórych wersjach pakietu Windows program Program antywirusowy Microsoft Defender został prawdopodobnie odinstalowany lub wyłączony podczas instalowania rozwiązania innego niż firmy Microsoft lub ochrony przed złośliwym oprogramowaniem. Gdy punkty końcowe uruchomione przez Windows są wnoszone do usługi Defender for Endpoint, Program antywirusowy Microsoft Defender działać w trybie pasywnym obok rozwiązania antywirusowego firmy microsoft. Aby dowiedzieć się więcej, zobacz [Ochrona antywirusowa za pomocą programu Defender dla punktu końcowego](microsoft-defender-antivirus-compatibility.md#antivirus-protection-without-defender-for-endpoint).
 
 Podczas przełączania się do usługi Defender dla punktu końcowego może być konieczne wykonanie pewnych czynności w celu ponownej instalacji lub włączenia Program antywirusowy Microsoft Defender. W poniższej tabeli opisano, co należy zrobić na Windows klientach i serwerach.
-<br/> <br/>
 
 |Typ punktu końcowego|Co należy zrobić|
 |---|---|
-|Windows klientów (na przykład punkty końcowe uruchomione Windows 10 i Windows 11)|Na ogół nie trzeba nic robić w przypadku klientów Windows (chyba że Program antywirusowy Microsoft Defender zostały odinstalowane). Oto dlaczego: <br/><br/> Program antywirusowy Microsoft Defender powinny być zainstalowane, ale najprawdopodobniej są wyłączone na tym etapie procesu migracji. <br/><br/> Po zainstalowaniu rozwiązania niebędące oprogramowaniem antywirusowym/złośliwym firmy Microsoft i do programu Defender for Endpoint klienci nie są jeszcze dostępni, program Program antywirusowy Microsoft Defender jest automatycznie wyłączony. <br/><br/> Później, gdy punkty końcowe klienta są dołączane do usługi Defender for Endpoint, jeśli te punkty końcowe działają w rozwiązaniu antywirusowym innym niż firmy Microsoft, Program antywirusowy Microsoft Defender przechodzi w tryb pasywny. <br/><br/> Jeśli odinstalowane zostanie rozwiązanie antywirusowe inne niż firmy Microsoft, Program antywirusowy Microsoft Defender automatycznie przejdzie w tryb aktywny.|
-|Windows serwerach|Na Windows serwera konieczne będzie ponowne zainstalowanie Program antywirusowy Microsoft Defender i ręczne ustawienie trybu pasywnego. Na Windows w przypadku zainstalowania oprogramowania antywirusowego/ochrony przed złośliwym oprogramowaniem Program antywirusowy Microsoft Defender firmy Microsoft nie można używać razem z rozwiązaniem antywirusowym innym niż firmy Microsoft. W takich przypadkach Program antywirusowy Microsoft Defender została wyłączona lub odinstalowana ręcznie. <br/><br/> Aby ponownie zainstalować lub włączyć Program antywirusowy Microsoft Defender na Windows Server, wykonaj następujące zadania: <br/>- [Ustaw wartość DisableAntiSpyware na wartość false na Windows Server](#set-disableantispyware-to-false-on-windows-server) (tylko w razie potrzeby)<br/>- [Ponowne Program antywirusowy Microsoft Defender na Windows Server 2016](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Ponowne Program antywirusowy Microsoft Defender na Windows Server w wersji 1803 lub nowszej](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Ustawianie Program antywirusowy Microsoft Defender na tryb pasywny na Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Jeśli podczas ponownego instalowania lub ponownego włączania programu Program antywirusowy Microsoft Defender w programie Windows Server na tym serwerze będą się Program antywirusowy Microsoft Defender problemy, zobacz Rozwiązywanie problemów: odinstalowywanie programu [Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
+|Windows klientów (na przykład punkty końcowe uruchomione Windows 10 i Windows 11)|Na ogół nie trzeba nic robić w przypadku klientów Windows (chyba że Program antywirusowy Microsoft Defender zostały odinstalowane). Na ogół Program antywirusowy Microsoft Defender być nadal instalowane, ale najprawdopodobniej są wyłączone na tym etapie procesu migracji. <br/><br/> Po zainstalowaniu rozwiązania niebędące oprogramowaniem antywirusowym/złośliwym firmy Microsoft i do programu Defender for Endpoint klienci nie są jeszcze dostępni, program Program antywirusowy Microsoft Defender jest automatycznie wyłączony. Później, gdy punkty końcowe klienta są dołączane do usługi Defender for Endpoint, jeśli te punkty końcowe działają w rozwiązaniu antywirusowym innym niż firmy Microsoft, Program antywirusowy Microsoft Defender przechodzi w tryb pasywny. <br/><br/> Jeśli odinstalowane zostanie rozwiązanie antywirusowe inne niż firmy Microsoft, Program antywirusowy Microsoft Defender automatycznie przejdzie w tryb aktywny.|
+|Windows serwerach|Na Windows serwera konieczne będzie ponowne zainstalowanie Program antywirusowy Microsoft Defender i ręczne ustawienie trybu pasywnego. Na Windows w przypadku zainstalowania oprogramowania antywirusowego/ochrony przed złośliwym oprogramowaniem Program antywirusowy Microsoft Defender firmy Microsoft nie można używać razem z rozwiązaniem antywirusowym innym niż firmy Microsoft. W takich przypadkach Program antywirusowy Microsoft Defender została wyłączona lub odinstalowana ręcznie. <br/><br/> Aby ponownie zainstalować lub włączyć Program antywirusowy Microsoft Defender na Windows Server, wykonaj następujące zadania: <br/>- [Ponowne Program antywirusowy Microsoft Defender na Windows Server 2016](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Ponowne Program antywirusowy Microsoft Defender na Windows Server w wersji 1803 lub nowszej](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Ustawianie Program antywirusowy Microsoft Defender na tryb pasywny na Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Jeśli podczas ponownego instalowania lub ponownego włączania programu Program antywirusowy Microsoft Defender w programie Windows Server na tym serwerze będą się Program antywirusowy Microsoft Defender problemy, zobacz Rozwiązywanie problemów: odinstalowywanie programu [Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
 
 > [!TIP]
 > Aby dowiedzieć się więcej Program antywirusowy Microsoft Defender o stanach z ochroną antywirusową innych niż firma Microsoft, zobacz [Program antywirusowy Microsoft Defender zgodności](microsoft-defender-antivirus-compatibility.md).
-
-### <a name="set-disableantispyware-to-false-on-windows-server"></a>Ustaw wartość DisableAntiSpyware na wartość false na Windows Server
-
-W przeszłości klawisz rejestru [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) był używany do wyłączania programu Program antywirusowy Microsoft Defender i wdrażania innego produktu antywirusowego, takiego jak firma McAfee, Oprogramowania lub inne. **Ogólnie rzecz biorąc,** ten klucz rejestru nie powinien być ustawiony na urządzeniach Windows i punktach końcowych.  `DisableAntiSpyware` Jeśli jednak to zrobisz, oto jak ustawić wartość tego klucza na fałsz:
-
-1. Na urządzeniu Windows Server otwórz Edytor rejestru.
-
-2. Przejdź do `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
-
-3. W tym folderze odszukaj wpis DWORD o **nazwie DisableAntiSpyware**.
-   - Jeśli nie widzisz tego wpisu, wszystko jest już ustawione.
-   - Jeśli zostanie wyświetlony temat **DisableAntiSpyware**, przejdź do kroku 4.
-
-4. Kliknij prawym przyciskiem myszy wartość DisableAntiSpyware DWORD, a następnie wybierz pozycję **Modify (Modyfikuj**).
-
-5. Ustaw wartość na `0`. Ta akcja ustawia wartość klucza rejestru na *fałsz*.
-
-> [!TIP]
-> Aby dowiedzieć się więcej o tym kluczu rejestru, zobacz [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
 ### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-2016"></a>Ponowne włączanie Program antywirusowy Microsoft Defender w Windows Server 2016
 
@@ -91,13 +71,12 @@ Możesz użyć narzędzia [Malware Protection Command-Line Utility,](command-lin
 
 3. Uruchom urządzenie ponownie.
 
-
 ### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>Ponowne włączanie Program antywirusowy Microsoft Defender w Windows Server w wersji 1803 lub nowszej
 
 > [!IMPORTANT]
 > Następująca procedura dotyczy tylko punktów końcowych lub urządzeń z następującymi wersjami programu Windows:
-> - Windows Server 2019
 > - Windows Server 2022
+> - Windows Server 2019
 > - Windows Server, wersja 1803 (tryb tylko podstawowy)
 
 1. Jako administrator lokalny na serwerze otwórz Windows PowerShell.
@@ -128,15 +107,12 @@ Możesz użyć narzędzia [Malware Protection Command-Line Utility,](command-lin
 > [!TIP]
 > Teraz można uruchamiać Program antywirusowy Microsoft Defender pasywnego na Windows Server 2012 R2 i 2016. Aby uzyskać więcej informacji, [zobacz Opcje instalowania Ochrona punktu końcowego w usłudze Microsoft Defender](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
-1. Otwórz Edytor rejestru, a następnie przejdź do
-
-   ```text
-   Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
-   ```
+1. Otwórz Edytor rejestru, a następnie przejdź do .`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 
 2. Edytuj (lub utwórz) wpis DWORD o nazwie **ForceDefenderPassiveMode** i określ następujące ustawienia:
 
    - Ustaw wartość dword na **1**.
+
    - W **obszarze Podstawa** wybierz **pozycję Szesnastkowy**.
 
 > [!NOTE]
@@ -149,7 +125,6 @@ Teraz można uruchamiać Program antywirusowy Microsoft Defender pasywnego na Wi
 ## <a name="configure-defender-for-endpoint"></a>Konfigurowanie usługi Defender dla punktu końcowego
 
 Ten krok procesu migracji obejmuje skonfigurowanie Program antywirusowy Microsoft Defender punktów końcowych. Zalecamy używanie Intune jednak możesz użyć dowolnej z metod wymienionych w poniższej tabeli:
-<br/><br/>
 
 |Metoda|Co należy zrobić|
 |---|---|
@@ -178,8 +153,7 @@ Konkretne wykluczenia do skonfigurowania zależą od tego, Windows które punkty
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>Dodaj istniejące rozwiązanie do listy wykluczeń dla Program antywirusowy Microsoft Defender
 
-W tym kroku procesu konfiguracji dodasz istniejące rozwiązanie do Program antywirusowy Microsoft Defender wykluczeń. Możesz wybrać jedną z kilku metod dodawania wykluczeń Program antywirusowy Microsoft Defender, jak podano w poniższej tabeli:
-<br/><br/>
+W tym kroku procesu konfiguracji dodasz istniejące rozwiązanie do Program antywirusowy Microsoft Defender wykluczeń. Możesz wybrać jedną z kilku metod dodawania wykluczeń Program antywirusowy Microsoft Defender, jak podano w poniższej tabeli: 
 
 |Metoda|Co należy zrobić|
 |---|---|
@@ -196,14 +170,16 @@ Po dodaniu [wykluczeń do Program antywirusowy Microsoft Defender należy](/wind
 Należy pamiętać o następujących kwestiach:
 
 - *Wykluczenia ścieżek nie obejmują* określonych plików ani dostępu do nich.
+
 - *Wykluczenia procesów nie* wykluczają z jakiegokolwiek procesu, ale nie wykluczają samego procesu.
+
 - Wyklucz proces, używając ich pełnej ścieżki, a nie tylko nazwy użytkownika. Metoda dostępna tylko w przypadku nazw jest mniej bezpieczna.
+
 - Jeśli każdy plik wykonywalny (.exe) zostanie na liście jako wykluczona ścieżka i wykluczenie procesu, proces i wszelkie jego dane zostaną wykluczone.
 
 ## <a name="set-up-your-device-groups-device-collections-and-organizational-units"></a>Konfigurowanie grup urządzeń, kolekcji urządzeń i jednostek organizacyjnych
 
 Grupy urządzeń, kolekcje urządzeń i jednostki organizacyjne umożliwiają Twoje zespołowi zabezpieczeń wydajne i efektywne zarządzanie zasadami zabezpieczeń oraz przypisywanie ich. W poniższej tabeli opisano każdą z tych grup i sposób ich konfigurowania. Twoja organizacja może nie używać wszystkich trzech typów kolekcji.
-<br/><br/>
 
 |Typ kolekcji|Co należy zrobić|
 |---|---|

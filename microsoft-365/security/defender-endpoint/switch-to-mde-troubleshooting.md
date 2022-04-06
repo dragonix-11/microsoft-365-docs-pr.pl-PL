@@ -1,6 +1,6 @@
 ---
-title: Rozwiązywanie problemów podczas przełączania do programu Microsoft Defender dla punktu końcowego
-description: Dowiedz się, jak rozwiązywać problemy podczas przełączania się do programu Microsoft Defender for Endpoint.
+title: Rozwiązywanie problemów podczas przełączania się na Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Dowiedz się, jak rozwiązywać problemy podczas przełączania się na Ochrona punktu końcowego w usłudze Microsoft Defender.
 keywords: migracja, usługa Windows Defender, zaawansowana ochrona punktu końcowego, oprogramowanie antywirusowe, ochrona przed złośliwym oprogramowaniem, tryb pasywny, tryb aktywny, rozwiązywanie problemów
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,24 +16,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 01/11/2022
+ms.date: 03/28/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 180adaff84f4154034d8bda04b6a6cbf6ceadc2e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680459"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507519"
 ---
-# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Rozwiązywanie problemów podczas przełączania do programu Microsoft Defender dla punktu końcowego
+# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Rozwiązywanie problemów podczas przełączania się na Ochrona punktu końcowego w usłudze Microsoft Defender
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dla administratorów zabezpieczeń, którzy mają problemy podczas przełączania rozwiązania ochrony punktu końcowego innych niż firma Microsoft na program Microsoft Defender for Endpoint.
+Ten artykuł zawiera informacje dotyczące rozwiązywania problemów dla administratorów zabezpieczeń, którzy mają problemy podczas przełączania rozwiązania ochrony punktu końcowego innych niż firma Microsoft na Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 ## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Program antywirusowy Microsoft Defender jest odinstalowywać na Windows Server
 
@@ -42,7 +42,7 @@ Po rozpoczęciu pracy z usługą Defender for Endpoint zaczniesz od ochrony prze
 Aby rozwiązać ten problem, zrób tak:
 
 1. [Ustaw dla klucza rejestru DisableAntiSpyware wartość false](#set-the-disableantispyware-registry-key-to-false).
-2. [Dodaj usługę Microsoft Defender for Endpoint do listy wykluczeń](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+2. [Dodaj Ochrona punktu końcowego w usłudze Microsoft Defender do listy wykluczeń](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
 3. [Ustaw Program antywirusowy Microsoft Defender tryb pasywny](#set-microsoft-defender-antivirus-to-passive-mode-manually) ręcznie.
 
 ### <a name="set-the-disableantispyware-registry-key-to-false"></a>Ustawianie dla klucza rejestru DisableAntiSpyware wartości false
@@ -64,7 +64,7 @@ W przeszłości klawisz rejestru [DisableAntiSpyware](/windows-hardware/customiz
 > [!TIP]
 > Aby dowiedzieć się więcej o tym kluczu rejestru, zobacz [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
-### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Dodawanie programu Microsoft Defender for Endpoint do listy wykluczeń
+### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Dodawanie Ochrona punktu końcowego w usłudze Microsoft Defender do listy wykluczeń
 
 Niektóre wykluczenia dla usługi Defender for Endpoint muszą być zdefiniowane w istniejącym rozwiązaniu ochrony punktu końcowego innym niż firma Microsoft. Pamiętaj o dodaniu następujących wykluczeń:
 
@@ -96,6 +96,21 @@ Wartość: `1`
 > Aby tryb pasywny działał na punktach końcowych z systemem Windows Server 2016 i Windows Server 2012 R2, te punkty końcowe muszą zostać uruchomione zgodnie z instrukcjami w te Windows sieci.[](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)
 
 Aby uzyskać więcej informacji, [zobacz Program antywirusowy Microsoft Defender on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+
+## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>Program antywirusowy Microsoft Defender wygląda na to, że zablokowano się w trybie pasywnym
+
+Jeśli Program antywirusowy Microsoft Defender tryb pasywny, ustaw go ręcznie na tryb aktywny, korzystając z poniższych kroków:
+
+1. Na tym Windows otwórz Edytor rejestru jako administrator.
+
+2. Przejdź do `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+
+3. Ustaw lub **zdefiniuj wpis REG_DWORD** o nazwie `ForceDefenderPassiveMode`, a następnie ustaw jego wartość na `0`.
+
+4. Uruchom ponownie urządzenie.
+
+> [!IMPORTANT]
+> Jeśli po zakończeniu tej procedury nadal masz problem z Program antywirusowy Microsoft Defender do trybu aktywnego, skontaktuj się [z pomocą techniczną](../../admin/get-help-support.md).
 
 ## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>Mam problem z ponownym włączeniem funkcji Program antywirusowy Microsoft Defender na Windows Server 2016
 

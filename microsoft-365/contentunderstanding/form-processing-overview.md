@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak używać kompilacji AI do tworzenia modeli przetwarzania formularzy w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: d04de2fc71b0b393e560e354253be42053725416
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: a3a3d1fa0e160b96d487a5eeb03c69f9e4fe7fb3
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450776"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507394"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Omówienie przetwarzania formularzy w aplikacji Microsoft SharePoint Syntex
 
@@ -31,7 +31,7 @@ Za pomocą przetwarzania formularzy aplikacji AI Builder możesz tworzyć modele
 Organizacje często otrzymują faktury w dużych ilościach z różnych źródeł, takich jak poczta, faks, poczta e-mail itp. Przetwarzanie tych dokumentów i ręczne wprowadzanie ich do bazy danych może zająć sporo czasu. Używając drugiej technologii do wyodrębniania tekstu, par kluczy i wartości oraz tabel z dokumentów, przetwarzanie formularzy automatyzuje ten proces. 
 
 > [!NOTE]
-> Zobacz [przykłady SharePoint Syntex formularza: wprowadzenie](./adoption-getstarted.md) do tego przewodnika, aby uzyskać więcej informacji na temat przykładów scenariuszy przetwarzania formularzy.
+> Zobacz [przykłady SharePoint Syntex formularza: Wprowadzenie aby](./adoption-getstarted.md) uzyskać więcej informacji na temat przykładów scenariuszy przetwarzania formularzy.
 
 Można na przykład utworzyć model przetwarzania formularzy identyfikujący wszystkie dokumenty zamówień zakupu, które są przekazywane do biblioteki dokumentów. Z każdego zamówienia zakupu możesz następnie wyodrębnić i wyświetlić określone dane, które są dla Ciebie ważne, takie jak Numer zamówienia *zakupu, Data* lub *Koszt całkowity*.
 
@@ -46,6 +46,10 @@ Administrator Office 365 musi włączyć przetwarzanie formularzy [](./set-up-co
 ### <a name="file-limitations"></a>Ograniczenia dotyczące plików
 
 Podczas korzystania z modeli przetwarzania formularzy pamiętaj o [wymaganiach i ograniczeniach dotyczących użycia plików](/ai-builder/form-processing-model-requirements).
+
+### <a name="supported-languages"></a>Obsługiwane języki
+
+Przetwarzanie formularzy obsługuje dokumenty w ponad 73 językach. Aby uzyskać listę języków, zobacz [Obsługa języka przetwarzania formularzy](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support).
 
 ### <a name="multi-geo-environments"></a>Środowiska z wieloma lokalizacjami geograficznymi
 

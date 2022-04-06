@@ -1,8 +1,8 @@
 ---
-title: Ręczne wdrażanie programu Microsoft Defender dla punktu końcowego w systemie Linux
+title: Ręczne Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 ms.reviewer: ''
-description: W tym artykule opisano, jak ręcznie wdrożyć program Microsoft Defender for Endpoint w systemie Linux z wiersza polecenia.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, dezinstalacja, 8, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
+description: W tym artykule opisano Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux ręcznie z wiersza polecenia.
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, linux, instalacja, wdrażanie, dezinstalacja, szemra, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,26 +16,26 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da05d702a2cb074ece2fec74371e7b5f560cb1ed
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 4d66dad57fa7b045062a0300327b76030c33dfab
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013828"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468176"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Ręczne wdrażanie programu Microsoft Defender dla punktu końcowego w systemie Linux
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Ręczne Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 
-W tym artykule opisano, jak ręcznie wdrożyć program Microsoft Defender dla punktu końcowego w systemie Linux. Pomyślne wdrożenie wymaga wykonania wszystkich z następujących zadań:
+W tym artykule opisano, jak ręcznie Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux. Pomyślne wdrożenie wymaga wykonania wszystkich z następujących zadań:
 
   - [Wymagania wstępne i wymagania systemowe](#prerequisites-and-system-requirements)
   - [Konfigurowanie repozytorium oprogramowania Linux](#configure-the-linux-software-repository)
@@ -48,7 +48,7 @@ W tym artykule opisano, jak ręcznie wdrożyć program Microsoft Defender dla pu
 
 ## <a name="prerequisites-and-system-requirements"></a>Wymagania wstępne i wymagania systemowe
 
-Przed rozpoczęciem zapoznaj się z programem [Microsoft Defender for Endpoint w systemie Linux](microsoft-defender-endpoint-linux.md) , aby uzyskać opis wymagań wstępnych i wymagań systemowych bieżącej wersji oprogramowania.
+Przed rozpoczęciem zobacz program [Ochrona punktu końcowego w usłudze Microsoft Defender Linux](microsoft-defender-endpoint-linux.md), aby uzyskać opis wymagań wstępnych i wymagań systemowych bieżącej wersji oprogramowania.
 
 > [!WARNING]
 > Uaktualnienie systemu operacyjnego do nowej wersji głównych po zainstalowaniu produktu wymaga ponownego zainstalowania produktu. Należy odinstalować [istniejący](linux-resources.md#uninstall) program Defender dla punktu końcowego w systemie Linux, uaktualnić system operacyjny, a następnie ponownie skonfigurować program Defender dla punktu końcowego w systemie Linux, następująco:
@@ -105,7 +105,7 @@ W celu wyświetlania w wersji zapoznawczej nowych funkcji i wczesnych opinii zal
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
     ```
 
-    Jeśli natomiast chcesz poznać nowe funkcje na wybranych urządzeniach, warto wdrożyć program Microsoft Defender dla punktu końcowego w systemie Linux w kanale szybkich aktualizacji dla niejawnych *testerów* :
+    Jeśli natomiast chcesz poznać nowe funkcje na wybranych urządzeniach, możesz wdrożyć aplikację Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux w kanale szybkich aktualizacji dla *niejawnych testerów*:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
@@ -131,7 +131,7 @@ W celu wyświetlania w wersji zapoznawczej nowych funkcji i wczesnych opinii zal
    > [!TIP]
    > Użyj polecenia SPident do identyfikowania informacji związanych z systemem, w tym informacji *o wersji [wersja]*.
 
-   Jeśli na przykład używasz systemu SLES 12 i chcesz wdrożyć program Microsoft Defender for Endpoint w systemie Linux z *kanału prod* :
+   Jeśli na przykład używasz systemu SLES 12 i chcesz wdrożyć w systemie Linux Ochrona punktu końcowego w usłudze Microsoft Defender z *kanału prod*:
 
    ```bash
    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -169,7 +169,7 @@ W celu wyświetlania w wersji zapoznawczej nowych funkcji i wczesnych opinii zal
    > [!TIP]
    > Użyj polecenia hostnamectl do identyfikowania informacji systemowych, w tym release *[version]*.
 
-   Jeśli na przykład używasz ubuntu 18.04 i chcesz wdrożyć program Microsoft Defender dla punktu końcowego w systemie Linux z *kanału prod* :
+   Jeśli na przykład używasz ubuntu 18.04 i chcesz wdrożyć Ochrona punktu końcowego w usłudze Microsoft Defender Linux z *kanału prod*:
 
    ```bash
    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
@@ -304,7 +304,7 @@ Pobierz pakiet dołączania z witryny Microsoft 365 Defender sieci.
 2. Z pierwszego menu rozwijanego wybierz Linux **Server** jako system operacyjny. Z drugiego menu rozwijanego wybierz pozycję **Skrypt** lokalny jako metodę wdrażania.
 3. Wybierz **pozycję Pobierz pakiet dołączający**. Zapisz plik jako WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender zrzut ekranu portalu.](images/portal-onboarding-linux.png)
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Pobieranie pakietu dołączania do portalu Microsoft 365 Defender sieci Microsoft 365 Defender" lightbox="images/portal-onboarding-linux.png":::
 
 4. Z wiersza polecenia sprawdź, czy masz plik, i wyodrębnij zawartość archiwum:
 
@@ -460,7 +460,7 @@ Zobacz [Problemy z instalacją dziennika](linux-resources.md#log-installation-is
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
     ```
 
-1. Ponowne stosowanie programu Microsoft Defender dla punktu końcowego w systemie Linux przy użyciu "kanału produkcyjnego".
+1. Redeploy Ochrona punktu końcowego w usłudze Microsoft Defender Linux przy użyciu "kanału produkcyjnego".
 
 ## <a name="uninstallation"></a>Dezinstalacja
 

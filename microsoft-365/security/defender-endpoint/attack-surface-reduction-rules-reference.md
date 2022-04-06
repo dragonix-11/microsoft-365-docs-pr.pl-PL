@@ -1,7 +1,7 @@
 ---
-title: Dokumentacja reguł zmniejszania obszaru podatnego na ataki
-description: Wyświetla szczegółowe informacje o regułach zmniejszania obszaru ataków na podstawie reguł.
-keywords: Reguły zmniejszania obszaru ataków, ASR, reguły asr, biodra, system zapobiegania włamaniom do hostów, reguły ochrony, reguły antyeksploatowania, antyeksploatacja, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł asr, opis reguł asr
+title: Informacje dotyczące reguł zmniejszania powierzchni ataków
+description: Zawiera szczegółowe informacje na temat reguł ograniczania powierzchni ataków z jedną regułą.
+keywords: Reguły zmniejszania powierzchni ataków, ASR, reguły asr, hips, host intrusion prevention system, zasady ochrony, reguły ochrony, zasady ochrony przed wirusami, ochrona przed wirusami, wykorzystywanie reguł, reguły zapobiegania powstawaniu Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł ASR, opis reguły ASR
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,94 +17,94 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 4662e6b6af9c90f22b6e54c58f54ba80049dc3e1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 377ae12eb2436dcafe84e521fd4b35d712283e74
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663077"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637989"
 ---
-# <a name="attack-surface-reduction-rules-reference"></a>Dokumentacja reguł zmniejszania obszaru podatnego na ataki
+# <a name="attack-surface-reduction-rules-reference"></a>Informacje dotyczące reguł zmniejszania powierzchni ataków
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Ten artykuł zawiera informacje o regułach zmniejszania ataków:
+Ten artykuł zawiera informacje na temat reguł ograniczania ataków:
 
 - [Obsługiwane wersje systemu operacyjnego](#supported-operating-systems)
 - [Obsługiwane systemy zarządzania konfiguracją](#supported-configuration-management-systems)
-- [Szczegóły alertu i powiadomienia dla reguły](#per-rule-alert-and-notification-details)
-- [Macierz reguł i identyfikatorów GUID usługi ASR](#asr-rules-and-guids-matrix)
-- [Tryby reguł usługi ASR](#asr-rule-modes)
-- [Opisy reguł](#per-rule-descriptions)
+- [Alerty i szczegóły powiadomień dotyczące  per-rule](#per-rule-alert-and-notification-details)
+- [Reguły ASR i macierz identyfikatorów GUID](#asr-rules-and-guids-matrix)
+- [Tryby reguły ASR](#asr-rule-modes)
+- [Opisy dla poszczególnych reguł](#per-rule-descriptions)
   - Opisy reguł
   - Nazwy reguł systemu zarządzania konfiguracją
 
-## <a name="public-preview-supported-operating-systems"></a>Publiczna wersja zapoznawcza: obsługiwane systemy operacyjne
+## <a name="public-preview-supported-operating-systems"></a>Publiczna wersja zapoznawcza: Obsługiwane systemy operacyjne
 
 > [!IMPORTANT]
-> Niektóre informacje odnoszą się do wstępnie wydanego produktu, który może zostać znacząco zmodyfikowany przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
+> Niektóre informacje odnoszą się do wstępnie wypuszczonych produktów, które mogą zostać znacząco zmodyfikowane przed jego komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w odniesieniu do podanych tutaj informacji.
 
-Poniższa tabela zawiera listę obsługiwanych systemów operacyjnych dla reguł zmniejszania obszaru ataków, które są obecnie produktem wstępnej wersji. Reguły są wymienione w kolejności alfabetycznej. O ile nie wskazano inaczej, minimalna kompilacja&nbsp; Windows 10 to wersja 1709 (RS3, kompilacja 16299) lub nowsza; minimalna kompilacja&nbsp; Windows Server to wersja 1809 lub nowsza.
+W poniższej tabeli wymieniono obsługiwane systemy operacyjne dla reguł zmniejszania powierzchni ataków, które są obecnie wstępną wersjią produktu. Reguły są wyświetlane w kolejności alfabetycznej. Jeśli nie zaznaczono inaczej, minimalna kompilacja Windows&nbsp; 10 to wersja 1709 (RS3, kompilacja 16299) lub nowsza. Minimalna kompilacja Windows&nbsp; Server to wersja 1809 lub nowsza.
 
 > [!NOTE]
-> Reguły zmniejszania obszaru ataków w Windows&nbsp; Server2012R2&nbsp;&nbsp; i Windows&nbsp; Server2016&nbsp; są dostępne dla urządzeń dołączonych przy użyciu nowoczesnego ujednoliconego pakietu rozwiązań. Aby uzyskać więcej informacji, zobacz [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview (Nowe funkcje w nowoczesnym ujednoliconym rozwiązaniu dla Windows Server 2012 R2 i 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)).
+> Reguły zmniejszania powierzchni ataków w programach Windows&nbsp; Server2012R2&nbsp;&nbsp; i Windows&nbsp; Server2016&nbsp; są dostępne dla urządzeń podłączonych przy użyciu nowoczesnego, ujednoliconego pakietu rozwiązań. Aby uzyskać więcej informacji, zobacz Nowe funkcje w nowoczesnym, ujednoliconym rozwiązaniu dla wersji [Windows Server 2012 R2 i 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 >
 
 | Nazwa reguły | &nbsp;Windows Server 2016 <sup>[[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
 |---|:---:|:---:|
-|[Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T |
-|[Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | T | T |
-|[Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office](#block-all-office-applications-from-creating-child-processes) | T | T |
-|[Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T | T |
-|[Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) | T | T |
-|[Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | T | T |
-|[Blokuj wykonywanie potencjalnie zaciemnionych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T | T |
-|[Blokowanie uruchamiania pobranej zawartości wykonywalnej w języku JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | N | N |
-|[Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office](#block-office-applications-from-creating-executable-content) | T | T |
-|[Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  | T | T |
-|[Blokowanie tworzenia procesów podrzędnych przez aplikację komunikacji Office](#block-office-communication-application-from-creating-child-processes) | T | T |
-|[Blokuj trwałość za pośrednictwem subskrypcji](#block-persistence-through-wmi-event-subscription) \* zdarzeń WMI _Wykluczenia plików i folderów nie są obsługiwane._ | N | N |
-|[Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | T | T |
-|[Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T | T |
-|[Blokuj wywołania interfejsu API Win32 z makr Office](#block-win32-api-calls-from-office-macros) | N | N |
+|[Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T |
+|[Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader](#block-adobe-reader-from-creating-child-processes) | T | T |
+|[Blokowanie tworzenia procesów Office przez wszystkie aplikacje](#block-all-office-applications-from-creating-child-processes) | T | T |
+|[Blokowanie wykradania poświadczeń z podsystemu Windows Security Authority (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T | T |
+|[Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) | T | T |
+|[Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryterium listy zaufanej, jego wieku lub wieku.](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | T | T |
+|[Blokowanie wykonywania potencjalnie obcofkowanych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T | T |
+|[Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | N | N |
+|[Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje](#block-office-applications-from-creating-executable-content) | T | T |
+|[Blokowanie Office aplikacji ze insektowania kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  | T | T |
+|[Blokowanie Office komunikacji z tworzeniem procesów podrzędnych](#block-office-communication-application-from-creating-child-processes) | T | T |
+|[Blokowanie utrwaloności za pośrednictwem subskrypcji zdarzeń usługi WMI](#block-persistence-through-wmi-event-subscription) \* _Wykluczenia plików i folderów nie są obsługiwane._ | N | N |
+|[Blokowanie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | T | T |
+|[Blokowanie niezaufanych i niepodpisanych procesów uruchamianych z usb](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T | T |
+|[Blokowanie wywołań interfejsu API Win32 Office makr](#block-win32-api-calls-from-office-macros) | N | N |
 |[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | T | T |
 |  |  |  |
 
-(<a id="fn1">1</a>) Odnosi się do nowoczesnego, ujednoliconego rozwiązania dla Windows Server 2012 i 2016 roku. Aby uzyskać więcej informacji, zobacz [Dołączanie serwerów Windows do usługi Defender for Endpoint](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Odwołuje się do nowoczesnego, ujednoliconego rozwiązania dla Windows Server 2012 i 2016. Aby uzyskać więcej informacji, [zobacz Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md) (Wewnechaj serwery serwerów do usługi Defender for Endpoint).
 
-_Koniec publicznej wersji zapoznawczej: obsługiwane systemy operacyjne_
+_Zakończ publiczną podgląd: obsługiwane systemy operacyjne_
 
 ## <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 
-Poniższa tabela zawiera listę obsługiwanych systemów operacyjnych dla reguł, które są obecnie udostępniane do ogólnej dostępności. Reguły są wymienione w kolejności alfabetycznej.
+W poniższej tabeli wymieniono obsługiwane systemy operacyjne dla reguł, które są obecnie ogólnie dostępne. Reguły są wyświetlane w kolejności alfabetycznej.
 
 > [!Note]
 >
-> O ile nie wskazano inaczej, minimalna kompilacja&nbsp; Windows 10 to wersja 1709 (RS3, kompilacja 16299) lub nowsza; minimalna kompilacja&nbsp; Windows Server to wersja 1809 lub nowsza.
+> Jeśli nie zaznaczono inaczej, minimalna kompilacja Windows&nbsp; 10 to wersja 1709 (RS3, kompilacja 16299) lub nowsza. Minimalna kompilacja Windows&nbsp; Server to wersja 1809 lub nowsza.
 >
 
 |Nazwa reguły|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Server|
 |---|:---:|:---:|:---:|
-|[Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T | T <br><br> wersja 1803 (półroczny kanał) lub nowszy |
-|[Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | Wersja Y 1809 lub nowsza | T | T  <br><br> |
-|[Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office](#block-all-office-applications-from-creating-child-processes) | T | T | T <br><br> |
-|[Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Wersja Y 1803 lub nowsza | T <br><br> | T <br><br> |
-|[Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) | T | T <br><br> | T <br><br> |
-|[Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Wersja Y 1803 lub nowsza | T <br><br> | T <br><br> |
-|[Blokuj wykonywanie potencjalnie zaciemnionych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T | T <br><br> | T <br><br> |
-|[Blokowanie uruchamiania pobranej zawartości wykonywalnej w języku JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | T | T <br><br> | T <br><br> |
-|[Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office](#block-office-applications-from-creating-executable-content) | T | T <br><br> | T <br><br> |
-|[Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  | T | T <br><br> | T <br><br> |
-|[Blokowanie tworzenia procesów podrzędnych przez aplikację komunikacji Office](#block-office-communication-application-from-creating-child-processes) | T | T <br><br> | T <br><br> |
-|[Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_Wykluczenia plików i folderów nie są obsługiwane._ | Y, wersja 1903 (kompilacja 18362) lub nowsza| T | T <br><br> wersja 1903 (kompilacja 18362) lub nowsza |
-|[Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Wersja Y 1803 lub nowsza | T <br><br> | T <br><br>  |
-|[Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T | T <br><br> | T <br><br> |
-|[Blokuj wywołania interfejsu API Win32 z makr Office](#block-win32-api-calls-from-office-macros) | T | T <br><br> | T <br><br> |
-|[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | Wersja Y 1803 lub nowsza | T <br><br> | T <br><br> |
+|[Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T | T <br><br> wersja 1803 (kanał półroczny) lub nowsza |
+|[Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader](#block-adobe-reader-from-creating-child-processes) | Y w wersji 1809 lub nowszej | T | T  <br><br> |
+|[Blokowanie tworzenia procesów Office przez wszystkie aplikacje](#block-all-office-applications-from-creating-child-processes) | T | T | T <br><br> |
+|[Blokowanie wykradania poświadczeń z podsystemu Windows Security Authority (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y w wersji 1803 lub nowszej | T <br><br> | T <br><br> |
+|[Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) | T | T <br><br> | T <br><br> |
+|[Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryterium listy zaufanej, jego wieku lub wieku.](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y w wersji 1803 lub nowszej | T <br><br> | T <br><br> |
+|[Blokowanie wykonywania potencjalnie obcofkowanych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T | T <br><br> | T <br><br> |
+|[Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | T | T <br><br> | T <br><br> |
+|[Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje](#block-office-applications-from-creating-executable-content) | T | T <br><br> | T <br><br> |
+|[Blokowanie Office aplikacji ze insektowania kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  | T | T <br><br> | T <br><br> |
+|[Blokowanie Office komunikacji z tworzeniem procesów podrzędnych](#block-office-communication-application-from-creating-child-processes) | T | T <br><br> | T <br><br> |
+|[Blokowanie utrwaloności za pośrednictwem subskrypcji zdarzeń usługi WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_Wykluczenia plików i folderów nie są obsługiwane._ | Y w wersji 1903 (kompilacja 18362) lub nowszej| T | T <br><br> wersja 1903 (kompilacja 18362) lub nowsza |
+|[Blokowanie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y w wersji 1803 lub nowszej | T <br><br> | T <br><br>  |
+|[Blokowanie niezaufanych i niepodpisanych procesów uruchamianych z usb](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T | T <br><br> | T <br><br> |
+|[Blokowanie wywołań interfejsu API Win32 Office makr](#block-win32-api-calls-from-office-macros) | T | T <br><br> | T <br><br> |
+|[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | Y w wersji 1803 lub nowszej | T <br><br> | T <br><br> |
 |  |  |  |  |
 
 ## <a name="supported-configuration-management-systems"></a>Obsługiwane systemy zarządzania konfiguracją
@@ -113,123 +113,123 @@ Poniżej tej tabeli znajdują się linki do informacji o wersjach systemu zarzą
 
 |Nazwa reguły | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |<sup>zasady grupy[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) | T  | Y MEM OMA-URI |   | T  |  T  |
-|[Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | T |   |  | T  | T  |
-|[Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office](#block-all-office-applications-from-creating-child-processes) | T |   |T <br><br> CB 1710 | T  | T  |
-|[Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T  |   | T <br><br>CB 1802 | T  | T  |
-|[Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) | T |  |T <br><br> CB 1710 | T | T  |
-|[Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | T |   | T <br><br> CB 1802 |  T |  T |
-|[Blokuj wykonywanie potencjalnie zaciemnionych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T |   |  T  <br><br> CB 1710 | T  | T  |
-|[Blokowanie uruchamiania pobranej zawartości wykonywalnej w języku JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | T |   | T <br><br> CB 1710 | T  | T  |
-|[Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office](#block-office-applications-from-creating-executable-content) | T |  |T <br><br> CB 1710 | T  | T  |
-|[Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes) | T |  | T <br><br> CB 1710 | T  | T  |
-|[Blokowanie tworzenia procesów podrzędnych przez aplikację komunikacji Office](#block-office-communication-application-from-creating-child-processes) | T |  |T <br><br> CB 1710 | T  | T  |
-|[Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI](#block-persistence-through-wmi-event-subscription) |  |  |  |T   | T  |
-|[Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | T |   |   |  T | T  |
-|[Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T |   |T <br><br> CB 1802  | T  | T  |
-|[Blokuj wywołania interfejsu API Win32 z makr Office](#block-win32-api-calls-from-office-macros) | T |   | T <br><br> CB 1710  | T  |  T |
+|[Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników](#block-abuse-of-exploited-vulnerable-signed-drivers) | T  | Y MEM OMA-URI |   | T  |  T  |
+|[Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader](#block-adobe-reader-from-creating-child-processes) | T |   |  | T  | T  |
+|[Blokowanie tworzenia procesów Office przez wszystkie aplikacje](#block-all-office-applications-from-creating-child-processes) | T |   |T <br><br> CB 1710 | T  | T  |
+|[Blokowanie wykradania poświadczeń z podsystemu Windows Security Authority (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T  |   | T <br><br>CB 1802 | T  | T  |
+|[Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) | T |  |T <br><br> CB 1710 | T | T  |
+|[Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryterium listy zaufanej, jego wieku lub wieku.](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | T |   | T <br><br> CB 1802 |  T |  T |
+|[Blokowanie wykonywania potencjalnie obcofkowanych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T |   |  T  <br><br> CB 1710 | T  | T  |
+|[Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | T |   | T <br><br> CB 1710 | T  | T  |
+|[Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje](#block-office-applications-from-creating-executable-content) | T |  |T <br><br> CB 1710 | T  | T  |
+|[Blokowanie Office aplikacji ze insektowania kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes) | T |  | T <br><br> CB 1710 | T  | T  |
+|[Blokowanie Office komunikacji z tworzeniem procesów podrzędnych](#block-office-communication-application-from-creating-child-processes) | T |  |T <br><br> CB 1710 | T  | T  |
+|[Blokowanie utrwaloności za pośrednictwem subskrypcji zdarzeń usługi WMI](#block-persistence-through-wmi-event-subscription) |  |  |  |T   | T  |
+|[Blokowanie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | T |   |   |  T | T  |
+|[Blokowanie niezaufanych i niepodpisanych procesów uruchamianych z usb](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T |   |T <br><br> CB 1802  | T  | T  |
+|[Blokowanie wywołań interfejsu API Win32 Office makr](#block-win32-api-calls-from-office-macros) | T |   | T <br><br> CB 1710  | T  |  T |
 |[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | T |   | T <br><br> CB 1802 | T  | T  |
 |  |  |  |  |  |  |
 
-  (<a id="fn1">1</a>) Reguły zmniejszania obszaru ataków można skonfigurować dla każdej reguły przy użyciu identyfikatora GUID dowolnej reguły.
+  (<a id="fn1">1</a>) Możesz konfigurować reguły ograniczania powierzchni ataków z każdą regułą przy użyciu identyfikatora GUID dowolnej reguły.
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_Program SCCM jest teraz Microsoft Endpoint Configuration Manager._
+- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_Już nie można Microsoft Endpoint Configuration Manager._
 
-## <a name="per-rule-alert-and-notification-details"></a>Szczegóły alertu i powiadomienia dla reguły
+## <a name="per-rule-alert-and-notification-details"></a>Alerty dotyczące reguły i szczegóły powiadomień
 
-Powiadomienia wyskakujące są generowane dla wszystkich reguł w trybie bloku. Reguły w żadnym innym trybie nie będą generować wyskakujących powiadomień
+Dla wszystkich reguł w trybie blokowania są generowane wyskakujące powiadomienia. Reguły w żadnym innym trybie nie będą generować wyskakujące powiadomienia
 
-W przypadku reguł z określonym stanem reguły:
+W przypadku reguł z określonym "województwem reguły":
 
-- Reguły usługi ASR z \<ASR Rule, Rule State\> kombinacjami służą do wyskakujących alertów (wyskakujących powiadomień) na Ochrona punktu końcowego w usłudze Microsoft Defender tylko dla urządzeń na wysokim poziomie bloków w chmurze. Urządzenia nie na wysokim poziomie bloków w chmurze nie będą generować alertów dla żadnych kombinacji <asr rule, rule state>
-- EDR alerty są generowane dla reguł usługi ASR w określonych stanach, ale tylko dla urządzeń na wysokim poziomie bloku chmury.
+- Reguły ASR ze \<ASR Rule, Rule State\> kombinacjami są używane do powierzchni alertów (powiadomień Ochrona punktu końcowego w usłudze Microsoft Defender) tylko dla urządzeń o wysokim poziomie bloków chmury. Urządzenia, które nie są na wysokim poziomie bloków chmury, nie będą generować alertów <reguł asr, reguł i kombinacji> reguł
+- EDR alerty są generowane dla reguł ASR w określonych stanach, ale tylko dla urządzeń o wysokim poziomie bloków chmury.
 
-| Nazwa reguły: | Stan reguły: | Generuje alerty w EDR? <br> (Tak&nbsp;\|&nbsp;Nie) | Generuje powiadomienia wyskakujące? <br> (Tak&nbsp;\|&nbsp;Nie) |
+| Nazwa reguły: | Stan reguły: | Generuje alerty w programie EDR? <br> (Tak)&nbsp;\|&nbsp;Nie) | Generuje wyskakujące powiadomienia? <br> (Tak)&nbsp;\|&nbsp;Nie) |
 |---|:---:|:---:|:---:|
-|   |   |  _Tylko w przypadku urządzeń na wysokim poziomie bloków w chmurze_ | _Tylko w trybie bloku_ |
-|[Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | T |
-|[Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | Blokuj  | T <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze  | T <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
-|[Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office](#block-all-office-applications-from-creating-child-processes) |   | N | T |
-|[Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | T |
-|[Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) |   | T <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze | T <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
-|[Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | T |
-|[Blokuj wykonywanie potencjalnie zaciemnionych skryptów](#block-execution-of-potentially-obfuscated-scripts) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze  | N \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
-|[Blokowanie uruchamiania pobranej zawartości wykonywalnej w języku JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Blokuj | T <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze  | T <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
-|[Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office](#block-office-applications-from-creating-executable-content) |   | N | T |
-|[Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | T |
-|[Blokowanie tworzenia procesów podrzędnych przez aplikację komunikacji Office](#block-office-communication-application-from-creating-child-processes) |  |  N | T |
-|[Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze  | N \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
-|[Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | T |
-|[Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze  | N \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
-|[Blokuj wywołania interfejsu API Win32 z makr Office](#block-win32-api-calls-from-office-macros) |   | N | T |
-|[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze  | N \| Y <br> Wymaga urządzenia na wysokim poziomie bloków w chmurze |
+|   |   |  _Tylko dla urządzeń na poziomie bloków wysokiego chmury_ | _Tylko w trybie blokowania_ |
+|[Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | T |
+|[Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader](#block-adobe-reader-from-creating-child-processes) | Blokuj  | T <br> Wymaga urządzenia na poziomie bloków wysokiego chmury  | T <br> Wymaga urządzenia na poziomie bloków wysokiego chmury |
+|[Blokowanie tworzenia procesów Office przez wszystkie aplikacje](#block-all-office-applications-from-creating-child-processes) |   | N | T |
+|[Blokowanie wykradania poświadczeń z podsystemu Windows Security Authority (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | T |
+|[Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) |   | T <br> Wymaga urządzenia na poziomie bloków wysokiego chmury | T <br> Wymaga urządzenia na poziomie bloków wysokiego chmury |
+|[Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryterium listy zaufanej, jego wieku lub wieku.](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | T |
+|[Blokowanie wykonywania potencjalnie obcofkowanych skryptów](#block-execution-of-potentially-obfuscated-scripts) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury  | N \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury |
+|[Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Blokuj | T <br> Wymaga urządzenia na poziomie bloków wysokiego chmury  | T <br> Wymaga urządzenia na poziomie bloków wysokiego chmury |
+|[Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje](#block-office-applications-from-creating-executable-content) |   | N | T |
+|[Blokowanie Office aplikacji ze insektowania kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | T |
+|[Blokowanie Office komunikacji z tworzeniem procesów podrzędnych](#block-office-communication-application-from-creating-child-processes) |  |  N | T |
+|[Blokowanie utrwaloności za pośrednictwem subskrypcji zdarzeń usługi WMI](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury  | N \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury |
+|[Blokowanie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | T |
+|[Blokowanie niezaufanych i niepodpisanych procesów uruchamianych z usb](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury  | N \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury |
+|[Blokowanie wywołań interfejsu API Win32 Office makr](#block-win32-api-calls-from-office-macros) |   | N | T |
+|[Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury  | N \| Y <br> Wymaga urządzenia na poziomie bloków wysokiego chmury |
 |   |   |   |   |
   
-## <a name="asr-rules-and-guids-matrix"></a>Macierz reguł i identyfikatorów GUID usługi ASR
+## <a name="asr-rules-and-guids-matrix"></a>Reguły ASR i macierz identyfikatorów GUID
 
 | Nazwa reguły | Identyfikator GUID reguły |
 |:-----|:-----|
-| Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców | 56a863a9-875e-4185-98a7-b882c64b5ce5 |
-| Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c |
-| Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office | d4f940ab-401b-4efc-aadc-ad5f3c50688a |
-| Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
-| Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej | be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 |
-| Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
-| Blokuj wykonywanie potencjalnie zaciemnionych skryptów | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
-| Blokowanie uruchamiania pobranej zawartości wykonywalnej w języku JavaScript lub VBScript | d3e037e1-3eb8-44c8-a917-57927947596d |
-| Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office | 3b576869-a4ec-4529-8536-b80a7769e899 |
-| Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
-| Blokowanie tworzenia procesów podrzędnych przez aplikację komunikacji Office | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
-| Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI <br>* Wykluczenia plików i folderów nie są obsługiwane. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
-| Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI | d1e49aac-8f56-4280-b9ba-993a6d77406c |
-| Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
-| Blokuj wywołania interfejsu API Win32 z makr Office | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
+| Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników | 56a863a9-875e-4185-98a7-b882c64b5ce5 |
+| Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c |
+| Blokowanie tworzenia procesów Office przez wszystkie aplikacje | d4f940ab-401b-4efc-aadc-ad5f3c50688a |
+| Blokowanie wykradania poświadczeń z podsystemu Windows Security Authority (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
+| Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej | be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 |
+| Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryterium listy zaufanej, jego wieku lub wieku. | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
+| Blokowanie wykonywania potencjalnie obcofkowanych skryptów | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
+| Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript | d3e037e1-3eb8-44c8-a917-57927947596d |
+| Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje | 3b576869-a4ec-4529-8536-b80a7769e899 |
+| Blokowanie Office aplikacji ze insektowania kodu do innych procesów | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
+| Blokowanie Office komunikacji z tworzeniem procesów podrzędnych | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
+| Blokowanie utrwaloności za pośrednictwem subskrypcji zdarzeń usługi WMI <br>* Wykluczenia plików i folderów nie są obsługiwane. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
+| Blokowanie procesów pochodzących z poleceń PSExec i WMI | d1e49aac-8f56-4280-b9ba-993a6d77406c |
+| Blokowanie niezaufanych i niepodpisanych procesów uruchamianych z usb | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
+| Blokowanie wywołań interfejsu API Win32 Office makr | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
 | Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup | c1db55ab-c21a-4637-bb3f-a12568109d35 |
 
-## <a name="asr-rule-modes"></a>Tryby reguł usługi ASR
+## <a name="asr-rule-modes"></a>Tryby reguły ASR
 
-- **Nie skonfigurowano** lub **wyłącz**: jest to stan, w którym reguła usługi ASR nie została włączona lub została wyłączona. Kod dla tego stanu = 0.
-- **Blokuj**: jest to stan, w którym jest włączona reguła usługi ASR. Kod dla tego stanu to 1.
-- **Inspekcja**: jest to stan, w którym reguła usługi ASR jest oceniana pod kątem jej wpływu na organizację lub środowisko, w którym została wdrożona. Kod dla tego stanu to 2.
-- **Ostrzec** Jest to stan, w którym reguła usługi ASR jest włączona i wyświetla powiadomienie użytkownikowi końcowemu, ale umożliwia użytkownikowi końcowemu obejście bloku. Kod dla tego stanu to 6.
+- **Nieskonfigurowane** **lub Wyłączone**: jest to stan, w którym reguła asR nie została włączona lub została wyłączona. Kod dla tego stanu = 0.
+- **Blok**: jest to stan, w którym jest włączona reguła ASR. Kod dla tego stanu to 1.
+- **Inspekcja**: jest to stan, w którym jest szacowana reguła asr pod względem jej wpływu na organizację lub środowisko, w którym jest wdrażana. Kod dla tego stanu to 2.
+- **Ostrzegaj** Jest to stan, w którym reguła asR jest włączona i zawiera powiadomienie dla użytkownika końcowego, ale zezwala użytkownikowi końcowemu na ominięcie bloku. Kod dla tego stanu to 6.
 
-_Tryb ostrzeżenia_ to typ trybu bloku, który ostrzega użytkowników o potencjalnie ryzykownych akcjach. Użytkownicy mogą pominąć komunikat ostrzegawczy bloku i zezwolić na akcję bazową. Użytkownicy mogą wybrać przycisk **OK** , aby wymusić blok, lub wybrać opcję obejścia — **Odblokuj** — za pośrednictwem wyskakujących powiadomień wyskakujących użytkownika końcowego, które jest generowane w czasie blokowania. Po odblokowaniu ostrzeżenia operacja jest dozwolona do czasu następnego wystąpienia komunikatu ostrzegawczego, w którym to czasie użytkownik końcowy będzie musiał ponownie sformułować akcję.
+_Tryb ostrzegania_ to typ trybu blokowania, który ostrzega użytkowników o potencjalnie ryzykownych akcjach. Użytkownicy mogą pominąć komunikat ostrzegawczy o bloku i zezwolić na akcję podstawową. Użytkownicy mogą wybrać **przycisk OK** , aby wymusić blokadę, lub wybrać opcję **obejścia — Odblokuj** — za pośrednictwem wyskakujących powiadomień wyskakujących dla użytkownika końcowego generowanych w momencie blokowania. Po odblokowaniu ostrzeżenia operacja jest dozwolona do chwili kolejnego wystąpienia komunikatu ostrzegawczego, kiedy to użytkownik końcowy będzie musiał ponownie sformułować akcję.
 
-Jeśli przycisk zezwalania zostanie kliknięty, blok zostanie pominięty przez 24 godziny. Po 24 godzinach użytkownik końcowy będzie musiał ponownie zezwolić na blok. Tryb ostrzegania dla reguł usługi ASR jest obsługiwany tylko dla urządzeń RS5+ (1809+). Jeśli obejście zostanie przypisane do reguł usługi ASR na urządzeniach ze starszymi wersjami, reguła będzie w trybie zablokowanym.
+Po kliknięciu przycisku zezwalania blok będzie pomijany przez 24 godziny. Po upływie 24 godzin użytkownik końcowy będzie musiał ponownie zezwolić na zablokowanie. Tryb ostrzegania dla reguł ASR jest obsługiwany tylko dla urządzeń RS5+ (1809+). Jeśli do reguł ASR na urządzeniach ze starszymi wersjami zostanie przypisana reguła obejścia, reguła będzie w trybie zablokowanym.
 
-Możesz również ustawić regułę w trybie ostrzeżenia za pośrednictwem programu PowerShell, określając AttackSurfaceReductionRules_Actions jako "Ostrzegaj". Przykład:
+Możesz również ustawić regułę w trybie ostrzegania za pośrednictwem programu PowerShell, po prostu AttackSurfaceReductionRules_Actions jako "Ostrzegaj". Przykład:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
 ```
 
-## <a name="per-rule-descriptions"></a>Opisy reguł
+## <a name="per-rule-descriptions"></a>Na opisy reguł
 
-### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców
+### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Blokowanie nadużyć wykorzystywania w celu wykorzystania podpisanych sterowników
 
-Ta reguła uniemożliwia aplikacji zapisanie na dysku wrażliwego sterownika podpisanego. W środowisku naturalnym, wrażliwe sterowniki podpisane mogą być wykorzystywane przez aplikacje \- lokalne _, które mają wystarczające uprawnienia_\-, aby uzyskać dostęp do jądra. Wrażliwe sterowniki podpisane umożliwiają osobom atakującym wyłączanie lub obchodzenie rozwiązań zabezpieczeń, co ostatecznie prowadzi do naruszenia zabezpieczeń systemu.
+Ta reguła zapobiega napisaniu przez aplikację sterownika, który jest podatny na dostęp do dysku. Lokalne aplikacje, które mają wystarczające uprawnienia do uzyskiwania dostępu do tego kernel, \-  \- mogą korzystać ze sterowników, które są wild- i podpisane. Narażone na podpisane sterowniki umożliwiają atakującym wyłączenie lub obejście rozwiązań zabezpieczeń, co ostatecznie prowadzi do naruszenia bezpieczeństwa systemu.
 
-Reguła **Blokuj nadużywanie wykorzystywanych sterowników podpisanych przez luki w zabezpieczeniach** nie blokuje załadowania sterownika już istniejącego w systemie.
+Reguła **Blokuj nadużycie wykorzystywania narażonych** na zagrożenia podpisanych sterowników nie blokuje ładowania sterownika, który już istnieje w systemie.
 
 > [!NOTE]
 >
-> Tę regułę można skonfigurować przy użyciu identyfikatora OMA-URI MEM. Zobacz [MEM OMA-URI](enable-attack-surface-reduction.md#mem) , aby skonfigurować reguły niestandardowe.
+> Tę regułę można skonfigurować przy użyciu narzędzia OMA-URI MEM. Zobacz [MEM OMA-URI](enable-attack-surface-reduction.md#mem) , aby uzyskać informacje na temat konfigurowania reguł niestandardowych.
 >
-> Tę regułę można również skonfigurować przy użyciu programu [PowerShell](enable-attack-surface-reduction.md#powershell).
+> Tę regułę można także skonfigurować przy użyciu programu [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
 > Aby zbadać sterownik, użyj tej witryny sieci Web, aby [przesłać sterownik do analizy](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-nazwa Intune: `Block abuse of exploited vulnerable signed drivers` (jeszcze niedostępna)
+Intune Nazwa: `Block abuse of exploited vulnerable signed drivers` (jeszcze niedostępne)
 
-nazwa Configuration Manager: Nie jest jeszcze dostępna
+Configuration Manager: Jeszcze niedostępne
   
-IDENTYFIKATOR GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
+Identyfikator GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 <!-- Hide this intro with no subsequent list items
 Advanced hunting action type:
@@ -239,83 +239,83 @@ Advanced hunting action type:
 Dependencies: none provided by engineering
 -->
 
-### <a name="block-adobe-reader-from-creating-child-processes"></a>Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych
+### <a name="block-adobe-reader-from-creating-child-processes"></a>Blokowanie tworzenia procesów podrzędnych przez program Adobe Reader
 
-Ta reguła zapobiega atakom, blokując programowi Adobe Reader tworzenie procesów.
+Ta reguła zapobiega atakom, blokując proces tworzenia procesów przez program Adobe Reader.
 
-Poprzez inżynierię społeczną lub luki w zabezpieczeniach złośliwe oprogramowanie może pobierać i uruchamiać ładunki oraz wyrwać się z programu Adobe Reader. Blokując generowanie procesów podrzędnych przez program Adobe Reader, złośliwe oprogramowanie próbujące użyć go jako wektora nie może się rozprzestrzeniać.
+W ramach technik społecznościowych lub luk w zabezpieczeniach złośliwe oprogramowanie może pobierać i uruchamiać łady, a także wymykać się z programu Adobe Reader. Blokując procesy podrzędne generowane przez program Adobe Reader, nie można rozpowszechniać złośliwego oprogramowania próbującego użyć go jako wektora.
 
-nazwa Intune:`Process creation from Adobe Reader (beta)`
+Intune:`Process creation from Adobe Reader (beta)`
 
-nazwa Configuration Manager: Nie jest jeszcze dostępna
+Configuration Manager: Jeszcze niedostępne
 
-IDENTYFIKATOR GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
+Identyfikator GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
 
 Zależności: MDAV
 
-### <a name="block-all-office-applications-from-creating-child-processes"></a>Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office
+### <a name="block-all-office-applications-from-creating-child-processes"></a>Blokowanie tworzenia procesów Office przez wszystkie aplikacje
 
-Ta reguła uniemożliwia Office aplikacjom tworzenie procesów podrzędnych. aplikacje Office obejmują programy Word, Excel, PowerPoint, OneNote i Access.
+Ta reguła blokuje Office tworzenia procesów podrzędnych przez aplikacje. Office obejmują programy Word, Excel, PowerPoint, OneNote i Access.
 
-Tworzenie złośliwych procesów podrzędnych jest typową strategią złośliwego oprogramowania. Złośliwe oprogramowanie, które nadużywa Office jako wektor, często uruchamia makra VBA i wykorzystuje kod do pobierania i próby uruchomienia większej liczby ładunków. Jednak niektóre uzasadnione aplikacje biznesowe mogą również generować procesy podrzędne dla niegroźnych celów; na przykład zduplikowanie wiersza polecenia lub użycie programu PowerShell do skonfigurowania ustawień rejestru.
+Tworzenie złośliwych procesów dzieci to często strategia złośliwego oprogramowania. Złośliwe oprogramowanie, które wykorzystujące Office w wektorze często uruchamia makra VBA i wykorzystując kod w celu pobrania i próby uruchomienia większej liczby plików. Jednak niektóre legalne aplikacje firmowe mogą również generować procesy podrzędne w celu ich zasyłowania. na przykład w celu skonfigurowania ustawień rejestru za pomocą wiersza polecenia lub programu PowerShell.
 
-nazwa Intune:`Office apps launching child processes`
+Intune:`Office apps launching child processes`
 
-nazwa Configuration Manager:`Block Office application from creating child processes`
+Configuration Manager:`Block Office application from creating child processes`
 
-IDENTYFIKATOR GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
+Identyfikator GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
 
 Zależności: MDAV
 
-### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń
+### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Blokowanie kradzieży poświadczeń z podsystemu Windows Security Authority
 
-Ta reguła pomaga zapobiegać kradzieży poświadczeń przez zablokowanie usługi podsystemu lokalnego urzędu zabezpieczeń (LSASS).
+Ta reguła pomaga zapobiec kradzieży poświadczeń, blokując usługę podsystemu Local Security Authority (LSASS).
 
-Usługa LSASS uwierzytelnia użytkowników, którzy logują się na komputerze Windows. Funkcja Microsoft Defender Credential Guard w Windows zwykle uniemożliwia próby wyodrębnienia poświadczeń z usługi LSASS. Jednak niektóre organizacje nie mogą włączyć funkcji Credential Guard na wszystkich swoich komputerach z powodu problemów ze zgodnością z niestandardowymi sterownikami kart inteligentnych lub innymi programami, które ładują się do lokalnego urzędu zabezpieczeń (LSA). W takich przypadkach osoby atakujące mogą używać narzędzi hack, takich jak Mimikatz, aby zeskrobać hasła zwykłego tekstu i skróty NTLM z LSASS.
+LSASS uwierzytelnia użytkowników, którzy logują się na Windows komputerze. Ochrona poświadczeń programu Microsoft Defender Windows zazwyczaj uniemożliwia próbie wyodrębnienia poświadczeń z usługi LSASS. Jednak niektóre organizacje nie mogą włączyć funkcji Credential Guard na wszystkich swoich komputerach ze względu na problemy ze zgodnością z niestandardowymi sterownikami kart inteligentnych lub innymi programami, które są ładowane do lokalnego urzędu zabezpieczeń (LSA). W takich przypadkach atakujący mogą używać narzędzi do łamania, takich jak Mimikatz, do ześmiecania haseł w postaci czytelnego tekstu i skrótów NTLM z LSASS.
 
 > [!NOTE]
-> W niektórych aplikacjach kod wylicza wszystkie uruchomione procesy i próbuje je otworzyć z wyczerpującymi uprawnieniami. Ta reguła nie zezwala na akcję otwierania procesu aplikacji i rejestruje szczegóły w dzienniku zdarzeń zabezpieczeń. Ta reguła może generować dużo szumu. Jeśli masz aplikację, która po prostu wylicza usługę LSASS, ale nie ma rzeczywistego wpływu na funkcjonalność, nie ma potrzeby dodawania jej do listy wykluczeń. Sam wpis dziennika zdarzeń nie musi wskazywać na złośliwe zagrożenie.
+> W niektórych aplikacjach kod ten wylicza wszystkie uruchomione procesy i próbuje je otwierać ze wszystkimi uprawnieniami. Ta reguła odrzuca otwartą akcję otwierania procesu aplikacji i zapisuje szczegóły w dzienniku zdarzeń zabezpieczeń. Ta reguła może generuje mnóstwo szumów. Jeśli masz aplikację, która po prostu wylicza LSASS, ale nie ma rzeczywistego wpływu na funkcjonalność, nie musisz dodawać jej do listy wykluczeń. Sam wpis w dzienniku zdarzeń nie musi wskazywać na złośliwe zagrożenie.
   
 > [!IMPORTANT]
-> Domyślny stan reguły zmniejszania obszaru podatnego na ataki (ASR) "Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)" zmieni się z **Nieskonfigurowane** na **Skonfigurowano**, a tryb domyślny ustawiony na **Blokuj**. Wszystkie inne reguły usługi ASR pozostaną w stanie domyślnym: **Nieskonfigurowane**. Dodatkowa logika filtrowania została już włączona do reguły w celu zmniejszenia liczby powiadomień użytkowników końcowych. Klienci mogą skonfigurować regułę w trybach **Inspekcja**, **Ostrzeżenie** lub **Wyłączone** , co spowoduje zastąpienie trybu domyślnego. Funkcjonalność tej reguły jest taka sama, niezależnie od tego, czy reguła jest skonfigurowana w trybie domyślnym, czy też w trybie blokuj ręcznie.
+> Domyślny stan reguły zmniejszania powierzchni ataków (ASR, Attack Surface Reduction) "Blokuj kradzież poświadczeń z podsystemu Windows Local Security Authority (lsass.exe)" zmieni się z Nieskonfigurowany na  Skonfigurowany, a tryb domyślny **ustawiony na Zablokuj**. Wszystkie pozostałe reguły asr pozostaną w stanie domyślnym: **Nieskonfigurowane**. Dodatkowa logika filtrowania została już włączona do reguły w celu zmniejszenia powiadomień użytkowników końcowych. Klienci mogą skonfigurować tryb **inspekcji, ostrzegania** lub wyłączenia, co spowoduje zastąpienie trybu domyślnego.  Funkcjonalność tej reguły jest taka sama niezależnie od tego, czy reguła jest skonfigurowana w trybie domyślnym, czy też tryb blokowania jest włączany ręcznie.  
 
-nazwa Intune:`Flag credential stealing from the Windows local security authority subsystem`
+Intune:`Flag credential stealing from the Windows local security authority subsystem`
 
-nazwa Configuration Manager:`Block credential stealing from the Windows local security authority subsystem`
+Configuration Manager:`Block credential stealing from the Windows local security authority subsystem`
 
-IDENTYFIKATOR GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
+Identyfikator GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
 
 Zależności: MDAV
 
-### <a name="block-executable-content-from-email-client-and-webmail"></a>Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej
+### <a name="block-executable-content-from-email-client-and-webmail"></a>Blokowanie pliku wykonywalnego zawartości z klienta poczty e-mail i poczty internetowej
 
-Ta reguła blokuje uruchamianie następujących typów plików z poczty e-mail otwartej w aplikacji microsoft Outlook lub Outlook.com i innych popularnych dostawców poczty internetowej:
+Ta reguła blokuje uruchamianie następujących typów plików z wiadomości e-mail otwieranych w aplikacji Microsoft Outlook lub Outlook.com i innych popularnych dostawców poczty internetowej:
 
-- Pliki wykonywalne (takie jak .exe, .dll lub scr)
-- Pliki skryptów (takie jak plik programu PowerShell ps, Visual Basic vbs lub plik .js JavaScript)
+- Pliki wykonywalne (na przykład .exe, .dll lub scr)
+- Pliki skryptów (na przykład pliki programu PowerShell ps, Visual Basic vbs lub plik .js JavaScript)
 
-nazwa Intune:`Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
+Intune:`Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-nazwa Microsoft Endpoint Manager:`Block executable content from email client and webmail`
+Microsoft Endpoint Manager:`Block executable content from email client and webmail`
 
-IDENTYFIKATOR GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
+Identyfikator GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
@@ -323,202 +323,202 @@ Zaawansowany typ akcji wyszukiwania zagrożeń:
 Zależności: MDAV
 
 > [!NOTE]
-> Reguła **Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej** ma następujące alternatywne opisy, w zależności od używanej aplikacji:
+> Reguła **Blokuj zawartość wykonywaną z klienta poczty e-mail** i poczty internetowej ma następujące opisy alternatywne, w zależności od tego, której aplikacji używasz:
 >
-> - Intune (profile konfiguracji): wykonywanie zawartości wykonywalnej (np. dll, ps, js, vbs itp.) porzucone z poczty e-mail (poczta internetowa/klient poczty) (bez wyjątków).
-> - Endpoint Manager: blokuj pobieranie zawartości wykonywalnej z klientów poczty e-mail i poczty internetowej.
-> - zasady grupy: blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej.
+> - Intune (Profile konfiguracji): Wykonywanie zawartości wykonywalnego (exe, dll, ps, js, vbs itp.) usuniętej z poczty e-mail (klient poczty internetowej/poczty) (bez wyjątków).
+> - Endpoint Manager: Blokuj plik wykonywalny pobierania zawartości z klientów poczty e-mail i poczty internetowej.
+> - zasady grupy: Blokuj wykonywaną zawartość z klienta poczty e-mail i poczty internetowej.
 
-### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych
+### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Blokuj uruchamianie plików wykonywalnych, jeśli nie spełniają one kryterium listy zaufanej, jego wieku lub wieku.
 
-Ta reguła blokuje uruchamianie plików wykonywalnych, takich jak .exe, .dll lub scr. W związku z tym uruchamianie niezaufanych lub nieznanych plików wykonywalnych może być ryzykowne, ponieważ początkowo nie jest jasne, czy pliki są złośliwe.
+Ta reguła blokuje uruchamianie plików wykonywalnych, takich .exe, .dll lub scr. Dlatego uruchamianie niezaufanych lub nieznanych plików wykonywalnych może być ryzykowne, ponieważ początkowo nie można wyczyścić plików, które są złośliwe.
 
 > [!IMPORTANT]
-> Aby korzystać z tej [reguły, należy włączyć ochronę dostarczaną przez chmurę](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) .
+> Aby użyć [tej reguły, należy włączyć ochronę w](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) chmurze.
 >
-> Reguła **Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanej** z identyfikatorem GUID `01443614-cd74-433a-b99e-2ecdc07bfc25` , jest własnością firmy Microsoft i nie jest określane przez administratorów. Ta reguła używa ochrony dostarczanej w chmurze do regularnego aktualizowania listy zaufanych.
+> Reguła **Blokuj uruchamianie plików** wykonywalnych, jeśli nie spełniają one określonego kryterium listy wskazanego jako wiek lub zaufany, a identyfikator GUID `01443614-cd74-433a-b99e-2ecdc07bfc25` należy do firmy Microsoft i nie jest określony przez administratorów. Ta reguła korzysta z ochrony chmurowej w celu regularnego aktualizowania listy zaufanych.
 >
-> Można określić poszczególne pliki lub foldery (przy użyciu ścieżek folderów lub w pełni kwalifikowanych nazw zasobów), ale nie można określić, do których reguł lub wykluczeń mają zastosowanie.
+> Możesz określić poszczególne pliki lub foldery (używając ścieżek folderów lub w pełni kwalifikowanych nazw zasobów), ale nie możesz określić, których reguł lub wykluczeń należy użyć.
 
-nazwa Intune:`Executables that don't meet a prevalence, age, or trusted list criteria`
+Intune:`Executables that don't meet a prevalence, age, or trusted list criteria`
 
-nazwa Configuration Manager:`Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
+Configuration Manager:`Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
 
-IDENTYFIKATOR GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
+Identyfikator GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
 
-Zależności: MDAV, Cloud Protection
+Zależności: MDAV, Ochrona w chmurze
 
-### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Blokuj wykonywanie potencjalnie zaciemnionych skryptów
+### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Blokowanie wykonywania potencjalnie obcofkowanych skryptów
 
-Ta reguła wykrywa podejrzane właściwości w zaciemnionym skryptze.
+Ta reguła wykrywa podejrzane właściwości w scenariuszu obwiedni.
 
-Zaciemnianie skryptów jest powszechną techniką używaną zarówno przez autorów złośliwego oprogramowania, jak i uzasadnione aplikacje w celu ukrycia własności intelektualnej lub skrócenia czasu ładowania skryptów. Autorzy złośliwego oprogramowania używają również zaciemniania, aby utrudnić odczytywanie złośliwego kodu, co uniemożliwia ścisłą kontrolę przez ludzi i oprogramowanie zabezpieczające.
+Wykorzystanie skryptów to technika często stosowana zarówno do ukrywania własności intelektualnej, jak i używania aplikacji w celu ukrycia własności intelektualnej i zmniejszenia czasu ładowania skryptów. Autorzy złośliwego oprogramowania używają także funkcji zaszytania, aby utrudnić odczytywanie złośliwego kodu, co zapobiega kontroli osób ludzkich i oprogramowania zabezpieczającego.
 
-nazwa Intune:`Obfuscated js/vbs/ps/macro code`
+Intune:`Obfuscated js/vbs/ps/macro code`
 
-nazwa Configuration Manager:`Block execution of potentially obfuscated scripts`
+Configuration Manager:`Block execution of potentially obfuscated scripts`
 
-IDENTYFIKATOR GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
+Identyfikator GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
 Zależności: MDAV, AMSI
 
-### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Blokowanie uruchamiania pobranej zawartości wykonywalnej w języku JavaScript lub VBScript
+### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Blokowanie uruchamiania pobranej zawartości wykonywalnego kodu JavaScript lub VBScript
 
-Ta reguła uniemożliwia skryptom uruchamianie potencjalnie złośliwej pobranej zawartości. Złośliwe oprogramowanie napisane w języku JavaScript lub VBScript często działa jako narzędzie do pobierania i uruchamiania innego złośliwego oprogramowania z Internetu.
+Ta reguła zapobiega uruchamianiu potencjalnie złośliwej pobranej zawartości przez skrypty. Złośliwe oprogramowanie napisane w języku JavaScript lub VBScript często działa jako narzędzie do pobierania w celu pobierania i uruchamiania innego złośliwego oprogramowania z Internetu.
 
-Chociaż nie jest to typowe, aplikacje biznesowe czasami używają skryptów do pobierania i uruchamiania instalatorów.
+Mimo że nie jest to typowe, aplikacje firmowe czasami używają skryptów do pobierania i uruchamiania instalatorów.
 
-nazwa Intune:`js/vbs executing payload downloaded from Internet (no exceptions)`
+Intune:`js/vbs executing payload downloaded from Internet (no exceptions)`
 
-nazwa Configuration Manager:`Block JavaScript or VBScript from launching downloaded executable content`
+Configuration Manager:`Block JavaScript or VBScript from launching downloaded executable content`
 
-IDENTYFIKATOR GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
+Identyfikator GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
 Zależności: MDAV, AMSI
 
-### <a name="block-office-applications-from-creating-executable-content"></a>Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office
+### <a name="block-office-applications-from-creating-executable-content"></a>Blokowanie Office tworzenia zawartości wykonywalnego przez aplikacje
 
-Ta reguła uniemożliwia Office aplikacjom, w tym programom Word, Excel i PowerPoint, tworzenie potencjalnie złośliwej zawartości wykonywalnej przez blokowanie zapisu złośliwego kodu na dysku.
+Ta reguła zapobiega tworzeniu potencjalnie złośliwej zawartości wykonywanej przez Office, w tym programów Word, Excel i PowerPoint, przez blokowanie złośliwego kodu na dysku.
 
-Złośliwe oprogramowanie, które nadużywa Office jako wektor, może próbować wyrwać się z Office i zapisać złośliwe składniki na dysku. Te złośliwe składniki przetrwałyby ponowne uruchomienie komputera i utrwaliłyby się w systemie. W związku z tym ta reguła broni się przed powszechną techniką trwałości.
+Złośliwe oprogramowanie, które Office w formacie wektorowym, może próbować się Office i zapisywać złośliwe składniki na dysku. Te złośliwe składniki mogą wystarczyć po ponownym uruchomieniu komputera i są zachowywane w systemie. Dlatego ta reguła będzie chronić się przed wspólną techniką utrwaloności.
 
-nazwa Intune:`Office apps/macros creating executable content`
+Intune:`Office apps/macros creating executable content`
 
-Nazwa SCCM: `Block Office applications from creating executable content`
+Nazwa sccm: `Block Office applications from creating executable content`
 
-IDENTYFIKATOR GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
+Identyfikator GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
 
 Zależności: MDAV, RPC
 
-### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów
+### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Blokowanie Office aplikacji ze insektowania kodu do innych procesów
 
-Ta reguła blokuje próby wstrzyknięcia kodu z Office aplikacji do innych procesów.
+Ta reguła blokuje próby podania kodu z Office do innych procesów.
 
-Osoby atakujące mogą próbować użyć aplikacji Office do migrowania złośliwego kodu do innych procesów poprzez wstrzyknięcie kodu, aby kod mógł zostać zamapowany jako czysty proces.
+Atakujący mogą próbować używać aplikacji Office w celu przeprowadzenia migracji złośliwego kodu do innych procesów poprzez wykorzystanie kodu, więc kod może zostać maskowanie jako czystego procesu.
 
-Nie ma znanych uzasadnionych celów biznesowych do wstrzykiwania kodu.
+Nie ma żadnych znanych uzasadnionych celów biznesowych do stosowania podania kodu.
 
-Ta reguła dotyczy programów Word, Excel i PowerPoint.
+Ta reguła dotyczy programu Word, Excel i PowerPoint.
 
-nazwa Intune:`Office apps injecting code into other processes (no exceptions)`
+Intune:`Office apps injecting code into other processes (no exceptions)`
 
-nazwa Configuration Manager:`Block Office applications from injecting code into other processes`
+Configuration Manager:`Block Office applications from injecting code into other processes`
 
-IDENTYFIKATOR GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
+Identyfikator GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
 
 Zależności: MDAV
 
-### <a name="block-office-communication-application-from-creating-child-processes"></a>Blokowanie tworzenia procesów podrzędnych przez aplikację komunikacji Office
+### <a name="block-office-communication-application-from-creating-child-processes"></a>Blokowanie Office komunikacji z tworzeniem procesów podrzędnych
 
-Ta reguła uniemożliwia Outlook tworzenie procesów podrzędnych, a jednocześnie zezwala na prawidłowe funkcje Outlook.
+Ta reguła zapobiega Outlook procesom podrzędnym, jednocześnie pozwalając na tworzenie legalnych Outlook funkcji.
 
-Ta reguła chroni przed atakami inżynierii społecznej i zapobiega wykorzystywaniu luk w zabezpieczeniach kodu w Outlook. Chroni również przed [Outlook regułami i formami wykorzystującymi luki w zabezpieczeniach](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/), których osoby atakujące mogą używać, gdy poświadczenia użytkownika zostaną naruszone.
+Ta reguła chroni przed atakami ze strony inżynierów społecznościowych i zapobiega wykorzystywaniu luk w zabezpieczeniach kodu w Outlook. Chroni także przed Outlook i [](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) wykorzystywaniem formularzy przez atakujących w przypadku naruszenia poświadczeń użytkownika.
 
 > [!NOTE]
-> Ta reguła blokuje wskazówki dotyczące zasad DLP i etykietki narzędzi w Outlook. Ta reguła ma zastosowanie tylko do Outlook i Outlook.com.
+> Ta reguła blokuje porady dotyczące zasad DLP i porady dotyczące narzędzi w programie Outlook. Ta reguła dotyczy tylko Outlook i Outlook.com.
 
-nazwa Intune:`Process creation from Office communication products (beta)`
+Intune:`Process creation from Office communication products (beta)`
 
-nazwa Configuration Manager: niedostępna
+Configuration Manager: Niedostępne
 
-IDENTYFIKATOR GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
+Identyfikator GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
 
 Zależności: MDAV
 
-### <a name="block-persistence-through-wmi-event-subscription"></a>Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI
+### <a name="block-persistence-through-wmi-event-subscription"></a>Blokowanie utrwaloności za pośrednictwem subskrypcji zdarzeń usługi WMI
 
-Ta reguła uniemożliwia złośliwemu oprogramowaniu nadużywanie usługi WMI w celu uzyskania trwałości na urządzeniu.
+Ta reguła zapobiega nadużywaniu funkcji WMI przez złośliwe oprogramowanie do osiągnięcia poziomu uporczywości na urządzeniu.
 
 > [!IMPORTANT]
-> Wykluczenia plików i folderów nie mają zastosowania do tej reguły zmniejszania obszaru ataków.
+> Wykluczenia plików i folderów nie mają zastosowania do tej reguły ograniczania powierzchni ataków.
 
-Zagrożenia bez plików stosują różne taktyki, aby pozostać w ukryciu, aby uniknąć bycia widocznym w systemie plików i uzyskać okresową kontrolę nad wykonywaniem. Niektóre zagrożenia mogą nadużywać repozytorium WMI i modelu zdarzeń, aby pozostać w ukryciu.
+Zagrożenia bez plików wykorzystują różne taktyki służące do ukrywania się, aby nie być widocznym w systemie plików i aby zyskać okresową kontrolę wykonywania. Niektóre zagrożenia mogą nadużyć dla repozytorium WMI i modelu zdarzeń w celu ukrycia.
 
-nazwa Intune: niedostępna
+Intune: Niedostępne
 
-nazwa Configuration Manager: niedostępna
+Configuration Manager: Niedostępne
 
-IDENTYFIKATOR GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
+Identyfikator GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
 
 Zależności: MDAV, RPC
 
-### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI
+### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Blokowanie procesów pochodzących z poleceń PSExec i WMI
 
-Ta reguła blokuje uruchamianie procesów utworzonych za pośrednictwem programu [PsExec](/sysinternals/downloads/psexec) i [usługi WMI](/windows/win32/wmisdk/about-wmi) . Zarówno program PsExec, jak i usługa WMI mogą zdalnie wykonywać kod, więc istnieje ryzyko, że złośliwe oprogramowanie nadużywa tej funkcji do celów dowodzenia i kontroli lub rozprzestrzeniania infekcji w sieci organizacji.
+Ta reguła blokuje uruchamianie procesów utworzonych za pośrednictwem programu [PsExec](/sysinternals/downloads/psexec) [i aplikacji WMI](/windows/win32/wmisdk/about-wmi) . Zarówno PsExec, jak i WMI, mogą zdalnie wykonywać kod, dlatego istnieje ryzyko, że złośliwe oprogramowanie będzie używać tej funkcji w celu poleceń i kontroli lub rozpowszechniania zainfekowania sieci organizacji.
 
 > [!WARNING]
-> Tej reguły należy używać tylko wtedy, gdy zarządzasz urządzeniami za pomocą [Intune](/intune) lub innego rozwiązania MDM. Ta reguła jest niezgodna z zarządzaniem za pośrednictwem [Microsoft Endpoint Configuration Manager](/configmgr), ponieważ ta reguła blokuje polecenia usługi WMI, których klient Configuration Manager używa do poprawnego działania.
+> Tej reguły należy używać tylko wtedy, gdy zarządzasz urządzeniami za pomocą [Intune lub innym](/intune) rozwiązaniem MDM. Ta reguła jest niezgodna z zarządzaniem za pośrednictwem programu [Microsoft Endpoint Configuration Manager](/configmgr) ponieważ ta reguła blokuje poprawne działanie Configuration Manager WMI.
 
-nazwa Intune:`Process creation from PSExec and WMI commands`
+Intune:`Process creation from PSExec and WMI commands`
 
-nazwa Configuration Manager: Nie dotyczy
+Configuration Manager: Nie dotyczy
 
-IDENTYFIKATOR GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
+Identyfikator GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
 
 Zależności: MDAV
 
-### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB
+### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>Blokowanie niezaufanych i niepodpisanych procesów uruchamianych z usb
 
-Dzięki tej regule administratorzy mogą uniemożliwić uruchamianie niezapisanych lub niezaufanych plików wykonywalnych z dysków wymiennych USB, w tym kart SD. Zablokowane typy plików obejmują pliki wykonywalne (takie jak .exe, .dll lub scr)
+Przy użyciu tej reguły administratorzy mogą zapobiec uruchamianiu niepodpisanych lub niezaufanych plików wykonywalnych z wymiennych dysków USB, w tym kart SD. Blokowane typy plików obejmują pliki wykonywalne (na przykład .exe, .dll lub scr)
 
-nazwa Intune:`Untrusted and unsigned processes that run from USB`
+Intune:`Untrusted and unsigned processes that run from USB`
 
-nazwa Configuration Manager:`Block untrusted and unsigned processes that run from USB`
+Configuration Manager:`Block untrusted and unsigned processes that run from USB`
 
-IDENTYFIKATOR GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
+Identyfikator GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
 
 Zależności: MDAV
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Blokuj wywołania interfejsu API Win32 z makr Office
+### <a name="block-win32-api-calls-from-office-macros"></a>Blokowanie wywołań interfejsu API Win32 Office makr
 
-Ta reguła uniemożliwia makra VBA wywoływanie interfejsów API Win32.
+Ta reguła zapobiega wywoływaniu przez makra VBA interfejsów API Win32.
 
-Office VBA włącza wywołania interfejsu API Win32. Złośliwe oprogramowanie może nadużywać tej funkcji, na przykład [wywoływania interfejsów API Win32 w celu uruchomienia złośliwego kodu powłoki](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) bez pisania czegokolwiek bezpośrednio na dysku. Większość organizacji nie polega na możliwości wywoływania interfejsów API Win32 w ich codziennym funkcjonowaniu, nawet jeśli używają makr w inny sposób.
+Office VBA włącza wywołania interfejsu API Win32. Złośliwe oprogramowanie może używać tej funkcji, na przykład wywoływania interfejsów [API Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) w celu uruchomienia złośliwego kodu powłoki bez zapisywania niczego bezpośrednio na dysku. Większość organizacji nie polega na możliwości dzwonienia do interfejsów API Win32 w ich codziennie działającej, nawet jeśli używają makr w inny sposób.
 
 Obsługiwane systemy operacyjne:
 
@@ -527,13 +527,13 @@ Obsługiwane systemy operacyjne:
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
-nazwa Intune:`Win32 imports from Office macro code`
+Intune:`Win32 imports from Office macro code`
 
-nazwa Configuration Manager:`Block Win32 API calls from Office macros`
+Configuration Manager:`Block Win32 API calls from Office macros`
 
-IDENTYFIKATOR GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
+Identyfikator GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
@@ -542,26 +542,26 @@ Zależności: MDAV, AMSI
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup
 
-Ta reguła zapewnia dodatkową warstwę ochrony przed oprogramowaniem wymuszającym okup. Używa zarówno heurystyki klienta, jak i chmury, aby określić, czy plik przypomina oprogramowanie wymuszające okup. Ta reguła nie blokuje plików o co najmniej jednej z następujących cech:
+Ta reguła zapewnia dodatkową warstwę ochrony przed oprogramowaniem wymuszającym okup. Używa on zarówno heuristics klienta, jak i chmury, aby określić, czy plik przypominający oprogramowanie wymuszające okup. Ta reguła nie powoduje blokowania plików, które mają co najmniej jedną z następujących cech:
 
-- Plik został już uznany za bez szwanku w chmurze firmy Microsoft.
+- Plik ten został już znaleziony jako nieuchmurny w chmurze firmy Microsoft.
 - Plik jest prawidłowym podpisanym plikiem.
-- Plik jest wystarczająco rozpowszechniony, aby nie być uważanym za oprogramowanie wymuszające okup.
+- Plik jest na tyle rozpowszechniony, że nie można go uznać za oprogramowanie wymuszające okup.
 
-Reguła ma tendencję do błądzić po stronie ostrożności, aby zapobiec ransomware.
+Reguła zwykle ma błąd z boku ostrożności, aby zapobiec wymuszaniu okupu.
 
 > [!NOTE]
-> Aby korzystać z tej [reguły, należy włączyć ochronę dostarczaną przez chmurę](enable-cloud-protection-microsoft-defender-antivirus.md) .
+> Aby użyć [tej reguły, należy włączyć ochronę w](enable-cloud-protection-microsoft-defender-antivirus.md) chmurze.
 
-nazwa Intune:`Advanced ransomware protection`
+Intune:`Advanced ransomware protection`
 
-nazwa Configuration Manager:`Use advanced protection against ransomware`
+Configuration Manager:`Use advanced protection against ransomware`
 
-IDENTYFIKATOR GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
+Identyfikator GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-Zaawansowany typ akcji wyszukiwania zagrożeń:
+Zaawansowany typ akcji chłoniania:
 
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
 
-Zależności: MDAV, Cloud Protection
+Zależności: MDAV, Ochrona w chmurze

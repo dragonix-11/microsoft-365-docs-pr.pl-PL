@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informacje dla administratorów IT dotyczące zarządzania etykietami wrażliwości Office aplikacji klasycznych, mobilnych i sieci Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2bfd7dfd0cf56c8546cd21e5127bc8ef432e1cc5
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 0ca67ecb87b48d551ec4fb740e8732b8196c872c
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594779"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637923"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Zarządzanie etykietami poufności w aplikacjach Office
 
@@ -98,7 +98,7 @@ Wymienione na liście liczby to minimalne Office wymaganych wersji aplikacji dla
 |[Umożliwianie użytkownikom przypisywania uprawnień: <br /> — Nie przesyłaj dalej](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Bieżący kanał: 1910+ <br /><br> Miesięczny Enterprise kanału: 1910+ <br /><br> Semi-Annual Enterprise kanału: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Tak               |
 |[Umożliwianie użytkownikom przypisywania uprawnień: <br /> — Tylko szyfrowanie](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Tak |
 |[Wymaganie od użytkowników stosowania etykiety do wiadomości e-mail i dokumentów](#require-users-to-apply-a-label-to-their-email-and-documents)   | Bieżący kanał: 2101+ <br /><br> Miesięczny Enterprise kanału: 2101+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Tak                |
-|[Inspekcja działań użytkowników związanych z etykietami](#auditing-labeling-activities) | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2022+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Tak |
+|[Inspekcja działań użytkowników związanych z etykietami](#auditing-labeling-activities) | Bieżący kanał: 2011+ <br /><br> Miesięczny Enterprise kanału: 2011+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Tak |
 |[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> — Używanie typów informacji poufnych                    | Bieżący kanał: 2009+ <br /><br> Miesięczny Enterprise kanału: 2009+ <br /><br> Semi-Annual Enterprise kanału: 2102+ | 16.44+ <sup>\*</sup>                    | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
 |[Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md) <br /> - Korzystanie z klasyfikatorów przeszkolnych                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.49+ | W trakcie przeglądu           | W trakcie przeglądu               | Tak |
 |[Różne ustawienia etykiet domyślnych i obowiązkowych etykiet](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Bieżący kanał: 2105+ <br /><br> Miesięczny Enterprise kanału: 2105+ <br /><br> Semi-Annual Enterprise kanału: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Tak |

@@ -1,5 +1,5 @@
 ---
-title: Omówienie Microsoft 365 Lighthouse
+title: Omówienie portalu Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -17,22 +17,22 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych (MSP) dowiedz się, Microsoft 365 Lighthouse ułatwić zabezpieczanie dzierżaw klientów i zarządzanie nimi w jednej lokalizacji.
-ms.openlocfilehash: 88b6a3b1afff0905458f5ade7e4e91136b2c9d38
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: fde2ee27692b1d8fb53d46077cf58deb6d9a0550
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494474"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645061"
 ---
-# <a name="overview-of-microsoft-365-lighthouse"></a>Omówienie Microsoft 365 Lighthouse
+# <a name="overview-of-microsoft-365-lighthouse"></a>Omówienie portalu Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse to portal administracyjny, który ułatwia zarządzanym dostawcom usług (MSP) zabezpieczanie urządzeń, danych i użytkowników oraz zarządzanie nimi na skalę dla klientów małych i średnich firm korzystających z usługi Microsoft 365 Business Premium lub Microsoft 365 E3. 
+Microsoft 365 Lighthouse to portal administracyjny, który ułatwia zarządzanym dostawcom usług (MSP) zabezpieczanie urządzeń, danych i użytkowników oraz zarządzanie nimi na skalę dla klientów małych i średnich firm korzystających z usług firmy Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business. 
 
-Latarnia morska upraszcza Microsoft 365 Business Premium dzierżawców usług Microsoft 365 Business Premium i Microsoft 365 E3, rekomendując linie bazowe konfiguracji zabezpieczeń dostosowane do klientów korzystających z zabezpieczeń SMB i udostępniając widoki dla wielu dzierżaw we wszystkich środowiskach klientów. Dzięki lighthouse, msp mogą skalować zarządzanie swoimi klientami, koncentrować się na tym, co najważniejsze, szybko znaleźć i zbadać zagrożenia oraz podjąć działania, aby przekonać swoich klientów do stanu zdrowego i bezpiecznego.
+Latarnia morska upraszcza dołączanie dzierżaw Microsoft 365 Business Premium, Microsoft 365 E3 i Windows 365 Business, polecając podstawowe informacje o konfiguracji zabezpieczeń dostosowane do klientów korzystających z zabezpieczeń i udostępniając widoki dla wielu dzierżaw we wszystkich środowiskach klientów. Dzięki lighthouse, msp mogą skalować zarządzanie swoimi klientami, koncentrować się na tym, co najważniejsze, szybko znaleźć i zbadać zagrożenia oraz podjąć działania, aby przekonać swoich klientów do stanu zdrowego i bezpiecznego.
 
-Korzystanie z latarni morskiej do zarządzania usługami i podłączonymi urządzeniami nie Microsoft 365 dodatkowych kosztów. Lighthouse jest dostępna dla klientów korzystających z usług firmy Microsoft zarejestrowanych w programie Dostawca rozwiązań w chmurze (CSP) i obsługujących klientów korzystających z usługi SMB z subskrypcją usługi Microsoft 365 Business Premium lub Microsoft 365 E3 firm.
+Korzystanie z latarni morskiej do zarządzania usługami i podłączonymi urządzeniami nie Microsoft 365 dodatkowych kosztów. Lighthouse jest dostępna dla klientów korzystających z usług msp zarejestrowanych w programie Dostawca rozwiązań w chmurze (CSP) i obsługujących klientów korzystających z usługi SMB z subskrypcją usługi Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business firm.
 
-Korzystanie z latarni morskiej przez partnerów kanału Microsoft CSP, którzy mają klientów korzystających z Microsoft 365 Business Premium lub Microsoft 365 E3, jest obsługiwane. Dotyczy to również partnerów CSP, którzy bezpośrednio kontaktuje się z firmą Microsoft i tą transakcją za pośrednictwem dostawcy pośredniego (dystrybutora). 
+Korzystanie z latarni morskiej przez partnerów kanału Microsoft CSP, którzy mają klientów korzystających z Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business, jest obsługiwane. Dotyczy to również partnerów CSP, którzy bezpośrednio kontaktuje się z firmą Microsoft i tą transakcją za pośrednictwem dostawcy pośredniego (dystrybutora). 
 
 > [!IMPORTANT] 
 > Aby korzystać z latarni morskiej, klienci i ich dzierżawcy muszą spełniać wymagania wymienione [Microsoft 365 Lighthouse klienta](m365-lighthouse-requirements.md).     
@@ -68,4 +68,4 @@ Usługa Lighthouse ułatwia msp zabezpieczanie usług Microsoft 365 i połączon
 [omówienie Microsoft 365 Lighthouse dzierżaw (](m365-lighthouse-tenants-page-overview.md)artykuł)   
 [Microsoft 365 Lighthouse strony zgodności urządzenia](m365-lighthouse-device-compliance-page-overview.md) (artykuł)   
 [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)   
-[Microsoft Defender for Business](../security/defender-business/index.yml) (strona linku)
+[Microsoft Defender dla Firm](../security/defender-business/index.yml) (strona linku)

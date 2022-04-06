@@ -181,15 +181,22 @@
       items:
         - name: Stan kondycji usługi Microsoft 365
           href: microsoft-365-service-health.md
-        - name: Monitorowanie usługi Exchange Online
-          href: microsoft-365-exchange-monitoring.md
+        - name: Monitorowanie usługi Microsoft 365
+          href: microsoft-365-monitoring.md
           items:
-            - name: Alerty usługi dotyczące użycia skrzynki pocztowej
-              href: microsoft-365-mailbox-utilization-service-alerts.md
-            - name: Alerty usługi dotyczące opóźnień źródła MRS
-              href: microsoft-365-mrs-source-delays-service-alerts.md
-            - name: "Alerty usługi dotyczące wiadomości w\_kolejce dla adresatów zewnętrznych"
-              href: microsoft-365-external-recipient-service-alerts.md
+            - name: Monitorowanie usługi Exchange Online
+              href: microsoft-365-exchange-monitoring.md
+              items:
+                - name: Alerty usługi dotyczące użycia skrzynki pocztowej
+                  href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: Alerty usługi dotyczące opóźnień źródła MRS
+                  href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: "Alerty usługi dotyczące wiadomości w\_kolejce dla adresatów zewnętrznych"
+                  href: microsoft-365-external-recipient-service-alerts.md
+            - name: Monitorowanie aplikacji usługi Microsoft 365
+              href: microsoft-365-apps-monitoring.md
+            - name: Monitorowanie usługi Teams w Microsoft 365
+              href: microsoft-365-teams-monitoring.md
         - name: Wskazówki dotyczące konfiguracji
           href: setup-guides-for-microsoft-365.md
     - name: Wiele dzierżaw
@@ -406,8 +413,6 @@
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/sharepoint-online
-        - name: Skype dla firm
-          href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
           href: /MicrosoftTeams/Teams-overview
         - name: Yammer
@@ -427,9 +432,7 @@
         - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
-          href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
-        - name: Skype dla firm
-          href: /SkypeForBusiness/skype-for-business-online
+          href: /sharepoint/introduction
         - name: Microsoft Teams
           href: /microsoftteams/upgrade-monitor-quality
         - name: Yammer
@@ -449,8 +452,6 @@
                   href: introduction-to-performance-tuning-for-sharepoint-online.md
                 - name: Diagnozowanie problemów z wydajnością za pomocą programu SharePoint
                   href: diagnosing-performance-issues-with-sharepoint-online.md
-            - name: Dostosowywanie wydajności usługi Skype dla firm Online
-              href: tune-skype-for-business-online-performance.md
             - name: Dostosowywanie wydajności usługi Project Online
               href: /ProjectOnline/tune-project-online-performance
             - name: Plan rozwiązywania problemów z wydajnością
@@ -574,13 +575,6 @@
           href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Zarządzanie aplikacją Microsoft Teams
       href: /microsoftteams/teams-powershell-install
-    - name: Zarządzanie usługą Skype dla firm Online
-      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
-      items:
-        - name: Zarządzanie zasadami usługi Skype dla firm Online
-          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
-        - name: Przypisywanie zasad usługi Skype dla firm Online na użytkownika
-          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: Zarządzanie dodatki za pomocą programu PowerShell dla scentralizowanego wdrażania
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
 - name: Zestaw laboratoryjny wdrażania systemu Windows i usługi Office 365

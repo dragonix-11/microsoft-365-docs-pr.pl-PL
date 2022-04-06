@@ -1,5 +1,5 @@
 ---
-title: Analiza poczty e-mail w badaniach nad programem Microsoft Defender dla Office 365
+title: Analiza poczty e-mail w badaniach nad Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -15,28 +15,28 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: automatyczna reakcja na incydenty, badania, działania naprawcze i ochrona przed zagrożeniami
-description: Zobacz, jak działa analiza wiadomości e-mail w badaniach w programie Microsoft Defender dla Office 365.
+description: Zobacz, jak działa analiza poczty e-mail w badaniach w Ochrona usługi Office 365 w usłudze Microsoft Defender.
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5c4d1be31742d21f6e7919a8db4a3d2aff75f66e
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 49a244e948da14e328ab3db64dc495ab6e5d6dd4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775395"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468022"
 ---
-# <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Analiza poczty e-mail w badaniach nad programem Microsoft Defender dla Office 365
+# <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Analiza poczty e-mail w badaniach nad Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Dotyczy**
-- [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Podczas automatycznego badania alertów usługa Microsoft Defender dla systemu Office 365 analizuje oryginalną wiadomość e-mail pod celu zidentyfikowania zagrożeń i identyfikuje inne wiadomości e-mail związane z oryginalną wiadomością e-mail i potencjalnie w ramach ataków. Ta analiza jest ważna, ponieważ ataki poczty e-mail rzadko zawierają jedną wiadomość e-mail.
+Podczas automatycznego badania alertów program Ochrona usługi Office 365 w usłudze Microsoft Defender pod uwagę oryginalną wiadomość e-mail pod celu zidentyfikowania innych wiadomości e-mail, które są związane z oryginalną wiadomością e-mail, i potencjalnie w ramach ataków. Ta analiza jest ważna, ponieważ ataki poczty e-mail rzadko zawierają jedną wiadomość e-mail.
 
 Analiza automatycznej analizy poczty e-mail identyfikuje klastry poczty e-mail przy użyciu atrybutów z oryginalnej wiadomości e-mail do kwerendy dotyczącej wiadomości e-mail wysyłanych i otrzymywanych przez Twoją organizację. Przypomina to analityka operacji zabezpieczeń, który może poszukać powiązanych wiadomości e-mail w Eksploratorze lub łowiectwo zaawansowane. Do identyfikowania zgodnych wiadomości e-mail używa się kilku zapytań, ponieważ atakujący zazwyczaj płynną zmiana parametrów wiadomości e-mail w celu uniknięcia wykrywania zabezpieczeń. Analiza klastrowania wykonuje te testy w celu ustalenia sposobu obsługi wiadomości e-mail biorących udział w analizie:
 
@@ -74,7 +74,7 @@ Aby upewnić się, że akcje analizy są aktualne, wszelkie badanie, w którym w
 
 Na karcie Dowód i odpowiedź na zdarzenie, na podstawie wiadomości e-mail **, są** teraz wyświetlane następujące informacje.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Przykład informacji analizy wiadomości e-mail w materiałach dowodowych i odpowiedzi." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Informacje analizy wiadomości e-mail w materiałach dowodowych i odpowiedzi" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 Z numerowanych objaśnień na ilustracji:
 
@@ -91,7 +91,7 @@ Z numerowanych objaśnień na ilustracji:
 
 W przypadku grup poczty e-mail lub  poczty e-mail na karcie Jednostki zdarzenia pozycja Prevented **oznacza, że** w skrzynce pocztowej nie było złośliwych wiadomości e-mail dla tego elementu (poczty lub klastrów). Oto przykład.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Przykład wiadomości e-mail, która jest blokowana." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Uniemożliwianie wiadomości e-mail." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 W tym przykładzie wiadomość e-mail jest złośliwa, ale nie znajduje się w skrzynce pocztowej.
 

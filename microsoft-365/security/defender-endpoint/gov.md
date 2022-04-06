@@ -1,7 +1,7 @@
 ---
-title: Program Microsoft Defender dla punktu końcowego dla klientów z rządem Stanów Zjednoczonych
-description: Dowiedz się więcej o dostępnych wymaganiach i możliwościach programu Microsoft Defender for Endpoint dla klientów z usa government
-keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender for Endpoint, endpoint, dod
+title: Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych Stanów Zjednoczonych
+description: Poznaj wymagania i możliwości Ochrona punktu końcowego w usłudze Microsoft Defender dla instytucji rządowych Stanów Zjednoczonych
+keywords: government, gcc, high, requirements, capabilities, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 03d4d22bdce9f18b4883437215ea5cba50b3868e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b6c9594112e347439945d3c21f61f9272edb935f
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681353"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507372"
 ---
-# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Program Microsoft Defender dla punktu końcowego dla klientów z rządem Stanów Zjednoczonych
+# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych Stanów Zjednoczonych
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Program Microsoft Defender for Endpoint dla klientów z instytucji rządowych Stanów Zjednoczonych, wbudowany w środowisko Azure US Government, używa tych samych podstawowych technologii co program Defender for Endpoint w usłudze Azure Commercial.
+Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych w USA, wbudowanych w środowisko Azure US Government, używa tych samych podstawowych technologii co program Defender for Endpoint w usłudze Azure Commercial.
 
 Ta oferta jest dostępna dla GCC, użytkowników GCC High i DoD, a także jest oparta na tym samym zapobieganiu, wykrywaniu, śledztwu i rozwiązywaniu problemów co wersja komercyjna. Istnieją jednak pewne różnice w dostępności możliwości tej oferty.
 
@@ -38,7 +38,7 @@ Ta oferta jest dostępna dla GCC, użytkowników GCC High i DoD, a także jest o
 
 ## <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
 
-Program Microsoft Defender for Endpoint dla klientów z instytucji rządowych Stanów Zjednoczonych wymaga jednej z następujących ofert licencjonowania zbiorowego firmy Microsoft:
+Ochrona punktu końcowego w usłudze Microsoft Defender dla użytkowników z instytucji rządowych Stanów Zjednoczonych wymaga jednej z następujących ofert licencjonowania zbiorowego firmy Microsoft:
 
 ### <a name="desktop-licensing"></a>Licencjonowanie pulpitu
 
@@ -50,7 +50,7 @@ Program Microsoft Defender for Endpoint dla klientów z instytucji rządowych St
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 dla GCC Wysoka|Microsoft 365 G5 dla dod|
 |Microsoft 365 zabezpieczeń G5 GCC|Microsoft 365 G5 dla GCC High|Microsoft 365 G5 security for DOD|
-|Program Microsoft Defender dla punktu końcowego — GCC|Program Microsoft Defender for Endpoint for GCC High|Program Microsoft Defender dla punktu końcowego dod|
+|Ochrona punktu końcowego w usłudze Microsoft Defender — GCC|Ochrona punktu końcowego w usłudze Microsoft Defender dla GCC Wysoka|Ochrona punktu końcowego w usłudze Microsoft Defender dla doD|
 |Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 dla GCC Wysoka|Windows 10 Enterprise E5 dla dod|
 |
 
@@ -62,13 +62,13 @@ Program Microsoft Defender for Endpoint dla klientów z instytucji rządowych St
 
 |GCC|GCC wysoki|DoD|
 |---|---|---|
-|Program Microsoft Defender for Endpoint Server GCC|Program Microsoft Defender for Endpoint Server for GCC High|Microsoft Defender for Endpoint Server for DOD|
+|Ochrona punktu końcowego w usłudze Microsoft Defender Server GCC|Ochrona punktu końcowego w usłudze Microsoft Defender Server for GCC High|Ochrona punktu końcowego w usłudze Microsoft Defender serwera dod|
 |Usługa Microsoft Defender dla serwerów|Usługa Microsoft Defender dla serwerów — dla instytucji rządowych|Usługa Microsoft Defender dla serwerów — dla instytucji rządowych|
 |
 
 ## <a name="portal-urls"></a>Adresy URL portalu
 
-Poniżej przedstawiono adresy URL portalu programu Microsoft Defender for Endpoint dla klientów z instytucji rządowych Stanów Zjednoczonych:
+Poniżej przedstawiono adresy URL Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów z instytucji rządowych Stanów Zjednoczonych:
 
 <br />
 
@@ -81,7 +81,7 @@ Poniżej przedstawiono adresy URL portalu programu Microsoft Defender for Endpoi
 |DoD|<https://security.microsoft.us>|
 |
 > [!NOTE]
-> Jeśli jesteś klientem usługi GCC i w trakcie przechodzenia z usługi Microsoft Defender for Endpoint do programu GCC, https://transition.security.microsoft.com użyj go do uzyskania dostępu do danych komercyjnych programu Microsoft Defender for Endpoint.
+> Jeśli jesteś klientem GCC i w trakcie przechodzenia z Ochrona punktu końcowego w usłudze Microsoft Defender komercyjnego do GCC, https://transition.security.microsoft.com użyj go, aby uzyskać dostęp do Ochrona punktu końcowego w usłudze Microsoft Defender komercyjnego dane.
 
 ## <a name="endpoint-versions"></a>Wersje punktów końcowych
 
@@ -154,7 +154,8 @@ Poniższy arkusz kalkulacyjny zawiera listę usług i skojarzonych z nimi adres�
 
 |Arkusz kalkulacyjny listy domen| Opis|
 |---|---|
-| Lista adresów URL programu Microsoft Defender dla punktów końcowych dla klientów GCC/DoD | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|Ochrona punktu końcowego w usłudze Microsoft Defender adresu URL dla klientów komercyjnych| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Ochrona punktu końcowego w usłudze Microsoft Defender url list for Gov/GCC/DoD | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień serwera proxy urządzenia i łączności internetowej](configure-proxy-internet.md).
 
@@ -196,7 +197,7 @@ Są to znane odstępy:
 |Filtrowanie zawartości sieci Web|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|![Nie](images/svg/check-no.svg) W rozwoju|
   
 
-To są funkcje i znane luki w obronie przed zagrożeniami na urządzeniach przenośnych [(program Microsoft Defender dla punktu końcowego w systemie Android & iOS)](mtd.md):
+To są funkcje i znane luki w obronie przed zagrożeniami na urządzeniach przenośnych [(Ochrona punktu końcowego w usłudze Microsoft Defender na Urządzeniach z systemem Android & iOS)](mtd.md):
 
 <br />
 

@@ -27,18 +27,22 @@ search.appverid:
 - MOE150
 - BEA160
 description: Podczas zakupu Microsoft 365 Business Standard masz możliwość używania domeny, która należy do Ciebie, lub kupowania jej podczas rejestracji.
-ms.openlocfilehash: 51f88847a1e0ca04e216044172dbacf572fb82e3
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 791f719f50809f2aa178ca2ab72471aea534e111
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63012525"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638032"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Konfigurowanie Microsoft 365 Business Standard nowej lub istniejącej domeny
 
 Podczas zakupu Microsoft 365 Business Standard masz możliwość dodania własnej domeny lub zakupu. Zobacz Logowanie [się w celu Microsoft 365 Business Standard subskrypcji usługi](../simplified-signup/signup-business-standard.md).
 
 W tym artykule o krokach dodawania istniejącej domeny i kupowania nowej domeny już istniejącej. Jeśli podczas rejestracji w domenie kupiono nową domenę, to jest ona w ogóle ustawiona. Możesz przejść do dodawania użytkowników i [przypisywania licencji](#add-users-and-assign-licenses).
+
+## <a name="set-up-microsoft-365-for-business"></a>Konfigurowanie usługi Microsoft 365 dla firm
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -84,7 +88,7 @@ Aby skonfigurować usługi, musisz zaktualizować rekordy u swojego hosta DNS lu
   
 1. Kreator konfiguracji zwykle wykrywa rejestratora i udostępnia linki do instrukcji krok po kroku dotyczących aktualizowania rekordów serwera nazw w witrynie internetowej rejestratora. Jeśli tak się nie stanie, zmień serwery nazw, aby Office 365 [u dowolnego rejestratora domen](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
-    - Jeśli masz istniejące rekordy DNS, na przykład istniejącą witrynę internetową, ale dla Twojego hosta DNS włączono łączenie [domen, wybierz](/office365/admin/get-help-with-domains/domain-connect) pozycję **Dodaj rekordy**. Na stronie **Wybierz usługi online** zaakceptuj wszystkie ustawienia domyślne, wybierz pozycję **Dalej, a** następnie wybierz pozycję **Autoryzuj** na stronie swojego hosta DNS.
+    - Jeśli masz istniejące rekordy DNS, na przykład istniejącą witrynę internetową, ale dla Twojego hosta DNS włączono łączenie [domen, wybierz](/office365/admin/get-help-with-domains/domain-connect) pozycję **Dodaj rekordy**. Na **stronie Wybierz Usługi online** zaakceptuj wszystkie ustawienia domyślne, wybierz pozycję **Dalej i wybierz** pozycję **Autoryzuj** na stronie swojego hosta DNS.
     - Jeśli masz istniejące rekordy DNS z innymi hostami DNS (bez włączonego łączenia domen), chcieć zarządzać własnymi rekordami DNS, aby upewnić się, że istniejące usługi pozostają połączone. Aby [uzyskać więcej informacji, zobacz](/office365/admin/get-help-with-domains/dns-basics) Podstawowe informacje o domenie.
 
 2. Postępuj zgodnie z instrukcjami kreatora, aby skonfigurować pocztę e-mail i inne usługi.

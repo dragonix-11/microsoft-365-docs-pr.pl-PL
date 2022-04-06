@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: W przypadku dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse uzyskaj pomoc w rozwiązywaniu problemów i komunikatach o błędach.
-ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63705440"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632366"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Rozwiązywanie problemów i komunikatów o błędach w programie Microsoft 365 Lighthouse
 
@@ -53,17 +53,20 @@ W tym artykule opisano komunikaty o błędach i problemy, które mogą wystąpi�
 
 **Przyczyna:** Dzierżawy Twoich klientów nie spełniają następujących kryteriów:
 
-  - Musi mieć delegowane (DAP) lub poziome uprawnienia administratora (GDAP) ustawione dla dostawcy usług zarządzanych (MSP)
-  - Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium lub Microsoft 365 E3
+  - Aby zarządzać dzierżawą klienta, należy skonfigurować dostęp delegowany dla dostawcy usług zarządzanych*
+  - Musi mieć co najmniej jedną Microsoft 365 Business Premium, Microsoft 365 E3 lub licencję Windows 365 Business licencji
   - Nie może mieć więcej niż 1000 licencjonowanych użytkowników 
 
-**Rozwiązanie:** W poniższej tabeli opisano różne stany dzierżawy wymagające działania i wyjaśniono, jak je rozwiązać.<br><br>
+**Rozwiązanie:** W poniższej tabeli opisano różne stany dzierżawy wymagające działania i wyjaśniono, jak je rozwiązać.
+
+*Delegowane uprawnienia administratora (DAP) są wymagane, aby można było dołączać klientów do usługi Lighthouse. W celu zapewnienia bardziej bezpiecznego dostępu delegowanego zalecamy także nawiązanie z klientami szczegółowych, delegowanych uprawnień administratora (GDAP, Granular Delegated Admin Privileges). Podczas gdy usługi DAP i GDAP są współistniene, GDAP będą miały pierwszeństwo dla klientów, dla których są dostępne oba modele. Wkrótce klienci, którzy mają tylko GDAP (bez protokołu DAP), będą mogli wdrapać się do latarni morskiej.
+
 
 | Stan | Opis | Rozwiązanie |
 |--|--|--|
 | Nieaktywny | Dzierżawa została wyłączona na żądanie usługi MSP i nie jest już zarządzana w latarni morskiej. | Należy ponownie aktywować dzierżawę. Na stronie **Dzierżawy** wybierz trzy kropki (więcej akcji) obok dzierżawy, którą chcesz aktywować ponownie, a następnie wybierz pozycję **Aktywuj dzierżawę**. Może mi potrwać 24–48 godzin, aby początkowe dane klienta pojawią się w Latarnia morska. |
 | Nieuczciwą — nie ustawiono protokołu DAP lub GDAP | Nie masz uprawnień administratora dap lub GDAP sfinanych z dzierżawą, co jest wymagane przez usługę Lighthouse. | Konfigurowanie uprawnień administratora dap lub GDAP w Centrum partnerskim firmy Microsoft. |
-| Nieukwalifikowana — brakuje wymaganej licencji | W dzierżawie brakuje wymaganej licencji. Potrzebuje co najmniej jednej licencji Microsoft 365 Business Premium lub Microsoft 365 E3 licencji. | Upewnij się, że do dzierżawy przypisano co najmniej Microsoft 365 Business Premium lub Microsoft 365 E3 dzierżawy. |
+| Nieukwalifikowana — brakuje wymaganej licencji | W dzierżawie brakuje wymaganej licencji. Potrzebuje co najmniej jednej licencji Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business licencji. | Upewnij się, że dzierżawa ma przypisaną co najmniej Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business dzierżawy. |
 | Bez uprawnienia — przekroczono liczbę użytkowników | Dzierżawa ma więcej niż 1000 licencjonowanych użytkowników dozwolonych przez lighthouse. | Sprawdź, czy dzierżawa nie ma więcej niż 1000 licencjonowanych użytkowników. |
 | Nieukwalifikowane — sprawdzenie geolokalizacji nie powiodło się | Ty i Twój klient nie mieszkacie w tym samym regionie geograficznym, co jest wymagane przez usługę Lighthouse. | Sprawdź, czy klient znajduje się w Twoim regionie geograficznym. Jeśli nie, nie możesz zarządzać dzierżawą w latarni morskiej. |
 | W trakcie procesu | Latarnia morska wykryła dzierżawę, ale nadal jest w trakcie procesu ich wyniania. | Zezwalaj na dołączanie dzierżawy do usługi Lighthouse przez 48 godzin. |
@@ -76,7 +79,7 @@ Jeśli potwierdzono, że dzierżawa Twojego klienta spełnia kryteria dołączan
 
 **Przyczyna:** Nie należysz do odpowiedniej grupy zabezpieczeń w usłudze Azure AD lub nie przypisano Ci odpowiedniej roli w Centrum partnerskim, aby móc uzyskać dostęp do usługi Lighthouse.
 
-**Rozwiązanie:** Upewnij się, że administrator z Dzierżawy partnera z odpowiednimi uprawnieniami przypisał Cię do odpowiedniej grupy zabezpieczeń GDAP w usłudze Azure AD i przypisał Ci poprawną rolę w Centrum partnerskim. Pamiętaj też, że niektóre akcje w latarni morskiej wymagają, aby być administratorem globalnym. Aby dowiedzieć się więcej o rolach protokołu GDAP i poszczególnych rolach, zobacz Konfigurowanie zabezpieczeń Microsoft 365 Lighthouse [portalu](m365-lighthouse-configure-portal-security.md). Aby uzyskać szczegółowy opis wszystkich wbudowanych ról i uprawnień usługi Azure AD dla protokołu GDAP, zobacz Wbudowane role usługi [Azure AD](/azure/active-directory/roles/permissions-reference).
+**Rozwiązanie:** Upewnij się, że administrator z Dzierżawy partnera z odpowiednimi uprawnieniami przypisał Cię do odpowiedniej grupy zabezpieczeń GDAP w usłudze Azure AD i przypisał Ci poprawną rolę w Centrum partnerskim. Pamiętaj też, że niektóre akcje w latarni morskiej wymagają, aby być administratorem globalnym. Aby dowiedzieć się więcej o rolach protokołu GDAP i poszczególnych rolach, zobacz Omówienie uprawnień w [programie Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Aby uzyskać szczegółowy opis wszystkich wbudowanych ról i uprawnień usługi Azure AD dla protokołu GDAP, zobacz Wbudowane role usługi [Azure AD](/azure/active-directory/roles/permissions-reference).
 
 W przypadku klientów z relacjami daP administrator partnerów musi przypisać Ci rolę agenta administracyjnego lub agenta pomocy technicznej w Centrum partnerskim. Aby uzyskać szczegółowy opis wszystkich ról i uprawnień w Centrum partnerskim, zobacz [Przypisywanie ról i uprawnień użytkownikom](/partner-center/permissions-overview).
 
@@ -84,7 +87,7 @@ W przypadku klientów z relacjami daP administrator partnerów musi przypisać C
 
 **Przyczyna:** Dostęp do usługi GDAP jest ograniczony w zależności od ról przypisanych do grupy zabezpieczeń usługi Azure AD, w których się jesteś.
 
-**Rozwiązanie:** Upewnij się, że administrator z dzierżawy partnera z odpowiednimi uprawnieniami przypisał Cię do odpowiedniej grupy zabezpieczeń GDAP w usłudze Azure AD. Pamiętaj też, że niektóre akcje w latarni morskiej wymagają, aby być administratorem globalnym. Aby dowiedzieć się więcej o rolach protokołu GDAP i poszczególnych rolach, zobacz Konfigurowanie zabezpieczeń Microsoft 365 Lighthouse [portalu](m365-lighthouse-configure-portal-security.md). Aby uzyskać szczegółowy opis wszystkich wbudowanych ról i uprawnień usługi Azure AD dla protokołu GDAP, zobacz Wbudowane role usługi [Azure AD](/azure/active-directory/roles/permissions-reference).
+**Rozwiązanie:** Upewnij się, że administrator z dzierżawy partnera z odpowiednimi uprawnieniami przypisał Cię do odpowiedniej grupy zabezpieczeń GDAP w usłudze Azure AD. Pamiętaj też, że niektóre akcje w latarni morskiej wymagają, aby być administratorem globalnym. Aby dowiedzieć się więcej o rolach protokołu GDAP i poszczególnych rolach, zobacz Omówienie uprawnień w [programie Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Aby uzyskać szczegółowy opis wszystkich wbudowanych ról i uprawnień usługi Azure AD dla protokołu GDAP, zobacz Wbudowane role usługi [Azure AD](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="customer-tenant-management"></a>Zarządzanie dzierżawą klientów  
 
@@ -104,7 +107,7 @@ W przypadku klientów z relacjami daP administrator partnerów musi przypisać C
 
 **Przyczyna:** Nie ukończono pomyślnie konfiguracji programu Microsoft Intune w dzierżawie klienta.
 
-**Rozwiązanie:** Upewnij się, że ukończono podstawowe kroki konfiguracji usługi Intune w dzierżawie klienta. Jeśli problem nadal występuje po sprawdzeniu, czy konfiguracja usługi Intune jest ukończona dla dzierżawy klienta, skontaktuj się z pomocą techniczną. Aby uzyskać więcej informacji, [zobacz Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Rozwiązanie:** Upewnij się, że zostały wykonane podstawowe kroki konfiguracji Intune w dzierżawie klienta. Jeśli problem będzie nadal występował po sprawdzeniu, Intune że konfiguracja dzierżawy klienta jest ukończona, skontaktuj się z pomocą techniczną. Aby uzyskać więcej informacji, [zobacz Uzyskiwanie pomocy technicznej dotyczącej Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ### <a name="cant-access-partner-tenant-data-in-lighthouse"></a>Nie można uzyskać dostępu do danych dzierżawy partnera w latarni morskiej
 
@@ -116,9 +119,9 @@ W przypadku klientów z relacjami daP administrator partnerów musi przypisać C
 
 ### <a name="i-dont-see-any-customer-tenant-data-on-the-device-compliance-and-threat-management-pages-of-lighthouse"></a>Nie widzę żadnych danych dzierżawy klienta na stronach zarządzania zagrożeniami i zgodnością urządzeń w aplikacji Lighthouse
 
-**Przyczyna 1:** Dzierżawa klienta nie ukończyła korzystania z usługi Intune. Dane dzierżawy klienta nie będą dostępne na stronach zgodności urządzeń i zarządzania zagrożeniami w usłudze Lighthouse, dopóki dzierżawa klienta nie ukończy korzystania z usługi Intune.
+**Przyczyna 1:** Dzierżawa klienta nie ukończyła procesu dołączania do usługi Intune. Dane dzierżawy klienta nie będą dostępne na stronach zgodności urządzeń i zarządzania zagrożeniami w układzie Lighthouse, dopóki dzierżawa klienta nie ukończy do Intune.
 
-**Rozwiązanie:** Upewnij się, że dzierżawa klienta, dla których próbujesz wyświetlić dane, zakończyła dołączanie do usługi Intune. Po zakończeniu dołączania w usłudze Intune zezwalaj na dane urządzenia pojawiające się w usłudze Lighthouse po 4 godzinach.
+**Rozwiązanie:** Upewnij się, że dzierżawa klienta, dla których próbujesz wyświetlić dane, zakończyła dołączanie do usługi Intune. Po zakończeniu dołączania w Intune, zezwalaj na dane urządzenia w latarni morskiej po 4 godzinach.
 
 **Przyczyna 2:** Dzierżawa klienta została ostatnio wniesona do latarni morskiej Lighthouse i dane nadal są ładowane w latarni morskiej.
 

@@ -10,20 +10,20 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratorzy mogą dowiedzieć się, jak korzystać z automatyzacji ładowania (zbierania zbiorów zbiorów danych) do zbierania i uruchamiania zautomatyzowanych symulacyjnych szkoleń symulacyjnych ataków w programie Microsoft Defender dla programu Office 365 Plan 2.
+description: Administratorzy mogą dowiedzieć się, jak korzystać z automatyzacji ładowania (zbierania zbiorów płać) do zbierania i uruchamiania zautomatyzowanych symulacyjnych szkoleń z użyciem symulacyjnych ataków w programie Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 13215b76646c5358bc9a043b91d3dbd403818684
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: aa223ab1abda110e32a9b9dc55e9dc76a1983321
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526308"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468440"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>Automatyzacja ładowania dla szkolenia symulacyjnego w zakresie ataków
 
-**Dotyczy programu** [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+**Dotyczy planu** [Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
-W szkoleniach symulacyjnych ataków w programie Microsoft 365 E5 lub Microsoft Defender dla systemu Office 365 Plan 2 automatyzacje ładowania (nazywane także gromadzeniem _obciążenia)_ zbierają informacje z rzeczywistych wiadomości wyłudzających informacje, które zostały zgłoszone przez użytkowników w organizacji. Mimo że w organizacji liczba tych wiadomości jest prawdopodobnie niewielka, możesz określić warunki do wyszukiwania w przypadku ataków na wyłudzanie informacji (na przykład adresaci, technikę socjową, informacje o nadawcy itp.). Następnie szkolenie symulacyjne ataków ma na celu naśladowanie wiadomości i ładowań używanych w atakach w celu automatycznego uruchamiania nieszkodliwych symulacyjnych dla użytkowników docelowych.
+W szkoleniu symulacyjnych ataków w programie Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2 automatyzacje ładowania (nazywane także zbieraniem _obciążenia)_ zbierają informacje z rzeczywistych wiadomości wyłudzających informacje, które zostały zgłoszone przez użytkowników w organizacji. Mimo że w organizacji liczba tych wiadomości jest prawdopodobnie niewielka, możesz określić warunki do wyszukiwania w przypadku ataków na wyłudzanie informacji (na przykład adresaci, technikę socjową, informacje o nadawcy itp.). Następnie szkolenie symulacyjne ataków ma na celu naśladowanie wiadomości i ładowań używanych w atakach w celu automatycznego uruchamiania nieszkodliwych symulacyjnych dla użytkowników docelowych.
 
 Aby utworzyć automatyzację ładowania, wykonaj następujące czynności:
 
@@ -33,7 +33,7 @@ Aby utworzyć automatyzację ładowania, wykonaj następujące czynności:
 
 2. Na karcie **Automatyzacja ładowania** wybierz pozycję Utwórz ![ikonę automatyzacji.](../../media/m365-cc-sc-create-icon.png) **Tworzenie automatyzacji**.
 
-   ![Przycisk utwórz automatyzację na karcie Automatyzacja ładowania w szkoleniu z symezyjną ataków w Microsoft 365 Defender sieci.](../../media/attack-sim-training-payload-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Przycisk Create simulation (Utwórz symulację) na karcie Automatyzacja ładowania w szkoleniu z symulacyjnej gry w programie Attack Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. Zostanie otwarty kreator tworzenia. W dalszej części tego artykułu opisano strony i ustawienia, które zawierają.
 

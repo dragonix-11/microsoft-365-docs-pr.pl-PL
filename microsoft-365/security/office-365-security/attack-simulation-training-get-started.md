@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do korzystania ze szkolenia symulacyjnego w zakresie ataków
+title: Wprowadzenie z użyciem szkolenia symulacyjnego w zakresie ataków
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,23 +17,23 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Administratorzy mogą dowiedzieć się, jak używać szkolenia symulacyjnego do obsługi symulowanych prób wyłudzania informacji i haseł w swoich organizacjach w Microsoft 365 E5 Microsoft Defender dla Office 365 Plan 2.
+description: Administratorzy mogą dowiedzieć się, jak używać szkolenia symulacyjnego z użyciem symezyjnych prób wyłudzania informacji i haseł w swoich organizacjach w Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender planie 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 514071c43f3f8ef68e731a4856754ef4027760f2
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 244d0ae912a5cc2dc163b62f44b44877c0318b88
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63015995"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507416"
 ---
-# <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Wprowadzenie do korzystania ze szkolenia symulacyjnego w zakresie ataków w programie Defender dla Office 365
+# <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Wprowadzenie z użyciem szkolenia symezyjną ataków w programie Ochrona usługi Office 365 w usłudze Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Dotyczy programu** [Microsoft Defender dla Office 365 plan 2](defender-for-office-365.md)
+**Dotyczy planu** [Ochrona usługi Office 365 w usłudze Microsoft Defender 2](defender-for-office-365.md)
 
-Jeśli Twoja organizacja ma program Microsoft 365 E5 lub program Microsoft Defender dla systemu Office 365 (plan 2), który obejmuje funkcje analizy zagrożeń i [reakcji, możesz](office-365-ti.md) użyć szkolenia symulacyjnego z użyciem funkcji ataków w portalu Microsoft 365 Defender, aby prowadzić realistyczny scenariusze ataków w organizacji. Te symulowane ataki mogą ułatwić zidentyfikowanie i znalezienie narażonych użytkowników, zanim rzeczywisty atak będzie wpływał na dolną linię. Aby dowiedzieć się więcej, przeczytaj ten artykuł.
+Jeśli w organizacji Microsoft 365 E5 lub Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2, który obejmuje funkcje analizy zagrożeń i [reakcji, możesz](office-365-ti.md) skorzystać ze szkolenia symulacyjnego z użyciem funkcji ataków w Microsoft 365 Defender  w portalu, aby uruchamiać realistycznych scenariuszy ataków w twojej organizacji. Te symulowane ataki mogą ułatwić zidentyfikowanie i znalezienie narażonych użytkowników, zanim rzeczywisty atak będzie wpływał na dolną linię. Aby dowiedzieć się więcej, przeczytaj ten artykuł.
 
 > [!NOTE]
 > Szkolenie symulacyjne dotyczące ataków zastępuje stare środowisko podczas ataków w wersji 1  \>, które było dostępne w Centrum & zabezpieczeń w miejscu ataków na zarządzanie zagrożeniami **lub .** <https://protection.office.com/attacksimulator>
@@ -42,7 +42,7 @@ Jeśli Twoja organizacja ma program Microsoft 365 E5 lub program Microsoft Defen
 
 - Aby otworzyć Microsoft 365 Defender, przejdź do .<https://security.microsoft.com> Szkolenie dotyczące symeny ataków jest dostępne na stronie **Szkolenie dotyczące symezyjki ataków za pomocą poczty e-mail** \> **i współpracy**. Aby przejść bezpośrednio do szkolenia z symezyjną ataków, użyj narzędzia <https://security.microsoft.com/attacksimulator>.
 
-- Aby uzyskać więcej informacji na temat dostępności szkolenia symydacyjnego z tematem ataków dla różnych Microsoft 365 subskrypcji, zobacz [Program Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), aby uzyskać Office 365 opisu usługi.
+- Aby uzyskać więcej informacji na temat dostępności szkolenia symydacyjnego z tematem ataków dla różnych Microsoft 365 subskrypcji, zobacz Ochrona usługi Office 365 w usłudze Microsoft Defender [opisu usługi](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - Aby można było wykonać procedury z tego artykułu  Azure Active Directory w programie Azure Active Directory mieć przypisane uprawnienia. W szczególności musisz być członkiem jednej z następujących ról:
   - **Administrator globalny**
@@ -61,7 +61,7 @@ Jeśli Twoja organizacja ma program Microsoft 365 E5 lub program Microsoft Defen
   > [!NOTE]
   > Najnowsze dodatki to NOR, ZAF, ARE i DEU. Wszystkie funkcje z wyjątkiem zgłoszonych telemetrii poczty e-mail będą dostępne w tych regionach. Pracujemy nad włączeniem tej funkcji i powiadomimy naszych klientów, gdy tylko zostanie udostępnione telemetria zgłoszonych wiadomości e-mail.
 
-- Od 15 czerwca 2021 r. w programie GCC. Jeśli w organizacji jest Office 365 G5 GCC lub Microsoft Defender for Office 365 (plan 2) dla instytucji rządowych, możesz użyć szkolenia symezyjnej ataków w portalu Microsoft 365 Defender, aby prowadzić realistyczny scenariusze ataków w organizacji zgodnie z opisem w tym artykule. Szkolenie z symeny ataków nie jest jeszcze dostępne w GCC high-in lub dod.
+- Od 15 czerwca 2021 r. w programie GCC. Jeśli Twoja organizacja ma Office 365 G5 GCC lub Ochrona usługi Office 365 w usłudze Microsoft Defender (plan 2) dla instytucji rządowych, możesz użyć szkolenia symulacyjnego z użyciem funkcji ataków w aplikacji Microsoft 365 Defender  w portalu można uruchamiać realistycznych scenariuszy ataków w organizacji zgodnie z opisem w tym artykule. Szkolenie z symeny ataków nie jest jeszcze dostępne w GCC high-in lub dod.
 
 > [!NOTE]
 > Szkolenie symulacyjne z atakami udostępnia podzbiór możliwości klientom usługi E3 w wersji próbnej. Oferta wersji próbnej umożliwia korzystanie z ładowania poświadczeń zbierania danych dziewiętnych oraz wybieranie środowisko szkoleń "ISA Phishing" lub "Mass Market Phishing". W ramach oferty wersji próbnej E3 nie są dostępne żadne inne funkcje.
@@ -125,4 +125,4 @@ Aby uzyskać instrukcje krok po kroku dotyczące tworzenia ładu do użytku w ra
 Aby uzyskać szczegółowe instrukcje dotyczące sposobu uzyskania szczegółowych informacji na temat raportowania, zobacz Zdobywanie szczegółowych informacji dzięki szkoleniom [symulacyjnych ataków](attack-simulation-training-insights.md).
 
 > [!NOTE]
-> W ramach ataku Do obsługi usługi Sejf Office 365 Linki w programie Office 365 są używane do bezpiecznego śledzenia danych kliknięcia adresu URL w wiadomości ładowania wysyłanej do docelowych adresatów kampanii służącej do wyłudzania informacji, nawet jeśli  ustawienie Nie śledź kliknięć przez użytkownika w zasadach linków programu Sejf jest włączone.
+> Podczas ataków Do najbezpieczniej jest używany link Sejf w programie Ochrona usługi Office 365 w usłudze Defender w celu bezpiecznego śledzenia danych kliknięcia adresu URL w wiadomości ładowania wysyłanej do docelowych adresatów kampanii wyłudzającej informacje, nawet jeśli ustawienie Śledź użytkowników klikających w zasadach usługi Sejf Links jest wyłączone.

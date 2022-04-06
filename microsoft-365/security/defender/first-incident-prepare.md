@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c31a6e43e66b6e1ffeace75ac2d8419cc764174f
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 92b7efdad61a4738310d5fb469400033f78363a8
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499138"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570156"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Przygotowywanie zabezpieczenia na wypadek pierwszego zdarzenia
 
@@ -86,8 +86,6 @@ Możesz wdrożyć zalecenia dotyczące wyłaniających się zagrożeń, aby wzmo
 Poczekaj w harmonogramie na regularne sprawdzanie sekcji [Analiza](threat-analytics.md) zagrożeń w portalu Microsoft 365 Defender zagrożenia. Aby uzyskać [więcej informacji, zobacz przykładowe operacje Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender) zabezpieczeń.
 
 ## <a name="next-step"></a>Następny krok
-
-[![Krok 1. Dowiedz się, jak ujednić i analizować zdarzenia.](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
 
 Dowiedz się, jak [ujednić i analizować zdarzenia](first-incident-analyze.md).
 

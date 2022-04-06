@@ -1,7 +1,7 @@
 ---
-title: Ocenianie alertów podejrzaną aktywnością w przesyłaniu dalej wiadomości e-mail
-description: Ocenianie alertów podejrzaną aktywnością przesyłania dalej poczty e-mail w celu przejrzenia alertów i podjęcia zalecanych działań w celu podjęcia działań naprawczych w celu ochrony sieci i ataków.
-keywords: zdarzenia, alerty, badanie, analizowanie, odpowiedź, korelacja, atak, komputery, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, poczta e-mail, 365, microsoft, m365
+title: Klasyfikacja alertów dla podejrzanego działania przekazywania wiadomości e-mail
+description: Klasyfikacja alertów dla podejrzanego działania przekazywania wiadomości e-mail w celu przejrzenia alertów i podjęcia zalecanych działań w celu skorygowania ataku i ochrony sieci.
+keywords: zdarzenia, alerty, badanie, analizowanie, reagowanie, korelacja, atak, maszyny, urządzenia, użytkownicy, tożsamości, tożsamość, skrzynka pocztowa, poczta e-mail, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,168 +21,153 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 2349fb9ac736653b9a74c42aecf5e71cc95381ca
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: dcfb6d01503dd4499ce6431b95a433c4cb598de1
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321519"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663231"
 ---
-# <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Ocenianie alertów podejrzaną aktywnością w przesyłaniu dalej wiadomości e-mail
+# <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Klasyfikacja alertów dla podejrzanego działania przekazywania wiadomości e-mail
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Dotyczy:**
 - Microsoft 365 Defender
 
-Zagrożenie może używać naruszonych kont użytkowników do kilku złośliwych celów, takich jak odczytywanie wiadomości e-mail w skrzynce odbiorczej użytkownika, przesyłanie dalej wiadomości e-mail do adresatów zewnętrznych oraz wysyłanie wiadomości wyłudzających informacje. Użytkownik docelowy może nie być świadomy, że jego wiadomości e-mail są przekazywane dalej. Jest to bardzo częsty emotikon, który używa się podczas naruszonych kont użytkowników.
+Aktorzy zagrożeń mogą używać kont użytkowników z naruszeniem zabezpieczeń do kilku złośliwych celów, w tym odczytywania wiadomości e-mail w skrzynce odbiorczej użytkownika, przekazywania wiadomości e-mail do zewnętrznych adresatów i wysyłania wiadomości wyłudzających informacje. Użytkownik docelowy może nie wiedzieć, że wiadomości e-mail są przesyłane dalej. Jest to bardzo powszechna taktyka używana przez osoby atakujące w przypadku naruszenia zabezpieczeń kont użytkowników.
 
-Wiadomości e-mail można przesyłać dalej ręcznie lub automatycznie przy użyciu reguł przesyłania dalej. Automatyczne przesyłanie dalej można zaimplementować na wiele sposobów, takich jak reguły skrzynki odbiorczej, reguła Exchange transportu (ETR) i przesyłanie dalej SMTP. Mimo że ręczne przesyłanie dalej wymaga bezpośredniej akcji ze strony użytkowników, mogą nie wiedzieć o wszystkich automatycznie przesyłanych wiadomościach e-mail. W Microsoft 365 wiadomości e-mail jest wywoływany alert, gdy użytkownik automatycznie przesyła dalej wiadomość e-mail na potencjalnie złośliwy adres e-mail.
+Wiadomości e-mail można przekazywać ręcznie lub automatycznie przy użyciu reguł przekazywania dalej. Automatyczne przekazywanie można zaimplementować na wiele sposobów, takich jak reguły skrzynki odbiorczej, Exchange reguła transportu (ETR) i przekazywanie SMTP. Chociaż ręczne przekazywanie dalej wymaga bezpośredniego działania ze strony użytkowników, mogą oni nie być świadomi wszystkich automatycznie przekazywanych wiadomości e-mail. W Microsoft 365 alert jest zgłaszany, gdy użytkownik automatycznie przekazuje wiadomość e-mail na potencjalnie złośliwy adres e-mail.
 
-Ten podręcznik ułatwia badanie podejrzanych alertów dotyczących aktywności przesyłania dalej poczty e-mail i szybkie ocenianie ich jako prawdziwego dodatniego (TP) lub wyników fałszywie dodatnich (FP). Następnie możesz podjąć zalecane działania dla alertów TP, aby rozwiązać ten atak.
+Ten podręcznik pomaga zbadać alerty dotyczące podejrzanych działań przekazywania wiadomości e-mail i szybko ocenić je jako prawdziwie dodatnie (TP) lub fałszywie dodatnie (FP). Następnie możesz podjąć zalecane działania dla alertów TP w celu skorygowania ataku.
 
-Aby uzyskać omówienie oceny alertów dla programu Microsoft Defender dla programu Office 365 i programu Microsoft Defender dla aplikacji w chmurze, zobacz [artykuł wprowadzający](alert-grading-playbooks.md).
+Aby zapoznać się z omówieniem klasyfikacji alertów dla Ochrona usługi Office 365 w usłudze Microsoft Defender i Microsoft Defender for Cloud Apps, zobacz [artykuł wprowadzający](alert-grading-playbooks.md).
 
-Wyniki korzystania z tego podręcznika są takie:
+Wyniki korzystania z tego podręcznika to:
 
-- Alerty skojarzone z automatycznie przesyłaną dalej wiadomościami e-mail zostały zidentyfikowane jako złośliwe (TP) lub szemrzone (FP).
+- Alerty skojarzone z automatycznym przekazywaniem wiadomości e-mail zostały zidentyfikowane jako złośliwe (TP) lub łagodne działania (FP).
 
-  Jeśli jest złośliwy, funkcja automatycznego przesyłania dalej poczty [e-mail](../office-365-security/external-email-forwarding.md) dla skrzynek pocztowych, których dotyczy problem.
+  W przypadku złośliwego działania [zatrzymano automatyczne przekazywanie wiadomości e-mail](../office-365-security/external-email-forwarding.md) dla skrzynek pocztowych, których dotyczy problem.
 
-- Jeśli wiadomości e-mail zostały przekazane na złośliwy adres e-mail, zostały wykonane odpowiednie czynności.
+- Podjęto niezbędne działania, jeśli wiadomości e-mail zostały przekazane na złośliwy adres e-mail.
 
-## <a name="email-forwarding-rules"></a>Reguły przesyłania dalej poczty e-mail
+## <a name="email-forwarding-rules"></a>Reguły przekazywania wiadomości e-mail
 
-Reguły przesyłania dalej poczty e-mail umożliwiają użytkownikom utworzenie reguły przesyłania dalej wiadomości e-mail wysyłanych do skrzynki pocztowej użytkownika do skrzynki pocztowej innego użytkownika w organizacji lub poza nią. Niektórzy użytkownicy poczty e-mail, zwłaszcza z wieloma skrzynkami pocztowymi, konfigurują reguły przesyłania dalej w celu przenoszenia wiadomości e-mail pracodawcy na ich prywatne konta e-mail. Przesyłanie dalej wiadomości e-mail jest przydatną funkcją, ale może także stanowić zagrożenie bezpieczeństwa ze względu na możliwość ujawnienia informacji. Atakujący mogą używać tych informacji do ataków na Twoją organizację lub jej partnerów.
+Reguły przekazywania wiadomości e-mail umożliwiają użytkownikom tworzenie reguły przesyłania dalej wiadomości e-mail wysyłanych do skrzynki pocztowej użytkownika do skrzynki pocztowej innego użytkownika w organizacji lub poza nią. Niektórzy użytkownicy poczty e-mail, zwłaszcza użytkownicy z wieloma skrzynkami pocztowymi, konfigurują zasady przekazywania, aby przenieść wiadomości e-mail pracodawcy na swoje prywatne konta e-mail. Przekazywanie wiadomości e-mail jest przydatną funkcją, ale może również stanowić zagrożenie dla bezpieczeństwa ze względu na potencjalne ujawnienie informacji. Osoby atakujące mogą użyć tych informacji do ataku na organizację lub jej partnerów.
 
-### <a name="suspicious-email-forwarding-activity"></a>Podejrzane działania w zakresie przesyłania dalej poczty e-mail
+### <a name="suspicious-email-forwarding-activity"></a>Podejrzane działania w zakresie przesyłania dalej wiadomości e-mail
 
-Atakujący mogą skonfigurować reguły wiadomości e-mail w celu ukrywania przychodzących wiadomości e-mail w naruszonej skrzynce pocztowej użytkownika w celu przesłania ich złośliwych działań przed użytkownikiem. Ponadto mogą ustawiać reguły w naruszonej skrzynce pocztowej użytkownika w celu usuwania wiadomości e-mail, przenoszenia wiadomości e-mail do innego mniej zauważalnego folderu, takiego jak folder RSS, lub przesyłania dalej wiadomości e-mail na konto zewnętrzne.  
+Osoby atakujące mogą skonfigurować reguły poczty e-mail, aby ukryć przychodzące wiadomości e-mail w skrzynce pocztowej użytkownika, których bezpieczeństwo zostało naruszone, aby ukryć złośliwe działania użytkownika. Mogą również ustawić reguły w skrzynce pocztowej użytkownika, których zabezpieczenia zostały naruszone, aby usuwać wiadomości e-mail, przenosić wiadomości e-mail do innego mniej zauważalnego folderu, takiego jak folder RSS, lub przekazywać wiadomości e-mail do konta zewnętrznego.
 
-Niektóre reguły mogą przenosić wszystkie wiadomości e-mail do innego folderu i oznaczać je jako "przeczytane", natomiast niektóre reguły mogą przenosić tylko wiadomości zawierające określone słowa kluczowe w wiadomości e-mail lub temacie. Na przykład regułę skrzynki odbiorczej można skonfigurować tak, aby między innymi wyszukiwała słowa kluczowe, takie jak "faktura", "wyłudzać", "nie odpowiadaj", "podejrzane wiadomości e-mail" lub "spam" i przenosić je na zewnętrzne konto e-mail. Atakujący mogą też rozpowszechniać spam, wiadomości e-mail służące do wyłudzania informacji lub złośliwe oprogramowanie, co może wymagać wykorzystania naruszonej skrzynki pocztowej użytkownika.
- 
-Usługa Microsoft Defender for Office 365 może wykrywać i ostrzegać o podejrzanych zasadach przesyłania dalej wiadomości e-mail, umożliwiając znalezienie i usunięcie ukrytych reguł w źródle.
+Niektóre reguły mogą przenosić wszystkie wiadomości e-mail do innego folderu i oznaczać je jako "przeczytane", podczas gdy niektóre reguły mogą przenosić tylko wiadomości zawierające określone słowa kluczowe w wiadomości e-mail lub temacie. Na przykład regułę skrzynki odbiorczej można ustawić tak, aby wyszukiwała słowa kluczowe, takie jak "faktura", "phish", "nie odpowiadaj", "podejrzana wiadomość e-mail" lub "spam" między innymi, i przenosiła je na zewnętrzne konto e-mail. Osoby atakujące mogą również używać skrzynki pocztowej użytkownika, którego zabezpieczenia zostały naruszone, do rozpowszechniania spamu, wiadomości e-mail wyłudzających informacje lub złośliwego oprogramowania.
+
+Ochrona usługi Office 365 w usłudze Microsoft Defender może wykrywać i wysyłać alerty dotyczące podejrzanych reguł przekazywania wiadomości e-mail, co umożliwia znajdowanie i usuwanie ukrytych reguł w źródle.
 
 Aby uzyskać więcej informacji, zobacz następujące wpisy w blogu:
 
-- [Firmowe konto e-mail](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
-- [Za kulisami biznesowego naruszenia zabezpieczeń poczty e-mail: przerywanie dużej kampanii przy użyciu danych zagrożeń między domenami](https://www.microsoft.com/security/blog/2021/06/14/behind-the-scenes-of-business-email-compromise-using-cross-domain-threat-data-to-disrupt-a-large-bec-infrastructure/)
-
+- [Naruszenie zabezpieczeń poczty e-mail firmy](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
+- [Za kulisami naruszenia zabezpieczeń poczty e-mail w firmie: Używanie danych zagrożeń między domenami w celu zakłócenia dużej kampanii BEC](https://www.microsoft.com/security/blog/2021/06/14/behind-the-scenes-of-business-email-compromise-using-cross-domain-threat-data-to-disrupt-a-large-bec-infrastructure/)
 
 ## <a name="alert-details"></a>Szczegóły alertu
 
-Aby przejrzeć alert Podejrzane działania przesyłania dalej poczty e-mail, otwórz stronę **Alerty** w celu sprawdzenia **sekcji Lista** działań. Oto przykład.
- 
+Aby przejrzeć alert Dotyczący podejrzanego działania przekazywania wiadomości e-mail, otwórz stronę **Alerty** , aby wyświetlić sekcję **Lista działań** . Oto przykład.
+
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="Lista działań związanych z alertem" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
-Wybierz **pozycję**  Aktywność, aby wyświetlić szczegóły tego działania na pasku bocznym. Oto przykład.
- 
+Wybierz pozycję **Działanie**  , aby wyświetlić szczegóły tego działania na pasku bocznym. Oto przykład.
+
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png" alt-text="Szczegóły działania" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png":::
 
-Pole **Przyczyna** zawiera następujące informacje dotyczące tego alertu.
+Pole **Przyczyna** zawiera następujące informacje związane z tym alertem.
 
 - Typ przekazywania (FT) jest jednym z następujących:
+  - reguła transportu Exchange (ETR): przekazywana dalej przy użyciu reguły transportu i Exchange
+  - SMTP: przesyłane dalej przy użyciu przekazywania skrzynek pocztowych
+  - InboxRule: przekazywane przy użyciu reguły skrzynki odbiorczej
 
-    -  Exchange Transport :Przesyłanie dalej przy użyciu i Exchange transportowego 
+- Identyfikator śledzenia komunikatów (MTI): jest to identyfikator (NetworkMessageId) przesłanej dalej wiadomości e-mail, która wyzwoliła ten alert. NetworkMessageId to unikatowy identyfikator wiadomości e-mail w organizacji.
+- Usługa przesyłania dalej (F): użytkownik, który przekazał tę wiadomość e-mail dalej.
+- Lista podejrzanych adresatów (SRL): lista adresatów uważanych za podejrzanych w tej wiadomości e-mail.
+- Lista adresatów (RL): lista wszystkich adresatów w tej wiadomości e-mail.
 
-    -  SMTP: Przesyłanie dalej przy użyciu przesyłania dalej skrzynki pocztowej
+## <a name="investigation-workflow"></a>Przepływ pracy badania
 
-    -  InboxRule: Forwarded using an Inbox Rule
+Podczas badania tego alertu należy określić:
 
-- Identyfikator śledzenia wiadomości (MTI): jest to identyfikator (NetworkMessageId) wiadomości e-mail, która wyzwoliła ten alert. NetworkMessageId to identyfikator unikatowy e-mail w Twojej organizacji.
-- Forwarder (F): Użytkownik, który przesyłał dalej tę wiadomość e-mail.
-- Podejrzana lista adresatów: lista adresatów uznanych za podejrzanych w tej wiadomości e-mail.
-- Lista adresatów: lista wszystkich adresatów tej wiadomości e-mail.
-
-## <a name="investigation-workflow"></a>Przepływ pracy Badania
-
-Podczas badania tego alertu należy ustalić:
-
-- Czy konto użytkownika i jego skrzynka pocztowa są naruszone?
+- Czy konto użytkownika i jego skrzynka pocztowa zostały naruszone?
 - Czy działania są złośliwe?
 
-### <a name="is-the-user-account-and-its-mailbox-compromised"></a>Czy konto użytkownika i jego skrzynka pocztowa są naruszone?
+### <a name="is-the-user-account-and-its-mailbox-compromised"></a>Czy konto użytkownika i jego skrzynka pocztowa zostały naruszone?
 
-Patrząc na zachowania nadawcy w przeszłości i ostatnie działania, należy ustalić, czy konto użytkownika powinno być traktowane jako naruszone, czy nie. Szczegółowe informacje o alertach podniesionych ze strony użytkownika można wyświetlić w portalu Microsoft 365 Defender użytkowników. 
+Patrząc na wcześniejsze zachowanie nadawcy i ostatnie działania, powinno być możliwe określenie, czy konto użytkownika powinno zostać uznane za naruszone. Szczegóły alertów zgłaszanych ze strony użytkownika można wyświetlić w portalu Microsoft 365 Defender.
 
-Możesz również analizować te dodatkowe działania dla skrzynki pocztowej, dla których ma to wpływ:
+Możesz również przeanalizować te dodatkowe działania dla skrzynki pocztowej, których dotyczy problem:
 
 - Używanie Eksploratora zagrożeń do zrozumienia zagrożeń związanych z pocztą e-mail
+  - Sprawdź, ile ostatnio wysłanych wiadomości e-mail wysyłanych przez nadawcę jest wykrywanych jako fałszywe, spam lub złośliwe oprogramowanie.
+  - Sprawdź, ile wysłanych wiadomości e-mail zawiera informacje poufne.
 
-    - Sprawdź, ile najnowszych wiadomości e-mail wysłanych przez nadawcę jest wykrywanych jako wyłudzy, spam lub złośliwe oprogramowanie.
-
-    - Sprawdź, ile z wysłanych wiadomości e-mail zawiera informacje poufne. 
-
-- Oceń ryzykowne zachowanie podczas logowania się w Microsoft Azure sieci.
-- Sprawdź, czy na urządzeniu użytkownika nie ma żadnych złośliwych działań.
+- Ocena ryzykownego zachowania logowania w portalu Microsoft Azure.
+- Sprawdź, czy na urządzeniu użytkownika nie występują złośliwe działania.
 
 ### <a name="are-the-activities-malicious"></a>Czy działania są złośliwe?
 
-Badanie działania przesyłania dalej poczty e-mail. Na przykład sprawdź typ wiadomości e-mail, adresat tej wiadomości e-mail lub sposób jej przesyłania dalej. 
+Zbadaj działanie przekazywania wiadomości e-mail. Na przykład sprawdź typ wiadomości e-mail, adresata tej wiadomości e-mail lub sposób przekazywania wiadomości e-mail.
 
 Aby uzyskać więcej informacji, zapoznaj się z następującymi artykułami:
 
-- [Szczegółowe informacje o wiadomościach przesyłanych automatycznie](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report)
-- [Nowi użytkownicy przesyłający dalej informacje o wiadomościach e-mail](/microsoft-365/security/office-365-security/mfi-new-users-forwarding-email)
+- [Szczegółowe informacje o komunikatach przesyłanych automatycznie](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report)
+- [Nowi użytkownicy przekazujący szczegółowe informacje e-mail](/microsoft-365/security/office-365-security/mfi-new-users-forwarding-email)
 - [Odpowiadanie na naruszone konto e-mail](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)
-- [Zgłaszanie wyników fałszywie dodatnich i ujemnych w Outlook](/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives)
+- [Zgłaszanie wyników fałszywie dodatnich i fałszywie ujemnych w Outlook](/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives)
 
-Oto przepływ pracy do identyfikowania podejrzanych działań przesyłania dalej wiadomości e-mail.
+Oto przepływ pracy umożliwiający zidentyfikowanie podejrzanych działań przekazywania wiadomości e-mail.
 
-:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="Przepływ pracy Badania alertu dla przesyłania dalej poczty e-mail" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
+:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="Przepływ pracy badania alertów na potrzeby przekazywania wiadomości e-mail" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
-Możesz zbadać alert przesyłania dalej wiadomości e-mail przy użyciu Eksploratora zagrożeń lub zaawansowanych zapytań wyszukiwania na podstawie dostępności funkcji w portalu Microsoft 365 Defender wyszukiwania. Możesz w razie potrzeby wykonać cały proces lub jego część.
+Alert przekazywania wiadomości e-mail można zbadać przy użyciu Eksploratora zagrożeń lub zaawansowanych zapytań dotyczących wyszukiwania zagrożeń w oparciu o dostępność funkcji w portalu Microsoft 365 Defender. W razie potrzeby możesz wykonać cały proces lub część procesu.
 
 ## <a name="using-threat-explorer"></a>Korzystanie z Eksploratora zagrożeń
 
-Eksplorator zagrożeń udostępnia interakcyjne środowisko analizy zagrożeń związanych z pocztą e-mail w celu określenia, czy dane działanie jest podejrzane. W informacjach o alertach można używać następujących wskaźników:
+Eksplorator zagrożeń udostępnia interaktywne środowisko badania zagrożeń związanych z pocztą e-mail w celu określenia, czy to działanie jest podejrzane. Z informacji o alertach można użyć następujących wskaźników:
 
-- Adres SRL/RL: Użyj listy (podejrzanej) adresatów (SRL), aby znaleźć następujące szczegóły:
- 
+- SRL/RL: użyj (podejrzanej) listy adresatów (SRL), aby znaleźć następujące szczegóły:
+
     :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png" alt-text="Przykład listy adresatów" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png":::
 
-    - KtoTo inne osoby przesyłały dalej wiadomości e-mail do tych adresatów?
+  - KtoTo jeszcze przekazała wiadomości e-mail do tych adresatów?
+  - Ile wiadomości e-mail zostało przekazanych do tych adresatów?
+  - Jak często wiadomości e-mail są przekazywane do tych adresatów?
 
-    - Ilu wiadomości e-mail zostało przesyłanych dalej do tych adresatów?
+- MTI: użyj identyfikatora śledzenia komunikatów/identyfikatora komunikatu sieciowego, aby znaleźć następujące szczegóły:
 
-    - Jak często wiadomości e-mail są przekazywane dalej do tych adresatów?
- 
+    :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png" alt-text="Przykład identyfikatora komunikatu sieciowego" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png":::
 
-- MTI: Aby znaleźć te szczegóły, użyj identyfikatora śledzenia wiadomości/identyfikatora wiadomości sieciowej:
+  - Jakie dodatkowe szczegóły są dostępne dla tej wiadomości e-mail? Na przykład: temat, ścieżka powrotna i sygnatura czasowa.
+  - Jakie jest źródło tej wiadomości e-mail? Czy są jakieś podobne wiadomości e-mail?
+  - Czy ta wiadomość e-mail zawiera jakiekolwiek adresy URL? Czy adres URL wskazuje na jakiekolwiek dane poufne?
+  - Czy wiadomość e-mail zawiera załączniki? Czy załączniki zawierają informacje poufne?
+  - Jaka była akcja podjęta w wiadomości e-mail? Czy został usunięty, oznaczony jako przeczytany lub przeniesiony do innego folderu?
+  - Czy są jakieś zagrożenia związane z tą wiadomością e-mail? Czy ta wiadomość e-mail jest częścią jakiejkolwiek kampanii?
 
-    :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png" alt-text="Przykład identyfikatora wiadomości sieciowej" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png":::
+Na podstawie odpowiedzi na te pytania należy mieć możliwość określenia, czy wiadomość e-mail jest złośliwa, czy niegroźna.
 
-    - Jakie dodatkowe szczegóły są dostępne dla tej wiadomości e-mail? Na przykład: temat, ścieżka zwrotna i sygnatura czasowa.
+## <a name="advanced-hunting-queries"></a>Zaawansowane zapytania dotyczące wyszukiwania zagrożeń
 
-    - Jakie jest pochodzenie tej wiadomości e-mail? Czy są jakieś podobne wiadomości e-mail?
+Aby użyć zaawansowanych zapytań [wyszukiwania zagrożeń](advanced-hunting-overview.md) w celu zebrania informacji związanych z alertem i określenia, czy działanie jest podejrzane, upewnij się, że masz dostęp do następujących tabel:
 
-    - Czy ta wiadomość e-mail zawiera jakiekolwiek adresy URL? Czy adres URL zawiera jakiekolwiek poufne dane?
+- EmailEvents — zawiera informacje związane z przepływem poczty e-mail.
 
-    - Czy wiadomość e-mail zawiera jakiekolwiek załączniki? Czy załączniki zawierają informacje poufne?
-
-    - Jakie działanie dzieje się w wiadomości e-mail? Czy plik został usunięty, oznaczony jako przeczytany lub przeniesiony do innego folderu?
-
-    - Czy z tą wiadomością e-mail są skojarzone jakiekolwiek zagrożenia? Czy ta wiadomość e-mail jest częścią jakiejkolwiek kampanii?
-
-Na podstawie odpowiedzi na te pytania należy ustalić, czy wiadomość e-mail jest złośliwa, czy szemrna.
-
-## <a name="advanced-hunting-queries"></a>Zaawansowane zapytania myśliwskie
-
-Aby używać [zaawansowanych zapytań wyszukiwania](advanced-hunting-overview.md) w celu zbierania informacji związanych z alertem i określania, czy dane działanie jest podejrzane, upewnij się, że masz dostęp do następujących tabel:
-
-- EmailEvents — zawiera informacje dotyczące przepływu poczty e-mail.
-
-- EmailUrlInfo — zawiera informacje dotyczące adresów URL w wiadomościach e-mail.
+- EmailUrlInfo — zawiera informacje związane z adresami URL w wiadomościach e-mail.
 
 - CloudAppEvents — zawiera dziennik inspekcji działań użytkowników.
 
 - IdentityLogonEvents — zawiera informacje logowania dla wszystkich użytkowników.
 
->[!Note]
->Niektóre parametry są unikatowe dla Twojej organizacji lub sieci. Wypełnij te konkretne parametry zgodnie z instrukcjami w każdym zapytaniu.
->
+> [!NOTE]
+> Niektóre parametry są unikatowe dla twojej organizacji lub sieci. Podaj te konkretne parametry zgodnie z instrukcjami w każdym zapytaniu.
 
-Uruchom to zapytanie, aby dowiedzieć się, kto jeszcze przesyłał dalej wiadomości e-mail do tych adresatów (SRL/RL).
+Uruchom to zapytanie, aby dowiedzieć się, kto jeszcze przekazał wiadomości e-mail do tych adresatów (SRL/RL).
 
 ```kusto
 let srl=pack_array("{SRL}"); //Put values from SRL here.
@@ -191,7 +176,7 @@ EmailEvents
 | distinct SenderDisplayName, SenderFromAddress, SenderObjectId
 ```
 
-Uruchom to zapytanie, aby dowiedzieć się, ile wiadomości e-mail zostało przesyłanych dalej do tych adresatów.
+Uruchom to zapytanie, aby dowiedzieć się, ile wiadomości e-mail zostało przekazanych do tych adresatów.
 
 ```kusto
 let srl=pack_array("{SRL}"); //Put values from SRL here.
@@ -200,7 +185,7 @@ EmailEvents
 | summarize Count=dcount(NetworkMessageId) by RecipientEmailAddress
 ```
 
-Uruchom to zapytanie, aby dowiedzieć się, jak często wiadomości e-mail są przekazywane dalej do tych adresatów.
+Uruchom to zapytanie, aby dowiedzieć się, jak często wiadomości e-mail są przekazywane do tych adresatów.
 
 ```kusto
 let srl=pack_array("{SRL}"); //Put values from SRL here.
@@ -209,15 +194,15 @@ EmailEvents
 | summarize Count=dcount(NetworkMessageId) by RecipientEmailAddress, bin(Timestamp, 1d)
 ```
 
-Uruchom to zapytanie, aby dowiedzieć się, czy wiadomość e-mail zawiera jakiekolwiek adresy URL.
- 
+Uruchom to zapytanie, aby dowiedzieć się, czy wiadomość e-mail zawiera adresy URL.
+
 ```kusto
 let mti='{MTI}'; //Replace {MTI} with MTI from alert
 EmailUrlInfo
 | where NetworkMessageId == mti
 ```
 
-Uruchom to zapytanie, aby dowiedzieć się, czy wiadomość e-mail zawiera jakiekolwiek załączniki.
+Uruchom to zapytanie, aby dowiedzieć się, czy wiadomość e-mail zawiera załączniki.
 
    ```kusto
    let mti='{MTI}'; //Replace {MTI} with MTI from alert
@@ -225,15 +210,15 @@ Uruchom to zapytanie, aby dowiedzieć się, czy wiadomość e-mail zawiera jakie
    | where NetworkMessageId == mti
    ```
 
-Uruchom to zapytanie, aby dowiedzieć się, czy nadawca (nadawca) utworzył jakiekolwiek nowe reguły.
+Uruchom to zapytanie, aby dowiedzieć się, czy usługa przesyłania dalej (nadawca) utworzyła nowe reguły.
 
 ```kusto
 let sender = "{SENDER}"; //Replace {SENDER} with display name of Forwarder
 let action_types = pack_array(
-    "New-InboxRule", 
-    "UpdateInboxRules", 
-    "Set-InboxRule", 
-    "Set-Mailbox",    
+    "New-InboxRule",
+    "UpdateInboxRules",
+    "Set-InboxRule",
+    "Set-Mailbox",
     "New-TransportRule",
     "Set-TransportRule");
 CloudAppEvents
@@ -241,51 +226,51 @@ CloudAppEvents
 | where ActionType in (action_types)
 ```
 
-Uruchom to zapytanie, aby dowiedzieć się, czy ten użytkownik nie ma żadnych anomalnych zdarzeń logowania. Przykład: nieznane ip, nowe aplikacje, nietypowe kraje, wiele zdarzeń logowaniaFailed.
+Uruchom to zapytanie, aby dowiedzieć się, czy były jakieś nietypowe zdarzenia logowania od tego użytkownika. Na przykład: nieznane adresy IP, nowe aplikacje, nietypowe kraje, wiele zdarzeń logowania nie powiodło się.
 
 ```kusto
-let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder 
+let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder
 IdentityLogonEvents
 | where AccountUpn == sender
 ```
 
-### <a name="investigating-forwarding-rules"></a>Badanie reguł przesyłania dalej
+### <a name="investigating-forwarding-rules"></a>Badanie reguł przekazywania
 
-Podejrzane reguły przesyłania dalej można też znaleźć przy użyciu Centrum administracyjnego programu Exchange na podstawie typu reguły (wartości FT w alercie).
+Podejrzane reguły przekazywania można również znaleźć przy użyciu centrum administracyjnego Exchange na podstawie typu reguły (wartość FT w alercie).
 
-- ETR 
+- ETR
 
-  Reguły transportu programu Exchange są wymienione w **sekcji** Reguły. Upewnij się, że wszystkie reguły są zgodnie z oczekiwaniami.
+  Exchange reguł transportu są wymienione w sekcji **Reguły**. Sprawdź, czy wszystkie reguły są zgodnie z oczekiwaniami.
 
 - SMTP
 
-  Aby wyświetlić reguły przesyłania dalej skrzynki pocztowej, wybierz skrzynkę pocztową nadawcy Zarządzanie ustawieniami **przepływu poczty e-mail \> \> Edycja.\>**
+  Reguły przekazywania skrzynek pocztowych można wyświetlić, wybierając skrzynkę pocztową nadawcy **Zarządzanie ustawieniami \> przepływu poczty E-mail Edytuj przekazywanie \> wiadomości e-mail.\>**
 
-- InboxRule
+- Reguła skrzynki odbiorczej
 
-  Reguły skrzynki odbiorczej są konfigurowane z klientem poczty e-mail. Aby wyświetlić listę reguł skrzynki odbiorczej utworzonych przez użytkowników, możesz użyć polecenia cmdlet [Get-InboxRule](/powershell/module/exchange/get-inboxrule) programu PowerShell.
+  Reguły skrzynki odbiorczej są konfigurowane za pomocą klienta poczty e-mail. Aby wyświetlić listę reguł skrzynki odbiorczej utworzonych przez użytkowników, możesz użyć polecenia cmdlet [Get-InboxRule](/powershell/module/exchange/get-inboxrule) programu PowerShell.
 
 ### <a name="additional-investigation"></a>Dodatkowe badanie
 
-Wraz z wykrytym do tej pory dowodem możesz ustalić, czy istnieją nowe reguły przesyłania dalej. Zbadaj adres IP skojarzony z regułą. Upewnij się, że nie jest to anomalny adres IP i jest zgodny z zwykłymi działaniami wykonywanymi przez użytkownika.
+Wraz z odnalezionymi do tej pory dowodami można określić, czy są tworzone nowe reguły przekazywania. Zbadaj adres IP skojarzony z regułą. Upewnij się, że nie jest to nietypowy adres IP i jest zgodny ze zwykłymi działaniami wykonywanymi przez użytkownika.
 
 ## <a name="recommended-actions"></a>Zalecane akcje
 
-Po określeniu, że skojarzone działania sprawiają, że alert jest prawdziwy dodatni, sklasyfikuj alert i podejmie działania naprawcze:
+Po ustaleniu, że skojarzone działania sprawiają, że ten alert jest prawdziwie dodatni, należy sklasyfikować alert i wykonać następujące akcje w celu skorygowania:
 
-1. Wyłącz i usuń regułę przesyłania dalej skrzynki odbiorczej.
-2. W przypadku typu Przesyłanie dalej przez Skrzynkę odbiorczą zresetuj poświadczenia konta użytkownika.
-3. W przypadku typu przesyłania dalej SMTP lub ETR należy zbadać działania konta użytkownika, które utworzyło alert.
+1. Wyłącz i usuń regułę przekazywania skrzynki odbiorczej.
+2. W przypadku typu przekazywania inboxRule zresetuj poświadczenia konta użytkownika.
+3. W przypadku typu przekazywania SMTP lub ETR zbadaj działania konta użytkownika, które utworzyło alert.
 
-    - Badanie wszelkich podejrzanych działań a administratorów.
+    - Zbadaj wszelkie inne podejrzane działania administratora.
 
     - Zresetuj poświadczenia konta użytkownika.
 
-4. Sprawdź, czy nie ma dodatkowych działań pochodzących z kont, adresów IP i podejrzanych nadawców.
+4. Sprawdź dodatkowe działania pochodzące z kont, adresów IP i podejrzanych nadawców, których dotyczy problem.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Omówienie oceny alertów](alert-grading-playbooks.md)
-- [Podejrzane reguły przesyłania dalej skrzynki odbiorczej](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Omówienie klasyfikacji alertów](alert-grading-playbooks.md)
+- [Podejrzane reguły przesyłania dalej w skrzynce odbiorczej](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Podejrzane reguły manipulowania skrzynką odbiorczą](alert-grading-playbook-inbox-manipulation-rules.md)
-- [Badanie alertów](investigate-alerts.md)
+- [Badaj alerty](investigate-alerts.md)

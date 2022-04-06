@@ -1,7 +1,7 @@
 ---
 title: Dołączanie Windows przy użyciu skryptu lokalnego
 description: Użyj skryptu lokalnego, aby wdrożyć pakiet konfiguracji na urządzeniach, aby włączyć dołączanie urządzeń do usługi.
-keywords: konfigurowanie urządzeń przy użyciu skryptu lokalnego, zarządzanie urządzeniami, konfigurowanie programu Microsoft Defender dla urządzeń końcowych
+keywords: konfigurowanie urządzeń przy użyciu skryptu lokalnego, zarządzanie urządzeniami, konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6abd2c26f8557277b4c1b13e5189a42fea9a60f1
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1ea1661a89585d46aa5fc234f6f88be66512c1be
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63033794"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468704"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>Dołączanie Windows przy użyciu skryptu lokalnego
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
@@ -38,14 +38,14 @@ Możesz także ręcznie włączyć poszczególne urządzenia do programu Defende
 
 > [!IMPORTANT]
 > Ten skrypt został zoptymalizowany pod kątem używania na maksymalnie dziesięciu urządzeniach.
-> Wykonywanie skryptów lokalnych to specjalna metoda dołączania do oceny programu Microsoft Defender dla punktu końcowego.
+> Lokalne skrypty to specjalna metoda dołączania do oceniania Ochrona punktu końcowego w usłudze Microsoft Defender.
 > Częstotliwość raportowania danych jest ustawiana wyżej niż w przypadku innych metod dołączania przy dołączaniu przy użyciu skryptu lokalnego.
 > To ustawienie jest używane na potrzeby oceny i nie jest zwykle używane we wdrożeniach produkcyjnych. Z tego powodu istnieją obawy dotyczące wpływu na ochronę środowiska, dlatego zalecamy ograniczenie liczby wdrożeń korzystających z skryptów lokalnych do dziesięciu.
 > Jeśli wdrażasz w środowisku produkcyjnym w sposób opisany wcześniej, użyj innych [](configure-endpoints.md) opcji wdrożenia, takich jak zasady grupy lub Microsoft Endpoint Configuration Manager.
 
 Zapoznaj się z [plikiem PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) aby zobaczyć różne ścieżki wdrożenia programu Defender dla punktu końcowego. 
 
-## <a name="onboard-devices"></a>Urządzenia wyniesiene na urządzeniach w 
+## <a name="onboard-devices"></a>Dołączanie urządzeń 
 
 1.  Otwórz plik konfiguracji GP .zip pliku (*WindowsDefenderATPOnboardingPackage.zip*), który został pobrany z kreatora dołączania usługi. Możesz również pobrać pakiet z <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender:</a>
 
@@ -66,16 +66,16 @@ Zapoznaj się z [plikiem PDF](https://download.microsoft.com/download/5/6/0/5609
    1. Przejdź do **przycisku Start** i wpisz **cmd**.
    2. Kliknij prawym przyciskiem myszy **pozycję Wiersz polecenia i** wybierz **pozycję Uruchom jako administrator**.
 
-    ![Okno menu Start z punktem Uruchom jako administrator.](images/run-as-admin.png)
+    :::image type="content" source="images/run-as-admin.png" alt-text="Okno z menu Start z poleceniami Uruchom jako administrator" lightbox="images/run-as-admin.png":::
 
 4.  Wpisz lokalizację pliku skryptu. Jeśli plik został skopiowany na pulpit, wpisz: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
 5.  Naciśnij klawisz **Enter** lub kliknij przycisk **OK**.
 
-Aby uzyskać informacje na temat sposobu, w jaki możesz ręcznie zweryfikować zgodność urządzenia i poprawnie zgłaszać dane czujnika, zobacz Rozwiązywanie problemów z dołączaniem do punktu końcowego programu [Microsoft Defender](troubleshoot-onboarding.md).
+Aby uzyskać informacje na temat sposobu ręcznego sprawdzania, czy urządzenie jest zgodne, i poprawnie raportuje dane czujnika, zobacz Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender problemów z [dołączaniem](troubleshoot-onboarding.md).
 
 > [!TIP]
-> Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, [zobacz Uruchamianie testu](run-detection-test.md) wykrywania dla nowo dodanego punktu końcowego programu Microsoft Defender.
+> Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, [zobacz Uruchamianie testu wykrywania dla nowo dodanego Ochrona punktu końcowego w usłudze Microsoft Defender końcowego](run-detection-test.md).
 
 ## <a name="configure-sample-collection-settings"></a>Konfigurowanie ustawień kolekcji przykładowych
 
@@ -100,7 +100,7 @@ Wartość domyślna w przypadku, gdy klucz rejestru nie istnieje, to 1.
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Uruchamianie testu wykrywania w celu zweryfikowania do uruchomienia
 
-Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, zobacz Uruchamianie testu wykrywania na nowo włodarzony [program Microsoft Defender dla urządzenia końcowego](run-detection-test.md).
+Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy urządzenie jest prawidłowo podłączone do usługi. Aby uzyskać więcej informacji, [zobacz Uruchamianie testu](run-detection-test.md) wykrywania na nowo Ochrona punktu końcowego w usłudze Microsoft Defender urządzeniach.
 
 ## <a name="offboard-devices-using-a-local-script"></a>Urządzenia wye korzystające ze skryptu lokalnego
 
@@ -121,7 +121,7 @@ Ze względów bezpieczeństwa pakiet używany na urządzeniach offboardowych wyg
    1. Przejdź do **przycisku Start** i wpisz **cmd**.
    2. Kliknij prawym przyciskiem myszy **pozycję Wiersz polecenia i** wybierz **pozycję Uruchom jako administrator**.
 
-        ![Okno menu Start z punktem Uruchom jako administrator.](images/run-as-admin.png)
+      :::image type="content" source="images/run-as-admin.png" alt-text="Menu Windows menu Start z opcją Uruchom jako administrator" lightbox="images/run-as-admin.png":::
 
 4. Wpisz lokalizację pliku skryptu. Jeśli plik został skopiowany na pulpit, wpisz: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -145,7 +145,7 @@ Monitorowanie można również monitorować bezpośrednio w portalu lub przy uż
 ## <a name="related-topics"></a>Tematy pokrewne
 - [Na urządzeniach Windows przy użyciu aplikacji zasady grupy](configure-endpoints-gp.md)
 - [Na urządzeniach Windows urządzeniach przy użyciu Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Na urządzeniach Windows urządzeniach przenośnych za pomocą narzędzi do zarządzania urządzeniami przenośnymi](configure-endpoints-mdm.md)
-- [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)
-- [Uruchamianie testu wykrywania na nowo w urządzeniu z uruchomionym programem Microsoft Defender dla punktu końcowego](run-detection-test.md)
-- [Rozwiązywanie problemów z dołączaniem do programu Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [Na urządzeniach Windows przenośnych za pomocą narzędzi mobilnych Zarządzanie urządzeniami urządzeniach przenośnych](configure-endpoints-mdm.md)
+- [Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)](configure-endpoints-vdi.md)
+- [Uruchamianie testu wykrywania na nowo włodowym Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia](run-detection-test.md)
+- [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender problemów z dołączaniem](troubleshoot-onboarding.md)

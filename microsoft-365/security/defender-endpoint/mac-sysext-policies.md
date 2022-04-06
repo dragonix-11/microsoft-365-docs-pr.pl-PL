@@ -1,7 +1,7 @@
 ---
 title: Nowe profile konfiguracji systemu macOS Catalina i nowsze wersje systemu macOS
 description: W tym temacie opisano zmiany, które należy wprowadzić, aby skorzystać z rozszerzeń systemowych, które zastępują rozszerzenia kernel w systemie macOS Catalina i nowsze wersje systemu macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina
+keywords: microsoft, defender, Ochrona punktu końcowego w usłudze Microsoft Defender, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,27 +18,27 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0cdf60708e84b0972099330d48f19b22d26766ba
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 53194aac16091b9afd9559b4f372c2d436c198bf
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011908"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474712"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nowe profile konfiguracji systemu macOS Catalina i nowsze wersje systemu macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do programu Microsoft Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Razem z rozwojem systemu macOS przygotowujemy program Microsoft Defender for Endpoint w aktualizacji macOS, która korzysta z rozszerzeń systemowych, a nie rozszerzeń kernel. Ta aktualizacja będzie miała zastosowanie tylko do systemu macOS Catalina (10.15.4) i nowszej wersji systemu macOS.
+Zgodnie z dostosowaniem do wersji macOS, przygotowujemy aktualizację systemu Ochrona punktu końcowego w usłudze Microsoft Defender macOS, która korzysta z rozszerzeń systemowych, a nie rozszerzeń kernel. Ta aktualizacja będzie miała zastosowanie tylko do systemu macOS Catalina (10.15.4) i nowszej wersji systemu macOS.
 
-Jeśli program Microsoft Defender for Endpoint został wdrożony w systemie macOS w środowisku zarządzanym (za pośrednictwem usługi JAMF, Intune lub innego rozwiązania MDM), musisz wdrożyć nowe profile konfiguracji. W przypadku pomiń te czynności użytkownicy będą otrzymywać monity o zatwierdzenie w celu uruchomienia tych nowych składników.
+Jeśli wdrożono usługę Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS w środowisku zarządzanym (za pośrednictwem usługi JAMF, Intune lub innego rozwiązania MDM), musisz wdrożyć nowe profile konfiguracji. W przypadku pomiń te czynności użytkownicy będą otrzymywać monity o zatwierdzenie w celu uruchomienia tych nowych składników.
 
 ## <a name="jamf"></a>JAMF
 
@@ -54,25 +54,25 @@ Aby zatwierdzić rozszerzenia systemu, utwórz następujący ład:
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    ![Zrzut ekranu przedstawiający zatwierdzone rozszerzenia systemu.](images/mac-approved-system-extensions.png)
+    :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" Strona Zatwierdzone rozszerzenia systemowe" lightbox="images/mac-approved-system-extensions.png":::
 
 ### <a name="privacy-preferences-policy-control"></a>Kontrola zasad preferencji prywatności
 
-Dodaj następujący ład usługi JAMF, aby udzielić pełnego dostępu dyskowego do programu Microsoft Defender for Endpoint Security Extension. Te zasady są wymaganie wstępne dla uruchomienia rozszerzenia na Twoim urządzeniu.
+Dodaj następujący ładład usługi JAMF, aby udzielić pełnego dostępu dyskowego do Ochrona punktu końcowego w usłudze Microsoft Defender zabezpieczeń punktu końcowego. Te zasady są wymaganie wstępne dla uruchomienia rozszerzenia na Twoim urządzeniu.
 
 1. Wybierz pozycję **Opcje Preferencje** \> **prywatności Kontrola zasad**.
 2. Użyj `com.microsoft.wdav.epsext` jako typu **Identyfikator** i `Bundle ID` **jako pakietu**.
 3. Ustaw wymaganie kodu na `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. Ustaw **dla aplikacji lub usługi** **wartość SystemPolicyAllFiles i** dostęp do **zezwalania**.
 
-    ![Kontrola zasad preferencji prywatności.](images/mac-system-extension-privacy.png)
+   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" Element menu Sterowanie zasadami preferencji prywatności" lightbox="images/mac-system-extension-privacy.png":::
 
 ### <a name="network-extension-policy"></a>Zasady rozszerzenia sieci
 
-W ramach funkcji wykrywania punktu końcowego i odpowiedzi usługa Microsoft Defender for Endpoint w systemie macOS sprawdza ruch sieciowy i raportuje te informacje w portalu usługi Microsoft 365 Defender sieci. Poniższe zasady pozwalają na korzystanie z tej funkcji przez rozszerzenie sieci.
+W ramach funkcji wykrywania punktu końcowego i odpowiedzi użytkownicy Ochrona punktu końcowego w usłudze Microsoft Defender systemie macOS sprawdzają ruch sieciowy i raportują te informacje w portalu usługi Microsoft 365 Defender sieci. Poniższe zasady pozwalają na korzystanie z tej funkcji przez rozszerzenie sieci.
 
 > [!NOTE]
-> Usługa JAMF nie ma wbudowanej obsługi zasad filtrowania zawartości, które są wymaganie wstępne dla włączenia rozszerzeń sieciowych instalowanych przez program Microsoft Defender dla punktu końcowego w systemie macOS na urządzeniu. Ponadto niekiedy program JAMF zmienia treść wdrażanych zasad.
+> Program JAMF nie ma wbudowanej obsługi zasad filtrowania zawartości, które są wymaganie wstępne dla włączenia rozszerzeń sieciowych, które Ochrona punktu końcowego w usłudze Microsoft Defender w instalacjach systemu macOS na urządzeniu. Ponadto niekiedy program JAMF zmienia treść wdrażanych zasad.
 > W związku z tym poniższe kroki zapewniają obejście, które obejmuje podpisywanie profilu konfiguracji.
 
 1. Zapisz na urządzeniu następującą zawartość jako edytor `com.microsoft.network-extension.mobileconfig` tekstu:
@@ -174,11 +174,11 @@ W ramach funkcji wykrywania punktu końcowego i odpowiedzi usługa Microsoft Def
 
 ## <a name="intune"></a>Intune
 
-### <a name="intune-system-extensions-policy"></a>Zasady rozszerzenia systemu Intune
+### <a name="intune-system-extensions-policy"></a>Intune rozszerzeń systemu
 
 Aby zatwierdzić rozszerzenia systemowe:
 
-1. W usłudze Intune otwórz **okno Zarządzanie** \> **konfiguracją urządzenia**. Wybierz **pozycję Zarządzaj profilami** \>  \> **Utwórz profil**.
+1. W Intune otwórz **okno Zarządzanie konfiguracją** \> **urządzenia**. Wybierz **pozycję Zarządzaj profilami** \>  \> **Utwórz profil**.
 2. Wybierz nazwę profilu. Zmień **platformę=macOS** na **Profile type=Extensions**. Wybierz pozycję **Utwórz**.
 3. Na karcie `Basics` nadaj nazwę temu noweowi profilowi.
 4. Na karcie `Configuration settings` dodaj następujące wpisy w sekcji `Allowed system extensions` :
@@ -193,7 +193,7 @@ Aby zatwierdzić rozszerzenia systemowe:
    |com.microsoft.wdav.netext|UBF8T346G9|
    |||
 
-   ![Zrzut ekranu przedstawiający profile konfiguracji systemu.](images/mac-system-extension-intune2.png)
+   :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" Strona Profile konfiguracji systemu" lightbox="images/mac-system-extension-intune2.png":::
 
 5. Na karcie `Assignments` przypisz ten profil wszystkim użytkownikom & **Wszystkich urządzeniach**.
 6. Przejrzyj i utwórz ten profil konfiguracji.
@@ -310,12 +310,12 @@ sysext.xml: OK
 
 Aby wdrożyć ten niestandardowy profil konfiguracji:
 
-1. W usłudze Intune otwórz **okno Zarządzanie** \> **konfiguracją urządzenia**. Wybierz **pozycję Zarządzaj profilami** \>  \> **Utwórz profil**.
+1. W Intune otwórz **okno Zarządzanie konfiguracją** \> **urządzenia**. Wybierz **pozycję Zarządzaj profilami** \>  \> **Utwórz profil**.
 2. Wybierz nazwę profilu. Zmień **platformę=macOS** i **profile type=Custom**. Wybierz **pozycję Konfiguruj**.
 3. Otwórz profil konfiguracji i przekaż **sysext.xml**. Ten plik został utworzony w poprzednim kroku.
 4. Wybierz przycisk **OK**.
 
-    ![Zrzut ekranu przedstawiający rozszerzenie systemu w usłudze Intune.](images/mac-system-extension-intune.png)
+   :::image type="content" source="images/mac-system-extension-intune.png" alt-text="Rozszerzenie systemu na Intune sieci Web" lightbox="images/mac-system-extension-intune.png":::
 
 5. Na karcie `Assignments` przypisz ten profil wszystkim użytkownikom & **Wszystkich urządzeniach**.
 6. Przejrzyj i utwórz ten profil konfiguracji.

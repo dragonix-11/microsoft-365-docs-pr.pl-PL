@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Utwórz skrzynkę pocztową pokoju lub sprzętu, aby każda osoba w organizacji mogła zarezerwować te zasoby na potrzeby spotkań lub wydarzeń, korzystając z programu Outlook. '
-ms.openlocfilehash: 38df6be558c3f590e851460f8065712d73dbf4b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: afd24a2780478718cb74fdd6681d53a905f96b57
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985476"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633266"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Skrzynki pocztowe pokoju i sprzętu
 
@@ -63,7 +63,7 @@ Aby używać skrzynek pocztowych pokojów lub sprzętu, otwórz program Outlook 
   
 7. Wpisz komunikat opisujący cel i w razie potrzeby dołącz pliki.
     
-8. Aby zezwolić innym osobom na dołączanie do spotkania online lub telefonicznie, wybierz pozycję **Spotkanie na Skypie**.
+8. Aby zezwolić innym osobom na dołączanie do spotkania online lub na telefoniczne dołączanie do spotkania, wybierz pozycję Teams **spotkania**.
     
 9. Aby sprawdzić dostępność pokoju, sprzętu i zaproszonych osób, wybierz pozycję **Asystent planowania** na górze. Następnie wybierz dostępną godzinę w kalendarzu.
 
@@ -76,7 +76,7 @@ Aby używać skrzynek pocztowych pokojów lub sprzętu, otwórz program Outlook 
     
 ## <a name="set-up-room-and-equipment-mailboxes"></a>Konfigurowanie skrzynek pocztowych pokojów i sprzętu
 
-Aby skonfigurować skrzynkę pocztową pokoju lub sprzętu, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a>. W tym celu wymagane są uprawnienia administratora. Utwórz skrzynkę pocztową i powiadom wszystkich, że można już rezerwować dany zasób na potrzeby spotkań i wydarzeń.
+Aby skonfigurować skrzynkę pocztową pokoju lub sprzętu, przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>. W tym celu wymagane są uprawnienia administratora. Utwórz skrzynkę pocztową i powiadom wszystkich, że można już rezerwować dany zasób na potrzeby spotkań i wydarzeń.
   
 1. W Centrum administracyjnym przejdź do strony **Zasoby** \> [Pokoje i wyposażenie](https://go.microsoft.com/fwlink/p/?linkid=2067334).
   
@@ -96,7 +96,7 @@ Aby skonfigurować skrzynkę pocztową pokoju lub sprzętu, przejdź do <a href=
     
    - **Lokalizacja**: numer pokoju albo lokalizacja pokoju w budynku lub regionie.
     
-   - **Numer telefonu**: numer telefonu dla pokoju. To inny numer niż numer telefonu spotkania generowany w przypadku korzystania z programu Skype dla firm.
+   - **Numer telefonu**: numer telefonu dla pokoju. To inny numer niż numer telefonu spotkania generowany podczas korzystania z programu Microsoft Teams.
     
 4. Wybierz opcję **Dodaj**.
     

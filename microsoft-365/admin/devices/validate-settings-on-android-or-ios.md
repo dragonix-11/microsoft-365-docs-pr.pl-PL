@@ -24,17 +24,17 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Dowiedz się, jak sprawdzić poprawność Microsoft 365 Business Premium ochrony aplikacji na urządzeniach z systemem Android lub iOS.
-ms.openlocfilehash: 85d98a4741299327c0e88735cb9593e129fdc929
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b760b49c59d8033e4587cedd67f024f983547179
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313751"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632454"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Sprawdzanie poprawności ustawień ochrony aplikacji na urządzeniach z systemem Android lub iOS
 
 > [!NOTE]
-> Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender dla Firm jest wprowadzana u klientów Microsoft 365 Business Premium począwszy od 1 marca 2022 r. Ta oferta oferuje dodatkowe funkcje zabezpieczeń dla urządzeń. [Dowiedz się więcej o uchcie programu Defender dla firm](../../security/defender-business/mdb-overview.md).
 
 Postępuj zgodnie z instrukcjami w poniższych sekcjach, aby sprawdzić poprawność ustawień ochrony aplikacji na urządzeniach z systemem Android lub iOS.
   
@@ -42,7 +42,7 @@ Postępuj zgodnie z instrukcjami w poniższych sekcjach, aby sprawdzić poprawno
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Sprawdzanie, czy na urządzeniach użytkowników działają ustawienia ochrony aplikacji
 
-Gdy [skonfigurujesz aplikacje dla urządzeń z systemem Android](app-protection-settings-for-android-and-ios.md) w celu ochrony aplikacji, możesz wykonać czynności opisane poniżej, aby sprawdzić działanie wybranych ustawień. 
+Po [skonfigurowaniu ustawień ochrony aplikacji dla urządzeń z systemem Android lub iOS](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) w celu ochrony aplikacji możesz wykonać poniższe czynności, aby sprawdzić, czy wybrane ustawienia działają. 
   
 Najpierw upewnij się, że zasady dotyczą aplikacji, w której chcesz ją zweryfikować.
   
@@ -131,7 +131,7 @@ W okienku **Edytuj zasady** wybierz pozycję **Edytuj** obok pozycji **Ochrona w
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Sprawdzanie, czy na urządzeniach użytkowników działają ustawienia ochrony aplikacji
 
-Gdy [skonfigurujesz aplikacje dla urządzeń z systemem iOS](app-protection-settings-for-android-and-ios.md) w celu ochrony aplikacji, możesz wykonać czynności opisane poniżej, aby sprawdzić działanie wybranych ustawień. 
+Gdy [skonfigurujesz aplikacje dla urządzeń z systemem iOS](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md) w celu ochrony aplikacji, możesz wykonać czynności opisane poniżej, aby sprawdzić działanie wybranych ustawień. 
   
 Najpierw upewnij się, że zasady dotyczą aplikacji, w której chcesz ją zweryfikować.
   

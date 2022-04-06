@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Dowiedz się, jak przeglądać zagrożenia wykryte na Program antywirusowy Microsoft Defender i zarządzać nimi na Windows 10 urządzeniach.
-ms.openlocfilehash: e0e0613ad7805b8c4bde221aa2192c788fb75106
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c836554445f56a9a915885d55a4490c6bb5bd1a9
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324287"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633221"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Przeglądanie wykrytych zagrożeń i działanie
 
@@ -32,7 +32,7 @@ Program antywirusowy Microsoft Defender wykrywa i chroni przed następującymi r
 - Próby wyłudzania informacji
 - Próby kradzieży danych
 
-Jako specjalista IT/administrator możesz wyświetlać informacje na temat wykrywania zagrożeń na Windows 10, które są zarejestrowane w usłudze [Intune](/mem/intune/enrollment/device-enrollment) w usłudze centrum administracyjne platformy Microsoft 365. Zobaczysz informacje podsumowujące, takie jak:
+Jeśli jesteś specjalistą IT/administratorem, możesz wyświetlać informacje o wykrywaniu zagrożeń na Windows 10 [urządzeniach](/mem/intune/enrollment/device-enrollment) zarejestrowanych w programie Intune w Centrum administracyjne platformy Microsoft 365. Zobaczysz informacje podsumowujące, takie jak:
 
 - Ile urządzeń wymaga ochrony antywirusowej
 - Ile urządzeń nie jest zgodnych z zasadami zabezpieczeń
@@ -40,8 +40,8 @@ Jako specjalista IT/administrator możesz wyświetlać informacje na temat wykry
 
 Dostępnych jest kilka opcji wyświetlania określonych informacji na temat wykrywania zagrożeń i urządzeń:
 
-- Strona **Aktywne urządzenia** <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">w centrum administracyjne platformy Microsoft 365.</a> Zobacz [zarządzanie wykrywaniem zagrożeń na stronie Aktywne urządzenia w](#manage-threat-detections-on-the-active-devices-page) tym artykule.
-- Strona **Aktywne zagrożenia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a>. Zobacz [zarządzanie wykrywaniem zagrożeń na stronie Aktywne zagrożenia w](#manage-threat-detections-on-the-active-threats-page) tym artykule.
+- Strona **Aktywne urządzenia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>. Zobacz [zarządzanie wykrywaniem zagrożeń na stronie Aktywne urządzenia w](#manage-threat-detections-on-the-active-devices-page) tym artykule.
+- Strona **Aktywne zagrożenia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>. Zobacz [zarządzanie wykrywaniem zagrożeń na stronie Aktywne zagrożenia w](#manage-threat-detections-on-the-active-threats-page) tym artykule.
 - Strona **oprogramowania antywirusowego** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. Zobacz [zarządzanie wykrywaniem zagrożeń w Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) tym artykule.
 
 Aby dowiedzieć się więcej, zobacz [Zagrożenia wykryte przez Program antywirusowy Microsoft Defender](threats-detected-defender-av.md).
@@ -50,7 +50,7 @@ Aby dowiedzieć się więcej, zobacz [Zagrożenia wykryte przez Program antywiru
 
 Następująca procedura dotyczy klientów, którzy mają Microsoft 365 Business Premium.
 
-1. Przejdź do centrum administracyjne platformy Microsoft 365 i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> zaloguj się.
+1. Przejdź do Centrum administracyjne platformy Microsoft 365 i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> zaloguj się.
 
 2. Na stronie nawigacji wybierz pozycję **UrządzeniaAktywowanie** >  urządzeń. Zostanie wyświetlona lista aktywnych urządzeń i szczegóły, takie jak stan ochrony, stan ochrony oprogramowania antywirusowego i liczba wykrytych aktywnych zagrożeń.
 
@@ -58,12 +58,12 @@ Następująca procedura dotyczy klientów, którzy mają Microsoft 365 Business 
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>Zarządzanie wykrywaniem zagrożeń na **stronie Aktywne zagrożenia**
 
-Następująca procedura dotyczy klientów, którzy mają Microsoft 365 Business Premium. [Windows 10 urządzenia muszą być zabezpieczone i](../setup/secure-win-10-pcs.md) [zarejestrowane w usłudze Intune](/mem/intune/enrollment/windows-enrollment-methods).
+Następująca procedura dotyczy klientów, którzy mają Microsoft 365 Business Premium. [Windows 10 urządzenia muszą być zabezpieczone i](../setup/secure-win-10-pcs.md) [zarejestrowane w Intune](/mem/intune/enrollment/windows-enrollment-methods).
 
 > [!NOTE]
 > Strona **Program antywirusowy Microsoft Defender** i **Aktywne** zagrożenia są rozdawana w fazach, więc możesz nie mieć do nich natychmiastowego dostępu.
 
-1. Przejdź do centrum administracyjne platformy Microsoft 365 i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> zaloguj się.
+1. Przejdź do Centrum administracyjne platformy Microsoft 365 i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> zaloguj się.
 
 2. Na karcie **Program antywirusowy Microsoft Defender** wybierz pozycję **Wyświetl aktywne zagrożenia**. (Alternatywnie w okienku nawigacji wybierz pozycję **Kondycja** >  **Zagrożenia & oprogramowania antywirusowego**).
 
@@ -105,7 +105,7 @@ W poniższej tabeli opisano akcje, które mogą być Microsoft Endpoint Manager.
 | Uruchom ponownie | Wymusza ponowne uruchomienie Windows 10 urządzenia w ciągu pięciu minut.<br><br>**WAŻNE:** Właściciel lub użytkownik urządzenia nie jest automatycznie powiadamiany o ponownym uruchomieniu i może utracić niezapisaną pracę. |
 | Szybkie skanowanie | Uruchamia szybkie skanowanie antywirusowe na urządzeniu, skupiając się na typowych lokalizacjach, w których może być rejestrowane złośliwe oprogramowanie, takie jak klucze rejestru i znane Windows uruchamiania. Wyniki są wysyłane do [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Pełne skanowanie | Uruchamia pełne skanowanie antywirusowe na urządzeniu, skupiając się na typowych lokalizacjach, w których może być rejestrowane złośliwe oprogramowanie, i uwzględniając wszystkie pliki i foldery na urządzeniu. Wyniki są wysyłane do [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Synchronizuj | Wymaga urządzenia do sprawdzenia w usłudze Intune (część Microsoft Endpoint Manager). Gdy urządzenie zae testuje, otrzymuje wszystkie oczekujące akcje lub zasady przypisane do urządzenia. |
+| Synchronizuj | Wymaga urządzenia do sprawdzenia za pomocą Intune (część Microsoft Endpoint Manager). Gdy urządzenie zae testuje, otrzymuje wszystkie oczekujące akcje lub zasady przypisane do urządzenia. |
 | Aktualizowanie podpisów | Wymaga urządzenia do uzyskania aktualizacji [analizy zabezpieczeń w](https://go.microsoft.com/fwlink/?linkid=2149926) celu ochrony przed złośliwym oprogramowaniem i oprogramowaniem antywirusowym. |
 
 > [!TIP]
@@ -117,6 +117,6 @@ Jeśli masz plik, który został uznany za nieodebrany lub niesłusznie sklasyfi
 
 ## <a name="see-also"></a>Zobacz też
 
-[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](secure-your-business-data.md)
+[10 najlepszych sposobów zabezpieczania planów Microsoft 365 dla firm](../../admin/security-and-compliance/secure-your-business-data.md)
 
-[Omówienie programu Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) (program Defender dla firm jest wprowadzany Microsoft 365 Business Premium klientów, począwszy od 1 marca 2022 r.)
+[Omówienie programu Microsoft Defender dla Firm](../../security/defender-business/mdb-overview.md) (od 1 marca 2022 r. dla klientów usługi Defender Microsoft 365 Business Premium firm)
