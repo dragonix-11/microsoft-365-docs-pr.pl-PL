@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Informacje o składniku zasad DLP i konfiguracji
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d6bc24f313d1998979a460bcd41e87ccbe8abc5c
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 169fb93f7343fd038af9e7b8ae789dabc871c6aa
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704928"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714004"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Dokumentacja zasad ochrony przed utratą danych
 
@@ -202,8 +202,6 @@ W poniższym przykładzie reguła 1 ma pierwszeństwo przed innymi zgodnymi regu
 - Reguła 4. Brak wymuszania
 
 Wszystkie inne reguły są oceniane, ale ich akcje nie są wymuszane. Dzienniki inspekcji będą pokazywać najbardziej restrykcyjną regułę stosowaną w pliku. Jeśli istnieje więcej niż jedna reguła, która jest zgodna i są one równie restrykcyjne, zasady i priorytet reguły określają, która reguła będzie stosowana do pliku.
-
-W przypadku punktów końcowych można skonfigurować akcje wykonywane przez DLP dla wszystkich obsługiwanych działań w jednej regule dla określonego zestawu warunków dołączania.
 
 ### <a name="conditions"></a>Warunki
 

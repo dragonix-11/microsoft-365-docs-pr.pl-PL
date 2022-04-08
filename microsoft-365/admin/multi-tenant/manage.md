@@ -21,64 +21,64 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Dowiedz się, jak korzystać z przełącznika dzierżawy i widoków dla wielu dzierżaw, które zapewniają możliwość zarządzania dzierżawami z jednej lokalizacji.
-ms.openlocfilehash: d30d352376bb10e142d478e21ddd550577f536ca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak używać przełącznika dzierżawy i widoków wielodostępnych, które umożliwiają zarządzanie dzierżawami z jednej lokalizacji.
+ms.openlocfilehash: 0058bdb45b42e2c67b96ff3e30ce1cd04e5658b2
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986586"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713960"
 ---
-# <a name="multi-tenant-management"></a>Zarządzanie wielodostępną dzierżawą
+# <a name="multi-tenant-management"></a>Zarządzanie wieloma dzierżawami
 
-Zarządzanie wieloma dzierżawami zapewnia ujednoliconą formę zarządzania, która umożliwia administratorom partnerów Microsoft 365 zarządzanie wszystkimi dzierżawami z jednej lokalizacji. Jeśli jesteś partnerem, który zarządza wieloma dzierżawami, możesz:
+Zarządzanie wieloma dzierżawami oferuje ujednoliconą formę zarządzania, która umożliwia administratorom Microsoft 365 partnerów administrowanie wszystkimi dzierżawami, którymi zarządzają z jednej lokalizacji. Jeśli jesteś partnerem, który ma delegowaną rolę administratora i zarządza wieloma dzierżawami, możesz:
 
-- Szybkie przechodzenie między dzierżawami, które zarządzasz.
-- Oceń kondycję usługi, produkty i rozliczenia dla wielu dzierżaw.
-- Na **stronie Wszystkie** dzierżawy możesz szybko sprawdzić kondycję wszystkich usług dzierżawcy, wszystkie otwarte żądania usług, produkty i rozliczenia oraz liczbę użytkowników w tej dzierżawie.
+- Szybkie przechodzenie między zarządzanymi dzierżawami.
+- Ocena kondycji usługi, produktów i rozliczeń w wielu dzierżawach.
+- Na stronie **Wszystkie dzierżawy** możesz szybko zobaczyć kondycję wszystkich usług dzierżawców, wszystkie otwarte żądania obsługi, produkty i rozliczenia oraz liczbę użytkowników w tej dzierżawie.
 
 ## <a name="move-between-tenants"></a>Przechodzenie między dzierżawami
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a> wybierz nazwę organizacji.
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> wybierz nazwę organizacji.
 
-    :::image type="content" source="../../media/macorgswitcher.png" alt-text="Przełącznik dla wielu dzierżaw.":::
+    :::image type="content" source="../../media/macorgswitcher.png" alt-text="Przełącznik wielodostępny.":::
 
-- Z **przełącznika Dzierżawa** możesz szybko przechodzić między dzierżawami, które zarządzasz.
+- Za pomocą **przełącznika dzierżawy** możesz szybko przechodzić między zarządzanymi dzierżawami.
 
     :::image type="content" source="../../media/yourtenantslist.png" alt-text="Lista dzierżaw z funkcjami wyszukiwania.":::
 
-## <a name="view-all-tenants-page"></a>Wyświetl stronę Wszystkich dzierżaw
+## <a name="view-all-tenants-page"></a>Wyświetl stronę Wszystkie dzierżawy
 
-1. W lewym <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a> w lewym okienku narracji wybierz pozycję **Wszystkie dzierżawy**.
-- Na **stronie Wszyscy dzierżawcy** możesz
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> w lewym pasku nawigacyjnym wybierz pozycję **Wszystkie dzierżawy**.
+- Na stronie **Wszystkie dzierżawy** możesz
   - Ocena kondycji usługi
-  - Przejrzyj użycie licencji
+  - Przeglądanie użycia licencji
   - Wyszukaj lub wybierz dzierżawę, którą chcesz zarządzać
   - Możesz również przypiąć najczęściej odwiedzaną dzierżawę na początku listy.
 
-Jeśli dzierżawę oznaczono jako ulubioną, zostanie ona automatycznie rozwinięta, dzięki czemu od razu będzie można wyświetlać szczegóły stanu.
+Jeśli dzierżawa została oznaczona jako ulubiona, zostanie ona automatycznie rozwinięta, aby można było natychmiast wyświetlić szczegóły stanu.
 
 ## <a name="view-service-health-for-all-accounts"></a>Wyświetlanie kondycji usługi dla wszystkich kont
 
-Widok kondycji usługi pokazuje, czy jakiekolwiek zdarzenia lub doradcy wpływają na dzierżawy. Będzie nawet zawierała informacje o tym, ilu twoich dzierżaw zarządzanych dotyczy problem.
+Widok kondycji usługi pokazuje, czy jakiekolwiek zdarzenia lub porady mają wpływ na dzierżawy. Poinformuje nawet, ilu dzierżaw zarządzanych dotyczy problem.
 
-1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365 w</a> widoku wielodostępnej wybierz pozycję **Kondycja usługi**.
-2. Na stronie  Kondycja usługi zagregowanego widoku można również zobaczyć łączną liczbę zdarzeń, łączną liczbę porad mających wpływ na dowolną z dzierżaw zarządzanych oraz liczbę usług z aktywnymi zdarzeniami. Możesz również sprawdzić, na ilu Twoich dzierżawach mają wpływ zdarzenia i doradcy.
+1. W <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> w widoku wielu dzierżaw wybierz pozycję **Service Health**.
+2. W widoku zagregowanym **strony Kondycja usługi** można również zobaczyć całkowitą liczbę zdarzeń, łączną liczbę porad dotyczących dowolnej dzierżawy zarządzanej oraz liczbę usług z aktywnymi zdarzeniami. Możesz również zobaczyć, ilu dzierżawców dotyczy zdarzenia i porady.
 
     - Możesz użyć opcji filtru, aby wyświetlić problemy według typu problemu lub usługi
 
-    - Problemy możesz przejrzeć na **kartach Wszystkie usługi** **lub Wszystkie** problemy.
+    - Problemy można przeglądać na kartach **Wszystkie usługi** lub **Wszystkie problemy** .
 
-    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Strona Kondycja usługi wielodostępnej.":::
-1. Wybierz zdarzenie na karcie **Wszystkie usługi** lub **Wszystkie** problemy, aby uzyskać więcej informacji o dowolnym zdarzeniu na **karcie Omówienie** . Wybierz **kartę Dzierżawy,** których dotyczy problem, aby uzyskać listę dzierżaw, których dotyczy problem.
+    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Strona Kondycja usługi z wieloma dzierżawami.":::
+1. Wybierz zdarzenie na karcie **Wszystkie usługi** lub **Wszystkie problemy** , aby uzyskać więcej informacji o każdym zdarzeniu na karcie **Przegląd** . Wybierz kartę **Dzierżawy, których dotyczy problem** , aby uzyskać listę dzierżaw, których dotyczy problem.
 
     :::image type="content" source="../../media/tenantsaffected.png" alt-text="Lista dzierżaw, których dotyczy problem z kondycją usługi.":::
 
-Listę dzierżaw, których dotyczy problem, można wyeksportować do formatu CSV, aby administratorzy mogą ją udostępnić zespołom pomocy technicznej.
+Listę dzierżaw, których dotyczy problem, można wyeksportować do formatu CSV, aby administratorzy mogli udostępniać ją zespołom pomocy technicznej.
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Wyświetlanie pojedynczej dzierżawy w centrum administracyjne platformy Microsoft 365
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Wyświetlanie jednej dzierżawy w Centrum administracyjne platformy Microsoft 365
 
-Możesz wrócić do centrum administracyjne platformy Microsoft 365 dzierżawy na stronie **Wszystkie dzierżawy**.
+Możesz wrócić do Centrum administracyjne platformy Microsoft 365 dla dowolnej dzierżawy ze strony **Wszystkie dzierżawy**.
 
-1. Na **stronie Wszyscy dzierżawcy** wybierz nazwę dzierżawy, dla której chcesz wyświetlić centrum administracyjne.
-2. Zostaniesz przekierowywowany do centrum administracyjnego tej dzierżawy.
+1. Na stronie **Wszystkie dzierżawy wybierz nazwę dzierżawy** , dla której chcesz wyświetlić centrum administracyjne.
+2. Zostanie przekierowane do centrum administracyjnego dla tej dzierżawy.

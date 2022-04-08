@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Korygowanie zagrożeń
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbb86061ddd7d94cf37a38d21d99d75eaaa44fae
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 98b425c39cd12aea55714e9ade192e2e770b26cd
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704893"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714862"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Korygowanie złośliwych wiadomości e-mail dostarczanych w usłudze Office 365
 
@@ -42,10 +42,6 @@ Administratorzy mogą podejmować wymagane działania w wiadomościach e-mail, a
 *Ręczne wyszukiwanie zagrożeń* występuje, gdy zespoły zabezpieczeń ręcznie identyfikują zagrożenia przy użyciu funkcji wyszukiwania i filtrowania w Eksploratorze. Ręczne korygowanie poczty e-mail może być wyzwalane za pośrednictwem dowolnego widoku poczty e-mail (*złośliwego oprogramowania*, *języka Phish* lub *wszystkich wiadomości e-mail*) po zidentyfikowaniu zestawu wiadomości e-mail, które muszą zostać skorygowane.
 
 :::image type="content" source="../../media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="Zrzut ekranu przedstawiający ręczne wyszukiwanie zagrożeń w Eksploratorze Office 365 według daty.":::
-
-*Dzienniki akcji* Przedstawia szczegóły stanu korygowania, takie jak pomyślne, zakończone niepowodzeniem i już w miejscu docelowym.
-
-:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="Centrum akcji pokazuje szczegóły stanu korygowania, takie jak pomyślne, zakończone niepowodzeniem i już w miejscu docelowym.":::
 
 Zespoły zabezpieczeń mogą używać Eksploratora do wybierania wiadomości e-mail na kilka sposobów:
 
@@ -83,12 +79,11 @@ Ujednolicone centrum akcji pokazuje akcje korygowania z ostatnich 30 dni. Akcje 
 
 Otwórz dowolny element korygowania, aby wyświetlić szczegółowe informacje na jego temat, w tym jego nazwę korygowania, identyfikator zatwierdzenia, identyfikator badania, datę utworzenia, opis, stan, źródło akcji, typ akcji, o którym decyduje stan. Zostanie również otwarte okienko boczne ze szczegółami akcji, szczegółami klastra poczty e-mail, alertem i szczegółami zdarzenia.
 
-- *Otwórz stronę Badanie* , aby otworzyć badanie administratora, które zawiera mniej szczegółów i kart. Wyświetlane są szczegółowe informacje, takie jak: alert pokrewny, jednostka wybrana do korygowania, podjęta akcja, stan korygowania, liczba jednostek, dzienniki, osoba zatwierdzająca akcję. To badanie śledzi badanie wykonywane ręcznie przez administratora i zawiera szczegółowe informacje dotyczące wyborów dokonanych przez administratora, dlatego jest nazywane badaniem akcji administratora. Nie ma potrzeby podejmowania działań w sprawie dochodzenia i powiadamiania o tym, że jest ono już w stanie zatwierdzonym.   
-- *Liczba wiadomości e-mail* Wyświetla liczbę wiadomości e-mail przesłanych za pośrednictwem Eksploratora zagrożeń. Te wiadomości e-mail mogą być możliwe do wykonania lub nie umożliwiają wykonania akcji. 
-- *Dzienniki akcji* Pokazuje szczegóły stanu korygowania, takie jak pomyślne/zakończone niepowodzeniem/już w lokalizacji docelowej
+- *Otwórz stronę Badanie* , aby otworzyć badanie administratora, które zawiera mniej szczegółów i kart. Wyświetlane są szczegółowe informacje, takie jak: alert pokrewny, jednostka wybrana do korygowania, podjęta akcja, stan korygowania, liczba jednostek, dzienniki, osoba zatwierdzająca akcję. To badanie śledzi badanie wykonywane ręcznie przez administratora i zawiera szczegółowe informacje dotyczące wyborów dokonanych przez administratora, dlatego jest nazywane badaniem akcji administratora. Nie ma potrzeby podejmowania działań w sprawie dochodzenia i powiadamiania o tym, że jest ono już w stanie zatwierdzonym.
+- *Liczba wiadomości e-mail* Wyświetla liczbę wiadomości e-mail przesłanych za pośrednictwem Eksploratora zagrożeń. Te wiadomości e-mail mogą być możliwe do wykonania lub nie umożliwiają wykonania akcji.
+- *Dzienniki akcji* Pokaż szczegóły stanu korygowania, takie jak pomyślne, zakończone niepowodzeniem i już w miejscu docelowym.
 
-  > [!div class="mx-imgBorder"]
-  > [![Zrzut ekranu przedstawiający centrum akcji z zagrożeniami z możliwością działania i niezobowiązywalnymi działaniami.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="Centrum akcji z otwartą opcją Przenieś do skrzynki odbiorczej.":::
 
   - **Możliwość wykonania akcji**: Wiadomości e-mail w następujących lokalizacjach skrzynek pocztowych w chmurze można wykonywać i przenosić:
     - Skrzynki odbiorczej

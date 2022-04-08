@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczanie Teams multimediów na przykład przez rozdzielanie sieci VPN
+title: Zabezpieczanie ruchu multimediów aplikacji Teams na potrzeby tunelowania podziału sieci VPN
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -16,99 +16,99 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: Zabezpieczanie Teams multimediów na przykład przez rozdzielanie sieci VPN
-ms.openlocfilehash: 0f16ed8f7f9721a79375f05f7b889bc8aab2d824
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Zabezpieczanie ruchu multimediów aplikacji Teams na potrzeby tunelowania podziału sieci VPN
+ms.openlocfilehash: 715d5e02ef01db9ef1c75a063ef5a2771d425f5c
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63704940"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715390"
 ---
-# <a name="securing-teams-media-traffic-for-vpn-split-tunneling"></a>Zabezpieczanie Teams multimediów na przykład przez rozdzielanie sieci VPN
+# <a name="securing-teams-media-traffic-for-vpn-split-tunneling"></a>Zabezpieczanie ruchu multimediów aplikacji Teams na potrzeby tunelowania podziału sieci VPN
 
 >[!NOTE]
->Ten artykuł jest częścią zestawu artykułów dotyczących optymalizacji Microsoft 365 zdalnych.
+>Ten artykuł jest częścią zestawu artykułów, które dotyczą optymalizacji Microsoft 365 dla użytkowników zdalnych.
 
->- Aby uzyskać omówienie korzystania z rozdzielania dzielonego sieci VPN w celu zoptymalizowania Microsoft 365 dla użytkowników zdalnych, zobacz Omówienie: rozdzielanie sieci VPN dla sieci [Microsoft 365](microsoft-365-vpn-split-tunnel.md).
->- Aby uzyskać szczegółowe wskazówki dotyczące implementowania rozdzielania sieci VPN, zobacz [Implementowanie](microsoft-365-vpn-implement-split-tunnel.md) rozdzielania sieci VPN na Microsoft 365.
->- Aby uzyskać szczegółową listę scenariuszy rozdzielania rozdzielania sieci VPN, zobacz Typowe scenariusze rozdzielania sieci [VPN dla sieci Microsoft 365](microsoft-365-vpn-common-scenarios.md).
->- Aby uzyskać informacje na temat konfigurowania usługi Stream i zdarzeń na żywo w środowiskach VPN, zobacz Szczególne zagadnienia dotyczące przesyłania strumieniowego i wydarzeń na żywo w [środowiskach VPN](microsoft-365-vpn-stream-and-live-events.md).
->- Aby uzyskać informacje na temat optymalizowania Microsoft 365 wydajności dzierżawy na całym świecie dla użytkowników w Chinach, zobacz Microsoft 365 [optymalizację wydajności dla użytkowników w Chinach](microsoft-365-networking-china.md).
+>- Aby zapoznać się z omówieniem korzystania z tunelowania podzielonego sieci VPN w celu optymalizacji łączności Microsoft 365 dla użytkowników zdalnych, zobacz [Omówienie tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- Aby uzyskać szczegółowe wskazówki dotyczące implementowania tunelowania podzielonego sieci VPN, zobacz [Implementowanie tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+>- Aby uzyskać szczegółową listę scenariuszy tunelowania podzielonego sieci VPN, zobacz [Typowe scenariusze tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+>- Aby uzyskać informacje o sposobie konfigurowania strumienia i zdarzeń na żywo w środowiskach sieci VPN, zobacz [Specjalne zagadnienia dotyczące strumienia i zdarzeń na żywo w środowiskach sieci VPN](microsoft-365-vpn-stream-and-live-events.md).
+>- Aby uzyskać informacje na temat optymalizacji Microsoft 365 ogólnoświatowych wydajności dzierżaw dla użytkowników w Chinach, zobacz [optymalizację wydajności Microsoft 365 dla chińskich użytkowników](microsoft-365-networking-china.md).
 
-Niektórzy Microsoft Teams mogą wymagać szczegółowych informacji na temat sposobu przepływów połączeń w programie Teams korzystania z modelu rozdzielania rozdzielaowego i sposobu zabezpieczania połączeń.
+Niektórzy administratorzy Microsoft Teams mogą wymagać szczegółowych informacji na temat sposobu działania przepływów wywołań w Teams przy użyciu modelu tunelowania podzielonego i sposobu zabezpieczania połączeń.
 
 ## <a name="configuration"></a>Konfiguracja
 
-Zarówno w przypadku połączeń, jak i spotkań, o ile wymagane podsieci IP Optymalizowanie podsieci IP dla multimediów Teams są poprawnie na miejscu w tabeli trasy, Teams wywołuje funkcję [Get Przełęczy](/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) w celu określenia, który interfejs lokalny powinien odpowiadać trasom, które ma być kierowane do określonego miejsca docelowego, interfejs lokalny zostanie zwrócony dla miejsc docelowych firmy Microsoft w podanych powyżej blokach ADRESÓW IP firmy Microsoft.
+W przypadku wywołań i spotkań, o ile wymagane podsieci IP optymalizacji dla nośników Teams są poprawnie w miejscu w tabeli tras, gdy Teams wywołuje funkcję [GetBestRoute](/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) w celu określenia, który interfejs lokalny odpowiada trasie, której powinien używać dla określonego miejsca docelowego, interfejs lokalny zostanie zwrócony dla miejsc docelowych firmy Microsoft w blokach adresów IP firmy Microsoft wymienionych powyżej.
 
-Niektóre oprogramowanie klienckie VPN zezwala na manipulowanie routingiem na podstawie adresu URL. Jednak ruch Teams nie jest skojarzony z adresem URL, więc kontrolę nad routingiem dla tego ruchu należy wykonać przy użyciu podsieci IP.
+Niektóre oprogramowanie klienckie sieci VPN umożliwia manipulowanie routingiem na podstawie adresu URL. Jednak Teams ruch multimediów nie ma z nim skojarzonego adresu URL, dlatego należy kontrolować routing dla tego ruchu przy użyciu podsieci IP.
 
-W niektórych scenariuszach, często niezwiązanych z konfiguracją Teams klienta, ruch multimedialny nadal przechodzi przez katalog VPN, nawet gdy są prawidłowe trasy. Jeśli wystąpi ten scenariusz, należy użyć reguły zapory w celu zablokowania Teams IP lub portów z używania sieci VPN.
+W niektórych scenariuszach, często niezwiązanych z konfiguracją klienta Teams, ruch multimediów nadal przechodzi przez tunel VPN nawet z odpowiednimi trasami. Jeśli wystąpi ten scenariusz, użycie reguły zapory w celu zablokowania Teams podsieci IP lub portów przy użyciu sieci VPN powinno wystarczyć.
 
 >[!IMPORTANT]
->Aby zapewnić, Teams ruch multimedialny jest kierowane przy użyciu odpowiedniej metody we wszystkich scenariuszach sieci VPN, upewnij się, że użytkownicy Microsoft Teams mają wersję klienta **1.3.00.13565** lub nowszą. Ta wersja zawiera ulepszenia dotyczące wykrywania dostępnych ścieżek sieciowych przez klienta.
+>Aby upewnić się, Teams ruch multimediów jest kierowany za pomocą żądanej metody we wszystkich scenariuszach sieci VPN, upewnij się, że użytkownicy korzystają Microsoft Teams klienta **w wersji 1.3.00.13565 lub nowszej**. Ta wersja obejmuje ulepszenia sposobu wykrywania dostępnych ścieżek sieciowych przez klienta.
 
-Ruch sygnałowy jest wykonywany przez protokół HTTPS i nie jest tak opóźniony, jak ruch multimedialny, i jest oznaczony  jako Zezwalaj w danych adresu URL/IP, przez co w razie potrzeby można bezpiecznie przekierować ruch przez klienta VPN.
+Ruch sygnałowy jest wykonywany za pośrednictwem protokołu HTTPS i nie jest tak wrażliwy na opóźnienie jak ruch multimedialny i jest oznaczony jako **Zezwalaj** w danych adresu URL/IP, a tym samym może być bezpiecznie kierowany przez klienta sieci VPN w razie potrzeby.
 
 >[!NOTE]
->Microsoft Edge **96 i więcej** obsługuje również podzielenie sieci VPN na ruch w komunikacji równorzędnej. Oznacza to, że klienci mogą zyskać korzyści z rozdzielania sieci VPN na Teams klientów sieci Web w przeglądarce Edge. Klienci, którzy chcą skonfigurować go dla witryn internetowych uruchomionych w przeglądarce Edge, mogą osiągnąć ten cel, umożliwiając włączenie zasad [Edge WebRtcRespectOsRoutingTableEnabled](/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) .
+>Microsoft Edge **96 i nowsze** obsługują również tunelowanie podzielone sieci VPN dla ruchu równorzędnego. Oznacza to, że klienci mogą na przykład uzyskać korzyści z tunelowania podzielonego sieci VPN dla Teams klientów internetowych w przeglądarce Edge. Klienci, którzy chcą skonfigurować ją dla witryn internetowych działających w przeglądarce Edge, mogą to osiągnąć, wykonując dodatkowy krok wyłączania zasad [WebRtcRespectOsRoutingTableEnabled](/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) przeglądarki Edge.
 
 ### <a name="security"></a>Bezpieczeństwo
 
-Jednym z typowych argumentów na unikanie podziałów na rozdzielanie jest to, że jest mniej bezpieczny, np. Żaden ruch, który nie przechodzi przez klienta VPN, nie będzie korzystać z jakiegokolwiek schematu szyfrowania stosowanego do szyfrowania vpn, przez co będzie mniej bezpieczny.
+Jednym z typowych argumentów unikania dzielenia tuneli jest to, że jest to mniej bezpieczne, tj. Żaden ruch, który nie przechodzi przez tunel VPN, nie będzie korzystać z jakiegokolwiek schematu szyfrowania stosowanego do tunelu SIECI VPN i dlatego jest mniej bezpieczny.
 
-Głównym argumentem licznika jest to, że ruch multimedialny jest już zaszyfrowany za pośrednictwem protokołu _Secure Real-Time Transport Protocol (SRTP_) — profilu protokołu Real-Time Transport Protocol (RTP), który zapewnia poufność, uwierzytelnianie i ponowne odtwarzanie ochrony przed atakami do ruchu WTP. Sam SRTP korzysta z losowo wygenerowanego klucza sesji, który jest wymieniany za pośrednictwem zabezpieczonego kanału sygnałowego TLS. Ten temat szczegółowo opisano w tym [przewodniku zabezpieczeń](/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), ale podstawową sekcją zainteresowań jest szyfrowanie multimediów.
+Głównym kontrargumentem jest to, że ruch multimedialny jest już szyfrowany za pośrednictwem _protokołu SRTP (Secure Real-Time Transport Protocol),_ profilu protokołu Real-Time Transport Protocol (RTP), który zapewnia poufność, uwierzytelnianie i ochronę przed atakami odtwarzania dla ruchu RTP. Sam protokół SRTP opiera się na losowo wygenerowanym kluczu sesji, który jest wymieniany za pośrednictwem kanału sygnałowego zabezpieczonego przez protokół TLS. Jest to szczegółowo omówione w [tym przewodniku po zabezpieczeniach](/skypeforbusiness/optimizing-your-network/security-guide-for-skype-for-business-online), ale podstawową interesującą częścią jest szyfrowanie multimediów.
 
-Ruch multimedialny jest szyfrowany przy użyciu srTP, który korzysta z klucza sesji wygenerowanego przez bezpieczny generator liczb losowych i wymieniany przy użyciu kanału sygnałowego TLS. Ponadto multimedia przepływujące w obu kierunkach między serwerem pośrednicowym i jego wewnętrznym następnym przeskokiem są również szyfrowane przy użyciu SRTP.
+Ruch multimediów jest szyfrowany przy użyciu protokołu SRTP, który używa klucza sesji wygenerowanego przez bezpieczny generator liczb losowych i wymienianego przy użyciu kanału TLS sygnalizacji. Ponadto nośnik przepływający w obu kierunkach między serwerem mediacji a jego wewnętrznym następnym przeskokem jest również szyfrowany przy użyciu protokołu SRTP.
 
-Skype dla firm Online generuje nazwę użytkownika/hasła w celu zapewnienia bezpiecznego dostępu do przekazywania multimediów przez _portal Traversal przy użyciu przekazywania dookoła NAT (TURN)._ Przekazywanie multimediów wymienia nazwę użytkownika/hasło za pośrednictwem kanału SIP zabezpieczonego za pomocą protokołu TLS. Warto zauważyć, że nawet jeśli w celu połączenia klienta z siecią firmową może zostać użyty vpn, ruch nadal musi przepływać w formularzu SRTP, gdy opuszcza sieć firmową, aby połączyć się z usługą.
+Skype dla firm Online generuje nazwy użytkownika/hasła w celu bezpiecznego dostępu do przekaźników multimediów za _pośrednictwem przekaźników przy użyciu przekaźników wokół translatora adresów sieciowych (TURN)._ Przekaźniki multimediów wymieniają nazwę użytkownika/hasło za pośrednictwem kanału SIP zabezpieczonego przez protokół TLS. Warto zauważyć, że nawet jeśli tunel VPN może być używany do łączenia klienta z siecią firmową, ruch musi nadal przepływać w formularzu SRTP, gdy opuszcza sieć firmową, aby dotrzeć do usługi.
 
-Informacje o tym, Teams ogranicza typowe zagrożenia związane z zabezpieczeniami, takie jak ataki funkcji komunikacji głosowej lub przechodzenia przez narzędzia do przechodzenia przez sesję _nat (STUN),_ można znaleźć w tece [5.1](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c) Zagadnienia związane z zabezpieczeniami dotyczące implementerów.
+Informacje na temat sposobu, w jaki Teams eliminują typowe problemy z zabezpieczeniami, takie jak ataki wzmacniania połączeń głosowych lub narzędzi przechodzenia sesji na potrzeby ataków wzmacniania translatora adresów sieciowych _(STUN),_ można znaleźć w [artykule 5.1 Zagadnienia dotyczące zabezpieczeń dla implementatorów](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c).
 
-O nowoczesnych mechanizmach kontroli zabezpieczeń w scenariuszach pracy zdalnej można również przeczytać w artykule Alternatywne sposoby dla informatyków i informatyków dotyczące osiągnięcia nowoczesnych kontroli zabezpieczeń w dzisiejszych unikatowych scenariuszach pracy zdalnej (blog zespołu zabezpieczeń firmy [Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
+Możesz również przeczytać o nowoczesnych mechanizmach kontroli zabezpieczeń w scenariuszach pracy zdalnej w artykule [Alternatywne sposoby dla specjalistów ds. zabezpieczeń i działu IT w celu uzyskania nowoczesnych mechanizmów kontroli zabezpieczeń w dzisiejszych unikatowych scenariuszach pracy zdalnej (blog zespołu ds. zabezpieczeń firmy Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
 
-### <a name="testing"></a>Testowanie
+### <a name="testing"></a>Testowania
 
-Gdy zasady będą działać, upewnij się, że działają zgodnie z oczekiwaniami. Istnieje wiele sposobów testowania ścieżki, która jest poprawnie ustawiona do korzystania z lokalnego połączenia internetowego:
+Po wprowadzeniu zasad należy potwierdzić, że działa zgodnie z oczekiwaniami. Istnieje wiele sposobów testowania ścieżki jest poprawnie ustawiona do korzystania z lokalnego połączenia internetowego:
 
-- Uruchom test [Microsoft 365,](https://aka.ms/netonboard) który spowoduje uruchomienie testów łączności, w tym śledzenia tras, jak powspomniano powyżej. Dodaliśmy także do tego narzędzia testy sieci VPN, które powinno również dostarczyć dodatkowych informacji.
+- Uruchom [test łączności Microsoft 365](https://aka.ms/netonboard), który będzie uruchamiał testy łączności, w tym trasy śledzenia, jak powyżej. Dodajemy również testy sieci VPN do tego narzędzia, które powinno również dostarczyć dodatkowych szczegółowych informacji.
 
-- Prosta ścieżka **śledzenia do** punktu końcowego, który znajduje się w zakresie podziału, powinna pokazywać ścieżkę przebytą, na przykład:
+- Prosta **kontrolka tracert** do punktu końcowego w zakresie tunelu podzielonego powinna zawierać pobraną ścieżkę, na przykład:
 
   ```powershell
   tracert worldaz.tr.teams.microsoft.com
   ```
 
-  Następnie powinna być zobaczysz ścieżkę tego punktu końcowego za pośrednictwem lokalnego internetowego punktu końcowego, która powinna rozpoznać adres IP z zakresów Teams, które skonfigurowaliśmy do rozdzielania rozdzielania.
+  Następnie powinna zostać wyświetlona ścieżka za pośrednictwem lokalnego usługodawcy sieciowego do tego punktu końcowego, która powinna zostać rozpoznana jako adres IP w zakresach Teams skonfigurowanych do tunelowania podzielonego.
 
-- Przechwyć sieć za pomocą narzędzia takiego jak Wireshark. Filtruj według protokołu UDP podczas połączenia. W zakresie optymalizowania powinien być wyświetlony ruch o przepływie do **Teams IP.** Jeśli dla tego ruchu jest używany szyfrowanie sieci VPN, ruch multimedialny nie będzie widoczny w wynikach śledzenia.
+- Wykonaj przechwytywanie sieci przy użyciu narzędzia takiego jak Wireshark. Filtruj według protokołu UDP podczas wywołania i powinien zostać wyświetlony ruch przepływający do adresu IP w zakresie Teams **Optymalizuj**. Jeśli tunel VPN jest używany dla tego ruchu, ruch multimedialny nie będzie widoczny w śladzie.
 
 ## <a name="additional-support-logs"></a>Dodatkowe dzienniki pomocy technicznej
 
-Jeśli potrzebujesz dodatkowych danych do rozwiązania lub jeśli potrzebujesz pomocy technicznej firmy Microsoft, uzyskanie poniższych informacji powinno przyspieszyć znalezienie rozwiązania. Uniwersalny zestaw narzędzi Do rozwiązywania problemów opartych na **Windows CMD** pomocy technicznej firmy Microsoft może ułatwić zbieranie odpowiednich dzienników w prosty sposób. Narzędzie i instrukcje dotyczące używania można znaleźć na stronie <https://aka.ms/TssTools>.
+Jeśli potrzebujesz dalszych danych do rozwiązywania problemów lub żądasz pomocy od pomocy technicznej firmy Microsoft, uzyskanie poniższych informacji powinno umożliwić przyspieszenie znajdowania rozwiązania. Zestaw **narzędzi TSS Windows oparty na** uniwersalnym zestawie narzędzi Skrypt rozwiązywania problemów firmy Microsoft może pomóc w prosty sposób zebrać odpowiednie dzienniki. Narzędzie i instrukcje dotyczące używania można znaleźć pod adresem <https://aka.ms/TssTools>.
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 
-[Omówienie: rozdzielanie sieci VPN na Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+[Omówienie: tunelowanie podzielone sieci VPN dla Microsoft 365](microsoft-365-vpn-split-tunnel.md)
 
-[Implementowanie rozdzielania sieci VPN na Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+[Implementowanie tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
 
-[Typowe scenariusze rozdzielania sieci VPN dla sieci Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+[Typowe scenariusze tunelowania podzielonego sieci VPN dla Microsoft 365](microsoft-365-vpn-common-scenarios.md)
 
-[Szczególne zagadnienia dotyczące przesyłania strumienia i wydarzeń na żywo w środowiskach VPN](microsoft-365-vpn-stream-and-live-events.md)
+[Specjalne zagadnienia dotyczące strumienia i wydarzeń na żywo w środowiskach sieci VPN](microsoft-365-vpn-stream-and-live-events.md)
 
-[Microsoft 365 wydajności dla użytkowników w Chinach](microsoft-365-networking-china.md)
+[optymalizacja wydajności Microsoft 365 dla użytkowników z Chin](microsoft-365-networking-china.md)
 
-[Microsoft 365 dotyczące łączności sieciowej](microsoft-365-network-connectivity-principles.md)
+[zasady łączności sieciowej Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
-[Ocenianie Microsoft 365 sieciowej](assessing-network-connectivity.md)
+[Ocena łączności sieciowej na platformie Microsoft 365](assessing-network-connectivity.md)
 
-[Microsoft 365 sieci i dostosowywania wydajności](network-planning-and-performance.md)
+[Microsoft 365 dostrajanie sieci i wydajności](network-planning-and-performance.md)
 
-[Nowoczesne mechanizmy kontroli zabezpieczeń można zapewnić specjalistom zabezpieczeń i informatykom w alternatywnych, obecnie unikatowych scenariuszach pracy zdalnej (blog zespołu zabezpieczeń firmy Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+[Alternatywne sposoby zapewniania przez specjalistów ds. zabezpieczeń i działów IT nowoczesnych mechanizmów kontroli zabezpieczeń w dzisiejszych unikatowych scenariuszach pracy zdalnej (blog zespołu ds. zabezpieczeń firmy Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
-[Zwiększanie wydajności sieci VPN w firmie Microsoft: Windows 10 profilów SIECI VPN w celu umożliwienia automatycznego na połączenia](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+[Zwiększanie wydajności sieci VPN w firmie Microsoft: używanie Windows 10 profilów sieci VPN do zezwalania na połączenia automatyczne](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[Vpn: jak firma Microsoft łączy się ze swoimi pracownikami zdalnymi](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+[Uruchamianie w sieci VPN: jak firma Microsoft utrzymuje połączenie ze swoimi zdalnymi pracownikami](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Sieć globalna firmy Microsoft](/azure/networking/microsoft-global-network)

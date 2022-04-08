@@ -1,5 +1,5 @@
 ---
-title: Dodawanie lub rozszerzanie subskrypcji opłaconej przy użyciu klucza produktu
+title: Dodawanie licencji przy użyciu klucza produktu
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,62 +18,62 @@ ms.custom:
 - TopSMBIssues
 - AdminSurgePortfolio
 search.appverid: MET150
-description: Dowiedz się, jak dodawać licencje do subskrypcji lub rozszerzać ją przy użyciu klucza produktu.
+description: Dowiedz się, jak dodawać licencje do subskrypcji lub rozszerzać ją za pomocą klucza produktu.
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: 4d14f00115059cf28cff71ac126b1f0fdfbb3890
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: df2c4d65f80aedb79e08f6efcab2873256e88d2f
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311869"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715302"
 ---
-# <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Dodawanie lub rozszerzanie subskrypcji opłaconej przy użyciu klucza produktu
+# <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Dodawanie licencji do lub rozszerzanie subskrypcji płatnej za korzystanie z klucza produktu
 
-Przedpłacone licencje są przekazywane jako 25-znakowe kody alfanumeryczne. Po zakupie potrzebnych licencji możesz dodać je do swojej subskrypcji. Możesz także użyć klucza produktu, aby przedłużyć datę wygaśnięcia subskrypcji.
+Przedpłacone licencje są przekazywane jako 25-znakowe kody alfanumeryczne. Po zakupie potrzebnych licencji możesz dodać je do subskrypcji. Możesz również użyć klucza produktu, aby przedłużyć datę wygaśnięcia subskrypcji.
 
 > [!NOTE]
-> Jeśli nie chcesz kupować nowego klucza produktu, zawsze możesz dodać do subskrypcji kartę kredytową lub konto bankowe, aby zapłacić za więcej licencji lub przedłużyć datę wygaśnięcia subskrypcji. Aby uzyskać więcej informacji, zobacz [Odnawianie subskrypcji](../subscriptions/renew-your-subscription.md).
+> Jeśli nie chcesz kupować nowego klucza produktu, zawsze możesz dodać kartę kredytową lub konto bankowe do subskrypcji, aby zapłacić za więcej licencji lub przedłużyć datę wygaśnięcia subskrypcji. Aby uzyskać więcej informacji, zobacz [Odnawianie subskrypcji](../subscriptions/renew-your-subscription.md).
   
 ## <a name="add-licenses-to-your-subscription"></a>Dodawanie licencji do subskrypcji
 
 ::: moniker range="o365-worldwide"
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">z produktami</a> .
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">z produktami</a> .
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Twoje produkty</a>.
 ::: moniker-end
 
-2. Na **karcie Produkty** wybierz subskrypcję, do której chcesz dodać licencje.
+2. Na karcie **Produkty** wybierz subskrypcję, do której chcesz dodać licencje.
 3. Na stronie szczegółów subskrypcji w sekcji **Licencje** wybierz pozycję **Dodaj więcej licencji**.
-4. W **okienku Dodaj więcej licencji wybierz** pozycję Użyj **nowego i nieużywanego klucza produktu, a** następnie wybierz pozycję **Dalej**.
+4. W **okienku Dodawanie większej liczby licencji** wybierz pozycję **Użyj nowego i nieużywanego klucza produktu**, a następnie wybierz pozycję **Dalej**.
 5. Wprowadź klucz produktu, a następnie wybierz pozycję **Dalej**.
     > [!NOTE]
-    > Jeśli masz więcej niż jeden klucz produktu, możesz wybrać pozycję **Dodaj inny klucz produktu, aby** go wprowadzić.
-6. Przejrzyj szczegóły zamówienia, a następnie wybierz pozycję **Zrealizuj**.
+    > Jeśli masz więcej niż jeden klucz produktu, możesz wybrać pozycję **Dodaj inny klucz produktu** , aby je wprowadzić.
+6. Przejrzyj szczegóły zamówienia, a następnie wybierz pozycję **Realizuj**.
   
-## <a name="extend-the-expiration-date-of-your-subscription"></a>Przedłuż datę wygaśnięcia subskrypcji
+## <a name="extend-the-expiration-date-of-your-subscription"></a>Przedłużanie daty wygaśnięcia subskrypcji
 
 ::: moniker range="o365-worldwide"
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">z produktami</a> .
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">z produktami</a> .
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Twoje produkty</a>.
 ::: moniker-end
 
-2. Na **karcie Produkty** wybierz subskrypcję, którą chcesz przedłużyć.
-3. Na stronie szczegółów subskrypcji w sekcji Ustawienia subskrypcji **i płatności** wybierz pozycję **Przedłuż datę zakończenia**.
-4. Na stronie **odnawianie lub dodawanie licencji użytkowników** wybierz pozycję Użyj **nowego i nieużywanego klucza produktu, a** następnie wybierz pozycję **Dalej**.
+2. Na karcie **Produkty** wybierz subskrypcję, którą chcesz rozszerzyć.
+3. Na stronie szczegółów subskrypcji w sekcji **Ustawienia subskrypcji i płatności** wybierz pozycję **Rozszerz datę zakończenia**.
+4. Na stronie **odnawiania lub dodawania licencji użytkownika** wybierz pozycję **Użyj nowego i nieużywanego klucza produktu**, a następnie wybierz pozycję **Dalej**.
 5. Wprowadź klucz produktu, a następnie wybierz pozycję **Dalej**.
     > [!NOTE]
-    > Jeśli masz więcej niż jeden klucz produktu, możesz wybrać pozycję **Dodaj inny klucz produktu, aby** go wprowadzić.
-6. Przejrzyj szczegóły zamówienia, a następnie wybierz pozycję **Zrealizuj**.
+    > Jeśli masz więcej niż jeden klucz produktu, możesz wybrać pozycję **Dodaj inny klucz produktu** , aby je wprowadzić.
+6. Przejrzyj szczegóły zamówienia, a następnie wybierz pozycję **Realizuj**.
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 

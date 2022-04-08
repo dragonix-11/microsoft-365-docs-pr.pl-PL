@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Rejestrowanie inspekcji skrzynki pocztowej jest domyślnie włączone w Microsoft 365 (domyślnie nazywane również domyślnym inspekcją skrzynki pocztowej lub inspekcją skrzynki pocztowej). Oznacza to, że niektóre akcje wykonywane przez właścicieli skrzynek pocztowych, delegatów i administratorów są automatycznie rejestrowane w dzienniku inspekcji skrzynki pocztowej, gdzie można wyszukiwać działania wykonywane w skrzynce pocztowej.
-ms.openlocfilehash: 1f566ee46520047e1bc125e505d53911fb07c912
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 9b3c08850ff0cce14fdce13d496642239e817096
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705346"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714334"
 ---
 # <a name="manage-mailbox-auditing"></a>Zarządzanie inspekcją skrzynki pocztowej
 
@@ -62,10 +62,6 @@ Aby inspekcja skrzynek pocztowych była wyłączona dla określonych skrzynek po
 
 W poniższej tabeli przedstawiono typy skrzynek pocztowych, które są obecnie domyślnie obsługiwane przez inspekcję skrzynki pocztowej:
 
-<br>
-
-****
-
 |Typ skrzynki pocztowej|Obsługiwane|
 |---|:---:|
 |Skrzynki pocztowe użytkownika|![Znacznik wyboru.](../media/checkmark.png)|
@@ -73,7 +69,6 @@ W poniższej tabeli przedstawiono typy skrzynek pocztowych, które są obecnie d
 |skrzynki pocztowe grupy Microsoft 365|![Znacznik wyboru.](../media/checkmark.png)|
 |Skrzynki pocztowe zasobów||
 |Skrzynki pocztowe folderów publicznych||
-|
 
 ## <a name="logon-types-and-mailbox-actions"></a>Typy logowania i akcje skrzynki pocztowej
 
@@ -98,10 +93,6 @@ W poniższej tabeli opisano akcje skrzynki pocztowej dostępne w rejestrowaniu i
 - Gwiazdka ( <sup>\*</sup> ) po znaczniku wyboru wskazuje, że akcja skrzynki pocztowej jest domyślnie rejestrowana dla typu logowania.
 - Pamiętaj, że administrator z uprawnieniami pełnego dostępu do skrzynki pocztowej jest uważany za pełnomocnika.
 
-<br>
-
-****
-
 |Akcja skrzynki pocztowej|Opis|Administrator|Delegata|Właściciel|
 |---|---|:---:|:---:|:---:|
 |**DodajfolderPermissions**|Chociaż ta wartość jest akceptowana jako akcja skrzynki pocztowej, jest już uwzględniona w akcji **UpdateFolderPermissions** i nie jest poddana inspekcji oddzielnie. Innymi słowy, nie używaj tej wartości.||||
@@ -111,15 +102,15 @@ W poniższej tabeli opisano akcje skrzynki pocztowej dostępne w rejestrowaniu i
 |**FolderBind**|Uzyskano dostęp do folderu skrzynki pocztowej. Ta akcja jest również rejestrowana, gdy administrator lub pełnomocnik otworzy skrzynkę pocztową. <br/><br/> **Uwaga**: rekordy inspekcji dla akcji powiązania folderów wykonywanych przez delegatów są konsolidowane. Jeden rekord inspekcji jest generowany dla indywidualnego dostępu do folderu w ciągu 24 godzin.|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru.](../media/checkmark.png)||
 |**HardDelete**|Komunikat został usunięty z folderu Elementy możliwe do odzyskania.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|Użytkownik zalogował się do swojej skrzynki pocztowej.|||![Znacznik wyboru](../media/checkmark.png)|
-|**MailItemsAccessed**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników subskrypcji E5 lub E5 Compliance. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaawansowanego inspekcji w Microsoft 365](set-up-advanced-audit.md). <p> Dostęp do danych poczty są uzyskiwane za pomocą protokołów poczty e-mail i klientów.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
-|**MessageBind**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników E3 (użytkownicy bez subskrypcji dodatków zgodności E5 lub E5). <p> Komunikat został wyświetlony w okienku podglądu lub otwarty przez administratora.|![Znacznik wyboru](../media/checkmark.png)|||
+|**MailItemsAccessed**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników subskrypcji E5 lub E5 Compliance. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaawansowanego inspekcji w Microsoft 365](set-up-advanced-audit.md). <br/><br/> Dostęp do danych poczty są uzyskiwane za pomocą protokołów poczty e-mail i klientów.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
+|**MessageBind**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników E3 (użytkownicy bez subskrypcji dodatków zgodności E5 lub E5). <br/><br/> Komunikat został wyświetlony w okienku podglądu lub otwarty przez administratora.|![Znacznik wyboru](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|Chociaż ta wartość jest akceptowana jako akcja skrzynki pocztowej, jest już uwzględniona w akcji **UpdateFolderPermissions** i nie jest poddana inspekcji oddzielnie. Innymi słowy, nie używaj tej wartości.||||
 |**Przenieść**|Wiadomość została przeniesiona do innego folderu.|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|
 |**MoveToDeletedItems**|Komunikat został usunięty i przeniesiony do folderu Elementy usunięte.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Element oznaczony jako rekord został usunięty nietrwale (przeniesiony do folderu Elementy możliwe do odzyskania). Elementów oznaczonych jako rekordy nie można trwale usunąć (przeczyszczać z folderu Elementy możliwe do odzyskania).|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|
 |**RemoveFolderPermissions**|Chociaż ta wartość jest akceptowana jako akcja skrzynki pocztowej, jest już uwzględniona w akcji **UpdateFolderPermissions** i nie jest poddana inspekcji oddzielnie. Innymi słowy, nie używaj tej wartości.||||
-|**SearchQueryInitiated**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników subskrypcji E5 lub E5 Compliance. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaawansowanego inspekcji w Microsoft 365](set-up-advanced-audit.md). <p> Osoba używa Outlook (Windows, Mac, iOS, Android lub Outlook w sieci Web) lub aplikacji Poczta dla Windows 10 do wyszukiwania elementów w skrzynce pocztowej.|||![Znacznik wyboru](../media/checkmark.png)|
-|**Wyślij**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników subskrypcji E5 lub E5 Compliance. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaawansowanego inspekcji w Microsoft 365](set-up-advanced-audit.md). <p> Użytkownik wysyła wiadomość e-mail, odpowiada na wiadomość e-mail lub przekazuje wiadomość e-mail.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>||![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
+|**SearchQueryInitiated**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników subskrypcji E5 lub E5 Compliance. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaawansowanego inspekcji w Microsoft 365](set-up-advanced-audit.md). <br/><br/> Osoba używa Outlook (Windows, Mac, iOS, Android lub Outlook w sieci Web) lub aplikacji Poczta dla Windows 10 do wyszukiwania elementów w skrzynce pocztowej.|||![Znacznik wyboru](../media/checkmark.png)|
+|**Wyślij**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników subskrypcji E5 lub E5 Compliance. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaawansowanego inspekcji w Microsoft 365](set-up-advanced-audit.md). <br/><br/> Użytkownik wysyła wiadomość e-mail, odpowiada na wiadomość e-mail lub przekazuje wiadomość e-mail.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>||![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Wiadomość została wysłana przy użyciu uprawnienia SendAs. Oznacza to, że inny użytkownik wysłał wiadomość tak, jakby pochodziła od właściciela skrzynki pocztowej.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Wiadomość została wysłana przy użyciu uprawnienia SendOnBehalf. Oznacza to, że inny użytkownik wysłał wiadomość w imieniu właściciela skrzynki pocztowej. Wiadomość wskazuje adresatowi, kto został wysłany w imieniu i kto faktycznie wysłał wiadomość.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Komunikat został trwale usunięty lub usunięty z folderu Elementy usunięte. Elementy usunięte nietrwale są przenoszone do folderu Elementy możliwe do odzyskania.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
@@ -128,7 +119,6 @@ W poniższej tabeli opisano akcje skrzynki pocztowej dostępne w rejestrowaniu i
 |**UpdateComplianceTag**|Do elementu poczty jest stosowana inna etykieta przechowywania (do elementu może być przypisana tylko jedna etykieta przechowywania).|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|
 |**UpdateFolderPermissions**|Zmieniono uprawnienie folderu. Uprawnienia folderu określają, którzy użytkownicy w organizacji mogą uzyskiwać dostęp do folderów w skrzynce pocztowej i wiadomości znajdujących się w tych folderach.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateInboxRules**|Dodano, usunięto lub zmieniono regułę skrzynki odbiorczej. Reguły skrzynki odbiorczej są używane do przetwarzania komunikatów w skrzynce odbiorczej użytkownika na podstawie określonych warunków i wykonywania akcji po spełnieniu warunków reguły, takich jak przenoszenie komunikatu do określonego folderu lub usuwanie komunikatu.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
-|
 
 > [!IMPORTANT]
 > Jeśli akcje skrzynki pocztowej zostały dostosowane do inspekcji dla dowolnego typu logowania *przed* domyślnym włączeniem inspekcji skrzynki pocztowej w organizacji, dostosowane ustawienia zostaną zachowane w skrzynce pocztowej i nie zostaną zastąpione domyślną akcją skrzynki pocztowej zgodnie z opisem w tej sekcji. Aby przywrócić domyślne wartości akcji skrzynki pocztowej inspekcji (co można zrobić w dowolnym momencie), zobacz sekcję [Przywracanie domyślnych akcji skrzynki pocztowej](#restore-the-default-mailbox-actions) w dalszej części tego artykułu.
@@ -141,10 +131,6 @@ W poniższej tabeli opisano akcje skrzynki pocztowej, które są domyślnie reje
 
 Pamiętaj, że administrator z uprawnieniami pełnego dostępu do skrzynki pocztowej grupy Microsoft 365 jest uważany za pełnomocnika.
 
-<br>
-
-****
-
 |Akcja skrzynki pocztowej|Opis|Administrator|Delegata|Właściciel|
 |---|---|:---:|:---:|:---:|
 |**Tworzenie**|Tworzenie elementu kalendarza. Tworzenie, wysyłanie lub odbieranie komunikatu nie jest poddawane inspekcji.|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>||
@@ -154,7 +140,6 @@ Pamiętaj, że administrator z uprawnieniami pełnego dostępu do skrzynki poczt
 |**SendOnBehalf**|Wiadomość została wysłana przy użyciu uprawnienia SendOnBehalf.|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Komunikat został trwale usunięty lub usunięty z folderu Elementy usunięte. Elementy usunięte nietrwale są przenoszone do folderu Elementy możliwe do odzyskania.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
 |**Aktualizacja**|Komunikat lub dowolna z jego właściwości została zmieniona.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
-|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Sprawdź, czy domyślne akcje skrzynki pocztowej są rejestrowane dla każdego typu logowania
 
@@ -342,13 +327,13 @@ Wartość **True** wskazuje, że rejestrowanie inspekcji skrzynki pocztowej jest
   - Ręcznie włącz inspekcję skrzynek pocztowych w poszczególnych skrzynkach pocztowych (uruchom polecenie `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). Po wykonaniu tej czynności możesz użyć przeszukiwania dzienników inspekcji w Centrum zgodności platformy Microsoft 365 lub za pośrednictwem interfejsu API działania zarządzania Office 365.
 
     > [!NOTE]
-    > Jeśli inspekcja skrzynki pocztowej jest już widoczna jako włączona w skrzynce pocztowej, ale wyszukiwanie nie zwraca żadnych wyników, zmień wartość parametru _AuditEnabled_ na `$false` , a następnie z powrotem na `$true`.
+    > Jeśli inspekcja skrzynki pocztowej jest już widoczna jako włączona w skrzynce pocztowej, ale wyszukiwanie nie zwraca żadnych wyników, zmień wartość parametru *AuditEnabled* na `$false` , a następnie z powrotem na `$true`.
 
   - Użyj następujących poleceń cmdlet w programie Exchange Online programu PowerShell:
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) , aby wyszukać dziennik inspekcji skrzynki pocztowej dla określonych użytkowników.
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) , aby wyszukać dziennik inspekcji skrzynki pocztowej dla określonych użytkowników i wysłać wyniki za pośrednictwem poczty e-mail do określonych adresatów.
 
-  - Użyj <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange (EAC)</a> w Exchange Online, aby wykonać następujące czynności:
+  - Użyj centrum administracyjnego Exchange (EAC) w Exchange Online, aby wykonać następujące czynności:
     - [Eksportowanie dzienników inspekcji skrzynki pocztowej](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
     - [Uruchamianie raportu dostępu do skrzynki pocztowej innej niż właściciel](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
