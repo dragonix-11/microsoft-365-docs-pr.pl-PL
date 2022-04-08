@@ -1,5 +1,5 @@
 ---
-title: Migrowanie z usługi ochrony innej firmy do usługi Ochrona usługi Office 365 w usłudze Microsoft Defender
+title: Migrowanie z usługi ochrony innej firmy do Ochrona usługi Office 365 w usłudze Microsoft Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,72 +16,72 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Dowiedz się, jak przeprowadzić migrację z usług i urządzeń ochrony innych firm, takich jak Google Postini, Zapora antywirusowa i spam Barracuda lub Cisco IronPort, w celu Ochrona usługi Office 365 w usłudze Microsoft Defender ochrony.
+description: Poznaj właściwy sposób migracji z usług ochrony innych firm lub urządzeń, takich jak Google Postini, Barracuda Spam and Virus Firewall lub Cisco IronPort, aby Ochrona usługi Office 365 w usłudze Microsoft Defender ochronę.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba82621e76665ee94d2a182e777ad1d222ef8e56
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: b00051effd6ee77fd29ba0a5a07ee27c9113a439
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477044"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704828"
 ---
-# <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>Migrowanie z usługi ochrony innej firmy lub urządzenia do usługi Ochrona usługi Office 365 w usłudze Microsoft Defender
+# <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>Migrowanie z usługi ochrony innej firmy lub urządzenia do Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 **Dotyczy**
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 
-Jeśli masz już istniejącą usługę ochrony lub urządzenie innej firmy, które znajduje się przed programem Microsoft 365, możesz przeprowadzić migrację ochrony do usługi Ochrona usługi Office 365 w usłudze Microsoft Defender  w celu uzyskania korzyści skonsolidowanych funkcji zarządzania, potencjalnie zmniejszonych kosztów (przy użyciu produktów, za które już płacisz) oraz dla dorosłych i zintegrowanej ochrony zabezpieczeń. Aby uzyskać więcej informacji, zobacz [Program Microsoft Defender for Office](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
+Jeśli masz już istniejącą usługę ochrony innej firmy lub urządzenie znajdujące się przed Microsoft 365, możesz użyć tego przewodnika do migracji ochrony w celu Ochrona usługi Office 365 w usłudze Microsoft Defender  aby uzyskać korzyści wynikające ze skonsolidowanego środowiska zarządzania, potencjalnie obniżonych kosztów (przy użyciu produktów, za które już płacisz) oraz dojrzałego produktu ze zintegrowaną ochroną bezpieczeństwa. Aby uzyskać więcej informacji, zobacz [Microsoft Defender for Office](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
 
-W tym przewodniku przedstawiono konkretne kroki migracji z akcjami oraz podano następujące fakty:
+Ten przewodnik zawiera konkretne i praktyczne kroki migracji oraz przyjmuje następujące fakty:
 
-- Masz już Microsoft 365 pocztowe, ale obecnie korzystasz z usługi lub urządzenia innej firmy do ochrony poczty e-mail. Poczta z Internetu przepływa za pośrednictwem usługi ochrony przed dostarczeniem do Twojej organizacji usługi Microsoft 365, Microsoft 365 ochrona jest jak najniżajsza (nigdy nie jest całkowicie wyłączona, na przykład zawsze jest wymuszana ochrona przed złośliwym oprogramowaniem).
+- Masz już Microsoft 365 skrzynki pocztowe, ale obecnie używasz usługi lub urządzenia innej firmy do ochrony poczty e-mail. Poczta z Internetu przepływa przez usługę ochrony przed dostarczeniem do organizacji Microsoft 365, a ochrona Microsoft 365 jest jak najmniejsza (nigdy nie jest całkowicie wyłączona, na przykład ochrona przed złośliwym oprogramowaniem jest zawsze wymuszana).
 
-  :::image type="content" source="../../media/mdo-migration-before.png" alt-text="Poczta przepływa z Internetu przez usługę lub urządzenie ochrony innej firmy przed dostarczeniem do Microsoft 365" lightbox="../../media/mdo-migration-before.png":::
+  :::image type="content" source="../../media/mdo-migration-before.png" alt-text="Poczta przepływa z Internetu za pośrednictwem usługi ochrony lub urządzenia innej firmy przed dostarczeniem do Microsoft 365" lightbox="../../media/mdo-migration-before.png":::
 
-- Ochrona przez użytkowników nie jest już w fazie badania i rozważań Ochrona usługi Office 365 w usłudze Defender. Jeśli musisz ocenić Ochrona usługi Office 365 w usłudze Defender zdecydować, czy jest odpowiedni dla Twojej organizacji, zalecamy rozważenie trybu [oceny](office-365-evaluation.md).
+- Jesteś poza fazą badania i rozważania dotyczącą ochrony przez Ochrona usługi Office 365 w usłudze Defender. Jeśli musisz ocenić Ochrona usługi Office 365 w usłudze Defender, aby zdecydować, czy jest to odpowiednie dla Twojej organizacji, zalecamy rozważenie opcji opisanych w [temacie Wypróbuj Ochrona usługi Office 365 w usłudze Microsoft Defender](try-microsoft-defender-for-office-365.md).
 
-- Masz już kupione Ochrona usługi Office 365 w usłudze Defender licencji.
+- Masz już zakupione licencje Ochrona usługi Office 365 w usłudze Defender.
 
-- Należy wycofać istniejącą usługę ochrony innej firmy, co oznacza, że ostatecznie trzeba będzie wskazać rekordy MX domenom poczty e-mail, aby Microsoft 365. Gdy to zrobisz, poczta z Internetu będzie przepływać bezpośrednio do usługi Microsoft 365 i będzie chroniona wyłącznie przez usługę Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Defender.
+- Musisz wycofać istniejącą usługę ochrony innej firmy, co oznacza, że ostatecznie musisz wskazać rekordy MX dla domen poczty e-mail, aby Microsoft 365. Gdy skończysz, poczta z Internetu będzie przepływać bezpośrednio do Microsoft 365 i będzie chroniona wyłącznie przez Exchange Online Protection (EOP) i Ochrona usługi Office 365 w usłudze Defender.
 
-  :::image type="content" source="../../media/mdo-migration-after.png" alt-text="Wiadomość e-mail przepływa z Internetu do Microsoft 365" lightbox="../../media/mdo-migration-after.png":::
+  :::image type="content" source="../../media/mdo-migration-after.png" alt-text="Poczta przepływa z Internetu do Microsoft 365" lightbox="../../media/mdo-migration-after.png":::
 
-Wyeliminowanie istniejącej usługi ochrony na Ochrona usługi Office 365 w usłudze Defender jest dużym krokiem, który nie powinien być zbyt jasny i nie należy przedzierać się w celu zmiany. Wskazówki w tym przewodniku po migracji pomogą Uporządkowanie ochrony przy minimalnych zakłóceniach w pracy użytkowników.
+Wyeliminowanie istniejącej usługi ochrony na rzecz Ochrona usługi Office 365 w usłudze Defender jest dużym krokiem, którego nie należy lekceważyć ani spieszyć się z wprowadzaniem zmian. Wskazówki zawarte w tym przewodniku migracji pomogą Ci w uporządkowaniu przenoszenia ochrony z minimalnymi zakłóceniami dla użytkowników.
 
-Bardzo wysokie etapy migracji przedstawiono na poniższym diagramie. Rzeczywiste kroki znajdują się w sekcji o nazwie Proces [migracji w](#the-migration-process) dalszej części tego artykułu.
+Bardzo ogólne kroki migracji przedstawiono na poniższym diagramie. Rzeczywiste kroki są wymienione w sekcji o nazwie [Proces migracji](#the-migration-process) w dalszej części tego artykułu.
 
 :::image type="content" source="../../media/mdo-migration-overview.png" alt-text="Proces migracji z rozwiązania ochrony innej firmy lub urządzenia do Ochrona usługi Office 365 w usłudze Defender" lightbox="../../media/mdo-migration-overview.png":::
 
-## <a name="why-use-the-steps-in-this-guide"></a>Dlaczego warto skorzystać z instrukcji instrukcjami w tym przewodniku?
+## <a name="why-use-the-steps-in-this-guide"></a>Dlaczego warto skorzystać z kroków opisanych w tym przewodniku?
 
-W branży IT niespodzianek na ogół niespodziewać są złe. Wystarczy przerzucić rekordy MX, aby wskazać Microsoft 365 bez uprzedniego i przemyślanego testowania spowoduje wiele niespodzianek. Przykład:
+W branży IT niespodzianki są na ogół złe. Po prostu przerzucanie rekordów MX, aby wskazać Microsoft 365 bez wcześniejszych i przemyślanych testów, spowoduje wiele niespodzianek. Przykład:
 
-- Ty lub Twoi poprzedniki prawdopodobnie poświęcili dużo czasu i wysiłku na dostosowanie istniejącej usługi ochrony w celu optymalnego dostarczania poczty (czyli zablokowanie tego, co należy zablokować, i zezwolenie na to, co jest potrzebne). Niemal gwarantowane jest, że nie wszystkie dostosowania bieżącej usługi ochrony są wymagane w Ochrona usługi Office 365 w usłudze Defender. Jest również bardzo możliwe, Ochrona usługi Office 365 w usłudze Defender nowych problemów (zezwalania lub bloków), które nie działy się lub nie były wymagane w bieżącej usłudze ochrony.
-- Pracownicy pomocy technicznej i zabezpieczeń muszą wiedzieć, co należy zrobić w Ochrona usługi Office 365 w usłudze Defender. Jeśli na przykład użytkownik skarży się na brak wiadomości, to czy pomoc do pomocy technicznej wie, gdzie lub jak ją szukać? Prawdopodobnie zaznajomią się oni z narzędziami w istniejącej usłudze ochrony, ale co z narzędziami w programie Ochrona usługi Office 365 w usłudze Defender?
+- Ty lub Twoi poprzednicy prawdopodobnie poświęcacie dużo czasu i wysiłku, dostosowując istniejącą usługę ochrony w celu optymalnego dostarczania poczty (innymi słowy blokując to, co należy zablokować, i zezwalając na to, co musi być dozwolone). Niemal gwarantowana pewność, że nie wszystkie dostosowania w bieżącej usłudze ochrony są wymagane w Ochrona usługi Office 365 w usłudze Defender. Istnieje również bardzo możliwe, że Ochrona usługi Office 365 w usłudze Defender wprowadzi nowe problemy (zezwalanie lub bloki), które nie wystąpiły lub nie były wymagane w bieżącej usłudze ochrony.
+- Dział pomocy technicznej i pracownicy ochrony muszą wiedzieć, co robić w Ochrona usługi Office 365 w usłudze Defender. Jeśli na przykład użytkownik skarży się na brakujący komunikat, czy dział pomocy technicznej wie, gdzie i jak go szukać? Prawdopodobnie sprawdzają, czy są zaznajomieni z narzędziami w istniejącej usłudze ochrony, ale co z narzędziami w Ochrona usługi Office 365 w usłudze Defender?
 
-Z kolei jeśli będziesz postępować zgodnie z instrukcjami w tym przewodniku migracji, otrzymasz następujące korzyści dla migracji:
+Jeśli natomiast wykonasz kroki opisane w tym przewodniku migracji, uzyskasz następujące wymierne korzyści dla migracji:
 
-- Minimalne zakłócenia w pracy użytkowników.
-- Dane celu Ochrona usługi Office 365 w usłudze Defender, których można użyć podczas raportów dotyczących postępu migracji i jej powodzenia w zarządzaniu.
-- Wczesne zaangażowanie i instrukcje dla pracowników pomocy technicznej i personelu zabezpieczającego.
+- Minimalne zakłócenia dla użytkowników.
+- Obiektywne dane z Ochrona usługi Office 365 w usłudze Defender, których można używać podczas raportowania postępu i powodzenia migracji do zarządzania.
+- Wczesne zaangażowanie i instrukcje dla personelu pomocy technicznej i pracowników ochrony.
 
-Im więcej poznasz tego, jak Ochrona usługi Office 365 w usłudze Defender wpłynie na organizację, tym lepsze przejście będzie dla użytkowników, pracowników pomocy technicznej, pracowników działu bezpieczeństwa i zarządzania.
+Tym bardziej zapoznasz się ze sposobem, w jaki Ochrona usługi Office 365 w usłudze Defender wpłynie na organizację, tym lepsze będzie przejście dla użytkowników, pracowników pomocy technicznej, pracowników ochrony i zarządzania.
 
-Ten przewodnik po migracji udostępnia plan stopniowo "obracania pokrętła", który pozwala monitorować i testować, jak program Ochrona usługi Office 365 w usłudze Defender wpływa na użytkowników i ich pocztę e-mail, dzięki czemu możesz szybko reagować na napotkane problemy.
+Ten przewodnik migracji zawiera plan stopniowego "obracania wybierania", dzięki czemu można monitorować i testować wpływ Ochrona usługi Office 365 w usłudze Defender na użytkowników i ich wiadomości e-mail, aby można było szybko reagować na wszelkie napotkane problemy.
 
 ## <a name="the-migration-process"></a>Proces migracji
 
-Proces migracji z usługi ochrony innej firmy do usługi Ochrona usługi Office 365 w usłudze Defender można podzielić na trzy fazy zgodnie z opisem w poniższej tabeli:
+Proces migracji z usługi ochrony innej firmy do Ochrona usługi Office 365 w usłudze Defender można podzielić na trzy fazy, zgodnie z opisem w poniższej tabeli:
 
-:::image type="content" source="../../media/phase-diagrams/migration-phases.png" alt-text="Proces migrowania do Ochrona usługi Office 365 w usłudze Defender" lightbox="../../media/phase-diagrams/migration-phases.png":::
+:::image type="content" source="../../media/phase-diagrams/migration-phases.png" alt-text="Proces migracji do Ochrona usługi Office 365 w usłudze Defender" lightbox="../../media/phase-diagrams/migration-phases.png":::
 
-|Faza|Opis|
+|Fazy|Opis|
 |---|---|
-|[Przygotowywanie do migracji](migrate-to-defender-for-office-365-prepare.md)|<ol><li>[Inwentaryzacja ustawień w istniejącej usłudze ochrony](migrate-to-defender-for-office-365-prepare.md#inventory-the-settings-at-your-existing-protection-service)</li><li>[Sprawdzanie istniejącej konfiguracji ochrony w programie Microsoft 365](migrate-to-defender-for-office-365-prepare.md#check-your-existing-protection-configuration-in-microsoft-365)</li><li>[Sprawdzanie konfiguracji routingu poczty](migrate-to-defender-for-office-365-prepare.md#check-your-mail-routing-configuration)</li><li>[Przenoszenie funkcji modyfikujących wiadomości do Microsoft 365](migrate-to-defender-for-office-365-prepare.md#move-features-that-modify-messages-into-microsoft-365)</li><li>[Definiowanie spamu i zbiorczego obsługi użytkowników](migrate-to-defender-for-office-365-prepare.md#define-spam-and-bulk-user-experiences)</li><li>[Identyfikowanie i wyznaczanie kont priorytetowych](migrate-to-defender-for-office-365-prepare.md#identify-and-designate-priority-accounts)</li></ol>|
-|[Konfigurowanie Ochrona usługi Office 365 w usłudze Defender](migrate-to-defender-for-office-365-setup.md)|<ol><li>[Tworzenie grup dystrybucyjnych dla użytkowników pilotażowych](migrate-to-defender-for-office-365-setup.md#step-1-create-distribution-groups-for-pilot-users)</li><li>[Konfigurowanie przesyłania użytkowników do raportowania wiadomości użytkownika](migrate-to-defender-for-office-365-setup.md#step-2-configure-user-submission-for-user-message-reporting)</li><li>[Obsługa lub tworzenie reguły przepływu poczty SCL=-1](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule)</li><li>[Konfigurowanie ulepszonego filtrowania dla łączników](migrate-to-defender-for-office-365-setup.md#step-4-configure-enhanced-filtering-for-connectors)</li><li>[Tworzenie zasad ochrony pilotażowej](migrate-to-defender-for-office-365-setup.md#step-5-create-pilot-protection-policies)</li></ol>|
-|[Dołączanie do Ochrona usługi Office 365 w usłudze Defender](migrate-to-defender-for-office-365-onboard.md)|<ol><li>[Rozpoczynanie dołączania do Teams](migrate-to-defender-for-office-365-onboard.md#step-1-begin-onboarding-security-teams)</li><li>[(Opcjonalnie) Wykluczanie użytkowników pilotażowych z filtrowania według istniejącej usługi ochrony](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)</li><li>[Dostosowywanie spoof intelligence](migrate-to-defender-for-office-365-onboard.md#step-3-tune-spoof-intelligence)</li><li>[Dostosowywanie ochrony personifikacji i analizy skrzynki pocztowej](migrate-to-defender-for-office-365-onboard.md#step-4-tune-impersonation-protection-and-mailbox-intelligence)</li><li>[Używanie danych  przysyłanych przez użytkowników do mierzenia i dostosowania](migrate-to-defender-for-office-365-onboard.md#step-5-use-data-from-user-submissions-to-measure-and-adjust)</li><li>[(Opcjonalnie) Dodawanie kolejnych użytkowników do pilotażu i iteratu](migrate-to-defender-for-office-365-onboard.md#step-6-optional-add-more-users-to-your-pilot-and-iterate)</li><li>[Rozszerzanie Microsoft 365 na wszystkich użytkowników i wyłączanie reguły przepływu poczty SCL=-1](migrate-to-defender-for-office-365-onboard.md#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)</li><li>[Przełączanie rekordów MX](migrate-to-defender-for-office-365-onboard.md#step-8-switch-your-mx-records)</li></ol>|
+|[Przygotowanie do migracji](migrate-to-defender-for-office-365-prepare.md)|<ol><li>[Spis ustawień w istniejącej usłudze ochrony](migrate-to-defender-for-office-365-prepare.md#inventory-the-settings-at-your-existing-protection-service)</li><li>[Sprawdź istniejącą konfigurację ochrony w Microsoft 365](migrate-to-defender-for-office-365-prepare.md#check-your-existing-protection-configuration-in-microsoft-365)</li><li>[Sprawdzanie konfiguracji routingu poczty](migrate-to-defender-for-office-365-prepare.md#check-your-mail-routing-configuration)</li><li>[Przenoszenie funkcji modyfikujące komunikaty do Microsoft 365](migrate-to-defender-for-office-365-prepare.md#move-features-that-modify-messages-into-microsoft-365)</li><li>[Definiowanie środowiska spamu i użytkowników zbiorczych](migrate-to-defender-for-office-365-prepare.md#define-spam-and-bulk-user-experiences)</li><li>[Identyfikowanie i wyznaczanie kont priorytetów](migrate-to-defender-for-office-365-prepare.md#identify-and-designate-priority-accounts)</li></ol>|
+|[Konfigurowanie Ochrona usługi Office 365 w usłudze Defender](migrate-to-defender-for-office-365-setup.md)|<ol><li>[Tworzenie grup dystrybucyjnych dla użytkowników pilotażowych](migrate-to-defender-for-office-365-setup.md#step-1-create-distribution-groups-for-pilot-users)</li><li>[Konfigurowanie przesyłania przez użytkownika na potrzeby raportowania komunikatów użytkowników](migrate-to-defender-for-office-365-setup.md#step-2-configure-user-submission-for-user-message-reporting)</li><li>[Obsługa lub tworzenie reguły przepływu poczty SCL=-1](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule)</li><li>[Konfigurowanie rozszerzonego filtrowania dla łączników](migrate-to-defender-for-office-365-setup.md#step-4-configure-enhanced-filtering-for-connectors)</li><li>[Tworzenie zasad ochrony pilotażowej](migrate-to-defender-for-office-365-setup.md#step-5-create-pilot-protection-policies)</li></ol>|
+|[Dołączanie do Ochrona usługi Office 365 w usłudze Defender](migrate-to-defender-for-office-365-onboard.md)|<ol><li>[Rozpoczynanie dołączania Teams zabezpieczeń](migrate-to-defender-for-office-365-onboard.md#step-1-begin-onboarding-security-teams)</li><li>[(Opcjonalnie) Wykluczenie użytkowników pilotażowych z filtrowania według istniejącej usługi ochrony](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)</li><li>[Dostrajanie inteligencji fałszowania](migrate-to-defender-for-office-365-onboard.md#step-3-tune-spoof-intelligence)</li><li>[Dostrajanie ochrony przed personifikacją i analizy skrzynek pocztowych](migrate-to-defender-for-office-365-onboard.md#step-4-tune-impersonation-protection-and-mailbox-intelligence)</li><li>[Mierzenie i dostosowywanie danych przesyłanych przez użytkowników przy użyciu danych przesyłanych przez użytkownika](migrate-to-defender-for-office-365-onboard.md#step-5-use-data-from-user-submissions-to-measure-and-adjust)</li><li>[(Opcjonalnie) Dodawanie większej liczby użytkowników do pilotażu i iterowanie](migrate-to-defender-for-office-365-onboard.md#step-6-optional-add-more-users-to-your-pilot-and-iterate)</li><li>[Rozszerzanie ochrony Microsoft 365 na wszystkich użytkowników i wyłączanie reguły przepływu poczty SCL=-1](migrate-to-defender-for-office-365-onboard.md#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)</li><li>[Przełączanie rekordów MX](migrate-to-defender-for-office-365-onboard.md#step-8-switch-your-mx-records)</li></ol>|
 
 ## <a name="next-step"></a>Następny krok
 
-- Przejdź do [fazy 1. Przygotowywanie](migrate-to-defender-for-office-365-prepare.md).
+- Przejdź do [fazy 1: Przygotowanie](migrate-to-defender-for-office-365-prepare.md).

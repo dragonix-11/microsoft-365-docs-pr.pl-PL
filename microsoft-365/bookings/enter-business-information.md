@@ -1,5 +1,5 @@
 ---
-title: Wprowadź informacje służbowe
+title: Wprowadź informacje o firmie
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,79 +8,82 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
-description: Postępuj zgodnie z tymi instrukcjami, aby utworzyć stronę O nas, w tym nazwę firmy, adres, numer telefonu, adres URL witryny internetowej, logo i godziny pracy w aplikacji Microsoft Bookings.
-ms.openlocfilehash: 313e85166c02afa5a52f4cd4fb6cf25a7077ad26
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Postępuj zgodnie z tymi instrukcjami, aby utworzyć stronę Informacje o nas, w tym nazwę firmy, adres, numer telefonu, adres URL witryny internetowej, logo i godziny pracy w Microsoft Bookings.
+ms.openlocfilehash: 9931a5c00147a6f6b9b0cd4ef9550d783b8771fd
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984557"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715346"
 ---
-# <a name="enter-your-business-information"></a>Wprowadź informacje służbowe
-
-W aplikacji Microsoft Bookings strona informacji służbowych w aplikacji sieci Web zawiera wszystkie szczegóły, które zwykle znajdują się na stronie "O nas" firmy. Są to między innymi odpowiednie imię i nazwisko, adres, numer telefonu, adres URL witryny sieci Web, adres URL zasad ochrony prywatności, logo i godziny pracy.
-
-Informacje podane w tym miejscu będą wyświetlane na stronie klientów i klientów do rezerwowania terminów (znanej jako strona rezerwacji) oraz w wiadomościach i przypomnieniach wysyłanych do nich przez usługę Bookings. Przykład tych informacji na stronie rezerwacji jest wyróżniony poniżej.
-
-   ![Obraz przykładowej strony informacji służbowych w uwitrynie Microsoft Bookings.](../media/bookings-business-info.png)
+# <a name="enter-your-business-information"></a>Wprowadź informacje o firmie
 
 > [!NOTE]
-> Aby rozpocząć, zobacz [Uzyskiwanie dostępu do usługi Microsoft Bookings](get-access.md). Aby włączyć lub wyłączyć usługę Bookings, zobacz Włączanie lub wyłączanie aplikacji [Bookings dla organizacji](turn-bookings-on-or-off.md).
+> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
-## <a name="provide-business-name-and-contact-information"></a>Podaj nazwę firmy i informacje kontaktowe
+W Microsoft Bookings strona Informacje biznesowe w aplikacji internetowej zawiera wszystkie szczegóły, które zwykle można znaleźć na stronie "Informacje o nas" firmy. Te szczegóły obejmują odpowiednią nazwę, adres, numer telefonu, adres URL witryny internetowej, adres URL zasad ochrony prywatności, logo i godziny pracy.
 
-1. W Microsoft 365 kliknij przycisk Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
+Informacje przedstawione w tym miejscu zostaną wyświetlone na stronie używanej przez klientów i klientów do rezerwacji terminów (znanej jako strona rezerwacji) oraz w wiadomościach i przypomnieniach wysyłanych do nich przez Bookings. Przykład tych informacji na stronie rezerwacji został wyróżniony poniżej.
 
-1. W okienku nawigacji **wybierz pozycję Ustawienia** ->  **informacji o programie Business**.
+   ![Obraz przedstawiający przykład strony Informacje biznesowe w Microsoft Bookings.](../media/bookings-business-info.png)
 
-1. W sekcji **Podstawowe szczegóły** wprowadź nazwę firmy, adres i numer telefonu, których chcesz używać w kalendarzu aplikacji Bookings.
+> [!NOTE]
+> Aby rozpocząć, zobacz [Uzyskiwanie dostępu do Microsoft Bookings](get-access.md). Aby włączyć lub wyłączyć Bookings, zobacz [Włączanie lub wyłączanie Bookings dla organizacji](turn-bookings-on-or-off.md).
 
-:::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Zrzut ekranu: strona do wprowadzania podstawowych informacji służbowych":::
+## <a name="provide-business-name-and-contact-information"></a>Podaj nazwę biznesową i informacje kontaktowe
 
-W **oknie Wysyłanie odpowiedzi klientów** na wpisz preferowany adres e-mail, pod którym będą przekazywane odpowiedzi e-mail na potwierdzenia rezerwacji i przypomnienia.
+1. W Microsoft 365 wybierz pozycję Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
 
-W polu **Adres URL** witryny sieci Web wprowadź adres URL strony głównej firmy.
+1. W okienku nawigacji wybierz pozycję **KalendarzZasadność**  ->  w okienku po lewej stronie.
 
-Wprowadź zasady **ochrony prywatności** i **warunki & url** warunków.
+1. W sekcji **Szczegóły podstawowe** wprowadź nazwę firmy, adres i numer telefonu, którego chcesz użyć dla kalendarza Bookings.
 
-1. Jeśli logo **firmy** nie zostało jeszcze przekazane do aplikacji Bookings, dodaj logo firmy w sekcji Logo firmy.
+:::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Zrzut ekranu: Strona, aby wprowadzić podstawowe informacje biznesowe":::
 
-1. W **sekcji Ustawianie godzin pracy** ustaw godziny pracy jako godziny pracy. Są to godziny, do których wszystkie rezerwacje są ograniczone. Dodatkowe ograniczenia czasowe dotyczące terminu, które można zarezerwować, można ustawić dla każdej usługi i dla każdego członka personelu na stronach Usługi  **i Personel**.
+W **polu Wyślij odpowiedzi klienta wpisz** preferowany adres e-mail, na którym należy przesłać odpowiedzi e-mail na potwierdzenie rezerwacji i przypomnienia.
 
-Na stronie Informacje służbowe w obszarze Godziny pracy wybierz godziny rozpoczęcia i zakończenia dla każdego dnia za pomocą menu rozwijanych. Kliknij, **+** aby dodać selektory czasu rozpoczęcia i zakończenia.
+W polu **Adres URL witryny sieci Web** wprowadź adres URL strony głównej twojej firmy.
 
-Domyślnie godziny pracy w aplikacji Bookings są ustawione na godziny 8:00. do 17:00, od poniedziałku do piątku. Czas jest podany w odstępach 15-minutowych. W aplikacji Bookings jest używany zegar 12-godzinny.
+Wprowadź adresy URL **zasad ochrony prywatności** i **warunków & warunków** .
+
+1. Jeśli logo firmy nie zostało jeszcze przekazane do aplikacji Bookings, dodaj logo biznesowe w sekcji **Logo** firmy.
+
+1. W sekcji **Ustawianie godzin pracy** ustaw godziny pracy na godziny pracy. Są to godziny, do których wszystkie rezerwacje są ograniczone. Dodatkowe ograniczenia czasowe dotyczące rezerwacji terminów można ustawić dla każdej usługi i dla każdego pracownika na stronach **Usług** i **Personelu** .
+
+Na stronie Informacje biznesowe w obszarze Godziny pracy użyj list rozwijanych, aby wybrać godziny rozpoczęcia i zakończenia dla każdego dnia. Kliknij **+** , aby dodać selektory czasu rozpoczęcia i zakończenia.
+
+Domyślnie godziny pracy w aplikacji Bookings są ustawione na godzinę 8:00. do 17:00, od poniedziałku do piątku. Czasy są udostępniane w odstępach 15 minut. Aplikacja Bookings używa zegara 12-godzinnego.
 
 1. Wybierz **Zapisz**.
 
-### <a name="how-to-set-hours-for-a-split-shift"></a>Jak ustawić godziny dla podzielonej zmiany
+### <a name="how-to-set-hours-for-a-split-shift"></a>Jak ustawić godziny dla zmiany podzielonej
 
-Być może musisz zablokować część każdego dnia lub tygodnia, aby odbywać się spotkania pracowników, aktualizować spis lub zajmować się innymi szczegółami arytmicznie biznesowymi. Aplikacja Bookings pozwala ograniczyć terminy klientów do określonych przedziale czasu.
+Może być konieczne zablokowanie części każdego dnia lub tygodnia, aby mieć spotkania pracowników, zaktualizować spis lub zająć się innymi szczegółami dotyczącymi rytmu działalności. Aplikacja Bookings umożliwia ograniczenie terminów klientów do określonych przedziałów czasu.
 
-Na przykład w każdy czwartek odbywają się spotkania personelu w godzinach od 1 do 2:30 i chcesz zablokować ten czas, aby wszyscy członkowie personelu mieli dostęp do tych spotkań. W tym celu:
+Na przykład spotkania personelu odbywają się w każdy czwartek od godziny 1 do 2:30 i chcesz zablokować ten czas, aby wszyscy pracownicy mogli uczestniczyć. W tym celu:
 
-1. Na stronie Informacje służbowe w obszarze Godziny pracy wybierz godziny rozpoczęcia i zakończenia dla czwartek. W tym przykładzie ustawiono godziny 8:00. do 13:00
+1. Na stronie Informacje biznesowe w obszarze Godziny pracy wybierz godzinę rozpoczęcia i zakończenia dla czwartków. W tym przykładzie ustawimy 8:00. do godz.
 
-1. Wybierz pozycję **+** , aby utworzyć nowy wiersz w czwartek.
+1. Wybierz **+** , aby utworzyć nowy wiersz na czwartek.
 
-   ![Obraz interfejsu użytkownika godzin pracy.](../media/bookings-split-shift.png)
+   ![Obraz przedstawiający interfejs użytkownika godzin pracy.](../media/bookings-split-shift.png)
 
-1. W nowym wierszu wybierz pozycję 14:30. na czas rozpoczęcia i 18:00 na czas zakończenia.
+1. W nowym wierszu wybierz pozycję 14:30. dla godziny rozpoczęcia i 18:00 na czas zakończenia.
 
-   ![Obraz interfejsu użytkownika godzin pracy z dodanymi godzinami.](../media/bookings-split-shift-hours.png)
+   ![Obraz przedstawiający interfejs użytkownika godzin pracy z dodanymi godzinami.](../media/bookings-split-shift-hours.png)
 
 1. Wybierz Zapisz.
 
-    Gdy klient przejdzie do twojej strony rezerwacji, zobaczy, że Twoja firma jest zamknięta od 1 do 2:30 w czwartek.
+    Gdy klient przejdzie do strony rezerwacji, zobaczy, że Twoja firma jest zamknięta od 1 do 2:30 w czwartki.
 
 ## <a name="upload-your-logo"></a>Upload logo
 
-Jeśli logo firmy nie zostało jeszcze przekazane do aplikacji Bookings, możesz to zrobić na stronie Informacje służbowe.
+Jeśli logo firmy nie zostało jeszcze przekazane do aplikacji Bookings, możesz to zrobić na stronie Informacje biznesowe.
 
-1. Na stronie Informacje służbowe w obszarze Upload wybierz pozycję **Zmień**.
+1. Na stronie Informacje biznesowe w obszarze logo Upload wybierz pozycję **Zmień**.
 
 1. Wybierz **Upload zdjęcie**.
 
-   ![Obraz przycisku przekaż zdjęcie.](../media/bookings-upload-photo.png)
+   ![Obraz przedstawiający przycisk przekazywania zdjęcia.](../media/bookings-upload-photo.png)
 
 1. Wybierz **Zapisz**.

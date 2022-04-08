@@ -1,5 +1,5 @@
 ---
-title: Informacje o numerach rejestracji i w obszarze powiadomień o recenzji
+title: Informacje o numerach rejestracyjnych i powiadomieniach o niedocenieniu
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,49 +18,49 @@ ms.custom:
 - commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
-description: Dowiedz się więcej na temat numerów rejestracji i powiadomień w trakcie przeglądania podczas zakupu produktów lub usług firmy Microsoft.
+description: Dowiedz się więcej o numerach rejestracyjnych i powiadomieniach o niedocenieniu podczas zakupu produktów lub usług firmy Microsoft.
 ms.date: 02/02/2022
-ms.openlocfilehash: 1f8efbbacfcccf6e6a654d150fa77ecef6dc7234
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f287903ae9cded49a81e1c775388e579f2a4f0b8
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320205"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714202"
 ---
-# <a name="about-registration-numbers-and-under-review-notifications"></a>Informacje o numerach rejestracji i w obszarze powiadomień o recenzji
+# <a name="about-registration-numbers-and-under-review-notifications"></a>Informacje o numerach rejestracyjnych i powiadomieniach przeglądowych
 
 Ten artykuł dotyczy tylko klientów komercyjnych, którzy kupują lub aktywują produkty lub usługi bezpośrednio od firmy Microsoft. Ten artykuł nie dotyczy klientów licencjonowania zbiorowego ani dostawców rozwiązań w chmurze (CSP), którzy pracują bezpośrednio z partnerem.
 
-## <a name="what-is-a-registration-number"></a>Co to jest numer rejestracji?  
+## <a name="what-is-a-registration-number"></a>Co to jest numer rejestracyjny?  
 
-Do przeglądania szczegółów konta używamy numeru identyfikacji podatkowej (TIN). To pozwala nam określić, czy firma Microsoft może dostarczać Ci produkty i usługi. Aby uzyskać informacje o tym, jakie numery rejestracyjne są potrzebne dla kraju lub regionu, zobacz [Numery identyfikacji podatkowej](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
+Do przeglądania szczegółów twojego konta używamy numeru rejestracyjnego (nazywanego również numerem NIP). Dzięki temu możemy określić, czy firma Microsoft może dostarczać Ci produkty i usługi. Aby uzyskać informacje o tym, jakie numery rejestracyjne są potrzebne dla kraju lub regionu, zobacz [Numery identyfikacji podatkowej](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
 
-W krajach, w których numer rejestracji jest obowiązkowy, etykieta nad polem tekstowym wskazuje, jaki typ numeru jest wymagany.
+W krajach, w których numer rejestracyjny jest obowiązkowy, etykieta powyżej pola tekstowego wskazuje, jakiego typu liczba jest wymagana.
 
-Na przykład na poniższym zrzucie ekranu etykieta wskazuje, że potrzebny jest numer rejestracji CNPJ (Brazylia).
+Na przykład na poniższym zrzucie ekranu etykieta wskazuje, że wymagany jest numer rejestracji CNPJ (Brazylia).
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Zrzut ekranu przedstawiający pole numeru rejestracji dla numeru C N P J.":::
 
-W krajach, w których numer rejestracji jest opcjonalny, możesz podać firmowy numer rejestracji. Nie wprowadzaj w tym polu osobistego identyfikatora.
+W krajach, w których numer rejestracyjny jest opcjonalny, możesz podać numer rejestracji prawnej firmy. Nie wprowadź identyfikatora osobistego w tym polu.
 
-Na poniższym zrzucie ekranu pokazano przykład, kiedy numer rejestracji jest opcjonalny.
+Poniższy zrzut ekranu przedstawia przykład, kiedy numer rejestracji jest opcjonalny.
 
-:::image type="content" source="../media/macregnum-reg-screenshot_400.png" alt-text="Zrzut ekranu przedstawiający pole opcjonalnego numeru rejestracji.":::
+:::image type="content" source="../media/macregnum-reg-screenshot_400.png" alt-text="Zrzut ekranu przedstawiający opcjonalne pole numeru rejestracji.":::
 
 Jeśli nie masz prawidłowego numeru rejestracyjnego, zobacz [Numery identyfikacji podatkowej](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
 
-## <a name="what-should-i-do-if-i-get-an-under-review-notification"></a>Co mam zrobić, jeśli otrzymam powiadomienie o niedo recenzji?  
+## <a name="what-should-i-do-if-i-get-an-under-review-notification"></a>Co należy zrobić, jeśli otrzymam powiadomienie o niedocenieniu?  
 
-Po ukończeniu zakupu możesz otrzymać powiadomienie, że Twoje konto jest w trakcie przeglądu. W trakcie procesu sprawdzania możesz sprawdzić stan, przeglądając stronę <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">BillingBilling</a>  >  accounts (Konta rozliczeniowe) i wybierając konto użyte do ukończenia zakupu.
+Po zakończeniu zakupu może zostać wyświetlone powiadomienie o tym, że Twoje konto jest w trakcie przeglądu. Podczas procesu przeglądu możesz sprawdzić stan, przechodząc do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">RozliczeniaRozliczenia</a>  >  kont i wybierając konto, które zostało użyte do ukończenia zakupu.
 
-Proces sprawdzania zwykle trwa około jednego dnia, ale może trwać dłużej.
+Proces przeglądu zwykle trwa około jednego dnia, ale może trwać dłużej.
 
-Poniższy zrzut ekranu przedstawia powiadomienie o recenzji wyświetlane podczas finalizacji zakupu.
+Poniższy zrzut ekranu przedstawia powiadomienie o przeglądzie wyświetlane podczas wyewidencjonowania.
 
-:::image type="content" source="../media/macregnum_statuscheckout_screenshot_400.png" alt-text="Zrzut ekranu przedstawiający powiadomienie dotyczące przeglądu konta na stronie finalizacji zakupu.":::
+:::image type="content" source="../media/macregnum_statuscheckout_screenshot_400.png" alt-text="Zrzut ekranu przedstawiający powiadomienie o przeglądzie konta na stronie wyewidencjonowania.":::
 
-Powiadomienie e-mail jest również wysyłane do wszystkich administratorów globalnych i administratorów rozliczeń na Twoim koncie. W niektórych przypadkach powiadomienie jest wysyłane do użytkowników, którzy mają na koncie rolę Właściciele konta rozliczeniowego lub Współautorzy kont rozliczeniowych. Powiadomienie informuje, że recenzja jest obecnie w trakcie procesu. Po zakończeniu procesu sprawdzania zostanie wysłane powiadomienie e-mail z potwierdzeniem.
+Powiadomienie e-mail jest również wysyłane do wszystkich administratorów globalnych i rozliczeniowych na Twoim koncie. W niektórych przypadkach powiadomienie jest wysyłane do użytkowników, którzy mają rolę Właściciele kont rozliczeniowych lub Współautorzy konta rozliczeniowego na koncie. Powiadomienie informuje, że przegląd jest obecnie w toku. Powiadomienie e-mail z potwierdzeniem jest wysyłane po zakończeniu procesu przeglądu.
 
-Na poniższym zrzucie ekranu przedstawiono powiadomienie wyświetlane na stronie szczegółów konta rozliczeniowego.
+Poniższy zrzut ekranu przedstawia powiadomienie wyświetlane na stronie szczegółów konta rozliczeniowego.
 
-:::image type="content" source="../media/macregnum-statusbillacct-screenshot_700.png" alt-text="Zrzut ekranu przedstawiający powiadomienie w obszarze recenzji na stronie konta rozliczeniowe.":::
+:::image type="content" source="../media/macregnum-statusbillacct-screenshot_700.png" alt-text="Zrzut ekranu przedstawiający powiadomienie przeglądane na stronie kont rozliczeniowych.":::

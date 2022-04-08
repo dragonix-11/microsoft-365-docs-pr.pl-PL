@@ -1,5 +1,5 @@
 ---
-title: Tworzenie rezerwacji ręcznej
+title: Twórz rezerwację ręczną
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,42 +8,45 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
-description: Wykonaj poniższe instrukcje, aby utworzyć termin i przypisać pracownika za pomocą aplikacji Microsoft Bookings.
-ms.openlocfilehash: 3c71a3f96aa79e55c857078aad77a14e37d9009b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Postępuj zgodnie z tymi instrukcjami, aby utworzyć termin i przypisać pracownika za pośrednictwem aplikacji Microsoft Bookings.
+ms.openlocfilehash: d30d9ba7fe00305ef370a554fc53ebebc5b5d284
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62987999"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715324"
 ---
-# <a name="create-a-manual-booking"></a>Tworzenie rezerwacji ręcznej
+# <a name="create-a-manual-booking"></a>Twórz rezerwację ręczną
 
-Rezerwacje można planuje i  personelu na dwa różne sposoby. Na początku klient używa strony rezerwacji autonomicznej lub osadzonej strony rezerwacji, która jest dodawania do witryny sieci Web. Inny sposób to ręczne wprowadzenie rezerwacji przez Ciebie lub jednego z Twoich pracowników, na przykład gdy klient dzwoni na spotkanie. W tym artykule o scenariuszu ręcznym.
+> [!NOTE]
+> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
-1. W Microsoft 365 kliknij przycisk Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
+Bookings można zaplanować i obsługiwać na dwa różne sposoby. Pierwszym sposobem jest użycie przez klienta autonomicznej strony rezerwacji lub osadzonej strony rezerwacji, którą dodajesz do swojej witryny internetowej. Innym sposobem jest ręczne wprowadzanie rezerwacji przez Ciebie lub jednego z pracowników, na przykład gdy klient dzwoni na spotkanie. W tym artykule opisano scenariusz ręczny.
 
-   ![Obraz aplikacji Bookings w ikony Uruchamianie aplikacji.](../media/bookings-applauncher.png)
+1. W Microsoft 365 wybierz pozycję Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
 
-1. W okienku nawigacji wybierz pozycję **Nowa rezerwacja kalendarza**\>.
+   ![Obraz przedstawiający Bookings w programie uruchamiania aplikacji.](../media/bookings-applauncher.png)
 
-   ![Obraz nowego interfejsu użytkownika rezerwacji.](../media/bookings-newbooking.png)
+1. W okienku nawigacji wybierz pozycję **Kalendarz** \> **Nowa rezerwacja**.
 
-1. Wybierz usługę do świadczenia. Zobacz [Definiowanie ofert usług w usłudze Microsoft Bookings,](define-service-offerings.md) aby uzyskać instrukcje dotyczące konfiguracji usługi.
+   ![Obraz przedstawiający nowy interfejs użytkownika rezerwacji.](../media/bookings-newbooking.png)
+
+1. Wybierz usługę do dostarczenia. Zobacz [Definiowanie ofert usług w Microsoft Bookings](define-service-offerings.md), aby uzyskać instrukcje dotyczące konfiguracji usługi.
 
 1. Wprowadź informacje o kliencie, w tym imię i nazwisko, adres e-mail, numer telefonu i inne istotne szczegóły.
 
-1. Wybierz członka personelu, który ma świadczyć usługę. Wyświetlana lista członków personelu jest oparta na tym, co ustawiono na stronie usług.
+1. Wybierz pracownika, aby udostępnić usługę. Wyświetlona lista pracowników jest oparta na konfiguracji na stronie usług.
 
-   ![Obraz interfejsu użytkownika listy pracowników.](../media/bookings-staff-list.png)
+   ![Obraz przedstawiający interfejs użytkownika listy pracowników.](../media/bookings-staff-list.png)
 
-1. Wprowadź szczegóły usługi, takie jak data, godzina, lokalizacja i inne istotne informacje. Po wprowadzeniu prawidłowego adresu e-mail klienta przycisk Zapisz  zmieni się w przycisk **Wyślij, a** zobaczysz notatkę z informacją, że do klienta zostanie wysłane potwierdzenie. Potwierdzenie klienta zawiera załącznik do dodania do kalendarza. Wybrani członkowie personelu otrzymają również zaproszenia na spotkania z informacjami o terminach, aby można było dodać je do swoich kalendarzy osobistych.
+1. Wprowadź szczegóły usługi, w tym datę, godzinę, lokalizację i inne istotne informacje. Po wprowadzeniu prawidłowego adresu e-mail dla klienta zostanie wyświetlona notatka z informacją, że potwierdzenie zostanie wysłane do klienta. Potwierdzenie klienta zawiera załącznik umożliwiający dodanie go do kalendarza. Wybrani pracownicy otrzymają również zaproszenia na spotkania z informacjami o terminie, aby mogli dodać je do swoich kalendarzy osobistych.
 
 1. Wybierz **pozycję Dodaj przypomnienie e-mail**.
 
-1. Określ, kiedy przypomnienie ma zostać wysłane i gdzie ma zostać **wysłane (Klient****, Personel****, Wszyscy** uczestnicy) oraz jak ma być wiadomość z przypomnieniem.
+1. Określ, kiedy ma zostać wysłane przypomnienie, gdzie ma zostać wysłane (**Klient**, **Personel**, **Wszyscy uczestnicy**) oraz jaka powinna być wiadomość z przypomnieniem.
 
-1. Wybierz **pozycję Zapisz** \> **wyślij**.
+1. Wybierz pozycję **Utwórz rezerwację**.
 
    Oto przykładowa wiadomość e-mail z przypomnieniem, które otrzyma klient:
 
-:::image type="content" source="../media/bookings-confirmed-email.png" alt-text="Zrzut ekranu: Przykład wiadomości e-mail z potwierdzeniem rezerwacji ręcznej":::
+:::image type="content" source="../media/bookings-confirmed-email.png" alt-text="Zrzut ekranu: Przykładowa wiadomość e-mail z potwierdzeniem z rezerwacji ręcznej":::

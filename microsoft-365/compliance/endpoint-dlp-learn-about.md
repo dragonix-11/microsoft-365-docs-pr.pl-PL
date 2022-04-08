@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w punktach końcowych
+title: Dowiedz się więcej o zapobieganiu utracie danych punktu końcowego Microsoft 365
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,190 +18,200 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'Microsoft 365 punktu końcowego ochrona przed utratą danych rozszerza możliwości monitorowania działań dotyczących plików i akcji zabezpieczających dla tych plików na punkty końcowe. Pliki są widoczne w rozwiązaniach zgodności '
-ms.openlocfilehash: 031d1d80dd6700939c9d73cc82350b7abc30c132
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+description: 'Microsoft 365 ochrona przed utratą danych punktu końcowego rozszerza monitorowanie działań dotyczących plików i akcji ochronnych dla tych plików na punkty końcowe. Pliki są widoczne w rozwiązaniach zgodności '
+ms.openlocfilehash: f32e84434258ff4b4c5ea6af24f69c607952b56a
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520788"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714554"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Dowiedz się więcej Microsoft 365 ochrony przed utratą danych w punktach końcowych
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Dowiedz się więcej o zapobieganiu utracie danych punktu końcowego Microsoft 365
 
-Funkcji Microsoft 365 ochrony przed utratą danych (DLP, data loss prevention) możesz używać do monitorowania działań, które są podejmowane na elementach określonych jako poufne, oraz w celu zapobiegania niezamierzonemu udostępnianiu tych elementów. Aby uzyskać więcej informacji na temat ochrony przed utratą danych, zobacz [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md).
+Możesz użyć Microsoft 365 ochrony przed utratą danych (DLP), aby monitorować akcje podejmowane w przypadku elementów, które zostały uznane za wrażliwe, i zapobiec przypadkowej wymianie tych elementów. Aby uzyskać więcej informacji na temat ochrony przed [utratą danych, zobacz Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md).
 
-Ochrona przed utratą danych w punkcie końcowym (Endpoint Data Loss **Prevention**, DLP) rozszerza funkcje monitorowania aktywności i ochrony funkcji DLP na poufne elementy, które są fizycznie przechowywane na urządzeniach z systemami Windows 10, Windows 11 i macOS (Catalina 10.15 lub wyższym). Po dojechiniu urządzeń do rozwiązań zgodności usługi Microsoft 365 informacje o tym, co użytkownicy robią z poufnymi elementami, są widoczne [](data-classification-activity-explorer.md) w Eksploratorze aktywności i można wymusić akcje zabezpieczające przed tymi elementami za pośrednictwem zasad [DLP](create-test-tune-dlp-policy.md).
+**Ochrona przed utratą danych punktu końcowego** (Endpoint DLP) rozszerza możliwości monitorowania aktywności i ochrony DLP na poufne elementy, które są fizycznie przechowywane na urządzeniach Windows 10, Windows 11 i macOS (Catalina 10.15 lub nowszych). Po dołączeniu urządzeń do rozwiązań zgodności Microsoft 365 informacje o tym, co użytkownicy robią z poufnymi elementami, są widoczne w [Eksploratorze aktywności](data-classification-activity-explorer.md) i można wymuszać akcje ochronne na tych elementach za pośrednictwem [zasad DLP](create-test-tune-dlp-policy.md).
 
 > [!TIP]
-> Jeśli szukasz kontrolki urządzenia do przechowywania wymiennych, zobacz Ochrona punktu końcowego w usłudze Microsoft Defender [Nośnik wymienny kontrolki urządzenia Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
+> Jeśli szukasz kontroli urządzenia dla magazynu wymiennego, zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 > [!NOTE]
-> Na Microsoft 365 zgodności zasady DLP dotyczące poufnych elementów są oceny centralnie, więc nie ma czasu na rozpowszechnianie zasad i aktualizacji zasad na poszczególnych urządzeniach. Gdy zasady są aktualizowane w centrum zgodności, synchronizacja tych aktualizacji w całej usłudze trwa zwykle około godziny. Po zsynchronizowaniu aktualizacji zasad elementy na urządzeniach docelowych są automatycznie ponownie sprawdzane przy następnym dostępie do nich lub ich zmodyfikowaniu.
+> W Microsoft 365 Compliance ocena zasad DLP elementów poufnych odbywa się centralnie, więc nie ma opóźnienia czasowego dystrybucji zasad i aktualizacji zasad do poszczególnych urządzeń. Aktualizacja zasad w Centrum zgodności zwykle trwa około godziny, zanim te aktualizacje zostaną zsynchronizowane w całej usłudze. Po zsynchronizowania aktualizacji zasad elementy na urządzeniach docelowych są automatycznie ponownie oceniane przy następnym uzyskaniu dostępu lub modyfikacji.
 
-## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Działania punktu końcowego, które można monitorować i podjąć w
+## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Działania punktu końcowego, które można monitorować i podejmować
 
-Funkcja DLP punktu końcowego firmy Microsoft umożliwia inspekcję następujących typów działań, które użytkownicy mogą podjąć na urządzeniach z systemem Windows 10, Windows 11 lub macOS, oraz zarządzać nimi.
+Program DLP punktu końcowego firmy Microsoft umożliwia przeprowadzanie inspekcji następujących typów działań, które użytkownicy podejmują na poufnych elementach, które są fizycznie przechowywane Windows 10, Windows 11 lub urządzeniach z systemem macOS.
 
-|Działanie |Opis  |Windows 10 1809 i nowsze/ Windows 11| System MacOS Catalina 10.15 (wersja preview) | Możliwość inspekcji/ograniczenia|
+|Działanie |Opis  |Windows 10 1809 i nowsze/Windows 11| macOS Catalina 10.15 (wersja zapoznawcza) | Możliwość inspekcji/ograniczenia|
 |---------|---------|---------|---------|---------|
-|przekazywanie do usługi w chmurze lub uzyskiwanie dostępu przez niedozwolone przeglądarki    | Wykrywa, kiedy użytkownik próbuje przekazać element do domeny usługi z ograniczeniami lub uzyskać dostęp do elementu za pośrednictwem przeglądarki.  Jeśli użytkownik korzysta z przeglądarki wymienionej w funkcji DLP jako niedozwolonej przeglądarki, działanie przekazywania zostanie zablokowane i użytkownik zostanie przekierowany w celu korzystania z usługi Microsoft Edge. Microsoft Edge następnie zezwolić na przekazywanie lub dostęp albo zablokować go na podstawie konfiguracji zasad DLP         |obsługiwane | obsługiwane|możliwość inspekcji i ograniczenia|
-|kopiowanie do innej aplikacji    |Wykrywa, kiedy użytkownik próbuje skopiować informacje z chronionego elementu, a następnie wkleić je do innej aplikacji, procesu lub elementu. To działanie nie wykrywa kopiowania i wklejania informacji w obrębie tej samej aplikacji, procesu lub elementu.|obsługiwane|obsługiwane         | możliwość inspekcji i ograniczenia|
-|kopiowanie na nośnik wymienny USB |Wykrywa, kiedy użytkownik próbuje skopiować element lub informacje na nośnik wymienny lub urządzenie USB.|obsługiwane|obsługiwane         | możliwość inspekcji i ograniczenia|
-|Kopiowanie do udziału sieciowego    |Wykrywa, kiedy użytkownik próbuje skopiować element do udziału sieciowego lub zamapowany dysk sieciowy. |obsługiwane|obsługiwane         |możliwość inspekcji i ograniczenia|
-|drukowanie dokumentu    |Wykrywa, kiedy użytkownik próbuje wydrukować chroniony element na drukarce lokalnej lub sieciowej.|obsługiwane|obsługiwane|możliwość inspekcji i ograniczenia         |
-|kopiowanie do sesji zdalnej|Wykrywa, kiedy użytkownik próbuje skopiować element do sesji pulpitu zdalnego. |obsługiwane|nie jest obsługiwane|  możliwość inspekcji i ograniczenia|
-|kopiowanie na Bluetooth urządzenia|Wykrywa, kiedy użytkownik próbuje skopiować element do aplikacji usługi Bluetooth (zgodnie z definicją na liście odblokowanych adresów ip usługi Bluetooth w ustawieniach ochrony przed błędami DLP punktu końcowego).|obsługiwane|nie jest obsługiwane| możliwość inspekcji i ograniczenia|
-|Tworzenie elementu|Wykrywa, kiedy użytkownik tworzy element|obsługiwane | |mogą być insektowane|
-|Zmienianie nazwy elementu|Wykrywa, kiedy użytkownik zmienia nazwę elementu|obsługiwane | |mogą być insektowane|
+|przekazywanie do usługi w chmurze lub dostęp przez niedozwolone przeglądarki    | Wykrywa, kiedy użytkownik próbuje przekazać element do domeny usługi z ograniczeniami lub uzyskać dostęp do elementu za pośrednictwem przeglądarki.  Jeśli korzystają z przeglądarki, która jest wyświetlana w programie DLP jako niezauzwalana przeglądarka, działanie przekazywania zostanie zablokowane, a użytkownik zostanie przekierowany w celu użycia Microsoft Edge . Microsoft Edge zezwoli na przekazywanie lub dostęp na podstawie konfiguracji zasad DLP lub zablokuje je         |Obsługiwane | Obsługiwane|możliwość przeprowadzania inspekcji i ograniczania|
+|kopiowanie do innej aplikacji    |Wykrywa, kiedy użytkownik próbuje skopiować informacje z chronionego elementu, a następnie wkleić je do innej aplikacji, procesu lub elementu. To działanie nie wykrywa kopiowania i wklejania informacji w tej samej aplikacji, procesie lub elemencie.|Obsługiwane|Obsługiwane         | możliwość przeprowadzania inspekcji i ograniczania|
+|kopiowanie na nośnik wymienny USB |Wykrywa, kiedy użytkownik próbuje skopiować element lub informacje na nośnik wymienny lub urządzenie USB.|Obsługiwane|Obsługiwane         | możliwość przeprowadzania inspekcji i ograniczania|
+|kopiowanie do udziału sieciowego    |Wykrywa, kiedy użytkownik próbuje skopiować element do udziału sieciowego lub zamapowanego dysku sieciowego |Obsługiwane|Obsługiwane         |możliwość przeprowadzania inspekcji i ograniczania|
+|drukowanie dokumentu    |Wykrywa, kiedy użytkownik próbuje wydrukować chroniony element na drukarce lokalnej lub sieciowej.|Obsługiwane|Obsługiwane|możliwość przeprowadzania inspekcji i ograniczania         |
+|kopiowanie do sesji zdalnej|Wykrywa, kiedy użytkownik próbuje skopiować element do sesji pulpitu zdalnego |Obsługiwane|nieobsługiwane|  możliwość przeprowadzania inspekcji i ograniczania|
+|kopiowanie na urządzenie Bluetooth|Wykrywa, kiedy użytkownik próbuje skopiować element do niedozwolonej aplikacji Bluetooth (zgodnie z definicją na liście niedozwolonych Bluetooth aps w ustawieniach DLP punktu końcowego).|Obsługiwane|nieobsługiwane| możliwość przeprowadzania inspekcji i ograniczania|
+|tworzenie elementu|Wykrywa, kiedy użytkownik tworzy element|Obsługiwane | |z możliwością inspekcji|
+|zmienianie nazwy elementu|Wykrywa, kiedy użytkownik zmienia nazwę elementu|Obsługiwane | |z możliwością inspekcji|
 
-## <a name="monitored-files"></a>Pliki monitorowane
+## <a name="best-practice-for-endpoint-dlp-policies"></a>Najlepsze rozwiązanie dotyczące zasad DLP punktu końcowego
 
-Punkt końcowy DLP obsługuje monitorowanie tych typów plików. DLP przeprowadza inspekcje działań w przypadku tych typów plików, nawet jeśli nie ma dopasowania do zasad. 
+Załóżmy, że chcesz zablokować wszystkim elementom, które zawierają numery kart kredytowych, pozostawienie punktów końcowych użytkowników działu finansów. Zalecamy:
+
+- Tworzenie zasad i określanie zakresu do punktów końcowych i do tej grupy użytkowników.
+- Utwórz regułę w zasadach, która wykrywa typ informacji, które chcesz chronić. W takim przypadku **zawartość zawiera** wartość *Typ informacji poufnych**, a następnie wybierz pozycję **Karta kredytowa**.
+- Ustaw akcje dla każdego działania na **Wartość Blokuj**.
+
+Aby uzyskać więcej wskazówek dotyczących projektowania zasad DLP, zobacz [Projektowanie zasad ochrony przed utratą danych](dlp-policy-design.md) .
+
+## <a name="monitored-files"></a>Monitorowane pliki
+
+Program Endpoint DLP obsługuje monitorowanie tych typów plików. DLP przeprowadza inspekcję działań dla tych typów plików, nawet jeśli nie ma dopasowania zasad. 
 
 - Pliki programu Word
-- PowerPoint plików
-- Excel plików
+- pliki PowerPoint
+- pliki Excel
 - Pliki PDF
-- .csv plików
-- pliki tsv
-- .txt plików
-- pliki rtf
-- pliki c
-- pliki class
-- pliki cpp
-- pliki cs
-- pliki h
-- pliki java
+- pliki .csv
+- Pliki tsv
+- pliki .txt
+- Pliki rtf
+- Pliki .c
+- Pliki klasy
+- Pliki cpp
+- Pliki cs
+- Pliki .h
+- Pliki java
  
-Jeśli chcesz monitorować tylko dane z dopasowania zasad, możesz wyłączyć działanie Zawsze kontroluj pliki dla urządzeń w ustawieniach globalnych ochrony przed włączeniem ochrony przed prywatnością.
+Jeśli chcesz tylko monitorować dane z dopasowań zasad, możesz wyłączyć **działanie Zawsze przeprowadzaj inspekcję plików dla urządzeń w ustawieniach** globalnych DLP punktu końcowego.
 
 > [!NOTE]
-> Jeśli ustawienie **Zawsze** inspekcja plików dla urządzeń jest wł., działania dotyczące dowolnego pliku programu Word, PowerPoint, Excel, PDF i .csv są zawsze insektowane, nawet jeśli urządzenie nie jest kierowane przez żadne zasady.
+> Jeśli **ustawienie Zawsze sprawdzaj działanie pliku dla urządzeń** jest włączone, działania w dowolnym pliku programu Word, PowerPoint, Excel, PDF i .csv są zawsze poddawane inspekcji, nawet jeśli urządzenie nie jest objęte żadnymi zasadami.
 
 > [!TIP]
-> Aby zapewnić inspekcję działań we wszystkich obsługiwanych typach plików, utwórz [niestandardowe zasady DLP](create-test-tune-dlp-policy.md).
+> Aby upewnić się, że działania są poddawane inspekcji dla wszystkich obsługiwanych typów plików, utwórz [niestandardowe zasady DLP](create-test-tune-dlp-policy.md).
 
-Endpoint DLP monitoruje aktywność na podstawie typu MIME, więc działania będą przechwytywane, nawet jeśli rozszerzenie pliku zostanie zmienione.
+Program DLP punktu końcowego monitoruje działanie oparte na typie MIME, więc działania zostaną przechwycone, nawet jeśli rozszerzenie pliku zostanie zmienione.
 
-### <a name="file-types-preview"></a>Typy plików (podgląd)
+### <a name="file-types-preview"></a>Typy plików (wersja zapoznawcza)
 
-Typy plików to grupowanie formatów plików, które są używane do ochrony określonych przepływów pracy lub obszarów działalności. Jako warunków zasad DLP możesz użyć co najmniej jednego typu pliku.
+Typy plików to grupa formatów plików, które są używane do ochrony określonych przepływów pracy lub obszarów działalności. W zasadach DLP można użyć co najmniej jednego typu plików.
 
 |Typ pliku |Aplikacja  |monitorowane rozszerzenia plików  |
 |---------|---------|---------|
-|edytor tekstu |Word, PDF | .doc, .docx, docm, dot, dotx, dotm, docb, .pdf |
-|arkusz kalkulacyjny    |Excel, CSV, TSV |.xls, .xlsx, xlt, xlm, xlsm, xltx, xltm, xlsb, xlw, .csv, tsv         |
-|prezentacja |PowerPoint|.ppt, .pptx, pos, pps, pptm, potx, potm, ppam, ppsx|
-|archiwizowanie  |Narzędzia do archiwizacji i kompresji plików | .zip, zipx, .rar, 0,7z, tar, gz        |
-|Adres e-mail    |Outlook |pst, ost, msg         |
+|przetwarzanie tekstu |Word, PDF | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .pdf |
+|Arkusza kalkulacyjnego    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
+|Prezentacji |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
+|Archiwum  |narzędzia archiwum plików i kompresji | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|Adres e-mail    |Outlook |.pst, .ost, .msg         |
 
-### <a name="file-extensions-preview"></a>Rozszerzenia plików (wersja Preview)
+### <a name="file-extensions-preview"></a>Rozszerzenia plików (wersja zapoznawcza)
 
-Jeśli typy plików nie obejmują rozszerzeń plików, których lista jest potrzebna jako warunek zasad, możesz użyć rozszerzeń plików rozdzielonych przecinkami.
-
-> [!IMPORTANT]
-> Rozszerzenia i opcje typów plików nie mogą być używane jako warunki w tej samej  regułach. Jeśli chcesz używać ich jako warunków w tych samych zasadach, muszą one być w oddzielnych zasadach. 
+Jeśli typy plików nie obejmują rozszerzeń plików, które należy wyświetlić jako warunek w zasadach, możesz użyć rozszerzeń plików rozdzielonych przecinkami.
 
 > [!IMPORTANT]
-> Te Windows obsługują typy plików i funkcje rozszerzenia plików:
->- Windows 10 20H1/20H2/21H1 (KB 5006738)
->- Windows 10 19H1/19H2 (KB 5007189)
->- Windows 10 RS5 (kb 5006744)
+> Opcji rozszerzeń plików i typów plików nie można używać jako warunków w tej samej regule. Jeśli chcesz używać ich jako warunków w tych samych zasadach, muszą one być w oddzielnych regułach. 
+
+> [!IMPORTANT]
+> Te wersje Windows obsługują typy plików i funkcje rozszerzenia plików:
+>- Windows 10 wersje 20H1/20H2/21H1 (KB 5006738)
+>- Windows 10 wersje 19H1/19H2 (KB 5007189)
+>- Windows 10 RS5 (KB 5006744)
 
 
-## <a name="whats-different-in-endpoint-dlp"></a>Co się dzieje w programie DLP punktu końcowego
+## <a name="whats-different-in-endpoint-dlp"></a>Co się różni w programie Endpoint DLP
 
-Istnieje kilka dodatkowych pojęć, o których należy pamiętać przed rozpoczęciem pracy z zasadą DLP punktu końcowego.
+Istnieje kilka dodatkowych pojęć, o których należy pamiętać przed rozpoczęciem analizy DLP punktu końcowego.
 
 ### <a name="enabling-device-management"></a>Włączanie zarządzania urządzeniami
 
-Zarządzanie urządzeniami to funkcja, która umożliwia zbieranie telemetrii z urządzeń i udostępnia Microsoft 365 rozwiązania zgodności, takie jak zarządzanie ryzykiem w zakresie punktów końcowych i [niejawnego programu testów](insider-risk-management.md). Musisz dodać wszystkie urządzenia, których chcesz używać jako lokalizacji w zasadach DLP.
+Zarządzanie urządzeniami to funkcja, która umożliwia zbieranie danych telemetrycznych z urządzeń i wprowadza ją do rozwiązań zgodności Microsoft 365, takich jak endpoint DLP i [insider risk management](insider-risk-management.md). Musisz dołączyć wszystkie urządzenia, których chcesz użyć jako lokalizacji w zasadach DLP.
 
 > [!div class="mx-imgBorder"]
-> ![włącz zarządzanie urządzeniami.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> ![włączanie zarządzania urządzeniami.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-Obsługa wnoszania i wynoszania jest obsługiwanych za pośrednictwem skryptów pobieranych z Centrum zarządzania urządzeniami. Centrum ma skrypty niestandardowe dla każdej z tych metod wdrażania:
+Dołączanie i odłączanie są obsługiwane za pośrednictwem skryptów pobranych z centrum zarządzania urządzeniami. Centrum ma niestandardowe skrypty dla każdej z tych metod wdrażania:
 
-- skrypt lokalny (do 10 komputerów)
+- skrypt lokalny (maksymalnie 10 maszyn)
 - Zasady grupy
 - System Center Configuration Manager (wersja 1610 lub nowsza)
-- Telefony Zarządzanie urządzeniami/Microsoft Intune
-- Skrypty dołączania VDI dla komputerów nietrwałych
+- Zarządzanie urządzeniami/Microsoft Intune mobilne
+- Skrypty dołączania interfejsu VDI dla maszyn nietrwałych
 
 > [!div class="mx-imgBorder"]
-> ![stronie dołączania urządzenia.](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> ![strony dołączania urządzenia.](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
- Skorzystaj z procedur z procedury [wprowadzenie do Microsoft 365 DLP punktu](endpoint-dlp-getting-started.md) końcowego na urządzeniach w onboardach.
+ Procedury opisane w temacie [Wprowadzenie do Microsoft 365 DLP punktu końcowego](endpoint-dlp-getting-started.md) umożliwiają dołączanie urządzeń.
 
-Urządzenia, które zostały włoone [za](/windows/security/threat-protection/) pośrednictwem Ochrona punktu końcowego w usłudze Microsoft Defender, będą automatycznie wyświetlane na liście urządzeń. Aby korzystać **z funkcji DLP punktu końcowego,** możesz włączyć monitorowanie urządzeń.
+Jeśli urządzenia zostały dołączone za pośrednictwem [Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/), te urządzenia zostaną automatycznie wyświetlone na liście urządzeń. Możesz **włączyć monitorowanie urządzeń,** aby używać protokołu DLP punktu końcowego.
 
 > [!div class="mx-imgBorder"]
 > ![listy urządzeń zarządzanych.](../media/endpoint-dlp-learn-about-2-device-list.png)
 
 ### <a name="viewing-endpoint-dlp-data"></a>Wyświetlanie danych DLP punktu końcowego
 
-Alerty dotyczące zasad DLP wymuszonych na urządzeniach końcowych można wyświetlać, przechodząc do pulpitu nawigacyjnego zarządzania [alertami DLP](dlp-configure-view-alerts-policies.md).
+Alerty związane z zasadami DLP wymuszanymi na urządzeniach punktu końcowego można wyświetlić, przechodząc do [pulpitu nawigacyjnego zarządzania alertami DLP](dlp-configure-view-alerts-policies.md).
 
 > [!div class="mx-imgBorder"]
-> ![Informacje alertu.](../media/Alert-info-1.png)
+> ![Informacje o alertach.](../media/Alert-info-1.png)
 
-Na tym samym pulpicie nawigacyjnym można również wyświetlać szczegóły skojarzonego zdarzenia z sformatowanych metadanych
+Możesz również wyświetlić szczegóły skojarzonego zdarzenia z bogatymi metadanymi na tym samym pulpicie nawigacyjnym
 
 > [!div class="mx-imgBorder"]
 > ![informacje o zdarzeniu.](../media/Event-info-1.png)
 
-Po do wdrożeniu urządzenia informacje o działaniach inspekcji przepływają do Eksploratora aktywności jeszcze przed skonfigurowaniem i wdrożeniem wszelkich zasad DLP, które mają urządzenia jako lokalizację.
+Po dołączeniu urządzenia informacje o inspekcji działań są przepływane do Eksploratora działań jeszcze przed skonfigurowaniem i wdrożeniem wszystkich zasad DLP, które mają urządzenia jako lokalizację.
 
 > [!div class="mx-imgBorder"]
-> ![zdarzeń dlp punktu końcowego w Eksploratorze aktywności.](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> ![zdarzenia dlp punktu końcowego w Eksploratorze działań.](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
-Zasady DLP punktu końcowego zbierają obszerne informacje dotyczące działań pod kontrolą.
+Punkt końcowy DLP zbiera obszerne informacje na temat inspekcji działania.
 
-Jeśli na przykład plik zostanie skopiowany na nośnik wymienny USB, w szczegółach aktywności zobaczysz następujące atrybuty:
+Jeśli na przykład plik zostanie skopiowany na wymienny nośnik USB, te atrybuty zostaną wyświetlone w szczegółach działania:
 
 - typ działania
 - adres IP klienta
 - docelowa ścieżka pliku
-- happened timestamp
+- wystąpił sygnatura czasowa
 - nazwa pliku
-- użytkownik
-- rozszerzenie pliku
+- Użytkownika
+- Formatem
 - rozmiar pliku
 - typ informacji poufnych (jeśli dotyczy)
 - wartość sha1
 - wartość sha256
 - poprzednia nazwa pliku
-- lokalizacja
-- element nadrzędny
-- filepath
+- Lokalizacji
+- Nadrzędny
+- Filepath
 - typ lokalizacji źródłowej
-- platforma
+- Platformy
 - nazwa urządzenia
 - typ lokalizacji docelowej
 - aplikacja, która wykonała kopię
-- Ochrona punktu końcowego w usłudze Microsoft Defender identyfikatora urządzenia (jeśli jest to dane)
-- producent nośniki wymiennych
-- Model urządzenia przenośnego
-- Numer seryjny urządzenia przenośnego
+- Ochrona punktu końcowego w usłudze Microsoft Defender identyfikator urządzenia (jeśli dotyczy)
+- producent wymiennych urządzeń multimedialnych
+- model urządzenia nośnika wymiennego
+- numer seryjny urządzenia nośnika wymiennego
 
 > [!div class="mx-imgBorder"]
-> ![skopiuj do atrybutów aktywności USB.](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> ![kopiuj do atrybutów działania usb.](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po instrukcjami w parametrach DLP dla punktów końcowych należy wykonać następujące czynności:
+Po zapoznaniu się z punktem końcowym DLP wykonaj następujące czynności:
 
-1. [Omówienie dołączania Windows 10 Windows 11 i Microsoft 365 użytkowników](device-onboarding-overview.md)
+1. [Dołączanie urządzeń Windows 10 lub Windows 11 do Microsoft 365 omówienie](device-onboarding-overview.md)
 1. [Omówienie dołączania urządzeń z systemem macOS do platformy Microsoft 365 (wersja zapoznawcza)](device-onboarding-macos-overview.md)
 1. [Konfigurowanie ustawień ochrony przed utratą danych punktu końcowego](dlp-configure-endpoint-settings.md)
-1. [Korzystanie z ochrony przed utratą danych w punkcie końcowym firmy Microsoft](endpoint-dlp-using.md)
+1. [Używanie ochrony przed utratą danych w punkcie końcowym firmy Microsoft](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Wprowadzenie do ochrony przed utratą danych w punktach końcowych firmy Microsoft](endpoint-dlp-getting-started.md)
-- [Korzystanie z ochrony przed utratą danych w punkcie końcowym firmy Microsoft](endpoint-dlp-using.md)
+- [Wprowadzenie do ochrony przed utratą danych w punkcie końcowym firmy Microsoft](endpoint-dlp-getting-started.md)
+- [Używanie ochrony przed utratą danych w punkcie końcowym firmy Microsoft](endpoint-dlp-using.md)
 - [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
 - [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md)
-- [Wprowadzenie w Eksploratorze aktywności](data-classification-activity-explorer.md)
+- [Wprowadzenie za pomocą Eksploratora działań](data-classification-activity-explorer.md)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](/windows/security/threat-protection/)
-- [Zarządzanie ryzykiem w niejawnym programie testów](insider-risk-management.md)
+- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md)

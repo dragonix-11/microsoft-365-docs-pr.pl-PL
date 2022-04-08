@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie reguł zmniejszania obszaru ataków (ASR)
+title: Włączanie reguł zmniejszania obszaru ataków (ASR)
 description: Zawiera wskazówki dotyczące wdrażania reguł zmniejszania obszaru ataków.
 keywords: Wdrażanie reguł zmniejszania obszaru ataków, wdrażanie usługi ASR, włączanie reguł asr, konfigurowanie usługi ASR, system zapobiegania włamaniom do hostów, reguły ochrony, reguły ochrony przed lukami w zabezpieczeniach, reguły antyeksploatowania, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł usługi ASR
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 675d881c3737b67cfdc0207be85285f71455d65c
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666971"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705521"
 ---
-# <a name="step-3-implement-asr-rules"></a>Krok 3: Implementuj reguły usługi ASR
+# <a name="enable-attack-surface-reduction-asr-rules"></a>Włączanie reguł zmniejszania obszaru ataków (ASR)
 
 Implementowanie reguł zmniejszania obszaru ataków (ASR) powoduje przeniesienie pierwszego pierścienia testowego w włączony stan funkcjonalny.
 
@@ -131,10 +131,12 @@ Powiadomienie można dostosować w przypadku wyzwolenia reguły i zablokowania a
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Dodatkowe tematy w tej kolekcji wdrożeń
 
-[Wymagania wstępne dotyczące wdrażania reguł ASR](attack-surface-reduction-rules-deployment.md)
+[Omówienie wdrażania reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Krok 1. Zaplanuj wdrożenie reguł usługi ASR](attack-surface-reduction-rules-deployment-plan.md)
+[Planowanie wdrożenia reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Krok 2. Testuj reguły usługi ASR](attack-surface-reduction-rules-deployment-test.md)
+[Reguły zmniejszania obszaru ataków testowych (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Krok 4: Operacjonalizowanie reguł usługi ASR](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[Dokumentacja reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-reference.md)

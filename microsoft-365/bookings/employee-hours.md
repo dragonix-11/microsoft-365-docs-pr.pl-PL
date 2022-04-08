@@ -1,5 +1,5 @@
 ---
-title: Godziny pracy pracowników w aplikacji Microsoft Bookings
+title: Godziny pracy pracowników w usłudze Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,53 +8,58 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
-description: Ustaw godziny pracy i dostępność pracowników w uwitrynie Microsoft Bookings.
-ms.openlocfilehash: ef283043ecccc959d8ee42da661770a7f95337fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Ustaw godziny pracy i dostępność pracowników w usłudze Microsoft Bookings.
+ms.openlocfilehash: 533cf3075c01753061f153d6dcf16bdb02bfa5a3
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62977625"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714796"
 ---
-# <a name="employee-working-hours-in-microsoft-bookings"></a>Godziny pracy pracowników w aplikacji Microsoft Bookings
+# <a name="employee-working-hours-in-microsoft-bookings"></a>Godziny pracy pracowników w usłudze Microsoft Bookings
 
-Ustawienie godzin pracy pracowników zapewnia, że ich dostępność jest dokładnie pokazana, gdy klienci próbują je zarezerwować. Domyślnie godziny pracy dla każdego z Twoich pracowników są zgodne z godzinami pracy ustalona w aplikacji Microsoft Bookings. Zobacz sekcję "Ustawianie godzin pracy" w [tece Wprowadzanie informacji służbowych](enter-business-information.md).
+> [!NOTE]
+> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
-Na stronie **Personel** możesz dostosować godziny pracy pracowników do potrzeb swojej firmy i pracowników.
+Ustawienie godzin pracy pracowników gwarantuje, że ich dostępność jest dokładnie wyświetlana, gdy klienci próbują je zarezerwować. Domyślnie godziny pracy każdego z pracowników są zgodne z godzinami pracy ustanowionymi w aplikacji Microsoft Bookings. Zobacz sekcję "Ustawianie godzin pracy" w sekcji [Wprowadzanie informacji biznesowych](enter-business-information.md).
 
-Jeśli chcesz zarezerwować czas urlopowy dla członków personelu, aby klienci nie mieli możliwości zarezerwowania ich, gdy są poza biurem, zobacz Planowanie przerw w pracy [,](schedule-closures-time-off-vacation.md) urlopu i urlopu, aby uzyskać instrukcje.
+Na stronie **Personel** można dostosować godziny pracy pracowników do potrzeb firmy i pracowników.
+
+Jeśli chcesz zarezerwować czas wolny dla pracowników, aby klienci nie mogli ich zarezerwować, gdy są poza biurem, zobacz [Planowanie zamknięcia firmy, czas wolny i czas urlopu,](schedule-closures-time-off-vacation.md) aby uzyskać instrukcje.
 
 ## <a name="customize-employee-working-hours"></a>Dostosowywanie godzin pracy pracowników
 
-Obejrzyj ten klip wideo lub wykonaj poniższe czynności, aby ustawić godziny pracy pracownika.
+Obejrzyj to wideo lub wykonaj poniższe kroki, aby ustawić godziny pracy pracownika.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-1. W Microsoft 365 kliknij przycisk Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
+1. W Microsoft 365 wybierz program uruchamiania aplikacji, a następnie wybierz **pozycję Bookings**.
 
-1. W okienku nawigacji wybierz pozycję **Personel**, a następnie wybierz członka personelu, którego godziny chcesz ustawić.
+1. Wybierz kalendarz. 
 
-   ![Obraz ekranu personelu aplikacji Bookings z wyróżnionym imieniem i nazwiskiem.](../media/bookings-staff-name-highlight.png)
+1. W okienku nawigacji wybierz pozycję **Personel**, a następnie wybierz pracownika, którego godziny chcesz ustawić.
 
-1. W obszarze Godziny pracy wyczyść **pole wyboru Użyj godzin** pracy.
+   ![Obraz przedstawiający ekran Bookings personelu z wyróżnioną nazwą.](../media/bookings-staff-name-highlight.png)
 
-1. Za pomocą menu rozwijanych wybierz godziny rozpoczęcia i zakończenia dla każdego dnia. Czas jest dostępny w odstępach 15-minutowych.
+1. W obszarze Godziny pracy wyczyść pole wyboru **Użyj godzin pracy** .
 
-   ![Obraz ekranu godzin pracy personelu aplikacji Bookings.](../media/bookings-staff-hours.png)
+1. Użyj list rozwijanych, aby wybrać godziny rozpoczęcia i zakończenia dla każdego dnia. Czasy są dostępne w odstępach 15 minut.
 
-1. Kliknij, **+** aby dodać selektory czasu rozpoczęcia i zakończenia.
+   ![Obraz przedstawiający ekran Bookings godzin pracy personelu.](../media/bookings-staff-hours.png)
+
+1. Wybierz **+** , aby dodać selektory czasu rozpoczęcia i zakończenia.
 
 1. Wybierz Zapisz.
 
-## <a name="set-an-employees-days-off"></a>Ustawianie dni wolnego od pracownika
+## <a name="set-an-employees-days-off"></a>Ustawianie dni wolnych od pracy pracownika
 
-Gdy zaplanujemysz dzień wolnego dla pracownika, ten pracownik będzie niedostępny na stronie rezerwacji. Klienci korzystający ze strony rezerwacji nie będą mogli zaplanować jego obsługi w tym dniu.
+Gdy planujesz dzień wolny dla pracownika, ten pracownik będzie niedostępny na stronie rezerwacji. Klienci korzystający ze strony rezerwacji nie będą mogli zaplanować obsługi w tym dniu.
 
-1. Na ekranie godzin pracy wybierz **pozycję x** obok dnia wyłączenia pracownika.
+1. Na ekranie godzin pracy wybierz **znak x** obok dnia, w którym pracownik będzie wyłączony.
 
-   ![Obraz ekranu godzin pracy personelu aplikacji Bookings z przyciskiem myszy na x.](../media/bookings-staff-time-off.png)
+   ![Obraz przedstawiający ekran Bookings godzin pracy personelu z przyciskiem myszy na x.](../media/bookings-staff-time-off.png)
 
-1. Jeśli chcesz zaplanować dzień oznaczony wcześniej jako dzień off, **+** wybierz znak obok dnia, który chcesz zaplanować.
+1. Jeśli chcesz zaplanować dzień wcześniej oznaczony jako dzień wolny, wybierz **+** znak obok dnia, który chcesz zaplanować.
 
 > [!TIP]
-> Jeśli planujesz czas urlopu pracownika lub inne duże bloki czasu wolnego, zobacz sekcję "Planowanie urlopu pracownika" w te sposób: Planowanie przerw w pracy, urlopów i [urlopów](schedule-closures-time-off-vacation.md#schedule-employee-time-off).
+> Jeśli planujesz czas urlopu pracownika lub inne duże bloki czasu wolnego, zobacz sekcję "Planowanie czasu wolnego od pracy pracownika" w sekcji [Planowanie zamknięcia firmy, czasu wolnego i czasu urlopu](schedule-closures-time-off-vacation.md#schedule-employee-time-off).

@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: 'Pliki do pobrania : często zadawane pytania'
+  title: Często zadawane pytania dotyczące pobierania
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -11,104 +11,104 @@ metadata:
   ms.service: o365-administration
   ms.custom: commerce_vl
   ms.localizationpriority: medium
-  description: Często zadawane pytania dotyczące pobierania centrum administracyjne platformy Microsoft 365 pobierania.
-  ms.openlocfilehash: 61ac760e8fd75060a45906216d2ee5c0254ee6ae
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  description: Często zadawane pytania dotyczące pobierania Centrum administracyjne platformy Microsoft 365.
+  ms.openlocfilehash: 2abf0ad923f19d9891588bedee23c23150c933e3
+  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63680581"
-title: 'Pliki do pobrania : często zadawane pytania'
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64715236"
+title: Często zadawane pytania dotyczące pobierania
 summary: ''
 sections:
 - name: Ogólne
   questions:
   - question: >
-      Jakie są wymagania dotyczące pobierania oprogramowania ze strony centrum administracyjne platformy Microsoft 365?
-    answer: "Musisz kupić licencję na produkty, które zamierzasz pobrać, i mieć dostęp do prawidłowego klucza produktu dla każdej licencji, aby ukończyć instalację. Zweryfikuj umowę licencyjną przed pobraniem produktów.\n\nWymagania systemowe poszczególnych produktów można znaleźć, logując się do centrum administracyjnego i przechodząc na stronę Twoje **produktyPobierze**  >  stronę > **Opis produktu**. \n\n> [!NOTE]\n> Nie wszystkie produkty wymagają klucza produktu.\n"
+      Jakie są wymagania dotyczące pobierania oprogramowania z Centrum administracyjne platformy Microsoft 365?
+    answer: "Aby ukończyć instalację, musisz kupić licencję na produkty, które planujesz pobrać, i mieć dostęp do ważnego klucza produktu dla każdej licencji. Przed pobraniem produktów sprawdź umowę licencyjną.\n\nWymagania systemowe dla każdego produktu można znaleźć, logując się do centrum administracyjnego i przechodząc do strony **Twoje** **produktyPobierz** >  stronę > **Opis produktu**. \n\n> [!NOTE]\n> Nie wszystkie produkty wymagają klucza produktu.\n"
   - question: >
       Jakie produkty można pobrać z centrum administracyjnego?
     answer: >
-      Jeśli Twoje prawa pobierania są skojarzone z programem Open License, Open Value lub Open Value Subscription, możesz pobrać tylko te produkty, które zostały już kupione. Centrum administracyjne wyświetla pliki do pobrania tylko dla licencji, które zostały kupione.
+      Jeśli twoje prawa do pobierania są skojarzone z programem Open License, Open Value lub Open Value Subscription, możesz pobrać tylko te produkty, które zostały już zakupione. Centrum administracyjne wyświetla pliki do pobrania tylko dla zakupionych licencji.
 
 
-      Inne programy licencjonowania (Select Plus, Enterprise, Campus lub School) pozwalają pobrać dowolny produkt z wykazu przed zakupem licencji.
+      Inne programy licencjonowania (Select Plus, Enterprise, Campus lub School) umożliwiają pobranie dowolnego produktu z wykazu przed zakupem licencji.
 
 
-      Jeśli Twój profil jest połączony zarówno z programem Otwórz, jak i z innymi programami licencjonowania, możesz wyświetlić cały wykaz.
+      Jeśli Twój profil jest połączony zarówno z programem Open, jak i innymi programami licencjonowania, możesz wyświetlić cały wykaz.
 
 
-      Aby ustalić, czy produkt można pobrać:
+      Aby ustalić, czy produkt kwalifikuje się do pobrania:
 
-        1. Wybierz **pozycję Licencjonowanie zbiorowe**, a następnie wybierz produkt lub **Wyświetl pobrane pliki**.
-        2. W **obszarze** Pobierz, jeśli produkt jest niedostępny, zostanie wyświetlony opis "Ten produkt nie jest dostępny do pobrania".
+        1. Wybierz pozycję **Licencjonowanie zbiorowe**, a następnie wybierz produkt lub **Wyświetl pliki do pobrania**.
+        2. W obszarze **Pobierz**, jeśli produkt jest niedostępny, zobaczysz komunikat "Ten produkt nie jest dostępny do pobrania".
   - question: >
-      Co to jest licencja dostępu klienta?
+      Co to jest licencja dostępu klienta (CAL)?
     answer: >
       Licencja dostępu klienta (CAL) to licencja, która daje użytkownikowi prawo dostępu do usług serwera.
 
 
-      Do aktywacji cal nie jest potrzebny plik do pobrania oprogramowania ani klucz produktu. Zamiast tego produkt zostanie aktywowany i zainstalowany za pośrednictwem kreatora aktywacji bezpośrednio z komputera.
+      Nie potrzebujesz pliku pobierania oprogramowania ani klucza produktu, aby aktywować licencję cal. Zamiast tego produkt jest aktywowany i instalowany za pośrednictwem kreatora aktywacji bezpośrednio z komputera.
 
 
-      Oto przykłady certyfikacji:
+      Przykłady list cals obejmują:
         - Serwer z systemem Windows
         - SQL Server
         - Exchange Server
         - Skype dla firm Server
         - SharePoint Server
         - System Center
-        - Project Server
-  - question: "Jak pobrać Office dla komputerów Mac? \n"
+        - serwer Project
+  - question: "Jak mogę pobrać Office dla komputerów Mac? \n"
     answer: >
-      Aby uruchomić wersję pakietu Office dla komputerów Mac licencjonowania zbiorowego, musisz pobrać i zainstalować następujące pliki:
-        - Pakiet [serializatora licencji zbiorowej](/deployoffice/mac/volume-license-serializer) znajdujący się w pliku Office dla komputerów Mac pobierania.
-        - Pakiet [Office dla komputerów Mac instalacji](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Pliki pakietów Instalatora dla poszczególnych aplikacji są również dostępne na centrum administracyjne platformy Microsoft 365. Office dla komputerów Mac nie wymaga klucza produktu, ponieważ program VL Serializer służy do aktywowania wersji programu Office dla komputerów Mac z licencją Office dla komputerów Mac.
+      Aby uruchomić wersję licencjonowania zbiorowego Office dla komputerów Mac, należy pobrać i zainstalować następujące pliki:
+        - Pakiet [serializatora licencji zbiorczej (VL)](/deployoffice/mac/volume-license-serializer) znajdujący się w pliku pobierania Office dla komputerów Mac.
+        - [Pakiet instalacyjny Office dla komputerów Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Pliki pakietów instalatora dla poszczególnych aplikacji są również dostępne w Centrum administracyjne platformy Microsoft 365. Office dla komputerów Mac nie wymaga klucza produktu, ponieważ serializator VL jest używany do aktywowania licencjonowanej zbiorczo wersji Office dla komputerów Mac.
   - question: >
-      Jak pobrać produkty z centrum administracyjnego?
-    answer: "Aby pobrać produkty z centrum administracyjnego:\n1. Wybierz **pozycję Licencjonowanie zbiorowe**, a następnie wybierz produkt lub **Wyświetl pobrane pliki**.\n2. W **obszarze** Pobierz wybierz składnik i wybierz akcję pobierania lub ikonę pobierania. \n\nAby uzyskać dostęp do plików do pobrania w centrum administracyjnym, administrator VLSC w Twojej organizacji może udzielić Ci dostępu, przypisując Ci jedną z tych ról:\n  - Administrator\n  - Pobierz\n  - Menedżer software Assurance\n"
+      Jak mogę pobrać produkty w centrum administracyjnym?
+    answer: "Aby pobrać produkty w centrum administracyjnym:\n1. Wybierz pozycję **Licencjonowanie zbiorowe**, a następnie wybierz produkt lub **Wyświetl pliki do pobrania**.\n2. W obszarze **Pobierz** wybierz składnik i wybierz akcję pobierania lub ikonę pobierania. \n\nAby uzyskać dostęp do plików do pobrania w centrum administracyjnym, administrator VLSC w organizacji może zapewnić dostęp, przypisując Cię do jednej z następujących ról:\n  - Administratora\n  - Pobierz\n  - Menedżer pakietu Software Assurance\n"
   - question: >
-      Jak zmienić ustawienia pobierania?
+      Jak mogę zmienić ustawienia pobierania?
     answer: >
       Aby uzyskać dostęp do ustawień pobierania w centrum administracyjnym:
 
-      1. Wybierz **pozycję Licencjonowanie zbiorowe**, a następnie wybierz produkt lub **Wyświetl pobrane pliki**.
+      1. Wybierz pozycję **Licencjonowanie zbiorowe**, a następnie wybierz produkt lub **Wyświetl pliki do pobrania**.
 
-      2. W **obszarze Pobierz** wybierz **pozycję Typ** **języka i systemu operacyjnego**.
+      2. W obszarze **Pobierz** wybierz pozycję **Język** i **typ systemu operacyjnego**.
 
 
       > [!NOTE]
 
-      > Blokowanie wyskakujących okienek może blokować pobieranie. Upewnij się, że blokowanie wyskakujących okienek jest wyłączone podczas pobierania oprogramowania z centrum administracyjnego.
+      > Wyskakujące blokady mogą blokować pobieranie. Upewnij się, że wyskakujące blokery są wyłączone podczas pobierania oprogramowania z centrum administracyjnego.
   - question: >
       Co to są pliki EXE i ISO?
-    answer: "Pobierając produkty z centrum administracyjnego, możesz wybrać dwa typy plików:\n  \n  - **Pliki wykonywalne (EXE)** można pobierać i instalować w tym samym systemie, ale nie można tworzyć osobnych dyskietek rozruchowych do instalacji na innych komputerach.\n  - **Pliki obrazów ISO (International Standards Organization)** są dokładnymi reprezentacjami zawartości i formatu logicznego. Możesz je zainstalować na komputerze używanym do pobierania pakietu lub zapisać pliki na dyskach w celu rozpowszechniania i instalowania na innych komputerach.\n\n> [!NOTE]\n> Nie wszystkie produkty są dostępne we wszystkich językach i we wszystkich formatach.\n"
+    answer: "Podczas pobierania produktów z centrum administracyjnego można wybrać dwa typy plików:\n  \n  - **Pliki wykonywalne (EXE)** można pobrać i zainstalować w tym samym systemie, ale nie można utworzyć oddzielnych dysków rozruchowych do instalacji na innych komputerach.\n  - **Pliki obrazów ISO (International Standards Organization)** są dokładnymi reprezentacjami zawartości i formatu logicznego. Można je zainstalować na komputerze używanym do pobierania pakietu lub zapisywania plików na dyskach w celu dystrybucji i instalacji na innych komputerach.\n\n> [!NOTE]\n> Nie wszystkie produkty są dostępne we wszystkich językach i we wszystkich formatach.\n"
   - question: >
-      Jak pobrać i zapisać plik obrazu ISO na dysku CD-R lub DVD-R za pomocą oprogramowania do plików obrazów ISO?
+      Jak mogę używać oprogramowania do plików obrazów ISO do pobierania i zapisywania pliku obrazu ISO na dysku CD-R lub DVD-R?
     answer: >
-      Jeśli używasz komputera z systemem operacyjnym Windows, nie potrzebujesz dodatkowego oprogramowania, aby nagrać dysk CD-R lub DVD-R. Kliknij dwukrotnie pobrany plik ISO, a następnie postępuj zgodnie z instrukcjami Kreatora kreatorów obrazów.
+      Jeśli używasz komputera z systemem operacyjnym Windows, nie potrzebujesz dodatkowego oprogramowania do nagrywania dysku CD-R lub DVD-R. Kliknij dwukrotnie pobrany plik ISO, a następnie wykonaj kroki opisane w Kreatorze nagrywania obrazów.
 
 
-      Jeśli korzystasz z systemu operacyjnego innego niż Windows, może być potrzebne dodatkowe oprogramowanie. Jeśli Komputer jest wyposażony w dysk CD/DVD, prawdopodobnie oprogramowanie jest ładowane na komputerze. Większość programów do pisania dysków CD-R/DVD-R umożliwia tworzenie dysku na podstawie pliku obrazu. Wybierz element menu, taki jak **Kopiuj obraz na dysk CD** lub **Nagraj obraz, aby uzyskać** dostęp do tej funkcji.
+      Jeśli używasz dowolnego systemu operacyjnego innego niż Windows, może być potrzebne dodatkowe oprogramowanie. Jeśli komputer jest wyposażony w nagrywarkę CD/DVD, oprogramowanie jest prawdopodobnie ładowane na komputerze. Większość oprogramowania do pisania CD-R/DVD-R umożliwia utworzenie dysku na podstawie pliku obrazu. Wybierz element menu, taki jak **Kopiowanie obrazu na dysk CD** lub **Nagraj obraz, aby uzyskać dostęp** do tej funkcji.
   - question: >
-      Jak  zainstalować pliki ISO i uzyskać do nich dostęp jako urządzenie wirtualne?
+      Jak mogę zainstalować pliki ISO i uzyskiwać do nich dostęp jako urządzenie wirtualne?
     answer: >
-      Jeśli na komputerze lub nośniku nie jest zainstalowany dysk CD/DVD, możesz zainstalować plik ISO jako dysk wirtualny. Dzięki tej metodzie komputer tak uważa, że plik jest prawdziwym dyskiem twardym i można odczytywać pliki z tego dysku wirtualnego.
+      Jeśli na komputerze nie zainstalowano nagrywarki CD/DVD lub nośnik nie jest dostępny, możesz zainstalować plik ISO jako dysk wirtualny. Dzięki tej metodzie komputer uważa, że plik jest prawdziwym dyskiem dyskowym i można odczytywać pliki z tego dysku wirtualnego.
 
 
       > [!NOTE]
 
-      > Ta metoda zaleca się tylko w przypadku instalowania aplikacji, takich Office lub drobnych uaktualnień systemu. Nie można zainstalować systemu operacyjnego przy użyciu tej metody, ponieważ dysk wirtualny znika podczas instalacji.
+      > Takie podejście jest zalecane tylko w przypadku instalowania aplikacji, takich jak Office lub drobne uaktualnienia systemu. Nie można zainstalować systemu operacyjnego przy użyciu tego podejścia, ponieważ dysk wirtualny znika podczas instalacji.
   - question: >
-      Jak uzyskać pomoc techniczną dla pobranych produktów?
+      Jak mogę uzyskać pomoc techniczną dotyczącą pobranych produktów?
     answer: >
-      Aby uzyskać listę opcji pomocy technicznej, zobacz [Pomoc techniczna Microsoft](https://support.microsoft.com/). Niektórzy klienci korzystający z licencjonowania zbiorowego mogą korzystać z pomocy technicznej dotyczącej rozwiązywania problemów, korzyści software Assurance. Przejrzyj korzyści z pakietu Software Assurance, aby potwierdzić swoje uprawnienia.
+      Aby uzyskać listę opcji pomocy technicznej, zobacz [pomoc techniczna firmy Microsoft](https://support.microsoft.com/). Niektórzy klienci licencjonowania zbiorowego mogą korzystać z pomocy technicznej rozwiązywania problemów, czyli korzyści z pakietu Software Assurance. Przejrzyj korzyści z pakietu Software Assurance, aby zweryfikować swoje uprawnienia.
   - question: >
-      Gdzie można znaleźć pomoc techniczną dla tematów poruszanych w tych często zadawanych pytaniach?
+      Gdzie mogę znaleźć pomoc techniczną dotyczącą tematów omówionych w tym często zadawanych pytaniach?
     answer: >
-      Aby uzyskać więcej zasobów szkoleniowych, w tym klipy wideo, zobacz Szkolenia i zasoby [dotyczące centrum Volume Licensing Service Center firmy Microsoft](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
+      Aby uzyskać więcej zasobów szkoleniowych, w tym wideo, zobacz [Szkolenia i zasoby centrum licencjonowania zbiorowego firmy Microsoft](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
   - question: >
-      Jak mogę skontaktować się z pomocą techniczną firmy Microsoft?
+      Jak mogę skontaktować się z pomoc techniczna firmy Microsoft?
     answer: >
-      Aby uzyskać informacje na temat telefonicznej pomocy technicznej dotyczącej klienta VLSC lub formularza sieci Web, zobacz [Kontakt z nami](/licensing/contact-us). Firma Microsoft odpowie na przesłanie formularza sieci Web w ciągu 24 godzin.
-additionalContent: "\n## <a name=\"additional-resources\"></a>Dodatkowe materiały\n\n- [Klucze produktu — często zadawane pytania](product-keys-faq.yml)\n\n- [Aktywacja usług online dla otwartych programów — często zadawane pytania](online-service-activation-faq.yml)"
+      Aby uzyskać pomoc techniczną dotyczącą telefonu klienta VLSC lub formularza internetowego, zobacz [Kontakt z nami](/licensing/contact-us). Firma Microsoft odpowiada na przesyłanie formularzy internetowych w ciągu 24 godzin.
+additionalContent: "\n## <a name=\"additional-resources\"></a>Dodatkowe materiały\n\n- [Klucze produktów — często zadawane pytania](product-keys-faq.yml)\n\n- [Aktywacja usług online dla programów Open — często zadawane pytania](online-service-activation-faq.yml)"

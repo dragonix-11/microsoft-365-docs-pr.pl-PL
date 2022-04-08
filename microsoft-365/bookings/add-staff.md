@@ -1,5 +1,5 @@
 ---
-title: Dodawanie personelu do rezerwacji
+title: Dodaj pracowników do aplikacji Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,102 +7,102 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
-description: Na tej stronie możesz utworzyć listę personelu i zarządzać szczegółami członków personelu, takimi jak imię i nazwisko, numer telefonu i adres e-mail.
-ms.openlocfilehash: 03ebf5c21e40d53e87067866e05fc37c2c255331
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+description: Ta strona służy do tworzenia listy pracowników i zarządzania danymi pracowników, takimi jak imię i nazwisko, numer telefonu i adres e-mail.
+ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "63015788"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713938"
 ---
-# <a name="add-staff-to-bookings"></a>Dodawanie personelu do rezerwacji
+# <a name="add-staff-to-bookings"></a>Dodaj pracowników do aplikacji Bookings
 
-Na stronie Personelu w aplikacji Bookings możesz utworzyć listę personelu i zarządzać szczegółami członków personelu, takimi jak imię i nazwisko, numer telefonu oraz adres e-mail. W tym miejscu możesz również ustawić godziny pracy dla każdego członka personelu.
+> [!NOTE]
+> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
+
+Strona Personel w Bookings to miejsce, w którym tworzysz listę pracowników i zarządzasz danymi pracowników, takimi jak imię i nazwisko, numer telefonu i adres e-mail. W tym miejscu można również ustawić godziny pracy dla każdego pracownika.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Mimo że bookings jest funkcją Microsoft 365, nie wszyscy członkowie personelu muszą mieć Microsoft 365 konta. Wszyscy członkowie personelu muszą mieć prawidłowy adres e-mail, aby otrzymać rezerwacje i zaplanować zmiany.
+Chociaż Bookings jest cechą Microsoft 365, nie wszyscy pracownicy muszą mieć konto Microsoft 365. Wszyscy pracownicy muszą mieć prawidłowy adres e-mail, aby mogli otrzymywać rezerwacje i planować zmiany.
 
-## <a name="watch-add-your-staff-to-bookings"></a>Obejrzyj: Dodawanie personelu do aplikacji Bookings
+## <a name="watch-add-your-staff-to-bookings"></a>Obejrzyj: Dodaj pracowników do Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
 ## <a name="steps"></a>Kroki
 
-> [!NOTE]
-> Te kroki nie są jeszcze dostępne w nowym środowisko obsługi rezerwacji.
+1. Wybierz kalendarz na stronie głównej. 
 
-1. Przejdź na stronę [Zarządzanie personelem i](https://outlook.office.com/bookings/staff) wybierz pozycję **Dodaj personel**
+2. Przejdź do opcji personelu w lewym okienku i wybierz pozycję **Dodaj nowych pracowników**.
 
-2. Wybierz przycisk **Dodaj personel** .
+3. Podczas dodawania pracowników z organizacji wpisz ich imię i nazwisko w polu **Dodaj osoby** i wybierz je, gdy pojawią się w menu rozwijanym. Pozostałe pola zostaną automatycznie wypełnione.
 
-3. Podczas dodawania pracowników z organizacji wpisz ich nazwiska w polu Dodaj osoby  i zaznacz je, gdy pojawią się w menu rozwijaym. Pozostałe pola zostaną automatycznie wypełnione.
+    Po dodaniu członka personelu możesz edytować nazwę wyświetlaną we wszystkich Bookings komunikacji, wybierając **znak x** obok jego nazwy i edytując pole **Dodaj osoby**. Może to być przydatne, jeśli chcesz, aby pracownicy mieli określony tytuł lub nazwę wyświetlaną dla klientów, na przykład wymieniając Adele Vance jako "Dr Vance, MD".
 
-    Po dodaniu członka personelu możesz edytować nazwę wyświetlaną we wszystkich informacjach dotyczących usługi Bookings, wybierając **znak x** obok jego imienia i nazwiska oraz edytując pole **Dodaj** osoby. Może to być przydatne, jeśli chcesz, aby członkowie personelu mieli określone stanowisko lub imię i nazwisko wyświetlane dla klientów, na przykład imię i nazwisko Adele Vance jako "Dr. Vance, MD".
-
-4. Aby dodać pracowników spoza organizacji, ręcznie wprowadź ich adresy e-mail i inne informacje.
+4. Aby dodać pracowników spoza organizacji, ręcznie wypełnij adres e-mail i inne informacje.
 
     > [!NOTE]
-    > Pracownicy spoza Twojej dzierżawy nie będą mogli udostępniać informacji o godzinie wolny/zajęty za pomocą usługi Bookings.
+    > Pracownicy spoza dzierżawy nie będą mogli udostępniać Bookings informacji wolnych/zajętych.
 
 5. Dla każdego członka personelu wybierz rolę: Administrator, Przeglądarka lub Gość.
     - **Administratorzy** mogą edytować wszystkie ustawienia, dodawać i usuwać pracowników oraz tworzyć, edytować lub usuwać rezerwacje.
-    - **Widzą** wszystkie rezerwacje w kalendarzu, ale nie mogą ich modyfikować ani usuwać. Mają dostęp tylko do odczytu do ustawień.
+    - **Osoby przeglądające** mogą zobaczyć wszystkie rezerwacje w kalendarzu, ale nie mogą ich modyfikować ani usuwać. Mają dostęp tylko do odczytu do ustawień.
     - **Goście** mogą zostać przypisani do rezerwacji, ale nie mogą otworzyć skrzynki pocztowej rezerwacji.
 
-6. Wybierz **pozycję Powiadom wszystkich pracowników pocztą e-mail** o utworzeniu lub zmianie rezerwacji, aby włączyć obsługę wiadomości e-mail personelu. Poniżej przedstawiono przykładowy adres e-mail:
+6. Wybierz pozycję **Powiadom wszystkich pracowników za pośrednictwem poczty e-mail, gdy zostanie utworzona lub zmieniona rezerwacja** , aby włączyć wiadomości e-mail pracowników. Poniżej znajduje się przykładowa wiadomość e-mail:
 
-    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Wiadomość e-mail z powiadomieniem od usługi Bookings.":::
+    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Wiadomość e-mail z powiadomieniem z Bookings.":::
 
-7. Wybierz **pozycję Zdarzenia Office 365** mają wpływ na dostępność, jeśli chcesz, aby informacje o wolnym/zajętym z kalendarzy członków personelu miały wpływ na dostępność usług rezerwacji za pośrednictwem aplikacji Bookings.
+7. Wybierz pozycję **Zdarzenia w kalendarzu Office 365 wpływać na dostępność**, jeśli chcesz, aby informacje o bezpłatnym/zajętym dostępie z kalendarzy pracowników miały wpływ na dostępność usług rezerwacji za pośrednictwem Bookings.
 
-    Jeśli na przykład członek personelu ma spotkanie zespołu lub osobisty termin zaplanowany na 15:00 w środę, usługa Bookings pokaże, że członek personelu jest niedostępny w tym czasie. Ten czas będzie wyświetlany jako Zajęty lub Wstępna akceptacja w widoku kalendarza aplikacji Bookings, jak pokazano w poniższym przykładzie.
+    Jeśli na przykład członek personelu ma spotkanie zespołu lub spotkanie osobiste zaplanowane na godzinę 15:00 w środę, Bookings pokaże, że pracownik jest niedostępny do zarezerwowania w tym przedziale czasu. Ten czas będzie wyświetlany jako zajęty lub wstępny w widoku kalendarza Bookings, jak pokazano w poniższym przykładzie.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Widok kalendarza aplikacji Bookings.":::
+    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Widok kalendarza Bookings.":::
 
 > [!IMPORTANT]
-> Zdecydowanie zalecamy pozostawienie tego ustawienia włączonego (domyślnie jest włączone) w celu uniknięcia podwójnej rezerwacji i zoptymalizowania dostępności członków personelu.
+> Zdecydowanie zalecamy pozostawienie tego ustawienia włączone (jest domyślnie włączone), aby uniknąć podwójnych rezerwacji i zoptymalizować dostępność pracowników.
 
-8. Wybierz **pozycję Użyj godzin** pracy, aby ustawić, że wszystkie godziny, w których można rezerwować, mają być dostępne dla członków personelu tylko  w godzinach pracy określonych w sekcji Godziny pracy na stronie Informacje służbowe.
+8. Wybierz pozycję **Użyj godzin pracy** , aby ustawić wszystkie godziny rezerwacji dla pracowników tylko w godzinach roboczych ustawionych w sekcji **Godziny pracy** na stronie Informacje biznesowe.
 
-    Usuwając zaznaczenie tego pola, pracownicy mogą mieć niestandardowe godziny, w przypadku których można dodatkowo ograniczyć możliwość rezerwacji. Jest to przydatne w sytuacjach, gdy członek personelu może być w miejscu tylko we wtorków i środach lub jeśli jego poranek jest poświęcany na jeden typ terminów, a po południu na inne typy.
+    Usuwając zaznaczenie tego pola, personel może otrzymać niestandardowe godziny, które dodatkowo ograniczają możliwość rezerwacji. Jest to przydatne w scenariuszach, w których pracownik może znajdować się tylko we wtorki i środy na miejscu lub poświęca poranki na jeden rodzaj spotkań i popołudnia dla innych typów.
 
     > [!NOTE]
-    > W aplikacji Bookings można 100 członków personelu w kalendarzu aplikacji Bookings.
+    > Bookings obsługuje maksymalnie 100 pracowników w kalendarzu Bookings.
 
-## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Nadaj użytkownikowi aplikacji Bookings uprawnienia użytkownika superzmiejscowego bez dodawania go jako personelu w aplikacji Bookings
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Nadaj użytkownikowi Bookings superużytkownika bez dodawania go jako personelu w Bookings
 
-Możesz chcieć dodać osobę do listy pracowników w aplikacji Bookings, nie dokonując jej dla klientów lub klientów. Gdy nadasz im uprawnienia administratora, zostanie administratorem skrzynki pocztowej rezerwacji. Uprawnienia administratora skrzynki pocztowej rezerwacji to uprawnienia pełnego dostępu i wysyłania do skrzynki pocztowej rezerwacji.
+Możesz dodać osobę do listy pracowników w Bookings bez udostępniania jej klientom lub klientom. Gdy staniesz się superużytkownikiem, zostanie administratorem skrzynki pocztowej rezerwacji. Bycie administratorem skrzynki pocztowej rezerwacji jest definiowane jako posiadające pełny dostęp i uprawnienia do wysyłania jako do skrzynki pocztowej rezerwacji.
 
 > [!NOTE]
-> Te kroki działają tylko wtedy, gdy dodany użytkownik nie ma jeszcze przypisanej roli osoby  oglądającego w aplikacji Bookings.
+> Te kroki działają tylko wtedy, gdy dodawanemu użytkownikowi nie przypisano jeszcze roli **przeglądarki** w Bookings.
 
 1. [Połączenie do Microsoft 365 za pomocą programu PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. Przy użyciu programu PowerShell przypisz pełny dostęp za pomocą następujących poleceń:
+2. Za pomocą programu PowerShell przypisz pełny dostęp za pomocą następujących poleceń:
 
     ```powershell
     Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
     ```
 
-3. Następnie uruchom to polecenie, aby przypisać uprawnienia wysyłania jako.
+3. Następnie uruchom to polecenie, aby przypisać uprawnienia typu send-as.
 
     ```powershell
     Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
     ```
 
-Oto przykładowe polecenie programu PowerShell służące do dodawania Allie Bellew do skrzynki pocztowej rezerwowania dni firmy Contoso.
+Oto przykładowe polecenie programu PowerShell, aby dodać Allie Bellew do skrzynki pocztowej rezerwacji przedszkola firmy Contoso.
 
-1. Pierwsze uruchomienie tego polecenia:
+1. Najpierw uruchom następujące polecenie:
 
     ```powershell
     Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
     ```
 
-2. Następnie uruchom to polecenie:
+2. Następnie uruchom następujące polecenie:
 
     ```powershell
     Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
-**Allie Bellew** ma teraz dostęp administratora, ale nie jest wyświetlana jako personel rezerwowalny w aplikacji Bookings.
+**Allie Bellew** ma teraz dostęp administratora, ale nie pojawia się jako personel z możliwością rezerwacji w Bookings.

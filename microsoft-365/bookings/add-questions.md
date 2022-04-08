@@ -1,5 +1,5 @@
 ---
-title: Dodawanie niestandardowych i wymaganych pytań do strony rezerwacji
+title: Dodaj pytania niestandardowe i wymagane do strony rezerwacji
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,68 +8,73 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
-description: Jeśli musisz zadawać klientom pytania podczas rezerwowania u ciebie terminu online, możesz dodać do strony rezerwacji niestandardowe pytania i wymagane pytania.
-ms.openlocfilehash: d7d997ff02e2a6b8d849cb50014924733bac8e32
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Jeśli musisz zadawać klientom pytania podczas rezerwacji spotkania online, możesz dodać niestandardowe pytania i wymagane pytania do strony rezerwacji.
+ms.openlocfilehash: 9830dfaa9ac1964e74eb16321d061e096aad1bab
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984558"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714620"
 ---
-# <a name="add-custom-and-required-questions-to-the-booking-page"></a>Dodawanie niestandardowych i wymaganych pytań do strony rezerwacji
-
-Aplikacja Bookings pozwala tworzyć pytania, zadawać klientom pytania podczas rezerwacji terminów. Pozwala także wybrać, które pytania są wymagane.
-
-Skojarzysz pytania z usługą, aby każda usługa mieć inny zestaw pytań. Na przykład stylista może zapytać klientów rezerwjących termin kolorowania, czy mają jakieś znane alergie na spady lub odcienie. Dzięki temu Ty i Twoi klienci możecie zaoszczędzić czas, gdy przychodzicie na spotkanie.
-
-Klienci zobaczą niestandardowe pytania podczas tworzenia terminu na stronie rezerwacji. Pracownicy zobaczą niestandardowe pytania podczas tworzenia nowej rezerwacji w kalendarzu aplikacji Bookings lub podczas wyświetlania istniejącego terminu. Usługa Bookings zapisuje wszystkie Twoje pytania na liście głównej, dzięki czemu nie trzeba ponownie tworzyć tych samych pytań dla każdej usługi. Możesz także określić, czy pytania są wymagane, czy opcjonalne.
+# <a name="add-custom-and-required-questions-to-the-booking-page"></a>Dodaj pytania niestandardowe i wymagane do strony rezerwacji
 
 > [!NOTE]
-> Odpowiedzi klientów na pytania są widoczne po spojrzeniu na jego termin w kalendarzu rezerwacji.
+> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
-Aby uzyskać więcej informacji na temat personalizowania i dostosowywania strony rezerwacji, zobacz [Dostosowywanie strony rezerwacji](customize-booking-page.md).
+Bookings umożliwia tworzenie pytań, które należy zadać klientom podczas rezerwacji terminów. Pozwala również wybrać, które pytania są wymagane.
+
+Pytania można skojarzyć z usługą, aby każda usługa mogła mieć inny zestaw pytań. Na przykład stylista włosów może zapytać klientów, którzy rezerwują termin kolorowania włosów, czy mają jakieś znane alergie na wybielenia lub odcienie. Dzięki temu Ty i Twoi klienci zaoszczędzicie czas, gdy przyjadą na spotkanie.
+
+Klienci zobaczą niestandardowe pytania podczas tworzenia terminu na stronie rezerwacji. Pracownicy zobaczą niestandardowe pytania podczas tworzenia nowej rezerwacji z kalendarza Bookings lub podczas wyświetlania istniejącego terminu. Bookings zapisuje wszystkie pytania na liście wzorcowej, aby nie trzeba było ponownie tworzyć tych samych pytań dla każdej usługi. Możesz również wybrać, czy pytania są wymagane, czy opcjonalne.
+
+> [!NOTE]
+> Odpowiedzi klienta na pytania można znaleźć, gdy spojrzysz na jego termin w kalendarzu rezerwacji.
+
+Aby uzyskać więcej informacji o sposobie personalizowania i dostosowywania strony rezerwacji, zobacz [Dostosowywanie strony rezerwacji](customize-booking-page.md).
 
 ## <a name="add-custom-questions-to-your-services"></a>Dodawanie niestandardowych pytań do usług
 
-1. Zaloguj się do Microsoft 365 i przejdź do konta **Bookings**.
+1. Zaloguj się do Microsoft 365 i przejdź do **Bookings**.
 
-1. Przejdź do **usługi i** edytuj istniejącą usługę lub **pozycję Dodaj usługę**.
+1. Wybierz kalendarz.
 
-1. Przewiń w dół do **sekcji Pola** niestandardowe, a następnie wybierz pozycję **Modyfikuj**.
+1. Przejdź do **obszaru Usługi** i edytuj **istniejącą usługę lub Dodaj usługę**.
 
-   Dodaliśmy już kilka podstawowych pytań dotyczących informacji o klientach: adres e-mail, numer telefonu, adres i uwagi klientów. Przy pierwszym przypadku pytania dotyczące informacji o klientach są wyróżniane na szaro. Oznacza to, że użytkownik zobaczy to pytanie. Jeśli wybierzesz pytanie, pole wyróżnienia wokół niego zniknie i klient nie zostanie zadany.
+1. Wybierz sekcję **Pola niestandardowe** .
 
-   W tym przykładzie wyłączono numer telefonu i notatki klienta i utworzono dwa nowe pytania niestandardowe do zadawania.
+   Dodaliśmy już kilka podstawowych pytań dotyczących informacji o kliencie: adres e-mail klienta, numer telefonu, adres klienta i notatki klienta. Przy pierwszym uruchomieniu pytania dotyczące informacji o kliencie są wyróżnione kolorem szarym. Oznacza to, że użytkownik zobaczy to pytanie. Jeśli wybierzesz pytanie, pole wyróżnienia wokół niego zniknie, a klient nie zostanie poproszony o to pytanie.
 
-   ![Obraz ekranu z pytaniami niestandardowymi.](../media/bookings-questions-custom-fields.png)
+   W tym przykładzie numer telefonu i notatki klientów zostały wyłączone i utworzeliśmy dwa nowe pytania niestandardowe do zadawania.
 
-1. Aby pytanie było wymagane, zaznacz pole **wyboru** Wymagane. Klient nie będzie mógł dokończyć rezerwacji, dopóki nie odpowie na wymagane pytania.
+   ![Obraz przedstawiający ekran pytań niestandardowych.](../media/bookings-questions-custom-fields.png)
 
-1. Aby utworzyć pytanie niestandardowe, wybierz pozycję **Dodaj pytanie** u góry panelu. Wpisz pytanie, a następnie wybierz pozycję **Zapisz**.
+1. Aby pytanie było wymagane, zaznacz pole wyboru **Wymagane** . Klient nie będzie mógł ukończyć rezerwacji, dopóki nie odpowie na wymagane pytania.
 
-1. Kliknij pytanie, aby je włączyć. Wokół niego pojawi się wyróżnione pole z włączonym pytaniem.
+1. Aby utworzyć pytanie niestandardowe, wybierz **pozycję Dodaj pytanie** w górnej części panelu. Napisz pytanie, a następnie wybierz pozycję **Zapisz**.
 
-1. Kliknij **przycisk OK** w górnej części strony, a następnie kliknij **pozycję Zapisz usługę**.
+1. Kliknij pytanie, aby go włączyć. Wokół niego zostanie wyświetlone wyróżnione pole i pytanie zostanie włączone.
 
-Usługa Bookings zapisze wszystkie niestandardowe pytania na liście głównej, dzięki czemu możesz łatwo dodawać pytania do każdej usługi bez konieczności wielokrotnego wpisywania tych samych pytań. Jeśli na przykład otworzysz inną usługę, pytanie utworzone dla pierwszej usługi będzie wyświetlane w sekcji Pola niestandardowe, ale zostanie wyłączone. Kliknij pytanie, aby było wyświetlane wyróżniony prostokąt i aby je włączyć.
+1. Kliknij przycisk **OK** w górnej części strony, a następnie **zapisz usługę**.
 
-W tym przykładzie widać, że pytania dodane dla pierwszej usługi są dostępne dla tej usługi. Wszelkie pytania dotyczące tej usługi będą dostępne dla wszystkich usług.
+Bookings zapisze wszystkie pytania niestandardowe na liście głównej, aby można było łatwo dodawać pytania do każdej usługi bez konieczności wielokrotnego wpisywania tych samych pytań. Jeśli na przykład otworzysz inną usługę, pytanie utworzone dla pierwszej usługi zostanie wyświetlone w sekcji Pola niestandardowe, ale zostanie wyłączone. Kliknij pytanie, aby wyświetlić wyróżniony prostokąt i włączyć pytanie.
 
-   ![Obraz pytań wyświetlanych dla wielu usług.](../media/bookings-questions-services.png)
+W tym przykładzie widać, że pytania, które zostały dodane do pierwszej usługi, są dostępne dla tej usługi. Wszelkie pytania utworzone dla tej usługi będą dostępne dla wszystkich usług.
 
-Jeśli Twoja strona rezerwacji jest już opublikowana, nie musisz nic więcej robić. Klienci zobaczą pytania po następnym zarezerwowaniu u Ciebie rezerwacji. Jeśli twoja strona rezerwacji nie została jeszcze opublikowana, przejdź do  strony rezerwacji w aplikacji Outlook w sieci Web, a następnie wybierz pozycję **Zapisz i opublikuj**.
+   ![Obraz przedstawiający pytania, które pojawiają się w przypadku wielu usług.](../media/bookings-questions-services.png)
+
+Jeśli twoja strona rezerwacji jest już opublikowana, nie musisz robić nic innego. Klienci zobaczą pytania podczas następnej rezerwacji z Tobą. Jeśli strona rezerwacji nie została jeszcze opublikowana, przejdź do **strony rezerwacji** z Outlook w sieci Web, a następnie wybierz pozycję **Zapisz i opublikuj**.
 
 > [!WARNING]
-> Możesz również usuwać pytania z listy głównej. Jednak usunięcie pytania spowoduje jego usunięcie z każdej usługi. Zalecamy wyłączenie pytania, zaznaczając je w celu zagwarantowania, że żadne inne usługi nie będą miały wpływu na inne usługi. Jeśli pytanie nie jest otoczone wyróżniony prostokątem, pytanie jest wyłączone.
+> Możesz również usunąć pytania z listy głównej. Jeśli jednak usuniesz pytanie, zostanie ono usunięte z każdej usługi. Zalecamy wyłączenie pytania, wybierając je, aby upewnić się, że nie ma to wpływu na żadne inne usługi. Widać, że pytanie jest wyłączone, jeśli nie jest otoczone wyróżnionym prostokątem.
 
 ## <a name="customer-experience"></a>Obsługa klienta
 
-Gdy klienci zarezerwują u Ciebie termin, podstawowe pytania dotyczące informacji o klientach będą wyświetlane w **sekcji Dodaj** szczegóły. Wszelkie dostosowane pytania, które dodasz, będą dostępne w **sekcji Podaj dodatkowe** informacje.
+Gdy klienci zarezerwują spotkanie z Tobą, podstawowe pytania dotyczące informacji o kliencie zostaną wyświetlone w sekcji **Dodawanie szczegółów** . Wszelkie dodane niestandardowe pytania znajdują się w sekcji **Podaj dodatkowe informacje** .
 
-![Obraz tego, co widzą klienci po włączeniu pytań.](../media/bookings-questions-customer.png)
+![Obraz przedstawiający to, co klienci widzą po włączeniu pytań.](../media/bookings-questions-customer.png)
 
-## <a name="staff-experience"></a>Środowisko personelu
+## <a name="staff-experience"></a>Doświadczenie personelu
 
-Gdy klienci zarezerwują u Ciebie termin, pracownicy zobaczą pytania i odpowiedzi klientów w kalendarzu rezerwacji. Aby go wyświetlić, przejdź do **aplikacji Kalendarz aplikacji Bookings** \> **, a** następnie otwórz termin.
+Gdy klienci zarezerwują spotkanie z Tobą, pracownicy zobaczą pytania i odpowiedzi klienta w kalendarzu rezerwacji. Aby go zobaczyć, przejdź do **Bookings** \> **Calendar**, a następnie otwórz termin.
 
-![Obraz tego, co widzą pracownicy, gdy są włączone pytania.](../media/bookings-questions-staff.png)
+![Obraz przedstawiający informacje o tym, co pracownicy widzą, gdy pytania są włączone.](../media/bookings-questions-staff.png)

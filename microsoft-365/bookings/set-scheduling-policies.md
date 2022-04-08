@@ -1,5 +1,5 @@
 ---
-title: Ustawianie zasad planowania
+title: Ustaw zasady planowania
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,41 +8,44 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
-description: Dowiedz się, jak ustawić zasady planowania dla swojej firmy. Zasady planowania obejmują długość terminów oraz akceptowalny czas realizacji i anulowania.
-ms.openlocfilehash: e2d59feec2cb50bd51f4b6d2a411b48183a5d549
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Dowiedz się, jak ustawić zasady planowania dla swojej firmy. Zasady planowania obejmują długość terminów, a także akceptowalne czasy potencjalnego klienta i anulowania.
+ms.openlocfilehash: 8093a1c207a418f5d73e7e748727a4da93546a5a
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973520"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714290"
 ---
-# <a name="set-your-scheduling-policies"></a>Ustawianie zasad planowania
+# <a name="set-your-scheduling-policies"></a>Ustaw zasady planowania
 
-Nie wszystkie terminy są takie same. Niektóre z nich mogą potrwać tylko kilka minut, natomiast inne mogą potrwać kilka godzin lub dłużej. W uwitrynie Microsoft Bookings strona rezerwacji to miejsce, do którego są ustawiane zasady planowania dla twojej firmy. Zasady planowania obejmują długość terminów, akceptowalny czas realizacji i anulowania oraz automatyczne powiadomienia o zmianach rezerwacji. Dodatkowe dostosowania można dodać do każdej usługi na stronie Usługi, z dodatkowymi ustawieniami czasu trwania i zasadami, które mają zastosowanie tylko do tej usługi.
+> [!NOTE]
+> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
-Zasady ustawione w tym miejscu to zasady najwyższego poziomu. Są one automatycznie stosowane do wszystkich oferowanych usług, chyba że zdecydujesz się na ich modyfikowanie w zależności od usługi. Załóżmy na przykład, że w przypadku większości usług, takich jak konsultacje wstępne, jednodniowe powiadomienie o anulowaniu jest możliwe. Jednak w przypadku tych usług, które wymagają rezerwacji obiektów obiektowych lub opłat, takich jak lekcje golfa, może być wymagane trzydniowe powiadomienie. Te zasady na poziomie usługi możesz ustawić na stronie Usługi. Aby [uzyskać instrukcje, zobacz](define-service-offerings.md) Definiowanie ofert usług.
+Nie wszystkie terminy są takie same. Niektóre zajmują tylko kilka minut, podczas gdy inne mogą trwać kilka godzin lub dłużej. W Microsoft Bookings na stronie rezerwacji są ustawiane zasady planowania dla swojej firmy. Zasady planowania obejmują długość terminów, akceptowalny czas realizacji i anulowania oraz automatyczne powiadomienia o zmianach rezerwacji. Dodatkowe dostosowania można dodać dla każdej usługi na stronie Usługi z dodatkowymi ustawieniami czasu trwania i zasadami, które mają zastosowanie tylko do tej usługi.
+
+Zasady ustawione w tym miejscu są zasadami najwyższego poziomu. Są one automatycznie stosowane do wszystkich oferowanych usług, chyba że zdecydujesz się je zmodyfikować na podstawie usługi. Załóżmy na przykład, że w przypadku większości usług, takich jak wstępne konsultacje, dopuszczalne jest jednodniowe powiadomienie o anulowaniu. Ale w przypadku tych usług, które wymagają rezerwacji obiektu lub opłat, takich jak lekcje golfa, może być konieczne trzy dni wypowiedzenia. Te zasady na poziomie usługi można ustawić na stronie Usługi. Aby uzyskać [instrukcje, zobacz Definiowanie ofert usług](define-service-offerings.md) .
 
 ## <a name="types-of-scheduling-policies"></a>Typy zasad planowania
 
-W poniższej tabeli o wyjaśniono różne zasady planowania dostępne na stronie rezerwacji.
+W tej tabeli opisano różne zasady planowania dostępne na stronie rezerwacji.
 
-| Zasady | Objaśnienie |
+| Zasad | Objaśnienie |
 |---|---|
-| Odstępy czasu | Określa interwały między terminami. Możesz ustawić odstępy czasu od 5 minut do 4 godzin. Możesz także ustawić własne, dostosowane odstępy czasu. Na przykład interwał 15 minut oznacza, że klient może zaplanować 60-minutowy termin o godzinie 8:00, 8:15, 8:30 i tak dalej. Z kolei interwał 60 minut oznacza, że terminy są dostępne tylko w godzinach. (Aby ustawić czas trwania usługi, zobacz [Definiowanie ofert usług](define-service-offerings.md)). |
-| Czas realizacji w godzinach | Plan personelu tworzy się na podstawie zaplanowanych terminów, aby z wyprzedzeniem wiedzieć, ilu klientów dotrze do celu obsługi danego dnia. Zasady dotyczące czasu wyprzedzenia umożliwiają określenie liczby godzin wcześniej, po których klienci będą rezerwować lub anulować termin. |
-| Maksymalna liczba dni z wyprzedzeniem | Jeśli chcesz ograniczyć czas, z jakim klienci mogą rezerwować terminy, to ustawienie jest dla Ciebie. Możesz ustawić wartość maksymalną na co najmniej 365 dni. |
-| Powiadamianie o utworzeniu lub zmianie rezerwacji | Zaznacz tę opcję, jeśli chcesz otrzymywać wiadomości e-mail za każdym razem, gdy klient umówi termin lub zmieni istniejący. Wiadomość e-mail zostanie przekierowyna do skrzynki pocztowej określonej na stronie Informacje służbowe. Aby [uzyskać szczegółowe informacje, zobacz](enter-business-information.md) Wprowadzanie informacji służbowych. |
+| Przyrosty czasu | Określa interwały między terminami. Możesz ustawić przyrost czasu od 5 minut do 4 godzin. Możesz również ustawić własne dostosowane przyrosty czasu. Na przykład interwał 15 minut oznacza, że klient może zaplanować 60-minutowe spotkanie o godzinie 8:00, 8:15, 8:30 itd. Z drugiej strony interwał 60-minutowy oznacza, że terminy są dostępne tylko w godzinie. (Aby ustawić czas trwania usługi, zobacz [Definiowanie ofert usług](define-service-offerings.md)). |
+| Czas realizacji w godzinach | Plan kadrowy tworzysz na podstawie zaplanowanych terminów, dlatego ważne jest, aby wiedzieć z wyprzedzeniem, ilu klientów przychodzi do obsługi w danym dniu. Zasady czasu realizacji umożliwiają określenie liczby godzin wcześniej, które klienci muszą zarezerwować lub anulować termin. |
+| Maksymalna liczba dni z wyprzedzeniem | Jeśli chcesz ograniczyć możliwość rezerwacji terminów przez klientów z dużym wyprzedzeniem, to jest to ustawienie dla Ciebie! Maksymalną wartość można ustawić na co najmniej 365 dni. |
+| Powiadamianie o utworzeniu lub zmianie rezerwacji | Wybierz tę opcję, jeśli chcesz otrzymywać wiadomość e-mail za każdym razem, gdy klient zamówi termin lub zmieni istniejący. Wiadomość e-mail zostanie przesłana do skrzynki pocztowej określonej na stronie Informacje biznesowe. Aby uzyskać szczegółowe [informacje, zobacz Wprowadzanie informacji biznesowych](enter-business-information.md) . |
 
 ## <a name="set-your-policies"></a>Ustawianie zasad
 
-1. W Microsoft 365 kliknij przycisk Uruchamianie aplikacji, a następnie wybierz pozycję Bookings.
+1. W Microsoft 365 wybierz program uruchamiania aplikacji, a następnie wybierz pozycję Bookings.
 
 1. W okienku nawigacji wybierz pozycję **Strona rezerwacji**.
 
 1. Wybierz zasady w sekcji **Zasady planowania** .
 
-1. Wybierz **pozycję Zapisz i opublikuj**.
+1. Wybierz pozycję **Zapisz i opublikuj**.
 
 ## <a name="publish-the-booking-page"></a>Publikowanie strony rezerwacji
 
-Gdy wszystko będzie gotowe do opublikowania strony rezerwacji, wybierz pozycję **Zapisz i opublikuj**. Aby [uzyskać więcej informacji, zobacz Dostosowywanie i publikowanie strony](customize-booking-page.md) rezerwacji.
+Gdy wszystko będzie gotowe do opublikowania strony rezerwacji, wybierz pozycję **Zapisz i opublikuj**. Aby uzyskać więcej informacji [, zobacz Dostosowywanie i publikowanie strony rezerwacji](customize-booking-page.md) .

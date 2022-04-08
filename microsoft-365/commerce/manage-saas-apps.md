@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie aplikacjami typu "oprogramowanie jako usługa" w organizacji
+title: Zarządzanie aplikacjami SAAS dla organizacji
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,37 +18,37 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150
-description: Dowiedz się, jak aktywować aplikacje innych firm i zarządzać nimi w centrum administracyjne platformy Microsoft 365.
+description: Dowiedz się, jak aktywować aplikacje innych firm i zarządzać nimi w Centrum administracyjne platformy Microsoft 365.
 ms.date: 04/15/2021
-ms.openlocfilehash: 1a8593e967f899f748f4124567028177777851e4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c85a0c93ee7f17953f7877cc1fd97765e0e63afd
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319717"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713872"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Zarządzanie subskrypcjami aplikacji innych firm w organizacji
 
-W nowej aplikacji możesz zarządzać licencjami i rozliczeniami dla aplikacji <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">innych centrum administracyjne platformy Microsoft 365</a>. Zaktualizowane funkcje obejmują ulepszone zarządzanie subskrypcjami, ulepszony dostęp do informacji rozliczeniowych i większą elastyczność w zakresie zarządzania rozliczeniami. Zarządzanie subskrypcjami jest oparte na zaktualizowanej platformie handlowej firmy Microsoft. Dotyczy to aplikacji typu "oprogramowanie jako usługa", które klienci kupują bezpośrednio lub od innego dostawcy.
+W nowym <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> możesz zarządzać licencjami i rozliczeniami dla aplikacji innych firm. Zaktualizowane funkcje obejmują rozszerzone zarządzanie subskrypcjami, ulepszony dostęp do informacji rozliczeniowych i większą elastyczność zarządzania rachunkami. Zarządzanie subskrypcjami jest oparte na zaktualizowanej platformie handlowej firmy Microsoft. Dotyczy to aplikacji typu oprogramowanie jako usługa, które klienci kupują bezpośrednio lub od dostawcy innej firmy.
 
-## <a name="how-to-get-software-as-a-service-apps"></a>Jak uzyskać aplikacje typu "oprogramowanie jako usługa"
+## <a name="how-to-get-software-as-a-service-apps"></a>Jak uzyskać aplikacje typu oprogramowanie jako usługa
 
 Istnieje kilka sposobów zakupu aplikacji innych firm.
 
-- **Zakup bezpośredni** — klienci mogą bezpośrednio kupować subskrypcje z [witryny Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/) lub [AppSource](https://appsource.microsoft.com/).
-- **Zakup partnera** — współpraca z partnerem za pośrednictwem Centrum partnerskiego w celu zakupu subskrypcji.
-- **Propozycja firmy Microsoft** — odpowiadanie na propozycję ze sklepu Microsoft Sales, która zawiera aplikacje innych firm.
+- **Zakup bezpośredni** — klienci mogą bezpośrednio kupować subskrypcje w [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/) lub [appsource](https://appsource.microsoft.com/).
+- **Zakup partnera** — współpracuj z partnerem za pośrednictwem Centrum partnerskiego, aby kupić subskrypcje.
+- **Propozycja firmy Microsoft** — odpowiedz na propozycję firmy Microsoft Sales obejmującą aplikacje innych firm.
 
-Gdy klienci kupią aplikacje i zaakceptują Umowę klienta firmy Microsoft, mogą nimi zarządzać w centrum administracyjne platformy Microsoft 365 lub Microsoft Store dla Firm.
+Gdy klienci zakupić aplikacje i zaakceptować Umowa z Klientem Microsoft, mogą zarządzać nimi w Centrum administracyjne platformy Microsoft 365 lub Microsoft Store dla Firm.
 
-Dostawcy aplikacji sprzedają aplikacje po stawce płaskiej lub przez zakup licencji dla użytkowników.
+Dostawcy aplikacji sprzedają swoje aplikacje według stawki zryczałtowanej lub kupując licencje dla użytkowników.
 
-- **Stawka płaska** — nazywana również ceną opartą na witrynie aplikacje są cenami miesięcznymi lub rocznymi. Na stronie aplikacji liczba licencji jest wymieniona w licencji Bez ograniczeń.
-- **Licencje —** aplikacje są cenowane według licencji. Klienci przypisują licencje każdemu użytkownikowi w organizacji
+- **Stawka zryczałtowaną** — nazywana również ceną opartą na witrynie, aplikacje są wyceniane za cenę miesięczną lub roczną. Na stronie aplikacji ilość licencji jest wyświetlana na stronie Nieograniczona.
+- **Licencje** — aplikacje są wyceniane według licencji. Klienci przypisują licencje do każdego użytkownika w organizacji
 
 ## <a name="supported-regions"></a>Obsługiwane regiony
 
-Pomoc techniczna dla aplikacji innych firm jest dostępna w tych regionach:
+Obsługa aplikacji innych firm jest dostępna w następujących regionach:
 
 - Argentyna
 - Australia
@@ -67,62 +67,62 @@ Pomoc techniczna dla aplikacji innych firm jest dostępna w tych regionach:
 
 Administratorzy muszą aktywować aplikacje innych firm przed przypisaniem ich do użytkowników. Te aplikacje są aktywowane w portalu wydawcy innej firmy.
 
-1. W centrum administracyjnym przejdź do strony **RozliczeniaZasyłanie** >  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktów.</a>
+1. W centrum administracyjnym przejdź do strony **RozliczeniaUżytki** >  dla <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktówAplikacje</a> > .
 2. Znajdź i wybierz aplikację, którą chcesz zarządzać.
-3. W **Ustawienia & akcji wybierz** pozycję **Zarządzaj w portalu wydawcy**.
+3. W obszarze **Ustawienia & akcje** wybierz pozycję **Zarządzaj w portalu wydawcy**.
 
-Zostaniesz przekierowywowany do witryny wydawcy aplikacji, w której możesz aktywować aplikację.
+Nastąpi przekierowanie do witryny wydawcy aplikacji, w której można aktywować aplikację.
 
 ## <a name="manage-third-party-apps"></a>Zarządzanie aplikacjami innych firm
 
-Administratorzy zarządzają aplikacjami innych firm w dwóch lokalizacjach: centrum administracyjne platformy Microsoft 365 i portalu dostawcy aplikacji innej firmy.
+Administratorzy zarządzają aplikacjami innych firm w dwóch lokalizacjach: Centrum administracyjne platformy Microsoft 365 i portalu innego dostawcy aplikacji.
 
-Oto, co możesz zrobić w każdym portalu.
+Oto, co można zrobić w każdym portalu.
 
 | Centrum administracyjne platformy Microsoft 365 | Portal wydawcy aplikacji |
 | --- | --- |
-| Zmienianie liczby licencji <br> Zarządzanie płatnością rachunku <br> Zarządzanie płatnością rachunku <br> Zmienianie metody płatności (karty kredytowej) <br> Wyświetl fakturę <br> Anulowanie subskrypcji aplikacji | Konfigurowanie aplikacji (raz dla każdej aplikacji) <br> Przypisywanie licencji do użytkowników <br> Pomoc techniczna |
+| Zmienianie ilości licencji <br> Zarządzanie sposobem płacenia rachunku <br> Zarządzanie sposobem płacenia rachunku <br> Zmiana formy płatności (karta kredytowa) <br> Wyświetlanie faktury <br> Anulowanie subskrypcji aplikacji | Konfigurowanie aplikacji (raz dla każdej aplikacji) <br> Przypisywanie licencji do użytkowników <br> Pomoc techniczna |
 
-Po aktywowaniu aplikacji pozostaje ona aktywna, chyba że zostanie anulowana, wygaśnie lub nie zostanie dotrzymana na bieżąco. Te zdarzenia zmieniają stan aplikacji na wyłączony. Po wyłączeniu aplikacji nie można jej ponownie aktywować. Aby nadal korzystać z aplikacji, kup jej kolejną kopię.
+Po aktywowaniu aplikacji pozostaje aktywna, chyba że zostanie anulowana, wygaśnie lub jeśli płatność nie jest aktualna. Te zdarzenia zmieniają stan aplikacji na wyłączone. Po wyłączeniu aplikacji nie można jej ponownie uaktywnić. Aby kontynuować korzystanie z aplikacji, kup jej inną kopię.
 
 ## <a name="assign-licenses"></a>Przypisywanie licencji
 
-Administratorzy muszą aktywować aplikacje innych firm przed przypisaniem ich do użytkowników. Są one aktywowane w portalu wydawcy innej firmy. Na stronie aplikacji w obszarze **Ustawienia & akcji** wybierz link, aby przypisać licencje.
+Administratorzy muszą aktywować aplikacje innych firm przed przypisaniem ich do użytkowników. Są one aktywowane w portalu wydawcy innej firmy. Na stronie aplikacji w obszarze **Ustawienia & akcje** wybierz link do przypisywania licencji.
 
-1. W centrum administracyjnym przejdź do strony **RozliczeniaZasyłanie** >  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktów.</a>
+1. W centrum administracyjnym przejdź do strony **RozliczeniaUżytki** >  dla <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktówAplikacje</a> > .
 2. Znajdź i wybierz aplikację, którą chcesz zarządzać.
-3. W **Ustawienia & akcji** wybierz link Zarządzaj w portalu **wydawcy**.
+3. W obszarze **Ustawienia & akcje** wybierz link **Do zarządzania w portalu wydawcy**.
 
-## <a name="change-license-quantity"></a>Zmienianie liczby licencji
+## <a name="change-license-quantity"></a>Zmienianie ilości licencji
 
-Administratorzy mogą zmienić liczbę licencji należących do ich organizacji. Dotyczy to tylko aplikacji zakupionych z cenami opartymi na stanowiskoch.
+Administratorzy mogą zmienić liczbę licencji należących do organizacji. Dotyczy to tylko aplikacji zakupionych z cennikiem opartym na siedzeniach.
 
-1. W centrum administracyjnym przejdź do strony **RozliczeniaZasyłanie** >  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktów.</a>
+1. W centrum administracyjnym przejdź do strony **RozliczeniaUżytki** >  dla <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktówAplikacje</a> > .
 2. Znajdź i wybierz aplikację, którą chcesz zarządzać.
-3. Wybierz **pozycję Zmień liczbę licencji**.
+3. Wybierz pozycję **Zmień ilość licencji**.
 
-## <a name="manage-payment-methods"></a>Zarządzanie metodami płatności
+## <a name="manage-payment-methods"></a>Zarządzanie formami płatności
 
-Do każdej aplikacji typu Oprogramowanie jako usługa jest przypisany profil rozliczeniowy. Profile rozliczeniowe umożliwiają dostosowanie produktów uwzględnionych na fakturze i sposobu płatności za faktury. Są to między innymi:
+Aplikacje typu oprogramowanie jako usługa mają przypisany profil rozliczeniowy. Profile rozliczeniowe umożliwiają dostosowywanie produktów zawartych na fakturze oraz sposobu płacenia faktur. Obejmują one:
 
-- **Metody płatności** — karty kredytowe lub czek/przelew
+- **Formy płatności** — karty kredytowe lub czek/przelew bankowy
 - **Informacje kontaktowe** — adres rozliczeniowy i nazwa kontaktu
-- **Role** — role umożliwiające zmianę profilu rozliczeniowego, opłacanie rachunków lub użycie metody płatności w profilu rozliczeniowym do zakupu.
+- **Role** — role, które umożliwiają zmianę profilu rozliczeniowego, opłacanie rachunków lub korzystanie z formy płatności w profilu rozliczeniowym w celu dokonania zakupu.
 
-Aby uzyskać więcej informacji na temat profilów rozliczeniowych, zobacz [Opis profilów rozliczeń](/microsoft-store/billing-profile).
+Aby uzyskać więcej informacji na temat profilów rozliczeniowych, zobacz [Omówienie profilów rozliczeniowych](/microsoft-store/billing-profile).
 
-### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Zmienianie profilu rozliczeniowego w subskrypcji aplikacji typu "oprogramowanie jako usługa"
+### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Zmienianie profilu rozliczeniowego w subskrypcji aplikacji typu oprogramowanie jako usługa
 
-1. W centrum administracyjnym przejdź do strony **RozliczeniaZasyłanie** >  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktów.</a>
+1. W centrum administracyjnym przejdź do strony **RozliczeniaUżytki** >  dla <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktówAplikacje</a> > .
 2. Znajdź i wybierz aplikację, którą chcesz zarządzać.
-3. Obok opcji **Profil rozliczeniowy** wybierz pozycję **Edytuj**.
+3. Obok pozycji **Profil rozliczeniowy** wybierz pozycję **Edytuj**.
 
-Aby uzyskać więcej informacji na temat faktur, zobacz [Opis rachunku lub faktury](billing-and-payments/understand-your-invoice.md).
+Aby uzyskać więcej informacji na temat faktur, zobacz [Omówienie rachunku lub faktury](billing-and-payments/understand-your-invoice.md).
 
-## <a name="cancel-a-software-as-a-service-app-subscription"></a>Anulowanie subskrypcji aplikacji w wersji "oprogramowanie jako usługa"
+## <a name="cancel-a-software-as-a-service-app-subscription"></a>Anulowanie subskrypcji aplikacji typu oprogramowanie jako usługa
 
-Aplikację w wersji "software-as-a-service" możesz anulować na stronie aplikacji.
+Aplikację typu oprogramowanie jako usługa można anulować ze strony aplikacji.
 
-1. W centrum administracyjnym przejdź do strony **RozliczeniaZasyłanie** >  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktów.</a>
+1. W centrum administracyjnym przejdź do strony **RozliczeniaUżytki** >  dla <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produktówAplikacje</a> > .
 2. Znajdź i wybierz aplikację, którą chcesz zarządzać.
-3. W **Ustawienia & wybierz** pozycję Anuluj **subskrypcję**.
+3. W obszarze **Ustawienia & akcje** wybierz pozycję **Anuluj subskrypcję**.

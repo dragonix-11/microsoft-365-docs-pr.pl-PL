@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie powiadomień SMS i przypomnień w aplikacji Microsoft Bookings
+title: Konfigurowanie powiadomień sms i przypomnień w Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,50 +7,50 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
-description: Dowiedz się, jak skonfigurować powiadomienia SMS dla klientów, klientów i partnerów w uwitrynie Microsoft Bookings.
-ms.openlocfilehash: 2aac74b89e5d83c4dec0840a7bb423a271e5eb5d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak skonfigurować powiadomienia sms dla klientów, klientów i partnerów w Microsoft Bookings.
+ms.openlocfilehash: 46f58081bc9df799323c0c5e85253d4593d9c3c7
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318027"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715258"
 ---
-# <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>Konfigurowanie powiadomień SMS i przypomnień w aplikacji Microsoft Bookings
+# <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>Konfigurowanie powiadomień sms i przypomnień w Microsoft Bookings
 
-Usługa Microsoft Bookings umożliwia skonfigurowanie powiadomień SMS w celu wysłania ich do osoby rezerwowej na termin. W aplikacji Bookings w sieci Web lub aplikacji Bookings w aplikacji Teams możesz skonfigurować powiadomienia SMS. Uczestnicy, klienci lub partnerzy mogą również zrezygnować z otrzymywania powiadomień SMS na stronie rezerwacji samoobsługowej. Mogą również zrezygnować z otrzymywania powiadomień SMS, wysyłając odpowiedź **STOP** do nadawcy.
+> [!NOTE]
+> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
-Powiadomienia SMS będą zawierać link do spotkania aplikacji Teams dla wirtualnych spotkań rezerwacji.
+Za pomocą Microsoft Bookings możesz skonfigurować powiadomienia SMS sms, które mają być wysyłane do osoby rezerwującej termin. Powiadomienia SMS można skonfigurować w Bookings w aplikacji internetowej Bookings lub aplikacji Bookings w Teams. Uczestnicy, klienci lub partnerzy mogą również wyrazić zgodę na otrzymywanie powiadomień SMS na stronie samoobsługowej rezerwacji. Mogą również zrezygnować z otrzymywania powiadomień SMS, odpowiadając na **polecenie STOP** nadawcy.
+
+Powiadomienia SMS będą zawierać link Teams spotkania dla terminów rezerwacji wirtualnej.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Aby uczestnicy, klienci lub partnerzy mogli otrzymywać powiadomienia SMS, muszą mieć prawidłowy numer telefonu w Stanach Zjednoczonych lub Kanadzie.
+Uczestnicy, klienci lub partnerzy potrzebują ważnego numeru telefonu Stany Zjednoczone lub Kanada, aby mogli otrzymywać powiadomienia SMS.
 
-## <a name="configure-sms-notification-in-microsoft-bookings"></a>Konfigurowanie powiadomień SMS w uwitrynie Microsoft Bookings
+## <a name="configure-sms-notification-in-microsoft-bookings"></a>Konfigurowanie powiadomienia SMS w Microsoft Bookings
 
-> [!IMPORTANT]
-> Do 30 kwietnia 2022 r. usługa Microsoft Bookings będzie otrzymywać nieograniczoną liczbę powiadomień SMS dla klientów z licencjami aplikacji Bookings. Gdy zbliżamy się do zakończenia okresu promocji, będziemy poprawnymi dodatkowymi informacjami na temat wymagań licencyjnych.
+Powiadomienia SMS można skonfigurować w Bookings na kilka sposobów:
 
-Powiadomienie SMS w aplikacji Bookings możesz skonfigurować na kilka sposobów:
+- W Bookings aplikacji internetowej wykonaj kroki opisane w temacie [Define your service offerings in Bookings (Włączanie powiadomień sms w temacie Definiowanie ofert usług w Bookings](define-service-offerings.md)).
 
-- W aplikacji sieci Web Bookings postępuj zgodnie z instrukcjami w  temacie Definiowanie ofert usług w aplikacji [Bookings](define-service-offerings.md), aby włączyć powiadomienia SMS.
-
-- W aplikacji Booking w usłudze Teams przejdź do **ustawienia** >  **Typ punktu** >  **kontrolnegoDanie typu** terminu i wybierz **pozycję Wyślij do nich wiadomości SMS**.
+- W aplikacji Booking w Teams przejdź do **pozycji Ustawienia** >  **Typ** >  **terminuZapunktowanieDodaj typ terminu** i wybierz pozycję **Wyślij im wiadomości SMS**.
 
 ## <a name="tracking-and-metrics-for-sms-notifications"></a>Śledzenie i metryki dla powiadomień SMS
 
 > [!NOTE]
-> Musisz być administratorem usługi Teams, aby widzieć dane aplikacji Teams i bookings w centrum administracyjnym usługi Teams.
+> Musisz być administratorem Teams, aby wyświetlać dane Teams i Bookings w centrum administracyjnym Teams.
 
-W centrum administracyjnym aplikacji Teams możesz śledzić kluczowe dane dotyczące użycia powiadomień SMS w twojej organizacji. Raporty użycia zawierają dane, takie jak godzina i data wysłania, numer pochodzenia, typ wiadomości, typ zdarzenia i stan dostarczenia. Po 1 maja 2022 r. możesz użyć telemetrii powiadomień SMS w okresie promocyjnym, aby ułatwić prognozowanie i budżet powiadomień SMS.
+Kluczowe dane dotyczące użycia powiadomień SMS w organizacji można śledzić w centrum administracyjnym Teams. Raporty użycia obejmują dane, takie jak godzina i data wysłania, numer źródła, typ komunikatu, typ zdarzenia i stan dostarczania. Możesz użyć telemetrii powiadomień SMS w okresie promocyjnym, aby ułatwić prognozowanie i budżet powiadomień SMS po 1 maja 2022 r.
 
-1. W centrum administracyjnym aplikacji Teams: **powiadomienia SMS o wirtualnych odwiedzinach**.
+1. W centrum administracyjnym Teams **powiadomienia SMS dotyczące wizyt wirtualnych**.
 
-2. Na stronie **Raporty & wiadomości SMS** wybierz pozycję Użycie powiadomień SMS.
+2. Na stronie **Analiza & Raporty** wybierz pozycję Użycie powiadomień SMS.
 
-    :::image type="content" source="../media/analytics-reporting.png" alt-text="Zrzut ekranu: Strona analiza i raportowanie powiadomień SMS w centrum administracyjnym aplikacji Teams":::
+    :::image type="content" source="../media/analytics-reporting.png" alt-text="Zrzut ekranu: sms text notifications Analytics and reporting page in the Teams admin center (Zrzut ekranu: sms text notifications Analytics and reporting page in the Teams admin center (Analiza i raportowanie) w centrum administracyjnym Teams":::
 
 Zawartość pokrewna
 
 [Microsoft Bookings](bookings-overview.md)\
-[Włączanie i wyłączanie aplikacji Microsoft Bookings](turn-bookings-on-or-off.md)\
-[Uzyskiwanie aplikacji Microsoft Bookings dla systemów iOS i Android](get-bookings-app.md)\
+[Włączanie lub wyłączanie Microsoft Bookings](turn-bookings-on-or-off.md)\
+[Pobieranie aplikacji Microsoft Bookings dla systemów iOS i Android](get-bookings-app.md)\

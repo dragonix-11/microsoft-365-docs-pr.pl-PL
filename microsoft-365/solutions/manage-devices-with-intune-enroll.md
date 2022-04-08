@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 f1.keywords:
 - enroll devices into management
-- enroll devices with Intune
+- enroll devices to Intune
 - Intune mobile device platforms
 manager: dougeby
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 177c21b46357ca890994751b9f4d7597a57c6b64
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: 98c98298b5bb6728a0f8526e0406fb1fe02654f0
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651284"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704719"
 ---
 # <a name="step-2-enroll-devices-to-intune"></a>Krok nr 2. Rejestrowanie urządzeń do Intune
 
@@ -47,7 +47,7 @@ Aby uzyskać dodatkowe opcje, w tym rejestrowanie urządzeń Windows BYOD, zobac
 
 ## <a name="ios-and-ipados-enrollment"></a>Rejestracja w systemach iOS i iPadOS
 
-W przypadku urządzeń należących do użytkownika (BYOD) można zezwolić użytkownikom na rejestrowanie urządzeń osobistych na potrzeby zarządzania Intune przy użyciu jednej z następujących metod.
+W przypadku urządzeń należących do użytkownika (BYOD) można zezwolić użytkownikom na rejestrowanie urządzeń osobistych przy użyciu Intune przy użyciu jednej z następujących metod.
 - Rejestracja urządzenia jest typową rejestracją BYOD. Zapewnia administratorom szeroką gamę opcji zarządzania.
 - Rejestracja użytkowników to usprawniony proces rejestracji, który zapewnia administratorom podzbiór opcji zarządzania urządzeniami. Ta funkcja jest obecnie dostępna w wersji zapoznawczej.
 

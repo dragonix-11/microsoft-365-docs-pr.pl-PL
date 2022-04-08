@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a5ffc97c6b2cfd1016da1f218ab2a16c153a5528
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666289"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714246"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Omówienie ustawień konfiguracji nowej generacji w Microsoft Defender dla Firm
 
@@ -88,7 +88,7 @@ W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla usługi Defe
 | [Skanowanie plików sieciowych](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | Domyślnie [pozycja AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) nie jest włączona, a pliki sieciowe nie są skanowane. |
 | [Skanowanie wiadomości e-mail](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | Domyślnie [funkcja AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) nie jest włączona i wiadomości e-mail nie są skanowane. |
 | [Liczba dni (0–90) do przechowywania złośliwego oprogramowania poddanej kwarantannie](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | Domyślnie [ustawienie DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) jest ustawione na zero (0) dni. Artifacts, że w kwarantannie nie są usuwane automatycznie.  |
-| [Zgoda na przesyłanie przykładów](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | Domyślnie [funkcja SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) umożliwia automatyczne wysyłanie bezpiecznych próbek. Przykłady bezpiecznych przykładów obejmują `.bat`pliki , `.scr`, `.dll`i `.exe` , które nie zawierają danych osobowych (PII). Jeśli plik zawiera identyfikator PII, użytkownik otrzymuje żądanie zezwalania na kontynuowanie przesyłania przykładowego.<br/><br/>[Dowiedz się więcej na temat ochrony w chmurze i przykładowego przesyłania](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [Zgoda na przesyłanie przykładów](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | Domyślnie [właściwość SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) jest ustawiona na automatyczne wysyłanie bezpiecznych próbek. Przykłady bezpiecznych przykładów obejmują `.bat`pliki , `.scr`, `.dll`i `.exe` , które nie zawierają danych osobowych (PII). Jeśli plik zawiera identyfikator PII, użytkownik otrzymuje żądanie zezwalania na kontynuowanie przesyłania przykładowego.<br/><br/>[Dowiedz się więcej na temat ochrony w chmurze i przykładowego przesyłania](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
 | [Skanowanie dysków wymiennych](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | Domyślnie [funkcja AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) jest skonfigurowana do skanowania dysków wymiennych, takich jak dyski USB na urządzeniach.<br/><br/>[Dowiedz się więcej o ustawieniach zasad ochrony przed złośliwym kodem](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
 | [Uruchamianie dziennego czasu szybkiego skanowania](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | Domyślnie [wartość ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) jest ustawiona na 2:00.<br/><br/>[Dowiedz się więcej o ustawieniach skanowania](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).   |
 | [Sprawdzanie dostępności aktualizacji podpisu przed uruchomieniem skanowania](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | Domyślnie [funkcja CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) jest skonfigurowana do sprawdzania dostępności aktualizacji analizy zabezpieczeń przed uruchomieniem skanowania antywirusowego/chroniącego przed złośliwym kodem.<br/><br/>[Dowiedz się więcej o ustawieniach skanowania](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) i [aktualizacjach analizy zabezpieczeń](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates).   |

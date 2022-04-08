@@ -1,7 +1,7 @@
 ---
-title: Wdrażanie reguł ograniczania powierzchni ataków (ASR, Attack Surface Reduction)
-description: Zapewnia wskazówki dotyczące wdrażania reguł ograniczania powierzchni ataków.
-keywords: Wdrażanie reguł ograniczania powierzchni ataków, wdrażanie ASR, włączanie reguł asr, konfigurowanie funkcji asr, systemu ochrony przed nieuprawnianiem hosta, reguł ochrony, reguł ochrony przed wykorzystywaniem luk, ochrony przed wykorzystywaniem, regułami wykorzystania luk, regułami zapobiegania powstawaniu przed wirusami, program Microsoft Defender for Endpoint, konfigurowanie reguł asr
+title: Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)
+description: Zawiera wskazówki dotyczące operacjonalizacji wdrożenia reguł zmniejszania obszaru ataków.
+keywords: Wdrażanie reguł zmniejszania obszaru ataków, wdrażanie usługi ASR, włączanie reguł asr, konfigurowanie usługi ASR, system zapobiegania włamaniom do hostów, reguły ochrony, reguły ochrony przed lukami w zabezpieczeniach, reguły antyeksploatowania, reguły wykorzystujące luki w zabezpieczeniach, reguły zapobiegania zakażeniom, Ochrona punktu końcowego w usłudze Microsoft Defender, konfigurowanie reguł usługi ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,71 +20,73 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 73597ff3b56189952999993df05f13a0caeacb0c
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2c666a8b31308fb3cfb18a9a35211e49d886eab0
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683104"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705390"
 ---
-# <a name="step-4-operationalize-asr-rules"></a>Krok 4. Operacyjne reguły asr
+# <a name="operationalize-attack-surface-reduction-asr-rules"></a>Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)
 
-Po pełnym wdrożeniu reguł zmniejszania powierzchni ataków (ASR, Attack Surface Reduction) należy mieć niezbędne procesy do monitorowania działań związanych z asr i reagowania na nie.
+Po w pełni wdrożonych regułach zmniejszania obszaru ataków (ASR) ważne jest, aby wdrożono procesy monitorowania działań związanych z usługą ASR i reagowania na nie.
 
 ## <a name="managing-false-positives"></a>Zarządzanie wynikami fałszywie dodatnimi
 
-Wyniki fałszywie dodatnie/ujemne mogą występować w przypadku każdego rozwiązania ochrony przed zagrożeniami. Wyniki fałszywie dodatnie to przypadki, w których jednostka (taka jak plik lub proces) jest wykrywana i oznaczana jako złośliwa, chociaż w rzeczywistości nie jest to zagrożenie. Natomiast fałszywa wartość ujemna to jednostka, która nie została wykryta jako zagrożenie, ale jest złośliwa. Aby uzyskać więcej informacji na temat wyników fałszywie dodatnich i ujemnych, zobacz: Adres wyników fałszywie dodatnich/ujemnych w [programie Microsoft Defender dla punktu końcowego](defender-endpoint-false-positives-negatives.md)
+Wyniki fałszywie dodatnie/ujemne mogą wystąpić w przypadku dowolnego rozwiązania ochrony przed zagrożeniami. Wyniki fałszywie dodatnie to przypadki, w których jednostka (na przykład plik lub proces) jest wykrywana i identyfikowana jako złośliwa, chociaż jednostka w rzeczywistości nie stanowi zagrożenia. Natomiast wartość fałszywie ujemna to jednostka, która nie została wykryta jako zagrożenie, ale jest złośliwa. Aby uzyskać więcej informacji na temat wyników fałszywie dodatnich i fałszywie ujemnych, zobacz: [Address false positives/negatives in Ochrona punktu końcowego w usłudze Microsoft Defender](defender-endpoint-false-positives-negatives.md)
 
-## <a name="keeping-up-with-reports"></a>Śledzenie raportów
+## <a name="keeping-up-with-reports"></a>Nadążanie za raportami
 
-Spójny, regularny przegląd raportów to podstawowy aspekt utrzymywania wdrożenia reguł asr i utrzymywania na bieżąco nowo pojawiających się zagrożeń. Organizacja powinna z harmonogramem przeglądać zdarzenia reguł asr z zachowaniem harmonogramu, który będzie na bieżąco informował o zdarzeniach zgłoszonych przez regułę ASR. W zależności od wielkości organizacji recenzje mogą być codzienne, co godzinę lub ciągłe monitorowanie.
+Spójny, regularny przegląd raportów jest istotnym aspektem utrzymania wdrożenia reguł usługi ASR i na bieżąco z nowo pojawiającym się zagrożeniami. Organizacja powinna mieć zaplanowane przeglądy zdarzeń reguł usługi ASR w okresie, który będzie na bieżąco z zdarzeniami raportowanymi przez reguły usługi ASR. W zależności od rozmiaru organizacji przeglądy mogą być monitorowane codziennie, co godzinę lub w sposób ciągły.
 
-## <a name="hunting"></a>Goniące
+## <a name="hunting"></a>Polowanie
 
-Jedną z najbardziej zaawansowanych funkcji programu [Microsoft 365 Defender](https://security.microsoft.com) jest zaawansowane szukanie. Jeśli nie wiesz, jak działa zaawansowane szukanie, zobacz: Aktywne wyszukiwanie zagrożeń za pomocą [zaawansowanego wyszukiwania](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
-
-> [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender zaawansowanego chłonia](images/asr-defender365-advanced-hunting2.png)
-
-Zaawansowane wyszukiwanie to oparte na zapytaniach (Język Kusto Query) narzędzie do wyszukiwania zagrożeń, które pozwala eksplorować nawet 30 dni przechwyconych (nieprzetworzonych) danych zbieranych przez program Microsoft Defender ATP Endpoint Detection and Response (EDR) ze wszystkich Twoich komputerów. W ramach zaawansowanego wyszukiwania możesz aktywnie sprawdzać zdarzenia, aby znaleźć interesujące wskaźniki i jednostki. Elastyczny dostęp do danych ułatwia niezaszkolone polunie zarówno w przypadku znanych, jak i potencjalnych zagrożeń.
-
-Dzięki zaawansowanej czacie można wyodrębniać informacje reguł ASR, tworzyć raporty i uzyskać szczegółowe informacje na temat kontekstu danej inspekcji reguły asr lub blokowania zdarzenia.
-
- Możesz zapytanie dotyczące reguł ASR z tabeli DeviceEvents w sekcji zaawansowanego wyszukiwania w portalu Microsoft 365 Defender pracy. Na przykład proste zapytanie, takie jak poniższe, może raportować wszystkie zdarzenia, dla których jako źródło danych są używane reguły ASR z ostatnich 30 dni i podsumowuje je przez liczbę Akcji, że w tym przypadku będzie to rzeczywista nazwa kodowa reguły ASR.
-
-Wydarzenia ASR pokazane w portalu łęgów są ograniczane do unikatowych procesów widocznych co godzinę. Czas zdarzenia asr jest pierwszym razem, gdy zdarzenie jest widoczne w ciągu tej godziny.
+Jedną z najpotężniejszych cech [Microsoft 365 Defender](https://security.microsoft.com) jest zaawansowane wyszukiwanie zagrożeń. Jeśli nie znasz zaawansowanych zagrożeń, zobacz: [Proaktywne wyszukiwanie zagrożeń z zaawansowanym wyszukiwaniem zagrożeń](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender wiersza polecenia Zaawansowane zapytanie wyszukiwania](images/asr-defender365-advanced-hunting3.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="Strona Zaawansowane wyszukiwanie zagrożeń w portalu Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting2.png":::
+
+Zaawansowane wyszukiwanie zagrożeń to oparte na zapytaniach (język zapytań Kusto) narzędzie do wyszukiwania zagrożeń, które umożliwia eksplorowanie do 30 dni przechwyconych (nieprzetworzonych) danych zbieranych przez program Microsoft Defender ATP Endpoint Detection and Response (EDR) ze wszystkich maszyn. Dzięki zaawansowanemu polowaniu można proaktywnie sprawdzać zdarzenia w celu zlokalizowania interesujących wskaźników i jednostek. Elastyczny dostęp do danych ułatwia nieograniczone wyszukiwanie zagrożeń zarówno w przypadku znanych, jak i potencjalnych zagrożeń.
+
+Dzięki zaawansowanemu polowaniu można wyodrębnić informacje o regułach usługi ASR, utworzyć raporty i uzyskać szczegółowe informacje na temat kontekstu danego inspekcji reguły usługi ASR lub zdarzenia bloku.
+
+ Zdarzenia reguł usługi ASR można wykonywać z tabeli DeviceEvents w sekcji zaawansowanego wyszukiwania zagrożeń w portalu Microsoft 365 Defender. Na przykład proste zapytanie, takie jak poniższe, może zgłaszać wszystkie zdarzenia, które mają reguły usługi ASR jako źródło danych, w ciągu ostatnich 30 dni i podsumowywać je według liczby actiontype, że w tym przypadku będzie to rzeczywista nazwa kodowa reguły ASR.
+
+Zdarzenia usługi ASR wyświetlane w portalu wyszukiwania zagrożeń są ograniczane do unikatowych procesów obserwowanych co godzinę. Czas zdarzenia ASR to pierwszy raz, gdy zdarzenie jest widoczne w ciągu tej godziny.
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender zaawansowane wyniki wyszukiwania](images/asr-defender365-advanced-hunting4.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting3.png" alt-text="Wiersz polecenia Zaawansowane zapytanie wyszukiwania zagrożeń w portalu Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting3.png":::
 
-Powyższe pokazuje, że zarejestrowano 187 zdarzeń dla ciągu AsrLsassCredentialTheft:
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="Zaawansowane zapytanie dotyczące wyszukiwania zagrożeń w portalu Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting4.png":::
 
-- 102 dla zablokowane
-- 85 dla inspekcji
+Powyższe pokazuje, że zarejestrowano 187 zdarzeń dla asrLsassCredentialTheft:
+
+- 102 dla zablokowanej
+- 85 dla poddawanych inspekcji
 - 2 zdarzenia dla asrOfficeChildProcess (1 dla inspekcji i 1 dla bloku)
-- 8 zdarzeń dla asrPsexecWmichildProcessAudited
+- 8 zdarzeń dla asrPsexecWmiChildProcessAudited
 
-Jeśli chcesz skoncentrować się na  regułach AsrOfficeChildProcess i uzyskać szczegółowe informacje na temat rzeczywistych plików i procesów, w których jest to działanie, zmień filtr dla typu Akcji i zastąp linię podsumowania projekcją poszukiwanych pól (w tym przypadku są to pola DeviceName, FileName, FolderPath itp.).
-
-> [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender zaawansowane zapytanie wyszukiwania](images/asr-defender365-advanced-hunting4b.png)
+Jeśli chcesz skupić się na regule AsrOfficeChildProcess i uzyskać szczegółowe informacje na temat rzeczywistych plików i procesów, zmień filtr actiontype i zastąp wiersz podsumowania projekcją żądanych pól (w tym przypadku są to DeviceName, FileName, FolderPath itp.).
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender wyników wyszukiwania zaawansowanego](images/asr-defender365-advanced-hunting5b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4b.png" alt-text="Przykład zaawansowanego wyszukiwania zagrożeń w portalu Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting4b.png":::
 
-Prawdziwą zaletą zaawansowanego wyszukiwania jest możliwość kształtowania zapytań do swoich potrzeb. Dzięki kształtowaniu zapytania można zobaczyć dokładną historię tego, co się działo, niezależnie od tego, czy chcesz przypiąć coś na poszczególnych komputerach, czy wyodrębnić wnioski z całego środowiska.
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="Zaawansowane zapytanie wyszukiwania zagrożeń koncentruje wyniki w portalu Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting5b.png":::
 
-Aby uzyskać więcej informacji na temat opcji wyszukiwania, zobacz: [Reguły ograniczania powierzchni ataków bez zapadów — część 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968).
+Prawdziwą zaletą zaawansowanego wyszukiwania zagrożeń jest możliwość kształtowania zapytań zgodnie z potrzebami. Kształtując zapytanie, możesz zobaczyć dokładną historię tego, co się dzieje, niezależnie od tego, czy chcesz wskazać coś na poszczególnych maszynach, czy chcesz wyodrębnić szczegółowe informacje z całego środowiska.
 
-## <a name="topics-in-this-deployment-collection"></a>Tematy z tego zbioru wdrożeń
+Aby uzyskać więcej informacji na temat opcji wyszukiwania zagrożeń, zobacz: [Demistyfikacja reguł zmniejszania obszaru podatnego na ataki — część 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968).
 
-[Wymagania wstępne wdrażania reguł asr](attack-surface-reduction-rules-deployment.md)
+## <a name="topics-in-this-deployment-collection"></a>Tematy w tej kolekcji wdrożeń
 
-[Krok 1. Planowanie wdrożenia reguł ASR](attack-surface-reduction-rules-deployment-plan.md)
+[Omówienie wdrażania reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Krok 2. Testowanie reguł asr](attack-surface-reduction-rules-deployment-test.md)
+[Planowanie wdrożenia reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Krok 3. Implementowanie reguł asr](attack-surface-reduction-rules-deployment-implement.md)
+[Reguły zmniejszania obszaru ataków testowych (ASR)](attack-surface-reduction-rules-deployment-test.md)
+
+[Włączanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+
+[Dokumentacja reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-reference.md)

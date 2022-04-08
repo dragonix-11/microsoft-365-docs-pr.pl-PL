@@ -20,38 +20,32 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: b8f15212916566e169efa63556b897600f7092a3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651416"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705245"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Krok 6. Monitorowanie ryzyka urządzenia i zgodności z planami bazowymi zabezpieczeń
 
 Po wdrożeniu Ochrona punktu końcowego w usłudze Microsoft Defender w organizacji możesz uzyskać lepszy wgląd i ochronę urządzeń, integrując Microsoft Intune z usługą Defender for Endpoint. W przypadku urządzeń przenośnych obejmuje to możliwość monitorowania ryzyka urządzenia jako warunku dostępu. W przypadku urządzeń Windows można monitorować zgodność tych urządzeń z punktami odniesienia zabezpieczeń. 
 
-Uwaga: Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender obejmuje dołączanie punktów końcowych. Aby uzyskać więcej informacji na temat dołączania urządzeń do Microsoft 365 limitów, zobacz [Rejestrowanie urządzeń a dołączanie urządzeń](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices).  
+Wdrażanie Ochrona punktu końcowego w usłudze Microsoft Defender obejmuje dołączanie punktów końcowych. Jeśli użyto Intune do dołączania punktów końcowych (zalecane), nawiązano już połączenie Microsoft Intune z usługą Defender for Endpoint. Jeśli do dołączania punktów końcowych do usługi Defender for Endpoint użyto innej metody, zobacz [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender w Intune](/mem/intune/protect/advanced-threat-protection-configure), aby upewnić się, że skonfigurowano połączenie między usługami Intune i Ochrona punktu końcowego w usłudze Microsoft Defender. 
+
 
 ![Ilustracja integracji usługi Defender for Endpoint i Microsoft Intune](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 Na tej ilustracji:
 - Ochrona punktu końcowego w usłudze Microsoft Defender znacznie zwiększa wyrafinowanie ochrony przed zagrożeniami dla urządzeń. 
 - Chociaż Microsoft Intune umożliwia ustawianie zasad ochrony aplikacji i zarządzanie urządzeniami (w tym zmianami konfiguracji), usługa Defender for Endpoint stale monitoruje urządzenia pod kątem zagrożeń i może podejmować zautomatyzowane działania w celu skorygowania ataków. 
-- Możesz użyć Intune, aby dołączyć urządzenia do usługi Defender for Endpoint. W tym celu włączasz również te urządzenia do pracy z funkcjami Microsoft 365 Zgodność, w tym z zapobieganiem utracie danych punktu końcowego (DLP).
+- Możesz połączyć Microsoft Intune z usługą Defender for Endpoint, aby monitorować ryzyko urządzenia i zgodność z punktami odniesienia zabezpieczeń.
 
 Ten artykuł zawiera następujące kroki:
-- Połączenie Microsoft Intune do usługi Defender dla punktu końcowego
 - Monitorowanie ryzyka urządzenia
 - Monitorowanie zgodności z punktami odniesienia zabezpieczeń
 
 Jeśli usługa Defender for Endpoint nie została jeszcze skonfigurowana, skontaktuj się z administratorem ochrony przed zagrożeniami, aby [skonfigurować środowisko ewaluacji i pilotażowe](../security/defender/eval-defender-endpoint-overview.md). Możesz pracować z grupą pilotażową, aby wypróbować możliwości w tym artykule.
-
-## <a name="connect-microsoft-intune-to-defender-for-endpoint"></a>Połączenie Microsoft Intune do usługi Defender dla punktu końcowego
-
-Konfigurowanie integracji Microsoft Intune z usługą Defender for Endpoint jest proste. Skorzystaj z tego artykułu: [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender w Intune](/mem/intune/protect/advanced-threat-protection-configure). 
-
-![Połączenie Intune do Ochrona punktu końcowego w usłudze Microsoft Defender](../media/devices/connect-intune-to-microsoft-defender.png#lightbox)
 
 ## <a name="monitor-device-risk-as-a-condition-for-access"></a>Monitorowanie ryzyka urządzenia jako warunku dostępu
 
@@ -84,7 +78,7 @@ Aby wdrożyć punkty odniesienia zabezpieczeń i monitorować zgodność z tymi 
 |2     |  Wdróż Windows ustawienia punktu odniesienia zabezpieczeń dla Intune. Być może udało Ci się to już osiągnąć, jeśli zostały wykonane wskazówki opisane w [kroku 5. Wdrażanie profilów konfiguracji](manage-devices-with-intune-configuration-profiles.md).        |
 |3    |  Wdróż ustawienia punktu odniesienia usługi Defender dla punktu końcowego dla Intune. Zobacz [Zarządzanie profilami punktów odniesienia zabezpieczeń w Microsoft Intune](/mem/intune/protect/security-baselines-configure), aby utworzyć profil i wybrać wersję punktu odniesienia.<br><br>Możesz również postępować zgodnie z instrukcjami w tym miejscu: [Przejrzyj i przypisz punkt odniesienia zabezpieczeń Ochrona punktu końcowego w usłudze Microsoft Defender](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline).     |
 |4     | W usłudze Defender for Endpoint przejrzyj [kartę Punkt odniesienia zabezpieczeń w zarządzaniu konfiguracją urządzenia](../security/defender-endpoint/configure-machines.md).          |
-| | |
+
 
 ## <a name="next-steps"></a>Następne kroki
 Przejdź do [kroku 7. Zaimplementuj DLP z funkcjami ochrony informacji w punktach końcowych](manage-devices-with-intune-dlp-mip.md).

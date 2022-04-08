@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc4ed070e900f9df892abb58cd05cdad2dca619
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 5f04933d54bf02732fea34df25b25e3996e23932
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687016"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705104"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie
 
@@ -48,6 +48,10 @@ Ochrona punktu końcowego w usłudze Microsoft Defender dla systemu Linux obejmu
 
 - Dostęp do portalu Microsoft 365 Defender
 - Dystrybucja systemu Linux przy użyciu [systemowego](https://systemd.io/) menedżera systemu
+
+  >[!NOTE]
+  >Dystrybucja systemu Linux przy użyciu menedżera systemu z wyjątkiem systemu RHEL/CentOS 6.x obsługuje zarówno systemV, jak i upstart.
+
 - Środowisko dla początkujących w zakresie skryptów bash i systemu Linux
 - Uprawnienia administracyjne na urządzeniu (w przypadku wdrożenia ręcznego)
 

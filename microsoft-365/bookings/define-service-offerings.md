@@ -1,5 +1,5 @@
 ---
-title: Definiowanie ofert usług w usłudze Bookings
+title: Definiowanie ofert usług w Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,112 +8,115 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
-description: Instrukcje wprowadzania informacji o ofertach usług, takich jak nazwa usługi, opis, lokalizacja, czas trwania i ceny. Możesz również oznaczyć pracowników uprawnionych do świadczenia usługi.
-ms.openlocfilehash: 6b276d9ec2d943527f1a6d8ab310fc91406f216c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Instrukcje dotyczące wprowadzania informacji o ofertach usług, w tym nazwy usługi, opisu, lokalizacji, czasu trwania i cennika. Możesz również otagować pracowników, którzy są wykwalifikowani do świadczenia usługi.
+ms.openlocfilehash: 7d4bd5d8e75610785176f8c527576b0609cf71a4
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62977626"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714400"
 ---
-# <a name="define-your-service-offerings-in-bookings"></a>Definiowanie ofert usług w usłudze Bookings
+# <a name="define-your-service-offerings-in-bookings"></a>Definiowanie ofert usług w Bookings
 
-Definiując oferty usług w usłudze Microsoft Bookings, ustawiasz nazwę, opis, lokalizację usługi (określasz, czy chcesz spotkać się osobiście, czy ma się spotkać online), czas trwania, domyślne przypomnienia dla klientów i personelu, notatki wewnętrzne dotyczące usługi i cen. Możesz również oznaczyć pracowników uprawnionych do świadczenia usługi. Gdy klienci przychodzą do Twojej firmowej witryny sieci Web w celu zarezerwowania terminu, widzą, jakie typy terminów są dostępne, wybierają osobę, która ma świadczyć usługę, i ile będzie kosztować ich usługa.
+> [!NOTE]
+> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
-Możesz również dodać dostosowane informacje i adresy URL do potwierdzenia wiadomości e-mail i przypomnień, które wysyłasz, gdy ktoś książka usługi za pośrednictwem Twojej strony rezerwacji.
+Podczas definiowania ofert usług w Microsoft Bookings należy ustawić nazwę usługi, opis, lokalizację (wybrać, czy chcesz spotkać się osobiście, czy spotkanie online), czas trwania, domyślne przypomnienia dla klientów i pracowników, wewnętrzne notatki dotyczące usługi i cennik. Możesz również otagować pracowników, którzy są wykwalifikowani do świadczenia usługi. Następnie, gdy klienci przychodzą do twojej firmowej witryny internetowej w celu zarezerwowania terminu, mogą dokładnie zobaczyć, jakie typy terminów są dostępne, wybrać osobę, którą chcą świadczyć usługę i ile będzie kosztować ich usługa.
+
+Możesz również dodać dostosowane informacje i adresy URL do potwierdzenia wiadomości e-mail i przypomnień, które wysyłasz, gdy ktoś zarezerwuje usługę za pośrednictwem strony rezerwacji.
 
 ## <a name="create-the-service-details"></a>Tworzenie szczegółów usługi
 
-1. W Microsoft 365 kliknij przycisk Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
+1. W Microsoft 365 wybierz pozycję Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
 
-2. Przejdź do **Ustawienia** ->  [Nawłaściwość usług i](https://outlook.office.com/bookings/settings/services) wybierz **pozycję Dodaj nową usługę**.
+2. Przejdź do **pozycji** >  **KalendarzUsługi** i wybierz pozycję **Dodaj nową usługę**.
 
-3. Na **stronie Szczegóły podstawowe** dodaj wybrane opcje.
+3. Na stronie **Szczegóły podstawowe** dodaj wybrane opcje.
 
-   **Nazwa usługi**: wprowadź nazwę usługi. Jest to nazwa, która będzie wyświetlana w menu rozwijaym na stronie Kalendarz. Ta nazwa będzie także wyświetlana, gdy ktoś ręcznie doda termin na stronie Kalendarz i będzie wyświetlana jako kafelek na stronie Samoobsługowa.
+   **Nazwa usługi**: wprowadź nazwę usługi. Jest to nazwa, która będzie wyświetlana w menu rozwijanym na stronie Kalendarz. Ta nazwa będzie również wyświetlana, gdy ktoś ręcznie doda termin na stronie Kalendarz i będzie wyświetlany jako kafelek na stronie Samoobsługowe.
 
-   **Opis**: Wprowadzany opis jest wyświetlany po kliknięciu przez użytkownika ikony informacji na stronie samoobsługi.
+   **Opis**: Wprowadzony opis jest wyświetlany, gdy użytkownik kliknie ikonę informacji na stronie Samoobsługowe.
 
-   **Lokalizacja domyślna**: Ta lokalizacja jest wyświetlana w wiadomościach e-mail z potwierdzeniem i przypomnieniem dla personelu i klientów, a także będzie wyświetlana w zdarzeniu kalendarza utworzonym dla rezerwacji.
+   **Lokalizacja domyślna**: ta lokalizacja będzie wyświetlana w wiadomościach e-mail z potwierdzeniem i przypomnieniem zarówno dla pracowników, jak i klientów, i będzie wyświetlana w wydarzeniu kalendarza utworzonym dla rezerwacji.
 
-   **Dodawanie spotkania online**: to ustawienie włącza lub wyłącza spotkania online dla każdego terminu za pośrednictwem programu Teams lub Skype w zależności od tego, który klient zostanie skonfigurowany jako klient domyślny dla członka personelu.
+   **Dodawanie spotkania online**: to ustawienie włącza lub wyłącza spotkania online dla każdego terminu za pośrednictwem Teams lub Skype, w zależności od tego, który z nich został skonfigurowany jako domyślny klient dla pracownika.
 
    - Włączone:
-     - Link do spotkania Teams lub spotkania programu Skype( unikatowy dla rezerwacji) zostanie dodany do zdarzenia kalendarza zarówno w kalendarzu personelu, jak i w kalendarzach klientów, wraz z informacjami o połączeniach telefonicznych.
-     - Link dołączania do spotkania zostanie dodany do wszystkich wiadomości e-mail z potwierdzeniem i przypomnieniem, jak pokazano w poniższym przykładzie:
+     - Link do spotkania Teams lub Skype, unikatowy dla rezerwacji, zostanie dodany do wydarzenia kalendarza zarówno w kalendarzu pracowników, jak i w kalendarzach klientów, wraz z informacjami o telefonie.
+     - Link do dołączenia do spotkania zostanie dodany do wszystkich wiadomości e-mail z potwierdzeniem i przypomnieniami, jak pokazano w poniższym przykładzie:
 
-       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Przykład linku dołączania do spotkania Teams u programu Bookings.":::
+       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Przykład linku do Teams spotkania w Bookings.":::
 
        > [!NOTE]
-       > Teams spotkania można dołączać za pomocą aplikacji Teams dla urządzeń przenośnych, aplikacji klasycznej Teams, w przeglądarce internetowej lub telefonicznie. Zdecydowanie zalecamy włączenie usługi Teams jako domyślnej usługi spotkań online dla Twojej dzierżawy w celu najlepszego środowiska rezerwowania wirtualnych terminów.
+       > Teams spotkania można dołączać za pośrednictwem aplikacji mobilnej Teams, aplikacji klasycznej Teams, przeglądarki internetowej lub telefonicznego połączenia telefonicznego. Zdecydowanie zalecamy włączenie Teams jako domyślnej usługi spotkań online dla dzierżawy, aby jak najlepiej rezerwować terminy wirtualne.
 
    - Wyłączone:
-     - Terminy nie będą zawierać opcji spotkania, a wszystkie pola powiązane ze spotkaniem, które pojawią się po włączeniu opcji Dodaj spotkanie **online** , nie będą wyświetlane.
+     - Terminy nie będą zawierać opcji spotkania, a wszystkie pola związane ze spotkaniem wyświetlane po **włączeniu funkcji Dodaj spotkanie online** nie będą wyświetlane.
 
-   **Czas** trwania: jest to czas, przez jaki zostaną zarezerwowane wszystkie spotkania. Czas jest blokowany od czasu rozpoczęcia, który jest wybrany podczas rezerwacji. Pełny czas terminu zostanie zablokowany w kalendarzach personelu.
+   **Czas trwania**: Na ten czas będą zarezerwowane wszystkie spotkania. Czas jest blokowany od godziny rozpoczęcia, która jest wybierana podczas rezerwacji. Pełny czas mianowania zostanie zablokowany w kalendarzach personelu.
 
-   **Bufor czasu**: włączenie tego ustawienia umożliwia dodawanie dodatkowego czasu do kalendarza personelu przy każdej rezerwacji terminu.
+   **Czas buforowania**: włączenie tego ustawienia umożliwia dodanie dodatkowego czasu do kalendarza personelu przy każdym zarezerwowaniu terminu.
 
-   Ten czas zostanie zablokowany w kalendarzu personelu i będzie miał wpływ na informacje o czasie wolnym/zajętym. Oznacza to, że jeśli termin kończy się o 15:00 i do końca spotkania dodano 10 minut buforu czasu, kalendarz personelu będzie pokazywany jako zajęty i nie do zarezerwowania do godziny 15:10. Może to być przydatne, jeśli pracownicy potrzebują czasu przed spotkaniem na przygotowanie się, na przykład u lekarza przeglądając wykres pacjenta lub doradcę finansowego, który przygotowuje odpowiednie informacje o koncie. Może być także przydatny po spotkaniu, na przykład gdy ktoś potrzebuje czasu na podróż do innej lokalizacji.
+   Czas zostanie zablokowany w kalendarzu personelu i będzie mieć wpływ na informacje o wolnym/zajętym czasie. Oznacza to, że jeśli termin kończy się o godzinie 15:00 i do końca spotkania dodano 10 minut czasu buforowania, kalendarz personelu będzie wyświetlany jako zajęty i nie można go zarezerwować do godziny 15:10. Może to być przydatne, jeśli personel potrzebuje czasu przed spotkaniem w celu przygotowania, takiego jak lekarz przeglądujący wykres pacjenta lub doradca finansowy przygotowujący odpowiednie informacje o koncie. Może to być również przydatne po spotkaniu, na przykład gdy ktoś potrzebuje czasu na podróż do innej lokalizacji.
 
-   **Cena nieo ustawiana**: Wybierz opcje cen, które będą wyświetlane na Self-Service stronie. Jeśli **opcja Cena nie jest ustawiona** , nie będzie wyświetlana cena ani odwołanie się do kosztów lub cen.
+   **Nie ustawiono ceny**: wybierz opcje cen, które będą wyświetlane na stronie Self-Service. Jeśli **nie ustawiono opcji Cena** , nie zostanie wyświetlona żadna cena ani odwołanie do kosztu lub ceny.
 
-   **Uwagi**: To pole jest wyświetlane w zdarzeniu rezerwacji dla rezerwowanych pracowników, a także w zdarzeniu wyświetlanym na karcie Kalendarz w aplikacji sieci Web Bookings.
+   **Uwagi**: to pole jest wyświetlane w przypadku rezerwacji dla zarezerwowanego personelu, a także w przypadku zdarzenia, które pojawia się na karcie Kalendarz w aplikacji internetowej Bookings.
 
-   **Maksymalna liczba** uczestników na wydarzenie: to ustawienie pozwala utworzyć usługi wymagające możliwości zarezerwowania tego samego terminu i tego samego personelu przez wiele osób (na przykład zajęć fitness). Rezerwowany będzie przedziale czasu dla wybranej usługi, personelu i czasu aż do określonej przez Ciebie maksymalnej liczby uczestników. Bieżącą wydajność terminu i uczestników można wyświetlić na karcie Kalendarz w aplikacji Bookings Web App.
+   **Maksymalna liczba uczestników na wydarzenie**: to ustawienie umożliwia tworzenie usług, które wymagają wielu osób zarezerwowania tego samego czasu spotkania i tego samego personelu (na przykład zajęć fitness). Przedział czasu terminu dla wybranej usługi, personelu i czasu będzie dostępny do zarezerwowania do momentu osiągnięcia maksymalnej liczby uczestników, określonej przez Ciebie. Bieżącą pojemność terminu i uczestników można wyświetlić na karcie Kalendarz w aplikacji internetowej Bookings.
 
-   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
+   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Przykład ustawienia maksymalnej liczby uczestników w Bookings":::
 
-   **Pozwól klientowi** zarządzać rezerwacją: To ustawienie określa, czy klient może modyfikować lub anulować rezerwację, jeśli rezerwacja została zarezerwowana za pośrednictwem karty Kalendarz w aplikacji Bookings Web App.
+   **Pozwól klientowi zarządzać rezerwacją**: to ustawienie określa, czy klient może zmodyfikować lub anulować rezerwację, pod warunkiem, że została ona zarezerwowana za pośrednictwem karty Kalendarz w aplikacji internetowej Bookings.
 
    - Włączone:
 
-     Przycisk **Zarządzaj rezerwacją** pojawi się w wiadomości e-mail z potwierdzeniem od klienta. Po wybraniu tego przycisku przez klienta zostaną wyświetlone trzy opcje:
+     Przycisk **Zarządzaj rezerwacją** zostanie wyświetlony w wiadomości e-mail z potwierdzeniem klienta. Po wybraniu tego przycisku przez klienta zostaną wyświetlone trzy opcje:
 
-     - **Ponowne harmonogramy** Zaznaczenie tej opcji powoduje, że użytkownik jest na stronie witryny usługi Self-Service, na której może wybrać nową datę i/lub czas dla tej samej usługi i tego samego członka personelu z oryginalnej rezerwacji. Pamiętaj, że mimo że oryginalny członek personelu jest domyślnie dołączony do rezerwowania według ponownego wyboru, użytkownik ma również możliwość zmiany tego członka personelu.
+     - **Harmonogramu** Wybranie tej opcji powoduje przełączenie użytkownika na stronę Self-Service specyficzną dla usługi, gdzie może wybrać nową godzinę i/lub datę dla tej samej usługi i tego samego pracownika z oryginalnej rezerwacji. Należy pamiętać, że nawet jeśli pierwotny pracownik jest domyślnie dołączony do zarezerwowanej rezerwacji, użytkownik ma również możliwość zmiany członka personelu.
      - **Anulowanie rezerwacji** Spowoduje to anulowanie rezerwacji i usunięcie jej z kalendarza personelu.
-     - **Nowa rezerwacja** Ta opcja powoduje poprowadzenie użytkownika do strony Self-Service z wymienionymi wszystkimi usługami i pracownikami do planowania nowej rezerwacji.
+     - **Nowa rezerwacja** Ta opcja powoduje przełączenie użytkownika na stronę Self-Service ze wszystkimi wymienionymi usługami i personelem w celu zaplanowania nowej rezerwacji.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Przycisk Zarządzaj rezerwacjami w umiędzy bookings.":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Przycisk Zarządzaj Bookings w Bookings.":::
 
-      Zalecamy pozostawienie tego ustawienia włączonego tylko w przypadku, gdy nie masz już dostępu do strony Self-Service sieci Web.
+      Zalecamy pozostawienie tego ustawienia włączonego tylko wtedy, gdy klienci uzyskują dostęp do strony Self-Service.
 
    - Wyłączone:
 
-     Użytkownik nie będzie miał możliwości zmiany harmonogramu ani anulowania rezerwacji podczas rezerwowania przy użyciu karty Kalendarz w aplikacji Bookings Web App. Podczas rezerwacji za pośrednictwem Self-Service klienci nadal będą mieli przycisk Zarządzaj rezerwacją i  wszystkie jego opcje, nawet jeśli to ustawienie jest wyłączone.
+     Użytkownik nie będzie mógł zmienić harmonogramu lub anulować rezerwacji podczas rezerwacji za pośrednictwem karty Kalendarz w aplikacji internetowej Bookings. Jednak podczas rezerwacji za pośrednictwem strony Self-Service klienci nadal będą mieć przycisk **Zarządzaj rezerwacją** i wszystkie jego opcje, nawet jeśli to ustawienie jest wyłączone.
 
-     Zalecamy wyłączenie tego ustawienia, jeśli chcesz ograniczyć dostęp do Self-Service strony. Ponadto zalecamy dodanie tekstu do wiadomości e-mail z potwierdzeniem i przypomnieniem, który informuje klientów o tym, jak wprowadzać zmiany w rezerwacjach za pomocą innych środków, na przykład przez dzwonienie do biura lub wysyłanie pomocy technicznej pocztą e-mail.
+     Zalecamy wyłączenie tego ustawienia, jeśli chcesz ograniczyć dostęp do strony Self-Service. Ponadto zalecamy dodanie tekstu do wiadomości e-mail z potwierdzeniem i przypomnieniem, które informują klientów, jak wprowadzić zmiany w rezerwacji za pośrednictwem innych środków, takich jak wywołanie biura lub wysłanie wiadomości e-mail do działu pomocy technicznej.
 
-4. Na **stronie Opcje dostępności** możesz zobaczyć opcje wybrane na stronie Rezerwacja dla zasad planowania i  dostępności dla personelu. Aby uzyskać więcej informacji, [zobacz Ustawianie zasad planowania](set-scheduling-policies.md).
+4. Na stronie **Opcje dostępności** można wyświetlić opcje wybrane na **stronie Rezerwacja** dla zasad planowania i dostępności dla personelu. Aby uzyskać więcej informacji, zobacz [Ustawianie zasad planowania](set-scheduling-policies.md).
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings.":::
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Przykład ustawienia maksymalnej liczby uczestników w Bookings.":::
 
-5. **Cena domyślna**  Jest to cena, która będzie wyświetlana na Self-Service stronie. Jeśli **opcja Cena nie jest ustawiona** , nie będzie wyświetlana cena ani odwołanie się do kosztów lub cen.
+5. **Cena domyślna**  Jest to cena wyświetlana na stronie Self-Service. Jeśli **nie ustawiono opcji Cena** , nie zostanie wyświetlona żadna cena ani odwołanie do kosztu lub ceny.
 
-6. **Notatki** To pole jest wyświetlane w zdarzeniu rezerwacji dla zarezerwowanych pracowników, a także w zdarzeniu wyświetlanym na karcie Kalendarz w aplikacji sieci Web Bookings.
+6. **Notatki** To pole jest wyświetlane w przypadku rezerwacji dla zarezerwowanego personelu, a także w przypadku zdarzenia, które pojawia się na karcie Kalendarz w aplikacji internetowej Bookings.
 
-7. **Pola niestandardowe** mogą być przydatne podczas zbierania informacji potrzebnych przy każdej rezerwacji określonego terminu. Przykłady to dostawca ubezpieczenia przed wizytą lekarz, typ pożyczki na rozmowy kwalifikacyjne, główne badania na temat informacji akademickich lub identyfikator kandydata na rozmowy kwalifikacyjne kandydatów. Te pola będą wyświetlane na stronie rezerwacji, gdy klienci zarezerwują terminy z Tobą i Twoim personelem.
+7. **Pola niestandardowe** mogą być przydatne podczas zbierania informacji potrzebnych za każdym razem, gdy zostanie zarezerwowany konkretny termin. Przykłady obejmują dostawcę ubezpieczeń przed wizytą w klinice, typ pożyczki na konsultacje pożyczkowe, studia na potrzeby doradztwa akademickiego lub identyfikator wnioskodawcy na rozmowy kwalifikacyjne. Te pola pojawią się na stronie Rezerwacja, gdy klienci zarezerwują terminy u Ciebie i Twoich pracowników.
 
-   Adres e-mail, numer telefonu, adres i notatki klienta to pola nie wymienne, ale można je ustawić jako opcjonalne, zaznaczając pole wyboru **Wymagane obok każdego** pola.
+   Adres e-mail klienta, numer telefonu, adres i notatki to pola, które nie są wymienne, ale możesz je dodać jako opcjonalne, usuwając zaznaczenie pola **Wymagane** obok każdego pola.
 
-8. Na **stronie Przypomnienia i potwierdzenia** możesz skonfigurować wysyłane przypomnienia i powiadomienia. Przypomnienia i powiadomienia są wysyłane do klientów, członków personelu lub obu tych osób w określonym czasie przed terminem. Zgodnie z preferencjami dla każdego terminu można utworzyć wiele wiadomości.
+8. Na stronie **Przypomnienia i potwierdzenia** możesz skonfigurować wysyłane przypomnienia i powiadomienia. Przypomnienia i powiadomienia są wysyłane do klientów, pracowników lub obu tych osób w określonym czasie przed terminem. Dla każdego terminu można utworzyć wiele komunikatów zgodnie z preferencjami.
 
-   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Wiadomość e-mail z potwierdzeniem od usługi Bookings.":::
+   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Wiadomość e-mail z potwierdzeniem z Bookings.":::
 
-   W tym miejscu możesz dołączyć dowolny dodatkowy tekst, na przykład informacje o ponownej sporządzaniu terminów lub o tym, co klienci powinni wprowadzić na spotkanie. Poniżej przedstawiono przykład dostosowanego tekstu dodanego do oryginalnej wiadomości e-mail z potwierdzeniem widocznej w **polu Dodatkowe informacje o potwierdzeniu e-mail** :
+   W tym miejscu możesz dołączyć dowolny dodatkowy tekst, taki jak informacje o zmianach terminu lub o tym, co klienci powinni wnieść na spotkanie. Poniżej przedstawiono przykład dostosowanego tekstu dodanego do oryginalnej wiadomości e-mail z potwierdzeniem widocznej w polu **Dodatkowe informacje dotyczące potwierdzenia wiadomości e-mail** :
 
-   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Dodatkowe informacje w wiadomości e-mail dotyczącej usługi Bookings.":::
+   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Dodatkowe informacje w wiadomości e-mail Bookings.":::
 
-9. **Włączanie powiadomień SMS dla klienta** Jeśli ta opcja jest zaznaczona, wiadomości SMS są wysyłane do klienta, ale tylko jeśli się na to zdecyduje.
+9. **Włączanie powiadomień sms dla klienta** Jeśli ta opcja jest wybrana, wiadomości SMS są wysyłane do klienta, ale tylko wtedy, gdy się zdecydują.
 
-   - Pole zgody na ręczną rezerwację i Self-Service stronie:
+   - Pole wyboru na stronie rezerwacji ręcznej i Self-Service:
 
-     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Pole zgody na program Bookings.":::
+     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Pole wyboru w Bookings.":::
 
-   - Powiadomienia SMS będą wyglądać następująco (pamiętaj, że powiadomienia SMS są obecnie dostępne tylko w Ameryce Północnej):
+   - Powiadomienia sms będą wyglądać następująco (pamiętaj, że powiadomienia SMS są obecnie dostępne tylko w Ameryka Północna):
 
-     :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Powiadomienie sms z bookings.":::
+     :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Powiadomienie tekstowe z Bookings.":::
 
-10. Opcja **Domyślne opcje planowania** jest domyślnie włączona. Wyłącz przełącznik, jeśli chcesz dostosować sposób, w jaki klienci rezerwają określonego członka personelu.
+10. **Domyślne opcje planowania** są domyślnie włączone. Wyłącz przełącznik, jeśli chcesz dostosować sposób, w jaki klienci rezerwują określonego pracownika.
 
-11. **Opcje publikowania** Określ, czy ta usługa ma być wyświetlana jako rezerwowa na stronie usługi Self-Service, czy też chcesz, aby można było rezerwować usługę tylko na karcie Kalendarz w aplikacji Bookings Web App.
+11. **Opcje publikowania** Określ, czy ta usługa ma być wyświetlana jako rezerwowalna na stronie Self-Service, czy też chcesz, aby usługa była zarezerwowana tylko na karcie Kalendarz w aplikacji internetowej Bookings.

@@ -1,5 +1,5 @@
 ---
-title: Ustawianie czasu buforu w uwitrynie Microsoft Bookings
+title: Ustawianie czasu buforu w Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,27 +8,30 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
-description: Ustaw czas buforu przed lub po terminie w aplikacji Microsoft Bookings, aby zezwolić na oczyszczenie lub zresetowanie sprzętu.
-ms.openlocfilehash: a33159b0b5f168bbb61c88bc9b4181e05c8abbb1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Ustaw czas buforowania przed lub po terminie w Microsoft Bookings, aby dać czas na czyszczenie lub resetowanie sprzętu.
+ms.openlocfilehash: 28d4c7feb76770cb40f5a780c2d406dc3bfeef8d
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329323"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714708"
 ---
-# <a name="set-buffer-time-in-microsoft-bookings"></a>Ustawianie czasu buforu w uwitrynie Microsoft Bookings
+# <a name="set-buffer-time-in-microsoft-bookings"></a>Ustawianie czasu buforu w Microsoft Bookings
 
-Niektóre terminy mogą wymagać czasu przed spotkaniem z klientem lub po nim w celu skonfigurowania, oczyszczenia lub zresetowania pokoju oraz sprzętu. Jeśli jesteś w podróży między terminami z klientami, możesz potrzebować czasu, aby upewnić się, że Ty i Twój zespół możecie podróżować między terminami bez konieczności oczekiwania przez klienta.
+> [!NOTE]
+> Ten artykuł ułatwia interakcję z najnowszą wersją Microsoft Bookings. Poprzednie wersje zostaną wycofane w najbliższych miesiącach.
 
-Możesz ustawić czas buforu przed rozpoczęciem terminów, po zakończeniu terminów lub w obu tych przypadkach, aby zapewnić personelowi dodatkowy czas potrzebny do przygotowania się na następne terminy.
+Niektóre terminy mogą wymagać czasu przed lub po spotkaniu z klientem w celu skonfigurowania, oczyszczenia lub zresetowania pokoju i sprzętu. Lub jeśli jesteś w drodze między terminami klienta, może być potrzebny czas, aby upewnić się, że Ty i Twój zespół możecie podróżować między spotkaniami bez czekania klienta.
+
+Możesz ustawić czas buforowania przed rozpoczęciem terminów, po zakończeniu terminów lub obu tych terminów, aby dać pracownikom dodatkowy czas potrzebny na przygotowanie się do następnego terminu.
 
 ## <a name="set-buffer-time-defaults"></a>Ustawianie wartości domyślnych czasu buforu
 
-Wartości domyślne buforu czasu są ustawiane na stronie **Szczegóły** usługi w usłudze Bookings. Podobnie jak wszystkie ustawienia domyślne usług ustawione na tej stronie, te wartości domyślne mogą być edytowane przez Ciebie w celu zaspokojenia konkretnych potrzeb klientów w przypadku określonej rezerwacji.
+Wartości domyślne czasu buforu są ustawiane na stronie **Szczegóły usługi** w Bookings. Podobnie jak w przypadku wszystkich ustawień domyślnych usługi ustawionych na tej stronie, te wartości domyślne mogą być edytowane przez Ciebie dla określonej rezerwacji w celu spełnienia określonych potrzeb klientów.
 
-Ustawienie czasu buforu znajduje się tuż poniżej listy Domyślne  s wyboru czasu trwania na stronie **Szczegóły** usługi. Przed ustawieniem dla danej usługi należy włączyć ustawienie czasu buforu, wybierając przełącznik czasu buforu. Powoduje to **pojawianie** się  menu przed i po, które służą do wyboru domyślnego czasu przechowywania przed każdą rezerwacją i po każdej rezerwacji, jak pokazano poniżej:
+Ustawienie czasu buforu można znaleźć na stronie **Szczegóły usługi** . Aby można było ustawić dla danej usługi, należy włączyć ustawienie czasu buforu, wybierając przełącznik czasu buforu. Powoduje to wyświetlenie list rozwijanych **Przed** i **Po** , które są używane do wybierania domyślnej ilości czasu do przechowywania przed i po każdej rezerwacji, jak pokazano tutaj:
 
-   ![Obraz aplikacji Bookings z włączonym czasem buforu czasu.](../media/bookings-buffertime.png)
+   ![Obraz przedstawiający Bookings z włączonym czasem buforowania.](../media/bookings-buffertime.png)
 
 <!--## Buffer time and appointment timing
 
@@ -39,8 +42,8 @@ Note that the event itself (on the left in the image below) shows lighter shadin
    ![Image of Bookings appointment call-out with buffer time showing.](../media/bookings-buffertime-callout.png)
 -->
 
-## <a name="buffer-time-and-availability"></a>Bufor czasu i dostępności
+## <a name="buffer-time-and-availability"></a>Czas buforowania i dostępność
 
-Twoi klienci nie widzą bezpośrednio ustawionego czasu buforu i nie mogą ich zmienić. Ponieważ jednak czas buforu jest używany do obliczenia ogólnego czasu trwania usługi, klienci widzą, że Ty i Twoi odpowiedni personel rezerwujecie zarówno w czasie buforu, jak i w zwykłych terminach. Klienci widzą również dostępność tylko dla Ciebie i Twojego personelu, jeśli jest wystarczająco dużo czasu zarówno dla terminu, jak i jego buforu czasu.
+Twoi klienci nie widzą bezpośrednio i nie mogą zmienić ustawionych czasów buforowania. Jednak ponieważ czas buforowania jest używany do obliczania ogólnego czasu trwania usługi, klienci będą widzieć Ciebie i Odpowiednich pracowników jako zarezerwowanych zarówno w buforze, jak i w regularnych terminach. Klienci widzą również dostępność dla Ciebie i Twoich pracowników tylko wtedy, gdy jest wystarczająco dużo czasu zarówno na spotkanie, jak i czas buforowania.
 
-Na przykład termin jednogodzinny z 15-minutowym czasem buforu przed terminem wymaga dostępnego bloku czasowego z co najmniej 1 godziną i 15 minutami. Termin dla tej usługi wypełni zatem 75-minutowy okres w kalendarzu i będzie wymagał 75 minut dostępności na rezerwację bez konfliktu.
+Na przykład jednogodzinne spotkanie z 15-minutowym czasem buforowania przed terminem wymaga dostępnego bloku czasu wynoszącego co najmniej 1 godzinę i 15 minut. Termin dla tej usługi wypełni zatem 75-minutowy blok czasu w kalendarzu i wymaga 75 minut dostępności, aby zarezerwować bez konfliktu.

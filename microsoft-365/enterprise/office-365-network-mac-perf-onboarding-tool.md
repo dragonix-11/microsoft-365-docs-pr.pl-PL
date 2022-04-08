@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 testu łączności sieciowej
+title: narzędzie do testowania łączności sieciowej Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -13,304 +13,304 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 testu łączności sieciowej
-ms.openlocfilehash: e464b4e651276f8b36f54e91ea0bfc7b7b52d69b
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+description: narzędzie do testowania łączności sieciowej Microsoft 365
+ms.openlocfilehash: 047a1ad10efa20f2c47491a20855a92bf141eb15
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504551"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705586"
 ---
-# <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 testu łączności sieciowej
+# <a name="microsoft-365-network-connectivity-test-tool"></a>narzędzie do testowania łączności sieciowej Microsoft 365
 
-Narzędzie Microsoft 365 test łączności sieciowej znajduje się w .<https://connectivity.office.com> Jest to narzędzie adiunktowe do oceny sieci i szczegółowych informacji o sieci dostępnych w centrum administracyjne platformy Microsoft 365 w obszarze **kondycji | Menu** Łączność.
+Narzędzie do testowania łączności sieciowej Microsoft 365 znajduje się pod adresem <https://connectivity.office.com>. Jest to dodatkowe narzędzie do oceny sieci i szczegółowych informacji o sieci dostępnych w Centrum administracyjne platformy Microsoft 365 w obszarze **| kondycji Menu Łączność**.
 
 > [!IMPORTANT]
-> Należy zalogować się do dzierżawy usługi Microsoft 365, ponieważ wszystkie raporty testowe są udostępniane administratorowi i przekazywane do dzierżawy podczas logowania.
+> Ważne jest, aby zalogować się do dzierżawy Microsoft 365, ponieważ wszystkie raporty testowe są udostępniane administratorowi i przekazywane do dzierżawy podczas logowania.
 
 > [!div class="mx-imgBorder"]
 > ![Narzędzie do testowania łączności.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
->Narzędzie do testowania łączności sieciowej obsługuje dzierżawy w sieci WW Commercial, ale nie jest GCC umiarkowane, GCC High, DoD lub China.
+>Narzędzie do testowania łączności sieciowej obsługuje dzierżawy WW Commercial, ale nie GCC Moderate, GCC High, DoD lub China.
 
-Szczegółowe informacje o sieci w centrum Administracja Microsoft 365 są oparte na regularnych pomiarach w produktach dla Twojej Microsoft 365 dzierżawy, zagregowanych każdego dnia. W porównaniu szczegółowe informacje o sieci z Microsoft 365 test łączności sieciowej są uruchamiane lokalnie w narzędziu.
+Szczegółowe informacje o sieci w centrum Administracja Microsoft 365 są oparte na regularnych pomiarach w produkcie dla dzierżawy Microsoft 365, agregowanych każdego dnia. Dla porównania szczegółowe informacje o sieci z testu łączności sieciowej Microsoft 365 są uruchamiane lokalnie w narzędziu.
 
-Testowanie w produktach jest ograniczone, a uruchamianie testów lokalnych dla użytkownika zbiera więcej danych, co prowadzi do bardziej szczegółowych informacji. Szczegółowe informacje o sieci w centrum Administracja Microsoft 365 sieci wskazują, że występuje problem z siecią w konkretnej lokalizacji biura. Test Microsoft 365 połączenia sieciowego może pomóc w zidentyfikowaniu głównej przyczyny tego problemu i udostępnić kierowane działanie w zakresie poprawy wydajności.
+Testowanie w produkcie jest ograniczone, a uruchamianie testów lokalnych dla użytkownika zbiera więcej danych, co prowadzi do dokładniejszego wglądu. Szczegółowe informacje o sieci w centrum Administracja Microsoft 365 pokazują, że w określonej lokalizacji biura występuje problem z siecią. Test łączności Microsoft 365 może pomóc w zidentyfikowaniu głównej przyczyny tego problemu i zapewnieniu ukierunkowanej akcji poprawy wydajności.
 
-Zalecamy, aby te wnioski były używane razem, gdzie można oceniać stan jakości sieci dla każdej lokalizacji biura w centrum Administracja Microsoft 365 Center, a więcej szczegółowych informacji można znaleźć po wdrożeniu testów na podstawie testu Microsoft 365 sieci.
+Zalecamy, aby te szczegółowe informacje były używane razem, gdy można ocenić stan jakości sieci dla każdej lokalizacji biura w centrum Administracja Microsoft 365, a bardziej szczegółowe informacje można znaleźć po wdrożeniu testów na podstawie testu łączności Microsoft 365.
 
-## <a name="what-happens-at-each-test-step"></a>Co się dzieje na każdym etapie testowania
+## <a name="what-happens-at-each-test-step"></a>Co się dzieje na każdym etapie testu
 
-### <a name="office-location-identification"></a>Office lokalizacji
+### <a name="office-location-identification"></a>Office identyfikacji lokalizacji
 
-Po kliknięciu *przycisku Uruchom test* zostanie pokazana strona testowa uruchomiona i zidentyfikujemy lokalizację biura. Możesz wpisać swoją lokalizację według miasta, województwa i kraju lub zdecydować się na jej wykrycie. Po wykryciu lokalizacji biura narzędzie żąda szerokości i długości geograficznej w przeglądarce sieci Web i ogranicza dokładność do 300 metrów na 300 metrów przed użyciem. Nie trzeba dokładniej określić lokalizacji niż budynek w celu pomiaru wydajności sieci.
+Po kliknięciu przycisku *Uruchom test* pokażemy uruchomioną stronę testów i zidentyfikujemy lokalizację biura. Możesz wpisać lokalizację według miasta, stanu i kraju lub wybrać, czy została wykryta. Jeśli wykryjesz lokalizację biura, narzędzie zażąda szerokości i długości geograficznej z przeglądarki internetowej i ograniczy dokładność do 300 metrów na 300 metrów przed użyciem. Nie trzeba dokładniej identyfikować lokalizacji niż budynek w celu mierzenia wydajności sieci.
 
 ### <a name="javascript-tests"></a>Testy języka JavaScript
 
-Po zidentyfikowaniu lokalizacji biura uruchamiamy test opóźnienia PROTOKOŁU TCP w języku JavaScript i żądamy od usługi danych dotyczących użytkowania i zalecanych Microsoft 365 frontonów serwisowych. Po zakończeniu tych testów są one wyświetlane na mapie i na karcie szczegóły, na której można je wyświetlać przed następnym krokiem.
+Po identyfikacji lokalizacji biura uruchamiamy test opóźnienia protokołu TCP w języku JavaScript i żądamy od usługi danych dotyczących używanych i zalecanych serwerów Microsoft 365 usług front door. Po zakończeniu tych testów są one wyświetlane na mapie i na karcie szczegółów, gdzie można je wyświetlić przed następnym krokiem.
 
 ### <a name="download-the-advanced-tests-client-application"></a>Pobieranie aplikacji klienckiej testów zaawansowanych
 
-Następnie rozpoczynamy pobieranie aplikacji klienckiej testów zaawansowanych. Polegamy na tym, że użytkownik uruchamia aplikację klienutną i musi mieć zainstalowany środowisko .NET 6.0 Runtime.
+Następnie rozpoczniemy pobieranie aplikacji klienckiej testów zaawansowanych. Polegamy na użytkowniku, aby uruchomić aplikację kliencką i musi mieć zainstalowane środowisko uruchomieniowe platformy .NET 6.0.
 
-Test łączności sieciowej z siecią Microsoft 365 jest dwa elementy: <https://connectivity.office.com> witryna internetowa i aplikacja Windows, która uruchamia zaawansowane testy łączności sieciowej. Większość testów wymaga uruchomienia aplikacji. W ten sposób wyniki zostaną ponownie wypełnione na stronie sieci Web.
+Test łączności sieciowej Microsoft 365 obejmuje dwie części: witrynę <https://connectivity.office.com> internetową i aplikację kliencką do pobrania Windows, która uruchamia zaawansowane testy łączności sieciowej. Większość testów wymaga uruchomienia aplikacji. Wyniki zostaną wypełnione z powrotem na stronie internetowej w miarę jej uruchamiania.
 
-Po zakończeniu testów przeglądarki sieci Web zostanie wyświetlony monit o pobranie zaawansowanej aplikacji testowej klienta z witryny sieci Web. Otwórz plik i uruchom go po wyświetleniu monitu.
+Po zakończeniu testów przeglądarki internetowej zostanie wyświetlony monit o pobranie zaawansowanej aplikacji testowej klienta z witryny sieci Web. Otwórz i uruchom plik po wyświetleniu monitu.
 
 > [!div class="mx-imgBorder"]
-> ![Zaawansowane testy aplikacji klienckiej.](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+> ![Aplikacja kliencka testów zaawansowanych.](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
 
 ### <a name="start-the-advanced-tests-client-application"></a>Uruchamianie aplikacji klienckiej testów zaawansowanych
 
-Po uruchamianiu aplikacji klienckiej strona sieci Web zostanie zaktualizowana w celu pokazania tego wyniku. Dane testowe zaczną być odbierane na stronie sieci Web. Strona jest aktualizowana za każdym razem, gdy są odbierane nowe dane, i możesz przeglądać otrzymane dane.
+Po uruchomieniu aplikacji klienckiej strona internetowa zostanie zaktualizowana w celu wyświetlenia tego wyniku. Dane testowe zaczną być odbierane na stronie internetowej. Strona jest aktualizowana za każdym razem, gdy są odbierane nowe dane, a dane można przeglądać w miarę ich pojawiania się.
 
-### <a name="advanced-tests-completed-and-test-report-upload"></a>Ukończono testowanie zaawansowane i przekazywanie raportu testowego
+### <a name="advanced-tests-completed-and-test-report-upload"></a>Ukończone testy zaawansowane i przekazywanie raportu testowego
 
-Po zakończeniu testów będzie ona pokazywana zarówno na stronie sieci Web, jak i na kliencie testów zaawansowanych. Jeśli użytkownik jest zalogowany, raport testowy zostanie przekazany do dzierżawy klienta.
+Po zakończeniu testów zarówno strona internetowa, jak i klient testów zaawansowanych będą to pokazywać. Jeśli użytkownik jest zalogowany, raport testowy zostanie przekazany do dzierżawy klienta.
 
 ## <a name="sharing-your-test-report"></a>Udostępnianie raportu testowego
 
-Raport testowy wymaga uwierzytelnienia Microsoft 365 konta. Administrator wybiera sposób udostępniania raportu testowego.
+Raport testowy wymaga uwierzytelniania na koncie Microsoft 365. Administrator wybiera sposób udostępniania raportu testowego. Ustawienia domyślne umożliwiają udostępnianie raportów innym użytkownikom w organizacji, a link ReportID jest niedostępny. Raporty wygasają domyślnie po 90 dniach.
 
 ### <a name="sharing-your-report-with-your-administrator"></a>Udostępnianie raportu administratorowi
 
-Jeśli zalogowano się w momencie wystąpienia raportu testowego, raport jest udostępniany administratorowi.
+Jeśli logujesz się po wystąpieniu raportu testowego, raport zostanie udostępniony administratorowi.
 
-### <a name="sharing-with-your-microsoft-account-team-support-or-other-personnel"></a>Udostępnianie zespołowi konta Microsoft, pomocy technicznej lub innym pracownikom
+### <a name="sharing-with-your-microsoft-account-team-support-or-other-personnel"></a>Udostępnianie z zespołem konta Microsoft, pomocą techniczną lub innym pracownikom
 
-Raporty testowe (z wyjątkiem identyfikacji osobistej) są udostępniane pracownikom firmy Microsoft. To udostępnianie jest domyślnie włączone i może zostać wyłączone przez administratora w |**Network Connectivity** page in the Administracja Microsoft 365 Center.
+Raporty testowe (z wyłączeniem identyfikacji osobistej) są udostępniane pracownikom firmy Microsoft. To udostępnianie jest domyślnie włączone i może zostać wyłączone przez administratora w **| kondycji Strona Łączność sieciowa** w centrum Administracja Microsoft 365.
 
-### <a name="sharing-with-other-users-who-sign-in-to-the-same-microsoft-365-tenant"></a>Udostępnianie innym użytkownikom, którzy logują się do tej samej Microsoft 365 dzierżawy
+### <a name="sharing-with-other-users-who-sign-in-to-the-same-microsoft-365-tenant"></a>Udostępnianie innym użytkownikom, którzy logują się do tej samej dzierżawy Microsoft 365
 
-Możesz wybrać użytkowników, dla których chcesz udostępnić raport. Możliwość wyboru jest domyślnie włączona, ale może ją wyłączyć administrator.
+Możesz wybrać użytkowników do udostępnienia raportu. Możliwość wyboru jest domyślnie włączona, ale może zostać wyłączona przez administratora.
 
 > [!div class="mx-imgBorder"]
-> ![Udostępnianie użytkownikowi linku do wyników testów.](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
+> ![Udostępnianie użytkownikowi linku do wyników testu.](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
 
 ### <a name="sharing-with-anyone-using-a-reportid-link"></a>Udostępnianie wszystkim osobom korzystającym z linku ReportID
 
-Raport testowy można udostępnić innym osobom, zapewniając dostęp do linku ReportID. Ten link generuje adres URL, który można wysłać do innej osoby, aby ta osoba może uzyskać raport testowy bez konieczności logowania się. Udostępnianie jest domyślnie wyłączone i musi zostać włączone przez administratora.
+Raport testowy można udostępnić dowolnej osobie, zapewniając dostęp do linku ReportID. Ten link generuje adres URL, który można wysłać do kogoś, aby mógł on wyświetlić raport testowy bez logowania. To udostępnianie jest domyślnie wyłączone i musi być włączone przez administratora.
 
 > [!div class="mx-imgBorder"]
 > ![Udostępnianie linku do wyników testu.](../media/m365-mac-perf/m365-mac-perf-share-link.png)
 
 ## <a name="network-connectivity-test-results"></a>Wyniki testu łączności sieciowej
 
-Wyniki są wyświetlane na kartach **Podsumowanie** **i** Szczegóły. Karta podsumowania zawiera mapę wykrytego obwodu sieci oraz porównanie oceny sieci z innymi pobliskimi Microsoft 365 w pobliżu. Umożliwia również udostępnianie raportu testowego. Widok wyników podsumowania wygląda następująco:
+Wyniki są wyświetlane na kartach **Podsumowanie** i **Szczegóły** . Karta podsumowanie przedstawia mapę wykrytego obwodu sieci i porównanie oceny sieci z innymi Microsoft 365 klientów znajdujących się w pobliżu. Umożliwia również udostępnianie raportu testowego. Oto jak wygląda widok wyników podsumowania:
 
 > [!div class="mx-imgBorder"]
-> ![Wyniki podsumowania narzędzi do testowania łączności sieciowej.](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
+> ![Wyniki podsumowania narzędzia do testowania łączności sieciowej.](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
-Oto przykładowe dane wyjściowe karty Szczegóły. Na karcie szczegóły wyświetlamy zielony okrąg, jeśli wynik był porównywany znacznie. Jeśli wynik przekracza próg wskazujący szczegółowe informacje o sieci, pokazujemy czerwony trójkąt wykrzyknik. W poniższych sekcjach opisano poszczególne wiersze wyników karty Szczegóły oraz wyjaśniono progi używane do analizy sieci.
+Oto przykład danych wyjściowych karty szczegółów. Na karcie szczegółów jest wyświetlany zielony znacznik wyboru koła, jeśli wynik został porównany pozytywnie. Jeśli wynik przekroczył próg wskazujący wgląd w sieć, zostanie wyświetlony czerwony trójkąt wykrzyknik. W poniższych sekcjach opisano poszczególne wiersze wyników karty szczegółów i objaśniają progi używane do analizy sieci.
 
 > [!div class="mx-imgBorder"]
 > ![Przykładowe wyniki testu narzędzia do testowania łączności sieciowej.](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
-### <a name="your-location-information"></a>Informacje o lokalizacji użytkownika
+### <a name="your-location-information"></a>Informacje o lokalizacji
 
-W tej sekcji przedstawiono wyniki testów dotyczące Twojej lokalizacji.
+W tej sekcji przedstawiono wyniki testów związane z Twoją lokalizacją.
 
 #### <a name="your-location"></a>Twoja lokalizacja
 
-Lokalizacja użytkownika jest wykrywana w przeglądarce internetowej użytkowników. Można go także wpisać chętną przez użytkownika. Służy do identyfikowania odległości sieciowych do określonych części obwodu sieci przedsiębiorstwa. Tylko miasto z tego wykrywania lokalizacji i odległość od innych punktów sieciowych są zapisywane w raporcie.
+Lokalizacja użytkownika jest wykrywana w przeglądarce internetowej użytkowników. Można go również wpisać w wybranym przez użytkownika miejscu. Służy do identyfikowania odległości sieciowych do określonych części obwodu sieci przedsiębiorstwa. W raporcie są zapisywane tylko miasto z tego wykrywania lokalizacji i odległość do innych punktów sieciowych.
 
 Lokalizacja biura użytkownika jest wyświetlana w widoku mapy.
 
-#### <a name="network-egress-location-the-location-where-your-network-connects-to-your-isp"></a>Lokalizacja ruchu wychodzącego sieciowego (lokalizacja, w której Twoja sieć łączy się z Twoim usługą sieciową)
+#### <a name="network-egress-location-the-location-where-your-network-connects-to-your-isp"></a>Lokalizacja ruchu wychodzącego sieci (lokalizacja, w której sieć łączy się z usługodawcą sieciowym)
 
-Identyfikujemy adres IP ruchu wychodzącego sieci po stronie serwera. Bazy danych lokalizacji służą do wyszukiwania przybliżonej lokalizacji dla ruchu wychodzącego do sieci. Te bazy danych mają zazwyczaj dokładność do około 90% adresów IP. Jeśli lokalizacja wyszukiwania z adresu IP sieci wychodzącej nie jest dokładna, spowoduje to wynik fałsz. Aby sprawdzić, czy ten błąd występuje dla określonego adresu IP, możesz porównać witryny internetowe z publicznie dostępnymi adresami IP w celu porównania z rzeczywistą lokalizacją.
+Identyfikujemy adres IP ruchu wychodzącego sieci po stronie serwera. Bazy danych lokalizacji służą do wyszukiwania przybliżanych lokalizacji dla ruchu wychodzącego sieci. Te bazy danych zwykle mają dokładność około 90% adresów IP. Jeśli lokalizacja wyszukana z adresu IP ruchu wychodzącego sieci jest nieprawidłowa, może to prowadzić do fałszywego wyniku. Aby sprawdzić, czy ten błąd występuje dla określonego adresu IP, możesz użyć publicznie dostępnych sieciowych witryn sieciowych adresów IP do porównania z rzeczywistą lokalizacją.
 
-#### <a name="your-distance-from-the-network-egress-location"></a>Odległość od lokalizacji ruchu wychodzącego sieciowego
+#### <a name="your-distance-from-the-network-egress-location"></a>Odległość od lokalizacji ruchu wychodzącego sieci
 
-Określamy odległość od tej lokalizacji do lokalizacji biura. Jest to wyświetlane jako szczegółowe informacje o sieci, jeśli odległość jest większa niż **500** mil (800 kilometrów), ponieważ może to zwiększyć opóźnienie protokołu TCP o więcej niż 25 ms i może mieć wpływ na środowisko użytkownika.
+Określamy odległość od tej lokalizacji do lokalizacji biura. Jest to wyświetlane jako wgląd w sieć, jeśli odległość jest większa niż **800** kilometrów, ponieważ może to zwiększyć opóźnienie TCP o ponad 25 ms i może mieć wpływ na środowisko użytkownika.
 
-Mapa przedstawia lokalizację sieciowego ruchu wychodzącego względem lokalizacji biura użytkownika wskazującą wewnętrzną sieć WAN przedsiębiorstwa.
+Mapa przedstawia lokalizację ruchu wychodzącego sieci w stosunku do lokalizacji biura użytkownika wskazującą zaplecze sieci wewnątrz sieci WAN przedsiębiorstwa.
 
-Implementowanie lokalnego i bezpośredniego ruchu wychodzącego z lokalizacji biur użytkowników do Internetu w celu zapewnienia optymalnej Microsoft 365 sieci. Najlepszym sposobem rozwiązania tych informacji o sieci są ulepszenia dotyczące lokalnego i bezpośredniego ruchu wychodzącego.
+Zaimplementuj ruch wychodzący sieci lokalnej i bezpośredniej z lokalizacji biura użytkownika do Internetu w celu uzyskania optymalnej Microsoft 365 łączności sieciowej. Ulepszenia lokalnego i bezpośredniego ruchu wychodzącego to najlepszy sposób na rozwiązanie tego problemu.
 
 #### <a name="proxy-server-information"></a>Informacje o serwerze proxy
 
-Określamy, czy serwery proxy są skonfigurowane na komputerach lokalnych w celu przekazania Microsoft 365 sieciowego w kategorii **Optymalizowanie**. Identyfikujemy odległość od lokalizacji biura użytkownika do serwerów proxy.
+Określamy, czy serwery proxy są skonfigurowane na maszynie lokalnej w celu przekazywania ruchu sieciowego Microsoft 365 w kategorii **Optymalizacja**. Identyfikujemy odległość od lokalizacji biura użytkownika do serwerów proxy.
 
-Odległość jest najpierw sprawdzana przez polecenie ping ICMP. Jeśli to nie powiedzie się, testujemy przy użyciu protokołu TCP ping, a na koniec przeszukamy adres IP serwera proxy w bazie danych lokalizacji adresu IP. Pokazujemy szczegółowe informacje o sieci, jeśli serwer proxy znajduje się dalej niż **500** kilometrów (800 kilometrów) od lokalizacji biura użytkownika.
+Odległość jest najpierw testowana za pomocą polecenia ping protokołu ICMP. Jeśli to się nie powiedzie, przetestujemy polecenie ping protokołu TCP i na koniec wyszukamy adres IP serwera proxy w bazie danych lokalizacji adresów IP. Pokazujemy szczegółowe informacje o sieci, jeśli serwer proxy znajduje się dalej niż **800** kilometrów od lokalizacji biura użytkownika.
 
-#### <a name="virtual-private-network-vpn-you-use-to-connect-to-your-organization"></a>Wirtualna sieć prywatna (VPN), za pomocą których łączysz się ze swoją organizacją
+#### <a name="virtual-private-network-vpn-you-use-to-connect-to-your-organization"></a>Wirtualna sieć prywatna (VPN) używana do nawiązywania połączenia z organizacją
 
-Ten test wykrywa, czy używasz sieci VPN do łączenia się z siecią Microsoft 365. Wynik przekazywania będzie pokazywany, jeśli nie masz połączenia VPN lub jeśli masz sieć VPN z zalecaną konfiguracją podziałów na Microsoft 365.
+Ten test wykrywa, czy używasz sieci VPN do nawiązywania połączenia z Microsoft 365. Wynik przekazywania będzie wyświetlany, jeśli nie masz sieci VPN lub jeśli masz sieć VPN z zalecaną konfiguracją tunelu podzielonego dla Microsoft 365.
 
-#### <a name="vpn-split-tunnel"></a>Tryb dzielony VPN Tunnel
+#### <a name="vpn-split-tunnel"></a>Tunnel podziału sieci VPN
 
-Każda **trasa kategorii** Optymalizuj dla Exchange Online, SharePoint Online i aplikacji Microsoft Teams jest sprawdzana w celu sprawdzić, czy jest ona szyfrowana w sieci VPN. Podzielone obciążenie pracą całkowicie zapobiega sieci VPN. Chmurowe obciążenie pracą jest wysyłane przez sieć VPN. Selektywnie rozdzielane obciążenie pracą ma pewne trasy przesyłane przez sieć VPN, a inne są rozdzielone. Jeśli wszystkie obciążenia są rozdzielone lub selektywne, będzie pokazywany wynik przekazywania.
+Każda trasa kategorii **Optymalizacja** dla Exchange Online, SharePoint Online i Microsoft Teams jest testowana, aby sprawdzić, czy jest ona tunelowana w sieci VPN. Podzielone obciążenie całkowicie unika sieci VPN. Obciążenie tunelowane jest wysyłane za pośrednictwem sieci VPN. Selektywne obciążenie tunelowane ma niektóre trasy wysyłane przez sieć VPN, a niektóre są podzielone. Wynik przekazywania będzie pokazywać, czy wszystkie obciążenia są podzielone lub selektywnie tunelowane.
 
-#### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Klienci z Twojego obszaru wielkomiejskiego o lepszej wydajności
+#### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Klienci w obszarze metropolitalnym z lepszą wydajnością
 
-Opóźnienie sieci między lokalizacją biura użytkownika a usługą Exchange Online jest porównywane z Microsoft 365 klientów korzystających z tego samego obszaru metra. Jeśli co najmniej 10% klientów w tym samym regionie metra ma lepszą wydajność, zostanie pokazane szczegółowe informacje o sieci. Oznacza to, że ich użytkownicy będą mieli lepszą wydajność w Microsoft 365 interfejsie użytkownika.
+Opóźnienie sieci między lokalizacją biura użytkownika a usługą Exchange Online jest porównywane z innymi Microsoft 365 klientów w tym samym obszarze metra. Analiza sieci jest wyświetlana, jeśli 10% lub więcej klientów w tym samym obszarze metra ma lepszą wydajność. Oznacza to, że ich użytkownicy będą mieli lepszą wydajność w Microsoft 365 interfejsie użytkownika.
 
-Ten wgląd w sieć jest generowany na podstawie tego, że wszyscy użytkownicy w mieście mają dostęp do tej samej infrastruktury telekomunikacyjnej i tej samej odległości od obwodów internetowych i sieci firmy Microsoft.
+Ten wgląd w sieć jest generowany na podstawie tego, że wszyscy użytkownicy w mieście mają dostęp do tej samej infrastruktury telekomunikacyjnej i tej samej bliskości obwodów internetowych i sieci firmy Microsoft.
 
-#### <a name="time-to-make-a-dns-request-on-your-network"></a>Czas na zgłoszenie żądania DNS w twojej sieci
+#### <a name="time-to-make-a-dns-request-on-your-network"></a>Czas na żądanie DNS w sieci
 
-To pokazuje serwer DNS skonfigurowany na komputerze klienckim, na którym uruchomiono testy. Może to być serwer rekurentywnego rozpoznawania nazw DNS, jednak jest to nietypowy serwer. Najbardziej prawdopodobne jest, że jest to serwer usługi DNS przesyłania dalej, który buforuje wyniki DNS i przesyła dalej wszystkie niezaszukane żądania DNS do innego serwera DNS.
+Spowoduje to wyświetlenie serwera DNS skonfigurowanego na maszynie klienckiej, na których uruchomiono testy. Może to być serwer rekursywnego rozpoznawania nazw DNS, jednak jest to nietypowe. Jest bardziej prawdopodobne, że jest to serwer usługi przesyłania dalej DNS, który buforuje wyniki DNS i przekazuje wszystkie nienadłużone żądania DNS do innego serwera DNS.
 
-Te informacje są udostępniane tylko w celu informacyjnych informacji i nie są udostępniane żadnym informacjom o sieci.
+Jest to dostępne tylko dla informacji i nie przyczynia się do analizy sieci.
 
-#### <a name="your-distance-from-andor-time-to-connect-to-a-dns-recursive-resolver"></a>Odległość od serwera i/lub czas na połączenie się z rekurencyjną odpowiedzią DNS
+#### <a name="your-distance-from-andor-time-to-connect-to-a-dns-recursive-resolver"></a>Odległość od i/lub czasu nawiązywania połączenia z cyklicznym programem rozpoznawania nazw DNS
 
-Adres IP, z którym otrzymano to samo żądanie, jest identyfikowany przez wykonanie określonego żądania DNS, a następnie poproszenie serwera nazw DNS o adres IP, z którym zostało otrzymane to samo żądanie. Ten adres IP jest rekurencyjną odpowiedzią DNS i będzie szukać jej w bazach danych lokalizacji adresów IP w celu znalezienia tej lokalizacji. Następnie jest obliczana odległość od lokalizacji biura użytkownika do lokalizacji serwera rekurentywnego rozpoznawania nazw DNS. Jest to wyświetlane jako szczegółowe informacje o sieci, jeśli odległość jest większa niż **500 kilometrów** (800 kilometrów).
+Program rekursywnego rozpoznawania nazw DNS w użyciu jest identyfikowany przez wykonanie określonego żądania DNS, a następnie zwrócenie się do serwera nazw DNS o adres IP, z którego otrzymał to samo żądanie. Ten adres IP jest rekursywnym programem rozpoznawania nazw DNS i będzie wyszukiwany w bazach danych lokalizacji adresów IP w celu znalezienia lokalizacji. Następnie obliczana jest odległość od lokalizacji biura użytkownika do lokalizacji serwera rekursywnego rozpoznawania nazw DNS. Jest to wyświetlane jako wgląd w sieć, jeśli odległość jest większa niż **500 mil** (800 kilometrów).
 
-Lokalizacja poszukiwana z adresu IP ruchu wychodzącego sieci może nie być dokładna, co prowadzi do fałszywego wyniku tego testu. Aby sprawdzić, czy ten błąd występuje dla określonego adresu IP, możesz użyć witryn sieciowych z publicznie dostępnymi lokalizacjami adresów IP.
+Lokalizacja wyszukana z adresu IP ruchu wychodzącego sieci może nie być dokładna i może to prowadzić do fałszywego wyniku z tego testu. Aby sprawdzić, czy ten błąd występuje dla określonego adresu IP, możesz użyć publicznie dostępnych sieciowych witryn sieciowych adresów IP.
 
-Ta analiza sieci w szczególności ma wpływ na wybór Exchange Online front front door usługi. Rozwiązanie problemu tego lokalnego i bezpośredniego ruchu wychodzącego do sieci powinno być wymaganiem wstępnym, a następnie powinno być zlokalizowane w pobliżu tego serwera ruchu wychodzącego sieciowego.
+Ten wgląd w sieć będzie miał szczególny wpływ na wybór bramy głównej usługi Exchange Online. Aby rozwiązać ten problem, lokalny i bezpośredni ruch wychodzący sieci powinien być wstępnie wymagany, a następnie rekursywny program rozpoznawania nazw DNS powinien znajdować się w pobliżu tego ruchu wychodzącego sieci.
 
 ### <a name="exchange-online"></a>Exchange Online
 
-W tej sekcji przedstawiono wyniki testów dotyczące Exchange Online.
+W tej sekcji przedstawiono wyniki testów związane z Exchange Online.
 
-#### <a name="exchange-service-front-door-location"></a>Exchange front door service
+#### <a name="exchange-service-front-door-location"></a>Exchange lokalizacji drzwi wejściowych usługi
 
-Nazwa Exchange jest identyfikowana w taki sam sposób Outlook jak jest to możliwe i mierzę opóźnienie protokołu TCP sieci z lokalizacji użytkownika do tej bramy. Wyświetlane jest opóźnienie protokołu TCP i używany Exchange front door usługi jest porównywany z listą najlepszych drzwi frontu usługi dla bieżącej lokalizacji. Jest to szczegółowe informacje o sieci, jeśli jeden z najlepszych Exchange serwisowych nie jest w użyciu.
+Brama frontowa usługi Exchange w użyciu jest identyfikowana w taki sam sposób, jak Outlook to robi, a my mierzymy opóźnienie TCP sieci od lokalizacji użytkownika do niej. Opóźnienie TCP jest wyświetlane, a używana brama frontowa usługi Exchange jest porównywana z listą najlepszych drzwi wejściowych usługi dla bieżącej lokalizacji. Jest to wyświetlane jako wgląd w sieć, jeśli jedna z najlepszych bram Exchange usługi nie jest używana.
 
-Nieużycie jednej z najlepszych drzwi Exchange serwisowej może być spowodowane przez ruch sieciowy przed firmowym wyjściem z sieci, w którym to przypadku zalecamy lokalny i bezpośredni ruch wychodzący do sieci. Może to być również spowodowane użyciem zdalnego serwera rekurenkcyjnego funkcji rozpoznawania nazw DNS, w którym to przypadku zalecamy wyrównanie serwera rekurentywnego rozpoznawania nazw DNS do ruchu wychodzącego sieci.
+Użycie jednej z najlepszych bram Exchange usług może być spowodowane przez ruch przychodzący sieci przed ruchem wychodzącym sieci firmowej, w którym to przypadku zalecamy ruch wychodzący sieci lokalnej i bezpośredniej. Może to być również spowodowane przez użycie zdalnego serwera rekursywnego rozpoznawania nazw DNS, w którym to przypadku zalecamy wyrównanie cyklicznego serwera rozpoznawania nazw DNS z ruchem wychodzącym sieci.
 
-Obliczamy potencjalne ulepszenie opóźnień TCP (ms) w Exchange frontów usługi. Aby to zrobić, należy pochylić testowane opóźnienie sieciowe lokalizacji użytkownika i odjąć opóźnienie sieciowe od bieżącej lokalizacji do Exchange front front door usługi. Różnica oznacza potencjalną szansę ulepszenia.
+Obliczamy potencjalne zwiększenie opóźnienia TCP (ms) w bramie głównej usługi Exchange. W tym celu należy przyjrzeć się przetestowanym opóźnieniu sieci lokalizacji biura użytkownika i odjąć opóźnienie sieci od bieżącej lokalizacji do szaf Exchange front door usługi. Różnica reprezentuje potencjalną możliwość poprawy.
 
-#### <a name="best-exchange-service-front-doors-for-your-location"></a>Najlepsze Exchange serwisowe drzwi z przodu(y) do Twojej lokalizacji
+#### <a name="best-exchange-service-front-doors-for-your-location"></a>Najlepsze Exchange usług dla twojej lokalizacji
 
-W tym miejscu są Exchange lokalizacje frontów frontu usługi według miasta dla Twojej lokalizacji.
+Spowoduje to wyświetlenie najlepszych Exchange lokalizacji bramy głównej usługi według miasta dla Twojej lokalizacji.
 
-#### <a name="service-front-door-recorded-in-the-client-dns"></a>Service front door recorded in the client DNS
+#### <a name="service-front-door-recorded-in-the-client-dns"></a>Usługa Front Door zarejestrowana w systemie DNS klienta
 
-W tym przykładzie jest pokazana nazwa DNS i adres IP Exchange front door serwera frontów usługi, do których został przekierowyny Twój adres. Jest ona dostarczana tylko w celu informacji i nie jest skojarzona z siecią.
+Spowoduje to wyświetlenie nazwy DNS i adresu IP serwera front door usługi Exchange, do którego został przekierowany. Jest ona udostępniana tylko do celów informacyjnych i nie ma skojarzonego wglądu w sieć.
 
 ### <a name="sharepoint-online"></a>SharePoint Online
 
-W tej sekcji przedstawiono wyniki testów dotyczące usługi SharePoint Online i OneDrive.
+W tej sekcji przedstawiono wyniki testów związane z usługami SharePoint Online i OneDrive.
 
-#### <a name="the-service-front-door-location"></a>Lokalizacja frontów serwisowych
+#### <a name="the-service-front-door-location"></a>Lokalizacja drzwi wejściowych usługi
 
-Nazwa "SharePoint" jest identyfikowana w taki sam sposób jak klient usługi OneDrive i mierzy opóźnienie protokołu TCP sieci z lokalizacji biura użytkownika do tego klienta.
+Brama frontowa usługi SharePoint w użyciu jest identyfikowana w taki sam sposób, jak OneDrive klient, a my mierzymy opóźnienie TCP sieci z lokalizacji biura użytkownika do niej.
 
 #### <a name="download-speed"></a>Szybkość pobierania
 
-Mierzymy szybkość pobierania dla pliku o rozmiarze 15 Mb z SharePoint frontem usługi. Wynik jest wyświetlany w megabajtach na sekundę, aby wskazać, jaki rozmiar pliku w megabajtach można pobrać z programu SharePoint lub OneDrive **w jednej sekundy**. Liczba powinna być podobna do jednej dziesiątej minimalnej przepustowości obwodu w megabitach na sekundę. Jeśli na przykład masz połączenie internetowe o sieci 100 mb/s, możesz oczekiwać 10 megabajtów na sekundę (10 MB/s).
+Mierzymy szybkość pobierania pliku o rozmiarze 15 Mb z bramy głównej usługi SharePoint. Wynik jest wyświetlany w megabajtach na sekundę, aby wskazać, jaki plik rozmiaru w megabajtach można pobrać z SharePoint lub OneDrive w **ciągu jednej sekundy**. Liczba ta powinna być podobna do jednej dziesiątej minimalnej przepustowości obwodu w megabitach na sekundę. Jeśli na przykład masz połączenie internetowe o wartości 100 mb/s, możesz spodziewać się 10 megabajtów na sekundę (10 MB/s).
 
-#### <a name="buffer-bloat"></a>Sypną bufor
+#### <a name="buffer-bloat"></a>Buforowanie obiektu bloat
 
-Podczas pobierania 15 Mb mierzymy opóźnienie protokołu TCP na SharePoint front front door usługi. Jest to opóźnienie w trakcie ładowania i jest porównywane z opóźnieniem, gdy nie jest ono ładowane. Wzrost opóźnienia podczas ładowania jest często przypisywany do ładowanych buforów urządzeń sieciowych dla klientów (lub zwiększa ich rozmiar). Szczegółowe informacje o sieci są widoczne dla każdego wywęchu 1000 lub więcej.
+Podczas pobierania 15 Mb mierzymy opóźnienie TCP w bramie frontowej usługi SharePoint. Jest to opóźnienie w obciążeniu i jest porównywane z opóźnieniem, gdy nie jest pod obciążeniem. Wzrost opóźnienia w przypadku obciążenia jest często przypisywany do ładowanych buforów urządzeń sieciowych konsumentów (lub nadętych). Szczegółowe informacje o sieci są wyświetlane dla każdego obiektu bloat wynoszącego co najmniej 1000.
 
-#### <a name="service-front-door-recorded-in-the-client-dns"></a>Service front door recorded in the client DNS
+#### <a name="service-front-door-recorded-in-the-client-dns"></a>Usługa Front Door zarejestrowana w systemie DNS klienta
 
-W tym przykładzie jest pokazana nazwa DNS i adres IP SharePoint front door service front door, do których został przekierowyny Twój adres. Jest ona dostarczana tylko w celu informacji i nie jest skojarzona z siecią.
+Spowoduje to wyświetlenie nazwy DNS i adresu IP serwera front door usługi SharePoint, do którego została przekierowana. Jest ona udostępniana tylko do celów informacyjnych i nie ma skojarzonego wglądu w sieć.
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
 
-Ta sekcja zawiera wyniki testów związanych z Microsoft Teams.
+W tej sekcji przedstawiono wyniki testów związane z Microsoft Teams.
 
-#### <a name="media-connectivity-audio-video-and-application-sharing"></a>Łączność z multimediami (audio, wideo i udostępnianie aplikacji)
+#### <a name="media-connectivity-audio-video-and-application-sharing"></a>Łączność z nośnikami (audio, wideo i udostępnianie aplikacji)
 
-To testuje łączność UDP z Microsoft Teams frontową usługą serwisową. Jeśli ta karta jest blokowana, oznacza to, Microsoft Teams nadal używać protokołu TCP, ale dźwięk i wideo będą zakłócone. Dowiedz się więcej o tych pomiarach sieci UDP, które mają również zastosowanie Microsoft Teams na temat jakości multimediów i wydajności łączności sieciowej w Skype dla firm [Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
+Spowoduje to przetestowanie łączności UDP z bramą frontową usługi Microsoft Teams. Jeśli jest to zablokowane, Microsoft Teams nadal może działać przy użyciu protokołu TCP, ale dźwięk i wideo będą osłabione. Przeczytaj więcej na temat tych pomiarów sieci UDP, które mają również zastosowanie do Microsoft Teams w sekcji [Jakość multimediów i Wydajność łączności sieciowej w usłudze Skype dla firm Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
 
-#### <a name="packet-loss"></a>Utrata pakietów
+#### <a name="packet-loss"></a>Utrata pakietu
 
-Przedstawia wartość utraty pakietów UDP mierzoną w 10-sekundowym testowym wywołaniu audio od klienta do Microsoft Teams front door. W przypadku przełęczy powinno to być niższe niż **1,00** %.
+Pokazuje utratę pakietów UDP mierzoną w 10-sekundowym testowym wywołaniu audio od klienta do bramy głównej usługi Microsoft Teams. Dla przebiegu wartość ta powinna być niższa niż **1,00%.**
 
 #### <a name="latency"></a>Opóźnienie
 
-Wyświetla mierzone opóźnienie UDP, które powinno być mniejsze niż **100 m**.
+Pokazuje zmierzone opóźnienie UDP, które powinno być mniejsze niż **100 ms**.
 
 #### <a name="jitter"></a>Jitter
 
-Wyświetla mierzoną zakłóceń UDP, która powinna być mniejsza niż **30 m**.
+Pokazuje zmierzone jitter UDP, które powinny być niższe niż **30ms**.
 
 #### <a name="connectivity"></a>Łączność
 
-Testujemy łączność HTTP z lokalizacji biura użytkownika do wszystkich wymaganych Microsoft 365 sieciowych. Są one publikowane w .[https://aka.ms/o365ip](./urls-and-ip-address-ranges.md) Zostanie pokazana analiza sieci dla wszystkich wymaganych punktów końcowych sieci, z którymi nie można nałączyć połączenia.
+Testujemy łączność HTTP z lokalizacji biura użytkownika do wszystkich wymaganych Microsoft 365 punktów końcowych sieci. Są one publikowane pod adresem [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). Wgląd w sieć jest wyświetlany dla wszystkich wymaganych punktów końcowych sieci, z którymi nie można nawiązać połączenia.
 
-Łączność może zostać zablokowana przez serwer proxy, zaporę lub inne urządzenie zabezpieczające sieci w obwodzie sieci przedsiębiorstwa. Łączność z portem TCP 80 jest testowana przy użyciu żądania HTTP, a łączność z portem TCP 443 jest testowana przy użyciu żądania HTTPS. Jeśli nie ma odpowiedzi, to fQDN jest oznaczana jako błąd. Jeśli istnieje kod odpowiedzi HTTP 407, to jego adres FQDN jest oznaczony jako błąd. Jeśli istnieje kod odpowiedzi HTTP 403, sprawdzamy atrybut serwera odpowiedzi i jeśli wydaje się, że jest to serwer proxy, oznaczamy ten błąd jako błąd. Możesz symulować przeprowadzane przez nas testy za Windows narzędzia wiersza polecenia curl.exe.
+Łączność może zostać zablokowana przez serwer proxy, zaporę lub inne urządzenie zabezpieczeń sieci na obwodzie sieci przedsiębiorstwa. Łączność z portem TCP 80 jest testowana przy użyciu żądania HTTP, a łączność z portem TCP 443 jest testowana za pomocą żądania HTTPS. Jeśli nie ma odpowiedzi, nazwa FQDN jest oznaczona jako awaria. Jeśli istnieje kod odpowiedzi HTTP 407, nazwa FQDN jest oznaczona jako błąd. Jeśli istnieje kod odpowiedzi HTTP 403, sprawdzamy atrybut Serwera odpowiedzi i jeśli wydaje się, że jest to serwer proxy, oznaczamy to jako błąd. Testy, które wykonujemy, można symulować za pomocą narzędzia wiersza polecenia Windows curl.exe.
 
-Testujemy certyfikat SSL na każdym wymaganym Microsoft 365 sieciowym, który znajduje się w kategorii optymalizowania lub zezwalania, zgodnie z definicją w punkcie [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). Jeśli jakieś testy nie znajdą certyfikatu Microsoft SSL, to połączona sieć zaszyfrowana musi zostać przechwycona przez pośrednie urządzenie sieciowe. Szczegółowe informacje o sieci są pokazywane na wszystkich przecięciach zaszyfrowanych punktach końcowych sieci.
+Testujemy certyfikat SSL w każdym wymaganym punkcie końcowym Microsoft 365 sieci, który znajduje się w kategorii optymalizacji lub zezwalaj zgodnie z definicją w [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md)temacie . Jeśli jakiekolwiek testy nie znajdą certyfikatu SSL firmy Microsoft, zaszyfrowana sieć połączona musi zostać przechwycona przez pośredniczące urządzenie sieciowe. Szczegółowe informacje o sieci są wyświetlane na wszystkich przechwyconych zaszyfrowanych punktach końcowych sieci.
 
-W przypadku, gdy zostanie znaleziony certyfikat SSL, który nie jest dostarczony przez firmę Microsoft, zostanie pokazana jego usługa FQDN dla testu oraz właściciel certyfikatu SSL w użyciu. Ten właściciel certyfikatu SSL może być dostawcą serwera proxy lub certyfikatem z podpisem własnym przedsiębiorstwa.
+W przypadku znalezienia certyfikatu SSL, który nie jest dostarczany przez firmę Microsoft, wyświetlamy nazwę FQDN dla testu i właściciela certyfikatu SSL w użyciu. Ten właściciel certyfikatu SSL może być dostawcą serwera proxy lub certyfikatem z podpisem własnym przedsiębiorstwa.
 
 #### <a name="network-path"></a>Ścieżka sieciowa
 
-W tej sekcji przedstawiono wyniki śledzenia usługi ICMP do frontu Exchange Online service front door, przód usługi SharePoint Online oraz Microsoft Teams front door service. Jest ona dostarczana tylko w celu informacji i nie jest skojarzona z siecią. Dostępne są trzy trasy śledzenia. Przekieruj śledzenia do _outlook.office365.com,_ przekieruj śledzenia do klientów z SharePoint frontu lub do usługi _microsoft.sharepoint.com_, jeśli nie została microsoft.sharepoint.com, oraz przekieruj śledzenia do _world.tr.teams.microsoft.com._
+W tej sekcji przedstawiono wyniki śledzenia protokołu ICMP do bramy głównej usługi Exchange Online, bramy głównej usługi SharePoint Online oraz bramy głównej usługi Microsoft Teams. Jest ona udostępniana tylko do celów informacyjnych i nie ma skojarzonego wglądu w sieć. Dostępne są trzy trasy śledzenia. Traceroute to _outlook.office365.com_, traceroute to the customers SharePoint fronton or _to microsoft.sharepoint.com_ if one was not provided, and a traceroute to _world.tr.teams.microsoft.com_.
 
 ## <a name="connectivity-reports"></a>Raporty dotyczące łączności
 
-Po zalogowaniu się możesz przeglądać wcześniejsze uruchomione raporty. Możesz je także udostępnić lub usunąć z listy.
+Po zalogowaniu możesz przejrzeć poprzednie raporty, które zostały uruchomione. Możesz je również udostępnić lub usunąć z listy.
 
 > [!div class="mx-imgBorder"]
 > ![Raporty.](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
 
 ## <a name="network-health-status"></a>Stan kondycji sieci
 
-Pokazuje to wszelkie istotne problemy w kondycji globalnej sieci firmy Microsoft, które mogą mieć Microsoft 365 klientów.
+Pokazuje to wszelkie istotne problemy zdrowotne związane z globalną siecią firmy Microsoft, które mogą mieć wpływ na Microsoft 365 klientów.
 
 > [!div class="mx-imgBorder"]
 > ![Stan kondycji sieci.](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="testing-from-the-command-line"></a>Testowanie z wiersza polecenia
+## <a name="testing-from-the-command-line"></a>Testowanie z poziomu wiersza polecenia
 
-Zapewniamy plik wykonywalny wiersza polecenia, który może być używany przez narzędzia wdrażania zdalnego i wykonywania oraz uruchamiamy te same testy, które są dostępne w witrynie internetowej narzędzia do testowania łączności Microsoft 365 sieci.
+Udostępniamy plik wykonywalny wiersza polecenia, który może być używany przez narzędzia zdalnego wdrażania i wykonywania i uruchamiać te same testy, które są dostępne w witrynie internetowej narzędzia do testowania łączności sieciowej Microsoft 365.
 
 Narzędzie do testowania wiersza polecenia można pobrać tutaj: [Narzędzie wiersza polecenia](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
 
-Można go uruchomić, klikając dwukrotnie plik wykonywalny w Eksploratorze plików programu Windows lub uruchamiając go z wiersza polecenia albo planować przy użyciu harmonogramu zadań.
+Można go uruchomić, klikając dwukrotnie plik wykonywalny w Windows Eksplorator plików, możesz uruchomić go z poziomu wiersza polecenia lub zaplanować go za pomocą harmonogramu zadań.
 
-Podczas pierwszego uruchomienia pliku wykonywalnego zostanie wyświetlony monit o zaakceptowanie umowy licencyjnej użytkownika końcowego (EULA) przed wykonaniem testowania. Jeśli została już przeczytana i zaakceptowana eula, możesz utworzyć pusty plik o nazwie Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt w bieżącym katalogu roboczy dla procesu wykonywalnego, gdy zostanie uruchomiona. Aby zaakceptować eula, możesz wpisać "y" i po wyświetleniu monitu nacisnąć klawisz Enter w oknie wiersza polecenia.
+Po pierwszym uruchomieniu pliku wykonywalnego zostanie wyświetlony monit o zaakceptowanie umowy licencyjnej użytkownika końcowego (EULA) przed przeprowadzeniem testowania. Jeśli umowa EULA została już przeczytana i zaakceptowana, możesz utworzyć pusty plik o nazwie Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt w bieżącym katalogu roboczym dla procesu wykonywalnego po jego uruchomieniu. Aby zaakceptować umowę EULA, możesz wpisać ciąg "y" i nacisnąć klawisz Enter w oknie wiersza polecenia po wyświetleniu monitu.
 
-Plik wykonywalny przyjmuje parametr wiersza polecenia /h w celu pokazania linku do tej dokumentacji Pomocy.
+Plik wykonywalny akceptuje parametr wiersza polecenia /h, aby wyświetlić link do tej dokumentacji pomocy.
 
 ### <a name="results"></a>Wyniki
-Wyniki są zapisywane w pliku JSON w folderze o nazwie TestResults, który jest tworzony w bieżącym katalogu pracy procesu, chyba że już istnieje. Format nazwy pliku dla danych wyjściowych to connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Wyniki są w węzłach JSON, które są zgodne z wynikami wyświetlanymi na stronie internetowej witryny internetowej narzędzia do testowania Microsoft 365 sieciowej. Nowy plik wyników jest tworzony za każdym razem, gdy go uruchamiasz, a autonomiczny plik wykonywalny nie przesyła wyników do dzierżawy firmy Microsoft w celu wyświetlenia na stronach łączność sieciowa centrum administracyjnego.
+Dane wyjściowe wyników są zapisywane w pliku JSON w folderze o nazwie TestResults, który jest tworzony w bieżącym katalogu roboczym procesu, chyba że już istnieje. Format nazwy pliku dla danych wyjściowych to connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. Wyniki są w węzłach JSON, które są zgodne z danymi wyjściowymi wyświetlanymi na stronie internetowej witryny internetowej narzędzia do testowania łączności sieciowej Microsoft 365. Przy każdym uruchomieniu jest tworzony nowy plik wyników, a autonomiczny plik wykonywalny nie przekazuje wyników do dzierżawy firmy Microsoft na potrzeby wyświetlania na stronach Łączność sieciowa centrum administracyjnego.
 
-### <a name="launching-from-windows-file-explorer"></a>Uruchamianie z Windows plików
+### <a name="launching-from-windows-file-explorer"></a>Uruchamianie z Windows Eksplorator plików
 Możesz po prostu kliknąć dwukrotnie plik wykonywalny, aby rozpocząć testowanie i zostanie wyświetlone okno wiersza polecenia.
 
 ### <a name="launching-from-the-command-prompt"></a>Uruchamianie z wiersza polecenia
-W CMD.EXE wiersza polecenia możesz wpisać ścieżkę i nazwę pliku wykonywalnego, aby go uruchomić. Nazwa pliku zostanie Microsoft.Connectivity.Test.exe
+W oknie wiersza polecenia CMD.EXE można wpisać ścieżkę i nazwę pliku wykonywalnego, aby go uruchomić. Nazwa pliku jest Microsoft.Connectivity.Test.exe
 
-### <a name="launching-from-windows-task-scheduler"></a>Uruchamianie z Windows harmonogramu zadań
-W Windows zadania można dodać zadanie w celu uruchomienia pliku wykonywalnego testu autonomicznego. Należy określić bieżący katalog roboczy zadania, aby był tam, gdzie został utworzony plik zaakceptowany przez użytkownika, ponieważ plik wykonywalny będzie blokowany do momentu zaakceptowania warunków eula. Nie można interakcyjne zaakceptować interfejsu EULA, jeśli proces zostanie uruchomiony w tle bez konsoli.
+### <a name="launching-from-windows-task-scheduler"></a>Uruchamianie z harmonogramu zadań Windows
+W Windows Harmonogram zadań możesz dodać zadanie uruchamiania autonomicznego pliku wykonywalnego testu. Należy określić bieżący katalog roboczy zadania, w którym został utworzony plik zaakceptowany przez umowę EULA, ponieważ plik wykonywalny będzie blokowany do momentu zaakceptowania umowy EULA. Nie można interaktywnie zaakceptować umowy EULA, jeśli proces jest uruchamiany w tle bez konsoli.
 
-### <a name="more-details-on-the-standalone-executable"></a>Więcej szczegółowych informacji na temat autonomicznego pliku wykonywalnego
-Narzędzie wiersza polecenia korzysta z Windows lokalizacji, aby znaleźć użytkownikom informacje o kraju/województwie miasta do określania niektórych odległości. Jeśli Windows lokalizacji w panelu sterowania, oceny lokalizacji użytkownika będą puste. W Windows Ustawienia musi być w pozycji "Usługi lokalezyjne" i musi być w pozycji "Pozwól aplikacjom stacjonarnym na uzyskiwanie dostępu do Twojej lokalizacji".
+### <a name="more-details-on-the-standalone-executable"></a>Więcej szczegółów na temat autonomicznego pliku wykonywalnego
+Narzędzie wiersza polecenia używa usług Windows Location Services do znajdowania użytkowników informacji o kraju stanu miasta na potrzeby określania pewnych odległości. Jeśli Windows usługi lokalizacyjne są wyłączone w panelu sterowania, oceny oparte na lokalizacji użytkownika będą puste. W Windows Ustawienia "Usługi lokalizacyjne" muszą być włączone, a "Zezwalaj aplikacjom klasycznym na dostęp do Twojej lokalizacji" również musi być włączony.
 
-Narzędzie wiersza polecenia podejmie próbę zainstalowania .NET Framework, jeśli nie zostało jeszcze zainstalowane. Pobierze także główny plik wykonywalny testowania z narzędzia do testowania łączności Microsoft 365 i uruchomi go.
+Narzędzie wiersza polecenia podejmie próbę zainstalowania .NET Framework, jeśli nie jest jeszcze zainstalowana. Spowoduje to również pobranie głównego pliku wykonywalnego testowania z narzędzia do testowania łączności sieciowej Microsoft 365 i uruchomienie go.
 
 ## <a name="faq"></a>Często zadawane pytania
 
-Poniżej znajdują się odpowiedzi na niektóre z naszych często zadawanych pytań.
+Poniżej przedstawiono odpowiedzi na niektóre z naszych często zadawanych pytań.
 
-### <a name="what-is-required-to-run-the-advanced-test-client"></a>Co jest wymagane do uruchomienia zaawansowanego klienta testowego?
+### <a name="what-is-required-to-run-the-advanced-test-client"></a>Co jest wymagane do uruchomienia klienta testów zaawansowanych?
 
-Zaawansowany klient testowy wymaga środowiska uruchomieniowego .NET 6.0. Uruchomienie zaawansowanego klienta testowego bez tego zainstalowanego spowoduje skierowanie cię do strony instalatora [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?utm_source=getdotnetcore). Pamiętaj, aby zainstalować oprogramowanie z kolumny Uruchamianie aplikacji Windows. Uprawnienia administratora na komputerze są wymagane do zainstalowania środowiska .NET 6.0 Runtime.
+Klient testów zaawansowanych wymaga środowiska uruchomieniowego platformy .NET 6.0. Jeśli uruchomisz zaawansowanego klienta testowego bez zainstalowanego programu, nastąpi przekierowanie do [strony instalatora platformy .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?utm_source=getdotnetcore). Pamiętaj, aby zainstalować aplikację z kolumny Uruchamianie aplikacji klasycznych dla Windows. Uprawnienia administratora na komputerze są wymagane do zainstalowania środowiska uruchomieniowego platformy .NET 6.0.
 
-Zaawansowany klient testowy komunikuje się ze stroną sieci Web za pomocą narzędzia SignalR. W tym celu upewnij się, że łączność protokołu TCP 443 z **siecią connectivity.service.signalr.net** jest otwarta. Ten adres URL nie jest publikowany w tym<https://aka.ms/o365ip>, ponieważ taka łączność nie jest wymagana Microsoft 365 użytkownika aplikacji klienckiej.
+Klient testów zaawansowanych używa usługi SignalR do komunikowania się ze stroną internetową. W tym celu należy upewnić się, że połączenie portu TCP 443 z **connectivity.service.signalr.net** jest otwarte. Ten adres URL nie jest publikowany w pliku, <https://aka.ms/o365ip> ponieważ łączność nie jest wymagana dla Microsoft 365 użytkownika aplikacji klienckiej.
 
-### <a name="what-is-microsoft-365-service-front-door"></a>Co to Microsoft 365 front door usługi?
+### <a name="what-is-microsoft-365-service-front-door"></a>Co to jest Microsoft 365 usługi front door?
 
-Drzwi Microsoft 365 serwisowych to punkt wejścia globalnej sieci firmy Microsoft, w którym klienci Office usług i klienci zakończyli połączenie sieciowe. W celu zapewnienia optymalnego połączenia sieciowego z siecią Microsoft 365 zalecamy, aby połączenie sieciowe zostało zakończone do najbliższej Microsoft 365 w mieście lub metra.
+Brama frontowa usługi Microsoft 365 jest punktem wejścia w globalnej sieci firmy Microsoft, gdzie Office klienci i usługi przerywają połączenie sieciowe. Aby uzyskać optymalne połączenie sieciowe z Microsoft 365, zaleca się, aby połączenie sieciowe zostało przerwane w najbliższej Microsoft 365 drzwiach wejściowych w twoim mieście lub metrze.
 
 > [!NOTE]
-> Microsoft 365 front door usługi serwisowej nie ma bezpośredniej relacji z produktem **usługi Azure Front Door Service** dostępnym na platformie Azure Marketplace.
+> Microsoft 365 usługa front door nie ma bezpośredniej relacji z produktem **usługi Azure Front Door Service** dostępnym na platformie Azure Marketplace.
 
-### <a name="what-is-the-best-microsoft-365-service-front-door"></a>Jaka jest najlepsza Microsoft 365 front dooru z usługą serwisową?
+### <a name="what-is-the-best-microsoft-365-service-front-door"></a>Jaka jest najlepsza Microsoft 365 usługi front door?
 
-Najlepszą Microsoft 365 serwisową(wcześniej znaną jako optymalna usługa drzwi frontowych) jest ten, który jest najbliżej twojego punktu ruchu wychodzącego sieciowego, na ogół w mieście lub regionie metra. Za pomocą Microsoft 365 wydajności sieci sieciowej określ lokalizację swoich Microsoft 365 oraz najlepsze drzwi frontowe serwisowe. Jeśli narzędzie określa, że Twoje drzwi przedniego są jednym z najlepszych, należy oczekiwać wysokiej łączności z globalną siecią firmy Microsoft.
+Najlepszym Microsoft 365 usługi front door (dawniej znany jako optymalne usługi front door) jest taki, który jest najbliżej ruchu sieciowego, ogólnie w mieście lub dzielnicy metra. Użyj narzędzia do wydajności sieci Microsoft 365, aby określić lokalizację używanej bramy frontowej usługi Microsoft 365 i najlepszych drzwi wejściowych usługi. Jeśli narzędzie określi, że używana brama frontowa jest jedną z najlepszych, należy oczekiwać doskonałej łączności z globalną siecią firmy Microsoft.
 
-### <a name="what-is-an-internet-egress-location"></a>Co to jest lokalizacja internetowa ruch wychodzący?
+### <a name="what-is-an-internet-egress-location"></a>Co to jest internetowa lokalizacja ruchu wychodzącego?
 
-Internetowa lokalizacja wyjściowa to lokalizacja, w której ruch sieciowy opuszcza sieć przedsiębiorstwa i łączy się z Internetem. Jest to również identyfikowane jako lokalizacja, w której masz urządzenie do tłumaczenia adresów sieciowych (NAT) i zwykle, w której łączysz się z usługodawcą internetowym (ISP). Jeśli zobaczysz duże odległości między Twoją lokalizacją a twoją lokalizacją internetowego ruchu wychodzącego, może to spowodować zidentyfikowanie znaczącego backhaulu sieci WAN.
+Lokalizacja ruchu wychodzącego z Internetu to lokalizacja, w której ruch sieciowy zamyka sieć przedsiębiorstwa i łączy się z Internetem. Jest to również identyfikowane jako lokalizacja, w której masz urządzenie translatora adresów sieciowych (NAT) i zwykle w którym łączysz się z dostawcą usług internetowych. Jeśli widzisz dużą odległość między lokalizacją i lokalizacją ruchu wychodzącego z Internetu, może to zidentyfikować znaczący backhaul sieci WAN.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Łączność sieciowa w Administracja Microsoft 365 center](office-365-network-mac-perf-overview.md)
+[Łączność sieciowa w centrum Administracja Microsoft 365](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 informacji o wydajności sieci](office-365-network-mac-perf-insights.md)
+[Microsoft 365 szczegółowych informacji o wydajności sieci](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 oceny sieci](office-365-network-mac-perf-score.md)
+[ocena sieci Microsoft 365](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 lokalizacji łączności sieciowej](office-365-network-mac-location-services.md)
+[usługi lokalizacji łączności sieciowej Microsoft 365](office-365-network-mac-location-services.md)
