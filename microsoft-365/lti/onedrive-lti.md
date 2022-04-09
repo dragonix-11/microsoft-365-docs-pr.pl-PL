@@ -1,5 +1,5 @@
 ---
-title: Używanie współdziałania Microsoft OneDrive Edukacja Tools
+title: Integracja Microsoft OneDrive LTI z kanwą
 ms.author: heidip
 author: MicrosoftHeidi
 manager: serdars
@@ -12,94 +12,94 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Twórz i ocenij zadania, twórz zawartość kursu i dopracuj jej zawartość oraz współpracuj nad plikami w czasie rzeczywistym za pomocą nowej aplikacji do współdziałania narzędzi programu Microsoft OneDrive Edukacja Tools.
-ms.openlocfilehash: 68622305e6a277b44538d4a05ee42a6b680749f3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Twórz i oceniaj przypisania, twórz i kuratoruj zawartość kursu oraz współpracuj nad plikami w czasie rzeczywistym przy użyciu nowej aplikacji Microsoft OneDrive Edukacja Tools Interoperability App for Canvas.
+ms.openlocfilehash: ce02be23d98d1dc54ae02a21f9bf1678d06c3d8f
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021233"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747231"
 ---
-# <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integracja Microsoft OneDrive LTI z systemami Canvas
+# <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integracja Microsoft OneDrive LTI z kanwą
 
-Integracja Microsoft OneDrive LTI z usługą Canvas jest procesem dwuetapowym. Pierwszy krok umożliwia korzystanie Microsoft OneDrive Canvas, a drugi krok umożliwia Microsoft OneDrive LTI w ramach kursów programu Canvas.
+Integracja Microsoft OneDrive lti z kanwą to proces dwuetapowy. Pierwszy krok umożliwia Microsoft OneDrive w kanwie, a drugi sprawia, że Microsoft OneDrive LTI jest dostępny w ramach kursów kanwy.
 
 ## <a name="recommended-browser-settings"></a>Zalecane ustawienia przeglądarki
 
 - Pliki cookie powinny być włączone dla Microsoft OneDrive.
-- Wyskakujące okienka nie powinny być blokowane przez Microsoft OneDrive.
+- Wyskakujące okienka nie powinny być blokowane dla Microsoft OneDrive.
 
 > [!NOTE]
-> - W trybie incognito przeglądarki Chrome pliki cookie nie są domyślnie włączone i należy je włączyć.
-> - Microsoft OneDrive lti działa w trybie prywatnym w Microsoft Edge przeglądarce. Upewnij się, że pliki cookie nie zostały zablokowane (które są domyślnie włączone).
+> - Pliki cookie nie są domyślnie włączone w trybie incognito przeglądarki Chrome i muszą być włączone.
+> - Microsoft OneDrive LTI działa w trybie prywatnym w przeglądarce Microsoft Edge. Upewnij się, że nie zablokowano plików cookie (które są domyślnie włączone).
 
-## <a name="enable-microsoft-onedrive-lti-in-canvas"></a>Włączanie Microsoft OneDrive LTI w płótnie
+## <a name="enable-microsoft-onedrive-lti-in-canvas"></a>Włączanie Microsoft OneDrive LTI na kanwie
 
 > [!IMPORTANT]
-> Osoba, która wykonuje tę integrację, powinna być administratorem systemu Canvas i administratorem Microsoft 365 dzierżawy.
+> Osoba, która wykonuje tę integrację, powinna być administratorem aplikacji Canvas i administratorem dzierżawy Microsoft 365.
 
-1. Logowanie się do <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portalu Microsoft OneDrive LTI</a>
-1. Wybierz przycisk **Zgoda administratora** i zaakceptuj te uprawnienia.
+1. Zaloguj się do <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portalu rejestracji Microsoft OneDrive LTI</a>
+1. Wybierz przycisk **Zgoda administratora** i zaakceptuj uprawnienia.
 
 > [!CAUTION]
-> Jeśli ten krok nie zostanie wykonany, poniższy krok spowoduje błąd i nie będzie można go wykonać przez godzinę, gdy błąd wystąpi.
+> Jeśli ten krok nie zostanie wykonany, poniższy krok spowoduje wyświetlenie błędu i nie będzie można wykonać tego kroku przez godzinę po wystąpieniu błędu.
 
-3. Wybierz przycisk **Create new LTI Tenant (Utwórz nową dzierżawę LTI** ). Na stronie LtI Registration (Rejestracja LTI) wybierz z listy rozwijanej pozycję **Canvas** i wprowadź podstawowy adres URL wystąpienia canvas.
+3. Wybierz przycisk **Utwórz nową dzierżawę LTI** . Na stronie Rejestracja LTI wybierz pozycję **Kanwa** na liście rozwijanej i wprowadź podstawowy adres URL wystąpienia kanwy.
 
 > [!NOTE]
 > Jeśli wystąpienie kanwy to na przykład https://contoso.test.instructure.com](https://contoso.test.instructure.com), należy wprowadzić pełny adres URL.
 
-:::image type="content" source="media/OneDrive-LTI-07.png" alt-text="Strona administracji dzierżawy LTI z polem rozwijaym do wyboru platformy lti dla klientów konsumenckich i pola tekstowego adresu URL.":::
+:::image type="content" source="media/OneDrive-LTI-07.png" alt-text="Strona administrowania dzierżawą LTI z polem listy rozwijanej umożliwiającym wybranie platformy konsumenta LTI i pola tekstowego adresu URL.":::
 
-4. Skopiuj JSON, wybierając przycisk **Kopiuj** (ikonę po prawej stronie, która pokazuje dwie strony na siebie). Zostanie on użyty do wygenerowania klucza w płótnie.
+4. Skopiuj kod JSON, wybierając przycisk **Kopiuj** (ikona po prawej stronie, która pokazuje dwie strony na górze). Zostanie on użyty do wygenerowania klucza w kanwie.
 
-:::image type="content" source="media/OneDrive-LTI-08.png" alt-text="Obraz przedstawiający przycisk Kopiuj, który skopiuje wyświetlany tekst JSON i udostępni go dla generowania klucza w kanwie.":::
+:::image type="content" source="media/OneDrive-LTI-08.png" alt-text="Obraz przedstawiający przycisk kopiowania, który skopiuje wyświetlany tekst JSON i udostępni go do generowania kluczy w kanwie.":::
 
-5. Zaloguj się jako administrator do wystąpienia kanwy i wybierz pozycję **Klucze** dewelopera z menu w lewej części strony. Z listy rozwijanej utwórz klucz dewelopera, wybierając klawisz **LTI** z listy rozwijanej w prawym górnym rogu strony.
+5. Zaloguj się do wystąpienia kanwy jako administrator i wybierz pozycję **Klucze deweloperów** z menu po lewej stronie. Z listy rozwijanej utwórz klucz dewelopera, wybierając pozycję **KLUCZ LTI** z listy rozwijanej w prawym górnym rogu strony.
 
-:::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Zrzut ekranu przedstawiający pasek nawigacyjny po lewej stronie z wybranymi klawiszami dewelopera oraz wpis klucza LTI wybrany z listy rozwijanej po prawej stronie.":::
+:::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Zrzut ekranu przedstawiający lewy pasek nawigacyjny z wybranymi kluczami deweloperów oraz wpis klucza LTI wybrany z listy rozwijanej po prawej stronie.":::
 
-6. Na stronie Konfigurowanie z listy rozwijanej **Method** (Metoda) wybierz pozycję **Paste JSON (Wklej JSON** ) jako metodę i wklej tekst JSON skopiowany w kroku 4 w wyświetlonym polu tekstowym.
+6. Na stronie Konfigurowanie na liście rozwijanej **Metoda** wybierz pozycję **Wklej kod JSON** jako metodę i wklej tekst JSON skopiowany w kroku 4 w wyświetlonym polu tekstowym.
 
     > [!TIP]
-    > **Krok opcjonalny:** Jeśli nauczyciele w Twojej szkole chcą kontrolować, które linki są wyświetlane w nawigacji po kursach, ``default`` możesz zmodyfikować parametr w skopiowanym JSON. Parametr ``default`` jest ustawiany automatycznie ``enabled`` , jednak zmiana tego parametru umożliwia ``default`` ``disabled`` nauczycielom wybieranie nawigacji po własnych kursach.
+    > **Krok opcjonalny:** Jeśli nauczyciele w twojej szkole chcą samodzielnie kontrolować, które linki pojawiają się w nawigacji kursów, możesz zmodyfikować ``default`` parametr w skopiowanym formacie JSON. Parametr ``default`` jest ustawiany ``enabled`` automatycznie, jednak zmiana parametru ``default`` ``disabled`` umożliwia nauczycielom wybór nawigacji po kursach.
     >
-    > Aby uzyskać więcej informacji na temat sposobu, w jaki nauczyciele mogą modyfikować linki nawigacji po kursie, zobacz Jak [zarządzać linkami nawigacji po kursach?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
+    > Aby uzyskać więcej informacji na temat sposobu modyfikowania linków nawigacyjnych kursów przez nauczycieli, zobacz [Jak mogę zarządzanie linkami nawigacji po kursach?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)
 
-7. Zapisz klucz, a stanie się on dostępny w obszarze Canvas w **stanie Wyłączony** . Włącz **i skopiuj klawisz** podany w kolumnie **Szczegóły** , który ma zostać użyty w następnym kroku.
+7. Zapisz klucz i stanie się on dostępny na kanwie w stanie **Wyłączone** . Włącz **klucz i** skopiuj klucz podany w kolumnie **Szczegóły** do użycia w następnym kroku.
 
-:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Strona Kanwa z klawiszem ustawionym w stanie wyłączenia. Klucz musi być włączony, a klucz musi zostać skopiowany z kolumny szczegóły na tej stronie.":::
+:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Strona Kanwa z kluczem ustawionym w stanie wyłączenia. Należy ją włączyć, a klucz będzie musiał zostać skopiowany z kolumny szczegółów na tej stronie.":::
 
-8. Wróć do portalu Microsoft OneDrive lti Registration (Rejestracja LTI) i wklej klucz w polu **Identyfikator klienta systemu Canvas**. Gdy **wszystko** będzie gotowe, wybierz pozycję Dalej.
+8. Wróć do portalu rejestracji Microsoft OneDrive LTI i wklej klucz w polu **Identyfikator klienta kanwy**. Wybierz pozycję **Dalej** , gdy wszystko będzie gotowe.
 
-:::image type="content" source="media/OneDrive-LTI-20.png" alt-text="Strona rejestracji dzierżawy LTI z tekstem JSON i polem tekstowym, do którego należy skopiować klucz.":::
+:::image type="content" source="media/OneDrive-LTI-20.png" alt-text="Strona rejestracji dzierżawy LTI, na której jest wyświetlany tekst JSON i pole tekstowe, do którego należy skopiować klucz.":::
 
 9. Przejrzyj i zapisz zmiany. Po pomyślnej rejestracji zostanie wyświetlony komunikat.
-10. Szczegóły rejestracji można również przejrzeć, wybierając przycisk Wyświetl dzierżawy **LTI** na stronie głównej.
+10. Szczegóły rejestracji można również przejrzeć, wybierając przycisk **Wyświetl dzierżawy LTI** na stronie głównej.
 
-## <a name="enable-microsoft-onedrive-lti-in-canvas-courses"></a>Włączanie Microsoft OneDrive LTI na kursach Canvas
+## <a name="enable-microsoft-onedrive-lti-in-canvas-courses"></a>Włączanie Microsoft OneDrive LTI na kursach kanwy
 
-Administrator systemu Canvas może włączyć Microsoft OneDrive LTI dla wszystkich kursów. Jeśli Microsoft OneDrive ltI jest potrzebna w ramach określonego kursu (a nie wszystkich kursów), nauczyciel musi wykonać te same kroki w ramach ustawień kursu.
+Administrator kanwy może włączyć Microsoft OneDrive LTI dla wszystkich kursów. Jeśli Microsoft OneDrive LTI jest potrzebne w określonym kursie (a nie we wszystkich kursach), nauczyciel kursu musi wykonać te same kroki w ustawieniach kursu.
 
-1. Zaloguj się jako administrator i przejdź **do sekcji Ustawienia** konta.
-2. Przejdź do sekcji **Aplikacje** i wybierz przycisk **Wyświetl konfiguracje** aplikacji.
+1. Zaloguj się jako administrator i przejdź do sekcji **Ustawienia**.
+2. Przejdź do sekcji **Aplikacje** i wybierz przycisk **Wyświetl konfiguracje aplikacji** .
 3. Wybierz przycisk **Dodaj aplikację** .
-4. Z listy **rozwijanej Typ** konfiguracji wybierz opcję **Według identyfikatora** klienta.
-5. Wklej wartość klucza dewelopera wygenerowanego wcześniej w polu **Identyfikator klienta** i wybierz **przycisk** Prześlij.
+4. Na liście rozwijanej **Typ konfiguracji** wybierz **opcję Według identyfikatora klienta** .
+5. Wklej wartość klucza dewelopera wygenerowanego wcześniej w polu **Identyfikator klienta** i wybierz przycisk **Prześlij** .
 
-:::image type="content" source="media/OneDrive-LTI-31.png" alt-text="Strona dodawanie aplikacji z opcją Według identyfikatora klienta w menu rozwijaym Typ konfiguracji.":::
+:::image type="content" source="media/OneDrive-LTI-31.png" alt-text="Strona dodawania aplikacji z opcją Według identyfikatora klienta w menu rozwijanego Typ konfiguracji.":::
 
-## <a name="collaboration-settings-for-microsoft-onedrive-lti-in-canvas-courses"></a>Collaboration Ustawienia for Microsoft OneDrive LTI in Canvas Courses
-
-> [!NOTE]
-> Aby współpracować z nauczycielami i uczniami, nie należy włączać ustawienia współpracy. Aby upewnić się, że to ustawienie nie jest włączone, wykonaj poniższe czynności.
-
-1. Zaloguj się jako administrator i przejdź **do sekcji Ustawienia** administratorów.
-1. Przejdź do **sekcji Opcje funkcji** , a następnie przejdź do **sekcji Kurs** .
-1. Ustaw, **aby funkcja narzędzia Współpraca zewnętrzna** nie była włączona.
+## <a name="collaboration-settings-for-microsoft-onedrive-lti-in-canvas-courses"></a>Współpraca Ustawienia dla Microsoft OneDrive LTI na kursach kanwy
 
 > [!NOTE]
-> Współpracę można przypisywać poszczególnym uczniom i grupom uczniów. Domyślnie przypisz do poszczególnych uczniów. Aby przypisać współpracę do grupy uczniów, wykonaj następujące czynności:
+> Aby współpraca działała dla nauczycieli i uczniów, nie należy włączać ustawienia współpracy. Aby upewnić się, że ustawienie nie jest włączone, wykonaj poniższe kroki.
 
-1. Zaloguj się jako administrator i przejdź do sekcji **Klucze dewelopera** .
-1. Znajdź klucz z wartością 170000000000710 i ustaw dla niego wartość **Wł**.
+1. Zaloguj się jako administrator i przejdź do sekcji **Ustawienia**.
+1. Przejdź do sekcji **Opcje funkcji** , a następnie przejdź do sekcji **Kurs** .
+1. Ustaw funkcję **Narzędzia do współpracy zewnętrznej** , aby nie była włączona.
+
+> [!NOTE]
+> Współpraca może być przypisana do poszczególnych uczniów i grup uczniów. Przypisywanie do poszczególnych uczniów działa domyślnie. Aby móc przypisać współpracę do grupy uczniów, wykonaj następujące kroki:
+
+1. Zaloguj się jako administrator i przejdź do sekcji **Klucze deweloperów** .
+1. Znajdź klucz z wartością 170000000000710 i ustaw go na **wartość Włączone**.

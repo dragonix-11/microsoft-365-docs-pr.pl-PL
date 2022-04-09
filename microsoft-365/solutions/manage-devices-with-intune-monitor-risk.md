@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 9000a56bb0bf4819f4fc2e9bf7553a19772efe66
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: af165f3565e3601ac4e8118535af3913c2cb2af8
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64730885"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737437"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Krok 6. Monitorowanie ryzyka urządzenia i zgodności z planami bazowymi zabezpieczeń
 
@@ -51,9 +51,9 @@ Jeśli usługa Defender for Endpoint nie została jeszcze skonfigurowana, skonta
 
 Dzięki Ochrona punktu końcowego w usłudze Microsoft Defender wdrożonym można korzystać z sygnałów ryzyka zagrożenia. Dzięki temu można zablokować dostęp do urządzeń na podstawie ich oceny ryzyka. Firma Microsoft zaleca zezwolenie na dostęp do urządzeń z wynikiem ryzyka średnim lub niższym.
 
-W przypadku systemów Android i iOS/iPadOS sygnały zagrożeń mogą być używane w ramach zasad ochrony aplikacji (APP). Aby uzyskać informacje na temat konfigurowania tej funkcji, zobacz [Tworzenie i przypisywanie zasad ochrony aplikacji w celu ustawienia poziomu ryzyka urządzenia](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
+W przypadku systemów Android i iOS/iPadOS sygnały zagrożeń mogą być używane w ramach zasad ochrony aplikacji (APP). Aby uzyskać informacje na temat konfigurowania tej funkcji, zobacz [Tworzenie i przypisywanie zasad ochrony aplikacji w celu ustawienia poziomu ryzyka urządzenia](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
-Dla wszystkich platform można ustawić poziom ryzyka w istniejących zasadach zgodności urządzeń. Zobacz [Tworzenie zasad dostępu warunkowego](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
+Dla wszystkich platform można ustawić poziom ryzyka w istniejących zasadach zgodności urządzeń. Zobacz [Tworzenie zasad dostępu warunkowego](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy). 
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>Wdrażanie punktów odniesienia zabezpieczeń i monitorowanie zgodności w tych ustawieniach
 

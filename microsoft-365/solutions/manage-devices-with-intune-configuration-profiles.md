@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: dfdffc95c39d471e071db8f83e88b9ba67e143e8
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: fe137e626d5199f1709504d025411586965ae9fd
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731554"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737424"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Krok nr 5. Wdrażanie profilów urządzeń w Microsoft Intune
 
@@ -48,7 +48,7 @@ Na razie wystarczy wdrożyć najbardziej odpowiedni punkt odniesienia zabezpiecz
 
 Później, po skonfigurowaniu Ochrona punktu końcowego w usłudze Microsoft Defender i nawiązaniu połączenia z Intune, wdróż punkty odniesienia usługi Defender dla punktów końcowych. Ten temat został omówiony w następnym artykule z tej serii: [Krok 6. Monitorowanie ryzyka urządzenia i zgodności z punktami odniesienia zabezpieczeń](manage-devices-with-intune-monitor-risk.md).
 
-Ważne jest, aby zrozumieć, że te punkty odniesienia zabezpieczeń nie są zgodne ze standardem CIS lub NIST, ale ściśle odzwierciedlają ich zalecenia. Aby uzyskać więcej informacji, zobacz [Czy Intune punkty odniesienia zabezpieczeń cis lub NIST są zgodne?](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
+Ważne jest, aby zrozumieć, że te punkty odniesienia zabezpieczeń nie są zgodne ze standardem CIS lub NIST, ale ściśle odzwierciedlają ich zalecenia. Aby uzyskać więcej informacji, zobacz [Czy Intune punkty odniesienia zabezpieczeń cis lub NIST są zgodne?](https://docs.microsoft.com/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>Dostosowywanie profilów konfiguracji dla organizacji
 

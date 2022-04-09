@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Dowiedz się, jak uzyskać dostęp do funkcji Bookings w Microsoft 365.
-ms.openlocfilehash: e399540711cdf0f5e9556ac1ac8aeed32d00db52
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: fd81b64916b1798982470ad8e6aa6e28b0a14fdf
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714268"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746766"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Uzyskiwanie dostępu do usługi Microsoft Bookings
 
@@ -33,7 +33,7 @@ Przy pierwszym użyciu [Bookings](https://outlook.office.com/bookings/onboarding
 
 1. Jeśli nie jest to twój pierwszy raz na tej stronie, możesz wybrać inny kalendarz rezerwacji lub wyszukać inny kalendarz rezerwacji.
 
-2. Wprowadź nazwę biznesową i typ firmy, a następnie wybierz pozycję **Kontynuuj**.
+1. Wprowadź nazwę biznesową i typ firmy, a następnie wybierz pozycję **Kontynuuj**.
 
 Teraz możesz skonfigurować Bookings dla swojej organizacji. Możesz przejść do strony Bookings za pomocą tego [linku](https://outlook.office.com/bookings/onboarding), z poziomu narzędzia do uruchamiania aplikacji lub z office.com. Skorzystaj z poniższych tematów, aby kontynuować konfigurowanie funkcji Bookings.
 

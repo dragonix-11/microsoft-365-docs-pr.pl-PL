@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Postępuj zgodnie z tymi instrukcjami, aby utworzyć termin i przypisać pracownika za pośrednictwem aplikacji Microsoft Bookings.
-ms.openlocfilehash: d30d9ba7fe00305ef370a554fc53ebebc5b5d284
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 0428c697def774a67384b14c4d9b2c48e2851794
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715324"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747253"
 ---
 # <a name="create-a-manual-booking"></a>Twórz rezerwację ręczną
 
@@ -25,7 +25,7 @@ Bookings można zaplanować i obsługiwać na dwa różne sposoby. Pierwszym spo
 
 1. W Microsoft 365 wybierz pozycję Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
 
-   ![Obraz przedstawiający Bookings w programie uruchamiania aplikacji.](../media/bookings-applauncher.png)
+    :::image type="content" source="../media/bookings-applauncher.png" alt-text="Bookings w programie uruchamiania aplikacji.":::
 
 1. W okienku nawigacji wybierz pozycję **Kalendarz** \> **Nowa rezerwacja**.
 
@@ -49,4 +49,4 @@ Bookings można zaplanować i obsługiwać na dwa różne sposoby. Pierwszym spo
 
    Oto przykładowa wiadomość e-mail z przypomnieniem, które otrzyma klient:
 
-:::image type="content" source="../media/bookings-confirmed-email.png" alt-text="Zrzut ekranu: Przykładowa wiadomość e-mail z potwierdzeniem z rezerwacji ręcznej":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Zrzut ekranu: Przykładowa wiadomość e-mail z potwierdzeniem z rezerwacji ręcznej":::

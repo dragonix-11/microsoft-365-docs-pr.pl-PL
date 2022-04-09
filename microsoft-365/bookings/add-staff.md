@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Ta strona służy do tworzenia listy pracowników i zarządzania danymi pracowników, takimi jak imię i nazwisko, numer telefonu i adres e-mail.
-ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713938"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746802"
 ---
 # <a name="add-staff-to-bookings"></a>Dodaj pracowników do aplikacji Bookings
 
@@ -58,7 +58,7 @@ Chociaż Bookings jest cechą Microsoft 365, nie wszyscy pracownicy muszą mieć
 
     Jeśli na przykład członek personelu ma spotkanie zespołu lub spotkanie osobiste zaplanowane na godzinę 15:00 w środę, Bookings pokaże, że pracownik jest niedostępny do zarezerwowania w tym przedziale czasu. Ten czas będzie wyświetlany jako zajęty lub wstępny w widoku kalendarza Bookings, jak pokazano w poniższym przykładzie.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Widok kalendarza Bookings.":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="Widok kalendarza Bookings.":::
 
 > [!IMPORTANT]
 > Zdecydowanie zalecamy pozostawienie tego ustawienia włączone (jest domyślnie włączone), aby uniknąć podwójnych rezerwacji i zoptymalizować dostępność pracowników.

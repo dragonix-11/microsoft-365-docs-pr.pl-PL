@@ -1,5 +1,5 @@
 ---
-title: Definicje jednostki typu informacji poufnych
+title: Definicje jednostek typu informacji poufnych
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,53 +18,53 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Istnieje wiele typów informacji poufnych, które są gotowe do użycia w Twoich zasadach ochrony przed prywatnością. W tym artykule wymieniono wszystkie te typy informacji poufnych oraz pokazano, co wyszukuje zasady DLP po wykryciu każdego typu.
-ms.openlocfilehash: a3d2592af6b7692b5a5e634947deb811412b5650
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: Istnieje wiele typów informacji poufnych, które są gotowe do użycia w zasadach DLP. W tym artykule wymieniono wszystkie te typy informacji poufnych i pokazano, czego szukają zasady DLP podczas wykrywania poszczególnych typów.
+ms.openlocfilehash: 298b756a1cdfd63406992c18bf8281375f7f9370
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63015383"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746524"
 ---
-# <a name="sensitive-information-type-entity-definitions"></a>Definicje jednostki typu informacji poufnych
+# <a name="sensitive-information-type-entity-definitions"></a>Definicje jednostek typu informacji poufnych
 
-W tym artykule wymieniono wszystkie definicje encji typu informacji poufnych. Każda definicja pokazuje, co zasady DLP wyszukuje do wykrycia poszczególnych typów. Aby dowiedzieć się więcej o typach informacji poufnych, zobacz [Typy informacji poufnych.](sensitive-information-type-learn-about.md)
+W tym artykule wymieniono wszystkie definicje jednostek typów informacji poufnych. Każda definicja pokazuje, czego szukają zasady DLP w celu wykrycia każdego typu. Aby dowiedzieć się więcej o typach informacji poufnych, zobacz [Typy informacji poufnych](sensitive-information-type-learn-about.md)
 
 > [!NOTE]
-> Mapowanie poziomu ufności (wysokie/średnie/niskie) z liczbą dokładności (wartość liczbowa od 1 do 100)
-> - Niska pewność: co najmniej 65
-> - Średnia ufność: 75
-> - Wysoka pewność: 85
+> Mapowanie poziomu ufności (wysoki/średni/niski) z dokładnością (wartość liczbowa od 1 do 100)
+> - Niska pewność: 65 lub mniej
+> - Średnie zaufanie: 75
+> - Wysoka pewność siebie: 85
 
 
-## <a name="aba-routing-number"></a>Numer routingu ABA
+## <a name="aba-routing-number"></a>Numer routingu usługi ABA
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr, które mogą być sformatowane lub niesformatowane
+dziewięć cyfr, które mogą znajdować się w sformatowanym lub niesformatowanym wzorcu
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - dwie cyfry w zakresach 00-12, 21-32, 61-72 lub 80
 - dwie cyfry
-- Łącznik opcjonalny
+- opcjonalny łącznik
 - cztery cyfry
-- Łącznik opcjonalny
+- opcjonalny łącznik
 - cyfra
 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady mają średnią pewność, że wykrywany jest ten typ informacji poufnych, jeśli w odległości 300 znaków:
-- Funkcja Func_aba_routing znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_ABA_Routing.
+Zasady mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli znajduje się w pobliżu 300 znaków:
+- Funkcja Func_aba_routing znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_ABA_Routing.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_aba_routing znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_aba_routing znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- ABA Routing Number -->
@@ -83,50 +83,50 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
-- Numer aba
-- aba #
-- aba
+- aba number
+- Aba #
+- Aba
 - abarouting #
 - abaroutingnumber
 - americanbankassociationrouting #
 - americanbankassociationroutingnumber
 - bankrouting #
 - bankroutingnumber
-- routing #
-- routing nie
+- Routingu #
+- brak routingu
 - numer routingu
-- przekieruj numer komunikacji miejskiej
-- routing #
+- numer tranzytu routingu
+- Routingu #
 - RTN
 
 
-## <a name="all-full-names"></a>Wszystkie imiona i nazwiska
+## <a name="all-full-names"></a>Wszystkie pełne nazwy
 
-Wszystkie imiona i nazwiska to encją o nazwie powiązanej z pakietem. Wykrywa ono imiona i nazwiska osób ze wszystkich obsługiwanych krajów/regionów, w tym Australii, Chin, Japonii, Stanów Zjednoczonych i krajów Unii Europejskiej. Użyj tej funkcji SIT, aby wykryć wszystkie możliwe dopasowania pełnych imion i nazwisk.
+Wszystkie pełne nazwy to jednostka o nazwie bundled. Wykrywa pełne nazwiska osób ze wszystkich obsługiwanych krajów/regionów, w tym Australii, Chin, Japonii, USA i krajów UE. Użyj tego interfejsu SIT, aby wykryć wszystkie możliwe dopasowania pełnych nazw.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Różne.
+Różnych.
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Różne.
+Różnych.
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 L.p.
 
 ### <a name="description"></a>Opis
 
-Nazwana jednostka SIT jest taka sama jak nazwa osobista, która zostałaby przez człowieka zidentyfikowania jako nazwa z dużą pewnością. Jeśli na przykład ciąg składający się z danego imienia i nazwiska oraz po nim następuje nazwisko rodziny, to dopasowanie zostanie dokonane bez obaw. Są w nim używane trzy zasoby podstawowe:
+Ta nazwana jednostka SIT jest zgodna z nazwiskami osobistymi, które człowiek będzie identyfikował jako imię z dużą pewnością. Jeśli na przykład znaleziono ciąg składający się z danej nazwy, po którym następuje nazwa rodziny, dopasowanie jest tworzone z dużą pewnością. Używa trzech zasobów podstawowych:
 
 -   Słownik o podanych nazwach.
--   Słownik imion i nazwisk rodzinnych.
--   Wzorce formowania nazw.
+-   Słownik imion rodzinnych.
+-   Wzorce sposobu tworzenia nazw.
 
-Te trzy zasoby różnią się w zależności od kraju.  Ciągi *OliviaDam może* wyzwolić dopasowanie. Popularne imiona lub nazwiska osób z rodziny są nadano większą pewność niż rzadko spotykane imiona i nazwiska. Wzorzec dopuszcza jednak także częściowo takie dopasowania. Jeśli zostanie znalezione imię i nazwisko ze słownika, a po nim nazwa rodziny, której nie ma w słowniku, zostanie wyzwolone dopasowanie częściowe. Na przykład *Tomasz Tomasz* wyzwoli dopasowanie częściowe. Częściowe dopasowania mają niższy poziom ufności.
+Te trzy zasoby są różne dla każdego kraju.  Ciągi *Olivia Wilson* wyzwoli mecz. Wspólne imiona i nazwiska rodzin mają większe zaufanie niż rzadsze nazwy. Jednak wzorzec umożliwia również częściowe dopasowania. Jeśli zostanie znaleziona dana nazwa ze słownika, po której następuje nazwa rodziny, której nie ma w słowniku, zostanie wyzwolone częściowe dopasowanie. Na przykład *Tomas Richard* wyzwoli częściowe dopasowanie. Częściowe dopasowania mają mniejszą pewność siebie.
 
-Ponadto wzorce, które ludzie zobaczą jako zrównanie imion i nazwisk, również zostaną do siebie dopasowane z odpowiednią pewnością. Like *O. Dryc*, *O.P. Dry,* *Dr. O. P. Chylik*, *Czerń, O.P.* lub *T. Ryszard, Jun.* zostałby dopasowaniami.
+Ponadto wzorce, które człowiek postrzegałby jako wskazujące nazwy, są również dopasowywane z odpowiednim zaufaniem. Podobnie jak *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* lub *T. Richard, Jr będzie* mecze.
 
 ### <a name="supported-languages"></a>Obsługiwane języki
 
@@ -160,117 +160,117 @@ Ponadto wzorce, które ludzie zobaczą jako zrównanie imion i nazwisk, równie�
 - Turkish
 
 
-## <a name="all-medical-terms-and-conditions"></a>Wszystkie warunki medyczne
+## <a name="all-medical-terms-and-conditions"></a>Wszystkie warunki i postanowienia medyczne
 
-Wszystkie warunki medyczne są jednostką podaną w pakiecie, która wykrywa warunki medyczne i medyczne. Wykrywa ona tylko terminy w języku angielskim. Skorzystaj z tej usługi SIT do wykrywania wszystkich możliwych przepisów medycznych.
+Wszystkie warunki i postanowienia medyczne to jednostka o nazwie wiązanej, która wykrywa warunki medyczne i medyczne. Wykrywa tylko angielskie terminy. Użyj tego narzędzia SIT, aby wykryć wszystkie możliwe dopasowania warunków i postanowień medycznych.
 
-### <a name="format"></a>Formatowanie
-
-Słownik
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 Słownik
 
-### <a name="checksum"></a>Checksum
+### <a name="pattern"></a>Wzór
+
+Słownik
+
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="description"></a>Opis
 
-Ta nazwana jednostka w pakiecie odpowiada tekstowi, który zawiera wzmianki o stanach medycznych obecnych w słownikach. Dla każdego obsługiwanego języka jest obsługiwany jeden słownik. Słowniki znajdują się w wielu międzynarodowych zasobach medycznych. Słowniki zawierają możliwie najwięcej warunków medycznych, nie ryzykując dużej liczby wyników fałszywie dodatnich. Każda pozycja zawiera różne formularze, w których często występuje pojedynczy warunek w celu zapewnienia zasięgu, na przykład:
+Ta powiązana nazwana jednostka jest zgodna z tekstem, który wspomina o schorzeniach występujących w wyselekcjonowanych słownikach. Istnieje jeden wyselekcjonowany słownik na obsługiwany język. Słowniki pochodzą z wielu międzynarodowych zasobów medycznych. Słowniki zawierają jak najwięcej schorzeń, jak to możliwe bez ryzyka dużej liczby fałszywie dodatnich. Każdy wpis zawiera różne formularze, w których często zapisywany jest pojedynczy warunek, aby zapewnić pokrycie, na przykład:
 
 - *TB*
-- *szamigie*
-- *phthisis pulmonalis*
+- *Gruźlicy*
+- *pulmonalis phthisis*
 
 ### <a name="contains"></a>Zawiera
 
-Ten dołączony nazwany podmiot SIT zawiera te poszczególne identyfikatory SIT.
+Ta powiązana nazwana jednostka SIT zawiera te pojedyncze interfejsy API.
 
-- Warunki testowania krwi 
-- Typy leki
-- Wołoń
-- Ogólne nazwy leki
-- Niepełnosprawności wymienione w U.S. Disability Evaluation Under Social Security
-- Warunki testowania laboratorium
-- Style życia związane ze stanem zdrowia
-- Specjalizacja medyczna
-- Procedury procedur procedur dotyczących procedur dotyczących procedur
-- Nazwy produktów marki
+- Terminy badania krwi 
+- Typy leków
+- Chorób
+- Nazwy leków ogólnych
+- Upośledzenia wymienione w us Disability Evaluation Under Social Security
+- Terminy testowe laboratorium
+- Styl życia, który odnosi się do schorzeń
+- Specjalności medyczne
+- Procedury chirurgiczne
+- Markowe nazwy leków
 
 
 ## <a name="all-physical-addresses"></a>Wszystkie adresy fizyczne
 
-Wszystkie adresy fizyczne są powiązanymi elementami SIT, które wykrywają wzorce związane z adresami fizycznymi ze wszystkich obsługiwanych krajów/regionów.
+Wszystkie adresy fizyczne to jednostka w pakiecie SIT, która wykrywa wzorce związane z adresami fizycznymi ze wszystkich obsługiwanych krajów/regionów.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Różne
+Różnych
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Różne
+Różnych
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="description"></a>Opis
 
-Dopasowywanie adresów ulicy jest tak zaprojektowane, aby dopasować ciągi, które może być identyfikowane przez człowieka jako adres pocztowy. W tym celu korzysta on z kilku zasobów podstawowych:
+Dopasowanie adresów ulicznych zostało zaprojektowane tak, aby pasowało do ciągów identyfikowanych przez człowieka jako adres ulicy. W tym celu jest używanych kilka zasobów podstawowych:
 
--   Słownik dla rozliczeń, powiatów i regionów.
--   Słownik sufiksów ulicy, na przykład Droga, Ulica lub Szosowy.
+-   Słownik rozliczeń, powiatów i regionów.
+-   Słownik sufiksów ulicznych, takich jak Road, Street lub Avenue.
 -   Wzorce kodów pocztowych.
 -   Wzorce formatów adresów.
 
-Zasoby są różne dla poszczególnych krajów. Zasobami podstawowymi są wzorce formatów adresów używanych w danym kraju. Wybierane są różne formaty, aby mieć pewność, że zostanie dopasowana jak najwięcej adresów. Takie formaty pozwalają na elastyczność, na przykład adres może pomijać kod pocztowy, pomijać nazwę miasta lub mieć ulicę bez sufiksu ulicy. We wszystkich przypadkach takie dopasowania są używane w celu zwiększenia pewności co do dopasowania.
+Zasoby są różne dla każdego kraju. Zasoby podstawowe to wzorce formatów adresów, które są używane w danym kraju. Różne formaty są wybierane w celu upewnienia się, że jest dopasowanych jak najwięcej adresów. Formaty te umożliwiają elastyczność, na przykład adres może pominąć kod pocztowy lub pominąć nazwę miasta lub mieć ulicę bez sufiksu ulicy. We wszystkich przypadkach takie dopasowania są używane w celu zwiększenia ufności dopasowania.
 
-Wzorce są zaprojektowane tak, aby dopasować pojedyncze adresy, a nie lokalizacje ogólne. Dlatego ciągi takie jak *Redmond, WA 98052* lub *Main Street, Albuquerque* nie zostaną dopasowane.
+Wzorce zostały zaprojektowane tak, aby pasowały do pojedynczych adresów, a nie lokalizacji ogólnych. Dlatego ciągi takie jak *Redmond, WA 98052* lub *Main Street, Albuquerque* nie zostaną dopasowane.
 
 ### <a name="contains"></a>Zawiera
 
-Ten dołączony nazwany podmiot SIT zawiera następujące poszczególne identyfikatory SIT:
+Ta powiązana nazwana jednostka SIT zawiera następujące pojedyncze interfejsy API:
 
-- Adresy fizyczne Australii
-- Fizyczne adresy w Austrii
-- Adresy fizyczne w Belgia
-- Adresy fizyczne w Brazylii
-- Adresy fizyczne w Bułgarii
+- Adresy fizyczne w Australii
+- Adresy fizyczne Austrii
+- Adresy fizyczne w Belgii
+- Adresy fizyczne Brazylii
+- Adresy fizyczne Bułgarii
 - Adresy fizyczne w Kanadzie
-- Chorwacja fizyczne adresy
-- Adresy fizyczne cypru
+- Adresy fizyczne Chorwacji
+- Adresy fizyczne cypryjskie
 - Adresy fizyczne w Czechach
-- Adresy fizyczne w Dania
-- Estoński adres fizyczny
-- Adresy fizyczne w Finlandia
-- Adresy fizyczne we Francji
+- Adresy fizyczne Danii
+- Adresy fizyczne Estonii
+- Adresy fizyczne Finlandii
+- Adresy fizyczne We Francji
 - Adresy fizyczne w Niemczech
-- Grecja ( adresy fizyczne)
-- Adresy fizyczne Węgry
-- Islandzkie adresy fizyczne
-- Adresy fizyczne w Irlandii
-- Włochy adresy fizyczne
-- Łotewskie adresy fizyczne
+- Adresy fizyczne Grecji
+- Adresy fizyczne Na Węgrzech
+- Adresy fizyczne Islandii
+- Adresy fizyczne Irlandii
+- Adresy fizyczne Włoch
+- Adresy fizyczne Łotwy
 - Adresy fizyczne Liechtensteinu
 - Adresy fizyczne Litwy
 - Adresy fizyczne w Luksemburgu
-- Adresy fizyczne malta
+- Adresy fizyczne Malty
 - Holenderskie adresy fizyczne
-- Nowe adresy fizyczne w Nowej Zelandii
-- Adresy fizyczne w Norwegiach
+- Adresy fizyczne Nowej Zelandii
+- Adresy fizyczne Norwegii
 - Adresy fizyczne w Polsce
-- Fizyczne adresy w Portugalia
-- Adresy fizyczne w Rumunii
-- Adresy fizyczne na Słowacja
-- Adresy fizyczne w Słowenii
+- Adresy fizyczne Portugalii
+- Adresy fizyczne Rumunii
+- Adresy fizyczne Słowacji
+- Adresy fizyczne Słowenii
 - Adresy fizyczne Hiszpanii
-- Szwecja ( adresy fizyczne)
-- Adresy fizyczne w Szwajcarii
-- Adresy fizyczne w Turcja
-- Adresy fizyczne w Zjednoczonym Królestwie
-- Adresy fizyczne w Stanach Zjednoczonych
+- Adresy fizyczne Szwecji
+- Adresy fizyczne Szwajcarii
+- Adresy fizyczne Turcji
+- Adresy fizyczne w Wielkiej Brytanii
+- adresy fizyczne Stany Zjednoczone
 
 ### <a name="supported-languages"></a>Obsługiwane języki
 
@@ -304,30 +304,30 @@ Ten dołączony nazwany podmiot SIT zawiera następujące poszczególne identyfi
 - Turkish
 
 
-## <a name="argentina-national-identity-dni-number"></a>Numer tożsamości państwowej Argentyny (DNI)
+## <a name="argentina-national-identity-dni-number"></a>Numer tożsamości narodowej Argentyny (DNI)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Osiem cyfr z kropkami lub bez kropek
+Osiem cyfr z kropkami lub bez
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Osiem cyfr:
 - dwie cyfry
-- okres opcjonalny
+- opcjonalny okres
 - trzy cyfry
-- okres opcjonalny
+- opcjonalny okres
 - trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_argentina_national_id umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z Keyword_argentina_national_id znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_argentina_national_id znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_argentina_national_id.
 
 ```xml
 <!-- Argentina National Identity (DNI) Number -->
@@ -343,44 +343,44 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
-- Argentyna ( numer tożsamości państwowej)
+- Numer tożsamości narodowej Argentyny
 - cedula
 - cédula
 - dni
 - documento nacional de identidad
 - documento número
-- numero dokumentu
+- documento numero
 - registro nacional de las personas
 - rnp
 
 
-## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Argentina Unique Tax Identification Key (CUIT/CUIL)
+## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Argentyna Unikatowy klucz identyfikacji podatkowej (CUIT/CUIL)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-11 cyfr z łącznikiem
+11 cyfr z kreską
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-11 cyfr z łącznikiem:
-- Dwie cyfry w postaci 20, 23, 24, 27, 30, 33 lub 34
-- Łącznik (-)
+11 cyfr z kreską:
+- dwie cyfry w 20, 23, 24, 27, 30, 33 lub 34
+- łącznik (-)
 - osiem cyfr
-- Łącznik (-)
+- łącznik (-)
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_Argentina_Unique_Tax_Key` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keyword_Argentina_Unique_Tax_Key` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_Argentina_Unique_Tax_Key` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_Argentina_Unique_Tax_Key`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_Argentina_Unique_Tax_Key` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_Argentina_Unique_Tax_Key` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
@@ -401,72 +401,72 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 - Clave Unica de Identificacion Tributaria
 - CUIT
-- unikatowy kod identyfikacji identyfikatorów na najbłędszej tożsamości 
+- unikatowy kod identyfikacji pracowników 
 - Clave Única de Identificación Tributaria
-- unikatowy kod identyfikacyjny identyfikatorów
+- unikatowy kod identyfikacji pracowników
 - CUIL
 - Unikatowy klucz identyfikacji podatkowej
-- Klucz identyfikacyjny unikatowych identyfikatorów
-- Unikatowy klucz dowodu tożsamości na najbłędszej tożsamości
-- Unikatowy kod identyfikacyjny służbowy
-- Unikatowy kod identyfikacyjny pracy
-- Unikatowy klucz identyfikacyjny pracy
+- Unikatowy klucz identyfikacji siły roboczej
+- Unikatowy klucz identyfikacji pracowników
+- Unikatowy kod identyfikacji służbowych
+- Unikatowy kod identyfikacji pracy
+- Unikatowy klucz identyfikacji pracy
 - Unikatowy klucz identyfikacji pracy
 - Unikatowy kod identyfikacji podatkowej
 - Unikatowy klucz identyfikacji podatkowej
-- Unikatowy kod identyfikacyjny rynku pracy
-- Unikatowy kod identyfikacji rynku pracy
-- Unikatowy klucz identyfikacji rynku pracy
-- Unikatowy klucz identyfikacji rynku pracy
-- identyfikator podatku
+- Unikatowy kod identyfikacji pracy
+- Unikatowy kod identyfikacji pracy
+- Unikatowy klucz identyfikacji siły roboczej
+- Unikatowy klucz identyfikacji pracy
+- identyfikator podatkowy
 - taxID #
 - taxId
-- number
-- numer podatku
-- nie podatek
-- podatek #
-- podatek #
-- identyfikator vat
-- numer identyfikacyjny
-- nie
-- cycer #
-- cycer #
+- taxidnumber
+- numer podatkowy
+- numer podatkowy
+- Podatku #
+- Podatku #
+- identyfikator podatnika
+- numer podatnika
+- brak podatnika
+- Podatnik #
+- Podatnik #
 - tożsamość podatkowa
-- identyfikacji podatkowej
+- identyfikacja podatkowa
 - Número de Identificación Fiscal
 - número de contribuyente
 
 
 ## <a name="australia-bank-account-number"></a>Numer konta bankowego w Australii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Od 6 do 10 cyfr z numerem oddziału stanu bankowego lub bez niego
+od sześciu do 10 cyfr z numerem oddziału stanu banku lub bez go
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Numer konta to od 6 do 10 cyfr.
 
-Numer oddziału banku w Australii:
+Numer oddziału bankowego w Australii:
 - trzy cyfry
-- Łącznik
+- łącznik
 - trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_australia_bank_account_number zawartości, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_australia_bank_account_number.
-- Wyrażenie regularne Regex_australia_bank_account_number_bsb umożliwia znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_australia_bank_account_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_australia_bank_account_number.
+- Wyrażenie regularne Regex_australia_bank_account_number_bsb znajduje zawartość zgodną ze wzorcem.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_australia_bank_account_number zawartości, która jest taka, jak wzorzec.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_australia_bank_account_number znajduje zawartość zgodną ze wzorcem.
 
-- Zostanie znalezione słowo kluczowe Keyword_australia_bank_account_number.
+- Znaleziono słowo kluczowe z Keyword_australia_bank_account_number.
 
 ```xml
 <!-- Australia Bank Account Number -->
@@ -487,59 +487,59 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_australia_bank_account_number"></a>Keyword_australia_bank_account_number
 
-- kod bankowy Swift
+- swift bank code
 - bank korespondenta
 - waluta bazowa
-- konto w Polsce
+- konto usa
 - adres posiadacza
-- adres bankowy
+- adres banku
 - konto informacyjne
-- Transfery funduszy
+- transfery funduszy
 - opłaty bankowe
 - szczegóły banku
 - informacje bankowe
-- imię i nazwisko
-- iaea
+- pełne nazwy
+- Maea
 
 
-## <a name="australia-business-number"></a>Numer służbowy Australia
+## <a name="australia-business-number"></a>Numer biznesowy Australii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr z opcjonalnymi ogranicznikami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 cyfr z opcjonalnymi ogranicznikami:
 
 - dwie cyfry
-- Łącznik opcjonalny lub spacja
+- opcjonalny łącznik lub spacja
 - trzy cyfry
-- Łącznik opcjonalny lub spacja
+- opcjonalny łącznik lub spacja
 - trzy cyfry
-- Łącznik opcjonalny lub spacja
+- opcjonalny łącznik lub spacja
 - trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_australian_business_number znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keywords_australian_business_number.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_australian_business_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_australian_business_number.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_australian_business_number znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_australian_business_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Australia Business Number -->
@@ -558,51 +558,51 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
 - australia business no
-- numer służbowy
-- abn #
+- numer biznesowy
+- Abn #
 - businessid #
 - identyfikator firmy
-- abn
+- Abn
 - businessno #
 
 
 ## <a name="australia-company-number"></a>Numer firmy w Australii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr z ogranicznikami
+dziewięć cyfr z ogranicznikami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dziewięć cyfr z ogranicznikami:
+dziewięć cyfr z ogranicznikami:
 
 - trzy cyfry
-- spacja
+- spację
 - trzy cyfry
-- spacja
+- spację
 - trzy cyfry
 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_Australian_Company_Number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z Keyword_Australian_Company_Number znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_Australian_Company_Number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Australian_Company_Number.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_Australian_Company_Number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_Australian_Company_Number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Australia Company Number -->
@@ -620,10 +620,10 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
-- może
+- Cna
 - australia company no
 - australia company no #
-- numer firmy Australia
+- numer firmy w Australii
 - australian company no
 - australian company no #
 - numer australijskiej firmy
@@ -631,37 +631,37 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 ## <a name="australia-drivers-license-number"></a>Numer prawa jazdy w Australii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć liter i cyfr
+dziewięć liter i cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dziewięć liter i cyfr:
 
-- Dwie cyfry lub litery (bez wielkości liter)
+- dwie cyfry lub litery (bez uwzględniania wielkości liter)
 - dwie cyfry
-- Pięć cyfr lub liter (bez wielkości liter)
+- pięć cyfr lub liter (bez uwzględniania wielkości liter)
 
 LUB
 
-- od jednego do dwóch opcjonalnych liter (bez wielkości liter)
-- Od czterech do dziewięciu cyfr
+- od jednej do dwóch opcjonalnych liter (bez uwzględniania wielkości liter)
+- od czterech do dziewięciu cyfr
 
 LUB
 
-- Dziewięć cyfr lub liter (bez wielkości liter)
+- dziewięć cyfr lub liter (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_australia_drivers_license_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_australia_drivers_license_number.
-- Nie można odnaleźć słowa kluczowego Keyword_australia_drivers_license_number_exclusions.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_australia_drivers_license_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_australia_drivers_license_number.
+- Nie znaleziono słowa kluczowego z Keyword_australia_drivers_license_number_exclusions.
 
 ```xml
 <!-- Australia Drivers License Number -->
@@ -680,131 +680,131 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_australia_drivers_license_number"></a>Keyword_australia_drivers_license_number
 
-- międzynarodowe zezwolenia na samochód
-- Australijskie skojarzenie samochodów
-- międzynarodowe zezwolenie na samochód
+- międzynarodowe zezwolenia na jazdę
+- australijskie stowarzyszenie motoryzacyjne
+- międzynarodowe prawo jazdy
 - DriverLicence
 - DriverLicences
-- Lic sterownika
-- Licencja sterownika
-- Licencje sterowników
-- DriversLic
-- DriversLicence
+- Sterownik Lic
+- Prawo jazdy
+- Prawa jazdy
+- Sterowniki
+- SterownikiLicence
 - DriversLicences
 - Sterowniki Lic
-- Kursywa sterowników
-- Licencja sterowników
-- Licencje sterowników
+- Sterowniki Lics
+- Prawo jazdy
+- Prawa jazdy
 - Driver'Lic
-- Kursywę sterownika
+- Driver'Lics
 - Prawo jazdy
-- Licencje sterownika
-- Lic sterownika
-- Kursywę sterownika
-- Prawo jazdy
-- Licencje sterownika
-- Lica sterownika
-- Kursywę sterownika
-- Wiewiązność sterownika
 - Prawa jazdy
 - Lic sterownika
-- Kursywę sterownika
+- Lics kierowcy
 - Prawo jazdy
-- Licencje jazdy
+- Prawa jazdy
+- Driver'sLic
+- Kursywę sterownika
+- Driver'sLicence
+- Kursywą kierowcy
+- Lic kierowcy
+- Lics kierowcy
+- Prawo jazdy
+- Prawa jazdy
 - DriverLic #
 - DriverLics #
 - DriverLicence #
 - DriverLicences #
-- Lic sterownika #
-- Kursywa sterownika #
-- Licencja sterownika #
-- Licencje sterowników #
-- DriversLic #
-- DriversLics #
-- DriversLicence #
+- Sterownik Lic #
+- Sterownik Lics #
+- Prawo jazdy #
+- Prawa jazdy #
+- Sterowniki #
+- SterownikiLics #
+- SterownikiLicence #
 - DriversLicences #
 - Sterowniki Lic #
-- Kursywa sterowników #
-- Licencja sterowników #
-- Licencje sterowników #
+- Sterowniki Lics #
+- Prawo jazdy #
+- Prawa jazdy #
 - Driver'Lic #
-- Kursywę sterownika #
+- Driver'Lics #
 - Prawo jazdy #
-- Licencje sterownika #
-- Lic sterownika #
-- Kursywę sterownika #
-- Prawo jazdy #
-- Licencje sterownika #
-- Lica sterownika #
-- Kursywę sterownika #
-- Wiewiązność sterownika #
 - Prawa jazdy #
 - Lic sterownika #
-- Kursywę sterownika #
+- Lics kierowcy #
 - Prawo jazdy #
-- Licencje jazdy #
+- Prawa jazdy #
+- Driver'sLic #
+- Kursywę sterownika #
+- Driver'sLicence #
+- Kursywą kierowcy #
+- Lic kierowcy #
+- Lics kierowcy #
+- Prawo jazdy #
+- Prawa jazdy #
 
 #### <a name="keyword_australia_drivers_license_number_exclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
-- aaa
+- Aaa
 - DriverLicense
 - DriverLicenses
 - Prawo jazdy
-- Licencje na sterownik
+- Prawa jazdy
 - DriversLicense
 - DriversLicenses
-- Licencja na sterowniki
-- Licencje na sterowniki
+- Licencja kierowcy
+- Licencje kierowców
 - Prawo jazdy
 - Prawa jazdy
 - Prawo jazdy
 - Prawa jazdy
-- Prawo jazdy
-- Prawa jazdy
+- Driver'sLicense
+- Driver'sLicenses
 - Prawo jazdy
 - Prawa jazdy
 - DriverLicense #
 - DriverLicenses #
 - Prawo jazdy #
-- Licencje na sterownik #
+- Prawa jazdy #
 - DriversLicense #
 - DriversLicenses #
-- Licencja na sterowniki #
-- Licencje na sterowniki #
+- Licencja kierowcy #
+- Licencje kierowców #
 - Prawo jazdy #
 - Prawa jazdy #
 - Prawo jazdy #
 - Prawa jazdy #
-- Prawo jazdy #
-- Prawa jazdy #
+- Driver'sLicense #
+- Driver'sLicenses #
 - Prawo jazdy #
 - Prawa jazdy #
 
 
 ## <a name="australia-medical-account-number"></a>Numer konta medycznego w Australii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10–11 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10–11 cyfr:
-- Pierwsza cyfra należy do zakresu od 2 do 6
-- Trzynastowa cyfra to cyfra kontrolna
-- Dziesiąta cyfra jest cyfrą problemu
-- 11. cyfra (opcjonalnie) to liczba pojedyncza
+- Pierwsza cyfra znajduje się w zakresie od 2 do 6
+- Dziewiąta cyfra to cyfra kontrolna
+- Dziesiąta cyfra to cyfra problemu
+- 11 cyfra (opcjonalnie) to indywidualna liczba
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_australian_medical_account_number znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_Australia_Medical_Account_Number znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_australian_medical_account_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Australia_Medical_Account_Number.
+- Suma kontrolna przechodzi.
 
 
 ```xml
@@ -822,39 +822,39 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 #### <a name="keyword_australia_medical_account_number"></a>Keyword_Australia_Medical_Account_Number
 
 - szczegóły konta bankowego
-- płatności w mediach internetowych
-- konto kredytów hipotecznych
+- płatności medicare
+- konto kredytu hipotecznego
 - płatności bankowe
-- Gałąź informacji
+- gałąź informacyjna
 - pożyczka na kartę kredytową
-- Dział usług ludzkich
+- dział usług ludzkich
 - usługa lokalna
-- medicare
+- Medicare
 
 
 ## <a name="australia-passport-number"></a>Numer paszportu Australii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 osiem lub dziewięć znaków alfanumerycznych
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- jedną literę (N, E, D, F, A, C, U, X) i siedem cyfr lub
-- Dwie litery (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) i siedem cyfr.
+- jedną literę (N, E, D, F, A, C, U, X), po której następuje siedem cyfr lub
+- Dwie litery (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ), a następnie siedem cyfr.
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_australia_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keyword_australia_passport_number` kluczowe od.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_australia_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_australia_passport_number`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_australia_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Wyrażenie `Regex_australia_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- Australia Passport Number -->
@@ -873,58 +873,58 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 - szczegóły paszportu
-- Szybka i pociesie
-- commonwealth of australia
-- oddział ds. migracji
-- national identity card
+- imigracja i obywatelstwo
+- wspólnota australii
+- departament imigracji
+- krajowego dowodu osobistego
 - dokument podróży
-- urząd wydania
+- organ wystawiający
 
 
-## <a name="australia-physical-addresses"></a>Adresy fizyczne Australii 
+## <a name="australia-physical-addresses"></a>Adresy fizyczne w Australii 
 
-Nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Australii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Odbuntowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Australii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
-średni
+Średni
 
 
-## <a name="australia-tax-file-number"></a>Numer pliku podatkowego w Australii
+## <a name="australia-tax-file-number"></a>Numer pliku podatkowego Australii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 od ośmiu do dziewięciu cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Od ośmiu do dziewięciu cyfr zazwyczaj prezentowanych ze spacjami w następujący sposób:
+od ośmiu do dziewięciu cyfr zwykle przedstawianych ze spacjami w następujący sposób:
 - trzy cyfry
-- spacja opcjonalna
+- opcjonalne miejsce
 - trzy cyfry
-- spacja opcjonalna
-- od dwóch do trzech cyfr, gdzie ostatnia cyfra to cyfra kontrolna
+- opcjonalne miejsce
+- od dwóch do trzech cyfr, gdzie ostatnia cyfra jest cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_australian_tax_file_number znajdzie zawartość, która pasuje do wzorca.
-- Nie można odnaleźć słowa kluczowego Keyword_Australia_Tax_File_Number Keyword_number_exclusions słowa kluczowego.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_australian_tax_file_number znajduje zawartość zgodną ze wzorcem.
+- Nie znaleziono słowa kluczowego z Keyword_Australia_Tax_File_Number lub Keyword_number_exclusions.
+- Suma kontrolna przechodzi.
 
 ```xml
    <!-- Australia Tax File Number -->
@@ -940,37 +940,37 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_australia_tax_file_number"></a>Keyword_australia_tax_file_number
 
-- numer biznesowy w Australii
-- stopa podatkowa
-- medicare
+- australijski numer biznesowy
+- marginalna stawka podatkowa
+- opłata medicare
 - numer portfela
-- weteranów służb
-- podatek od zamiejscowy
-- indywidualne ze zwrotu podatku
+- weterani usług
+- Podatku
+- indywidualne zeznanie podatkowe
 - numer pliku podatkowego
-- tfn
+- Tfn
 
 
 ## <a name="austria-drivers-license-number"></a>Numer prawa jazdy w Austrii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 osiem cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie regularne umożliwia  `Regex_austria_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_austria_eu_driver's_license_number` znajduje się.
+- Wyrażenie  `Regex_austria_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` .
 
 ```xml
       <!-- Austria Driver's License Number -->
@@ -987,7 +987,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -996,49 +996,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -1046,48 +1046,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -1095,21 +1095,21 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver nie s_license_number
+#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver s_license_number
 
 - fuhrerschein
 - führerschein
@@ -1118,37 +1118,37 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - Führerscheinnummern
 
 
-## <a name="austria-identity-card"></a>Karta tożsamości Austria
+## <a name="austria-identity-card"></a>Austria identity card (Austria)
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 24-znakowa kombinacja liter, cyfr i znaków specjalnych
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 24 znaki:
 
--  22 litery (bez wielkości liter), cyfry, ukośniki odwrotne, ukośniki lub znaki plus
+-  22 litery (bez uwzględniania wielkości liter), cyfry, ukośniki odwrotne, ukośniki do przodu lub znaki plus
 
-- dwie litery (bez wielkości liter), cyfry, ukośniki odwrotne, ukośniki, znaki plus lub znaki równości
+- dwie litery (bez uwzględniania wielkości liter), cyfry, ukośniki odwrotne, ukośniki do przodu, znaki plus znaki lub znaki równości
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie regularne umożliwia  `Regex_austria_eu_national_id_card` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_austria_eu_national_id_card` kluczowe od.
+- Wyrażenie  `Regex_austria_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_austria_eu_national_id_card`
 
 ```xml
       <!-- Austria Identity Card -->
@@ -1165,38 +1165,38 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 - numer tożsamości
-- identyfikator narodowy
-- personalausweisö österreich
+- identyfikator krajowy
+- personalausweis republik österreich
 
 
 ## <a name="austria-passport-number"></a>Numer paszportu Austrii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Jedna litera, po której następuje opcjonalna spacja i siedem cyfr
+Jedna litera, po której następuje opcjonalne spacja i siedem cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Kombinacja jednej litery, siedmiu cyfr i jednej spacji:
+Kombinacja jednej litery, siedmiu cyfr i jednego spacji:
 
-- jedna litera (bez wielkości liter)
-- jedna spacja (opcjonalnie)
-- Siedem cyfr
+- jedna litera (bez uwzględniania wielkości liter)
+- jedno miejsce (opcjonalnie)
+- siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_austria_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_austria_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_austria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_austria_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_austria_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_austria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` .
 
 ```xml
       <!-- Austria Passport Number -->
@@ -1226,15 +1226,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_austria_eu_passport_number"></a>Keywords_austria_eu_passport_number
@@ -1244,50 +1244,50 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - No-Reisepass
 - Nr-Reisepass
 - Reisepass-Nr
-- Passnummer
+- Numer dostępu
 - reisepässe
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="austria-physical-addresses"></a>Fizyczne adresy w Austrii
+## <a name="austria-physical-addresses"></a>Adresy fizyczne Austrii
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Austrii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Austrii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="austria-social-security-number"></a>Austria social security number
+## <a name="austria-social-security-number"></a>Numer ubezpieczenia społecznego w Austrii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10 cyfr w określonym formacie
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr:
 
-- Trzy cyfry odpowiadające numerowi kolejnemu
+- trzy cyfry odpowiadające numerowi seryjnemu
 - jedna cyfra kontrolna
-- Sześć cyfr odpowiadających dacie urodzenia (DDMMYY)
+- sześć cyfr odpowiadających dacie urodzenia (DDMMYY)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_austria_eu_ssn_or_equivalent` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_austria_eu_ssn_or_equivalent` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_austria_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
+- odnaleziono słowo kluczowe z  `Keywords_austria_eu_ssn_or_equivalent` .
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_austria_eu_ssn_or_equivalent` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_austria_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Austria Social Security Number -->
@@ -1310,59 +1310,59 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- austria ssn
-- Numer ehiczny
-- nr ehic
-- kod ubezpieczeniowy
-- kod ubezpieczeniowy #
+- austrian ssn
+- Numer ehic
+- Brak ehic
+- kod ubezpieczenia
+- kod ubezpieczenia #
 - numer ubezpieczenia
 - brak ubezpieczenia
-- kenkassennummer
-- kenversicherung
+- krankenkassennummer
+- krankenversicherung
 - socialsecurityno
 - socialsecurityno #
-- nr ubezpieczenia społecznego
-- numer PEZEt
-- kod peł.
+- zabezpieczenia społecznego nie
+- numer ubezpieczenia społecznego
+- kod zabezpieczenia społecznego
 - sozialversicherungsnummer
 - sozialversicherungsnummer #
 - soziale sicherheit kein
 - sozialesicherheitkein #
-- ssn #
-- ssn
+- Ssn #
+- Ssn
 - versicherungscode
 - versicherungsnummer
-- zdravsvstv zavarovanje
+- zdravstveno zavarovanje
 
 
-## <a name="austria-tax-identification-number"></a>Numer identyfikacyjny podatku w Austrii
+## <a name="austria-tax-identification-number"></a>Numer identyfikacji podatkowej Austrii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr z opcjonalnym łącznikiem i ukośnikiem do przodu
+dziewięć cyfr z opcjonalnym łącznikiem i ukośnikiem do przodu
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dziewięć cyfr z opcjonalnym łącznikiem i ukośnikiem do przodu:
+dziewięć cyfr z opcjonalnym łącznikiem i ukośnikiem do przodu:
 
 - dwie cyfry
-- Łącznik (opcjonalny)
+- łącznik (opcjonalnie)
 - trzy cyfry
-- ukośnik (opcjonalny)
+- ukośnik (opcjonalnie)
 - cztery cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_austria_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_austria_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_austria_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_austria_eu_tax_file_number`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_austria_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja  `Func_austria_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Austria Tax Identification Number -->
@@ -1381,68 +1381,68 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keywords_austria_eu_tax_file_number"></a>Keywords_austria_eu_tax_file_number
 
-- österreich
+- Österreich
 - st.nr.
 - steuernummer
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
-- numer podatku
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
+- numer podatkowy
 
 
 ## <a name="austria-value-added-tax"></a>Podatek od wartości dodanej w Austrii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11-znakowy wzorzec alfanumeryczny:
 
 - A lub a
 - T lub t
-- Spacja opcjonalna
+- Opcjonalne miejsce
 - U lub u
-- spacja opcjonalna
+- opcjonalne miejsce
 - dwie lub trzy cyfry
-- spacja opcjonalna
+- opcjonalne miejsce
 - cztery cyfry
-- spacja opcjonalna
+- opcjonalne miejsce
 - jedna lub dwie cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_Austria_Value_Added_Tax znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_Austria_Value_Added_Tax.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_Austria_Value_Added_Tax znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Austria_Value_Added_Tax.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_Austria_Value_Added_Tax znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_Austria_Value_Added_Tax znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Austria Value Added Tax -->
@@ -1461,45 +1461,45 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
 - numer VAT
-- vat #
-- Austria numer VAT
-- nie vat.
+- Podatku vat #
+- austriacki numer VAT
+- vat no.
 - vatno #
-- numer podatku dodanego
-- Austria VAT
-- mjst
+- numer podatku od wartości dodanej
+- vat austriacki
+- mwst
 - umsatzsteuernummer
-- mistnummer
+- mwstnummer
 - ust.-identifikationsnummer
 - umsatzsteuer-identifikationsnummer
-- numer identyfikacyjny VAT
-- liczba atu
+- numer identyfikacyjny vat
+- numer atu
 - numer uid
 
 
-## <a name="azure-documentdb-auth-key"></a>Klucz uwierzytelniania dokumentu Azure DocumentDB
+## <a name="azure-documentdb-auth-key"></a>Klucz uwierzytelniania usługi Azure DocumentDB
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ciąg "DocumentDb" oraz znaki i ciągi opisane w poniższym wzorcu.
+Ciąg "DocumentDb", po którym następują znaki i ciągi opisane we wzorcu poniżej.
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - Ciąg "DocumentDb"
 - Dowolna kombinacja od 3 do 200 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
-- Symbol większy niż (>), znak równości (=), cudzysłów (") lub apostrof (')
-- Dowolna kombinacja 86 małych i wielkich liter, cyfr, ukośnika (/) lub znaku plus (+)
+- Symbol większy niż (>), znak równości (=), cudzysłów () lub apostrof (")
+- Dowolna kombinacja 86 małych lub wielkich liter, cyfr, ukośnika (/) lub znaku plus (+)
 - Dwa znaki równości (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_AzureDocumentDBAuthKey umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości, która pasuje do wzorca.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_AzureDocumentDBAuthKey znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -1517,50 +1517,50 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-Z technicznego punktu widzenia ten typ informacji poufnych identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+(Technicznie ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych).
 
-- contoso
-- fabrikam
-- northwind
-- piaskownica
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Piaskownicy
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Netto
 
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS database connection string and Azure SQL connection string
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Parametry połączenia bazy danych IAAS platformy Azure i parametry połączenia Azure SQL
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ciąg "Serwer", "serwer" lub "źródło danych" oraz znaki i ciągi opisane w poniższym wzorcu, łącznie z ciągiem "cloudapp.azure.<!--no-hyperlink-->com" lub "cloudapp.azure.<!--no-hyperlink-->net" lub "database.windows.<!--no-hyperlink-->net", a także ciąg "Password" lub "password" lub "pwd".
+Ciąg "Serwer", "serwer" lub "źródło danych", po którym następuje znaki i ciągi opisane we wzorcu poniżej, w tym ciąg "cloudapp.azure.<!--no-hyperlink-->com" lub "cloudapp.azure.<!--no-hyperlink-->net" lub "database.windows.<!--no-hyperlink-->net", a ciąg "Password" lub "password" lub "pwd".
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - ciąg "Serwer", "serwer" lub "źródło danych"
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - dowolna kombinacja od 1 do 200 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
 - Ciąg "cloudapp.azure.<!--no-hyperlink-->com", "cloudapp.azure.<!--no-hyperlink-->net" lub "database.windows.<!--no-hyperlink-->net"
 - dowolna kombinacja od 1 do 300 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
 - ciąg "Password", "password" lub "pwd"
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
-- jeden lub więcej znaków innych niż średnik (;) cudzysłów (") lub apostrof (')
-- średnik (;), cudzysłów (") lub apostrof (')
+- znak od zera do dwóch białych znaków
+- co najmniej jeden znak, który nie jest średnikiem (;), cudzysłów () lub apostrof (")
+- średnik (;), cudzysłów () lub apostrof (")
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_AzureConnectionString zawartości, która jest taka, jak wzorzec.
-- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości, która pasuje do wzorca.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_AzureConnectionString znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -1578,50 +1578,50 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Z technicznego punktu widzenia ten typ informacji poufnych identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+(Technicznie ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych).
 
-- contoso
-- fabrikam
-- northwind
-- piaskownica
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Piaskownicy
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Netto
 
 
-## <a name="azure-iot-connection-string"></a>Azure IoT connection string
+## <a name="azure-iot-connection-string"></a>Parametry połączenia usługi Azure IoT
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ciąg "HostName" oraz znaki i ciągi opisane w poniższym wzorcu, łącznie z ciągami "azure-devices.<!--no-hyperlink-->net" i "SharedAccessKey".
+Ciąg "Nazwa hosta", po którym następuje znaki i ciągi opisane we wzorcu poniżej, w tym ciągi "azure-devices.<!--no-hyperlink-->net" i "SharedAccessKey".
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- ciąg "HostName"
-- od zera do dwóch znaków białych
+- ciąg "Nazwa hosta"
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - dowolna kombinacja od 1 do 200 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
 - ciąg "azure-devices.<!--no-hyperlink-->net"
 - dowolna kombinacja od 1 do 200 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
 - ciąg "SharedAccessKey"
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
-- dowolna kombinacja 43 małych i wielkich liter, cyfr, ukośnika (/) lub znaku plus (+)
+- znak od zera do dwóch białych znaków
+- dowolna kombinacja 43 małych lub wielkich liter, cyfr, ukośnika (/) lub znaku plus (+)
 - znak równości (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_AzureIoTConnectionString umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości, która pasuje do wzorca.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_AzureIoTConnectionString znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1639,40 +1639,40 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Ten poufny typ informacji identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+Ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych.
 
-- contoso
-- fabrikam
-- northwind
-- piaskownica
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Piaskownicy
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Netto
 
 
-## <a name="azure-publish-setting-password"></a>Azure Publish setting password
+## <a name="azure-publish-setting-password"></a>Hasło ustawienia publikowania platformy Azure
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ciąg "userpwd=" i ciąg alfanumeryczny.
+Ciąg "userpwd=", po którym następuje ciąg alfanumeryczny.
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - ciąg "userpwd="
-- Dowolna kombinacja 60 małych liter lub cyfr
-- Cudzysłów (")
+- dowolna kombinacja 60 małych liter lub cyfr
+- znak cudzysłów (")
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_AzurePublishSettingPasswords umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości, która pasuje do wzorca.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_AzurePublishSettingPasswords znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
 
 ```xml
@@ -1691,45 +1691,45 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Ten poufny typ informacji identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+Ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych.
 
-- contoso
-- fabrikam
-- northwind
-- piaskownica
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Piaskownicy
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Netto
 
 
-## <a name="azure-redis-cache-connection-string"></a>Azure Redis connection string
+## <a name="azure-redis-cache-connection-string"></a>Parametry połączenia usługi Azure Redis Cache
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ciąg "redis.cache.windows.<!--no-hyperlink-->net" oraz znaki i ciągi opisane w poniższym wzorcu, łącznie z ciągiem "hasło" lub "pwd".
+Ciąg "redis.cache.windows.<!--no-hyperlink-->net", a następnie znaki i ciągi opisane we wzorcu poniżej, w tym ciąg "password" lub "pwd".
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - ciąg "redis.cache.windows.<!--no-hyperlink-->net"
 - dowolna kombinacja od 1 do 200 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
 - ciąg "password" lub "pwd"
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
-- dowolna kombinacja 43 znaków, które są małymi i górnymi literami, cyframi, ukośnikiem (/) lub znakiem plus (+)
+- znak od zera do dwóch białych znaków
+- dowolna kombinacja 43 znaków, które są małymi lub wielkimi literami, cyframi, ukośnikiem (/) lub znakiem plus (+)
 - znak równości (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_AzureRedisCacheConnectionString umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości, która pasuje do wzorca.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_AzureRedisCacheConnectionString znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1747,43 +1747,43 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Z technicznego punktu widzenia ten typ informacji poufnych identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+(Technicznie ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych).
 
-- contoso
-- fabrikam
-- northwind
-- piaskownica
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Piaskownicy
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Netto
 
 
-## <a name="azure-sas"></a>Azure SAS
+## <a name="azure-sas"></a>Sygnatura dostępu współdzie
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ciąg "sig" oraz znaki i ciągi opisane poniżej.
+Ciąg "sig", po którym następuje znaki i ciągi opisane we wzorcu poniżej.
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - ciąg "sig"
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
-- dowolna kombinacja znaków od 43 do 53, małych lub wielkich liter, cyfr lub znaku procentu (%)
+- znak od zera do dwóch białych znaków
+- dowolna kombinacja od 43 do 53 znaków, które są małymi lub wielkimi literami, cyframi lub znakiem procentu (%)
 - ciąg "%3d"
-- dowolny znak, który nie jest znakiem małej ani wielkiej litery, cyfrą lub znakiem procentu (%)
+- dowolny znak, który nie jest znakiem małej lub wielkiej litery, cyfry lub procentu (%)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_AzureSAS umożliwia znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_AzureSAS znajduje zawartość zgodną ze wzorcem.
 
 ```xml
 <!--Azure SAS-->
@@ -1794,37 +1794,37 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 </Entity>
 ```
 
-## <a name="azure-service-bus-connection-string"></a>Parametrów połączenia autobusu usług platformy Azure
+## <a name="azure-service-bus-connection-string"></a>Parametry połączenia usługi Azure Service Bus
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ciąg "EndPoint" oraz znaki i ciągi opisane w poniższym wzorcu, łącznie z ciągami "servicebus.windows.<!--no-hyperlink-->net" i "SharedAccesKey".
+Ciąg "EndPoint", po którym następuje znaki i ciągi opisane we wzorcu poniżej, w tym ciągi "servicebus.windows.<!--no-hyperlink-->net" i "SharedAccesKey".
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - ciąg "EndPoint"
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - dowolna kombinacja od 1 do 200 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
 - ciąg "servicebus.windows.<!--no-hyperlink-->net"
 - dowolna kombinacja od 1 do 200 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
 - ciąg "SharedAccessKey"
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
-- dowolna kombinacja 43 znaków, które są małymi i górnymi literami, cyframi, ukośnikiem (/) lub znakiem plus (+)
+- znak od zera do dwóch białych znaków
+- dowolna kombinacja 43 znaków, które są małymi lub wielkimi literami, cyframi, ukośnikiem (/) lub znakiem plus (+)
 - znak równości (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_AzureServiceBusConnectionString umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości, która pasuje do wzorca.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_AzureServiceBusConnectionString znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -1842,49 +1842,49 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Z technicznego punktu widzenia ten typ informacji poufnych identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+(Technicznie ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych).
 
-- contoso
-- fabrikam
-- northwind
-- piaskownica
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Piaskownicy
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Netto
 
 
-## <a name="azure-storage-account-key"></a>Klucz konta magazynu platformy Azure
+## <a name="azure-storage-account-key"></a>Klucz konta usługi Azure Storage
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ciąg "DefaultEndpointsProtocol" oraz znaki i ciągi opisane poniżej, łącznie z ciągiem "KluczDla Klienta".
+Ciąg "DefaultEndpointsProtocol", po którym następuje znaki i ciągi opisane we wzorcu poniżej, w tym ciąg "AccountKey".
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - ciąg "DefaultEndpointsProtocol"
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
+- znak od zera do dwóch białych znaków
 - dowolna kombinacja od 1 do 200 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
-- ciąg "Klucz Klienta"
-- od zera do dwóch znaków białych
+- ciąg "AccountKey"
+- znak od zera do dwóch białych znaków
 - znak równości (=)
-- od zera do dwóch znaków białych
-- dowolna kombinacja 86 znaków, które są małymi i małymi literami, cyframi, ukośnikiem (/) lub znakiem plus (+)
+- znak od zera do dwóch białych znaków
+- dowolna kombinacja 86 znaków, które są małymi lub wielkimi literami, cyframi, ukośnikiem (/) lub znakiem plus (+)
 - dwa znaki równości (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_AzureStorageAccountKey umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Wyrażenie regularne CEP_AzureEmulatorStorageAccountFilter nie znajduje zawartości, która pasuje do wzorca.
-- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości, która pasuje do wzorca.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_AzureStorageAccountKey znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie regularne CEP_AzureEmulatorStorageAccountFilter nie znajduje zawartości zgodnej ze wzorcem.
+- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1903,45 +1903,45 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
-Z technicznego punktu widzenia ten typ informacji poufnych identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+(Technicznie ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych).
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Z technicznego punktu widzenia ten typ informacji poufnych identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+(Technicznie ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych).
 
-- contoso
-- fabrikam
-- northwind
-- piaskownica
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Piaskownicy
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Netto
 
 
-## <a name="azure-storage-account-key-generic"></a>Klucz Storage konta usługi Azure (generic)
+## <a name="azure-storage-account-key-generic"></a>Klucz konta usługi Azure Storage (ogólny)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dowolna kombinacja 86 małych i wielkich liter, cyfr, ukośnika (/) lub znaku plus (+), poprzedzonych lub poprzedzonych znakami opisanymi poniżej.
+Dowolna kombinacja 86 małych lub wielkich liter, cyfr, ukośnika (/) lub znaku plus (+), poprzedzona znakami lub po nich znakami opisanymi we wzorcu poniżej.
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- zero do jednego z symboli większych niż (>), apostrof ('), znak równości (=), cudzysłów (") lub znak numeru (#)
-- dowolna kombinacja 86 znaków, które są małymi lub małymi literami, cyframi, ukośnikiem (/) lub znakiem plus (+)
+- zero do jednego z symboli większych niż (>), apostrof ('), znak równości (=), cudzysłów () lub znak numeru (#)
+- dowolna kombinacja 86 znaków, które są małymi lub wielkimi literami, cyframi, ukośnikiem (/) lub znakiem plus (+)
 - dwa znaki równości (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_AzureStorageAccountKeyGeneric umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_AzureStorageAccountKeyGeneric znajduje zawartość zgodną ze wzorcem.
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1953,25 +1953,25 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 ```
 
 
-## <a name="belgium-drivers-license-number"></a>Numer prawa jazdy w Belgia
+## <a name="belgium-drivers-license-number"></a>Belgijski numer prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_belgium_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z `Keywords_eu_driver's_license_number` lub `Keywords_belgium_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_belgium_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_belgium_eu_driver's_license_number` .
 
 ```xml
       <!-- Belgium Driver's License Number -->
@@ -1988,7 +1988,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -1997,49 +1997,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -2047,48 +2047,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -2096,20 +2096,20 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
-#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver nie s_license_number
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>s_license_number Keywords_belgium_eu_driver
 
 - rijbewijs
 - rijbewijsnummer
@@ -2124,35 +2124,35 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - numéro permis conduire
 
 
-## <a name="belgium-national-number"></a>Numer krajowy w Belgia
+## <a name="belgium-national-number"></a>Numer krajowy Belgii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr i opcjonalne ograniczniki
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-11 cyfr i ograniczniki:
-- Sześć cyfr i dwa opcjonalne kropki w formacie YYY. MM.DD dla daty urodzenia
-- Opcjonalny ogranicznik od kropki, kreski, spacji
-- Trzy kolejne cyfry (nieparzyste dla mężczyzn, nawet dla kobiet)
-- Opcjonalny ogranicznik od kropki, kreski, spacji
-- dwie cyfry sprawdzania
+11 cyfr plus ograniczniki:
+- sześć cyfr i dwa opcjonalne okresy w formacie RR. MM.DD dla daty urodzenia
+- Opcjonalny ogranicznik z kropki, kreski, spacji
+- trzy cyfry sekwencyjne (nieparzyste dla mężczyzn, nawet dla kobiet)
+- Opcjonalny ogranicznik z kropki, kreski, spacji
+- dwie cyfry kontrolne
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_belgium_national_number znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_belgium_national_number.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_belgium_national_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_belgium_national_number.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_belgium_national_number znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_belgium_national_number znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Belgium National Number -->
@@ -2171,28 +2171,28 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
-- aantal
-- bnn #
-- bnn
+- belasting aantal
+- Bnn #
+- Bnn
 - carte d'identité
-- identyfikant national
+- identyfikator krajowy
 - identifiantnational #
 - identificatie
-- identyfikacja
-- identifikation
+- Identyfikacji
+- identyfikator
 - identifikationsnummer
 - identifizierung
 - identité
 - identiteit
 - identiteitskaart
-- tożsamość
-- 2016
+- Tożsamości
+- Napis
 - numer krajowy
-- rejestr narodowy
-- numer_narodowy #
-- numer_narodowy
-- nif #
-- nif
+- rejestr krajowy
+- nationalnumber #
+- nationalnumber
+- Nif #
+- Nif
 - numéro d'assuré
 - numéro de registre national
 - numéro de sécurité
@@ -2200,59 +2200,59 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - numéro d'immatriculation
 - numéro national
 - numéronational #
-- identyfikator osobisty
+- osobisty numer identyfikatora
 - personalausweis
-- numer_osobisty #
+- personalidnumber #
 - registratie
-- rejestracja
+- Rejestracji
 - registrationsnumme
 - registrierung
-- numer PEZEt
-- ssn #
-- ssn
+- numer ubezpieczenia społecznego
+- Ssn #
+- Ssn
 - steuernummer
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="belgium-passport-number"></a>Numer paszportu w Belgia
+## <a name="belgium-passport-number"></a>Belgijski numer paszportu
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery, po których następuje sześć cyfr bez spacji i ograniczników
+dwie litery, po których następuje sześć cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dwie litery i sześć cyfr po nim
+dwie litery, po których następuje sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
- Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_belgium_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_belgium_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date2` datę w formacie DD MM YY lub słowo kluczowe od `Keywords_eu_passport_date` lub `Keywords_belgium_eu_passport_number` znajduje się
+ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_belgium_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date2` regularne znajduje datę w formacie DD MM YY lub słowo kluczowe z `Keywords_eu_passport_date` pliku lub `Keywords_belgium_eu_passport_number` zostanie znalezione
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_belgium_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_belgium_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_belgium_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` .
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -2284,15 +2284,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
@@ -2302,65 +2302,65 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - paspoort-nr
 - paspoortnummer
 - paspoortnummers
-- Passeport carte
-- Passeport jen
+- Koszyk passeportu
+- Passeport livre
 - Pass-Nr
-- Passnummer
+- Numer dostępu
 - reisepass kein
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="belgium-physical-addresses"></a>Adresy fizyczne w Belgia
+## <a name="belgium-physical-addresses"></a>Adresy fizyczne w Belgii
 
-Ta nieoznakowana nazwana jednostka wykrywa wzorce związane z adresami fizycznymi z Belgia. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresami fizycznymi z Belgii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="belgium-value-added-tax-number"></a>Belgia: numer podatku dodanego
+## <a name="belgium-value-added-tax-number"></a>Numer podatku od wartości dodanej w Belgii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 12-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 12-znakowy wzorzec alfanumeryczny:
 
-- literę B lub b
-- Litera E lub e
+- litera B lub b
+- litera E lub e
 - cyfra 0
-- Cyfra od 1 do 9
-- Opcjonalna kropka lub łącznik albo spacja
+- cyfra z zakresu od 1 do 9
+- opcjonalna kropka lub łącznik lub spacja
 - cztery cyfry
-- Opcjonalna kropka lub łącznik albo spacja
+- opcjonalna kropka lub łącznik lub spacja
 - cztery cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_belgium_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keywords_belgium_value_added_tax_number.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_belgium_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_belgium_value_added_tax_number.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_belgium_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_belgium_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Belgium Value Added Tax Number -->
@@ -2379,28 +2379,28 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
-- nº tva
+- n° tva
 - numer VAT
-- bez podatku VAT
+- numer vat
 - numéro t.v.a
 - umsatzsteuer-identifikationsnummer
 - umsatzsteuernummer
-- btw
-- btw #
-- vat #
+- Btw
+- Btw #
+- Podatku vat #
 
 
-## <a name="blood-test-terms"></a>Warunki testowania krwi
+## <a name="blood-test-terms"></a>Terminy badania krwi
 
-Ta nieoznaczona nazwana jednostka wykrywa terminy związane z testami krwi, takie jak *hCG*. Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa terminy związane z badaniami krwi, takimi jak *hCG*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
 
-## <a name="brand-medication-names"></a>Nazwy produktów marki
+## <a name="brand-medication-names"></a>Markowe nazwy leków
 
-Ta nieoznaowana nazwana jednostka wykrywa nazwy produktów marki, takich jak *Tyleola*. Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa nazwy leków marki, takich jak *Tylenol*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -2409,38 +2409,38 @@ High (Wysoki)
 
 ## <a name="brazil-cpf-number"></a>Numer CPF w Brazylii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-11 cyfr, które zawierają cyfrę kontrolną i mogą być sformatowane lub niesformatowane
+11 cyfr, które zawierają cyfrę wyboru i mogą być sformatowane lub niesformatowane
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Sformatowane:
+Sformatowany:
 - trzy cyfry
 - okres
 - trzy cyfry
 - okres
 - trzy cyfry
-- Łącznik
-- Dwie cyfry oznaczane cyframi kontrolnymi
+- łącznik
+- dwie cyfry, które są cyframi kontrolnymi
 
-Niesformatowane:
-- 11 cyfr, gdzie ostatnie dwie cyfry to cyfry kontrolne
+Niesformatowany:
+- 11 cyfr, w których ostatnie dwie cyfry są cyframi kontrolnymi
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_brazil_cpf wyszukuje zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_brazil_cpf.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_brazil_cpf znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_brazil_cpf.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_brazil_cpf wyszukuje zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_brazil_cpf znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Brazil CPF Number -->
@@ -2460,9 +2460,9 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
 - CPF
-- Identyfikacja
+- Identyfikacji
 - Rejestracja
-- Przychód
+- Dochodów
 - Cadastro de Pessoas Físicas
 - Imposto
 - Identificação
@@ -2470,40 +2470,40 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - Receita
 
 
-## <a name="brazil-legal-entity-number-cnpj"></a>Numer podmiotu prawnego w Brazylii (CNPJ)
+## <a name="brazil-legal-entity-number-cnpj"></a>Numer brazylijskiej jednostki prawnej (CNPJ)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-14 cyfr, które zawierają numer rejestracji, numer oddziału i sprawdź cyfry oraz ograniczniki
+14 cyfr zawierających numer rejestracji, numer gałęzi i cyfry wyboru oraz ograniczniki
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-14 cyfr i ograniczniki:
+14 cyfr plus ograniczniki:
 
 - dwie cyfry
 - okres
 - trzy cyfry
 - okres
 - trzy cyfry (te pierwsze osiem cyfr to numer rejestracji)
-- ukośnik
-- Czterocyfrowy numer oddziału
-- Łącznik
-- Dwie cyfry oznaczane cyframi kontrolnymi
+- ukośnik do przodu
+- czterocyfrowy numer gałęzi
+- łącznik
+- dwie cyfry, które są cyframi kontrolnymi
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_brazil_cnpj znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_brazil_cnpj.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_brazil_cnpj znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_brazil_cnpj.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_brazil_cnpj znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_brazil_cnpj znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Brazil Legal Entity Number (CNPJ) -->
@@ -2525,10 +2525,10 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - CNPJ
 - CNPJ/MF
 - CNPJ-MF
-- National Registry of Legal Entities
-- Rejestr podatkowe
-- Podmiot prawny
-- Podmioty prawne
+- Krajowy rejestr podmiotów prawnych
+- Rejestr podatników
+- Prawnej
+- Prawnych
 - Stan rejestracji
 - Business
 - Company
@@ -2538,20 +2538,20 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - CGC
 - Pessoa jurídica
 - Pessoas jurídicas
-- Situação cadasø
+- Situação cadastral
 - Inscrição
 - Empresa
 
 
-## <a name="brazil-national-identification-card-rg"></a>Karta identyfikacyjna Brazylii (RG)
+## <a name="brazil-national-identification-card-rg"></a>Brazylijska krajowa karta identyfikacyjna (RG)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Rejestr Dla Wołodzie (stary format): Dziewięć cyfr
+Registro Geral (stary format): Dziewięć cyfr
 
 Registro de Identidade (RIC) (nowy format): 11 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Registro Geral (stary format):
 - dwie cyfry
@@ -2559,24 +2559,24 @@ Registro Geral (stary format):
 - trzy cyfry
 - okres
 - trzy cyfry
-- Łącznik
-- jedna cyfra jako cyfra sprawdzana
+- łącznik
+- jedna cyfra, która jest cyfrą kontrolną
 
 Registro de Identidade (RIC) (nowy format):
 - 10 cyfr
-- Łącznik
-- jedna cyfra jako cyfra sprawdzana
+- łącznik
+- jedna cyfra, która jest cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_brazil_rg znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_brazil_rg znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_brazil_rg znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_brazil_rg.
+- Suma kontrolna przechodzi.
 
 
 ```xml
@@ -2594,42 +2594,42 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 #### <a name="keyword_brazil_rg"></a>Keyword_brazil_rg
 
 - Cédula de identidade
-- karta tożsamości
-- identyfikator narodowy
+- Dowód tożsamości
+- identyfikator krajowy
 - número de rregistro
 - registro de Iidentidade
 - registro geral
-- RG (to słowo kluczowe z rozróżnianą wielkością liter)
-- RIC (to słowo kluczowe zróżnicuje wielkość liter)
+- RG (to słowo kluczowe uwzględnia wielkość liter)
+- RIC (to słowo kluczowe uwzględnia wielkość liter)
 
 
-## <a name="brazil-physical-addresses"></a>Adresy fizyczne w Brazylii
+## <a name="brazil-physical-addresses"></a>Adresy fizyczne Brazylii
 
-Ta nieoznazona nazwana jednostka wykrywa wzorce związane z adresem fizycznym w Brazylii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Brazylii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
-## <a name="bulgaria-drivers-license-number"></a>Numer prawa jazdy w Bułgarii
+## <a name="bulgaria-drivers-license-number"></a>Numer prawa jazdy Bułgarii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr bez spacji i ograniczników
+dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_bulgaria_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_bulgaria_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_bulgaria_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` .
 
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2646,7 +2646,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -2655,49 +2655,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -2705,48 +2705,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -2754,20 +2754,20 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver nie s_license_number
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>s_license_number Keywords_bulgaria_eu_driver
 
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
@@ -2778,28 +2778,28 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ## <a name="bulgaria-passport-number"></a>Numer paszportu Bułgarii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr bez spacji i ograniczników
+dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_bulgaria_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_bulgaria_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_bulgaria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_bulgaria_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_bulgaria_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_bulgaria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` .
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2828,70 +2828,70 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
 
 - номер на паспорта
 - номер на паспорт
-- паспорт Nie
+- паспорт Nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="bulgaria-physical-addresses"></a>Adresy fizyczne w Bułgarii
+## <a name="bulgaria-physical-addresses"></a>Adresy fizyczne Bułgarii
 
-Ta nieoznakowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Bułgarii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Bułgarii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
-## <a name="bulgaria-uniform-civil-number"></a>Bułgaria: ujednolicona liczba domowa
-Tego typu informacji poufnych można używać tylko w:
+## <a name="bulgaria-uniform-civil-number"></a>Jednolity numer cywilny Bułgarii
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
-
-10 cyfr bez spacji i ograniczników
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 10 cyfr bez spacji i ograniczników
 
-- Sześć cyfr odpowiadających dacie urodzenia (RRMMDD)
-- Dwie cyfry odpowiadające zamówieniu urodzenia
-- Jedna cyfra odpowiadająca płci: parzysta cyfra dla mężczyzny i cyfra nieparzysta dla kobiety
+### <a name="pattern"></a>Wzór
+
+10 cyfr bez spacji i ograniczników
+
+- sześć cyfr odpowiadających dacie urodzenia (RRMMDD)
+- dwie cyfry odpowiadające kolejności urodzeń
+- jedna cyfra odpowiadająca płci: cyfra parzysta dla mężczyzn i cyfra nieparzysta dla kobiety
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_bulgaria_eu_national_id_card` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_bulgaria_eu_national_id_card` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_bulgaria_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_bulgaria_eu_national_id_card`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_bulgaria_eu_national_id_card` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_bulgaria_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
@@ -2914,33 +2914,33 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
-- bnn #
-- bnn
+- Bnn #
+- Bnn
 - bucn #
 - bucn
 - edinen grazhdanski nomer
-- egn #
-- egn
+- np. #
+- np.
 - numer identyfikacyjny
-- identyfikator narodowy
+- identyfikator krajowy
 - numer krajowy
-- numer_narodowy #
-- numer_narodowy
-- identyfikator osobisty
+- nationalnumber #
+- nationalnumber
+- osobisty identyfikator
 - nie osobiste
 - numer osobisty
-- numer_osobisty #
-- numer PEZEt
-- ssn #
-- ssn
-- Jednolity identyfikator cywilny
-- nie
-- ujednoliwizowany numer domowy
+- personalidnumber #
+- numer ubezpieczenia społecznego
+- Ssn #
+- Ssn
+- jednolity identyfikator cywilny
+- jednolity numer cywilny
+- jednolity numer cywilny
 - uniformcivilno #
 - uniformcivilno
 - uniformcivilnumber #
 - uniformcivilnumber
-- unikatowy numer unikatowy dla unikatowego numeru
+- unikatowy numer obywatelstwa
 - егн #
 - егн
 - единен граждански номер
@@ -2951,44 +2951,44 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - национален номер
 - номер на гражданството
 - униформ id
-- униформ градански id
+- униформ граждански id
 - униформ граждански не
 - униформ граждански номер
-- униформграданскиid #
+- униформгражданскиid #
 - униформгражданскине. #
 
 
 ## <a name="canada-bank-account-number"></a>Numer konta bankowego w Kanadzie
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 7 lub 12 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Numer konta bankowego w Kanadzie to 7 lub 12 cyfr.
 
-Numer przesyłania konta bankowego w Kanadzie to:
+Numer tranzytu konta bankowego w Kanadzie to:
 - pięć cyfr
-- Łącznik
-- trzycyfrowe LUB
-- zero "0"
+- łącznik
+- trzy cyfry OR
+- a zero "0"
 - osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_canada_bank_account_number zawartości, która jest taka, jak wzorzec.
-- Słowo kluczowe z Keyword_canada_bank_account_number znajduje się.
-- Wyrażenie regularne Regex_canada_bank_account_transit_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_canada_bank_account_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_canada_bank_account_number.
+- Wyrażenie regularne Regex_canada_bank_account_transit_number znajduje zawartość zgodną ze wzorcem.
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_canada_bank_account_number zawartości, która jest taka, jak wzorzec.
-- Słowo kluczowe z Keyword_canada_bank_account_number znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_canada_bank_account_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_canada_bank_account_number.
 
 ```xml
 <!-- Canada Bank Account Number -->
@@ -3009,59 +3009,59 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_canada_bank_account_number"></a>Keyword_canada_bank_account_number
 
-- Kanada oszczędza
-- Kanada agencja przychodów
-- Kanada instytucja finansowa
-- formularz bezpośredniej wpłaty
-- Kanada
+- kanada obligacji oszczędnościowych
+- kanada revenue agency
+- kanadyjska instytucja finansowa
+- formularz depozytu bezpośredniego
+- obywatel Kanady
 - przedstawiciel prawny
-- notaria publiczna
-- sz. dla oaths
-- świadczenia na opiekę dzieci
-- uniwersalna pielęgnacja dziecka
-- Kanada z podatkiem od dzieci
-- korzyść z podatku od przychodów
-- ujednolicony podatek od sprzedaży
+- Notariusza
+- komisarz do składania przysięgi
+- zasiłek na opiekę nad dziećmi
+- uniwersalna opieka nad dziećmi
+- kanada zasiłek podatkowy na dziecko
+- korzyść z podatku dochodowego
+- zharmonizowany podatek od sprzedaży
 - numer ubezpieczenia społecznego
-- zwrot podatku dochodu
-- korzyść podatkowa dla dzieci
-- 2013-0
+- zwrot podatku dochodowego
+- zasiłek podatkowy na dziecko
+- płatności terytorialne
 - numer instytucji
-- żądanie wpłaty
+- wniosek o depozyt
 - informacje bankowe
-- bezpośrednia wpłaty
+- depozyt bezpośredni
 
 
-## <a name="canada-drivers-license-number"></a>Numer prawa jazdy z Kanady
+## <a name="canada-drivers-license-number"></a>Numer prawa jazdy w Kanadzie
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 Różni się w zależności od prowincji
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Różne wzorce obejmujące:
+Różne wzory obejmujące:
 - Alberta
 - Kolumbia Brytyjska
 - Manitoba
 - Nowy Brunszwik
 - Nowa Fundlandia/Labrador
-- Nowa Szkocja
+- Szkocji
 - Ontario
 - Wyspa Księcia Edwarda
 - Quebec
 - Saskatchewan
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_[province_name]_drivers_license_number znajdzie zawartość, która jest taka, jak wzorzec.
-- Słowo kluczowe z Keyword_[province_name]_drivers_license_name zostanie znalezione.
-- Zostanie znalezione słowo kluczowe Keyword_canada_drivers_license.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_[province_name]_drivers_license_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_[province_name]_drivers_license_name.
+- Znaleziono słowo kluczowe z Keyword_canada_drivers_license.
 
 ```xml
 <!-- Canada Driver's License Number -->
@@ -3138,65 +3138,65 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - DriverLicenses
 - DriverLicence
 - DriverLicences
-- Lic sterownika
-- Kursywa sterownika
+- Sterownik Lic
+- Sterownik Lics
 - Prawo jazdy
-- Licencje na sterownik
-- Licencja sterownika
-- Licencje sterowników
-- DriversLic
-- DriversLics
-- DriversLicence
+- Prawa jazdy
+- Prawo jazdy
+- Prawa jazdy
+- Sterowniki
+- SterownikiLics
+- SterownikiLicence
 - DriversLicences
 - DriversLicense
 - DriversLicenses
 - Sterowniki Lic
-- Kursywa sterowników
-- Licencja na sterowniki
-- Licencje na sterowniki
-- Licencja sterowników
-- Licencje sterowników
+- Sterowniki Lics
+- Licencja kierowcy
+- Licencje kierowców
+- Prawo jazdy
+- Prawa jazdy
 - Driver'Lic
-- Kursywę sterownika
+- Driver'Lics
 - Prawo jazdy
 - Prawa jazdy
 - Prawo jazdy
-- Licencje sterownika
-- Lic sterownika
-- Kursywę sterownika
-- Prawo jazdy
-- Prawa jazdy
-- Prawo jazdy
-- Licencje sterownika
-- Lica sterownika
-- Kursywę sterownika
-- Prawo jazdy
-- Prawa jazdy
-- Wiewiązność sterownika
 - Prawa jazdy
 - Lic sterownika
-- Kursywę sterownika
+- Lics kierowcy
 - Prawo jazdy
 - Prawa jazdy
 - Prawo jazdy
-- Licencje jazdy
+- Prawa jazdy
+- Driver'sLic
+- Kursywę sterownika
+- Driver'sLicense
+- Driver'sLicenses
+- Driver'sLicence
+- Kursywą kierowcy
+- Lic kierowcy
+- Lics kierowcy
+- Prawo jazdy
+- Prawa jazdy
+- Prawo jazdy
+- Prawa jazdy
 - Permis de Conduire
-- identyfikator
-- identyfikatory
-- numer identyfikacyjny
-- numery identyfikatorów
+- Identyfikator
+- Identyfikatory
+- numer karty idcard
+- Numery kart idcard
 - idcard #
-- identyfikator #s
-- karta identyfikatora
-- karty identyfikatorów
+- #s idcard
+- karta idcard
+- karty idcard
 - idcard
 - numer identyfikacyjny
 - numery identyfikacyjne
-- identyfikacja #
-- identyfikator #s
-- dowód osobisty
+- Identyfikacji #
+- #s identyfikacji
+- karta identyfikacyjna
 - karty identyfikacyjne
-- identyfikacja
+- Identyfikacji
 - DL #
 - DLS #
 - CDL #
@@ -3207,78 +3207,78 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - DriverLicenses #
 - DriverLicence #
 - DriverLicences #
-- Lic sterownika #
-- Kursywa sterownika #
+- Sterownik Lic #
+- Sterownik Lics #
 - Prawo jazdy #
-- Licencje na sterownik #
+- Prawa jazdy #
 - Prawo jazdy #
-- Licencje sterowników #
-- DriversLic #
-- DriversLics #
+- Prawa jazdy #
+- Sterowniki #
+- SterownikiLics #
 - DriversLicense #
 - DriversLicenses #
-- DriversLicence #
+- SterownikiLicence #
 - DriversLicences #
 - Sterowniki Lic #
-- Kursywa sterowników #
-- Licencja na sterowniki #
-- Licencje na sterowniki #
-- Licencja sterowników #
-- Licencje sterowników #
+- Sterowniki Lics #
+- Licencja kierowcy #
+- Licencje kierowców #
+- Prawo jazdy #
+- Prawa jazdy #
 - Driver'Lic #
-- Kursywę sterownika #
+- Driver'Lics #
 - Prawo jazdy #
 - Prawa jazdy #
 - Prawo jazdy #
-- Licencje sterownika #
-- Lic sterownika #
-- Kursywę sterownika #
-- Prawo jazdy #
-- Prawa jazdy #
-- Prawo jazdy #
-- Licencje sterownika #
-- Lica sterownika #
-- Kursywę sterownika #
-- Prawo jazdy #
-- Prawa jazdy #
-- Wiewiązność sterownika #
 - Prawa jazdy #
 - Lic sterownika #
-- Kursywę sterownika #
+- Lics kierowcy #
 - Prawo jazdy #
 - Prawa jazdy #
 - Prawo jazdy #
-- Licencje jazdy #
+- Prawa jazdy #
+- Driver'sLic #
+- Kursywę sterownika #
+- Driver'sLicense #
+- Driver'sLicenses #
+- Driver'sLicence #
+- Kursywą kierowcy #
+- Lic kierowcy #
+- Lics kierowcy #
+- Prawo jazdy #
+- Prawa jazdy #
+- Prawo jazdy #
+- Prawa jazdy #
 - Permis de Conduire #
-- identyfikator #
-- identyfikatory #
-- karta identyfikatora #
-- karty identyfikatorów #
+- Identyfikator #
+- Identyfikatory #
+- karta idcard #
+- karty idcard #
 - idcard #
-- dowód osobisty #
+- karta identyfikacyjna #
 - karty identyfikacyjne #
-- identyfikacja #
+- Identyfikacji #
 
 
-## <a name="canada-health-service-number"></a>Numer usługi zdrowia w Kanadzie
+## <a name="canada-health-service-number"></a>Numer usługi kondycji Kanady
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
  10 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_canada_health_service_number umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Słowo kluczowe z Keyword_canada_health_service_number znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_canada_health_service_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_canada_health_service_number.
 
 ```xml
 <!-- Canada Health Service Number -->
@@ -3296,36 +3296,36 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_canada_health_service_number"></a>Keyword_canada_health_service_number
 
-- numer zdrowia osobistego
-- dane pacjenta
-- usługi zdrowia
-- usługi specjalne
-- wypadku samochodowy
-- szpitalny
-- taksówna
-- Wynagrodzenia pracowników
-- niepełnosprawność
+- osobisty numer służby zdrowia
+- informacje o pacjencie
+- usługi zdrowotne
+- usługi specjalistyczne
+- wypadek samochodowy
+- szpital pacjentów
+- Psychiatra
+- odszkodowania dla pracowników
+- Niepełnosprawności
 
 
-## <a name="canada-passport-number"></a>Numer paszportu Kanady
+## <a name="canada-passport-number"></a>Numer paszportu Kanada
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie wielkie litery i sześć cyfr
+dwie wielkie litery, po których następuje sześć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dwie wielkie litery i sześć cyfr
+dwie wielkie litery, po których następuje sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_canada_passport_number umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_canada_passport_number Keyword_passport.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_canada_passport_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_canada_passport_number lub Keyword_passport.
 
 ```xml
 <!-- Canada Passport Number -->
@@ -3344,56 +3344,56 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_canada_passport_number"></a>Keyword_canada_passport_number
 
-- Kanada
-- paszport Kanady
-- aplikacja paszportu
-- zdjęcia paszportu
+- obywatelstwo kanadyjskie
+- paszport kanadyjski
+- aplikacja paszportowa
+- zdjęcia paszportowe
 - certyfikowany tłumacz
-- Kanadyjscy mieszkańcy
+- obywatele kanadyjscy
 - czas przetwarzania
 - aplikacja do odnawiania
 
 #### <a name="keyword_passport"></a>Keyword_passport
 
 - Numer paszportu
-- Numer paszportu
+- Nr paszportu
 - Paszport #
 - Paszport #
 - PassportID
-- Paszport
-- numer paszportu
+- Passportno
+- passportnumber
 - パスポート
 - パスポート番号
 - パスポートのNum
 - パスポート＃
 - Numéro de passeport
 - Passeport n °
-- Passeport Non
+- Passeport — inne niż
 - Passeport #
 - Passeport #
 - PasseportNon
 - Passeportn °
 
 
-## <a name="canada-personal-health-identification-number-phin"></a>Numer identyfikacyjny zdrowia osobistego w Kanadzie (PHIN)
+## <a name="canada-personal-health-identification-number-phin"></a>Kanada osobisty numer identyfikacyjny zdrowia (PHIN)
 
-### <a name="format"></a>Formatowanie
-
-dziewięć cyfr
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="pattern"></a>Wzór
+
+dziewięć cyfr
+
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_canada_phin umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Znaleziono co najmniej dwa słowa kluczowe Keyword_canada_phin lub Keyword_canada_provinces słowa kluczowe.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_canada_phin znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono co najmniej dwa słowa kluczowe z Keyword_canada_phin lub Keyword_canada_provinces.
 
 ```xml
 <!-- Canada PHIN -->
@@ -3413,42 +3413,42 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_canada_phin"></a>Keyword_canada_phin
 
 - numer ubezpieczenia społecznego
-- działania na temat informacji o stanie zdrowia
-- Informacje o podatku od przychodów
-- kondycja manitoba
-- rejestracja zdrowia
-- zakupy rezydne
-- prawo do korzyści
-- kondycja osobista
+- akt dotyczący informacji o zdrowiu
+- informacje o podatku dochodowym
+- zdrowie manitoba
+- rejestracja kondycji
+- zakupy na receptę
+- uprawnienia do świadczeń
+- zdrowie osobiste
 - pełnomocnictwo
 - numer rejestracji
-- numer zdrowia osobistego
-- polecane polecenia
-- fitness professional
-- polecenie pacjenta
-- kondycja i zdrowie
+- osobisty numer służby zdrowia
+- skierowanie lekarza
+- specjalista ds. odnowy biologiczn
+- skierowanie pacjenta
+- zdrowie i dobre samopoczucie
 
 #### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
 - Quebec
-- Terytoria Północno-Zachodnie
+- Terytoria północno-zachodnie
 - Ontario
 - Kolumbia Brytyjska
 - Alberta
 - Saskatchewan
 - Manitoba
-- Jukon
+- Yukon
 - Nowa Fundlandia i Labrador
 - Nowy Brunszwik
-- Nowa Szkocja
+- Szkocji
 - Wyspa Księcia Edwarda
 - Kanada
 
 
 ## <a name="canada-physical-addresses"></a>Adresy fizyczne w Kanadzie
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Kanady. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Kanady. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -3457,39 +3457,39 @@ Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z
 
 ## <a name="canada-social-insurance-number"></a>Kanada numer ubezpieczenia społecznego
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr z opcjonalnymi łącznikami lub spacjami
+dziewięć cyfr z opcjonalnymi łącznikami lub spacjami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Sformatowane:
+Sformatowany:
 - trzy cyfry
-- Łącznik lub spacja
+- łącznik lub spacja
 - trzy cyfry
-- Łącznik lub spacja
+- łącznik lub spacja
 - trzy cyfry
 
-Niesformatowany: dziewięć cyfr
+Niesformatowane: dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_canadian_sin znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_canadian_sin znajduje zawartość zgodną ze wzorcem.
 - Co najmniej dwa z następujących wzorców:
-    - Słowo kluczowe z Keyword_sin znajduje się.
-    - Zostanie znalezione słowo kluczowe Keyword_sin_collaborative.
-    - Funkcja Func_eu_date znajdzie datę w odpowiednim formacie daty.
-- Pomyślnie przejdzie sprawdzanie.
+    - Znaleziono słowo kluczowe z Keyword_sin.
+    - Znaleziono słowo kluczowe z Keyword_sin_collaborative.
+    - Funkcja Func_eu_date znajduje datę w odpowiednim formacie daty.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_unformatted_canadian_sin znajdzie zawartość, która odpowiada wzorcowi.
-- Słowo kluczowe z Keyword_sin znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_unformatted_canadian_sin znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_sin.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Canada Social Insurance Number -->
@@ -3513,63 +3513,63 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_sin"></a>Keyword_sin
 
-- sin
-- ubezpieczenia społecznego
+- Grzechu
+- ubezpieczenie społeczne
 - numero d'assurance sociale
-- sins
-- ssn
+- Grzechy
+- Ssn
 - ssns
-- ubezpieczenia społecznego
+- zabezpieczenia społeczne
 - numero d'assurance social
-- numer identyfikacyjny kraju
-- identyfikator narodowy
-- sin #
+- krajowy numer identyfikacyjny
+- identyfikator krajowy
+- Grzechu #
 - soc ins
-- ins społecznościowych
+- social ins
 
 #### <a name="keyword_sin_collaborative"></a>Keyword_sin_collaborative
 
 - prawo jazdy
-- licencja sterowników
 - prawo jazdy
-- licencja sterowników
+- prawo jazdy
+- prawo jazdy
 - DOB
-- DataUrodze
+- Dataurodzenia
 - Urodziny
 - Data urodzenia
 
 
-## <a name="chile-identity-card-number"></a>Numer karty tożsamości chile
+## <a name="chile-identity-card-number"></a>Numer karty tożsamości Chile
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Od siedmiu do ośmiu cyfr oraz ograniczniki sprawdź cyfrę lub literę
+od siedmiu do ośmiu cyfr oraz ograniczniki cyfry lub litery kontrolnej
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Od siedmiu do ośmiu cyfr oraz ograniczniki:
+od siedmiu do ośmiu cyfr oraz ograniczników:
 - od jednej do dwóch cyfr
-- okres opcjonalny
+- opcjonalny okres
 - trzy cyfry
-- okres opcjonalny
+- opcjonalny okres
 - trzy cyfry
 - kreska
-- jedna cyfra lub litera (bez wielkości liter), która jest cyfrą kontrolną
+- jedna cyfra lub litera (bez uwzględniania wielkości liter), która jest cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_chile_id_card znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_chile_id_card.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_chile_id_card znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_chile_id_card.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_chile_id_card znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_chile_id_card znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Chile Identity Card Number -->
@@ -3590,70 +3590,70 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 - cédula de identidad
 - identificación
-- identyfikacja państwowa
-- numer identyfikacyjny kraju
-- identyfikator narodowy
+- identyfikacja krajowa
+- krajowy numer identyfikacyjny
+- identyfikator krajowy
 - número de identificación nacional
 - rol único nacional
-- rol único tributtributtribut
-- URUCHOM
-- RUT
+- rol único tributario
+- URUCHOMIĆ
+- KOLEINY
 - tarjeta de identificación
 - Rol Unico Nacional
-- Rol Unico Tributtributtribut
-- URUCHOM #
-- RUT #
+- Rol Unico Tributario
+- URUCHOMIĆ #
+- KOLEINY #
 - nationaluniqueroleID #
 - nacional identidad
 - número identificación
 - identidad número
 - numero identificacion
 - identidad numero
-- Chilean identity no.
-- Numer tożsamości Chilean
-- Tożsamość chilejska #
+- Chilijska tożsamość nie.
+- Chilijski numer tożsamości
+- Tożsamość chilijska #
 - Unikatowy rejestr podatkowy
-- Rola unikatowych przypisów
-- Unikatowa rola podatku
-- Unikatowy numer tributary
+- Unikatowa rola dopływowa
+- Unikatowa rola podatkowa
+- Unikatowy numer dopływowy
 - Unikatowy numer krajowy
-- Unikatowa rola państwowa
-- Unikatowa rola kraju
-- Nie tożsamości Chile.
-- Numer tożsamości chile
+- Unikatowa rola krajowa
+- Unikatowa rola krajowa
+- Chile tożsamość nie.
+- Numer tożsamości Chile
 - Tożsamość Chile #
 - R.U.T
 - R.U.N
 
 
-## <a name="china-resident-identity-card-prc-number"></a>Numer karty tożsamości w Chinach (Chiny)
+## <a name="china-resident-identity-card-prc-number"></a>Numer karty tożsamości rezydenta Chin (ChRL)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 18 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 18 cyfr:
-- Sześć cyfr jako kod adresu
-- osiem cyfr w postaci RRRRMMDD, czyli data urodzenia
-- Trzy cyfry oznaczace kod zamówienia
-- jedna cyfra jako cyfra sprawdzana
+- sześć cyfr, które są kodem adresu
+- osiem cyfr w postaci RRRRMMDD, które są datą urodzenia
+- trzy cyfry, które są kodem zamówienia
+- jedna cyfra, która jest cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_china_resident_id znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_china_resident_id znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_china_resident_id znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_china_resident_id.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_china_resident_id znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_china_resident_id znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- China Resident Identity Card (PRC) Number -->
@@ -3672,9 +3672,9 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
-- Rezydentna karta tożsamości
-- ChRL
-- Państwowa karta identyfikacyjna
+- Identyfikator rezydenta
+- CHRL
+- Krajowa karta identyfikacyjna
 - 身份证
 - 居民 身份证
 - 居民身份证
@@ -3686,31 +3686,31 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ## <a name="credit-card-number"></a>Numer karty kredytowej
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Od 14 do 19 cyfr, które mogą być sformatowane lub niesformatowane (dddddddd), które muszą przejść test Luhna.
+Od 14 do 19 cyfr, które mogą być sformatowane lub niesformatowane (dddddddd) i które muszą przejść test Luhna.
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Wykrywa karty od wszystkich głównych marek na całym świecie, w tym Visa, MasterCard, Discover Card, JCB, American Express, bony upominkowe, karty firmy Diner, Rupay i China UnionPay.
+Wykrywa karty ze wszystkich głównych marek na całym świecie, w tym Visa, MasterCard, Discover Card, JCB, American Express, karty upominkowe, karty diner, Rupay i China UnionPay.
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak, sprawdzanie luhna
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_credit_card umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Prawdziwe jest jedno z następujących argumentów:
-    - Słowo kluczowe z Keyword_cc_verification znajduje się.
-    - Zostanie znalezione słowo kluczowe Keyword_cc_name.
-    - Funkcja Func_expiration_date znajdzie datę w odpowiednim formacie daty.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_credit_card znajduje zawartość zgodną ze wzorcem.
+- Jedno z następujących elementów jest prawdziwe:
+    - Znaleziono słowo kluczowe z Keyword_cc_verification.
+    - Znaleziono słowo kluczowe z Keyword_cc_name.
+    - Funkcja Func_expiration_date znajduje datę w odpowiednim formacie daty.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_credit_card umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_credit_card znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Credit Card Number -->
@@ -3735,16 +3735,16 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 - weryfikacja karty
 - numer identyfikacyjny karty
-- cvn
-- cid
+- Cvn
+- Cid
 - cvc2
 - cvv2
-- blok przypinania
+- blok pinezki
 - kod zabezpieczeń
 - numer zabezpieczeń
-- brak zabezpieczeń
+- nie zabezpieczeń
 - numer problemu
-- nr problemu
+- problem nie
 - cryptogramme
 - numéro de sécurité
 - numero de securite
@@ -3757,20 +3757,20 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- cod. sicurezza
-- cod sicurezza
+- Dorsza. sicurezza
+- dojrzew sicurezza
 - n autorizzazione
 - código
 - codigo
-- cod. seg
+- Dorsza. Seg
 - cod seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
 - cód. segurança
-- cod. seguranca
-- cod. segurança
+- Dorsza. seguranca
+- Dorsza. segurança
 - cód. seguranca
 - cód segurança
 - cod seguranca
@@ -3790,14 +3790,14 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - vencimiento
 - válido hasta
 - valido hasta
-- vto
+- Vto
 - data de expiração
 - data de expiracao
 - data em que expira
 - validade
-- valor
+- Valor
 - vencimento
-- transakcja
+- Transakcji
 - numer transakcji
 - numer referencyjny
 - セキュリティコード
@@ -3808,103 +3808,103 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
-- amex
-- American Express
+- Amex
+- american express
 - americanexpress
-- americano nin
+- americano espresso
 - Visa
-- karta wzorcowa
-- karta wzorcowa
-- mc
-- karty wzorcowe
-- karty wzorcowe
-- Diner's Club
-- Diners Club
-- diners z
-- odnajdowanie
-- karta odnajdowanie
+- Mastercard
+- karta główna
+- Mc
+- Mastercard
+- karty główne
+- diner's Club
+- diners club
+- dinersclub
+- Odkryj
+- odnajdywanie karty
 - discovercard
-- odnajdowanie kart
+- odnajdywanie kart
 - JCB
-- Brand Smart
-- biuro karty dla języka japońskiego
+- BrandSmart
+- japońskie biuro kart
 - carte blanche
 - carteblanche
 - karta kredytowa
-- DW #
-- dw#:
+- Cc #
+- cc#:
 - data wygaśnięcia
-- data exp
+- exp, data
 - data wygaśnięcia
 - data wygaśnięcia
-- date d'exp
+- data d'exp
 - data wygaśnięcia
 - karta bankowa
-- bankcard
+- Karta bankowa
 - numer karty
 - numer karty
 - numer karty
-- liczba_kart
+- cardnumbers
 - numery kart
 - karta kredytowa
 - karty kredytowe
 - karty kredytowe
-- ccn
+- Ccn
 - posiadacz karty
-- cardholder
-- właściciele kart
-- cardholders
-- karta wyboru
-- karta kontrolna
+- Karty
+- posiadacze kart
+- Posiadaczy kart
+- sprawdzanie karty
+- checkcard
+- sprawdzanie kart
 - karty wyboru
-- karty wyboru
-- karta debetowa
-- karta debetowa
-- karty debetowe
+- Debetową
+- Debitcard
+- Debetowe
 - karty debetowe
 - karta atm
 - atmcard
 - karty atm
-- kartki atmcard
-- enroute
-- en route
+- atmcards
+- Enroute
+- Drodze
 - typ karty
 - Cardmember Acct
-- konto karty
+- konto cardmember
 - Cardno
 - Karta firmowa
-- Wizytówki firmowe
+- Karty firmowe
 - Typ karty
 - numer konta karty
 - konto członka karty
 - Cardmember Acct.
-- nie.
-- karta nie
+- numer karty.
+- brak karty
 - numer karty
 - carte bancaire
 - carte de crédit
 - carte de credit
 - numéro de carte
 - numero de carte
-- nº de la carte
-- nº de carte
+- n° de la carte
+- n° de carte
 - kreditkarte
 - karte
 - karteninhaber
-- kartenin wiadce
+- karteninhabers
 - kreditkarteninhaber
 - kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
 - kartennr
-- kartennummer
+- kartennumer
 - kreditkartennummer
 - kreditkarten-nummer
 - carta di credito
-- Carta credito
-- n. carta
+- carta credito
+- N. Carta
 - n carta
-- nr. carta
+- nr. Carta
 - nr carta
 - numero carta
 - numero della carta
@@ -3919,13 +3919,13 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - tarjeta de debito
 - tarjeta débito
 - tarjeta de débito
-- nº de tarjeta
-- nie. de tarjeta
+- n° de tarjeta
+- Nr. de tarjeta
 - no de tarjeta
 - numero de tarjeta
 - número de tarjeta
 - tarjeta no
-- tarjetajetiente
+- tarjetahabiente
 - cartão de crédito
 - cartão de credito
 - cartao de crédito
@@ -3944,18 +3944,18 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - numero de cartão
 - número de cartao
 - numero de cartao
-- nº do cartão
-- nº do cartao
-- nº. do cartão
+- nÏ do cartão
+- n° do cartao
+- Nº. do cartão
 - no do cartão
 - no do cartao
-- nie. do cartão
-- nie. do cartao
+- Nr. do cartão
+- Nr. do cartao
 - rupay
-- płatność union
-- unionpay
-- Diner's
-- diners
+- wynagrodzenie związkowe
+- Unionpay
+- diner's
+- Diner amerykański
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3989,26 +3989,26 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - 银联
 
 
-## <a name="croatia-drivers-license-number"></a>Numer prawa jazdy w Chorwacja
+## <a name="croatia-drivers-license-number"></a>Numer prawa jazdy Chorwacji
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 osiem cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie regularne umożliwia  `Regex_croatia_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z `Keywords_eu_driver's_license_number` lub `Keywords_croatia_eu_driver's_license_number` znajduje się.
+- Wyrażenie  `Regex_croatia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_croatia_eu_driver's_license_number` .
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -4025,7 +4025,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -4034,49 +4034,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -4084,48 +4084,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -4133,46 +4133,46 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver nie s_license_number
+#### <a name="keywords_croatia_eu_drivers_license_number"></a>s_license_number Keywords_croatia_eu_driver
 
 - vozačka dozvola
 - vozačke dozvole
 
 
-## <a name="croatia-identity-card-number"></a>Numer karty tożsamości Chorwacja
-Ta jednostka jest uwzględniana w informacjach poufnych numeru identyfikacyjnego UE. Jest dostępna jako autonomiczna jednostka typu informacji poufnych.
+## <a name="croatia-identity-card-number"></a>Numer karty tożsamości Chorwacji
+Jednostka ta znajduje się w typie informacji poufnych o krajowym numerze identyfikacyjnym UE. Jest ona dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 dziewięć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dziewięć kolejnych cyfr
+dziewięć kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_croatia_id_card znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_croatia_id_card.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_croatia_id_card znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_croatia_id_card.
 
 ```xml
 <!--Croatia Identity Card Number-->
@@ -4188,60 +4188,60 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- majstolski broj gra naana
-- master master master number
+- majstorski broj građana
+- główny numer obywatela
 - nacionalni identifikacijski broj
-- numer identyfikacyjny kraju
+- krajowy numer identyfikacyjny
 - oib #
 - oib
 - osobna iskaznica
-- osobni id
+- identyfikator osobni
 - osobni identifikacijski broj
-- numer identyfikacyjny
+- osobisty numer identyfikacyjny
 - porezni broj
 - porezni identifikacijski broj
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="croatia-passport-number"></a>Numer paszportu Chorwacja
+## <a name="croatia-passport-number"></a>Numer paszportu Chorwacji
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr bez spacji i ograniczników
+dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_croatia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_croatia_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_croatia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_croatia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_croatia_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_croatia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` .
 
 ```xml
       <!-- Croatia Passport Number -->
@@ -4270,49 +4270,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
-- broj putovova
-- br. Putovova
-- br putov jen
+- broj putovnice
+- Br. Putovnice
+- br putovnice
 
-## <a name="croatia-personal-identification-oib-number"></a>Numer identyfikacyjny OIB (Chorwacja)
+## <a name="croatia-personal-identification-oib-number"></a>Numer identyfikacyjny Chorwacji (OIB)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 cyfr:
 - 10 cyfr
-- ostatnia cyfra to cyfra wyboru
+- cyfra końcowa jest cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_croatia_oib_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keywords_croatia_eu_tax_file_number.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_croatia_oib_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_croatia_eu_tax_file_number.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_croatia_oib_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_croatia_oib_number znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
       <!-- Croatia Personal Identification (OIB) Number -->
@@ -4331,64 +4331,64 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- majstolski broj gra naana
-- master master master number
+- majstorski broj građana
+- główny numer obywatela
 - nacionalni identifikacijski broj
-- numer identyfikacyjny kraju
+- krajowy numer identyfikacyjny
 - oib #
 - oib
 - osobna iskaznica
-- osobni id
+- identyfikator osobni
 - osobni identifikacijski broj
-- numer identyfikacyjny
+- osobisty numer identyfikacyjny
 - porezni broj
 - porezni identifikacijski broj
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="croatia-physical-addresses"></a>Chorwacja fizyczne adresy
+## <a name="croatia-physical-addresses"></a>Adresy fizyczne Chorwacji
 
-Ta nieoznazona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Chorwacja. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Chorwacji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="cyprus-drivers-license-number"></a>Numer licencji cypryjscy
+## <a name="cyprus-drivers-license-number"></a>Numer licencji kierowcy cypryjskiego
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 12 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 12 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_cyprus_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_cyprus_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_cyprus_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` .
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4405,7 +4405,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -4414,49 +4414,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -4464,48 +4464,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -4513,52 +4513,52 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
-#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver nie s_license_number
+#### <a name="keywords_cyprus_eu_drivers_license_number"></a>s_license_number Keywords_cyprus_eu_driver
 
 - άδεια οδήγησης
 - αριθμό άδειας οδήγησης
 - άδειες οδήγησης
 
 
-## <a name="cyprus-identity-card"></a>Karta tożsamości cypryjna
+## <a name="cyprus-identity-card"></a>Cypryjski dowód tożsamości
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_cyprus_eu_national_id_card` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_cyprus_eu_national_id_card` kluczowe od.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_cyprus_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_cyprus_eu_national_id_card`
 
 ```xml
       <!-- Cyprus Identity Card -->
@@ -4574,38 +4574,38 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
-- numer dowodu osobistego
+- numer karty identyfikatora
 - numer karty tożsamości
 - kimlik karti
-- numer identyfikacyjny kraju
-- identyfikator osobisty
+- krajowy numer identyfikacyjny
+- osobisty numer identyfikatora
 - ταυτοτητασ
 
 
-## <a name="cyprus-passport-number"></a>Numer paszportu Cypru
+## <a name="cyprus-passport-number"></a>Numer paszportu cypryjskiego
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Jedna litera, po której następuje 6-8 cyfr bez spacji i ograniczników
+jedna litera, po której następuje od 6 do 8 cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Jedna litera, po której następuje od sześciu do ośmiu cyfr
+jedna litera, po której następuje od sześciu do ośmiu cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_cyprus_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_cyprus_eu_passport_number` znajduje się.
-- Wyrażenie regularne umożliwia `Regex_cyprus_eu_passport_date` znalezienie daty w formacie DD/MM/YYYY lub znalezione słowo `Keywords_cyprus_eu_passport_date` kluczowe
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_cyprus_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` .
+- Wyrażenie `Regex_cyprus_eu_passport_date` regularne znajduje datę w formacie DD/MM/RRRR lub znaleziono słowo kluczowe z `Keywords_cyprus_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_cyprus_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_cyprus_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_cyprus_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` .
 
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4635,77 +4635,77 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_cyprus_eu_passport_number"></a>Keywords_cyprus_eu_passport_number
 
 - αριθμό διαβατηρίου
-- taksówek
+- pasaportu
 - Αριθμός Διαβατηρίου
 - κυπριακό διαβατήριο
 - διαβατήριο #
 - διαβατήριο
 - αριθμός διαβατηρίου
-- Nawiązać Kimli nai
-- edytacja numarası
-- Aby tego nie było, należy go do tej pory nie skoj
+- Pasaport Kimliği
+- pasaport numarası
+- Pasaport nie.
 - Αρ. Διαβατηρίου
 
 #### <a name="keywords_cyprus_eu_passport_date"></a>Keywords_cyprus_eu_passport_date
 
-- wygasa w dniu
-- wystawiony dnia
+- wygaśnie
+- wydane w dniu
 
 
-## <a name="cyprus-physical-addresses"></a>Adresy fizyczne cypru
+## <a name="cyprus-physical-addresses"></a>Adresy fizyczne cypryjskie
 
-Ta nieoznazona nazwana jednostka wykrywa wzorce związane z adresem fizycznym Cypru. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Cypru. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
-## <a name="cyprus-tax-identification-number"></a>Numer identyfikacji podatkowej cypru
-Tego typu informacji poufnych można używać tylko w:
+## <a name="cyprus-tax-identification-number"></a>Numer identyfikacyjny podatku cypryjskiego
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Osiem cyfr i jedna litera we wskazanym wzorcu
+osiem cyfr i jedna litera w określonym wzorcu
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 osiem cyfr i jedna litera:
 
 - a "0" lub "9"
-- Siedem cyfr
-- jedna litera (bez wielkości liter)
+- siedem cyfr
+- jedna litera (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_cyprus_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_cyprus_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_cyprus_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_cyprus_eu_tax_file_number`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_cyprus_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_cyprus_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -4724,25 +4724,25 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
-- identyfikator podatku
+- identyfikator podatkowy
 - kod identyfikacji podatkowej
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- tic #
-- tic
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- Tic #
+- Tic
+- identyfikator cyny
+- nie cyny
+- Tin #
 - vergi kimlik kodu
 - vergi kimlik numarası
 - αριθμός φορολογικού μητρώου
@@ -4751,30 +4751,30 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - φορολογικού κωδικού
 
 
-## <a name="czech-drivers-license-number"></a>Numer prawa jazdy w języku czeskim
+## <a name="czech-drivers-license-number"></a>Czeski numer prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery i sześć cyfr
+dwie litery, po których następuje sześć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 osiem liter i cyfr:
 
-- Litera "E" (bez wielkości liter)
-- Litera
-- spacja (opcjonalnie)
-- Sześć cyfr
+- litera "E" (bez uwzględniania wielkości liter)
+- litera
+- spację (opcjonalnie)
+- sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_czech_republic_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_czech_republic_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_czech_republic_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` .
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4791,7 +4791,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -4800,49 +4800,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -4850,48 +4850,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -4899,51 +4899,51 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
-#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver's_license_number
+#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>s_license_number Keywords_czech_republic_eu_driver
 
-- dodičskú prúkaz
-- zydičské pr 8kazy
-- číslo íidičského príkazu
-- čísla íidičsk čch pr indyjska
+- řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
-## <a name="czech-passport-number"></a>Numer paszportu czeskiego
+## <a name="czech-passport-number"></a>Czeski numer paszportu
 
-### <a name="format"></a>Formatowanie
-
-osiem cyfr bez spacji i ograniczników
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 osiem cyfr bez spacji i ograniczników
 
-### <a name="checksum"></a>Checksum
+### <a name="pattern"></a>Wzór
+
+osiem cyfr bez spacji i ograniczników
+
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_czech_republic_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_czech_republic_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_czech_republic_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_czech_republic_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_czech_republic_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_czech_republic_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` .
 
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4973,65 +4973,65 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
-- ces doní pas
+- cestovní pas
 - číslo pasu
-- ces doní pasu
+- cestovní pasu
 - passeport no
 - čísla pasu
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
 ## <a name="czech-personal-identity-number"></a>Czeski numer tożsamości osobistej
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr z opcjonalnym ukośnikiem (stary format) 10 cyfr z opcjonalnym ukośnikiem (nowy format)
+dziewięć cyfr z opcjonalnym ukośnikiem (stary format) 10 cyfr z opcjonalnym ukośnikiem (nowy format)
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dziewięć cyfr (stary format):
-- Sześć cyfr oznacza datę urodzenia
-- Opcjonalny ukośnik
+- sześć cyfr reprezentujących datę urodzenia
+- opcjonalny ukośnik do przodu
 - trzy cyfry
 
 10 cyfr (nowy format):
-- Sześć cyfr oznacza datę urodzenia
-- Opcjonalny ukośnik
-- Cztery cyfry, gdzie ostatnia cyfra to cyfra kontrolna
+- sześć cyfr reprezentujących datę urodzenia
+- opcjonalny ukośnik do przodu
+- cztery cyfry, w których ostatnia cyfra jest cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja Func_czech_id_card znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_czech_id_card znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+- Funkcja Func_czech_id_card znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_czech_id_card.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja Func_czech_id_card_new_format znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+- Funkcja Func_czech_id_card_new_format znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Czech Personal Identity Number -->
@@ -5053,78 +5053,78 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
 
 - numer urodzenia
-- identyfikator Czechy
+- identyfikator Republiki Czeskiej
 - czechidno #
 - daňové číslo
 - identifikační číslo
-- nie tożsamości
+- brak tożsamości
 - numer tożsamości
 - identityno #
 - identityno
 - numer ubezpieczenia
-- numer identyfikacyjny kraju
-- numer_narodowy #
+- krajowy numer identyfikacyjny
+- nationalnumber #
 - numer krajowy
 - osobní číslo
-- numer_osobisty #
-- identyfikator osobisty
-- numer identyfikacyjny
+- personalidnumber #
+- osobisty numer identyfikatora
+- osobisty numer identyfikacyjny
 - numer osobisty
-- identyfikator pid #
-- identyfikator pid
-- pojištíní číslo
+- Pid #
+- Pid
+- pojištění číslo
 - rč
 - rodne cislo
 - rodné číslo
-- ssn
-- ssn #
-- numer PEZEt
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- Ssn
+- Ssn #
+- numer ubezpieczenia społecznego
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 - unikatowy numer identyfikacyjny
 
 
 ## <a name="czech-republic-physical-addresses"></a>Adresy fizyczne w Czechach
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Czech. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Czech. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
-## <a name="denmark-drivers-license-number"></a>Numer prawa jazdy w Dania
+## <a name="denmark-drivers-license-number"></a>Duński numer prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 osiem cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_denmark_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_denmark_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_denmark_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` .
 
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -5141,7 +5141,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -5150,49 +5150,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -5200,48 +5200,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -5249,49 +5249,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
-#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver s_license_number
+#### <a name="keywords_denmark_eu_drivers_license_number"></a>s_license_number Keywords_denmark_eu_driver
 
 - kørekort
 - kørekortnummer
 
 
-## <a name="denmark-passport-number"></a>Numer paszportu w Dania
+## <a name="denmark-passport-number"></a>Numer paszportu Danii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr bez spacji i ograniczników
+dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_denmark_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_denmark_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date2` datę w formacie DD MM YY lub znaleziono słowo `Keywords_eu_passport_date` kluczowe od
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_denmark_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date2` regularne znajduje datę w formacie DD MM YY lub odnaleziono słowo kluczowe `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_denmark_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_denmark_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_denmark_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` .
 
 ```xml
       <!-- Denmark Passport Number -->
@@ -5322,15 +5322,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
@@ -5341,37 +5341,37 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="denmark-personal-identification-number"></a>Dania : osobisty numer identyfikacyjny
+## <a name="denmark-personal-identification-number"></a>Osobisty numer identyfikacyjny Danii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-10 cyfr zawierające łącznik
+10 cyfr zawierających łącznik
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr:
-- Sześć cyfr w formacie DDMMYY, czyli data urodzenia
-- Opcjonalna spacja lub łącznik
-- cztery cyfry, gdzie ostatnia cyfra to cyfra kontrolna
+- sześć cyfr w formacie DDMMYY, które są datą urodzenia
+- opcjonalne spacja lub łącznik
+- cztery cyfry, w których cyfra końcowa jest cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Func_denmark_eu_tax_file_number umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Słowo kluczowe z Keyword_denmark_id znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Func_denmark_eu_tax_file_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_denmark_id.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Func_denmark_eu_tax_file_number umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Wyrażenie regularne Func_denmark_eu_tax_file_number znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Denmark Personal Identification Number -->
@@ -5393,60 +5393,60 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 - centrale personregister
 - civilt registreringssystem
-- kwi
-- kwi #
+- Cpr
+- Cpr #
 - gesundheitskarte nummer
 - gesundheitsversicherungkarte nummer
-- karta zdrowia
-- numer karty ubezpieczenia społecznego;
-- numer ubezpieczenia społecznego
+- karta kondycji
+- numer karty ubezpieczenia zdrowotnego
+- numer ubezpieczenia zdrowotnego
 - numer identyfikacyjny
 - identifikationsnummer
 - identifikationsnummer #
 - numer tożsamości
-- kenkassennummer
+- krankenkassennummer
 - nationalid #
-- numer_narodowy #
+- nationalnumber #
 - numer krajowy
-- numer_osobisty #
+- personalidnumber #
 - personalidentityno #
-- identyfikator osobisty
-- liczba_osob
-- liczba_osob #
+- osobisty numer identyfikatora
+- personnummer
+- personnummer #
 - reisekrankenversicherungskartenummer
-- esygesikringskort
-- ssn
-- ssn #
-- skat id
+- rejsesygesikringskort
+- Ssn
+- Ssn #
+- identyfikator skat
 - kode skat
 - skat nummer
 - skattenummer
-- numer PEZEt
+- numer ubezpieczenia społecznego
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
 - sundhedskortnummer
 - sygesikring
 - sygesikringkortnummer
-- kod podatku
-- Karta ubezpieczenia zdrowia podróży
+- kod podatkowy
+- karta ubezpieczenia zdrowotnego podróży
 - uniqueidentityno #
-- numer podatku
+- numer podatkowy
 - numer rejestracji podatkowej
-- identyfikator podatku
-- numer identyfikacyjny podatku
-- 2016 #
-- numer_podatku #
-- nie podatek
-- taksno #
-- numer_podatku
-- Brak identyfikacji podatkowej
-- tin #
-- wydomowy #
-- number #
-- nie podatek #
-- identyfikator tin
-- nie tin
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- taxid #
+- taxnumber #
+- numer podatkowy
+- taksoń #
+- taxnumber
+- numer identyfikacji podatkowej
+- Tin #
+- taxidno #
+- taxidnumber #
+- numer podatkowy #
+- identyfikator cyny
+- nie cyny
 - cpr.nr
 - cprnr
 - cprnummer
@@ -5462,51 +5462,51 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - sygesikringsnummer
 
 
-## <a name="denmark-physical-addresses"></a>Adresy fizyczne w Dania
+## <a name="denmark-physical-addresses"></a>Adresy fizyczne Danii
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Dania. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Danii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="diseases"></a>Wołoń
+## <a name="diseases"></a>Chorób
 
-Ta nieoznakowana nazwana jednostka wykrywa tekst, który pasuje do nazw nazwisk, takich jak *cyceta*. Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa tekst, który pasuje do nazw chorób, takich jak *cukrzyca*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
 
 
-## <a name="drug-enforcement-agency-dea-number"></a>Numer agencji egzekwowania praw osób (DEA)
+## <a name="drug-enforcement-agency-dea-number"></a>Numer Agencji Egzekwowania Narkotyków (DEA)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery, po których następuje siedem cyfr
+dwie litery, po których następuje siedem cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Wzorzec musi zawierać wszystkie następujące elementy:
-- Jedna litera (bez rozróżniania wielkości liter) z tego zestawu możliwych liter: abcdefghjklmnprstux, który jest kodem rejestru
-- jedna litera (bez wielkości liter), która jest pierwszą literą nazwiska rejestru lub cyfrą "9"
-- Siedem cyfr, z których ostatnia to cyfra wyboru
+- jedna litera (bez uwzględniania wielkości liter) z tego zestawu możliwych liter: A/B/F/G/M/P/R, który jest kodem rejestrującym
+- jedna litera (bez uwzględniania wielkości liter), która jest pierwszą literą nazwiska lub cyfry rejestrujący "9"
+- siedem cyfr, z których ostatni to cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja nie Func_dea_number zawartości, która pasuje do wzorca.
-- Zostanie znalezione słowo `Keyword_dea_number` kluczowe od
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_dea_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z `Keyword_dea_number`
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja nie Func_dea_number zawartości, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_dea_number znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
     <!-- DEA Number -->
@@ -5532,34 +5532,34 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_dea_number"></a>Keyword_dea_number
 
-- dea
-- dea #
-- administracja wymuszania stosowania środków odurzanych
-- agencja ds. egzekwowania przepisów odurzanych
+- Dea
+- Dea #
+- administracja egzekwowania narkotyków
+- organ ścigania narkotyków
 
 
-## <a name="estonia-drivers-license-number"></a>Numer prawa jazdy w języku estońskim
+## <a name="estonia-drivers-license-number"></a>Numer prawa jazdy Estonii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery i sześć cyfr
+dwie litery, po których następuje sześć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dwie litery i sześć cyfr:
 
-- litery "ET" (bez wielkości liter)
-- Sześć cyfr
+- litery "ET" (bez uwzględniania wielkości liter)
+- sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_estonia_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_estonia_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_estonia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` .
 
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5576,7 +5576,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -5585,49 +5585,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -5635,48 +5635,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -5684,51 +5684,51 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
-#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver s_license_number
+#### <a name="keywords_estonia_eu_drivers_license_number"></a>s_license_number Keywords_estonia_eu_driver
 
 - permis de conduire
 - juhilubade numbrid
-- liczba juhiloa
+- numer juhiloa
 - juhiluba
 
 
-## <a name="estonia-passport-number"></a>Numer paszportu Estońskiego
+## <a name="estonia-passport-number"></a>Numer paszportu Estonii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-jedna litera, po której następuje siedem cyfr bez spacji i ograniczników
+jedna litera, po której następuje siedem cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Jedna litera, po której następuje siedem cyfr
+jedna litera, po której następuje siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_estonia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_estonia_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_estonia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_estonia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_estonia_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_estonia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` .
 
 ```xml
       <!-- Estonia Passport Number -->
@@ -5758,61 +5758,61 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-eesti kodaniku passi number passinumbrid document number document number document no dokumendi nr
+eesti kodaniku passi number passi number passinumbrid document number document no dokumendi nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="estonia-personal-identification-code"></a>Estonia Personal Identification Code
+## <a name="estonia-personal-identification-code"></a>Estoński osobisty kod identyfikacyjny
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 cyfr:
 
-- jedna cyfra odpowiadająca płci i wieku urodzenia (nieparzysta liczba mężczyzna, parzysta kobieta; 1-2: 19 wieku; 3-4: 20 wieku; 5-6: 21 wieku)
-- Sześć cyfr odpowiadających dacie urodzenia (RRMMDD)
-- Trzy cyfry odpowiadające liczbie kolejnej oddzielające osoby urodzenia w tym samym dniu
+- jedna cyfra, która odpowiada płci i wieku urodzenia (nieparzysta liczba mężczyzn, parzysta liczba kobiet; 1-2: 19 wieku; 3-4: 20 wieku; 5-6: 21 wieku)
+- sześć cyfr odpowiadających dacie urodzenia (RRMMDD)
+- trzy cyfry, które odpowiadają numerowi seryjnemu oddzielającemu osoby urodzone w tym samym dniu
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_estonia_eu_national_id_card` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_estonia_eu_national_id_card` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_estonia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_estonia_eu_national_id_card`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_estonia_eu_national_id_card` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_estonia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Estonia Personal Identification Code -->
@@ -5836,40 +5836,40 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 - id-kaart
-- ik
+- Ik
 - isikukood #
 - isikukood
 - maksu id
 - maksukohustuslase identifitseerimisnumber
-- maksunumer
-- numer identyfikacyjny kraju
+- maksunumber
+- krajowy numer identyfikacyjny
 - numer krajowy
 - kod osobisty
-- identyfikator osobisty
-- kod identyfikacyjny
-- numer identyfikacyjny
-- numer_osobisty #
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- osobisty numer identyfikatora
+- osobisty kod identyfikacyjny
+- osobisty numer identyfikacyjny
+- personalidnumber #
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="estonia-physical-addresses"></a>Estoński adres fizyczny
+## <a name="estonia-physical-addresses"></a>Adresy fizyczne Estonii
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Estonia. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Estonii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -5878,29 +5878,29 @@ Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z E
 
 ## <a name="eu-debit-card-number"></a>Numer karty debetowej UE
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 16 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Złożony i niezawodny wzorzec
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_eu_debit_card umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Prawdziwe jest co najmniej jedno z następujących argumentów:
-    - Zostanie znalezione słowo kluczowe Keyword_eu_debit_card.
-    - Słowo kluczowe z Keyword_card_terms_dict znajduje się.
-    - Zostanie znalezione słowo kluczowe Keyword_card_security_terms_dict.
-    - Zostanie znalezione słowo kluczowe Keyword_card_expiration_terms_dict.
-    - Funkcja Func_expiration_date znajdzie datę w odpowiednim formacie daty.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_eu_debit_card znajduje zawartość zgodną ze wzorcem.
+- Co najmniej jedna z następujących wartości jest prawdziwa:
+    - Znaleziono słowo kluczowe z Keyword_eu_debit_card.
+    - Znaleziono słowo kluczowe z Keyword_card_terms_dict.
+    - Znaleziono słowo kluczowe z Keyword_card_security_terms_dict.
+    - Znaleziono słowo kluczowe z Keyword_card_expiration_terms_dict.
+    - Funkcja Func_expiration_date znajduje datę w odpowiednim formacie daty.
+- Suma kontrolna przechodzi.
 
 ```xml
     <!-- EU Debit Card Number -->
@@ -5924,42 +5924,42 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 - numer konta
 - numer karty
-- nie.
+- numer karty.
 - numer zabezpieczeń
-- DW #
+- Cc #
 
 #### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
 - acct nbr
-- nr acct
-- acct nie
-- American Express
+- acct num
+- acct no
+- american express
 - americanexpress
-- americano nin
-- amex
+- americano espresso
+- Amex
 - karta atm
 - karty atm
 - atm kaart
 - atmcard
-- kartki atmcard
+- atmcards
 - atmkaart
 - atmkaarten
-- bancontact
+- Bancontact
 - karta bankowa
 - bankkaart
 - posiadacz karty
-- właściciele kart
+- posiadacze kart
 - numer karty
 - numer karty
 - numery kart
 - typ karty
 - cardano numerico
-- cardholder
-- cardholders
+- Karty
+- Posiadaczy kart
 - numer karty
-- liczba_kart
-- Carta bianca
-- Carta credito
+- cardnumbers
+- carta bianca
+- carta credito
 - carta di credito
 - cartao de credito
 - cartao de crédito
@@ -5976,14 +5976,14 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - cartão de crédito
 - cartão de debito
 - cartão de débito
-- cb
-- ccn
-- karta wyboru
-- karty wyboru
-- karta kontrolna
+- Cb
+- Ccn
+- sprawdzanie karty
+- sprawdzanie kart
+- checkcard
 - karty wyboru
 - chequekaart
-- cirrus
+- Cirrus
 - cirrus-edc-maestro
 - controlekaart
 - controlekaarten
@@ -5993,28 +5993,28 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - karty kredytowe
 - debetkaart
 - debetkaarten
-- karta debetowa
-- karty debetowe
-- karta debetowa
+- Debetową
+- Debetowe
+- Debitcard
 - karty debetowe
 - debito automatico
-- Diners Club
-- diners z
-- odnajdowanie
-- karta odnajdowanie
-- odnajdowanie kart
+- diners club
+- dinersclub
+- Odkryj
+- odnajdywanie karty
+- odnajdywanie kart
 - discovercard
 - discovercards
 - débito automático
-- edc
+- Edc
 - eigentümername
-- Karta debetowa (European Debit Card)
+- europejska karta debetowa
 - hoofdkaart
 - hoofdkaarten
-- in viagia
-- biuro karty dla języka japońskiego
+- w viaggio
+- japońskie biuro kart
 - japanse kaartdienst
-- jcb
+- Jcb
 - kaart
 - kaart num
 - kaartaantal
@@ -6023,32 +6023,32 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - kaarthouders
 - karte
 - karteninhaber
-- kartenin wiadce
+- karteninhabers
 - kartennr
-- kartennummer
+- kartennumer
 - kreditkarte
 - kreditkarten-nummer
 - kreditkarteninhaber
 - kreditkarteninstitut
 - kreditkartennummer
 - kreditkartentyp
-- maestro
-- karta wzorcowa
-- karty wzorcowe
-- karta wzorcowa
-- karty wzorcowe
-- mc
+- Maestro
+- karta główna
+- karty główne
+- Mastercard
+- Mastercard
+- Mc
 - mister cash
 - n carta
-- carta
+- Carta
 - no de tarjeta
 - no do cartao
 - no do cartão
-- nie. de tarjeta
-- nie. do cartao
-- nie. do cartão
+- Nr. de tarjeta
+- Nr. do cartao
+- Nr. do cartão
 - nr carta
-- nr. carta
+- nr. Carta
 - numeri di scheda
 - numero carta
 - numero de cartao
@@ -6061,34 +6061,34 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - numero do cartao
 - numero do cartão
 - numéro de carte
-- nº carta
-- nº de carte
-- nº de la carte
-- nº de tarjeta
-- nº do cartao
-- nº do cartão
-- nº. do cartão
+- n° carta
+- n° de carte
+- n° de la carte
+- n° de tarjeta
+- n° do cartao
+- nÏ do cartão
+- Nº. do cartão
 - número de cartao
 - número de cartão
 - número de tarjeta
 - número do cartao
 - scheda dell'assegno
-- scheda dell'dell'cala cala
-- scheda dell'dell'cala cala
+- scheda dell'atmosfera
+- scheda dell'atmosfera
 - scheda della banca
 - scheda di controllo
 - scheda di debito
 - scheda matrice
-- schede dell'do przysłaniania
+- schede dell'atmosfera
 - schede di controllo
 - schede di debito
 - schede matrici
 - scoprono la scheda
 - scoprono le schede
-- solo
+- Podróżujący samotnie
 - supporti di scheda
 - supporto di scheda
-- przełącznik
+- Przełącznik
 - tarjeta atm
 - tarjeta credito
 - tarjeta de atm
@@ -6096,17 +6096,17 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - tarjeta de debito
 - tarjeta debito
 - tarjeta no
-- tarjetajetiente
+- tarjetahabiente
 - tipo della scheda
-- ufficio giappo della
+- ufficio giapponese della
 - scheda
 - v pay
 - v-pay
-- visa
-- visa plus
+- Visa
+- wiza plus
 - visa electron
-- visto
-- wizja
+- Visto
+- visum
 - vpay
 
 #### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
@@ -6114,15 +6114,15 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - numer identyfikacyjny karty
 - weryfikacja karty
 - cardi la verifica
-- cid
+- Cid
 - cod seg
 - cod seguranca
 - cod segurança
-- cod sicurezza
-- cod. seg
-- cod. seguranca
-- cod. segurança
-- cod. sicurezza
+- dojrzew sicurezza
+- Dorsza. Seg
+- Dorsza. seguranca
+- Dorsza. segurança
+- Dorsza. sicurezza
 - codice di sicurezza
 - codice di verifica
 - codigo
@@ -6132,10 +6132,10 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - cryptogram
 - cryptogramme
 - cv2
-- cvc
+- Cvc
 - cvc2
-- cvn
-- cvv
+- Cvn
+- Cvv
 - cvv2
 - cód seguranca
 - cód segurança
@@ -6144,41 +6144,41 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - código
 - código de seguranca
 - código de segurança
-- de kaart controle
+- de kaart, kontrolka
 - geeft nr uit
-- nr problemu
+- problem nie
 - numer problemu
 - kaartidentificatienummer
 - kreditkartenprufnummer
 - kreditkartenprüfnummer
 - kwestieaantal
-- nie. dell'edizione
-- nie. di sicurezza
+- Nr. dell'edizione
+- Nr. di sicurezza
 - numero de securite
 - numero de verificacao
 - numero dell'edizione
 - numero di identificazione della
 - scheda
 - numero di sicurezza
-- numero van cycero
+- numero van veiligheid
 - numéro de sécurité
-- nº autorizzazione
+- n° autorizzazione
 - número de verificação
-- perno il blob
-- blok przypinania
+- perno il blocco
+- blok pinezki
 - prufziffer
 - prüfziffer
 - kod zabezpieczeń
-- brak zabezpieczeń
+- nie zabezpieczeń
 - numer zabezpieczeń
 - sicherheits kode
 - sicherheitscode
 - sicherheitsnummer
 - speldblok
-- cycero
-- aimiheidsaantal
-- edytowaniekodu
-- cyceroszidynummer
+- veiligheid nr
+- veiligheidsaantal
+- veiligheidscode
+- veiligheidsnummer
 - verfalldatum
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
@@ -6196,14 +6196,14 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - datum afloop
 - datum van exp
 - de afloop
-- e maska
-- e maska
-- data exp
+- espira
+- espira
+- exp, data
 - exp datum
-- wygasanie
-- wygasa
-- wygasa
-- wygaśnięcie
+- Wygaśnięcia
+- Wygasa
+- Wygasa
+- Upływie terminu ważności
 - fecha de expiracion
 - fecha de venc
 - gultig bis
@@ -6215,18 +6215,18 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - valable
 - validade
 - valido hasta
-- valor
+- Valor
 - venc
 - vencimento
 - vencimiento
 - verloopt
 - vervaldag
 - vervaldatum
-- vto
+- Vto
 - válido hasta
 
 
-## <a name="eu-drivers-license-number"></a>Numer prawa jazdy w UE
+## <a name="eu-drivers-license-number"></a>Numer prawa jazdy UE
 
 Te jednostki znajdują się w numerze prawa jazdy UE i są typami informacji poufnych.
 
@@ -6247,7 +6247,7 @@ Te jednostki znajdują się w numerze prawa jazdy UE i są typami informacji pou
 - [Włochy](#italy-drivers-license-number)
 - [Łotwa](#latvia-drivers-license-number)
 - [Litwa](#lithuania-drivers-license-number)
-- [Luxemburg](#luxemburg-drivers-license-number)
+- [Luksemburg](#luxemburg-drivers-license-number)
 - [Malta](#malta-drivers-license-number)
 - [Holandia](#netherlands-drivers-license-number)
 - [Polska](#poland-drivers-license-number)
@@ -6257,12 +6257,12 @@ Te jednostki znajdują się w numerze prawa jazdy UE i są typami informacji pou
 - [Słowenia](#slovenia-drivers-license-number)
 - [Hiszpania](#spain-drivers-license-number)
 - [Szwecja](#sweden-drivers-license-number)
-- [Zjednoczone Emiraty Zjednoczone](#uk-drivers-license-number)
+- [WIELKIEJ BRYTANII.](#uk-drivers-license-number)
 
 
 ## <a name="eu-national-identification-number"></a>Krajowy numer identyfikacyjny UE
 
-Te jednostki znajdują się w ramach państwowego numeru identyfikacyjnego UE i są typami informacji poufnych.
+Te jednostki znajdują się w krajowym numerze identyfikacyjnym UE i są typami informacji poufnych.
 
 - [Austria](#austria-identity-card)
 - [Belgia](#belgium-national-number)
@@ -6281,7 +6281,7 @@ Te jednostki znajdują się w ramach państwowego numeru identyfikacyjnego UE i 
 - [Włochy](#italy-fiscal-code)
 - [Łotwa](#latvia-personal-code)
 - [Litwa](#lithuania-personal-code)
-- [Luxemburg](#luxemburg-national-identification-number-natural-persons)
+- [Luksemburg](#luxemburg-national-identification-number-natural-persons)
 - [Malta](#malta-identity-card-number)
 - [Holandia](#netherlands-citizens-service-bsn-number)
 - [Polska](#poland-national-id-pesel)
@@ -6290,12 +6290,12 @@ Te jednostki znajdują się w ramach państwowego numeru identyfikacyjnego UE i 
 - [Słowacja](#slovakia-personal-number)
 - [Słowenia](#slovenia-unique-master-citizen-number)
 - [Hiszpania](#spain-dni)
-- [Zjednoczone Emiraty Zjednoczone](#uk-national-insurance-number-nino)
+- [WIELKIEJ BRYTANII.](#uk-national-insurance-number-nino)
 
 
 ## <a name="eu-passport-number"></a>Numer paszportu UE
 
-Te jednostki znajdują się w numerze paszportu UE i mają typ informacji poufnych. Te jednostki znajdują się w pakiecie numeru paszportu UE.
+Te jednostki znajdują się w numerze paszportu UE i są typami informacji poufnych. Te jednostki znajdują się w pakiecie numerów paszportów UE.
 
 - [Austria](#austria-passport-number)
 - [Belgia](#belgium-passport-number)
@@ -6314,7 +6314,7 @@ Te jednostki znajdują się w numerze paszportu UE i mają typ informacji poufny
 - [Włochy](#italy-passport-number)
 - [Łotwa](#latvia-passport-number)
 - [Litwa](#lithuania-passport-number)
-- [Luxemburg](#luxemburg-passport-number)
+- [Luksemburg](#luxemburg-passport-number)
 - [Malta](#malta-passport-number)
 - [Holandia](#netherlands-passport-number)
 - [Polska](#poland-passport-number)
@@ -6324,12 +6324,12 @@ Te jednostki znajdują się w numerze paszportu UE i mają typ informacji poufny
 - [Słowenia](#slovenia-passport-number)
 - [Hiszpania](#spain-passport-number)
 - [Szwecja](#sweden-passport-number)
-- [Numer paszportu Stanów Zjednoczonych](#usuk-passport-number)
+- [Numer paszportu USA/Wielkiej Brytanii](#usuk-passport-number)
 
 
-## <a name="eu-social-security-number-or-equivalent-identification"></a>Numer PE PE PEŁ LUB równoważna identyfikacja
+## <a name="eu-social-security-number-or-equivalent-identification"></a>Numer ubezpieczenia społecznego UE lub równoważna identyfikacja
 
-Są to jednostki, które znajdują się w numerze PE PEP lub w równoważnej identyfikacji i są typami informacji poufnych.
+Są to jednostki, które znajdują się w numerze ubezpieczenia społecznego UE lub równoważnej identyfikacji i są typami informacji poufnych.
 
 - [Austria](#austria-social-security-number)
 - [Belgia](#belgium-national-number)
@@ -6346,9 +6346,9 @@ Są to jednostki, które znajdują się w numerze PE PEP lub w równoważnej ide
 - [Szwecja](#sweden-national-id)
 
 
-## <a name="eu-tax-identification-number"></a>Numer identyfikacyjny podatku UE
+## <a name="eu-tax-identification-number"></a>Numer identyfikacji podatkowej UE
 
-Te jednostki należą do typu informacji poufnych numeru identyfikacji podatkowej UE.
+Te jednostki znajdują się w typie informacji poufnych o numerze identyfikacji podatkowej UE.
 
 - [Austria](#austria-tax-identification-number)
 - [Belgia](#belgium-national-number)
@@ -6367,7 +6367,7 @@ Te jednostki należą do typu informacji poufnych numeru identyfikacji podatkowe
 - [Włochy](#italy-fiscal-code)
 - [Łotwa](#latvia-personal-code)
 - [Litwa](#lithuania-personal-code)
-- [Luxemburg](#luxemburg-national-identification-number-non-natural-persons)
+- [Luksemburg](#luxemburg-national-identification-number-non-natural-persons)
 - [Malta](#malta-tax-identification-number)
 - [Holandia](#netherlands-tax-identification-number)
 - [Polska](#poland-tax-identification-number)
@@ -6377,33 +6377,33 @@ Te jednostki należą do typu informacji poufnych numeru identyfikacji podatkowe
 - [Słowenia](#slovenia-tax-identification-number)
 - [Hiszpania](#spain-tax-identification-number)
 - [Szwecja](#sweden-tax-identification-number)
-- [Zjednoczone Emiraty Zjednoczone](#uk-unique-taxpayer-reference-number)
+- [WIELKIEJ BRYTANII.](#uk-unique-taxpayer-reference-number)
 
 
-## <a name="finland-drivers-license-number"></a>Numer prawa jazdy w Finlandia
+## <a name="finland-drivers-license-number"></a>Numer prawa jazdy Finlandii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-10 cyfr zawierające łącznik
+10 cyfr zawierających łącznik
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr zawierających łącznik:
 
-- Sześć cyfr
-- Łącznik
+- sześć cyfr
+- łącznik
 - trzy cyfry
-- cyfrę lub literę
+- cyfra lub litera
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_finland_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_finland_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_finland_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` .
 
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6420,7 +6420,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -6429,49 +6429,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -6479,48 +6479,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -6528,26 +6528,26 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver s_license_number
+#### <a name="keywords_finland_eu_drivers_license_number"></a>s_license_number Keywords_finland_eu_driver
 
 - ajokortti
 - permis de conduire
 - ajokortin numero
-- kuljetteja lic.
+- kuljettaja lic.
 - körkort
 - körkortnummer
 - förare lic.
@@ -6555,36 +6555,36 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - ajokortin numerot
 
 
-## <a name="finland-european-health-insurance-number"></a>Finlandia, numer ubezpieczenia społecznego w Niemczech
+## <a name="finland-european-health-insurance-number"></a>Europejski numer ubezpieczenia zdrowotnego w Finlandii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 20-cyfrowy numer
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Numer 20-cyfrowy:
+20-cyfrowy numer:
 
 - 10 cyfr — 8024680246
-- Opcjonalna spacja lub łącznik
+- opcjonalne spacja lub łącznik
 - 10 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Ta Regex_Finland_European_Health_Insurance_Number wyszukuje zawartość, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_Finland_European_Health_Insurance_Number.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Rejestr Regex_Finland_European_Health_Insurance_Number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Finland_European_Health_Insurance_Number.
 
 ```xml
       <!-- Finland European Health Insurance Number -->
@@ -6599,13 +6599,13 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_finland_european_health_insurance_number"></a>Keyword_finland_european_health_insurance_number
 
-- ehic #
-- ehic
+- Ekuz #
+- Ekuz
 - finlandehicnumber #
 - finska sjukförsäkringskort
-- karta zdrowia
-- karta ubezpieczenia społecznego
-- numer ubezpieczenia społecznego
+- karta kondycji
+- karta ubezpieczenia zdrowotnego
+- numer ubezpieczenia zdrowotnego
 - hälsokort
 - sairaanhoitokortin
 - sairausvakuutuskortti
@@ -6616,34 +6616,34 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - terveyskortti
 
 
-## <a name="finland-national-id"></a>Identyfikator narodowy Finlandia
+## <a name="finland-national-id"></a>Identyfikator krajowy Finlandii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Sześć cyfr oraz znak oznaczający wiek oraz trzy cyfry i cyfrę wyboru
+sześć cyfr plus znak wskazujący wiek plus trzy cyfry oraz cyfrę kontrolną
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Wzorzec musi zawierać wszystkie następujące elementy:
-- Sześć cyfr w formacie DDMMYY, czyli data urodzenia
-- znacznik wieku (albo '-', '+', albo 'a')
-- Trzycyfrowy osobisty numer identyfikacyjny
-- cyfrę lub literę (bez uwzględniania liter), która jest cyfrą kontrolną
+- sześć cyfr w formacie DDMMYY, które są datą urodzenia
+- znacznik wieku ("-", "+" lub "a")
+- trzycyfrowy osobisty numer identyfikacyjny
+- cyfra lub litera (bez uwzględniania wielkości liter), która jest cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- funkcja Func_finnish_national_id wyszukuje zawartość, która pasuje do wzorca
-- Słowo kluczowe z Keyword_finnish_national_id znajduje się
-- jeśli tak się umknie,
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- funkcja Func_finnish_national_id znajduje zawartość zgodną ze wzorcem
+- znaleziono słowo kluczowe z Keyword_finnish_national_id
+- suma kontrolna przechodzi
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- funkcja Func_finnish_national_id wyszukuje zawartość, która pasuje do wzorca
-- jeśli tak się umknie,
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- funkcja Func_finnish_national_id znajduje zawartość zgodną ze wzorcem
+- suma kontrolna przechodzi
 
 ```xml
       <!-- Finnish National ID-->
@@ -6667,40 +6667,40 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - henkilötunnusnumero
 - hetu
 - id no
+- numer identyfikatora
 - numer identyfikacyjny
-- numer identyfikacyjny
-- identitetti numero
+- identiteetti, numero
 - numer tożsamości
 - idnumber
 - kansallinen henkilötunnus
 - kansallisen henkilökortin
-- national id card
-- numer dowodu osobistego.
-- identyfikator osobisty
+- dowód osobisty
+- identyfikator krajowy nr.
+- osobisty identyfikator
 - kod tożsamości osobistej
-- numer_osobisty #
+- personalidnumber #
 - personbeteckning
-- liczba_osob
-- numer PEZEt
+- personnummer
+- numer ubezpieczenia społecznego
 - sosiaaliturvatunnus
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 - tunnistenumero
-- tunnus numero
+- numero usługi tunnus
 - tunnusluku
 - tunnusnumero
 - verokortti
@@ -6709,32 +6709,32 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - verotunnus
 
 
-## <a name="finland-passport-number"></a>Numer paszportu Finlandia
+## <a name="finland-passport-number"></a>Numer paszportu Finlandii
 
-Ta jednostka jest dostępna w ramach typu informacji poufnych numer paszportu UE i jest dostępna jako autonomiczna jednostka tego typu.
+Ta jednostka jest dostępna w typie informacji poufnych numeru paszportu UE i jest dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formatowanie
-Kombinacja dziewięciu liter i cyfr
+### <a name="format"></a>Formacie
+kombinacja dziewięciu liter i cyfr
 
-### <a name="pattern"></a>Deseń
-Kombinacja dziewięciu liter i cyfr:
-- Dwie litery (bez wielkości liter)
-- Siedem cyfr
+### <a name="pattern"></a>Wzór
+kombinacja dziewięciu liter i cyfr:
+- dwie litery (bez uwzględniania wielkości liter)
+- siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_finland_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_finland_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_finland_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keyword_finland_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_finland_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_finland_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_finland_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keyword_finland_passport_number` .
 
 ```xml
       <!-- Finland Passport Number -->
@@ -6763,36 +6763,36 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number
 
-- suomabicen passi
+- suomalainen passi
 - passin numero
 - passin numero. #
 - passin numero #
 - passin numero.
-- passi #
+- Passi #
 - numer passi
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="finland-physical-addresses"></a>Adresy fizyczne w Finlandia
+## <a name="finland-physical-addresses"></a>Adresy fizyczne Finlandii
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym w Finlandia. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Finlandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -6801,25 +6801,25 @@ Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym w
 
 ## <a name="france-drivers-license-number"></a>Numer prawa jazdy we Francji
 
-Ta jednostka jest dostępna w ramach typu informacji poufnych Numer prawa jazdy w UE i jest dostępna jako autonomiczna jednostka typu informacji poufnych.
+Ta jednostka jest dostępna w typie poufnych informacji o numerze prawa jazdy UE i jest dostępna jako samodzielna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 12 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-12 cyfr ze sprawdzaniem poprawności w celu dyskontowania podobnych wzorców, takich jak francuskie numery telefonów
+12 cyfr z weryfikacją, aby zdyskontować podobne wzorce, takie jak francuskie numery telefonów
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- funkcja Func_french_drivers_license znajdzie zawartość, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_french_drivers_license.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- funkcja Func_french_drivers_license znajduje zawartość zgodną ze wzorcem.
+- znaleziono słowo kluczowe z Keyword_french_drivers_license.
 
 ```xml
     <!-- France Driver's License Number -->
@@ -6842,49 +6842,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -6892,48 +6892,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -6941,18 +6941,18 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 - permis de conduire
 - numer licencji
 - numer licencji
@@ -6961,39 +6961,39 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - numéros de licence
 
 
-## <a name="france-health-insurance-number"></a>Numer ubezpieczenia społecznego we Francji
+## <a name="france-health-insurance-number"></a>Numer ubezpieczenia zdrowotnego we Francji
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Numer 21-cyfrowy
+21-cyfrowy numer
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Numer 21-cyfrowy:
+21-cyfrowy numer:
 
 - 10 cyfr
-- spacja opcjonalna
+- opcjonalne miejsce
 - 10 cyfr
-- spacja opcjonalna
+- opcjonalne miejsce
 - cyfra
 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- regex Regex_France_Health_Insurance_Number umożliwia znalezienie zawartości, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_France_Health_Insurance_Number.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Regex_France_Health_Insurance_Number znajduje zawartość zgodną ze wzorcem.
+- znaleziono słowo kluczowe z Keyword_France_Health_Insurance_Number.
 
 ```xml
       <!-- France Health Insurance Number -->
@@ -7013,25 +7013,25 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - carte d'assuré social
 
 
-## <a name="france-national-id-card-cni"></a>France national id card (CNI)
+## <a name="france-national-id-card-cni"></a>Francuski identyfikator krajowy (CNI)
 
-### <a name="format"></a>Formatowanie
-
-12 cyfr
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 12 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="pattern"></a>Wzór
+
+12 cyfr
+
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_france_cni umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Słowo kluczowe z Keywords_france_eu_national_id_card znajduje się.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_france_cni znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_france_eu_national_id_card.
 
 ```xml
     <!-- France CNI -->
@@ -7049,46 +7049,46 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 - numer karty
 - carte nationale d'identité
-- carte nationale d'idenite no
+- carte nationale d'idenite nie
 - cni #
 - cni
 - compte bancaire
-- numer identyfikacyjny kraju
-- tożsamość państwowa
+- krajowy numer identyfikacyjny
+- tożsamość narodowa
 - nationalidno #
 - numéro d'assurance maladie
 - numéro de carte vitale
 
 
-## <a name="france-passport-number"></a>Numer paszportu Francji
+## <a name="france-passport-number"></a>Numer paszportu We Francji
 
-Podmiot ten jest dostępny w ramach numeru paszportu UE typu informacji poufnych. Jest także dostępna jako autonomiczna jednostka typu informacji poufnych.
+Ta jednostka jest dostępna w typie informacji poufnych o numerze paszportu UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr i liter
+dziewięć cyfr i liter
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dziewięć cyfr i liter:
+dziewięć cyfr i liter:
 - dwie cyfry
-- Dwie litery (bez wielkości liter)
+- dwie litery (bez uwzględniania wielkości liter)
 - pięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_fr_passport` zawartość, która odpowiada wzorcowi.
-- Słowo kluczowe z `Keywords_eu_passport_number` lub `Keywords_france_eu_passport_number` znajduje się.
-- Wyrażenie regularne umożliwia `Regex_eu_passport_date3` znalezienie daty w formacie DD MM YYYY lub znalezione słowo kluczowe `Keywords_eu_passport_date` od
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_fr_passport` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date3` regularne znajduje datę w formacie DD MM RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_fr_passport` zawartość, która odpowiada wzorcowi.
-- Słowo kluczowe z `Keywords_eu_passport_number` lub `Keywords_france_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_fr_passport` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` .
 
 
 ```xml
@@ -7119,15 +7119,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_france_eu_passport_number"></a>Keywords_france_eu_passport_number
@@ -7140,8 +7140,8 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - passeportnon
 - passeportn °
 - passeport français
-- passeport jen
-- kartezja passeport
+- passeport livre
+- passeport carte
 - numéro passeport
 - passeport n°
 - n° du passeport
@@ -7149,46 +7149,46 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="france-physical-addresses"></a>Adresy fizyczne we Francji
+## <a name="france-physical-addresses"></a>Adresy fizyczne We Francji
 
-Ta nieoznakowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Francji. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Francji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="france-social-security-number-insee"></a>Numer PE PESZ we Francji (INSEE)
+## <a name="france-social-security-number-insee"></a>Numer ubezpieczenia społecznego We Francji (INSEE)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 15 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Musi odpowiadać jedneowi z dwóch wzorców:
-- 13 cyfr, po którym następuje spacja, a po niej dwie cyfry<br/>
+Musi być zgodny z jednym z dwóch wzorców:
+- 13 cyfr, po których następuje spację, po której następuje dwie cyfry<br/>
 lub
 - 15 kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_french_insee` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_fr_insee.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_french_insee` znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_fr_insee.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja może Func_french_insee lub Func_fr_insee zawartości, która jest taka, jak wzorzec.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_french_insee lub Func_fr_insee znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
     <!-- France INSEE -->
@@ -7210,45 +7210,45 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_fr_insee"></a>Keyword_fr_insee
 
-- code sécu
+- kod sécu
 - d'identité nationale
 - insee
 - fssn #
 - le numéro d'identification nationale
 - le code de la sécurité sociale
-- identyfikator narodowy
-- identyfikacja państwowa
+- identyfikator krajowy
+- identyfikacja krajowa
 - no d'identité
-- nie. d'identité
+- Nr. d'identité
 - numéro d'assurance
 - numéro d'identité
 - numero d'identite
 - numéro de sécu
 - numéro de sécurité sociale
 - no d'identite
-- nie. d'identite
-- ssn
-- ssn #
+- Nr. d'identite
+- Ssn
+- Ssn #
 - sécurité sociale
 - securité sociale
 - securite sociale
 - socialsecuritynumber
-- numer PEZEt
-- kod peł.
+- numer ubezpieczenia społecznego
+- kod zabezpieczenia społecznego
 - numer ubezpieczenia społecznego
 
 
-## <a name="france-tax-identification-number"></a>Numer identyfikacji podatkowej we Francji
+## <a name="france-tax-identification-number"></a>Numer identyfikacyjny podatku we Francji
 
-### <a name="format"></a>Formatowanie
-
-13 cyfr
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 13 cyfr
 
-- Jedna cyfra, która musi być 0, 1, 2 lub 3
+### <a name="pattern"></a>Wzór
+
+13 cyfr
+
+- Jedna cyfra, która musi mieć wartość 0, 1, 2 lub 3
 - Jedna cyfra
 - Spacja (opcjonalnie)
 - Dwie cyfry
@@ -7257,21 +7257,21 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - Spacja (opcjonalnie)
 - Trzy cyfry
 - Spacja (opcjonalnie)
-- Trzy cyfry sprawdzania
+- Trzy cyfry kontrolne
 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_france_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_france_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_france_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_france_eu_tax_file_number`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_france_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_france_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -7296,63 +7296,63 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keywords_france_eu_tax_file_number"></a>Keywords_france_eu_tax_file_number
 
 - numéro d'identification fiscale
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="france-value-added-tax-number"></a>Numer podatku dodanego we Francji
+## <a name="france-value-added-tax-number"></a>Numer podatku od wartości dodanej we Francji
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 13-znakowy wzorzec alfanumeryczny:
 
-- Dwie litery — FR (bez uwzględniania liter)
-- Opcjonalna spacja lub łącznik
-- Dwie litery lub cyfry
-- Opcjonalna spacja, kropka, łącznik lub przecinek
+- dwie litery — FR (bez uwzględniania wielkości liter)
+- opcjonalne spacja lub łącznik
+- dwie litery lub cyfry
+- opcjonalne spacja, kropka, łącznik lub przecinek
 - trzy cyfry
-- Opcjonalna spacja, kropka, łącznik lub przecinek
+- opcjonalne spacja, kropka, łącznik lub przecinek
 - trzy cyfry
-- Opcjonalna spacja, kropka, łącznik lub przecinek
+- opcjonalne spacja, kropka, łącznik lub przecinek
 - trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_france_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keywords_france_value_added_tax_number.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_france_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_france_value_added_tax_number.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_france_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_france_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- France Value Added Tax Number -->
@@ -7371,53 +7371,53 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
 - numer VAT
-- bez podatku VAT
-- vat #
+- numer vat
+- Podatku vat #
 - podatek od wartości dodanej
-- identyfikator no numéro d'identification taxe sur valeur ajoutée
+- identyfikacja syreny bez numéro d'identification taxe sur valeur ajoutée
 - taxe valeur ajoutée
 - taxe sur la valeur ajoutée
 - n° tva
 - numéro de tva
-- numéro d'identification alexen
+- numéro d'identification syrena
 
 
-## <a name="generic-medication-names"></a>Ogólne nazwy leki
+## <a name="generic-medication-names"></a>Nazwy leków ogólnych
 
-Ta nieoznazona nazwana jednostka wykrywa nazwy ogólnych leki, takich jak *acetaminophen*. Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa nazwy leków ogólnych, takich jak *acetaminophen*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
 
 
-## <a name="germany-drivers-license-number"></a>Niemiecki numer prawa jazdy
+## <a name="germany-drivers-license-number"></a>Numer niemieckiego prawa jazdy
 
-Ten typ informacji poufnych jest uwzględniony w poufnym typie informacji numeru rejestracyjnego ue. Jest także dostępna jako autonomiczna jednostka typu informacji poufnych.
+Ta jednostka typu informacji poufnych jest uwzględniana w typie informacji poufnych numer licencji kierowcy UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Kombinacja 11 cyfr i liter
+kombinacja 11 cyfr i liter
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-11 cyfr i liter (bez wielkości liter):
-- cyfrę lub literę
+11 cyfr i liter (bez uwzględniania wielkości liter):
+- cyfra lub litera
 - dwie cyfry
-- Sześć cyfr lub liter
+- sześć cyfr lub liter
 - cyfra
-- cyfrę lub literę
+- cyfra lub litera
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_german_drivers_license znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_german_drivers_license_number znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_german_drivers_license znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_german_drivers_license_number.
+- Suma kontrolna przechodzi.
 
 ```xml
     <!-- German Driver's License Number -->
@@ -7470,49 +7470,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -7520,48 +7520,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -7569,55 +7569,55 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
+- prawo jazdy
+- Prawa jazdy
+- Prawa jazdy
 - prawo jazdy
 - dlno
 
 
-## <a name="germany-identity-card-number"></a>Numer karty tożsamości Niemcy
+## <a name="germany-identity-card-number"></a>Numer niemieckiego numeru karty tożsamości
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-od 1 listopada 2010 r.: Od dziewięciu do jedenastu liter i cyfr
+od 1 listopada 2010 r.: od dziewięciu do jedenastu liter i cyfr
 
 od 1 kwietnia 1987 r. do 31 października 2010 r.: 10 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-od 1 listopada 2010 r.: wzorzec alfanumeryczny od 9 do 11 znaków
-- jeden L, M, N, P, R, T, V, W, X, Y (bez uwzględniania liter)
-- Osiem cyfr lub liter w językach C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y i Z (bez uwzględniania liter)
-- opcjonalna cyfra wyboru
-- Opcjonalnie d/D
+od 1 listopada 2010 r.: od 9 do 11 znaków wzorzec alfanumeryczny
+- jeden L, M, N, P, R, T, V, W, X, Y (bez uwzględniania wielkości liter)
+- osiem cyfr lub liter w C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y i Z (bez uwzględniania wielkości liter)
+- opcjonalna cyfra kontrolna
+- Opcjonalne d/D
 
-od 1 kwietnia 1987 r. do 31 października 2010 r.:
+od dnia 1 kwietnia 1987 r. do dnia 31 października 2010 r.:
 - 10 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_german_id_card_with_check` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keyword_germany_id_card` kluczowe od.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_german_id_card_with_check` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_germany_id_card`
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne `Regex_germany_id_card` znajduje zawartość, która jest taka sama jak wzorzec (9 znaków bez sprawdzenia, że zostały wydane przed 2010 10-cyfrowym wzorcem wydanym w programie posy 2010).
-- Zostanie znalezione słowo kluczowe Keyword_germany_id_card.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_germany_id_card` regularne znajduje zawartość zgodną ze wzorcem (9 znaków bez cyfry kontrolnej wystawionej przed 2010 r. lub 10 cyfr wzorzec wystawiony posy 2010).
+- Znaleziono słowo kluczowe z Keyword_germany_id_card.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_german_id_card_with_check` zawartość, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja `Func_german_id_card_with_check` znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 
 ```xml
@@ -7645,50 +7645,50 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 - ausweis
 - gpid
-- identyfikacja
-- identifikation
+- Identyfikacji
+- identyfikator
 - identifizierungsnummer
-- karta tożsamości
+- Dowód tożsamości
 - numer tożsamości
 - id-nummer
-- identyfikator osobisty
+- osobisty identyfikator
 - personalausweis
 - persönliche id nummer
 - persönliche identifikationsnummer
 - persönliche-id-nummer
 
 
-## <a name="germany-passport-number"></a>Numer paszportu Niemiec
+## <a name="germany-passport-number"></a>Numer paszportu w Niemczech
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 Od 9 do 11 znaków
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- Jedna litera w literze C, F, G, H, J, K (bez uwzględniania liter)
-- Osiem cyfr lub liter w językach C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y i Z (bez uwzględniania liter)
-- opcjonalna cyfra wyboru
-- Opcjonalnie d/D
+- jedna litera w C, F, G, H, J, K (bez uwzględniania wielkości liter)
+- osiem cyfr lub liter w C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y i Z (bez uwzględniania wielkości liter)
+- opcjonalna cyfra kontrolna
+- Opcjonalne d/D
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_german_passport_checksum` zawartość, która odpowiada wzorcowi.
-- Słowo kluczowe z `Keyword_german_passport` lub `Keywords_eu_passport_number_common` znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_german_passport_checksum` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keyword_german_passport` `Keywords_eu_passport_number_common` .
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_german_passport` zawartość, która odpowiada wzorcowi dziewięciu znaków (bez sprawdzenia cyfry i opcjonalnego d/D).
-- Słowo kluczowe z `Keyword_german_passport` lub `Keywords_eu_passport_number_common` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_german_passport` znajduje zawartość zgodną ze wzorcem dziewięciu znaków (bez cyfry wyboru i opcjonalnie d/D).
+- Odnaleziono słowo kluczowe lub `Keyword_german_passport` `Keywords_eu_passport_number_common` .
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_german_passport_checksum` zawartość, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja `Func_german_passport_checksum` znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
     <!-- German Passport Number -->
@@ -7724,65 +7724,65 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - No-Reisepass
 - Nr-Reisepass
 - Reisepass-Nr
-- Passnummer
+- Numer dostępu
 - reisepässe
-- nie.
+- passeport no.
 - passeport no
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 
 ## <a name="germany-physical-addresses"></a>Adresy fizyczne w Niemczech
 
-Ta nieoznakowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Niemiec. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Niemiec. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="germany-tax-identification-number"></a>Numer identyfikacyjny podatku w Niemczech
+## <a name="germany-tax-identification-number"></a>Numer identyfikacji podatkowej w Niemczech
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 cyfr
 
 - Dwie cyfry
-- Spacja opcjonalna
+- Opcjonalne miejsce
 - Trzy cyfry
-- Spacja opcjonalna
+- Opcjonalne miejsce
 - Trzy cyfry
-- Spacja opcjonalna
+- Opcjonalne miejsce
 - Dwie cyfry
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_germany_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_germany_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_germany_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_germany_eu_tax_file_number`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_germany_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_germany_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Germany Tax Identification Number -->
@@ -7802,68 +7802,68 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keywords_germany_eu_tax_file_number"></a>Keywords_germany_eu_tax_file_number
 
 - identifikationsnummer
-- id użytkownika
+- identyfikator steuer
 - steueridentifikationsnummer
 - steuernummer
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
-- zinn #
-- zinn
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
+- Zinn #
+- Zinn
 - zinnnummer
 
 
-## <a name="germany-value-added-tax-number"></a>Numer podatku dodanego w Niemczech
+## <a name="germany-value-added-tax-number"></a>Numer podatku od wartości dodanej w Niemczech
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11-znakowy wzorzec alfanumeryczny:
 
-- a letter D or d
-- Litera E lub e
-- spacja opcjonalna
+- litera D lub d
+- litera E lub e
+- opcjonalne miejsce
 - trzy cyfry
-- opcjonalna spacja lub przecinek
+- opcjonalne miejsce lub przecinek
 - trzy cyfry
-- opcjonalna spacja lub przecinek
+- opcjonalne miejsce lub przecinek
 - trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_germany_value_added_tax_number wyszukuje zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keywords_germany_value_added_tax_number znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_germany_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_germany_value_added_tax_number.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_germany_value_added_tax_number wyszukuje zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_germany_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Germany Value Added Tax Number -->
@@ -7882,35 +7882,35 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
 
 - numer VAT
-- bez podatku VAT
-- vat #
+- numer vat
+- Podatku vat #
 - vat# mehrwertsteuer
-- mjst
+- mwst
 - mehrwertsteuer identifikationsnummer
 - mehrwertsteuer nummer
 
 
 ## <a name="greece-drivers-license-number"></a>Numer prawa jazdy w Grecji
 
-Ten podmiot jest uwzględniony w poufnym typie informacji Numer prawa jazdy w UE. Jest także dostępna jako autonomiczna jednostka typu informacji poufnych.
+Ta jednostka jest uwzględniona w typie informacji poufnych numeru prawa jazdy UE. Jest ona również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr bez spacji i ograniczników
+dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_greece_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_greece_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_greece_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` .
 
 ```xml
       <!-- Greece Driver's License Number -->
@@ -7927,7 +7927,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -7936,49 +7936,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -7986,48 +7986,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -8035,21 +8035,21 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver nie s_license_number
+#### <a name="keywords_greece_eu_drivers_license_number"></a>s_license_number Keywords_greece_eu_driver
 
 - δεια οδήγησης
 - Adeia odigisis
@@ -8057,13 +8057,13 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - Δίπλωμα οδήγησης
 
 
-## <a name="greece-national-id-card"></a>Karta kredytowa państwowa Grecja
+## <a name="greece-national-id-card"></a>Krajowa karta tożsamości Grecji
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Kombinacja 7-8 liter i cyfr oraz kreski
+Kombinacja 7-8 liter i cyfr plus kreska
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Siedem liter i cyfr (stary format):
 - Jedna litera (dowolna litera alfabetu greckiego)
@@ -8071,22 +8071,22 @@ Siedem liter i cyfr (stary format):
 - Sześć cyfr
 
 Osiem liter i cyfr (nowy format):
-- Dwie litery, których znaki wielkich liter występują zarówno w alfabecie greckim, jak i w alfabecie łacińskim (ABEZHIKMNOPTYX)
+- Dwie litery, których wielkie litery występują zarówno w alfabecie greckim, jak i łacińskim (ABEZHIKMNOPTYX)
 - Kreska
 - Sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_greece_id_card zawartości, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_greece_id_card.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_greece_id_card znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_greece_id_card.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_greece_id_card zawartości, która jest taka, jak wzorzec.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_greece_id_card znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Greece National ID Card -->
@@ -8105,40 +8105,40 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
-- identyfikator grecki
-- grecki identyfikator narodowy
-- Karta osobistego identyfikatora greckiego
-- identyfikator grecki
-- karta tożsamości
-- tautotita
-- ταυτότητα
+- grecki identyfikator
+- grecki identyfikator krajowy
+- grecki osobisty identyfikator
+- identyfikator policji greckiej
+- Dowód tożsamości
+- Tautotita
+- Ταυτότητα
 - ταυτότητας
 
 
 ## <a name="greece-passport-number"></a>Numer paszportu Grecji
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery, po których następuje siedem cyfr bez spacji i ograniczników
+Dwie litery, po których następuje siedem cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Dwie litery, po których następuje siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_greece_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_greece_eu_passport_number` znajduje się.
-- Wyrażenie regularne umożliwia `Regex_greece_eu_passport_date` znalezienie daty w formacie DD MMM YY (przykład — 28 sierpnia 19) `Keywords_greece_eu_passport_date` lub słowa kluczowego z.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_greece_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` .
+- Wyrażenie `Regex_greece_eu_passport_date` regularne znajduje datę w formacie DD MMM RR (przykład — 28 sierpnia 19) lub znaleziono słowo kluczowe z `Keywords_greece_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_greece_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_greece_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_greece_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` .
 
 ```xml
       <!-- Greece Passport Number -->
@@ -8168,15 +8168,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_greece_eu_passport_number"></a>Keywords_greece_eu_passport_number
@@ -8186,45 +8186,45 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - αριθμός διαβατηριο
 
 
-## <a name="greece-physical-addresses"></a>Grecja ( adresy fizyczne)
+## <a name="greece-physical-addresses"></a>Adresy fizyczne Grecji
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Grecji. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Grecji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
-## <a name="greece-social-security-number-amka"></a>Numer PE PEŁ (AMKA)
+## <a name="greece-social-security-number-amka"></a>Numer ubezpieczenia społecznego w Grecji (AMKA)
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - Sześć cyfr jako data urodzenia RRMMDD
 - Cztery cyfry
 - cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_greece_eu_ssn` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_greece_eu_ssn_or_equivalent` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_greece_eu_ssn` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_greece_eu_ssn_or_equivalent`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_greece_eu_ssn` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_greece_eu_ssn` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -8243,43 +8243,43 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
 
-- ssn
-- ssn #
-- nr ubezpieczenia społecznego
+- Ssn
+- Ssn #
+- zabezpieczenia społecznego nie
 - socialsecurityno #
-- numer PEZEt
-- amka
+- numer ubezpieczenia społecznego
+- Amka
 - a.m.k.a.
 - Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
 
-## <a name="greece-tax-identification-number"></a>Numer identyfikacji podatkowej Grecja
+## <a name="greece-tax-identification-number"></a>Numer identyfikacji podatkowej Grecji
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 Dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie regularne umożliwia  `Regex_greece_eu_tax_file_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_greece_eu_tax_file_number` kluczowe od.
+- Wyrażenie  `Regex_greece_eu_tax_file_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_greece_eu_tax_file_number`
 
 ```xml
       <!-- Greek Tax Identification Number -->
@@ -8295,61 +8295,62 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_greece_eu_tax_file_number"></a>Keywords_greece_eu_tax_file_number
 
-- afm #
-- afm
-- aμμ|a naμ αα μ μ 2
-- aμμ
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- Afm #
+- Afm
+- aφμ|aφμ αριθμιι
+- aφμ
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
 - rejestr podatkowy nie
 - numer rejestru podatkowego
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
 - taxregistryno #
-- identyfikator tin
-- nie tin
-- tin #
+- identyfikator cyny
+- nie cyny
+- Tin #
 - αριθμός φορολογικού μητρώου
 - τον αριθμό φορολογικού μητρώου
 - φορολογικού μητρώου νο
 
 
-## <a name="hong-kong-identity-card-hkid-number"></a>Numer karty tożsamości Hongkongu (HKID)
+## <a name="hong-kong-identity-card-hkid-number"></a>Numer karty tożsamości (HKID) w Hongkongu
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Kombinacja 8-9 liter i cyfr oraz opcjonalnych nawiasów wokół końcowego znaku
+Kombinacja od 8 do 9 liter i cyfr oraz opcjonalnych nawiasów wokół znaku końcowego
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Kombinacja 8-9 liter:
-- 1–2 litery (bez wielkości liter)
+Kombinacja od 8 do 9 liter:
+- 1–2 litery (bez uwzględniania wielkości liter)
 - Sześć cyfr
-- Końcowy znak (dowolna cyfra lub litera A), który jest cyfrą kontrolną i opcjonalnie jest ujęty w nawiasy.
+- opcjonalne miejsce
+- znak wyboru (dowolna cyfra lub litera A), który jest opcjonalnie ujęty w nawiasy
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_hong_kong_id_card znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_hong_kong_id_card znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_hong_kong_id_card znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_hong_kong_id_card.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_hong_kong_id_card znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_hong_kong_id_card znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Hong Kong Identity Card (HKID) number -->
@@ -8371,10 +8372,10 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - hkid
 - hong kong identity card
 - HKIDC
-- identyfikator
-- karta tożsamości
-- karta tożsamości hk
-- hong kong id
+- id card
+- Dowód tożsamości
+- hk identity card
+- identyfikator hongkongu
 - 香港身份證
 - 香港永久性居民身份證
 - 身份證
@@ -8407,29 +8408,29 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - 香港特別行政區非永久性居民身分証
 
 
-## <a name="hungary-drivers-license-number"></a>Numer prawa jazdy na Węgry
+## <a name="hungary-drivers-license-number"></a>Węgierski numer prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery i sześć cyfr
+Dwie litery, po których następuje sześć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Dwie litery i sześć cyfr:
 
-- Dwie litery (bez wielkości liter)
+- Dwie litery (bez uwzględniania wielkości liter)
 - Sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie regularne umożliwia  `Regex_hungary_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_hungary_eu_driver's_license_number` znajduje się.
+- Wyrażenie  `Regex_hungary_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` .
 
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -8445,7 +8446,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -8454,49 +8455,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -8504,48 +8505,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -8553,51 +8554,51 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver nie s_license_number
+#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver s_license_number Keywords_hungary_eu_driver
 
 - vezetoi engedely
-- vezetõi engedély
-- vezetõi engedélyek
+- vezetői engedély
+- vezetői engedélyek
 
 
-## <a name="hungary-passport-number"></a>Numer paszportu Węgry
+## <a name="hungary-passport-number"></a>Węgierski numer paszportu
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery, po których następuje sześć lub siedem cyfr bez spacji i ograniczników
+Dwie litery, po których następuje sześć lub siedem cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Dwie litery, po których następuje sześć lub siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_hungary_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_hungary_eu_passport_number` znajduje się.
-- Wyrażenie regularne umożliwia `Regex_hungary_eu_passport_date` znalezienie daty w formacie DD MMM/MMM YY (przykład — 01 MÁR/MAR 12) `Keywords_eu_passport_date` lub słowa kluczowego od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_hungary_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` .
+- Wyrażenie `Regex_hungary_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RR (przykład — 01 MÁR/MAR 12) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_hungary_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_hungary_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_hungary_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` .
 
 ```xml
       <!-- Hungary Passport Number -->
@@ -8626,15 +8627,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_hungary_eu_passport_number"></a>Keywords_hungary_eu_passport_number
@@ -8645,46 +8646,46 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="hungary-personal-identification-number"></a>Osobisty numer identyfikacyjny Węgry
+## <a name="hungary-personal-identification-number"></a>Węgierski osobisty numer identyfikacyjny
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 cyfr:
 
-- Jedna cyfra odpowiadająca płci, 1 dla mężczyzny, 2 dla kobiety. Inne liczby są również możliwe dla osób, które mają urodzić się przed 1900 rokiem, lub też tych, którzy mają podwójne zamówienie.
+- Jedna cyfra odpowiadająca płci, 1 dla mężczyzn, 2 dla kobiety. Inne liczby są również możliwe dla obywateli urodzonych przed 1900 r. lub obywateli z podwójnym obywatelstwem.
 - Sześć cyfr odpowiadających dacie urodzenia (RRMMDD)
-- Trzy cyfry odpowiadające numerowi kolejnemu
+- Trzy cyfry odpowiadające numerowi seryjnemu
 - Jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja znajduje  `Func_hungary_eu_national_id_card` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_hungary_eu_national_id_card` kluczowe od.
+- Funkcja  `Func_hungary_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_hungary_eu_national_id_card`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja znajduje  `Func_hungary_eu_national_id_card` zawartość, która odpowiada wzorcowi.
+- Funkcja  `Func_hungary_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Hungary Personal Identification Number -->
@@ -8707,48 +8708,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
-- numer identyfikacyjny
+- numer identyfikatora
 - numer identyfikacyjny
 - sz ig
-- sz. ig.
+- Sz. Ig.
 - sz.ig.
 - személyazonosító igazolvány
 - személyi igazolvány
 
 
-## <a name="hungary-physical-addresses"></a>Adresy fizyczne Węgry
+## <a name="hungary-physical-addresses"></a>Adresy fizyczne Na Węgrzech
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym Węgry. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Węgier. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="hungary-social-security-number-taj"></a>Węgry: numer PE PEZ
+## <a name="hungary-social-security-number-taj"></a>Węgierski numer ubezpieczenia społecznego (TAJ)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 Dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja znajduje  `Func_hungary_eu_ssn_or_equivalent` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_hungary_eu_ssn_or_equivalent` kluczowe od.
+- Funkcja  `Func_hungary_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_hungary_eu_ssn_or_equivalent`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja znajduje  `Func_hungary_eu_ssn_or_equivalent` zawartość, która odpowiada wzorcowi.
+- Funkcja  `Func_hungary_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
@@ -8767,60 +8768,60 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-- węgierski numer PESZ
-- numer PEZEt
+- węgierski numer ubezpieczenia społecznego
+- numer ubezpieczenia społecznego
 - socialsecuritynumber #
 - hssn #
 - socialsecuritynno
 - hssn
-- taj
-- taj #
-- ssn
-- ssn #
-- nr ubezpieczenia społecznego
+- Taj
+- Taj #
+- Ssn
+- Ssn #
+- zabezpieczenia społecznego nie
 - áfa
 - közösségi adószám
 - általános forgalmi adó szám
-- hozzáadottérk adó
+- hozzáadottérték adó
 - áfa szám
 - magyar áfa szám
 
 
-## <a name="hungary-tax-identification-number"></a>Numer identyfikacji podatkowej Węgry
+## <a name="hungary-tax-identification-number"></a>Węgierski numer identyfikacji podatkowej
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-10 cyfr bez spacji i ograniczników
+10 cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr:
 
-- Jedna cyfra, która musi być "8"
+- Jedna cyfra, która musi mieć wartość "8"
 - Osiem cyfr
 - Jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja znajduje  `Func_hungary_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_hungary_eu_tax_file_number` kluczowe od.
+- Funkcja  `Func_hungary_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_hungary_eu_tax_file_number`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja znajduje  `Func_hungary_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+- Funkcja  `Func_hungary_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Hungary Tax Identification Number -->
@@ -8846,63 +8847,63 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - adóazonosító szám
 - adóhatóság szám
 - adószám
-- węgierskia tin
-- hungatinatin #
-- urząd skarbowy nie
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- węgierski cyna
+- hungatiantin #
+- organ podatkowy nie
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 - numer VAT
 
 
-## <a name="hungary-value-added-tax-number"></a>Węgry: numer podatku dodanego
+## <a name="hungary-value-added-tax-number"></a>Węgierski numer podatku od wartości dodanej
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10-znakowy wzorzec alfanumeryczny:
 
-- dwa litery — HU lub hu
-- spacja opcjonalna
+- dwie litery — HU lub hu
+- opcjonalne miejsce
 - osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja Func_hungarian_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keywords_hungarian_value_added_tax_number.
+- Funkcja Func_hungarian_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_hungarian_value_added_tax_number.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja Func_hungarian_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
+- Funkcja Func_hungarian_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Hungarian Value Added Tax Number -->
@@ -8921,30 +8922,30 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
 
-- vat
-- numer podatku dodanego
-- vat #
+- Podatku vat
+- numer podatku od wartości dodanej
+- Podatku vat #
 - vatno #
-- węgierskievatno #
-- nie ma podatku.
+- hungarianvatno #
+- numer podatkowy.
 - podatek od wartości dodanej áfa
 - közösségi adószám
 - általános forgalmi adó szám
-- hozzáadottérk adó
+- hozzáadottérték adó
 - áfa szám
 
 
-## <a name="iceland-physical-addresses"></a>Islandzkie adresy fizyczne
+## <a name="iceland-physical-addresses"></a>Adresy fizyczne Islandii
 
-Ta nieoznazona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Islandii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Islandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
-## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>Niepełnosprawności wymienione w amerykańskiej ocenie niepełnosprawności w ramach ubezpieczenia społecznego
+## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>Upośledzenia wymienione w ocenie niepełnosprawności w USA w ramach zabezpieczenia społecznego
 
-Ta nieoznazona nazwana jednostka wykrywa nazwy niepełnosprawności wyszczególnionych w U.S. Disability Evaluation w ramach ubezpieczenia społecznego, takich jak *dystrophy dystrophy*. Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa nazwy upośledzenia wymienione w amerykańskiej ocenie niepełnosprawności w ramach ubezpieczenia społecznego, takie jak *dystrofia mięśniowa*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -8953,33 +8954,33 @@ High (Wysoki)
 
 ## <a name="india-drivers-license-number"></a>Numer prawa jazdy w Indiach
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 15-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 15 liter lub cyfr:
-- Dwie litery wskazujące kod województwa
-- opcjonalna spacja lub kreska
-- Dwie cyfry oznaczające kod miasta
-- opcjonalna spacja lub kreska
-- Cztery cyfry oznaczające rok wydania
-- opcjonalna spacja lub kreska
-- Siedem cyfr
+- dwie litery wskazujące kod stanu
+- opcjonalne miejsce lub kreska
+- dwie cyfry wskazujące kod miasta
+- opcjonalne miejsce lub kreska
+- cztery cyfry wskazujące rok problemu
+- opcjonalne miejsce lub kreska
+- siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_india_driving_license` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keywords_eu_driver's_license_number_common` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_india_driving_license` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_eu_driver's_license_number_common`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_india_driving_license` znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_india_driving_license` regularne znajduje zawartość zgodną ze wzorcem.
 
 
 ```xml
@@ -8997,7 +8998,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number_common"></a>Keywords_eu_driver nie s_license_number_common
+#### <a name="keywords_eu_drivers_license_number_common"></a>s_license_number_common Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -9006,49 +9007,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -9056,48 +9057,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -9105,51 +9106,51 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
 
 ## <a name="india-gst-number"></a>Numer GST w Indiach
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 15-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 15 liter lub cyfr:
-- Dwie cyfry reprezentujące prawidłowy kod województwa
-- opcjonalna spacja lub kreska
-- Dziesięć znaków reprezentujących numer konta trwałego (PAN) 
+- dwie cyfry reprezentujące prawidłowy kod stanu
+- opcjonalne miejsce lub kreska
+- dziesięć znaków reprezentujących stały numer konta (PAN) 
 - jedna litera lub cyfra
-- opcjonalna spacja lub kreska
+- opcjonalne miejsce lub kreska
 - jedna litera "z" lub "Z"
-- opcjonalna spacja lub kreska
+- opcjonalne miejsce lub kreska
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_india_gst_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keyword_india_gst_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_india_gst_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_india_gst_number`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_india_gst_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_india_gst_number` znajduje zawartość zgodną ze wzorcem.
 
 
 ```xml
@@ -9169,39 +9170,39 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_india_gst_number"></a>Keyword_india_gst_number
 
-- gst
+- Gst
 - gstin
-- Podatek od towarów i usług
+- podatek od towarów i usług
 - podatek od towarów i usług
 
 
-## <a name="india-permanent-account-number-pan"></a>Stały numer konta w Indiach (PAN)
+## <a name="india-permanent-account-number-pan"></a>Numer konta stałego w Indiach (PAN)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10 liter lub cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 liter lub cyfr:
-- Trzy litery (bez wielkości liter)
-- Litera w literze C, P, H, F, A, T, B, L, J, G (bez wielkości liter)
+- Trzy litery (bez uwzględniania wielkości liter)
+- Litera w C, P, H, F, A, T, B, L, J, G (bez uwzględniania wielkości liter)
 - Litera
 - Cztery cyfry
-- Litera, która jest cyfrą kontrolną w porządku alfabetycznym
+- Litera, która jest alfabetyczną cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_india_permanent_account_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_india_permanent_account_number.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_india_permanent_account_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_india_permanent_account_number.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_india_permanent_account_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_india_permanent_account_number znajduje zawartość zgodną ze wzorcem.
 
 
 ```xml
@@ -9223,40 +9224,40 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
-- Trwały numer konta
+- Numer konta stałego
 - PAN
 
-## <a name="india-unique-identification-aadhaar-number"></a>Unikatowy numer identyfikacyjny w Indiach (Aadhaar)
+## <a name="india-unique-identification-aadhaar-number"></a>Unikatowy numer identyfikacyjny Indii (Aadhaar)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 12 cyfr zawierających opcjonalne spacje lub kreski
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 12 cyfr:
-- Cyfra niebędąca cyfrą 0 lub 1
+- Cyfra, która nie jest 0 lub 1
 - Trzy cyfry
-- Opcjonalna spacja lub kreska
+- Opcjonalne miejsce lub kreska
 - Cztery cyfry
-- Opcjonalna spacja lub kreska
-- Ostatnia cyfra, czyli cyfra wyboru
+- Opcjonalne miejsce lub kreska
+- Cyfra końcowa, która jest cyfrą kontrolną
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_india_aadhaar znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_india_aadhar znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_india_aadhaar znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_india_aadhar.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja Func_india_aadhaar znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+- Funkcja Func_india_aadhaar znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- India Unique Identification (Aadhaar) number -->
@@ -9276,35 +9277,35 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - aadhaar
 - aadhar
 - aadhar #
-- uid
+- Uid
 - आधार
 - uidai
 
 
 ## <a name="india-voter-id-card"></a>India Voter Id Card
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 liter lub cyfr:
-- Trzy litery
-- Siedem cyfr
+- trzy litery
+- siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_india_voter_id_card` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keyword_india_voter_id_card` kluczowe od.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_india_voter_id_card` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_india_voter_id_card`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_india_voter_id_card` znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Wyrażenie `Regex_india_voter_id_card` regularne znajduje zawartość zgodną ze wzorcem.
 
 
 ```xml
@@ -9324,44 +9325,44 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_india_voter_id_card"></a>Keyword_india_voter_id_card
 
-- głosujący
+- Wyborców
 - voterid
-- karta wyborcza
-- voteridcard
-- Karta tożsamości ze zdjęciem e wyeksymrowa
-- ODTĄD
-- ECI
-- komunikowanie wyborów
+- karta wyborców
+- karta voteridcard
+- dowód tożsamości ze zdjęciem wyborczym
+- EPIC
+- INE
+- przemieszczenia wyborcze
 
 
-## <a name="indonesia-identity-card-ktp-number"></a>Numer karty tożsamości Indonezyjskiej (KTP)
+## <a name="indonesia-identity-card-ktp-number"></a>Numer karty tożsamości Indonezji (KTP)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-16 cyfr zawierające kropki opcjonalne
+16 cyfr zawierających opcjonalne kropki
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 16 cyfr:
 - Dwucyfrowy kod prowincji
-- Okres (opcjonalny)
-- Dwucyfrowy regency lub kod miasta
-- Dwucyfrowy kod podrzędny
-- Okres (opcjonalny)
-- Sześć cyfr w formacie DDMMYY, czyli data urodzenia
-- Okres (opcjonalny)
+- Okres (opcjonalnie)
+- Rejestr dwucyfrowy lub kod miasta
+- Dwucyfrowy kod podokrężny
+- Okres (opcjonalnie)
+- Sześć cyfr w formacie DDMMYY, które są datą urodzenia
+- Okres (opcjonalnie)
 - Cztery cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie regularne Regex_indonesia_id_card umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z Keyword_indonesia_id_card znajduje się.
+- Wyrażenie regularne Regex_indonesia_id_card znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_indonesia_id_card.
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -9380,94 +9381,94 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - Kartu Tanda Penduduk
 - Nomor Induk Kependudukan
 
-## <a name="international-banking-account-number-iban"></a>Numer konta bankowego międzynarodowego (IBAN)
+## <a name="international-banking-account-number-iban"></a>Numer międzynarodowego konta bankowego (IBAN)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Kod kraju (dwie litery) oraz cyfry wyboru (dwie cyfry) oraz numer bban (do 30 znaków)
+Kod kraju (dwie litery) plus cyfry kontrolne (dwie cyfry) oraz numer bban (do 30 znaków)
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Wzorzec musi zawierać wszystkie następujące elementy:
 
-- Dwulitowy kod kraju
-- Dwie cyfry sprawdzania (po niej spacja opcjonalna)
-- 1–7 grup po czterech literach lub cyfrach (można je rozdzielić spacjami)
-- 1-3 litery lub cyfry
+- Dwuliterowy kod kraju
+- Dwie cyfry kontrolne (po których następuje opcjonalne spacja)
+- Od 1 do 7 grup po cztery litery lub cyfry (mogą być oddzielone spacjami)
+- 1–3 litery lub cyfry
 
-Format poszczególnych krajów jest nieco inny. Typ informacji poufnych IBAN obejmuje te 60 krajów:
+Format dla każdego kraju jest nieco inny. Typ informacji poufnych IBAN obejmuje następujące 60 krajów:
 
-- ad
-- ae
-- al
-- o godzinie
-- az
-- ba
-- be
-- bg
-- bh
-- ch
-- cr
-- cy
-- cz
-- de
-- dk
-- wykonaj
-- ee
-- es
-- fi
-- cy
-- fr
-- gb
-- ge
-- gi
-- gl
-- gr
-- z o.o.
-- hu
-- ie
-- il
-- jest
-- it
-- kw
-- kz
-- lb
-- li
-- lt
-- lu
-- lv
-- mc
-- md
-- ja
-- mk
-- mr
-- mt
+- Ad
+- Ae
+- Al
+- O
+- Az
+- Ba
+- Bve
+- Bg
+- Bh
+- Ch
+- Cr
+- Cy
+- Cz
+- De
+- Dk
+- Zrobić
+- Ee
+- Es
+- Fi
+- Fo
+- O
+- Gb
+- Ge
+- Gi
+- Gl
+- Gr
+- Hr
+- Hu
+- Ie
+- Il
+- Jest
+- to
+- Kw
+- Kz
+- Funtów
+- Li
+- Por
+- Lu
+- Lv
+- Mc
+- Md
+- Me
+- Mk
+- Pan
+- Mt
 - mu
-- nl
-- nie
-- pl
-- pt
-- ro
+- Nl
+- Nr
+- Pl
+- Pt
+- Ro
 - rs
-- sa
-- se
-- si
-- sk
-- sm
-- tn
-- tr
-- vg
+- Sa
+- Se
+- Si
+- Sk
+- Sm
+- Tn
+- Tr
+- Vg
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja Func_iban znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+- Funkcja Func_iban znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <Entity id="e7dc4711-11b7-4cb0-b88b-2c394a771f0e" patternsProximity="300" recommendedConfidence="85">
@@ -9482,28 +9483,28 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 Brak
 
 
-## <a name="international-classification-of-diseases-icd-10-cm"></a>Międzynarodowa klasyfikacja kwalifikacji (ICD-10-CM)
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Międzynarodowa klasyfikacja chorób (ICD-10-CM)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 Słownik
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Słowo kluczowe
+Słowa kluczowego
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Zostanie znalezione słowo kluczowe Dictionary_icd_10_updated.
-- Zostanie znalezione słowo kluczowe Dictionary_icd_10_codes.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Znaleziono słowo kluczowe z Dictionary_icd_10_updated.
+- Znaleziono słowo kluczowe z Dictionary_icd_10_codes.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Słowo kluczowe ze Dictionary_icd_10_ zostanie znalezione.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Znaleziono słowo kluczowe z Dictionary_icd_10_ zaktualizowane.
 
 ```xml
       <!-- ICD-10 CM -->
@@ -9520,33 +9521,33 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-Dowolny termin ze słownika Dictionary_icd_10_updated słów kluczowych, który jest oparty na klasyfikacji międzynarodowej zmian, dziesiątej poprawki i modyfikacji choroby [choroby (ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604). Ten typ wyszukuje tylko termin, a nie kody ubezpieczenia.
+Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_updated, który jest oparty na [międzynarodowej klasyfikacji chorób, dziesiątej poprawce, modyfikacji klinicznej (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Ten typ szuka tylko terminu, a nie kodów ubezpieczeniowych.
 
-Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_codes, który jest oparty na klasyfikacji międzynarodowej, dziesiątej poprawki i modyfikacji choroby [choroby (ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604). Ten typ wyszukuje tylko kody ubezpieczenia, a nie opis.
+Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_codes, który jest oparty na [międzynarodowej klasyfikacji chorób, dziesiątej poprawce, modyfikacji klinicznej (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Ten typ szuka tylko kodów ubezpieczeniowych, a nie opisu.
 
 
-## <a name="international-classification-of-diseases-icd-9-cm"></a>Międzynarodowa klasyfikacja kwalifikacji (ICD-9-CM)
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Międzynarodowa klasyfikacja chorób (ICD-9-CM)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 Słownik
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Słowo kluczowe
+Słowa kluczowego
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Zostanie znalezione słowo kluczowe Dictionary_icd_9_updated.
-- Słowo kluczowe z Dictionary_icd_9_codes znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Znaleziono słowo kluczowe z Dictionary_icd_9_updated.
+- Znaleziono słowo kluczowe z Dictionary_icd_9_codes.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Zostanie znalezione słowo kluczowe Dictionary_icd_9_updated.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Znaleziono słowo kluczowe z Dictionary_icd_9_updated.
 
 ```xml
     <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -9562,39 +9563,39 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-Dowolny termin ze słownika Dictionary_icd_9_updated słów kluczowych, który jest oparty na klasyfikacji międzynarodowej jeden na jedenastej poprawki, modyfikacje klinicznych [(ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Ten typ wyszukuje tylko termin, a nie kody ubezpieczenia.
+Dowolny termin ze słownika słów kluczowych Dictionary_icd_9_updated, który jest oparty na [Międzynarodowej Klasyfikacji Chorób, Dziewiąta poprawka, Modyfikacja kliniczna (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Ten typ szuka tylko terminu, a nie kodów ubezpieczeniowych.
 
-Dowolny termin ze słownika Dictionary_icd_9_codes słów kluczowych, który jest oparty na klasyfikacji międzynarodowej na podstawie klasyfikacji międzynarodowej, dziewiątej poprawki [, modyfikacji klinicznych (ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605). Ten typ wyszukuje tylko kody ubezpieczenia, a nie opis.
+Dowolny termin ze słownika słów kluczowych Dictionary_icd_9_codes, który jest oparty na [Międzynarodowej Klasyfikacji Chorób, Dziewiąta poprawka, Modyfikacja kliniczna (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Ten typ szuka tylko kodów ubezpieczeniowych, a nie opisu.
 
 ## <a name="ip-address"></a>Adres IP
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 #### <a name="ipv4"></a>IPv4:
-Złożony wzorzec, który uwzględnia sformatowane (kropki) i niesformatowane (bez okresów) wersje adresów IPv4
+Złożony wzorzec, który uwzględnia sformatowane (okresy) i niesformatowane (bez kropki) wersje adresów IPv4
 
 #### <a name="ipv6"></a>IPv6:
-Złożony wzorzec, który uwzględnia sformatowane liczby IPv6 (który zawiera dwukropki)
+Złożony wzorzec, który uwzględnia sformatowane liczby IPv6 (które obejmują dwukropki)
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-W przypadku protokołu IPv6 zasady DLP mają wysoką pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_ipv6_address umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Nie można odnaleźć słowa kluczowego Keyword_ipaddress.
+W przypadku protokołu IPv6 zasady DLP mają dużą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_ipv6_address znajduje zawartość zgodną ze wzorcem.
+- Nie znaleziono słowa kluczowego z Keyword_ipaddress.
 
-W przypadku protokołu IPv4 zasady DLP mają wysoką pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_ipv4_address umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_ipaddress.
+W przypadku protokołu IPv4 zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_ipv4_address znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_ipaddress.
 
-W przypadku protokołu IPv6 zasady DLP mają wysoką pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_ipv6_address umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Nie można odnaleźć słowa kluczowego Keyword_ipaddress.
+W przypadku protokołu IPv6 zasady DLP mają dużą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_ipv6_address znajduje zawartość zgodną ze wzorcem.
+- Nie znaleziono słowa kluczowego z Keyword_ipaddress.
 
 ```xml
     <!-- IP Address --> 
@@ -9624,34 +9625,34 @@ W przypadku protokołu IPv6 zasady DLP mają wysoką pewność, że są wykrywan
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- IP (to słowo kluczowe zróżnicuje wielkość liter)
+- Adres IP (to słowo kluczowe uwzględnia wielkość liter)
 - adres IP
 - adresy IP
 - protokół internetowy
-- IP-כתובת  ש
+- IP-כתובת ה
 
 
 ## <a name="ip-address-v4"></a>Adres IP w wersji 4
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Złożony wzorzec, który uwzględnia sformatowane (kropki) i niesformatowane (bez okresów) wersje adresów IPv4
+Złożony wzorzec, który uwzględnia sformatowane (okresy) i niesformatowane (bez kropki) wersje adresów IPv4
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_ipv4_address` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keyword_ipaddress` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_ipv4_address` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_ipaddress`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_ipv4_address` znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_ipv4_address` regularne znajduje zawartość zgodną ze wzorcem.
 
 
 ```xml
@@ -9671,34 +9672,34 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- IP (zróżnicowa wielkość liter)
+- Adres IP (uwzględnia wielkość liter)
 - adres IP
 - adresy IP
 - protokół internetowy
-- IP-כתובת  ש
+- IP-כתובת ה
 
 
 ## <a name="ip-address-v6"></a>Adres IP w wersji 6
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Złożony wzorzec, który uwzględnia sformatowane liczby IPv6 (który zawiera dwukropki)
+Złożony wzorzec, który uwzględnia sformatowane liczby IPv6 (które obejmują dwukropki)
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_ipv6_address` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keyword_ipaddress` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_ipv6_address` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_ipaddress`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_ipv6_address` znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_ipv6_address` regularne znajduje zawartość zgodną ze wzorcem.
 
 
 ```xml
@@ -9718,36 +9719,36 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- IP (zróżnicowa wielkość liter)
+- Adres IP (uwzględnia wielkość liter)
 - adres IP
 - adresy IP
 - protokół internetowy
-- IP-כתובת  ש
+- IP-כתובת ה
 
 
-## <a name="ireland-drivers-license-number"></a>Numer prawa jazdy Irlandii
+## <a name="ireland-drivers-license-number"></a>Numer prawa jazdy w Irlandii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 Sześć cyfr, po których następuje cztery litery
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Sześć cyfr i cztery litery:
 
 - Sześć cyfr
-- Cztery litery (bez wielkości liter)
+- Cztery litery (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie regularne umożliwia  `Regex_ireland_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_ireland_eu_driver's_license_number` znajduje się.
+- Wyrażenie  `Regex_ireland_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` .
 
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -9764,7 +9765,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -9773,49 +9774,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -9823,48 +9824,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -9872,52 +9873,52 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver s_license_number
+#### <a name="keywords_ireland_eu_drivers_license_number"></a>s_license_number Keywords_ireland_eu_driver
 
 - ceadúnas tiomána
 - ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>Numer paszportu Irlandii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery i cyfry, po których następuje siedem cyfr bez spacji i ograniczników
+Dwie litery lub cyfry, po których następuje siedem cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Dwie litery lub cyfry, po których następuje siedem cyfr:
 
-- Dwie cyfry lub litery (bez wielkości liter)
+- Dwie cyfry lub litery (bez uwzględniania wielkości liter)
 - Siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_ireland_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_ireland_eu_passport_number` znajduje się.
-- Wyrażenie regularne umożliwia `Regex_ireland_eu_passport_date` znalezienie daty w formacie DD MMM/MMM YYYY (przykład — 01 BEA/MAY 1988) `Keywords_eu_passport_date` lub słowa kluczowego od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_ireland_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` .
+- Wyrażenie `Regex_ireland_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RRRR (przykład - 01 BEA/MAY 1988) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_ireland_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_ireland_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_ireland_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` .
 
 ```xml
       <!-- Ireland Passport Number -->
@@ -9947,21 +9948,21 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
 - passeport numero
-- uimhreacha papanna
+- uimhreacha pasanna
 - uimhir pas
 - uimhir phas
 - uimhreacha pas
@@ -9970,45 +9971,45 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="ireland-personal-public-service-pps-number"></a>Numer usługi publicznej w Irlandii (PPS)
+## <a name="ireland-personal-public-service-pps-number"></a>Numer służby publicznej (PPS) w Irlandii
 
-### <a name="format"></a>Formatowanie
-
-Stary format (do 31 grudnia 2012 r.):
-- Siedem cyfr i 1-2 litery
-
-Nowy format (1 stycznia 2013 i później):
-- Siedem cyfr, po których następuje dwie litery
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 Stary format (do 31 grudnia 2012 r.):
-- Siedem cyfr
-- od jednego do dwóch liter (bez wielkości liter)
+- siedem cyfr, po których następuje od 1 do 2 liter
 
-Nowy format (1 stycznia 2013 i później):
-- Siedem cyfr
-- literę (bez rozróżnianą wielkości liter), która jest cyfrą sprawdzania alfabetycznego
-- Opcjonalna litera z zakresu od A do I lub "W"
+Nowy format (1 stycznia 2013 r. i później):
+- siedem cyfr, po których następuje dwie litery
 
-### <a name="checksum"></a>Checksum
+### <a name="pattern"></a>Wzór
+
+Stary format (do 31 grudnia 2012 r.):
+- siedem cyfr
+- od jednej do dwóch liter (bez uwzględniania wielkości liter)
+
+Nowy format (1 stycznia 2013 r. i później):
+- siedem cyfr
+- litera (bez uwzględniania wielkości liter), która jest alfabetyczną cyfrą kontrolną
+- Opcjonalna litera w zakresie A-I lub "W"
+
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_ireland_pps wyszukuje zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keywords_ireland_eu_national_id_card.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_ireland_pps znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_ireland_eu_national_id_card.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_ireland_pps wyszukuje zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_ireland_pps znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
       <!-- Ireland Personal Public Service (PPS) Number -->
@@ -10029,84 +10030,84 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 - usługa tożsamości klienta
 - numer identyfikacyjny
-- identyfikator osobisty
+- osobisty numer identyfikatora
 - osobisty numer usługi publicznej
 - usługa osobista nie
-- phearsantarbhíse poiblí
-- pps no
+- phearsanta seirbhíse poiblí
+- pps nie
 - numer pps
-- liczba pps
-- Nie usługi pps
+- pps num
+- pps service no
 - ppsn
 - ppsno #
 - ppsno
-- psp
-- nie usługi publicznej
+- Psp
+- brak usługi publicznej
 - publicserviceno #
 - publicserviceno
-- numer przychodów i ubezpieczenia społecznego
+- przychód i numer ubezpieczenia społecznego
 - rsi no
-- liczba rsi
+- numer rsi
 - rsin
-- rbhís aitheantais client
+- seirbhís aitheantais, klient
 - uimh
 - uimhir aitheantais chánach
 - uimhir aitheantais phearsanta
-- uimhir phearsanta przedzmierowejíse poiblí
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- uimhir phearsanta seirbhíse poiblí
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="ireland-physical-addresses"></a>Adresy fizyczne w Irlandii
+## <a name="ireland-physical-addresses"></a>Adresy fizyczne Irlandii
 
-Ta nieoznakowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym Irlandii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Irlandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="israel-bank-account-number"></a>Izrael : numer konta bankowego
+## <a name="israel-bank-account-number"></a>Numer konta bankowego Izraela
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Sformatowane:
+Sformatowany:
 - dwie cyfry
 - kreska
 - trzy cyfry
 - kreska
 - osiem cyfr
 
-Niesformatowane:
+Niesformatowany:
 - 13 kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_israel_bank_account_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_israel_bank_account_number.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_israel_bank_account_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_israel_bank_account_number.
 
 ```xml
 <!-- Israel Bank Account Number -->
@@ -10130,26 +10131,26 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - מספר חשבון בנק
 
 
-## <a name="israel-national-identification-number"></a>Numer identyfikacyjny kraju Izrael
+## <a name="israel-national-identification-number"></a>Narodowy numer identyfikacyjny Izraela
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 dziewięć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dziewięć kolejnych cyfr
+dziewięć kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_israeli_national_id_number znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_Israel_National_ID znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_israeli_national_id_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Israel_National_ID.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Israel National ID Number -->
@@ -10176,40 +10177,40 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 -   رقم الهوية
 -   عدد هوية فريدة من نوعها
 -   idnumber #
--   numer identyfikacyjny
--   nie tożsamości        
+-   numer identyfikatora
+-   brak tożsamości        
 -   identitynumber #
 -   numer tożsamości
--   izraelskaidentyfik       
--   identyfikator osobisty
+-   israeliidentitynumber       
+-   osobisty identyfikator
 -   unikatowy identyfikator  
 
 
-## <a name="italy-drivers-license-number"></a>Włochy : numer prawa jazdy
+## <a name="italy-drivers-license-number"></a>Numer prawa jazdy Włoch
 
-Ten typ jednostki jest uwzględniony w poufnym typie informacji Numer prawa jazdy w UE. Jest także dostępna jako autonomiczna jednostka typu informacji poufnych.
+Jednostka tego typu jest uwzględniana w typie informacji poufnych Numer prawa jazdy UE. Jest ona również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Kombinacja 10 liter i cyfr
+kombinacja 10 liter i cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Kombinacja 10 liter i cyfr:
-- jedna litera (bez wielkości liter)
-- litera "A" lub "V" (bez wielkości liter)
-- Siedem cyfr
-- jedna litera (bez wielkości liter)
+kombinacja 10 liter i cyfr:
+- jedna litera (bez uwzględniania wielkości liter)
+- litera "A" lub "V" (bez uwzględniania wielkości liter)
+- siedem cyfr
+- jedna litera (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia `Regex_italy_drivers_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z `Keywords_eu_driver's_license_number` lub `Keyword_italy_drivers_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie `Regex_italy_drivers_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keyword_italy_drivers_license_number` .
 
 ```xml
     <!-- Italy Driver's license Number -->
@@ -10226,7 +10227,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -10235,49 +10236,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -10285,48 +10286,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -10334,63 +10335,63 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patentu
+- numero di patente
 - patente di guida
-- patent Guida
+- patente guida
 - patenti di guida
 - patenti guida
 
 
-## <a name="italy-fiscal-code"></a>Kod obrachunkowy Włoch
-Tego typu informacji poufnych można używać tylko w:
+## <a name="italy-fiscal-code"></a>Włoski kod fiskalny
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-16-znakowa kombinacja liter i cyfr we wskazanym wzorcu
+16-znakowa kombinacja liter i cyfr w określonym wzorcu
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 16-znakowa kombinacja liter i cyfr:
-- Trzy litery odpowiadające trzem pierwszym spółgłosom w nazwie rodziny
-- Trzy litery odpowiadające pierwszej, trzeciej i czwartej spółgłosce imienia
-- Dwie cyfry odpowiadające ostatnim cyfrom roku urodzenia
-- Jedna litera odpowiadająca literze dla miesiąca urodzenia — litery są używane w kolejności alfabetycznej, ale używane są tylko litery od A do E, H, L, M, P, R do T (tak więc styczeń to A, a październik to R)
-- dwie cyfry odpowiadające dniu miesiąca urodzenia w celu rozróżnienia płci, do dnia urodzenia kobiety dodaje się 40 cyfr.
-- cztery cyfry odpowiadające numerowi kierunkowemu odpowiadającemu miejsca urodzenia danej osoby (kody dla całego kraju są używane w krajach obcych)
-- jedna cyfra parowa
+- trzy litery, które odpowiadają trzem pierwszym spedycjom w imieniu rodziny
+- trzy litery, które odpowiadają pierwszym, trzecim i czwartym spedyantom w imieniu
+- dwie cyfry odpowiadające ostatnim cyfrom roku urodzenia
+- jedna litera odpowiadająca literze w miesiącu urodzenia — litery są używane w kolejności alfabetycznej, ale używane są tylko litery od A do E, H, L, M, P, R do T (tak więc styczeń to A, a październik to R)
+- dwie cyfry odpowiadające dniu miesiąca urodzenia w celu rozróżnienia płci, 40 jest dodawane do dnia urodzenia dla kobiet
+- cztery cyfry odpowiadające kodowi obszaru specyficznemu dla gminy, w której dana osoba urodziła się (kody dla całego kraju są używane w innych krajach)
+- jedna cyfra parity
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_italy_eu_national_id_card` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_italy_eu_national_id_card` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_italy_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_italy_eu_national_id_card`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_italy_eu_national_id_card` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_italy_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Italy Fiscal Code -->
@@ -10413,63 +10414,63 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - codice fiscale
 - codice id personale
 - codice personale
-- kod obrachunkowy
+- kod fiskalny
 - numero certificato personale
 - numero di identificazione fiscale
 - numero id personale
 - numero personale
-- numer certyfikatu osobistego
+- osobisty numer certyfikatu
 - kod osobisty
-- identyfikator osobisty
-- identyfikator osobisty
-- kod_osobisty #
-- kod podatku
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
+- osobisty kod identyfikatora
+- osobisty numer identyfikatora
+- personalcodeno #
+- kod podatkowy
+- identyfikator podatkowy
 - numer identyfikacji podatkowej
-- nie podatek #
-- nie podatek
-- numer podatku
+- numer identyfikacji podatkowej
+- numer tożsamości podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="italy-passport-number"></a>Numer paszportu Włoch
+## <a name="italy-passport-number"></a>Numer paszportu Włochy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery lub cyfry, po których następuje siedem cyfr bez spacji i ograniczników
+dwie litery lub cyfry, po których następuje siedem cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dwie litery lub cyfry, po których następuje siedem cyfr:
 
-- Dwie cyfry lub litery (bez wielkości liter)
-- Siedem cyfr
+- dwie cyfry lub litery (bez uwzględniania wielkości liter)
+- siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_italy_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_italy_eu_passport_number` znajduje się.
-- Wyrażenie regularne `Regex_italy_eu_passport_date` umożliwia znalezienie daty w formacie DD MMM/MMM YYYY (przykład — 01 GEN/STY 1988) `Keywords_eu_passport_date` lub słowa kluczowego od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_italy_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` .
+- Wyrażenie `Regex_italy_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RRRR (przykład — 01 GEN/JAN 1988) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_italy_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_italy_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_italy_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` .
 
 ```xml
       <!-- Italy Passport Number -->
@@ -10499,15 +10500,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
@@ -10522,53 +10523,53 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="italy-physical-addresses"></a>Włochy adresy fizyczne
+## <a name="italy-physical-addresses"></a>Adresy fizyczne Włoch
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Włoch. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Włoch. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="italy-value-added-tax-number"></a>Włochy o wartości dodanej numeru podatkowego
+## <a name="italy-value-added-tax-number"></a>Numer podatku od wartości dodanej we Włoszech
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13-znakowy wzorzec alfanumeryczny z opcjonalnymi ogranicznikami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 13-znakowy wzorzec alfanumeryczny z opcjonalnymi ogranicznikami:
 
-- I lub i
+- Ja lub i
 - T lub t
-- spacja, kropka, łącznik lub przecinek
+- opcjonalne spacja, kropka, łącznik lub przecinek
 - 11 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_italy_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keywords_italy_value_added_tax_number znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_italy_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_italy_value_added_tax_number.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_italy_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_italy_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Italy Value Added Tax -->
@@ -10588,43 +10589,43 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
 
 - numer VAT
-- bez podatku VAT
-- vat #
-- iva
-- iva #
+- numer vat
+- Podatku vat #
+- Iva
+- Iva #
 
 
 ## <a name="japan-bank-account-number"></a>Numer konta bankowego w Japonii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Siedem lub osiem cyfr
+siedem lub osiem cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 numer konta bankowego:
-- Siedem lub osiem cyfr
-- Kod oddziału konta bankowego:
+- siedem lub osiem cyfr
+- kod oddziału konta bankowego:
 - cztery cyfry
 - spacja lub kreska (opcjonalnie)
 - trzy cyfry
 
-Checksum
+Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_jp_bank_account znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_jp_bank_account.
-- Prawdziwe jest jedno z następujących argumentów:
-- Funkcja Func_jp_bank_account_branch_code znajdzie zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_jp_bank_branch_code.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_jp_bank_account znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_jp_bank_account.
+- Jedno z następujących elementów jest prawdziwe:
+- Funkcja Func_jp_bank_account_branch_code znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_jp_bank_branch_code.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_jp_bank_account znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_jp_bank_account.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_jp_bank_account znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_jp_bank_account.
 
 ```xml
 <!-- Japan Bank Account Number -->
@@ -10653,31 +10654,31 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - Sprawdzanie numeru konta
 - Sprawdzanie konta
 - Sprawdzanie konta #
-- Sprawdzanie numeru ACCT
-- Sprawdzanie acct #
-- Sprawdzanie nie.
-- Sprawdzanie, czy nie ma konta.
+- Sprawdzanie numeru akcesu
+- Sprawdzanie dostępu #
+- Sprawdzanie nr dostępu
+- Sprawdzanie nr konta
 - Numer konta bankowego
 - Konto bankowe
 - Konto bankowe #
-- Bank Acct Number
+- Numer akcesu bankowego
 - Bank Acct #
-- Bank Acct Nie.
+- Bank Acct Nr.
 - Nr konta bankowego
 - Numer konta oszczędnościowego
 - Konto oszczędnościowe
 - Konto oszczędnościowe #
-- Numer Acct oszczędności
-- Savings Acct #
+- Numer akcesu oszczędności
+- Oszczędności acct #
+- Nr dostępu oszczędnościowego
 - Nr konta oszczędnościowego
-- Numer konta oszczędnościowego
 - Numer konta debetowego
 - Konto debetowe
 - Konto debetowe #
-- Numer acct debetowego
-- Acct polecenia debetowego #
-- Nr konta debetowego
-- Nie.
+- Numer akcesu debetowego
+- Akces debetowy #
+- Numer akcesu debetowego
+- Numer konta debetowego
 - 口座番号
 - 銀行口座
 - 銀行口座番号
@@ -10697,25 +10698,25 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - 支店コード
 - 店番号
 
-## <a name="japan-drivers-license-number"></a>Numer prawa jazdy w Japonii
+## <a name="japan-drivers-license-number"></a>Numer japońskiego prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 12 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 12 kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_jp_drivers_license_number wyszukuje zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_jp_drivers_license_number.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_jp_drivers_license_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_jp_drivers_license_number.
 
 ```xml
 <!-- Japan Driver's License Number -->
@@ -10737,10 +10738,10 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverslicenses
 - fragmentatory sterownika
 - driverlicenses
-- dl #
-- dls #
-- lic #
-- kursywa #
+- Dl #
+- Dls #
+- Lic #
+- lics #
 - 運転免許証
 - 運転免許
 - 免許証
@@ -10768,38 +10769,38 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - 免許 #
 
 
-## <a name="japan-my-number---corporate"></a>Japonia — Mój numer — firmowy
+## <a name="japan-my-number---corporate"></a>Japonia Mój numer — firmowy
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13-cyfrowy numer
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Numer 13-cyfrowy:
+13-cyfrowy numer:
 
-- Od jednej cyfry do dziewięciu
+- jedna cyfra od jednej do dziewięciu
 - 12 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_japanese_my_number_corporate umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z Keywords_japanese_my_number_corporate znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_japanese_my_number_corporate znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_japanese_my_number_corporate.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_japanese_my_number_corporate umożliwia znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_japanese_my_number_corporate znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Japanese My Number – Corporate -->
@@ -10830,41 +10831,41 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - 指定通知書
 
 
-## <a name="japan-my-number---personal"></a>Japonia — Mój numer — Osobiste
+## <a name="japan-my-number---personal"></a>Japonia Mój numer - Osobisty
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 12-cyfrowy numer
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Numer 12-cyfrowy:
+12-cyfrowy numer:
 
 - cztery cyfry
-- Opcjonalna spacja, kropka lub łącznik
+- opcjonalne spacja, kropka lub łącznik
 - cztery cyfry
-- Opcjonalna spacja, kropka lub łącznik
+- opcjonalne spacja, kropka lub łącznik
 - cztery cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_japanese_my_number_personal umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keywords_japanese_my_number_personal.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_japanese_my_number_personal znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_japanese_my_number_personal.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_japanese_my_number_personal umożliwia znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_japanese_my_number_personal znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Japanese My Number – Personal -->
@@ -10897,23 +10898,23 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 ## <a name="japan-passport-number"></a>Numer paszportu Japonii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery, po których następuje siedem cyfr
+dwie litery, po których następuje siedem cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dwie litery (bez wielkości liter), po których następuje siedem cyfr
+dwie litery (bez uwzględniania wielkości liter), po których następuje siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_jp_passport znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_jp_passport.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_jp_passport znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_jp_passport.
 
 ```xml
 <!-- Japan Passport Number -->
@@ -10931,7 +10932,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 - Paszport
 - Numer paszportu
-- Numer paszportu.
+- Nr paszportu
 - Paszport #
 - パスポート
 - パスポート番号
@@ -10945,28 +10946,28 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - 旅券ナンバー
 
 
-## <a name="japan-residence-card-number"></a>Numer japońskiej karty zamieszkania
+## <a name="japan-residence-card-number"></a>Numer karty pobytu w Japonii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 12 liter i cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 12 liter i cyfr:
-- Dwie litery (bez wielkości liter)
+- dwie litery (bez uwzględniania wielkości liter)
 - osiem cyfr
-- Dwie litery (bez wielkości liter)
+- dwie litery (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_jp_residence_card_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z Keyword_jp_residence_card_number znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_jp_residence_card_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_jp_residence_card_number.
 
 ```xml
 <!--Japan Residence Card Number-->
@@ -10982,32 +10983,32 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
-- Numer karty zamieszkania
-- Nie karty zamieszkania
-- Karta zamieszkania #
+- Numer karty pobytu
+- Karta rezydencji nie
+- Karta rezydencji #
 - 在留カード番号
 - 在留カード
 - 在留番号
 
-## <a name="japan-resident-registration-number"></a>Numer rejestracji rezydenta Japonii
+## <a name="japan-resident-registration-number"></a>Numer rejestracyjny rezydenta Japonii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_jp_resident_registration_number znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_jp_resident_registration_number.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_jp_resident_registration_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_jp_resident_registration_number.
 
 ```xml
 <!-- Japan Resident Registration Number -->
@@ -11023,12 +11024,12 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
-- Numer rejestracji rezydentnia
-- Residents Basic Registry Number
-- Numer rejestracji rezydenta.
-- Rezydentny rejestr nie.
-- Nie rejestru dla mieszkańców.
-- Podstawowy rejestr rezydentny nie.
+- Numer rejestracji rezydenta
+- Podstawowy numer rejestru rezydentów
+- Numer rejestracji rezydenta
+- Numer rejestru rezydenta
+- Liczba podstawowych rejestrów rezydentów
+- Podstawowy numer rejestru rezydenta.
 - 外国人登録証明書番号
 - 証明書番号
 - 登録番号
@@ -11037,31 +11038,31 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ## <a name="japan-social-insurance-number-sin"></a>Japoński numer ubezpieczenia społecznego (SIN)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-7-12 cyfr
+7–12 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-7-12 cyfr:
+7–12 cyfr:
 - cztery cyfry
-- Łącznik (opcjonalny)
-- Sześć cyfr LUB
-- Od 7 do 12 kolejnych cyfr
+- łącznik (opcjonalnie)
+- sześć cyfr OR
+- 7–12 kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_jp_sin znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_jp_sin.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_jp_sin znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_jp_sin.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_jp_sin_pre_1997 umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_jp_sin.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_jp_sin_pre_1997 znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_jp_sin.
 
 ```xml
 <!-- Japan Social Insurance Number -->
@@ -11082,7 +11083,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_jp_sin"></a>Keyword_jp_sin
 
 - Nr ubezpieczenia społecznego
-- Nr ubezpieczenia społecznego
+- Numer ubezpieczenia społecznego
 - Numer ubezpieczenia społecznego
 - 健康保険被保険者番号
 - 健保番号
@@ -11101,37 +11102,37 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - 厚生年金被保険者整理番号
 
 
-## <a name="lab-test-terms"></a>Warunki testowania laboratorium
+## <a name="lab-test-terms"></a>Terminy testowe laboratorium
 
-Ta nieoznakowana nazwana jednostka wykrywa terminy związane z testami laboratoryjnymi, takie jak *NarkońC*. Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa terminy związane z testami laboratoryjnymi, takimi jak *insulina C-peptyd*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
 
 
-## <a name="latvia-drivers-license-number"></a>Łotewski numer prawa jazdy
+## <a name="latvia-drivers-license-number"></a>Numer prawa jazdy łotwy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Trzy litery, po których następuje sześć cyfr
+trzy litery, po których następuje sześć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Trzy litery i sześć cyfr:
+trzy litery i sześć cyfr:
 
-- Trzy litery (bez wielkości liter)
-- Sześć cyfr
+- trzy litery (bez uwzględniania wielkości liter)
+- sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_latvia_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_latvia_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_latvia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` .
 
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -11148,7 +11149,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -11157,49 +11158,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -11207,48 +11208,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -11256,54 +11257,54 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver nie s_license_number
+#### <a name="keywords_latvia_eu_drivers_license_number"></a>s_license_number Keywords_latvia_eu_driver
 
 - autovadītāja apliecība
 - autovadītāja apliecības
 - vadītāja apliecība
 
 
-## <a name="latvia-passport-number"></a>Numer paszportu Łotwy
+## <a name="latvia-passport-number"></a>Numer paszportu łotwy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery lub cyfry, po których następuje siedem cyfr bez spacji i ograniczników
+dwie litery lub cyfry, po których następuje siedem cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dwie litery lub cyfry, po których następuje siedem cyfr:
 
-- Dwie cyfry lub litery (bez wielkości liter)
-- Siedem cyfr
+- dwie cyfry lub litery (bez uwzględniania wielkości liter)
+- siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_latvia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_latvia_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_latvia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_latvia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_latvia_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_latvia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` .
 
 ```xml
       <!-- Latvia Passport Number -->
@@ -11333,20 +11334,20 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_latvia_eu_passport_number"></a>Keywords_latvia_eu_passport_number
 
-- pase numury
+- pase numurs
 - pase numur
 - pases numuri
 - pases nr
@@ -11355,26 +11356,26 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="latvia-personal-code"></a>Łotewski kod osobisty
+## <a name="latvia-personal-code"></a>Kod osobisty Łotwy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr i opcjonalny łącznik
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 Stary format
 
 11 cyfr i łącznik:
 
-- Sześć cyfr odpowiadających dacie urodzenia (DDMMYY)
-- Łącznik
-- jedna cyfra odpowiadająca wiekowi urodzenia ("0" dla WIEKU 19, "1" dla 20 wieku i "2" dla 21 wieku)
-- Cztery cyfry wygenerowane losowo
+- sześć cyfr odpowiadających dacie urodzenia (DDMMYY)
+- łącznik
+- jedna cyfra odpowiadająca stuleciu urodzenia ("0" dla XIX wieku, "1" dla XX wieku i "2" dla XXI wieku)
+- cztery cyfry wygenerowane losowo
 
 Nowy format
 
@@ -11383,18 +11384,18 @@ Nowy format
 - Dwie cyfry "32"
 - Dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja lub  `Func_latvia_eu_national_id_card` regex `Regex_latvia_eu_national_id_card_new_format` umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_latvia_eu_national_id_card` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_latvia_eu_national_id_card` lub rejestr `Regex_latvia_eu_national_id_card_new_format` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_latvia_eu_national_id_card`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja lub  `Func_latvia_eu_national_id_card` regex `Regex_latvia_eu_national_id_card_new_format` umożliwia znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_latvia_eu_national_id_card` lub rejestr `Regex_latvia_eu_national_id_card_new_format` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Latvia Personal Code -->
@@ -11430,15 +11431,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 - numer administracyjny
-- aylwania nē
+- alvas nē
 - numer urodzenia
-- numer edytowy
-- numer służbowy
-- Numer elektronicznego systemu danych cenowych
+- numer obywatela
+- numer cywilny
+- elektroniczny numer spisu
 - numer elektroniczny
-- kod obrachunkowy
+- kod fiskalny
 - numer użytkownika opieki zdrowotnej
-- identyfikator #
+- Identyfikator #
 - id-code
 - numer identyfikacyjny
 - identifikācijas numurs
@@ -11446,54 +11447,54 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - numer indywidualny
 - latvija alva
 - nacionālais id
-- identyfikator narodowy
-- numer identyfikacyjny kraju
-- numer tożsamości państwowej
-- numer ubezpieczenia państwowego
-- numer rejestru krajowego
-- nodok jako numury
-- nodok do id
-- nodok do identifikācija numurs
-- numer certyfikatu osobistego
+- identyfikator krajowy
+- krajowy numer identyfikacyjny
+- krajowy numer tożsamości
+- krajowy numer ubezpieczenia
+- numer krajowego rejestru
+- nodokļa numurs
+- nodokļu id
+- nodokļu identifikācija numurs
+- osobisty numer certyfikatu
 - kod osobisty
+- osobisty kod identyfikatora
+- osobisty numer identyfikatora
+- osobisty kod identyfikacyjny
 - identyfikator osobisty
-- identyfikator osobisty
-- kod identyfikacyjny
-- identyfikator osobisty
-- numer tożsamości osobistej
+- osobisty numer tożsamości
 - numer osobisty
-- osobisty kod numeryczny
-- kod_osobisty #
-- kody personas
-- kod identyfikacyjny populacji
+- osobisty kod liczbowy
+- personalcodeno #
+- personas kods
+- kod identyfikacji populacji
 - numer usługi publicznej
 - numer rejestracji
 - numer przychodu
 - numer ubezpieczenia społecznego
-- numer PEZEt
-- kod podatku stanowego
+- numer ubezpieczenia społecznego
+- kod podatkowy stanu
 - numer pliku podatkowego
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
-- Numer osób głosujących
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
+- numer wyborcy
 
 
-## <a name="latvia-physical-addresses"></a>Łotewskie adresy fizyczne
+## <a name="latvia-physical-addresses"></a>Adresy fizyczne Łotwy
 
-Ta niepowiązona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Łotwy. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Łotwy. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -11502,41 +11503,41 @@ Ta niepowiązona nazwana jednostka wykrywa wzorce związane z adresem fizycznym 
 
 ## <a name="liechtenstein-physical-addresses"></a>Adresy fizyczne Liechtensteinu
 
-Ta nieoznazona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Liechtensteinu. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT. 
+Ta rozdzielana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Liechtensteinu. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki. 
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="lifestyles-that-relate-to-medical-conditions"></a>Style życia związane ze stanem zdrowia
+## <a name="lifestyles-that-relate-to-medical-conditions"></a>Styl życia, który odnosi się do schorzeń
 
-Ta nieoznazona nazwana jednostka wykrywa terminy związane z stylami życia, które mogą powodować stan zdrowia, taki jak zakaz *kamicy.* Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa terminy związane ze stylem życia, które mogą prowadzić do stanu zdrowia, takiego jak *palenie tytoniu*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
 
 
-## <a name="lithuania-drivers-license-number"></a>Litwa numer prawa jazdy
+## <a name="lithuania-drivers-license-number"></a>Litewski numer prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 osiem cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_lithuania_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_lithuania_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_lithuania_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` .
 
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -11553,7 +11554,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -11562,49 +11563,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -11612,48 +11613,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -11661,61 +11662,61 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver nie s_license_number
+#### <a name="keywords_lithuania_eu_drivers_license_number"></a>s_license_number Keywords_lithuania_eu_driver
 
-- vairuotojo pakovymjimas
-- vairuotojo pa zamówić numeris
-- vairuotojo pa zamówić numeriai
+- vairuotojo pažymėjimas
+- vairuotojo pažymėjimo numeris
+- vairuotojo pažymėjimo numeriai
 
 
-## <a name="lithuania-personal-code"></a>Litwa : kod osobisty
+## <a name="lithuania-personal-code"></a>Litewski kod osobisty
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 cyfr bez spacji i ograniczników:
 
-- jedna cyfra (1-6) odpowiadająca płci i wieku urodzenia danej osoby
-- Sześć cyfr odpowiadających dacie urodzenia (RRMMDD)
-- Trzy cyfry odpowiadające kolejnemu numerowi daty urodzenia
+- jedna cyfra (1–6), która odpowiada płci i wieku urodzenia danej osoby
+- sześć cyfr odpowiadających dacie urodzenia (RRMMDD)
+- trzy cyfry odpowiadające numerowi seryjnemu daty urodzenia
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_lithuania_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_lithuania_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_lithuania_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_lithuania_eu_tax_file_number`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_lithuania_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_lithuania_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Lithuania Personal Code -->
@@ -11740,31 +11741,31 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 - asmeninis skaitmeninis kodas
 - asmens kodas
-- numer usługi
-- mokesčiči id
-- mokesči do identifikavimas numeris
-- mokesči do identifikavimo numeris
-- mokesči do numeris
-- numer identyfikacyjny kraju
+- numer usługi obywatelskiej
+- mokesčių id
+- mokesčių identifikavimas numeris
+- mokesčių identifikavimo numeris
+- mokesčių numeris
+- krajowy numer identyfikacyjny
 - kod osobisty
-- osobisty kod numeryczny
+- osobisty kod liczbowy
 - piliečio paslaugos numeris
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 - unikalus identifikavimo kodas
 - unikalus identifikavimo numeris
 - unikatowy numer identyfikacyjny
@@ -11774,37 +11775,37 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ## <a name="lithuania-physical-addresses"></a>Adresy fizyczne Litwy
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z  Litwa. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Litwy. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="lithuania-passport-number"></a>Numer paszportu Litwy
+## <a name="lithuania-passport-number"></a>Numer paszportu litwy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Osiem cyfr lub liter bez spacji i ograniczników
+osiem cyfr lub liter bez spacji lub ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-osiem cyfr lub liter (bez wielkości liter)
+osiem cyfr lub liter (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_lithuania_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_lithuania_eu_passport_number` znajduje się.
-- Wyrażenie regularne umożliwia `Regex_eu_passport_date3` znalezienie daty w formacie DD MM YYYY lub znalezione słowo kluczowe `Keywords_eu_passport_date` od
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_lithuania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date3` regularne znajduje datę w formacie DD MM RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_lithuania_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_lithuania_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_lithuania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` .
 
 ```xml
       <!-- Lithuania Passport Number -->
@@ -11834,15 +11835,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
@@ -11853,29 +11854,29 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="luxemburg-drivers-license-number"></a>Numer prawa jazdy firmy Luxemburg
+## <a name="luxemburg-drivers-license-number"></a>Numer prawa jazdy w Luksemburgu
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Sześć cyfr bez spacji i ograniczników
+sześć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Sześć cyfr
+sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_luxemburg_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_luxemburg_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_luxemburg_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` .
 
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -11892,7 +11893,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -11901,49 +11902,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -11951,48 +11952,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -12000,57 +12001,57 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver s_license_number
+#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>s_license_number Keywords_luxemburg_eu_driver
 
 - fahrerlaubnis
 - Führerschäin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a>Luxemburg national identification number (natural persons)
+## <a name="luxemburg-national-identification-number-natural-persons"></a>Luksemburski krajowy numer identyfikacyjny (osoby fizyczne)
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 13 cyfr:
 
 - 11 cyfr
-- dwie cyfry sprawdzania
+- dwie cyfry kontrolne
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
-tak
+Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_luxemburg_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_luxemburg_eu_national_id_card` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_luxemburg_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_luxemburg_eu_national_id_card`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_luxemburg_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_luxemburg_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 
 ```xml
@@ -12074,59 +12075,59 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
-- identyfikator eindeutige
+- eindeutige id
 - eindeutige id-nummer
 - eindeutigeid #
 - id personnelle
 - idpersonnelle #
 - idpersonnelle
 - indywidualny kod
-- identyfikator indywidualny
-- identyfikacja poszczególnych osób
-- tożsamość poszczegomowa
+- indywidualny identyfikator
+- identyfikacja indywidualna
+- indywidualna tożsamość
 - numéro d'identification personnel
-- identyfikator osobisty
+- osobisty identyfikator
 - identyfikacja osobista
 - tożsamość osobista
 - personalidno #
-- numer_osobisty #
+- personalidnumber #
 - persönliche identifikationsnummer
 - unikatowy identyfikator
 - unikatowa tożsamość
-- klucz uniqueid #
+- uniqueidkey #
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Państwowy numer identyfikacyjny Luxemburg (osoby nie naturalne)
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Luksemburski krajowy numer identyfikacyjny (osoby niebędące osobami fizycznymi)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 cyfr
 
 - dwie cyfry
-- spacja opcjonalna
+- opcjonalne miejsce
 - trzy cyfry
-- spacja opcjonalna
+- opcjonalne miejsce
 - trzy cyfry
-- spacja opcjonalna
+- opcjonalne miejsce
 - dwie cyfry
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_luxemburg_eu_tax_file_number_non_natural` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_luxemburg_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_luxemburg_eu_tax_file_number_non_natural` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_luxemburg_eu_tax_file_number`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_luxemburg_eu_tax_file_number_non_natural` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_luxemburg_eu_tax_file_number_non_natural` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -12153,65 +12154,65 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - étain non
 - étain #
 - identifiant d'impôt
-- luxembourg tax identifikatiounsnummer
+- luksemburski identyfikator podatkowykatiounsnummer
 - numéro d'étain
 - numéro d'identification fiscal luxembourgeois
 - numéro d'identification fiscale
-- ubezpieczenia społecznego
-- soziaterstützung
+- zabezpieczenia społeczne
+- sozialunterstützung
 - sozialversécherung
 - sozialversicherungsausweis
-- identyfikator steiera
+- identyfikator steier
 - steier identifikatiounsnummer
 - steier nummer
-- id użytkownika
+- identyfikator steuer
 - steueridentifikationsnummer
 - steuernummer
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
-- zinn #
-- zinn
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
+- Zinn #
+- Zinn
 - zinnzahl
 
 
-## <a name="luxemburg-passport-number"></a>Numer paszportu Luksemburga
+## <a name="luxemburg-passport-number"></a>Numer paszportu w Luksemburgu
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Osiem cyfr lub liter bez spacji i ograniczników
+osiem cyfr lub liter bez spacji lub ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-osiem cyfr lub liter (bez wielkości liter)
+osiem cyfr lub liter (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_luxemburg_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_luxemburg_eu_passport_number` znajduje się.
-- Wyrażenie regularne umożliwia `Regex_eu_passport_date3` znalezienie daty w formacie DD MM YYYY lub znalezione słowo kluczowe `Keywords_eu_passport_date` od
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_luxemburg_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date3` regularne znajduje datę w formacie DD MM RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_luxemburg_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_luxemburg_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_luxemburg_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` .
 
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -12241,27 +12242,27 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
 - ausweisnummer
-- Luxembourg Pass
-- Luxembourg Passeport
-- Paszport Luksemburga
+- luksemburski przełę
+- luksemburski port passeport
+- paszport luksemburski
 - no de passeport
 - no-reisepass
 - nr-reisepass
 - numéro de passeport
-- sieć przechodnia
+- pass net
 - pass nr
 - passnummer
 - passeport nombre
@@ -12271,13 +12272,13 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="luxemburg-physical-addresses"></a>Adresy fizyczne w Luxemburgu
+## <a name="luxemburg-physical-addresses"></a>Adresy fizyczne w Luksemburgu
 
-Ta nieoznaczana nazwana jednostka wykrywa wzorce związane z adresem fizycznym firmy Luxemburg. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Luksemburga. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -12286,29 +12287,29 @@ Ta nieoznaczana nazwana jednostka wykrywa wzorce związane z adresem fizycznym f
 
 ## <a name="malaysia-identification-card-number"></a>Numer karty identyfikacyjnej Malezji
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-12 cyfr zawierające łączniki opcjonalne
+12 cyfr zawierających opcjonalne łączniki
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 12 cyfr:
-- Sześć cyfr w formacie RRMMDD, czyli data urodzenia
+- sześć cyfr w formacie YYMMDD, które są datą urodzenia
 - kreska (opcjonalnie)
-- Dwulitowy kod miejsca urodzenia
+- dwuliterowy kod miejsca urodzenia
 - kreska (opcjonalnie)
-- Trzy losowe cyfry
-- Jednocyfrowy kod płci
+- trzy cyfry losowe
+- jednocyfrowy kod płci
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_malaysia_id_card_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z Keyword_malaysia_id_card_number znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_malaysia_id_card_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_malaysia_id_card_number.
 
 ```xml
 <!-- Malaysia ID Card Number -->
@@ -12327,55 +12328,55 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 - karta aplikacji cyfrowej
 - i/c
-- nie i/c
-- ic
+- i/c nie
+- Ic
 - ic no
-- identyfikator
-- karta identyfikacyj
-- karta tożsamości
+- id card
+- karta identyfikacyjna
+- Dowód tożsamości
 - k/p
 - k/p nie
-- gdy akuan diri
-- gdy aplikasi cyfrowy
-- pengenalan malaysia
-- kp
+- kad akuan diri
+- kad aplikasi digital
+- kad pengenalan malezja
+- Kp
 - kp nie
 - mykad
 - mykas
 - mykid
 - mypr
 - mytentera
-- Malaysia identity card
-- Malaysian identity card
+- malaysia identity card
+- malezyjski dowód tożsamości
 - nric
 - osobista karta identyfikacyjna
 
 
-## <a name="malta-drivers-license-number"></a>Numer prawa jazdy malta
+## <a name="malta-drivers-license-number"></a>Numer prawa jazdy Malty
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Kombinacja dwóch znaków i sześciu cyfr we wskazanym wzorcu
+Kombinacja dwóch znaków i sześciu cyfr w określonym wzorcu
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 kombinacja dwóch znaków i sześciu cyfr:
 
-- dwa znaki (cyfry lub litery, bez wielkości liter)
-- spacja (opcjonalnie)
+- dwa znaki (cyfry lub litery, bez uwzględniania wielkości liter)
+- spację (opcjonalnie)
 - trzy cyfry
-- spacja (opcjonalnie)
+- spację (opcjonalnie)
 - trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_malta_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_malta_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_malta_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` .
 
 ```xml
       <!-- Malta Driver's License Number -->
@@ -12392,7 +12393,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -12401,49 +12402,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -12451,48 +12452,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -12500,58 +12501,58 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver nie s_license_number
+#### <a name="keywords_malta_eu_drivers_license_number"></a>s_license_number Keywords_malta_eu_driver
 
-- li doenzja tas-faqan
-- li zam. tas-wąsów
+- liċenzja tas-sewqan
+- liċenzji tas-sewwieq
 
 
-## <a name="malta-identity-card-number"></a>Numer karty tożsamości malta
+## <a name="malta-identity-card-number"></a>Numer karty tożsamości Malty
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Siedem cyfr, po których następuje jedna litera
+siedem cyfr, po których następuje jedna litera
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Siedem cyfr, po których następuje jedna litera:
+siedem cyfr, po których następuje jedna litera:
 
-- Siedem cyfr
-- Jedna litera w "M, G, A, P, L, H, B, Z" (bez uwzględniania liter)
+- siedem cyfr
+- jedna litera w "M, G, A, P, L, H, B, Z" (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_malta_eu_national_id_card` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_malta_eu_national_id_card` kluczowe od.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_malta_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_malta_eu_national_id_card`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_malta_eu_national_id_card` znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Wyrażenie  `Regex_malta_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Malta Identity Card Number -->
@@ -12570,17 +12571,17 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
-- numer usługi
+- numer usługi obywatelskiej
 - id tat-taxxa
 - identifika numru tal-biljett
-- kodi jako numerali personali
+- kodiċi numerali personali
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz ta u-2ittadin
+- numru tas-servizz taċ-ċittadin
 - numru tat-taxxa
-- osobisty kod numeryczny
+- osobisty kod liczbowy
 - unikatowy numer identyfikacyjny
 - unikatowy numer tożsamości
 - uniqueidentityno #
@@ -12588,28 +12589,28 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 ## <a name="malta-passport-number"></a>Numer paszportu Malta
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Siedem cyfr bez spacji i ograniczników
+siedem cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Siedem cyfr
+siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_malta_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_malta_eu_passport_number` znajduje się.
-- Zostanie znalezione słowo `Keywords_eu_passport_date` kluczowe od
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_malta_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` .
+- Znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_malta_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_malta_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_malta_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` .
 
 ```xml
       <!-- Malta Passport Number -->
@@ -12636,15 +12637,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
@@ -12655,52 +12656,52 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="malta-physical-addresses"></a>Adresy fizyczne malta
+## <a name="malta-physical-addresses"></a>Adresy fizyczne Malty
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Malta. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Malty. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="malta-tax-identification-number"></a>Numer identyfikacji podatkowej Malta
+## <a name="malta-tax-identification-number"></a>Numer identyfikacji podatkowej Malty
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-W celu odszukiwnia tego języka:
-- Siedem cyfr i jedna litera we wskazanym wzorcu
+W przypadku obywateli Malty:
+- siedem cyfr i jedna litera w określonym wzorcu
 
-Nie tylko na odszybkowo oraz jednostki te:
+Obywatele spoza Malty i podmioty maltańskie:
 - dziewięć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Nasyć w inne dni: siedem cyfr i jedna litera
+Obywatele Malty: siedem cyfr i jedna litera
 
-- Siedem cyfr
-- jedna litera (bez wielkości liter)
+- siedem cyfr
+- jedna litera (bez uwzględniania wielkości liter)
 
-Nie tylko na odszybkowo oraz jednostki te: dziewięć cyfr
+Obywatele spoza Malty i podmioty maltańskie: dziewięć cyfr
 
 - dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Regex  `Regex_malta_eu_tax_file_number`  lub znajduje `Regex_malta_eu_tax_file_number_non_maltese_national` zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo  `Keywords_malta_eu_tax_file_number` kluczowe od.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- `Regex_malta_eu_tax_file_number` Rejestr lub `Regex_malta_eu_tax_file_number_non_maltese_national` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_malta_eu_tax_file_number`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Regex  `Regex_malta_eu_tax_file_number` lub znajduje `Regex_malta_eu_tax_file_number_non_maltese_national` zawartość, która pasuje do wzorca.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- `Regex_malta_eu_tax_file_number` Rejestr lub `Regex_malta_eu_tax_file_number_non_maltese_national` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Malta Tax ID Number -->
@@ -12726,77 +12727,77 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
-- numer usługi
+- numer usługi obywatelskiej
 - id tat-taxxa
 - identifika numru tal-biljett
-- kodi jako numerali personali
+- kodiċi numerali personali
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz ta u-2ittadin
+- numru tas-servizz taċ-ċittadin
 - numru tat-taxxa
-- osobisty kod numeryczny
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- osobisty kod liczbowy
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 - unikatowy numer identyfikacyjny
 - unikatowy numer tożsamości
 - uniqueidentityno #
 
-## <a name="medical-specialities"></a>Medycznej opieki lekarskiej
+## <a name="medical-specialities"></a>Specjalności medyczne
 
-Ta nieoznazona nazwana jednostka wykrywa terminy związane z dokumentacją medyczną, takie jak *rybka*.  Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa terminy związane ze specjalnościami medycznymi, takimi jak *dermatologia*.  Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
 
-## <a name="medicare-beneficiary-identifier-mbi-card"></a>Karta identyfikatorów osób korzystających z usług opieki zdrowotnej (MBI)
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>Karta identyfikatora beneficjenta medicare (MBI)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- Jedna cyfra między 1 a 9
-- jedna litera z wyjątkiem liter S, L, O, I, B, Z
-- jedna cyfra lub litera z wyłączeniem liter S, L, O, I, B, Z
+- jedna cyfra z zakresu od 1 do 9
+- jedna litera z wyłączeniem S, L, O, I, B, Z
+- jedna cyfra lub litera z wyjątkiem S, L, O, I, B, Z
 - jedna cyfra
-- Łącznik opcjonalny
-- jedna litera z wyjątkiem liter S, L, O, I, B, Z
-- jedna cyfra lub litera z wyłączeniem liter S, L, O, I, B, Z
+- opcjonalny łącznik
+- jedna litera z wyłączeniem S, L, O, I, B, Z
+- jedna cyfra lub litera z wyjątkiem S, L, O, I, B, Z
 - jedna cyfra
-- Łącznik opcjonalny
-- Dwie litery z wyjątkiem liter S, L, O, I, B, Z
+- opcjonalny łącznik
+- dwie litery z wyjątkiem S, L, O, I, B, Z
 - dwie cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_mbi_card` znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keyword_mbi_card` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_mbi_card` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_mbi_card`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_mbi_card` znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_mbi_card` regularne znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- Medicare Beneficiary Identifier (MBI) card -->
@@ -12815,43 +12816,43 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_mbi_card"></a>Keyword_mbi_card
 
-- mbi
-- mbi #
-- pracowników opieki zdrowotnej #
-- identyfikator konta służbowego
-- pracowników opieki zdrowotnej
-- numer służbowy opieki zdrowotnej
-- pracowników opieki zdrowotnej #
+- Mbi
+- Mbi #
+- beneficjent medicare #
+- identyfikator beneficjenta medicare
+- beneficjenta medicare nie
+- numer beneficjenta medicare
+- beneficjent medicare #
 
 
-## <a name="mexico-unique-population-registry-code-curp"></a>Unikatowy kod rejestru populacji w Meksyku (CURP)
+## <a name="mexico-unique-population-registry-code-curp"></a>Meksyk Unikatowy kod rejestru populacji (CURP)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 18-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- Cztery litery (bez uwzględniania liter)
-- Sześć cyfr oznaczających prawidłową datę
-- a letter - H/h lub M/m
-- Dwa litery wskazujące prawidłowy kod stanu Meksyku
-- Trzy litery
+- cztery litery (bez uwzględniania wielkości liter)
+- sześć cyfr wskazujących prawidłową datę
+- litera - H/h lub M/m
+- dwie litery wskazujące prawidłowy meksykański kod stanu
+- trzy litery
 - jedna litera lub cyfra
 - jedna cyfra
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_mexico_population_registry_code` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keyword_mexico_population_registry_code` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_mexico_population_registry_code` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_mexico_population_registry_code`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_mexico_population_registry_code` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_mexico_population_registry_code` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
@@ -12878,43 +12879,43 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - Identyfikator osobisty
 - Unikatowy identyfikator
 - personalid
-- numer_osobisty
-- klucz uniqueid
+- personalidnumber
+- uniqueidkey
 - uniqueidnumber
 - clave única
 - clave unica
-- clave personal Identidad
-- Osobista Identidad Clave
+- clave osobiste Identidad
+- osobisty Identidad Clave
 - ClaveÚnica
-- Claveunica
+- claveunica
 - clavepersonalIdentidad
 
 
-## <a name="netherlands-citizens-service-bsn-number"></a>Numer usługi holenderskiej (BSN)
+## <a name="netherlands-citizens-service-bsn-number"></a>Numer usługi obywatela Holandii (BSN)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-osiem lub dziewięć cyfr zawierających spacje opcjonalne
+osiem lub dziewięć cyfr zawierających opcjonalne spacje
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-osiemdziesiąt dziewięć cyfr:
+osiem-dziewięć cyfr:
 - trzy cyfry
-- spacja (opcjonalnie)
+- spację (opcjonalnie)
 - trzy cyfry
-- spacja (opcjonalnie)
+- spację (opcjonalnie)
 - dwie-trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_netherlands_bsn umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_netherlands_bsn.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_netherlands_bsn znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_netherlands_bsn.
+- Suma kontrolna przechodzi.
 
 ```xml
       <!-- Netherlands Citizen's Service (BSN) Number -->
@@ -12930,21 +12931,21 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
-- bsn #
-- bsn
-- servicenummer
-- numer usługi
+- Bsn #
+- Bsn
+- burgerservicenummer
+- numer usługi obywatelskiej
 - numer osoby
 - numer osobisty
-- osobisty kod numeryczny
-- numer powiązany z osobą
-- persununlijk nummer
-- persunlijke numerieke code
-- persunsgebonden
-- persunsnummer
-- sociaal-fiscaal nummer
-- social-fiscal number
-- sofi
+- osobisty kod liczbowy
+- numer związany z osobą
+- persoonlijk nummer
+- persoonlijke numerieke code
+- persoonsgebonden
+- persoonsnummer
+- nummer sociaal-fiscaal
+- numer społeczno-fiskalny
+- Sofi
 - sofinummer
 - uniek identificatienummer
 - uniek identiteitsnummer
@@ -12955,23 +12956,23 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 ## <a name="netherlands-drivers-license-number"></a>Holenderski numer prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_netherlands_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_netherlands_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_netherlands_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` .
 
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -12988,7 +12989,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -12997,49 +12998,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -13047,48 +13048,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -13096,21 +13097,21 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver nie s_license_number
+#### <a name="keywords_netherlands_eu_drivers_license_number"></a>s_license_number Keywords_netherlands_eu_driver
 
 - permis de conduire
 - rijbewijs
@@ -13120,30 +13121,30 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - rijbewijsnummers
 
 
-## <a name="netherlands-passport-number"></a>Numer paszportu Holenderskiego
+## <a name="netherlands-passport-number"></a>Numer paszportu holandii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć liter lub cyfr bez spacji i ograniczników
+dziewięć liter lub cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dziewięć liter lub cyfr
+dziewięć liter lub cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_netherlands_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_netherlands_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_netherlands_eu_passport_date` datę w formacie DD MMM/MMM YYYY (przykład — 26 MAA/MAR 2012)
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_netherlands_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` .
+- Wyrażenie `Regex_netherlands_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RRRR (przykład — 26 MAA/MAR 2012)
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_netherlands_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_netherlands_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_netherlands_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` .
 
 ```xml
       <!-- Netherlands Passport Number -->
@@ -13170,15 +13171,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
@@ -13191,42 +13192,42 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ## <a name="netherlands-physical-addresses"></a>Holenderskie adresy fizyczne
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Holandia. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Holandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="netherlands-tax-identification-number"></a>Numer identyfikacji podatkowej Holandia
+## <a name="netherlands-tax-identification-number"></a>Holenderski numer identyfikacji podatkowej
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr bez spacji i ograniczników
+dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_netherlands_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_netherlands_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_netherlands_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_netherlands_eu_tax_file_number`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_netherlands_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja  `Func_netherlands_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Netherlands Tax Identification Number -->
@@ -13246,79 +13247,79 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
 - btw nummer
-- dokument identyfikacji podatkowej holla
+- hollânske identyfikacji podatkowej
 - hulandes impuesto id number
 - hulandes impuesto identification
 - identificatienummer belasting
 - identificatienummer van belasting
-- impuesto identification number
+- numer identyfikacyjny impuesto
 - numer impuesto
 - nederlands belasting id nummer
 - nederlands belasting identificatie
 - nederlands belasting identificatienummer
 - nederlands belastingnummer
 - nederlandse belasting identificatie
-- Identyfikacja podatku holenderskiego
-- identyfikacji podatkowej użytkownika Netherland
-- Holenderskiej tezy
-- tyg. Netherland
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- tal identyfikacji podatkowej
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikacja podatkowa w Holandii
+- identyfikacji podatkowej netherlandu
+- holenderski cyna
+- cyna netherland
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- identyfikacja podatkowa
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- podatek tal
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- tax tal
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="netherlands-value-added-tax-number"></a>Numer podatku od wartości dodanej w Niemczech
+## <a name="netherlands-value-added-tax-number"></a>Holenderski numer podatku od wartości dodanej
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 14-znakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 14-znakowy wzorzec alfanumeryczny:
 
 - N lub n
 - L lub l
-- spacja, kropka lub łącznik (opcjonalnie)
+- opcjonalne spacja, kropka lub łącznik
 - dziewięć cyfr
-- spacja, kropka lub łącznik (opcjonalnie)
+- opcjonalne spacja, kropka lub łącznik
 - B lub b
 - dwie cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_netherlands_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keywords_netherlands_value_added_tax_number.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_netherlands_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_netherlands_value_added_tax_number.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_netherlands_value_added_tax_number znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_netherlands_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Netherlands Value Added Tax Number -->
@@ -13338,51 +13339,51 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
 
 - numer VAT
-- bez podatku VAT
-- vat #
-- wearde tafoege tax getal
-- btw n≤mer
+- numer vat
+- Podatku vat #
+- wearde tafoege podatku getal
+- btw nûmer
 - btw-nummer
 
 
-## <a name="new-zealand-bank-account-number"></a>Numer konta bankowego w Nowej Zelandii
+## <a name="new-zealand-bank-account-number"></a>Numer konta bankowego Nowej Zelandii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Wzorzec 14-cyfrowy do 16-cyfrowy z opcjonalnym ogranicznikiem
+Wzorzec od 14 do 16 cyfr z opcjonalnym ogranicznikiem
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Wzorzec 14-cyfrowy do 16-cyfrowy z opcjonalnym ogranicznikiem:
+Wzorzec od 14 do 16 cyfr z opcjonalnym ogranicznikiem:
 
 - dwie cyfry
-- Łącznik opcjonalny lub spacja
-- Od trzech do czterech cyfr
-- Łącznik opcjonalny lub spacja
-- Siedem cyfr
-- Łącznik opcjonalny lub spacja
-- Od dwóch do trzech cyfr
-- Łącznik lub spacja opcji
+- opcjonalny łącznik lub spacja
+- od trzech do czterech cyfr
+- opcjonalny łącznik lub spacja
+- siedem cyfr
+- opcjonalny łącznik lub spacja
+- od dwóch do trzech cyfr
+- opcje łącznika lub spacji
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_new_zealand_bank_account_number wyszukuje zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keywords_new_zealand_bank_account_number.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_new_zealand_bank_account_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_new_zealand_bank_account_number.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_new_zealand_bank_account_number wyszukuje zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_new_zealand_bank_account_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- New Zealand Bank Account Number -->
@@ -13408,38 +13409,38 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - bank_acct_nbr
 
 
-## <a name="new-zealand-drivers-license-number"></a>Numer prawa jazdy nowej Zelandii
+## <a name="new-zealand-drivers-license-number"></a>Numer prawa jazdy w Nowej Zelandii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Osiem znaków we wzorcu alfanumerycznym
+wzorzec alfanumeryczny z ośmioma znakami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Osiem znaków we wzorcu alfanumerycznym
+wzorzec alfanumeryczny z ośmioma znakami
 
 - dwie litery
-- Sześć cyfr
+- sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_newzealand_driver_license_number znajdzie zawartość, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keywords_newzealand_driver_license_number.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_newzealand_driver_license_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_newzealand_driver_license_number.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_newzealand_driver_license_number znajdzie zawartość, która jest taka, jak wzorzec.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_newzealand_driver_license_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- New Zealand Driver License Number -->
@@ -13461,104 +13462,104 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - driverlicence
 - driverlicences
 - lic sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
-- licencje sterowników
+- lics sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
 - prawo jazdy
-- licencje sterownika
+- prawa jazdy
 - lic sterownika
-- kursywa sterownika
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
 - prawo jazdy
+- kolka sterownika
+- kolki sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
+- prawo jazdy
+- prawa jazdy
 - driverlic #
 - driverlics #
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
-- licencja sterownika #
-- licencje sterowników #
-- driverslic #
+- lics sterownika #
+- prawo jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- lics sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
 - prawo jazdy #
-- licencje sterownika #
+- prawa jazdy #
 - lic sterownika #
-- kursywa sterownika #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawo jazdy #
-- międzynarodowe zezwolenie na samochód
-- międzynarodowe zezwolenia na samochód
-- nz samochód skojarzenia
-- Nowa Zelandia - Skojarzenie samochodów
+- kolka sterownika #
+- kolki sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
+- prawo jazdy #
+- prawa jazdy #
+- międzynarodowe prawo jazdy
+- międzynarodowe zezwolenia na jazdę
+- nz stowarzyszenie samochodów
+- Nowa Zelandia Stowarzyszenie Samochodowe
 
 
-## <a name="new-zealand-inland-revenue-number"></a>Nowa Zelandia o numerze przychodu na lądzie
+## <a name="new-zealand-inland-revenue-number"></a>Numer przychodu w głębi lądu w Nowej Zelandii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Osiem lub dziewięć cyfr z opcjonalnymi ogranicznikami
+osiem lub dziewięć cyfr z opcjonalnymi ogranicznikami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Osiem lub dziewięć cyfr z opcjonalnymi ogranicznikami
+osiem lub dziewięć cyfr z opcjonalnymi ogranicznikami
 
 - dwie lub trzy cyfry
-- Opcjonalna spacja lub łącznik
+- opcjonalne spacja lub łącznik
 - trzy cyfry
-- Opcjonalna spacja lub łącznik
+- opcjonalne spacja lub łącznik
 - trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_new_zealand_inland_revenue_number znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keywords_new_zealand_inland_revenue_number znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_new_zealand_inland_revenue_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_new_zealand_inland_revenue_number.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_new_zealand_inland_revenue_number znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_new_zealand_inland_revenue_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->
@@ -13577,39 +13578,39 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
 
-- nie.
+- ird no.
 - ird no #
 - nz ird
-- Nowa Zelandia ird
-- numer ird
-- Numer przychodu ze sprzedaży na lądzie
+- nowa Zelandia ird
+- ird number (Numer ird)
+- numer przychodu w głębi lądu
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>Nowa Zelandia z liczbą zdrowia
+## <a name="new-zealand-ministry-of-health-number"></a>Numer ministerstwa zdrowia Nowej Zelandii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Trzy litery i cztery cyfry
+trzy litery i cztery cyfry
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- Trzy litery (bez wielkości liter), z wyjątkiem liter "I" i "O"
+- trzy litery (bez uwzględniania wielkości liter) z wyjątkiem liter "I" i "O"
 - cztery cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_new_zealand_ministry_of_health_number umożliwia znalezienie zawartości, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_nz_terms.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_new_zealand_ministry_of_health_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_nz_terms.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_new_zealand_ministry_of_health_number umożliwia znalezienie zawartości, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_new_zealand_ministry_of_health_number znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
     <!-- New Zealand Health Number -->
@@ -13630,55 +13631,55 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 - NHI
 - Nowa Zelandia
-- National Health Index
+- Krajowy indeks kondycji
 - NHI #
-- National Health Index #
+- Krajowy indeks kondycji #
 
 
-## <a name="new-zealand-physical-addresses"></a>Nowe adresy fizyczne w Nowej Zelandii
+## <a name="new-zealand-physical-addresses"></a>Adresy fizyczne Nowej Zelandii
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Nowej Zelandii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Nowej Zelandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="new-zealand-social-welfare-number"></a>Numer nowej Zelandii społecznościowej
+## <a name="new-zealand-social-welfare-number"></a>Numer opieki społecznej w Nowej Zelandii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
-
-dziewięć cyfr
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 dziewięć cyfr
 
+### <a name="pattern"></a>Wzór
+
+dziewięć cyfr
+
 - trzy cyfry
-- Łącznik opcjonalny
+- opcjonalny łącznik
 - trzy cyfry
-- Łącznik opcjonalny
+- opcjonalny łącznik
 - trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_newzealand_social_welfare_number wyszukuje zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keywords_newzealand_social_welfare_number znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_newzealand_social_welfare_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_newzealand_social_welfare_number.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_newzealand_social_welfare_number wyszukuje zawartość, która pasuje do wzorca.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_newzealand_social_welfare_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Newzealand Social Welfare Number -->
@@ -13698,40 +13699,40 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- ubezpieczenia społecznego #
-- ubezpieczenia społecznego #
-- społecznościowych Nie.
-- numer ubezpieczenia społecznego
+- Opieki społecznej #
+- Opieki społecznej #
+- opieki społecznej nr.
+- numer opieki społecznej
 - swn #
 
 
-## <a name="norway-identification-number"></a>Numer identyfikacyjny Norwegia
+## <a name="norway-identification-number"></a>Numer identyfikacyjny Norwegii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 cyfr:
-- Sześć cyfr w formacie DDMMYY, czyli data urodzenia
-- Trzycyfrowy pojedynczy numer
-- dwie cyfry sprawdzania
+- sześć cyfr w formacie DDMMYY, które są datą urodzenia
+- trzycyfrowy numer indywidualny
+- dwie cyfry kontrolne
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_norway_id_number znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_norway_id_number znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_norway_id_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_norway_id_number.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_norway_id_numbe znajdzie zawartość, która jest taka, jak wzorzec.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_norway_id_numbe znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Norway Identification Number -->
@@ -13751,46 +13752,46 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_norway_id_number"></a>Keyword_norway_id_number
 
 - Osobisty numer identyfikacyjny
-- Norweski numer identyfikacyjny
-- Numer identyfikacyjny
-- Identyfikacja
-- Liczba_osobowa
+- Norweski numer identyfikatora
+- Numer identyfikatora
+- Identyfikacji
+- Liczba osób
 - Fødselsnummer
 
 
-## <a name="norway-physical-addresses"></a>Adresy fizyczne w Norwegiach
+## <a name="norway-physical-addresses"></a>Adresy fizyczne Norwegii
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Norwegia. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Norwegii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="philippines-unified-multi-purpose-identification-number"></a>Filipiny, ujednolicony wielozadaniowy numer identyfikacyjny
+## <a name="philippines-unified-multi-purpose-identification-number"></a>Filipiny ujednolicony wielozadaniowy numer identyfikacyjny
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 12 cyfr rozdzielonych łącznikami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 12 cyfr:
 - cztery cyfry
-- Łącznik
-- Siedem cyfr
-- Łącznik
+- łącznik
+- siedem cyfr
+- łącznik
 - jedna cyfra
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_philippines_unified_id umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_philippines_id.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_philippines_unified_id znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_philippines_id.
 
 ```xml
 <!-- Philippines Unified Multi-Purpose ID number -->
@@ -13808,35 +13809,35 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 - Ujednolicony identyfikator wielozadaniowy
 - UMID
-- Identity Card
+- Dowód tożsamości
 - Pinag-isang Multi-Layunin ID
 
 
-## <a name="poland-drivers-license-number"></a>Polski numer prawa jazdy
+## <a name="poland-drivers-license-number"></a>Numer polskiego prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-14 cyfr zawierające dwa ukośniki
+14 cyfr zawierających dwa ukośniki do przodu
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-14 cyfr i dwa ukośniki:
+14 cyfr i dwa ukośniki do przodu:
 
 - pięć cyfr
-- ukośnik
+- ukośnik do przodu
 - dwie cyfry
-- ukośnik
-- Siedem cyfr
+- ukośnik do przodu
+- siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_poland_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_poland_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_poland_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` .
 
 ```xml
       <!-- Poland Driver's License Number -->
@@ -13853,7 +13854,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -13862,49 +13863,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -13912,48 +13913,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -13961,46 +13962,46 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver s_license_number
+#### <a name="keywords_poland_eu_drivers_license_number"></a>s_license_number Keywords_poland_eu_driver
 
 - prawo jazdy
 - prawa jazdy
 
 
-## <a name="poland-identity-card"></a>Wizytówka w Polsce
+## <a name="poland-identity-card"></a>Polski dowód tożsamości
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Trzy litery i sześć cyfr
+trzy litery i sześć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Trzy litery (bez wielkości liter), po których następuje sześć cyfr
+trzy litery (bez uwzględniania wielkości liter), po których następuje sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_polish_national_id znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_polish_national_id_passport_number.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_polish_national_id znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_polish_national_id_passport_number.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Poland Identity Card-->
@@ -14022,35 +14023,35 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - Nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 - Dowód Tożsamości
-- dow. os.
+- Dow. Os.
 
 
-## <a name="poland-national-id-pesel"></a>Identyfikator narodowy Polski (PESEL)
+## <a name="poland-national-id-pesel"></a>Polski identyfikator krajowy (PESEL)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- Sześć cyfr oznaczających datę urodzenia w formacie RRMMDD
+- sześć cyfr reprezentujących datę urodzenia w formacie RRMMD
 - cztery cyfry
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_pesel_identification_number znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_pesel_identification_number znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_pesel_identification_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_pesel_identification_number.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_pesel_identification_number znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_pesel_identification_number znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
       <!-- Poland National ID (PESEL) -->
@@ -14071,47 +14072,47 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 - dowód osobisty
 - dowódosobisty
-- niepowtarzalny numer
+- liczba niepowtarzalna
 - niepowtarzalnynumer
 - nr.-pesel
 - nr-pesel
 - numer identyfikacyjny
-- pesel
-- tożsamości aby je zamknąć
+- Pesel
+- tożsamości narodowej
 
 
-## <a name="poland-passport-number"></a>Numer paszportu Polski
+## <a name="poland-passport-number"></a>Polski numer paszportu
 
-Ten typ informacji poufnych jest uwzględniony w typie informacji poufnych numer paszportu UE. Jest także dostępna jako autonomiczna jednostka typu informacji poufnych.
+Ta jednostka typu informacji poufnych jest uwzględniana w typie informacji poufnych numeru paszportu UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery i siedem cyfr
+dwie litery i siedem cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dwie litery (bez wielkości liter), po których następuje siedem cyfr
+Dwie litery (bez uwzględniania wielkości liter), po których następuje siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_polish_passport_number_v2` zawartość, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
-- Słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_polish_national_passport_number` znajduje się.
-- Zostanie znalezione słowo `Keywords_eu_passport_date` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_polish_passport_number_v2` znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` .
+- Odnaleziono słowo kluczowe.`Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_polish_passport_number_v2` zawartość, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
-- Słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_polish_national_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_polish_passport_number_v2` znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` .
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_polish_passport_number_v2` zawartość, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja `Func_polish_passport_number_v2` znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
       <!-- Poland Passport Number -->
@@ -14141,15 +14142,15 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keyword_polish_national_passport_number"></a>Keyword_polish_national_passport_number
@@ -14165,53 +14166,53 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
 ## <a name="poland-physical-addresses"></a>Adresy fizyczne w Polsce
 
-Ta nieoznakowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Polski. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Polski. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="poland-regon-number"></a>Polski numer REGON
+## <a name="poland-regon-number"></a>Numer REGON w Polsce
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Numer 9- lub 14-cyfrowy
+9-cyfrowy lub 14-cyfrowy numer
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-liczba dziewięciocyfrowa lub 14-cyfrowa:
+dziewięciocyfrowy lub 14-cyfrowy numer:
 
 - dziewięć cyfr lub
 - dziewięć cyfr
-- łącznik
+- Łącznik
 - pięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_polish_regon_number znajdzie zawartość, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keywords_polish_regon_number.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_polish_regon_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_polish_regon_number.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_polish_regon_number znajdzie zawartość, która jest taka, jak wzorzec.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_polish_regon_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Polish REGON Number  -->
@@ -14230,9 +14231,9 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 #### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
 
 - identyfikator regon
-- numer statystyczny
+- liczba statystyczna
 - identyfikator statystyczny
-- brak statystyczny
+- statystyczne nie
 - numer regon
 - regonid #
 - regonno #
@@ -14247,30 +14248,30 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 ## <a name="poland-tax-identification-number"></a>Numer identyfikacji podatkowej w Polsce
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-11 cyfr bez spacji i ograniczników
+11 cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 11 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_poland_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_poland_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_poland_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_poland_eu_tax_file_number`
 
 
 ```xml
@@ -14287,54 +14288,54 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keywords_poland_eu_tax_file_number"></a>Keywords_poland_eu_tax_file_number
 
-- nip #
-- nip
+- Nip #
+- Nip
 - numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
-- identyfikator VAT #
-- identyfikator VAT
-- bez podatku VAT
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
+- identyfikator vat #
+- identyfikator vat
+- numer vat
 - numer VAT
 - vatid #
 - vatid
 - vatno #
 
 
-## <a name="portugal-citizen-card-number"></a>Numer karty portugalskiej
+## <a name="portugal-citizen-card-number"></a>Numer karty obywatela Portugalii
 
-### <a name="format"></a>Formatowanie
-
-osiem cyfr
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="pattern"></a>Wzór
+
+osiem cyfr
+
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_portugal_citizen_card umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Słowo kluczowe z Keyword_portugal_citizen_card znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_portugal_citizen_card znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_portugal_citizen_card.
 
 ```xml
 <!-- Portugal Citizen Card Number -->
@@ -14350,57 +14351,57 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
-- bilbilie de identidade
+- bilhete de identidade
 - cartão de cidadão
-- karta card
+- karta obywatela
 - numer dokumentu
 - documento de identificação
-- numer identyfikacyjny
+- numer identyfikatora
 - brak identyfikacji
 - numer identyfikacyjny
 - brak karty tożsamości
 - numer karty tożsamości
-- national id card
+- dowód osobisty
 - nic
 - número bi de portugal
 - número de identificação civil
 - número de identificação fiscal
 - número do documento
-- Numer bi Portugalia
+- portugal bi number
 
 
-## <a name="portugal-drivers-license-number"></a>Numer prawa jazdy w Portugalia
+## <a name="portugal-drivers-license-number"></a>Numer prawa jazdy Portugalia
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwa desenie — dwie litery, po których następuje 5-8 cyfr ze znakami specjalnymi
+dwa wzorce — dwie litery, po których następuje od 5 do 8 cyfr ze znakami specjalnymi
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Wzorzec 1. Dwie litery, po których następuje cyfra 5/6 ze znakami specjalnymi:
-- Dwie litery (bez wielkości liter)
+Wzorzec 1: Dwie litery, po którym następuje 5/6 ze znakami specjalnymi:
+- Dwie litery (bez uwzględniania wielkości liter)
 - Łącznik
 - Pięć lub sześć cyfr
-- Spacja
+- Przestrzeń
 - Jedna cyfra
 
-Wzorzec 2: Jedna litera i 6/8 cyfr ze znakami specjalnymi:
-- Jedna litera (bez wielkości liter)
+Wzorzec 2: jedna litera, po której następuje 6/8 cyfr ze znakami specjalnymi:
+- Jedna litera (bez uwzględniania wielkości liter)
 - Łącznik
 - Sześć lub osiem cyfr
-- Spacja
+- Przestrzeń
 - Jedna cyfra
 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_portugal_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_portugal_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_portugal_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` .
 
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -14417,7 +14418,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -14426,49 +14427,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -14476,48 +14477,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -14525,61 +14526,61 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver s_license_number
+#### <a name="keywords_portugal_eu_drivers_license_number"></a>s_license_number Keywords_portugal_eu_driver
 
-- carteira de sportista
-- carteira sportista
+- carteira de motorista
+- carteira motorista
 - carteira de habilitação
 - carteira habilitação
 - número de licença
 - número licença
 - permissão de condução
 - permissão condução
-- Licença condução Portugal
+- Licença condução Portugalia
 - carta de condução
 
 
-## <a name="portugal-passport-number"></a>Numer paszportu Portugalia
+## <a name="portugal-passport-number"></a>Numer paszportu Portugalii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Jedna litera, po której następuje sześć cyfr bez spacji i ograniczników
+jedna litera, po której następuje sześć cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-jedna litera i sześć cyfr:
+jedna litera, po której następuje sześć cyfr:
 
-- jedna litera (bez wielkości liter)
-- Sześć cyfr
+- jedna litera (bez uwzględniania wielkości liter)
+- sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_portugal_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_portugal_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_portugal_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_portugal_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_portugal_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_portugal_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` .
 
 ```xml
       <!-- Portugal Passport Number -->
@@ -14609,71 +14610,71 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
 - número do passaporte
-- paszport portugalski
-- Portugalski passeport
-- Portugalski passaporte
-- passaporte nº
-- passeport nº
+- portugalski paszport
+- portugalski passeport
+- portugalski passaporte
+- passaporte n°
+- passeport n°
 - números de passaporte
-- paszporty portugalskie
+- portugalskie paszporty
 - número passaporte
 - números passaporte
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="portugal-physical-addresses"></a>Fizyczne adresy w Portugalia
+## <a name="portugal-physical-addresses"></a>Adresy fizyczne Portugalii
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Portugalia. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Portugalii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="portugal-tax-identification-number"></a>Numer identyfikacji podatkowej Portugalia
+## <a name="portugal-tax-identification-number"></a>Numer identyfikacji podatkowej Portugalii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr ze spacjami opcjonalnymi
+dziewięć cyfr z opcjonalnymi spacjami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - trzy cyfry
-- spacja opcjonalna
+- opcjonalne miejsce
 - trzy cyfry
-- spacja opcjonalna
+- opcjonalne miejsce
 - trzy cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_portugal_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_portugal_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_portugal_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_portugal_eu_tax_file_number`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_portugal_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja  `Func_portugal_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Portugal Tax Identification Number -->
@@ -14692,51 +14693,51 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keywords_portugal_eu_tax_file_number"></a>Keywords_portugal_eu_tax_file_number
 
-- cpf #
-- cpf
-- nif #
-- nif
+- Cpf #
+- Cpf
+- Nif #
+- Nif
 - número de identificação fisca
-- numero obrachunkowe
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- numero fiscal
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
 ## <a name="romania-drivers-license-number"></a>Numer prawa jazdy Rumunii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-jeden znak i osiem cyfr
+jeden znak, po którym następuje osiem cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-jeden znak i osiem cyfr:
-- jedna litera (bez wielkości liter) lub cyfra
+jeden znak, po którym następuje osiem cyfr:
+- jedna litera (bez uwzględniania wielkości liter) lub cyfra
 - osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_romania_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_romania_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_romania_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` .
 
 ```xml
       <!-- Romania Driver's License Number -->
@@ -14753,7 +14754,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -14762,49 +14763,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -14812,48 +14813,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -14861,53 +14862,53 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
-#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver s_license_number
+#### <a name="keywords_romania_eu_drivers_license_number"></a>s_license_number Keywords_romania_eu_driver
 
 - permis de conducere
 - permisului de conducere
 - permisului conducere
 - permisele de conducere
-- conducere permisele
+- permisele conducere
 - permis conducere
 
 
 ## <a name="romania-passport-number"></a>Numer paszportu Rumunii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 osiem lub dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 osiem lub dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_romania_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_romania_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_romania_eu_passport_date` datę w formacie DD MMM/MMM YY (przykład: 01 LUT/10) lub słowo kluczowe z `Keywords_eu_passport_date`
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_romania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` .
+- Wyrażenie `Regex_romania_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RR (przykład- 01 FEB/FEB 10) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_romania_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_romania_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_romania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` .
 
 ```xml
       <!-- Romania Passport Number -->
@@ -14937,59 +14938,59 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-num dorul pa gdyaportului numarul9ului numerele pa zaimportujului Paáaport nr
+numărul pașaportului numarul pasaportului numerele paşaportului Paşaport nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="romania-personal-numeric-code-cnp"></a>Rumunia : osobisty kod numeryczny (CNP)
+## <a name="romania-personal-numeric-code-cnp"></a>Rumunia osobisty kod liczbowy (CNP)
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- Jedna cyfra od 1 do 9
-- Sześć cyfr oznaczających datę urodzenia (RRMMDD)
-- dwucyfrowa (może to być liczba 01-52 lub 99).
+- jedna cyfra z zakresu od 1 do 9
+- sześć cyfr reprezentujących datę urodzenia (RRMMDD)
+- dwie cyfry, które mogą być 01-52 lub 99
 - cztery cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_romania_eu_national_id_card` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_romania_eu_national_id_card` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_romania_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_romania_eu_national_id_card`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_romania_eu_national_id_card` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_romania_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
@@ -15008,97 +15009,97 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
-- cnp #
-- cnp
+- Cnp #
+- Cnp
 - cod identificare personal
-- Cod numeric personal
+- cod numeric personal
 - cod unic identificare
 - codnumericpersonal #
-- Codul fiscal nr.
-- identificarea fiscal nr #
+- codul fiscal nr.
+- identificarea fiscală nr #
 - id-ul taxei
 - numer ubezpieczenia
-- numer_ubezpieczenia #
-- identyfikator narodowy #
-- identyfikator narodowy
-- numer identyfikacyjny kraju
-- num dor identificare personal
-- tożsamości typu liczba_numr
-- numör personal unic
-- num wiad.identyfikator #
-- num wiad.identyfikator
-- num dorpersonalunic #
-- num dorpersonalunic
-- numlnaru de identificare fiscalö
-- num dorul de identificare fiscalö
-- osobisty kod numeryczny
-- przypinanie #
-- przypinanie
-- Nie pliku podatkowego
+- numer ubezpieczenia #
+- identyfikator krajowy #
+- identyfikator krajowy
+- krajowy numer identyfikacyjny
+- număr identificare personal
+- număr identitate
+- număr personal unic
+- număridentitate #
+- număridentitate
+- numărpersonalunic #
+- numărpersonalunic
+- număru de identificare fiscală
+- numărul de identificare fiscală
+- osobisty kod liczbowy
+- Pin #
+- Pin
+- plik podatkowy nie
 - numer pliku podatkowego
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 - unikatowy numer identyfikacyjny
 - unikatowy numer tożsamości
 - uniqueidentityno #
 - uniqueidentityno
 
 
-## <a name="romania-physical-addresses"></a>Adresy fizyczne w Rumunii
+## <a name="romania-physical-addresses"></a>Adresy fizyczne Rumunii
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym Rumunii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Rumunii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="russia-passport-number-domestic"></a>Numer paszportu Rosji na krajowe
+## <a name="russia-passport-number-domestic"></a>Numer paszportu Rosji krajowy
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10-cyfrowy numer
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Numer 10-cyfrowy:
+10-cyfrowy numer:
 
 - dwie cyfry
-- Opcjonalna spacja lub łącznik
+- opcjonalne spacja lub łącznik
 - dwie cyfry
-- spacja opcjonalna
-- Sześć cyfr
+- opcjonalne miejsce
+- sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Ta Regex_Russian_Passport_Number_Domestic wyszukuje zawartość, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_Russian_Passport_Number.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Rejestr Regex_Russian_Passport_Number_Domestic znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Russian_Passport_Number.
 
 ```xml
       <!-- Russian Passport Number Domestic -->
@@ -15115,13 +15116,13 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
 - numer paszportu
-- paszport
-- paszport #
+- nr paszportu
+- Paszport #
 - identyfikator paszportu
-- paszport #
-- numer paszportu #
+- passportno #
+- passportnumber #
 - паспорт нет
-- паспорт id
+- Identyfikator паспорт
 - pоссийской паспорт
 - pусский номер паспорта
 - паспорт #
@@ -15130,36 +15131,36 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - номерпаспорта #
 
 
-## <a name="russia-passport-number-international"></a>Numer paszportu Rosji za międzynarodowy
+## <a name="russia-passport-number-international"></a>Numer paszportu Rosji międzynarodowy
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Numer dziewięciocyfrowy
+liczba dziewięciocyfrowa
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Liczba dziewięciocyfrowa:
+liczba dziewięciocyfrowa:
 
 - dwie cyfry
-- Opcjonalna spacja lub łącznik
-- Siedem cyfr
+- opcjonalne spacja lub łącznik
+- siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regex Regex_Russian_Passport_Number_International umożliwia znalezienie zawartości, która jest taka, jaka jest tego wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_Russian_Passport_Number.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Rejestr Regex_Russian_Passport_Number_International znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Russian_Passport_Number.
 
 ```xml
       <!-- Russian Passport Number International -->
@@ -15176,13 +15177,13 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
 - numer paszportu
-- paszport
-- paszport #
+- nr paszportu
+- Paszport #
 - identyfikator paszportu
-- paszport #
-- numer paszportu #
+- passportno #
+- passportnumber #
 - паспорт нет
-- паспорт id
+- Identyfikator паспорт
 - pоссийской паспорт
 - pусский номер паспорта
 - паспорт #
@@ -15191,25 +15192,25 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - номерпаспорта #
 
 
-## <a name="saudi-arabia-national-id"></a>Arabia Saudyjska
+## <a name="saudi-arabia-national-id"></a>Identyfikator narodowy Arabii Saudyjskiej
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_saudi_arabia_national_id umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_saudi_arabia_national_id.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_saudi_arabia_national_id znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_saudi_arabia_national_id.
 
 ```xml
 <!-- Saudi Arabia National ID -->
@@ -15227,39 +15228,39 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_saudi_arabia_national_id"></a>Keyword_saudi_arabia_national_id
 
-- Karta identyfikacyj
-- Numer karty
-- Numer identyfikacyjny
+- Karta identyfikacyjna
+- Numer karty I
+- Numer identyfikatora
 - الوطنية الهوية بطاقة رقم
 
 
-## <a name="singapore-national-registration-identity-card-nric-number"></a>Numer dowodu tożsamości państwowej w Singapurze (NRIC)
+## <a name="singapore-national-registration-identity-card-nric-number"></a>Numer krajowego dowodu rejestracyjnego (NRIC) w Singapurze
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć liter i cyfr
+dziewięć liter i cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - dziewięć liter i cyfr:
-- litera "F", "G", "S" lub "T" (bez wielkości liter)
-- Siedem cyfr
-- Cyfra wyboru w porządku alfabetycznym
+- litery "F", "G", "M", "S" lub "T" (bez uwzględniania wielkości liter)
+- siedem cyfr
+- alfabetyczna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_singapore_nric umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z Keyword_singapore_nric znajduje się.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_singapore_nric znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_singapore_nric.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_singapore_nric umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_singapore_nric znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Singapore National Registration Identity Card (NRIC) Number -->
@@ -15278,38 +15279,38 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_singapore_nric"></a>Keyword_singapore_nric
 
-- National Registration Identity Card
+- Krajowa karta rejestracyjna
 - Numer karty tożsamości
 - NRIC
 - IC
-- Obcy numer identyfikacyjny
+- Numer identyfikacyjny obcy
 - FIN
 - 身份证
 - 身份證
 
 
-## <a name="slovakia-drivers-license-number"></a>Numer prawa jazdy na Słowacja
+## <a name="slovakia-drivers-license-number"></a>Numer prawa jazdy słowacji
 
-### <a name="format"></a>Formatowanie
-
-jeden znak, po którym następuje siedem cyfr
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 jeden znak, po którym następuje siedem cyfr
 
-- jedna litera (bez wielkości liter) lub cyfra
-- Siedem cyfr
+### <a name="pattern"></a>Wzór
 
-### <a name="checksum"></a>Checksum
+jeden znak, po którym następuje siedem cyfr
+
+- jedna litera (bez uwzględniania wielkości liter) lub cyfra
+- siedem cyfr
+
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_slovakia_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_slovakia_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_slovakia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` .
 
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -15326,7 +15327,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -15335,49 +15336,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -15385,48 +15386,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -15434,52 +15435,52 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver nie s_license_number
+#### <a name="keywords_slovakia_eu_drivers_license_number"></a>s_license_number Keywords_slovakia_eu_driver
 
 - vodičský preukaz
 - vodičské preukazy
 - vodičského preukazu
-- vodičskčch preukazov
+- vodičských preukazov
 
 
-## <a name="slovakia-passport-number"></a>Numer paszportu Słowacja
+## <a name="slovakia-passport-number"></a>Numer paszportu Słowacji
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-jedna cyfra lub litera, po której następuje siedem cyfr bez spacji i ograniczników
+wzorzec alfanumeryczny o ośmiu lub dziewięciu znakach
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-jedna cyfra lub litera (bez wielkości liter), po której następuje siedem cyfr
+jedna litera (bez uwzględniania wielkości liter), po której następuje siedem cyfr lub dwie litery (bez uwzględniania wielkości liter), po których następuje sześć lub siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_slovakia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_slovakia_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_slovakia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_slovakia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_slovakia_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_slovakia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` .
 
 ```xml
       <!-- Slovakia Passport Number -->
@@ -15509,15 +15510,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
@@ -15530,42 +15531,42 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="slovakia-personal-number"></a>Numer osobisty Słowacja
+## <a name="slovakia-personal-number"></a>Numer osobisty Słowacji
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć lub 10 cyfr zawierające opcjonalny ukośnik odwrotny
+dziewięć lub 10 cyfr zawierających opcjonalny ukośnik odwrotny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- Sześć cyfr oznaczających datę urodzenia
+- sześć cyfr reprezentujących datę urodzenia
 - opcjonalny ukośnik (/)
 - trzy cyfry
-- jedna opcjonalna cyfra wyboru
+- jedna opcjonalna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_slovakia_eu_national_id_card` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_slovakia_eu_national_id_card` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_slovakia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_slovakia_eu_national_id_card`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_slovakia_eu_national_id_card` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja  `Func_slovakia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Slovakia Personal Number -->
@@ -15590,7 +15591,7 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - číslo národnej identifikačnej karty
 - číslo občianského preukazu
 - daňové číslo
-- numer identyfikacyjny
+- numer identyfikatora
 - brak identyfikacji
 - numer identyfikacyjny
 - identifikačná karta č
@@ -15599,66 +15600,66 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - numer karty tożsamości
 - národná identifikačná značka č
 - numer krajowy
-- numer_narodowy #
+- nationalnumber #
 - nemzeti személyazonosító igazolvány
-- numer_osobisty #
+- personalidnumber #
 - rč
 - rodne cislo
 - rodné číslo
-- numer PEZEt
-- ssn #
-- ssn
+- numer ubezpieczenia społecznego
+- Ssn #
+- Ssn
 - személyi igazolvány szám
 - személyi igazolvány száma
 - személyigazolvány szám
-- Nie pliku podatkowego
+- plik podatkowy nie
 - numer pliku podatkowego
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="slovakia-physical-addresses"></a>Adresy fizyczne na Słowacja
+## <a name="slovakia-physical-addresses"></a>Adresy fizyczne Słowacji
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Słowacja. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Słowacji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="slovenia-drivers-license-number"></a>Numer prawa jazdy w Słowenii
+## <a name="slovenia-drivers-license-number"></a>Słoweński numer prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr bez spacji i ograniczników
+dziewięć cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_slovenia_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_slovenia_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_slovenia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` .
 
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -15675,7 +15676,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -15684,49 +15685,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -15734,48 +15735,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -15783,23 +15784,23 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
-#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver nie s_license_number
+#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver s_license_number
 
 - vozniško dovoljenje
-- vozniška številka licence
+- licencja vozniška številka
 - vozniških dovoljenj
 - številka vozniškega dovoljenja
 - številke vozniških dovoljenj
@@ -15807,32 +15808,32 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ## <a name="slovenia-passport-number"></a>Numer paszportu Słowenii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery, po których następuje siedem cyfr bez spacji i ograniczników
+dwie litery, po których następuje siedem cyfr bez spacji ani ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 dwie litery, po których następuje siedem cyfr:
 
 - litera "P"
-- Jedna wielkie litery
-- Siedem cyfr
+- jedna wielkie litery
+- siedem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_slovenia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_slovenia_eu_passport_number` znajduje się.
-- Wyrażenie regularne znajduje `Regex_eu_passport_date1` datę w formacie DD.MM.YYYY lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_slovenia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` .
+- Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_slovenia_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_slovenia_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_slovenia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` .
 
 ```xml
       <!-- Slovenia Passport Number -->
@@ -15862,15 +15863,15 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
@@ -15884,50 +15885,50 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="slovenia-physical-addresses"></a>Adresy fizyczne w Słowenii
+## <a name="slovenia-physical-addresses"></a>Adresy fizyczne Słowenii
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym użytkownika ze Słowenii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Słowenii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="slovenia-tax-identification-number"></a>Numer identyfikacji podatkowej w Słowenii
+## <a name="slovenia-tax-identification-number"></a>Słoweński numer identyfikacji podatkowej
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Osiem cyfr bez spacji i ograniczników
+osiem cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- Jedna cyfra od 1 do 9
-- Sześć cyfr
+- jedna cyfra z zakresu od 1 do 9
+- sześć cyfr
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_slovenia_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_slovenia_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_slovenia_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_slovenia_eu_tax_file_number`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_slovenia_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja  `Func_slovenia_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -15949,60 +15950,60 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - davčna številka
 - identifikacijska številka davka
 - številka davčne datoteke
-- Nie pliku podatkowego
+- plik podatkowy nie
 - numer pliku podatkowego
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="slovenia-unique-master-citizen-number"></a>Unikatowy numer dla masterów w słowenii
+## <a name="slovenia-unique-master-citizen-number"></a>Słoweński unikatowy główny numer obywatela
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13 cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 13 cyfr w określonym wzorcu:
 
-- Siedem cyfr odpowiadających dacie urodzenia (DDMMLLL), gdzie "LLL" odpowiada ostatnim trzem cyfrom roku urodzenia
+- siedem cyfr, które odpowiadają dacie urodzenia (DDMMLLL), gdzie "LLL" odpowiada ostatnim trzem cyfrom roku urodzenia
 - dwie cyfry odpowiadające obszarowi urodzenia "50"
-- Trzy cyfry odpowiadające kombinacji płci i liczby kolejnej dla osób urodzionych w tym samym dniu. 000-499 dla mężczyzn i 500-999 dla kobiet.
+- trzy cyfry, które odpowiadają kombinacji płci i numeru seryjnego dla osób urodzonych tego samego dnia. 000-499 dla mężczyzn i 500-999 dla kobiet.
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_slovenia_eu_national_id_card` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_slovenia_eu_national_id_card` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_slovenia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_slovenia_eu_national_id_card`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_slovenia_eu_national_id_card` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_slovenia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
@@ -16021,58 +16022,58 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena številka ggalnega drlovavljana
+- edinstvena številka glavnega državljana
 - emšo
 - enotna maticna številka obcana
-- identyfikator
+- id card
 - numer identyfikacyjny
 - identifikacijska številka
-- karta tożsamości
+- Dowód tożsamości
 - identyfikator nacionalna
 - nacionalni potni list
-- identyfikator narodowy
+- identyfikator krajowy
 - osebna izkaznica
-- osebni koda
+- koda osebni
 - osebni ne
 - osebni številka
 - kod osobisty
 - numer osobisty
-- osobisty kod numeryczny
-- številka drvljana
-- unikatowy numer unikatowy
-- unikatowy numer identyfikacyjny
+- osobisty kod liczbowy
+- številka državljana
+- unikatowy numer obywatela
+- unikatowy numer identyfikatora
 - unikatowy numer tożsamości
-- unikatowy numer wzorca
+- unikatowy numer obywatela głównego
 - unikatowy numer rejestracji
 - uniqueidentityno #
 - uniqueidentityno #
 
 
-## <a name="south-africa-identification-number"></a>Numer identyfikacyjny Republika Południowej Afryki
+## <a name="south-africa-identification-number"></a>Republika Południowej Afryki — numer identyfikacyjny
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13 cyfr, które mogą zawierać spacje
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 13 cyfr:
-- Sześć cyfr w formacie RRMMDD, czyli data urodzenia
+- sześć cyfr w formacie YYMMDD, które są datą urodzenia
 - cztery cyfry
-- wskaźnik cyfr cyfry
+- jednocyfrowy wskaźnik obywatelstwa
 - cyfra "8" lub "9"
-- jedna cyfra, czyli cyfra sumy kontrolnej
+- jedna cyfra, która jest cyfrą sumy kontrolnej
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_south_africa_identification_number znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_south_africa_identification_number.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_south_africa_identification_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_south_africa_identification_number.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- South Africa Identification Number -->
@@ -16088,41 +16089,41 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
-- Identity card
-- Identyfikator
-- Identyfikacja
+- Dowód tożsamości
+- ID
+- Identyfikacji
 
 
-## <a name="south-korea-resident-registration-number"></a>Numer rejestracji rezydenta Korei Południowej
+## <a name="south-korea-resident-registration-number"></a>Numer rejestracyjny rezydenta Korei Południowej
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-13 cyfr zawierające łącznik
+13 cyfr zawierających łącznik
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 13 cyfr:
-- Sześć cyfr w formacie RRMMDD, czyli data urodzenia
-- Łącznik
-- Jedna cyfra określona przez wiek i płeć
+- sześć cyfr w formacie YYMMDD, które są datą urodzenia
+- łącznik
+- jedna cyfra określona przez wiek i płeć
 - czterocyfrowy kod regionu urodzenia
-- Jedna cyfra używana do odróżnienia osób, dla których poprzednie liczby są identyczne
-- cyfrę wyboru.
+- jedna cyfra używana do rozróżniania osób, dla których poprzednie liczby są identyczne
+- cyfrę kontrolną.
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_south_korea_resident_number znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_south_korea_resident_number.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_south_korea_resident_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_south_korea_resident_number.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_south_korea_resident_number znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_south_korea_resident_number znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- South Korea Resident Registration Number -->
@@ -16141,46 +16142,46 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_south_korea_resident_number"></a>Keyword_south_korea_resident_number
 
-- National ID card
-- Numer rejestracji na wye m.in.
+- Krajowa karta tożsamości
+- Numer rejestracyjny obywatela
 - Jumin deungnok beonho
-- WN
+- RRN
 - 주민등록번호
 
 
 ## <a name="spain-dni"></a>Hiszpania DNI
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Osiem cyfr, po których następuje jeden znak
+osiem cyfr, po których następuje jeden znak
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Siedem cyfr i jeden znak
+siedem cyfr, po których następuje jeden znak
 
 - osiem cyfr
-- Opcjonalna spacja lub łącznik
-- Jedna litera wyboru (bez wielkości liter)
+- Opcjonalne spacja lub łącznik
+- jedna litera kontrolna (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja lub  `Func_spain_eu_DL_and_NI_number_citizen` znajduje `Func_spain_eu_DL_and_NI_number_foreigner` zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo  `Keywords_spain_eu_national_id_card"` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_spain_eu_national_id_card"`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja lub  `Func_spain_eu_DL_and_NI_number_citizen` znajduje `Func_spain_eu_DL_and_NI_number_foreigner` zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
 
 
 ```xml
@@ -16215,8 +16216,8 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - identidad único
 - identidadúnico #
 - numer ubezpieczenia
-- numer identyfikacyjny kraju
-- tożsamość państwowa
+- krajowy numer identyfikacyjny
+- tożsamość narodowa
 - nationalid #
 - nationalidno #
 - nie #
@@ -16224,37 +16225,37 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - nienúmero #
 - número de identificación
 - número nacional identidad
-- numer identyfikacyjny
+- osobisty numer identyfikacyjny
 - tożsamość osobista nie
 - unikatowy numer tożsamości
-- uniqueid #
+- Uniqueid #
 
 
-## <a name="spain-drivers-license-number"></a>Numer prawa jazdy Hiszpanii
+## <a name="spain-drivers-license-number"></a>Numer hiszpańskiego prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Osiem cyfr, po których następuje jeden znak
+osiem cyfr, po których następuje jeden znak
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-osiem cyfr i jeden znak:
+osiem cyfr, po których następuje jeden znak:
 
 - osiem cyfr
-- Jedna cyfra lub litera (bez wielkości liter)
+- jedna cyfra lub litera (bez uwzględniania wielkości liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja lub  `Func_spain_eu_DL_and_NI_number_citizen` znajduje `Func_spain_eu_DL_and_NI_number_foreigner` zawartość, która pasuje do wzorca.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_spain_eu_driver's_license_number` znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` .
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja lub  `Func_spain_eu_DL_and_NI_number_citizen` znajduje `Func_spain_eu_DL_and_NI_number_foreigner` zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Spain Driver's License Number -->
@@ -16284,7 +16285,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -16293,49 +16294,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -16343,48 +16344,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -16392,30 +16393,30 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver nie s_license_number
+#### <a name="keywords_spain_eu_drivers_license_number"></a>s_license_number Keywords_spain_eu_driver
 
 - permiso de conducción
 - permiso conducción
 - licencia de conducir
-- wzornik licucir
-- conducir permiso
+- licencia conducir
+- permiso conducir
 - permiso de conducir
 - permisos de conducir
-- conducir permisos
+- permisos conducir
 - carnet conducir
 - carnet de conducir
 - licencia de manejo
@@ -16424,32 +16425,32 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ## <a name="spain-passport-number"></a>Numer paszportu Hiszpanii
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-8- lub 9-znakowa kombinacja liter i cyfr bez spacji i ograniczników
+ośmio- lub dziewięcioznakowe połączenie liter i cyfr bez spacji i ograniczników
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-8- lub 9-znakowa kombinacja liter i cyfr:
+ośmio- lub dziewięcioznakowe połączenie liter i cyfr:
 
-- Dwie cyfry lub litery
+- dwie cyfry lub litery
 - jedna cyfra lub litera (opcjonalnie)
-- Sześć cyfr
+- sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie dotyczy
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_spain_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_spain_eu_passport_number` znajduje się.
-- Wyrażenie regularne umożliwia `Regex_spain_eu_passport_date` znalezienie daty w formacie DD-MM-YYYY lub znalezione słowo `Keywords_eu_passport_date` kluczowe od
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_spain_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` .
+- Wyrażenie `Regex_spain_eu_passport_date` regularne znajduje datę w formacie DD-MM-RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_spain_eu_passport_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_passport_number` lub `Keywords_spain_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_spain_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` .
 
 ```xml
       <!-- Spain Passport Number -->
@@ -16479,77 +16480,77 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
-- libreta jeśli nie ma na to danych
-- número gdyporte
-- españa gdyporte
-- números de gdyporte
-- número de gdyporte
-- números gdyporte
-- gdyporte nie
+- libreta pasaporte
+- número pasaporte
+- españa pasaporte
+- números de pasaporte
+- número de pasaporte
+- números pasaporte
+- pasaporte no
 - Passeport n°
 - n° Passeport
-- gdyporte nie.
-- gdyporte n°
-- paszport Hiszpanii
+- pasaporte no.
+- pasaporte n°
+- paszport hiszpanii
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
 ## <a name="spain-physical-addresses"></a>Adresy fizyczne Hiszpanii
 
-Ta nieoznazona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Hiszpanii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Hiszpanii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="spain-social-security-number-ssn"></a>Hiszpania: numer PEŁ(SSN)
+## <a name="spain-social-security-number-ssn"></a>Numer ubezpieczenia społecznego w Hiszpanii (SSN)
 
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 11–12 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-11-12 cyfr:
+11–12 cyfr:
 - dwie cyfry
-- ukośnik (opcjonalny)
-- Od siedmiu do ośmiu cyfr
-- ukośnik (opcjonalny)
+- ukośnik (opcjonalnie)
+- od siedmiu do ośmiu cyfr
+- ukośnik (opcjonalnie)
 - dwie cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_spanish_social_security_number znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
-- - Zostanie znalezione słowo  `Keywords_spain_eu_ssn_or_equivalent` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_spanish_social_security_number znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
+- - Odnaleziono słowo kluczowe.`Keywords_spain_eu_ssn_or_equivalent`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_spanish_social_security_number znajdzie zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_spanish_social_security_number znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
     <!-- Spain SSN -->
@@ -16568,70 +16569,70 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
-- ssn
-- ssn #
+- Ssn
+- Ssn #
 - socialsecurityno
-- nr ubezpieczenia społecznego
-- numer PEZEt
+- zabezpieczenia społecznego nie
+- numer ubezpieczenia społecznego
 - número de la seguridad social
 
 
 ## <a name="spain-tax-identification-number"></a>Numer identyfikacji podatkowej Hiszpanii
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Siedem lub osiem cyfr i jedna lub dwie litery określonego wzorca
+siedem lub osiem cyfr i jedna lub dwie litery w określonym wzorcu
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Hiszpańskie osoby naturalne z państwową kartą tożsamości Hiszpanii:
+Hiszpańskie osoby fizyczne z krajowym dowodem tożsamości Hiszpanii:
 
 - osiem cyfr
-- Jedna wielkie litery (zróżnicowa wielkość liter)
+- jedna wielkie litery (wielkość liter)
 
-Nieuzyskane spaniardy bez dowodu tożsamości państwowej Hiszpanii
+Hiszpanie niebędący rezydentami bez narodowego dowodu osobistego Hiszpanii
 
-- Jedna wielkie litery "L" (z wielkością liter)
-- Siedem cyfr
-- Jedna wielkie litery (zróżnicowa wielkość liter)
+- jedna wielkie litery "L" (wielkość liter)
+- siedem cyfr
+- jedna wielkie litery (wielkość liter)
 
-Rezydentni hiszpanie w wieku poniżej 14 lat bez dowodu tożsamości państwowej Hiszpanii:
+Rezydent Hiszpanie w wieku poniżej 14 lat bez hiszpańskiego dowodu osobistego:
 
-- Jedna wielkie litery "K" (z wielkością liter)
-- Siedem cyfr
-- Jedna wielkie litery (zróżnicowa wielkość liter)
+- jedna wielkie litery "K" (wielkość liter)
+- siedem cyfr
+- jedna wielkie litery (wielkość liter)
 
-Obcokraje z numerem identyfikacyjnym osoby obcej
+Obcokrajowcy z numerem identyfikacyjnym cudzoziemca
 
-- Jedna wielkie litery: "X", "Y" lub "Z" (z wielkością liter)
-- Siedem cyfr
-- Jedna wielkie litery (zróżnicowa wielkość liter)
+- jedną wielką literę, która ma wartość "X", "Y" lub "Z" (wielkość liter)
+- siedem cyfr
+- jedna wielkie litery (wielkość liter)
 
-Obcokraje bez numeru identyfikacyjnego obcokrajowca
+Obcokrajowcy bez numeru identyfikacyjnego cudzoziemca
 
-- Jedna wielkie litery, dla których jest to litera "M" (zróżnicowa wielkość liter)
-- Siedem cyfr
-- Jedna wielkie litery (zróżnicowa wielkość liter)
+- jedna wielkie litery, która jest literą "M" (wielkość liter)
+- siedem cyfr
+- jedna wielkie litery (wielkość liter)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja lub  `Func_spain_eu_tax_file_number` znajduje `Func_spain_eu_DL_and_NI_number_citizen` zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo  `Keywords_spain_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_spain_eu_tax_file_number` lub `Func_spain_eu_DL_and_NI_number_citizen` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_spain_eu_tax_file_number`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja lub  `Func_spain_eu_tax_file_number` znajduje `Func_spain_eu_DL_and_NI_number_citizen` zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_spain_eu_tax_file_number` lub `Func_spain_eu_DL_and_NI_number_citizen` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Spain Tax Identification Number -->
@@ -16657,63 +16658,63 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_spain_eu_tax_file_number"></a>Keywords_spain_eu_tax_file_number
 
-- cif
+- Cif
 - cifid #
 - cifnúmero #
 - número de contribuyente
 - número de identificación fiscal
 - número de impuesto corporativo
-- hiszpańskicifid #
-- hiszpańskicifid
-- hiszpańskicifno #
-- hiszpańskicifno
-- Nie pliku podatkowego
+- spanishcifid #
+- spanishcifid
+- spanishcifno #
+- spanishcifno
+- plik podatkowy nie
 - numer pliku podatkowego
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
-## <a name="sql-server-connection-string"></a>SQL Server parametrów połączenia
+## <a name="sql-server-connection-string"></a>parametry połączenia SQL Server
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ciąg "Identyfikator użytkownika", "Identyfikator użytkownika", "uid" lub "UserId" oraz znaki i ciągi opisane poniżej.
+Ciąg "User Id", "User ID", "uid" lub "UserId", a następnie znaki i ciągi opisane we wzorcu poniżej.
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-- ciąg "Identyfikator użytkownika", "Identyfikator użytkownika", "uid" lub "UserId"
+- ciąg "User Id", "User ID", "uid" lub "UserId"
 - dowolna kombinacja od 1 do 200 małych lub wielkich liter, cyfr, symboli, znaków specjalnych lub spacji
 - ciąg "Password" lub "pwd", gdzie "pwd" nie jest poprzedzony małą literą
 - znak równości (=)
-- dowolny znak, który nie jest znakiem dolara ($), symbolem procentu (%), symbolem większym niż (>), symbolem (@), cudzysłowem ("), znakiem cudzysłowu ("), średnikiem (;), lewym nawiasem klamrowym([) lub lewym nawiasem kwadratowym ({)
-- dowolna kombinacja znaków od 7 do 128 znaków innych niż średnik (ukośnik, ;) ukośnik (/) lub cudzysłów (")
-- Średnik (;) lub cudzysłów (")
+- dowolny znak, który nie jest znakiem dolara ($), symbolem procentu (%), większym niż symbol (>), symbolem (@), cudzysłem ("), średnikiem (;), lewym nawiasem klamrowym([) lub lewym nawiasem kwadratowym ({)
+- dowolna kombinacja 7–128 znaków, które nie są średnikami (;), ukośnikiem (/) lub cudzysłów (")
+- średnik (;) lub cudzysłów (")
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne CEP_Regex_SQLServerConnectionString umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Nie można odnaleźć CEP_GlobalFilter słowa kluczowego z CEP_GlobalFilter.
-- Wyrażenie regularne CEP_PasswordPlaceHolder nie znajduje zawartości, która pasuje do wzorca.
-- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości, która pasuje do wzorca.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne CEP_Regex_SQLServerConnectionString znajduje zawartość zgodną ze wzorcem.
+- Nie można odnaleźć słowa kluczowego z CEP_GlobalFilter.
+- Wyrażenie regularne CEP_PasswordPlaceHolder nie znajduje zawartości zgodnej ze wzorcem.
+- Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
 ```sql
 <!---SQL Server Connection String>
@@ -16734,68 +16735,68 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 #### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
 - some-password
-- hasło
+- somepassword
 - secretPassword
-- próbka
+- Przykładowe
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
-Ten poufny typ informacji identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+Ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych.
 
-- Hasło lub pwd, a następnie 0-2 spacje, znak równości (=), 0-2 spacje i gwiazdka (*) -LUB-
+- Hasło lub pwd, po którym następuje 0-2 spacje, znak równości (=), spacje 0-2 i gwiazdka (*) -OR-
 - Hasło lub pwd, po którym następuje:
     - Znak równości (=)
-    - Symbol mniejszego niż (<)
-    - Dowolna kombinacja od 1 do 200 znaków oznaczanych małymi i górnymi literami, cyframi, gwiazdką (*), łącznikiem (-), podkreśleniem (_) lub znakiem białym
+    - Mniej niż symbol (<)
+    - Dowolna kombinacja od 1 do 200 znaków, które są wielkimi lub małymi literami, cyframi, gwiazdką (*), łącznikiem (-), podkreśleniem (_) lub znakiem odstępu
     - Symbol większy niż (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-Ten poufny typ informacji identyfikuje te słowa kluczowe za pomocą zwykłego wyrażenia, a nie listy słów kluczowych.
+Ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyrażenia regularnego, a nie listy słów kluczowych.
 
-- contoso
-- fabrikam
-- northwind
-- piaskownica
-- onebox
-- localhost
+- Contoso
+- Fabrikam
+- Northwind
+- Piaskownicy
+- Onebox
+- Localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->Netto
 
 
-## <a name="surgical-procedures"></a>Procedury procedur procedur dotyczących procedur dotyczących procedur
+## <a name="surgical-procedures"></a>Procedury chirurgiczne
 
-Ta nieopisowana nazwana jednostka wykrywa terminy związane z procedurami związanymi z procedurami dołączania, takimi *jak dołączenie*.  Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa terminy związane z zabiegami chirurgicznymi, takimi jak *wyrostek robakowy*.  Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
 
 
-## <a name="sweden-drivers-license-number"></a>Szwecja numer prawa jazdy
+## <a name="sweden-drivers-license-number"></a>Szwedzki numer prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-10 cyfr zawierające łącznik
+10 cyfr zawierających łącznik
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr zawierających łącznik:
 
-- Sześć cyfr
-- Łącznik
+- sześć cyfr
+- łącznik
 - cztery cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne umożliwia  `Regex_sweden_eu_driver's_license_number` znalezienie zawartości, która odpowiada wzorcowi.
-- Słowo kluczowe z  `Keywords_eu_driver's_license_number` lub `Keywords_sweden_eu_driver's_license_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie  `Regex_sweden_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` .
 
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -16812,7 +16813,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -16821,49 +16822,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -16871,48 +16872,48 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -16920,63 +16921,63 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver nie s_license_number
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver's_license_number
 
 - ajokortti
 - permis de conducere
 - ajokortin numero
-- kuljettejat lic.
-- lic sterownika.
+- kuljettajat lic.
+- drivere lic.
 - körkort
-- numörul permisului de conducere
+- numărul permisului de conducere
 -  שאָפער דערלויבעניש נומער
 - förare lic.
 -  דריווערס דערלויבעניש
 - körkortsnummer
 
 
-## <a name="sweden-national-id"></a>Identyfikator narodowy Szwecja
+## <a name="sweden-national-id"></a>Identyfikator krajowy Szwecji
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10 lub 12 cyfr i opcjonalny ogranicznik
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 lub 12 cyfr i opcjonalny ogranicznik:
-- dwie cyfry (opcjonalne)
+- dwie cyfry (opcjonalnie)
 - Sześć cyfr w formacie daty RRMMDD
-- ogranicznik "-" lub "+" (opcjonalny)
+- ogranicznik "-" lub "+" (opcjonalnie)
 - cztery cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_swedish_national_identifier` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keywords_swedish_national_identifier` kluczowe od
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_swedish_national_identifier` znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z `Keywords_swedish_national_identifier`
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_swedish_national_identifier` zawartość, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_swedish_national_identifier` znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 
 ```xml
@@ -16997,47 +16998,47 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 #### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
 
 - id no
-- numer identyfikacyjny
-- identyfikator #
+- numer identyfikatora
+- Identyfikator #
 - brak identyfikacji
 - numer identyfikacyjny
 - identifikationsnumret #
 - identifikationsnumret
 - identitetshandling
 - dokument tożsamości
-- nie tożsamości
+- brak tożsamości
 - numer tożsamości
 - id-nummer
-- identyfikator osobisty
-- liczba_osob #
-- liczba_osob
-- skattaidentifikationsnummer
+- osobisty identyfikator
+- personnummer #
+- personnummer
+- skatteidentifikationsnummer
 
 
-## <a name="sweden-passport-number"></a>Numer paszportu Szwecja
+## <a name="sweden-passport-number"></a>Numer paszportu Szwecji
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 osiem cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 osiem kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- wyrażenie regularne Regex_sweden_passport_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_sweden_passport` znajduje się.
-- wyrażenie regularne znajduje `Regex_sweden_eu_passport_date` datę w formacie DD MMM/MMM YY (01 STY/12) lub słowo kluczowe od `Keywords_eu_passport_date` .
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- wyrażenie regularne Regex_sweden_passport_number znajduje zawartość zgodną ze wzorcem.
+- słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_sweden_passport` zostanie znalezione.
+- wyrażenie `Regex_sweden_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RR (01 JAN/JAN 12) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date` .
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- wyrażenie regularne Regex_sweden_passport_number umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_sweden_passport` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- wyrażenie regularne Regex_sweden_passport_number znajduje zawartość zgodną ze wzorcem.
+- słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_sweden_passport` zostanie znalezione.
 
 
 ```xml
@@ -17068,22 +17069,22 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
-- karta rejestracji
+- karta rejestracji obcych
 - g3 opłaty za przetwarzanie
-- wiele wpisów
+- wpis wielokrotny
 - Numéro de passeport
 - passeport n °
 - passeport non
@@ -17093,65 +17094,65 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - passeportn °
 - passnummer
 - pass nr
-- visa
-- visas
-- jeden wpis
-- przełęcz sverige
-- wymagania dotyczące wizy
-- przetwarzania wiz
-- visa type
+- wiza schengen
+- wizy schengen
+- pojedynczy wpis
+- sverige pass
+- wymogi wizowe
+- przetwarzanie wiz
+- typ wizy
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- data emisji
+- data wydania
 - data wygaśnięcia
 
 
-## <a name="sweden-physical-addresses"></a>Szwecja ( adresy fizyczne)
+## <a name="sweden-physical-addresses"></a>Adresy fizyczne Szwecji
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Szwecja. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Szwecji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="sweden-tax-identification-number"></a>Szwecja numer identyfikacyjny podatku
+## <a name="sweden-tax-identification-number"></a>Szwedzki numer identyfikacji podatkowej
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-10 cyfr i symbol we wskazanym wzorcu
+10 cyfr i symbol w określonym wzorcu
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr i symbol:
 
-- Sześć cyfr odpowiadających dacie urodzenia (RRMMDD)
-- znak plus lub znak minus
-- Trzy cyfry, dzięki którym numer identyfikacyjny jest unikatowy w miejscu:
-  - w przypadku liczb wydanych przed rokiem 1990 siódma i ósma cyfra wskazują powiat urodzenia lub osoby urodzie się zam.
-  - Cyfra na pozycji dziewiątej wskazuje płeć przez płeć przez płeć nieparzystą dla mężczyzny lub nawet dla kobiety
+- sześć cyfr odpowiadających dacie urodzenia (RRMMDD)
+- znak plusa lub znak minus
+- trzy cyfry, które sprawiają, że numer identyfikacyjny jest unikatowy, gdzie:
+  - w przypadku liczb wydanych przed 1990 r. siódma i ósma cyfra identyfikują powiat urodzenia lub osoby urodzone za granicą
+  - cyfra na dziewiątej pozycji wskazuje płeć jako nieparzystą dla mężczyzn, a nawet dla kobiet
 - jedna cyfra kontrolna
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_sweden_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_sweden_eu_tax_file_number` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_sweden_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_sweden_eu_tax_file_number`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_sweden_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_sweden_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Sweden Tax Identification Number -->
@@ -17174,55 +17175,55 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_sweden_eu_tax_file_number"></a>Keywords_sweden_eu_tax_file_number
 
-- identyfikator osobisty
-- liczba_osob
+- osobisty numer identyfikatora
+- personnummer
 - skatt id nummer
 - skatt identifikation
-- skattabetalarens identifikationsnummer
-- sverige tin
-- plik podatku
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
-- numer podatku
+- skattebetalarens identifikationsnummer
+- sverige cyny
+- plik podatkowy
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
 ## <a name="swift-code"></a>Kod SWIFT
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Cztery litery, po których następuje 5–31 liter lub cyfr
+cztery litery, po których następuje od 5 do 31 liter lub cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Cztery litery i 5-31 liter lub cyfr:
-- Czteroliterowy kod bankowy (bez wielkości liter)
-- spacja opcjonalna
-- 4–28 liter lub cyfr (podstawowy numer konta bankowego — BBAN)
-- spacja opcjonalna
-- od jednej do trzech liter lub cyfr (reszta z kodu BBAN)
+cztery litery, po których następuje od 5 do 31 liter lub cyfr:
+- czteroliterowy kod banku (bez uwzględniania wielkości liter)
+- opcjonalne miejsce
+- 4–28 liter lub cyfr (podstawowy numer konta bankowego (BBAN))
+- opcjonalne miejsce
+- od jednej do trzech liter lub cyfr (pozostała część BBAN)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_swift umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_swift.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_swift znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_swift.
 
 ```xml
 <Entity id="cb2ab58c-9cb8-4c81-baf8-a4e106791df4" patternsProximity="300" recommendedConfidence="75">
@@ -17237,29 +17238,29 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_swift"></a>Keyword_swift
 
-- międzynarodowa organizacja normalizacją 9362
+- międzynarodowa organizacja do standaryzacji 9362
 - iso 9362
 - iso9362
-- swift #
-- kod swift
+- Swift #
+- swiftcode
 - swiftnumber
 - swiftroutingnumber
 - kod swift
 - numer swift #
-- numer routingu swift
+- numer szybkiego routingu
 - bic number
 - kod bic
-- bic #
-- bic #
+- Bic #
+- Bic #
 - kod identyfikatora banku
 - Organizacja internationale de normalisation 9362
-- rapide #
+- Rapide #
 - kod SWIFT
 - le numéro de swift
 - swift numéro d'acheminement
 - le numéro BIC
 - # <a name="bic"></a>BIC
-- kod identificateur de banque
+- code identificateur de banque
 - SWIFTコード
 - SWIFT番号
 - BIC番号
@@ -17273,33 +17274,33 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - 銀行コード
 
 
-## <a name="switzerland-physical-addresses"></a>Adresy fizyczne w Szwajcarii
+## <a name="switzerland-physical-addresses"></a>Adresy fizyczne Szwajcarii
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym w Szwajcarii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Szwajcarii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="switzerland-ssn-ahv-number"></a>Numer AHV WSN w Szwajcarii
+## <a name="switzerland-ssn-ahv-number"></a>Szwajcaria SSN AHV number
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13-cyfrowy numer
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Numer 13-cyfrowy:
+13-cyfrowy numer:
 
-- Trzy cyfry — 756
+- trzy cyfry — 756
 - opcjonalna kropka
 - cztery cyfry
 - opcjonalna kropka
@@ -17307,18 +17308,18 @@ Numer 13-cyfrowy:
 - opcjonalna kropka
 - dwie cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_swiss_social_security_number_ahv znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keywords_swiss_social_security_number_ahv znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_swiss_social_security_number_ahv znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keywords_swiss_social_security_number_ahv.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_swiss_social_security_number_ahv znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_swiss_social_security_number_ahv znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Swiss SSN AHV Number -->
@@ -17337,17 +17338,17 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
 
-- ahv
-- ssn
-- identyfikator pid
+- Ahv
+- Ssn
+- Pid
 - numer ubezpieczenia
 - personalidno #
-- numer PEZEt
-- identyfikator osobisty
-- brak identyfikacji osobistej.
+- numer ubezpieczenia społecznego
+- osobisty numer identyfikatora
+- numer identyfikacji osobistej.
 - insuranceno #
 - uniqueidno #
-- brak unikatowej identyfikacji.
+- unikatowy numer identyfikacyjny.
 - numer avs
 - tożsamość osobista bez versicherungsnummer
 - identifikationsnummer
@@ -17357,33 +17358,33 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - numéro de sécurité sociale
 
 
-## <a name="taiwan-national-identification-number"></a>Numer identyfikacyjny narodowych na Tajwanie
+## <a name="taiwan-national-identification-number"></a>Krajowy numer identyfikacyjny Tajwanu
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-jedna litera (w języku angielskim) i dziewięć cyfr
+jedna litera (w języku angielskim), po której następuje dziewięć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-jedna litera (w języku angielskim) i dziewięć cyfr:
-- jedna litera (w języku angielskim bez wielkości liter)
+jedna litera (w języku angielskim), po której następuje dziewięć cyfr:
+- jedna litera (w języku angielskim, bez uwzględniania wielkości liter)
 - cyfra "1" lub "2"
 - osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_taiwanese_national_id wyszukuje zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_taiwanese_national_id.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_taiwanese_national_id znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_taiwanese_national_id.
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_taiwanese_national_id wyszukuje zawartość, która pasuje do wzorca.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_taiwanese_national_id znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- Taiwanese National ID -->
@@ -17418,14 +17419,14 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - 簽章
 
 
-## <a name="taiwan-passport-number"></a>Numer paszportu na Tajwanie
+## <a name="taiwan-passport-number"></a>Numer paszportu Tajwanu
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-- biometryczny numer paszportu: dziewięć cyfr
-- nie biometryczny numer paszportu: dziewięć cyfr
+- numer paszportu biometrycznego: dziewięć cyfr
+- numer paszportu nie biometrycznego: dziewięć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 biometryczny numer paszportu:
 - znak "3"
 - osiem cyfr
@@ -17433,15 +17434,15 @@ biometryczny numer paszportu:
 nie biometryczny numer paszportu:
 - dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_taiwan_passport umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_taiwan_passport.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_taiwan_passport znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_taiwan_passport.
 
 ```xml
 <!-- Taiwan Passport Number -->
@@ -17459,7 +17460,7 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 - Numer paszportu ROC
 - Numer paszportu
-- Paszport nie
+- Numer paszportu
 - Numer paszportu
 - Paszport #
 - 护照
@@ -17467,27 +17468,27 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - Zhōnghuá Mínguó hùzhào
 
 
-## <a name="taiwan-resident-certificate-arctarc-number"></a>Numer certyfikatu rezydenta na Tajwanie (ARC/TARC)
+## <a name="taiwan-resident-certificate-arctarc-number"></a>Numer certyfikatu rezydenta Tajwanu (ARC/TARC)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10 liter i cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 liter i cyfr:
-- Dwie litery (bez wielkości liter)
+- dwie litery (bez uwzględniania wielkości liter)
 - osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_taiwan_resident_certificate umożliwia znalezienie zawartości, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_taiwan_resident_certificate.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_taiwan_resident_certificate znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_taiwan_resident_certificate.
 
 ```xml
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
@@ -17503,43 +17504,43 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_taiwan_resident_certificate"></a>Keyword_taiwan_resident_certificate
 
-- Certyfikat rezydentny
-- Resident Cert
-- Resident Cert.
-- Karta identyfikacyj
-- Ssl Resident Certificate
-- ARC
-- Certyfikat dla rezydentnych obszarów Tajwanu
+- Certyfikat rezydenta
+- Certyfikat rezydenta
+- Certyfikat rezydenta.
+- Karta identyfikacyjna
+- Certyfikat rezydenta cudzoziemca
+- ŁUKU
+- Certyfikat rezydenta obszaru Tajwanu
 - TARC
 - 居留證
 - 外僑居留證
 - 台灣地區居留證
 
 
-## <a name="thai-population-identification-code"></a>Kod identyfikacyjny populacji w języku tajskim
+## <a name="thai-population-identification-code"></a>Kod identyfikacji populacji tajskiej
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 13 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 13 cyfr:
-- Pierwsza cyfra nie jest zerem ani dziewięć
+- pierwsza cyfra nie jest równa zero lub dziewięć
 - 12 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_Thai_Citizen_Id znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_Thai_Citizen_Id znajduje się.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_Thai_Citizen_Id znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Thai_Citizen_Id.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_Thai_Citizen_Id znajdzie zawartość, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_Thai_Citizen_Id znajduje zawartość zgodną ze wzorcem.
 
 ```xml
 <!-- Thai Citizen ID -->
@@ -17558,35 +17559,35 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
-- Numer identyfikacyjny
+- Numer identyfikatora
 - Numer identyfikacyjny
 - บัตรประชาชน
 - รหัสบัตรประชาชน
 - บัตรประชาชน
 - รหัสบัตรประชาชน
 
-## <a name="turkey-national-identification-number"></a>Numer identyfikacyjny narodowych w Turcja
+## <a name="turkey-national-identification-number"></a>Krajowy numer identyfikacyjny Turcji
 
-### <a name="format"></a>Formatowanie
-
-11 cyfr
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 11 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="pattern"></a>Wzór
+
+11 cyfr
+
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_Turkish_National_Id umożliwia znalezienie zawartości, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_Turkish_National_Id.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_Turkish_National_Id znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Turkish_National_Id.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_Turkish_National_Id umożliwia znalezienie zawartości, która pasuje do wzorca.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_Turkish_National_Id znajduje zawartość zgodną ze wzorcem.
 
 ```xml
 <!-- Turkish National Identity -->
@@ -17605,59 +17606,59 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
-- TC Kimlik No
+- TC Kimlik Nie
 - TC Kimlik numarası
 - Vatandaşlık numarası
 - Vatandaşlık nie
 
 
-## <a name="turkey-physical-addresses"></a>Adresy fizyczne w Turcja
+## <a name="turkey-physical-addresses"></a>Adresy fizyczne Turcji
 
-Ta nieoznaowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym w Turcja. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Turcji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="types-of-medication"></a>Typy leki
+## <a name="types-of-medication"></a>Typy leków
 
-Ta nieoznaowana nazwana jednostka wykrywa nazwy leki, takich jak *np*.  Obsługuje ona tylko terminy w języku angielskim. Jest on także zawarty w postanowieniach wszystkich [warunków medycznych dołączonych](#all-medical-terms-and-conditions) do pakietu o nazwie SIT.
+Ta uwolniona nazwana jednostka wykrywa nazwy leków, takie jak *insulina*.  Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
 
 
-## <a name="uk-drivers-license-number"></a>Zjednoczone Emiraty Zjednoczone numer prawa jazdy;
+## <a name="uk-drivers-license-number"></a>WIELKIEJ BRYTANII. numer prawa jazdy
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 Kombinacja 18 liter i cyfr w określonym formacie
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 18 liter i cyfr:
-- Pięć liter (bez wielkości liter) lub cyfra "9" w miejsce litery.
+- Pięć liter (bez uwzględniania wielkości liter) lub cyfra "9" zamiast litery.
 - Jedna cyfra.
-- Pięć cyfr w formacie daty MM JAK.J.Y dla daty urodzenia. Jeśli sterownik jest kobieta, siódmy znak jest zwiększany o 50; Na przykład od 51 do 62 zamiast od 01 do 12.
-- Dwie litery (bez wielkości liter) lub cyfra "9" w miejsce litery.
+- Pięć cyfr w formacie daty MMDDY dla daty urodzenia. Siódmy znak jest zwiększany o 50, jeśli kierowca jest kobietą; na przykład od 51 do 62 zamiast od 01 do 12.
+- Dwie litery (bez uwzględniania wielkości liter) lub cyfra "9" zamiast litery.
 - Pięć cyfr.
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_uk_drivers_license` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keywords_eu_driver's_license_number` kluczowe od.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_uk_drivers_license` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_eu_driver's_license_number`
+- Suma kontrolna przechodzi.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_uk_drivers_license` zawartość, która odpowiada wzorcowi.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja `Func_uk_drivers_license` znajduje zawartość zgodną ze wzorcem.
+- Suma kontrolna przechodzi.
 
 ```xml
     <!-- U.K. Driver's License Number -->
@@ -17674,7 +17675,7 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>s_license_number Keywords_eu_driver
 
 - driverlic
 - driverlics
@@ -17683,49 +17684,49 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - driverlicence
 - driverlicences
 - lic sterownika
-- kursywa sterownika
+- lics sterownika
 - prawo jazdy
-- licencje sterownika
-- licencja sterownika
-- licencje sterowników
-- driverslic
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- sterowniki
 - sterowniki
 - sterowniki
 - sterowniki
 - driverslicense
 - driverslicenses
 - sterowniki lic
-- kursywa sterowników
-- licencja sterowników
+- lics sterowników
+- prawo jazdy
 - licencje sterowników
-- licencja sterowników
-- licencje sterowników
+- prawo jazdy
+- prawa jazdy
 - driver'lic
-- kursywa sterownika
+- driver'lics
+- driver'license
+- prawa jazdy
+- prawo jazdy
+- prawa jazdy
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- licencje sterownika
-- lic sterownika
-- kursywa sterownika
 - prawo jazdy
-- prawo jazdy
-- prawo jazdy
-- jazdy
-- kursywa sterownika
-- kursywa sterownika
+- kolka sterownika
+- kolki sterownika
 - driver'slicense
 - fragmentatory sterownika
-- driver'slicence
-- fragmentatory sterownika
-- lica sterownika
-- kursywa sterownika
+- kolidacja kierowcy
+- driver'slicences
+- lic sterownika
+- lics sterownika
 - prawo jazdy
 - prawa jazdy
 - prawo jazdy
-- prawo jazdy
-- dl #
-- dls #
+- prawa jazdy
+- Dl #
+- Dls #
 - driverlic #
 - driverlics #
 - driverlicense #
@@ -17733,48 +17734,48 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - driverlicence #
 - driverlicences #
 - lic sterownika #
-- kursywa sterownika #
+- lics sterownika #
 - prawo jazdy #
-- licencje sterownika #
-- licencje sterowników #
-- driverslic #
+- prawa jazdy #
+- prawa jazdy #
+- sterowniki #
 - sterowniki #
 - driverslicense #
 - driverslicenses #
 - sterowniki #
 - sterowniki #
 - sterowniki lic #
-- kursywa sterowników #
-- licencja sterowników #
+- lics sterowników #
+- prawo jazdy #
 - licencje sterowników #
-- licencja sterowników #
-- licencje sterowników #
+- prawo jazdy #
+- prawa jazdy #
 - driver'lic #
-- kursywa sterownika #
+- driver'lics #
+- driver'license #
+- prawa jazdy #
+- prawo jazdy #
+- prawa jazdy #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- licencje sterownika #
-- lic sterownika #
-- kursywa sterownika #
 - prawo jazdy #
-- prawo jazdy #
-- prawo jazdy #
-- jazdy #
-- kursywa sterownika #
-- kursywa sterownika #
+- kolka sterownika #
+- kolki sterownika #
 - driver'slicense #
 - fragmentatory sterownika #
-- driver'slicence #
-- fragmentatory sterownika #
-- lica sterownika #
-- kursywa sterownika #
+- kolidacja kierowcy #
+- driver'slicences #
+- lic sterownika #
+- lics sterownika #
 - prawo jazdy #
 - prawa jazdy #
 - prawo jazdy #
-- prawo jazdy #
-- licencja jazdy 
-- licencja jazdy
+- prawa jazdy #
+- Prawa jazdy 
+- Prawo jazdy
 - dlno #
 - driv lic
 - driv licen
@@ -17782,39 +17783,39 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - licencje driv
 - licencja driv
 - licencje driv
-- driver licen
-- drivers licen
-- licen sterownika
-- driving lic
-- driving licen
-- licencje jazdy
-- licencja jazdy
-- licencje jazdy
+- sterownik licen
+- sterowniki licen
+- licen kierowcy
+- lic jazdy
+- jazdy licen
 - prawo jazdy
-- dl no
+- Prawa jazdy
+- Prawa jazdy
+- prawo jazdy
+- dl nie
 - dlno
-- liczba dl
+- Numer dl
 
 
-## <a name="uk-electoral-roll-number"></a>Zjednoczone Emiraty Zjednoczone Numer rzutowania e zygeksowania
+## <a name="uk-electoral-roll-number"></a>WIELKIEJ BRYTANII. numer listy wyborczej
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dwie litery i 1–4 cyfry
+dwie litery, po których następuje od 1 do 4 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dwie litery (bez wielkości liter), po których następuje od 1 do 4 cyfr
+dwie litery (bez uwzględniania wielkości liter), po którym następuje od 1 do 4 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_uk_electoral umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_uk_electoral.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_uk_electoral znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_uk_electoral.
 
 ```xml
 <!-- U.K. Electoral Number -->
@@ -17832,40 +17833,40 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_uk_electoral"></a>Keyword_uk_electoral
 
-- schowaj
-- formularz szybki
-- rejestr e zamów
-- rzutnie erolne
+- nominacja rady
+- formularz nominacji
+- rejestr wyborców
+- spis wyborców
 
 
-## <a name="uk-national-health-service-number"></a>Zjednoczone Emiraty Zjednoczone numer służby zdrowia państwowego
+## <a name="uk-national-health-service-number"></a>WIELKIEJ BRYTANII. numer krajowej służby zdrowia
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10–17 cyfr rozdzielonych spacjami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10–17 cyfr:
 - 3 lub 10 cyfr
-- spacja
+- spację
 - trzy cyfry
-- spacja
+- spację
 - cztery cyfry
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Tak
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_uk_nhs_number umożliwia znalezienie zawartości, która pasuje do wzorca.
-- Prawdziwe jest jedno z następujących argumentów:
-    - Słowo kluczowe z Keyword_uk_nhs_number znajduje się.
-    - Zostanie znalezione słowo kluczowe Keyword_uk_nhs_number1.
-    - Zostanie znalezione słowo kluczowe Keyword_uk_nhs_number_dob.
-- Pomyślnie przejdzie sprawdzanie.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_uk_nhs_number znajduje zawartość zgodną ze wzorcem.
+- Jedno z następujących elementów jest prawdziwe:
+    - Znaleziono słowo kluczowe z Keyword_uk_nhs_number.
+    - Znaleziono słowo kluczowe z Keyword_uk_nhs_number1.
+    - Znaleziono słowo kluczowe z Keyword_uk_nhs_number_dob.
+- Suma kontrolna przechodzi.
 
 ```xml
 <!-- U.K. NHS Number -->
@@ -17885,16 +17886,16 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
-- państwowa usługa opieki zdrowotnej
-- nhs
-- urząd usług opieki zdrowotnej
-- urząd zdrowia
+- krajowa służba zdrowia
+- Nhs
+- urząd usług zdrowotnych
+- służba zdrowia
 
 #### <a name="keyword_uk_nhs_number1"></a>Keyword_uk_nhs_number1
 
 - identyfikator pacjenta
 - identyfikacja pacjenta
-- brak pacjenta
+- nie pacjent
 - numer pacjenta
 
 #### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
@@ -17906,21 +17907,21 @@ Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne
 - Data urodzenia
 
 
-## <a name="uk-national-insurance-number-nino"></a>Zjednoczone Emiraty Zjednoczone numer ubezpieczenia państwowego (NINO)
+## <a name="uk-national-insurance-number-nino"></a>WIELKIEJ BRYTANII. krajowy numer ubezpieczenia (NINO)
 
-Ten typ informacji poufnych jest uwzględniany w ramach typu informacji poufnych numeru identyfikacyjnego UE. Jest także dostępna jako autonomiczna jednostka typu informacji poufnych.
+Ta jednostka typu informacji poufnych jest uwzględniana w typie informacji poufnych krajowego numeru identyfikacyjnego UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Siedem znaków lub dziewięć znaków rozdzielonych spacjami lub kreskami
+siedem znaków lub dziewięć znaków rozdzielonych spacjami lub kreskami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Dwa możliwe wzorce:
+dwa możliwe wzorce:
 
-- dwie litery (prawidłowe NINOS używają tylko niektórych znaków w tym prefiksie, co jest sprawdzane przy użyciu tego wzorca; bez wielkości liter)
-- Sześć cyfr
-- "A", "B", "C" lub "D" (na przykład prefiks, w sufiksie dozwolone są tylko określone znaki; bez wielkości liter)
+- dwie litery (prawidłowe nazwy NINO używają tylko pewnych znaków w tym prefiksie, co jest weryfikowane przez ten wzorzec, a nie uwzględnia wielkość liter)
+- sześć cyfr
+- "A", "B", "C" lub "D" (podobnie jak prefiks, tylko niektóre znaki są dozwolone w sufiksie; nie uwzględnia wielkość liter)
 
 LUB
 
@@ -17934,18 +17935,18 @@ LUB
 - spacja lub kreska
 - "A", "B", "C" lub "D"
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_uk_nino umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo kluczowe Keyword_uk_nino.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_uk_nino znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_uk_nino.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_uk_nino umożliwia znalezienie zawartości, która odpowiada wzorcowi.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_uk_nino znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- U.K. NINO -->
@@ -17964,30 +17965,30 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
-- numer ubezpieczenia państwowego
-- ubezpieczenia państwowego
-- act ochrony
-- ubezpieczenia
-- numer PEZEt
-- aplikacja ubezpieczeniowy
+- krajowy numer ubezpieczenia
+- składki na ubezpieczenie społeczne
+- akt ochrony
+- Ubezpieczenia
+- numer ubezpieczenia społecznego
+- wniosek o ubezpieczenie
 - aplikacja medyczna
-- ubezpieczenia społecznego
-- pomoc medyczna
-- ubezpieczenia społecznego
-- Wielkiej Brytanii
-- Numer NI
-- NR.NI
+- ubezpieczenie społeczne
+- Lekarskiej
+- zabezpieczenia społeczne
+- Wielka Brytania
+- Numer ni
+- Nr ni.
 - NI #
 - NI #
-- ubezpieczenia #
-- numer_ubezpieczenia
+- Ubezpieczenia #
+- numer ubezpieczenia
 - nationalinsurance #
 - nationalinsurancenumber
 
 
-## <a name="uk-physical-addresses"></a>Zjednoczone Emiraty Zjednoczone adresy fizyczne
+## <a name="uk-physical-addresses"></a>WIELKIEJ BRYTANII. adresy fizyczne
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Wielkiej Brytanii. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Zjednoczonej Brytanii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -17995,33 +17996,33 @@ Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z W
 
 
 
-## <a name="uk-unique-taxpayer-reference-number"></a>Zjednoczone Emiraty Zjednoczone Unikatowy numer referencyjny podatku
+## <a name="uk-unique-taxpayer-reference-number"></a>WIELKIEJ BRYTANII. Unikatowy numer referencyjny podatnika
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 10 cyfr bez spacji i ograniczników
 
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 10 cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje  `Func_uk_eu_tax_file_number` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo  `Keywords_uk_eu_tax_file_number` kluczowe od.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja  `Func_uk_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_uk_eu_tax_file_number`
 
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
@@ -18037,44 +18038,44 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
-- numer podatku
-- plik podatku
-- identyfikator podatku
-- Brak identyfikacji podatkowej
-- numer identyfikacyjny podatku
-- nie podatek #
-- nie podatek
+- numer podatkowy
+- plik podatkowy
+- identyfikator podatkowy
+- numer identyfikacji podatkowej
+- numer identyfikacji podatkowej
+- numer podatkowy #
+- numer podatkowy
 - numer rejestracji podatkowej
-- 2016 #
-- wydomowy #
-- number #
-- taksno #
-- numer_podatku #
-- numer_podatku
-- identyfikator tin
-- nie tin
-- tin #
+- taxid #
+- taxidno #
+- taxidnumber #
+- taksoń #
+- taxnumber #
+- taxnumber
+- identyfikator cyny
+- nie cyny
+- Tin #
 
 
 ## <a name="us-bank-account-number"></a>Numer konta bankowego w Stanach Zjednoczonych
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 6–17 cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Od 6 do 17 kolejnych cyfr
+6–17 kolejnych cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Wyrażenie regularne Regex_usa_bank_account_number zawartości, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_usa_Bank_Account.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Wyrażenie regularne Regex_usa_bank_account_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_usa_Bank_Account.
 
 ```xml
 <!-- U.S. Bank Account Number -->
@@ -18093,60 +18094,60 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 - Sprawdzanie numeru konta
 - Sprawdzanie konta
 - Sprawdzanie konta #
-- Sprawdzanie numeru ACCT
-- Sprawdzanie acct #
-- Sprawdzanie nie.
-- Sprawdzanie, czy nie ma konta.
+- Sprawdzanie numeru akcesu
+- Sprawdzanie dostępu #
+- Sprawdzanie nr dostępu
+- Sprawdzanie nr konta
 - Numer konta bankowego
 - Konto bankowe #
-- Bank Acct Number
+- Numer akcesu bankowego
 - Bank Acct #
-- Bank Acct Nie.
+- Bank Acct Nr.
 - Nr konta bankowego
 - Numer konta oszczędnościowego
 - Konto oszczędnościowe.
 - Konto oszczędnościowe #
-- Numer Acct oszczędności
-- Savings Acct #
+- Numer akcesu oszczędności
+- Oszczędności acct #
+- Nr dostępu oszczędnościowego
 - Nr konta oszczędnościowego
-- Numer konta oszczędnościowego
 - Numer konta debetowego
 - Konto debetowe
 - Konto debetowe #
-- Numer acct debetowego
-- Acct polecenia debetowego #
-- Nr konta debetowego
-- Nie.
+- Numer akcesu debetowego
+- Akces debetowy #
+- Numer akcesu debetowego
+- Numer konta debetowego
 
 
 ## <a name="us-drivers-license-number"></a>Numer prawa jazdy w Stanach Zjednoczonych
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-W zależności od stanu
+Zależy od stanu
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-w zależności od stanu — na przykład Warszawa:
-- Dziewięć cyfr sformatowanych jak ddd ddd ddd będzie zgodne.
-- Dziewięć cyfr, takich jak dddddddddd nie będzie zgodne.
+zależy od stanu — na przykład Nowy Jork:
+- dziewięć cyfr sformatowanych jak ddd ddd ddd będzie zgodne.
+- dziewięć cyfr, takich jak ddddddddd, nie będzie zgodne.
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_new_york_drivers_license_number znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_[state_name]_drivers_license_name zostanie znalezione.
-- Słowo kluczowe z Keyword_us_drivers_license znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_new_york_drivers_license_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_[state_name]_drivers_license_name.
+- Znaleziono słowo kluczowe z Keyword_us_drivers_license.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_new_york_drivers_license_number znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z Keyword_[state_name]_drivers_license_name zostanie znalezione.
-- Słowo kluczowe z Keyword_us_drivers_license_abbreviations znajduje się.
-- Nie można odnaleźć słowa kluczowego Keyword_us_drivers_license.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_new_york_drivers_license_number znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_[state_name]_drivers_license_name.
+- Znaleziono słowo kluczowe z Keyword_us_drivers_license_abbreviations.
+- Nie znaleziono słowa kluczowego z Keyword_us_drivers_license.
 
 ```xml
 <Entity id="dfeb356f-61cd-459e-bf0f-7c6d28b458c6 patternsProximity="300">
@@ -18174,18 +18175,19 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - DLS
 - CDL
 - CDLS
-- Identyfikator
+- ID
 - Identyfikatory
 - DL #
 - DLS #
 - CDL #
 - CDLS #
-- Identyfikator #
+- IDENTYFIKATOR #
 - Identyfikatory #
-- Numer identyfikacyjny
-- Numery identyfikacyjne
+- Numer identyfikatora
+- Numery identyfikatorów
 - LIC
 - LIC #
+- DLN
 
 #### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
@@ -18193,94 +18195,94 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 - DriverLics
 - DriverLicense
 - DriverLicenses
-- Lic sterownika
-- Kursywa sterownika
+- Sterownik Lic
+- Sterownik Lics
 - Prawo jazdy
-- Licencje na sterownik
-- DriversLic
-- DriversLics
+- Prawa jazdy
+- Sterowniki
+- SterownikiLics
 - DriversLicense
 - DriversLicenses
 - Sterowniki Lic
-- Kursywa sterowników
-- Licencja na sterowniki
-- Licencje na sterowniki
+- Sterowniki Lics
+- Licencja kierowcy
+- Licencje kierowców
 - Driver'Lic
-- Kursywę sterownika
+- Driver'Lics
 - Prawo jazdy
 - Prawa jazdy
 - Lic sterownika
-- Kursywę sterownika
+- Lics kierowcy
 - Prawo jazdy
 - Prawa jazdy
-- Lica sterownika
+- Driver'sLic
 - Kursywę sterownika
-- Prawo jazdy
-- Prawa jazdy
-- Lic sterownika
-- Kursywę sterownika
+- Driver'sLicense
+- Driver'sLicenses
+- Lic kierowcy
+- Lics kierowcy
 - Prawo jazdy
 - Prawa jazdy
 - numer identyfikacyjny
 - numery identyfikacyjne
-- identyfikacja #
-- identyfikator
-- identyfikator
-- dowód osobisty
+- Identyfikacji #
+- id card
+- karty identyfikatorów
+- karta identyfikacyjna
 - karty identyfikacyjne
 - DriverLic #
 - DriverLics #
 - DriverLicense #
 - DriverLicenses #
-- Lic sterownika #
-- Kursywa sterownika #
+- Sterownik Lic #
+- Sterownik Lics #
 - Prawo jazdy #
-- Licencje na sterownik #
-- DriversLic #
-- DriversLics #
+- Prawa jazdy #
+- Sterowniki #
+- SterownikiLics #
 - DriversLicense #
 - DriversLicenses #
 - Sterowniki Lic #
-- Kursywa sterowników #
-- Licencja na sterowniki #
-- Licencje na sterowniki #
+- Sterowniki Lics #
+- Licencja kierowcy #
+- Licencje kierowców #
 - Driver'Lic #
-- Kursywę sterownika #
+- Driver'Lics #
 - Prawo jazdy #
 - Prawa jazdy #
 - Lic sterownika #
-- Kursywę sterownika #
+- Lics kierowcy #
 - Prawo jazdy #
 - Prawa jazdy #
-- Lica sterownika #
+- Driver'sLic #
 - Kursywę sterownika #
+- Driver'sLicense #
+- Driver'sLicenses #
+- Lic kierowcy #
+- Lics kierowcy #
 - Prawo jazdy #
 - Prawa jazdy #
-- Lic sterownika #
-- Kursywę sterownika #
-- Prawo jazdy #
-- Prawa jazdy #
-- identyfikator #
-- identyfikator #
-- dowód osobisty #
+- id card #
+- karty identyfikatorów #
+- karta identyfikacyjna #
 - karty identyfikacyjne #
 
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
 - skrót stanu (na przykład "NY")
-- nazwa województwa (na przykład "Warszawa")
+- nazwa stanu (na przykład "Nowy Jork")
 
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>Amerykański numer identyfikacji podatkowej (ITIN)
+## <a name="us-individual-taxpayer-identification-number-itin"></a>Numer identyfikacyjny indywidualnego podatnika w USA (ITIN)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr, które zaczynają się od cyfry "9" i zawierają cyfrę "7" lub "8" jako czwartą cyfrę (opcjonalnie sformatowaną za pomocą spacji lub kresek)
+dziewięć cyfr rozpoczynających się od cyfry "9" i zawierających znak "7" lub "8" jako czwartą cyfrę, opcjonalnie sformatowaną spacjami lub kreskami
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-sformatowane:
+Sformatowany:
 - cyfra "9"
 - dwie cyfry
 - spacja lub kreska
@@ -18289,28 +18291,28 @@ sformatowane:
 - spacja lub kreska
 - cztery cyfry
 
-niesformatowany:
+Niesformatowany:
 - cyfra "9"
 - dwie cyfry
 - a "7" lub "8"
 - pięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_formatted_itin znajdzie zawartość, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_itin.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_formatted_itin znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_itin.
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_unformatted_itin znajdzie zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo kluczowe Keyword_itin.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_unformatted_itin znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_itin.
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja może Func_formatted_itin lub Func_unformatted_itin zawartości, która jest taka, jak wzorzec.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja Func_formatted_itin lub Func_unformatted_itin znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
@@ -18336,63 +18338,63 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- cycer
-- identyfikator podatku
-- identyfikacji podatkowej
+- Podatnik
+- identyfikator podatkowy
+- identyfikacja podatkowa
 - itin
 - i.t.i.n.
-- ssn
-- tin
-- ubezpieczenia społecznego
-- payer podatku
-- itins
-- 2016
-- indywidualny vat
+- Ssn
+- Tin
+- zabezpieczenia społeczne
+- Podatnika
+- itiny
+- taxid
+- indywidualny podatnik
 
 
 ## <a name="us-physical-addresses"></a>Adresy fizyczne w Stanach Zjednoczonych
 
-Ta nieoznaona nazwana jednostka wykrywa wzorce związane z adresem fizycznym w Stanach Zjednoczonych. Jest także dołączany do pakietu [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Stanów Zjednoczonych. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
 
 
-## <a name="us-social-security-number-ssn"></a>Numer SSN (U.SSN)
+## <a name="us-social-security-number-ssn"></a>Numer ubezpieczenia społecznego (SSN)
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Dziewięć cyfr, które mogą być sformatowane lub niesformatowane
+dziewięć cyfr, które mogą mieć sformatowany lub niesformatowany wzorzec
 
 > [!NOTE]
-> Jeśli została wystawiona przed mid-2011, SSN ma silne formatowanie, w którym niektóre części liczby muszą wchodzić w zakresy, aby były prawidłowe (ale nie ma sumy kontrolnej).
+> Jeśli została wydana przed połową 2011 r., nazwa SSN ma silne formatowanie, w którym niektóre części liczby muszą znajdować się w określonych zakresach, aby były prawidłowe (ale nie ma sumy kontrolnej).
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Cztery funkcje szukają sieci SSN w czterech różnych wzorcach:
-- Func_ssn umożliwia znalezienie ssnów o formatowaniu silnych danych przed 2011 r. sformatowanych za pomocą kresek lub spacji (ddd-dd-dddd OR ddd dddd)
-- Func_unformatted_ssn umożliwia znalezienie ssnów z formatowaniem znaczącym przed 2011 erą, które są niesformatowane jako dziewięć kolejnych cyfr (dddddddddd)
-- Func_randomized_formatted_ssn umożliwia znalezienie po 2011 r. SNS sformatowanych za pomocą kresek lub spacji (ddd-dd-dddd OR ddd dddd)
-- Func_randomized_unformatted_ssn umożliwia znalezienie niesformatowanych po 2011 r. numerów SSN, które są niesformatowane jako dziewięć kolejnych cyfr (dddddddddd)
+cztery funkcje poszukają sieci SSN w czterech różnych wzorcach:
+- Func_ssn znajduje nazwy SSN z silnym formatowaniem sprzed 2011 r., które są sformatowane z kreskami lub spacjami (ddd-dd-dddd OR ddd dddd)
+- Func_unformatted_ssn znajduje sieci SSN z silnym formatowaniem sprzed 2011 r., które nie są sformatowane jako dziewięć kolejnych cyfr (ddddddddd)
+- Func_randomized_formatted_ssn znajduje nazwy SSN po 2011 r., które są sformatowane kreskami lub spacjami (ddd-dd-dddd OR ddd dddd)
+- Func_randomized_unformatted_ssn znajduje nazwy SSN po 2011 r., które nie są sformatowane jako dziewięć kolejnych cyfr (ddddddddd)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja znajduje `Func_ssn` zawartość, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keyword_ssn` kluczowe od.
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja `Func_ssn` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_ssn`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_unformatted_ssn' umożliwia znalezienie zawartości, która odpowiada wzorcowi.
-- Zostanie znalezione słowo `Keyword_ssn` kluczowe od.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_unformatted_ssn" znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_ssn`
 
-Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja lub `Func_randomized_formatted_ssn` znajduje `Func_randomized_unformatted_ssn` zawartość, która pasuje do wzorca.
-- Zostanie znalezione słowo `Keyword_ssn` kluczowe od.
+Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+- Funkcja `Func_randomized_formatted_ssn` lub `Func_randomized_unformatted_ssn` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keyword_ssn`
 
 
 ```xml
@@ -18422,44 +18424,44 @@ Zasady DLP mają małą pewność, że są wykrywane tego typu informacje poufne
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
 - Numer SSA
-- numer PEZEt
-- ubezpieczenia społecznego #
-- ubezpieczenia społecznego #
-- nr ubezpieczenia społecznego
-- Ubezpieczenia społecznego #
-- Soc Sec
+- numer ubezpieczenia społecznego
+- zabezpieczenia społeczne #
+- zabezpieczenia społeczne #
+- zabezpieczenia społecznego nie
+- Zabezpieczenia społeczne #
+- Soc S
 - SSN
 - SSNS
 - SSN #
-- SZ #
+- SS #
 - SSID
 
 
-## <a name="usuk-passport-number"></a>Stany Zjednoczone numer paszportu
+## <a name="usuk-passport-number"></a>Stany Zjednoczone/Zjednoczone Zjednoczone numer paszportu
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
 dziewięć cyfr
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
 - jedna litera lub cyfra
 - osiem cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają dużą pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_usa_uk_passport znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z `Keywords_eu_passport_number` lub `Keywords_uk_eu_passport_number` znajduje się.
-- Zostanie znalezione słowo `Keywords_eu_passport_date` kluczowe od
+Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_usa_uk_passport znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` .
+- Znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Funkcja Func_usa_uk_passport znajdzie zawartość, która pasuje do wzorca.
-- Słowo kluczowe z `Keywords_eu_passport_number` lub `Keywords_uk_eu_passport_number` znajduje się.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Funkcja Func_usa_uk_passport znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` .
 
 ```xml
     <!-- U.S. / U.K. Passport Number -->
@@ -18486,49 +18488,49 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- paszport #
-- paszport #
-- paszport
-- paszporty
-- paszport
-- paszport
+- Paszport #
+- Paszport #
+- passportid
+- Paszporty
+- passportno
+- nr paszportu
+- passportnumber
 - numer paszportu
-- numer paszportu
-- paszport
+- passportnumbers
 - numery paszportów
 
 #### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number
 
-- paszport brytyjski
-- paszport Zjednoczonego Królestwa
+- brytyjski paszport
+- brytyjski paszport
 
 
-## <a name="ukraine-passport-domestic"></a>Paszport Ukrainy
+## <a name="ukraine-passport-domestic"></a>Paszport ukrainy krajowy
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
-
-dziewięć cyfr
-
-### <a name="pattern"></a>Deseń
+### <a name="format"></a>Formacie
 
 dziewięć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="pattern"></a>Wzór
+
+dziewięć cyfr
+
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Ta Regex_Ukraine_Passport_Domestic wyszukuje zawartość, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_Ukraine_Passport_Domestic.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Rejestr Regex_Ukraine_Passport_Domestic znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Ukraine_Passport_Domestic.
 
 ```xml
       <!-- Ukraine Passport Domestic -->
@@ -18544,42 +18546,42 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
-- Paszport Ukrainy
+- paszport ukrainy
 - numer paszportu
-- paszport
+- nr paszportu
 - паспорт України
 - номер паспорта
 - персональний
 
 
-## <a name="ukraine-passport-international"></a>Paszport Ukrainy
+## <a name="ukraine-passport-international"></a>Ukraina paszport międzynarodowy
 
-Tego typu informacji poufnych można używać tylko w:
+Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
 - zarządzanie rekordami
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Microsoft Defender for Cloud Apps
 
-### <a name="format"></a>Formatowanie
+### <a name="format"></a>Formacie
 
-Ośmio znakowy wzorzec alfanumeryczny
+ośmioznakowy wzorzec alfanumeryczny
 
-### <a name="pattern"></a>Deseń
+### <a name="pattern"></a>Wzór
 
-Osiem znaków alfanumerycznych wzorców:
-- Dwie litery lub cyfry
-- Sześć cyfr
+ośmioznakowy wzorzec alfanumeryczny:
+- dwie litery lub cyfry
+- sześć cyfr
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma kontrolna
 
 Nie
 
 ### <a name="definition"></a>Definicja
 
-Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje poufne, jeśli w odległości 300 znaków:
-- Ta Regex_Ukraine_Passport_International wyszukuje zawartość, która jest taka, jak wzorzec.
-- Zostanie znalezione słowo kluczowe Keyword_Ukraine_Passport_International.
+Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+- Rejestr Regex_Ukraine_Passport_International znajduje zawartość zgodną ze wzorcem.
+- Znaleziono słowo kluczowe z Keyword_Ukraine_Passport_International.
 
 ```xml
       <!-- Ukraine Passport International -->
@@ -18595,9 +18597,9 @@ Zasady DLP mają średnią pewność, że są wykrywane tego typu informacje pou
 
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
-- Paszport Ukrainy
+- paszport ukrainy
 - numer paszportu
-- paszport
+- nr paszportu
 - паспорт України
 - номер паспорта
 

@@ -1,5 +1,5 @@
 ---
-title: Włączanie archiwalnych skrzynek pocztowych na Microsoft 365 zgodności
+title: Włączanie archiwalnych skrzynek pocztowych na potrzeby zgodności Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -22,99 +22,97 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
-description: Dowiedz się, jak włączyć lub wyłączyć archiwalne skrzynki pocztowe w celu obsługi wymagań organizacji w zakresie przechowywania wiadomości, zbierania elektronicznych materiałów dowodowych i archiwizacji.
-ms.openlocfilehash: be7939f11c6aea0161f76c3796ca2ff8bd515ba0
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+description: Dowiedz się, jak włączyć lub wyłączyć archiwalne skrzynki pocztowe, aby obsługiwać wymagania dotyczące przechowywania komunikatów, zbierania elektronicznych materiałów dowodowych i przechowywania wiadomości w organizacji.
+ms.openlocfilehash: 9e30178dcab731ae61a9db5374218a608e4e47af
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63010623"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738352"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Włączanie archiwalnych skrzynek pocztowych w centrum zgodności
 
-Archiwizacja w Microsoft 365 (nazywana również archiwizacją *miejscową) zapewnia* użytkownikom dodatkowe miejsce do magazynowania skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz [Informacje o archiwalnych skrzynkach pocztowych](archive-mailboxes.md).
+Archiwizowanie w Microsoft 365 (nazywane również *archiwizowaniem w miejscu*) zapewnia użytkownikom dodatkowe miejsce do magazynowania skrzynki pocztowej. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o archiwalnych skrzynkach pocztowych](archive-mailboxes.md).
 
-Skorzystaj z informacji w tym artykule, aby włączyć lub wyłączyć archiwacyjną skrzynkę pocztową w Centrum zgodności platformy Microsoft 365 lub przy użyciu programu PowerShell. Dowiedz się także, jak uruchomić automatyczne sprawdzanie diagnostyczne archiwaowej skrzynki pocztowej użytkownika w celu zidentyfikowania problemów i sugerowanych rozwiązania.
+Informacje zawarte w tym artykule umożliwiają włączanie lub wyłączanie archiwum skrzynki pocztowej w Centrum zgodności platformy Microsoft 365 lub przy użyciu programu PowerShell. Dowiedz się również, jak uruchomić automatyczne sprawdzanie diagnostyczne w archiwum skrzynki pocztowej użytkownika w celu zidentyfikowania wszelkich problemów i sugerowanych rozwiązań.
 
 ## <a name="get-the-necessary-permissions"></a>Uzyskiwanie niezbędnych uprawnień
 
-Aby włączyć lub wyłączyć archiwalne skrzynki pocztowe, musisz mieć przypisaną rolę Exchange Online adresatów poczty. Domyślnie ta rola jest przypisana do grup ról Zarządzanie adresatami i Zarządzanie organizacją na stronie Uprawnienia w  centrum administracyjnym usługi <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administracyjnego</a>. 
+Musisz mieć przypisaną rolę Adresaci poczty w Exchange Online, aby włączyć lub wyłączyć archiwalne skrzynki pocztowe. Domyślnie ta rola jest przypisywana do grup ról Zarządzanie adresatami i Zarządzanie organizacją na stronie **Uprawnienia** w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>. 
 
-Jeśli nie widzisz strony Archiwum **w** skoroszycie, Centrum zgodności platformy Microsoft 365 poproś administratora o przypisanie niezbędnych uprawnień.
+Jeśli nie widzisz strony **Archiwum** w Centrum zgodności platformy Microsoft 365, poproś administratora o przypisanie Ci niezbędnych uprawnień.
 
-## <a name="enable-an-archive-mailbox"></a>Włączanie archiwaowej skrzynki pocztowej
+## <a name="enable-an-archive-mailbox"></a>Włączanie archiwum skrzynki pocztowej
 
 1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> i zaloguj się.
 
-2. W lewym okienku okna Centrum zgodności platformy Microsoft 365 kliknij pozycję Zarządzanie **informacjami**, a następnie kliknij **kartę Archiwum**.
+2. W lewym okienku Centrum zgodności platformy Microsoft 365 kliknij pozycję **Zarządzanie informacjami**, a następnie kliknij kartę **Archiwum**.
 
-   Zostanie **wyświetlona** strona Archiwum. Kolumna **Archiwalne skrzynki** pocztowe wskazuje, czy archiwalne skrzynki pocztowe są włączone, czy wyłączone dla każdego użytkownika.
+   Zostanie wyświetlona strona **Archiwum** . Kolumna **Archiwum skrzynki pocztowej** wskazuje, czy skrzynka pocztowa archiwum jest włączona, czy wyłączona dla każdego użytkownika.
 
    > [!NOTE]
    > Strona **Archiwum** zawiera maksymalnie 500 użytkowników.
 
-3. Na liście skrzynek pocztowych wybierz użytkownika, dla którego chcesz włączyć archiwalne skrzynki pocztowe.
+3. Na liście skrzynek pocztowych wybierz użytkownika, dla któremu chcesz włączyć skrzynkę pocztową archiwum, i wybierz pozycję **Włącz archiwum**.
 
-   ![Kliknij pozycję Włącz w okienku szczegółów wybranego użytkownika, aby włączyć archiwalne skrzynki pocztowe.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
+   ![Kliknij przycisk Włącz w okienku szczegółów wybranego użytkownika, aby włączyć skrzynkę pocztową archiwum.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
 
-4. W okienku szczegółów dla wybranego użytkownika kliknij pozycję **Włącz**.
 
-   Zostanie wyświetlone ostrzeżenie z informacją, że po włączeniu archiwalnej skrzynki pocztowej elementy w skrzynce pocztowej użytkownika, które są starsze niż zasady archiwizacji przypisane do skrzynki pocztowej, zostaną przeniesione do nowej archiwalnej skrzynki pocztowej. Domyślne zasady archiwizacji, które są częścią zasad przechowywania przypisanych do skrzynek pocztowych programu Exchange Online, przenosi elementy do archiwaowej skrzynki pocztowej dwa lata po tym, jak element został dostarczony do skrzynki pocztowej lub utworzony przez użytkownika. Aby uzyskać więcej informacji, zobacz **sekcję Więcej** informacji w tym artykule.
+   Zostanie wyświetlone ostrzeżenie informujące, że po włączeniu archiwum skrzynki pocztowej elementy w skrzynce pocztowej użytkownika starsze niż zasady archiwizacji przypisane do skrzynki pocztowej zostaną przeniesione do nowej skrzynki pocztowej archiwum. Domyślne zasady archiwum, które są częścią zasad przechowywania przypisanych do Exchange Online skrzynek pocztowych, przenosi elementy do archiwum skrzynki pocztowej dwa lata po dacie dostarczenia elementu do skrzynki pocztowej lub utworzenia przez użytkownika. Aby uzyskać więcej informacji, zobacz sekcję **Więcej informacji** w tym artykule.
 
-5. Kliknij **przycisk Tak,** aby włączyć archiwacyjną skrzynkę pocztową.
+5. Wybierz pozycję **Włącz** , aby włączyć archiwum skrzynki pocztowej.
 
-   Utworzenie archiwaowej skrzynki pocztowej może chwilę potrwać. Po utworzeniu archiwacyjna skrzynka **pocztowa: włączone** jest wyświetlana w okienku szczegółów dla wybranego użytkownika. Może być konieczne kliknięcie ikony **Odśwież**![.](../media/O365-MDM-Policy-RefreshIcon.gif) , aby zaktualizować informacje w okienku szczegółów.
+   Utworzenie archiwum skrzynki pocztowej może potrwać kilka chwil. Po utworzeniu **skrzynka pocztowa Archiwum: włączona** jest wyświetlana w okienku szczegółów wybranego użytkownika. Może być konieczne **kliknięcie ikony Odśwież odświeżanie**![.](../media/O365-MDM-Policy-RefreshIcon.gif) , aby zaktualizować informacje w okienku szczegółów.
 
 > [!TIP]
-> Możesz także włączyć zbiorczo archiwalne skrzynki pocztowe, zaznaczając wielu użytkowników z wyłączonymi archiwalnych skrzynek pocztowych (za pomocą klawiszy Shift i Ctrl). Po zaznaczeniu wielu skrzynek pocztowych kliknij pozycję **Włącz** w okienku szczegółów.
+> Możesz również zbiorczo włączyć archiwalne skrzynki pocztowe, wybierając wielu użytkowników z wyłączonymi archiwalnymi skrzynkami pocztowymi (użyj klawiszy Shift lub Ctrl). Po wybraniu wielu skrzynek pocztowych kliknij pozycję **Włącz** w okienku szczegółów.
 
-## <a name="disable-an-archive-mailbox"></a>Wyłączanie archiwaowej skrzynki pocztowej
+## <a name="disable-an-archive-mailbox"></a>Wyłączanie archiwum skrzynki pocztowej
 
-Możesz również użyć strony **Archiwum** w Centrum zgodności platformy Microsoft 365, aby wyłączyć archiwacyjną skrzynkę pocztową użytkownika. Po wyłączeniu archiwazyjną skrzynkę pocztową możesz ponownie podłączyć ją do podstawowej skrzynki pocztowej użytkownika w ciągu 30 dni od jej wyłączenia. W takim przypadku zostanie przywrócona oryginalna zawartość archiwaowej skrzynki pocztowej. Po 30 dniach zawartość oryginalnej archiwaowej skrzynki pocztowej zostanie trwale usunięta i nie będzie można jej odzyskać. Jeśli więc ponownie włączysz archiwum po upływie 30 dni od wyłączenia go, zostanie utworzona nowa archiwalne skrzynka pocztowa.
+Możesz również użyć strony **Archiwum** w Centrum zgodności platformy Microsoft 365, aby wyłączyć skrzynkę pocztową archiwum użytkownika. Po wyłączeniu archiwum skrzynki pocztowej można ponownie połączyć ją z podstawową skrzynką pocztową użytkownika w ciągu 30 dni od jej wyłączenia. W takim przypadku oryginalna zawartość archiwum skrzynki pocztowej są przywracane. Po 30 dniach zawartość oryginalnej skrzynki pocztowej archiwum zostanie trwale usunięta i nie będzie można jej odzyskać. Jeśli więc ponownie włączysz archiwum dłużej niż 30 dni po jego wyłączeniu, zostanie utworzona nowa skrzynka pocztowa archiwum.
 
-Domyślne zasady archiwizacji przypisane do skrzynek pocztowych użytkowników przenosi elementy do archiwaowej skrzynki pocztowej dwa lata po ich dostarczaniu. Jeśli wyłączysz archiwacyjną skrzynkę pocztową użytkownika, elementy skrzynki pocztowej nie zostaną wykonane i pozostaną one w podstawowej skrzynce pocztowej użytkownika.
+Domyślne zasady archiwum przypisane do skrzynek pocztowych użytkowników przenosi elementy do archiwum skrzynki pocztowej dwa lata po dacie dostarczenia elementu. Jeśli wyłączysz archiwum skrzynki pocztowej użytkownika, nie zostaną podjęte żadne akcje dotyczące elementów skrzynki pocztowej i pozostaną one w podstawowej skrzynce pocztowej użytkownika.
 
-Aby wyłączyć archiwacyjną skrzynkę pocztową:
+Aby wyłączyć skrzynkę pocztową archiwum:
 
 1. Przejdź do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> i zaloguj się.
 
-2. W lewym okienku okna Centrum zgodności platformy Microsoft 365 kliknij pozycję Zarządzanie **informacjami**, a następnie kliknij **kartę Archiwum**.
+2. W lewym okienku Centrum zgodności platformy Microsoft 365 kliknij pozycję **Zarządzanie informacjami**, a następnie kliknij kartę **Archiwum**.
 
-   Zostanie **wyświetlona** strona Archiwum. Kolumna **Archiwalne skrzynki** pocztowe wskazuje, czy archiwalne skrzynki pocztowe są włączone, czy wyłączone dla każdego użytkownika.
+   Zostanie wyświetlona strona **Archiwum** . Kolumna **Archiwum skrzynki pocztowej** wskazuje, czy skrzynka pocztowa archiwum jest włączona, czy wyłączona dla każdego użytkownika.
 
    > [!NOTE]
    > Strona **Archiwum** zawiera maksymalnie 500 użytkowników.
 
-3. Na liście skrzynek pocztowych wybierz użytkownika, dla którego chcesz wyłączyć archiwalne skrzynki pocztowe.
+3. Na liście skrzynek pocztowych wybierz użytkownika, dla który chcesz wyłączyć skrzynkę pocztową archiwum, a następnie wybierz pozycję **Wyłącz archiwum**.
 
-4. W okienku szczegółów kliknij pozycję **Wyłącz**.
 
-   Zostanie wyświetlony komunikat ostrzegawczy z informacją, że na ponowne włączenie archiwatywnej skrzynki pocztowej będziesz mieć 30 dni, a po 30 dniach wszystkie informacje w archiwum zostaną trwale usunięte.
+   Zostanie wyświetlony komunikat ostrzegawczy z informacją, że będziesz mieć 30 dni na ponowne włączenie archiwum skrzynki pocztowej, a po 30 dniach wszystkie informacje w archiwum zostaną trwale usunięte.
 
-5. Kliknij **przycisk Tak,** aby wyłączyć archiwacyjną skrzynkę pocztową.
+5. Wybierz pozycję **Wyłącz** , aby wyłączyć skrzynkę pocztową archiwum.
 
-   Wyłączenie archiwacyjną skrzynki pocztowej może chwilę potrwać. Po wyłączeniu w okienku szczegółów wybranego użytkownika zostanie wyświetlona informacja Archiwizuj skrzynkę pocztową **:** wyłączona. Może być konieczne kliknięcie ikony **Odśwież**![.](../media/O365-MDM-Policy-RefreshIcon.gif) , aby zaktualizować informacje w okienku szczegółów.
+   Wyłączenie archiwum skrzynki pocztowej może potrwać kilka chwil. Po wyłączeniu **skrzynka pocztowa Archiwum: wyłączona** jest wyświetlana w okienku szczegółów wybranego użytkownika. Może być konieczne **kliknięcie ikony Odśwież odświeżanie**![.](../media/O365-MDM-Policy-RefreshIcon.gif) , aby zaktualizować informacje w okienku szczegółów.
 
 > [!TIP]
-> Archiwalne skrzynki pocztowe można również wyłączyć zbiorczo, zaznaczając wielu użytkowników z włączonymi archiwalnych skrzynek pocztowych (za pomocą klawiszy Shift i Ctrl). Po zaznaczeniu wielu skrzynek pocztowych kliknij pozycję **Wyłącz w** okienku szczegółów.
+> Możesz również zbiorczo wyłączyć archiwalne skrzynki pocztowe, wybierając wielu użytkowników z włączonymi archiwalnymi skrzynkami pocztowymi (użyj klawiszy Shift lub Ctrl). Po wybraniu wielu skrzynek pocztowych kliknij pozycję **Wyłącz** w okienku szczegółów.
 
-## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Włączanie Exchange Online archiwalnych skrzynek pocztowych przy użyciu programu PowerShell
+## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Używanie Exchange Online programu PowerShell do włączania lub wyłączania archiwalnych skrzynek pocztowych
 
-Archiwalne skrzynki pocztowe można Exchange Online włączyć za pomocą programu PowerShell. Podstawowym powodem korzystania z programu PowerShell jest możliwość szybkiego włączenia archiwaowej skrzynki pocztowej dla wszystkich użytkowników w organizacji.
+Do włączania archiwalnych skrzynek pocztowych można również użyć programu Exchange Online PowerShell. Głównym powodem korzystania z programu PowerShell jest szybkie włączenie archiwum skrzynki pocztowej dla wszystkich użytkowników w organizacji.
 
-Pierwszym krokiem jest połączenie się z programem Exchange Online PowerShell. Aby uzyskać instrukcje, [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Pierwszym krokiem jest nawiązanie połączenia z programem Exchange Online programu PowerShell. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-Po na połączeniu z siecią Exchange Online można uruchomić polecenia z poniższych sekcji, aby włączyć lub wyłączyć archiwalne skrzynki pocztowe.
+Po nawiązaniu połączenia z Exchange Online możesz uruchomić polecenia w poniższych sekcjach, aby włączyć lub wyłączyć archiwalne skrzynki pocztowe.
 
-### <a name="enable-archive-mailboxes"></a>Włączanie archiwalnych skrzynek pocztowych
+### <a name="enable-archive-mailboxes"></a>Włącz archiwalne skrzynki pocztowe
 
-Uruchom następujące polecenie, aby włączyć archiwacyjną skrzynkę pocztową dla jednego użytkownika.
+Uruchom następujące polecenie, aby włączyć skrzynkę pocztową archiwum dla jednego użytkownika.
 
 ```powershell
 Enable-Mailbox -Identity <username> -Archive
 ```
 
-Uruchom następujące polecenie, aby włączyć archiwalne skrzynki pocztowe dla wszystkich użytkowników w organizacji (których archiwalne skrzynki pocztowe nie są obecnie włączone).
+Uruchom następujące polecenie, aby włączyć archiwum skrzynki pocztowej dla wszystkich użytkowników w organizacji (których skrzynka pocztowa archiwum nie jest obecnie włączona).
 
 ```powershell
 Get-Mailbox -Filter {ArchiveGuid -Eq "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Enable-Mailbox -Archive
@@ -122,13 +120,13 @@ Get-Mailbox -Filter {ArchiveGuid -Eq "00000000-0000-0000-0000-000000000000" -AND
 
 ### <a name="disable-archive-mailboxes"></a>Wyłączanie archiwalnych skrzynek pocztowych
 
-Uruchom następujące polecenie, aby wyłączyć archiwacyjną skrzynkę pocztową dla jednego użytkownika.
+Uruchom następujące polecenie, aby wyłączyć skrzynkę pocztową archiwum dla jednego użytkownika.
 
 ```powershell
 Disable-Mailbox -Identity <username> -Archive
 ```
 
-Uruchom poniższe polecenie, aby wyłączyć archiwalne skrzynki pocztowe dla wszystkich użytkowników w organizacji (których archiwalne skrzynki pocztowe są obecnie włączone).
+Uruchom następujące polecenie, aby wyłączyć skrzynkę pocztową archiwum dla wszystkich użytkowników w organizacji (których skrzynka pocztowa archiwum jest obecnie włączona).
 
 ```powershell
 Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
@@ -136,20 +134,20 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 ## <a name="run-diagnostics-on-archive-mailboxes"></a>Uruchamianie diagnostyki w archiwalnych skrzynkach pocztowych
 
-W archiwaowej skrzynce pocztowej użytkownika możesz uruchomić automatyczne sprawdzanie diagnostyczne, aby zidentyfikować wszelkie problemy i sugerowane rozwiązania.
+Możesz uruchomić automatyczne sprawdzanie diagnostyczne w skrzynce pocztowej archiwum użytkownika, aby zidentyfikować wszelkie problemy i sugerowane rozwiązania.
 
-Aby uruchomić sprawdzanie diagnostyczne, kliknij przycisk poniżej. 
+Aby uruchomić test diagnostyczny, kliknij przycisk poniżej. 
 
 > [!div class="nextstepaction"]
-> [Uruchom testy: archiwalne skrzynki pocztowe](https://aka.ms/PillarArchiveMailbox)
+> [Uruchamianie testów: archiwum skrzynki pocztowej](https://aka.ms/PillarArchiveMailbox)
 
-![Uruchamianie diagnostyki w archiwaowej skrzynce pocztowej.](../media/ArchiveMailboxDiagnostics.png)
+![Uruchom diagnostykę w archiwum skrzynki pocztowej.](../media/ArchiveMailboxDiagnostics.png)
 
-W menu wysuwana zostanie centrum administracyjne platformy Microsoft 365. Wprowadź adres e-mail skrzynki pocztowej, którą chcesz sprawdzić, i kliknij pozycję **Uruchom testy**.
+W Centrum administracyjne platformy Microsoft 365 zostanie otwarta strona wysuwana. Wprowadź adres e-mail skrzynki pocztowej, którą chcesz sprawdzić, i kliknij pozycję **Uruchom testy**.
 
 > [!NOTE]
-> Musisz być administratorem globalnym usługi Microsoft 365 w celu korzystania z kontroli diagnostycznej archiwanych skrzynek pocztowych. Ponadto ta funkcja nie jest dostępna w chmurach Microsoft 365 Government, Microsoft 365 obsługiwane przez firmę 21Vianet lub Microsoft 365 Germany.
+> Aby użyć sprawdzania diagnostycznego skrzynki pocztowej archiwum, musisz być administratorem globalnym Microsoft 365. Ponadto ta funkcja nie jest dostępna w chmurach Microsoft 365 government, Microsoft 365 obsługiwanych przez firmę 21Vianet lub Microsoft 365 Niemczech.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Rozważ włączenie [automatycznego rozszerzania archiwizacji w](autoexpanding-archiving.md) celu dodatkowego miejsca do magazynowania. Aby uzyskać instrukcje, [zobacz Włączanie automatycznego rozwijania archiwizacji](enable-autoexpanding-archiving.md).
+Rozważ włączenie [automatycznego rozszerzania archiwizacji](autoexpanding-archiving.md) w celu uzyskania dodatkowego miejsca do magazynowania. Aby uzyskać instrukcje, zobacz [Włączanie automatycznego rozszerzania archiwizacji](enable-autoexpanding-archiving.md).

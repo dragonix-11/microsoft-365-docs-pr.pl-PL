@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Postępuj zgodnie z tymi instrukcjami, aby utworzyć stronę Informacje o nas, w tym nazwę firmy, adres, numer telefonu, adres URL witryny internetowej, logo i godziny pracy w Microsoft Bookings.
-ms.openlocfilehash: 9931a5c00147a6f6b9b0cd4ef9550d783b8771fd
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 5d0505b0b23515bef0bdcc94206d8f3b856479c4
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715346"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746895"
 ---
 # <a name="enter-your-business-information"></a>Wprowadź informacje o firmie
 
@@ -25,7 +25,7 @@ W Microsoft Bookings strona Informacje biznesowe w aplikacji internetowej zawier
 
 Informacje przedstawione w tym miejscu zostaną wyświetlone na stronie używanej przez klientów i klientów do rezerwacji terminów (znanej jako strona rezerwacji) oraz w wiadomościach i przypomnieniach wysyłanych do nich przez Bookings. Przykład tych informacji na stronie rezerwacji został wyróżniony poniżej.
 
-   ![Obraz przedstawiający przykład strony Informacje biznesowe w Microsoft Bookings.](../media/bookings-business-info.png)
+   ![Obraz przedstawiający przykład strony Informacje biznesowe w Microsoft Bookings.](../media/bookings-business-info-2.png)
 
 > [!NOTE]
 > Aby rozpocząć, zobacz [Uzyskiwanie dostępu do Microsoft Bookings](get-access.md). Aby włączyć lub wyłączyć Bookings, zobacz [Włączanie lub wyłączanie Bookings dla organizacji](turn-bookings-on-or-off.md).
@@ -34,7 +34,7 @@ Informacje przedstawione w tym miejscu zostaną wyświetlone na stronie używane
 
 1. W Microsoft 365 wybierz pozycję Uruchamianie aplikacji, a następnie wybierz pozycję **Bookings**.
 
-1. W okienku nawigacji wybierz pozycję **KalendarzZasadność**  ->  w okienku po lewej stronie.
+1. W okienku nawigacji wybierz pozycję **KalendarzZasadność**  >  w okienku po lewej stronie.
 
 1. W sekcji **Szczegóły podstawowe** wprowadź nazwę firmy, adres i numer telefonu, którego chcesz użyć dla kalendarza Bookings.
 
@@ -66,11 +66,11 @@ Na przykład spotkania personelu odbywają się w każdy czwartek od godziny 1 d
 
 1. Wybierz **+** , aby utworzyć nowy wiersz na czwartek.
 
-   ![Obraz przedstawiający interfejs użytkownika godzin pracy.](../media/bookings-split-shift.png)
+   ![Obraz przedstawiający interfejs użytkownika godzin pracy.](../media/bookings-split-shift-1.png)
 
 1. W nowym wierszu wybierz pozycję 14:30. dla godziny rozpoczęcia i 18:00 na czas zakończenia.
 
-   ![Obraz przedstawiający interfejs użytkownika godzin pracy z dodanymi godzinami.](../media/bookings-split-shift-hours.png)
+   ![Obraz przedstawiający interfejs użytkownika godzin pracy z dodanymi godzinami.](../media/bookings-split-shift-hours-1.png)
 
 1. Wybierz Zapisz.
 

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Zmień motyw kolorów strony rezerwacji w aplikacji Microsoft Bookings.
-ms.openlocfilehash: 4fd33d39c9fda4588d24b51a70d589965fece28f
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: bd6c3fc601800cdfca93e9e1a6adc494df1bd67e
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713894"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747197"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Dostosuj i opublikuj stronę rezerwacji
 
@@ -37,7 +37,7 @@ Poniższa sekcja zawiera informacje o konfigurowaniu strony rezerwacji i sposobi
 
     Wewnętrzna strona rezerwacji wygląda następująco:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Strona Bookings.":::
+    :::image type="content" source="media/bookings-internal-page-1.png" alt-text="Strona Bookings.":::
 
 - **Kontrola dostępu do strony rezerwacji: wymaganie konta Microsoft 365 od mojej organizacji do zarezerwowania** wybrania tej opcji umożliwi tylko osobom w organizacji wyświetlenie strony lub zarezerwowanie dowolnych usług. Dostęp do strony jest autoryzowany za pośrednictwem kontroli poświadczeń, aby upewnić się, że użytkownik należy do konta w dzierżawie.
 
@@ -55,7 +55,7 @@ Poniższa sekcja zawiera informacje o konfigurowaniu strony rezerwacji i sposobi
 
 Po opublikowaniu strony rezerwacji klienci zobaczą Twoją stronę rezerwacji, na której będą mogli zarezerwować spotkania z Tobą. Strona rezerwacji klienta wygląda następująco:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Strona rezerwacji skierowana do klienta.":::
+:::image type="content" source="media/bookings-self-service-2.png" alt-text="Strona rezerwacji skierowana do klienta.":::
 
 ## <a name="publish-the-booking-page"></a>Publikowanie strony rezerwacji
 
@@ -75,4 +75,4 @@ Obejrzyj ten film wideo lub wykonaj poniższe kroki, aby opublikować lub cofną
 
 ## <a name="unpublish-the-booking-page"></a>Anulowanie publikowania strony rezerwacji
 
- - Aby anulować publikowanie strony rezerwacji, przejdź do strony Rezerwacja i wybierz pozycję **Cofnij publikowanie**.
+Aby anulować publikowanie strony rezerwacji, przejdź do strony Rezerwacja i wybierz pozycję **Cofnij publikowanie**.

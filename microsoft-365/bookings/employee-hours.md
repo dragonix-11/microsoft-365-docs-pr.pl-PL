@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Ustaw godziny pracy i dostępność pracowników w usłudze Microsoft Bookings.
-ms.openlocfilehash: 533cf3075c01753061f153d6dcf16bdb02bfa5a3
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: f87a5f13ace9689cd838942e6558529659671238
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714796"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747275"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Godziny pracy pracowników w usłudze Microsoft Bookings
 
@@ -27,19 +27,19 @@ Na stronie **Personel** można dostosować godziny pracy pracowników do potrzeb
 
 Jeśli chcesz zarezerwować czas wolny dla pracowników, aby klienci nie mogli ich zarezerwować, gdy są poza biurem, zobacz [Planowanie zamknięcia firmy, czas wolny i czas urlopu,](schedule-closures-time-off-vacation.md) aby uzyskać instrukcje.
 
-## <a name="customize-employee-working-hours"></a>Dostosowywanie godzin pracy pracowników
+## <a name="watch-set-employee-working-hours"></a>Obejrzyj: Ustawianie godzin pracy pracowników
 
 Obejrzyj to wideo lub wykonaj poniższe kroki, aby ustawić godziny pracy pracownika.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
+## <a name="customize-employee-working-hours"></a>Dostosowywanie godzin pracy pracowników
+
 1. W Microsoft 365 wybierz program uruchamiania aplikacji, a następnie wybierz **pozycję Bookings**.
 
-1. Wybierz kalendarz. 
+1. Wybierz kalendarz.
 
 1. W okienku nawigacji wybierz pozycję **Personel**, a następnie wybierz pracownika, którego godziny chcesz ustawić.
-
-   ![Obraz przedstawiający ekran Bookings personelu z wyróżnioną nazwą.](../media/bookings-staff-name-highlight.png)
 
 1. W obszarze Godziny pracy wyczyść pole wyboru **Użyj godzin pracy** .
 

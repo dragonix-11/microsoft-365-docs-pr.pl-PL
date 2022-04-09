@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instrukcje dotyczące wprowadzania informacji o ofertach usług, w tym nazwy usługi, opisu, lokalizacji, czasu trwania i cennika. Możesz również otagować pracowników, którzy są wykwalifikowani do świadczenia usługi.
-ms.openlocfilehash: 7d4bd5d8e75610785176f8c527576b0609cf71a4
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 576babc8a1cc64734c3d11f761b3b848d3fb2639
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714400"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746680"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definiowanie ofert usług w Bookings
 
@@ -89,8 +89,6 @@ Możesz również dodać dostosowane informacje i adresy URL do potwierdzenia wi
 
 4. Na stronie **Opcje dostępności** można wyświetlić opcje wybrane na **stronie Rezerwacja** dla zasad planowania i dostępności dla personelu. Aby uzyskać więcej informacji, zobacz [Ustawianie zasad planowania](set-scheduling-policies.md).
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Przykład ustawienia maksymalnej liczby uczestników w Bookings.":::
-
 5. **Cena domyślna**  Jest to cena wyświetlana na stronie Self-Service. Jeśli **nie ustawiono opcji Cena** , nie zostanie wyświetlona żadna cena ani odwołanie do kosztu lub ceny.
 
 6. **Notatki** To pole jest wyświetlane w przypadku rezerwacji dla zarezerwowanego personelu, a także w przypadku zdarzenia, które pojawia się na karcie Kalendarz w aplikacji internetowej Bookings.
@@ -101,7 +99,7 @@ Możesz również dodać dostosowane informacje i adresy URL do potwierdzenia wi
 
 8. Na stronie **Przypomnienia i potwierdzenia** możesz skonfigurować wysyłane przypomnienia i powiadomienia. Przypomnienia i powiadomienia są wysyłane do klientów, pracowników lub obu tych osób w określonym czasie przed terminem. Dla każdego terminu można utworzyć wiele komunikatów zgodnie z preferencjami.
 
-   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Wiadomość e-mail z potwierdzeniem z Bookings.":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Wiadomość e-mail z potwierdzeniem z Bookings.":::
 
    W tym miejscu możesz dołączyć dowolny dodatkowy tekst, taki jak informacje o zmianach terminu lub o tym, co klienci powinni wnieść na spotkanie. Poniżej przedstawiono przykład dostosowanego tekstu dodanego do oryginalnej wiadomości e-mail z potwierdzeniem widocznej w polu **Dodatkowe informacje dotyczące potwierdzenia wiadomości e-mail** :
 

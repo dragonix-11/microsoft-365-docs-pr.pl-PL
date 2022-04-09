@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Zaplanuj godziny zamknięcia biura i nieobecności pracownika z kalendarza aplikacji Bookings, aby pracownicy mogli być oznaczani jako niedostępni dla rezerwacji w określonych godzinach.
-ms.openlocfilehash: 138079643c9fbc86918a071f935ebe96d7989e68
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 1f20a28fa56f57680c547981f1c4d8357d75728e
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714774"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747305"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>Planowanie przerw w działaniu firmy, nieobecności i urlopów
 
@@ -23,9 +23,11 @@ ms.locfileid: "64714774"
 
 Czasami warto zamknąć firmę na wakacje lub imprezy zespołowe, albo pracownicy będą potrzebować czasu wolnego, gdy są chorzy, na wakacjach lub niedostępni z innych powodów. Możesz zaplanować czas wolny od kalendarza Microsoft Bookings, a pracownik będzie niedostępny dla rezerwacji w określonym czasie. Po ponownym otwarciu firmy lub powrocie pracowników do pracy wszyscy zostaną umieszczeni na stronie rezerwacji zgodnie z ustalonymi godzinami pracy.
 
-Obejrzyj ten film wideo lub wykonaj poniższe kroki, aby zaplanować zamknięcie firmy lub wyłączenie pracownika.
+## <a name="watch-enter-business-hours-and-time-off-for-employees"></a>Obejrzyj: Wprowadź godziny pracy i czas wolny dla pracowników
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TxDC]
+
+Zaplanuj zamknięcie firmy lub wyłączenie pracownika.
 
 ## <a name="schedule-ad-hoc-business-closures"></a>Planowanie doraźnych zamknięć firm
 
@@ -35,7 +37,7 @@ Obejrzyj ten film wideo lub wykonaj poniższe kroki, aby zaplanować zamknięcie
 
 1. W górnym okienku nawigacji wybierz pozycję **Dodaj czas wolny**.
 
-   ![Obraz przedstawiający Bookings widoku kalendarza i przycisku limitu czasu.](../media/bookings-calendar-timeoff.png)
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings widoku kalendarza i przycisku limitu czasu.":::
 
 1. Podaj szczegóły, w tym tytuł, datę rozpoczęcia i datę zakończenia oraz godziny, lokalizację i dodatkowe notatki.
 
@@ -53,13 +55,13 @@ Gdy klient podejmie próbę zaplanowania obsługi w dniu zamknięcia biura, zoba
 
 1. W Microsoft 365 wybierz program uruchamiania aplikacji, a następnie wybierz **pozycję Bookings**.
 
-   ![Obraz przedstawiający uruchamianie aplikacji.](../media/bookings-applauncher.png)
+   :::image type="content" source="../media/bookings-applauncher.png" alt-text="Uruchamianie aplikacji.":::
 
 1. Wybierz kalendarz.
 
 1. W górnym okienku nawigacji wybierz pozycję **Dodaj czas wolny**.
 
-   ![Obraz przedstawiający Bookings widoku kalendarza i przycisku limitu czasu.](../media/bookings-calendar-timeoff.png)
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings widoku kalendarza i przycisku limitu czasu.":::
 
 1. Podaj szczegóły, w tym tytuł, datę rozpoczęcia i datę zakończenia oraz godziny, lokalizację i inne notatki. Jeśli pracownik zostanie usunięty przez cały dzień lub przez kilka dni, wybierz pozycję **Wydarzenie całodniowe**.
 

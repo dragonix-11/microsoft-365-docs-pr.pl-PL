@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 21dbcdebbb640e15ef4023c0bf0cfdaf4739fdb7
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: d943f91685e3ee9d6bf12c3a47fbf68e5966dc9d
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64686994"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738495"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Używanie zapytań udostępnionych w zaawansowanym wyszukiwaniu zagrożeń
 
@@ -73,10 +73,11 @@ Aby wygenerować link, który otwiera zapytanie bezpośrednio w edytorze zaawans
 ## <a name="access-community-queries-in-the-github-repo"></a>Uzyskiwanie dostępu do zapytań społeczności w repozytorium GitHub  
 Badacze zabezpieczeń firmy Microsoft regularnie udostępniają zaawansowane zapytania dotyczące wyszukiwania zagrożeń w [wyznaczonym repozytorium publicznym na GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender). Udziały w tym repozytorium są przeglądane przed opublikowaniem. Aby współtworzyć, [dołącz do GitHub bezpłatnie](https://github.com/).
 
-Te zapytania można łatwo znaleźć również na liście rozwijanej **Community zapytań**.
+Te zapytania można łatwo znaleźć również w menu rozwijanym **Community zapytań**.
 
 :::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Nowe zapytanie, które ma zostać zapisane w portalu Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
+Community zapytania są pogrupowane w foldery, takie jak *Kampanie*, *Zbieranie*, *Unikanie obrony* i tym podobne. Dalsze informacje na temat zapytania są udostępniane jako komentarze w wierszu w samym zapytaniu. 
 
 >[!tip]
 >Badacze zabezpieczeń firmy Microsoft udostępniają również zaawansowane zapytania dotyczące zagrożeń, których można użyć do lokalizowania działań i wskaźników związanych z pojawiającym się zagrożeniami. Te zapytania są udostępniane w ramach raportów [analizy zagrożeń](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) w Microsoft 365 Defender.

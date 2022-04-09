@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Zmień ustawienia języka i strefy czasowej w Microsoft Bookings. Jeśli rezerwacje zostaną utworzone w niewłaściwym czasie, Bookings może zostać ustawiona dla niewłaściwej strefy czasowej.
-ms.openlocfilehash: 1f319ae91b635bf7c45542d2872c92763d1426f7
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: cb6735640f85456568f0d0492a265046ab127e9c
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715368"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746976"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Ustawianie języka i stref czasowych w Microsoft Bookings
 
@@ -33,7 +33,7 @@ Aby ustawić język i strefę czasowa dla kalendarza rezerwacji:
 
 1. Zaloguj się do Microsoft 365 i wybierz kafelek Outlook na stronie docelowej (jak pokazano na poniższym zrzucie ekranu) lub w programie Microsoft 365 App Launcher.
 
-   ![Obraz przedstawiający kafelek Outlook na stronie docelowej Microsoft 365.](../media/bookings-outlook-tile.png)
+   :::image type="content" source="../media/bookings-outlook-tile.png" alt-text="Outlook kafelek na stronie docelowej Microsoft 365.":::
 
 1. Po otwarciu Outlook wybierz **ikonę koła zębatego** w prawym górnym rogu ekranu, aby otworzyć ustawienia osobiste i konta, a następnie wyszukaj "strefę czasową" w polu wyszukiwania panelu **Ustawienia**. Panel zostanie zaktualizowany w celu wyświetlenia bieżącego języka osobistego i ustawień strefy czasowej dla tego konta. Jak wspomniano powyżej, to ustawienie kontroluje również język i strefę czasowa kalendarza rezerwacji.
 
@@ -49,6 +49,6 @@ Aby ustawić język i strefę czasowa dla kalendarza rezerwacji:
 
    ![Zrzut ekranu: link Zmienianie języka i ustawień strefy czasowej.](../media/bookings-region-language-timezone-settings.png)
 
-1. Wybierz swój język i bieżącą strefę czasowa, a następnie wybierz przycisk OK.
+1. Wybierz swój język i bieżącą strefę czasowa, a następnie wybierz przycisk **OK**.
 
-   ![Zrzut ekranu: Ustawienia języka i strefy czasowej.](../media/bookings-region-timezone-settings.png)
+   :::image type="content" source="../media/bookings-region-timezone-settings-1.png" alt-text="Ustawienia języka i strefy czasowej.":::

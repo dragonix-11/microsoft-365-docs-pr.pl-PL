@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się więcej o kluczowych różnicach między modelem zrozumienia dokumentu a modelem przetwarzania formularzy.
-ms.openlocfilehash: ee51b60b69bc2ec489f074a73555cbc6f1a17143
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3f36adbf261ef290aada8efe1c0643ee1ce570f
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664640"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738399"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Różnice między interpretacją dokumentów a modelami przetwarzania formularzy 
 
@@ -85,6 +85,7 @@ Poniższa tabela służy do zrozumienia, kiedy używać przetwarzania formularzy
 | Koszt transakcyjny | Używa środków narzędzia AI Builder.<br>Środki można kupić w partiach po 1 mln.<br>Środki na korzystanie z 1 mln są uwzględniane w przypadku zakupu ponad 300 SharePoint Syntex licencji.<br>Środki w wysokości 1 mln umożliwią przetwarzanie 2000 stron plików.<br>| Nie dotyczy |
 | Pojemność | Używa domyślnego środowiska platformy Power Platform (środowiska niestandardowe z obsługiwaną bazą danych Dataverse). | Nie ma ograniczeń pojemności.|
 | Obsługiwane języki| Obsługa języka dla większej [liczby 73 języków](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Modele działają we wszystkich językach alfabetu łacińskiego. Oprócz języka angielskiego: niemiecki, szwedzki, francuski, hiszpański, włoski i portugalski.|
+
 
 ## <a name="see-also"></a>Zobacz też
 

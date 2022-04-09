@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Dodaj magazyn plików w subskrypcji Microsoft 365. Dodatkowy magazyn plików umożliwia przechowywanie większej ilości zawartości w SharePoint.
 ms.date: 04/02/2021
-ms.openlocfilehash: 687233ed91e358c3f48332a0b07aa3213734b71b
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: da66bac2bde52f5bcd899b73e5927008b40227dc
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731532"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737455"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Dodawanie większej ilości magazynu SharePoint do subskrypcji
 
@@ -112,4 +112,4 @@ Dodatkowe miejsce do magazynowania plików w usłudze Office 365 jest dostępne 
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Zarządzanie limitami magazynu lokacji](/sharepoint/manage-site-collection-storage-limits) (artykuł)
+[Zarządzanie limitami magazynu lokacji](/sharepoint/manage-site-collection-storage-limits) (artykuł)\

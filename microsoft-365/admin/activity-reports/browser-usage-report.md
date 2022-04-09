@@ -1,5 +1,5 @@
 ---
-title: centrum administracyjne platformy Microsoft 365 raportów dotyczących użycia przeglądarki
+title: Centrum administracyjne platformy Microsoft 365 raporty użycia przeglądarki
 ms.author: waxiaoyu
 author: sarahwxy
 manager: scotv
@@ -17,44 +17,44 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Dowiedz się, jak uzyskać raport użycia przeglądarki firmy Microsoft przy użyciu pulpitu nawigacyjnego Raporty Microsoft 365 na stronie centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: cfeed7f311816e72d06f63e36aabe9f6ffad718f
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Dowiedz się, jak uzyskać raport użycia przeglądarki Firmy Microsoft przy użyciu pulpitu nawigacyjnego Microsoft 365 Reports w Centrum administracyjne platformy Microsoft 365.
+ms.openlocfilehash: 32f834874e17376bc1b6fb2188c36f2959f504bf
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400968"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738237"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 raporty w centrum administracyjnym — Użycie przeglądarki firmy Microsoft
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Raporty w centrum administracyjnym — użycie przeglądarki Microsoft
 
-Pulpit Microsoft 365 raporty umożliwia przegląd aktywności w produktach w organizacji. Przechodzenie do poziomu raportów dotyczących poszczególnych produktów umożliwia uzyskanie bardziej szczegółowych informacji o aktywności w poszczególnych produktach. Zobacz [temat zawierający omówienie pulpitu nawigacyjnego Raporty](activity-reports.md). Raport użycia przeglądarki firmy Microsoft pozwala uzyskać szczegółowe informacje na temat przeglądarek Internet Explorer, aplikacji Starsza wersja Microsoft Edge oraz nowych funkcji Microsoft Edge przeglądarce. Raportowanie użycia jest oparte na Microsoft 365 online, do których można uzyskiwać dostęp przy użyciu przeglądarki firmy Microsoft.
+Na pulpicie nawigacyjnym raportów Microsoft 365 przedstawiono omówienie działań w produktach w organizacji. Umożliwia przechodzenie do szczegółów poszczególnych raportów na poziomie produktu, aby uzyskać bardziej szczegółowy wgląd w działania w ramach każdego produktu. Zobacz [temat zawierający omówienie pulpitu nawigacyjnego Raporty](activity-reports.md). W raporcie użycia przeglądarki firmy Microsoft możesz uzyskać szczegółowe informacje na temat programu Internet Explorer, Starsza wersja Microsoft Edge i nowego użycia Microsoft Edge. Raportowanie użycia jest oparte na Microsoft 365 Usługi online, do Microsoft 365 Usługi online uzyskiwany za pomocą przeglądarki firmy Microsoft.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Jak uzyskać dostęp do raportu użycia przeglądarki firmy Microsoft
 
 1. W centrum administracyjnym przejdź do strony **Raporty** \> <b><a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">użycia</a></b> .
 
-2. Na stronie głównej pulpitu nawigacyjnego kliknij przycisk **Wyświetl więcej** na karcie Użycie przeglądarki firmy Microsoft.
+2. Na stronie głównej pulpitu nawigacyjnego kliknij przycisk **Wyświetl więcej** na karcie użycia przeglądarki firmy Microsoft.
 
 ## <a name="how-to-notify-users-to-upgrade-their-browser"></a>Jak powiadomić użytkowników o uaktualnieniu przeglądarki
 
-:::image type="content" alt-text="Przepływ akcji raportu użycia przeglądarki firmy Microsoft." source="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png" lightbox="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png":::
+:::image type="content" alt-text="Przepływ akcji raportu użycia przeglądarki Firmy Microsoft." source="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png" lightbox="../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png":::
 
-Administratorzy globalni mogą wyrazić zgodę na wysyłanie wiadomości do użytkowników, którzy mają dostęp do usług Microsoft 365 z programu Internet Explorer (przypomnienie: aplikacja komputerowa Internet Explorer zostanie wycofana 15 czerwca 2022 r.). W tej wiadomości docelowej jest wyświetlany komunikat z powiadomieniem dla użytkowników, że obsługa tych przeglądarek zostanie wkrótce przesłana wraz z linkiem do artykułu pomocy technicznej z informacjami na temat Microsoft Edge i czynnościami, które należy wykonać w celu przełączenia przeglądarek. 
+Administratorzy globalni mogą zdecydować się na wysyłanie komunikatów do użytkowników, którzy uzyskują dostęp do usług Microsoft 365 z programu Internet Explorer (przypominamy, że aplikacja klasyczna programu Internet Explorer zostanie wycofana 15 czerwca 2022 r.). Ten docelowy komunikat powiadamia użytkowników, że obsługa tych przeglądarek zakończy się wkrótce i linki do artykułu pomocy technicznej z informacjami na temat Microsoft Edge i prostych kroków do wykonania w celu przełączenia przeglądarek. 
 
-Tę funkcję można znaleźć na stronie Raport użycia przeglądarki firmy Microsoft, jeśli w raporcie jest wyświetlone użycie programu Internet Explorer (wymagane są uprawnienia administratora globalnego). Po utworzeniu wiadomości użytkownicy będą o tym powiadamiani z częstotliwością określoną do 15 czerwca 2022 r. Tę funkcję można włączyć lub wyłączyć w dowolnym momencie.
+Tę funkcję można znaleźć na stronie raportu użycia przeglądarki Firmy Microsoft, jeśli w raporcie jest wyświetlane użycie programu Internet Explorer (wymagane są uprawnienia administratora globalnego). Po utworzeniu komunikatu użytkownicy będą otrzymywać powiadomienia z częstotliwością określoną do 15 czerwca 2022 r. Tę funkcję można włączyć lub wyłączyć w dowolnym momencie.
 
-Jest to funkcja ograniczona czas, która jest obecnie dostępna tylko dla administratorów globalnych w USA i umożliwia powiadomienia użytkowników w Excel online.
+Jest to funkcja ograniczona czasowo, która jest obecnie dostępna tylko dla administratorów globalnych w Stanach Zjednoczonych i umożliwia powiadomienia użytkowników w Excel online.
 
-## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpretowanie raportu użycia przeglądarki firmy Microsoft
+## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpretowanie raportu użycia przeglądarki Firmy Microsoft
 
-:::image type="content" alt-text="Raport użycia przeglądarki firmy Microsoft." source="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png" lightbox="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png":::
+:::image type="content" alt-text="Raport użycia przeglądarki Firmy Microsoft." source="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png" lightbox="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png":::
 
 |Element|Opis|
 |:-----|:-----|
-|1. |W **raporcie Użycie przeglądarki firmy Microsoft** można przeglądać trendy z ostatnich 7, 30, 90 lub 180 dni. |
-|2. |Dane w poszczególnych raportach zazwyczaj obejmują maksymalnie siedem ostatnich dni. |
-|3. |Wykres **Dzienna liczba** aktywnych użytkowników przedstawia dzienną liczbę użytkowników w usługach Microsoft Edge, Starsza wersja Microsoft Edge i Internet Explorer, gdy są używane do uzyskiwania dostępu do Microsoft 365 usług. |
-|4. |Wykres **Aktywni** użytkownicy przedstawia łączną liczbę użytkowników korzystających z programów Microsoft Edge, Starsza wersja Microsoft Edge i Internet Explorer, którzy korzystali z usług Microsoft 365 w wybranym okresie. |
-|5. |W tabeli przedstawiono zestawienie danych na poziomie poszczególnych użytkowników. Możesz dodać lub usunąć kolumny z tabeli.  <br/><br/>**Nazwa** użytkownika to adres e-mail użytkownika, który łączył się z Microsoft 365 usług przy użyciu przeglądarek firmy Microsoft.<br><br/>**Użyty Microsoft Edge** wyświetla znacznik osi, jeśli użytkownik Microsoft Edge do łączenia się z Microsoft 365 usługami.<br/><br/>**Pole Starsza wersja Microsoft Edge** wyświetla znacznik osi, jeśli użytkownik Starsza wersja Microsoft Edge się z Microsoft 365 usługami.<br/><br/>**Używany program Internet Explorer** wyświetla znacznik wyboru, jeśli użytkownik łączył się z Microsoft 365 Internet Explorer. |
-|6. |Wybierz **ikonę Wybierz kolumny** , aby dodać lub usunąć kolumny z raportu.|
-|7. |Dane raportu można również wyeksportować do pliku Excel .csv, wybierając link **Eksportuj**. Umożliwia to wyeksportowanie danych wszystkich użytkowników oraz umożliwia proste agregacje, sortowanie i filtrowanie w celu dalszej analizy. Jeśli masz mniej niż 100 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 100 użytkowników, w celu filtrowania i sortowania należy wyeksportować dane.|
+|1. |Raport **użycia przeglądarki firmy Microsoft** można wyświetlić dla trendów z ostatnich 7 dni, 30 dni, 90 dni lub 180 dni. |
+|2. |Dane w każdym raporcie zwykle obejmują maksymalnie siedem ostatnich dni. |
+|3. |Wykres **Dzienni aktywni użytkownicy** pokazuje dzienną liczbę użytkowników dla Microsoft Edge, Starsza wersja Microsoft Edge i Programu Internet Explorer, gdy są używane do uzyskiwania dostępu do usług Microsoft 365. |
+|4. |Wykres **Aktywni użytkownicy** przedstawia łączną liczbę użytkowników korzystających z Microsoft Edge, Starsza wersja Microsoft Edge i programu Internet Explorer, gdy są używane do uzyskiwania dostępu do usług Microsoft 365 w wybranym okresie. |
+|5. |W tabeli przedstawiono zestawienie danych na poziomie poszczególnych użytkowników. Możesz dodać lub usunąć kolumny z tabeli.  <br/><br/>**Nazwa użytkownika** to adres e-mail użytkownika, który łączył się z usługami Microsoft 365 przy użyciu przeglądarek firmy Microsoft.<br><br/>**Użyte Microsoft Edge** pokazuje znacznik wyboru, jeśli użytkownik użył Microsoft Edge do nawiązania połączenia z usługami Microsoft 365.<br/><br/>**Użyte Starsza wersja Microsoft Edge** pokazuje znacznik wyboru, jeśli użytkownik użył Starsza wersja Microsoft Edge do nawiązania połączenia z usługami Microsoft 365.<br/><br/>**Używany program Internet Explorer** pokazuje znacznik wyboru, jeśli użytkownik używał programu Internet Explorer do nawiązywania połączenia z usługami Microsoft 365. |
+|6. |Wybierz ikonę **Wybierz kolumny** , aby dodać lub usunąć kolumny z raportu.|
+|7. |Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Umożliwia to eksportowanie danych dla wszystkich użytkowników i umożliwia wykonywanie prostej agregacji, sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 100 użytkowników, możesz sortować i filtrować w tabeli w samym raporcie. Jeśli masz więcej niż 100 użytkowników, aby filtrować i sortować, musisz wyeksportować dane.|
