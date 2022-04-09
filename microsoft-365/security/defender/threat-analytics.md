@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02d7a1e1d80d7891219c9bcf18076b858f4fb1b8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b034445951a0b8f52e995ff3372a2b0404f8cbfb
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663319"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731037"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Analiza zagrożeń w Microsoft 365 Defender
 
@@ -33,9 +33,6 @@ ms.locfileid: "64663319"
 **Dotyczy:**
 
 - Microsoft 365 Defender
-
-> Chcesz doświadczyć Microsoft 365 Defender? Można [go ocenić w środowisku laboratoryjnym](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) lub [uruchomić projekt pilotażowy w środowisku produkcyjnym](m365d-pilot.md?ocid=cx-evalpilot).
->
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 

@@ -1,11 +1,11 @@
 ---
-title: Opis kont rozliczeniowych
+title: Omówienie kont rozliczeniowych
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: tugu, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,66 +19,66 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
-description: Dowiedz się więcej na temat kont rozliczeniowych i sposobu ich zarządzania ustawieniami konta, fakturami, metodami płatności i zakupami.
+description: Dowiedz się więcej o kontach rozliczeniowych i sposobie ich użycia do zarządzania ustawieniami konta, fakturami, formami płatności i zakupami.
 ms.date: 03/17/2021
-ms.openlocfilehash: 8d80e94cbb415f93015673065e47d2fe36194bc0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 45f9e9d9a174094badaae8087803fbdb3eec3f3b
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315781"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731400"
 ---
-# <a name="understand-billing-accounts"></a>Opis kont rozliczeniowych
+# <a name="understand-billing-accounts"></a>Omówienie kont rozliczeniowych
 
-Podczas tworzenia konta w celu wypróbowania lub zakupu produktów firmy Microsoft jest tworzone konto rozliczeniowe. Do zarządzania ustawieniami konta, fakturami, metodami płatności i zakupami używasz swojego konta rozliczeniowego. Możesz mieć dostęp do wielu kont rozliczeniowych. Możesz na przykład bezpośrednio pisać konto Microsoft 365 lub masz dostęp do centrum usług firmy Microsoft Enterprise Agreement, Umowy o świadczenie usług firmy Microsoft w zakresie produktów & lub Umowy klienta firmy Microsoft. Dla każdego z tych scenariuszy będziesz mieć osobne konto rozliczeniowe.
+Konto rozliczeniowe jest tworzone podczas tworzenia konta w celu wypróbowania lub zakupu produktów firmy Microsoft. Konto rozliczeniowe służy do zarządzania ustawieniami konta, fakturami, formami płatności i zakupami. Możesz mieć dostęp do wielu kont rozliczeniowych. Na przykład zarejestrowaliśmy się bezpośrednio w celu Microsoft 365 lub masz dostęp do Enterprise Agreement organizacji, umowy microsoft product & Services lub Umowa z Klientem Microsoft. W każdym z tych scenariuszy będziesz mieć oddzielne konto rozliczeniowe.
 
-Aktualnie <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a> obsługuje konta rozliczeniowe następującego typu:
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Obecnie Centrum administracyjne platformy Microsoft 365</a> obsługuje następujący typ kont rozliczeniowych:
 
-- Program usług Online Services firmy Microsoft: To konto billingowe jest tworzone podczas tworzenia konta subskrypcji usługi Microsoft 365 online.
-- Program MICROSOFT Products & Services Agreement (MPSA): To konto rozliczeniowe jest tworzone, gdy Twoja organizacja podpisuje umowę licencjonowania zbiorowego MPSA w celu zakupu oprogramowania i usług online.
-- Umowa klienta firmy Microsoft: To konto rozliczeniowe jest tworzone, gdy Twoja organizacja niezależnie współpracuje z przedstawicielem firmy Microsoft, autoryzowanym partnerem lub zakupami.
+- Microsoft Online Services Program: to konto rozliczeniowe jest tworzone podczas bezpośredniego tworzenia konta w Microsoft 365 subskrypcji.
+- Program microsoft Products & Services Agreement (MPSA): to konto rozliczeniowe jest tworzone, gdy organizacja podpisuje umowę licencjonowania zbiorowego MPSA w celu zakupu oprogramowania i Usługi online.
+- Umowa z Klientem Microsoft: to konto rozliczeniowe jest tworzone, gdy organizacja współpracuje z przedstawicielem firmy Microsoft, autoryzowanym partnerem lub kupuje niezależnie.
 
-Strona <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Konta rozliczeniowe</a> udostępnia widok kont komercyjnych w firmie Microsoft. Domyślnie organizacja ma co najmniej jedno konto rozliczeniowe skojarzone z umową zaakceptowaną w momencie bezpośredniego zakupu lub w ramach rozmieszczenia w ramach licencjonowania zbiorowego.
+Strona <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Konta rozliczeniowe</a> zawiera widok kont komercyjnych w firmie Microsoft. Domyślnie organizacja ma co najmniej jedno konto rozliczeniowe skojarzone z umową akceptowaną w momencie zakupu bezpośredniego lub w ramach umowy licencjonowania zbiorowego.
 
-## <a name="understand-billing-account-details"></a>Opis szczegółów konta rozliczeniowego
+## <a name="understand-billing-account-details"></a>Omówienie szczegółów konta rozliczeniowego
 
-Górna część strony szczegółów **Konta** rozliczeniowe zawiera twój profil konta i zawiera informacje prawne i podatkowe dotyczące Twojej organizacji. Możesz zaktualizować swój profil, aby zmienić swój adres i numer telefonu. To konto jest podmiotem prawnie opłacanym za kupowane produkty.
+W górnej części strony **szczegółów Konta rozliczeniowe** znajduje się profil twojego konta i zawiera informacje prawne i podatkowe dotyczące organizacji. Możesz zaktualizować swój profil, aby zmienić swój adres prawny i numer telefonu. To konto jest jednostką prawną, która płaci za zakupione produkty.
 
-W poniższej tabeli wymieniono ważne terminy, które są **widać na stronie** szczegółów konta rozliczeniowego.
+W poniższej tabeli wymieniono ważne terminy widoczne na stronie **szczegółów kont rozliczeniowych** .
 
 | Nazwa pola | Opis |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Adres do sprzedania | Podmiot prawny odpowiedzialny za płatność i wskazany na fakturze. Podany tutaj adres służy do ustalenia stawki podatkowej, chyba że w trakcie zakupu zdecydujesz się podać alternatywny adres wysyłkowy. Aby uzyskać więcej informacji, zobacz [Informacje podatkowe](billing-and-payments/tax-information.md). |
-| Segment | Pole tylko do odczytu identyfikujące segment biznesowy organizacji (komercyjny, edukacyjny, dla instytucji rządowych lub niedochodowych). |
-| Stan konta | Pole tylko do odczytu, które określa stan twojego konta komercyjnego u firmy Microsoft. |
-| Identyfikator podatku | Jeśli jesteś poza Stanami Zjednoczonymi, musisz podać vat lub lokalny odpowiednik. Aby uzyskać więcej informacji, zobacz [Informacje podatkowe](billing-and-payments/tax-information.md). |
-| Umowa | Podczas tworzenia konta rozliczeniowego (za pośrednictwem zakupu bezpośredniego lub rozmieszczenia w ramach licencjonowania zbiorowego) podpisującego w organizacji zaakceptuje lub podpisze umowę, która & warunki korzystania z konta. W razie przypadku ten widok zawiera listę historii umowy. Jeśli jest wymagane zaakceptowanie zaktualizowanych warunków, zostanie wyświetlony link do strony Zatwierdź **umowę** . |
-| Profile rozliczeniowe | Profil rozliczeniowy określa właściwości faktury, takie jak osoba, która otrzymuje rachunek, sposób dostarczenia rachunku, warunki płatności i numer zakupu. Aby rozłożyć rozliczenia w całej organizacji, możesz utworzyć wiele profilów rozliczeń i zidentyfikować odpowiedni profil rozliczeniowy w momencie zakupu. Aby uzyskać więcej informacji na temat profilów rozliczeń i sposobu ich używania do tworzenia bardziej elastycznych opcji rozliczeń dla organizacji, zobacz Opis [profilów rozliczeniowych](billing-and-payments/manage-billing-profiles.md). |
+| Adres sold-to | Osoba prawna odpowiedzialna za płatność i zidentyfikowana na fakturze. Podany tutaj adres służy do określania stawki podatku, chyba że zdecydujesz się podać alternatywny adres wysyłkowy podczas zakupu. Aby uzyskać więcej informacji, zobacz [Informacje podatkowe](billing-and-payments/tax-information.md). |
+| Segmentu | Pole tylko do odczytu, które identyfikuje segment biznesowy organizacji (komercyjne, edukacyjne, rządowe lub non-profit). |
+| Stan konta | Pole tylko do odczytu, które określa stan konta komercyjnego w firmie Microsoft. |
+| Identyfikator podatkowy | Jeśli jesteś poza Stany Zjednoczone, musisz podać podatek VAT lub lokalny odpowiednik. Aby uzyskać więcej informacji, zobacz [Informacje podatkowe](billing-and-payments/tax-information.md). |
+| Umowa | Po utworzeniu konta rozliczeniowego w drodze zakupu bezpośredniego lub umowy licencjonowania zbiorowego sygnatariusz organizacji akceptuje lub podpisuje umowę, która określa warunki & warunków konta. Jeśli ma to zastosowanie, ten widok zawiera listę historii umów. Jeśli musisz zaakceptować zaktualizowane warunki, zostanie wyświetlony link **do pozycji Zatwierdź umowę** . |
+| Profile rozliczeniowe | Profil rozliczeniowy definiuje właściwości faktury, takie jak to, kto otrzymuje rachunek, sposób dostarczenia rachunku, warunki płatności i numer zamówienia zakupu. Aby rozłożyć rozliczenia w całej organizacji, możesz utworzyć wiele profilów rozliczeniowych i zidentyfikować odpowiedni profil rozliczeniowy w momencie zakupu. Aby uzyskać więcej informacji na temat profilów rozliczeniowych i sposobu ich używania do tworzenia bardziej elastycznych opcji rozliczeń dla organizacji, zapoznaj się z [profilami rozliczeniowymi](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> Jeśli chcesz zmienić nazwę lub adres  osoby sprzedaowej, ale nie **widzisz linku** Edytuj, musisz skontaktować się z pomocą techniczną, [](../admin/get-help-support.md) aby ją zmienić. Żądania zmiany **nazwy sprzedania** będą wymagały sprawdzenia zdolności kredytowej. Wypełnij [ten formularz](https://www.microsoft.com/download/details.aspx?id=102732) i skontaktuj się z pomocą techniczną, aby udostępnić jeden z poniższych dokumentów firmie Microsoft:
+> Jeśli musisz zmienić nazwę lub adres **sold-to** , ale nie widzisz linku **Edytuj** , musisz [skontaktować się z pomocą techniczną](../admin/get-help-support.md) , aby go zmienić. Żądania zmiany **nazwy sold-to** będą wymagały sprawdzenia środków. Wypełnij [ten formularz](https://www.microsoft.com/download/details.aspx?id=102732) i po skontaktowaniu się z pomocą techniczną możesz udostępnić firmie Microsoft jeden z następujących dokumentów:
 >
-> - Dokument wydany przez rząd lub list rejestrowy
-> - Wydrukuj rejestr firmy lokalnej
+> - Dokument lub pismo rejestracyjne wydane przez instytucję rządową
+> - Drukowanie z rejestru lokalnej firmy
 >
-> Pomoc techniczna może pomóc w zmianie nazwy i adresu w miejscach, w których zmienia się tylko nazwa klienta, ale podmiot pozostaje ten sam. W dostarczonej dokumentacji należy wyraźnie pokazać, że zmieniła się tylko nazwa jednostki. Jeśli zmiana jest wynikiem transakcji, łącznie ze sprzedażą firmy, zmianą kontrolek, zbędną lub "spinoff" partnera klienta, skontaktuj się ze sprzedawcą firmy Microsoft.
+> Pomoc techniczna może pomóc w zmianach nazw i adresów, w których zmienia się tylko nazwa klienta, ale jednostka pozostaje taka sama. W dostarczonej dokumentacji należy wyraźnie pokazać, że zmieniła się tylko nazwa jednostki. Jeśli zmiana jest wynikiem transakcji, w tym sprzedaży firmy, zmiany kontroli, zbycia lub "spinoffu" partnera klienta, skontaktuj się ze sprzedawcą firmy Microsoft.
 
 ## <a name="shipping-addresses"></a>Adresy wysyłkowe
 
-W tej sekcji wymieniono adresy wysyłkowe skojarzone z Twoim kontem rozliczeniowym. Przy zakupie możesz użyć tego adresu do określenia, gdzie został wysłany lub użyty. Adres wysyłkowy można edytować. Możesz dodać adres wysyłkowy lub zaktualizować istniejący adres. Ten adres służy do określania stawki podatkowej za zakup.
+W tej sekcji wymieniono adresy wysyłkowe skojarzone z kontem rozliczeniowym. Podczas dokonywania zakupu możesz użyć tego adresu, aby określić, gdzie zakup jest dostarczany lub używany. Adres wysyłkowy można edytować. Możesz dodać adres wysyłkowy lub zaktualizować istniejący adres. Ten adres służy do określania stawki podatku za zakup.
 
-## <a name="understand-access-to-billing-accounts"></a>Opis dostępu do kont rozliczeniowych
+## <a name="understand-access-to-billing-accounts"></a>Omówienie dostępu do kont rozliczeniowych
 
-Możesz udostępnić innym osobom dostęp do konta rozliczeniowego w aplikacji usługi <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a> za pośrednictwem ról i uprawnień. Tylko właściciel konta rozliczeniowego może udzielić dostępu do konta rozliczeniowego. Możesz przypisać do użytkowników jedną z następujących ról:
+Możesz zapewnić innym osobom dostęp do konta rozliczeniowego w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> za pośrednictwem ról i uprawnień. Tylko właściciel konta rozliczeniowego może udzielić dostępu do konta rozliczeniowego. Do użytkowników można przypisać jedną z następujących ról:
 
-- **Właściciel konta rozliczeniowego** &mdash; Może przypisywać uprawnienia, edytować konta, podpisywać umowy i wyświetlać konta.
-- **Współautor konta rozliczeniowego** &mdash; Może edytować konta, podpisywać umowy i wyświetlać konta.
-- **Czytnik konta rozliczeniowego** &mdash; Może wyświetlać konta.
+- Właściciel &mdash; **konta rozliczeniowego** Może przypisywać uprawnienia, edytować konta, podpisywać umowy i wyświetlać konta.
+- Współautor &mdash; **konta rozliczeniowego** Może edytować konta, podpisywać umowy i wyświetlać konta.
+- Czytelnik &mdash; **konta rozliczeniowego** Może wyświetlać konta.
 
 > [!Note]
-> Role kont rozliczeniowych mają zastosowanie tylko do kont rozliczeniowych i nie mają zastosowania do innych centrum administracyjne platformy Microsoft 365 rozliczeniowych.
+> Role konta rozliczeniowego mają zastosowanie tylko do kont rozliczeniowych i nie mają zastosowania do innych scenariuszy Centrum administracyjne platformy Microsoft 365.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Informacje podatkowe](billing-and-payments/tax-information.md) (artykuł) \
-[Informacje o profilach rozliczeniowych](billing-and-payments/manage-billing-profiles.md) (artykuł)
+[Omówienie profilów rozliczeniowych](billing-and-payments/manage-billing-profiles.md) (artykuł)

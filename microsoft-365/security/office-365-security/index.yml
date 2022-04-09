@@ -14,12 +14,12 @@ metadata:
   ms.author: macapara
   ms.date: 04/13/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: c132c68ba56dedd7ae38ba4c922f815f316bb062
-  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+  ms.openlocfilehash: 531e7466c831bef63d29bf7c33ad7bd9de9c3587
+  ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 12/30/2021
-  ms.locfileid: "62970550"
+  ms.lasthandoff: 04/07/2022
+  ms.locfileid: "64705170"
 landingContent:
 - title: Ochrona usługi Office 365 w usłudze Defender i usłudze Exchange Online Protection
   linkLists:
@@ -43,10 +43,10 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Oceń ochronę usługi Office 365 w usłudze Microsoft Defender
-      url: office-365-evaluation.md
-    - text: Przełącz do usługi Exchange Online Protection
-      url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+    - text: Wypróbuj usługę Defender dla usługi Office 365
+      url: try-microsoft-defender-for-office-365.md
+    - text: Migrowanie do usługi Office 365 w usłudze Defender
+      url: migrate-to-defender-for-office-365.md
 - title: Konfigurowanie ochrony poczty e-mail za pomocą uwierzytelniania
   linkLists:
   - linkListType: how-to-guide

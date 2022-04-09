@@ -23,12 +23,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 17a3a63dfb3faedb5ff213b24dd14abd57f55bb3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08d28a5586c92d0e439170807f750150d9fbe17c
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316929"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704784"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Dodaj rekordy DNS, aby połączyć domenę
 
@@ -97,14 +97,16 @@ W zależności od usług, które chcesz włączyć, będziesz dodawać kilka ró
 
 Informacje dotyczące rekordu MX można uzyskać z kreatora konfiguracji domeny w centrum administracyjnym.
 
-W witrynie internetowej dostawcy hostingu dodaj nowy rekord MX.
-Upewnij się, że pola są ustawione na następujące wartości:
+W witrynie internetowej dostawcy hostingu dodaj nowy rekord MX. Upewnij się, że pola są ustawione na następujące wartości:
 
 - Typ rekordu: `MX`
 - Priority (Priorytet): ustawianie na najwyższą dostępną wartość, zazwyczaj `0`.
 - Nazwa hosta: `@`
 - Punkty do zaadresowania: skopiuj wartość z centrum administracyjnego i wklej ją w tym miejscu.
-- TTL `3600` (Czas wygaśnięcia): (lub domyślny dostawca)
+- TTL: `3600`
+
+> [!NOTE]
+> Usługa Exchange Online obsługuje tylko wartości czasu wygaśnięcia krótsze niż 6 godzin (21 600 sekund).
 
 Zapisz rekord, a następnie usuń wszelkie inne rekordy MX.
 
@@ -175,7 +177,7 @@ Przykład: `_sip._tls`
 
 Jeśli Twój dostawca hostingu nie udostępni tych pól dla rekordów SRV, musisz je określić w polu **Target** (Element docelowy) rekordu. (Uwaga: W zależności od dostawcy hostingu pole **Target** (Element docelowy) może mieć inne nazwę, na przykład: **Content** (Zawartość), **IP Address** (Adres IP) lub **Target Host** (Host docelowy)).
 
-Aby dodać te wartości, utwórz jeden ciąg, oddzielając wartości spacjami i czasami kończąc się kropką *(w* razie wątpliwości skontaktuj się z dostawcą). Wartości muszą być uwzględnione w tej kolejności: Priority (Priorytet), Weight (Waga), Port, Target (Element docelowy).
+Aby dodać te wartości, utwórz jeden ciąg, oddzielając wartości spacjami i *czasami kończąc kropką* (skontaktuj się z dostawcą, jeśli nie masz pewności). Wartości muszą być uwzględnione w następującej kolejności: Priorytet, Waga, Port, Cel.
 
 - Przykład 1: `100 1 443 sipdir.online.lync.com.`
 - Przykład 2: `100 1 443 sipdir.online.lync.com`

@@ -1,5 +1,5 @@
 ---
-title: Krok nr 5. Wdrażanie profilów urządzeń w aplikacji Microsoft Intune
+title: Krok nr 5. Wdrażanie profilów urządzeń w Microsoft Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -8,7 +8,7 @@ f1.keywords:
 - customize configuration profiles
 manager: dougeby
 audience: ITPro
-description: Wprowadzenie do profilów konfiguracji w celu wymuszania bezpiecznych ustawień na urządzeniach za pomocą usługi Intune w celu przejścia tych kontrolek zabezpieczeń do chmury.
+description: Wprowadzenie z profilami konfiguracji w celu wymuszania bezpiecznych ustawień na urządzeniach przy użyciu Intune w celu przeniesienia tych mechanizmów kontroli zabezpieczeń do chmury.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
@@ -18,77 +18,77 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: d44d70c50db5c086e24af575677d5d51e1b33357
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: dfdffc95c39d471e071db8f83e88b9ba67e143e8
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "63015776"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731554"
 ---
-# <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Krok nr 5. Wdrażanie profilów urządzeń w aplikacji Microsoft Intune
+# <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Krok nr 5. Wdrażanie profilów urządzeń w Microsoft Intune
 
-Microsoft Intune zawiera ustawienia i funkcje, które można włączać lub wyłączać na różnych urządzeniach w organizacji. Te ustawienia i funkcje zostaną dodane do "profilów konfiguracji". Możesz tworzyć profile dla różnych urządzeń i różnych platform, takich jak systemy iOS/iPadOS, administrator urządzeń z systemem Android, urządzenia z systemem Android Enterprise i Windows. Następnie zastosuj profil do urządzeń lub "przypisz" go do urządzeń za pomocą usługi Intune.
+Microsoft Intune zawiera ustawienia i funkcje, które można włączyć lub wyłączyć na różnych urządzeniach w organizacji. Te ustawienia i funkcje są dodawane do "profilów konfiguracji". Profile można tworzyć dla różnych urządzeń i różnych platform, w tym systemów iOS/iPadOS, administratora urządzeń z systemem Android, Enterprise systemu Android i Windows. Następnie użyj Intune, aby zastosować lub "przypisać" profil do urządzeń.
 
 Ten artykuł zawiera wskazówki dotyczące rozpoczynania pracy z profilami konfiguracji. 
 
 
-![Procedura zarządzania urządzeniami](../media/devices/intune-mdm-step-4.png#lightbox)
+![Kroki zarządzania urządzeniami](../media/devices/intune-mdm-step-4.png#lightbox)
 
-Profile konfiguracji zapewniają możliwość skonfigurowania ważnej ochrony i zapewnienia zgodności urządzeń, dzięki czemu mogą uzyskać dostęp do Twoich zasobów. Wcześniej tego typu zmiany konfiguracji były konfigurowane przy użyciu zasady grupy w programie Usługi domenowe w usłudze Active Directory. Nowoczesna strategia zabezpieczeń obejmuje przenoszenie kontrolek zabezpieczeń do chmury, gdzie wymuszanie tych kontroli nie zależy od zasobów lokalnych i dostępu. Profile konfiguracji usługi Intune są sposobem na przejście tych kontrolek zabezpieczeń do chmury. 
+Profile konfiguracji umożliwiają konfigurowanie ważnej ochrony i zapewnianie zgodności urządzeń w celu uzyskania dostępu do zasobów. Wcześniej tego rodzaju zmiany konfiguracji były konfigurowane przy użyciu ustawień zasady grupy w Active Directory Domain Services. Nowoczesna strategia zabezpieczeń obejmuje przenoszenie mechanizmów kontroli zabezpieczeń do chmury, w której wymuszanie tych mechanizmów kontroli nie jest zależne od zasobów lokalnych i dostępu. Intune profile konfiguracji to sposób na przeniesienie tych mechanizmów kontroli zabezpieczeń do chmury. 
 
-Aby uzyskać informacje na temat rodzaju profilów konfiguracji, które można utworzyć, zobacz Stosowanie funkcji i ustawień na urządzeniach przy użyciu profilów urządzeń w [aplikacji Microsoft Intune](/mem/intune/configuration/device-profiles).
+Aby zapoznać się z rodzajem profilów konfiguracji, które można utworzyć, zobacz [Stosowanie funkcji i ustawień na urządzeniach przy użyciu profilów urządzeń w Microsoft Intune](/mem/intune/configuration/device-profiles).
 
-## <a name="deploy-windows-security-baselines-for-intune"></a>Wdrażanie Windows podstawowych zabezpieczeń w usłudze Intune
+## <a name="deploy-windows-security-baselines-for-intune"></a>Wdrażanie Windows punktów odniesienia zabezpieczeń dla Intune
 
-Na początek zalecamy wyrównanie konfiguracji urządzeń do planu bazowego zabezpieczeń firmy Microsoft w ramach usługi Microsoft Endpoint Manager. Zaletą tego rozwiązania jest to, że firma Microsoft może polegać na tym, że w przypadku wydania Windows 10 i 11 funkcji bazowych jest aktualnych. 
+Jeśli chcesz dostosować konfiguracje urządzeń do punktów odniesienia zabezpieczeń firmy Microsoft, zalecamy użycie punktów odniesienia zabezpieczeń w ramach Microsoft Endpoint Manager. Zaletą tego podejścia jest to, że możesz polegać na firmie Microsoft, aby zapewnić aktualność punktów odniesienia w miarę Windows 10 i wydaniu 11 funkcji. 
 
-Aby wdrożyć podstawowe Windows zabezpieczeń w usłudze Intune dostępne dla Windows 10 i Windows 11. Aby [dowiedzieć się więcej o dostępnych](/mem/intune/protect/security-baselines) planach bazowych, Windows w usłudze Intune, zobacz Używanie planu bazowego zabezpieczeń do konfigurowania urządzeń przenośnych w usłudze Intune.
+Aby wdrożyć Windows punkty odniesienia zabezpieczeń dla Intune, dostępne dla Windows 10 i Windows 11. Zobacz [Konfigurowanie urządzeń Windows w Intune przy użyciu punktów odniesienia zabezpieczeń](/mem/intune/protect/security-baselines), aby dowiedzieć się więcej o dostępnych punktach odniesienia.
 
-Obecnie wystarczy wdrożyć najbardziej odpowiedni plan bazowy zabezpieczeń MDM. Zobacz [Zarządzanie profilami planu bazowego zabezpieczeń Microsoft Intune ](/mem/intune/protect/security-baselines-configure)aby utworzyć profil i wybrać wersję podstawową.
+Na razie wystarczy wdrożyć najbardziej odpowiedni punkt odniesienia zabezpieczeń mdm. Zobacz [Zarządzanie profilami punktów odniesienia zabezpieczeń w Microsoft Intune](/mem/intune/protect/security-baselines-configure), aby utworzyć profil i wybrać wersję punktu odniesienia.
 
-Później, po skonfigurowaniu programu Microsoft Defender dla punktu końcowego i połączeniu usługi Intune, wdeksuj usługę Defender dla punktów bazowych punktów końcowych. Ten temat dotyczy następnego artykułu z tej serii: [Krok 6. Monitorowanie ryzyka urządzenia i zgodności z planami bazowymi zabezpieczeń](manage-devices-with-intune-monitor-risk.md).
+Później, po skonfigurowaniu Ochrona punktu końcowego w usłudze Microsoft Defender i nawiązaniu połączenia z Intune, wdróż punkty odniesienia usługi Defender dla punktów końcowych. Ten temat został omówiony w następnym artykule z tej serii: [Krok 6. Monitorowanie ryzyka urządzenia i zgodności z punktami odniesienia zabezpieczeń](manage-devices-with-intune-monitor-risk.md).
 
-Ważne jest, aby zrozumieć, że te linie bazowe zabezpieczeń nie są zgodne ze standardem CIS ani NIST, ale dokładnie odzwierciedlają ich rekomendacje. Aby uzyskać więcej informacji, zobacz [Czy plan bazowy zabezpieczeń usługi Intune jest zgodny z usługą CIS lub NIST](/mem/intune/protect/security-baselines)?
+Ważne jest, aby zrozumieć, że te punkty odniesienia zabezpieczeń nie są zgodne ze standardem CIS lub NIST, ale ściśle odzwierciedlają ich zalecenia. Aby uzyskać więcej informacji, zobacz [Czy Intune punkty odniesienia zabezpieczeń cis lub NIST są zgodne?](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>Dostosowywanie profilów konfiguracji dla organizacji
 
-Oprócz wdrażania wstępnie skonfigurowanych linii bazowych wiele organizacji klasy przedsiębiorstw implementuje profile konfiguracji w celu bardziej szczegółowej kontroli. Ta konfiguracja pozwala zmniejszyć zależność od obiektów zasady grupy w lokalnym środowisku usługi Active Directory i przenieść kontrolki zabezpieczeń do chmury. 
+Oprócz wdrażania wstępnie skonfigurowanych punktów odniesienia wiele organizacji w skali przedsiębiorstwa implementuje profile konfiguracji w celu bardziej szczegółowej kontroli. Ta konfiguracja pomaga zmniejszyć zależność od obiektów zasady grupy w środowisku lokalna usługa Active Directory i przenieść mechanizmy kontroli zabezpieczeń do chmury. 
 
-Wiele ustawień, które można skonfigurować przy użyciu profilów konfiguracji, można pogrupować w cztery kategorie, jak pokazano poniżej.
+Wiele ustawień, które można skonfigurować przy użyciu profilów konfiguracji, można pogrupować na cztery kategorie, jak pokazano poniżej.
 
-![Kategorie profilów urządzeń w usłudze Intune](../media/devices/intune-device-profile-categories.png#lightbox)
+![Intune kategorii profilów urządzeń](../media/devices/intune-device-profile-categories.png#lightbox)
 
 W poniższej tabeli opisano ilustrację.
 
 
 |Kategoria |Opis |Przykłady  |
 |---------|---------|---------|
-|Funkcje urządzenia     | Steruje funkcjami na urządzeniu. Ta kategoria dotyczy tylko urządzeń z systemami iOS/iPadOS i macOS.        | Airprint, powiadomienia, wiadomości ekranu blokady        |
-|Ograniczenia urządzenia     | Steruje zabezpieczeniami, sprzętem, udostępnianiem danych i nie tylko ustawieniami na urządzeniach        | Wymaganie numeru PIN, szyfrowania danych        |
-|Konfiguracja programu Access     |  Konfiguruje urządzenie w celu uzyskiwania dostępu do zasobów organizacji.        | Profile poczty e-mail, profile sieci VPN, Wi-Fi ustawień poczty e-mail, certyfikaty        |
-|Niestandardowe     | Konfigurowanie konfiguracji niestandardowej lub wykonywanie niestandardowych akcji konfiguracji       | Ustawianie ustawień OEM, wykonywanie skryptów programu PowerShell        |
+|Funkcje urządzenia     | Steruje funkcjami na urządzeniu. Ta kategoria dotyczy tylko urządzeń z systemami iOS/iPadOS i macOS.        | Airprint, powiadomienia, komunikaty ekranu blokady        |
+|Ograniczenia urządzenia     | Steruje zabezpieczeniami, sprzętem, udostępnianiem danych i innymi ustawieniami na urządzeniach        | Wymaganie numeru PIN i szyfrowania danych        |
+|Konfiguracja dostępu     |  Konfiguruje urządzenie w celu uzyskania dostępu do zasobów organizacji        | Profile poczty e-mail, profile sieci VPN, ustawienia Wi-Fi, certyfikaty        |
+|Niestandardowe     | Ustawianie konfiguracji niestandardowej lub wykonywanie niestandardowych akcji konfiguracji       | Ustawianie ustawień OEM, wykonywanie skryptów programu PowerShell        |
 |    |         |         |
 
-Podczas dostosowywania profilów konfiguracji dla organizacji używaj następujących wskazówek:
-- Uprość strategię zarządzania zabezpieczeniami, zachowując małą ogólną liczbę zasad.
-- Pogrupuj ustawienia według kategorii wymienionych powyżej lub kategorii, które są sensowne dla Twojej organizacji.
-- Podczas przenoszenia kontrolek zabezpieczeń z obiektu zasad zasady grupy Objects (GPO) do profilów konfiguracji usługi Intune należy rozważyć, czy ustawienia skonfigurowane przez każdy obiekt zasad grupy są nadal istotne i potrzebne do uwzględnienia ogólnej strategii zabezpieczeń w chmurze. Dostęp warunkowy i wiele zasad, które można skonfigurować we wszystkich usługach w chmurze, w tym w usłudze Intune, zapewniają bardziej zaawansowaną ochronę niż można skonfigurować w środowisku lokalnym, w którym pierwotnie zaprojektowano niestandardowe urządzenia GPOs.
-- Użyj zasady grupy Analytics, aby porównać i zamapować bieżące ustawienia zasad grupy na funkcje w Microsoft Endpoint Manager. Zobacz [Analizowanie lokalnych obiektów zasad grupy przy użyciu](/mem/intune/configuration/group-policy-analytics) analizy zasady grupy w programie Microsoft Endpoint Manager.
-- Podczas korzystania z niestandardowych profilów konfiguracji pamiętaj o skorzystaniu z wskazówek tutaj: Tworzenie profilu za pomocą ustawień niestandardowych [w usłudze Intune](/mem/intune/configuration/custom-settings-configure).
+Podczas dostosowywania profilów konfiguracji dla organizacji skorzystaj z następujących wskazówek:
+- Uprość strategię zapewniania ładu w zakresie zabezpieczeń, utrzymując ogólną liczbę zasad na małym poziomie.
+- Grupuj ustawienia w kategorie wymienione powyżej lub kategorie, które mają sens dla Twojej organizacji.
+- Podczas przenoszenia mechanizmów kontroli zabezpieczeń z obiektów zasady grupy (GPO) do profilów konfiguracji Intune należy rozważyć, czy ustawienia skonfigurowane przez poszczególne obiekty zasad grupy są nadal istotne i potrzebne do współtworzenia ogólnej strategii zabezpieczeń w chmurze. Dostęp warunkowy i wiele zasad, które można skonfigurować w usługach w chmurze, w tym Intune, zapewniają bardziej zaawansowaną ochronę niż można skonfigurować w środowisku lokalnym, w którym pierwotnie zaprojektowano niestandardowe obiekty zasad grupy.
+- Użyj usługi zasady grupy Analytics, aby porównać i zamapować bieżące ustawienia obiektu zasad grupy na możliwości w ramach Microsoft Endpoint Manager. Zobacz [Analizowanie lokalnych obiektów zasad grupy (GPO) przy użyciu analizy zasady grupy](/mem/intune/configuration/group-policy-analytics) w Microsoft Endpoint Manager.
+- Korzystając z niestandardowych profilów konfiguracji, skorzystaj ze wskazówek w tym miejscu: [Tworzenie profilu z ustawieniami niestandardowymi w Intune](/mem/intune/configuration/custom-settings-configure).
 
 ## <a name="additional-resources"></a>Dodatkowe materiały
 
-Jeśli nie masz pewności, od czego zacząć od profilów urządzeń, pomocne mogą być poniższe informacje:
+Jeśli nie masz pewności, od czego zacząć od profilów urządzeń, może to pomóc w następujących kwestiach:
 
 - [Scenariusze z przewodnikiem](/mem/intune/fundamentals/guided-scenarios-overview) 
-- [Linie bazowe zabezpieczeń](/mem/intune/protect/security-baselines)
+- [Punkty odniesienia zabezpieczeń](/mem/intune/protect/security-baselines)
 
-Jeśli Twoje środowisko zawiera własne urządzenia gpOs, dobrym rozwiązaniem jest przejście do chmury przy następujących funkcjach:
+Jeśli środowisko zawiera lokalne obiekty zasad grupy, następujące funkcje są dobrym przejściem do chmury:
 
-- [zasady grupy analizy](/mem/intune/configuration/group-policy-analytics)
-- [Szablony administracyjne (ADMX)](/mem/intune/configuration/administrative-templates-windows)
-- [Ustawienia usługi](/mem/intune/configuration/settings-catalog)
+- [analiza zasady grupy](/mem/intune/configuration/group-policy-analytics)
+- [Szablony administratorów (ADMX)](/mem/intune/configuration/administrative-templates-windows)
+- [wykaz Ustawienia](/mem/intune/configuration/settings-catalog)
 
 
 ## <a name="next-steps"></a>Następne kroki
-Przejdź do [kroku 6. Monitorowanie ryzyka urządzenia i zgodności z planami bazowymi zabezpieczeń](manage-devices-with-intune-monitor-risk.md).
+Przejdź do [kroku 6. Monitorowanie ryzyka urządzenia i zgodności z punktami odniesienia zabezpieczeń](manage-devices-with-intune-monitor-risk.md).

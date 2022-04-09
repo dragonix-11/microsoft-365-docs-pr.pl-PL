@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: tugu, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,25 +14,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: 'Dowiedz się, ile podatku zostanie naliczonego za subskrypcję usługi Microsoft 365 dla firm w różnych regionach. '
 ms.custom:
 - commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+description: Dowiedz się, ile podatku zostanie naliczone za subskrypcję Microsoft 365 dla firm w różnych regionach.
 ms.date: 03/17/2021
-ms.openlocfilehash: 421abe7b69323be783831d9ce5de45c21ec98536
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 35442bc495b6179a844bdbe3a6b98a4f58556140
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313401"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731234"
 ---
 # <a name="tax-information"></a>Informacje podatkowe
 
-W przypadku Microsoft 365 produktów i usług podatki są określane przez jedną z dwóch rzeczy: adres firmy lub adres wysyłkowy, jeśli jest inny. Jeśli Twoja organizacja znajduje się w Stanach Zjednoczonych, musisz podać federalny numer identyfikacyjny pracodawcy (FEIN).
+W przypadku zakupu Microsoft 365 produktów i usług podatki, które płacisz, zależą od jednej z dwóch rzeczy: adresu biznesowego lub adresu wysyłkowego, jeśli jest on inny. Jeśli Twoja organizacja znajduje się w Stany Zjednoczone, musisz podać federalny numer identyfikacyjny pracodawcy (FEIN).
 
-Firmy w następujących krajach mogą podać numer VAT lub lokalny odpowiednik:
+Firmy w następujących krajach mogą podać swój numer VAT lub lokalny odpowiednik:
 
 :::row:::
     :::column:::
@@ -95,34 +95,34 @@ Firmy w następujących krajach mogą podać numer VAT lub lokalny odpowiednik:
     :::column-end:::
 :::row-end:::
 
-*W większości wymienionych krajów podanie numeru VAT lub lokalnego odpowiednika jest opcjonalne. W Brazylii i Indiach wymagany jest numer identyfikatora podatkowego.
+*W przypadku większości wymienionych krajów podanie numeru VAT lub lokalnego odpowiednika jest opcjonalne. W przypadku Brazylii i Indii wymagany jest numer identyfikatora podatkowego.
 
 > [!Note]
-> Jeśli musisz skontaktować się z pomocą techniczną, przygotuj swój numer FEIN, numer VAT lub lokalny odpowiednik do przedstawicielowi pomocy technicznej.
+> Jeśli musisz skontaktować się z pomocą techniczną, przygotuj swój fein, numer VAT lub lokalny odpowiednik gotowy do przekazania agentowi pomocy technicznej.
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Bliski Wschód i Afryka (EMEA)
 
-Przy zakupie usług Microsoft 365 regionu EMEA ten zakup może podlegać Value-Added (VAT).
+W przypadku zakupu usług Microsoft 365 w regionie EMEA ten zakup może podlegać Value-Added podatku (VAT).
   
-- Jeśli znajdujesz się na terenie stanu członkowskiego Unii Europejskiej, Armenia, Białoruś, Norwegia, Turcja lub Zjednoczonych Emiratów Arabskich i nie pozyskasz prawidłowego identyfikatora VAT, firma Microsoft Ireland Operations Ltd. zastosuje aktualną lokalną stawkę podatku VAT obowiązującą w kraju rozliczeń, który jest ustawiony dla Twojego konta.
+- Jeśli znajdujesz się w państwie członkowskim Unii Europejskiej, Armenii, Białorusi, Norwegii, Turcji lub Zjednoczonych Emiratach Arabskich i nie podajesz prawidłowego lokalnego identyfikatora VAT, firma Microsoft Ireland Operations Ltd. zastosuje bieżącą lokalną stawkę VAT na podstawie kraju rozliczeniowego, na którym twoje konto jest ustawione.
 
-- Jeśli znajdujesz się w Liechtensteinie, Rosji, Serbia, Republika Południowej Afryki lub Szwajcarii, zostanie naliczony podatek VAT niezależnie od tego, czy pozyskasz identyfikator VAT, czy nie.
+- Jeśli znajdujesz się w Liechtensteinie, Rosji, Serbii, Republice Południowej Afryki lub Szwajcarii, stosowany jest podatek VAT, niezależnie od tego, czy podajesz swój identyfikator VAT, czy nie.
 
-- W przypadku klientów w UE twój identyfikator VAT musi być dostępny do weryfikacji w systemie informacji o podatku VAT Exchange system (VIES). Jeśli twojego identyfikatora VAT nie można zweryfikować, skontaktuj się z lokalnym organem podatkowym.
+- W przypadku klientów z UE, zanim będziemy mogli zweryfikować Twój identyfikator VAT, musi on być dostępny do weryfikacji w systemie Exchange informacji o vat (VIES). Jeśli nie można zweryfikować twojego identyfikatora VAT, skontaktuj się z lokalnym urzędem podatkowym.
 
-Do zerowej stawki VAT możesz się zakwalifikować, jeśli:
+Możesz kwalifikować się do zerowej klasyfikacji VAT, jeśli:
   
-- **Należysz do kraju członkowskiego Unii Europejskiej poza Irlandią:** Możesz podać prawidłowy lokalny identyfikator VAT. Dzięki temu firma Microsoft Ireland Operations Ltd. może do zwrotu transakcji z zerową stawką VAT. Mogą jednak wystąpić lokalne zobowiązania księgowe o podatku VAT. W razie wątpliwości skontaktuj się z doradcą podatkowym. Aby uzyskać instrukcje, [zobacz Dodawanie identyfikatora VAT](#add-your-vat-id).
+- **Jesteś w państwie członkowskim Unii Europejskiej poza Irlandią:** Możesz podać prawidłowy lokalny identyfikator VAT. Pozwala to firmie Microsoft Ireland Operations Ltd. na zerową stawkę VAT transakcji. Może jednak istnieć lokalny obowiązek księgowy VAT. Jeśli masz jakiekolwiek obawy, skontaktuj się z doradcami podatkowymi. Aby uzyskać instrukcje, zobacz [Dodawanie identyfikatora VAT](#add-your-vat-id).
 
-- **Jesteś w Irlandii i masz odpowiednie certyfikaty o zwolnieniu z podatku VAT:** Firma Microsoft Ireland Operations Ltd. może mieć prawo do zwolnienia z transakcji podatku VAT. Jeśli tego nie zgoniesz, firma Microsoft Ireland Operations Ltd. stosuje aktualną stawkę VAT obowiązującą w Irlandii, niezależnie od tego, czy pozyskasz identyfikator VAT, czy nie.
+- **Jesteś w Irlandii i masz odpowiednie ważne zaświadczenie o zwolnieniu z podatku VAT:** Firma Microsoft Ireland Operations Ltd. może być uprawniona do zwolnienia transakcji z podatku VAT. Jeśli tego nie zrobisz, firma Microsoft Ireland Operations Ltd. stosuje bieżącą irlandzką stawkę VAT, niezależnie od tego, czy podajesz identyfikator VAT, czy nie.
 
-- **Jesteś w Armenia, Białoruś, Norwegia, Turcja lub Zjednoczonych Emiratach Arabskich:** Możesz podać lokalny identyfikator VAT. Uprawnia to firmę Microsoft Ireland Operations Ltd. do podatku VAT z zerową stawką podatku VAT. Mogą jednak wystąpić lokalne zobowiązania księgowe dotyczące podatku VAT, dlatego w razie wątpliwości należy skontaktować się z doradcą podatkowym. Aby uzyskać instrukcje, [zobacz Dodawanie identyfikatora VAT](#add-your-vat-id).
+- **Jesteś w Armenii, Białorusi, Norwegii, Turcji lub Zjednoczonych Emiratach Arabskich:** Możesz podać lokalny identyfikator VAT. Uprawnia to firmę Microsoft Ireland Operations Ltd. do zerowej stawki VAT transakcji. Jednak możesz mieć lokalny obowiązek księgowy VAT, więc skontaktuj się ze swoimi doradcami podatkowymi, jeśli masz jakiekolwiek obawy. Aby uzyskać instrukcje, zobacz [Dodawanie identyfikatora VAT](#add-your-vat-id).
 
 ## <a name="asia-pacific-countries-apac"></a>Kraje Azji i Pacyfiku (APAC)
 
-Jeśli rozliczenia są naliczane przez dział Microsoft Regional Sales, "Microsoft Regional Sales Pte. Ltd." znajduje się na fakturze i może zostać naliczona opłata za wszelkie mające zastosowanie podatki lub wartości dodane.
+Jeśli opłaty są naliczane przez regionalne biuro sprzedaży firmy Microsoft, "Microsoft Regional Sales Pte. z o.o. zostanie wyświetlona na fakturze i może zostać naliczona opłata za dowolną odpowiednią wartość dodaną, sprzedaż lub podobne podatki.
   
-Jeśli rozliczenia są naliczane z jednej z następujących lokalizacji, stosowana jest aktualna kwota podatku lokalnego. Na fakturze znajduje [się lokalizacja](view-your-bill-or-invoice.md):
+Jeśli opłaty są naliczane z jednej z następujących lokalizacji, zostanie zastosowany bieżący podatek lokalny. Lokalizacja jest uwzględniana [na fakturze](view-your-bill-or-invoice.md):
   
 - Indie
 - Japonia
@@ -132,16 +132,16 @@ Jeśli rozliczenia są naliczane z jednej z następujących lokalizacji, stosowa
 
 ## <a name="north-central-and-south-america"></a>Ameryka Północna, Środkowa i Południowa
 
-W Stanach Zjednoczonych, Kanadzie, Meksyku, Chile i Kolumbii obowiązują różne stawki podatku w zależności od rodzaju produktu i Twojej lokalizacji.
+W Stany Zjednoczone, Kanadzie, Meksyku, Chile i Kolumbii obowiązują różne stawki podatkowe w zależności od rodzaju produktu i lokalizacji.
   
-Jeśli rozliczenia są wykonywane przez firmę Microsoft [Corporation (zobacz](view-your-bill-or-invoice.md) fakturę, a usługa Microsoft 365 została przez Ciebie pobrana spoza Stanów Zjednoczonych, Kanady, Portoryko, Chile i Kolumbii), podatek nie jest naliczany.
+Jeśli rozliczenia są wykonywane przez firmę Microsoft Corporation ([zobacz fakturę](view-your-bill-or-invoice.md) i zarejestrowano się w celu Microsoft 365 poza Stany Zjednoczone, Kanadą, Portoryko, Chile i Kolumbią, podatek na ogół nie jest naliczany.
 
-## <a name="add-your-vat-id"></a>Dodaj swój identyfikator VAT
+## <a name="add-your-vat-id"></a>Dodawanie identyfikatora VAT
 
-1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">z produktami</a> .
-2. Na **karcie Produkty** wybierz subskrypcję, którą chcesz zaktualizować.
+1. W centrum administracyjnym przejdź do strony **Rozliczenia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Twoje produkty</a>.
+2. Na karcie **Produkty** wybierz subskrypcję, którą chcesz zaktualizować.
 3. Na stronie szczegółów subskrypcji w sekcji **Adres korzystania z usługi** wybierz pozycję **Edytuj adres korzystania z usługi**.
-4. W **okienku Edytuj adres korzystania** z usługi w polu Numer VAT wprowadź swój identyfikator **VAT** wraz z prefiksem i bez spacji.
+4. W okienku **Edytuj adres użycia usługi** w polu **Numer VAT** wprowadź identyfikator VAT, w tym prefiks i bez spacji.
 5. Wybierz **Zapisz**.
 
 ## <a name="how-taxes-are-calculated"></a>Sposób obliczania podatków
@@ -150,23 +150,23 @@ Podatki od sprzedaży są obliczane na podstawie ceny jednostkowej, a następnie
 
 Przykład:
 
->*(cena jednostkowa X stawka podatku) X quantity = łączna kwota podatku od sprzedaży*
+>*(cena jednostkowa X stawka podatkowa) X ilość = całkowity podatek od sprzedaży*
 
-— lub —
+-or-
 
->(1,29 zł x 0,095 zł) X 100 = 12,25 zł
+>(1,29 USD X 0,095 USD) X 100 = $12.25
 
-## <a name="apply-for-tax-exempt-status"></a>Stosowanie statusu zwolnienia z podatku
+## <a name="apply-for-tax-exempt-status"></a>Ubiegaj się o status zwolnionego z podatku
 
-Jeśli kwalifikujesz się do zwolnienia z podatku w Twoim rynku, zacznij [wnioskować](../../admin/get-help-support.md) o usługę w celu ustalenia statusu zwolnienia z podatku Twojej organizacji.
+Jeśli kwalifikujesz się do statusu zwolnionego z podatku na rynku, [rozpocznij żądanie obsługi](../../admin/get-help-support.md) w celu ustalenia stanu zwolnienia z podatku dla organizacji.
 
-|Kraj lub locale | Dokumentacja |
+|Kraj lub ustawienia regionalne | Dokumentacji |
 |------------------|----------------|
-| Kanada | Certyfikat zwolnienia (lub równoważne upoważnienie) |
-| Chile | Stan/RUT IVA (Registro Unico Tributtributtribut) |
-| Kolumbia | Stan/RUT IVA (Registro Unico Tributtributtribut) |
-| Organizacje międzynarodowe, które mają zwolnienia podatkowe | Potwierdzenie certyfikacji/listu od lokalnych urzędów skarbowych |
-| Irlandia | Certyfikat zwolnienia podatkowego 13B/56A|
+| Kanada | Certyfikat wykluczenia (lub równoważna litera autoryzacji) |
+| Chile | Stan IVA/RUT (Registro Unico Tributario) |
+| Kolumbia | Stan IVA/RUT (Registro Unico Tributario) |
+| Organizacje międzynarodowe, które posiadają zwolnienie z podatku | Certyfikacja/potwierdzenie pisma od lokalnych organów podatkowych |
+| Irlandia | 13B/56A Zaświadczenie o zwolnieniu z podatku|
 | Stany Zjednoczone | Certyfikat zwolnienia z podatku od sprzedaży |
 | Portoryko | Certificado de Compras Exentas |
   

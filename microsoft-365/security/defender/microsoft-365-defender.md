@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c8df50c6970ed3404283d1911f884057e7db5747
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: c97338121d38650116540564441f3b37051bf05f
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666883"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731190"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -40,9 +40,6 @@ ms.locfileid: "64666883"
 
 **Dotyczy:**
 - Microsoft 365 Defender
-
-> Chcesz doświadczyć Microsoft 365 Defender? Można [go ocenić w środowisku laboratoryjnym](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) lub [uruchomić projekt pilotażowy w środowisku produkcyjnym](m365d-pilot.md?ocid=cx-evalpilot).
->
 
 Microsoft 365 Defender to ujednolicony pakiet ochrony przed i po naruszeniu zabezpieczeń przedsiębiorstwa, który natywnie koordynuje wykrywanie, zapobieganie, badanie i reagowanie między punktami końcowymi, tożsamościami, pocztą e-mail i aplikacjami w celu zapewnienia zintegrowanej ochrony przed zaawansowanymi atakami.
 
