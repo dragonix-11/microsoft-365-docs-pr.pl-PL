@@ -321,6 +321,8 @@
       items:
         - name: Office 2013
           items:
+            - name: Uaktualnianie z klientów i serwerów pakietu Office 2013
+              href: upgrade-office-2013-clients-servers.md
             - name: Wersja klasyczna pakietu Office 2013
               href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
             - name: Exchange Server 2013

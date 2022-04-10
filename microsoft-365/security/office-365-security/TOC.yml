@@ -218,6 +218,12 @@
           href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
     - name: Zbadaj
       items:
+        - name: Przewodnik po operacjach zabezpieczeń ochrony usługi Office 365 w usłudze Defender
+          items:
+            - name: Przewodnik po operacjach zabezpieczeń ochrony usługi Office 365 w usłudze Defender
+              href: mdo-sec-ops-guide.md
+            - name: Zarządzanie zdarzeniami i alertami z ochrony usługi Office 365 w usłudze Defender w usłudze Microsoft 365 Defender
+              href: mdo-sec-ops-manage-incidents-and-alerts.md
         - name: Widoki Eksploratora zagrożeń
           href: threat-explorer-views.md
         - name: Widoki kampanii
