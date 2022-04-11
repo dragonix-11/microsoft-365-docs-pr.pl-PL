@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie łącznika do archiwizowania cisco Jabber w danych Oracle w programie Microsoft 365
+title: Konfigurowanie łącznika do archiwizowania danych Cisco Jabber na platformie Oracle w Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,80 +11,80 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Dowiedz się, jak skonfigurować łącznik w aplikacji Centrum zgodności platformy Microsoft 365 w celu importowania i archiwizowania danych z cisco Jabber w oracle w celu Microsoft 365.
-ms.openlocfilehash: d58d015e94050bc82b427ba450314b7bb447d4d1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak skonfigurować łącznik i użyć go w Centrum zgodności platformy Microsoft 365, aby zaimportować i zarchiwizować dane z aplikacji Cisco Jabber w programie Oracle, aby Microsoft 365.
+ms.openlocfilehash: cf7665542393436ef71889fe755a6339087eeade
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320651"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761268"
 ---
-# <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Konfigurowanie łącznika do archiwizowania Cisco Jabber na danych Oracle
+# <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Konfigurowanie łącznika do archiwizowania danych Cisco Jabber na platformie Oracle
 
-Za pomocą łącznika Veritas w Centrum zgodności platformy Microsoft 365 można importować i archiwizować dane z platformy Cisco Jabber na platformie Oracle do skrzynek pocztowych użytkowników Microsoft 365 organizacji. Veritas udostępnia [łącznik Cisco Jabber on Oracle](https://www.veritas.com/insights/merge1/jabber), który jest skonfigurowany do regularnego przechwytywania elementów ze źródła danych innej firmy i importowania ich do Microsoft 365. Łącznik konwertuje zawartość, na przykład pliki i operacje na plikach, komentarze i zawartość udostępnioną z Cisco Jabber w systemie Oracle, na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
+Użyj łącznika Veritas w Centrum zgodności platformy Microsoft 365, aby zaimportować i zarchiwizować dane z platformy Cisco Jabber on Oracle do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [Cisco Jabber on Oracle](https://www.veritas.com/insights/merge1/jabber), który jest skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie) i importowania tych elementów do Microsoft 365. Łącznik konwertuje zawartość, taką jak operacje plików i plików, komentarze i zawartość udostępniona z aplikacji Cisco Jabber w programie Oracle, na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 
-Po przechowywaniu danych Cisco Jabber w oracle w skrzynkach pocztowych użytkowników możesz stosować funkcje zgodności usługi Microsoft 365, takie jak zawieszenie w związku z postępowaniem sądowym, zbierania elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w programie Microsoft 365 za pomocą łącznika Cisco Jabber on Oracle może pomóc Twojej organizacji zachować zgodność z zasadami rządowymi i regulami regulacyjną.
+Po przechowywaniu danych aplikacji Cisco Jabber na platformie Oracle w skrzynkach pocztowych użytkowników można zastosować Microsoft 365 funkcje zgodności, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych, zasady przechowywania i etykiety przechowywania. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika Cisco Jabber on Oracle może pomóc twojej organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 
-## <a name="overview-of-archiving-cisco-jabber-on-oracle-data"></a>Omówienie archiwizowania cisco jabber w danych Oracle
+## <a name="overview-of-archiving-cisco-jabber-on-oracle-data"></a>Omówienie archiwizacji aplikacji Cisco Jabber w danych Oracle
 
-Poniższe omówienie przedstawia proces używania łącznika do archiwizowania danych Cisco Jabber w oracle w programie Microsoft 365.
+W poniższym omówieniu wyjaśniono proces używania łącznika do archiwizowania danych Cisco Jabber na platformie Oracle w Microsoft 365.
 
-![Zarchiwizowanie przepływu pracy dla Cisco Jabber w danych Oracle.](../media/CiscoJabberOnOracleConnectorWorkflow.png)
+![Przepływ pracy archiwizacji dla aplikacji Cisco Jabber na danych Oracle.](../media/CiscoJabberOnOracleConnectorWorkflow.png)
 
-1. Twoja organizacja współpracuje z firmą Cisco Jabber w witrynie Oracle w celu skonfigurowania i skonfigurowania cisco Jabber w witrynie Oracle.
+1. Twoja organizacja współpracuje z firmą Cisco Jabber w firmie Oracle w celu skonfigurowania i skonfigurowania witryny Cisco Jabber w firmie Oracle.
 
-2. Co 24 godziny element Cisco Jabber w programie Oracle jest kopiowany do witryny Veritas Merge1. Łącznik konwertuje również wtyczkę Cisco Jabber w elementach Oracle na format wiadomości e-mail.
+2. Raz na 24 godziny elementy Cisco Jabber on Oracle są kopiowane do witryny Veritas Merge1. Łącznik konwertuje również elementy Cisco Jabber w programie Oracle na format wiadomości e-mail.
 
-3. Łącznik Cisco Jabber on Oracle, który tworzysz w Centrum zgodności platformy Microsoft 365, łączy się z witryną Veritas Merge1 każdego dnia i przesyła zawartość typu Jabber do bezpiecznej lokalizacji usługi Azure Storage w chmurze firmy Microsoft.
+3. Łącznik Cisco Jabber on Oracle, który tworzysz w Centrum zgodności platformy Microsoft 365, codziennie łączy się z witryną Veritas Merge1 i przesyła zawartość Jabber do bezpiecznej lokalizacji Storage platformy Azure w chmurze firmy Microsoft.
 
-4. Łącznik zaim importuje przekonwertowane elementy do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości  Email (Poczta e-mail) automatycznego mapowania użytkowników zgodnie z opisem w [kroku 3](#step-3-map-users-and-complete-the-connector-setup). W skrzynkach pocztowych użytkowników jest tworzony podfolder w folderze Skrzynka odbiorcza o nazwie **Cisco Jabber w** programie Oracle, a elementy są importowane do tego folderu. Łącznik robi to przy użyciu wartości właściwości *Email* . Każdy element elementu Jabber zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika elementu.
+4. Łącznik importuje przekonwertowane elementy do skrzynek pocztowych określonych użytkowników przy użyciu wartości właściwości *Poczta e-mail* automatycznego mapowania użytkownika zgodnie z opisem w [kroku 3](#step-3-map-users-and-complete-the-connector-setup). Podfolder w folderze Skrzynka odbiorcza o nazwie **Cisco Jabber w programie Oracle** jest tworzony w skrzynkach pocztowych użytkownika, a elementy są importowane do tego folderu. Łącznik wykonuje to przy użyciu wartości właściwości *Poczta e-mail* . Każdy element Jabber zawiera tę właściwość, która jest wypełniana adresem e-mail każdego uczestnika elementu.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Utwórz konto Merge1 dla łączników Microsoft. W tym celu skontaktuj się z działem [obsługi klienta firmy Veritas](https://www.veritas.com/content/support/en_US). Podczas tworzenia łącznika w kroku 1 należy zalogować się do tego konta.
+- Utwórz konto Merge1 dla łączników firmy Microsoft. W tym celu skontaktuj się z [pomocą techniczną veritas](https://www.veritas.com/content/support/en_US). Musisz zalogować się do tego konta podczas tworzenia łącznika w kroku 1.
 
-- Użytkownik, który utworzy łącznik Cisco Jabber na łączniku Oracle w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na **stronie Łączniki** danych w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w sekcji Uprawnienia w Centrum zabezpieczeń & [zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Administrator w organizacji może również utworzyć niestandardową grupę ról, przypisać rolę administrator łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w sekcji Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Użytkownik, który utworzy łącznik Cisco Jabber on Oracle w kroku 1 (i ukończy go w kroku 3), musi mieć przypisaną rolę administratora łącznika danych. Ta rola jest wymagana do dodawania łączników na stronie **Łączniki danych** w Centrum zgodności platformy Microsoft 365. Ta rola jest domyślnie dodawana do wielu grup ról. Aby uzyskać listę tych grup ról, zobacz sekcję "Role w centrach zabezpieczeń i zgodności" w obszarze [Uprawnienia w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatywnie administrator w organizacji może utworzyć niestandardową grupę ról, przypisać rolę administratora łącznika danych, a następnie dodać odpowiednich użytkowników jako członków. Aby uzyskać instrukcje, zobacz sekcję "Tworzenie niestandardowej grupy ról" w obszarze [Uprawnienia w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Ten łącznik danych usługi Veritas jest w publicznej wersji zapoznawczej GCC w środowisku danych Microsoft 365 chmurze dla instytucji rządowych Stanów Zjednoczonych. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przekazywanie i przetwarzanie danych klienta Organizacji w systemach innych firm, które znajdują się poza infrastrukturą firmy Microsoft 365 i dlatego nie są objęte zobowiązaniami firmy Microsoft 365 w zakresie zgodności z przepisami i ochrony danych. Firma Microsoft nie zapewnia, że używanie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedRAMP.
+- Ten łącznik danych Veritas jest w publicznej wersji zapoznawczej w środowiskach GCC w chmurze Microsoft 365 us Government. Aplikacje i usługi innych firm mogą obejmować przechowywanie, przesyłanie i przetwarzanie danych klientów organizacji w systemach innych firm, które znajdują się poza infrastrukturą Microsoft 365 i w związku z tym nie są objęte zobowiązaniami dotyczącymi zgodności Microsoft 365 i ochrony danych. Firma Microsoft nie przedstawia żadnej reprezentacji, że użycie tego produktu do łączenia się z aplikacjami innych firm oznacza, że te aplikacje innych firm są zgodne z fedrampem.
 
-## <a name="step-1-set-up-the-cisco-jabber-on-oracle-connector"></a>Krok 1. Konfigurowanie łącznika Cisco Jabber na łączniku Oracle
+## <a name="step-1-set-up-the-cisco-jabber-on-oracle-connector"></a>Krok 1. Konfigurowanie łącznika Cisco Jabber on Oracle
 
-Pierwszym krokiem jest uzyskanie dostępu do strony **Łączniki** danych w Centrum zgodności platformy Microsoft 365 i utworzenie łącznika dla danych typu Jabber.
+Pierwszym krokiem jest dostęp do strony **Łączniki danych** w Centrum zgodności platformy Microsoft 365 i utworzenie łącznika dla danych Jabber.
 
-1. Przejdź do łączników <https://compliance.microsoft.com> danych, a **następnie** kliknij pozycję **Łączniki danychCisco** >  Jabber w oracle.
+1. Przejdź do strony<https://compliance.microsoft.com>, a następnie kliknij pozycję **Łączniki** >  **danychCisco Jabber w programie Oracle**.
 
-2. Na stronie **Cisco Jabber on Oracle product description (Opis produktu Firmy Oracle** ) kliknij pozycję **Add connector (Dodaj łącznik**).
+2. Na stronie Opis produktu **Cisco Jabber on Oracle** kliknij pozycję **Dodaj łącznik**.
 
-3. Na stronie **Warunki użytkowania usługi** kliknij pozycję **Zaakceptuj**.
+3. Na stronie **Warunki korzystania z usługi** kliknij pozycję **Akceptuj**.
 
 4. Wprowadź unikatową nazwę identyfikującą łącznik, a następnie kliknij przycisk **Dalej**.
 
-5. Zaloguj się do konta korespondencji seryjnej1, aby skonfigurować łącznik.
+5. Zaloguj się do konta merge1, aby skonfigurować łącznik.
 
-## <a name="step-2-configure-the-cisco-jabber-on-oracle-on-the-veritas-merge1-site"></a>Krok 2. Konfigurowanie przełącznika Cisco Jabber w witrynie Oracle w witrynie Veritas Merge1
+## <a name="step-2-configure-the-cisco-jabber-on-oracle-on-the-veritas-merge1-site"></a>Krok 2. Konfigurowanie aplikacji Cisco Jabber na platformie Oracle w witrynie Veritas Merge1
 
-Drugim krokiem jest skonfigurowanie łącznika Cisco Jabber on Oracle w witrynie Veritas Merge1. Aby uzyskać informacje na temat konfigurowania łącznika Cisco Jabber on Oracle, zobacz Przewodnik użytkownika dotyczący [scalania1 łączników innych firm](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20Oracle%20User%20Guide.pdf).
+Drugim krokiem jest skonfigurowanie łącznika Cisco Jabber on Oracle w witrynie Veritas Merge1. Aby uzyskać informacje o sposobie konfigurowania łącznika Cisco Jabber w programie Oracle, zobacz [Merge1 Third-Party Connectors User Guide (Przewodnik użytkownika dotyczący łączników innych firm).](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20Oracle%20User%20Guide.pdf)
 
-Po kliknięciu **przycisku Zapisz & zakończ** zostanie **wyświetlona** strona Mapowanie użytkowników w kreatorze łączników w Centrum zgodności platformy Microsoft 365 stronie.
+Po kliknięciu **przycisku Zapisz & Zakończ** zostanie wyświetlona strona **Mapowanie użytkownika** w kreatorze łącznika w Centrum zgodności platformy Microsoft 365.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Krok 3. Mapowanie użytkowników i ukończenie konfiguracji łącznika
 
-Aby zamapować użytkowników i ukończyć konfigurację łącznika w Centrum zgodności platformy Microsoft 365, wykonaj następujące czynności:
+Aby zamapować użytkowników i ukończyć konfigurację łącznika w Centrum zgodności platformy Microsoft 365, wykonaj następujące kroki:
 
-1. Na stronie **Mapowanie użytkowników usługi Cisco Jabber na Microsoft 365 Oracle** włącz automatyczne mapowanie użytkowników. Elementy Cisco Jabber on Oracle zawierają właściwość *o nazwie Email*, która zawiera adresy e-mail użytkowników w Twojej organizacji. Jeśli łącznik może skojarzyć ten adres z Microsoft 365, elementy są importowane do skrzynki pocztowej tego użytkownika.
+1. Na stronie **Map Cisco Jabber on Oracle users to Microsoft 365 users (Mapuj użytkowników Aplikacji Cisco Jabber w celu Microsoft 365 użytkowników**) włącz automatyczne mapowanie użytkowników. Elementy aplikacji Cisco Jabber w programie Oracle obejmują właściwość o nazwie *Email* zawierającą adresy e-mail dla użytkowników w organizacji. Jeśli łącznik może skojarzyć ten adres z użytkownikiem Microsoft 365, elementy zostaną zaimportowane do skrzynki pocztowej tego użytkownika.
 
-2. Kliknij **przycisk** Dalej, przejrzyj ustawienia, a następnie przejdź do strony  Łączniki danych, aby wyświetlić postęp procesu importowania nowego łącznika.
+2. Kliknij **przycisk Dalej**, przejrzyj ustawienia, a następnie przejdź do strony **Łączniki danych** , aby zobaczyć postęp procesu importowania nowego łącznika.
 
-## <a name="step-4-monitor-the-cisco-jabber-on-oracle-connector"></a>Krok 4. Monitorowanie wtyczki Cisco Jabber na łączniku Oracle
+## <a name="step-4-monitor-the-cisco-jabber-on-oracle-connector"></a>Krok 4. Monitorowanie łącznika Cisco Jabber on Oracle
 
-Po utworzeniu łącznika Cisco Jabber na łączniku Oracle możesz wyświetlić stan łącznika w Centrum zgodności platformy Microsoft 365.
+Po utworzeniu łącznika Cisco Jabber on Oracle możesz wyświetlić stan łącznika w Centrum zgodności platformy Microsoft 365.
 
-1. Przejdź do łączników <https://compliance.microsoft.com/> **danych w lewym okienku narracji i** kliknij je.
+1. Przejdź do strony <https://compliance.microsoft.com/> i kliknij pozycję **Łączniki danych** w lewym pasku nawigacyjnym.
 
-2. Kliknij **kartę Łączniki** , a następnie wybierz łącznik **Cisco Jabber on Oracle** , aby wyświetlić stronę wysuwaną zawierającą właściwości i informacje o łączniku.
+2. Kliknij kartę **Łączniki,** a następnie wybierz łącznik **Cisco Jabber w programie Oracle** , aby wyświetlić stronę wysuwaną zawierającą właściwości i informacje o łączniku.
 
-3. W **obszarze Stan łącznika ze** źródłem **kliknij link Pobierz** dziennik, aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera dane, które zostały zaimportowane do chmury firmy Microsoft.
+3. W obszarze **Stan łącznika ze źródłem** kliknij link **Pobierz dziennik** , aby otworzyć (lub zapisać) dziennik stanu łącznika. Ten dziennik zawiera dane zaimportowane do chmury firmy Microsoft.
 
 ## <a name="known-issues"></a>Znane problemy
 
-- Obecnie importowanie załączników ani elementów większych niż 10 MB nie jest obsługuje. Obsługa większych elementów będzie dostępna w późniejszym terminie.
+- Obecnie nie obsługujemy importowania załączników ani elementów o rozmiarze większym niż 10 MB. Obsługa większych elementów będzie dostępna w późniejszym terminie.

@@ -16,117 +16,117 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Tworzenie zasad przechowywania z automatycznymi etykietami, aby można było automatycznie stosować etykiety w celu zachowania tego, co jest potrzebne, i usunięcia tego, co nie jest potrzebne
-ms.openlocfilehash: 2d141ef349c456b9e8397ea1c96a4e450eaa73fc
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+description: Tworzenie zasad przechowywania automatycznego etykietowania w celu automatycznego stosowania etykiet w celu zachowania potrzebnych elementów i usunięcia tego, czego nie potrzebujesz
+ms.openlocfilehash: 8c3df81eabb0d67993825d95e390d3e94c7a9bd7
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500443"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64762018"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Ten scenariusz nie jest obsługiwany w przypadku rekordów [prawnych](records-management.md#records) ani etykiet domyślnych dla struktury porządkowej, takiej jak zestaw dokumentów lub biblioteka w programie SharePoint, ani folderu w Exchange. Te scenariusze wymagają [opublikowania zasad etykiet przechowywania](create-apply-retention-labels.md).
+> Ten scenariusz nie jest obsługiwany w przypadku [rekordów regulacyjnych](records-management.md#records) ani etykiet domyślnych dla struktury organizacyjnej, takiej jak zestaw dokumentów lub biblioteka w SharePoint lub folder w Exchange. Te scenariusze wymagają [opublikowanych zasad etykiet przechowywania](create-apply-retention-labels.md).
 
-Jedną z najbardziej zaawansowanych funkcji etykiet [przechowywania](retention.md) jest możliwość ich automatycznego stosowania do zawartości, która jest taka, jak w określonych warunkach. W takim przypadku osoby w Twojej organizacji nie muszą stosować etykiet przechowywania. Microsoft 365 pracę za nich.
+Jedną z najbardziej zaawansowanych funkcji [etykiet przechowywania](retention.md) jest możliwość automatycznego stosowania ich do zawartości zgodnej z określonymi warunkami. W takim przypadku osoby w organizacji nie muszą stosować etykiet przechowywania. Microsoft 365 wykonuje dla nich pracę.
   
-Automatyczne stosowanie etykiet przechowywania jest bardzo zaawansowane, ponieważ:
+Automatyczne stosowanie etykiet przechowywania jest zaawansowane, ponieważ:
   
-- Nie musisz przeszkolić użytkowników nad wszystkimi klasyfikacjami.
+- Nie musisz szkolić użytkowników we wszystkich klasyfikacjach.
     
-- Nie musisz polegać na użytkownikach, aby prawidłowo klasyfikować całą zawartość.
+- Nie musisz polegać na użytkownikach, aby poprawnie klasyfikować całą zawartość.
     
-- Użytkownicy nie muszą już znać zasad zarządzania danymi — mogą skoncentrować się na pracy.
+- Użytkownicy nie muszą już wiedzieć o zasadach ładu danych — mogą skupić się na swojej pracy.
     
-Etykiety przechowywania można stosować do zawartości automatycznie, jeśli do zawartości nie zastosowano jeszcze etykiety przechowywania i zawiera ona informacje poufne, słowa kluczowe lub właściwości, które można wyszukiwać, albo dopasowanie do przeszkolnych [klasyfikatorów](classifier-get-started-with.md). Teraz w wersji Preview możesz również automatycznie zastosować etykietę przechowywania do załączników w chmurze, które są przechowywane SharePoint lub OneDrive.
+Etykiety przechowywania można stosować do zawartości automatycznie, gdy ta zawartość nie ma jeszcze zastosowanej etykiety przechowywania i zawiera informacje poufne, słowa kluczowe lub właściwości z możliwością wyszukiwania albo dopasowanie do [klasyfikatorów klasyfikujących.](classifier-get-started-with.md) Teraz w wersji zapoznawczej możesz również automatycznie zastosować etykietę przechowywania do załączników w chmurze przechowywanych w SharePoint lub OneDrive.
 
 > [!TIP]
-> Właściwości, które można wyszukiwać, [Teams nagrań spotkań](#microsoft-teams-meeting-recordings) i elementów[, do których zastosowano etykietę wrażliwości](#identify-files-and-emails-that-have-a-sensitivity-label).
+> Użyj właściwości z możliwością wyszukiwania, aby zidentyfikować [Teams nagrań spotkań](#microsoft-teams-meeting-recordings) i [elementów, które mają zastosowaną etykietę poufności](#identify-files-and-emails-that-have-a-sensitivity-label).
 
-Procesy automatycznego stosowania etykiety przechowywania na podstawie tych warunków:
+Procesy automatycznego stosowania etykiety przechowywania na podstawie następujących warunków:
 
-![Diagram ról i zadań związanych z automatycznym stosowaniem etykiet.](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![Diagram ról i zadań dla etykiet stosowanych automatycznie.](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
-Skorzystaj z poniższych instrukcji, aby wykonać dwa kroki administracyjne.
+Wykonaj poniższe instrukcje dla dwóch kroków administratora.
 
 > [!NOTE]
-> W przypadku automatycznych zasad etykiet po stronie usługi z warunkami są stosowane automatycznie etykiety przechowywania do elementów. Etykietę przechowywania można również automatycznie zastosować przy użyciu zasad etykiety w następujących czynnościach: 
+> Zasady automatyczne używają etykietowania po stronie usługi z warunkami, aby automatycznie stosować etykiety przechowywania do elementów. Możesz również automatycznie zastosować etykietę przechowywania z zasadami etykiety, wykonując następujące czynności: 
 >
-> - Stosowanie etykiety przechowywania do modelu opisowego dokumentu w programie SharePoint Syntex
+> - Stosowanie etykiety przechowywania do modelu zrozumienia dokumentu w SharePoint Syntex
 > - Stosowanie domyślnej etykiety przechowywania dla SharePoint i Outlook
-> - Stosowanie etykiety przechowywania do wiadomości e-mail przy użyciu Outlook przechowywania
+> - Stosowanie etykiety przechowywania do poczty e-mail przy użyciu reguł Outlook
 >
-> Aby zobaczyć te scenariusze, [zobacz Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md).
+> W przypadku tych scenariuszy zobacz [Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md).
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Administrator globalny w Twojej organizacji ma pełne uprawnienia do tworzenia i edytowania etykiet przechowywania oraz ich zasad. Jeśli nie logujesz się jako administrator globalny, zobacz informacje o uprawnieniach do zarządzania [](get-started-with-records-management.md#permissions) rekordami lub [informacjami w zależności](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels) od używasz rozwiązania.
+Administrator globalny organizacji ma pełne uprawnienia do tworzenia i edytowania etykiet przechowywania oraz ich zasad. Jeśli nie logujesz się jako administrator globalny, zapoznaj się z informacjami o uprawnieniach do [zarządzania rekordami](get-started-with-records-management.md#permissions) lub [zarządzania informacjami](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), w zależności od używanego rozwiązania.
 
-Upewnij się, [że utworzono etykiety przechowywania,](file-plan-manager.md#create-retention-labels) które chcesz zastosować do elementów.
+Upewnij się, że [utworzono etykiety przechowywania](file-plan-manager.md#create-retention-labels) , które chcesz zastosować do elementów.
 
-## <a name="how-to-create-an-auto-apply-retention-label-policy"></a>Jak utworzyć zasady etykiet przechowywania z automatycznym zastosowaniem
+## <a name="how-to-create-an-auto-apply-retention-label-policy"></a>Jak utworzyć zasady automatycznego stosowania etykiet przechowywania
 
-Przed utworzeniem zasad etykiet przechowywania zdecyduj, czy będą one **adaptacyjne** , czy **statyczne**. Aby uzyskać więcej informacji, zobacz [Adaptacyjne lub statyczne zakresy zasad przechowywania](retention.md#adaptive-or-static-policy-scopes-for-retention). Jeśli zdecydujesz się na korzystanie z adaptacyjnych zasad, musisz utworzyć co najmniej jeden adaptacyjny zakres przed utworzeniem zasad etykiet przechowywania, a następnie wybrać je podczas tworzenia procesu tworzenia zasad etykiet przechowywania. Aby uzyskać instrukcje, [zobacz Informacje o konfiguracji dotyczące adaptacyjnych zakresów](retention-settings.md#configuration-information-for-adaptive-scopes).
+Przed utworzeniem zasad etykiet przechowywania zdecyduj, czy będą **to zasady adaptacyjne** , czy **statyczne**. Aby uzyskać więcej informacji, zobacz [Adaptacyjne lub statyczne zakresy zasad przechowywania](retention.md#adaptive-or-static-policy-scopes-for-retention). Jeśli zdecydujesz się na korzystanie z zasad adaptacyjnych, musisz utworzyć co najmniej jeden zakres adaptacyjny przed utworzeniem zasad etykiet przechowywania, a następnie wybrać je podczas procesu tworzenia zasad etykiet przechowywania. Aby uzyskać instrukcje, zobacz [Informacje o konfiguracji dla zakresów adaptacyjnych](retention-settings.md#configuration-information-for-adaptive-scopes).
 
-Podczas tworzenia zasad automatycznego stosowania należy wybrać etykietę przechowywania, która zostanie automatycznie zastosuje do zawartości, na podstawie warunków określonych przez użytkownika.
+Podczas tworzenia zasad automatycznego stosowania należy wybrać etykietę przechowywania, która ma być automatycznie stosowana do zawartości, na podstawie określonych warunków.
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com/) do jednej z następujących lokalizacji:
+1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
     
     - Jeśli używasz zarządzania rekordami:
-        - **Rozwiązania** >  **Karta Zasady** > > **zarządzania rekordami** > **i Automatyczne stosowanie etykiety**
+        - **Rozwiązania** >  **Karta Zasady zarządzania rekordami** > > **Etykiety** > **automatyczne stosowanie etykiety**
     
-    - W przypadku korzystania z zarządzania informacjami:
-        - **Rozwiązania** >  **Zarządzanie informacjami** >  **Karta Zasady** etykiet > **automatyczne stosowanie etykiety**
+    - Jeśli używasz ładu informacyjnego:
+        - **Rozwiązania** >  **Zarządzanie informacjami** >  **Karta Zasady etykiet** > **automatyczne stosowanie etykiety**
     
-    Nie widzisz swojego rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**.
+    Nie widzisz rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**.
 
-2. Wprowadź nazwę i opis zasad auto etykiet, a następnie wybierz pozycję **Dalej**.
+2. Wprowadź nazwę i opis tych zasad automatycznego etykietowania, a następnie wybierz przycisk **Dalej**.
 
-3. W **przypadku opcji Wybierz typ zawartości, do której chcesz zastosować tę etykietę**, wybierz jeden z dostępnych warunków. Aby uzyskać więcej informacji na temat dostępnych opcji, zobacz sekcję Konfigurowanie warunków automatycznego stosowania etykiet [przechowywania](#configuring-conditions-for-auto-apply-retention-labels) na tej stronie.
+3. W obszarze **Wybierz typ zawartości, do których chcesz zastosować tę etykietę**, wybierz jeden z dostępnych warunków. Aby uzyskać więcej informacji o wyborach, zobacz sekcję [Konfigurowanie warunków automatycznego stosowania etykiet przechowywania](#configuring-conditions-for-auto-apply-retention-labels) na tej stronie.
 
-4. W przypadku **strony Wybierz typ zasad przechowywania** do utworzenia wybierz pozycję **Adaptacyjny** lub Statyczny **, w** zależności od wyboru dokonanego w [instrukcjach Przed rozpoczęciem](#before-you-begin) . Jeśli nie masz jeszcze utworzonych zakresów adaptacyjnych, możesz wybrać pozycję  Adaptacyjny, ale ponieważ nie będzie żadnych adaptacyjnych zakresów do wyboru, nie możesz zakończyć działania kreatora za pomocą tej opcji.
+4. Na stronie **Wybierz typ zasad przechowywania do utworzenia** wybierz pozycję **Adaptacyjne** lub **Statyczne**, w zależności od wyboru dokonanego z instrukcji [Przed rozpoczęciem](#before-you-begin) . Jeśli nie utworzono jeszcze zakresów adaptacyjnych, możesz wybrać opcję **Adaptive,ale** ponieważ nie będzie żadnych zakresów adaptacyjnych do wybrania, nie będzie można ukończyć pracy kreatora z tą opcją.
 
 5. W zależności od wybranego zakresu:
     
-    - Jeśli wybrano **adaptacyjny**: Na  stronie Wybieranie zakresów i lokalizacji adaptacyjnych zasad wybierz pozycję  Dodaj zakresy i wybierz co najmniej jeden z utworzonych adaptacyjnych zakresów. Następnie wybierz jedną lub więcej lokalizacji. Lokalizacje, które można wybrać, zależą od [dodanych typów](retention-settings.md#configuration-information-for-adaptive-scopes) zakresów. Jeśli na przykład dodano tylko typ zakresu **użytkownika, będzie** można wybrać adres e-mail Exchange ale  nie SharePoint **witryn.** 
+    - Jeśli wybrano pozycję **Adaptacyjne**: na stronie **Wybieranie zakresów i lokalizacji zasad adaptacyjnych** wybierz pozycję **Dodaj zakresy** i wybierz co najmniej jeden utworzony zakres adaptacyjny. Następnie wybierz co najmniej jedną lokalizację. Lokalizacje, które można wybrać, zależą od [dodanych typów zakresów](retention-settings.md#configuration-information-for-adaptive-scopes) . Jeśli na przykład dodano tylko typ zakresu **Użytkownika**, będzie można wybrać **Exchange wiadomości e-mail**, ale nie **SharePoint witryn**. 
     
-    - Jeśli wybrano **pozycję Statyczny**: **Na stronie** Wybieranie lokalizacji włącz lub wyłącz dowolną z tych lokalizacji. Dla każdej lokalizacji możesz pozostawić ją domyślną, aby zastosować zasady do całej [lokalizacji, lub](retention-settings.md#a-policy-that-applies-to-entire-locations) określić [uwzględniania i wykluczania](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
+    - Jeśli **wybrano pozycję Statyczne**: na stronie **Wybieranie lokalizacji** włącz lub wyłącz dowolną lokalizację. Dla każdej lokalizacji można pozostawić ją domyślną, aby [zastosować zasady do całej lokalizacji](retention-settings.md#a-policy-that-applies-to-entire-locations) lub [określić opcje dołączania i wykluczania](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
     
-    Aby uzyskać informacje o dostępnych lokalizacjach, zobacz [Lokalizacje](retention-settings.md#locations).
+    Aby uzyskać informacje o wyborze lokalizacji, zobacz [Lokalizacje](retention-settings.md#locations).
 
-6. Postępuj zgodnie z monitami kreatora, aby wybrać etykietę przechowywania, a następnie przejrzyj i prześlij opcje konfiguracji.
+6. Postępuj zgodnie z monitami w kreatorze, aby wybrać etykietę przechowywania, a następnie przejrzyj i prześlij opcje konfiguracji.
 
-Aby edytować istniejące zasady etykiet przechowywania (typ zasad to **Automatyczne** stosowanie), zaznacz je, a następnie wybierz opcję Edytuj, aby  uruchomić **konfigurację Edytuj zasady** przechowywania.
+Aby edytować istniejące zasady etykiet przechowywania (typ zasad to **Automatyczne stosowanie**), wybierz je, a następnie wybierz opcję **Edytuj** , aby uruchomić konfigurację **zasad przechowywania edycji** .
 
-Po oznaczeniu zawartości etykietą za pomocą zasad automatycznego stosowania etykiety nie można automatycznie usuwać ani zmieniać zastosowanej etykiety przez zmianę zawartości, zasad, nowych zasad automatycznego stosowania etykiet. Aby uzyskać więcej informacji, zobacz [Tylko jedna etykieta przechowywania na raz](retention.md#only-one-retention-label-at-a-time).
+Gdy zawartość zostanie oznaczona etykietą przy użyciu zasad automatycznego stosowania etykiety, nie można automatycznie usunąć ani zmienić zastosowanej etykiety, zmieniając zawartość lub zasady albo przez nowe zasady automatycznego stosowania etykiet. Aby uzyskać więcej informacji, zobacz [Tylko jedna etykieta przechowywania jednocześnie](retention.md#only-one-retention-label-at-a-time).
 
 > [!NOTE]
-> Zasady automatycznego stosowania etykiet przechowywania nigdy nie zastąpią istniejącej etykiety przechowywania, która jest stosowana do zawartości. Jeśli chcesz zmienić etykietę zawartości przy użyciu skonfigurowanych warunków, musisz ręcznie usunąć bieżącą etykietę przechowywania z istniejącej zawartości.
+> Zasady automatycznego stosowania etykiet przechowywania nigdy nie zastąpią istniejącej etykiety przechowywania stosowanej do zawartości. Jeśli chcesz ponownie oznaczyć zawartość przy użyciu skonfigurowanych warunków, musisz ręcznie usunąć bieżącą etykietę przechowywania z istniejącej zawartości.
 
-### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Konfigurowanie warunków automatycznego stosowania etykiet przechowywania
+### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Konfigurowanie warunków dla etykiet przechowywania stosowanych automatycznie
 
-Etykiety przechowywania można stosować do zawartości automatycznie, gdy zawiera ona:
+Etykiety przechowywania można zastosować do zawartości automatycznie, gdy zawartość zawiera:
 
 - [Określone typy informacji poufnych](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 
-- [Określone słowa kluczowe lub właściwości, które można wyszukiwać, zgodne z tworzyć zapytania](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [Określone słowa kluczowe lub właściwości z możliwością wyszukiwania, które pasują do utworzonego zapytania](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [Dopasowanie dla klasyfikatorów przeszkolnych](#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [Dopasowanie klasyfikatorów z możliwością trenowania](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Etykiety przechowywania można też automatycznie stosować do nowo udostępnionych załączników [w chmurze](#auto-apply-labels-to-cloud-attachments).
+Możesz też automatycznie stosować etykiety przechowywania do nowo [udostępnionych załączników w chmurze](#auto-apply-labels-to-cloud-attachments).
 
-Podczas konfigurowania etykiet przechowywania w celu automatycznego stosowania na podstawie informacji poufnych, słów kluczowych lub właściwości, które można wyszukiwać, lub przeszkolnych klasyfikatorów, skorzystaj z poniższej tabeli, aby określić, kiedy etykiety przechowywania mogą być stosowane automatycznie.
+Podczas konfigurowania etykiet przechowywania do automatycznego stosowania na podstawie poufnych informacji, słów kluczowych lub właściwości możliwych do wyszukiwania lub klasyfikatorów z możliwością trenowania użyj poniższej tabeli, aby określić, kiedy etykiety przechowywania mogą być stosowane automatycznie.
 
 Exchange:
 
-|Warunek|Elementy przesyłane (wysłane lub odebrane) |Istniejące elementy (dane w spoczynku)|
+|Warunek|Elementy przesyłane (wysyłane lub odbierane) |Istniejące elementy (dane magazynowane)|
 |:-----|:-----|:-----|
 |Typy informacji poufnych — wbudowane| Tak | Nie |
 |Typy informacji poufnych — niestandardowe| Tak | Nie |
-|Określone słowa kluczowe lub właściwości, które można wyszukiwać| Tak |Tak |
+|Określone słowa kluczowe lub właściwości z możliwością wyszukiwania| Tak |Tak |
 |Klasyfikatory z możliwością szkolenia| Tak | Tak (tylko ostatnie sześć miesięcy) |
 
 SharePoint i OneDrive:
@@ -135,71 +135,71 @@ SharePoint i OneDrive:
 |:-----|:-----|:-----|
 |Typy informacji poufnych — wbudowane| Tak | Tak |
 |Typy informacji poufnych — niestandardowe| Tak | Nie |
-|Określone słowa kluczowe lub właściwości, które można wyszukiwać| Tak |Tak |
+|Określone słowa kluczowe lub właściwości z możliwością wyszukiwania| Tak |Tak |
 |Klasyfikatory z możliwością szkolenia| Tak | Tak (tylko ostatnie sześć miesięcy) |
 
-Ponadto w tym SharePoint nie są obsługiwane elementy, które są w wersji roboczej lub które nigdy nie zostały opublikowane.
+Ponadto SharePoint elementów, które są w wersji roboczej lub które nigdy nie zostały opublikowane, nie są obsługiwane w tym scenariuszu.
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Automatyczne stosowanie etykiet do zawartości z określonymi typami informacji poufnych
 
 > [!IMPORTANT]
-> W przypadku wiadomości e-mail, które są automatycznie stosowane przez identyfikację informacji poufnych, są automatycznie uwzględniane wszystkie skrzynki pocztowe, w tym skrzynki pocztowe z Microsoft 365 grup.
+> W przypadku wiadomości e-mail automatycznie stosowanych przez identyfikowanie informacji poufnych wszystkie skrzynki pocztowe są automatycznie dołączane, w tym skrzynki pocztowe z Microsoft 365 grup.
 > 
-> Mimo że skrzynki pocztowe grupy zazwyczaj były uwzględniane przez wybranie lokalizacji grupy **Grupy Microsoft 365, Grupy Microsoft 365** w przypadku tej konkretnej konfiguracji zasad lokalizacja grup obejmuje tylko witryny SharePoint połączone z grupą Microsoft 365 grupy.
+> Mimo że skrzynki pocztowe grup zazwyczaj są uwzględniane przez wybranie lokalizacji **Grupy Microsoft 365**, dla tej konkretnej konfiguracji zasad lokalizacja grup obejmuje tylko SharePoint lokacji połączonych z grupą Microsoft 365.
 
-Po utworzeniu zasad automatycznego stosowania etykiet przechowywania dla informacji poufnych jest wyświetlona ta sama lista szablonów zasad co w przypadku tworzenia zasad ochrony przed utratą danych (DLP). Każdy szablon jest wstępnie skonfigurowany do wyszukiwania konkretnych typów informacji poufnych. W poniższym przykładzie typy informacji poufnych znajdują się w  kategorii Prywatność oraz w szablonie danych umożliwiających identyfikację użytkownika **(PII**):
+Podczas tworzenia zasad automatycznego stosowania etykiet przechowywania dla informacji poufnych jest wyświetlana ta sama lista szablonów zasad, co w przypadku tworzenia zasad ochrony przed utratą danych (DLP). Każdy szablon jest wstępnie skonfigurowany do wyszukiwania określonych typów informacji poufnych. W poniższym przykładzie typy informacji poufnych pochodzą z kategorii **Prywatność** i szablonu **danych osobowych (PII):**
 
 ![Szablony zasad z typami informacji poufnych.](../media/sensitive-info-configuration.png)
 
-Aby dowiedzieć się więcej o typach informacji poufnych, zobacz [Informacje o typach informacji poufnych](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Obecnie w [tym scenariuszu nie są](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) obsługiwane dokładne typy informacji poufnych i linie papilarne dokumentów.[](document-fingerprinting.md)
+Aby dowiedzieć się więcej na temat typów informacji o poufności, zobacz [Dowiedz się więcej o typach informacji poufnych](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Obecnie [dokładne typy informacji poufnych na podstawie dopasowania danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) i [odciski palców dokumentów](document-fingerprinting.md) nie są obsługiwane w tym scenariuszu.
 
-Po wybraniu szablonu zasad można dodawać lub usuwać wszelkie typy informacji poufnych, a także zmieniać poziom ufności i liczbę wystąpień. W poprzednim przykładowym zrzucie ekranu te opcje zostały zmienione, dzięki czemu etykieta przechowywania będzie stosowana automatycznie tylko wtedy, gdy:
+Po wybraniu szablonu zasad możesz dodać lub usunąć wszelkie typy informacji poufnych, a także zmienić poziom ufności i liczbę wystąpień. Na poprzednim przykładowym zrzucie ekranu te opcje zostały zmienione tak, aby etykieta przechowywania była automatycznie stosowana tylko wtedy, gdy:
   
-- Wykrywany typ informacji poufnych zapewnia dokładność dopasowania (czyli poziom  ufności[) co](sensitive-information-type-learn-about.md#more-on-confidence-levels) najmniej średniej ufności dla dwóch typów informacji poufnych oraz wysoką pewność dla jednego  z nich. Wiele typów informacji poufnych jest definiowanych za pomocą wielu wzorców, w przypadku których wzorzec o większej dokładności dopasowania wymaga więcej dowodów (na przykład słów kluczowych, dat lub adresów), a wzorzec o mniejszej dokładności dopasowania wymaga mniej dowodu. Im niższy poziom ufności, tym łatwiej zawartości odpowiada warunek, ale wraz z możliwością większej liczby wyników fałszywie dodatnich.
+- Typ wykrytych poufnych informacji ma dokładność dopasowania (lub [poziom ufności](sensitive-information-type-learn-about.md#more-on-confidence-levels)) co najmniej **Średni poziom ufności** dla dwóch typów informacji poufnych i **wysoką pewność** dla jednego. Wiele poufnych typów informacji jest definiowanych przy użyciu wielu wzorców, gdzie wzorzec o wyższej dokładności dopasowania wymaga znalezienia większej ilości dowodów (takich jak słowa kluczowe, daty lub adresy), podczas gdy wzorzec o niższej dokładności dopasowania wymaga mniejszej liczby dowodów. Im niższy poziom ufności, tym łatwiej jest dopasować zawartość do warunku, ale z możliwością zwiększenia liczby wyników fałszywie dodatnich.
 
-- Zawartość zawiera od 1 do 9 wystąpień dowolnego z tych trzech typów informacji poufnych. Wartość domyślna **to** **Dowolna**.
+- Zawartość zawiera od 1 do 9 wystąpień dowolnego z tych trzech poufnych typów informacji. Wartość domyślna wartości **to** **Dowolna**.
 
-Aby uzyskać więcej informacji na temat tych opcji, zobacz poniższe wskazówki z dokumentacji DLP Dostosowywanie reguł tak, aby były łatwiejsze [lub trudniejsze do dopasowania](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+Aby uzyskać więcej informacji na temat tych opcji, zapoznaj się z poniższymi wskazówkami z dokumentacji DLP [Dostrajanie reguł, aby ułatwić lub utrudnić ich dopasowanie](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 > [!IMPORTANT]
-> Typy informacji poufnych mają dwa różne sposoby definiowania parametrów maksymalnej liczby unikatowych wystąpień. Aby dowiedzieć się więcej, zobacz [Obsługiwane wartości liczby wystąpień dla usługi SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Typy informacji poufnych mają dwa różne sposoby definiowania maksymalnej liczby unikatowych parametrów liczby wystąpień. Aby dowiedzieć się więcej, zobacz [Liczba obsługiwanych wartości wystąpień dla usługi SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
-Aby rozważyć automatyczne stosowanie etykiet przechowywania przy użyciu typów informacji poufnych:
+Aby wziąć pod uwagę użycie typów informacji poufnych do automatycznego stosowania etykiet przechowywania:
 
-- W przypadku korzystania z niestandardowych typów informacji poufnych nie można automatycznie oznaczać istniejących elementów w polach SharePoint i OneDrive.
+- Jeśli używasz niestandardowych typów informacji poufnych, nie mogą one automatycznie oznaczać istniejących elementów w SharePoint i OneDrive.
 
-- W przypadku wiadomości e-mail nie możesz wybrać konkretnych adresatów, których chcesz uwzględnić lub wykluczyć; obsługiwane jest **tylko ustawienie** Wszyscy adresaci i tylko w przypadku tej konfiguracji obejmuje skrzynki pocztowe z Microsoft 365 grup. 
+- W przypadku wiadomości e-mail nie można wybrać określonych adresatów do uwzględnienia lub wykluczenia; Obsługiwane jest tylko ustawienie **Wszyscy adresaci** i tylko dla tej konfiguracji obejmuje skrzynki pocztowe z grup Microsoft 365. 
 
-#### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Automatyczne stosowanie etykiet do zawartości ze słowami kluczowymi lub właściwościami, które można wyszukiwać
+#### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Automatyczne stosowanie etykiet do zawartości za pomocą słów kluczowych lub właściwości możliwych do wyszukiwania
 
-Etykiety można automatycznie stosować do zawartości za pomocą zapytania zawierającego określone wyrazy, frazy lub wartości właściwości, które można wyszukiwać. Zapytanie można uściślić za pomocą operatorów wyszukiwania, takich jak ORAZ, LUB i NIE.
+Etykiety można automatycznie stosować do zawartości przy użyciu zapytania zawierającego określone słowa, frazy lub wartości właściwości, które można przeszukiwać. Zapytanie można uściślić przy użyciu operatorów wyszukiwania, takich jak AND, OR i NOT.
 
 ![Edytor zapytań.](../media/new-retention-query-editor.png)
 
-Aby uzyskać więcej informacji na temat składni zapytania w języku słowa kluczowego (KQL), zobacz Informacje o składni języka KQL [słów kluczowych](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+Aby uzyskać więcej informacji na temat składni zapytań używających języka zapytań słów kluczowych (KQL), zobacz [Dokumentacja składni języka zapytań słów kluczowych (KQL).](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-Zasady oparte na zapytaniach stosowane automatycznie używają tego samego indeksu wyszukiwania, co wyszukiwanie zawartości zbierania elektronicznych materiałów dowodowych w celu identyfikowania zawartości. Aby uzyskać więcej informacji na temat właściwości, których można użyć, zobacz Zapytania słów kluczowych i [warunki wyszukiwania dotyczące wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
+Zasady automatycznego stosowania oparte na zapytaniach używają tego samego indeksu wyszukiwania co wyszukiwanie zawartości zbierania elektronicznych materiałów dowodowych w celu identyfikowania zawartości. Aby uzyskać więcej informacji na temat właściwości, których można użyć, zobacz [Zapytania dotyczące słów kluczowych i warunki wyszukiwania dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md).
 
-W przypadku używania słów kluczowych lub właściwości uwzględnianych w wyszukiwaniu w celu automatycznego stosowania etykiet przechowywania należy uwzględnić kilka elementów:
+Niektóre kwestie, które należy wziąć pod uwagę podczas używania słów kluczowych lub właściwości z możliwością wyszukiwania do automatycznego stosowania etykiet przechowywania:
 
-- Na SharePoint właściwości przeszukane i właściwości niestandardowe nie są obsługiwane w tych zapytaniach KQL i dla dokumentów należy używać tylko wstępnie zdefiniowanych właściwości zarządzanych. Za pomocą mapowań na poziomie dzierżawy można jednak używać wstępnie zdefiniowanych właściwości zarządzanych, które są domyślnie włączone jako obiekty uściślające (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09 i RefinableDouble00-09). Aby uzyskać więcej informacji, zobacz [Omówienie właściwości przeszukanych](/SharePoint/technical-reference/crawled-and-managed-properties-overview) i zarządzanych w programie SharePoint Server, a aby uzyskać instrukcje, zobacz Tworzenie [nowej właściwości zarządzanej](/sharepoint/manage-search-schema#create-a-new-managed-property).
+- W przypadku SharePoint właściwości przeszukane i właściwości niestandardowe nie są obsługiwane dla tych zapytań KQL i należy używać tylko wstępnie zdefiniowanych właściwości zarządzanych dla dokumentów. Można jednak używać mapowań na poziomie dzierżawy ze wstępnie zdefiniowanymi właściwościami zarządzanymi, które są domyślnie włączone jako elementy uściślające (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09 i RefinableDouble00-09). Aby uzyskać więcej informacji, zobacz [Omówienie właściwości przeszukanych i zarządzanych na serwerze SharePoint,](/SharePoint/technical-reference/crawled-and-managed-properties-overview) a aby uzyskać instrukcje, zobacz [Tworzenie nowej właściwości zarządzanej](/sharepoint/manage-search-schema#create-a-new-managed-property).
 
-- Jeśli zamapujesz właściwość niestandardową na jedną z właściwości uściślijących, odczekaj 24 godziny przed użyciem jej w zapytaniu KQL do przechowywania etykiety przechowywania.
+- Jeśli mapujesz właściwość niestandardową na jedną z właściwości elementu uściślającego, poczekaj 24 godziny, zanim użyjesz jej w zapytaniu KQL dla etykiety przechowywania.
 
-- Mimo SharePoint nazw właściwości zarządzanych za pomocą aliasów nie należy ich używać KQL etykietach. Zawsze określ rzeczywistą nazwę właściwości zarządzanej, na przykład "RefinableString01".
+- Mimo że SharePoint właściwości zarządzane można zmienić przy użyciu aliasów, nie używaj ich do KQL zapytań w etykietach. Zawsze określ rzeczywistą nazwę właściwości zarządzanej, na przykład "RefinableString01".
 
-- Aby wyszukać wartości zawierające spacje lub znaki specjalne, należy użyć znaków podwójnego cudzysłowu (`" "`) w celu wyszukania frazy, `subject:"Financial Statements"`na przykład .
+- Aby wyszukać wartości zawierające spacje lub znaki specjalne, użyj podwójnego cudzysłowu (`" "`), aby zawierać frazę, na przykład `subject:"Financial Statements"`.
 
-- Użyj właściwości *DocumentLink* zamiast *Path,* aby dopasować element na podstawie jego adresu URL. 
+- Użyj właściwości *DocumentLink* zamiast *ścieżki* , aby dopasować element na podstawie jego adresu URL. 
 
-- Symbole wieloznaczne w sufiksie ( `*cat`takie jak ) lub symbole wieloznaczne z podciągami ( `*cat*`na przykład ) nie są obsługiwane. Obsługiwane są jednak symbole wieloznaczne w prefiksie ( `cat*`na przykład ).
+- Wyszukiwania symboli wieloznaczne sufiksu (takie jak `*cat`) lub podciągowe wyszukiwania z symbolami wieloznaczne (np `*cat*`. ) nie są obsługiwane. Obsługiwane są jednak wyszukiwania symboli wieloznacznych prefiksu (np `cat*`. ) .
 
-- Należy pamiętać, że elementy częściowo indeksowane mogą być odpowiedzialne za to, że nie należy oznaczać oczekiwanych elementów etykietami lub oznaczać elementy, których chcesz wykluczyć z etykiet, gdy używasz operatora NOT. Aby uzyskać więcej informacji, zobacz [Częściowo indeksowane elementy w przeszukiwaniu zawartości](partially-indexed-items-in-content-search.md).
+- Należy pamiętać, że częściowo indeksowane elementy mogą być odpowiedzialne za brak etykiet elementów, których oczekujesz, lub etykietowanie elementów, których oczekujesz, że zostaną wykluczone z etykietowania podczas korzystania z operatora NOT. Aby uzyskać więcej informacji, zobacz [Częściowo zaindeksowane elementy w wyszukiwaniu zawartości](partially-indexed-items-in-content-search.md).
 
 
-Przykładowe zapytania:
+Przykłady zapytań:
 
-| Obciążenie pracą | Przykład |
+| Obciążenia | Przykład |
 |:-----|:-----|
 |Exchange   | `subject:"Financial Statements"` |
 |Exchange   | `recipients:garthf@contoso.com` |
@@ -209,141 +209,141 @@ Przykładowe zapytania:
 
 Bardziej złożone przykłady:
 
-Poniższe zapytanie dla zapytania SharePoint dokumentów programu Word lub arkuszy kalkulacyjnych programu Excel, gdy te pliki zawierają hasło słów **kluczowych,** **hasła** lub **pw**:
+Następujące zapytanie dotyczące SharePoint identyfikuje dokumenty programu Word lub arkusze kalkulacyjne Excel, gdy te pliki zawierają **hasło**, **hasła** lub **pw** słów kluczowych:
 
 ```
 (password OR passwords OR pw) AND (filetype:doc* OR filetype:xls*)
 ```
 
-Poniższe zapytanie dla programu Exchange identyfikuje dowolny dokument programu Word lub plik PDF zawierający wyraz **nda** lub frazę "umowa o nie  ujawnianiu", jeśli te dokumenty są dołączone do wiadomości e-mail:
+Następujące zapytanie dotyczące Exchange identyfikuje dowolny dokument programu Word lub plik PDF zawierający słowo **nda** lub wyrażenie **umowy o zachowaniu poufności**, gdy dokumenty te są dołączone do wiadomości e-mail:
 
 ```
 (nda OR "non disclosure agreement") AND (attachmentnames:.doc* OR attachmentnames:.pdf)
 ```
 
-Poniższe zapytanie dla zapytania SharePoint dokumenty zawierające numer karty kredytowej: 
+Następujące zapytanie dotyczące SharePoint identyfikuje dokumenty zawierające numer karty kredytowej: 
 
 ```
 sensitivetype:"credit card number"
 ```
 
-Poniższe zapytanie zawiera kilka typowych słów kluczowych pomocnych w identyfikowaniu dokumentów lub wiadomości e-mail zawierających treści prawne:
+Poniższe zapytanie zawiera niektóre typowe słowa kluczowe ułatwiające identyfikację dokumentów lub wiadomości e-mail zawierających zawartość prawną:
 
 ```
 ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ```
 
-Poniższe zapytanie zawiera typowe słowa kluczowe pomocne w identyfikowaniu dokumentów lub wiadomości e-mail do zasobów ludzkich: 
+Następujące zapytanie zawiera typowe słowa kluczowe ułatwiające identyfikację dokumentów lub wiadomości e-mail dla zasobów ludzkich: 
 
 ```
 (resume AND staff AND employee AND salary AND recruitment AND candidate)
 ```
 
-W tym ostatnim przykładzie zastosowano najlepsze rozwiązanie, takie jak zawsze w przypadku operatorów między słowami kluczowymi. Spacja między słowami kluczowymi (lub dwoma wyrażeniami właściwość:wartość) jest taka sama jak użycie funkcji ORAZ. Dodając operatory zawsze, łatwiej jest zobaczyć, że to przykładowe zapytanie identyfikuje tylko zawartość zawierającą wszystkie te słowa kluczowe, a nie zawartość zawierającą jakiekolwiek słowa kluczowe. Jeśli zamierzasz identyfikować zawartość zawierającą jakiekolwiek słowa kluczowe, określ lub zamiast and (ORAZ). Jak pokazano w tym przykładzie, gdy zawsze określasz operatory, łatwiej jest poprawnie zinterpretować zapytanie. 
+Należy pamiętać, że w tym ostatnim przykładzie użyto najlepszego rozwiązania polegającego na tym, że zawsze uwzględniane są operatory między słowami kluczowymi. Odstęp między słowami kluczowymi (lub dwoma właściwościami:wyrażeniami wartości) jest taki sam jak w przypadku używania języka AND. Zawsze dodając operatory, łatwiej jest zobaczyć, że to przykładowe zapytanie będzie identyfikować tylko zawartość zawierającą wszystkie te słowa kluczowe, a nie zawartość zawierającą dowolne słowa kluczowe. Jeśli twoim zamiarem jest zidentyfikowanie zawartości zawierającej dowolne słowo kluczowe, określ wartość OR zamiast AND. Jak pokazuje ten przykład, zawsze po określeniu operatorów łatwiej jest poprawnie zinterpretować zapytanie. 
 
-##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams nagrań spotkań
+##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams nagrania spotkań
 
 > [!NOTE]
-> Możliwość zachowywania i usuwania Teams spotkań nie będzie działać, zanim nagrania zostaną zapisane w OneDrive lub SharePoint. Aby uzyskać więcej informacji, zobacz [Używanie funkcji OneDrive dla Firm i SharePoint Online lub Stream do nagrywania spotkań](/MicrosoftTeams/tmr-meeting-recording-change).
+> Możliwość przechowywania i usuwania nagrań Teams spotkań nie będzie działać przed zapisaniem nagrań w OneDrive lub SharePoint. Aby uzyskać więcej informacji, zobacz [Use OneDrive dla Firm and SharePoint Online or Stream for meeting recordings (Używanie OneDrive dla Firm i SharePoint Online lub Stream do nagrywania spotkań](/MicrosoftTeams/tmr-meeting-recording-change)).
 
-Aby zidentyfikować Microsoft Teams spotkań, które są przechowywane na kontach OneDrive użytkowników lub w SharePoint, w edytorze zapytań słów kluczowych określ następujące **elementy**:
+Aby zidentyfikować Microsoft Teams nagrania spotkań przechowywane na kontach OneDrive użytkowników lub w SharePoint, określ następujące informacje dla **edytora zapytań słowa kluczowego**:
 
 ```
 ProgID:Media AND ProgID:Meeting
 ```
 
-Nagrania spotkań są w większości przypadków zapisywane w OneDrive. Jednak w przypadku spotkań na kanale są one zapisywane w SharePoint.
+W większości przypadków nagrania spotkań są zapisywane w OneDrive. Jednak w przypadku spotkań kanału są one zapisywane w SharePoint.
 
-##### <a name="identify-files-and-emails-that-have-a-sensitivity-label"></a>Identyfikowanie plików i wiadomości e-mail z etykietą wrażliwości
+##### <a name="identify-files-and-emails-that-have-a-sensitivity-label"></a>Identyfikowanie plików i wiadomości e-mail z etykietą poufności
 
-Aby zidentyfikować pliki w SharePoint lub wiadomościach OneDrive i Exchange e-mail, do których zastosowano konkretną etykietę [wrażliwości,](sensitivity-labels.md) w edytorze zapytań słów kluczowych określ następujące **wartości**:
+Aby zidentyfikować pliki w SharePoint lub OneDrive i Exchange wiadomości e-mail, które mają zastosowaną [określoną etykietę poufności](sensitivity-labels.md), określ następujące informacje dla **edytora zapytań słowa kluczowego**:
 
 ```
 InformationProtectionLabelId:<GUID>
 ```
 
-Aby znaleźć identyfikator GUID, użyj polecenia cmdlet [Get-Label](/powershell/module/exchange/get-label) z programu [Security & Compliance Center w programie PowerShell](/powershell/exchange/scc-powershell):
+Aby znaleźć identyfikator GUID, użyj polecenia cmdlet [Get-Label](/powershell/module/exchange/get-label) z programu [PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/scc-powershell):
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
 ````
 
-#### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Automatyczne stosowanie etykiet do zawartości przy użyciu przeszkolnych klasyfikatorów
+#### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Automatyczne stosowanie etykiet do zawartości przy użyciu klasyfikatorów z możliwością trenowania
 
-Po wybraniu opcji dla klasyfikatora przeszkolonego możesz wybrać co najmniej jednego z przeszkolonych lub niestandardowych klasyfikatorów przeszkolonych:
+Po wybraniu opcji klasyfikatora z możliwością trenowania można wybrać co najmniej jeden z wstępnie wytrenowanych lub niestandardowych klasyfikatorów trenowalnych:
 
-![Wybierz klasyfikatora, który jest przeszkolny.](../media/retention-label-classifers.png)
+![Wybierz klasyfikator z możliwością trenowania.](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> Wyszkodziliśmy wstępnie  przeszkolonych klasyfikatorów w języku obraźliwym, ponieważ został w nim wyszkolonych duża liczba wyników fałszywie dodatnich. Nie używaj tego klasyfikatora, a jeśli obecnie go używasz, zalecamy przeniesienie procesów biznesowych, a zamiast tego użyj wcześniej przeszkolonych klasyfikatorów: Molestowanie **kierowane,** **Profanity** i Zagrożenia.
+> Wycofywamy wstępnie wytrenowany klasyfikator **języka obraźliwego** , ponieważ generuje on dużą liczbę wyników fałszywie dodatnich. Nie używaj tego klasyfikatora i jeśli obecnie go używasz, zalecamy przeniesienie procesów biznesowych poza ten proces i użycie wstępnie **wytrenowanych** klasyfikatorów targeted harassment, **profanity** i **Threat** .
 
 Aby automatycznie zastosować etykietę przy użyciu tej opcji, SharePoint witryny i skrzynki pocztowe muszą mieć co najmniej 10 MB danych.
 
-Aby uzyskać więcej informacji na temat przeszkolnych klasyfikatorów, zobacz [Informacje na temat przeszkolnych klasyfikatorów](classifier-learn-about.md).
+Aby uzyskać więcej informacji na temat klasyfikatorów z możliwością trenowania, zobacz [Learn about trainable classifiers (Informacje o klasyfikatorach z możliwością trenowania](classifier-learn-about.md)).
 
 > [!TIP]
-> Jeśli używasz klasyfikatorów przeszkolnych na Exchange, zobacz Jak ponownie przeszkolenie klasyfikatora [w Eksploratorze zawartości](classifier-how-to-retrain-content-explorer.md).
+> Jeśli używasz klasyfikatorów z możliwością trenowania dla Exchange, zobacz [How to retrain a classifier in content explorer (Jak ponownie trenować klasyfikator w Eksploratorze zawartości](classifier-how-to-retrain-content-explorer.md)).
 
-Aby uwzględnić zastosowanie w przypadku korzystania z klasyfikatorów przeszkolnych w celu automatycznego stosowania etykiet przechowywania:
+Aby wziąć pod uwagę użycie klasyfikatorów z możliwością trenowania do automatycznego stosowania etykiet przechowywania:
 
-- Nie można automatycznie oznaczać SharePoint i OneDrive starszych niż sześć miesięcy.
+- Nie można automatycznie oznaczać etykietami SharePoint i OneDrive elementów starszych niż sześć miesięcy.
 
 #### <a name="auto-apply-labels-to-cloud-attachments"></a>Automatyczne stosowanie etykiet do załączników w chmurze
 
 > [!NOTE]
-> Ta opcja jest stopniowo wprowadzana w wersji Preview i może ulec zmianie.
+> Ta opcja jest stopniowo wdrażana w wersji zapoznawczej i może ulec zmianie.
 
-Tej opcji może być konieczne, jeśli wymagane jest przechwytywanie i zachowywanie wszystkich kopii plików w dzierżawie wysyłanych przez użytkowników za pośrednictwem komunikacji. Tej opcji należy używać w połączeniu z zasadami przechowywania samych usług komunikacyjnych, usług Exchange i Teams.
+Może być konieczne użycie tej opcji, jeśli musisz przechwycić i zachować wszystkie kopie plików w dzierżawie, które są wysyłane za pośrednictwem komunikacji przez użytkowników. Ta opcja jest używana w połączeniu z zasadami przechowywania dla samych usług komunikacyjnych, Exchange i Teams.
 
 > [!IMPORTANT]
-> Po wybraniu etykiety do użycia w celu automatycznego stosowania etykiet przechowywania dla załączników w chmurze upewnij się, że ustawienie przechowywania  etykiet Rozpocznij okres przechowywania na podstawie wartości Gdy elementy zostały **oznaczone etykietą**.
+> Po wybraniu etykiety, która ma być używana do automatycznego stosowania etykiet przechowywania załączników w chmurze, upewnij się, że ustawienie przechowywania etykiet **Uruchom okres przechowywania na podstawie** wartości **Kiedy elementy zostały oznaczone etykietą**.
 
-Załączniki w chmurze, czasami nazywane także nowoczesnych załącznikami, to mechanizm udostępniania, który używa osadzonych linków do plików przechowywanych w chmurze. Obsługują one scentralizowane przechowywanie zawartości udostępnianej ze wspólnymi korzyściami, takimi jak kontrola wersji. Załączniki w chmurze nie są dołączonymi kopiami pliku ani linkiem tekstowym adresu URL do pliku. Pomocne może okazać się odwoływać się do wizualnych list kontrolnych obsługiwanych załączników w chmurze w [Outlook i](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
+Załączniki w chmurze, czasami nazywane również nowoczesnymi załącznikami, są mechanizmem udostępniania, który używa osadzonych linków do plików przechowywanych w chmurze. Obsługują scentralizowany magazyn dla zawartości udostępnionej z korzyściami współpracy, takimi jak kontrola wersji. Załączniki w chmurze nie są dołączonymi kopiami pliku ani linkiem tekstowym adresu URL do pliku. Przydatne może okazać się odwoływanie się do wizualnych list kontrolnych obsługiwanych załączników w chmurze w [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) i [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
 
-Po wybraniu opcji zastosowania etykiety przechowywania do załączników w chmurze w celu zapewnienia zgodności jest tworzona kopia tego pliku w czasie udostępniania. Wybrana etykieta przechowywania zostanie zastosowana do kopii, a następnie będzie można ją zidentyfikować przy użyciu zbierania elektronicznych materiałów dowodowych. Użytkownicy nie wiedzą o kopii przechowywanej w bibliotece Zachowywanie. Etykieta przechowywania nie jest stosowana do samej wiadomości ani do oryginalnego pliku.
+Po wybraniu opcji zastosowania etykiety przechowywania do załączników w chmurze w celu zapewnienia zgodności kopia tego pliku jest tworzona w momencie udostępniania. Wybrana etykieta przechowywania jest następnie stosowana do kopii, którą można następnie zidentyfikować przy użyciu zbierania elektronicznych materiałów dowodowych. Użytkownicy nie są świadomi kopii przechowywanej w bibliotece archiwum zachowywania. Etykieta przechowywania nie jest stosowana do samego komunikatu ani do oryginalnego pliku.
 
-Jeśli plik zostanie zmodyfikowany i ponownie udostępniony, nowa kopia pliku w nowej wersji zostanie zapisana w bibliotece Hold hold (Przechowywanie). Aby uzyskać więcej informacji, łącznie z przyczynami stosowania  ustawienia Kiedy elementy były oznaczone etykietą, zobacz Jak działa przechowywanie w [załącznikach w chmurze](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+Jeśli plik zostanie ponownie zmodyfikowany i udostępniony, nowa kopia pliku jako nowej wersji zostanie zapisana w bibliotece archiwum konserwacji. Aby uzyskać więcej informacji, w tym dlaczego należy użyć ustawienia **Etykieta Kiedy elementy zostały oznaczone etykietą** , zobacz [Jak przechowywanie działa z załącznikami w chmurze](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
-Załączniki w chmurze obsługiwane dla tej opcji to pliki, takie jak dokumenty, klipy wideo i obrazy, które są przechowywane SharePoint i OneDrive. Na Teams obsługiwane są załączniki w chmurze udostępniane w wiadomościach czatu oraz standardowe i prywatne kanały. Załączniki w chmurze udostępniane za pośrednictwem zaproszeń na spotkania i aplikacji Teams niż Outlook nie są obsługiwane. Załączniki w chmurze muszą być udostępniane przez użytkowników. Załączniki w chmurze wysyłane przez boty nie są obsługiwane.
+Załączniki w chmurze obsługiwane dla tej opcji to pliki, takie jak dokumenty, filmy wideo i obrazy przechowywane w SharePoint i OneDrive. W przypadku Teams obsługiwane są załączniki w chmurze udostępniane w wiadomościach czatów oraz standardowe i prywatne kanały. Załączniki w chmurze udostępniane przez zaproszenia na spotkania i aplikacje inne niż Teams lub Outlook nie są obsługiwane. Załączniki w chmurze muszą być współużytkowane przez użytkowników; załączniki w chmurze wysyłane za pośrednictwem botów nie są obsługiwane.
 
-Mimo że ta opcja nie jest wymagana, zalecamy upewnienie się, że dla Twoich witryn SharePoint i kont usługi OneDrive włączono obsługę wersji, dzięki czemu udostępniona wersja może zostać dokładnie przechwycona. Jeśli funkcja sporządzania wersji nie jest włączona, ostatnia dostępna wersja zostanie zachowana. Dokumenty w wersji roboczej lub nigdy nie opublikowane nie są obsługiwane.
+Chociaż ta opcja nie jest wymagana, zalecamy, aby upewnić się, że obsługa wersji jest włączona dla witryn SharePoint i kont OneDrive, aby umożliwić dokładne przechwycenie udostępnionej wersji. Jeśli przechowywanie wersji nie jest włączone, ostatnia dostępna wersja zostanie zachowana. Dokumenty w wersji roboczej lub, które nigdy nie zostały opublikowane, nie są obsługiwane.
 
-Po wybraniu etykiety do użycia w celu automatycznego stosowania etykiet przechowywania dla załączników w chmurze upewnij się, że ustawienie przechowywania  etykiet Rozpocznij okres przechowywania na podstawie znajduje się na pozycji Kiedy oznaczono **elementy**. 
+Po wybraniu etykiety, która ma być używana do automatycznego stosowania etykiet przechowywania załączników w chmurze, upewnij się, że ustawienie przechowywania **etykiety Rozpocznij okres przechowywania na podstawie** wartości **Kiedy elementy zostały oznaczone etykietą**. 
 
-Podczas konfigurowania lokalizacji dla tej opcji możesz wybrać:
+Podczas konfigurowania lokalizacji dla tej opcji można wybrać następujące opcje:
 
-- **SharePoint** udostępnionych plików przechowywanych w witrynach SharePoint do komunikacji, witryn zespołowych, które nie są połączone przez Microsoft 365 grupy i witryny klasyczne. 
-- **Grupy Microsoft 365** udostępnionych plików, które są przechowywane w witrynach zespołowych połączonych Microsoft 365 grupy.
-- **OneDrive dla plików** udostępnionych przechowywanych w folderze OneDrive.
+- **SharePoint witryny** dla udostępnionych plików przechowywanych w witrynach SharePoint komunikacji, witrynach zespołu, które nie są połączone przez grupy Microsoft 365 i lokacjach klasycznych. 
+- **Grupy Microsoft 365** dla plików udostępnionych przechowywanych w witrynach zespołu połączonych przez grupy Microsoft 365.
+- **OneDrive konta** dla udostępnionych plików przechowywanych w OneDrive użytkowników.
 
-Aby zachować lub usunąć oryginalne pliki, wiadomości e-mail lub wiadomości e-mail oraz wiadomości Teams e-mail, należy utworzyć osobne zasady przechowywania.
+Należy utworzyć oddzielne zasady przechowywania, jeśli chcesz zachować lub usunąć oryginalne pliki, wiadomości e-mail lub wiadomości Teams.
 
 > [!NOTE]
-> Jeśli chcesz, aby przechowywane załączniki w chmurze wygasały jednocześnie z wiadomościami, które je zawierały, skonfiguruj etykietę przechowywania tak, aby zachowywała, a następnie usuwała akcje i chronometrażu co zasady przechowywania dla aplikacji Exchange i Teams.
+> Jeśli chcesz, aby zachowane załączniki w chmurze wygasały w tym samym czasie co komunikaty, które je zawierały, skonfiguruj etykietę przechowywania tak, aby zachować tę samą wartość, a następnie usuń akcje i chronometraż co zasady przechowywania dla Exchange i Teams.
 
-Aby rozważyć automatyczne stosowanie etykiet przechowywania do załączników w chmurze:
+Do rozważenia podczas automatycznego stosowania etykiet przechowywania do załączników w chmurze:
 
-- Tylko nowo udostępnione załączniki w chmurze będą automatycznie oznaczane w celu przechowywania.
+- Tylko nowo udostępnione załączniki w chmurze zostaną automatycznie oznaczone do przechowywania.
 
-- Załączniki w chmurze Teams i Outlook nie są obsługiwane.
+- Załączniki w chmurze udostępnione poza Teams i Outlook nie są obsługiwane.
 
-- Następujące elementy nie są obsługiwane jako załączniki w chmurze, które mogą być zachowywane:
-    - SharePoint, stron, list, formularzy, folderów, zestawów dokumentów OneNote stron.
-    - Pliki udostępniane przez użytkowników, którzy nie mają dostępu do tych plików.
-    - Pliki usuwane przed wysłaniem załącznika w chmurze. Może się tak zdarzyć, jeśli użytkownik skopiuje i wklei wcześniej udostępniony załącznik z innej wiadomości, bez uprzedniego potwierdzania, że plik jest nadal dostępny. Ktoś przesyła starą wiadomość, gdy plik zostanie teraz usunięty.
+- Następujące elementy nie są obsługiwane jako załączniki w chmurze, które można przechowywać:
+    - SharePoint witryn, stron, list, formularzy, folderów, zestawów dokumentów i stron OneNote.
+    - Pliki udostępnione przez użytkowników, którzy nie mają dostępu do tych plików.
+    - Pliki usuwane przed wysłaniem załącznika w chmurze. Może się tak zdarzyć, jeśli użytkownik kopiuje i wkleja wcześniej udostępniony załącznik z innej wiadomości bez uprzedniego potwierdzenia, że plik jest nadal dostępny. Możesz też przekazać starą wiadomość, gdy plik zostanie usunięty.
     - Pliki udostępniane przez gości lub użytkowników spoza organizacji.
-    - Pliki w wersjach roboczych wiadomości e-mail i wiadomości, które nie są wysyłane.
+    - Pliki w roboczych wiadomościach e-mail i wiadomościach, które nie są wysyłane.
     - Puste pliki.
 
-## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Jak długo trwa okres przechowywania etykiet przechowywania
+## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Jak długo trwa obowiązywanie etykiet przechowywania
 
-W przypadku automatycznego stosowania etykiet przechowywania na podstawie informacji poufnych, słów kluczowych, właściwości uwzględnianych w wyszukiwaniu lub przeszkolnych klasyfikatorów zastosowanie etykiet przechowywania może potrwać do siedmiu dni:
+W przypadku automatycznego stosowania etykiet przechowywania na podstawie poufnych informacji, słów kluczowych lub właściwości możliwych do wyszukania lub klasyfikatorów z możliwością trenowania zastosowanie etykiet przechowywania może potrwać do siedmiu dni:
   
-![Diagram przedstawiający zastosowanie etykiet automatycznego stosowania.](../media/retention-labels-autoapply-timings.png)
+![Diagram przedstawiający, kiedy stosowane automatycznie etykiety są stosowane.](../media/retention-labels-autoapply-timings.png)
 
-Jeśli po upływie siedmiu dni etykiety oczekiwane nie są wyświetlane, sprawdź stan  zasad auto zastosuj, wybierając je na stronie Zasady etykiet w Centrum  zgodności. Jeśli zobaczysz stan Wyłączone (błąd **)** i w szczegółach lokalizacji zostanie wyświetlony komunikat informujący, że wdrożenie zasad (dla programu SharePoint) trwa dłużej niż oczekiwano, lub próby ponownego wdrożenia zasad (dla programu OneDrive), spróbuj ponownie uruchomić polecenie [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell, aby ponownie sprawdzić rozkład zasad:
+Jeśli oczekiwane etykiety nie są wyświetlane po siedmiu dniach, sprawdź **stan** zasad automatycznego stosowania, wybierając je na stronie **Zasady etykiet** w Centrum zgodności. Jeśli w szczegółach lokalizacji zostanie wyświetlony komunikat o tym, że wdrażanie zasad (dla SharePoint **)** lub próba ponownego wdrożenia zasad (dla OneDrive) trwa dłużej niż oczekiwano, spróbuj uruchomić polecenie [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell, aby ponowić próbę dystrybucji zasad:
 
-1. [Połączenie do programu PowerShell & w Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+1. [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
 2. Uruchom następujące polecenie:
     
@@ -353,32 +353,32 @@ Jeśli po upływie siedmiu dni etykiety oczekiwane nie są wyświetlane, sprawd�
 
 ## <a name="updating-retention-labels-and-their-policies"></a>Aktualizowanie etykiet przechowywania i ich zasad
 
-W przypadku automatycznego stosowania zasad etykiet przechowywania, które są skonfigurowane dla informacji poufnych, słów kluczowych lub właściwości, które można wyszukiwać, lub dopasowania do klasyfikatorów przeszkolnych: Jeśli etykieta przechowywania z tych zasad jest już stosowana do zawartości, zmiana w konfiguracji wybranej etykiety i zasad zostanie automatycznie zastosowana do tej zawartości oprócz zawartości, która została nowo zidentyfikowana.
+W przypadku zasad automatycznego stosowania etykiet przechowywania, które są skonfigurowane pod kątem informacji poufnych, słów kluczowych lub właściwości możliwych do wyszukiwania lub dopasowania dla klasyfikatorów z możliwością trenowania: gdy etykieta przechowywania z zasad jest już stosowana do zawartości, zmiana konfiguracji wybranej etykiety i zasad zostanie automatycznie zastosowana do tej zawartości oprócz nowo zidentyfikowanej zawartości.
 
-Aby zastosować automatycznie zasady etykiet przechowywania skonfigurowane dla załączników w chmurze: Ponieważ te zasady dotyczą nowo udostępnionych plików, a nie do istniejących plików, zmiana konfiguracji wybranej etykiety i zasad zostanie automatycznie zastosowana tylko do nowo udostępnionej zawartości.
+W przypadku zasad automatycznego stosowania etykiet przechowywania skonfigurowanych dla załączników w chmurze: ponieważ te zasady dotyczą nowo udostępnionych plików, a nie istniejących plików, zmiana konfiguracji wybranej etykiety i zasad zostanie automatycznie zastosowana tylko do nowo udostępnionej zawartości.
 
-Po utworzeniu i zapisaniu etykiety lub zasad nie można zmienić niektórych ustawień, takich jak:
-- Nazwy etykiet przechowywania i ich zasad, typ zakresu (adaptacyjny lub statyczny) i ustawienia przechowywania z wyjątkiem okresu przechowywania. Nie można jednak zmienić okresu przechowywania, gdy okres przechowywania jest oparty na oznaczaniu elementów etykietą.
+Niektórych ustawień nie można zmienić po utworzeniu i zapisaniu etykiety lub zasad, które obejmują:
+- Nazwy etykiet przechowywania i ich zasad, typ zakresu (adaptacyjne lub statyczne) oraz ustawienia przechowywania z wyjątkiem okresu przechowywania. Nie można jednak zmienić okresu przechowywania, gdy okres przechowywania zależy od tego, kiedy elementy zostały oznaczone etykietą.
 - Opcja oznaczania elementów jako rekordu.
 
 ### <a name="deleting-retention-labels"></a>Usuwanie etykiet przechowywania
 
-Możesz usunąć etykiety przechowywania, które nie są obecnie uwzględnione w żadnych zasadach etykiet przechowywania, które nie są skonfigurowane na wypadek przechowywania na podstawie zdarzeń, lub oznaczać elementy jako rekordy prawne.
+Możesz usunąć etykiety przechowywania, które nie są obecnie uwzględnione w żadnych zasadach etykiet przechowywania, które nie są skonfigurowane do przechowywania na podstawie zdarzeń, lub oznaczyć elementy jako rekordy regulacyjne.
 
-W przypadku etykiet przechowywania, które można usunąć, jeśli zostały one zastosowane do elementów, usunięcie zakończy się niepowodzeniem i zostanie wyświetlony link do Eksploratora zawartości identyfikujący elementy oznaczone etykietą.
+W przypadku etykiet przechowywania, które można usunąć, jeśli zostały one zastosowane do elementów, usunięcie kończy się niepowodzeniem i zostanie wyświetlony link do Eksploratora zawartości w celu zidentyfikowania elementów oznaczonych etykietą.
 
-Jednak wyświetlanie oznaczonych elementów w Eksploratorze zawartości może potrwać do dwóch dni. W tym scenariuszu etykieta przechowywania może zostać usunięta bez pokazywania linku do Eksploratora zawartości.
+Jednak wyświetlenie elementów oznaczonych etykietą Eksploratora zawartości może potrwać do dwóch dni. W tym scenariuszu etykieta przechowywania może zostać usunięta bez wyświetlania linku do Eksploratora zawartości.
 
-## <a name="locking-the-policy-to-prevent-changes"></a>Blokowanie zasad w celu uniemożliwinia zmian
+## <a name="locking-the-policy-to-prevent-changes"></a>Blokowanie zasad w celu zapobiegania zmianom
 
-Jeśli chcesz się upewnić, że nikt nie będzie miał możliwości wyłączenia zasad, usunięcia zasad lub ich mniej restrykcyjnych, zobacz Używanie blokady zachowywania do ograniczania zmian zasad przechowywania i zasad etykiet [przechowywania](retention-preservation-lock.md).
+Jeśli musisz upewnić się, że nikt nie może wyłączyć zasad, usunąć zasad lub uczynić je mniej restrykcyjnym, zobacz [Używanie blokady zachowania, aby ograniczyć zmiany zasad przechowywania i zasad etykiet przechowywania](retention-preservation-lock.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby ułatwić śledzenie etykiet zastosowanych na pomocą zasad automatycznego oznaczania:
+Aby ułatwić śledzenie etykiet zastosowanych z zasad automatycznego etykietowania:
 
 - [Monitorowanie etykiet przechowywania](retention.md#monitoring-retention-labels)
-- [Korzystanie z wyszukiwania zawartości w celu znalezienia całej zawartości z określoną etykietą przechowywania](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
-- [Akcje przechowywania inspekcji](retention.md#auditing-retention-actions)
+- [Wyszukiwanie zawartości przy użyciu funkcji wyszukiwania zawartości w celu znalezienia całej zawartości z określoną etykietą przechowywania](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- [Inspekcja akcji przechowywania](retention.md#auditing-retention-actions)
 
-Zobacz Sekcję Zarządzanie cyklem życia dokumentów przechowywanych w programie [SharePoint](auto-apply-retention-labels-scenario.md) za pomocą etykiet przechowywania można znaleźć w przykładowym scenariuszu, w którym stosowane są zasady automatycznego stosowania etykiet przechowywania z właściwościami zarządzanymi w programie SharePoint, oraz Przechowywanie oparte na zdarzeniach, aby rozpocząć okres przechowywania.
+Zobacz [Używanie etykiet przechowywania do zarządzania cyklem życia dokumentów przechowywanych w SharePoint, aby zapoznać](auto-apply-retention-labels-scenario.md) się z przykładowym scenariuszem, który używa zasad automatycznego stosowania etykiet przechowywania z właściwościami zarządzanymi w SharePoint i przechowywania opartego na zdarzeniach w celu rozpoczęcia okresu przechowywania.

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie zasad DLP na podstawie szablonu
+title: Twórz zasady DLP na podstawie szablonu
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -20,71 +20,71 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: W tym artykule dowiesz się, jak tworzyć zasady DLP przy użyciu jednego z szablonów zawartych w Office 365.
-ms.openlocfilehash: 965e5198887ec64072efffd35ffa7739c90af6a4
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63013865"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759108"
 ---
-# <a name="create-a-dlp-policy-from-a-template"></a>Tworzenie zasad DLP na podstawie szablonu
+# <a name="create-a-dlp-policy-from-a-template"></a>Twórz zasady DLP na podstawie szablonu
 
-Najprostszym, najczęściej spotykanym sposobem rozpoczęcia pracy z zasadami DLP jest użycie jednego z szablonów zawartych w centrum zgodności Microsoft 365 zgodności. Możesz użyć jednego z tych szablonów w stanie, w jaki jest, lub dostosować reguły w celu spełnienia określonych wymagań dotyczących zgodności w organizacji.
+Najprostszym, najbardziej typowym sposobem rozpoczęcia pracy z zasadami DLP jest użycie jednego z szablonów zawartych w centrum zgodności Microsoft 365. Możesz użyć jednego z tych szablonów w następującym stanie, w jakim jest, lub dostosować reguły w celu spełnienia określonych wymagań dotyczących zgodności organizacji.
 
-Microsoft 365 zawiera ponad 40 gotowych do użycia szablonów, które mogą pomóc spełnić szereg typowych potrzeb w zakresie przepisów i zasad biznesowych. Zobacz; [Szablony zasad](dlp-policy-reference.md#policy-templates) do tworzenia pełnej listy. 
+Microsoft 365 zawiera ponad 40 gotowych do użycia szablonów, które mogą pomóc w spełnieniu szerokiego zakresu typowych potrzeb związanych z przepisami i zasadami biznesowymi. Zobacz; [Szablony zasad](dlp-policy-reference.md#policy-templates) dla pełnej listy. 
 
-Możesz precyzyjnie dostosować szablon, modyfikując jego istniejące reguły lub dodając nowe. Można na przykład dodać do reguły nowe typy informacji poufnych, zmodyfikować liczniki w  regułach, aby utrudnić lub ułatwić ich wyzwalanie, zezwolić użytkownikom na zastępowanie akcji reguły przez podanie uzasadnienia biznesowego lub zmienić osoby, do których są wysyłane powiadomienia i raporty o incydentach. Szablon zasad DLP jest elastycznym punktem startowym dla wielu typowych scenariuszy zgodności.
+Szablon można dostosować, modyfikując dowolne z istniejących reguł lub dodając nowe. Możesz na przykład dodać nowe typy poufnych informacji do reguły, zmodyfikować liczby w regule, aby utrudnić lub ułatwić wyzwalanie, umożliwić użytkownikom zastąpienie akcji w regule przez podanie uzasadnienia biznesowego lub zmianę sposobu wysyłania powiadomień i raportów o zdarzeniach. Szablon zasad DLP jest elastycznym punktem wyjścia dla wielu typowych scenariuszy zgodności.
 
-Możesz również wybrać szablon Niestandardowy, który nie ma reguł domyślnych, i skonfigurować od podstaw zasady DLP, aby spełnić określone wymagania dotyczące zgodności dla organizacji.
+Możesz również wybrać szablon niestandardowy, który nie ma reguł domyślnych, i skonfigurować zasady DLP od podstaw, aby spełnić określone wymagania dotyczące zgodności dla organizacji.
 
 ## <a name="permissions"></a>Uprawnienia
 
-Członkowie Twojego zespołu zgodności, którzy będą tworzyć zasady DLP, muszą mieć uprawnienia do Centrum zgodności. Domyślnie administrator dzierżawy będzie miał dostęp do danych służb zgodności i innych osób. Wykonaj następujące czynności:
+Członkowie zespołu ds. zgodności, którzy będą tworzyć zasady DLP, potrzebują uprawnień do Centrum zgodności. Domyślnie administrator dzierżawy będzie miał dostęp, aby zapewnić dostęp funkcjonariuszom ds. zgodności i innym osobom. Wykonaj następujące czynności:
   
-1. Utwórz grupę w u Microsoft 365 i dodaj do niego pracowników do tego zespołu pracowników do zgodności.
+1. Utwórz grupę w Microsoft 365 i dodaj do niej funkcjonariuszy zgodności.
     
-2. Utwórz grupę ról na **stronie Uprawnienia** w Centrum zgodności &amp; zabezpieczeń. 
+2. Utwórz grupę ról na stronie **Uprawnienia** Centrum zgodności zabezpieczeń &amp; . 
 
-3. Podczas tworzenia grupy ról użyj sekcji **Wybieranie ról** , aby dodać do grupy ról następującą rolę: Zarządzanie **zgodnością DLP**.
+3. Podczas tworzenia grupy ról użyj sekcji **Wybierz role** , aby dodać następującą rolę do grupy ról: **Zarządzanie zgodnością DLP**.
     
-4. Za pomocą **sekcji Wybieranie** członków dodaj do Microsoft 365 ról utworzoną wcześniej grupę ról.
+4. Użyj sekcji **Wybieranie członków**, aby dodać utworzoną wcześniej grupę Microsoft 365 do grupy ról.
 
-Rola Zarządzanie **zgodnością DLP** tylko w widoku umożliwia tworzenie grupy ról z uprawnieniami tylko do wyświetlania zasad DLP i raportów funkcji DLP.
+Użyj roli **Zarządzanie zgodnością DLP tylko do wyświetlania** , aby utworzyć grupę ról z uprawnieniami tylko do wyświetlania do zasad DLP i raportów DLP.
 
-Aby uzyskać więcej informacji, zobacz [Zapewnianie użytkownikom dostępu do centrum Office 365 zgodności](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Aby uzyskać więcej informacji, zobacz [Udzielanie użytkownikom dostępu do Centrum zgodności Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Te uprawnienia są wymagane do utworzenia i zastosowania zasad DLP, aby nie wymuszać zasad.
 
-### <a name="roles-and-role-groups-in-preview"></a>Role i grupy ról w wersji Preview
+### <a name="roles-and-role-groups-in-preview"></a>Role i grupy ról w wersji zapoznawczej
 
-W wersji Preview są dostępne role i grupy ról, które możesz przetestować, aby precyzyjnie dostosować kontrolki dostępu.
+W wersji zapoznawczej dostępne są role i grupy ról, które można przetestować, aby dostosować mechanizmy kontroli dostępu.
 
-Oto lista dostępnych w wersji Microsoft Information Protection (MIP), które są dostępne w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Oto lista ról Microsoft Information Protection (MIP), które są w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Administrator ochrony informacji
-- Analityk ochrony informacji
-- Ochrona informacji
-- Czytnik ochrony informacji
+- administrator Information Protection
+- analityk Information Protection
+- badacz Information Protection
+- czytelnik Information Protection
 
-Poniżej znajdziesz listę grup ról miP, które są dostępne w wersji Preview. Aby dowiedzieć się więcej na ten temat, [zobacz Grupy ról w Centrum & zabezpieczeń.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Oto lista grup ról programu MIP, które są w wersji zapoznawczej. Aby dowiedzieć się więcej na temat programu , zobacz [Grupy ról w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
-- Ochrona informacji
-- Administratorzy ochrony informacji
-- Analitycy ochrony informacji
-- Schoweki ochrony informacji
-- Czytniki informacji
+- Information Protection
+- administratorzy Information Protection
+- analitycy Information Protection
+- Information Protection śledczy
+- czytniki Information Protection
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>Tworzenie zasad DLP na podstawie szablonu
 
 1. Zaloguj się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>.
 
-2. W lewym okienku nawigacji Centrum \> zgodności **Rozwiązania** \> Zasady \> **ochrony przed utratą** \> **danych** \> **+ Utwórz zasady**.
+2. W centrum \> zgodności po lewej stronie nawigacji \> Rozwiązania **Zasady** \> **zapobiegania** \> **utracie** \> danych **+ Tworzenie zasad**.
 
-    ![Przycisk Utwórz zasady.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Utwórz przycisk zasad.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
-3. Wybierz szablon zasad DLP, który chroni typy informacji poufnych, **których potrzebujesz dalej**\>.
+3. Wybierz szablon zasad DLP, który chroni typy poufnych informacji, których potrzebujesz \> **Dalej**.
 
-4. Nadaj zasadom nazwę \> **Dalej**.
+4. Nadaj zasadom \> nazwę **Dalej**.
  
 <!--In this example, you'll select **Privacy** \> **U.S. Personally Identifiable Information (PII) Data** because it already includes most of the types of sensitive information that you want to protect - you'll add a couple later.
 
@@ -92,38 +92,38 @@ Poniżej znajdziesz listę grup ról miP, które są dostępne w wersji Preview.
 
     ![Page for choosing a DLP policy template.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)-->
 
-5. Aby wybrać lokalizacje, które mają być chronine przez zasady DLP, i zaakceptować domyślny zakres dla poszczególnych lokalizacji lub dostosować zakres. Zobacz [Lokalizacje,](dlp-policy-reference.md#locations) aby uzyskać informacje o opcjach zakresu.
+5. Aby wybrać lokalizacje, które mają być chronione przez zasady DLP, i zaakceptować zakres domyślny dla każdej lokalizacji lub dostosować zakres. Zobacz [Lokalizacje](dlp-policy-reference.md#locations) dla opcji określania zakresu.
 
 6. Wybierz przycisk \> **Dalej**.
  
 1. Wykonaj jeden z następujących kroków:
 
-   - Wybierz **pozycję Wszystkie lokalizacje w Office 365** \> **Dalej**.
-   - Wybierz **pozycję Pozwól mi wybrać konkretne lokalizacje** \> **Dalej**. W tym przykładzie wybierz tę opcję.
+   - Wybierz pozycję **Wszystkie lokalizacje w Office 365** \> **Dalej**.
+   - Wybierz **pozycję Pozwól mi wybrać określone lokalizacje** \> **Dalej**. W tym przykładzie wybierz tę opcję.
 
-   Aby uwzględnić lub wykluczyć całą lokalizację, taką jak Exchange e-mail lub wszystkie konta OneDrive, włącz lub wyłącz  stan tej lokalizacji.
+   Aby uwzględnić lub wykluczyć całą lokalizację, taką jak wszystkie Exchange wiadomości e-mail lub wszystkie konta OneDrive, włącz lub wyłącz **stan** tej lokalizacji.
 
-   Aby uwzględnić tylko określone SharePoint lub konta OneDrive dla Firm, włącz przełącznik Status, a następnie kliknij linki w  obszarze Dołącz, aby wybrać określone witryny lub konta. Po zastosowaniu zasad do witryny reguły skonfigurowane w tych zasadach są automatycznie stosowane do wszystkich podwitryn tej witryny.
+   Aby uwzględnić tylko określone witryny SharePoint lub konta OneDrive dla Firm, przełącz **pozycję Stan** na włączone, a następnie kliknij linki w obszarze **Dołącz**, aby wybrać określone witryny lub konta. Po zastosowaniu zasad do lokacji reguły skonfigurowane w tych zasadach są automatycznie stosowane do wszystkich podwitryn tej witryny.
 
-   ![Opcje lokalizacji, w których można stosować zasady DLP.](../media/all-locations.png)
+   ![Opcje lokalizacji, w których można zastosować zasady DLP.](../media/all-locations.png)
 
-   W tym przykładzie, aby chronić informacje poufne przechowywane na wszystkich kontach usługi OneDrive dla Firm **Exchange**, wyłącz  status zarówno dla poczty e-mail, jak i witryn SharePoint i pozostaw ten status wł. dla kont **OneDrive**.
+   W tym przykładzie, aby chronić poufne informacje przechowywane na wszystkich kontach OneDrive dla Firm, wyłącz **stan** zarówno dla **Exchange poczty e-mail**, jak i **witryn SharePoint**, a następnie pozostaw **stan** włączony dla **kont OneDrive**.
 
-7. Wybierz **pozycję Recenzja i dostosuj ustawienia domyślne w szablonie** \> **Dalej**.
+7. Wybierz **pozycję Przejrzyj i dostosuj ustawienia domyślne z szablonu** \> **Dalej**.
 
-8. Szablon zasad DLP zawiera wstępnie zdefiniowane reguły z warunkami i akcjami, które wykryją określone typy informacji poufnych i będą działać na ich podstawie. Istniejące reguły można edytować, usuwać i wyłączać, a także dodawać nowe. Po kliknięciu przycisku **Dalej**.
+8. Szablon zasad DLP zawiera wstępnie zdefiniowane reguły z warunkami i akcjami, które wykrywają określone typy informacji poufnych i działają na nich. Możesz edytować, usuwać lub wyłączać dowolne z istniejących reguł lub dodawać nowe. Po zakończeniu kliknij przycisk **Dalej**.
 
-    ![Reguły rozwinięte w szablonie zasad DOTYCZĄCYCH PII w Usa.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![Reguły rozwinięte w szablonie zasad interfejsu UŻYTKOWNIKA w Stanach Zjednoczonych.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
-9. Określ, kiedy ta zawartość jest udostępniana w Organizacji lub poza organizacją, jeśli wybrano dowolną z tych lokalizacji:
+9. Wybierz, aby wykryć, kiedy ta zawartość jest współużytkowana w organizacji lub poza nią, jeśli wybrano dowolną z następujących lokalizacji:
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. Teams wiadomości na czacie i w kanałach 
+    1. Teams wiadomości czatu i kanału 
 
 10. Wybierz przycisk **Dalej**.
 
-11. Jeśli chcesz **, na** stronie Akcje ochrony możesz dostosować powiadomienia porad dotyczących zasad i wiadomości e-mail z powiadomieniami. Włącz **Opcję Gdy zawartość jest dopasowana** do warunków zasad, pokaż użytkownikom porady dotyczące zasad i wyślij im wiadomość e-mail z powiadomieniem, a następnie wybierz **pozycję Dostosuj poradę i wiadomość e-mail**.
+11. Jeśli chcesz, na stronie **Akcje ochrony** możesz dostosować powiadomienia o poradach dotyczących zasad i wiadomości e-mail z powiadomieniami. Włącz opcję **Gdy zawartość jest zgodna z warunkami zasad, pokaż użytkownikom wskazówki dotyczące zasad i wyślij im powiadomienie e-mail**, a następnie wybierz pozycję **Dostosuj poradę i wiadomość e-mail**.
 12. Wybierz przycisk **Dalej**.
 
 
@@ -215,7 +215,7 @@ Here are the different statuses and what they mean.
 
 |Status|Explanation|
 |---|---|
-|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Turning on...**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
 |**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
 |**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
 |**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|

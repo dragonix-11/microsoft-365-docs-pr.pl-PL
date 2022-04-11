@@ -1,5 +1,5 @@
 ---
-title: Lista szablonów menedżera zgodności firmy Microsoft
+title: Lista szablonów programu Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,40 +16,40 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Menedżer zgodności firmy Microsoft zawiera szablony do tworzenia formularzy oceniania zgodnych z przepisami, normami i przepisami lokalnymi, regionalnymi i branżowymi.
-ms.openlocfilehash: c6bf8fe74b598b8822a44df16bfbb6245dd070ab
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: Program Microsoft Compliance Manager udostępnia szablony do tworzenia ocen, które są zgodne z krajowymi, regionalnymi i branżowymi przepisami, standardami i przepisami prawa.
+ms.openlocfilehash: 484363636906bbf599a18b3cf6d3484d53177e75
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634586"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761006"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista szablonów Menedżera zgodności
 
-**W tym artykule:** Wyświetl pełną listę szablonów **dostępnych do** tworzenia ocen w Menedżerze zgodności.
+**W tym artykule:** Wyświetl pełną listę **szablonów** dostępnych do tworzenia ocen w menedżerze zgodności.
 
 > [!IMPORTANT]
-> Szablony ocen dostępne dla Twojej organizacji zależą od umowy licencyjnej. [Przejrzyj szczegóły](compliance-manager-templates.md#template-availability-and-licensing).
+> Szablony oceny, które są dostępne dla Organizacji, zależą od umowy licencyjnej. [Przejrzyj szczegóły](compliance-manager-templates.md#template-availability-and-licensing).
 
 ## <a name="overview"></a>Omówienie
 
-[Menedżer zgodności firmy Microsoft](compliance-manager.md) udostępnia kompleksowy zestaw szablonów do tworzenia ocen. Te szablony mogą ułatwić organizacji przestrzeganie wymagań krajowych, regionalnych i branżowych dotyczących gromadzenia i używania danych.
+[Program Microsoft Compliance Manager](compliance-manager.md) udostępnia kompleksowy zestaw szablonów do tworzenia ocen. Te szablony mogą pomóc twojej organizacji w spełnieniu krajowych, regionalnych i branżowych wymagań regulujących zbieranie i wykorzystywanie danych.
 
-Szablony są dodawane do Menedżera zgodności, ponieważ są tu wprowadzane nowe przepisy prawne i przepisy. Menedżer zgodności aktualizuje także swoje szablony po zmianie przepisów źródłowych. Dowiedz się więcej na temat [przeglądania i akceptowania aktualizacji](compliance-manager-assessments.md#accept-updates-to-assessments).
+Szablony są dodawane do Menedżera zgodności w miarę wdrażania nowych przepisów. Menedżer zgodności aktualizuje również swoje szablony po zmianie podstawowych przepisów ustawowych lub wykonawczych. Dowiedz się więcej na temat [przeglądania i akceptowania aktualizacji](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 ## <a name="list-of-templates-and-where-to-find-them"></a>Lista szablonów i miejsca ich znalezienia
 
-Poniżej znajduje się pełna lista szablonów w Menedżerze zgodności. Nazwy szablonów są zgodne ze skojarzonym przepisami lub certyfikacją. Jeśli są dostępne, linki w poniższych nazwach szablonów zaczną zawierać powiązaną dokumentację dotyczącą tego standardu, przepisów lub prawa.
+Poniżej znajduje się pełna lista szablonów w Menedżerze zgodności. Nazwy szablonów są zgodne ze skojarzoną regulacją lub certyfikatem. Jeśli są dostępne, linki w poniższych nazwach szablonów prowadzą do powiązanej dokumentacji dotyczącej tego standardu, regulacji lub prawa.
 
-Każdy szablon (z wyjątkiem szablonu domyślnego Planu bazowego ochrony danych firmy [Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment)) jest dostępny w co najmniej jednej wersji zaprojektowanej do użycia z określonym produktem, takim jak Microsoft 365, wraz z wersją uniwersalną, za pomocą których można oceniać inne produkty. Aby dowiedzieć się więcej o opcjach szablonów, zobacz [Informacje o szablonach oceniania](compliance-manager-templates.md).
+Każdy szablon (z wyjątkiem domyślnego szablonu [punktu odniesienia usługi Microsoft Data Protection](compliance-manager-assessments.md#data-protection-baseline-default-assessment)) jest dostępny w co najmniej jednej wersji przeznaczonej do użytku z określonym produktem, takim jak Microsoft 365, wraz z uniwersalną wersją, która umożliwia ocenę innych wybranych produktów. Aby dowiedzieć się więcej na temat opcji szablonu, zobacz [Dowiedz się więcej o szablonach oceny](compliance-manager-templates.md).
 
-Możesz także wybrać poszczególne szablony w Menedżerze zgodności, aby wyświetlić więcej informacji na ich temat, w tym opis rozporządzenia i właściwości szablonu. Przeczytaj **sekcję Informacje** , aby zapoznać się z podsumowaniem.
+Możesz również wybrać poszczególne szablony w Menedżerze zgodności, aby wyświetlić więcej informacji na ich temat, w tym opis regulacji i właściwości szablonu. Przeczytaj sekcję **Informacje** , aby uzyskać podsumowanie.
 
-Przejdź do sekcji poniżej, aby wyświetlić szablony według obszaru lub branży:
-- [Globalna](#global)
-- [Branża](#industry)
-- [Rząd Stanów Zjednoczonych](#us-government)
-- [Stany Zjednoczone i Terytoria](#us-states-and-territories)
+Przejdź do poniższej sekcji, aby wyświetlić szablony według obszaru lub branży:
+- [Globalne](#global)
+- [Przemysłu](#industry)
+- [Instytucje rządowe USA](#us-government)
+- [Stany i terytoria STANÓW Zjednoczonych](#us-states-and-territories)
 - [Kraje Azji i Pacyfiku](#asia-pacific-countries)
 - [Europa, Bliski Wschód i Afryka (EMEA)](#europe-middle-east-and-africa-emea)
 - [Ameryka Łacińska](#latin-america)
@@ -58,400 +58,400 @@ Przejdź do sekcji poniżej, aby wyświetlić szablony według obszaru lub bran�
 
 ### <a name="where-to-find-your-templates-in-compliance-manager"></a>Gdzie można znaleźć szablony w Menedżerze zgodności
 
-Aby przejrzeć szablony dostępne dla Twojej organizacji, przejdź do strony **szablonów formularzy** oceniania. Dowiedz się więcej [o wyświetlaniu szablonów i zarządzaniu nimi](compliance-manager-templates.md#view-and-manage-templates).
+Aby przejrzeć szablony dostępne dla Organizacji, przejdź do strony **Szablony oceny** . Dowiedz się więcej na temat [wyświetlania szablonów i zarządzania nimi](compliance-manager-templates.md#view-and-manage-templates).
 
 ## <a name="included-templates"></a>Dołączone szablony
 
-Jeden lub więcej szablonów wymienionych poniżej stanowi część umowy licencyjnej. Szablon Plan bazowy ochrony danych firmy Microsoft jest dołączony do wszystkich organizacji.
+Co najmniej jeden z poniższych szablonów jest uwzględniony w ramach umowy licencyjnej. Szablon punktu odniesienia usługi Microsoft Data Protection jest dołączony dla wszystkich organizacji.
 
-- [Plan bazowy ochrony danych firmy Microsoft](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
+- [Punkt odniesienia usługi Microsoft Data Protection](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
 - [RODO Unii Europejskiej](/compliance/regulatory/gdpr)
 - [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Revs. 4 i 5
 
 > [!NOTE]
-> Dla klientów z systemami Government Community (GCC) Moderate, GCC High i Department of Defense (DoD): oprócz szablonów wymienionych powyżej są dostępne szablony od 1 do 5, które są dostępne dla użytkowników z organizacji Government Community i Department of Defense (DoD).
+> W przypadku klientów Community (GCC) moderate, GCC High i Department of Defense (DoD) dla klientów: oprócz szablonów wymienionych powyżej uwzględniono szablony certyfikatów cmmc (Cybersecurity Maturity Model Certification) od 1 do 5.
 
-## <a name="preview-templates"></a>Wyświetlanie podglądu szablonów
+## <a name="preview-templates"></a>Szablony w wersji zapoznawczej
 
-Szablony wymienione poniżej są obecnie dostępne do podglądu. Tworzenie ocen przy użyciu tych szablonów nie będzie wliczane do łącznej liczby używanych licencjonowanych szablonów.
+Szablony wymienione poniżej są obecnie dostępne w wersji zapoznawczej. Tworzenie ocen przy użyciu tych szablonów nie będzie uwzględniane w łącznej liczbie używanych licencjonowanych szablonów.
 
-- ISO 27001:2013 dla platformy Azure (wersja Preview)
-- ISO 27001:2013 dla usługi Dynamics 365 (wersja Preview)
-- FedRAMP Moderate for Dynamics 365 (Preview)
-- FedRAMP Moderate for Azure (Preview)
-- FedRAMP High for Azure (Preview)
-- FedRAMP High for Dynamics 365 (Preview)
-- SOC 2 dla systemu Azure (wersja Preview)
-- SOC 2 dla Dynamics 365 (wersja Preview)
-- ISO 27018:2019 dla platformy Azure (wersja Preview)
-- ISO 27018:2019 dla usługi Dynamics 365 (wersja Preview)
+- ISO 27001:2013 dla platformy Azure (wersja zapoznawcza)
+- ISO 27001:2013 dla usługi Dynamics 365 (wersja zapoznawcza)
+- FedRAMP Moderate for Dynamics 365 (wersja zapoznawcza)
+- FedRAMP Moderate dla platformy Azure (wersja zapoznawcza)
+- FedRAMP High for Azure (wersja zapoznawcza)
+- FedRAMP High for Dynamics 365 (wersja zapoznawcza)
+- SOC 2 dla platformy Azure (wersja zapoznawcza)
+- SOC 2 dla usługi Dynamics 365 (wersja zapoznawcza)
+- ISO 27018:2019 dla platformy Azure (wersja zapoznawcza)
+- ISO 27018:2019 dla usługi Dynamics 365 (wersja zapoznawcza)
 
-## <a name="premium-templates"></a>Premium szablonów
+## <a name="premium-templates"></a>szablony Premium
 
-Szablony wymienione poniżej mogą zostać kupione przez Twoją organizację.
+Szablony wymienione poniżej mogą zostać zakupione przez Organizację.
 
-### <a name="global"></a>Globalna
+### <a name="global"></a>Globalne
 
-- Wytyczne i wymagania funkcjonalne dotyczące systemów zarządzania rekordami elektronicznymi (moduł ICA 2)  
+- Wytyczne i wymagania funkcjonalne dotyczące elektronicznych systemów zarządzania rekordami (moduł ICA 2)  
 - ISO 15489-1:2016  
 - ISO 16175-1:2020  
 - ISO 19791 — Technologie informacyjne — Techniki zabezpieczeń — Ocena zabezpieczeń systemów operacyjnych  
 - [ISO 22301:2019](/compliance/regulatory/offering-iso-22301)  
-- ISO 23081–1:2017  
+- ISO 23081-1:2017  
 - ISO 27005:2018  
 - [ISO 27017:2015](/compliance/regulatory/offering-iso-27017)  
-- ISO 27034-1 Technologie informacyjne — Techniki zabezpieczeń — Zabezpieczenia aplikacji  
-- ISO 27799: 2016, informacje o kondycji — zarządzanie zabezpieczeniami informacji w kondycji  
+- ISO 27034-1 Technologia informacyjna — techniki zabezpieczeń — zabezpieczenia aplikacji  
+- ISO 27799: 2016, Informacje o kondycji — Zarządzanie zabezpieczeniami informacji w kondycji  
 - ISO 28000 — specyfikacje systemów zarządzania zabezpieczeniami dla łańcucha dostaw  
 - ISO 31000:2018  
 - ISO 37301  
-- ISO 55001 — Zarządzanie zasobami — systemy zarządzania - Wymagania  
+- ISO 55001 — Zarządzanie zasobami — systemy zarządzania — wymagania  
 - ISO IEC 80001-1:2010  
 - ISO/IEC 27001:2013
 - [ISO/IEC 27018:2019](/compliance/regulatory/offering-iso-27018)  
 - ISO/IEC 27033-1:2015  
 - [ISO/IEC 27701:2019](/compliance/regulatory/offering-iso-27701)  
-- NIST 800-207 - architektura Zero Trust  
+- NIST 800-207 — architektura Zero Trust  
 - SIG 2022  
-- [System i organizacja Controls (SOC) 1](/compliance/regulatory/offering-soc)
-- [System and Organization Controls (SOC) 2](/compliance/regulatory/offering-soc)
+- [Mechanizmy kontroli systemu i organizacji (SOC) 1](/compliance/regulatory/offering-soc)
+- [Mechanizmy kontroli systemu i organizacji (SOC) 2](/compliance/regulatory/offering-soc)
 
-### <a name="industry"></a>Branża
+### <a name="industry"></a>Przemysłu
 
-- AICPA/CICA ogólnie zaakceptowane zasady zachowania poufności informacji (GAPP)  
-- ARMA — wdrażanie ogólnie zaakceptowanych zasad zachowania rekordów (GARP)  
-- [Ochrona zawartości dysków CDSA & Standard zabezpieczeń CDSA](/compliance/regulatory/offering-cdsa)  
-- [Grupa implementacji cis 1, grupa 2, grupa 3](/compliance/regulatory/offering-cis-benchmark)
-- CIS Microsoft 365 Foundation (poziom 1 i 2)
+- AICPA/CICA Ogólnie akceptowane zasady ochrony prywatności (GAPP)  
+- ARMA — implementowanie ogólnie przyjętych zasad prowadzenia rejestrów (GARP)  
+- [CDSA Content Protection & Security Standard](/compliance/regulatory/offering-cdsa)  
+- [Cis Implementation Group 1, Group 2, Group 3](/compliance/regulatory/offering-cis-benchmark)
+- CIS Microsoft 365 Foundation Level 1 i 2
 - [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM)](/compliance/regulatory/offering-csa-star-attestation)
 - COBIT 5  
-- Lista kontrolna pochłoń fistry  
+- Lista kontrolna dotycząca cyberbezpieczeństwa FINRA  
 - ITU X.1052 Information Security Management Framework  
-- Joint Commission Information Management Standard  
-- [Najlepsze rozwiązania dotyczące zabezpieczeń zawartości w organizacji Motion Picture Association (MPA)](/compliance/regulatory/offering-mpaa)  
+- Standard wspólnego zarządzania informacjami komisji  
+- [Najlepsze rozwiązania dotyczące zabezpieczeń zawartości skojarzenia obrazów (MPA)](/compliance/regulatory/offering-mpaa)  
 - [NERC CIP](/compliance/regulatory/offering-nerc-cip)  
 - Mechanizmy kontroli zabezpieczeń klientów SWIFT  
-- Kontrolki proactive OWASP dla deweloperów 2018 w wersji 3.0  
-- (NAIC) Standardy ochrony modelu informacji o klientach MDL-673
-- [PCI DSS w wersji 3.2.1](/compliance/regulatory/offering-pci-dss)  
-- Ochrona prywatności przepisów dotyczących informacji finansowych i opieki zdrowotnej konsumentów, języka MDL-672 NAIC, 2 kwartał 2017  
-- Przegląd zasad zarządzania dźwiękiem ryzyka operacyjnego (zasady dotyczące czynników ryzyka operacyjnego basela III)  
-- Kwestionariusz standardowego gromadzenia informacji (SIG, Standardized Information Gathering)  
-- [Zaufana ocena zabezpieczeń informacji Exchange](/compliance/regulatory/offering-tisax-germany)
+- OWASP ProActive Controls for Developers 2018 v3.0  
+- (NAIC) Standardy dotyczące ochrony regulacji modelu informacji o klientach MDL-673
+- [PCI DSS v3.2.1](/compliance/regulatory/offering-pci-dss)  
+- Prywatność przepisów dotyczących informacji finansowych i zdrowotnych konsumentów, NAIC MDL-672, Q2 2017  
+- Zmiany zasad należytego zarządzania ryzykiem operacyjnym (Basel III Ops Risks)  
+- Standaryzowany kwestionariusz zbierania informacji (SIG)  
+- [Exchange oceny zabezpieczeń zaufanych informacji](/compliance/regulatory/offering-tisax-germany)
 
-### <a name="us-government"></a>Rząd Stanów Zjednoczonych
+### <a name="us-government"></a>Instytucje rządowe USA
 
-- Dodatek III do protokołu OMB Nie cykliczny. A-130 — bezpieczeństwo automatycznych materiałów informacyjnych (Federal Automated Information Resources)
-- [CFR — Kod przepisów federalnych, tytuł 21, część 11, dokumentacja elektroniczna, podpisy elektroniczne](/compliance/regulatory/offering-fda-cfr-title-21-part-11)  
-- Reguła ochrony prywatności dzieci w Internecie (COPPA)  
-- CMMC Poziom 1, Poziom 2, Poziom 3, Poziom 4, Poziom 5  
-- CMMC v2 level 1  
-- CMMC v2 level 2  
-- Zasady zabezpieczeń i ochrony prywatności systemu CMS Information System (IS2P2)  
-- Ustawa CFAA (Computer Fraud and Abuse Act)  
-- Zawartość materiałów przedsprzedastrowych o zarządzaniu projektami na urządzeniach medycznych  
-- [Zasady zabezpieczeń usług informacyjnych o przestępcach (CJIS)](/compliance/regulatory/offering-cjis)  
-- Więdność urządzeń medycznych z siecią zawierająca oprogramowanie do odc. na półkę (OTS) — FDA  
-- Certyfikacja modelu płatności(CMMC) od 1 do 5  
+- Dodatek III do okrągłego nr protokołu OMB. A-130 — zabezpieczenia federalnych zautomatyzowanych zasobów informacyjnych
+- [CFR — kodeks przepisów federalnych tytuł 21, część 11, elektroniczne zapisy, podpisy elektroniczne](/compliance/regulatory/offering-fda-cfr-title-21-part-11)  
+- Reguła ochrony prywatności w trybie online dla dzieci (COPPA)  
+- CMMC Level 1, Level 2, Level 3, Level 4, Level 5  
+- CMMC v2 Poziom 1  
+- CMMC v2 Poziom 2  
+- Zasady zabezpieczeń i ochrony prywatności systemów informatycznych cms (IS2P2)  
+- Ustawa o oszustwach i nadużyciach komputerowych (CFAA)  
+- Treść premarketowych zgłoszeń do zarządzania cyberbezpieczeństwem w urządzeniach medycznych  
+- [Polityka bezpieczeństwa usług CJIS (Criminal Justice Information Services)](/compliance/regulatory/offering-cjis)  
+- Cyberbezpieczeństwo dla sieciowych urządzeń medycznych zawierających gotowe oprogramowanie (OTS) - FDA  
+- Certyfikacja modelu dojrzałości do cyberbezpieczeństwa (CMMC) — poziomy od 1 do 5  
 - [DFARS](/compliance/regulatory/offering-dfars)  
 - e-CFR — reguły kradzieży tożsamości  
-- Elektroniczny kod przepisów federalnych — część 748.0 i dodatek A  
-- Reguły ochrony prywatności WDI  
-- [Broszura zabezpieczeń informacji federalnych instytucji finansowych (FFIEC)](/compliance/regulatory/offering-ffiec-us)  
+- Kodeks elektroniczny przepisów federalnych — część 748.0 i dodatek A  
+- FDIC Privacy Rules  
+- [Broszura Federalnej Rady Egzaminacyjnej Instytucji Finansowych (FFIEC) Information Security](/compliance/regulatory/offering-ffiec-us)  
 - [FedRAMP Moderate](/compliance/regulatory/offering-fedramp)  
-- FedRAMP SSP High Baseline  
+- FedRAMP SSP — wysoka linia bazowa  
 - Freedom of Information Act (FOIA)  
-- Zasady zachowania poufności informacji (FTC) dotyczące informacji finansowych klientów  
+- Prywatność ftc informacji finansowych konsumentów  
 - [Gramm-Leach-Bliley Act, Tytuł V, Podtytuł A, Prywatność finansowa](/compliance/regulatory/offering-GLBA)  
 - [HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech)  
 - [HITRUST](/compliance/regulatory/offering-hitrust)  
-- 7 Rozporządzenia w sprawie bezpieczeństwa wewnętrznego: identyfikacja, priorytetyzowanie i ochrona infrastruktury krytycznej  
-- IRS — automatyczna procedura przychodów 98–25  
+- Dyrektywa prezydencka 7 w sprawie bezpieczeństwa wewnętrznego: identyfikacja infrastruktury krytycznej, priorytetyzacja i ochrona  
+- IRS - Revenue Procedure 98-25 Automated Records  
 - IRS-P1075  
-- Minimalne standardy dopuszczalnego ryzyka dla wymiany (MARS-E) 2,0  
-- Wymagania dotyczące uniwersalnego zarządzania rekordami elektronicznymi w archiwach krajowych  
+- Minimalne dopuszczalne standardy ryzyka dla programu Exchange (MARS-E) 2.0  
+- National Archives Universal Electronic Records Management (ERM) Wymagania  
 - NIST 800-37  
 - NIST 800-53 rev.5  
-- NIST 800-63 Digital Identity Guidelines  
-- NIST 800-78-4: Algorytmy kryptograficzne i rozmiary kluczy do weryfikacji tożsamości osobistej  
-- NIST 800-137A -- Ocenianie programów iscm (Information Security Continuous Monitoring)  
+- Wytyczne dotyczące tożsamości cyfrowej NIST 800-63  
+- NIST 800-78-4: Algorytmy kryptograficzne i rozmiary kluczy na potrzeby weryfikacji tożsamości osobistej  
+- NIST 800-137A — ocenianie programów ciągłego monitorowania zabezpieczeń informacji (ISCM)  
 - [NIST 800-171](/compliance/regulatory/offering-nist-sp-800-171)  
-- NIST 800-184: Przewodnik dotyczący odzyskiwania wydarzeń typu A  
+- NIST 800-184: Przewodnik dotyczący odzyskiwania zdarzeń cyberbezpieczeństwa  
 - [NIST CSF](/compliance/regulatory/offering-nist-csf)  
 - NIST Privacy Framework
-- NIST SP 1800-5 ZARZĄDZANIE zasobami IT  
-- NIST Special Publication 1800-1 Zabezpieczanie elektronicznej dokumentacji zdrowia na urządzeniach przenośnych  
-- NIST Special Publication 800-128  
-- NIST Special Publication 800–210: Ogólne wskazówki Access Control dla systemów w chmurze  
-- [Sarbanes-Oxley Act](/compliance/regulatory/offering-sox)
+- NIST SP 1800-5 IT Asset Management  
+- NIST Special Publication 1800-1 Securing Electronic Health Records on Mobile Devices  
+- Publikacja specjalna NIST 800-128  
+- NIST Special Publication 800-210: Ogólne wskazówki Access Control dla systemów w chmurze  
+- [Ustawa o Sarbanes-Oxley](/compliance/regulatory/offering-sox)
 - [SEC 17-4(a)](/compliance/regulatory/offering-sec-17a-4)  
-- Stany Zjednoczone dotyczącej prywatności w Ameryce Północnej  
-- Usa — objaśnienie zgodnego z prawem wykorzystania danych za granicą (CLOUD)  
-- Us - Oświadczenie o prowizji i wskazówki dotyczące ujawniania informacji o ujawnianiu informacji o ujawnianiu informacji o firmy publicznej  
-- Usa — Pomoc Działu Energii (DOE) dla działań na rzecz niepodziewnej energii niepodzienej  
-- [Us — Family Educational Rights and Privacy Act (FERPA)](/compliance/regulatory/offering-ferpa)
-- Usa — Federal Information Security Modernization Act of 2014 (FISMA)  
-- Usa — ochrona i zabezpieczanie chemicznych obiektów chemicznych przed atakami chemicznymi  
+- Stany Zjednoczone Of America Privacy Act  
+- USA — wyjaśnienie zgodnej z prawem ustawy o wykorzystaniu danych za granicą (CLOUD)  
+- USA — Oświadczenie Komisji i wskazówki dotyczące ujawniania informacji o cyberbezpieczeństwie w firmie publicznej  
+- USA - Departament Energii (DOE) Pomoc dla zagranicznych działań w zakresie energii atomowej  
+- [USA - Family Educational Rights and Privacy Act (FERPA)](/compliance/regulatory/offering-ferpa)
+- USA — federalna ustawa o modernizacji zabezpieczeń informacji z 2014 r. (FISMA)  
+- USA - Ochrona i zabezpieczanie obiektów chemicznych przed atakami terrorystycznymi Act  
 
-### <a name="us-states-and-territories"></a>Stany Zjednoczone i Terytoria
+### <a name="us-states-and-territories"></a>Stany i terytoria STANÓW Zjednoczonych
 
-- Alabama — zasady 621: Powiadomienie o naruszeniu danych — WERSJA ROBOCZA  
-- Alaska — rozdział 48 — Personal Information Protection Act  
+- Alabama — Zasady 621: Powiadomienie o naruszeniu zabezpieczeń danych — WERSJA ROBOCZA  
+- Alaska - Rozdział 48 - Personal Information Protection Act  
 - Arizona — powiadomienie o naruszeniach zabezpieczeń w systemach zabezpieczeń  
-- Kod źródłowy 4, podtytuł 7, rozdział 110, osobiste Information Protection Act  
-- Kalifornia — kod pocztowy, sekcja 1798
-- California — Database Breach Act (California SB 1386)
-- California - Education Code-EDC, Title 3, Division 14, Part 65, Chapter 2.5- Social Media Privacy
-- Kalifornia — Privacy Rights Act (C UAD)  
-- Kalifornia — SB-327 — prywatność informacji: Połączone urządzenia  
+- Arkansas Code Title 4, Podtytuł 7, Rozdział 110, Personal Information Protection Act  
+- Kalifornia — sekcja kodeksu cywilnego 1798
+- Kalifornia — Ustawa o naruszeniu bazy danych (California SB 1386)
+- Kalifornia - Education Code-EDC, Tytuł 3, Dział 14, Część 65, Rozdział 2.5 - Prywatność w mediach społecznościowych
+- Kalifornia — Ustawa o prawach do prywatności (CPRA)  
+- Kalifornia — SB-327 Prywatność informacji: połączone urządzenia  
 - California Consumer Credit Reporting Agencies Act  
 - Colorado Privacy Act (CPA)  
-- [California Consumer Privacy Act (ZEA)](/compliance/regulatory/offering-ccpa)  
+- [California Consumer Privacy Act (CCPA)](/compliance/regulatory/offering-ccpa)  
 - Colorado Protections for Consumer Data Privacy  
-- Statut zmieniony w Kolorado, sekcja 6-1-716, powiadomienie o naruszeniu zabezpieczeń  
-- Connecticut — wyświetlanie i używanie numerów PESEL oraz informacji osobistych  
-- Ustawy ogólne połączenia — postanowienia ogólne dla wykonawców stanowych, którzy otrzymują informacje poufne  
-- Program connecticut Information Security Program ochrony informacji osobistych  
-- Prawo stanu Connecticut — naruszenie komputerowych danych zabezpieczających zawierających informacje osobiste  
-- D.C. Law 16-237 - Consumer Personal Information Security Breach Notification Act  
-- Delaware — student Data Privacy Protection Act  
-- Naruszenia bezpieczeństwa komputera w oprogramowania Delaware — podtytuł handlowego i handlowego II – od 12B–100 do 12B–104
-- Tytuł Florydy XXXII, rozdział 501, sekcja 501.171, Bezpieczeństwo poufnych informacji osobistych  
+- Colorado Zmienione statuty, Sekcja 6-1-716, Zawiadomienie o naruszeniu bezpieczeństwa  
+- Connecticut — wyświetlanie i używanie numerów ubezpieczenia społecznego i danych osobowych  
+- Connecticut General Statutes - Ogólne przepisy dla wykonawców państwowych, którzy otrzymują poufne informacje  
+- Connecticut Information Security Program w celu ochrony danych osobowych  
+- Connecticut State Law - Naruszenie zabezpieczeń re computerized danych zawierających dane osobowe  
+- DC. Ustawa 16-237 — Ustawa o powiadomieniu o naruszeniu zabezpieczeń informacji osobowych konsumentów  
+- Delaware — ustawa o ochronie prywatności danych uczniów  
+- Naruszenia zabezpieczeń komputerów w Delaware - Handel i handel Podtytuł II - 12B-100 do 12B-104
+- Florida Title XXXII, Rozdział 501, Sekcja 501.171, Bezpieczeństwo poufnych danych osobowych  
 - Georgia (USA) Personal Identity Protection Act  
-- Powiadomienie Guam o naruszeniu informacji osobistych  
-- Hawaje — naruszenie zabezpieczeń informacji osobistych, rozdział 487n
-- Kradzież tożsamości Idaho  
-- Illinois (740 ILCS 14/1) Informacje biometryczne privacy act  
+- Powiadomienie Guam o naruszeniach danych osobowych  
+- Hawaje - Naruszenie bezpieczeństwa danych osobowych Rozdział 487N
+- Kradzież tożsamości w stanie Idaho  
+- Illinois (740 ILCS 14/1) Ustawa o ochronie prywatności informacji biometrycznych  
 - Illinois Personal Information Protection Act  
-- Indiana Disclosure of Security Breach  
-- Iowa — Student Personal Information Protection Act  
-- Kod iowa. TytułOWĄ. Rozdział 715C. Ochrona przed naruszeniem zabezpieczeń informacji osobistych  
-- Kansas Consumer Information, ustawę o naruszeniu zabezpieczeń  
-- Powiadomienie o naruszeniu danych Wentucky  
-- Louisiana Database Security Breach Notification Law (Act No. 382)  
-- Maine — działanie w celu ochrony prywatności informacji online dla klientów konsumenckich
+- Indiana Ujawnienie naruszenia zabezpieczeń  
+- Iowa - Student Personal Information Protection Act  
+- Kod Iowa. Tytuł XVI. Rozdział 715C. Ochrona przed naruszeniami zabezpieczeń danych osobowych  
+- Kansas Consumer Information, Ustawa o naruszeniu zabezpieczeń  
+- Powiadomienie o naruszeniu zabezpieczeń danych w stanie Kentucky  
+- Louisiana Database Security Breach Notification Law (Ustawa nr. 382)  
+- Maine - Ustawy w celu ochrony prywatności informacji o konsumentach online
 - Maine — powiadomienie o ryzyku dla danych osobowych  
-- Kod instytucji rządowych stanowych Maryland — ochrona informacji przez instytucje rządowe  
-- Maryland Personal Information Protection Act — wymagania dotyczące powiadomień o naruszeniu zabezpieczeń ,KA 1154  
+- Kodeks rządu stanu Maryland — ochrona informacji przez agencje rządowe  
+- Maryland Personal Information Protection Act - Security Breach Notification Requirements, HB 1154  
 - Maryland's Student Data Privacy Act  
-- Dosyć - 201 CMR 17.00: Standardy ochrony informacji osobistych mieszkańców Rzeszowa
-- Przedzmieranie informacji o naruszeniu praw 93H sekcja 1-6  
+- Massachusetts - 201 CMR 17.00: Standardy ochrony danych osobowych mieszkańców Rzeczypospolitej
+- Massachusetts Data Breach Notification Law 93H, sekcja 1-6  
 - Michigan Identity Theft Protection Act  
-- Powiadomienie o naruszeniu zabezpieczeń Missisippi  
-- Montana — impediment kradzieży tożsamości  
-- Ustawę o ochronie danych i powiadomieniu dla klientów o naruszeniu zabezpieczeń danych (Nebraska)  
-- Nevada Chapter 603A — zabezpieczenia i prywatność informacji osobistych  
-- Nevada Celuja Bill 220 Online Privacy Law  
-- New Hampshire Right to Privacy Act  
+- Powiadomienie o naruszeniu zabezpieczeń missisipi  
+- Montana — przeszkoda w kradzieży tożsamości  
+- Nebraska's Data Protection and Consumer Notification of Data Security Breach Act  
+- Nevada Rozdział 603A - Bezpieczeństwo i prywatność danych osobowych  
+- Nevada Senat Bill 220 Online Privacy Law  
+- New Hampshire Prawo do prywatności Ustawy  
 - New Jersey Security Breach Disclosure  
-- Nowy Meksyk, rozdział 57. — ochrona prywatności (artykuł 57-12b-1–4)  
-- New Mexico Consumer Information Privacy Act  
-- New Mexico's Data Breach Notification Act  
-- Nowy Jork — 23 część NYCRR 500  
-- Kod administracyjny Nowego Jorku — powiadomienie o naruszeniu zabezpieczeń  
+- Nowy Meksyk Rozdział 57 - Ochrona prywatności (Artykuł 57-12B-1 do 4)  
+- Nowa ustawa o ochronie prywatności informacji konsumenckich w Meksyku  
+- Nowa meksykańska ustawa o powiadomieniu o naruszeniu zabezpieczeń danych  
+- Nowy Jork - 23 NYCRR Część 500  
+- Kodeks administracyjny w Nowym Jorku — powiadomienie o naruszeniu zabezpieczeń  
 - New York General Business Law - Data Security Breach Notification and Data Security Protections  
-- New York Privacy Act — DRAFT  
-- North Carolina — Identity Theft Protection Act  
-- North Chapter 51–30 Notice of security breach for personal information  
+- New York Privacy Act - DRAFT  
+- Karolina Północna - Ustawa o ochronie przed kradzieżą tożsamości  
+- Dakota Północna Rozdział 51-30 Zawiadomienie o naruszeniu bezpieczeństwa dla danych osobowych  
 - Ohio — powiadomienie o naruszeniu zabezpieczeń  
 - Ohio Data Protection Act 2018  
 - Oklahoma Security Breach Notification Act  
 - Oregon Consumer Identity Theft Information Protection Act  
-- Pensylwania naruszenie ustawy o powiadomieniu o informacjach osobistych  
-- Portoryko — informacje dla banków danych o ustawie o zabezpieczeniach banków danych  
-- Rhode Island — act. Identity Theft Protection Act  
-- Karolina Południowa — powiadomienie o naruszeniu  
-- South Sudan — powiadomienie o naruszeniu  
-- Jak 47-18-2107 Wydanie informacji osobistych dla klientów osobistych  
-- Teksas — ustawa o wymuszania kradzieży tożsamości i ochrony  
-- Zasady ochrony prywatności w Teksasie do ochrony numerów PESEL  
+- Pensylwania Naruszenie ustawy o powiadomieniu o danych osobowych  
+- Portoryko — ustawa o zabezpieczeniach banków danych  
+- Rhode Island — ustawa o ochronie przed kradzieżą tożsamości  
+- Karolina Południowa — powiadomienie o naruszeniu zabezpieczeń  
+- Dakota Południowa — zawiadomienie o naruszeniu  
+- Tennessee 47-18-2107 Wydanie danych osobowych konsumentów  
+- Texas - Identity Theft Enforcement and Protection Act  
+- Zasady ochrony prywatności w Teksasie w celu ochrony numerów ubezpieczenia społecznego  
 - Utah Consumer Credit Protection Act  
-- Utah Electronic Information or Data Privacy  
-- Vermont — act on Data Privacy and Consumer Protection  
-- Virginia Breach of Personal Information Act  
+- Prywatność informacji elektronicznych lub danych w utah  
+- Vermont — ustawa o ochronie prywatności i konsumentów danych  
+- Virginia Naruszenie ustawy o danych osobowych  
 - Virginia Consumer Data Privacy Act (CDPA)  
-- Washington DC — Consumer Security Breach Notification Standard  
-- Wirginia Zachodnia — naruszenie zabezpieczeń informacji dla klientów konsumenckich  
-- Powiadomienie o naruszeniu zabezpieczeń Wisconsin  
+- Waszyngton — standard powiadomień o naruszeniu zabezpieczeń konsumentów  
+- Wirginia Zachodnia - Naruszenie bezpieczeństwa informacji konsumenckich  
+- Powiadomienie o naruszeniu zabezpieczeń w wisconsin  
 
 ### <a name="regional"></a>Regionalne
 
-#### <a name="asia-pacific-countries"></a>Asia-Pacific kraje
+#### <a name="asia-pacific-countries"></a>kraje Asia-Pacific
 
-- Azji i Pacyfiku (APEC)
+- Zasady ochrony prywatności współpracy gospodarczej w regionie Azji i Pacyfiku (APEC)
 - Australia — ASD Essential 8  
 - Australia — ASD Essential 8 Maturity Level 1
 - Australia — ASD Essential 8 Maturity Level 2
 - Australia — ASD Essential 8 Maturity Level 3
-- Australia — National Archives Act
-- Australia — rekordy publiczne Office i standardy rekordu 2016  
+- Australia - National Archives Act
+- Australia - Public Records Office Victoria Recordkeeping Standards  
 - Australia — Spam Act 2003  
-- Kod prywatności (raportowanie środków) w Australii  
+- Australia Privacy (Credit Reporting) Code  
 - Australia Privacy Act  
-- Australian Energy Dla Sektora Cyberzabłędu (AESCSF)  
-- [Australian Information Security Registered Assessor Program (IRAP) w wersji 3](/compliance/regulatory/offering-ccsl-irap-australia)  
-- [Australijski urząd certyfikacji CPS](/compliance/regulatory/offering-apra-australia)  
-- Wyeks odpowiednie standardy zabezpieczeń danych zabezpieczających dane V2.0 (VPDSS 2.0)  
+- Australian Energy Sector Cyber Security Framework (AESCSF)  
+- [Australian Information Security Registered Assessor Program (IRAP) Wersja 3](/compliance/regulatory/offering-ccsl-irap-australia)  
+- [Australian Prudential Regulation Authority CPS](/compliance/regulatory/offering-apra-australia)  
+- Victorian Protective Data Security Standards V2.0 (VPDSS 2.0)  
 - Information Management Standard for Australian Government - National Archives of Australia (NAA)  
 - Chiny — specyfikacja zabezpieczeń informacji osobistych  
-- Prawo chłoniaka Chińska Republika Ludowa  
-- Hongkong — przepisy dotyczące danych osobowych (prywatności)  
-- India Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information Rules)
-- Indie — Information Technology Act  
+- Ustawa o cyberbezpieczeństwie Chińskiej Republiki Ludowej  
+- Hongkong — rozporządzenie w sprawie danych osobowych (prywatność)  
+- Zasady dotyczące technologii informatycznych w Indiach (rozsądnych praktyk i procedur bezpieczeństwa oraz poufnych danych osobowych lub informacji)
+- Indie — ustawa o technologii informacyjnej  
 - [Reserve Bank of India Cyber Security Framework](/compliance/regulatory/offering-rbi-irdai-india)  
-- Indonezja — Prawo 11/2008  
-- Japonia — działanie przy zakazie nieautoryzowanego dostępu do komputera  
-- Japonia — wspólny model zabezpieczeń informacji dla instytucji rządowych i powiązanych organów administracji państwowej  
-- Japonia — typowe standardy dotyczące zabezpieczeń informacji dla organów administracji państwowej i powiązanych organów administracji państwowej  
-- Japoński znak prywatności — JIS Q 15001: 2017  
-- Japoński act on the Protection of Personal Information (Law No. 57 z 2003)  
-- Korea — aktu o ochronie i używaniu informacji dotyczących środków na koncie  
-- Korea — act on Promotion of Information and Communications Network Utilization and Data Protection  
+- Indonezja - Ustawa 11/2008  
+- Japonia — ustawa o zakazie nieautoryzowanego dostępu do komputera  
+- Japonia — wspólny model środków bezpieczeństwa informacji dla agencji rządowych i agencji powiązanych  
+- Japonia — wspólne standardy dotyczące środków bezpieczeństwa informacji dla agencji rządowych i agencji powiązanych  
+- Japoński znak prywatności — JIS Q 15001 : 2017  
+- Japońska ustawa o ochronie danych osobowych (ustawa nr. 57 z 2003 r.)  
+- Korea — ustawa o wykorzystaniu i ochronie informacji kredytowych  
+- Korea — ustawa o promowaniu wykorzystania i ochrony danych w sieci informacyjnej i komunikacyjnej  
 - Korea Personal Information Protection Act  
-- Malezja — osobista ustawa o ochronie danych osobowych (PDPA)  
-- Malaysia Risk Management in Technology (RMiT)  
-- Myanmar — prawo ochrony prywatności i bezpieczeństwa użytkowników
-- Nepal — right to Information Act
-- Nowa Zelandia — aktu prywatności / 2020  
-- Nowa Zelandia — public Records Act  
-- Nowa Zelandia — zasady Rezerwowy Bank BS11  
-- Nowa Zelandia — Kod prywatności informacji dotyczących usług telekomunikacyjnych  
-- Zasady przechowywania danych dotyczących kondycji Nowej Zelandii  
+- Malezja — ustawa o ochronie danych osobowych (PDPA)  
+- Zarządzanie ryzykiem w Malezji w technologii (RMiT)  
+- Myanmar — prawo chroniące prywatność i bezpieczeństwo obywateli
+- Nepal - Ustawa o prawach do informacji
+- Nowa Zelandia - Ustawa o ochronie prywatności / 2020  
+- Nowa Zelandia - Public Records Act  
+- Nowa Zelandia — zasady outsourcingu banku rezerw BS11  
+- Nowa Zelandia — Kod prywatności informacji telekomunikacyjnych  
+- Zasady przechowywania danych kondycji Nowej Zelandii  
 - Kod prywatności informacji o kondycji Nowej Zelandii  
-- New Zealand Health Information Security Framework (HISF)  
-- New Zealand Information Security Manual (NZISM)
-- Pakistan — electronic Data Protection Act ( WERSJA ROBOCZA)  
-- Philippines BSP Information Security Management Guidelines  
-- Philippines Data Privacy Act of 2012  
-- Singapur — wskazówki dotyczące programu ABS dotyczące zadań i procedur kontrolnych dla dostawców usług z zewnątrz  
-- Singapur — Banking Act (cap.19)
-- Singapur — 2018 rok  
-- Singapur — przewodnik dotyczący ochrony przed cyberzagrożeniami za pomocą imDA IoT  
-- Singapur — urząd ds. walutowych singapurskiej struktury zarządzania ryzykiem technologicznym  
-- [Singapur — Multi-Tier Cloud Security (MTCS) Standard](/compliance/regulatory/offering-mtcs-singapore)  
-- Singapur — Personal Data Protection Act / 2012  
-- Singapore Spam Control Act  
-- Tajwan — reguły implementacji wewnętrznego systemu inspekcji i kontroli wewnętrznej instytucji płatniczych elektronicznych — 2015  
-- Tajwan — Reguły implementacji wewnętrznego systemu inspekcji i kontroli wewnętrznej banków i firm finansowych holdingowych
-- Tajwan — przepisy dotyczące zatwierdzania i administrowania usługami informacyjnymi finansowymi Przedsiębiorstwa zaimprocowały międzybankowe przelewy i rozliczenia  
-- Tajwan — przepisy dotyczące standardów systemu informacyjnego i zarządzania zabezpieczeniami instytucji płatniczych elektronicznych  
-- Taiwan Personal Data Protection Act (PDPA)  
-- Tajlandia ( PDPA)  
-- "Tajemnice handlowe" Chińska Republika Ludowa  
-- Prawo Republika Uzbekistanu dotyczące danych osobowych  
-- Wietnam — prawo ochrony praw konsumenta  
-- Wietnam — Prawo jednakowe  
-- Wietnam — prawo dotyczące zabezpieczeń informacji sieciowych
-- Wietnam — prawo dotyczące technologii informacyjnej  
+- Nowa Zelandia Health Information Security Framework (HISF)  
+- Nowa Zelandia Information Security Manual (NZISM)
+- Pakistan - Ustawa o ochronie danych elektronicznych - PROJEKT  
+- Filipiny BSP Information Security Management Wytyczne  
+- Filipiny Data Privacy Act z 2012 r.  
+- Singapur — Wytyczne ABS dotyczące celów kontroli i procedur dla dostawców usług zewnętrznych  
+- Singapur - Ustawa bankowa (cap.19)
+- Singapur — Cyberbezpieczeństwo 2018  
+- Singapur - IMDA IoT Cyber Security Guide  
+- Singapore - Monetary Authority of Singapore Technology Risk Management Framework  
+- [Singapur — wielowarstwowa usługa Cloud Security (MTCS) Standard](/compliance/regulatory/offering-mtcs-singapore)  
+- Singapur — Ustawa o ochronie danych osobowych / 2012  
+- Singapurska ustawa o kontroli spamu  
+- Tajwan — przepisy wykonawcze dotyczące systemu audytu wewnętrznego i kontroli wewnętrznej elektronicznych instytucji płatniczych - 2015 r.  
+- Tajwan — Zasady wdrażania systemu audytu wewnętrznego i kontroli wewnętrznej finansowych spółek holdingowych i banków
+- Tajwan - Przepisy regulujące zatwierdzanie i administrowanie przedsiębiorstwami usług finansowych angażujących się w transfer i rozliczenia funduszy międzybankowych  
+- Tajwan — przepisy regulujące standardy zarządzania systemem informacyjnym i zabezpieczeniami elektronicznych instytucji płatniczych  
+- Tajwańska ustawa o ochronie danych osobowych (PDPA)  
+- Tajlandia PDPA  
+- Akt tajemnic handlowych Republiki Chińskiej  
+- Prawo Republiki Uzbekistanu w sprawie danych osobowych  
+- Wietnam — prawo ochrony praw konsumentów  
+- Wietnam — prawo cyberbezpieczeństwa  
+- Wietnam — prawo zabezpieczeń informacji o sieci
+- Wietnam — ustawa o technologii informacyjnej  
 
 #### <a name="europe-middle-east-and-africa-emea"></a>Europa, Bliski Wschód i Afryka (EMEA)
 
-- Albański — prawo o ochronie danych osobowych nie. 9887
-- Austria Telecommunications Act 2003  
-- Armenia — prawo Republice Ormii o ochronie danych osobowych  
-- Prawo Białoruś na temat informacji, informatyzacja i ochrona informacji  
-- Belgia — działanie w sprawie ochrony osób naturalnych w zakresie przetwarzania danych osobowych  
-- [Belgia NBB gru 2015](/compliance/regulatory/offering-nbb-fsma-belgium)  
-- Bośnia i Hercegowina prawo o ochronie danych osobowych
-- Botswana — Data Protection Act  
-- Bułgaria, prawo ochrony danych osobowych 2002  
-- Central Bank of Kuwejt 2016  
-- Cypr Przetwarzanie praw danych osobowych  
-- Czeski — act no. 2019-110-2019 Coll. on Personal Data Processing - 2019  
-- Czeski — o zabezpieczeniach cyberprzestępczości i zmianach powiązanych ustaw (act on Cyber Security) — act no. 181  
-- Dania — act o ochronie danych  
-- Dania — zlecenie dla kierownictwa dotyczące informacji i zgody Wymagane w przypadku przechowywania informacji i uzyskiwania do nich dostępu w End-User terminalowym
-- 2013/40/EU Unii Europejskiej i Europy  
-- Dubai — rozporządzenie o ochronie danych zdrowia  
-- Przepisy dotyczące ochrony konsumentów Dubai (Telecommunications Regulatory Authority) 
-- Dubai ISR  
+- Albania — ustawa o ochronie danych osobowych nr. 9887
+- Austriacka ustawa telekomunikacyjna z 2003 r.  
+- Armenia - Prawo Republiki Armenii w sprawie ochrony danych osobowych  
+- Białoruska ustawa o informacjach, informatyzacji i ochronie informacji  
+- Belgia — ustawa o ochronie osób fizycznych w odniesieniu do przetwarzania danych osobowych  
+- [Belgia NBB grudzień 2015](/compliance/regulatory/offering-nbb-fsma-belgium)  
+- Bośnia i Hercegowina ustawy o ochronie danych osobowych
+- Botswana — ustawa o ochronie danych  
+- Bułgaria Ustawy o ochronie danych osobowych 2002  
+- Central Bank of Kuwait Cybersecurity Framework  
+- Cypr Przetwarzanie prawa dotyczącego danych osobowych  
+- Czeski — akt nr 110/2019 Coll. on Personal Data Processing - 2019  
+- Czech - On Cyber Security and Change of Related Acts (Act on Cyber Security) - Act No . 181  
+- Dania — ustawa o ochronie danych  
+- Dania — zarządzenie wykonawcze w sprawie informacji i zgody wymaganej w przypadku przechowywania i uzyskiwania dostępu do informacji w urządzeniach terminalowych End-User
+- Dyrektywa 2013/40/UE Parlamentu Europejskiego i Rady  
+- Dubaj — rozporządzenie o ochronie danych zdrowotnych  
+- Dubai Consumer Protection Regulations (Urząd Regulacji Telekomunikacji) 
+- Dubaj ISR  
 - Egipt — prawo ochrony danych  
-- Estonia — act. o ochronie danych osobowych  
-- Estonia — system zabezpieczeń dla systemów informacyjnych  
-- UE — Rozporządzenie 2006/24/EC  
-- UE — Rozporządzenie oPrivacyjności 2002 58 EC  
-- EudraLex — reguły dotyczące produktów do 2016 w Unii Europejskiej  
-- Europejska Agencja Bezpieczeństwa Sieci i Informacji (ENISA) — program Cloud Computing Information Assurance Framework  
-- Finlandia — act o ochronie danych  
-- Fińskie kryteria oceny zabezpieczeń informacji Cloud Services
-- Francja — aktu o ochronie danych  
-- Georgia Law on Personal Data Protection  
-- Niemcy — tekst z adnotacjami minimalnych wymagań zarządzania ryzykiem  
-- [Niemcy — wykaz kontrolek zgodności z chmurą (C5)](/compliance/regulatory/offering-c5-germany)  
-- Niemcy — Federal Data Protection Act  
-- Niemcy — Wymagania nadzorczy dla it w instytucjach finansowych (IT)  
-- Ghana — Data Protection Act  
+- Estonia — ustawa o ochronie danych osobowych  
+- Estonia — system środków bezpieczeństwa dla systemów informatycznych  
+- UE — dyrektywa 2006/24/WE  
+- UE — dyrektywa ePrivacy 2002 58 WE  
+- EudraLex — zasady regulujące produkty lecznicze w Unii Europejskiej  
+- Europejska Agencja Bezpieczeństwa Sieci i Informacji (ENISA) — Cloud Computing Information Assurance Framework  
+- Finlandia — ustawa o ochronie danych  
+- Fińskie kryteria oceny bezpieczeństwa informacji Cloud Services
+- Francja — ustawa o ochronie danych  
+- Gruzja Ustawy o ochronie danych osobowych  
+- Niemcy — tekst z adnotacjami minimalnych wymagań dotyczących zarządzania ryzykiem  
+- [Niemcy — Wykaz kontroli zgodności przetwarzania w chmurze (C5)](/compliance/regulatory/offering-c5-germany)  
+- Niemcy — federalna ustawa o ochronie danych  
+- Niemcy — Wymagania nadzorcze w zakresie IT w instytucjach finansowych (BAIT)  
+- Ghana — ustawa o ochronie danych  
 - Ustawa o ochronie danych w Irlandii  
 - Izrael — przepisy dotyczące ochrony prywatności (transfer danych do baz danych za granicą)  
-- Izrael : prawo ochrony prywatności  
-- Zasady dotyczące usług chmurze & Jordan Cloud  
-- Ustawa o ochronie danych kenia  
-- Luxembourg Act  
-- Malta — Act o ochronie danych  
+- Prawo o ochronie prywatności w Izraelu  
+- Jordan Cloud Platforms & Services Policy  
+- Kenia Data Protection Act  
+- Ustawa luksemburski  
+- Malta — ustawa o ochronie danych  
 - Mauritius Data Protection Act 2004  
-- Republika Bułgarii prawo o ochronie danych osobowych  
-- Czarnogóra — prawo ochrony danych osobowych  
-- Rozporządzenie o ochronie danych w Nigeria  
-- Oman — Prawo transakcji elektronicznych  
-- Zasady bezpieczeństwa w chmurze w Katarze
-- Rumunia — prawo ochrony danych 190/2018  
-- Rosja — Prawo federalne 149-FZ dotyczące informacji, technologii informacyjnej i zabezpieczeń informacji
+- Republika Mołdawii ustawy o ochronie danych osobowych  
+- Czarnogóra — ustawa o ochronie danych osobowych  
+- Rozporządzenie o ochronie danych w Nigerii  
+- Oman — ustawa o transakcjach elektronicznych  
+- Qatar Cloud Security Policy
+- Rumunia — ustawa o ochronie danych 190/2018  
+- Rosja - Ustawa federalna 149-FZ w sprawie informacji, technologii informatycznych i bezpieczeństwa informacji
 - [Prawo federalne Federacji Rosyjskiej dotyczące danych osobowych](/compliance/regulatory/offering-russia-data-localization)  
-- South Africa Consumer Protection ACT 68 2008  
-- South Africa Electronic Communications and Transactions Act, 2002  
-- Republika Południowej Afryki — promocja na dostęp do informacji Act  
-- Południowoafrykański popia (POPIA)  
-- Słowacja Act on the Protection of Personal Data  
-- Hiszpania — Struktury zabezpieczeń Nacjedy (Hiszpania)  
-- Szwajcaria — federalna aktu ochrony danych (FADP, Federal Act on Data Protection)  
-- Turcja — Ochrona danych osobowych KVKK 6698  
-- UAE — federalna ustawa o zwalczaniu cyberprzestępczości  
-- UAE — prawo federalne dotyczące transakcji elektronicznych i handlu
-- UAE — Prawo federalne nr 2 z 2019 r. W sprawie używania technologii informacyjnej i komunikacyjnej (JEŻELI) w polach zdrowia  
-- UAE — standardy NESA Information Assurance  
-- UAE Regulatory Policy TRA — Internet of Things  
-- UAE Federal  UAE Law law reguling the Telecommunications Sektora telekomunikacyjnego  
-- Uganda — zasady ochrony danych i prywatności  
-- Uk - Cyber Security for Suppliers Standard 05-138  
-- Zjednoczone Królestwo — przepisy dotyczące działań na zajęciach dzieci / 2011  
+- Republika Południowej Afryki Consumer Protection ACT 68 2008  
+- Republika Południowej Afryki Electronic Communications and Transactions Act, 2002  
+- Republika Południowej Afryki — promocja ustawy o dostępie do informacji  
+- Południowoafrykańskie POPIA  
+- Słowacka ustawa o ochronie danych osobowych  
+- Hiszpania — Nation Security Framework  
+- Szwajcaria — federalna ustawa o ochronie danych (FADP)  
+- Turcja — KVKK Ochrona danych osobowych 6698  
+- ZJEDNOCZONE EMIRATY ARABSKIE - ustawa dekretu federalnego w sprawie zwalczania przestępstw cybernetycznych  
+- ZJEDNOCZONE EMIRATY ARABSKIE — prawo federalne dotyczące transakcji elektronicznych i handlu
+- ZJEDNOCZONE EMIRATY ARABSKIE — ustawa federalna nr 2 z 2019 r. o korzystaniu z technologii informacyjno-komunikacyjnych (ICT) w dziedzinach zdrowia  
+- ZJEDNOCZONE EMIRATY ARABSKIE — NESA Information Assurance Standards  
+- ZASADY REGULACYJNE ZEA TRA — Internet rzeczy  
+- Ustawa dekretu federalnego ZEA regulująca sektor telekomunikacyjny  
+- Uganda — ustawa o ochronie danych i ochronie prywatności  
+- Wielka Brytania — Cyber Security for Defence Suppliers Standard 05-138  
+- Wielka Brytania - Offshore Petroleum Activities Regulations / 2011  
 - [UK Cyber Essentials](/compliance/regulatory/offering-cyber-essentials-plus-uk)  
-- UK Data Protection Act  
-- UK Data Retention Act  
+- Brytyjska ustawa o ochronie danych  
+- Ustawa o przechowywaniu danych w Wielkiej Brytanii  
 - Prywatność i komunikacja elektroniczna w Wielkiej Brytanii  
-- Ukraina — ochrona danych osobowych  
-- Jemen — Prawo Jemenu po prawej stronie dostępu do informacji  
+- Ukraina — Ochrona prawa dotyczącego danych osobowych  
+- Jemen — prawo jemeńskie prawa dostępu do informacji  
 
 #### <a name="latin-america"></a>Ameryka Łacińska
 
-- Antigua i Barbuda — Data Protection Act /2013  
-- Bahamy — Data Protection Act  
-- Barbados — rachunek za ochronę danych 2019  
-- Barbados — Electronic Transactions Act  
-- Bermudy — Electronic Transaction Act  
+- Antigua i Barbuda — ustawa o ochronie danych /2013  
+- Bahamy — ustawa o ochronie danych  
+- Barbados — ustawa o ochronie danych 2019  
+- Barbados - Ustawa o transakcjach elektronicznych  
+- Bermudy — ustawa o transakcjach elektronicznych  
 - Saint Lucia Data Protection Act  
-- Trinidad i Tobago Data Protection (act 13 z 2011)  
+- Ochrona danych w Trynidadzie i Tobago (ustawa 13 z 2011 r.)  
 
 #### <a name="north-america"></a>Ameryka Północna
 
-- Kanada — naruszenie przepisów zabezpieczających  
-- Kanada — Kolumbia Brytyjska — Zabezpieczenia & informacji — FOIPPA  
-- [Kanada — Office przewodnika na temat zabezpieczeń Self-Assessment instytucjach finansowych](/compliance/regulatory/offering-osfi-canada)  
-- Canada — Personal Health Information Protection Act (PHIPA) 2020  
-- Kanada — dokumenty osobiste Information Protection dokumenty elektroniczne (PIPEDA)  
+- Kanada — naruszenie przepisów dotyczących zabezpieczeń  
+- Kanada — Kolumbia Brytyjska — Prywatność informacji & Bezpieczeństwo — FOIPPA  
+- [Kanada - Office nadzorcy instytucji finansowych Cyber Security Self-Assessment Guide](/compliance/regulatory/offering-osfi-canada)  
+- Kanada — Personal Health Information Protection Act (PHIPA) 2020  
+- Kanada — ustawa o Information Protection osobistych i dokumentach elektronicznych (PIPEDA)  
 - Kanada — chronione B
-- Kanada . Podstawowe mechanizmy kontroli zabezpieczeń cyberzabłędu dla małych i średnich organizacji  
+- Canada Cybersecure — podstawowe mechanizmy kontroli bezpieczeństwa cybernetycznego dla małych i średnich organizacji  
 - CAN-SPAM Act  
-- Information Security Management Act — prowincja Kolumbii Brytyjskiej, Kalifornia  
-- Meksyk — Federalna Ochrona Konsumentów  
-- Meksyk — prawo federalne dotyczące ochrony danych osobowych posiadane przez podmioty prywatne  
+- Information Security Management Act - Prowincja Kolumbii Brytyjskiej, CA  
+- Meksyk — federalna ustawa o ochronie konsumentów  
+- Meksyk — federalna ustawa o ochronie danych osobowych przechowywanych przez podmioty prywatne  
 
 #### <a name="south-america"></a>Ameryka Południowa
 
-- [Argentina - Personal Data Protection Act 25.326](/compliance/regulatory/offering-pdpa-argentina)  
-- Brazylia — kod ochrony konsumentów nie. 8078 (Office 365)
+- [Argentyna — Ustawa o ochronie danych osobowych 25.326](/compliance/regulatory/offering-pdpa-argentina)  
+- Brazylia — Nr ustawy o kodeksie ochrony konsumentów 8078 (Office 365)
 - Brazylia — ogólne prawo ochrony danych (LGPD)  
-- Kolumbia — kolumbia — nie. 1377/2013  
-- Kolumbia — zewnętrzna litera cykliczna 007 z 2018 r.  
-- Kolumbia — law 1266/2008- Habeas Data Act  
-- Peruszyta Lawa 29733 Prawo ochrony prywatności danych
+- Kolumbia - Dekret nr. 1377/2013  
+- Kolumbia — zewnętrzny okrągły list 007 z 2018 r.  
+- Kolumbia - Ustawa 1266/2008 - Habeas Data Act  
+- Peruwiańska ustawa prawna z 29733 r. o ochronie prywatności danych

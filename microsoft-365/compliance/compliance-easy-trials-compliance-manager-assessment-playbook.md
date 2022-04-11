@@ -1,5 +1,5 @@
 ---
-title: Podręcznik wersji próbnej testów premium w menedżerze zgodności firmy Microsoft
+title: Podręcznik wersji próbnej ocen programu Microsoft Compliance Manager w warstwie Premium
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,84 +14,84 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Podręcznik wersji próbnej testów premium menedżera zgodności firmy Microsoft.
-ms.openlocfilehash: 47b9e37cb3b73733028254849048cf1f0f058448
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Podręcznik wersji próbnej ocen programu Microsoft Compliance Manager w warstwie Premium.
+ms.openlocfilehash: f50060fa5e9f037fbe1301496f18422684c38d3d
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680077"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759860"
 ---
-# <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>Podręcznik wersji próbnej: Testy premium w menedżerze zgodności firmy Microsoft
+# <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>Podręcznik wersji próbnej: oceny premium w programie Microsoft Compliance Manager
 
-Zapraszamy do podręcznika wersji próbnej testów premium menedżera zgodności firmy Microsoft.
+Witamy w podręczniku wersji próbnej oceny premium programu Microsoft Compliance Manager.
 
-Ten podręcznik pomoże Ci w pełnej wykorzystaniu 90-dniowej bezpłatnej wersji próbnej, ucząc Cię korzystania z kompleksowego zestawu szablonów oceniania (dodatku) klasy premium.
+Ten podręcznik pomoże Ci w maksymalnym wykorzystaniu 90-dniowej bezpłatnej wersji próbnej, ucząc cię, jak korzystać z kompleksowego zestawu szablonów oceny premium (dodatku).
 
-Korzystając z rekomendacji firmy Microsoft, szybko zobaczysz, jak szablony ocen klasy premium mogą ułatwić Twojej organizacji ocenę ryzyka oraz efektywne reagowanie na globalne, regionalne i branżowe wymagania prawne.
+Korzystając z zaleceń firmy Microsoft, szybko zobaczysz, w jaki sposób szablony oceny premium mogą pomóc organizacji w ocenie ryzyka i efektywnym reagowaniu na globalne, regionalne i przemysłowe wymagania prawne.
 
-## <a name="step-1-get-to-know-compliance-manager"></a>Krok 1. Poznaj Menedżera zgodności
+## <a name="step-1-get-to-know-compliance-manager"></a>Krok 1. Zapoznanie się z Menedżerem zgodności
 
-Strona [przeglądu Menedżera zgodności](compliance-manager.md) jest najlepszym pierwszym etapem kompleksowego przeglądu tego, czym jest Menedżer zgodności i jak to działa. Możesz również przejść bezpośrednio do kluczowych sekcji naszej dokumentacji, korzystając z poniższych linków:
+Nasza [strona przeglądu programu Compliance Manager](compliance-manager.md) jest najlepszym pierwszym przystankiem w celu kompleksowego przeglądu tego, czym jest Menedżer zgodności i jak działa. Możesz również przejść bezpośrednio do kluczowych sekcji naszej dokumentacji, korzystając z poniższych linków:
 
-1. [Opis wyniku w zakresie zgodności](compliance-manager.md#understanding-your-compliance-score)
-1. [Omówienie kluczowych elementów: kontrolek, ocen, szablonów i działań usprawnień](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-1. [Opis pulpitu nawigacyjnego Menedżera zgodności](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
+1. [Omówienie oceny zgodności](compliance-manager.md#understanding-your-compliance-score)
+1. [Omówienie kluczowych elementów: kontrolek, ocen, szablonów i akcji poprawy](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
+1. [Omówienie pulpitu nawigacyjnego programu Compliance Manager](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 1. [Filtrowanie widoku pulpitu nawigacyjnego](compliance-manager-setup.md#filtering-your-dashboard-view)
-1. [Dowiedz się więcej o działaniach usprawnień](compliance-manager-setup.md#improvement-actions-page)
-1. [Opis ocen](compliance-manager.md#assessments)
-1. [Wykonaj szybkie skanowanie środowiska za pomocą centrum zgodności firmy Microsoft Menedżer konfiguracji](compliance-manager-mcca.md)
+1. [Dowiedz się więcej o akcjach ulepszania](compliance-manager-setup.md#improvement-actions-page)
+1. [Omówienie ocen](compliance-manager.md#assessments)
+1. [Wykonaj szybkie skanowanie środowiska przy użyciu Configuration Manager zgodności firmy Microsoft](compliance-manager-mcca.md)
 
 ## <a name="step-2-configure-compliance-manager"></a>Krok 2. Konfigurowanie Menedżera zgodności
 
-Rozpoczynanie pracy z ocenami i podejmowanie działań udoskonalania w celu wdrożenia kontroli i poprawienia wyniku zgodności.
+Rozpocznij pracę z ocenami i podejmij działania ulepszeń, aby zaimplementować mechanizmy kontroli i poprawić wskaźnik zgodności.
 
-1. [Wybieranie wbudowanego szablonu w celu utworzenia pierwszego formularza oceniania i zarządzania nimi](compliance-manager-assessments.md)
+1. [Wybierz wstępnie utworzony szablon do utworzenia pierwszej oceny i zarządzania nią](compliance-manager-assessments.md)
 1. [Dowiedz się, jak używać szablonów do tworzenia ocen](compliance-manager-templates.md)
-1. [Wykonywanie prac implementacji i testów nad działaniami udoskonalania w celu ukończenia kontroli w testach](compliance-manager-improvement-actions.md)
+1. [Wykonywanie prac związanych z implementacją i testowaniem akcji poprawy w celu ukończenia kontroli w ocenach](compliance-manager-improvement-actions.md)
 1. [Lepsze zrozumienie wpływu różnych akcji na wynik zgodności](compliance-score-calculation.md)
 
-## <a name="step-3-review-included-assessment-templates"></a>Krok 3. Przejrzyj dołączone szablony oceniań
+## <a name="step-3-review-included-assessment-templates"></a>Krok 3. Przegląd dołączonych szablonów oceny
 
-Menedżer zgodności udostępnia kompleksowy zestaw szablonów do tworzenia ocen. Te szablony mogą ułatwić organizacji przestrzeganie wymagań krajowych, regionalnych i branżowych dotyczących gromadzenia i używania danych. Tutaj znajduje się lista szablonów dostępnych w ramach [subskrypcji](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-assessments-are-included-by-default-free-of-cost).
+Menedżer zgodności udostępnia kompleksowy zestaw szablonów do tworzenia ocen. Te szablony mogą pomóc twojej organizacji w spełnieniu krajowych, regionalnych i branżowych wymagań regulujących zbieranie i wykorzystywanie danych. Zobacz listę szablonów dołączonych do twojej subskrypcji [tutaj](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-assessments-are-included-by-default-free-of-cost).
 
-Menedżer zgodności oferuje również ponad 300 szablonów prawnych lub premium, które można kupić jako dodatek. Lista [jest tutaj](compliance-manager-templates-list.md#premium-templates). Wszystkie szablony klasy premium (dołączone do Twojej subskrypcji lub kupione jako dodatek) będą zawierały uniwersalną wersję tych szablonów, umożliwiając zarządzanie zgodnością z każdym produktem lub usługą. Te szablony testów premium możesz wypróbować podczas okresu próbnego premium testów.
+Menedżer zgodności oferuje również ponad 300 szablonów regulacyjnych lub premium, które można kupić jako dodatek. Zobacz listę [tutaj](compliance-manager-templates-list.md#premium-templates). W przypadku szablonów w warstwie Premium (dołączonych do subskrypcji lub zakupionych jako dodatek) otrzymasz uniwersalną wersję tych szablonów, umożliwiając zarządzanie zgodnością z dowolnym produktem lub usługą. Te szablony oceny w warstwie Premium można wypróbować podczas okresu próbnego oceny w warstwie Premium.
 
-## <a name="step-4-enable-the-premium-assessment-trial"></a>Krok 4. Włączanie wersji próbnej testów premium
+## <a name="step-4-enable-the-premium-assessment-trial"></a>Krok 4. Włączanie wersji próbnej oceny premium
 
-Licencje wersji próbnej umożliwiają korzystanie z 25 szablonów premium przez 90 dni. Możesz wybrać z listy ponad 300 szablonów premium. Nie musisz wybierać wszystkich 25 szablonów jednocześnie. Po wybraniu tej opcji licencjonowane szablony będą dostępne do użycia w ciągu 4 godzin od uzyskania licencji wersji próbnej.
+Licencje próbne umożliwiają korzystanie z 25 szablonów w warstwie Premium przez 90 dni. Będzie można wybrać spośród listy ponad 300 szablonów w warstwie Premium. Nie musisz jednocześnie wybierać wszystkich 25 szablonów. Po wybraniu tych szablonów licencjonowane są dostępne do użycia w ciągu 4 godzin od uzyskania licencji próbnej.
 
-Istnieją dwa sposoby włączania wersji próbnej dodatku Premium Assessment: za pośrednictwem pulpitu nawigacyjnego Menedżera zgodności lub za pośrednictwem Microsoft 365 próbnej zgodności.
+Istnieją dwa sposoby włączania wersji próbnej dodatku do oceny Premium: za pośrednictwem pulpitu nawigacyjnego programu Compliance Manager lub wersji próbnej Microsoft 365 Compliance.
 
-### <a name="enable-trial-via-the-compliance-manager-dashboard"></a>Włączanie wersji próbnej za pośrednictwem pulpitu nawigacyjnego Menedżera zgodności
+### <a name="enable-trial-via-the-compliance-manager-dashboard"></a>Włączanie wersji próbnej za pośrednictwem pulpitu nawigacyjnego programu Compliance Manager
 
-1. Na pulpicie nawigacyjnym Menedżera zgodności wybierz **pozycję Wypróbuj teraz** na banerze.
-1. Wybierz **pozycję Tak,** aby uzyskać dostęp do wersji próbnych szablonów premium.
+1. Na pulpicie nawigacyjnym Programu Compliance Manager wybierz pozycję **Wypróbuj teraz** na banerze.
+1. Wybierz pozycję **Tak** , aby uzyskać dostęp do wersji próbnych szablonów w warstwie Premium.
 
 ### <a name="enable-trial-via-the-compliance-trial"></a>Włączanie wersji próbnej za pośrednictwem wersji próbnej zgodności
 
-1. W Centrum zgodności wybierz pozycję Wersje **próbne** w lewym okienku nawigacji. Zostaną wyświetlane dostępne wersje próbne.
-1. Wybierz **pozycję Wypróbuj teraz, aby** uzyskać oceny premium w Menedżerze zgodności.
-1. Przed skonfigurowaniem wersji próbnej zostanie przedstawiona strona z informacjami oraz możliwość dowiedzenia się więcej.
-1. Po wybraniu **przycisku Skonfiguruj** może upłynieć do dwóch godzin, aż zmiany zostaną wprowadzone. Aby wyświetlić dostępne szablony, musisz zalogować się ponownie.
+1. W Centrum zgodności wybierz pozycję **Wersje próbne** w okienku nawigacji po lewej stronie. Zostaną wyświetlone dostępne wersje próbne.
+1. Wybierz **pozycję Wypróbuj teraz** , aby zapoznać się z ocenami premium programu Compliance Manager.
+1. Przed skonfigurowaniem wersji próbnej zostanie wyświetlona strona informacyjna i możliwość dowiedzenia się więcej.
+1. Wybranie pozycji **Skonfiguruj** może potrwać do dwóch godzin, aby zmiany zaczęły obowiązywać. Aby wyświetlić dostępne szablony, musisz zalogować się ponownie.
 
-### <a name="during-the-trial"></a>W trakcie okresu próbnego
+### <a name="during-the-trial"></a>Podczas okresu próbnego
 
-Po rozpoczęciu okresu próbnego oceny premium na pulpicie nawigacyjnym zostanie wyświetlony podsumowanie, które będzie zawierało aktualizacje:
+Po rozpoczęciu wersji próbnej oceny premium na pulpicie nawigacyjnym zostanie wyświetlone podsumowanie, które cię aktualizuje:
 
 - Liczba utworzonych nowych ocen
-- Liczba działań udoskonalania
-- Punkty zdobyte w trakcie okresu próbnego w kierunku wyniku zgodności
+- Liczba podjętych akcji poprawy
+- Punkty zdobyte podczas okresu próbnego w kierunku oceny zgodności
 - Linki do dostępnych szablonów
-- Czas pozostał w wersji próbnej
+- Czas pozostały w wersji próbnej
 
 ## <a name="additional-resources"></a>Dodatkowe materiały
 
-**Dokumenty Microsoft**: Uzyskaj szczegółowe informacje na temat tego, jak działają testy premium w menedżerze zgodności i jak najlepiej wdrożyć je w swojej organizacji. Odwiedź [witrynę Dokumenty](compliance-manager-templates.md).
+**Microsoft Docs**: uzyskaj szczegółowe informacje na temat sposobu działania ocen premium w programie Compliance Manager i jak najlepiej zaimplementować je w organizacji. Odwiedź stronę [Docs](compliance-manager-templates.md).
 
-**Klipy wideo**: zapoznaj się z następującymi klipami wideo, aby dowiedzieć się więcej:
+**Jak korzystać z filmów wideo**: zapoznaj się z następującymi filmami wideo, aby dowiedzieć się więcej:
 
 - [Tworzenie ocen i monitorowanie postępów za pomocą Menedżera zgodności](https://techcommunity.microsoft.com/t5/video-hub/create-assessments-and-monitor-your-progress-with-compliance/ba-p/1687992?search-action-id=375363186777&search-result-uid=1687992)
-- [Rozszerzanie i dostosowywanie ocen do potrzeb w Menedżerze zgodności](https://techcommunity.microsoft.com/t5/video-hub/extend-and-customize-assessments-to-suit-your-needs-in/ba-p/1687991?search-action-id=375363186777&search-result-uid=1687991)
+- [Rozszerzanie i dostosowywanie ocen zgodnie z potrzebami w menedżerze zgodności](https://techcommunity.microsoft.com/t5/video-hub/extend-and-customize-assessments-to-suit-your-needs-in/ba-p/1687991?search-action-id=375363186777&search-result-uid=1687991)
 
-**Zakup testy premium**: Uzyskaj informacje na temat dostępnych planów i cen. [Odwiedź centrum administracyjne platformy Microsoft 365 — Zakup usług](https://admin.microsoft.com/#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+**Ocena zakupu w warstwie Premium**: uzyskaj informacje o dostępnych planach i cenach. [Odwiedź Centrum administracyjne platformy Microsoft 365 — zakup usług](https://admin.microsoft.com/#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)

@@ -15,140 +15,140 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Skróty i przekazywanie tabeli źródła informacji poufnych w celu dokładnego dopasowania danych do typów informacji poufnych.
+description: Skrót i przekaż tabelę źródła informacji poufnych, aby uzyskać dokładne dane zgodne z typami informacji poufnych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8726b17a3f87d61c8d63be7137ec8e465a5cd9a
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 4c40802a76ab09dc86dcada5ebfd17187136f42e
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568483"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760234"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Utwórz skrót i przekaż tabelę źródła informacji poufnych dla dokładnych typów informacji poufnych opartych na dopasowaniu danych 
 
-W tym artykule pokazano, jak skrótować i przekazywać tabelę źródła informacji poufnych.
+W tym artykule przedstawiono sposób tworzenia skrótów i przekazywania tabeli źródła informacji poufnych.
 
-## <a name="hash-and-upload-the-sensitive-information-source-table"></a>Skróty i przekazywanie tabeli źródła informacji poufnych
+## <a name="hash-and-upload-the-sensitive-information-source-table"></a>Skrót i przekazywanie tabeli źródła informacji poufnych
 
-W tym etapie:
+W tej fazie:
 
-1. konfigurowanie niestandardowej grupy zabezpieczeń i konta użytkownika
-2. konfigurowanie narzędzia EDM Upload Agent
-3. Za pomocą narzędzia EDM Upload Agent możesz za pomocą skrótu dodać wartość soli do tabeli źródła poufnych informacji i przekazać ją.
+1. Konfigurowanie niestandardowej grupy zabezpieczeń i konta użytkownika
+2. Konfigurowanie narzędzia agenta Upload EDM
+3. Użyj narzędzia agenta Upload EDM, aby utworzyć skrót z wartością soli, tabelą źródła informacji poufnych i przekazać ją.
 
-Skróty i przekazywanie można wykonać przy użyciu jednego komputera lub oddzielić krok skrótu od kroku przekazywania, aby zapewnić większe bezpieczeństwo.
+Mieszanie i przekazywanie można wykonać przy użyciu jednego komputera lub oddzielić krok skrótu od kroku przekazywania w celu zwiększenia bezpieczeństwa.
 
-Jeśli chcesz skrótować i przekazywać z jednego komputera, musisz to zrobić z komputera, który może bezpośrednio połączyć się z Twoją Microsoft 365 dzierżawy. Wymaga to, aby plik tabeli źródłowej z informacjami o poufnym tekście był na tym komputerze do skrótów.
+Jeśli chcesz utworzyć skrót i przekazać dane z jednego komputera, musisz to zrobić z komputera, który może bezpośrednio połączyć się z dzierżawą Microsoft 365. Wymaga to, aby plik tabeli źródłowej informacji poufnych w postaci zwykłego tekstu był na tym komputerze na potrzeby tworzenia skrótów.
 
-Jeśli nie chcesz udostępnić pliku tabeli źródłowej z informacjami o poufnym tekście na komputerze z dostępem bezpośrednim, możesz go połączyć z komputerem, który znajduje się w bezpiecznym miejscu, a następnie skopiować plik skrótu i pliku soli do komputera, który może bezpośrednio połączyć się z dzierżawą usługi Microsoft 365 w celu przekazania. W scenariuszu rozdzielania skrótów i przekazywania będziesz potrzebować funkcji EDMUploadAgent na obu komputerach.
+Jeśli nie chcesz uwidoczniać pliku tabeli źródłowej informacji poufnych w postaci zwykłego tekstu na komputerze z dostępem bezpośrednim, możesz użyć skrótu na komputerze znajdującym się w bezpiecznej lokalizacji, a następnie skopiować plik skrótu i plik soli na komputer, który może bezpośrednio połączyć się z dzierżawą Microsoft 365 w celu przekazania. W scenariuszu rozdzielania skrótu i przekazywania potrzebny jest agent EDMUploadAgent na obu komputerach.
 
 > [!IMPORTANT]
-> Jeśli do utworzenia pliku schematu został użyty schemat dokładnego dopasowania danych i kreator typów informacji poufnych, musisz  pobrać schemat dla tej procedury, jeśli jeszcze tego nie zrobiono. Zobacz [Eksportowanie pliku schematu EDM w formacie XML](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
+> Jeśli do utworzenia pliku schematu użyto kreatora dokładnego dopasowania danych i typów informacji poufnych, ***musisz*** pobrać schemat dla tej procedury, jeśli jeszcze tego nie zrobiono. Zobacz [Eksport pliku schematu EDM w formacie XML](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
 
 > [!NOTE]
-> Jeśli w Twojej organizacji klucz klienta został Microsoft 365 [na](customer-key-overview.md) poziomie dzierżawy, funkcja dokładnego dopasowania danych automatycznie użyje funkcji szyfrowania. Ta usługa jest dostępna tylko dla licencjonowanych dzierżawców usługi E5 w chmurze komercyjnej.
+> Jeśli Twoja organizacja skonfigurowała [klucz klienta dla Microsoft 365 na poziomie dzierżawy](customer-key-overview.md), dokładne dopasowanie danych automatycznie użyje jej funkcji szyfrowania. Jest to dostępne tylko dla dzierżaw licencjonowanych E5 w chmurze komercyjnej.
 
 ### <a name="best-practices"></a>Najważniejsze wskazówki
 
-Oddziel procesy skrótów i przekazywania poufnych danych, aby łatwiej wyizolować wszelkie problemy w procesie.
+Oddziel procesy tworzenia skrótów i przekazywania poufnych danych, aby ułatwić izolowanie wszelkich problemów w tym procesie.
 
-Po produkcji oddziel te dwa kroki w większości przypadków. Wykonanie procesu skrótów na odizolowanym komputerze, a następnie przeniesienie pliku w celu przekazania na komputer internetowy gwarantuje, że rzeczywiste dane nie są nigdy dostępne w postaci jednoznacznie tekstowej na komputerze, który mógł zostać naruszony ze względu na połączenie z Internetem.
+Po przejściu do środowiska produkcyjnego w większości przypadków należy oddzielić te dwa kroki. Wykonanie procesu tworzenia skrótów na izolowanym komputerze, a następnie przesłanie pliku do przekazania na komputer internetowy gwarantuje, że rzeczywiste dane nigdy nie będą dostępne w postaci zwykłego tekstu na komputerze, który mógł zostać naruszony z powodu połączenia z Internetem.
 
-### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>Upewnij się, że tabela danych poufnych nie ma problemów z formatowaniem.
+### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>Upewnij się, że poufna tabela danych nie ma problemów z formatowaniem
 
-Przed rozpoczęciem skrótów i przekazania poufnych danych wykonaj wyszukiwanie w celu weryfikacji obecności znaków specjalnych, które mogą powodować problemy podczas analizowania zawartości.
-Aby sprawdzić, czy tabela jest w formacie odpowiednim do używania z usługą EDM, można użyć agenta przekazywania programu EDM z następującą składnią:
+Przed utworzeniem skrótu i przekazaniem poufnych danych wykonaj wyszukiwanie w celu zweryfikowania obecności znaków specjalnych, które mogą powodować problemy z analizowaniem zawartości.
+Możesz sprawdzić, czy tabela ma format odpowiedni do użycia z programem EDM, używając agenta przekazywania EDM z następującą składnią:
 
 ```powershell
 EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 ```
 
-Jeśli narzędzie wskazuje na niezgodność liczby kolumn, może to być spowodowane obecnością przecinków lub cudzysłowów w wartościach tabeli, które są mylone z ogranicznikami kolumn. O ile nie otaczają one całej wartości, pojedyncze i podwójne cudzysłowy mogą powodować błędne identyfikację miejsca, w którym zaczyna się lub kończy pojedyncza kolumna.
+Jeśli narzędzie wskazuje niezgodność liczby kolumn, może to być spowodowane obecnością przecinków lub znaków cudzysłowu w wartościach w tabeli, które są mylone z ogranicznikami kolumn. O ile nie otaczają one całej wartości, cudzysłowy pojedyncze i podwójne mogą powodować błędną identyfikację miejsca rozpoczęcia lub zakończenia pojedynczej kolumny.
 
-**Jeśli znajdziesz pojedyncze lub podwójne cudzysłowy otaczające pełne wartości**: możesz zostawić je bez nich.
+**Jeśli znajdziesz pojedyncze lub podwójne znaki cudzysłowu otaczające pełne wartości**: możesz pozostawić je w ich postaci.
 
-Jeśli w wartości znajdują się znaki cudzysłowu lub przecinki **pojedyncze:** imię i nazwisko osoby Tomasz O'Neil lub nazwa miasta 's-Gravenhage, które zaczyna się znakiem apostrofu, musisz zmodyfikować proces eksportowania danych użyty do wygenerowania tabeli informacji poufnych w taki sposób, aby takie kolumny znalazły się w podwójnych cudzysłowach.
+**Jeśli znajdziesz pojedyncze znaki cudzysłowu lub przecinki wewnątrz wartości**: na przykład imię osoby Tom O'Neil lub miasto 's-Gravenhage rozpoczynające się znakiem apostrofu, musisz zmodyfikować proces eksportowania danych używany do generowania poufnej tabeli informacji w celu otaczania takich kolumn podwójnymi cudzysłowami.
 
-**Jeśli wewnątrz wartości** znajdują się znaki podwójnego cudzysłowu, warto użyć formatu rozdzielanego tabulatorami dla tabeli, która jest mniej podatna na tego typu problemy.
+**Jeśli wewnątrz wartości znajdują się znaki podwójnego cudzysłowu**, lepszym rozwiązaniem może być użycie formatu rozdzielanego tabulatorem dla tabeli, który jest mniej podatny na takie problemy.
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-- konto służbowe dla Microsoft 365, które zostanie dodane do **grupy zabezpieczeń EDMDataUploaders\_**
-- komputer Windows 10 lub Windows Server 2016 z platformą .NET w wersji 4.6.2 <!--4.7.2 un comment this around 9/29-->do uruchamiania funkcji EDMUploadAgent
-- katalog na komputerze do przekazywania dla:
+- konto służbowe dla Microsoft 365, które zostanie dodane do grupy zabezpieczeń **EDMDataUploaders\_**
+- maszyna Windows 10 lub Windows Server 2016 z platformą .NET w wersji 4.6.2 <!--4.7.2 un comment this around 9/29-->do uruchamiania EDMUploadAgent
+- katalog na maszynie przekazywania dla:
   - [Agent Upload EDM](#links-to-edm-upload-agent-by-subscription-type)
-  - poufnych elementów w formacie .csv, tsv lub pipeta (|) w **PatientRecords.csv** przykładach
-  - Skróty wyjściowe i pliki soli utworzone w tej procedurze
-  - nazwę magazynu danych z **plikuedm.xml** , na przykład jej `PatientRecords`
+  - plik poufnego elementu w formacie .csv, tsv lub potoku (|), **PatientRecords.csv** w naszych przykładach
+  - wyjściowych plików skrótu i soli utworzonych w tej procedurze
+  - nazwa magazynu danych z pliku **edm.xml** , na przykład jego `PatientRecords`
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Konfigurowanie grupy zabezpieczeń i konta użytkownika
 
-1. Jako administrator globalny przejdź do centrum administracyjnego, używając odpowiedniego [linku](sit-get-started-exact-data-match-based-sits-overview.md#portal-links-for-your-subscription) dla swojej subskrypcji, [i](/office365/admin/email/create-edit-or-delete-a-security-group) utwórz **grupę zabezpieczeń o nazwie EDMDataUploaders\_**.
+1. Jako administrator globalny przejdź do centrum administracyjnego przy użyciu odpowiedniego [linku dla subskrypcji](sit-get-started-exact-data-match-based-sits-overview.md#portal-links-for-your-subscription) i [utwórz grupę zabezpieczeń](/office365/admin/email/create-edit-or-delete-a-security-group) o nazwie **EDMDataUploaders\_**.
 
 2. Dodaj co najmniej jednego użytkownika do grupy zabezpieczeń **EDMDataUploaders\_**. (Ci użytkownicy będą zarządzać bazą danych informacji poufnych).
 
-### <a name="hash-and-upload-from-one-computer"></a>Skróty i przekazywanie z jednego komputera
+### <a name="hash-and-upload-from-one-computer"></a>Skrót i przekazywanie z jednego komputera
 
-Ten komputer musi mieć bezpośredni dostęp do Microsoft 365 dzierżawy.
+Ten komputer musi mieć bezpośredni dostęp do dzierżawy Microsoft 365.
 
 > [!NOTE]
 > Przed rozpoczęciem tej procedury upewnij się, że jesteś członkiem grupy zabezpieczeń **EDMDataUploaders\_**.
 
 > [!TIP]
->Opcjonalnie można uruchomić sprawdzanie poprawności dla pliku tabeli źródłowej informacji poufnych, aby sprawdzić, czy nie występują w nim błędy przed przekazaniem przez uruchomienie:
+>Opcjonalnie możesz uruchomić walidację pliku tabeli źródła informacji poufnych, aby sprawdzić, czy występują błędy przed przekazaniem, uruchamiając polecenie:
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
-> Aby uzyskać więcej informacji na temat EdmUploadAgent.exe obsługiwanych parametrów
+> Aby uzyskać więcej informacji na temat wszystkich uruchomionych EdmUploadAgent.exe obsługiwanych parametrów
 >
 > `EdmUploadAgent.exe /?`
 
-#### <a name="links-to-edm-upload-agent-by-subscription-type"></a>Linki do agenta przekazywania usługi EDM według typu subskrypcji
+#### <a name="links-to-edm-upload-agent-by-subscription-type"></a>Linki do agenta przekazywania EDM według typu subskrypcji
 
-- [Komercyjna + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) — większość klientów komercyjnych powinna używać tej
-- [GCC-wysoka —](https://go.microsoft.com/fwlink/?linkid=2137521) ta rozwiązanie jest przeznaczone specjalnie dla subskrybentów chmury o wysokim poziomie zabezpieczeń
-- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) — jest to przeznaczone specjalnie Stany Zjednoczone klientów w chmurze Department of Defense
+- [Komercyjne i GCC](https://go.microsoft.com/fwlink/?linkid=2088639) — większość klientów komercyjnych powinna z tego korzystać
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) — jest to przeznaczone specjalnie dla subskrybentów chmury dla instytucji rządowych o wysokim poziomie zabezpieczeń
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) — jest to przeznaczone specjalnie dla klientów w chmurze departamentu obrony Stany Zjednoczone
 
-1. Utwórz katalog roboczy dla usługi EDMUploadAgent. Na przykład **C:\EDM\Dane**. Umieść tam **PatientRecords.csv** pliku.
+1. Utwórz katalog roboczy dla EDMUploadAgent. Na przykład **C:\EDM\Data**. Umieść tam plik **PatientRecords.csv** .
 
-2. Pobierz i zainstaluj [odpowiedniego agenta usługi EDM Upload twojej](#links-to-edm-upload-agent-by-subscription-type) subskrypcji do katalogu utworzonego w kroku 1.
+2. Pobierz i zainstaluj odpowiedniego [agenta Upload EDM](#links-to-edm-upload-agent-by-subscription-type) dla subskrypcji w katalogu utworzonym w kroku 1.
 
    > [!NOTE]
-   > Funkcja EDMUploadAgent w powyższych linkach została zaktualizowana w celu automatycznego dodania wartości soli do skrótów danych. Można też podać własną wartość soli. Po użyciu tej wersji nie będzie można używać poprzedniej wersji programu EDMUploadAgent.
+   > Agent EDMUploadAgent w powyższych linkach został zaktualizowany w celu automatycznego dodania wartości soli do danych skrótu. Alternatywnie możesz podać własną wartość soli. Po użyciu tej wersji nie będzie można używać poprzedniej wersji EDMUploadAgent.
    >
-   > Dane z EDMUploadAgent można przekazywać do dowolnego magazynu danych tylko dwa razy dziennie.
+   > Dane za pomocą EDMUploadAgent można przekazać do dowolnego magazynu danych tylko dwa razy dziennie.
 
-3. Autoryzuj agenta Upload usługi EDM, otwórz okno Wiersza polecenia jako administrator, przełącz się do katalogu **C:\EDM\Data**, a następnie uruchom następujące polecenie:
+3. Autoryzuj agenta Upload EDM, otwórz okno wiersza polecenia jako administrator, przejdź do katalogu **C:\EDM\Data**, a następnie uruchom następujące polecenie:
 
    `EdmUploadAgent.exe /Authorize`
 
    > [!IMPORTANT]
-   > Należy uruchomić **folder EdmUploadAgent** z folderu, w którym jest zainstalowany, i wskazać pełną ścieżkę do plików danych.
+   > Należy uruchomić **narzędzie EdmUploadAgent** z folderu, w którym jest zainstalowany, i wskazać pełną ścieżkę do plików danych.
 
-4. Zaloguj się za pomocą konta służbowego lub szkolnego, Microsoft 365 które zostało dodane do EDM_DataUploaders zabezpieczeń. Informacje o dzierżawie są wyodrębnione z konta użytkownika w celu nawiązaniu połączenia.
+4. Zaloguj się przy użyciu konta służbowego, aby uzyskać Microsoft 365 dodane do grupy zabezpieczeń EDM_DataUploaders. Informacje o dzierżawie są wyodrębniane z konta użytkownika w celu nawiązania połączenia.
 
-   OPCJONALNIE: Jeśli do utworzenia schematu został użyty schemat dokładnego dopasowania danych i kreatora typów informacji poufnych,  należy pobrać schemat do użycia w tych procedurach, jeśli jeszcze tego nie zrobić. Uruchom to polecenie w oknie wierszu polecenia:
+   OPCJONALNIE: Jeśli do utworzenia schematu użyto kreatora dokładnego dopasowania danych i typów informacji poufnych, ***musisz*** go pobrać do użycia w tych procedurach, jeśli jeszcze tego nie zrobiono. Uruchom to polecenie w oknie wiersza polecenia:
 
    ```dos
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
    ```
 
-5. Aby skrótować i przekazać poufne dane, uruchom następujące polecenie w oknie Wiersz polecenia:
+5. Aby utworzyć skrót i przekazać dane poufne, uruchom następujące polecenie w oknie wiersza polecenia:
 
    ```dos
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
 
    > [!NOTE]
-   > Domyślnym formatem pliku danych poufnych są wartości rozdzielane przecinkami. Możesz określić plik rozdzielany tabulatorami, wskazując opcję "{Tab}" z parametrem /ColumnSeparator lub plik rozdzielany potokami, wskazując opcję "|".
+   > Domyślnym formatem pliku danych poufnych są wartości rozdzielone przecinkami. Plik rozdzielony tabulatorem można określić, wskazując opcję "{Tab}" za pomocą parametru /ColumnSeparator lub można określić plik rozdzielony potokiem, wskazując opcję "|".
    >
    > Przykład: `EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5`
 
-   Jeśli tabela z informacjami poufnymi ma jakieś niepoprawnie sformatowane wartości, ale chcesz zaimportować pozostałe dane, ignorując nieprawidłowe wiersze, możesz użyć *parametru /AllowedBadLinesPercentage* w poleceniu. W powyższym przykładzie określono próg pięciu procentów. Oznacza to, że narzędzie będzie skrótować i przekazać tabelę z informacjami poufnymi, nawet jeśli maksymalnie pięć procent wierszy jest nieprawidłowych.
+   Jeśli tabela informacji poufnych zawiera nieprawidłowo sformatowane wartości, ale chcesz zaimportować pozostałe dane, ignorując mimo to nieprawidłowe wiersze, możesz użyć parametru */AllowedBadLinesPercentage* w poleceniu. Powyższy przykład określa próg pięciu procent. Oznacza to, że narzędzie będzie uruchamiać skróty i przekazywać tabelę informacji poufnych, nawet jeśli maksymalnie pięć procent wierszy jest nieprawidłowych.
 
-   To polecenie automatycznie dodaje do skrótu losowo wygenerowaną wartość soli, co zapewnia większe bezpieczeństwo. Opcjonalnie, jeśli chcesz użyć własnej wartości soli, dodaj do polecenia polecenie **/Salt \<saltvalue\>** . Ta wartość musi mieć długość 64 znaków i może zawierać tylko znaki a-z oraz 0-9 znaków.
+   To polecenie automatycznie doda losowo wygenerowaną wartość soli do skrótu w celu zwiększenia bezpieczeństwa. Opcjonalnie, jeśli chcesz użyć własnej wartości soli, dodaj **/Salt \<saltvalue\>** do polecenia . Ta wartość musi mieć długość 64 znaków i może zawierać tylko znaki a-z i od 0 do 9 znaków.
 
-6. Sprawdź stan przekazywania, uruchamiając to polecenie:
+6. Sprawdź stan przekazywania, uruchamiając następujące polecenie:
 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
@@ -156,16 +156,16 @@ Ten komputer musi mieć bezpośredni dostęp do Microsoft 365 dzierżawy.
 
    Przykład: `EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords`
 
-   Poszukaj stanu w **przetwarzaniuInProgress**. Sprawdzaj ponownie co kilka minut, aż stan zmieni się na **Ukończone**. Po ukończeniu stanu dane funkcji nr.EM będą gotowe do użycia. W zależności od rozmiaru pliku tabeli z informacjami poufnymi może to potrwać od kilku minut do kilku godzin.
+   Poszukaj stanu **w obszarze ProcessingInProgress**. Sprawdzaj ponownie co kilka minut, aż stan zmieni się na **Ukończono**. Po zakończeniu stanu dane EDM są gotowe do użycia. W zależności od rozmiaru pliku tabeli źródła informacji poufnych może to potrwać od kilku minut do kilku godzin.
 
 > [!TIP]
-> Jeśli chcesz otrzymywać powiadomienia, gdy przekazane poufne dane będą gotowe do użycia, wykonaj procedury w te sposób: Tworzenie powiadomień w celu dokładnego dopasowania [danych](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities).
+> Jeśli chcesz otrzymywać powiadomienia po przygotowaniu przekazanych poufnych danych do użycia, postępuj zgodnie z procedurami w [sekcji Tworzenie powiadomień, aby uzyskać dokładne działania dopasowania danych](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities).
 
-### <a name="separate-hash-and-upload"></a>Oddziel skrót i przekaż
+### <a name="separate-hash-and-upload"></a>Oddzielne skróty i przekazywanie
 
-Wykonaj skrót na komputerze w bezpiecznym środowisku. Na obu komputerach musi być zainstalowany program **EDMUploadAgent** .
+Wykonaj skrót na komputerze w bezpiecznym środowisku. Na obu komputerach musi być zainstalowany agent **EDMUploadAgent** .
 
-OPCJONALNIE: Jeśli do utworzenia schematu został użyty kreator dokładnego dopasowania danych i kreatora typów informacji poufnych, a schemat nie został jeszcze pobrany, uruchom następujące polecenie w oknie wiersza polecenia, aby pobrać plik w formacie XML:
+OPCJONALNIE: Jeśli do utworzenia schematu użyto kreatora dokładnego dopasowania danych i typów informacji poufnych, a schemat nie został jeszcze pobrany, uruchom następujące polecenie w oknie wiersza polecenia, aby pobrać plik w formacie XML:
 
 ```dos
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
@@ -184,27 +184,27 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```
 
    > [!NOTE]
-   > Domyślnym formatem pliku danych poufnych są wartości rozdzielane przecinkami. Możesz określić plik rozdzielany tabulatorami, wskazując opcję "{Tab}" z parametrem /ColumnSeparator lub plik rozdzielany potokami, wskazując opcję "|".
+   > Domyślnym formatem pliku danych poufnych są wartości rozdzielone przecinkami. Plik rozdzielony tabulatorem można określić, wskazując opcję "{Tab}" za pomocą parametru /ColumnSeparator lub można określić plik rozdzielony potokiem, wskazując opcję "|".
 
-   Spowoduje to wyprowadzenie pliku skrótu i pliku soli z tymi rozszerzeniami, jeśli nie określono opcji **/Salt \<saltvalue\>** :
+   Spowoduje to wyświetlenie pliku skrótu i pliku solnego z tymi rozszerzeniami, jeśli nie określono opcji **/Salt \<saltvalue\>** :
 
    - . EdmHash
    - . EdmSalt
 
-2. Skopiuj te pliki w bezpieczny sposób do komputera, na który chcesz przekazać plik tabeli źródłowej poufnych informacji (PatientRecords) do dzierżawy.
+2. Skopiuj te pliki w bezpieczny sposób na komputer, którego użyjesz do przekazania pliku tabeli źródła informacji poufnych (PatientRecords) do dzierżawy.
 
-3. Autoryzuj agenta Upload usługi EDM, otwórz okno Wiersza polecenia jako administrator, przełącz się do katalogu **C:\EDM\Data**, a następnie uruchom następujące polecenie:
+3. Autoryzuj agenta Upload EDM, otwórz okno wiersza polecenia jako administrator, przejdź do katalogu **C:\EDM\Data**, a następnie uruchom następujące polecenie:
 
    ```dos
    EdmUploadAgent.exe /Authorize
    ```
 
    > [!IMPORTANT]
-   > Należy uruchomić **folder EdmUploadAgent** z folderu, w którym jest zainstalowany, i wskazać pełną ścieżkę do plików danych.
+   > Należy uruchomić **narzędzie EdmUploadAgent** z folderu, w którym jest zainstalowany, i wskazać pełną ścieżkę do plików danych.
 
-4. Zaloguj się za pomocą konta służbowego lub szkolnego, Microsoft 365 które zostało dodane do EDM_DataUploaders zabezpieczeń. Informacje o dzierżawie są wyodrębnione z konta użytkownika w celu nawiązaniu połączenia.
+4. Zaloguj się przy użyciu konta służbowego, aby uzyskać Microsoft 365 dodane do grupy zabezpieczeń EDM_DataUploaders. Informacje o dzierżawie są wyodrębniane z konta użytkownika w celu nawiązania połączenia.
 
-5. Aby przekazać skróty danych, uruchom następujące polecenie w wierszu Windows polecenia:
+5. Aby przekazać dane skrótu, uruchom następujące polecenie w wierszu polecenia Windows:
 
    ```dos
    EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\ /ColumnSeparator ["{Tab}"|"|"]
@@ -216,15 +216,15 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\**PatientRecords.EdmHash**
    ```
 
-6. Aby sprawdzić, czy poufne dane zostały przekazane, uruchom następujące polecenie w oknie Wiersz polecenia:
+6. Aby sprawdzić, czy dane poufne zostały przekazane, uruchom następujące polecenie w oknie wiersza polecenia:
 
    ```dos
    EdmUploadAgent.exe /GetDataStore
    ```
 
-   Zostanie wyświetlona lista magazynów danych oraz data ich ostatniej aktualizacji.
+   Zostanie wyświetlona lista magazynów danych i czas ich ostatniej aktualizacji.
 
-7. Jeśli chcesz wyświetlić wszystkie dane przesłane do określonego magazynu, uruchom następujące polecenie w wierszu polecenia aplikacji Windows, aby wyświetlić listę wszystkich magazynów danych oraz informacje o tym, kiedy zostały zaktualizowane:
+7. Jeśli chcesz wyświetlić wszystkie dane przekazane do określonego magazynu, uruchom następujące polecenie w wierszu polecenia Windows, aby wyświetlić listę wszystkich magazynów danych i czasu ich aktualizacji:
 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>

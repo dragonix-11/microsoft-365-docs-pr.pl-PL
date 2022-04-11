@@ -1,5 +1,5 @@
 ---
-title: Odświeżanie dokładnego pliku tabeli źródła informacji dopasowanego do twoich potrzeb
+title: Odśwież dokładny plik tabeli źródła informacji zgodnych z danymi
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,39 +15,39 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Odświeżanie pliku tabeli źródłowej informacji poufnych.
+description: Odśwież plik tabeli źródła informacji poufnych.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 347ff88391a19cb3d8688b1142e524a163159b6f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525490"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760850"
 ---
-# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Odświeżanie dokładnie tych danych, które są zgodne z plikiem tabeli źródłowej informacji poufnych 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Odświeżanie dokładnego pliku tabeli źródła informacji poufnych zgodnych z danymi poufnymi 
 
-Bazę danych z informacjami poufnymi można odświeżać nawet 5 razy w okresie 24 godzin. Będzie trzeba ponownie przechować i przekazać tabelę źródła informacji poufnych.
+Bazę danych informacji poufnych można odświeżać maksymalnie 5 razy co 24 godziny. Musisz ponownie przekazać i przekazać tabelę źródła informacji poufnych.
 
-1. Ponownie wyeksportuj poufne dane do aplikacji, na przykład Microsoft Excel, i zapisz plik w formacie rozdzielanym .csv, formacie tsv lub rozdzielanym pipetą (|). Zachowaj tę samą nazwę i lokalizację pliku, które były używane podczas uprzednio zhakowanych i przekazanych plików. Aby uzyskać [szczegółowe informacje na temat eksportowania](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) poufnych danych i uzyskiwania odpowiedniego formatu, zobacz Eksportowanie danych źródłowych w celu uzyskania dokładnego dopasowania danych na podstawie typu informacji poufnych.
+1. Ponownie wyeksportuj poufne dane do aplikacji, takie jak Microsoft Excel, i zapisz plik w formacie .csv, tsv lub rozdzielanym potokiem (|). Zachowaj tę samą nazwę pliku i lokalizację, której użyto podczas poprzedniego skrótu i przekazanego pliku. Zobacz [Eksportowanie danych źródłowych w celu dokładnego dopasowania danych do typu informacji poufnych opartych](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) na danych, aby uzyskać szczegółowe informacje na temat eksportowania poufnych danych i uzyskiwania ich w prawidłowym formacie.
 
       > [!NOTE]
-      > Jeśli nie ma żadnych zmian w strukturze (nazwach pól) pliku tabeli źródłowej informacji poufnych, nie musisz wprowadzać żadnych zmian w pliku schematu bazy danych podczas odświeżania danych. Jeśli jednak musisz wprowadzić zmiany, odpowiednio edytuj schemat bazy danych i pakiet reguł. Zobacz [Zarządzanie schematem dokładnego dopasowania danych](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) , aby uzyskać instrukcje edytowania lub usuwania schematu. Zobacz Tworzenie [dokładnego dopasowania danych do typów informacji poufnych/pakietu reguł,](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) aby uzyskać instrukcje edytowania lub usuwania pakietu EDM SIT/pakietu reguł.
+      > Jeśli nie ma żadnych zmian w strukturze (nazwach pól) pliku tabeli źródła informacji poufnych, podczas odświeżania danych nie trzeba wprowadzać żadnych zmian w pliku schematu bazy danych. Jeśli jednak musisz wprowadzić zmiany, pamiętaj, aby odpowiednio edytować schemat bazy danych i pakiet reguł. Zobacz [Zarządzanie dokładnym schematem dopasowania danych](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) , aby uzyskać instrukcje edytowania lub usuwania schematu. Zobacz Create exact data match sensitive information type/rule package for the steps to edit or remove your EDM SIT/rule package ( [Tworzenie dokładnego dopasowania danych do poufnych informacji typu/pakietu reguł](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) ), aby zapoznać się z krokami edytowania lub usuwania pakietu EDM SIT/rule.
 
-2. Użyj procedur z [skrótu i przekaż](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) tabelę źródła informacji poufnych, aby dokładnie dopasować dane do typów informacji poufnych, aby przekazać plik źródłowy tabeli z informacjami poufnymi.
+2. Użyj procedur w obszarze [Skrót i przekaż tabelę źródła informacji poufnych, aby dokładnie dopasować dane do typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) , aby przekazać plik źródłowy tabeli informacji poufnych.
 
-2. Za pomocą harmonogramu [zadań można](/windows/desktop/TaskSchd/task-scheduler-start-page) zautomatyzować tabelę Skrót i przekazać tabelę źródła informacji poufnych, aby dokładnie dopasować dane do [procedury typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) . Zadania można planować przy użyciu kilku metod:
+3. Za pomocą [harmonogramu zadań](/windows/desktop/TaskSchd/task-scheduler-start-page) można zautomatyzować skrót [i przekazać tabelę źródła informacji poufnych, aby uzyskać dokładne dane zgodne z procedurą typów informacji poufnych](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) . Zadania można zaplanować przy użyciu kilku metod:
 
-   |Metoda|Co należy zrobić|
+   |Metoda|Co robić|
    |---|---|
-   |Windows PowerShell|Zapoznaj się z [dokumentacją programu ScheduledTasks](/powershell/module/scheduledtasks/) i [przykładem skryptu programu PowerShell](#example-powershell-script-for-task-scheduler) w tym artykule|
-   |Interfejs API harmonogramu zadań|Zapoznaj się [z dokumentacją harmonogramu](/windows/desktop/TaskSchd/using-the-task-scheduler) zadań|
-   |Windows interfejsu użytkownika|W Windows kliknij przycisk **Start** i wpisz tekst Harmonogram zadań. Następnie na liście wyników kliknij prawym przyciskiem myszy pozycję **Harmonogram** zadań i wybierz pozycję **Uruchom jako administrator**.|
+   |Windows PowerShell|Zobacz dokumentację [scheduledtasks](/powershell/module/scheduledtasks/) i [przykładowy skrypt programu PowerShell](#example-powershell-script-for-task-scheduler) w tym artykule|
+   |Interfejs API harmonogramu zadań|Zobacz dokumentację [harmonogramu zadań](/windows/desktop/TaskSchd/using-the-task-scheduler)|
+   |interfejs użytkownika Windows|W Windows kliknij przycisk **Start** i wpisz Harmonogram zadań. Następnie na liście wyników kliknij prawym przyciskiem myszy harmonogram **zadań** i wybierz pozycję **Uruchom jako administrator**.|
 
 ### <a name="example-powershell-script-for-task-scheduler"></a>Przykładowy skrypt programu PowerShell dla harmonogramu zadań 
 
-W tej sekcji znajduje się przykładowy skrypt programu PowerShell, za pomocą których można zaplanować zadania związane z przekazywaniem skrótów danych i przekazywaniem mieszanych danych:
+Ta sekcja zawiera przykładowy skrypt programu PowerShell, za pomocą którego można zaplanować zadania tworzenia skrótów danych i przekazywania danych skrótu:
 
-#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Planowanie skrótów i przekazywanie w połączonym kroku
+#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Planowanie tworzenia skrótów i przekazywania w połączonym kroku
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -82,7 +82,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Planowanie skrótów i przekazywanie ich jako oddzielnych kroków
+#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Planowanie tworzenia skrótów i przekazywania jako oddzielnych kroków
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)

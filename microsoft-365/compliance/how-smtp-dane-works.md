@@ -1,5 +1,5 @@
 ---
-title: Jak działa uwierzytelnianie oparte na systemie DNS SMTP nazwanych jednostek (DANE) do zabezpieczania komunikacji za pośrednictwem poczty e-mail
+title: Jak działa uwierzytelnianie oparte na usłudze DNS SMTP dla jednostek nazwanych (DANE) w celu zabezpieczenia komunikacji za pośrednictwem poczty e-mail
 f1.keywords:
 - NOCSH
 ms.author: v-mathavale
@@ -13,290 +13,292 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Dowiedz się, jak usługa SMTP uwierzytelniania nazwanych obiektów (DANE) na podstawie systemu DNS działa w celu zabezpieczania komunikacji e-mail między serwerami poczty.
-ms.openlocfilehash: 32c39859d9bfdf292fd9c7a315a0ee1ee08eae2e
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: Dowiedz się, jak oparte na usłudze SMTP uwierzytelnianie dns jednostek nazwanych (DANE) działa w celu zabezpieczenia komunikacji poczty e-mail między serwerami poczty.
+ms.openlocfilehash: 2af2a166ff73bbe7888ed9265ec8733105eb2007
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63009721"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759440"
 ---
-# <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Jak działa uwierzytelnianie oparte na systemie DNS SMTP dla nazwanych jednostek (DANE)
+# <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Jak działa uwierzytelnianie oparte na usłudze DNS SMTP dla jednostek nazwanych (DANE)
 
-Protokół SMTP to główny protokół używany do przesyłania wiadomości między serwerami poczty i domyślnie nie jest bezpieczny. Protokół Transport Layer Security (TLS) został wprowadzony kilka lat temu w celu obsługi zaszyfrowanej transmisji wiadomości przez SMTP. Jest on często stosowany skojarzeń, a nie jako wymaganie, pozostawiając ruch poczty e-mail w przejrzystej tekście, narażona na punkt przecięcia przez fikcyjne szybkowanie. Ponadto protokół SMTP określa adresy IP serwerów docelowych za pośrednictwem publicznej infrastruktury DNS, która jest podatna na spoofing i ataki typu Man-in-the-Middle (MITM). W związku z tym utworzono wiele nowych standardów w celu zwiększenia bezpieczeństwa wysyłania i odbierania wiadomości e-mail. Jednym z nich jest uwierzytelnianie oparte na systemie DNS dla nazwanych obiektów (DANE).
-  
-Dane dla protokołu [SMTP RFC 7672](https://tools.ietf.org/html/rfc7672) korzysta z informacji o obecności rekordu TLSA (Transport Layer Security Authentication) w rekordzie DNS domeny ustawionym do zasygnalizować domenę, a jej serwery poczty obsługują DANE. Jeśli nie ma rekordu TLSA, rozpoznawanie DNS przepływu poczty e-mail będzie działać jak zwykle, bez konieczności przeprowadzania jakichkolwiek testów danych. Rekord TLSA bezpiecznie sygnalizuje obsługę usługi TLS i publikuje zasady DANE dla domeny. Dlatego wysyłanie serwerów poczty może pomyślnie uwierzytelnić wiarygodne serwery poczty odbieranej przy użyciu danych SMTP. Dzięki temu można ją bezbłędnie obniżyć i ataki MITM. Dane są zależne bezpośrednio od rekordu DNSSEC, który działa przez cyfrowe podpisywanie rekordów dla odnośników DNS za pomocą kryptografii klucza publicznego. Testy DNSSEC występują w przypadku rekurenujących rozpoznawania nazw DNS, czyli serwerów DNS, które wysyłają zapytania DNS dla klientów. Dzięki rekordowi DNSSEC rekordy DNS nie są modyfikowane i są autentyczne.  
+Protokół SMTP jest głównym protokołem używanym do przesyłania komunikatów między serwerami poczty i domyślnie nie jest bezpieczny. Protokół Transport Layer Security (TLS) został wprowadzony wiele lat temu w celu obsługi szyfrowanej transmisji komunikatów za pośrednictwem protokołu SMTP. Jest to powszechnie używane oportunistycznie, a nie jako wymóg, pozostawiając dużo ruchu poczty e-mail w postaci zwykłego tekstu, podatne na przechwycenie przez nikczemnych aktorów. Ponadto protokół SMTP określa adresy IP serwerów docelowych za pośrednictwem publicznej infrastruktury DNS, która jest podatna na fałszowanie i ataki typu man-in-the-middle (MITM). Doprowadziło to do utworzenia wielu nowych standardów w celu zwiększenia bezpieczeństwa wysyłania i odbierania wiadomości e-mail. Jednym z nich jest uwierzytelnianie nazwane jednostek (DANE) oparte na systemie DNS.
 
-Gdy rekord MX, rekordy A/AAAA i rekordy zasobów pokrewne w rekordzie DNSSEC domeny zostaną zwrócone do rekurentywnego rozpoznawania nazw DNS jako DNSSEC authentic, serwer poczty wysyłającej poprosi o rekord TLSA odpowiadający wpisom hosta MX. Jeśli rekord TLSA jest rekordem, który został sprawdzony jako autentyczny przy użyciu innego sprawdzania DNSSEC, rekurencyjna funkcji rozpoznawania nazw DNS zwróci rekord TLSA na wysyłający serwer poczty. 
+DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) używa obecności rekordu TLSA (Transport Layer Security Authentication) w rekordzie DNS domeny, aby zasygnalizować domenę, a jej serwery poczty obsługują DANE. Jeśli nie ma rekordu TLSA, rozpoznawanie nazw DNS dla przepływu poczty będzie działać jak zwykle bez próby sprawdzenia DANE. Rekord TLSA bezpiecznie sygnalizuje obsługę protokołu TLS i publikuje zasady DANE dla domeny. Dlatego wysyłanie serwerów poczty może pomyślnie uwierzytelnić prawidłowe serwery poczty odbiorczej przy użyciu protokołu SMTP DANE. Dzięki temu jest odporny na ataki z powodu obniżenia poziomu i mitm. Dane ma bezpośrednie zależności od serwera DNSSEC, który działa poprzez cyfrowe podpisywanie rekordów odnośników DNS przy użyciu kryptografii klucza publicznego. Testy DNSSEC są wykonywane dla cyklicznych rozpoznawania nazw DNS, serwerów DNS, które tworzą zapytania DNS dla klientów. Serwer DNSSEC zapewnia, że rekordy DNS nie są modyfikowane i są autentyczne.
 
-Po otrzymaniu uwierzytelniania rekordu TLSA serwer wysyłający pocztę nawiązał połączenie SMTP z hostem MX skojarzonym z tym autentycznym rekordem TLSA. Wysyłający serwer poczty spróbuje skonfigurować usługę TLS i porównać certyfikat TLS serwera z danymi w rekordzie TLSA, aby sprawdzić, czy docelowy serwer poczty połączony z nadawcą jest legalnym serwerem poczty odbieranej. W przypadku powodzenia uwierzytelniania komunikat zostanie przesłany (przy użyciu protokołu TLS). Jeśli uwierzytelnianie zakończy się niepowodzeniem lub protokół TLS nie jest obsługiwany przez serwer docelowy, usługa Exchange Online ponownie spróbuje cały proces sprawdzania poprawności, począwszy od zapytania DNS dla tej samej domeny docelowej po 15 minutach, a potem 15 minut po tym czasie, a następnie co godzinę przez następne 24 godziny. Jeśli po 24 godzinach ponownego ponowienia uwierzytelnianie nadal się nie powiedzie, wiadomość wygaśnie, a do nadawcy zostanie wygenerowany raport o błędzie ze szczegółami błędów. 
+Gdy rekordy zasobów MX, A/AAAA i DNSSEC dla domeny zostaną zwrócone do rekursywnego rozpoznawania nazw DNS jako uwierzytelnianie DNSSEC, serwer poczty wysyłającej poprosi o rekord TLSA odpowiadający wpisowi lub wpisom hosta MX. Jeśli rekord TLSA jest obecny i sprawdzony jako autentyczny przy użyciu innego sprawdzania DNSSEC, cykliczny program rozpoznawania nazw DNS zwróci rekord TLSA do serwera poczty wysyłającej.
 
-## <a name="what-are-the-components-of-dane"></a>Co to są składniki danych?
+Po otrzymaniu autentycznego rekordu TLSA serwer poczty wysyłającej ustanawia połączenie SMTP z hostem MX skojarzonym z autentycznym rekordem TLSA. Serwer poczty wysyłającej spróbuje skonfigurować protokół TLS i porównać certyfikat TLS serwera z danymi w rekordzie TLSA, aby sprawdzić, czy docelowy serwer poczty połączony z nadawcą jest legalnym serwerem poczty odbiorczej. Komunikat zostanie przesłany (przy użyciu protokołu TLS), jeśli uwierzytelnianie zakończy się pomyślnie. W przypadku niepowodzenia uwierzytelniania lub jeśli protokół TLS nie jest obsługiwany przez serwer docelowy, Exchange Online ponawia próbę wykonania całego procesu weryfikacji, rozpoczynając od zapytania DNS dla tej samej domeny docelowej ponownie po 15 minutach, a następnie 15 minut po tym, a następnie co godzinę przez następne 24 godziny. Jeśli uwierzytelnianie nadal kończy się niepowodzeniem po 24 godzinach ponawiania próby, komunikat wygaśnie, a do nadawcy zostanie wygenerowany identyfikator NDR ze szczegółami błędu.
+
+## <a name="what-are-the-components-of-dane"></a>Jakie są składniki dane?
 
 ### <a name="tlsa-resource-record"></a>Rekord zasobu TLSA
 
-Rekord TLS Authentication (TLSA) służy do skojarzenia certyfikatu X.509 serwera lub wartości klucza publicznego z nazwą domeny, która zawiera ten rekord. Rekordy TLSA mogą być zaufane tylko wtedy, gdy w domenie włączono funkcję DNSSEC. Jeśli hostowanie domeny jest przez Ciebie hostowane za pomocą dostawcy dns, może to być ustawienie dostępne podczas konfigurowania domeny z nim. Aby dowiedzieć się więcej o podpisywaniu strefy DNSSEC, odwiedź ten link: [Omówienie zabezpieczeń DNSSEC | Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11)). 
-  
+Rekord uwierzytelniania TLS (TLSA) służy do kojarzenia certyfikatu X.509 serwera lub wartości klucza publicznego z nazwą domeny zawierającą rekord. Rekordy TLSA można ufać tylko wtedy, gdy serwer DNSSEC jest włączony w twojej domenie. Jeśli używasz dostawcy DNS do hostowania domeny, może to być ustawienie oferowane podczas konfigurowania domeny z nimi. Aby dowiedzieć się więcej na temat podpisywania stref DNSSEC, odwiedź ten link: [Omówienie | DNSSEC Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11)).
+
 Przykładowy rekord TLSA:
-  
+
 :::image type="content" source="../media/compliance-trial/example-TLSA-record.png" alt-text="Przykładowy rekord TLSA" lightbox="../media/compliance-trial/example-TLSA-record.png":::
 
-Istnieją cztery pola, które można skonfigurować jako unikatowe dla typu rekordu TLSA: 
+Istnieją cztery konfigurowalne pola unikatowe dla typu rekordu TLSA:
 
-**Pole użycie certyfikatu**: określa sposób, w jaki wysyłający serwer poczty e-mail powinien zweryfikować certyfikat docelowego serwera poczty e-mail.
+**Pole użycia certyfikatu**: określa, w jaki sposób serwer poczty e-mail wysyłającej powinien zweryfikować certyfikat docelowego serwera poczty e-mail.
 
-|Value  |Akronim  |Opis |
-|---------|---------|---------|
-|01<sup></sup>     |PKIX-TA          |Używany certyfikat to publiczny urząd certyfikacji zakotwiczenia zaufania z łańcucha zaufania X.509.          |
-|11<sup></sup>     |PKIX-EE         |Certyfikat jest sprawdzany jako serwer docelowy. Testy DNSSEC muszą zweryfikować autentyczność.          |
-|2     |DANE-TA         |Użyj klucza prywatnego serwera z drzewa X.509, który musi być weryfikowany przez kotwicę zaufania w łańcuchu zaufania. Rekord TLSA określa kotwicę zaufania, która ma być używana do sprawdzania poprawności certyfikatów TLS dla domeny.         |
-|3     |DANE-EE         |Są zgodne tylko z certyfikatem serwera docelowego.           |
+|Value|Akronim|Opis|
+|---|---|---|
+|01<sup></sup>|PKIX-TA|Używany certyfikat to publiczny urząd certyfikacji zakotwiczony w zaufaniu z łańcucha zaufania X.509.|
+|11<sup></sup>|PKIX-EE|Sprawdzony certyfikat jest serwerem docelowym; Testy DNSSEC muszą zweryfikować jego autentyczność.|
+|2|DANE-TA|Użyj klucza prywatnego serwera z drzewa X.509, który musi zostać zweryfikowany przez kotwicę zaufania w łańcuchu zaufania. Rekord TLSA określa kotwicę zaufania, która ma być używana do weryfikowania certyfikatów protokołu TLS dla domeny.|
+|3|DANE-EE|Pasuje tylko do certyfikatu serwera docelowego.|
 
-<sup>1</sup> Exchange Online zgodnie z wytycznymi implementacji protokołu RFC, że wartości pola użycia certyfikatu 0 lub 1 nie powinny być używane podczas implementacji danych za pomocą protokołu SMTP.   Jeśli do usługi Exchange Online zostanie zwrócony rekord TLSA z polem Użycie certyfikatu o wartości 0 lub 1, Exchange Online nie nadaje się do użytku. Jeśli wszystkie rekordy TLSA nie będą Exchange Online, podczas wysyłania wiadomości e-mail nie będzie można wykonać procedury sprawdzania poprawności danych dla 0 lub 1. Ze względu na obecność rekordu TLSA program Exchange Online wymusi użycie usługi TLS do wysyłania wiadomości e-mail, wysyłania wiadomości e-mail, jeśli docelowy serwer poczty e-mail obsługuje TLS, lub upuszczanie wiadomości e-mail i generowanie raportów o niedostarczeniu, jeśli docelowy serwer poczty e-mail nie obsługuje usługi TLS.     
+<sup>1</sup> Exchange Online jest zgodne ze wskazówkami implementacji RFC, których wartości pola użycia certyfikatu 0 lub 1 nie powinny być używane, gdy dane dane są implementowane za pomocą protokołu SMTP. Gdy do Exchange Online zostanie zwrócony rekord TLSA z wartością pola Użycie certyfikatu o wartości 0 lub 1, Exchange Online będzie traktować go jako niezdatny do użycia. Jeśli wszystkie rekordy TLSA zostaną uznane za bezużyteczne, Exchange Online podczas wysyłania wiadomości e-mail nie wykona kroków weryfikacji DANYCH dla wartości 0 lub 1. Zamiast tego ze względu na obecność rekordu TLSA Exchange Online wymusi użycie protokołu TLS do wysyłania wiadomości e-mail, wysyłania wiadomości e-mail, jeśli docelowy serwer poczty e-mail obsługuje protokół TLS, lub upuszczenia wiadomości e-mail i wygenerowania protokołu NDR, jeśli docelowy serwer poczty e-mail nie obsługuje protokołu TLS.
 
-W przykładowym rekordzie TLSA pole Użycie certyfikatu ma wartość "3", więc dane skojarzenia certyfikatów ('abc123... xyz789') zostanie dopasowana tylko do certyfikatu serwera docelowego.
+W przykładowym rekordzie TLSA pole Użycie certyfikatu jest ustawione na wartość "3", więc dane skojarzenia certyfikatu ("abc123... xyz789') będzie dopasowywany tylko do certyfikatu serwera docelowego.
 
-**Pole Selektor**: Wskazuje, które części certyfikatu serwera docelowego powinny być sprawdzane. 
+**Pole selektora**: wskazuje, które części certyfikatu serwera docelowego powinny być sprawdzane.
 
-|Value  |Akronim  |Opis  |
-|---------|---------|---------|
-|0     |Cert         |Użyj pełnego certyfikatu.         |
-|1     |SPKI (informacje o kluczu publicznym tematu)          |Użyj klucza publicznego certyfikatu i algorytmu, dla którego ten klucz publiczny jest identyfikowany.          |
+|Value|Akronim|Opis|
+|---|---|---|
+|0|Cert|Użyj pełnego certyfikatu.|
+|1|SPKI (informacje o kluczu publicznym podmiotu)|Użyj klucza publicznego certyfikatu i algorytmu, za pomocą którego jest identyfikowany klucz publiczny do użycia.|
 
-W przykładowym rekordzie TLSA pole Selektor ma wartość "1", więc dane skojarzenia certyfikatu zostaną dopasowane przy użyciu klucza publicznego certyfikatu serwera docelowego oraz algorytmu, z którym ten klucz publiczny jest identyfikowany.
+W przykładowym rekordzie TLSA pole selektora jest ustawione na wartość "1", więc dane skojarzenia certyfikatów zostaną dopasowane przy użyciu klucza publicznego certyfikatu serwera docelowego i algorytmu, z którym jest identyfikowany klucz publiczny do użycia.
 
-**Pasujące pole typu**. Wskazuje format certyfikatu, który będzie reprezentowany w rekordzie TLSA. 
+**Pasujące pole typu**: wskazuje format, w jakim certyfikat będzie reprezentowany w rekordzie TLSA.
 
-|Value  |Akronim  |Opis  |
-|---------|---------|---------|
-|0     |Pełne         |Dane w rekordzie TSLA to pełny certyfikat lub dodatek SPKI.          |
-|1     |SHA-256         |Dane w rekordzie TSLA to skrót SHA-256 certyfikatu lub pliku SPKI.          |
-|2     |SHA-512         |Dane w rekordzie TSLA to skrót SHA-512 certyfikatu lub pliku SPKI.         |
+|Value|Akronim|Opis|
+|---|---|---|
+|0|Pełne|Dane w rekordzie TSLA są pełnym certyfikatem lub infrastrukturą SPKI.|
+|1|SHA-256|Dane w rekordzie TSLA są skrótem SHA-256 certyfikatu lub infrastruktury SPKI.|
+|2|SHA-512|Dane w rekordzie TSLA są skrótem SHA-512 certyfikatu lub infrastruktury SPKI.|
 
-W przykładowym rekordzie TLSA pole Pasujące typ jest ustawione na wartość "1", więc dane skojarzenia certyfikatu to skrót SHA-256 tematu informacji o kluczu publicznym z certyfikatu serwera docelowego.
+W przykładowym rekordzie TLSA pole Typ dopasowania jest ustawione na wartość "1", więc dane skojarzenia certyfikatów są skrótem SHA-256 informacji o kluczu publicznym podmiotu z certyfikatu serwera docelowego
 
-**Dane skojarzenia** certyfikatów. Określa dane certyfikatu, które są używane do dopasowywania do certyfikatu serwera docelowego. Te dane zależą od wartości pole selektora i wartości pasującego typu.
+**Dane skojarzenia certyfikatów**: określa dane certyfikatu używane do dopasowywania do certyfikatu serwera docelowego. Te dane zależą od wartości Pola selektora i pasującej wartości typu.
 
-W przykładowym rekordzie TLSA dane skojarzenia certyfikatu są ustawione na wartość "abc123... xyz789'. Wartość Pole selektora w tym przykładzie ma wartość "1", dlatego odwołuje się ona do klucza publicznego certyfikatu serwera docelowego i algorytmu, który zostanie użyty z tym certyfikatem. Ponieważ w tym przykładzie wartość pola Typ dopasowania jest ustawiona na "1", odwołuje się ona do skrótu SHA-256 tematu informacji o kluczu publicznym z certyfikatu serwera docelowego.
+W przykładowym rekordzie TLSA dane skojarzenia certyfikatów są ustawione na "abc123.. xyz789'. Ponieważ wartość Pola selektora w przykładzie jest ustawiona na wartość "1", będzie odwoływać się do klucza publicznego certyfikatu serwera docelowego i algorytmu, który jest identyfikowany do użycia z nim. A ponieważ wartość pola Typ dopasowania w przykładzie jest ustawiona na wartość "1", będzie odwoływać się do skrótu SHA-256 informacji o kluczu publicznym podmiotu z certyfikatu serwera docelowego.
 
-## <a name="how-can-exchange-online-customers-use-smtp-dane-outbound"></a>Jak klienci Exchange Online korzystający z ruchu wychodzącego SMTP DANE?
+## <a name="how-can-exchange-online-customers-use-smtp-dane-outbound"></a>Jak Exchange Online klienci mogą korzystać z ruchu wychodzącego SMTP DANE?
 
-Jako Exchange Online poczty wychodzącej nie musisz nic robić, aby skonfigurować to rozszerzone zabezpieczenia poczty e-mail dla poczty wychodzącej. Jest to coś, co dla Ciebie sbudowaliśmy i jest domyślnie włączone dla wszystkich klientów usługi Exchange Online i jest używane, gdy domena docelowa ogłasza obsługę danych. Aby ponownie wykorzystać zalety wysyłania wiadomości e-mail za pomocą testów DNSSEC i DANE, porozumiew się z partnerami biznesowymi, z którymi wymieniasz wiadomości e-mail, i przekaż im, że muszą oni zaimplementować ustawienia DNSSEC i Dane w celu otrzymywania wiadomości e-mail za pomocą tych standardów. 
+Jako klient Exchange Online nie musisz nic robić, aby skonfigurować to rozszerzone zabezpieczenia poczty e-mail dla wychodzącej poczty e-mail. Jest to coś, co zostało utworzone dla Ciebie i jest domyślnie włączone dla wszystkich klientów Exchange Online i jest używane, gdy domena docelowa anonsuje obsługę dane. Aby czerpać korzyści z wysyłania wiadomości e-mail z testami DNSSEC i DANE, przekaż partnerom biznesowym, z którymi wymieniasz wiadomości e-mail, które muszą zaimplementować usługi DNSSEC i DANE, aby mogli odbierać wiadomości e-mail przy użyciu tych standardów.
 
-## <a name="how-can-exchange-online-customers-use-smtp-dane-inbound"></a>Jak klienci Exchange Online korzystający z ruchu przychodzącego SMTP DANE?
+## <a name="how-can-exchange-online-customers-use-smtp-dane-inbound"></a>Jak Exchange Online klienci mogą korzystać z ruchu przychodzącego SMTP DANE?
 
-Obecnie dane serwera SMTP ruchu przychodzącego nie są obsługiwane w Exchange Online. Oczekuje się, że pomoc techniczna zostanie wydana pod koniec 2022 r. 
+Obecnie dane SMTP dla ruchu przychodzącego nie są obsługiwane w przypadku Exchange Online. Oczekuje się, że wsparcie zostanie wydane pod koniec 2022 r.
 
 ## <a name="what-is-the-recommended-tlsa-record-configuration"></a>Jaka jest zalecana konfiguracja rekordu TLSA?
 
-Per RFC implementation guidance for SMTP DANE, a TLSA record composed of the Certificate Usage field set to 3, the Selector field set to 1, and the Matching Type field set to 1 is recommended. 
+Zgodnie ze wskazówkami dotyczącymi implementacji RFC dla SMTP DANE zaleca się utworzenie rekordu TLSA składającego się z pola Użycie certyfikatu ustawionego na 3, pola Selektor ustawionego na 1 i pola Typ dopasowania ustawionego na 1.
 
-## <a name="exchange-online-mail-flow-with-smtp-dane"></a>Exchange Online mail Flow dane SMTP 
+## <a name="exchange-online-mail-flow-with-smtp-dane"></a>Exchange Online Flow poczty za pomocą protokołu SMTP DANE
 
-Proces przepływu poczty e-mail dla programu Exchange Online z danemi SMTP przedstawiony na poniższym wykresie blokowym sprawdza poprawność zabezpieczeń rekordów domeny i zasobu za pośrednictwem rekordu DNSSEC, obsługi protokołu TLS na docelowym serwerze poczty e-mail oraz czy certyfikat docelowego serwera poczty jest taki, jaki jest oczekiwany, na podstawie skojarzonego z nim rekordu TLSA. 
+Proces przepływu poczty dla Exchange Online za pomocą protokołu SMTP DANE, pokazany na poniższym wykresie przepływowym, weryfikuje zabezpieczenia domeny i rekordu zasobów za pośrednictwem protokołu DNSSEC, obsługę protokołu TLS na docelowym serwerze poczty oraz że certyfikat docelowego serwera poczty jest zgodny z oczekiwaniami na podstawie skojarzonego rekordu TLSA.
 
-Istnieją tylko dwa scenariusze, w których niepowodzenie danych SMTP spowoduje zablokowanie wiadomości e-mail:
+Istnieją tylko dwa scenariusze, w których błąd SMTP DANE spowoduje zablokowanie wiadomości e-mail:
 
-- W domenie docelowej jest sygnalizowana obsługa protokołu DNSSEC, ale co najmniej jeden rekord został zwrócony jako nieuwierzyta. 
+- Domena docelowa zasygnalizowała obsługę protokołu DNSSEC, ale co najmniej jeden rekord został zwrócony jako nieautentyczny.
 
-- Wszystkie rekordy MX dla domeny docelowej mają rekordy TLSA i żaden z certyfikatów serwera docelowego nie jest zgodne z oczekiwaniami co do danych rekordu TSLA lub połączenie TLS nie jest obsługiwane przez serwer docelowy.
+- Wszystkie rekordy MX dla domeny docelowej mają rekordy TLSA i żaden z certyfikatów serwera docelowego nie jest zgodny z oczekiwanymi danymi rekordu TSLA lub połączenie TLS nie jest obsługiwane przez serwer docelowy.
 
-:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="Exchange przepływ poczty e-mail online przy użyciu danych SMTP" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
+:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="Exchange przepływu poczty online za pomocą protokołu SMTP DANE" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
 
-## <a name="related-technologies"></a>Technologie pokrewne 
+## <a name="related-technologies"></a>Powiązane technologie
 
-|Technologia  |Dodatkowe informacje  |
-|---------|---------|
-|Agent transferu poczty — ścisłe zabezpieczenia transportu **(MTA-STS)** pomagają obniżyć wersję i ataki typu Man-in-the-Middle przez udostępnienie mechanizmu ustawiania zasad domeny określających, czy docelowy serwer poczty e-mail obsługuje TLS, i co zrobić, gdy nie można wynegocjować TLS, na przykład zatrzymać przesyłanie.     |Więcej informacji o Exchange Online dla przychodzących i wychodzących mtA-STS zostanie opublikowane później w tym roku.     [Exchange Online wiadomości na temat transportu z konferencji Microsoft Ignite 2020 — informacje techniczne Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699)<br /><br />[rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461) |
-|**Spf (Sender Policy Framework) używa** informacji IP, aby zapewnić, że docelowe systemy poczty e-mail będą ufać wiadomościom wysyłanym z Twojej domeny niestandardowej.    |   [Jak spf (Sender Policy Framework) zapobiega spoofingowi — Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)      |
-|**DKIM (DomainKeys Identified Mail)** używa informacji certyfikatu X.509 w celu zapewnienia, że docelowe systemy poczty e-mail zaufają wiadomościom wychodzącym z Twojej domeny niestandardowej.      | [Jak używać funkcji DKIM do obsługi poczty e-mail w domenie niestandardowej — Office 365 - Dokumenty Microsoft](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)        |
-|**DMARC (Domain-based Message Authentication, Reporting, and Conformance)** działa z platformą zasad nadawców i identyfikowaną pocztą domenową w celu uwierzytelniania nadawców poczty i upewnienia się, że docelowe systemy poczty e-mail zaufają wiadomościom wysyłanym z Twojej domeny.      |  [Używanie funkcji DMARC do sprawdzania poprawności wiadomości e-mail, kroków konfigurowania — Office 365 - Dokumenty Microsoft](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)       |
+|Technologia|Dodatkowe informacje|
+|---|---|
+|**Agent transferu poczty — ścisłe zabezpieczenia transportu (MTA-STS)** pomagają udaremnić ataki typu "downgrade" i "Man-in-the-Middle", zapewniając mechanizm ustawiania zasad domeny, które określają, czy docelowy serwer poczty e-mail obsługuje protokół TLS i co zrobić, gdy nie można wynegocjować protokołu TLS, na przykład zatrzymać transmisję.|Więcej informacji na temat nadchodzącej pomocy technicznej Exchange Online dla ruchu przychodzącego i wychodzącego MTA-STS zostanie opublikowanych jeszcze w tym roku. <br/><br/> [Exchange Online wiadomości transportowe z konferencji Microsoft Ignite 2020 — Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699) <br/><br/> [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)|
+|**Struktura zasad nadawcy (SPF)** używa informacji o adresach IP, aby upewnić się, że docelowe systemy poczty e-mail ufają komunikatom wysłanym z domeny niestandardowej.|[Jak struktura zasad nadawcy (SPF) zapobiega fałszowaniu — Office 365 — Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
+|**Usługa DomainKeys Identified Mail (DKIM)** używa informacji o certyfikacie X.509, aby upewnić się, że docelowe systemy poczty e-mail ufają komunikatom wysyłanym wychodzącym z domeny niestandardowej.|[Jak używać programu DKIM do obsługi poczty e-mail w domenie niestandardowej — Office 365 — Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
+|**Oparte na domenie uwierzytelnianie komunikatów, raportowanie i zgodność (DMARC)** współdziała z platformą zasad nadawcy i identyfikowaną pocztą domainKeys w celu uwierzytelniania nadawców poczty i zapewnienia, że docelowe systemy poczty e-mail ufają wiadomościom wysyłanym z twojej domeny.|[Sprawdzanie poprawności poczty e-mail, konfigurowanie kroków — Office 365 — Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
 
-## <a name="troubleshooting-sending-emails-with-smtp-dane"></a>Rozwiązywanie problemów z wysyłaniem wiadomości e-mail przy użyciu danych SMTP
+## <a name="troubleshooting-sending-emails-with-smtp-dane"></a>Rozwiązywanie problemów z wysyłaniem wiadomości e-mail przy użyciu protokołu SMTP DANE
 
-Obecnie dane mają cztery kody błędów podczas wysyłania wiadomości e-mail z Exchange Online. Firma Microsoft aktywnie aktualizuje tę listę kodów błędów. Błędy będą widoczne w:
-1.  Centrum Exchange administracyjnego za pośrednictwem widoku Szczegóły śledzenia wiadomości.
-2.  Raporty o niedo wysłaniu są generowane, gdy wiadomość nie jest wysyłana z powodu błędu DANE lub DNSSEC.
-3.  Narzędzie Remote Connectivity Analyzer [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
+Obecnie istnieją cztery kody błędów dane podczas wysyłania wiadomości e-mail z Exchange Online. Firma Microsoft aktywnie aktualizuje tę listę kodów błędów. Błędy będą widoczne w następujących elementach:
 
-|Kod błędu NDR  |Opis  |
-|---------|---------|
-|5.7.321     |starttls-not-supported: Docelowy serwer poczty musi obsługiwać usługę TLS w celu odbierania poczty.          |
-|5.7.322     |certyfikat wygasł: Certyfikat serwera poczty docelowej wygasł.          |
-|5.7.323     |tlsa-invalid: Sprawdzanie poprawności danych w domenie nie powiodło się.          |
-|5.7.324     |dnssec-invalid: Domena docelowa zwróciła nieprawidłowe rekordy DNSSEC.         |
+1. Portal centrum administracyjnego Exchange za pośrednictwem widoku Szczegóły śledzenia komunikatów.
+2. Serwery NDR generowane, gdy komunikat nie jest wysyłany z powodu błędu DANE lub DNSSEC.
+3. Narzędzie analizatora łączności zdalnej [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
-### <a name="troubleshooting-57321-starttls-not-supported"></a>Rozwiązywanie problemów z błędem 5.7.321 starttls — nie jest obsługiwane
+|Kod NDR|Opis|
+|---|---|
+|5.7.321|starttls-not-supported: Docelowy serwer poczty musi obsługiwać protokół TLS do odbierania poczty.|
+|5.7.322|certyfikat wygasł: certyfikat docelowego serwera poczty wygasł.|
+|5.7.323|tlsa-invalid: Nie można zweryfikować danych DANE w domenie.|
+|5.7.324|dnssec-invalid: domena docelowa zwróciła nieprawidłowe rekordy DNSSEC.|
 
-Zazwyczaj oznacza to problem z docelowym serwerem poczty. Po otrzymaniu wiadomości:
-1.  Sprawdź, czy docelowy adres e-mail został wprowadzony poprawnie.
-2.  Ostrzegaj administratora docelowej poczty e-mail o otrzymaniu tego kodu błędu, aby mógł ustalić, czy serwer docelowy jest poprawnie skonfigurowany do odbierania wiadomości za pomocą usługi TLS. 
-3.  Spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu Centrum administracyjne usługi Exchange.
+### <a name="troubleshooting-57321-starttls-not-supported"></a>Rozwiązywanie problemów z programem starttls-not-supported w wersji 5.7.321
 
-### <a name="troubleshooting-57322-certificate-expired"></a>Rozwiązywanie problemów z certyfikatem 5.7.322, który wygasł
+Zwykle oznacza to problem z docelowym serwerem poczty. Po otrzymaniu komunikatu:
 
-Wysyłający serwer poczty e-mail musi zaprezentować prawidłowy certyfikat X.509, który nie wygasł. Po wygaśnięciu certyfikatów X.509 należy odnowić je (zazwyczaj co rok). Po otrzymaniu wiadomości:
+1. Sprawdź, czy docelowy adres e-mail został wprowadzony poprawnie.
+2. Ostrzec docelowego administratora poczty e-mail o tym kodzie błędu, aby mógł określić, czy serwer docelowy jest poprawnie skonfigurowany do odbierania komunikatów przy użyciu protokołu TLS.
+3. Spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu centrum administracyjnego Exchange.
 
-1.  Ostrzegaj administratora docelowej poczty e-mail o otrzymaniu tego kodu błędu i podaj ciąg kodu błędu.
-2.  Zezwalaj na odnowienie certyfikatu serwera docelowego i zaktualizowanie rekordu TLSA w celu odwołania się do nowego certyfikatu. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości dla tej wiadomości w portalu centrum Exchange administracyjnego.
+### <a name="troubleshooting-57322-certificate-expired"></a>Rozwiązywanie problemów z wygaśnięciem certyfikatu w wersji 5.7.322
 
-### <a name="troubleshooting-57323-tlsa-invalid"></a>Rozwiązywanie problemów z błędem 5.7.323 tlsa
+Prawidłowy certyfikat X.509, który nie wygasł, musi zostać przedstawiony na serwerze poczty e-mail wysyłającej. Certyfikaty X.509 muszą być odnawiane po ich wygaśnięciu, często co rok. Po otrzymaniu komunikatu:
 
-Ten kod błędu jest związany z błędną konfiguracją rekordu TLSA i można go wygenerować dopiero po zwróceniu rekordu TLSA o uwierzytelnieniu DNSSEC. Istnieje wiele scenariuszy podczas sprawdzania poprawności danych, które występują po zwróceniu rekordu, co może spowodować wygenerowanie kodu. Firma Microsoft aktywnie pracuje nad scenariuszami, które są objęte tym kodem błędu, dzięki czemu każdy scenariusz ma określony kod. Obecnie co najmniej jeden z tych scenariuszy może powodować generowanie kodu błędu:
+1. Wyślij alert do docelowego administratora poczty e-mail, który otrzymał ten kod błędu, i podaj ciąg kodu błędu.
+2. Zaczekaj na odnowienie certyfikatu serwera docelowego i zaktualizowanie rekordu TLSA w celu odwołania się do nowego certyfikatu. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu centrum administracyjnego Exchange.
 
-1.  Certyfikat docelowego serwera poczty nie jest zgodne z oczekiwaniami w przypadku uwierzytelniania rekordu TLSA.
-2.  Authentic TLSA record is misconfigured .
-3.  Domena docelowa jest atakiem.
-4.  Jakiekolwiek inne błędy danych.
+### <a name="troubleshooting-57323-tlsa-invalid"></a>Rozwiązywanie problemów z błędem tlsa 5.7.323
 
-Po otrzymaniu wiadomości:
+Ten kod błędu jest związany z błędną konfiguracją rekordu TLSA i może być generowany tylko po zwróceniu rekordu TLSA uwierzytelniania DNSSEC. Istnieje wiele scenariuszy podczas walidacji DANE, które występują po zwróceniu rekordu, co może spowodować wygenerowanie kodu. Firma Microsoft aktywnie pracuje nad scenariuszami objętymi tym kodem błędu, aby każdy scenariusz miał określony kod. Obecnie co najmniej jeden z tych scenariuszy może spowodować wygenerowanie kodu błędu:
 
-1. Ostrzegaj administratora docelowej poczty e-mail o tym, że został otrzymany ten kod błędu, i podaj jego ciąg kodu błędu.
-2. Zezwalaj docelowym administratorowi poczty e-mail na sprawdzenie ich konfiguracji danych i ważności certyfikatu serwera poczty e-mail. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości dla tej wiadomości w portalu centrum Exchange administracyjnego.
+1. Certyfikat docelowego serwera poczty nie jest zgodny z oczekiwaniami dla autentycznego rekordu TLSA.
+2. Autentyczny rekord TLSA jest nieprawidłowo skonfigurowany.
+3. Domena docelowa jest atakowana.
+4. Dowolny inny błąd DANE.
 
-### <a name="troubleshooting-57324-dnssec-invalid"></a>Rozwiązywanie problemów z błędem 5.7.324 dnssec-invalid
+Po otrzymaniu komunikatu:
 
-Ten kod błędu jest generowany, gdy domena docelowa wskazuje, że jest ona DNSSEC-authentic, Exchange Online nie mogła zweryfikować jej jako DNSSEC-authentic. 
+1. Wyślij alert do docelowego administratora poczty e-mail o otrzymaniu tego kodu błędu i podaj mu ciąg kodu błędu.
+2. Zaczekaj czas na sprawdzenie przez docelowego administratora poczty e-mail konfiguracji danych i ważności certyfikatu serwera poczty e-mail. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu centrum administracyjnego Exchange.
 
-Po otrzymaniu wiadomości:
+### <a name="troubleshooting-57324-dnssec-invalid"></a>Rozwiązywanie problemów z błędem dnssec 5.7.324
 
-1. Ostrzegaj administratora docelowej poczty e-mail o tym, że został otrzymany ten kod błędu, i podaj jego ciąg kodu błędu.
-2. Miej czas na przejrzenie konfiguracji DNSSEC swojej domeny przez docelowego administratora poczty e-mail. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości dla tej wiadomości w portalu centrum Exchange administracyjnego.
+Ten kod błędu jest generowany, gdy domena docelowa wskazała, że jest ona autentyczna w usłudze DNSSEC, ale Exchange Online nie mogła zweryfikować jej jako dnssec-authentic.
 
-## <a name="troubleshooting-receiving-emails-with-smtp-dane"></a>Rozwiązywanie problemów z odbieraniem wiadomości e-mail za pomocą DANYCH SMTP
+Po otrzymaniu komunikatu:
 
-Obecnie istnieją dwie metody, za pomocą których administrator domeny odbieracej może sprawdzać poprawność konfiguracji DNSSEC i DANE i rozwiązywać problemy z tymi konfiguracjami, aby odbierać wiadomości e-mail z usługi Exchange Online za pomocą tych standardów. 
+1. Wyślij alert do docelowego administratora poczty e-mail o otrzymaniu tego kodu błędu i podaj mu ciąg kodu błędu.
+2. Zaczekaj czas, aby docelowy administrator poczty e-mail przejrzał konfigurację DNSSEC swojej domeny. Następnie spróbuj ponownie wysłać wiadomość e-mail i przejrzyj szczegóły śledzenia wiadomości w portalu centrum administracyjnego Exchange.
 
-1. Przyjęcie protokołu SMTP TLS-RPT (Transport Layer Security Reporting), wprowadzonego w dokumencie [RFC8460](https://datatracker.ietf.org/doc/html/rfc8460) 
-2. Używanie narzędzia Remote Connectivity Analyzer programu [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365)
+## <a name="troubleshooting-receiving-emails-with-smtp-dane"></a>Rozwiązywanie problemów z odbieraniem wiadomości e-mail za pomocą protokołu SMTP DANE
 
-TLS-RPT [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf.org/doc/html/rfc8460) to mechanizm raportowania dla nadawców, który dostarcza administratorom domen docelowych szczegółowych informacji o sukcesach i niepowodzeniach MTA-STS dla odpowiednich domen docelowych. Aby otrzymywać raporty TLS-RPT, wystarczy dodać rekord TXT w rekordach DNS swojej domeny, który zawiera adres e-mail lub adres URI, na który mają być wysyłane raporty. Exchange Online będą wysyłać raporty TLS-RPT w formacie JSON. 
+Obecnie istnieją dwie metody, których administrator domeny odbierającego może użyć do weryfikowania i rozwiązywania problemów z konfiguracją DNSSEC i DANE w celu otrzymywania wiadomości e-mail od Exchange Online przy użyciu tych standardów.
+
+1. Wdrażanie protokołu SMTP TLS-RPT (Transport Layer Security Reporting) wprowadzonego w [dokumencie RFC8460](https://datatracker.ietf.org/doc/html/rfc8460)
+2. Korzystanie z narzędzia Analizator łączności zdalnej [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365)
+
+TLS-RPT [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf.org/doc/html/rfc8460) to mechanizm raportowania dla nadawców, który udostępnia administratorom domeny docelowej szczegółowe informacje o sukcesach i niepowodzeniach usług DANE i MTA-STS w tych domenach docelowych. Aby otrzymywać raporty TLS-RPT, należy dodać tylko rekord TXT w rekordach DNS domeny, który zawiera adres e-mail lub identyfikator URI, do którego chcesz wysłać raporty. Exchange Online będzie wysyłać raporty TLS-RPT w formacie JSON.
 
 Przykładowy rekord:
 
 :::image type="content" source="../media/compliance-trial/example-record.png" alt-text="Przykładowy rekord" lightbox="../media/compliance-trial/example-record.png":::
 
-Drugą metodą jest użycie analizatora łączności zdalnej firmy [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365), który może sprawdzać dane w ten sam sposób pod względem konfiguracji DNS, która jest sprawdzana przez usługę Exchange Online podczas wysyłania poczty e-mail poza usługę. Jest to najbardziej bezpośredni sposób rozwiązywania problemów z błędami w konfiguracji w celu otrzymywania wiadomości e-mail od Exchange Online tych standardów. 
+Drugą metodą jest użycie analizatora łączności zdalnej [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365), który może wykonywać te same testy DNSSEC i DANE względem konfiguracji DNS, które Exchange Online będą wykonywane podczas wysyłania wiadomości e-mail poza usługą. Jest to najbardziej bezpośredni sposób rozwiązywania problemów z błędami w konfiguracji w celu otrzymywania wiadomości e-mail od Exchange Online przy użyciu tych standardów.
 
 Podczas rozwiązywania problemów mogą zostać wygenerowane poniższe kody błędów:
 
-|Kod błędu NDR  |Opis |
-|---------|---------|
-|4/5.7.321     |starttls-not-supported: Docelowy serwer poczty musi obsługiwać usługę TLS w celu odbierania poczty.          |
-|4/5.7.322     |certyfikat wygasł: Certyfikat serwera poczty docelowej wygasł.          |
-|4/5.7.323    |tlsa-invalid: Sprawdzanie poprawności danych w domenie nie powiodło się.         |
-|4/5.7.324     |dnssec-invalid: Domena docelowa zwróciła nieprawidłowe rekordy DNSSEC.         |
+|Kod NDR|Opis|
+|---|---|
+|4/5.7.321|starttls-not-supported: Docelowy serwer poczty musi obsługiwać protokół TLS do odbierania poczty.|
+|4/5.7.322|certyfikat wygasł: certyfikat docelowego serwera poczty wygasł.|
+|4/5.7.323|tlsa-invalid: Nie można zweryfikować danych DANE w domenie.|
+|4/5.7.324|dnssec-invalid: domena docelowa zwróciła nieprawidłowe rekordy DNSSEC.|
 
-### <a name="troubleshooting-57321-starttls-not-supported"></a>Rozwiązywanie problemów z błędem 5.7.321 starttls — nie jest obsługiwane
+### <a name="troubleshooting-57321-starttls-not-supported"></a>Rozwiązywanie problemów z programem starttls-not-supported w wersji 5.7.321
 
 > [!NOTE]
-> Poniższe instrukcje są dostępne dla administratorów poczty e-mail w celu rozwiązywania problemów z odbieraniem wiadomości e-mail Exchange Online danych SMTP.
+> Te kroki dotyczą rozwiązywania problemów z otrzymywaniem wiadomości e-mail od administratorów poczty e-mail od Exchange Online przy użyciu protokołu SMTP DANE.
 
-Zazwyczaj oznacza to problem z docelowym serwerem poczty. Serwer poczty, za pomocą którego Remote Connectivity Analyzer testuje nawiązywanie połączenia. Ten kod można wygenerować na ogół w dwóch scenariuszach: 
+Zwykle oznacza to problem z docelowym serwerem poczty. Serwer poczty, z którym jest testowany analizator łączności zdalnej. Ogólnie istnieją dwa scenariusze, które generują ten kod:
 
-1.  Docelowy serwer poczty w ogóle nie obsługuje bezpiecznej komunikacji i musi być używana zwykła, nie zaszyfrowana komunikacja. 
-2.  Serwer docelowy jest skonfigurowany nieprawidłowo i ignoruje polecenie STARTTLS.
-    
-Po otrzymaniu wiadomości:
+1.  Docelowy serwer poczty w ogóle nie obsługuje bezpiecznej komunikacji i musi być używana zwykła, nieszyfrowana komunikacja.
+2.  Serwer docelowy jest niepoprawnie skonfigurowany i ignoruje polecenie STARTTLS.
+
+Po otrzymaniu komunikatu:
 
 1. Sprawdź adres e-mail.
-2. Znajdź adres IP skojarzony z oświadczeniem o błędzie, aby zidentyfikować serwer poczty, z którym jest skojarzona instrukcja.
-3. Sprawdź ustawienia serwera poczty, aby upewnić się, że jest on skonfigurowany do odsłuchiwać ruch SMTP (zazwyczaj porty 25 i 587).
-4. Poczekaj kilka minut, a następnie ponów próbę za pomocą narzędzia Remote Connectivity Analyzer.
-5. Jeśli to nadal nie powiedzie się, spróbuj usunąć rekord TLSA i ponownie uruchom test za pomocą narzędzia Remote Connectivity Analyzer.
-6. Jeśli nie występują żadne błędy, może to wskazywać, że serwer poczty, za pomocą których odbierasz pocztę, nie obsługuje funkcji STARTTLS, i może być konieczne uaktualnienie do serwera, który obsługuje dane. 
+2. Znajdź adres IP skojarzony z instrukcją błędu, aby zidentyfikować serwer poczty, z który jest skojarzona instrukcja.
+3. Sprawdź ustawienie serwera poczty, aby upewnić się, że jest on skonfigurowany do nasłuchiwania ruchu SMTP (zazwyczaj porty 25 i 587).
+4. Zaczekaj kilka minut, a następnie spróbuj ponownie wykonać test za pomocą narzędzia Analizator łączności zdalnej.
+5. Jeśli nadal nie powiedzie się, spróbuj usunąć rekord TLSA i ponownie uruchomić test za pomocą narzędzia Analizator łączności zdalnej.
+6. Jeśli nie ma żadnych błędów, może to oznaczać, że serwer poczty, którego używasz do odbierania poczty, nie obsługuje protokołu STARTTLS i może być konieczne uaktualnienie do serwera, który ma być używany do używania danych DANE.
 
-### <a name="troubleshooting-57322-certificate-expired"></a>Rozwiązywanie problemów z certyfikatem 5.7.322, który wygasł
+### <a name="troubleshooting-57322-certificate-expired"></a>Rozwiązywanie problemów z wygaśnięciem certyfikatu w wersji 5.7.322
 
 > [!NOTE]
-> Poniższe instrukcje są dostępne dla administratorów poczty e-mail w celu rozwiązywania problemów z odbieraniem wiadomości e-mail Exchange Online danych SMTP.
+> Te kroki dotyczą rozwiązywania problemów z otrzymywaniem wiadomości e-mail od administratorów poczty e-mail od Exchange Online przy użyciu protokołu SMTP DANE.
 
-Wysyłający serwer poczty e-mail musi zaprezentować prawidłowy certyfikat X.509, który nie wygasł. Po wygaśnięciu certyfikatów X.509 należy odnowić je (zazwyczaj co rok). Po otrzymaniu wiadomości:
+Prawidłowy certyfikat X.509, który nie wygasł, musi zostać przedstawiony na serwerze poczty e-mail wysyłającej. Certyfikaty X.509 muszą być odnawiane po ich wygaśnięciu, często co rok. Po otrzymaniu komunikatu:
 
-1. Sprawdź adres IP skojarzony z oświadczeniem o błędzie, aby zidentyfikować serwer poczty, z którym jest skojarzony. Odszukaj wygasły certyfikat na wskazanym serwerze poczty e-mail.
-2. Zaloguj się w witrynie internetowej dostawcy certyfikatu.
-3. Wybierz wygasły certyfikat i postępuj zgodnie z instrukcjami, aby odnowić subskrypcję i zapłacić za odnowienie.
+1. Sprawdź adres IP skojarzony z instrukcją błędu, aby zidentyfikować serwer poczty, z który jest skojarzony. Znajdź wygasły certyfikat na zidentyfikowanym serwerze poczty e-mail.
+2. Zaloguj się do witryny internetowej dostawcy certyfikatów.
+3. Wybierz wygasły certyfikat i postępuj zgodnie z instrukcjami, aby odnowić i zapłacić za odnowienie.
 4. Po zweryfikowaniu zakupu przez dostawcę możesz pobrać nowy certyfikat.
-5. Zainstaluj odnowiony certyfikat na skojarzonym z nim serwerze poczty.
-6. Zaktualizuj rekord TLSA skojarzonego z serwerem poczty przy użyciu danych nowego certyfikatu. 
-7. Po upływie odpowiedniego czasu ponów próbę za pomocą narzędzia Remote Connectivity Analyzer.
+5. Zainstaluj odnowiony certyfikat na skojarzonym serwerze poczty.
+6. Zaktualizuj rekord TLSA skojarzony z serwerem poczty przy użyciu danych nowego certyfikatu.
+7. Po odczekaniu odpowiedniego czasu ponów próbę testu za pomocą narzędzia Analizator łączności zdalnej.
 
-### <a name="troubleshooting-57323-tlsa-invalid"></a>Rozwiązywanie problemów z błędem 5.7.323 tlsa
+### <a name="troubleshooting-57323-tlsa-invalid"></a>Rozwiązywanie problemów z błędem tlsa 5.7.323
 
 > [!NOTE]
-> Poniższe instrukcje są dostępne dla administratorów poczty e-mail w celu rozwiązywania problemów z odbieraniem wiadomości e-mail Exchange Online danych SMTP.
+> Te kroki dotyczą rozwiązywania problemów z otrzymywaniem wiadomości e-mail od administratorów poczty e-mail od Exchange Online przy użyciu protokołu SMTP DANE.
 
-Ten kod błędu jest związany z błędną konfiguracją rekordu TLSA i można go wygenerować dopiero po zwróceniu rekordu TSLA uwierzytelnienia DNSSEC. Istnieje jednak wiele scenariuszy podczas sprawdzania poprawności danych, które występują po zwróceniu rekordu, co może spowodować wygenerowanie kodu. Firma Microsoft aktywnie pracuje nad scenariuszami, które są objęte tym kodem błędu, dzięki czemu każdy scenariusz ma określony kod. Obecnie co najmniej jeden z tych scenariuszy może powodować generowanie kodu błędu:
+Ten kod błędu jest związany z błędną konfiguracją rekordu TLSA i może być generowany tylko po zwróceniu rekordu TSLA uwierzytelniania DNSSEC. Jednak podczas walidacji DANE występuje wiele scenariuszy, które występują po zwróceniu rekordu, co może spowodować wygenerowanie kodu. Firma Microsoft aktywnie pracuje nad scenariuszami objętymi tym kodem błędu, aby każdy scenariusz miał określony kod. Obecnie co najmniej jeden z tych scenariuszy może spowodować wygenerowanie kodu błędu:
 
-1. Authentic TLSA record is misconfigured .
-2. Certyfikat nie jest jeszcze prawidłowy/skonfigurowany dla przyszłego okna czasowego. 
+1. Autentyczny rekord TLSA jest nieprawidłowo skonfigurowany.
+2. Certyfikat nie jest jeszcze ważny/skonfigurowany dla przyszłego przedziału czasu.
 3. Domena docelowa jest atakowana.
-4. Jakiekolwiek inne błędy danych.
+4. Dowolny inny błąd DANE.
 
-Po otrzymaniu wiadomości:
+Po otrzymaniu komunikatu:
 
-1. Sprawdź adres IP skojarzony z oświadczeniem o błędzie, aby zidentyfikować serwer poczty, z którym jest skojarzony. 
-2. Zidentyfikuj rekord TLSA skojarzony z wskazanym serwerem poczty. 
-3. Sprawdź konfigurację rekordu TLSA, aby upewnić się, że nadawca sygnalizuje nadawcę do przeprowadzenia preferowanych testów danych i że w rekordzie TLSA zostały uwzględnione poprawne dane certyfikatu. 
-    1. Jeśli musisz wprowadzić jakiekolwiek aktualizacje rekordu w przypadku rozbieżności, poczekaj kilka minut, a następnie ponownie uruchomić test za pomocą narzędzia Remote Connectivity Analyzer. 
-4. Znajdź certyfikat na wskazanym serwerze poczty.
-5. Sprawdź okres, dla którego certyfikat jest prawidłowy. Jeśli okres ważności jest ustawiony na datę ważności w przyszłości, należy ją odnowić na bieżący dzień.
-    1. Zaloguj się w witrynie internetowej dostawcy certyfikatu.
-    2. Wybierz wygasły certyfikat i postępuj zgodnie z instrukcjami, aby odnowić subskrypcję i zapłacić za odnowienie.
+1. Sprawdź adres IP skojarzony z instrukcją błędu, aby zidentyfikować serwer poczty, z który jest skojarzony.
+2. Zidentyfikuj rekord TLSA skojarzony z zidentyfikowanym serwerem poczty.
+3. Sprawdź konfigurację rekordu TLSA, aby upewnić się, że sygnalizuje nadawcy, że wykonuje preferowane kontrole DANE i że poprawne dane certyfikatu zostały uwzględnione w rekordzie TLSA.
+    1. Jeśli musisz wprowadzić jakiekolwiek aktualizacje rekordu pod kątem rozbieżności, poczekaj kilka minut, a następnie ponownie uruchom test za pomocą narzędzia Analizator łączności zdalnej.
+4. Znajdź certyfikat na zidentyfikowanym serwerze poczty.
+5. Sprawdź przedział czasu, dla którego certyfikat jest prawidłowy. Jeśli jest ustawiona na rozpoczęcie ważności w przyszłości, należy ją odnowić dla bieżącej daty.
+    1. Zaloguj się do witryny internetowej dostawcy certyfikatów.
+    2. Wybierz wygasły certyfikat i postępuj zgodnie z instrukcjami, aby odnowić i zapłacić za odnowienie.
     3. Po zweryfikowaniu zakupu przez dostawcę możesz pobrać nowy certyfikat.
-    4. Zainstaluj odnowiony certyfikat na skojarzonym z nim serwerze poczty.
+    4. Zainstaluj odnowiony certyfikat na skojarzonym serwerze poczty.
 
-### <a name="troubleshooting-57324-dnssec-invalid"></a>Rozwiązywanie problemów z błędem 5.7.324 dnssec-invalid
+### <a name="troubleshooting-57324-dnssec-invalid"></a>Rozwiązywanie problemów z błędem dnssec 5.7.324
 
 > [!NOTE]
-> Poniższe instrukcje są dostępne dla administratorów poczty e-mail w celu rozwiązywania problemów z odbieraniem wiadomości e-mail Exchange Online danych SMTP.
+> Te kroki dotyczą rozwiązywania problemów z otrzymywaniem wiadomości e-mail od administratorów poczty e-mail od Exchange Online przy użyciu protokołu SMTP DANE.
 
-Ten kod błędu jest generowany, gdy domena docelowa wskazuje, że jest ona DNSSEC-authentic, Exchange Online nie może zweryfikować jej jako DNSSEC-authentic. Ta sekcja nie będzie pełna w zakresie rozwiązywania problemów z rekordami DNSSEC i skupia się na scenariuszach, w których domeny wcześniej przeszła uwierzytelnianie DNSSEC, ale nie teraz. 
+Ten kod błędu jest generowany, gdy domena docelowa wskazuje, że jest autentyczna w usłudze DNSSEC, ale Exchange Online nie może zweryfikować jej jako dnssec-authentic. Ta sekcja nie będzie kompleksowa do rozwiązywania problemów z protokołem DNSSEC i koncentruje się na scenariuszach, w których domeny wcześniej przeszły uwierzytelnianie DNSSEC, ale nie teraz.
 
-Po otrzymaniu wiadomości:
+Po otrzymaniu komunikatu:
 
-1. Jeśli korzystasz z dostawcy hostingu DNS, na przykład GoDaddy, poślij dostawcy hostingu DNS o błędzie, aby może on pracować nad rozwiązywaniem problemów i zmianami konfiguracji. 
-2. Jeśli zarządzasz własną infrastrukturą DNSSEC, istnieje wiele błędów konfiguracji DNSSEC, które mogą powodować generowanie tego komunikatu o błędzie. Niektóre typowe problemy do sprawdzenia, czy strefa wcześniej mieła uwierzytelnianie DNSSEC:
-    1. Przerwany łańcuch zaufania, gdy strefa nadrzędna zawiera zestaw rekordów DS, które wskazują na element, który nie istnieje w strefie podrzędnej. W wyniku tego strefa podrzędna jest oznaczana jako błędna przez sprawdzania poprawności nazw. 
-        - Rozwiąż, przeglądając identyfikatory kluczy domen podrzędnych RRSIG i upewniając się, że są one zgodne z identyfikatorami kluczy w rekordach DS opublikowanych w strefie nadrzędnej. 
-    2. Rekord zasobu RRSIG dla domeny jest nieprawidłowy, wygasł albo okres ważności nie rozpoczął się. 
-        - Rozwiąż, generując nowe podpisy dla domeny przy użyciu prawidłowych czasów. 
+1. Jeśli używasz dostawcy DNS, na przykład GoDaddy, ostrzegaj dostawcę DNS o błędzie, aby mógł pracować nad zmianą rozwiązywania problemów i konfiguracji.
+2. Jeśli zarządzasz własną infrastrukturą DNSSEC, istnieje wiele błędów konfiguracji DNSSEC, które mogą generować ten komunikat o błędzie. Niektóre typowe problemy dotyczące sprawdzania, czy strefa wcześniej przekazywała uwierzytelnianie DNSSEC:
+    1. Przerwany łańcuch zaufania, gdy strefa nadrzędna zawiera zestaw rekordów DS wskazujących coś, co nie istnieje w strefie podrzędnej. Powoduje to, że strefa podrzędna jest oznaczona jako fałszywa przez walidację rozpoznawania.
+        - Rozwiąż problem, przeglądając identyfikatory kluczy RRSIG domen podrzędnych i upewniając się, że są one zgodne z identyfikatorami kluczy w rekordach DS opublikowanych w strefie nadrzędnej.
+    2. Rekord zasobu RRSIG dla domeny nie jest prawidłowy, wygasł lub jego okres ważności nie został rozpoczęty.
+        - Rozwiąż problem, generując nowe podpisy dla domeny przy użyciu prawidłowych przedziałów czasu.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="as-an-exchange-online-customer-can-i-opt-out-of-using-dnssec-andor-dane"></a>Czy jako Exchange Online mogę zrezygnować z używania danych i DNSSEC?
+### <a name="as-an-exchange-online-customer-can-i-opt-out-of-using-dnssec-andor-dane"></a>Czy jako klient Exchange Online mogę zrezygnować z używania protokołu DNSSEC i/lub DANE?
 
-Zdecydowanie uważamy, że dane DNSSEC znacznie zwiększą pozycję zabezpieczeń naszej usługi i przysyłają korzyści wszystkim naszym klientom. W ciągu ostatniego roku pracowaliśmy bardzo wyraźnie nad zmniejszeniem ryzyka i istotności potencjalnego wpływu, jaki może to mieć to wdrożenie dla klientów korzystających z usługi M365. Będziemy aktywnie monitorować i śledzić wdrożenie, aby zapewnić zminimalizowanie negatywnego wpływu w czasie jego wdrażania. Z tego powodu wyjątki na poziomie dzierżawy lub rezygnacja nie będą dostępne.
-W przypadku wystąpienia jakichkolwiek problemów związanych z włączeniem serwerów DNSSEC i(lub) DANE różne metody badania błędów zanotowania w tym dokumencie pomogą zidentyfikować źródło błędu. W większości przypadków problem dotyczy zewnętrznej strony docelowej i musisz zakomunikować tym partnerom biznesowym, że muszą oni poprawnie skonfigurować dnssec i dane, aby odbierać wiadomości e-mail od firmy Exchange Online z zastosowaniem tych standardów.
+Jesteśmy przekonani, że serwery DNSSEC i DANE znacząco zwiększą pozycję bezpieczeństwa naszej usługi i przyniosą korzyści wszystkim naszym klientom. W ciągu ostatniego roku pilnie pracowaliśmy nad zmniejszeniem ryzyka i ważności potencjalnego wpływu tego wdrożenia na klientów M365. Będziemy aktywnie monitorować i śledzić wdrożenie, aby zapewnić zminimalizowanie negatywnego wpływu w miarę jego wdrażania. Z tego powodu wyjątki na poziomie dzierżawy lub rezygnacja nie będą dostępne.
+Jeśli wystąpią problemy związane z włączaniem serwera DNSSEC i/lub DANE, różne metody badania błędów zanotowane w tym dokumencie pomogą Ci zidentyfikować źródło błędu. W większości przypadków problem dotyczy zewnętrznej strony docelowej i musisz przekazać tym partnerom biznesowym, że muszą prawidłowo skonfigurować serwery DNSSEC i DANE, aby otrzymywać wiadomości e-mail od Exchange Online przy użyciu tych standardów.
 
-### <a name="how-does-dnssec-relate-to-dane"></a>Jak rekordy DNSSEC są powiązane z danem?
+### <a name="how-does-dnssec-relate-to-dane"></a>Jak usługa DNSSEC odnosi się do danych DANE?
 
-Rekord DNSSEC dodaje warstwę zaufania do rozpoznawania nazw DNS, wykorzystując infrastrukturę kluczy publicznych, aby zapewnić autentyczność rekordów zwróconych w odpowiedzi na zapytanie DNS. Dane zapewnia, że odbierający serwer poczty jest prawdziwym i oczekiwanym serwerem poczty dla uwierzytelniania rekordu MX. 
+Serwer DNSSEC dodaje warstwę zaufania do rozpoznawania nazw DNS, wykorzystując infrastrukturę kluczy publicznych, aby upewnić się, że rekordy zwrócone w odpowiedzi na zapytanie DNS są autentyczne. DANE zapewnia, że serwer poczty odbierającego jest wiarygodnym i oczekiwanym serwerem poczty dla autentycznego rekordu MX.
 
-### <a name="what-is-the-difference-between-mta-sts-and-dane-for-smtp"></a>Jaka jest różnica między usługami MTA-STS i DANE dla serwera SMTP?
+### <a name="what-is-the-difference-between-mta-sts-and-dane-for-smtp"></a>Jaka jest różnica między usługą MTA-STS i DANE dla protokołu SMTP?
 
-Dane i PROTOKOŁY MTA-STS służą do tego samego celu, ale dane wymagają uwierzytelniania DNSSEC, podczas gdy mtA-STS korzysta z urzędów certyfikacji. 
+Dane i MTA-STS służą do tego samego celu, ale dane wymagają protokołu DNSSEC do uwierzytelniania DNS, podczas gdy usługa MTA-STS korzysta z urzędów certyfikacji.
 
-### <a name="why-isnt-opportunistic-tls-sufficient"></a>Dlaczego nie jest wystarczający operacyjny adres TLS?
+### <a name="why-isnt-opportunistic-tls-sufficient"></a>Dlaczego oportunistyczny protokół TLS nie jest wystarczający?
 
-Opportunistic TLS will encrypt communication between two endpoints if both agree to support it. Jednak nawet jeśli szyfrowanie TLS transmisji jest szyfrowane, podczas rozpoznawania nazw DNS domena może być sfałszowana, tak aby wskazujeła punkt końcowy złośliwego podmiotu (a nie rzeczywisty punkt końcowy domeny). Jest to przerwa w zabezpieczeniach poczty e-mail, która rozwiązano, implementując dane MTA-STS i/lub SMTP z rekordem DNSSEC.  
+Oportunistyczny protokół TLS szyfruje komunikację między dwoma punktami końcowymi, jeśli obie strony wyrażą zgodę na jej obsługę. Jednak nawet jeśli protokół TLS szyfruje transmisję, domena może zostać sfałszowana podczas rozpoznawania nazw DNS w taki sposób, że wskazuje punkt końcowy złośliwego aktora zamiast rzeczywistego punktu końcowego dla domeny. Jest to luka w zabezpieczeniach poczty e-mail, którą rozwiązuje implementacja usługi MTA-STS i/lub SMTP DANE za pomocą protokołu DNSSEC.
 
-### <a name="why-isnt-dnssec-sufficient"></a>Dlaczego rekord DNSSEC nie jest wystarczający?
+### <a name="why-isnt-dnssec-sufficient"></a>Dlaczego serwer DNSSEC nie jest wystarczający?
 
-Rekord DNSSEC nie jest w pełni odporny na ataki typu Man-in-the-Middle i ataki na starszą wersję (z protokołu TLS w celu wyczyszczenia tekstu) w scenariuszach przepływu poczty e-mail. Dodanie usług MTA-STS i DANE oraz DNSSEC zapewnia pełną metodę zabezpieczeń, która umożliwia udaremnianie zarówno ataków MITM, jak i ataków na starszą wersję.
+Serwer DNSSEC nie jest w pełni odporny na ataki typu Man-in-the-Middle i obniża poziom (od protokołu TLS do zwykłego tekstu) w scenariuszach przepływu poczty. Dodanie usług MTA-STS i DANE wraz z serwerem DNSSEC zapewnia kompleksową metodę zabezpieczeń, aby udaremnić ataki MITM i downgrade.
 
-## <a name="additional-links"></a>Dodatkowe linki 
+## <a name="additional-links"></a>Dodatkowe linki
 
 [Znajdowanie i rozwiązywanie problemów po dodaniu swojej domeny lub rekordów DNS](/microsoft-365/admin/get-help-with-domains/find-and-fix-issues)
 
-[Omówienie zabezpieczeń DNSSEC | Microsoft Docs ](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11))
+[Omówienie | DNSSEC Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11))
 
-[Używanie funkcji DMARC do sprawdzania poprawności wiadomości e-mail, kroków konfigurowania — Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
+[Sprawdzanie poprawności poczty e-mail, konfigurowanie kroków — Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
 
-[Jak używać funkcji DKIM do poczty e-mail w domenie niestandardowej — Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)
+[Jak używać usługi DKIM do obsługi poczty e-mail w domenie niestandardowej — Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)
 
-[Jak struktury zasad dotyczących nadawców (SPF) chronią przed fałszer Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)
+[Jak struktura zasad nadawcy (SPF) zapobiega fałszowaniu — Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)
 
-[Exchange Online wiadomości na temat transportu z konferencji Microsoft Ignite 2020 — informacje techniczne Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699)
+[Exchange Online wiadomości transportowe z konferencji Microsoft Ignite 2020 — Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699)
 
 [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)

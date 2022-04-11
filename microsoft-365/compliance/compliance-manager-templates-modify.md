@@ -1,5 +1,5 @@
 ---
-title: Modyfikowanie szablonów ocen w Menedżerze zgodności firmy Microsoft
+title: Modyfikowanie szablonów oceny w programie Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,100 +17,100 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dowiedz się, jak modyfikować szablony ocen w Menedżerze zgodności firmy Microsoft.
-ms.openlocfilehash: d409c21d31c909e7e6a59c308c7087e26ec78e24
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak modyfikować szablony oceny w programie Microsoft Compliance Manager.
+ms.openlocfilehash: 589e13e766e35d38eed985a0e7bb9e21544c370d
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320567"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64758536"
 ---
-# <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>Modyfikowanie szablonów ocen w Menedżerze zgodności firmy Microsoft
+# <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>Modyfikowanie szablonów oceny w programie Microsoft Compliance Manager
 
-Podczas pracy z ocenami w Menedżerze zgodności możesz zmodyfikować utworzony szablon oceny. Proces tworzenia szablonu jest podobny do [](compliance-manager-templates-create.md) procesu tworzenia szablonu w ten sposób, że przekażesz wraz z danymi szablonu Excel sformatowany plik szablonu.
+Podczas pracy z ocenami w Menedżerze zgodności możesz zmodyfikować utworzony szablon oceny. Proces jest podobny do procesu [tworzenia szablonu](compliance-manager-templates-create.md), ponieważ przekażesz sformatowany plik Excel z danymi szablonu.
 
-Jednak podczas formatowania pliku ze zmianami danych istniejącego szablonu należy pamiętać o szczegółach. **Zalecamy dokładne zapoznanie się z tymi instrukcjami w celu zagwarantowania, że nie zastąpisz istniejących danych, które chcesz zachować.**
+Istnieją jednak szczegóły, o których należy pamiętać podczas formatowania pliku ze zmianami istniejących danych szablonu. **Zalecamy dokładne przejrzenie tych instrukcji, aby upewnić się, że nie zastąpisz żadnych istniejących danych, które chcesz zachować.**
 
-Aby dowiedzieć się więcej o formacie tego arkusza kalkulacyjnego, zobacz [Formatowanie danych szablonu za](compliance-manager-templates-format-excel.md) pomocą Excel.
+Aby dowiedzieć się więcej na temat formatu tego arkusza kalkulacyjnego, zobacz [Formatowanie danych szablonu przy użyciu Excel](compliance-manager-templates-format-excel.md).
 
 ## <a name="format-your-excel-file-to-modify-an-existing-template"></a>Formatowanie pliku Excel w celu zmodyfikowania istniejącego szablonu
 
-Na stronie  **szablonów oceny**  wybierz szablon, który chcesz zmodyfikować, co spowoduje, że zostanie strona szczegółów tego szablonu. Następnie wybierz  **pozycjęEkportuj do Excel**. Zostanie Excel plik szablonu ze wszystkimi danymi szablonu. Zapisz plik na komputerze lokalnym.
+Na stronie **szablonów oceny** wybierz szablon, który chcesz zmodyfikować, aby wyświetlić jego stronę szczegółów. Następnie wybierz pozycję **Eksportuj do Excel**. Plik Excel ze wszystkimi danymi szablonu zostanie pobrany. Zapisz plik na komputerze lokalnym.
 
-Aby pracować z tym plikiem, przejdź do sekcji poniżej, aby szybko znaleźć potrzebne instrukcje:
+Aby pracować z tym plikiem, przejdź do poniższej sekcji, aby szybko znaleźć potrzebne instrukcje:
 
-- [Edytowanie atrybutów szablonu głównego](#edit-the-main-template-attributes)
-- [Dodawanie akcji udoskonalania](#add-an-improvement-action)
-- [Edytowanie informacji dotyczących akcji udoskonalania](#edit-an-improvement-actions-information)
-- [Zmienianie nazwy akcji udoskonalania](#change-an-improvement-actions-name)
-- [Usuwanie akcji udoskonalania](#remove-an-improvement-action)
+- [Edytowanie głównych atrybutów szablonu](#edit-the-main-template-attributes)
+- [Dodawanie akcji poprawy](#add-an-improvement-action)
+- [Edytowanie informacji dotyczących akcji poprawy](#edit-an-improvement-actions-information)
+- [Zmienianie nazwy akcji poprawy](#change-an-improvement-actions-name)
+- [Usuwanie akcji poprawy](#remove-an-improvement-action)
 - [Usuwanie kontrolki](#remove-a-control)
 
-### <a name="edit-the-main-template-attributes"></a>Edytowanie atrybutów szablonu głównego
+### <a name="edit-the-main-template-attributes"></a>Edytowanie głównych atrybutów szablonu
 
-Na karcie **Szablony** możesz edytować dowolne dane w kolumnie tytułu,  kolumnie **inScopeServices** i dowolnej innej kolumnie, która może zostać dodana. Nie można jednak edytować niczego w **kolumnach produktów ani** **certyfikacji** .
+Na **karcie Szablony** możesz edytować dowolne elementy w kolumnie **tytułu** , **kolumnie inScopeServices** i w dowolnej innej kolumnie, która mogła zostać dodana. Nie można jednak edytować niczego w kolumnach **produktu** ani **certyfikacji** .
 
-### <a name="add-an-improvement-action"></a>Dodawanie akcji udoskonalania
+### <a name="add-an-improvement-action"></a>Dodawanie akcji poprawy
 
-1. Przejdź do **karty Akcje** . Dodaj informacje w wymaganych polach w pierwszym pustym wierszu pod istniejącymi akcjami.
-2. Przejdź do **karty ControlFamily** . Znajdź wiersz zawierający kontrolkę, na która jest mapowanie akcji udoskonalania. Dodaj nową akcję do kolumny **controlActionTitle** w tym wierszu (pamiętaj, aby oddzielić w tym polu wiele akcji dwoma średnikami, bez spacji między).
+1. Przejdź do karty **Akcje** . Dodaj informacje w wymaganych polach w pierwszym pustym wierszu poniżej istniejących akcji.
+2. Przejdź do karty **ControlFamily** . Znajdź wiersz zawierający kontrolkę, na która mapuje się akcja poprawy. Dodaj nową akcję do kolumny **controlActionTitle** w tym wierszu (pamiętaj, aby rozdzielić wiele akcji w tym polu dwoma średnikami, bez odstępu między nimi).
 3. Zapisz arkusz kalkulacyjny.
 
-### <a name="edit-an-improvement-actions-information"></a>Edytowanie informacji dotyczących akcji udoskonalania
+### <a name="edit-an-improvement-actions-information"></a>Edytowanie informacji dotyczących akcji poprawy
 
-Możesz zmienić dowolne informacje dotyczące akcji udoskonalania *, z wyjątkiem tytułu*. Każdą komórkę można edytować od kolumn B, a po zaimportowaniu pliku z powrotem do szablonu działania udoskonalania w tym szablonie będą teraz zawierać zaktualizowane dane.
+Możesz zmienić informacje o dowolnej akcji poprawy *, z wyjątkiem jej tytułu*. Możesz edytować dowolną komórkę z kolumn B dalej, a po zaimportowaniu pliku z powrotem do szablonu akcje poprawy w tym szablonie będą teraz zawierać zaktualizowane dane.
 
-Nie można edytować **tytułu akcji** (kolumna A), ponieważ w takim przypadku Menedżer zgodności uzna to za nowe działanie udoskonalania. Jeśli chcesz zmienić nazwę akcji udoskonalania, zapoznaj się z instrukcjami bezpośrednio poniżej.
+Nie można edytować **elementu actionTitle** (kolumna A), ponieważ jeśli to zrobisz, Menedżer zgodności uzna to za nową akcję poprawy. Jeśli chcesz zmienić nazwę akcji poprawy, zapoznaj się z instrukcjami bezpośrednio poniżej.
 
-### <a name="change-an-improvement-actions-name"></a>Zmienianie nazwy akcji udoskonalania
+### <a name="change-an-improvement-actions-name"></a>Zmienianie nazwy akcji poprawy
 
-Jeśli chcesz zmienić nazwę akcji udoskonalania, musisz jawnie wskazać w arkuszu kalkulacyjnym, że chcesz zastąpić istniejącą nazwę nową nazwą. Wykonaj następujące czynności:
+Jeśli chcesz zmienić nazwę akcji poprawy, musisz jawnie wyznaczyć w arkuszu kalkulacyjnym, że zastępujesz istniejącą nazwę nową nazwą. Wykonaj następujące czynności:
 
-1. Na karcie **Akcje** arkusza kalkulacyjnego dodaj do arkusza kalkulacyjnego nową kolumnę za kolumną A.
+1. Na karcie **Akcje** arkusza kalkulacyjnego dodaj nową kolumnę do arkusza kalkulacyjnego po kolumnie A.
 2. W tej nowej kolumnie, która jest teraz kolumną B, umieść jako nagłówek w wierszu 1: **oldActionTitle**.
-3. Skopiuj zawartość kolumny A i wklej ją do kolumny B. Dzięki temu istniejące tytuły akcji udoskonalania, które chcesz zmienić, zostaną wprowadzone w kolumnie B.
-4. W kolumnie A **nazwa actionTitle** usuń starą nazwę i zamień ją na nową, aby usprawnić działanie.
+3. Skopiuj zawartość kolumny A i wklej ją do kolumny B. Dzięki temu istniejące tytuły akcji poprawy, które chcesz zmienić, są umieszczane w kolumnie B.
+4. W kolumnie A **, actionTitle** usuń starą nazwę i zastąp ją nową nazwą akcji poprawy.
 
-Należy pamiętać, że tytuły akcji, zarówno dla akcji udoskonalania, jak i akcji firmy Microsoft, należy zapisywać w języku angielskim, aby były rozpoznawane w przypadku odwołania się w kontrolkach.
+Należy pamiętać, że tytuły akcji, zarówno dla akcji ulepszania, jak i dla akcji firmy Microsoft, muszą być napisane w języku angielskim, aby można je było rozpoznać, gdy są one przywoływane w kontrolkach.
 
-### <a name="remove-an-improvement-action"></a>Usuwanie akcji udoskonalania
+### <a name="remove-an-improvement-action"></a>Usuwanie akcji poprawy
 
-Aby usunąć działanie udoskonalania z szablonu, musisz usunąć go z każdej kontrolki, która się do niego odwołuje. Wykonaj poniższe czynności, aby zmodyfikować arkusz kalkulacyjny:
+Aby usunąć akcję poprawy z szablonu, należy usunąć ją z każdej kontrolki, która do niej odwołuje się. Wykonaj poniższe kroki, aby zmodyfikować arkusz kalkulacyjny:
 
-1. Na **karcie ControlFamily** wyszukaj tytuł akcji udoskonalania, którą chcesz usunąć.
-2. Usuń tytuł akcji udoskonalania w komórkach, w których jest wyświetlany. Jeśli akcja udoskonalania jest jedyną akcją w tym wierszu, usuń cały wiersz (co spowoduje usunięcie kontrolki).
-3. Na **karcie Akcje** usuń wiersz zawierający akcję udoskonalania, która ma być usuwana.
+1. Na karcie **ControlFamily** wyszukaj tytuł akcji poprawy, którą chcesz usunąć.
+2. Usuń tytuł akcji poprawy w komórkach, w których jest wyświetlana. Jeśli akcja poprawy jest jedyną akcją w tym wierszu, usuń cały wiersz (co usuwa kontrolkę).
+3. Na karcie **Akcje** usuń wiersz zawierający akcję poprawy, którą usuwasz.
 4. Zapisz arkusz kalkulacyjny.
 
-Po zaimportowaniu arkusza kalkulacyjnego z powrotem do szablonu działanie udoskonalania zostanie usunięte z szablonu.
+Po zaimportowaniu arkusza kalkulacyjnego z powrotem do szablonu akcja poprawy zostanie usunięta z szablonu.
 
-Usunięcie działania udoskonalania z szablonu nie powoduje całkowitego usunięcia działania udoskonalania z Menedżera zgodności. Do tej akcji nadal może odwoływać się inny szablon.
+Usunięcie akcji poprawy z szablonu nie powoduje całkowitego usunięcia akcji poprawy z Menedżera zgodności. Do tej akcji może nadal odwoływać się inny szablon.
 
 ### <a name="remove-a-control"></a>Usuwanie kontrolki
 
-Aby usunąć kontrolkę, zmodyfikuj arkusz kalkulacyjny, korzystając z poniższych kroków, a następnie ponownie zaimportuj arkusz kalkulacyjny:
+Aby usunąć kontrolkę, zmodyfikuj arkusz kalkulacyjny, wykonując poniższe kroki, a następnie ponownie zaimportuj arkusz kalkulacyjny:
 
-1. Na **karcie ControlFamily (** Nazwa Kontrolki) znajdź kontrolkę, którą chcesz usunąć, w kolumnie **ControlName (Nazwa kontrolki** ).
+1. Na karcie **ControlFamily** znajdź kontrolkę, którą chcesz usunąć w kolumnie **controlName** .
 2. Usuń wiersz dla tej kontrolki.
-    - Jeśli ta usunięta kontrolka zawiera akcje udoskonalania, do których nie odwołują się inne kontrolki, musisz usunąć te akcje udoskonalania z **karty Akcje** . W przeciwnym razie zostanie wyświetlony błąd sprawdzania poprawności.
+    - Jeśli ta usunięta kontrolka zawiera akcje poprawy, do których nie odwołuje się żadna inna kontrolka, należy usunąć te akcje poprawy z karty **Akcje** . W przeciwnym razie zostanie wyświetlony błąd weryfikacji.
 
 3. Zapisz arkusz kalkulacyjny.
 
 Po zaimportowaniu arkusza kalkulacyjnego z powrotem do szablonu kontrolka zostanie usunięta z szablonu.
 
-## <a name="modify-template-info-in-compliance-manager"></a>Modyfikowanie informacji szablonu w Menedżerze zgodności
+## <a name="modify-template-info-in-compliance-manager"></a>Modyfikowanie informacji o szablonie w Menedżerze zgodności
 
-Po ukończeniu Excel zapisaniu pliku, wykonaj poniższe czynności.
+Po ukończeniu i zapisaniu pliku Excel wykonaj następujące kroki.
 
-1. Otwórz ponownie stronę szablonu oceniania i wybierz szablon. Na stronie szczegółów szablonu wybierz pozycję **Modyfikuj** szablon, aby zainicjować kreatora modyfikacji.
-2. Na **ekranie Upload wybierz** **pozycję Przeglądaj**, aby znaleźć i przekazać Excel pliku.
-3. Jeśli nie występują żadne problemy z plikiem, na następnym ekranie zostanie pokazana nazwa przekazanego pliku. Wybierz **pozycję** Dalej, aby kontynuować (jeśli chcesz zmienić plik, wybierz **Upload inny plik**).
-    - Jeśli występuje problem z plikiem, u góry zostanie wyświetlony komunikat o błędzie informujący o tym, co się stało. Musisz naprawić plik i przekazać go ponownie. Błędy będą się pojawiać, jeśli arkusz kalkulacyjny został nieprawidłowo sformatowany lub w niektórych polach występują nieprawidłowe informacje.
+1. Otwórz ponownie stronę szablonu oceny i wybierz szablon. Na stronie szczegółów szablonu wybierz pozycję **Modyfikuj szablon** , aby zainicjować kreatora modyfikacji.
+2. Na ekranie **Upload pliku** wybierz pozycję **Przeglądaj**, aby znaleźć i przekazać plik Excel.
+3. Jeśli nie ma żadnych problemów z plikiem, na następnym ekranie zostanie wyświetlona nazwa przekazanego pliku. Wybierz pozycję **Dalej**, aby kontynuować (jeśli chcesz zmienić plik, wybierz pozycję **Upload inny plik**).
+    - Jeśli wystąpił problem z plikiem, u góry znajduje się komunikat o błędzie wyjaśniający, co jest nie tak. Musisz naprawić plik i przekazać go ponownie. Błędy spowodują nieprawidłowe formatowanie arkusza kalkulacyjnego lub nieprawidłowe informacje w niektórych polach.
 
-4. Ekran **Recenzja i zakończenie** zawiera liczbę akcji udoskonalania i kontrolek oraz maksymalną liczbę wyników dla szablonu. Gdy wszystko będzie gotowe do zatwierdzenia, wybierz pozycję **Dalej**.
-5. Ostatni ekran potwierdza, że szablon został zmodyfikowany. Wybierz **pozycję Gotowe** , aby zamknąć kreatora.
+4. Na ekranie **Przeglądanie i zakończenie** jest wyświetlana liczba akcji i kontrolek poprawy oraz maksymalny wynik szablonu. Gdy wszystko będzie gotowe do zatwierdzenia, wybierz pozycję **Dalej**.
+5. Ostatni ekran potwierdza, że szablon został zmodyfikowany. Wybierz pozycję **Gotowe** , aby zamknąć kreatora.
 
-Twój szablon będzie teraz zawierać wprowadzone zmiany. W przypadku wszystkich ocen, które używają tego zmodyfikowanego szablonu, będą teraz wyświetlane oczekujące aktualizacje i konieczne będzie zaakceptowanie aktualizacji oceny, aby odzwierciedlić zmiany wprowadzone w szablonie. Dowiedz się więcej o [aktualizacjach oceniania](compliance-manager-assessments.md#accept-updates-to-assessments).
+Szablon będzie teraz zawierać wprowadzone zmiany. Wszystkie oceny korzystające z tego zmodyfikowanego szablonu będą teraz wyświetlać oczekujące aktualizacje i musisz zaakceptować aktualizacje ocen, aby odzwierciedlić zmiany wprowadzone w szablonie. Dowiedz się więcej o [aktualizacjach ocen](compliance-manager-assessments.md#accept-updates-to-assessments).
 
 > [!NOTE]
-> Jeśli korzystasz z Menedżera zgodności w języku innym niż angielski, część tekstu jest wyświetlana w języku angielskim podczas eksportowania szablonu do programu Excel. Tytuły akcji (zarówno działania udoskonalania, jak i, tam gdzie to ma zastosowanie, akcje firmy Microsoft) muszą być rozpoznawane przez kontrolki w języku angielskim. Jeśli wprowadzasz zmiany w tytule akcji, pamiętaj, aby zapisać go w języku angielskim, aby plik został poprawnie importny.
+> Jeśli używasz Menedżera zgodności w języku innym niż angielski, podczas eksportowania szablonu do Excel zostanie wyświetlony tekst w języku angielskim. Tytuły akcji (zarówno akcji poprawy, jak i, w stosownych przypadkach, akcji firmy Microsoft) muszą być rozpoznawane przez kontrolki w języku angielskim. Jeśli wprowadzisz zmiany w tytule akcji, pamiętaj o zapisaniu go w języku angielskim, aby plik został poprawnie zaimportowany.

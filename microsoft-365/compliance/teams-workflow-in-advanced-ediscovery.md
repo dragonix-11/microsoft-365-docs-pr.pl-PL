@@ -1,5 +1,5 @@
 ---
-title: Teams przepływu pracy w programie Advanced eDiscovery
+title: przepływ pracy Teams w Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,296 +13,296 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z witryny Microsoft Teams w programie Advanced eDiscovery.
-ms.openlocfilehash: 9565beea342fe9587195d632fdc94cdc746faf5e
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z Microsoft Teams w Advanced eDiscovery.
+ms.openlocfilehash: ecd114f9ea68cefb03e55453176a0c8b323620cc
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568121"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64758800"
 ---
-# <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery przepływu pracy dla zawartości w programie Microsoft Teams
+# <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>przepływ pracy Advanced eDiscovery zawartości w Microsoft Teams
 
-Ten artykuł zawiera obszerny zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania aplikacji Advanced eDiscovery zachowywania, gromadzenia, przeglądania i eksportowania zawartości z usługi Microsoft Teams. Celem tego artykułu jest zoptymalizowanie przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem Teams zawartości.
+Ten artykuł zawiera kompleksowy zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania Advanced eDiscovery do przechowywania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams. Celem tego artykułu jest pomoc w optymalizacji przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem zawartości Teams.
 
 Istnieje pięć kategorii zawartości Teams, które można zbierać i przetwarzać przy użyciu Advanced eDiscovery:
 
-- **Teams czatach 1:1**. Wiadomości na czacie, wpisy i załączniki udostępniane w Teams konwersacji między dwiema osobami.  Teams czaty między 1:1 są również nazywane *konwersacjami*.
+- **Teams czaty 1:1**. Wiadomości czatu, wpisy i załączniki udostępnione w Teams konwersacji między dwiema osobami.  Teams 1:1 czaty są również *nazywane konwersacjami*.
 
-- **Teams czatów grupowych**. Czat z wiadomościami, wpisami i załącznikami udostępnionym Teams konwersacji między trzema lub większą ich liczby osobami. Nazywane również *czatami 1:N* lub *konwersacjami grupowych*.
+- **Teams czaty grupowe**. Wiadomości czatu, wpisy i załączniki udostępnione w Teams konwersacji między co najmniej trzema osobami. Nazywane również czatami *1:N* lub *konwersacjami grupowymi*.
 
-- **Teams kanałów**. Czat z wiadomościami, wpisami, odpowiedziami i załącznikami udostępnianymi w standardowym Teams kanale.
+- **Teams kanałów**. Wiadomości czatu, wpisy, odpowiedzi i załączniki udostępnione w standardowym kanale Teams.
 
-- **Kanały prywatne**. Wpisy wiadomości, odpowiedzi i załączniki udostępnione w prywatnym Teams kanału.
+- **Kanały prywatne**. Wpisy wiadomości, odpowiedzi i załączniki udostępnione w prywatnym kanale Teams.
 
-- **Udostępnione kanały**. Wpisy wiadomości, odpowiedzi i załączniki udostępnione w udostępnionym Teams kanale.
+- **Kanały udostępnione**. Wpisy wiadomości, odpowiedzi i załączniki udostępnione w udostępnionym kanale Teams.
 
-## <a name="where-teams-content-is-stored"></a>Miejsce Teams zawartości
+## <a name="where-teams-content-is-stored"></a>Gdzie jest przechowywana zawartość Teams
 
-Wstępnie wymagane do zarządzania zawartością Teams w programie Advanced eDiscovery jest zrozumienie typu zawartości Teams, która może być zbierana, przetwarzana i przeglądana w programie Advanced eDiscovery oraz miejscu jej przechowywania w programie Microsoft 365. W poniższej tabeli po Teams typ zawartości i miejsce przechowywania każdej z nich.
+Warunkiem wstępnym zarządzania zawartością Teams w Advanced eDiscovery jest zrozumienie typu zawartości Teams, którą można zbierać, przetwarzać i przeglądać w Advanced eDiscovery oraz gdzie ta zawartość jest przechowywana w Microsoft 365. W poniższej tabeli wymieniono Teams typ zawartości i miejsce przechowywania poszczególnych elementów.
 
-|&nbsp;|Lokalizacja wiadomości i wpisów na czacie|Lokalizacja plików i załączników|
+|&nbsp;|Lokalizacja wiadomości i wpisów czatu|Lokalizacja plików i załączników|
 |---|---|---|
-|Teams czatów 1:1|Wiadomości w czatach 1:1 są przechowywane w Exchange Online skrzynki pocztowej wszystkich uczestników czatu.|Pliki udostępnione na czacie 1:1 są przechowywane OneDrive dla Firm konta osoby, która udostępniła plik.|
-|Teams czatów grupowych|Wiadomości w czatach grupowych są przechowywane Exchange Online skrzynce pocztowej wszystkich uczestników czatu.|Pliki udostępniane w czatach grupowych są przechowywane OneDrive dla Firm konta osoby, która udostępniła plik.|
-|Teams kanałów|Wszystkie wiadomości i wpisy w kanałach są przechowywane w Exchange Online skojarzonej z zespołem skrzynki pocztowej.|Pliki udostępniane w kanale są przechowywane w SharePoint Online skojarzonej z zespołem.|
-|Kanały prywatne|Wiadomości wysłane w kanale prywatnym są przechowywane w Exchange Online pocztowych wszystkich członków kanału prywatnego.|Pliki udostępnione w kanale prywatnym są przechowywane w dedykowanej witrynie SharePoint online skojarzonej z kanałem prywatnym.|
-|Kanały udostępnione|Wiadomości wysłane w kanale udostępnionym są przechowywane w systemowej skrzynce pocztowej skojarzonej z kanałem udostępnionym. <sup>1</sup>|Pliki udostępniane w kanale udostępnionym są przechowywane w dedykowanej SharePoint Online skojarzonej z kanałem udostępnionym.|
+|czaty Teams 1:1|Wiadomości w czatach 1:1 są przechowywane w Exchange Online skrzynki pocztowej wszystkich uczestników czatu.|Pliki udostępnione podczas czatu 1:1 są przechowywane na koncie OneDrive dla Firm osoby, która udostępniła plik.|
+|Teams czaty grupowe|Wiadomości w czatach grupowych są przechowywane w Exchange Online skrzynce pocztowej wszystkich uczestników czatu.|Pliki udostępnione w czatach grupowych są przechowywane na koncie OneDrive dla Firm osoby, która udostępniła plik.|
+|kanały Teams|Wszystkie wiadomości i wpisy kanału są przechowywane w Exchange Online skrzynki pocztowej skojarzonej z zespołem.|Pliki udostępnione w kanale są przechowywane w witrynie SharePoint Online skojarzonej z zespołem.|
+|Kanały prywatne|Wiadomości wysyłane w kanale prywatnym są przechowywane w Exchange Online skrzynkach pocztowych wszystkich członków kanału prywatnego.|Pliki udostępnione w kanale prywatnym są przechowywane w dedykowanej witrynie SharePoint Online skojarzonej z kanałem prywatnym.|
+|Kanały udostępnione|Wiadomości wysyłane w kanale udostępnionym są przechowywane w systemowej skrzynce pocztowej skojarzonej z kanałem udostępnionym. <sup>1</sup>|Pliki udostępnione w kanale udostępnionym są przechowywane w dedykowanej witrynie SharePoint Online skojarzonej z kanałem udostępnionym.|
 
 > [!NOTE]
-> <sup>1</sup> Aby wyszukać (i zachować) wiadomości wysłane w kanale udostępnionym, musisz przeszukać lub określić skrzynkę pocztową Exchange Online dla nadrzędnego zespołu.
+> <sup>1</sup> Aby wyszukać (i zachować) wiadomości wysyłane w kanale udostępnionym, musisz wyszukać lub określić skrzynkę pocztową Exchange Online dla nadrzędnego zespołu.
 
-## <a name="create-a-case-for-teams-content"></a>Tworzenie sprawy na Teams zawartości
+## <a name="create-a-case-for-teams-content"></a>Tworzenie przypadku zawartości Teams
 
-Pierwszym krokiem do zarządzania zawartością Teams w programie Advanced eDiscovery jest utworzenie sprawy w nowym formacie sprawy zoptymalizowanym pod kątem zarządzania Teams zawartości. Oto zalety korzystania z nowego formatu sprawy do Teams przypadku:
+Pierwszym krokiem do zarządzania zawartością Teams w Advanced eDiscovery jest utworzenie sprawy przy użyciu nowego formatu przypadku zoptymalizowanego pod kątem zarządzania zawartością Teams. Oto zalety używania nowego formatu wielkości liter dla Teams zawartości:
 
-- Obsługa wątków konwersacji, w której dodatkowe wiadomości w tej samej konwersacji, które zawierają elementy odpowiedzi, są automatycznie zbierane i dodawane do recenzji zestawów.
+- Obsługa wątków konwersacji, w których dodatkowe komunikaty w tej samej konwersacji, które zawierają elementy dynamiczne, są automatycznie zbierane i dodawane do zestawów przeglądów.
 
-- Teams konwersacji na czacie są automatycznie dodawane do przeglądania zestawów jako plik transkrypcji HTML. Załączniki w chmurze udostępniane w konwersacjach są również dodawane do zestawu recenzji. Ułatwia to zapewnianie kontekstu do konwersacji za pomocą elementów odpowiadania i zmniejszanie całkowitej liczby elementów powiąnych przez zawartość opartą na czacie.
+- Teams konwersacje czatu są automatycznie dodawane w celu przeglądania zestawów jako pliku transkrypcji HTML. Załączniki w chmurze, które są udostępniane w konwersacjach, są również dodawane do zestawu przeglądów. Pomaga to zapewnić kontekst konwersacji z elementami responsywnym i zmniejszyć całkowitą liczbę elementów generowanych przez zawartość opartą na czatach.
 
-- Kolekcje o rozmiarze do 1 TB można dodać do recenzji zestawów, co pozwala zbierać duże ilości zawartości Teams ilości zawartości w przypadku.
+- Kolekcje o rozmiarze do 1 TB można dodać do zestawów przeglądów, które umożliwiają zbieranie i pobieranie dużych ilości Teams zawartości w jednym przypadku.
 
-Aby uzyskać więcej informacji o zwiększonych limitach liter, zobacz [Używanie nowego formatu liter w programie Advanced eDiscovery](advanced-ediscovery-new-case-format.md).
+Aby uzyskać więcej informacji na temat zwiększonych limitów przypadków, zobacz [Używanie nowego formatu przypadku w Advanced eDiscovery](advanced-ediscovery-new-case-format.md).
 
-Aby utworzyć sprawę:
+Aby utworzyć przypadek:
 
 1. Przejdź do i <https://compliance.microsoft.com> zaloguj się.
 
-2. W okienku nawigacji po lewej stronie okna Centrum zgodności platformy Microsoft 365 pozycję **zbierania elektronicznych materiałów** dowodowych > zaawansowane.
+2. W okienku nawigacji po lewej stronie Centrum zgodności platformy Microsoft 365 kliknij pozycję **eDiscovery > Advanced**.
 
-3. Na stronie **Advanced eDiscovery** kliknij kartę **Sprawy**, a następnie kliknij pozycję **Utwórz sprawę**.
+3. Na stronie **Advanced eDiscovery** kliknij kartę **Przypadki**, a następnie kliknij **pozycję Utwórz przypadek**.
 
-   Zostanie **wyświetlona strona wysuwana** Nowa sprawa zbierania elektronicznych materiałów dowodowych. Sekcja **Format sprawy** umożliwia utworzenie sprawy przy użyciu nowego formatu sprawy.
+   Zostanie wyświetlona strona Wysuwane **nowe przypadki zbierania elektronicznych** materiałów dowodowych. Sekcja **Format przypadku** zawiera opcję utworzenia sprawy przy użyciu nowego formatu wielkości liter.
 
-   ![Opcja Dużych liter na stronie Nowa sprawa zbierania elektronicznych materiałów dowodowych.](..\media\AeDNewCaseFormat1.png)
+   ![Opcja Duży przypadek na stronie Nowy przypadek zbierania elektronicznych materiałów dowodowych.](..\media\AeDNewCaseFormat1.png)
 
-4. Po nazewnictwie sprawy wybierz opcję **Nowy** , a następnie kliknij przycisk **Zapisz** , aby utworzyć sprawę.
+4. Po nazewnictwie sprawy wybierz opcję **Nowy** , a następnie kliknij przycisk **Zapisz** , aby utworzyć przypadek.
 
-## <a name="add-teams-custodial-data-sources-and-preserve-teams-content"></a>Dodawanie Teams danych i zachowywanie zawartości Teams danych  
+## <a name="add-teams-custodial-data-sources-and-preserve-teams-content"></a>Dodawanie Teams źródeł danych opieki i zachowywanie zawartości Teams  
 
-Następnym krokiem jest zidentyfikowanie użytkowników, którzy są osobami przechowywania danych podczas badania, i dodanie ich i lokalizacji zawartości jako osób przechoczyczy do sprawy utworzonej w poprzedniej sekcji. Podczas dodawania zawartości odbiorczej można określić ich skrzynki pocztowe i konta OneDrive jako źródła danych. Możesz także określić Teams jako źródła danych przechwycące, aby szybko umieścić te lokalizacje w zbędnych prawach w celu zachowania zawartości podczas badania. Ułatwia również zbieranie zawartości i dodawanie jej do zestawu recenzji.
+Następnym krokiem jest zidentyfikowanie użytkowników, którzy są opiekunami danych w badaniu, oraz dodanie ich i ich lokalizacji zawartości jako opiekunów do sprawy utworzonej w poprzedniej sekcji. Po dodaniu opiekunów możesz określić ich skrzynkę pocztową i konto OneDrive jako źródła danych opieki. Możesz również określić lokalizacje zawartości Teams jako źródła danych opiekunów, aby szybko wstrzymać te lokalizacje w celu zachowania zawartości podczas badania. Ułatwia również zbieranie zawartości i dodawanie jej do zestawu przeglądów.
 
-Aby dodać do sprawy przechowywania i zachować źródła danych:
+Aby dodać opiekunów do sprawy i zachować źródła danych opieki:
 
-1. Przejdź do Advanced eDiscovery przypadku utworzonego w poprzedniej sekcji, a następnie kliknij **pozycję Źródła danych**.
+1. Przejdź do Advanced eDiscovery przypadku utworzonego w poprzedniej sekcji, a następnie kliknij pozycję **Źródła danych**.
 
-2. Na stronie **Źródła danych** kliknij pozycję **Dodaj źródło danychDowiej** >  **nowe pliki przechowywania**.
+2. Na stronie **Źródła danych** kliknij pozycję **Dodaj źródło** >  **danychDodaj nowych opiekunów**.
 
-3. W **kreatorze Nowy woło7** dodaj jednego lub więcej użytkowników jako osoby, które przechowają dane w przypadku sprawy, wpisując pierwszą część nazwy lub aliasu użytkownika. Po odnalezieniu odpowiedniej osoby wybierz jej nazwisko, aby dodać ją do listy.  
+3. W kreatorze **Nowy opiekun** dodaj do sprawy co najmniej jednego użytkownika jako opiekuna, wpisując pierwszą część nazwy lub aliasu użytkownika. Po znalezieniu właściwej osoby wybierz jej imię i nazwisko, aby dodać ją do listy.  
 
-4. Rozwiń każdego opiekuna, aby wyświetlić podstawowe źródła danych, które zostały automatycznie skojarzone z tym opiekunem, oraz wybierz inne lokalizacje do skojarzenia z tym opiekunem.
+4. Rozwiń każdego opiekuna, aby wyświetlić podstawowe źródła danych, które zostały automatycznie skojarzone z opiekunem, oraz wybrać inne lokalizacje do skojarzenia z opiekunem.
 
-   ![Źródła danych Wiad.](..\media\TeamsCustodialDataLocations1.png)
+   ![Kustosze źródeł danych.](..\media\TeamsCustodialDataLocations1.png)
 
-5. Postępuj zgodnie z tymi wskazówkami, aby dodać przykładowe źródła danych Teams zawartości. Kliknij **pozycję Edytuj** , aby dodać lokalizację danych.
+5. Postępuj zgodnie z tymi wytycznymi, aby dodać źródła danych opieki dla Teams zawartości. Kliknij pozycję **Edytuj** , aby dodać lokalizację danych.
 
-   - **Skrzynki pocztowe**. Skrzynka pocztowa użytkownika korzystającego z tej skrzynki jest domyślnie zaznaczona. Zachowaj tę wybraną opcję, aby dodać (i zachować) czaty 1:1, czaty grupowe i czaty prywatnego kanału jako dane przechowujące.
+   - **Skrzynki pocztowe**. Skrzynka pocztowa opiekuna jest domyślnie zaznaczona. Zachowaj tę opcję, aby dodać (i zachować) czaty 1:1, czaty grupowe i czaty kanału prywatnego jako dane powiernicze.
 
-   - **OneDrive.** Konto OneDrive jest domyślnie zaznaczone. Zachowaj tę wybraną opcję, aby dodać (i zachować) pliki udostępnione w czatach prywatnych i czatach grupowych jako dane chroniące.
+   - **OneDrive.** Konto OneDrive opiekuna jest domyślnie wybrane. Zachowaj tę opcję, aby dodać (i zachować) pliki udostępnione w czatach 1:1 i czatach grupowych jako dane opieki.
 
-   - **SharePoint**. Dodaj witrynę SharePoint skojarzoną z dowolnym kanałem prywatnym lub udostępnionym, do których należy administrator, aby dodać (i zachować) jako dane grupy treści udostępnione w kanale. Kliknij **pozycję Edytuj**, a następnie dodaj adres URL SharePoint skojarzonej z kanałem prywatnym lub udostępnionym. Aby dowiedzieć się, jak znaleźć kanały prywatne i udostępnione, do których należy użytkownik, zobacz Zbierania elektronicznych materiałów dowodowych w kanałach [prywatnych i udostępnionych](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels).
+   - **SharePoint**. Dodaj witrynę SharePoint skojarzoną z dowolnym kanałem prywatnym lub udostępnionym, do którego należy opiekun, aby dodać (i zachować) jako dane powiernicze plików udostępnionych w kanale. Kliknij pozycję **Edytuj**, a następnie dodaj adres URL witryny SharePoint skojarzonej z kanałem prywatnym lub udostępnionym. Aby dowiedzieć się, jak zlokalizować kanały prywatne i udostępnione, do które należy użytkownik, zobacz [eDiscovery of private and shared channels (Zbierania elektronicznych materiałów dowodowych kanałów prywatnych i udostępnionych](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels)).
 
-   - **Teams**. Dodaj zespoły, do których należy administrator, aby dodać (i zachować) jako dane dostępowe do wszystkich wiadomości kanału i wszystkich plików udostępnionych w kanale Teams kanału. Obejmuje to dodanie skrzynki pocztowej dla zespołu nadrzędnego kanału udostępnionego, do którym należy ten element. Po kliknięciu **przycisku Edytuj** na liście zostanie wyświetlona skrzynka pocztowa i witryna skojarzona z każdym zespołem, do którym należy ten zespół. Wybierz zespoły, które chcesz skojarzyć z opiekunem. Musisz wybrać zarówno odpowiednią skrzynkę pocztową, jak i witrynę dla każdego zespołu.
+   - **Teams**. Dodaj zespoły, do których należy opiekun, aby dodać (i zachować) jako dane powiernicze wszystkie komunikaty kanału i wszystkie pliki udostępnione kanałowi Teams. Obejmuje to dodanie skrzynki pocztowej dla zespołu nadrzędnego udostępnionego kanału, do który należy opiekun. Po kliknięciu przycisku **Edytuj** skrzynka pocztowa i witryna skojarzona z każdym zespołem, do których należy opiekun, są wyświetlane na liście. Wybierz zespoły, które chcesz skojarzyć z opiekunem. Musisz wybrać odpowiednią skrzynkę pocztową i witrynę dla każdego zespołu.
 
    > [!NOTE]
-   > Można również dodać skrzynkę pocztową i witrynę Teams, które nie są członkami jako lokalizacja danych przechoczy. Możesz to zrobić, klikając pozycję **Edytuj** Exchange  grupy i **SharePoint a następnie** dodając skrzynkę pocztową i witrynę skojarzoną z zespołem.
+   > Możesz również dodać skrzynkę pocztową i witrynę Teams, których opiekunowie nie są członkami jako lokalizacja danych opiekuna. W tym celu kliknij pozycję **Edytuj** obok **pozycji Exchange** i **SharePoint**, a następnie dodając skrzynkę pocztową i witrynę skojarzoną z zespołem.
 
-6. Po dodaniu osób do przechowywania i skonfigurowaniu źródeł danych wieńczych **kliknij przycisk Dalej** , aby wyświetlić stronę **Ustawień blokowania** .
+6. Po dodaniu opiekunów i skonfigurowaniu źródeł danych nadzoru kliknij przycisk **Dalej** , aby wyświetlić stronę **Ustawienia blokady** .
 
-   Zostanie wyświetlona lista elementów przechowywania i domyślnie zaznaczone pole wyboru w kolumnie Wstrzymaj. Oznaczało to, że na źródłach danych skojarzonych z każdym powiązanym z nimi źródłami danych zostanie umieszczona hold. Pozostaw te pola wyboru zaznaczone, aby zachować te dane.
+   Zostanie wyświetlona lista opiekunów, a pole wyboru w kolumnie **Hold (Blokada** ) jest domyślnie zaznaczone. Oznacza to, że blokada zostanie umieszczona w źródłach danych skojarzonych z każdym opiekunem. Pozostaw zaznaczone pola wyboru, aby zachować te dane.
 
-7. Na stronie **Ustawienia wstrzymywania** kliknij przycisk **Dalej** , aby przejrzeć ustawienia przechowywania. Kliknij **przycisk Submit** (Prześlij), aby dodać opiekunów do sprawy.
+7. Na stronie **Ustawienia blokady** kliknij przycisk **Dalej** , aby przejrzeć ustawienia opiekunów. Kliknij pozycję **Prześlij** , aby dodać opiekunów do sprawy.
 
 Aby uzyskać więcej informacji na temat dodawania i zachowywania źródeł danych w Advanced eDiscovery przypadku, zobacz:
 
-- [Dodawanie elementów do Advanced eDiscovery przypadku](add-custodians-to-case.md)
+- [Dodawanie opiekunów do sprawy Advanced eDiscovery](add-custodians-to-case.md)
 
-- [Dodawanie niepowiązywnych źródeł danych do sprawy Advanced eDiscovery przypadku](non-custodial-data-sources.md)
+- [Dodawanie źródeł danych bez opieki do sprawy Advanced eDiscovery](non-custodial-data-sources.md)
 
-## <a name="collect-teams-content-and-add-to-review-set"></a>Zbieranie Teams zawartości i dodawanie do zestawu recenzji
+## <a name="collect-teams-content-and-add-to-review-set"></a>Zbieranie zawartości Teams i dodawanie do zestawu przeglądów
 
-Po dodaniu osób do sprawy i zachowaniu zawartości w źródłach danych, które są przechowywanie Teams m, następnym krokiem przepływu pracy jest wyszukanie zawartości istotnej dla prowadzonego badania i dodanie jej do zestawu recenzji w celu dalszego przejrzenia i analizy. Chociaż typowym zbieraniem zawartości usługi Teams razem z zawartością innych usług Microsoft 365, takich jak wiadomości e-mail w programie Exchange i dokumenty w programie SharePoint, ta sekcja dotyczy konkretnie zbierania zawartości Teams w kolekcji. Możesz utworzyć dodatkowe kolekcje, które zbierają Teams zawartości do dodania do zestawu recenzji.
+Po dodaniu opiekunów do sprawy i zachowaniu zawartości w źródłach danych opiekunów następnym krokiem w przepływie pracy jest wyszukanie Teams zawartości, która jest istotna dla twojego badania, i dodanie jej do zestawu przeglądów w celu dalszego przeglądu i analizy. Chociaż typowe jest zbieranie zawartości Teams wraz z zawartością z innych usług Microsoft 365, takich jak poczta e-mail w Exchange i dokumenty w SharePoint, ta sekcja koncentruje się w szczególności na zbieraniu zawartości Teams w kolekcji. Możesz utworzyć dodatkowe kolekcje, które zbierają zawartość bez Teams, aby dodać ją do zestawu przeglądów.
 
-Gdy zbierasz Teams dla sprawy, istnieją dwa kroki przepływu pracy:
+Podczas zbierania Teams zawartości w przypadku przepływu pracy istnieją dwa kroki:
 
-1. **Utwórz kolekcję roboczą**.  Pierwszym krokiem jest utworzenie wersji *roboczej kolekcji*, która stanowi szacowaną wartość elementów spełniającą kryteria wyszukiwania. Możesz wyświetlić informacje o wynikach zapytania wyszukiwania, takie jak łączna liczba i rozmiar znalezionych elementów, różne źródła danych, w których zostały znalezione, oraz statystyki dotyczące zapytania wyszukiwania. Możesz również wyświetlić podgląd przykładowych elementów zwróconych przez kolekcję. Korzystając z tych statystyk, możesz zmienić zapytanie wyszukiwania i ponownie uruchomić kolekcję roboczą tyle razy, ile jest to konieczne, aby zawęzić wyniki, dopóki nie zawęzisz zbierania treści istotnych dla danej sprawy.
+1. **Utwórz kolekcję roboczą**.  Pierwszym krokiem jest utworzenie *kolekcji roboczej*, która jest oszacowaniem elementów zgodnych z kryteriami wyszukiwania. Możesz wyświetlić informacje o wynikach dopasowanych do zapytania wyszukiwania, takie jak całkowita liczba i rozmiar znalezionych elementów, różne źródła danych, w których zostały znalezione, oraz statystyki dotyczące zapytania wyszukiwania. Możesz również wyświetlić podgląd przykładu elementów, które zostały zwrócone przez kolekcję. Korzystając z tych statystyk, możesz zmienić zapytanie wyszukiwania i ponownie uruchomić kolekcję roboczą tyle razy, ile jest to konieczne, aby zawęzić wyniki, dopóki nie będziesz zadowolony, że zbierasz zawartość odpowiednią dla Twojego przypadku.
 
-2. **Zatwierdzanie wersji roboczej kolekcji do zestawu recenzji**. Po zadoweraniu wyników kolekcji roboczej możesz zatwierdzić kolekcję do zestawu recenzji. Po zatwierdzeniu wersji roboczej kolekcji elementy zwrócone przez kolekcję są dodawane do zestawu recenzji do przeglądania, analizy i eksportowania.
+2. **Zatwierdź kolekcję roboczą do zestawu przeglądów**. Gdy wyniki kolekcji roboczej będą zadowalające, możesz zatwierdzić kolekcję w zestawie przeglądów. Po zatwierdzeniu kolekcji roboczej elementy zwracane przez kolekcję są dodawane do zestawu przeglądów do przeglądania, analizy i eksportowania.
 
-Możesz również nie uruchamiać kolekcji roboczej i dodawać wyniki kolekcji bezpośrednio do zestawu recenzji podczas tworzenia i uruchamiania kolekcji.
+Istnieje również możliwość nie uruchamiania kolekcji roboczej i dodawania wyników kolekcji bezpośrednio do zestawu przeglądów podczas tworzenia i uruchamiania kolekcji.
 
-Aby utworzyć kolekcję Teams zawartości:
+Aby utworzyć kolekcję zawartości Teams:
 
-1. Przejdź do sprawy Advanced eDiscovery do poprzedniej sekcji, do których dodano części przechowacze, a następnie kliknij pozycję **Kolekcje**.
+1. Przejdź do Advanced eDiscovery przypadku, do których dodano opiekunów w poprzedniej sekcji, a następnie kliknij pozycję **Kolekcje**.
 
-2. Na stronie **Kolekcje** wybierz pozycję **Nowa** **kolekcjaStandardowa** >  kolekcja.
+2. Na stronie **Kolekcje** wybierz pozycję **Nowa** **kolekcjaStandard** >  kolekcja.
 
-3. Wpisz nazwę (wymaganą) i opis kolekcji (opcjonalnie).
+3. Wpisz nazwę (wymagane) i opis (opcjonalnie) dla kolekcji.
 
-4. Na stronie **Źródła danych Wiązywne** kliknij pozycję **Wybierz przechowywania** , aby wybrać przechowywania, które zostały dodane do sprawy.
+4. Na stronie **Źródła danych opieki** kliknij pozycję **Wybierz opiekunów** , aby wybrać opiekunów dodanych do sprawy.
 
-   Lista elementów przechowawczych sprawy jest wyświetlana na **stronie wysuwu Wybierz selektorów** .
+   Lista opiekunów sprawy jest wyświetlana na stronie wysuwanej **Wybieranie opiekunów** .
 
-5. Zaznacz jeden lub więcej określników, a następnie kliknij przycisk **Dodaj**.
+5. Wybierz co najmniej jednego opiekuna, a następnie kliknij przycisk **Dodaj**.
 
-   Po dodaniu określonych elementów przechowywania do kolekcji zostanie wyświetlona lista określonych źródeł danych dla każdego źródła przechowywania. Są to źródła danych skonfigurowane po dodaniu do sprawy urządzenia do przechowywania. Domyślnie są zaznaczone wszystkie źródła danych, które są w nich wyeksjonowane. Dotyczy to wszelkich Teams lub kanałów powiązanych z opiekunem.
+   Po dodaniu określonych opiekunów do kolekcji zostanie wyświetlona lista określonych źródeł danych dla każdego opiekuna. Są to źródła danych skonfigurowane podczas dodawania opiekuna do sprawy. Domyślnie wybierane są wszystkie źródła danych opiekuna. Obejmuje to wszystkie Teams lub kanały skojarzone z opiekunem.
 
-   Podczas zbierania zawartości w programie Teams zalecamy wykonanie następujących czynności:
+   Zalecamy wykonanie następujących czynności podczas zbierania zawartości Teams:
 
-   - Usuń konta elementów OneDrive z zakresu kolekcji (usuwając zaznaczenie pola wyboru w kolumnie OneDrive poszczególnych elementów dojściowych). Zapobiega to kolekcji zduplikowanych plików dołączonych do czatów jeden na jeden i czatów grupowych. Załączniki w chmurze są automatycznie zbierane z każdej konwersacji znalezionej w kolekcji po zatwierdzeniu kolekcji roboczej do zestawu recenzji. Przy użyciu tej metody (zamiast wyszukiwania kont OneDrive w ramach kolekcji) pliki dołączone do czatów grupowych i 1:1 są grupowane w konwersacji, w których zostały udostępnione.
+   - Usuń konta OneDrive opiekunów z zakresu kolekcji (usuwając zaznaczenie pola wyboru w kolumnie **OneDrive opiekuna** dla każdego opiekuna). Uniemożliwia to zbieranie zduplikowanych plików dołączonych do czatów 1:1 i czatów grupowych. Załączniki w chmurze są automatycznie zbierane z każdej konwersacji znalezionej w kolekcji po zatwierdzeniu kolekcji roboczej do zestawu przeglądów. Korzystając z tej metody (zamiast przeszukiwać konta OneDrive w ramach kolekcji), pliki dołączone do wersji 1:1 i czaty grupowe są grupowane w konwersacji, w ramach których zostały udostępnione.
 
-   - Usuń zaznaczenie pola wyboru w kolumnie Dodatkowa witryna, aby usunąć SharePoint zawierających pliki udostępnione w kanałach prywatnych lub udostępnionych. Eliminuje to gromadzenie zduplikowanych plików dołączonych do konwersacji w kanale prywatnym lub udostępnionym, ponieważ te załączniki w chmurze są automatycznie dodawane do zestawu recenzji po zatwierdzeniu wersji roboczej kolekcji i zgrupowaniu w konwersacjach, w których zostały udostępnione.
+   - Usuń zaznaczenie pola wyboru w kolumnie **Dodatkowa witryna**, aby usunąć witryny SharePoint zawierające pliki udostępnione w kanałach prywatnych lub udostępnionych. Eliminuje to zbieranie zduplikowanych plików dołączonych do konwersacji w kanale prywatnym lub udostępnionym, ponieważ te załączniki w chmurze są automatycznie dodawane do zestawu przeglądów podczas zatwierdzania kolekcji roboczej i grupowania ich w konwersacjach, w których zostały udostępnione.
 
-6. Jeśli wcześniej wspomniano o dodaniu zawartości do Teams jako źródeł danych, można pominąć ten krok i wybrać przycisk **Dalej**. W przeciwnym razie na  stronie Kreatora niebędące danymi można wybrać źródła danych, które nie mają elementów Teams zawartości dodanej do sprawy w celu przeszukania w kolekcji.
+6. Jeśli wcześniej wykonaliśmy kroki dodawania zawartości Teams jako źródeł danych opiekuna, możesz pominąć ten krok i wybrać przycisk **Dalej**. W przeciwnym razie na stronie Kreatora **źródeł danych bez nadzoru** można wybrać źródła danych bez nadzoru zawierające Teams zawartości, które mogły zostać dodane do sprawy w celu wyszukania w kolekcji.
 
-7. Jeśli wcześniej wspomniano o dodaniu zawartości do Teams jako źródeł danych, można pominąć ten krok i wybrać przycisk **Dalej**. W przeciwnym razie na **stronie Kreator dodatkowych** lokalizacji możesz dodać inne źródła danych do wyszukiwania w kolekcji. Możesz na przykład dodać skrzynkę pocztową i witrynę zespołu, który nie został dodany jako źródło danych o niedobczasowym lub niedobczasowym źródle danych. W przeciwnym razie **wybierz przycisk Dalej** i pomiń ten krok.
+7. Jeśli wcześniej wykonaliśmy kroki dodawania zawartości Teams jako źródeł danych opiekuna, możesz pominąć ten krok i wybrać przycisk **Dalej**. W przeciwnym razie na stronie Kreator **dodatkowych lokalizacji** możesz dodać inne źródła danych do wyszukiwania w kolekcji. Możesz na przykład dodać skrzynkę pocztową i witrynę dla zespołu, który nie został dodany jako źródło danych bez nadzoru. W przeciwnym razie wybierz pozycję **Dalej** i pomiń ten krok.
 
-8. Na stronie **kreatora** Warunki skonfiguruj zapytanie wyszukiwania w celu zbierania Teams zawartości ze źródeł danych określonych na poprzednich stronach kreatora. Zawęzić zakres kolekcji za pomocą różnych słów kluczowych i warunków wyszukiwania. Aby uzyskać więcej informacji, zobacz [Tworzenie zapytań wyszukiwania dla kolekcji](building-search-queries.md).
+8. Na stronie Kreator **warunków** skonfiguruj zapytanie wyszukiwania w celu zbierania Teams zawartości ze źródeł danych określonych na poprzednich stronach kreatora. Możesz użyć różnych słów kluczowych i warunków wyszukiwania, aby zawęzić zakres kolekcji. Aby uzyskać więcej informacji, zobacz [Tworzenie zapytań wyszukiwania dla kolekcji](building-search-queries.md).
 
-   Aby zapewnić najbardziej kompleksowy zbiór konwersacji za pomocą Teams czatów (w tym czatów 1:1, czatów grupowych i kanałów) użyj warunku  Typ i wybierz opcję **Wiadomości błyskawiczne**. Zalecamy również zastosowanie zakresu dat lub kilku słów kluczowych w celu zawężenia zakresu kolekcji do elementów istotnych dla twojego badania. Oto zrzut ekranu przedstawiający przykładowe zapytanie korzystające z **opcji Typ** **i** Data:
+   Aby zapewnić najbardziej kompleksową kolekcję Teams konwersacji na czacie (w tym 1:1, czatów grupowych i kanałowych), użyj warunku **Typ** i wybierz opcję **Wiadomości błyskawiczne**. Zalecamy również uwzględnienie zakresu dat lub kilku słów kluczowych, aby zawęzić zakres kolekcji do elementów związanych z badaniem. Oto zrzut ekranu przedstawiający przykładowe zapytanie korzystające z opcji **Typ** i **Data** :
 
-   ![Kwerenda zbiera Teams zawartości.](..\media\TeamsConditionsQueryType.png)
+   ![Zapytanie dotyczące zbierania zawartości Teams.](..\media\TeamsConditionsQueryType.png)
 
-9. Na stronie **Zapisywanie wersji roboczej lub zbierania** kreatora wykonaj jedną z następujących czynności w zależności od tego, czy chcesz utworzyć kolekcję roboczą, czy zatwierdzić kolekcję do zestawu recenzji.
+9. Na stronie **Kreator zapisywania wersji roboczej lub zbierania** wykonaj jedną z następujących czynności w zależności od tego, czy chcesz utworzyć kolekcję roboczą, czy zatwierdzić kolekcję w zestawie przeglądów.
 
-   ![Zapisywanie wersji roboczej kolekcji lub zatwierdzanie kolekcji.](..\media\TeamsDraftCommitCollection.png)
+   ![Zapisz kolekcję roboczą lub kolekcję zatwierdzeń.](..\media\TeamsDraftCommitCollection.png)
 
-   1. **Zapisywanie kolekcji jako wersji roboczej**. Wybierz tę opcję, aby utworzyć kolekcję roboczą. Jak już wyjaśniono, wersja robocza kolekcji nie dodaje wyników kolekcji do zestawu recenzji. Zwraca ona szacowaną wartość wyników wyszukiwania, które są zgodne z zapytaniem wyszukiwania źródeł danych w zakresie kolekcji. Umożliwia to wyświetlenie [statystyk kolekcji i raportów[(collection-statistics-reports.md)] oraz edytowanie i ponowne uruchomić tę roboczą kolekcję. Jeśli wynik wersji roboczej kolekcji ci się podoba, możesz go zatwierdzić do zestawu recenzji. Aby uzyskać więcej informacji, [zobacz Tworzenie kolekcji roboczej](create-draft-collection.md).
+   1. **Zapisz kolekcję jako wersję roboczą**. Wybierz tę opcję, aby utworzyć kolekcję roboczą. Jak wyjaśniono wcześniej, kolekcja robocza nie dodaje wyników kolekcji do zestawu przeglądów. Zwraca oszacowanie wyników wyszukiwania zgodnych z zapytaniem wyszukiwania dla źródeł danych w zakresie kolekcji. Dzięki temu możesz wyświetlić [statystyki kolekcji i raporty[(collection-statistics-reports.md)] oraz edytować i ponownie uruchomić kolekcję roboczą. Jeśli wynik kolekcji roboczej jest zadowalający, możesz zatwierdzić ją w zestawie przeglądów. Aby uzyskać więcej informacji, zobacz [Tworzenie kolekcji roboczej](create-draft-collection.md).
 
-   2. **Zbieranie elementów i dodawanie ich do zestawu recenzji**. Wybierz tę opcję, aby uruchomić kolekcję, a następnie dodać wyniki do zestawu recenzji. Kolekcję można dodać do nowego lub istniejącego zestawu recenzji. Opcje zbierania wiadomości Teams konwersacji (nazywanej także wątkiem *konwersacji*) i zbierania załączników w chmurze są domyślnie zaznaczone i nie można ich wybrać. Te opcje są automatycznie stosowane ze względu na nowy format sprawy użyty podczas tworzenia sprawy na Teams sprawy. Aby uzyskać więcej informacji na temat zatwierdzania kolekcji do zestawu recenzji, zobacz [Zatwierdzanie wersji roboczej kolekcji do zestawu recenzji](commit-draft-collection.md).
+   2. **Zbierz elementy i dodaj je do zestawu przeglądów**. Wybierz tę opcję, aby uruchomić kolekcję, a następnie dodaj wyniki do zestawu przeglądów. Kolekcję można dodać do nowego lub istniejącego zestawu przeglądów. Opcje zbierania kontekstowych Teams komunikatów konwersacji (nazywanych również *wątkami konwersacji*) i zbierania załączników w chmurze są domyślnie wybierane i nie można ich wybrać. Te opcje są stosowane automatycznie ze względu na nowy format przypadku, który był używany podczas początkowego tworzenia przypadku Teams zawartości. Aby uzyskać więcej informacji na temat zatwierdzania kolekcji w zestawie przeglądów, zobacz [Zatwierdzanie kolekcji roboczej do zestawu przeglądów](commit-draft-collection.md).
 
-10. Po zakończeniu konfigurowania kolekcji prześlij kolekcję, aby utworzyć kolekcję roboczą lub zebrać elementy i dodać je do zestawu recenzji.
+10. Po zakończeniu konfigurowania kolekcji prześlij kolekcję, aby utworzyć kolekcję roboczą lub zebrać elementy i dodać je do zestawu przeglądów.
 
-   Po zakończeniu procesu dodawania kolekcji do zestawu recenzji wartość stanu kolekcji na karcie Kolekcje ma  wartość **Zatwierdzone**.
+   Po zakończeniu procesu dodawania kolekcji do zestawu przeglądów wartość stanu kolekcji na karcie **Kolekcje** jest ustawiona na **wartość Zatwierdzone**.
 
-## <a name="review-teams-content-in-a-review-set"></a>Przeglądanie Teams zawartości w zestawie recenzji
+## <a name="review-teams-content-in-a-review-set"></a>Przeglądanie zawartości Teams w zestawie przeglądów
 
-Po dodaniu kolekcji Teams do zestawu recenzji następnym krokiem jest przejrzenie zawartości pod celu sprawdzenia jej istotności dla badania i w razie potrzeby jego pomylinie. Ważnym wymaganiem wstępnym przeglądania zawartości Teams jest zrozumienie, jak Advanced eDiscovery przetwarza Teams konwersacji na czacie i załączników podczas dodawania ich do zestawu recenzji. Takie przetwarzanie Teams powoduje następujące trzy rzeczy:
+Po dodaniu kolekcji zawartości Teams do zestawu przeglądów następnym krokiem jest przejrzenie zawartości pod kątem jej istotności dla badania i usunięcie jej w razie potrzeby. Ważnym wymaganiem wstępnym przeglądania zawartości Teams jest zrozumienie, w jaki sposób Advanced eDiscovery przetwarza Teams konwersacje i załączniki rozmów podczas dodawania ich do zestawu przeglądów. To przetwarzanie zawartości Teams powoduje wykonanie następujących trzech czynności:
 
-- **[Grupowanie](#grouping)**. Sposób grupowania wiadomości, wpisów i odpowiedzi Teams konwersacji i prezentowania ich w zestawie recenzji. Obejmuje to również załączniki w konwersacjach na czacie, które są wyodrębnione i grupowane w konwersacji.
+- **[Grupowanie](#grouping)**. Sposób grupowania wiadomości, wpisów i odpowiedzi Teams konwersacji i prezentowania ich w zestawie przeglądów. Obejmuje to również załączniki w konwersacjach rozmów są wyodrębniane i grupowane w konwersacji.
 
-- **[Transkrypcja wątków konwersacji](#transcript-conversation-threading)**. Sposób Advanced eDiscovery zawartości z konwersacji, która ma być zbierana w celu zapewnienia kontekstu wokół elementów, które spełniają kryteria kolekcji.
+- **[Transkrypcja wątków konwersacji](#transcript-conversation-threading)**. Jak Advanced eDiscovery określa, jaka dodatkowa zawartość konwersacji ma być zbierana w celu zapewnienia kontekstu wokół elementów zgodnych z kryteriami kolekcji.
 
-- **[Deduplication](#deduplication-of-teams-content)**. Jak Advanced eDiscovery zduplikowaną Teams zawartości.
+- **[Deduplikacja](#deduplication-of-teams-content)**. Jak Advanced eDiscovery obsługuje zduplikowaną zawartość Teams.
 
-- **[Metadane](#metadata-for-teams-content)**. Właściwości metadanych, Advanced eDiscovery dodawane Teams zawartości po jej zbierzeniu i dodaniu do zestawu recenzji.
+- **[Metadane](#metadata-for-teams-content)**. Właściwości metadanych, które Advanced eDiscovery dodawane do zawartości Teams po jej zebraniu i dodaniu do zestawu przeglądów.
 
-Informacje na temat grupowania, wątków konwersacji, deduplikacji i Teams pomagają zoptymalizować przeglądanie i analizę Teams zawartości. Ta sekcja zawiera również [porady dotyczące wyświetlania Teams w zestawie recenzji](#tips-for-viewing-teams-content-in-a-review-set).
+Omówienie grupowania, wątków konwersacji, deduplikacji i metadanych Teams pomoże zoptymalizować przegląd i analizę zawartości Teams. Ta sekcja zawiera również [wskazówki dotyczące wyświetlania zawartości Teams w zestawie przeglądów](#tips-for-viewing-teams-content-in-a-review-set).
 
 ### <a name="grouping"></a>Grupowanie
 
-Po dodaniu zawartości Teams konwersacji na czacie do zestawu recenzji wiadomości, wpisy i odpowiedzi z konwersacji są agregowane w plikach transkrypcji HTML. Jedna konwersacja na czacie może mieć wiele plików transkrypcji. Ważną funkcją tych plików transkrypcji jest przedstawianie zawartości Teams jako ciągłej konwersacji, a nie jako osobnej (lub osobnej) wiadomości. Zapewnia to kontekst dla elementów, które pasują do kryteriów wyszukiwania kolekcji w poprzednim kroku, i zmniejsza liczbę elementów zebranych do zestawu recenzji. Transkrypcje i skojarzone elementy mogą być grupowane według *rodziny lub* *konwersacji*. Elementy w tej samej rodzinie będą mieć tę samą wartość dla właściwości metadanych **FamilyId** . Elementy w tej samej konwersacji będą mieć tę samą wartość dla właściwości metadanych **ConversationId** .
+Gdy zawartość z Teams konwersacji czatu jest dodawana do zestawu przeglądów, wiadomości, wpisy i odpowiedzi z konwersacji są agregowane w plikach transkrypcji HTML. Konwersacja z jednym czatem może zawierać wiele plików transkrypcji. Ważną funkcją tych plików transkrypcji jest prezentowanie zawartości Teams jako ciągłych konwersacji, a nie jako pojedynczych (lub oddzielnych) komunikatów. Pomaga to zapewnić kontekst dla elementów spełniających kryteria wyszukiwania kolekcji w poprzednim kroku i zmniejszyć liczbę elementów zebranych do zestawu przeglądów. Transkrypcje i skojarzone elementy można grupować według *rodziny* lub *konwersacji*. Elementy w tej samej rodzinie będą miały taką samą wartość dla właściwości **FamilyId** metadata. Elementy w tej samej konwersacji będą miały taką samą wartość dla właściwości metadanych **ConversationId** .
 
-W poniższej tabeli opisano, jak różne typy wiadomości Teams są grupowane według rodziny i konwersacji.
+W poniższej tabeli opisano sposób grupowania różnych typów Teams zawartości czatu według rodziny i konwersacji.
 
-|Teams typ zawartości|Grupowanie według rodziny|Grupowanie według konwersacji|
+|typ zawartości Teams|Grupuj według rodziny|Grupuj według konwersacji|
 |---|---|---|
-|Teams czatach grupowych i 1:1|Transkrypcja i wszystkie jej załączniki oraz wyodrębnione elementy mają ten sam **element FamilyId**. Każda transkrypcja ma unikatowy **identyfikator FamilyId**.|Wszystkie pliki transkrypcji i ich elementy rodzinne w tej samej konwersacji mają ten sam **conversationId**. Obejmuje to następujące elementy: <ul><li>Wszystkie wyodrębnione elementy i załączniki wszystkich transkrypcji, które mają ten sam **conversationId**.</li><li>Wszystkie transkrypcje dla tej samej konwersacji na czacie</li><li>Wszystkie kopie kopi poszczególnych transkrypcji</li><li>Transkrypcje z kolejnych kolekcji z tej samej konwersacji na czacie</li></ul> <br/> W Teams czatach grupowych i 1:1 konwersacjach grupowych możesz mieć wiele plików transkrypcji, z których każdy odpowiada różnym ramom czasowym w konwersacji. Ponieważ te pliki transkrypcji są z tej samej konwersacji z tymi samymi uczestnikami, mają ten **samid konwersacji**.|
-|Standardowe, prywatne i udostępnione czaty na kanale|Każdy wpis oraz wszystkie odpowiedzi i załączniki są zapisywane we własnej transkrypcie. Ten transkrypcja i wszystkie jej załączniki oraz wyodrębnione elementy mają ten sam **element FamilyId**.|Każdy wpis, jego załączniki i wyodrębnione elementy mają unikatowy identyfikator **ConversationId**. Jeśli istnieją kolejne kolekcje lub nowe odpowiedzi z tego samego wpisu, transkrypcje różnicowe wynikające z tych kolekcji również będą mieć ten sam **conversationId**.|
+|Teams 1:1 i czaty grupowe|Transkrypcja i wszystkie jej załączniki i wyodrębnione elementy mają ten sam **identyfikator FamilyId**. Każda transkrypcja ma unikatowy **identyfikator FamilyId**.|Wszystkie pliki transkrypcji i ich elementy rodzinne w ramach tej samej konwersacji mają ten sam **identyfikator Konwersacji**. Obejmuje to następujące elementy: <ul><li>Wszystkie wyodrębnione elementy i załączniki wszystkich transkrypcji, które mają ten sam **identyfikator Konwersacji**.</li><li>Wszystkie transkrypcje dla tej samej konwersacji na czacie</li><li>Wszystkie kopie każdego transkrypcji dla opiekunów</li><li>Transkrypcje z kolejnych kolekcji z tej samej konwersacji na czacie</li></ul> <br/> W przypadku Teams 1:1 i rozmów grupowych możesz mieć wiele plików transkrypcji, z których każdy odpowiada innym ramom czasowym w konwersacji. Ponieważ te pliki transkrypcji pochodzą z tej samej konwersacji z tymi samymi uczestnikami, mają ten sam **identyfikator ConversationId**.|
+|Standardowe, prywatne i udostępnione czaty na kanale|Każdy wpis oraz wszystkie odpowiedzi i załączniki są zapisywane we własnej transkrypcji. Ta transkrypcja i wszystkie jej załączniki i wyodrębnione elementy mają ten sam **identyfikator FamilyId**.|Każdy wpis oraz jego załączniki i wyodrębnione elementy mają unikatowy **identyfikator Konwersacji**. Jeśli istnieją kolejne kolekcje lub nowe odpowiedzi z tego samego wpisu, transkrypcje różnicowe wynikające z tych kolekcji również będą miały ten sam **identyfikator ConversationId**.|
 
-Kontrolka **Grupuj** na pasku poleceń zestawu recenzji umożliwia wyświetlanie Teams grupowanych według rodziny lub konwersacji.
+Użyj kontrolki **Grupa** na pasku poleceń zestawu przeglądów, aby wyświetlić Teams zawartości pogrupowane według rodziny lub konwersacji.
 
-![Kontrolka grupowania na pasku poleceń.](..\media\TeamsGroupControl.png)
+![Kontrolka grupy na pasku poleceń.](..\media\TeamsGroupControl.png)
 
-- Wybierz **pozycję Grupuj załączniki** rodziny, aby Teams zawartość pogrupowane według rodziny. Każdy plik transkrypcji jest wyświetlany w wierszu na liście elementów zestawu recenzji. Załączniki są zagnieżdżone pod tym elementem.
+- Wybierz pozycję **Grupuj załączniki rodziny**, aby wyświetlić Teams zawartość pogrupowana według rodziny. Każdy plik transkrypcji jest wyświetlany w wierszu na liście elementów zestawu przeglądów. Załączniki są zagnieżdżone pod elementem.
 
-- Wybierz **pozycję Grupuj Teams lub Yammer konwersacje**, aby Teams zawartość pogrupowane według konwersacji. Każda konwersacja jest wyświetlana w wierszu na liście elementów zestawu recenzji. Transkrypcje plików i załączników są zagnieżdżone w konwersacji najwyższego poziomu.
+- Wybierz pozycję **Grupuj Teams lub Yammer konwersacje**, aby wyświetlić Teams zawartość pogrupowana według konwersacji. Każda konwersacja jest wyświetlana w wierszu na liście elementów zestawu przeglądów. Pliki transkrypcji i załączniki są zagnieżdżone w konwersacji najwyższego poziomu.
 
 > [!NOTE]
-> Załączniki w chmurze są grupowane z konwersacjami, w których się znajdują. To grupowanie jest realizowane przez przypisanie tej samej wartości **FamilyId** co plik transkrypcji wiadomości, do która go dołączono, i tego  samego samegoidu konwersacji, w których pojawiła się wiadomość. Oznacza to, że do zestawu recenzji można dodać wiele kopii załączników w chmurze, jeśli zostały dołączone do różnych konwersacji.
+> Załączniki w chmurze są grupowane z konwersacjami, w których się pojawiają. To grupowanie odbywa się przez przypisanie tego samego **identyfikatora FamilyId** co plik transkrypcji komunikatu, do który został dołączony plik, i ten sam **identyfikator Konwersacji co** konwersacja, w ramach która pojawiła się w komunikacie. Oznacza to, że wiele kopii załączników w chmurze może zostać dodanych do zestawu przeglądów, jeśli zostały dołączone do różnych konwersacji.
 
 #### <a name="viewing-transcript-files-for-conversations"></a>Wyświetlanie plików transkrypcji dla konwersacji
 
-Podczas wyświetlania plików transkrypcji w zestawie recenzji niektóre wiadomości są wyróżnione kolorem fioletowym. Wyróżnione wiadomości zależą od tego, którą kopię transkrypcyjną transkrypcji wyświetlasz. Na przykład na czacie 1:1 między użytkownikami User4 i User2 wiadomości opublikowane przez użytkownika User4 są wyróżniane kolorem fioletowym podczas wyświetlania transkrypcji zebranej ze skrzynki pocztowej użytkownika User4. Gdy wyświetlasz transkrypcję tej samej konwersacji użytkownika User2, wiadomości opublikowane przez użytkownika User2 są wyróżniane kolorem fioletowym. To wyróżnienie jest oparte na tym samym Teams klienta, gdzie wpisy użytkownika są wyróżniane kolorem fioletowym w kliencie Teams klienta.
+Podczas wyświetlania plików transkrypcji w zestawie przeglądów niektóre komunikaty są wyróżnione w kolorze fioletowym. Wyróżnione komunikaty zależą od kopii wyświetlanej transkrypcji przez opiekuna. Na przykład podczas czatu 1:1 między użytkownikiem User4 i User2 wiadomości publikowane przez użytkownika User4 są wyróżnione w kolorze fioletowym podczas wyświetlania transkrypcji zebranej ze skrzynki pocztowej użytkownika User4. Podczas wyświetlania transkrypcji użytkownika User2 tej samej konwersacji komunikaty publikowane przez użytkownika User2 są wyróżnione w kolorze fioletowym. To zachowanie wyróżniania jest oparte na tym samym Teams środowisku klienta, w którym wpisy użytkownika są wyróżnione w kolorze fioletowym w kliencie Teams.
 
-Na poniższych zrzutach ekranu pokazano przykładową konwersację w kliencie Teams oraz plik transkrypcji tej samej konwersacji w zestawie recenzji. Purpurowe wyróżnienie w pliku transkrypcji wskazuje, że transkrypcja została zebrana ze skrzynki pocztowej użytkownika User2.
+Poniższe zrzuty ekranu przedstawiają przykład konwersacji w kliencie Teams i plik transkrypcji tej samej konwersacji w zestawie przeglądów. Purpurowe wyróżnianie w pliku transkrypcji wskazuje, że transkrypcja została zebrana ze skrzynki pocztowej Użytkownika 2.
 
-##### <a name="conversation-in-teams-client"></a>Konwersacja w Teams klienta
+##### <a name="conversation-in-teams-client"></a>Konwersacja w kliencie Teams
 
-![Konwersacja pokazana w pliku transkrypcji w zestawie recenzji.](..\media\TeamsClient1.png)
+![Konwersacja wyświetlana w pliku transkrypcji w zestawie przeglądów.](..\media\TeamsClient1.png)
 
 ##### <a name="conversation-in-transcript-file"></a>Konwersacja w pliku transkrypcji
 
-![Ta sama konwersacja wyświetlana w Teams klienta.](..\media\TeamsTranscript1.png)
+![Ta sama konwersacja pokazana w kliencie Teams.](..\media\TeamsTranscript1.png)
 
-### <a name="transcript-conversation-threading"></a>Transkrypcja wątku konwersacji
+### <a name="transcript-conversation-threading"></a>Transkrypcja wątków konwersacji
 
-Funkcja wątków konwersacji w nowym formacie sprawy w programie Advanced eDiscovery ułatwia identyfikowanie zawartości kontekstowej związanej z elementami, które mogą być istotne dla prowadzonego badania. Ta funkcja tworzy oddzielne widoki konwersacji, które obejmują wiadomości czatu poprzedzające i następujące po nich, są zgodne z zapytaniem wyszukiwania podczas kolekcji. Ta funkcja umożliwia wydajne i szybkie przeglądanie ukończonych konwersacji na czacie (nazywanych konwersacjami w wątkach *) w* Microsoft Teams. Jak wyjaśniono wcześniej, konwersacje na czacie są odtworzyć w plikach transkrypcji HTML, Advanced eDiscovery dodaje Teams do zestawu recenzji.
+Funkcja wątków konwersacji w nowym formacie przypadku w Advanced eDiscovery ułatwia identyfikowanie zawartości kontekstowej związanej z elementami, które mogą być istotne dla badania. Ta funkcja tworzy różne widoki konwersacji, które zawierają komunikaty czatów poprzedzające elementy i zgodne z elementami zapytania wyszukiwania podczas zbierania. Ta funkcja umożliwia wydajne i szybkie przeglądanie pełnych konwersacji na czacie (*nazywanych konwersacjami wątkowymi*) w Microsoft Teams. Jak wyjaśniono wcześniej, konwersacje na czacie są rekonstruowane w plikach transkrypcji HTML, gdy Advanced eDiscovery dodaje zawartość Teams do zestawu przeglądów.
 
-Oto logika używana przez program Advanced eDiscovery do dołączania dodatkowych wiadomości i plików transkrypcji odpowiedzi, które zapewniają kontekst wokół elementów odpowiada zapytaniu kolekcji (nazywanego elementami *odpowiedzi), które* było używane podczas gromadzenia Teams zawartości. Różne zachowania w wątkach są oparte na typach czatów i kwerendzie wyszukiwania używanej do zbierania elementów odpowiedzi. Istnieją dwa typowe scenariusze zbierania:
+Oto logika używana przez Advanced eDiscovery do dołączania dodatkowych komunikatów i plików transkrypcji odpowiedzi, które zapewniają kontekst wokół elementów zgodnych z zapytaniem kolekcji (nazywanymi *elementami responsywnymi*) używanymi podczas zbierania Teams zawartości. Różne zachowania wątków są oparte na typach czatów i zapytaniu wyszukiwania używanym do zbierania elementów dynamicznych. Istnieją dwa typowe scenariusze zbierania danych:
 
-- Zapytania, które używają parametrów wyszukiwania, takich jak słowa kluczowe i pary właściwość:wartość
+- Zapytania używające parametrów wyszukiwania, takich jak słowa kluczowe i pary property:value
 
-- Zapytania, które używają tylko zakresów dat
+- Zapytania korzystające tylko z zakresów dat
 
-|Teams typ zawartości|Zapytania z parametrami wyszukiwania|Zapytania z zakresami dat|
+|typ zawartości Teams|Zapytania z parametrami wyszukiwania|Zapytania z zakresami dat|
 |---|---|---|
-|Teams czatach grupowych i 1:1|Wiadomości opublikowane 12 godzin przed i 12 godzin po odpowiedziach są grupowane z elementem odpowiedzi w pojedynczym pliku transkrypcji.|Wiadomości w oknie 24-godzinnym są grupowane w jednym pliku transkrypcji.|
-|Standardowe, prywatne i udostępnione Teams kanałów|Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji.|Każdy wpis zawierający elementy odpowiedzi i wszystkie odpowiadające im odpowiedzi są grupowane w jednym pliku transkrypcji.|
+|Teams 1:1 i czaty grupowe|Komunikaty, które zostały opublikowane 12 godzin przed i 12 godzin po elementach responsywnych, są pogrupowane z elementem dynamicznym w pojedynczym pliku transkrypcji.|Komunikaty w oknie 24-godzinnym są grupowane w jednym pliku transkrypcji.|
+|Standardowe, prywatne i udostępnione czaty kanałów Teams|Każdy wpis zawierający elementy dynamiczne i wszystkie odpowiadające im odpowiedzi są pogrupowane w pojedynczym pliku transkrypcji.|Każdy wpis zawierający elementy dynamiczne i wszystkie odpowiadające im odpowiedzi są pogrupowane w pojedynczym pliku transkrypcji.|
 
-### <a name="deduplication-of-teams-content"></a>Deduplication Teams zawartości
+### <a name="deduplication-of-teams-content"></a>Deduplikacja zawartości Teams
 
-Na poniższej liście opisano działanie deduplikacji (i duplikacji) podczas gromadzenia Teams w zestawie recenzji.
+Na poniższej liście opisano zachowanie deduplikacji (i duplikowania) podczas zbierania zawartości Teams do zestawu przeglądów.
 
-- Każdy plik transkrypcji dodany do zestawu recenzji powinien być mapowaniem jeden-do-jednego na zawartość przechowywaną w lokalizacjach danych. Oznacza to Advanced eDiscovery nie są zbierane żadne Teams, które już zostały dodane do zestawu recenzji. Jeśli wiadomość czatu jest już zebrana w zestawie recenzji, Advanced eDiscovery nie dodaje tej samej wiadomości z tej samej lokalizacji danych do zestawu recenzji w kolejnych kolekcjach.
+- Każdy plik transkrypcji dodany do zestawu przeglądów powinien być mapowaniem jeden do jednego na zawartość przechowywaną w lokalizacjach danych. Oznacza to, że Advanced eDiscovery nie zbiera żadnych Teams zawartości, która została już dodana do zestawu przeglądów. Jeśli wiadomość czatu jest już zbierana w zestawie przeglądów, Advanced eDiscovery nie dodaje tego samego komunikatu z tej samej lokalizacji danych do zestawu przeglądów w kolejnych kolekcjach.
 
-- W rozmowach grupowych (1:1) kopie wiadomości są przechowywane w skrzynce pocztowej każdego uczestnika konwersacji. Kopie tej samej konwersacji, które znajdują się w skrzynkach pocztowych różnych uczestników, są zbierane z różnymi metadanymi. W wyniku tego każde wystąpienie konwersacji jest traktowane jako unikatowe i jest przenoszone do zestawu recenzji w osobnych plikach transkrypcji. Jeśli zatem wszyscy uczestnicy czatu grupowego lub 1:1 zostaną dodani jako osoby do sprawy i zostaną uwzględnione w zakresie kolekcji, kopie każdej transkrypcji (w przypadku tej samej konwersacji) zostaną dodane do zestawu recenzji i pogrupowane razem z tym samym polem **konwersacji**. Każda z tych kopii jest skojarzona z odpowiadającym mu opiekunem. **Porada**: kolumna **Pośręce** na liście zestawu recenzji identyfikuje element do obsługi odpowiedniego pliku transkrypcji.
+- W przypadku czatów grupowych i 1:1 kopie wiadomości są przechowywane w skrzynce pocztowej każdego uczestnika konwersacji. Kopie tej samej konwersacji, które istnieją w skrzynkach pocztowych różnych uczestników, są zbierane z różnymi metadanymi. W rezultacie każde wystąpienie konwersacji jest traktowane jako unikatowe i wprowadzane do zestawu przeglądów w oddzielnych plikach transkrypcji. Jeśli więc wszyscy uczestnicy czatu grupowego 1:1 lub zostaną dodani jako opiekunowie w danym przypadku i uwzględnieni w zakresie kolekcji, kopie każdej transkrypcji (dla tej samej ochrony) zostaną dodane do zestawu przeglądów i zostaną zgrupowane razem z tym samym **identyfikatorem ConversationId**. Każda z tych kopii jest skojarzona z odpowiednim opiekunem. **Porada**: Kolumna **Kustosz** na liście zestawu przeglądów identyfikuje opiekuna odpowiedniego pliku transkrypcji.
 
-- W kolejnych kolekcjach elementów z tej samej konwersacji do zestawu recenzji jest dodawana i grupowana tylko zawartość różnicowa, która wcześniej nie była zbierana, z wcześniej zebranymi transkrypcjami z tej samej konwersacji. Oto przykład takiego zachowania:
+- W kolejnych kolekcjach elementów z tej samej konwersacji tylko zawartość delta, która nie została wcześniej zebrana, jest dodawana do zestawu przeglądów i grupowana (przez udostępnienie tego samego **identyfikatora Konwersacji**) z wcześniej zebranymi transkrypcjami z tej samej konwersacji. Oto przykład tego zachowania:
 
-   1. Kolekcja A zbiera wiadomości w konwersacji między użytkownikami Użytkownik1 i Użytkownik2 oraz dodaje zestaw recenzji.
+   1. Kolekcja A zbiera komunikaty w konwersacji między użytkownikami User1 i User2 i dodaje do zestawu przeglądów.
 
-   2. Kolekcja B zbiera wiadomości z tej samej konwersacji, ale od czasu uruchomienia kolekcji A istnieją nowe wiadomości między użytkownikami User1 i User2.
+   2. Kolekcja B zbiera komunikaty z tej samej konwersacji, ale istnieją nowe komunikaty między użytkownikami User1 i User2 od momentu uruchomienia kolekcji A.
 
-   3. Do zestawu recenzji są dodawane tylko nowe wiadomości z kolekcji B. Te wiadomości są dodawane do osobnego pliku transkrypcji, ale nowa transkrypcja jest grupowana z transkrypcjami z kolekcji A według tego samego **indeksu konwersacji**.
+   3. Tylko nowe komunikaty w kolekcji B są dodawane do zestawu przeglądów. Te komunikaty są dodawane do oddzielnego pliku transkrypcji, ale nowa transkrypcja jest pogrupowana z transkrypcjami z kolekcji A według tego samego **identyfikatora Konwersacji**.
 
-   To zachowanie dotyczy wszystkich typów Teams czatów.
+   To zachowanie ma zastosowanie do wszystkich typów czatów Teams.
 
-### <a name="metadata-for-teams-content"></a>Metadane dla Teams zawartości
+### <a name="metadata-for-teams-content"></a>Metadane zawartości Teams
 
-W dużych zestawach recenzji z tysiącami lub milionami elementów może być trudne zawężenie zakresu recenzji w celu Teams zawartości. Aby ułatwić skoncentrowanie się na zawartości Teams, istnieją właściwości metadanych specyficzne dla Teams zawartości. Za pomocą tych właściwości można organizować kolumny na liście recenzji oraz konfigurować [](review-set-search.md) filtry i kwerendy w celu zoptymalizowania przeglądania Teams zawartości. Te właściwości metadanych są również uwzględniane podczas eksportowania zawartości Teams z usługi Advanced eDiscovery, co ma ułatwić organizowanie i wyświetlanie zawartości po eksportowaniu lub za pomocą narzędzi zbierania elektronicznych materiałów dowodowych innych firm.
+W dużych zestawach przeglądów z tysiącami lub milionami elementów może być trudno zawęzić zakres przeglądu, aby Teams zawartość. Aby ułatwić skoncentrowanie przeglądu na zawartości Teams, istnieją właściwości metadanych specyficzne dla Teams zawartości. Te właściwości umożliwiają organizowanie kolumn na liście [przeglądów oraz konfigurowanie filtrów i zapytań](review-set-search.md) w celu zoptymalizowania przeglądu zawartości Teams. Te właściwości metadanych są również uwzględniane podczas eksportowania zawartości Teams z Advanced eDiscovery, aby ułatwić organizowanie i wyświetlanie zawartości po wyeksportowaniu lub w narzędziach zbierania elektronicznych materiałów dowodowych innych firm.
 
-W poniższej tabeli opisano właściwości metadanych dla Teams zawartości.
+W poniższej tabeli opisano właściwości metadanych Teams zawartości.
 
-|Właściwość Metadane|Opis|
+|Właściwość metadanych|Opis|
 |---|---|
-|ContainsEditedMessage|Wskazuje, czy plik transkrypcji zawiera edytowaną wiadomość. Edytowane wiadomości są identyfikowane podczas wyświetlania pliku transkrypcji.|
-|ConversationId|Identyfikator GUID identyfikujący konwersację, z która jest skojarzona z elementem. Transkrypcje plików i załączników z tej samej konwersacji mają tę samą wartość dla tej właściwości.|
-|Nazwa konwersacji|Nazwa konwersacji, z która jest skojarzony plik transkrypcji lub załącznik. W Teams czatach grupowych i 1:1 wartość tej właściwości to upn wszystkich uczestników konwersacji. Na przykład `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams kanału (standardowy, prywatny i udostępniony) mają nazwę konwersacji w następującym formacie: `<Team name>,<Channel name>`.Na przykład `eDiscovery vNext, General`.|
-|ConversationType|Wskazuje typ czatu zespołu. W Teams czatach grupowych i 1:1 wartość tej właściwości `Group`wynosi . W przypadku standardowych, prywatnych i udostępnionych czatów na kanale wartość to `Channel`.|
+|ContainsEditedMessage|Wskazuje, czy plik transkrypcji zawiera edytowany komunikat. Edytowane komunikaty są identyfikowane podczas wyświetlania pliku transkrypcji.|
+|ConversationId|Identyfikator GUID identyfikujący konwersację, z którą jest skojarzony element. Pliki transkrypcji i załączniki z tej samej konwersacji mają tę samą wartość dla tej właściwości.|
+|Nazwa konwersacji|Nazwa konwersacji, z która jest skojarzony plik transkrypcji lub załącznik. W przypadku Teams 1:1 i czatów grupowych wartość tej właściwości to nazwa UPN wszystkich uczestników konwersacji. Na przykład `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams czatów w kanałach (standardowych, prywatnych i udostępnionych) użyj następującego formatu dla nazwy konwersacji: `<Team name>,<Channel name>`. Na przykład `eDiscovery vNext, General`.|
+|Typ konwersacji|Wskazuje typ czatu zespołowego. W przypadku Teams 1:1 i czatów grupowych wartość tej właściwości to `Group`. W przypadku standardowych, prywatnych i udostępnionych czatów kanałowych wartość to `Channel`.|
 |Data|Sygnatura czasowa pierwszej wiadomości w pliku transkrypcji.|
-|FamilyId|Identyfikator GUID identyfikujący plik transkrypcji dla konwersacji na czacie. Załączniki będą mieć tę samą wartość dla tej właściwości, co plik transkrypcji zawierający wiadomość, do których plik został dołączony.|
-|FileClass|Wskazuje ten typ zawartości. Elementy z Teams mają wartość `Conversation`. Natomiast Exchange e-mail mają wartość `Email`.|
-|MessageKind|Właściwość typu wiadomości. Teams zawartość ma wartość `microsoftteams , im`.|
-|Adresaci|Lista wszystkich użytkowników, którzy otrzymali wiadomość w ramach transkrypcji.|
-|TeamsChannelName|Nazwa Teams transkrypcji w kanale.|
+|Identyfikator rodziny|Identyfikator GUID identyfikujący plik transkrypcji konwersacji na czacie. Załączniki będą miały tę samą wartość dla tej właściwości co plik transkrypcji zawierający komunikat, do który został dołączony.|
+|FileClass|Wskazuje ten typ zawartości. Elementy z czatów Teams mają wartość `Conversation`. Z kolei Exchange wiadomości e-mail mają wartość `Email`.|
+|MessageKind|Właściwość rodzaju komunikatu. Teams zawartość ma wartość `microsoftteams , im`.|
+|Adresatów|Lista wszystkich użytkowników, którzy otrzymali wiadomość w konwersacji transkrypcji.|
+|TeamsChannelName|Nazwa kanału Teams transkrypcji.|
 
-Aby uzyskać opisy Advanced eDiscovery właściwości metadanych dokumentu, zobacz [Pola metadanych](document-metadata-fields-in-Advanced-eDiscovery.md) dokumentu Advanced eDiscovery.
+Opisy innych Advanced eDiscovery właściwości metadanych można znaleźć [w temacie Document metadata fields in Advanced eDiscovery (Pola metadanych dokumentu w Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md)).
 
-## <a name="export-teams-content"></a>Eksportowanie Teams zawartości
+## <a name="export-teams-content"></a>Eksportowanie zawartości Teams
 
-Po przejrzeniu i obliczaniu zawartości Teams w zestawie recenzji możesz wyeksportować pliki transkrypcji zawierające zawartość, która odpowiada analizie. Nie ma żadnych określonych ustawień eksportu dla Teams zawartości. Każdy plik transkrypcji jest eksportowany jako plik wiadomości HTML. Ten plik zawiera również ukryte tagi CDATA ze wszystkimi metadanymi dla poszczególnych wiadomości czatu. Podczas eksportowania zawartości metadanych są uwzględniane właściwości Teams poprzedniej sekcji.  
+Po przejrzeniu i usunięciu zawartości Teams w zestawie przeglądów można wyeksportować pliki transkrypcji zawierające zawartość reagującą na badanie. Nie ma żadnych konkretnych ustawień eksportu dla Teams zawartości. Każdy plik transkrypcji jest eksportowany jako plik komunikatu HTML. Ten plik zawiera również ukryte tagi CDATA ze wszystkimi metadanymi dla poszczególnych wiadomości czatu. Właściwości metadanych omówione w poprzedniej sekcji są uwzględniane podczas eksportowania Teams zawartości.  
 
-Do każdego pliku transkrypcji odwołuje się plik ładowania i może on być umieszczony przy użyciu ścieżki względnej w polu Export_native_path pliku ładowania. Transkrypcje plików znajdują się w folderze Konwersacje w głównym folderze eksportu.
+Do każdego pliku transkrypcji odwołuje się plik ładowania i można go znaleźć przy użyciu ścieżki względnej w polu Export_native_path w pliku ładowania. Pliki transkrypcji znajdują się w folderze Konwersacje w głównym folderze eksportowania.
 
-## <a name="tips-for-viewing-teams-content-in-a-review-set"></a>Wskazówki przeglądania Teams w zestawie recenzji
+## <a name="tips-for-viewing-teams-content-in-a-review-set"></a>Wskazówki do wyświetlania zawartości Teams w zestawie przeglądów
 
-Poniżej znajdują się porady i najlepsze rozwiązania dotyczące wyświetlania Teams w zestawie recenzji.
+Poniżej przedstawiono kilka wskazówek i najlepszych rozwiązań dotyczących wyświetlania zawartości Teams w zestawie przeglądów.
 
-- Użyj **kontrolki Dostosuj kolumny** na pasku poleceń, aby dodać i uporządkować kolumny w celu zoptymalizowania przeglądania Teams zawartości.
+- Użyj kontrolki **Dostosuj kolumny** na pasku poleceń, aby dodawać i organizować kolumny, aby zoptymalizować przegląd zawartości Teams.
 
-  ![Strona wysuwana Edytuj kolumnę umożliwia dodawanie, usuwanie i organizowanie kolumn.](..\media\EditReviewSetColumns.png)
+  ![Użyj strony wysuwanej kolumny Edytuj kolumnę, aby dodawać, usuwać i organizować kolumny.](..\media\EditReviewSetColumns.png)
 
-   Możesz dodawać i usuwać kolumny, które są przydatne Teams zawartości. Kolejność kolumn można także zmieniać, przeciągając je i upuszczając na **wysuwaną** stronę Edytowania kolumny. Można też sortować według kolumn w celu grupowania Teams zawartości z podobnymi wartościami w sortowanej kolumnie.
+   Możesz dodawać i usuwać kolumny, które są przydatne do Teams zawartości. Kolejność kolumn można również sekwencjonować, przeciągając i upuszczając je na stronie wysuwanej **kolumny Edytuj** . Możesz również sortować kolumny, aby grupować zawartość Teams z podobnymi wartościami dla kolumny, którą sortujesz.
 
-- Przydatne kolumny, które ułatwiają przeglądanie Teams to **: Szybki****,** Adresaci, **Typ pliku** **lub Rodzaj wiadomości**.
+- Przydatne kolumny ułatwiające przeglądanie zawartości Teams obejmują **opiekuna**, **adresatów** i **typ pliku** lub **rodzaj wiadomości**.
 
-- Aby [szybko](review-set-search.md) wyświetlić Teams zawartości, użyj filtrów Teams właściwości związanych Teams zawartości. Istnieją filtry dla większości właściwości metadanych opisanych w poprzedniej sekcji.
+- Użyj [filtrów](review-set-search.md) dla właściwości związanych z Teams, aby szybko wyświetlić zawartość Teams. Istnieją filtry dla większości właściwości metadanych opisanych w poprzedniej sekcji.
 
-## <a name="reference-guide"></a>Przewodnik
+## <a name="reference-guide"></a>Przewodnik referencyjny
 
-Oto krótki przewodnik dotyczący korzystania z programu Advanced eDiscovery dla Microsoft Teams. Ten przewodnik zawiera podsumowanie kluczy używania aplikacji Advanced eDiscovery zachowywania, zbierania, przeglądania i eksportowania zawartości z usługi Microsoft Teams.
+Oto krótki przewodnik referencyjny dotyczący używania Advanced eDiscovery dla Microsoft Teams. Ten przewodnik zawiera podsumowanie punktów kluczy do używania Advanced eDiscovery do zachowywania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams.
 
-![Miniatura przewodnika do reference for using Advanced eDiscovery for Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
+![Miniatura przewodnika referencyjnego do używania Advanced eDiscovery dla Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
 
-[Pobierz jako plik PDF](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)
+[Pobieranie jako pliku PDF](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)

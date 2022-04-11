@@ -1,5 +1,5 @@
 ---
-title: Tworzenie zasad typu informacji poufnych przy użyciu Szyfrowanie wiadomości usługi Office 365
+title: Tworzenie zasad typów informacji poufnych przy użyciu szyfrowania komunikatów Office 365
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,67 +16,67 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Dowiedz się, jak tworzyć zasady typu informacji poufnych dla organizacji przy użyciu Szyfrowanie wiadomości usługi Office 365.
+description: Dowiedz się, jak utworzyć zasady typów informacji poufnych dla organizacji przy użyciu Office 365 szyfrowania komunikatów.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 8978b1f9faae2e96fa1940bf7663855ec3bb61da
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a12c3c559fdd9dcc7bd142e5ee7d58d777211bc7
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017753"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759418"
 ---
-# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Tworzenie zasad typu informacji poufnych dla organizacji przy użyciu szyfrowania wiadomości
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Tworzenie zasad typów informacji poufnych dla organizacji przy użyciu szyfrowania komunikatów
 
-Zasady ochrony przed utratą Exchange (DLP, Data Loss Prevention) można stosować do reguł przepływu poczty e-mail lub ochrony przed utratą danych (DLP, Data Loss Prevention) w celu utworzenia zasad typu informacji poufnych w Szyfrowanie wiadomości usługi Office 365. Aby utworzyć regułę przepływu Exchange poczty e-mail, możesz użyć centrum administracyjnego programu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administracyjnego (EAC)</a> lub programu PowerShell.
+Aby utworzyć zasady typów informacji poufnych z Office 365 szyfrowaniem komunikatów, można użyć Exchange reguł przepływu poczty lub ochrony przed utratą danych (DLP). Aby utworzyć regułę przepływu poczty Exchange, możesz użyć <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange (EAC)</a> lub programu PowerShell.
 
-## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Aby utworzyć zasady przy użyciu reguł przepływu poczty e-mail w
+## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Aby utworzyć zasady przy użyciu reguł przepływu poczty w usłudze EAC
 
-Zaloguj się do centrum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administracyjnego</a> i przejdź do pozycji **Przepływy** >  poczty **e-mail**. Na stronie Reguły utwórz regułę, która będzie Szyfrowanie wiadomości usługi Office 365. Regułę można utworzyć na podstawie warunków, takich jak obecność określonych słów kluczowych lub typów informacji poufnych w wiadomości lub załączniku.
+Zaloguj się do <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a> i przejdź do pozycji **Przepływ** >  **pocztyRules**. Na stronie Reguły utwórz regułę, która ma zastosowanie Office 365 szyfrowania komunikatów. Regułę można utworzyć na podstawie warunków, takich jak obecność niektórych słów kluczowych lub typów informacji poufnych w wiadomości lub załączniku.
 
-### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Aby utworzyć zasady przy użyciu reguł przepływu poczty e-mail w programie PowerShell
+### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Aby utworzyć zasady przy użyciu reguł przepływu poczty w programie PowerShell
 
-Użyj konta służbowego z uprawnieniami administratora globalnego w Twojej organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, [Połączenie do Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Utwórz zasady Set-IRMConfiguration i New-TransportRule cmdlet.
+Użyj konta służbowego z uprawnieniami administratora globalnego w organizacji, rozpocznij sesję Windows PowerShell i połącz się z Exchange Online. Aby uzyskać instrukcje, zobacz [Połączenie do Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Użyj poleceń cmdlet Set-IRMConfiguration i New-TransportRule, aby utworzyć zasady.
 
-## <a name="example-mail-flow-rule-created-with-powershell"></a>Przykładowa reguła przepływu poczty e-mail utworzona za pomocą programu PowerShell
+## <a name="example-mail-flow-rule-created-with-powershell"></a>Przykładowa reguła przepływu poczty utworzona przy użyciu programu PowerShell
 
-Uruchom następujące polecenia w programie PowerShell, aby utworzyć regułę przepływu poczty e-mail programu Exchange, która automatycznie szyfruje wiadomości e-mail wysyłane poza organizacją przy użyciu opcji tylko do szyfrowania, jeśli wiadomości e-mail lub ich załączniki zawierają następujące typy informacji poufnych:
+Uruchom następujące polecenia w programie PowerShell, aby utworzyć regułę przepływu poczty Exchange, która automatycznie szyfruje wiadomości e-mail wysyłane poza organizację za pomocą opcji tylko do szyfrowania, jeśli wiadomości e-mail lub ich załączniki zawierają następujące typy informacji poufnych:
 
-- Numer routingu ABA
+- Numer routingu usługi ABA
 - Numer karty kredytowej
-- Numer agencji egzekwowania praw osób (DEA)
-- Stany Zjednoczone numer paszportu
+- Numer Agencji Egzekwowania Narkotyków (DEA)
+- Stany Zjednoczone /Zjednoczone Zjednoczone numer paszportu
 - Numer konta bankowego w Stanach Zjednoczonych
-- Numer identyfikacyjny identyfikacji indywidualnej (ITIN) Stanów Zjednoczonych
-- Numer SSN (U.SSN)
+- Numer identyfikacyjny indywidualnego podatnika w Stanach Zjednoczonych (ITIN)
+- Numer ubezpieczenia społecznego (SSN)
 
 ```powershell
 Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-Aby uzyskać więcej informacji, [zobacz Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) i [New-TransportRule](/powershell/module/exchange/new-transportrule).
+Aby uzyskać więcej informacji, zobacz [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) i [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
-## <a name="how-recipients-access-attachments"></a>Jak adresaci mają dostęp do załączników
+## <a name="how-recipients-access-attachments"></a>Jak adresaci uzyskują dostęp do załączników
 
-Po zaszyfrowaniu wiadomości przez firmę Microsoft adresaci mają nieograniczony dostęp do załączników, gdy uzyskuje dostęp do zaszyfrowanych wiadomości e-mail i otwierają je.
+Gdy firma Microsoft szyfruje wiadomość, adresaci mają nieograniczony dostęp do załączników podczas uzyskiwania dostępu do zaszyfrowanej wiadomości e-mail i otwierania ich.
 
-## <a name="to-prepare-for-this-change"></a>Aby przygotować się na tę zmianę
+## <a name="to-prepare-for-this-change"></a>Aby przygotować się do tej zmiany
 
-Możesz zaktualizować wszelkie mające zastosowanie dokumenty i materiały szkoleniowe dla użytkowników końcowych, aby przygotować osoby w Twojej organizacji do tej zmiany. Udostępnij te Szyfrowanie wiadomości usługi Office 365 zasobów użytkownikom, odpowiednio do potrzeb:
+Możesz zaktualizować dowolną odpowiednią dokumentację użytkownika końcowego i materiały szkoleniowe, aby przygotować osoby w organizacji do tej zmiany. W razie potrzeby udostępnij użytkownikom następujące zasoby szyfrowania komunikatów Office 365:
 
-- [Wysyłanie i wyświetlanie zaszyfrowanych wiadomości oraz odpowiadanie na nie Outlook wiadomości na komputerze PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Microsoft 365 klip wideo z podstawowymi informacjami Office wiadomości](https://youtu.be/CQR0cG_iEUc)
+- [Wysyłanie, wyświetlanie i odpowiadanie na zaszyfrowane wiadomości w Outlook dla komputera](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [wideo Microsoft 365 Essentials: szyfrowanie komunikatów Office](https://youtu.be/CQR0cG_iEUc)
 
-## <a name="view-these-changes-in-the-audit-log"></a>Wyświetlanie tych zmian w dzienniku inspekcji
+## <a name="view-these-changes-in-the-audit-log"></a>Wyświetl te zmiany w dzienniku inspekcji
 
-Microsoft 365 inspekcji tej aktywności i udostępnia ją administratorom. Operacja to "New-TransportRule" i fragment przykładowego wpisu inspekcji z centrum zabezpieczeń i zgodności usługi & inspekcji znajduje się poniżej:
+Microsoft 365 przeprowadza inspekcję tego działania i udostępnia ją administratorom. Operacja to "New-TransportRule", a fragment przykładowego wpisu inspekcji z usługi Audit Log Search w Usłudze Security & Compliance Center znajduje się poniżej:
 
 ```text
-*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"…etc.*
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"...etc.*
 ```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Aby wyłączyć lub dostosować zasady typów informacji poufnych
 
-Po utworzeniu reguły przepływu poczty e-mail programu Exchange możesz ją wyłączyć lub [](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) edytować,  >  przechodząc do pozycji Przepływy poczty w centrum administracyjnym programu <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> i wyłączając regułę "Szyfrowanie poufnych wiadomości e-mail wychodzących (reguła "poza polem *)*".
+Po utworzeniu reguły przepływu poczty Exchange można [wyłączyć lub edytować regułę](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule), przechodząc do pozycji **Reguły przepływu** >  poczty **w** <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a> i wyłączając regułę "*Szyfrowanie wychodzących poufnych wiadomości e-mail (reguła out of box)*".

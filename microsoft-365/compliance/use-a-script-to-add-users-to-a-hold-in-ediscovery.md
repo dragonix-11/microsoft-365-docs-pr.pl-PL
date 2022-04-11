@@ -1,5 +1,5 @@
 ---
-title: Dodawanie użytkowników do sprawy zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
+title: Dodawanie użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych za pomocą skryptu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,79 +21,79 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: Dowiedz się, jak uruchomić skrypt dodawania skrzynek pocztowych & OneDrive dla Firm witryn do nowego miejsca przechowywania skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.
-ms.openlocfilehash: fd11ccb6c262cd0e31a65d2a1f95d5dbcd92869c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Dowiedz się, jak uruchomić skrypt w celu dodania skrzynek pocztowych & OneDrive dla Firm witryn do nowego archiwum skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.
+ms.openlocfilehash: a678649ebd15a34bdfe5765449d41feae1b14901
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314563"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761246"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Dodawanie użytkowników do sprawy zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
+# <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Dodawanie użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych za pomocą skryptu
 
-Centrum & zabezpieczeń program PowerShell udostępnia polecenia cmdlet, które umożliwiają automatyzowanie czasochłonnych zadań związanych z tworzeniem spraw zbierania elektronicznych materiałów dowodowych i zarządzaniem nimi. Obecnie zastosowanie podstawowej sprawy zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365 umieszczenie dużej liczby lokalizacji zawartości przechwytowej w chmurze wymaga czasu i przygotowania. Na przykład przed utworzeniem wstrzymywania musisz zebrać adres URL każdej OneDrive dla Firm witryny sieci Web, którą chcesz umieścić w a holdie. Następnie dla każdego użytkownika, którego chcesz umieścić w a holdie, musisz dodać jego skrzynkę pocztową i jego OneDrive dla Firm do tej witryny. Za pomocą skryptu w tym artykule możesz zautomatyzować ten proces.
+Program PowerShell & Compliance Center zapewnia polecenia cmdlet, które umożliwiają automatyzowanie czasochłonnych zadań związanych z tworzeniem przypadków zbierania elektronicznych materiałów dowodowych i zarządzaniem nimi. Obecnie użycie przypadku core eDiscovery w Centrum zgodności platformy Microsoft 365 do umieszczenia dużej liczby lokalizacji zawartości opiekuna w zawieszeniu wymaga czasu i przygotowania. Na przykład przed utworzeniem blokady musisz zebrać adres URL dla każdej witryny OneDrive dla Firm, która ma zostać wstrzymana. Następnie dla każdego użytkownika, który chcesz umieścić w zawieszeniu, musisz dodać jego skrzynkę pocztową i witrynę OneDrive dla Firm do blokady. Aby zautomatyzować ten proces, możesz użyć skryptu w tym artykule.
   
-Skrypt wyświetli monit o nazwę domeny witryny Moja witryna organizacji ( `contoso` na przykład w adresie URL https://contoso-my.sharepoint.com), nazwie istniejącej sprawy zbierania elektronicznych materiałów dowodowych, nazwie nowego miejsca przechowywania skojarzonego ze sprawą, liście adresów e-mail użytkowników, których chcesz umieścić w a hold, oraz kwerendy wyszukiwania do użycia w przypadku tworzenia blokowania opartego na kwerendach. Skrypt pobiera następnie adres URL witryny programu OneDrive dla Firm dla każdego użytkownika z listy, tworzy nowe wstrzymanie, a następnie dodaje skrzynkę pocztową i witrynę OneDrive dla Firm każdego użytkownika na liście do tej listy. Skrypt generuje również pliki dziennika, które zawierają informacje o nowym wstrzymaniu.
+Skrypt wyświetla monit o podanie nazwy domeny Moja witryna organizacji (na przykład `contoso` w adresie URL https://contoso-my.sharepoint.com)nazwa istniejącego przypadku zbierania elektronicznych materiałów dowodowych, nazwa nowego archiwum skojarzonego ze sprawą, lista adresów e-mail użytkowników, których chcesz wstrzymać, oraz zapytanie wyszukiwania do użycia, jeśli chcesz utworzyć blokadę opartą na zapytaniach. Następnie skrypt pobiera adres URL witryny OneDrive dla Firm dla każdego użytkownika na liście, tworzy nowe blokady, a następnie dodaje skrzynkę pocztową i witrynę OneDrive dla Firm dla każdego użytkownika na liście do blokady. Skrypt generuje również pliki dziennika zawierające informacje o nowym blokadzie.
   
-W tym celu należy wykonać następujące czynności:
+Poniżej przedstawiono kroki, które należy wykonać:
   
-[Krok 1. Instalowanie powłoki SharePoint zarządzania online](#step-1-install-the-sharepoint-online-management-shell)
+[Krok 1. Instalowanie powłoki zarządzania SharePoint Online](#step-1-install-the-sharepoint-online-management-shell)
   
 [Krok 2. Generowanie listy użytkowników](#step-2-generate-a-list-of-users)
   
-[Krok 3. Uruchamianie skryptu w celu utworzenia skryptu i dodania użytkowników](#step-3-run-the-script-to-create-a-hold-and-add-users)
+[Krok 3. Uruchamianie skryptu w celu utworzenia blokady i dodania użytkowników](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
-## <a name="before-you-add-users-to-a-hold"></a>Przed dodaniem użytkowników do trzymania
+## <a name="before-you-add-users-to-a-hold"></a>Przed dodaniem użytkowników do blokady
 
-- Aby uruchomić skrypt w kroku 3, musisz być członkiem grupy ról Menedżer zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365 i administratorem usługi SharePoint Online. Aby uzyskać więcej informacji, zobacz Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w Centrum zabezpieczeń Office [365 & zgodności](assign-ediscovery-permissions.md).
+- Aby uruchomić skrypt w kroku 3, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365 i administratorem usługi SharePoint Online. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w centrum Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
-- Do holdu skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365 można dodać maksymalnie 1000 skrzynek pocztowych i 100 witryn. Zakładając, że każdy użytkownik, który ma zostać umieścić w a hold, ma witrynę sieci OneDrive dla Firm, można dodać maksymalnie 100 użytkowników do trzymania przy użyciu skryptu z tego artykułu.
+- Maksymalnie 1000 skrzynek pocztowych i 100 witryn można dodać do blokady skojarzonej z przypadkiem zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Zakładając, że każdy użytkownik, który ma zostać wstrzymany, ma witrynę OneDrive dla Firm, możesz dodać maksymalnie 100 użytkowników do blokady przy użyciu skryptu w tym artykule.
 
-- Pamiętaj o zapisaniu listy użytkowników tworzyć w kroku 2 i skryptu w kroku 3 w tym samym folderze. Ułatwi to uruchomienie skryptu.
+- Pamiętaj, aby zapisać listę użytkowników utworzonych w kroku 2 i skrypt w kroku 3 w tym samym folderze. Ułatwi to uruchamianie skryptu.
 
-- Skrypt dodaje listę użytkowników do nowego hold'a, który jest skojarzony z istniejącą sprawą. Przed uruchomieniem skryptu upewnij się, że utworzono sprawę, z którą chcesz skojarzyć wstrzymanie.
+- Skrypt dodaje listę użytkowników do nowego archiwum skojarzonego z istniejącym przypadkiem. Przed uruchomieniem skryptu upewnij się, że przypadek, z którą chcesz skojarzyć blokadę, został utworzony.
 
-- Skrypt w tym artykule obsługuje nowoczesne uwierzytelnianie podczas nawiązywania połączenia z Centrum zgodności & w programie PowerShell i SharePoint powłoki zarządzania online. Skryptu można używać w stanie, w jaki jest, jeśli jesteś Microsoft 365 lub Microsoft 365 GCC organizacją. W przypadku organizacji Office 365 Germany, Microsoft 365 GCC High Organization lub organizacji doD Microsoft 365 DoD należy edytować skrypt, aby pomyślnie go uruchomić. `Connect-IPPSSession` W szczególności należy edytować linię i użyć parametrów *ConnectionUri* oraz *AzureADAuthorizationEndpointUri* (oraz odpowiednich wartości dla typu organizacji), aby połączyć się z programem PowerShell centrum zabezpieczeń & zgodności. Aby uzyskać więcej informacji, zobacz przykłady w te [Połączenie do programu PowerShell & Centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- Skrypt w tym artykule obsługuje nowoczesne uwierzytelnianie podczas nawiązywania połączenia z programem PowerShell & Compliance Center i powłoką zarządzania usługi SharePoint Online. Możesz użyć skryptu w taki sam jak jest, jeśli jesteś Microsoft 365 lub organizacją Microsoft 365 GCC. Jeśli jesteś organizacją Office 365 Niemczech, organizacją Microsoft 365 GCC High lub organizacją Microsoft 365 DoD, musisz edytować skrypt, aby pomyślnie go uruchomić. W szczególności musisz edytować wiersz `Connect-IPPSSession` i użyć parametrów *ConnectionUri* i *AzureADAuthorizationEndpointUri* (i odpowiednich wartości dla typu organizacji), aby nawiązać połączenie z programem PowerShell Security & Compliance Center. Aby uzyskać więcej informacji, zobacz przykłady w [programie PowerShell Połączenie to Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
-- Skrypt automatycznie rozłącza się z programem PowerShell & Centrum zgodności i SharePoint powłoki zarządzania online.
+- Skrypt automatycznie odłącza się od programu PowerShell Centrum zgodności & zabezpieczeń i powłoki zarządzania SharePoint Online.
 
-- Skrypt zawiera minimalną obsługę błędów. Jego głównym celem jest szybkie i łatwe umieść skrzynkę pocztową i OneDrive dla Firm witryny poszczególnych użytkowników w miejscu przechowywania.
+- Skrypt zawiera minimalną obsługę błędów. Jego głównym celem jest szybkie i łatwe umieszczenie skrzynki pocztowej i OneDrive dla Firm lokacji każdego użytkownika.
 
-- Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu lub usługi pomocy technicznej firmy Microsoft. Przykładowe skrypty są dostarczane W JAKIM JEST bez jakiejkolwiek gwarancji. Firma Microsoft dodatkowo nie udziela żadnych dorozumianych gwarancji, w tym, ale nie wyłącznie, żadnych dorozumianych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko związane z użyciem lub wykonaniem przykładowych skryptów i dokumentacji pozostaje tylko dla użytkownika. Firma Microsoft, jej autorzy ani nikt inny biorący udział w tworzeniu, produkcji lub dostarczaniu skryptów nie będą w żadnym wypadku ponosić odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody związane z utratą zysków, przerwami w działaniu firmy, utratą informacji biznesowych lub inne straty pieniężne) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub nieumiejętnego korzystania z tych skryptów lub dokumentacji.  nawet jeśli firma Microsoft została powiadomiona o możliwości wystąpienia takich szkód.
+- Przykładowe skrypty podane w tym temacie nie są obsługiwane w ramach żadnego standardowego programu pomocy technicznej firmy Microsoft ani usługi. Przykładowe skrypty są dostarczane jako is bez gwarancji jakiegokolwiek rodzaju. Firma Microsoft dodatkowo zrzeka się wszelkich dorozumianych gwarancji, w tym, bez ograniczeń, wszelkich domniemanych gwarancji przydatności handlowej lub przydatności do określonego celu. Całe ryzyko wynikające z użycia lub wydajności przykładowych skryptów i dokumentacji pozostaje z Tobą. W żadnym wypadku firma Microsoft, jej autorzy lub ktokolwiek inny zaangażowany w tworzenie, produkcję lub dostarczanie skryptów nie ponosi odpowiedzialności za jakiekolwiek szkody (w tym, bez ograniczeń, szkody za utratę zysków z działalności gospodarczej, przerwę w działalności, utratę informacji biznesowych lub inną stratę pieniężną) wynikające z korzystania z przykładowych skryptów lub dokumentacji lub niemożności korzystania z nich,  nawet jeśli firma Microsoft została poinformowana o możliwości wystąpienia takich szkód.
 
-## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Krok 1. Instalowanie powłoki SharePoint zarządzania online
+## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Krok 1. Instalowanie powłoki zarządzania SharePoint Online
 
-Pierwszym krokiem jest zainstalowanie powłoki SharePoint zarządzania online, jeśli nie jest ona jeszcze zainstalowana na komputerze lokalnym. Nie musisz korzystać z powłoki w tej procedurze, ale musisz ją zainstalować, ponieważ zawiera ona wymagania wstępne wymagane przez skrypt uruchamiany w kroku 3. Te wymagania wstępne umożliwiają skryptowi komunikowanie się z usługą SharePoint Online w celu uzyskania adresów URL witryn OneDrive dla Firm internetowych.
+Pierwszym krokiem jest zainstalowanie powłoki zarządzania SharePoint Online, jeśli nie jest jeszcze zainstalowana na komputerze lokalnym. Nie musisz używać powłoki w tej procedurze, ale musisz ją zainstalować, ponieważ zawiera wymagania wstępne wymagane przez skrypt uruchomiony w kroku 3. Te wymagania wstępne umożliwiają skryptowi komunikowanie się z usługą SharePoint Online w celu pobrania adresów URL witryn OneDrive dla Firm.
   
-Przejdź do tematu Konfigurowanie środowiska usługi [SharePoint Online Management Shell Windows PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) i wykonaj kroki 1 i 2, aby zainstalować powłokę zarządzania usługi SharePoint Online na komputerze lokalnym.
+Przejdź do [obszaru Konfigurowanie środowiska Windows PowerShell powłoki zarządzania SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) i wykonaj kroki 1 i 2, aby zainstalować powłokę zarządzania SharePoint Online na komputerze lokalnym.
 
 ## <a name="step-2-generate-a-list-of-users"></a>Krok 2. Generowanie listy użytkowników
 
-Skrypt w kroku 3 utworzy hold, który jest skojarzony ze sprawą zbierania elektronicznych materiałów dowodowych, oraz dodanie skrzynek pocztowych i witryn OneDrive dla Firm z listy użytkowników do hold. Możesz po prostu wpisać adresy e-mail w pliku tekstowym lub uruchomić polecenie w programie Windows PowerShell, aby uzyskać listę adresów e-mail i zapisać je w pliku (znajduje się w tym samym folderze, w którym zapiszesz skrypt w kroku 3).
+Skrypt w kroku 3 utworzy blokadę skojarzoną ze sprawą zbierania elektronicznych materiałów dowodowych oraz dodasz skrzynki pocztowe i witryny OneDrive dla Firm listy użytkowników do blokady. Możesz po prostu wpisać adresy e-mail w pliku tekstowym lub uruchomić polecenie w Windows PowerShell, aby uzyskać listę adresów e-mail i zapisać je w pliku (znajdującym się w tym samym folderze, w jakim zapiszesz skrypt w kroku 3).
   
-Oto polecenie programu PowerShell (uruchamiane przy użyciu zdalnej obsługi programu PowerShell połączonego z Twoją organizacją programu Exchange Online), które pozwala uzyskać listę adresów e-mail wszystkich użytkowników w organizacji i zapisać je w pliku tekstowym o nazwie HoldUsers.txt.
+Oto polecenie programu PowerShell (uruchamiane przy użyciu zdalnego programu PowerShell połączonego z organizacją Exchange Online), aby uzyskać listę adresów e-mail dla wszystkich użytkowników w organizacji i zapisać je w pliku tekstowym o nazwie HoldUsers.txt.
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-Po uruchomieniu tego polecenia otwórz plik tekstowy i usuń nagłówek zawierający nazwę właściwości . `PrimarySmtpAddress` Następnie usuń wszystkie adresy e-mail oprócz adresów użytkowników, których chcesz dodać do hold, który utworzysz w kroku 3. Upewnij się, że przed listą adresów e-mail lub po tej liście nie ma pustych wierszy.
+Po uruchomieniu tego polecenia otwórz plik tekstowy i usuń nagłówek zawierający nazwę  `PrimarySmtpAddress`właściwości . Następnie usuń wszystkie adresy e-mail z wyjątkiem tych dla użytkowników, których chcesz dodać do blokady utworzonej w kroku 3. Upewnij się, że nie ma pustych wierszy przed lub po liście adresów e-mail.
   
-## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Krok 3. Uruchamianie skryptu w celu utworzenia skryptu i dodania użytkowników
+## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Krok 3. Uruchamianie skryptu w celu utworzenia blokady i dodania użytkowników
 
-Po uruchomieniu skryptu w tym kroku zostanie wyświetlony monit o następujące informacje. Przed uruchomieniem skryptu należy przygotować te informacje.
+Po uruchomieniu skryptu w tym kroku zostanie wyświetlony monit o podanie następujących informacji. Pamiętaj, aby te informacje były gotowe przed uruchomieniem skryptu.
   
-- **Poświadczenia użytkownika:** Skrypt użyje Twoich poświadczeń do nawiązania połączenia z Centrum zabezpieczeń & zgodności za pomocą programu PowerShell. Ponadto użyje tych poświadczeń w celu uzyskania dostępu SharePoint Online w celu uzyskania dostępu do OneDrive dla Firm URL listy użytkowników.
+- **Poświadczenia użytkownika:** Skrypt użyje twoich poświadczeń do nawiązania połączenia z Centrum zgodności & zabezpieczeń za pomocą programu PowerShell. Te poświadczenia będą również używane do uzyskiwania dostępu do SharePoint Online w celu uzyskania adresów URL OneDrive dla Firm dla listy użytkowników.
 
-- **Nazwa domeny SharePoint:** Skrypt wyświetli monit o wprowadzenie tej nazwy, aby można było połączyć się z centrum SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">administracyjnego</a>. Ponadto używa nazwy domeny dla OneDrive URL w organizacji. Jeśli na przykład adres URL `https://contoso-admin.sharepoint.com` Twojego centrum administracyjnego to , a adres URL `https://contoso-my.sharepoint.com`OneDrive to , `contoso` wprowadź go, gdy skrypt wyświetli monit o podanie nazwy domeny.
+- **Nazwa domeny SharePoint:** skrypt monituje o wprowadzenie tej nazwy, aby można było nawiązać połączenie z <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centrum administracyjnym SharePoint</a>. Używa ona również nazwy domeny dla adresów URL OneDrive w organizacji. Jeśli na przykład adres URL centrum administracyjnego to `https://contoso-admin.sharepoint.com` , a adres URL OneDrive to `https://contoso-my.sharepoint.com`, należy wprowadzić`contoso`, gdy skrypt wyświetli monit o podanie nazwy domeny.
 
-- **Nazwa sprawy:** Nazwa istniejącej sprawy. Skrypt utworzy nowe hold, które jest skojarzone z tą sprawą.
+- **Nazwa sprawy:** Nazwa istniejącego przypadku. Skrypt utworzy nowe blokady skojarzone z tym przypadkiem.
 
-- **Nazwa wstrzymywania:** Nazwa skryptu spowoduje utworzenie i skojarzenie określonej sprawy.
+- **Nazwa blokady:** Nazwa blokady skryptu zostanie utworzona i skojarzona z określonym przypadkiem.
 
-- **Zapytanie wyszukiwania dla trzymania opartego na kwerendzie:** Wstrzymywanie oparte na kwerendach można utworzyć w taki sposób, aby wstrzymywać będzie tylko zawartość spełniająca określone kryteria wyszukiwania. Aby umieścić całą zawartość w a hold, po prostu naciśnij klawisz **Enter** , gdy zostanie wyświetlony monit o zapytanie wyszukiwania.
+- **Wyszukaj zapytanie dotyczące blokady opartej na zapytaniach:** Można utworzyć blokadę opartą na zapytaniach, aby tylko zawartość spełniająca określone kryteria wyszukiwania została wstrzymana. Aby wstrzymać całą zawartość, naciśnij klawisz **Enter** po wyświetleniu monitu o zapytanie wyszukiwania.
 
-- **Włączanie lub wyłączanie wstrzymywania:** Skrypt można włączyć wstrzymywanie po jego utworzeniu lub można utworzyć skrypt bez włączania go. Jeśli skrypt nie został uruchomiony, możesz włączyć go później w Centrum zgodności platformy Microsoft 365 lub uruchamiając następujące polecenia programu PowerShell:
+- **Włączanie blokady lub nie:** Po jego utworzeniu skrypt może włączyć blokadę lub utworzyć blokadę bez włączania go. Jeśli skrypt nie jest włączony, możesz go włączyć w dalszej części Centrum zgodności platformy Microsoft 365 lub uruchamiając następujące polecenia programu PowerShell:
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -103,11 +103,11 @@ Po uruchomieniu skryptu w tym kroku zostanie wyświetlony monit o następujące 
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **Nazwa pliku tekstowego z** listą użytkowników — nazwa pliku tekstowego z kroku 2, który zawiera listę użytkowników do dodania do zawieszonego systemu. Jeśli ten plik znajduje się w tym samym folderze co skrypt, po prostu wpisz nazwę pliku (na przykład HoldUsers.txt). Jeśli plik tekstowy znajduje się w innym folderze, wpisz pełną nazwę i ścieżkę pliku.
+- **Nazwa pliku tekstowego z listą użytkowników** — nazwa pliku tekstowego z kroku 2 zawierającego listę użytkowników do dodania do blokady. Jeśli ten plik znajduje się w tym samym folderze co skrypt, wystarczy wpisać nazwę pliku (na przykład HoldUsers.txt). Jeśli plik tekstowy znajduje się w innym folderze, wpisz pełną nazwę ścieżki pliku.
 
-Po zebraniu informacji, o które zostanie wyświetlony monit skryptu, ostatnim krokiem jest uruchomienie skryptu w celu utworzenia nowego blokowania i dodania do niego użytkowników.
+Po zebraniu informacji, o które zostanie wyświetlony monit skrypt, ostatnim krokiem jest uruchomienie skryptu w celu utworzenia nowego blokady i dodania do niego użytkowników.
   
-1. Zapisz poniższy tekst w pliku Windows PowerShell pliku skryptu, używając sufiksu nazwy pliku `.ps1`. Na przykład `AddUsersToHold.ps1`.
+1. Zapisz następujący tekst w pliku skryptu Windows PowerShell przy użyciu sufiksu nazwy `.ps1`pliku . Na przykład `AddUsersToHold.ps1`.
 
 ```powershell
 #script begin
@@ -273,24 +273,24 @@ Write-host "Script complete!" -foregroundColor Yellow
 #script end
 ```
 
-2. Na komputerze lokalnym otwórz program Windows PowerShell i przejdź do folderu, w którym został zapisany skrypt.
+2. Na komputerze lokalnym otwórz Windows PowerShell i przejdź do folderu, w którym zapisano skrypt.
 
-3. Uruchom skrypt. na przykład:
+3. Uruchom skrypt; na przykład:
 
    ```powershell
    .\AddUsersToHold.ps1
    ```
 
-4. Wprowadź informacje, o które zostanie wyświetlony monit skryptu.
+4. Wprowadź informacje, o które monituje skrypt.
 
-   Skrypt łączy się z programem PowerShell centrum zabezpieczeń & zgodności, a następnie tworzy nowe hold w przypadku zbierania elektronicznych materiałów dowodowych oraz dodaje skrzynki pocztowe i OneDrive dla Firm użytkowników do listy. Możesz przejść do sprawy na stronie **zbierania** elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365, aby wyświetlić nowe wstrzymanie.
+   Skrypt łączy się z programem PowerShell Security & Compliance Center, a następnie tworzy nowe blokady w przypadku zbierania elektronicznych materiałów dowodowych i dodaje skrzynki pocztowe i OneDrive dla Firm dla użytkowników na liście. Możesz przejść do sprawy na stronie **zbierania elektronicznych materiałów dowodowych** w Centrum zgodności platformy Microsoft 365, aby wyświetlić nową blokadę.
 
-Po zakończeniu wykonywania skryptu tworzy następujące pliki dziennika i zapisuje je w folderze, w którym znajduje się skrypt.
+Po zakończeniu działania skryptu tworzy następujące pliki dziennika i zapisuje je w folderze, w którym znajduje się skrypt.
   
-- **LocationsOnHold.txt:** Zawiera listę skrzynek pocztowych i witryn OneDrive dla Firm, które skrypt pomyślnie umieścił w a hold.
+- **LocationsOnHold.txt:** Zawiera listę skrzynek pocztowych i witryn OneDrive dla Firm, które skrypt został pomyślnie wstrzymany.
 
-- **LocationsNotOnHold.txt:** Zawiera listę skrzynek pocztowych i witryn OneDrive dla Firm, których skrypt nie umieścić w a hold. Jeśli użytkownik ma skrzynkę pocztową, ale nie witrynę OneDrive dla Firm, zostałby uwzględniony na liście witryn programu OneDrive dla Firm, które nie zostały umieszczone w a hold.
+- **LocationsNotOnHold.txt:** Zawiera listę skrzynek pocztowych i witryn OneDrive dla Firm, których skrypt nie został wstrzymany. Jeśli użytkownik ma skrzynkę pocztową, ale nie witrynę OneDrive dla Firm, użytkownik zostanie umieszczony na liście witryn OneDrive dla Firm, które nie zostały wstrzymane.
 
-- **GetCaseHoldPolicy.txt:** Zawiera wynik polecenia **cmdlet Get-CaseHoldPolicy** dla nowego blokowania, którego skrypt uruchomił po utworzeniu nowego blokowania. Informacje zwrócone przez to polecenie cmdlet obejmują listę użytkowników, których skrzynki pocztowe i witryny OneDrive dla Firm zostały umieszczone w a hold i czy to hold jest włączone, czy wyłączone. 
+- **GetCaseHoldPolicy.txt:** Zawiera dane wyjściowe polecenia cmdlet **Get-CaseHoldPolicy** dla nowego blokady, które skrypt uruchomił po utworzeniu nowego blokady. Informacje zwrócone przez to polecenie cmdlet zawierają listę użytkowników, których skrzynki pocztowe i witryny OneDrive dla Firm zostały wstrzymane oraz czy blokada jest włączona, czy wyłączona. 
 
-- **GetCaseHoldRule.txt:** Zawiera wynik polecenia **cmdlet Get-CaseHoldRule** nowego hold, którego skrypt uruchomił po utworzeniu nowego blokowania. Informacje zwrócone przez to polecenie cmdlet obejmują zapytanie wyszukiwania, jeśli skrypt został użyty do utworzenia hold'a opartego na zapytaniu.
+- **GetCaseHoldRule.txt:** Zawiera dane wyjściowe polecenia cmdlet **Get-CaseHoldRule** dla nowego blokady, które skrypt uruchomił po utworzeniu nowego blokady. Informacje zwrócone przez to polecenie cmdlet zawierają zapytanie wyszukiwania, jeśli skrypt został użyty do utworzenia blokady opartej na zapytaniach.

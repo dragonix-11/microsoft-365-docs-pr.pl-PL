@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się więcej o przeszkolnych klasyfikatorach
+title: Dowiedz się więcej o klasyfikatorach z możliwością szkolenia
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,128 +18,135 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Klasyfikatorzy przeszkoliwczy mogą rozpoznawać różne typy zawartości do oznaczania etykiet lub stosowania zasad, dając im próbki dodatnie i ujemne do oglądu.
-ms.openlocfilehash: 50d20c3a40b21696c06064b548d7766684fb12a0
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+description: Klasyfikatory z możliwością trenowania mogą rozpoznawać różne typy zawartości do etykietowania lub aplikacji zasad, dając jej pozytywne i negatywne próbki do obejrzenia.
+ms.openlocfilehash: 7da6c9ef6e26d25bb40cade4832abb7b73a4b095
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "63015423"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759882"
 ---
-# <a name="learn-about-trainable-classifiers"></a>Dowiedz się więcej o przeszkolnych klasyfikatorach
+# <a name="learn-about-trainable-classifiers"></a>Dowiedz się więcej o klasyfikatorach z możliwością szkolenia
 
-Klasyfikowanie i oznaczanie zawartości w celu ochrony i właściwej obsługi jest punktem wyjścia w dyscyplinie ochrony informacji. Microsoft 365 są trzy sposoby klasyfikowania zawartości.
+Klasyfikowanie i etykietowanie zawartości, aby można było ją odpowiednio chronić i obsługiwać, jest miejscem początkowym dla dziedziny ochrony informacji. Microsoft 365 ma trzy sposoby klasyfikowania zawartości.
 
 ## <a name="manually"></a>Ręcznie
 
-Klasyfikacja ręczna wymaga ludzkich decyzji i działań. Użytkownicy i administratorzy stosują ich do zawartości w przypadku jej napotkania. Możesz użyć istniejących etykiet i typów informacji poufnych lub użyć utworzonych niestandardowych.  Następnie możesz chronić zawartość i zarządzać jej rozsyłaniem.
+Klasyfikacja ręczna wymaga ludzkiego osądu i działania. Użytkownicy i administratorzy stosują je do zawartości w miarę jej występowania. Możesz użyć wcześniej istniejących etykiet i typów informacji poufnych lub użyć niestandardowych utworzonych.  Następnie możesz chronić zawartość i zarządzać jej dyspozycją.
 
 ## <a name="automated-pattern-matching"></a>Automatyczne dopasowywanie wzorców
 
-Ta kategoria mechanizmów klasyfikacji obejmuje znajdowanie zawartości przez:
+Ta kategoria mechanizmów klasyfikacji obejmuje znajdowanie zawartości według:
 
-- Słowa kluczowe lub wartości metadanych (język zapytania słów kluczowych).
-- Stosowanie wcześniej zidentyfikowanych wzorców informacji poufnych, takich jak ubezpieczenia, kart kredytowych lub numerów kont bankowych (definicje jednostek typu informacji [poufnych)](sensitive-information-type-entity-definitions.md).
-- Rozpoznanie elementu, ponieważ jest odmianą szablonu [(drukowanie palcem w dokumencie).](document-fingerprinting.md)
-- Używanie dokładnego dopasowania [ciągów do danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
+- Słowa kluczowe lub wartości metadanych (język zapytań słów kluczowych).
+- Używanie wcześniej zidentyfikowanych wzorców informacji poufnych, takich jak zabezpieczenia społeczne, karty kredytowe lub numery kont bankowych [(definicje jednostek typu informacje poufne).](sensitive-information-type-entity-definitions.md)
+- Rozpoznawanie elementu, ponieważ jest to odmiana szablonu [(drukowanie palcem dokumentu).](document-fingerprinting.md)
+- Przy użyciu obecności dokładnych ciągów [dokładne dopasowanie danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Etykiety wrażliwości i przechowywania mogą być następnie automatycznie stosowane w celu udostępnień zawartości do użycia [](dlp-learn-about-dlp.md) w sekcji Informacje na temat ochrony przed utratą danych i automatycznego stosowania zasad przechowywania [etykiet przechowywania](apply-retention-labels-automatically.md).
+Etykiety poufności i przechowywania można następnie automatycznie stosować, aby udostępnić zawartość do użycia w [artykule Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md) i [automatycznych zasadach stosowania etykiet przechowywania](apply-retention-labels-automatically.md).
 
-## <a name="classifiers"></a>Klasyfikatory
+## <a name="classifiers"></a>Klasyfikatorów
 
-Ta metoda klasyfikacji nadaje się dobrze do zawartości, która nie jest łatwo identyfikowana za pomocą metod ręcznego lub automatycznego dopasowywania wzorców. Ta metoda klasyfikacji polega bardziej na identyfikacji elementu za pomocą klasyfikatora na podstawie tego, co to jest, a nie według elementów, które się w nim znajdują (dopasowywanie wzorca). Klasyfikator uczy się, jak zidentyfikować typ zawartości, patrząc na setki przykładów zawartości, która Cię interesuje, klasyfikowanie.
+Ta metoda klasyfikacji jest odpowiednia dla zawartości, która nie jest łatwo identyfikowana za pomocą metod ręcznego lub zautomatyzowanego dopasowywania wzorców. Ta metoda klasyfikacji polega bardziej na używaniu klasyfikatora do identyfikowania elementu na podstawie tego, czym jest element, a nie elementów znajdujących się w elemencie (dopasowywanie wzorca). Klasyfikator dowie się, jak zidentyfikować typ zawartości, przeglądając setki przykładów zawartości, którą chcesz sklasyfikować.
 
 > [!NOTE]
-> W wersji zapoznawczej — klasyfikatory przeszkolne można wyświetlać w Eksploratorze zawartości, rozwijając klasyfikatorów przeszkolnych **w** panelu filtrów. Klasyfikatorzy przeszkoni będą automatycznie wyświetlać liczbę zdarzeń znalezionych w SharePoint, Teams i OneDrive, bez konieczności oznaczania etykiet.
-> Jeśli nie chcesz korzystać z tej funkcji, musisz złożyć żądanie do pomocy technicznej firmy Microsoft w celu wyłączenia klasyfikacji "poza polem". Spowoduje to wyłączenie skanowania zawartości poufnej i oznaczonej etykietą przed utworzeniem zasad tworzenia etykiet.
+> W wersji zapoznawczej — klasyfikatory z możliwością trenowania można wyświetlić w Eksploratorze zawartości, rozwijając pozycję **Klasyfikatory klasyfikujące możliwość** trenowania w panelu filtrów. Klasyfikatory z możliwością trenowania automatycznie wyświetlają liczbę zdarzeń znalezionych w SharePoint, Teams i OneDrive bez konieczności etykietowania.
+> Jeśli nie chcesz korzystać z tej funkcji, musisz wysłać żądanie z pomoc techniczna firmy Microsoft, aby wyłączyć klasyfikację out-of-the-box. Spowoduje to wyłączenie skanowania poufnej i oznaczonej zawartości przed utworzeniem zasad etykietowania.
 
 ### <a name="where-you-can-use-classifiers"></a>Gdzie można używać klasyfikatorów
 
-Klasyfikatory są dostępne do użycia jako warunek Office [](apply-sensitivity-label-automatically.md)etykiet wrażliwości, automatyczne stosowanie zasad etykiet przechowywania na podstawie warunku [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) i zgodności [komunikacji](communication-compliance.md). 
+Klasyfikatory są dostępne do użycia jako warunek [Office automatycznego etykietowania z etykietami poufności](apply-sensitivity-label-automatically.md), [automatycznym stosowaniem zasad etykiet przechowywania na podstawie warunku](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) i [zgodności z komunikacją](communication-compliance.md). 
 
-Etykiety wrażliwości mogą używać klasyfikatorów jako warunków ( zobacz [Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md)).
+Etykiety poufności mogą używać klasyfikatorów jako warunków. Zobacz [Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
-> Klasyfikatory działają tylko w przypadku elementów, które nie są szyfrowane.
+> Klasyfikatory działają tylko z elementami, które nie są szyfrowane.
 
 ## <a name="types-of-classifiers"></a>Typy klasyfikatorów
 
-- **Wstępnie przeszkolone klasyfikatory** — firma Microsoft utworzyła i wstępnie przeszkoliła wiele klasyfikatorów, z których możesz zacząć korzystać bez szkolenia. Te klasyfikatory będą wyświetlane ze stanem `Ready to use`.
-- **Niestandardowe klasyfikatory** przeszkolone — jeśli klasyfikacja wykracza poza zakres, który obejmuje wstępnie przeszkolone klasyfikatory, możesz tworzyć i przeszkolenie swoich klasyfikatorów.
+- **wstępnie wytrenowane klasyfikatory** — firma Microsoft utworzyła i wstępnie wytrenowała wiele klasyfikatorów, których można zacząć używać bez ich trenowania. Te klasyfikatory będą wyświetlane ze stanem `Ready to use`.
+- **niestandardowe klasyfikatory trenowalne** — jeśli masz wymagania klasyfikacji wykraczające poza to, co obejmują wstępnie wytrenowane klasyfikatory, możesz utworzyć i wytrenować własne klasyfikatory.
 
-### <a name="pre-trained-classifiers"></a>Wstępnie przeszkolone klasyfikatory
+### <a name="pre-trained-classifiers"></a>Wstępnie wytrenowane klasyfikatory
 
-Microsoft 365 zawiera wiele wstępnie przeszkolonych klasyfikatorów:
+Microsoft 365 zawiera wiele wstępnie wytrenowanych klasyfikatorów:
 
 > [!CAUTION]
-> Wyszkodziliśmy wstępnie  przeszkolonych klasyfikatorów w języku obraźliwym, ponieważ został w nim wyszkolonych duża liczba wyników fałszywie dodatnich. Nie należy go używać, a jeśli obecnie z niego korzystasz, należy z niego przenieść procesy biznesowe. Zamiast tego zalecamy  **używanie wstępnie** przeszkolonych klasyfikatorów pod preszkową podpowiadanie **zagrożenia,** profanowania i molestowania.
+> Wycofywamy wstępnie wytrenowany klasyfikator **języka obraźliwego** , ponieważ generuje on dużą liczbę wyników fałszywie dodatnich. Nie używaj go, a jeśli obecnie go używasz, należy przenieść procesy biznesowe poza ten proces. Zamiast tego zalecamy używanie wstępnie wytrenowanych klasyfikatorów **Threat**, **Profanity** i **Harassment** .
 
-- **Życiorysy**: wykrywa pliki docx, .pdf, rtf, .txt elementy, które są kontami tekstowych osobistych, edukacji, kwalifikacji zawodowych, doświadczenia zawodowego kandydata i innych danych osobowych
-- Kod **źródłowy: wykrywa** elementy zawierające zestaw instrukcji i instrukcji napisanych w 25 najlepszych używanych językach programowania komputerowego w serwisie GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Wykrywa zawartość w msg, as, h, c, cs, cc, cpp, hpp, cxx. hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, pod, .php, .phar, .php4, .pyc, . R, r, rda, . RData, rds, rb, .scala, sc, sh, .swift.
+- **Życiorysy**: wykrywa dokumenty, .pdf, rtf, .txt elementy, które są tekstowymi kontami osobistymi, edukacyjnymi, zawodowymi, doświadczeniami służbowymi i innymi danymi identyfikacyjnymi wnioskodawcy
+- **Kod źródłowy**: wykrywa elementy zawierające zestaw instrukcji i instrukcji napisanych w 25 najlepszych używanych językach programowania komputerowego w GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script. Wykrywa zawartość w plikach .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift files.
 
 > [!NOTE]
-> Kod źródłowy jest przeszkolony w celu wykrywania, kiedy zbiorcza część tekstu jest kodem źródłowym. Nie wykrywa tekstu kodu źródłowego przeplatanego zwykłego tekstu.
+> Kod źródłowy jest wytrenowany do wykrywania, kiedy większość tekstu to kod źródłowy. Nie wykrywa tekstu kodu źródłowego, który jest przeplatany zwykłym tekstem.
 
-- **Umowy**: Wykrywa zawartość związaną z umowami prawnie, takimi jak umowy o nie ujawnianiu informacji, oświadczenia o pracy, umowy pożyczki i dzierżawy, umowy o zatrudnieniu i umowy, które nie konkurowają ze sobą. Wykrywa zawartość w plikach .docx, docm, .doc, dotx, dotm, dot, .pdf, rtf, .txt, one, msg i eml.
-- **Język** dyskryminujący: wykrywa jawny język dyskryminujący i jest poufny na dyskryminujący język dla społeczności amerykańskich/czarnych w porównaniu z innymi społecznościami.
-- **Finanse**. Wykrywa zawartość w kategoriach finansów korporacyjnych, księgowości, banku i inwestycji. Wykrywa zawartość w plikach .docx, docm, .doc, dotx, dotm, dot, .pdf, rtf, .txt, one, msg, eml, .pptx, pptm, .ppt, potx, potm, pot, ppsx, ppsx, ppsm, pps, ppam, ppa, .xlsx, xlsm, xlsm, .xls, .csv, xltx, xltm, xltt, xlam, xla.
-- **Molestowanie**: Wykrywa określoną kategorię obraźliwych elementów tekstowych w języku powiązanych z obraźliwym zachowaniem kierowanym do jednej lub wielu osób ze względu na następujące cechy: rasa, płeć, płeć, orientacja erocyjna, wiek, niepełnosprawność. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp i svg.
-- **Służba zdrowia**: Wykrywa zawartość w aspektach administrowania medycznego i opieki zdrowotnej, takich jak usługi medyczne, diagnozy, leczenia, roszczenia itp. Wykrywa zawartość w plikach .docx, docm, .doc, dotx, dotm, dot, .pdf, rtf, .txt, one, msg, eml, .pptx, pptm, .ppt, potx, potm, pot, ppsx, ppsx, ppsm, pps, ppam, ppa, .xlsx, xlsm, xlsm, .xls, .csv, xltx, xltm, xltt, xlam, xla.
-- **Kadry**: Wykrywa zawartość w kategoriach związanych z zasobami ludzkimi, które są powiązane z tematem, które mogą być schowanie, rozmawianie na rozmowę kwalifikacyjną, zatrudnienie, szkolenia, ocenianie, ostrzeżenie i zakończenie. Wykrywa zawartość w plikach .docx, docm, .doc, dotx, dotm, dot, .pdf, rtf, .txt, one, msg, eml, .pptx, pptm, .ppt, potx, potm, pot, ppsx, ppsx, ppsm, pps, ppam, ppa, .xlsx, xlsm, xlsm, .xls, .csv, xltx, xltm, xltt, xlam, xla.
-- **ADRES IP**: Wykrywa zawartość kategorii związanych z własnością intelektualną, takich jak tajemnice handlowe i podobne poufne informacje. Wykrywa zawartość w plikach .docx, docm, .doc, dotx, dotm, dot, .pdf, rtf, .txt, one, msg, eml, .pptx, pptm, .ppt, potx, potm, pot, ppsx, ppsx, ppsm, pps, ppam, ppa, .xlsx, xlsm, xlsm, .xls, .csv, xltx, xltm, xltt, xlam, xla.
-- **IT**: Wykrywa zawartość w kategoriach technologii informacyjnych i na przykład ustawień sieci, zabezpieczeń informacji, sprzętu i oprogramowania. Wykrywa zawartość w plikach .docx, docm, .doc, dotx, dotm, dot, .pdf, rtf, .txt, one, msg, eml, .pptx, pptm, .ppt, potx, potm, pot, ppsx, ppsx, ppsm, pps, ppam, ppa, .xlsx, xlsm, xlsm, .xls, .csv, xltx, xltm, xltt, xlam, xla.
-- **Sprawy prawne**. Wykrywa zawartość kategorii związanych ze sprawami prawnymi, takimi jak procesy sądowe, procesy, zobowiązania prawne, terminologia prawnymi, prawo i prawo. Wykrywa zawartość w plikach .docx, docm, .doc, dotx, dotm, dot, .pdf, rtf, .txt, one, msg i eml.
-- **Zaopatrzenie**. Wykrywa zawartość kategorii cytowanych, cytowanych, zakupów oraz płacenia za dostawy produktów i usług. Wykrywa zawartość w plikach .docx, docm, .doc, dotx, dotm, dot, .pdf, rtf, .txt, one, msg, eml, .xlsx, xlsm, xlsb, .xls, .csv, xltx, xltm, xlt, xlam i xla.
-- **Profanity**: wykrywa konkretną kategorię obraźliwych elementów tekstowych w językach, które zawierają wyrażenia kłopotliwe dla większości osób. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp i svg.
-- **Podatek**: Wykrywa zawartość relacyjną o podatku, taką jak planowanie podatkowe, formularze podatkowe, zgłaszanie podatków, przepisy podatkowe. Wykrywa zawartość w plikach .docx, docm, .doc, dotx, dotm, dot, .pdf, rtf, .txt, one, msg, eml, .pptx, pptm, .ppt, potx, potm, pot, ppsx, ppsx, ppsm, pps, ppam, ppa, .xlsx, xlsm, xlsb, .xls, .csv, xltx, xltm, xltm, xlam, xla.
-- **Zagrożenie**: Wykrywa konkretną kategorię obraźliwych elementów tekstowych w językach związanych z zagrożeniami, które mogą dotyczyć przemocy lub wyczynów wyszkodzeniom fizycznym bądź szkodom w osobie bądź mieniu. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp i svg.
+- **Umowy**: Wykrywa zawartość związaną z umowami prawnymi, takimi jak umowy o zachowaniu poufności, oświadczenia o pracy, umowy pożyczki i dzierżawy, umowy o pracę i umowy o zachowaniu konkurencji. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+- **Dyskryminacja**: Wykrywa jawny dyskryminujący język i jest wrażliwy na dyskryminujący język wobec społeczności Afroamerykańskich/Czarnych w porównaniu z innymi społecznościami.
+- **Finanse**: wykrywa zawartość w kategoriach finansów korporacyjnych, księgowości, gospodarki, bankowości i inwestycji. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+- **Molestowanie**: Wykrywa określoną kategorię obraźliwych elementów tekstowych języka związanych z obraźliwym zachowaniem skierowanym do jednej lub wielu osób na podstawie następujących cech: rasa, pochodzenie etniczne, religia, pochodzenie narodowe, płeć, orientacja seksualna, wiek, niepełnosprawność. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
+- **Opieka zdrowotna**: Wykrywa zawartość w aspektach administracji medycznej i opieki zdrowotnej, takich jak usługi medyczne, diagnozy, leczenie, roszczenia itp. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+- **Kadr**: Wykrywa zawartość w kategoriach związanych z zasobami ludzkimi rekrutacji, rozmowy kwalifikacyjnej, zatrudniania, szkolenia, oceny, ostrzeżenia i zakończenia. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+- **Adres IP**: wykrywa zawartość kategorii związanych z własnością intelektualną, takich jak wpisy tajne i podobne informacje poufne. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+- **IT**: Wykrywa zawartość w kategoriach technologii informatycznych i cyberbezpieczeństwa, takich jak ustawienia sieci, zabezpieczenia informacji, sprzęt i oprogramowanie. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx, .xltm, .xlt, .xlt, .xlam, .xla files.
+- **Sprawy prawne**: Wykrywa treści w kategoriach prawnych, takich jak spory sądowe, proces prawny, obowiązek prawny, terminologia prawna, prawo i ustawodawstwo. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
+- **Zaopatrzenie**: Wykrywa zawartość w kategoriach licytacji, ofert, zakupów i płacenia za dostawę towarów i usług. Wykrywa zawartość w plikach .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+- **Wulgaryzmy**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka, które zawierają wyrażenia, które zawstydzają większość ludzi. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
+- **Podatek**: Wykrywa zawartość relacji podatkowych, takich jak planowanie podatkowe, formularze podatkowe, zgłoszenia podatkowe, przepisy podatkowe. Wykrywa zawartość w .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
+- **Zagrożenie**: wykrywa określoną kategorię obraźliwych elementów tekstowych języka związanych z groźbami popełnienia przemocy lub wyrządzenia fizycznej krzywdy lub szkody osobie lub mienia. Wykrywa zawartość w plikach msg, .docx, .pdf, .txt, rtf, jpeg, .jpg, .png, .gif, .bmp, svg.
 
-Są one wyświetlane w **Centrum zgodności platformy Microsoft 365** >  **KlasyfikacjaDanychTrainable** >  **klasyfikatorów** ze stanem `Ready to use`.
+Są one wyświetlane w widoku **klasyfikatorów** **Centrum zgodności platformy Microsoft 365** >  **DataTrainable** >  ze stanem `Ready to use`.
 
-![klasyfikatory wstępnie przeszkolone.](../media/classifiers-ready-to-use-classifiers.png)
+![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> Należy pamiętać, że klasyfikatory obraźliwego języka, molestowania, wulgarności, przemocy i zagrożeń działają tylko z tekstem, który można wyszukać, i nie jest to pełna lista terminów lub języka we wszystkich tych obszarach. Ponadto standardy językowe i kulturowe stale się zmieniają i w związku z tymi uwarunkowaniami firma Microsoft zastrzega sobie prawo do według własnego uznania do aktualizowania tych klasyfikatorów. Klasyfikatory mogą pomóc Twojej organizacji w wykrywaniu tych obszarów, natomiast klasyfikatory nie są przeznaczone wyłącznie do wykrywania takiego języka lub adresowania go. Twoja organizacja, a nie firma Microsoft ani jej przedstawicielscy, ponosi odpowiedzialność za wszystkie decyzje związane z monitorowaniem, skanowaniem, blokowaniem, usuwaniem i przechowywaniem wszelkiej zawartości wskazanej przez wstępnie przeszkolonych klasyfikatorów, w tym za zgodność z lokalną prywatnością i innymi obowiązującymi przepisami prawa. Firma Microsoft zachęca do konsultowania się z doradcą prawnym przed wdrożeniem i użyciem.
+> Zwróć uwagę, że obraźliwy język, nękanie, wulgaryzmy, dyskryminacja i klasyfikatory zagrożeń działają tylko z tekstem z możliwością wyszukiwania i nie są wyczerpującą ani pełną listą terminów lub języków w tych obszarach. Ponadto standardy językowe i kulturowe stale się zmieniają, a w świetle tych realiów firma Microsoft zastrzega sobie prawo do aktualizowania tych klasyfikatorów według własnego uznania. Klasyfikatory mogą pomóc twojej organizacji w wykrywaniu tych obszarów, ale klasyfikatory nie są przeznaczone do zapewniania organizacji jedynego sposobu wykrywania lub rozwiązywania problemów z używaniem takiego języka. Twoja organizacja, a nie firma Microsoft ani jej podmioty zależne, pozostaje odpowiedzialna za wszystkie decyzje związane z monitorowaniem, skanowaniem, blokowaniem, usuwaniem i przechowywaniem dowolnej zawartości zidentyfikowanej przez wstępnie wytrenowanego klasyfikatora, w tym zgodności z lokalną prywatnością i innymi obowiązującymi przepisami. Firma Microsoft zachęca do konsultacji z radcą prawnym przed wdrożeniem i użyciem.
 
-Wstępnie przeszkolone klasyfikatory mogą skanować zawartość w tych językach:
+Wstępnie wytrenowane klasyfikatory mogą skanować zawartość w następujących językach:
 
-• Chiński (uproszczony) • angielski • francuski • niemiecki • włoski • japoński • portugalski • hiszpański
+- Chiński (uproszczony)
+- English
+- French
+- German
+- Italian
+- Japanese
+- Portugalski
+- Spanish
 
 ### <a name="custom-classifiers"></a>Klasyfikatory niestandardowe
 
-Gdy wstępnie przeszkolone klasyfikatory nie spełniają Twoich potrzeb, możesz tworzyć i szkolenie swoich klasyfikatorów. Utworzenie własnej organizacji wymaga znacznie więcej pracy, ale będą one lepiej dostosowane do potrzeb Twojej organizacji.
+Gdy wstępnie wytrenowane klasyfikatory nie spełniają Twoich potrzeb, możesz utworzyć i wytrenować własne klasyfikatory. Tworzenie własnych aplikacji wymaga znacznie większej ilości pracy, ale będą one znacznie lepiej dostosowane do potrzeb organizacji.
 
-Aby utworzyć niestandardowego, przeszkoliwnego klasyfikatora, zacznij od podawania przykładów, które z pewnością należy do danej kategorii. Gdy przetwarza te przykłady, można je przetestować, podając zarówno pasujące, jak i niepasujący przykłady. Następnie klasyfikator podpowiada, czy dany element należy do kategorii, która się znajduje. Następnie należy potwierdzić wyniki, sortując prawdziwe wartości dodatnie, prawdziwe wartości ujemne, wyniki fałszywie dodatnie i wyniki fałszywie ujemne, aby zwiększyć dokładność jego prognoz. 
+Możesz rozpocząć tworzenie niestandardowego klasyfikatora trenowalnego, podając przykłady, które zdecydowanie należą do tej kategorii. Po przetłuczeniu tych przykładów można przetestować je, nadając mu kombinację zarówno zgodnych, jak i niezgodnych przykładów. Klasyfikator następnie prognozuje, czy dany element należy do kategorii, którą tworzysz. Następnie potwierdzasz jego wyniki, sortując wartości prawdziwie dodatnie, prawdziwie ujemne, fałszywie dodatnie i fałszywie ujemne, aby zwiększyć dokładność przewidywań. 
 
-Po opublikowaniu klasyfikator sortuje elementy w lokalizacjach, takich jak SharePoint Online, Exchange i OneDrive klasyfikuje zawartość. Po opublikowaniu klasyfikatora możesz nadal przeszkolić go przy użyciu procesu opinii podobnego do procesu początkowego szkolenia.
+Po opublikowaniu klasyfikatora sortuje on elementy w lokalizacjach takich jak SharePoint Online, Exchange i OneDrive oraz klasyfikuje zawartość. Po opublikowaniu klasyfikatora możesz kontynuować trenowanie go przy użyciu procesu opinii, który jest podobny do początkowego procesu trenowania.
 
-Możesz na przykład utworzyć klasyfikatorów przeszkolnych dla:
+Można na przykład utworzyć klasyfikatory z możliwością trenowania dla następujących elementów:
 
-- Dokumenty prawne — takie jak uprawnienie klienta obsługi prawnej, dokumenty zamykające, oświadczenie o pracy
-- Strategiczne dokumenty biznesowe — takie jak informacje prasowe, fuzje i pozyskiwanie, transakcje, plany biznesowe lub marketingowe, własność intelektualna, patenty, dokumenty projektowe
-- Informacje o cenach — na przykład faktury, oferty cenowe, zlecenia robocze, dokumenty do przeniesienia
-- Informacje finansowe — na przykład inwestycje w organizacji, wyniki kwartalne lub roczne
+- Dokumenty prawne — takie jak uprawnienie klienta adwokata, zestawy zamykające, instrukcja pracy
+- Strategiczne dokumenty biznesowe — takie jak informacje prasowe, fuzja i nabycie, transakcje, plany biznesowe lub marketingowe, własność intelektualna, patenty, dokumenty projektowe
+- Informacje o cenach — na przykład faktury, oferty cenowe, zamówienia pracy, dokumenty dotyczące ustalania stawek
+- Informacje finansowe — takie jak inwestycje organizacyjne, wyniki kwartalne lub roczne
 
 #### <a name="process-flow-for-creating-custom-classifiers"></a>Przepływ procesu tworzenia niestandardowych klasyfikatorów
 
-Tym przepływem jest tworzenie i publikowanie klasyfikatora do użytku w rozwiązaniach zgodności, takich jak zasady przechowywania i nadzór nad komunikacją. Aby uzyskać więcej szczegółowych informacji na temat tworzenia niestandardowego, przeszkotnego klasyfikatora, zobacz [Tworzenie niestandardowego klasyfikatora](classifier-get-started-with.md).
+Tworzenie i publikowanie klasyfikatora do użycia w rozwiązaniach zgodności, takich jak zasady przechowywania i nadzór komunikacyjny, jest zgodne z tym przepływem. Aby uzyskać więcej szczegółów na temat tworzenia niestandardowego klasyfikatora trenowalnego, zobacz [Tworzenie klasyfikatora niestandardowego](classifier-get-started-with.md).
 
-![Niestandardowy klasyfikator przepływu procesu.](../media/classifier-trainable-classifier-flow.png)
+![klasyfikator niestandardowy przepływu procesów.](../media/classifier-trainable-classifier-flow.png)
 
-### <a name="retraining-classifiers"></a>Ponowne szkolenie klasyfikatorów
+### <a name="retraining-classifiers"></a>Ponowne trenowanie klasyfikatorów
 
-Możesz pomóc w zwiększaniu dokładności wszystkich niestandardowych przeszkolnych klasyfikatorów oraz udostępniając im opinie na temat dokładności klasyfikacji, która jest przez nich klasyfikowana. To tak zwane ponowne szkolenie i następuje po tym przepływie pracy.
+Możesz pomóc zwiększyć dokładność wszystkich niestandardowych klasyfikatorów trenowalnych i przekazując im opinię na temat dokładności klasyfikacji, którą wykonują. Jest to nazywane ponownym trenowaniem i jest zgodne z tym przepływem pracy.
 
 > [!NOTE]
-> Wstępnie przeszkolonych klasyfikatorów nie można ponownie przeszkolić.
+> Wstępnie wytrenowanych klasyfikatorów nie można ponownie wytrenować.
 
-![Klasyfikator ponowne szkolenie przepływu pracy.](../media/classifier-retraining-workflow.png)
+![przepływ pracy ponownego trenowania klasyfikatora.](../media/classifier-retraining-workflow.png)
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Etykiety przechowywania](retention.md)
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
 - [Etykiety wrażliwości](sensitivity-labels.md)
-- [Definicje jednostki typu informacji poufnych](sensitive-information-type-entity-definitions.md)
-- [Drukowanie palcem w dokumencie](document-fingerprinting.md)
-- [Informacje o dokładnie tych typach informacji poufnych na podstawie danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Definicje jednostek typu informacji poufnych](sensitive-information-type-entity-definitions.md)
+- [Drukowanie palcem dokumentu](document-fingerprinting.md)
+- [Dowiedz się więcej o dokładnych typach informacji poufnych opartych na dopasowaniu danych](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

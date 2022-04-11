@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Istnieje wiele typów informacji poufnych, które są gotowe do użycia w zasadach DLP. W tym artykule wymieniono wszystkie te typy informacji poufnych i pokazano, czego szukają zasady DLP podczas wykrywania poszczególnych typów.
-ms.openlocfilehash: 298b756a1cdfd63406992c18bf8281375f7f9370
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 69c47a717b63f8d9ac4e30f3b97fd228399bf21c
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746524"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760410"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definicje jednostek typu informacji poufnych
 
@@ -32,10 +32,10 @@ W tym artykule wymieniono wszystkie definicje jednostek typów informacji poufny
 
 > [!NOTE]
 > Mapowanie poziomu ufności (wysoki/średni/niski) z dokładnością (wartość liczbowa od 1 do 100)
+>
 > - Niska pewność: 65 lub mniej
 > - Średnie zaufanie: 75
 > - Wysoka pewność siebie: 85
-
 
 ## <a name="aba-routing-number"></a>Numer routingu usługi ABA
 
@@ -52,7 +52,6 @@ dziewięć cyfr, które mogą znajdować się w sformatowanym lub niesformatowan
 - opcjonalny łącznik
 - cyfra
 
-
 ### <a name="checksum"></a>Suma kontrolna
 
 Tak
@@ -60,10 +59,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli znajduje się w pobliżu 300 znaków:
+
 - Funkcja Func_aba_routing znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_ABA_Routing.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_aba_routing znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -99,7 +100,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - Routingu #
 - RTN
 
-
 ## <a name="all-full-names"></a>Wszystkie pełne nazwy
 
 Wszystkie pełne nazwy to jednostka o nazwie bundled. Wykrywa pełne nazwiska osób ze wszystkich obsługiwanych krajów/regionów, w tym Australii, Chin, Japonii, USA i krajów UE. Użyj tego interfejsu SIT, aby wykryć wszystkie możliwe dopasowania pełnych nazw.
@@ -120,9 +120,9 @@ L.p.
 
 Ta nazwana jednostka SIT jest zgodna z nazwiskami osobistymi, które człowiek będzie identyfikował jako imię z dużą pewnością. Jeśli na przykład znaleziono ciąg składający się z danej nazwy, po którym następuje nazwa rodziny, dopasowanie jest tworzone z dużą pewnością. Używa trzech zasobów podstawowych:
 
--   Słownik o podanych nazwach.
--   Słownik imion rodzinnych.
--   Wzorce sposobu tworzenia nazw.
+- Słownik o podanych nazwach.
+- Słownik imion rodzinnych.
+- Wzorce sposobu tworzenia nazw.
 
 Te trzy zasoby są różne dla każdego kraju.  Ciągi *Olivia Wilson* wyzwoli mecz. Wspólne imiona i nazwiska rodzin mają większe zaufanie niż rzadsze nazwy. Jednak wzorzec umożliwia również częściowe dopasowania. Jeśli zostanie znaleziona dana nazwa ze słownika, po której następuje nazwa rodziny, której nie ma w słowniku, zostanie wyzwolone częściowe dopasowanie. Na przykład *Tomas Richard* wyzwoli częściowe dopasowanie. Częściowe dopasowania mają mniejszą pewność siebie.
 
@@ -159,7 +159,6 @@ Ponadto wzorce, które człowiek postrzegałby jako wskazujące nazwy, są równ
 - Swedish
 - Turkish
 
-
 ## <a name="all-medical-terms-and-conditions"></a>Wszystkie warunki i postanowienia medyczne
 
 Wszystkie warunki i postanowienia medyczne to jednostka o nazwie wiązanej, która wykrywa warunki medyczne i medyczne. Wykrywa tylko angielskie terminy. Użyj tego narzędzia SIT, aby wykryć wszystkie możliwe dopasowania warunków i postanowień medycznych.
@@ -188,7 +187,7 @@ Ta powiązana nazwana jednostka jest zgodna z tekstem, który wspomina o schorze
 
 Ta powiązana nazwana jednostka SIT zawiera te pojedyncze interfejsy API.
 
-- Terminy badania krwi 
+- Terminy badania krwi
 - Typy leków
 - Chorób
 - Nazwy leków ogólnych
@@ -198,7 +197,6 @@ Ta powiązana nazwana jednostka SIT zawiera te pojedyncze interfejsy API.
 - Specjalności medyczne
 - Procedury chirurgiczne
 - Markowe nazwy leków
-
 
 ## <a name="all-physical-addresses"></a>Wszystkie adresy fizyczne
 
@@ -220,10 +218,10 @@ Nie
 
 Dopasowanie adresów ulicznych zostało zaprojektowane tak, aby pasowało do ciągów identyfikowanych przez człowieka jako adres ulicy. W tym celu jest używanych kilka zasobów podstawowych:
 
--   Słownik rozliczeń, powiatów i regionów.
--   Słownik sufiksów ulicznych, takich jak Road, Street lub Avenue.
--   Wzorce kodów pocztowych.
--   Wzorce formatów adresów.
+- Słownik rozliczeń, powiatów i regionów.
+- Słownik sufiksów ulicznych, takich jak Road, Street lub Avenue.
+- Wzorce kodów pocztowych.
+- Wzorce formatów adresów.
 
 Zasoby są różne dla każdego kraju. Zasoby podstawowe to wzorce formatów adresów, które są używane w danym kraju. Różne formaty są wybierane w celu upewnienia się, że jest dopasowanych jak najwięcej adresów. Formaty te umożliwiają elastyczność, na przykład adres może pominąć kod pocztowy lub pominąć nazwę miasta lub mieć ulicę bez sufiksu ulicy. We wszystkich przypadkach takie dopasowania są używane w celu zwiększenia ufności dopasowania.
 
@@ -303,7 +301,6 @@ Ta powiązana nazwana jednostka SIT zawiera następujące pojedyncze interfejsy 
 - Swedish
 - Turkish
 
-
 ## <a name="argentina-national-identity-dni-number"></a>Numer tożsamości narodowej Argentyny (DNI)
 
 ### <a name="format"></a>Formacie
@@ -313,6 +310,7 @@ Osiem cyfr z kropkami lub bez
 ### <a name="pattern"></a>Wzór
 
 Osiem cyfr:
+
 - dwie cyfry
 - opcjonalny okres
 - trzy cyfry
@@ -326,6 +324,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_argentina_national_id znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_argentina_national_id.
 
@@ -353,7 +352,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - registro nacional de las personas
 - rnp
 
-
 ## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Argentyna Unikatowy klucz identyfikacji podatkowej (CUIT/CUIL)
 
 ### <a name="format"></a>Formacie
@@ -363,6 +361,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 11 cyfr z kreską:
+
 - dwie cyfry w 20, 23, 24, 27, 30, 33 lub 34
 - łącznik (-)
 - osiem cyfr
@@ -376,10 +375,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_Argentina_Unique_Tax_Key` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_Argentina_Unique_Tax_Key`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_Argentina_Unique_Tax_Key` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -401,7 +402,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 - Clave Unica de Identificacion Tributaria
 - CUIT
-- unikatowy kod identyfikacji pracowników 
+- unikatowy kod identyfikacji pracowników
 - Clave Única de Identificación Tributaria
 - unikatowy kod identyfikacji pracowników
 - CUIL
@@ -436,7 +437,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Número de Identificación Fiscal
 - número de contribuyente
 
-
 ## <a name="australia-bank-account-number"></a>Numer konta bankowego w Australii
 
 ### <a name="format"></a>Formacie
@@ -448,6 +448,7 @@ od sześciu do 10 cyfr z numerem oddziału stanu banku lub bez go
 Numer konta to od 6 do 10 cyfr.
 
 Numer oddziału bankowego w Australii:
+
 - trzy cyfry
 - łącznik
 - trzy cyfry
@@ -459,11 +460,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_australia_bank_account_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_australia_bank_account_number.
 - Wyrażenie regularne Regex_australia_bank_account_number_bsb znajduje zawartość zgodną ze wzorcem.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_australia_bank_account_number znajduje zawartość zgodną ze wzorcem.
 
 - Znaleziono słowo kluczowe z Keyword_australia_bank_account_number.
@@ -501,7 +504,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - pełne nazwy
 - Maea
 
-
 ## <a name="australia-business-number"></a>Numer biznesowy Australii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
@@ -535,10 +537,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_australian_business_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_australian_business_number.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_australian_business_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -565,7 +569,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Abn
 - businessno #
 
-
 ## <a name="australia-company-number"></a>Numer firmy w Australii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
@@ -590,7 +593,6 @@ dziewięć cyfr z ogranicznikami:
 - spację
 - trzy cyfry
 
-
 ### <a name="checksum"></a>Suma kontrolna
 
 Tak
@@ -598,10 +600,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_Australian_Company_Number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Australian_Company_Number.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_Australian_Company_Number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -627,7 +631,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - australian company no
 - australian company no #
 - numer australijskiej firmy
-
 
 ## <a name="australia-drivers-license-number"></a>Numer prawa jazdy w Australii
 
@@ -659,6 +662,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_australia_drivers_license_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_australia_drivers_license_number.
 - Nie znaleziono słowa kluczowego z Keyword_australia_drivers_license_number_exclusions.
@@ -780,7 +784,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Prawo jazdy #
 - Prawa jazdy #
 
-
 ## <a name="australia-medical-account-number"></a>Numer konta medycznego w Australii
 
 ### <a name="format"></a>Formacie
@@ -790,6 +793,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 10–11 cyfr:
+
 - Pierwsza cyfra znajduje się w zakresie od 2 do 6
 - Dziewiąta cyfra to cyfra kontrolna
 - Dziesiąta cyfra to cyfra problemu
@@ -802,10 +806,10 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_australian_medical_account_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Australia_Medical_Account_Number.
 - Suma kontrolna przechodzi.
-
 
 ```xml
   <!-- Australia Medical Account Number -->
@@ -831,7 +835,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - usługa lokalna
 - Medicare
 
-
 ## <a name="australia-passport-number"></a>Numer paszportu Australii
 
 ### <a name="format"></a>Formacie
@@ -850,10 +853,12 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_australia_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_australia_passport_number`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_australia_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -891,14 +896,12 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - dokument podróży
 - organ wystawiający
 
-
-## <a name="australia-physical-addresses"></a>Adresy fizyczne w Australii 
+## <a name="australia-physical-addresses"></a>Adresy fizyczne w Australii
 
 Odbuntowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Australii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 Średni
-
 
 ## <a name="australia-tax-file-number"></a>Numer pliku podatkowego Australii
 
@@ -909,6 +912,7 @@ od ośmiu do dziewięciu cyfr
 ### <a name="pattern"></a>Wzór
 
 od ośmiu do dziewięciu cyfr zwykle przedstawianych ze spacjami w następujący sposób:
+
 - trzy cyfry
 - opcjonalne miejsce
 - trzy cyfry
@@ -922,6 +926,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_australian_tax_file_number znajduje zawartość zgodną ze wzorcem.
 - Nie znaleziono słowa kluczowego z Keyword_Australia_Tax_File_Number lub Keyword_number_exclusions.
 - Suma kontrolna przechodzi.
@@ -950,7 +955,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - numer pliku podatkowego
 - Tfn
 
-
 ## <a name="austria-drivers-license-number"></a>Numer prawa jazdy w Austrii
 
 ### <a name="format"></a>Formacie
@@ -969,8 +973,8 @@ Nie
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie  `Regex_austria_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` .
+- Wyrażenie `Regex_austria_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` .
 
 ```xml
       <!-- Austria Driver's License Number -->
@@ -1086,7 +1090,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -1108,7 +1112,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver s_license_number
 
 - fuhrerschein
@@ -1117,10 +1120,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Führerscheinnummer
 - Führerscheinnummern
 
-
 ## <a name="austria-identity-card"></a>Austria identity card (Austria)
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -1135,7 +1138,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 24 znaki:
 
--  22 litery (bez uwzględniania wielkości liter), cyfry, ukośniki odwrotne, ukośniki do przodu lub znaki plus
+- 22 litery (bez uwzględniania wielkości liter), cyfry, ukośniki odwrotne, ukośniki do przodu lub znaki plus
 
 - dwie litery (bez uwzględniania wielkości liter), cyfry, ukośniki odwrotne, ukośniki do przodu, znaki plus znaki lub znaki równości
 
@@ -1147,7 +1150,7 @@ Nie dotyczy
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie  `Regex_austria_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie `Regex_austria_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_austria_eu_national_id_card`
 
 ```xml
@@ -1167,7 +1170,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - numer tożsamości
 - identyfikator krajowy
 - personalausweis republik österreich
-
 
 ## <a name="austria-passport-number"></a>Numer paszportu Austrii
 
@@ -1190,13 +1192,15 @@ nie dotyczy
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_austria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` .
+
+- Wyrażenie `Regex_austria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_austria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` .
+
+- Wyrażenie `Regex_austria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` .
 
 ```xml
       <!-- Austria Passport Number -->
@@ -1252,7 +1256,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="austria-physical-addresses"></a>Adresy fizyczne Austrii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Austrii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -1260,7 +1263,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="austria-social-security-number"></a>Numer ubezpieczenia społecznego w Austrii
 
@@ -1283,11 +1285,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_austria_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
-- odnaleziono słowo kluczowe z  `Keywords_austria_eu_ssn_or_equivalent` .
+
+- Funkcja `Func_austria_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
+- odnaleziono słowo kluczowe z `Keywords_austria_eu_ssn_or_equivalent` .
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_austria_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_austria_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Austria Social Security Number -->
@@ -1334,7 +1338,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - versicherungsnummer
 - zdravstveno zavarovanje
 
-
 ## <a name="austria-tax-identification-number"></a>Numer identyfikacji podatkowej Austrii
 
 ### <a name="format"></a>Formacie
@@ -1358,11 +1361,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_austria_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_austria_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_austria_eu_tax_file_number`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
-- Funkcja  `Func_austria_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_austria_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Austria Tax Identification Number -->
@@ -1402,10 +1407,10 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - Tin #
 - numer podatkowy
 
-
 ## <a name="austria-value-added-tax"></a>Podatek od wartości dodanej w Austrii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -1438,10 +1443,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_Austria_Value_Added_Tax znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Austria_Value_Added_Tax.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_Austria_Value_Added_Tax znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -1476,7 +1483,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - numer atu
 - numer uid
 
-
 ## <a name="azure-documentdb-auth-key"></a>Klucz uwierzytelniania usługi Azure DocumentDB
 
 ### <a name="format"></a>Formacie
@@ -1498,6 +1504,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_AzureDocumentDBAuthKey znajduje zawartość zgodną ze wzorcem.
 - Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
@@ -1529,7 +1536,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Parametry połączenia bazy danych IAAS platformy Azure i parametry połączenia Azure SQL
 
 ### <a name="format"></a>Formacie
@@ -1559,6 +1565,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_AzureConnectionString znajduje zawartość zgodną ze wzorcem.
 - Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
@@ -1590,7 +1597,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-
 ## <a name="azure-iot-connection-string"></a>Parametry połączenia usługi Azure IoT
 
 ### <a name="format"></a>Formacie
@@ -1620,6 +1626,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_AzureIoTConnectionString znajduje zawartość zgodną ze wzorcem.
 - Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
@@ -1651,7 +1658,6 @@ Ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyraże
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-
 ## <a name="azure-publish-setting-password"></a>Hasło ustawienia publikowania platformy Azure
 
 ### <a name="format"></a>Formacie
@@ -1671,9 +1677,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_AzurePublishSettingPasswords znajduje zawartość zgodną ze wzorcem.
 - Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
-
 
 ```xml
 <!--Azure Publish Setting Password-->
@@ -1703,7 +1709,6 @@ Ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyraże
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-
 ## <a name="azure-redis-cache-connection-string"></a>Parametry połączenia usługi Azure Redis Cache
 
 ### <a name="format"></a>Formacie
@@ -1728,6 +1733,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_AzureRedisCacheConnectionString znajduje zawartość zgodną ze wzorcem.
 - Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
@@ -1759,7 +1765,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-
 ## <a name="azure-sas"></a>Sygnatura dostępu współdzie
 
 ### <a name="format"></a>Formacie
@@ -1783,6 +1788,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_AzureSAS znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -1823,6 +1829,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_AzureServiceBusConnectionString znajduje zawartość zgodną ze wzorcem.
 - Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
 
@@ -1854,7 +1861,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-
 ## <a name="azure-storage-account-key"></a>Klucz konta usługi Azure Storage
 
 ### <a name="format"></a>Formacie
@@ -1882,6 +1888,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_AzureStorageAccountKey znajduje zawartość zgodną ze wzorcem.
 - Wyrażenie regularne CEP_AzureEmulatorStorageAccountFilter nie znajduje zawartości zgodnej ze wzorcem.
 - Wyrażenie regularne CEP_CommonExampleKeywords nie znajduje zawartości zgodnej ze wzorcem.
@@ -1921,7 +1928,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-
 ## <a name="azure-storage-account-key-generic"></a>Klucz konta usługi Azure Storage (ogólny)
 
 ### <a name="format"></a>Formacie
@@ -1941,6 +1947,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_AzureStorageAccountKeyGeneric znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -1951,7 +1958,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
   </Pattern>
 </Entity>
 ```
-
 
 ## <a name="belgium-drivers-license-number"></a>Belgijski numer prawa jazdy
 
@@ -1970,7 +1976,8 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_belgium_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+
+- Wyrażenie `Regex_belgium_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_belgium_eu_driver's_license_number` .
 
 ```xml
@@ -2087,7 +2094,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -2123,7 +2130,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - permis de conduire
 - numéro permis conduire
 
-
 ## <a name="belgium-national-number"></a>Numer krajowy Belgii
 
 ### <a name="format"></a>Formacie
@@ -2133,6 +2139,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 11 cyfr plus ograniczniki:
+
 - sześć cyfr i dwa opcjonalne okresy w formacie RR. MM.DD dla daty urodzenia
 - Opcjonalny ogranicznik z kropki, kreski, spacji
 - trzy cyfry sekwencyjne (nieparzyste dla mężczyzn, nawet dla kobiet)
@@ -2146,11 +2153,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_belgium_national_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_belgium_national_number.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_belgium_national_number znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -2228,7 +2237,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - nie cyny
 - Tin #
 
-
 ## <a name="belgium-passport-number"></a>Belgijski numer paszportu
 
 ### <a name="format"></a>Formacie
@@ -2246,13 +2254,15 @@ nie dotyczy
 ### <a name="definition"></a>Definicja
 
  Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_belgium_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` .
+
+- Wyrażenie `Regex_belgium_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date2` regularne znajduje datę w formacie DD MM YY lub słowo kluczowe z `Keywords_eu_passport_date` pliku lub `Keywords_belgium_eu_passport_number` zostanie znalezione
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_belgium_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` .
+
+- Wyrażenie `Regex_belgium_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` .
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -2313,7 +2323,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="belgium-physical-addresses"></a>Adresy fizyczne w Belgii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresami fizycznymi z Belgii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -2322,10 +2331,10 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresami fizycznymi 
 
 Średni
 
-
 ## <a name="belgium-value-added-tax-number"></a>Numer podatku od wartości dodanej w Belgii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -2356,10 +2365,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_belgium_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_belgium_value_added_tax_number.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_belgium_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -2389,7 +2400,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Btw #
 - Podatku vat #
 
-
 ## <a name="blood-test-terms"></a>Terminy badania krwi
 
 Ta uwolniona nazwana jednostka wykrywa terminy związane z badaniami krwi, takimi jak *hCG*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
@@ -2406,7 +2416,6 @@ Ta uwolniona nazwana jednostka wykrywa nazwy leków marki, takich jak *Tylenol*.
 
 High (Wysoki)
 
-
 ## <a name="brazil-cpf-number"></a>Numer CPF w Brazylii
 
 ### <a name="format"></a>Formacie
@@ -2416,6 +2425,7 @@ High (Wysoki)
 ### <a name="pattern"></a>Wzór
 
 Sformatowany:
+
 - trzy cyfry
 - okres
 - trzy cyfry
@@ -2425,6 +2435,7 @@ Sformatowany:
 - dwie cyfry, które są cyframi kontrolnymi
 
 Niesformatowany:
+
 - 11 cyfr, w których ostatnie dwie cyfry są cyframi kontrolnymi
 
 ### <a name="checksum"></a>Suma kontrolna
@@ -2434,11 +2445,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_brazil_cpf znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_brazil_cpf.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_brazil_cpf znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -2469,7 +2482,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Inscrição
 - Receita
 
-
 ## <a name="brazil-legal-entity-number-cnpj"></a>Numer brazylijskiej jednostki prawnej (CNPJ)
 
 ### <a name="format"></a>Formacie
@@ -2497,11 +2509,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_brazil_cnpj znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_brazil_cnpj.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_brazil_cnpj znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -2542,7 +2556,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Inscrição
 - Empresa
 
-
 ## <a name="brazil-national-identification-card-rg"></a>Brazylijska krajowa karta identyfikacyjna (RG)
 
 ### <a name="format"></a>Formacie
@@ -2554,6 +2567,7 @@ Registro de Identidade (RIC) (nowy format): 11 cyfr
 ### <a name="pattern"></a>Wzór
 
 Registro Geral (stary format):
+
 - dwie cyfry
 - okres
 - trzy cyfry
@@ -2563,6 +2577,7 @@ Registro Geral (stary format):
 - jedna cyfra, która jest cyfrą kontrolną
 
 Registro de Identidade (RIC) (nowy format):
+
 - 10 cyfr
 - łącznik
 - jedna cyfra, która jest cyfrą kontrolną
@@ -2574,10 +2589,10 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_brazil_rg znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_brazil_rg.
 - Suma kontrolna przechodzi.
-
 
 ```xml
       <!-- Brazil National ID Card (RG) -->
@@ -2601,7 +2616,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - registro geral
 - RG (to słowo kluczowe uwzględnia wielkość liter)
 - RIC (to słowo kluczowe uwzględnia wielkość liter)
-
 
 ## <a name="brazil-physical-addresses"></a>Adresy fizyczne Brazylii
 
@@ -2628,8 +2642,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_bulgaria_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_bulgaria_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` .
 
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2745,7 +2760,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -2775,7 +2790,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - шофьорска книжка
 - шофьорски книжки
 
-
 ## <a name="bulgaria-passport-number"></a>Numer paszportu Bułgarii
 
 ### <a name="format"></a>Formacie
@@ -2793,13 +2807,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_bulgaria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` .
+
+- Wyrażenie `Regex_bulgaria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_bulgaria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` .
+
+- Wyrażenie `Regex_bulgaria_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` .
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2850,7 +2866,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="bulgaria-physical-addresses"></a>Adresy fizyczne Bułgarii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Bułgarii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -2861,6 +2876,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="bulgaria-uniform-civil-number"></a>Jednolity numer cywilny Bułgarii
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -2887,11 +2903,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_bulgaria_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_bulgaria_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_bulgaria_eu_national_id_card`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_bulgaria_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_bulgaria_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
@@ -2957,7 +2975,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - униформгражданскиid #
 - униформгражданскине. #
 
-
 ## <a name="canada-bank-account-number"></a>Numer konta bankowego w Kanadzie
 
 ### <a name="format"></a>Formacie
@@ -2969,6 +2986,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 Numer konta bankowego w Kanadzie to 7 lub 12 cyfr.
 
 Numer tranzytu konta bankowego w Kanadzie to:
+
 - pięć cyfr
 - łącznik
 - trzy cyfry OR
@@ -2982,11 +3000,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_canada_bank_account_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_canada_bank_account_number.
 - Wyrażenie regularne Regex_canada_bank_account_transit_number znajduje zawartość zgodną ze wzorcem.
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_canada_bank_account_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_canada_bank_account_number.
 
@@ -3031,7 +3051,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - informacje bankowe
 - depozyt bezpośredni
 
-
 ## <a name="canada-drivers-license-number"></a>Numer prawa jazdy w Kanadzie
 
 ### <a name="format"></a>Formacie
@@ -3041,6 +3060,7 @@ Różni się w zależności od prowincji
 ### <a name="pattern"></a>Wzór
 
 Różne wzory obejmujące:
+
 - Alberta
 - Kolumbia Brytyjska
 - Manitoba
@@ -3059,6 +3079,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_[province_name]_drivers_license_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_[province_name]_drivers_license_name.
 - Znaleziono słowo kluczowe z Keyword_canada_drivers_license.
@@ -3259,7 +3280,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - karty identyfikacyjne #
 - Identyfikacji #
 
-
 ## <a name="canada-health-service-number"></a>Numer usługi kondycji Kanady
 
 ### <a name="format"></a>Formacie
@@ -3277,6 +3297,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_canada_health_service_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_canada_health_service_number.
 
@@ -3306,7 +3327,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - odszkodowania dla pracowników
 - Niepełnosprawności
 
-
 ## <a name="canada-passport-number"></a>Numer paszportu Kanada
 
 ### <a name="format"></a>Formacie
@@ -3324,6 +3344,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_canada_passport_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_canada_passport_number lub Keyword_passport.
 
@@ -3374,7 +3395,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - PasseportNon
 - Passeportn °
 
-
 ## <a name="canada-personal-health-identification-number-phin"></a>Kanada osobisty numer identyfikacyjny zdrowia (PHIN)
 
 ### <a name="format"></a>Formacie
@@ -3392,6 +3412,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_canada_phin znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono co najmniej dwa słowa kluczowe z Keyword_canada_phin lub Keyword_canada_provinces.
 
@@ -3445,7 +3466,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Wyspa Księcia Edwarda
 - Kanada
 
-
 ## <a name="canada-physical-addresses"></a>Adresy fizyczne w Kanadzie
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Kanady. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -3453,7 +3473,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="canada-social-insurance-number"></a>Kanada numer ubezpieczenia społecznego
 
@@ -3464,6 +3483,7 @@ dziewięć cyfr z opcjonalnymi łącznikami lub spacjami
 ### <a name="pattern"></a>Wzór
 
 Sformatowany:
+
 - trzy cyfry
 - łącznik lub spacja
 - trzy cyfry
@@ -3479,6 +3499,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_canadian_sin znajduje zawartość zgodną ze wzorcem.
 - Co najmniej dwa z następujących wzorców:
     - Znaleziono słowo kluczowe z Keyword_sin.
@@ -3487,6 +3508,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_unformatted_canadian_sin znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_sin.
 - Suma kontrolna przechodzi.
@@ -3538,7 +3560,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Urodziny
 - Data urodzenia
 
-
 ## <a name="chile-identity-card-number"></a>Numer karty tożsamości Chile
 
 ### <a name="format"></a>Formacie
@@ -3548,6 +3569,7 @@ od siedmiu do ośmiu cyfr oraz ograniczniki cyfry lub litery kontrolnej
 ### <a name="pattern"></a>Wzór
 
 od siedmiu do ośmiu cyfr oraz ograniczników:
+
 - od jednej do dwóch cyfr
 - opcjonalny okres
 - trzy cyfry
@@ -3563,11 +3585,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_chile_id_card znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_chile_id_card.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_chile_id_card znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -3625,7 +3649,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - R.U.T
 - R.U.N
 
-
 ## <a name="china-resident-identity-card-prc-number"></a>Numer karty tożsamości rezydenta Chin (ChRL)
 
 ### <a name="format"></a>Formacie
@@ -3635,6 +3658,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 18 cyfr:
+
 - sześć cyfr, które są kodem adresu
 - osiem cyfr w postaci RRRRMMDD, które są datą urodzenia
 - trzy cyfry, które są kodem zamówienia
@@ -3647,11 +3671,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_china_resident_id znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_china_resident_id.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_china_resident_id znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -3683,7 +3709,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 居民 身份證
 - 鑑定
 
-
 ## <a name="credit-card-number"></a>Numer karty kredytowej
 
 ### <a name="format"></a>Formacie
@@ -3701,14 +3726,16 @@ Tak, sprawdzanie luhna
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_credit_card znajduje zawartość zgodną ze wzorcem.
 - Jedno z następujących elementów jest prawdziwe:
-    - Znaleziono słowo kluczowe z Keyword_cc_verification.
-    - Znaleziono słowo kluczowe z Keyword_cc_name.
-    - Funkcja Func_expiration_date znajduje datę w odpowiednim formacie daty.
+  - Znaleziono słowo kluczowe z Keyword_cc_verification.
+  - Znaleziono słowo kluczowe z Keyword_cc_name.
+  - Funkcja Func_expiration_date znajduje datę w odpowiednim formacie daty.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_credit_card znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -3833,6 +3860,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - karta kredytowa
 - Cc #
 - cc#:
+
 - data wygaśnięcia
 - exp, data
 - data wygaśnięcia
@@ -3988,7 +4016,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - 中国银联
 - 银联
 
-
 ## <a name="croatia-drivers-license-number"></a>Numer prawa jazdy Chorwacji
 
 ### <a name="format"></a>Formacie
@@ -4007,7 +4034,7 @@ Nie
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie  `Regex_croatia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie `Regex_croatia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_croatia_eu_driver's_license_number` .
 
 ```xml
@@ -4124,7 +4151,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -4146,14 +4173,13 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>s_license_number Keywords_croatia_eu_driver
 
 - vozačka dozvola
 - vozačke dozvole
 
-
 ## <a name="croatia-identity-card-number"></a>Numer karty tożsamości Chorwacji
+
 Jednostka ta znajduje się w typie informacji poufnych o krajowym numerze identyfikacyjnym UE. Jest ona dostępna jako autonomiczna jednostka typu informacji poufnych.
 
 ### <a name="format"></a>Formacie
@@ -4171,6 +4197,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_croatia_id_card znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_croatia_id_card.
 
@@ -4217,7 +4244,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nie cyny
 - Tin #
 
-
 ## <a name="croatia-passport-number"></a>Numer paszportu Chorwacji
 
 ### <a name="format"></a>Formacie
@@ -4235,13 +4261,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_croatia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` .
+
+- Wyrażenie `Regex_croatia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_croatia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` .
+
+- Wyrażenie `Regex_croatia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` .
 
 ```xml
       <!-- Croatia Passport Number -->
@@ -4266,6 +4294,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
         </Pattern>
       </Entity>
 ```
+
 ### <a name="keywords"></a>Słowa kluczowe
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
@@ -4296,6 +4325,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 11 cyfr:
+
 - 10 cyfr
 - cyfra końcowa jest cyfrą kontrolną
 
@@ -4306,11 +4336,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_croatia_oib_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_croatia_eu_tax_file_number.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_croatia_oib_number znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -4360,7 +4392,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nie cyny
 - Tin #
 
-
 ## <a name="croatia-physical-addresses"></a>Adresy fizyczne Chorwacji
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Chorwacji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -4368,7 +4399,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="cyprus-drivers-license-number"></a>Numer licencji kierowcy cypryjskiego
 
@@ -4387,8 +4417,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_cyprus_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_cyprus_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` .
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4504,7 +4535,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -4532,10 +4563,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - αριθμό άδειας οδήγησης
 - άδειες οδήγησης
 
-
 ## <a name="cyprus-identity-card"></a>Cypryjski dowód tożsamości
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -4557,7 +4588,8 @@ nie dotyczy
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_cyprus_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
+
+- Wyrażenie `Regex_cyprus_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_cyprus_eu_national_id_card`
 
 ```xml
@@ -4581,7 +4613,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - osobisty numer identyfikatora
 - ταυτοτητασ
 
-
 ## <a name="cyprus-passport-number"></a>Numer paszportu cypryjskiego
 
 ### <a name="format"></a>Formacie
@@ -4599,13 +4630,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_cyprus_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` .
+
+- Wyrażenie `Regex_cyprus_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` .
 - Wyrażenie `Regex_cyprus_eu_passport_date` regularne znajduje datę w formacie DD/MM/RRRR lub znaleziono słowo kluczowe z `Keywords_cyprus_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_cyprus_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` .
+
+- Wyrażenie `Regex_cyprus_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` .
 
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4665,7 +4698,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - wygaśnie
 - wydane w dniu
 
-
 ## <a name="cyprus-physical-addresses"></a>Adresy fizyczne cypryjskie
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Cypru. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -4675,7 +4707,9 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 Średni
 
 ## <a name="cyprus-tax-identification-number"></a>Numer identyfikacyjny podatku cypryjskiego
+
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -4701,11 +4735,13 @@ nie dotyczy
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_cyprus_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_cyprus_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_cyprus_eu_tax_file_number`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_cyprus_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_cyprus_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -4750,7 +4786,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - φορολογική ταυτότητα
 - φορολογικού κωδικού
 
-
 ## <a name="czech-drivers-license-number"></a>Czeski numer prawa jazdy
 
 ### <a name="format"></a>Formacie
@@ -4773,8 +4808,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_czech_republic_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_czech_republic_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` .
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4890,7 +4926,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -4919,7 +4955,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - číslo řidičského průkazu
 - čísla řidičských průkazů
 
-
 ## <a name="czech-passport-number"></a>Czeski numer paszportu
 
 ### <a name="format"></a>Formacie
@@ -4937,13 +4972,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_czech_republic_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` .
+
+- Wyrażenie `Regex_czech_republic_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_czech_republic_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` .
+
+- Wyrażenie `Regex_czech_republic_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` .
 
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4997,21 +5034,24 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="czech-personal-identity-number"></a>Czeski numer tożsamości osobistej
 
 ### <a name="format"></a>Formacie
 
-dziewięć cyfr z opcjonalnym ukośnikiem (stary format) 10 cyfr z opcjonalnym ukośnikiem (nowy format)
+dziewięć cyfr z opcjonalnym ukośnikiem (stary format)
+
+10 cyfr z opcjonalnym ukośnikiem (nowy format)
 
 ### <a name="pattern"></a>Wzór
 
 dziewięć cyfr (stary format):
+
 - sześć cyfr reprezentujących datę urodzenia
 - opcjonalny ukośnik do przodu
 - trzy cyfry
 
 10 cyfr (nowy format):
+
 - sześć cyfr reprezentujących datę urodzenia
 - opcjonalny ukośnik do przodu
 - cztery cyfry, w których ostatnia cyfra jest cyfrą kontrolną
@@ -5097,7 +5137,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Tin #
 - unikatowy numer identyfikacyjny
 
-
 ## <a name="czech-republic-physical-addresses"></a>Adresy fizyczne w Czechach
 
 Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Czech. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -5123,8 +5162,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_denmark_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_denmark_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` .
 
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -5240,7 +5280,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -5267,7 +5307,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - kørekort
 - kørekortnummer
 
-
 ## <a name="denmark-passport-number"></a>Numer paszportu Danii
 
 ### <a name="format"></a>Formacie
@@ -5285,13 +5324,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_denmark_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` .
+
+- Wyrażenie `Regex_denmark_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date2` regularne znajduje datę w formacie DD MM YY lub odnaleziono słowo kluczowe `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_denmark_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` .
+
+- Wyrażenie `Regex_denmark_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` .
 
 ```xml
       <!-- Denmark Passport Number -->
@@ -5344,7 +5385,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="denmark-personal-identification-number"></a>Osobisty numer identyfikacyjny Danii
 
 ### <a name="format"></a>Formacie
@@ -5354,6 +5394,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 10 cyfr:
+
 - sześć cyfr w formacie DDMMYY, które są datą urodzenia
 - opcjonalne spacja lub łącznik
 - cztery cyfry, w których cyfra końcowa jest cyfrą kontrolną
@@ -5365,11 +5406,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Func_denmark_eu_tax_file_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_denmark_id.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Wyrażenie regularne Func_denmark_eu_tax_file_number znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -5461,7 +5504,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - sygesikringsnr
 - sygesikringsnummer
 
-
 ## <a name="denmark-physical-addresses"></a>Adresy fizyczne Danii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Danii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -5470,7 +5512,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="diseases"></a>Chorób
 
 Ta uwolniona nazwana jednostka wykrywa tekst, który pasuje do nazw chorób, takich jak *cukrzyca*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
@@ -5478,7 +5519,6 @@ Ta uwolniona nazwana jednostka wykrywa tekst, który pasuje do nazw chorób, tak
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
-
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Numer Agencji Egzekwowania Narkotyków (DEA)
 
@@ -5489,6 +5529,7 @@ dwie litery, po których następuje siedem cyfr
 ### <a name="pattern"></a>Wzór
 
 Wzorzec musi zawierać wszystkie następujące elementy:
+
 - jedna litera (bez uwzględniania wielkości liter) z tego zestawu możliwych liter: A/B/F/G/M/P/R, który jest kodem rejestrującym
 - jedna litera (bez uwzględniania wielkości liter), która jest pierwszą literą nazwiska lub cyfry rejestrujący "9"
 - siedem cyfr, z których ostatni to cyfra kontrolna
@@ -5500,11 +5541,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_dea_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z `Keyword_dea_number`
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_dea_number znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -5537,7 +5580,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - administracja egzekwowania narkotyków
 - organ ścigania narkotyków
 
-
 ## <a name="estonia-drivers-license-number"></a>Numer prawa jazdy Estonii
 
 ### <a name="format"></a>Formacie
@@ -5558,8 +5600,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_estonia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_estonia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` .
 
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5675,7 +5718,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -5704,7 +5747,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - numer juhiloa
 - juhiluba
 
-
 ## <a name="estonia-passport-number"></a>Numer paszportu Estonii
 
 ### <a name="format"></a>Formacie
@@ -5722,13 +5764,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_estonia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` .
+
+- Wyrażenie `Regex_estonia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_estonia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` .
+
+- Wyrażenie `Regex_estonia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` .
 
 ```xml
       <!-- Estonia Passport Number -->
@@ -5778,10 +5822,10 @@ eesti kodaniku passi number passi number passinumbrid document number document n
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="estonia-personal-identification-code"></a>Estoński osobisty kod identyfikacyjny
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -5808,11 +5852,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_estonia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_estonia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_estonia_eu_national_id_card`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_estonia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_estonia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Estonia Personal Identification Code -->
@@ -5866,7 +5912,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nie cyny
 - Tin #
 
-
 ## <a name="estonia-physical-addresses"></a>Adresy fizyczne Estonii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Estonii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -5874,7 +5919,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="eu-debit-card-number"></a>Numer karty debetowej UE
 
@@ -5893,6 +5937,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_eu_debit_card znajduje zawartość zgodną ze wzorcem.
 - Co najmniej jedna z następujących wartości jest prawdziwa:
     - Znaleziono słowo kluczowe z Keyword_eu_debit_card.
@@ -6225,7 +6270,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - Vto
 - válido hasta
 
-
 ## <a name="eu-drivers-license-number"></a>Numer prawa jazdy UE
 
 Te jednostki znajdują się w numerze prawa jazdy UE i są typami informacji poufnych.
@@ -6259,7 +6303,6 @@ Te jednostki znajdują się w numerze prawa jazdy UE i są typami informacji pou
 - [Szwecja](#sweden-drivers-license-number)
 - [WIELKIEJ BRYTANII.](#uk-drivers-license-number)
 
-
 ## <a name="eu-national-identification-number"></a>Krajowy numer identyfikacyjny UE
 
 Te jednostki znajdują się w krajowym numerze identyfikacyjnym UE i są typami informacji poufnych.
@@ -6291,7 +6334,6 @@ Te jednostki znajdują się w krajowym numerze identyfikacyjnym UE i są typami 
 - [Słowenia](#slovenia-unique-master-citizen-number)
 - [Hiszpania](#spain-dni)
 - [WIELKIEJ BRYTANII.](#uk-national-insurance-number-nino)
-
 
 ## <a name="eu-passport-number"></a>Numer paszportu UE
 
@@ -6326,7 +6368,6 @@ Te jednostki znajdują się w numerze paszportu UE i są typami informacji poufn
 - [Szwecja](#sweden-passport-number)
 - [Numer paszportu USA/Wielkiej Brytanii](#usuk-passport-number)
 
-
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>Numer ubezpieczenia społecznego UE lub równoważna identyfikacja
 
 Są to jednostki, które znajdują się w numerze ubezpieczenia społecznego UE lub równoważnej identyfikacji i są typami informacji poufnych.
@@ -6344,7 +6385,6 @@ Są to jednostki, które znajdują się w numerze ubezpieczenia społecznego UE 
 - [Portugalia](#portugal-citizen-card-number)
 - [Hiszpania](#spain-social-security-number-ssn)
 - [Szwecja](#sweden-national-id)
-
 
 ## <a name="eu-tax-identification-number"></a>Numer identyfikacji podatkowej UE
 
@@ -6379,7 +6419,6 @@ Te jednostki znajdują się w typie informacji poufnych o numerze identyfikacji 
 - [Szwecja](#sweden-tax-identification-number)
 - [WIELKIEJ BRYTANII.](#uk-unique-taxpayer-reference-number)
 
-
 ## <a name="finland-drivers-license-number"></a>Numer prawa jazdy Finlandii
 
 ### <a name="format"></a>Formacie
@@ -6402,8 +6441,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_finland_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_finland_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` .
 
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6519,7 +6559,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -6541,7 +6581,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_finland_eu_drivers_license_number"></a>s_license_number Keywords_finland_eu_driver
 
 - ajokortti
@@ -6554,10 +6593,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - ajokortit
 - ajokortin numerot
 
-
 ## <a name="finland-european-health-insurance-number"></a>Europejski numer ubezpieczenia zdrowotnego w Finlandii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -6583,6 +6622,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Rejestr Regex_Finland_European_Health_Insurance_Number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Finland_European_Health_Insurance_Number.
 
@@ -6615,7 +6655,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - suomen sairausvakuutuskortti
 - terveyskortti
 
-
 ## <a name="finland-national-id"></a>Identyfikator krajowy Finlandii
 
 ### <a name="format"></a>Formacie
@@ -6625,6 +6664,7 @@ sześć cyfr plus znak wskazujący wiek plus trzy cyfry oraz cyfrę kontrolną
 ### <a name="pattern"></a>Wzór
 
 Wzorzec musi zawierać wszystkie następujące elementy:
+
 - sześć cyfr w formacie DDMMYY, które są datą urodzenia
 - znacznik wieku ("-", "+" lub "a")
 - trzycyfrowy osobisty numer identyfikacyjny
@@ -6637,11 +6677,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - funkcja Func_finnish_national_id znajduje zawartość zgodną ze wzorcem
 - znaleziono słowo kluczowe z Keyword_finnish_national_id
 - suma kontrolna przechodzi
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - funkcja Func_finnish_national_id znajduje zawartość zgodną ze wzorcem
 - suma kontrolna przechodzi
 
@@ -6708,7 +6750,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - verotunniste
 - verotunnus
 
-
 ## <a name="finland-passport-number"></a>Numer paszportu Finlandii
 
 Ta jednostka jest dostępna w typie informacji poufnych numeru paszportu UE i jest dostępna jako autonomiczna jednostka typu informacji poufnych.
@@ -6717,7 +6758,9 @@ Ta jednostka jest dostępna w typie informacji poufnych numeru paszportu UE i je
 kombinacja dziewięciu liter i cyfr
 
 ### <a name="pattern"></a>Wzór
+
 kombinacja dziewięciu liter i cyfr:
+
 - dwie litery (bez uwzględniania wielkości liter)
 - siedem cyfr
 
@@ -6728,11 +6771,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_finland_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keyword_finland_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_finland_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keyword_finland_passport_number` .
 
@@ -6789,7 +6834,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="finland-physical-addresses"></a>Adresy fizyczne Finlandii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Finlandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -6797,7 +6841,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="france-drivers-license-number"></a>Numer prawa jazdy we Francji
 
@@ -6818,6 +6861,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - funkcja Func_french_drivers_license znajduje zawartość zgodną ze wzorcem.
 - znaleziono słowo kluczowe z Keyword_french_drivers_license.
 
@@ -6932,7 +6976,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -6960,10 +7004,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - numery licencji
 - numéros de licence
 
-
 ## <a name="france-health-insurance-number"></a>Numer ubezpieczenia zdrowotnego we Francji
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -6984,7 +7028,6 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 - opcjonalne miejsce
 - cyfra
 
-
 ### <a name="checksum"></a>Suma kontrolna
 
 Nie
@@ -6992,6 +7035,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Regex_France_Health_Insurance_Number znajduje zawartość zgodną ze wzorcem.
 - znaleziono słowo kluczowe z Keyword_France_Health_Insurance_Number.
 
@@ -7012,7 +7056,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - carte vitale
 - carte d'assuré social
 
-
 ## <a name="france-national-id-card-cni"></a>Francuski identyfikator krajowy (CNI)
 
 ### <a name="format"></a>Formacie
@@ -7030,6 +7073,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_france_cni znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_france_eu_national_id_card.
 
@@ -7059,7 +7103,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - numéro d'assurance maladie
 - numéro de carte vitale
 
-
 ## <a name="france-passport-number"></a>Numer paszportu We Francji
 
 Ta jednostka jest dostępna w typie informacji poufnych o numerze paszportu UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
@@ -7071,6 +7114,7 @@ dziewięć cyfr i liter
 ### <a name="pattern"></a>Wzór
 
 dziewięć cyfr i liter:
+
 - dwie cyfry
 - dwie litery (bez uwzględniania wielkości liter)
 - pięć cyfr
@@ -7082,14 +7126,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_fr_passport` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date3` regularne znajduje datę w formacie DD MM RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_fr_passport` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` .
-
 
 ```xml
     <!-- France Passport Number -->
@@ -7152,7 +7197,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="france-physical-addresses"></a>Adresy fizyczne We Francji
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Francji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -7160,7 +7204,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="france-social-security-number-insee"></a>Numer ubezpieczenia społecznego We Francji (INSEE)
 
@@ -7171,8 +7214,11 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="pattern"></a>Wzór
 
 Musi być zgodny z jednym z dwóch wzorców:
-- 13 cyfr, po których następuje spację, po której następuje dwie cyfry<br/>
-lub
+
+- 13 cyfr, po których następuje spację, po której następuje dwie cyfry
+
+  lub
+
 - 15 kolejnych cyfr
 
 ### <a name="checksum"></a>Suma kontrolna
@@ -7182,11 +7228,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_french_insee` znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_fr_insee.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_french_insee lub Func_fr_insee znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -7237,7 +7285,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - kod zabezpieczenia społecznego
 - numer ubezpieczenia społecznego
 
-
 ## <a name="france-tax-identification-number"></a>Numer identyfikacyjny podatku we Francji
 
 ### <a name="format"></a>Formacie
@@ -7259,7 +7306,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Spacja (opcjonalnie)
 - Trzy cyfry kontrolne
 
-
 ### <a name="checksum"></a>Suma kontrolna
 
 Tak
@@ -7267,11 +7313,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_france_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_france_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_france_eu_tax_file_number`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_france_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_france_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -7313,10 +7361,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nie cyny
 - Tin #
 
-
 ## <a name="france-value-added-tax-number"></a>Numer podatku od wartości dodanej we Francji
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -7348,10 +7396,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_france_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_france_value_added_tax_number.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_france_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -7381,7 +7431,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - numéro de tva
 - numéro d'identification syrena
 
-
 ## <a name="generic-medication-names"></a>Nazwy leków ogólnych
 
 Ta uwolniona nazwana jednostka wykrywa nazwy leków ogólnych, takich jak *acetaminophen*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
@@ -7389,7 +7438,6 @@ Ta uwolniona nazwana jednostka wykrywa nazwy leków ogólnych, takich jak *aceta
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
-
 
 ## <a name="germany-drivers-license-number"></a>Numer niemieckiego prawa jazdy
 
@@ -7402,6 +7450,7 @@ kombinacja 11 cyfr i liter
 ### <a name="pattern"></a>Wzór
 
 11 cyfr i liter (bez uwzględniania wielkości liter):
+
 - cyfra lub litera
 - dwie cyfry
 - sześć cyfr lub liter
@@ -7415,6 +7464,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_german_drivers_license znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_german_drivers_license_number.
 - Suma kontrolna przechodzi.
@@ -7444,9 +7494,9 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein- 
-- fuhrerschein- 
-- fuehrerschein- 
+- führerschein-
+- fuhrerschein-
+- fuehrerschein-
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
@@ -7560,7 +7610,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -7580,7 +7630,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawo jazdy
 - dlno
 
-
 ## <a name="germany-identity-card-number"></a>Numer niemieckiego numeru karty tożsamości
 
 ### <a name="format"></a>Formacie
@@ -7598,6 +7647,7 @@ od 1 listopada 2010 r.: od 9 do 11 znaków wzorzec alfanumeryczny
 - Opcjonalne d/D
 
 od dnia 1 kwietnia 1987 r. do dnia 31 października 2010 r.:
+
 - 10 cyfr
 
 ### <a name="checksum"></a>Suma kontrolna
@@ -7607,34 +7657,36 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_german_id_card_with_check` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_germany_id_card`
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_germany_id_card` regularne znajduje zawartość zgodną ze wzorcem (9 znaków bez cyfry kontrolnej wystawionej przed 2010 r. lub 10 cyfr wzorzec wystawiony posy 2010).
 - Znaleziono słowo kluczowe z Keyword_germany_id_card.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja `Func_german_id_card_with_check` znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
-
 ```xml
       <!-- Germany Identity Card Number -->
-      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75"> 
+      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-         <IdMatch idRef="Regex_germany_id_card" /> 
-         <Match idRef="Keyword_germany_id_card" /> 
+         <IdMatch idRef="Regex_germany_id_card" />
+         <Match idRef="Keyword_germany_id_card" />
         </Pattern>
-        <Version minEngineVersion="15.20.4545.000"> 
+        <Version minEngineVersion="15.20.4545.000">
           <Pattern confidenceLevel="85">
            <IdMatch idRef="Func_german_id_card_with_check" />
-            <Match idRef="Keyword_germany_id_card" /> 
-          </Pattern> 
+            <Match idRef="Keyword_germany_id_card" />
+          </Pattern>
           <Pattern confidenceLevel="65">
-           <IdMatch idRef="Func_german_id_card_with_check" /> 
-          </Pattern> 
+           <IdMatch idRef="Func_german_id_card_with_check" />
+          </Pattern>
         </Version>
       </Entity>
 ```
@@ -7657,7 +7709,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - persönliche identifikationsnummer
 - persönliche-id-nummer
 
-
 ## <a name="germany-passport-number"></a>Numer paszportu w Niemczech
 
 ### <a name="format"></a>Formacie
@@ -7678,15 +7729,18 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_german_passport_checksum` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keyword_german_passport` `Keywords_eu_passport_number_common` .
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_german_passport` znajduje zawartość zgodną ze wzorcem dziewięciu znaków (bez cyfry wyboru i opcjonalnie d/D).
 - Odnaleziono słowo kluczowe lub `Keyword_german_passport` `Keywords_eu_passport_number_common` .
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja `Func_german_passport_checksum` znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -7742,7 +7796,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - passportnumbers
 - numery paszportów
 
-
 ## <a name="germany-physical-addresses"></a>Adresy fizyczne w Niemczech
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Niemiec. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -7750,7 +7803,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="germany-tax-identification-number"></a>Numer identyfikacji podatkowej w Niemczech
 
@@ -7778,11 +7830,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_germany_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_germany_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_germany_eu_tax_file_number`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_germany_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_germany_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Germany Tax Identification Number -->
@@ -7825,10 +7879,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Zinn
 - zinnnummer
 
-
 ## <a name="germany-value-added-tax-number"></a>Numer podatku od wartości dodanej w Niemczech
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -7859,10 +7913,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_germany_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_germany_value_added_tax_number.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_germany_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -7889,7 +7945,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - mehrwertsteuer identifikationsnummer
 - mehrwertsteuer nummer
 
-
 ## <a name="greece-drivers-license-number"></a>Numer prawa jazdy w Grecji
 
 Ta jednostka jest uwzględniona w typie informacji poufnych numeru prawa jazdy UE. Jest ona również dostępna jako autonomiczna jednostka typu informacji poufnych.
@@ -7909,8 +7964,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_greece_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_greece_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` .
 
 ```xml
       <!-- Greece Driver's License Number -->
@@ -8026,7 +8082,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -8048,14 +8104,12 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_greece_eu_drivers_license_number"></a>s_license_number Keywords_greece_eu_driver
 
 - δεια οδήγησης
 - Adeia odigisis
 - Άδεια οδήγησης
 - Δίπλωμα οδήγησης
-
 
 ## <a name="greece-national-id-card"></a>Krajowa karta tożsamości Grecji
 
@@ -8066,11 +8120,13 @@ Kombinacja 7-8 liter i cyfr plus kreska
 ### <a name="pattern"></a>Wzór
 
 Siedem liter i cyfr (stary format):
+
 - Jedna litera (dowolna litera alfabetu greckiego)
 - Kreska
 - Sześć cyfr
 
 Osiem liter i cyfr (nowy format):
+
 - Dwie litery, których wielkie litery występują zarówno w alfabecie greckim, jak i łacińskim (ABEZHIKMNOPTYX)
 - Kreska
 - Sześć cyfr
@@ -8082,10 +8138,12 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_greece_id_card znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_greece_id_card.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_greece_id_card znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -8114,7 +8172,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - Ταυτότητα
 - ταυτότητας
 
-
 ## <a name="greece-passport-number"></a>Numer paszportu Grecji
 
 ### <a name="format"></a>Formacie
@@ -8132,13 +8189,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_greece_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` .
+
+- Wyrażenie `Regex_greece_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` .
 - Wyrażenie `Regex_greece_eu_passport_date` regularne znajduje datę w formacie DD MMM RR (przykład — 28 sierpnia 19) lub znaleziono słowo kluczowe z `Keywords_greece_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_greece_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` .
+
+- Wyrażenie `Regex_greece_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` .
 
 ```xml
       <!-- Greece Passport Number -->
@@ -8185,7 +8244,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
 
-
 ## <a name="greece-physical-addresses"></a>Adresy fizyczne Grecji
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Grecji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -8197,6 +8255,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ## <a name="greece-social-security-number-amka"></a>Numer ubezpieczenia społecznego w Grecji (AMKA)
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -8220,11 +8279,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_greece_eu_ssn` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_greece_eu_ssn` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_greece_eu_ssn_or_equivalent`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_greece_eu_ssn` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_greece_eu_ssn` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -8252,10 +8313,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - a.m.k.a.
 - Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
-
 ## <a name="greece-tax-identification-number"></a>Numer identyfikacji podatkowej Grecji
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -8278,7 +8339,7 @@ Nie dotyczy
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie  `Regex_greece_eu_tax_file_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Wyrażenie `Regex_greece_eu_tax_file_number` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_greece_eu_tax_file_number`
 
 ```xml
@@ -8322,7 +8383,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - τον αριθμό φορολογικού μητρώου
 - φορολογικού μητρώου νο
 
-
 ## <a name="hong-kong-identity-card-hkid-number"></a>Numer karty tożsamości (HKID) w Hongkongu
 
 ### <a name="format"></a>Formacie
@@ -8332,6 +8392,7 @@ Kombinacja od 8 do 9 liter i cyfr oraz opcjonalnych nawiasów wokół znaku koń
 ### <a name="pattern"></a>Wzór
 
 Kombinacja od 8 do 9 liter:
+
 - 1–2 litery (bez uwzględniania wielkości liter)
 - Sześć cyfr
 - opcjonalne miejsce
@@ -8344,11 +8405,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_hong_kong_id_card znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_hong_kong_id_card.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_hong_kong_id_card znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -8407,7 +8470,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - 香港特別行政區非永久性居民身分證
 - 香港特別行政區非永久性居民身分証
 
-
 ## <a name="hungary-drivers-license-number"></a>Węgierski numer prawa jazdy
 
 ### <a name="format"></a>Formacie
@@ -8429,8 +8491,8 @@ Nie
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie  `Regex_hungary_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` .
+- Wyrażenie `Regex_hungary_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` .
 
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -8545,7 +8607,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -8567,13 +8629,11 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver s_license_number Keywords_hungary_eu_driver
 
 - vezetoi engedely
 - vezetői engedély
 - vezetői engedélyek
-
 
 ## <a name="hungary-passport-number"></a>Węgierski numer paszportu
 
@@ -8592,13 +8652,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_hungary_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` .
+
+- Wyrażenie `Regex_hungary_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` .
 - Wyrażenie `Regex_hungary_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RR (przykład — 01 MÁR/MAR 12) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_hungary_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` .
+
+- Wyrażenie `Regex_hungary_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` .
 
 ```xml
       <!-- Hungary Passport Number -->
@@ -8649,10 +8711,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="hungary-personal-identification-number"></a>Węgierski osobisty numer identyfikacyjny
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -8680,12 +8742,12 @@ Tak
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja  `Func_hungary_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+- Funkcja `Func_hungary_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_hungary_eu_national_id_card`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja  `Func_hungary_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+- Funkcja `Func_hungary_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Hungary Personal Identification Number -->
@@ -8716,7 +8778,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - személyazonosító igazolvány
 - személyi igazolvány
 
-
 ## <a name="hungary-physical-addresses"></a>Adresy fizyczne Na Węgrzech
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Węgier. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -8724,7 +8785,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="hungary-social-security-number-taj"></a>Węgierski numer ubezpieczenia społecznego (TAJ)
 
@@ -8744,12 +8804,12 @@ Tak
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja  `Func_hungary_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
+- Funkcja `Func_hungary_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_hungary_eu_ssn_or_equivalent`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja  `Func_hungary_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
+- Funkcja `Func_hungary_eu_ssn_or_equivalent` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
@@ -8786,10 +8846,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - áfa szám
 - magyar áfa szám
 
-
 ## <a name="hungary-tax-identification-number"></a>Węgierski numer identyfikacji podatkowej
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -8816,12 +8876,12 @@ Tak
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja  `Func_hungary_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Funkcja `Func_hungary_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_hungary_eu_tax_file_number`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Funkcja  `Func_hungary_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Funkcja `Func_hungary_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Hungary Tax Identification Number -->
@@ -8868,10 +8928,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Tin #
 - numer VAT
 
-
 ## <a name="hungary-value-added-tax-number"></a>Węgierski numer podatku od wartości dodanej
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -8934,7 +8994,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - hozzáadottérték adó
 - áfa szám
 
-
 ## <a name="iceland-physical-addresses"></a>Adresy fizyczne Islandii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Islandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -8951,7 +9010,6 @@ Ta uwolniona nazwana jednostka wykrywa nazwy upośledzenia wymienione w ameryka�
 
 High (Wysoki)
 
-
 ## <a name="india-drivers-license-number"></a>Numer prawa jazdy w Indiach
 
 ### <a name="format"></a>Formacie
@@ -8961,6 +9019,7 @@ High (Wysoki)
 ### <a name="pattern"></a>Wzór
 
 15 liter lub cyfr:
+
 - dwie litery wskazujące kod stanu
 - opcjonalne miejsce lub kreska
 - dwie cyfry wskazujące kod miasta
@@ -8976,12 +9035,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_india_driving_license` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_eu_driver's_license_number_common`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie `Regex_india_driving_license` regularne znajduje zawartość zgodną ze wzorcem.
 
+- Wyrażenie `Regex_india_driving_license` regularne znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- India Driver's License Number -->
@@ -9097,7 +9157,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -9119,8 +9179,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
-
 ## <a name="india-gst-number"></a>Numer GST w Indiach
 
 ### <a name="format"></a>Formacie
@@ -9130,9 +9188,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 15 liter lub cyfr:
+
 - dwie cyfry reprezentujące prawidłowy kod stanu
 - opcjonalne miejsce lub kreska
-- dziesięć znaków reprezentujących stały numer konta (PAN) 
+- dziesięć znaków reprezentujących stały numer konta (PAN)
 - jedna litera lub cyfra
 - opcjonalne miejsce lub kreska
 - jedna litera "z" lub "Z"
@@ -9146,12 +9205,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_india_gst_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_india_gst_number`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja `Func_india_gst_number` znajduje zawartość zgodną ze wzorcem.
 
+- Funkcja `Func_india_gst_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- India GST number  -->
@@ -9175,7 +9235,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - podatek od towarów i usług
 - podatek od towarów i usług
 
-
 ## <a name="india-permanent-account-number-pan"></a>Numer konta stałego w Indiach (PAN)
 
 ### <a name="format"></a>Formacie
@@ -9185,6 +9244,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 10 liter lub cyfr:
+
 - Trzy litery (bez uwzględniania wielkości liter)
 - Litera w C, P, H, F, A, T, B, L, J, G (bez uwzględniania wielkości liter)
 - Litera
@@ -9198,12 +9258,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_india_permanent_account_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_india_permanent_account_number.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
-- Wyrażenie regularne Regex_india_permanent_account_number znajduje zawartość zgodną ze wzorcem.
 
+- Wyrażenie regularne Regex_india_permanent_account_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- India Permanent Account Number -->
@@ -9236,6 +9297,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 ### <a name="pattern"></a>Wzór
 
 12 cyfr:
+
 - Cyfra, która nie jest 0 lub 1
 - Trzy cyfry
 - Opcjonalne miejsce lub kreska
@@ -9250,6 +9312,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_india_aadhaar znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_india_aadhar.
 - Suma kontrolna przechodzi.
@@ -9281,7 +9344,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - आधार
 - uidai
 
-
 ## <a name="india-voter-id-card"></a>India Voter Id Card
 
 ### <a name="format"></a>Formacie
@@ -9291,6 +9353,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 10 liter lub cyfr:
+
 - trzy litery
 - siedem cyfr
 
@@ -9301,12 +9364,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_india_voter_id_card` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_india_voter_id_card`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
-- Wyrażenie `Regex_india_voter_id_card` regularne znajduje zawartość zgodną ze wzorcem.
 
+- Wyrażenie `Regex_india_voter_id_card` regularne znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- India Voter Id Card  -->
@@ -9334,7 +9398,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - INE
 - przemieszczenia wyborcze
 
-
 ## <a name="indonesia-identity-card-ktp-number"></a>Numer karty tożsamości Indonezji (KTP)
 
 ### <a name="format"></a>Formacie
@@ -9344,6 +9407,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 ### <a name="pattern"></a>Wzór
 
 16 cyfr:
+
 - Dwucyfrowy kod prowincji
 - Okres (opcjonalnie)
 - Rejestr dwucyfrowy lub kod miasta
@@ -9482,7 +9546,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 Brak
 
-
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Międzynarodowa klasyfikacja chorób (ICD-10-CM)
 
 ### <a name="format"></a>Formacie
@@ -9500,10 +9563,12 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Znaleziono słowo kluczowe z Dictionary_icd_10_updated.
 - Znaleziono słowo kluczowe z Dictionary_icd_10_codes.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Znaleziono słowo kluczowe z Dictionary_icd_10_ zaktualizowane.
 
 ```xml
@@ -9525,7 +9590,6 @@ Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_updated, który 
 
 Dowolny termin ze słownika słów kluczowych Dictionary_icd_10_codes, który jest oparty na [międzynarodowej klasyfikacji chorób, dziesiątej poprawce, modyfikacji klinicznej (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Ten typ szuka tylko kodów ubezpieczeniowych, a nie opisu.
 
-
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Międzynarodowa klasyfikacja chorób (ICD-9-CM)
 
 ### <a name="format"></a>Formacie
@@ -9543,10 +9607,12 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Znaleziono słowo kluczowe z Dictionary_icd_9_updated.
 - Znaleziono słowo kluczowe z Dictionary_icd_9_codes.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Znaleziono słowo kluczowe z Dictionary_icd_9_updated.
 
 ```xml
@@ -9586,19 +9652,22 @@ Nie
 ### <a name="definition"></a>Definicja
 
 W przypadku protokołu IPv6 zasady DLP mają dużą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_ipv6_address znajduje zawartość zgodną ze wzorcem.
 - Nie znaleziono słowa kluczowego z Keyword_ipaddress.
 
 W przypadku protokołu IPv4 zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_ipv4_address znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_ipaddress.
 
 W przypadku protokołu IPv6 zasady DLP mają dużą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_ipv6_address znajduje zawartość zgodną ze wzorcem.
 - Nie znaleziono słowa kluczowego z Keyword_ipaddress.
 
 ```xml
-    <!-- IP Address --> 
+    <!-- IP Address -->
     <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Regex_ipv6_address" />
@@ -9631,7 +9700,6 @@ W przypadku protokołu IPv6 zasady DLP mają dużą pewność, że wykryto tego 
 - protokół internetowy
 - IP-כתובת ה
 
-
 ## <a name="ip-address-v4"></a>Adres IP w wersji 4
 
 ### <a name="format"></a>Formacie
@@ -9640,7 +9708,6 @@ Złożony wzorzec, który uwzględnia sformatowane (okresy) i niesformatowane (b
 
 ### <a name="pattern"></a>Wzór
 
-
 ### <a name="checksum"></a>Suma kontrolna
 
 Nie
@@ -9648,15 +9715,16 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_ipv4_address` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_ipaddress`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_ipv4_address` regularne znajduje zawartość zgodną ze wzorcem.
 
-
 ```xml
-      <!-- IP Address v4--> 
+      <!-- IP Address v4-->
       <Entity id="a7dd5e5f-e7f9-4626-a2c6-86a8cb6830d2" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Regex_ipv4_address" />
@@ -9678,7 +9746,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - protokół internetowy
 - IP-כתובת ה
 
-
 ## <a name="ip-address-v6"></a>Adres IP w wersji 6
 
 ### <a name="format"></a>Formacie
@@ -9687,7 +9754,6 @@ Złożony wzorzec, który uwzględnia sformatowane liczby IPv6 (które obejmują
 
 ### <a name="pattern"></a>Wzór
 
-
 ### <a name="checksum"></a>Suma kontrolna
 
 Nie
@@ -9695,12 +9761,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_ipv6_address` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_ipaddress`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie `Regex_ipv6_address` regularne znajduje zawartość zgodną ze wzorcem.
 
+- Wyrażenie `Regex_ipv6_address` regularne znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- IP Address v6-->
@@ -9725,7 +9792,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - protokół internetowy
 - IP-כתובת ה
 
-
 ## <a name="ireland-drivers-license-number"></a>Numer prawa jazdy w Irlandii
 
 ### <a name="format"></a>Formacie
@@ -9747,8 +9813,8 @@ Nie
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
-- Wyrażenie  `Regex_ireland_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` .
+- Wyrażenie `Regex_ireland_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` .
 
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -9864,7 +9930,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -9885,7 +9951,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dl nie
 - dlno
 - Numer dl
-
 
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>s_license_number Keywords_ireland_eu_driver
 
@@ -9912,13 +9977,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_ireland_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` .
+
+- Wyrażenie `Regex_ireland_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` .
 - Wyrażenie `Regex_ireland_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RRRR (przykład - 01 BEA/MAY 1988) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_ireland_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` .
+
+- Wyrażenie `Regex_ireland_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` .
 
 ```xml
       <!-- Ireland Passport Number -->
@@ -9974,24 +10041,27 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="ireland-personal-public-service-pps-number"></a>Numer służby publicznej (PPS) w Irlandii
 
 ### <a name="format"></a>Formacie
 
 Stary format (do 31 grudnia 2012 r.):
+
 - siedem cyfr, po których następuje od 1 do 2 liter
 
 Nowy format (1 stycznia 2013 r. i później):
+
 - siedem cyfr, po których następuje dwie litery
 
 ### <a name="pattern"></a>Wzór
 
 Stary format (do 31 grudnia 2012 r.):
+
 - siedem cyfr
 - od jednej do dwóch liter (bez uwzględniania wielkości liter)
 
 Nowy format (1 stycznia 2013 r. i później):
+
 - siedem cyfr
 - litera (bez uwzględniania wielkości liter), która jest alfabetyczną cyfrą kontrolną
 - Opcjonalna litera w zakresie A-I lub "W"
@@ -10003,11 +10073,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_ireland_pps znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_ireland_eu_national_id_card.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_ireland_pps znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -10071,7 +10143,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - nie cyny
 - Tin #
 
-
 ## <a name="ireland-physical-addresses"></a>Adresy fizyczne Irlandii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Irlandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -10079,7 +10150,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="israel-bank-account-number"></a>Numer konta bankowego Izraela
 
@@ -10090,6 +10160,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="pattern"></a>Wzór
 
 Sformatowany:
+
 - dwie cyfry
 - kreska
 - trzy cyfry
@@ -10097,6 +10168,7 @@ Sformatowany:
 - osiem cyfr
 
 Niesformatowany:
+
 - 13 kolejnych cyfr
 
 ### <a name="checksum"></a>Suma kontrolna
@@ -10106,6 +10178,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_israel_bank_account_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_israel_bank_account_number.
 
@@ -10130,7 +10203,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Numer konta
 - מספר חשבון בנק
 
-
 ## <a name="israel-national-identification-number"></a>Narodowy numer identyfikacyjny Izraela
 
 ### <a name="format"></a>Formacie
@@ -10148,6 +10220,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_israeli_national_id_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Israel_National_ID.
 - Suma kontrolna przechodzi.
@@ -10168,23 +10241,22 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
--   מספר זהות
--   מספר זיה וי
--   מספר זיהוי ישר אלי      
--   זהותישר אלית
--   هو ية اسرائيل ية عدد
--   هوية إسرائ يلية
--   رقم الهوية
--   عدد هوية فريدة من نوعها
--   idnumber #
--   numer identyfikatora
--   brak tożsamości        
--   identitynumber #
--   numer tożsamości
--   israeliidentitynumber       
--   osobisty identyfikator
--   unikatowy identyfikator  
-
+- מספר זהות
+- מספר זיה וי
+- מספר זיהוי ישר אלי
+- זהותישר אלית
+- هو ية اسرائيل ية عدد
+- هوية إسرائ يلية
+- رقم الهوية
+- عدد هوية فريدة من نوعها
+- idnumber #
+- numer identyfikatora
+- brak tożsamości
+- identitynumber #
+- numer tożsamości
+- israeliidentitynumber
+- osobisty identyfikator
+- unikatowy identyfikator
 
 ## <a name="italy-drivers-license-number"></a>Numer prawa jazdy Włoch
 
@@ -10197,6 +10269,7 @@ kombinacja 10 liter i cyfr
 ### <a name="pattern"></a>Wzór
 
 kombinacja 10 liter i cyfr:
+
 - jedna litera (bez uwzględniania wielkości liter)
 - litera "A" lub "V" (bez uwzględniania wielkości liter)
 - siedem cyfr
@@ -10209,6 +10282,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie `Regex_italy_drivers_license_number` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keyword_italy_drivers_license_number` .
 
@@ -10326,7 +10400,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -10356,9 +10430,9 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - patenti di guida
 - patenti guida
 
-
 ## <a name="italy-fiscal-code"></a>Włoski kod fiskalny
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -10372,6 +10446,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 ### <a name="pattern"></a>Wzór
 
 16-znakowa kombinacja liter i cyfr:
+
 - trzy litery, które odpowiadają trzem pierwszym spedycjom w imieniu rodziny
 - trzy litery, które odpowiadają pierwszym, trzecim i czwartym spedyantom w imieniu
 - dwie cyfry odpowiadające ostatnim cyfrom roku urodzenia
@@ -10387,11 +10462,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_italy_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_italy_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_italy_eu_national_id_card`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_italy_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_italy_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Italy Fiscal Code -->
@@ -10443,7 +10520,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nie cyny
 - Tin #
 
-
 ## <a name="italy-passport-number"></a>Numer paszportu Włochy
 
 ### <a name="format"></a>Formacie
@@ -10464,13 +10540,15 @@ nie dotyczy
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_italy_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` .
+
+- Wyrażenie `Regex_italy_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` .
 - Wyrażenie `Regex_italy_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RRRR (przykład — 01 GEN/JAN 1988) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_italy_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` .
+
+- Wyrażenie `Regex_italy_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` .
 
 ```xml
       <!-- Italy Passport Number -->
@@ -10526,7 +10604,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="italy-physical-addresses"></a>Adresy fizyczne Włoch
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Włoch. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -10535,10 +10612,10 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="italy-value-added-tax-number"></a>Numer podatku od wartości dodanej we Włoszech
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -10565,10 +10642,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_italy_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_italy_value_added_tax_number.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_italy_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -10594,7 +10673,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Iva
 - Iva #
 
-
 ## <a name="japan-bank-account-number"></a>Numer konta bankowego w Japonii
 
 ### <a name="format"></a>Formacie
@@ -10604,8 +10682,10 @@ siedem lub osiem cyfr
 ### <a name="pattern"></a>Wzór
 
 numer konta bankowego:
+
 - siedem lub osiem cyfr
 - kod oddziału konta bankowego:
+
 - cztery cyfry
 - spacja lub kreska (opcjonalnie)
 - trzy cyfry
@@ -10617,13 +10697,16 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_jp_bank_account znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_jp_bank_account.
 - Jedno z następujących elementów jest prawdziwe:
+
 - Funkcja Func_jp_bank_account_branch_code znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_jp_bank_branch_code.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_jp_bank_account znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_jp_bank_account.
 
@@ -10715,6 +10798,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_jp_drivers_license_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_jp_drivers_license_number.
 
@@ -10768,10 +10852,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 免許証 #
 - 免許 #
 
-
 ## <a name="japan-my-number---corporate"></a>Japonia Mój numer — firmowy
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -10796,10 +10880,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_japanese_my_number_corporate znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_japanese_my_number_corporate.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_japanese_my_number_corporate znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -10830,10 +10916,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 法人番号
 - 指定通知書
 
-
 ## <a name="japan-my-number---personal"></a>Japonia Mój numer - Osobisty
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -10861,10 +10947,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_japanese_my_number_personal znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_japanese_my_number_personal.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_japanese_my_number_personal znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -10895,7 +10983,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - 個人識別ナンバー
 - 通知カード
 
-
 ## <a name="japan-passport-number"></a>Numer paszportu Japonii
 
 ### <a name="format"></a>Formacie
@@ -10913,6 +11000,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_jp_passport znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_jp_passport.
 
@@ -10945,7 +11033,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 旅券番号♯
 - 旅券ナンバー
 
-
 ## <a name="japan-residence-card-number"></a>Numer karty pobytu w Japonii
 
 ### <a name="format"></a>Formacie
@@ -10955,6 +11042,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 12 liter i cyfr:
+
 - dwie litery (bez uwzględniania wielkości liter)
 - osiem cyfr
 - dwie litery (bez uwzględniania wielkości liter)
@@ -10966,6 +11054,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_jp_residence_card_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_jp_residence_card_number.
 
@@ -11007,6 +11096,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_jp_resident_registration_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_jp_resident_registration_number.
 
@@ -11035,7 +11125,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 登録番号
 - 外国人登録証
 
-
 ## <a name="japan-social-insurance-number-sin"></a>Japoński numer ubezpieczenia społecznego (SIN)
 
 ### <a name="format"></a>Formacie
@@ -11045,6 +11134,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 7–12 cyfr:
+
 - cztery cyfry
 - łącznik (opcjonalnie)
 - sześć cyfr OR
@@ -11057,10 +11147,12 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_jp_sin znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_jp_sin.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_jp_sin_pre_1997 znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_jp_sin.
 
@@ -11101,7 +11193,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 厚生年金
 - 厚生年金被保険者整理番号
 
-
 ## <a name="lab-test-terms"></a>Terminy testowe laboratorium
 
 Ta uwolniona nazwana jednostka wykrywa terminy związane z testami laboratoryjnymi, takimi jak *insulina C-peptyd*. Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
@@ -11109,7 +11200,6 @@ Ta uwolniona nazwana jednostka wykrywa terminy związane z testami laboratoryjny
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
-
 
 ## <a name="latvia-drivers-license-number"></a>Numer prawa jazdy łotwy
 
@@ -11131,8 +11221,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_latvia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_latvia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` .
 
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -11248,7 +11339,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -11270,13 +11361,11 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>s_license_number Keywords_latvia_eu_driver
 
 - autovadītāja apliecība
 - autovadītāja apliecības
 - vadītāja apliecība
-
 
 ## <a name="latvia-passport-number"></a>Numer paszportu łotwy
 
@@ -11298,13 +11387,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_latvia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` .
+
+- Wyrażenie `Regex_latvia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_latvia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` .
+
+- Wyrażenie `Regex_latvia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` .
 
 ```xml
       <!-- Latvia Passport Number -->
@@ -11359,7 +11450,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="latvia-personal-code"></a>Kod osobisty Łotwy
 
 ### <a name="format"></a>Formacie
@@ -11391,11 +11481,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_latvia_eu_national_id_card` lub rejestr `Regex_latvia_eu_national_id_card_new_format` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_latvia_eu_national_id_card` lub rejestr `Regex_latvia_eu_national_id_card_new_format` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_latvia_eu_national_id_card`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_latvia_eu_national_id_card` lub rejestr `Regex_latvia_eu_national_id_card_new_format` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_latvia_eu_national_id_card` lub rejestr `Regex_latvia_eu_national_id_card_new_format` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Latvia Personal Code -->
@@ -11491,7 +11583,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Tin #
 - numer wyborcy
 
-
 ## <a name="latvia-physical-addresses"></a>Adresy fizyczne Łotwy
 
 Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Łotwy. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -11500,15 +11591,13 @@ Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="liechtenstein-physical-addresses"></a>Adresy fizyczne Liechtensteinu
 
-Ta rozdzielana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Liechtensteinu. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki. 
+Ta rozdzielana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Liechtensteinu. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="lifestyles-that-relate-to-medical-conditions"></a>Styl życia, który odnosi się do schorzeń
 
@@ -11517,7 +11606,6 @@ Ta uwolniona nazwana jednostka wykrywa terminy związane ze stylem życia, któr
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
-
 
 ## <a name="lithuania-drivers-license-number"></a>Litewski numer prawa jazdy
 
@@ -11536,8 +11624,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_lithuania_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_lithuania_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` .
 
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -11653,7 +11742,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -11675,17 +11764,16 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>s_license_number Keywords_lithuania_eu_driver
 
 - vairuotojo pažymėjimas
 - vairuotojo pažymėjimo numeris
 - vairuotojo pažymėjimo numeriai
 
-
 ## <a name="lithuania-personal-code"></a>Litewski kod osobisty
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -11712,11 +11800,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_lithuania_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_lithuania_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_lithuania_eu_tax_file_number`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_lithuania_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_lithuania_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Lithuania Personal Code -->
@@ -11772,7 +11862,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - unikatowy numer tożsamości
 - uniqueidentityno #
 
-
 ## <a name="lithuania-physical-addresses"></a>Adresy fizyczne Litwy
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Litwy. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -11780,7 +11869,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="lithuania-passport-number"></a>Numer paszportu litwy
 
@@ -11799,13 +11887,15 @@ nie dotyczy
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_lithuania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` .
+
+- Wyrażenie `Regex_lithuania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date3` regularne znajduje datę w formacie DD MM RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_lithuania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` .
+
+- Wyrażenie `Regex_lithuania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` .
 
 ```xml
       <!-- Lithuania Passport Number -->
@@ -11857,7 +11947,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="luxemburg-drivers-license-number"></a>Numer prawa jazdy w Luksemburgu
 
 ### <a name="format"></a>Formacie
@@ -11875,8 +11964,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_luxemburg_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_luxemburg_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` .
 
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -11992,7 +12082,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -12014,7 +12104,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>s_license_number Keywords_luxemburg_eu_driver
 
 - fahrerlaubnis
@@ -12023,6 +12112,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Luksemburski krajowy numer identyfikacyjny (osoby fizyczne)
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -12047,12 +12137,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_luxemburg_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_luxemburg_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_luxemburg_eu_national_id_card`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_luxemburg_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
+- Funkcja `Func_luxemburg_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Luxemburg National Identification Number (Natural persons) -->
@@ -12096,7 +12187,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - unikatowa tożsamość
 - uniqueidkey #
 
-
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Luksemburski krajowy numer identyfikacyjny (osoby niebędące osobami fizycznymi)
 
 ### <a name="format"></a>Formacie
@@ -12123,11 +12213,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_luxemburg_eu_tax_file_number_non_natural` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_luxemburg_eu_tax_file_number_non_natural` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_luxemburg_eu_tax_file_number`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_luxemburg_eu_tax_file_number_non_natural` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_luxemburg_eu_tax_file_number_non_natural` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -12188,7 +12280,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Zinn
 - zinnzahl
 
-
 ## <a name="luxemburg-passport-number"></a>Numer paszportu w Luksemburgu
 
 ### <a name="format"></a>Formacie
@@ -12206,13 +12297,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_luxemburg_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` .
+
+- Wyrażenie `Regex_luxemburg_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date3` regularne znajduje datę w formacie DD MM RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_luxemburg_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` .
+
+- Wyrażenie `Regex_luxemburg_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` .
 
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -12275,7 +12368,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="luxemburg-physical-addresses"></a>Adresy fizyczne w Luksemburgu
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Luksemburga. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -12283,7 +12375,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="malaysia-identification-card-number"></a>Numer karty identyfikacyjnej Malezji
 
@@ -12294,6 +12385,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="pattern"></a>Wzór
 
 12 cyfr:
+
 - sześć cyfr w formacie YYMMDD, które są datą urodzenia
 - kreska (opcjonalnie)
 - dwuliterowy kod miejsca urodzenia
@@ -12308,6 +12400,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_malaysia_id_card_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_malaysia_id_card_number.
 
@@ -12351,7 +12444,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - nric
 - osobista karta identyfikacyjna
 
-
 ## <a name="malta-drivers-license-number"></a>Numer prawa jazdy Malty
 
 ### <a name="format"></a>Formacie
@@ -12375,8 +12467,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_malta_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_malta_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` .
 
 ```xml
       <!-- Malta Driver's License Number -->
@@ -12492,7 +12585,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -12514,16 +12607,15 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_malta_eu_drivers_license_number"></a>s_license_number Keywords_malta_eu_driver
 
 - liċenzja tas-sewqan
 - liċenzji tas-sewwieq
 
-
 ## <a name="malta-identity-card-number"></a>Numer karty tożsamości Malty
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -12548,11 +12640,13 @@ Nie dotyczy
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_malta_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
+
+- Wyrażenie `Regex_malta_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_malta_eu_national_id_card`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
-- Wyrażenie  `Regex_malta_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
+
+- Wyrażenie `Regex_malta_eu_national_id_card` regularne znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Malta Identity Card Number -->
@@ -12586,7 +12680,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - unikatowy numer tożsamości
 - uniqueidentityno #
 
-
 ## <a name="malta-passport-number"></a>Numer paszportu Malta
 
 ### <a name="format"></a>Formacie
@@ -12604,13 +12697,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_malta_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` .
+
+- Wyrażenie `Regex_malta_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` .
 - Znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_malta_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` .
+
+- Wyrażenie `Regex_malta_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` .
 
 ```xml
       <!-- Malta Passport Number -->
@@ -12659,7 +12754,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="malta-physical-addresses"></a>Adresy fizyczne Malty
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Malty. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -12668,15 +12762,16 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="malta-tax-identification-number"></a>Numer identyfikacji podatkowej Malty
 
 ### <a name="format"></a>Formacie
 
 W przypadku obywateli Malty:
+
 - siedem cyfr i jedna litera w określonym wzorcu
 
 Obywatele spoza Malty i podmioty maltańskie:
+
 - dziewięć cyfr
 
 ### <a name="pattern"></a>Wzór
@@ -12697,10 +12792,12 @@ Nie dotyczy
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - `Regex_malta_eu_tax_file_number` Rejestr lub `Regex_malta_eu_tax_file_number_non_maltese_national` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_malta_eu_tax_file_number`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - `Regex_malta_eu_tax_file_number` Rejestr lub `Regex_malta_eu_tax_file_number_non_maltese_national` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -12793,11 +12890,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_mbi_card` regularne znajduje zawartość zgodną ze wzorcem.
+
+- Wyrażenie `Regex_mbi_card` regularne znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_mbi_card`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_mbi_card` regularne znajduje zawartość zgodną ze wzorcem.
+
+- Wyrażenie `Regex_mbi_card` regularne znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- Medicare Beneficiary Identifier (MBI) card -->
@@ -12824,7 +12923,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - numer beneficjenta medicare
 - beneficjent medicare #
 
-
 ## <a name="mexico-unique-population-registry-code-curp"></a>Meksyk Unikatowy kod rejestru populacji (CURP)
 
 ### <a name="format"></a>Formacie
@@ -12848,11 +12946,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_mexico_population_registry_code` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_mexico_population_registry_code` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_mexico_population_registry_code`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_mexico_population_registry_code` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_mexico_population_registry_code` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
@@ -12873,7 +12973,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 - Clave Única de Registro de Población
 - Clave Unica de Registro de Poblacion
-- Unikatowy kod rejestru populacji 
+- Unikatowy kod rejestru populacji
 - unikatowy kod populacji
 - CURP
 - Identyfikator osobisty
@@ -12890,7 +12990,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - claveunica
 - clavepersonalIdentidad
 
-
 ## <a name="netherlands-citizens-service-bsn-number"></a>Numer usługi obywatela Holandii (BSN)
 
 ### <a name="format"></a>Formacie
@@ -12900,6 +12999,7 @@ osiem lub dziewięć cyfr zawierających opcjonalne spacje
 ### <a name="pattern"></a>Wzór
 
 osiem-dziewięć cyfr:
+
 - trzy cyfry
 - spację (opcjonalnie)
 - trzy cyfry
@@ -12913,6 +13013,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_netherlands_bsn znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_netherlands_bsn.
 - Suma kontrolna przechodzi.
@@ -12953,7 +13054,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - unikatowy numer tożsamości
 - uniqueidentityno #
 
-
 ## <a name="netherlands-drivers-license-number"></a>Holenderski numer prawa jazdy
 
 ### <a name="format"></a>Formacie
@@ -12971,8 +13071,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_netherlands_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_netherlands_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` .
 
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -13088,7 +13189,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -13110,7 +13211,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>s_license_number Keywords_netherlands_eu_driver
 
 - permis de conduire
@@ -13119,7 +13219,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - rijbewijzen
 - rijbewijs nummer
 - rijbewijsnummers
-
 
 ## <a name="netherlands-passport-number"></a>Numer paszportu holandii
 
@@ -13138,13 +13237,15 @@ nie dotyczy
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_netherlands_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` .
+
+- Wyrażenie `Regex_netherlands_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` .
 - Wyrażenie `Regex_netherlands_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RRRR (przykład — 26 MAA/MAR 2012)
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_netherlands_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` .
+
+- Wyrażenie `Regex_netherlands_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` .
 
 ```xml
       <!-- Netherlands Passport Number -->
@@ -13189,7 +13290,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - paspoortnummer
 - paspoort nr
 
-
 ## <a name="netherlands-physical-addresses"></a>Holenderskie adresy fizyczne
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Holandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -13198,10 +13298,10 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="netherlands-tax-identification-number"></a>Holenderski numer identyfikacji podatkowej
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -13223,11 +13323,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_netherlands_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_netherlands_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_netherlands_eu_tax_file_number`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
-- Funkcja  `Func_netherlands_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_netherlands_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Netherlands Tax Identification Number -->
@@ -13282,10 +13384,10 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - nie cyny
 - Tin #
 
-
 ## <a name="netherlands-value-added-tax-number"></a>Holenderski numer podatku od wartości dodanej
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -13315,10 +13417,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_netherlands_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_netherlands_value_added_tax_number.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_netherlands_value_added_tax_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -13345,10 +13449,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - btw nûmer
 - btw-nummer
 
-
 ## <a name="new-zealand-bank-account-number"></a>Numer konta bankowego Nowej Zelandii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -13379,10 +13483,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_new_zealand_bank_account_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_new_zealand_bank_account_number.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_new_zealand_bank_account_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -13408,10 +13514,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - bank_acct_branch
 - bank_acct_nbr
 
-
 ## <a name="new-zealand-drivers-license-number"></a>Numer prawa jazdy w Nowej Zelandii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -13436,10 +13542,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_newzealand_driver_license_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_newzealand_driver_license_number.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_newzealand_driver_license_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -13524,10 +13632,10 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - nz stowarzyszenie samochodów
 - Nowa Zelandia Stowarzyszenie Samochodowe
 
-
 ## <a name="new-zealand-inland-revenue-number"></a>Numer przychodu w głębi lądu w Nowej Zelandii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -13555,10 +13663,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_new_zealand_inland_revenue_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_new_zealand_inland_revenue_number.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_new_zealand_inland_revenue_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -13585,7 +13695,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - ird number (Numer ird)
 - numer przychodu w głębi lądu
 
-
 ## <a name="new-zealand-ministry-of-health-number"></a>Numer ministerstwa zdrowia Nowej Zelandii
 
 ### <a name="format"></a>Formacie
@@ -13604,11 +13713,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_new_zealand_ministry_of_health_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_nz_terms.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_new_zealand_ministry_of_health_number znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -13635,7 +13746,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - NHI #
 - Krajowy indeks kondycji #
 
-
 ## <a name="new-zealand-physical-addresses"></a>Adresy fizyczne Nowej Zelandii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Nowej Zelandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -13644,10 +13754,10 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="new-zealand-social-welfare-number"></a>Numer opieki społecznej w Nowej Zelandii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -13675,10 +13785,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_newzealand_social_welfare_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_newzealand_social_welfare_number.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_newzealand_social_welfare_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -13705,7 +13817,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - numer opieki społecznej
 - swn #
 
-
 ## <a name="norway-identification-number"></a>Numer identyfikacyjny Norwegii
 
 ### <a name="format"></a>Formacie
@@ -13715,6 +13826,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 ### <a name="pattern"></a>Wzór
 
 11 cyfr:
+
 - sześć cyfr w formacie DDMMYY, które są datą urodzenia
 - trzycyfrowy numer indywidualny
 - dwie cyfry kontrolne
@@ -13726,11 +13838,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_norway_id_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_norway_id_number.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_norway_id_numbe znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -13758,7 +13872,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Liczba osób
 - Fødselsnummer
 
-
 ## <a name="norway-physical-addresses"></a>Adresy fizyczne Norwegii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Norwegii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -13766,7 +13879,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>Filipiny ujednolicony wielozadaniowy numer identyfikacyjny
 
@@ -13777,6 +13889,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="pattern"></a>Wzór
 
 12 cyfr:
+
 - cztery cyfry
 - łącznik
 - siedem cyfr
@@ -13790,6 +13903,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_philippines_unified_id znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_philippines_id.
 
@@ -13811,7 +13925,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - UMID
 - Dowód tożsamości
 - Pinag-isang Multi-Layunin ID
-
 
 ## <a name="poland-drivers-license-number"></a>Numer polskiego prawa jazdy
 
@@ -13836,8 +13949,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_poland_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_poland_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` .
 
 ```xml
       <!-- Poland Driver's License Number -->
@@ -13953,7 +14067,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -13975,12 +14089,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_poland_eu_drivers_license_number"></a>s_license_number Keywords_poland_eu_driver
 
 - prawo jazdy
 - prawa jazdy
-
 
 ## <a name="poland-identity-card"></a>Polski dowód tożsamości
 
@@ -13999,6 +14111,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_polish_national_id znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_polish_national_id_passport_number.
 - Suma kontrolna przechodzi.
@@ -14025,7 +14138,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Dowód Tożsamości
 - Dow. Os.
 
-
 ## <a name="poland-national-id-pesel"></a>Polski identyfikator krajowy (PESEL)
 
 ### <a name="format"></a>Formacie
@@ -14045,11 +14157,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_pesel_identification_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_pesel_identification_number.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_pesel_identification_number znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -14080,7 +14194,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Pesel
 - tożsamości narodowej
 
-
 ## <a name="poland-passport-number"></a>Polski numer paszportu
 
 Ta jednostka typu informacji poufnych jest uwzględniana w typie informacji poufnych numeru paszportu UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
@@ -14100,17 +14213,20 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_polish_passport_number_v2` znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` .
 - Odnaleziono słowo kluczowe.`Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_polish_passport_number_v2` znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` .
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja `Func_polish_passport_number_v2` znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -14169,7 +14285,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="poland-physical-addresses"></a>Adresy fizyczne w Polsce
 
 Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Polski. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -14178,10 +14293,10 @@ Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="poland-regon-number"></a>Numer REGON w Polsce
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -14208,10 +14323,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_polish_regon_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_polish_regon_number.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_polish_regon_number znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -14245,10 +14362,10 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - numerstatystyczny #
 - numeruregon #
 
-
 ## <a name="poland-tax-identification-number"></a>Numer identyfikacji podatkowej w Polsce
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -14270,9 +14387,9 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_poland_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe.`Keywords_poland_eu_tax_file_number`
 
+- Funkcja `Func_poland_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe.`Keywords_poland_eu_tax_file_number`
 
 ```xml
       <!-- Poland Tax Identification Number -->
@@ -14316,7 +14433,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - vatid
 - vatno #
 
-
 ## <a name="portugal-citizen-card-number"></a>Numer karty obywatela Portugalii
 
 ### <a name="format"></a>Formacie
@@ -14334,6 +14450,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_portugal_citizen_card znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_portugal_citizen_card.
 
@@ -14369,7 +14486,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - número do documento
 - portugal bi number
 
-
 ## <a name="portugal-drivers-license-number"></a>Numer prawa jazdy Portugalia
 
 ### <a name="format"></a>Formacie
@@ -14379,6 +14495,7 @@ dwa wzorce — dwie litery, po których następuje od 5 do 8 cyfr ze znakami spe
 ### <a name="pattern"></a>Wzór
 
 Wzorzec 1: Dwie litery, po którym następuje 5/6 ze znakami specjalnymi:
+
 - Dwie litery (bez uwzględniania wielkości liter)
 - Łącznik
 - Pięć lub sześć cyfr
@@ -14386,12 +14503,12 @@ Wzorzec 1: Dwie litery, po którym następuje 5/6 ze znakami specjalnymi:
 - Jedna cyfra
 
 Wzorzec 2: jedna litera, po której następuje 6/8 cyfr ze znakami specjalnymi:
+
 - Jedna litera (bez uwzględniania wielkości liter)
 - Łącznik
 - Sześć lub osiem cyfr
 - Przestrzeń
 - Jedna cyfra
-
 
 ### <a name="checksum"></a>Suma kontrolna
 
@@ -14400,8 +14517,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_portugal_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_portugal_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` .
 
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -14517,7 +14635,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -14539,7 +14657,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>s_license_number Keywords_portugal_eu_driver
 
 - carteira de motorista
@@ -14552,7 +14669,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - permissão condução
 - Licença condução Portugalia
 - carta de condução
-
 
 ## <a name="portugal-passport-number"></a>Numer paszportu Portugalii
 
@@ -14574,13 +14690,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_portugal_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` .
+
+- Wyrażenie `Regex_portugal_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_portugal_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` .
+
+- Wyrażenie `Regex_portugal_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` .
 
 ```xml
       <!-- Portugal Passport Number -->
@@ -14639,7 +14757,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="portugal-physical-addresses"></a>Adresy fizyczne Portugalii
 
 Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Portugalii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -14647,7 +14764,6 @@ Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Po
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="portugal-tax-identification-number"></a>Numer identyfikacji podatkowej Portugalii
 
@@ -14670,11 +14786,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_portugal_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_portugal_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_portugal_eu_tax_file_number`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
-- Funkcja  `Func_portugal_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_portugal_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Portugal Tax Identification Number -->
@@ -14716,7 +14834,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - nie cyny
 - Tin #
 
-
 ## <a name="romania-drivers-license-number"></a>Numer prawa jazdy Rumunii
 
 ### <a name="format"></a>Formacie
@@ -14726,6 +14843,7 @@ jeden znak, po którym następuje osiem cyfr
 ### <a name="pattern"></a>Wzór
 
 jeden znak, po którym następuje osiem cyfr:
+
 - jedna litera (bez uwzględniania wielkości liter) lub cyfra
 - osiem cyfr
 
@@ -14736,8 +14854,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_romania_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_romania_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` .
 
 ```xml
       <!-- Romania Driver's License Number -->
@@ -14853,7 +14972,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -14884,7 +15003,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - permisele conducere
 - permis conducere
 
-
 ## <a name="romania-passport-number"></a>Numer paszportu Rumunii
 
 ### <a name="format"></a>Formacie
@@ -14902,13 +15020,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_romania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` .
+
+- Wyrażenie `Regex_romania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` .
 - Wyrażenie `Regex_romania_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RR (przykład- 01 FEB/FEB 10) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_romania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` .
+
+- Wyrażenie `Regex_romania_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` .
 
 ```xml
       <!-- Romania Passport Number -->
@@ -14958,10 +15078,10 @@ numărul pașaportului numarul pasaportului numerele paşaportului Paşaport nr
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="romania-personal-numeric-code-cnp"></a>Rumunia osobisty kod liczbowy (CNP)
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -14986,11 +15106,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_romania_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_romania_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_romania_eu_national_id_card`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_romania_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_romania_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
@@ -15058,7 +15180,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - uniqueidentityno #
 - uniqueidentityno
 
-
 ## <a name="romania-physical-addresses"></a>Adresy fizyczne Rumunii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Rumunii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -15067,10 +15188,10 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="russia-passport-number-domestic"></a>Numer paszportu Rosji krajowy
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -15098,6 +15219,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Rejestr Regex_Russian_Passport_Number_Domestic znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Russian_Passport_Number.
 
@@ -15130,10 +15252,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - номер паспорта
 - номерпаспорта #
 
-
 ## <a name="russia-passport-number-international"></a>Numer paszportu Rosji międzynarodowy
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -15159,6 +15281,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Rejestr Regex_Russian_Passport_Number_International znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Russian_Passport_Number.
 
@@ -15191,7 +15314,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - номер паспорта
 - номерпаспорта #
 
-
 ## <a name="saudi-arabia-national-id"></a>Identyfikator narodowy Arabii Saudyjskiej
 
 ### <a name="format"></a>Formacie
@@ -15209,6 +15331,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_saudi_arabia_national_id znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_saudi_arabia_national_id.
 
@@ -15233,7 +15356,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Numer identyfikatora
 - الوطنية الهوية بطاقة رقم
 
-
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Numer krajowego dowodu rejestracyjnego (NRIC) w Singapurze
 
 ### <a name="format"></a>Formacie
@@ -15243,6 +15365,7 @@ dziewięć liter i cyfr
 ### <a name="pattern"></a>Wzór
 
 - dziewięć liter i cyfr:
+
 - litery "F", "G", "M", "S" lub "T" (bez uwzględniania wielkości liter)
 - siedem cyfr
 - alfabetyczna cyfra kontrolna
@@ -15254,11 +15377,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_singapore_nric znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_singapore_nric.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_singapore_nric znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -15288,7 +15413,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 身份证
 - 身份證
 
-
 ## <a name="slovakia-drivers-license-number"></a>Numer prawa jazdy słowacji
 
 ### <a name="format"></a>Formacie
@@ -15309,8 +15433,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_slovakia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_slovakia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` .
 
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -15426,7 +15551,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -15448,14 +15573,12 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>s_license_number Keywords_slovakia_eu_driver
 
 - vodičský preukaz
 - vodičské preukazy
 - vodičského preukazu
 - vodičských preukazov
-
 
 ## <a name="slovakia-passport-number"></a>Numer paszportu Słowacji
 
@@ -15474,13 +15597,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_slovakia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` .
+
+- Wyrażenie `Regex_slovakia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_slovakia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` .
+
+- Wyrażenie `Regex_slovakia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` .
 
 ```xml
       <!-- Slovakia Passport Number -->
@@ -15534,10 +15659,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="slovakia-personal-number"></a>Numer osobisty Słowacji
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -15562,11 +15687,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_slovakia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_slovakia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_slovakia_eu_national_id_card`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
-- Funkcja  `Func_slovakia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_slovakia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Slovakia Personal Number -->
@@ -15631,7 +15758,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - nie cyny
 - Tin #
 
-
 ## <a name="slovakia-physical-addresses"></a>Adresy fizyczne Słowacji
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Słowacji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -15639,7 +15765,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="slovenia-drivers-license-number"></a>Słoweński numer prawa jazdy
 
@@ -15658,8 +15783,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_slovenia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_slovenia_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` .
 
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -15775,7 +15901,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -15805,7 +15931,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - številka vozniškega dovoljenja
 - številke vozniških dovoljenj
 
-
 ## <a name="slovenia-passport-number"></a>Numer paszportu Słowenii
 
 ### <a name="format"></a>Formacie
@@ -15827,13 +15952,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_slovenia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` .
+
+- Wyrażenie `Regex_slovenia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` .
 - Wyrażenie `Regex_eu_passport_date1` regularne znajduje datę w formacie DD.MM.RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_slovenia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` .
+
+- Wyrażenie `Regex_slovenia_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` .
 
 ```xml
       <!-- Slovenia Passport Number -->
@@ -15888,7 +16015,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="slovenia-physical-addresses"></a>Adresy fizyczne Słowenii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Słowenii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -15897,10 +16023,10 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze
 
 Średni
 
-
 ## <a name="slovenia-tax-identification-number"></a>Słoweński numer identyfikacji podatkowej
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -15924,11 +16050,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_slovenia_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_slovenia_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_slovenia_eu_tax_file_number`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
-- Funkcja  `Func_slovenia_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_slovenia_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -15969,10 +16097,10 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - nie cyny
 - Tin #
 
-
 ## <a name="slovenia-unique-master-citizen-number"></a>Słoweński unikatowy główny numer obywatela
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -15999,11 +16127,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_slovenia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_slovenia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_slovenia_eu_national_id_card`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_slovenia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_slovenia_eu_national_id_card` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
@@ -16048,7 +16178,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - uniqueidentityno #
 - uniqueidentityno #
 
-
 ## <a name="south-africa-identification-number"></a>Republika Południowej Afryki — numer identyfikacyjny
 
 ### <a name="format"></a>Formacie
@@ -16058,6 +16187,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 13 cyfr:
+
 - sześć cyfr w formacie YYMMDD, które są datą urodzenia
 - cztery cyfry
 - jednocyfrowy wskaźnik obywatelstwa
@@ -16071,6 +16201,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_south_africa_identification_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_south_africa_identification_number.
 - Suma kontrolna przechodzi.
@@ -16093,7 +16224,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - ID
 - Identyfikacji
 
-
 ## <a name="south-korea-resident-registration-number"></a>Numer rejestracyjny rezydenta Korei Południowej
 
 ### <a name="format"></a>Formacie
@@ -16103,6 +16233,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 ### <a name="pattern"></a>Wzór
 
 13 cyfr:
+
 - sześć cyfr w formacie YYMMDD, które są datą urodzenia
 - łącznik
 - jedna cyfra określona przez wiek i płeć
@@ -16117,11 +16248,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_south_korea_resident_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_south_korea_resident_number.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_south_korea_resident_number znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -16148,10 +16281,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - RRN
 - 주민등록번호
 
-
 ## <a name="spain-dni"></a>Hiszpania DNI
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -16177,12 +16310,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_spain_eu_national_id_card"`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
 
+- Funkcja `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Spain DNI -->
@@ -16230,7 +16364,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - unikatowy numer tożsamości
 - Uniqueid #
 
-
 ## <a name="spain-drivers-license-number"></a>Numer hiszpańskiego prawa jazdy
 
 ### <a name="format"></a>Formacie
@@ -16251,11 +16384,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` .
+
+- Funkcja `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` .
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_spain_eu_DL_and_NI_number_citizen` lub `Func_spain_eu_DL_and_NI_number_foreigner` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Spain Driver's License Number -->
@@ -16384,7 +16519,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -16406,7 +16541,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_spain_eu_drivers_license_number"></a>s_license_number Keywords_spain_eu_driver
 
 - permiso de conducción
@@ -16421,7 +16555,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - carnet de conducir
 - licencia de manejo
 - licencia manejo
-
 
 ## <a name="spain-passport-number"></a>Numer paszportu Hiszpanii
 
@@ -16444,13 +16577,15 @@ Nie dotyczy
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_spain_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` .
+
+- Wyrażenie `Regex_spain_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` .
 - Wyrażenie `Regex_spain_eu_passport_date` regularne znajduje datę w formacie DD-MM-RRRR lub znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_spain_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` .
+
+- Wyrażenie `Regex_spain_eu_passport_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` .
 
 ```xml
       <!-- Spain Passport Number -->
@@ -16511,7 +16646,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="spain-physical-addresses"></a>Adresy fizyczne Hiszpanii
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Hiszpanii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -16520,9 +16654,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="spain-social-security-number-ssn"></a>Numer ubezpieczenia społecznego w Hiszpanii (SSN)
-
 
 ### <a name="format"></a>Formacie
 
@@ -16531,6 +16663,7 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 ### <a name="pattern"></a>Wzór
 
 11–12 cyfr:
+
 - dwie cyfry
 - ukośnik (opcjonalnie)
 - od siedmiu do ośmiu cyfr
@@ -16544,11 +16677,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_spanish_social_security_number znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 - - Odnaleziono słowo kluczowe.`Keywords_spain_eu_ssn_or_equivalent`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_spanish_social_security_number znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -16576,10 +16711,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - numer ubezpieczenia społecznego
 - número de la seguridad social
 
-
 ## <a name="spain-tax-identification-number"></a>Numer identyfikacji podatkowej Hiszpanii
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -16628,11 +16763,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_spain_eu_tax_file_number` lub `Func_spain_eu_DL_and_NI_number_citizen` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_spain_eu_tax_file_number` lub `Func_spain_eu_DL_and_NI_number_citizen` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_spain_eu_tax_file_number`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_spain_eu_tax_file_number` lub `Func_spain_eu_DL_and_NI_number_citizen` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_spain_eu_tax_file_number` lub `Func_spain_eu_DL_and_NI_number_citizen` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Spain Tax Identification Number -->
@@ -16687,7 +16824,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nie cyny
 - Tin #
 
-
 ## <a name="sql-server-connection-string"></a>parametry połączenia SQL Server
 
 ### <a name="format"></a>Formacie
@@ -16711,6 +16847,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne CEP_Regex_SQLServerConnectionString znajduje zawartość zgodną ze wzorcem.
 - Nie można odnaleźć słowa kluczowego z CEP_GlobalFilter.
 - Wyrażenie regularne CEP_PasswordPlaceHolder nie znajduje zawartości zgodnej ze wzorcem.
@@ -16764,7 +16901,6 @@ Ten typ informacji poufnych identyfikuje te słowa kluczowe przy użyciu wyraże
 - testacs.<!--no-hyperlink-->Com
 - s-int.<!--no-hyperlink-->Netto
 
-
 ## <a name="surgical-procedures"></a>Procedury chirurgiczne
 
 Ta uwolniona nazwana jednostka wykrywa terminy związane z zabiegami chirurgicznymi, takimi jak *wyrostek robakowy*.  Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
@@ -16772,7 +16908,6 @@ Ta uwolniona nazwana jednostka wykrywa terminy związane z zabiegami chirurgiczn
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
-
 
 ## <a name="sweden-drivers-license-number"></a>Szwedzki numer prawa jazdy
 
@@ -16795,8 +16930,9 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Wyrażenie  `Regex_sweden_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
-- Odnaleziono słowo kluczowe lub  `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` .
+
+- Wyrażenie `Regex_sweden_eu_driver's_license_number` regularne znajduje zawartość zgodną ze wzorcem.
+- Odnaleziono słowo kluczowe lub `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` .
 
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -16912,7 +17048,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -16934,7 +17070,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - dlno
 - Numer dl
 
-
 #### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver's_license_number
 
 - ajokortti
@@ -16944,11 +17079,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - drivere lic.
 - körkort
 - numărul permisului de conducere
--  שאָפער דערלויבעניש נומער
+- שאָפער דערלויבעניש נומער
 - förare lic.
--  דריווערס דערלויבעניש
+- דריווערס דערלויבעניש
 - körkortsnummer
-
 
 ## <a name="sweden-national-id"></a>Identyfikator krajowy Szwecji
 
@@ -16959,6 +17093,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 10 lub 12 cyfr i opcjonalny ogranicznik:
+
 - dwie cyfry (opcjonalnie)
 - Sześć cyfr w formacie daty RRMMDD
 - ogranicznik "-" lub "+" (opcjonalnie)
@@ -16971,14 +17106,15 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_swedish_national_identifier` znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z `Keywords_swedish_national_identifier`
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_swedish_national_identifier` znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
-
 
 ```xml
     <!-- Sweden National ID -->
@@ -17014,7 +17150,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - personnummer
 - skatteidentifikationsnummer
 
-
 ## <a name="sweden-passport-number"></a>Numer paszportu Szwecji
 
 ### <a name="format"></a>Formacie
@@ -17032,14 +17167,15 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - wyrażenie regularne Regex_sweden_passport_number znajduje zawartość zgodną ze wzorcem.
 - słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_sweden_passport` zostanie znalezione.
 - wyrażenie `Regex_sweden_eu_passport_date` regularne znajduje datę w formacie DD MMM/MMM RR (01 JAN/JAN 12) lub znaleziono słowo kluczowe z `Keywords_eu_passport_date` .
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - wyrażenie regularne Regex_sweden_passport_number znajduje zawartość zgodną ze wzorcem.
 - słowo kluczowe z `Keywords_eu_passport_number` lub `Keyword_sweden_passport` zostanie znalezione.
-
 
 ```xml
     <!-- Sweden Passport Number -->
@@ -17107,7 +17243,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - data wydania
 - data wygaśnięcia
 
-
 ## <a name="sweden-physical-addresses"></a>Adresy fizyczne Szwecji
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Szwecji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -17116,10 +17251,10 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze
 
 Średni
 
-
 ## <a name="sweden-tax-identification-number"></a>Szwedzki numer identyfikacji podatkowej
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -17148,11 +17283,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_sweden_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_sweden_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_sweden_eu_tax_file_number`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_sweden_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_sweden_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 
 ```xml
       <!-- Sweden Tax Identification Number -->
@@ -17199,7 +17336,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nie cyny
 - Tin #
 
-
 ## <a name="swift-code"></a>Kod SWIFT
 
 ### <a name="format"></a>Formacie
@@ -17209,6 +17345,7 @@ cztery litery, po których następuje od 5 do 31 liter lub cyfr
 ### <a name="pattern"></a>Wzór
 
 cztery litery, po których następuje od 5 do 31 liter lub cyfr:
+
 - czteroliterowy kod banku (bez uwzględniania wielkości liter)
 - opcjonalne miejsce
 - 4–28 liter lub cyfr (podstawowy numer konta bankowego (BBAN))
@@ -17222,6 +17359,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_swift znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_swift.
 
@@ -17259,7 +17397,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - le numéro de swift
 - swift numéro d'acheminement
 - le numéro BIC
-- # <a name="bic"></a>BIC
+- \# BIC
 - code identificateur de banque
 - SWIFTコード
 - SWIFT番号
@@ -17273,7 +17411,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 金融機関コード
 - 銀行コード
 
-
 ## <a name="switzerland-physical-addresses"></a>Adresy fizyczne Szwajcarii
 
 Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Szwajcarii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -17282,10 +17419,10 @@ Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze S
 
 Średni
 
-
 ## <a name="switzerland-ssn-ahv-number"></a>Szwajcaria SSN AHV number
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -17315,10 +17452,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_swiss_social_security_number_ahv znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keywords_swiss_social_security_number_ahv.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_swiss_social_security_number_ahv znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -17357,7 +17496,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - identyfikator identyfikacyjny personelu
 - numéro de sécurité sociale
 
-
 ## <a name="taiwan-national-identification-number"></a>Krajowy numer identyfikacyjny Tajwanu
 
 ### <a name="format"></a>Formacie
@@ -17367,6 +17505,7 @@ jedna litera (w języku angielskim), po której następuje dziewięć cyfr
 ### <a name="pattern"></a>Wzór
 
 jedna litera (w języku angielskim), po której następuje dziewięć cyfr:
+
 - jedna litera (w języku angielskim, bez uwzględniania wielkości liter)
 - cyfra "1" lub "2"
 - osiem cyfr
@@ -17378,11 +17517,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_taiwanese_national_id znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_taiwanese_national_id.
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_taiwanese_national_id znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -17418,7 +17559,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 簽名或蓋章
 - 簽章
 
-
 ## <a name="taiwan-passport-number"></a>Numer paszportu Tajwanu
 
 ### <a name="format"></a>Formacie
@@ -17428,10 +17568,12 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ### <a name="pattern"></a>Wzór
 biometryczny numer paszportu:
+
 - znak "3"
 - osiem cyfr
 
 nie biometryczny numer paszportu:
+
 - dziewięć cyfr
 
 ### <a name="checksum"></a>Suma kontrolna
@@ -17441,6 +17583,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_taiwan_passport znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_taiwan_passport.
 
@@ -17467,7 +17610,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 中華民國護照
 - Zhōnghuá Mínguó hùzhào
 
-
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Numer certyfikatu rezydenta Tajwanu (ARC/TARC)
 
 ### <a name="format"></a>Formacie
@@ -17477,6 +17619,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 10 liter i cyfr:
+
 - dwie litery (bez uwzględniania wielkości liter)
 - osiem cyfr
 
@@ -17487,6 +17630,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_taiwan_resident_certificate znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_taiwan_resident_certificate.
 
@@ -17516,7 +17660,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - 外僑居留證
 - 台灣地區居留證
 
-
 ## <a name="thai-population-identification-code"></a>Kod identyfikacji populacji tajskiej
 
 ### <a name="format"></a>Formacie
@@ -17526,6 +17669,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 13 cyfr:
+
 - pierwsza cyfra nie jest równa zero lub dziewięć
 - 12 cyfr
 
@@ -17536,10 +17680,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_Thai_Citizen_Id znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Thai_Citizen_Id.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_Thai_Citizen_Id znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -17583,10 +17729,12 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_Turkish_National_Id znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Turkish_National_Id.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_Turkish_National_Id znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -17611,7 +17759,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Vatandaşlık numarası
 - Vatandaşlık nie
 
-
 ## <a name="turkey-physical-addresses"></a>Adresy fizyczne Turcji
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Turcji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -17620,7 +17767,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 Średni
 
-
 ## <a name="types-of-medication"></a>Typy leków
 
 Ta uwolniona nazwana jednostka wykrywa nazwy leków, takie jak *insulina*.  Obsługuje tylko angielskie terminy. Jest on również zawarty w [wszystkich warunkach medycznych](#all-medical-terms-and-conditions) w pakiecie o nazwie entity SIT.
@@ -17628,7 +17774,6 @@ Ta uwolniona nazwana jednostka wykrywa nazwy leków, takie jak *insulina*.  Obs�
 ### <a name="confidence-level"></a>Poziom ufności
 
 High (Wysoki)
-
 
 ## <a name="uk-drivers-license-number"></a>WIELKIEJ BRYTANII. numer prawa jazdy
 
@@ -17639,6 +17784,7 @@ Kombinacja 18 liter i cyfr w określonym formacie
 ### <a name="pattern"></a>Wzór
 
 18 liter i cyfr:
+
 - Pięć liter (bez uwzględniania wielkości liter) lub cyfra "9" zamiast litery.
 - Jedna cyfra.
 - Pięć cyfr w formacie daty MMDDY dla daty urodzenia. Siódmy znak jest zwiększany o 50, jeśli kierowca jest kobietą; na przykład od 51 do 62 zamiast od 01 do 12.
@@ -17652,11 +17798,13 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_uk_drivers_license` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_eu_driver's_license_number`
 - Suma kontrolna przechodzi.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja `Func_uk_drivers_license` znajduje zawartość zgodną ze wzorcem.
 - Suma kontrolna przechodzi.
 
@@ -17774,7 +17922,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - prawa jazdy #
 - prawo jazdy #
 - prawa jazdy #
-- Prawa jazdy 
+- Prawa jazdy
 - Prawo jazdy
 - dlno #
 - driv lic
@@ -17796,7 +17944,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - dlno
 - Numer dl
 
-
 ## <a name="uk-electoral-roll-number"></a>WIELKIEJ BRYTANII. numer listy wyborczej
 
 ### <a name="format"></a>Formacie
@@ -17814,6 +17961,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_uk_electoral znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_uk_electoral.
 
@@ -17838,7 +17986,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - rejestr wyborców
 - spis wyborców
 
-
 ## <a name="uk-national-health-service-number"></a>WIELKIEJ BRYTANII. numer krajowej służby zdrowia
 
 ### <a name="format"></a>Formacie
@@ -17848,6 +17995,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 ### <a name="pattern"></a>Wzór
 
 10–17 cyfr:
+
 - 3 lub 10 cyfr
 - spację
 - trzy cyfry
@@ -17861,6 +18009,7 @@ Tak
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_uk_nhs_number znajduje zawartość zgodną ze wzorcem.
 - Jedno z następujących elementów jest prawdziwe:
     - Znaleziono słowo kluczowe z Keyword_uk_nhs_number.
@@ -17906,7 +18055,6 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 - Data urodzenia
 - Data urodzenia
 
-
 ## <a name="uk-national-insurance-number-nino"></a>WIELKIEJ BRYTANII. krajowy numer ubezpieczenia (NINO)
 
 Ta jednostka typu informacji poufnych jest uwzględniana w typie informacji poufnych krajowego numeru identyfikacyjnego UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
@@ -17942,10 +18090,12 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_uk_nino znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_uk_nino.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_uk_nino znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -17985,7 +18135,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nationalinsurance #
 - nationalinsurancenumber
 
-
 ## <a name="uk-physical-addresses"></a>WIELKIEJ BRYTANII. adresy fizyczne
 
 Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Zjednoczonej Brytanii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -17994,11 +18143,10 @@ Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Zj
 
 Średni
 
-
-
 ## <a name="uk-unique-taxpayer-reference-number"></a>WIELKIEJ BRYTANII. Unikatowy numer referencyjny podatnika
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -18008,7 +18156,6 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 ### <a name="format"></a>Formacie
 
 10 cyfr bez spacji i ograniczników
-
 
 ### <a name="pattern"></a>Wzór
 
@@ -18021,7 +18168,8 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
-- Funkcja  `Func_uk_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
+
+- Funkcja `Func_uk_eu_tax_file_number` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keywords_uk_eu_tax_file_number`
 
 ```xml
@@ -18056,7 +18204,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nie cyny
 - Tin #
 
-
 ## <a name="us-bank-account-number"></a>Numer konta bankowego w Stanach Zjednoczonych
 
 ### <a name="format"></a>Formacie
@@ -18074,6 +18221,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Wyrażenie regularne Regex_usa_bank_account_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_usa_Bank_Account.
 
@@ -18119,7 +18267,6 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - Numer akcesu debetowego
 - Numer konta debetowego
 
-
 ## <a name="us-drivers-license-number"></a>Numer prawa jazdy w Stanach Zjednoczonych
 
 ### <a name="format"></a>Formacie
@@ -18129,6 +18276,7 @@ Zależy od stanu
 ### <a name="pattern"></a>Wzór
 
 zależy od stanu — na przykład Nowy Jork:
+
 - dziewięć cyfr sformatowanych jak ddd ddd ddd będzie zgodne.
 - dziewięć cyfr, takich jak ddddddddd, nie będzie zgodne.
 
@@ -18139,11 +18287,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_new_york_drivers_license_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_[state_name]_drivers_license_name.
 - Znaleziono słowo kluczowe z Keyword_us_drivers_license.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_new_york_drivers_license_number znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_[state_name]_drivers_license_name.
 - Znaleziono słowo kluczowe z Keyword_us_drivers_license_abbreviations.
@@ -18267,12 +18417,10 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - karta identyfikacyjna #
 - karty identyfikacyjne #
 
-
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
 - skrót stanu (na przykład "NY")
 - nazwa stanu (na przykład "Nowy Jork")
-
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>Numer identyfikacyjny indywidualnego podatnika w USA (ITIN)
 
@@ -18283,6 +18431,7 @@ dziewięć cyfr rozpoczynających się od cyfry "9" i zawierających znak "7" lu
 ### <a name="pattern"></a>Wzór
 
 Sformatowany:
+
 - cyfra "9"
 - dwie cyfry
 - spacja lub kreska
@@ -18292,6 +18441,7 @@ Sformatowany:
 - cztery cyfry
 
 Niesformatowany:
+
 - cyfra "9"
 - dwie cyfry
 - a "7" lub "8"
@@ -18304,14 +18454,17 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_formatted_itin znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_itin.
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_unformatted_itin znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_itin.
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja Func_formatted_itin lub Func_unformatted_itin znajduje zawartość zgodną ze wzorcem.
 
 ```xml
@@ -18351,7 +18504,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - taxid
 - indywidualny podatnik
 
-
 ## <a name="us-physical-addresses"></a>Adresy fizyczne w Stanach Zjednoczonych
 
 Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Stanów Zjednoczonych. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
@@ -18359,7 +18511,6 @@ Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze
 ### <a name="confidence-level"></a>Poziom ufności
 
 Średni
-
 
 ## <a name="us-social-security-number-ssn"></a>Numer ubezpieczenia społecznego (SSN)
 
@@ -18373,6 +18524,7 @@ dziewięć cyfr, które mogą mieć sformatowany lub niesformatowany wzorzec
 ### <a name="pattern"></a>Wzór
 
 cztery funkcje poszukają sieci SSN w czterech różnych wzorcach:
+
 - Func_ssn znajduje nazwy SSN z silnym formatowaniem sprzed 2011 r., które są sformatowane z kreskami lub spacjami (ddd-dd-dddd OR ddd dddd)
 - Func_unformatted_ssn znajduje sieci SSN z silnym formatowaniem sprzed 2011 r., które nie są sformatowane jako dziewięć kolejnych cyfr (ddddddddd)
 - Func_randomized_formatted_ssn znajduje nazwy SSN po 2011 r., które są sformatowane kreskami lub spacjami (ddd-dd-dddd OR ddd dddd)
@@ -18385,17 +18537,19 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja `Func_ssn` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_ssn`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_unformatted_ssn" znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_ssn`
 
 Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeśli znajdują się w pobliżu 300 znaków:
+
 - Funkcja `Func_randomized_formatted_ssn` lub `Func_randomized_unformatted_ssn` znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe.`Keyword_ssn`
-
 
 ```xml
 <!-- U.S. Social Security Number (SSN) -->
@@ -18436,7 +18590,6 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 - SS #
 - SSID
 
-
 ## <a name="usuk-passport-number"></a>Stany Zjednoczone/Zjednoczone Zjednoczone numer paszportu
 
 ### <a name="format"></a>Formacie
@@ -18455,11 +18608,13 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_usa_uk_passport znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` .
 - Znaleziono słowo kluczowe z `Keywords_eu_passport_date`
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Funkcja Func_usa_uk_passport znajduje zawartość zgodną ze wzorcem.
 - Odnaleziono słowo kluczowe lub `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` .
 
@@ -18504,10 +18659,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - brytyjski paszport
 - brytyjski paszport
 
-
 ## <a name="ukraine-passport-domestic"></a>Paszport ukrainy krajowy
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -18529,6 +18684,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Rejestr Regex_Ukraine_Passport_Domestic znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Ukraine_Passport_Domestic.
 
@@ -18553,10 +18709,10 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - номер паспорта
 - персональний
 
-
 ## <a name="ukraine-passport-international"></a>Ukraina paszport międzynarodowy
 
 Ten typ informacji poufnych jest dostępny tylko do użycia w:
+
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
 - zarządzanie informacjami
@@ -18570,6 +18726,7 @@ ośmioznakowy wzorzec alfanumeryczny
 ### <a name="pattern"></a>Wzór
 
 ośmioznakowy wzorzec alfanumeryczny:
+
 - dwie litery lub cyfry
 - sześć cyfr
 
@@ -18580,6 +18737,7 @@ Nie
 ### <a name="definition"></a>Definicja
 
 Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
+
 - Rejestr Regex_Ukraine_Passport_International znajduje zawartość zgodną ze wzorcem.
 - Znaleziono słowo kluczowe z Keyword_Ukraine_Passport_International.
 
@@ -18602,5 +18760,3 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 - nr paszportu
 - паспорт України
 - номер паспорта
-
-

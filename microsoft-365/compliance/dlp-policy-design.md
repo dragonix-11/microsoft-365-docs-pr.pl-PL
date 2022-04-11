@@ -14,96 +14,95 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Dowiedz się, jak zaprojektować zasady ochrony przed utratą danych (DLP, Data Loss Prevention)
-ms.openlocfilehash: 14e9fbb5efd20ddcf3d0a47da41a0cce89c88cee
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Dowiedz się, jak zaprojektować zasady ochrony przed utratą danych (DLP)
+ms.openlocfilehash: af09197784607dd6c8f8d939f4d091b365d51799
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526322"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760608"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>Projektowanie zasad ochrony przed utratą danych
 
-Utworzenie zasad przed wdrożeniem pozwoli uzyskać odpowiednie wyniki szybciej i z mniejszą liczbą niezamierzonych problemów niż tworzenie i następnie dostosowywanie tylko według wersji próbnej i błędów. Dokumentowanie projektów zasad pomoże również w komunikacji, przeglądaniu zasad, rozwiązywaniu problemów i dalszym dostosowywaniu.
+Poświęcenie czasu na zaprojektowanie zasad przed jego zaimplementowaniem spowoduje szybsze uzyskanie żądanych wyników i zmniejszenie liczby niezamierzonych problemów niż utworzenie ich, a następnie dostrajanie tylko przez próbę i błąd. Udokumentowanie projektów zasad pomoże Ci również w komunikacji, przeglądach zasad, rozwiązywaniu problemów i dalszym dostrajaniu.
 
 <!--, but excessive tuning to get the intended results can be time consuming.
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-Jeśli nie masz wiedzy Microsoft 365 zasad DLP, warto przejść do tych artykułów przed rozpoczęciem projektowania zasad:
+Jeśli dopiero zaczynasz Microsoft 365 DLP, warto zapoznać się z tymi artykułami przed rozpoczęciem projektowania zasad:
 
-- [Informacje na temat ochrony przed utratą](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) danych — ten artykuł zawiera wprowadzenie do dyscypliny ochrony przed utratą danych i wdrożenia ochrony przed utratą danych przez firmę Microsoft
-- [Planowanie ochrony przed utratą danych (DLP, data loss prevention)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) — pracując w tym artykule, możesz:
-    - [Identyfikowanie uczestników projektu](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-    - [Opis kategorii informacji poufnych, które mają być chronine](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-    - [Ustawianie celów i strategii](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-- [Informacje dotyczące zasad ochrony](dlp-policy-reference.md#data-loss-prevention-policy-reference) przed utratą danych — w tym artykule opisano wszystkie składniki zasad DLP oraz wpływ każdej z nich na ich zachowanie
+- [Dowiedz się więcej o zapobieganiu utracie danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) — w tym artykule przedstawiono dziedzinę zapobiegania utracie danych i implementację DLP firmy Microsoft
+- [Planowanie zapobiegania utracie danych (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) — korzystając z tego artykułu, wykonasz następujące czynności:
+  - [Identyfikowanie uczestników projektu](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+  - [Opis kategorii informacji poufnych w celu ochrony](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+  - [Ustawianie celów i strategii](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+- [Dokumentacja zasad ochrony przed utratą danych](dlp-policy-reference.md#data-loss-prevention-policy-reference) — w tym artykule przedstawiono wszystkie składniki zasad DLP i sposób, w jaki każdy z nich wpływa na zachowanie zasad
 
-## <a name="policy-design-overview"></a>Omówienie projektowania zasad
+## <a name="policy-design-overview"></a>Omówienie projektu zasad
 
-[Zaprojektowanie zasad](#policy-design-process) ma na celu przede wszystkim jasne zdefiniowanie potrzeb biznesowych, dokumentowanie ich w deklaracji celów zasad, [a](#define-intent-for-the-policy) następnie mapowanie tych potrzeb [na konfigurację zasad](#map-business-needs-to-policy-configuration). Niektóre z decyzji dotyczących projektu zasad będą podejmowane na etapie planowania. 
+[Projektowanie zasad](#policy-design-process) polega głównie na jasnym [zdefiniowaniu potrzeb biznesowych, udokumentowaniu ich w instrukcji intencji zasad,](#define-intent-for-the-policy) a następnie [mapowaniu tych potrzeb na konfigurację zasad](#map-business-needs-to-policy-configuration). Użyjesz decyzji podjętych w fazie planowania, aby poinformować o niektórych decyzjach dotyczących projektowania zasad.
 
-### <a name="define-intent-for-the-policy"></a>Definiowanie intencji zasad 
+### <a name="define-intent-for-the-policy"></a>Definiowanie intencji dla zasad
 
-Powinno być możliwe podsumowanie celów biznesowych dla każdej zasady w jednej instrukcji. Opracowanie tej instrukcji będzie prowadzić konwersacje w organizacji, a gdy zostanie całkowicie uregulowana, ta instrukcja bezpośrednio łączy zasady z celem biznesowym i zawiera przewodnik dotyczący projektowania zasad. Czynności opisane w artykule Planowanie na rzecz ochrony przed [utratą danych (DLP)](dlp-overview-plan-for-dlp.md#overview-of-planning-process) pomogą Ci w rozpoczynaniu pracy nad oświadczeniem o przeznacie zasad.  
+Powinno być możliwe podsumowanie intencji biznesowych dla wszystkich zasad w jednej instrukcji. Opracowanie tej instrukcji będzie prowadzić konwersacje w organizacji, a po pełnym wyjaśnieniu ta instrukcja bezpośrednio łączy zasady z celem biznesowym i udostępnia plan projektowania zasad. Kroki opisane w artykule [Planowanie zapobiegania utracie danych (DLP)](dlp-overview-plan-for-dlp.md#overview-of-planning-process) pomogą Ci rozpocząć pracę z instrukcją intencji zasad.
 
-Pamiętaj w [przeglądzie konfiguracji zasad DLP,](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) że wszystkie zasady DLP wymagają:
+Pamiętaj z [przeglądu konfiguracji zasad DLP](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) , że wszystkie zasady DLP wymagają:
 
-- Wybierz, co chcesz monitorować
-- Wybierz, gdzie chcesz monitorować
-- Wybieranie warunków, które muszą być zgodne z zasadami, które mają zostać zastosowane do elementu
-- Wybieranie akcji do podjęcia po spełnionej warunki zasad 
+- Wybieranie tego, co chcesz monitorować
+- Wybieranie miejsca, które chcesz monitorować
+- Wybierz warunki, które muszą być dopasowane, aby zasady miały być stosowane do elementu
+- Wybierz akcję do wykonania po spełnieniu warunków zasad
 
-Oto przykład fikcyjnej pierwszej wersji roboczej deklaracji dotyczącej intencji, która zawiera odpowiedzi na wszystkie cztery pytania: 
+Oto przykładowy fikcyjny pierwszy projekt instrukcji intencji, która zawiera odpowiedzi na wszystkie cztery pytania:
 
-*"Jesteśmy organizacją w Stanach Zjednoczonych i musimy wykrywać dokumenty firmy Office zawierające informacje poufnej opieki zdrowotnej objęte ustawą HIPPA, które są przechowywane w programie OneDrive/SharePoint, i chronić się przed udostępnianiem tych informacji w wiadomościach na czacie i w kanałach firmy Teams oraz uniemożliwić wszystkim użytkownikom udostępnianie ich nieautoryzowanym osobom trzecim".* 
+*"Jesteśmy organizacją z siedzibą w USA i musimy wykrywać Office dokumentów zawierających poufne informacje o służbie zdrowia objęte hippa, które są przechowywane w OneDrive/SharePoint i chronić przed informacjami udostępnianymi w Teams wiadomościach czatu i kanału oraz ograniczyć wszystkim możliwość udostępniania ich nieautoryzowanym osobom trzecim".*
 
-Podczas opracowywania projektu zasad prawdopodobnie zmodyfikuje się i rozszerzy instrukcja.
+Podczas opracowywania projektu zasad prawdopodobnie zmodyfikujesz i rozszerzysz instrukcję.
 
-### <a name="map-business-needs-to-policy-configuration"></a>Mapowanie firmy na potrzeby konfiguracji zasad
+### <a name="map-business-needs-to-policy-configuration"></a>Mapowanie potrzeb biznesowych na konfigurację zasad
 
-Rozbijmy przykładową instrukcje roboczą i zamapujmy ją na punkty konfiguracji zasad DLP.
+Przeprowadźmy podział przykładowej instrukcji roboczej i zamapujmy ją na punkty konfiguracji zasad DLP.
 
-|Instrukcja  |Odpowiedź na pytanie dotyczące konfiguracji i mapowanie konfiguracji  |
+|Instrukcja  |Udzielono odpowiedzi na pytanie dotyczące konfiguracji i mapowanie konfiguracji  |
 |---------|---------|
-| "Jesteśmy organizacją w Stanach Zjednoczonych i musimy wykrywać dokumenty Office, które zawierają informacje poufnej opieki zdrowotnej objęte ustawą HIPPA...  |- **Co należy monitorować**: Office, użyj szablonu [USTAWY HIPAA (Health Insurance Act)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) Stanów Zjednoczonych </br>- Warunki **dopasowania: (** wstępnie skonfigurowane, ale edytowalne) — element zawiera numer Amerykańskiej Federacji Amerykańskiej i Agencji Wymuszania Dokumentów (DEA), klasyfikację międzynarodowa klasyfikacji jeśli jednakowy (ICD-9-CM), klasyfikację międzynarodowa procentów od osób (ICD-10-CM), a zawartość jest udostępniana osobom spoza mojej organizacji  </br> — dyskuje konwersacje w celu objaśniania progu wyzwalania [wykrywania, takiego](sensitive-information-type-learn-about.md#more-on-confidence-levels) jak poziomy ufności [, i liczby](dlp-policy-reference.md#content-contains) wystąpień (nazywanych wyciekami).|
-|... które są przechowywane w czacie OneDrive/SharePoint i chronią przed Teams wiadomościami na czacie i w kanałach... |- **Gdzie monitorować**: [Określanie](dlp-policy-reference.md#locations) zakresu lokalizacji przez OneDrive i SharePoint czatów i Teams lub grup dystrybucyjnych. |
-|... i uniemożliwić wszystkim użytkownikom udostępnianie tych elementów nieautoryzowanym osobom trzecim".  | - **Akcje do podjęcia**: [Należy dodać pozycję](dlp-policy-reference.md#actions) *Ogranicz dostęp lub zaszyfrować zawartość w Microsoft 365 lokalizacjach* </br> - dyskutuje o tym, jakie działania należy podjąć po wyzwoleniu zasady, w tym działania zabezpieczające, takie jak ograniczenia udostępniania, akcje informacyjne, takie jak powiadomienia i alerty, oraz akcje uprawnienia użytkownika, takie jak zezwalanie na zastępowanie akcji blokowania przez użytkownika |
+| "Jesteśmy organizacją z siedzibą w USA i musimy wykryć Office dokumenty zawierające poufne informacje o służbie zdrowia objęte hippa ...  |- **Co monitorować**: Office dokumentacji, użyj szablonu [amerykańskiej ustawy o ubezpieczeniach zdrowotnych (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **Warunki dopasowania**: (wstępnie skonfigurowane, ale edytowalne) — element zawiera numer US SSN i Drug Enforcement Agency (DEA), Międzynarodową Klasyfikację Chorób (ICD-9-CM), Międzynarodową Klasyfikację Chorób (ICD-10-CM), zawartość jest udostępniana osobom spoza mojej organizacji  </br> — prowadzi konwersacje w celu wyjaśnienia progu wyzwalania wykrywania, takiego jak [poziomy ufności](sensitive-information-type-learn-about.md#more-on-confidence-levels) i [liczba wystąpień](dlp-policy-reference.md#content-contains) (nazywana tolerancją przecieków).|
+|... są przechowywane w OneDrive/SharePoint i chronią przed udostępnianiem tych informacji Teams wiadomościach czatu i kanału... |- **Gdzie monitorować**: [określanie zakresu lokalizacji przez uwzględnienie](dlp-policy-reference.md#locations) lub wykluczenie witryn OneDrive i SharePoint oraz Teams kont czatów/kanałów lub grup dystrybucyjnych. |
+|... i ograniczyć wszystkim możliwość udostępniania tych elementów nieautoryzowanym osobom trzecim".  | - **Akcje do wykonania**: [dodaj](dlp-policy-reference.md#actions) *pozycję Ogranicz dostęp lub zaszyfruj zawartość w Microsoft 365 lokalizacjach* </br> — prowadzi konwersację na temat działań, które należy wykonać po wyzwoleniu zasad, w tym działań ochronnych, takich jak ograniczenia udostępniania, akcje uświadamiające, takie jak powiadomienia i alerty, oraz akcje upodmiotowienia użytkowników, takie jak zezwalanie na zastępowanie akcji blokującej przez użytkownika |
 
-W tym przykładzie nie obejmuje wszystkich punktów konfiguracji zasad DLP, ale trzeba je rozszerzyć. Jednak podczas opracowywania własnych instrukcje dotyczące zasad DLP powinno być to odpowiednie dla Ciebie.
+Ten przykład nie obejmuje wszystkich punktów konfiguracji zasad DLP. Należy go rozszerzyć. Ale powinno to skłonić Cię do myślenia we właściwym kierunku podczas opracowywania własnych instrukcji intencji zasad DLP.
 
 > [!IMPORTANT]
-> Należy pamiętać, że wybierane lokalizacje mają wpływ na to, czy można używać typów informacji poufnych, etykiet wrażliwości i etykiet przechowywania, a także dostępnych akcji. Zobacz Informacje [dotyczące zasad ochrony przed utratą danych](dlp-policy-reference.md#data-loss-prevention-policy-reference).
+> Należy pamiętać, że wybrane lokalizacje mają wpływ na to, czy można używać typów informacji poufnych, etykiet poufności i etykiet przechowywania, a także dostępnych akcji. Zobacz [Dokumentacja zasad ochrony przed utratą danych](dlp-policy-reference.md#data-loss-prevention-policy-reference).
 
 ## <a name="policy-design-process"></a>Proces projektowania zasad
 
-1. Wykonaj następujące czynności:
-    1. [Planowanie ochrony przed utratą danych (DLP, data loss prevention)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) — pracując w tym artykule, możesz:
-        1. [Identyfikowanie uczestników projektu](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-        1. [Opis kategorii informacji poufnych, które mają być chronine](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-        1. [Ustawianie celów i strategii](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-        1. [Definiowanie planu wdrażania zasad](dlp-overview-plan-for-dlp.md#policy-deployment)
+1. Wykonaj kroki opisane w [temacie Plan for data loss prevention (DLP) (Planowanie zapobiegania utracie danych)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) — korzystając z tego artykułu, wykonasz następujące czynności:
+   1. [Identyfikowanie uczestników projektu](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+   1. [Opis kategorii informacji poufnych w celu ochrony](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+   1. [Ustawianie celów i strategii](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+   1. [Definiowanie planu wdrażania zasad](dlp-overview-plan-for-dlp.md#policy-deployment)
 
-1. Zapoznaj się z odwołaniami [](dlp-policy-reference.md#data-loss-prevention-policy-reference) do zasad ochrony przed utratą danych, aby zrozumieć wszystkie składniki zasad DLP i sposób, w jaki każda z nich wpływa na ich działanie.
+2. Zapoznaj się z [dokumentacją zasad ochrony przed utratą danych](dlp-policy-reference.md#data-loss-prevention-policy-reference) , aby poznać wszystkie składniki zasad DLP i sposób, w jaki każdy z nich wpływa na zachowanie zasad.
 
-1. Zapoznaj się z [szablonami zasad DLP](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
+3. Zapoznaj się z informacjami [o tym, co zawierają szablony zasad DLP](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
 
-1. Opracuj oświadczenie o przeznaczyniu zasad z kluczowymi uczestnikami projektu. Skorzystaj z przykładu we wcześniejszej wersji tego artykułu.
+4. Opracuj instrukcję intencji zasad z kluczowymi uczestnikami projektu. Zapoznaj się z przykładem we wcześniejszej części tego artykułu.
 
-1. Określ, jak te zasady są dopasowane do ogólnej strategii zasad DLP.
+5. Określ, w jaki sposób te zasady pasują do ogólnej strategii zasad DLP.
 
-> [!IMPORTANT]
-> Po utworzeniu zasad nie można ich zmienić. Jeśli musisz zmienić nazwę zasad, musisz utworzyć nową o odpowiedniej nazwie i wycofać starą. Zdecyduj więc, jaka struktura nazewnictwa będzie teraz używać wszystkich Twoich zasad. 
+   > [!IMPORTANT]
+   > Nie można zmienić nazw zasad po ich utworzeniu. Jeśli musisz zmienić nazwę zasad, musisz utworzyć nową z żądaną nazwą i wycofać starą. Dlatego zdecyduj o strukturze nazewnictwa, która będzie teraz używana przez wszystkie zasady.
 
-6. Zamapuj elementy w instrukcji dotyczącej zasad na opcje konfiguracji.
+6. Zamapuj elementy w instrukcji intencji zasad na opcje konfiguracji.
 
-7. Zdecyduj, od którego szablonu zasad chcesz zacząć, wstępnie zdefiniowanego lub niestandardowego.
+7. Zdecyduj, od którego szablonu zasad zaczniesz, wstępnie zdefiniowany lub niestandardowy.
 
-8. Przed utworzeniem zasad przejdź przez szablon i zbierz wszystkie wymagane informacje. Prawdopodobnie znajdziesz w nim pewne punkty konfiguracyjne, które nie zostały uwzględnione w twoich zamiarach zasad. Tak jest ok. Wróć do uczestników projektu, aby uściślić wymagania dotyczące brakujących punktów konfiguracji. 
+8. Zapoznaj się z szablonem i zmontuj wszystkie wymagane informacje przed utworzeniem zasad. Prawdopodobnie okaże się, że istnieją pewne punkty konfiguracji, które nie są objęte instrukcją intencji zasad. Tak jest ok. Wstecz do uczestników projektu, aby spełnić wymagania dotyczące brakujących punktów konfiguracji.
 
-9. Udokumentuj konfigurację wszystkich ustawień zasad i przejrzyj je wraz z uczestnikami projektu. Możesz ponownie użyć mapowania deklaracji deklaracji zasad na punkty konfiguracji, które są obecnie w pełni naładowane.
+9. Udokumentuj konfigurację wszystkich ustawień zasad i przejrzyj je u uczestników projektu. Możesz ponownie użyć mapowania instrukcji intencji zasad na punkty konfiguracji, które są teraz w pełni uzupełnione.
 
-10. [Utwórz projekt](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) zasad i wróć do [planu wdrażania](dlp-overview-plan-for-dlp.md#policy-deployment) zasad.
+10. [Utwórz wersje robocze](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) zasad i zapoznaj się z planem [wdrażania zasad](dlp-overview-plan-for-dlp.md#policy-deployment) .
 
 <!--## Policy design examples
 
@@ -134,11 +133,11 @@ W tym przykładzie nie obejmuje wszystkich punktów konfiguracji zasad DLP, ale 
 
 
 - whether the protective actions you need are supported throught the associated location or if you need to compromise to extend coverage
-    - also usefule for identifying the most restrictive actions available 
+    - also usefule for identifying the most restrictive actions available
     - (we shouldn't mention here that the "content contains" condition is the primary staple for a DLP policy and should be utilized as a starting point for policy creation. The other workload-specific conditions can be ustilized as an extended or granular control of company's DLP policy. Useful for when "too much" data is being restricted and known sensitive data typically falls under certain conditions.)
     - (We can mention here that their quantitative goal such as "protect X% of data across all locations while maintaining x productivity" can be monitored throught alerts or reports. If protection is too high of working against their established goals, they can come back to policy and tweak their conditions/actions)
-- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP. 
-- 
+- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP.
+-
 5. At this stage you should asses how you should start this policy. ***LINK OUT TO DEPLOYING A POLICY COVERED IN THE PLANNING TOPIC TOO***
     - Test: your company is very large, conservative or the actions established are pretty restrictive
     - Test w/ notifications: same as above, but you get to test out investigation cadence or volume
@@ -165,11 +164,10 @@ Here are some examples of more detailed policy intent statement to configuration
 
 -->
 
-
 ## <a name="see-also"></a>Zobacz też
 
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
-- [Planowanie ochrony przed utratą danych (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [Informacje dotyczące zasad ochrony przed utratą danych](dlp-policy-reference.md#data-loss-prevention-policy-reference)
-- [Porady dotyczące zasad ochrony przed utratą danych](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
-- [Tworzenie, testowanie i dostosowywanie zasad DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [Planowanie zapobiegania utracie danych (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
+- [Dokumentacja zasad ochrony przed utratą danych](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+- [Dokumentacja dotycząca porad dotyczących zasad ochrony przed utratą danych](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
+- [Twórz, testuj i dostrajaj zasady DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)

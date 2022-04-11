@@ -14,92 +14,92 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: Z tego artykułu dowiesz się, jak działa szyfrowanie usługi z kluczem klienta w Microsoft 365.
-ms.openlocfilehash: 14760bfcb26fa1bf45c54661cbb6fc189bad7d93
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+description: W tym artykule dowiesz się, jak szyfrowanie usługi działa z kluczem klienta w Microsoft 365.
+ms.openlocfilehash: 65098994a6883fdadd3106b74b25a2251239fb3a
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "63015755"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761092"
 ---
 # <a name="service-encryption-with-customer-key"></a>Szyfrowanie usługi przy użyciu klucza klienta
 
-Usługa Microsoft 365 udostępnia szyfrowanie bazowe na poziomie głośności za pośrednictwem funkcji BitLocker i Menedżera kluczy rozłożonych (DKM). Microsoft 365 udostępnia dodatkową warstwę szyfrowania dla zawartości. Ta zawartość obejmuje dane z usług Exchange Online, Skype dla firm, SharePoint Online, OneDrive dla Firm i Microsoft Teams.
+Microsoft 365 zapewnia podstawowe szyfrowanie na poziomie woluminu włączone za pośrednictwem funkcji BitLocker i rozproszonego menedżera kluczy (DKM). Microsoft 365 oferuje dodatkową warstwę szyfrowania zawartości. Ta zawartość obejmuje dane z Exchange Online, Skype dla firm, SharePoint Online, OneDrive dla Firm i Microsoft Teams.
 
-## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Jak współpracują ze sobą szyfrowanie usług, funkcję BitLocker i klucz klienta
+## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Jak szyfrowanie usługi, funkcja BitLocker i klucz klienta współpracują ze sobą
 
-Twoje dane są zawsze szyfrowane w miejscu w Microsoft 365 za pomocą funkcji BitLocker i DKM. Aby uzyskać więcej informacji, zobacz [Jak Exchange Online zabezpiecza sekrety poczty e-mail](exchange-online-secures-email-secrets.md). Klucz klienta zapewnia dodatkową ochronę przed wyświetlaniem danych przez nieautoryzowane systemy lub pracowników oraz uzupełnia szyfrowanie dysków funkcją BitLocker w centrach danych firmy Microsoft. Szyfrowanie usługi nie ma na celu uniemożliwiania pracownikom firmy Microsoft uzyskiwania dostępu do Twoich danych. Zamiast tego klucz klienta ułatwia spełnienie zobowiązań prawnych lub dotyczących zgodności z przepisami w celu kontrolowania kluczy głównych. Jawnie autoryzujesz usługi Microsoft 365 do używania Twoich kluczy szyfrowania w celu zapewnienia usług w chmurze o dodatkowych wartościach, takich jak zbierania elektronicznych materiałów dowodowych, ochrony przed złośliwym oprogramowaniem, ochrona przed spamem, indeksowanie wyszukiwania itp.
+Dane są zawsze szyfrowane w stanie spoczynku w usłudze Microsoft 365 za pomocą funkcji BitLocker i DKM. Aby uzyskać więcej informacji, zobacz [Jak Exchange Online zabezpiecza wpisy tajne poczty e-mail](exchange-online-secures-email-secrets.md). Klucz klienta zapewnia dodatkową ochronę przed wyświetlaniem danych przez nieautoryzowane systemy lub personel oraz uzupełnia szyfrowanie dysków funkcją BitLocker w centrach danych firmy Microsoft. Szyfrowanie usługi nie ma na celu uniemożliwienia pracownikom firmy Microsoft uzyskiwania dostępu do danych. Zamiast tego klucz klienta pomaga spełnić wymagania prawne lub zgodności dotyczące kontrolowania kluczy głównych. Jawnie autoryzujesz usługi Microsoft 365 do używania kluczy szyfrowania w celu dostarczania usług w chmurze o wartości dodanej, takich jak elektroniczne wykrywanie, ochrona przed złośliwym oprogramowaniem, ochrona przed spamem, indeksowanie wyszukiwania itd.
 
-Klucz klienta jest zbudowany na podstawie szyfrowania usługi i umożliwia dostarczenie oraz kontrolowanie kluczy szyfrowania. Microsoft 365 następnie używa tych kluczy do szyfrowania danych w spoczynku zgodnie z opisem w Warunkach usług [online (OST).](https://www.microsoft.com/licensing/product-licensing/products.aspx) Klucz klienta ułatwia spełnianie wymagań dotyczących zgodności, ponieważ kontrolujesz klucze szyfrowania używane Microsoft 365 do szyfrowania i odszyfrowywania danych.
+Klucz klienta jest oparty na szyfrowaniu usługi i umożliwia udostępnianie i kontrolowanie kluczy szyfrowania. Microsoft 365 następnie używa tych kluczy do szyfrowania danych magazynowanych zgodnie z opisem w [Warunkach usług online (OST).](https://www.microsoft.com/licensing/product-licensing/products.aspx) Klucz klienta pomaga spełnić wymagania dotyczące zgodności, ponieważ kontrolujesz klucze szyfrowania, które Microsoft 365 używane do szyfrowania i odszyfrowywania danych.
   
-Klucz klienta zwiększa możliwość spełniania przez Twoją organizację wymagań dotyczących zgodności, które określają kluczowe układy dotyczące kluczowych rozwiązań usługodawca. Dzięki kluczowi klienta dostarczasz i kontrolujesz główne klucze szyfrowania dla Microsoft 365 danych w spoczynku na poziomie aplikacji. W wyniku tego będziesz sprawować kontrolę nad kluczami swojej organizacji.
+Klucz klienta zwiększa zdolność organizacji do spełnienia wymagań dotyczących zgodności, które określają kluczowe rozwiązania z dostawcą usług w chmurze. Klucz klienta umożliwia udostępnianie i kontrolowanie głównych kluczy szyfrowania dla Microsoft 365 danych magazynowanych na poziomie aplikacji. W związku z tym sprawujesz kontrolę nad kluczami organizacji.
 
 ## <a name="customer-key-with-hybrid-deployments"></a>Klucz klienta z wdrożeniami hybrydowymi
 
-Klucz klienta szyfruje dane tylko w chmurze. Klucz klienta nie działa w celu ochrony lokalnych skrzynek pocztowych i plików. Dane lokalne możesz zaszyfrować przy użyciu innej metody, takiej jak bitLocker.
+Klucz klienta szyfruje tylko dane magazynowane w chmurze. Klucz klienta nie działa w celu ochrony lokalnych skrzynek pocztowych i plików. Dane lokalne można zaszyfrować przy użyciu innej metody, takiej jak Funkcja BitLocker.
 
 ## <a name="about-data-encryption-policies"></a>Informacje o zasadach szyfrowania danych
 
-Zasady szyfrowania danych (DEP) określają hierarchię szyfrowania. Ta hierarchia jest używana przez usługę do szyfrowania danych przy użyciu każdego z kluczy, które zarządzasz, oraz klucza dostępności chronionego przez firmę Microsoft. Za pomocą poleceń cmdlet programu PowerShell można tworzyć skrypty DEPs, a następnie przypisywać je do szyfrowania danych aplikacji. Istnieją trzy typy źródeł danych obsługiwanych przez Microsoft 365 Klienta. Poszczególne typy zasad mają różne polecenia cmdlet i zapewniają zasięg dla innego typu danych. Można zdefiniować następujące zasady dezp:
+Zasady szyfrowania danych (DEP) definiują hierarchię szyfrowania. Ta hierarchia jest używana przez usługę do szyfrowania danych przy użyciu każdego zarządzanego klucza i klucza dostępności chronionego przez firmę Microsoft. Możesz tworzyć adresy DEPs przy użyciu poleceń cmdlet programu PowerShell, a następnie przypisywać te adresy DEPs do szyfrowania danych aplikacji. Istnieją trzy typy deps obsługiwane przez Microsoft 365 Klucz klienta, każdy typ zasad używa różnych poleceń cmdlet i zapewnia pokrycie dla innego typu danych. Adresy IP, które można zdefiniować, obejmują:
 
-**Funkcja DEP w przypadku Microsoft 365 obciążeniami pracą** Te dezpki szyfrują dane w wielu obciążeniach pracą usługi M365 dla wszystkich użytkowników w dzierżawie. Są to następujące obciążenia pracą:
+**Program DEP dla wielu obciążeń Microsoft 365** Te dostawcy USŁUG szyfrują dane w wielu obciążeniach M365 dla wszystkich użytkowników w ramach dzierżawy. Te obciążenia obejmują:
 
-- Teams wiadomości czatu (czaty 1:1, czaty grupowe, czaty spotkań i konwersacje na kanale)
-- Teams wiadomości multimedialne (obrazy, fragmenty kodu, wiadomości wideo, wiadomości audio, obrazy typu wiki)
-- Teams połączeń i spotkań przechowywane w Teams magazynu
-- Teams powiadomienia czatu
-- Teams sugestii czatu za pomocą Cortana
-- Teams o stanie
-- Informacje o użytkownikach i sygnałach dla Exchange Online
-- Exchange Online skrzynek pocztowych, które nie są jeszcze zaszyfrowane przez dezp skrzynek pocztowych
+- Teams wiadomości czatu (czaty 1:1, czaty grupowe, czaty na spotkania i rozmowy kanałowe)
+- Teams wiadomości multimedialnych (obrazy, fragmenty kodu, wiadomości wideo, wiadomości audio, obrazy typu wiki)
+- Teams nagrań rozmów i spotkań przechowywanych w magazynie Teams
+- Teams powiadomień czatu
+- Teams sugestie czatu Cortana
+- Teams komunikaty o stanie
+- Informacje o użytkowniku i sygnale dla Exchange Online
+- Exchange Online skrzynki pocztowe, które nie są jeszcze szyfrowane przez adresy DEPs skrzynki pocztowej
 - Microsoft Information Protection:
 
-  - Dokładne dane zgodne z danymi (EDM), w tym schematy plików danych, pakiety reguł i sosy użyte do skrótów danych poufnych. W przypadku usługi EDM i Microsoft Teams funkcja dep wielu obciążeń szyfruje nowe dane od czasu przypisania funkcji DEP do dzierżawy. Na Exchange Online klucz klienta szyfruje wszystkie istniejące i nowe dane.
+  - Dokładne dane są zgodne z danymi (EDM), w tym schematy plików danych, pakiety reguł i sole używane do wyznaczania wartości skrótu danych poufnych. W przypadku programu EDM i Microsoft Teams program DEP z wieloma obciążeniami szyfruje nowe dane od momentu przypisania programu DEP do dzierżawy. W przypadku Exchange Online klucz klienta szyfruje wszystkie istniejące i nowe dane.
 
-  - Konfiguracja etykiet dla etykiet wrażliwości
+  - Konfiguracja etykiet dla etykiet poufności
 
-Obsługa wielu obciążeń pracą nie szyfruje następujących typów danych. Zamiast Microsoft 365 tych danych są używane inne typy szyfrowania.
+Adresy IP z wieloma obciążeniami nie szyfruje następujących typów danych. Zamiast tego Microsoft 365 używa innych typów szyfrowania do ochrony tych danych.
 
 - SharePoint i OneDrive dla Firm danych.
-- Microsoft Teams, a niektóre Teams połączeń i spotkań zapisane w usługach OneDrive dla Firm i SharePoint Online są szyfrowane przy użyciu funkcji dep SharePoint Online.
-- Inne Microsoft 365, takie jak Yammer i Planner, które nie są obecnie obsługiwane przez klucz klienta.
-- Teams danych zdarzenia na żywo.
+- Microsoft Teams pliki i niektóre Teams nagrania połączeń i spotkań zapisane w usłudze OneDrive dla Firm i SharePoint Online są szyfrowane przy użyciu programu DEP usługi SharePoint Online.
+- Inne obciążenia Microsoft 365, takie jak Yammer i Planista, które nie są obecnie obsługiwane przez klucz klienta.
+- Teams danych zdarzeń na żywo.
 
-Możesz utworzyć wiele deps na dzierżawę, ale przypisywać tylko jeden dep jednocześnie. Po przypisaniu funkcji DEP szyfrowanie rozpoczyna się automatycznie, ale w zależności od rozmiaru dzierżawy zajmuje trochę czasu.
+Możesz utworzyć wiele adresów DEPs na dzierżawę, ale jednocześnie przypisać tylko jeden program DEP. Po przypisaniu programu DEP szyfrowanie rozpoczyna się automatycznie, ale ukończenie szyfrowania zajmuje trochę czasu w zależności od rozmiaru dzierżawy.
 
-**Deps for Exchange Online mailbox** dePs provide more precise control over individual mailboxes within Exchange Online. Za pomocą dezaktywowanych skrzynek pocztowych możesz szyfrować dane przechowywane w skrzynkach pocztowych EXO różnych typów, takich jak UserMailbox, MailUser, Group, PublicFolder i Shared mailboxes. Możesz mieć maksymalnie 50 aktywnych dezpów na dzierżawcę i przypisać je do poszczególnych skrzynek pocztowych. Możesz przypisać jedną dep do wielu skrzynek pocztowych.
+**Adresy DEPS dla Exchange Online skrzynek pocztowych Adresy DEPs skrzynki pocztowej** zapewniają precyzyjniejszą kontrolę nad poszczególnymi skrzynkami pocztowymi w ramach Exchange Online. Adresy DEPs skrzynki pocztowej umożliwiają szyfrowanie danych przechowywanych w skrzynkach pocztowych EXO różnych typów, takich jak UserMailbox, MailUser, Group, PublicFolder i Udostępnione skrzynki pocztowe. Możesz mieć do 50 aktywnych adresów IP na dzierżawę i przypisać te adresy IP do poszczególnych skrzynek pocztowych. Jeden program DEP można przypisać do wielu skrzynek pocztowych.
 
-Domyślnie skrzynki pocztowe są szyfrowane przy użyciu kluczy zarządzanych przez firmę Microsoft. Po przypisaniu funkcji DEP klucza klienta do skrzynki pocztowej:
+Domyślnie skrzynki pocztowe są szyfrowane przy użyciu kluczy zarządzanych przez firmę Microsoft. Po przypisaniu programu DEP klucza klienta do skrzynki pocztowej:
 
-- Jeśli skrzynka pocztowa jest szyfrowana przy użyciu funkcji DEP o wielu obciążeniach, usługa ponownie dezbuje skrzynkę pocztową przy użyciu nowej funkcji DEP, o ile użytkownik lub operacja systemowa uzyskuje dostęp do danych skrzynki pocztowej.
+- Jeśli skrzynka pocztowa jest szyfrowana przy użyciu wielozadaniowego programu DEP, usługa ponownie rozpakowuje skrzynkę pocztową przy użyciu nowej skrzynki pocztowej DEP, o ile użytkownik lub operacja systemowa uzyskuje dostęp do danych skrzynki pocztowej.
 
-- Jeśli skrzynka pocztowa jest już zaszyfrowana przy użyciu kluczy zarządzanych przez firmę Microsoft, usługa ponownie wywrze do skrzynki pocztowej nową skrzynkę za pomocą funkcji DEP, o ile użytkownik lub operacja systemowa uzyskuje dostęp do danych skrzynki pocztowej.
+- Jeśli skrzynka pocztowa jest już zaszyfrowana przy użyciu kluczy zarządzanych przez firmę Microsoft, usługa ponownie rozpakowuje skrzynkę pocztową przy użyciu nowej skrzynki pocztowej DEP, o ile użytkownik lub operacja systemowa uzyskuje dostęp do danych skrzynki pocztowej.
 
-- Jeśli skrzynka pocztowa nie jest jeszcze zaszyfrowana przy użyciu domyślnego szyfrowania, usługa oznacza skrzynkę pocztową za przeniesienie. Szyfrowanie ma miejsce po zakończeniu przenoszenia. Przeniesienie skrzynki pocztowej jest zarządzane zgodnie z priorytetami ustawionymi dla wszystkich Microsoft 365. Aby uzyskać więcej informacji, zobacz Żądania [przeniesienia w Microsoft 365 usługi.](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-microsoft-365-or-office-365-service) Jeśli skrzynki pocztowe nie są szyfrowane w określonym czasie, skontaktuj się z firmą Microsoft.
+- Jeśli skrzynka pocztowa nie jest jeszcze zaszyfrowana przy użyciu szyfrowania domyślnego, usługa oznacza skrzynkę pocztową do przeniesienia. Szyfrowanie odbywa się po zakończeniu przenoszenia. Przenoszenie skrzynek pocztowych zależy od priorytetów ustawionych dla wszystkich Microsoft 365. Aby uzyskać więcej informacji, zobacz [Przenoszenie żądań w usłudze Microsoft 365](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-microsoft-365-or-office-365-service). Jeśli skrzynki pocztowe nie są szyfrowane w określonym czasie, skontaktuj się z firmą Microsoft.
 
-Później możesz odświeżyć element DEP lub przypisać do skrzynki pocztowej inny element DEP zgodnie z opisem w tece Zarządzanie [kluczem](customer-key-manage.md) klienta dla Office 365. Do każdej skrzynki pocztowej muszą być przypisane odpowiednie licencje. Aby uzyskać więcej informacji na temat licencjonowania, zobacz [Przed skonfigurowaniem klucza klienta](customer-key-set-up.md#before-you-set-up-customer-key).
+Później można odświeżyć program DEP lub przypisać inny program DEP do skrzynki pocztowej zgodnie z opisem w [temacie Zarządzanie kluczem klienta dla Office 365](customer-key-manage.md). Każda skrzynka pocztowa musi mieć odpowiednie licencje, do których ma zostać przypisany program DEP. Aby uzyskać więcej informacji na temat licencjonowania, zobacz [Przed skonfigurowanie klucza klienta](customer-key-set-up.md#before-you-set-up-customer-key).
 
-Dezp można przypisywać do udostępnionej skrzynki pocztowej, skrzynki pocztowej folderu publicznego i skrzynki pocztowej grupy Microsoft 365 dzierżaw, które spełniają wymagania licencyjne dotyczące skrzynek pocztowych użytkowników. Do przypisania funkcji DEP klucza klienta nie są potrzebne osobne licencje dla skrzynek pocztowych innych niż określone przez użytkownika.
+Adresy IP można przypisać do udostępnionej skrzynki pocztowej, skrzynki pocztowej folderu publicznego i skrzynki pocztowej grupy Microsoft 365 dla dzierżaw, które spełniają wymagania licencyjne dla skrzynek pocztowych użytkowników. Nie potrzebujesz oddzielnych licencji dla skrzynek pocztowych innych niż specyficzne dla użytkownika, aby przypisać program DEP klucza klienta.
 
-W przypadku dezb. klientów przypisanych do poszczególnych skrzynek pocztowych możesz zażądać od firmy Microsoft oczyszczania określonych działów obsługi klienta podczas opuszczania usługi. Aby uzyskać informacje na temat procesu przeczyszczania danych i odwołań klawiszy, zobacz Odwoływanie kluczy i rozpoczynanie [procesu ścieżki przeczyszczania danych](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
+W przypadku adresów DEPs klucza klienta, które są przypisywane do poszczególnych skrzynek pocztowych, możesz zażądać od firmy Microsoft przeczyszczania określonych adresów IP po opuszczeniu usługi. Aby uzyskać informacje o procesie przeczyszczania danych i odwoływaniu [kluczy, zobacz Odwoływanie kluczy i uruchamianie procesu ścieżki przeczyszczania danych](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
 
-Odwołanie dostępu do kluczy w ramach opuszczenia usługi spowoduje usunięcie klucza dostępności, co spowoduje kryptograficzne usunięcie danych. Usuwanie kryptograficzne ogranicza ryzyko ponownego zarządzania danymi, które jest ważne zarówno w przypadku wymogów bezpieczeństwa, jak i zgodności.
+Po odwołaniu dostępu do kluczy w ramach opuszczania usługi klucz dostępności zostanie usunięty, co spowoduje usunięcie danych kryptograficznych. Usunięcie kryptograficzne zmniejsza ryzyko ponownego zarządzania danymi, co jest ważne w przypadku spełnienia zarówno obowiązków w zakresie zabezpieczeń, jak i zgodności.
 
-**Funkcja DEP dla usługi SharePoint Online** i OneDrive dla Firm Ten funkcja dep jest używany do szyfrowania zawartości przechowywanej w u usługi SPO i usługach OneDrive dla Firm, w tym także plików Microsoft Teams przechowywanych w u usługi SPO. Jeśli korzystasz z funkcji wielolokalizacji, możesz utworzyć jedną funkcję DEP dla każdego geolokalizacji dla organizacji. Jeśli nie korzystasz z funkcji wielolokalizacji, możesz utworzyć tylko jedną funkcję dep na dzierżawę. Zapoznaj się ze szczegółami w [tece Konfigurowanie klucza klienta](customer-key-set-up.md).
+**Program DEP dla SharePoint Online i OneDrive dla Firm** Ten program DEP służy do szyfrowania zawartości przechowywanej w sieci SPO i OneDrive dla Firm, w tym Microsoft Teams plików przechowywanych w spo. Jeśli używasz funkcji wielu obszarów geograficznych, możesz utworzyć jeden program DEP na obszar geograficzny dla swojej organizacji. Jeśli nie używasz funkcji wielu obszarów geograficznych, możesz utworzyć tylko jeden program DEP na dzierżawę. Zapoznaj się ze szczegółami w [temacie Konfigurowanie klucza klienta](customer-key-set-up.md).
 
-### <a name="encryption-ciphers-used-by-customer-key"></a>Szyfrowania używane przez klucz klienta
+### <a name="encryption-ciphers-used-by-customer-key"></a>Szyfry szyfrowania używane przez klucz klienta
 
-Klucz klienta szyfruje klucze przy pomocą różnych szyfrowania, jak pokazano na poniższych ilustracjach.
+Klucz klienta używa różnych szyfrów szyfrowania do szyfrowania kluczy, jak pokazano na poniższych rysunkach.
 
-Hierarchia kluczy używana dla dezpów szyfrowanych danych dla wielu Microsoft 365 jest podobna do hierarchii stosowanej w przypadku dezp w przypadku poszczególnych skrzynek Exchange Online pocztowych. Jedyna różnica polega na tym, że klucz skrzynki pocztowej zostanie zastąpiony odpowiadającym mu kluczem Microsoft 365 obciążeniem.
+Hierarchia kluczy używana w celu szyfrowania danych dla wielu Microsoft 365 obciążeń jest podobna do hierarchii używanej dla adresów DEPs dla poszczególnych Exchange Online skrzynek pocztowych. Jedyną różnicą jest to, że klucz skrzynki pocztowej jest zastępowany odpowiednim kluczem obciążenia Microsoft 365.
 
-#### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Szyfruj szyfrowania używane do szyfrowania kluczy do Exchange Online i Skype dla firm
+#### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Szyfry szyfrowania używane do szyfrowania kluczy dla Exchange Online i Skype dla firm
 
-![Encryption ciphers for Exchange Online customer key.](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Szyfry szyfrowania dla Exchange Online klucza klienta.](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
-#### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Szyfruj szyfrowania używane do szyfrowania kluczy do SharePoint Online, OneDrive dla Firm i Teams plików
+#### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Szyfry szyfrowania używane do szyfrowania kluczy dla plików SharePoint Online, OneDrive dla Firm i Teams
 
-![Encryption ciphers for SharePoint Customer Key.](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Szyfry szyfrowania dla SharePoint klucza klienta online.](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 
@@ -107,9 +107,9 @@ Hierarchia kluczy używana dla dezpów szyfrowanych danych dla wielu Microsoft 3
 
 - [Zarządzanie kluczem klienta](customer-key-manage.md)
 
-- [Obracanie lub obracanie klucza klienta lub klucza dostępności](customer-key-availability-key-roll.md)
+- [Tocz lub obracaj klucz klienta lub klucz dostępności](customer-key-availability-key-roll.md)
 
-- [Informacje o kluczu dostępności](customer-key-availability-key-understand.md)
+- [Dowiedz się więcej o kluczu dostępności](customer-key-availability-key-understand.md)
 
 - [Skrytka klienta](customer-lockbox-requests.md)
 

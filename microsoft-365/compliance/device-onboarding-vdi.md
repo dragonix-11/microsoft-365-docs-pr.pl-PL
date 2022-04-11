@@ -1,5 +1,5 @@
 ---
-title: Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure)
+title: Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych (VDI)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,139 +13,139 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Wdeksuj pakiet konfiguracji na urządzeniu infrastruktury pulpitów wirtualnych (VDI), aby były one dołączane do usługi ochrony przed utratą danych Microsoft 365 punktów końcowych.
-ms.openlocfilehash: 00804c93022f21715e3604eeb45c22caa4745f91
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Wdróż pakiet konfiguracji na urządzeniu infrastruktury pulpitu wirtualnego (VDI), aby był dołączany do usługi zapobiegania utracie danych punktu końcowego Microsoft 365.
+ms.openlocfilehash: 6bfb0f69198afbcc9d2949d583e151631cc7953b
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682157"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760630"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>Dołączanie nietrwałych urządzeń infrastruktury pulpitów wirtualnych
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>Dołączanie nietrwałych urządzeń infrastruktury pulpitu wirtualnego
 
 **Dotyczy:**
 
-- [Microsoft 365 punktu końcowego ochrony przed utratą danych (DLP)](./endpoint-dlp-learn-about.md)
-- [Zarządzanie ryzykiem w niejawnym programie testów](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Microsoft 365 ochrona przed utratą danych punktu końcowego (DLP)](./endpoint-dlp-learn-about.md)
+- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-- Urządzenia infrastruktury pulpitów wirtualnych (VDI)
+- Urządzenia infrastruktury pulpitu wirtualnego (VDI)
 
 > [!WARNING]
-> Microsoft 365 ochrony przed utratą danych w punkcie końcowym dla Windows Wirtualnego pulpitu obsługuje scenariusze z jedną sesją. Scenariusze z wieloma sesjami Windows pulpitu wirtualnego nie są obecnie obsługiwane.
+> Microsoft 365 obsługa zapobiegania utracie danych punktu końcowego dla usługi Windows Virtual Desktop obsługuje scenariusze pojedynczej sesji. Scenariusze z wieloma sesjami w Windows Virtual Desktop nie są obecnie obsługiwane.
 
-## <a name="onboard-vdi-devices"></a>Urządzenia VDI na urządzeniach w urządzeniu
+## <a name="onboard-vdi-devices"></a>Dołączanie urządzeń VDI
 
-Microsoft 365 nietrwałych pulpitów wirtualnych (VDI, non-persistent virtual desktop infrastructure) podczas dołączania sesji.
+Microsoft 365 obsługuje dołączanie nietrwałej infrastruktury pulpitu wirtualnego (VDI).
 
 > [!NOTE]
-> Aby można było dołączać nietrwałych sesji VDI, urządzenia VDI muszą znajdować się na Windows 10 1809 lub więcej.
+> Aby dołączyć nietrwałe sesje VDI, urządzenia VDI muszą znajdować się w Windows 10 1809 lub nowszym.
 
-Podczas dołączania interfejsów VDI mogą wiązać się ze swoimi wyzwaniami. Oto typowe wyzwania związane z tym scenariuszem:
+Podczas dołączania interfejsów VDI mogą wystąpić problemy. Poniżej przedstawiono typowe wyzwania dla tego scenariusza:
 
-- Szybkie wczesne dołączanie do krótkich sesji, które muszą zostać Microsoft 365 przed rzeczywistym inicjowaniem obsługi administracyjnej.
-- Nazwa urządzenia jest zwykle używana ponownie dla nowych sesji.
+- Natychmiastowe wczesne dołączanie krótkotrwałych sesji, które muszą zostać dołączone do Microsoft 365 przed rzeczywistą aprowizowaniem.
+- Nazwa urządzenia jest zwykle ponownie używana dla nowych sesji.
 
-Urządzenia VDI mogą być wyświetlane w Centrum zgodności Microsoft 365 w następujący sposób:
+Urządzenia VDI mogą być wyświetlane w centrum zgodności Microsoft 365 jako:
 
-- Jedna pozycja dla każdego urządzenia.
-Pamiętaj, że w tym przypadku tę  samą nazwę urządzenia należy skonfigurować podczas tworzenia sesji, na przykład przy użyciu nienadzorowanych plików odpowiedzi.
+- Pojedynczy wpis dla każdego urządzenia.
+Należy pamiętać, że w tym przypadku podczas tworzenia sesji należy skonfigurować *tę samą* nazwę urządzenia, na przykład przy użyciu nienadzorowanego pliku odpowiedzi.
 - Wiele wpisów dla każdego urządzenia — po jednym dla każdej sesji.
 
-Poniższe kroki poprowadzi Cię przez dołączanie urządzeń VDI i będą wyróżniać kroki dla 1 i wielu wpisów.
+Poniższe kroki przeprowadzą Cię przez dołączanie urządzeń VDI i wyróżnią kroki dla pojedynczych i wielu wpisów.
 
 > [!WARNING]
-> W środowiskach, w których występują niskie konfiguracje zasobów, procedura rozruchu VDI może spowalniać proces dołączania urządzenia.
+> W środowiskach, w których konfiguracje zasobów są niskie, procedura rozruchu interfejsu VDI może spowolnić proces dołączania urządzenia.
 
-1. Pobierz pakiet konfiguracji VDI z .zip (*DeviceCompliancePackage.zip*) z [Centrum zgodności firmy Microsoft](https://compliance.microsoft.com).
+1. Pobierz pakiet konfiguracji interfejsu VDI .zip plik (*DeviceCompliancePackage.zip*) z [Centrum zgodności firmy Microsoft](https://compliance.microsoft.com).
 
 2. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Device onboardingOnboarding** > .
 
-3. W polu **Metoda wdrażania** wybierz **pozycję Skrypty wdrażania VDI dla nietrwałych punktów końcowych**.
+3. W polu **Metoda wdrażania** wybierz pozycję **VDI onboarding scripts for non-persistent endpoints (Skrypty dołączania interfejsu VDI dla nietrwałych punktów końcowych**).
 
-4. Kliknij **pozycję Pobierz pakiet** i zapisz .zip pliku.
+4. Kliknij **pozycję Pobierz pakiet** i zapisz plik .zip.
 
-5. Skopiuj pliki z folderu DeviceCompliancePackage wyodrębniony z pliku .zip `golden` do obrazu pod ścieżką `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+5. Skopiuj pliki z folderu DeviceCompliancePackage wyodrębnione z pliku .zip do `golden` obrazu w ścieżce `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
 
-6. Jeśli nie implementujesz pojedynczej pozycji dla każdego urządzenia, skopiuj kod DeviceComplianceOnboardingScript.cmd.
+6. Jeśli nie implementujesz pojedynczego wpisu dla każdego urządzenia, skopiuj plik DeviceComplianceOnboardingScript.cmd.
 
-7. Jeśli implementujesz pojedynczą pozycję dla każdego urządzenia, skopiuj zarówno kod Onboard-NonPersistentMachine.ps1, jak i deviceComplianceOnboardingScript.cmd.
+7. Jeśli implementujesz pojedynczy wpis dla każdego urządzenia, skopiuj zarówno Onboard-NonPersistentMachine.ps1, jak i DeviceComplianceOnboardingScript.cmd.
 
     > [!NOTE]
-    > Jeśli nie widzisz folderu, może `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` to być ukryte. Musisz wybrać opcję Pokaż ukryte **pliki i** foldery w Eksploratorze plików.
+    > Jeśli nie widzisz folderu `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` , może on być ukryty. Musisz wybrać opcję **Pokaż ukryte pliki i foldery** z Eksplorator plików.
 
-8. Otwórz okno Edytor zasady grupy komputera i przejdź do **strony Konfiguracja komputera** >  **Windows Ustawienia** >  **ScriptsStartup** > .
+8. Otwórz okno Edytor lokalnych zasady grupy i przejdź do pozycji **Konfiguracja** >  komputera **Windows Ustawienia** >  **ScriptsStartup** > .
 
    > [!NOTE]
-   > Domeny zasady grupy być także używane do wnoszania nietrwałych urządzeń VDI.
+   > Zasady grupy domeny mogą być również używane do dołączania nietrwałych urządzeń VDI.
 
-9. W zależności od metody, która ma być zaimplementowana, wykonaj odpowiednie czynności:
+9. W zależności od metody, którą chcesz zaimplementować, wykonaj odpowiednie kroki:
 
-   **Dla jednego wpisu dla każdego urządzenia**
+   **Dla pojedynczego wpisu dla każdego urządzenia**
 
-   Wybierz **kartę Skrypty programu PowerShell**, a następnie kliknij pozycję **Dodaj** (Windows Eksplorator zostanie otwarty bezpośrednio w ścieżce, do której wcześniej skopiowano skrypt dołączania). Przejdź do skryptu dołączania programu PowerShell `Onboard-NonPersistentMachine.ps1`.
+   Wybierz kartę **Skrypty programu PowerShell**, a następnie kliknij pozycję **Dodaj** (Windows Eksplorator otworzy się bezpośrednio w ścieżce, w której wcześniej skopiowano skrypt dołączania). Przejdź do dołączania skryptu `Onboard-NonPersistentMachine.ps1`programu PowerShell.
 
    **W przypadku wielu wpisów dla każdego urządzenia**:
 
-   Wybierz **kartę Skrypty**, a następnie kliknij pozycję **Dodaj** (Windows Eksplorator zostanie otwarty bezpośrednio w ścieżce, do której wcześniej skopiowano skrypt dołączania). Przejdź do skryptu bash wniesienie `DeviceComplianceOnboardingScript.cmd`.
+   Wybierz kartę **Skrypty**, a następnie kliknij pozycję **Dodaj** (Windows Eksplorator otworzy się bezpośrednio w ścieżce, w której wcześniej skopiowano skrypt dołączania). Przejdź do skryptu `DeviceComplianceOnboardingScript.cmd`powłoki bash dołączania.
 
-10. Przetestuj swoje rozwiązanie:
+10. Przetestuj rozwiązanie:
     1. Utwórz pulę przy użyciu jednego urządzenia.
     1. Zaloguj się na urządzeniu.
     1. Wyloguj się z urządzenia.
-    1. Zaloguj się na urządzeniu z innym użytkownikiem.
-    1. **W przypadku wpisu pojedynczego dla każdego urządzenia**: Sprawdź tylko jedną pozycję w Centrum zabezpieczeń usługi Microsoft Defender.
-       **W przypadku wielu wpisów dla każdego urządzenia**: Sprawdź wiele wpisów w Centrum zabezpieczeń usługi Microsoft Defender.
+    1. Zaloguj się na urządzeniu przy użyciu innego użytkownika.
+    1. **Dla pojedynczego wpisu dla każdego urządzenia**: sprawdź tylko jeden wpis w Centrum zabezpieczeń usługi Microsoft Defender.
+       **Dla wielu wpisów dla każdego urządzenia**: sprawdź wiele wpisów w Centrum zabezpieczeń usługi Microsoft Defender.
 
-11. Kliknij **listę Urządzenia w** okienku nawigacji.
+11. Kliknij **listę Urządzenia** w okienku Nawigacji.
 
-12. Użyj funkcji wyszukiwania, wprowadzając nazwę urządzenia i wybierz **pozycję Urządzenie** jako typ wyszukiwania.
+12. Użyj funkcji wyszukiwania, wprowadzając nazwę urządzenia i wybierając pozycję **Urządzenie** jako typ wyszukiwania.
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Aktualizowanie nietrwałych obrazów infrastruktury pulpitów wirtualnych (VDI, Non-persistent Virtual Desktop Infrastructure)
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Aktualizowanie nietrwałych obrazów infrastruktury pulpitu wirtualnego (VDI)
 
-Jako najlepsze rozwiązanie zalecamy używanie narzędzi obsługi w trybie offline do poprawiania złotych obrazów.
+Najlepszym rozwiązaniem jest użycie narzędzi do obsługi offline w celu stosowania poprawek do złotych obrazów.
 
-Możesz na przykład użyć poniższych poleceń, aby zainstalować aktualizację, podczas gdy obraz pozostaje w trybie offline:
+Na przykład możesz użyć poniższych poleceń, aby zainstalować aktualizację, gdy obraz pozostaje w trybie offline:
 
-```console
+```DOS
 DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
 DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
-Aby uzyskać więcej informacji na temat poleceń ROZM i obsługi w trybie offline, zapoznaj się z poniższymi artykułami:
+Aby uzyskać więcej informacji na temat poleceń DISM i obsługi w trybie offline, zapoznaj się z poniższymi artykułami:
 
-- [Modyfikowanie obrazu Windows przy użyciu funkcji ROZM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [Opcje zarządzania obrazami Command-Line ROZM.](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Zmniejszanie rozmiaru magazynu składników w magazynie danych Windows offline](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [Modyfikowanie obrazu Windows przy użyciu narzędzia DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Opcje Command-Line zarządzania obrazami DISM](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [Zmniejsz rozmiar magazynu składników w obrazie Windows offline](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
-Jeśli obsługa w trybie offline nie jest rentowną opcją dla nietrwałych środowisk VDI, należy podjąć następujące kroki w celu zapewnienia spójności i kondycji czujnika:
+Jeśli obsługa w trybie offline nie jest realną opcją dla nietrwałego środowiska VDI, należy wykonać następujące kroki w celu zapewnienia spójności i kondycji czujnika:
 
-1. Po uruchomieniu złotego obrazu do obsługi lub poprawiania w trybie online uruchom skrypt wybiegania, aby wyłączyć czujnik monitorowania Microsoft 365 urządzenia. Aby uzyskać więcej informacji, zobacz [Urządzenia przenośne korzystające ze skryptu lokalnego](device-onboarding-script.md#offboard-devices-using-a-local-script).
+1. Po uruchomieniu złotego obrazu do obsługi lub stosowania poprawek w trybie online uruchom skrypt odłączania, aby wyłączyć czujnik monitorowania urządzenia Microsoft 365. Aby uzyskać więcej informacji, zobacz [Artykuł Offboard devices using a local script (Odłącz urządzenia przy użyciu skryptu lokalnego](device-onboarding-script.md#offboard-devices-using-a-local-script)).
 
-2. Upewnij się, że czujnik został zatrzymany, uruchamiając poniższe polecenie w oknie CMD:
+2. Upewnij się, że czujnik został zatrzymany, uruchamiając poniższe polecenie w oknie cmd:
 
-   ```console
+   ```DOS
    sc query sense
    ```
 
-3. Serwisuj obraz zgodnie z potrzebami.
+3. Obsługuj obraz zgodnie z potrzebami.
 
-4. Uruchom poniższe polecenia przy użyciu programu PsExec.exe ( https://download.sysinternals.com/files/PSTools.zip) który można pobrać w celu oczyszczenia zawartości cyber folderów, które czujnik mógł skumulować od momentu rozruchu:
+4. Uruchom poniższe polecenia przy użyciu PsExec.exe (z https://download.sysinternals.com/files/PSTools.zip) którego można pobrać zawartość folderu cybernetycznego, którą czujnik mógł zgromadzić od czasu rozruchu:
 
-    ```console
+    ```DOS
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 
-5. Ponownie zaklej złoty obraz tak jak zwykle.
+5. Ponownie przypieczętuj złoty obraz tak, jak zwykle.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-- [Urządzenia Windows 10 i Windows 11 urządzeń korzystających z zasady grupy](device-onboarding-gp.md)
-- [Urządzenia Windows 10 i Windows 11 urządzeń używających Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [Dołączanie Windows 10 i Windows 11 urządzeń za pomocą narzędzi do zarządzania urządzeniami przenośnymi](device-onboarding-mdm.md)
-- [Dołączanie Windows 10 i Windows 11 urządzeń przy użyciu skryptu lokalnego](device-onboarding-script.md)
-- [Rozwiązywanie problemów z dołączaniem do zaawansowanej ochrony przed zagrożeniami w u programie Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Dołączanie urządzeń Windows 10 i Windows 11 przy użyciu zasady grupy](device-onboarding-gp.md)
+- [Dołączanie urządzeń Windows 10 i Windows 11 przy użyciu Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [Dołączanie urządzeń z systemami Windows 10 i Windows 11 przy użyciu narzędzi do zarządzania urządzeniami przenośnymi](device-onboarding-mdm.md)
+- [Dołączanie urządzeń z systemami Windows 10 i Windows 11 przy użyciu skryptu lokalnego](device-onboarding-script.md)
+- [Rozwiązywanie problemów z dołączaniem zaawansowanej ochrony przed zagrożeniami w usłudze Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

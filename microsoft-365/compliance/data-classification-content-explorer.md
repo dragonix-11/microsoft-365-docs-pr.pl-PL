@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do Eksploratora zawartości
+title: Wprowadzenie do eksploratora zawartości
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,29 +18,29 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Eksplorator zawartości umożliwia natywnie wyświetlanie elementów oznaczonych etykietami.
-ms.openlocfilehash: f402df53c19da78435e22717577b351fc302d0f4
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Eksplorator zawartości umożliwia natywne wyświetlanie elementów oznaczonych etykietami.
+ms.openlocfilehash: 0a3b036a60d3ec24533056b38ff1e68be9875aa0
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679967"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761378"
 ---
-# <a name="get-started-with-content-explorer"></a>Wprowadzenie do Eksploratora zawartości
+# <a name="get-started-with-content-explorer"></a>Wprowadzenie do eksploratora zawartości
 
-Eksplorator zawartości klasyfikacji danych umożliwia natywnie wyświetlanie elementów podsumowanych na stronie przeglądu.
+Eksplorator zawartości klasyfikacji danych pozwala natywnie wyświetlać elementy podsumowane na stronie przeglądu.
 
-![Zwinięty zrzut ekranu w Eksploratorze zawartości.](../media/data-classification-content-explorer-1.png)
+![zwinięty zrzut ekranu eksploratora zawartości.](../media/data-classification-content-explorer-1.png)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby uzyskać informacje o wymaganiach [licencyjnych, zobacz Ochrona informacji: Analiza klasyfikacji danych: nad & aktywności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
+Aby zapoznać się z wymaganiami dotyczącymi licencjonowania, zobacz [Information Protection: Analiza klasyfikacji danych: Omówienie Eksploratora aktywności & zawartości](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### <a name="permissions"></a>Uprawnienia
 
-Aby uzyskać dostęp do karty Eksplorator zawartości, należy przypisać członkostwo w dowolnej z tych ról lub grup ról. 
+Aby uzyskać dostęp do karty eksploratora zawartości, konto musi mieć przypisane członkostwo w dowolnej z tych ról lub grup ról. 
 
-**Microsoft 365 grup ról**
+**Microsoft 365 grupy ról**
 
 - Administrator globalny
 - Administrator zgodności
@@ -51,107 +51,107 @@ Aby uzyskać dostęp do karty Eksplorator zawartości, należy przypisać człon
 > Członkostwo w tych grupach ról nie umożliwia wyświetlania listy elementów w Eksploratorze zawartości ani wyświetlania zawartości elementów w Eksploratorze zawartości.
 
 > [!IMPORTANT]
-> Tylko administratorzy globalni mogą zarządzać uprawnieniami innych użytkowników w Centrum zgodności lub przypisywać je innym użytkownikom. Aby uzyskać więcej informacji, zobacz [Zapewnianie użytkownikom](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md) dostępu do Centrum & zabezpieczeń.
+> Tylko administratorzy globalni mogą zarządzać uprawnieniami lub przypisywać je innym użytkownikom w Centrum zgodności. Aby uzyskać więcej informacji, zobacz [Udzielanie użytkownikom dostępu do Centrum zgodności & zabezpieczeń](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 > 
 ### <a name="required-permissions-to-access-items-in-content-explorer"></a>Wymagane uprawnienia dostępu do elementów w Eksploratorze zawartości
 
-Dostęp do Eksploratora zawartości jest bardzo ograniczony, ponieważ umożliwia czytanie zawartości zeskanowanych plików.
+Dostęp do Eksploratora zawartości jest wysoce ograniczony, ponieważ umożliwia odczytywanie zawartości zeskanowanych plików.
 
 > [!IMPORTANT]
-> Te uprawnienia wykraczają poza uprawnienia przypisane lokalnie do elementów, co umożliwia wyświetlanie zawartości. 
+> Te uprawnienia zawłaszczają uprawnienia, które są przypisywane lokalnie do elementów, co umożliwia wyświetlanie zawartości. 
 
-Istnieją dwie role, które przyznają dostęp do Eksploratora zawartości i są udzielane <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">przy użyciu Centrum zgodności platformy Microsoft 365</a>:
+Istnieją dwie role, które udzielają dostępu do Eksploratora zawartości i są przyznawane przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centrum zgodności platformy Microsoft 365</a>:
 
-- **Przeglądarka list Eksploratora zawartości**: Członkostwo w tej grupie ról umożliwia wyświetlanie poszczególnych elementów i ich lokalizacji w widoku listy. Rola `data classification list viewer` została wstępnie przypisana do tej grupy ról.
+- **Przeglądarka listy Eksploratora zawartości**: członkostwo w tej grupie ról umożliwia wyświetlanie każdego elementu i jego lokalizacji w widoku listy. Rola `data classification list viewer` została wstępnie przypisana do tej grupy ról.
 
-- **Przeglądarka zawartości Eksploratora zawartości**: Członkostwo w tej grupie ról umożliwia wyświetlanie zawartości każdego elementu na liście. Rola `data classification content viewer` została wstępnie przypisana do tej grupy ról.
+- **Przeglądarka zawartości Eksplorator zawartości**: członkostwo w tej grupie ról umożliwia wyświetlanie zawartości każdego elementu na liście. Rola `data classification content viewer` została wstępnie przypisana do tej grupy ról.
 
-Konto, za pomocą których uzyskujesz dostęp do Eksploratora zawartości, musi znajdować się w jednej lub obu grupach ról. Są to niezależne grupy ról, które nie są skumulowane. Jeśli na przykład chcesz przyznać kontu możliwość wyświetlania tylko elementów i ich lokalizacji, ujmij w uprawnienia podglądu listy Eksploratora zawartości. Jeśli chcesz, aby to samo konto również wyświetlało zawartość elementów na liście, także przyznaj uprawnienia podglądu zawartości Eksploratora zawartości.
+Konto używane do uzyskiwania dostępu do Eksploratora zawartości musi znajdować się w jednej lub obu grupach ról. Są to niezależne grupy ról i nie są skumulowane. Jeśli na przykład chcesz przyznać kontu możliwość wyświetlania tylko elementów i ich lokalizacji, przyznaj uprawnienia przeglądarki listy Eksploratora zawartości. Jeśli chcesz, aby to samo konto mogło również wyświetlać zawartość elementów na liście, przyznaj również uprawnienia przeglądarki zawartości Eksploratora zawartości.
 
-Możesz także przypisać jedną lub obie role do niestandardowej grupy ról, aby dostosować dostęp do Eksploratora zawartości.
+Możesz również przypisać jedną lub obie role do niestandardowej grupy ról, aby dostosować dostęp do Eksploratora zawartości.
 
-Administrator globalny może przypisać niezbędne członkostwo w grupach ról Przeglądarki list Eksploratora zawartości i Przeglądarki zawartości.
+Administrator globalny może przypisać niezbędną przeglądarkę list Eksploratora zawartości oraz członkostwo w grupie roli Podgląd zawartości Eksploratora zawartości.
 
-#### <a name="roles-and-role-groups-in-preview"></a>Role i grupy ról w wersji Preview
+#### <a name="roles-and-role-groups-in-preview"></a>Role i grupy ról w wersji zapoznawczej
 
-W wersji Preview są dostępne role i grupy ról, które możesz przetestować, aby precyzyjnie dostosować kontrolki dostępu.
+W wersji zapoznawczej dostępne są role i grupy ról, które można przetestować, aby dostosować mechanizmy kontroli dostępu.
 
-Oto lista dostępnych w wersji Microsoft Information Protection (MIP), które są dostępne w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Oto lista ról Microsoft Information Protection (MIP), które są w wersji zapoznawczej. Aby dowiedzieć się więcej na ich temat, zobacz [Role w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Administrator ochrony informacji
-- Analityk ochrony informacji
-- Ochrona informacji
-- Czytnik ochrony informacji
+- administrator Information Protection
+- analityk Information Protection
+- badacz Information Protection
+- czytelnik Information Protection
 
-Poniżej znajdziesz listę grup ról miP, które są dostępne w wersji Preview. Aby dowiedzieć się więcej, [zobacz Grupy ról w Centrum & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Oto lista grup ról programu MIP, które są w wersji zapoznawczej. Aby dowiedzieć się więcej, zobacz [Grupy ról w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
-- Ochrona informacji
-- Administratorzy ochrony informacji
-- Analitycy ochrony informacji
-- Schoweki ochrony informacji
-- Czytniki informacji
+- Information Protection
+- administratorzy Information Protection
+- analitycy Information Protection
+- Information Protection śledczy
+- czytniki Information Protection
 
 ## <a name="content-explorer"></a>Eksplorator zawartości
 
-Eksplorator zawartości pokazuje bieżącą migawkę elementów, które mają etykietę wrażliwości, etykietę przechowywania lub zostały sklasyfikowane jako typ informacji poufnych w organizacji.
+Eksplorator zawartości pokazuje bieżącą migawkę elementów, które mają etykietę poufności, etykietę przechowywania lub zostały sklasyfikowane jako typ informacji poufnych w organizacji.
 
 ### <a name="sensitive-information-types"></a>Typy informacji poufnych
 
-Zasady [DLP pomagają](dlp-learn-about-dlp.md) chronić informacje poufne, zdefiniowane jako **typ informacji poufnych**. Microsoft 365 zawiera [definicje wielu typowych typów informacji poufnych](sensitive-information-type-entity-definitions.md) z wielu różnych regionów, które są gotowe do użycia. Może to być na przykład numer karty kredytowej, numery kont bankowych, identyfikatory państwowe Windows numery usług Live ID.
+[Zasady DLP](dlp-learn-about-dlp.md) mogą pomóc w ochronie informacji poufnych, które są definiowane jako **typ informacji poufnych**. Microsoft 365 zawiera [definicje wielu typowych typów informacji poufnych](sensitive-information-type-entity-definitions.md) z wielu różnych regionów, które są gotowe do użycia. Na przykład numer karty kredytowej, numery kont bankowych, krajowe numery identyfikatorów i Windows numerów usług Live ID.
 
 ### <a name="sensitivity-labels"></a>Etykiety wrażliwości
 
-[Etykieta wrażliwości](sensitivity-labels.md) to po prostu tag wskazujący wartość elementu dla organizacji. Można go stosować ręcznie lub automatycznie. Po zastosowaniu zostanie on osadzony w dokumencie i będzie go obserwować wszędzie, gdziekolwiek się on znajdzie. Etykieta wrażliwości zapewnia różne sposoby ochrony, takie jak obowiązkowy znak wodny lub szyfrowanie.
+[Etykieta poufności](sensitivity-labels.md) to po prostu tag, który wskazuje wartość elementu dla organizacji. Można go zastosować ręcznie lub automatycznie. Po zastosowaniu etykieta zostanie osadzona w dokumencie i będzie podążać za dokumentem wszędzie tam, gdzie się pojawi. Etykieta poufności umożliwia różne zachowania ochronne, takie jak obowiązkowe znakowanie wodne lub szyfrowanie.
 
-Etykiety wrażliwości muszą być włączone dla plików w SharePoint i OneDrive, aby odpowiadające im dane zostały surface na stronie klasyfikacji danych. Aby uzyskać więcej informacji, zobacz [Włączanie etykiet wrażliwości Office plików w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Etykiety poufności muszą być włączone dla plików znajdujących się w SharePoint i OneDrive, aby odpowiednie dane były wyświetlane na stronie klasyfikacji danych. Aby uzyskać więcej informacji, zobacz [Włączanie etykiet poufności dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ### <a name="retention-labels"></a>Etykiety przechowywania
 
-[Etykieta przechowywania](retention.md) pozwala określić, jak długo jest przechowywany element oznaczony etykietą oraz jakie czynności należy wykonać przed jego usunięciem. Są one stosowane ręcznie lub automatycznie za pośrednictwem zasad. Mogą one pełnić rolę pomagającą organizacji w pozostawaniu w zrównaniu się z wymaganiami prawnymi i prawnymi.
+[Etykieta przechowywania](retention.md) pozwala określić, jak długo element oznaczony etykietą jest przechowywany i jakie kroki należy wykonać przed jego usunięciem. Są one stosowane ręcznie lub automatycznie za pośrednictwem zasad. Mogą one odgrywać rolę w pomaganiu organizacji w utrzymaniu zgodności z wymaganiami prawnymi i prawnymi.
 
-### <a name="how-to-use-content-explorer"></a>Jak używać Eksploratora zawartości
+### <a name="how-to-use-content-explorer"></a>Jak używać eksploratora zawartości
 
-1. Otwórz **Centrum zgodności platformy Microsoft 365**  >  **KlasyfikacjaDanychUkońcowy** >  **Eksplorator.**
+1. Otwórz **Centrum zgodności platformy Microsoft 365**  >  **Klasyfikator** **danychKontener** > .
 2. Jeśli znasz nazwę etykiety lub typ informacji poufnych, możesz wpisać ją w polu filtru.
-3. Możesz również przejść do elementu, rozwijając typ etykiety i wybierając etykietę z listy.
-4. Wybierz lokalizację w **obszarze Wszystkie lokalizacje** i przejdź do szczegółów struktury folderów do elementu.
+3. Alternatywnie możesz wyszukać element, rozszerzając typ etykiety i wybierając etykietę z listy.
+4. Wybierz lokalizację w obszarze **Wszystkie lokalizacje** i przejdź do szczegółów struktury folderów dla elementu.
 5. Kliknij dwukrotnie, aby otworzyć element natywnie w Eksploratorze zawartości.
 
 ### <a name="export"></a>Eksportowanie
-**Kontrolka** eksportu utworzy plik .csv, który zawiera listę wszystkich pozycji pokazywanych w **okienku Wszystkie** lokalizacje.
+**Kontrolka eksportu** utworzy plik .csv zawierający listę elementów wyświetlanych w okienku **Wszystkie lokalizacje**.
 
-![kontrolkę eksportu klasyfikacji danych.](../media/data_classification_export_control.png)
+![kontroli eksportu klasyfikacji danych.](../media/data_classification_export_control.png)
 
 
 > [!NOTE]
-> Aktualizacja liczników w *Eksploratorze* zawartości może potrwać do siedmiu dni.
+> Aktualizowanie liczby w Eksploratorze zawartości może potrwać do *siedmiu dni* .
 
-### <a name="search"></a>Wyszukiwanie
+### <a name="search"></a>Szukaj
 
-Po przechodzeniu do szczegółów w lokalizacji, takiej jak folder Exchange lub Teams albo witryna usługi SharePoint lub OneDrive, zostanie **wyświetlone narzędzie wyszukiwania**.
+Po przejściu do szczegółów lokalizacji, takiej jak folder Exchange lub Teams, lub witryny SharePoint lub OneDrive, zostanie wyświetlone narzędzie **wyszukiwania**.
 
-![narzędzie do wyszukiwania w Eksploratorze zawartości.](../media/data_classification_search_tool.png)
+![narzędzie wyszukiwania eksploratora zawartości.](../media/data_classification_search_tool.png)
 
-Zakres narzędzia wyszukiwania jest wyświetlany w okienku Wszystkie lokalizacje,  a zakres opcji, według których można wyszukiwać, zależy od wybranej lokalizacji. 
+Zakres narzędzia wyszukiwania jest wyświetlany w okienku **Wszystkie lokalizacje** , a zakres wyszukiwania zależy od wybranej lokalizacji. 
 
-Jeśli **Exchange** lub **Teams** jest wybraną lokalizacją, możesz na przykład wyszukać pełny adres e-mail skrzynki pocztowej`user@domainname.com`.
+Gdy **wybraną** lokalizacją jest Exchange lub **Teams**, możesz wyszukać pełny adres e-mail skrzynki pocztowej, na przykład `user@domainname.com`.
 
-Gdy lokalizacja **SharePoint** lub OneDrive zaznaczona, narzędzie wyszukiwania zostanie wyświetlone podczas przechodzenia do szczegółów nazw witryn, folderów i plików. 
+Po **wybraniu lokalizacji SharePoint** lub **OneDrive** narzędzie wyszukiwania będzie wyświetlane podczas przechodzenia do szczegółów nazw witryn, folderów i plików. 
 
-Możesz wyszukiwać w:
+Możesz wyszukać następujące pozycje:
 
-|wartość|przykład  |
+|Wartość|Przykład  |
 |---------|---------|
 |pełna nazwa witryny    |`https://contoso.onmicrosoft.com/sites/sitename`    |
 |nazwa pliku    |    `RES_Resume_1234.txt`     |
 |tekst na początku nazwy pliku| `RES`|
-|Tekst po znaku podkreślenia (_) w nazwie pliku|`Resume` lub `1234`| 
-|rozszerzenie pliku|`txt`|
+|tekst po znaku podkreślenia ( _ ) w nazwie pliku|`Resume` Lub `1234`| 
+|Formatem|`txt`|
 
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Dowiedz się więcej o etykietach poufności](sensitivity-labels.md)
-- [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md)
+- [Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania](retention.md)
 - [Jednostka typu informacji poufnych definitions.md](sensitive-information-type-entity-definitions.md)
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md)
