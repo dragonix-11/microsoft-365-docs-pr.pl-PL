@@ -406,7 +406,7 @@
 ### [Wykrywanie i reagowanie dotyczące punktów końcowych]()
 #### [Omówienie wykrywania i reagowania dotyczącego punktów końcowych](overview-endpoint-detection-response.md)
 #### [Pulpit nawigacyjny operacji zabezpieczeń](security-operations-dashboard.md)
-#### [Prześlij podejrzane pliki](admin-submissions-mde.md)
+#### [Prześlij pliki](admin-submissions-mde.md)
 #### [Kolejka zdarzeń]()
 ##### [Wyświetl i organizuj kolejkę zdarzeń](view-incidents-queue.md)
 ##### [Zarządzanie zdarzeniami](manage-incidents.md)
