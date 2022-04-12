@@ -1,7 +1,7 @@
 ---
-title: Wykrywanie punktu końcowego i odpowiedź w trybie blokowania
-description: Informacje o wykrywanie i reagowanie w punktach końcowych w trybie blokowania
-keywords: Ochrona punktu końcowego w usłudze Microsoft Defender, mde, EDR w trybie blokowania, blokowanie w trybie pasywnym
+title: Wykrywanie punktów końcowych i reagowanie w trybie bloku
+description: Dowiedz się więcej o wykrywanie i reagowanie w punktach końcowych w trybie bloku
+keywords: Ochrona punktu końcowego w usłudze Microsoft Defender, mde, EDR w trybie bloku, blokowanie trybu pasywnego
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -15,176 +15,172 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 04/01/2022
+ms.date: 04/04/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 898d6de45830068ad300a64a3312cff3d5914323
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 655681820633b0f53ba29de49052690018cab1e7
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634300"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783716"
 ---
-# <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Wykrywanie punktu końcowego i odpowiedź (EDR) w trybie blokowania
+# <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Wykrywanie i reagowanie na punkty końcowe (EDR) w trybie bloku
 
 **Dotyczy:**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="what-is-edr-in-block-mode"></a>Co to EDR tryb blokowania?
+## <a name="what-is-edr-in-block-mode"></a>Co to jest EDR w trybie bloku?
 
-[Wykrywanie punktu końcowego](overview-endpoint-detection-response.md) i odpowiedź (EDR) w trybie blokowania zapewnia dodatkową ochronę przed złośliwymi artefaktami, gdy Program antywirusowy Microsoft Defender nie jest podstawowym produktem antywirusowym i działa w trybie pasywnym. EDR trybie blokowania działa w tle w celu korygowania złośliwych artefaktów wykrytych przez EDR. Tego rodzaju artefakty mogły zostać pominięte przez podstawowy produkt antywirusowy firmy Microsoft. W przypadku urządzeń Program antywirusowy Microsoft Defender jako podstawowych programów antywirusowych EDR tryb blokowania zapewnia dodatkową warstwę obrony, umożliwiając Program antywirusowy Microsoft Defender automatyczne działanie w przypadku po naruszeniu zabezpieczeń, zachowań i EDR wykrywania.
-
-> [!IMPORTANT]
-> EDR trybie blokowania nie zapewnia całej ochrony dostępnej po włączeniu Program antywirusowy Microsoft Defender w czasie rzeczywistym. Nie wszystkie funkcje, które zależą Program antywirusowy Microsoft Defender aktywne rozwiązanie antywirusowe, nie będą działać, w tym następujące kluczowe przykłady:
->
-> - Ochrona w czasie rzeczywistym, w tym skanowanie przy dostępie, nie jest dostępna, gdy Program antywirusowy Microsoft Defender w trybie pasywnym. Aby dowiedzieć się więcej o ustawieniach zasad ochrony w czasie rzeczywistym, zobacz Włączanie i konfigurowanie **[Program antywirusowy Microsoft Defender zawsze włączoną ochronę](configure-real-time-protection-microsoft-defender-antivirus.md)**.
->
-> - Funkcje takie **[jak ochrona sieci](network-protection.md)** i **[reguły zmniejszania powierzchni](attack-surface-reduction.md)** ataków są dostępne tylko wtedy, Program antywirusowy Microsoft Defender są uruchomione w trybie aktywnym.
->
-> Te funkcje powinny być dostępne w rozwiązaniu antywirusowym innych niż firmy Microsoft.
-
-EDR trybie blokowania jest zintegrowana z [zagrożeniami, które & zarządzanie lukami w zabezpieczeniach](next-gen-threat-and-vuln-mgt.md). Zespół zabezpieczeń Twojej organizacji otrzyma zalecenie o zabezpieczeniach[](tvm-security-recommendation.md), aby włączyć EDR tryb blokowania, jeśli nie jest jeszcze włączony.
-
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="Zalecenie dotyczące EDR w trybie blokowania" lightbox="images/edrblockmode-TVMrecommendation.png":::
-
-> [!TIP]
-> Aby uzyskać najlepszą ochronę, pamiętaj o wdrożeniu **[Ochrona punktu końcowego w usłudze Microsoft Defender bazowych](configure-machines-security-baseline.md)**.
-
-## <a name="what-happens-when-something-is-detected"></a>Co się dzieje, gdy coś zostanie wykryte?
-
-W EDR w trybie blokowania i wykryciu złośliwego artefaktu można zablokować i Ochrona punktu końcowego w usłudze Microsoft Defender działania naprawcze tego artefaktu. Zespół operacyjny zabezpieczeń zobaczy w Centrum akcji stan  wykrywania Zablokowany  lub [Prevented (Zablokowane](respond-machine-alerts.md#check-activity-details-in-action-center)) jako Ukończone akcje.
-
-Na poniższej ilustracji przedstawiono wystąpienie niechcianego oprogramowania wykrytego i zablokowanego przez inne EDR w trybie blokowania:
-
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="Wykrywanie przez EDR w trybie blokowania" lightbox="images/edr-in-block-mode-detection.png":::
-
-
-## <a name="enable-edr-in-block-mode"></a>Włączanie EDR w trybie blokowania
+[Wykrywanie i reagowanie punktów końcowych](overview-endpoint-detection-response.md) (EDR) w trybie bloku zapewnia dodatkową ochronę przed złośliwymi artefaktami, gdy Program antywirusowy Microsoft Defender nie jest podstawowym produktem antywirusowym i działa w trybie pasywnym. EDR w trybie bloku działa w tle, aby korygować złośliwe artefakty, które zostały wykryte przez EDR możliwości. Takie artefakty mogły zostać pominięte przez podstawowy produkt antywirusowy spoza firmy Microsoft. W przypadku urządzeń z systemem Program antywirusowy Microsoft Defender jako podstawowym programem antywirusowym EDR w trybie bloku zapewnia dodatkową warstwę ochrony, umożliwiając Program antywirusowy Microsoft Defender wykonywanie automatycznych działań w przypadku wykrywania EDR behawioralnych po naruszeniu zabezpieczeń.
 
 > [!IMPORTANT]
-> Począwszy od wersji platformy 4.18.2202.X, możesz teraz ustawić EDR w trybie blokowania, aby kierować określone grupy urządzeń za pomocą Intune CSP. W portalu EDR można nadal ustawiać ustawienia trybu Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">dzierżawy</a>. EDR trybie blokowania jest zalecane przede wszystkim dla urządzeń Program antywirusowy Microsoft Defender w trybie pasywnym (na urządzeniu jest zainstalowane i aktywne rozwiązanie antywirusowe inne niż firmy Microsoft). 
+> EDR w trybie bloku nie zapewnia całej ochrony dostępnej po włączeniu Program antywirusowy Microsoft Defender ochrony w czasie rzeczywistym. Wszystkie funkcje, które zależą od Program antywirusowy Microsoft Defender jako aktywnego rozwiązania antywirusowego, nie będą działać, w tym następujące kluczowe przykłady:
+>
+> - Ochrona w czasie rzeczywistym, w tym skanowanie przy dostępie, nie jest dostępna, gdy Program antywirusowy Microsoft Defender jest w trybie pasywnym. Aby dowiedzieć się więcej na temat ustawień zasad ochrony w czasie rzeczywistym, zobacz **[Włączanie i konfigurowanie Program antywirusowy Microsoft Defender zawsze włączonej ochrony](configure-real-time-protection-microsoft-defender-antivirus.md)**.
+>
+> - Funkcje, takie jak **[reguły ochrony sieci](network-protection.md)** i **[zmniejszania obszaru ataków](attack-surface-reduction.md)**, są dostępne tylko wtedy, gdy Program antywirusowy Microsoft Defender działa w trybie aktywnym.
+>
+> Oczekuje się, że rozwiązanie antywirusowe firmy innej niż Microsoft zapewnia te możliwości.
+
+EDR w trybie bloku jest zintegrowana z [& zarządzanie lukami w zabezpieczeniach zagrożeń](next-gen-threat-and-vuln-mgt.md). Zespół ds. zabezpieczeń organizacji otrzyma [zalecenie dotyczące zabezpieczeń](tvm-security-recommendation.md), aby włączyć EDR w trybie bloku, jeśli nie jest jeszcze włączona.
+
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="Zalecenie włączenia EDR w trybie bloku" lightbox="images/edrblockmode-TVMrecommendation.png":::
 
 > [!TIP]
-> Przed [włączeniem trybu blokowania](#requirements-for-edr-in-block-mode) upewnij się, że są EDR w trybie blokowania.
+> Aby uzyskać najlepszą ochronę, należy **[wdrożyć Ochrona punktu końcowego w usłudze Microsoft Defender punktów odniesienia](configure-machines-security-baseline.md)**.
+
+## <a name="what-happens-when-something-is-detected"></a>Co się stanie, gdy coś zostanie wykryte?
+
+Po włączeniu EDR w trybie bloku i wykryciu złośliwego artefaktu Ochrona punktu końcowego w usłudze Microsoft Defender blokuje i koryguje ten artefakt. Twój zespół ds. operacji zabezpieczeń będzie widzieć stan wykrywania **jako Zablokowany** lub **Zablokowany** w [centrum akcji](respond-machine-alerts.md#check-activity-details-in-action-center), wymieniony jako ukończone akcje.
+
+Na poniższej ilustracji przedstawiono wystąpienie niechcianego oprogramowania, które zostało wykryte i zablokowane przez EDR w trybie bloku:
+
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="Wykrywanie przez EDR w trybie bloku" lightbox="images/edr-in-block-mode-detection.png":::
+
+
+## <a name="enable-edr-in-block-mode"></a>Włączanie EDR w trybie bloku
+
+> [!IMPORTANT]
+> Począwszy od platformy w wersji 4.18.2202.X, możesz teraz ustawić EDR w trybie bloku, tak aby była przeznaczona dla określonych grup urządzeń przy użyciu Intune dostawców CSP. Możesz nadal ustawiać EDR w trybie bloku dla całej dzierżawy w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>. EDR w trybie bloku jest zalecane przede wszystkim w przypadku urządzeń, które działają Program antywirusowy Microsoft Defender w trybie pasywnym (na urządzeniu jest zainstalowane i aktywne rozwiązanie antywirusowe innej firmy niż Microsoft). 
+
+> [!TIP]
+> Przed włączeniem EDR w trybie bloku upewnij się, że [wymagania](#requirements-for-edr-in-block-mode) zostały spełnione.
 
 ### <a name="security-portal"></a>Portal zabezpieczeń 
 
-1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com/](https://security.microsoft.com/)) i zaloguj się.
+1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) i zaloguj się.
 
-2. Wybierz **Ustawienia** \> **Punkty końcowe Ogólne** \>  \> **funkcje zaawansowane**.
+2. Wybierz **pozycję Ustawienia** \> Ogólne **funkcje zaawansowane** **punktów końcowych** \>  \>.
 
-3. Przewiń w dół, a następnie włącz **opcję Włącz EDR w trybie blokowania**.
+3. Przewiń w dół, a następnie włącz opcję **Włącz EDR w trybie bloku**.
 
 ### <a name="intune"></a>Intune
 
-Aby utworzyć zasady niestandardowe w programie Intune, zobacz Wdrażanie OMA-URIs w celu kierowania usługi [CSP](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune) za pośrednictwem Intune i porównanie z lokalnym.
+Aby utworzyć zasady niestandardowe w Intune, zobacz [Deploy OMA-URIs to target a CSP through Intune (Wdrażanie OMA-URIs do docelowego dostawcy CSP za pośrednictwem Intune) oraz porównanie z lokalnymi](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).
 
-Aby uzyskać więcej informacji na temat programu CSP usługi Defender używanego do EDR w trybie blokowania, zobacz "Konfiguracja/strona biernaRemediation" w programie [Defender CSP](/windows/client-management/mdm/defender-csp).
+Aby uzyskać więcej informacji na temat dostawcy CSP usługi Defender używanego do EDR w trybie bloku, zobacz "Configuration/PassiveRemediation" (Konfiguracja/PasywneRemediacja) w obszarze [Dostawca CSP usługi Defender](/windows/client-management/mdm/defender-csp).
 
 
-## <a name="requirements-for-edr-in-block-mode"></a>Wymagania dotyczące EDR w trybie blokowania
+## <a name="requirements-for-edr-in-block-mode"></a>Wymagania dotyczące EDR w trybie bloku
 
-W poniższej tabeli wymieniono wymagania EDR trybie blokowania:
+W poniższej tabeli wymieniono wymagania dotyczące EDR w trybie bloku:
 
-|Wymaganie|Szczegóły|
+|Wymóg|Szczegóły|
 |---|---|
-|Uprawnienia|Administrator globalny lub administrator zabezpieczeń musi mieć przypisaną rolę administratora globalnego [lub administratora zabezpieczeń](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) w Azure Active Directory. Aby uzyskać więcej informacji, zobacz [Uprawnienia podstawowe](basic-permissions.md).|
-|System operacyjny|Na urządzeniach musi być uruchomiona jedna z następujących wersji programu Windows: <br/>— Windows 11 <br/>- Windows 10 (wszystkie wersje)<br/>- Windows Server 2022 <br/>- Windows Server 2019<br/>- Windows Server, wersja 1803 lub nowsza<br/>- Windows Server 2016 i Windows Server 2012 R2 (w nowym, ujednoliconym rozwiązaniu [klienta](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview))<sup>[[1](#fn1)]</sup>  |
-|Ochrona punktu końcowego w usłudze Microsoft Defender|Urządzenia muszą być podłączone do usługi Defender for Endpoint. Zobacz następujące artykuły: <br/>- [Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender](minimum-requirements.md)<br/>- [Urządzenia na urządzeniach i konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia](onboard-configure.md)<br/>- [Wdowe Windows do usługi Defender for Endpoint](configure-server-endpoints.md)<br/>- [Nowe Windows Server 2012 R2 i 2016 w nowoczesnym, ujednoliconym rozwiązaniu (wersja Preview)](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) |
-|Program antywirusowy Microsoft Defender|Urządzenia muszą Program antywirusowy Microsoft Defender zainstalowane i uruchomione w trybie aktywnym lub pasywnym. [Upewnij Program antywirusowy Microsoft Defender, że aktywny lub pasywny jest aktywny](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
-|Ochrona w chmurze|Program antywirusowy Microsoft Defender musi być tak skonfigurowany, aby włączono [ochronę w chmurze](enable-cloud-protection-microsoft-defender-antivirus.md).|
-|Program antywirusowy Microsoft Defender platformę|Urządzenia muszą być aktualne. Aby potwierdzić, używając programu PowerShell, uruchom [polecenie cmdlet Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) jako administrator. W **wierszu AMProductVersion** powinien być wyświetlony ciąg **4.18.2001.10** lub wyżej. <p> Aby dowiedzieć się więcej, zobacz [Zarządzanie aktualizacji programu antywirusowego Microsoft Defender i stosowanie punktów odniesienia](manage-updates-baselines-microsoft-defender-antivirus.md).|
-|Program antywirusowy Microsoft Defender aparat|Urządzenia muszą być aktualne. Aby potwierdzić, używając programu PowerShell, uruchom [polecenie cmdlet Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) jako administrator. W **wierszu AMEngineVersion** powinien być wyświetlony wiersz **1.1.16700.2** lub więcej. <p> Aby dowiedzieć się więcej, zobacz [Zarządzanie aktualizacji programu antywirusowego Microsoft Defender i stosowanie punktów odniesienia](manage-updates-baselines-microsoft-defender-antivirus.md).|
+|Uprawnienia|Musisz mieć przypisaną rolę administratora globalnego lub administratora zabezpieczeń w [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Aby uzyskać więcej informacji, zobacz [Podstawowe uprawnienia](basic-permissions.md).|
+|System operacyjny|Urządzenia muszą mieć uruchomioną jedną z następujących wersji Windows: <br/>- Windows 11 <br/>- Windows 10 (wszystkie wersje)<br/>- Windows Server 2022 <br/>- Windows Server 2019<br/>— serwer Windows, wersja 1803 lub nowsza<br/>- Windows Server 2016 i Windows Server 2012 R2 (z [nowym ujednoliconym rozwiązaniem klienta](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution))<sup>[[1](#fn1)]</sup>  |
+|Ochrona punktu końcowego w usłudze Microsoft Defender|Urządzenia muszą być dołączone do usługi Defender for Endpoint. Zobacz następujące artykuły: <br/>- [Minimalne wymagania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender](minimum-requirements.md)<br/>- [Dołączanie urządzeń i konfigurowanie możliwości Ochrona punktu końcowego w usłudze Microsoft Defender](onboard-configure.md)<br/>- [Dołączanie serwerów Windows do usługi Defender for Endpoint](configure-server-endpoints.md)<br/>- [Nowe funkcje Windows Server 2012 R2 i 2016 w nowoczesnym ujednoliconym rozwiązaniu (wersja zapoznawcza)](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) |
+|Program antywirusowy Microsoft Defender|Urządzenia muszą mieć Program antywirusowy Microsoft Defender zainstalowane i uruchomione w trybie aktywnym lub pasywnym. [Upewnij się, Program antywirusowy Microsoft Defender jest w trybie aktywnym lub pasywnym](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
+|Ochrona dostarczana przez chmurę|Program antywirusowy Microsoft Defender należy skonfigurować w taki sposób, aby [włączono ochronę dostarczaną przez chmurę](enable-cloud-protection-microsoft-defender-antivirus.md).|
+|platforma Program antywirusowy Microsoft Defender|Urządzenia muszą być aktualne. Aby potwierdzić, używając programu PowerShell, uruchom polecenie cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) jako administrator. W **wierszu AMProductVersion** powinna być widoczna wersja **4.18.2001.10 lub nowsza** . <p> Aby dowiedzieć się więcej, zobacz [Zarządzanie aktualizacji programu antywirusowego Microsoft Defender i stosowanie punktów odniesienia](manage-updates-baselines-microsoft-defender-antivirus.md).|
+|aparat Program antywirusowy Microsoft Defender|Urządzenia muszą być aktualne. Aby potwierdzić, używając programu PowerShell, uruchom polecenie cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) jako administrator. W wierszu **AMEngineVersion** powinna zostać wyświetlona wartość **1.1.16700.2** lub nowsza. <p> Aby dowiedzieć się więcej, zobacz [Zarządzanie aktualizacji programu antywirusowego Microsoft Defender i stosowanie punktów odniesienia](manage-updates-baselines-microsoft-defender-antivirus.md).|
 
-(<a id="fn1">1</a>) Zobacz [Czy EDR tryb blokowania jest obsługiwany na Windows Server 2016 i Windows Server 2012 R2?](#is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2)
+(<a id="fn1">1</a>) Czy [EDR jest obsługiwany w trybie bloku w Windows Server 2016 i Windows Server 2012 R2?](#is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2)
 
 > [!IMPORTANT]
-> Aby uzyskać najlepszą wartość ochrony, upewnij się, że twoje rozwiązanie antywirusowe jest skonfigurowane do odbierania regularnych aktualizacji i podstawowych funkcji oraz że twoje wykluczenia [są skonfigurowane](configure-exclusions-microsoft-defender-antivirus.md). EDR trybie blokowania z wyłączeniem wykluczeń zdefiniowanych dla Program antywirusowy Microsoft Defender, ale nie wskaźników zdefiniowanych dla Ochrona punktu końcowego w usłudze Microsoft Defender.[](manage-indicators.md)
+> Aby uzyskać najlepszą wartość ochrony, upewnij się, że rozwiązanie antywirusowe jest skonfigurowane do otrzymywania regularnych aktualizacji i podstawowych funkcji oraz że [wykluczenia są skonfigurowane](configure-exclusions-microsoft-defender-antivirus.md). EDR w trybie bloku uwzględnia wykluczenia zdefiniowane dla Program antywirusowy Microsoft Defender, ale nie [wskaźniki](manage-indicators.md) zdefiniowane dla Ochrona punktu końcowego w usłudze Microsoft Defender.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="can-i-specify-exclusions-for-edr-in-block-mode"></a>Czy mogę określić wykluczenia dla EDR w trybie blokowania?
+### <a name="can-i-specify-exclusions-for-edr-in-block-mode"></a>Czy mogę określić wykluczenia dla EDR w trybie bloku?
 
-W przypadku uzyskania wyników fałszywie dodatnich możesz przesłać plik do analizy w Microsoft Security Intelligence [przesyłania](https://www.microsoft.com/en-us/wdsi/filesubmission).
+Po uzyskaniu wyniku fałszywie dodatniego możesz przesłać plik do analizy w [witrynie przesyłania Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission).
 
-Można również zdefiniować wykluczenie dla Program antywirusowy Microsoft Defender. Zobacz [Konfigurowanie i weryfikowanie wykluczeń Program antywirusowy Microsoft Defender skanowania.](configure-exclusions-microsoft-defender-antivirus.md)
+Można również zdefiniować wykluczenie dla Program antywirusowy Microsoft Defender. Zobacz [Konfigurowanie i weryfikowanie wykluczeń dla skanowania Program antywirusowy Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
 
-### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>Czy muszę włączać tryb EDR blokowania, jeśli mam Program antywirusowy Microsoft Defender na urządzeniach?
+### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>Czy muszę włączyć EDR w trybie bloku, jeśli mam Program antywirusowy Microsoft Defender uruchomione na urządzeniach?
 
-Podstawowym celem usuwania EDR w trybie blokowania jest korygowanie problemów z wykrywaniem naruszeń, które zostały nieodebrane przez produkt antywirusowy innych niż firmy Microsoft. Włączanie trybu blokowania EDR w trybie blokowania Program antywirusowy Microsoft Defender jest w trybie aktywnym, ponieważ ochrona w czasie rzeczywistym ma być najpierw wykrywana i korygowana. Zalecamy włączenie trybu EDR w punktach końcowych, na których program Microsoft Defender dla oprogramowania antywirusowego działa w trybie pasywnym. EDR wykrywania mogą być automatycznie korygowane przez ochronę [pua](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) lub przez automatyczne wykrywanie & [w](automated-investigations.md) trybie blokowania.
+Głównym celem EDR w trybie bloku jest korygowanie wykryć po naruszeniu zabezpieczeń, które zostały pominięte przez produkt antywirusowy firmy innej niż Microsoft. Włączenie EDR w trybie bloku przy Program antywirusowy Microsoft Defender jest w trybie aktywnym, ponieważ ochrona w czasie rzeczywistym powinna najpierw przechwytywać i korygować wykrycia. Zalecamy włączenie EDR w trybie bloku w punktach końcowych, w których program antywirusowy Microsoft Defender for Antivirus działa w trybie pasywnym. EDR wykrywanie może być automatycznie korygowane przez [ochronę pua](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) lub [przez zautomatyzowane badanie & możliwości korygowania](automated-investigations.md) w trybie bloku.
 
-- Gdy Program antywirusowy Microsoft Defender jest w trybie pasywnym, EDR trybie blokowania zapewnia kolejną warstwę obrony wraz z Ochrona punktu końcowego w usłudze Microsoft Defender.
+### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>Czy EDR w trybie bloku wpłynie na ochronę antywirusową użytkownika?
 
-- Gdy program Program antywirusowy Microsoft Defender jest w trybie aktywnym, tryb EDR tryb blokowania nie umożliwia dodatkowego skanowania, ale umożliwia programowi Program antywirusowy Microsoft Defender automatyczne akcje dotyczące po naruszeniu zabezpieczeń i zachowań EDR wykrywania.
-
-### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>Czy EDR w trybie blokowania będzie miało wpływ na ochronę antywirusową użytkownika?
-
-EDR trybie blokowania nie wpływa na ochronę antywirusową uruchamianą na urządzeniach użytkowników przez inne firmy. EDR trybie blokowania działa w przypadku, gdy podstawowe rozwiązanie antywirusowe czegoś przeobrabi lub jeśli wykrycie naruszenia zostanie naruszyne. EDR trybie blokowania działa tak samo Program antywirusowy Microsoft Defender w trybie pasywnym, z tym że tryb EDR w trybie blokowania blokuje i rekultywuje złośliwe artefakty lub zachowania, które są wykrywane.
+EDR w trybie bloku nie ma wpływu na ochronę antywirusową innych firm działającą na urządzeniach użytkowników. EDR w trybie bloku działa, jeśli podstawowe rozwiązanie antywirusowe coś przegapi lub w przypadku wykrycia po naruszeniu zabezpieczeń. EDR w trybie bloku działa podobnie jak Program antywirusowy Microsoft Defender w trybie pasywnym, z tą różnicą, że EDR w trybie bloku blokuje i koryguje wykryte złośliwe artefakty lub zachowania.
 
 ### <a name="why-do-i-need-to-keep-microsoft-defender-antivirus-up-to-date"></a>Dlaczego muszę być na bieżąco Program antywirusowy Microsoft Defender?
 
-Ponieważ Program antywirusowy Microsoft Defender wykrywa i rekultywuje złośliwe elementy, należy zadbać o jego aktualny dostęp. Aby EDR tryb blokowy, używa ona najnowszych modeli nauki urządzeń, wykrywania zachowań i heuristics. Stos [funkcji programu Defender for Endpoint](microsoft-defender-endpoint.md) działa w zintegrowany sposób. Aby uzyskać najlepszą wartość ochrony, pamiętaj Program antywirusowy Microsoft Defender na bieżąco. Zobacz [Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego](manage-updates-baselines-microsoft-defender-antivirus.md).
+Ponieważ Program antywirusowy Microsoft Defender wykrywa i koryguje złośliwe elementy, ważne jest, aby być na bieżąco. Aby EDR w trybie bloku były skuteczne, używa najnowszych modeli uczenia urządzenia, wykrywania zachowań i heurystyki. Stos możliwości [usługi Defender for Endpoint](microsoft-defender-endpoint.md) działa w sposób zintegrowany. Aby uzyskać najlepszą wartość ochrony, należy zachować aktualną Program antywirusowy Microsoft Defender. Zobacz [Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie punktów odniesienia](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-### <a name="why-do-we-need-cloud-protection-maps-on"></a>Dlaczego jest potrzebna ochrona chmury (MAPS) w usłudze?
+### <a name="why-do-we-need-cloud-protection-maps-on"></a>Dlaczego potrzebujemy ochrony w chmurze (MAPS)?
 
-Aby włączyć tę funkcję na urządzeniu, ochrona chmury jest potrzebna. Ochrona w chmurze umożliwia usłudze [Defender dla](microsoft-defender-endpoint.md) punktu końcowego dostarczanie najnowszej i najwspanialszej ochrony w oparciu o nasze strony i głębie analizy zabezpieczeń, a także modeli nauki zachowań i urządzeń.
+Ochrona w chmurze jest potrzebna do włączenia funkcji na urządzeniu. Ochrona w chmurze umożliwia [usłudze Defender for Endpoint](microsoft-defender-endpoint.md) zapewnienie najnowszej i największej ochrony w oparciu o naszą rozległość i głębię analizy zabezpieczeń, a także modele uczenia behawioralnego i urządzenia.
 
 ### <a name="what-is-the-difference-between-active-and-passive-mode"></a>Jaka jest różnica między trybem aktywnym i pasywnym?
 
-W przypadku punktów końcowych z Windows 10, Windows 11, Windows Server w wersji 1803 lub nowszej, Windows Server 2019 lub Windows Server 2022, gdy program Program antywirusowy Microsoft Defender jest w trybie aktywnym, jest on używany jako podstawowe oprogramowanie antywirusowe na urządzeniu. Jeśli pracujesz w trybie pasywnym, Program antywirusowy Microsoft Defender nie jest podstawowym produktem antywirusowym. W takim przypadku zagrożenia nie są korygowane przez Program antywirusowy Microsoft Defender w czasie rzeczywistym.
+W przypadku punktów końcowych z systemem Windows 10, Windows 11, Windows Server w wersji 1803 lub nowszej, Windows Server 2019 lub Windows Server 2022, gdy Program antywirusowy Microsoft Defender jest w trybie aktywnym, jest on używany jako podstawowy program antywirusowy na urządzeniu. W trybie pasywnym Program antywirusowy Microsoft Defender nie jest podstawowym produktem antywirusowym. W takim przypadku zagrożenia nie są korygowane przez Program antywirusowy Microsoft Defender w czasie rzeczywistym.
 
 > [!NOTE]
-> Program antywirusowy Microsoft Defender działać w trybie pasywnym tylko wtedy, gdy urządzenie jest Ochrona punktu końcowego w usłudze Microsoft Defender.
+> Program antywirusowy Microsoft Defender może działać w trybie pasywnym tylko wtedy, gdy urządzenie jest dołączone do Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-Aby uzyskać więcej informacji, [zobacz Program antywirusowy Microsoft Defender zgodności](microsoft-defender-antivirus-compatibility.md).
+Aby uzyskać więcej informacji, zobacz [Program antywirusowy Microsoft Defender zgodność](microsoft-defender-antivirus-compatibility.md).
 
-### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>Jak mogę, czy Program antywirusowy Microsoft Defender aktywny, czy pasywny?
+### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>Jak mogę potwierdzić, Program antywirusowy Microsoft Defender jest w trybie aktywnym lub pasywnym?
 
-Aby sprawdzić, czy Program antywirusowy Microsoft Defender działa w trybie aktywnym, czy pasywnym, możesz użyć wiersza polecenia lub programu PowerShell na urządzeniu z uruchomionym Windows.
+Aby potwierdzić, czy Program antywirusowy Microsoft Defender działa w trybie aktywnym, czy pasywnym, możesz użyć wiersza polecenia lub programu PowerShell na urządzeniu z uruchomionym Windows.
 
 |Metoda|Procedura|
 |---|---|
-|PowerShell|1. Zaznacz menu Start, zacznij pisać `PowerShell`, a następnie otwórz Windows PowerShell w wynikach.<br/><br/>2. Wpisz `Get-MpComputerStatus`.<br/><br/>3. Na liście wyników w wierszu **AMRunningMode** poszukaj jednej z następujących wartości:<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>Aby dowiedzieć się więcej, [zobacz Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
-|Wiersz polecenia|1. Wybierz wiersz menu Start, zacznij pisać `Command Prompt`, a następnie Windows w wynikach wiersza polecenia.<br/><br/>2. Wpisz `sc query windefend`.<br/><br/>3. Na liście wyników w wierszu **WOJEWÓDZTWO** potwierdź, że usługa jest uruchomiona. |
+|PowerShell|1. Wybierz menu Start, rozpocznij wpisywanie `PowerShell`, a następnie otwórz Windows PowerShell w wynikach.<br/><br/>2. Wpisz `Get-MpComputerStatus`.<br/><br/>3. Na liście wyników w wierszu **AMRunningMode** poszukaj jednej z następujących wartości:<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>Aby dowiedzieć się więcej, zobacz [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
+|Wiersz polecenia|1. Wybierz menu Start, rozpocznij wpisywanie `Command Prompt`, a następnie otwórz Windows wiersza polecenia w wynikach.<br/><br/>2. Wpisz `sc query windefend`.<br/><br/>3. Na liście wyników w wierszu **STATE** upewnij się, że usługa jest uruchomiona. |
 
-### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>Jak mogę, że EDR tryb blokowania jest włączone w trybie Program antywirusowy Microsoft Defender w trybie pasywnym?
+### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>Jak mogę potwierdzić, że EDR w trybie bloku jest włączona z Program antywirusowy Microsoft Defender w trybie pasywnym?
 
-Za pomocą programu PowerShell można sprawdzić, EDR tryb blokowania jest włączony w trybie Program antywirusowy Microsoft Defender w trybie pasywnym.
+Za pomocą programu PowerShell możesz potwierdzić, że EDR w trybie bloku jest włączony, a Program antywirusowy Microsoft Defender działa w trybie pasywnym.
 
-1. Zaznacz menu Start, zacznij pisać `PowerShell`, a następnie otwórz Windows PowerShell w wynikach.
+1. Wybierz menu Start, rozpocznij wpisywanie `PowerShell`, a następnie otwórz Windows PowerShell w wynikach.
 
 2. Typ: `Get-MPComputerStatus|select AMRunningMode`.
 
-3. Potwierdź, że zostanie wyświetlony wynik ( `EDR Block Mode`.
+3. Upewnij się, `EDR Block Mode`że jest wyświetlany wynik , .
 
    > [!TIP]
-   > Jeśli Program antywirusowy Microsoft Defender jest w trybie aktywnym, będzie wyświetlony zamiast `Normal` .`EDR Block Mode` Aby dowiedzieć się więcej, [zobacz Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).
+   > Jeśli Program antywirusowy Microsoft Defender jest w trybie aktywnym, zobaczysz `Normal` zamiast `EDR Block Mode`. Aby dowiedzieć się więcej, zobacz [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).
 
-### <a name="is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2"></a>Czy EDR tryb blokowania jest obsługiwany na Windows Server 2016 i Windows Server 2012 R2?
+### <a name="is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2"></a>Czy EDR w trybie bloku jest obsługiwane w Windows Server 2016 i Windows Server 2012 R2?
 
-Jeśli Program antywirusowy Microsoft Defender działa w trybie aktywnym lub pasywnym, EDR trybie blokowania jest obsługiwane w następujących wersjach programu Windows:
+Jeśli Program antywirusowy Microsoft Defender działa w trybie aktywnym lub pasywnym, EDR w trybie bloku są obsługiwane następujące wersje Windows:
 
 - Windows 11
 - Windows 10 (wszystkie wersje)
-- Windows Server w wersji 1803 lub nowszej 
+- Windows Server, wersja 1803 lub nowsza 
 - Windows Server 2022
 - Windows Server 2019 
-- Windows Server 2016 i Windows Server 2012 R2 (za pomocą [nowego, ujednoliconego rozwiązania klienta](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview))
+- Windows Server 2016 i Windows Server 2012 R2 (z [nowym ujednoliconym rozwiązaniem klienckim](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution))
 
-Nowe [ujednolicone](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) rozwiązanie klienckie dla komputerów Windows Server 2016 i Windows Server 2012 R2 umożliwia uruchamianie EDR w trybie blokowania w trybie pasywnym lub aktywnym.
+Dzięki [nowemu ujednoliconemu rozwiązaniu klienckiemu](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) dla Windows Server 2016 i Windows Server 2012 R2 można uruchamiać EDR w trybie bloku w trybie pasywnym lub aktywnym.
 
 > [!NOTE]
-> Windows Server 2016 i Windows Server 2012 R2 muszą zostać naniesone zgodnie z instrukcjami podanymi w te Windows, [](configure-server-endpoints.md) aby ta funkcja działała. 
+> Windows Server 2016 i Windows Server 2012 R2 muszą zostać dołączone przy użyciu instrukcji zawartych w temacie [Dołączanie serwerów Windows](configure-server-endpoints.md), aby ta funkcja działała. 
 
-### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Ile czasu trwa wyłączenie EDR w trybie blokowania?
+### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Ile czasu zajmuje wyłączenie EDR w trybie bloku?
 
-Jeśli wyłączysz funkcję EDR trybie blokowania, wyłączenie tej funkcji przez system może potrwać do 30 minut.
+Jeśli zdecydujesz się wyłączyć EDR w trybie bloku, wyłączenie tej możliwości przez system może potrwać do 30 minut.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Blog Community tech:Introducing EDR in block mode: Stopping attacks in their tracks](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
+- [Blog tech Community: wprowadzenie EDR w trybie bloku: zatrzymywanie ataków na swoich torach](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 
 - [Blokowanie i ograniczanie behawioralne](behavioral-blocking-containment.md)

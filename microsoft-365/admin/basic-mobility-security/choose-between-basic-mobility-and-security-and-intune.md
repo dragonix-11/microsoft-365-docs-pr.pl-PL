@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Pakiety Basic Mobility and Security są częścią planów Microsoft 365.
-ms.openlocfilehash: 0c1c61181d7e8bd5eb0ee000e29285c32a454692
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 36190be6345188503e7ba5147b72918a342aba73
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713850"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781188"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Wybierz opcję Podstawowa mobilność i zabezpieczenia lub Intune
 
@@ -86,20 +86,20 @@ Akcje zdalne usługi Basic Mobility and Security obejmują wycofywanie, czyszcze
 W przypadku Intune masz następujący zestaw akcji:
 
 - [Resetowanie rozwiązania Autopilot](/mem/autopilot/windows-autopilot-reset) (tylko Windows)
-- Odzyskiwanie   [klucza funkcji Bitlocker](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (tylko Windows)
+- [Odzyskiwanie klucza funkcji Bitlocker](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (tylko Windows)
 - [Używanie czyszczenia, wycofywania lub ręcznego wyrejestrowania urządzenia](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
-- [Wyłączanie blokady](/mem/intune/remote-actions/device-activation-lock-disable)  aktywacji (tylko system iOS)
-- [Nowy początek](/mem/intune/remote-actions/device-fresh-start)  (tylko Windows)
-- [Pełne skanowanie](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)  (tylko Windows 10)
-- [Lokalizowanie urządzenia](/mem/intune/remote-actions/device-locate)  (tylko system iOS)
-- [Tryb](/mem/intune/remote-actions/device-lost-mode)  zgubienia (tylko system iOS)— [szybkie skanowanie](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (tylko Windows 10)
+- [Wyłącz blokadę aktywacji](/mem/intune/remote-actions/device-activation-lock-disable) (tylko system iOS)
+- [Rozpoczęcie od nowa](/mem/intune/remote-actions/device-fresh-start) (tylko Windows)
+- [Pełne skanowanie](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (tylko Windows 10)
+- [Lokalizowanie urządzenia](/mem/intune/remote-actions/device-locate) (tylko system iOS)
+- [Tryb zgubienia](/mem/intune/remote-actions/device-lost-mode) (tylko system iOS) — [szybkie skanowanie](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (tylko Windows 10)
 - [Zdalne sterowanie dla systemu Android](/mem/intune/remote-actions/teamviewer-support)
 - [Zdalne blokowanie](/mem/intune/remote-actions/device-remote-lock)
 - [Zmienianie nazwy urządzenia](/mem/intune/remote-actions/device-rename)
-- [Resetowanie ponownego uruchamiania](/mem/intune/remote-actions/device-passcode-reset) [](/mem/intune/remote-actions/device-restart) kodu dostępu (tylko Windows)
+- [Resetowanie ponownego uruchamiania kodu dostępu](/mem/intune/remote-actions/device-passcode-reset) [](/mem/intune/remote-actions/device-restart) (tylko Windows)
 - [Aktualizowanie analizy zabezpieczeń Windows Defender](https://www.microsoft.com/en-us/wdsi/defenderupdates) (tylko Windows)
 - [Windows 10 resetowanie numeru PIN](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset) (tylko Windows)
-- [Wysyłanie powiadomień](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)  niestandardowych (Android, iOS, iPad OS)
+- [Wysyłanie powiadomień niestandardowych](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad OS)
 - [Synchronizowanie urządzenia](/mem/intune/remote-actions/device-sync)
 
 Aby uzyskać więcej informacji na temat akcji Intune, zobacz [dokumentację Microsoft Intune](/mem/intune/).

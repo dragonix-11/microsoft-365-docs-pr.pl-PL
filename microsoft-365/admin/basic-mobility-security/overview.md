@@ -1,5 +1,5 @@
 ---
-title: Omówienie mobilności podstawowej i zabezpieczeń dla Microsoft 365
+title: Omówienie pakietu Basic Mobility and Security dla Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,51 +18,51 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Za pomocą mobilności podstawowej i zabezpieczeń skonfiguruj zasady zabezpieczeń urządzeń i reguły dostępu.
-ms.openlocfilehash: 4fb1b8ca467d86259f2608af5140510a2a88b23a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Użyj usługi Basic Mobility and Security, aby ustawić zasady zabezpieczeń urządzeń i reguły dostępu.
+ms.openlocfilehash: b4752a6f1b71c453b3d1b89adeb25f337a65c255
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983934"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780858"
 ---
-# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Omówienie mobilności podstawowej i zabezpieczeń dla Microsoft 365
+# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Omówienie pakietu Basic Mobility and Security dla Microsoft 365
 
-Korzystając z funkcji Basic Mobility and Security, możesz zabezpieczać urządzenia przenośne, które są połączone z Twoją Microsoft 365 twoją organizacją. Urządzenia przenośne, takie jak smartfony i tablety, które są używane do uzyskiwania dostępu do służbowej poczty e-mail, kalendarza, kontaktów i dokumentów, są bardzo ważną częścią zapewniania pracownikom wykonanej pracy w dowolnym czasie i z dowolnego miejsca. Dlatego bardzo ważne jest, aby chronić informacje organizacji, gdy korzystają z urządzeń. Za pomocą mobilności podstawowej i zabezpieczeń możesz ustawiać zasady zabezpieczeń urządzeń i reguły dostępu oraz czyścić urządzenia przenośne w przypadku ich zgubienia lub kradzieży.
+Urządzeniami przenośnymi można zarządzać i zabezpieczać je po nawiązaniu połączenia z organizacją Microsoft 365 przy użyciu pakietu Basic Mobility and Security. Urządzenia przenośne, takie jak smartfony i tablety, które są używane do uzyskiwania dostępu do służbowej poczty e-mail, kalendarza, kontaktów i dokumentów, odgrywają dużą rolę w upewnieniu się, że pracownicy wykonują swoją pracę w dowolnym momencie, z dowolnego miejsca. Dlatego ważne jest, aby chronić informacje organizacji, gdy użytkownicy korzystają z urządzeń. Usługa Basic Mobility and Security umożliwia ustawianie zasad zabezpieczeń urządzeń i reguł dostępu oraz czyszczenie urządzeń przenośnych w przypadku ich utraty lub kradzieży.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Konfiguracja mobilności podstawowej i zabezpieczeń.":::
+:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Konfiguracja pakietu Basic Mobility and Security.":::
 
 ## <a name="what-types-of-devices-can-you-manage"></a>Jakimi typami urządzeń można zarządzać?
 
-Za pomocą funkcji Basic Mobility and Security możesz zarządzać wieloma typami urządzeń przenośnych, takich Windows Phone, Android, iPhone i iPad. Aby zarządzać urządzeniami przenośnymi używanymi przez osoby w Twojej organizacji, każda osoba musi mieć mającą zastosowanie licencję usługi Microsoft 365, a jej urządzenie musi być zarejestrowane na stronie Podstawowa mobilność i zabezpieczenia.
+Usługa Basic Mobility and Security umożliwia zarządzanie wieloma typami urządzeń przenośnych, takimi jak Windows Phone, Android, iPhone i iPad. Aby zarządzać urządzeniami przenośnymi używanymi przez osoby w organizacji, każda osoba musi mieć odpowiednią licencję Microsoft 365, a jej urządzenie musi być zarejestrowane w usłudze Basic Mobility and Security.
 
-Aby sprawdzić, jakie urządzenia obsługuje pakiet Basic Mobility i Zabezpieczenia, zobacz Możliwości  [pakietu Basic Mobility i zabezpieczeń](capabilities.md).
+Aby zobaczyć, co usługa Basic Mobility and Security obsługuje dla każdego typu urządzenia, zobacz [Możliwości usługi Basic Mobility and Security](capabilities.md).
 
-## <a name="setup-steps-for-basic-mobility-and-security"></a>Kroki konfigurowania dla mobilności podstawowej i zabezpieczeń
+## <a name="setup-steps-for-basic-mobility-and-security"></a>Kroki konfiguracji dla pakietu Basic Mobility and Security
 
-Administrator Microsoft 365 musi wykonać następujące czynności, aby aktywować i skonfigurować pakiet Basic Mobility and Security. Aby uzyskać szczegółowe instrukcje, postępuj zgodnie ze wskazówkami w [tece Konfigurowanie mobilności podstawowej i zabezpieczeń](set-up.md). 
+Administrator globalny Microsoft 365 musi wykonać następujące kroki, aby aktywować i skonfigurować pakiet Basic Mobility and Security. Aby uzyskać szczegółowe instrukcje, postępuj zgodnie ze wskazówkami w [temacie Konfigurowanie pakietu Basic Mobility and Security](set-up.md). 
 
-Poniżej podsumowaliśmy kroki:
+Oto podsumowanie kroków:
 
-**Krok 1.** Aktywuj pakiet Basic Mobility and Security, korzystając z procedury  [w tece Jak skonfigurować podstawową mobilność i zabezpieczenia](set-up.md).
+**Krok 1:** Aktywuj pakiet Basic Mobility and Security, wykonując kroki opisane w [temacie Konfigurowanie pakietu Basic Mobility and Security](set-up.md).
 
-**Krok 2.** Skonfiguruj pakiet Basic Mobility and Security, na przykład tworząc certyfikat usługi APN do zarządzania urządzeniami z systemem iOS i dodając rekord systemu nazw domen (DNS) dla swojej domeny w celu obsługi Windows telefonów.
+**Krok 2:** Skonfiguruj usługę Basic Mobility and Security, na przykład tworząc certyfikat usługi APNs do zarządzania urządzeniami z systemem iOS i dodając rekord DNS (Domain Name System) dla domeny w celu obsługi Windows telefonów.
 
-**Krok 3.** Utwórz zasady dotyczące urządzeń i zastosuj je do grup użytkowników. Gdy to zrobisz, użytkownicy otrzymają wiadomość o rejestracji na swoim urządzeniu, a po zakończeniu rejestracji ich urządzenia są ograniczone przez zasady, które dla nich skonfigurujeś. Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzenia przenośnego za pomocą platformy Basic Mobility and Security](enroll-your-mobile-device.md). 
+**Krok 3.** Utwórz zasady urządzeń i zastosuj je do grup użytkowników. Gdy to zrobisz, użytkownicy otrzymają komunikat o rejestracji na swoim urządzeniu, a po zakończeniu rejestracji ich urządzenia będą ograniczone przez skonfigurowane dla nich zasady. Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security](enroll-your-mobile-device.md). 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Ustawienia podstawowych zasad zabezpieczeń i mobilności.":::
+:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Podstawowe ustawienia zasad zabezpieczeń i mobilności.":::
 
-## <a name="device-management-tasks"></a>Zadania związane z zarządzaniem urządzeniami
+## <a name="device-management-tasks"></a>Zadania zarządzania urządzeniami
 
-Po skonfigurowaniu funkcji Basic Mobility and Security i zarejestrowaniu urządzeń przez Twoich użytkowników możesz w razie potrzeby zarządzać urządzeniami, zablokować dostęp lub wyczyścić urządzenie. Aby dowiedzieć się więcej o niektórych typowych zadaniach zarządzania urządzeniami, w tym o miejscu ich wykonania, zobacz Zarządzanie urządzeniami zarejestrowanymi w usłudze Zarządzanie urządzeniami przenośnymi w [celu Microsoft 365](manage-enrolled-devices.md).
+Po skonfigurowaniu pakietu Basic Mobility and Security i zarejestrowaniu urządzeń przez użytkowników można zarządzać urządzeniami, blokować dostęp lub czyścić urządzenie, jeśli to konieczne. Aby dowiedzieć się więcej o niektórych typowych zadaniach zarządzania urządzeniami, w tym o tym, gdzie wykonywać zadania, zobacz [Zarządzanie urządzeniami zarejestrowanymi w usłudze Mobile Zarządzanie urządzeniami dla Microsoft 365](manage-enrolled-devices.md).
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>Inne sposoby zarządzania urządzeniami i aplikacjami
 
-Jeśli potrzebujesz tylko zarządzania aplikacjami mobilnymi (MAM), być może chcesz, aby osoby aktualizujące projekty służbowe na swoich urządzeniach, usługa Intune udostępnia inną opcję oprócz rejestrowania urządzeń i zarządzania nimi. Subskrypcja usługi Intune umożliwia skonfigurowanie zasad MAM za pomocą portalu Azure Portal, nawet jeśli urządzenia innych osób nie są zarejestrowane w usłudze Intune. Aby uzyskać więcej informacji, zobacz  [Omówienie zasad ochrony aplikacji](/mem/intune/apps/app-protection-policy).
+Jeśli potrzebujesz tylko zarządzania aplikacjami mobilnymi (MAM), być może dla osób aktualizujących projekty służbowe na własnych urządzeniach, Intune oferuje inną opcję oprócz rejestrowania urządzeń i zarządzania nimi. Subskrypcja Intune umożliwia konfigurowanie zasad zarządzania aplikacjami mobilnymi przy użyciu Azure Portal, nawet jeśli urządzenia osób nie są zarejestrowane w Intune. Aby uzyskać więcej informacji, zobacz [omówienie zasad Ochrona aplikacji](/mem/intune/apps/app-protection-policy).
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Konfigurowanie mobilności podstawowej i zabezpieczeń](set-up.md) (artykuł)\
-[Zarejestruj swoje urządzenie przenośne za pomocą platformy Basic Mobility and Security](enroll-your-mobile-device.md) (artykuł)\
-[Zarządzanie urządzeniami zarejestrowanymi w Zarządzaniu urządzeniami przenośnymi na Microsoft 365](manage-enrolled-devices.md) (artykuł)\
-[Uzyskaj szczegółowe informacje na temat urządzeń zarządzanych przez pakiet Basic Mobility and Security](get-details-about-managed-devices.md) (artykuł)
+[Konfigurowanie pakietu Basic Mobility and Security](set-up.md) (artykuł)\
+[Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security](enroll-your-mobile-device.md) (artykuł)\
+[Zarządzanie urządzeniami zarejestrowanymi w usłudze Mobile Zarządzanie urządzeniami dla Microsoft 365](manage-enrolled-devices.md) (artykuł)\
+[Uzyskiwanie szczegółowych informacji o urządzeniach zarządzanych przez usługę Basic Mobility and Security](get-details-about-managed-devices.md) (artykuł)

@@ -1,5 +1,5 @@
 ---
-title: Wynik produktywności firmy Microsoft — Microsoft 365 kondycji aplikacji
+title: Microsoft Productivity Score — kondycja aplikacji Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,105 +18,105 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Szczegóły kondycji Aplikacje Microsoft 365 — technologia zapewnia wydajność.
-ms.openlocfilehash: 22bc1d503bc177722cb12d54c63adc3869755491
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Szczegółowe informacje o kondycji Aplikacje Microsoft 365 — współczynnik wydajności środowiska technologii.
+ms.openlocfilehash: 2e8e44c954d8d1d6bacca766bd528c3897b7686b
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321771"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782154"
 ---
-# <a name="microsoft-365-apps-health--technology-experiences"></a>Aplikacje Microsoft 365 kondycji — środowisko technologii
+# <a name="microsoft-365-apps-health--technology-experiences"></a>Aplikacje Microsoft 365 zdrowia — środowiska technologiczne
 
-Wynik produktywności zapewnia wgląd w transformację cyfrową organizacji dzięki jej użyciu Microsoft 365 technologii, które obsługują ten wynik. Wyniki Twojej organizacji odzwierciedlają pomiary osób i technologii oraz mogą być porównywane z poziomami odniesienia organizacji podobnymi do Twoich. Kategoria Kondycja aplikacji jest częścią miar, które są dostępne w obszarze doświadczeń technologicznych. Aby dowiedzieć się więcej, zapoznaj się z omówieniem [wyników produktywności](productivity-score.md) i przeczytaj [Oświadczenie o ochronie prywatności firmy Microsoft](https://privacy.microsoft.com/privacystatement).
+Wynik produktywności zapewnia wgląd w proces transformacji cyfrowej organizacji dzięki wykorzystaniu Microsoft 365 i środowisk technologicznych, które ją obsługują. Wynik twojej organizacji odzwierciedla pomiary osób i środowiska technologicznego i można go porównać z testami porównawczymi organizacji podobnymi do Twoich. Kategoria kondycji aplikacji jest częścią pomiarów należących do środowisk technologicznych. Aby dowiedzieć się więcej, zapoznaj się z [omówieniem oceny produktywności](productivity-score.md) i przeczytaj [Oświadczenie o ochronie prywatności firmy Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Dlaczego Twoja organizacja&#39;ma Microsoft 365 kondycji aplikacji
+## <a name="why-your-organizations-microsoft-365-apps-health-score-matters"></a>Dlaczego ocena kondycji aplikacji Microsoft 365 organizacji ma znaczenie
 
-Wydajność Twojej organizacji zależy od zdrowego środowiska aplikacji. Urządzenia z najbardziej aktualnymi wersjami aplikacji pakietu Microsoft 365 w zalecanym kanale są bezpieczniejsze i pomagają osobom w organizacji w najlepiej wyeksłować funkcje aplikacji Microsoft 365.
+Wydajność organizacyjna zależy od zdrowego środowiska aplikacji. Urządzenia z większością bieżących wersji aplikacji Microsoft 365 na zalecanym kanale są bezpieczniejsze i pomagają osobom w organizacji w jak największym zakresie wykorzystać funkcje Microsoft 365.
 
-## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Jak obliczamy wynik Microsoft 365 kondycji aplikacji
+## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Jak obliczamy wynik kondycji aplikacji Microsoft 365
 
-Obliczamy twój Microsoft 365 kondycji aplikacji przez mierzenie liczby urządzeń na każdym kanale aktualizacji. Określamy również, czy na urządzeniach działa obsługiwana wersja i najnowsza wersja Microsoft 365 aplikacji.
+Obliczamy wynik kondycji aplikacji Microsoft 365, mierząc liczbę urządzeń w każdym kanale aktualizacji. Określamy również, czy na urządzeniach działa obsługiwana wersja i czy jest to najnowsza wersja Microsoft 365 aplikacji.
 
-Zapewniamy podstawową analizę tego doświadczenia, który zawiera kluczowe metryki dla tej kategorii. Następnie do obliczenia wyniku zostanie użyta framework oceniania(-a) szczegółowy w poniższych sekcjach.
+Udostępniamy podstawowy wgląd w środowisko zawierające kluczowe metryki dla tej kategorii. Następnie struktura oceniania, opisana w poniższych sekcjach, jest używana do obliczania wyniku.
 
-### <a name="primary-insight"></a>Podstawowe informacje
+### <a name="primary-insight"></a>Podstawowa analiza
 
-Podstawowa analiza jest obliczana na podstawie urządzeń, na Aplikacje Microsoft 365 na zalecanym zaktualizowanym kanale.
+Podstawowa analiza jest obliczana na podstawie urządzeń z uruchomionymi Aplikacje Microsoft 365 na zalecanym zaktualizowanym kanale.
 
-:::image type="content" source="../../media/appshealth-primary.png" alt-text="Wizualizacja aplikacji w podstawowym Microsoft 365 wzroku.":::
+:::image type="content" source="../../media/appshealth-primary.png" alt-text="Podstawowa wizualizacja w zasięgu wzroku dla aplikacji Microsoft 365.":::
 
-Informacje rozważane w tym te Microsoft 365 dotyczące kanału aplikacji, kompilacji i wersji uruchomionej na urządzeniu.
+Informacje brane pod uwagę w tym celu obejmują Microsoft 365 kanału aplikacji, kompilacji i wersji uruchomionej na urządzeniu.
 
-1. **Nagłówek:**  Przedstawia procent urządzeń w zalecanym kanale aktualizacji
-1. **Treść:**  Więcej informacji na temat uruchamiania urządzeń w zalecanym kanale aktualizacji pomoże uzyskać najnowszą aktualizację i bieżące wersje na urządzeniach.
-1. **Wizualizacja (stan bieżący):**
-    - Słupki poziome, na których części o niebieskim kolorze reprezentują procent urządzeń działających w zalecanym, zaktualizowanym kanale.
-    - Wyróżnij (licznik/mianownik) ułamka użytego do obliczenia procentu wyrażonego w słupkach poziomych.
-    - Wartość peer benchmark dla urządzeń działających w zalecanym, zaktualizowanym kanale jest również wyświetlana jako wartość procentowa.
+1. **Nagłówka:**  Pokazuje procent urządzeń w zalecanym kanale aktualizacji
+1. **Ciała:**  Zawiera więcej informacji na temat sposobu uruchamiania urządzeń w zalecanym kanale aktualizacji, które pomogą uzyskać najnowszą aktualizację i uruchomić bieżące wersje na urządzeniach.
+1. **Wizualizacja (bieżący stan):**
+    - Słupki poziome, w których części w kolorze niebieskim reprezentują procent urządzeń z zalecanym zaktualizowanym kanałem.
+    - Wyróżnij (licznik/mianownik) ułamka używanego do obliczania wartości procentowej wyrażonej w poziomych słupkach.
+    - Wartość równorzędnego testu porównawczego dla urządzeń działających w zalecanym zaktualizowanym kanale jest również wyświetlana jako wartość procentowa.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Trend visualization of the primary insight
+#### <a name="trend-visualization-of-the-primary-insight"></a>Wizualizacja trendu podstawowego wglądu w szczegółowe informacje
 
-Na poniższym wykresie przedstawiono liczbę urządzeń w zalecanym kanale aktualizacji w ciągu ostatnich 180 dni. Punkt danych na wykresie liniowym jest zagregowaną aktywnością z ostatnich 28 dni.
+Na poniższym wykresie przedstawiono liczbę urządzeń w zalecanym kanale aktualizacji w ciągu ostatnich 180 dni. Punkt danych na wykresie liniowym to zagregowane działanie z ostatnich 28 dni.
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Wykres, na którym przedstawiono trend dla urządzeń z zalecanym kanałem aktualizacji.":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Wykres przedstawiający trend dla urządzeń z zalecanym kanałem aktualizacji.":::
 
-### <a name="scoring-framework"></a>Struktury oceniania
+### <a name="scoring-framework"></a>Struktura oceniania
 
-Wynik Microsoft 365 kondycji aplikacji mierzy, czy urządzenia działają Microsoft 365 w zalecanym kanale i w najnowszych wersjach.
+Ocena kondycji aplikacji Microsoft 365 mierzy, czy urządzenia są uruchomione Microsoft 365 aplikacje na zalecanym kanale i w najnowszych wersjach.
 
-## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Poznawanie organizacji i Microsoft 365 kanałów i wersji aplikacji
+## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Eksplorowanie organizacji Microsoft 365 kanałów i wersji aplikacji
 
-Zapewniamy także informacje, które pomagają uzyskać dodatkowy wgląd w to, jakie kanały i wersje są obecnie uruchomione na urządzeniach w Twojej organizacji. Te dodatkowe metryki nie zwiększają Twojego wyniku produktywności, ale mogą pomóc w utworzeniu planu działania w celu zwiększenia wyniku kondycji aplikacji pakietu Microsoft 365 przez upewnienie się, że urządzenia Microsoft 365 w polecanych kanałach.
+Udostępniamy również informacje pomocnicze, które ułatwiają uzyskanie dodatkowego wglądu w kanały i wersje urządzeń w organizacji, które są obecnie uruchomione. Te dodatkowe metryki nie przyczyniają się do oceny wydajności, ale mogą pomóc w utworzeniu planu działania w celu zwiększenia oceny kondycji aplikacji Microsoft 365, upewniając się, że urządzenia działają Microsoft 365 aplikacji w zalecanych kanałach.
 
-### <a name="devices-on-current-channel-and-running-supported-versions"></a>Urządzenia w bieżącym kanale i z obsługiwanymi wersjami
+### <a name="devices-on-current-channel-and-running-supported-versions"></a>Urządzenia w bieżącym kanale i z uruchomionymi obsługiwanymi wersjami
 
 :::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Wykres przedstawiający liczbę urządzeń w bieżącym, obsługiwanym kanale.":::
 
-1. **Nagłówek:**  Wyróżnia procent urządzeń w bieżącym kanale to obsługiwane wersje Aplikacje Microsoft 365
-1. **Treść:**  Zawiera informacje o wartości urządzeń z systemem Microsoft 365 w zalecanym kanale.
-1. **Wizualizacja:**  Podział wizualizacji odzwierciedla zakres procentowy urządzeń w najnowszych i obsługiwanych wersjach aplikacji pakietu Microsoft 365 różnych kanałach), w następujący sposób:
-    - **Obsługiwane wersje:** Niebieski pasek odpowiada procentowej wartości urządzeń uruchomionych w obsługiwanej wersji Microsoft 365 aplikacji.
-    - **Najnowsze wersje:** Ten kolorowy pasek oznacza procent urządzeń w najnowszych wersjach.
-1. **Dowiedz się więcej:**   Wybierz ten link, aby wyświetlić zawartość Pomocy.
+1. **Nagłówka:**  Wyróżnia odsetek urządzeń w bieżącym kanale, w których są uruchomione obsługiwane wersje Aplikacje Microsoft 365
+1. **Ciała:**  Zawiera informacje o wartości urządzeń z uruchomionymi aplikacjami Microsoft 365 w zalecanym kanale.
+1. **Wizualizacji:**  Podział w wizualizacji reprezentuje zakres, w jakim procent urządzeń w najnowszych i obsługiwanych wersjach Microsoft 365 aplikacji w różnych kanałach), w następujący sposób:
+    - **Obsługiwane wersje:** Niebieski pasek reprezentuje procent urządzeń uruchomionych w obsługiwanej wersji aplikacji Microsoft 365.
+    - **Najnowsze wersje:** Turkusowy pasek kolorów reprezentuje procent urządzeń w najnowszych wersjach.
+1. **Dowiedz się więcej:**   Wybierz ten link, aby wyświetlić zawartość pomocy.
 
 ### <a name="devices-running-latest-and-supported-versions"></a>Urządzenia z najnowszymi i obsługiwanymi wersjami
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Wykres przedstawiający liczbę urządzeń z najnowszą i obsługiwaną wersjami aplikacji.":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Wykres przedstawiający liczbę urządzeń z najnowszymi i obsługiwanymi wersjami aplikacji.":::
 
-1. **Nagłówek:**  Wyróżnia procent urządzeń z obsługiwanymi wersjami i urządzeń z najnowszymi wersjami.
-1. **Treść:**  Zawiera informacje o wartości działania urządzeń w zalecanych kanałach i obsługiwanych/najnowszych wersjach.
-1. **Wizualizacja:** Podział wizualizacji ma na celu pokazanie zakresu, na ile urządzeń z obsługiwanymi wersjami i najnowszą Microsoft 365 aplikacji):
-    - **Obsługiwane wersje:** Niebieska (kolorowa) część słupka i ułamek (dzielnika) na pasku reprezentują procent urządzeń z obsługiwaną wersją Microsoft 365 aplikacji.
-        - Licznik: Liczba urządzeń w obsługiwanych wersjach aplikacji Microsoft 365 w ciągu ostatnich 28 dni
-        - Dzielni: liczba urządzeń korzystających z Microsoft 365 aplikacji w ciągu ostatnich 28 dni
-    - **Najnowsze wersje:** Część tealowa (kolorowa) słupka i ułamek (licznik/mianownik) na pasku reprezentują procent urządzeń z najnowszą Microsoft 365 aplikacji.
-        - Licznik: Liczba urządzeń w najnowszych wersjach aplikacji Microsoft 365 w ciągu ostatnich 28 dni
-        - Dzielni: liczba urządzeń korzystających z Microsoft 365 aplikacji w ciągu ostatnich 28 dni
-1. **Dowiedz się więcej:**   Wybierz ten link, aby wyświetlić zawartość Pomocy.
+1. **Nagłówka:**  Wyróżnia odsetek urządzeń z obsługiwanymi wersjami i urządzeniami z najnowszymi wersjami.
+1. **Ciała:**  Zawiera informacje o wartości uruchamiania urządzeń w zalecanych kanałach i obsługiwanych/najnowszych wersjach.
+1. **Wizualizacji:** Podział wizualizacji ma na celu przedstawienie zakresu wyświetlania liczby urządzeń z obsługiwanymi wersjami i najnowszymi wersjami aplikacji Microsoft 365):
+    - **Obsługiwane wersje:** Niebieska (kolorowa) część paska i ułamek (licznik/mianownik) na pasku reprezentują procent urządzeń z obsługiwaną wersją Microsoft 365 aplikacji.
+        - Numerator: liczba urządzeń w obsługiwanych wersjach Microsoft 365 aplikacji w ciągu ostatnich 28 dni
+        - Mianownik: liczba urządzeń korzystających z aplikacji Microsoft 365 w ciągu ostatnich 28 dni
+    - **Najnowsze wersje:** Turkusowa (kolorowa) część paska i ułamek (licznik/mianownik) na pasku reprezentują procent urządzeń z najnowszymi wersjami aplikacji Microsoft 365.
+        - Licznik: liczba urządzeń w ostatnich wersjach Microsoft 365 aplikacji w ciągu ostatnich 28 dni
+        - Mianownik: liczba urządzeń korzystających z aplikacji Microsoft 365 w ciągu ostatnich 28 dni
+1. **Dowiedz się więcej:**   Wybierz ten link, aby wyświetlić zawartość pomocy.
 
-#### <a name="trend-visualization-of-the-devices"></a>Wizualizacja trendu urządzeń
+#### <a name="trend-visualization-of-the-devices"></a>Wizualizacja trendów urządzeń
 
-Ten wykres przedstawia linię trendu urządzeń z obsługiwanymi wersjami i najnowszą Microsoft 365 w ciągu ostatnich 180 dni.
+Na tym wykresie przedstawiono trend urządzeń z obsługiwanymi wersjami i najnowszymi wersjami aplikacji Microsoft 365 w ciągu ostatnich 180 dni.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Wykres, który przedstawia, ile urządzeń jest obsługiwanych i najnowsze wersje aplikacji w czasie.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Wykres przedstawiający liczbę urządzeń z obsługiwanymi i najnowszymi wersjami aplikacji w czasie.":::
 
-## <a name="devices-in-your-organization"></a>Urządzenia w Twojej organizacji
+## <a name="devices-in-your-organization"></a>Urządzenia w organizacji
 
-Ta sekcja ułatwia działanie na metrykach, na których chcesz się skoncentrować, udostępniając odpowiednie informacje wszystkim metrykom kondycji Microsoft 365 kondycji aplikacji — środowisko technologii.
+Ta sekcja ułatwia działanie na metrykach, na których chcesz się skupić, dostarczając odpowiednie informacje do wszystkich metryk dotyczących kondycji aplikacji Microsoft 365 — środowisk technologicznych.
 
-W tabeli na poziomie kanału/wersji są przedstawione następujące kolumny:
+Poniższe kolumny są prezentowane w tabeli na poziomie kanału/wersji:
 
-- **Kanał**: Bieżący kanał Microsoft 365 aplikacji na urządzeniach.
-- **Stan:**   Microsoft 365 obsługują stan urządzeń na podstawie bieżącego kanału i wersji.
-- **Wersje:**   Bieżące Microsoft 365 aplikacji na urządzeniach.
-- **# urządzeń:**  Liczba urządzeń.
+- **Kanał**: bieżący kanał aplikacji Microsoft 365 na urządzeniach.
+- **Stan**: Microsoft 365 aplikacje obsługują stan urządzeń na podstawie bieżącego kanału i wersji.
+- **Wersje: bieżące** Microsoft 365 wersje aplikacji na urządzeniach.
+- **Liczba urządzeń**: liczba urządzeń.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Komunikacja — środowisko osób](communication.md) (artykuł)\
-[Współpraca nad zawartością — środowisko osób](content-collaboration.md) (artykuł)\
-[Spotkania — środowisko osób](meetings.md) (artykuł)\
-[Mobilność — środowisko osób](mobility.md) (artykuł)\
-[Kontrolki prywatności dotyczące wyników produktywności](privacy.md) (artykuł)\
-[Praca zespołowa — środowisko osób](teamwork.md) (artykuł)
+[Komunikacja — środowiska osób](communication.md) (artykuł)\
+[Współpraca z zawartością — środowiska osób](content-collaboration.md) (artykuł)\
+[Spotkania — doświadczenia osób](meetings.md) (artykuł)\
+[Mobilność — środowiska osób](mobility.md) (artykuł)\
+[Mechanizmy kontroli prywatności dla współczynnika produktywności](privacy.md) (artykuł)\
+[Praca zespołowa — środowiska osób](teamwork.md) (artykuł)

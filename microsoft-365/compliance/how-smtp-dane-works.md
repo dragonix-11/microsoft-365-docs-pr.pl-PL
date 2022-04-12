@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Dowiedz się, jak oparte na usłudze SMTP uwierzytelnianie dns jednostek nazwanych (DANE) działa w celu zabezpieczenia komunikacji poczty e-mail między serwerami poczty.
-ms.openlocfilehash: 2af2a166ff73bbe7888ed9265ec8733105eb2007
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: b5f9337457556dda53b5b2f982480a4c2501fcc9
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759440"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782858"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Jak działa uwierzytelnianie oparte na usłudze DNS SMTP dla jednostek nazwanych (DANE)
 
@@ -196,8 +196,8 @@ Podczas rozwiązywania problemów mogą zostać wygenerowane poniższe kody bł�
 
 Zwykle oznacza to problem z docelowym serwerem poczty. Serwer poczty, z którym jest testowany analizator łączności zdalnej. Ogólnie istnieją dwa scenariusze, które generują ten kod:
 
-1.  Docelowy serwer poczty w ogóle nie obsługuje bezpiecznej komunikacji i musi być używana zwykła, nieszyfrowana komunikacja.
-2.  Serwer docelowy jest niepoprawnie skonfigurowany i ignoruje polecenie STARTTLS.
+1. Docelowy serwer poczty w ogóle nie obsługuje bezpiecznej komunikacji i musi być używana zwykła, nieszyfrowana komunikacja.
+2. Serwer docelowy jest niepoprawnie skonfigurowany i ignoruje polecenie STARTTLS.
 
 Po otrzymaniu komunikatu:
 

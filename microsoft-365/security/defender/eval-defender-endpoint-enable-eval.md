@@ -1,6 +1,6 @@
 ---
-title: Włączanie usługi Microsoft Defender do oceny punktu końcowego
-description: Włączanie środowiska Microsoft 365 Defender próbnego lub pilotażowego, w tym sprawdzanie stanu licencji i punktów końcowych dołączania
+title: Włączanie oceny Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Włączanie Microsoft 365 Defender laboratorium próbnego lub środowiska pilotażowego, w tym sprawdzanie stanu licencji i dołączanie punktów końcowych
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,77 +21,77 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a12c81635f712dd0fac70101348d30bc1dc4f154
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 2acde87daaff88ec9ce7458218919342a9f1edd8
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754634"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782506"
 ---
-# <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Włączanie programu Microsoft Defender dla środowiska oceny punktu końcowego
+# <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Włączanie środowiska oceny Ochrona punktu końcowego w usłudze Microsoft Defender
 
 
-Ten artykuł zawiera instrukcje konfigurowania środowiska oceny dla programu Microsoft Defender dla punktu końcowego przy użyciu urządzeń produkcyjnych. 
+Ten artykuł przeprowadzi Cię przez kroki konfigurowania środowiska ewaluacji dla Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu urządzeń produkcyjnych. 
 
 
 > [!TIP]
-> Program Microsoft Defender for Endpoint oferuje również laboratorium oceny w produkcie, w którym można dodawać wstępnie skonfigurowane urządzenia i uruchamiać symeony w celu oceny możliwości platformy. Laboratorium oferuje uproszczone środowisko ustawień, które może szybko zademonstrować wartość programu Microsoft Defender for Endpoint, w tym wskazówki dotyczące wielu funkcji, takich jak zaawansowana analiza wyszukiwania i analizy zagrożeń. Aby uzyskać więcej informacji, zobacz [Ocenianie możliwości](../defender-endpoint/evaluation-lab.md). <br> Główna różnica między wskazówkami w tym artykule a laboratorium oceny jest taka, że w środowisku oceny są używane urządzenia produkcyjne, natomiast w laboratorium oceny są używane urządzenia nieprodukcji. 
+> Ochrona punktu końcowego w usłudze Microsoft Defender jest również wyposażony w laboratorium ewaluacyjne w produkcie, w którym można dodawać wstępnie skonfigurowane urządzenia i uruchamiać symulacje w celu oceny możliwości platformy. Laboratorium oferuje uproszczone środowisko konfiguracji, które może pomóc szybko zademonstrować wartość Ochrona punktu końcowego w usłudze Microsoft Defender w tym wskazówki dotyczące wielu funkcji, takich jak zaawansowane wyszukiwanie zagrożeń i analiza zagrożeń. Aby uzyskać więcej informacji, zobacz [Evaluate capabilities (Ocena możliwości](../defender-endpoint/evaluation-lab.md)). <br> Główną różnicą między wskazówkami podanymi w tym artykule a laboratorium ewaluacyjnym jest to, że środowisko ewaluacji używa urządzeń produkcyjnych, podczas gdy laboratorium ewaluacji używa urządzeń nieprodukcyjnych. 
 
-Aby włączyć ocenę dla programu Microsoft Defender dla punktu końcowego, należy wykonać poniższe czynności.
+Aby włączyć ocenę dla Ochrona punktu końcowego w usłudze Microsoft Defender, wykonaj następujące kroki.
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Procedura włączania programu Microsoft Defender dla punktu końcowego w środowisku oceny programu Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Kroki włączania Ochrona punktu końcowego w usłudze Microsoft Defender w środowisku ewaluacji usługi Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
 
-- [Krok 1. Sprawdź stan licencji](#step-1-check-license-state)
-- [Krok 2. Onboard endpoints](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
-
-
-## <a name="step-1-check-license-state"></a>Krok nr 1. Sprawdź stan licencji
-
-Najpierw musisz sprawdzić stan licencji, aby sprawdzić, czy została ona poprawnie aprowizowana. Możesz to zrobić za pośrednictwem centrum administracyjnego lub portalu **Microsoft Azure administracyjnego**.
+- [Krok 1. Sprawdzanie stanu licencji](#step-1-check-license-state)
+- [Krok 2. Dołączanie punktów końcowych](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
 
 
-1. Aby wyświetlić licencje, przejdź do portalu **Microsoft Azure i** przejdź do sekcji Microsoft Azure [licencji portalu](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) internetowego.
+## <a name="step-1-check-license-state"></a>Krok nr 1. Sprawdzanie stanu licencji
 
-   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="Strona Licencjonowanie platformy Azure w portalu Microsoft 365 Defender sieci Web" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
+Najpierw należy sprawdzić stan licencji, aby sprawdzić, czy została ona prawidłowo aprowizowana. Można to zrobić za pośrednictwem centrum administracyjnego lub portalu **Microsoft Azure**.
 
-1. Ewentualnie w centrum administracyjnym przejdź do **strony** **RozliczeniaSubskrypcje** > .
 
-    Na ekranie zobaczysz wszystkie licencje z inicjowaniem obsługi administracyjnej i ich bieżący **stan**.
+1. Aby wyświetlić licencje, przejdź do **portalu Microsoft Azure** i przejdź do [sekcji licencji portalu Microsoft Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="The Billing licenses page in the Microsoft Azure portal" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="Strona Licencjonowanie platformy Azure w portalu Microsoft 365 Defender" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
+
+1. Alternatywnie w centrum administracyjnym przejdź do pozycji **RozliczeniaSubskrypcje** > .
+
+    Na ekranie zostaną wyświetlone wszystkie aprowizowane licencje i ich bieżący **stan**.
+
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="Strona Licencje rozliczeniowe w portalu Microsoft Azure" lightbox="../../media/defender/atp-billing-subscriptions.png":::
     
 
-## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Krok nr 2. Onboard endpoints using any of the supported management tools
+## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Krok nr 2. Dołączanie punktów końcowych przy użyciu dowolnego z obsługiwanych narzędzi do zarządzania
 
-Po sprawdzeniu, czy stan licencji został poprawnie aprowowany, możesz uruchomić urządzenia wnoszące do usługi. 
+Po sprawdzeniu, czy stan licencji został prawidłowo zainicjowany, możesz rozpocząć dołączanie urządzeń do usługi. 
 
-Na potrzeby oceny programu Microsoft Defender dla punktu końcowego zalecamy wybranie kilku urządzeń Windows w celu przeprowadzenia oceny.
+W celu oceny Ochrona punktu końcowego w usłudze Microsoft Defender zalecamy wybranie kilku Windows urządzeń do przeprowadzenia oceny.
 
-Możesz korzystać z dowolnego z obsługiwanych narzędzi do zarządzania, ale usługa Intune zapewnia optymalną integrację. Aby uzyskać więcej informacji, zobacz [Konfigurowanie programu Microsoft Defender dla punktu końcowego w programie Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
+Możesz użyć dowolnego z obsługiwanych narzędzi do zarządzania, ale Intune zapewnia optymalną integrację. Aby uzyskać więcej informacji, zobacz [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender w Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
-W [temacie Planowanie wdrożenia](../defender-endpoint/deployment-strategy.md) przedstawiono ogólne czynności, które należy wykonać, aby wdrożyć usługę Defender dla punktu końcowego.  
+W temacie [Planowanie wdrożenia](../defender-endpoint/deployment-strategy.md) opisano ogólne kroki, które należy wykonać w celu wdrożenia usługi Defender for Endpoint.  
 
-Obejrzyj ten klip wideo, aby szybko poznać proces dołączania i poznać dostępne narzędzia i metody.
+Obejrzyj to wideo, aby zapoznać się z szybkim omówieniem procesu dołączania i poznać dostępne narzędzia i metody.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
 ### <a name="onboarding-tool-options"></a>Opcje narzędzia dołączania
 
-W poniższej tabeli wymieniono dostępne narzędzia na podstawie punktu końcowego, który trzeba do dyspozycji.
+W poniższej tabeli wymieniono dostępne narzędzia oparte na punkcie końcowym, który należy dołączyć.
 
-Punkt końcowy | Opcje narzędzia
+Punkt końcowy | Opcje narzędzi
 :---|:---
-**Windows** | [Skrypt lokalny (do 10 urządzeń)](../defender-endpoint/configure-endpoints-script.md)[, zasady grupy](../defender-endpoint/configure-endpoints-gp.md), [Microsoft Endpoint Manager/ Menedżer](../defender-endpoint/configure-endpoints-mdm.md) urządzeń przenośnych, [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) skrypty [VDI](../defender-endpoint/configure-endpoints-vdi.md), Integracja z programem [Microsoft Defender dla chmury](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
-**macOS** | [Lokalne skrypty](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [usługi JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), [Zarządzanie urządzeniami przenośnymi](../defender-endpoint/mac-install-with-other-mdm.md)
-**Linux Server** | [Skrypt lokalny](../defender-endpoint/linux-install-manually.md),  [Szamit](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
+**Windows** | [Skrypt lokalny (maksymalnie 10 urządzeń),](../defender-endpoint/configure-endpoints-script.md) [zasady grupy](../defender-endpoint/configure-endpoints-gp.md), [Microsoft Endpoint Manager/ Mobile Menedżer urządzeń](../defender-endpoint/configure-endpoints-mdm.md), [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [skrypty VDI](../defender-endpoint/configure-endpoints-vdi.md), [ Integracja z Microsoft Defender dla Chmury](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
+**macOS** | [Skrypty lokalne](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), [Mobile Zarządzanie urządzeniami](../defender-endpoint/mac-install-with-other-mdm.md)
+**Serwer z systemem Linux** | [Skrypt lokalny](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [Oparte na aplikacji](../defender-endpoint/ios-install.md)
 **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)
 
 
 
 ## <a name="next-step"></a>Następny krok
-[Konfigurowanie programu pilotażowego programu Microsoft Defender dla punktu końcowego](eval-defender-endpoint-pilot.md)
+[Konfigurowanie pilotażu dla Ochrona punktu końcowego w usłudze Microsoft Defender](eval-defender-endpoint-pilot.md)
  
-Powrót do omówieniem [Szacowanie programu Microsoft Defender dla punktu końcowego](eval-defender-endpoint-overview.md)
+Wróć do przeglądu Ochrona punktu końcowego w usłudze Microsoft Defender [oceny](eval-defender-endpoint-overview.md)
 
-Wróć do przeglądu projektów [oceniania i Microsoft 365 Defender](eval-overview.md)
+Wróć do przeglądu [oceny i pilotażowego Microsoft 365 Defender](eval-overview.md)

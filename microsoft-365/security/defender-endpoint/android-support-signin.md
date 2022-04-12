@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3103ab5332045da58609b048d637da30d287ed10
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 0a6f53b0723d7f3e9b4761aa83238e618d947e55
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666575"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783430"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Rozwiązywanie problemów z Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android
 
@@ -144,24 +144,25 @@ Wróć do ekranu dołączania Ochrona punktu końcowego w usłudze Microsoft Def
 
 Jeśli użytkownik napotka problem, który nie został jeszcze rozwiązany w powyższych sekcjach lub nie może rozwiązać problemu przy użyciu wymienionych kroków, użytkownik może przekazać **opinię w aplikacji** wraz z **danymi diagnostycznymi**. Nasz zespół może następnie zbadać dzienniki, aby zapewnić odpowiednie rozwiązanie. Użytkownicy mogą wykonać następujące kroki, aby zrobić to samo:
 
-1.  Otwórz **aplikację MDE** na urządzeniu i kliknij **ikonę profilu** w lewym górnym rogu.
+1. Otwórz **aplikację MDE** na urządzeniu i kliknij **ikonę profilu** w lewym górnym rogu.
 
     :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="Ikona profilu w portalu Ochrona punktu końcowego w usłudze Microsoft Defender" lightbox="images/select-profile-icon-1.jpg":::
 
-2.  Wybierz pozycję "Pomoc & opinii".
+2. Wybierz pozycję "Pomoc & opinii".
 
     :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="Opcja Pomoc & opinie, którą można wybrać w portalu Ochrona punktu końcowego w usłudze Microsoft Defender" lightbox="images/selecthelpandfeedback2.png":::
 
-3.  Wybierz pozycję "Wyślij opinię do firmy Microsoft".
+3. Wybierz pozycję "Wyślij opinię do firmy Microsoft".
 
     :::image type="content" alt-text="Wybierz pozycję Wyślij opinię do firmy Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
 
-4.  Wybierz jedną z podanych opcji. Aby zgłosić problem, wybierz pozycję "Chcę zgłosić problem".
+4. Wybierz jedną z podanych opcji. Aby zgłosić problem, wybierz pozycję "Chcę zgłosić problem".
 
     :::image type="content" source="images/report-issue-4.jpg" alt-text="Opcja Chcę zgłosić problem" lightbox="images/report-issue-4.jpg":::
 
-5.  Podaj szczegóły występującego problemu i sprawdź opcję "Wyślij dane diagnostyczne". Zalecamy sprawdzenie opcji "Dołącz twój adres e-mail", aby zespół mógł skontaktować się z Tobą za pomocą rozwiązania lub dalszych czynności.
+5. Podaj szczegóły występującego problemu i sprawdź opcję "Wyślij dane diagnostyczne". Zalecamy sprawdzenie opcji "Dołącz twój adres e-mail", aby zespół mógł skontaktować się z Tobą za pomocą rozwiązania lub dalszych czynności.
 
     :::image type="content" source="images/finalsubmit5.png" alt-text="Okienko, w którym można dodawać szczegóły i dołączać dane diagnostyczne" lightbox="images/finalsubmit5.png":::
 
-6.  Kliknij pozycję "Prześlij", aby pomyślnie wysłać opinię.
+6. Kliknij pozycję "Prześlij", aby pomyślnie wysłać opinię.
+

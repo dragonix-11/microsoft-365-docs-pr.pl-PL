@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania, które ułatwiają zachowanie potrzebnych elementów i usuwanie tego, czego nie potrzebujesz.
-ms.openlocfilehash: 61bd82e3b4012e7e191971faf768cf8d7cbba4f2
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: e14c438858d5e57dca6ecab0573014171a0c6fb7
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758646"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783320"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Dowiedz się więcej o zasadach przechowywania i etykietach przechowywania
 
@@ -502,7 +502,7 @@ Dodatkowe informacje dotyczące określonych lokalizacji:
 
   - Jeśli zasady przechowywania są niejawnie stosowane do skrzynki pocztowej, a skonfigurowana akcja przechowywania ma zostać zachowana, zasady przechowywania będą nadal stosowane, a nieaktywna skrzynka pocztowa nigdy nie kwalifikuje się do automatycznego usunięcia. Gdy akcja zachowywania nie ma już zastosowania z powodu wygaśnięcia okresu przechowywania, administrator Exchange może teraz [ręcznie usunąć nieaktywną skrzynkę pocztową](delete-an-inactive-mailbox.md)
 
-        An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
+    Zasady niejawnego przechowywania wymagają statycznego zakresu zasad z konfiguracją **Wszyscy adresaci** (dla Exchange poczty e-mail) lub **Wszystkie grupy** (dla Grupy Microsoft 365).
 
     Aby uzyskać więcej informacji na temat nieaktywnych skrzynek pocztowych z zastosowanymi zasadami przechowywania, zobacz [Nieaktywne skrzynki pocztowe i przechowywanie Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 

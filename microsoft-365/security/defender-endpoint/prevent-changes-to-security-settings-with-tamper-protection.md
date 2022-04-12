@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: a9092ebb941806324646fffd86dd00b54fa87cc6
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ccf72b1f7e5625f3b3b9599a50d734a7316b8659
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714972"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780264"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Chroń ustawienia zabezpieczeń z ochroną przed naruszeniami
 
@@ -48,7 +48,8 @@ Ochrona przed naruszeniami jest dostępna dla urządzeń z uruchomioną jedną z
 - Windows Server 2012 R2
 
 > [!NOTE]
-> Ochrona przed naruszeniami w Windows Server 2012 R2 jest dostępna dla urządzeń dołączonych do Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu nowoczesnego ujednoliconego pakietu rozwiązań. Aby uzyskać więcej informacji, zobacz [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview (Nowe funkcje w nowoczesnym ujednoliconym rozwiązaniu dla Windows Server 2012 R2 i 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)).
+> Ochrona przed naruszeniami w Windows Server 2012 R2 jest dostępna dla urządzeń dołączonych przy użyciu nowoczesnego ujednoliconego pakietu rozwiązań. Aby uzyskać więcej informacji, zobacz [Dołączanie serwerów Windows do usługi Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+
 
 ## <a name="overview"></a>Omówienie
 
@@ -174,7 +175,7 @@ Jeśli Organizacja używa Microsoft Endpoint Manager (MEM), możesz włączyć (
 Jeśli używasz [wersji 2006 Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), możesz zarządzać ustawieniami ochrony przed naruszeniami w Windows 10, Windows 10 Enterprise wielu sesjach, Windows 11, Windows 11 Enterprise wielu sesjach, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 i Windows Server 2022 przy użyciu metody o nazwie *dołączanie dzierżawy*. Dołączanie dzierżawy umożliwia synchronizowanie lokalnych urządzeń Configuration Manager z centrum administracyjnym Microsoft Endpoint Manager, a następnie dostarczanie zasad konfiguracji zabezpieczeń punktu końcowego do kolekcji lokalnych & urządzeniach.
 
 > [!NOTE]
-> Procedura może służyć do rozszerzania ochrony przed naruszeniami na urządzenia z systemem Windows 10, Windows 10 Enterprise wielu sesjach, Windows 11, Windows 11 Enterprise wielu sesjach, Windows Server 2019 i Windows Server 2022. Zapoznaj się z wymaganiami wstępnymi i innymi informacjami w zasobach wymienionych w tej procedurze.
+> Procedura może służyć do rozszerzania ochrony przed naruszeniami na urządzenia z systemem Windows 10, Windows 10 Enterprise wielu sesjach, Windows 11, Windows 11 Enterprise wielu sesjach, Windows Server 2019 i Windows Server 2022. Zapoznaj się z wymaganiami wstępnymi i innymi informacjami w zasobach wymienionych w tej procedurze. Do Windows Server 2012 R2 jest wymagane nowoczesne, ujednolicone rozwiązanie w [wersji 2203 Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203).
 
 1. Skonfiguruj dołączanie dzierżawy. Aby dowiedzieć się więcej, zobacz [Wprowadzenie: Tworzenie i wdrażanie zasad zabezpieczeń punktu końcowego z poziomu centrum administracyjnego](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
@@ -211,9 +212,9 @@ Oto, co widzisz w aplikacji Zabezpieczenia Windows:
 
 3. Ustaw **opcję Ochrona przed naruszeniami** na **wartość Włączone** lub **Wyłączone**.
 
-## <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>Czy używasz Windows Server 2016, czy Windows wersji 1709, 1803 lub 1809?
+## <a name="are-you-using-windows-server-2012-r2-2016-or-windows-version-1709-1803-or-1809"></a>Czy używasz Windows Server 2012 R2, 2016 lub Windows wersji 1709, 1803 lub 1809?
 
-Jeśli używasz Windows Server 2016, Windows 10 wersji 1709, 1803 lub [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), ochrona przed **naruszeniami** nie będzie widoczna w aplikacji Zabezpieczenia Windows. Zamiast tego można użyć programu PowerShell, aby określić, czy ochrona przed naruszeniami jest włączona.
+Jeśli używasz Windows Server 2012 R2 przy użyciu nowoczesnego ujednoliconego rozwiązania, Windows Server 2016, Windows 10 wersji 1709, 1803 lub [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), nie zobaczysz **ochrony przed naruszeniami** w aplikacji Zabezpieczenia Windows. Zamiast tego można użyć programu PowerShell, aby określić, czy ochrona przed naruszeniami jest włączona.
 
 W Windows Server 2016 aplikacja Ustawienia nie będzie dokładnie odzwierciedlać stanu ochrony w czasie rzeczywistym po włączeniu ochrony przed naruszeniami.
 

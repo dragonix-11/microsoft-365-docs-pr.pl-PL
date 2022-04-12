@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie dostępem do aplikacji poczty e-mail w aplikacji centrum administracyjne platformy Microsoft 365
+title: Zarządzanie dostępem do aplikacji poczty e-mail w Centrum administracyjne platformy Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -22,46 +22,44 @@ search.appverid:
 - MBS150
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
-description: Dowiedz się, jak wybrać aplikacje mobilne, za pomocą których inne osoby mogą uzyskać dostęp do poczty e-mail, kalendarza i kontaktów.
-ms.openlocfilehash: e3a7999900e85bde1bee7bf220b46a74a1151f57
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: Dowiedz się, jak wybrać aplikacje mobilne, których użytkownicy mogą używać do uzyskiwania dostępu do poczty e-mail, kalendarza i kontaktów.
+ms.openlocfilehash: 5f5a96a0ac44757cfe168db87deb494019759c36
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63017754"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780242"
 ---
-# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Zarządzanie dostępem do aplikacji poczty e-mail w centrum administracyjne platformy Microsoft 365
+# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Zarządzanie dostępem do aplikacji poczty e-mail w Centrum administracyjne platformy Microsoft 365
 
-Za pomocą ustawień dostępu mobilnego do poczty e-mail możesz wybrać, które aplikacje mobilne osoby w Twojej organizacji mogą używać do uzyskiwania dostępu do konta służbowego w celu uzyskiwania dostępu do poczty e-mail, kalendarza i kontaktów.
+Użyj ustawień dostępu do mobilnej poczty e-mail, aby wybrać aplikacje mobilne, których użytkownicy w organizacji mogą używać do uzyskiwania dostępu do konta służbowego w celu uzyskania dostępu do poczty e-mail, kalendarza i kontaktów.
   
 > [!IMPORTANT]
-> Twoja organizacja będzie mieć dostęp do tego ustawienia, chyba że używasz programu Microsoft Intune lub ustawienia zarządzania urządzeniami przenośnymi zostały skonfigurowane w centrum administracyjnym usługi <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange.</a> 
+> Twoja organizacja będzie miała dostęp do tego ustawienia, chyba że używasz Microsoft Intune lub skonfigurowano ustawienia zarządzania urządzeniami przenośnymi w <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnym Exchange</a>.
   
 ## <a name="manage-email-app-options"></a>Zarządzanie opcjami aplikacji poczty e-mail
 
 > [!IMPORTANT]
->  Jeśli nie będziesz korzystać z tej funkcji, zmiany w obsłudze użytkowników nie będą się zmieniać. Za pomocą dowolnej aplikacji mobilnej do poczty e-mail będzie mógł uzyskać dostęp do swojego konta służbowego do poczty e-mail, kalendarza i kontaktów z urządzenia przenośnego. 
-    
-1. W centrum administracyjnym przejdź do strony **Ustawienia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Usługi &amp; Dodatki</a>. 
+> Jeśli nie używasz tej funkcji, nie będzie żadnych zmian w środowisku użytkowników. Będą oni mogli korzystać z dowolnej mobilnej aplikacji poczty e-mail w celu uzyskania dostępu do konta służbowego na potrzeby poczty e-mail, kalendarza i kontaktów z urządzenia przenośnego.
 
-2. Na stronie **Opcji dostępu do poczty e-mail** na urządzeniach przenośnych zaznacz pole wyboru, a następnie wybierz sposób używania aplikacji poczty e-mail przez użytkowników w organizacji na swoich urządzeniach:
-  
-Wybieranie opcji ustawienia sposobu, w jaki użytkownicy w organizacji uzyskają dostęp do swoich kont służbowych za pomocą urządzeń przenośnych
-  
-- **Outlook —** użytkownicy w Twojej organizacji będą zobowiązani do korzystania z aplikacji Outlook dla systemu Android lub aplikacji Outlook dla systemu iOS na swoich urządzeniach przenośnych. 
-    
-- **Dowolna aplikacja poczty** e-mail — wszyscy użytkownicy w organizacji będą monitować o korzystanie z usługi Outlook, ale mogą używać dowolnej aplikacji poczty e-mail. 
-    
-- **Dowolna aplikacja poczty** e-mail — nowi użytkownicy lub urządzenia w Twojej organizacji zostaną raz wyświetleniu monitu o korzystanie z usługi Outlook, ale mogą oni używać dowolnej aplikacji poczty e-mail. 
-    
-Aby uzyskać więcej szczegółowych informacji, zobacz [Opcje uzyskiwania dostępu do poczty e-mail z urządzenia przenośnego](access-email-from-a-mobile-device.md).
-  
-## <a name="new-user-or-device-is-activated-in-your-organization"></a>W Twojej organizacji aktywowano nowego użytkownika lub urządzenie
+1. W centrum administracyjnym przejdź do strony **Ustawienia** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Usługi &amp; Dodatki</a>.
 
-Gdy tylko użytkownik w Twojej organizacji doda służbowy lub szkolny adres e-mail do aplikacji poczty e-mail innej firmy lub do nowego urządzenia, otrzyma wiadomość e-mail od firmy Microsoft w imieniu **Twojej organizacji**. Wiadomość e-mail zawiera informacje o zaletach korzystania z aplikacji mobilnej Outlook i będzie zawierała link do lokalizacji pobierania. Użytkownicy mogą wówczas zdecydować, czy nadal korzystać z aplikacji innej firmy, czy z aplikacji Outlook mobilnej. W ciągu 24 godzin od otrzymania tej wiadomości e-mail przez użytkownika urządzenie zostanie poddane kwarantannie, a wiadomości e-mail, kalendarz i dane kontaktowe nie będą aktualizowane. Jeśli zdecyduje się na korzystanie z Outlook mobilnej, aplikacja innej firmy pozostanie pod kwarantanną, a dane będą synchronizowane tylko z aplikacją mobilną Outlook przenośnych. Jeśli zaczną oni nadal korzystać z aplikacji innej firmy, dane zaczną być synchronizowane natychmiast. Jeśli w ciągu tych pierwszych 24 godzin nie zostanie wykonane żadne działanie, wiadomość e-mail zostanie usunięta ze skrzynki odbiorczej tej osoby i dane z serwera zaczną być synchronizowane automatycznie.
+2. Na stronie **Opcje dostępu do poczty e-mail dla urządzeń przenośnych** zaznacz pole wyboru, a następnie wybierz sposób, w jaki użytkownicy w organizacji używają aplikacji poczty e-mail na swoich urządzeniach:
+  
+Wybierz opcję ustawiania sposobu, w jaki użytkownicy w organizacji uzyskują dostęp do konta służbowego z urządzeń przenośnych
+  
+- **tylko Outlook** — użytkownicy w organizacji będą musieli korzystać z Outlook dla aplikacji systemu Android lub Outlook dla systemu iOS na urządzeniu przenośnym.
+
+- **Dowolna aplikacja poczty e-mail** — wszyscy użytkownicy w organizacji będą monitować o użycie Outlook, ale mogą oni wybrać użycie dowolnej aplikacji poczty e-mail.
+
+- **Dowolna aplikacja poczty e-mail** — nowi użytkownicy lub urządzenia w organizacji będą monitowane raz o użycie Outlook, ale mogą oni wybrać użycie dowolnej aplikacji poczty e-mail.
+
+Aby uzyskać więcej informacji, zobacz [Opcje uzyskiwania dostępu do poczty e-mail z urządzenia przenośnego](access-email-from-a-mobile-device.md).
+  
+## <a name="new-user-or-device-is-activated-in-your-organization"></a>Nowy użytkownik lub urządzenie jest aktywowane w organizacji
+
+Gdy tylko użytkownik w organizacji doda służbową wiadomość e-mail do aplikacji poczty e-mail innej firmy lub do nowego urządzenia, otrzyma wiadomość e-mail od firmy **Microsoft w imieniu Twojej organizacji**. Wiadomość e-mail poinformuje ich o zaletach korzystania z aplikacji mobilnej Outlook i udostępni link do lokalizacji pobierania. Użytkownicy mogą następnie wybrać, czy nadal korzystać z aplikacji innej firmy, czy też korzystać z aplikacji mobilnej Outlook. W ciągu 24 godzin po otrzymaniu tej wiadomości e-mail przez użytkownika urządzenie zostanie poddane kwarantannie, a adres e-mail, kalendarz i dane kontaktowe nie zostaną zaktualizowane. Jeśli zdecydują się korzystać z aplikacji mobilnej Outlook, aplikacja innej firmy pozostanie poddana kwarantannie, a dane będą synchronizowane tylko z aplikacją mobilną Outlook. Jeśli zdecydują się kontynuować korzystanie z aplikacji innej firmy, dane zaczną się natychmiast synchronizować. Jeśli w ciągu pierwszych 24 godzin nie zostaną podjęte żadne działania, wiadomość e-mail zostanie usunięta ze skrzynki odbiorczej, a dane zaczną być automatycznie synchronizowane z serwera.
   
 ## <a name="previously-configured-users-in-your-organization"></a>Wcześniej skonfigurowani użytkownicy w organizacji
 
-Jeśli zdecydujesz się polecić usługę Outlook wszystkim osobom w organizacji, oprócz opisanej powyżej funkcji dla nowych użytkowników użytkownicy, którzy wcześniej połączyli swoje służbowe konto e-mail z aplikacją innej firmy, otrzymają wiadomość e-mail od firmy **Microsoft** w imieniu Twojej organizacji w ciągu 48 godzin od włączeniu tego ustawienia. Wiadomość e-mail zawiera informacje o zaletach korzystania z aplikacji mobilnej Outlook i będzie zawierała link do lokalizacji pobierania. Użytkownicy mogą wówczas zdecydować, czy nadal korzystać z aplikacji innej firmy, czy z aplikacji Outlook mobilnej. W ciągu 24 godzin od otrzymania tej wiadomości e-mail przez użytkownika urządzenie zostanie poddane kwarantannie, a wiadomości e-mail, kalendarz i dane kontaktowe nie będą aktualizowane. Jeśli zdecyduje się na korzystanie z Outlook mobilnej, aplikacja innej firmy pozostanie pod kwarantanną, a dane będą synchronizowane tylko z aplikacją mobilną Outlook przenośnych. Jeśli zaczną oni nadal korzystać z aplikacji innej firmy, dane zaczną być synchronizowane natychmiast. Jeśli w ciągu tych pierwszych 24 godzin nie zostanie wykonane żadne działanie, wiadomość e-mail zostanie usunięta ze skrzynki odbiorczej tej osoby i dane z serwera zaczną być synchronizowane automatycznie. 
-  
-
+Jeśli zdecydujesz się zalecić Outlook wszystkim w organizacji, oprócz środowiska opisanego powyżej dla nowych użytkowników, użytkownicy, którzy wcześniej połączyli swoje służbowe konto e-mail z aplikacją innej firmy, otrzymają wiadomość e-mail od firmy **Microsoft w imieniu organizacji** w ciągu 48 godzin od włączenia tego ustawienia. Wiadomość e-mail poinformuje ich o zaletach korzystania z aplikacji mobilnej Outlook i udostępni link do lokalizacji pobierania. Użytkownicy mogą następnie wybrać, czy nadal korzystać z aplikacji innej firmy, czy też korzystać z aplikacji mobilnej Outlook. W ciągu 24 godzin po otrzymaniu tej wiadomości e-mail przez użytkownika urządzenie zostanie poddane kwarantannie, a adres e-mail, kalendarz i dane kontaktowe nie zostaną zaktualizowane. Jeśli zdecydują się korzystać z aplikacji mobilnej Outlook, aplikacja innej firmy pozostanie poddana kwarantannie, a dane będą synchronizowane tylko z aplikacją mobilną Outlook. Jeśli zdecydują się kontynuować korzystanie z aplikacji innej firmy, dane zaczną się natychmiast synchronizować. Jeśli w ciągu pierwszych 24 godzin nie zostaną podjęte żadne działania, wiadomość e-mail zostanie usunięta ze skrzynki odbiorczej, a dane zaczną być automatycznie synchronizowane z serwera.

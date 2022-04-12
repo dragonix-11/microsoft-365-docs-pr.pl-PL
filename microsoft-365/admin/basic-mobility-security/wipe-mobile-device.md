@@ -1,5 +1,5 @@
 ---
-title: Czyszczenie urządzenia przenośnego w pakietach Basic Mobility and Security
+title: Czyszczenie urządzenia przenośnego w usłudze Basic Mobility and Security
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,75 +18,75 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: Aby usunąć informacje z zarejestrowanych urządzeń, skorzystaj z wbudowanych funkcji basic mobility i zabezpieczeń.
-ms.openlocfilehash: d5f610e2a9180f1d147f68e6aabf4a7291787033
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Użyj wbudowanej usługi Basic Mobility and Security, aby usunąć informacje z zarejestrowanych urządzeń.
+ms.openlocfilehash: 932380b735e3fea2543832417e7911e9216f70fc
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400172"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780802"
 ---
-# <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Czyszczenie urządzenia przenośnego w pakietach Basic Mobility and Security
+# <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Czyszczenie urządzenia przenośnego w usłudze Basic Mobility and Security
 
-Możesz używać wbudowanych funkcji Basic Mobility and Security dla usługi Microsoft 365, aby usunąć tylko informacje organizacyjne, lub wykonać przywracanie ustawień fabrycznych w celu usunięcia wszystkich informacji z urządzenia przenośnego i przywrócenia ich do ustawień fabrycznych.
+Możesz użyć wbudowanej usługi Basic Mobility and Security dla Microsoft 365, aby usunąć tylko informacje organizacyjne lub przeprowadzić resetowanie do ustawień fabrycznych, aby usunąć wszystkie informacje z urządzenia przenośnego i przywrócić je do ustawień fabrycznych.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Urządzenia przenośne mogą przechowywać poufne informacje organizacyjne i zapewniać dostęp do zasobów Microsoft 365 organizacji. Aby chronić informacje Twojej organizacji, możesz wykonać resetowanie ustawień fabrycznych lub usunąć dane firmowe:
+Urządzenia przenośne mogą przechowywać poufne informacje organizacyjne i zapewniać dostęp do Microsoft 365 zasobów organizacji. Aby chronić informacje organizacji, możesz zresetować do ustawień fabrycznych lub usunąć dane firmowe:
 
-- **Resetowanie** do ustawień fabrycznych: Usuwa wszystkie dane na urządzeniu przenośnym użytkownika, w tym zainstalowane aplikacje, zdjęcia i informacje osobiste. Po zakończeniu czyszczenia urządzenie zostanie przywrócone do ustawień fabrycznych.
+- **Resetowanie do ustawień fabrycznych**: usuwa wszystkie dane na urządzeniu przenośnym użytkownika, w tym zainstalowane aplikacje, zdjęcia i dane osobowe. Po zakończeniu czyszczenia urządzenie zostanie przywrócone do ustawień fabrycznych.
 
-- **Usuwanie danych firmowych**: Usuwa tylko dane organizacji i pozostawia zainstalowane aplikacje, zdjęcia i informacje osobiste na urządzeniu przenośnym użytkownika.
+- **Usuwanie danych firmowych**: usuwa tylko dane organizacji i pozostawia zainstalowane aplikacje, zdjęcia i dane osobowe na urządzeniu przenośnym użytkownika.
 
-- **Po wyczyszczeniu urządzenia (resetowanie do ustawień fabrycznych** lub usunięcie danych firmy) urządzenie zostanie usunięte z listy urządzeń zarządzanych.
-    
-- **Automatyczne resetowanie** urządzenia: Możesz skonfigurować zasady mobilności podstawowej i zabezpieczeń, które będą automatycznie resetować urządzenie przy użyciu ustawień fabrycznych po określonej liczbie nieudanych prób wprowadzenia hasła do urządzenia przez użytkownika. W tym celu wykonaj czynności opisane  [wTworzenie zasad zabezpieczeń urządzeń w zakresie podstawowej mobilności i zabezpieczeń](create-device-security-policies.md).
-    
-- **Jeśli chcesz poznać sposób obsługi użytkownika** podczas czyszczenia urządzenia, zobaczCo   [to jest wpływ na użytkownika i urządzenie?](#whats-the-user-and-device-impact).
+- **Po wyczyszczoniu urządzenia (resetowanie do ustawień fabrycznych lub usuwanie danych firmy)** urządzenie zostanie usunięte z listy zarządzanych urządzeń.
+
+- **Automatyczne resetowanie urządzenia**: można skonfigurować zasady podstawowej mobilności i zabezpieczeń, które automatycznie resetują urządzenie do ustawień fabrycznych po tym, jak użytkownik bezskutecznie spróbuje wprowadzić hasło urządzenia określoną liczbę razy. W tym celu wykonaj kroki opisane w temacie [Tworzenie zasad zabezpieczeń urządzeń w podstawowej mobilności i zabezpieczeniach](create-device-security-policies.md).
+
+- **Jeśli chcesz poznać środowisko użytkownika** podczas czyszczenia urządzenia, zobacz [Jaki jest wpływ na użytkownika i urządzenie?](#whats-the-user-and-device-impact).
 
 ## <a name="wipe-a-mobile-device"></a>Czyszczenie urządzenia przenośnego
 
-1. Przejdź do  [centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. Przejdź do [Centrum administracyjne platformy Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
-2. Wpisz Zarządzanie urządzeniami przenośnymi w polu wyszukiwania, a następnie z listy wyników wybierz pozycję **Zarządzanie** urządzeniami przenośnymi.
+2. Wpisz Mobile Zarządzanie urządzeniami w polu wyszukiwania i wybierz pozycję **Mobile Zarządzanie urządzeniami** z listy wyników.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opcja zarządzania urządzeniami przenośnymi w wersji Basic Mobility i Secruity.":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opcja zarządzania urządzeniami przenośnymi Basic Mobility i Secruity.":::
 
-3. Wybierz **pozycję Zarządzaj urządzeniami**.
+3. Wybierz pozycję **Zarządzaj urządzeniami**.
 
 4. Wybierz urządzenie, które chcesz wyczyścić.
 
-5. Wybierz **pozycję Zarządzaj**.
+5. Wybierz pozycję **Zarządzaj**.
 
 6. Wybierz wymagany typ zdalnego czyszczenia.
 
-    - Aby wykonać pełne czyszczenie i przywrócić ustawienia fabryczne urządzenia, wybierz pozycję **Resetowanie do ustawień fabrycznych**.
-    - Aby wykonać czyszczenie selektywne i usunąć tylko Microsoft 365 informacji o organizacji, wybierz **pozycję Usuń dane firmowe**.
-    - Aby usunąć urządzenie ze swojej organizacji, wybierz **pozycję Usuń urządzenie**.
+    - Aby przeprowadzić pełne czyszczenie i przywrócić urządzenie do ustawień fabrycznych, wybierz pozycję **Resetowanie do ustawień fabrycznych**.
+    - Aby przeprowadzić selektywne czyszczenie i usuwanie tylko Microsoft 365 informacji o organizacji, wybierz pozycję **Usuń dane firmy**.
+    - Aby usunąć urządzenie z organizacji, wybierz pozycję **Usuń urządzenie**.
 
 7. Wybierz pozycję **Tak**, aby potwierdzić.
 
-## <a name="how-do-i-know-it-worked"></a>Skąd wiadomo, że to zadziałało?
+## <a name="how-do-i-know-it-worked"></a>Jak mogę wiedzieć, że to zadziałało?
 
-Nie widzisz już tego urządzenia przenośnego na liście urządzeń zarządzanych.
+Urządzenie przenośne nie jest już widoczne na liście urządzeń zarządzanych.
 
-## <a name="why-would-you-want-to-wipe-a-device"></a>Dlaczego warto wyczyścić urządzenie?
+## <a name="why-would-you-want-to-wipe-a-device"></a>Dlaczego chcesz wyczyścić urządzenie?
 
-Wyczyść urządzenie z tych powodów:
+Wyczyść urządzenie z następujących powodów:
 
-- Urządzenia przenośne, takie jak smartfony i tablety, cały czas stają się pełniejsze. Oznacza to, że użytkownicy mogą łatwiej przechowywać poufne informacje firmowe, takie jak dane osobowe lub poufna komunikacja, i korzystać z nich w podróży. Jeśli jedno z tych urządzeń przenośnych zostanie zgubione lub skradzione, jego wyigrowanie może zapobiec dojściu informacji Twojej organizacji do niewłaściwych ręce.
-- Gdy użytkownik odchodzi z organizacji, korzystając z urządzenia osobistego zarejestrowanego w pakietach Basic Mobility and Security, można zapobiec kontaktom z informacjami organizacyjnymi, wykonując resetowanie ustawień fabrycznych.
-- Jeśli Twoja organizacja udostępnia użytkownikom urządzenia przenośne, od czasu do czasu może być konieczne ponowne przypisanie tych urządzeń. Wykonanie resetowania ustawień fabrycznych na urządzeniu przed przypisaniem go nowemu użytkownikowi pozwala zagwarantować, że poufne informacje poprzedniego właściciela zostały usunięte.
+- Urządzenia przenośne, takie jak smartfony i tablety, stają się coraz bardziej funkcjonalne przez cały czas. Oznacza to, że użytkownicy mogą łatwiej przechowywać poufne informacje firmowe, takie jak identyfikacja osobista lub poufna komunikacja, i uzyskiwać do nich dostęp w podróży. Jeśli jedno z tych urządzeń przenośnych zostanie utracone lub skradzione, wyczyszczenie urządzenia może pomóc zapobiec trafieniu informacji organizacji w niepowołane ręce.
+- Gdy użytkownik opuszcza organizację przy użyciu urządzenia osobistego zarejestrowanego w usłudze Basic Mobility and Security, możesz zapobiec przechodzeniu informacji organizacji z tym użytkownikiem, przeprowadzając resetowanie do ustawień fabrycznych.
+- Jeśli Organizacja udostępnia urządzenia przenośne użytkownikom, może być konieczne ponowne przypisanie urządzeń od czasu do czasu. Przeprowadzenie resetowania do ustawień fabrycznych na urządzeniu przed przypisaniem go do nowego użytkownika pomaga zapewnić usunięcie wszelkich poufnych informacji od poprzedniego właściciela.
 
 ## <a name="whats-the-user-and-device-impact"></a>Jaki jest wpływ na użytkownika i urządzenie?
 
-Czyszczenie jest natychmiast wysyłane do urządzenia przenośnego, a urządzenie jest oznaczone jako niezgodne w usłudze Azure Active Directory. Mimo że wszystkie dane są usuwane po przywróceniu urządzenia do ustawień domyślnych fabrycznych, w poniższej tabeli opisano, jaka zawartość jest usuwana dla każdego typu urządzenia w przypadku usunięcia danych firmowych.
+Czyszczenie jest wysyłane natychmiast do urządzenia przenośnego, a urządzenie jest oznaczone jako niezgodne w usłudze Azure Active Directory. Podczas gdy wszystkie dane są usuwane po zresetowaniu urządzenia do ustawień domyślnych fabrycznych, w poniższej tabeli opisano, jaka zawartość jest usuwana dla każdego typu urządzenia podczas usuwania danych firmowych.
 
-|**Wpływ na zawartość**|**iOS**|**Android**|
-|:-----|:-----|:-----|
-|Microsoft 365 dane aplikacji są czyszowane, jeśli urządzenie jest chronione przez zasady usługi Intune App Protection. Aplikacje nie zostaną usunięte. W przypadku urządzeń, które nie są chronione przez zasady zarządzania aplikacjami mobilnymi (MAM), Outlook i OneDrive nie usuwają danych buforowanych.<br/>**Uwaga** Aby zastosować zasady ochrony aplikacji Intune, musisz mieć licencję usługi Intune.|Tak|Tak|
-|Ustawienia zasad stosowane w pakietach Basic Mobility i Security do urządzeń nie są już wymuszane. użytkownicy mogą zmienić te ustawienia.|Tak|Tak|
-|Profile poczty e-mail utworzone w pakietach Basic Mobility i Security są usuwane oraz są usuwane z pamięci podręcznej wiadomości e-mail na urządzeniu.|Tak|Nie dotyczy|
+|Wpływ na zawartość|iOS|Android|
+|---|---|---|
+|Microsoft 365 dane aplikacji zostaną wyczyszczone, jeśli urządzenie jest chronione przez zasady usługi Intune App Protection. Aplikacje nie są usuwane. W przypadku urządzeń, które nie są chronione przez zasady zarządzania aplikacjami mobilnymi (MAM), Outlook i OneDrive nie będą usuwać danych w pamięci podręcznej.<br/>**Uwaga** Do stosowania zasad Intune Ochrona aplikacji musisz mieć licencję Intune.|Tak|Tak|
+|Ustawienia zasad stosowane przez pakiety Basic Mobility and Security do urządzeń nie są już wymuszane; użytkownicy mogą zmieniać ustawienia.|Tak|Tak|
+|Profile poczty e-mail utworzone przez usługi Basic Mobility and Security są usuwane, a buforowana wiadomość e-mail na urządzeniu jest usuwana.|Tak|nd.|
 
 > [!NOTE]
-> Portal firmy aplikacja jest dostępna w sklepach App Store dla systemu iOS i Play Store dla urządzeń z systemem Android.
+> Portal firmy aplikacja jest dostępna w App Store dla urządzeń z systemem iOS i Sklep Play dla urządzeń z systemem Android.

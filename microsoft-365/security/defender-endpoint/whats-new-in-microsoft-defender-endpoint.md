@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06018eb69e369b06425c9db1f63f22ff97f15eac
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3294529a9b86fdc9bdb83de6a3296c9f0d6507d
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664485"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782836"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Co nowego w ochronie punktu końcowego w usłudze Microsoft Defender
 
@@ -60,6 +60,8 @@ Aby uzyskać więcej informacji na temat Ochrona punktu końcowego w usłudze Mi
 - [Co nowego w usłudze Defender for Endpoint w systemie iOS](ios-whatsnew.md)
 - [Co nowego w usłudze Defender for Endpoint w systemie Linux](linux-whatsnew.md)
 
+## <a name="march-2022"></a>Marzec 2022 r.
+- [Zaktualizowano dołączanie i równoważność funkcji dla Windows Server 2012 R2 i Windows Server 2016)](configure-server-endpoints.md)<br/> Nowy pakiet ujednoliconego rozwiązania jest teraz ogólnie dostępny i ułatwia dołączanie serwerów przez usunięcie zależności i kroki instalacji. Ponadto ten ujednolicony pakiet rozwiązań zawiera wiele nowych ulepszeń funkcji.
 
 ## <a name="january-2022"></a>Styczeń 2022
 

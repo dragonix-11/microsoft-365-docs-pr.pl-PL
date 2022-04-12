@@ -1,5 +1,5 @@
 ---
-title: Zarejestruj się Microsoft Teams w ramach subskrypcji dla firm
+title: Tworzenie konta w Microsoft Teams w ramach subskrypcji biznesowej
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,58 +13,58 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-description: Wykonaj czynności opisane w tym artykule, aby zapisać się Microsoft Teams w ramach subskrypcji dla firm.
-ms.openlocfilehash: 75d1cdd4af19fb9986c034545b345b06401d0f82
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Wykonaj kroki opisane w tym artykule, aby zarejestrować się w celu Microsoft Teams w ramach subskrypcji biznesowej.
+ms.openlocfilehash: 9bdf5327de2dc2e542e2c3a37b3cceea83a86b3f
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568987"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782968"
 ---
-# <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>Zarejestruj się Microsoft Teams w ramach subskrypcji dla firm
+# <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>Tworzenie konta w Microsoft Teams w ramach subskrypcji biznesowej
 
-Microsoft Teams Essentials i Microsoft 365 Business Basic 365 są oferowane do użytku komercyjnego i są przeznaczone dla klientów biznesowych. Ten artykuł ma ułatwić klientom wybranie odpowiedniego dla ich potrzeb.  Nie jest to firma?
+Microsoft Teams Essentials i Microsoft 365 Business Basic 365 są oferowane do użytku komercyjnego i są przeznaczone dla klientów biznesowych. Ten artykuł ma ułatwić klientom wybór, który jest odpowiedni dla ich potrzeb.  Nie jesteś firmą?
 
-**Nie jest to firma?** [Zarejestruj się w planie domowym lub rodzinnym](https://go.microsoft.com/fwlink/?linkid=2109398).
+**Nie jesteś firmą?** [Zarejestruj się, aby uzyskać plan domu lub rodziny](https://go.microsoft.com/fwlink/?linkid=2109398).
 
-## <a name="choosing-the-right-business-subscription"></a>Wybieranie odpowiedniej subskrypcji dla firm
+## <a name="choosing-the-right-business-subscription"></a>Wybieranie odpowiedniej subskrypcji biznesowej
 
-Podczas szukania opcji Microsoft Teams premium na spotkania i rozmowy dostępne są 2 opcje rozpoczynania rozmowy i rozmowy w podobnych cenach — opcje Microsoft Teams Essentials i Microsoft 365 Business Basic. Oceń trzy kluczowe czynniki, aby wybrać to, które najlepiej odpowiada Twoim potrzebom:
+Jeśli chcesz kupić Microsoft Teams funkcji spotkań premium i wywołań, masz 2 podobnie wycenione opcje rozpoczęcia pracy — Microsoft Teams Essentials i Microsoft 365 Business Basic. Oceń trzy kluczowe czynniki, aby wybrać, które najlepiej spełniają Twoje potrzeby:
 
-1. Jakich aplikacji i usług potrzebujesz?.
-2. Ile umiejętności technicznych posiadasz?  
-3. Co należy wziąć pod uwagę w przypadku praw własności danych i własności intelektualnej?
+1. Które aplikacje i usługi chcesz?.
+2. Ile masz umiejętności technicznych?  
+3. Co należy wziąć pod uwagę w kwestii własności danych i praw własności intelektualnej?
 
-W poniższej tabeli znajdziesz opcje rejestracji i usługi, które zostaną zastosować do wybranej opcji.
+Zapoznaj się z poniższą tabelą, aby zapoznać się z opcjami rejestracji i usługami, które będą stosowane do wybranego wyboru.
 
 |&nbsp;|**Opcja 1 — Microsoft Teams Essentials** |**Opcja 2 — Microsoft 365 Business Basic** |
 |---|---|---|
-|Dostępne aplikacje i usługi|Zaloguj się przy użyciu istniejącego konta e-mail (Hotmail, Gmail, Yahoo) przy użyciu nowego procesu tworzenia konta w standardzie business. Microsoft Teams magazynu w chmurze w OneDrive. Bezpłatne wersje internetowe programu Word, Excel, PowerPoint w Office.com do edytowania plików udostępnionych w Teams. <br/><br/> **Ten zestaw aplikacji jest najlepszy dla bardzo małych firm,** które muszą wydajnie współpracować nad spotkaniami wideo i czatami. |Microsoft Teams i OneDrive. Microsoft Exchange, SharePoint, Bookings, Planner i Listy. Premium Office internetowych wersji programu Word, Excel i PowerPoint na Office.com. <br/><br/> **Microsoft 365 Business Basic umożliwia również dostęp do szerokiej** gamy usług internetowych: <ul><li>Nowe, markowe firmowe konta e-mail Outlook udostępnione kalendarze w Twojej firmie.</li><li>Bookings, planowania terminów i nagrań spotkań.</li><li>Przechowywanie i SharePoint dokumentów udostępnionych.</li><li> Microsoft Planner i Listy Microsoft.</li></ul> <br/> Microsoft 365 Business Basic oferowanych przez Teams w ramach konta domeny: <ul><li>Nagrania spotkań i dostęp anonimowy do połączeń w aplikacji Microsoft Teams.</li><li>Łatwiejsze udostępnianie dokumentów w firmie.</li><li>Pomoc techniczna w zakresie zgodności z przepisami dla Twojej branży.</li><li>Uzyskiwanie dostępu do usług i kontrola nad korzystaniem z usług przez pracowników.</li><li>Najszerszy zakres integracji aplikacji innych niż firmy Microsoft (np. Salesforce, Adobe), które działają w Teams i Office.</li></ul>|
-|Wymagana wiedza|Rozpoczynanie pracy bez wiedzy technicznej wymaganej do uruchomienia domeny.|Wymaga zakupu domeny lub być właścicielem domeny. Jeśli chcesz używać istniejącej domeny, potrzebujesz poświadczeń dostępu dla tej domeny i do udowodnienia własności może być potrzebna znajomość techniczna.|
-|Umowa zarządzająca i obsługa danych|Dostępne w ramach uzupełnienia umowy o świadczenie usług firmy [Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) i są najlepsze dla firm, które chcą korzystać z niektórych narzędzi do pracy zdalnej i współpracy oraz mają instrukcje, jak firma **Microsoft** pełnić funkcję administratora danych w ramach zasad zachowania poufności [informacji firmy Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Subskrybenci ("Ty") do usług korzystających z tej opcji nie będą mieli dostępu do zawartości ani danych innego zaproszonego użytkownika ("zaproszeni użytkownicy). <br/><br/> Jeśli na przykład współpracujesz z innymi zaproszonymi użytkownikami nad dokumentem przechowywanym na ich kontach, mogą oni zdecydować, że te dokumenty będą dla Ciebie niedostępne. <br/><br> Zaproszeni użytkownicy mogą nie przesyłać dokumentów z konta Sign-Up uproszczonego do subskrypcji konta domeny, nawet jeśli zostali do tego zaproszeni. Oznacza to, że dokumenty tej osoby mogą być również niedostępne, nawet jeśli dodasz konto domeny później. Dlatego należy odpowiednio oceniać zagadnienia związane z własnością danych i prawami własności intelektualnej.|Dostępna w ramach [umowy](https://go.microsoft.com/fwlink/p/?linkid=2180430) subskrypcyjnej dotyczącej usług online firmy **Microsoft** i jest najlepsza dla firm, które muszą działać [](https://go.microsoft.com/fwlink/p/?linkid=2180314) jako podmiot przetwarzający ich dane w ramach naszego dodatku do ochrony danych i potrzebują pełnego pakietu narzędzi do pracy zdalnej i współpracy. Subskrybenci, którzy są branżami uregulowanym lub chcą mieć większą kontrolę, zarówno nad korzystaniem z usług przez Twoich pracowników, jak i nad przetwarzaniem powiązanych danych przez firmę Microsoft, powinni wybrać pozycję Konto domeny, aby zarejestrować się w witrynie **Microsoft Business Business Basic** i zarejestrować się w ramach umowy enterprise-account konta domeny.|
+|Dostępne aplikacje i usługi|Zaloguj się przy użyciu istniejącego konta e-mail (Hotmail, Gmail, Yahoo) przy użyciu nowego procesu rejestracji w standardzie biznesowym. Microsoft Teams z magazynem w chmurze w OneDrive. Bezpłatne wersje internetowe programu Word, Excel, PowerPoint w witrynie Office.com w celu edytowania plików udostępnionych w Teams. <br/><br/> **Ten zestaw aplikacji jest najlepszy dla bardzo małych firm, które muszą efektywnie współpracować przy spotkaniach wideo i czatach**. |Microsoft Teams i OneDrive. Microsoft Exchange, SharePoint, Bookings, Planner i Listy. Premium Office internetowe wersje programu Word, Excel, PowerPoint w witrynie Office.com. <br/><br/> **Microsoft 365 Business Basic umożliwia również dostęp do szerokiej gamy usług internetowych**: <ul><li>Nowe, markowe biznesowe konta e-mail z Outlook kalendarzami udostępnionymi w firmie.</li><li>Bookings, planowanie terminów i nagrania spotkań.</li><li>Magazyn dokumentów udostępnionych i witryny SharePoint.</li><li> Microsoft Planner i Listy Microsoft.</li></ul> <br/> Microsoft 365 Business Basic oferują dodatkowe usługi w ramach Teams z rejestracją konta domeny: <ul><li>Nagrania spotkań i anonimowy dostęp do połączeń w Microsoft Teams.</li><li>Łatwiejsze udostępnianie dokumentów w firmie.</li><li>Obsługa wymagań dotyczących zgodności w twojej branży.</li><li>Dostęp i kontrola nad korzystaniem z usług przez pracowników.</li><li>Najszerszy zakres integracji aplikacji innych niż Microsoft (np. Salesforce, Adobe), które działają w ramach Teams i Office.</li></ul>|
+|Wymagana wiedza|Rozpocznijmy pracę bez wiedzy technicznej wymaganej do uruchomienia domeny.|Wymaga zakupu domeny lub posiadania domeny. Jeśli chcesz użyć istniejącej domeny, będziesz potrzebować poświadczeń dostępu do domeny i może być potrzebna wiedza techniczna, aby udowodnić własność.|
+|Umowa regulująca i obsługa danych|Dostępne w ramach Dodatku do [umowy o świadczenie usług firmy Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) i **jest najlepsze dla firm, które chcą korzystać z narzędzi do pracy zdalnej i współpracy oraz są zadowolone z tego, że firma Microsoft pełni rolę administratora** twoich danych zgodnie z [oświadczeniem o ochronie prywatności firmy Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839). Subskrybenci ("Ty") usług korzystających z tej opcji nie będą mieli dostępu do zawartości ani danych innego zaproszonego użytkownika ("zaproszeni użytkownicy). <br/><br/> Jeśli na przykład pracujesz wspólnie z innymi zaproszonymi użytkownikami nad dokumentem przechowywanym na ich koncie, mogą oni zdecydować, że te dokumenty będą niedostępne. <br/><br> Osobno zaproszeni użytkownicy mogą zdecydować, że nie będą przesyłać dokumentów na swoim uproszczonym koncie Sign-Up do subskrypcji konta domeny, nawet po zaproszeniu ich do tego. Oznacza to, że ich dokumenty mogą również nie być dostępne dla Ciebie, nawet jeśli później dodasz konto domeny. W związku z tym należy odpowiednio ocenić kwestie związane z własnością danych i prawami własności intelektualnej.|Jest ona dostępna w [ramach umowy subskrypcji online firmy Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180430) i **jest najlepsza dla firm, które potrzebują firmy Microsoft do działania jako podmiot przetwarzający** swoje dane w ramach naszego [dodatku do ochrony danych](https://go.microsoft.com/fwlink/p/?linkid=2180314) i potrzebują pełnego pakietu narzędzi do pracy zdalnej i współpracy. **Subskrybenci, którzy znajdują się w branżach regulowanych lub szukają większej kontroli, zarówno w zakresie korzystania z usług przez pracowników, jak i przetwarzania powiązanych danych przez firmę Microsoft, powinni wybrać konto domeny zarejestruj się w usłudze Microsoft Business Business Basic** i zarejestrować się w ramach umowy na poziomie przedsiębiorstwa konta domeny.|
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>Co to jest firmowa poczta e-mail i jakie są korzyści z jej konfigurowania?
+### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>Co to jest służbowa poczta e-mail i jakie są zalety jej konfigurowania?
 
-Biznesowa wiadomość e-mail to wiadomość e-mail, która korzysta z twojej nazwy domeny. Jeśli na przykład jesteś `contoso.com`właścicielem nazwy domeny, możesz utworzyć witrynę internetową za pomocą adresu URL `www.contoso.com`, ale możesz także utworzyć niestandardowy adres e-mail, taki jak adres yourname@contoso.com. Jest to nazywane markową firmową wiadomością e-mail, ponieważ nadaje twojej wiadomości profesjonalny wygląd.
+Służbowa wiadomość e-mail to wiadomość e-mail używająca własnej nazwy domeny. Jeśli na przykład jesteś właścicielem nazwy `contoso.com`domeny, możesz utworzyć witrynę internetową przy użyciu adresu URL `www.contoso.com`, ale możesz również mieć niestandardowy adres e-mail, taki jak yourname@contoso.com. Jest to nazywane markową firmową wiadomością e-mail, ponieważ nadaje twojej wiadomości e-mail profesjonalny wygląd.
 
-### <a name="how-do-i-get-a-new-business-email-address"></a>Jak mogę uzyskać nowy firmowy adres e-mail?
+### <a name="how-do-i-get-a-new-business-email-address"></a>Jak mogę uzyskać nowy biznesowy adres e-mail?
 
-Dostępne są trzy opcje uzyskiwania firmowej poczty e-mail.
+Istnieją trzy opcje uzyskiwania firmowej poczty e-mail.
 
-- Sugerowaną domenę można onmicrosoft.com bezpłatnie (someone@mybusiness.onmicrosoft.com).
+- Możesz bezpłatnie użyć sugerowanej domeny onmicrosoft.com (someone@mybusiness.onmicrosoft.com).
 - Możesz kupić nową domenę, aby mieć bardziej kompaktowy adres e-mail (mybusinessname@contoso.com).
-- Używasz nazwy domeny, która już należy do Ciebie.
+- Używasz już posiadanej nazwy domeny.
 
-### <a name="why-might-i-need-to-verify-my-domain-to-create-a-business-email"></a>Dlaczego muszę zweryfikować moją domenę, aby utworzyć biznesowy adres e-mail?
+### <a name="why-might-i-need-to-verify-my-domain-to-create-a-business-email"></a>Dlaczego muszę zweryfikować domenę, aby utworzyć firmową wiadomość e-mail?
 
-Jeśli wybierzesz domenę, która już należy do Ciebie, możesz używać jej do swoich adresów e-mail w Microsoft 365. W ramach procesu tworzenia konta prosimy Cię o zweryfikowanie domeny ze względów bezpieczeństwa oraz ochronę przed nieuczciwą aktywnością.
+Jeśli zdecydujesz się na korzystanie z domeny, którą już posiadasz, możesz użyć jej na potrzeby swojego adresu e-mail z Microsoft 365. W ramach procesu tworzenia konta prosimy o zweryfikowanie domeny pod kątem bezpieczeństwa i ochronę przed fałszywymi działaniami.
 
 ### <a name="how-does-recurring-billing-work"></a>Jak działa rozliczanie cykliczne?
 
-Jeśli Rozliczanie cykliczne jest w dniu subskrypcji, opłata za subskrypcję będzie nadal naliczana co miesiąc (lub co rok, w zależności od planu rozliczeniowego). Jeśli Twoja subskrypcja jest aktywna, możesz wyłączyć lub ponownie włączyć ją w centrum administracyjnym. Aby uzyskać więcej informacji [, zobacz Wyłączanie lub wyłączanie rozliczania cyklicznego](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
+Gdy rozliczenia cykliczne są włączone, subskrypcja będzie nadal rozliczana co miesiąc (lub rok, w zależności od planu rozliczeniowego) w dniu subskrypcji. Jeśli subskrypcja jest aktywna, możesz ją wyłączyć lub ponownie włączyć w centrum administracyjnym. Dowiedz się więcej na [stronie Włączanie lub wyłączanie rozliczeń cyklicznych](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
-### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>Co zrobić, jeśli chcę zmienić nazwę swojej firmy?
+### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>Co zrobić, jeśli chcę zmienić nazwę firmy?
 
-Skontaktuj się z ekspertami pomocy technicznej dla małych firm, którzy pomogą Ci zmienić nazwę Twojej firmy. Aby uzyskać więcej informacji,  [zobaczUzyskaj pomoc techniczną](../get-help-support.md).
+Skontaktuj się z naszymi ekspertami ds. pomocy technicznej dla małych firm, którzy mogą pomóc w zmianie nazwy firmy. Dowiedz się więcej na [stronie Uzyskiwanie pomocy technicznej](../get-help-support.md).

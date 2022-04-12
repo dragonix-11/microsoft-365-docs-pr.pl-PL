@@ -1,5 +1,5 @@
 ---
-title: Prywatność i zabezpieczenia w mobilności podstawowej i zabezpieczeniach
+title: Prywatność i bezpieczeństwo w usłudze Basic Mobility and Security
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,16 +13,16 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Po aktywowaniu pakietu Basic Mobility and Security możesz tworzyć zasady zarządzania urządzeniami przenośnymi.
-ms.openlocfilehash: 288ffe44610a68193ca6d96543e97a02e334f57d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Po aktywowaniu pakietu Basic Mobility and Security można utworzyć zasady zarządzania urządzeniami przenośnymi.
+ms.openlocfilehash: 713cedb61c8519cf735b47fafa1e58c33170e683
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983932"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780748"
 ---
-# <a name="privacy-and-security-in-basic-mobility-and-security"></a>Prywatność i zabezpieczenia w mobilności podstawowej i zabezpieczeniach
+# <a name="privacy-and-security-in-basic-mobility-and-security"></a>Prywatność i bezpieczeństwo w usłudze Basic Mobility and Security
 
-Basic Mobility and Security to oparta na chmurze usługa Microsoft Intune, która ułatwia zabezpieczanie urządzeń przenośnych i zarządzanie nimi w organizacji. Po aktywowaniu pakietu Basic Mobility and Security możesz tworzyć zasady zarządzania urządzeniami przenośnymi. Te zasady można następnie wdrożyć na urządzeniach przenośnych zarejestrowanych przez licencjonowanych Microsoft 365 użytkowników w organizacji.
+Basic Mobility and Security to oparta na chmurze usługa obsługiwana przez Microsoft Intune, która ułatwia zarządzanie urządzeniami przenośnymi i zabezpieczanie ich w organizacji. Po aktywowaniu pakietu Basic Mobility and Security można utworzyć zasady zarządzania urządzeniami przenośnymi. Te zasady można następnie wdrożyć na urządzeniach przenośnych, które zostały zarejestrowane przez licencjonowanych użytkowników Microsoft 365 w organizacji.
 
-Microsoft Intune wysyła do firmy Microsoft 365 informacje o stanie zgodności każdego zarządzanego urządzenia, a następnie na podstawie ustawionych zasad możesz generować raporty z informacją o tym, czy zarządzane urządzenia w organizacji są zgodne. Aby dowiedzieć się więcej o zobowiązaniu firmy Microsoft dotyczącym ochrony prywatności i zabezpieczeń, zobacz  [Centrum zaufania firmy](https://www.microsoft.com/trust-center) Microsoft.
+Microsoft Intune wysyła do Microsoft 365 informacje o stanie zgodności każdego zarządzanego urządzenia, a następnie można generować raporty pokazujące, czy urządzenia zarządzane w organizacji są zgodne na podstawie ustawionych zasad. Aby dowiedzieć się więcej na temat zaangażowania firmy Microsoft w ochronę prywatności i bezpieczeństwo, zobacz [Centrum zaufania firmy Microsoft](https://www.microsoft.com/trust-center).

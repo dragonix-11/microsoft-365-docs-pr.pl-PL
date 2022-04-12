@@ -1,5 +1,5 @@
 ---
-title: centrum administracyjne platformy Microsoft 365 SharePoint aktywności
+title: raporty aktywności Centrum administracyjne platformy Microsoft 365 SharePoint
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,46 +19,46 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Uzyskaj raport SharePoint aktywności, aby dowiedzieć się więcej o aktywności każdego SharePoint użytkownika, liczbie udostępnionych plików i użyciu magazynu.
-ms.openlocfilehash: 83d093d96f606503509a3345f12b28291977bf86
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Uzyskaj raport użycia aktywności SharePoint, aby dowiedzieć się więcej o aktywności każdego użytkownika SharePoint, liczbie udostępnionych plików i wykorzystaniu magazynu.
+ms.openlocfilehash: 939dcf5c81d68a7a399c725d44687423670ed65a
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400771"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781565"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365 raporty w centrum administracyjnym — aktywność SharePoint administracyjnej
+# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie SharePoint
 
-Jako administrator Microsoft 365 nawigacyjny Raporty możesz wyświetlać informacje o aktywności dotyczące różnych produktów w organizacji. Umożliwia on przejście do bardziej szczegółowych informacji o aktywności specyficznej dla poszczególnych produktów. Zapoznaj się z [raportami aktywności w centrum administracyjne platformy Microsoft 365](activity-reports.md).
+Jako administrator Microsoft 365 pulpit nawigacyjny Raporty przedstawia omówienie działań w różnych produktach w organizacji. Umożliwia on przejście do bardziej szczegółowych informacji o aktywności specyficznej dla poszczególnych produktów. Zapoznaj się z [raportami aktywności w Centrum administracyjne platformy Microsoft 365](activity-reports.md).
   
 Możesz na przykład zrozumieć działanie każdego użytkownika mającego licencję na używanie programu SharePoint poprzez wyświetlenie jego interakcji z plikami. Ułatwia to także zrozumienie poziomu współpracy przez wyświetlanie liczby udostępnionych plików.
   
 ## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>Jak dotrzeć do raportu aktywności programu SharePoint?
 
 1. W centrum administracyjnym przejdź do strony **Raporty** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Użycie</a>. 
-2. Na stronie głównej pulpitu nawigacyjnego kliknij przycisk **Wyświetl więcej** na SharePoint głównej.
+2. Na stronie głównej pulpitu nawigacyjnego kliknij przycisk **Wyświetl więcej** na karcie SharePoint.
   
-## <a name="interpret-the-sharepoint-activity-report"></a>Interpretowanie SharePoint aktywności
+## <a name="interpret-the-sharepoint-activity-report"></a>Interpretowanie raportu aktywności SharePoint
 
-Możesz wyświetlić działania w raporcie SharePoint, wybierając **kartę** Działanie.<br/>![Microsoft 365 raporty — raport aktywności SharePoint firmy Microsoft.](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
+Możesz wyświetlić działania w raporcie SharePoint, wybierając kartę **Działanie**.<br/>![raporty Microsoft 365 — raport aktywności SharePoint firmy Microsoft.](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
 
-Wybierz **pozycję Wybierz kolumny** , aby dodać lub usunąć kolumny z raportu.  <br/> ![SharePoint aktywności — wybierz kolumny.](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
+Wybierz pozycję **Wybierz kolumny** , aby dodać lub usunąć kolumny z raportu.  <br/> ![SharePoint raportu aktywności — wybierz kolumny.](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
-Dane raportu można również wyeksportować do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, w celu filtrowania i sortowania należy wyeksportować dane. 
+Możesz również wyeksportować dane raportu do pliku Excel .csv, wybierając link **Eksportuj**. Powoduje to wyeksportowanie danych wszystkich użytkowników oraz umożliwia wykonywanie prostego sortowania i filtrowania w celu dalszej analizy. Jeśli masz mniej niż 2000 użytkowników, możesz sortować i filtrować dane wewnątrz tabeli raportu. Jeśli masz więcej niż 2000 użytkowników, w celu filtrowania i sortowania należy wyeksportować dane. 
 
-W **SharePoint aktywności** możesz przeglądać trendy z ostatnich 7, 30, 90 lub 180 dni. Jeśli jednak wybierzesz określony dzień w raporcie, tabela będzie zawierała dane dla do 28 dni od bieżącej daty (nie daty wygenerowania raportu).
+Raport **aktywności SharePoint** można wyświetlić dla trendów z ostatnich 7 dni, 30 dni, 90 dni lub 180 dni. Jeśli jednak wybierzesz konkretny dzień w raporcie, w tabeli będą wyświetlane dane przez maksymalnie 28 dni od bieżącej daty (a nie daty wygenerowania raportu).
   
 |Element|Opis|
 |:-----|:-----|
-|**Metryczny**|**Definicja**|
-|Nazwa użytkownika  <br/> |Adres e-mail użytkownika, który wykonał działanie w SharePoint sieci Web.  <br/> |
-|Data ostatniego działania (UTC)  <br/> |Najpóźniejsza data wykonania działania na plikach lub odwiedzono stronę w wybranym zakresie dat. Aby zobaczyć działanie, które wystąpiło w konkretnym dniu, wybierz datę bezpośrednio na wykresie.  <br/> |
-|Pliki przeglądane lub edytowane  <br/> |Liczba plików, które zostały przekazane, pobrane, zmodyfikowane lub wyświetlone.   <br/> |
-|Pliki zsynchronizowane  <br/> |Liczba plików, które zostały zsynchronizowane z lokalnym urządzeniem użytkownika z witryną SharePoint sieci Web. <br/> |
-|Pliki udostępnione wewnętrznie  <br/> | Liczba plików, które zostały udostępnione użytkownikom w organizacji lub użytkownikom w grupach (mogą to być użytkownicy zewnętrzni).  <br/> |
-|Pliki udostępniane zewnętrznie  <br/> |Liczba plików, które zostały udostępnione użytkownikom spoza organizacji. <br/>|
-|Odwiedzone strony  <br/> |Odwiedziny unikatowych stron przez użytkownika. <br/>|
-|Deleted  <br/> | Oznacza to, że licencja użytkownika została usunięta.  <br/>  **UWAGA:** Działania usuniętego użytkownika nadal będą wyświetlane w raporcie, jeśli usunięty użytkownik był licencjonowany w pewnym momencie w wybranym okresie. Kolumna Usunięte pozwala łatwo zauważyć użytkowników, którzy od dłuższego czasu nie byli aktywni, ale jednak ich dane zostały uwzględnione w raporcie.  <br/> |
+|**Metrycznych**|**Definicja**|
+|Nazwa użytkownika  <br/> |Adres e-mail użytkownika, który wykonał działanie w witrynie SharePoint.  <br/> |
+|Data ostatniego działania (UTC)  <br/> |Ostatnia data wykonania działania pliku lub odwiedzin strony dla wybranego zakresu dat. Aby zobaczyć działanie, które wystąpiło w konkretnym dniu, wybierz datę bezpośrednio na wykresie.  <br/> |
+|Pliki wyświetlane lub edytowane  <br/> |Liczba plików przekazanych, pobranych, zmodyfikowanych lub wyświetlonych przez użytkownika.   <br/> |
+|Zsynchronizowane pliki  <br/> |Liczba plików, które zostały zsynchronizowane z urządzenia lokalnego użytkownika z witryną SharePoint. <br/> |
+|Pliki udostępnione wewnętrznie  <br/> | Liczba plików udostępnionych użytkownikom w organizacji lub użytkownikom w grupach (które mogą obejmować użytkowników zewnętrznych).  <br/> |
+|Pliki udostępnione zewnętrznie  <br/> |Liczba plików, które zostały udostępnione użytkownikom spoza organizacji. <br/>|
+|Odwiedzone strony  <br/> |Odwiedziny na unikatowych stronach przez użytkownika. <br/>|
+|Deleted  <br/> | Oznacza to, że licencja użytkownika została usunięta.  <br/>  **UWAGA:** Aktywność usuniętego użytkownika będzie nadal wyświetlana w raporcie tak długo, jak długo będzie on licencjonowany w wybranym okresie. Kolumna Usunięte pozwala łatwo zauważyć użytkowników, którzy od dłuższego czasu nie byli aktywni, ale jednak ich dane zostały uwzględnione w raporcie.  <br/> |
 |Data usunięcia  <br/> |Data usunięcia licencji użytkownika. <br/>|
-|Przypisany produkt  <br/> |Użytkownik Microsoft 365 produktów licencjonowanych na użytkownika.|
+|Przypisany produkt  <br/> |Microsoft 365 produkty, które są licencjonowane dla użytkownika.|
 |||

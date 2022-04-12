@@ -22,222 +22,221 @@ search.appverid:
 - GEU150
 - GEA150
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
-description: Dowiedz się więcej Office 365 obsługiwanej przez firmę 21Vianet, która została zaprojektowana w celu zaspokojenia potrzeb bezpiecznego, niezawodnego i skalowalnego usług w chmurze w Chinach.
+description: Dowiedz się więcej o Office 365 obsługiwanych przez firmę 21Vianet, która została zaprojektowana w celu spełnienia wymagań dotyczących bezpiecznych, niezawodnych i skalowalnych usług w chmurze w Chinach.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4821f6a307858a7688b6ff9b6b8b274dd4bb275b
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 7608be301accfb99e03683240108be5eaa7529a6
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63016077"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782638"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Usługa Office 365 obsługiwana przez firmę 21Vianet
 
-Office 365 obsługiwana przez firmę 21Vianet została zaprojektowana tak, aby spełnić potrzeby bezpieczne, niezawodne i skalowalne usługi w chmurze w Chinach. Ta usługa jest wspierane przez technologię, która została licencjonowana przez firmę Microsoft na firmę 21Vianet.
-  
-Firma Microsoft nie operuje samą usługą. 21Vianet zarządza dostarczaniem usługi oraz jej świadczeniem. Firma 21Vianet jest największym dostawcą internetowych centrów danych neutralnych dla operatora w Chinach, zapewniając hosting, zarządzane usługi sieciowe i usługi infrastruktury informatycznej w chmurze. W ramach licencjonowania technologii firmy Microsoft firma 21Vianet operuje lokalnymi centrami danych firmy Office 365, aby zapewnić możliwość korzystania z usług firmy Office 365 przy jednoczesnym zachowaniu danych w Chinach. 21Vianet zapewnia również usługi subskrypcji i rozliczeń, a także pomoc techniczną.
-  
+Office 365 obsługiwany przez firmę 21Vianet został zaprojektowany w celu spełnienia wymagań dotyczących bezpiecznych, niezawodnych i skalowalnych usług w chmurze w Chinach. Ta usługa jest obsługiwana przez technologię, którą firma Microsoft ma licencję 21Vianet.
+
+Firma Microsoft nie obsługuje samej usługi. 21Vianet obsługuje, zapewnia i zarządza dostarczaniem usługi. 21Vianet jest największym neutralnym operatorem internetowym dostawcą usług centrów danych w Chinach, świadczącym usługi hostingowe, zarządzane usługi sieciowe i usługi infrastruktury przetwarzania w chmurze. Licencjonując technologie firmy Microsoft, firma 21Vianet obsługuje lokalne Office 365 centrów danych, aby zapewnić możliwość korzystania z usług Office 365 przy jednoczesnym zachowaniu danych w Chinach. 21Vianet zapewnia również subskrypcję i usługi rozliczeniowe, a także pomoc techniczną.
+
 > [!NOTE]
-> Te usługi podlegają przepisom chińskim. 
-  
- **Obserwuj nas w czacie**
-  
-Zeskanuj ten kod QR, aby obserwować nas w czacie i uzyskać najnowsze aktualizacje dla aplikacji Office 365 obsługiwanej przez firmę 21Vianet.
-  
-![Zeskanuj ten kod QR, aby obserwować nas w Uchacie.](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
-  
- **Informacje o usługach w Office 365 obsługiwanej przez firmę 21Vianet**
-  
-W poniższych sekcjach wyróżniono niektóre różnice w poszczególnych usługach. Ostatecznie naszym celem jest osiągnięcie podobieństwa z usługami globalnymi. Jednak ze względu na unikatowy charakter usług w Chinach, obsługiwanych przez partnera z centrów danych w Chinach, istnieją pewne funkcje, które nie zostały jeszcze włączone. Klienci zobaczą, że z czasem usługi będą zbliżać się do pełnej analizy funkcji. Aby uzyskać bardziej szczegółowy opis usług dostępnych dla każdego Office 365 obsługiwanego przez firmę 21Vianet, zobacz opis Office 365 [usługi](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
-  
-    
-Jeśli chcesz dowiedzieć się, jak rozpocząć pracę z ogólnymi Office 365, zobacz [Wprowadzenie](../admin-overview/get-started-with-office-365.md).
-  
+> Te usługi podlegają chińskiemu prawu.
+
+ **Obserwuj nas w serwisie WeChat**
+
+Zeskanuj ten kod QR, aby obserwować nas w WeChat i uzyskać najnowsze aktualizacje dla usługi Office 365 obsługiwanej przez firmę 21Vianet.
+
+![Zeskanuj ten kod QR, aby śledzić nas na platformie WeChat.](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
+
+ **Informacje o usługach w Office 365 obsługiwanych przez firmę 21Vianet**
+
+W poniższych sekcjach wyróżniono niektóre różnice w poszczególnych usługach. Ostatecznie naszym celem jest osiągnięcie równoważności z usługami globalnymi. Jednak ze względu na unikatowy charakter chińskich usług - obsługiwanych przez partnera z centrów danych w Chinach - istnieją pewne funkcje, które nie zostały jeszcze włączone. Klienci będą widzieć, że usługi zbliżają się do pełnej parzystości funkcji w czasie. Aby uzyskać bardziej szczegółowe informacje na temat usług dostępnych dla każdego planu Office 365 obsługiwanego przez firmę 21Vianet, zobacz [opis usługi Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
+
+Jeśli chcesz dowiedzieć się, jak rozpocząć pracę z ogólnymi usługami Office 365, zobacz [Wprowadzenie](../admin-overview/get-started-with-office-365.md).
+
 ## <a name="office-365-suite"></a>Pakiet usługi Office 365
 
 |Funkcja|Dostępność|
-|:-----|:-----|
-|Domeny niestandardowe  <br/> |Administratorzy mogą tworzyć i/lub używać domen niestandardowych zarejestrowanych za pośrednictwem dostawców domen specyficznych dla języka chińskiego. Jeśli nie masz domeny niestandardowej, możesz kupić nazwę [domeny u](../get-help-with-domains/buy-a-domain-name.md) rejestratora nazw domen. Jeśli masz już rejestratora domen lub [dostawcę hostingu DNS, zobacz Znajdowanie rejestratora domen lub dostawcy hostingu DNS](../get-help-with-domains/find-your-domain-registrar.md).  <br/> Ponadto w przypadku utworzenia publicznej witryny sieci Web za pomocą usługi Office 365 SharePoint Online zasady zgodności China Internet wymagają uzyskania numeru internetowego dostawcy zawartości (ICP).  **Uwaga:** Automatyczne sprawdzanie poprawności wyrazów niedozwolone w niestandardowych nazwach domen jest niedostępne.           |
-|Pomoc dotycząca subskrypcji i rozliczeń oraz pomoc techniczna  <br/> |Dostarczony przez firmę 21Vianet. Aby uzyskać informacje na temat kontaktu z pomocą techniczną, zobacz Kontakt [Office 365 pomocy technicznej dla firm](../../business-video/get-help-support.md).  <br/> |
-|Samodzielne resetowanie hasła  <br/> |Dostępne tylko dla administratorów. Aby uzyskać więcej informacji, [zobacz Zmienianie lub resetowanie hasła w u Office 365 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
-|Zabezpieczenia, prywatność, zgodność i szczegóły dotyczące poziomów pomocy technicznej  <br/> |Dostarczony przez firmę 21Vianet.  <br/> |
-|Office konfiguracji komputera  <br/> |Office komputerów stacjonarnych nie jest dostępne w Office 2010 i Office 2007. Jednak administratorzy mogą [skonfigurować Office aplikacji klasycznych do współpracy z Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
-|Obsługa urządzeń przenośnych\*  <br/> | Wkrótce będą dostępne następujące funkcje dla urządzeń przenośnych:  <br/>  Zarządzanie urządzeniami przenośnymi  <br/>  Usługi Blackberry Business Cloud Services (BBCS) są niedostępne, ale do uruchamiania programu Blackberry Enterprise Server (BES) można używać urządzeń firmy Exchange ActiveSync lub oferty firmy Research in Motion (RIM, bezprzewodowego rozwiązania poczty e-mail firmy BlackBerry).  <br/>  Aby uzyskać więcej informacji na temat pomocy technicznej dla urządzeń przenośnych, zobacz [Konfigurowanie dostępu mobilnego dla użytkowników i zarządzanie tym dostępem](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
-|Office Lens  <br/> |Niedostępne.  <br/> |
-|Microsoft Planner  <br/> |Wkrótce.  <br/> |
-|Microsoft Teams  <br/> |Niedostępne.  <br/> |
-|Sway  <br/> |Wkrótce.  <br/> |
-|Pomoc w wielu językach  <br/> |Pomoc jest dostępna tylko w języku chińskim uproszczonym i angielskim.  <br/> |
-|Community z podaną pomocą  <br/> |Community nie jest jeszcze dostępna, ale możesz wybrać przycisk Pomoc ( **?** ) w prawym górnym rogu portalu, aby wyświetlić artykuły pomocy.  <br/> |
-   
-\*Opcjonalne usługi dostarczane bezpośrednio przez firmę Microsoft, z zastrzeżeniem warunków świadczenia usług i zasad zachowania poufności informacji firmy Microsoft.
-  
+|---|---|
+|Domeny niestandardowe|Administratorzy mogą tworzyć i/lub używać domen niestandardowych zarejestrowanych za pośrednictwem dostawców domeny specyficznych dla Chin. Jeśli nie masz domeny niestandardowej, możesz [kupić nazwę domeny](../get-help-with-domains/buy-a-domain-name.md) od rejestratora nazw domen. Jeśli już go masz, [znajdź rejestratora domen lub dostawcę hostingu DNS](../get-help-with-domains/find-your-domain-registrar.md).  <br/> Ponadto jeśli utworzysz publiczną witrynę internetową przy użyciu usługi Office 365 SharePoint Online, zasady zgodności z Internetem w Chinach wymagają uzyskania numeru dostawcy zawartości internetowej (ICP).  **Uwaga:** Automatyczna weryfikacja niedozwolonych wyrazów w niestandardowych nazwach domen jest niedostępna.|
+|Pomoc dotycząca subskrypcji i rozliczeń oraz pomoc techniczna|Dostarczone przez 21Vianet. Aby uzyskać informacje na temat kontaktowania się z pomocą techniczną, zobacz [Kontakt z Office 365 pomocy technicznej dla firm](../../business-video/get-help-support.md).|
+|Samodzielne resetowanie hasła|Dostępne tylko dla administratorów. Aby uzyskać więcej informacji, zobacz [Zmienianie lub resetowanie hasła w Office 365 obsługiwanych przez firmę 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).|
+|Zabezpieczenia, prywatność, zgodność i szczegóły dotyczące poziomów pomocy technicznej|Dostarczone przez 21Vianet.|
+|Konfiguracja programu Office Desktop|Office konfiguracja pulpitu nie jest dostępna w Office 2010 r. i Office 2007 r. Administratorzy mogą jednak [skonfigurować bieżące aplikacje klasyczne Office do pracy z Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).|
+|Obsługa urządzeń przenośnych i urządzeń\*|Wkrótce dostępne są następujące funkcje mobilne:  <br/>  Mobile Zarządzanie urządzeniami (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) nie jest dostępna, ale można użyć urządzeń Exchange ActiveSync lub oferty z Research in Motion (RIM, rozwiązanie bezprzewodowej poczty e-mail BlackBerry), aby uruchomić blackberry Enterprise Server (BES).  <br/>  Aby uzyskać więcej informacji na temat pomocy technicznej dla urządzeń przenośnych, zobacz [Konfigurowanie dostępu mobilnego i zarządzanie nimi dla użytkowników](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).|
+|Office Lens|Niedostępne.|
+|Microsoft Planner|Wkrótce.|
+|Microsoft Teams|Niedostępne.|
+|Sway|Wkrótce.|
+|Pomoc w wielu językach|Pomoc jest dostępna tylko w języku chińskim uproszczonym i angielskim.|
+|Community pomoc|Community pomoc nie jest jeszcze dostępna, ale możesz wybrać przycisk Pomoc ( **?** ) w prawym górnym rogu portalu, aby wyświetlić artykuły pomocy.|
+
+\*Opcjonalne usługi świadczone bezpośrednio przez firmę Microsoft i z zastrzeżeniem warunków użytkowania i zasad zachowania poufności informacji firmy Microsoft.
+
 ## <a name="sharepoint-online"></a>SharePoint Online
 
 |Funkcja|Dostępność|
-|:-----|:-----|
-|Udostępnianie dokumentu, biblioteki lub witryny pocztą e-mail osobie spoza organizacji  <br/> |Ta funkcja jest dostępna, ale domyślnie wyłączona, ponieważ za jej pomocą mogą być udostępniane pliki spoza Twojego kraju. Administratorzy mogą włączyć tę usługę, ale otrzymają komunikat ostrzegawczy z informacją, że pliki mogą być udostępniane poza Twoim kraju. Użytkownicy, którzy spróbują udostępnić dane osobie spoza organizacji również otrzymają ostrzeżenie. Aby uzyskać więcej informacji, zobacz [Udostępnianie SharePoint lub folderów w programie Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
-|Usługi programu Access  <br/> |Program Access 2013 jest obsługiwany, ale dodawanie nowych aplikacji programu Access może nie być dostępne, ponieważ ta funkcja zostanie wycofana z usługi Office 365 i SharePoint Online. Tworzenie nowych aplikacji sieci Web i baz danych sieci Web programu Access w usługach Office 365 i SharePoint Online rozpocznie się w czerwcu 2017 r., a pozostałe aplikacje i bazy danych sieci Web zostaną zatrzymane do kwietnia 2018 r. Ponadto funkcje programu Access 2010 nie są obsługiwane i próba użycia bazy danych programu Access 2010 spowoduje błędy i możliwą utratę danych.  <br/> |
-|Microsoft Power Apps  <br/> |Aplikacje Microsoft Power Apps i Microsoft Power Automate są teraz dostępne dla klientów z uregulowanych branż i organizacji komercyjnych, które mają interesy z tabelami w Chinach i wymagają przechowywania danych lokalnych. <br/> |
-|Zarządzanie prawami do informacji (IRM)  <br/> |Możliwość skonfigurowania funkcji usługi IRM w celu SharePoint dla organizacji zostanie wkrótce w wkrótce wer.  <br/> |
-|Możliwość tłumaczenia tekstu lub stron  <br/> |Domyślnie dostępne, ale wyłączone. Administratorzy dzierżawy mogą włączyć tę możliwość, ale usługa tłumaczenia w chmurze może być zlokalizowany poza Twoim kraju. Jeśli nie chcesz, aby użytkownicy wysyłali zawartość do usługi tłumaczenia w chmurze, możesz wyłączyć te funkcje.  <br/> |
-|Rejestracja ICP w publicznej witrynie sieci Web  <br/> |Zasady zgodności China Internet wymagają, aby uzyskać numer internetowego dostawcy zawartości (ICP) dla publicznej witryny sieci Web.  |
-|Funkcje publicznej witryny sieci Web  <br/> |Publiczne witryny internetowe są dostępne tylko, jeśli zakupiono usługę Office 365 przed 9 marca 2015 r. Jednak Bing, udostępnianie zewnętrzne i komentarze nie są dostępne w publicznej witrynie sieci Web, ponieważ te funkcje mogą wysyłać dane poza Twój kraj.  <br/> |
-|Kanał aktualności i Yammer (sieci społecznościowe przedsiębiorstwa)  <br/> |Kanał aktualności (centrum społecznościowe, w którym są dostępne aktualizacje osób, dokumentów, witryn i znaczników, które dodajesz) jest dostępny. Yammer jest niedostępna.  <br/> |
-|Automatycznie hostowane aplikacje  <br/> |Możesz wdrożyć aplikację hostowaną przez dostawcę, która używa SharePoint i Usługi SQL Azure. Aby uzyskać więcej informacji, [zobacz Tworzenie podstawowej hostowanej aplikacji dostawcy dla SharePoint](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins). Już wkrótce deweloperzy będą mieć możliwość wdrożenia aplikacji, która korzysta z automatycznie hostowanych witryn internetowych.  <br/> |
-|InfoPath  <br/> |Niedostępne.  <br/> |
-|Sklep SharePoint  <br/> |Sklepy Office i SharePoint App Store są opcjonalnymi usługami obsługiwanymi przez firmę Microsoft Corporation lub jej podmioty stowarzyszone z dowolnego obiektu firmy Microsoft na całym świecie. Aplikacje dostępne w Sklepie są dostarczane przez różnych wydawców aplikacji i podlegają regulaminom oraz zasadom zachowania poufności informacji tego wydawcy. Korzystanie z dowolnych z tych aplikacji może powodować przesyłanie, przechowywane lub przetwarzane Twoich danych w dowolnym kraju, w którym wydawca aplikacji, jego podmioty stowarzyszone lub usługodawcy mają swoje miejsce. Przed pobraniem i użyciem takich aplikacji należy uważnie zapoznać się z postanowieniami i oświadczeniami o ochronie prywatności wydawcy aplikacji.  <br/> |
-|Office 365 witryny dewelopera: Publikowanie SharePoint w Sklepie za pomocą pulpitu nawigacyjnego sprzedawców\*  <br/> |Dowiedz się więcej [o wymaganiach dotyczących przesyłania](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china) aplikacji do SharePoint dystrybucji do użytkowników usługi Office 365 obsługiwanej przez firmę 21Vianet.  <br/> |
-   
-\*Opcjonalne usługi dostarczane bezpośrednio przez firmę Microsoft, z zastrzeżeniem warunków świadczenia usług i zasad zachowania poufności informacji firmy Microsoft.
-  
+|---|---|
+|Udostępnianie dokumentu, biblioteki lub witryny pocztą e-mail osobie spoza organizacji|Ta funkcja jest dostępna, ale domyślnie wyłączona, ponieważ jej użycie może spowodować udostępnienie plików poza twoim krajem. Administratorzy mogą ją włączyć, ale otrzymają komunikat ostrzegawczy z informacją, że pliki mogą być udostępniane poza twoim krajem. Użytkownicy, którzy próbują udostępnić je osobie spoza organizacji, również otrzymają ostrzeżenie. Aby uzyskać więcej informacji, zobacz [Udostępnianie plików lub folderów SharePoint w Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).|
+|Usługi programu Access|Program Access 2013 jest obsługiwany, ale dodawanie nowych aplikacji programu Access może nie być dostępne, ponieważ ta funkcja zostanie wycofana z Office 365 i SharePoint Online. Tworzenie nowych aplikacji internetowych opartych na programie Access i baz danych internetowych programu Access w usługach Office 365 i SharePoint Online przestanie obowiązywać od czerwca 2017 r. i wszystkich pozostałych aplikacji internetowych i baz danych internetowych do kwietnia 2018 r. Ponadto funkcje programu Access 2010 nie są obsługiwane, a próba użycia bazy danych programu Access 2010 spowoduje błędy i możliwą utratę danych.|
+|Microsoft Power Apps|Usługi Microsoft Power Apps i Microsoft Power Automate są teraz dostępne dla klientów w branżach regulowanych i organizacjach komercyjnych, które prowadzą interesy z tabelami w Chinach i wymagają lokalnego przechowywania danych.|
+|Zarządzanie prawami do informacji (IRM)|Możliwość ustawienia możliwości usługi IRM na SharePoint dla twojej organizacji wkrótce.|
+|Możliwość tłumaczenia tekstu lub stron|Dostępne, ale domyślnie wyłączone. Administratorzy dzierżawy mogą włączyć tę możliwość, ale usługa tłumaczenia w chmurze może znajdować się poza Twoim krajem. Jeśli nie chcesz, aby użytkownicy wysyłali zawartość do usługi tłumaczenia w chmurze, możesz wyłączyć te funkcje.|
+|Rejestracja protokołu ICP w publicznej witrynie internetowej|Zasady zgodności z Internetem w Chinach wymagają uzyskania numeru dostawcy zawartości internetowej (ICP) dla publicznej witryny internetowej.|
+|Funkcje publicznej witryny internetowej|Publiczne witryny internetowe są dostępne tylko wtedy, gdy zakupiono Office 365 przed 9 marca 2015 r. Jednak Bing mapy, udostępnianie zewnętrzne i komentarze nie są dostępne w publicznej witrynie internetowej, ponieważ te funkcje mogą wysyłać dane poza kraj.|
+|Kanał aktualności i Yammer (sieci społecznościowe przedsiębiorstwa)|Kanał aktualności (centrum społecznościowe, w którym będą widoczne aktualizacje od osób, dokumentów, witryn i tagów, które obserwujesz) jest dostępny. Yammer jest niedostępna.|
+|Aplikacje automatycznie hostowane|Możesz wdrożyć aplikację hostowaną przez dostawcę, która używa SharePoint i Usługi SQL Azure. Aby uzyskać więcej informacji, zobacz [Tworzenie podstawowej aplikacji hostowanej przez dostawcę dla SharePoint](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins). Wkrótce deweloperzy będą mogli wdrożyć aplikację korzystającą z witryny internetowej z automatycznym hostowaniem.|
+|Programu infopath|Niedostępne.|
+|Sklep SharePoint|Sklepy Office i SharePoint App Store są opcjonalnymi usługami obsługiwanymi przez firmę Microsoft Corporation lub jej podmiot stowarzyszony z dowolnego z obiektów firmy Microsoft na całym świecie. Aplikacje dostępne w Sklepie są udostępniane przez różnych wydawców aplikacji i podlegają warunkom i zasadom zachowania poufności informacji wydawcy aplikacji. Korzystanie z dowolnej z tych aplikacji może spowodować, że dane będą przesyłane do, przechowywane lub przetwarzane w dowolnym kraju, w którym wydawca aplikacji, jego podmioty stowarzyszone lub dostawcy usług obsługują obiekty. Przed pobraniem i użyciem takich aplikacji dokładnie przejrzyj warunki i zasady zachowania poufności informacji wydawcy aplikacji.|
+|witryna dla deweloperów Office 365: publikowanie w sklepie SharePoint przy użyciu pulpitu nawigacyjnego sprzedawcy\*|Dowiedz się więcej [o wymaganiach dotyczących przesyłania aplikacji dla SharePoint](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china) do dystrybucji dla użytkowników Office 365 obsługiwanych przez firmę 21Vianet.|
+
+\*Opcjonalne usługi świadczone bezpośrednio przez firmę Microsoft i z zastrzeżeniem warunków użytkowania i zasad zachowania poufności informacji firmy Microsoft.
+
 ## <a name="outlook-web-app"></a>Outlook Web App
 
 |Funkcja|Dostępność|
-|:-----|:-----|
-|Blackberry Business Cloud Services (BBCS)  <br/> |Niedostępne, ale można używać urządzeń Exchange ActiveSync lub oferty firmy Research in Motion (RIM, bezprzewodowego rozwiązania poczty e-mail firmy BlackBerry) do uruchamiania programu Blackberry Enterprise Server (BES).  <br/> |
-|Zarządzanie prawami do informacji  <br/> |Wkrótce.  <br/> |
-|Informacje o wolnych/zajętych  <br/> |Dostępne są informacje o godzinie wolny/zajęty między lokalnymi Exchange Online skrzynkami pocztowymi.  <br/> |
-|Udostępnianie kalendarza  <br/> |Udostępnianie kalendarza między lokalnymi i lokalnymi Exchange Online jest dostępna.  <br/> |
-|Udostępnianie kontaktów  <br/> |Wkrótce.  <br/> |
-|Śledzenie wiadomości  <br/> |Wkrótce.  <br/> |
-|Aplikacje  <br/> |Wkrótce.  <br/> |
-|Funkcja Miejsca  <br/> |Ta funkcja pokazuje mapy adresów e-mail; ponieważ może zezwalać na dane spoza kraju, są one niedostępne.  <br/> |
-|Połączone konta  <br/> |Nawiązywanie połączenia z innymi kontami, takimi jak Hotmail (Outlook.com), zostanie wkrótce naniesienie wkrótce.  <br/> |
-   
+|---|---|
+|Blackberry Business Cloud Services (BBCS)|Niedostępne, ale możesz użyć urządzeń Exchange ActiveSync lub oferty firmy Research in Motion (RIM, rozwiązania bezprzewodowej poczty e-mail BlackBerry) do uruchamiania serwera Blackberry Enterprise Server (BES).|
+|Zarządzanie prawami do informacji|Wkrótce.|
+|Informacje o wolnych/zajętych|Dostępne są bezpłatne/zajęte informacje między skrzynkami pocztowymi w środowisku lokalnym i Exchange Online.|
+|Udostępnianie kalendarza|Udostępnianie kalendarza między lokalnymi i Exchange Online skrzynkami pocztowymi jest dostępne.|
+|Udostępnianie kontaktów|Wkrótce.|
+|Śledzenie komunikatów|Wkrótce.|
+|Aplikacje|Wkrótce.|
+|Funkcja Miejsc|Ta funkcja pokazuje mapy adresów w wiadomości e-mail; ponieważ może zezwalać na dane poza twoim krajem, nie są dostępne.|
+|Połączone konta|Nawiązywanie połączenia z innymi kontami, takimi jak Hotmail (Outlook.com) wkrótce.|
+
 ## <a name="exchange"></a>Exchange
 
- Nowe z Exchange 2013, skumulowaną aktualizacją 5 (CU5), w pełni funkcjonalnymi wdrożeniami hybrydowymi między lokalnymi organizacjami programu Exchange 2013 i usługami Office 365 są teraz obsługiwane. Korzystając z nowych ulepszeń w Kreatorze konfiguracji hybrydowej, Exchange 2013 CU5 obsługuje następujące funkcje hybrydowe między Twoją lokalną i Exchange Online organizacjami:  
+ Nowość z aktualizacją zbiorczą 5 (CU5) Exchange 2013 r.), w pełni funkcjonalnymi wdrożeniami hybrydowymi między organizacjami lokalnymi Exchange 2013 r. i usługami Office 365 są teraz obsługiwane. Korzystając z nowych ulepszeń kreatora konfiguracji hybrydowej, Exchange 2013 CU5 obsługuje następujące funkcje hybrydowe między organizacjami lokalnymi i Exchange Online:
 
-- Zabezpieczanie routingu poczty między organizacjami lokalnymi i Exchange Online organizacji. 
-- Routing poczty za pomocą przestrzeni nazw domeny udostępnionej. Na przykład zarówno lokalna, jak i lokalna Exchange Online używają domeny @contoso.com SMTP. 
-- Ujednolicona globalna lista adresowa nazywana również "udostępnioną książką adresową".  
-- Czas wolny/zajęty i udostępnianie kalendarza między lokalnymi i Exchange Online organizacji.  
-- Scentralizowana kontrola przychodzącego i wychodzącego przepływu poczty. Możesz skonfigurować wszystkie przychodzące i wychodzące wiadomości Exchange Online, które mają być kierowane przez lokalną Exchange organizacji. 
-- Jeden Office Outlook Web App URL zarówno dla organizacji lokalnych, jak i Exchange Online organizacji.  
-- Możliwość przenoszenia istniejących lokalnych skrzynek pocztowych do Exchange Online organizacji. Exchange Online w razie potrzeby można również przenieść z powrotem do organizacji lokalnej.  
-- Scentralizowane zarządzanie skrzynkami pocztowymi przy użyciu lokalnego centrum Exchange administracyjnego (EAC).  
-- MailTips, obsługa zdjęć w jakości HD dla kontaktów Outlook i wyszukiwanie w wielu skrzynkach pocztowych między lokalnymi i Exchange Online organizacjami. 
-- Archiwizowanie wiadomości w chmurze dla lokalnych skrzynek Exchange pocztowych. 
+- Zabezpieczanie routingu poczty między organizacjami lokalnymi i Exchange Online.
+- Routing poczty z przestrzenią nazw domeny udostępnionej. Na przykład zarówno lokalne, jak i Exchange Online organizacje używają domeny @contoso.com SMTP.
+- Ujednolicona globalna lista adresowa (GAL), nazywana również "udostępnioną książką adresową".
+- Udostępnianie wolnych/zajętych kalendarzy między organizacjami lokalnymi i Exchange Online.
+- Scentralizowana kontrola przepływu poczty przychodzącej i wychodzącej. Wszystkie przychodzące i wychodzące komunikaty Exchange Online można skonfigurować tak, aby były kierowane przez lokalną organizację Exchange.
+- Pojedynczy adres URL Office Outlook Web App dla organizacji lokalnych i Exchange Online.
+- Możliwość przenoszenia istniejących lokalnych skrzynek pocztowych do organizacji Exchange Online. Exchange Online skrzynki pocztowe można w razie potrzeby przenieść z powrotem do organizacji lokalnej.
+- Scentralizowane zarządzanie skrzynkami pocztowymi przy użyciu lokalnego centrum administracyjnego Exchange (EAC).
+- Etykietki pocztowe, obsługa zdjęć HD dla kontaktów Outlook i wyszukiwanie wielu skrzynek pocztowych między organizacjami lokalnymi i Exchange Online.
+- Archiwizowanie wiadomości w chmurze dla lokalnych Exchange skrzynek pocztowych.
 
-W przypadku organizacji, w których są uruchomione starsze lub mieszane wersje Exchange Server, niektóre funkcje hybrydowe nie są w pełni obsługiwane w przypadku Office 365 dzierżaw hostowanych przez firmę 21Vianet. Skorzystaj z poniższej tabeli, aby dowiedzieć się więcej o obsłudze funkcji hybrydowych w różnych Exchange wdrażania:  <br/> 
+W przypadku organizacji korzystających ze starszych lub mieszanych wersji Exchange Server niektóre funkcje hybrydowe nie są w pełni obsługiwane w przypadku dzierżaw Office 365 hostowanych przez firmę 21Vianet. Skorzystaj z poniższej tabeli, aby dowiedzieć się więcej na temat obsługi funkcji hybrydowych w różnych scenariuszach wdrażania Exchange:
 
+|Lokalna wersja Exchange|Exchange wersja serwera hybrydowego|Kreator konfiguracji hybrydowej jest obsługiwany?|Obsługiwane funkcje hybrydowe|
+|---|---|---|---|
+|2016|nd.|Tak|Wszystkie|
+|2013 CU5|nd.|Tak|Wszystkie|
+|2013 SP1|2013 CU5|Tak|Wszystkie|
+|2013 SP1|2013 SP1|Tak|Wszystkie|
+|Mieszany 2013 SP1/2010 SP3|2013 CU5|Tak|Wszystkie, z wyjątkiem miejscowego zbierania elektronicznych materiałów dowodowych/archiwizowania, dostępu OWA (zobacz poniższą tabelę)|
+|Mieszany 2013 SP1/2010 SP3|2013 SP1|Tak|Tylko ręcznie skonfigurowany wolny/zajęty|
+|2010 SP3|2010 SP3|Nie|Brak|
+|2007|2013 CU5|Tak|Tylko wolny/zajęty|
+|2007|2013 SP1 lub 2010 SP3No|nd.|Nieobsługiwane|
+|2003|2013 SP1/CU5|nd.|Nieobsługiwane|
+|2003|2010 SP3|Nie|Brak|
 
-|**Lokalna wersja Exchange klienta**|**Exchange hybrydowej wersji serwera**|**Czy jest obsługiwany Kreator konfiguracji hybrydowej?**|**Obsługiwane funkcje hybrydowe**|
-|:-----|:-----|:-----|:-----|
-| 2016  <br/> | Nie dotyczy  <br/> | Tak  <br/> | Wszystkie  <br/> |
-| 2013 CU5  <br/> | Nie dotyczy  <br/> | Tak  <br/> | Wszystkie  <br/> |
-| 2013 z dodatkiem SP1  <br/> | 2013 CU5  <br/> | Tak  <br/> | Wszystkie  <br/> |
-| 2013 z dodatkiem SP1  <br/> | 2013 z dodatkiem SP1  <br/> | Tak  <br/> | Wszystkie  <br/> |
-| Mixed 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Tak  <br/> | Wszystko, z wyjątkiem zbierania elektronicznych materiałów dowodowych/archiwizacji, dostępu do aplikacji OWA (zobacz tabelę poniżej)  <br/> |
-| Mixed 2013 SP1/2010 SP3  <br/> | 2013 z dodatkiem SP1  <br/> | Tak  <br/> | Tylko ręcznie skonfigurowane wolny/zajęty  <br/> |
-| 2010 z dodatkiem SP3  <br/> | 2010 z dodatkiem SP3  <br/> | Nie  <br/> | Brak  <br/> |
-| 2007  <br/> | 2013 CU5  <br/> | Tak  <br/> | Tylko wolny/zajęty  <br/> |
-| 2007  <br/> | 2013 z dodatkiem SP1 lub 2010 z dodatkiem SP3No  <br/> | Nie dotyczy  <br/> | Nieobsługiwane  <br/> |
-| 2003  <br/> | 2013 SP1/CU5  <br/> | Nie dotyczy  <br/> | Nieobsługiwane  <br/> |
-| 2003  <br/> | 2010 z dodatkiem SP3  <br/> | Nie  <br/> | Brak  <br/> |
-
-   
 > [!IMPORTANT]
->  Delegowanie dostępu do kalendarza, gdy użytkownik lub zestaw użytkowników uzyskuje dostęp do kalendarza innego użytkownika, nie jest obsługiwany we wdrożeniach hybrydowych z dzierżawami usługi Office 365 hostowanych przez firmę 21Vianet. 
-  
- Ponadto niektóre funkcje Exchange wiadomości i zgodności nie są w pełni obsługiwane we wdrożeniach hybrydowych z Office 365 hostowanych przez firmę 21Vianet. Są to między innymi następujące funkcje:
+> Delegowanie dostępu do kalendarza, gdy użytkownik lub zestaw użytkowników ma dostęp do kalendarza innego użytkownika, nie jest obsługiwane we wdrożeniach hybrydowych z dzierżawami Office 365 hostowanymi przez firmę 21Vianet.
 
-- [Zarządzanie rekordami wiadomości (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) 
-- [Zbierania elektronicznych materiałów dowodowych w miejscu](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 
-- [In-Place Hold](/exchange/security-and-compliance/in-place-and-litigation-holds) 
-- [Archiwizacja w miejscu](/exchange/in-place-archiving-in-exchange-2013-exchange-2013-help)
+ Ponadto niektóre Exchange zasady obsługi komunikatów i funkcje zgodności nie są w pełni obsługiwane we wdrożeniach hybrydowych z dzierżawami Office 365 hostowanymi przez firmę 21Vianet. Te funkcje obejmują:
+
+- [Zarządzanie rekordami obsługi komunikatów (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
+- [Wykrywanie elektroniczne w miejscu](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+- [Blokada miejscowa](/exchange/security-and-compliance/in-place-and-litigation-holds)
+- [Archiwizowanie w miejscu](/exchange/in-place-archiving-in-exchange-2013-exchange-2013-help)
 - [Inspekcja skrzynki pocztowej](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)
-- Uzyskiwanie dostępu do archiwów online [za Outlook Web App (OWA)](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-on-the-web) 
+- Uzyskiwanie dostępu do archiwów online za pomocą [Outlook Web App (OWA)](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-on-the-web)
 
-Skorzystaj z poniższej tabeli, aby dowiedzieć się więcej o obsłudze funkcji w różnych Exchange wdrażania: 
+Skorzystaj z poniższej tabeli, aby dowiedzieć się więcej na temat obsługi funkcji w różnych scenariuszach wdrażania Exchange:
 
-|**Lokalna wersja Exchange klienta**|**MRM (archiwum dzielone)**|**Dostęp do aplikacji OWA (archiwum dzielone)**|**Zbierania elektronicznych materiałów dowodowych w miejscu**|**Inspekcja skrzynki pocztowej**|**Archiwum/archiwizowanie w miejscu**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-| Wszystkie 2013 CU5  <br/> | Obsługiwane <br/>  | Nieobsługiwane <br/>  | Obsługiwane <br/>  | Obsługiwane  <br/> | Obsługiwane <br/> |
-| Wszystkie 2010 z dodatkiem SP3 <br/>  | Nieobsługiwane <br/>  | Nieobsługiwane <br/>  | <sup>Obsługiwane1</sup> <br/> | Obsługiwane  <br/> | Obsługiwane <br/>  |
-| Co najmniej jeden serwer CU5 przed 2013 r.  <br/> | <sup>Obsługiwane2</sup> <br/> | Nieobsługiwane  <br/> | Nieobsługiwane <br/> | Obsługiwane  <br/> | Obsługiwane <br/> |
-|||
+|Lokalna wersja Exchange|MRM (archiwum podzielone)|Dostęp OWA (podzielone archiwum)|In-Place zbierania elektronicznych materiałów dowodowych|Inspekcja skrzynki pocztowej|archiwizowanie/archiwizowanie In-Place|
+|---|---|---|---|---|---|
+|Wszystkie 2013 CU5|Obsługiwane|Nieobsługiwane|Obsługiwane|Obsługiwane|Obsługiwane|
+|Wszystkie 2010 z dodatkiem SP3|Nieobsługiwane|Nieobsługiwane|<sup>Obsługiwane1</sup>|Obsługiwane|Obsługiwane|
+|Co najmniej jeden serwer CU5 przed 2013 r.|<sup>Obsługiwane2</sup>|Nieobsługiwane|Nieobsługiwane|Obsługiwane|Obsługiwane|
 
-<sup>1</sup> W przypadku skrzynek pocztowych lokalnych i skrzynek Exchange Online są wymagane oddzielne wyszukiwania.  <br/> <sup>2 Zasady</sup> przenoszenia do archiwizacji mrM mogą być używane dla skrzynek pocztowych znajdujących się Exchange 2013 CU5 lub większej. 
+<sup>1</sup> Oddzielne wyszukiwania są wymagane dla lokalnych i Exchange Online skrzynek pocztowych.
 
-Aby dowiedzieć się więcej o konfigurowaniu wdrożenia hybrydowego przy Office 365 hostowanych przez firmę 21Vianet, zobacz następujące tematy: 
-- [Wymagania wstępne dotyczące wdrożenia hybrydowego](/exchange/hybrid-deployment-prerequisites)
-- [Wymagania dotyczące certyfikatu dla wdrożeń hybrydowych](/exchange/certificate-requirements) 
+<sup>2</sup> Zasady przenoszenia do archiwum mrm mogą być używane dla skrzynek pocztowych znajdujących się na serwerze Exchange 2013 CU5 lub nowszym.
+
+Aby dowiedzieć się więcej na temat konfigurowania wdrożenia hybrydowego z dzierżawami Office 365 hostowanymi przez firmę 21Vianet, zobacz następujące tematy:
+
+- [Wymagania wstępne wdrożenia hybrydowego](/exchange/hybrid-deployment-prerequisites)
+- [Wymagania dotyczące certyfikatów dla wdrożeń hybrydowych](/exchange/certificate-requirements)
 - [Tworzenie wdrożenia hybrydowego za pomocą Kreatora konfiguracji hybrydowej](/exchange/hybrid-deployment/deploy-hybrid)
 
 > [!IMPORTANT]
->  Asystent [Exchange Server](https://go.microsoft.com/fwlink/?LinkId=506768) wdrażania to bezpłatne narzędzie oparte na sieci Web, które ułatwia skonfigurowanie wdrożenia hybrydowego między organizacją lokalną a Office 365 lub całkowite przeprowadzenie migracji do programu Office 365. Narzędzie zadaje niewielki zestaw prostych pytań, a następnie na podstawie Twoich odpowiedzi tworzy niestandardową listę kontrolną z instrukcjami dotyczącymi konfigurowania wdrożenia hybrydowego. Zdecydowanie zalecamy skonfigurowanie wdrożenia hybrydowego za pomocą Asystenta wdrażania. > W przypadku organizacji, które nie chcą uaktualniać ani dodawać serwerów CU5 programu Exchange 2013, organizacje z dodatkiem SP1 do wersji Exchange 2013 mogą skonfigurować udostępnianie informacji wolny/zajęty w kalendarzu udostępnionym między organizacjami lokalnymi Exchange Online firmami. Aby skonfigurować tę funkcję wdrożenia hybrydowego, zobacz Konfigurowanie Exchange hybrydowych za pomocą Office 365 [obsługiwanej przez firmę 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d). 
+> Exchange Server [Deployment Assistant](https://go.microsoft.com/fwlink/?LinkId=506768) to bezpłatne narzędzie internetowe, które ułatwia skonfigurowanie wdrożenia hybrydowego między lokalną organizacją a Office 365 lub całkowitą migrację do Office 365. Narzędzie zadaje ci mały zestaw prostych pytań, a następnie na podstawie odpowiedzi tworzy dostosowaną listę kontrolną z instrukcjami konfigurowania wdrożenia hybrydowego. Zdecydowanie zalecamy skonfigurowanie wdrożenia hybrydowego przy użyciu Asystenta wdrażania. > W przypadku organizacji, które nie chcą uaktualniać do lub nie dodawać Exchange serwerów CU5 w wersji 2013, organizacje Exchange 2013 z dodatkiem SP1 mogą konfigurować udostępnianie kalendarza udostępnionego w trybie wolnym/zajętym między organizacjami lokalnymi i Exchange Online. Aby skonfigurować tę funkcję wdrażania hybrydowego, zobacz [Konfigurowanie funkcji wdrażania hybrydowego Exchange za pomocą Office 365 obsługiwanych przez firmę 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d).
 
 |Funkcja|Dostępność|
-|:-----|:-----|
-|Współistnienie i udostępnianie informacji o wolnym/zajętym|Udostępnianie informacji wolny/zajęty z kalendarza między co najmniej dwoma lokalnymi organizacjami Exchange lub udostępnianie informacji między dwoma dzierżawami w 21Vianet Office 365 nie jest obsługiwane. Ta funkcja będzie dostępna wkrótce! | 
-|Udostępnianie kalendarza|Exchange 2013 z dodatkiem SP1 i więcej obsługuje ręczne konfigurowanie udostępniania kalendarza internetowego innym lokalnym Exchange lub Exchange Online organizacjom. Aby uzyskać więcej szczegółowych informacji na temat ręcznego konfigurowania tej funkcji, zobacz [Włączanie publikowania kalendarza internetowego](/exchange/enable-internet-calendar-publishing-exchange-2013-help). | 
-Udostępnianie Exchange danych kontaktowych na urządzeniach przenośnych firmy Apple w usłudze iCloud firmy Apple. |To ustawienie/funkcja jest domyślnie włączone. Administratorzy powinni wyłączyć tę funkcję, aby uniemożliwić użytkownikom Exchange danych spoza organizacji. |
-|Exchange hostowanej poczty e-mail  |Niedostępne.  |
-|Szyfrowanie wiadomości usługi Office 365  |Wkrótce.  |
-   
+|---|---|
+|Współistnienie i udostępnianie wolnych/zajętych|Udostępnianie informacji o wolnym/zajętym kalendarzu między co najmniej dwoma lokalnymi Exchange organizacjami lub udostępnianie informacji między dwiema dzierżawami Office 365 firmyVianet nie jest obsługiwane. Ta funkcja już wkrótce!|
+|Udostępnianie kalendarza|Exchange 2013 z dodatkiem SP1 i nowszym obsługuje ręczne konfigurowanie udostępniania kalendarzy internetowych innym lokalnym organizacjom Exchange lub Exchange Online. Aby uzyskać więcej informacji na temat ręcznego konfigurowania tej funkcji, zobacz [Włączanie publikowania kalendarza internetowego](/exchange/enable-internet-calendar-publishing-exchange-2013-help).|
+Udostępnianie Exchange danych kontaktowych na urządzeniach przenośnych firmy Apple w usłudze Apple iCloud.|To ustawienie/funkcja jest domyślnie włączona. Administratorzy powinni wyłączyć tę funkcję, aby uniemożliwić użytkownikom udostępnianie Exchange danych spoza organizacji.|
+|szyfrowanie hostowanej poczty e-mail Exchange|Niedostępne.|
+|szyfrowanie komunikatów Office 365|Wkrótce.|
+
 ## <a name="office"></a>Pakiet Office
 
 |Funkcja|Dostępność|
-|:-----|:-----|
-|Otwórz aplikację Office z **okna Otwieranie** \> **pliku w**... przycisk  <br/> |Dostępne. Możliwość korzystania z roamingu zostanie w najbliższym czasie w najbliższym czasie.  <br/> |
-|Zapisywanie w OneDrive dla Firm zalogowaniu się przy użyciu konta Microsoft  <br/> |Aby zachować dane w swoim kraju, nie możesz zapisać dokumentu w swojej witrynie organizacji (OneDrive dla Firm) po zalogowaniu się do usługi Office za pomocą konta Microsoft.  <br/> |
-|Możliwość tłumaczenia tekstu lub stron  <br/> |Ta funkcja jest domyślnie dostępna, ale wyłączona. Administratorzy mają możliwość jej włączyć, ale otrzymają komunikat ostrzegawczy z informacją, że mogą udostępnić dane poza Twoim kraju.  <br/> |
-   
-## <a name="office-client"></a>Office klienta
+|---|---|
+|Otwórz aplikację Office z  \> pliku **Otwórz w**... Przycisk|Dostępne. Możliwość tego podczas roamingu jest już wkrótce.|
+|Zapisywanie w OneDrive dla Firm podczas logowania przy użyciu konta Microsoft|Aby przechowywać dane w swoim kraju, nie można zapisać dokumentu w witrynie organizacji (OneDrive dla Firm), gdy logujesz się do Office przy użyciu konta Microsoft.|
+|Możliwość tłumaczenia tekstu lub stron|Ta funkcja jest dostępna, ale domyślnie wyłączona. Administratorzy mogą je włączyć, ale otrzymają komunikat ostrzegawczy z informacją, że dane mogą być dostępne poza Twoim krajem.|
+
+## <a name="office-client"></a>klient Office
 
 |Funkcja|Dostępność|
-|:-----|:-----|
-|Zarządzanie kontem (z poziomu Office klienta)  <br/> |Ta funkcja i inne osoby lubią ją, aby przejść do Twojego portalu Office 365, obecnie wskazują portal Office 365 na całym świecie i nie możesz zalogować się przy użyciu konta Office 365 obsługiwanego przez firmę 21Vianet. Jest to znany problem, który jest już rozwiązany. W międzyczasie możesz użyć adresu URL https://portal.partner.microsoftonline.cn/ , aby zalogować się do swojego konta i zarządzać ustawieniami z tego konta. Aby uzyskać więcej informacji, zobacz [Zarządzanie kontem Aplikacje Microsoft 365 dla przedsiębiorstw dla Office 365 obsługiwanego przez firmę 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).  <br/> |
-   
+|---|---|
+|Zarządzanie kontem (z poziomu klienta Office)|Ta funkcja i inne podobne osoby, które mają przejść do portalu Office 365, obecnie wskazują portal Office 365 na całym świecie i nie można zalogować się przy użyciu Office 365 obsługiwanego przez konto 21Vianet. Jest to znany problem, który jest naprawiany. W międzyczasie możesz użyć adresu URL <https://portal.partner.microsoftonline.cn/> , aby zalogować się na swoje konto i zarządzać ustawieniami. Aby uzyskać więcej informacji, zobacz [Zarządzanie kontem Aplikacje Microsoft 365 dla przedsiębiorstw dla Office 365 obsługiwanych przez firmę 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).|
+
 ## <a name="onenote"></a>OneNote
 
 |Funkcja|Dostępność|
-|:-----|:-----|
-|Wstawianie i odtwarzanie wideo online  <br/> |Niedostępne.  <br/> |
-|Integracja okienka badań z Bing wyszukiwania  <br/> |Niedostępne.  <br/> |
-|Sprawdzanie ułatwień dostępu  <br/> |Niedostępne.  <br/> |
-|Notes zajęć  <br/> |Niedostępne.  <br/> |
-|Formularze  <br/> |Niedostępne.  <br/> |
-|Czytnik immersyjny  <br/> |Niedostępne.  <br/> |
-|Wstawianie obrazu ze sklepu online  <br/> |Niedostępne.  <br/> |
-|Szczegóły spotkania  <br/> |Niedostępne.  <br/> |
-|Poszukiwanie  <br/> |Niedostępne.  <br/> |
-|Nalepki  <br/> |Niedostępne.  <br/> |
-|Wyszukiwanie na żywo (możliwość wyszukiwania w notesach online, które nie są otwierane w kliencie)  <br/> |Niedostępne.  <br/> |
-|Integracja z komputerami Mac i platformą iOS z usługą inteligentnego wyszukiwania  <br/> |Niedostępne.  <br/> |
-|Udostępnianie notesu i powiadomienie o udostępnianiu  <br/> |Niedostępne.  <br/> |
-   
+|---|---|
+|Wstawianie i odtwarzanie wideo online|Niedostępne.|
+|Integracja okienka badań z usługami Bing|Niedostępne.|
+|Sprawdzanie ułatwień dostępu|Niedostępne.|
+|Notes zajęć|Niedostępne.|
+|Formularzy|Niedostępne.|
+|Czytnik immersyjny|Niedostępne.|
+|Wstawianie obrazu online|Niedostępne.|
+|Szczegóły spotkania|Niedostępne.|
+|Poszukiwanie|Niedostępne.|
+|Naklejki|Niedostępne.|
+|Wyszukiwanie na żywo (możliwość wyszukiwania w notesach online, które nie są otwierane w kliencie)|Niedostępne.|
+|Integracja z usługą inteligentnego wyszukiwania na platformach Mac i iOS|Niedostępne.|
+|Udostępnianie środowiska notesu i powiadomienie o udostępnianiu|Niedostępne.|
+
 ## <a name="skype-for-business"></a>Skype dla firm
 
 |Funkcja|Dostępność|
-|:-----|:-----|
-|Dostawcy domen do obsługi Skype dla firm  <br/> |Musisz zarejestrować domenę u dostawcy domeny specyficznego dla języka chińskiego, który obsługuje rekordy SRV. Aby uzyskać więcej informacji na temat rejestrowania domen, zobacz [Znajdowanie rejestratora domen lub dostawcy hostingu DNS](../get-help-with-domains/find-your-domain-registrar.md).  <br/> |
-|Konferencje telefoniczne (możliwość dodania dostępu telefonicznego do spotkań dla użytkowników, którzy nie mogą uzyskać dostępu do komputera)  <br/> |Opcje mogą być Skype dla firm w Centrum administracyjnym usługi Skype dla firm konferencji telefonicznych i dostawców, ale te funkcje nie są jeszcze dostępne. Wkrótce będą dostępne.  <br/> |
-|Skype dla firm pomocy dla komputerów stacjonarnych  <br/> |Tutaj możesz znaleźć pomoc Skype dla firm [klasycznej](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad). Pomoc dla komputerów stacjonarnych nie jest jednak dostępna w tym produkcie, chyba że używasz Office technologii Click-To-Run.  <br/> |
-|Lync 2010  <br/> |Niedostępne.  <br/> |
-|Możliwość dołączania do spotkania z kalendarza w przypadku korzystania z urządzenia opartego na marki Samsung z przeglądarką Google Chrome  <br/> |Wkrótce. W międzyczasie możesz otworzyć Skype dla firm, przejść do widoku Spotkania i dołączyć do spotkania w tym miejscu.  <br/> |
-|Desk Telefon, takich jak Polycom, Ares i Tanjay  <br/> |Niedostępne.  <br/> |
-|Partnerzy zeskropów  <br/> |Niedostępne.  <br/> |
-|Funkcje połączeń głosowych, takie jak poczta głosowa, możliwość wykonywania i odbierania połączeń z numerów PSTN, przekierowywanie połączeń, przekazywanie połączeń  <br/> |Niedostępne. Te funkcje wymagają partnerów zestyków.  <br/> |
-|Archiwizowanie lub możliwość tagowania użytkownika i archiwizowania wiadomości e-mail i wiadomości e-mail tego użytkownika w Exchange  <br/> |Niedostępne.  <br/> |
-|Skype dla firm klienta sieci Web (GDYNIA). Obsługa przeglądarki dla przeglądarki Firefox 29  <br/> |Niedostępne, ale można używać starszej wersji programu Firefox.  <br/> |
-|Ujednolicony magazyn kontaktów (UCS)  <br/> |Możliwość wyświetlania przez użytkowników wszystkich swoich Skype dla firm kontaktowych w programie Microsoft Exchange Server 2013 jest wyłączona.  <br/> |
-| Urządzenia do obsługi konferencji:  <br/>  Polycom CX5100 Unified Conference Station  <br/>  Logitech ConferenceCam CC3000e  <br/>  Polycom CX7000  <br/>  Polycom CX3000  <br/>  Logitech BCC950 ConferenceCam  <br/>  Polycom CX5000 HD  <br/> |Niedostępne.  <br/> |
-   
-## <a name="data-subject-requests-for-gdpr"></a>Wnioski osób, których dane dotyczą, dotyczące RODO
+|---|---|
+|Dostawcy domeny do obsługi Skype dla firm|Musisz zarejestrować domenę u dostawcy domeny specyficznego dla języka chińskiego, który obsługuje rekordy SRV. Aby uzyskać więcej informacji na temat rejestrowania domen, zobacz [Znajdowanie rejestratora domen lub dostawcy hostingu DNS](../get-help-with-domains/find-your-domain-registrar.md).|
+|Konferencje telefoniczne (możliwość dodawania dostępu telefonicznego do spotkań dla użytkowników, którzy nie mogą dostać się do komputera)|Opcje mogą być widoczne w Skype dla firm i w centrum administracyjnym Skype dla firm dla konferencji telefonicznych i dostawców, ale te funkcje nie są jeszcze dostępne. Pojawią się wkrótce.|
+|pomoc dotycząca pulpitu Skype dla firm|Pomoc dotyczącą pulpitu Skype dla firm można znaleźć [tutaj](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad). Jednak pomoc dla komputerów stacjonarnych nie jest dostępna w produkcie, chyba że używasz Office kliknij, aby uruchomić.|
+|Lync 2010|Niedostępne.|
+|Możliwość dołączenia do spotkania z kalendarza podczas korzystania z urządzenia firmy Samsung w przeglądarce Google Chrome|Wkrótce. W międzyczasie możesz otworzyć Skype dla firm, przejść do widoku Spotkania i dołączyć do spotkania.|
+|Urządzenia Telefon biurka, takie jak Polycom, Ares i Tanjay|Niedostępne.|
+|Partnerzy syndykacji|Niedostępne.|
+|Funkcje głosowe, takie jak poczta głosowa, możliwość nawiązywania i odbierania połączeń z numerów PSTN, przenoszenie połączeń, przekazywanie połączeń|Niedostępne. Te funkcje wymagają partnerów syndykacji.|
+|Archiwizowanie lub możliwość tagowania użytkownika i archiwizowania wiadomości e-mail i wiadomości IM użytkownika w Exchange|Niedostępne.|
+|obsługa przeglądarki klienta internetowego Skype dla firm (LWA) dla przeglądarki Firefox 29|Niedostępne, ale możesz użyć starszej wersji przeglądarki Firefox.|
+|Unified Contact Store (UCS)|Możliwość przechowywania przez użytkowników wszystkich Skype dla firm informacji kontaktowych w Microsoft Exchange Server 2013 r. jest wyłączona.|
+|Urządzenia konferencyjne:  <br/>  Polycom CX5100 Unified Conference Station  <br/>  Logitech ConferenceCam CC3000e  <br/>  Polycom CX7000  <br/>  Polycom CX3000  <br/>  Logitech BCC950 ConferenceCam  <br/>  Polycom CX5000 HD|Niedostępne.|
 
-RODO udziela określonym osobom (lub tematom danych) określonych praw w związku z przetwarzaniem ich danych osobowych, w tym prawa do poprawiania nieprawidłowych danych, wymazywania lub ograniczania przetwarzania tych danych, otrzymywania ich danych i realizacji żądania przesyłania ich do innego kontrolera. Rola Administrator dzierżawy usługi Office 365 obsługiwanej przez firmę 21Vianet może żądać danych w imieniu podmiotu danych w następujący sposób:
-  
-- Za pomocą Azure Active Directory administracyjnego dzierżawy administrator dzierżawy może trwale usunąć podmiot danych Azure Active Directory powiązanych usługach.
-    
-- Dzienniki generowane przez system dla usługi firmy Microsoft obsługiwanej przez firmę 21Vianet mogą być eksportowane przez administratorów dzierżawy przy użyciu funkcji eksportowania dziennika danych.
-    
-Aby uzyskać szczegółowe informacje i instrukcje, zobacz [Wnioski osób, których dane dotyczą (DSR, Data Subject Requests) dotyczące RODO](https://www.trustcenter.cn/privacy/gdpr-office365.mdl).
+## <a name="data-subject-requests-for-gdpr"></a>Żądania podmiotów danych dotyczące RODO
+
+RODO przyznaje osobom fizycznym (lub podmiotom danych) pewne prawa w związku z przetwarzaniem ich danych osobowych, w tym prawo do poprawiania niedokładnych danych, wymazywania danych lub ograniczania ich przetwarzania, otrzymywania ich danych i realizacji żądania przekazania ich danych innemu administratorowi. Rola administratora dzierżawy dla Office 365 obsługiwana przez firmę 21Vianet może żądać danych w imieniu podmiotu danych w następujący sposób:
+
+- Za pomocą centrum administracyjnego Azure Active Directory administrator dzierżawy może trwale usunąć podmiot danych z Azure Active Directory i powiązanych usług.
+
+- Dzienniki generowane przez system dla usługi firmy Microsoft obsługiwanych przez firmę 21Vianet mogą być eksportowane przez administratorów dzierżawy przy użyciu eksportu dziennika danych.
+
+Aby uzyskać szczegółowe informacje i instrukcje, zobacz [Data Subject Requests (DSR) for GDPR (Żądania podmiotów danych dla RODO](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)).
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Wypróbuj lub kup subskrypcję Microsoft 365 dla](../../commerce/try-or-buy-microsoft-365.md) firm (artykuł)\
-[Obsługa usługi Azure Information Protection Office 365 obsługiwana przez firmę 21Vianet](parity-between-azure-information-protection.md) (artykuł)\
-[Wyświetlanie rachunku lub uzyskiwanie faktury Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artykuł)
+[Wypróbuj lub kup subskrypcję Microsoft 365 dla firm](../../commerce/try-or-buy-microsoft-365.md) (artykuł)\
+[Obsługa Information Protection platformy Azure dla Office 365 obsługiwanych przez firmę 21Vianet](parity-between-azure-information-protection.md) (artykuł)\
+[Wyświetlanie rachunku lub uzyskiwanie fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artykuł)

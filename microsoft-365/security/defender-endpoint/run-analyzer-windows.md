@@ -1,7 +1,7 @@
 ---
-title: Uruchamianie analizatora klienta na Windows
-description: Dowiedz się, jak uruchomić analizatora Ochrona punktu końcowego w usłudze Microsoft Defender klienta w Windows.
-keywords: analizator klienta, czujnik rozwiązywania problemów, analizator, mdeanalyzer, okna
+title: Uruchom analizator klienta w systemie Windows
+description: Dowiedz się, jak uruchomić analizator klienta Ochrona punktu końcowego w usłudze Microsoft Defender na Windows.
+keywords: analizator klienta, rozwiązywanie problemów z czujnikiem, analizatorem, mdeanalyzerem, oknami
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,99 +18,99 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5fa284f5c57214f356bb6b90e12ca60ae019d277
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5ac27241297b9943f1559653777b8e1668fe7f89
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467142"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783034"
 ---
-# <a name="run-the-client-analyzer-on-windows"></a>Uruchamianie analizatora klienta na Windows
+# <a name="run-the-client-analyzer-on-windows"></a>Uruchom analizator klienta w systemie Windows
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 
-1. Pobierz narzędzie [analizator klienta MDE](https://aka.ms/mdatpanalyzer) na Windows komputera, który chcesz zbadać.
+1. Pobierz [narzędzie ANALIZATOR KLIENTA MDE](https://aka.ms/mdatpanalyzer) na maszynę Windows, którą należy zbadać.
 
-2. Wyodrębnianie zawartości MDEClientAnalyzer.zip na komputerze.
+2. Wyodrębnij zawartość MDEClientAnalyzer.zip na maszynie.
 
-3. Otwieranie wiersza polecenia z podwyższonym poziomem uprawnień:
-    1. Przejdź do **przycisku Start** i wpisz **cmd**.
-    2. Kliknij prawym przyciskiem myszy **pozycję Wiersz polecenia i** wybierz **pozycję Uruchom jako administrator**.
+3. Otwórz wiersz polecenia z podwyższonym poziomem poziomu:
+    1. Przejdź do **pozycji Start** i wpisz **cmd**.
+    2. Kliknij prawym **przyciskiem myszy wiersz polecenia** i wybierz pozycję **Uruchom jako administrator**.
 
-4. Wprowadź następujące polecenie i naciśnij klawisz **Enter**:
+4. Wprowadź następujące polecenie i naciśnij **klawisz Enter**:
 
    ```dos
    HardDrivePath\MDEClientAnalyzer.cmd
    ```
 
-   **Zastąp ścieżkę narzędzia HardDrivePath ścieżką, do której narzędzie zostało wyodrębnione— na przykład:**
+   **Zastąp ciąg HardDrivePath ścieżką, do której zostało wyodrębnione narzędzie, na przykład:**
 
    ```dos
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
-Poza powyższymi informacjami dostępna jest również opcja zbierania dzienników pomocy technicznej analizatora [przy użyciu funkcji odpowiedzi na żywo](troubleshoot-collect-support-log.md).
+Oprócz powyższego istnieje również opcja [zbierania dzienników obsługi analizatora przy użyciu odpowiedzi na żywo.](troubleshoot-collect-support-log.md)
 
 > [!NOTE]
-> Na Windows 10/11, Windows Server 2019/2022 lub Windows Server 2012R2/2016 z zainstalowanym nowoczesnym, ujednoliconym rozwiązaniem skrypt [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` analizatora klienta wywołuje do pliku wykonywalnego o nazwie w celu uruchomienia testów łączności z adresami URL usługi w chmurze.
+> W Windows 10/11, Windows Server 2019/2022 lub Windows Server 2012R2/2016 z [zainstalowanym nowoczesnym ujednoliconym rozwiązaniem](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) skrypt analizatora klienta wywołuje plik wykonywalny o nazwie `MDEClientAnalyzer.exe` w celu uruchomienia testów łączności z adresami URL usługi w chmurze.
 >
-> Na Windows 8.1, Windows Server 2016 lub dowolnej poprzedniej wersji systemu operacyjnego, w której do dołączania jest używany program Microsoft Monitoring Agent (MMA), `MDEClientAnalyzerPreviousVersion.exe` skrypt analizatora klienta wywołuje do pliku wykonywalnego nazywanego do uruchamiania testów łączności adresów URL poleceń i kontrolek (CnC, Command and Control) podczas wykonywania połączenia Microsoft Monitoring Agent dla adresów `TestCloudConnection.exe` URL kanału danych cyberprzestępczych.
+> W Windows 8.1, Windows Server 2016 lub dowolnej poprzedniej wersji systemu operacyjnego, w której do dołączania jest używany Microsoft Monitoring Agent (MMA), skrypt analizatora klienta wywołuje plik wykonywalny o nazwie `MDEClientAnalyzerPreviousVersion.exe` w celu uruchomienia testów łączności dla adresów URL poleceń i kontroli (CnC) podczas wywoływania narzędzie do łączności `TestCloudConnection.exe` Microsoft Monitoring Agent dla adresów URL kanału Cyber Data.
 
 
 Wszystkie skrypty i moduły programu PowerShell dołączone do analizatora są podpisane przez firmę Microsoft.
-Jeśli pliki zostały w jakikolwiek sposób zmodyfikowane, analizator powinien zakończyć działanie z następującym błędem:
+Jeśli pliki zostały zmodyfikowane w jakikolwiek sposób, oczekuje się, że analizator zakończy pracę z następującym błędem:
 
 :::image type="content" source="images/sigerror.png" alt-text="Błąd analizatora klienta" lightbox="images/sigerror.png":::
 
 
-Jeśli ten błąd jest wyświetlany, wynik issuerInfo.txt będzie zawierał szczegółowe informacje o tym, dlaczego wystąpił i jaki plik został w związku z tym:
+Jeśli ten błąd zostanie wyświetlony, dane wyjściowe issuerInfo.txt będą zawierać szczegółowe informacje o tym, dlaczego tak się stało i jaki plik został dotknięty:
 
 :::image type="content" source="images/issuerinfo.png" alt-text="Informacje o wystawcy" lightbox="images/issuerinfo.png":::
 
 
-Przykładowa zawartość po MDEClientAnalyzer.ps1 zmodyfikowania:
+Przykładowa zawartość po zmodyfikowaniu MDEClientAnalyzer.ps1:
 
 :::image type="content" source="images/modified-ps1.png" alt-text="Zmodyfikowany plik ps1" lightbox="images/modified-ps1.png":::
 
 
 
-## <a name="result-package-contents-on-windows"></a>Wynik zawartości pakietu na Windows
+## <a name="result-package-contents-on-windows"></a>Zawartość pakietu wyników w Windows
 
 > [!NOTE]
-> Dokładne przechwycone pliki mogą się zmienić w zależności od takich czynników, jak:
+> Dokładne przechwycone pliki mogą ulec zmianie w zależności od czynników, takich jak:
 >
 > - Wersja okien, w których jest uruchamiany analizator.
-> - Dostępność kanału dziennika zdarzeń na komputerze.
-> - Stan startowy czujnika EDR (czujnik jest zatrzymywany, jeśli komputer nie jest jeszcze wnoszony).
-> - Jeśli w poleceniu analizatora został użyty parametr zaawansowanego rozwiązywania problemów.
+> - Dostępność kanału dziennika zdarzeń na maszynie.
+> - Stan początkowy czujnika EDR (czujnik zostaje zatrzymany, jeśli maszyna nie została jeszcze dołączona).
+> - Jeśli użyto zaawansowanego parametru rozwiązywania problemów z poleceniem analizatora.
 
-Domyślnie niezapakowany plik MDEClientAnalyzerResult.zip zawiera następujące elementy.
+Domyślnie rozpakowany plik MDEClientAnalyzerResult.zip będzie zawierać następujące elementy.
 
 - MDEClientAnalyzer.htm
 
-  Jest to główny plik wyjściowy HTML, który będzie zawierał ustalenia i wskazówki, które może uruchomić skrypt analizatora na komputerze.
+  Jest to główny plik wyjściowy HTML, który będzie zawierał wyniki i wskazówki, które może wygenerować skrypt analizatora uruchamiany na maszynie.
 
 - Folder SystemInfoLogs \[\]
   - AddRemovePrograms.csv
 
-    Opis: Lista oprogramowania zainstalowanego w wersji x86 w oprogramowaniu systemu operacyjnego x64 zebranym z rejestru.
+    Opis: Lista oprogramowania zainstalowanego w systemie operacyjnym x86 w systemie operacyjnym x64 zebranych z rejestru.
 
   - AddRemoveProgramsWOW64.csv
 
-    Opis: Lista oprogramowania zainstalowanego w wersji x86 w oprogramowaniu systemu operacyjnego x64 zebranym z rejestru.
+    Opis: Lista oprogramowania zainstalowanego w systemie operacyjnym x86 w systemie operacyjnym x64 zebranych z rejestru.
 
     - CertValidate.log
 
-      Opis: Szczegółowy wynik odwołania certyfikatu wykonywanego przez wywołanie do [certyfikatu CertUtil](/windows-server/administration/windows-commands/certutil).
+      Opis: Szczegółowy wynik odwołania certyfikatu wykonany przez wywołanie polecenia [CertUtil](/windows-server/administration/windows-commands/certutil).
 
     - dsregcmd.txt
 
-      Opis: Dane wyjściowe z [uruchomionych dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Zawiera on szczegółowe informacje o stanie usługi Azure AD na komputerze.
+      Opis: Dane wyjściowe z uruchamiania [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Zawiera on szczegółowe informacje o stanie maszyny w usłudze Azure AD.
 
     - IFEO.txt
 
-      Opis: Dane wyjściowe [opcji wykonywania pliku obrazu](/previous-versions/windows/desktop/xperf/image-file-execution-options) skonfigurowanych na komputerze
+      Opis: dane [wyjściowe opcji wykonywania pliku obrazu](/previous-versions/windows/desktop/xperf/image-file-execution-options) skonfigurowanych na maszynie
 
     - MDEClientAnalyzer.txt
 
@@ -118,27 +118,27 @@ Domyślnie niezapakowany plik MDEClientAnalyzerResult.zip zawiera następujące 
 
     - MDEClientAnalyzer.xml
 
-      Opis: format XML zawierający ustalenia skryptów analizatora.
+      Opis: format XML zawierający wyniki skryptu analizatora.
 
     - RegOnboardedInfoCurrent.Json
 
-      Opis: Wniesienie informacji o komputerze zebranych w formacie JSON z rejestru.
+      Opis: informacje o dołączonym komputerze zebrane w formacie JSON z rejestru.
 
   - RegOnboardingInfoPolicy.Json
 
-    Opis: Konfiguracja zasad dołączania zebranych w formacie JSON z rejestru.
+    Opis: Konfiguracja zasad dołączania zebrana w formacie JSON z rejestru.
 
     - SCHANNEL.txt
 
-      Opis: Szczegółowe informacje na temat [konfiguracji DLAOKINNEL](/windows-server/security/tls/manage-tls) zastosowanej do komputera, takie jak zebrane z rejestru.
+      Opis: Szczegóły dotyczące [konfiguracji SCHANNEL](/windows-server/security/tls/manage-tls) zastosowane do maszyny, takie zebrane z rejestru.
 
     - SessionManager.txt
 
-      Opis: Ustawienia Menedżera sesji zbierają się z rejestru.
+      Opis: Ustawienia specyficzne dla menedżera sesji zbierają się z rejestru.
 
     - SSL_00010002.txt
 
-      Opis: Szczegóły dotyczące konfiguracji [protokołu SSL zastosowanej](/windows-server/security/tls/manage-tls) do komputera zebranego z rejestru.
+      Opis: Szczegóły dotyczące [konfiguracji protokołu SSL](/windows-server/security/tls/manage-tls) zastosowanej do maszyny zebranej z rejestru.
 
 - EventLogs [Folder]
 
@@ -148,7 +148,7 @@ Domyślnie niezapakowany plik MDEClientAnalyzerResult.zip zawiera następujące 
 
   - senseIR.evtx
 
-    Opis: Eksportowanie dziennika zdarzeń automatycznego badania
+    Opis: Eksportowanie dziennika zdarzeń zautomatyzowanego badania
 
   - sense.evtx
 
@@ -156,14 +156,14 @@ Domyślnie niezapakowany plik MDEClientAnalyzerResult.zip zawiera następujące 
 
   - OperationsManager.evtx
 
-    Opis: eksportowanie dziennika Microsoft Monitoring Agent zdarzeń
+    Opis: Eksportowanie dziennika zdarzeń Microsoft Monitoring Agent
 
 
 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Omówienie analizatora klientów](overview-client-analyzer.md)
-- [Pobieranie i uruchamianie analizatora klienta](download-client-analyzer.md)
-- [Zbieranie danych na potrzeby zaawansowanego rozwiązywania problemów na Windows](data-collection-analyzer.md)
-- [Opis raportu w formacie HTML analizatora](analyzer-report.md)
+- [Omówienie funkcji analizatora klienta](overview-client-analyzer.md)
+- [Pobierz i uruchom analizator klienta](download-client-analyzer.md)
+- [ Zbieranie danych na potrzeby zaawansowanego rozwiązywania problemów w systemie Windows](data-collection-analyzer.md)
+- [Zrozumienie raportu HTML analizatora](analyzer-report.md)

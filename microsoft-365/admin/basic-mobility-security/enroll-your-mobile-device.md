@@ -1,5 +1,5 @@
 ---
-title: Zarejestruj swoje urządzenie przenośne przy użyciu platformy Basic Mobility and Security
+title: Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,26 +18,26 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: Zanim będzie można korzystać z Microsoft 365 na Twoim urządzeniu, może być konieczne zarejestrowanie go w programie Basic Mobility and Security dla pakietu Microsoft 365.
-ms.openlocfilehash: bc937442be852862172b4ef747d757df4785f880
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Zanim będzie można korzystać z usług Microsoft 365 na urządzeniu, może być konieczne zarejestrowanie ich w usłudze Basic Mobility and Security dla Microsoft 365.
+ms.openlocfilehash: 714102cf252e4dc483794f4e4280420256bfb0c3
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400353"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781144"
 ---
-# <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Zarejestruj swoje urządzenie przenośne przy użyciu platformy Basic Mobility and Security
+# <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Rejestrowanie urządzenia przenośnego przy użyciu pakietu Basic Mobility and Security
 
-Korzystanie z telefonu, tabletu i innych urządzeń przenośnych do pracy to świetny sposób na to, aby być na bieżąco z pomysłami i pracować nad projektami biznesowymi, gdy jesteś poza biurem. Zanim będzie można korzystać z Microsoft 365 na Twoim urządzeniu, może być konieczne zarejestrowanie go w programie Basic Mobility and Security dla pakietu Microsoft 365 z Microsoft Intune Portal firmy.
+Korzystanie z telefonu, tabletu i innych urządzeń przenośnych do pracy to doskonały sposób na informowanie i pracę nad projektami biznesowymi, gdy jesteś poza biurem. Zanim będzie można korzystać z usług Microsoft 365 na urządzeniu, może być konieczne zarejestrowanie ich w usłudze Basic Mobility and Security dla Microsoft 365 przy użyciu Microsoft Intune Portal firmy.
 
-Organizacje wybierają pakiet Basic Mobility and Security, aby pracownicy korzystali z urządzeń przenośnych w celu bezpiecznego uzyskiwania dostępu do służbowej poczty e-mail, kalendarzy i dokumentów, a jednocześnie zabezpieczać ważne dane i spełniać wymagania dotyczące zgodności z przepisami.Aby dowiedzieć się więcej, zobacz [Omówienie mobilności podstawowej i zabezpieczeń dla Microsoft 365](overview.md). Aby uzyskać więcej informacji,  [zobaczCo informacje może zobaczyć moja organizacja podczas rejestrowania urządzenia?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
+Organizacje wybierają opcję Podstawowa mobilność i zabezpieczenia, aby pracownicy mogli używać swoich urządzeń przenośnych do bezpiecznego uzyskiwania dostępu do służbowej poczty e-mail, kalendarzy i dokumentów, podczas gdy firma zabezpiecza ważne dane i spełnia wymagania dotyczące zgodności. Aby dowiedzieć się więcej, zobacz [Omówienie pakietu Basic Mobility and Security for Microsoft 365](overview.md). Aby uzyskać więcej informacji, zobacz [Jakie informacje może zobaczyć moja organizacja podczas rejestrowania urządzenia?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 > [!IMPORTANT]
-> Po zarejestrowaniu urządzenia w pakietach Basic Mobility and Security dla pakietu Microsoft 365 może być konieczne skonfigurowanie hasła, a także umożliwienie organizacji, w której pracujesz, wyczyszczenia urządzenia. Czyszczenie urządzenia można wykonać z centrum centrum administracyjne platformy Microsoft 365, <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>na przykład w celu usunięcia wszystkich danych z urządzenia w przypadku niepoprawnego wprowadzeniu hasła zbyt wiele razy lub w razie pominięć warunków użytkowania.
+> Podczas rejestrowania urządzenia w usłudze Basic Mobility and Security for Microsoft 365 może być konieczne skonfigurowanie hasła wraz z zezwoleniem organizacji służbowej na czyszczenie urządzenia. Czyszczenie urządzenia można przeprowadzić z <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>, na przykład w celu usunięcia wszystkich danych z urządzenia, jeśli hasło zostanie wprowadzone niepoprawnie zbyt wiele razy lub jeśli terminy użycia zostaną złamane.
 
 ## <a name="supported-devices"></a>Obsługiwane urządzenia
 
-Pakiet Basic Mobility and Security Microsoft 365 hostowany przez usługę Intune współpracuje z większość (ale nie ze wszystkimi) urządzeniami przenośnymi. W przypadku mobilności podstawowej i zabezpieczeń są obsługiwane następujące funkcje:
+Usługa Basic Mobility and Security dla Microsoft 365 hostowana przez usługę Intune współpracuje z większością, ale nie wszystkimi urządzeniami przenośnymi. W przypadku pakietu Basic Mobility and Security obsługiwane są następujące elementy:
 
 - iOS
 
@@ -45,39 +45,39 @@ Pakiet Basic Mobility and Security Microsoft 365 hostowany przez usługę Intune
 
 - Windows 8.1 i Windows 10 (Telefon i PC)
 
-Jeśli Twoje urządzenie nie jest wymienione powyżej i musisz korzystać z niego w wersji Basic Mobility and Security, skontaktuj się z administratorem w pracy lub szkole.
+Jeśli urządzenie nie jest wymienione powyżej i musisz używać go z usługą Basic Mobility and Security, skontaktuj się z administratorem służbowym.
 
 > [!TIP]
-> Jeśli masz problem z zarejestrowaniem urządzenia, zobacz  [Rozwiązywanie problemów z pakietem Basic Mobility and Security](troubleshoot.md).
+> Jeśli masz problemy z rejestrowaniem urządzenia, zobacz [Rozwiązywanie problemów z podstawową mobilnością i zabezpieczeniami](troubleshoot.md).
 
-## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Konfigurowanie urządzenia przenośnego z usługą Intune oraz pakietem Basic Mobility and Security
+## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Konfigurowanie urządzenia przenośnego przy użyciu Intune i pakietu Basic Mobility and Security
 
-Pakiet Intune — Portal firmy umożliwia zarządzanie urządzeniem przez pakiet Microsoft 365 i pakiet Basic Mobility and Security.
+Intune — Portal firmy umożliwia zarządzanie urządzeniem za pomocą Microsoft 365 i usługi Basic Mobility and Security.
 
 ### <a name="iphone-or-ipad"></a>iPhone lub iPad
 
 > [!TIP]
-> Wysyłanie i odbieranie wiadomości e-mail będzie możliwe dopiero po zakończeniu tego kroku.
+> Nie będzie można wysyłać i odbierać wiadomości e-mail do momentu ukończenia tego kroku.
 
-Przejdź do sklepu App Store firmy Apple i pobierz i zainstaluj Intune — Portal firmy.
+Przejdź do App Store firmy Apple, a następnie pobierz i zainstaluj Intune — Portal firmy.
 
-Aby połączyć telefon lub tablet z systemem iOS i skonfigurować go w portalu firmy do Office 365, zobacz Konfigurowanie dostępu urządzenia z systemem [iOS do zasobów firmy](/mem/intune/user-help/enroll-your-device-in-intune-ios).
+Aby nawiązać połączenie i skonfigurować telefon lub tablet z systemem iOS przy użyciu portalu firmy do Office 365, zobacz [Konfigurowanie dostępu urządzeń z systemem iOS do zasobów firmy](/mem/intune/user-help/enroll-your-device-in-intune-ios).
 
 ### <a name="android-phone-or-tablet"></a>Telefon lub tablet z systemem Android
 
 > [!TIP]
-> Wysyłanie i odbieranie wiadomości e-mail będzie możliwe dopiero po zakończeniu tego kroku.
+> Nie będzie można wysyłać i odbierać wiadomości e-mail do momentu ukończenia tego kroku.
 
-Przejdź do sklepu Google Play, a następnie pobierz i zainstaluj Intune — Portal firmy.
+Przejdź do sklepu Google Play i pobierz i zainstaluj Intune — Portal firmy.
 
-Aby połączyć telefon lub tablet z systemem Android i skonfigurować go w portalu firmy do Microsoft 365, zobacz Rejestrowanie [urządzenia](/mem/intune/user-help/enroll-device-android-company-portal) za pomocą Portal firmy.
+Aby nawiązać połączenie i skonfigurować telefon lub tablet z systemem Android za pomocą portalu firmy do Microsoft 365, zobacz [Rejestrowanie urządzenia przy użyciu Portal firmy](/mem/intune/user-help/enroll-device-android-company-portal).
 
 ### <a name="windows-81-and-windows-10"></a>Windows 8.1 i Windows 10
 
-Przejdź do Microsoft Store, a następnie pobierz i zainstaluj Intune — Portal firmy
+Przejdź do Microsoft Store i pobierz i zainstaluj Intune — Portal firmy
 
-Aby połączyć się z telefonem Windows lub komputerem i skonfigurować go w portalu firmy do Microsoft 365, zobacz Windows [rejestracji urządzenia w Intune — Portal firmy](/intune-user-help/windows-enrollment-company-portal).
+Aby nawiązać połączenie i skonfigurować telefon lub komputer Windows przy użyciu portalu firmy do Microsoft 365, zobacz [Windows rejestrowanie urządzeń w Intune — Portal firmy](/intune-user-help/windows-enrollment-company-portal).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po zarejestrowaniu urządzenia w pakietach Basic Mobility and Security możesz zacząć korzystać z aplikacji pakietu Office na urządzeniu, aby pracować z pocztą e-mail, kalendarzem, kontaktami i dokumentami.
+Po zarejestrowaniu urządzenia w usłudze Basic Mobility and Security możesz rozpocząć pracę z pocztą e-mail, kalendarzem, kontaktami i dokumentami przy użyciu aplikacji Office na urządzeniu.

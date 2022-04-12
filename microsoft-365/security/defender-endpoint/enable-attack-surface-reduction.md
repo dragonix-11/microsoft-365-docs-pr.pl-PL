@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: f8f6865bc65662cbbfd5a9276d95abc405f5a64b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: dfe5567edbe86279ad5a5b0645cb3ea6c54c1174
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664243"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783614"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Włączanie reguł zmniejszania obszaru ataków
 
@@ -93,7 +93,7 @@ Można również wykluczyć reguły usługi ASR z wyzwalania na podstawie skrót
 
 > [!IMPORTANT]
 > Wyłączenie plików lub folderów może znacznie zmniejszyć ochronę zapewnianą przez reguły usługi ASR. Wykluczone pliki będą mogły być uruchamiane i nie będzie rejestrowany żaden raport ani zdarzenie.
-> Jeśli reguły usługi ASR wykrywają pliki, które prawdopodobnie nie powinny zostać wykryte, należy [najpierw użyć trybu inspekcji, aby przetestować regułę](evaluate-attack-surface-reduction.md).
+> Jeśli reguły usługi ASR wykrywają pliki, które prawdopodobnie nie powinny zostać wykryte, należy [najpierw użyć trybu inspekcji, aby przetestować regułę](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
 
 Możesz określić poszczególne pliki lub foldery (przy użyciu ścieżek folderów lub w pełni kwalifikowanych nazw zasobów), ale nie możesz określić reguł, do których mają zastosowanie wykluczenia. Wykluczenie jest stosowane tylko wtedy, gdy zostanie uruchomiona wykluczona aplikacja lub usługa. Jeśli na przykład dodasz wykluczenie dla usługi aktualizacji, która jest już uruchomiona, usługa aktualizacji będzie nadal wyzwalać zdarzenia, dopóki usługa nie zostanie zatrzymana i ponownie uruchomiona.
 

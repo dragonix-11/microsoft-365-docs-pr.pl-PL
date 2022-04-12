@@ -1,5 +1,5 @@
 ---
-title: Migrowanie danych do mojej Microsoft 365 Business Standard subskrypcji usługi
+title: Migruj dane do mojej subskrypcji Microsoft 365 dla Firm w warstwie Standard
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,126 +13,126 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-description: Przemigruj Outlook, OneDrive i Teams do Microsoft 365 Business Standard
-ms.openlocfilehash: fcd3047014204c1115481dfd411be502a7409fb9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Migrowanie danych Outlook, OneDrive i Teams do Microsoft 365 Business Standard
+ms.openlocfilehash: 7868212bbd3d96e71d606fb3df0071018ded1c31
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986628"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783408"
 ---
-# <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>Migrowanie danych do mojej Microsoft 365 Business Standard subskrypcji usługi
+# <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>Migruj dane do mojej subskrypcji Microsoft 365 dla Firm w warstwie Standard
 
-Wykonaj czynności opisane w tym artykule, aby przenieść OneDrive, Outlook i Teams do subskrypcji Microsoft 365 Business Standard subskrypcji.
+Wykonaj kroki opisane w tym artykule, aby przenieść dane OneDrive, Outlook i Teams do subskrypcji Microsoft 365 Business Standard.
 
 > [!IMPORTANT]
-> Nadal możesz przechowywać swoje dane na swoim koncie osobistym. Dane na koncie osobistym nie wygasną po utworzeniu nowego biznesowego konta e-mail i migracji danych. Możesz przenieść wszystkie dane na nowe konto biznesowe lub przenieść część danych. Na przykład możesz przenieść swoje dokumenty służbowe na konto służbowe, ale zachować osobiste zdjęcia rodzinne na swoim koncie osobistym.
+> Nadal możesz przechowywać dane na swoim koncie osobistym. Dane na twoim koncie osobistym nie wygasną po utworzeniu nowego firmowego konta e-mail i przeprowadzeniu migracji danych. Możesz przenieść wszystkie swoje dane na nowe konto biznesowe lub przenieść część danych. Możesz na przykład przenieść dokumenty służbowe na swoje konto biznesowe, ale zachować osobiste zdjęcia rodzinne na swoim koncie osobistym.
 
-## <a name="move-files-to-onedrive-for-business"></a>Przenoszenie plików do usługi OneDrive dla firm
+## <a name="move-files-to-onedrive-for-business"></a>Przenoszenie plików do OneDrive dla firm
 
-W tej sekcji opisano, jak przenieść pliki przechowywane na koncie Microsoft 365 osobistego na Microsoft 365 firmowe. Oba te OneDrive zsynchronizowane z urządzeniem możesz łatwo przeciągać i upuszczać pliki między dwoma OneDrive folderami.
+W tej sekcji opisano sposób przenoszenia plików przechowywanych na koncie osobistym Microsoft 365 na konto biznesowe Microsoft 365. Przy obu OneDrive kontach zsynchronizowanych z urządzeniem można łatwo przeciągać i upuszczać pliki między dwoma OneDrive folderami.
 
-1. Wybierz ikonę OneDrive białej chmury w Windows obszar powiadomień i upewnij się OneDrive że Twoje osobiste konto jest zsynchronizowane z urządzeniem.
+1. Wybierz ikonę OneDrive białej chmury w obszarze powiadomień Windows i upewnij się, że twoje konto osobiste OneDrive jest zsynchronizowane z urządzeniem.
 
-    :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="Zrzut ekranu: wybierz białą ikonę chmury w Windows obszar powiadomień":::
-
-    > [!NOTE]
-    > W celu OneDrive ikon może być  konieczne wybranie strzałki Pokaż ukryte obszar powiadomień obok OneDrive ukryte ikony. Jeśli ikona nie jest wyświetlana w obszar powiadomień, OneDrive nie jest uruchomiona. Wybierz **przycisk Start**, OneDrive w polu wyszukiwania, a następnie wybierz pozycję OneDrive w wynikach wyszukiwania.
-
-2. Aby dodać nowe konto biznesowe, wybierz **pozycję Pomoc & Ustawienia** >  **Ustawienia**.
-
-    :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="Zrzut ekranu: wybierz & Ustawienia Pomoc, aby dodać konto":::
-
-3. W **Ustawienia** wybierz **pozycję AccountAdd** >  **an account (Dodd).**
-
-4. Po OneDrive konfiguracji wprowadź nowe konto firmowe, a następnie wybierz pozycję **Zaloguj.**
-
-    :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="Zrzut ekranu: wprowadź swój adres e-mail na OneDrive strony konfigurowanie":::
+    :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="Zrzut ekranu: wybierz ikonę białej chmury w obszarze powiadomień Windows":::
 
     > [!NOTE]
-    > Jeśli do tej pory nie spalasz konta osobistego usługi Microsoft 365 OneDrive, wykonaj powyższe czynności, aby skonfigurować konto osobiste na urządzeniu i zsynchronizować pliki przed przejściem do następnych kroków.
+    > Może być konieczne **wybranie strzałki Pokaż ukryte ikony** obok obszaru powiadomień, aby wyświetlić ikonę OneDrive. Jeśli ikona nie jest wyświetlana w obszarze powiadomień, OneDrive może nie być uruchomiona. Wybierz pozycję **Start**, wpisz OneDrive w polu wyszukiwania, a następnie wybierz pozycję OneDrive w wynikach wyszukiwania.
 
-### <a name="drag-and-drop-files-in-onedrive"></a>Przeciąganie i upuszczanie plików w OneDrive
+2. Aby dodać nowe konto biznesowe, wybierz pozycję **Pomoc & Ustawienia** >  **Ustawienia**.
 
-Dzięki zsynchronizowaniu Microsoft 365 konta osobistego i firmowego z urządzeniem możesz teraz przenosić pliki z osobistego folderu OneDrive do nowego folderu OneDrive firmowego.
+    :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="Zrzut ekranu: wybierz pozycję Pomoc & Ustawienia, aby dodać konto":::
 
-1. W Eksploratorze plików otwórz zsynchronizowany folder OneDrive zawierający pliki.
+3. W **Ustawienia** wybierz pozycję **KontoDodaj** >  konto.
 
-2. Zaznacz i przeciągnij odpowiednie pliki z OneDrive osobistego do nowego OneDrive firmowego.
+4. Po rozpoczęciu OneDrive Instalatora wprowadź nowe konto biznesowe, a następnie wybierz pozycję **Zaloguj** się.
 
-    :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="Zrzut ekranu: przeciąganie i upuszczanie plików do nowego OneDrive folderu dla firm":::
+    :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="Zrzut ekranu: wprowadź swój adres e-mail na stronie konfiguracji OneDrive":::
 
-### <a name="notes-about-moving-files-from-onedrive-personal-to-onedrive-for-work"></a>Uwagi dotyczące przenoszenia plików z OneDrive osobistego do OneDrive do pracy
+    > [!NOTE]
+    > Jeśli nie skonfigurowano wcześniej OneDrive przy użyciu bieżącego Microsoft 365 konta osobistego, wykonaj powyższe kroki, aby skonfigurować konto osobiste na urządzeniu i zsynchronizować pliki przed przejściem do następnych kroków.
 
-- Jeśli przenosisz dużą liczbę plików, zalecamy przenoszenie plików w partiach, po których każda ma nie więcej niż 100 plików.
+### <a name="drag-and-drop-files-in-onedrive"></a>Przeciągnij i upuść pliki w OneDrive
 
-- Pliki, które przenosisz z OneDrive osobistego do pliku OneDrive do pracy, są rozpoznawane jako nowe pliki, dlatego w tych plikach nie są zachowywane szczegóły metadanych, takie jak Zmodyfikowane i Zmodyfikowane przez.
+Dzięki synchronizacji Microsoft 365 kont osobistych i biznesowych z urządzeniem możesz teraz przenieść pliki z folderu OneDrive osobistego do nowego folderu OneDrive firmowego.
 
-- Jeśli wcześniej udostępniasz pliki OneDrive, po ich przenoszeniu musisz ponownie je udostępnić w nowej aplikacji OneDrive do pracy. Ponadto po udostępniu tych plików zalecamy usunięcie oryginalnych plików z OneDrive. Dzięki temu osoby te nie będą mogły odwołać się do aktualnych kopii plików, które zostały im udostępnione wcześniej.
+1. W Eksplorator plików otwórz zsynchronizowany folder OneDrive zawierający pliki.
 
-## <a name="step-set-up-outlook-for-email"></a>Krok: konfigurowanie usługi Outlook-mail
+2. Wybierz i przeciągnij żądane pliki z folderu osobistego OneDrive do nowego OneDrive folderu biznesowego.
 
-1. W Windows menu Start wybierz pozycję Outlook i wybierz ją.
+    :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="Zrzut ekranu: Przeciąganie i upuszczanie plików do nowego folderu OneDrive dla firm":::
 
-    (Jeśli korzystasz z komputera Mac, otwórz go Outlook na pasku narzędzi lub zlokalizuj go przy użyciu programu Finder).
+### <a name="notes-about-moving-files-from-onedrive-personal-to-onedrive-for-work"></a>Uwagi dotyczące przenoszenia plików z OneDrive osobistych do OneDrive do pracy
 
-    Jeśli właśnie zainstalowano aplikację Outlook, na stronie Powitanie wybierz pozycję **Dalej**.
+- W przypadku przenoszenia dużej liczby plików zalecamy przeniesienie plików w partiach nie więcej niż 100 plików.
 
-2. Wybierz **pozycję Informacje** \> **o pliku** \> **, dodaj konto**.
+- Pliki przenoszone z OneDrive osobiste do OneDrive do pracy są rozpoznawane jako nowe pliki i w związku z tym te pliki nie zachowują szczegółów metadanych, takich jak Zmodyfikowane i Zmodyfikowane przez.
 
-3. Wprowadź swój adres e-mail firmy Microsoft i wybierz **Połączenie**.
+- Jeśli wcześniej udostępniasz pliki w OneDrive, musisz ponownie udostępnić te pliki w nowym OneDrive do pracy po ich przeniesieniu. Ponadto po udostępnieniu tych plików zalecamy usunięcie oryginalnych plików z OneDrive. Dzięki temu użytkownicy nie będą mogli odwoływać się do nieaktuanych kopii plików, które zostały im wcześniej udostępnione.
 
-## <a name="watch-set-up-outlook-for-email"></a>Obejrzyj: Konfigurowanie poczty e Outlook-mail
+## <a name="step-set-up-outlook-for-email"></a>Krok: Konfigurowanie Outlook na potrzeby poczty e-mail
+
+1. Na Windows menu Start wyszukaj Outlook i wybierz ją.
+
+    (Jeśli używasz komputera Mac, otwórz Outlook z paska narzędzi lub znajdź go przy użyciu narzędzia Finder).
+
+    Jeśli właśnie zainstalowano Outlook, na stronie Powitalnej wybierz pozycję **Dalej**.
+
+2. Wybierz pozycję **Informacje o** \> **pliku** \> **Dodaj konto**.
+
+3. Wprowadź swój adres e-mail firmy Microsoft i wybierz pozycję **Połączenie**.
+
+## <a name="watch-set-up-outlook-for-email"></a>Obejrzyj: Konfigurowanie Outlook na potrzeby poczty e-mail
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
-Więcej na [stronie Konfigurowanie poczty Outlook-mail](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
+Więcej informacji można [znaleźć w tematach Konfigurowanie Outlook na potrzeby poczty e-mail](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
   
-### <a name="import-email"></a>Importowanie poczty e-mail
+### <a name="import-email"></a>Importowanie wiadomości e-mail
 
-Jeśli wcześniej używano programu Outlook-mail, możesz zaimportować poprzednie wiadomości e-mail, kalendarz i kontakty do nowego konta Microsoft.
+Jeśli używasz Outlook z innym kontem e-mail, możesz zaimportować poprzednią wiadomość e-mail, kalendarz i kontakty do nowego konta Microsoft.
   
-1. **Eksportowanie starych wiadomości e-mail**
+1. **Eksportowanie starej wiadomości e-mail**
 
     In Outlook, choose **File** \> **Open &amp; Export** \> **Import/Export**.
 
-    Wybierz **pozycję Eksportuj do pliku, a** następnie postępuj zgodnie z instrukcjami, aby wyeksportować plik Outlook danych (pst) i wszystkie podfoldery.
+    Wybierz **pozycję Eksportuj do pliku,** a następnie wykonaj kroki, aby wyeksportować plik danych Outlook (pst) i wszystkie podfoldery.
 
-2. **Importowanie starych wiadomości e-mail**
+2. **Importowanie starej wiadomości e-mail**
 
-    W Outlook wybierz ponownie **pozycję Otwórz** \> **plik &amp;** \> **eksportu Import/Export** plik.
+    W Outlook ponownie wybierz pozycję **Otwórz &amp;** **plik** \> eksportu \> **Import/Export**.
 
-    Tym razem wybierz pozycję **Importuj z innego programu** lub pliku i postępuj zgodnie z instrukcjami, aby zaimportować plik kopii zapasowej utworzony podczas eksportowania starych wiadomości e-mail.
+    Tym razem wybierz pozycję **Importuj z innego programu lub pliku** i wykonaj kroki importowania pliku kopii zapasowej utworzonego podczas eksportowania starej wiadomości e-mail.
 
-### <a name="watch-import-and-redirect-email"></a>Obejrzyj: Importowanie i przekierowywanie poczty e-mail
+### <a name="watch-import-and-redirect-email"></a>Obejrzyj: Importowanie i przekierowywanie wiadomości e-mail
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
   
-Więcej na stronie [Importowanie poczty e-mail za pomocą Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
+Więcej informacji można znaleźć w witrynie [Import email with Outlook (Importowanie wiadomości e-mail z Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de)).
 
-Możesz również zaimportować pocztę e Exchange e-mail wszystkich osób przy użyciu centrum administracyjnego programu SharePoint. Aby uzyskać więcej informacji, zobacz [Migrowanie wielu kont e-mail](/Exchange/mailbox-migration/mailbox-migration).
+Możesz również użyć centrum administracyjnego Exchange, aby zaimportować wiadomości e-mail wszystkich użytkowników. Aby uzyskać więcej informacji, zobacz [migrowanie wielu kont e-mail](/Exchange/mailbox-migration/mailbox-migration).
 
-## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>Przenoszenie danych z osobistego konta Microsoft Teams do nowego Teams konta służbowego
+## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>Przenoszenie danych z osobistego konta Microsoft Teams do nowego Teams dla konta służbowego
 
-1. Otwórz Microsoft Teams, wybierz ikonę profilu, a następnie dodaj **konto służbowe**.
+1. Otwórz Microsoft Teams, wybierz ikonę profilu, a następnie **dodaj konto służbowe**.
 
-2. Postępuj zgodnie z instrukcjami, aby dodać nowe konto Teams do pracy. Zobacz Logowanie [się i rozpoczynanie pracy z Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937), aby uzyskać więcej informacji.
+2. Wykonaj kroki, aby dodać nowe konto, aby Teams do pracy. Aby uzyskać więcej informacji, [zapoznaj się z tematem Zaloguj się i rozpocznij pracę z Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937).
 
-### <a name="access-teams-chats"></a>Uzyskiwanie Teams czatów
+### <a name="access-teams-chats"></a>Dostęp do czatów Teams
 
-Po rozpoczęciu korzystania Teams z nowym kontem służbowym dane nie zostaną poddane migracji. Najlepszym sposobem na zobaczenie starych czatów jest otwarcie obok siebie Teams i nowego konta służbowego. Możesz to zrobić, wybierając ikonę JA w prawym górnym rogu okna programu Teams i wybierając konto, które chcesz otworzyć. Możesz rozpocząć korzystanie Teams ze swoim nowym kontem służbowym ze współpracownikami. Poinformuj innych użytkowników, z których rozmawiasz, aby rozpocząć kontaktowanie się z Tobą przy Teams konto służbowe.
+Po rozpoczęciu korzystania z Teams z nowym kontem służbowym dane nie zostaną zmigrowane. Najlepszym sposobem na zobaczenie starych czatów jest otwarcie starego konta Teams i nowego konta służbowego obok siebie. Możesz to zrobić, wybierając ikonę ME w prawym górnym rogu Teams i wybierając konto, które chcesz otworzyć. Możesz zacząć korzystać z Teams przy użyciu nowego konta służbowego ze współpracownikami. Pamiętaj, aby poinformować innych użytkowników, z którą rozmawiasz, aby zaczęli kontaktować się z Tobą przy użyciu nowego Teams dla konta służbowego.
 
-### <a name="microsoft-teams-meetings"></a>Microsoft Teams spotkania
+### <a name="microsoft-teams-meetings"></a>spotkania Microsoft Teams
 
-Po skonfigurowaniu nowego konta Microsoft Teams do pracy możesz ponownie utworzyć spotkania w kalendarzu Teams kalendarzu. Pamiętaj, aby usunąć oryginalne spotkania ze starego Teams konta. Umożliwi to dostęp do bogatszych funkcji, takich jak dostępność kalendarza podczas planowania oraz możliwość nagrywania spotkań. Spotkania możesz usuwać tylko z własnego kalendarza Teams, dlatego upewnij się, że chcesz, aby osoby z Twoimi spotkaniami wiedziały, że ponownie je tworzesz. Gdy będziesz już korzystać z nowego konta Teams do spotkań, jeśli brakuje osób, które powinny wziąć udział w Twoich spotkaniach, skontaktuj się z nimi, aby upewnić się, że nie dołączyły one do starego linku do spotkania.
+Po skonfigurowaniu nowego konta Microsoft Teams do celów służbowych możesz ponownie utworzyć spotkania w kalendarzu Teams. Pamiętaj, aby usunąć oryginalne spotkania na starym koncie Teams. Umożliwi to dostęp do bogatszych funkcji — na przykład dostępności kalendarza podczas planowania i możliwości rejestrowania spotkań. Spotkania można usuwać tylko z własnego kalendarza Teams, więc upewnij się, że osoby, z których odbywasz spotkania, wiedzą, że będziesz odtwarzać spotkania. W miarę przechodzenia do korzystania z nowego konta Teams na potrzeby spotkań, jeśli brakuje osób, które powinny być na Twoich spotkaniach, skontaktuj się z nimi, aby upewnić się, że nie dołączyły do starego linku do spotkania.
 
 ### <a name="migrating-contacts"></a>Migrowanie kontaktów
 
-Aby przeprowadzić migrację kontaktów z osobistego konta Teams, znajdź adres e-mail kontaktu i dodaj użytkownika do nowego konta Teams służbowego.
+Aby przeprowadzić migrację kontaktów z osobistego konta Teams, znajdź adres e-mail kontaktu i dodaj użytkownika do nowego konta Teams do pracy.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Importowanie lub migrowanie poczty e-mail z usługi Gmail lub innego dostawcy poczty e-mail do usługi Microsoft 365](../setup/migrate-email-and-contacts-admin.md)
+[Importowanie lub migrowanie wiadomości e-mail z usługi Gmail lub innego dostawcy poczty e-mail do Microsoft 365](../setup/migrate-email-and-contacts-admin.md)
 
 <!--## Download desktop apps
 

@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 49ee543e68ed9f54b0009efeb90bddc9de29c091
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 1eee7e482423e2292e9fe9db42333db481d44175
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761400"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783762"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Dokumentacja reguł zmniejszania obszaru podatnego na ataki
 
@@ -45,7 +45,7 @@ Ten artykuł zawiera informacje o regułach zmniejszania ataków:
 
 ## <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 
-Poniższa tabela zawiera listę obsługiwanych systemów operacyjnych dla reguł, które są obecnie udostępniane do ogólnej dostępności. Reguły są wymienione w kolejności alfabetycznej.
+Poniższa tabela zawiera listę obsługiwanych systemów operacyjnych dla reguł, które są obecnie udostępniane do ogólnej dostępności. Reguły są wymienione w kolejności alfabetycznej w tej tabeli.
 
 > [!Note]
 >
@@ -53,26 +53,26 @@ Poniższa tabela zawiera listę obsługiwanych systemów operacyjnych dla reguł
 >
 > Reguły zmniejszania obszaru ataków w Windows&nbsp; Server2012R2&nbsp;&nbsp; i Windows&nbsp; Server2016&nbsp; są dostępne dla urządzeń dołączonych przy użyciu nowoczesnego ujednoliconego pakietu rozwiązań. Aby uzyskać więcej informacji, zobacz [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview (Nowe funkcje w nowoczesnym ujednoliconym rozwiązaniu dla Windows Server 2012 R2 i 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)).
 
-| Nazwa reguły|&nbsp;Windows 10 | &nbsp;Windows Server 2019 | &nbsp;Windows Server | &nbsp;Windows Server 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
+| Nazwa reguły|Windows 10 | Windows Server 2019 | &nbsp;Windows Server | <sup>Windows Server 2016 [[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| [Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T | T <br> wersja 1803 (półroczny kanał) lub nowszy |  T | T |
-| [Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | Wersja Y 1809 lub nowsza | T | T |  T | T |
-| [Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office](#block-all-office-applications-from-creating-child-processes) | T | T | T |  T | T |
-| [Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T <br> wersja 1803 lub nowsza | T  | T |  T | T |
+| [Blokowanie nadużyć wobec wykorzystywanych, narażonych na zagrożenia podpisanych kierowców](#block-abuse-of-exploited-vulnerable-signed-drivers) | T | T | T <br> wersja 1803 (półroczny kanał) lub nowszy | T | T |
+| [Zablokuj programowi Adobe Reader tworzenie procesów podrzędnych](#block-adobe-reader-from-creating-child-processes) | Wersja Y 1809 lub nowsza | T | T | T | T |
+| [Blokowanie tworzenia procesów podrzędnych przez wszystkie aplikacje Office](#block-all-office-applications-from-creating-child-processes) | T | T | T | T | T |
+| [Blokuj kradzież poświadczeń z podsystemu Windows lokalnego urzędu zabezpieczeń (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | T <br> wersja 1803 lub nowsza | T | T | T | T |
 | [Blokuj zawartość wykonywalną z klienta poczty e-mail i poczty internetowej](#block-executable-content-from-email-client-and-webmail) | T | T | T | T | T |
-| [Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | T <br> wersja 1803 lub nowsza | T | T |  T | T |
-| [Blokuj wykonywanie potencjalnie zaciemnionych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T | T  | T | T | T |
-| [Blokowanie uruchamiania pobranej zawartości wykonywalnej w języku JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | T | T | T  | N | N |
+| [Blokuj uruchamianie plików wykonywalnych, chyba że spełniają kryterium występowania, wieku lub listy zaufanych](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | T <br> wersja 1803 lub nowsza | T | T | T | T |
+| [Blokuj wykonywanie potencjalnie zaciemnionych skryptów](#block-execution-of-potentially-obfuscated-scripts) | T | T | T | T | T |
+| [Blokowanie uruchamiania pobranej zawartości wykonywalnej w języku JavaScript lub VBScript](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | T | T | T | N | N |
 | [Blokowanie tworzenia zawartości wykonywalnej przez aplikacje Office](#block-office-applications-from-creating-executable-content) | T | T | T | T | T |
-| [Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  | T | T  | T |  T | T |
+| [Blokuj Office aplikacjom wstrzykiwanie kodu do innych procesów](#block-office-applications-from-injecting-code-into-other-processes)  | T | T | T | T | T |
 | [Blokowanie tworzenia procesów podrzędnych przez aplikację komunikacji Office](#block-office-communication-application-from-creating-child-processes) | T | T | T | T | T |
-| [Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI](#block-persistence-through-wmi-event-subscription) <br> \*_Wykluczenia plików i folderów nie są obsługiwane._ | T <br> wersja 1903 (kompilacja 18362) lub nowsza | T | T <br> wersja 1903 (kompilacja 18362) lub nowsza |  N | N |
-| [Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | T <br> wersja 1803 lub nowsza | T | T  |  T | T |
-| [Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T | T | T |  T | T |
+| [Blokuj trwałość za pośrednictwem subskrypcji zdarzeń WMI](#block-persistence-through-wmi-event-subscription) <br> \*_Wykluczenia plików i folderów nie są obsługiwane._ | T <br> wersja 1903 (kompilacja 18362) lub nowsza | T | T <br> wersja 1903 (kompilacja 18362) lub nowsza | N | N |
+| [Blokuj tworzenie procesów pochodzących z poleceń PSExec i WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | T <br> wersja 1803 lub nowsza | T | T | T | T |
+| [Blokuj niezaufane i niepodpisane procesy uruchamiane z portu USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | T | T | T | T | T |
 | [Blokuj wywołania interfejsu API Win32 z makr Office](#block-win32-api-calls-from-office-macros) | T | T | T | N | N |
 | [Korzystanie z zaawansowanej ochrony przed oprogramowaniem wymuszającym okup](#use-advanced-protection-against-ransomware) | T <br> wersja 1803 lub nowsza | T | T | T | T |
 
-(<a id="fn1">1</a>) Odnosi się do nowoczesnego, ujednoliconego rozwiązania dla Windows Server 2012 i 2016 roku. Aby uzyskać więcej informacji, zobacz [Dołączanie serwerów Windows do usługi Defender for Endpoint](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Odnosi się do nowoczesnego ujednoliconego rozwiązania dla Windows Server 2012 i 2016 roku. Aby uzyskać więcej informacji, zobacz [Dołączanie serwerów Windows do usługi Defender for Endpoint](configure-server-endpoints.md).
 
 (<a id="fn1">2</a>) W przypadku Windows&nbsp; Server 2016 i Windows&nbsp; Server 2012R2&nbsp; minimalna wymagana wersja Microsoft Endpoint Configuration Manager to wersja 2111.
 

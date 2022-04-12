@@ -1,5 +1,5 @@
 ---
-title: Uaktualnianie list dystrybucyjnych do Microsoft 365 grup w Outlook
+title: Uaktualnianie list dystrybucyjnych do Grupy Microsoft 365 w Outlook
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,188 +21,198 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: Dowiedz się, jak uaktualnić jedną lub wiele list dystrybucyjnych do grup Microsoft 365 w programie Outlook oraz jak używać programu PowerShell do jednoczesnego uaktualniania kilku list dystrybucyjnych.
-ms.openlocfilehash: 5394ce52f865d0b9a0383619cb11b9ebf3a94fc8
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+description: Dowiedz się, jak uaktualnić jedną lub wiele list dystrybucyjnych do Grupy Microsoft 365 w Outlook oraz jak uaktualnić kilka list dystrybucyjnych jednocześnie przy użyciu programu PowerShell.
+ms.openlocfilehash: 832d65854a6a18ad28e3d9fca6d1d11c17146c80
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449207"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782264"
 ---
-# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uaktualnianie list dystrybucyjnych do Microsoft 365 grup w Outlook
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Uaktualnianie list dystrybucyjnych do Grupy Microsoft 365 w Outlook
 
-Możesz uaktualnić listy dystrybucyjne, aby Microsoft 365 grupy w Outlook. Jest to doskonały sposób na przysłanie list dystrybucyjnych Twojej organizacji wszystkich funkcji i funkcji grup Microsoft 365 grupy. [Dlaczego należy uaktualnić listy dystrybucyjne do grup w programie Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+Listy dystrybucyjne można uaktualnić do Grupy Microsoft 365 w Outlook. Jest to doskonały sposób, aby udostępnić listom dystrybucyjnym organizacji wszystkie funkcje Grupy Microsoft 365. [Dlaczego należy uaktualnić listy dystrybucyjne do grup w programie Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
-Możesz uaktualnić adresy DLs jeden na raz lub kilka jednocześnie.
+Można uaktualniać listy DLS pojedynczo lub kilka jednocześnie.
 
-## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Uaktualnianie jednej lub wielu grup list dystrybucyjnych Microsoft 365 grup w Outlook
+## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Uaktualnij jedną lub wiele grup listy dystrybucyjnej, aby Grupy Microsoft 365 w Outlook
 
-Aby uaktualnić grupę listy dystrybucyjnej, Exchange administratorem globalnym lub administratorem globalnym. Aby można było Microsoft 365 grupy dystrybucyjne, grupa listy dystrybucyjnej musi mieć właściciela ze skrzynką pocztową.
+Aby uaktualnić grupę listy dystrybucyjnej, musisz być administratorem globalnym lub administratorem Exchange. Aby uaktualnić do Grupy Microsoft 365, grupa listy dystrybucyjnej musi mieć właściciela ze skrzynką pocztową.
 
-### <a name="use-the-new-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Uaktualnianie jednej lub wielu grup list dystrybucyjnych do grup Microsoft 365 w programie Outlook
+### <a name="use-the-new-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Użyj nowej umowy EAC, aby uaktualnić jedną lub wiele grup listy dystrybucyjnej do Grupy Microsoft 365 w Outlook
 
-1. Przejdź do nowego centrum administracyjnego Exchange grupy > **adresatów**\>.<a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>
+1. Przejdź do nowego centrum administracyjnego Exchange > <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">grupy</a> **adresatów**\>.
 
-2. Wybierz grupę listy dystrybucyjnej (nazywaną również grupą dystrybucyjną **), którą** chcesz uaktualnić do Microsoft 365 na **stronie Grupy**.
+2. Wybierz grupę listy dystrybucyjnej (nazywaną również **grupą dystrybucyjną**), którą chcesz uaktualnić do grupy Microsoft 365 na stronie **Grupy**.
 
-3. Wybierz **grupę dystrybucyjną Uaktualnij** na pasku narzędzi.
+3. Wybierz **grupę dystrybucji Uaktualnij** na pasku narzędzi.
 
-4. W oknie **dialogowym Czy chcesz uaktualnić?** kliknij pozycję **Uaktualnij**. Proces rozpoczyna się natychmiast. Proces ten może potrwać kilka minut lub godzin w zależności od rozmiaru i liczby uaktualnianych grup list dystrybucyjnych.
-
-> [!NOTE]
-> Transparent u góry informuje o uaktualnieniu, na przykład o uaktualnieniu grup *dystrybucyjnych. Odzwierciedlenia tych zmian zajmie 5 minut. Filtruj według Microsoft 365, aby wyświetlić uaktualnione grupy dystrybucyjne*.
-
-### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Uaktualnianie jednej lub wielu grup list dystrybucyjnych do grup Microsoft 365 w programie Outlook
-
-1. Przejdź do centrum administracyjnego Exchange grupy > **adresatów**\>.<a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a><br/>Zostanie wyświetlony komunikat informujący o tym, że masz listy dystrybucyjne (nazywane również grupami dystrybucyjnmi **), które** można uaktualnić do Microsoft 365 grup.<br/> ![Wybierz przycisk Wprowadzenie.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
-
-1. Wybierz co najmniej jedną listę dystrybucyjną (nazywaną również grupą **dystrybucyjną**) na **stronie grup** .<br/>![Wybierz grupę dystrybucyjną.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
-
-1. Wybierz ikonę uaktualniania.<br/>![Ikona Uaktualnij do Microsoft 365 grupy.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
-
-1. W oknie dialogowym informacji wybierz pozycję **Tak** , aby potwierdzić uaktualnienie. Proces rozpoczyna się natychmiast. W zależności od rozmiaru i liczby uaktualnianych adresów DLs ten proces może potrwać kilka minut lub godzin.<br/>Jeśli nie można uaktualnić listy dystrybucyjnej, zostanie wyświetlone okno dialogowe z informacją o tym. Zobacz [Jakich list dystrybucyjnych nie można uaktualnić?](#which-distribution-lists-cant-be-upgraded).
-
-1. Jeśli uaktualniasz wiele list dystrybucyjnych, filtruj listy rozwijane, które zostały uaktualnione, za pomocą listy rozwijanej. Jeśli lista nie jest ukończona, poczekaj chwilę dłużej, a następnie wybierz pozycję  Odśwież, aby zobaczyć, co zostało pomyślnie uaktualnione.<br/>Nie ma żadnych informacji o ukończeniu procesu uaktualniania dla wszystkich wybranych adresów DLs. Możesz to sprawdzić, patrząc na listę w obszarze Dostępne do **uaktualnienia lub** **Uaktualnione adresy DLs**.
-
-1. Jeśli wybrano bibliotekę dystrybucyjną do uaktualnienia, ale nadal jest ona dostępna na stronie jako Dostępna do uaktualnienia, uaktualnianie nie powiodło się. Zobacz [Co zrobić, jeśli uaktualnienie nie działa](#what-to-do-if-the-upgrade-doesnt-work).
+4. W oknie dialogowym **Gotowe do uaktualnienia?**, kliknij przycisk **Uaktualnij**. Proces rozpoczyna się natychmiast. W zależności od rozmiaru i liczby uaktualnianych grup listy dystrybucyjnej proces może potrwać kilka minut lub godzin.
 
 > [!NOTE]
-> Jeśli chcesz otrzymywać podsumowanie wiadomości e-mail od grup, może się okazać, że czasami będą one oferować Ci uaktualnienie wszelkich kwalifikujących się list dystrybucyjnych, których jesteś właścicielem. Aby [uzyskać więcej informacji na temat podsumowanie wiadomości e-mail, zobacz Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) konwersacji grupowej w grupie.
+> Baner u góry wskazuje uaktualnienie, na przykład *grupy dystrybucyjne zostały uaktualnione. Odzwierciedlienie zmian zajmie 5 minut. Filtruj według grup Microsoft 365, aby wyświetlić uaktualnione grupy dystrybucyjne*.
+
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Użyj klasycznej umowy EAC, aby uaktualnić jedną lub wiele grup listy dystrybucyjnej do Grupy Microsoft 365 w Outlook
+
+1. Przejdź do centrum administracyjnego Exchange > <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**grupy**</a> **adresatów**\>.<br/>Zostanie wyświetlone powiadomienie wskazujące, że masz listy dystrybucyjne (nazywane również **grupami dystrybucji**), które kwalifikują się do uaktualnienia do Grupy Microsoft 365.<br/> ![Wybierz przycisk Wprowadzenie.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+
+1. Wybierz co najmniej jedną listę dystrybucyjną (nazywaną również **grupą dystrybucyjną**) na stronie **grup** .<br/>![Wybierz grupę dystrybucyjną.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+
+1. Wybierz ikonę uaktualnienia.<br/>![Uaktualnij do ikony Grupy Microsoft 365.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+
+1. W oknie dialogowym informacji wybierz pozycję **Tak** , aby potwierdzić uaktualnienie. Proces rozpoczyna się natychmiast. W zależności od rozmiaru i liczby uaktualnianych bibliotek DLS proces może potrwać kilka minut lub godzin.<br/>Jeśli nie można uaktualnić listy dystrybucyjnej, zostanie wyświetlone okno dialogowe. Zobacz [Które listy dystrybucyjne nie mogą być uaktualnione?](#which-distribution-lists-cant-be-upgraded).
+
+1. Jeśli uaktualniasz wiele list dystrybucyjnych, użyj listy rozwijanej, aby filtrować listy dystrybucyjne, które zostały uaktualnione. Jeśli lista nie została ukończona, poczekaj chwilę dłużej, a następnie wybierz pozycję **Odśwież** , aby zobaczyć, co zostało pomyślnie uaktualnione.<br/>Nie ma żadnego powiadomienia informującego o zakończeniu procesu uaktualniania dla wszystkich wybranych bibliotek DLS. Możesz to ustalić, sprawdzając, co znajduje się na liście w obszarze **Dostępne do uaktualnienia** lub **Uaktualnione listy DLs**.
+
+1. Jeśli wybrano bibliotekę DL do uaktualnienia, ale nadal jest ona widoczna na stronie jako Dostępna do uaktualnienia, uaktualnienie nie powiodło się. Zobacz [Co zrobić, jeśli uaktualnienie nie działa](#what-to-do-if-the-upgrade-doesnt-work).
+
+> [!NOTE]
+> Jeśli otrzymujesz wiadomości e-mail szyfrowane przez grupy, możesz zauważyć u dołu, że czasami będzie ona oferowana w celu umożliwienia uaktualnienia wszystkich kwalifikujących się list dystrybucyjnych, których jesteś właścicielem. Aby uzyskać więcej informacji na temat wiadomości e-mail szyfrowane, zobacz [Temat Prowadzenie konwersacji grupowej w Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>Co zrobić, jeśli uaktualnienie nie działa
 
-Listy dystrybucyjne, których nie można uaktualnić, pozostaną niezmienione.
+Listy dystrybucyjne, które nie mogą zostać uaktualnione, pozostają niezmienione.
 
-Jeśli nie można uaktualnić **jednej** lub większej liczby uprawnionych list dystrybucyjnych, 
+Jeśli nie można uaktualnić co najmniej jednej **kwalifikującej się** listy dystrybucyjnej, 
 
-1. Użyj [tego](https://aka.ms/DLToM365Group) skryptu, aby skanować w poszukiwaniu możliwych problemów, które mogą uniemożliwiać uaktualnienie listy dystrybucyjnej do grupy Microsoft 365, rozwiązać wszelkie problemy zgłoszone przez skrypt i spróbować uaktualnić listę dystrybucyjną jeszcze raz. 
+1. Ten [skrypt](https://aka.ms/DLToM365Group) służy do skanowania pod kątem możliwych problemów, które mogą uniemożliwić uaktualnienie listy dystrybucyjnej do grupy Microsoft 365, rozwiązywania wszelkich problemów zgłoszonych przez skrypt i próby uaktualnienia listy dystrybucyjnej jeszcze raz. 
 
-2. Jeśli powyższy skrypt nie pomoże lub problem będzie nadal występował, otwórz bilet [pomocy technicznej](../../business-video/get-help-support.md). Aby można było ustalić problem, należy eskalować go do zespołu inżynierów grup.
+2. Jeśli powyższy skrypt nie pomoże lub jeśli problem będzie się powtarzać, otwórz [bilet pomocy technicznej](../../business-video/get-help-support.md). Aby rozwiązać problem, należy przekazać go zespołowi inżynierów ds. grup.
 
-## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Jak uaktualnić kilka list dystrybucyjnych jednocześnie za pomocą programu PowerShell
+## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Jak używać programu PowerShell do uaktualniania kilku list dystrybucyjnych w tym samym czasie
 
-Jeśli masz doświadczenie w  używaniu programu PowerShell, możesz wybrać tę trasę zamiast interfejsu użytkownika. Mamy zestaw polecenia cmdlet, które pomogą Ci uaktualnić listy dystrybucyjne. Patrz poniżej.
+Jeśli masz doświadczenie w korzystaniu z programu PowerShell, możesz wybrać tę trasę zamiast korzystać z interfejsu użytkownika. Mamy zestaw poleceń cmdlet, które pomogą Ci uaktualnić listy dystrybucyjne. Zobacz poniżej.
 
-### <a name="upgrade-a-single-dl"></a>Uaktualnianie pojedynczej biblioteki dystrybucyjnej
+### <a name="upgrade-a-single-dl"></a>Uaktualnianie pojedynczego biblioteki DL
 
-Aby uaktualnić jedną bibliotekę dystrybucyjną, uruchom następujące polecenie:
+Aby uaktualnić pojedynczy plik DL, uruchom następujące polecenie:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
 ```
 
-Jeśli na przykład chcesz uaktualnić bibliotekę dystrybucyjną przy użyciu adresu SMTP dl1@contoso.com, uruchom następujące polecenie:
+Jeśli na przykład chcesz uaktualnić bibliotekę DL przy użyciu adresu SMTP dl1@contoso.com, uruchom następujące polecenie:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 ```
 
 > [!NOTE]
-> Możesz również uaktualnić pojedynczą listę dystrybucyjną do grupy Microsoft 365 przy użyciu polecenia cmdlet programu PowerShell [New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup)
+> Można również uaktualnić pojedynczą listę dystrybucyjną do grupy Microsoft 365 przy użyciu polecenia cmdlet programu PowerShell [New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup)
 
-### <a name="upgrade-multiple-dls-in-a-batch"></a>Uaktualnianie wielu adresów DLs w partii
+### <a name="upgrade-multiple-dls-in-a-batch"></a>Uaktualnianie wielu bibliotek DLs w partii
 
-Możesz również przekazać wiele adresów DLs jako partię i uaktualnić je razem:
+Możesz również przekazać wiele bibliotek DLs jako partię i uaktualnić je razem:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
 <DL SMTP address3>, <DL SMTP address4>
 ```
 
-Jeśli na przykład chcesz uaktualnić pięć adresów DLs przy użyciu adresu SMTP `dl1@contoso.com` `dl2@contoso.com`i , `dl3@contoso.com``dl4@contoso.com` i `dl5@contoso.com`, uruchom następujące polecenie:
+Jeśli na przykład chcesz uaktualnić pięć bibliotek DLs z adresem `dl1@contoso.com` SMTP i `dl2@contoso.com`, `dl3@contoso.com`, `dl4@contoso.com` i `dl5@contoso.com`, uruchom następujące polecenie:
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
+```powershell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com
+```
 
-### <a name="upgrade-all-eligible-dls"></a>Uaktualnianie wszystkich kwalifikujących się adresów DLs
+### <a name="upgrade-all-eligible-dls"></a>Uaktualnij wszystkie kwalifikujące się listy DL
 
-Dostępne są dwa sposoby, za pomocą których możesz uaktualnić wszystkie kwalifikujące się adresy DLs.
+Istnieją dwa sposoby uaktualniania wszystkich kwalifikujących się bibliotek DLs.
 
 > [!NOTE]
-> Polecenie Upgrade-DistributionGroup nie odbiera danych z potoku, dlatego do pomyślnego uruchomienia jest wymagane użycie operatora "foreach-object{}".
+> Polecenie cmdlet Upgrade-DistributionGroup nie odbiera danych z potoku, dlatego do pomyślnego uruchomienia jest wymagane użycie operatora "foreach-object{}".
 
-1. Pobierz uprawnialne adresy DLs w dzierżawie i uaktualnij je przy użyciu polecenia uaktualnienia:
+1. Pobierz kwalifikujące się listy DLs w dzierżawie i uaktualnij je przy użyciu polecenia uaktualnienia:
 
-```PowerShell
-Get-EligibleDistributionGroupForMigration | Foreach-Object{
-    Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-}
-```
+   ```PowerShell
+   Get-EligibleDistributionGroupForMigration | Foreach-Object{
+       Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
+   }
+   ```
 
-2. Uzyskaj listę wszystkich adresów DLs i uaktualnij tylko kwalifikujące się adresy DLs:
+2. Pobierz listę wszystkich bibliotek DLs i uaktualnij tylko kwalifikujące się listy DLS:
 
-```PowerShell
-Get-DistributionGroup| Foreach-Object{
-    Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-}
-```
+   ```PowerShell
+   Get-DistributionGroup| Foreach-Object{
+       Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
+   }
+   ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Często zadawane pytania dotyczące uaktualniania list dystrybucyjnych do grup Microsoft 365 w programie Outlook
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Często zadawane pytania dotyczące uaktualniania list dystrybucyjnych do Grupy Microsoft 365 w Outlook
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>Których list dystrybucyjnych nie można uaktualnić?
 
-Uaktualnić można tylko listy dystrybucyjne zarządzane w chmurze oraz proste, nie zagnieżdżone. W poniższej tabeli wymieniono listy dystrybucyjne, **których NIE MOŻNA** uaktualnić.
+Można uaktualnić tylko zarządzane w chmurze, proste, niegnieżdżone listy dystrybucyjne. W poniższej tabeli wymieniono listy dystrybucyjne, których **nie można** uaktualnić.
 
-|**Właściwość**|**Kwalifikujesz się?**|
-|:-----|:-----|
-|Lokalna zarządzana lista dystrybucyjna.  <br/> |Nie  <br/> |
-|Zagnieżdżone listy dystrybucyjne. Lista dystrybucyjna zawiera grupy podrzędne lub jest członkiem innej grupy.  <br/> |Nie  <br/> |
-|Listy dystrybucyjne z **typami adresatów członków innymi** niż **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |Nie  <br/> |
-|Lista dystrybucyjna, która ma ponad 100 właścicieli  <br/> |Nie  <br/> |
-|Lista dystrybucyjna, która ma tylko członków, ale nie właściciela  <br/> |Nie  <br/> |
-|Lista dystrybucyjna zawierająca alias zawierający znaki specjalne  <br/> |Nie  <br/> |
-|Jeśli lista dystrybucyjna jest skonfigurowana jako adres przesyłania dalej dla udostępnionej skrzynki pocztowej  <br/> |Nie  <br/> |
-|Jeśli dl jest częścią ograniczenia **nadawcy w** innej dl.  <br/> |Nie  <br/> |
-|Grupy zabezpieczeń  <br/> |Nie  <br/> |
-|Dynamiczne listy dystrybucyjne  <br/> |Nie  <br/> |
-|Listy dystrybucyjne przekonwertowane na **listy pokoi**  <br/> |Nie  <br/> |
+|Właściwość|Kwalifikujących się?|
+|---|---|
+|Lokalna zarządzana lista dystrybucyjna.|Nie|
+|Zagnieżdżone listy dystrybucyjne. Lista dystrybucyjna zawiera grupy podrzędne lub jest członkiem innej grupy.|Nie|
+|Listy dystrybucyjne z elementem **członkowskim RecipientTypeDetails** innym niż **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**|Nie|
+|Lista dystrybucyjna zawierająca ponad 100 właścicieli|Nie|
+|Lista dystrybucyjna zawierająca tylko członków, ale bez właściciela|Nie|
+|Lista dystrybucyjna zawierająca alias zawierający znaki specjalne|Nie|
+|Jeśli lista dystrybucyjna jest skonfigurowana jako adres przesyłania dalej dla udostępnionej skrzynki pocztowej|Nie|
+|Jeśli plik DL jest częścią **ograniczenia nadawcy** w innym DL.|Nie|
+|Grupy zabezpieczeń|Nie|
+|Listy dystrybucji dynamicznej|Nie|
+|Listy dystrybucyjne, które zostały przekonwertowane na **listy pokojów**|Nie|
 
-### <a name="check-which-dls-are-eligible-for-upgrade"></a>Sprawdzanie, które adresy DLs można uaktualnić
+### <a name="check-which-dls-are-eligible-for-upgrade"></a>Sprawdzanie, które listy DLS kwalifikują się do uaktualnienia
 
-Jeśli chcesz sprawdzić, czy lista dystrybucyjna jest kwalifikowana, możesz uruchomić poniższe polecenie:
+Jeśli chcesz sprawdzić, czy usługa DL kwalifikuje się, możesz uruchomić poniższe polecenie:
 
-`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
+```PowerShell
+Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration
+```
 
-Jeśli chcesz sprawdzić, które adresy DLs są dostępne do uaktualnienia, uruchom następujące polecenie:
+Jeśli chcesz sprawdzić, które listy DLs kwalifikują się do uaktualnienia, uruchom następujące polecenie:
 
-`Get-EligibleDistributionGroupForMigration`
+```PowerShell
+Get-EligibleDistributionGroupForMigration
+```
 
-### <a name="who-can-run-the-upgrade-scripts"></a>KtoTo uruchomić skrypty uaktualniania?
+### <a name="who-can-run-the-upgrade-scripts"></a>KtoTo można uruchomić skrypty uaktualniania?
 
-Osoby z uprawnieniami administratora globalnego Exchange uprawnieniami administratora.
+Osoby z uprawnieniami administratora globalnego lub administratora Exchange.
 
-### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Dlaczego wizytówka nadal wyświetla listę dystrybucyjną? Co należy zrobić, aby zapobiec wyświetlaniu uaktualnionej listy dystrybucyjnej na liście autosugerowania?
+### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Dlaczego karta kontaktu nadal wyświetla listę dystrybucyjną? Co należy zrobić, aby zapobiec wyświetlaniu uaktualnianej listy dystrybucyjnej na liście autosugerów?
 
-- For Outlook: When someone tries to send an email in Outlook by typing the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. Wizytówka adresata będzie wizytówką listy dystrybucyjnej. Jest to spowodowane tym, że pamięć podręczna adresata lub nazwa nicku w Outlook. Wiadomość e-mail zostanie pomyślnie wysłana do grupy, ale może spowodować zamieszanie u nadawcy.<br/>Aby zresetować pamięć podręczną, możesz wykonać czynności opisane w Outlook Informacje o liście [autouzupełniania](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list), co rozwiąże ten problem.
+- W przypadku Outlook: gdy ktoś spróbuje wysłać wiadomość e-mail w Outlook, wpisując nazwę grupy Microsoft 365 po migracji, adresat zostanie rozpoznany jako lista dystrybucyjna zamiast grupy. Wizytówką odbiorcy będzie karta kontaktowa listy dystrybucyjnej. Jest to spowodowane pamięcią podręczną adresata lub pamięcią podręczną nazw nick w Outlook. Wiadomość e-mail zostanie pomyślnie wysłana do grupy, ale może spowodować nieporozumienie nadawcy.<br/>Możesz wykonać kroki opisane w tym artykule [Informacje o liście Outlook autouzupełniania](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) w celu zresetowania pamięci podręcznej, co rozwiąże ten problem.
 
-- Na Outlook w sieci Web: W przypadku Outlook w sieci Web adresat listy dystrybucyjnej nadal pozostanie w pamięci podręcznej. Aby odświeżyć pamięć podręczną w celu zobaczenia wizytówki grupy, możesz wykonać czynności opisane w tece Usuwanie sugerowanej nazwy lub adresu [e-mail](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) z listy autouzupełnień.
+- W przypadku Outlook w sieci Web: w przypadku Outlook w sieci Web adresat listy dystrybucyjnej nadal pozostanie w pamięci podręcznej. Aby odświeżyć pamięć podręczną, aby wyświetlić wizytówkę grupy, możesz wykonać kroki opisane w temacie [Usuwanie sugerowanej nazwy lub adresu e-mail z listy autouzupełniania](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) .
 
-### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>Czy nowi członkowie grupy otrzymują powitaną wiadomość e-mail w swoich skrzynkach odbiorczych?
+### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>Czy nowi członkowie grupy otrzymują powitalną wiadomość e-mail w skrzynce odbiorczej?
 
-L.p. Ustawienie umożliwiające włączenie wiadomości powitalnych jest domyślnie ustawione na wartość fałsz. To ustawienie wpływa zarówno na obecnych, jak i nowych członków grupy, którzy mogą dołączyć po zakończeniu migracji. Jeśli właściciel grupy później zezwala na korzystanie z użytkowników gości, użytkownicy goście nie otrzymają powitaowej wiadomości e-mail w swoich skrzynkach odbiorczych. Członkowie goście mogą kontynuować pracę z grupą.
+L.p. Ustawienie włączania komunikatów powitalnych jest domyślnie ustawione na wartość false. To ustawienie dotyczy zarówno istniejących, jak i nowych członków grupy, którzy mogą dołączyć po zakończeniu migracji. Jeśli właściciel grupy później zezwoli użytkownikom-gościom, użytkownicy-goście nie otrzymają powitalnej wiadomości e-mail w skrzynce odbiorczej. Członkowie-goście mogą kontynuować pracę z grupą.
 
-### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>Co zrobić, jeśli co najmniej jedna z adresów DLs nie zostanie uaktualniona?
+### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>Co zrobić, jeśli jeden lub niektóre listy DLS nie zostaną uaktualnione?
 
-W niektórych przypadkach nie można uaktualnić biblioteki dystrybucyjnej, ale nie można jej uaktualnić. Dl nie jest uaktualniana i pozostaje jako dl.
+Istnieją pewne przypadki, w których usługa DL kwalifikuje się, ale nie może zostać uaktualniona. Biblioteka DL nie jest uaktualniona i pozostaje jako biblioteka DL.
 
-- Jeśli administrator **zastosować grupowe** zasady adresu e-mail do grup w organizacji i próbuje uaktualnić adresy DLs, które nie spełniają kryteriów, nie zostanie uaktualniona
+- Jeśli administrator zastosował **zasady adresów e-mail grupy** dla grup w organizacji i próbuje uaktualnić listy DLs, które nie spełniają kryteriów, biblioteka DL nie zostanie uaktualniona
 
-- Nie można uaktualnić adresów DLs z ustawieniem **MemberJoinRestriction** lub **MemberDepartRestriction** ustawionym jako **Closed**
+- Nie można uaktualnić bibliotek DLS z **ustawieniem MemberJoinRestriction** lub **MemberDepartRestriction** na **wartość Zamknięte**.
 
-- Tworzenie Microsoft 365 grupy jest dozwolone tylko dla kilku użytkowników, korzystając z procedury [opisanej w tym artykule](/microsoft-365/solutions/manage-creation-of-groups). W tym scenariuszu, jeśli właściciel listy dystrybucyjnej nie może utworzyć grupy Microsoft 365, lista dystrybucyjna nie zostanie uaktualnina do Microsoft 365 grupy. Obejście: Użyj jednego z poniższych obejść dla powyższego scenariusza:
-1)  Upewnij się, że wszyscy użytkownicy wymienini jako właściciele biblioteki dystrybucyjnej mogą tworzyć grupę M365, czyli są członkami grupy zabezpieczeń, do których dostęp jest dozwolony dla grupy M365.
-LUB
-2)  Tymczasowo zamień właściciela biblioteki dystrybucyjnej, dla których nie można utworzyć grupy M365, na użytkownika, który może tworzyć grupę M365
+- Tworzenie grupy Microsoft 365 jest dozwolone tylko dla kilku użytkowników, wykonując kroki opisane w [tym artykule](/microsoft-365/solutions/manage-creation-of-groups). W tym scenariuszu, jeśli właściciel listy dystrybucyjnej nie może utworzyć grupy Microsoft 365, lista dystrybucyjna nie zostanie uaktualniona do grupy Microsoft 365.
+Obejście: użyj jednego z następujących obejść w powyższym scenariuszu:
 
-### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Co się stanie z biblioteką dystrybucyjną, jeśli uaktualnienie z EAC zakończy się niepowodzeniem?
+1. Upewnij się, że wszyscy użytkownicy wymienieni jako właściciele biblioteki DL mogą tworzyć grupę M365, tj. są członkami grupy zabezpieczeń dozwolonej dla grupy M365.
 
-Uaktualnienie nastąpi tylko wtedy, gdy połączenie zostanie przesłane na serwer. Jeśli uaktualnienie nie powiedzie się, twoje adresy DLs zostaną nienaruszone. Będą one działać tak jak do tego, co do tego używali.
+   LUB
 
-### <a name="what-happens-to-message-approval-moderation-settings-on-distribution-groups-after-upgrading"></a>Co się stanie z ustawieniami zatwierdzania wiadomości (moderowania) w grupach dystrybucyjnych po uaktualnieniu?
+2. Tymczasowo zastąp właściciela biblioteki DL, który nie może utworzyć grupy M365, użytkownikiem, który może utworzyć grupę M365.
 
-Ustawienia zatwierdzania (moderowania) wiadomości są zachowywane i działają poprawnie po uaktualnieniu grupy dystrybucyjnej do grupy Microsoft 365 grupy.
+### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Co się stanie z biblioteką DL, jeśli uaktualnienie z eac zakończy się niepowodzeniem?
+
+Uaktualnienie nastąpi tylko wtedy, gdy wywołanie zostanie przesłane do serwera. Jeśli uaktualnienie zakończy się niepowodzeniem, listy DLS będą nienaruszone. Będą działać tak, jak kiedyś.
+
+### <a name="what-happens-to-message-approval-moderation-settings-on-distribution-groups-after-upgrading"></a>Co się stanie z ustawieniami zatwierdzania komunikatów (moderowania) w grupach dystrybucyjnych po uaktualnieniu?
+
+Ustawienia zatwierdzania komunikatów (moderowania) są zachowywane i działają prawidłowo po uaktualnieniu grupy dystrybucyjnej do grupy Microsoft 365.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Porównanie grup](../create-groups/compare-groups.md) (artykuł)\
-[Objaśnienie Microsoft 365 grup użytkownikom](../create-groups/explain-groups-knowledge-worker.md) (artykuł)\
-[Dodawanie lub usuwanie członków z Microsoft 365 przy użyciu centrum administracyjnego](../create-groups/add-or-remove-members-from-groups.md)
+[Objaśnienie Grupy Microsoft 365 użytkownikom](../create-groups/explain-groups-knowledge-worker.md) (artykuł)\
+[Dodawanie lub usuwanie członków z grup Microsoft 365 przy użyciu centrum administracyjnego](../create-groups/add-or-remove-members-from-groups.md)

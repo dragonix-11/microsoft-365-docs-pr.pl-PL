@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie ustawieniami dostępu do urządzeń w pakietach Basic Mobility i Security
+title: Zarządzanie ustawieniami dostępu do urządzeń w usłudze Basic Mobility and Security
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,33 +17,33 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Podstawowa mobilność i zabezpieczenia mogą ułatwić zabezpieczanie urządzeń przenośnych i zarządzanie nimi.
-ms.openlocfilehash: ef74aba7398867ad97748feba45647e7cf4aa609
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Usługa Basic Mobility and Security ułatwia zabezpieczanie urządzeń przenośnych i zarządzanie nimi.
+ms.openlocfilehash: fbd8df7bff6ffa24d2a951d86a85d699e0b1699f
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973642"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781034"
 ---
-# <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Zarządzanie ustawieniami dostępu do urządzeń w pakietach Basic Mobility i Security
+# <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Zarządzanie ustawieniami dostępu do urządzeń w usłudze Basic Mobility and Security
 
-Jeśli korzystasz z pakietu Basic Mobility and Security, być może nie możesz zarządzać urządzeniami z pakietami Basic Mobility i Security. Jeśli tak, należy zablokować Exchange ActiveSync aplikacji do poczty e-Microsoft 365 dla urządzeń przenośnych, które nie są obsługiwane przez pakiet Basic Mobility and Security. Pomaga to zabezpieczyć informacje Twojej organizacji na większej liczby urządzeniach.
+Jeśli używasz pakietu Basic Mobility and Security, mogą istnieć urządzenia, którymi nie można zarządzać przy użyciu pakietu Basic Mobility and Security. Jeśli tak, należy zablokować dostęp Exchange ActiveSync aplikacji do Microsoft 365 poczty e-mail dla urządzeń przenośnych, które nie są obsługiwane przez usługi Basic Mobility and Security. Pomaga to zabezpieczyć informacje o organizacji na większej liczby urządzeń.
 
-W tym celu należy wykonać następujące czynności:
+Wykonaj następujące kroki:
 
-1. Zaloguj się Microsoft 365 konta administratora globalnego.
+1. Zaloguj się do Microsoft 365 przy użyciu konta administratora globalnego.
 
-2. W przeglądarce wpisz: [https://protection.office.com](https://protection.office.com/).
+2. W przeglądarce wpisz: [https://protection.office.com](https://protection.office.com/).
 
     > [!IMPORTANT]
-    > Jeśli korzystasz z pakietu Basic Mobility and Security dla pakietu Microsoft 365 Business Standard po raz pierwszy, aktywuj go tutaj: [Aktywuj podstawowe zabezpieczenia i mobilność](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Po aktywowaniu tego urządzenia zarządzaj nimi za pomocą funkcji Zabezpieczenia Office 365 i & [zgodności](https://protection.office.com/).
+    > Jeśli po raz pierwszy używasz pakietu Basic Mobility and Security dla Microsoft 365 Business Standard, aktywuj je tutaj: [Aktywuj podstawowe zabezpieczenia i mobilność](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Po aktywowaniu urządzeniami należy zarządzać przy użyciu [Office 365 Security & Compliance](https://protection.office.com/).
 
-3. Przejdź do strony Ochrona przed utratą danych > **Zarządzanie** > urządzeniami Zasady  **urządzenia i wybierz** pozycję Zarządzanie ustawieniami dostępu  **do urządzeń w całej organizacji**.
+3. Przejdź do obszaru Ochrona przed utratą danych > **Zarządzanie urządzeniamiZasady** >  **urządzeń** i wybierz pozycję **Zarządzaj ustawieniami dostępu do urządzeń w całej organizacji**.
 
-4. Wybierz  **pozycjęBlock**.
+4. Wybierz pozycję **Blokuj**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Pole wyboru Zablokuj dostęp do wersji Basic Mobility i Security.":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Pole wyboru Podstawowa mobilność i zabezpieczenia blokują dostęp.":::
 
-5. Wybierz  **pozycjęZazadaj**.
+5. Wybierz **Zapisz**.
 
-Aby dowiedzieć się, jakie urządzenia obsługuje pakiet Basic Mobility and Security, zobacz  [Możliwości mobilności podstawowej i zabezpieczeń](capabilities.md).
+Aby dowiedzieć się, jakie urządzenia obsługuje usługa Basic Mobility and Security, zobacz [Capabilities of Basic Mobility and Security (Możliwości usługi Basic Mobility and Security](capabilities.md)).

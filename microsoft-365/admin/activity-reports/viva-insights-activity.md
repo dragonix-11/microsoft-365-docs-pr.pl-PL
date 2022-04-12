@@ -1,5 +1,5 @@
 ---
-title: centrum administracyjne platformy Microsoft 365 viva Szczegółowe informacje aktywności
+title: raporty aktywności Centrum administracyjne platformy Microsoft 365 Szczegółowe informacje Viva
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -17,34 +17,34 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Dowiedz się, jak uzyskać raport Aplikacje Microsoft 365 użycia dla aktywności viva Szczegółowe informacje na pulpicie nawigacyjnym Raporty Microsoft 365 w centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: bb7f36c1db632fc1745c9dbe8f63f9e6f20909b4
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Dowiedz się, jak uzyskać Aplikacje Microsoft 365 dla raportu użycia dla aktywności Szczegółowe informacje Viva na pulpicie nawigacyjnym raportów Microsoft 365 w Centrum administracyjne platformy Microsoft 365.
+ms.openlocfilehash: c0b19871db61f37585384766d4e44ccb602a661b
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63705280"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781320"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — Aktywność osób Szczegółowe informacje Viva
+# <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie Szczegółowe informacje Viva
 
-Jako administrator Microsoft 365 nawigacyjny Raporty możesz wyświetlać informacje o aktywności dotyczące różnych produktów w organizacji. Umożliwia on przejście do bardziej szczegółowych informacji o aktywności specyficznej dla poszczególnych produktów. Zapoznaj się z raportami aktywności w centrum administracyjne platformy Microsoft 365. 
+Jako administrator Microsoft 365 pulpit nawigacyjny Raporty przedstawia omówienie działań w różnych produktach w organizacji. Umożliwia on przejście do bardziej szczegółowych informacji o aktywności specyficznej dla poszczególnych produktów. Zapoznaj się z raportami aktywności w Centrum administracyjne platformy Microsoft 365. 
 
-Można na przykład zrozumieć wdrożenie aplikacji Viva Szczegółowe informacje patrząc na aktywnych użytkowników. Ponadto możesz znaleźć przewodnik po wdrażaniu, aby dodatkowo zwiększyć wdrożenie w organizacji.
+Na przykład możesz zrozumieć wdrożenie Szczegółowe informacje Viva, przyglądając się aktywnym użytkownikom. Ponadto można znaleźć przewodnik wdrażania w celu dalszego zwiększenia wdrożenia w organizacji.
 
-## <a name="how-do-i-get-to-the-to-the-viva-insights-activity-report"></a>Jak uzyskać dostęp do raportu aktywności Szczegółowe informacje Viva?
+## <a name="how-do-i-get-to-the-to-the-viva-insights-activity-report"></a>Jak mogę przejść do raportu aktywności Szczegółowe informacje Viva?
 
 1. W centrum administracyjnym przejdź do strony **Raporty** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Użycie</a>. 
-2. Znajdź **aktywność Szczegółowe informacje Viva**.
+2. Znajdź **działanie Szczegółowe informacje Viva**.
 
-## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Interpretowanie raportu Aplikacje Microsoft 365 użycia 
+## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Interpretowanie raportu użycia Aplikacje Microsoft 365 
 
-Wykres Aktywuj użytkowników pozwala zobaczyć aktywność użytkowników aplikacji Viva Szczegółowe informacje  **za pomocą wykresu Aktywuj użytkowników**. Wykres Viva Szczegółowe informacje można przeglądać dla trendów z ostatnich 7, 30, 90 lub 180 dni.  
+Możesz uzyskać widok aktywności Szczegółowe informacje Viva użytkownika, przeglądając **wykres Aktywni użytkownicy**. Wykres Szczegółowe informacje Viva aktywnych użytkowników można wyświetlić dla trendów z ostatnich 7 dni, 30 dni, 90 dni lub 180 dni.  
 
 > [!div class="mx-imgBorder"]
-> ![Aplikacje Microsoft 365 z viva Szczegółowe informacje.](../../media/viva-insights-chart.png)
+> ![Aplikacje Microsoft 365 raport użycia z Szczegółowe informacje Viva.](../../media/viva-insights-chart.png)
 
-**Aktywni** użytkownicy to użytkownicy, którzy tego dnia zajmują się co najmniej jedną funkcją Viva Szczegółowe informacje. Obejmuje to mieszkanie przez ponad 20 sekund w dowolnej wiadomości e-mail viva Insight, klikanie lub podejmowanie działań na dowolnym Szczegółowe informacje surfacingu lub odwiedzanie aplikacji Viva Szczegółowe informacje w Teams, dodatku Outlook lub pulpitach nawigacyjnych w sieci Web. 
+**Aktywni użytkownicy** to użytkownicy, którzy tego dnia korzystali z co najmniej jednej funkcji Szczegółowe informacje Viva. Obejmuje to zamieszkanie przez ponad 20 sekund w dowolnej wiadomości e-mail usługi Viva Insight, kliknięcie lub podjęcie akcji na dowolnym Szczegółowe informacje nachylaniu się lub odwiedzenie aplikacji Szczegółowe informacje Viva w Teams, Outlook dodatku lub pulpitach nawigacyjnych sieci Web. 
 
-## <a name="view-the-viva-insights-deployment-guide"></a>Wyświetl przewodnik po wdrażaniu usługi Viva Szczegółowe informacje
-Możesz kliknąć pozycję **Zwiększ wdrożenie aplikacji Viva Szczegółowe informacje**, aby wyświetlić przewodnik po wdrażaniu usługi [Viva Szczegółowe informacje.](/viva/insights/personal/setup/deployment-guide)
+## <a name="view-the-viva-insights-deployment-guide"></a>Wyświetlanie przewodnika wdrażania Szczegółowe informacje Viva
+Możesz kliknąć pozycję **Zwiększ wdrożenie Szczegółowe informacje Viva**, aby wyświetlić [przewodnik wdrażania Szczegółowe informacje Viva](/viva/insights/personal/setup/deployment-guide).
 

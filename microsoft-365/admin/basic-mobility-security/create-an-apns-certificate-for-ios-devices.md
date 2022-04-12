@@ -1,5 +1,5 @@
 ---
-title: Tworzenie certyfikatu usługi APN dla urządzeń z systemem iOS
+title: Utwórz certyfikat APN dla urządzeń z systemem iOS
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,50 +13,50 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Zarządzaj urządzeniami z systemem iOS w pakietach Basic Mobility and Security.
-ms.openlocfilehash: f2539ac1c27bd63c13766e197fc12fafc3906f07
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Zarządzanie urządzeniami z systemem iOS w usłudze Basic Mobility and Security.
+ms.openlocfilehash: 99aa909bf9adab1464ad3858cfac4a04cc541609
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973647"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781166"
 ---
-# <a name="create-an-apns-certificate-for-ios-devices"></a>Tworzenie certyfikatu usługi APN dla urządzeń z systemem iOS
+# <a name="create-an-apns-certificate-for-ios-devices"></a>Utwórz certyfikat APN dla urządzeń z systemem iOS
 
-Aby zarządzać urządzeniami z systemem iOS, takimi jak tablety iPad i telefony iPhone w pakietach Basic Mobility and Security, utwórz certyfikat usługi APN.
+Aby zarządzać urządzeniami z systemem iOS, takimi jak iPady i iPhone w usłudze Basic Mobility and Security, utwórz certyfikat usługi APNs.
 
-1. Zaloguj się Microsoft 365 konta administratora globalnego.
+1. Zaloguj się do Microsoft 365 przy użyciu konta administratora globalnego.
 
-2. Wpisz tekst w przeglądarce <https://protection.office.com/>.
+2. W przeglądarce wpisz <https://protection.office.com/>.
 
-3. Wybierz  **pozycję Zapobieganie utracie**  **danychZarządzajanie** > i wybierz pozycję Certyfikat **usługi APN dla urządzeń z systemem iOS**.
+3. Wybierz pozycję **Ochrona przed utratą** \> danych **Zarządzanie urządzeniami** i wybierz pozycję **Certyfikat APNs dla urządzeń z systemem iOS**.
 
-4. Na stronie certyfikatu powiadomień push firmy Apple Ustawienia wybierz  **pozycjęNext**.
+4. Na stronie Apple Push Notification Certificate Ustawienia wybierz pozycję **Dalej**.
 
-5. Wybierz pozycję Pobierz plik CSR i zapisz żądanie podpisania certyfikatu w miejscu na komputerze, które zapamiętasz. Wybierz   **pozycjęNastępny**.
+5. Wybierz pozycję Pobierz plik CSR i zapisz żądanie podpisania certyfikatu w dowolnym miejscu na komputerze, który zapamiętasz. Wybierz pozycję **Dalej**.
 
-6. Na stronie Tworzenie certyfikatu usługi APN:
+6. Na stronie Tworzenie certyfikatu usługi APNs:
 
-    1. Wybierz pozycję Portal Apple APNS, aby otworzyć portal certyfikatów Push firmy Apple.
+    1. Wybierz pozycję Portal APNS firmy Apple, aby otworzyć portal Apple Push Certificates Portal.
 
     2. Zaloguj się przy użyciu identyfikatora Apple ID.
 
        > [!IMPORTANT]
-       > Użyj firmowego identyfikatora Apple skojarzonego z kontem e-mail, który pozostanie w Twojej organizacji, nawet jeśli opuści go użytkownik, który nim zarządza. Zapisz ten identyfikator, ponieważ będzie konieczne użycie tego samego identyfikatora przy odnawianiu certyfikatu.
+       > Użyj firmowego identyfikatora Apple ID skojarzonego z kontem e-mail, które pozostanie w Twojej organizacji, nawet jeśli użytkownik, który zarządza kontem, opuści konto. Zapisz ten identyfikator, ponieważ musisz użyć tego samego identyfikatora, gdy nadszedł czas na odnowienie certyfikatu.
 
-    3. Wybierz   **pozycjęTwoz certyfikat i**  zaakceptuj warunki użytkowania.
+    3. Wybierz **pozycję Utwórz certyfikat** i zaakceptuj warunki użytkowania.
 
-    4. Przejdź do żądania podpisania certyfikatu, które zostało pobrane na komputer z witryny Microsoft 365, a następnie wybierz pozycję **Upload**.
+    4. Przejdź do żądania podpisania certyfikatu pobranego na komputer z Microsoft 365 i wybierz **pozycję Upload**.
 
-       Pobierz na komputer certyfikat usługi APN utworzony w portalu certyfikatów Push firmy Apple.
+       Pobierz na komputer certyfikat apns utworzony przez portal certyfikatów wypychania apple.
 
        > [!TIP]
-       > Jeśli masz problem z pobraniem certyfikatu, odśwież przeglądarkę.
+       > Jeśli masz problemy z pobraniem certyfikatu, odśwież przeglądarkę.
 
-7. Wróć do Microsoft 365 i wybierz pozycję **Dalej** , aby przejść do Upload   **certyfikatu APNS** .
+7. Wstecz do Microsoft 365, a następnie wybierz przycisk **Dalej**, aby przejść do strony **certyfikatu Upload APNS**.
 
-8. Przejdź do certyfikatu usługi APN pobranego z portalu certyfikatów Push firmy Apple.
+8. Przejdź do certyfikatu APN pobranego z portalu apple push certificates.
 
-9. Wybierz   **pozycjęFinisz**.
+9. Wybierz **Zakończ**.
 
-Aby ukończyć konfigurację, wróć do Centrum & zgodności i > **zabezpieczeńNarządz**  **** >> zarządzanie  **urządzeniami.**
+Aby ukończyć konfigurację, wróć do **ustawień** Zarządzanie **urządzeniami** \> **w** \> centrum zabezpieczeń usługi Security & Compliance Center\>.

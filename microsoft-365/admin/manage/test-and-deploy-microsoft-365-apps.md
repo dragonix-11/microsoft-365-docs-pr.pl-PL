@@ -1,5 +1,5 @@
 ---
-title: Testowanie i wdrażanie Aplikacje Microsoft 365 partnerów w portalu zintegrowanych aplikacji
+title: Testowanie i wdrażanie Aplikacje Microsoft 365 przez partnerów w portalu zintegrowanych aplikacji
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,309 +13,309 @@ ms.collection: Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Znajdowanie, testowanie i wdrażanie aplikacji partnerów firmy Microsoft i firmy Microsoft dla użytkowników i grup w organizacji za pomocą portalu zintegrowanych aplikacji w p centrum administracyjne platformy Microsoft 365.
-ms.openlocfilehash: bc633b2a2541a5c1fd813848cd39c7c6e91420ee
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Znajdź, przetestuj i wdróż aplikacje partnerskie firmy Microsoft i firmy Microsoft dla użytkowników i grup w organizacji w portalu Zintegrowane aplikacje w Centrum administracyjne platformy Microsoft 365.
+ms.openlocfilehash: 2baf6aea136736b1239df9a4da7b7e6a5b456ea6
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989704"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782396"
 ---
-# <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Testowanie i wdrażanie Aplikacje Microsoft 365 partnerów w portalu zintegrowanych aplikacji
+# <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Testowanie i wdrażanie Aplikacje Microsoft 365 przez partnerów w portalu zintegrowanych aplikacji
 
-Ten centrum administracyjne platformy Microsoft 365 zapewnia elastyczność wdrażania aplikacji z jednego sklepu, niestandardowej linii biznesowej aplikacji i Microsoft 365 partnerów z pojedynczej lokalizacji. Dostęp do lokalizacji można uzyskać za pomocą ustawień centrum administracyjnego firmy Microsoft w zintegrowanych aplikacjach. Możliwość odnajdowania, testowania i pełnego wdrażania kupionych i licencjonowanych aplikacji przez partnerów firmy Microsoft w zintegrowanym portalu aplikacji zapewnia wygodę i korzyści, których organizacja potrzebuje do regularnego aktualizowania usług biznesowych i efektywnego działania.
+Centrum administracyjne platformy Microsoft 365 zapewnia elastyczność wdrażania aplikacji z jednego sklepu, niestandardowych linii biznesowych aplikacji i aplikacji Microsoft 365 partnerów z jednej lokalizacji. Dostęp do lokalizacji można uzyskać w ustawieniach centrum administracyjnego firmy Microsoft w obszarze Zintegrowane aplikacje. Możliwość znajdowania, testowania i pełnego wdrażania zakupionych i licencjonowanych aplikacji przez partnerów firmy Microsoft w portalu zintegrowanych aplikacji zapewnia wygodę i korzyści, które organizacja wymaga, aby usługi biznesowe były regularnie aktualizowane i wydajnie uruchamiane.
 
-Aby uzyskać dodatkowe informacje na temat zakupów i licencjonowania Microsoft 365 aplikacji od partnerów w organizacji, zobacz Zarządzanie aplikacjami i wdrażanie ich [Aplikacje Microsoft 365 z](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324) centrum administracyjne platformy Microsoft 365.
+Aby uzyskać dodatkowe informacje na temat zakupu i licencjonowania aplikacji Microsoft 365 od partnerów w organizacji, zobacz [Zarządzanie Aplikacje Microsoft 365 i wdrażanie ich z Centrum administracyjne platformy Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
 
-Aby uzyskać więcej informacji na temat sposobu tworzenia tych aplikacji przez partnerów, zobacz Jak [zaplanować ofertę SaaS dla komercyjnego rynku](https://go.microsoft.com/fwlink/?linkid=2158277)
+Aby uzyskać więcej informacji na temat sposobu tworzenia tych aplikacji przez partnerów, zobacz [Jak zaplanować ofertę SaaS dla komercyjnej platformy handlowej](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-Zintegrowany portal aplikacji jest dostępny tylko dla administratorów globalnych i dostępny tylko dla klientów na całym świecie. Ta funkcja nie jest dostępna w chmurach suwerennych i rządowych.
+Portal Aplikacje zintegrowane jest dostępny tylko dla administratorów globalnych i dostępny tylko dla klientów na całym świecie. Ta funkcja nie jest dostępna w chmurach suwerennych i rządowych.
 
-W portalu zintegrowanych aplikacji jest wyświetlana lista aplikacji, która zawiera pojedyncze aplikacje i Microsoft 365 aplikacji od partnerów wdrażanych w organizacji. Na liście są SPFx tylko aplikacje Office, dodatki i Teams sieci Web. W przypadku aplikacji sieci Web są dostępne dwa rodzaje aplikacji.
+W portalu Aplikacje zintegrowane jest wyświetlana lista aplikacji, która obejmuje pojedyncze aplikacje i aplikacje Microsoft 365 od partnerów wdrożonych w organizacji. Wyświetlane są tylko aplikacje internetowe, aplikacje SPFx, dodatki Office i aplikacje Teams. W przypadku aplikacji internetowych można wyświetlić dwa rodzaje aplikacji.
 
-- Aplikacje SaaS, które są appsource.microsoft.com w programie appsource.microsoft.com i które mogą być wdrażane przez administratorów wyrażając zgodę w imieniu organizacji.
-- Aplikacje galerii SAML połączone z dodatki pakietu Office.
+- Aplikacje SaaS, które są dostępne w appsource.microsoft.com i mogą być wdrażane przez administratorów udzielających zgody w imieniu organizacji.
+- Aplikacje galerii SAML połączone z dodatkami pakietu Office.
 
 ## <a name="manage-apps-in-the-integrated-apps-portal"></a>Zarządzanie aplikacjami w portalu zintegrowanych aplikacji
 
-Możesz zarządzać testowaniem i wdrażaniem kupionych i licencjonowanych Aplikacje Microsoft 365 partnerów.
+Możesz zarządzać testowaniem i wdrażaniem zakupionych i licencjonowanych Aplikacje Microsoft 365 od partnerów.
 
 1. W centrum administracyjnym wybierz pozycję **Ustawienia**, a następnie wybierz pozycję **Zintegrowane aplikacje**.
 
-2. Wybierz aplikację o **stanie Więcej** **aplikacji dostępnych,** aby otworzyć **okienko** Zarządzanie. Stan **większej liczby** dostępnych aplikacji informuje o większej liczby integracji z kanałami isv, które nie zostały jeszcze wdrożone.
+2. Wybierz aplikację ze **stanem** **więcej dostępnych aplikacji** , aby otworzyć okienko **Zarządzanie** . Stan **większej liczby dostępnych aplikacji** informuje, że istnieje więcej integracji z niezależnymi dostawcami oprogramowania, które nie zostały jeszcze wdrożone.
 
-3. Na karcie **Omówienie** wybierz pozycję **Wdeksuj**. W niektórych aplikacjach przed wybraniem przycisku Wdeksuj należy dodać użytkowników.
+3. Na karcie **Przegląd** wybierz pozycję **Wdróż**. Niektóre aplikacje wymagają dodania użytkowników przed wybraniem pozycji Wdróż.
 
-4. Wybierz **pozycję** Użytkownicy, wybierz **pozycję Czy jest to wdrożenie testowe, a** następnie wybierz pozycję Cała **organizacja****, Ja**/ **Ja.** Możesz również wybrać pozycję **Przetestuj wdrożenie** , jeśli wolisz zaczekać na wdrożenie aplikacji w całej organizacji. Określonymi użytkownikami lub grupami mogą być Microsoft 365, grupa zabezpieczeń lub grupa dystrybucyjna.
+4. Wybierz pozycję  **Użytkownicy**, wybierz **pozycję Czy jest to wdrożenie testowe**, a następnie wybierz pozycję **Cała organizacja**, **Określoni użytkownicy/grupy** lub **Tylko ja**. Możesz również wybrać pozycję **Wdrożenie testowe** , jeśli wolisz poczekać na wdrożenie aplikacji w całej organizacji. Określonymi użytkownikami lub grupami może być grupa Microsoft 365, grupa zabezpieczeń lub grupa dystrybucyjna.
 
-5. Wybierz **pozycję Aktualizuj,** a następnie **pozycję Gotowe**. Teraz możesz wybrać pozycję Wdeksuj na karcie Omówienie.
+5. Wybierz pozycję **Aktualizuj,** a następnie pozycję **Gotowe**. Teraz możesz wybrać pozycję Wdróż na karcie Przegląd.
 
-6. Przejrzyj informacje o aplikacji, a następnie wybierz pozycję **Wdeksuj**.
+6. Przejrzyj informacje o aplikacji, a następnie wybierz pozycję **Wdróż**.
 
-7. Wybierz **pozycję Gotowe** na stronie Ukończono wdrożenie i przejrzyj szczegóły testu lub pełnego wdrożenia na **karcie Omówienie** .
+7. Wybierz pozycję **Gotowe** na stronie Wdrożenie ukończone i przejrzyj szczegóły testu lub pełnego wdrożenia na karcie **Przegląd** .
 
-8. Jeśli aplikacja ma stan Oczekujące na **aktualizację**, możesz kliknąć tę aplikację, aby otworzyć okienko Zarządzanie i zaktualizować aplikację.
+8. Jeśli aplikacja ma stan **Oczekiwanie na aktualizację**, możesz kliknąć aplikację, aby otworzyć okienko Zarządzanie i zaktualizować aplikację.
 
-## <a name="find-published-apps-for-testing-and-full-deployment"></a>Znajdowanie opublikowanych aplikacji do testowania i pełnego wdrożenia
+## <a name="find-published-apps-for-testing-and-full-deployment"></a>Znajdowanie opublikowanych aplikacji do testowania i pełnego wdrażania
 
-Możesz znaleźć, przetestować i całkowicie wdrożyć opublikowane aplikacje, które nie są jeszcze widoczne na liście na stronie Zintegrowane aplikacje. Kupując i licencjonowanie aplikacji w centrum administracyjnym, możesz dodać do listy aplikacje partnerów firmy Microsoft i firmy Microsoft z jednej lokalizacji.
+Możesz znaleźć, przetestować i w pełni wdrożyć opublikowane aplikacje, które nie są jeszcze wyświetlane na liście na stronie Aplikacje zintegrowane. Kupując i licencjonując aplikacje z centrum administracyjnego, możesz dodać aplikacje partnerskie firmy Microsoft i firmy Microsoft do swojej listy z jednej lokalizacji.
 
-1. W centrum administracyjnym w lewym okienku narracji **wybierz pozycję Ustawienia**, a następnie wybierz <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**pozycję Zintegrowane aplikacje**</a>.
+1. W centrum administracyjnym w lewej nawigacji wybierz **pozycję Ustawienia**, a następnie wybierz pozycję <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**Zintegrowane aplikacje**</a>.
 
-2. Wybierz **pozycję Pobierz** aplikacje, aby wyświetlić aplikacje.
+2. Wybierz pozycję **Pobierz aplikacje** , aby uzyskać widok aplikacji.
 
-3. Na **Aplikacje Microsoft 365 aplikacji** wybierz aplikację, którą chcesz wdrożyć, wybierając pozycję **Pobierz teraz**. Wyświetlane aplikacje to przede wszystkim aplikacje Word, PowerPoint, Excel, Outlook, Teams i SharePoint (wbudowane na SharePoint Framework technologii). Zaakceptuj uprawnienia i wybierz pozycję **Kontynuuj**.
+3. Na stronie **Aplikacje Microsoft 365** opublikowanych aplikacji wybierz aplikację, którą chcesz wdrożyć, wybierając pozycję **Pobierz teraz**. Aplikacje wyświetlane są głównie w programach Word, PowerPoint, Excel, Outlook dodatkach, aplikacjach Teams i aplikacjach SharePoint (opartych na technologii SharePoint Framework). Zaakceptuj uprawnienia i wybierz pozycję **Kontynuuj**.
 
-5. Wybierz **pozycję** Wdeksuj u góry strony obok wiadomości, która odwołuje się do czekania na wdrożenie.
+5. Wybierz pozycję **Wdróż** w górnej części strony obok komunikatu, który odwołuje się do oczekiwania na wdrożenie.
 
-    Jeśli wybrana aplikacja jest połączona z ofertą SaaS przez isv, wszystkie inne aplikacje, które są częścią tej oferty połączonej, pojawią się na stronie Konfiguracja. Jeśli zdecydujesz się wdrożyć wszystkie aplikacje, wybierz pozycję **Dalej**. W przeciwnym razie **wybierz pozycję Edytuj** i wybierz aplikacje, które chcesz wdrożyć. W niektórych aplikacjach przed wybraniem przycisku Wdeksuj należy dodać **użytkowników**.
+    Jeśli wybrana aplikacja jest połączona z ofertą SaaS przez niezależnego dostawcy oprogramowania, wszystkie inne aplikacje, które są częścią tej połączonej oferty, zostaną wyświetlone na stronie Konfiguracja. Jeśli zdecydujesz się wdrożyć wszystkie aplikacje, wybierz pozycję **Dalej**. W przeciwnym razie wybierz pozycję **Edytuj** i wybierz aplikacje, które chcesz wdrożyć. Niektóre aplikacje wymagają dodania użytkowników przed wybraniem pozycji **Wdróż**.
 
-6. Wybierz **pozycję Dodaj użytkowników**, wybierz **pozycję Czy jest to wdrożenie testowe, a** następnie **wybierz pozycję Cała** **organizacja lub Ja**.
+6. Wybierz pozycję **Dodaj użytkowników**, wybierz **pozycję Czy jest to wdrożenie testowe**, a następnie wybierz pozycję **Cała organizacja** , **Określoni użytkownicy/grupy** lub **Po prostu ja**.
 
-    Określonymi użytkownikami/grupami mogą być Microsoft 365, grupa zabezpieczeń lub grupa rozpowszechniana. Możesz również wybrać pozycję **Przetestuj wdrożenie** , jeśli wolisz zaczekać na wdrożenie aplikacji w całej organizacji.
+    Określonymi użytkownikami/grupami może być grupa Microsoft 365, grupa zabezpieczeń lub grupa rozproszona. Możesz również wybrać pozycję **Wdrożenie testowe** , jeśli wolisz poczekać na wdrożenie aplikacji w całej organizacji.
 
-7. Wybierz **pozycję** Dalej, aby uzyskać dostęp do **strony Zaakceptuj żądanie** uprawnień. Zostaną wyświetlone możliwości i uprawnienia poszczególnych aplikacji. Jeśli aplikacja wymaga zgody, wybierz pozycję **Zaakceptuj uprawnienia**. Tylko administrator globalny może udzielić zgody.
+7. Wybierz pozycję **Dalej** , aby przejść do strony **Akceptowanie żądania uprawnień** . Dostępne są możliwości i uprawnienia aplikacji dla każdej z aplikacji. Jeśli aplikacja wymaga zgody, wybierz pozycję **Akceptuj uprawnienia**. Zgodę może wyrazić tylko administrator globalny.
 
-8. Wybierz **pozycję Dalej** , aby przejrzeć wdrożenie, a następnie wybierz **pozycję Zakończ wdrożenie**. Możesz wyświetlić wdrożenie na karcie **Omówienie** , wybierając pozycję **Wyświetl to wdrożenie**. W centrum administracyjne platformy Microsoft 365 aplikacji można sprawdzić stan każdej wdrożonej aplikacji oraz datę jej wdrożenia.
+8. Wybierz pozycję **Dalej** , aby przejrzeć wdrożenie, a następnie wybierz pozycję **Zakończ wdrożenie**. Wdrożenie można wyświetlić na karcie **Przegląd** , wybierając pozycję **Wyświetl to wdrożenie**. W Centrum administracyjne platformy Microsoft 365 możesz zobaczyć stan każdej wdrożonej aplikacji i datę wdrożenia aplikacji.
 
 > [!NOTE]
-> Jeśli aplikacja została wcześniej wdrożona w innym miejscu niż zintegrowany portal aplikacji, **typ wdrożenia** jest **niestandardowy.**
+> Jeśli aplikacja została wcześniej wdrożona z innego miejsca niż portal Aplikacje zintegrowane, **typ wdrożenia** to **Niestandardowy.**
 
 ## <a name="unsupported-scenarios"></a>Nieobsługiwane scenariusze
 
-W poniższych scenariuszach nie można wdrożyć aplikacji pojedynczego magazynu ani pakietu Aplikacje Microsoft 365 z portalu zintegrowanych aplikacji.
+Nie będzie można wdrożyć aplikacji z jednego sklepu ani Aplikacje Microsoft 365 przez partnera z portalu zintegrowanych aplikacji w następujących scenariuszach.
 
 - Ten sam dodatek jest połączony z więcej niż jedną ofertą SaaS.
-- Oferta SaaS jest połączona z dodatki, ale nie jest zintegrowana z usługą Microsoft Graph ani nie jest AAD identyfikatora aplikacji.
-- Oferta SaaS jest połączona z dodatki, ale identyfikator AAD identyfikator aplikacji udostępniony dla integracji usługi Microsoft Graph jest współużytk jej w wielu ofertach SaaS.
+- Oferta SaaS jest połączona z dodatkami, ale nie jest zintegrowana z usługą Microsoft Graph i nie podano identyfikatora aplikacji AAD.
+- Oferta SaaS jest połączona z dodatkami, ale identyfikator aplikacji AAD udostępniony dla usługi Microsoft Graph integracji jest udostępniany w wielu ofertach SaaS.
 
-## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Upload aplikacji biznesowych do testowania i pełnego wdrożenia
+## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Upload niestandardowych aplikacji biznesowych do testowania i pełnego wdrażania
 
-1. W centrum administracyjnym w lewym okienku narracji **wybierz pozycję Ustawienia** a następnie **zintegrowane aplikacje**.
+1. W centrum administracyjnym w lewym pasku nawigacyjnym wybierz **pozycję Ustawienia**, a następnie pozycję **Zintegrowane aplikacje**.
 
-2. Wybierz **Upload aplikacje niestandardowe**. Obsługiwany jest tylko niestandardowy wiersz aplikacji word, PowerPoint, Excel i Outlook.
+2. Wybierz **pozycję Upload aplikacje niestandardowe**. Obsługiwane są tylko niestandardowe aplikacje dla programu Word, PowerPoint, Excel i Outlook.
 
-3. Upload plik manifestu z urządzenia lub dodaj link adresu URL. W niektórych aplikacjach przed wybraniem przycisku Wdeksuj należy dodać użytkowników.
+3. Upload pliku manifestu z urządzenia lub dodaj link adresu URL. Niektóre aplikacje wymagają dodania użytkowników przed wybraniem pozycji Wdróż.
 
-4. Wybierz **pozycję Dodaj użytkowników**, **wybierz pozycję Czy to jest wdrożenie testowe, a** następnie **wybierz pozycję Cała** organizacja lub **Ja**.
+4. Wybierz pozycję **Dodaj użytkowników**, wybierz **pozycję Czy jest to wdrożenie testowe**, a następnie wybierz pozycję **Cała organizacja** , **Określoni użytkownicy/grupy** lub **Po prostu ja**.
 
-    Określonymi użytkownikami/grupami mogą być Microsoft 365, grupa zabezpieczeń lub grupa rozpowszechniana. Możesz również wybrać pozycję **Przetestuj wdrożenie** , jeśli chcesz zaczekać na wdrożenie aplikacji w całej organizacji.
+    Określonymi użytkownikami/grupami może być grupa Microsoft 365, grupa zabezpieczeń lub grupa rozproszona. Możesz również wybrać pozycję **Wdrożenie testowe** , jeśli chcesz poczekać na wdrożenie aplikacji w całej organizacji.
 
-5. Wybierz **pozycję** Dalej, aby uzyskać dostęp do **strony Zaakceptuj żądanie** uprawnień. Zostaną wyświetlone możliwości i uprawnienia aplikacji. Jeśli aplikacja wymaga zgody, wybierz pozycję **Zaakceptuj uprawnienia**. Tylko administrator globalny może udzielić zgody.
+5. Wybierz pozycję **Dalej** , aby przejść do strony **Akceptowanie żądania uprawnień** . Na liście znajdują się możliwości aplikacji i uprawnienia aplikacji. Jeśli aplikacja wymaga zgody, wybierz pozycję **Akceptuj uprawnienia**. Zgodę może wyrazić tylko administrator globalny.
 
-6. Wybierz **pozycję Dalej** , aby przejrzeć wdrożenie, a następnie wybierz **pozycję Zakończ wdrożenie**. Możesz wyświetlić wdrożenie na karcie **Omówienie** , wybierając pozycję **Wyświetl to wdrożenie**.
+6. Wybierz pozycję **Dalej** , aby przejrzeć wdrożenie, a następnie wybierz pozycję **Zakończ wdrożenie**. Wdrożenie można wyświetlić na karcie **Przegląd** , wybierając pozycję **Wyświetl to wdrożenie**.
 
 ## <a name="prepare-to-deploy-add-ins-in-integrated-apps"></a>Przygotowywanie do wdrażania dodatków w zintegrowanych aplikacjach
 
-Office dodatki ułatwiają personalizowanie dokumentów i usprawniają uzyskiwanie dostępu do informacji w sieci Web (zobacz Rozpoczynanie korzystania z Office dodatku). 
+Dodatki pakietu Office ułatwiają personalizowanie dokumentów i usprawniają uzyskiwanie dostępu do informacji w sieci Web (zobacz Rozpoczynanie korzystania z dodatków pakietu Office). 
 
 Dodatki zapewniają następujące korzyści: 
 
-- Gdy zostanie uruchomiony odpowiedni Office, dodatek zostanie automatycznie pobrany. Jeśli dodatek obsługuje polecenia dodatku, automatycznie pojawi się na wstążce w Office aplikacji. 
+- Po uruchomieniu odpowiedniej aplikacji Office dodatek zostanie automatycznie pobrany. Jeśli dodatek obsługuje polecenia dodatków, dodatek zostanie automatycznie wyświetlony na wstążce w aplikacji Office. 
 
-- Dodatki nie są już wyświetlane dla użytkowników, jeśli administrator wyłączy lub usunie dodatek albo jeśli został on usunięty z programu Azure Active Directory lub z grupy, do których został przypisany. 
+- Dodatki nie są już wyświetlane dla użytkowników, jeśli administrator wyłączy lub usunie dodatek lub jeśli użytkownik zostanie usunięty z Azure Active Directory lub z grupy przypisanej do dodatku. 
 
-Dodatki są obsługiwane na trzech platformach klasycznych Windows komputerów Mac oraz w aplikacjach online Office Komputerów Mac. Jest ona również obsługiwana w systemach iOS i Android (Outlook dodatki dla urządzeń przenośnych). 
+Dodatki są obsługiwane na trzech platformach klasycznych Windows, mac i aplikacje online Office. Jest ona również obsługiwana w systemach iOS i Android (tylko dodatki Outlook Mobile). 
 
 Może upłynąć do 24 godzin, aż dodatek będzie widoczny u klienta dla wszystkich użytkowników. 
 
-Obecnie zarówno Exchange, jak i administratorzy globalni mogą wdrażać dodatki ze zintegrowanych aplikacji.   
+Obecnie zarówno administratorzy Exchange, jak i administratorzy globalni mogą wdrażać dodatki ze zintegrowanych aplikacji.   
 
 ### <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Wdrażanie dodatków wymaga, aby użytkownicy korzystali z licencji usługi Microsoft 365 Business (Business Basic, Business Standard, Business Premium), Office 365 Enterprise (E1/E3/E5/F3) lub licencji Microsoft 365 Enterprise (E3/E5/F3). Użytkownicy muszą również zalogować się do usługi Office przy użyciu identyfikatorów organizacyjnych) oraz mieć Exchange Online aktywne i Exchange Online pocztowe. Katalog subskrypcji musi być w organizacji lub w federacji z Azure Active Directory. 
+Wdrożenie dodatków wymaga, aby użytkownicy korzystali z licencji Microsoft 365 Business (Business Basic, Business Standard, Business Premium), licencji Office 365 Enterprise (E1/E3/E5/F3) lub licencji Microsoft 365 Enterprise (E3/E5/F3). Użytkownicy muszą również zalogować się do Office przy użyciu identyfikatora organizacyjnego) i mieć Exchange Online i aktywne skrzynki pocztowe Exchange Online. Katalog subskrypcji musi być w katalogu lub federacyjny, aby Azure Active Directory. 
 
-Wdrożenie nie obsługuje następujących usług: 
+Wdrożenie nie obsługuje następujących elementów: 
 
 - Dodatki do programów Word, Excel lub PowerPoint w pakiecie Office 2013 
 - Lokalna usługa katalogowa 
-- Wdrażanie dodatków do skrzynki Exchange-pre-pre-pre-do skrzynki pocztowej 
-- Wdrażanie dodatków COM (Component Object Model) i Visual Studio Tools dla pakietu Office (VSTO) 
-- Wdrożenia usług Microsoft 365, które nie zawierają Exchange Online, takie jak Aplikacje Microsoft 365 dla firm i Aplikacje Microsoft 365 dla Enterprise.  
+- Wdrożenie dodatku do skrzynki pocztowej Exchange lokalnej 
+- Wdrażanie dodatków modelu obiektów składnika (COM) lub Visual Studio Tools dla pakietu Office (VSTO). 
+- Wdrożenia Microsoft 365, które nie obejmują Exchange Online, takich jak Aplikacje Microsoft 365 dla firm i Aplikacje Microsoft 365 dla Enterprise.  
 
-### <a name="office-requirements"></a>Office wymagania 
+### <a name="office-requirements"></a>wymagania Office 
 
-W przypadku Excel, dodatków PowerPoint i innych aplikacji użytkownicy muszą korzystać z jednej z następujących usług: 
-- Na Windows, w wersji 1704 lub nowszej licencji programu Microsoft 365 Business (Business Basic, Business Standard, Business Premium), Office 365 Enterprise (E1/E3/E5/F3) lub Microsoft 365 Enterprise (E3/E5/F3). 
+W przypadku dodatków programu Word, Excel i PowerPoint użytkownicy muszą korzystać z jednego z następujących elementów: 
+- Na urządzeniu Windows, wersja 1704 lub nowsza licencji Microsoft 365 Business (Business Basic, Business Standard, Business Premium), licencje Office 365 Enterprise (E1/E3/E5/F3) lub licencje Microsoft 365 Enterprise (E3/E5/F3). 
 - Na komputerze Mac w wersji 15.34 lub nowszej. 
 
-Na Outlook użytkownicy muszą korzystać z jednej z następujących usług: 
-- Wersja 1701 lub nowsza z licencji programu Microsoft 365 Business (Business Basic, Business Standard, Business Premium), Office 365 Enterprise (E1/E3/E5/F3) lub Microsoft 365 Enterprise (E3/E5/F3). 
-- Wersja 1808 lub nowsza z Office Professional Plus 2019 lub Office Standard 2019. 
+W przypadku Outlook użytkownicy muszą korzystać z jednego z następujących elementów: 
+- Wersja 1701 lub nowsza licencji Microsoft 365 Business (Business Basic, Business Standard, Business Premium), licencji Office 365 Enterprise (E1/E3/E5/F3) lub licencji Microsoft 365 Enterprise (E3/E5/F3). 
+- Wersja 1808 lub nowsza Office Professional Plus 2019 lub Office Standard 2019 r. 
 - Wersja 16.0.4494.1000 lub nowsza Office Professional Plus 2016 (MSI) lub Office Standard 2016 (MSI).
     > [!NOTE]
-    > Wersje MSI programu Outlook dodatki zainstalowane przez administratora na odpowiedniej wstążce programu Outlook, a nie w sekcji "Moje dodatki".  
-- Wersja 15.0.4937.1000 lub nowsza z Office Professional Plus 2013 (MSI) lub Office Standard 2013 (MSI).
-- Wersja 16.0.9318.1000 lub nowsza z Office 2016 dla komputerów Mac. 
-- Wersja 2.75.0 lub nowsza pakietu Outlook dla systemu iOS. 
-- Wersja 2.2.145 lub nowsza pakietu Outlook dla systemu Android. 
+    > Wersje msi Outlook pokazują dodatki zainstalowane przez administratora na odpowiedniej wstążce Outlook, a nie w sekcji "Moje dodatki".  
+- Wersja 15.0.4937.1000 lub nowsza z Office Professional Plus 2013 r. (MSI) lub Office Standard 2013 r. (MSI).
+- Wersja 16.0.9318.1000 lub nowsza Office 2016 dla komputerów Mac. 
+- Wersja 2.75.0 lub nowsza Outlook mobile dla systemu iOS. 
+- Wersja 2.2.145 lub nowsza Outlook mobile dla systemu Android. 
 
 
 
-### <a name="exchange-online-requirements"></a>Exchange Online wymagań 
-Manifesty dodatków są przechowywane przez program Microsoft Exchange w dzierżawie organizacji. Administrator wdrażający dodatki i użytkownicy otrzymujący te dodatki muszą znajdować się w wersji programu Exchange Online obsługującej uwierzytelnianie OAuth. 
+### <a name="exchange-online-requirements"></a>wymagania Exchange Online 
+Manifesty dodatków są przechowywane przez program Microsoft Exchange w dzierżawie organizacji. Administrator wdrażający dodatki i użytkownicy otrzymujący te dodatki muszą mieć wersję Exchange Online obsługującą uwierzytelnianie OAuth. 
 
-Skontaktuj się z administratorem programu Exchange w organizacji, aby dowiedzieć się, jaka konfiguracja jest używana. Łączność protokołu OAuth dla każdego użytkownika można sprawdzić przy użyciu polecenia  [cmdletTest-OAuthConnectivityPowerShell](/powershell/module/exchange/test-oauthconnectivity) . 
+Skontaktuj się z administratorem programu Exchange w organizacji, aby dowiedzieć się, jaka konfiguracja jest używana. Łączność protokołu OAuth dla poszczególnych użytkowników można sprawdzić przy użyciu polecenia cmdlet [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) programu PowerShell. 
 
 ### <a name="user-and-group-assignments"></a>Przypisania użytkowników i grup
-Wdrażanie dodatku jest obecnie obsługiwane dla większości grup obsługiwanych przez program Azure Active Directory, w tym grup Microsoft 365, list dystrybucyjnych i grup zabezpieczeń. Wdrożenie obsługuje użytkowników w grupach najwyższego poziomu bez grup nadrzędnych, ale nie obsługuje użytkowników w grupach zagnieżdżonych lub grupach, które mają grupy nadrzędne. 
+Wdrożenie dodatku jest obecnie obsługiwane dla większości grup obsługiwanych przez Azure Active Directory, w tym grup Microsoft 365, list dystrybucyjnych i grup zabezpieczeń. Wdrożenie obsługuje użytkowników w grupach lub grupach najwyższego poziomu bez grup nadrzędnych, ale nie użytkowników w grupach zagnieżdżonych lub grupach, które mają grupy nadrzędne. 
 
 > [!NOTE]
 > Grupy bez włączonej obsługi poczty nie są obecnie obsługiwane. 
 
-W poniższym przykładzie do dodatku przypisano A anerę, Anetę i grupę Dział sprzedaży. Ponieważ Dział sprzedaży Zachód jest grupą zagnieżdżoną, Wojciech i Tomasz nie są przypisani do dodatku. 
+W poniższym przykładzie Sandra, Sheila i grupa Dział sprzedaży są przypisane do dodatku. Ponieważ Dział sprzedaży Zachód jest grupą zagnieżdżoną, Wojciech i Tomasz nie są przypisani do dodatku. 
 
 ![Diagram działu sprzedaży.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>Określanie, czy grupa zawiera grupy zagnieżdżone
 
-Najłatwiejszym sposobem określenia, czy grupa zawiera grupy zagnieżdżone, jest wyświetlenie wizytówki grupy w programie Outlook. W przypadku wprowadzenia nazwy grupy w obrębie  **polaTofield**  wiadomości e-mail, a następnie wybrania podczas rozpoznawania nazwy grupy będzie ona pokazywana, czy zawiera użytkowników lub grupy zagnieżdżone. W poniższym przykładzie  **wizytówka**  grupy Test na karcie Outlook nie zawiera użytkowników, a tylko dwie podgrupy. 
+Najłatwiejszym sposobem określenia, czy grupa zawiera grupy zagnieżdżone, jest wyświetlenie wizytówki grupy w programie Outlook. Jeśli wprowadzisz nazwę grupy w polu **Do** wiadomości e-mail, a następnie wybierzesz nazwę grupy po jej rozpoznaniu, zostanie wyświetlona wartość , jeśli zawiera ona użytkowników lub grupy zagnieżdżone. W poniższym przykładzie karta **Członkowie** wizytówki grupy Test w programie Outlook nie zawiera użytkowników, ale zawiera dwie podgrupy. 
 
-![Karta Członkowie na Outlook wizytówki.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Karta Członkowie karty Outlook wizytówki.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-Można także przeprowadzić wyszukiwanie odwrotnie, sprawdzając, czy dana grupa należy do innej grupy. W poniższym przykładzie na karcie Członek wizytówki grupy <b></b> Outlook widać,  że podgrupa 1 jest członkiem grupy testowej. 
+Można także przeprowadzić wyszukiwanie odwrotnie, sprawdzając, czy dana grupa należy do innej grupy. W poniższym przykładzie na karcie <b>Członkostwo</b> wizytówki grupy Podgrupa 1 w programie Outlook widać, że należy ona do grupy Test. 
 
-![Karta Członkostwo na Outlook wizytówki.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Karta Członkostwo karty kontaktu Outlook.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Zwróć uwagę, że za pomocą interfejsu API Azure Active Directory Graph można uruchamiać zapytania w celu znalezienia listy grup w grupie. Aby uzyskać więcej informacji,  [zobaczOperaty dotyczące grup | Graph interfejsu API](/previous-versions/azure/ad/graph/api/groups-operations). 
+Pamiętaj, że możesz użyć Azure Active Directory interfejs Graph API do uruchamiania zapytań w celu znalezienia listy grup w grupie. Aby uzyskać więcej informacji, zobacz [Operacje na grupach | Materiały referencyjne interfejsu API Graph](/previous-versions/azure/ad/graph/api/groups-operations). 
 
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Zalecana metoda wdrażania dodatków pakietu Office 
-Aby wdać dodatki etapami, zalecamy: 
-1. Wdaj dodatek w niewielki zestaw uczestników projektu biznesowego i członków działu IT. Możesz włączyć flagę **Czy to jest wdrożenie testowe**. Jeśli wdrożenie się powiedzie, przejdź do kroku 2. 
+Aby wdrożyć dodatki przy użyciu podejścia etapowego, zalecamy następujące czynności: 
+1. Wprowadź dodatek dla niewielkiego zestawu osób biorących udział w projekcie biznesowym i członków działu IT. Możesz włączyć flagę **Czy jest to wdrożenie testowe**. Jeśli wdrożenie zakończy się pomyślnie, przejdź do kroku 2. 
 
-2. Wdaj dodatek u większej liczby osób w firmie. Ponownie oceń wyniki i, jeśli uda się, przejdź do pełnego wdrożenia. 
+2. Wprowadź dodatek dla większej liczby osób w firmie. Ponownie oceń wyniki i, jeśli się powiedzie, kontynuuj pełne wdrożenie. 
 
-3. Przekonuj pełne rozsyłanie zadań dla wszystkich użytkowników. Wyłącz flagę czy **jest to wdrożenie testowe**. 
+3. Wykonaj pełne wdrożenie dla wszystkich użytkowników. Wyłącz flagę z obszaru **Czy jest to wdrożenie testowe**. 
 
-W zależności od rozmiaru docelowej grupy odbiorców możesz dodać lub usunąć kroki rzutowania.  
+W zależności od rozmiaru docelowej grupy odbiorców możesz dodać lub usunąć kroki wdrażania.  
 
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Wdrażanie dodatku Office przy użyciu centrum administracyjnego 
 
-1. W centrum administracyjnym wybierz pozycję **Ustawienia**, a następnie wybierz **pozycję Zintegrowane aplikacje**. 
+1. W centrum administracyjnym wybierz pozycję **Ustawienia**, a następnie wybierz pozycję **Zintegrowane aplikacje**. 
 
-2. Wybierz  **pozycjęUzyskaj** aplikacje w górnej części strony. Usługa AppSource zostanie załadowana w formacie osadzonym. Możesz wyszukać dodatek lub znaleźć go, klikając pozycję Produkt w lewym okienku wyszukiwania.  Jeśli dodatek został połączony przez isv z aplikacją SaaS lub innymi aplikacjami i dodatki oraz jeśli aplikacja SaaS jest aplikacją płatną, zostanie wyświetlone okno dialogowe zakupu licencji lub przycisk Wdeksuj. Niezależnie od tego, czy zakupiono licencję, czy nie, możesz przejść dalej do wdrożenia. Wybierz **pozycję Wdeksuj**.  
+2. Wybierz pozycję **Pobierz aplikacje** w górnej części strony. Usługa AppSource zostanie załadowana w formacie osadzonym. Wyszukaj dodatek lub znajdź go, klikając pozycję Produkt na lewym pasku nawigacyjnym.  Jeśli dodatek został połączony przez niezależnych dostawców oprogramowania z aplikacją SaaS lub innymi aplikacjami i dodatkami, a aplikacja SaaS jest aplikacją płatną, zostanie wyświetlone okno dialogowe umożliwiające zakup licencji lub wdrożenie. Niezależnie od tego, czy licencja została zakupiona, czy nie, możesz kontynuować wdrożenie. Wybierz pozycję **Wdróż**.  
 
-3. Zostanie wyświetlony strona **Konfiguracja,** na której znajdują się wszystkie aplikacje. Jeśli nie masz uprawnień lub nie masz odpowiedniego dostępu do wdrożenia aplikacji, odpowiednie informacje zostaną wyróżnione. Możesz wybrać aplikacje, które chcesz wdrożyć. Wybranie **przycisku Dalej** spowoduje **wyświetlenie strony Użytkownicy** . Jeśli dodatek nie został połączony przez isv, zostaniesz przekierowyny do strony Użytkownicy. 
+3. Zostanie wyświetlona strona **Konfiguracja** , na której znajdują się wszystkie aplikacje. Jeśli nie masz uprawnień ani odpowiedniego dostępu do wdrożenia aplikacji, odpowiednie informacje zostaną wyróżnione. Możesz wybrać aplikacje, które chcesz wdrożyć. Wybierając pozycję **Dalej**, zostanie wyświetlona strona **Użytkownicy** . Jeśli dodatek nie został połączony przez niezależnego dostawcy oprogramowania, nastąpi przekierowanie do strony Użytkownicy. 
 
-4. Wybierz  **pozycjęEveryone,Specific**  **users/groups**  **lubJust me**  to specify whom the add-in is deployed to (Z kim chcesz wdrożyć dodatek). Użyj pola wyszukiwania, aby znaleźć konkretnych użytkowników lub grupy. Jeśli testujesz dodatek, wybierz pozycję **Czy to jest wdrożenie testowe**. 
+4. Wybierz pozycję **Wszyscy**, **Określoni użytkownicy/grupy** lub **Po prostu ja** , aby określić, do kogo został wdrożony dodatek. Użyj pola Wyszukiwania, aby znaleźć określonych użytkowników lub grupy. Jeśli testujesz dodatek, wybierz pozycję **Czy jest to wdrożenie testowe**. 
 
-5. Wybierz pozycję **Dalej**. Wszystkie funkcje i uprawnienia aplikacji są wyświetlane w jednym okienku wraz z informacjami o certyfikacji, jeśli aplikacja Microsoft 365 certyfikacji. Wybranie logo certyfikacji umożliwia użytkownikowi wyświetlanie szczegółowych informacji na temat certyfikacji.  
+5. Wybierz pozycję **Dalej**. Wszystkie możliwości i uprawnienia aplikacji są wyświetlane w jednym okienku wraz z informacjami o certyfikacie, jeśli aplikacja ma certyfikat Microsoft 365. Wybranie logo certyfikacji umożliwia użytkownikowi wyświetlenie dodatkowych szczegółów dotyczących certyfikacji.  
 
 6. Przejrzyj, a następnie wybierz pozycję **Zakończ wdrożenie**.  
 
-7. Po wdrożeniu dodatku pojawi się zielona ikona "znacznika". Postępuj zgodnie z instrukcjami na stronie, aby przetestować dodatek. 
+7. Po wdrożeniu dodatku zostanie wyświetlona zielona ikona "tick". Postępuj zgodnie z instrukcjami na stronie, aby przetestować dodatek. 
 
 > [!NOTE]
-> Użytkownicy mogą potrzebować ponownego Office, aby wyświetlić ikonę dodatku na wstążce aplikacji. Outlook dodatki na wstążce aplikacji mogą pojawiać się w ciągu 24 godzin. 
+> Użytkownicy mogą wymagać ponownego uruchomienia Office, aby wyświetlić ikonę dodatku na wstążce aplikacji. Outlook dodatek może potrwać do 24 godzin na wstążkach aplikacji. 
 
-Warto poinformować użytkowników i grupy, że wdrożony dodatek jest dostępny. Rozważ wysłanie wiadomości e-mail z opisem, kiedy i jak używać dodatku. Dołącz zawartość pomocy lub często zadawane pytania (lub link do nich), które mogą pomóc użytkownikom w przypadku problemów z tym dodatku. 
+Dobrym rozwiązaniem jest informowanie użytkowników i grup, że wdrożony dodatek jest dostępny. Rozważ wysłanie wiadomości e-mail opisującej, kiedy i jak używać dodatku. Dołącz lub połącz, aby ułatwić zawartość lub często zadawane pytania, które mogą pomóc użytkownikom w przypadku problemów z dodatkiem. 
 
 ## <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Zagadnienia dotyczące przypisywania dodatku do użytkowników i grup 
 
-Administratorzy globalni Exchange administratorami globalnymi mogą przypisywać dodatek wszystkim lub określonym użytkownikom i grupom. Z każdą z tych opcji wiążą się pewne konsekwencje: 
+Administratorzy globalni i administratorzy Exchange mogą przypisywać dodatek wszystkim lub określonym użytkownikom i grupom. Z każdą z tych opcji wiążą się pewne konsekwencje: 
 
-- **Wszyscy**  Ta opcja powoduje przypisanie dodatku każdemu użytkownikowi w organizacji. Tej opcji używaj oszczędnie i tylko w przypadku dodatków, które są naprawdę uniwersalne dla Twojej organizacji. 
+- **Wszyscy** Ta opcja powoduje przypisanie dodatku do każdego użytkownika w organizacji. Użyj tej opcji oszczędnie i tylko w przypadku dodatków, które są naprawdę uniwersalne dla Twojej organizacji. 
 
-- **Użytkownicy**  Jeśli przypiszesz dodatek do pojedynczego użytkownika, a następnie wdrożysz dodatek u nowego użytkownika, musisz najpierw dodać nowego użytkownika. 
+- **Użytkowników** Jeśli przypiszesz dodatek do pojedynczego użytkownika, a następnie wdrożysz dodatek do nowego użytkownika, musisz najpierw dodać nowego użytkownika. 
 
-- **Grupy**  Jeśli przypiszesz dodatek do grupy, dodatek zostanie automatycznie przypisany do użytkowników dodanych do grupy. Gdy użytkownik zostanie usunięty z grupy, traci dostęp do dodatku. W obu przypadkach administrator nie musi nic więcej akcję. 
+- **Grupy** Jeśli przypiszesz do grupy dodatek, dodatek zostanie automatycznie przypisany do użytkowników dodanych do grupy. Gdy użytkownik zostanie usunięty z grupy, użytkownik utraci dostęp do dodatku. W obu przypadkach administrator nie wymaga żadnej dodatkowej akcji. 
 
-- **Tylko ja**  Jeśli przypiszesz dodatek tylko do siebie, zostanie on przypisany tylko do Twojego konta, które jest idealnym rozwiązaniem do testowania dodatku. 
+- **Tylko ja** Jeśli przypiszesz dodatek tylko do siebie, dodatek zostanie przypisany tylko do Twojego konta, co jest idealne do testowania dodatku. 
 
-Wybór odpowiedniej opcji dla organizacji zależy od konfiguracji. Jednak zalecamy wykonywanie zadań za pomocą grup. Jako administrator, możesz łatwiej zarządzać dodatki za pomocą grup i kontrolować członkostwo w tych grupach, zamiast przypisywać poszczególnych użytkowników za każdym razem. W niektórych sytuacjach może być konieczne ograniczenie dostępu do niewielkiego zestawu użytkowników przez przypisanie ich do określonych użytkowników przez ich ręczne przypisanie. 
+Właściwa opcja dla organizacji zależy od konfiguracji. Zalecamy jednak wykonywanie przypisań przy użyciu grup. Jako administrator możesz łatwiej zarządzać dodatkami przy użyciu grup i kontrolować członkostwo w tych grupach, zamiast przypisywać poszczególnych użytkowników za każdym razem. W niektórych sytuacjach możesz chcieć ograniczyć dostęp do niewielkiego zestawu użytkowników, wykonując przypisania do określonych użytkowników, przypisując użytkowników ręcznie. 
 
-### <a name="more-about-office-add-ins-security"></a>Więcej informacji Office zabezpieczeń dodatków 
+### <a name="more-about-office-add-ins-security"></a>Więcej informacji o zabezpieczeniach dodatków Office 
 Dodatki pakietu Office zawierają plik manifestu w formacie XML, w którym znajdują się pewne metadane dotyczące dodatku oraz, co najważniejsze, który wskazuje aplikację internetową zawierającą cały kod i logikę. Dodatki mogą mieć różnorodne możliwości. Na przykład dodatki mogą:
 - wyświetlać dane, 
 - odczytywać dokument użytkownika w celu dostarczenia usług kontekstowych, 
 - odczytywać i zapisywać dane w dokumencie użytkownika w celu podania wartości dla tego użytkownika.  
 
-Aby uzyskać więcej informacji o typach i możliwościach dodatków firmy Office, zobacz  [Office](/office/dev/add-ins/overview/office-add-ins) Omówienie platformy dodatków, zwłaszcza sekcję "Anatomia dodatku Office". 
+Aby uzyskać więcej informacji na temat typów dodatków pakietu Office i ich funkcji, zobacz [Omówienie platformy dodatków pakietu Office](/office/dev/add-ins/overview/office-add-ins)  zwłaszcza sekcję „Anatomia dodatku pakietu Office". 
 
-Aby można było wchodzić w interakcje z dokumentem użytkownika, dodatek musi zadeklarować, jakich uprawnień potrzebuje, w pliku manifestu. Pięciopoziomowy model uprawnień dostępu interfejsu API języka JavaScript stanowi podstawę dla prywatności i zabezpieczeń dla użytkowników okienko zadań dodatków. Większość dodatków w Sklepie Office obsługuje poziom Odczytujdokumenty, a niemal wszystkie dodatki obsługują co najmniej poziom odczytu dokumentu. Aby uzyskać więcej informacji na temat poziomów uprawnień, zobacz Pytanie o uprawnienia do używania interfejsu API w zawartości i okienko zadań  [dodatków](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
+Aby współdziałać z dokumentem użytkownika, dodatek musi zadeklarować, jakich uprawnień potrzebuje, w pliku manifestu. Pięciopoziomowy model uprawnień dostępu interfejsu API języka JavaScript stanowi podstawę dla prywatności i zabezpieczeń dla użytkowników dodatków okienek zadań. Większość dodatków w witrynie Sklep Office obsługuje poziom odczytu i zapisu dokumentu, a niemal wszystkie dodatki obsługują co najmniej poziom odczytu dokumentu. Aby uzyskać więcej informacji o poziomach uprawnień, zobacz [Żądanie poświadczeń na potrzeby używania interfejsu API w dodatkach zawartości i okienek zadań](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
 
 Podczas aktualizowania pliku manifestu typowe zmiany dotyczą ikony i tekstu dodatku. Od czasu do czasu zmieniają się polecenia dodatku. Jednak uprawnienia dodatku nie są zmieniane. Aplikacja internetowa, gdzie jest uruchamiany cały kod i logika dla dodatku, może zmienić się w dowolnym momencie, co jest normalne w przypadku aplikacji internetowych. 
 
 Aktualizacje dodatków są przeprowadzane w następujący sposób: 
-- **Dodatek biznesowy**: W takim przypadku, gdy administrator jawnie przesłał manifest, dodatek wymaga, aby administrator przesłał nowy plik manifestu w celu obsługi zmian metadanych. Przy kolejnym uruchomieniu odpowiednich aplikacji pakietu Office dodatek zostanie zaktualizowany. Aplikacja internetowa może się zmienić w dowolnym momencie. 
+- **Dodatek biznesowy: w** tym przypadku, gdy administrator jawnie przekazał manifest, dodatek wymaga przekazania przez administratora nowego pliku manifestu w celu obsługi zmian metadanych. Przy kolejnym uruchomieniu odpowiednich aplikacji pakietu Office dodatek zostanie zaktualizowany. Aplikacja internetowa może się zmienić w dowolnym momencie. 
 
-- **Office**: Jeśli administrator wybrał dodatek ze Sklepu Office, to w przypadku aktualizacji w Sklepie Office przy następnym uruchomieniu odpowiednich aplikacji programu Office dodatek zostanie zaktualizowany. Aplikacja internetowa może się zmienić w dowolnym momencie. 
+- **Office Store add-in**: jeśli administrator wybrał dodatek ze sklepu Office Store, jeśli dodatek zostanie zaktualizowany w sklepie Office Store, przy następnym uruchomieniu odpowiedniego Office aplikacji dodatek zostanie zaktualizowany. Aplikacja internetowa może się zmienić w dowolnym momencie. 
 
 > [!NOTE]
-> W przypadku programu Word Excel i PowerPoint [](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)  użyj wykazu aplikacji SharePoint, aby wdrożyć dodatki u użytkowników w środowisku lokalnym bez połączenia z usługą Microsoft 365 i(lub) obsługą dodatków SharePoint wymaganych. Do Outlook użyj Exchange sterowania w celu wdrożenia w środowisku lokalnym bez połączenia z Microsoft 365.  
+> W przypadku programu Word Excel i PowerPoint używają [wykazu aplikacji SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) do wdrażania dodatków dla użytkowników w środowisku lokalnym bez połączenia z Microsoft 365 i/lub obsługi dodatków SharePoint. W przypadku Outlook użyj panelu sterowania Exchange do wdrożenia w środowisku lokalnym bez połączenia z Microsoft 365.  
 
 ## <a name="add-in-states"></a>Stany dodatku
-Dodatek może być w  **stanieOnorOffstate**  **** . 
+Dodatek może mieć stan **Włączone** lub **Wyłączone** . 
 
 | Stan | Co oznacza stan | Wpływ |
 |:-----|:-----|:-----|
 |**Aktywny**  <br/> |Administrator przekazał dodatek i przypisał go do użytkowników lub grup.  <br/> |Użytkownicy i grupy przypisani do dodatku mogą go zobaczyć w odpowiednich klientach.  <br/> |
 |**Wyłączony**  <br/> |Administrator wyłączył dodatek.  <br/> |Użytkownicy i grupy przypisani do dodatku nie mają już do niego dostępu.  <br/> Jeśli stan dodatku zostanie zmieniony na Aktywny, użytkownicy i grupy ponownie będą mieli do niego dostęp.  <br/> |
-|**Usunięty**  <br/> |Administrator usunął dodatek.  <br/> |Użytkownicy i grupy przypisani do dodatku nie będą już mieli do niego dostępu.  <br/> |
+|**Deleted**  <br/> |Administrator usunął dodatek.  <br/> |Użytkownicy i grupy przypisani do dodatku nie będą już mieli do niego dostępu.  <br/> |
  
-Rozważ usunięcie dodatku, jeśli już nikt go nie używa. Na przykład wyłączenie dodatku może mieć sens, jeśli dodatek jest używany tylko w konkretnych godzinach roku. 
+Rozważ usunięcie dodatku, jeśli nikt już go nie używa. Na przykład wyłączenie dodatku może mieć sens, jeśli dodatek jest używany tylko w określonych porach roku. 
 
-## <a name="manage-an-office-add-in-using-the-admin-center"></a>Zarządzanie Office za pomocą centrum administracyjnego
+## <a name="manage-an-office-add-in-using-the-admin-center"></a>Zarządzanie dodatkiem Office przy użyciu centrum administracyjnego
 
 Po wdrożeniu administratorzy mogą również zarządzać dostępem użytkowników do dodatków. 
 
-1. W centrum administracyjnym wybierz pozycję **Ustawienia**, a następnie wybierz **pozycję Zintegrowane aplikacje**. 
-2. Na stronie Zintegrowane aplikacje zostanie wyświetlona lista aplikacji, w których będą pojedyncze dodatki lub dodatki połączone z innymi aplikacjami. 
-3. Wybierz aplikację  **zeStatusofWięcej**   **aplikacji dostępnych** , aby otworzyć  **oknoManagepane** . Stan  **większej liczby dostępnych**  aplikacji pozwala się dowiedzieć, że jest więcej integracji z kanałami isv, które nie zostały jeszcze wdrożone. 
-4. Na  **karcieOverviewtab**  wybierz  **pozycjęDeploy**. W niektórych aplikacjach przed wybraniem przycisku Wdeksuj należy dodać użytkowników. 
-5. Wybierz  **pozycję Użytkownicy**, zaznacz  **pozycjęIs to wdrożenie testowe, a** następnie wybierz  **pozycjęEntire organization,Specific**  **users/groupsorJust**   **me (Po prostu mnie**). Możesz również wybrać  **pozycjęTestuj wdrożenie** , jeśli wolisz zaczekać na wdrożenie aplikacji w całej organizacji. Określonymi użytkownikami lub grupami mogą być Microsoft 365, grupa zabezpieczeń lub grupa dystrybucyjna. 
-6. Wybierz  **pozycjęUpdate** , a następnie wybierz pozycję **Gotowe**. Teraz możesz wybrać pozycję **Wdeksuj** na **karcie** Omówienie. 
-7. Przejrzyj informacje o aplikacji, a następnie wybierz  **pozycjęDeploy**.
-8. Wybierz  **pozycjęDone**  na **stronie Ukończono** wdrożenie i przejrzyj szczegóły testu lub pełnego wdrożenia na  **karcieOverviewtab** . 
-9. Jeśli aplikacja ma stan OczekująceUpdate, możesz kliknąć tę aplikację, aby otworzyć okienko Zarządzania i zaktualizować aplikację. **** 
-10. Aby zaktualizować użytkowników, wybierz **kartę** Użytkownicy i wprowadzić odpowiednią zmianę. Po  wymuseniu zmian wybierz pozycję Aktualizuj.  
+1. W centrum administracyjnym wybierz pozycję **Ustawienia**, a następnie wybierz pozycję **Zintegrowane aplikacje**. 
+2. Na stronie Aplikacje zintegrowane zostanie wyświetlona lista aplikacji z pojedynczymi dodatkami lub dodatkami połączonymi z innymi aplikacjami. 
+3. Wybierz aplikację ze **stanem** **Więcej dostępnych aplikacji** , aby otworzyć okienko **Zarządzanie** . Stan **większej liczby dostępnych aplikacji** informuje, że istnieje więcej integracji z niezależnymi dostawcami oprogramowania, które nie zostały jeszcze wdrożone. 
+4. Na karcie **Przegląd** wybierz pozycję **Wdróż**. Niektóre aplikacje wymagają dodania użytkowników przed wybraniem pozycji Wdróż. 
+5. Wybierz pozycję **Użytkownicy**, wybierz pozycję **Czy jest to wdrożenie testowe**, a następnie wybierz pozycję **Cała organizacja**, **Określoni użytkownicy/grupy** lub **Tylko ja**. Możesz również wybrać pozycję **Wdrożenie testowe** , jeśli wolisz poczekać na wdrożenie aplikacji w całej organizacji. Określonymi użytkownikami lub grupami może być grupa Microsoft 365, grupa zabezpieczeń lub grupa dystrybucyjna. 
+6. Wybierz pozycję **Aktualizuj,** a następnie wybierz pozycję **Gotowe**. Teraz możesz wybrać pozycję **Wdróż** na karcie **Przegląd** . 
+7. Przejrzyj informacje o aplikacji, a następnie wybierz pozycję **Wdróż**.
+8. Wybierz pozycję **Gotowe** na stronie **Wdrożenie ukończone** i przejrzyj szczegóły testu lub pełnego wdrożenia na karcie **Przegląd** . 
+9. Jeśli aplikacja ma stan **Oczekiwanie na aktualizację**, możesz kliknąć aplikację, aby otworzyć okienko **Zarządzanie** i zaktualizować aplikację. 
+10. Aby po prostu zaktualizować użytkowników, wybierz kartę **Użytkownicy** i wprowadź odpowiednią zmianę. Po wprowadzeniu zmian wybierz pozycję **Aktualizuj** .  
 
 ## <a name="delete-an-add-in"></a>Usuwanie dodatku
 
-Możesz również usunąć dodatek, który został wdrożony.
+Możesz również usunąć wdrożony dodatek.
 
-1. W centrum administracyjnym wybierz pozycję **Ustawienia**, a następnie wybierz **pozycję Zintegrowane aplikacje** .
+1. W centrum administracyjnym wybierz pozycję **Ustawienia**, a następnie wybierz pozycję **Zintegrowane aplikacje**.
 2. Wybierz dowolny wiersz, aby wyświetlić okienko zarządzania. 
-3. Wybierz **kartę** Konfiguracja. 
+3. Wybierz kartę **Konfiguracja** . 
 4. Wybierz dodatek, który chcesz usunąć, a następnie wybierz pozycję **Usuń**.  
 
 > [!NOTE]
->  Jeśli dodatek został wdrożony przez innego administratora, przycisk Usuń zostanie wyłączony. Tylko administrator, który wdrożył aplikację, lub administrator globalny może usunąć dodatek.
+>  Jeśli dodatek został wdrożony przez innego administratora, przycisk Usuń zostanie wyłączony. Dodatek może usunąć tylko administrator, który wdrożył aplikację lub administrator globalny.
 
-## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>Scenariusze Exchange w których administrator nie może wdrożyć dodatku 
+## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>Scenariusze, w których administrator Exchange nie może wdrożyć dodatku 
 
-Istnieją dwa przypadki, w których Exchange nie może wdrożyć dodatku:
-- Jeśli dodatek potrzebuje uprawnień do konta GRAPH API i wymaga zgody administratora globalnego.
-- Jeśli dodatek jest połączony z co najmniej dwoma dodatki i witrynami WebApps, a co najmniej jeden z tych dodatków jest wdrożony przez innego administratora (exchange/global), a przypisanie użytkownika nie jest jednolite. Zezwalamy na wdrażanie dodatków tylko wtedy, gdy przypisanie użytkownika jest takie samo dla wszystkich już wdrożonych aplikacji.  
+Istnieją dwa przypadki, w których administrator Exchange nie będzie mógł wdrożyć dodatku:
+- Jeśli dodatek wymaga uprawnień do interfejsów API usługi MS Graph i wymaga zgody administratora globalnego.
+- Jeśli dodatek jest połączony z co najmniej dwoma dodatkami i aplikacjami internetowymi, a co najmniej jeden z tych dodatków jest wdrażany przez innego administratora (exchange/global), a przypisanie użytkownika nie jest jednolite. Zezwalamy na wdrażanie dodatków tylko wtedy, gdy przypisanie użytkownika jest takie samo dla wszystkich już wdrożonych aplikacji.  
 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>Która rola administratora jest potrzebna do uzyskiwania dostępu do zintegrowanych aplikacji?
+### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>Której roli administratora potrzebuję, aby uzyskać dostęp do zintegrowanych aplikacji?
 
-Dostęp do zintegrowanych aplikacji mogą uzyskać tylko administratorzy globalni. Zintegrowane aplikacje nie będą wyświetlane w lewym okienku narracji innych administratorów.
+Tylko administratorzy globalni mogą uzyskiwać dostęp do aplikacji zintegrowanych. Zintegrowane aplikacje nie będą wyświetlane w lewym pasku nawigacyjnym dla innych administratorów.
 
-### <a name="why-do-i-see-add-in-in-the-left-nav-under-setting-but-not-integrated-apps"></a>Dlaczego w obszarze ustawienia w obszarze obszarzev po lewej stronie widzę pozycję Dodatek, ale nie zintegrowane aplikacje?
+### <a name="why-do-i-see-add-in-in-the-left-nav-under-setting-but-not-integrated-apps"></a>Dlaczego widzę dodatek w lewym nawigacji w obszarze Ustawianie, ale nie zintegrowane aplikacje?
 
-Istnieje kilka powodów:
+Może być kilka powodów:
 
-- Administrator zalogowany jest administratorem Exchange administratora.
-- Klient znajduje się w niezależnej chmurze, a zintegrowane środowisko aplikacji jest jeszcze dostępne dla klientów suwerennej chmury.
+- Zalogowany administrator jest administratorem Exchange.
+- Klient jest w suwerennej chmurze, a zintegrowane aplikacje są jeszcze dostępne dla klientów suwerennej chmury.
 
-### <a name="what-apps-can-i-deploy-from-integrated-apps"></a>Jakie aplikacje można wdrożyć ze zintegrowanych aplikacji?
+### <a name="what-apps-can-i-deploy-from-integrated-apps"></a>Jakie aplikacje można wdrażać ze zintegrowanych aplikacji?
 
-Zintegrowane aplikacje umożliwiają wdrażanie aplikacji sieci Web, aplikacji Teams, aplikacji Excel, PowerPoint, programów Word, Outlook dodatków i SPFx aplikacji. W przypadku dodatków zintegrowane aplikacje obsługują wdrażanie skrzynek Exchange online, a nie lokalnych skrzynek Exchange pocztowych.
+Zintegrowane aplikacje umożliwiają wdrażanie dodatków Web Apps, Teams, Excel, PowerPoint, Word, Outlook i SPFx. W przypadku dodatków aplikacje zintegrowane obsługują wdrażanie Exchange skrzynek pocztowych online, a nie lokalnych Exchange skrzynek pocztowych.
 
-### <a name="can-administrators-delete-or-remove-apps"></a>Czy administratorzy mogą usuwać aplikacje?
+### <a name="can-administrators-delete-or-remove-apps"></a>Czy administratorzy mogą usuwać lub usuwać aplikacje?
 
-Tak. Administratorzy globalni mogą usuwać aplikacje.
+Tak. Administratorzy globalni mogą usuwać lub usuwać aplikacje.
 
 - Wybierz aplikację z widoku listy. Na karcie **Konfiguracja** wybierz aplikacje do usunięcia.  
 
-### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>Czy zintegrowane aplikacje są dostępne w niezależnej chmurze?
+### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>Czy zintegrowane aplikacje są dostępne w suwerennej chmurze?
 
-L.p. Zintegrowane aplikacje nie są dostępne dla suwerennych klientów w chmurze.
+L.p. Zintegrowane aplikacje nie są dostępne dla klientów suwerennej chmury.
 
 ### <a name="is-integrated-apps-available-in-government-clouds"></a>Czy zintegrowane aplikacje są dostępne w chmurach rządowych?
 
-L.p. Zintegrowane aplikacje nie są dostępne dla klientów korzystających z chmury rządowej.
+L.p. Zintegrowane aplikacje nie są dostępne dla klientów chmury dla instytucji rządowych.
