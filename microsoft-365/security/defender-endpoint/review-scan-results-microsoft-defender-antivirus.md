@@ -1,7 +1,7 @@
 ---
-title: Przeglądanie wyników skanowania Program antywirusowy Microsoft Defender skanowania
-description: Przeglądanie wyników skanów przy użyciu aplikacji Microsoft Endpoint Configuration Manager, Microsoft Intune lub Zabezpieczenia Windows skanowania
-keywords: wyniki skanowania, działania naprawcze, pełne skanowanie, szybkie skanowanie
+title: Przejrzyj wyniki skanowania Program antywirusowy Microsoft Defender
+description: Przejrzyj wyniki skanowania przy użyciu Microsoft Endpoint Configuration Manager, Microsoft Intune lub aplikacji Zabezpieczenia Windows
+keywords: wyniki skanowania, korygowanie, pełne skanowanie, szybkie skanowanie
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,32 +16,36 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8727baa9bb1935a1186907ca5f3d9d4f82dad6d4
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9ffe10560bb36c8fc1311061510f35396934e3b8
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473656"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790641"
 ---
-# <a name="review-microsoft-defender-antivirus-scan-results"></a>Przeglądanie Program antywirusowy Microsoft Defender wyników skanowania
+# <a name="review-microsoft-defender-antivirus-scan-results"></a>Przeglądanie wyników skanowania Program antywirusowy Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-Po Program antywirusowy Microsoft Defender skanowania na żądanie, niezależnie od [tego, czy](scheduled-catch-up-scans-microsoft-defender-antivirus.md) jest to [](run-scan-microsoft-defender-antivirus.md) skanowanie na żądanie, czy zaplanowane, wyniki są rejestrowane i można wyświetlić wyniki. 
+**Platformy**
+- System Windows
+
+Po zakończeniu skanowania Program antywirusowy Microsoft Defender, niezależnie od tego, czy jest to skanowanie [na żądanie](run-scan-microsoft-defender-antivirus.md), czy [zaplanowane](scheduled-catch-up-scans-microsoft-defender-antivirus.md), wyniki są rejestrowane i można wyświetlić wyniki. 
 
 
-## <a name="use-configuration-manager-to-review-scan-results"></a>Przeglądanie Configuration Manager wyników skanowania za pomocą funkcji Skanowania
+## <a name="use-configuration-manager-to-review-scan-results"></a>Przeglądanie wyników skanowania przy użyciu Configuration Manager
 
-Zobacz [Jak monitorować Endpoint Protection stanu](/configmgr/protect/deploy-use/monitor-endpoint-protection).
+Zobacz [Jak monitorować stan Endpoint Protection](/configmgr/protect/deploy-use/monitor-endpoint-protection).
 
-## <a name="use-powershell-cmdlets-to-review-scan-results"></a>Przeglądanie wyników skanowania za pomocą poleceń cmdlet programu PowerShell
+## <a name="use-powershell-cmdlets-to-review-scan-results"></a>Przeglądanie wyników skanowania przy użyciu poleceń cmdlet programu PowerShell
 
-Następujące polecenie cmdlet zwróci każde wykrywanie w punkcie końcowym. Jeśli istnieje wiele wykrywanie tego samego zagrożenia, każde wykrywanie będzie wyświetlane oddzielnie w zależności od czasu każdego wykrywania:
+Następujące polecenie cmdlet zwróci każde wykrycie w punkcie końcowym. Jeśli istnieje wiele wykrycia tego samego zagrożenia, każde wykrycie zostanie wyświetlone oddzielnie na podstawie czasu każdego wykrycia:
 
 ```PowerShell
 Get-MpThreatDetection
@@ -49,7 +53,7 @@ Get-MpThreatDetection
 
 :::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Polecenia cmdlet i dane wyjściowe programu PowerShell" lightbox="../../media/wdav-get-mpthreatdetection.png":::
 
-Możesz określić, `-ThreatID` czy dane wyjściowe mają być wyświetlane tylko w przypadku wykrycia określonego zagrożenia.
+Można określić `-ThreatID` , aby ograniczyć dane wyjściowe, aby pokazywać tylko wykrycia określonego zagrożenia.
 
 Jeśli chcesz wyświetlić listę wykrywania zagrożeń, ale połączyć wykrywanie tego samego zagrożenia w jeden element, możesz użyć następującego polecenia cmdlet:
 
@@ -59,14 +63,24 @@ Get-MpThreat
 
 :::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Kod programu PowerShell" lightbox="../../media/wdav-get-mpthreat.png":::
 
-Aby [uzyskać więcej informacji na](use-powershell-cmdlets-microsoft-defender-antivirus.md) temat używania programu PowerShell z programem PowerShell z programem Program antywirusowy Microsoft Defender, zobacz Konfigurowanie i uruchamianie poleceń cm Program antywirusowy Microsoft Defender dlet programu PowerShell oraz poleceń [cmdlet programu Defender](/powershell/module/defender/) oraz Program antywirusowy Microsoft Defender.
+Zobacz [Konfigurowanie i uruchamianie poleceń cmdlet programu PowerShell Program antywirusowy Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) i [poleceń cmdlet programu antywirusowego Defender](/powershell/module/defender/), aby uzyskać więcej informacji na temat używania programu PowerShell z Program antywirusowy Microsoft Defender.
 
-## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Przeglądanie wyników skanowania za pomocą Windows zarządzania danymi (WMI)
+## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Przeglądanie wyników skanowania przy użyciu instrukcji zarządzania Windows (WMI)
 
-Użyj metody [**Get** (Pobierz) **MSFT_MpThreat** i **MSFT_MpThreatDetection**](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) zajęć.
+Użyj [metody **Get** klasy **MSFT_MpThreat** i **MSFT_MpThreatDetection**](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 
-- [Dostosowywanie, inicjowanie i przeglądanie wyników skanów Program antywirusowy Microsoft Defender środków zaradczych](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Program antywirusowy Microsoft Defender w programie Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Dostosowywanie, inicjowanie i przeglądanie wyników skanowania i korygowania Program antywirusowy Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Program antywirusowy Microsoft Defender w Windows 10](microsoft-defender-antivirus-in-windows-10.md)

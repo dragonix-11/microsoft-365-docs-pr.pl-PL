@@ -1,7 +1,7 @@
 ---
-title: Planuj regularne szybkie i pełne skanowania za pomocą Program antywirusowy Microsoft Defender
-description: Konfigurowanie skanowania cyklicznego (zaplanowanego), w tym ich uruchamiania i tego, czy są one uruchamiane jako pełne, czy szybkie
-keywords: szybkie skanowanie, pełne skanowanie, szybkie lub pełne, planowanie skanowania, codzienne, tygodniowe, czas, zaplanowane, cykliczne, normalne
+title: Planowanie regularnych szybkich i pełnych skanów za pomocą Program antywirusowy Microsoft Defender
+description: Konfigurowanie cyklicznych (zaplanowanych) skanów, w tym czasu ich uruchamiania i tego, czy są one uruchamiane jako pełne, czy szybkie skanowanie
+keywords: szybkie skanowanie, pełne skanowanie, szybkie i pełne, planowanie skanowania, codziennie, co tydzień, czas, zaplanowane, cykliczne, regularne
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,67 +16,81 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 96827430b8d2fe1b45b9839ffe87eb5aa5571b93
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e7b854b2a4c9f4202296ed404d067182de8627bd
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326597"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790279"
 ---
-# <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Konfigurowanie zaplanowanego szybkiego lub pełnego Program antywirusowy Microsoft Defender skanowania
+# <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Konfigurowanie zaplanowanych szybkich lub pełnych skanów Program antywirusowy Microsoft Defender
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-Oprócz zawsze wł. ochrony w czasie rzeczywistym i skanów [](run-scan-microsoft-defender-antivirus.md) antywirusowych na żądanie możesz skonfigurować regularne, zaplanowane skany antywirusowe. Możesz skonfigurować typ skanowania, czas jego wystąpienia oraz to, czy skanowanie powinno nastąpić po aktualizacji ochrony lub gdy punkt [](manage-protection-updates-microsoft-defender-antivirus.md) końcowy nie jest używany. W razie potrzeby możesz również skonfigurować specjalne skanowania w celu wykonania działań naprawczych.
+**Platformy**
+- System Windows
+
+Oprócz zawsze włączonej ochrony w czasie rzeczywistym i skanowania [antywirusowego na żądanie](run-scan-microsoft-defender-antivirus.md) można skonfigurować regularne, zaplanowane skanowania antywirusowe. Można skonfigurować typ skanowania, kiedy powinno nastąpić skanowanie i czy skanowanie powinno nastąpić po [aktualizacji ochrony](manage-protection-updates-microsoft-defender-antivirus.md) lub gdy punkt końcowy nie jest używany. Możesz również skonfigurować specjalne skany, aby w razie potrzeby wykonać akcje korygowania.
 
 ## <a name="what-do-you-want-to-do"></a>Co chcesz zrobić?
 
-- [Dowiedz się więcej o szybkich skanach, pełnych skanach i skanach niestandardowych](#quick-scan-full-scan-and-custom-scan)
-- [Planowanie zasady grupy za pomocą programu antywirusowego](schedule-antivirus-scans-group-policy.md)
-- [Planowanie Windows PowerShell antywirusowych za pomocą narzędzi do planowania skanów](schedule-antivirus-scans-powershell.md)
-- [Planowanie skanów antywirusowych za pomocą narzędzi Windows Management Instrumentation](schedule-antivirus-scans-wmi.md)
+- [Dowiedz się więcej na temat szybkich skanów, pełnych skanów i skanów niestandardowych](#quick-scan-full-scan-and-custom-scan)
+- [Planowanie skanowania antywirusowego przy użyciu zasady grupy](schedule-antivirus-scans-group-policy.md)
+- [Planowanie skanowania antywirusowego przy użyciu Windows PowerShell](schedule-antivirus-scans-powershell.md)
+- [Planowanie skanowania antywirusowego przy użyciu instrumentacji zarządzania Windows](schedule-antivirus-scans-wmi.md)
 
 ## <a name="keep-the-following-points-in-mind"></a>Należy pamiętać o następujących kwestiach
 
-- Domyślnie program Program antywirusowy Microsoft Defender na aktualizację 15 minut przed rozpoczęciem każdego zaplanowanego skanowania. Możesz [zarządzać harmonogramem pobierania](manage-protection-update-schedule-microsoft-defender-antivirus.md) i stosowania aktualizacji ochrony, aby zastąpić to ustawienie domyślne.
+- Domyślnie Program antywirusowy Microsoft Defender sprawdza dostępność aktualizacji na 15 minut przed rozpoczęciem zaplanowanego skanowania. Możesz [zarządzać harmonogramem pobierania i stosowania aktualizacji ochrony](manage-protection-update-schedule-microsoft-defender-antivirus.md) w celu zastąpienia tego ustawienia domyślnego.
 
-- Jeśli urządzenie jest odłączone i działa na baterii podczas zaplanowanego pełnego skanowania, zaplanowane skanowanie zostanie zatrzymane na zdarzeniu 1002, co oznacza, że skanowanie zostało zatrzymane przed ukończeniem. Program antywirusowy Microsoft Defender zostanie uruchomione pełne skanowanie w następnym zaplanowanym czasie.
+- Jeśli urządzenie jest odłączone i uruchomione na baterii podczas zaplanowanego pełnego skanowania, zaplanowane skanowanie zostanie zatrzymane z zdarzeniem 1002, co oznacza, że skanowanie zostało zatrzymane przed zakończeniem. Program antywirusowy Microsoft Defender uruchomi pełne skanowanie w następnym zaplanowanym czasie.
 
 ## <a name="quick-scan-full-scan-and-custom-scan"></a>Szybkie skanowanie, pełne skanowanie i skanowanie niestandardowe
 
-Podczas set up scheduled scans, you can specify whether the scan should be a full or quick scan. W większości przypadków zalecane jest szybkie skanowanie.
+Podczas konfigurowania zaplanowanych skanów można określić, czy skanowanie powinno być pełne, czy szybkie. W większości przypadków zalecane jest szybkie skanowanie.
 
 <br/><br/>
 
 |Szybkie skanowanie|Pełne skanowanie|Skanowanie niestandardowe|
 |---|---|---|
-|(Zalecane) Szybkie skanowanie przeszukuje wszystkie lokalizacje, w których zarejestrowano złośliwe oprogramowanie, aby uruchomić system, takie jak klucze rejestru i znane Windows autostartu. <br/><br/>W połączeniu z zawsze włączona ochroną w czasie rzeczywistym, która sprawdza pliki po ich otwarciu i zamknięciu oraz zawsze, gdy użytkownik przechodzi do folderu, szybkie skanowanie pomaga zapewnić silną ochronę przed złośliwym oprogramowaniem, które zaczyna się od złośliwego oprogramowania na poziomie systemu i na poziomie kernel.<br/><br/>W większości przypadków szybkie skanowanie jest wystarczające i jest zalecaną opcją w przypadku zaplanowanych skanów.|Pełne skanowanie zaczyna się od uruchomienia szybkiego skanowania, a następnie jest kontynuowane kolejne skanowanie pliku wszystkich montowanych dysków stacjonarnych i wymiennych/sieciowych (jeśli do tego jest skonfigurowane pełne skanowanie).<br/><br/>Pełne skanowanie może potrwać kilka godzin lub dni, w zależności od ilości i typu danych, które muszą zostać zeskanowane.<br/><br/>Po zakończeniu pełnego skanowania są dostępne nowe analizy zabezpieczeń, a następnie wymagane jest nowe skanowanie w celu upewninia się, że dzięki nowej analizie zabezpieczeń nie są wykrywane żadne inne zagrożenia.<br/><br/>Ze względu na czas i zasoby związane z pełnym skanowaniem firma Microsoft zasadniczo nie zaleca planowania pełnych skanów.|Skanowanie niestandardowe jest uruchamiane na plikach i folderach określony przez użytkownika. Na przykład możesz zeskanować dysk USB lub określony folder na dysku lokalnym twojego urządzenia.|
+|(Zalecane) Szybkie skanowanie sprawdza wszystkie lokalizacje, w których może być zarejestrowane złośliwe oprogramowanie, aby rozpocząć pracę z systemem, takie jak klucze rejestru i znane Windows folderów startowych. <br/><br/>W połączeniu z zawsze włączoną ochroną w czasie rzeczywistym, która przegląda pliki po ich otwarciu i zamknięciu oraz za każdym razem, gdy użytkownik przechodzi do folderu, szybkie skanowanie pomaga zapewnić silną ochronę przed złośliwym oprogramowaniem rozpoczynającym się od złośliwego oprogramowania na poziomie systemu i jądra.<br/><br/>W większości przypadków szybkie skanowanie jest wystarczające i jest zalecaną opcją dla zaplanowanych skanów.|Pełne skanowanie rozpoczyna się od uruchomienia szybkiego skanowania, a następnie kontynuuje sekwencyjne skanowanie plików wszystkich zainstalowanych dysków stałych i dysków wymiennych/sieciowych (jeśli skonfigurowano pełne skanowanie).<br/><br/>Pełne skanowanie może potrwać kilka godzin lub dni, w zależności od ilości i typu danych, które należy przeskanować.<br/><br/>Po zakończeniu pełnego skanowania jest dostępna nowa analiza zabezpieczeń, a następnie wymagane jest nowe skanowanie, aby upewnić się, że nie wykryto żadnych innych zagrożeń przy użyciu nowej analizy zabezpieczeń.<br/><br/>Ogólnie rzecz biorąc, ze względu na czas i zasoby związane z pełnym skanowaniem firma Microsoft nie zaleca planowania pełnych skanów.|Skanowanie niestandardowe jest uruchamiane w określonych plikach i folderach. Możesz na przykład wybrać skanowanie dysku USB lub określonego folderu na dysku lokalnym urządzenia.|
 
 > [!NOTE]
-> Domyślnie szybkie skanowanie jest uruchamiane na montowanych urządzeniach wymiennych, takich jak dyski USB.
+> Domyślnie szybkie skanowanie jest uruchamiane na zainstalowanych urządzeniach wymiennych, takich jak dyski USB.
 
-## <a name="how-do-i-know-which-scan-type-to-choose"></a>Jak sprawdzić typ skanowania do wyboru?
+## <a name="how-do-i-know-which-scan-type-to-choose"></a>Jak mogę wiedzieć, który typ skanowania wybrać?
 
 Użyj poniższej tabeli, aby wybrać typ skanowania.
 <br/><br/>
 
 |Scenariusz|Zalecany typ skanowania|
 |---|---|
-|Chcesz skonfigurować regularne, zaplanowane skanowania|Szybkie skanowanie <p> Szybkie skanowanie sprawdza procesy, pamięć, profile i niektóre lokalizacje na urządzeniu. W połączeniu [z zawsze włączona ochroną w](configure-real-time-protection-microsoft-defender-antivirus.md) czasie rzeczywistym szybkie skanowanie pomaga zapewnić silną ochronę zarówno przed złośliwym oprogramowaniem, które zaczyna się od systemu, jak i złośliwego oprogramowania na poziomie kernel. Ochrona w czasie rzeczywistym sprawdza pliki po ich otwarciu i zamknięciu oraz zawsze, gdy użytkownik przechodzi do folderu.|
-|Zagrożenia, takie jak złośliwe oprogramowanie, są wykrywane na poszczególnych urządzeniach|Szybkie skanowanie <p> W większości przypadków szybkie skanowanie spowoduje wykrycie złośliwego oprogramowania i jego oczyszczenie.|
-|Chcesz uruchomić skanowanie [na żądanie](run-scan-microsoft-defender-antivirus.md)|Szybkie skanowanie|
-|Chcesz się upewnić, że urządzenie przenośne, takie jak dysk USB, nie zawiera złośliwego oprogramowania|Skanowanie niestandardowe <p> Skanowanie niestandardowe umożliwia wybranie konkretnych lokalizacji, folderów lub plików oraz szybkie skanowanie.|
+|Chcesz skonfigurować regularne, zaplanowane skanowanie|Szybkie skanowanie <p> Szybkie skanowanie sprawdza procesy, pamięć, profile i określone lokalizacje na urządzeniu. W połączeniu z [zawsze włączoną ochroną w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md) szybkie skanowanie pomaga zapewnić silne pokrycie zarówno złośliwego oprogramowania, które rozpoczyna się od złośliwego oprogramowania na poziomie systemu, jak i złośliwego oprogramowania na poziomie jądra. Ochrona w czasie rzeczywistym przegląda pliki po ich otwarciu i zamknięciu oraz za każdym razem, gdy użytkownik przechodzi do folderu.|
+|Zagrożenia, takie jak złośliwe oprogramowanie, są wykrywane na pojedynczym urządzeniu|Szybkie skanowanie <p> W większości przypadków szybkie skanowanie wychwytuje i oczyści wykryte złośliwe oprogramowanie.|
+|Chcesz uruchomić [skanowanie na żądanie](run-scan-microsoft-defender-antivirus.md)|Szybkie skanowanie|
+|Chcesz upewnić się, że urządzenie przenośne, takie jak dysk USB, nie zawiera złośliwego oprogramowania|Skanowanie niestandardowe <p> Skanowanie niestandardowe umożliwia wybranie określonych lokalizacji, folderów lub plików oraz szybkie skanowanie.|
 
-## <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>Co jeszcze należy wiedzieć o szybkich i pełnych skanach?
+## <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>Co jeszcze muszę wiedzieć o szybkich i pełnych skanowaniach?
 
-- Złośliwe pliki mogą być przechowywane w lokalizacjach, które nie są uwzględnione w szybkim skanie. Jednak zawsze w on-time protection reviews all files that are opened and closed, and any files that are in folders that are accessed by a user. Połączenie ochrony w czasie rzeczywistym i szybkiego skanowania pomaga zapewnić silną ochronę przed złośliwym oprogramowaniem.
+- Złośliwe pliki mogą być przechowywane w lokalizacjach, które nie są uwzględnione w szybkim skanowaniu. Jednak zawsze włączona ochrona w czasie rzeczywistym przegląda wszystkie pliki, które są otwierane i zamykane, oraz wszystkie pliki znajdujące się w folderach, do których uzyskuje dostęp użytkownik. Kombinacja ochrony w czasie rzeczywistym i szybkiego skanowania pomaga zapewnić silną ochronę przed złośliwym oprogramowaniem.
 
-- Ochrona dostępu przy użyciu ochrony [](cloud-protection-microsoft-defender-antivirus.md) w chmurze pomaga zapewnić, że wszystkie pliki dostępne w systemie są skanowane za pomocą najnowszych analiz zabezpieczeń i modeli maszynowego uczenia w chmurze.
+- Ochrona przy dostępie przy użyciu [ochrony dostarczanej w chmurze](cloud-protection-microsoft-defender-antivirus.md) pomaga zapewnić, że wszystkie pliki dostępne w systemie są skanowane przy użyciu najnowszych modeli analizy zabezpieczeń i uczenia maszynowego w chmurze.
 
-- Gdy ochrona w czasie rzeczywistym wykrywa złośliwe oprogramowanie i zakres plików, których dotyczy problem, nie jest wstępnie określony, program Program antywirusowy Microsoft Defender inicjuje pełne skanowanie w ramach procesu rozwiązywania problemów.
+- Gdy ochrona w czasie rzeczywistym wykrywa złośliwe oprogramowanie, a zakres plików, których dotyczy problem, nie jest początkowo określany, Program antywirusowy Microsoft Defender inicjuje pełne skanowanie w ramach procesu korygowania.
 
-- Pełne skanowanie umożliwia wykrywanie złośliwych plików, które nie zostały wykryte w innych skanach, takich jak szybkie skanowanie. Jednak pełne skanowanie może trochę potrwać i warto skorzystać z cennych zasobów systemowych.
+- Pełne skanowanie może wykryć złośliwe pliki, które nie zostały wykryte przez inne skanowania, takie jak szybkie skanowanie. Jednak pełne skanowanie może trochę potrwać i wykorzystać cenne zasoby systemowe do ukończenia.
 
-- Jeśli urządzenie jest w trybie offline przez dłuższy czas, pełne skanowanie może trwać dłużej.
+- Jeśli urządzenie jest w trybie offline przez dłuższy czas, pełne skanowanie może potrwać dłużej.
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

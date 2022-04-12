@@ -14,18 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34bf757ee545d45f7faccdefaf1e8aa57e9cb961
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 73afd0751e34fbb020019e6f28056c9f2a935c07
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783452"
+ms.locfileid: "64788595"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizator wydajności dla Program antywirusowy Microsoft Defender
 
 **Dotyczy**
 - [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
+
+**Platformy**
+- System Windows
 
 **Co to jest Program antywirusowy Microsoft Defender analizator wydajności?**
 
@@ -486,3 +490,12 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

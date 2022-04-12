@@ -1,7 +1,7 @@
 ---
-title: Włączanie blokowania na pierwszy rzut oka w celu wykrycia złośliwego oprogramowania w kilka sekund
-description: Włącz funkcję blokowania na pierwszy rzut oka, aby wykrywać i blokować złośliwe oprogramowanie w ciągu kilku sekund.
-keywords: skanowanie, blokowanie na pierwszy rzut oka, złośliwe oprogramowanie, pierwszy rzut oka, chmura, defender, oprogramowanie antywirusowe
+title: Włączanie bloku od pierwszego wejrzenia w celu wykrywania złośliwego oprogramowania w ciągu kilku sekund
+description: Włącz funkcję bloku od pierwszego wejrzenia, aby wykryć i zablokować złośliwe oprogramowanie w ciągu kilku sekund.
+keywords: skanowanie, blokowanie od pierwszego wejrzenia, złośliwe oprogramowanie, pierwszy rzut oka, chmura, obrońca, oprogramowanie antywirusowe
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,211 +15,224 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 48a411d836669a47479daa68a83a96c3e65b949f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 071bd6fe59a7200e1d16cf94633b0d7b3cb688c5
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473238"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788111"
 ---
-# <a name="turn-on-block-at-first-sight"></a>Włączanie bloku na pierwszy rzut oka
+# <a name="turn-on-block-at-first-sight"></a>Włącz blokowanie od pierwszego wejrzenia
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender 
 
-W tym artykule opisano funkcję antywirusową/ochrony przed złośliwym oprogramowaniem, określaną na pierwszy rzut oka jako "blokuj na pierwszy rzut oka" i jak włączać blokowanie na pierwszy rzut oka dla organizacji.
+**Platformy**
+- System Windows
+
+W tym artykule opisano funkcję ochrony antywirusowej/ochrony przed złośliwym kodem znaną jako "blokuj od pierwszego wejrzenia" i opisano sposób włączania bloku od pierwszego wejrzenia dla organizacji.
 
 > [!TIP]
-> Ten artykuł jest przeznaczony dla administratorów przedsiębiorstwa i informatyków, którzy zarządzają ustawieniami zabezpieczeń w organizacji. Jeśli nie jesteś zacenany administratorem ani administratorem IT Pro ale na pierwszy rzut oka masz pytania dotyczące blokowania, zobacz sekcję Nie jesteś administratorem przedsiębiorstwa ani administratorem [Pro?](#not-an-enterprise-admin-or-it-pro)
+> Ten artykuł jest przeznaczony dla administratorów przedsiębiorstwa i specjalistów IT, którzy zarządzają ustawieniami zabezpieczeń dla organizacji. Jeśli nie jesteś administratorem enteprise lub Pro IT, ale masz pytania dotyczące bloku od pierwszego wejrzenia, zobacz [sekcję Nie administrator przedsiębiorstwa lub Pro IT?](#not-an-enterprise-admin-or-it-pro)
 
-## <a name="what-is-block-at-first-sight"></a>Co to jest "blok na pierwszy rzut oka"?
+## <a name="what-is-block-at-first-sight"></a>Co to jest "blok od pierwszego wejrzenia"?
 
-Blokowanie na pierwszy rzut oka to funkcja ochrony przed zagrożeniami, która wykrywa nowe złośliwe oprogramowanie i blokuje je w ciągu kilku sekund. Blokowanie na pierwszy rzut oka jest włączone, gdy są włączone pewne ustawienia zabezpieczeń. Są to między innymi następujące ustawienia:
+Blokuj od pierwszego wejrzenia to funkcja ochrony przed zagrożeniami w ramach ochrony nowej generacji, która wykrywa nowe złośliwe oprogramowanie i blokuje go w ciągu kilku sekund. Pozycja Blokuj od pierwszego wejrzenia jest włączona po włączeniu określonych ustawień zabezpieczeń. Te ustawienia obejmują:
 
-- Ochrona w chmurze;
-- Określony limit czasu przesłania przykładowego (na przykład 50 sekund); i
+- Ochrona dostarczana przez chmurę;
+- Określony limit czasu przesyłania przykładowego (na przykład 50 sekund); I
 - Wysoki poziom blokowania plików.
 
-W większości przedsiębiorstw ustawienia potrzebne do włączenia blokowania na pierwszy rzut oka są skonfigurowane Program antywirusowy Microsoft Defender wdrażania.
+W większości organizacji korporacyjnych ustawienia wymagane do włączenia bloku od pierwszego wejrzenia są konfigurowane przy użyciu wdrożeń Program antywirusowy Microsoft Defender.
 
 ## <a name="how-it-works"></a>Jak to działa
 
-Jeśli Program antywirusowy Microsoft Defender napotka podejrzany, ale niezauważony plik, wysyła zapytanie do naszej bazy danych ochrony w chmurze. W zapleczam chmury stosowane są heuristics, uczenie maszynowe i automatyczna analiza pliku w celu ustalenia, czy pliki są złośliwe, czy nie stanowią zagrożenia.
+Gdy Program antywirusowy Microsoft Defender napotka podejrzany, ale niewykryty plik, wysyła zapytanie do naszego zaplecza ochrony w chmurze. Zaplecze chmury stosuje heurystykę, uczenie maszynowe i zautomatyzowaną analizę pliku, aby określić, czy pliki są złośliwe, czy nie.
 
-Program antywirusowy Microsoft Defender technologii wykrywania i zapobiegania wielu problemom w celu zapewnienia dokładnej, inteligentnej i ochrony w czasie rzeczywistym.
+Program antywirusowy Microsoft Defender używa wielu technologii wykrywania i zapobiegania, aby zapewnić dokładną, inteligentną i w czasie rzeczywistym ochronę.
 
-:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Lista aparatów audio/wideo programu Microsoft Defender" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Lista aparatów av usługi Microsoft Defender" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
-> Aby dowiedzieć się więcej, zobacz [(Blog) Poznaj zaawansowane technologie](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/) i zapoznaj się z podstawowymi Ochrona punktu końcowego w usłudze Microsoft Defender ochrony nowej generacji.
+> Aby dowiedzieć się więcej, zobacz [(Blog) Zapoznanie się z zaawansowanymi technologiami, które są podstawą Ochrona punktu końcowego w usłudze Microsoft Defender ochrony nowej generacji](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
-## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Kilka rzeczy, o których należy wiedzieć, na pierwszy rzut oka na blok
+## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Kilka rzeczy, które należy wiedzieć o bloku od pierwszego wejrzenia
 
-- W Windows 10 1803 lub nowszym blokuj na pierwszy rzut oka mogą blokować nie przenośne pliki wykonywalne (takie jak JS, VBS lub makra) i pliki wykonywalne.
+- W Windows 10, wersji 1803 lub nowszej, blok od pierwszego wejrzenia może blokować nie przenośne pliki wykonywalne (takie jak JS, VBS lub makra) i pliki wykonywalne.
 
-- Blokowanie na pierwszy rzut oka używa zaplecza ochrony chmury tylko dla plików wykonywalnych i niewynoszlnych plików wykonywalnych, które są pobierane z Internetu lub pochodzą ze strefy internetowej. Wartość skrótu pliku .exe jest sprawdzana za pośrednictwem zaplecza chmury w celu określenia, czy plik jest wcześniej niezauważony.
+- Pozycja Blokuj od pierwszego wejrzenia używa zaplecza ochrony chmury tylko dla plików wykonywalnych i nie przenośnych plików wykonywalnych pobieranych z Internetu lub pochodzących ze strefy internetowej. Wartość skrótu pliku .exe jest sprawdzana za pośrednictwem zaplecza chmury w celu ustalenia, czy plik jest wcześniej niewykrytym plikiem.
 
-- Jeśli kopia zapasowa chmury nie może dokonać wyznaczania, Program antywirusowy Microsoft Defender blokuje plik i przesyła kopię do chmury. Chmura przeprowadza większą analizę w celu określenia, czy pozwala na uruchamianie pliku, czy blokowanie go we wszystkich przyszłych wystąpieniach, w zależności od tego, czy plik jest złośliwy, czy nie.
+- Jeśli zaplecze chmury nie może dokonać ustalenia, Program antywirusowy Microsoft Defender blokuje plik i przekazuje kopię do chmury. Chmura wykonuje więcej analiz w celu ustalenia, zanim umożliwi uruchomienie pliku lub zablokowanie go we wszystkich przyszłych spotkaniach, w zależności od tego, czy określa on plik jako złośliwy, czy nie.
 
-- W wielu przypadkach ten proces może skrócić czas reakcji nowego złośliwego oprogramowania z kilku godzin na sekundy.
+- W wielu przypadkach ten proces może skrócić czas odpowiedzi na nowe złośliwe oprogramowanie z godzin do sekund.
 
-- Możesz określić [, jak](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) długo plik nie będzie mógł działać, gdy usługa ochrony w chmurze będzie analizować plik. Możesz też dostosować [komunikat wyświetlany na komputerach](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) użytkowników, gdy plik zostanie zablokowany. Możesz zmienić nazwę firmy, informacje kontaktowe i adres URL wiadomości.
+- Możesz [określić, jak długo plik powinien nie być uruchomiony](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) , podczas gdy usługa ochrony oparta na chmurze analizuje plik. Możesz również [dostosować komunikat wyświetlany na pulpitach użytkowników](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) , gdy plik jest zablokowany. Możesz zmienić nazwę firmy, informacje kontaktowe i adres URL wiadomości.
 
-## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Włączanie bloku na pierwszy rzut oka za pomocą Microsoft Intune
+## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Włącz blok od pierwszego wejrzenia za pomocą Microsoft Intune
 
 > [!TIP]
 > Microsoft Intune jest teraz częścią Microsoft Endpoint Manager.
 
-1. W centrum Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) przejdź do **pozycji Profile konfiguracji** \> **urządzeń**.
+1. W centrum administracyjnym Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) przejdź do **pozycji Profile konfiguracji** **urządzeń**\>.
 
-2. Wybierz lub utwórz profil, używając **typu profilu Ograniczenia** urządzeń.
+2. Wybierz lub utwórz profil przy użyciu typu profilu **Ograniczenia urządzenia** .
 
-3. W **ustawieniach konfiguracji** profilu Ograniczenia urządzeń ustaw lub potwierdź następujące ustawienia w **obszarze Program antywirusowy Microsoft Defender**:
+3. W **ustawieniach konfiguracji** profilu Ograniczenia urządzenia ustaw lub potwierdź następujące ustawienia w **obszarze Program antywirusowy Microsoft Defender**:
 
-   - **Ochrona w chmurze**: włączona
-   - **Poziom blokowania plików**: Wysoki
-   - **Rozszerzenie czasu na skanowanie plików w chmurze**: 50
-   - **Monituj użytkowników przed przykładowym przesłaniem**: Wyślij wszystkie dane bez monitowania
+   - **Ochrona dostarczana przez chmurę**: włączona
+   - **Poziom blokowania plików**: wysoki
+   - **Rozszerzenie czasu skanowania plików przez chmurę**: 50
+   - **Monituj użytkowników przed przesłaniem przykładu**: Wyślij wszystkie dane bez monitowania
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune bloku konfiguracji na pierwszy rzut oka" lightbox="../../media/intune-block-at-first-sight.png":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune blok konfiguracji od pierwszego wejrzenia" lightbox="../../media/intune-block-at-first-sight.png":::
 
 4. Zapisz ustawienia.
 
 > [!TIP]
 >
-> - Ustawienie poziomu blokowania pliku na **Wysoki** powoduje zastosowanie silnego poziomu wykrywania. W przypadku mało prawdopodobnego zdarzenia, w przypadku blokowania plików powodujących wykrywanie fałszywych wyników dodatnich legalnych plików, zespół operacji zabezpieczeń może przywrócić pliki poddane [kwarantannie](./restore-quarantined-files-microsoft-defender-antivirus.md).
-> - Aby uzyskać więcej informacji na temat konfigurowania Program antywirusowy Microsoft Defender urządzeń w aplikacji Intune, zobacz Konfigurowanie ustawień ograniczeń [urządzeń w programie Microsoft Intune](/intune/device-restrictions-configure).
-> - Aby uzyskać listę ograniczeń Program antywirusowy Microsoft Defender urządzeniach w programie Intune, zobacz Ograniczenia dotyczące urządzeń Windows 10 (i nowsze[) ustawień](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) w Intune.
+> - Ustawienie wysokiego poziomu blokowania plików **powoduje zastosowanie** silnego poziomu wykrywania. W mało prawdopodobnym przypadku, gdy blokowanie plików powoduje fałszywie dodatnie wykrywanie legalnych plików, zespół ds. operacji zabezpieczeń może [przywrócić pliki poddane kwarantannie](./restore-quarantined-files-microsoft-defender-antivirus.md).
+> - Aby uzyskać więcej informacji na temat konfigurowania ograniczeń urządzeń Program antywirusowy Microsoft Defender w Intune, zobacz [Konfigurowanie ustawień ograniczeń urządzenia w Microsoft Intune](/intune/device-restrictions-configure).
+> - Aby uzyskać listę ograniczeń urządzeń Program antywirusowy Microsoft Defender w Intune, zobacz [Ograniczenia dotyczące urządzeń dla ustawień Windows 10 (i nowszych) w Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Włączanie bloku na pierwszy rzut oka za pomocą Microsoft Endpoint Manager
+## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Włącz blok od pierwszego wejrzenia za pomocą Microsoft Endpoint Manager
 
 > [!TIP]
-> Jeśli szukasz nowych Microsoft Endpoint Configuration Manager, jest teraz częścią Microsoft Endpoint Manager.
+> Jeśli szukasz Microsoft Endpoint Configuration Manager, jest to teraz część Microsoft Endpoint Manager.
 
-1. W Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) przejdź do ustawienia **Zabezpieczenia punktu końcowego oprogramowania antywirusowego**\>.
+1. W Microsoft Endpoint Manager (<https://endpoint.microsoft.com>) przejdź do pozycji **Program antywirusowy** **zabezpieczeń** \> punktu końcowego.
 
-2. Wybierz istniejące zasady lub utwórz nowe zasady przy **użyciu Program antywirusowy Microsoft Defender** profilu.
+2. Wybierz istniejące zasady lub utwórz nowe zasady przy użyciu typu **profilu Program antywirusowy Microsoft Defender**.
 
 3. Ustaw lub potwierdź następujące ustawienia konfiguracji:
 
-   - **Włączanie ochrony w chmurze**: Tak
-   - **Poziom ochrony w chmurze**: Wysoki
-   - **Program antywirusowy Microsoft Defender limit czasu w sekundach**: 50
+   - **Włącz ochronę dostarczaną przez chmurę**: Tak
+   - **Poziom ochrony dostarczanej w chmurze**: wysoki
+   - **Program antywirusowy Microsoft Defender rozszerzony limit czasu w sekundach**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Blokuj ustawienia na pierwszy rzut oka w Microsoft Endpoint Manager widoku" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Blokuj ustawienia od pierwszego wejrzenia w portalu Microsoft Endpoint Manager" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
 
-4. Zastosuj profil Program antywirusowy Microsoft Defender do grupy, takiej jak Wszyscy **użytkownicy, Wszystkie** urządzenia lub **Wszyscy użytkownicy i urządzenia**. 
+4. Zastosuj profil Program antywirusowy Microsoft Defender do grupy, takiej jak **Wszyscy użytkownicy**, **Wszystkie urządzenia** lub **Wszyscy użytkownicy i urządzenia**.
 
-## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Włączanie bloku na pierwszy rzut oka za pomocą zasady grupy
+## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Włącz blok od pierwszego wejrzenia za pomocą zasady grupy
 
 > [!NOTE]
-> Zalecamy korzystanie z Intune lub Microsoft Endpoint Manager, aby od pierwszego rzutu oka włączyć blok.
+> Zalecamy używanie Intune lub Microsoft Endpoint Manager do włączania bloku od pierwszego wejrzenia.
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
+1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i wybierz pozycję **Edytuj**.
 
-2. Za pomocą **edytora zasady grupy zarządzania przejdź** do **strony Konfiguracja** \> komputera **Szablony** \> administracyjne Windows **Składniki** \> **Program antywirusowy Microsoft Defender** \> **MAPY**.
+2. Za pomocą **edytora zarządzania zasady grupy** przejdź do pozycji **Konfiguracja** \> komputera **Szablony** \> administracyjne **Windows Składniki** \> **Program antywirusowy Microsoft Defender** \> **MAPS**.
 
-3. W sekcji MAPY kliknij dwukrotnie pozycję Konfiguruj funkcję **"** Blokuj na pierwszy rzut oka", ustaw dla tej funkcji wartość **Włączone, a** następnie wybierz przycisk **OK**.
+3. W sekcji MAPS kliknij dwukrotnie pozycję **Skonfiguruj funkcję "Blokuj od pierwszego wejrzenia",** ustaw ją na **wartość Włączone**, a następnie wybierz przycisk **OK**.
 
     > [!IMPORTANT]
-    > Ustawienie zawsze **wyświetlaj monit (0)** spowoduje obniżenie stanu ochrony urządzenia. Ustawienie Nigdy **nie wysyłaj (2)** oznacza, że blok na pierwszy rzut oka nie będzie działał.
+    > Ustawienie opcji **Zawsze monituj (0)** spowoduje obniżenie stanu ochrony urządzenia. Ustawienie wartości **Nigdy nie wysyłaj (2)** oznacza, że blok od pierwszego wejrzenia nie będzie działać.
 
-4. W sekcji MAPY kliknij dwukrotnie pozycję **Wyślij próbki plików, gdy jest** wymagana dalsza analiza, i ustaw dla niego wartość **Włączone**. W **obszarze Wyślij próbki plików podczas dalszej analizy** wybierz pozycję **Wyślij wszystkie próbki**, a następnie wybierz przycisk **OK**.
+4. W sekcji MAPS kliknij dwukrotnie pozycję **Wyślij przykłady plików, gdy wymagana jest dalsza analiza**, i ustaw ją na **wartość Włączone**. W obszarze **Wyślij przykłady plików, gdy wymagana jest dalsza analiza**, wybierz pozycję **Wyślij wszystkie przykłady**, a następnie wybierz przycisk **OK**.
 
-5. W przypadku ponownego zasady grupy obiektowego w sieci w ten sposób, jak to zwykle robisz.
+5. Ponownie wdróż obiekt zasady grupy w sieci, tak jak zwykle.
 
-## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>Potwierdzanie, że blokowanie na pierwszy rzut oka jest włączone na poszczególnych urządzeniach klienckich
+## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>Potwierdzanie włączenia bloku od pierwszego wejrzenia na poszczególnych urządzeniach klienckich
 
-Możesz potwierdzić, że blokowanie na pierwszy rzut oka jest włączone na poszczególnych urządzeniach klienckich przy użyciu Zabezpieczenia Windows aplikacji. Blokowanie na pierwszy rzut oka jest automatycznie włączone, o  ile jest włączona ochrona  w chmurze i Automatyczne przesyłanie próbek.
+Możesz potwierdzić, że blok od pierwszego wejrzenia jest włączony na poszczególnych urządzeniach klienckich przy użyciu aplikacji Zabezpieczenia Windows. Opcja Blokuj od pierwszego wejrzenia jest włączana automatycznie, o ile **włączono ochronę dostarczaną przez chmurę** i **automatyczne przesyłanie przykładów** .
 
-1. Otwórz Zabezpieczenia Windows aplikacji.
+1. Otwórz aplikację Zabezpieczenia Windows.
 
-2. Wybierz **pozycję ochrona & przed** zagrożeniami, a następnie w obszarze **Ustawienia ochrony przed &** wirusami wybierz pozycję **Zarządzaj** Ustawienia.
+2. Wybierz pozycję **Ochrona przed zagrożeniami & wirusami**, a następnie w obszarze **Ustawienia ochrony przed zagrożeniami & wirusów** wybierz pozycję **Zarządzaj Ustawienia**.
 
-   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Etykieta ustawień ochrony przed & wirusami w Zabezpieczenia Windows aplikacji" lightbox="../../media/wdav-protection-settings-wdsc.png":::
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Etykieta ustawień ochrony przed zagrożeniami & wirusów w aplikacji Zabezpieczenia Windows" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
-3. Upewnij się **, że są włączone zabezpieczenia w** **chmurze i** Automatyczne przesyłanie próbek.
+3. Upewnij się, że **ochrona dostarczana w chmurze** i **automatyczne przesyłanie przykładów** są włączone.
 
 > [!NOTE]
 >
-> - Jeśli wstępnie wymagane ustawienia zostały skonfigurowane i wdrożone przy użyciu programu zasady grupy, ustawienia opisane w tej sekcji będą wyszzarowane i niedostępne do użycia w poszczególnych punktach końcowych.
-> - Zmiany wprowadzone za pośrednictwem obiektu zasady grupy muszą najpierw zostać wdrożone w poszczególnych punktach końcowych, aby ustawienie było aktualizowane w Windows Ustawienia.
+> - Jeśli ustawienia wymagań wstępnych zostaną skonfigurowane i wdrożone przy użyciu zasady grupy, ustawienia opisane w tej sekcji będą wyszarzone i niedostępne do użycia w poszczególnych punktach końcowych.
+> - Zmiany wprowadzone za pośrednictwem obiektu zasady grupy należy najpierw wdrożyć w poszczególnych punktach końcowych, zanim ustawienie zostanie zaktualizowane w Windows Ustawienia.
 
-## <a name="validate-block-at-first-sight-is-working"></a>Sprawdzanie działania bloku na pierwszy rzut oka
+## <a name="validate-block-at-first-sight-is-working"></a>Sprawdzanie poprawności działania bloku od pierwszego wejrzenia
 
-Aby sprawdzić, czy funkcja działa, pobierz przykładowy plik Blokuj [na pierwszy rzut oka](https://demo.wd.microsoft.com/Page/BAFS). Do pobrania pliku potrzebne jest konto w usłudze Azure AD z przypisaną rolą Administratora zabezpieczeń lub Administratora globalnego.
+Aby sprawdzić, czy funkcja działa, pobierz [przykładowy plik Blokuj od pierwszego wejrzenia](https://demo.wd.microsoft.com/Page/BAFS). Do pobrania pliku potrzebne jest konto w usłudze Azure AD z przypisaną rolą administratora zabezpieczeń lub administratora globalnego.
 
-Aby sprawdzić, czy ochrona w chmurze działa, postępuj zgodnie z wskazówkami w tece Weryfikowanie połączeń między siecią [a chmurą](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
+Aby sprawdzić, czy ochrona z obsługą chmury działa, postępuj zgodnie ze [wskazówkami w temacie Weryfikowanie połączeń między siecią a chmurą](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
 > [!NOTE]
-> Witryna pokazowa usługi Defender for Endpoint w demo.wd.microsoft.com jest przestarzała i zostanie usunięta w przyszłości.
+> Witryna demonstracyjna usługi Defender for Endpoint w demo.wd.microsoft.com jest przestarzała i zostanie usunięta w przyszłości.
 
-## <a name="turn-off-block-at-first-sight"></a>Wyłączanie bloku na pierwszy rzut oka
+## <a name="turn-off-block-at-first-sight"></a>Wyłącz blok od pierwszego wejrzenia
 
 > [!CAUTION]
-> Wyłączenie bloku na pierwszy rzut oka spowoduje obniżenie stanu ochrony twoich urządzeń i sieci.
+> Wyłączenie bloku od pierwszego wejrzenia spowoduje obniżenie stanu ochrony urządzeń i sieci.
 
-Blokadę można wyłączyć na pierwszy rzut oka, jeśli ustawienia wymagań wstępnych mają być zachowywane bez używania ochrony bloku na pierwszy rzut oka. Możesz tymczasowo wyłączyć blokowanie na pierwszy rzut oka, aby zobaczyć, jak ta funkcja wpłynie na Twoją sieć. Nie zalecamy jednak trwałego wyłączania ochrony przed zablokowaniem na pierwszy rzut oka.
+Możesz wyłączyć blok od pierwszego wejrzenia, jeśli chcesz zachować ustawienia wymagań wstępnych bez używania ochrony przed blokowaniem od pierwszego wejrzenia. Możesz tymczasowo wyłączyć blokadę od pierwszego wejrzenia, aby zobaczyć, jak ta funkcja wpływa na sieć. Nie zalecamy jednak trwałego wyłączania ochrony bloku od pierwszego wejrzenia.
 
-### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Wyłączanie bloku na pierwszy rzut oka za pomocą Microsoft Endpoint Manager
+### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Wyłącz blok od pierwszego wejrzenia za pomocą Microsoft Endpoint Manager
 
-1. Przejdź do Microsoft Endpoint Manager administracyjnego (<https://endpoint.microsoft.com>) i zaloguj się.
+1. Przejdź do Microsoft Endpoint Manager centrum administracyjnego (<https://endpoint.microsoft.com>) i zaloguj się.
 
-2. Przejdź do punktu **końcowego oprogramowania** \> **antywirusowego**, a następnie wybierz odpowiednie Program antywirusowy Microsoft Defender zabezpieczeń.
+2. Przejdź do pozycji **Program antywirusowy** zabezpieczeń \> **punktu końcowego**, a następnie wybierz zasady Program antywirusowy Microsoft Defender.
 
-3. W **obszarze Zarządzanie** wybierz pozycję **Właściwości**.
+3. W obszarze **Zarządzanie** wybierz pozycję **Właściwości**.
 
-4. Obok opcji **Ustawienia konfiguracji** wybierz pozycję **Edytuj**.
+4. Obok pozycji **Ustawienia konfiguracji** wybierz pozycję **Edytuj**.
 
 5. Zmień co najmniej jedno z następujących ustawień:
 
-   - Ustaw **dla ustawienia Włącz ochronę w chmurze** wartość **Nie** **lub Nie skonfigurowano**.
-   - Ustaw **poziom ochrony w chmurze** na **Wartość Nieskonfigurowane**.
-   - Wyczyść pole wyboru obok **Program antywirusowy Microsoft Defender limit czasu (w sekundach**).
+   - Ustaw **opcję Włącz ochronę dostarczaną w chmurze na** **wartość Nie** lub **Nie skonfigurowano**.
+   - Ustaw **poziom ochrony dostarczanej w chmurze** na **nieskonfigurowane**.
+   - Wyczyść pole wyboru **Program antywirusowy Microsoft Defender limit czasu rozszerzonego w sekundach**.
 
 6. Przejrzyj i zapisz ustawienia.
 
-### <a name="turn-off-block-at-first-sight-with-group-policy"></a>Wyłączanie bloku na pierwszy rzut oka za pomocą zasady grupy
+### <a name="turn-off-block-at-first-sight-with-group-policy"></a>Wyłącz blok od pierwszego wejrzenia za pomocą zasady grupy
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę [zasady grupy zarządzania danymi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
+1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-2. Za pomocą **edytora zasady grupy zarządzania przejdź** do **strony Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
+2. Za pomocą **edytora zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera** i wybierz pozycję **Szablony administracyjne**.
 
-3. Rozwiń drzewo przez Windows **składniki Program antywirusowy Microsoft Defender** \>  \> **MAPY**.
+3. Rozwiń drzewo za pomocą **składników** \> Windows **Program antywirusowy Microsoft Defender** \> **MAPS**.
 
-4. Kliknij dwukrotnie **pozycję Konfiguruj funkcję "Blokuj od pierwszego oka"** i ustaw dla opcji wartość **Wyłączone**.
+4. Kliknij **dwukrotnie pozycję Skonfiguruj funkcję "Blokuj od pierwszego wejrzenia"** i ustaw opcję **Wyłączone**.
 
     > [!NOTE]
-    > Wyłączenie blokowania na pierwszy rzut oka nie powoduje wyłączenia ani zmiany wymagań wstępnych zasad grupy.
+    > Wyłączenie bloku od pierwszego wejrzenia nie powoduje wyłączenia ani zmiany zasad grupy wymagań wstępnych.
 
-## <a name="not-an-enterprise-admin-or-it-pro"></a>Nie jest administratorem przedsiębiorstwa ani administratorem Pro?
+## <a name="not-an-enterprise-admin-or-it-pro"></a>Nie jesteś administratorem przedsiębiorstwa ani Pro IT?
 
-Jeśli nie jesteś administratorem przedsiębiorstwa ani administratorem it Pro ale na pierwszy rzut oka masz pytania dotyczące blokowania, ta sekcja jest dla Ciebie. Blokowanie na pierwszy rzut oka to funkcja ochrony przed zagrożeniami, która wykrywa i blokuje złośliwe oprogramowanie w ciągu kilku sekund. Chociaż nie ma określonego ustawienia o nazwie "Blokuj na pierwszy rzut oka", ta funkcja jest włączana, gdy na Twoim urządzeniu skonfigurowano pewne ustawienia.
+Jeśli nie jesteś administratorem przedsiębiorstwa ani Pro IT, ale masz pytania dotyczące bloku od pierwszego wejrzenia, ta sekcja jest dla Ciebie. Blokuj od pierwszego wejrzenia to funkcja ochrony przed zagrożeniami, która wykrywa i blokuje złośliwe oprogramowanie w ciągu kilku sekund. Chociaż nie ma określonego ustawienia o nazwie "Blokuj od pierwszego wejrzenia", funkcja jest włączona, gdy niektóre ustawienia są skonfigurowane na urządzeniu.
 
-### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>Jak zarządzać blokowaniem na pierwszym rzut oka na własnym urządzeniu
+### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>Jak zarządzać blokiem od pierwszego wejrzenia na lub wył. na własnym urządzeniu
 
-Jeśli masz urządzenie osobiste, którym nie zarządza organizacja, być może zastanawiasz się, jak od początku włączyć lub wyłączyć blokowanie. Za pomocą aplikacji Zabezpieczenia Windows możesz zarządzać blokami od pierwszego rzutu oka.
+Jeśli masz urządzenie osobiste, które nie jest zarządzane przez organizację, możesz się zastanawiać, jak włączyć lub wyłączyć blokadę od pierwszego wejrzenia. Możesz użyć aplikacji Zabezpieczenia Windows do zarządzania blokiem od pierwszego wejrzenia.
 
-1. Na komputerze Windows 10 lub Windows 11 otwórz aplikację Zabezpieczenia Windows komputera.
+1. Na komputerze Windows 10 lub Windows 11 otwórz aplikację Zabezpieczenia Windows.
 
-2. Wybierz **pozycję Ochrona & przed zagrożeniami**.
+2. Wybierz pozycję **Ochrona przed wirusami i zagrożeniami**.
 
-3. W **obszarze & ochrony przed zagrożeniami** wybierz pozycję **Zarządzaj ustawieniami**.
+3. W obszarze **Ustawienia ochrony przed wirusami i zagrożeniami** wybierz opcję **Zarządzaj ustawieniami**.
 
-4. Należy wykonać jedną z następujących czynności:
+4. Wykonaj jedną z następujących czynności:
 
-   - Aby od początku włączyć blokowanie, upewnij się, że  są włączone zarówno ochrona w  chmurze, jak i Automatyczne przesyłanie próbek.
+   - Aby włączyć blok od pierwszego wejrzenia, upewnij się, że zarówno **ochrona dostarczana w chmurze** , jak i **automatyczne przesyłanie przykładów** są włączone.
 
-   - Aby wyłączyć blokowanie na pierwszy rzut oka, wyłącz opcję **Ochrona w** chmurze lub **Automatyczne przesyłanie próbek**.
+   - Aby wyłączyć blok od pierwszego wejrzenia, wyłącz **ochronę dostarczaną w chmurze** lub **automatyczne przesyłanie przykładów**.
 
      > [!CAUTION]
-     > Wyłączenie bloku na pierwszy rzut oka obniża poziom ochrony urządzenia. Nie zalecamy trwałego wyłączania blokowania na pierwszy rzut oka.
+     > Wyłączenie bloku od pierwszego wejrzenia obniża poziom ochrony urządzenia. Nie zalecamy trwałego wyłączania bloku od pierwszego wejrzenia.
 
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Program antywirusowy Microsoft Defender w programie Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Włączanie ochrony w chmurze](enable-cloud-protection-microsoft-defender-antivirus.md)
-- [Zachowaj ochronę za pomocą Zabezpieczenia Windows](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
+- [Program antywirusowy Microsoft Defender w Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Włączanie ochrony dostarczanej w chmurze](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [Ochrona przy użyciu Zabezpieczenia Windows](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)

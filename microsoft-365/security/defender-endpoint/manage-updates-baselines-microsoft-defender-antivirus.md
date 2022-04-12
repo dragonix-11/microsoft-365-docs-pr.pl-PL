@@ -15,22 +15,25 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 346f806129afc30ec5543c99bce3709af60cee73
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64730645"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788485"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych
 
 **Dotyczy:**
 - [plany Ochrona punktu końcowego w usłudze Microsoft Defender 1 i 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Program antywirusowy Microsoft Defender
+
+**Platformy**
+- System Windows
 
 Aktualizowanie Program antywirusowy Microsoft Defender ma kluczowe znaczenie dla zapewnienia, że urządzenia mają najnowszą technologię i funkcje potrzebne do ochrony przed nowym złośliwym oprogramowaniem i technikami ataku. Pamiętaj, aby zaktualizować ochronę antywirusową, nawet jeśli Program antywirusowy Microsoft Defender działa w [trybie pasywnym](microsoft-defender-antivirus-compatibility.md). Istnieją dwa typy aktualizacji związane z aktualizowaniem Program antywirusowy Microsoft Defender:
 
@@ -88,7 +91,7 @@ Wszystkie nasze aktualizacje zawierają
 <summary>Marzec-2022 (Platforma: 4.18.2203.5 | Silnik: 1.1.19100.5)</summary>
 
 &ensp;Wersja aktualizacji analizy zabezpieczeń: **1.361.1449.0**<br/>
-&ensp;Data wydania: **7 marca 2022 r**.<br/>
+&ensp;Data wydania: **7 kwietnia 2022 r**.<br/>
 &ensp;Platforma: **4.18.2203.5**<br/>
 &ensp;Silnik: **1.1.19100.5**<br/>
 &ensp;Faza pomocy technicznej: **Aktualizacje zabezpieczeń i krytyczne**<br/>
@@ -987,3 +990,13 @@ Aby uzyskać więcej informacji, zobacz [Microsoft Defender update for Windows o
 |[Zarządzaj wymuszonymi aktualizacjami opartymi na zdarzeniach](manage-event-based-updates-microsoft-defender-antivirus.md) | Aktualizacje ochrony można ustawić do pobrania podczas uruchamiania lub po niektórych zdarzeniach ochrony dostarczanych przez chmurę. |
 |[Zarządzaj aktualizacjami dla urządzeń przenośnych i maszyn wirtualnych ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Można określić ustawienia, takie jak to, czy aktualizacje powinny być wykonywane w przypadku zasilania baterii, które są szczególnie przydatne w przypadku urządzeń przenośnych i maszyn wirtualnych. |
 | [aktualizacja Ochrona punktu końcowego w usłudze Microsoft Defender czujnika EDR](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Możesz zaktualizować czujnik EDR (MsSense.exe), który jest dołączony do nowego pakietu ujednoliconego rozwiązania Ochrona punktu końcowego w usłudze Microsoft Defender wydanego w 2021 roku.   |
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

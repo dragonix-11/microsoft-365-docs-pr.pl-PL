@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ccf72b1f7e5625f3b3b9599a50d734a7316b8659
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: bcdf933de412a8141f0abc208f06cc55609f12c5
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780264"
+ms.locfileid: "64788947"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Chroń ustawienia zabezpieczeń z ochroną przed naruszeniami
 
@@ -34,6 +34,10 @@ ms.locfileid: "64780264"
 
 - [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
+
+**Platformy**
+- System Windows
 
 Ochrona przed naruszeniami jest dostępna dla urządzeń z uruchomioną jedną z następujących wersji Windows:
 
@@ -312,6 +316,16 @@ Twój zespół ds. operacji zabezpieczeń może również używać zapytań wysz
 `AlertInfo|where Title == "Tamper Protection bypass"`
 
 [Wyświetl informacje o próbach naruszenia](#view-information-about-tampering-attempts).
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 

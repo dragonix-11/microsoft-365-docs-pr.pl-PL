@@ -1,7 +1,7 @@
 ---
-title: Zarządzanie procesem stopniowego wdrażanie aktualizacji programu Microsoft Defender
-description: Informacje na temat procesu stopniowej aktualizacji i kontrolek
-keywords: aktualizowanie, proces aktualizacji, kontrolki, zwalnianie
+title: Zarządzanie procesem stopniowego wdrażania aktualizacji usługi Microsoft Defender
+description: Dowiedz się więcej o procesie i kontrolkach stopniowej aktualizacji
+keywords: aktualizacja, proces aktualizacji, kontrolki, wydanie
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,60 +18,64 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 177a7965d3e5a2d4ddd2e62bdde95fbc2762645b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d8a500babf581cd70b92a39b32a3be0bb5d4acd3
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329603"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789387"
 ---
-# <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Zarządzanie procesem stopniowego wdrażanie aktualizacji programu Microsoft Defender
+# <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Zarządzanie procesem stopniowego wdrażania aktualizacji usługi Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-Ważne jest, aby zapewnić, że składniki klienta są aktualne, aby zapewnić krytyczne funkcje ochrony i zapobiec atakom.
+**Platformy**
+- System Windows
 
-Możliwości są zapewniane przez kilka składników:
+Ważne jest, aby upewnić się, że składniki klienta są aktualne w celu zapewnienia krytycznych możliwości ochrony i zapobiegania atakom.
 
-- [Wykrywanie punktu końcowego & odpowiedzi](overview-endpoint-detection-response.md)
-- [Ochrona następnej generacji z](microsoft-defender-antivirus-windows.md) [ochroną dostarczaną w chmurze](cloud-protection-microsoft-defender-antivirus.md)
-- [Zmniejszenie powierzchni ataków](overview-attack-surface-reduction.md)
+Możliwości są udostępniane za pośrednictwem kilku składników:
 
-Aktualizacje są zwalniane co miesiąc w procesie stopniowego wydania. Ten proces ułatwia wykrywanie wczesnego błędu w celu uchwycenia wpływu jego wystąpienia i szybkiego rozwiązania tego problemu przed większymi awarii.
+- [Odpowiedź & wykrywania punktów końcowych](overview-endpoint-detection-response.md)
+- [Ochrona nowej generacji](microsoft-defender-antivirus-windows.md) z [ochroną dostarczaną przez chmurę](cloud-protection-microsoft-defender-antivirus.md)
+- [Zmniejszanie obszaru podatnego na ataki](overview-attack-surface-reduction.md)
+
+Aktualizacje są wydawane co miesiąc przy użyciu stopniowego procesu wydawania. Ten proces pomaga w umożliwieniu wczesnego wykrywania awarii wychwycenia wpływu w miarę jego występowania i szybkiego rozwiązania problemu przed większym wdrożeniem.
 
 > [!NOTE]
-> Aby uzyskać więcej informacji na temat kontrolowania aktualizacji codziennej analizy zabezpieczeń, zobacz Planowanie [Program antywirusowy Microsoft Defender aktualizacji ochrony](manage-protection-update-schedule-microsoft-defender-antivirus.md). Aktualizacje zapewniają, że ochrona następnej generacji może chronić się przed nowymi zagrożeniami, nawet jeśli ochrona dostarczana w chmurze nie jest dostępna dla punktu końcowego.
+> Aby uzyskać więcej informacji na temat kontrolowania codziennych aktualizacji analizy zabezpieczeń, zobacz [Planowanie aktualizacji Program antywirusowy Microsoft Defender ochrony](manage-protection-update-schedule-microsoft-defender-antivirus.md). Aktualizacje zapewniają, że ochrona nowej generacji może chronić przed nowymi zagrożeniami, nawet jeśli ochrona dostarczana przez chmurę nie jest dostępna dla punktu końcowego.
 
-## <a name="microsoft-gradual-rollout-model"></a>Model stopniowego wdrażanie firmy Microsoft
+## <a name="microsoft-gradual-rollout-model"></a>Model stopniowego wdrażania firmy Microsoft
 
-W przypadku comiesięcznych aktualizacji usługi Defender następuje następujący model stopniowego wdrażanie:
+W przypadku comiesięcznych aktualizacji usługi Defender jest przestrzegany następujący model stopniowego wdrażania:
 
-1. Pierwsza wersja trafia do subskrybentów kanału Beta.
-2. Po weryfikacji, opiniach i poprawkach rozpoczynamy proces stopniowego wdrażanie w sposób ograniczany, a najpierw zaczynamy od wersji Preview dla subskrybentów kanału.
-3. Następnie przechodzimy do wydania aktualizacji dla reszty populacji globalnej, skalując skalowanie z 10 do 100%.
+1. Pierwsza wersja trafi do subskrybentów kanału beta.
+2. Po walidacji, opinii i poprawkach rozpoczynamy proces stopniowego wdrażania w ograniczony sposób i najpierw do subskrybentów kanału w wersji zapoznawczej.
+3. Następnie przejdziemy do wydania aktualizacji dla pozostałej części populacji globalnej, skalując w poziomie od 10 do 100%.
 
-Nasi inżynierowie nieustannie monitorują wpływ i eskalują wszelkie problemy, aby utworzyć poprawkę zgodnie z potrzebami.
+Nasi inżynierowie stale monitorują wpływ i eskalują wszelkie problemy, aby w razie potrzeby utworzyć poprawkę.
 
 ## <a name="how-to-customize-your-internal-deployment-process"></a>Jak dostosować wewnętrzny proces wdrażania
 
-Jeśli Twoje komputery otrzymują aktualizacje usługi Defender z usługi Windows Update, proces stopniowego wdrażanie może spowodować, że niektóre komputery będą otrzymywać aktualizacje programu Defender wcześniej niż inne. W poniższej sekcji wyjaśniono, jak zdefiniować strategię, która umożliwi innym przepływ aktualizacji automatycznych do określonych grup urządzeń przez wykorzystanie konfiguracji kanału aktualizacji.
+Jeśli maszyny otrzymują aktualizacje usługi Defender z Windows Update, stopniowy proces wdrażania może spowodować, że niektóre maszyny będą otrzymywać aktualizacje usługi Defender wcześniej niż inne. W poniższej sekcji wyjaśniono, jak zdefiniować strategię, która umożliwi automatyczne aktualizacje przepływać inaczej do określonych grup urządzeń, korzystając z konfiguracji kanału aktualizacji.
 
 > [!NOTE]
-> Podczas planowania własnego, stopniowego wydania pamiętaj, aby zawsze mieć wybór urządzeń z subskrypcją wersji Preview i kanałów etapowych. Pozwoli to Twojej organizacji i firmie Microsoft na zapobieganie problemom specyficznym dla Twojego środowiska oraz rozwiązywanie tych problemów.
+> Podczas planowania własnej wersji stopniowej upewnij się, że zawsze masz wybór urządzeń subskrybowanych w wersji zapoznawczej i kanałach etapowych. Zapewni to organizacji, a także firmie Microsoft możliwość zapobiegania lub znajdowania i rozwiązywania problemów specyficznych dla danego środowiska.
 
-W przypadku komputerów otrzymujących aktualizacje za pośrednictwem na przykład programu Windows Server Update Services (WSUS) lub Microsoft Endpoint Configuration Manager (MECM) dostępnych jest więcej opcji dla wszystkich aktualizacji programu Windows, w tym opcje programu Microsoft Defender dla punktu końcowego.
+W przypadku maszyn odbierających aktualizacje za pośrednictwem, na przykład Windows Server Update Services (WSUS) lub Microsoft Endpoint Configuration Manager (MECM), dostępne są dodatkowe opcje dla wszystkich Windows aktualizacji, w tym opcje dla Ochrona punktu końcowego w usłudze Microsoft Defender.
 
-- Aby dowiedzieć się więcej o tym, jak używać rozwiązania, takiego jak WSUS i MECM, do zarządzania dystrybucją i stosowaniem aktualizacji, zobacz Zarządzanie aktualizacjami programu Program antywirusowy Microsoft Defender i stosowanie linii bazowych — [Windows zabezpieczeń](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- Dowiedz się więcej na temat używania rozwiązania, takiego jak WSUS, MECM, do zarządzania dystrybucją i stosowaniem aktualizacji w sekcji [Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych — Windows zabezpieczeń](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
-## <a name="update-channels-for-monthly-updates"></a>Aktualizowanie kanałów w celu comiesięcznych aktualizacji
+## <a name="update-channels-for-monthly-updates"></a>Aktualizowanie kanałów dla aktualizacji miesięcznych
 
-Możesz przypisać komputer do kanału aktualizacji, aby zdefiniować czas, w którym komputer otrzymuje comiesięczne aktualizacje aparatu i platformy.
+Maszynę można przypisać do kanału aktualizacji w celu zdefiniowania okresu, w którym maszyna otrzymuje miesięczne aktualizacje aparatu i platformy.
 
-Aby uzyskać więcej informacji na temat konfigurowania aktualizacji, zobacz Tworzenie niestandardowego procesu stopniowego [wdrażanie aktualizacji programu Microsoft Defender](configure-updates.md).
+Aby uzyskać więcej informacji na temat konfigurowania aktualizacji, zobacz [Tworzenie niestandardowego procesu stopniowego wdrażania aktualizacji usługi Microsoft Defender](configure-updates.md).
 
 Dostępne są następujące kanały aktualizacji:
 
@@ -81,17 +85,17 @@ Dostępne są następujące kanały aktualizacji:
 
 |Nazwa kanału|Opis|Aplikacja|
 |---|---|---|
-|Kanał Beta — wersja wstępna|Testowanie aktualizacji przed innymi|Urządzenia ustawione dla tego kanału będą pierwszymi użytkownikami, które będą otrzymywać nowe comiesięczne aktualizacje. Wybierz pozycję Kanał Beta, aby wziąć udział w identyfikowaniu problemów i zgłaszaniu problemów firmie Microsoft. Urządzenia w niejawnym Windows są domyślnie subskrybowane w tym kanale. Do używania tylko w środowiskach testowych.|
-|Bieżący kanał (wersja Preview)|Wcześniejsze uzyskiwanie aktualizacji bieżącego **kanału** w trakcie stopniowego wydania|Urządzenia ustawione dla tego kanału będą oferowane najwcześniej w trakcie stopniowego cyklu wydania. Sugerowane dla środowisk przedprodukennych/sprawdzania poprawności.|
-|Bieżący kanał (etapowy)|Późniejsze uzyskiwanie aktualizacji z bieżącego kanału w trakcie stopniowego wydania|Urządzenia będą oferowane w późniejszym czasie w ramach stopniowego cyklu wydania. Sugerowane zastosowanie do małej, reprezentatywnej części populacji urządzenia (~10%).|
-|Bieżący kanał (szeroki)|Uzyskiwanie aktualizacji na końcu stopniowego wydania|Urządzenia będą oferowane aktualizacje dopiero po zakończeniu stopniowego cyklu wydań. Sugerowane zastosowanie do szerokiego zestawu urządzeń w populacji produkcyjnej (~10–100%).|
-|Krytyczne: Opóźnienie czasu|Opóźnianie aktualizacji usługi Defender|Za urządzenia będą oferowane aktualizacje z 48-godzinnym opóźnieniem. Najlepsze w przypadku komputerów centrów danych, które otrzymują tylko ograniczone aktualizacje. Sugerowane tylko w środowiskach krytycznych.|
-|(domyślne)||Jeśli wyłączysz lub nie skonfigurujesz tych zasad, urządzenie pozostanie w bieżącym kanale (ustawienie domyślne): Bądź na bieżąco automatycznie w trakcie stopniowego cyklu wydania. Ta możliwość jest przeznaczona dla większości urządzeń.|
+|Kanał beta — wersja wstępna|Testowanie aktualizacji przed innymi|Urządzenia ustawione na ten kanał będą pierwszymi, które będą otrzymywać nowe miesięczne aktualizacje. Wybierz pozycję Beta Channel, aby wziąć udział w identyfikowaniu i zgłaszaniu problemów firmie Microsoft. Urządzenia w programie Windows Insider Program są domyślnie subskrybowane w tym kanale. Do użytku tylko w środowiskach testowych.|
+|Bieżący kanał (wersja zapoznawcza)|Pobieranie aktualizacji bieżącego kanału **wcześniej** podczas stopniowego wydawania|Urządzenia ustawione na ten kanał będą oferowane najwcześniej podczas stopniowego cyklu wydawania. Sugerowane dla środowisk przedprodukcyjnych/walidacyjnych.|
+|Bieżący kanał (etapowy)|Pobieranie aktualizacji bieżącego kanału później podczas stopniowego wydawania|Aktualizacje urządzeń będą oferowane później podczas stopniowego cyklu wydawania. Sugerowane zastosowanie do niewielkiej, reprezentatywnej części populacji urządzeń (~10%).|
+|Bieżący kanał (szeroki)|Pobieranie aktualizacji po zakończeniu stopniowego wydawania|Urządzenia będą oferowane aktualizacje dopiero po zakończeniu stopniowego cyklu wydawania. Sugerowane zastosowanie do szerokiego zestawu urządzeń w populacji produkcyjnej (~10–100%).|
+|Krytyczne: opóźnienie czasu|Opóźnij aktualizacje usługi Defender|Urządzenia będą oferowane aktualizacje z 48-godzinnym opóźnieniem. Najlepiej w przypadku maszyn centrów danych, które otrzymują tylko ograniczone aktualizacje. Sugerowane tylko dla środowisk krytycznych.|
+|(wartość domyślna)||Jeśli te zasady zostaną wyłączone lub nie zostaną skonfigurowane, urządzenie pozostanie w bieżącym kanale (domyślnym): bądź na bieżąco automatycznie podczas stopniowego cyklu wydawania. Nadaje się do większości urządzeń.|
 |
 
-### <a name="update-channels-for-daily-updates"></a>Aktualizowanie kanałów na codzienne aktualizacje
+### <a name="update-channels-for-daily-updates"></a>Aktualizowanie kanałów dla codziennych aktualizacji
 
-Możesz również przypisać komputer do kanału, aby zdefiniować cadence, w którym otrzymuje on codzienne aktualizacje. Należy zauważyć, że w przeciwieństwie do procesu miesięcznego nie ma kanału beta i ten stopniowy cykl wydania występuje wiele razy dziennie.
+Możesz również przypisać maszynę do kanału, aby zdefiniować kadencję, w której otrzymuje codzienne aktualizacje. Należy pamiętać, że w przeciwieństwie do procesu miesięcznego nie ma kanału beta i ten stopniowy cykl wydawania występuje wiele razy dziennie.
 
 <br>
 
@@ -99,38 +103,48 @@ Możesz również przypisać komputer do kanału, aby zdefiniować cadence, w kt
 
 |Nazwa kanału|Opis|Aplikacja|
 |---|---|---|
-|Bieżący kanał (etapowy)|Późniejsze uzyskiwanie aktualizacji z bieżącego kanału w trakcie stopniowego wydania|Urządzenia będą oferowane w późniejszym czasie w ramach stopniowego cyklu wydania. Sugerowane zastosowanie do małej, reprezentatywnej części populacji urządzenia (~10%).|
-|Bieżący kanał (szeroki)|Uzyskiwanie aktualizacji na końcu stopniowego wydania|Urządzenia będą oferowane aktualizacje po stopniowym cyklu wydania. Najlepsze w przypadku komputerów centrów danych, które otrzymują tylko ograniczone aktualizacje. Uwaga: to ustawienie dotyczy wszystkich aktualizacji programu Defender.|
-|(domyślne)||Jeśli wyłączysz lub nie skonfigurujesz tych zasad, urządzenie pozostanie w bieżącym kanale (ustawienie domyślne): Bądź na bieżąco automatycznie w trakcie stopniowego cyklu wydania. Odpowiednie dla większości urządzeń|
+|Bieżący kanał (etapowy)|Pobieranie aktualizacji bieżącego kanału później podczas stopniowego wydawania|Aktualizacje urządzeń będą oferowane później podczas stopniowego cyklu wydawania. Sugerowane zastosowanie do niewielkiej, reprezentatywnej części populacji urządzeń (~10%).|
+|Bieżący kanał (szeroki)|Pobieranie aktualizacji po zakończeniu stopniowego wydawania|Urządzenia będą oferowane aktualizacje po stopniowej wersji cyklu. Najlepiej w przypadku maszyn centrów danych, które otrzymują tylko ograniczone aktualizacje. Uwaga: to ustawienie dotyczy wszystkich aktualizacji usługi Defender.|
+|(wartość domyślna)||Jeśli te zasady zostaną wyłączone lub nie zostaną skonfigurowane, urządzenie pozostanie w bieżącym kanale (domyślnym): bądź na bieżąco automatycznie podczas stopniowego cyklu wydawania. Odpowiedni dla większości urządzeń|
 |
 
 > [!NOTE]
-> Jeśli chcesz wymusić aktualizację najnowszego podpisu, zamiast skorzystać z opóźnień, będzie konieczne najpierw usunięcie tych zasad.
+> Jeśli chcesz wymusić aktualizację najnowszego podpisu, zamiast korzystać z opóźnienia czasu, musisz najpierw usunąć te zasady.
 
 ## <a name="update-guidance"></a>Wskazówki dotyczące aktualizacji
 
-W większości przypadków zalecaną konfiguracją podczas korzystania z usługi Windows jest umożliwienie punktom końcowym odbierania i stosowania comiesięcznych aktualizacji usługi Defender w momencie ich otrzymania. Zapewnia to najlepszą równowagę między ochroną a możliwym wpływem skojarzonym ze zmianami, które mogą wprowadzać.
+W większości przypadków zalecana konfiguracja podczas korzystania z Windows Update polega na umożliwieniu punktom końcowym otrzymywania i stosowania comiesięcznych aktualizacji usługi Defender w miarę ich pojawiania się. Zapewnia to najlepszą równowagę między ochroną a możliwym wpływem związanym ze zmianami, które mogą wprowadzić.
 
-W środowiskach, w których istnieje potrzeba bardziej kontrolowanego stopniowego wdrażania automatycznych aktualizacji usługi Defender, rozważ podejście do grup wdrożeń:
+W przypadku środowisk, w których istnieje potrzeba bardziej kontrolowanego stopniowego wdrażania automatycznych aktualizacji usługi Defender, rozważ podejście do grup wdrożeń:
 
-1. Weź udział w niejawnym Windows niejawnym programie testów lub przypisz grupę urządzeń do kanału Beta.
-2. Wyznacz grupę pilotażową, która zdecyduje się na otrzymywanie nowych aktualizacji wcześnie w kanale wersji Preview, zazwyczaj w środowiskach sprawdzania poprawności.
-3. Wyznaczyć grupę komputerów, które otrzymają aktualizacje później podczas stopniowego etapu z kanału etapowego. Zazwyczaj będzie to reprezentatywna próbka ~10% populacji.
-4. Wyznaczyć grupę komputerów, które otrzymują aktualizacje po zakończeniu stopniowego cyklu wydań. Są to zazwyczaj ważne systemy produkcyjne.
+1. Weź udział w programie Windows Insider lub przypisz grupę urządzeń do kanału beta.
+2. Wyznaczyć grupę pilotażową, która decyduje się na dostęp do kanału w wersji zapoznawczej, zazwyczaj środowisk walidacji, w celu wczesnego otrzymywania nowych aktualizacji.
+3. Wyznaczyć grupę maszyn, które będą otrzymywać aktualizacje później podczas stopniowego wdrażania z kanału etapowego. Zazwyczaj jest to reprezentatywne ok. 10% populacji.
+4. Wyznaczyć grupę maszyn, które odbierają aktualizacje po zakończeniu stopniowego cyklu wydawania. Są to zazwyczaj ważne systemy produkcyjne.
 
-W przypadku pozostałych urządzeń domyślnie jest odbierane nowe aktualizacje w trakcie procesu stopniowego wdrażanie firmy Microsoft i nie jest wymagana żadna dalsza konfiguracja.
+W przypadku pozostałych urządzeń ustawieniem domyślnym jest otrzymywanie nowych aktualizacji w miarę ich pojawiania się podczas procesu stopniowego wdrażania firmy Microsoft i nie jest wymagana żadna dalsza konfiguracja.
 
-Zaadoptowanie tego modelu:
+Przyjęcie tego modelu:
 
-- Umożliwia testowanie wczesnych wersji, zanim dotrą do środowiska produkcyjnego
-- Upewnij się, że środowisko produkcyjne nadal otrzymuje regularne aktualizacje i zapewnij ochronę przed krytycznymi zagrożeniami.
+- Umożliwia testowanie wczesnych wersji, zanim dotrą one do środowiska produkcyjnego
+- Upewnij się, że środowisko produkcyjne nadal otrzymuje regularne aktualizacje i zapewnia ochronę przed zagrożeniami krytycznymi.
 
 ## <a name="management-tools"></a>Narzędzia do zarządzania
 
-Aby utworzyć własny niestandardowy proces stopniowego wdrażanie aktualizacji miesięcznych, możesz użyć następujących narzędzi:
+Aby utworzyć własny niestandardowy proces stopniowego wdrażania aktualizacji miesięcznych, możesz użyć następujących narzędzi:
 
 - Zasady grupy
 - Microsoft Endpoint Manager
 - PowerShell
 
-Aby uzyskać szczegółowe informacje na temat korzystania z tych narzędzi, zobacz Tworzenie niestandardowego procesu stopniowego [wdrażanie aktualizacji programu Microsoft Defender](configure-updates.md).
+Aby uzyskać szczegółowe informacje na temat korzystania z tych narzędzi, zobacz [Tworzenie niestandardowego procesu stopniowego wdrażania aktualizacji usługi Microsoft Defender](configure-updates.md).
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

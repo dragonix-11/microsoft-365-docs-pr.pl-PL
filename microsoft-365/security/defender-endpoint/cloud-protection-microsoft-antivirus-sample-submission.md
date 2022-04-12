@@ -1,7 +1,7 @@
 ---
-title: Ochrona chmury i przykładowe przesyłanie w Program antywirusowy Microsoft Defender
-description: Informacje o zabezpieczeniach i zabezpieczeniach w chmurze Program antywirusowy Microsoft Defender
-keywords: Program antywirusowy Microsoft Defender, technologie następnej generacji, przykładowe przesyłanie oprogramowania antywirusowego, audio/wideo następnej generacji, uczenie maszynowe, ochrona przed złośliwym kodem, zabezpieczenia, defender, chmura, ochrona dostarczana w chmurze
+title: Ochrona w chmurze i przesyłanie przykładów w Program antywirusowy Microsoft Defender
+description: Dowiedz się więcej na temat ochrony i Program antywirusowy Microsoft Defender dostarczanej w chmurze
+keywords: Program antywirusowy Microsoft Defender, technologie nowej generacji, przesyłanie przykładów oprogramowania antywirusowego, av nowej generacji, uczenie maszynowe, oprogramowanie chroniące przed złośliwym kodem, zabezpieczenia, defender, chmura, ochrona dostarczana w chmurze
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,107 +15,110 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a647617de3706481c2e12f4e1772f5bc609db6fc
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9192ecae72156531b0c5dccc360b2e2ea7bd343a
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470686"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789057"
 ---
-# <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Ochrona chmury i przykładowe przesyłanie w Program antywirusowy Microsoft Defender
+# <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Ochrona w chmurze i przesyłanie przykładów w Program antywirusowy Microsoft Defender
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
 
-Program antywirusowy Microsoft Defender korzysta z wielu inteligentnych mechanizmów wykrywania złośliwego oprogramowania. Jedną z najbardziej zaawansowanych możliwości jest możliwość korzystania z możliwości chmury w zakresie wykrywania złośliwego oprogramowania i wykonywania szybkich analiz. Ochrona chmury i automatyczne przesyłanie próbek współpracują z programem Program antywirusowy Microsoft Defender, aby chronić się przed nowymi i wyłaniających się zagrożeniami. 
+**Platformy**
+- System Windows
 
-W przypadku wykrycia podejrzanego lub złośliwego pliku do usługi w chmurze jest wysyłana próbka danych do analizy, Program antywirusowy Microsoft Defender blokuje plik. Zaraz po dokonanym określaniu, co się stanie szybko, plik zostanie wydany lub zablokowany przez Program antywirusowy Microsoft Defender. 
+Program antywirusowy Microsoft Defender używa wielu inteligentnych mechanizmów do wykrywania złośliwego oprogramowania. Jedną z najbardziej zaawansowanych możliwości jest możliwość zastosowania możliwości chmury do wykrywania złośliwego oprogramowania i przeprowadzania szybkiej analizy. Ochrona w chmurze i automatyczne przesyłanie przykładów współpracują z Program antywirusowy Microsoft Defender, aby chronić przed nowymi i pojawiającym się zagrożeniami. 
 
-Ten artykuł zawiera omówienie ochrony chmury i automatycznego przesyłania przykładów na stronie Program antywirusowy Microsoft Defender. Aby dowiedzieć się więcej o ochronie chmury, zobacz [Ochrona i ochrona Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
+Jeśli zostanie wykryty podejrzany lub złośliwy plik, próbka zostanie wysłana do usługi w chmurze w celu analizy, podczas gdy Program antywirusowy Microsoft Defender blokuje plik. Natychmiast po dokonaniu ustalenia, co dzieje się szybko, plik jest zwalniany lub blokowany przez Program antywirusowy Microsoft Defender. 
 
-## <a name="how-cloud-protection-and-sample-submission-work-together"></a>Jak współpracują ze sobą ochrona chmury i przykładowe przesyłanie
+Ten artykuł zawiera omówienie ochrony w chmurze i automatycznego przesyłania przykładów w Program antywirusowy Microsoft Defender. Aby dowiedzieć się więcej na temat ochrony w chmurze, zobacz [Ochrona w chmurze i Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
-Aby zrozumieć, jak ochrona chmury współpracuje z przykładowym przesyłaniem, warto zrozumieć, w jaki sposób usługa Defender for Endpoint chroni się przed zagrożeniami. Funkcja inteligentnego zabezpieczeń firmy Microsoft Graph monitoruje dane zagrożeń za pomocą bardzo dużej sieci czujnika. Modele maszynowego uczenia opartego na chmurze firmy Microsoft, które mogą oceniać pliki na podstawie sygnałów od klienta i rozległej sieci czujników oraz danych w inteligentnych zabezpieczeniach w Graph. Takie podejście umożliwia programowi Defender for Endpoint blokowanie wielu nigdy wcześniej widocznych zagrożeń. 
+## <a name="how-cloud-protection-and-sample-submission-work-together"></a>Jak ochrona w chmurze i przesyłanie przykładów współpracują ze sobą
 
-Poniższy obraz przedstawia przepływ ochrony chmury i przykładowego przesyłania za pomocą Program antywirusowy Microsoft Defender:
+Aby zrozumieć, jak ochrona w chmurze współdziała z przykładowym przesyłaniem, warto zrozumieć, w jaki sposób usługa Defender for Endpoint chroni przed zagrożeniami. Usługa Microsoft Intelligent Security Graph monitoruje dane zagrożeń z rozległej sieci czujników. Firma Microsoft warstw opartych na chmurze modeli uczenia maszynowego, które mogą oceniać pliki na podstawie sygnałów od klienta i rozległej sieci czujników i danych w Graph Intelligent Security. Takie podejście daje usłudze Defender for Endpoint możliwość blokowania wielu nigdy wcześniej nie widzianych zagrożeń. 
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="Przepływ ochrony w chmurze" lightbox="images/cloud-protection-flow.png":::
+Na poniższej ilustracji przedstawiono przepływ ochrony w chmurze i przykładowego przesyłania za pomocą Program antywirusowy Microsoft Defender:
 
-Program antywirusowy Microsoft Defender i ochrony chmury automatycznie blokują na pierwszy rzut oka większość nowych, nigdy wcześniej widocznych zagrożeń, używając następujących metod:
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="Przepływ ochrony dostarczany przez chmurę" lightbox="images/cloud-protection-flow.png":::
 
-1. Uproszczone modele maszynowego uczenia opartego na klientach, blokujące nowe i nieznane złośliwe oprogramowanie.
+Program antywirusowy Microsoft Defender i ochrona w chmurze automatycznie blokują większość nowych, nigdy wcześniej nie widzianych zagrożeń przy użyciu następujących metod:
 
-2. Lokalna analiza zachowania, zatrzymywanie ataków opartych na plikach i bez plików.
+1. Uproszczone modele uczenia maszynowego oparte na kliencie, blokujące nowe i nieznane złośliwe oprogramowanie.
 
-3. Oprogramowanie antywirusowe o wysokiej dokładności, wykrywające typowe złośliwe oprogramowanie za pomocą ogólnych i heuristic technik.
+2. Lokalna analiza zachowań, zatrzymywanie ataków opartych na plikach i bez plików.
 
-4. Zaawansowana ochrona oparta na chmurze jest zapewniana w przypadku Program antywirusowy Microsoft Defender uruchomionych w punkcie końcowym wymaga większej analizy w celu zweryfikowania intencji podejrzanego pliku.
+3. Oprogramowanie antywirusowe o wysokiej precyzji, wykrywające typowe złośliwe oprogramowanie za pomocą technik ogólnych i heurystycznych.
 
-   1. Jeśli nie Program antywirusowy Microsoft Defender jasnego określenia, metadane plików są wysyłane do usługi ochrony chmury. Często w ciągu kilku milisekund usługa ochrony chmury może na podstawie metadanych określić, czy plik jest złośliwy, czy nie.  
+4. Zaawansowana ochrona oparta na chmurze jest zapewniana w przypadkach, gdy Program antywirusowy Microsoft Defender uruchomiony w punkcie końcowym wymaga większej analizy w celu zweryfikowania intencji podejrzanego pliku.
 
-      - Zapytanie w chmurze metadanych plików może być wynikiem zachowania, znaku sieci Web lub innych cech, w przypadku których nie jest określony wyraźny werdykt.
-      - Wysyłane są niewielkie metadane, których celem jest osiągnięcie werdyktu złośliwego oprogramowania lub zagrożenia. Metadane nie obejmują informacji umożliwiających identyfikację użytkownika. Informacje, takie jak nazwy plików, są skrótami.
-      - Może być synchroniczny lub asynchroniczny. W przypadku synchronizacji plik nie będzie otwierany do czasu wyrenderowania werdyktu w chmurze. W przypadku asynchronicznego otwierania pliku podczas wykonywania analizy przez ochronę chmury.
-      - Metadane mogą zawierać między innymi atrybuty PE, statyczne atrybuty plików, atrybuty dynamiczne i kontekstowe (zobacz Przykłady metadanych wysyłanych do usługi [ochrony chmury](#examples-of-metadata-sent-to-the-cloud-protection-service)).
+   1. W przypadku, gdy Program antywirusowy Microsoft Defender nie może jasno określić, metadane pliku są wysyłane do usługi ochrony w chmurze. Często w milisekundach usługa ochrony w chmurze może określić na podstawie metadanych, czy plik jest złośliwy, czy nie jest zagrożeniem.  
 
-   2. Po przeanalizowaniu metadanych, Program antywirusowy Microsoft Defender ochrona chmury nie może uzyskać bardziej szczegółowego werdyktu, może zażądać próbki pliku do dalszej inspekcji. To żądanie szanuje konfigurację ustawień przykładowego żądania przesłania:
+      - Zapytanie w chmurze dotyczące metadanych pliku może być wynikiem zachowania, znaku sieci Web lub innych cech, w których nie określono jasnego werdyktu.
+      - Wysyłany jest mały ładunek metadanych, którego celem jest osiągnięcie werdyktu dotyczącego złośliwego oprogramowania lub nie zagrożenia. Metadane nie zawierają danych osobowych(PII). Informacje, takie jak nazwy plików, są skrótami.
+      - Może być synchroniczny lub asynchroniczny. W przypadku synchronicznego pliku nie zostanie otwarty, dopóki chmura nie wyrenderuje werdyktu. W przypadku asynchronicznego pliku zostanie otwarty podczas wykonywania analizy ochrony w chmurze.
+      - Metadane mogą obejmować atrybuty PE, statyczne atrybuty plików, atrybuty dynamiczne i kontekstowe i nie tylko (zobacz [Przykłady metadanych wysyłanych do usługi ochrony w chmurze](#examples-of-metadata-sent-to-the-cloud-protection-service)).
 
-      1. **Automatyczne wysyłanie bezpiecznych próbek** (domyślnie)
-         - Sejf próbek uważa się, że nie zawierają często danych PII, takich jak: .bat, scr, .dll, .exe.
-         - Jeśli plik prawdopodobnie zawiera identyfikator PII, użytkownik otrzyma żądanie umożliwienia przesłania przykładu pliku.
-         - Jest to opcja domyślna dla systemów Windows, macOS i Linux.
+   2. Po zbadaniu metadanych, jeśli Program antywirusowy Microsoft Defender ochrona w chmurze nie może osiągnąć jednoznacznego werdyktu, może zażądać próbki pliku do dalszej kontroli. To żądanie uwzględnia konfigurację ustawień dla przykładowego przesyłania:
+
+      1. **Automatyczne wysyłanie bezpiecznych próbek** (wartość domyślna)
+         - Sejf przykłady to przykłady, które często nie zawierają danych osobowych, takich jak: .bat, scr, .dll, .exe.
+         - Jeśli plik prawdopodobnie zawiera identyfikator PII, użytkownik otrzyma żądanie zezwalania na przesyłanie przykładowych plików.
+         - Ta opcja jest domyślna w systemach Windows, macOS i Linux.
 
       2. **Zawsze monituj**
-         - Jeśli plik jest skonfigurowany, użytkownik zawsze będzie monitowany o zgodę przed przesłaniem pliku
-         - To ustawienie nie jest dostępne w ochronie w chmurze systemu macOS
+         - W przypadku skonfigurowania użytkownik zawsze będzie monitowany o zgodę przed przesłaniem pliku
+         - To ustawienie nie jest dostępne w ramach ochrony w chmurze systemu macOS
 
-      3. **Automatyczne wysyłanie wszystkich próbek**
-         - Jeśli wszystkie próbki zostały skonfigurowane, zostaną wysłane automatycznie
-         - Jeśli chcesz, aby przykładowe przesyłanie zawierało makra osadzone w dokumentach programu Word, musisz wybrać pozycję Automatycznie wyślij wszystkie przykłady.
+      3. **Automatycznie wysyłaj wszystkie przykłady**
+         - W przypadku skonfigurowania wszystkie przykłady zostaną wysłane automatycznie
+         - Jeśli chcesz, aby przykładowe przesyłanie zawierało makra osadzone w dokumentacji programu Word, musisz wybrać opcję "Automatycznie wyślij wszystkie przykłady"
          - To ustawienie nie jest dostępne w przypadku ochrony w chmurze systemu macOS
 
       4. **Nie wysyłaj**
-         - Zapobiega "blokowaniu na pierwszy rzut oka" na podstawie analizy próbki pliku
-         - "Nie wysyłaj" jest równoważne z ustawieniem "Wyłączone" w zasadach macOS.
+         - Zapobiega "blokuj od pierwszego wejrzenia" na podstawie analizy przykładowej pliku
+         - Ustawienie "Nie wysyłaj" jest równoważne ustawieniu "Wyłączone" w zasadach systemu macOS
          - Metadane są wysyłane do wykrywania nawet wtedy, gdy przesyłanie przykładowe jest wyłączone
 
-   3. Po przesłaniu metadanych i/lub plików do ochrony chmury możesz użyć przykładów **,** **detonacji** lub modeli  maszynowego uczenia maszynowego do analizy danych w celu osiągnięcia werdyktu. Wyłączenie ochrony w chmurze ogranicza analizę wyłącznie do tego, co klient może zapewniać za pośrednictwem lokalnych modeli maszynowego uczenia i podobnych funkcji.
+   3. Po przesłaniu metadanych i/lub plików do ochrony w chmurze możesz użyć **przykładów**, **detonacji** lub modeli uczenia maszynowego **analizy danych big data** , aby uzyskać werdykt. Wyłączenie ochrony dostarczanej w chmurze ograniczy analizę tylko do tego, co klient może zapewnić za pośrednictwem lokalnych modeli uczenia maszynowego i podobnych funkcji.
 
 > [!IMPORTANT]
-> [Blokowanie na pierwszy rzut oka (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) zapewnia detonację i analizę w celu określenia, czy plik lub proces jest bezpieczny. Usługi BAFS mogą chwilę opóźnić otwieranie pliku do czasu jego werdyktu. Jeśli wyłączysz przesyłanie przykładowe, usługi BAFS również będą wyłączone, a analiza plików będzie ograniczona tylko do metadanych. Zalecamy, aby włączyć przesyłanie przykładowe i usługi BAFS. Aby dowiedzieć się więcej, [zobacz Co to jest "blok na pierwszy rzut oka"?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
+> [Ustawienie Blokuj od pierwszego wejrzenia (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) zapewnia detonację i analizę w celu ustalenia, czy plik lub proces jest bezpieczny. BAFS może chwilowo opóźnić otwarcie pliku, dopóki nie zostanie osiągnięty werdykt. Jeśli wyłączysz przesyłanie przykładowe, bafs jest również wyłączony, a analiza plików jest ograniczona tylko do metadanych. Zalecamy włączenie przesyłania przykładów i bafs. Aby dowiedzieć się więcej, zobacz [Co to jest "blokuj od pierwszego wejrzenia"?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
 
-## <a name="cloud-protection-levels"></a>Poziomy ochrony w chmurze
+## <a name="cloud-protection-levels"></a>Poziomy ochrony chmury
 
-Ochrona chmury jest domyślnie włączona w Program antywirusowy Microsoft Defender. Zalecamy, aby włączyć ochronę w chmurze, chociaż można skonfigurować poziom ochrony dla organizacji. Zobacz [Określanie poziomu ochrony przed wiadomościami w chmurze Program antywirusowy Microsoft Defender](specify-cloud-protection-level-microsoft-defender-antivirus.md).
+Ochrona w chmurze jest domyślnie włączona w Program antywirusowy Microsoft Defender. Zalecamy zachowanie włączonej ochrony w chmurze, chociaż można skonfigurować poziom ochrony dla organizacji. Zobacz [Określanie poziomu ochrony dostarczanej w chmurze dla Program antywirusowy Microsoft Defender](specify-cloud-protection-level-microsoft-defender-antivirus.md).
 
-## <a name="sample-submission-settings"></a>Przykładowe ustawienia przesyłania
+## <a name="sample-submission-settings"></a>Ustawienia przykładowego przesyłania
 
-Oprócz konfigurowania poziomu ochrony w chmurze możesz skonfigurować przykładowe ustawienia przesyłania. Możesz wybrać jedną z kilku opcji:
+Oprócz konfigurowania poziomu ochrony w chmurze można skonfigurować ustawienia przykładowego przesyłania. Możesz wybrać jedną z kilku opcji:
 
-- **Automatyczne wysyłanie bezpiecznych próbek**  (zachowanie domyślne)
-- **Automatyczne wysyłanie wszystkich próbek**  
-- **Nie wysyłaj próbek**  
+- **Automatyczne wysyłanie bezpiecznych próbek (zachowanie domyślne**  )
+- **Automatycznie wysyłaj wszystkie przykłady**  
+- **Nie wysyłaj przykładów**  
 
-Aby uzyskać informacje o opcjach konfiguracji przy Intune, Configuration Manager, zasad grupy lub programu PowerShell, zobacz Włączanie ochrony chmury [w](enable-cloud-protection-microsoft-defender-antivirus.md) Program antywirusowy Microsoft Defender.
+Aby uzyskać informacje o opcjach konfiguracji przy użyciu Intune, Configuration Manager, obiektu zasad grupy lub programu PowerShell, zobacz [Włączanie ochrony w chmurze w Program antywirusowy Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>Przykłady metadanych wysyłanych do usługi ochrony w chmurze
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Przykłady metadanych wysyłanych do ochrony chmury w portalu Program antywirusowy Microsoft Defender danych" lightbox="images/cloud-protection-metadata-sample.png":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Przykłady metadanych wysyłanych do ochrony w chmurze w portalu Program antywirusowy Microsoft Defender" lightbox="images/cloud-protection-metadata-sample.png":::
 
-W poniższej tabeli podano przykłady metadanych wysyłanych do analizy za pomocą ochrony chmury:
+W poniższej tabeli wymieniono przykłady metadanych wysłanych do analizy przez ochronę w chmurze:
 
 | Wpisać | Atrybut |
 |:---|:---|
-| Atrybuty komputera | `OS version` <br/> `Processor` <br/> `Security settings` |
-| Atrybuty dynamiczne i kontekstowe | **Proces i instalacja** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**Behavioral** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |
+| Atrybuty maszyny | `OS version` <br/> `Processor` <br/> `Security settings` |
+| Atrybuty dynamiczne i kontekstowe | **Proces i instalacja** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**Behawioralne** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Ustawień regionalnych** <br/> `Locale setting` <br/> `Geographical location` |
 | Atrybuty plików statycznych | **Częściowe i pełne skróty** <br/> `ClusterHash` <br/> `Crc16` <br/> `Ctph` <br/> `ExtendedKcrcs` <br/> `ImpHash` <br/> `Kcrc3n` <br/> `Lshash` <br/> `LsHashs` <br/> `PartialCrc1` <br/> `PartialCrc2` <br/> `PartialCrc3` <br/> `Sha1` <br/> `Sha256` <br/><br/>**Właściwości pliku** <br/>`FileName` <br/> `FileSize` <br/><br/> **Informacje o podpisie** <br/> `AuthentiCodeHash` <br/> `Issuer` <br/> `IssuerHash` <br/> `Publisher` <br/> `Signer` <br/> `SignerHash` |
 
-## <a name="samples-are-treated-as-customer-data"></a>Próbki są traktowane jako dane klienta
+## <a name="samples-are-treated-as-customer-data"></a>Przykłady są traktowane jako dane klienta
 
-Jeśli tylko zastanawiasz się, co się dzieje z przykładami przesyłania, program Defender for Endpoint traktuje wszystkie przykłady plików jako dane klienta. Firma Microsoft szanuje zarówno opcje przechowywania danych geograficznych, jak i geograficznych wybrane przez Twoją organizację podczas dołączania do programu Defender dla punktu końcowego. 
+Na wszelki wypadek, gdy zastanawiasz się, co się dzieje z przykładowymi przesłaniami, usługa Defender for Endpoint traktuje wszystkie przykłady plików jako dane klienta. Firma Microsoft honoruje opcje przechowywania danych i geograficzne wybrane przez organizację podczas dołączania do usługi Defender for Endpoint. 
 
-Ponadto program Defender for Endpoint otrzymał wiele certyfikatów zgodności, przedstawiających nadal owacyjną odpowiedzialność za zaawansowany zestaw kontrolek zgodności:
+Ponadto usługa Defender for Endpoint otrzymała wiele certyfikatów zgodności, co świadczy o ciągłym przestrzeganiu zaawansowanego zestawu mechanizmów kontroli zgodności:
 
 - ISO 27001
 - ISO 27018
@@ -124,21 +127,31 @@ Ponadto program Defender for Endpoint otrzymał wiele certyfikatów zgodności, 
 
 Aby uzyskać więcej informacji, zapoznaj się z następującymi zasobami:
 
-- [Oferty dotyczące zgodności z platformą Azure](/azure/storage/common/storage-compliance-offerings) 
-- [Portal zaufania usług](https://servicetrust.microsoft.com)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender przechowywania danych i prywatności](data-storage-privacy.md#data-storage-location)
+- [Oferty zgodności platformy Azure](/azure/storage/common/storage-compliance-offerings) 
+- [Portal zaufania usługi](https://servicetrust.microsoft.com)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender magazyn danych i prywatność](data-storage-privacy.md#data-storage-location)
 
 ## <a name="other-file-sample-submission-scenarios"></a>Inne przykładowe scenariusze przesyłania plików
 
-Istnieją jeszcze dwa scenariusze, w których usługa Defender for Endpoint może zażądać przykładu pliku, który nie jest związany z ochroną chmury w Program antywirusowy Microsoft Defender. Te scenariusze opisano w poniższej tabeli:
+Istnieją jeszcze dwa scenariusze, w których usługa Defender for Endpoint może zażądać przykładu pliku, który nie jest związany z ochroną w chmurze w Program antywirusowy Microsoft Defender. Te scenariusze opisano w poniższej tabeli:
 
 | Scenariusz | Opis |
 |:---|:---|
-|Ręczna kolekcja przykładowych plików w Microsoft 365 Defender pliku | Podczas dołączania urządzeń do usługi Defender for Endpoint możesz skonfigurować ustawienia programu [wykrywanie i reagowanie w punktach końcowych (EDR)](overview-endpoint-detection-response.md). Na przykład istnieje ustawienie umożliwiające włączenie przykładowych kolekcji z urządzenia, które można łatwo pomylić z ustawieniami przykładowego przesyłania opisanymi w tym artykule. <br/><br/>Ustawienie EDR określa przykładowe kolekcje plików z urządzeń w przypadku zażądania za pośrednictwem portalu Microsoft 365 Defender i podlega już ustalona rolam i uprawnieniami. To ustawienie może zezwalać na zbieranie plików z punktu końcowego lub blokować takie funkcje, jak analiza dogłębna w portalu Microsoft 365 Defender sieci Web. Jeśli to ustawienie nie jest skonfigurowane, domyślnie jest włączone przykładowe kolekcje. <br/><br/>Aby uzyskać informacje na temat ustawień konfiguracji programu Defender dla punktu końcowego, zobacz: Narzędzia i metody dołączania do Windows 10 [w programie Defender for Endpoint](configure-endpoints.md) |
-| Zautomatyzowane badanie i analiza zawartości odpowiedzi | [Gdy na](automated-investigations.md) urządzeniach są uruchomione zautomatyzowane badania (po skonfigurowaniu automatycznego uruchamiania w odpowiedzi na alert lub uruchomienie ręczne), z punktów końcowych można zbierać pliki zidentyfikowane jako podejrzane w celu dalszej inspekcji. W razie potrzeby funkcję analizy zawartości plików dla zautomatyzowanych analiz można wyłączyć w portalu Microsoft 365 Defender plikach. <br/><br/> Nazwy rozszerzeń plików można też modyfikować w celu dodania lub usunięcia rozszerzeń dla innych typów plików, które będą automatycznie przesyłane podczas automatycznego badania. <br/><br/> Aby dowiedzieć się więcej, zobacz [Zarządzanie przekazywaniem plików automatyzacji](manage-automation-file-uploads.md). |
+|Ręczne zbieranie przykładowych plików w portalu Microsoft 365 Defender | Podczas dołączania urządzeń do usługi Defender for Endpoint można skonfigurować ustawienia dla [wykrywanie i reagowanie w punktach końcowych (EDR)](overview-endpoint-detection-response.md). Na przykład istnieje ustawienie umożliwiające włączenie przykładowych kolekcji z urządzenia, które można łatwo pomylić z przykładowymi ustawieniami przesyłania opisanymi w tym artykule. <br/><br/>Ustawienie EDR kontroluje zbieranie przykładowych plików z urządzeń w przypadku żądania za pośrednictwem portalu Microsoft 365 Defender i podlega już ustalonym rolom i uprawnieniom. To ustawienie może zezwalać na zbieranie plików z punktu końcowego lub blokować go dla funkcji, takich jak analiza szczegółowa w portalu Microsoft 365 Defender. Jeśli to ustawienie nie jest skonfigurowane, ustawieniem domyślnym jest włączenie kolekcji przykładowej. <br/><br/>Dowiedz się więcej o ustawieniach konfiguracji usługi Defender for Endpoint, zobacz: [Dołączanie narzędzi i metod dla urządzeń Windows 10 w usłudze Defender for Endpoint](configure-endpoints.md) |
+| Zautomatyzowane badanie i analiza zawartości odpowiedzi | Gdy na urządzeniach są uruchamiane [zautomatyzowane badania](automated-investigations.md) (skonfigurowane do automatycznego uruchamiania w odpowiedzi na alert lub uruchamianie ręcznie), pliki zidentyfikowane jako podejrzane mogą być zbierane z punktów końcowych w celu dalszej inspekcji. W razie potrzeby w portalu Microsoft 365 Defender można wyłączyć funkcję analizy zawartości plików dla zautomatyzowanych badań. <br/><br/> Nazwy rozszerzeń plików można również modyfikować w celu dodawania lub usuwania rozszerzeń dla innych typów plików, które zostaną automatycznie przesłane podczas zautomatyzowanego badania. <br/><br/> Aby dowiedzieć się więcej, zobacz [Zarządzanie przekazywaniem plików automatyzacji](manage-automation-file-uploads.md). |
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-[Omówienie ochrony następnej generacji](next-generation-protection.md)
+[Omówienie ochrony nowej generacji](next-generation-protection.md)
 
-[Konfigurowanie działań naprawczych Program antywirusowy Microsoft Defender wykrywania błędów.](configure-remediation-microsoft-defender-antivirus.md)
+[Skonfiguruj korygowanie pod kątem wykrywania Program antywirusowy Microsoft Defender.](configure-remediation-microsoft-defender-antivirus.md)

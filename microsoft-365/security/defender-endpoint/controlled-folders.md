@@ -1,7 +1,7 @@
 ---
-title: Ochrona ważnych folderów przed oprogramowaniem wymuszającym okup przed zaszyfrowaniem plików za pomocą kontrolowanego dostępu do folderów
+title: Ochrona ważnych folderów przed oprogramowaniem wymuszającym okup przed szyfrowaniem plików przy użyciu kontrolowanego dostępu do folderów
 description: Pliki w folderach domyślnych mogą być chronione przed zmianą przez złośliwe aplikacje. Zapobiegaj szyfrowaniu plików przez oprogramowanie wymuszające okup.
-keywords: Kontrolowany dostęp do folderów, windows 10, windows defender, oprogramowanie wymuszające okup, ochrona, pliki, foldery
+keywords: kontrolowany dostęp do folderów, windows 10, windows defender, ransomware, ochrona, pliki, foldery
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: ea3e45a5469c9769f55f9ce90f799c54556de814
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 84304d120f5822d91adc99c86e2c22c0cfb6790c
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322901"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789937"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Ochrona ważnych folderów za pomocą kontrolowanego dostępu do folderów
 
@@ -30,56 +30,61 @@ ms.locfileid: "63322901"
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Program antywirusowy Microsoft Defender
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+**Dotyczy**
+- System Windows
+
+
+> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>Co to jest kontrolowany dostęp do folderu?
 
-Kontrolowany dostęp do folderu pomaga chronić cenne dane przed złośliwymi aplikacjami i zagrożeniami, takimi jak oprogramowanie wymuszające okup. Kontrolowany dostęp do folderu chroni Twoje dane, sprawdzając aplikacje przed listą znanych, zaufanych aplikacji. Obsługiwane w klientach Windows Server 2019, Windows Server 2022, Windows 10 i Windows 11, kontrolowany dostęp do folderu można włączona przy użyciu aplikacji Zabezpieczenia Windows, Microsoft Endpoint Configuration Manager lub Intune (w przypadku urządzeń zarządzanych).
+Kontrolowany dostęp do folderów pomaga chronić cenne dane przed złośliwymi aplikacjami i zagrożeniami, takimi jak oprogramowanie wymuszające okup. Kontrolowany dostęp do folderów chroni dane, sprawdzając aplikacje pod kątem listy znanych, zaufanych aplikacji. Obsługiwane na Windows Server 2019, Windows Server 2022, Windows 10 i Windows 11 klientów, kontrolowany dostęp do folderów można włączyć przy użyciu aplikacji Zabezpieczenia Windows, Microsoft Endpoint Configuration Manager lub Intune (dla urządzeń zarządzanych).
 
 > [!NOTE]
-> Aparaty skryptów nie są zaufane i nie można na nie zezwolić na dostęp do chronionych folderów. Na przykład program PowerShell nie jest zaufany przez kontrolowany dostęp do folderu, nawet jeśli zezwala się na to ze wskaźnikami [plików i certyfikatów](/microsoft-365/security/defender-endpoint/indicator-certificates).
+> Aparaty skryptów nie są zaufane i nie można zezwolić im na dostęp do kontrolowanych chronionych folderów. Na przykład program PowerShell nie jest zaufany przez kontrolowany dostęp do folderów, nawet jeśli zezwalasz na [użycie wskaźników certyfikatu i pliku](/microsoft-365/security/defender-endpoint/indicator-certificates).
 
-Kontrolowany dostęp do folderu działa najlepiej z programem [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), który zapewnia szczegółowe raportowanie w zdarzeniach i blokach kontrolowanego dostępu do folderu jako część zwykłego [scenariuszy analizy alertów](investigate-alerts.md).
+Kontrolowany dostęp do folderów działa najlepiej w przypadku [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md), co zapewnia szczegółowe raportowanie zdarzeń i bloków dostępu do kontrolowanych folderów w ramach [typowych scenariuszy badania alertów](investigate-alerts.md).
 
 > [!TIP]
-> Kontrolowane bloki dostępu do folderów nie generują alertów w [kolejce alertów](alerts-queue.md). W widoku osi czasu urządzenia możesz jednak wyświetlać informacje o blokach dostępu do folderów [kontrolowanych podczas zaawansowanego](investigate-machines.md) wyszukiwania lub z niestandardowymi [regułami wykrywania](custom-detection-rules.md).[](advanced-hunting-overview.md)
+> Kontrolowane bloki dostępu do folderów nie generują alertów w [kolejce alertów](alerts-queue.md). Można jednak wyświetlać informacje o kontrolowanych blokach dostępu do folderów w [widoku osi czasu urządzenia](investigate-machines.md), podczas korzystania z [zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md) lub z [niestandardowymi regułami wykrywania](custom-detection-rules.md).
 
-## <a name="how-does-controlled-folder-access-work"></a>Jak działa kontrolowany dostęp do folderu?
+## <a name="how-does-controlled-folder-access-work"></a>Jak działa kontrolowany dostęp do folderów?
 
-Kontrolowany dostęp do folderu działa tylko przez zezwolenie zaufanym aplikacjom na dostęp do folderów chronionych. Foldery chronione są określane po skonfigurowaniu kontrolowanego dostępu do folderu. Zazwyczaj często używane foldery, takie jak foldery używane do dokumentów, obrazów, pobierania itp., są uwzględniane na liście folderów kontrolowanych.
+Kontrolowany dostęp do folderów działa tylko przez zezwolenie zaufanym aplikacjom na dostęp do chronionych folderów. Chronione foldery są określane podczas konfigurowania kontrolowanego dostępu do folderów. Zazwyczaj na liście kontrolowanych folderów znajdują się często używane foldery, takie jak foldery używane w dokumentach, obrazach, plikach do pobrania itd.
 
-Kontrolowany dostęp do folderu działa z listą zaufanych aplikacji. Aplikacje dołączone do listy zaufanych programów działają zgodnie z oczekiwaniami. Aplikacje, których nie ma na liście, nie mogą wprowadzać żadnych zmian w plikach wewnątrz folderów chronionych.
+Kontrolowany dostęp do folderów działa z listą zaufanych aplikacji. Aplikacje znajdujące się na liście zaufanego oprogramowania działają zgodnie z oczekiwaniami. Aplikacje, które nie znajdują się na liście, nie mogą wprowadzać żadnych zmian w plikach w chronionych folderach.
 
-Aplikacje są dodawane do listy na podstawie ich reputacji i reputacji. Aplikacje, które są bardzo rozpowszechnione w całej organizacji i które nigdy nie wyświetlały żadnych zachowań uznanych za złośliwe, są uznawane za wiarygodne. Te aplikacje zostaną automatycznie dodane do listy.
+Aplikacje są dodawane do listy na podstawie ich powszechności i reputacji. Aplikacje, które są wysoce rozpowszechnione w całej organizacji i które nigdy nie wyświetlały żadnego zachowania uznanego za złośliwe, są uważane za godne zaufania. Te aplikacje są automatycznie dodawane do listy.
 
-Aplikacje można również dodawać ręcznie do listy zaufanych przy użyciu aplikacji Menedżer konfiguracji Intune. Dodatkowe akcje można wykonywać z Microsoft 365 Defender portalu.
+Aplikacje można również dodać ręcznie do listy zaufanej przy użyciu Configuration Manager lub Intune. Dodatkowe akcje można wykonać z poziomu portalu Microsoft 365 Defender.
 
-## <a name="why-controlled-folder-access-is-important"></a>Dlaczego kontrolowany dostęp do folderu jest ważny
+## <a name="why-controlled-folder-access-is-important"></a>Dlaczego kontrolowany dostęp do folderów jest ważny
 
-Kontrolowany dostęp do folderów jest szczególnie przydatny w ochronie dokumentów i informacji przed oprogramowaniem wymuszającym [okup](https://www.microsoft.com/wdsi/threats/ransomware). W przypadku ataku oprogramowania wymuszającego okup pliki mogą zostać zaszyfrowane i utrzymywane u hosta. W przypadku kontrolowanego dostępu do folderu na komputerze, na którym aplikacja próbowała wprowadzić zmiany w pliku w chronionym folderze, jest wyświetlane powiadomienie. Możesz dostosować [powiadomienie, modyfikując](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) je wraz ze szczegółami twojej firmy i informacjami kontaktowymi. Można również włączyć poszczególne reguły, aby dostosować techniki monitorów funkcji.
+Kontrolowany dostęp do folderów jest szczególnie przydatny w ochronie dokumentów i informacji przed [oprogramowaniem wymuszającym okup](https://www.microsoft.com/wdsi/threats/ransomware). W przypadku ataku wymuszającego okup pliki mogą stać się szyfrowane i przetrzymywane jako zakładniki. Po kontrolowanym dostępie do folderu na komputerze, na którym aplikacja próbowała wprowadzić zmiany w pliku w folderze chronionym, zostanie wyświetlone powiadomienie. Powiadomienie można [dostosować przy](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) użyciu danych firmy i informacji kontaktowych. Można również włączyć reguły indywidualnie, aby dostosować techniki monitorów funkcji.
 
-Chronione [foldery obejmują](#review-controlled-folder-access-events-in-windows-event-viewer) typowe foldery systemowe (w tym foldery rozruchu), w [tym foldery, w których można dodać więcej folderów](customize-controlled-folders.md#protect-additional-folders). Możesz również [zezwolić aplikacjom](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) na nadaj im dostęp do chronionych folderów.
+[Foldery chronione](#review-controlled-folder-access-events-in-windows-event-viewer) obejmują typowe foldery systemowe (w tym sektory rozruchu) i można [dodać więcej folderów](customize-controlled-folders.md#protect-additional-folders). Możesz również [zezwolić aplikacjom na udzielanie](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) im dostępu do chronionych folderów.
 
-Za pomocą trybu [inspekcji można](audit-windows-defender.md) ocenić wpływ kontrolowanego dostępu do folderu na organizację, jeśli został włączony. Możesz również odwiedzić witrynę internetową testów Windows Defender w witrynie demo.wd.microsoft.com, [](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) aby upewnić się, że funkcja działa i jak działa.
+Tryb [inspekcji](audit-windows-defender.md) umożliwia ocenę wpływu kontrolowanego dostępu do folderów na organizację, jeśli zostałaby włączona. Możesz również odwiedzić witrynę internetową Windows Defender Test ground pod adresem [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground), aby potwierdzić, że funkcja działa i zobaczyć, jak działa.
 
 > [!NOTE]
-> Witryna pokazowa usługi Defender for Endpoint w demo.wd.microsoft.com jest przestarzała i zostanie usunięta w przyszłości.
+> Witryna demonstracyjna usługi Defender for Endpoint w demo.wd.microsoft.com jest przestarzała i zostanie usunięta w przyszłości.
 
-Kontrolowany dostęp do folderów jest obsługiwany w następujących wersjach programu Windows:
+Kontrolowany dostęp do folderów jest obsługiwany w następujących wersjach Windows:
 
 - [Windows 10, wersja 1709](/windows/whats-new/whats-new-windows-10-version-1709) i nowsze
 - Windows 11
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Windows folderów systemowych są domyślnie chronione
+## <a name="windows-system-folders-are-protected-by-default"></a>Windows foldery systemowe są domyślnie chronione
 
-Windows folderów systemowych są domyślnie chronione wraz z kilkoma innymi folderami:
+Windows foldery systemowe są domyślnie chronione wraz z kilkoma innymi folderami:
 
-Chronione foldery obejmują typowe foldery systemowe (w tym foldery rozruchu), w tym foldery, w których można dodawać kolejne foldery. Możesz również zezwolić aplikacjom na nadaj im dostęp do chronionych folderów.  Foldery Windows, które są domyślnie chronione, to:
+Foldery chronione obejmują typowe foldery systemowe (w tym sektory rozruchu) i można dodawać dodatkowe foldery. Możesz również zezwolić aplikacjom na udzielanie im dostępu do chronionych folderów.  Foldery systemów Windows, które są domyślnie chronione, to:
 
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
@@ -91,22 +96,22 @@ Chronione foldery obejmują typowe foldery systemowe (w tym foldery rozruchu), w
 - `c:\Users\Public\Music`
 - `c:\Users\<username>\Favorites`
 
-Foldery domyślne są wyświetlane w profilu użytkownika w **obszarze Ten komputer**.
+Foldery domyślne są wyświetlane w profilu użytkownika w obszarze **Ten komputer**.
    > [!div class="mx-imgBorder"]
-   > ![Chronione Windows domyślnych folderów systemowych](images/defaultfolders.png)
+   > ![Domyślne foldery systemów chronionych Windows](images/defaultfolders.png)
 
 > [!NOTE]
-> Dodatkowe foldery można skonfigurować jako chronione, ale nie można Windows folderów systemowych, które są domyślnie chronione.
+> Można skonfigurować dodatkowe foldery jako chronione, ale nie można usunąć Windows folderów systemowych, które są domyślnie chronione.
 
-## <a name="requirements-for-controlled-folder-access"></a>Wymagania dotyczące kontrolowanego dostępu do folderu
+## <a name="requirements-for-controlled-folder-access"></a>Wymagania dotyczące kontrolowanego dostępu do folderów
 
-Kontrolowany dostęp do folderu wymaga [Program antywirusowy Microsoft Defender ochrony w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md).
+Kontrolowany dostęp do folderów wymaga włączenia [Program antywirusowy Microsoft Defender ochrony w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Przeglądanie zdarzeń kontrolowanego dostępu do folderu w Microsoft 365 Defender folderów
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Przejrzyj zdarzenia dostępu do folderów kontrolowanych w portalu Microsoft 365 Defender
 
-Usługa Defender for Endpoint udostępnia szczegółowe raportowanie zdarzeń i bloków w ramach scenariuszy analizy [alertów](investigate-alerts.md) w portalu Microsoft 365 Defender; zobacz Program [Microsoft Defender for Endpoint w](../defender/microsoft-365-security-center-mde.md) Microsoft 365 Defender.
+Usługa Defender for Endpoint udostępnia szczegółowe raporty dotyczące zdarzeń i bloków w ramach [scenariuszy badania alertów](investigate-alerts.md) w portalu Microsoft 365 Defender; zobacz [Ochrona punktu końcowego w usłudze Microsoft Defender in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
-Program Microsoft Defender umożliwia wyszukiwanie danych punktu końcowego przy użyciu wyszukiwania [zaawansowanego](advanced-hunting-overview.md). Jeśli korzystasz [z trybu inspekcji](audit-windows-defender.md), możesz użyć zaawansowanego [](advanced-hunting-overview.md) wyszukiwania, aby zobaczyć, jak kontrolowane ustawienia dostępu do folderu wpływają na Twoje środowisko, jeśli zostały włączone.
+Możesz wykonywać zapytania dotyczące Ochrona punktu końcowego w usłudze Microsoft Defender danych przy użyciu [zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md). Jeśli używasz [trybu inspekcji](audit-windows-defender.md), możesz użyć [zaawansowanego wyszukiwania zagrożeń](advanced-hunting-overview.md) , aby zobaczyć, jak kontrolowane ustawienia dostępu do folderów wpłyną na środowisko, jeśli zostały włączone.
 
 Przykładowe zapytanie:
 
@@ -115,37 +120,37 @@ DeviceEvents
 | where ActionType in ('ControlledFolderAccessViolationAudited','ControlledFolderAccessViolationBlocked')
 ```
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Przeglądanie zdarzeń kontrolowanego dostępu do folderu w Windows Zdarzeń
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Przejrzyj zdarzenia dostępu do folderów kontrolowanych w Windows Podgląd zdarzeń
 
-Możesz przejrzeć dziennik Windows zdarzeń, aby zobaczyć zdarzenia utworzone w przypadku kontrolowanego dostępu do folderu (lub inspekcji) w aplikacji:
+Możesz przejrzeć dziennik zdarzeń Windows, aby wyświetlić zdarzenia utworzone podczas kontrolowanych bloków dostępu do folderów (lub inspekcji) aplikacji:
 
-1. Pobierz pakiet [oceny i](https://aka.ms/mp7z2w) wyodrębnij plik *cfa-events.xml* w łatwo dostępnej lokalizacji na urządzeniu.
-2. Wpisz **Podgląd zdarzeń** w menu Start, aby otworzyć Windows Podgląd zdarzeń.
-3. W panelu po lewej stronie w **obszarze Akcje** wybierz pozycję **Importuj widok niestandardowy...**.
-4. Przejdź do wyodrębnianych *cfa-events.xml* zaznacz je. Ewentualnie skopiuj [kod XML bezpośrednio](event-views.md).
+1. Pobierz [pakiet ewaluacyjny](https://aka.ms/mp7z2w) i wyodrębnij plik *cfa-events.xml* do łatwo dostępnej lokalizacji na urządzeniu.
+2. Wpisz podgląd **zdarzeń** w menu Start, aby otworzyć Windows Podgląd zdarzeń.
+3. Na panelu po lewej stronie w obszarze **Akcje** wybierz pozycję **Importuj widok niestandardowy...**.
+4. Przejdź do miejsca wyodrębnienia *cfa-events.xml* i wybierz go. Alternatywnie [skopiuj plik XML bezpośrednio](event-views.md).
 5. Wybierz przycisk **OK**.
 
-W poniższej tabeli przedstawiono zdarzenia związane z kontrolowanym dostępem do folderu:
+W poniższej tabeli przedstawiono zdarzenia związane z kontrolowanym dostępem do folderów:
 
 <br/><br/>
 
 |Identyfikator zdarzenia|Opis|
 |---|---|
-|5007|Zdarzenie w przypadku zmiany ustawień|
-|1124|Zdarzenie kontrolowanego dostępu do folderu|
-|1123|Zdarzenie zablokowanego dostępu do folderu|
+|5007|Zdarzenie po zmianie ustawień|
+|1124|Zdarzenie dostępu do kontrolowanego folderu z inspekcją|
+|1123|Zablokowane zdarzenie dostępu do folderu kontrolowanego|
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>Wyświetlanie lub zmienianie listy folderów chronionych
 
-Za pomocą tej Zabezpieczenia Windows możesz wyświetlić listę folderów chronionych przez kontrolowany dostęp do folderów.
+Możesz użyć aplikacji Zabezpieczenia Windows, aby wyświetlić listę folderów chronionych przez kontrolowany dostęp do folderów.
 
-1. Na urządzeniu Windows 10 lub Windows 11 otwórz Zabezpieczenia Windows aplikację.
-2. Wybierz **pozycję Ochrona & przed zagrożeniami**.
-3. W **obszarze Ochrona przed oprogramowaniem wymuszającym** okup wybierz **pozycję Zarządzaj ochroną oprogramowania wymuszającego okup**.
-4. Jeśli kontrolowany dostęp do folderu jest wyłączony, musisz go włączyć. Wybieranie **folderów chronionych**.
+1. Na urządzeniu Windows 10 lub Windows 11 otwórz aplikację Zabezpieczenia Windows.
+2. Wybierz pozycję **Ochrona przed wirusami i zagrożeniami**.
+3. W obszarze **Ochrona przed oprogramowaniem wymuszającym okup** wybierz pozycję **Zarządzaj ochroną przed oprogramowaniem wymuszającym okup**.
+4. Jeśli kontrolowany dostęp do folderu jest wyłączony, musisz go włączyć. Wybierz **foldery chronione**.
 5. Wykonaj jedną z następujących czynności:
-   - Aby dodać folder, wybierz **pozycję + Dodaj chroniony folder**.
-   - Aby usunąć folder, zaznacz go, a następnie wybierz pozycję **Usuń**.
+   - Aby dodać folder, wybierz pozycję **+ Dodaj folder chroniony**.
+   - Aby usunąć folder, wybierz go, a następnie wybierz pozycję **Usuń**.
 
 > [!NOTE]
-> [Windows folderów systemowych](#windows-system-folders-are-protected-by-default) są domyślnie chronione i nie można ich usuwać z listy.
+> [Windows foldery systemowe](#windows-system-folders-are-protected-by-default) są domyślnie chronione i nie można ich usunąć z listy.

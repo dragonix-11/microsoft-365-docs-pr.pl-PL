@@ -1,5 +1,5 @@
 ---
-title: Planowanie skanów antywirusowych przy Windows zarządzania instrumentacjami zarządzania
+title: Planowanie skanowania antywirusowego przy użyciu instrumentacji zarządzania Windows
 description: Planowanie skanowania antywirusowego przy użyciu usługi WMI
 keywords: szybkie skanowanie, pełne skanowanie, WMI, harmonogram, oprogramowanie antywirusowe
 ms.prod: m365-security
@@ -16,24 +16,28 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: be22e59f6d2be30ead354099f2cc168868959752
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2b25876a43dea3b1598d4bdfa89cf4724c0fca14
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63007878"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788925"
 ---
-# <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>Planowanie skanów antywirusowych przy Windows Zarządzania Instrumentacjami (WMI)
+# <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>Planowanie skanowania antywirusowego przy użyciu instrumentacji zarządzania Windows (WMI)
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-W tym artykule opisano sposób konfigurowania zaplanowanych skanów przy użyciu usługi WMI. Aby dowiedzieć się więcej o planowaniu skanów i typach skanowania, zobacz Konfigurowanie zaplanowanego szybkiego lub pełnego Program antywirusowy Microsoft Defender [skanowania](schedule-antivirus-scans.md). 
+**Platformy**
+- System Windows
 
-## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Planowanie Windows za pomocą instrukcji zarządzania danymi (WMI, Management Instruction)
+W tym artykule opisano sposób konfigurowania zaplanowanych skanów przy użyciu usługi WMI. Aby dowiedzieć się więcej na temat planowania skanowania i typów skanowania, zobacz [Konfigurowanie zaplanowanych szybkich lub pełnych skanów Program antywirusowy Microsoft Defender](schedule-antivirus-scans.md). 
 
-Użyj metody [**Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uzyskać następujące właściwości:
+## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Planowanie skanowania przy użyciu instrukcji zarządzania Windows (WMI)
+
+Użyj [metody **Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) dla następujących właściwości:
 
 ```WMI
 ScanParameters
@@ -42,40 +46,49 @@ ScanScheduleTime
 RandomizeScheduleTaskTimes
 ```
 
-Aby uzyskać więcej informacji i dozwolonych parametrów, zobacz Windows Defender [interfejsów API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Aby uzyskać więcej informacji i dozwolone parametry, zobacz [Windows Defender Interfejsy API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="wmi-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>Sieć WMI do planowania skanów, gdy punkt końcowy nie jest w użyciu
+## <a name="wmi-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>Usługa WMI do planowania skanowania, gdy punkt końcowy nie jest używany
 
-Użyj metody [Set klasy MSFT_MpPreference dla](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) następujących właściwości:
+Użyj [metody Set klasy MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uzyskać następujące właściwości:
 
 ```WMI
 ScanOnlyIfIdleEnabled
 ```
 
-Aby uzyskać więcej informacji o interfejsach API i dozwolonych parametrach, [zobacz Windows Defender interfejsów API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Aby uzyskać więcej informacji na temat interfejsów API i dozwolonych parametrów, zobacz [Windows Defender Interfejsy API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 > [!NOTE]
-> W przypadku planowania skanowania w czasie, gdy punkty końcowe nie są w użyciu, skany nie korzystają z konfiguracji ograniczania procesora i w pełni korzystają z dostępnych zasobów, aby wykonać skanowanie tak szybko, jak to możliwe.
+> Jeśli planujesz skanowanie w czasie, gdy punkty końcowe nie są używane, skany nie uwzględniają konfiguracji ograniczania przepustowości procesora CPU i w pełni wykorzystują dostępne zasoby, aby jak najszybciej ukończyć skanowanie.
 
 
-## <a name="wmi-for-scheduling-scans-to-complete-remediation"></a>Sieć WMI do planowania skanów w celu ukończenia działań naprawczych
+## <a name="wmi-for-scheduling-scans-to-complete-remediation"></a>Usługa WMI do planowania skanowania w celu ukończenia korygowania
 
-Użyj metody [**Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uzyskać następujące właściwości:
+Użyj [metody **Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) dla następujących właściwości:
 
 ```WMI
 RemediationScheduleDay
 RemediationScheduleTime
 ```
 
-Aby uzyskać więcej informacji i dozwolonych parametrów, zobacz Windows Defender [interfejsów API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Aby uzyskać więcej informacji i dozwolone parametry, zobacz [Windows Defender Interfejsy API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
-## <a name="wmi-for-scheduling-daily-scans"></a>Sieć WMI do planowania codziennych skanów
+## <a name="wmi-for-scheduling-daily-scans"></a>Usługa WMI do planowania codziennych skanów
 
-Użyj metody [**Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uzyskać następujące właściwości:
+Użyj [metody **Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) dla następujących właściwości:
 
 ```WMI
 ScanScheduleQuickScanTime
 ```
 
-Aby uzyskać więcej informacji i dozwolonych parametrów, zobacz Windows Defender [interfejsów API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Aby uzyskać więcej informacji i dozwolone parametry, zobacz [Windows Defender Interfejsy API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

@@ -1,7 +1,7 @@
 ---
-title: Włączanie funkcji ograniczonego okresowego Program antywirusowy Microsoft Defender skanowania
-description: Ograniczone skanowanie okresowe umożliwia korzystanie Program antywirusowy Microsoft Defender audio/wideo oprócz innych zainstalowanych dostawców audio/wideo
-keywords: lps, limited, periodic, scan, scanning, compatibility, 3rd party, other av, disable
+title: Włączanie ograniczonej funkcji skanowania Program antywirusowy Microsoft Defender okresowych
+description: Ograniczone okresowe skanowanie umożliwia korzystanie z Program antywirusowy Microsoft Defender oprócz innych zainstalowanych dostawców av
+keywords: lps, limited, periodic, scan, scan, compatibility, 3rd party, other av, disable
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,44 +15,58 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1ba846402bb2ee447ee5f38ff035c119bdc28fc1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5201366ee003efab1edd5a0a536c45db4ec7aabc
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467692"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788903"
 ---
-# <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Ograniczone skanowanie okresowe w programie Program antywirusowy Microsoft Defender
+# <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Użyj ograniczonego, okresowego skanowania w programie antywirusowym Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
 
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-Ograniczone skanowanie okresowe to specjalny typ wykrywania zagrożeń i środków zaradczych, które można włączyć po zainstalowaniu innego produktu antywirusowego na Windows 10 lub Windows 11 urządzeniu.
+**Platformy**
+- System Windows
 
-Tę funkcję można włączyć tylko w określonych sytuacjach. Aby uzyskać więcej informacji na temat ograniczonego skanowania okresowego i Program antywirusowy Microsoft Defender z innymi produktami antywirusowymi, zobacz Program antywirusowy Microsoft Defender [zgodności](microsoft-defender-antivirus-compatibility.md).
+Ograniczone skanowanie okresowe to specjalny typ wykrywania zagrożeń i korygowania, który można włączyć po zainstalowaniu innego produktu antywirusowego na urządzeniu Windows 10 lub Windows 11.
 
-**Firma Microsoft nie zaleca używania tej funkcji w środowiskach przedsiębiorstwa. Ta funkcja jest przeznaczona głównie dla klientów indywidualnych.** Ta funkcja korzysta tylko z ograniczonego podzestawu funkcji Program antywirusowy Microsoft Defender do wykrywania złośliwego oprogramowania i nie będzie w stanie wykryć większości złośliwego oprogramowania ani potencjalnie niechcianego oprogramowania. Ponadto będą ograniczone możliwości zarządzania i raportowania. Firma Microsoft zaleca przedsiębiorstwom wybranie podstawowego rozwiązania antywirusowego i używanie go na wyłączność.
+Można ją włączyć tylko w pewnych sytuacjach. Aby uzyskać więcej informacji na temat ograniczonego okresowego skanowania i sposobu działania Program antywirusowy Microsoft Defender z innymi produktami antywirusowymi, zobacz [Program antywirusowy Microsoft Defender zgodność](microsoft-defender-antivirus-compatibility.md).
 
-## <a name="how-to-enable-limited-periodic-scanning"></a>Jak włączyć ograniczone skanowanie okresowe
+**Firma Microsoft nie zaleca używania tej funkcji w środowiskach przedsiębiorstwa. Jest to funkcja przeznaczona głównie dla użytkowników.** Ta funkcja używa tylko ograniczonego podzestawu Program antywirusowy Microsoft Defender możliwości wykrywania złośliwego oprogramowania i nie będzie w stanie wykryć większości złośliwego oprogramowania i potencjalnie niechcianego oprogramowania. Ponadto możliwości zarządzania i raportowania będą ograniczone. Firma Microsoft zaleca przedsiębiorstwom wybór podstawowego rozwiązania antywirusowego i używanie go wyłącznie.
 
-Domyślnie program Program antywirusowy Microsoft Defender włączy się na urządzeniu z systemem Windows 10 lub Windows 11, jeśli nie ma zainstalowanego innego produktu antywirusowego lub jeśli inny produkt jest nieaktualny, wygasł lub nie działa poprawnie.
+## <a name="how-to-enable-limited-periodic-scanning"></a>Jak włączyć ograniczone okresowe skanowanie
 
-Jeśli Program antywirusowy Microsoft Defender jest włączone, zostaną wyświetlone opcje zwykłego konfigurowania na tym urządzeniu:
+Domyślnie Program antywirusowy Microsoft Defender włączy się na urządzeniu Windows 10 lub Windows 11, jeśli nie zainstalowano innego produktu antywirusowego lub jeśli inny produkt jest nieaktualny, wygasł lub nie działa poprawnie.
 
-:::image type="content" source="images/vtp-wdav.png" alt-text="The Zabezpieczenia Windows app showing Microsoft Defender AV options, including scan options, settings, and update options" lightbox="images/vtp-wdav.png":::
+Jeśli Program antywirusowy Microsoft Defender jest włączona, zostaną wyświetlone zwykłe opcje konfigurowania go na tym urządzeniu:
 
-Jeśli inny produkt antywirusowy jest zainstalowany i działa poprawnie, Program antywirusowy Microsoft Defender zostanie automatycznie wyłączone. Aplikacja Zabezpieczenia Windows zmieni sekcję Ochrona przed wirusami & **zagrożeniami** w celu pokazania stanu produktu audio/wideo i udostępni link do opcji konfiguracji produktu.
+:::image type="content" source="images/vtp-wdav.png" alt-text="Aplikacja Zabezpieczenia Windows z opcjami av usługi Microsoft Defender, w tym opcjami skanowania, ustawieniami i opcjami aktualizacji" lightbox="images/vtp-wdav.png":::
 
-Pod każdymi produktami audio/wideo innych firm nowy link będzie wyświetlany **jako Program antywirusowy Microsoft Defender audio/wideo**. Kliknięcie tego linku spowoduje rozwinięcie tego linku w celu pokazania przełącznika umożliwiającego ograniczone skanowanie okresowe. Należy pamiętać, że opcja ograniczonego okresowego skanowania jest przełącznikiem umożliwiającym włączenie lub wyłączenie skanowania okresowego. 
+Jeśli inny produkt antywirusowy jest zainstalowany i działa poprawnie, Program antywirusowy Microsoft Defender wyłączy się. Aplikacja Zabezpieczenia Windows zmieni sekcję **Ochrona przed zagrożeniami & wirusów**, aby wyświetlić stan produktu AV i udostępni link do opcji konfiguracji produktu.
 
-Przesuwając przełącznik w **stronę Wł.,** będą wyświetlane standardowe opcje audio/wideo programu Microsoft Defender pod produktem audio/wideo innej firmy. U dołu strony pojawi się opcja ograniczonego skanowania okresowego.
+Pod dowolnymi produktami av innych firm zostanie wyświetlony nowy link **Program antywirusowy Microsoft Defender opcji**. Kliknięcie tego linku spowoduje rozwinięcie, aby wyświetlić przełącznik, który umożliwia ograniczone okresowe skanowanie. Należy pamiętać, że ograniczona opcja okresowa to przełącznik umożliwiający włączanie lub wyłączanie skanowania okresowego. 
+
+Przesunięcie przełącznika do pozycji **Włączone** spowoduje wyświetlenie standardowych opcji usługi Microsoft Defender AV poniżej produktu AV innej firmy. Ograniczona opcja skanowania okresowego pojawi się w dolnej części strony.
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 
-- [Konfigurowanie ochrony zachowanie, heuristic i w czasie rzeczywistym](configure-protection-features-microsoft-defender-antivirus.md)
-- [Program antywirusowy Microsoft Defender w programie Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Konfiguruj ochronę behawioralną, heurystyczną i w czasie rzeczywistym](configure-protection-features-microsoft-defender-antivirus.md)
+- [Program antywirusowy Microsoft Defender w Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

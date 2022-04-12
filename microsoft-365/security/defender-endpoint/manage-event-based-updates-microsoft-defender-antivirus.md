@@ -1,7 +1,7 @@
 ---
-title: Stosowanie Program antywirusowy Microsoft Defender aktualizacji po określonych zdarzeniach
-description: Zarządzanie zastosowaniem Program antywirusowy Microsoft Defender zabezpieczeń po uruchomieniu lub otrzymaniu raportów wykrywania w chmurze.
-keywords: aktualizacje, ochrona, wymuszanie aktualizacji, zdarzenia, uruchamianie, sprawdzanie najnowszych, powiadomień
+title: Stosowanie aktualizacji Program antywirusowy Microsoft Defender po określonych zdarzeniach
+description: Zarządzanie sposobem, w jaki Program antywirusowy Microsoft Defender stosuje aktualizacje analizy zabezpieczeń po uruchomieniu lub otrzymaniu raportów wykrywania dostarczanych przez chmurę.
+keywords: aktualizacje, ochrona, wymuszanie aktualizacji, zdarzenia, uruchamianie, sprawdzanie najnowszych, powiadomienia
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,65 +16,69 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c99e4e085de32ac4e7ec77a2155182f1a930d432
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8ad9a5c6cd1a79152640bb153f8a130ecdd29362
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997384"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789497"
 ---
-# <a name="manage-event-based-forced-updates"></a>Zarządzanie aktualizacjami wymuszonmi opartymi na wydarzeniach
+# <a name="manage-event-based-forced-updates"></a>Zarządzaj wymuszonymi aktualizacjami opartymi na zdarzeniach
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-Program antywirusowy Microsoft Defender pozwala określić, czy aktualizacje powinny (czy nie) nastąpić po pewnych zdarzeniach, takich jak uruchomienie lub odebranie określonych raportów z usługi ochrony w chmurze.
+**Platformy**
+- System Windows
 
-## <a name="check-for-protection-updates-before-running-a-scan"></a>Sprawdzanie aktualizacji ochrony przed uruchomieniem skanowania
+Program antywirusowy Microsoft Defender pozwala określić, czy aktualizacje powinny (lub nie powinny) występować po określonych zdarzeniach, takich jak podczas uruchamiania lub po otrzymaniu określonych raportów z usługi ochrony dostarczanej w chmurze.
 
-Możesz użyć poleceń Microsoft Endpoint Configuration Manager, zasady grupy, poleceń cmdlet programu PowerShell i usługi WMI, aby wymusić Program antywirusowy Microsoft Defender sprawdzanie i pobieranie aktualizacji ochrony przed uruchomieniem zaplanowanego skanowania.
+## <a name="check-for-protection-updates-before-running-a-scan"></a>Sprawdzanie dostępności aktualizacji ochrony przed uruchomieniem skanowania
 
-### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Sprawdzanie aktualizacji ochrony Menedżer konfiguracji za pomocą funkcji skanowania przed uruchomieniem skanowania
+Możesz użyć poleceń cmdlet Microsoft Endpoint Configuration Manager, zasady grupy, PowerShell i WMI, aby wymusić Program antywirusowy Microsoft Defender sprawdzanie i pobieranie aktualizacji ochrony przed uruchomieniem zaplanowanego skanowania.
 
-1. Na konsoli Microsoft Endpoint Manager otwórz zasady ochrony przed złośliwym oprogramowaniem, które chcesz zmienić (kliknij pozycję Zasoby i zgodność  w okienku nawigacji po lewej stronie,  \> a następnie rozwiń drzewo do okna Omówienie **Endpoint Protection** \> zasady ochrony przed złośliwym **oprogramowaniem)**
+### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Użyj Configuration Manager, aby sprawdzić aktualizacje ochrony przed uruchomieniem skanowania
 
-2. Przejdź do sekcji **Zaplanowane skanowania i** przed uruchomieniem skanowania ustaw pozycję Sprawdź najnowsze aktualizacje analizy zabezpieczeń **na** wartość **Tak**.
+1. W konsoli Microsoft Endpoint Manager otwórz zasady ochrony przed złośliwym kodem, które chcesz zmienić (kliknij pozycję **Zasoby i zgodność** w okienku nawigacji po lewej stronie, a następnie rozwiń drzewo do **pozycji Przegląd** \> **Endpoint Protection** \> **Zasady ochrony przed złośliwym kodem**)
+
+2. Przejdź do sekcji **Zaplanowane skanowania** i ustaw **pozycję Sprawdź najnowsze aktualizacje analizy zabezpieczeń przed uruchomieniem skanowania** na **wartość Tak**.
 
 3. Kliknij przycisk **OK**.
 
-4. [Wdeksuj zaktualizowane zasady w zwykły sposób](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4. [Wdróż zaktualizowane zasady jak zwykle](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-### <a name="use-group-policy-to-check-for-protection-updates-before-running-a-scan"></a>Sprawdzanie zasady grupy ochrony przed uruchomieniem skanowania za pomocą funkcji aktualizacji
+### <a name="use-group-policy-to-check-for-protection-updates-before-running-a-scan"></a>Użyj zasady grupy, aby sprawdzić aktualizacje ochrony przed uruchomieniem skanowania
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
+1. Na maszynie zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i kliknij przycisk **Edytuj**.
 
-2. Za pomocą **zasady grupy zarządzania przejdź** do **opcji Konfiguracja komputera**.
+2. Za pomocą **edytora zarządzania zasady grupy** przejdź do **pozycji Konfiguracja komputera**.
 
-3. Kliknij **pozycję Zasady** , **a następnie pozycję Szablony administracyjne**.
+3. Kliknij pozycję **Zasady** , a następnie **pozycję Szablony administracyjne**.
 
-4. Rozwiń drzewo, aby **Windows składniki Program antywirusowy Microsoft Defender** \>  \> **skanu**.
+4. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> **Skanuj**.
 
-5. Kliknij dwukrotnie **pozycję Sprawdź najnowsze definicje wirusów i oprogramowania szpiegującego** przed uruchomieniem zaplanowanego skanowania i ustaw opcję **Włączone**.
+5. Kliknij dwukrotnie **pozycję Sprawdź najnowsze definicje wirusów i programów szpiegujących przed uruchomieniem zaplanowanego skanowania** i ustaw opcję **Włączone**.
 
 6. Kliknij przycisk **OK**.
 
-### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>Sprawdzanie aktualizacji ochrony przed uruchomieniem skanowania za pomocą poleceń cmdlet programu PowerShell
+### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>Użyj poleceń cmdlet programu PowerShell, aby sprawdzić, czy nie ma aktualizacji ochrony przed uruchomieniem skanowania
 
-Użyj następujących polecenia cmdlet:
+Użyj następujących poleceń cmdlet:
 
 ```PowerShell
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-Aby uzyskać więcej informacji, zobacz [Używanie poleceń cmdlet programu PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) do konfigurowania i uruchamiania Program antywirusowy Microsoft Defender i poleceń [cmdlet programu antywirusowego Defender](/powershell/module/defender/index).
+Aby uzyskać więcej informacji, zobacz [Używanie poleceń cmdlet programu PowerShell do konfigurowania i uruchamiania poleceń](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlet Program antywirusowy Microsoft Defender i defender antivirus](/powershell/module/defender/index).
 
-### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Używanie Windows zarządzania zabezpieczeniami (WMI) w celu sprawdzenia, czy są dostępne aktualizacje ochrony przed uruchomieniem skanowania
+### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Użyj instrukcji zarządzania Windows (WMI), aby sprawdzić aktualizacje ochrony przed uruchomieniem skanowania
 
-Użyj metody [**Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uzyskać następujące właściwości:
+Użyj [metody **Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) dla następujących właściwości:
 
 ```WMI
 CheckForSignaturesBeforeRunningScan
@@ -82,51 +86,51 @@ CheckForSignaturesBeforeRunningScan
 
 Aby uzyskać więcej informacji, zobacz [Windows Defender interfejsów API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
-## <a name="check-for-protection-updates-on-startup"></a>Sprawdzanie aktualizacji ochrony podczas uruchamiania
+## <a name="check-for-protection-updates-on-startup"></a>Sprawdzanie dostępności aktualizacji ochrony podczas uruchamiania
 
-Za pomocą przycisków zasady grupy wymusić Program antywirusowy Microsoft Defender sprawdzanie i pobieranie aktualizacji ochrony po uruchomionym komputerze.
+Możesz użyć zasady grupy, aby wymusić Program antywirusowy Microsoft Defender na sprawdzanie i pobieranie aktualizacji ochrony po uruchomieniu maszyny.
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
+1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i kliknij przycisk **Edytuj**.
 
-2. Za pomocą **zasady grupy zarządzania przejdź** do **opcji Konfiguracja komputera**.
+2. Za pomocą **edytora zarządzania zasady grupy** przejdź do **pozycji Konfiguracja komputera**.
 
-3. Kliknij **pozycję Zasady** , **a następnie pozycję Szablony administracyjne**.
+3. Kliknij pozycję **Zasady** , a następnie **pozycję Szablony administracyjne**.
 
-4. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> **aktualizacje analizy zabezpieczeń**.
+4. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> **aktualizacje analizy zabezpieczeń**.
 
-5. Kliknij dwukrotnie **pozycję Sprawdź, czy podczas uruchamiania są dostępne najnowsze definicje wirusów i oprogramowania szpiegującego**, i ustaw dla **opcji Włączone.**
-
-6. Kliknij przycisk **OK**.
-
-Za pomocą programu zasady grupy, PowerShell lub WMI można również skonfigurować Program antywirusowy Microsoft Defender, aby sprawdzać aktualizacje podczas uruchamiania, nawet jeśli nie jest uruchomione.
-
-### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Użyj zasady grupy, aby pobrać aktualizacje, Program antywirusowy Microsoft Defender nie jest obecne
-
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
-
-2. Za pomocą **zasady grupy zarządzania danymi** przejdź do **strony Konfiguracja komputera**.
-
-3. Kliknij **pozycję Zasady** , **a następnie pozycję Szablony administracyjne**.
-
-4. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> **aktualizacje analizy zabezpieczeń**.
-
-5. Kliknij dwukrotnie pozycję **Zainicjuj aktualizację analizy zabezpieczeń przy uruchamianiu** i ustaw opcję **Włączone**.
+5. Kliknij dwukrotnie **pozycję Sprawdź najnowsze definicje wirusów i programów szpiegujących podczas uruchamiania** i ustaw opcję **Włączone**.
 
 6. Kliknij przycisk **OK**.
 
-### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Używanie poleceń cmdlet programu PowerShell do pobierania aktualizacji, Program antywirusowy Microsoft Defender nie jest dostępne
+Możesz również użyć zasady grupy, programu PowerShell lub usługi WMI, aby skonfigurować Program antywirusowy Microsoft Defender w celu sprawdzania dostępności aktualizacji podczas uruchamiania, nawet jeśli nie jest uruchomiona.
 
-Użyj następujących polecenia cmdlet:
+### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Użyj zasady grupy, aby pobrać aktualizacje, gdy nie ma Program antywirusowy Microsoft Defender
+
+1. Na maszynie zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i kliknij przycisk **Edytuj**.
+
+2. Korzystając z **edytora zarządzania zasady grupy**, przejdź do pozycji **Konfiguracja komputera**.
+
+3. Kliknij pozycję **Zasady** , a następnie **pozycję Szablony administracyjne**.
+
+4. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> **aktualizacje analizy zabezpieczeń**.
+
+5. Kliknij **dwukrotnie pozycję Inicjuj aktualizację analizy zabezpieczeń podczas uruchamiania** i ustaw opcję **Włączone**.
+
+6. Kliknij przycisk **OK**.
+
+### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Pobieranie aktualizacji przy braku Program antywirusowy Microsoft Defender przy użyciu poleceń cmdlet programu PowerShell
+
+Użyj następujących poleceń cmdlet:
 
 ```PowerShell
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-Aby uzyskać więcej informacji, zobacz Zarządzanie poleceniami [cmdlet programu PowerShell Program antywirusowy Microsoft Defender programem PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) i [poleceniami cmdlet programu Defender Antivirus](/powershell/module/defender/index), aby uzyskać więcej informacji na temat korzystania z programu PowerShell z programem Program antywirusowy Microsoft Defender.
+Aby uzyskać więcej informacji, zobacz [Używanie poleceń cmdlet programu PowerShell do zarządzania poleceniami cmdlet programu antywirusowego Program antywirusowy Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) i [defender](/powershell/module/defender/index), aby uzyskać więcej informacji na temat używania programu PowerShell z Program antywirusowy Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Używanie Windows zarządzania (WMI) w celu pobierania aktualizacji, Program antywirusowy Microsoft Defender nie jest obecna
+### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Użyj instrukcji zarządzania Windows (WMI), aby pobrać aktualizacje, gdy nie ma Program antywirusowy Microsoft Defender
 
-Użyj metody [**Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uzyskać następujące właściwości:
+Użyj [metody **Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) dla następujących właściwości:
 
 ```WMI
 SignatureDisableUpdateOnStartupWithoutEngine
@@ -136,34 +140,44 @@ Aby uzyskać więcej informacji, zobacz [Windows Defender interfejsów API WMIv2
 
 <a id="cloud-report-updates"></a>
 
-## <a name="allow-ad-hoc-changes-to-protection-based-on-cloud-delivered-protection"></a>Zezwalanie na doraźne zmiany w ochronie opartej na ochronie w chmurze
+## <a name="allow-ad-hoc-changes-to-protection-based-on-cloud-delivered-protection"></a>Zezwalaj na zmiany ad hoc w ochronie w oparciu o ochronę dostarczaną przez chmurę
 
-Program Microsoft Defender AV może wprowadzać zmiany w zabezpieczeniach w chmurze. Zmiany te mogą wystąpić poza normalnymi lub planowanymi aktualizacjami ochrony.
+Usługa Microsoft Defender AV może wprowadzać zmiany w swojej ochronie w oparciu o ochronę dostarczaną przez chmurę. Takie zmiany mogą wystąpić poza normalnymi lub zaplanowanymi aktualizacjami ochrony.
 
-Jeśli włączono ochronę w chmurze, program Microsoft Defender AV będzie wysyłać podejrzanych plików do Windows Defender danych. Jeśli usługa w chmurze zgłasza, że plik jest złośliwy, a plik został wykryty w ostatniej aktualizacji ochrony, możesz za pomocą programu zasady grupy skonfigurować program Microsoft Defender AV w celu automatycznego odbierania tej aktualizacji ochrony. Można również stosować inne ważne aktualizacje dotyczące ochrony.
+Jeśli włączono ochronę dostarczaną przez chmurę, usługa Microsoft Defender AV wyśle podejrzane pliki do chmury Windows Defender. Jeśli usługa w chmurze zgłasza, że plik jest złośliwy, a plik zostanie wykryty w ostatniej aktualizacji ochrony, możesz użyć zasady grupy, aby skonfigurować usługę Microsoft Defender AV, aby automatycznie otrzymywać tę aktualizację ochrony. Można również zastosować inne ważne aktualizacje ochrony.
 
-### <a name="use-group-policy-to-automatically-download-recent-updates-based-on-cloud-delivered-protection"></a>Użyj zasady grupy, aby automatycznie pobierać najnowsze aktualizacje w oparciu o ochronę w chmurze
+### <a name="use-group-policy-to-automatically-download-recent-updates-based-on-cloud-delivered-protection"></a>Użyj zasady grupy, aby automatycznie pobierać najnowsze aktualizacje w oparciu o ochronę dostarczaną przez chmurę
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
+1. Na maszynie zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i kliknij przycisk **Edytuj**.
 
-2. Za pomocą **zasady grupy zarządzania przejdź** do **opcji Konfiguracja komputera**.
+2. Za pomocą **edytora zarządzania zasady grupy** przejdź do **pozycji Konfiguracja komputera**.
 
-3. Kliknij **pozycję Zasady** , **a następnie pozycję Szablony administracyjne**.
+3. Kliknij pozycję **Zasady** , a następnie **pozycję Szablony administracyjne**.
 
-4. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> **aktualizacje analizy zabezpieczeń**.
+4. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> **aktualizacje analizy zabezpieczeń**.
 
-5. Kliknij dwukrotnie pozycję **Zezwalaj na aktualizacje analizy zabezpieczeń w czasie rzeczywistym na podstawie** raportów dla usługi MAPY Microsoft i ustaw opcję **Włączone**. Następnie kliknij przycisk **OK**.
+5. Kliknij **dwukrotnie pozycję Zezwalaj na aktualizacje analizy zabezpieczeń w czasie rzeczywistym na podstawie raportów w usłudze Microsoft MAPS** i ustaw opcję **Włączone**. Następnie kliknij przycisk **OK**.
 
-6. **Zezwalaj na wyłączanie raportów opartych na definicjach w aplikacji Microsoft MAPS** i ustawianie dla **opcji Włączone.** Następnie kliknij przycisk **OK**.
+6. **Zezwalaj na powiadomienia, aby wyłączyć raporty oparte na definicjach w usłudze Microsoft MAPS** i ustawić opcję **Włączone**. Następnie kliknij przycisk **OK**.
 
 > [!NOTE]
-> **Zezwalaj na wyłączanie powiadomień w raportach opartych** na definicjach, dzięki funkcji MAPY Microsoft mogą wyłączać te definicje, które mogą powodować raporty fałszywie dodatnie. Aby ta funkcja działała, musisz skonfigurować komputer tak, aby ta funkcja działała w aplikacji Microsoft MAPS.
+> **Zezwalaj na powiadomienia w celu wyłączenia raportów opartych na definicjach** umożliwia usłudze Microsoft MAPS wyłączenie tych definicji, o których wiadomo, że powodują raporty fałszywie dodatnie. Aby ta funkcja działała, należy skonfigurować komputer do dołączania do usługi Microsoft MAPS.
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Wdrażanie Program antywirusowy Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Zarządzanie tym, kiedy mają być pobierane i stosowane aktualizacje ochrony](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-- [Zarządzanie aktualizacjami dla punktów końcowych, które są aktualne](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [Zarządzanie aktualizacjami dla urządzeń przenośnych i maszyn wirtualnych](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Program antywirusowy Microsoft Defender w programie Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Zarządzanie pobieraniem i stosowaniem aktualizacji ochrony](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+- [Zarządzanie aktualizacjami dla punktów końcowych, które są nieaktualne](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Zarządzaj aktualizacjami dla urządzeń przenośnych i maszyn wirtualnych ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [Program antywirusowy Microsoft Defender w Windows 10](microsoft-defender-antivirus-in-windows-10.md)

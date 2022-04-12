@@ -1,7 +1,7 @@
 ---
-title: Razem lepiej — Program antywirusowy Microsoft Defender i Office 365 (w tym OneDrive) — lepsza ochrona przed oprogramowaniem wymuszającym okup i cyberatakami
-description: Office 365, który zawiera OneDrive, łączy się świetnie z Program antywirusowy Microsoft Defender. Aby dowiedzieć się więcej, przeczytaj ten artykuł.
-keywords: windows defender, oprogramowanie antywirusowe, office 365, onedrive, przywracanie, oprogramowanie wymuszające okup
+title: Lepsze razem - Program antywirusowy Microsoft Defender i Office 365 (w tym OneDrive) - lepsza ochrona przed oprogramowaniem wymuszającym okup i cyberzagrożeń
+description: Office 365, w tym OneDrive, cudownie łączy się z Program antywirusowy Microsoft Defender. Przeczytaj ten artykuł, aby dowiedzieć się więcej.
+keywords: windows defender, antivirus, office 365, onedrive, restore, ransomware
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,78 +18,93 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fbbac9e2b2c30748158cf245cdf55aa6a1a82333
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1690a100a2743d35bc85f116398d94325ad47fbc
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997767"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788463"
 ---
-# <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Razem lepiej: Program antywirusowy Microsoft Defender i Office 365
+# <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Lepiej razem: program antywirusowy Microsoft Defender i usługa Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
 - Microsoft 365
 
-Być może wiesz już, że:
+**Platformy**
+- System Windows
 
-- **Program antywirusowy Microsoft Defender chroni urządzenie Windows przed zagrożeniami oprogramowania, takimi jak wirusy, złośliwe oprogramowanie i oprogramowanie szpiegujące**. Program antywirusowy Microsoft Defender to całkowita, bieżąca ochrona wbudowana w Windows 10 i Windows 11 i gotowa do pracy. [Program antywirusowy Microsoft Defender ochronę następnej generacji](./microsoft-defender-antivirus-in-windows-10.md). 
+Być może już wiesz, że:
 
-- **Office 365 obejmuje ochronę przed złośliwym oprogramowaniem, antyspamową i antyszyfrową**. W ramach subskrypcji Office 365 otrzymasz pocztę e-mail i kalendarze klasy premium, aplikacje Office, 1 TB przestrzeni dyskowej w chmurze (za pośrednictwem usługi OneDrive) oraz zaawansowane zabezpieczenia na wszystkich swoich urządzeniach. Dotyczy to użytkowników domowych i firmowych. Jeśli jesteś użytkownikiem biznesowym i Twoja organizacja korzysta z programu Office 365 E5, zapewniasz jeszcze większą ochronę za pośrednictwem usługi Microsoft Defender dla systemu Office 365 Ochrona przed zagrożeniami za pomocą programu [Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
+- **Program antywirusowy Microsoft Defender chroni urządzenie Windows przed zagrożeniami oprogramowania, takimi jak wirusy, złośliwe oprogramowanie i programy szpiegujące**. Program antywirusowy Microsoft Defender to kompletna, ciągła ochrona, wbudowana w Windows 10 i Windows 11 i gotowa do pracy. [Program antywirusowy Microsoft Defender jest twoją ochroną nowej generacji](./microsoft-defender-antivirus-in-windows-10.md). 
 
-- **OneDrive, zawarte w Office 365, umożliwia przechowywanie plików i folderów w trybie online oraz udostępnianie ich zgodnie z twoimi potrzebami**. Możesz współpracować z osobami (w pracy lub w pracy) i współtwórz pliki, które są przechowywane w OneDrive. Możesz również uzyskać dostęp do plików na wszystkich swoich urządzeniach (komputerze, telefonie i tablecie). [Zarządzaj udostępnianiem w u OneDrive](/OneDrive/manage-sharing).
+- **Office 365 obejmuje ochronę przed złośliwym kodem, ochronę przed złośliwym kodem i ochronę przed złośliwym kodem**. Dzięki subskrypcji Office 365 otrzymujesz pocztę e-mail i kalendarze w warstwie Premium, aplikacje Office, 1 TB magazynu w chmurze (za pośrednictwem OneDrive) oraz zaawansowane zabezpieczenia na wszystkich urządzeniach. Dotyczy to użytkowników domowych i biznesowych. A jeśli jesteś użytkownikiem biznesowym, a Twoja organizacja korzysta z Office 365 E5, uzyskasz jeszcze większą ochronę za pośrednictwem Ochrona usługi Office 365 w usłudze Microsoft Defender [Ochrona przed zagrożeniami za pomocą Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
 
-**Ale czy wiesz, że istnieją dobre powody dla bezpieczeństwa, aby korzystać Program antywirusowy Microsoft Defender z innymi Office 365**? Oto dwa:
+- **OneDrive, uwzględnione w Office 365, umożliwia przechowywanie plików i folderów w trybie online oraz udostępnianie ich zgodnie z potrzebami**. Możesz współpracować z osobami (dla pracy lub zabawy) i plikami współautorów przechowywanymi w OneDrive. Możesz również uzyskać dostęp do plików na wszystkich urządzeniach (komputerze, telefonie i tablecie). [Zarządzanie udostępnianiem w OneDrive](/OneDrive/manage-sharing).
 
- 1. [Zapewniasz ochronę i odzyskiwanie oprogramowania wymuszającego okup](#ransomware-protection-and-recovery).
+**Ale czy wiesz, że istnieją dobre powody bezpieczeństwa, aby używać Program antywirusowy Microsoft Defender razem z Office 365**? Oto dwa:
+
+ 1. [Uzyskujesz ochronę przed oprogramowaniem wymuszającym okup i odzyskiwanie](#ransomware-protection-and-recovery).
 
  2. [Integracja oznacza lepszą ochronę](#integration-means-better-protection).
 
-Aby dowiedzieć się więcej, przeczytaj poniższe sekcje.
+Przeczytaj poniższe sekcje, aby dowiedzieć się więcej.
 
-## <a name="ransomware-protection-and-recovery"></a>Ochrona i odzyskiwanie oprogramowania wymuszającego okup
+## <a name="ransomware-protection-and-recovery"></a>Ochrona przed oprogramowaniem wymuszającym okup i odzyskiwanie
 
-Po zapisaniu plików [w OneDrive i](/onedrive) wykryciu [Program antywirusowy Microsoft Defender](./microsoft-defender-antivirus-in-windows-10.md) oprogramowania wymuszającego okup na urządzeniu występują następujące zdarzenia:
+Po zapisaniu plików w [OneDrive](/onedrive) i [Program antywirusowy Microsoft Defender](./microsoft-defender-antivirus-in-windows-10.md) wykryciu zagrożenia wymuszającego okup na urządzeniu wystąpią następujące czynności:
 
-1. **Poniesiesz o tym zagrożenie**. (Jeśli Twoja organizacja korzysta z programu [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), Twój zespół operacyjny ds. zabezpieczeń jest także powiadamiany o tym).
+1. **Powiedziano Ci o zagrożeniu**. (Jeśli Twoja organizacja korzysta z [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md), twój zespół ds. operacji zabezpieczeń również otrzymuje powiadomienie).
 
-2. **Program antywirusowy Microsoft Defender (i** zespołu zabezpieczeń Twojej organizacji) usunięcie oprogramowania wymuszającego okup z twoich urządzeń. (Jeśli Twoja organizacja używa programu Microsoft Defender for Endpoint, Twój zespół operacyjny ds. zabezpieczeń może ustalić, czy inne urządzenia zostały zainfekowane, i podjąć także odpowiednie działania).
+2. **Program antywirusowy Microsoft Defender pomaga (i zespołowi ds. zabezpieczeń organizacji) usunąć oprogramowanie wymuszające okup** z urządzeń. (Jeśli Organizacja używa Ochrona punktu końcowego w usłudze Microsoft Defender, twój zespół ds. operacji zabezpieczeń może określić, czy inne urządzenia są zainfekowane, i podjąć odpowiednie działania.
 
-3. **Opcja odzyskania plików w aplikacji OneDrive**. Za pomocą OneDrive przywracania plików możesz odzyskać pliki w programie OneDrive do stanu, w którym były przed atakiem oprogramowania wymuszającego okup. Zobacz [Wykrywanie oprogramowania wymuszającego okup i odzyskiwanie plików](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f).
+3. **Dostępna jest opcja odzyskiwania plików w OneDrive**. Za pomocą funkcji przywracania plików OneDrive można odzyskać pliki w OneDrive do stanu, w który znajdowały się przed atakiem wymuszającym okup. Zobacz [Wykrywanie oprogramowania wymuszającego okup i odzyskiwanie plików](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f).
 
-Pomyśl o czasie i kłopotach, które może to zaoszczędzić. 
+Pomyśl o czasie i kłopotliwym czasie, który można zaoszczędzić. 
 
 ## <a name="integration-means-better-protection"></a>Integracja oznacza lepszą ochronę
 
-Program Microsoft Defender for Office 365 zintegrowany z programem Microsoft Defender for Endpoint oznacza lepszą ochronę dla Twojej organizacji. W tym celu wykonaj następujące czynności:
+Ochrona usługi Office 365 w usłudze Microsoft Defender zintegrowana z Ochrona punktu końcowego w usłudze Microsoft Defender oznacza lepszą ochronę organizacji. W tym celu wykonaj następujące czynności:
 
-- [Usługa Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) chroni organizację przed złośliwymi zagrożeniami, które mogą być wyświetlane w wiadomościach e-mail, załącznikach e-mail i linkach (adresach URL) w Office dokumentach.
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender](/microsoft-365/security/office-365-security/office-365-atp) chroni organizację przed złośliwymi zagrożeniami w wiadomościach e-mail, załącznikach wiadomości e-mail i linkach (adresach URL) w dokumentach Office.
 
-    AND
+    I
 
-- [Program Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) chroni Twoje urządzenia przed zagrożeniami cyberzagrożeniami, wykrywa zaawansowane ataki i naruszenia danych, automatyzuje zdarzenia związane z zabezpieczeniami i ulepsza twoje zabezpieczenia.
+- [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md) chroni urządzenia przed zagrożeniami cybernetycznymi, wykrywa zaawansowane ataki i naruszenia danych, automatyzuje zdarzenia bezpieczeństwa i poprawia stan bezpieczeństwa.
 
-    SO
+    WIĘC
 
-- Po włączeniu integracji Twój zespół operacyjny ds. zabezpieczeń w portalu Microsoft 365 Defender może wyświetlić listę urządzeń używanych przez adresatów wykrytych adresów URL lub wiadomości e-mail oraz ostatnie <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">alerty dotyczące tych urządzeń</a>.
+- Po włączeniu integracji zespół ds. operacji zabezpieczeń może wyświetlić listę urządzeń, które są używane przez adresatów wszelkich wykrytych adresów URL lub wiadomości e-mail, wraz z ostatnimi alertami dla tych urządzeń w <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalu Microsoft 365 Defender</a>.
 
-Jeśli jeszcze tego nie zrobiono, [zintegruj usługę Microsoft Defender for Office 365 z usługą Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde).
+Jeśli jeszcze tego nie zrobiono, [zintegruj Ochrona usługi Office 365 w usłudze Microsoft Defender z Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde).
 
-## <a name="more-good-reasons-to-use-onedrive"></a>Bardziej dobre powody do korzystania z OneDrive
+## <a name="more-good-reasons-to-use-onedrive"></a>Więcej dobrych powodów, dla których warto używać OneDrive
 
-Ochrona przed oprogramowaniem wymuszającym okup to jeden z  powodów, dla których warto umieszczać pliki w OneDrive. Jest jeszcze kilka dobrą przyczyn, podsumowanych w tym klipie wideo: <br/><br/>
+Ochrona przed oprogramowaniem wymuszającym okup to jeden z doskonałych powodów, aby umieszczać pliki w OneDrive. Istnieje jeszcze kilka dobrych powodów, podsumowanych w tym filmie wideo: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 ## <a name="want-to-learn-more-see-these-resources"></a>Chcesz dowiedzieć się więcej? Zobacz następujące zasoby:
 
 - [OneDrive](/onedrive)
 
-- [Usługa Microsoft Defender dla Office 365](/microsoft-365/security/office-365-security/office-365-atp)
+- [Ochrona usługi Office 365 w usłudze Microsoft Defender](/microsoft-365/security/office-365-security/office-365-atp)
 
 - [Ochrona punktu końcowego w usłudze Microsoft Defender](microsoft-defender-endpoint.md)
+
+

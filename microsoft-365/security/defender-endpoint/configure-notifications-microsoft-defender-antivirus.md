@@ -1,7 +1,7 @@
 ---
-title: Konfigurowanie Program antywirusowy Microsoft Defender powiadomień
-description: Dowiedz się, jak skonfigurować i dostosować zarówno standardowe, jak i inne Program antywirusowy Microsoft Defender dotyczące punktów końcowych.
-keywords: powiadomienia, defender, oprogramowanie antywirusowe, punkt końcowy, zarządzanie, administrator
+title: Konfigurowanie powiadomień Program antywirusowy Microsoft Defender
+description: Dowiedz się, jak skonfigurować i dostosować zarówno standardowe, jak i inne powiadomienia Program antywirusowy Microsoft Defender w punktach końcowych.
+keywords: powiadomienia, obrońca, oprogramowanie antywirusowe, punkt końcowy, zarządzanie, administrator
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,100 +16,113 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 287e49a92032e725153065ef3d996e2b5c14baf9
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: e38a8e9de3bef132dfdf3d2a088190a5038a2941
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "62996794"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790201"
 ---
-# <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Konfigurowanie Program antywirusowy Microsoft Defender, które są wyświetlane w punktach końcowych
+# <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Konfigurowanie powiadomień Program antywirusowy Microsoft Defender wyświetlanych w punktach końcowych
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-W Windows 10 i Windows 11 powiadomienia aplikacji dotyczące wykrywania złośliwego oprogramowania i rozwiązywania problemów są bardziej niezawodne, spójne i zwięzłe. Program antywirusowy Microsoft Defender są wyświetlane w punktach końcowych po zakończeniu skanowania i wykryciu zagrożeń. Powiadomienia są wyświetlane zarówno po zaplanowanych, jak i ręcznie wyzwalanych skanach. Powiadomienia te są również wyświetlane w **Centrum** powiadomień, a w regularnych odstępach czasu jest wyświetlane podsumowanie skanów i wykrywania zagrożeń.
+**Platformy**
+- System Windows
 
-Jeśli jesteś częścią zespołu zabezpieczeń organizacji, możesz skonfigurować sposób, w jaki powiadomienia są wyświetlane w punktach końcowych, takie jak powiadomienia, które monitowały o ponowne uruchomienie systemu lub wskazujące, że wykryto i usunięto zagrożenie.
+W Windows 10 i Windows 11 powiadomienia aplikacji dotyczące wykrywania i korygowania złośliwego oprogramowania są bardziej niezawodne, spójne i zwięzłe. Program antywirusowy Microsoft Defender powiadomienia są wyświetlane w punktach końcowych po zakończeniu skanowania i wykryciu zagrożeń. Powiadomienia są wykonywane zarówno po zaplanowanych, jak i ręcznie wyzwalanych skanowaniach. Te powiadomienia są również wyświetlane w **Centrum powiadomień**, a podsumowanie skanów i wykrywania zagrożeń jest wyświetlane w regularnych odstępach czasu.
 
-## <a name="configure-antivirus-notifications-using-group-policy-or-the-windows-security-app"></a>Konfigurowanie powiadomień antywirusowych zasady grupy aplikacji Zabezpieczenia Windows sieci
+Jeśli jesteś członkiem zespołu ds. zabezpieczeń organizacji, możesz skonfigurować sposób wyświetlania powiadomień w punktach końcowych, na przykład powiadomienia monitujące o ponowne uruchomienie systemu lub wskazujące, że wykryto i skorygowano zagrożenie.
 
-W aplikacji mobilnej można skonfigurować wyświetlanie dodatkowych powiadomień, takich jak podsumowania dotyczące wykrywania zagrożeń, [Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md) aplikacji oraz powiadomienia zasady grupy.
+## <a name="configure-antivirus-notifications-using-group-policy-or-the-windows-security-app"></a>Konfigurowanie powiadomień antywirusowych przy użyciu zasady grupy lub aplikacji Zabezpieczenia Windows
+
+Możesz skonfigurować wyświetlanie dodatkowych powiadomień, takich jak ostatnie podsumowania wykrywania zagrożeń, w [aplikacji Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md) i za pomocą zasady grupy.
 
 > [!NOTE]
-> W Windows 10 1607  \> ta funkcja była nazywana rozszerzonymi powiadomieniami i  została skonfigurowana w obszarze aktualizacji Windows Ustawienia aktualizacji & **zabezpieczeń** \> **Windows Defender**. W zasady grupy dla wszystkich wersji systemu Windows 10 i Windows 11 funkcja powiadomień nosi nazwę **Rozszerzone powiadomienia**.
+> W Windows 10 wersja 1607 ta funkcja została **nazwana Rozszerzone powiadomienia** i została skonfigurowana **w** \> Windows Ustawienia **Update & Windows Defender zabezpieczeń**\>. W zasady grupy ustawień dla wszystkich wersji Windows 10 i Windows 11 funkcja powiadomień nosi nazwę **Powiadomienia rozszerzone**.
 
-### <a name="use-group-policy-to-disable-additional-notifications"></a>Użyj zasady grupy, aby wyłączyć dodatkowe powiadomienia
+### <a name="use-group-policy-to-disable-additional-notifications"></a>Wyłączanie dodatkowych powiadomień przy użyciu zasady grupy
 
-1. Na komputerze zasady grupy zarządzania otwórz [konsolę zasady grupy zarządzania danymi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Kliknij prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
+2. Kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-3. W zasady grupy **zarządzania przejdź** do **konfiguracji komputera**.
+3. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera**.
 
-4. Wybierz **pozycję Szablony administracyjne**.
+4. Wybierz pozycję **Szablony administracyjne**.
 
-5. Rozwiń drzewo, **aby Windows składniki** \> **Program antywirusowy Microsoft Defender** >  **Raportowanie**.
+5. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** >  **Raportowanie**.
 
-6. Kliknij dwukrotnie **pozycję Wyłącz rozszerzone powiadomienia** i ustaw dla tej opcji wartość **Włączone**. Następnie wybierz przycisk **OK**. Zapobiegnie to pojawianiu się dodatkowych powiadomień.
-
-> [!IMPORTANT]
-> Wyłączenie dodatkowych powiadomień nie spowoduje wyłączenia powiadomień krytycznych, takich jak wykrywanie zagrożeń i alerty o działaniach naprawczych.
-
-### <a name="use-the-windows-security-app-to-disable-additional-notifications"></a>Wyłączanie dodatkowych Zabezpieczenia Windows za pomocą aplikacji Zabezpieczenia Windows
-
-1. Otwórz aplikację Zabezpieczenia Windows, klikając ikonę tarczy na pasku zadań lub wyszukując w menu Start pozycję **Zabezpieczenia**.
-
-2. Wybierz **kafelek Ochrona przed** & zagrożeniami (lub ikonę tarczy na lewym pasku menu), a następnie wybierz pozycję Ustawienia ochrony przed & **wirusami**
-
-3. Przewiń do sekcji **Powiadomienia** i wybierz **pozycję Zmień ustawienia powiadomień**.
-
-4. Przesuń przełącznik do opcji **Wyłączone lub** **Wł.,** aby wyłączyć lub włączyć dodatkowe powiadomienia.
+6. Kliknij dwukrotnie **pozycję Wyłącz powiadomienia rozszerzone** i ustaw opcję **Włączone**. Następnie wybierz przycisk **OK**. Uniemożliwi to wyświetlanie dodatkowych powiadomień.
 
 > [!IMPORTANT]
-> Wyłączenie dodatkowych powiadomień nie spowoduje wyłączenia powiadomień krytycznych, takich jak wykrywanie zagrożeń i alerty o działaniach naprawczych.
+> Wyłączenie dodatkowych powiadomień nie spowoduje wyłączenia powiadomień krytycznych, takich jak alerty wykrywania zagrożeń i korygowania.
 
-## <a name="configure-standard-notifications-on-endpoints-using-group-policy"></a>Konfigurowanie standardowych powiadomień dotyczących punktów końcowych przy użyciu zasady grupy
+### <a name="use-the-windows-security-app-to-disable-additional-notifications"></a>Wyłączanie dodatkowych powiadomień za pomocą aplikacji Zabezpieczenia Windows
 
-Za pomocą zasady grupy:
+1. Otwórz aplikację Zabezpieczenia Windows, klikając ikonę osłony na pasku zadań lub wyszukując menu Start dla pozycji **Zabezpieczenia**.
 
-- Wyświetlanie dodatkowego, dostosowanego tekstu na punktach końcowych, gdy użytkownik musi wykonać akcję
-- Ukrywanie wszystkich powiadomień w punktach końcowych
-- Ukrywanie powiadomień o ponownym uruchomieniu w punktach końcowych
+2. Wybierz kafelek **Ochrona przed zagrożeniami &** wirusami (lub ikona osłony na pasku menu po lewej stronie), a następnie wybierz pozycję **Ustawienia ochrony przed zagrożeniami & wirusów**
 
-Ukrycie powiadomień może być przydatne w sytuacjach, w których nie można ukryć całego Program antywirusowy Microsoft Defender interfejsu. Aby [uzyskać więcej informacji,](prevent-end-user-interaction-microsoft-defender-antivirus.md) zobacz Uniemożliwianie użytkownikom Program antywirusowy Microsoft Defender interfejsu użytkownika. Ukrycie powiadomień występuje tylko w przypadku punktów końcowych, w których wdrożono zasady. Powiadomienia dotyczące czynności, które należy wykonać (takich jak ponowne uruchomienie), nadal będą wyświetlane na Microsoft Endpoint Manager Endpoint Protection [nawigacyjnym monitorowania i raportach](/configmgr/protect/deploy-use/monitor-endpoint-protection). 
+3. Przewiń do sekcji **Powiadomienia** i wybierz pozycję **Zmień ustawienia powiadomień**.
 
-Aby dodać niestandardowe informacje kontaktowe do powiadomień dotyczących punktów końcowych, zobacz [Dostosowywanie Zabezpieczenia Windows dla organizacji](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).
+4. Przesuń przełącznik do **pozycji Wyłączone** lub **Włączone** , aby wyłączyć lub włączyć dodatkowe powiadomienia.
 
-### <a name="use-group-policy-to-hide-notifications"></a>Ukrywanie zasady grupy za pomocą funkcji powiadomienia
+> [!IMPORTANT]
+> Wyłączenie dodatkowych powiadomień nie spowoduje wyłączenia powiadomień krytycznych, takich jak alerty wykrywania zagrożeń i korygowania.
 
-1. Na komputerze zasady grupy zarządzania otwórz [konsolę zasady grupy zarządzania danymi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+## <a name="configure-standard-notifications-on-endpoints-using-group-policy"></a>Konfigurowanie standardowych powiadomień w punktach końcowych przy użyciu zasady grupy
 
-2. Kliknij prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
+Możesz użyć zasady grupy, aby:
 
-3. W **administracyjnym zasady grupy zarządzania** przejdź do **strony Konfiguracja komputera,** a następnie wybierz pozycję **Szablony administracyjne**.
+- Wyświetl dodatkowy, dostosowany tekst w punktach końcowych, gdy użytkownik musi wykonać akcję
+- Ukryj wszystkie powiadomienia w punktach końcowych
+- Ukryj powiadomienia ponownego uruchamiania w punktach końcowych
 
-4. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> **interfejsu klienta**. 
+Ukrywanie powiadomień może być przydatne w sytuacjach, w których nie można ukryć całego interfejsu Program antywirusowy Microsoft Defender. Aby uzyskać więcej informacji, zobacz [Zapobieganie wyświetlaniu lub interakcji użytkowników z interfejsem użytkownika Program antywirusowy Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md). Ukrywanie powiadomień będzie miało miejsce tylko w punktach końcowych, do których zostały wdrożone zasady. Powiadomienia związane z akcjami, które należy wykonać (na przykład ponowny rozruch), będą nadal wyświetlane na [Microsoft Endpoint Manager Endpoint Protection pulpitu nawigacyjnego monitorowania i raportów](/configmgr/protect/deploy-use/monitor-endpoint-protection). 
 
-5. Kliknij dwukrotnie pozycję **Pomiń wszystkie** powiadomienia i ustaw dla opcji wartość **Włączone**. 
+Aby dodać niestandardowe informacje kontaktowe do powiadomień punktu końcowego, zobacz [Dostosowywanie aplikacji Zabezpieczenia Windows dla organizacji](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).
 
-6. Wybierz przycisk **OK**. Zapobiegnie to pojawianiu się dodatkowych powiadomień.
+### <a name="use-group-policy-to-hide-notifications"></a>Ukrywanie powiadomień przy użyciu zasady grupy
 
-### <a name="use-group-policy-to-hide-reboot-notifications"></a>Ukrywanie zasady grupy ponownego rozruchu za pomocą funkcji aktualizacji
+1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-1. Na komputerze zasady grupy zarządzania otwórz [konsolę zasady grupy zarządzania danymi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+2. Kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
 
-2. Kliknij prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
+3. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera**, a następnie wybierz pozycję **Szablony administracyjne**.
 
-2. W zasady grupy **zarządzania przejdź** do **konfiguracji komputera**.
+4. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> **interfejs klienta**. 
 
-3. Kliknij **pozycję Szablony administracyjne**.
+5. Kliknij dwukrotnie **pozycję Pomiń wszystkie powiadomienia** i ustaw opcję **Włączone**. 
 
-4. Rozwiń drzewo, **aby Windows składniki Program antywirusowy Microsoft Defender** \>  \> **interfejsu klienta**.
+6. Wybierz przycisk **OK**. Uniemożliwi to wyświetlanie dodatkowych powiadomień.
 
-5. Kliknij dwukrotnie pozycję **Pomiń powiadomienia o ponownym uruchomieniu** i ustaw opcję **Włączone**. 
+### <a name="use-group-policy-to-hide-reboot-notifications"></a>Ukrywanie powiadomień o ponownym uruchomieniu przy użyciu zasady grupy
 
-5. Wybierz przycisk **OK**. Zapobiegnie to pojawianiu się dodatkowych powiadomień.
+1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
+2. Kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, a następnie wybierz pozycję **Edytuj**.
+
+2. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera**.
+
+3. Kliknij pozycję **Szablony administracyjne**.
+
+4. Rozwiń drzewo, aby **Windows składniki** \> **Program antywirusowy Microsoft Defender** \> **interfejs klienta**.
+
+5. Kliknij **dwukrotnie pozycję Pomija powiadomienia ponownego uruchamiania** i ustaw opcję **Włączone**. 
+
+5. Wybierz przycisk **OK**. Uniemożliwi to wyświetlanie dodatkowych powiadomień.
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

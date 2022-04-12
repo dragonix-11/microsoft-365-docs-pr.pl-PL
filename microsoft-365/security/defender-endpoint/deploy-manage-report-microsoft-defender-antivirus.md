@@ -1,6 +1,6 @@
 ---
-title: Wdrażanie i zgłaszanie w Program antywirusowy Microsoft Defender
-description: Możesz wdrażać aplikacje i zarządzać nimi za Program antywirusowy Microsoft Defender Intune, Microsoft Endpoint Configuration Manager, zasady grupy, PowerShell lub WMI
+title: Wdrażanie i raportowanie Program antywirusowy Microsoft Defender oraz zarządzanie nimi
+description: Program antywirusowy Microsoft Defender można wdrażać i zarządzać nimi za pomocą Intune, Microsoft Endpoint Configuration Manager, zasady grupy, programu PowerShell lub usługi WMI
 keywords: wdrażanie, zarządzanie, aktualizowanie, ochrona, Program antywirusowy Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,56 +16,71 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1ce212bf01b8c464760192a4bbd6355498d19c3c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4e0d249f7805c47be55ec42f3362ca1952c20ca3
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997795"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788507"
 ---
-# <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Wdrażanie i zgłaszanie w Program antywirusowy Microsoft Defender
+# <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Wdrażanie i raportowanie Program antywirusowy Microsoft Defender oraz zarządzanie nimi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender 
 
-Wdrożenie aplikacji, zarządzanie nimi i zgłaszanie Program antywirusowy Microsoft Defender na wiele sposobów.
+**Platformy**
+- System Windows
 
-Ponieważ Program antywirusowy Microsoft Defender klienta jest instalowany jako podstawowa część programu Windows 10 i Windows 11, tradycyjne wdrażanie klienta do Twoich punktów końcowych nie ma zastosowania.
+Możesz wdrażać i raportować Program antywirusowy Microsoft Defender oraz zarządzać nimi na wiele sposobów.
 
-Jednak w większości przypadków konieczne będzie włączenie usługi ochrony na swoich punktach końcowych za pomocą programu Microsoft Intune, Microsoft Endpoint Configuration Manager, Microsoft Defender dla chmury lub obiektów zasady grupy, co opisano w poniższej tabeli.
+Ponieważ klient Program antywirusowy Microsoft Defender jest zainstalowany jako podstawowa część Windows 10 i Windows 11, tradycyjne wdrożenie klienta w punktach końcowych nie ma zastosowania.
 
-Zobaczysz też dodatkowe linki dla:
+Jednak w większości przypadków nadal trzeba będzie włączyć usługę ochrony w punktach końcowych przy użyciu Microsoft Intune, Microsoft Endpoint Configuration Manager, Microsoft Defender dla Chmury lub zasady grupy  Obiekty opisane w poniższej tabeli.
 
-- Zarządzanie Program antywirusowy Microsoft Defender siecią, w tym zarządzanie aktualizacjami produktów i ochrony
-- Raportowanie dotyczące Program antywirusowy Microsoft Defender danych
+Zostaną również wyświetlone dodatkowe linki do następujących elementów:
+
+- Zarządzanie ochroną Program antywirusowy Microsoft Defender, w tym zarządzanie aktualizacjami produktów i ochrony
+- Raportowanie ochrony Program antywirusowy Microsoft Defender
 
 > [!IMPORTANT]
-> W większości przypadków oprogramowanie Windows 10 lub Windows 11 wyłączy program Program antywirusowy Microsoft Defender, jeśli znajdzie inny uruchomiony i aktualny produkt antywirusowy. Aby programy antywirusowe innych firm działały, musisz Program antywirusowy Microsoft Defender je wyłączyć. Jeśli ponownie włączysz lub zainstalujesz produkty antywirusowe innych firm, oprogramowanie Windows 10 lub Windows 11 automatycznie Program antywirusowy Microsoft Defender.
+> W większości przypadków Windows 10 lub Windows 11 wyłączy Program antywirusowy Microsoft Defender, jeśli znajdzie inny uruchomiony i aktualny produkt antywirusowy. Należy wyłączyć lub odinstalować produkty antywirusowe innych firm, zanim Program antywirusowy Microsoft Defender będzie działać. Jeśli ponownie włączysz lub zainstalujesz produkty antywirusowe innych firm, Windows 10 lub Windows 11 automatycznie wyłączy Program antywirusowy Microsoft Defender.
 
-Narzędzie|Opcje wdrażania (<a href="#fn2" id="ref2">2</a>)|Opcje zarządzania (konfiguracja sieciowa i zasady lub wdrożenie bazowe) ([3](#fn3))|Opcje raportowania
+Narzędzie|Opcje wdrażania (<a href="#fn2" id="ref2">2</a>)|Opcje zarządzania (konfiguracja w całej sieci i wdrożenie zasad lub planu bazowego) ([3](#fn3))|Opcje raportowania
 ---|---|---|---
-Microsoft Intune|[Dodawanie ustawień ochrony punktu końcowego w usłudze Intune](/intune/endpoint-protection-configure)|[Konfigurowanie ustawień ograniczeń urządzeń w usłudze Intune](/intune/device-restrictions-configure)| [Zarządzanie urządzeniami przy użyciu konsoli Intune](/intune/device-management)
-Microsoft Endpoint Manager ([1](#fn1))|Użyj [rola systemu Endpoint Protection punktowego] i [włącz Endpoint Protection klienta z niestandardowymi ustawieniami klienta][]|Z [domyślnymi i dostosowanymi zasadami ochrony przed złośliwym oprogramowaniem] i [zarządzaniem klientami][]|Z domyślnym obszarem roboczym monitorowania Menedżer konfiguracji[] i [alerty e-mail][]
-zasady grupy Usługi Active Directory (przyłączone do domeny)|Użyj obiektu zasady grupy, aby wdrożyć zmiany konfiguracji i upewnić Program antywirusowy Microsoft Defender włączony.|Obiekty zasady grupy (GPOS) to [Konfigurowanie opcji aktualizacji dla programu Program antywirusowy Microsoft Defender][] i [Konfigurowanie Windows Defender funkcji][]|Raportowanie punktu końcowego nie jest dostępne w zasady grupy. Możesz wygenerować listę [Zasady grupy, aby określić, czy jakieś ustawienia lub zasady nie są stosowane][]
-PowerShell|Wdrożenie za zasady grupy, Microsoft Endpoint Configuration Manager lub ręcznie w poszczególnych punktach końcowych.|Użyj cmdlet [Set-MpPreference] i [Update-MpSignature] dostępnych w module Defender.|Użyj odpowiednich [Get- cmdlet dostępnych w module Defender][]
-Windows instrumentacja zarządzania|Wdrożenie za zasady grupy, Microsoft Endpoint Configuration Manager lub ręcznie w poszczególnych punktach końcowych.|Użyj metody [Ustaw klasę MSFT_MpPreference]] i [Metoda aktualizacji MSFT_MpSignature klasa]]|Użyj klasy [MSFT_MpComputerStatus][] i uzyskaj metodę skojarzoną z klasami w dostawcy [Windows Defender WMIv2][]
-Microsoft Azure|Wd Microsoft Antimalware azure w portalu [Azure Portal, za pomocą](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios) Visual Studio konfiguracji maszyny wirtualnej lub przy użyciu Azure PowerShell cmdlet. Możesz również zainstalować [ochronę punktu końcowego w programie Microsoft Defender dla chmury*](/azure/security-center/security-center-install-endpoint-protection)|Konfigurowanie Microsoft Antimalware maszyn wirtualnych i usług w chmurze [za Azure PowerShell cmdlet](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) lub [używanie przykładów kodów](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Użyj Microsoft Antimalware maszyn wirtualnych i usług w chmurze z [Azure PowerShell cmdlet](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets), aby włączyć monitorowanie. Możesz również przeglądać raporty użycia w programie Azure Active Directory, aby ustalić podejrzaną aktywność, w tym raport [Być może zainfekowane urządzenia][] i skonfigurować narzędzie SIEM do zgłaszania zdarzeń [Program antywirusowy Microsoft Defender][] i dodawania tego narzędzia jako aplikacji w programie AAD.
+Microsoft Intune|[Dodawanie ustawień ochrony punktu końcowego w Intune](/intune/endpoint-protection-configure)|[Konfigurowanie ustawień ograniczeń urządzenia w Intune](/intune/device-restrictions-configure)| [Zarządzanie urządzeniami przy użyciu konsoli Intune](/intune/device-management)
+Microsoft Endpoint Manager ([1](#fn1))|Użyj roli [Endpoint Protection punkt systemu lokacji][] i [włącz Endpoint Protection z niestandardowymi ustawieniami klienta][]|W przypadku [domyślnych i dostosowanych zasad ochrony przed złośliwym kodem][] i [zarządzania klientami][]|Z domyślnym obszarem roboczym [Configuration Manager Monitorowanie][] i [alertami e-mail][]
+zasady grupy i Active Directory (przyłączone do domeny)|Użyj obiektu zasady grupy, aby wdrożyć zmiany konfiguracji i upewnić się, że Program antywirusowy Microsoft Defender jest włączona.|Użyj obiektów zasady grupy (GPO), aby [Skonfigurować opcje aktualizacji dla Program antywirusowy Microsoft Defender][] i [Konfigurowanie funkcji Windows Defender][]|Raportowanie punktów końcowych nie jest dostępne w przypadku zasady grupy. Możesz wygenerować listę [Zasad grupy, aby określić, czy nie zastosowano żadnych ustawień lub zasad][]
+PowerShell|Wdrażanie przy użyciu zasady grupy, Microsoft Endpoint Configuration Manager lub ręcznie w poszczególnych punktach końcowych.|Użyj poleceń cmdlet [Set-MpPreference] i [Update-MpSignature] dostępnych w module Defender.|Użyj odpowiednich poleceń cmdlet [Get- dostępnych w module Defender][]
+Instrumentacja zarządzania Windows|Wdrażanie przy użyciu zasady grupy, Microsoft Endpoint Configuration Manager lub ręcznie w poszczególnych punktach końcowych.|Użyj metody [Set klasy MSFT_MpPreference][] i metody [Update klasy MSFT_MpSignature][]|Użyj klasy [MSFT_MpComputerStatus][] i metody get skojarzonych klas w [dostawcy WMIv2 Windows Defender][]
+Microsoft Azure|Wdróż Microsoft Antimalware dla platformy Azure w [Azure Portal przy użyciu Visual Studio konfiguracji maszyny wirtualnej lub przy użyciu poleceń cmdlet Azure PowerShell](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). Program [Endpoint Protection można również zainstalować w Microsoft Defender dla Chmury*](/azure/security-center/security-center-install-endpoint-protection)|Konfigurowanie [Microsoft Antimalware dla Virtual Machines i Cloud Services przy użyciu poleceń cmdlet Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) lub [używanie przykładów kodu](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Użyj [Microsoft Antimalware dla Virtual Machines i Cloud Services z poleceniami cmdlet Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets), aby włączyć monitorowanie. Możesz również przejrzeć raporty użycia w Azure Active Directory, aby określić podejrzane działania, w tym raport [Prawdopodobnie zainfekowane urządzenia][] i skonfigurować narzędzie SIEM do raportowania [Program antywirusowy Microsoft Defender zdarzeń][] i dodać to narzędzie jako aplikację w AAD.
 
-1. <span id="fn1" />Dostępność niektórych funkcji, zwłaszcza związanych z ochroną dostarczaną w chmurze, różni się w Microsoft Endpoint Manager (Bieżąca gałąź) i System Center 2012 Menedżer konfiguracji. W tej bibliotece skupiliśmy się na Windows 10, Windows 11, Windows Server 2016 i Microsoft Endpoint Manager (Bieżąca gałąź). Aby [uzyskać informacje o głównych różnicach, Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) artykule Używanie ochrony chmurowej firmy Microsoft w programie Program antywirusowy Microsoft Defender. [(Powrót do tabeli)](#ref2)
+1. <span id="fn1" />Dostępność niektórych funkcji i funkcji, szczególnie związanych z ochroną dostarczaną przez chmurę, różni się między Microsoft Endpoint Manager (Current Branch) i System Center 2012 Configuration Manager. W tej bibliotece skupiliśmy się na Windows 10, Windows 11, Windows Server 2016 i Microsoft Endpoint Manager (Current Branch). Aby zapoznać się z tabelą opisującą główne różnice, zobacz [Use Microsoft cloud-provided protection in Program antywirusowy Microsoft Defender (Korzystanie z ochrony firmy Microsoft w chmurze w Program antywirusowy Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)). [(Wróć do tabeli)](#ref2)
 
-2. <span id="fn2" />W Windows 10 i Windows 11 Program antywirusowy Microsoft Defender to składnik dostępny bez instalowania lub wdrażania dodatkowego klienta lub usługi. Zostanie on automatycznie włączony, gdy produkty antywirusowe innych firm zostaną odinstalowane lub będą aktualne (z wyjątkiem Windows Server 2016). Tradycyjne wdrażanie nie jest więc wymagane. To wdrożenie ma na celu zapewnienie Program antywirusowy Microsoft Defender jest dostępny i włączony w punktach końcowych lub serwerach. [(Powrót do tabeli)](#ref2)
+2. <span id="fn2" />W Windows 10 i Windows 11 Program antywirusowy Microsoft Defender jest składnikiem dostępnym bez instalowania lub wdrażania dodatkowego klienta lub usługi. Zostanie ona automatycznie włączona, gdy produkty antywirusowe innych firm zostaną odinstalowane lub nieaktualne (z wyjątkiem Windows Server 2016). Tradycyjne wdrożenie nie jest zatem wymagane. Wdrożenie w tym miejscu odnosi się do zapewnienia, że składnik Program antywirusowy Microsoft Defender jest dostępny i włączony w punktach końcowych lub serwerach. [(Wróć do tabeli)](#ref2)
 
-3. <span id="fn3" />Konfigurowanie funkcji i ochrony, w tym konfigurowanie aktualizacji produktu i ochrony, opisano szczegółowo w sekcji [Program antywirusowy Microsoft Defender funkcji w](configure-notifications-microsoft-defender-antivirus.md) tej bibliotece. [(Powrót do tabeli)](#ref2)
+3. <span id="fn3" />Konfiguracja funkcji i ochrony, w tym konfigurowanie aktualizacji produktów i ochrony, opisano w sekcji [Konfigurowanie funkcji Program antywirusowy Microsoft Defender](configure-notifications-microsoft-defender-antivirus.md) w tej bibliotece. [(Wróć do tabeli)](#ref2)
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 Temat | Opis
 ---|---
-[Wdrażanie i włączanie Program antywirusowy Microsoft Defender zabezpieczeń](deploy-microsoft-defender-antivirus.md) | Gdy klient jest instalowany jako podstawowa część programu Windows 10 lub Windows 11 i tradycyjne wdrażanie nie ma zastosowania, nadal musisz włączyć klienta w punktach końcowych przy użyciu obiektów Microsoft Endpoint Configuration Manager, Microsoft Intune lub zasady grupy.
-[Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego](manage-updates-baselines-microsoft-defender-antivirus.md) | Istnieją dwie części aktualizacji Program antywirusowy Microsoft Defender: aktualizowanie klienta na punktach końcowych (aktualizacjach produktów) i aktualizowanie analizy zabezpieczeń (aktualizacji ochrony). Funkcje analizy zabezpieczeń można aktualizować na wiele sposobów, korzystając z Microsoft Endpoint Configuration Manager, zasady grupy, PowerShell i WMI.
-[Monitorowanie ochrony sieci i zgłaszanie Program antywirusowy Microsoft Defender informacji](report-monitor-microsoft-defender-antivirus.md) | Za pomocą programu Microsoft Intune, Microsoft Endpoint Configuration Manager, dodatku Update Compliance dla pakietu Microsoft Operations Management Suite lub produktu SIEM innej firmy (korzystając z dzienników zdarzeń programu Windows) możesz monitorować stan ochrony i tworzyć raporty na temat ochrony punktu końcowego.
+[Wdrażanie i włączanie ochrony Program antywirusowy Microsoft Defender](deploy-microsoft-defender-antivirus.md) | Chociaż klient jest instalowany jako podstawowa część Windows 10 lub Windows 11, a tradycyjne wdrożenie nie ma zastosowania, nadal trzeba będzie włączyć klienta w punktach końcowych przy użyciu Microsoft Endpoint Configuration Manager, Microsoft Intune lub zasady grupy obiektów.
+[Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych](manage-updates-baselines-microsoft-defender-antivirus.md) | Istnieją dwie części do aktualizowania Program antywirusowy Microsoft Defender: aktualizowanie klienta w punktach końcowych (aktualizacje produktów) i aktualizowanie analizy zabezpieczeń (aktualizacje ochrony). Analizę zabezpieczeń można aktualizować na wiele sposobów przy użyciu Microsoft Endpoint Configuration Manager, zasady grupy, programu PowerShell i usługi WMI.
+[Monitorowanie i raportowanie ochrony Program antywirusowy Microsoft Defender](report-monitor-microsoft-defender-antivirus.md) | Możesz użyć Microsoft Intune, Microsoft Endpoint Configuration Manager, dodatku Update Compliance dla pakietu Microsoft Operations Management Suite lub produktu SIEM innej firmy (korzystając z dzienników zdarzeń Windows) w celu monitorowania stanu ochrony i tworzenia raportów dotyczących ochrony punktu końcowego.
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+    

@@ -1,6 +1,6 @@
 ---
-title: Blokowanie zachowania klienta
-description: Blokowanie zachowania klienta jest częścią funkcji blokowania zachowania i blokowania jej na stronie Ochrona punktu końcowego w usłudze Microsoft Defender
+title: Blokowanie behawioralne klienta
+description: Blokowanie zachowań klientów jest częścią funkcji blokowania i powstrzymywania zachowań w Ochrona punktu końcowego w usłudze Microsoft Defender
 keywords: blokowanie zachowań, szybka ochrona, zachowanie klienta, Ochrona punktu końcowego w usłudze Microsoft Defender
 ms.pagetype: security
 author: denisebmsft
@@ -16,66 +16,80 @@ ms.custom:
 - edr
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 8da3f04af66568bbe79dd6a74c38b30a8a1ab891
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f19e354a23af03abd905591993197ff8f484ceff
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470224"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788397"
 ---
-# <a name="client-behavioral-blocking"></a>Blokowanie zachowania klienta
+# <a name="client-behavioral-blocking"></a>Blokowanie behawioralne klienta
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Program antywirusowy Microsoft Defender
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+**Platforma**
+- System Windows
+
+> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Omówienie
 
-Blokowanie zachowania klienta jest składnikiem funkcji blokowania [zachowania i blokowania w](behavioral-blocking-containment.md) programie Defender for Endpoint. W przypadku wykrycia podejrzanych zachowań na urządzeniach (nazywanych również klientami lub punktami końcowymi) artefakty (takie jak pliki lub aplikacje) są automatycznie blokowane, sprawdzane i naprawiane.
+Blokowanie zachowania klienta jest składnikiem [funkcji blokowania i powstrzymywania zachowań](behavioral-blocking-containment.md) w usłudze Defender for Endpoint. Ponieważ podejrzane zachowania są wykrywane na urządzeniach (nazywanych również klientami lub punktami końcowymi), artefakty (takie jak pliki lub aplikacje) są blokowane, sprawdzane i korygowane automatycznie.
 
 :::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Ochrona chmury i klienta" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
-Ochrona antywirusowa działa najlepiej w połączeniu z ochroną chmury.
+Ochrona antywirusowa działa najlepiej w połączeniu z ochroną w chmurze.
 
 ## <a name="how-client-behavioral-blocking-works"></a>Jak działa blokowanie zachowania klienta
 
-[Program antywirusowy Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) wykrywać podejrzane zachowanie, złośliwy kod, ataki bez plików i w pamięci i nie tylko na urządzeniu. W przypadku wykrycia podejrzanych zachowań monitoruje Program antywirusowy Microsoft Defender i wysyła te podejrzane zachowania oraz ich drzewa procesu do usługi ochrony chmury. Uczenie maszynowe rozróżnia złośliwe aplikacje i dobre zachowania w milisekundach, a także klasyfikuje poszczególne artefakty. Niemal w czasie rzeczywistym, gdy tylko artefakt zostanie znaleziony jako złośliwy, zostanie on zablokowany na urządzeniu.
+[Program antywirusowy Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) może wykrywać podejrzane zachowanie, złośliwy kod, ataki bez plików i ataków w pamięci i nie tylko na urządzeniu. Po wykryciu podejrzanych zachowań Program antywirusowy Microsoft Defender monitoruje i wysyła te podejrzane zachowania i drzewa procesów do usługi ochrony chmury. Uczenie maszynowe rozróżnia złośliwe aplikacje i dobre zachowania w milisekundach i klasyfikuje każdy artefakt. Niemal w czasie rzeczywistym, gdy tylko artefakt zostanie uznany za złośliwy, zostanie zablokowany na urządzeniu.
 
-W przypadku wykrycia podejrzanego zachowania jest generowany [alert](alerts-queue.md) widoczny w informacjach Podczas wykrycia i zatrzymania ataków alerty, takie jak "alert dostępu początkowego", były wyzwalane i pojawiały się w portalu programu [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) (dawniej Microsoft 365 Defender).
+Za każdym razem, gdy zostanie wykryte podejrzane zachowanie, [alert](alerts-queue.md) jest generowany i widoczny, gdy atak został wykryty i zatrzymany; alerty, takie jak "alert dostępu początkowego", są wyzwalane i wyświetlane w [portalu Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) (dawniej Microsoft 365 Defender).
 
-Blokowanie zachowań klientów obowiązuje, ponieważ pomaga nie tylko zapobiegać rozpoczęciu ataków, ale także zatrzymywać rozpoczęty przez niego atak. Ponadto w przypadku blokowania [pętli opinii](feedback-loop-blocking.md) (kolejna funkcja blokowania zachowań i blokowania treści) ataki są blokowane na innych urządzeniach w organizacji.
+Blokowanie zachowania klienta jest skuteczne, ponieważ nie tylko pomaga zapobiec rozpoczęciu ataku, ale może pomóc zatrzymać atak, który rozpoczął się. Ponadto w przypadku [blokowania pętli sprzężenia zwrotnego](feedback-loop-blocking.md) (innej możliwości blokowania i powstrzymywania zachowań) ataki są blokowane na innych urządzeniach w organizacji.
 
 ## <a name="behavior-based-detections"></a>Wykrywanie oparte na zachowaniu
 
-Wykrywanie oparte na zachowaniu jest nazwane zgodnie z [miTRE ATT i&CK Matrix for Enterprise](https://attack.mitre.org/matrices/enterprise). Konwencja nazewnictwa pomaga zidentyfikować etap ataków, w którym zostało obserwowane złośliwe zachowanie:
+Wykrywanie oparte na zachowaniu jest określane zgodnie z [macierzą&CK MITRE ATT dla Enterprise](https://attack.mitre.org/matrices/enterprise). Konwencja nazewnictwa pomaga zidentyfikować etap ataku, w którym zaobserwowano złośliwe zachowanie:
 
-|Emotikon|Nazwa zagrożenia wykrywania|
+|Taktyka|Nazwa zagrożenia wykrywania|
 |---|---|
-|Dostęp wstępny|`Behavior:Win32/InitialAccess.*!ml`|
-|Wykonywanie|`Behavior:Win32/Execution.*!ml`|
-|Persistence|`Behavior:Win32/Persistence.*!ml`|
-|Eskalacji uprawnień|`Behavior:Win32/PrivilegeEscalation.*!ml`|
-|Obrona|`Behavior:Win32/DefenseEvasion.*!ml`|
+|Dostęp początkowy|`Behavior:Win32/InitialAccess.*!ml`|
+|Wykonanie|`Behavior:Win32/Execution.*!ml`|
+|Trwałości|`Behavior:Win32/Persistence.*!ml`|
+|Eskalacja uprawnień|`Behavior:Win32/PrivilegeEscalation.*!ml`|
+|Uchylanie się od obrony|`Behavior:Win32/DefenseEvasion.*!ml`|
 |Dostęp poświadczeń|`Behavior:Win32/CredentialAccess.*!ml`|
-|Odnajdowanie|`Behavior:Win32/Discovery.*!ml`|
-|Ruch lateralny|`Behavior:Win32/LateralMovement.*!ml`|
-|Kolekcja|`Behavior:Win32/Collection.*!ml`|
-|Command and Control|`Behavior:Win32/CommandAndControl.*!ml`|
-|Ex przeocły|`Behavior:Win32/Exfiltration.*!ml`|
+|Odnajdywania|`Behavior:Win32/Discovery.*!ml`|
+|Ruch boczny|`Behavior:Win32/LateralMovement.*!ml`|
+|Kolekcji|`Behavior:Win32/Collection.*!ml`|
+|Polecenie i kontrolka|`Behavior:Win32/CommandAndControl.*!ml`|
+|Eksfiltracja|`Behavior:Win32/Exfiltration.*!ml`|
 |Wpływ|`Behavior:Win32/Impact.*!ml`|
-|Bez kategorii|`Behavior:Win32/Generic.*!ml`|
+|Uncategorized|`Behavior:Win32/Generic.*!ml`|
 
 > [!TIP]
-> Aby dowiedzieć się więcej o konkretnych zagrożeniach, zobacz **[Ostatnia globalna aktywność zagrożeń](https://www.microsoft.com/wdsi/threats)**.
+> Aby dowiedzieć się więcej na temat konkretnych zagrożeń, zobacz **[ostatnie działania związane z globalnymi zagrożeniami](https://www.microsoft.com/wdsi/threats)**.
 
-## <a name="configuring-client-behavioral-blocking"></a>Konfigurowanie blokowania zachowania klienta
+## <a name="configuring-client-behavioral-blocking"></a>Konfigurowanie blokowania behawioralnego klienta
 
-Jeśli Twoja organizacja używa programu Defender for Endpoint, blokowanie zachowania klienta jest domyślnie włączone. Jednak aby korzystać ze wszystkich funkcji programu Defender dla punktu końcowego, w tym blokowania i blokowania [zachowań, upewnij](behavioral-blocking-containment.md) się, że włączono i skonfigurowano następujące funkcje i możliwości usługi Defender for Endpoint:
+Jeśli Twoja organizacja używa usługi Defender for Endpoint, blokowanie zachowań klientów jest domyślnie włączone. Jednak aby skorzystać ze wszystkich możliwości usługi Defender for Endpoint, w tym [blokowania behawioralnego i powstrzymywania](behavioral-blocking-containment.md), upewnij się, że następujące funkcje i możliwości usługi Defender for Endpoint są włączone i skonfigurowane:
 
-- [Defender for Endpoint baselines](configure-machines-security-baseline.md)
-- [Urządzenia podłączone do usługi Defender for Endpoint](onboard-configure.md)
-- [EDR w trybie blokowania](edr-in-block-mode.md)
+- [Punkty odniesienia usługi Defender dla punktów końcowych](configure-machines-security-baseline.md)
+- [Urządzenia dołączone do usługi Defender for Endpoint](onboard-configure.md)
+- [Funkcja EDR w trybie blokowania](edr-in-block-mode.md)
 - [Zmniejszanie obszaru podatnego na ataki](attack-surface-reduction.md)
-- [Ochrona następnej generacji](configure-microsoft-defender-antivirus-features.md) (funkcje ochrony przed złośliwym oprogramowaniem i oprogramowanie antywirusowe oraz inne funkcje ochrony przed zagrożeniami)
+- [Ochrona nowej generacji](configure-microsoft-defender-antivirus-features.md) (oprogramowanie antywirusowe, oprogramowanie chroniące przed złośliwym kodem i inne możliwości ochrony przed zagrożeniami)
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

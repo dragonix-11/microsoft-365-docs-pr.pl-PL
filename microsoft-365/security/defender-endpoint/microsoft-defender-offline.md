@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender Offline w programie Windows
-description: Możesz używać aplikacji Microsoft Defender Offline bezpośrednio z Program antywirusowy Windows Defender aplikacji. Możesz także zarządzać wdrażaniem tego rozwiązania w sieci.
+title: Microsoft Defender Offline w Windows
+description: Możesz użyć Microsoft Defender Offline bezpośrednio z aplikacji Program antywirusowy Windows Defender. Możesz również zarządzać sposobem jej wdrażania w sieci.
 keywords: skanowanie, defender, offline
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,104 +15,108 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ccb65b865afdf2a0ec0210c3593daee1cb5c09b6
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: ea7d316a7fc31724466dcd459ed72792cea817fd
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476846"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787693"
 ---
-# <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Uruchamianie i przeglądanie wyników skanowania Microsoft Defender Offline aplikacji
+# <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Uruchom i przejrzyj wyniki skanowania programu Microsoft Defender Offline
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-Microsoft Defender Offline to narzędzie do skanowania przed złośliwym kodem, które umożliwia uruchamianie i uruchamianie skanowania z zaufanego środowiska. Skanowanie jest uruchamiane poza normalnym procesem Windows, więc może kierować złośliwe oprogramowanie, które próbuje obejść powłokę Windows, takie jak wirusy i zestawy główne, które infekują lub zastąpią główny rekord rozruchu (MBR).
+**Platformy**
+- System Windows
 
-Możesz użyć Microsoft Defender Offline, jeśli podejrzewasz zainfekowanie złośliwym oprogramowaniem lub chcesz potwierdzić dokładny oczyszczanie punktu końcowego po epidemii złośliwego oprogramowania.
+Microsoft Defender Offline to narzędzie do skanowania oprogramowania chroniącego przed złośliwym kodem, które umożliwia rozruch i uruchamianie skanowania z zaufanego środowiska. Skanowanie jest uruchamiane spoza normalnego jądra Windows, dzięki czemu może być ukierunkowane na złośliwe oprogramowanie, które próbuje ominąć powłokę Windows, takie jak wirusy i zestawy rootkit, które infekują lub zastępują główny rekord rozruchowy (MBR).
 
-W Windows 10 i Windows 11 można Microsoft Defender Offline uruchamiać jednym kliknięciem bezpośrednio z Zabezpieczenia Windows [aplikacji](microsoft-defender-security-center-antivirus.md). W poprzednich wersjach pakietu Windows użytkownik musiał zainstalować aplikację Microsoft Defender Offline, aby uruchomić ponownie punkt końcowy i załadować nośnik startowy.
+Możesz użyć Microsoft Defender Offline, jeśli podejrzewasz infekcję złośliwym oprogramowaniem lub chcesz potwierdzić dokładne oczyszczenie punktu końcowego po wybuchu złośliwego oprogramowania.
+
+W Windows 10 i Windows 11 można uruchamiać Microsoft Defender Offline jednym kliknięciem bezpośrednio z [aplikacji Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md). W poprzednich wersjach Windows użytkownik musiał zainstalować Microsoft Defender Offline na nośniku rozruchowym, ponownie uruchomić punkt końcowy i załadować nośnik rozruchowy.
 
 ## <a name="prerequisites-and-requirements"></a>wymagania wstępne i wymagania
 
-Microsoft Defender Offline w Windows 10 i Windows 11 mają takie same wymagania sprzętowe jak w Windows 10.
+Microsoft Defender Offline w Windows 10 i Windows 11 ma takie same wymagania sprzętowe jak Windows 10.
 
-Aby uzyskać więcej informacji Windows 10 i Windows 11, zobacz następujące tematy:
+Aby uzyskać więcej informacji na temat wymagań Windows 10 i Windows 11, zobacz następujące tematy:
 
 - [Minimalne wymagania sprzętowe](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 
 - [Wskazówki dotyczące składników sprzętowych](/windows-hardware/design/component-guidelines/components)
 
 > [!NOTE]
-> Microsoft Defender Offline nie jest obsługiwane na komputerach z ARM ani na Windows magazynowych serwera.
+> Microsoft Defender Offline nie jest obsługiwana na maszynach z procesorami ARM ani w jednostkach przechowywania zapasów serwera Windows.
 
-Aby można Microsoft Defender Offline z punktu końcowego, użytkownik musi być zalogowany z uprawnieniami administratora.
+Aby uruchomić Microsoft Defender Offline z punktu końcowego, użytkownik musi być zalogowany z uprawnieniami administratora.
 
-## <a name="microsoft-defender-offline-updates"></a>Microsoft Defender Offline aktualizacji
+## <a name="microsoft-defender-offline-updates"></a>aktualizacje Microsoft Defender Offline
 
-Microsoft Defender Offline korzysta z najnowszych aktualizacji ochrony dostępnych w punkcie końcowym; jest on aktualizowany Program antywirusowy Windows Defender aktualizacji.
+Microsoft Defender Offline korzysta z najnowszych aktualizacji ochrony dostępnych w punkcie końcowym; jest ona aktualizowana za każdym razem, gdy Program antywirusowy Windows Defender jest aktualizowana.
 
 > [!NOTE]
-> Przed uruchomieniem skanowania w trybie offline należy spróbować zaktualizować ochronę audio/wideo programu Microsoft Defender. Możesz wymusić aktualizację przy użyciu programu zasady grupy lub też normalnie wdrożyć aktualizacje w punktach końcowych lub ręcznie pobrać i zainstalować najnowsze aktualizacje ochrony z aplikacji [Centrum firmy Microsoft ds. ochrony przed złośliwym oprogramowaniem](https://www.microsoft.com/security/portal/definitions/adl.aspx).
+> Przed uruchomieniem skanowania w trybie offline należy podjąć próbę zaktualizowania ochrony usługi Microsoft Defender AV. Możesz wymusić aktualizację za pomocą zasady grupy lub normalnie wdrażać aktualizacje w punktach końcowych lub ręcznie pobrać i zainstalować najnowsze aktualizacje ochrony z [Centrum firmy Microsoft ds. ochrony przed złośliwym oprogramowaniem](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-Aby uzyskać [więcej informacji, Program antywirusowy Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md) temat Zarządzanie aktualizacjami analizy zabezpieczeń.
+Aby uzyskać więcej informacji, zobacz temat [Manage Program antywirusowy Microsoft Defender Security intelligence updates (Zarządzanie aktualizacjami analizy zabezpieczeń Program antywirusowy Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)).
 
 ## <a name="usage-scenarios"></a>Scenariusze użycia
 
-W Windows 10 wersji 1607 można ręcznie wymusić skanowanie w trybie offline. Ewentualnie, jeśli Windows Defender, że uruchamianie Microsoft Defender Offline, zostanie wyświetlony monit dla użytkownika na punkcie końcowym.
+W Windows 10 wersji 1607 możesz ręcznie wymusić skanowanie w trybie offline. Alternatywnie, jeśli Windows Defender określi, że Microsoft Defender Offline musi zostać uruchomiona, zostanie wyświetlony monit użytkownika w punkcie końcowym.
 
-Konieczność przeprowadzenia skanowania w trybie offline pojawi się również w Microsoft Endpoint Manager, jeśli używasz jej do zarządzania punktami końcowymi.
+Konieczność przeprowadzenia skanowania w trybie offline zostanie również ujawniona w Microsoft Endpoint Manager, jeśli używasz go do zarządzania punktami końcowymi.
 
-Monit może zostać wyświetlony za pośrednictwem powiadomienia, podobnego do następującego:
+Monit może wystąpić za pośrednictwem powiadomienia podobnego do następującego:
 
 :::image type="content" source="../../media/notification.png" alt-text="Powiadomienie o uruchomieniu Microsoft Defender Offline" lightbox="../../media/notification.png":::
 
-Użytkownik zostanie także powiadomiony w Windows Defender klienta.
+Użytkownik zostanie również powiadomiony w ramach klienta Windows Defender.
 
-W Configuration Manager można określić stan punktów końcowych, przechodząc do tematu Monitorowanie > **Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status (Omówienie > zabezpieczeń > Endpoint Protection stan > System Center Endpoint Protection stanu**.
+W Configuration Manager możesz zidentyfikować stan punktów końcowych, przechodząc do pozycji **Monitorowanie > Przegląd > Stan > Endpoint Protection zabezpieczeń > System Center Endpoint Protection stan**.
 
-Microsoft Defender Offline skanowania są oznaczone w obszarze Stan **rozwiązywania problemów ze złośliwym oprogramowaniem jako** **wymagane skanowanie w trybie offline**.
+Microsoft Defender Offline skanowania są wskazywane w **obszarze Stan korygowania złośliwego oprogramowania** jako **wymagane skanowanie w trybie offline**.
 
-:::image type="content" source="../../media/sccm-wdo.png" alt-text="Wskaźnik skanowania w poszukiwaniu Microsoft Defender Offline" lightbox="../../media/sccm-wdo.png":::
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="Wskaźnik skanowania pod kątem Microsoft Defender Offline" lightbox="../../media/sccm-wdo.png":::
 
 ## <a name="configure-notifications"></a>Konfigurowanie powiadomień
 
-Microsoft Defender Offline są skonfigurowane w tym samym ustawieniu zasad co inne powiadomienia audio/wideo programu Microsoft Defender.
+Microsoft Defender Offline powiadomienia są konfigurowane w tym samym ustawieniu zasad co inne powiadomienia av usługi Microsoft Defender.
 
-Aby uzyskać więcej informacji na temat powiadomień Windows Defender, zobacz temat Konfigurowanie powiadomień [wyświetlanych w temacie Punkty końcowe](configure-notifications-microsoft-defender-antivirus.md).
+Aby uzyskać więcej informacji na temat powiadomień w Windows Defender, zobacz [Temat Konfigurowanie powiadomień wyświetlanych w punktach końcowych](configure-notifications-microsoft-defender-antivirus.md).
 
 ## <a name="run-a-scan"></a>Uruchamianie skanowania
 
 > [!IMPORTANT]
-> Przed użyciem programu Microsoft Defender Offline zapisz wszystkie pliki i zamknij uruchomione programy. Skanowanie Microsoft Defender Offline trwa około 15 minut. Po zakończeniu skanowania zostanie on ponownie uruchomiony. Skanowanie odbywa się poza zwykłym środowiskiem Windows środowisku operacyjnym. Interfejs użytkownika będzie wyglądać inaczej niż normalne skanowanie wykonywane przez Windows Defender. Po zakończeniu skanowania punkt końcowy zostanie ponownie uruchomiony i Windows ładowanie normalnie.
+> Przed użyciem Microsoft Defender Offline pamiętaj o zapisaniu plików i zamknięciu uruchomionych programów. Skanowanie Microsoft Defender Offline trwa około 15 minut. Po zakończeniu skanowania zostanie ponownie uruchomiony punkt końcowy. Skanowanie jest wykonywane poza zwykłym środowiskiem operacyjnym Windows. Interfejs użytkownika będzie wyglądać inaczej niż normalne skanowanie wykonywane przez Windows Defender. Po zakończeniu skanowania punkt końcowy zostanie uruchomiony ponownie, a Windows będzie ładowany normalnie.
 
-Możesz uruchomić skanowanie Microsoft Defender Offline za pomocą następujących czynności:
+Możesz uruchomić skanowanie Microsoft Defender Offline przy użyciu następujących funkcji:
 
 - PowerShell
-- Windows instrumentacja zarządzania (WMI)
-- Aplikacja Zabezpieczenia Windows aplikacji
+- Instrumentacja zarządzania Windows (WMI)
+- Aplikacja Zabezpieczenia Windows
 
 
 
 ### <a name="use-powershell-cmdlets-to-run-an-offline-scan"></a>Uruchamianie skanowania w trybie offline przy użyciu poleceń cmdlet programu PowerShell
 
-Użyj następujących polecenia cmdlet:
+Użyj następujących poleceń cmdlet:
 
 ```PowerShell
 Start-MpWDOScan
 ```
 
-Aby [uzyskać więcej informacji na](use-powershell-cmdlets-microsoft-defender-antivirus.md) temat używania programu PowerShell z programem PowerShell z programem Program antywirusowy Microsoft Defender, zobacz Konfigurowanie i uruchamianie poleceń cm Program antywirusowy Microsoft Defender dlet programu PowerShell oraz poleceń [cmdlet programu Defender](/powershell/module/defender/) oraz Program antywirusowy Microsoft Defender.
+Zobacz [Konfigurowanie i uruchamianie poleceń cmdlet programu PowerShell Program antywirusowy Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) i [poleceń cmdlet programu antywirusowego Defender](/powershell/module/defender/), aby uzyskać więcej informacji na temat używania programu PowerShell z Program antywirusowy Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>Korzystanie Windows zarządzania (WMI) w celu uruchomienia skanowania w trybie offline
+### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>Uruchamianie skanowania w trybie offline przy użyciu instrukcji zarządzania Windows (WMI)
 
-Skorzystaj z [**MSFT_MpWDOScan**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uruchomić skanowanie w trybie offline.
+Użyj klasy [**MSFT_MpWDOScan**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uruchomić skanowanie w trybie offline.
 
-Poniższy fragment skryptu WMI natychmiast uruchomi skan Microsoft Defender Offline, co spowoduje ponowne uruchomienie punktu końcowego, uruchomienie skanowania w trybie offline, a następnie ponowne uruchomienie i uruchomienie komputera Windows.
+Poniższy fragment kodu WMI natychmiast uruchomi skanowanie Microsoft Defender Offline, co spowoduje ponowne uruchomienie punktu końcowego, uruchomienie skanowania w trybie offline, a następnie ponowne uruchomienie i rozruch w Windows.
 
 ```console
 wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start
@@ -120,24 +124,34 @@ wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start
 
 Aby uzyskać więcej informacji, zobacz następujące informacje:
 
-- [Windows Defender interfejsów API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [interfejsy API Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>Korzystanie z aplikacji Windows Defender Security w celu uruchomienia skanowania w trybie offline
+### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>Uruchamianie skanowania w trybie offline przy użyciu aplikacji Windows Defender Security
 
-1. Otwórz aplikację Zabezpieczenia Windows, klikając ikonę tarczy na pasku zadań lub wyszukując w menu start przycisk **Defender dla Chmury**.
+1. Otwórz aplikację Zabezpieczenia Windows, klikając ikonę osłony na pasku zadań lub wyszukując menu Start w poszukiwaniu **Defender dla Chmury**.
 
-2. Kliknij **kafelek Ochrona przed & wirusami** (lub ikonę tarczy na lewym pasku menu), a następnie **etykietę Skanowanie** zaawansowane:
+2. Kliknij kafelek **Ochrona przed zagrożeniami & wirusami** (lub ikonę osłony na pasku menu po lewej stronie), a następnie etykietę **Skanowanie zaawansowane** :
 
-3. Wybierz **Microsoft Defender Offline skanowania i** kliknij przycisk **Skanuj teraz**.
+3. Wybierz **pozycję Microsoft Defender Offline skanowania** i kliknij pozycję **Skanuj teraz**.
 
     > [!NOTE]
-    > W Windows 10 wersji 1607 skanowanie w trybie offline można było uruchomić z programu **Windows Ustawienia** \> **Update & security** \> **Windows Defender** lub z Windows Defender klienta.
+    > W Windows 10 wersji 1607 skanowanie w trybie offline może być uruchamiane z poziomu **Windows Ustawienia** \> **update & Windows Defender zabezpieczeń** \> lub klienta Windows Defender.
 
 ## <a name="review-scan-results"></a>Przeglądanie wyników skanowania
 
-Microsoft Defender Offline wyników skanowania zostaną wyświetlone w sekcji Historia [skanowania w aplikacji Zabezpieczenia Windows skanowania](microsoft-defender-security-center-antivirus.md).
+Microsoft Defender Offline wyniki skanowania zostaną wyświetlone w [sekcji Historia skanowania aplikacji Zabezpieczenia Windows](microsoft-defender-security-center-antivirus.md).
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 
-- [Dostosowywanie, inicjowanie i przeglądanie wyników skanów i środków zaradczych](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Program antywirusowy Microsoft Defender w programie Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Dostosowywanie, inicjowanie i przeglądanie wyników skanowania i korygowania](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Program antywirusowy Microsoft Defender w Windows 10](microsoft-defender-antivirus-in-windows-10.md)

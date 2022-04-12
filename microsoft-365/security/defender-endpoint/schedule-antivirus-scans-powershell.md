@@ -16,24 +16,28 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e1cbdd156306d7cc2ee41fd85baadb1fa51cf1ac
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8961428acee5d166b0cdad4982aa5f9ed48020af
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63007893"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788837"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>Planowanie skanowania antywirusowego przy użyciu programu PowerShell
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-W tym artykule opisano sposób konfigurowania zaplanowanych skanów przy użyciu poleceń cmdlet programu PowerShell. Aby dowiedzieć się więcej o planowaniu skanów i typach skanowania, zobacz Konfigurowanie zaplanowanego szybkiego lub pełnego Program antywirusowy Microsoft Defender [skanowania](schedule-antivirus-scans.md). 
+**Platformy**
+- System Windows
+
+W tym artykule opisano sposób konfigurowania zaplanowanych skanów przy użyciu poleceń cmdlet programu PowerShell. Aby dowiedzieć się więcej na temat planowania skanowania i typów skanowania, zobacz [Konfigurowanie zaplanowanych szybkich lub pełnych skanów Program antywirusowy Microsoft Defender](schedule-antivirus-scans.md). 
 
 ## <a name="use-powershell-cmdlets-to-schedule-scans"></a>Planowanie skanowania przy użyciu poleceń cmdlet programu PowerShell
 
-Użyj następujących polecenia cmdlet:
+Użyj następujących poleceń cmdlet:
 
 ```PowerShell
 Set-MpPreference -ScanParameters
@@ -43,38 +47,48 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-Aby uzyskać więcej informacji, zobacz Konfigurowanie i uruchamianie poleceń [cmdlet programu PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) Program antywirusowy Microsoft Defender i programu [Defender Antivirus](/powershell/module/defender/), aby uzyskać więcej informacji na temat używania programu PowerShell z programem Program antywirusowy Microsoft Defender.
+Aby uzyskać więcej informacji, zobacz [Używanie poleceń cmdlet programu PowerShell do konfigurowania i uruchamiania poleceń](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlet programu antywirusowego Program antywirusowy Microsoft Defender i defendera](/powershell/module/defender/), aby uzyskać więcej informacji na temat używania programu PowerShell z Program antywirusowy Microsoft Defender.
 
-## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>Polecenia cmdlet programu PowerShell do planowania skanów, gdy punkt końcowy nie jest w użyciu
+## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>Polecenia cmdlet programu PowerShell do planowania skanowania, gdy punkt końcowy nie jest używany
 
-Użyj następujących polecenia cmdlet:
+Użyj następujących poleceń cmdlet:
 
 ```PowerShell
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-Aby uzyskać więcej informacji, zobacz [Używanie poleceń cmdlet programu PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) do konfigurowania i uruchamiania Program antywirusowy Microsoft Defender i poleceń [cmdlet programu antywirusowego Defender](/powershell/module/defender/).
+Aby uzyskać więcej informacji, zobacz [Używanie poleceń cmdlet programu PowerShell do konfigurowania i uruchamiania poleceń](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlet Program antywirusowy Microsoft Defender i defender antivirus](/powershell/module/defender/).
 
 > [!NOTE]
-> W przypadku planowania skanowania w czasie, gdy punkty końcowe nie są w użyciu, skany nie korzystają z konfiguracji ograniczania procesora i w pełni korzystają z dostępnych zasobów, aby wykonać skanowanie tak szybko, jak to możliwe.
+> Jeśli planujesz skanowanie w czasie, gdy punkty końcowe nie są używane, skany nie uwzględniają konfiguracji ograniczania przepustowości procesora CPU i w pełni wykorzystują dostępne zasoby, aby jak najszybciej ukończyć skanowanie.
 
-## <a name="powershell-cmdlets-for-scheduling-scans-to-complete-remediation"></a>Polecenia cmdlet programu PowerShell do planowania skanów w celu ukończenia działań naprawczych
+## <a name="powershell-cmdlets-for-scheduling-scans-to-complete-remediation"></a>Polecenia cmdlet programu PowerShell do planowania skanowania w celu ukończenia korygowania
 
-Użyj następujących polecenia cmdlet:
+Użyj następujących poleceń cmdlet:
 
 ```PowerShell
 Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-Aby [uzyskać więcej informacji na](use-powershell-cmdlets-microsoft-defender-antivirus.md) temat używania programu PowerShell z programem PowerShell z programem Program antywirusowy Microsoft Defender, zobacz Konfigurowanie i uruchamianie poleceń cm Program antywirusowy Microsoft Defender dlet programu PowerShell oraz poleceń [cmdlet programu Defender](/powershell/module/defender/) oraz Program antywirusowy Microsoft Defender.
+Zobacz [Konfigurowanie i uruchamianie poleceń cmdlet programu PowerShell Program antywirusowy Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) i [poleceń cmdlet programu antywirusowego Defender](/powershell/module/defender/), aby uzyskać więcej informacji na temat używania programu PowerShell z Program antywirusowy Microsoft Defender.
 
 ## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>Polecenia cmdlet programu PowerShell do planowania codziennych skanów
 
-Użyj następujących polecenia cmdlet:
+Użyj następujących poleceń cmdlet:
 
 ```PowerShell
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-Aby uzyskać więcej informacji na temat używania programu PowerShell z programem Program antywirusowy Microsoft Defender, zobacz Konfigurowanie i uruchamianie poleceń [cmdlet](/powershell/module/defender/) programu PowerShell i programu Defender za pomocą poleceń [cm Program antywirusowy Microsoft Defender dlet programu PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+Aby uzyskać więcej informacji na temat używania programu PowerShell z Program antywirusowy Microsoft Defender, zobacz [Konfigurowanie i uruchamianie poleceń cmdlet programu](use-powershell-cmdlets-microsoft-defender-antivirus.md) Program antywirusowy Microsoft Defender i [programu antywirusowego Defender przy użyciu poleceń cmdlet](/powershell/module/defender/) programu PowerShell.
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)

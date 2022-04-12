@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 5b71134f9a7d33880e9762701e825c3fbf708f6b
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705094"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787715"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Omówienie możliwości zmniejszania obszaru ataków i korzystanie z nich
 
@@ -35,6 +35,10 @@ ms.locfileid: "64705094"
 - [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Program antywirusowy Microsoft Defender
+
+**Platformy**
+- System Windows
 
 > [!TIP]
 > Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -114,11 +118,11 @@ Tryb inspekcji można włączyć przy użyciu dostawców usług zasady grupy, Po
 
 Reguły zmniejszania obszaru ataków (ASR) są wstępnie zdefiniowane w celu wzmacniania typowych, znanych obszarów ataków. Istnieje kilka metod, za pomocą których można zaimplementować reguły zmniejszania obszaru podatnego na ataki. Preferowana metoda jest udokumentowana w następujących tematach wdrażania reguł zmniejszania obszaru ataków (ASR):
 
-- [Omówienie wdrażania reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment.md)
-- [Planowanie wdrożenia reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-plan.md)
-- [Reguły zmniejszania obszaru ataków testowych (ASR)](attack-surface-reduction-rules-deployment-test.md)
-- [Włączanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-implement.md)
-- [Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Omówienie wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment.md)
+- [Zaplanuj wdrażanie reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+- [Przetestuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-test.md)
+- [Włącz reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-implement.md)
+- [Operacjonalizuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="view-attack-surface-reduction-events"></a>Wyświetlanie zdarzeń redukcji obszaru ataków
 
@@ -294,14 +298,14 @@ Jak wspomniano w filmie wideo, usługa Defender for Endpoint oferuje kilka możl
 |:---|:---|
 | [Izolacja sprzętowa](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Chroń i zachowaj integralność systemu podczas uruchamiania i podczas jego działania. Weryfikowanie integralności systemu za pomocą lokalnego i zdalnego zaświadczania. Użyj izolacji kontenera dla Microsoft Edge, aby chronić przed złośliwymi witrynami internetowymi. |
 | [Kontrola aplikacji](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Użyj kontroli aplikacji, aby aplikacje mogły uzyskiwać zaufanie do uruchamiania. |
-| [Kontrolowany dostęp do folderu](controlled-folders.md) | Zapobieganie złośliwym lub podejrzanym aplikacjom (w tym złośliwemu oprogramowaniu wymuszającemu szyfrowanie plików) przed wprowadzaniem zmian w plikach w kluczowych folderach systemowych (wymaga Program antywirusowy Microsoft Defender) |
-| [Ochrona sieci](network-protection.md) | Rozszerzanie ochrony ruchu sieciowego i łączności na urządzeniach organizacji. (Wymaga Program antywirusowy Microsoft Defender) |
+| [Kontrolowany dostęp do folderu](controlled-folders.md) | Zapobiegaj złośliwym lub podejrzanym aplikacjom (w tym złośliwemu oprogramowaniu wymuszającemu szyfrowanie plików) przed wprowadzaniem zmian w plikach w kluczowych folderach systemowych (wymaga Program antywirusowy Microsoft Defender). |
+| [Ochrona sieci](network-protection.md) | Rozszerzanie ochrony ruchu sieciowego i łączności na urządzeniach organizacji. (Wymaga Program antywirusowy Microsoft Defender). |
 | [Ochrona przed wykorzystywaniem](exploit-protection.md) | Ochrona systemów operacyjnych i aplikacji używanych przez organizację przed wykorzystywaniem. Ochrona przed lukami w zabezpieczeniach działa również z rozwiązaniami antywirusowymi innych firm. |
 | [Sterowanie urządzeniem](device-control-report.md) | Chroni przed utratą danych przez monitorowanie i kontrolowanie nośników używanych na urządzeniach, takich jak magazyn wymienny i dyski USB, w organizacji. |
-| [Przewodnik wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment.md) | Przedstawia informacje o przeglądzie i wymagania wstępne dotyczące wdrażania reguł zmniejszania obszaru podatnego na ataki |
-| [Planowanie wdrożenia reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-plan.md) | Wyświetla listę zalecanych kroków wdrażania reguł zmniejszania obszaru ataków |
-| [Reguły zmniejszania obszaru ataków testowych (ASR)](attack-surface-reduction-rules-deployment-test.md) | Zawiera instrukcje dotyczące używania trybu inspekcji do testowania reguł zmniejszania obszaru podatnego na ataki. |
-| [Włączanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Przedstawia kroki przejścia reguł zmniejszania obszaru ataków z trybu testowego (inspekcji) do aktywnego, włączonego trybu (blokuj) |
-| [Operacjonalizowanie reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-deployment-operationalize.md) | Zawiera informacje o codziennych działaniach związanych z przeglądem i konserwacją. |
-| [Dokumentacja reguł zmniejszania obszaru ataków (ASR)](attack-surface-reduction-rules-reference.md) | Zawiera szczegółowe informacje o każdej regule zmniejszania obszaru ataków. |
+| [Przewodnik wdrażania reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment.md) | Przedstawia omówienie informacji i wymagań wstępnych dotyczących wdrażania reguł zmniejszania obszaru podatnego na ataki. |
+| [Zaplanuj wdrażanie reguł zmniejszania powierzchni podatnej na ataki (ASR)](attack-surface-reduction-rules-deployment-plan.md) | Zawiera listę zalecanych kroków wdrażania reguł zmniejszania obszaru podatnego na ataki. |
+| [Przetestuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-test.md) | Zawiera instrukcje dotyczące używania trybu inspekcji do testowania reguł zmniejszania obszaru podatnego na ataki. |
+| [Włącz reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-implement.md) | Przedstawia kroki przejścia reguł zmniejszania obszaru podatnego na ataki z trybu testowego (inspekcji) do aktywnego, włączonego trybu (blokuj). |
+| [Operacjonalizuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-deployment-operationalize.md) | Zawiera informacje o codziennych działaniach związanych z przeglądem i konserwacją. |
+| [Odwołuj reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction-rules-reference.md) | Zawiera szczegółowe informacje o każdej regule zmniejszania obszaru ataków. |
 | [Reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction.md) | Zmniejsz luki w zabezpieczeniach (powierzchnie ataków) w aplikacjach dzięki inteligentnym regułom, które pomagają zatrzymać złośliwe oprogramowanie. (Wymaga Program antywirusowy Microsoft Defender). |

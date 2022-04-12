@@ -1,7 +1,7 @@
 ---
-title: Stosowanie aktualizacji ochrony audio/wideo programu Microsoft Defender do aktualnych punktów końcowych
-description: Zdefiniuj, kiedy i jak mają być stosowane aktualizacje dla punktów końcowych, które nie zostały zaktualizowane od jakego czasu.
-keywords: aktualizacje, ochrona, nieaktualne, nieaktualne, stare, na bieżąco
+title: Stosowanie aktualizacji ochrony av usługi Microsoft Defender do nieaktualizowych punktów końcowych
+description: Zdefiniuj, kiedy i w jaki sposób należy stosować aktualizacje dla punktów końcowych, które nie zostały zaktualizowane od jakiegoś czasu.
+keywords: aktualizacje, ochrona, nieaktualne, nieaktualne, stare, nadrabianie zaległości
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,138 +16,142 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a708bf6ef34767b338c40cf8004e4c497658fc36
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0f7f42662bf698f6e3a092539e58a8a9de529b24
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997814"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789475"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Zarządzanie Program antywirusowy Microsoft Defender i skanowaniami w poszukiwaniu punktów końcowych, które są aktualne
+# <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Zarządzaj aktualizacjami programu antywirusowego Microsoft Defender i skanuj w poszukiwaniu nieaktualnych punktów końcowych
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender
 
-Program antywirusowy Microsoft Defender pozwala zdefiniować, przez jaki czas może zostać pominięty lub przez jaki czas może zostać pominięty przez punkt końcowy w celu zaktualizowania i zeskanowania samego punktu końcowego. Jest to szczególnie przydatne w środowiskach, w których urządzenia nie są często połączone z siecią firmową lub zewnętrzną, lub urządzeń, które nie są używane codziennie.
+**Platformy**
+- System Windows
 
-Na przykład pracownik, który korzysta z określonego komputera, jest w przerwie przez trzy dni i w tym czasie nie loguje się na swoim komputerze.
+Program antywirusowy Microsoft Defender pozwala określić, jak długo punkt końcowy może uniknąć aktualizacji lub ile skanów może zostać pominiętych, zanim będzie wymagane zaktualizowanie i skanowanie. Jest to szczególnie przydatne w środowiskach, w których urządzenia nie są często połączone z siecią firmową lub zewnętrzną lub urządzeniami, które nie są używane na co dzień.
 
-Gdy użytkownik powróci do pracy i zaloguje się na swoim komputerze, Program antywirusowy Microsoft Defender natychmiast sprawdzi i pobierze najnowsze aktualizacje ochrony oraz rozpocznie skanowanie.
+Na przykład pracownik korzystający z określonego komputera jest w przerwach przez trzy dni i nie loguje się na komputerze w tym czasie.
 
-## <a name="set-up-catch-up-protection-updates-for-endpoints-that-havent-updated-for-a-while"></a>Konfigurowanie aktualizacji ochrony przez przyciąganie informacji dla punktów końcowych, które nie są aktualizowane przez jakiś czas
+Gdy użytkownik wróci do pracy i zaloguje się na komputerze, Program antywirusowy Microsoft Defender natychmiast sprawdzi i pobierze najnowsze aktualizacje ochrony i uruchomi skanowanie.
 
-Jeśli Program antywirusowy Microsoft Defender nie pobierał aktualizacji ochrony przez określony czas, możesz skonfigurować go tak, aby automatycznie sprawdzał i pobierał najnowszą aktualizację przy następnym logu. Jest to przydatne, jeśli po uruchomieniu [globalnie wyłączono automatyczne pobieranie aktualizacji](manage-event-based-updates-microsoft-defender-antivirus.md).
+## <a name="set-up-catch-up-protection-updates-for-endpoints-that-havent-updated-for-a-while"></a>Konfigurowanie aktualizacji ochrony nadrabiania zaległości dla punktów końcowych, które nie były aktualizowane od jakiegoś czasu
 
-### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>Konfigurowanie Menedżer konfiguracji w celu skonfigurowania aktualizacji ochrony przed przyciągania informacji
+Jeśli Program antywirusowy Microsoft Defender nie pobierze aktualizacji ochrony przez określony okres, możesz skonfigurować ją tak, aby automatycznie sprawdzała i pobierała najnowszą aktualizację podczas następnego logowania. Jest to przydatne w przypadku [globalnego wyłączenia automatycznego pobierania aktualizacji podczas uruchamiania](manage-event-based-updates-microsoft-defender-antivirus.md).
 
-1. Na konsoli Microsoft Endpoint Manager otwórz zasady ochrony przed złośliwym oprogramowaniem, które chcesz zmienić (kliknij pozycję Zasoby i zgodność  w okienku nawigacji po lewej stronie,  \> a następnie rozwiń drzewo do okna Omówienie **Endpoint Protection** \> zasady ochrony przed złośliwym **oprogramowaniem)**
+### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>Konfigurowanie aktualizacji ochrony nadrabiania zaległości przy użyciu Configuration Manager
 
-2. Przejdź do sekcji **Aktualizacje analizy zabezpieczeń i** skonfiguruj następujące ustawienia:
+1. W konsoli Microsoft Endpoint Manager otwórz zasady ochrony przed złośliwym kodem, które chcesz zmienić (kliknij pozycję **Zasoby i zgodność** w okienku nawigacji po lewej stronie, a następnie rozwiń drzewo do **pozycji Przegląd** \> **Endpoint Protection** \> **Zasady ochrony przed złośliwym kodem**)
 
-    1. Ustaw **opcję Wymuszaj aktualizację analizy zabezpieczeń, jeśli klient jest w trybie offline dla więcej niż dwóch następujących po sobie zaplanowanych aktualizacji na** **wartość Tak**.
-    2. W przypadku ustawienia Menedżer konfiguracji źródło aktualizacji analizy zabezpieczeń  **...** określ godziny, przed którymi aktualizacje ochrony dostarczane przez program Menedżer konfiguracji powinny być traktowane jako aktualne. Spowoduje to, że będzie używana lokalizacja następnej aktualizacji na podstawie zdefiniowanej kolejności [źródłowej rezerwowej](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order).
+2. Przejdź do sekcji **Aktualizacje analizy zabezpieczeń** i skonfiguruj następujące ustawienia:
+
+    1. Ustaw **opcję Wymuś aktualizację analizy zabezpieczeń, jeśli komputer kliencki jest w trybie offline dla więcej niż dwóch kolejnych zaplanowanych aktualizacji** na **wartość Tak**.
+    2. Jeśli **Configuration Manager jest używany jako źródło aktualizacji analizy zabezpieczeń...**, określ godziny, przed którymi aktualizacje ochrony dostarczane przez Configuration Manager powinny być uważane za nieaktualne. Spowoduje to użycie następnej lokalizacji aktualizacji na podstawie zdefiniowanego [rezerwowego zamówienia źródłowego](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order).
 
 3. Kliknij przycisk **OK**.
 
-4. [Wdeksuj zaktualizowane zasady w zwykły sposób](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4. [Wdróż zaktualizowane zasady jak zwykle](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-### <a name="use-group-policy-to-enable-and-configure-the-catch-up-update-feature"></a>Korzystanie zasady grupy w celu włączenia i skonfigurowania funkcji aktualizacji pochwytliwej
+### <a name="use-group-policy-to-enable-and-configure-the-catch-up-update-feature"></a>Użyj zasady grupy, aby włączyć i skonfigurować funkcję aktualizacji catch-up
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
+1. Na komputerze zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i kliknij przycisk **Edytuj**.
 
-2. W zasady grupy **zarządzania przejdź** do **konfiguracji komputera**.
+2. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera**.
 
-3. Kliknij **pozycję Zasady** , **a następnie pozycję Szablony administracyjne**.
+3. Kliknij pozycję **Zasady** , a następnie **pozycję Szablony administracyjne**.
 
-4. Rozwiń drzewo, **aby Windows składniki > Program antywirusowy Microsoft Defender > aktualizacji podpisu**.
+4. Rozwiń drzewo, aby **Windows składniki > Program antywirusowy Microsoft Defender > aktualizacje podpisów**.
 
-5. Kliknij dwukrotnie ustawienie **Definiuj liczbę** dni, po upływie której jest wymagana aktualizacja analizy zabezpieczeń pojętego, i ustaw dla opcji wartość **Włączone**. Wprowadź liczbę dni, po których program Microsoft Defender AV będzie sprawdzał i pobierał najnowszą aktualizację ochrony.
+5. Kliknij dwukrotnie ustawienie **Zdefiniuj liczbę dni, po których wymagana jest aktualizacja analizy zabezpieczeń catch-up** , i ustaw opcję **Włączone**. Wprowadź liczbę dni, po których usługa Microsoft Defender AV ma zostać sprawdzona i pobrana najnowsza aktualizacja ochrony.
 
 6. Kliknij przycisk **OK**.
 
-### <a name="use-powershell-cmdlets-to-configure-catch-up-protection-updates"></a>Konfigurowanie aktualizacji ochrony za pomocą poleceń cmdlet programu PowerShell
+### <a name="use-powershell-cmdlets-to-configure-catch-up-protection-updates"></a>Konfigurowanie aktualizacji ochrony nadrabiania zaległości przy użyciu poleceń cmdlet programu PowerShell
 
-Użyj następujących polecenia cmdlet:
+Użyj następujących poleceń cmdlet:
 
 ```PowerShell
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-Aby [uzyskać więcej informacji na](use-powershell-cmdlets-microsoft-defender-antivirus.md) temat używania programu PowerShell z programem PowerShell z programem Program antywirusowy Microsoft Defender, zobacz Konfigurowanie i uruchamianie poleceń cm Program antywirusowy Microsoft Defender dlet programu PowerShell oraz poleceń [cmdlet programu Defender](/powershell/module/defender/) oraz Program antywirusowy Microsoft Defender.
+Zobacz [Konfigurowanie i uruchamianie poleceń cmdlet programu PowerShell Program antywirusowy Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) i [poleceń cmdlet programu antywirusowego Defender](/powershell/module/defender/), aby uzyskać więcej informacji na temat używania programu PowerShell z Program antywirusowy Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Konfigurowanie aktualizacji Windows zarządzania za pomocą instrukcji zarządzania zabezpieczeniami (WMI)
+### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Konfigurowanie aktualizacji ochrony nadrabiania zaległości za pomocą instrukcji zarządzania Windows (WMI)
 
-Użyj metody [**Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uzyskać następujące właściwości:
+Użyj [metody **Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) dla następujących właściwości:
 
 ```WMI
 SignatureUpdateCatchupInterval
 ```
 
-Aby uzyskać więcej informacji i dozwolonych parametrów, zobacz następujące informacje:
+Aby uzyskać więcej informacji i dozwolone parametry, zobacz następujące informacje:
 
-- [Windows Defender interfejsów API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [interfejsy API Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>Ustawianie liczby dni przed raportem o ochronie jako aktualnej
+## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>Ustaw liczbę dni, po których ochrona zostanie zgłoszona jako nieaktualna
 
-Możesz także określić liczbę dni, po których Program antywirusowy Microsoft Defender będzie uznawana za starą lub zdaną. Po upływie określonej liczby dni klient będzie zgłaszać się jako aktualny i będzie wyświetlać komunikat o błędzie użytkownikowi komputera. Może to również spowodować, że program Program antywirusowy Microsoft Defender będzie próbował pobrać aktualizację z innych źródeł (na podstawie zdefiniowanej kolejności [źródłowej), na](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order) przykład w przypadku użycia mmpc jako źródła pomocniczego po ustawieniu programu WSUS lub Microsoft Update jako pierwszego źródła.
+Możesz również określić liczbę dni, po których ochrona Program antywirusowy Microsoft Defender jest uznawana za starą lub nieaktualną. Po określonej liczbie dni klient zgłosi się jako nieaktualny i wyświetli użytkownikowi komputera błąd. Może to również spowodować, że Program antywirusowy Microsoft Defender spróbuje pobrać aktualizację z innych źródeł (w oparciu o zdefiniowaną [rezerwową kolejność źródła](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)), na przykład podczas korzystania z programu MMPC jako źródła pomocniczego po ustawieniu programu WSUS lub Microsoft Update jako pierwszego źródła.
 
-### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Użyj zasady grupy, aby określić liczbę dni, po których ochrona będzie uznawana za datę
+### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Użyj zasady grupy, aby określić liczbę dni, po których ochrona zostanie uznana za nieaktualną
 
-1. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
+1. Na maszynie zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i kliknij przycisk **Edytuj**.
 
-2. W zasady grupy **zarządzania przejdź** do **konfiguracji komputera**.
+2. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera**.
 
-3. Kliknij **pozycję Zasady** , **a następnie pozycję Szablony administracyjne**.
+3. Kliknij pozycję **Zasady** , a następnie **pozycję Szablony administracyjne**.
 
-4. Rozwiń drzewo, **aby Windows składniki > Program antywirusowy Microsoft Defender > aktualizacje podpisu** i skonfiguruj następujące ustawienia:
+4. Rozwiń drzewo, aby **Windows składniki > Program antywirusowy Microsoft Defender > aktualizacje podpisu** i skonfiguruj następujące ustawienia:
 
-    1. Kliknij dwukrotnie **pozycję Definiuj liczbę** dni, po których definicje oprogramowania szpiegującego zostaną uznane za aktualne, i ustaw opcję **Włączone**. Wprowadź liczbę dni, po których program Microsoft Defender AV będzie uznać, że funkcje analizy zabezpieczeń programu szpiegującego są aktualne.
+    1. Kliknij dwukrotnie **pozycję Zdefiniuj liczbę dni, po których definicje programów szpiegujących zostaną uznane za nieaktualne** , i ustaw opcję **Włączone**. Wprowadź liczbę dni, po których usługa Microsoft Defender AV uzna analizę zabezpieczeń za nieaktualną.
 
     2. Kliknij przycisk **OK**.
 
-    3. Kliknij dwukrotnie **pozycję Definiuj liczbę dni** , po których definicje wirusów zostaną uznane za aktualne, i ustaw opcję **Włączone**. Wprowadź liczbę dni, po których program Microsoft Defender AV będzie uznać, że funkcje analizy wirusów są aktualne.
+    3. Kliknij dwukrotnie **pozycję Zdefiniuj liczbę dni, po których definicje wirusów zostaną uznane za nieaktualne** , i ustaw opcję **Włączone**. Wprowadź liczbę dni, po których usługa Microsoft Defender AV uzna analizę zabezpieczeń za nieaktualną.
 
     4. Kliknij przycisk **OK**.
 
-## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>Konfigurowanie skanowania w poszukiwaniu punktów końcowych, które nie były skanowane przez jakiś czas
+## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>Konfigurowanie skanowania nadrabiania zaległości dla punktów końcowych, które nie były skanowane od jakiegoś czasu
 
-Możesz ustawić liczbę następujących po sobie zaplanowanych skanów, które mogą zostać pominięte przed Program antywirusowy Microsoft Defender wymusnąć skan.
+Możesz ustawić liczbę kolejnych zaplanowanych skanów, które mogą zostać pominięte, zanim Program antywirusowy Microsoft Defender wymusi skanowanie.
 
-Proces włączania tej funkcji jest:
+Proces włączania tej funkcji to:
 
 1. Skonfiguruj co najmniej jedno zaplanowane skanowanie (zobacz temat [Planowanie skanowania](scheduled-catch-up-scans-microsoft-defender-antivirus.md) ).
-2. Włącz funkcję skanowania pogotowa.
-3. Zdefiniuj liczbę skanów, które można pominąć przed rozpoczęciem skanowania pochwytowego.
+2. Włącz funkcję skanowania nadrabiania zaległości.
+3. Zdefiniuj liczbę skanów, które można pominąć przed zakończeniem skanowania catch-up.
 
 Tę funkcję można włączyć zarówno w przypadku pełnego, jak i szybkiego skanowania.
 
-### <a name="use-group-policy-to-enable-and-configure-the-catch-up-scan-feature"></a>Korzystanie zasady grupy w celu włączenia i skonfigurowania funkcji skanowania pochwytowego
+### <a name="use-group-policy-to-enable-and-configure-the-catch-up-scan-feature"></a>Użyj zasady grupy, aby włączyć i skonfigurować funkcję skanowania nadrabiania zaległości
 
-1. Upewnij się, że zostało ustawione co najmniej jedno zaplanowane skanowanie.
+1. Upewnij się, że skonfigurowano co najmniej jedno zaplanowane skanowanie.
 
-2. Na komputerze zasady grupy zarządzania usługami otwórz konsolę zarządzania usługami [zasady grupy, kliknij](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) prawym przyciskiem myszy zasady grupy obiekt, który chcesz skonfigurować, a następnie kliknij pozycję **Edytuj**.
+2. Na maszynie zarządzania zasady grupy otwórz [konsolę zarządzania zasady grupy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), kliknij prawym przyciskiem myszy obiekt zasady grupy, który chcesz skonfigurować, i kliknij przycisk **Edytuj**.
 
-3. W zasady grupy **zarządzania przejdź** do **konfiguracji komputera**.
+3. W **edytorze zarządzania zasady grupy** przejdź do pozycji **Konfiguracja komputera**.
 
-4. Kliknij **pozycję Zasady** , **a następnie pozycję Szablony administracyjne**.
+4. Kliknij pozycję **Zasady** , a następnie **pozycję Szablony administracyjne**.
 
-5. Rozwiń drzewo, **aby Windows składniki > Program antywirusowy Microsoft Defender > skanuj** i skonfiguruj następujące ustawienia:
+5. Rozwiń drzewo, aby **Windows składniki > Program antywirusowy Microsoft Defender > Skanuj** i skonfiguruj następujące ustawienia:
 
-    1. Jeśli masz ustawione zaplanowane szybkie skanowania, kliknij dwukrotnie ustawienie Włącz funkcję szybkiej  skanowania i ustaw dla tej opcji wartość **Włączone**.
-    2. Jeśli masz ustawione zaplanowane pełne skanowania, kliknij dwukrotnie ustawienie **Włącz** pełne skanowanie po zakończeniu i ustaw dla tej opcji wartość **Włączone**. Kliknij przycisk **OK**.
-    3. Kliknij dwukrotnie wartość **Określ** liczbę dni, po których trzeba wymusić skanowanie pochwytne, i ustaw dla opcji wartość **Włączone**.
-    4. Wprowadź liczbę skanów, które mogą zostać nieodebrane przed rozpoczęciem skanowania, gdy użytkownik następnym razem zaloguje się na komputerze. Typ skanowania jest określany przez typ skanowania Określ typ skanowania do użycia w zaplanowanym skanie **(zobacz** temat [Planowanie skanowania](scheduled-catch-up-scans-microsoft-defender-antivirus.md) ). Kliknij przycisk **OK**.
+    1. Jeśli skonfigurowano zaplanowane szybkie skanowanie, kliknij dwukrotnie ustawienie **Włącz szybkie skanowanie catch-up** i ustaw opcję **Włączone**.
+    2. Jeśli skonfigurowano zaplanowane pełne skanowanie, kliknij dwukrotnie ustawienie **Włącz pełne skanowanie catch-up** i ustaw opcję **Włączone**. Kliknij przycisk **OK**.
+    3. Kliknij dwukrotnie ustawienie **Zdefiniuj liczbę dni, po których skanowanie uzupełniające jest wymuszone** , i ustaw opcję **Włączone**.
+    4. Wprowadź liczbę skanów, które można pominąć, zanim skanowanie zostanie automatycznie uruchomione, gdy użytkownik następnym razem zaloguje się na komputerze. Typ skanowania, które jest uruchamiane, jest określany przez **opcję Określ typ skanowania do użycia podczas zaplanowanego skanowania** (zobacz temat [Planowanie skanowania](scheduled-catch-up-scans-microsoft-defender-antivirus.md) ). Kliknij przycisk **OK**.
 
 > [!NOTE]
-> Tytuł zasady grupy to liczba dni. Jednak to ustawienie jest stosowane do liczby skanów (nie dni), zanim zostanie uruchomione skanowanie pochwytne.
+> Tytuł ustawienia zasady grupy odnosi się do liczby dni. Ustawienie jest jednak stosowane do liczby skanów (a nie dni) przed uruchomieniem skanowania nadrabiania zaległości.
 
-### <a name="use-powershell-cmdlets-to-configure-catch-up-scans"></a>Konfigurowanie poleceń cmdlet programu PowerShell w celu konfigurowania skanów
+### <a name="use-powershell-cmdlets-to-configure-catch-up-scans"></a>Konfigurowanie skanowania nadrabiania zaległości przy użyciu poleceń cmdlet programu PowerShell
 
-Użyj następujących polecenia cmdlet:
+Użyj następujących poleceń cmdlet:
 
 ```PowerShell
 Set-MpPreference -DisableCatchupFullScan
@@ -155,36 +159,46 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-Zobacz [Zarządzanie poleceniami cmdlet programu PowerShell i](use-powershell-cmdlets-microsoft-defender-antivirus.md) Program antywirusowy Microsoft Defender [programu Defender Antivirus](/powershell/module/defender/), aby uzyskać więcej informacji na temat korzystania z programu PowerShell z programem Program antywirusowy Microsoft Defender.
+Aby uzyskać więcej informacji na temat używania programu PowerShell z Program antywirusowy Microsoft Defender, zobacz [Używanie poleceń cmdlet programu PowerShell do zarządzania poleceniami](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlet programu Program antywirusowy Microsoft Defender i programu Antywirusowego Defender](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Konfigurowanie Windows przez zarządzanie nimi przy użyciu instrukcji zarządzania danymi (WMI, Catch-Up Instruction)
+### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Konfigurowanie skanowania nadrabiania zaległości przy użyciu instrukcji zarządzania Windows (WMI)
 
-Użyj metody [**Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) , aby uzyskać następujące właściwości:
+Użyj [metody **Set** klasy **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) dla następujących właściwości:
 
 ```WMI
 DisableCatchupFullScan
 DisableCatchupQuickScan
 ```
 
-Aby uzyskać więcej informacji i dozwolonych parametrów, zobacz następujące informacje:
+Aby uzyskać więcej informacji i dozwolone parametry, zobacz następujące informacje:
 
-- [Windows Defender interfejsów API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [interfejsy API Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Konfigurowanie Menedżer konfiguracji za pomocą funkcji pochwytania
+### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Konfigurowanie skanowania nadrabiania zaległości przy użyciu Configuration Manager
 
-1. Na konsoli Microsoft Endpoint Manager otwórz zasady ochrony przed złośliwym oprogramowaniem, które chcesz zmienić (kliknij pozycję Zasoby i zgodność  w okienku nawigacji po lewej stronie,  \> a następnie rozwiń drzewo do okna Omówienie **Endpoint Protection** \> zasady ochrony przed złośliwym **oprogramowaniem)**
+1. W konsoli Microsoft Endpoint Manager otwórz zasady ochrony przed złośliwym kodem, które chcesz zmienić (kliknij pozycję **Zasoby i zgodność** w okienku nawigacji po lewej stronie, a następnie rozwiń drzewo do **pozycji Przegląd** \> **Endpoint Protection** \> **Zasady ochrony przed złośliwym kodem**)
 
-2. Przejdź do sekcji **Zaplanowane skanowania** i Wymusij skanowanie wybranego typu skanowania, jeśli klient jest w trybie **offline...** na pozycję **Tak**.
+2. Przejdź do sekcji Zaplanowane skanowania i **wymuś skanowanie wybranego typu skanowania, jeśli komputer kliencki jest w trybie offline...** na **wartość Tak**.
 
 3. Kliknij przycisk **OK**.
 
-4. [Wdeksuj zaktualizowane zasady w zwykły sposób](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4. [Wdróż zaktualizowane zasady jak zwykle](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 
 - [Wdrażanie Program antywirusowy Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Zarządzanie Program antywirusowy Microsoft Defender i stosowanie planu bazowego](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Zarządzanie tym, kiedy mają być pobierane i stosowane aktualizacje ochrony](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-- [Zarządzanie aktualizacjami wymuszonmi opartymi na wydarzeniach](manage-event-based-updates-microsoft-defender-antivirus.md)
-- [Zarządzanie aktualizacjami dla urządzeń przenośnych i maszyn wirtualnych](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Program antywirusowy Microsoft Defender w programie Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Zarządzanie pobieraniem i stosowaniem aktualizacji ochrony](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+- [Zarządzaj wymuszonymi aktualizacjami opartymi na zdarzeniach](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [Zarządzaj aktualizacjami dla urządzeń przenośnych i maszyn wirtualnych ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [Program antywirusowy Microsoft Defender w Windows 10](microsoft-defender-antivirus-in-windows-10.md)

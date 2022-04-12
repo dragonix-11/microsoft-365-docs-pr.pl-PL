@@ -1,7 +1,7 @@
 ---
-title: Raport kondycji i zgodności urządzeń w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender
-description: Śledzenie wykrywania stanu kondycji urządzenia, stanu oprogramowania antywirusowego, platformy systemu operacyjnego i Windows 10 za pomocą raportu kondycji i zgodności urządzeń
-keywords: stan kondycji, oprogramowanie antywirusowe, platforma systemu operacyjnego, wersja systemu Windows 10, wersja, kondycja, zgodność, stan
+title: Raport dotyczący kondycji i zgodności urządzeń w Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Śledzenie wykrywania stanu kondycji urządzenia, stanu oprogramowania antywirusowego, platformy systemu operacyjnego i wersji Windows 10 przy użyciu raportu kondycji i zgodności urządzenia
+keywords: stan kondycji, program antywirusowy, platforma systemu operacyjnego, wersja systemu Windows 10, wersja, kondycja, zgodność, stan
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,27 +14,35 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bf89c0e57cbe14980b15ecf6f5a88f6db2b83e84
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: d171db0d5009cc32c34c3bf95da907221f275410
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474030"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789277"
 ---
-# <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Raport kondycji i zgodności urządzeń w aplikacji Ochrona punktu końcowego w usłudze Microsoft Defender
+# <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Raport dotyczący kondycji i zgodności urządzeń w Ochrona punktu końcowego w usłudze Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Program antywirusowy Microsoft Defender 
 
-Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+**Platformy**
+- System Windows
+- Mac OS
+- Linux
+- iOS
+- Android
 
-Raport o stanie urządzeń zawiera szczegółowe informacje o urządzeniach w Organizacji. Raport zawiera popularne informacje pokazujące stan kondycji czujnika, stan oprogramowania antywirusowego, platformy systemu operacyjnego i wersje Windows 10 (i Windows 11).
+Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Pulpit nawigacyjny ma strukturę dwóch sekcji:
+Raport o stanie urządzeń zawiera ogólne informacje o urządzeniach w organizacji. Raport zawiera popularne informacje pokazujące stan kondycji czujnika, stan programu antywirusowego, platformy systemu operacyjnego oraz wersje Windows 10 (i Windows 11).
+
+Pulpit nawigacyjny jest podzielony na dwie sekcje:
 
 :::image type="content" source="images/device-reports.png" alt-text="Raport urządzenia" lightbox="images/device-reports.png":::
 
@@ -43,58 +51,68 @@ Pulpit nawigacyjny ma strukturę dwóch sekcji:
 
 ****
 
-|Sekcja|Opis|
+|Sekcji|Opis|
 |---|---|
-|1|Trendy w urządzeniach|
+|1|Trendy dotyczące urządzeń|
 |2|Podsumowanie urządzenia (bieżący dzień)|
 |||
 
-## <a name="device-trends"></a>Trendy w urządzeniach
+## <a name="device-trends"></a>Trendy dotyczące urządzeń
 
-Domyślnie trendy dotyczące urządzeń wyświetlają informacje o urządzeniu z 30-dniowego okresu kończącego się na ostatni cały dzień. Aby uzyskać lepszą perspektywę trendów występujących w organizacji, możesz dostosować okres raportowania, dostosowując pokazywany okres. Aby dostosować przedział czasu, wybierz zakres czasu z listy rozwijanej:
+Domyślnie trendy urządzeń wyświetlają informacje o urządzeniu z 30-dniowego okresu kończącego się w ostatnim pełnym dniu. Aby uzyskać lepsze spojrzenie na trendy występujące w organizacji, możesz dostosować okres raportowania, dostosowując pokazany okres. Aby dostosować okres, wybierz zakres czasu z opcji listy rozwijanej:
 
-- 30 dni
+- 30 dni
 - Trzy miesiące
 - Sześć miesięcy
 - Niestandardowe
 
 > [!NOTE]
-> Filtry te są stosowane tylko w sekcji trendów urządzeń. Nie ma to wpływu na sekcję podsumowania urządzenia.
+> Te filtry są stosowane tylko w sekcji trendy urządzeń. Nie ma to wpływu na sekcję podsumowania urządzenia.
 
-## <a name="device-summary"></a>Podsumowanie urządzeń
+## <a name="device-summary"></a>Podsumowanie urządzenia
 
-Mimo że trendy dotyczące urządzeń wskazują popularne informacje o urządzeniach, w podsumowaniu urządzenia są wyświetlane informacje dotyczące urządzeń w zakresie od bieżącego dnia.
+Trendy dotyczące urządzeń pokazują popularne informacje o urządzeniu, ale podsumowanie urządzenia pokazuje informacje o urządzeniu o zakresie do bieżącego dnia.
 
 > [!NOTE]
-> Dane odzwierciedlone w sekcji podsumowania są objęte zakresem 180 dni przed datą bieżącą. Jeśli na przykład dzisiejszą datą jest 27 marca 2019 r., dane w sekcji podsumowania będą odzwierciedlać liczby od 28 września 2018 r. do 27 marca 2019 r.
+> Dane odzwierciedlone w sekcji podsumowania mają zakres do 180 dni przed bieżącą datą. Jeśli na przykład dzisiejsza data to 27 marca 2019 r., dane w sekcji podsumowania będą odzwierciedlać liczby od 28 września 2018 r. do 27 marca 2019 r.
 >
-> Filtr zastosowany w sekcji trendów nie jest stosowany w sekcji podsumowania.
+> Filtr zastosowany do sekcji trendy nie jest stosowany w sekcji podsumowania.
 
-Sekcja trendów urządzeń umożliwia przechodzenie do szczegółów listy urządzeń z zastosowanym do niej filtrem. Na przykład kliknięcie paska Nieaktywny na karcie Stan kondycji czujnika spowoduje wyświetlanie listy urządzeń z wynikami wskazującymi tylko te urządzenia, których stan czujnika jest nieaktywny.
+Sekcja trendów urządzeń umożliwia przechodzenie do listy urządzeń przy użyciu odpowiedniego filtru. Na przykład kliknięcie paska Nieaktywne na karcie Stan kondycji czujnika spowoduje wyświetlenie listy urządzeń z wynikami pokazującymi tylko urządzenia, których stan czujnika jest nieaktywny.
 
 ## <a name="device-attributes"></a>Atrybuty urządzenia
 
-Raport składa się z kart, na których są wyświetlane następujące atrybuty urządzenia:
+Raport składa się z kart, które wyświetlają następujące atrybuty urządzenia:
 
-- **Stan kondycji**: wyświetla informacje o stanie czujnika na urządzeniach, udostępniając zagregowany widok urządzeń, które są aktywne, mają problemy z komunikacją, są nieaktywne lub nie są widoczne żadne dane czujnika.
-- **Stan oprogramowania antywirusowego Windows 10 urządzeniach**: pokazuje liczbę urządzeń i stan Program antywirusowy Microsoft Defender.
-- **Platformy systemu operacyjnego**: pokazuje rozpowszechnianie platform systemu operacyjnego istnieje w organizacji.
-- **Windows 10 wersji**: pokazuje rozpowszechnianie Windows 10 urządzeniach i ich wersjach w organizacji.
+- **Stan kondycji**: pokazuje informacje o stanie czujnika na urządzeniach, zapewniając zagregowany widok urządzeń, które są aktywne, występują zaburzenia komunikacji, nieaktywne lub nie są widoczne żadne dane czujnika.
+- **Stan programu antywirusowego dla aktywnych urządzeń Windows 10**: pokazuje liczbę urządzeń i stan Program antywirusowy Microsoft Defender.
+- **Platformy systemu operacyjnego**: pokazuje dystrybucję platform systemu operacyjnego, które istnieją w organizacji.
+- **Windows 10 wersje**: pokazuje dystrybucję urządzeń Windows 10 i ich wersji w organizacji.
 
 ## <a name="filter-data"></a>Filtrowanie danych
 
 Użyj podanych filtrów, aby dołączyć lub wykluczyć urządzenia z określonymi atrybutami.
 
-Możesz wybrać wiele filtrów do zastosowania w atrybutach urządzenia.
+Możesz wybrać wiele filtrów do zastosowania z atrybutów urządzenia.
 
 > [!NOTE]
-> Filtry te są stosowane **do** wszystkich kart w raporcie.
+> Te filtry dotyczą **wszystkich** kart w raporcie.
 
-Aby na przykład wyświetlić dane dotyczące urządzeń Windows 10 z stanem kondycji czujnika Aktywne:
+Aby na przykład pokazać dane dotyczące urządzeń Windows 10 z aktywnym stanem kondycji czujnika:
 
-1. W **obszarze Filtry > stan kondycji czujnika > Aktywne**.
-2. Następnie wybierz **platformy systemu operacyjnego > Windows 10**.
-3. Wybierz **pozycję Zastosuj**.
+1. W obszarze **Filtry > Stan kondycji czujnika > Aktywny**.
+2. Następnie wybierz pozycję **Platformy systemu operacyjnego > Windows 10**.
+3. Wybierz pozycję **Zastosuj**.
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 ## <a name="related-topic"></a>Temat pokrewny
 

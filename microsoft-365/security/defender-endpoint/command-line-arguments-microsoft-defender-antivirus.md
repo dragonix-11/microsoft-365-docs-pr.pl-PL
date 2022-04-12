@@ -1,7 +1,7 @@
 ---
-title: Zarządzanie plikami przy użyciu wiersza Program antywirusowy Microsoft Defender
-description: Uruchom Program antywirusowy Microsoft Defender skanowania i skonfiguruj ochronę następnej generacji przy użyciu dedykowanego narzędzia wiersza polecenia.
-keywords: uruchamianie skanowania w programie Windows Defender, uruchamianie skanowania antywirusowego z wiersza polecenia, uruchamianie skanowania w programie Windows Defender z wiersza polecenia, mpcmdrun, defender
+title: Zarządzanie Program antywirusowy Microsoft Defender za pomocą wiersza polecenia
+description: Uruchom Program antywirusowy Microsoft Defender skanuje i skonfiguruj ochronę nowej generacji za pomocą dedykowanego narzędzia wiersza polecenia.
+keywords: uruchamianie skanowania usługi Windows Defender, uruchamianie skanowania antywirusowego z poziomu wiersza polecenia, uruchamianie skanowania usługi Windows Defender z poziomu wiersza polecenia, mpcmdrun, defender
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,23 +15,27 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f7ae9c9d0986463b6d6368edd0dac050600e3373
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 97f818469f9da2616ca5ca2839ddf29ea227b85f
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "62996817"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789739"
 ---
-# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Konfigurowanie ustawień Program antywirusowy Microsoft Defender zarządzanie nimi mpcmdrun.exe narzędziu wiersza polecenia
+# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Konfigurowanie Program antywirusowy Microsoft Defender i zarządzanie nimi za pomocą narzędzia wiersza polecenia mpcmdrun.exe
 
 **Dotyczy:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
+- Program antywirusowy Microsoft Defender 
 
-W aplikacji można wykonywać różne funkcje Program antywirusowy Microsoft Defender za pomocą dedykowanego narzędzia wiersza **polecenia, którempcmdrun.exe**. To narzędzie jest przydatne, gdy chcesz zautomatyzować Program antywirusowy Microsoft Defender zadań. Narzędzie można znaleźć w programie `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Uruchom ją z wiersza polecenia.
+**Platformy**
+- System Windows
+
+Różne funkcje można wykonywać w Program antywirusowy Microsoft Defender przy użyciu dedykowanego narzędzia wiersza polecenia **mpcmdrun.exe**. To narzędzie jest przydatne, gdy chcesz zautomatyzować zadania Program antywirusowy Microsoft Defender. Narzędzie można znaleźć w pliku `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Uruchom go w wierszu polecenia.
 
 > [!TIP]
-> Może być konieczne otwarcie wersji wiersza polecenia na poziomie administratora. Podczas wyszukiwania wiersza **polecenia na** stronie menu Start wybierz **pozycję Uruchom jako administrator**. Jeśli używasz zaktualizowanej wersji platformy programu Microsoft Defender ochrony przed złośliwym kodem, uruchom program `MpCmdRun` z następującej lokalizacji: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. Aby uzyskać więcej informacji na temat platformy ochrony przed złośliwym oprogramowaniem, [zobacz Program antywirusowy Microsoft Defender i planu bazowego](manage-updates-baselines-microsoft-defender-antivirus.md).
+> Może być konieczne otwarcie wersji wiersza polecenia na poziomie administratora. Podczas wyszukiwania **wiersza polecenia** w menu Start wybierz pozycję **Uruchom jako administrator**. Jeśli używasz zaktualizowanej wersji platformy ochrony przed złośliwym kodem w usłudze Microsoft Defender, uruchom polecenie `MpCmdRun` z następującej lokalizacji: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. Aby uzyskać więcej informacji na temat platformy ochrony przed złośliwym kodem, zobacz [Program antywirusowy Microsoft Defender aktualizacje i linie bazowe](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 Narzędzie MpCmdRun używa następującej składni:
 
@@ -49,23 +53,23 @@ W naszym przykładzie narzędzie MpCmdRun uruchamia pełne skanowanie antywiruso
 
 ## <a name="commands"></a>Polecenia
 
-|Polecenie|Opis|
+|Polecenia|Opis|
 |---|---|
-|`-?` **lub** `-h`|Wyświetla wszystkie dostępne opcje narzędzia MpCmdRun|
-|`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|Skanuje w poszukiwaniu złośliwego oprogramowania. Wartości dla **typu ScanType** to:<p>**0** Domyślne, zgodnie z konfiguracją<p>**1** Szybkie skanowanie<p>**2 Pełne** skanowanie<p>**3 Skanowanie** niestandardowe plików i katalogów.<p>ProcesorThrottling działa zgodnie z konfiguracjami zasad|
+|`-?` **lub** `-h`|Wyświetla wszystkie dostępne opcje dla narzędzia MpCmdRun|
+|`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|Skanuje pod kątem złośliwego oprogramowania. Wartości **parametru ScanType** to:<p>**0** Wartość domyślna zgodnie z konfiguracją<p>**1** Szybkie skanowanie<p>**2** Pełne skanowanie<p>**3** Skanowanie niestandardowe plików i katalogów.<p>CpuThrottling działa zgodnie z konfiguracjami zasad|
 |`-Trace [-Grouping #] [-Level #]`|Rozpoczyna śledzenie diagnostyczne|
-|`-GetFiles [-SupportLogLocation <path>]`|Zbiera informacje o pomocy technicznej. Zobacz "[zbieranie danych diagnostycznych](collect-diagnostic-data.md)"|
-|`-GetFilesDiagTrack`|Taki sam jak `-GetFiles`, ale dane wyjściowe do tymczasowego folderu DiagTrack|
-|`-RemoveDefinitions [-All]`|Przywraca zainstalowaną analizę zabezpieczeń do poprzedniej kopii zapasowej lub do pierwotnego zestawu domyślnego.|
-|`-RemoveDefinitions [-DynamicSignatures]`|Usuwa tylko dynamicznie pobraną analizę zabezpieczeń.|
-|`-RemoveDefinitions [-Engine]`|Przywracanie poprzedniego zainstalowanego aparatu|
-|`-SignatureUpdate [-UNC \|-MMPC]`|Sprawdzanie nowych aktualizacji analizy zabezpieczeń|
-|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`|Przywraca lub wyświetla elementy poddane kwarantannie.|
-|`-AddDynamicSignature [-Path]`|Ładowanie dynamicznej analizy zabezpieczeń|
-|`-ListAllDynamicSignatures`|Lista załadowanych dynamicznych analiz zabezpieczeń.|
+|`-GetFiles [-SupportLogLocation <path>]`|Zbiera informacje o pomocy technicznej. Zobacz "[Zbieranie danych diagnostycznych](collect-diagnostic-data.md)"|
+|`-GetFilesDiagTrack`|Tak samo jak `-GetFiles`, ale dane wyjściowe do tymczasowego folderu DiagTrack|
+|`-RemoveDefinitions [-All]`|Przywraca zainstalowaną analizę zabezpieczeń do poprzedniej kopii zapasowej lub oryginalnego zestawu domyślnego|
+|`-RemoveDefinitions [-DynamicSignatures]`|Usuwa tylko dynamicznie pobraną analizę zabezpieczeń|
+|`-RemoveDefinitions [-Engine]`|Przywraca poprzedni zainstalowany aparat|
+|`-SignatureUpdate [-UNC \|-MMPC]`|Sprawdzanie pod kątem nowych aktualizacji analizy zabezpieczeń|
+|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`|Przywraca lub wyświetla listy elementów poddanych kwarantannie|
+|`-AddDynamicSignature [-Path]`|Ładuje dynamiczną analizę zabezpieczeń|
+|`-ListAllDynamicSignatures`|Wyświetla listę załadowanych dynamicznych analiz zabezpieczeń|
 |`-RemoveDynamicSignature [-SignatureSetID]`|Usuwa dynamiczną analizę zabezpieczeń|
-|`-CheckExclusion -path <path>`|Sprawdza, czy ścieżka jest wykluczona.|
-|`-ValidateMapsConnection`|Sprawdza, czy sieć może komunikować się z usługą Program antywirusowy Microsoft Defender w chmurze. To polecenie działa tylko w Windows 10 wersji 1703 lub wyższej.|
+|`-CheckExclusion -path <path>`|Sprawdza, czy ścieżka jest wykluczona|
+|`-ValidateMapsConnection`|Sprawdza, czy sieć może komunikować się z usługą w chmurze Program antywirusowy Microsoft Defender. To polecenie będzie działać tylko w Windows 10 w wersji 1703 lub nowszej.|
 
 ## <a name="common-errors-in-running-commands-via-mpcmdrunexe"></a>Typowe błędy podczas uruchamiania poleceń za pośrednictwem mpcmdrun.exe
 
@@ -73,18 +77,28 @@ W poniższej tabeli wymieniono typowe błędy, które mogą wystąpić podczas k
 
 |Komunikat o błędzie|Możliwa przyczyna|
 |---|---|
-|**Sprawdzanie poprawności połączeniaMapsConnection nie powiodło się (800106BA)** **lub 0x800106BA**|Usługa Program antywirusowy Microsoft Defender jest wyłączona. Włącz usługę i spróbuj ponownie. Jeśli potrzebujesz pomocy dotyczącej ponownego włączania Program antywirusowy Microsoft Defender, zobacz Ponowne [instalowanie/włączanie Program antywirusowy Microsoft Defender na punktach końcowych](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **PORADA**: W Windows 10 1909 lub starszym oraz w Windows Server 2019 lub starszym usługa była wcześniej nazywana *Program antywirusowy Windows Defender*.|
-|**0x80070667**|To polecenie jest uruchomione `-ValidateMapsConnection` na komputerze w wersji Windows 10 1607 lub starszej albo Windows Server 2016 starszej wersji. Uruchom polecenie z komputera, na Windows 10 wersji 1703 lub nowszej albo z Windows Server 2019 lub nowszego.|
-|**Plik MpCmdRun nie jest rozpoznawany jako polecenie wewnętrzne ani zewnętrzne, nie można go uruchomić ani jako plik wsadowy.**|Narzędzie musi być uruchamiane z albo (`2012.4-0`tam, `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` gdzie może się różnić, ponieważ aktualizacje platformy są comiesięczne z wyjątkiem marca)|
-|**Sprawdź poprawność połączeniaMapsConnection z mapami (hr=80070005 httpcode=450)**|Podjęto próbę użycia niewystarczających uprawnień. Użyj wiersza polecenia (cmd.exe) jako administrator.|
-|**Sprawdź poprawność połączeniaMapsConnection z mapami (hr=80070006 httpcode=451)**|Zapora blokuje połączenie lub przeprowadza inspekcję SSL.|
-|**Sprawdź poprawność połączeniaMapsConnection z mapami (hr=80004005 httpcode=450)**|Możliwe problemy związane z siecią, takie jak problemy z rozpoznawania nazw|
-|**Sprawdzanie poprawności usługiMapsConnection nie powiodło się, aby nawiązać połączenie z usługą MAPY (hr=0x80508015**|Zapora blokuje połączenie lub przeprowadza inspekcję SSL.|
-|**Sprawdzanie poprawności aplikacjiMapsConnection nie powiodło się nawiązanie połączenia z usługą MAPY (hr=800722F0D)**|Zapora blokuje połączenie lub przeprowadza inspekcję SSL.|
-|**Sprawdź poprawność połączeniaMapsConnection z mapami (hr=80072EE7 httpcode=451)**|Zapora blokuje połączenie lub przeprowadza inspekcję SSL.|
+|**Niepowodzenie validateMapsConnection (800106BA)** lub **0x800106BA**|Usługa Program antywirusowy Microsoft Defender jest wyłączona. Włącz usługę i spróbuj ponownie. Jeśli potrzebujesz pomocy przy ponownym włączeniu Program antywirusowy Microsoft Defender, zobacz [Ponowne instalowanie/włączanie Program antywirusowy Microsoft Defender w punktach końcowych](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **PORADA**: W Windows 10 1909 lub starszym i Windows Server 2019 lub starszym usługa była wcześniej nazywana *Program antywirusowy Windows Defender*.|
+|**0x80070667**|Uruchamiasz `-ValidateMapsConnection` polecenie z komputera, który jest Windows 10 wersji 1607 lub starszej lub Windows Server 2016 lub starszej. Uruchom polecenie z maszyny Windows 10 wersji 1703 lub nowszej albo Windows Server 2019 lub nowszej.|
+|**MpCmdRun nie jest rozpoznawany jako wewnętrzne lub zewnętrzne polecenie, program operacyjny lub plik wsadowy.**|Narzędzie musi być uruchamiane z poziomu lub `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` (gdzie `2012.4-0` mogą się różnić, ponieważ aktualizacje platformy są co miesiąc z wyjątkiem marca)|
+|**ValidateMapsConnection nie może nawiązać połączenia z usługą MAPS (hr=80070005 httpcode=450)**|Próbowano użyć polecenia z niewystarczającymi uprawnieniami. Użyj wiersza polecenia (cmd.exe) jako administrator.|
+|**ValidateMapsConnection nie może nawiązać połączenia z usługą MAPS (hr=80070006 httpcode=451)**|Zapora blokuje połączenie lub przeprowadza inspekcję protokołu SSL.|
+|**ValidateMapsConnection nie może nawiązać połączenia z usługą MAPS (hr=80004005 httpcode=450)**|Możliwe problemy związane z siecią, takie jak problemy z rozpoznawaniem nazw|
+|**ValidateMapsConnection nie może nawiązać połączenia z usługą MAPS (hr=0x80508015**|Zapora blokuje połączenie lub przeprowadza inspekcję protokołu SSL.|
+|**ValidateMapsConnection nie może nawiązać połączenia z usługą MAPS (hr=800722F0D)**|Zapora blokuje połączenie lub przeprowadza inspekcję protokołu SSL.|
+|**ValidateMapsConnection nie może nawiązać połączenia z usługą MAPS (hr=80072EE7 httpcode=451)**|Zapora blokuje połączenie lub przeprowadza inspekcję protokołu SSL.|
+
+> [!TIP]
+> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
+> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Konfigurowanie Program antywirusowy Microsoft Defender funkcji](configure-microsoft-defender-antivirus-features.md)
-- [Konfigurowanie i sprawdzanie poprawności Program antywirusowy Microsoft Defender połączeń sieciowych](configure-network-connections-microsoft-defender-antivirus.md)
+- [Konfiguruj funkcje programu antywirusowego Microsoft Defender](configure-microsoft-defender-antivirus-features.md)
+- [Skonfiguruj i zweryfikuj połączenia sieciowe programu antywirusowego Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)
 - [Tematy referencyjne dotyczące narzędzi do zarządzania i konfiguracji](configuration-management-reference-microsoft-defender-antivirus.md)
