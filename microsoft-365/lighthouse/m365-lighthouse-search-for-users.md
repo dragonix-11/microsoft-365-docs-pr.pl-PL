@@ -1,5 +1,5 @@
 ---
-title: Wyszukiwanie użytkowników
+title: Wyszukaj użytkowników
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,32 +15,32 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się, jak wyszukiwać użytkowników.
-ms.openlocfilehash: 26f259295eaa3cc89309de78b6aea3700a492961
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak wyszukiwać użytkowników.
+ms.openlocfilehash: 7f38335893a7c6de359bd68df8bd74d7ea77ec97
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315095"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823548"
 ---
-# <a name="search-for-users"></a>Wyszukiwanie użytkowników
+# <a name="search-for-users"></a>Wyszukaj użytkowników
 
-Microsoft 365 Lighthouse umożliwia wyszukanie określonego użytkownika we wszystkich aktywnych dzierżawach. Dzięki temu możesz szybko znaleźć użytkownika bez konieczności nawigowania po różnych dzierżawach.
+Microsoft 365 Lighthouse umożliwia wyszukiwanie określonego użytkownika we wszystkich aktywnych dzierżawach. Dzięki temu można szybko znaleźć użytkownika bez konieczności nawigowania po różnych dzierżawach.
 
-1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Użytkownicy**.
+1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Użytkownicy**.
 
-2. Wybierz **kartę Wyszukaj użytkowników** .
+2. Wybierz kartę **Wyszukaj użytkowników** .
 
 3. W polu wyszukiwania wprowadź nazwę wyświetlaną lub główną nazwę użytkownika (UPN).
 
-4. Z listy wyników wyszukiwania wybierz użytkownika, którego chcesz wyszukać.
+4. Z listy wyników wyszukiwania wybierz użytkownika, który chcesz zbadać.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gdy użytkownik zostanie znaleziony, możesz zresetować jego hasło lub zablokować jego konto. Aby uzyskać więcej informacji, zobacz [Resetowanie hasła użytkownika](m365-lighthouse-reset-user-password.md) lub [Blokowanie logowania użytkownika](m365-lighthouse-block-user-signin.md).
+Po znalezieniu użytkownika możesz zresetować jego hasło lub zablokować jego konto. Aby uzyskać więcej informacji, zobacz [Resetowanie hasła użytkownika](m365-lighthouse-reset-user-password.md) lub [Blokuj logowanie użytkownika](m365-lighthouse-block-user-signin.md).
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Zarządzanie Microsoft 365 użytkownikami ](../enterprise/manage-microsoft-365-accounts.md) (artykuł)\
+[Zarządzanie kontami użytkowników Microsoft 365](../enterprise/manage-microsoft-365-accounts.md) (artykuł)\
 [Resetowanie hasła użytkownika](m365-lighthouse-reset-user-password.md) (artykuł)\
-[Blokowanie logowania użytkownika](m365-lighthouse-block-user-signin.md) (artykuł)
+[Blokuj logowanie użytkownika](m365-lighthouse-block-user-signin.md) (artykuł)

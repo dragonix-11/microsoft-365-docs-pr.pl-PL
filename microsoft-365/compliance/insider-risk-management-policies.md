@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b515e50cf5ff22d77076017526f59ccd5f3779b7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 7f77ca2f53e05291533395d3de5a860e9444732c
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782110"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824031"
 ---
 # <a name="insider-risk-management-policies"></a>Zasady zarządzania ryzykiem wewnętrznym
 
@@ -104,9 +104,9 @@ Musisz skonfigurować Ochrona punktu końcowego w usłudze Microsoft Defender w 
 
 Ochrona danych rekordów opieki zdrowotnej i zapobieganie niewłaściwemu wykorzystywaniu danych osobowych pacjentów jest istotnym problemem dla organizacji w branży opieki zdrowotnej. To nadużycie może obejmować poufne wycieki danych do nieautoryzowanych osób, oszukańczą modyfikację dokumentacji pacjentów lub kradzież dokumentacji medycznej pacjentów. Zapobieganie temu niewłaściwemu wykorzystaniu danych pacjentów, albo z powodu braku świadomości, zaniedbania lub oszustw ze strony użytkowników, jest również kluczowym elementem spełniania wymogów prawnych ustawy o przenośności i odpowiedzialności ubezpieczeń zdrowotnych (HIPAA) oraz health information technology for Economic and Clinical Health (HITECH). Oba te akty ustanawiają wymagania dotyczące ochrony informacji zdrowotnych chronionych przez pacjenta (PHI).
 
-Ten szablon zasad umożliwia ocenianie ryzyka dla użytkowników wewnętrznych, którzy wykrywają podejrzane działania związane z rekordami hostowanymi w istniejących systemach elektronicznej dokumentacji medycznej (EMR). Wykrywanie koncentruje się na nieautoryzowanym dostępie, wyświetlaniu, modyfikowaniu i eksportowaniu danych pacjentów. Musisz skonfigurować łącznik ( [łącznik firmy Microsoft Healthcare](import-healthcare-data.md) lub [łącznik Epic](import-epic-data.md) w celu obsługi wykrywania działań związanych z dostępem, eksfiltracją lub zaciemnianiem w systemie EMR).
+Ten szablon zasad umożliwia ocenianie ryzyka dla użytkowników wewnętrznych, którzy wykrywają podejrzane działania związane z rekordami hostowanymi w istniejących systemach elektronicznej dokumentacji medycznej (EMR). Wykrywanie koncentruje się na nieautoryzowanym dostępie, wyświetlaniu, modyfikowaniu i eksportowaniu danych pacjentów. Należy skonfigurować łącznik [łącznika usługi Microsoft Healthcare](import-healthcare-data.md) lub [łącznika Epic](import-epic-data.md) w celu obsługi wykrywania działań związanych z dostępem, eksfiltracją lub zaciemnianiem w systemie EMR.
 
-W przypadku korzystania z tego szablonu należy również skonfigurować łącznik Microsoft 365 HR, aby okresowo importować dane profilu organizacji dla użytkowników w organizacji. Zapoznaj się z artykułem Importowanie danych za pomocą łącznika HR, aby uzyskać szczegółowe wskazówki dotyczące konfigurowania łącznika Microsoft 365 HR dla organizacji.
+W przypadku korzystania z tego szablonu należy również skonfigurować łącznik Microsoft 365 HR, aby okresowo importować dane profilu organizacji dla użytkowników w organizacji. Zobacz artykuł [Konfigurowanie łącznika do importowania danych kadrowych](/microsoft-365/compliance/import-hr-data), aby uzyskać szczegółowe wskazówki dotyczące konfigurowania łącznika Microsoft 365 HR dla organizacji.
 
 ### <a name="security-policy-violations-by-departing-users-preview"></a>Naruszenia zasad zabezpieczeń przez odchodzących użytkowników (wersja zapoznawcza)
 

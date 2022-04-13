@@ -15,37 +15,37 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Dowiedz się, jak zarządzać listą Microsoft 365 Lighthouse, aby uzyskać informacje o dostawcach usług zarządzanych (MSP, Managed Service Providers).
-ms.openlocfilehash: 3c62761bdb5fbed08be07e909d465aa0a790ff97
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse dowiedz się, jak zarządzać listą dzierżaw.
+ms.openlocfilehash: 2f9d38bad24d20c53a1bafe44b1b831369957b71
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330429"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824383"
 ---
 # <a name="manage-your-tenant-list"></a>Zarządzanie listą dzierżaw
 
-Aby ułatwić zarządzanie listą dzierżaw w Microsoft 365 Lighthouse, możesz zastosować tagi niestandardowe do swoich dzierżaw. Te tagi mogą być używane do organizowania dzierżaw i ułatwiają filtrowanie istniejących widoków i szczegółowych informacji dostępnych dla odpowiednich zestawów dzierżaw. Tagami możesz zarządzać na stronie Dzierżawcy. Po utworzeniu i przypisaniu możesz filtrować dane w dzierżawach, użytkownikach, urządzeniach, zarządzaniu zagrożeniami i Windows 365 na podstawie tagu.
+Aby ułatwić zarządzanie listą dzierżaw w Microsoft 365 Lighthouse, możesz zastosować tagi niestandardowe do dzierżaw. Te tagi mogą służyć do organizowania dzierżaw, a także mogą ułatwić filtrowanie istniejących widoków i szczegółowych informacji dostępnych dla odpowiednich zestawów dzierżaw. Tagami można zarządzać na stronie Dzierżawy. Po utworzeniu i przypisaniu można filtrować dane na stronach Dzierżawy, Użytkownicy, Urządzenia, Zarządzanie zagrożeniami i Windows 365 na podstawie tagu.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
 Aby zarządzać tagami dzierżawy, musisz:
 
-- Spełnia wymagania [dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+- Spełnianie [wymagań dotyczących Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-- Wykonaj procesy opisane w artykule Rejestracja [w Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+- Ukończ procesy opisane w artykule [Tworzenie konta dla Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-- Wykonaj procesy opisane w artykule [Konfigurowanie Microsoft 365 Lighthouse zabezpieczeń](m365-lighthouse-configure-portal-security.md) portalu.
+- Ukończ procesy opisane w artykule [Konfigurowanie zabezpieczeń portalu Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md).
 
-- Być administratorem globalnym dzierżawy partnerskiej.
+- Bądź administratorem globalnym dzierżawy partnera.
 
 ## <a name="create-a-tag"></a>Tworzenie tagu
 
-1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Dzierżawy**.
+1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Dzierżawy**.
 
-2. Wybierz **pozycję Zarządzaj tagami**.
+2. Wybierz pozycję **Zarządzaj tagami**.
 
-3. W **okienku Zarządzanie tagami** wybierz pozycję **Dodaj tag**.
+3. W okienku **Zarządzanie tagami** wybierz pozycję **Dodaj tag**.
 
 4. Wprowadź nazwę i opis.
 
@@ -53,11 +53,11 @@ Aby zarządzać tagami dzierżawy, musisz:
 
 ## <a name="edit-a-tag"></a>Edytowanie tagu
 
-1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Dzierżawy**.
+1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Dzierżawy**.
 
-2. Wybierz **pozycję Zarządzaj tagami**.
+2. Wybierz pozycję **Zarządzaj tagami**.
 
-3. W **okienku Zarządzanie tagami** wybierz tag, który chcesz edytować.
+3. W okienku **Zarządzanie tagami** wybierz tag, który chcesz edytować.
 
 4. W razie potrzeby edytuj nazwę i/lub opis.
 
@@ -65,47 +65,45 @@ Aby zarządzać tagami dzierżawy, musisz:
 
 ## <a name="assign-a-tag"></a>Przypisywanie tagu
 
-1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Dzierżawy**.
+1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Dzierżawy**.
 
-2. Z listy dzierżawy wybierz trzy kropki (więcej akcji) obok dzierżawy, którą chcesz otagować.
+2. Z listy dzierżawy wybierz trzy kropki (więcej akcji) obok dzierżawy, którą chcesz oznaczyć.
 
-3. Wybierz **pozycję Tagi**.
+3. Wybierz pozycję **Tagi**.
 
-4. Wybierz tag z listy. Możesz wybrać tylko jeden tag na raz.
+4. Wybierz tag z listy. Jednocześnie możesz wybrać tylko jeden tag.
 
-Tagi, które są już przypisane do dzierżawy, będą mieć znacznik wyboru po prawej stronie nazwy tagu. Możesz również przypisać tag do wielu dzierżaw, zaznaczając pole wyboru obok każdej dzierżawy na liście, wybierając pozycję **Przypisz** tagi, a następnie wybierając tag z listy.
+Tagi, które są już przypisane do dzierżawy, będą miały znacznik wyboru po prawej stronie nazwy tagu. Możesz również przypisać tag do wielu dzierżaw, zaznaczając pole wyboru obok każdej dzierżawy na liście, wybierając pozycję **Przypisz tagi**, a następnie wybierając tag z listy.
 
 > [!NOTE]
-> Możesz utworzyć do 30 unikatowych tagów i przypisać je do tylu dzierżaw, ile potrzeba.
+> Możesz utworzyć maksymalnie 30 unikatowych tagów i przypisać je do dowolnej liczby dzierżaw.
 
 ## <a name="delete-a-tag"></a>Usuwanie tagu
 
-1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Dzierżawy**.
+1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Dzierżawy**.
 
-2. Wybierz **pozycję Zarządzaj tagami**.
+2. Wybierz pozycję **Zarządzaj tagami**.
 
-3. W **okienku Zarządzanie tagami** wybierz tag, który chcesz usunąć.
+3. W okienku **Zarządzanie tagami** wybierz tag, który chcesz usunąć.
 
-4. Wybierz **pozycję Usuń tag**.
+4. Wybierz pozycję **Usuń tag**.
 
 ## <a name="remove-a-tag"></a>Usuwanie tagu
 
-1. W lewym okienku nawigacji w latarni morskiej wybierz pozycję **Dzierżawy**.
+1. W okienku nawigacji po lewej stronie w aplikacji Lighthouse wybierz pozycję **Dzierżawy**.
 
 2. Z listy dzierżawy wybierz trzy kropki (więcej akcji) obok dzierżawy, którą chcesz edytować.
 
-3. Wybierz **pozycję Tagi**.
+3. Wybierz pozycję **Tagi**.
 
 4. Wybierz tag, który chcesz usunąć.
 
-Po prawej stronie nazwy tagów, do których jest obecnie przypisany, jest zaznaczany znacznik wyboru. Możesz również usunąć tag z wielu dzierżaw, zaznaczając pola wyboru obok poszczególnych dzierżaw na liście, wybierając pozycję **Przypisz** tagi, a następnie wybierając znacznik z listy.
+Tagi, które są obecnie przypisane, mają znacznik wyboru po prawej stronie nazwy. Możesz również usunąć tag z wielu dzierżaw, zaznaczając pole wyboru obok każdej dzierżawy na liście, wybierając pozycję **Przypisz tagi**, a następnie wybierając zaznaczony tag z listy.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po utworzeniu i przypisaniu tagów możesz użyć ich do filtrowania dzierżaw. Przejdź do dowolnej z pozostałych stron (Użytkownicy, Urządzenia, Zarządzanie zagrożeniami lub Windows 365) i wybierz co najmniej jeden tag z filtru Dzierżawa. Możesz utworzyć nowe tagi do obsługi określonych widoków na podstawie każdej strony.
+Po utworzeniu i przypisaniu tagów można ich użyć do filtrowania dzierżaw. Przejdź do dowolnej z pozostałych stron (Użytkownicy, Urządzenia, Zarządzanie zagrożeniami lub Windows 365) i wybierz jeden lub więcej tagów z filtru Dzierżawa. Możesz tworzyć nowe tagi, aby obsługiwać określone widoki na podstawie każdej strony.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Rejestracja w Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artykuł)  
-[Microsoft 365 Lighthouse strony zgodności urządzenia](m365-lighthouse-device-compliance-page-overview.md) (artykuł)  
-[Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)
+[Tworzenie konta w celu Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artykuł) [Microsoft 365 Lighthouse Omówienie strony zgodności urządzeń](m365-lighthouse-device-compliance-page-overview.md) (artykuł) [Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)

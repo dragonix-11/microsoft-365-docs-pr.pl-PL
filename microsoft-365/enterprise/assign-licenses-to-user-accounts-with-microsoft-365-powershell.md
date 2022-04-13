@@ -1,5 +1,5 @@
 ---
-title: Przypisywanie Microsoft 365 do kont użytkowników za pomocą programu PowerShell
+title: Przypisywanie licencji Microsoft 365 do kont użytkowników przy użyciu programu PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,52 +20,201 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: Z tego artykułu dowiesz się, jak za pomocą programu PowerShell przypisać licencję programu Microsoft 365 nielicencjonowani użytkownikom.
-ms.openlocfilehash: b9f076e4856820d9f10e4cf92718dd6ddd3971c5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: W tym artykule dowiesz się, jak przy użyciu programu PowerShell przypisać licencję Microsoft 365 do nielicencjonowanych użytkowników.
+ms.openlocfilehash: 72ad30cb3c8a36a78b3f95699c775b96d959b542
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985300"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823041"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Przypisywanie Microsoft 365 do kont użytkowników za pomocą programu PowerShell
+# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Przypisywanie licencji Microsoft 365 do kont użytkowników przy użyciu programu PowerShell
 
 *Ten artykuł dotyczy zarówno Microsoft 365 Enterprise, jak i Office 365 Enterprise.*
 
-Użytkownicy nie mogą korzystać z żadnych Microsoft 365 licencji, dopóki ich konto nie zostanie przypisane w planie licencjonowania. Za pomocą programu PowerShell możesz szybko przypisywać licencje do nielicencjonowanych kont. 
+Użytkownicy nie mogą korzystać z żadnych usług Microsoft 365, dopóki ich konto nie zostanie przypisane licencji z planu licencjonowania. Program PowerShell umożliwia szybkie przypisywanie licencji do nielicencjonowanych kont. 
 
-Do kont użytkowników musi najpierw zostać przypisana lokalizacja. Określenie lokalizacji jest wymaganą częścią tworzenia nowego konta użytkownika w [centrum administracyjne platformy Microsoft 365.](../admin/add-users/add-users.md) 
+Konta użytkowników muszą najpierw mieć przypisaną lokalizację. Określanie lokalizacji jest wymaganą częścią tworzenia nowego konta użytkownika w [Centrum administracyjne platformy Microsoft 365](../admin/add-users/add-users.md). 
 
-Konta synchronizowane z lokalizacji Usługi domenowe w usłudze Active Directory nie mają domyślnie określonej lokalizacji. Lokalizację dla tych kont można skonfigurować w następującej lokalizacji:
+Konta zsynchronizowane z usługami lokalna usługa Active Directory Domain Services domyślnie nie mają określonej lokalizacji. Lokalizację dla tych kont można skonfigurować z następujących elementów:
 
-- The centrum administracyjne platformy Microsoft 365
- - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
- - Azure [Portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active** **DirectoryUsers** >  > konta użytkownika > **ProfileKontakt** >  **infoCountry** >  **lub region**).
+- Centrum administracyjne platformy Microsoft 365
+- [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
+- [Azure Portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active DirectoryUżytkownicy** >  > konto użytkownika > **ProfileKontakt** >  **infoCountry** >  lub region).
 
 >[!Note]
->[Dowiedz się, jak przypisywać licencje do kont użytkowników przy](../admin/manage/assign-licenses-to-users.md) użyciu centrum administracyjne platformy Microsoft 365. Aby uzyskać listę dodatkowych zasobów, zobacz [Zarządzanie użytkownikami i grupami](/admin).
+>[Dowiedz się, jak przypisywać licencje do kont użytkowników](../admin/manage/assign-licenses-to-users.md) przy użyciu Centrum administracyjne platformy Microsoft 365. Aby uzyskać listę dodatkowych zasobów, zobacz [Zarządzanie użytkownikami i grupami](/admin).
 >
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Używanie modułu Azure Active Directory PowerShell dla Graph danych
+## <a name="use-the-microsoft-graph-powershell-sdk"></a>Korzystanie z zestawu SDK programu PowerShell firmy Microsoft Graph
 
-Najpierw [połącz się z dzierżawą Microsoft 365 dzierżawy](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Najpierw [połącz się z dzierżawą Microsoft 365](/graph/powershell/get-started#authentication).
+
+Przypisywanie i usuwanie licencji dla użytkownika wymaga zakresu uprawnień User.ReadWrite.All lub jednego z innych uprawnień wymienionych na [stronie odwołania interfejs Graph API "Przypisywanie licencji"](/graph/api/user-assignlicense).
+
+Zakres uprawnień Organization.Read.All jest wymagany do odczytu licencji dostępnych w dzierżawie.
+
+```powershell
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
+
+Uruchom polecenie , `Get-MgSubscribedSku` aby wyświetlić dostępne plany licencjonowania i liczbę dostępnych licencji w każdym planie w organizacji. Liczba dostępnych licencji w każdym planie to ActiveUnitsWarningUnitsConsumedUnits -  - . Aby uzyskać więcej informacji na temat planów licencjonowania, licencji i usług, zobacz [Wyświetlanie licencji i usług za pomocą programu PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
+
+Aby znaleźć nielicencjonowane konta w organizacji, uruchom to polecenie.
+
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
+```
+
+Licencje można przypisywać tylko do kont użytkowników, które mają właściwość **UsageLocation** ustawioną na prawidłowy kod kraju ISO 3166-1 alfa-2. Na przykład stany USA dla Stany Zjednoczone i FR dla Francji. Niektóre usługi Microsoft 365 nie są dostępne w niektórych krajach. Aby uzyskać więcej informacji, zobacz [About license restrictions (Informacje o ograniczeniach licencji](https://go.microsoft.com/fwlink/p/?LinkId=691730)).
+
+Aby znaleźć konta, które nie mają wartości **UsageLocation** , uruchom to polecenie.
+
+```powershell
+Get-MgUser -Select Id,DisplayName,Mail,UserPrincipalName,UsageLocation,UserType | where { $_.UsageLocation -eq $null -and $_.UserType -eq 'Member' }
+```
+
+Aby ustawić wartość **UsageLocation** na koncie, uruchom to polecenie.
+
+```powershell
+$userUPN="<user sign-in name (UPN)>"
+$userLoc="<ISO 3166-1 alpha-2 country code>"
+
+Update-MgUser -UserId $userUPN -UsageLocation $userLoc
+```
+
+Przykład:
+
+```powershell
+Update-MgUser -UserId "belindan@litwareinc.com" -UsageLocation US
+```
+
+Jeśli używasz polecenia cmdlet **Get-MgUser** bez użycia parametru **-All** , zwracanych jest tylko pierwsze 100 kont.
+
+### <a name="assigning-licenses-to-user-accounts"></a>Przypisywanie licencji do kont użytkowników
+
+Aby przypisać licencję do użytkownika, użyj następującego polecenia w programie PowerShell.
+  
+```powershell
+Set-MgUserLicense -UserId $userUPN -AddLicenses @{SkuId = "<SkuId>"} -RemoveLicenses @()
+```
+
+W tym przykładzie przypisano licencję z planu licencjonowania **SPE_E5** (Microsoft 365 E5) do nielicencjonowanego użytkownika **belindan\@ litwareinc.com**:
+  
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
+```
+
+Ten przykład przypisuje **SPE_E5** (Microsoft 365 E5) i **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) do użytkownika **belindan\@ litwareinc.com**:
+  
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$e5EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+$addLicenses = @(
+    @{SkuId = $e5Sku.SkuId},
+    @{SkuId = $e5EmsSku.SkuId}
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
+W tym przykładzie przypisano **SPE_E5** (Microsoft 365 E5) z wyłączonymi usługami **MICROSOFTBOOKINGS** (Microsoft Bookings) i **LOCKBOX_ENTERPRISE** (Customer LockBox):
+  
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$disabledPlans = $e5Sku.ServicePlans | `
+    Where ServicePlanName -in ("LOCKBOX_ENTERPRISE", "MICROSOFTBOOKINGS") | `
+    Select -ExpandProperty ServicePlanId
+
+$addLicenses = @(
+    @{
+        SkuId = $e5Sku.SkuId
+        DisabledPlans = $disabledPlans
+    }
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
+W tym przykładzie użytkownik jest aktualizowany przy użyciu **SPE_E5** (Microsoft 365 E5) i wyłącza plany usług Sway i Forms, pozostawiając istniejące wyłączone plany użytkownika w bieżącym stanie:
+  
+```powershell
+$userLicense = Get-MgUserLicenseDetail -UserId "belinda@fdoau.onmicrosoft.com"
+$userDisabledPlans = $userLicense.ServicePlans | `
+    Where ProvisioningStatus -eq "Disabled" | `
+    Select -ExpandProperty ServicePlanId
+
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$newDisabledPlans = $e5Sku.ServicePlans | `
+    Where ServicePlanName -in ("SWAY", "FORMS_PLAN_E5") | `
+    Select -ExpandProperty ServicePlanId
+
+$disabledPlans = ($userDisabledPlans + $newDisabledPlans) | Select -Unique
+
+$addLicenses = @(
+    @{
+        SkuId = $e5Sku.SkuId
+        DisabledPlans = $disabledPlans
+    }
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.onmicrosoft.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
+### <a name="assign-licenses-to-a-user-by-copying-the-license-assignment-from-another-user"></a>Przypisywanie licencji do użytkownika przez skopiowanie przypisania licencji od innego użytkownika
+
+W tym przykładzie przypisano **litwareinc.com jamesp\@** z tym samym planem licencjonowania, który został zastosowany do **aplikacji belindan\@ litwareinc.com**:
+
+```powershell
+$mgUser = Get-MgUser -UserId "belindan@litwareinc.com"
+Set-MgUserLicense -UserId "jamesp@litwareinc.com" -AddLicenses $mgUser.AssignedLicenses -RemoveLicenses @()
+```
+
+### <a name="move-a-user-to-a-different-subscription-license-plan"></a>Przenoszenie użytkownika do innej subskrypcji (plan licencji)
+
+W tym przykładzie uaktualnia użytkownika z planu licencjonowania **SPE_E3** (Microsoft 365 E3) do planu licencjonowania **SPE_E5** (Microsoft 365 E5):
+
+```powershell
+$e3Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E3'
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+
+# Unassign E3
+Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{} -RemoveLicenses @($e3Sku.SkuId)
+# Assign E5
+Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
+```
+
+Możesz zweryfikować zmianę subskrypcji dla konta użytkownika za pomocą tego polecenia.
+
+```powershell
+Get-MgUserLicenseDetail -UserId "belindan@litwareinc.com"
+```
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Korzystanie z modułu Azure Active Directory programu PowerShell dla Graph
+
+>[!Note]
+>Polecenie cmdlet Set-AzureADUserLicense ma zostać wycofane. Zmigruj skrypty do polecenia cmdlet Set-MgUserLicense zestawu Microsoft Graph SDK zgodnie z powyższym opisem. Aby uzyskać więcej informacji, zobacz [Migrowanie aplikacji w celu uzyskania dostępu do interfejsów API zarządzania licencjami z usługi Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>
+
+Najpierw [połącz się z dzierżawą Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 
-Następnie, za pomocą tego polecenia, wywszukaj listę planów licencji dla dzierżawy.
+Następnie wyświetl listę planów licencji dla dzierżawy za pomocą tego polecenia.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Następnie uzyskaj nazwę logowania dla konta, do którego chcesz dodać licencję, znaną także jako główna nazwa użytkownika (UPN).
+Następnie pobierz nazwę logowania konta, do którego chcesz dodać licencję, znaną również jako główna nazwa użytkownika (UPN).
 
-Następnie upewnij się, że do konta użytkownika przypisano lokalizację użytkowania.
+Następnie upewnij się, że konto użytkownika ma przypisaną lokalizację użycia.
 
 ```powershell
 Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
 ```
 
-Jeśli lokalizacja użytkowania nie jest przypisana, możesz przypisać ją za pomocą tych poleceń:
+Jeśli nie przypisano lokalizacji użycia, możesz przypisać ją za pomocą następujących poleceń:
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -73,7 +222,7 @@ $userLoc="<ISO 3166-1 alpha-2 country code>"
 Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
 ```
 
-Na koniec określ nazwę logowania użytkownika i nazwę planu licencji, a następnie uruchom te polecenia.
+Na koniec określ nazwę logowania użytkownika i nazwę planu licencji i uruchom te polecenia.
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -87,14 +236,16 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Użyj modułu Microsoft Azure Active Directory dla Windows PowerShell
 
-Pamiętaj, że zaczniemy wy przestać korzystać z tego modułu, gdy jego funkcje będą dostępne w nowszej wersji programu [Azure Active Directory PowerShell dla Graph](/powershell/azuread/v2/azureactivedirectory) moduł. Zalecamy klientom, którzy tworzą nowe skrypty programu PowerShell, korzystanie z nowszego modułu zamiast tego modułu.
+>[!Note]
+>Polecenia cmdlet Set-MsolUserLicense i New-MsolUser (-LicenseAssignment) mają zostać wycofane. Zmigruj skrypty do polecenia cmdlet Set-MgUserLicense zestawu Microsoft Graph SDK zgodnie z powyższym opisem. Aby uzyskać więcej informacji, zobacz [Migrowanie aplikacji w celu uzyskania dostępu do interfejsów API zarządzania licencjami z usługi Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>
 
-Najpierw [połącz się z dzierżawą Microsoft 365 dzierżawy](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Najpierw [połącz się z dzierżawą Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Uruchom to `Get-MsolAccountSku` polecenie, aby wyświetlić dostępne plany licencjonowania oraz liczbę dostępnych licencji w każdym planie w organizacji. Liczba dostępnych licencji w każdym planie to **ActiveUnitsWarningUnitsConsumedUnits** -  - . Aby uzyskać więcej informacji o planach licencjonowania, licencjach i usługach, zobacz Wyświetlanie licencji [i usług za pomocą programu PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
+Uruchom polecenie , `Get-MsolAccountSku` aby wyświetlić dostępne plany licencjonowania i liczbę dostępnych licencji w każdym planie w organizacji. Liczba dostępnych licencji w każdym planie to ActiveUnitsWarningUnitsConsumedUnits -  - . Aby uzyskać więcej informacji na temat planów licencjonowania, licencji i usług, zobacz [Wyświetlanie licencji i usług za pomocą programu PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 >[!Note]
->Program PowerShell Core nie obsługuje modułu Microsoft Azure Active Directory dla programu Windows PowerShell i poleceń cmdlet z **nazwą Msol**. Aby nadal korzystać z tych cmdlet, należy je uruchomić z Windows PowerShell.
+>Program PowerShell Core nie obsługuje modułu Microsoft Azure Active Directory dla modułu Windows PowerShell i poleceń cmdlet z nazwą **msol**. Aby kontynuować korzystanie z tych poleceń cmdlet, należy uruchomić je z Windows PowerShell.
 >
 
 Aby znaleźć nielicencjonowane konta w organizacji, uruchom to polecenie.
@@ -103,15 +254,15 @@ Aby znaleźć nielicencjonowane konta w organizacji, uruchom to polecenie.
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-Licencje można przypisywać tylko do kont użytkowników, dla których właściwość **UsageLocation** (Lokalizacja użytkowania) jest ustawiona na prawidłowy kod kraju ISO 3166-1 alfa-2. Na przykład STANY ZJEDNOCZONE, a FR dla Francji. Niektóre Microsoft 365 są niedostępne w niektórych krajach. Aby uzyskać więcej informacji, zobacz [Informacje o ograniczeniach licencyjnych](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+Licencje można przypisywać tylko do kont użytkowników, które mają właściwość **UsageLocation** ustawioną na prawidłowy kod kraju ISO 3166-1 alfa-2. Na przykład stany USA dla Stany Zjednoczone i FR dla Francji. Niektóre usługi Microsoft 365 nie są dostępne w niektórych krajach. Aby uzyskać więcej informacji, zobacz [About license restrictions (Informacje o ograniczeniach licencji](https://go.microsoft.com/fwlink/p/?LinkId=691730)).
     
-Aby znaleźć konta, które nie mają wartości **Lokalizacja** użytkowania, uruchom to polecenie.
+Aby znaleźć konta, które nie mają wartości **UsageLocation** , uruchom to polecenie.
 
 ```powershell
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 ```
 
-Aby ustawić **wartość UsageLocation (Lokalizacja** użytkowania) dla konta, uruchom to polecenie.
+Aby ustawić wartość **UsageLocation** na koncie, uruchom to polecenie.
 
 ```powershell
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
@@ -123,7 +274,7 @@ Przykład:
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 ```
     
-Jeśli używasz polecenia **cmdlet Get-MsolUser** bez użycia parametru **-All** , zwracanych jest tylko pierwszych 500 kont.
+Jeśli używasz polecenia cmdlet **Get-MsolUser** bez użycia parametru **-All** , zwracanych jest tylko pierwsze 500 kont.
 
 ### <a name="assigning-licenses-to-user-accounts"></a>Przypisywanie licencji do kont użytkowników
     
@@ -133,47 +284,47 @@ Aby przypisać licencję do użytkownika, użyj następującego polecenia w prog
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-W tym przykładzie licencja z planu licencjonowania **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) jest przypisywana nielicencjonowaneowi użytkownikowi **Belindan\@ litwareinc.com**:
+W tym przykładzie przypisano licencję z planu licencjonowania **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) do nielicencjonowanego użytkownika **belindan\@ litwareinc.com**:
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-Aby przypisać licencję do wszystkich nielicencjonowanych użytkowników, uruchom to polecenie.
+Aby przypisać licencję wszystkim nielicencjonowanym użytkownikom, uruchom to polecenie.
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLicense -AddLicenses "<AccountSkuId>"
 ```
   
 >[!Note]
->Nie można przypisać wielu licencji do użytkownika z tego samego planu licencjonowania. Jeśli nie masz wystarczającej ilości dostępnych licencji, licencje są przypisywane do użytkowników w kolejności zwracanych przez polecenie cmdlet **Get-MsolUser** , dopóki dostępne licencje nie wyczerują się.
+>Nie można przypisać wielu licencji do użytkownika z tego samego planu licencjonowania. Jeśli nie masz wystarczającej liczby dostępnych licencji, licencje są przypisywane do użytkowników w kolejności, w której są one zwracane przez polecenie cmdlet **Get-MsolUser** do momentu wygaśnięcia dostępnych licencji.
 >
 
-W tym przykładzie licencje z planu licencjonowania **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) są przypisywane wszystkim nielicencjonowani użytkownikom:
+W tym przykładzie przypisano licencje z planu licencjonowania **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) wszystkim nielicencjonowanym użytkownikom:
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-W tym przykładzie te same licencje są przypisywane do nielicencjonowanych użytkowników w dziale sprzedaży w Stanach Zjednoczonych:
+W tym przykładzie te same licencje są przypisywane do nielicencjonowanych użytkowników w dziale sprzedaży w Stany Zjednoczone:
   
 ```powershell
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Przenoszenie użytkownika do innej subskrypcji (planu licencji) za pomocą Azure Active Directory PowerShell dla Graph subskrypcji
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Przenoszenie użytkownika do innej subskrypcji (planu licencji) za pomocą modułu Azure Active Directory Programu PowerShell dla Graph
 
-Najpierw [połącz się z dzierżawą Microsoft 365 dzierżawy](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Najpierw [połącz się z dzierżawą Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-Następnie uzyskaj nazwę logowania do konta użytkownika, dla którego chcesz przełączyć subskrypcje, znaną również jako główna nazwa użytkownika (UPN).
+Następnie pobierz nazwę logowania konta użytkownika, dla którego chcesz przełączyć subskrypcje, znaną również jako główna nazwa użytkownika (UPN).
 
-Następnie wyeksskrybuj subskrypcje (plany licencji) dzierżawy za pomocą tego polecenia.
+Następnie wyświetl listę subskrypcji (planów licencji) dzierżawy za pomocą tego polecenia.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Następnie wynumeruj subskrypcje, które obecnie ma konto użytkownika z tymi poleceniami.
+Następnie wyświetl listę subskrypcji aktualnie posiadanych przez konto użytkownika za pomocą tych poleceń.
 
 ```powershell
 $userUPN="<user account UPN>"
@@ -182,9 +333,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-Określ subskrypcję posiadaną obecnie przez użytkownika (subskrypcję FROM) i subskrypcję, do której użytkownik jest przenoszący (subskrypcję TO).
+Zidentyfikuj subskrypcję aktualnie posiadanej przez użytkownika (subskrypcję FROM) i subskrypcję, do której przechodzi użytkownik (subskrypcja TO).
 
-Na koniec określ nazwy subskrypcji TO (TO) i FROM (numery części SKU) i uruchom te polecenia.
+Na koniec określ nazwy subskrypcji TO i FROM (numery części jednostki SKU) i uruchom te polecenia.
 
 ```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"
@@ -201,7 +352,7 @@ $licenses.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 ```
 
-Za pomocą tych poleceń możesz sprawdzić zmianę w subskrypcji dla konta użytkownika.
+Możesz zweryfikować zmianę subskrypcji konta użytkownika za pomocą tych poleceń.
 
 ```powershell
 $licensePlanList = Get-AzureADSubscribedSku
@@ -211,8 +362,8 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 
 ## <a name="see-also"></a>Zobacz też
 
-[Zarządzanie kontami użytkowników, licencjami i grupami za pomocą programu PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[Zarządzanie kontami użytkowników, licencjami i grupami przy użyciu programu PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[Zarządzanie Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Zarządzanie platformą Microsoft 365 za pomocą programu PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Wprowadzenie do programu PowerShell dla Microsoft 365](getting-started-with-microsoft-365-powershell.md)

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Omówienie aplikacji Microsoft Bookings, która zawiera internetowy kalendarz rezerwacji i integruje się z Outlook, aby zoptymalizować kalendarz pracowników i zapewnić klientom elastyczność rezerwacji terminów.
-ms.openlocfilehash: 90f298c2947796a06fe67fc3fd1f190282639024
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 6cb20104e9fa51023b6a828cfd70291cd0797037
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715192"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64822677"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
@@ -45,7 +45,7 @@ Microsoft Bookings jest dostępna w następujących subskrypcjach:
 
 ## <a name="watch-introducing-microsoft-bookings"></a>Obejrzyj: Wprowadzenie do Microsoft Bookings
 
-> [!VIDEO https://youtu.be/G2HOsM767Sw]
+> [WIDEO](https://www.youtube.com/watch?v=G2HOsM767Sw)
 
 Bookings ułatwia małym firmom planowanie terminów i zarządzanie nimi z klientami.
 

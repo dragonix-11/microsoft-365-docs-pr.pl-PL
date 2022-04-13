@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Dowiedz się, jak uruchomić skrypt w celu dodania skrzynek pocztowych & OneDrive dla Firm witryn do nowego archiwum skojarzonego ze sprawą zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365.
-ms.openlocfilehash: a678649ebd15a34bdfe5765449d41feae1b14901
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 10a605b422178e5006d8a027a697ca6745f82b98
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761246"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824493"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Dodawanie użytkowników do blokady w przypadku zbierania elektronicznych materiałów dowodowych za pomocą skryptu
 
@@ -47,7 +47,7 @@ Poniżej przedstawiono kroki, które należy wykonać:
 
 - Aby uruchomić skrypt w kroku 3, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365 i administratorem usługi SharePoint Online. Aby uzyskać więcej informacji, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych w centrum Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
-- Maksymalnie 1000 skrzynek pocztowych i 100 witryn można dodać do blokady skojarzonej z przypadkiem zbierania elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Zakładając, że każdy użytkownik, który ma zostać wstrzymany, ma witrynę OneDrive dla Firm, możesz dodać maksymalnie 100 użytkowników do blokady przy użyciu skryptu w tym artykule.
+- Maksymalnie 1000 skrzynek pocztowych i 100 witryn można dodać do blokady skojarzonej ze sprawą zbierania elektronicznych elektronicznych materiałów dowodowych w Centrum zgodności platformy Microsoft 365. Zakładając, że każdy użytkownik, który ma zostać wstrzymany, ma witrynę OneDrive dla Firm, możesz dodać maksymalnie 100 użytkowników do blokady przy użyciu skryptu w tym artykule.
 
 - Pamiętaj, aby zapisać listę użytkowników utworzonych w kroku 2 i skrypt w kroku 3 w tym samym folderze. Ułatwi to uruchamianie skryptu.
 

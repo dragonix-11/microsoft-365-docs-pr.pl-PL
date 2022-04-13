@@ -13,141 +13,142 @@ metadata:
   ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
   f1.keywords:
   - NOCSH
-  description: Znajdź odpowiedzi na często zadawane pytania (często zadawane pytania) dotyczące przenoszenia podstawowych danych do nowej lokalizacji Office 365 geolokalizacji centrum danych.
+  description: Znajdź odpowiedzi na często zadawane pytania dotyczące przenoszenia danych podstawowych do nowego obszaru geograficznego Office 365 centrum danych.
   ms.custom: seo-marvel-mar2020
-  ms.openlocfilehash: bb4090067db54ddd3e9e5726974386240cd3b3e7
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: c39f0c122d2c004a330b9b14f43bc65274f1c98d
+  ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63679405"
+  ms.lasthandoff: 04/13/2022
+  ms.locfileid: "64823501"
 title: Ogólne często zadawane pytania dotyczące przenoszenia danych
-summary: Poniżej znajdują się odpowiedzi na ogólne pytania dotyczące przenoszenia podstawowych danych klientów w spoczynku do nowej lokalizacji geograficznej centrum danych.
+summary: Poniżej przedstawiono odpowiedzi na ogólne pytania dotyczące przenoszenia podstawowych danych klientów magazynowanych do nowego obszaru geograficznego centrum danych.
 sections:
 - name: Zignorowano
   questions:
   - question: >
-      Którzy klienci mogą wnioskować o przeniesienie?
+      Co klienci kwalifikują się do żądania przeniesienia?
     answer: >
-      Istniejący Microsoft 365 klienci komercyjni, którzy wybrali kraj uprawniony do nowej lokalizacji geograficznej centrum danych, będą mogli zażądać przeniesienia. Program istnieje tylko dla dzierżaw z uprawnionym kodem kraju przypisanym do dzierżawy usługi Microsoft 365 w celu przeprowadzenia migracji podstawowych danych klienta w miejscu dla uprawnionych obciążeń do odpowiedniego geolokalizacji centrum danych usługi Microsoft 365. Zobacz stronę Jak [poprosić](request-your-data-move.md) o przeniesienie danych, aby potwierdzić prawo do kraju. 
+      Istniejący Microsoft 365 klienci komercyjni, którzy wybrali kraj kwalifikujący się do nowego obszaru geograficznego centrum danych, będą mogli zażądać przeniesienia. Program istnieje tylko w przypadku dzierżaw z kwalifikującym się kodem kraju przypisanym do dzierżawy Microsoft 365 w celu migracji podstawowych danych klientów magazynowanych dla kwalifikujących się obciążeń do odpowiedniego obszaru geograficznego Microsoft 365 centrum danych. Zapoznaj się ze stroną [Jak zażądać przeniesienia danych](request-your-data-move.md) , aby potwierdzić kwalifikowalność kraju.
   - question: >
-      Jak definiować podstawowe dane klienta?
+      Jak zdefiniować podstawowe dane klienta?
     answer: >
-      Podstawowe dane klienta to termin, który odwołuje się do podzbioru danych klienta zdefiniowanych w [Warunkach usług online firmy Microsoft](https://aka.ms/ost):
+      Podstawowe dane klienta to termin, który odnosi się do podzestawu danych klienta zdefiniowanego w [warunkach usług online firmy Microsoft](https://aka.ms/ost):
 
       - Exchange Online zawartości skrzynki pocztowej (treść wiadomości e-mail, wpisy kalendarza i zawartość załączników wiadomości e-mail)
 
-      - SharePoint witryny online i pliki przechowywane w tej witrynie
+      - SharePoint zawartość witryny online i pliki przechowywane w tej witrynie
 
       - Pliki przekazane do OneDrive dla Firm
   - question: >
-      Jakie są zakresy migracji Teams migracji?
+      Co jest w zakresie migracji Teams?
     answer: >
-      Oprócz usług Exchange Online, SharePoint Online i OneDrive dla Firm; Firma Microsoft przemigruje Teams danych do lokalnego centrum danych.
+      Oprócz Exchange Online, SharePoint Online i OneDrive dla Firm; Firma Microsoft przeprowadzi migrację Teams danych do lokalnego centrum danych.
 
-      - Teams wiadomości czatu, w tym wiadomości prywatne i wiadomości kanałów.
+      - Teams wiadomości czatu, w tym wiadomości prywatne i wiadomości kanału.
 
-      - Teams obrazy używane w czatach.
-
-
-      Teams wiadomości są przechowywane w u SharePoint Online, Teams pliki czatów są przechowywane w OneDrive dla Firm. Wiadomości poczty głosowej, kalendarz i kontakty są przechowywane w Exchange Online. W wielu przypadkach usługi Exchange Online, SharePoint Online i OneDrive dla Firm są już używane przez klienta w lokalizacji geograficznej lokalnego centrum danych i są również częścią programu migracji Microsoft 365 dla kwalifikujących się krajów klientów.
-  - question: >
-      Na tym etapie migracja jest ukończona, dzięki czemu podstawowe dane klienta mojej dzierżawy są przechowywane w miejscu w nowej lokalizacji geograficznej?
-    answer: >
-      Ze względu na współużytkowanie między usługami Exchange Online i SharePoint Online/OneDrive dla Firm nie można uznać za wykonane żadnej migracji, dopóki obie usługi nie zostaną zmigrowane. Exchange Online i SharePoint online/OneDrive dla Firm migrować często w czasie osobnym i niezależnie od siebie. Po zakończeniu migracji każdej usługi administratorzy dzierżawy klienta otrzymują potwierdzenie w Centrum wiadomości i mogą w dowolnym momencie wyświetlić kartę lokalizacji danych w Centrum administracyjnym w celu potwierdzenia podstawowych danych klienta w lokalizacji spoczynku dla każdej usługi.
-  - question: >
-      Jak upewnić się, że dane klientów są bezpieczne podczas podróży i że nie wystąpią przestoje?
-    answer: >
-      Przeniesienie danych to operacja back-end usługi, która ma minimalny wpływ na użytkowników końcowych. Funkcje, na które może mieć to wpływ, są wymienione w te sposób [: Podczas przenoszenia danych i po nich](during-and-after-your-data-move.md). Firma Microsoft jest zgodna z Umową o poziomie usług [online firmy Microsoft (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) w zakresie dostępności, więc nie ma nic do przygotowania się lub monitorowania w trakcie procesu przenoszenia przez klientów.
+      - Teams obrazów używanych w czatach.
 
 
-      Wszystkie Microsoft 365 działają w tych samych wersjach w centrach danych, więc możesz mieć pewność, że ich funkcjonalność będzie spójna. Twoja usługa jest w pełni obsługiwana przez cały ten proces.
+      Teams pliki są przechowywane w usłudze SharePoint Online, a pliki czatu Teams są przechowywane w OneDrive dla Firm. Poczta głosowa, kalendarz i kontakty są przechowywane w Exchange Online. W wielu przypadkach Exchange Online, SharePoint Online i OneDrive dla Firm są już używane przez klienta w lokalnym centrum danych geograficznych, a także są częścią programu migracji Microsoft 365 dla kwalifikujących się krajów klientów.
   - question: >
-      Jaki wpływ mają różne usługi znajdujące się w różnych lokalizacjach geograficznych?
+      W jakim momencie migracja została ukończona, aby podstawowe dane klientów mojej dzierżawy były przechowywane w nowym obszarze geograficznym?
     answer: >
-      Niektóre z Microsoft 365 mogą być w różnych lokalizacjach geograficznych dla niektórych istniejących klientów i klientów, którzy są w trakcie procesu przenoszenia. Nasze usługi działają niezależnie od siebie i w takim przypadku nie ma wpływu na środowisko użytkownika.Jednak na potrzeby przechowywania danych migracja dzierżawy nie może być uważana za ukończoną, dopóki nie zostaną migrowane zarówno usługi Exchange Online, jak i SharePoint Online/OneDrive dla Firm do tego samego geolokalizacji centrum danych.
+      Ze względu na współdzielone zależności między Exchange Online i SharePoint Online/OneDrive dla Firm nie można uznać żadnej migracji za ukończoną, dopóki obie usługi nie zostaną zmigrowane. Exchange Online i SharePoint Online/OneDrive dla Firm często migrowane w oddzielnych godzinach i niezależnie od siebie. Administratorzy dzierżawy klienta otrzymują potwierdzenie w Centrum komunikatów po zakończeniu każdej migracji usługi i mogą wyświetlać kartę lokalizacji danych w Centrum administracyjnym w dowolnym momencie, aby potwierdzić podstawowe dane klienta w lokalizacji spoczynku dla każdej usługi.
   - question: >
-      Gdzie znajdują się moje podstawowe dane klientów?
+      Jak upewnić się, że dane klientów są bezpieczne podczas przenoszenia i że nie wystąpi przestój?
     answer: >
-      Administratorzy dzierżawy klientów mogą w dowolnej chwili wyświetlić kartę lokalizacji danych w Centrum administracyjnym w celu potwierdzenia podstawowych danych klienta w lokalizacji spoczynku dla poszczególnych usług, a dokładnie dla dzierżawy.Publikujemy również lokalizację geolokalizacji centrum danych, centra danych oraz lokalizację danych klientów usługi Office 365 na interakcyjnych mapach centrów danych usługi Microsoft 365  [jako](https://office.com/datamaps) odwołanie do bieżących domyślnych danych podstawowych klientów w lokalizacjach spoczynku dla nowych dzierżaw. Lokalizację danych klienta możesz sprawdzić w spoczynku za pomocą sekcji Lokalizacja danych w sekcji Profil organizacji w centrum administracyjne platformy Microsoft 365.  
+      Przenoszenie danych to operacja usługi zaplecza o minimalnym wpływie na użytkowników końcowych. Funkcje, na które mogą mieć wpływ, są wyświetlane w obszarze [Podczas i po przeniesieniu danych](during-and-after-your-data-move.md). Przestrzegamy [umowy dotyczącej poziomu usług online firmy Microsoft (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) w celu zapewnienia dostępności, dlatego klienci nie muszą przygotowywać się do przenoszenia ani monitorować ich.
+
+
+      Wszystkie usługi Microsoft 365 działają w tych samych wersjach w centrach danych, dzięki czemu możesz mieć pewność spójnej funkcjonalności. Twoja usługa jest w pełni obsługiwana w całym procesie.
   - question: >
-      Kiedy będzie można zażądać przeniesienia?
+      Jaki jest wpływ posiadania różnych usług znajdujących się w różnych obszarach geograficznych?
     answer: >
-      Aby uzyskać obsługiwane ramy czasowe [dla](request-your-data-move.md) geolokalizacji centrum danych, zobacz jak zażądać przeniesienia danych.
+      Niektóre usługi Microsoft 365 mogą znajdować się w różnych obszarach geograficznych dla niektórych istniejących klientów i klientów, którzy znajdują się w trakcie procesu przenoszenia. Nasze usługi działają niezależnie od siebie i nie ma to wpływu na środowisko użytkownika, jeśli tak jest. Jednak dla celów przechowywania danych migracja dzierżawy nie może zostać uznana za ukończoną, dopóki zarówno Exchange Online, jak i SharePoint Online/OneDrive dla Firm nie zostaną zmigrowane do tego samego obszaru geograficznego centrum danych.
   - question: >
-      Jak mogę zażądać zmiany?
+      Gdzie znajdują się moje podstawowe dane klienta?
     answer: >
-      Uprawnieni klienci zobaczą stronę w [centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/). Zobacz [Jak zażądać przeniesienia danych,](request-your-data-move.md) aby uzyskać instrukcje dotyczące żądania przeniesienia.
+      Administratorzy dzierżawy klienta mogą wyświetlać kartę lokalizacji danych w Centrum administracyjnym w dowolnym momencie, aby potwierdzić podstawowe dane klienta w lokalizacji spoczynku dla każdej usługi, w szczególności dla dzierżawy. Publikujemy również lokalizację obszarów geograficznych centrum danych, centrów danych i lokalizacji Office 365 danych klientów na [Microsoft 365 interaktywnych mapach centrów danych](https://office.com/datamaps) jako odwołanie do bieżących domyślnych podstawowych danych klienta w lokalizacjach spoczynku dla nowych dzierżaw. Lokalizację danych klientów magazynowanych można sprawdzić w sekcji Lokalizacja danych w profilu organizacji w Centrum administracyjne platformy Microsoft 365.
   - question: >
-      Czy mogę zmienić zaznaczenie po żądaniu przeniesienia?
+      Kiedy będę mógł zażądać przeniesienia?
     answer: >
-      Nie możemy usunąć Cię z tego procesu po przesłaniu żądania.
+      Zapoznaj się ze stroną [Jak zażądać przeniesienia danych](request-your-data-move.md) dla obsługiwanych ram czasowych dla obszaru geograficznego centrum danych.
   - question: >
-      Co się stanie, jeśli nie zażądam przeniesienia przed upływem terminu ostatecznego?
+      Jak mogę poprosić o przeniesienie?
     answer: >
-      Nie możemy akceptować wniosków o migrację po otwartym okresie rejestracji.
+      Uprawnieni klienci zobaczą stronę w [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/). Aby uzyskać instrukcje dotyczące żądania przeniesienia [, zobacz Jak zażądać przeniesienia danych](request-your-data-move.md) .
+  - question: >
+      Czy mogę zmienić wybór po zażądaniu przeniesienia?
+    answer: >
+      Nie możemy usunąć Użytkownika z procesu po przesłaniu żądania.
+  - question: >
+      Co się stanie, jeśli nie zażądam przeniesienia przed upływem terminu?
+    answer: >
+      Nie możemy akceptować żądań migracji po otwartym okresie rejestracji.
   - question: >
       Co zrobić, jeśli chcę przenieść dane w celu uzyskania lepszej wydajności sieci?
     answer: >
-      Fizyczna odległość od centrum Microsoft 365 danych nie jest gwarancją lepszej wydajności sieci. Istnieje wiele czynników i składników, które wpływają na wydajność sieci między użytkownikiem końcowy a usługą Microsoft 365 sieci. Aby uzyskać więcej informacji na temat tego i dostosowywania wydajności, zobacz Planowanie sieci i [dostosowywanie wydajności dla Microsoft 365](network-planning-and-performance.md).
+      Fizyczna bliskość Microsoft 365 centrum danych nie gwarantuje lepszej wydajności sieci. Istnieje wiele czynników i składników, które wpływają na wydajność sieci między użytkownikiem końcowym a usługą Microsoft 365. Aby uzyskać więcej informacji na ten temat i dostrajanie wydajności, zobacz [Planowanie sieci i dostrajanie wydajności dla Microsoft 365](network-planning-and-performance.md).
   - question: >
-      Czy wszystkie usługi przesuną dane w tym samym dniu?
+      Czy wszystkie usługi przenoszą swoje dane tego samego dnia?
     answer: >
-      Każda usługa jest przechodzi niezależnie i prawdopodobnie przenosi dane w innym czasie.
+      Każda usługa jest przenoszona niezależnie i prawdopodobnie będzie przenosić swoje dane w różnym czasie.
   - question: >
-      Czy mogę wybrać, kiedy dane mają zostać przeniesione?
+      Czy mogę wybrać, kiedy chcę przenieść moje dane?
     answer: >
-      Klienci nie mogą wybrać określonej daty, nie mogą opóźnić przeniesienia i nie możemy udostępnić określonej daty ani określonego terminu przeniesienia.
+      Klienci nie mogą wybrać określonej daty, nie mogą opóźnić przenoszenia i nie możemy udostępnić określonej daty ani przedziału czasu przenoszenia.
   - question: >
-      Czy możesz udostępnić, kiedy moje dane zostaną przeniesione?
+      Czy możesz udostępnić dane, które zostaną przeniesione?
     answer: >
-      Przeniesienie danych to operacja back-end, która ma minimalny wpływ na użytkowników końcowych. Złożoność, dokładność i skala, przy której musimy wykonywać dane, są przenosine w globalnie obsługiwanym i zautomatyzowanym środowisku, co nie pozwala nam na udostępnianie w przypadku, gdy przenoszenie danych jest oczekiwane w przypadku Twojej dzierżawy lub innej pojedynczej dzierżawy. Po zakończeniu przenoszenia danych klienci otrzymają jedno potwierdzenie w Centrum wiadomości na usługę uczestniczącą w programie.
+      Przenoszenie danych to operacja zaplecza o minimalnym wpływie na użytkowników końcowych. Złożoność, precyzja i skala, z jaką musimy wykonywać przenoszenie danych w środowisku obsługiwanym globalnie i zautomatyzowanym, uniemożliwia udostępnianie danych, gdy oczekuje się, że przeniesienie danych zostanie ukończone dla dzierżawy lub dowolnej innej pojedynczej dzierżawy. Po zakończeniu przenoszenia danych klienci otrzymają jedno potwierdzenie w Centrum komunikatów na uczestniczącą usługę.
   - question: >
-      Co się stanie, jeśli użytkownicy uzyskają dostęp do usług podczas przesuwania danych?
+      Co się stanie, jeśli użytkownicy uzyskują dostęp do usług podczas przenoszenia danych?
     answer: >
-      Zobacz [Podczas i po przenoszeniu danych](during-and-after-your-data-move.md) , aby uzyskać pełną listę funkcji, które mogą być ograniczone podczas przenoszenia danych dla poszczególnych usług.
+      Zobacz [Sekcję Podczas i po przeniesieniu danych](during-and-after-your-data-move.md) , aby uzyskać pełną listę funkcji, które mogą być ograniczone podczas przenoszenia części danych dla każdej usługi.
   - question: >
-      Skąd wiadomo, że przeniesienie jest ukończone?
+      Jak mogę wiedzieć, że przenoszenie zostało ukończone?
     answer: >
-      Obserwuj centrum Microsoft 365 wiadomości, aby uzyskać potwierdzenie, że przenoszenie danych poszczególnych usług jest ukończone. Gdy dane każdej usługi zostaną przeniesione, opublikujemy powiadomienie o ukończeniu, dzięki czemu otrzymasz trzy powiadomienia o ukończeniu: po jednym dla aplikacji Exchange Online, SharePoint Online i Skype dla firm Online. Możesz także sprawdzić lokalizację danych klientów w spoczynku za pomocą sekcji Lokalizacja danych w obszarze Profil organizacji w centrum administracyjne platformy Microsoft 365.  
+      Obejrzyj Microsoft 365 Centrum komunikatów, aby potwierdzić, że przenoszenie danych poszczególnych usług zostało ukończone. Po przeniesieniu danych każdej usługi opublikujemy powiadomienie o ukończeniu, dzięki czemu otrzymasz trzy powiadomienia o ukończeniu: po jednym dla Exchange Online, SharePoint Online i Skype dla firm Online. Możesz również zweryfikować lokalizację danych klientów magazynowanych za pośrednictwem sekcji Lokalizacja danych w obszarze Profil organizacji w Centrum administracyjne platformy Microsoft 365.
   - question: >
-      Jestem klientem Microsoft 365 w jednej z nowych lokalizacji geograficznych centrum danych, ale po jej wybraniu został wybrany inny kraj. Jak mogę zostać przeniesiony do nowego geolokalizacji centrum danych?
+      Jestem klientem Microsoft 365 w jednym z nowych obszarów geograficznych centrum danych, ale po zarejestrowaniu się wybrałem inny kraj. Jak można przenieść do nowego obszaru geograficznego centrum danych?
     answer: >
-      Nie można zmienić kraju rejestracji skojarzonego z Twoją dzierżawą. Zamiast tego musisz utworzyć nową dzierżawę usługi Microsoft 365 z nową subskrypcją i ręcznie przenieść użytkowników oraz dane do nowej dzierżawy.
+      Nie można zmienić kraju rejestracji skojarzonego z dzierżawą. Zamiast tego należy utworzyć nową dzierżawę Microsoft 365 z nową subskrypcją i ręcznie przenieść użytkowników i dane do nowej dzierżawy.
   - question: >
-      Co się stanie, jeśli jesteśmy w trakcie procesu migracji danych poczty e-mail do usługi Microsoft 365 trakcie Exchange Online przeniesienia?
+      Co się stanie, jeśli będziemy w trakcie migracji danych poczty e-mail do Microsoft 365 podczas przenoszenia Exchange Online?
     answer: >
-      Jest to bardzo częsty scenariusz i jest w pełni obsługiwany.  Migracja chmury między lokalizacjami geolokalizacji centrum danych nie wpływa na żadne lokalne migracje skrzynek pocztowych w chmurze.
+      Jest to bardzo typowy scenariusz i jest w pełni obsługiwany. Migracja chmury między obszarami geograficznymi centrum danych nie zakłóca żadnych migracji lokalnych do skrzynek pocztowych w chmurze.
   - question: >
-      Czy można pilotaż niektórych użytkowników?
+      Czy mogę pilotować niektórych użytkowników?
     answer: >
-      Możesz utworzyć osobną dzierżawę wersji próbnej w celu przetestowania łączności, ale nie można połączyć dzierżawy wersji próbnej w żaden sposób z istniejącą dzierżawą.
+      Możesz utworzyć oddzielną dzierżawę wersji próbnej, aby przetestować łączność, ale dzierżawy wersji próbnej nie można w żaden sposób połączyć z istniejącą dzierżawą.
   - question: >
-      Nie chcę czekać, aż firma Microsoft przeniesie moje dane. Czy mogę po prostu utworzyć nową dzierżawę i przenieść samodzielnie?
+      Nie chcę czekać, aż firma Microsoft przeniesie moje dane. Czy mogę po prostu utworzyć nową dzierżawę i przenieść się?
     answer: >
-      Tak, jednak ten proces nie będzie tak bezproblemowy, jak gdyby firma Microsoft przeprowadzała przenoszenie danych.
+      Tak, jednak proces nie będzie tak bezproblemowy, jak gdyby firma Microsoft wykonała przenoszenie danych.
 
 
-      Jeśli utworzysz nową dzierżawę, gdy nowa lokalizacja geograficzna centrum danych będzie dostępna, nowa dzierżawa będzie hostowana w nowej lokalizacji geograficznej. Ta nowa dzierżawa jest całkowicie oddzielona od poprzedniej dzierżawy i ty ponosisz odpowiedzialność za przenoszenie wszystkich skrzynek pocztowych użytkowników, zawartości witryn, nazw domen i innych danych. Zwróć uwagę, że nie możesz przenieść nazwy dzierżawy z jednej dzierżawy do drugiej. Zalecamy zaczekaj na program przenoszenia dostarczony przez firmę Microsoft, ponieważ zajmiemy się przeniesieniem wszystkich ustawień, danych i subskrypcji dla użytkowników.
+      Jeśli nowa dzierżawa zostanie utworzona po udostępnieniu nowego obszaru geograficznego centrum danych, nowa dzierżawa będzie hostowana w nowym obszarze geograficznym. Ta nowa dzierżawa jest całkowicie oddzielona od poprzedniej dzierżawy i będzie odpowiedzialna za przenoszenie wszystkich skrzynek pocztowych użytkownika, zawartości witryny, nazw domen i innych danych. Należy pamiętać, że nie można przenieść nazwy dzierżawy z jednej dzierżawy do innej. Zalecamy oczekiwanie na program przenoszenia dostarczony przez firmę Microsoft, ponieważ zajmiemy się przenoszeniem wszystkich ustawień, danych i subskrypcji dla użytkowników.
   - question: >
-      Moje dane klienta zostały już przeniesione do nowej lokalizacji geograficznej centrum danych. Czy mogę wrócić?
+      Moje dane klientów zostały już przeniesione do nowego obszaru geograficznego centrum danych. Czy mogę wrócić?
     answer: >
-      Nie, nie jest to możliwe. Klientów, którzy zostały przeniesione do nowych centrów danych geograficznych, nie można przenieść z powrotem. Klienci w różnych regionach geograficznych będą w tej samej jakości usług, wydajności i kontroli zabezpieczeń co wcześniej. [Microsoft 365 Multi Geo](https://aka.ms/multi-geo) jest dostępna dla niektórych klientów jako dodatek i umożliwia jednej dzierżawie tworzenie wielu lokalizacji geograficznych satelitarnych i przenoszenie danych użytkowników do tych lokalizacji geograficznych z zobowiązaniami przechowywania danych.
+      Nie, nie jest to możliwe. Nie można przenieść klientów, którzy zostali przeniesieniu do nowych geograficznych centrów danych. Jako klient w dowolnym obszarze geograficznym będziesz mieć taką samą jakość usług, wydajności i mechanizmów zabezpieczeń, jak wcześniej. [Microsoft 365 multi geo](https://aka.ms/multi-geo) jest dostępna dla niektórych klientów jako dodatek i umożliwia jednej dzierżawie tworzenie wielu obszarów geograficznych satelitarnych i przenoszenie danych użytkowników do tych obszarów geograficznych przy użyciu zobowiązań dotyczących rezydencji danych.
   - question: >
       Czy Microsoft 365 dzierżawy hostowane w nowych centrach danych będą dostępne dla użytkowników spoza kraju?
     answer: >
-      Tak. Firma Microsoft utrzymuje dużą sieć globalną z publicznymi połączeniami internetowymi w ponad 130 lokalizacjach w 35 krajach na świecie z umowami komunikacji równorzędnej z ponad 2700 dostawcami usług internetowych (ISP). Użytkownicy będą mogli uzyskać dostęp do centrów danych z miejsca, w którym znajdują się w Internecie.
+      Tak. Firma Microsoft utrzymuje dużą globalną sieć z publicznymi połączeniami internetowymi w ponad 130 lokalizacjach w 35 krajach na całym świecie z umowami komunikacji równorzędnej z ponad 2700 dostawcami usług internetowych. Użytkownicy będą mogli uzyskiwać dostęp do centrów danych z dowolnego miejsca w Internecie.
   - question: >
-      Moja dzierżawa skonfigurowała dodatek Multi Geo. Czy nadal mogę zarejestrować się w dzierżawie w programie przenoszenia usługi Microsoft 365?, aby zmienić domyślną lokalizację geograficzną i przenieść dowolnego użytkownika, który nie został w regionie satelitarnym, do nowego domyślnego obszaru geograficznego?
+      Moja dzierżawa skonfigurowała dodatek Multi Geo. Czy nadal mogę zarejestrować się w dzierżawie w programie przenoszenia Microsoft 365? aby zmienić domyślną lokalizację geograficzną i przenieść dowolnego użytkownika, który nie jest w regionie satelitarnym, do nowego domyślnego obszaru geograficznego?
     answer: >
-      Tak, dzierżawa może przystąpić do rejestracji, ale istnieje istotne znaczenie, ponieważ przenoszenie na poziomie dzierżawy nie jest w pełni obsługiwane dla klientów, którzy skonfigurowali [usługę Multi-Geo](https://aka.ms/multi-geo).
+      Tak, dzierżawa kwalifikuje się do rejestracji, ale istnieją istotne zagadnienia, ponieważ przenoszenie na poziomie dzierżawy nie jest w pełni obsługiwane dla klientów, którzy skonfigurowali funkcję [Multi-Geo](https://aka.ms/multi-geo).
 
 
-      SharePoint Online i OneDrive dla Firm nie mogą przeprowadzić migracji do nowego geolokalizacji centrum danych na poziomie dzierżawy za pośrednictwem tego programu. Administrator klienta może skonfigurować udziały OneDrive dla Firm w celu przenoszenia się do dowolnego dostępnego regionu przy użyciu funkcji multi-Geo, ale nie można zmienić domyślnej lokalizacji dzierżawy, gdy dla dzierżawy skonfigurowano obsługę wielu lokalizacji geograficznych.
+      SharePoint Online i OneDrive dla Firm nie mogą migrować do nowego obszaru geograficznego centrum danych na poziomie dzierżawy za pośrednictwem tego programu. Administrator klienta może skonfigurować udziały OneDrive dla Firm, aby przenieść je do dowolnego dostępnego regionu przy użyciu funkcji Multi-Geo, ale nie można zmienić domyślnej lokalizacji dzierżawy po skonfigurowaniu wielu obszarów geograficznych dla dzierżawy.
 
 
-      W przypadku klientów, którzy zdecydują się na migrację , przeniesiemy wszystkie Exchange Online pocztowe z bieżącego domyślnego obszaru geograficznego do nowego geolokalizacji lokalnego centrum danych i zaktualizujemy domyślne Exchange Online danych. Nie będziemy przenosić żadnych skrzynek pocztowych EXO skonfigurowanych w regionach satelitarnych usługi Multi Geo, aby nadal przestrzegać danych z regionu satelitarnego zgodnie z zamierzeniami.  Teams migracji dzierżawy usługi czatu dla klientów z konfiguracją wielu lokalizacji geograficznych działają podobnie jak Exchange Online.
-  - question: "W mojej dzierżawie wdrożono foldery publiczne. Jaki wpływ będzie miał wpływ na dostęp do folderu publicznego podczas przenoszenia lub po jego zakończeniu? \n"
+      W przypadku klientów, którzy zdecydują się na migrację — przeniesiemy wszystkie Exchange Online skrzynki pocztowe z bieżącego domyślnego obszaru geograficznego do nowego lokalnego obszaru geograficznego centrum danych i zaktualizujemy domyślny region Exchange Online. Nie będziemy przenosić żadnych skrzynek pocztowych EXO skonfigurowanych w regionach satelitów Multi Geo, aby nadal respektować miejsce przechowywania danych w regionie satelitarnym zgodnie z oczekiwaniami.  Teams migracje dzierżawy usługi czatu dla klientów z konfiguracją wielu obszarów geograficznych zachowują się podobnie do Exchange Online.
+  - question: >
+      Mam foldery publiczne wdrożone w mojej dzierżawie. Jaki będzie wpływ na dostęp do folderu publicznego podczas przenoszenia lub po niej?
     answer: >
-      Użytkownicy końcowi nie mają wpływu na uzyskiwanie dostępu do folderów publicznych podczas przenoszenia folderów publicznych lub po nich. Foldery publiczne mogą jednak nie być dostępne do administrowania w narzędziu Centrum administracyjne programu Exchange, dopóki wszystkie skrzynki pocztowe folderów publicznych nie zostaną przeniesione w tym samym regionie. Aby uzyskać [więcej informacji,](https://aka.ms/pfxrf) zapoznaj się z tym artykułem.
-additionalContent: "\n## <a name=\"related-topics\"></a>Tematy pokrewne\n  [Przenoszenie podstawowych danych do nowych Microsoft 365 lokalizacji geograficznych centrum danych](moving-data-to-new-datacenter-geos.md)\n\n  [Jak zażądać przeniesienia danych](request-your-data-move.md)\n\n  [Microsoft 365 Multi Geo](https://aka.ms/multi-geo)\n\n  [Microsoft 365 interakcyjna mapa centrum danych](https://office.com/datamaps)\n\n  [Microsoft 365 pomocy technicznej](../admin/get-help-support.md)\n\n  [Nowe lokalizacje geograficzne centrum danych dla Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)\n\n  [Usługi platformy Azure według regionów](https://azure.microsoft.com/regions/)"
+      Nie ma to wpływu na użytkowników końcowych uzyskujących dostęp do folderów publicznych podczas przenoszenia folderów publicznych lub po nich. Jednak foldery publiczne mogą nie być dostępne do administrowania w narzędziu Exchange Admin Center, dopóki wszystkie skrzynki pocztowe folderów publicznych nie zostaną przeniesione w tym samym regionie. Aby uzyskać więcej informacji, zapoznaj się z [tym artykułem](https://aka.ms/pfxrf) .
+additionalContent: "\n## <a name=\"related-topics\"></a>Tematy pokrewne\n  [Przenoszenie danych podstawowych do nowych obszarów geograficznych centrum danych Microsoft 365](moving-data-to-new-datacenter-geos.md)\n\n  [Jak zażądać przeniesienia danych](request-your-data-move.md)\n\n  [Microsoft 365 wielu obszarach geograficznych](https://aka.ms/multi-geo)\n\n  [Microsoft 365 interaktywnej mapy centrum danych](https://office.com/datamaps)\n\n  [obsługa Microsoft 365](../admin/get-help-support.md)\n\n  [Nowe lokalizacje geograficzne centrum danych dla Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)\n\n  [Usługi platformy Azure według regionów](https://azure.microsoft.com/regions/)"

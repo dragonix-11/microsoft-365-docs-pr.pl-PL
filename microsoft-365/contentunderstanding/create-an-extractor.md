@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się, jak utworzyć wyodrębniacz w usłudze Microsoft SharePoint Syntex.
-ms.openlocfilehash: 4ea60912ca29e53aeedf9ee0ea85d662a580707e
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 2089a5a52148ed4c00294895cd15e8af9c473cdb
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738607"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823129"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Tworzenie ekstraktora w usłudze Microsoft SharePoint Syntex
 
@@ -27,14 +27,14 @@ ms.locfileid: "64738607"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL2G]
 
-<br/> 
+<br/>
 
 Przed utworzeniem modelu klasyfikatora lub po jego utworzeniu w celu zautomatyzowania identyfikacji i klasyfikacji określonych typów dokumentów można opcjonalnie dodać wyodrębniacze do modelu w celu wyciągnięcia określonych informacji z tych dokumentów. Możesz na przykład chcieć, aby model nie tylko identyfikował wszystkie dokumenty *odnawiania kontraktu* dodane do biblioteki dokumentów, ale także wyświetlał *datę rozpoczęcia usługi* dla każdego dokumentu jako wartość kolumny w bibliotece dokumentów.
 
-Musisz utworzyć wyodrębniacz dla każdej jednostki w dokumencie, który chcesz wyodrębnić. W naszym przykładzie chcemy wyodrębnić datę   **rozpoczęcia usługi** dla każdego parametru  **RenewaldocumentContract** , który jest identyfikowany przez model. Chcemy mieć możliwość wyświetlenia widoku w bibliotece dokumentów wszystkich  **dokumentówContract** Renewaldocuments  z kolumną pokazującą wartość daty **rozpoczęcia usługi** dla każdego dokumentu. 
+Musisz utworzyć wyodrębniacz dla każdej jednostki w dokumencie, który chcesz wyodrębnić. W naszym przykładzie chcemy wyodrębnić **datę rozpoczęcia usługi** dla każdego dokumentu **odnawiania kontraktu** identyfikowanego przez model. Chcemy mieć możliwość wyświetlenia widoku w bibliotece dokumentów wszystkich dokumentów **odnawiania kontraktu** z kolumną zawierającą wartość daty **rozpoczęcia usługi** dla każdego dokumentu.
 
 > [!NOTE]
-> Aby utworzyć wyodrębniacz, użyj tych samych plików, które zostały wcześniej przekazane, aby wytrenować klasyfikator. 
+> Aby utworzyć wyodrębniacz, użyj tych samych plików, które zostały wcześniej przekazane, aby wytrenować klasyfikator.
 
 ## <a name="name-your-extractor"></a>Nadaj wyodrębniaczowi nazwę
 
@@ -44,7 +44,7 @@ Musisz utworzyć wyodrębniacz dla każdej jednostki w dokumencie, który chcesz
 
     Domyślnie typ kolumny to **Pojedynczy wiersz tekstu**. Jeśli chcesz zmienić typ kolumny, wybierz pozycję **Ustawienia** >  **zaawansowaneTyp kolumny**, a następnie wybierz typ, którego chcesz użyć.
 
-    ![Zrzut ekranu przedstawiający część Ustawienia zaawansowane panelu Wyodrębnianie nowej jednostki z opcją Typ kolumny.](../media/content-understanding/advanced-settings-column-type.png) 
+    ![Zrzut ekranu przedstawiający część Ustawienia zaawansowane panelu Wyodrębnianie nowej jednostki z opcją Typ kolumny.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
     > W przypadku wyodrębniaczy o typie kolumny **Pojedynczy wiersz tekstu** maksymalny limit znaków wynosi 255. Wszystkie wpisane znaki przekraczające limit są obcinane.
@@ -61,22 +61,22 @@ Utworzenie wyodrębniacza spowoduje otwarcie strony wyodrębniacza. W tym miejsc
 2. Wybierz pozycję **Następny plik** , aby automatycznie zapisać i otworzyć następny plik na liście w przeglądarce. Możesz też wybrać pozycję **Zapisz** , a następnie wybrać inny plik z listy **Przykłady oznaczone etykietami** .
 3. W przeglądarce powtórz kroki 1 i 2, a następnie powtarzaj do momentu zapisania etykiety we wszystkich pięciu plikach.
 
-    ![Ustawienia zaawansowane.](../media/content-understanding/select-service-start-date.png) 
+    ![Ustawienia zaawansowane.](../media/content-understanding/select-service-start-date.png)
 
- 
-Po oznaczeniu pięciu plików zostanie wyświetlony baner powiadomień informujący o przejściu do szkolenia. Możesz wybrać więcej etykiet więcej dokumentów lub przejść do szkolenia. 
+Po oznaczeniu pięciu plików zostanie wyświetlony baner powiadomień informujący o przejściu do szkolenia. Możesz wybrać więcej etykiet więcej dokumentów lub przejść do szkolenia.
 
 ### <a name="use-find-to-search-your-file"></a>Przeszukiwanie pliku przy użyciu funkcji Znajdź
 
 Funkcja **Znajdź** umożliwia wyszukiwanie jednostki w dokumencie, którą chcesz oznaczyć etykietą.
 
-   ![Znajdź w pliku.](../media/content-understanding/find-feature.png) 
+   ![Znajdź w pliku.](../media/content-understanding/find-feature.png)
 
 Funkcja Znajdź jest przydatna w przypadku wyszukiwania dużego dokumentu lub wielu wystąpień jednostki w dokumencie. Jeśli znajdziesz wiele wystąpień, możesz wybrać tę, która jest potrzebna w wynikach wyszukiwania, aby przejść do tej lokalizacji w przeglądarce, aby ją oznaczyć etykietą.
 
 ## <a name="add-an-explanation"></a>Dodawanie objaśnienia
 
 W naszym przykładzie utworzymy wyjaśnienie, które zawiera wskazówkę dotyczącą samego formatu jednostki i jego odmian w przykładowych dokumentach. Na przykład wartość daty może mieć różne formaty, takie jak:
+
 - 10/14/2019
 - 14 października 2019 r.
 - Poniedziałek, 14 października 2019 r.
@@ -93,12 +93,11 @@ Aby ułatwić identyfikację *daty rozpoczęcia usługi* , możesz utworzyć wyj
 4. Wybierz **Zapisz**.
 
 > [!NOTE]
-> Aby uzyskać więcej informacji na temat typów wyjaśnień, zobacz [Typy wyjaśnień](./explanation-types-overview.md).  
-
+> Aby uzyskać więcej informacji na temat typów wyjaśnień, zobacz [Typy wyjaśnień](./explanation-types-overview.md).
 
 ### <a name="use-the-explanation-library"></a>Korzystanie z biblioteki wyjaśnień
 
-W przypadku tworzenia objaśnień dla elementów, takich jak daty, łatwiej jest [użyć biblioteki wyjaśnień](./explanation-types-overview.md) niż ręcznie wprowadzić wszystkie odmiany. Biblioteka wyjaśnień to zestaw wstępnie utworzonych wyrażeń i objaśnień wzorców. Biblioteka próbuje podać wszystkie formaty typowych list fraz lub wzorców, takie jak daty, numery telefonów, kody pocztowe i wiele innych. 
+W przypadku tworzenia objaśnień dla elementów, takich jak daty, łatwiej jest [użyć biblioteki wyjaśnień](./explanation-types-overview.md) niż ręcznie wprowadzić wszystkie odmiany. Biblioteka wyjaśnień to zestaw wstępnie utworzonych wyrażeń i objaśnień wzorców. Biblioteka próbuje podać wszystkie formaty typowych list fraz lub wzorców, takie jak daty, numery telefonów, kody pocztowe i wiele innych.
 
 W przykładzie *Data rozpoczęcia usługi* bardziej wydajne jest użycie wstępnie utworzonego wyjaśnienia *daty* w bibliotece wyjaśnień:
 
@@ -106,20 +105,19 @@ W przykładzie *Data rozpoczęcia usługi* bardziej wydajne jest użycie wstępn
 2. W bibliotece wyjaśnień wybierz pozycję **Data**. Możesz wyświetlić wszystkie rozpoznane odmiany daty.
 3. Wybierz opcję **Dodaj**.
 
-    ![Biblioteka objaśnień.](../media/content-understanding/explanation-library.png) 
+    ![Biblioteka objaśnień.](../media/content-understanding/explanation-library.png)
 
 4. Na stronie **Tworzenie wyjaśnienia** informacje o *dacie* z biblioteki wyjaśnień automatycznie wypełniają pola. Wybierz **Zapisz**.
 
-    ![Data.](../media/content-understanding/date-explanation-library.png) 
+    ![Data.](../media/content-understanding/date-explanation-library.png)
 
-## <a name="train-the-model"></a>Trenowanie modelu 
+## <a name="train-the-model"></a>Trenowanie modelu
 
-Zapisywanie wyjaśnień rozpoczyna trenowanie. Jeśli model ma wystarczająco dużo informacji, aby wyodrębnić dane z oznaczonych etykietą plików przykładowych, zobaczysz każdy plik oznaczony etykietą **Dopasowanie**.  
+Zapisywanie wyjaśnień rozpoczyna trenowanie. Jeśli model ma wystarczająco dużo informacji, aby wyodrębnić dane z oznaczonych etykietą plików przykładowych, zobaczysz każdy plik oznaczony etykietą **Dopasowanie**.
 
-![Mecz.](../media/content-understanding/match2.png) 
+![Mecz.](../media/content-understanding/match2.png)
 
 Jeśli wyjaśnienie nie zawiera wystarczającej ilości informacji, aby znaleźć dane, które chcesz wyodrębnić, każdy plik będzie oznaczony etykietą **Niezgodność**. Możesz wybrać **pozycję Niedopasowane** pliki, aby wyświetlić więcej informacji o tym, dlaczego wystąpiła niezgodność.
-
 
 ## <a name="add-another-explanation"></a>Dodaj kolejne wyjaśnienie
 
@@ -132,11 +130,11 @@ W naszym przykładzie zwróć uwagę, że *ciąg tekstowy Data rozpoczęcia usł
 3. Użyj *wartości Service Start Date of (Data rozpoczęcia usługi* ).
 4. Wybierz **Zapisz**.
 
-    ![Ciąg prefiksu.](../media/content-understanding/prefix-string.png) 
+    ![Ciąg prefiksu.](../media/content-understanding/prefix-string.png)
 
 ## <a name="train-the-model-again"></a>Ponownie wytrenuj model
 
-Zapisanie objaśnienia ponownie rozpoczyna trenowanie, tym razem korzystając z obu wyjaśnień w przykładzie. Jeśli model ma wystarczająco dużo informacji, aby wyodrębnić dane z plików przykładowych z etykietą, zobaczysz każdy plik oznaczony etykietą **Dopasowanie**. 
+Zapisanie objaśnienia ponownie rozpoczyna trenowanie, tym razem korzystając z obu wyjaśnień w przykładzie. Jeśli model ma wystarczająco dużo informacji, aby wyodrębnić dane z plików przykładowych z etykietą, zobaczysz każdy plik oznaczony etykietą **Dopasowanie**.
 
 Jeśli ponownie pojawi się **niezgodność** plików z etykietami, prawdopodobnie konieczne będzie utworzenie innego wyjaśnienia, aby udostępnić modelowi więcej informacji w celu zidentyfikowania typu dokumentu lub rozważyć wprowadzenie zmian w istniejących plikach.
 
@@ -148,7 +146,7 @@ Jeśli otrzymasz dopasowanie do oznaczonych plików przykładowych, możesz tera
 
 2. Na liście **Pliki testowe** wyświetlane są przykładowe pliki, aby pokazać, czy model może wyodrębnić potrzebne informacje. Te informacje ułatwiają określenie skuteczności klasyfikatora w identyfikowaniu dokumentów.
 
-    ![Przetestuj pliki.](../media/content-understanding/test-filies-extractor.png) 
+    ![Przetestuj pliki.](../media/content-understanding/test-filies-extractor.png)
 
 ### <a name="further-refine-an-extractor"></a>Dalsze uściślanie ekstraktora
 
@@ -156,7 +154,7 @@ Jeśli masz zduplikowane jednostki i chcesz wyodrębnić tylko jedną wartość 
 
 1. Na stronie głównej modelu w sekcji **Wyodrębniacze jednostek** wybierz wyodrębniacz, który chcesz uściślić, a następnie wybierz pozycję **Uściślij wyodrębnione informacje**.
 
-    ![Zrzut ekranu przedstawiający sekcję Wyodrębniacze jednostek z wyróżnioną opcją Uściślij wyodrębnione informacje.](../media/content-understanding/refine-extracted-info.png) 
+    ![Zrzut ekranu przedstawiający sekcję Wyodrębniacze jednostek z wyróżnioną opcją Uściślij wyodrębnione informacje.](../media/content-understanding/refine-extracted-info.png)
 
 2. Na stronie **Uściślij wyodrębnione informacje** wybierz jedną z następujących reguł:
 
@@ -165,20 +163,21 @@ Jeśli masz zduplikowane jednostki i chcesz wyodrębnić tylko jedną wartość 
     - Usuwanie zduplikowanych wartości
     - Zachowaj co najmniej jeden z pierwszych wierszy
     - Zachowaj co najmniej jeden z ostatnich wierszy
- 
-    ![Zrzut ekranu przedstawiający stronę uściślania wyodrębnionych informacji z opcjami reguł.](../media/content-understanding/refine-extracted-info-page.png) 
+
+    ![Zrzut ekranu przedstawiający stronę uściślania wyodrębnionych informacji z opcjami reguł.](../media/content-understanding/refine-extracted-info-page.png)
 
 3. Wprowadź liczbę wierszy lub wartości, których chcesz użyć, a następnie wybierz pozycję **Uściślij**.
 
 4. Jeśli chcesz edytować regułę, zmieniając liczbę wierszy lub wartości, wybierz wyodrębniacz, który chcesz edytować, wybierz pozycję **Uściślij wyodrębnione informacje**, zmień liczbę, a następnie wybierz pozycję **Zapisz**.
 
-5. Podczas testowania ekstraktora będzie można zobaczyć uściślanie w kolumnie **Wynik uściślania** na liście **Pliki testowe** . 
+5. Podczas testowania ekstraktora będzie można zobaczyć uściślanie w kolumnie **Wynik uściślania** na liście **Pliki testowe** .
 
-    ![Lista Plików testowych z kolumną wyniku uściślania.](../media/content-understanding/test-filies-extractor-2.png) 
+    ![Lista Plików testowych z kolumną wyniku uściślania.](../media/content-understanding/test-filies-extractor-2.png)
 
 6. Jeśli chcesz usunąć regułę uściślania na wyodrębniaczu, wybierz wyodrębniacz, z którego chcesz usunąć regułę, wybierz pozycję **Uściślij wyodrębnione informacje**, a następnie wybierz pozycję **Usuń**.
 
 ## <a name="see-also"></a>Zobacz też
+
 [Tworzenie klasyfikatora](create-a-classifier.md)
 
 [Typy wyjaśnień](explanation-types-overview.md)
@@ -187,6 +186,6 @@ Jeśli masz zduplikowane jednostki i chcesz wyodrębnić tylko jedną wartość 
 
 [Omówienie usługi Document Understanding](document-understanding-overview.md)
 
-[Stosowanie modelu](apply-a-model.md) 
+[Stosowanie modelu](apply-a-model.md)
 
 [tryb ułatwień dostępu SharePoint Syntex](accessibility-mode.md)

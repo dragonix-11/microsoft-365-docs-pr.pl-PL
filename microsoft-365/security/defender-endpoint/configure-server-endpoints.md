@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6e1efe1a5c5f87e0a71c5e96b28498a6faf296c
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: f06ed934f1ba1a24ba16fe3919d37e10526a3a2f
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783738"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823855"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Dołączanie serwerów Windows do usługi Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -183,7 +183,7 @@ Należy pobrać zarówno **pakiety instalacyjne** , jak i **dołączane** z port
    > [!NOTE]
    > Na serwerze Windows Server 2012R2 Program antywirusowy Microsoft Defender zostanie zainstalowany przez pakiet instalacyjny i będzie aktywny, chyba że zostanie ustawiony na tryb pasywny. Na Windows Server 2016 należy najpierw zainstalować Program antywirusowy Microsoft Defender jako funkcję (zobacz [Przełączanie do rozwiązania MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) przed kontynuowaniem instalacji.
    > 
-   > Jeśli korzystasz z rozwiązania chroniącego przed złośliwym kodem firmy innej niż Microsoft, przed instalacją upewnij się, że dodano wykluczenia dla Program antywirusowy Microsoft Defender ([z tej listy procesów usługi Microsoft Defender na karcie Procesy usługi Defender](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) do rozwiązania spoza firmy Microsoft.  Zaleca się również dodanie rozwiązań zabezpieczeń innych niż Microsoft do listy wykluczeń programu antywirusowego Defender.
+   > Jeśli korzystasz z rozwiązania chroniącego przed złośliwym kodem firmy innej niż Microsoft, przed instalacją upewnij się, że dodano wykluczenia dla Program antywirusowy Microsoft Defender ([z tej listy procesów usługi Microsoft Defender na karcie Procesy usługi Defender](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) do rozwiązania spoza firmy Microsoft.  Zaleca się również dodanie rozwiązań zabezpieczeń innych niż Microsoft do listy wykluczeń programu antywirusowego Defender.
 
 
 **Pakiet instalacyjny** zawiera plik MSI, który instaluje agenta Ochrona punktu końcowego w usłudze Microsoft Defender.

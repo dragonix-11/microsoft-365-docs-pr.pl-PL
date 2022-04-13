@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 48d6ef27e71f89f6a81ac3c77ea17cf60dc90ee1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 95c4d77014e31c748cc4bd6662a148810c01f79a
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664573"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825195"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Co nowego w Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Android
 
@@ -31,9 +31,18 @@ ms.locfileid: "64664573"
 
 Chcesz doświadczyć Ochrona punktu końcowego w usłudze Microsoft Defender? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+>[!NOTE]
+>Usługa Microsoft Defender nie jest już obsługiwana w wersjach poniżej 1.0.3011.0302. Użytkownicy są proszeni o uaktualnienie do najnowszych wersji w celu zapewnienia bezpieczeństwa urządzeń.
+Aby zostać zaktualizowanym, użytkownicy mogą wykonać następujące czynności:
+>1. W profilu służbowym przejdź do sklepu Managed Play Store.
+>2. Naciśnij ikonę profilu w prawym górnym rogu i wybierz pozycję "Zarządzaj aplikacjami i urządzeniem".
+>3. Zlokalizuj rozwiązanie MDE w obszarze dostępne aktualizacje i wybierz pozycję Aktualizuj.
+>
+>Jeśli wystąpią jakiekolwiek problemy, [prześlij opinię w aplikacji](/security/defender-endpoint/android-support-signin#send-in-app-feedback).
+
 ## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Ochrona punktu końcowego w usłudze Microsoft Defender jest teraz usługą Microsoft Defender w sklepie Play
 
-Ochrona punktu końcowego w usłudze Microsoft Defender jest teraz dostępna jako **usługa Microsoft Defender** w sklepie play. Dzięki tej aktualizacji aplikacja będzie dostępna w wersji zapoznawczej dla **użytkowników w regionie USA** — w zależności od sposobu logowania się do aplikacji przy użyciu konta służbowego lub osobistego będziesz mieć dostęp do funkcji dla Ochrona punktu końcowego w usłudze Microsoft Defender lub funkcji usługi Microsoft Defender dla użytkowników indywidualnych. Aby uzyskać więcej informacji, zobacz [ten blog](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) .
+Ochrona punktu końcowego w usłudze Microsoft Defender jest teraz dostępna jako **usługa Microsoft Defender** w sklepie play. Dzięki tej aktualizacji aplikacja będzie dostępna w wersji zapoznawczej dla **użytkowników w regionie USA** — w zależności od sposobu logowania się do aplikacji przy użyciu konta służbowego lub osobistego będziesz mieć dostęp do funkcji dla Ochrona punktu końcowego w usłudze Microsoft Defender lub funkcji usługi Microsoft Defender dla użytkowników indywidualnych. Aby uzyskać więcej informacji, zobacz [ten blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) .
 
 ## <a name="threat-and-vulnerability-management"></a>Zarządzanie zagrożeniami i lukami w zabezpieczeniach
 

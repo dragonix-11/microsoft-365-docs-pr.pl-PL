@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Twórz i oceniaj przypisania, twórz i kuratoruj zawartość kursu oraz współpracuj nad plikami w czasie rzeczywistym przy użyciu nowej aplikacji Microsoft OneDrive Edukacja Tools Interoperability App for Canvas.
-ms.openlocfilehash: ce02be23d98d1dc54ae02a21f9bf1678d06c3d8f
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 5de027c9d7606ebe546a8dc8e087b91da7f0400e
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747231"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824569"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integracja Microsoft OneDrive LTI z kanwą
 
@@ -30,6 +30,7 @@ Integracja Microsoft OneDrive lti z kanwą to proces dwuetapowy. Pierwszy krok u
 - Wyskakujące okienka nie powinny być blokowane dla Microsoft OneDrive.
 
 > [!NOTE]
+>
 > - Pliki cookie nie są domyślnie włączone w trybie incognito przeglądarki Chrome i muszą być włączone.
 > - Microsoft OneDrive LTI działa w trybie prywatnym w przeglądarce Microsoft Edge. Upewnij się, że nie zablokowano plików cookie (które są domyślnie włączone).
 
@@ -39,25 +40,25 @@ Integracja Microsoft OneDrive lti z kanwą to proces dwuetapowy. Pierwszy krok u
 > Osoba, która wykonuje tę integrację, powinna być administratorem aplikacji Canvas i administratorem dzierżawy Microsoft 365.
 
 1. Zaloguj się do <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portalu rejestracji Microsoft OneDrive LTI</a>
-1. Wybierz przycisk **Zgoda administratora** i zaakceptuj uprawnienia.
+2. Wybierz przycisk **Zgoda administratora** i zaakceptuj uprawnienia.
 
-> [!CAUTION]
-> Jeśli ten krok nie zostanie wykonany, poniższy krok spowoduje wyświetlenie błędu i nie będzie można wykonać tego kroku przez godzinę po wystąpieniu błędu.
+   > [!CAUTION]
+   > Jeśli ten krok nie zostanie wykonany, poniższy krok spowoduje wyświetlenie błędu i nie będzie można wykonać tego kroku przez godzinę po wystąpieniu błędu.
 
 3. Wybierz przycisk **Utwórz nową dzierżawę LTI** . Na stronie Rejestracja LTI wybierz pozycję **Kanwa** na liście rozwijanej i wprowadź podstawowy adres URL wystąpienia kanwy.
 
-> [!NOTE]
-> Jeśli wystąpienie kanwy to na przykład https://contoso.test.instructure.com](https://contoso.test.instructure.com), należy wprowadzić pełny adres URL.
+   > [!NOTE]
+   > Jeśli na przykład `https://contoso.test.instructure.com`wystąpienie kanwy to , należy wprowadzić pełny adres URL.
 
-:::image type="content" source="media/OneDrive-LTI-07.png" alt-text="Strona administrowania dzierżawą LTI z polem listy rozwijanej umożliwiającym wybranie platformy konsumenta LTI i pola tekstowego adresu URL.":::
+   :::image type="content" source="media/OneDrive-LTI-07.png" alt-text="Strona administrowania dzierżawą LTI z polem listy rozwijanej umożliwiającym wybranie platformy konsumenta LTI i pola tekstowego adresu URL.":::
 
 4. Skopiuj kod JSON, wybierając przycisk **Kopiuj** (ikona po prawej stronie, która pokazuje dwie strony na górze). Zostanie on użyty do wygenerowania klucza w kanwie.
 
-:::image type="content" source="media/OneDrive-LTI-08.png" alt-text="Obraz przedstawiający przycisk kopiowania, który skopiuje wyświetlany tekst JSON i udostępni go do generowania kluczy w kanwie.":::
+   :::image type="content" source="media/OneDrive-LTI-08.png" alt-text="Obraz przedstawiający przycisk kopiowania, który skopiuje wyświetlany tekst JSON i udostępni go do generowania kluczy w kanwie.":::
 
 5. Zaloguj się do wystąpienia kanwy jako administrator i wybierz pozycję **Klucze deweloperów** z menu po lewej stronie. Z listy rozwijanej utwórz klucz dewelopera, wybierając pozycję **KLUCZ LTI** z listy rozwijanej w prawym górnym rogu strony.
 
-:::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Zrzut ekranu przedstawiający lewy pasek nawigacyjny z wybranymi kluczami deweloperów oraz wpis klucza LTI wybrany z listy rozwijanej po prawej stronie.":::
+   :::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Zrzut ekranu przedstawiający lewy pasek nawigacyjny z wybranymi kluczami deweloperów oraz wpis klucza LTI wybrany z listy rozwijanej po prawej stronie.":::
 
 6. Na stronie Konfigurowanie na liście rozwijanej **Metoda** wybierz pozycję **Wklej kod JSON** jako metodę i wklej tekst JSON skopiowany w kroku 4 w wyświetlonym polu tekstowym.
 
@@ -68,11 +69,11 @@ Integracja Microsoft OneDrive lti z kanwą to proces dwuetapowy. Pierwszy krok u
 
 7. Zapisz klucz i stanie się on dostępny na kanwie w stanie **Wyłączone** . Włącz **klucz i** skopiuj klucz podany w kolumnie **Szczegóły** do użycia w następnym kroku.
 
-:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Strona Kanwa z kluczem ustawionym w stanie wyłączenia. Należy ją włączyć, a klucz będzie musiał zostać skopiowany z kolumny szczegółów na tej stronie.":::
+   :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Strona Kanwa z kluczem ustawionym w stanie wyłączenia. Należy ją włączyć, a klucz będzie musiał zostać skopiowany z kolumny szczegółów na tej stronie.":::
 
 8. Wróć do portalu rejestracji Microsoft OneDrive LTI i wklej klucz w polu **Identyfikator klienta kanwy**. Wybierz pozycję **Dalej** , gdy wszystko będzie gotowe.
 
-:::image type="content" source="media/OneDrive-LTI-20.png" alt-text="Strona rejestracji dzierżawy LTI, na której jest wyświetlany tekst JSON i pole tekstowe, do którego należy skopiować klucz.":::
+   :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="Strona rejestracji dzierżawy LTI, na której jest wyświetlany tekst JSON i pole tekstowe, do którego należy skopiować klucz.":::
 
 9. Przejrzyj i zapisz zmiany. Po pomyślnej rejestracji zostanie wyświetlony komunikat.
 10. Szczegóły rejestracji można również przejrzeć, wybierając przycisk **Wyświetl dzierżawy LTI** na stronie głównej.

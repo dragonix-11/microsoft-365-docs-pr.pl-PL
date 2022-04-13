@@ -1,5 +1,5 @@
 ---
-title: Wymagania dotyczące Microsoft 365 Lighthouse
+title: Wymagania dotyczące portalu Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,55 +15,54 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: W przypadku dostawców usług zarządzanych (MSP) uzyskaj listę wymagań dotyczących Microsoft 365 Lighthouse.
-ms.openlocfilehash: b26eb34c728121b4c6f2474dd52aa2a6824d92d6
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+description: W przypadku dostawców usług zarządzanych uzyskaj listę wymagań dotyczących używania Microsoft 365 Lighthouse.
+ms.openlocfilehash: d5f04c39cbce9726fefa4b410be63cd5ee4e959d
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775417"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823679"
 ---
-# <a name="requirements-for-microsoft-365-lighthouse"></a>Wymagania dotyczące Microsoft 365 Lighthouse
+# <a name="requirements-for-microsoft-365-lighthouse"></a>Wymagania dotyczące portalu Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse to portal administracyjny, który ułatwia zarządzanym dostawcom usług (MSP) zabezpieczanie urządzeń, danych i użytkowników oraz zarządzanie nimi w skali dla klientów małych i średnich firm.  
+Microsoft 365 Lighthouse jest portalem administracyjnym, który ułatwia dostawcom usług zarządzanych zabezpieczanie urządzeń, danych i użytkowników na dużą skalę oraz zarządzanie nimi dla klientów małych i średnich firm (SMB).
 
-Aby korzystać z usługi Lighthouse, msP muszą być zarejestrowani w programie Dostawca rozwiązań w chmurze (CSP) jako pośredni odsprzedawca lub bezpośredni partner ds. rachunku.  
+Aby korzystać z usługi Lighthouse, dostawcy msps muszą być zarejestrowani w programie Dostawca rozwiązań w chmurze (CSP) jako odsprzedawca pośredni lub partner rozliczeń bezpośrednich.
 
-Ponadto każda dzierżawa klienta programu MSP musi zakwalifikować się do usługi Lighthouse, spełniając następujące wymagania:
- 
-- Aby zarządzać dzierżawą klienta, należy skonfigurować dostęp delegowany dla dostawcy usług zarządzanych*
+Ponadto każda dzierżawa klienta MSP musi kwalifikować się do aplikacji Lighthouse, spełniając następujące wymagania:
+
+- Aby można było zarządzać dzierżawą klienta, musi mieć skonfigurowany dostęp delegowany dla dostawcy usług zarządzanych (MSP).
 - Musi mieć co najmniej jedną licencję Microsoft 365 Business Premium, Microsoft 365 E3 lub Windows 365 Business
 - Nie może mieć więcej niż 1000 licencjonowanych użytkowników
 
-*Delegowane uprawnienia administratora (DAP) są wymagane, aby można było dołączać klientów do usługi Lighthouse. W celu zapewnienia bardziej bezpiecznego dostępu delegowanego zalecamy także nawiązanie z klientami szczegółowych, delegowanych uprawnień administratora (GDAP, Granular Delegated Admin Privileges). Podczas gdy usługi DAP i GDAP są współistniene, GDAP będą miały pierwszeństwo dla klientów, dla których są dostępne oba modele. Wkrótce klienci, którzy mają tylko GDAP (bez protokołu DAP), będą mogli wdrapać się do latarni morskiej.
+*Uprawnienia administratora delegowanego (DAP) są wymagane do dołączenia klientów do usługi Lighthouse. Zalecamy również ustanowienie szczegółowych uprawnień administratora delegowanego (GDAP) z klientami, aby umożliwić bezpieczniejszy dostęp delegowany. Chociaż dap i GDAP współistnieją, GDAP będzie mieć pierwszeństwo dla klientów, gdzie oba modele są w miejscu. Wkrótce klienci z zaledwie GDAP (i bez dap) będą mogli dołączyć do lighthouse.
 
-## <a name="requirements-for-enablingdevice-management"></a>Wymagania dotyczące włączania zarządzania urządzeniami
+## <a name="requirements-for-enabling-device-management"></a>Wymagania dotyczące włączania zarządzania urządzeniami
 
-Aby wyświetlić urządzenia dzierżawy klienta na stronach zarządzania urządzeniami, program MSP musi:
+Aby wyświetlić urządzenia dzierżawy klienta na stronach zarządzania urządzeniami, msp musi:
 
-- Zarejestruj wszystkie urządzenia klienta w Microsoft Endpoint Manager (MEM).Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzeń w u Microsoft Intune](/mem/intune/enrollment/).
-- Przypisz zasady zgodności do wszystkich urządzeń klientów.Aby uzyskać więcej informacji, [zobacz Tworzenie zasad zgodności w programie Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+- Zarejestruj wszystkie urządzenia klienta w Microsoft Endpoint Manager (MEM). Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzeń w Microsoft Intune](/mem/intune/enrollment/).
+- Przypisz zasady zgodności do wszystkich urządzeń klientów. Aby uzyskać więcej informacji, zobacz [Tworzenie zasad zgodności w Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
-## <a name="requirements-for-enabling-usermanagement"></a>Wymagania dotyczące włączania zarządzania użytkownikami
+## <a name="requirements-for-enabling-user-management"></a>Wymagania dotyczące włączania zarządzania użytkownikami
 
-Aby dane klienta były wyświetlane w raportach na stronach zarządzania użytkownikami, w tym w przypadku użytkowników ryzykownych, uwierzytelniania wieloskładnikowego i resetowania hasła, dzierżawy klientów muszą mieć licencje na usługę Azure Active Directory Premium P1 lub nowsze. Azure AD — wersja Premium P1 jest dołączony do Microsoft 365 Business Premium i Microsoft 365 E3.
+Aby dane klientów były wyświetlane w raportach na stronach zarządzania użytkownikami, w tym ryzykownych użytkowników, uwierzytelnianie wieloskładnikowe i resetowanie hasła, dzierżawcy klienta muszą mieć licencje na Azure Active Directory — wersja Premium P1 lub nowsze. Azure AD — wersja Premium P1 jest dołączony do Microsoft 365 Business Premium i Microsoft 365 E3.
 
-## <a name="requirements-for-enablingthreat-management"></a>Wymagania dotyczące włączania zarządzania zagrożeniami
+## <a name="requirements-for-enabling-threat-management"></a>Wymagania dotyczące włączania zarządzania zagrożeniami
 
-Aby wyświetlać urządzenia i zagrożenia w dzierżawie klientów na stronach zarządzania zagrożeniami, musisz zarejestrować wszystkie urządzenia dzierżawcy klienta w programie Microsoft Endpoint Manager (MEM) i chronić je, uruchamiając program Program antywirusowy Microsoft Defender.  
+Aby wyświetlić urządzenia dzierżawy klienta i zagrożenia na stronach zarządzania zagrożeniami, należy zarejestrować wszystkie urządzenia dzierżawy klienta w Microsoft Endpoint Manager (MEM) i chronić je, uruchamiając Program antywirusowy Microsoft Defender.
 
-Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzeń w u Microsoft Intune](/mem/intune/enrollment/).  
+Aby uzyskać więcej informacji, zobacz [Rejestrowanie urządzeń w Microsoft Intune](/mem/intune/enrollment/).
 
-Program antywirusowy Microsoft Defender stanowi część systemu Windows i jest domyślnie włączona na urządzeniach z systemem Windows 10.  
+Program antywirusowy Microsoft Defender jest częścią systemu operacyjnego Windows i jest domyślnie włączona na urządzeniach z systemem Windows 10.
 
 > [!NOTE]
-> Jeśli korzystasz z rozwiązania antywirusowego firmy innym niż Microsoft i nie Program antywirusowy Microsoft Defender, Program antywirusowy Microsoft Defender zostanie automatycznie wyłączona. Po odinstalowaniu rozwiązania antywirusowego, które nie jest Program antywirusowy Microsoft Defender firmy Microsoft, zostanie automatycznie aktywowane w celu ochrony twoich Windows przed zagrożeniami.
+> Jeśli używasz rozwiązania antywirusowego innego niż Microsoft, a nie Program antywirusowy Microsoft Defender, Program antywirusowy Microsoft Defender jest automatycznie wyłączona. Po odinstalowaniu rozwiązania antywirusowego innego niż Microsoft Program antywirusowy Microsoft Defender jest automatycznie aktywowany w celu ochrony urządzeń Windows przed zagrożeniami.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Konfigurowanie Microsoft 365 Lighthouse zabezpieczeń portalu](m365-lighthouse-configure-portal-security.md) (artykuł)\
-[Microsoft 365 Lighthouse strona zgodności urządzenia](m365-lighthouse-device-compliance-page-overview.md) (artykuł)\
-[Microsoft 365 Lighthouse omówienie strony Użytkownicy](m365-lighthouse-users-page-overview.md) (artykuł)\
-[Microsoft 365 Lighthouse zarządzanie zagrożeniami — omówienie](m365-lighthouse-threat-management-page-overview.md) (artykuł)\
-[Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)
-
+[Konfigurowanie zabezpieczeń portalu Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) (artykuł)\
+[Microsoft 365 Lighthouse Omówienie strony zgodności urządzeń](m365-lighthouse-device-compliance-page-overview.md) (artykuł)\
+[omówienie strony Microsoft 365 Lighthouse Użytkownicy](m365-lighthouse-users-page-overview.md) (artykuł)\
+[omówienie strony zarządzania zagrożeniami Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (artykuł)\
+[Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)

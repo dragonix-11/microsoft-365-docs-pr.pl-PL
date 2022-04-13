@@ -19,12 +19,12 @@ ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 596616328a02182b39c67f58137d43ab626e1756
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788485"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823317"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych
 
@@ -75,7 +75,7 @@ Aby uzyskać więcej informacji, zobacz [Zarządzanie źródłami aktualizacji P
 > - Ten artykuł zawiera listę zmian uwzględnionych w szerokim kanale wydań. [Zobacz najnowszą wersję szerokiego kanału tutaj](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - Aby dowiedzieć się więcej na temat procesu stopniowego wdrażania i wyświetlić więcej informacji na temat następnej wersji, zobacz [Zarządzanie procesem stopniowego wdrażania aktualizacji usługi Microsoft Defender](manage-gradual-rollout.md).
 > - Aby dowiedzieć się więcej na temat aktualizacji analizy zabezpieczeń, zobacz [Security intelligence updates for Program antywirusowy Microsoft Defender and other Microsoft antimalware (Aktualizacje analizy zabezpieczeń dla Program antywirusowy Microsoft Defender i innych programów chroniących przed złośliwym kodem firmy Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates)).
-> - Jeśli szukasz listy procesów usługi Microsoft Defender, **[pobierz skoroszyt mde-urls](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**, a następnie wybierz arkusz **Procesy usługi Microsoft Defender** . Skoroszyt mde-urls zawiera również listę usług i skojarzonych z nimi adresów URL, z którymi sieć musi być w stanie nawiązać połączenie, zgodnie z opisem w temacie [Enable access to Ochrona punktu końcowego w usłudze Microsoft Defender service URLLs in the proxy server (Włączanie dostępu do adresów URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender na serwerze proxy](configure-proxy-internet.md)).
+> - Jeśli szukasz listy procesów usługi Microsoft Defender, **[pobierz skoroszyt mde-urls](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, a następnie wybierz arkusz **Procesy usługi Microsoft Defender** . Skoroszyt mde-urls zawiera również listę usług i skojarzonych z nimi adresów URL, z którymi sieć musi być w stanie nawiązać połączenie, zgodnie z opisem w temacie [Enable access to Ochrona punktu końcowego w usłudze Microsoft Defender service URLLs in the proxy server (Włączanie dostępu do adresów URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender na serwerze proxy](configure-proxy-internet.md)).
 
 ## <a name="monthly-platform-and-engine-versions"></a>Miesięczne wersje platformy i aparatu
 

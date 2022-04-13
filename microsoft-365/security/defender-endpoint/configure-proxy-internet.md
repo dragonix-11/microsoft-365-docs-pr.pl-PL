@@ -1,7 +1,7 @@
 ---
-title: Konfigurowanie ustawień serwera proxy i połączenia internetowego urządzenia
-description: Skonfiguruj ustawienia Ochrona punktu końcowego w usłudze Microsoft Defender proxy i Internetu, aby włączyć komunikację z usługą w chmurze.
-keywords: configure, proxy, internet, łączność z Internetem, ustawienia, ustawienia serwera proxy, netsh, winhttp, serwer proxy
+title: Konfigurowanie ustawień serwera proxy urządzenia i połączenia internetowego
+description: Skonfiguruj ustawienia serwera proxy Ochrona punktu końcowego w usłudze Microsoft Defender i Internetu, aby umożliwić komunikację z usługą w chmurze.
+keywords: konfigurowanie, serwer proxy, Internet, łączność z Internetem, ustawienia, ustawienia serwera proxy, netsh, winhttp, serwer proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,98 +18,98 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cf68afff79a2d719435e9df3d53400584f162618
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 787da143bdbbc2d21610ba14d0fe7c955e4e976d
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507350"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823405"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfiguruj ustawienia serwera proxy urządzenia i połączenia internetowego
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Czujnik Defender for Endpoint wymaga, aby program Microsoft Windows HTTP (WinHTTP) do zgłaszania danych czujnika i komunikowania się z usługą Defender for Endpoint. Osadzony czujnik programu Defender for Endpoint działa w kontekście systemowym przy użyciu konta LocalSystem. Czujnik korzysta z usług Microsoft Windows HTTP (WinHTTP) w celu umożliwienia komunikacji z usługą w chmurze Defender for Endpoint.
+Czujnik usługi Defender for Endpoint wymaga, aby usługa Microsoft Windows HTTP (WinHTTP) zgłaszała dane czujników i komunikowała się z usługą Defender for Endpoint. Osadzony czujnik usługi Defender for Endpoint działa w kontekście systemu przy użyciu konta LocalSystem. Czujnik korzysta z usług Http Services firmy Microsoft Windows (WinHTTP), aby umożliwić komunikację z usługą w chmurze Defender for Endpoint.
 
 > [!TIP]
-> W organizacjach, które używają serwerów proxy przesyłania dalej jako bramy do Internetu, możesz użyć ochrony sieci w celu zbadania zdarzeń połączenia, które występują za serwerami [proxy przesyłania dalej](investigate-behind-proxy.md).
+> W przypadku organizacji korzystających z serwerów proxy przesyłania dalej jako bramy do Internetu można użyć ochrony sieci w celu [zbadania zdarzeń połączenia występujących za serwerami proxy.](investigate-behind-proxy.md)
 
-Ustawienie konfiguracji WinHTTP jest niezależne od ustawień serwera proxy przeglądania sieci Windows Internet (WinINet) (zobacz: [WinINet vs. WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)). Serwer proxy można odnajdywać tylko przy użyciu następujących metod odnajdowania:
+Ustawienie konfiguracji WinHTTP jest niezależne od ustawień serwera proxy przeglądania Windows Internet (WinINet) (zobacz [WinINet a WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)). Serwer proxy można odnajdywać tylko przy użyciu następujących metod odnajdywania:
 
 - Metody wykrywania automatycznego:
 
   - Przezroczysty serwer proxy
   
-  - WPAD (Web Proxy Auto-discovery Protocol)
+  - Protokół automatycznego odnajdywania serwera proxy sieci Web (WPAD)
 
     > [!NOTE]
-    > Jeśli używasz przezroczystego serwera proxy lub tabletu WPAD w topologii sieci, nie potrzebujesz specjalnych ustawień konfiguracji. Aby uzyskać więcej informacji na temat usługi Defender dla wykluczeń adresu URL punktu końcowego w serwerze proxy, zobacz Włączanie dostępu do usługi Defender dla adresów URL usługi punktu końcowego [na serwerze proxy.](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+    > Jeśli używasz przezroczystego serwera proxy lub WPAD w topologii sieci, nie potrzebujesz specjalnych ustawień konfiguracji. Aby uzyskać więcej informacji na temat wykluczeń adresu URL punktu końcowego usługi Defender na serwerze proxy, zobacz [Włączanie dostępu do adresów URL usługi Defender for Endpoint na serwerze proxy](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
-- Ręczna statyczna konfiguracja serwera proxy:
+- Ręczna konfiguracja statycznego serwera proxy:
 
   - Konfiguracja oparta na rejestrze
   
-  - WinHTTP configured using netsh command: Suitable only for desktops in a stable topology (example: a desktop in a corporate network behind the same proxy)
+  - WinHTTP skonfigurowany przy użyciu polecenia netsh: nadaje się tylko dla komputerów stacjonarnych w stabilnej topologii (na przykład: pulpit w sieci firmowej za tym samym serwerem proxy)
 
 > [!NOTE]
-> Oprogramowanie antywirusowe Defender i EDR można ustawić niezależnie.  W kolejnych sekcjach należy pamiętać o różnicach.
+> Oprogramowanie antywirusowe Defender i serwery proxy EDR można ustawić niezależnie.  W poniższych sekcjach należy pamiętać o tych różnicach.
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Ręczne konfigurowanie serwera proxy przy użyciu statycznego serwera proxy opartego na rejestrze
 
-Skonfiguruj statyczny serwer proxy oparty na rejestrze dla czujnika wykrywania i reakcji punktu końcowego (EDR) oparty na rejestrze, aby raportować dane diagnostyczne i komunikować się z usługą Defender for Endpoint, jeśli komputer nie jest dozwolony do łączenia się z Internetem.
+Skonfiguruj oparty na rejestrze statyczny serwer proxy dla czujnika wykrywania i reagowania punktu końcowego usługi Defender (EDR), aby raportować dane diagnostyczne i komunikować się z usługą Defender for Endpoint, jeśli komputer nie może łączyć się z Internetem.
 
 > [!NOTE]
-> W przypadku używania tej opcji w programach Windows 10, Windows 11, Windows Server 2019 lub Windows Server 2022 zaleca się używanie następującej (lub nowszej) kompilacji i zbiorczego rzutowania aktualizacji:
+> W przypadku korzystania z tej opcji na Windows 10, Windows 11 lub Windows Server 2019 lub Windows Server 2022 zaleca się utworzenie następującego (lub nowszego) zbiorczego zestawienia aktualizacji:
 >
 > - Windows 11
 > - Windows 10, wersja 1809 lub Windows Server 2019 lub Windows Server 2022 —<https://support.microsoft.com/kb/5001384>
-> - Windows 10, wersja 1909 -<https://support.microsoft.com/kb/4601380>
-> - Windows 10, wersja 2004 -<https://support.microsoft.com/kb/4601382>
-> - Windows 10, wersja 20H2 -<https://support.microsoft.com/kb/4601382>
+> - Windows 10, wersja 1909 —<https://support.microsoft.com/kb/4601380>
+> - Windows 10, wersja 2004 —<https://support.microsoft.com/kb/4601382>
+> - Windows 10, wersja 20H2 —<https://support.microsoft.com/kb/4601382>
 >
-> Te aktualizacje poprawiają łączność i niezawodność kanału CnC (Command and Control).
+> Te aktualizacje zwiększają łączność i niezawodność kanału CnC (Command and Control).
 
-Statyczny serwer proxy można skonfigurować za pośrednictwem zasad grupy (GP), oba ustawienia w obszarze wartości zasad grupy należy skonfigurować na serwerze proxy do używania EDR. Zasady grupy są dostępne w szablonach administracyjnych.
+Statyczny serwer proxy można skonfigurować za pomocą zasad grupy (GP), oba ustawienia w obszarze wartości zasad grupy powinny być skonfigurowane na serwerze proxy na potrzeby korzystania z EDR. Zasady grupy są dostępne w szablonach administracyjnych.
 
-- **Szablony administracyjne > Windows składniki >** i kompilacje zbierania danych w wersji Preview > Konfigurowanie uwierzytelnionego użycia serwera proxy dla połączonego interfejsu użytkownika i usługi telemetrii.
+- **Szablony administracyjne > Windows składniki > zbieranie danych i kompilacje w wersji zapoznawczej > konfigurowania uwierzytelnionego użycia serwera proxy dla połączonego środowiska użytkownika i usługi telemetrii**.
 
-  Ustaw dla ustawienia **Włączone i** wybierz **pozycję Wyłącz uwierzytelniony serwer proxy**.
+  Ustaw ją na **wartość Włączone** i wybierz pozycję **Wyłącz użycie uwierzytelnionego serwera proxy**.
 
-  :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Okienko zasady grupy stanu ustawienie1" lightbox="images/atp-gpo-proxy1.png":::
+  :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Okienko stanu ustawienia zasady grupy 1" lightbox="images/atp-gpo-proxy1.png":::
 
-- **Szablony administracyjne > Windows składników > kompilacji** zbierania i podglądu danych oraz > konfigurowanie połączonych funkcji użytkownika i telemetrii:
+- **Szablony administracyjne > Windows składniki > zbieranie danych i kompilacje wersji zapoznawczej > Konfigurowanie środowisk i telemetrii połączonych użytkowników**:
 
   Skonfiguruj serwer proxy.
 
-  :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Okienko zasady grupy stan (ustawienie2)" lightbox="images/atp-gpo-proxy2.png":::
+  :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Okienko stanu zasady grupy setting2" lightbox="images/atp-gpo-proxy2.png":::
 
 
 | Zasady grupy | Klucz rejestru | Wpis rejestru | Value |
 |:---|:---|:---|:---|
-| Konfigurowanie uwierzytelnionego użycia serwera proxy dla połączonego interfejsu użytkownika i usługi telemetrii | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
-| Konfigurowanie połączonych usług użytkownika i telemetrii | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Na przykład: ```10.0.0.6:8080``` (REG_SZ) |
+| Konfigurowanie uwierzytelnionego użycia serwera proxy dla środowiska połączonego użytkownika i usługi telemetrii | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
+| Konfigurowanie środowisk i danych telemetrycznych połączonych użytkowników | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Na przykład: ```10.0.0.6:8080``` (REG_SZ) |
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Konfigurowanie statycznego serwera proxy dla Program antywirusowy Microsoft Defender
 
-Program antywirusowy Microsoft Defender [dostarczana w](cloud-protection-microsoft-defender-antivirus.md) chmurze ochrona zapewnia natychmiastową, automatyczną ochronę przed nowymi i wyłaniających się zagrożeniami. Pamiętaj, że łączność jest wymagana dla [wskaźników niestandardowych,](manage-indicators.md) gdy program antywirusowy Defender jest aktywnym rozwiązaniem chroniącym przed złośliwym oprogramowaniem. Na [EDR trybie blokowania ma](edr-in-block-mode.md) podstawowe rozwiązanie chroniące przed złośliwym oprogramowaniem w przypadku używania rozwiązania innych niż firmy Microsoft.
+Program antywirusowy Microsoft Defender [ochrona dostarczana przez chmurę](cloud-protection-microsoft-defender-antivirus.md) zapewnia niemal natychmiastową, zautomatyzowaną ochronę przed nowymi i pojawiającym się zagrożeniami. Uwaga: łączność jest wymagana dla [niestandardowych wskaźników](manage-indicators.md) , gdy program antywirusowy Defender jest aktywnym rozwiązaniem chroniącym przed złośliwym oprogramowaniem. W przypadku [EDR w trybie bloku](edr-in-block-mode.md) jest używane podstawowe rozwiązanie chroniące przed złośliwym oprogramowaniem w przypadku korzystania z rozwiązania innego niż Microsoft.
 
 Skonfiguruj statyczny serwer proxy przy użyciu zasady grupy dostępnych w szablonach administracyjnych:
 
-1. **Szablony administracyjne > Windows składniki > Program antywirusowy Microsoft Defender > definiować serwer proxy do łączenia się z siecią**. 
+1. **Szablony administracyjne > Windows Składniki > Program antywirusowy Microsoft Defender > Definiowanie serwera proxy na potrzeby nawiązywania połączenia z siecią**. 
 
-2. Ustaw dla ustawienia **Włączone i** zdefiniuj serwer proxy. Adres URL musi być http:// lub https://. Aby uzyskać informacje o obsługiwanych https://, [zobacz Zarządzanie Program antywirusowy Microsoft Defender aktualizacjami](manage-updates-baselines-microsoft-defender-antivirus.md).
+2. Ustaw ją na **wartość Włączone** i zdefiniuj serwer proxy. Należy pamiętać, że adres URL musi mieć http:// lub https://. Aby uzyskać informacje o obsługiwanych wersjach https://, zobacz [Manage Program antywirusowy Microsoft Defender updates (Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)).
 
    :::image type="content" source="images/proxy-server-mdav.png" alt-text="Serwer proxy dla Program antywirusowy Microsoft Defender" lightbox="images/proxy-server-mdav.png":::
 
-3. W obszarze klucza rejestru `HKLM\Software\Policies\Microsoft\Windows Defender`zasady ustawiają wartość rejestru `ProxyServer` jako REG_SZ. 
+3. W kluczu rejestru `HKLM\Software\Policies\Microsoft\Windows Defender`zasady ustawiają wartość `ProxyServer` rejestru jako REG_SZ. 
 
-   Wartość rejestru przyjmuje `ProxyServer` następujący format ciągu:
+   Wartość `ProxyServer` rejestru przyjmuje następujący format ciągu:
 
     ```text
     <server name or ip>:<port>
@@ -119,38 +119,38 @@ Skonfiguruj statyczny serwer proxy przy użyciu zasady grupy dostępnych w szabl
 
 > [!NOTE]
 >
-> Ze względu na odporność i ze względu na charakter ochrony w chmurze w czasie rzeczywistym Program antywirusowy Microsoft Defender buforuje ostatni znany roboczy serwer proxy. Upewnij się, że rozwiązanie serwera proxy nie przeprowadza inspekcji SSL. Spowoduje to zerwanie bezpiecznego połączenia z chmurą. 
+> W celu zapewnienia odporności i w czasie rzeczywistym ochrony dostarczanej przez chmurę Program antywirusowy Microsoft Defender będzie buforować ostatni znany działający serwer proxy. Upewnij się, że rozwiązanie serwera proxy nie przeprowadza inspekcji protokołu SSL. Spowoduje to przerwanie bezpiecznego połączenia w chmurze. 
 >
-> Program antywirusowy Microsoft Defender nie będzie używać statycznego serwera proxy do łączenia się z usługą Windows Update ani usługą Microsoft Update w celu pobrania aktualizacji. Zamiast tego będzie używać serwera proxy dla całego systemu( jeśli został skonfigurowany do używania Windows Update) lub wewnętrznego źródła aktualizacji skonfigurowanego zgodnie ze skonfigurowaną kolejnością [rezerwową](manage-protection-updates-microsoft-defender-antivirus.md). 
+> Program antywirusowy Microsoft Defender nie będzie używać statycznego serwera proxy do nawiązywania połączenia z usługą Windows Update lub Microsoft Update w celu pobierania aktualizacji. Zamiast tego będzie używać serwera proxy dla całego systemu, jeśli zostanie skonfigurowany do używania Windows Update lub skonfigurowanego wewnętrznego źródła aktualizacji zgodnie ze [skonfigurowaną kolejnością rezerwową](manage-protection-updates-microsoft-defender-antivirus.md). 
 >
-> Jeśli jest to wymagane, możesz użyć szablonów **administracyjnych > Windows składników > Program antywirusowy Microsoft Defender > definiowania automatycznej konfiguracji serwera proxy (pac)** na potrzeby łączenia się z siecią. Jeśli musisz skonfigurować zaawansowane konfiguracje z wieloma serwerami proxy, użyj szablonów **administracyjnych > Windows składniki > Program antywirusowy Microsoft Defender > Definiuj** adresy, aby pominąć serwer proxy i zapobiec Program antywirusowy Microsoft Defender  z używania serwera proxy dla tych miejsc docelowych. 
+> W razie potrzeby możesz użyć **szablonów administracyjnych > Windows Components > Program antywirusowy Microsoft Defender > Define proxy auto-config (.pac)** do nawiązywania połączenia z siecią. Jeśli musisz skonfigurować zaawansowane konfiguracje z wieloma serwerami proxy, użyj **szablonów administracyjnych > Windows components > Program antywirusowy Microsoft Defender > Define addresses (Definiowanie adresów**), aby pominąć serwer proxy i zapobiec Program antywirusowy Microsoft Defender  z użyciem serwera proxy dla tych miejsc docelowych. 
 >
-> Za pomocą programu PowerShell i polecenia `Set-MpPreference` cmdlet możesz skonfigurować następujące opcje: 
+> Aby skonfigurować następujące opcje, możesz użyć programu PowerShell z `Set-MpPreference` poleceniem cmdlet: 
 >
 > - ProxyBypass 
 > - ProxyPacUrl 
-> - ProxyServer (Serwer proxy) 
+> - Serwer proxy 
 
 > [!NOTE]
-> Aby prawidłowo korzystać z serwera proxy, skonfiguruj następujące trzy różne ustawienia serwera proxy:
+> Aby prawidłowo używać serwera proxy, skonfiguruj te trzy różne ustawienia serwera proxy:
 >  - Ochrona punktu końcowego w usłudze Microsoft Defender (MDE)
->  - AUDIO/wideo (oprogramowanie antywirusowe)
->  - Wykrywanie i odpowiedź punktu końcowego (EDR)
+>  - AV (oprogramowanie antywirusowe)
+>  - Wykrywanie i reagowanie na punkty końcowe (EDR)
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>Ręczne konfigurowanie serwera proxy przy użyciu polecenia netsh
 
-Za pomocą metody netsh skonfiguruj statyczny serwer proxy dla całego systemu.
+Za pomocą programu netsh skonfiguruj statyczny serwer proxy w całym systemie.
 
 > [!NOTE]
 >
-> - Dotyczy to wszystkich aplikacji, w tym usług Windows, które korzystają z winHTTP z domyślnym serwerem proxy.</br>
-> - Komputery przenośne, które zmieniają topologię (na przykład: z biura do domu) zostaną niepoprawnie niepoprawne przy użyciu polecenia Netsh. Użyj statycznej konfiguracji serwera proxy opartej na rejestrze.
+> - Będzie to miało wpływ na wszystkie aplikacje, w tym usługi Windows korzystające z usługi WinHTTP z domyślnym serwerem proxy.</br>
+> - Laptopy zmieniające topologię (na przykład z biura do domu) będą działać nieprawidłowo za pomocą polecenia netsh. Użyj konfiguracji statycznego serwera proxy opartego na rejestrze.
 
-1. Otwieranie wiersza polecenia z podwyższonym poziomem uprawnień:
-   1. Przejdź do **przycisku Start** i wpisz **cmd**.
-   1. Kliknij prawym przyciskiem myszy **pozycję Wiersz polecenia i** wybierz **pozycję Uruchom jako administrator**.
+1. Otwórz wiersz polecenia z podwyższonym poziomem poziomu:
+   1. Przejdź do **pozycji Start** i wpisz **cmd**.
+   1. Kliknij prawym **przyciskiem myszy wiersz polecenia** i wybierz pozycję **Uruchom jako administrator**.
 
-2. Wprowadź następujące polecenie i naciśnij klawisz **Enter**:
+2. Wprowadź następujące polecenie i naciśnij **klawisz Enter**:
 
    ```PowerShell
    netsh winhttp set proxy <proxy>:<port>
@@ -158,44 +158,44 @@ Za pomocą metody netsh skonfiguruj statyczny serwer proxy dla całego systemu.
 
    Na przykład: `netsh winhttp set proxy 10.0.0.6:8080`
 
-Aby zresetować serwer proxyhttp win, wprowadź następujące polecenie i naciśnij klawisz **Enter**:
+Aby zresetować serwer proxy winhttp, wprowadź następujące polecenie i naciśnij **klawisz Enter**:
 
 ```PowerShell
 netsh winhttp reset proxy
 ```
 
-Aby [dowiedzieć się więcej, zobacz Składnia poleceń Netsh, konteksty](/windows-server/networking/technologies/netsh/netsh-contexts) i formatowanie.
+Aby dowiedzieć się więcej [, zobacz Składnia poleceń netsh, konteksty i formatowanie](/windows-server/networking/technologies/netsh/netsh-contexts) .
 
-## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>Włączanie dostępu do Ochrona punktu końcowego w usłudze Microsoft Defender URL usługi na serwerze proxy
+## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>Włączanie dostępu do adresów URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender na serwerze proxy
 
-Jeśli domyślnie cały ruch jest blokowany przez serwer proxy lub zaporę i dopuszcza tylko określone domeny, dodaj domeny wymienione w arkuszu do pobrania do listy dozwolonych domen.
+Domyślnie, jeśli serwer proxy lub zapora domyślnie blokuje cały ruch i zezwala tylko na określone domeny, dodaj domeny wymienione w arkuszu do pobrania do listy dozwolonych domen.
 
-Poniższy arkusz kalkulacyjny zawiera listę usług i skojarzonych z nimi adresów URL, które sieć musi połączyć. Upewnij się, że nie ma żadnych reguł zapory ani filtrowania sieci, aby uniemożliwić dostęp do tych adresów URL. Opcjonalnie może być konieczne utworzenie reguły *zezwalania* specjalnie dla nich.
+W poniższym arkuszu kalkulacyjnym do pobrania wymieniono usługi i skojarzone z nimi adresy URL, z którymi sieć musi być w stanie nawiązać połączenie. Upewnij się, że nie ma reguł filtrowania zapory ani sieci, aby odmówić dostępu dla tych adresów URL. Opcjonalnie może być konieczne utworzenie reguły *zezwalania* specjalnie dla nich.
 
 <br>
 
 |Arkusz kalkulacyjny listy domen| Opis|
 |---|---|
-|Ochrona punktu końcowego w usłudze Microsoft Defender adresu URL dla klientów komercyjnych| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Ochrona punktu końcowego w usłudze Microsoft Defender url list for Gov/GCC/DoD | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|lista adresów URL Ochrona punktu końcowego w usłudze Microsoft Defender dla klientów komercyjnych| Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów komercyjnych. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| lista adresów URL Ochrona punktu końcowego w usłudze Microsoft Defender gov/GCC/doD | Arkusz kalkulacyjny z określonymi rekordami DNS dla lokalizacji usług, lokalizacji geograficznych i systemu operacyjnego dla klientów Gov/GCC/DoD. <p> [Pobierz arkusz kalkulacyjny tutaj.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
-Jeśli serwer proxy lub zapora ma włączoną funkcję skanowania HTTPS (inspekcji SSL), wyklucz z funkcji skanowania HTTPS domeny wymienione w powyższej tabeli.
-W zaporze otwórz wszystkie adresy URL, których kolumna geografii to WW. W przypadku wierszy, w których kolumna geografii nie jest kolumną WW, otwórz adresy URL do konkretnej lokalizacji danych. Aby zweryfikować ustawienie lokalizacji danych, zobacz [Weryfikowanie lokalizacji przechowywania danych i aktualizowanie ustawień](/microsoft-365/security/defender-endpoint/data-retention-settings) przechowywania danych w celu Ochrona punktu końcowego w usłudze Microsoft Defender.
-
-> [!NOTE]
-> Windows urządzeń z wersjami 1803 lub wcześniejszymi`settings-win.data.microsoft.com`.  <br>
->
-> Adresy URL, które zawierają wersję 20, są potrzebne tylko, jeśli masz Windows z wersją 1803 lub nowszą. Jest ona potrzebna na przykład `us-v20.events.data.microsoft.com` w przypadku urządzenia Windows z wersją 1803 lub nowszą, które jest dołączane do Storage danych w USA.
->
-
-Jeśli serwer proxy lub zapora blokuje ruch anonimowy jako czujnik programu Defender for Endpoint i łączy się on z kontekstu systemowego w celu upewnienia się, że ruch anonimowy jest dozwolony we wcześniej wymienionych adresach URL.
+Jeśli serwer proxy lub zapora ma włączoną funkcję skanowania HTTPS (inspekcja SSL), wyklucz domeny wymienione w powyższej tabeli ze skanowania HTTPS.
+W zaporze otwórz wszystkie adresy URL, w których kolumna geografii to WW. W przypadku wierszy, w których kolumna geografii nie jest WW, otwórz adresy URL w określonej lokalizacji danych. Aby zweryfikować ustawienie lokalizacji danych, zobacz [Weryfikowanie lokalizacji magazynu danych i aktualizowanie ustawień przechowywania danych dla Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
-> Firma Microsoft nie zapewnia serwera proxy. Te adresy URL są dostępne za pośrednictwem skonfigurowanego serwera proxy.
+> Windows urządzeń z wersją 1803 lub starszą wymaga .`settings-win.data.microsoft.com`  <br>
+>
+> Adresy URL, które zawierają w nich wersję 20, są potrzebne tylko wtedy, gdy masz Windows urządzenia w wersji 1803 lub nowszej. Na przykład `us-v20.events.data.microsoft.com` jest to wymagane dla urządzenia Windows w wersji 1803 lub nowszej i dołączone do regionu us Data Storage.
+>
 
-### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) — wymagania dotyczące serwera proxy i zapory dla starszych wersji Windows lub Windows Server
+Jeśli serwer proxy lub zapora blokuje ruch anonimowy jako czujnik usługi Defender for Endpoint i nawiązuje połączenie z kontekstu systemu, aby upewnić się, że ruch anonimowy jest dozwolony we wcześniej wymienionych adresach URL.
 
-Informacje zawarte na liście informacji o konfiguracji serwera proxy i zapory są wymagane do komunikacji z agentem analizy dziennika (często określanej mianem Microsoft Monitoring Agent) poprzednich wersji programu Windows, takich jak Windows 7 SP1, Windows 8.1 i Windows Server 2008 R2*.
+> [!NOTE]
+> Firma Microsoft nie udostępnia serwera proxy. Te adresy URL są dostępne za pośrednictwem skonfigurowanego serwera proxy.
+
+### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) — wymagania dotyczące serwera proxy i zapory dla starszych wersji klienta Windows lub serwera Windows
+
+Informacje na liście informacji o konfiguracji serwera proxy i zapory są wymagane do komunikowania się z agentem usługi Log Analytics (często nazywanym Microsoft Monitoring Agent) dla poprzednich wersji Windows, takich jak Windows 7 z dodatkiem SP1, Windows 8.1 i Windows Server 2008 R2*.
 
 <br>
 
@@ -209,61 +209,61 @@ Informacje zawarte na liście informacji o konfiguracji serwera proxy i zapory s
 |*.azure-automation.net|Port 443|Wychodzące|Tak|
 
 > [!NOTE]
-> *Te wymagania dotyczące łączności mają zastosowanie do Ochrona punktu końcowego w usłudze Microsoft Defender i Windows Server 2016 mma Windows Server 2012 R2. Instrukcje dotyczące dołączania tych systemów operacyjnych do nowego, ujednoliconego rozwiązania znajdują się na serwerach [Windows Onboard](configure-server-endpoints.md) lub migrowanie do nowego, ujednoliconego rozwiązania w scenariuszach migracji do serwera w programie [Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/server-migration).
+> *Te wymagania dotyczące łączności dotyczą poprzednich Ochrona punktu końcowego w usłudze Microsoft Defender Windows Server 2016 i Windows Server 2012 R2, które wymagają mma. Instrukcje dotyczące dołączania tych systemów operacyjnych do nowego ujednoliconego rozwiązania znajdują się na [stronie Dołączanie serwerów Windows](configure-server-endpoints.md) lub migrowanie do nowego ujednoliconego rozwiązania w [scenariuszach migracji serwera w Ochrona punktu końcowego w usłudze Microsoft Defender](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
-> Jako rozwiązanie oparte na chmurze zakres adresów IP może się zmienić. Zalecane jest przejście do ustawienia rozpoznawania dns.
+> Jako rozwiązanie oparte na chmurze zakres adresów IP może ulec zmianie. Zalecane jest przejście do ustawienia rozpoznawania dns.
 
-## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Potwierdź Microsoft Monitoring Agent adresu URL usługi MMA 
+## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Potwierdzanie wymagań dotyczących adresu URL usługi Microsoft Monitoring Agent (MMA) 
 
- Zobacz poniższe wskazówki, aby wyeliminować wymaganie używania symboli wieloznacznych (*) w określonym środowisku podczas korzystania Microsoft Monitoring Agent (MMA) dla poprzednich wersji Windows.
+ Zapoznaj się z poniższymi wskazówkami, aby wyeliminować wymaganie dotyczące symboli wieloznacznych (*) dla określonego środowiska podczas korzystania z Microsoft Monitoring Agent (MMA) dla poprzednich wersji Windows.
 
-1. Wduń poprzedni system operacyjny z programem Microsoft Monitoring Agent (MMA) do programu Defender for Endpoint (aby uzyskać więcej informacji, zobacz Wdowe poprzednie wersje programu Windows na temat programu [Defender](https://go.microsoft.com/fwlink/p/?linkid=2010326) dla punktów końcowych i na nowych serwerach Windows [końcowych](configure-server-endpoints.md)).
+1. Dołącz poprzedni system operacyjny z Microsoft Monitoring Agent (MMA) do usługi Defender for Endpoint (aby uzyskać więcej informacji, zobacz [Dołączanie poprzednich wersji Windows w usłudze Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) i [Dołączanie serwerów Windows](configure-server-endpoints.md)).
 
-2. Upewnij się, że komputer pomyślnie zgłasza się do Microsoft 365 Defender urządzenia.
+2. Upewnij się, że maszyna pomyślnie zgłasza się do portalu Microsoft 365 Defender.
 
 3. Uruchom narzędzie TestCloudConnection.exe z folderu "C:\Program Files\Microsoft Monitoring Agent\Agent", aby zweryfikować łączność i uzyskać wymagane adresy URL dla określonego obszaru roboczego.
 
-4. Na liście Ochrona punktu końcowego w usłudze Microsoft Defender URL można znaleźć pełną listę wymagań dotyczących regionu (zobacz Arkusz kalkulacyjny adresów URL [usługi](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
+4. Sprawdź listę adresów URL Ochrona punktu końcowego w usłudze Microsoft Defender, aby uzyskać pełną listę wymagań dotyczących danego regionu (zapoznaj się z [arkuszem kalkulacyjnym](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) adresów URL usługi).
 
-   :::image type="content" source="images/admin-powershell.png" alt-text="Administrator w programie Windows PowerShell" lightbox="images/admin-powershell.png":::
+   :::image type="content" source="images/admin-powershell.png" alt-text="Administrator w Windows PowerShell" lightbox="images/admin-powershell.png":::
 
-Symbole wieloznaczne używane\*\* w punktach końcowych adresów URL ods.opinsights.azure.com, \*oms.opinsights.azure.com \*i agentsvc.azure-automation.net można zastąpić określonym identyfikatorem obszaru roboczego. Identyfikator obszaru roboczego jest określony dla danego środowiska i obszaru roboczego. Można go znaleźć w sekcji Dołączanie dzierżawy w portalu Microsoft 365 Defender sieci.
+Symbole wieloznaczne (\*) używane w \*punktach końcowych .ods.opinsights.azure.com, \*.oms.opinsights.azure.com i \*.agentsvc.azure-automation.net URL można zastąpić określonym identyfikatorem obszaru roboczego. Identyfikator obszaru roboczego jest specyficzny dla środowiska i obszaru roboczego. Można go znaleźć w sekcji Dołączanie dzierżawy w portalu Microsoft 365 Defender.
 
-Punkt \*końcowy blob.core.windows.net URL można zastąpić adresami URL przedstawionymi w sekcji "Reguła zapory: \*blob.core.windows.net" wyników testu.
+\*Punkt końcowy adresu URL blob.core.windows.net można zastąpić adresami URL wyświetlanymi w sekcji "Reguła zapory: \*.blob.core.windows.net" wyników testu.
 
 > [!NOTE]
-> W przypadku dorównania za pośrednictwem Microsoft Defender dla Chmury można używać wielu obszarów roboczych. Konieczne będzie wykonanie procedury TestCloudConnection.exe na wewnecie komputera z każdego obszaru roboczego (aby ustalić, czy między obszarami roboczymi występują jakieś zmiany w adresach URL *.blob.core.windows.net).
+> W przypadku dołączania za pośrednictwem Microsoft Defender dla Chmury można użyć wielu obszarów roboczych. Należy wykonać procedurę TestCloudConnection.exe na dołączonym komputerze z każdego obszaru roboczego (aby ustalić, czy istnieją jakiekolwiek zmiany adresów URL *.blob.core.windows.net między obszarami roboczymi).
 
-## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Weryfikowanie łączności klienta z adresami URL Ochrona punktu końcowego w usłudze Microsoft Defender usługi
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Weryfikowanie łączności klienta z adresami URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender
 
-Sprawdź, czy konfiguracja serwera proxy została ukończona pomyślnie. WinHTTP może następnie wykrywać i komunikować się za pośrednictwem serwera proxy w Twoim środowisku, a następnie serwer proxy zezwala na ruch do adresów URL usługi Defender for Endpoint.
+Sprawdź, czy konfiguracja serwera proxy została pomyślnie ukończona. Następnie usługa WinHTTP może odnajdywać i komunikować się za pośrednictwem serwera proxy w danym środowisku, a następnie serwer proxy zezwoli na ruch do adresów URL usługi Defender for Endpoint.
 
-1. Pobierz narzędzie [Ochrona punktu końcowego w usłudze Microsoft Defender analizatora](https://aka.ms/mdeanalyzer) klientów na komputer, gdzie jest uruchomiony czujnik programu Defender for Endpoint. W przypadku serwerów o gosprzyjym oknie można pobrać najnowszą wersję Preview, Ochrona punktu końcowego w usłudze Microsoft Defender [narzędzie Analizator klienta w wersji Beta](https://aka.ms/BetaMDEAnalyzer).
+1. Pobierz [narzędzie Ochrona punktu końcowego w usłudze Microsoft Defender Client Analyzer](https://aka.ms/mdeanalyzer) na komputer, na którym działa czujnik usługi Defender for Endpoint. W przypadku serwerów o niskiej wydajności użyj najnowszej wersji zapoznawczej, która jest dostępna do pobrania [Ochrona punktu końcowego w usłudze Microsoft Defender narzędzia Client Analyzer w wersji beta](https://aka.ms/BetaMDEAnalyzer).
 
-2. Wyodrębnianie zawartości MDEClientAnalyzer.zip na urządzeniu.
+2. Wyodrębnij zawartość MDEClientAnalyzer.zip na urządzeniu.
 
-3. Otwieranie wiersza polecenia z podwyższonym poziomem uprawnień:
-   1. Przejdź do **przycisku Start** i wpisz **cmd**.
-   1. Kliknij prawym przyciskiem myszy **pozycję Wiersz polecenia i** wybierz **pozycję Uruchom jako administrator**.
+3. Otwórz wiersz polecenia z podwyższonym poziomem poziomu:
+   1. Przejdź do **pozycji Start** i wpisz **cmd**.
+   1. Kliknij prawym **przyciskiem myszy wiersz polecenia** i wybierz pozycję **Uruchom jako administrator**.
 
-4. Wprowadź następujące polecenie i naciśnij klawisz **Enter**:
+4. Wprowadź następujące polecenie i naciśnij **klawisz Enter**:
 
     ```PowerShell
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
-    Zastąp *ścieżkę HardDrivePath* ścieżką, do której pobrano narzędzie MDEClientAnalyzer. Przykład:
+    Zastąp ciąg *HardDrivePath* ścieżką, w której pobrano narzędzie MDEClientAnalyzer. Przykład:
 
     ```PowerShell
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
-5. Narzędzie tworzy i wyodrębnia plik *MDEClientAnalyzerResult.zip* w folderze do użycia w *programie HardDrivePath*.
+5. Narzędzie tworzy i wyodrębnia plik *MDEClientAnalyzerResult.zip* w folderze do użycia w programie *HardDrivePath*.
 
-6. Otwórz *MDEClientAnalyzerResult.txt* i upewnij się, że wykonano kroki konfiguracji serwera proxy w celu umożliwienia odnajdowania serwera i uzyskiwania dostępu do adresów URL usługi.
+6. Otwórz *MDEClientAnalyzerResult.txt* i sprawdź, czy wykonano kroki konfiguracji serwera proxy, aby umożliwić odnajdywanie serwerów i dostęp do adresów URL usługi.
 
-   Narzędzie sprawdza łączność usługi Defender pod adresami URL usługi punktu końcowego. Upewnij się, że klient usługi Defender for Endpoint jest skonfigurowany do interakcji. Narzędzie wydrukuje wyniki w pliku *MDEClientAnalyzerResult.txt* każdego adresu URL, który potencjalnie może zostać użyty do komunikacji z usługami Defender for Endpoint. Przykład:
+   Narzędzie sprawdza łączność adresów URL usługi Defender for Endpoint. Upewnij się, że klient usługi Defender for Endpoint jest skonfigurowany do interakcji. Narzędzie wyświetli wyniki w pliku *MDEClientAnalyzerResult.txt* dla każdego adresu URL, który może być potencjalnie używany do komunikowania się z usługami Defender for Endpoint. Przykład:
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -274,17 +274,17 @@ Sprawdź, czy konfiguracja serwera proxy została ukończona pomyślnie. WinHTTP
    5 - Command line proxy: Doesn't exist
    ```
 
-Jeśli którakolwiek z opcji łączności zwróci stan (200), wówczas klient programu Defender dla punktu końcowego może prawidłowo komunikować się z testowym adresem URL przy użyciu tej metody łączności.
+Jeśli którakolwiek z opcji łączności zwraca stan (200), klient usługi Defender for Endpoint może prawidłowo komunikować się z przetestowanym adresem URL przy użyciu tej metody łączności.
 
-Jeśli jednak wyniki kontroli łączności wskazują na awarię, zostanie wyświetlony błąd HTTP (zobacz Kody stanu PROTOKOŁU HTTP). Następnie możesz użyć adresów URL z tabeli przedstawionej w tece Włączanie dostępu do usługi Defender dla adresów URL usługi punktu końcowego [na serwerze proxy](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Adresy URL dostępne do użycia zależą od regionu wybranego podczas procedury dołączania.
+Jeśli jednak wyniki sprawdzania łączności wskazują na błąd, zostanie wyświetlony błąd HTTP (zobacz Kody stanu HTTP). Następnie możesz użyć adresów URL w tabeli przedstawionej w temacie [Enable access to Defender for Endpoint service URLLs in the proxy server (Włącz dostęp do adresów URL usługi Defender for Endpoint service na serwerze proxy](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)). Adresy URL dostępne do użycia zależą od regionu wybranego podczas procedury dołączania.
 
 > [!NOTE]
-> Testy łączności narzędzia Analizator łączności z chmurą nie są zgodne z tworzeniem procesu blokowania zmniejszania powierzchni w przypadku ataków na produkty pochodzące z poleceń [PSExec i WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands). Aby uruchomić narzędzie łączności, należy tymczasowo wyłączyć tę regułę. Możesz również tymczasowo dodać wykluczenia [asr podczas](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) uruchamiania analizatora.
+> Testy łączności narzędzia Analizator łączności w chmurze nie są zgodne z tworzeniem procesów bloku reguły zmniejszania obszaru podatnego na ataki [pochodzącymi z poleceń PSExec i WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands). Aby uruchomić narzędzie łączności, należy tymczasowo wyłączyć tę regułę. Alternatywnie można tymczasowo dodać [wykluczenia usługi ASR](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) podczas uruchamiania analizatora.
 >
-> Gdy telemetryczny serwer proxy zostanie ustawiony w rejestrze lub za pośrednictwem serwera zasady grupy, usługa Defender dla punktu końcowego zakończy się niepowodzeniem dostępu do zdefiniowanego serwera proxy.
+> Gdy parametr TelemetryProxyServer jest ustawiony w rejestrze lub za pośrednictwem zasady grupy, usługa Defender dla punktu końcowego powróci, nie będzie uzyskiwać dostępu do zdefiniowanego serwera proxy.
 
 ## <a name="related-articles"></a>Artykuły pokrewne
 
-- [Konfigurowanie zasady grupy zarządzanie plikami i zarządzanie nimi Program antywirusowy Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
-- [Urządzenia Windows urządzeniach](configure-endpoints.md)
-- [Rozwiązywanie Ochrona punktu końcowego w usłudze Microsoft Defender problemów z dołączaniem](troubleshoot-onboarding.md)
+- [Konfigurowanie Program antywirusowy Microsoft Defender i zarządzanie nimi przy użyciu ustawień zasady grupy](use-group-policy-microsoft-defender-antivirus.md)
+- [Dołączanie urządzeń Windows](configure-endpoints.md)
+- [Rozwiązywanie problemów z dołączaniem Ochrona punktu końcowego w usłudze Microsoft Defender](troubleshoot-onboarding.md)

@@ -1,6 +1,6 @@
 ---
-title: Wniesienie poprzednich wersji Windows na Ochrona punktu końcowego w usłudze Microsoft Defender
-description: Na pokładzie obsługiwane są poprzednie wersje Windows, dzięki czemu mogą one przesyłać dane czujnika do Ochrona punktu końcowego w usłudze Microsoft Defender urządzenia
+title: Dołączanie poprzednich wersji Windows na Ochrona punktu końcowego w usłudze Microsoft Defender
+description: Dołączanie obsługiwało poprzednie wersje urządzeń Windows, dzięki czemu mogą wysyłać dane czujnika do czujnika Ochrona punktu końcowego w usłudze Microsoft Defender
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,183 +14,187 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8fc3f86aa15a9fe54a410c869eb84b2b1ff79872
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 0cd1e0aa999200814639f24401bf019774ca1d43
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474514"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825217"
 ---
-# <a name="onboard-previous-versions-of-windows"></a>Wniesienie poprzednich wersji Windows
+# <a name="onboard-previous-versions-of-windows"></a>Dołącz poprzednią wersję systemu Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Dotyczy:**
-- [Ochrona punktu końcowego w usłudze Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platformy**
 
-- Windows 7 z dodatkiem SP1 Enterprise
-- Windows 7 z dodatkiem SP1 Pro
+- Windows 7 Enterprise SP1
+- Windows 7 Pro SP1
 - Windows 8.1 Pro
 - Windows 8.1 Enterprise
 - Windows Server 2008 R2 z dodatkiem SP1
 
-> Chcesz mieć dostęp do usługi Defender dla punktu końcowego? [Zarejestruj się, aby korzystać z bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
+> Chcesz poznać usługę Defender for Endpoint? [Utwórz konto bezpłatnej wersji próbnej.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
-Program Defender for Endpoint rozszerza obsługę, zapewniając zaawansowane funkcje wykrywania ataków i badania na obsługiwanych Windows wersjach.
+Usługa Defender for Endpoint rozszerza obsługę o systemy operacyjne niższego poziomu, zapewniając zaawansowane funkcje wykrywania ataków i badania w obsługiwanych wersjach Windows.
 
-Aby do usługi Defender for Endpoint Windows punktów końcowych klienta, musisz:
+Aby dołączyć punkty końcowe klienta Windows niższego poziomu do usługi Defender for Endpoint, należy wykonać następujące czynności:
 
-- [Konfigurowanie i aktualizowanie System Center Endpoint Protection klienta](#configure-and-update-system-center-endpoint-protection-clients)
-- [Instalowanie i konfigurowanie Microsoft Monitoring Agent MMA w celu zgłaszania danych czujnika](#install-and-configure-microsoft-monitoring-agent-mma)
+- [Konfigurowanie i aktualizowanie klientów System Center Endpoint Protection](#configure-and-update-system-center-endpoint-protection-clients)
+- [Instalowanie i konfigurowanie Microsoft Monitoring Agent (MMA) do raportowania danych czujnika](#install-and-configure-microsoft-monitoring-agent-mma)
 
-W Windows Server 2008 R2 z dodatkiem SP1 można dołączać do programu [Microsoft Defender dla Chmury](#onboard-windows-servers-through-microsoft-defender-for-cloud).
+W przypadku Windows Server 2008 R2 z dodatkiem SP1 można [dołączyć do Microsoft Defender dla Chmury](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> Aby serwer programu Defender dla punktu końcowego był w trybie Microsoft Monitoring Agent w węźle, wymagana jest Windows serwera poczty e-mail (opcja 1). Ewentualnie wymagana jest licencja usługi Microsoft Defender for servers na każdy węzeł, aby można było w onboardować serwer programu Windows za pośrednictwem programu Microsoft Defender dla Chmury (opcja 2), zobacz Obsługiwane funkcje dostępne w programie [Microsoft Defender dla Chmury](/azure/security-center/security-center-services).
+> Aby dołączyć serwer Windows za pośrednictwem Microsoft Monitoring Agent (opcja 1) wymagana jest licencja autonomicznego serwera usługi Defender for Endpoint dla każdego węzła. Alternatywnie wymagana jest licencja usługi Microsoft Defender dla serwerów dla każdego węzła, aby dołączyć serwer Windows za pośrednictwem Microsoft Defender dla Chmury (opcja 2), zobacz [Obsługiwane funkcje dostępne w Microsoft Defender dla Chmury](/azure/security-center/security-center-services).
 
 > [!TIP]
-> Po włoceniu urządzenia możesz uruchomić test wykrywania w celu sprawdzenia, czy zostało ono poprawnie podłączone do usługi. Aby uzyskać więcej informacji, zobacz Uruchamianie testu wykrywania dla nowo [dodanego punktu końcowego programu Defender](run-detection-test.md).
+> Po dołączeniu urządzenia można uruchomić test wykrywania, aby sprawdzić, czy jest ono prawidłowo dołączone do usługi. Aby uzyskać więcej informacji, zobacz [Uruchamianie testu wykrywania w nowo dołączonym punkcie końcowym usługi Defender for Endpoint](run-detection-test.md).
 
-## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Konfigurowanie i aktualizowanie System Center Endpoint Protection klienta
+## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Konfigurowanie i aktualizowanie klientów System Center Endpoint Protection
 
 > [!IMPORTANT]
-> Ten krok jest wymagany tylko w przypadku, gdy Twoja organizacja System Center Endpoint Protection (SCEP).
+> Ten krok jest wymagany tylko wtedy, gdy organizacja używa System Center Endpoint Protection (SCEP).
 
-Program Defender for Endpoint jest zintegrowany z programem System Center Endpoint Protection w celu zapewnienia widoczności wykrywaniu złośliwego oprogramowania i zatrzymania propagacji ataków w organizacji przez zablokowanie potencjalnie złośliwych plików lub potencjalnego złośliwego oprogramowania.
+Usługa Defender for Endpoint integruje się z System Center Endpoint Protection, aby zapewnić wgląd w wykrywanie złośliwego oprogramowania i zatrzymać propagację ataku w organizacji, zakazując potencjalnie złośliwych plików lub podejrzewanego złośliwego oprogramowania.
 
 Aby włączyć tę integrację, wymagane są następujące kroki:
 
-- Instalowanie aktualizacji [platformy chroniącej przed złośliwym oprogramowaniem ze stycznia 2017 r. dla Endpoint Protection klientów](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
-- Konfigurowanie członkostwa klienta SCEP w usłudze Cloud Protection na poziomie **ustawienia Zaawansowane**
-- Skonfiguruj sieć, aby zezwalać na połączenia z chmurą Program antywirusowy Microsoft Defender sieci. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i sprawdzanie poprawności Program antywirusowy Microsoft Defender sieciowych.](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
+- Instalowanie [aktualizacji platformy chroniącej przed złośliwym oprogramowaniem ze stycznia 2017 r. dla klientów Endpoint Protection](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
+- Konfigurowanie członkostwa klienta SCEP w usłudze Cloud Protection w ustawieniu **Zaawansowanym**
+- Skonfiguruj sieć tak, aby zezwalała na połączenia z chmurą Program antywirusowy Microsoft Defender. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i weryfikowanie połączeń sieciowych Program antywirusowy Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Instalowanie i konfigurowanie Microsoft Monitoring Agent (MMA)
 
 ### <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Przejrzyj poniższe informacje, aby sprawdzić minimalne wymagania systemowe:
+Przejrzyj następujące szczegóły, aby sprawdzić minimalne wymagania systemowe:
 
-- Instalowanie pakietu zb. aktualizacji miesięcznej z lutego [2018 r.](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- Instalowanie [miesięcznego pakietu zbiorczego aktualizacji z lutego 2018 r.](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 
   > [!NOTE]
-  > Dotyczy tylko Windows Server 2008 R2, Windows 7 SP1 Enterprise i Windows 7 SP1 Pro.
+  > Dotyczy tylko Windows Server 2008 R2, Windows 7 z dodatkiem SP1 Enterprise i Windows 7 Pro SP1.
 
-- Instalowanie aktualizacji [w celu obsługi klienta i telemetrii diagnostycznej](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+- Instalowanie [aktualizacji środowiska klienta i danych telemetrycznych diagnostycznych](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
-- Instalowanie programu [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (lub nowszego) albo [aktualizacji KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+- Zainstaluj program [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (lub nowszy) lub [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
     > [!NOTE]
-    > Dotyczy tylko Windows Server 2008 R2, Windows 7 SP1 Enterprise i Windows 7 SP1 Pro.
+    > Dotyczy tylko Windows Server 2008 R2, Windows 7 z dodatkiem SP1 Enterprise i Windows 7 Pro SP1.
     >
-    > Nie instaluj .NET Framework 4.0.x, ponieważ spowoduje to negatywę powyższej instalacji.
+    > Nie instaluj .NET Framework 4.0.x, ponieważ spowoduje to zanegonie powyższej instalacji.
     >
-    > Instalacja programu .NET 4.5 może wymagać ponownego uruchomienia komputera po instalacji.
+    > Instalacja platformy .NET 4.5 może wymagać ponownego uruchomienia komputera po instalacji.
 
-- Spełnia minimalne wymagania systemowe agenta usługi Azure Log Analytics. Aby uzyskać więcej informacji, zobacz [Zbieranie danych z komputerów w środowisku za pomocą analizy dziennika](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites).
+- Spełnianie minimalnych wymagań systemowych agenta usługi Azure Log Analytics. Aby uzyskać więcej informacji, zobacz [Zbieranie danych z komputerów w środowisku za pomocą usługi Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
 ### <a name="installation-steps"></a>Kroki instalacji
 
-1. Pobierz plik konfiguracji agenta: [Windows 64-bitowy](https://go.microsoft.com/fwlink/?LinkId=828603) lub Windows [32-bitowy agent](https://go.microsoft.com/fwlink/?LinkId=828604).
+1. Pobierz plik konfiguracji agenta: [Windows agenta 64-bitowego](https://go.microsoft.com/fwlink/?LinkId=828603) lub [agenta 32-bitowego Windows](https://go.microsoft.com/fwlink/?LinkId=828604).
+
+    >[!NOTE]
+    >Z powodu [wycofania obsługi SHA-1 przez agenta MMA](/azure/azure-monitor/agents/agent-windows#sha-2-code-signing-support-requirement) agent mma musi mieć wersję 10.20.18029 lub nowszą.
+    
 
 2. Uzyskaj identyfikator obszaru roboczego:
-   - W okienku nawigacji programu Defender for Endpoint wybierz pozycję Ustawienia > **Zarządzanie urządzeniami > dołączanie**
+   - W okienku nawigacji usługi Defender for Endpoint wybierz pozycję **Ustawienia > Zarządzanie urządzeniami > dołączanie**
    - Wybieranie systemu operacyjnego
-   - Kopiowanie identyfikatora obszaru roboczego i klawisza obszaru roboczego
+   - Kopiowanie identyfikatora obszaru roboczego i klucza obszaru roboczego
 
-3. Za pomocą klawiszy Identyfikator obszaru roboczego i Obszar roboczy wybierz dowolną z następujących metod instalacji, aby zainstalować agenta:
-    - [Ręcznie zainstaluj agenta przy użyciu konfiguracji](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard).
+3. Korzystając z identyfikatora obszaru roboczego i klucza obszaru roboczego, wybierz dowolną z następujących metod instalacji, aby zainstalować agenta:
+    - [Ręcznie zainstaluj agenta przy użyciu instalatora](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard).
 
-      Na stronie **Opcje konfiguracji agenta** wybierz pozycję **Połączenie do usługi Azure Log Analytics (OMS)**
+      Na stronie **Opcje instalacji agenta** wybierz **pozycję Połączenie agenta do usługi Azure Log Analytics (OMS)**
 
-    - [Zainstaluj agenta za pomocą wiersza polecenia](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
+    - [Zainstaluj agenta przy użyciu wiersza polecenia](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
     - [Skonfiguruj agenta przy użyciu skryptu](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
 
    > [!NOTE]
-   > Jeśli jesteś klientem administracji państwowej Stanów [Zjednoczonych, w](gov.md) obszarze "Azure Cloud" musisz wybrać pozycję "Azure US Government" (Platforma Azure dla instytucji rządowych Stanów Zjednoczonych) w przypadku korzystania z kreatora konfiguracji, a jeśli używasz wiersza polecenia lub skryptu — ustaw parametr "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" na 1.
+   > Jeśli jesteś [klientem rządowym USA](gov.md), w obszarze "Azure Cloud" musisz wybrać opcję "Azure US Government", jeśli używasz kreatora konfiguracji lub jeśli używasz wiersza polecenia lub skryptu — ustaw parametr "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" na 1.
 
-4. Jeśli łączysz się z Internetem za pomocą serwera proxy, zobacz sekcję Konfigurowanie ustawień serwera proxy i łączności internetowej.
+4. Jeśli używasz serwera proxy do nawiązywania połączenia z Internetem, zobacz sekcję Konfigurowanie ustawień serwera proxy i łączności z Internetem.
 
-Po ukończeniu w ciągu godziny w portalu powinny zostać zobaczyć punktu końcowe wnosone.
+Po zakończeniu powinny zostać wyświetlone dołączone punkty końcowe w portalu w ciągu godziny.
 
-## <a name="configure-proxy-and-internet-connectivity-settings"></a>Konfigurowanie ustawień serwera proxy i łączności internetowej
-Jeśli serwery muszą korzystać z serwera proxy do komunikacji z usługą Defender for Endpoint, użyj jednej z następujących metod, aby skonfigurować mma do używania serwera proxy:
+## <a name="configure-proxy-and-internet-connectivity-settings"></a>Konfiguruj ustawienia serwera proxy i połączenia internetowego
+Jeśli serwery muszą używać serwera proxy do komunikowania się z usługą Defender for Endpoint, użyj jednej z następujących metod, aby skonfigurować mma do korzystania z serwera proxy:
 
-- [Konfigurowanie usługi MMA do używania serwera proxy](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
+- [Konfigurowanie mma do korzystania z serwera proxy](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
 
-- [Konfigurowanie Windows używania serwera proxy dla wszystkich połączeń](configure-proxy-internet.md)
+- [Konfigurowanie Windows do używania serwera proxy dla wszystkich połączeń](configure-proxy-internet.md)
 
-Jeśli serwer proxy lub zapora są w użyciu, upewnij się, że serwery mają bezpośredni dostęp do wszystkich adresów URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender bez przecięcia SSL. Aby uzyskać więcej informacji, zobacz [Włączanie dostępu do usługi Defender dla adresów URL usługi punktu końcowego](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Użycie punktu przecięcia SSL uniemożliwia systemowi komunikowanie się z usługą Defender for Endpoint.
+Jeśli serwer proxy lub zapora są używane, upewnij się, że serwery mogą uzyskiwać dostęp do wszystkich adresów URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender bezpośrednio i bez przechwytywania protokołu SSL. Aby uzyskać więcej informacji, zobacz [Włączanie dostępu do adresów URL usługi Defender for Endpoint](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Użycie przechwytywania protokołu SSL uniemożliwi systemowi komunikowanie się z usługą Defender for Endpoint.
 
-Po zakończeniu w portalu powinny być Windows w portalu w ciągu godziny.
+Po zakończeniu w ciągu godziny powinny zostać wyświetlone dołączone serwery Windows w portalu.
 
-## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Na tych Windows serwerach za pośrednictwem Microsoft Defender dla Chmury
+## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Dołączanie serwerów Windows za pośrednictwem Microsoft Defender dla Chmury
 
-1. W okienku Microsoft 365 Defender nawigacji wybierz pozycję **Ustawienia** >  **Device** **managementOnboarding** >  (Zarządzanie urządzeniami).
+1. W okienku nawigacji Microsoft 365 Defender wybierz pozycję **Ustawienia** >  **Device** **managementOnboarding** > .
 
-2. Wybierz **Windows Windows Server 2008 R2 z dodatkiem SP1** jako system operacyjny.
+2. Wybierz **pozycję Windows Server 2008 R2 SP1** jako system operacyjny.
 
-3. Kliknij **pozycję Onboard Servers (Serwery Microsoft Defender dla Chmury**).
+3. Kliknij **pozycję Dołączanie serwerów w Microsoft Defender dla Chmury**.
 
-4. Postępuj zgodnie z instrukcjami dotyczącymi dołączania Ochrona punktu końcowego w usłudze Microsoft Defender z programem [Microsoft Defender dla Chmury](/azure/security-center/security-center-wdatp) oraz Jeśli korzystasz z funkcji Azure ARC, postępuj zgodnie z instrukcjami dotyczącymi dołączania: [Włączanie Ochrona punktu końcowego w usłudze Microsoft Defender integracji](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+4. Postępuj zgodnie z instrukcjami dołączania w [Ochrona punktu końcowego w usłudze Microsoft Defender z Microsoft Defender dla Chmury](/azure/security-center/security-center-wdatp) i Jeśli używasz usługi Azure ARC, postępuj zgodnie z instrukcjami dotyczącymi [dołączania w temacie Włączanie integracja Ochrona punktu końcowego w usłudze Microsoft Defender](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
-Po wykonaniu kroków dołączania musisz skonfigurować i zaktualizować System Center Endpoint Protection [klientów](#configure-and-update-system-center-endpoint-protection-clients).
+Po wykonaniu kroków dołączania należy [skonfigurować i zaktualizować System Center Endpoint Protection klientów](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
 >
-> - Aby zapewnić przewidywaną pracę podczas dołączania serwerów za pośrednictwem programu Microsoft Defender, serwer musi mieć skonfigurowany odpowiedni obszar roboczy i klucz w ustawieniach programu Microsoft Monitoring Agent (MMA).
-> - Po skonfigurowaniu na komputerze wdrożony zostanie odpowiedni pakiet administracyjny w chmurze, a proces czujnika (MsSenseS.exe) zostanie wdrożony i uruchomiony.
+> - Aby dołączanie za pośrednictwem usługi Microsoft Defender dla serwerów działało zgodnie z oczekiwaniami, serwer musi mieć odpowiedni obszar roboczy i klucz skonfigurowany w ustawieniach Microsoft Monitoring Agent (MMA).
+> - Po skonfigurowaniu na maszynie zostanie wdrożony odpowiedni pakiet administracyjny w chmurze, a proces czujnika (MsSenseS.exe) zostanie wdrożony i uruchomiony.
 > - Jest to również wymagane, jeśli serwer jest skonfigurowany do używania serwera bramy OMS jako serwera proxy.
 
 
 
-## <a name="verify-onboarding"></a>Weryfikuj dołączanie
+## <a name="verify-onboarding"></a>Weryfikowanie dołączania
 
-Sprawdź, czy program Microsoft Defender AV i Ochrona punktu końcowego w usłudze Microsoft Defender są uruchomione. 
+Sprawdź, czy usługa Microsoft Defender AV i Ochrona punktu końcowego w usłudze Microsoft Defender są uruchomione. 
 
 > [!NOTE]
-> Uruchomienie programu Microsoft Defender AV nie jest wymagane, ale jest zalecane. Jeśli głównym rozwiązaniem ochrony punktu końcowego jest inny produkt dostawcy oprogramowania antywirusowego, możesz uruchomić program antywirusowy Defender w trybie pasywnym. Można sprawdzić, czy tryb pasywny jest uruchomiony tylko po Ochrona punktu końcowego w usłudze Microsoft Defender czujnika (SENSE). 
+> Uruchamianie usługi Microsoft Defender AV nie jest wymagane, ale jest zalecane. Jeśli inny produkt dostawcy oprogramowania antywirusowego jest podstawowym rozwiązaniem ochrony punktu końcowego, możesz uruchomić program antywirusowy Defender w trybie pasywnym. Możesz tylko potwierdzić, że tryb pasywny jest włączony po sprawdzeniu, czy czujnik Ochrona punktu końcowego w usłudze Microsoft Defender (SENSE) jest uruchomiony. 
 
-1. Uruchom następujące polecenie, aby sprawdzić, czy program Microsoft Defender AV jest zainstalowany:
+1. Uruchom następujące polecenie, aby sprawdzić, czy zainstalowano usługę Microsoft Defender AV:
 
    ```sc.exe query Windefend```
 
-    Jeśli wynikiem jest to, że "Określona usługa nie istnieje jako zainstalowana usługa", musisz zainstalować program Microsoft Defender AV. Aby uzyskać więcej informacji, [zobacz Program antywirusowy Microsoft Defender w Windows 10](microsoft-defender-antivirus-windows.md).
+    Jeśli wynik to "Określona usługa nie istnieje jako zainstalowana usługa", musisz zainstalować usługę Microsoft Defender AV. Aby uzyskać więcej informacji, zobacz [Program antywirusowy Microsoft Defender w Windows 10](microsoft-defender-antivirus-windows.md).
 
-    Aby uzyskać informacje na temat konfigurowania zasady grupy sieci Program antywirusowy Microsoft Defender na serwerach Windows i zarządzania nimi, zobacz Konfigurowanie i zarządzanie przy użyciu zasady grupy sieci zasady grupy [ Program antywirusowy Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
+    Aby uzyskać informacje na temat sposobu używania zasady grupy do konfigurowania Program antywirusowy Microsoft Defender na serwerach Windows i zarządzania nimi, zobacz [Konfigurowanie i zarządzanie nimi za pomocą ustawień zasady grupy Program antywirusowy Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 
 
-2. Uruchom następujące polecenie, aby sprawdzić, czy Ochrona punktu końcowego w usłudze Microsoft Defender działa:
+2. Uruchom następujące polecenie, aby sprawdzić, czy Ochrona punktu końcowego w usłudze Microsoft Defender jest uruchomiona:
 
     ```sc.exe query sense```
     
-    Wynik powinien być pokazywany, że jest uruchomiony. Jeśli wystąpią problemy z dołączaniem, zobacz [Rozwiązywanie problemów z dołączaniem](troubleshoot-onboarding.md).
+    Wynik powinien pokazywać, że jest uruchomiony. Jeśli wystąpią problemy z dołączaniem, zobacz [Rozwiązywanie problemów z dołączaniem](troubleshoot-onboarding.md).
 
 ## <a name="run-a-detection-test"></a>Uruchamianie testu wykrywania
-Postępuj zgodnie z instrukcjami w teście uruchamiania wykrywania na nowo [wnosiowym](run-detection-test.md) urządzeniu, aby sprawdzić, czy serwer raportuje usługę Defender dla punktu końcowego.
+Wykonaj kroki opisane w [temacie Uruchamianie testu wykrywania na nowo dołączonym urządzeniu](run-detection-test.md) , aby sprawdzić, czy serwer raportuje do usługi Defender dla usługi Endpoint.
 
 
 
 
 
-## <a name="onboarding-endpoints-with-no-management-solution"></a>Punkty końcowe dołączania bez rozwiązania do zarządzania 
+## <a name="onboarding-endpoints-with-no-management-solution"></a>Dołączanie punktów końcowych bez rozwiązania do zarządzania 
 
 ### <a name="using-group-policy"></a>Korzystanie z zasady grupy
 
-**Krok 1. Pobieranie odpowiedniej witryny udpate dla punktu końcowego.**
+**Krok 1. Pobieranie odpowiedniego interfejsu użytkownika dla punktu końcowego.**
 
-1. Przejdź do folderu c:\windows\sysvol\domain\scripts (kontrolka zmiany może być potrzebna w jednym z kontrolerów domeny).
+1. Przejdź do folderu c:\windows\sysvol\domain\scripts (może być wymagana kontrola zmiany na jednym z kontrolerów domeny).
 1. Utwórz folder o nazwie MMA.
 1. Pobierz następujące elementy i umieść je w folderze MMA:
    
-    - Aktualizacja do obsługi klienta i telemetrii diagnostycznej:
+    - Aktualizacja środowiska klienta i danych telemetrycznych diagnostycznych:
       - [Dla Windows Server 2008 R2 x64](https://www.microsoft.com/download/details.aspx?familyid=1bd1d18d-4631-4d8e-a897-327925765f71)
      
-    W Windows Server 2008 R2 z dodatkiem SP1 są również wymagane następujące aktualizacje:
+    W przypadku Windows Server 2008 R2 z dodatkiem SP1 wymagane są również następujące aktualizacje:
 
-    Aktualizacja miesięczna z lutego 2018 r. — KB4074598 (Windows Server 2008 R2)
+    Zestawienie miesięczne z lutego 2018 r. — KB4074598 (Windows Server 2008 R2)
 
     [Wykaz usługi Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)<br>
     Pobieranie aktualizacji dla Windows Server 2008 R2 x64
@@ -199,14 +203,14 @@ Postępuj zgodnie z instrukcjami w teście uruchamiania wykrywania na nowo [wnos
     [Dla Windows Server 2008 R2 x64](https://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
     
     >[!NOTE]
-    > W tym artykule założono, że używasz serwerów opartych na standardzie x64 (agent MMA .exe wersji zgodnej z sha-2 x64).
+    > W tym artykule przyjęto założenie, że używasz serwerów opartych na systemie x64 (agent MMA .exe x64 Nowa wersja zgodna ze standardem SHA-2).
 
 
-**Krok 2. Tworzenie nazwy pliku DeployMMA.cmd (przy użyciu notatnika)** Dodaj następujące wiersze do pliku cmd. Pamiętaj, że potrzebujesz identyfikatora OBSZARU ROBOCZEGO i KLUCZA.
+**Krok 2. Tworzenie nazwy pliku DeployMMA.cmd (przy użyciu Notatnika)** Dodaj następujące wiersze do pliku cmd. Należy pamiętać, że będziesz potrzebować identyfikatora obszaru roboczego i klucza.
 
-Poniżej przedstawiono przykładowe polecenie. Zamień następujące wartości:
-- KB — użyj odpowiedniej bazy wiedzy dotyczącej punktu końcowego, który dołączasz
-- Identyfikator obszaru roboczego i klucz — używanie identyfikatora i klucza
+Poniższe polecenie jest przykładem. Zastąp następujące wartości:
+- KB — użyj odpowiedniej bazy wiedzy odpowiedniej dla dołączanego punktu końcowego
+- Identyfikator obszaru roboczego i klucz — użyj identyfikatora i klucza
 
 
 ```dos
@@ -232,103 +236,103 @@ OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
 
 
-### <a name="group-policy-configuration"></a>zasady grupy konfiguracji
+### <a name="group-policy-configuration"></a>konfiguracja zasady grupy
 
-Utwórz nowe zasady grupy przeznaczone specjalnie dla urządzeń dołączających, takie jak "Ochrona punktu końcowego w usłudze Microsoft Defender dołączanie".
+Utwórz nowe zasady grupy przeznaczone specjalnie do dołączania urządzeń, takich jak "Ochrona punktu końcowego w usłudze Microsoft Defender dołączanie".
 
-- Tworzenie zasady grupy o nazwie "c:\windows\MMA"
+- Tworzenie folderu zasady grupy o nazwie "c:\windows\MMA"
 
      :::image type="content" source="images/grppolicyconfig1.png" alt-text="Lokalizacja folderów" lightbox="images/grppolicyconfig1.png":::
 
-    **Spowoduje to dodanie nowego folderu na każdym serwerze, na którym będzie zastosowany serwer GPO o nazwie MMA, i będzie przechowywany w folderze c:\windows. Będzie to dotyczyć plików instalacyjnych do obsługi wiadomości MMA, wymagań wstępnych i skryptu instalacji.**
+    **Spowoduje to dodanie nowego folderu na każdym serwerze, który pobiera zastosowany obiekt zasad grupy o nazwie MMA i będzie przechowywany w c:\windows. Będzie on zawierać pliki instalacyjne programu MMA, wymagania wstępne i skrypt instalacji.**
 
-- Utwórz preferencję zasady grupy pliki dla każdego pliku przechowywanego w logiie net.
+- Utwórz preferencję zasady grupy Files dla każdego z plików przechowywanych w logowaniu do sieci.
 
      :::image type="content" source="images/grppolicyconfig2.png" alt-text="Zasady grupy — 1" lightbox="images/grppolicyconfig2.png":::
 
-Kopiuje ona pliki z domeny\NETLOGON\MMA\nazwa_pliku do C:\windows\MMA\nazwa_pliku, więc pliki instalacyjne są lokalne **na serwerze**:
+Kopiuje pliki z DOMENY\NETLOGON\MMA\filename do C:\windows\MMA\filename - **więc pliki instalacyjne są lokalne na serwerze**:
 
-:::image type="content" source="images/deploymma.png" alt-text="Właściwości polecenia cmd w programie Mma" lightbox="images/deploymma.png":::
+:::image type="content" source="images/deploymma.png" alt-text="Deploy mma cmd properties (Wdrażanie właściwości cmd mma)" lightbox="images/deploymma.png":::
 
-Powtórz ten proces, ale utwórz element docelowy na karcie COMMON, więc plik zostanie skopiowany tylko do odpowiedniej platformy/systemu operacyjnego w zakresie:
+Powtórz proces, ale utwórz określanie wartości docelowej na poziomie elementu na karcie COMMON, więc plik zostanie skopiowany tylko do odpowiedniej wersji platformy/systemu operacyjnego w zakresie:
 
 :::image type="content" source="images/targeteditor.png" alt-text="Edytor docelowy" lightbox="images/targeteditor.png":::
 
-W Windows Server 2008 R2 potrzebujesz (a następnie skopiuje tylko) następujące elementy:
+W przypadku Windows Server 2008 R2 będziesz potrzebować (i będzie on kopiować tylko w dół) następujące elementy:
 - Windows6.1-KB3080149-x64.msu
 - Windows6.1-KB3154518-x64.msu
 - Windows6.1-KB4075598-x64.msu
 
 
-Gdy to zrobisz, musisz utworzyć zasady skryptu uruchamiania:
+Po zakończeniu należy utworzyć zasady skryptu uruchamiania:
 
 :::image type="content" source="images/startupprops.png" alt-text="Właściwości uruchamiania" lightbox="images/startupprops.png":::
 
-Nazwa pliku, który ma zostać uruchomiony w tym miejscu, to c:\windows\MMA\DeployMMA.cmd.
-Po ponownym uruchomieniu serwera w ramach procesu uruchamiania zainstaluje aktualizację kb do obsługi klienta i telemetrii diagnostycznej, a następnie zainstaluje agenta MMA, ustawiając identyfikator obszaru roboczego i klucz, a serwer zostanie uruchomiony.
+Nazwa pliku do uruchomienia w tym miejscu to c:\windows\MMA\DeployMMA.cmd.
+Po ponownym uruchomieniu serwera w ramach procesu uruchamiania zainstaluje on aktualizację środowiska klienta i telemetrię diagnostyczną KB, a następnie zainstaluje agenta MMA podczas ustawiania identyfikatora obszaru roboczego i klucza, a serwer zostanie dołączony.
 
-Jeśli nie chcesz **ponownie uruchamiać** wszystkich serwerów, możesz także użyć natychmiastowego zadania w celu uruchomienia wdrożenia poleceniaMMA.cmd.
+Możesz również użyć **natychmiastowego zadania** , aby uruchomić plik deployMMA.cmd, jeśli nie chcesz ponownie uruchamiać wszystkich serwerów.
 
-Można to zrobić w dwóch fazach. Najpierw utwórz **pliki i folder** w zakładzie zasad grupy — uślij czas systemowy na zastosowanie zasad grupy, a wszystkie serwery mają pliki instalacji. Następnie dodaj natychmiastowe zadanie. Dzięki temu taki sam wynik będzie taki sam bez konieczności ponownego rozruchu.
+Można to zrobić w dwóch fazach. Najpierw utwórz **pliki i folder w obiekcie** zasad grupy — daj systemowi czas na upewnienie się, że obiekt zasad grupy został zastosowany, a wszystkie serwery mają pliki instalacyjne. Następnie dodaj zadanie natychmiastowe. Spowoduje to osiągnięcie tego samego wyniku bez konieczności ponownego uruchamiania.
 
-Ponieważ skrypt ma metodę wyjścia i nie można go ponownie uruchomić, jeśli program MMA jest zainstalowany, ten sam wynik możesz także uzyskać za pomocą zaplanowanego dziennego zadania. Podobnie jak w Configuration Manager zgodności sprawdza ona codziennie w celu zapewnienia, że dane MMA są obecne.
+Ponieważ skrypt ma metodę zakończenia i nie będzie uruchamiany ponownie, jeśli jest zainstalowany program MMA, możesz również użyć zaplanowanego zadania codziennego, aby osiągnąć ten sam wynik. Podobnie jak w przypadku zasad zgodności Configuration Manager będzie codziennie sprawdzana, aby upewnić się, że mma jest obecny.
 
 :::image type="content" source="images/schtask.png" alt-text="zaplanuj zadanie" lightbox="images/schtask.png":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="Nowe właściwości zadania" lightbox="images/newtaskprops.png":::
+:::image type="content" source="images/newtaskprops.png" alt-text="Właściwości nowego zadania" lightbox="images/newtaskprops.png":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="Właściwości wdrażania pobierania mma" lightbox="images/deploymmadowmload.png":::
+:::image type="content" source="images/deploymmadowmload.png" alt-text="Wdrażanie właściwości pobierania mma" lightbox="images/deploymmadowmload.png":::
 
 :::image type="content" source="images/tasksch.png" alt-text="Harmonogram zadań" lightbox="images/tasksch.png":::
 
-Jak wspomniano w dokumentacji dotyczącej dołączania do programu Server konkretnie wokół programu Server 2008 R2, zobacz poniżej: W przypadku programu Windows Server 2008 R2 z dodatkiem SP1 upewnij się, że spełniasz następujące wymagania:
+Jak wspomniano w dokumentacji dołączania do serwera w szczególności wokół serwera 2008 R2, zobacz poniżej: Aby uzyskać Windows Server 2008 R2 SP1, upewnij się, że spełniasz następujące wymagania:
 
-- Instalowanie pakietu zb. aktualizacji miesięcznej z lutego [2018 r.](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-- Instalowanie programu [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (lub nowszego) albo [aktualizacji KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+- Instalowanie [miesięcznego pakietu zbiorczego aktualizacji z lutego 2018 r.](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- Zainstaluj program [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (lub nowszy) lub [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
-Sprawdź, czy kb/s są obecne przed rozpoczęciem Windows Server 2008 R2. Ten proces umożliwia Ci włocie wszystkich serwerów, jeśli nie masz dostępu do zarządzania Configuration Manager Serwerami.
+Sprawdź, czy bazy danych są obecne przed dołączeniem Windows Server 2008 R2. Ten proces umożliwia dołączenie wszystkich serwerów, jeśli nie masz Configuration Manager zarządzania serwerami.
 
 
-## <a name="offboard-endpoints"></a>Punkty końcowe aplikacji Offboard
+## <a name="offboard-endpoints"></a>Odłączanie punktów końcowych
 
-Dostępne są dwie opcje Windows punktów końcowych z usługi:
+Dostępne są dwie opcje odłączania punktów końcowych Windows z usługi:
 
 - Odinstalowywanie agenta MMA
-- Usuwanie konfiguracji obszaru roboczego programu Defender for Endpoint
+- Usuwanie konfiguracji obszaru roboczego usługi Defender for Endpoint
 
 > [!NOTE]
-> Wynoszenie powoduje, Windows punkt końcowy przestaje wysyłać dane czujnika do portalu, ale dane z tego punktu końcowego, w tym odwołania do wszelkich posiadanych alertów, będą przechowywane przez maksymalnie 6 miesięcy.
+> Odłączanie powoduje, że punkt końcowy Windows przestaje wysyłać dane czujników do portalu, ale dane z punktu końcowego, w tym odwołania do wszelkich alertów, które miał, zostaną zachowane przez maksymalnie 6 miesięcy.
 
 ### <a name="uninstall-the-mma-agent"></a>Odinstalowywanie agenta MMA
 
-Aby usunąć punkt Windows punkt końcowy, możesz odinstalować agenta MMA lub odłączyć go od raportowania w obszarze roboczym programu Defender for Endpoint. Po wy dostępie do agenta punkt końcowy nie będzie już przesyłał danych czujnika do usługi Defender for Endpoint.
+Aby odłączyć punkt końcowy Windows, możesz odinstalować agenta MMA lub odłączyć go od raportowania do obszaru roboczego usługi Defender for Endpoint. Po odłączeniu agenta punkt końcowy nie będzie już wysyłać danych czujnika do usługi Defender for Endpoint.
 Aby uzyskać więcej informacji, zobacz [Aby wyłączyć agenta](/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
 
-### <a name="remove-the-defender-for-endpoint-workspace-configuration"></a>Usuwanie konfiguracji obszaru roboczego programu Defender for Endpoint
+### <a name="remove-the-defender-for-endpoint-workspace-configuration"></a>Usuwanie konfiguracji obszaru roboczego usługi Defender for Endpoint
 
 Możesz użyć jednej z następujących metod:
 
-- Usuwanie konfiguracji obszaru roboczego programu Defender for Endpoint z agenta MMA
-- Uruchamianie polecenia programu PowerShell w celu usunięcia konfiguracji
+- Usuwanie konfiguracji obszaru roboczego usługi Defender for Endpoint z agenta MMA
+- Uruchom polecenie programu PowerShell, aby usunąć konfigurację
 
-#### <a name="remove-the-defender-for-endpoint-workspace-configuration-from-the-mma-agent"></a>Usuwanie konfiguracji obszaru roboczego programu Defender for Endpoint z agenta MMA
+#### <a name="remove-the-defender-for-endpoint-workspace-configuration-from-the-mma-agent"></a>Usuwanie konfiguracji obszaru roboczego usługi Defender for Endpoint z agenta MMA
 
-1. W **oknie Microsoft Monitoring Agent** wybierz **kartę Azure Log Analytics (OMS**).
+1. Na **Microsoft Monitoring Agent Właściwości** wybierz kartę **Azure Log Analytics (OMS**).
 
 2. Wybierz obszar roboczy Defender for Endpoint i kliknij pozycję **Usuń**.
 
     :::image type="content" source="images/atp-mma.png" alt-text="Okienko Obszary robocze" lightbox="images/atp-mma.png":::
 
-#### <a name="run-a-powershell-command-to-remove-the-configuration"></a>Uruchamianie polecenia programu PowerShell w celu usunięcia konfiguracji
+#### <a name="run-a-powershell-command-to-remove-the-configuration"></a>Uruchom polecenie programu PowerShell, aby usunąć konfigurację
 
-1. Uzyskaj identyfikator obszaru roboczego:
+1. Pobierz identyfikator obszaru roboczego:
 
    1. W okienku nawigacji wybierz pozycję **Ustawienia** >  **Onboarding**.
 
    1. Wybierz odpowiedni system operacyjny i uzyskaj identyfikator obszaru roboczego.
 
     
-2. Otwórz program PowerShell o podwyższonym poziomie uprawnień i uruchom następujące polecenie. Użyj uzyskanego identyfikatora obszaru roboczego i zastąpienia go `WorkspaceID`:
+2. Otwórz program PowerShell z podwyższonym poziomem uprawnień i uruchom następujące polecenie. Użyj uzyskanego identyfikatora obszaru roboczego i zastąp element `WorkspaceID`:
 
     ```   
     $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg

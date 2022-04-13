@@ -1,5 +1,5 @@
 ---
-title: Omówienie Microsoft 365 Lighthouse dzierżaw
+title: Omówienie strony dzierżaw Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,92 +15,92 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Aby uzyskać informacje na temat dostawców usług zarządzanych (MSP) używających Microsoft 365 Lighthouse, dowiedz się więcej o stronie Dzierżawy.
-ms.openlocfilehash: 23f151664455c35bb2fcc191d774ead00927e830
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: W przypadku dostawców usług zarządzanych korzystających z Microsoft 365 Lighthouse zapoznaj się ze stroną Dzierżawy.
+ms.openlocfilehash: 44111d62a9b8df9bf3b05ddbaa9cb4f3937159a4
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329995"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823526"
 ---
-# <a name="microsoft-365-lighthouse-tenants-page-overview"></a>Omówienie Microsoft 365 Lighthouse dzierżaw
+# <a name="microsoft-365-lighthouse-tenants-page-overview"></a>Omówienie strony dzierżaw Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse umożliwia zarządzanie kontami dzierżawy, wybierając pozycję **Dzierżawy** w lewym okienku nawigacji, aby otworzyć stronę Dzierżawy. Strona Dzierżawy zawiera listę wszystkich Twoich dzierżaw. Możesz wybrać dzierżawę, aby wyświetlić szczegółowe informacje, takie jak szczegóły kontaktu i stan wdrożenia.
+Microsoft 365 Lighthouse umożliwia zarządzanie kontami dzierżaw, wybierając pozycję **Dzierżawy** w okienku nawigacji po lewej stronie, aby otworzyć stronę Dzierżawy. Strona Dzierżawy zawiera listę wszystkich dzierżaw. Możesz wybrać dzierżawę, aby wyświetlić szczegółowe informacje, w tym szczegóły kontaktu i stan wdrożenia.
 
-Na stronie Dzierżawy znajdują się również następujące opcje:
+Strona Dzierżawy zawiera również następujące opcje:
 
-- **Eksportowanie:** Zaznacz, aby wyeksportować dane dzierżawy Excel pliku wartości rozdzielanych przecinkami (.csv).
-- **Zarządzanie tagami:** Wybierz, aby dodać, edytować lub usunąć tag.
+- **Eksportu:** Wybierz, aby wyeksportować dane dzierżawy do pliku Excel wartości rozdzielanych przecinkami (.csv).
+- **Zarządzaj tagami:** Wybierz, aby dodać, edytować lub usunąć tag.
 - **Przypisz tagi:** Wybierz, aby przypisać tag do dzierżawy.
-- **Wyszukiwanie:** Wprowadź słowa kluczowe, aby szybko znaleźć konkretną dzierżawę na liście.
+- **Szukaj:** Wprowadź słowa kluczowe, aby szybko zlokalizować określoną dzierżawę na liście.
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Zrzut ekranu przedstawiający stronę Dzierżawa.":::
 
 ## <a name="tenant-list"></a>Lista dzierżaw
 
-Lista dzierżaw udostępnia szczegółowe informacje o różnych dzierżawach, z których masz umowę, w tym o stanie dołączania do latarni lighthouse dzierżawy. Lista dzierżaw umożliwia również oznaczanie dzierżaw w celu zapewnienia różnych filtrów w latarni morskiej i przechodzenie do szczegółów, aby dowiedzieć się więcej o danej dzierżawie i stanie jej planu wdrażania.
+Lista dzierżaw zawiera szczegółowe informacje na temat różnych dzierżaw, z których masz umowę, w tym ich stan dołączania do usługi Lighthouse dzierżawy. Lista dzierżaw umożliwia również tagowanie dzierżaw w celu zapewnienia różnych filtrów w całej usłudze Lighthouse oraz przechodzenie do szczegółów, aby dowiedzieć się więcej o danej dzierżawie i stanie jej planu wdrożenia.
 
-Gdy dzierżawcy spełnią wymagania dotyczące dołączania do latarni [lighthouse](m365-lighthouse-requirements.md), jej stan będzie miał status **Aktywny na liście** dzierżawy.
+Gdy dzierżawcy spełnią [wymagania dotyczące dołączania do usługi Lighthouse](m365-lighthouse-requirements.md), jego stan będzie wyświetlany jako **Aktywny** na liście dzierżaw.
 
 Lista dzierżaw umożliwia:
 
-- Automatyczne sortowanie dzierżaw według aktywnych, nieaktywnych i nieuklasyfikujących.
+- Automatycznie sortuj dzierżawy według aktywnych, nieaktywnych i niekwalifikujących się.
 - Wyeksportuj listę dzierżaw.
 - Przypisywanie tagów i zarządzanie nimi.
 - Wyszukaj dzierżawy według nazwy.
 - Filtruj dzierżawy według stanu, delegowanego uprawnienia administracyjnego (DAP) i tagów.
 
-Aby dezaktywować dzierżawę lub wyświetlić tagi i zarządzać nimi, wybierz trzy kropki (więcej akcji) obok nazwy dzierżawy. Możesz wyświetlić poszczególnych dzierżaw, wybierając nazwę dzierżawy lub wybierając jeden z tagów przypisanych do dzierżawy.
+Aby uaktywnić dzierżawę lub wyświetlić tagi i zarządzać nimi, wybierz trzy kropki (więcej akcji) obok nazwy dzierżawy. Poszczególne dzierżawy można wyświetlić, wybierając nazwę dzierżawy lub wybierając jeden z tagów przypisanych do dzierżawy.
 
 ## <a name="tenant-status"></a>Stan dzierżawy
 
-W poniższej tabeli przedstawiono różne statusy i ich znaczenie.<br><br>
+W poniższej tabeli przedstawiono różne stany i ich znaczenie.<br><br>
 
 | Stan                                   | Opis                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Aktywny                                   | Rozpoczęto dołączanie do dzierżawy i przepływ danych.                                                           |
-| Nieaktywny                                 | Dzierżawa została wyłączona na żądanie usługi MSP i nie jest już zarządzana w latarni morskiej.           |
-| W trakcie procesu                               | Dzierżawa została wykryta, ale nie została w pełni wyedytowana.                                                              |
-| Nieuprawniany — nie jest jeszcze skonfigurować protokołu DAP lub GDAP    | Partner musi mieć delegowane (DAP) lub poziome uprawnienia administratora (GDAP) delegowane na poziomie dzierżawy. |
-| Nieukwalifikowana — brakuje wymaganej licencji | Dzierżawa nie ma wymaganej licencji.                                                               |
-| Bez uprawnienia — przekroczono liczbę użytkowników         | Dzierżawa ma więcej użytkowników niż jest dozwolonych.                                                                     |
-| Nieukwalifikowane — sprawdzenie geolokalizacji nie powiodło się            | Partner i klient muszą znajdować się w tej samej lokalizacji geograficznej.                                       |
+| Aktywny                                   | Rozpoczęto dołączanie dzierżawy i przepływ danych.                                                           |
+| Nieaktywne                                 | Dzierżawa została odłączona na żądanie MSP i nie jest już zarządzana w Lighthouse.           |
+| W toku                               | Dzierżawa została odnaleziona, ale nie jest w pełni dołączona.                                                              |
+| Niekwalifikowalne — nie skonfigurowano protokołu DAP lub GDAP    | Partner musi mieć delegowane uprawnienia administratora (DAP) lub uprawnienia administratora delegowania szczegółowego (GDAP) skonfigurowane w dzierżawie. |
+| Niekwalifikowalne — brak wymaganej licencji | Dzierżawa nie ma wymaganej licencji.                                                               |
+| Niekwalifikowalne — przekroczono liczbę użytkowników         | Dzierżawa ma więcej użytkowników niż jest to dozwolone.                                                                     |
+| Niekwalifikowalne — sprawdzanie geograficzne nie powiodło się            | Partner i klient muszą znajdować się w tej samej lokalizacji geograficznej.                                       |
 
-Po dezaktywowania dzierżawy nie możesz podjąć żadnych działań w tej dzierżawie do czasu zakończenia procesu dezaktywowania. Dezaktywacja może potrwać do 48 godzin. W przypadku podjęcia decyzji o ponownej aktywacji dzierżawy może upłynieć do 48 godzin, aż dane ponownie się pojawią.
+Po uaktywnieniu dzierżawy nie można wykonać akcji w dzierżawie do czasu zakończenia procesu inaktywacji. Wykonanie nieaktywnego działania może potrwać do 48 godzin. Jeśli zdecydujesz się ponownie uaktywnić dzierżawę, ponowne pojawienie się danych może potrwać do 48 godzin.
 
 ## <a name="tenant-tags"></a>Tagi dzierżawy
 
-Aby ułatwić organizowanie dzierżaw i łatwo filtrować istniejące widoki, możesz tworzyć tagi i przypisywać je do dzierżaw. Aby dowiedzieć się więcej, zobacz [Zarządzanie listą dzierżaw](m365-lighthouse-manage-tenant-list.md).
+Aby ułatwić organizowanie dzierżaw i łatwe filtrowanie istniejących widoków, możesz tworzyć i przypisywać tagi do dzierżaw. Aby dowiedzieć się więcej, zobacz [Zarządzanie listą dzierżaw](m365-lighthouse-manage-tenant-list.md).
 
 > [!NOTE]
-> Możesz utworzyć do 30 tagów we wszystkich dzierżawach.
+> Możesz utworzyć maksymalnie 30 tagów w całej dzierżawie.
 
 ## <a name="tenant-details-page"></a>Strona szczegółów dzierżawy
 
-Aby wyświetlić szczegółowe informacje o dzierżawie, wybierz dzierżawę z listy dzierżaw. Strona szczegółów dzierżawy zawiera informacje kontaktowe i stan planu wdrażania.
+Aby wyświetlić szczegółowe informacje o dzierżawie, wybierz dzierżawę z listy dzierżaw. Strona szczegółów dzierżawy zawiera informacje kontaktowe i stan planu wdrożenia.
 
-:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Zrzut ekranu przedstawiający stronę Szczegóły dzierżawy.":::
+:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Zrzut ekranu przedstawiający stronę szczegółów dzierżawy.":::
 
-### <a name="overview-tab"></a>Karta Omówienie
+### <a name="overview-tab"></a>Karta Przegląd
 
-Na karcie Omówienie możesz wyświetlić omówienie dzierżawy, informacje kontaktowe Microsoft 365 użycia usługi.
+Na karcie Przegląd możesz wyświetlić omówienie dzierżawy, informacje kontaktowe i użycie usługi Microsoft 365.
 
-#### <a name="tenant-overview-card"></a>Karta przegląd dzierżawy
+#### <a name="tenant-overview-card"></a>Karta przeglądu dzierżawy
 
-Karta Przegląd dzierżawy zawiera informacje o dzierżawie z jej Microsoft 365 dzierżawy.<br><br>
+Karta Przegląd dzierżawy zawiera informacje o dzierżawie z konta Microsoft 365.<br><br>
 
 | Informacje o dzierżawie    | Opis|
 |-----------------------|------------------|
-| Headquarters    | Miejsce, w którym znajduje się dzierżawa.|
-| Branża    |Branżę firmy.|
-| Witryna internetowa    |Witryna internetowa organizacji. Możesz edytować to pole, jeśli nie podano żadnych danych.|
+| Headquarters    | Gdzie znajduje się dzierżawa.|
+| Przemysłu    |Branża organizacji.|
+| Stronie internetowej    |Witryna internetowa organizacji. To pole można edytować, jeśli nie podano żadnych danych.|
 | Domena klienta    |Domena organizacji.|
-| Łączna liczba użytkowników    |Liczba użytkowników przypisanych w dzierżawie. Możesz wybrać ten numer, aby otworzyć stronę Użytkownicy dla tej dzierżawy.|
+| Łączna liczba użytkowników    |Liczba użytkowników przypisanych do dzierżawy. Możesz wybrać ten numer, aby otworzyć stronę Użytkownicy dla tej dzierżawy.|
 | Łączna liczba urządzeń|Liczba urządzeń zarejestrowanych w dzierżawie. Możesz wybrać ten numer, aby otworzyć stronę Urządzenia dla tej dzierżawy.|
 
-#### <a name="contacts-card"></a>Wizytówka
+#### <a name="contacts-card"></a>Karta Kontakty
 
-Karta Kontakty umożliwia wprowadzanie informacji dotyczących kluczowych kontaktów w obrębie zarządzanych dzierżaw, takich jak:
+Karta Kontakty umożliwia wprowadzanie informacji dotyczących kluczowych kontaktów w zarządzanych dzierżawach, takich jak:
 
 - Name (Nazwa)
 - Tytuł
@@ -108,33 +108,33 @@ Karta Kontakty umożliwia wprowadzanie informacji dotyczących kluczowych kontak
 - Poczta e-mail
 - Uwagi
 
-Sekcja Notatki to pole tekstowe, za pomocą których można rejestrować kluczowe informacje o dzierżawie, takie jak preferencje zaangażowania, lokalizacja, strefa czasowa i szczegóły dotyczące jej roli w organizacji.
+Sekcja Notatki to pole tekstowe, którego można użyć do rejestrowania kluczowych informacji dla dzierżawy, takich jak preferencje zaangażowania, lokalizacja, strefa czasowa i szczegóły dotyczące ich roli w organizacji.
 
-Aby edytować szczegóły lub usunąć istniejący kontakt, wybierz jego nazwę z listy. W **okienku Edytowanie** kontaktu edytuj lub usuń kontakt. Aby dodać kolejny kontakt, wybierz pozycję **+Dodaj kontakt**.
+Aby edytować szczegóły lub usunąć istniejący kontakt, wybierz z listy nazwę kontaktu. W okienku **Edytowanie kontaktu edytuj** lub usuń kontakt. Aby dodać kolejny kontakt, wybierz pozycję **+Dodaj kontakt**.
 
-#### <a name="microsoft-365-usage-card"></a>Microsoft 365 karty użycia
+#### <a name="microsoft-365-usage-card"></a>karta użycia Microsoft 365
 
-Lighthouse dostarcza szczegółowych informacji o Microsoft 365 usługach, w tym o tym, ilu użytkowników w ramach dzierżawy jest licencjonowanych i aktywnie korzysta z poszczególnych usług. Aktywny wskazuje liczbę użytkowników lub urządzeń, które zalogowały się do usługi co najmniej raz w ciągu ostatnich 28 dni. Zmiana oznacza zmianę w aktywnych użytkownikach i urządzeniach od ostatniego miesiąca.
+Usługa Lighthouse zapewnia wgląd w użycie usług Microsoft 365, w tym liczbę użytkowników w ramach dzierżawy, którzy są licencjonowani i aktywnie korzystają z każdej usługi. Active wskazuje liczbę użytkowników lub urządzeń, którzy zalogowali się do usługi co najmniej raz w ciągu ostatnich 28 dni. Zmiana wskazuje na zmianę aktywnych użytkowników i urządzeń od ostatniego miesiąca.
 
-Karta Microsoft 365 zawiera dwie sekcje:
+Karta Microsoft 365 Użycie zawiera dwie sekcje:
 
-- **Microsoft 365 Lighthouse usługami z włączoną obsługą:** Usługi, które można zarządzać w portalu lighthouse.
-- **Dodatkowe Microsoft 365 usługi:** Usługi zawarte w pakiecie Microsoft 365, ale obecnie nie można nimi zarządzać w portalu Microsoft 365 Lighthouse.
+- **usługi z obsługą Microsoft 365 Lighthouse:** usługi, które można zarządzać w portalu lighthouse.
+- **Dodatkowe usługi Microsoft 365:** usługi, które są zawarte w pakiecie Microsoft 365, ale nie mogą być obecnie zarządzane w portalu Microsoft 365 Lighthouse.
 
-### <a name="deployment-plans-tab"></a>Karta Plany wdrażania
+### <a name="deployment-plans-tab"></a>Karta Plany wdrożenia
 
-Karta Plany wdrażania zawiera informacje o stanie planu wdrażania dzierżawy. Kroki wdrażania na liście są oparte na planie bazowym zastosowanym do dzierżawy. Aby wyświetlić szczegóły etapu wdrożenia, wybierz krok wdrożenia z listy.
+Karta Plany wdrażania zawiera stan planu wdrożenia dzierżawy. Kroki wdrażania na liście są oparte na linii bazowej zastosowanej do dzierżawy. Aby wyświetlić szczegóły kroku wdrożenia, wybierz krok wdrożenia z listy.
 
 Karta Plany wdrażania zawiera również następujące opcje:
 
-- **Eksportowanie:** Wybierz, aby wyeksportować dane o krokach wdrożenia Excel pliku wartości rozdzielanych przecinkami (.csv).
-- **Odświeżanie:** Wybierz, aby pobrać najnowsze dane o krokach wdrożenia.
-- **Wyszukiwanie:** Wprowadź słowa kluczowe, aby szybko znaleźć określony krok wdrożenia na liście.
+- **Eksportu:** Wybierz, aby wyeksportować dane kroku wdrożenia do pliku wartości rozdzielanych przecinkami Excel (.csv).
+- **Odświeżania:** Wybierz, aby pobrać najbardziej aktualne dane kroków wdrażania.
+- **Szukaj:** Wprowadź słowa kluczowe, aby szybko zlokalizować określony krok wdrożenia na liście.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Wymagania dotyczące Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artykuł)\
-[Microsoft 365 Lighthouse faq](m365-lighthouse-faq.yml) (artykuł)\
+[Microsoft 365 Lighthouse często zadawane pytania](m365-lighthouse-faq.yml) (artykuł)\
 [Zarządzanie listą dzierżaw](m365-lighthouse-manage-tenant-list.md) (artykuł)\
-[Omówienie wdrażania standardowych konfiguracji dzierżawy](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) przy użyciu planu bazowego (artykuł)\
-[Wdrażanie Microsoft 365 Lighthouse bazowych](m365-lighthouse-deploy-baselines.md) (artykuł)
+[Omówienie wdrażania standardowych konfiguracji dzierżawy za pomocą punktów odniesienia](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (artykuł)\
+[Wdrażanie Microsoft 365 Lighthouse punktów odniesienia](m365-lighthouse-deploy-baselines.md) (artykuł)

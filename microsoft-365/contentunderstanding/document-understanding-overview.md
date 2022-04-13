@@ -1,5 +1,5 @@
 ---
-title: Omówienie opisów dokumentów w aplikacji Microsoft SharePoint Syntex
+title: Omówienie dokumentacji w usłudze Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,106 +13,110 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Dowiedz się więcej o zrozumieniu dokumentu w aplikacji Microsoft SharePoint Syntex.
-ms.openlocfilehash: c7488fcb44116f030d538b416af1f04b33382519
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+description: Dowiedz się więcej o zrozumieniu dokumentów w usłudze Microsoft SharePoint Syntex.
+ms.openlocfilehash: 639decf383e534253b014366d9d8c51a83a76675
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507328"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64822743"
 ---
-# <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Omówienie opisów dokumentów w aplikacji Microsoft SharePoint Syntex
+# <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Omówienie dokumentacji w usłudze Microsoft SharePoint Syntex
 
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
 
 </br>
 
-W zrozumieniu dokumentu są używane modele sztucznej inteligencji w celu zautomatyzowania klasyfikacji plików i wyodrębniania informacji. Najlepiej się sprawdza w przypadku dokumentów niestrukturryzowanych, takich jak listy lub umowy. Te dokumenty muszą zawierać tekst, który można zidentyfikować na podstawie fraz lub wzorców. Wskazany tekst wyznacza zarówno typ pliku, który jest (jego klasyfikacja), jak i to, co chcesz wyodrębnić (jego wyodrębniacze).
+Omówienie dokumentów używa modeli sztucznej inteligencji (AI) do automatyzacji klasyfikacji plików i wyodrębniania informacji. Najlepiej sprawdza się w przypadku dokumentów bez struktury, takich jak listy lub umowy. Dokumenty te muszą zawierać tekst, który można zidentyfikować na podstawie fraz lub wzorców. Zidentyfikowany tekst określa zarówno typ pliku, który jest (jego klasyfikacja), jak i to, co chcesz wyodrębnić (jego wyodrębniacze).
 
 > [!NOTE]
-> Zobacz [przykłady SharePoint Syntex: Wprowadzenie,](./adoption-getstarted.md) aby uzyskać więcej informacji na temat przykładów scenariuszy opisów dokumentów.
+> Zobacz [przewodnik SharePoint Syntex adoption: Wprowadzenie,](./adoption-getstarted.md) aby uzyskać więcej informacji na temat przykładów scenariuszy interpretacji dokumentów.
 
-Dokumenty opisowe modele są tworzone i zarządzane w typie witryny SharePoint *nazywanej centrum zawartości*. Po zastosowaniu do biblioteki SharePoint dokumentów model jest skojarzony z typem zawartości i zawiera kolumny do przechowywania wyodrębnianych informacji. Tworzyć typy zawartości są przechowywane w galerii SharePoint typów zawartości. Możesz także użyć istniejących typów zawartości, aby użyć ich schematu.
+Modele interpretacji dokumentów są tworzone i zarządzane w typie witryny SharePoint o nazwie *centrum zawartości*. Po zastosowaniu do biblioteki dokumentów SharePoint model jest skojarzony z typem zawartości ma kolumny do przechowywania wyodrębnianych informacji. Utworzony typ zawartości jest przechowywany w galerii typów zawartości SharePoint. Możesz również użyć istniejących typów zawartości do używania ich schematu.
 
 > [!NOTE]
-> Typów zawartości tylko do odczytu lub zawartości zawartości nie można aktualizować, więc nie można ich używać w modelu.
+> Nie można aktualizować typów zawartości tylko do odczytu lub zapieczętowanej zawartości, więc nie można ich używać w modelu.
 
-Dodaj *klasyfikatory i* *wyodrębniacze do* dokumentu, aby zrozumieć modele, aby wykonać następujące czynności: 
+Dodaj *klasyfikatory* i *wyodrębniacze* do modeli interpretacji dokumentów, aby wykonać następujące akcje:
 
-- Klasyfikatory służą do identyfikowania i klasyfikowania dokumentów przekazywanych do biblioteki dokumentów. Na przykład klasyfikator może być "przeszkolony" w celu identyfikowania  wszystkich dokumentów dotyczących odnawiania umowy, które są przekazywane do biblioteki. Typ zawartości odnawiania umowy jest definiowany przez Ciebie podczas tworzenia klasyfikatora.
+- Klasyfikatory służą do identyfikowania i klasyfikowania dokumentów przekazanych do biblioteki dokumentów. Na przykład klasyfikator można "wytrenować", aby zidentyfikować wszystkie dokumenty *odnawiania kontraktu* przekazane do biblioteki. Typ zawartości odnawiania kontraktu jest definiowany przez Użytkownika podczas tworzenia klasyfikatora.
 
-- Wyodrębniacze ściągają informacje z tych dokumentów. Na przykład w przypadku każdego dokumentu odnowienia umowy wskazanego w bibliotece dokumentów są wyświetlane kolumny z datami rozpoczęcia usługi i  z klientem dla każdego dokumentu. 
+- Wyodrębniacze pobierają informacje z tych dokumentów. Na przykład dla każdego dokumentu odnawiania kontraktu określonego w bibliotece dokumentów zostaną wyświetlone kolumny zawierające *datę rozpoczęcia usługi* i *klienta* dla każdego dokumentu. 
 
-Za pomocą plików przykładowych możesz szkolenie i testowanie klasyfikatorów i wyodrębniaczy w Twoim modelu. Przykładowe pliki stanowią przykłady modelu wyszukiwania podczas próby zidentyfikowania i wyodrębnienia danych z plików. Na przykład możesz przeszkolić klasyfikatorów odnawiania umowy i wyodrębnić ich przykłady dokumentów dotyczących odnawiania umowy, z których współpracuje Twoja firma. Możesz również użyć plików przykładowych, aby przetestować skuteczność twojego modelu.
+Przykładowe pliki umożliwiają trenowanie i testowanie klasyfikatorów i wyodrębniaczy w modelu. Przykładowe pliki zawierają przykłady modelu, na które należy zwrócić uwagę podczas próby zidentyfikowania i wyodrębnienia danych z plików. Na przykład należy wytrenować klasyfikatory i wyodrębniacze odnawiania kontraktów przy użyciu przykładów dokumentów odnawiania kontraktu, z których współpracuje firma. Możesz również użyć przykładowych plików, aby przetestować skuteczność modelu.
 
-Po opublikowaniu modelu zastosuj go do dowolnej biblioteki SharePoint dokumentów, do których masz dostęp.  
+Po opublikowaniu modelu użyj centrum zawartości, aby zastosować go do dowolnej biblioteki dokumentów SharePoint, do których masz dostęp.  
 
 ## <a name="file-limitations"></a>Ograniczenia dotyczące plików
 
-Modele opisowe dokumentów korzystają z technologii optycznego rozpoznawania znaków (OCR, Optical Character Recognition) do skanowania plików PDF, obrazów i plików TIFF. Pliki są skanowane podczas szkolenia modelu z plikami przykładowym i podczas uruchamiania modelu na plikach w bibliotece dokumentów.
+Modele interpretacji dokumentów używają technologii optycznego rozpoznawania znaków (OCR) do skanowania plików PDF, obrazów i plików TIFF. Pliki są skanowane podczas trenowania modelu przy użyciu przykładowych plików i uruchamiania modelu względem plików w bibliotece dokumentów.
 
-Zwróć uwagę na następujące różnice Microsoft Office plików tekstowych i plików zeskanowanych za pomocą rozpoznawania znaków OCR (PDF, obraz lub TIFF):
+Zwróć uwagę na następujące różnice dotyczące Microsoft Office plików tekstowych i plików zeskanowanych za pomocą protokołu OCR (PDF, obraz lub TIFF):
 
-- Office: Obcięte z 64 000 znaków (w szkoleniu i po uruchomieniu dla plików w bibliotece dokumentów).
+- Office pliki: obcięte przy użyciu 64 000 znaków (podczas trenowania i uruchamiania względem plików w bibliotece dokumentów).
 
-- Pliki skanowane zaybko:  limit strony wynosi 20.  
+- Pliki zeskanowane przez protokół OCR: istnieje limit 20 stron.  
 
 ### <a name="requirements"></a>Wymagania
 
-Przetwarzanie OCR działa najlepiej w przypadku dokumentów spełniających następujące wymagania:
+Przetwarzanie OCR działa najlepiej w dokumentach spełniających następujące wymagania:
 
-- Formaty JPG, PNG i PDF (tekst lub zeskanowane). Pliki PDF osadzone w tekście są lepsze, ponieważ nie występują żadne błędy wyodrębniania znaków i lokalizacji.
+- Format JPG, PNG lub PDF (tekst lub skanowane). Pliki PDF osadzone w tekście są lepsze, ponieważ nie będzie żadnych błędów w wyodrębnianiu znaków i lokalizacji.
 
-- Jeśli pliki PDF są zablokowane hasłem, przed przesłaniem pliku musisz usunąć blokadę.
+- Jeśli pliki PDF są zablokowane hasłem, należy usunąć blokadę przed ich przesłaniem.
 
-- Połączony rozmiar plików dokumentów używanych na szkolenia na kolekcję nie może przekraczać 50 MB, a dokumenty PDF nie powinny mieć więcej niż 500 stron.
+- Łączny rozmiar pliku dokumentów używanych do trenowania na kolekcję nie może przekraczać 50 MB, a dokumenty PDF nie powinny mieć więcej niż 500 stron.
 
-- W przypadku obrazów wymiary muszą być pomiędzy 50 × 50 a 10 000 × 10 000 pikseli.
+- W przypadku obrazów wymiary muszą mieć od 50 x 50 do 10 000 x 10 000 pikseli.
    > [!NOTE]
-   > Obrazy o bardzo szerokich szerokościach lub nietypowych wymiarach (na przykład plany podłogi) mogą zostać obcięte w procesie OCR i tracą dokładność.
- 
-- W przypadku plików PDF wymiary muszą być nie mniejsze niż 17 x 17 cali, odpowiadające rozmiarom papieru legal lub A3.
+   > Obrazy, które są bardzo szerokie lub mają nieparzyste wymiary (na przykład plany pomieszczeń), mogą zostać obcięte w procesie OCR i utracić dokładność.
 
-- W przypadku skanowania z dokumentów papierowych skany powinny być obrazami wysokiej jakości.
+- W przypadku plików PDF wymiary muszą mieć maksymalnie 17 x 17 cali, co odpowiada rozmiarom papieru legalnego lub A3 i mniejszemu rozmiarowi.
 
-- Należy używać alfabetu łacińskiego (angielskich znaków).
+- W przypadku skanowania z dokumentów papierowych skanowanie powinno być obrazami wysokiej jakości.
+
+- Musi używać alfabetu łacińskiego (znaków angielskich).
 
 > [!NOTE]
-> AI Builder obecnie nie obsługuje następujących typów danych wejściowych przetwarzania formularza:<br>— Pola wyboru lub przyciski radiowe<br>- Podpisy<br>- Pliki PDF z wypełnianiem
+> Narzędzia AI Builder nie obsługują obecnie następujących typów danych wejściowych przetwarzania formularzy:
+>
+> - Pola wyboru lub przyciski radiowe
+> - Podpisów
+> - Pliki PDF z możliwością wypełniania
 
 ### <a name="supported-file-types"></a>Obsługiwane typy plików
 
-Modele opisowe dokumentów obsługują następujące typy plików:
+Modele interpretacji dokumentów obsługują następujące typy plików:
 
-- doc
-- docx
-- eml
-- heic
+- Dok
+- Docx
+- Eml
+- hejt
 - heif
-- htm
-- html
-- jpeg
-- jpg
-- zaznaczanie
-- md
-- msg
-- pdf
-- png
-- ppt
-- pptx
-- rtf
-- tif
-- tiff
-- txt
-- xls
-- xlsx
+- Htm
+- Html
+- Jpeg
+- Jpg
+- Markdown
+- Md
+- Msg
+- Pdf
+- Png
+- Ppt
+- Pptx
+- Rtf
+- Tif
+- Tiff
+- Txt
+- Xls
+- Xlsx
 
 ### <a name="supported-languages"></a>Obsługiwane języki
 
-Modele opisowe dokumentów *obsługują wszystkie* języki oparte na alfabetu łacińskiego, w tym:
+Modele interpretacji dokumentów obsługują *wszystkie* języki oparte na języku łacińskim, w tym:
 
 - English
 - French
@@ -120,20 +124,20 @@ Modele opisowe dokumentów *obsługują wszystkie* języki oparte na alfabetu ł
 - Italian
 - Spanish
 
-
 ## <a name="see-also"></a>Zobacz też
+
 [Tworzenie klasyfikatora](create-a-classifier.md)
 
-[Tworzenie wyodrębnianego](create-an-extractor.md)
+[Tworzenie wyodrębniacza](create-an-extractor.md)
 
 [Tworzenie centrum zawartości](create-a-content-center.md)
 
 [Tworzenie modelu przetwarzania formularzy](create-a-form-processing-model.md)
 
-[Stosowanie modelu](apply-a-model.md)   
+[Stosowanie modelu](apply-a-model.md)
 
-[Różnica między zrozumieniem dokumentu a modelem przetwarzania formularza](difference-between-document-understanding-and-form-processing-model.md)
+[Różnica między interpretacją dokumentu a modelem przetwarzania formularzy](difference-between-document-understanding-and-form-processing-model.md)
   
 [Omówienie przetwarzania formularzy](form-processing-overview.md)
 
-[SharePoint Syntex tryb ułatwień dostępu](accessibility-mode.md)
+[tryb ułatwień dostępu SharePoint Syntex](accessibility-mode.md)
