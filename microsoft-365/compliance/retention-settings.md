@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie ustawień przechowywania w celu automatycznego zachowywania lub usuwania zawartości
+title: Konfigurowanie ustawień przechowywania w celu automatycznego przechowywania lub usuwania zawartości
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,108 +16,108 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Opis ustawień, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i usunąć to, co nie chcesz.
-ms.openlocfilehash: 3b2833b2b6293845379f9f5aeffd3bd46610e2a8
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Zapoznaj się z ustawieniami, które można skonfigurować w zasadach przechowywania lub zasadach etykiet przechowywania, aby zachować to, co chcesz, i pozbyć się tego, czego nie chcesz.
+ms.openlocfilehash: 0ec9ace6d2a2205996baed8cd64ca0e29ac83ed3
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63713080"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836089"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Typowe ustawienia zasad przechowywania i zasad etykiet przechowywania
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](https://aka.ms/ComplianceSD).*
 
-Wiele ustawień przechowywania jest wspólnych zarówno dla zasad przechowywania, jak i zasad etykiet przechowywania. Poniższe informacje ułatwiają skonfigurowanie tych ustawień w taki sposób, aby aktywnie zachowywać zawartość, usuwać ją lub zachowywać, a następnie usuwać.
+Wiele ustawień przechowywania jest typowych zarówno dla zasad przechowywania, jak i zasad etykiet przechowywania. Poniższe informacje ułatwiają skonfigurowanie tych ustawień w celu proaktywnego przechowywania zawartości, usuwania zawartości lub obu tych ustawień — zachowywania i usuwania zawartości.
 
-Aby uzyskać scenariusze obsługi tych zasad przechowywania, zobacz:
+Aby zapoznać się ze scenariuszami, które obsługują te zasady przechowywania, zobacz:
 
 - [Tworzenie i konfigurowanie zasad przechowywania](create-retention-policies.md).
 - [Tworzenie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
 - [Automatyczne stosowanie etykiety przechowywania do zawartości](apply-retention-labels-automatically.md)
 
-Ustawienia scenariuszy zostały opisane w odpowiedniej dokumentacji.
+Ustawienia specyficzne dla każdego scenariusza zostały wyjaśnione w odpowiedniej dokumentacji.
 
-Aby uzyskać ogólne informacje na temat zasad przechowywania i sposobu działania przechowywania w aplikacji Microsoft 365, zobacz Informacje o zasadach przechowywania [i etykietach przechowywania](retention.md).
+Aby uzyskać omówienie informacji o zasadach przechowywania i sposobie działania przechowywania w Microsoft 365, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
 
 ## <a name="scopes---adaptive-and-static"></a>Zakresy — adaptacyjne i statyczne
 
-Jeśli nie wiesz, jakie zakresy są adaptacyjne i statyczne, i aby ułatwić Ci wybranie, którego z nich będziesz używać podczas konfigurowania zasad przechowywania, zobacz Adaptacyjne lub statyczne zakresy zasad [przechowywania.](retention.md#adaptive-or-static-policy-scopes-for-retention) 
+Jeśli nie znasz zakresów adaptacyjnych i statycznych oraz chcesz ułatwić wybór zasad do użycia podczas konfigurowania zasad przechowywania, zobacz [Adaptacyjne lub statyczne zakresy zasad przechowywania](retention.md#adaptive-or-static-policy-scopes-for-retention). 
 
-Jeśli zdecydowasz, czy użyć adaptacyjnego, czy statycznego zakresu, skorzystaj z następujących informacji, aby go skonfigurować:
-- [Informacje o konfiguracji dla adaptacyjnych zakresów](#configuration-information-for-adaptive-scopes)
-- [Informacje o konfiguracji dla zakresów statycznych](#configuration-information-for-static-scopes)
+Gdy zdecydujesz, czy chcesz korzystać z zakresu adaptacyjnego, czy statycznego, skorzystaj z następujących informacji, które pomogą Ci go skonfigurować:
+- [Informacje o konfiguracji zakresów adaptacyjnych](#configuration-information-for-adaptive-scopes)
+- [Informacje o konfiguracji zakresów statycznych](#configuration-information-for-static-scopes)
 
 > [!TIP]
-> Jeśli masz zasady, które używają zakresów statycznych i chcesz przekonwertować je na adaptacyjne zakresy, pozostaw istniejące zasady na miejscu podczas tworzenia nowych zasad, które używają adaptacyjnych zakresów z tych samych ustawień przechowywania. Sprawdź, czy te nowe zasady są przeznaczone dla poprawnych użytkowników, witryn i grup, zanim wyłączysz lub usuniesz stare zasady ze statycznym zakresem.
+> Jeśli masz zasady korzystające z zakresów statycznych i chcesz je przekonwertować na zakresy adaptacyjne, pozostaw istniejące zasady w miejscu podczas tworzenia nowych zasad korzystających z zakresów adaptacyjnych z tymi samymi ustawieniami przechowywania. Sprawdź, czy te nowe zasady są przeznaczone dla prawidłowych użytkowników, witryn i grup przed wyłączeniem lub usunięciem starych zasad z zakresami statycznymi.
 
-### <a name="configuration-information-for-adaptive-scopes"></a>Informacje o konfiguracji dla adaptacyjnych zakresów
+### <a name="configuration-information-for-adaptive-scopes"></a>Informacje o konfiguracji zakresów adaptacyjnych
 
-Gdy wybierzesz zakresy adaptacyjne, zostanie wyświetlony monit o wybranie odpowiedniego typu adaptacyjnego zakresu. Istnieją trzy różne typy adaptacyjnych zakresów i każdy z nich obsługuje inne atrybuty lub właściwości:
+Po wybraniu zakresów adaptacyjnych zostanie wyświetlony monit o wybranie żądanego typu zakresu adaptacyjnego. Istnieją trzy różne typy zakresów adaptacyjnych, a każdy z nich obsługuje różne atrybuty lub właściwości:
 
-| Adaptacyjny typ zakresu | Obsługiwane są następujące atrybuty lub właściwości |
+| Typ zakresu adaptacyjnego | Obsługiwane atrybuty lub właściwości obejmują |
 |:-----|:-----|
-|**Użytkownicy** — dotyczy:  <br/> — Exchange-mail <br/> — OneDrive konta <br/> — Teams czatów <br/> — Teams wiadomości z kanału prywatnego <br/> — Yammer wiadomości od użytkowników| Imię <br/> Nazwisko <br/>Nazwa wyświetlana <br/> Stanowisko <br/> Department <br/> Pakiet Office <br/>Ulica <br/> Miasto <br/>Województwo <br/>Kod pocztowy <br/> Kraj lub region <br/> Adresy e-mail <br/> Alias <br/> Exchange atrybuty niestandardowe: CustomAttribute1 — CustomAttribute15|
-|**SharePoint witryn —** dotyczy:  <br/> — SharePoint witryn <br/> — OneDrive konta |Adres URL witryny <br/>Nazwa witryny <br/> SharePoint właściwości niestandardowe: RefinableString00 - RefinableString99 |
-|**Microsoft 365 grupy —** dotyczy:  <br/> — Microsoft 365 grupy <br/> - Teams wiadomości kanału (standardowe i udostępnione) <br/> — Yammer wiadomości od społeczności |Name (Nazwa) <br/> Nazwa wyświetlana <br/> Opis <br/> Adresy e-mail <br/> Alias <br/> Exchange atrybuty niestandardowe: CustomAttribute1 — CustomAttribute15 |
+|**Użytkownicy** — dotyczy:  <br/> - Exchange e-mail <br/> — konta OneDrive <br/> - czaty Teams <br/> - Teams wiadomości z kanału prywatnego <br/> — Yammer komunikaty użytkowników| Imię <br/> Nazwisko <br/>Nazwa wyświetlana <br/> Stanowisko <br/> Department <br/> Pakiet Office <br/>Ulica <br/> Miasto <br/>Stan lub prowincja <br/>Kod pocztowy <br/> Kraj lub region <br/> Adresy e-mail <br/> Alias <br/> Exchange atrybutów niestandardowych: CustomAttribute1 — CustomAttribute15|
+|**SharePoint witryn** — dotyczy:  <br/> - witryny SharePoint <br/> — konta OneDrive |Adres URL witryny <br/>Nazwa witryny <br/> SharePoint właściwości niestandardowe: RefinableString00 — RefinableString99 |
+|**Grupy Microsoft 365** — dotyczy:  <br/> - Grupy Microsoft 365 <br/> — Teams komunikatów kanałów (standardowych i udostępnionych) <br/> - Yammer komunikaty społeczności |Name (Nazwa) <br/> Nazwa wyświetlana <br/> Opis <br/> Adresy e-mail <br/> Alias <br/> Exchange atrybutów niestandardowych: CustomAttribute1 — CustomAttribute15 |
 
-Nazwy właściwości witryn są oparte na SharePoint właściwościach zarządzanych witryny. Aby uzyskać informacje na temat atrybutów niestandardowych, zobacz Stosowanie SharePoint właściwości witryny niestandardowej w Microsoft 365 [z adaptacyjnym zakresem zasad](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
+Nazwy właściwości lokacji są oparte na właściwościach zarządzanych SharePoint lokacji. Aby uzyskać informacje na temat atrybutów niestandardowych, zobacz [Używanie właściwości witryny SharePoint niestandardowych do stosowania Microsoft 365 przechowywania przy użyciu zakresów zasad adaptacyjnych](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-Nazwy atrybutów użytkowników i grup są oparte na filtrowanych właściwościach [adresatów](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) mapowanych na atrybuty usługi Azure AD. Przykład:
+Nazwy atrybutów dla użytkowników i grup są oparte na [właściwościach adresatów możliwych do filtrowania](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) , które są mapowane na atrybuty usługi Azure AD. Przykład:
 
-- **Alias** mapuje nazwę LDAP **mailNickname**, która jest wyświetlana jako **Wiadomość e-mail** w centrum administracyjnym usługi Azure AD.
-- **Adresy e-mail** są mapowane na adres **proxyAddresses** nazwy LDAP, który jest wyświetlany jako **adres serwera proxy** w centrum administracyjnym usługi Azure AD.
+- **Alias** mapuje na adres LDAP **mailNickname**, który jest wyświetlany jako **Adres e-mail** w centrum administracyjnym usługi Azure AD.
+- **Adresy e-mail** są mapowe na **serwer proxy nazwy LDAPAddresses**, który jest wyświetlany jako **adres proxy** w centrum administracyjnym usługi Azure AD.
 
-Atrybuty i właściwości wymienione w tabeli można łatwo określić podczas konfigurowania adaptacyjnego zakresu za pomocą prostego konstruktora zapytań. Dodatkowe atrybuty i właściwości są obsługiwane przez zaawansowanego konstruktora zapytań, zgodnie z opisem w następnej sekcji.
+Atrybuty i właściwości wymienione w tabeli można łatwo określić podczas konfigurowania zakresu adaptacyjnego przy użyciu prostego konstruktora zapytań. Dodatkowe atrybuty i właściwości są obsługiwane przez zaawansowanego konstruktora zapytań, zgodnie z opisem w poniższej sekcji.
 
 > [!TIP]
-> Aby uzyskać dodatkowe informacje na temat używania zaawansowanego konstruktora zapytań, zobacz następujące seminaria w sieci Web: 
-> - [Tworzenie zaawansowanych zapytań dla użytkowników i grup za pomocą adaptacyjnych zakresów zasad](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
-> - [Tworzenie zaawansowanych zapytań dla witryn SharePoint za pomocą adaptacyjnych zakresów zasad](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
+> Aby uzyskać dodatkowe informacje na temat korzystania z zaawansowanego konstruktora zapytań, zobacz następujące seminaria internetowe: 
+> - [Tworzenie zaawansowanych zapytań dla użytkowników i grup przy użyciu zakresów zasad adaptacyjnych](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> - [Tworzenie zaawansowanych zapytań dla witryn SharePoint z zakresami zasad adaptacyjnych](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
-Jedna zasada przechowywania może mieć jeden lub wiele adaptacyjnych zakresów.
+Pojedyncze zasady przechowywania mogą mieć co najmniej jeden zakres adaptacyjny.
 
-#### <a name="to-configure-an-adaptive-scope"></a>Aby skonfigurować adaptacyjny zakres
+#### <a name="to-configure-an-adaptive-scope"></a>Aby skonfigurować zakres adaptacyjny
 
-Przed skonfigurowaniem adaptacyjnego zakresu skorzystaj z poprzedniej sekcji, aby zidentyfikować typ zakresu do utworzenia oraz atrybuty i wartości, których będziesz używać. Może być konieczne potwierdzenie tych informacji we współpracy z innymi administratorami. 
+Przed skonfigurowaniem zakresu adaptacyjnego użyj poprzedniej sekcji, aby zidentyfikować typ zakresu do utworzenia oraz jakie atrybuty i wartości będą używane. Aby potwierdzić te informacje, może być konieczna współpraca z innymi administratorami. 
 
-W szczególności SharePoint witryny internetowe mogą wymagać dodatkowej SharePoint, jeśli planujesz użyć [niestandardowych właściwości witryny](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
+W przypadku SharePoint lokacji może być wymagana dodatkowa konfiguracja SharePoint, jeśli planujesz używać [niestandardowych właściwości lokacji](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-1. W [Centrum zgodności platformy Microsoft 365 przejdź](https://compliance.microsoft.com/) do jednej z następujących lokalizacji:
+1. W [Centrum zgodności platformy Microsoft 365](https://compliance.microsoft.com/) przejdź do jednej z następujących lokalizacji:
     
     - Jeśli używasz rozwiązania do zarządzania rekordami:
         - **Rozwiązania** >  **Zarządzanie rekordami** >  **Karta Zakresy adaptacyjne** > + **Tworzenie zakresu**
         
-    - W przypadku korzystania z rozwiązania do zarządzania informacjami:
+    - Jeśli używasz rozwiązania do zarządzania informacjami:
        - **Rozwiązania** >  **Zarządzanie informacjami** >  **Karta Zakresy adaptacyjne** > + **Tworzenie zakresu**
     
-    Nie widzisz swojego rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**. 
+    Nie widzisz rozwiązania od razu w okienku nawigacji? Najpierw wybierz pozycję **Pokaż wszystko**. 
 
-2. Postępuj zgodnie z monitami w konfiguracji, aby najpierw wybrać typ zakresu, a następnie wybrać atrybuty lub właściwości, za pomocą których chcesz utworzyć członkostwo dynamiczne, i wpisz wartości atrybutów lub właściwości.
+2. Postępuj zgodnie z monitami w konfiguracji, aby najpierw wybrać typ zakresu, a następnie wybierz atrybuty lub właściwości, których chcesz użyć do skompilowania członkostwa dynamicznego, i wpisz atrybut lub wartości właściwości.
     
-    Aby na przykład skonfigurować adaptacyjny zakres, który będzie używany do identyfikowania użytkowników w Europie, najpierw wybierz pozycję  Użytkownicy jako typ zakresu, a następnie wybierz atrybut Kraj lub **region** i **wpisz w Europie**:
+    Na przykład, aby skonfigurować zakres adaptacyjny, który będzie używany do identyfikowania użytkowników w Europie, najpierw wybierz pozycję **Użytkownicy** jako typ zakresu, a następnie wybierz atrybut **Country lub region** i wpisz w **Europie**:
     
-    ![Przykład adaptacyjnej konfiguracji zakresu.](../media/example-adaptive-scope.png)
+    ![Przykładowa konfiguracja zakresu adaptacyjnego.](../media/example-adaptive-scope.png)
     
-    Raz dziennie to zapytanie będzie uruchamiane w usłudze Azure AD i zidentyfikuje wszystkich użytkowników, którzy mają wartość Europa określoną na koncie dla **atrybutu Country lub region**.
+    Raz dziennie to zapytanie będzie uruchamiane względem usługi Azure AD i identyfikuje wszystkich użytkowników, dla których określono wartość **Europa** na koncie atrybutu **Kraj lub region** .
     
     > [!IMPORTANT]
-    > Ponieważ zapytanie nie zostanie uruchomione natychmiast, nie będzie sprawdzania poprawności wpisania wartości.
+    > Ponieważ zapytanie nie jest uruchamiane natychmiast, nie ma walidacji, która została wpisana poprawnie w wartości.
     
-    Wybierz **pozycję Dodaj atrybut** (dla użytkowników i grup) lub Dodaj **właściwość (dla** witryn), aby użyć dowolnej kombinacji atrybutów lub właściwości, które są obsługiwane dla ich typu zakresu, wraz z operatorami logicznymi do tworzenia zapytań. Obsługiwane operatory **są równe****, nie** są **równe, zaczynają** się od i nie są rozpoczynane **oraz można** grupować wybrane atrybuty lub właściwości. Przykład:
+    Wybierz pozycję **Dodaj atrybut** (dla użytkowników i grup) lub **Dodaj właściwość** (dla lokacji), aby użyć dowolnej kombinacji atrybutów lub właściwości obsługiwanych dla ich typu zakresu wraz z operatorami logicznymi do tworzenia zapytań. Obsługiwane operatory są **równe**, **nie są równe**, **zaczynają się od** i **nie zaczynają się od** i można grupować wybrane atrybuty lub właściwości. Przykład:
     
-    ![Przykład adaptacyjnej konfiguracji zakresu z grupami atrybutów.](../media/example-adaptive-scope-grouping.png)
+    ![Przykład adaptacyjnej konfiguracji zakresu z grupowaniami atrybutów.](../media/example-adaptive-scope-grouping.png)
     
     Alternatywnie możesz wybrać pozycję **Zaawansowany konstruktor zapytań** , aby określić własne zapytania:
     
-    - W **przypadku** **zakresów Microsoft 365** użytkowników i grup należy użyć składni [filtrowania OPATH](/powershell/exchange/recipient-filters). Aby na przykład utworzyć zakres użytkowników definiujący jego członkostwo według działu, kraju i stanu:
+    - W przypadku zakresów **Użytkownik** i **grupa Microsoft 365** użyj [składni filtrowania OPATH](/powershell/exchange/recipient-filters). Aby na przykład utworzyć zakres użytkownika definiujący jego członkostwo według działu, kraju i stanu:
     
-        ![Przykład adaptacyjnego zakresu za pomocą zapytania zaawansowanego.](../media/example-adaptive-scope-advanced-query.png)
+        ![Przykładowy zakres adaptacyjny z zaawansowanym zapytaniem.](../media/example-adaptive-scope-advanced-query.png)
         
-        Jedną z zalet używania zaawansowanego konstruktora zapytań w tych zakresach jest szerszy wybór operatorów zapytań:
+        Jedną z zalet korzystania z zaawansowanego konstruktora zapytań dla tych zakresów jest szerszy wybór operatorów zapytań:
         - **i**
         - **lub**
-        - **nie**
+        - **Nie**
         - **eq** (równa się)
         - **ne** (nie równa się)
         - **lt** (mniej niż)
@@ -125,295 +125,309 @@ W szczególności SharePoint witryny internetowe mogą wymagać dodatkowej Share
         - **like** (porównanie ciągów)
         - **notlike** (porównanie ciągów)
     
-    - Aby **SharePoint zakresów** witryn, użyj języka Keyword Query Language (KQL). Być może wiesz już, jak używać KQL do SharePoint przy użyciu właściwości witryny indeksowanych. Aby ułatwić ci określenie tych zapytań KQL, zobacz Informacje dotyczące składni w języku [KQL (Keyword Query Language](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)).
+    - W **przypadku SharePoint** zakresów witryn użyj języka zapytań słów kluczowych (KQL). Możesz już znać używanie KQL do wyszukiwania SharePoint przy użyciu indeksowanych właściwości witryny. Aby ułatwić określenie tych KQL zapytań, zobacz [Dokumentacja składni języka zapytań słów kluczowych (KQL).](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
         
-        Ponieważ na przykład zakresy witryn SharePoint automatycznie obejmują wszystkie typy witryn sieci SharePoint, takie jak witryny Microsoft 365 połączone z grupą i witryny typu OneDrive, można użyć zindeksowanych właściwości **siteTemplate**, aby uwzględnić lub wykluczyć określone typy witryn. Szablony, które można określić:
-        - SITEPAGEPUBLISHING dla witryn nowoczesnej komunikacji
-        - GROUP for Microsoft 365 group-connected sites
-        - TEAMCHANNEL dla Microsoft Teams kanałów prywatnych
-        - StS (StS) dla SharePoint zespołu
-        - SPSPERS dla witryn OneDrive witryn
+        Na przykład, ponieważ zakresy witryn SharePoint automatycznie obejmują wszystkie SharePoint typy lokacji, które obejmują Microsoft 365 połączone z grupą i OneDrive lokacje, można użyć indeksowanych właściwości lokacji **SiteTemplate** w celu uwzględnienia lub wykluczenia określonych typów lokacji. Szablony, które można określić:
+        - SITEPAGEPUBLISHING dla nowoczesnych witryn komunikacyjnych
+        - GRUPA dla Microsoft 365 lokacji połączonych z grupą
+        - TEAMCHANNEL dla Microsoft Teams witryn kanałów prywatnych
+        - Usługa STS dla klasycznej witryny zespołu SharePoint
+        - SPSPERS dla witryn OneDrive
         
-        Aby zatem utworzyć adaptacyjny zakres, który obejmuje tylko nowoczesne witryny do komunikacji i z wyłączeniem Microsoft 365 połączonych ze stronami połączonymi ze stronami OneDrive, określ następujące zapytanie KQL:
+        Aby utworzyć zakres adaptacyjny obejmujący tylko nowoczesne witryny komunikacyjne i wykluczający Microsoft 365 witryn połączonych z goupami i OneDrive, określ następujące zapytanie KQL:
         ````console
         SiteTemplate=SITEPAGEPUBLISHING
         ````
     
-    Zapytania zaawansowane [można sprawdzać niezależnie](#validating-advanced-queries) od konfiguracji zakresu.
+    Te [zaawansowane zapytania można zweryfikować](#validating-advanced-queries) niezależnie od konfiguracji zakresu.
     
     > [!TIP]
-    > Aby wykluczyć nieaktywne skrzynki pocztowe, należy użyć zaawansowanego konstruktora zapytań. I odwrotnie, do docelowych są po prostu nieaktywne skrzynki pocztowe. W przypadku tej konfiguracji użyj właściwości OPATH *IsInactiveMailbox*:
+    > Jeśli chcesz wykluczyć nieaktywne skrzynki pocztowe, musisz użyć zaawansowanego konstruktora zapytań. Lub odwrotnie, docelowe tylko nieaktywne skrzynki pocztowe. W tej konfiguracji użyj właściwości OPATH *IsInactiveMailbox*:
     > 
     > - Aby wykluczyć nieaktywne skrzynki pocztowe, upewnij się, że zapytanie zawiera: `(IsInactiveMailbox -eq "False")`
     > - Aby kierować tylko nieaktywne skrzynki pocztowe, określ: `(IsInactiveMailbox -eq "True")`
 
-3. Utwórz tyle adaptacyjnych zakresów, ile potrzebujesz. Możesz wybrać co najmniej jeden adaptacyjny zakres podczas tworzenia zasad przechowywania.
+3. Utwórz dowolną liczbę zakresów adaptacyjnych. Podczas tworzenia zasad przechowywania można wybrać co najmniej jeden zakres adaptacyjny.
 
 > [!NOTE]
-> Pełne wypełnienie zapytań może potrwać do pięciu dni, a zmiany nie zostaną natychmiast wprowadzone. Czynnik tego opóźnienia należy odczekać kilka dni przed dodaniem nowo utworzonego zakresu do zasad przechowywania.
+> Pełne wypełnienie zapytań może potrwać do pięciu dni, a zmiany nie będą natychmiastowe. Uwzględnij to opóźnienie, czekając kilka dni przed dodaniem nowo utworzonego zakresu do zasad przechowywania.
 
-Aby potwierdzić bieżące zmiany członkostwa i członkostwa w zakresie adaptacyjnym:
+Aby potwierdzić bieżące zmiany członkostwa i członkostwa dla zakresu adaptacyjnego:
 
 1. Kliknij dwukrotnie (lub wybierz i naciśnij klawisz Enter) zakres na stronie **Zakresy adaptacyjne**
 
-2. W okienku **Szczegóły wysuwu** wybierz pozycję **Szczegóły zakresu**. 
+2. W okienku **Szczegóły** wysuwanego wybierz pozycję **Szczegóły zakresu**. 
     
-    Przejrzyj informacje identyfikujące wszystkich użytkowników, witryn lub grup obecnie w zakresie, jeśli zostali oni automatycznie dodani lub usunięci, oraz datę i godzina zmiany członkostwa.
+    Przejrzyj informacje identyfikujące wszystkich użytkowników, witryny lub grupy znajdujące się obecnie w tym zakresie, jeśli zostały one automatycznie dodane lub usunięte, oraz datę i godzinę zmiany członkostwa.
 
 > [!TIP]
-> Opcja [odnośnika zasad pomoże](retention.md#policy-lookup) Ci w zidentyfikowaniu zasad obecnie przypisanych do określonych użytkowników, witryn i Microsoft 365 grupy.
+> Użyj opcji [wyszukiwania zasad](retention.md#policy-lookup), aby ułatwić identyfikację zasad, które są obecnie przypisane do określonych użytkowników, witryn i grup Microsoft 365.
 
-#### <a name="validating-advanced-queries"></a>Sprawdzania poprawności zapytań zaawansowanych
+#### <a name="validating-advanced-queries"></a>Weryfikowanie zaawansowanych zapytań
 
-Zapytania zaawansowane można ręcznie sprawdzać za pomocą programu PowerShell SharePoint wyszukiwania:
-- Typy zakresów Użytkownicy i Grupy  Microsoft 365 **programu PowerShell**
-- Używanie SharePoint wyszukiwania typów zakresów **SharePoint witryn**
+Zaawansowane zapytania można ręcznie weryfikować przy użyciu programu PowerShell i wyszukiwania SharePoint:
+- Użyj programu PowerShell dla typów zakresów **Użytkownicy** i **Grupy Microsoft 365**
+- Użyj SharePoint wyszukiwania typu zakresu **SharePoint witryn**
 
 Aby uruchomić zapytanie przy użyciu programu PowerShell:
 
-1. [Połączenie użyć Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu konta z odpowiednimi uprawnieniami [Exchange Online administratora](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet).
+1. [Połączenie Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) przy użyciu konta z [odpowiednimi uprawnieniami administratora Exchange Online](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet).
 
-2. Użyj [get-recipient lub](/powershell/module/exchange/get-recipient) [Get-Mailbox](/powershell/module/exchange/get-mailbox) z *parametrem -Filter* i [zapytaniem OPATH](/powershell/exchange/filter-properties) , aby ująć zakres adaptacyjny w nawiasy klamrowe (`{`,`}`). Jeśli wartości atrybutów są ciągami, należy je ująć w podwójny lub pojedynczy cudzysłów.  
+2. Użyj polecenia [Get-Recipient](/powershell/module/exchange/get-recipient) lub [Get-Mailbox](/powershell/module/exchange/get-mailbox) z parametrem *-Filter* i [zapytaniem OPATH](/powershell/exchange/filter-properties) dla zakresu adaptacyjnego ujętego w nawiasy klamrowe (`{`,`}`). Jeśli wartości atrybutów są ciągami, umieść te wartości w cudzysłowie podwójnym lub pojedynczym.  
 
-    Możesz określić, czy `Get-Mailbox` `Get-Recipient` chcesz użyć polecenia cmdlet, czy sprawdzić jego poprawność, przez określenie, które polecenie cmdlet jest obsługiwane przez właściwość [OPATH](/powershell/exchange/filter-properties) wybieraną dla zapytania.
+    Możesz określić, czy ma być używane `Get-Mailbox` , czy `Get-Recipient` walidacji, identyfikując, które polecenie cmdlet jest obsługiwane przez [właściwość OPATH](/powershell/exchange/filter-properties) wybraną dla zapytania.
 
     > [!IMPORTANT]
-    > `Get-Mailbox` nie obsługuje typu adresata *MailUser* , dlatego `Get-Recipient` należy go używać do sprawdzania poprawności zapytań, które zawierają lokalne skrzynki pocztowe w środowisku hybrydowym.
+    > `Get-Mailbox` Nie obsługuje typu adresata *usługi MailUser* , dlatego `Get-Recipient` musi służyć do weryfikowania zapytań, które zawierają lokalne skrzynki pocztowe w środowisku hybrydowym.
 
-    Aby sprawdzić **poprawność zakresu** użytkownika, użyj jednej z tych funkcji:
+    Aby zweryfikować zakres **użytkownika** , użyj jednego z następujących elementów:
     - `Get-Mailbox`z lub `-RecipientTypeDetails UserMailbox`
-    - `Get-Recipient` z `-RecipientTypeDetails UserMailbox,MailUser`
+    - `Get-Recipient` Z `-RecipientTypeDetails UserMailbox,MailUser`
     
-    Aby sprawdzić poprawność **Microsoft 365 zakresu** grupy, użyj:
-    - `Get-Mailbox`lub z `Get-Recipient``-RecipientTypeDetails GroupMailbox`
+    Aby zweryfikować zakres **grupy Microsoft 365**, użyj:
+    - `Get-Mailbox` lub `Get-Recipient` z `-RecipientTypeDetails GroupMailbox`
 
-    Aby na przykład sprawdzić poprawność **zakresu** użytkownika, możesz użyć:
+    Aby na przykład zweryfikować zakres **użytkownika** , można użyć następujących elementów:
     
     ````PowerShell
     Get-Recipient -RecipientTypeDetails UserMailbox,MailUser -Filter {Department -eq "Marketing"} -ResultSize Unlimited
     ````
     
-    Aby sprawdzić **poprawność Microsoft 365 zakresu** grupy, możesz użyć:
+    Aby zweryfikować zakres **grupy Microsoft 365**, można użyć:
     
     ```PowerShell
     Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
 
-3. Sprawdź, czy dane wyjściowe są takie, jak oczekiwani użytkownicy lub grupy w ramach adaptacyjnego zakresu. Jeśli tak się nie stanie, sprawdź zapytanie i wartości u odpowiedniego administratora usługi Azure AD lub Exchange.
+3. Sprawdź, czy dane wyjściowe są zgodne z oczekiwanymi użytkownikami lub grupami dla zakresu adaptacyjnego. Jeśli tak się nie stanie, sprawdź zapytanie i wartości u odpowiedniego administratora usługi Azure AD lub Exchange.
  
-Aby uruchomić zapytanie przy użyciu SharePoint wyszukiwania:
+Aby uruchomić zapytanie przy użyciu wyszukiwania SharePoint:
 
-1. Używając konta administratora globalnego lub konta z SharePoint administratora globalnego, przejdź do pozycji `https://<your_tenant>.sharepoint.com/search`.
+1. Korzystając z konta administratora globalnego lub konta z rolą administratora SharePoint, przejdź do strony `https://<your_tenant>.sharepoint.com/search`.
 
 2. Użyj paska wyszukiwania, aby określić zapytanie KQL.
 
-3. Sprawdź, czy wyniki wyszukiwania są zgodne z oczekiwanymi adresami URL witryny dla adaptacyjnego zakresu. Jeśli tak się nie stanie, sprawdź zapytanie i adresy URL u odpowiedniego administratora, aby uzyskać więcej SharePoint.
+3. Sprawdź, czy wyniki wyszukiwania są zgodne z oczekiwanymi adresami URL witryny dla zakresu adaptacyjnego. Jeśli tego nie zrobią, sprawdź zapytanie i adresy URL u odpowiedniego administratora, aby uzyskać SharePoint.
 
-### <a name="configuration-information-for-static-scopes"></a>Informacje o konfiguracji dla zakresów statycznych
+### <a name="configuration-information-for-static-scopes"></a>Informacje o konfiguracji zakresów statycznych
 
-Gdy zdecydujesz się używać zakresów statycznych, musisz zdecydować, czy zasady mają być stosowane do wszystkich wystąpień dla wybranej lokalizacji (całej lokalizacji), czy do uwzględnienia bądź wykluczenia określonych wystąpień (określonych dołączeń lub wykluczeń).
+Jeśli zdecydujesz się na użycie zakresów statycznych, musisz zdecydować, czy zastosować zasady do wszystkich wystąpień dla wybranej lokalizacji (całej lokalizacji), czy uwzględnić lub wykluczyć określone wystąpienia (określone dołączenia lub wykluczenia).
 
-#### <a name="a-policy-that-applies-to-entire-locations"></a>Zasady dotyczące całych lokalizacji
+#### <a name="a-policy-that-applies-to-entire-locations"></a>Zasady, które mają zastosowanie do całych lokalizacji
 
-Z wyjątkiem Skype dla firm domyślnie wszystkie wystąpienia wybranych lokalizacji są automatycznie uwzględniane w zasadach bez konieczności ich określania jako uwzględnionych.
+Z wyjątkiem Skype dla firm domyślne jest to, że wszystkie wystąpienia dla wybranych lokalizacji są automatycznie uwzględniane w zasadach bez konieczności określania ich jako dołączone.
 
-Na przykład: **Wszyscy adresaci** w Exchange **e-mail**. Po ustawieniu domyślnym wszystkie istniejące skrzynki pocztowe użytkowników będą uwzględniane w zasadach, a wszystkie nowe skrzynki pocztowe utworzone po zastosowaniu zasad automatycznie odziedziczą zasady.
+Na przykład **Wszyscy adresaci** Exchange lokalizacji **poczty e-mail**. W przypadku tego ustawienia domyślnego wszystkie istniejące skrzynki pocztowe użytkowników zostaną uwzględnione w zasadach, a wszystkie nowe skrzynki pocztowe utworzone po zastosowaniu zasad zostaną automatycznie dziedziczone.
 
 #### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Zasady z określonymi dołączeniami lub wykluczeniami
 
-Jeśli korzystasz z opcjonalnej konfiguracji w celu ograniczenia ustawień przechowywania do konkretnych użytkowników, konkretnych grup Microsoft 365 lub konkretnych witryn, istnieją pewne ograniczenia dotyczące zasad, o których należy pamiętać. Aby uzyskać więcej informacji, [zobacz Limity dotyczące zasad przechowywania i zasad etykiet przechowywania](retention-limits.md). 
+Należy pamiętać, że jeśli używasz opcjonalnej konfiguracji do określania zakresu ustawień przechowywania dla określonych użytkowników, określonych grup Microsoft 365 lub określonych witryn, istnieją pewne limity dla poszczególnych zasad, o których należy pamiętać. Aby uzyskać więcej informacji, zobacz [Limity zasad przechowywania i zasad etykiet przechowywania](retention-limits.md). 
 
-Aby użyć opcjonalnej konfiguracji w celu ustawienia zakresu ustawień przechowywania, upewnij się, że stan tej lokalizacji jest Wł **., a** następnie użyj linków, aby uwzględnić lub wykluczyć określonych użytkowników, Microsoft 365 grupy lub witryny.
+Aby użyć opcjonalnej konfiguracji do określania zakresu ustawień przechowywania, upewnij się, że **stan** tej lokalizacji to **Włączone**, a następnie użyj linków, aby dołączyć lub wykluczyć określonych użytkowników, Microsoft 365 grupy lub witryny.
 
 > [!WARNING]
-> Jeśli skonfigurujesz wystąpienia tak, aby uwzględniały i usuwały ostatnie, dla lokalizacji zostanie przywrócona  opcja Wszystkie.  Przed zapisaniem zasad upewnij się, że jest to konfiguracja, która ma być przez Ciebie zamierzana.
+> Jeśli skonfigurujesz wystąpienia do uwzględnienia, a następnie usuniesz ostatnie, konfiguracja powróci do pozycji **Wszystkie** dla lokalizacji.  Przed zapisaniem zasad upewnij się, że jest to konfiguracja, którą zamierzasz zapisać.
 >
-> Jeśli na przykład określisz jedną witrynę programu SharePoint, która ma zostać dołączona do zasad przechowywania skonfigurowanych do usuwania danych, SharePoint następnie usuniesz pojedynczą witrynę, domyślnie wszystkie witryny programu SharePoint będą podlegały zasadom przechowywania, które trwale usuwają dane. To samo dotyczy także adresatów Exchange, OneDrive, użytkowników Teams czatów itp.
+> Jeśli na przykład określisz jedną SharePoint lokację do uwzględnienia w zasadach przechowywania skonfigurowanych do usuwania danych, a następnie usuniesz pojedynczą lokację, domyślnie wszystkie SharePoint lokacje będą podlegać zasadom przechowywania, które trwale usuwają dane. Dotyczy to również adresatów Exchange, kont OneDrive, Teams użytkowników czatu itd.
 >
-> W tym scenariuszu wyłącz lokalizację, jeśli nie chcesz, aby ustawienie Wszystkie dla  lokalizacji podlegało zasadom przechowywania. Możesz również określić wykluczanie wystąpień wykluczania z zasad.
+> W tym scenariuszu wyłącz lokalizację, jeśli nie chcesz, aby ustawienie **Wszystkie** dla lokalizacji podlegało zasadom przechowywania. Alternatywnie określ wykluczanie wystąpień, które mają być wykluczone z zasad.
 
 ## <a name="locations"></a>Lokalizacje
 
-Lokalizacje w zasadach przechowywania identyfikują określone usługi Microsoft 365, które obsługują ustawienia przechowywania, takie jak poczta e-mail Exchange i witryny SharePoint sieci Web. W poniższej sekcji znajdziesz lokalizacje ze szczegółami konfiguracji i możliwymi wyjątkami, o których musisz pamiętać podczas wybierania ich do zasad.
+Lokalizacje w zasadach przechowywania identyfikują określone usługi Microsoft 365 obsługujące ustawienia przechowywania, takie jak Exchange poczty e-mail i witryn SharePoint. Poniższa sekcja zawiera informacje o lokalizacjach ze szczegółami konfiguracji i możliwymi wyjątkami, o których należy pamiętać po wybraniu ich dla zasad.
 
-### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Informacje o konfiguracji poczty Exchange e-mail Exchange folderach publicznych
+### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Informacje o konfiguracji Exchange wiadomości e-mail i Exchange folderów publicznych
 
-Lokalizacja **Exchange-mail** obsługuje przechowywanie wiadomości e-mail, kalendarza i innych elementów skrzynki pocztowej użytkowników, stosując ustawienia przechowywania na poziomie skrzynki pocztowej. Udostępnione skrzynki pocztowe są również obsługiwane.
+Lokalizacja **Exchange poczty e-mail** obsługuje przechowywanie poczty e-mail, kalendarza i innych elementów skrzynki pocztowej przez zastosowanie ustawień przechowywania na poziomie skrzynki pocztowej. Obsługiwane są również udostępnione skrzynki pocztowe.
 
-Skrzynki pocztowe zasobów, kontakty i skrzynki Microsoft 365 grupy nie są obsługiwane w przypadku Exchange e-mail. Aby Microsoft 365 skrzynki pocztowe grup, wybierz zamiast **Microsoft 365 grupy.** Mimo że lokalizacja Exchange początkowo pozwala na wybór skrzynki pocztowej grupy w zakresie statycznym, podczas próby zapisania zasad przechowywania jest wyświetlany komunikat o błędzie, że "RemoteGroupMailbox" nie jest prawidłową wartością wyboru dla tej lokalizacji.
+Skrzynki pocztowe zasobów, kontakty i skrzynki pocztowe grup Microsoft 365 nie są obsługiwane w przypadku Exchange wiadomości e-mail. W przypadku skrzynek pocztowych Microsoft 365 grup wybierz zamiast tego **lokalizację Grupy Microsoft 365**. Chociaż lokalizacja Exchange początkowo zezwala na wybór skrzynki pocztowej grupy dla zakresu statycznego, podczas próby zapisania zasad przechowywania jest wyświetlany błąd informujący o tym, że opcja "RemoteGroupMailbox" nie jest prawidłowym wyborem dla tej lokalizacji.
 
-W zależności od konfiguracji [zasad mogą być](inactive-mailboxes-in-office-365.md) uwzględniane nieaktywne skrzynki pocztowe:
+W zależności od konfiguracji zasad [nieaktywne skrzynki pocztowe](inactive-mailboxes-in-office-365.md) mogą być dołączone lub nie:
 
-- Zakresy statycznych zasad obejmują nieaktywne skrzynki pocztowe,  jeśli używasz domyślnej konfiguracji Wszyscy adresaci, ale nie są obsługiwani w przypadku określonych dołączeń [lub wykluczeń](#a-policy-with-specific-inclusions-or-exclusions). Jeśli jednak uwzględnisz lub wykluczysz adresata, który ma aktywną skrzynkę pocztową w momencie stosowania zasad, a skrzynka pocztowa zostanie później nieaktywna, ustawienia przechowywania będą nadal stosowane lub wykluczane.
+- Zakresy zasad statycznych obejmują nieaktywne skrzynki pocztowe w przypadku korzystania z domyślnej konfiguracji **Wszyscy adresaci** , ale nie są obsługiwane w [przypadku określonych wklęsłych lub wykluczeń](#a-policy-with-specific-inclusions-or-exclusions). Jeśli jednak uwzględnisz lub wykluczysz adresata, który ma aktywną skrzynkę pocztową w momencie zastosowania zasad, a skrzynka pocztowa później stanie się nieaktywna, ustawienia przechowywania będą nadal stosowane lub wykluczane.
 
-- Zakresy adaptacyjnych zasad domyślnie obejmują nieaktywne skrzynki pocztowe, gdy spełniają one zapytanie zakresu. Można je wykluczyć przy użyciu zaawansowanego konstruktora zapytań i właściwości OPATH *IsInactiveMailbox*:
+- Domyślnie zakresy zasad adaptacyjnych obejmują nieaktywne skrzynki pocztowe, gdy spełniają zapytanie zakresu. Można je wykluczyć za pomocą zaawansowanego konstruktora zapytań i właściwości OPATH *IsInactiveMailbox*:
     
     ```console
     (IsInactiveMailbox -eq "False")
     ```
 
-Jeśli użyjesz statycznego zakresu zasad i wybierzesz adresatów, którzy będą dołączać lub wykluczać, możesz wybrać grupy dystrybucyjne i grupy zabezpieczeń z obsługą poczty e-mail jako wydajny sposób wybierania wielu adresatów zamiast wybierania ich jeden po jeden. Gdy użyjesz tej opcji, te grupy są automatycznie rozszerzane w tle w czasie konfiguracji w celu wybrania skrzynek pocztowych użytkowników w grupie. W przypadku późniejszej zmiany członkostwa w tych grupach istniejące zasady przechowywania nie są automatycznie aktualizowane, w przeciwieństwie do adaptacyjnych zakresów zasad.
+Jeśli używasz zakresu zasad statycznych i wybierasz adresatów do uwzględnienia lub wykluczenia, możesz wybrać grupy dystrybucyjne i grupy zabezpieczeń z obsługą poczty e-mail jako efektywny sposób wybierania wielu adresatów zamiast wybierać ich jeden po drugim. W przypadku korzystania z tej opcji w tle te grupy są automatycznie rozwijane w czasie konfiguracji, aby wybrać skrzynki pocztowe użytkowników w grupie. Jeśli członkostwo w tych grupach zmieni się później, istniejące zasady przechowywania nie zostaną automatycznie zaktualizowane, w przeciwieństwie do zakresów zasad adaptacyjnych.
 
-Aby uzyskać szczegółowe informacje o tym, które elementy skrzynki pocztowej są uwzględniane i wykluczane podczas konfigurowania ustawień przechowywania Exchange, zobacz Co zawiera [przechowywanie i usuwanie](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
+Aby uzyskać szczegółowe informacje o tym, które elementy skrzynki pocztowej są uwzględniane i wykluczane podczas konfigurowania ustawień przechowywania dla Exchange, zobacz [Co zawiera przechowywanie i usuwanie](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
-Lokalizacja **Exchange folderów** publicznych powoduje zastosowanie ustawień przechowywania do wszystkich folderów publicznych i nie można jej stosować na poziomie folderu lub skrzynki pocztowej.
+Lokalizacja **folderów publicznych Exchange** stosuje ustawienia przechowywania do wszystkich folderów publicznych i nie może być stosowana na poziomie folderu lub skrzynki pocztowej.
 
-#### <a name="exceptions-for-auto-apply-policies-configured-for-sensitive-information-types"></a>Wyjątki dotyczące zasad automatycznego stosowania skonfigurowanych dla typów informacji poufnych
+#### <a name="exceptions-for-auto-apply-policies-configured-for-sensitive-information-types"></a>Wyjątki dla zasad automatycznego stosowania skonfigurowanych dla typów informacji poufnych
 
-Po skonfigurowaniu zasad automatycznego stosowania, które mają typy informacji poufnych, i wybierz lokalizację Exchange **e-mail**:
+Po skonfigurowaniu zasad automatycznego stosowania korzystających z typów informacji poufnych i wybraniu **Exchange lokalizacji poczty e-mail**:
 
-- Microsoft 365 skrzynek pocztowych grupy.
+- Microsoft 365 są uwzględniane skrzynki pocztowe grupy.
 
-- Wszystkie skrzynki pocztowe są uwzględniane automatycznie, nawet jeśli konfigurowane są adaptacyjne zakresy w celu identyfikowania konkretnych skrzynek pocztowych. Jeśli został wybrany statyczny zakres zasad, nie będzie można określić adresatów, których chcesz uwzględnić lub wykluczyć.
+- Wszystkie skrzynki pocztowe są automatycznie dołączane, nawet jeśli skonfigurowano zakres adaptacyjny do identyfikowania określonych skrzynek pocztowych. Jeśli wybrano zakres zasad statycznych, nie będzie można określić adresatów do uwzględnienia lub wykluczenia.
 
-### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Informacje o konfiguracji witryn SharePoint i kont OneDrive sieci Web
+### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Informacje o konfiguracji dla witryn SharePoint i kont OneDrive
 
-Po wybraniu lokalizacji witryn **SharePoint** zasady przechowywania mogą zachowywać i usuwać dokumenty w witrynach do komunikacji usługi SharePoint, witrynach zespołu, które nie są połączone przez grupy usługi Microsoft 365 i witryny klasyczne. Jeśli nie korzystasz z adaptacyjnych zakresów [zasad, witryny](#exceptions-for-adaptive-policy-scopes) zespołu połączone za pomocą grup usługi Microsoft 365 nie są obsługiwane w przypadku tej opcji i zamiast tego używaj lokalizacji grup usługi **Microsoft 365**, która dotyczy zawartości w skrzynce pocztowej, witrynie i plikach grupy.
+Po wybraniu lokalizacji **lokacji SharePoint** zasady przechowywania mogą przechowywać i usuwać dokumenty w witrynach komunikacji SharePoint, witrynach zespołu, które nie są połączone przez grupy Microsoft 365 i lokacje klasyczne. Jeśli nie używasz [zakresów zasad adaptacyjnych](#exceptions-for-adaptive-policy-scopes), witryny zespołu połączone przez grupy Microsoft 365 nie są obsługiwane za pomocą tej opcji, a zamiast tego użyj lokalizacji **Grupy Microsoft 365**, która ma zastosowanie do zawartości w skrzynce pocztowej, witrynie i plikach grupy.
 
-Aby uzyskać szczegółowe informacje o tym, co jest uwzględniane i wykluczane podczas konfigurowania ustawień przechowywania dla aplikacji SharePoint i OneDrive, zobacz Co zawiera przechowywanie i [usuwanie](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
+Aby uzyskać szczegółowe informacje na temat elementów uwzględnionych i wykluczonych podczas konfigurowania ustawień przechowywania dla SharePoint i OneDrive, zobacz [Co jest dołączone do przechowywania i usuwania](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
-Po określeniu lokalizacji dla witryn SharePoint lub kont OneDrive nie są potrzebne uprawnienia dostępu do witryn. W przypadku zakresów statycznych sprawdzanie poprawności nie jest wykonywane podczas określania adresu URL na **stronie Edytowanie** lokalizacji. Jednak określone SharePoint są sprawdzane, czy istnieją na ostatniej stronie konfiguracji. Jeśli to sprawdzanie zakończy się niepowodzeniem, zostanie wyświetlony komunikat informujący o tym, że sprawdzanie poprawności wprowadzonego adresu URL nie powiodło się i nie można utworzyć zasad przechowywania, dopóki sprawdzanie poprawności nie przejdzie. Jeśli zostanie wyświetlony ten komunikat, wróć do procesu konfiguracji, aby zmienić adres URL lub usunąć witrynę z zasad przechowywania.
+Po określeniu lokalizacji dla SharePoint witryn lub kont OneDrive nie potrzebujesz uprawnień dostępu do witryn. W przypadku zakresów statycznych w momencie określania adresu URL na stronie **Edytowanie lokalizacji** nie jest wykonywana żadna weryfikacja. Jednak SharePoint lokacje, które określisz, są sprawdzane, czy istnieją na ostatniej stronie konfiguracji. Jeśli to sprawdzanie zakończy się niepowodzeniem, zostanie wyświetlony komunikat, że weryfikacja adresu URL nie powiodła się, a zasady przechowywania nie mogą zostać utworzone, dopóki sprawdzanie poprawności nie zostanie zakończone pomyślnie. Jeśli zostanie wyświetlony ten komunikat, wróć do procesu konfiguracji, aby zmienić adres URL lub usunąć witrynę z zasad przechowywania.
 
-Aby określić poszczególne OneDrive, zobacz Uzyskiwanie listy wszystkich adresów [URL OneDrive UŻYTKOWNIKÓW w organizacji](/onedrive/list-onedrive-urls).
-
-> [!NOTE]
-> Podczas określania poszczególnych kont OneDrive należy pamiętać, że jeśli nie utworzono wstępnie obsługi administracyjnej kont usługi [OneDrive, adres](/onedrive/pre-provision-accounts) URL nie zostanie utworzony, dopóki użytkownik nie OneDrive dostępu do swojego konta po raz pierwszy.
->
-> Ponadto adres URL OneDrive zostanie [automatycznie](/onedrive/upn-changes) zmienić w przypadku zmiany głównej nazwy użytkownika. Może to być na przykład zdarzenie, w przypadku które ma zostać zmienione nazwy, takie jak chłonienie, lub zmiana nazwy domeny w celu obsługi zmiany nazwy organizacji lub  wywłasniania nazwy firmy. Jeśli zmieni się upn, należy zaktualizować adresy URL usługi OneDrive określone dla ustawień przechowywania.
->
-> Ze względu na wyzwania związane z niezawodnym określaniem adresów URL dla poszczególnych użytkowników, które powinny być dołączane lub wykluczane w zakresach statycznych[, adaptacyjne](retention.md#adaptive-or-static-policy-scopes-for-retention) zakresy z typem zakresu Użytkownik lepiej nadają się do tego celu.
-
-#### <a name="exceptions-for-adaptive-policy-scopes"></a>Wyjątki dla adaptacyjnych zakresów zasad
-
-Po skonfigurowaniu zasad przechowywania, które mają zakresy adaptacyjnych zasad, i wybierz lokalizację **SharePoint witryn:**
-
-- OneDrive i witryny Microsoft 365 połączone z grupą są uwzględniane nie tylko w witrynach komunikacji SharePoint, witrynach  zespołu, które nie są połączone przez grupy Microsoft 365 i witryny klasyczne.
-
-### <a name="configuration-information-for-microsoft-365-groups"></a>Informacje o konfiguracji dla Microsoft 365 grupy
-
-Aby zachować lub usunąć zawartość grupy Microsoft 365 grupy (dawniej Office 365), użyj lokalizacji grupy Microsoft 365 **grupy**. W przypadku zasad przechowywania ta lokalizacja obejmuje skrzynkę pocztową grupy i SharePoint zespołów. W przypadku etykiet przechowywania ta lokalizacja obejmuje tylko SharePoint zespołu.
+Aby określić poszczególne konta OneDrive, zobacz [Pobieranie listy wszystkich adresów URL OneDrive użytkowników w organizacji](/onedrive/list-onedrive-urls).
 
 > [!NOTE]
-> Mimo że grupa Microsoft 365 ma skrzynkę pocztową usługi Exchange, zasady przechowywania dla lokalizacji poczty e Exchange-mail nie będą uwzględniać zawartości w skrzynkach pocztowych Microsoft 365 grupy.
+> Po określeniu indywidualnych kont OneDrive należy pamiętać, że jeśli konta OneDrive nie zostaną [wstępnie aprowizowane](/onedrive/pre-provision-accounts), adres URL nie zostanie utworzony, dopóki użytkownik nie otrzyma pierwszego dostępu do OneDrive.
+>
+> Ponadto adres URL OneDrive zostanie [automatycznie zmieniony](/onedrive/upn-changes) w przypadku zmiany nazwy UPN użytkownika. Na przykład zdarzenie zmieniające nazwę, takie jak małżeństwo, lub zmiana nazwy domeny w celu obsługi zmiany nazwy organizacji lub restrukturyzacji firmy. W przypadku zmiany nazwy UPN należy zaktualizować adresy URL OneDrive określone dla ustawień przechowywania.
+>
+> Ze względu na wyzwania związane z niezawodnym określaniem adresów URL dla poszczególnych użytkowników, które mają być uwzględniane lub wykluczane dla zakresów statycznych, [zakresy adaptacyjne](retention.md#adaptive-or-static-policy-scopes-for-retention) z typem **zakresu użytkownika** są lepiej dostosowane do tego celu.
 
-W przypadku użycia zakresów statycznych: Chociaż lokalizacja poczty **e-mail** w zakresie statycznym Exchange początkowo pozwala określić skrzynkę pocztową grupy, która ma być uwzględniana lub wykluczona, podczas próby zapisania zasad przechowywania będzie wyświetlany komunikat o błędzie, że wartość "RemoteGroupMailbox" nie jest prawidłową wartością dla lokalizacji usługi Exchange.
+#### <a name="exceptions-for-adaptive-policy-scopes"></a>Wyjątki dla zakresów zasad adaptacyjnych
 
-Domyślnie zasady przechowywania stosowane do grupy Microsoft 365 obejmują skrzynkę pocztową grupy i witrynę SharePoint zespołów. Pliki przechowywane w witrynie SharePoint zespołu są objęte tą lokalizacją, ale nie Teams czatów ani wiadomości Teams kanałów, które mają własne lokalizacje zasad przechowywania.
+Po skonfigurowaniu zasad przechowywania korzystających z zakresów zasad adaptacyjnych i wybraniu lokalizacji **SharePoint lokacji**:
 
-Aby zmienić domyślne ustawienie, ponieważ zasady przechowywania mają być stosowane tylko do skrzynek pocztowych programu Microsoft 365 lub tylko połączonych witryn zespołów programu SharePoint, użyj polecenia cmdlet [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell z parametrem *Applications* (Aplikacje) z jedną z następujących wartości:
+- OneDrive lokacje i witryny połączone z grupami Microsoft 365 są dołączone do witryn komunikacji SharePoint, witryn zespołów, które nie są połączone przez grupy Microsoft 365 i witryn klasycznych.
 
-- `Group:Exchange`tylko Microsoft 365, które są połączone z grupą.
-- `Group:SharePoint`tylko SharePoint witryn połączonych z grupą.
+### <a name="configuration-information-for-microsoft-365-groups"></a>Informacje o konfiguracji Grupy Microsoft 365
 
-Aby przywrócić domyślną wartość zarówno skrzynki pocztowej, jak i witryny SharePoint dla wybranych grup Microsoft 365, określ .`Group:Exchange,SharePoint`
+Aby zachować lub usunąć zawartość grupy Microsoft 365 (dawniej Office 365), użyj lokalizacji **Grupy Microsoft 365**. W przypadku zasad przechowywania ta lokalizacja obejmuje skrzynkę pocztową grupy i witrynę SharePoint teams. W przypadku etykiet przechowywania ta lokalizacja obejmuje tylko witrynę SharePoint teams.
 
-#### <a name="exceptions-for-auto-apply-policies-configured-for-sensitive-information-types"></a>Wyjątki dotyczące zasad automatycznego stosowania skonfigurowanych dla typów informacji poufnych
+> [!NOTE]
+> Mimo że grupa Microsoft 365 ma Exchange skrzynkę pocztową, zasady przechowywania **dla lokalizacji Exchange wiadomości e-mail** nie będą zawierać zawartości w skrzynkach pocztowych Microsoft 365 grup.
 
-Po skonfigurowaniu zasad automatycznego stosowania, które mają typy informacji poufnych, i wybierz lokalizację grupy **Microsoft 365 grupy:**
+Jeśli używasz zakresów statycznych: chociaż **lokalizacja Exchange poczty e-mail** dla zakresu statycznego początkowo umożliwia określenie skrzynki pocztowej grupy, która ma zostać uwzględniona lub wykluczona, podczas próby zapisania zasad przechowywania zostanie wyświetlony błąd informujący, że opcja "RemoteGroupMailbox" nie jest prawidłowym wyborem dla lokalizacji Exchange.
 
-- Microsoft 365 skrzynek pocztowych grupy nie są uwzględniane. Aby uwzględnić te skrzynki pocztowe w zasadach, wybierz zamiast tego **Exchange poczty e-mail**.
+Domyślnie zasady przechowywania stosowane do grupy Microsoft 365 obejmują skrzynkę pocztową grupy i witrynę SharePoint teams. Pliki przechowywane w witrynie zespołów SharePoint są objęte tą lokalizacją, ale nie Teams czatów ani Teams komunikatów kanału, które mają własne lokalizacje zasad przechowywania.
 
-#### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Co się stanie, Microsoft 365 grupa zostanie usunięta po zastosowaniu zasad
+Aby zmienić ustawienie domyślne, ponieważ zasady przechowywania mają być stosowane tylko do skrzynek pocztowych Microsoft 365 lub tylko do połączonych witryn SharePoint teams, użyj polecenia cmdlet [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) programu PowerShell z parametrem *Aplikacje* z jedną z następujących wartości:
 
-Gdy zasady przechowywania (statyczny zakres zasad lub adaptacyjne) są stosowane do grupy zasad Microsoft 365, a następnie ta grupa jest usuwana z Azure Active Directory:
+- `Group:Exchange`tylko dla Microsoft 365 skrzynek pocztowych połączonych z grupą.
+- `Group:SharePoint`tylko dla SharePoint witryn połączonych z grupą.
 
-- Witryna grupy połączonej SharePoint jest zachowywana i nadal jest zarządzana przez zasady przechowywania z Microsoft 365 **grupy**. Witryna będzie nadal dostępna dla osób, które miały do niego dostęp przed usunięciem grupy, a wszelkie nowe uprawnienia muszą być teraz zarządzane za pośrednictwem SharePoint.
+Aby powrócić do wartości domyślnej zarówno skrzynki pocztowej, jak i witryny SharePoint dla wybranych grup Microsoft 365, określ `Group:Exchange,SharePoint`wartość .
+
+#### <a name="exceptions-for-auto-apply-policies-configured-for-sensitive-information-types"></a>Wyjątki dla zasad automatycznego stosowania skonfigurowanych dla typów informacji poufnych
+
+Podczas konfigurowania zasad automatycznego stosowania korzystających z typów informacji poufnych i wybrania lokalizacji **Grupy Microsoft 365**:
+
+- Microsoft 365 skrzynki pocztowe grup nie są uwzględniane. Aby uwzględnić te skrzynki pocztowe w zasadach, wybierz **Exchange lokalizacji poczty e-mail**.
+
+#### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Co się stanie, jeśli grupa Microsoft 365 zostanie usunięta po zastosowaniu zasad
+
+Gdy zasady przechowywania (zakres zasad statycznych lub adaptacyjne) są stosowane do grupy Microsoft 365, a następnie ta grupa jest usuwana z Azure Active Directory:
+
+- Lokacja SharePoint połączona z grupą jest zachowywana i nadal jest zarządzana przez zasady przechowywania z **lokalizacją Grupy Microsoft 365**. Witryna jest nadal dostępna dla osób, które miały do niej dostęp przed usunięciem grupy, a wszelkie nowe uprawnienia muszą być teraz zarządzane za pośrednictwem SharePoint.
     
-    W tym momencie nie można wykluczyć witryny z Microsoft 365 Grupy, ponieważ usuniętej grupy nie można określić. Jeśli chcesz zwolnić zasady przechowywania z tej witryny, skontaktuj się z pomocą techniczną firmy Microsoft. Na przykład otwórz żądanie [usługi w Centrum Administracja Microsoft 365 sieci.](https://admin.microsoft.com/Adminportal/Home#/support)
+    W tym momencie nie można wykluczyć witryny z Grupy Microsoft 365 lokalizacji, ponieważ nie można określić usuniętej grupy. Jeśli musisz zwolnić zasady przechowywania z tej witryny, skontaktuj się z pomoc techniczna firmy Microsoft. Na przykład otwórz [żądanie obsługi w centrum Administracja Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/support).
 
-- Skrzynka pocztowa usuniętej grupy staje się nieaktywna i podobnie SharePoint, podlega ustawień przechowywania. Aby uzyskać więcej informacji, zobacz [Nieaktywne skrzynki pocztowe w Exchange Online](inactive-mailboxes-in-office-365.md).
+- Skrzynka pocztowa usuniętej grupy staje się nieaktywna i podobnie jak SharePoint lokacja, pozostaje objęta ustawieniami przechowywania. Aby uzyskać więcej informacji, zobacz [Nieaktywne skrzynki pocztowe w Exchange Online](inactive-mailboxes-in-office-365.md).
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informacje o konfiguracji dla Skype dla firm
 
 > [!NOTE]
-> Skype dla firm [wycofano 31 lipca 2021](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/skype-for-business-online-to-be-retired-in-2021/ba-p/777833) r. i zachęcamy klientów do migracji do Microsoft Teams. Jednak zasady przechowywania dla Skype dla firm będą nadal obsługiwane dla istniejących klientów.
+> Skype dla firm została [wycofana 31 lipca 2021](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/skype-for-business-online-to-be-retired-in-2021/ba-p/777833) r. i zachęcamy klientów do migracji do Microsoft Teams. Jednak zasady przechowywania dla Skype dla firm nadal są obsługiwane dla istniejących klientów.
 
-W przeciwieństwie do poczty e-mail usługi Exchange, nie można włączyć stanu lokalizacji usługi Skype, aby automatycznie uwzględniać wszystkich użytkowników, ale po włączeniu tej lokalizacji musisz ręcznie wybrać użytkowników, których konwersacje chcesz zachować:
+W przeciwieństwie do Exchange poczty e-mail nie można przełączać stanu Skype lokalizacji w celu automatycznego uwzględnienia wszystkich użytkowników, ale po włączeniu tej lokalizacji należy ręcznie wybrać użytkowników, których konwersacje chcesz zachować:
 
-![Wybierz Skype lokalizacji zasad przechowywania.](../media/skype-location-retention-policies.png)
+![Wybierz Skype lokalizację dla zasad przechowywania.](../media/skype-location-retention-policies.png)
 
-Po wybraniu tej **opcji edytuj** w okienku **Skype dla firm możesz szybko** dołączyć wszystkich użytkowników, zaznaczając ukryte pole przed **kolumną** Nazwa. Należy jednak pamiętać, że każdy użytkownik jest liczony jako określone uwzględnienie w zasadach. Jeśli więc uwzględnisz 1000 użytkowników, zaznaczenie tego pola będzie takie samo, jak w przypadku ręcznego wybrania 1000 użytkowników, co jest maksymalnym obsługiwanym poziomem Skype dla firm.
+Po wybraniu tej opcji **Edytuj** w okienku **Skype dla firm** możesz szybko dołączyć wszystkich użytkowników, wybierając ukryte pole przed kolumną **Nazwa**. Jednak ważne jest, aby zrozumieć, że każdy użytkownik liczy się jako określone włączenie do zasad. Jeśli więc uwzględnisz 1000 użytkowników, wybierając to pole, będzie to takie samo, jak w przypadku ręcznego wybrania 1000 użytkowników do uwzględnienia, co jest maksymalną obsługą Skype dla firm.
 
-Historia **konwersacji**, folder w folderze Outlook, to funkcja, która nie ma nic wspólnego z Skype archiwizacją. **Historię konwersacji** może wyłączyć użytkownik końcowy, ale archiwizowanie w programie Skype odbywa się przez przechowywanie kopii konwersacji programu Skype w ukrytym folderze, który jest niedostępny dla użytkownika, ale dostępny na potrzeby zbierania elektronicznych materiałów dowodowych.
+Należy pamiętać, że **historia konwersacji**, folder w Outlook, jest funkcją, która nie ma nic wspólnego z archiwizowaniem Skype. **Historia konwersacji** może zostać wyłączona przez użytkownika końcowego, ale archiwizowanie Skype odbywa się przez zapisanie kopii konwersacji Skype w ukrytym folderze, który jest niedostępny dla użytkownika, ale dostępny dla eDiscovery.
 
-## <a name="settings-for-retaining-and-deleting-content"></a>Ustawienia zachowywania i usuwania zawartości
+## <a name="settings-for-retaining-and-deleting-content"></a>Ustawienia do przechowywania i usuwania zawartości
 
-Po wybraniu ustawień zachowywania i usuwania zawartości zasady przechowywania będą mieć jedną z następujących konfiguracji przez określony czas:
+Wybierając ustawienia przechowywania i usuwania zawartości, zasady przechowywania będą miały jedną z następujących konfiguracji przez określony czas:
 
-- Tylko do zachowania
+- Zachowaj tylko
+    
+    W przypadku tej konfiguracji wybierz następujące opcje:
+    
+    - W przypadku zasad przechowywania: na stronie **Zdecyduj, czy chcesz zachować zawartość, usunąć ją lub obie** strony, wybierz pozycję **Zachowaj elementy dla określonego okresu**, określ okres przechowywania, a następnie dla pozycji **Na końcu okresu przechowywania** wybierz pozycję **Nie rób nic** , aby usunąć ustawienia przechowywania.  Aby zachować bez daty zakończenia, wybierz pozycję **Zachowaj elementy na zawsze** na tej stronie.
+    
+    - W przypadku etykiet przechowywania: na **stronie Definiowanie ustawień etykiet** wybierz pozycję **Zachowaj elementy na czas nieokreślony lub dla określonego okresu**, a następnie:
+        - Aby ustawienia przechowywania nie obowiązywały już dla zawartości oznaczonej po określonym czasie: na stronie **Definiowanie okresu przechowywania** w polu **Zachowaj elementy** określ okres. Następnie na stronie **Wybierz, co się stanie po okresie przechowywania** wybierz pozycję **Dezaktywuj ustawienia przechowywania**. Etykieta pozostaje w zawartości, ale bez ograniczeń, tak jakby była to [etykieta, która po prostu klasyfikuje](retention.md#classifying-content-without-applying-any-actions).
+        - Aby zachować bez daty zakończenia: na stronie **Definiowanie okresu przechowywania** dla pozycji **Zachowaj elementy** wybierz pozycję **Okres nieokreślony**. Etykieta pozostaje w zawartości z [istniejącymi ograniczeniami](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked ).
 
-    W przypadku tej konfiguracji wybierz pozycję **Zachowaj elementy przez określony okres** i Na koniec okresu **przechowywania: Nie robisz nic**. Możesz też wybrać pozycję **Zachowaj elementy na zawsze**.
+- Zachowaj, a następnie usuń
 
-- Zachowywanie, a następnie usuwanie
+    W przypadku tej konfiguracji wybierz następujące opcje:
+    
+    - W przypadku zasad przechowywania: na stronie **Zdecyduj, czy chcesz zachować zawartość, usuń ją lub obie** strony, wybierz pozycję **Zachowaj elementy dla określonego okresu**, określ okres przechowywania, a następnie na **koniec okresu przechowywania** wybierz pozycję **Usuń elementy automatycznie**.
+    
+    - W przypadku etykiet przechowywania: na stronie **Definiowanie ustawień etykiet** wybierz pozycję **Zachowaj elementy na czas nieokreślony lub dla określonego okresu**, określ okres przechowywania, a następnie wybierz pozycję **Wybierz, co dzieje się po okresie przechowywania**, wybierz **pozycję Usuń elementy automatycznie** lub **Rozpocznij przegląd dyspozycji**. Aby uzyskać informacje o przeglądach dyspozycji, zobacz [Przegląd dyspozycji](disposition.md#disposition-reviews).
 
-    W tej konfiguracji wybierz pozycję **Zachowaj elementy przez określony okres** i Na koniec okresu **przechowywania: Automatyczne usuwanie elementów**.
+- Tylko usuwanie
 
-- Delete-only
+    W przypadku tej konfiguracji wybierz następujące opcje:
+    
+    - W przypadku zasad przechowywania: na stronie **Zdecyduj, czy chcesz zachować zawartość, czy obie** strony, wybierz pozycję **Usuń tylko elementy po osiągnięciu określonego wieku** i określ okres.
+    
+    - W przypadku etykiet przechowywania: na stronie **Definiowanie ustawień etykiet** wybierz pozycję **Wymuszaj akcje po określonym okresie** i określ okres, który nadal jest określany jako okres przechowywania. Opcja **Wybierz, co się stanie po tym okresie** , zostanie automatycznie ustawiona na opcję **Usuń elementy automatycznie**.
 
-    W tej konfiguracji wybierz pozycję **Usuń elementy tylko wtedy, gdy osiągną określony wiek**.
+### <a name="retaining-content-for-a-specific-period-of-time"></a>Zachowywanie zawartości przez określony okres czasu
 
-### <a name="retaining-content-for-a-specific-period-of-time"></a>Zachowywanie zawartości przez określony czas
+Podczas konfigurowania etykiety przechowywania lub zasad przechowywania zawartości można zachować elementy przez określoną liczbę dni, miesięcy lub lat. Możesz też zachować elementy na zawsze. Okres przechowywania nie jest obliczany na podstawie czasu przypisania zasad, ale zgodnie z początkiem określonego okresu przechowywania.
 
-Konfigurując etykietę przechowywania lub zasady przechowywania zawartości, możesz określić, czy elementy mają być zachowywane przez określoną liczbę dni, miesięcy lub lat. Ewentualnie zachowaj te elementy na zawsze. Okres przechowywania nie jest obliczany na podstawie czasu przydzielenia zasad, ale zgodnie z okresem rozpoczęcia okresu przechowywania.
-
-Po rozpoczęciu okresu przechowywania można określić, kiedy utworzono zawartość lub kiedy ostatnia modyfikacja zawartości była obsługiwana tylko w przypadku plików oraz grup SharePoint, OneDrive i Microsoft 365. W przypadku etykiet przechowywania można rozpocząć okres przechowywania od zawartości, która została oznaczona etykietą, oraz kiedy nastąpi zdarzenie.
+Na początku okresu przechowywania można wybrać, kiedy zawartość została utworzona lub obsługiwana tylko dla plików i SharePoint, OneDrive i Grupy Microsoft 365, kiedy zawartość została ostatnio zmodyfikowana. W przypadku etykiet przechowywania można rozpocząć okres przechowywania od zawartości, która została oznaczona etykietą, oraz w przypadku wystąpienia zdarzenia.
 
 Przykłady:
 
-- SharePoint: Jeśli chcesz zachować elementy w zbiorze witryn przez siedem lat od ostatniej modyfikacji tej zawartości, a dokument w tym zbiorze witryn nie został zmodyfikowany przez sześć lat, dokument zostanie zachowany tylko przez kolejny rok, jeśli nie zostanie zmodyfikowany. Jeśli dokument będzie edytowany ponownie, wiek dokumentu jest obliczany na podstawie nowej daty ostatniej modyfikacji i będzie zachowywany przez kolejne siedem lat.
+- SharePoint: Jeśli chcesz zachować elementy w zbiorze witryn przez siedem lat po ostatniej modyfikacji tej zawartości, a dokument w tym zbiorze witryn nie został zmodyfikowany w ciągu sześciu lat, dokument zostanie zachowany tylko przez kolejny rok, jeśli nie zostanie zmodyfikowany. Jeśli dokument zostanie ponownie edytowany, wiek dokumentu jest obliczany na podstawie nowej daty ostatniej modyfikacji i będzie przechowywany przez kolejne siedem lat.
 
-- Exchange: Jeśli chcesz zachować elementy w skrzynce pocztowej przez siedem lat, a wiadomość została wysłana sześć lat temu, wiadomość zostanie zachowana tylko przez jeden rok. W Exchange wiadomości e-mail wiek jest oparty na dacie odebranej dla przychodzącej wiadomości e-mail lub na dacie wysłania wychodzącej wiadomości e-mail. Zachowywanie elementów na podstawie daty ostatniej modyfikacji dotyczy tylko zawartości witryny w witrynach OneDrive i SharePoint.
+- Exchange: Jeśli chcesz przechowywać elementy w skrzynce pocztowej przez siedem lat, a wiadomość została wysłana sześć lat temu, wiadomość zostanie zachowana tylko przez jeden rok. W przypadku Exchange elementów wiek zależy od daty odebrania przychodzącej wiadomości e-mail lub daty wysłania wychodzącej wiadomości e-mail. Zachowywanie elementów na podstawie ostatniej modyfikacji ma zastosowanie tylko do zawartości witryny w OneDrive i SharePoint.
 
-Po zakończeniu okresu przechowywania możesz określić, czy zawartość ma zostać trwale usunięta:
+Po zakończeniu okresu przechowywania możesz wybrać, czy zawartość ma zostać trwale usunięta. Na przykład w przypadku zasad przechowywania:
 
-![Stronie Ustawień przechowywania.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![Strona ustawień przechowywania.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
-Zanim skonfigurujesz przechowywanie, najpierw zapoznaj się z limitami pojemności i przestrzeni dyskowej dla odpowiednich obciążeń:
+Przed skonfigurowaniem przechowywania najpierw zapoznaj się z limitami pojemności i magazynu dla odpowiednich obciążeń:
 
-- Na SharePoint i OneDrive przechowywane elementy są przechowywane w bibliotece zachowywania witryny, która jest uwzględniana w przydomowym magazynie witryny. Aby uzyskać więcej informacji, zobacz [Zarządzanie limitami miejsca w witrynie](/sharepoint/manage-site-collection-storage-limits) z SharePoint przechowywania.
+- W przypadku SharePoint i OneDrive zachowane elementy są przechowywane w bibliotece archiwum zachowywania witryny, która jest uwzględniona w limitach przydziału magazynu lokacji. Aby uzyskać więcej informacji, zobacz [Zarządzanie limitami magazynu lokacji](/sharepoint/manage-site-collection-storage-limits) z dokumentacji SharePoint.
 
-- Aby Exchange, Teams i Yammer, gdzie przechowywane wiadomości są przechowywane w skrzynkach pocztowych, zobacz limity Exchange Online i włącz automatyczne rozszerzanie [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) [archiwizacji](autoexpanding-archiving.md).
+- Aby uzyskać Exchange, Teams i Yammer, w których przechowywane wiadomości są przechowywane w skrzynkach pocztowych, zobacz [Exchange Online limity](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) i włącz [automatyczne rozszerzanie archiwizacji](autoexpanding-archiving.md).
     
-    W skrajnych przypadkach, gdy w krótkim czasie duża liczba wiadomości e-mail jest usuwana przez użytkowników albo automatycznie z ustawień zasad, konieczne może być również skonfigurowanie w programie Exchange częściej przenoszenia elementów z folderu Elementy do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy do odzyskania w jego archiwaowej skrzynce pocztowej. Aby uzyskać instrukcje krok po kroku, zobacz Zwiększanie przydziału elementów odzyskiwalnych dla skrzynek pocztowych w [hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+    W skrajnych przypadkach, gdy duża ilość wiadomości e-mail jest usuwana w krótkim czasie przez użytkowników lub automatycznie z ustawień zasad, może być również konieczne skonfigurowanie Exchange w celu częstszego przenoszenia elementów z folderu Elementy do odzyskania w podstawowej skrzynce pocztowej użytkownika do folderu Elementy możliwe do odzyskania w ich archiwum skrzynki pocztowej. Aby uzyskać instrukcje krok po kroku, zobacz [Zwiększanie limitu przydziału elementów możliwych do odzyskania dla skrzynek pocztowych wstrzymanych](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Usuwanie zawartości starszej niż określony wiek
 
-Zasady przechowywania mogą zachowywać, a następnie usuwać elementy lub usuwać stare elementy bez ich zachowywania.
+Ustawienia przechowywania mogą zachowywać, a następnie usuwać elementy lub usuwać stare elementy bez ich przechowywania.
 
-W obu przypadkach, jeśli zasady usuwają elementy, należy pamiętać, że podany okres nie jest obliczany na podstawie czasu przydzielenia zasad, ale zgodnie z rozpoczęciem określonego okresu przechowywania. Na przykład od czasu utworzenia, modyfikacji lub etykiety elementu.
+W obu przypadkach, jeśli ustawienia przechowywania usuwają elementy, ważne jest, aby zrozumieć, że określony okres nie jest obliczany od momentu przypisania zasad, ale zgodnie z rozpoczęciem określonego okresu przechowywania. Na przykład od momentu utworzenia, zmodyfikowania lub etykiety elementu.
 
-Dlatego najpierw weź pod uwagę wiek istniejącej zawartości i wpływ zasad na tę zawartość. Możesz także przed przydzieleniem użytkowników przekazać użytkownikom nowe zasady w celu przydzielenia im czasu na ocenę możliwego wpływu.
+Z tego powodu najpierw należy wziąć pod uwagę wiek istniejącej zawartości i wpływ ustawień na tę zawartość. Rozważ przekazanie wybranych ustawień użytkownikom i działowi pomocy technicznej przed zastosowaniem ustawień do zawartości, co daje im czas na ocenę możliwego wpływu.
 
-### <a name="a-policy-that-applies-to-entire-locations"></a>Zasady dotyczące całych lokalizacji
+### <a name="a-policy-that-applies-to-entire-locations"></a>Zasady, które mają zastosowanie do całych lokalizacji
 
-Po wybraniu lokalizacji, z wyjątkiem Skype dla firm, ustawieniem domyślnym jest Wszystkie, gdy stan lokalizacji jest  **Wł**.
+Po wybraniu lokalizacji z wyjątkiem Skype dla firm ustawienie domyślne to **Wszystkie**, gdy stan lokalizacji jest **włączony**.
 
-Jeśli zasady przechowywania mają zastosowanie do dowolnej kombinacji całych lokalizacji, nie ma ograniczenia liczby adresatów, witryn, kont, grup itp., które mogą obejmować zasady.
+Jeśli zasady przechowywania mają zastosowanie do dowolnej kombinacji całych lokalizacji, nie ma limitu liczby adresatów, witryn, kont, grup itp., które mogą zawierać zasady.
 
-Jeśli na przykład zasady obejmują wszystkie wiadomości Exchange e-mail i wszystkie witryny SharePoint, zostaną uwzględnione wszystkie witryny i adresaci, niezależnie od ich liczby. Z drugiej Exchange nowa skrzynka pocztowa utworzona po zastosowaniu zasad automatycznie odziedziczy zasady.
+Jeśli na przykład zasady obejmują wszystkie Exchange wiadomości e-mail i wszystkie witryny SharePoint, wszystkie witryny i adresaci zostaną uwzględnieni bez względu na liczbę. A w przypadku Exchange każda nowa skrzynka pocztowa utworzona po zastosowaniu zasad automatycznie dziedziczy zasady.
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Zasady z określonymi dołączeniami lub wykluczeniami
 
-Jeśli korzystasz z opcjonalnej konfiguracji w celu ograniczenia ustawień przechowywania do konkretnych użytkowników, konkretnych grup Microsoft 365 lub konkretnych witryn, istnieją pewne ograniczenia dotyczące zasad, o których należy pamiętać. Aby uzyskać więcej informacji, [zobacz Limity dotyczące zasad przechowywania i zasad etykiet przechowywania](retention-limits.md). 
+Należy pamiętać, że jeśli używasz opcjonalnej konfiguracji do określania zakresu ustawień przechowywania dla określonych użytkowników, określonych grup Microsoft 365 lub określonych witryn, istnieją pewne limity dla poszczególnych zasad, o których należy pamiętać. Aby uzyskać więcej informacji, zobacz [Limity zasad przechowywania i zasad etykiet przechowywania](retention-limits.md). 
 
-Aby użyć opcjonalnej konfiguracji w celu ustawienia zakresu ustawień przechowywania, upewnij się, że stan tej lokalizacji jest Wł **., a** następnie użyj linków, aby uwzględnić lub wykluczyć określonych użytkowników, Microsoft 365 grupy lub witryny.
+Aby użyć opcjonalnej konfiguracji do określania zakresu ustawień przechowywania, upewnij się, że **stan** tej lokalizacji to **Włączone**, a następnie użyj linków, aby dołączyć lub wykluczyć określonych użytkowników, Microsoft 365 grupy lub witryny.
 
 > [!WARNING]
-> Jeśli skonfigurujesz uwzględnia, a następnie usuniesz ostatni, dla lokalizacji zostanie przywrócona konfiguracja **Wszystkie** .  Przed zapisaniem zasad upewnij się, że jest to konfiguracja, która ma być przez Ciebie zamierzana.
+> Jeśli skonfigurujesz opcję obejmuje, a następnie usuniesz ostatnią, konfiguracja powróci do pozycji **Wszystkie** dla lokalizacji.  Przed zapisaniem zasad upewnij się, że jest to konfiguracja, którą zamierzasz zapisać.
 >
-> Jeśli na przykład określisz jedną witrynę programu SharePoint, która ma zostać dołączona do zasad przechowywania skonfigurowanych do usuwania danych, SharePoint następnie usuniesz pojedynczą witrynę, domyślnie wszystkie witryny programu SharePoint będą podlegały zasadom przechowywania, które trwale usuwają dane. To samo dotyczy także adresatów Exchange, OneDrive, użytkowników Teams czatów itp.
+> Jeśli na przykład określisz jedną SharePoint lokację do uwzględnienia w zasadach przechowywania skonfigurowanych do usuwania danych, a następnie usuniesz pojedynczą lokację, domyślnie wszystkie SharePoint lokacje będą podlegać zasadom przechowywania, które trwale usuwają dane. Dotyczy to również adresatów Exchange, kont OneDrive, Teams użytkowników czatu itp.
 >
-> W tym scenariuszu wyłącz lokalizację, jeśli nie chcesz, aby ustawienie Wszystkie dla  lokalizacji podlegało zasadom przechowywania. Ewentualnie określ wykluczenia z zasad.
+> W tym scenariuszu wyłącz lokalizację, jeśli nie chcesz, aby ustawienie **Wszystkie** dla lokalizacji podlegało zasadom przechowywania. Alternatywnie określ wykluczenia, które mają być wykluczone z zasad.
 
 ## <a name="updating-policies-for-retention"></a>Aktualizowanie zasad przechowywania
 
-Po utworzeniu i zapisaniu zasad przechowywania nie można zmieniać niektórych ustawień, takich jak:
+Niektórych ustawień nie można zmienić po utworzeniu i zapisaniu zasad przechowywania, które obejmują:
 - Nazwa zasad i ustawienia przechowywania z wyjątkiem okresu przechowywania i czasu rozpoczęcia okresu przechowywania.
 
-Jeśli edytujesz zasady przechowywania, a elementy będą już podlegać pierwotnym ustawień w twoich zasadach przechowywania, zaktualizowane ustawienia zostaną automatycznie zastosowane do tych elementów oprócz elementów, które zostały nowo zidentyfikowane.
+Jeśli edytujesz zasady przechowywania, a elementy są już objęte oryginalnymi ustawieniami w zasadach przechowywania, zaktualizowane ustawienia zostaną automatycznie zastosowane do tych elementów oprócz nowo zidentyfikowanych elementów.
 
-Zazwyczaj ta aktualizacja jest dość szybka, ale może potrwać kilka dni. Po zakończeniu replikacji zasad Microsoft 365 lokalizacji przechowywania stan zasad przechowywania zostanie wyświetlony w Centrum zgodności platformy Microsoft 365 z **Wł. (** oczekiwanie) na Wł **. (Powodzenie)** .
+Zazwyczaj ta aktualizacja jest dość szybka, ale może potrwać kilka dni. Po zakończeniu replikacji zasad między lokalizacjami Microsoft 365 zobaczysz stan zasad przechowywania w Centrum zgodności platformy Microsoft 365 zmiany z **Włączone (Oczekujące)** **na Włączone (Powodzenie)**.
 
-## <a name="locking-the-policy-to-prevent-changes"></a>Blokowanie zasad w celu uniemożliwinia zmian
+## <a name="locking-the-policy-to-prevent-changes"></a>Blokowanie zasad w celu zapobiegania zmianom
 
-Jeśli chcesz się upewnić, że nikt nie będzie miał możliwości wyłączenia zasad, usunięcia zasad lub ich mniej restrykcyjnych, zobacz Używanie blokady zachowywania do ograniczania zmian zasad przechowywania i zasad etykiet [przechowywania](retention-preservation-lock.md).
+Jeśli musisz upewnić się, że nikt nie może wyłączyć zasad, usunąć zasad lub uczynić je mniej restrykcyjnym, zobacz [Używanie blokady zachowania, aby ograniczyć zmiany zasad przechowywania i zasad etykiet przechowywania](retention-preservation-lock.md).

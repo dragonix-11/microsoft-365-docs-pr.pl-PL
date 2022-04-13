@@ -1,155 +1,155 @@
 ---
-title: Office 365 zabezpieczeń, w tym Ochrona usługi Office 365 w usłudze Microsoft Defender i Exchange Online Protection
+title: zabezpieczenia Office 365, w tym Ochrona usługi Office 365 w usłudze Microsoft Defender i Exchange Online Protection
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Zabezpieczenia w Office 365, od usługi EOP do Ochrona usługi Office 365 w usłudze Defender planów 1 i 2, konfiguracji standardowej i ścisłej konfiguracji zabezpieczeń i nie tylko. Dowiedz się, co masz i jak zabezpieczyć swoje właściwości.
+description: Zabezpieczenia w Office 365, od EOP do planów Ochrona usługi Office 365 w usłudze Defender 1 i 2, standardowa i ścisła konfiguracja zabezpieczeń i nie tylko. Dowiedz się, co masz i jak zabezpieczyć swoje właściwości.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ddf81e038b4c055134498ee0a26751b735d786a
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: a9f480575c712488a17dc7e9e91320edc11d0e50
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472182"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835914"
 ---
-# <a name="microsoft-defender-for-office-365-security-overview"></a>Ochrona usługi Office 365 w usłudze Microsoft Defender o zabezpieczeniach
+# <a name="microsoft-defender-for-office-365-security-overview"></a>Omówienie zabezpieczeń Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 **Dotyczy**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 i plan 2](defender-for-office-365.md)
+- [Usługi Microsoft Defender dla usługi Office 365 (plan 1 i plan 2)](defender-for-office-365.md)
 
-Ten artykuł zawiera wprowadzenie do nowych Ochrona usługi Office 365 w usłudze Microsoft Defender zabezpieczeń w chmurze. Niezależnie od tego, czy jesteś częścią Centrum operacji zabezpieczeń, jesteś administratorem zabezpieczeń w tym miejscu, czy chcesz odświeżyć swoją pracę.
+W tym artykule przedstawiono nowe właściwości zabezpieczeń Ochrona usługi Office 365 w usłudze Microsoft Defender w chmurze. Niezależnie od tego, czy jesteś częścią centrum operacji zabezpieczeń, jesteś nowym administratorem zabezpieczeń w tej przestrzeni, czy chcesz odświeżać, zacznijmy.
 
 > [!CAUTION]
-> Jeśli korzystasz z usługi **Outlook.com**, **Microsoft 365 Family** lub **Microsoft 365 Personal** i potrzebujesz linków *Sejf* lub załączników programu *Sejf*, kliknij ten ***link***: Zaawansowane zabezpieczenia usługi [Outlook.com dla Microsoft 365 subskrybenci](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Jeśli używasz **witryny Outlook.com**, **Microsoft 365 Family** lub **Microsoft 365 Personal** i potrzebujesz informacji *o* *linkach Sejf lub załącznikach Sejf*, ***kliknij ten link***: [Zaawansowane zabezpieczenia Outlook.com dla Microsoft 365 subskrybentów](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-## <a name="what-is-defender-for-office-365-security"></a>Co to jest Ochrona usługi Office 365 w usłudze Defender zabezpieczeń
+## <a name="what-is-defender-for-office-365-security"></a>Co to są zabezpieczenia Ochrona usługi Office 365 w usłudze Defender
 
-Każda Office 365 ma funkcje zabezpieczeń. Cele i działania, jakie możesz podjąć, zależą od fokusu tych różnych subskrypcji. W Office 365 zabezpieczeń istnieją trzy główne usługi zabezpieczeń (lub produkty) powiązane z typem subskrypcji:
+Każda subskrypcja Office 365 ma funkcje zabezpieczeń. Cele i akcje, które można podjąć, zależą od ukierunkowania tych różnych subskrypcji. W Office 365 zabezpieczeń istnieją trzy główne usługi zabezpieczeń (lub produkty) powiązane z typem subskrypcji:
 
 1. Exchange Online Protection (EOP)
-1. Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1 (Defender dla Office P1)
-1. Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2 (Defender dla komputerów Office P2)
+1. Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 (Defender for Office P1)
+1. Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 (Defender for Office P2)
 
 > [!NOTE]
-> Jeśli zakupiono subskrypcję i chcesz teraz w tej chwili w programie zapewnić funkcje *zabezpieczeń, przejdź* do procedury opisanej w artykule Ochrona [przed zagrożeniami](protect-against-threats.md) . Jeśli dopiero zaczynasz korzystać z subskrypcji i chcesz poznać swoją licencję przed rozpoczęciem, przejrzyj strony Rozliczenia > Produkty w [Centrum administracyjne platformy Microsoft 365.](https://admin.microsoft.com/AdminPortal/#/homepage)
+> Jeśli subskrypcja została zakupiona i musisz *teraz* wdrożyć funkcje zabezpieczeń, przejdź do kroków [opisanych w artykule Ochrona przed zagrożeniami](protect-against-threats.md) . Jeśli dopiero zaczynasz swoją subskrypcję i chcesz poznać swoją licencję przed rozpoczęciem, przejdź do obszaru Rozliczenia > Produkty w [Centrum administracyjne platformy Microsoft 365](https://admin.microsoft.com/AdminPortal/#/homepage).
 
-Office 365 zabezpieczeń na podstawie podstawowych zabezpieczeń oferowanych przez usługę EOP. Usługa EOP jest obecna w dowolnej subskrypcji, Exchange Online można znaleźć skrzynki pocztowe (pamiętaj, że wszystkie produkty zabezpieczające omówione tutaj są oparte na chmurze).
+Office 365 zabezpieczenia bazują na podstawowych zabezpieczeniach oferowanych przez EOP. EOP jest obecny w dowolnej subskrypcji, w której można znaleźć Exchange Online skrzynki pocztowe (pamiętaj, że wszystkie produkty zabezpieczeń omówione tutaj są oparte na chmurze).
 
-Być może wiesz, że te trzy składniki zostały omówione w ten sposób:
+Możesz być przyzwyczajony do tego, że te trzy składniki zostały omówione w ten sposób:
 
 |EOP|Ochrona usługi Office 365 w usłudze Microsoft Defender P1|Ochrona usługi Office 365 w usłudze Microsoft Defender P2|
 |---|---|---|
-|Zapobiega szerokiemu, znanemu atakowi opartemu na woluminie.|Chroni pocztę e-mail i współpracę przed złośliwym oprogramowaniem, wyłudami i firmowymi zabezpieczeniami poczty e-mail.|Dodaje badania po naruszeniu, łowiectwo i reakcję, a także automatyzację i symulacyjne (na szkoleniach).|
+|Zapobiega szerokim, opartym na woluminie, znanym atakom.|Chroni pocztę e-mail i współpracę przed złośliwym oprogramowaniem, złośliwym oprogramowaniem i złośliwym oprogramowaniem oraz naruszeniem zabezpieczeń poczty e-mail w firmie.|Dodaje badania po naruszeniu zabezpieczeń, wyszukiwanie zagrożeń i reagowanie, a także automatyzację i symulację (na potrzeby trenowania).|
 
-Pod względem architektury zacznijmy jednak od pojęcia każdej z nich jako skumulowanych warstw zabezpieczeń z wyróżnieniem zabezpieczeń. Bardziej przypomina to:
+Ale jeśli chodzi o architekturę, zacznijmy od myślenia o każdym kawałku jako skumulowanych warstwach zabezpieczeń, z których każda ma nacisk na bezpieczeństwo. Bardziej podobny do następującego:
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Usługi EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender między sobą oraz ich relacje z wyróżnieniem usługi, w tym uwaga do uwierzytelniania wiadomości e-mail" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender i ich relacje ze sobą z naciskiem na usługę, w tym notatkę dotyczącą uwierzytelniania za pośrednictwem poczty e-mail" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
 
-Mimo że każda z tych usług ma na celu ochrona, wykrywanie, badanie i odpowiadanie, ***wszystkie** _ usługi mogą wykonywać _ *_dowolne_** cele ochrony, wykrywania, badania i odpowiadania.
+Mimo że każda z tych usług podkreśla cel spośród funkcji Ochrona, Wykrywanie, Badanie i Reagowanie, ***all** _ usługi mogą realizować _ *_dowolne_** cele ochrony, wykrywania, badania i reagowania.
 
-Podstawową zasadą Office 365 jest ochrona EOP. Ochrona usługi Office 365 w usłudze Microsoft Defender P1 zawiera program EOP. Ochrona usługi Office 365 w usłudze Defender P2 zawiera składniki P1 i EOP. Struktura jest skumulowana. Dlatego podczas konfigurowania tego produktu należy uruchomić usługę EOP i pracować nad jej Ochrona usługi Office 365 w usłudze Defender.
+Podstawą zabezpieczeń Office 365 jest ochrona EOP. Ochrona usługi Office 365 w usłudze Microsoft Defender P1 zawiera w nim EOP. Ochrona usługi Office 365 w usłudze Defender P2 zawiera P1 i EOP. Struktura jest skumulowana. Dlatego podczas konfigurowania tego produktu należy zacząć od EOP i pracować nad Ochrona usługi Office 365 w usłudze Defender.
 
-Konfiguracja uwierzytelniania wiadomości e-mail odbywa się w publicznym systemie DNS, jednak warto skonfigurować tę funkcję, aby ułatwić obronę przed fałszercą. *Jeśli masz usługę EOP,* ***musisz skonfigurować [uwierzytelnianie poczty e-mail](email-validation-and-authentication.md)***.
+Mimo że konfiguracja uwierzytelniania poczty e-mail odbywa się w publicznym systemie DNS, ważne jest, aby skonfigurować tę funkcję w celu ochrony przed fałszowaniem. *Jeśli masz funkcję EOP,* ***należy [skonfigurować uwierzytelnianie poczty e-mail](email-validation-and-authentication.md)***.
 
-Jeśli masz konto Office 365 E3 lub poniżej, masz usługę EOP, ale z opcją zakupu autonomicznego Ochrona usługi Office 365 w usłudze Defender P1 przez uaktualnienie. Jeśli masz Office 365 E5, masz już Ochrona usługi Office 365 w usłudze Defender P2.
+Jeśli masz Office 365 E3 lub poniżej, masz EOP, ale z opcją zakupu autonomicznego Ochrona usługi Office 365 w usłudze Defender P1 poprzez uaktualnienie. Jeśli masz Office 365 E5, masz już Ochrona usługi Office 365 w usłudze Defender P2.
 
 > [!TIP]
-> Jeśli Twoja subskrypcja nie jest Office 365 E3 ani E5, możesz sprawdzić, czy masz możliwość uaktualnienia do Ochrona usługi Office 365 w usłudze Microsoft Defender P1. Jeśli chcesz, ta strona sieci [](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) Web zawiera listę subskrypcji, które można uaktualnić do Ochrona usługi Office 365 w usłudze Microsoft Defender P1 (sprawdź, czy na końcu strony jest drobnym drukiem).
+> Jeśli Twoja subskrypcja nie jest Office 365 E3 lub E5, nadal możesz sprawdzić, czy masz możliwość uaktualnienia do Ochrona usługi Office 365 w usłudze Microsoft Defender P1. Jeśli cię to interesuje, [ta strona internetowa](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) zawiera listę subskrypcji kwalifikujących się do uaktualnienia Ochrona usługi Office 365 w usłudze Microsoft Defender P1 (sprawdź koniec strony, aby uzyskać szczegółowe informacje).
 
-## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>Ten Office 365 zabezpieczeń od EOP do Ochrona usługi Office 365 w usłudze Microsoft Defender
+## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>Drabina zabezpieczeń Office 365 od EOP do Ochrona usługi Office 365 w usłudze Microsoft Defender
 
 > [!IMPORTANT]
-> Zapoznaj się ze szczegółami na tych [stronach: Exchange Online Protection](exchange-online-protection-overview.md) i [Ochrona usługi Office 365 w usłudze Defender](defender-for-office-365.md).
+> Poznaj szczegóły na tych stronach: [Exchange Online Protection](exchange-online-protection-overview.md) i [Ochrona usługi Office 365 w usłudze Defender](defender-for-office-365.md).
 
-To, co sprawia Ochrona usługi Office 365 w usłudze Microsoft Defender dodanie planów korzyści wyłącznie z zarządzania zagrożeniami WOOP może być trudne do odsłoniania na pierwszy rzut oka. Aby ułatwić sortowanie, czy ścieżka uaktualnienia jest właściwa dla Twojej organizacji, przyjrzyjmy się możliwościom poszczególnych produktów, jeśli chodzi o:
+Co sprawia, że dodawanie planów Ochrona usługi Office 365 w usłudze Microsoft Defender jest zaletą czystego zarządzania zagrożeniami EOP, na pierwszy rzut oka może być trudne. Aby ustalić, czy ścieżka uaktualnienia jest odpowiednia dla Twojej organizacji, przyjrzyjmy się możliwościom każdego produktu, jeśli chodzi o:
 
-- zapobieganie i wykrywanie zagrożeń
-- badanie
-- odpowiadanie
+- zapobieganie zagrożeniom i ich wykrywanie
+- Badania
+- Odpowiadać
 
-zaczynając od **Exchange Online Protection**:
+począwszy od **Exchange Online Protection**:
 <p>
 
 |Zapobieganie/wykrywanie|Zbadaj|Odpowiadanie|
 |---|---|---|
-|Do technologii należą:<ul><li>spam</li><li>phish</li><li>złośliwe oprogramowanie</li><li>poczta masowa</li><li>fałszywa inteligencja</li><li>wykrywanie personifikacji</li><li>Kwarantanna administratora</li><li>Przesyłanie przez administratora i użytkownika wyników wyników fałszywie dodatnich i wyników fałszywie ujemnych</li><li>Zezwalaj na/blokuj dla adresów URL i plików</li><li>Raporty</li></ul>|<li>Przeszukiwanie dziennika inspekcji</li><li>Śledzenie wiadomości</li>|<li>Automatyczne czyszczenie zerowej godziny (ZAP)</li><li>Uściślij i testuj listy zezwalania i blokowania</li>|
+|Technologie obejmują:<ul><li>Spam</li><li>Phish</li><li>Złośliwego oprogramowania</li><li>poczta zbiorcza</li><li>fałszowanie inteligencji</li><li>wykrywanie personifikacji</li><li>Kwarantanna administratora</li><li>Przesyłanie przez administratora i użytkownika wyników fałszywie dodatnich i fałszywie ujemnych</li><li>Zezwalaj/blokuj dla adresów URL i plików</li><li>Raporty</li></ul>|<li>Przeszukiwanie dzienników inspekcji</li><li>Ślad komunikatu</li>|<li>Automatyczne przeczyszczanie o zerowej godzinie (ZAP)</li><li>Uściślanie i testowanie list dozwolonych i blokowych</li>|
 
-Jeśli chcesz przejść do programu EOP, przejdź **[do tego artykułu](exchange-online-protection-overview.md)**.
+Jeśli chcesz przejść do EOP, **[przejdź do tego artykułu](exchange-online-protection-overview.md)**.
 
-Ponieważ te produkty mają charakter skumulowany, Ochrona usługi Office 365 w usłudze Microsoft Defender P1 i zdecydujesz się go subskrybować, dodasz te możliwości.
+Ponieważ te produkty są skumulowane, jeśli ocenisz Ochrona usługi Office 365 w usłudze Microsoft Defender P1 i zdecydujesz się go zasubskrybować, dodasz te możliwości.
 
-Zyski z **Ochrona usługi Office 365 w usłudze Defender, Plan 1** (do tej pory):
+Zyski z **Ochrona usługi Office 365 w usłudze Defender, plan 1** (do tej pory):
 <p>
 
 |Zapobieganie/wykrywanie|Zbadaj|Odpowiadanie|
 |---|---|---|
-|Technologie obejmują wszystko w UOP oraz:<ul><li>Sejf załączników</li><li>Sejf linków<li>Ochrona usługi Office 365 w usłudze Microsoft Defender ochrony obciążeń (np. SharePoint online, Teams, OneDrive dla Firm)</li><li>Ochrona poczty e-mail, poczty e-mail, Office klientów i klientów Teams</li><li>ochrona przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender</li><li>Ochrona użytkownika i personifikacji domeny</li><li>Alerty i interfejs API integracji interfejsu SIEM dla alertów</li>|<li>Interfejs API integracji SIEM do wykrywania</li><li>**Narzędzie do wykrywania w czasie rzeczywistym**</li><li>Śledzenie adresu URL</li>|<li>Takie same</li></ul>
+|Technologie obejmują wszystko w ramach EOP plus:<ul><li>załączniki Sejf</li><li>linki Sejf<li>Ochrona usługi Office 365 w usłudze Microsoft Defender ochronę obciążeń (np. SharePoint Online, Teams, OneDrive dla Firm)</li><li>Ochrona przed kliknięciem w wiadomościach e-mail, klientach Office i Teams</li><li>ochrona przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender</li><li>Ochrona przed personifikacją użytkowników i domen</li><li>Alerty i interfejs API integracji SIEM dla alertów</li>|<li>Interfejs API integracji rozwiązania SIEM na potrzeby wykrywania</li><li>**Narzędzie do wykrywania w czasie rzeczywistym**</li><li>Śledzenie adresu URL</li>|<li>Tym samym</li></ul>
 
-Dlatego Ochrona usługi Office 365 w usłudze Microsoft Defender P1 zostanie rozszerzony na stronę *prevention_of the **house** i doda dodatkowe formy _*_detection_**.
+Dlatego Ochrona usługi Office 365 w usłudze Microsoft Defender P1 rozszerza się po stronie ***zapobiegania** _ domu i dodaje dodatkowe formy _*_wykrywania_**.
 
-Ochrona usługi Office 365 w usłudze Microsoft Defender P1 dodaje również **wykrywanie w** czasie rzeczywistym dla badań. To narzędzie do ochrony przed zagrożeniami jest pogrubione, ponieważ dzięki temu wiadomo,  że Ochrona usługi Office 365 w usłudze Defender P1. Nie jest ona wyświetlana na Ochrona usługi Office 365 w usłudze Defender P2.
+Ochrona usługi Office 365 w usłudze Microsoft Defender P1 dodaje również **wykrywanie w czasie rzeczywistym** na potrzeby badań. Nazwa tego narzędzia do wyszukiwania zagrożeń jest pogrubiona, ponieważ jest jasne, *że wiesz,* że masz Ochrona usługi Office 365 w usłudze Defender P1. Nie pojawia się w Ochrona usługi Office 365 w usłudze Defender P2.
 
-Zyski z **Ochrona usługi Office 365 w usłudze Defender, Plan 2** (do tej pory):
+Zyski z **Ochrona usługi Office 365 w usłudze Defender, plan 2** (do tej pory):
 <p>
 
 |Zapobieganie/wykrywanie|Zbadaj|Odpowiadanie|
 |---|---|---|
-|Technologie obejmują wszystko w UOKI, a Ochrona usługi Office 365 w usłudze Microsoft Defender P1 oraz:<ul><li>Takie same</li>|<li>**Eksplorator zagrożeń**</li><li>Moduły śledzące zagrożenia</li><li>Widoki kampanii</li>|<li>Zautomatyzowane badania i odpowiedzi (AIR)</li><li>AIR z Eksploratora zagrożeń</li><li>AIR w przypadku naruszonych użytkowników</li><li>Interfejs API integracji usług SIEM dla zautomatyzowanych badań</li>
+|Technologie obejmują wszystko w ramach EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender P1 plus:<ul><li>Tym samym</li>|<li>**Eksplorator zagrożeń**</li><li>Moduły śledzące zagrożenia</li><li>Widoki kampanii</li>|<li>Zautomatyzowane badanie i reagowanie (AIR)</li><li>AIR z Eksploratora zagrożeń</li><li>AIR dla użytkowników z naruszonymi zabezpieczeniami</li><li>Interfejs API integracji SIEM na potrzeby zautomatyzowanych badań</li>
 
-Dlatego Ochrona usługi Office 365 w usłudze Microsoft Defender P2 rozszerza się po stronie badania i odpowiedzi domu  i dodaje nową siłę łętwną. Automatyzacja.
+Tak więc Ochrona usługi Office 365 w usłudze Microsoft Defender P2 rozszerza ***stronę badania i odpowiedzi*** domu i dodaje nową siłę polowania. Automatyzacji.
 
-W Ochrona usługi Office 365 w usłudze Microsoft Defender P2 główne narzędzie wyszukiwania jest nazywane Eksploratorem **zagrożeń, a** nie wykrywaniem w czasie rzeczywistym. Jeśli po przechodzeniu do portalu usługi Microsoft 365 Defender jest wyświetlony Eksplorator Ochrona usługi Office 365 w usłudze Microsoft Defender, używasz komputera Ochrona usługi Office 365 w usłudze Microsoft Defender P2.
+W Ochrona usługi Office 365 w usłudze Microsoft Defender P2 podstawowym narzędziem do wyszukiwania zagrożeń jest **Eksplorator zagrożeń**, a nie wykrywanie w czasie rzeczywistym. Jeśli podczas przechodzenia do portalu Microsoft 365 Defender widzisz Eksploratora zagrożeń, znajdujesz się w Ochrona usługi Office 365 w usłudze Microsoft Defender P2.
 
-Aby przejść do szczegółów Ochrona usługi Office 365 w usłudze Microsoft Defender P1 i P2, **[przejdź do tego artykułu](defender-for-office-365.md)**.
+Aby zapoznać się ze szczegółami Ochrona usługi Office 365 w usłudze Microsoft Defender P1 i P2, **[przejdź do tego artykułu](defender-for-office-365.md)**.
 
 > [!TIP]
-> EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender także różnią się w przypadku użytkowników końcowych. W usługach EOP i Ochrona usługi Office 365 w usłudze Defender P1 fokus znajduje się na *informacji,* dlatego te dwie usługi dodają komunikat Report Outlook (Raport), który umożliwia użytkownikom zgłaszanie wiadomości *e-mail*, które znajdą podejrzanie, w celu dalszej analizy. <p> W Ochrona usługi Office 365 w usłudze Defender P2 (który zawiera wszystko w usługach EOP i P1) fokus przesunie się  na dalsze szkolenia dla użytkowników końcowych, dzięki czemu Centrum operacji zabezpieczeń będzie mieć dostęp do zaawansowanego  narzędzia skupu się na zagrożeniach i jego metryk dla użytkowników końcowych.
+> Metodyka EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender są również różne, jeśli chodzi o użytkowników końcowych. W modelu EOP i Ochrona usługi Office 365 w usłudze Defender P1 skupiamy się na *świadomości*, dlatego te dwie usługi zawierają *komunikat raportu Outlook dodatku*, aby użytkownicy mogli zgłaszać wiadomości e-mail, które uważają za podejrzane, w celu dalszej analizy. <p> W Ochrona usługi Office 365 w usłudze Defender P2 (który zawiera wszystkie elementy EOP i P1) fokus przenosi się na *dalsze szkolenia* dla użytkowników końcowych, dlatego centrum operacji zabezpieczeń ma dostęp do zaawansowanego narzędzia *symulatora zagrożeń* i udostępnianych metryk użytkowników końcowych.
 
-## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1 a Plan 2 - ściągawka
+## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 a ściągawka Plan 2
 
-Ten podręczny przewodnik pomoże Ci zrozumieć, jakie funkcje są dostępne w ramach poszczególnych Ochrona usługi Office 365 w usłudze Microsoft Defender subskrypcji. W połączeniu z Twoją wiedzą na temat funkcji usługi EOP może ona pomóc twórcom biznesowym w określeniu, Ochrona usługi Office 365 w usłudze Microsoft Defender jest najlepszy dla ich potrzeb.
+Ta szybka dokumentacja pomoże Ci zrozumieć, jakie możliwości mają poszczególne Ochrona usługi Office 365 w usłudze Microsoft Defender subskrypcji. W połączeniu z twoją wiedzą na temat funkcji EOP może pomóc decydentom biznesowym określić, jakie Ochrona usługi Office 365 w usłudze Microsoft Defender są najlepsze dla ich potrzeb.
 
-|Ochrona usługi Office 365 w usłudze Defender Plan 1|Ochrona usługi Office 365 w usłudze Defender Plan 2|
+|Ochrona usługi Office 365 w usłudze Defender plan 1|Ochrona usługi Office 365 w usłudze Defender plan 2|
 |---|---|
-|Funkcje konfiguracji, ochrony i wykrywania: <ul><li>[Sejf załączników](safe-attachments.md)</li><li>[Bezpieczne linki](safe-links.md)</li><li>[Sejf załączników do SharePoint, OneDrive i Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Ochrona przed wyłudzaniem informacji w programie Ochrona usługi Office 365 w usłudze Defender](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Wykrywanie w czasie rzeczywistym](threat-explorer.md)</li></ul>|Ochrona usługi Office 365 w usłudze Defender funkcji Plan 1 <p> --- plus --- <p> Funkcje automatyzacji, badań, rozwiązywania problemów i edukacji: <ul><li>[Moduły śledzące zagrożenia](threat-trackers.md)</li><li>[Eksplorator zagrożeń](threat-explorer.md)</li><li>[Zautomatyzowane badanie i reagowanie](office-365-air.md)</li><li>[Szkolenie z symeny ataków](attack-simulation-training.md)</li><li>[Aktywne wyszukiwanie zagrożeń za pomocą zaawansowanego wyszukiwania w Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Badanie zdarzeń w Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Badanie alertów w programie Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
+|Możliwości konfiguracji, ochrony i wykrywania: <ul><li>[załączniki Sejf](safe-attachments.md)</li><li>[Bezpieczne linki](safe-links.md)</li><li>[Bezpieczne załączniki dla programu SharePoint, usługi OneDrive i aplikacji Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Ochrona przed wyłudzaniem informacji w Ochrona usługi Office 365 w usłudze Defender](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Wykrywanie w czasie rzeczywistym](threat-explorer.md)</li></ul>|Ochrona usługi Office 365 w usłudze Defender plan 1 — możliwości <p> --- plus --- <p> Możliwości automatyzacji, badania, korygowania i edukacji: <ul><li>[Moduły śledzące zagrożenia](threat-trackers.md)</li><li>[Eksplorator zagrożeń](threat-explorer.md)</li><li>[Zautomatyzowane badanie i reagowanie](office-365-air.md)</li><li>[Trenowanie symulacji ataków](attack-simulation-training.md)</li><li>[Proaktywne wyszukiwanie zagrożeń dzięki zaawansowanym polowaniom w Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Badanie zdarzeń w Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Badanie alertów w Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
 
-- Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 2 jest zawarty w Office 365 E5, Office 365 A5 i Microsoft 365 E5.
+- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 2 jest uwzględniony w Office 365 E5, Office 365 A5 i Microsoft 365 E5.
 
-- Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1 jest dołączony do Microsoft 365 Business Premium.
+- Ochrona usługi Office 365 w usłudze Microsoft Defender plan 1 jest uwzględniony w Microsoft 365 Business Premium.
 
-- Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1 i Ochrona usługi Office 365 w usłudze Defender Plan 2 są dostępne jako dodatek dla niektórych subskrypcji. Aby dowiedzieć się więcej, oto kolejny link Dostępność funkcji w [Ochrona usługi Office 365 w usłudze Microsoft Defender planów](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Ochrona usługi Office 365 w usłudze Microsoft Defender Plan 1 i Ochrona usługi Office 365 w usłudze Defender Plan 2 są dostępne jako dodatek dla niektórych subskrypcji. Aby dowiedzieć się więcej, oto kolejny link [Dostępność funkcji w planach Ochrona usługi Office 365 w usłudze Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- Funkcja [Sejf dokumenty](safe-docs.md) jest dostępna tylko dla użytkowników z licencjami Microsoft 365 E5 lub Zabezpieczenia platformy Microsoft 365 E5 (nieujętą w Ochrona usługi Office 365 w usłudze Microsoft Defender).
+- Funkcja [dokumenty Sejf](safe-docs.md) jest dostępna tylko dla użytkowników z licencjami Microsoft 365 E5 lub Zabezpieczenia platformy Microsoft 365 E5 (nieobjętymi Ochrona usługi Office 365 w usłudze Microsoft Defender planów).
 
-- Jeśli Twoja bieżąca subskrypcja nie zawiera Ochrona usługi Office 365 w usłudze Microsoft Defender i chcesz, skontaktuj się ze sprzedażą, aby rozpocząć okres próbny, [i](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) dowiedz się, Ochrona usługi Office 365 w usłudze Microsoft Defender w Twojej organizacji.
+- Jeśli bieżąca subskrypcja nie zawiera Ochrona usługi Office 365 w usłudze Microsoft Defender i chcesz, [skontaktuj się ze sprzedażą, aby rozpocząć wersję próbną](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), i dowiedz się, jak Ochrona usługi Office 365 w usłudze Microsoft Defender mogą działać w organizacji.
 
-- Ochrona usługi Office 365 w usłudze Microsoft Defender P2 mają dostęp do integracji Microsoft 365 Defender **,** co umożliwia wydajne wykrywanie, przeglądanie i reagowanie na zdarzenia i alerty oraz reagowanie na nie.
+- Ochrona usługi Office 365 w usłudze Microsoft Defender klienci P2 mają dostęp do **integracji Microsoft 365 Defender** w celu wydajnego wykrywania, przeglądania i reagowania na zdarzenia i alerty.
 
 > [!TIP]
-> ***Porada niejawnego programu** testów. Za pomocą spisu docs.microsoft.com można uzyskać informacje na temat programu EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender. Wróć do tej strony, [Office 365 omówienie](index.yml) zabezpieczeń, a na pasku bocznym zauważysz, że organizacja spisu treści jest organizacją. Proces ten rozpoczyna się od wdrożenia (w tym migracji), a następnie jest w dalszym ciągu zapobieganie, wykrywanie, badanie i reagowanie. <p> Ta struktura jest podzielona, tak aby po tematach _ *Security Administration** były **poruszane tematy dotyczące operacji zabezpieczeń** . Jeśli jesteś nowym członkiem zespołu na stanowisku, skorzystaj z linku zawartego w tej poradce i swojej wiedzy na temat spisu treści, aby dowiedzieć się więcej na ten temat. Pamiętaj, aby na *czas korzystać z linków opinii* i *oceniać* artykuły. Opinie pomagają nam ulepszać to, co oferujemy.
+> ***Wskazówka dla niejawnych testerów** _. Aby dowiedzieć się więcej na temat EOP i Ochrona usługi Office 365 w usłudze Microsoft Defender, możesz użyć spisu treści docs.microsoft.com. Wróć do tej strony, [Office 365 Omówienie zabezpieczeń](index.yml). Zauważysz, że organizacja spisu treści znajduje się na pasku bocznym. Rozpoczyna się od wdrożenia (w tym migracji), a następnie kontynuuje zapobieganie, wykrywanie, badanie i reagowanie. <p> Ta struktura jest podzielona tak, aby tematy _ *Administracja zabezpieczeniami** były obserwowane w tematach **Operacje zabezpieczeń** . Jeśli jesteś nowym członkiem którejś z ról zadań, skorzystaj z linku w tej poradzie i swojej wiedzy na temat spisu treści, aby dowiedzieć się więcej o przestrzeni. Pamiętaj, aby używać *linków do opinii* i *oceniać artykuły* zgodnie z rzeczywistym użyciem. Opinie pomagają nam ulepszyć oferowane przez nas oferty.
 
-## <a name="where-to-go-next"></a>Gdzie przejść dalej
+## <a name="where-to-go-next"></a>Gdzie iść dalej
 
-Jeśli jesteś administratorem zabezpieczeń, może być konieczne skonfigurowanie DKIM lub DMARC dla poczty. Możesz chcieć, aby dla użytkowników priorytetowych było publikowane "Ścisłe" ustawienia wstępne zabezpieczeń, lub poszukać nowych nowości w tym produkcie. Jeśli natomiast korzystasz z usługi Security Ops, możesz chcieć korzystać z wykrywania w czasie rzeczywistym lub Eksploratora zagrożeń w celu zbadania i reakcji albo przeprowadzić wykrywanie użytkowników końcowych za pomocą ataku i odpowiedzi. Tak czy inaczej, poniżej poszło kilka dodatkowych zaleceń, które należy sprawdzić w następnych krokach.
+Jeśli jesteś administratorem zabezpieczeń, może być konieczne skonfigurowanie DKIM lub DMARC dla poczty. Możesz wprowadzić "ścisłe" ustawienia wstępne zabezpieczeń dla użytkowników o priorytecie lub poszukać nowości w produkcie. Jeśli korzystasz z usługi Security Ops, możesz użyć funkcji wykrywania w czasie rzeczywistym lub Eksploratora zagrożeń, aby zbadać i zareagować, lub wytrenować wykrywanie użytkowników końcowych za pomocą symulatora ataków. Tak czy inaczej, oto kilka dodatkowych zaleceń dotyczących tego, co należy przyjrzeć się dalej.
 
 [Uwierzytelnianie poczty e-mail, w tym SPF, DKIM i DMARC (z linkami do konfiguracji wszystkich trzech)](email-validation-and-authentication.md)
 
-[Zapoznaj się z zalecanymi "złotymi" konfiguracjami](recommended-settings-for-eop-and-office365.md) i użyj ich zalecanych ustawień wstępnych, [aby szybko skonfigurować zasady zabezpieczeń](preset-security-policies.md)
+[Zapoznaj się z konkretnymi zalecanymi konfiguracjami "golden"](recommended-settings-for-eop-and-office365.md) i [użyj zalecanych ustawień wstępnych, aby szybko skonfigurować zasady zabezpieczeń](preset-security-policies.md)
 
-Na bieżąco z [nowościami w programie Ochrona usługi Office 365 w usłudze Microsoft Defender (w tym nad rozwojem programu EOP)](whats-new-in-defender-for-office-365.md)
+Nadrabiaj zaległości w [zakresie nowości w Ochrona usługi Office 365 w usłudze Microsoft Defender (w tym rozwoju EOP)](whats-new-in-defender-for-office-365.md)
 
-[Korzystanie z wykrywania w Eksploratorze zagrożeń lub w czasie rzeczywistym](threat-explorer.md)
+[Używanie Eksploratora zagrożeń lub wykrywania w czasie rzeczywistym](threat-explorer.md)
 
-Korzystanie ze [szkolenia symulacyjnego w zakresie ataków](attack-simulation-training.md)
+[Korzystanie z trenowania symulacji ataków](attack-simulation-training.md)

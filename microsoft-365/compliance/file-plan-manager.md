@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie etykietami przechowywania na przestrzeni całego cyklu życia zawartości przy użyciu planu przechowywania
+title: Zarządzanie etykietami przechowywania w całym cyklu życia zawartości przy użyciu planu plików
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,32 +15,32 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
-description: Plan zarządzania plikami zapewnia zaawansowane funkcje zarządzania etykietami przechowywania.
+description: Plan plików zapewnia zaawansowane możliwości zarządzania etykietami przechowywania.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 2e028bae676b949c662a86178bac5e8ccdc557bf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 40c395d609a9a02637b937cafae988578dc6e14f
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317713"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836177"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Tworzenie etykiet przechowywania i zarządzanie nimi przy użyciu planu plików
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Mimo że można tworzyć etykiety przechowywania i zarządzać nimi na podstawie zarządzania informacjami w aplikacji Centrum zgodności platformy Microsoft 365, plan ewidencji z zarządzania  rekordami **oferuje dodatkowe** funkcje zarządzania:
+Mimo że w Centrum zgodności platformy Microsoft 365 można tworzyć etykiety przechowywania  i zarządzać nimi, plan plików z **zarządzania rekordami** ma dodatkowe możliwości zarządzania:
 
 - Etykiety przechowywania można tworzyć zbiorczo, importując odpowiednie informacje z arkusza kalkulacyjnego.
 
-- Możesz wyeksportować informacje z istniejących etykiet przechowywania do analizy i współpracy w trybie offline.
+- Możesz wyeksportować informacje z istniejących etykiet przechowywania na potrzeby analizy i współpracy w trybie offline.
 
-- Wyświetlane są więcej informacji na temat etykiet przechowywania, aby ułatwić przeglądanie ustawień wszystkich etykiet przechowywania i ich wyświetlanie w jednym widoku.
+- Zostanie wyświetlonych więcej informacji o etykietach przechowywania, aby ułatwić wyświetlanie ustawień wszystkich etykiet przechowywania z jednego widoku i między nimi.
 
-- Deskrypcje planu plików obsługują dodatkowe i opcjonalne informacje na temat poszczególnych etykiet.
+- Deskryptory planu plików obsługują dodatkowe i opcjonalne informacje dla każdej etykiety.
 
-Plan przechowywania może być używany dla wszystkich etykiet przechowywania, nawet jeśli zawartość nie jest oznaczana jako rekord.
+Plan plików może być używany dla wszystkich etykiet przechowywania, nawet jeśli nie oznaczają zawartości jako rekordu.
 
-Aby uzyskać informacje na temat etykiet przechowywania i sposobu ich używania, zobacz Informacje [o zasadach przechowywania i etykietach przechowywania](retention.md).
+Aby uzyskać informacje o tym, czym są etykiety przechowywania i jak ich używać, zobacz [Informacje o zasadach przechowywania i etykietach przechowywania](retention.md).
 
 ## <a name="accessing-file-plan"></a>Uzyskiwanie dostępu do planu plików
 
@@ -50,172 +50,182 @@ Aby uzyskać dostęp do planu plików, musisz mieć jedną z następujących ró
 
 - Menedżer przechowywania tylko do wyświetlania
 
-W Centrum zgodności platformy Microsoft 365 przejdź do **tematu Plan zarządzania** plikami **SolutionsRecords** >  > **:**
+W Centrum zgodności platformy Microsoft 365 przejdź do obszaru **SolutionsRecords** >  **managementFile** >  plan:
 
-![Strona planu plików](../media/compliance-file-plan.png). 
+![Strona planów plików](../media/compliance-file-plan.png). 
 
 Jeśli **zarządzanie rekordami** nie jest wyświetlane w okienku nawigacji, najpierw przewiń w dół i wybierz pozycję **Pokaż wszystko**.
 
 ## <a name="navigating-your-file-plan"></a>Nawigowanie po planie plików
 
-Jeśli utworzono już etykiety przechowywania na podstawie  zarządzania informacjami w skoroszycie Centrum zgodności platformy Microsoft 365, etykiety te będą automatycznie wyświetlane w planie przechowywania. 
+Jeśli w Centrum zgodności platformy Microsoft 365 utworzono już etykiety przechowywania na podstawie **ładu informacji**, etykiety te są automatycznie wyświetlane w planie plików. 
 
-Podobnie, jeśli teraz utworzysz etykiety przechowywania w planie plików, będą one również  dostępne na stronie zarządzania informacjami, jeśli etykiety nie są skonfigurowane do oznaczania zawartości jako rekordu.
+Podobnie, jeśli teraz tworzysz etykiety przechowywania w planie plików, są one również dostępne w **usłudze Zarządzanie informacjami** , jeśli etykiety nie są skonfigurowane do oznaczania zawartości jako rekordu.
 
-Na stronie **Plan** plików są dostępne wszystkie etykiety ze stanem i ustawieniami, opcjonalne deskryptory planu plików, opcja eksportu do analizowania lub włączania recenzji etykiet w trybie offline oraz opcja importu do tworzenia etykiet przechowywania. 
+Na stronie **Plan pliku** widoczne są wszystkie etykiety ze stanem i ustawieniami, opcjonalne deskryptory planu plików, opcja eksportu umożliwiająca analizowanie lub włączanie przeglądów etykiet w trybie offline oraz opcja importowania umożliwiająca tworzenie etykiet przechowywania. 
 
-### <a name="label-settings-columns"></a>Ustawienia etykiet, kolumny
+### <a name="label-settings-columns"></a>Kolumny ustawień etykiet
 
-Wszystkie kolumny oprócz **etykiety Nazwa** można wyświetlać lub ukrywać, wybierając opcję **Dostosuj** kolumny. Jednak domyślnie w kilku pierwszych kolumnach są wyświetlane informacje o stanie etykiety i jego ustawieniach: 
+Wszystkie kolumny z wyjątkiem **etykiety Nazwa** mogą być wyświetlane lub ukryte, wybierając opcję **Dostosuj kolumny** . Jednak domyślnie kilka pierwszych kolumn wyświetla informacje o stanie etykiety i jej ustawieniach: 
 
-- **Stan** określa, czy etykieta jest uwzględniana w zasadach etykiet, czy zasadach automatycznego stosowania (**Aktywne**), czy nie (**Nieaktywny**).
+- **Stan** określa, czy etykieta jest uwzględniona w zasadach etykiet lub zasadach automatycznego stosowania (**Aktywne**), czy nie (**nieaktywne**).
 
-- **Na podstawie** tego, jak lub kiedy zaczyna się okres przechowywania. Prawidłowe wartości:
+- **Na podstawie** określa, jak i kiedy rozpoczyna się okres przechowywania. Prawidłowe wartości:
     - Zdarzenie
     - Po utworzeniu
     - Ostatnia modyfikacja
-    - Po etykiecie
+    - Po oznaczeniu etykietą
 
-- **Is record** identifies if the item is marked as a record when the label is applied. Prawidłowe wartości:
+- **Czy rekord** określa, czy element jest oznaczony jako rekord po zastosowaniu etykiety. Prawidłowe wartości:
     - Nie
     - Tak
-    - Tak(przepisy)
+    - Tak (regulacyjne)
+
+- **Jest domyślnie odblokowany** — obecnie wdrażany — określa, czy element oznaczony jako rekord jest odblokowany po zastosowaniu etykiety. Prawidłowe wartości:
+    - Nie
+    - Tak
 
 - **Czas trwania przechowywania** określa okres przechowywania. Prawidłowe wartości:
     - Dni
-    - Miesiące
-    - Lata
-    - Wieki
+    - Miesięcy
+    - Lat
+    - Zawsze
     - Brak
 
-- **Typ zawartości** określa, co dzieje się z zawartością na koniec okresu przechowywania. Prawidłowe wartości:
+- **Typ dyspozycji** określa, co dzieje się z zawartością na końcu okresu przechowywania. Prawidłowe wartości:
     - Brak akcji
     - Automatyczne usuwanie
-    - Wymagana recenzja
+    - Wymagany przegląd
 
-### <a name="file-plan-descriptors-columns"></a>Deskryptory planów plików w kolumnach
+### <a name="file-plan-descriptors-columns"></a>Kolumny deskryptorów planu plików
 
-Plan przechowywania pozwala na dołączanie dodatkowych informacji jako części etykiet przechowywania. Te deskryptory planu plików zapewniają więcej opcji w celu poprawy możliwości zarządzania zawartością, która ma być oznaczona etykietą, i organizacji.
+Plan plików umożliwia uwzględnienie większej ilości informacji w ramach etykiet przechowywania. Te deskryptory planu plików zapewniają więcej opcji w celu zwiększenia możliwości zarządzania i organizacji zawartości, którą należy oznaczyć etykietą.
 
-Domyślnie, począwszy od **identyfikatora** odwołania, w następnych kilku kolumnach są wyświetlane opcjonalne deskryptory planu plików, które można określić podczas tworzenia etykiety przechowywania lub edytowania istniejącej etykiety. 
+Domyślnie, począwszy od **identyfikatora odwołania**, kilka następnych kolumn wyświetla te opcjonalne deskryptory planu plików, które można określić podczas tworzenia etykiety przechowywania lub edytowania istniejącej etykiety. 
 
-Na początek możesz sprawdzić, czy są dostępne pewne wartości do wyboru dla następujących deskryptorów planu plików: 
+Aby rozpocząć pracę, istnieją pewne wartości out-of-box dla następujących deskryptorów planu plików: 
 - Funkcja/dział biznesowy
 - Kategoria
 - Typ urzędu
-- Inicjowanie obsługi administracyjnej/cytat 
+- Aprowizowanie/cytowania 
 
-Przykładowe deskryptory planu przechowywania podczas tworzenia lub edytowania etykiety przechowywania:
+Przykład deskryptorów planu plików podczas tworzenia lub edytowania etykiety przechowywania:
 
-![Deskrypcje planu przechowywania podczas tworzenia lub edytowania etykiety przechowywania.](../media/file-plan-descriptors.png)
+![Deskryptory planu plików podczas tworzenia lub edytowania etykiety przechowywania.](../media/file-plan-descriptors.png)
 
-Po wybraniu **przycisku** Wybierz dla każdego z tych opcjonalnych deskryptorów możesz wybrać jedną z dostępnych wartości lub utworzyć własne, a następnie wybrać je. Przykład: 
+Po wybraniu opcji **Wybierz** dla każdego z tych opcjonalnych deskryptorów możesz wybrać jedną z wartości w polu lub utworzyć własne, a następnie wybrać je. Przykład: 
 
-![Utwórz nowy deskryptor planu plików dla inicjowania obsługi/cytatu.](../media/file-plan-descriptors-create.png)
+![Utwórz nowy deskryptor planu plików na potrzeby aprowizowania/cytowania.](../media/file-plan-descriptors-create.png)
 
 ## <a name="create-retention-labels"></a>Tworzenie etykiet przechowywania
 
-1. Na stronie **Plan plików** wybierz pozycję **+ Utwórz etykietęWklejanie** >  **pliku**
+1. Na stronie **Plan pliku** wybierz pozycję **+ Utwórz etykietę** >  **Etykieta ponownej rejestracji**
 
-2. Postępuj zgodnie z monitami w procesie konfiguracji. Należy zachować ostrożność przy wybieranej nazwie, ponieważ po zapisaniu etykiety nie można jej zmienić.
+2. Postępuj zgodnie z monitami dotyczącymi procesu konfiguracji. Zachowaj ostrożność, jaką nazwę wybierzesz, ponieważ nie można jej zmienić po zapisaniu etykiety.
     
-    Aby uzyskać więcej informacji o ustawieniach przechowywania, [zobacz Ustawienia zachowywania i usuwania zawartości](retention-settings.md#settings-for-retaining-and-deleting-content).
+    Aby uzyskać więcej informacji na temat ustawień przechowywania, zobacz [Ustawienia do przechowywania i usuwania zawartości](retention-settings.md#settings-for-retaining-and-deleting-content).
     
-    Aby użyć etykiety przechowywania w celu deklarowania rekordów, wybierz pozycję Oznacz elementy jako **rekordy** lub **Oznacz elementy jako rekordy prawne**. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet przechowywania w celu deklarowania rekordów](declare-records.md#configuring-retention-labels-to-declare-records).
+    Aby użyć etykiety przechowywania do deklarowania rekordów, wybierz pozycję **Oznacz elementy jako rekordy** lub **Oznacz elementy jako rekordy regulacyjne**. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet przechowywania do deklarowania rekordów](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Po utworzeniu etykiety i wyświetleniu opcji publikowania etykiety, automatycznego zastosowania etykiety lub po prostu zapisania etykiety: Wybierz pozycję Po prostu zapisz na razie etykietę **, a** następnie wybierz pozycję **Gotowe**.
+3. Po utworzeniu etykiety i wyświetleniu opcji publikowania etykiety zastosuj ją automatycznie lub po prostu zapisz etykietę: wybierz pozycję **Po prostu zapisz etykietę na razie**, a następnie wybierz pozycję **Gotowe**.
 
-4. Powtórz te czynności, aby utworzyć więcej etykiet.
+4. Powtórz te kroki, aby utworzyć więcej etykiet.
 
 ## <a name="edit-retention-labels"></a>Edytowanie etykiet przechowywania
 
-Aby edytować istniejącą etykietę przechowywania, zaznacz ją na stronie **Plan** plików, a następnie wybierz opcję  Edytuj etykietę, aby rozpocząć proces edytowania przechowywania, który umożliwia zmianę opisu etykiety i wszystkich kwalifikujących się ustawień.
+Aby edytować istniejącą etykietę przechowywania, wybierz ją na stronie **Plan pliku** , a następnie wybierz opcję **Edytuj etykietę** , aby rozpocząć proces przechowywania edycji, który umożliwia zmianę opisu etykiety i wszystkich kwalifikujących się ustawień.
 
-Po utworzeniu i zapisaniu etykiety nie można zmienić niektórych ustawień, takich jak:
-- Nazwa etykiety przechowywania i ustawienia przechowywania z wyjątkiem okresu przechowywania. Nie można jednak zmienić okresu przechowywania, gdy okres przechowywania jest oparty na oznaczaniu elementów etykietą.
+Niektórych ustawień nie można zmienić po utworzeniu i zapisaniu etykiety, które obejmują:
+- Nazwa etykiety przechowywania i ustawienia przechowywania z wyjątkiem okresu przechowywania. Nie można jednak zmienić okresu przechowywania, gdy okres przechowywania zależy od tego, kiedy elementy zostały oznaczone etykietą.
 - Opcja oznaczania elementów jako rekordu.
 
 ## <a name="delete-retention-labels"></a>Usuwanie etykiet przechowywania
 
-Możesz usunąć etykiety przechowywania, które nie są obecnie uwzględnione w żadnych [](create-apply-retention-labels.md) opublikowanych ani [automatycznych](apply-retention-labels-automatically.md) zasadach etykiet przechowywania, które nie są skonfigurowane na wypadek przechowywania opartego na zdarzeniach, lub oznaczać elementy jako rekordy prawne.
+Możesz usunąć etykiety przechowywania, które nie są obecnie uwzględnione w żadnych [opublikowanych](create-apply-retention-labels.md) lub [automatycznie stosowanych](apply-retention-labels-automatically.md) zasadach etykiet przechowywania, które nie są skonfigurowane do przechowywania na podstawie zdarzeń, lub oznaczyć elementy jako rekordy regulacyjne.
 
-W przypadku etykiet przechowywania, które można usunąć, jeśli zostały one zastosowane do elementów, usunięcie zakończy się niepowodzeniem i zostanie wyświetlony link do Eksploratora zawartości identyfikujący elementy oznaczone etykietą.
+W przypadku etykiet przechowywania, które można usunąć, jeśli zostały one zastosowane do elementów, usunięcie kończy się niepowodzeniem i zostanie wyświetlony link do Eksploratora zawartości w celu zidentyfikowania elementów oznaczonych etykietą.
 
-Jednak wyświetlanie oznaczonych elementów w Eksploratorze zawartości może potrwać do dwóch dni. W tym scenariuszu etykieta przechowywania może zostać usunięta bez pokazywania linku do Eksploratora zawartości.
+Jednak wyświetlenie elementów oznaczonych etykietą Eksploratora zawartości może potrwać do dwóch dni. W tym scenariuszu etykieta przechowywania może zostać usunięta bez wyświetlania linku do Eksploratora zawartości.
 
-## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Eksportowanie wszystkich etykiet przechowywania w celu analizowania lub włączania recenzji w trybie offline
+## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Eksportowanie wszystkich etykiet przechowywania w celu analizowania lub włączania przeglądów w trybie offline
 
-W planie przechowywania można wyeksportować szczegóły wszystkich etykiet przechowywania do pliku .csv, aby ułatwić okresowe przeglądy zgodności z uczestnikami projektu zarządzania danymi w organizacji.
+Z planu plików możesz wyeksportować szczegóły wszystkich etykiet przechowywania do pliku .csv, aby ułatwić okresowe przeglądy zgodności z osobami biorącymi udział w zarządzaniu danymi w organizacji.
 
-Aby wyeksportować wszystkie etykiety przechowywania: Na **stronie Plan plików** kliknij pozycję **Eksportuj**:
+Aby wyeksportować wszystkie etykiety przechowywania: na stronie **Plan pliku** kliknij pozycję **Eksportuj**:
 
-![Opcja eksportu planu plików.](../media/compliance-file-plan-export-labels.png)
+![Opcja eksportowania planu plików.](../media/compliance-file-plan-export-labels.png)
 
-Zostanie otwarty .csv *, który zawiera wszystkie istniejące etykiety przechowywania. Przykład:
+Zostanie otwarty plik *.csv zawierający wszystkie istniejące etykiety przechowywania. Przykład:
 
-![Plik CSV zawierający wszystkie etykiety przechowywania.](../media/file-plan-csv-file.png)
+![Plik CSV przedstawiający wszystkie etykiety przechowywania.](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importowanie etykiet przechowywania do planu plików
 
-W planie plików nowe etykiety przechowywania można importować zbiorczo, używając .csv pliku o określonym formacie: 
+W planie plików można zbiorczo importować nowe etykiety przechowywania przy użyciu pliku .csv o określonym formacie: 
 
-1. Na stronie **Plan plików** kliknij pozycję **Importuj**: ![Opcja importowania planu plików](../media/compliance-file-plan-import-labels.png)
+1. Na stronie **Plan pliku** kliknij pozycję **Importuj**: ![Opcja importowania planu plików](../media/compliance-file-plan-import-labels.png)
 
-2. W **okienku Wypełnij i zaimportuj plan** plików wybierz **pozycję Pobierz pusty szablon**:
+2. W okienku **Wypełnij i zaimportuj plan pliku** wybierz pozycję **Pobierz pusty szablon**:
 
-   ![Opcja pobrania szablonu pustego planu plików](../media/file-plan-blank-template-option.png)
+   ![Opcja pobrania pustego szablonu planu pliku](../media/file-plan-blank-template-option.png)
 
-3. Po pobraniu szablonu dodaj jeden wiersz na każdą etykietę i zapisz plik. W [następnej sekcji opisano](#information-about-the-label-properties-for-import) właściwości i prawidłowe wartości poszczególnych właściwości.
+3. Po pobraniu szablonu dodaj jeden wiersz dla każdej etykiety i zapisz plik. Zobacz [następną sekcję](#information-about-the-label-properties-for-import) , aby uzyskać informacje opisujące właściwości i prawidłowe wartości dla każdej właściwości.
     
     Przykład wypełnionego szablonu:
     
     ![Szablon planu pliku z wypełnionymi informacjami.](../media/file-plan-filled-out-template.png)
 
-4. Wybierz **Upload, aby** przekazać wypełniony szablon.
+4. Wybierz **Upload plik,** aby przekazać wypełniony szablon.
     
-   Plan plików przekaże plik i poprawność wpisów.
+   Plan plików przekazuje plik i weryfikuje wpisy.
 
-5. W zależności od wyników sprawdzania poprawności:
+5. W zależności od wyników weryfikacji:
     
-    - Jeśli sprawdzanie poprawności zakończy się niepowodzeniem: zwróć uwagę na numer wiersza i nazwę kolumny, które należy poprawić w pliku importu. Popraw błędy w pliku i zapisz go, a następnie powtórz krok 4.
+    - Jeśli weryfikacja nie powiedzie się: zanotuj numer wiersza i nazwę kolumny, aby poprawić w pliku importu. Popraw błędy w pliku i zapisz go, a następnie powtórz krok 4.
     
-    - Jeśli sprawdzanie poprawności przejdzie pomyślnie: zostanie wyświetlony błąd Pomyślnie **zaimportowano plan plików, a** wpisy zostały pomyślnie przekonwertowane na etykiety przechowywania. Wybierz **pozycję** Gotowe, aby zamknąć okienko i automatycznie odświeżyć **stronę Plan** plików w celu wyświetlenia nowych etykiet.
+    - Jeśli weryfikacja zakończy się pomyślnie: **zobaczysz, że pomyślnie zaimportowano plan pliku** , a wpisy zostały pomyślnie przekonwertowane na etykiety przechowywania. Wybierz pozycję **Gotowe** , aby zamknąć okienko i automatycznie odśwież stronę **Plan pliku** , aby wyświetlić nowe etykiety.
 
-Teraz możesz publikować nowe etykiety przechowywania lub stosować je automatycznie. Obie opcje możesz wykonać na karcie **Zasady etykiet** , wybierając pozycję **Publikuj** etykiety lub **Automatycznie zastosuj etykietę**.
+Teraz możesz opublikować nowe etykiety przechowywania lub zastosować je automatycznie. Obie te czynności można wykonać na karcie **Zasady etykiet** , wybierając pozycję **Publikuj etykiety** lub **automatycznie zastosuj etykietę**.
 
-### <a name="information-about-the-label-properties-for-import"></a>Informacje o właściwościach etykiety do zaimportowania
+### <a name="information-about-the-label-properties-for-import"></a>Informacje o właściwościach etykiety do importowania
 
-Poniższe informacje ułatwiają wypełnianie pobranego szablonu w celu zaimportowania nowych etykiet przechowywania. Importowanie może mieć długość maksymalną dla niektórych wartości:
+Poniższe informacje ułatwiają wypełnienie pobranego szablonu w celu zaimportowania nowych etykiet przechowywania. Niektóre wartości mają maksymalną długość importu:
 
-- **LabelName**: Maksymalna długość 64 znaków
-- **Komentarz** i **uwagi**: Maksymalna długość 1024 znaków
-- Wszystkie inne wartości: Nieograniczona długość
+- **LabelName**: maksymalna długość 64 znaków
+- **Komentarz** i **uwagi**: maksymalna długość 1024 znaków
+- Wszystkie inne wartości: nieograniczona długość
 <br/>
 
 |Właściwość|Wpisać|Wymagany|Prawidłowe wartości|
 |:-----|:-----|:-----|:-----|
-|LabelName|Ciąg|Tak|Ta właściwość określa nazwę etykiety przechowywania i musi być unikatowa w dzierżawie. Obsługiwane znaki importowane: a-z, A-Z, 0-9, łącznik (-) i znak spacji.|
-|Komentowanie|Ciąg|Nie|Ta właściwość pozwala dodać opis etykiety przechowywania dla administratorów. Ten opis jest wyświetlany tylko administratorom, którzy zarządzają etykietą przechowywania w centrum zgodności.|
-|Uwagi|Ciąg|Nie|Ta właściwość pozwala dodać opis etykiety przechowywania dla użytkowników. Ten opis jest wyświetlany, gdy użytkownicy umieszczają wskaźnik myszy na etykiecie aplikacji, Outlook, SharePoint i OneDrive. Jeśli pozostawisz tę właściwość pustą, zostanie wyświetlony domyślny opis, który wyjaśnia ustawienia przechowywania etykiety. |
-|IsRecordLabel|Ciąg|Nie, chyba **że** regulacyjna ma **wartość PRAWDA**|Ta właściwość określa, czy etykieta oznacza zawartość jako rekord. Prawidłowe wartości to: </br>**PRAWDA**: Etykieta oznacza element jako rekord, dlatego nie można go usunąć. </br>**FAŁSZ**: Etykieta nie oznacza zawartości jako rekordu. Jest to wartość domyślna. </br> </br> Zależności grup: Po określonej właściwości należy również określić grupę RetentionAction, RetentionDuration i RetentionType (Typ przechowywania).|
-|RetentionAction|Ciąg|Nie, chyba **że określono wartość RetentionDuration**, **RetentionType** lub **ReviewerEmail**|Ta właściwość określa, jakie działanie ma być podjęcia po wygaśnięciu wartości określonej przez właściwość RetentionDuration (jeśli jest określona). Prawidłowe wartości to: </br>**Usuń**. Elementy starsze niż wartość określona przez właściwość RetentionDuration są usuwane.</br>**Zachowaj**. Zachowaj elementy przez czas określony przez właściwość Okres przechowywania i nie robisz nic po wygaśnięciu okresu. </br>**KeepAndDelete**: Zachowaj elementy przez czas trwania określony przez właściwość RetentionDuration i usuwaj je po wygaśnięciu okresu. </br> </br> Zależności grup: Gdy ta właściwość jest określona, należy również określić wartości RetentionDuration i RetentionType (Typ przechowywania). |
-|Okres przechowywania|Ciąg|Nie, chyba **że określono funkcje** przechowywania **lub typ** przechowywania|Ta właściwość określa liczbę dni przechowywania zawartości. Prawidłowe wartości to: </br>**Bez ograniczeń**: elementy będą przechowywane przez czas nieograniczony. </br>**_n_*: dodatnia liczba całkowita w dniach; na przykład **365**. Maksymalna obsługiwana liczba to 24 855 ( 68 lat). Jeśli potrzebujesz więcej niż wartość maksymalna, użyj funkcji Bez ograniczeń.</br> </br> Zależności grup: Po określonej właściwości należy również określić właściwości RetentionAction i RetentionType (Typ przechowywania).
-|RetentionType (Typ przechowywania)|Ciąg|Nie, chyba **że określono funkcje** **przechowywania lub Okres** przechowywania|Ta właściwość określa, czy czas trwania przechowywania (jeśli jest określony) jest obliczany na podstawie daty utworzenia zawartości, daty zdarzenia, daty oznaczonej etykietą lub daty ostatniej modyfikacji. Prawidłowe wartości to: </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> Zależności grup: Po określonej właściwości należy również określić grupę RetentionAction i RetentionDuraction.|
-|ReviewerEmail|SmtpAddress|Nie|Gdy ta właściwość jest określona, po wygaśnięciu czasu trwania przechowywania zostanie wyzwolona recenzja rozsyłania. Ta właściwość określa adres e-mail recenzenta w dzierżawie dla akcji przechowywania **KeepAndDelete** . </br> </br> Możesz dołączyć adresy e-mail poszczególnych użytkowników, grup dystrybucyjnych lub grup zabezpieczeń w dzierżawie. Określ wiele adresów e-mail, oddzielając je średnikami. </br> </br> Zależności grup: Po określonej właściwości należy również określić grupę **RetentionAction** (musi to być **KeepAndDelete**), **RetentionDuration** i **RetentionType** (Typ przechowywania).|
-|ReferenceId|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze  planu pliku identyfikatora odwołania, którego można użyć jako unikatowej wartości dla organizacji.| 
-|DepartmentName|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze planu pliku funkcja **/** dział.|
-|Kategoria|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze  planu pliku kategorii.|
-|Podkategoria|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze **planu pliku** podkategorie.|
-|AuthorityType (Typ_urzędu)|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze **planu pliku typu** Urząd.|
-|CitationName|Ciąg|Nie|Ta właściwość określa nazwę cytatu wyświetlanego w deskrypcie Plan pliku **inicjowania/** cytowania. Na przykład "Sarbanes-Oxley Act of 2002". |
-|CitationUrl|Ciąg|Nie|Ta właściwość określa adres URL wyświetlany w deskryptorze planu pliku **inicjowania/** cytowania.|
-|CitationJurisdiction|Ciąg|Nie|Ta właściwość określa jurysdykcję lub agencję wyświetlaną w deskrypcie planu pliku inicjowania **/** cytowania. Na przykład "U.S. Securities and Exchange Commission (SEC)".|
-|Przepisy|Ciąg|Nie|Ta właściwość określa, czy etykieta oznacza zawartość jako rekord prawa, który jest [bardziej](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) restrykcyjny niż rekord. Aby użyć tej konfiguracji etykiet, dzierżawa musi zostać skonfigurowana w taki sposób, aby była wyświetlana opcja oznaczania zawartości jako rekordu [prawnego lub sprawdzanie](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record) poprawności importu nie powiedzie się. Prawidłowe wartości to: </br>**PRAWDA**: etykieta oznacza element jako rekord przepisów prawa. Należy również ustawić dla właściwości **IsRecordLabel wartość** TRUE.</br>**FAŁSZ**: Etykieta nie oznacza zawartości jako rekordu prawnego. Jest to wartość domyślna.|
-|EventType|Ciąg|Nie, chyba **że typ przechowywania** **to EventAgeInDays**|Ta właściwość określa typ zdarzenia używany do przechowywania [opartego na zdarzeniach](event-driven-retention.md). Określanie istniejącego typu zdarzenia, który jest wyświetlany **w zarządzanie** rekordamiZ  > **zarządzanie** >  **typami zdarzeń**. Możesz również użyć polecenia [cmdlet Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) , aby wyświetlić dostępne typy zdarzeń. Mimo że istnieje kilka wbudowanych typów zdarzeń, takich jak Aktywność  pracownika i Okres istnienia **produktu, możesz** również tworzyć własne typy zdarzeń. </br> </br> Jeśli określisz własny typ zdarzenia, musi on istnieć przed importowaniem, ponieważ poprawność nazwy jest sprawdzana w ramach procesu importowania.|
-|||
+|LabelName|Ciąg|Tak|Ta właściwość określa nazwę etykiety przechowywania i musi być unikatowa w dzierżawie. Obsługiwane znaki do importowania: a-z, A-Z, 0-9, łącznik (-) i znak spacji.|
+|Komentowanie|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla administratorów. Ten opis jest wyświetlany tylko administratorom, którzy zarządzają etykietą przechowywania w Centrum zgodności.|
+|Uwagi|Ciąg|Nie|Ta właściwość służy do dodawania opisu etykiety przechowywania dla użytkowników. Ten opis jest wyświetlany, gdy użytkownicy umieszczają wskaźnik myszy na etykiecie w aplikacjach takich jak Outlook, SharePoint i OneDrive. Jeśli pozostawisz tę właściwość pustą, zostanie wyświetlony domyślny opis, który objaśnia ustawienia przechowywania etykiety. |
+|IsRecordLabel|Ciąg|Nie, chyba że **przepis** ma **wartość TRUE**|Ta właściwość określa, czy etykieta oznacza zawartość jako rekord. Prawidłowe wartości to: </br>**PRAWDA**: Etykieta oznacza element jako rekord i w rezultacie nie można usunąć elementu. </br>**FALSE**: Etykieta nie oznacza zawartości jako rekordu. Jest to wartość domyślna. </br> </br> Zależności grupy: Po określeniu tej właściwości należy również określić właściwości RetentionAction, RetentionDuration i RetentionType.|
+|RetentionAction|Ciąg|Nie, o ile nie określono **wartości RetentionDuration**, **RetentionType** lub **ReviewerEmail**|Ta właściwość określa akcję, jaką należy wykonać po wygaśnięciu wartości określonej przez właściwość RetentionDuration (jeśli określono). Prawidłowe wartości to: </br>**Usuń**: Elementy starsze niż wartość określona przez właściwość RetentionDuration są usuwane.</br>**Zachowaj: Zachowaj** elementy przez czas określony przez właściwość RetentionDuration, a następnie nie rób nic po upływie okresu trwania. </br>**KeepAndDelete**: Zachowaj elementy przez czas określony przez właściwość RetentionDuration, a następnie usuń je po upływie okresu trwania. </br> </br> Zależności grupy: po określeniu tej właściwości należy również określić właściwości RetentionDuration i RetentionType. |
+|PrzechowywanieDuration|Ciąg|Nie, o ile nie określono **parametru RetentionAction** lub **RetentionType**|Ta właściwość określa liczbę dni przechowywania zawartości. Prawidłowe wartości to: </br>**Nieograniczone**: elementy będą zachowywane przez czas nieokreślony. </br>**_n_*: dodatnia liczba całkowita w dniach; na przykład **365**. Maksymalna obsługiwana liczba to 24 855, czyli 68 lat. Jeśli potrzebujesz więcej czasu niż to maksimum, zamiast tego użyj opcji Nieograniczone.</br> </br> Zależności grupy: po określeniu tej właściwości należy również określić właściwości RetentionAction i RetentionType.
+|Typ przechowywania|Ciąg|Nie, chyba że określono **parametr RetentionAction** lub **RetentionDuration**|Ta właściwość określa, czy czas przechowywania (jeśli został określony) jest obliczany na podstawie daty utworzenia zawartości, daty zdarzenia, daty etykiety lub daty ostatniej modyfikacji. Prawidłowe wartości to: </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModyfikacjaAgeInDays** </br> </br> Zależności grupy: po określeniu tej właściwości należy również określić właściwości RetentionAction i RetentionDuraction.|
+|ReviewerEmail|SmtpAddress|Nie|Gdy ta właściwość zostanie określona, przegląd dyspozycji zostanie wyzwolony po upływie czasu przechowywania. Ta właściwość określa adres e-mail recenzenta w dzierżawie dla akcji **przechowywania KeepAndDelete** . </br> </br> Możesz dołączyć adres e-mail poszczególnych użytkowników, grup dystrybucyjnych lub grup zabezpieczeń w dzierżawie. Określ wiele adresów e-mail, oddzielając je średnikami. </br> </br> Zależności grupy: Po określeniu tej właściwości należy również określić **właściwości RetentionAction** (musi to być **KeepAndDelete**), **RetentionDuration** i **RetentionType** .|
+|Identyfikator odwołania|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze planu pliku **identyfikatora odwołania** , której można użyć jako unikatowej wartości dla organizacji.| 
+|Nazwa działu|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze planu plików **funkcji/działu** .|
+|Kategoria|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze planu pliku **kategorii** .|
+|Podkategorii|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze planu pliku **podkategory** .|
+|AuthorityType|Ciąg|Nie|Ta właściwość określa wartość wyświetlaną w deskryptorze planu pliku **typu Urzędu** .|
+|CitationName|Ciąg|Nie|Ta właściwość określa nazwę cytatu wyświetlanego w deskryptorze planu **aprowizowania/cytowania** . Na przykład "Sarbanes-Oxley Act of 2002". |
+|CitationUrl|Ciąg|Nie|Ta właściwość określa adres URL wyświetlany w deskryptorze planu **aprowizowania/cytowania** .|
+|CitationJurisdiction|Ciąg|Nie|Ta właściwość określa jurysdykcję lub agencję wyświetlaną w deskryptorze planu **aprowizowania/cytowania** . Na przykład "U.S. Securities and Exchange Commission (SEC)".|
+|Regulacyjnych|Ciąg|Nie|Ta właściwość określa, czy etykieta oznacza zawartość jako rekord regulacyjny, który jest [bardziej restrykcyjny](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) niż rekord. Aby można było użyć tej konfiguracji etykiety, należy skonfigurować dzierżawę do [wyświetlania opcji oznaczania zawartości jako rekordu regulacyjnego](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record) lub weryfikacja importu zakończy się niepowodzeniem. Prawidłowe wartości to: </br>**PRAWDA**: Etykieta oznacza element jako rekord regulacyjny. Należy również ustawić właściwość **IsRecordLabel** na wartość TRUE.</br>**FALSE**: Etykieta nie oznacza zawartości jako rekordu regulacyjnego. Jest to wartość domyślna.|
+|Eventtype|Ciąg|Nie, chyba że **parametr RetentionType** to **EventAgeInDays**|Ta właściwość określa typ zdarzenia używany do [przechowywania opartego na zdarzeniach](event-driven-retention.md). Określ istniejący typ zdarzenia wyświetlany w obszarze **Zarządzanie rekordamiZarządzanie** >  **typami** >  **zdarzeń**. Alternatywnie użyj polecenia cmdlet [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) , aby wyświetlić dostępne typy zdarzeń. Chociaż istnieją pewne wbudowane typy zdarzeń, takie jak **aktywność pracowników** i **okres istnienia produktu**, możesz również utworzyć własne typy zdarzeń. </br> </br> Jeśli określisz własny typ zdarzenia, musi on istnieć przed importowaniem, ponieważ nazwa jest weryfikowana w ramach procesu importowania.|
+
+Ustawienia etykiet nie są obecnie obsługiwane w przypadku importowania:
+
+- Przegląd dyspozycji wieloetapowej: Mimo że można skonfigurować ustawienia dla pojedynczego etapu przeglądu dyspozycji podczas importowania etykiet przechowywania za pomocą szablonu, nie można określić dodatkowych etapów przeglądu. Zamiast tego skonfiguruj je w centrum zgodności po pomyślnym zakończeniu importowania.
+
+- Domyślnie odblokuj ten rekord (obecnie wdrażany w wersji zapoznawczej): to ustawienie nie jest dostępne w szablonie do zaimportowania i nie można wybrać tego ustawienia w centrum zgodności po pomyślnym zaimportowaniu.
+
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, po utworzeniu etykiet przechowywania, można je dodawać do elementów przez opublikowanie etykiet lub automatyczne stosowanie:
+Teraz, po utworzeniu etykiet przechowywania, można je dodać do elementów, publikując etykiety lub automatycznie stosując je:
 - [Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
 - [Automatyczne stosowanie etykiety przechowywania do zawartości](apply-retention-labels-automatically.md)

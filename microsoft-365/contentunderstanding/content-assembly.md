@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
-ms.reviewer: anrasto
+ms.reviewer: anrasto, shrganguly
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Dowiedz się, jak automatycznie tworzyć dokumenty i inną zawartość przy użyciu zestawu zawartości w usłudze Microsoft SharePoint Syntex.
-ms.openlocfilehash: 906118458688d40c392cc9333357f1b8c946910b
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Dowiedz się, jak automatycznie tworzyć dokumenty i inną zawartość przy użyciu nowoczesnego szablonu w usłudze Microsoft SharePoint Syntex.
+ms.openlocfilehash: 83ef526504073ae739a82c599663a3d284aaf51c
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823217"
+ms.locfileid: "64836260"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Tworzenie dokumentów przy użyciu zestawu zawartości w usłudze Microsoft SharePoint Syntex
 
@@ -55,16 +55,17 @@ Wykonaj następujące kroki, aby utworzyć nowoczesny szablon.
 5. Utwórz symbole zastępcze dla całego tekstu dynamicznego w dokumencie, który użytkownicy mogą chcieć zmienić z jednego dokumentu na inny. Możesz na przykład utworzyć symbol zastępczy dla danych wejściowych, takich jak nazwa firmy, nazwa klienta, adres, numer telefonu lub data.
 
     Aby utworzyć symbol zastępczy, wybierz tekst (na przykład datę). Zostanie otwarty panel **Wszystkie symbole zastępcze** , w którym nadasz symbolowi zastępczemu odpowiednią nazwę i wybierzesz typ danych wejściowych, które chcesz skojarzyć z symbolem zastępczym.
+ 
+   ![Zrzut ekranu przedstawiający przeglądarkę szablonów z wyróżnionym polem i panelem Wszystkie symbole zastępcze.](../media/content-understanding/content-assembly-create-template-4b.png)
 
-   ![Zrzut ekranu przedstawiający przeglądarkę szablonów z wyróżnionym polem i panelem Wszystkie symbole zastępcze.](../media/content-understanding/content-assembly-create-template-4a.png)
-
-   Obecnie istnieją dwa sposoby wypełniania symbolu zastępczego przez użytkowników:
+   Obecnie istnieją trzy sposoby wypełniania symbolu zastępczego przez użytkowników:
 
    - [Wprowadź tekst lub wybierz datę](#associate-a-placeholder-by-entering-text-or-selecting-a-date)
    - [Wybieranie spośród opcji w kolumnie listy lub biblioteki](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
+   - [Wybierz z zarządzanego zestawu terminów metadanych lub terminu](#associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term)
 
    > [!NOTE]
-   > Można tworzyć symbole zastępcze tylko dla tekstu. Obecnie obrazy, grafiki inteligentne, tabele i listy punktowane nie są obsługiwane.
+   > Można tworzyć symbole zastępcze tylko dla tekstu. Obrazy, grafiki inteligentne, tabele i listy punktowane nie są obecnie obsługiwane.   
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>Skojarz symbol zastępczy, wprowadzając tekst lub wybierając datę
 
@@ -72,7 +73,7 @@ Na panelu **Wszystkie symbole zastępcze** :
 
 1. W polu **Nazwa** wprowadź odpowiednią nazwę symbolu zastępczego.
 
-   ![Zrzut ekranu przedstawiający przeglądarkę szablonów z panelem Wszystkie symbole zastępcze dla danych wejściowych ręcznie.](../media/content-understanding/content-assembly-create-template-5.png)
+   ![Zrzut ekranu przedstawiający przeglądarkę szablonów z panelem Wszystkie symbole zastępcze dla danych wejściowych ręcznie.](../media/content-understanding/content-assembly-create-template-5a.png)
 
 2. W sekcji **How authors fill in this placeholder (Jak autorzy wypełnić ten symbol zastępczy** ) wybierz pozycję **Wprowadź tekst lub wybierz datę**.
 
@@ -86,7 +87,7 @@ Na panelu **Wszystkie symbole zastępcze** :
 
 1. W polu **Nazwa** wprowadź odpowiednią nazwę symbolu zastępczego.
 
-   ![Zrzut ekranu przedstawiający przeglądarkę szablonów z panelem Wszystkie symbole zastępcze dla danych wejściowych z listy SharePoint.](../media/content-understanding/content-assembly-create-template-6.png)
+   ![Zrzut ekranu przedstawiający przeglądarkę szablonów z panelem Wszystkie symbole zastępcze dla danych wejściowych z listy SharePoint.](../media/content-understanding/content-assembly-create-template-6a.png)
 
 2. W sekcji **How authors fill in this placeholder (Jak autorzy wypełnić ten symbol zastępczy** ) wybierz pozycję **Wybierz z opcji w kolumnie listy lub biblioteki**, a następnie wybierz **pozycję Wybierz**.
 
@@ -106,10 +107,34 @@ Na panelu **Wszystkie symbole zastępcze** :
 
 6. Jeśli chcesz, aby użytkownicy mogli ręcznie dodawać dane wejściowe, oprócz wybierania z listy wybierz pozycję **Zezwalaj autorom na dodawanie nowych opcji**. W tym przypadku domyślnym typem danych wejściowych ręcznych jest *pojedynczy wiersz tekstu*. Również wartości wejściowe przez autorów będą używane tylko do generowania dokumentu. Nie zostaną one dodane do listy SharePoint.
 
-   Możesz utworzyć tyle symboli zastępczych, ile uważasz za konieczne. Po zakończeniu możesz zapisać szablon jako wersję roboczą lub opublikować szablon.
+### <a name="associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term"></a>Skojarz symbol zastępczy, wybierając z zarządzanego zestawu terminów metadanych lub terminu
+
+Na panelu **Wszystkie symbole zastępcze** :
+
+1. W polu **Nazwa** wprowadź odpowiednią nazwę symbolu zastępczego.
+
+   ![Zrzut ekranu przedstawiający podgląd szablonów przedstawiający panel Wszystkie symbole zastępcze dla danych wejściowych z zestawu terminów lub terminów.](../media/content-understanding/content-assembly-create-template-term.png)
+
+2. W sekcji **Jak autorzy wypełnij ten symbol zastępczy** wybierz **pozycję Wybierz z zarządzanego zestawu terminów metadanych lub terminu**, a następnie wybierz **pozycję Wybierz**.
+
+3. Na stronie **Wybieranie zestawów terminów lub terminów** wyszukaj lub wybierz zestaw terminów lub termin do skojarzenia z symbolem zastępczym, a następnie wybierz pozycję **Zapisz**.
+
+   ![Zrzut ekranu przedstawiający stronę Wybieranie zestawów terminów lub terminów.](../media/content-understanding/content-assembly-select-term.png)
+
+4. Po zakończeniu zobaczysz, że wybrany zestaw terminów lub termin został skojarzony z symbolem zastępczym. 
+
+   ![Zrzut ekranu przedstawiający panel Wszystkie symbole zastępcze przedstawiający skojarzony zestaw terminów lub termin.](../media/content-understanding/content-assembly-associated-term.png)
+
+5. Jeśli chcesz, aby użytkownicy mogli dodawać wiele wartości odpowiadających zestawowi terminów lub terminowi, wybierz pozycję **Zezwalaj na wiele wartości**. Ponadto jeśli zestaw terminów jest skonfigurowany jako otwarty zestaw terminów, możesz wybrać pozycję **Zezwalaj na nowe wartości**. Po włączeniu tej opcji użytkownicy, którzy generują dokumenty na podstawie nowoczesnego szablonu, mogą dodawać nowe terminy do zestawu terminów i dodawać je jako wartości zastępcze.
+
+   > [!TIP]
+   > Po włączeniu opcji **Zezwalaj na nowe wartości** (dozwolone tylko dla otwartych zestawów terminów) użytkownicy mogą częściej dodawać nadmiarowe terminy w magazynie terminów. Nadmiarowe terminy mogą utrudniać administratorom zarządzanie zestawem terminów.
+
+Możesz utworzyć tyle symboli zastępczych, ile uważasz za konieczne. Po zakończeniu możesz zapisać szablon jako wersję roboczą lub opublikować szablon.
 
    - **Zapisz wersję roboczą** — zapisuje szablon jako wersję roboczą i można uzyskać do niego dostęp później. Zapisane wersje robocze można wyświetlać, edytować lub publikować w sekcji **Szablony nowoczesne**, wybierając **menu NowyEdytuj**  >  nowy z biblioteki dokumentów.
-   - **Publikowanie** — publikuje szablon, który ma być używany przez innych użytkowników w organizacji do tworzenia dokumentów. Możesz wyświetlać, edytować lub cofać publikowanie *opublikowanych* szablonów w sekcji **Nowoczesne szablony**, wybierając **menu NowyEdytuj**  >  nowy z biblioteki dokumentów.
+ 
+   - **Publikowanie** — publikuje szablon, który ma być używany przez innych użytkowników w organizacji do tworzenia dokumentów. Możesz wyświetlać, edytować lub cofać publikowanie *opublikowanych* szablonów w sekcji **Nowoczesne szablony**, wybierając **menu NowyEdytuj**  >  nowy z biblioteki dokumentów. 
 
 ## <a name="edit-a-modern-template"></a>Edytowanie nowoczesnego szablonu
 
@@ -145,7 +170,7 @@ Możesz użyć *opublikowanego* nowoczesnego szablonu, aby szybko tworzyć podob
 
 3. Na panelu **Tworzenie dokumentu na podstawie szablonu** wprowadź informacje, a następnie wybierz pozycję **Utwórz dokument**.
 
-   ![Zrzut ekranu przedstawiający bibliotekę dokumentów z panelem Tworzenie dokumentu na podstawie szablonu.](../media/content-understanding/content-assembly-create-document-2.png)
+   ![Zrzut ekranu przedstawiający bibliotekę dokumentów z panelem Tworzenie dokumentu na podstawie szablonu.](../media/content-understanding/content-assembly-create-document-2b.png)
 
    Aby skrócić czas i nakład pracy związany z wypełnianiem wartości symboli zastępczych, SharePoint Syntex zapewnia:
 
@@ -153,9 +178,13 @@ Możesz użyć *opublikowanego* nowoczesnego szablonu, aby szybko tworzyć podob
       - Automatyczne wypełnianie wartości symboli zastępczych, jeśli jest w stanie jednoznacznie zidentyfikować rekord dla symboli zastępczych skojarzonych z tą samą listą.
 
 > [!NOTE]
->
-> - Obecnie tylko dokumenty Microsoft Word (rozszerzenie .docx) są obsługiwane podczas tworzenia szablonu. Przed przekazaniem dokumentu upewnij się, że w dokumencie programu Word nie włączono funkcji **Śledzenie zmian** ani komentarzy. Jeśli dokument zawiera symbole zastępcze tekstu dla obrazów, upewnij się, że nie są one opakowane tekstem. Obecnie nie obsługujemy **kontrolek zawartości** w programie Word. Jeśli chcesz utworzyć szablon na podstawie dokumentu programu Word z kontrolkami zawartości, usuń go przed utworzeniem nowoczesnego szablonu.
-> - Szablon i dokument są skojarzone z jedną biblioteką dokumentów. Aby użyć szablonu w innej bibliotece dokumentów, należy ponownie utworzyć szablon w tej bibliotece dokumentów.
-> - Przekazany dokument, który jest używany do tworzenia nowoczesnego szablonu, zostanie zapisany jako oddzielna kopia i umieszczony w katalogu /forms biblioteki dokumentów. Oryginalny plik na dysku nie będzie miał wpływu.
-> - Można tworzyć symbole zastępcze tylko dla tekstu. Obecnie obrazy, grafiki inteligentne, tabele i listy punktowane nie są obsługiwane.
-> - Po utworzeniu dokumentu na podstawie szablonu nie jest on skojarzony z szablonem.
+> **Bieżące ograniczenia wersji**
+>- Obecnie do tworzenia szablonu są obsługiwane tylko dokumenty Microsoft Word (rozszerzenie .docx). Przed przekazaniem dokumentu programu Word upewnij się, że nie zawiera on komentarzy ani nie ma włączonego **śledzenia zmian** . Jeśli dokument zawiera symbole zastępcze tekstu dla obrazów, upewnij się, że nie są one opakowane tekstem. Kontrolki zawartości w programie Word nie są obecnie obsługiwane. Jeśli chcesz utworzyć szablon na podstawie dokumentu programu Word z kontrolkami zawartości, usuń go przed utworzeniem nowoczesnego szablonu.
+>- Szablon i dokument są skojarzone z jedną biblioteką dokumentów. Aby użyć szablonu w innej bibliotece dokumentów, należy ponownie utworzyć szablon w tej bibliotece dokumentów.
+>- Przekazany dokument, który jest używany do tworzenia nowoczesnego szablonu, zostanie zapisany jako oddzielna kopia i umieszczony w katalogu /forms biblioteki dokumentów. Oryginalny plik na dysku nie będzie miał wpływu.
+>- Można tworzyć symbole zastępcze tylko dla tekstu. Obrazy, grafiki inteligentne, tabele i listy punktowane nie są obecnie obsługiwane.
+>- Po utworzeniu dokumentu na podstawie szablonu nie jest on skojarzony z szablonem.
+
+
+
+ 

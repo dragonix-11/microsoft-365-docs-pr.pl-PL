@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Włącz ustawienie, które umożliwia współtworzenie i automatyczne zapisywanie w aplikacjach klasycznych dla dokumentów oznaczonych etykietami i zaszyfrowanych w SharePoint i OneDrive.
-ms.openlocfilehash: baa2236915d37917e4ed69e5356db31262795d57
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 0fee934af5e2dfb01c681c9b2e415ef538312367
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687212"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836111"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Włączanie współtworzyła pliki zaszyfrowane przy użyciu etykiet poufności
 
@@ -74,7 +74,7 @@ Przed włączeniem tej funkcji upewnij się, że znasz następujące wymagania w
 - Etykiety poufności muszą być [włączone dla plików Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) dla dzierżawy. Jeśli ta funkcja nie jest jeszcze włączona, zostanie ona automatycznie włączona po wybraniu ustawienia, aby włączyć współtworowanie plików z etykietami poufności.
 
 - Aplikacje Microsoft 365 dla przedsiębiorstw:
-    - **Windows**: minimalna wersja 2107 z bieżącego kanału lub miesięcznego kanału Enterprise lub minimalna wersja 2202 z kanału Semi-Annual Enterprise
+    - **Windows**: minimalna wersja 2107 z bieżącego kanału lub miesięcznego kanału Enterprise lub minimalna wersja 2202 z kanału Semi-Annual Enterprise (wersja zapoznawcza)
     - **macOS**: minimalna wersja 16.51
     - **iOS**: teraz w wersji zapoznawczej po [wybraniu](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) minimalnej wersji 2.58
     - **Android**: teraz w wersji zapoznawczej po [wybraniu](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) minimalnej wersji 16.0.14931

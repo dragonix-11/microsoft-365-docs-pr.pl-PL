@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ad9cb5e69585f0c014050b51b719e539111cf9fa
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 8c8d79313ee858ebcac8754b96046b517a3f614a
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687190"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835979"
 ---
 # <a name="shared-devices"></a>Urządzenia udostępnione
 
@@ -31,7 +31,7 @@ Ponieważ wybierasz tryb urządzenia udostępnionego w punkcie rejestracji w Mic
 
 ## <a name="when-to-use-shared-device-mode"></a>Kiedy używać trybu urządzenia udostępnionego
 
-Każda sytuacja, w której użytkownicy często zmieniają urządzenia.
+Użyj trybu urządzenia udostępnionego w sytuacjach, w których użytkownicy często zmieniają urządzenia.
 
 Na przykład kasjerzy bankowi mogą znajdować się w jednej lokalizacji zarządzającej depozytami, ale przenieść się do zaplecza, aby pomóc klientom z kredytem hipotecznym. W każdej z tych lokalizacji urządzenie uruchamia różne aplikacje i jest zoptymalizowane pod kątem tych zadań, chociaż jest używane przez wiele osób.
 
@@ -41,15 +41,33 @@ Personel pielęgniarski zazwyczaj przemieszcza się między pokojami i biurami p
 
 Tryb urządzenia udostępnionego nie jest dobrym wyborem w takich sytuacjach:
 
-- Gdy pliki użytkownika muszą być przechowywane lokalnie, a nie w chmurze
-- Jeśli środowisko użytkownika musi być inne dla różnych użytkowników na urządzeniu
-- Jeśli zestaw aplikacji, których potrzebuje każdy użytkownik, znacznie się różni
+- Gdy pliki użytkownika muszą być przechowywane lokalnie, a nie w chmurze.
+- Jeśli środowisko użytkownika musi być inne dla różnych użytkowników na urządzeniu.
+- Jeśli zestaw aplikacji, których każdy użytkownik potrzebuje, znacznie się różni.
 
-## <a name="register-new-devices-in-shared-device-mode"></a>Rejestrowanie nowych urządzeń w trybie urządzenia udostępnionego
+## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile-in-microsoft-managed-desktop"></a>Rejestrowanie nowych urządzeń przy użyciu profilu trybu samodzielnego wdrażania rozwiązania Windows Autopilot w Microsoft Managed Desktop
 
-Począwszy od 2203 r., niezależnie od tego, czy ty lub partner obsługujesz rejestrację urządzeń, możesz użyć profilu [trybu samodzielnego wdrażania rozwiązania Windows Autopilot](/mem/autopilot/self-deploying) w Microsoft Managed Desktop.
+Niezależnie od tego, czy ty lub partner obsługujesz rejestrację urządzeń, możesz użyć profilu [trybu samodzielnego wdrażania rozwiązania Windows Autopilot](/mem/autopilot/self-deploying) w Microsoft Managed Desktop.
 
-Jeśli samodzielnie rejestrujesz urządzenia, musisz zaimportować nowe urządzenia do bloku Windows Urządzenia rozwiązania Autopilot.
+### <a name="before-you-begin"></a>Przed rozpoczęciem
+
+Zapoznaj się z wymaganiami dotyczącymi trybu samodzielnego wdrażania rozwiązania Windows Autopilot:
+
+> [!IMPORTANT]
+> Nie można automatycznie ponownie zarejestrować urządzenia za pomocą rozwiązania Autopilot po początkowym wdrożeniu w trybie samodzielnego wdrażania. Zamiast tego usuń rekord urządzenia w [centrum administracyjnym Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Aby usunąć rekord urządzenia z centrum administracyjnego, wybierz pozycję **UrządzeniaWszystkie**  >  urządzenia > wybierz urządzenia, które chcesz usunąć > **Usuń**.  Aby uzyskać więcej informacji, zobacz [Aktualizacje środowiska logowania i wdrażania rozwiązania Windows Autopilot](https://techcommunity.microsoft.com/t5/intune-customer-success/updates-to-the-windows-autopilot-sign-in-and-deployment/ba-p/2848452).
+
+#### <a name="trusted-platform-module"></a>Moduł zaufanej platformy
+
+Tryb samodzielnego wdrażania używa sprzętu TPM 2.0 urządzenia do uwierzytelniania urządzenia w dzierżawie Azure Active Directory organizacji. W związku z tym urządzenia bez modułu TPM 2.0 nie mogą korzystać z tego trybu. Urządzenia muszą również obsługiwać zaświadczanie urządzeń TPM. Wszystkie nowe urządzenia Windows powinny spełniać te wymagania. Proces zaświadczania modułu TPM wymaga również dostępu do zestawu adresów URL HTTPS, które są unikatowe dla każdego dostawcy modułu TPM. Aby uzyskać więcej informacji, zobacz wpis dotyczący trybu samodzielnego wdrażania rozwiązania Autopilot i wstępnej aprowizacji rozwiązania Autopilot w [obszarze Wymagania dotyczące sieci](/mem/autopilot/self-deploying#requirements). Aby uzyskać więcej informacji na temat wymagań dotyczących oprogramowania rozwiązania Windows Autopilot, zobacz [wymagania dotyczące oprogramowania rozwiązania Autopilot Windows](/mem/autopilot/software-requirements).
+
+> [!TIP]
+> Jeśli spróbujesz wdrożyć tryb samodzielnego wdrażania na urządzeniu, które nie ma obsługi modułu TPM 2.0 lub na maszynie wirtualnej, proces zakończy się niepowodzeniem podczas weryfikowania urządzenia z następującym błędem: 0x800705B4 błąd przekroczenia limitu czasu (wirtualne maszyny TPM funkcji Hyper-V nie są obsługiwane). Należy również pamiętać, że Windows 10 wersja 1903 lub nowsza jest wymagana do korzystania z trybu samodzielnego wdrażania z powodu problemów z zaświadczaniem urządzenia TPM w Windows 10 wersji 1809. Ponieważ Windows 10 Enterprise 2019 LTSC jest oparty na Windows 10 wersji 1809, tryb samodzielnego wdrażania nie jest również obsługiwany w Windows 10 Enterprise 2019 LTSC.
+>
+> Aby uzyskać więcej informacji na temat innych znanych problemów i zapoznać się z rozwiązaniami, zobacz [Windows Rozwiązania Autopilot znane problemy](/mem/autopilot/known-issues) i [Rozwiązywanie problemów z importowaniem i rejestrowaniem urządzeń rozwiązania Autopilot](/mem/autopilot/troubleshoot-device-enrollment).
+
+### <a name="steps-to-register-devices-to-use-the-windows-autopilot-self-deploying-mode-profile"></a>Kroki rejestrowania urządzeń w celu korzystania z profilu trybu samodzielnego wdrażania rozwiązania Windows Autopilot
+
+Jeśli samodzielnie rejestrujesz urządzenia, musisz zaimportować nowe urządzenia do bloku urządzenia rozwiązania Windows Autopilot.
 
 **Aby zaimportować nowe urządzenia do bloku urządzenia rozwiązania Windows Autopilot:**
 
@@ -76,7 +94,7 @@ Jeśli masz urządzenia zarejestrowane przez partnera, wykonaj kroki opisane w t
 
 ### <a name="device-storage"></a>Magazyn urządzeń
 
-Użytkownicy urządzeń udostępnionych muszą mieć kopie zapasowe danych w chmurze, aby mogli śledzić je na innych urządzeniach. Po zarejestrowaniu urządzeń w trybie urządzenia udostępnionego należy włączyć funkcje przekierowania [plików na żądanie](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) i [znanych folderów](/onedrive/redirect-known-folders) OneDrive. Takie podejście minimalizuje wpływ każdego profilu użytkownika na magazyn urządzeń. Urządzenia w trybie urządzenia udostępnionego automatycznie usuwają profile użytkowników, jeśli wolne miejsce na dysku spadnie poniżej 25%. To działanie jest zaplanowane na północ w czasie lokalnym urządzenia, chyba że magazyn stanie się krytycznie ograniczony.
+Użytkownicy urządzeń udostępnionych muszą mieć kopie zapasowe swoich danych w chmurze, aby mogli śledzić je na innych urządzeniach. Po zarejestrowaniu urządzeń w trybie urządzenia udostępnionego należy włączyć funkcje przekierowania [plików na żądanie](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) i [znanych folderów](/onedrive/redirect-known-folders) OneDrive. Takie podejście minimalizuje wpływ każdego profilu użytkownika na magazyn urządzeń. Urządzenia w trybie urządzenia udostępnionego automatycznie usuwają profile użytkowników, jeśli wolne miejsce na dysku spadnie poniżej 25%. To działanie jest zaplanowane na północ w czasie lokalnym urządzenia, chyba że magazyn stanie się krytycznie ograniczony.
 
 Microsoft Managed Desktop używa dostawcy CSP [sharedPC](/mem/intune/configuration/shared-user-device-settings-windows) do wykonywania tych operacji, więc upewnij się, że nie używasz tych dostawców CSP samodzielnie.
 

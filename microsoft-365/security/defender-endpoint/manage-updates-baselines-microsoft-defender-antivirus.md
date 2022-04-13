@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: high
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 596616328a02182b39c67f58137d43ab626e1756
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: cc2032c547cbd9c75a73da2f47f7baed21e7438e
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823317"
+ms.locfileid: "64835936"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie planów bazowych
 
@@ -134,7 +134,7 @@ Wersja aktualizacji analizy zabezpieczeń: 1.361.14.0 <br/>
 - Ulepszone dane wyjściowe ruchu, gdy usługa SmartScreen jest nieosiągalna 
 - Ulepszenia łączności dla klientów korzystających z serwerów proxy z wymaganiami dotyczącymi uwierzytelniania
 - Naprawiono usterkę aktualizacji urządzenia VDI dla sieciowych akcji plików 
-- EDR w trybie bloku obsługuje teraz szczegółowe targetowanie urządzeń przy użyciu nowych dostawców CSP. Zobacz [Wykrywanie i reagowanie na punkty końcowe (EDR) w trybie bloku](edr-in-block-mode.md).
+- EDR w trybie bloku obsługuje teraz szczegółowe określanie wartości docelowej urządzeń przy użyciu nowych dostawców CSP. Zobacz [Wykrywanie i reagowanie na punkty końcowe (EDR) w trybie bloku](edr-in-block-mode.md).
 
 ### <a name="known-issues"></a>Znane problemy
 
@@ -992,11 +992,11 @@ Aby uzyskać więcej informacji, zobacz [Microsoft Defender update for Windows o
 | [aktualizacja Ochrona punktu końcowego w usłudze Microsoft Defender czujnika EDR](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Możesz zaktualizować czujnik EDR (MsSense.exe), który jest dołączony do nowego pakietu ujednoliconego rozwiązania Ochrona punktu końcowego w usłudze Microsoft Defender wydanego w 2021 roku.   |
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> Jeśli szukasz powiązanych informacji dotyczących programu antywirusowego dla innych platform, zobacz:
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
