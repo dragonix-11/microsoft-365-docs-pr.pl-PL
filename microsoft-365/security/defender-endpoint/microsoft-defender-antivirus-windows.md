@@ -17,18 +17,22 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: b6eabc3527742b6cc7f06d23207db813b827e5f5
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 352b60caa3af581a5d1162b1896b255bfcea873c
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63009557"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790245"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Program antywirusowy Microsoft Defender w systemie Windows
 
 **Dotyczy:**
+
 - [Ochrona punktu końcowego w usłudze Microsoft Defender (plan 2)](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
 - Program antywirusowy Microsoft Defender
+
+**Platformy**
+- System Windows 
 
 Program antywirusowy Microsoft Defender jest dostępny w systemach Windows 10 i Windows 11 oraz w wersjach systemu Windows Server.
 
@@ -88,6 +92,16 @@ Nazwa rozwiązania antywirusowego/chroniącego przed złośliwym oprogramowaniem
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>Pobierz aktualizacje platformy antywirusowej/chroniącej przed złośliwym oprogramowaniem
 
 Ważne jest, aby program antywirusowy Microsoft Defender lub dowolne rozwiązanie antywirusowe/chroniące przed złośliwym oprogramowaniem były aktualne. Firma Microsoft udostępnia regularne aktualizacje, aby zapewnić, że twoje urządzenia mają najnowszą technologię chroniącą przed nowym złośliwym oprogramowaniem i technikami ataków. Aby dowiedzieć się więcej, zobacz [Zarządzanie aktualizacji programu antywirusowego Microsoft Defender i stosowanie punktów odniesienia](manage-updates-baselines-microsoft-defender-antivirus.md).
+
+> [!TIP]
+> Jeśli szukasz powiązanych informacji dotyczących programu antywirusowego dla innych platform, zobacz:
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 
