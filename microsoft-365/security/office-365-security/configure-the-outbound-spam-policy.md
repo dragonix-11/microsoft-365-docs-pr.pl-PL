@@ -19,12 +19,12 @@ ms.custom:
 description: Administratorzy mogą dowiedzieć się, jak wyświetlać, tworzyć, modyfikować i usuwać zasady spamu wychodzącego w Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 15dc850046e74c3b42477998fa24a608d0fd0af8
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 9ab8585a0671f9c62ec2015d91486539c84004db
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841727"
+ms.locfileid: "64847470"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurowanie filtrowania wychodzącego spamu w ramach operacji EOP
 
@@ -101,9 +101,11 @@ Utworzenie niestandardowych zasad spamu wychodzącego w portalu Microsoft 365 De
 
    Po zakończeniu kliknij przycisk **Dalej**.
 
-4. Na wyświetlonej stronie **Użytkownicy, grupy i domeny** zidentyfikuj wewnętrznych nadawców, których dotyczą zasady (warunki nadawcy):
-   - **Użytkownicy**: określone skrzynki pocztowe, użytkownicy poczty lub kontakty poczty w organizacji.
-   - **Grupy**: określone grupy dystrybucyjne, grupy zabezpieczeń z obsługą poczty lub Grupy Microsoft 365 w organizacji.
+4. Na wyświetlonej stronie **Użytkownicy, grupy i domeny** zidentyfikuj wewnętrznych nadawców, których dotyczą zasady (warunki adresatów):
+   - **Użytkownicy**: określone skrzynki pocztowe, użytkownicy poczty lub kontakty poczty e-mail.
+   - **Grupy**:
+     - Członkowie określonych grup dystrybucyjnych lub grup zabezpieczeń z obsługą poczty.
+     - Określona Grupy Microsoft 365.
    - **Domeny**: Wszyscy nadawcy w określonych [zaakceptowanych domenach](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) w organizacji.
 
    Kliknij odpowiednie pole, zacznij wpisywać wartość i wybierz żądaną wartość z wyników. Powtórz ten proces tyle razy, ile jest to konieczne. Aby usunąć istniejącą wartość, kliknij przycisk usuń ![Usuń ikonę.](../../media/m365-cc-sc-remove-selection-icon.png) obok wartości.

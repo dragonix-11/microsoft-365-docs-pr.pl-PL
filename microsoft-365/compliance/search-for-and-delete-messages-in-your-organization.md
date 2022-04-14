@@ -16,155 +16,155 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Funkcja wyszukiwania i przeczyszczania w Centrum zgodności platformy Microsoft 365 umożliwia wyszukiwanie i usuwanie wiadomości e-mail ze wszystkich skrzynek pocztowych w organizacji.
-ms.openlocfilehash: 9361f7dea0e1b12d50733b9b1d1e91ac15577ab9
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Użyj funkcji wyszukiwania i przeczyszczania w Centrum zgodności platformy Microsoft 365, aby wyszukać i usunąć wiadomość e-mail ze wszystkich skrzynek pocztowych w organizacji.
+ms.openlocfilehash: 8d283148b0a0cee0aed3d91a6332c96bd31111b4
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400996"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64846976"
 ---
-# <a name="search-for-and-delete-email-messages"></a>Wyszukiwanie i usuwanie wiadomości e-mail
+# <a name="search-for-and-delete-email-messages"></a>Wyszukaj i usuń wiadomości e-mail
 
-**Ten artykuł jest dla administratorów. Czy próbujesz znaleźć w skrzynce pocztowej elementy, które chcesz usunąć? Zobacz [Znajdowanie wiadomości lub elementu za pomocą wyszukiwania błyskawicznego](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
+**Ten artykuł jest przeznaczony dla administratorów. Czy próbujesz znaleźć elementy w skrzynce pocztowej, które chcesz usunąć? Zobacz [Znajdowanie wiadomości lub elementu za pomocą wyszukiwania błyskawicznego](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
 
-Za pomocą funkcji Wyszukiwanie zawartości można wyszukiwać i usuwać wiadomości e-mail ze wszystkich skrzynek pocztowych w organizacji. Może to ułatwić znajdowanie i usuwanie potencjalnie niebezpiecznych lub niebezpiecznych wiadomości e-mail, takich jak:
+Funkcja wyszukiwania zawartości umożliwia wyszukiwanie i usuwanie wiadomości e-mail ze wszystkich skrzynek pocztowych w organizacji. Może to pomóc w znalezieniu i usunięciu potencjalnie szkodliwych wiadomości e-mail lub wiadomości e-mail wysokiego ryzyka, takich jak:
 
 - Wiadomości zawierające niebezpieczne załączniki lub wirusy
 
-- Wiadomości wyłudzdzce informacje
+- Wiadomości wyłudzające informacje
 
-- Wiadomości zawierające poufne dane
+- Komunikaty zawierające dane poufne
 
 > [!TIP]
-> Jeśli Twoja organizacja korzysta z usługi Defender dla usługi Office 365 Plan 2, zalecamy skorzystanie z procedury opisanej w te sposób opisanej w tece Rozwiązywanie problemów ze złośliwymi wiadomościami e-mail dostarczonymi w programie [Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365), a nie zgodnie z procedurą opisaną w tym artykule.
+> Jeśli Twoja organizacja ma subskrypcję planu Ochrona usługi Office 365 w usłudze Defender 2, zalecamy skorzystanie z procedury opisanej w artykule [Korygowanie złośliwych wiadomości e-mail dostarczonych w Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365), zamiast postępować zgodnie z procedurą opisaną w tym artykule.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Przepływ pracy wyszukiwania i przeczyszczania opisany w tym artykule nie powoduje usunięcia wiadomości czatu ani innej zawartości z Microsoft Teams. Jeśli wyszukiwanie zawartości, które tworzysz w kroku 2, zwraca elementy z Microsoft Teams, elementy te nie zostaną usunięte podczas przeczyszczania elementów w kroku 3.
+- Przepływ pracy wyszukiwania i przeczyszczania opisany w tym artykule nie usuwa wiadomości czatu ani innej zawartości z Microsoft Teams. Jeśli wyszukiwanie zawartości utworzone w kroku 2 zwraca elementy z Microsoft Teams, te elementy nie zostaną usunięte podczas przeczyszczania elementów w kroku 3. Aby wyszukać i usunąć wiadomości czatu, zobacz [Wyszukiwanie i przeczyszczanie wiadomości czatu w Teams](search-and-delete-Teams-chat-messages.md).
 
-- Aby utworzyć i uruchomić wyszukiwanie zawartości, musisz być członkiem grupy ról Menedżer zbierania  elektronicznych materiałów dowodowych lub mieć przypisaną rolę Wyszukiwanie zgodności w  Centrum zgodności platformy Microsoft 365. Aby usuwać wiadomości, musisz być członkiem grupy ról Zarządzanie  organizacją lub mieć przypisaną rolę Wyszukiwania i [przeczyszczania](assign-ediscovery-permissions.md) w centrum zgodności Aby uzyskać informacje na temat dodawania użytkowników do grupy ról, zobacz Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych.
+- Aby utworzyć i uruchomić wyszukiwanie zawartości, musisz być członkiem grupy ról **menedżera zbierania elektronicznych materiałów dowodowych** lub mieć przypisaną rolę **Wyszukiwanie zgodności** w Centrum zgodności platformy Microsoft 365. Aby usunąć komunikaty, musisz być członkiem grupy ról **Zarządzanie organizacją** lub mieć przypisaną rolę **Wyszukaj i przeczyszczanie** w centrum zgodności Aby uzyskać informacje o dodawaniu użytkowników do grupy ról, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
 
   > [!NOTE]
-  > Grupa **ról Zarządzanie organizacją** istnieje zarówno w Exchange Online, jak i w Centrum zgodności platformy Microsoft 365. Są to osobne grupy ról, które nadawają różne uprawnienia. Jako członek zespołu zarządzania **organizacją w firmie** Exchange Online nie udziela wymaganych uprawnień do usuwania wiadomości e-mail. Jeśli nie masz przypisanej roli Wyszukiwania i  przeczyszczania w centrum zgodności (bezpośrednio lub za pośrednictwem grupy ról, takiej jak Zarządzanie **organizacją), otrzymasz** błąd w kroku 3 po uruchomieniu polecenia cmdlet **New-ComplianceSearchAction** z komunikatem "Nie można odnaleźć parametru, który jest zgodny z nazwą parametru "Purge"".
+  > Grupa ról **Zarządzanie organizacją** istnieje zarówno w Exchange Online, jak i w Centrum zgodności platformy Microsoft 365. Są to oddzielne grupy ról, które dają różne uprawnienia. Bycie członkiem **zarządzania organizacją** w Exchange Online nie udziela wymaganych uprawnień do usuwania wiadomości e-mail. Jeśli nie masz przypisanej roli **Wyszukaj i przeczyszczanie** w centrum zgodności (bezpośrednio lub za pośrednictwem grupy ról, takiej jak **Zarządzanie organizacją**), po uruchomieniu polecenia cmdlet **New-ComplianceSearchAction** w kroku 3 zostanie wyświetlony komunikat "Nie można odnaleźć parametru zgodnego z nazwą parametru "Przeczyszczanie".
 
-- Aby usuwać wiadomości, & w Centrum zgodności, należy użyć programu PowerShell w centrum zabezpieczeń. Zobacz [Krok 1](#step-1-connect-to-security--compliance-center-powershell) , aby uzyskać instrukcje dotyczące nawiązywania połączenia.
+- Aby usunąć komunikaty, musisz użyć programu PowerShell Centrum zgodności & zabezpieczeń. Aby uzyskać instrukcje dotyczące nawiązywania połączenia, zobacz [Krok 1](#step-1-connect-to-security--compliance-center-powershell) .
 
-- Jednocześnie można usunąć maksymalnie 10 elementów na skrzynkę pocztową. Funkcja wyszukiwania i usuwania wiadomości jest w zamierzony sposób narzędziem do reagowania na zdarzenia, dlatego ten limit pomaga szybko usuwać wiadomości ze skrzynek pocztowych. Ta funkcja nie jest przeznaczona do oczyszczania skrzynek pocztowych użytkowników.
+- Jednocześnie można usunąć maksymalnie 10 elementów na skrzynkę pocztową. Ponieważ możliwość wyszukiwania i usuwania wiadomości ma być narzędziem reagowania na zdarzenia, ten limit pomaga zapewnić szybkie usunięcie wiadomości ze skrzynek pocztowych. Ta funkcja nie jest przeznaczona do czyszczenia skrzynek pocztowych użytkowników.
 
-- Maksymalna liczba skrzynek pocztowych w przeszukiwaniu zawartości, których można użyć do usuwania elementów przez wykonanie akcji wyszukiwania i przeczyszczania, wynosi 50 000. Jeśli wyszukiwanie (w ramach wyszukiwania w kroku [2](#step-2-create-a-content-search-to-find-the-message-to-delete) ) spowoduje przeszukanie więcej niż 50 000 skrzynek pocztowych, akcja przeczyszczania (tworzyć w kroku 3) nie powiedzie się. Wyszukiwanie w więcej niż 50 000 skrzynek pocztowych w jednym wyszukiwaniu może się zazwyczaj odbywać po skonfigurowaniu wyszukiwania tak, aby uwzględniała wszystkie skrzynki pocztowe w organizacji. To ograniczenie obowiązuje nawet wtedy, gdy mniej niż 50 000 skrzynek pocztowych zawiera elementy zgodne z zapytaniem wyszukiwania. Zobacz [sekcję Więcej informacji](#more-information) , aby uzyskać wskazówki dotyczące używania filtrów uprawnień wyszukiwania do wyszukiwania i przeczyszczania elementów z ponad 50 000 skrzynek pocztowych.
+- Maksymalna liczba skrzynek pocztowych w wyszukiwaniu zawartości, których można użyć do usunięcia elementów, wykonując akcję wyszukiwania i przeczyszczania, wynosi 50 000. Jeśli wyszukiwanie (utworzone w [kroku 2](#step-2-create-a-content-search-to-find-the-message-to-delete) wyszukuje ponad 50 000 skrzynek pocztowych), akcja przeczyszczania (utworzona w kroku 3) zakończy się niepowodzeniem. Wyszukiwanie ponad 50 000 skrzynek pocztowych w jednym wyszukiwaniu może zazwyczaj nastąpić podczas konfigurowania wyszukiwania tak, aby uwzględniało wszystkie skrzynki pocztowe w organizacji. To ograniczenie nadal ma zastosowanie nawet wtedy, gdy mniej niż 50 000 skrzynek pocztowych zawiera elementy zgodne z zapytaniem wyszukiwania. Zobacz sekcję [Więcej informacji](#more-information) , aby uzyskać wskazówki dotyczące używania filtrów uprawnień wyszukiwania do wyszukiwania i przeczyszczania elementów z ponad 50 000 skrzynek pocztowych.
 
-- Procedura w tym artykule dotyczy tylko usuwania elementów ze skrzynek Exchange Online i folderów publicznych. Nie można go używać do usuwania zawartości z witryn SharePoint ani OneDrive dla Firm internetowych.
+- Procedura opisana w tym artykule może służyć tylko do usuwania elementów w Exchange Online skrzynkach pocztowych i folderach publicznych. Nie można jej używać do usuwania zawartości z witryn SharePoint lub OneDrive dla Firm.
 
-- Za pomocą procedur  podanych w tym artykule nie można usuwać elementów Advanced eDiscovery e-mail z zestawu recenzji w przypadku Advanced eDiscovery przypadku. Jest tak, ponieważ elementy w zestawie recenzji są przechowywane w lokalizacji usługi Azure Storage, a nie w usłudze na żywo. Oznacza to, że nie zostaną one zwrócone przez wyszukiwanie zawartości, które tworzysz w kroku 1. Aby usunąć elementy z zestawu recenzji, należy usunąć Advanced eDiscovery przypadku, która zawiera zestaw recenzji. Aby uzyskać więcej informacji, [zobacz Zamykanie lub usuwanie Advanced eDiscovery przypadku](close-or-delete-case.md).
+- Nie można usunąć elementów wiadomości e-mail w zestawie przeglądów w Advanced eDiscovery przypadku przy użyciu procedur w tym artykule. Dzieje się tak dlatego, że elementy w zestawie przeglądów są przechowywane w lokalizacji Storage platformy Azure, a nie w usłudze na żywo. Oznacza to, że nie zostaną one zwrócone przez wyszukiwanie zawartości utworzone w kroku 1. Aby usunąć elementy w zestawie przeglądów, należy usunąć przypadek Advanced eDiscovery zawierający zestaw przeglądów. Aby uzyskać więcej informacji, zobacz [Zamykanie lub usuwanie Advanced eDiscovery przypadku](close-or-delete-case.md).
 
-## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Krok 1. Połączenie do centrum zabezpieczeń & w programie PowerShell
+## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Krok 1. Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń
 
-Pierwszym krokiem jest połączenie się z programem PowerShell & zabezpieczeń w organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell & centrum zabezpieczeń i zgodności](/powershell/exchange/connect-to-scc-powershell).
+Pierwszym krokiem jest nawiązanie połączenia z programem PowerShell Centrum zgodności usługi Security & dla Twojej organizacji. Aby uzyskać instrukcje krok po kroku, zobacz [Połączenie do programu PowerShell Centrum zgodności & zabezpieczeń](/powershell/exchange/connect-to-scc-powershell).
 
-## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Krok 2. Tworzenie wyszukiwania zawartości w celu znalezienia wiadomości do usunięcia
+## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Krok 2. Tworzenie wyszukiwania zawartości w celu znalezienia komunikatu do usunięcia
 
-Drugim krokiem jest utworzenie i uruchomienie wyszukiwania zawartości w celu znalezienia wiadomości, którą chcesz usunąć ze skrzynek pocztowych w Twojej organizacji. Możesz utworzyć wyszukiwanie za pomocą narzędzia Centrum zgodności platformy Microsoft 365 lub uruchamiając polecenia cmdlet **New-ComplianceSearch** i **Start-ComplianceSearch** w programie PowerShell pod & zabezpieczeń i zgodności. Wiadomości zgodne z zapytaniem w tym wyszukiwaniu zostaną usunięte, uruchamiając polecenie **New-ComplianceSearchAction -Purge** w [kroku 3](#step-3-delete-the-message). Aby uzyskać informacje na temat tworzenia zapytań wyszukiwania i konfigurowania ich zawartości, zobacz następujące tematy:
+Drugim krokiem jest utworzenie i uruchomienie wyszukiwania zawartości w celu znalezienia wiadomości, którą chcesz usunąć ze skrzynek pocztowych w organizacji. Wyszukiwanie można utworzyć przy użyciu Centrum zgodności platformy Microsoft 365 lub uruchamiając polecenia cmdlet **New-ComplianceSearch** i **Start-ComplianceSearch** w programie PowerShell Security & Compliance. Komunikaty zgodne z zapytaniem dla tego wyszukiwania zostaną usunięte przez uruchomienie polecenia **New-ComplianceSearchAction -Purge** w [kroku 3](#step-3-delete-the-message). Aby uzyskać informacje na temat tworzenia wyszukiwania zawartości i konfigurowania zapytań wyszukiwania, zobacz następujące tematy:
 
-- [Wyszukiwanie zawartości w programie Office 365](content-search.md)
+- [Wyszukiwanie zawartości w Office 365](content-search.md)
 
-- [Zapytania słów kluczowych dotyczące wyszukiwania zawartości](keyword-queries-and-search-conditions.md)
+- [Zapytania słów kluczowych dla wyszukiwania zawartości](keyword-queries-and-search-conditions.md)
 
-- [Wyszukiwanie nowych zgodności](/powershell/module/exchange/New-ComplianceSearch)
+- [New-ComplianceSearch](/powershell/module/exchange/New-ComplianceSearch)
 
 - [Start-ComplianceSearch](/powershell/module/exchange/Start-ComplianceSearch)
 
 > [!NOTE]
-> Lokalizacje zawartości, które są przeszukiwane w przeszukiwaniu zawartości, który został przez Ciebie utworzyć w tym kroku, nie mogą obejmować SharePoint ani OneDrive dla Firm witryn. Wyszukiwanie zawartości może obejmować tylko skrzynki pocztowe i foldery publiczne, które będą używane do wiadomości e-mail. Jeśli wyszukiwanie zawartości obejmuje witryny, po uruchomieniu polecenia cmdlet **New-ComplianceSearchAction** w kroku 3 zostanie wyświetlony komunikat o błędzie.
+> Lokalizacje zawartości, które są przeszukiwane w wyszukiwaniu zawartości utworzonym w tym kroku, nie mogą zawierać witryn SharePoint ani OneDrive dla Firm. W wyszukiwaniu zawartości można dołączyć tylko skrzynki pocztowe i foldery publiczne, które będą używane do wiadomości e-mail. Jeśli wyszukiwanie zawartości zawiera witryny, po uruchomieniu polecenia cmdlet **New-ComplianceSearchAction** w kroku 3 zostanie wyświetlony błąd.
 
-### <a name="tips-for-finding-messages-to-remove"></a>Wskazówki znajdowania wiadomości do usunięcia
+### <a name="tips-for-finding-messages-to-remove"></a>Wskazówki do znajdowania komunikatów do usunięcia
 
-Celem zapytania wyszukiwania jest zawężenie wyników wyszukiwania tylko do wiadomości, które chcesz usunąć. Oto kilka porad:
+Celem zapytania wyszukiwania jest zawężenie wyników wyszukiwania tylko do wiadomości lub komunikatów, które chcesz usunąć. Oto kilka wskazówek:
 
-- Jeśli znasz dokładną frazę lub tekst użyty w wierszu tematu wiadomości, użyj właściwości **Temat** w zapytaniu wyszukiwania.
+- Jeśli znasz dokładny tekst lub frazę używaną w wierszu tematu wiadomości, użyj właściwości **Podmiot** w zapytaniu wyszukiwania.
 
-- Jeśli znasz dokładną datę (lub zakres dat) wiadomości, uwzględnij w zapytaniu wyszukiwania właściwość Otrzymano.
+- Jeśli wiesz, że dokładna data (lub zakres dat) komunikatu, uwzględnij właściwość **Odebrano** w zapytaniu wyszukiwania.
 
-- Jeśli wiesz, kto wysłał wiadomość, uwzględnij właściwość **Od** w zapytaniu wyszukiwania.
+- Jeśli wiesz, kto wysłał komunikat, uwzględnij właściwość **From** w zapytaniu wyszukiwania.
 
-- Wyświetl podgląd wyników wyszukiwania, aby sprawdzić, czy wyszukiwanie zwróciło tylko wiadomość (lub wiadomości), które chcesz usunąć.
+- Wyświetl podgląd wyników wyszukiwania, aby sprawdzić, czy wyszukiwanie zwróciło tylko komunikat (lub komunikaty), które chcesz usunąć.
 
-- Statystyka szacowanego wyszukiwania (wyświetlana w okienku szczegółów wyszukiwania w Centrum zgodności platformy Microsoft 365 lub za pomocą polecenia cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)) pozwala uzyskać całkowitą liczbę wyników.
+- Użyj statystyk szacowania wyszukiwania (wyświetlanych w okienku szczegółów wyszukiwania w Centrum zgodności platformy Microsoft 365 lub za pomocą polecenia cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)), aby uzyskać łączną liczbę wyników.
 
-Oto dwa przykłady zapytań wyszukiwania podejrzanych wiadomości e-mail.
+Poniżej przedstawiono dwa przykłady zapytań w celu znalezienia podejrzanych wiadomości e-mail.
 
-- To zapytanie zwraca wiadomości otrzymane przez użytkowników między 13 kwietnia 2016 a 14 kwietnia 2016 r., które zawierają wyrazy "akcja" i "wymagane" w wierszu tematu.
+- To zapytanie zwraca komunikaty odebrane przez użytkowników w okresie od 13 kwietnia 2016 r. do 14 kwietnia 2016 r. i zawierające wyrazy "action" i "required" w wierszu tematu.
 
   ```powershell
   (Received:4/13/2016..4/14/2016) AND (Subject:'Action required')
   ```
 
-- To zapytanie zwraca wiadomości wysłane przez firmę chatsuwloginsset12345@outlook.com zawierające dokładną frazę "Zaktualizuj informacje o koncie" w wierszu tematu.
+- To zapytanie zwraca komunikaty wysyłane przez chatsuwloginsset12345@outlook.com i zawierające dokładną frazę "Aktualizuj informacje o koncie" w wierszu tematu.
 
   ```powershell
   (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
   ```
 
-Oto przykład użycia zapytania do tworzenia i rozpoczynania wyszukiwania, uruchamiając polecenia cmdlet **New-ComplianceSearch** i **Start-ComplianceSearch** w celu przeszukiwania wszystkich skrzynek pocztowych w organizacji:
+Oto przykład użycia zapytania do utworzenia i rozpoczęcia wyszukiwania przez uruchomienie poleceń cmdlet **New-ComplianceSearch** i **Start-ComplianceSearch** w celu wyszukania wszystkich skrzynek pocztowych w organizacji:
 
 ```powershell
 $Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation All -ContentMatchQuery '(Received:4/13/2016..4/14/2016) AND (Subject:"Action required")'
 Start-ComplianceSearch -Identity $Search.Identity
 ```
 
-## <a name="step-3-delete-the-message"></a>Krok 3. Usunięcie wiadomości
+## <a name="step-3-delete-the-message"></a>Krok 3. Usuwanie komunikatu
 
-Po utworzeniu i dopracowaniu wyszukiwania zawartości w celu zwrócenia wiadomości, które chcesz usunąć, ostatnim krokiem jest uruchomienie polecenia **New-ComplianceSearchAction -Purge** w programie PowerShell zabezpieczeń & zgodności w celu usunięcia wiadomości. Możesz delikatnie lub trwale usunąć wiadomość. Programowo usunięta wiadomość jest przenoszony do folderu Elementy do odzyskania użytkownika i zachowywana do momentu wygaśnięcia okresu przechowywania elementów usuniętych. Usunięte wiadomości są oznaczane do trwałego usunięcia ze skrzynki pocztowej i zostaną trwale usunięte, gdy następnym razem skrzynka pocztowa zostanie przetworzona przez asystenta folderów zarządzanych. Jeśli dla skrzynki pocztowej włączono odzyskiwanie pojedynczych elementów, elementy usunięte z usuniętymi elementami zostaną trwale usunięte po wygaśnięciu okresu przechowywania elementów usuniętych. Jeśli skrzynka pocztowa znajduje się w posiadaniu, usunięte wiadomości są zachowywane do momentu wygaśnięcia czasu trwania przechowywania elementu lub do czasu usunięcia go ze skrzynki pocztowej.
+Po utworzeniu i uściśleniu wyszukiwania zawartości w celu zwrócenia komunikatów, które chcesz usunąć, ostatnim krokiem jest uruchomienie polecenia **New-ComplianceSearchAction -Purge** w programie PowerShell Security & Compliance w celu usunięcia komunikatu. Komunikat można usunąć nietrwale lub na stałe. Komunikat o usunięciu nietrwałym jest przenoszony do folderu Elementy możliwe do odzyskania użytkownika i przechowywany do momentu wygaśnięcia okresu przechowywania usuniętego elementu. Wiadomości usunięte na stałe są oznaczone do trwałego usunięcia ze skrzynki pocztowej i zostaną trwale usunięte przy następnym przetworzeniu skrzynki pocztowej przez Asystenta folderów zarządzanych. Jeśli odzyskiwanie pojedynczego elementu jest włączone dla skrzynki pocztowej, usunięte elementy zostaną trwale usunięte po upływie okresu przechowywania usuniętego elementu. Jeśli skrzynka pocztowa zostanie wstrzymana, usunięte wiadomości zostaną zachowane do czasu wygaśnięcia czasu przechowywania elementu lub do momentu usunięcia blokady ze skrzynki pocztowej.
 
 > [!NOTE]
-> Jak wspomniano wcześniej, elementy Microsoft Teams, które są zwracane przez przeszukiwanie zawartości, nie są usuwane po uruchomieniu polecenia **New-ComplianceSearchAction -Purge**.
+> Jak wspomniano wcześniej, elementy z Microsoft Teams zwracane przez wyszukiwanie zawartości nie są usuwane po uruchomieniu polecenia **New-ComplianceSearchAction -Purge**.
 
-Aby uruchomić następujące polecenia w celu usunięcia wiadomości, upewnij się, że masz połączenie z programem [PowerShell centrum zabezpieczeń & zgodności](/powershell/exchange/connect-to-scc-powershell).
+Aby uruchomić następujące polecenia w celu usunięcia komunikatów, upewnij się, że masz [połączenie z programem PowerShell & Security & Compliance Center](/powershell/exchange/connect-to-scc-powershell).
 
-### <a name="soft-delete-messages"></a>Miękkie usuwanie wiadomości
+### <a name="soft-delete-messages"></a>Komunikaty usuwania nietrwałego
 
-W poniższym przykładzie polecenie "miękkie" usuwa wyniki wyszukiwania zwrócone przez wyszukiwanie zawartości o nazwie "Usuwanie wiadomości wyłudzającej informacje".
+W poniższym przykładzie polecenie nietrwale usuwa wyniki wyszukiwania zwrócone przez wyszukiwanie zawartości o nazwie "Usuń wiadomość wyłudzającą informacje".
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-### <a name="hard-delete-messages"></a>Trudne usuwanie wiadomości
+### <a name="hard-delete-messages"></a>Komunikaty o twardym usunięciu
 
-Aby trudno usunąć elementy zwrócone przez wyszukiwanie zawartości "Usuń wiadomość wyłudzającą informacje", należy uruchomić to polecenie:
+Aby usunąć elementy zwrócone przez wyszukiwanie zawartości "Usuń wiadomość wyłudzającą informacje", należy uruchomić następujące polecenie:
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
-Po uruchomieniu poprzednich poleceń w celu "miękkiego" lub trudnego usunięcia wiadomości wyszukiwanie określone przez parametr  *SearchName*  jest wyszukiwaniem zawartości utworzonym w kroku 1.
+Po uruchomieniu poprzednich poleceń w celu usunięcia komunikatów nietrwałych lub twardych wyszukiwanie określone przez parametr  *SearchName*  to wyszukiwanie zawartości utworzone w kroku 1.
 
-Aby uzyskać więcej informacji, [zobacz New-ComplianceSearchAction](/powershell/module/exchange/New-ComplianceSearchAction).
+Aby uzyskać więcej informacji, zobacz [New-ComplianceSearchAction](/powershell/module/exchange/New-ComplianceSearchAction).
 
 ## <a name="more-information"></a>Więcej informacji
 
-- **Jak można uzyskać stan operacji wyszukiwania i usuwania?**
+- **Jak uzyskać stan operacji wyszukiwania i usuwania?**
 
-  Uruchamianie akcji **Get-ComplianceSearchAction** w celu uzyskania stanu operacji usuwania. Obiekt tworzony po uruchomieniu polecenia cmdlet **New-ComplianceSearchAction** ma nazwę przy użyciu tego formatu:  `<name of Content Search>_Purge`.
+  Uruchom polecenie **Get-ComplianceSearchAction** , aby uzyskać stan operacji usuwania. Obiekt tworzony podczas uruchamiania polecenia cmdlet **New-ComplianceSearchAction** nosi nazwę przy użyciu następującego formatu:  `<name of Content Search>_Purge`.
 
-- **Co się dzieje po usunięciu wiadomości?**
+- **Co się stanie po usunięciu komunikatu?**
 
-  Wiadomość usunięta za pomocą tego  `New-ComplianceSearchAction -Purge -PurgeType HardDelete` polecenia jest przenoszony do folderu Przeczyszczania i użytkownik nie może uzyskać do niej dostępu. Po zakończeniu przenoszenia wiadomości do folderu Przeczyszczania jest ona zachowywana przez czas przechowywania elementów usuniętych, jeśli dla skrzynki pocztowej włączono odzyskiwanie pojedynczych elementów. (W Microsoft 365 odzyskiwania pojedynczych elementów jest domyślnie włączone podczas tworzenia nowej skrzynki pocztowej). Po wygaśnięciu okresu przechowywania elementów usuniętych wiadomość jest oznaczana do trwałego usunięcia i zostanie usunięta z programu Microsoft 365 następnym razem, gdy skrzynka pocztowa zostanie przetworzona przez asystenta folderów zarządzanych.
+  Komunikat usunięty za pomocą  `New-ComplianceSearchAction -Purge -PurgeType HardDelete` polecenia jest przenoszony do folderu Przeczyszczanie i użytkownik nie może uzyskać do nich dostępu. Po przeniesieniu wiadomości do folderu Przeczyszczanie wiadomość jest zachowywana przez czas przechowywania usuniętego elementu, jeśli dla skrzynki pocztowej włączono odzyskiwanie pojedynczego elementu. (W Microsoft 365 odzyskiwanie pojedynczego elementu jest domyślnie włączone podczas tworzenia nowej skrzynki pocztowej). Po upływie okresu przechowywania usuniętego elementu wiadomość zostanie oznaczona do trwałego usunięcia i zostanie usunięta z Microsoft 365 następnym razem, gdy skrzynka pocztowa zostanie przetworzona przez asystenta folderu zarządzanego.
 
-  W przypadku użycia tego `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` polecenia wiadomości są przenoszone do folderu Usunięcia w folderze Elementy do odzyskania użytkownika. Nie jest ona od razu czyszczona z Microsoft 365. Użytkownik może odzyskać wiadomości w folderze Elementy usunięte na czas trwania na podstawie okresu przechowywania elementów usuniętych skonfigurowanego dla skrzynki pocztowej. Gdy ten okres przechowywania wygaśnie (lub jeśli użytkownik oczyści wiadomość przed jej wygaśnięciem), wiadomość zostanie przeniesiona do folderu przeczyszczania i użytkownik nie będzie już miał do niej dostępu. Po w folderze przeczyszczania wiadomość jest zachowywana na czas trwania na podstawie okresu przechowywania elementów usuniętych skonfigurowanego dla skrzynki pocztowej, jeśli dla skrzynki pocztowej włączono odzyskiwanie pojedynczych elementów. (W Microsoft 365 odzyskiwania pojedynczych elementów jest domyślnie włączone podczas tworzenia nowej skrzynki pocztowej). Po wygaśnięciu okresu przechowywania elementów usuniętych wiadomość jest oznaczana do trwałego usunięcia i zostanie usunięta z programu Microsoft 365 przy następnym przetwarzaniu skrzynki pocztowej przez asystenta folderów zarządzanych.
+  Jeśli użyjesz `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` polecenia, komunikaty zostaną przeniesione do folderu Usuwanie w folderze Elementy możliwe do odzyskania użytkownika. Nie jest natychmiast czyszczony z Microsoft 365. Użytkownik może odzyskać komunikaty w folderze Elementy usunięte na czas trwania na podstawie okresu przechowywania usuniętego elementu skonfigurowanego dla skrzynki pocztowej. Po upływie tego okresu przechowywania (lub jeśli użytkownik przeczyści komunikat przed jego wygaśnięciem), komunikat zostanie przeniesiony do folderu Przeczyszczanie i użytkownik nie będzie już mógł uzyskać do niego dostępu. W folderze Przeczyszczanie wiadomość jest przechowywana przez cały czas na podstawie okresu przechowywania usuniętego elementu skonfigurowanego dla skrzynki pocztowej, jeśli dla skrzynki pocztowej włączono odzyskiwanie pojedynczych elementów. (W Microsoft 365 odzyskiwanie pojedynczego elementu jest domyślnie włączone podczas tworzenia nowej skrzynki pocztowej). Po upływie okresu przechowywania usuniętego elementu wiadomość zostanie oznaczona do trwałego usunięcia i zostanie usunięta z Microsoft 365 następnym razem, gdy skrzynka pocztowa zostanie przetworzona przez asystenta folderu zarządzanego.
 
-- **Co zrobić, jeśli trzeba usunąć wiadomość z ponad 50 000 skrzynek pocztowych?**
+- **Co zrobić, jeśli musisz usunąć wiadomość z ponad 50 000 skrzynek pocztowych?**
 
-  Jak wspomniano wcześniej, można przeprowadzić wyszukiwanie i przeczyszczanie maksymalnie 50 000 skrzynek pocztowych (nawet jeśli mniej niż 50 000 zawiera elementy zgodne z zapytaniem wyszukiwania). Jeśli musisz wykonać wyszukiwanie i przeczyścić więcej niż 50 000 skrzynek pocztowych, rozważ utworzenie filtrów uprawnień wyszukiwania tymczasowego w celu zmniejszenia liczby skrzynek pocztowych, które zostaną przeszukane do mniej niż 50 000 skrzynek pocztowych. Jeśli na przykład Twoja organizacja zawiera skrzynki pocztowe w różnych wydziałach, stanach lub krajach, możesz utworzyć filtr uprawnień wyszukiwania w skrzynce pocztowej na podstawie jednej z tych właściwości skrzynki pocztowej, aby przeszukać podzbiór skrzynek pocztowych w organizacji. Po utworzeniu filtru uprawnień wyszukiwania należy utworzyć wyszukiwanie (opisane w kroku 1), a następnie usunąć wiadomość (opisane w kroku 3). Następnie możesz edytować filtr, aby wyszukać i przeczyścić wiadomości w innym zestawie skrzynek pocztowych. Aby uzyskać więcej informacji na temat tworzenia filtrów uprawnień wyszukiwania, zobacz [Konfigurowanie filtrowania uprawnień dla wyszukiwania zawartości](permissions-filtering-for-content-search.md).
+  Jak wspomniano wcześniej, można wykonać operację wyszukiwania i przeczyszczania na maksymalnie 50 000 skrzynek pocztowych (nawet jeśli mniej niż 50 000 zawiera elementy zgodne z zapytaniem wyszukiwania). Jeśli musisz wykonać operację wyszukiwania i przeczyszczania na ponad 50 000 skrzynek pocztowych, rozważ utworzenie tymczasowych filtrów uprawnień wyszukiwania, które zmniejszą liczbę skrzynek pocztowych, które będą przeszukiwane do mniej niż 50 000 skrzynek pocztowych. Jeśli na przykład organizacja zawiera skrzynki pocztowe w różnych działach, stanach lub krajach, możesz utworzyć filtr uprawnień wyszukiwania skrzynki pocztowej na podstawie jednej z tych właściwości skrzynki pocztowej, aby wyszukać podzbiór skrzynek pocztowych w organizacji. Po utworzeniu filtru uprawnień wyszukiwania należy utworzyć wyszukiwanie (opisane w kroku 1), a następnie usunąć komunikat (opisany w kroku 3). Następnie możesz edytować filtr, aby wyszukiwać i czyścić wiadomości w innym zestawie skrzynek pocztowych. Aby uzyskać więcej informacji na temat tworzenia filtrów uprawnień wyszukiwania, zobacz [Konfigurowanie filtrowania uprawnień dla wyszukiwania zawartości](permissions-filtering-for-content-search.md).
 
-- **Czy elementy nieindeksowane uwzględnione w wynikach wyszukiwania zostaną usunięte?**
+- **Czy elementy niezainicjowane uwzględnione w wynikach wyszukiwania zostaną usunięte?**
 
-  Nie, polecenie "New-ComplianceSearchAction -Purge" nie powoduje usunięcia elementów nieindeksowanych.
+  Nie, polecenie "New-ComplianceSearchAction -Purge" nie usuwa elementów bez certyfikatu.
 
-- **Co się stanie, jeśli wiadomość zostanie usunięta ze skrzynki pocztowej, która została umieszczona w In-Place hold lub postępowaniem sądowym albo do której przypisano Microsoft 365 przechowywania?**
+- **Co się stanie, jeśli wiadomość zostanie usunięta ze skrzynki pocztowej, która została umieszczona w In-Place wstrzymania lub blokady postępowania sądowego lub została przypisana do zasad przechowywania Microsoft 365?**
 
-  Po przeczyszczeniu i przesunięciu wiadomości do folderu przeczyszczania wiadomość jest zachowywana do momentu wygaśnięcia czasu trwania przechowywania. Jeśli czas trwania zawieszonego połączenia jest nieograniczony, elementy są zachowywane do momentu usunięcia zawieszonego połączenia lub zmiany czasu trwania zawieszonego.
+  Po usunięciu komunikatu i przeniesieniu go do folderu Przeczyszczanie komunikat zostanie zachowany do czasu wygaśnięcia czasu przechowywania. Jeśli czas przechowywania jest nieograniczony, elementy są zachowywane do momentu usunięcia blokady lub zmiany czasu trwania blokady.
 
-- **Dlaczego przepływ pracy wyszukiwania i usuwania jest podzielony na różne grupy ról Centrum zabezpieczeń i zgodności?**
+- **Dlaczego przepływ pracy wyszukiwania i usuwania jest podzielony między różne grupy ról centrum zabezpieczeń i zgodności?**
 
-  Jak wyjaśniono wcześniej, osoba musi być członkiem grupy ról Menedżer zbierania elektronicznych materiałów dowodowych lub mieć przypisaną rolę zarządzania wyszukiwaniem zgodności do przeszukiwania skrzynek pocztowych. Aby usunąć wiadomości, osoba musi być członkiem grupy ról Zarządzanie organizacją lub mieć przypisaną rolę zarządzania Wyszukiwaniem i przeczyszczanie. Umożliwia to kontrolowanie, kto może przeszukiwać skrzynki pocztowe w organizacji i kto może usuwać wiadomości.
+  Jak wyjaśniono wcześniej, osoba musi być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych lub mieć przypisaną rolę zarządzania wyszukiwaniem zgodności do przeszukiwania skrzynek pocztowych. Aby usunąć komunikaty, osoba musi być członkiem grupy ról Zarządzanie organizacją lub mieć przypisaną rolę zarządzania wyszukiwaniem i przeczyszczaniem. Dzięki temu można kontrolować, kto może przeszukiwać skrzynki pocztowe w organizacji i kto może usuwać wiadomości.

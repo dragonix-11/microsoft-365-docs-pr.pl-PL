@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Pobierz raport użycia witryny SharePoint, aby dowiedzieć się, ile plików użytkownicy przechowują w witrynach SharePoint, ile z nich jest aktywnie używanych, oraz ile z nich jest używanych.
-ms.openlocfilehash: afcaa6cd087948c635604dbadeb9d56c6d48c1a9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a99884863db3ffc1f2577358abef6d287d01e2d1
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781506"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64846998"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 raporty w centrum administracyjnym — użycie witryny SharePoint
 
@@ -76,7 +76,7 @@ Raport **użycia witryny SharePoint** można wyświetlić dla trendów z ostatni
 |Główna nazwa właściciela witryny  |Adres e-mail właściciela witryny. |
 |Data ostatniego działania (UTC)  | Data ostatniego wykrycia działania pliku lub wyświetlenia strony w witrynie.  |
 |Identyfikator etykiety poufności witryny  | Etykieta poufności w witrynie.  |
-|Udostępnianie zewnętrzne  | Zewnętrzne ustawienia sharable w witrynie.  |
+|Udostępnianie zewnętrzne  | Wartość ustawienia udostępniania zewnętrznego dla witryny. Ta wartość nie odzwierciedla zmian w skutecznym ustawieniu wprowadzonym przez etykiety poufności witryny. Jeśli używasz etykiet poufności, użyj [raportów ładu dostępu do danych](/sharepoint/data-access-governance-reports) , aby uzyskać prawidłowe wartości.|
 |Zasady urządzeń niezarządzanych  | Zasady dostępu do witryny dla urządzeń niezarządzanych.  |
 |Lokalizacja geograficzna  | Lokalizacja geograficzna lokacji.  |
 |Pliki  |Liczba plików w witrynie. |

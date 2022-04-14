@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Użyj zbierania elektronicznych materiałów dowodowych i narzędzi wyszukiwania, aby zarządzać zdarzeniem wycieku danych w organizacji i reagować na nie.
-ms.openlocfilehash: 55bed2461d48d77e7dbb756402439f394ac55270
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 106a67bff07f76d3ac40798d8bb4e28a254b923d
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760916"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847338"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Seria rozwiązań zbierania elektronicznych materiałów dowodowych: scenariusz rozlania danych — wyszukiwanie i przeczyszczanie
 
@@ -50,16 +50,18 @@ Poniżej przedstawiono sposób zarządzania zdarzeniem wycieku danych:
 
 ## <a name="things-to-know-before-you-start"></a>Co należy wiedzieć przed rozpoczęciem
 
+- Przepływ pracy rozlania danych opisany w tym artykule nie usuwa wiadomości czatu w Microsoft Teams. Aby wyszukać i usunąć Teams wiadomości czatu, zobacz [Wyszukiwanie i przeczyszczanie wiadomości czatu w Teams](search-and-delete-Teams-chat-messages.md).
+
 - Gdy skrzynka pocztowa jest wstrzymana, usunięta wiadomość pozostaje w folderze Elementy możliwe do odzyskania do czasu wygaśnięcia okresu przechowywania lub zwolnienia blokady. [W kroku 6](#step-6-prepare-the-mailboxes) opisano sposób usuwania blokady ze skrzynek pocztowych. Przed usunięciem blokady skontaktuj się z działami zarządzania rekordami lub działami prawnymi. Organizacja może mieć zasady określające, czy skrzynka pocztowa jest wstrzymana, czy zdarzenie wycieku danych ma priorytet. 
-    
+
 - Aby kontrolować, które skrzynki pocztowe użytkowników mogą wyszukiwać osoby, które mogą uzyskiwać dostęp do sprawy i zarządzać nimi, możesz skonfigurować granice zgodności i utworzyć niestandardową grupę ról opisaną w [kroku 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). W tym celu musisz być członkiem grupy ról Zarządzanie organizacją lub mieć przypisaną rolę zarządzania rolami. Jeśli Ty lub administrator w organizacji już ustawiłeś granice zgodności, możesz pominąć krok 1.
-    
+
 - Aby utworzyć przypadek, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych lub być członkiem niestandardowej grupy ról przypisanej do roli Zarządzania sprawami. Jeśli nie jesteś członkiem, poproś administratora Microsoft 365 o [dodanie Cię do grupy ról menedżera zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).
-    
+
 - Aby utworzyć i uruchomić wyszukiwanie zawartości, musisz być członkiem grupy ról menedżera zbierania elektronicznych materiałów dowodowych lub mieć przypisaną rolę zarządzania wyszukiwaniem zgodności. Aby usunąć komunikaty, musisz być członkiem grupy ról Zarządzanie organizacją lub mieć przypisaną rolę zarządzania wyszukiwaniem i przeczyszczaniem. Aby uzyskać informacje na temat dodawania użytkowników do grupy ról, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](./assign-ediscovery-permissions.md).
-    
-- Aby przeszukać działania zbierania elektronicznych materiałów dowodowych dziennika inspekcji w kroku 8, inspekcja musi być włączona dla twojej organizacji. Możesz wyszukać działania, które zostały wykonane w ciągu ostatnich 90 dni. Aby dowiedzieć się więcej na temat włączania i używania inspekcji, zobacz sekcję [Auditing the data spillage investigation process (Inspekcja procesu badania wycieku danych](#auditing-the-data-spillage-investigation-process) ) w kroku 8. 
-    
+
+- Aby przeszukać działania zbierania elektronicznych materiałów dowodowych dziennika inspekcji w kroku 8, inspekcja musi być włączona dla twojej organizacji. Możesz wyszukać działania, które zostały wykonane w ciągu ostatnich 90 dni. Aby dowiedzieć się więcej na temat włączania i używania inspekcji, zobacz sekcję [Auditing the data spillage investigation process (Inspekcja procesu badania wycieku danych](#auditing-the-data-spillage-investigation-process) ) w kroku 8.
+
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>(Opcjonalnie) Krok 1. Zarządzanie tym, kto może uzyskać dostęp do sprawy i ustawianie granic zgodności
 
 W zależności od praktyki organizacyjnej należy kontrolować, kto może uzyskiwać dostęp do przypadku zbierania elektronicznych materiałów dowodowych używanego do badania zdarzenia wycieku danych i skonfigurowania granic zgodności. Najprostszym sposobem na to jest dodanie badaczy jako członków istniejącej grupy ról w Centrum zgodności platformy Microsoft 365, a następnie dodanie grupy ról jako członka sprawy zbierania elektronicznych materiałów dowodowych. Aby uzyskać informacje o wbudowanych grupach ról zbierania elektronicznych materiałów dowodowych i sposobie dodawania członków do sprawy zbierania elektronicznych materiałów dowodowych, zobacz [Przypisywanie uprawnień zbierania elektronicznych materiałów dowodowych](assign-ediscovery-permissions.md).

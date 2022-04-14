@@ -1,7 +1,7 @@
 ---
-title: Działania naprawcze w programie Microsoft 365 Defender
-description: Przegląd działań naprawczych w wyniku zautomatyzowanych badań prowadzonych w ramach Microsoft 365 Defender
-keywords: zautomatyzowane, badania, alert, wyzwalacz, akcja, działania naprawcze
+title: Akcje korygowania w Microsoft 365 Defender
+description: Zapoznaj się z omówieniem akcji korygowania, które są wykonywane po zautomatyzowanych badaniach w Microsoft 365 Defender
+keywords: zautomatyzowane, badanie, alert, wyzwalacz, akcja, korygowanie
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,64 +21,67 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c922213a262fdc9c61d6f79d0205e6ead96fd44a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5605678a1fcc30719d7f838a16452ba527c554b7
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326431"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847054"
 ---
-# <a name="remediation-actions-in-microsoft-365-defender"></a>Działania naprawcze w programie Microsoft 365 Defender
+# <a name="remediation-actions-in-microsoft-365-defender"></a>Akcje korygowania w Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Dotyczy:**
+
 - Microsoft 365 Defender
 
-W trakcie zautomatyzowanego badania w związku z Microsoft 365 Defender i po nich zidentyfikowano działania naprawcze dotyczące złośliwych lub podejrzanych elementów. Niektóre rodzaje działań naprawczych są podejmowane na urządzeniach, nazywane również punktami końcowymi. W przypadku zawartości wiadomości e-mail są podejmowane inne działania naprawcze. Po zakończeniu działań naprawczych, zatwierdzenia lub odrzucenia są ukończone zautomatyzowane badania.
+Podczas i po zautomatyzowanym badaniu w Microsoft 365 Defender są identyfikowane akcje korygowania dla złośliwych lub podejrzanych elementów. Niektóre rodzaje akcji korygowania są podejmowane na urządzeniach, nazywanych również punktami końcowymi. Inne akcje korygowania są podejmowane w przypadku tożsamości, kont i zawartości poczty e-mail. Zautomatyzowane badania są wykonywane po wykonaniu akcji korygowania, zatwierdzeniu lub odrzuceniu.
 
 > [!IMPORTANT]
-> To, czy działania naprawcze mają być podejmowane automatycznie, czy tylko po zatwierdzeniu, zależy od określonych ustawień, na przykład od sposobu automatyzacji. Aby dowiedzieć się więcej, zobacz następujące artykuły:
-> - [Konfigurowanie funkcji automatycznego badania i reakcji w programie Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
-> - [Jak są naprawiane zagrożenia na urządzeniach](../defender-endpoint/automated-investigations.md)
-> - [Zagrożenia i działania naprawcze dotyczące zawartości współpracy & e-mail](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
+> To, czy akcje korygowania są wykonywane automatycznie, czy tylko po zatwierdzeniu, zależy od pewnych ustawień, takich jak poziomy automatyzacji. Aby dowiedzieć się więcej, zobacz następujące artykuły:
+>
+> - [Konfigurowanie możliwości zautomatyzowanego badania i reagowania w Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
+> - [Konfigurowanie kont akcji w Microsoft Defender for Identity](/defender-for-identity/manage-action-accounts)
+> - [Sposób korygowanie zagrożeń na urządzeniach](../defender-endpoint/automated-investigations.md)
+> - [Zagrożenia i akcje korygowania dotyczące zawartości współpracy & poczty e-mail](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-W poniższej tabeli podsumowano działania naprawcze, które są obecnie obsługiwane w programie Microsoft 365 Defender. 
+Poniższa tabela zawiera podsumowanie akcji korygowania, które są obecnie obsługiwane w Microsoft 365 Defender.
 
-|Działania naprawcze na urządzeniu (punkcie końcowym)  |Akcje dotyczące rozwiązywania problemów z pocztą e-mail  |
-|:---------|:---------|
-|- Zbierz pakiet badania <br/>- Wyizoluj urządzenie (tę akcję można cofnąć)<br/>- Urządzenie typu Offboard <br/>- Wykonywanie kodu wydania <br/>- Zwolnienie z kwarantanny <br/>— przykładowy wniosek <br/>- Ograniczanie wykonywania kodu (tę akcję można cofnąć) <br/>- Uruchom skanowanie antywirusowe <br/>— Zatrzymaj i poddaj kwarantannie      |- Blokowanie adresu URL (po kliknięciu)<br/>- Niechyłne usuwanie wiadomości e-mail lub grup<br/>- Poddaj wiadomości e-mail kwarantannie<br/>- Poddaj kwarantannie załącznik wiadomości e-mail<br/>- Wyłączanie przesyłania dalej poczty zewnętrznej          |
+|Akcje korygowania urządzenia (punktu końcowego)  |Akcje korygowania poczty e-mail  |Użytkownicy (konta)  |
+|:---------|:---------|----------|
+|— Zbieranie pakietu badania <br/>- Izolowanie urządzenia (tę akcję można cofnąć)<br/>- Maszyna odłączona <br/>— Wykonywanie kodu wydania <br/>— Zwolnienie z kwarantanny <br/>— Przykład żądania <br/>— Ograniczanie wykonywania kodu (tę akcję można cofnąć) <br/>— Uruchamianie skanowania antywirusowego <br/>— Zatrzymywanie i kwarantanna      |- Blokuj adres URL (czas kliknięcia)<br/>- Usuwanie nietrwałe wiadomości e-mail lub klastrów<br/>— Wiadomość e-mail o kwarantannie<br/>— Kwarantanna załącznika wiadomości e-mail<br/>- Wyłącz przekazywanie poczty zewnętrznej          |— Wyłączanie użytkownika<br />- Resetowanie hasła użytkownika<br />— Potwierdź, że użytkownik został naruszona          |
 
-Działania naprawcze, zarówno oczekujące na zatwierdzenie, jak i ukończone, można wyświetlić w [Centrum akcji](m365d-action-center.md).
+Akcje korygowania, oczekujące na zatwierdzenie lub już zakończone, można wyświetlić w [Centrum akcji](m365d-action-center.md).
 
-## <a name="remediation-actions-that-follow-automated-investigations"></a>Działania naprawcze, które są prowadzone po zautomatyzowanym śledztwie
+## <a name="remediation-actions-that-follow-automated-investigations"></a>Akcje korygowania, które są wykonywane po zautomatyzowanych badaniach
 
-Po zakończeniu zautomatyzowanego badania dla wszystkich zgromadzonych dowodów jest wyciągany werdykt. W zależności od werdyktu są identyfikowane akcje naprawcze. W niektórych przypadkach działania naprawcze są podejmowane automatycznie. w innych przypadkach działania naprawcze oczekują na zatwierdzenie. Wszystko zależy od konfiguracji [automatycznego badania i odpowiedzi](m365d-configure-auto-investigation-response.md).
+Po zakończeniu zautomatyzowanego dochodzenia zostaje osiągnięty werdykt dla każdego dowodu. W zależności od werdyktu są identyfikowane akcje korygowania. W niektórych przypadkach akcje korygowania są wykonywane automatycznie; w innych przypadkach akcje korygowania oczekują na zatwierdzenie. Wszystko zależy od tego, jak [jest skonfigurowane zautomatyzowane badanie i reagowanie](m365d-configure-auto-investigation-response.md).
 
-W poniższej tabeli wymieniono możliwe werdykty i wyniki:
+Poniższa tabela zawiera listę możliwych werdyktów i wyników:
 
 | Werdykt    | Jednostki, których dotyczy problem    | Wyniki|
 |------|------|------|
-| Złośliwy    | Urządzenia (punkty końcowe)    | Działania naprawcze są podejmowane automatycznie (przy założeniu, że w [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) grupach urządzeń organizacji ustawiono pełne — **korygowanie zagrożeń automatycznie**)|
-| Złośliwy    | Zawartość wiadomości e-mail (adresy URL lub załączniki) | Zalecane działania naprawcze oczekują na zatwierdzenie|
-| Podejrzane    | Urządzenia lub zawartość poczty e-mail | Zalecane działania naprawcze oczekują na zatwierdzenie|
-| Nie znaleziono zagrożeń    | Urządzenia lub zawartość poczty e-mail    | Nie są wymagane żadne działania naprawcze|
+| Złośliwy    | Urządzenia (punkty końcowe)    | Akcje korygowania są wykonywane automatycznie (przy założeniu, że [grupy urządzeń](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) w organizacji są ustawione na **Pełne — automatycznie koryguj zagrożenia**)|
+| Zagrożone | Użytkownicy | Akcje korygowania są wykonywane automatycznie |
+| Złośliwy    | Zawartość wiadomości e-mail (adresy URL lub załączniki) | Zalecane akcje korygowania oczekują na zatwierdzenie|
+| Podejrzanych    | Zawartość urządzeń lub wiadomości e-mail | Zalecane akcje korygowania oczekują na zatwierdzenie|
+| Nie znaleziono zagrożeń    | Zawartość urządzeń lub wiadomości e-mail    | Nie są wymagane żadne akcje korygowania|
 
+## <a name="remediation-actions-that-are-taken-manually"></a>Akcje korygowania, które są podejmowane ręcznie
 
-## <a name="remediation-actions-that-are-taken-manually"></a>Akcje naprawcze wykonywane ręcznie
+Oprócz akcji korygowania, które są wykonywane po zautomatyzowanych badaniach, zespół ds. operacji zabezpieczeń może ręcznie wykonać pewne akcje korygowania. Są to następujące funkcje:
 
-Poza działaniami naprawczymi, które są wykonywane w wyniku zautomatyzowanych badań, zespół operacyjny zabezpieczeń może podjąć określone działania naprawcze ręcznie. Są to między innymi następujące elementy:
-
-- Ręczna akcja urządzenia, taka jak izolacji urządzenia lub kwarantanna pliku
-- Ręczna akcja wiadomości e-mail, taka jak "miękkie usunięcie" wiadomości e-mail 
-- [Zaawansowana akcja](../defender-endpoint/advanced-hunting-overview.md) łętwna na urządzeniach lub w wiadomościach e-mail
-- [Akcja Eksploratora](../office-365-security/threat-explorer.md) na temat zawartości wiadomości e-mail, taka jak przenoszenie wiadomości e-mail do wiadomości-śmieci, "miękkie usuwanie" lub trudne usuwanie wiadomości e-mail
-- [Ręczna akcja odpowiedzi](/windows/security/threat-protection/microsoft-defender-atp/live-response) na żywo, taka jak usunięcie pliku, zatrzymanie procesu i usunięcie zaplanowanego zadania
-- Akcja odpowiedzi na żywo z interfejsami [API programu Microsoft Defender dla](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) punktu końcowego, na przykład izolowanie urządzenia, uruchamianie skanowania antywirusowego i uzyskiwanie informacji o pliku
+- Ręczne działanie urządzenia, takie jak izolacja urządzenia lub kwarantanna pliku
+- Ręczne działanie poczty e-mail, takie jak usuwanie nietrwałe wiadomości e-mail
+- Ręczne działanie użytkownika, takie jak wyłączenie użytkownika lub zresetowanie hasła użytkownika
+- [Zaawansowana akcja wyszukiwania zagrożeń](../defender-endpoint/advanced-hunting-overview.md) na urządzeniach, użytkownikach lub w wiadomościach e-mail
+- [Akcja Eksploratora](../office-365-security/threat-explorer.md) dotycząca zawartości poczty e-mail, taka jak przenoszenie wiadomości e-mail do wiadomości-śmieci, usuwanie nietrwałe wiadomości e-mail lub usuwanie wiadomości e-mail
+- Ręczna akcja [odpowiedzi na żywo](/windows/security/threat-protection/microsoft-defender-atp/live-response) , taka jak usuwanie pliku, zatrzymywanie procesu i usuwanie zaplanowanego zadania
+- Akcja odpowiedzi na żywo za pomocą [interfejsów API Ochrona punktu końcowego w usłudze Microsoft Defender](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis), takich jak izolowanie urządzenia, uruchamianie skanowania antywirusowego i uzyskiwanie informacji o pliku
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Odwiedź Centrum akcji](m365d-action-center.md)
+- [Odwiedź centrum akcji](m365d-action-center.md)
 - [Wyświetlanie działań naprawczych i zarządzanie nimi](m365d-autoir-actions.md)
-- [Adresuje wartości fałszywie dodatnie lub ujemne](m365d-autoir-report-false-positives-negatives.md)
+- [Adres fałszywie dodatnie lub fałszywie ujemne](m365d-autoir-report-false-positives-negatives.md)

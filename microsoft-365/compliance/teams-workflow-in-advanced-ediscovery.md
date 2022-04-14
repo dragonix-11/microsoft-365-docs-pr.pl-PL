@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z Microsoft Teams w Advanced eDiscovery.
-ms.openlocfilehash: ecd114f9ea68cefb03e55453176a0c8b323620cc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 90c3ece3f6e8218771da9dbbb88fe5c32d9d7d94
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758800"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847020"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>przepływ pracy Advanced eDiscovery zawartości w Microsoft Teams
 
@@ -298,6 +298,10 @@ Poniżej przedstawiono kilka wskazówek i najlepszych rozwiązań dotyczących w
 - Przydatne kolumny ułatwiające przeglądanie zawartości Teams obejmują **opiekuna**, **adresatów** i **typ pliku** lub **rodzaj wiadomości**.
 
 - Użyj [filtrów](review-set-search.md) dla właściwości związanych z Teams, aby szybko wyświetlić zawartość Teams. Istnieją filtry dla większości właściwości metadanych opisanych w poprzedniej sekcji.
+
+## <a name="deleting-teams-chat-messages"></a>Usuwanie wiadomości Teams czatu
+
+Za pomocą Advanced eDiscovery i Eksploratora Graph Firmy Microsoft można reagować na zdarzenia związane z wyciekiem danych, gdy zawartość zawierająca poufne lub złośliwe informacje jest udostępniana za pośrednictwem Teams wiadomości czatu. Administratorzy w organizacji mogą wyszukiwać i usuwać wiadomości czatów w Microsoft Teams. Może to pomóc w usunięciu poufnych informacji lub nieodpowiedniej zawartości w Teams wiadomościach czatu. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie i przeczyszczanie wiadomości czatu w Teams](search-and-delete-Teams-chat-messages.md).
 
 ## <a name="reference-guide"></a>Przewodnik referencyjny
 
