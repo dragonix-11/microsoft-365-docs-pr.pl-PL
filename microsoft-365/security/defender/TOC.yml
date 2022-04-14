@@ -66,7 +66,7 @@
               href: eval-defender-endpoint-enable-eval.md
             - name: Pilotaż ochrony punktu końcowego w usłudze Microsoft Defender
               href: eval-defender-endpoint-pilot.md
-        - name: Krok nr 5. Microsoft Defender for Cloud Apps
+        - name: Krok 5. Usługa Microsoft Defender for Cloud Apps
           items:
             - name: Omówienie
               href: eval-defender-mcas-overview.md
@@ -108,8 +108,6 @@
               href: microsoft-secure-score-improvement-actions.md
             - name: Śledzenie historii wyników i realizacja celów
               href: microsoft-secure-score-history-metrics-trends.md
-            - name: Nadchodzące nowości
-              href: microsoft-secure-score-whats-coming.md
             - name: Co nowego
               href: microsoft-secure-score-whats-new.md
         - name: Ochrona punktów końcowych
@@ -332,9 +330,9 @@
           href: integrate-microsoft-365-defender-secops.md
         - name: Krok nr 1. Gotowość do operacji
           href: integrate-microsoft-365-defender-secops-plan.md
-        - name: Krok nr 2. Ocena gotowości przy użyciu modelu Zero Trust
+        - name: Krok 2. Ocena gotowości przy użyciu modelu Zero Trust
           href: integrate-microsoft-365-defender-secops-readiness.md
-        - name: Krok nr 3. Integracja z usługami SOC
+        - name: Krok 3. Integracja z usługami SOC
           href: integrate-microsoft-365-defender-secops-services.md
         - name: 'Krok nr 4. Role, obowiązki i nadzór'
           href: integrate-microsoft-365-defender-secops-roles.md
