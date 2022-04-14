@@ -21,12 +21,12 @@ description: Użyj Centrum zgodności platformy Microsoft 365, aby przeszukać u
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: edf5bfd91313c621707d1bdc35074bfe7fe9585c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 1a10bf738562f8fd9a263252d4a56eddf8acee9d
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759926"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841943"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Przeszukiwanie dziennika inspekcji w centrum zgodności
 
@@ -128,29 +128,7 @@ Przed rozpoczęciem przeszukiwania dziennika inspekcji przeczytaj następujące 
 
 - Azure Active Directory (Azure AD) to usługa katalogowa dla Microsoft 365. Ujednolicony dziennik inspekcji zawiera działania użytkownika, grupy, aplikacji, domeny i katalogu wykonywane w <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a> lub w portalu zarządzania platformy Azure. Aby uzyskać pełną listę zdarzeń usługi Azure AD, zobacz [Azure Active Directory Zdarzenia raportu inspekcji](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
-- Po wystąpieniu zdarzenia zwrócenie odpowiedniego rekordu dziennika inspekcji w wynikach wyszukiwania dziennika inspekcji może potrwać do 30 minut lub do 24 godzin. W poniższej tabeli przedstawiono czas potrzebny na różne usługi w Microsoft 365.
-
-  |Microsoft 365 usługi lub funkcji|30 minut|24 godziny|
-  |---|:---:|:---:|
-  |Usługa Defender dla Microsoft 365 i analizy zagrożeń|![Znacznik wyboru.](../media/checkmark.png)||
-  |Azure Active Directory (zdarzenia logowania użytkownika)||![Znacznik wyboru.](../media/checkmark.png)|
-  |Azure Active Directory (zdarzenia administratora)||![Znacznik wyboru.](../media/checkmark.png)|
-  |Zapobieganie utracie danych|![Znacznik wyboru.](../media/checkmark.png)||
-  |Dynamics 365 CRM||![Znacznik wyboru.](../media/checkmark.png)|
-  |Zbierania elektronicznych materiałów dowodowych|![Znacznik wyboru.](../media/checkmark.png)||
-  |Exchange Online|![Znacznik wyboru.](../media/checkmark.png)||
-  |Microsoft Power Automate||![Znacznik wyboru.](../media/checkmark.png)|
-  |Microsoft Stream|![Znacznik wyboru.](../media/checkmark.png)||
-  |Microsoft Teams|![Znacznik wyboru.](../media/checkmark.png)||
-  |Power Apps||![Znacznik wyboru.](../media/checkmark.png)|
-  |Power BI|![Znacznik wyboru.](../media/checkmark.png)||
-  |Centrum zgodności platformy Microsoft 365|![Znacznik wyboru.](../media/checkmark.png)||
-  |Etykiety wrażliwości||![Znacznik wyboru.](../media/checkmark.png)|
-  |Usługi SharePoint Online i OneDrive dla Firm|![Znacznik wyboru.](../media/checkmark.png)||
-  |Workplace Analytics|![Znacznik wyboru.](../media/checkmark.png)||
-  |Yammer||![Znacznik wyboru.](../media/checkmark.png)|
-  |Microsoft Forms|![Znacznik wyboru.](../media/checkmark.png)||
-  ||||
+- Firma Microsoft nie gwarantuje określonego czasu po wystąpieniu zdarzenia, aby odpowiedni rekord inspekcji został zwrócony w wynikach wyszukiwania dziennika inspekcji. W przypadku usług podstawowych (takich jak Exchange, SharePoint, OneDrive i Teams) dostępność rekordów inspekcji zwykle wynosi od 60 do 90 minut po wystąpieniu zdarzenia. W przypadku innych usług dostępność rekordów inspekcji może być dłuższa. Jednak niektóre problemy, które są nieuniknione (takie jak awaria serwera) mogą wystąpić poza usługą inspekcji, która opóźnia dostępność rekordów inspekcji. Z tego powodu firma Microsoft nie zobowiązuje się do określonego czasu.
 
 - Rejestrowanie inspekcji dla Power BI nie jest domyślnie włączone. Aby wyszukać działania Power BI w dzienniku inspekcji, musisz włączyć inspekcję w portalu administracyjnym Power BI. Aby uzyskać instrukcje, zobacz sekcję "Dzienniki inspekcji" w [portalu administracyjnym Power BI](/power-bi/service-admin-portal#audit-logs).
 

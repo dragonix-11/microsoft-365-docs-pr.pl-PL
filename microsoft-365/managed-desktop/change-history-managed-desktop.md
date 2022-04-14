@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 99ed659ceae21901deb1625c0b9e65a9a82ea1b4
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: abaca30b4de2638b0c1f7d0522b96fac469760a9
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704741"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841783"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historia zmian dla dokumentacji Microsoft Managed Desktop
 
@@ -28,7 +28,7 @@ Ten artykuł zawiera listę nowych i zaktualizowanych artykułów w [dokumentacj
 
 Nowy lub zmieniony artykuł | Opis
 --- | ---
-| [Urządzenia udostępnione](service-description/shared-devices.md) | Dodano sekcję Rejestrowanie nowych urządzeń w trybie udostępnionym |
+| [Urządzenia udostępnione](service-description/shared-devices.md) | Dodano pozycję Zarejestruj nowe urządzenia przy użyciu profilu trybu samodzielnego wdrażania rozwiązania Windows Autopilot |
 | [Teams](get-started/teams.md) | Zaktualizowano sekcję zmian Microsoft Intune |
 
 ## <a name="march-2022"></a>Marzec 2022 r.

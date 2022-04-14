@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f06ed934f1ba1a24ba16fe3919d37e10526a3a2f
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 1709597d10b140124501fd0dc7349e8fc4342bb6
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823855"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841749"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Dołączanie serwerów Windows do usługi Ochrona punktu końcowego w usłudze Microsoft Defender
 
@@ -102,7 +102,8 @@ Jeśli serwery zostały wcześniej dołączone przy użyciu programu MMA, postę
 Następujące szczegółowe informacje dotyczą nowego ujednoliconego pakietu rozwiązań dla Windows Server 2012 R2 i 2016:
 
 - Upewnij się, że są spełnione wymagania dotyczące łączności określone w temacie [Włączanie dostępu do adresów URL usługi Ochrona punktu końcowego w usłudze Microsoft Defender na serwerze proxy](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Są one równoważne tym dla programu Windows Server 2019. 
-- Badamy problem z łącznością Windows Server 2012 R2 z chmurą, gdy jest używany statyczny serwer TelemetryProxyServer, a adresy URL listy odwołania certyfikatów (CRL) nie są osiągalne z kontekstu konta SYSTEMU. Natychmiastowe ograniczenie ryzyka polega na użyciu alternatywnej opcji serwera proxy, która zapewnia taką łączność, lub skonfigurowaniu tego samego serwera proxy za pośrednictwem ustawienia WinInet w kontekście konta SYSTEMU.
+- Zidentyfikowaliśmy problem z łącznością Windows Server 2012 R2 z chmurą, gdy jest używany statyczny serwer TelemetryProxyServer **, a** adresy URL listy odwołania certyfikatów (CRL) nie są osiągalne z kontekstu konta SYSTEMU. Natychmiastowe ograniczenie ryzyka polega na użyciu alternatywnej opcji serwera proxy ("ogólnosystemowej"), która zapewnia taką łączność, lub skonfigurowaniu tego samego serwera proxy za pośrednictwem ustawienia WinInet w kontekście konta SYSTEMU.
+Alternatywnie użyj instrukcji podanych w artykule [Obejście znanego problemu z serwerem TelemetryProxyServer na odłączonych maszynach](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) , aby zainstalować certyfikat jako obejście.
 - Wcześniej użycie Microsoft Monitoring Agent (MMA) na Windows Server 2016 i poniżej pozwoliło bramie OMS/Log Analytics zapewnić łączność z usługami w chmurze Defender. Nowe rozwiązanie, takie jak Ochrona punktu końcowego w usłudze Microsoft Defender na serwerze Windows Server 2019, Windows Server 2022 i Windows 10, nie obsługuje tej bramy.
 - Na Windows Server 2016 sprawdź, czy Program antywirusowy Microsoft Defender jest zainstalowany, jest aktywny i aktualny. Najnowszą wersję platformy można pobrać i zainstalować przy użyciu Windows Update. Alternatywnie pobierz pakiet aktualizacji ręcznie z [katalogu microsoft update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) lub z [programu MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
 - W Windows Server 2012 R2 nie ma interfejsu użytkownika dla Program antywirusowy Microsoft Defender. Ponadto interfejs użytkownika w Windows Server 2016 zezwala tylko na operacje podstawowe. Aby wykonywać operacje na urządzeniu lokalnie, zobacz [Zarządzanie Ochrona punktu końcowego w usłudze Microsoft Defender przy użyciu programu PowerShell, usługi WMI i MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). W związku z tym funkcje, które w szczególności polegają na interakcji użytkownika, takie jak monit o podjęcie decyzji lub wykonanie określonego zadania, mogą nie działać zgodnie z oczekiwaniami. Zaleca się wyłączenie lub niewłączenie interfejsu użytkownika ani wymaganie interakcji użytkownika na dowolnym zarządzanym serwerze, ponieważ może to mieć wpływ na możliwość ochrony.
@@ -116,9 +117,21 @@ Następujące szczegółowe informacje dotyczą nowego ujednoliconego pakietu ro
   Ponadto na maszynach o dużym natężeniu ruchu sieciowego zaleca się przeprowadzenie testów wydajnościowych w środowisku przed szerokim włączeniem tej możliwości. Może być konieczne uwzględnienie dodatkowego użycia zasobów.
 - W Windows Server 2012 R2 zdarzenia sieciowe mogą nie być wypełniane na osi czasu. Ten problem wymaga wydania Windows Update w ramach [miesięcznego pakietu zbiorczego z 12 października 2021 r. (KB5006714).](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e)
 - Uaktualnienia systemu operacyjnego nie są obsługiwane. Następnie odinstaluj przed uaktualnieniem.
-- Automatyczne wykluczenia dla *ról serwera* nie są obsługiwane w Windows Server 2012 R2. Jednak wbudowane wykluczenia dla plików systemu operacyjnego są. Aby uzyskać więcej informacji na temat dodawania wykluczeń, zobacz [Zalecenia dotyczące skanowania wirusów dla Enterprise komputerów z aktualnie obsługiwanymi wersjami Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
-- Na maszynach, które zostały uaktualnione z poprzedniego rozwiązania mma i czujnika EDR jest (wersja zapoznawcza) starsza niż 10.8047.22439.1056, odinstalowywanie i powrót do rozwiązania opartego na mma może prowadzić do awarii. 
-- Integracja z usługą Microsoft Defender dla Chmury / Microsoft Defender dla serwerów na potrzeby alertów i zautomatyzowanego wdrażania lub uaktualniania nie jest jeszcze dostępna. Nowe rozwiązanie można zainstalować ręcznie na tych maszynach, ale żadne alerty nie będą wyświetlane w Microsoft Defender dla Chmury.
+- Automatyczne wykluczenia dla **ról serwera** nie są obsługiwane w Windows Server 2012 R2. Jednak wbudowane wykluczenia dla plików systemu operacyjnego są. Aby uzyskać więcej informacji na temat dodawania wykluczeń, zobacz [Zalecenia dotyczące skanowania wirusów dla Enterprise komputerów z aktualnie obsługiwanymi wersjami Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
+- Na maszynach, które zostały uaktualnione z poprzedniego rozwiązania mma i czujnika EDR jest (wersja zapoznawcza) starsza niż 10.8047.22439.1056, odinstalowywanie i powrót do rozwiązania opartego na mma może prowadzić do awarii. Jeśli korzystasz z takiej wersji zapoznawczej, zaktualizuj je przy użyciu kb5005292.
+- Aby wdrożyć i dołączyć nowe rozwiązanie przy użyciu Microsoft Endpoint Manager, obecnie wymaga to utworzenia pakietu. Aby uzyskać więcej informacji na temat wdrażania programów i skryptów w Configuration Manager, zobacz [Pakiety i programy w Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs). Program MECM 2107 z pakietem zbiorczym poprawek lub nowszym jest wymagany do obsługi zarządzania konfiguracją zasad przy użyciu węzła Endpoint Protection.
+
+## <a name="workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines"></a>Obejście znanego problemu z serwerem TelemetryProxyServer na odłączonych maszynach
+
+Opis problemu: W przypadku używania ustawienia TelemetryProxyServer do określenia serwera proxy, który ma być używany przez składnik EDR Ochrona punktu końcowego w usłudze Microsoft Defender, na maszynach, które nie mają innego sposobu uzyskiwania dostępu do adresu URL listy odwołania certyfikatów (CRL), brak certyfikatu pośredniego spowoduje EDR  czujnika, aby nie nawiązać pomyślnego połączenia z usługą w chmurze.
+
+Scenariusz, którego dotyczy problem: -Ochrona punktu końcowego w usłudze Microsoft Defender z wersją sense 10.8048.22439.1065 lub starszą wersją zapoznawczą uruchomioną w Windows Server 2012 R2 — przy użyciu konfiguracji serwera proxy TelemetryProxyServer; inne metody nie mają wpływu na
+
+Obejście:
+1. Upewnij się, że na maszynie działa sense w wersji 10.8048.22439.1065 lub nowszej, instalując przy użyciu najnowszego pakietu dostępnego na stronie dołączania lub stosując kb5005292.
+2. Pobieranie i rozpakowywania certyfikatu https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
+3. Zaimportuj certyfikat do zaufanego magazynu "Pośrednie urzędy certyfikacji" komputera lokalnego.
+Możesz użyć polecenia programu PowerShell: Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
 
 ## <a name="integration-with-microsoft-defender-for-cloud"></a>Integracja z Microsoft Defender dla Chmury
 
@@ -127,7 +140,7 @@ Ochrona punktu końcowego w usłudze Microsoft Defender bezproblemowo integruje 
 Aby uzyskać więcej informacji, zobacz [Integracja z Microsoft Defender dla Chmury](azure-server-integration.md).
 
 > [!NOTE]
-> W przypadku Windows Server 2012 R2 i 2016 r. z uruchomionym nowoczesnym ujednoliconym rozwiązaniem integracja z Microsoft Defender dla Chmury /Microsoft Defender dla serwerów do alertów i zautomatyzowanego wdrażania lub uaktualniania nie jest jeszcze dostępna. Nowe rozwiązanie można zainstalować ręcznie na tych maszynach, ale żadne alerty nie będą wyświetlane w Microsoft Defender dla Chmury.
+> W przypadku Windows Server 2012 R2 i 2016 r. z uruchomionym nowoczesnym ujednoliconym rozwiązaniem integracja z Microsoft Defender dla Chmury /Microsoft Defender dla serwerów na potrzeby zautomatyzowanego wdrażania lub uaktualniania nie jest jeszcze dostępna dla wszystkich planów. Nowe rozwiązanie można zainstalować ręcznie na tych maszynach lub użyć usługi Microsoft Defender dla serwera P1, aby przetestować nowe rozwiązanie. Więcej informacji można znaleźć w [tematach New Defender for servers plans (Plany nowej usługi Defender dla serwerów](/azure/defender-for-cloud/release-notes#new-defender-for-servers-plans)).
 
 > [!NOTE]
 > - Integracja między usługą Microsoft Defender dla serwerów i Ochrona punktu końcowego w usłudze Microsoft Defender została rozszerzona o obsługę Windows Server 2022, [Windows Server 2019 i Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
@@ -148,20 +161,17 @@ Pakiet instalatora sprawdzi, czy następujące składniki zostały już zainstal
 
 **Wymagania wstępne dotyczące Windows Server 2016** 
 
-Należy zainstalować aktualizację stosu obsługi (SSU) z 14 września 2021 r. lub nowszą.  Należy zainstalować najnowszą aktualizację zbiorczą (LCU) z 20 września 2018 r. lub nowszą.  Zaleca się zainstalowanie najnowszej dostępnej jednostki SSU i LCU na serwerze.  
-
-Funkcja Program antywirusowy Microsoft Defender musi być zainstalowana i uruchomiona w wersji 4.18.2109.6 lub nowszej.  Najnowszą wersję platformy można pobrać i zainstalować przy użyciu Windows Update. Alternatywnie pobierz pakiet aktualizacji ręcznie z [katalogu microsoft update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) lub z [programu MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
+- Należy zainstalować aktualizację stosu obsługi (SSU) z 14 września 2021 r. lub nowszą.  
+- Należy zainstalować najnowszą aktualizację zbiorczą (LCU) z 20 września 2018 r. lub nowszą.  Zaleca się zainstalowanie najnowszej dostępnej jednostki SSU i LCU na serwerze.  — Funkcja Program antywirusowy Microsoft Defender musi być włączona/zainstalowana i aktualna. Najnowszą wersję platformy można pobrać i zainstalować przy użyciu Windows Update. Alternatywnie pobierz pakiet aktualizacji ręcznie z [katalogu microsoft update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) lub z [programu MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 **Wymagania wstępne dotyczące uruchamiania z rozwiązaniami zabezpieczeń innych firm**
 
 Jeśli zamierzasz używać rozwiązania chroniącego przed złośliwym kodem innej firmy, musisz uruchomić Program antywirusowy Microsoft Defender w trybie pasywnym. Należy pamiętać o ustawieniu trybu pasywnego podczas procesu instalacji i dołączania.
 
-
-**Aktualizowanie pakietu dla Ochrona punktu końcowego w usłudze Microsoft Defender w Windows Server 2012 R2 i 2016**
 > [!NOTE]
 > Jeśli instalujesz Ochrona punktu końcowego w usłudze Microsoft Defender na serwerach z programem McAfee Endpoint Security (ENS) lub VirusScan Enterprise (VSE), może być konieczne zaktualizowanie wersji platformy McAfee w celu zapewnienia, że Program antywirusowy Microsoft Defender nie jest usuwana ani wyłączana. Aby uzyskać więcej informacji, w tym wymagane numery wersji, zobacz [artykuł McAfee Knowledge Center](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
 
-
+**Aktualizowanie pakietu dla Ochrona punktu końcowego w usłudze Microsoft Defender w Windows Server 2012 R2 i 2016**
 
 Aby otrzymywać regularne ulepszenia i poprawki produktu dla składnika czujnika EDR, upewnij się, Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) zostanie zastosowana lub zatwierdzona. Ponadto aby aktualizować składniki ochrony, zobacz [Zarządzanie aktualizacjami Program antywirusowy Microsoft Defender i stosowanie punktów odniesienia](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
@@ -170,7 +180,6 @@ Aby otrzymywać regularne ulepszenia i poprawki produktu dla składnika czujnika
 - KROK 1. [Pobieranie pakietów instalacyjnych i dołączających](#step-1-download-installation-and-onboarding-packages)
 - KROK 2. [Stosowanie pakietu instalacyjnego i dołączania](#step-2-apply-the-installation-and-onboarding-package)
 - KROK 3. [Wykonaj kroki dołączania](#step-3-complete-the-onboarding-steps) 
-
 
 ### <a name="step-1-download-installation-and-onboarding-packages"></a>KROK 1. Pobieranie pakietów instalacyjnych i dołączanych
 
@@ -314,9 +323,7 @@ Dane zbierane przez usługę Defender for Endpoint są przechowywane w lokalizac
 
 
 
-## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel i Windows Server 2019 i Windows Server 2022
-
-Pakiet dołączania dla Windows Server 2019 i Windows Server 2022 do Microsoft Endpoint Manager obecnie dostarcza skrypt. Aby uzyskać więcej informacji na temat wdrażania skryptów w Configuration Manager, zobacz [Pakiety i programy w Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+## <a name="windows-server-semi-annual-enterprise-channel-sac-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel (SAC), Windows Server 2019 i Windows Server 2022
 
 ### <a name="download-package"></a>Pobieranie pakietu
 

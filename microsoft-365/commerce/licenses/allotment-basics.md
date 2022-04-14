@@ -1,11 +1,11 @@
 ---
-title: Podstawowe informacje o przysłaniu
+title: Podstawy przydziału
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,41 +17,41 @@ ms.collection:
 ms.custom:
 - commerce_licensing
 search.appverid: MET150
-description: Poznaj nową funkcję przysyłania.
+description: Dowiedz się więcej o nowej funkcji przydziałów.
 ms.date: 03/17/2021
-ms.openlocfilehash: b41b3e27b7a3b05a9b80c3ac9590139adcee6fc6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 339533d4635e29bb277fe7f0344ba2da17f4ec7d
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325448"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841845"
 ---
-# <a name="allotment-basics"></a>Podstawowe informacje o przysłaniu
+# <a name="allotment-basics"></a>Podstawy przydziału
 
-Przydziały licencji umożliwiają ustawienie limitów licencji i delegowania zarządzania przypisywaniem licencji tylko do wybranych produktów i limitów licencji.
+Przydziały licencji umożliwiają ustawianie limitów licencji i delegowanie zarządzania przypisaniem licencji tylko do wybranych produktów i limitów licencji.
 
-Licencje są przypisywane użytkownikom przy użyciu licencjonowania grupowego. Limity licencji zapewniają dodatkową kontrolę nad tym, ile licencji jest przypisanych do użytkowników w Twoich grupach. Dzięki temu nawet w przypadku zwiększenia liczby użytkowników w grupach możesz zachować limit licencji ustawiony dla limitu.
+Przydziały używają licencjonowania opartego na grupach do przypisywania licencji do użytkowników. Limity licencji zapewniają dodatkową kontrolę nad liczbą licencji przypisanych do użytkowników w grupach. Tak więc nawet wraz ze wzrostem liczby użytkowników w grupach możesz upewnić się, że pozostaniesz w limicie licencji ustawionym dla przydziału.
 
-Możesz także delegować zarządzanie swoimi zasobami. Delegowani właściciele uprawnień uzyskają dostęp do centrum administracyjnego, ale mogą jedynie wyświetlić licencje i zarządzać nimi w posiadanych przez siebie uprawnieniach. Zapewnia to bardziej szczegółowe delegowanie zarządzania licencjami w organizacji.
+Można również delegować zarządzanie przydziałami. Delegowani właściciele przydziałów uzyskują dostęp do centrum administracyjnego, ale mogą wyświetlać tylko licencje i zarządzać nimi w przydziałach, które posiadają. Zapewnia to bardziej szczegółowe delegowanie zarządzania licencjami w organizacji.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Musisz spełniać wymagania licencyjne dotyczące licencjonowania [grupowego](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
+Musisz spełnić wymagania licencyjne dotyczące [licencjonowania opartego na grupach](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
-Możesz użyć przymiotów z dowolnym produktem dostępnym dla użytkowników:
+Przydziałów można używać z dowolnym produktem dostępnym dla użytkowników:
 
-- Pakiety Office i produkty autonomiczne
-- Produkty dla przedsiębiorstw i mobilności
+- Office pakiety i produkty autonomiczne
+- produkty Enterprise i mobility
 - Produkty usługi Dynamics 365
 
-Następujących produktów nie można używać z przymiotami:
+Z przydziałami nie można używać następujących produktów:
 
-- Aplikacje ze Sklepu Microsoft
-- Bezterminowe oprogramowanie lub oprogramowanie, które jest bezpośrednio przypisane do użytkownika, jeśli nie jest owijona żadna licencja.
+- aplikacje Microsoft Store
+- Oprogramowanie bezterminowe lub oprogramowanie, które jest bezpośrednio przypisane do użytkownika, jeśli nie ma licencji.
 - Zasoby platformy Azure
 
-Musisz być administratorem globalnym lub licencyjnym, aby rozpocząć pracę z przysłaniem licencji.
+Aby rozpocząć pracę z przydziałem, musisz być administratorem globalnym lub administratorem licencji.
 
 ## <a name="getting-started"></a>Wprowadzenie
 
-Funkcja przymiotów jest dostępna w prywatnym podglądzie tylko niewielkiej liczbie klientów. Jeśli chcesz dołączyć, wypełnij ten formularz: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+Funkcja przydziałów jest dostępna w prywatnej wersji zapoznawczej tylko dla niewielkiej liczby klientów. Jeśli chcesz dołączyć, wypełnij ten formularz: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,67 +18,67 @@ ms.custom:
 - MACBillingLicensesRequests
 - AdminSurgePortfolio
 search.appverid: MET150
-description: Dowiedz się, jak przeglądać i zatwierdzać lub odrzucać żądania licencji od użytkowników w ramach Twojej Microsoft 365 dla firm.
+description: Dowiedz się, jak przeglądać i zatwierdzać lub odrzucać żądania licencji od użytkowników dotyczące subskrypcji Microsoft 365 dla firm.
 ms.date: 06/07/2021
-ms.openlocfilehash: 7932383afe109e707a5c35914e50c665d0bf1885
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cc1d03717cbdf0ce8768c630044990363feded8a
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321477"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841808"
 ---
 # <a name="manage-license-requests"></a>Zarządzanie żądaniami licencji
 
 > [!NOTE]
-> Informacje zawarte w tym artykule dotyczą tylko produktów zakupionych samodzielnie. Aby dowiedzieć się więcej, zobacz [Często zadawane pytania dotyczące zakupu samoobsługi](../subscriptions/self-service-purchase-faq.yml).
+> Informacje zawarte w tym artykule dotyczą tylko produktów zakupionych samodzielnie. Aby dowiedzieć się więcej, zobacz [Samoobsługowy zakup — często zadawane pytania](../subscriptions/self-service-purchase-faq.yml).
 
-Jeśli wyłączysz zakupy samoobsługowe w organizacji, możesz zarządzać procesem żądania licencji dla użytkowników za pomocą żądań licencji. Gdy użytkownik spróbuje dokonać zakupu samoobsługowego dla zablokowanego przez Ciebie produktu, może przesłać żądanie licencji do Ciebie, administratora. Gdy użytkownik poprosi o licencję, może dodać nazwy innych użytkowników, którzy także potrzebują licencji produktu.
+Jeśli wyłączysz zakupy samoobsługowe w organizacji, możesz użyć żądań licencji do zarządzania procesem żądania licencji dla użytkowników. Gdy użytkownik próbuje dokonać zakupu samoobsługowego dla zablokowanego produktu, może przesłać do Ciebie żądanie licencji, administratora. Podczas tworzenia żądania mogą dodawać nazwy innych użytkowników, którzy również potrzebują licencji dla produktu.
 
 > [!NOTE]
-> Jeśli blokujesz użytkownikom dokonywanie zakupów samoobsługowych, firma Microsoft nie wysyła im marketingowych wiadomości e-mail. Ponadto, jeśli korzystasz z wersji próbnej produktu, nie widzą monitów o jego zakup. Aby dowiedzieć się więcej, zobacz [Zarządzanie zakupami samoobsługi (administrator](../subscriptions/manage-self-service-purchases-admins.md)).
+> Jeśli zablokujesz użytkownikom możliwość dokonywania zakupów samoobsługowych, firma Microsoft nie wyśle im marketingowych wiadomości e-mail. Ponadto jeśli używają wersji próbnej produktu, nie widzą monitów o jego zakup. Aby dowiedzieć się więcej, zobacz [Zarządzanie zakupami samoobsługowymi (administrator).](../subscriptions/manage-self-service-purchases-admins.md)
 
-Aby wyświetlić żądania licencji i zarządzać nimi, administrator używa karty **Wnioski** na **stronie Licencjonowanie** . Lista zawiera nazwę żądanego produktu, imię i nazwisko osoby żądacej licencji, żądaną datę oraz stan żądania. Administratorzy mogą filtrować listę, aby wyświetlić żądania oczekujące lub ukończone. Żądania są przechowywane przez 30 dni.
+Aby wyświetlić żądania licencji i zarządzać nimi, administrator korzysta z karty **Żądania** na stronie **Licencjonowanie** . Lista zawiera nazwę żądanego produktu, nazwę osoby żądającej licencji, żądaną datę i stan żądania. Administratorzy mogą filtrować listę, aby wyświetlić żądania oczekujące lub zakończone. Żądania są przechowywane przez 30 dni.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-Aby wykonać zadania z tego artykułu, musisz być administratorem globalnym. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratorów](../../admin/add-users/about-admin-roles.md).
+Aby wykonywać zadania opisane w tym artykule, musisz być administratorem globalnym. Aby uzyskać więcej informacji, zobacz: [Role administratora — informacje](../../admin/add-users/about-admin-roles.md).
 
-## <a name="use-your-own-request-process"></a>Skorzystaj z własnego procesu żądania
+## <a name="use-your-own-request-process"></a>Korzystanie z własnego procesu żądania
 
-Jeśli Twoja organizacja ma własny proces żądania, możesz go użyć zamiast tego. Tworzysz komunikat, który jest wyświetlany użytkownikom, gdy żądają licencji.
+Jeśli Twoja organizacja ma własny proces żądania, możesz go zamiast tego użyć. Tworzysz komunikat, który jest wyświetlany użytkownikom podczas żądania licencji.
 
 > [!IMPORTANT]
-> Jeśli korzystasz z własnego procesu żądania, na karcie Żądania nie są wyświetlane **żadne** żądania. Istniejące żądania od zanim dodano wiadomość będą nadal wyświetlane do czasu ich zatwierdzenia lub odrzucenia.
+> Jeśli używasz własnego procesu żądania, żadne żądania nie są wyświetlane na karcie **Żądania** . Istniejące żądania przed dodaniem wiadomości będą nadal wyświetlane do momentu ich zatwierdzenia lub odrzucenia.
 
-1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > , a następnie wybierz **kartę** Wnioski.
-2. Zamiast **tego wybierz pozycję Użyj istniejącego procesu żądania**.
-3. W prawym okienku w **polu Wiadomość** wpisz wiadomość, którą użytkownicy będą widzieć, gdy zażądają licencji. Jeśli chcesz dodać link do zasad organizacji lub innej dokumentacji, wprowadź adres URL w polu tekstowym Link do dokumentacji **(** opcjonalnie).
+1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">RozliczeniaLicenses</a> > , a następnie wybierz kartę **Żądania**.
+2. Zamiast tego wybierz pozycję **Użyj istniejącego procesu żądania**.
+3. W okienku po prawej stronie w polu **Komunikat** wpisz komunikat, który użytkownicy mają zobaczyć podczas żądania licencji. Jeśli chcesz również dołączyć link do zasad organizacji lub innej dokumentacji, wprowadź adres URL w polu tekstowym **Link do dokumentacji (opcjonalnie** ).
 4. Wybierz **Zapisz**.
 
-Po powrocie do listy **Żądania** zostanie wyświetlony komunikat Używasz **procesu żądania licencji**. Aby wprowadzić zmiany w wiadomości wysyłanej do użytkowników, wybierz pozycję Zamiast tego użyj **istniejącego procesu żądania**.
+Po powrocie do listy **Żądania zostanie wyświetlony** komunikat **Używasz własnego procesu żądania licencji**. Aby wprowadzić zmiany w wiadomości wysyłanej do użytkowników, wybierz pozycję **Użyj istniejącego procesu żądania**.
 
-## <a name="stop-using-your-own-request-process"></a>Zaprzestanie korzystania z własnego procesu żądania
+## <a name="stop-using-your-own-request-process"></a>Przestań korzystać z własnego procesu żądania
 
-1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > , a następnie wybierz **kartę** Wnioski.
-2. Zamiast **tego wybierz pozycję Użyj istniejącego procesu żądania**.
-3. W prawym okienku wyczyść pole wyboru Użyj procesu żądania **mojej** organizacji.
+1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">RozliczeniaLicenses</a> > , a następnie wybierz kartę **Żądania**.
+2. Zamiast tego wybierz pozycję **Użyj istniejącego procesu żądania**.
+3. W okienku po prawej stronie wyczyść pole wyboru **Użyj procesu żądania mojej organizacji** .
 4. Wybierz **Zapisz**.
 
-## <a name="approve-or-deny-a-license-request"></a>Zatwierdzanie lub odrzucanie wniosku o licencję
+## <a name="approve-or-deny-a-license-request"></a>Zatwierdzanie lub odrzucanie żądania licencji
 
-1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > , a następnie wybierz **kartę** Wnioski.
-2. Zaznacz wiersz zawierający żądanie, które chcesz przejrzeć. W prawym okienku są szczegółowe informacje o tym, którzy użytkownicy chcą mieć licencje na produkt.
-3. Aby odrzucić cały wniosek **, wybierz pozycję** Nie zatwierdzaj, a w oknie dialogowym wybierz pozycję **Nie zatwierdzaj**.
-4. Aby odrzucić niektórych użytkowników, ale zatwierdzić innych, wybierz znak X przy nazwie użytkownika, którego chcesz usunąć. Ich nazwy są przenoszone **w obszarze Nie przypisuj do tych użytkowników**.
-5. Jeśli masz więcej niż jeden produkt, w **obszarze Wybierz produkt** wybierz ten, do którego chcesz przypisać licencje.
-6. Aby uniemożliwić użytkownikom dostęp do określonych aplikacji i usług, rozwiń pozycję Włącz lub wyłącz aplikacje i **usługi, a** następnie wyczyść pola wyboru obok aplikacji, które chcesz wykluczyć.
+1. W centrum administracyjnym przejdź do strony <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">RozliczeniaLicenses</a> > , a następnie wybierz kartę **Żądania**.
+2. Wybierz wiersz zawierający żądanie, które chcesz przejrzeć. W okienku po prawej stronie są wyświetlane szczegółowe informacje o tym, którzy użytkownicy chcą mieć licencje na produkt.
+3. Aby odrzucić całe żądanie, wybierz pozycję **Nie zatwierdzaj**, a następnie w oknie dialogowym wybierz pozycję **Nie zatwierdzaj**.
+4. Aby odmówić niektórym użytkownikom żądania, ale zatwierdzić innych, wybierz znak X według nazwy użytkowników, których chcesz usunąć. Ich nazwy są przenoszone w obszarze **Nie przypisuj do tych użytkowników**.
+5. Jeśli masz więcej niż jeden produkt, w obszarze **Wybierz produkt** wybierz ten, dla którego chcesz przypisać licencje.
+6. Aby uniemożliwić użytkownikom dostęp do określonych aplikacji i usług, **rozwiń węzeł Włącz lub wyłącz aplikacje i usługi**, a następnie wyczyść pola wyboru dla tych, które chcesz wykluczyć.
 7. W dolnej części okienka wpisz opcjonalną wiadomość w polu tekstowym.
-8. Po zakończeniu wybierz pozycję **Zatwierdź**. W prawym okienku są szczegółowe informacje o żądaniu.
-9. Zamykanie prawego okienka.
-    Użytkownicy otrzymają wiadomość e-mail z powiadomieniem, że ich żądanie zostało zatwierdzone lub odrzucone.
+8. Po zakończeniu wybierz pozycję **Zatwierdź**. W okienku po prawej stronie są wyświetlane szczegóły żądania.
+9. Zamknij okienko po prawej stronie.
+    Użytkownicy otrzymują wiadomość e-mail z informacją, że ich żądanie zostało zatwierdzone lub odrzucone.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Przypisywanie licencji użytkownikom](../../admin/manage/assign-licenses-to-users.md) (artykuł)\
+[Przypisywanie licencji do użytkowników](../../admin/manage/assign-licenses-to-users.md) (artykuł)\
 [Przenoszenie użytkowników do innej subskrypcji](../subscriptions/move-users-different-subscription.md) (artykuł)\
 [Kupowanie lub usuwanie licencji subskrypcji](buy-licenses.md) (artykuł)

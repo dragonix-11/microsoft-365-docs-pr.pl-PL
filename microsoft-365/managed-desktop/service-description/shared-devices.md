@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 8c8d79313ee858ebcac8754b96046b517a3f614a
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 5cb1f14f8f9dc8c645621c1a12c651db8a790b71
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835979"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841925"
 ---
 # <a name="shared-devices"></a>Urządzenia udostępnione
 
@@ -45,7 +45,7 @@ Tryb urządzenia udostępnionego nie jest dobrym wyborem w takich sytuacjach:
 - Jeśli środowisko użytkownika musi być inne dla różnych użytkowników na urządzeniu.
 - Jeśli zestaw aplikacji, których każdy użytkownik potrzebuje, znacznie się różni.
 
-## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile-in-microsoft-managed-desktop"></a>Rejestrowanie nowych urządzeń przy użyciu profilu trybu samodzielnego wdrażania rozwiązania Windows Autopilot w Microsoft Managed Desktop
+## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile"></a>Rejestrowanie nowych urządzeń przy użyciu profilu trybu samodzielnego wdrażania rozwiązania Windows Autopilot
 
 Niezależnie od tego, czy ty lub partner obsługujesz rejestrację urządzeń, możesz użyć profilu [trybu samodzielnego wdrażania rozwiązania Windows Autopilot](/mem/autopilot/self-deploying) w Microsoft Managed Desktop.
 
