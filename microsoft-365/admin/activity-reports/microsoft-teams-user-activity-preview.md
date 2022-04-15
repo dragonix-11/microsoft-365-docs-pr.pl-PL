@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dowiedz się, jak uzyskać raport aktywności Microsoft Teams użytkownika i uzyskać wgląd w działania Teams w organizacji.
-ms.openlocfilehash: a5261261a1a1cb7b2039b646c3dbbd92c5f43688
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: cbd9bdb73dc69da5e36e0fb9c3ff2ff15b5269a4
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781660"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882269"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365 Raporty w centrum administracyjnym — działanie Microsoft Teams użytkownika
 
@@ -71,7 +71,7 @@ Aby zapewnić jakość danych, przeprowadzamy codzienne sprawdzanie poprawności
 |Spotkania uczestniczyły w zaplanowanych cyklicznych spotkaniach  <br/> |Liczba spotkań cyklicznych, w których uczestniczył użytkownik w określonym okresie.  <br/> |
 |Licencja  <br/> |Wybrane, jeśli użytkownik ma licencję na korzystanie z Teams. <br/>|
 |Inne działanie  <br/>|Użytkownik jest aktywny, ale wykonał inne działania niż uwidocznione typy akcji oferowane w raporcie (wysyłanie lub odpowiadanie na wiadomości kanałowe i wiadomości czatu, planowanie lub uczestnictwo w połączeniach i spotkaniach 1:1). Przykładowe akcje są następujące, gdy użytkownik zmienia stan Teams lub komunikat o stanie Teams lub otwiera wpis wiadomości kanału, ale nie odpowiada.  <br/>|
-|Spotkania niesklasyfikowane <br/>|Ten, którego nie można sklasyfikować jako harmonogramu, cyklicznego lub ad hoc. Są one krótkie i w większości nie można ich zidentyfikować z powodu naruszonych informacji telemetrycznych. |
+
 
 ## <a name="make-the-user-specific-data-anonymous"></a>Anonimowość danych specyficznych dla użytkownika
 

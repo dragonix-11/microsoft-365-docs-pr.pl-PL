@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1f128a48e8ee2939b4bfcc270c110e0ec63d6ebe
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 697dfc567eb2719a6e81a7b57df321ba2af40911
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862593"
+ms.locfileid: "64882313"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Korzystanie z kreatora konfiguracji w Microsoft Defender dla Firm
 
@@ -36,6 +36,11 @@ Microsoft Defender dla Firm została zaprojektowana w celu zaoszczędzenia czasu
 > **Masz minutę?**
 > Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
+
+> [!TIP]
+> Korzystanie z kreatora konfiguracji jest opcjonalne. Możesz ręcznie przejść przez proces konfiguracji i konfiguracji. Aby dowiedzieć się więcej, zobacz:
+> - [Co się stanie, jeśli nie będę używać kreatora?](#what-happens-if-i-dont-use-the-wizard)
+> - [Jak skonfigurować i skonfigurować Microsoft Defender dla Firm](mdb-setup-configuration.md)
 
 ## <a name="how-to-start-the-setup-wizard"></a>Jak uruchomić kreatora instalacji
 
@@ -64,7 +69,7 @@ Kreator konfiguracji został zaprojektowany, aby ułatwić szybkie i wydajne kon
 
    [Dowiedz się więcej o rolach i uprawnieniach](mdb-roles-permissions.md). 
 
-2. **Konfigurowanie powiadomień e-mail**. W tym kroku możesz skonfigurować powiadomienia e-mail dla zespołu ds. zabezpieczeń. Następnie po wygenerowaniu alertu lub wykryciu nowej luki w zabezpieczeniach twój zespół ds. zabezpieczeń nie będzie o nim korzystać, nawet jeśli nie znajdzie się w biurze. [Dowiedz się więcej o powiadomieniach e-mail](mdb-email-notifications.md). 
+2. **Konfigurowanie powiadomień e-mail**. W tym kroku możesz skonfigurować powiadomienia e-mail dla zespołu ds. zabezpieczeń. Następnie po wygenerowaniu alertu lub wykryciu nowej luki w zabezpieczeniach twój zespół ds. zabezpieczeń nie będzie o nim korzystać, nawet jeśli znajduje się z dala od biurka. [Dowiedz się więcej o powiadomieniach e-mail](mdb-email-notifications.md). 
 
 3. **Dołączanie i konfigurowanie urządzeń Windows**. W tym kroku możesz szybko dołączyć urządzenia Windows firmy do usługi Defender dla Firm. Od razu dołączanie urządzeń pomaga chronić te urządzenia od pierwszego dnia. 
 
@@ -81,7 +86,7 @@ Kreator konfiguracji został zaprojektowany, aby ułatwić szybkie i wydajne kon
 
 Automatyczne dołączanie to uproszczony sposób dołączania urządzeń Windows do usługi Defender for Business. Automatyczne dołączanie jest dostępne tylko dla urządzeń Windows, które są już zarejestrowane w Microsoft Endpoint Manager (lub Microsoft Intune). 
 
-Podczas korzystania z kreatora konfiguracji system wykryje, czy urządzenia Windows są już zarejestrowane w Endpoint Manager. Zostanie wyświetlone pytanie, czy chcesz używać automatycznego dołączania dla wszystkich lub niektórych z tych urządzeń. Możesz dołączyć wszystkie urządzenia Windows jednocześnie lub wybrać określone urządzenia do rozpoczęcia, a następnie dodać więcej urządzeń później. 
+Podczas korzystania z kreatora instalacji system wykryje, czy urządzenia Windows są już zarejestrowane w Endpoint Manager. Zostanie wyświetlone pytanie, czy chcesz używać automatycznego dołączania dla wszystkich lub niektórych z tych urządzeń. Możesz dołączyć wszystkie urządzenia Windows jednocześnie lub wybrać określone urządzenia do rozpoczęcia, a następnie dodać więcej urządzeń później. 
 
 Aby dołączyć inne urządzenia, zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).
 

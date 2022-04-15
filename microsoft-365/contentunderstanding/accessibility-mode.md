@@ -8,60 +8,60 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
-description: Dowiedz się, jak korzystać z trybu funkcji ułatwień dostępu podczas szkoleń i pracy z modelami w SharePoint Syntex.
-ms.openlocfilehash: 09fd16259a44a2aa4d1b82dca49fffa76065690b
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+description: Dowiedz się, jak używać trybu funkcji ułatwień dostępu podczas trenowania i pracy z modelami w SharePoint Syntex.
+ms.openlocfilehash: 567abb862af27457c1eb9395e32bf68d98446887
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419061"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882335"
 ---
 # <a name="accessibility-mode-in-sharepoint-syntex"></a>Tryb ułatwień dostępu w SharePoint Syntex
 
-W [SharePoint Syntex](index.md) użytkownicy mogą włączać tryb ułatwień dostępu na wszystkich etapach szkolenia modelu (etykieta, szkolenie, test) podczas pracy z przykładami dokumentów. Korzystanie z trybu ułatwień dostępu ułatwia użytkownikom o słabym wzroku korzystanie z klawiatury podczas nawigowania i oznaczania elementów w przeglądarce dokumentów.
+W [SharePoint Syntex](index.md) użytkownicy mogą włączyć tryb ułatwień dostępu na wszystkich etapach trenowania modelu (etykieta, trenowanie, testowanie) podczas pracy z przykładami dokumentów. Korzystanie z trybu ułatwień dostępu może pomóc użytkownikom o niskim zasięgu wzroku mieć łatwiejszą dostępność klawiatury podczas nawigacji i etykietowania elementów w przeglądarce dokumentów.
 
-Ułatwia to użytkownikom poruszanie się po tekście w przeglądarce dokumentów i odsłuchianie narracji nie tylko wybranych wartości, ale również akcji (takich jak oznaczanie lub usuwanie etykiet z zaznaczonego tekstu) oraz przewidywanie wartości etykiet w ramach szkolenie modelu z dodatkowych dokumentów przykładowych. 
+Ułatwia to użytkownikom korzystanie z klawiatur w celu nawigowania po tekście w przeglądarce dokumentów oraz rozpoznawania narracji nie tylko wybranych wartości, ale także akcji (takich jak etykietowanie lub usuwanie etykiet z zaznaczonego tekstu) lub przewidywanych wartości etykiet podczas trenowania modelu z dodatkowymi przykładowymi dokumentami. 
 
 
 ![Tryb ułatwień dostępu.](../media/content-understanding/accessibility-mode.png)
 
 ## <a name="requirements"></a>Wymagania
 
-Aby odsłuchać dźwięk narracji, włącz aplikację Narrator w ustawieniach [Narratora](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) w Windows 10 systemie.
+Aby usłyszeć dźwięk narracji, włącz [aplikację Narratora](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) w ustawieniach narratora w systemie Windows 10.
 
-![Włącz Narratora.](../media/content-understanding/narrator-settings.png)
+![Włącz narratora.](../media/content-understanding/narrator-settings.png)
 
-## <a name="labeling-for-keyboard-users"></a>Etykiety dla użytkowników klawiatury
+## <a name="labeling-for-keyboard-users"></a>Etykietowanie dla użytkowników klawiatury
 
-W przypadku użytkowników klawiatury korzystających z trybu ułatwień dostępu, jeśli w przeglądarce jest oznaczany tekst etykietą w przykładowym dokumencie, można użyć następujących klawiszy:
+W przypadku użytkowników klawiatury korzystających z trybu ułatwień dostępu w przypadku etykietowania tekstu w przykładowym dokumencie w przeglądarce można użyć następujących klawiszy:
 
-- Tab. Powoduje przejście do przodu i zaznaczenie następnego wyrazu.
-- Tab + Shift: powoduje przejście wstecz i zaznaczenie poprzedniego wyrazu.
-- Wprowadź: Etykieta lub usunięcie etykiety z zaznaczonego wyrazu.
-- Strzałka w prawo: umożliwia przejście do przodu między poszczególnymi znakami w zaznaczonym wyrazie.
-- Strzałka w lewo: Umożliwia przejście do tyłu między poszczególnymi znakami w zaznaczonym wyrazie.
+- Karta: przenosi cię do przodu i wybiera następne słowo.
+- Tab + Shift: przenosi cię do tyłu i wybiera poprzednie słowo.
+- Wprowadź: Etykieta lub usuwa etykietę z wybranego wyrazu.
+- Strzałka w prawo: przenosi cię do przodu przez poszczególne znaki w wybranym słowie.
+- Strzałka w lewo: przenosi cię do tyłu przez poszczególne znaki w wybranym słowie.
 
 > [!NOTE]
-> W przypadku oznaczania wielu wyrazów jedną etykietą musisz o etykiecie każdy wyraz.
+> W przypadku etykietowania wielu wyrazów dla pojedynczej etykiety należy oznaczyć każde słowo etykietą.
 
 
-## <a name="narration"></a>Narracja
+## <a name="narration"></a>Narracji
 
-W przypadku użytkowników Narratora korzystających z trybu ułatwień dostępu użyj tej samej nawigacji za pomocą klawiatury opisanej dla użytkowników klawiatury, aby przejść przez przykładowy dokument w przeglądarce.
+W przypadku użytkowników Narratora korzystających z trybu ułatwień dostępu użyj tej samej nawigacji klawiaturowej opisanej dla użytkowników klawiatury, aby przejść przez przykładowy dokument w przeglądarce.
 
-Podczas nawigowania między przykładami dokumentów i wartościami ciągów etykiet Narrator wyświetla użytkownikowi następujące monity audio:
+Gdy nawigujesz po przykładowych dokumentach i wartościach ciągów etykiet, Narrator przekaże użytkownikowi następujące monity dźwiękowe:
 
-- Gdy będziesz poruszać się po przeglądarce dokumentów za pomocą klawiatury, w części audio Narratora zostanie odczytany wybrany ciąg.
-- W ramach zaznaczonego ciągu audio Narrator audio będzie odczytywać poszczególne znaki w ciągu podczas ich zaznaczania za pomocą klawiszy strzałek w lewo i w prawo.
-- Jeśli wybierzesz ciąg, który został oznaczony etykietą, Narrator odczyta wartość, a następnie "etykieta".  Jeśli na przykład etykieta ma wartość "Contoso", będzie to wartość "Kosztoso z etykietą". 
-- Jeśli na karcie szkolenie wybierzesz w przeglądarce dokumentów ciąg, który został już przewidywany, w obszarze Audio Narratora zostanie odczytana wartość, a następnie "przewidywana". Dzieje się tak, gdy szkolenie przewiduje wartość w pliku, która nie jest taka, jaka została oznaczona przez użytkownika.
-- Jeśli na karcie szkolenie wybierzesz w przeglądarce dokumentów ciąg, który został oznaczony i prognozowany, w obszarze audio Narratora zostanie odczytana wartość, a następnie "etykieta i prognozowanie". Dzieje się tak, gdy szkolenie zakończyło się pomyślnie i istnieje dopasowanie między przewidywaną wartością a etykietą użytkownika.
+- Gdy użyjesz klawiatury do nawigowania po podglądzie dokumentów, dźwięk Narratora będzie określać wybrany ciąg.
+- W wybranym ciągu dźwięk Narratora będzie określał każdy znak w ciągu podczas ich wybierania przy użyciu klawiszy strzałek w lewo lub w prawo.
+- Jeśli wybierzesz ciąg, który został oznaczony etykietą, Narrator będzie określał wartość, a następnie "etykietą".  Jeśli na przykład wartość etykiety to "Contoso", zostanie ona oznaczona jako "Costoso labeled". 
+- Jeśli na karcie trenowania wybierzesz w przeglądarce dokumentów ciąg, który został tylko przewidywany, dźwięk Narratora będzie określał wartość, a następnie "przewidywany". Dzieje się tak, gdy trenowanie przewiduje wartość w pliku, która nie odpowiada temu, co zostało oznaczone przez użytkownika.
+- Jeśli na karcie trenowania wybierzesz ciąg w przeglądarce dokumentów, który został oznaczony etykietą i przewidywany, dźwięk Narratora będzie określał wartość, a następnie "etykietą i przewidywaną". Dzieje się tak, gdy szkolenie zakończy się pomyślnie i występuje dopasowanie między przewidywaną wartością a etykietą użytkownika.
 
-Po oznaczeniu ciągu znaków lub usunięciu etykiety w przeglądarce dźwięk Narratora będzie ostrzegał o zapisaniu zmian przed zakończeniem.
+Po oznaczeniu ciągu lub usunięciu etykiety w przeglądarce dźwięk Narratora ostrzega o zapisaniu zmian przed zakończeniem pracy.
 
 ## <a name="see-also"></a>Zobacz też
 
-[Tworzenie wyodrębnianego](create-an-extractor.md)
+[Tworzenie wyodrębniacza](create-an-extractor.md)
 
 [Tworzenie klasyfikatora](create-a-classifier.md)
 

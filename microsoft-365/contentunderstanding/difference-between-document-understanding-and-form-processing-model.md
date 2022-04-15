@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Dowiedz się więcej o kluczowych różnicach między modelem zrozumienia dokumentu a modelem przetwarzania formularzy.
-ms.openlocfilehash: a3f36adbf261ef290aada8efe1c0643ee1ce570f
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: f6fe6e821e41b47bcce6ef157d971245fdd072b8
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738399"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882291"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Różnice między interpretacją dokumentów a modelami przetwarzania formularzy 
 
@@ -82,7 +82,7 @@ Poniższa tabela służy do zrozumienia, kiedy używać przetwarzania formularzy
 | Integracja z zarządzanymi metadanymi | Nie | Tak, przez trenowanie wyodrębniania jednostek odwołującego się do skonfigurowanego pola zarządzanych metadanych.|
 | Integracja funkcji zgodności po włączeniu Microsoft Information Protection | Ustaw opublikowane etykiety przechowywania.<br>Nadchodzą etykiety poufności. | Ustaw opublikowane etykiety przechowywania.<br>Ustaw opublikowane etykiety poufności. |
 | Obsługiwane regiony| Przetwarzanie formularzy opiera się na usłudze Power Platform. Aby uzyskać informacje o globalnej dostępności platformy Power Platform i narzędzia AI Builder, zobacz [Dostępność platformy Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Dostępne we wszystkich regionach.|
-| Koszt transakcyjny | Używa środków narzędzia AI Builder.<br>Środki można kupić w partiach po 1 mln.<br>Środki na korzystanie z 1 mln są uwzględniane w przypadku zakupu ponad 300 SharePoint Syntex licencji.<br>Środki w wysokości 1 mln umożliwią przetwarzanie 2000 stron plików.<br>| Nie dotyczy |
+| Koszt transakcyjny | Używa środków narzędzia AI Builder.<br>Środki można kupić w partiach po 1 mln.<br>Środki na korzystanie z 1 mln są uwzględniane w przypadku zakupu ponad 300 SharePoint Syntex licencji.<br>Środki w wysokości 1 mln umożliwią przetwarzanie 2000 stron plików.<br>| nd. |
 | Pojemność | Używa domyślnego środowiska platformy Power Platform (środowiska niestandardowe z obsługiwaną bazą danych Dataverse). | Nie ma ograniczeń pojemności.|
 | Obsługiwane języki| Obsługa języka dla większej [liczby 73 języków](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Modele działają we wszystkich językach alfabetu łacińskiego. Oprócz języka angielskiego: niemiecki, szwedzki, francuski, hiszpański, włoski i portugalski.|
 

@@ -1,5 +1,5 @@
 ---
-title: Role administratora usługi Intune w sieci centrum administracyjne platformy Microsoft 365
+title: Informacje o rolach administratora Intune w Centrum administracyjne platformy Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -17,33 +17,33 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: Role administratora są powiązane z funkcjami biznesowymi i zapewniają uprawnienia do wykonywania określonych zadań w centrum administracyjnym. Na przykład administrator usługi otwiera bilety pomocy technicznej firmy Microsoft.
-ms.openlocfilehash: 650a46c20acaf207f757ebbbe8f8b7179c29158f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6ee5c8410b64bffe66ee69e5c4468a9eda601cd8
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983671"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882203"
 ---
-# <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Role administratora usługi Intune w centrum administracyjne platformy Microsoft 365
+# <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Intune role administratora w Centrum administracyjne platformy Microsoft 365
 
-Subskrypcja Microsoft 365 lub Office 365 zawiera zestaw ról administratora, które można przypisać użytkownikom w organizacji przy użyciu aplikacji <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centrum administracyjne platformy Microsoft 365</a>. Każda rola administratora jest powiązana z typowymi funkcjami biznesowymi i zapewnia osobom w Twojej organizacji uprawnienia do wykonywania określonych zadań w centrum administracyjnym.
+Subskrypcja Microsoft 365 lub Office 365 zawiera zestaw ról administratora, które można przypisać do użytkowników w organizacji przy użyciu <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centrum administracyjne platformy Microsoft 365</a>. Każda rola administratora jest powiązana z typowymi funkcjami biznesowymi i zapewnia osobom w Twojej organizacji uprawnienia do wykonywania określonych zadań w centrum administracyjnym.
 
-Ta centrum administracyjne platformy Microsoft 365 umożliwia zarządzanie niektórymi Microsoft Intune ról. Te role to jednak podzbiór ról dostępnych w centrum administracyjnym usługi Intune. Szukasz szczegółowych opisów ról dla Microsoft Intune? Zobacz Kontrola [dostępu oparta na rolach (RBAC, Role-based Access Control) z Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
+Centrum administracyjne platformy Microsoft 365 umożliwia zarządzanie niektórymi rolami Microsoft Intune. Jednak te role są podzbiorem ról dostępnych w centrum administracyjnym Intune. Szukasz szczegółowych opisów ról dla Microsoft Intune? Zapoznaj się z [kontrolą dostępu opartą na rolach (RBAC) w usłudze Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
-Aby uzyskać więcej informacji na temat przypisywania ról w <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">centrum administracyjne platformy Microsoft 365, zobacz</a> [Przypisywanie ról administratora](assign-admin-roles.md).
+Aby uzyskać więcej informacji na temat przypisywania ról w <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">centrum administracyjnym platformy Microsoft 365</a>, zobacz artykuł [Przypisywanie ról administratora](assign-admin-roles.md).
 
-W centrum administracyjne platformy Microsoft 365 przejdź do **role, a** następnie wybierz dowolną rolę, aby otworzyć jej okienko szczegółów. Wybierz **kartę Uprawnienia** , aby wyświetlić szczegółową listę administratorów przypisanych do tej roli. Wybierz **kartę Przypisani** lub **Przypisani administratorzy** , aby dodać użytkowników do ról.
+W Centrum administracyjne platformy Microsoft 365 możesz przejść do pozycji **Role**, a następnie wybrać dowolną rolę, aby otworzyć okienko szczegółów. Wybierz kartę **Uprawnienia**, aby wyświetlić szczegółową listę uprawnień administratorów, którym została przypisana dana rola. Wybierz kartę **Przypisani** lub **Przypisani administratorzy**, aby dodać użytkowników do ról.
 
-## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft Intune role dostępne w centrum administracyjne platformy Microsoft 365
+## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft Intune role dostępne w Centrum administracyjne platformy Microsoft 365
 
 |Rola administratora     |Komu powinna być przypisana ta rola?  |
 |---------|---------|
-|Menedżer aplikacji     |   Przypisz rolę Menedżer aplikacji użytkownikom, którzy chcą dzielić cykl życia aplikacji dla aplikacji mobilnych, konfigurując aplikacje zarządzane przez zasady oraz widoki informacji o urządzeniu i profilów konfiguracji.  |
-|Operator pomocy technicznej     |   Przypisz rolę operatora pomocy technicznej użytkownikom, którzy przypisują aplikacje i zasady do użytkowników i urządzeń. |
-|Administrator roli w usłudze Intune    |   Przypisz administratora roli usługi Intune użytkownikom, którzy mogą przypisywać uprawnienia usługi Intune innym administratorom oraz zarządzać niestandardowymi i wbudowanymi rolami usługi Intune.   |
-|Zasady i menedżer profilów     |   Przypisz rolę menedżera zasad i profilu do użytkowników, aby zarządzali zasadami zgodności, profilami konfiguracji i rejestracją firmy Apple.   |
-|Operator tylko do odczytu     |   Przypisz rolę operatora tylko do odczytu użytkownikom, którzy mogą tylko wyświetlać użytkowników, urządzenia, szczegóły rejestracji i konfiguracje.   |
-|Administrator szkoły     |   Przypisz rolę administratora szkoły użytkownikom w celu pełnego dostępu do zarządzania urządzeniami, Windows 10 iOS, aplikacjami i konfiguracjami w usłudze Intune for Education.   |
+|Menedżer aplikacji     |   Przypisz rolę Menedżera aplikacji do użytkowników, którzy zarządzają cyklem życia aplikacji dla aplikacji mobilnych, konfigurują aplikacje zarządzane przez zasady oraz wyświetlają informacje o urządzeniu i profile konfiguracji.  |
+|Operator pomocy technicznej     |   Przypisz rolę operatora pomocy technicznej do użytkowników, którzy przypisują aplikacje i zasady do użytkowników i urządzeń. |
+|administrator roli Intune    |   Przypisz administratora roli Intune użytkownikom, którzy mogą przypisywać uprawnienia Intune innym administratorom oraz zarządzać niestandardowymi i wbudowanymi rolami Intune.   |
+|Menedżer zasad i profilów     |   Przypisz rolę menedżera zasad i profilów do użytkowników, którzy zarządzają zasadami zgodności, profilami konfiguracji i rejestracją firmy Apple.   |
+|Operator tylko do odczytu     |   Przypisz rolę operatora tylko do odczytu użytkownikom, którzy mogą wyświetlać tylko użytkowników, urządzenia, szczegóły rejestracji i konfiguracje.   |
+|Administrator szkoły     |   Przypisz użytkownikom rolę administratora szkoły w celu uzyskania pełnego dostępu do zarządzania urządzeniami Windows 10 i iOS, aplikacjami i konfiguracjami w Intune for Education.   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administracja delegowana dla partnerów firmy Microsoft
 
@@ -55,10 +55,10 @@ Partner może przypisywać następujące role:
 
 - Ograniczona administracja, która ma uprawnienia równoważne administratorowi pomocy technicznej.
 
-Zanim Partner będzie mógł przypisywać te role do użytkowników, musisz dodać go jako administratora delegowanego do swojego konta. Ten proces jest inicjowany przez autoryzowanego partnera. Musi wysłać Ci wiadomość e-mail z prośbą o nadanie uprawnień administratora delegowanego. Aby uzyskać instrukcje, zobacz [Autoryzowanie i usuwanie relacji partnerskich](../misc/add-partner.md).
+Zanim partner będzie mógł przypisywać te role użytkownikom, musisz dodać tego partnera jako administratora delegowanego do swojego konta. Ten proces jest inicjowany przez partnera autoryzowanego. Partner wysyła do Ciebie wiadomość e-mail z pytaniem, czy chcesz nadać mu uprawnienia do działania jako administrator delegowany. Aby uzyskać instrukcje, zobacz [Autoryzowanie i usuwanie relacji partnerskich](../misc/add-partner.md).
   
 ## <a name="related-content"></a>Zawartość pokrewna
 
-[Informacje Microsoft 365 administratora](about-admin-roles.md) (artykuł)\
+[Informacje o rolach administratora Microsoft 365](about-admin-roles.md) (artykuł)\
 [Przypisywanie ról administratora](assign-admin-roles.md) (artykuł)\
-[Raporty aktywności w centrum administracyjne platformy Microsoft 365](../activity-reports/activity-reports.md) (artykuł)
+[Raporty aktywności w Centrum administracyjne platformy Microsoft 365](../activity-reports/activity-reports.md) (artykuł)
