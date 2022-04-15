@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/08/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,31 +16,29 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 830149a1592aa2985b603d2e9f317250c7c2606a
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: d0364a26fab9e2c496e1208eb5ac4e4275bab3b2
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746541"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861845"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Uzyskiwanie Microsoft Defender dla Firm
 
-> [!IMPORTANT]
-> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
-> 
-> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Jeśli nie masz jeszcze Microsoft Defender dla Firm, możesz wybrać jedną z kilku opcji:
 
 - [Praca z dostawcą rozwiązań firmy Microsoft](#work-with-a-microsoft-solution-provider)
 - [Uzyskiwanie usługi Microsoft 365 Business Premium](#get-microsoft-365-business-premium)
-- [Tworzenie konta w programie w wersji zapoznawczej](#sign-up-for-the-preview-program)
+- [Tworzenie konta w programie w wersji zapoznawczej usługi Defender dla Firm](#sign-up-for-the-preview-program)
 
 Jeśli masz konto w wersji próbnej, po otrzymaniu wiadomości e-mail z akceptacją możesz [aktywować wersję próbną i przypisać licencje użytkowników](#activate-your-trial), a następnie przejść do [kolejnych kroków](#next-steps).
 
 >
 > **Masz minutę?**
-> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 ## <a name="work-with-a-microsoft-solution-provider"></a>Praca z dostawcą rozwiązań firmy Microsoft
@@ -119,7 +117,7 @@ Gdy otrzymasz wiadomość e-mail z akceptacją, oto jak aktywować subskrypcję 
 
    | Scenariusz | Procedura |
    |:---|:---|
-   | Konfigurujesz subskrypcję Microsoft 365 po raz pierwszy. | Wybierz pozycję **Przejdź do konfiguracji z przewodnikiem** i wykonaj następujące kroki:<br/><br/>1. Zainstaluj teraz aplikacje Office lub wybierz pozycję **Kontynuuj**, aby pominąć ten krok. (Aplikacje Office można zainstalować później).<br/><br/>2. Jeśli twoja firma ma domenę, możesz ją teraz dodać (ta opcja jest zalecana). Alternatywnie możesz na razie użyć domeny domyślnej `.onmicrosoft.com` .<br/><br/>3. Dodawanie użytkowników i przypisywanie licencji. Każdemu użytkownikowi, który wyświetlisz listę, zostanie automatycznie przypisana licencja. Zobacz [Dodawanie użytkowników i przypisywanie licencji w tym samym czasie](../../admin/add-users/add-users.md). |
+   | Konfigurujesz subskrypcję Microsoft 365 po raz pierwszy. | Wybierz pozycję **Przejdź do konfiguracji z przewodnikiem** i wykonaj następujące kroki:<br/><br/>1. Zainstaluj teraz aplikacje Office lub wybierz pozycję **Kontynuuj**, aby pominąć ten krok. (Aplikacje Office można zainstalować później).<br/><br/>2. Jeśli twoja firma ma domenę, możesz ją teraz dodać (ta opcja jest zalecana). Alternatywnie możesz na razie użyć domeny domyślnej `.onmicrosoft.com` .<br/><br/>3. Dodawanie użytkowników i przypisywanie licencji. Każdemu użytkownikowi, który wyświetlisz listę, zostanie automatycznie przypisana licencja. Zobacz [Dodawanie użytkowników i przypisywanie licencji w tym samym czasie](mdb-add-users.md). |
    | Dodajesz wersję próbną do istniejącej dzierżawy Microsoft 365. | 1. Przejdź do Centrum administracyjne platformy Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) i zaloguj się.<br/><br/>2. W okienku nawigacji wybierz pozycję **UżytkownicyAktywni** >  użytkownicy. Przejrzyj listę użytkowników. <br/><br/>3. Aby przypisać licencje, postępuj zgodnie ze wskazówkami w [temacie Przypisywanie licencji użytkownikom](../../admin/manage/assign-licenses-to-users.md). |
 
 

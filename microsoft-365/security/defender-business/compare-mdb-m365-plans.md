@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/08/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: cf4c209fa274c106c56da59fce78c97ec39839f1
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b1dbe79aadea39bfc737ae9f5457715b669cc79b
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783804"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861823"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Porównanie Microsoft Defender dla Firm z Microsoft 365 Business Premium
 
@@ -37,7 +37,7 @@ Microsoft Defender dla Firm jest dostępna jako oferta autonomiczna lub w ramach
 
 >
 > **Masz minutę?**
-> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 **Skorzystaj z tego artykułu, aby**:
@@ -77,27 +77,35 @@ W poniższej tabeli porównaliśmy funkcje zabezpieczeń i możliwości usługi 
 
 |Funkcja/możliwość|[Defender dla Firm](mdb-overview.md)<br/>(autonomiczny; obecnie w wersji zapoznawczej)|[Ochrona punktu końcowego w usłudze Microsoft Defender — Plan 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)|
 |---|---|---|---|
-|[Scentralizowane zarządzanie](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup>|Tak|Tak|Tak|
+|[Scentralizowane zarządzanie](../defender-endpoint/manage-atp-post-migration.md) |Tak <sup>[[1](#fn1)]</sup>|Tak|Tak|
 |[Uproszczona konfiguracja klienta](mdb-simplified-configuration.md)|Tak|Nie|Nie|
 |[Zarządzanie zagrożeniami i lukami w zabezpieczeniach](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|Tak|Nie|Tak|
 |[Możliwości zmniejszania obszaru ataków](../defender-endpoint/overview-attack-surface-reduction.md)|Tak|Tak|Tak|
 |[Ochrona nowej generacji](../defender-endpoint/next-generation-protection.md)|Tak|Tak|Tak|
 |[Wykrywanie i reagowanie dotyczące punktów końcowych](../defender-endpoint/overview-endpoint-detection-response.md)|Tak <sup>[[2](#fn2)]</sup>|Nie|Tak|
-|[Zautomatyzowane badanie i reagowanie](../defender-endpoint/automated-investigations.md)|Tak <sup>[[2](#fn2)]</sup>|Nie|Tak|
-|[Wyszukiwanie zagrożeń](../defender-endpoint/advanced-hunting-overview.md) i sześć miesięcy przechowywania danych <sup>[[3](#fn3)]</sup>|Nie|Nie|Tak|
-|[Analiza zagrożeń](../defender-endpoint/threat-analytics.md)|Tak <sup>[[2](#fn2)]</sup>|Nie|Tak|
-|[Obsługa wielu platform](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS i Android OS)|Tak <sup>[[4](#fn4)]</sup>|Tak|Tak|
+|[Zautomatyzowane badanie i reagowanie](../defender-endpoint/automated-investigations.md)|Tak <sup>[[3](#fn3)]</sup>|Nie|Tak|
+|[Wyszukiwanie zagrożeń](../defender-endpoint/advanced-hunting-overview.md) i sześć miesięcy przechowywania danych |Nr <sup>[[4](#fn4)]</sup>|Nie|Tak|
+|[Analiza zagrożeń](../defender-endpoint/threat-analytics.md)|Tak <sup>[[5](#fn5)]</sup>|Nie|Tak|
+|[Obsługa wielu platform](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS i Android OS)|Tak <sup>[[6](#fn6)]</sup>|Tak|Tak|
 |[Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md)|Nie|Nie|Tak|
 |Interfejsy API partnerów|Tak|Tak|Tak|
 |[integracja Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Do wyświetlania zdarzeń zabezpieczeń w dzierżawach klientów)|Tak|Nie|Nie|
 
-(<a id="fn1">1</a>) Dołączanie urządzeń i zarządzanie nimi w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) lub za pomocą innego narzędzia, takiego jak Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) Dołączanie urządzeń i zarządzanie nimi w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) lub za pomocą Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
-(<a id="fn2">2</a>) Te możliwości są zoptymalizowane pod kątem małych i średnich firm.
+(<a id="fn2">2</a>) Funkcje wykrywania i reagowania na punkty końcowe (EDR) w usłudze Defender for Business obejmują wykrywanie oparte na zachowaniu i następujące cztery typy akcji ręcznego reagowania: 
+- Uruchomiono skanowanie antywirusowe
+- Izolowanie urządzenia
+- Zatrzymywanie i kwarantanna pliku
+- Dodawanie wskaźnika w celu zablokowania lub zezwolenia na plik
 
-(<a id="fn3">3</a>) W usłudze Defender dla firm nie ma karty osi czasu.
+(<a id="fn3">3</a>) W usłudze Defender dla firm automatyczne badanie i reagowanie jest domyślnie włączone w całej dzierżawie. Wyłączenie automatycznego badania i reagowania ma wpływ na ochronę w czasie rzeczywistym. Zobacz [Przeglądanie ustawień funkcji zaawansowanych](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
 
-(<a id="fn4">4</a>) Podczas programu w wersji zapoznawczej Windows urządzenia klienckie są obsługiwane w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
+(<a id="fn4">4</a>) W usłudze Defender dla firm nie ma widoku osi czasu.
+
+(<a id="fn5">5</a>) W usłudze Defender for Business analiza zagrożeń jest zoptymalizowana pod kątem małych i średnich firm.
+
+(<a id="fn6">6</a>) Podczas programu w wersji zapoznawczej Windows urządzenia klienckie są obsługiwane do dołączania w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Możesz użyć lokalnej metody skryptu. Zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).
 
 ## <a name="next-steps"></a>Następne kroki
 

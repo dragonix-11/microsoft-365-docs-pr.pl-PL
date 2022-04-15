@@ -1,13 +1,13 @@
 ---
-title: Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm
-description: Dowiedz się, jak & alertami, odpowiadać na zagrożenia, zarządzać urządzeniami i przeglądać działania naprawcze
+title: Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm
+description: Dowiedz się, jak wyświetlać & zarządzać alertami, reagować na zagrożenia, zarządzać urządzeniami i przeglądać akcje korygowania
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,66 +17,60 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: a814aa4ad002672fa3451ef1bcc524d9b03d4eb5
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: ec1d85b72cfbe17e182d3aed573476e4fadfdef6
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527074"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861449"
 ---
-# <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm
+# <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm
 
-> [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
-> 
-> Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-W przypadku wykrycia zagrożeń i wyzwolenia alertów są tworzone zdarzenia. Zespół zabezpieczeń Twojej firmy może wyświetlać zdarzenia i zarządzać nimi w portalu Microsoft 365 Defender sieci.
+W miarę wykrywania zagrożeń i wyzwalania alertów tworzone są zdarzenia. Zespół ds. zabezpieczeń twojej firmy może wyświetlać zdarzenia i zarządzać nimi w portalu Microsoft 365 Defender.
 
-**Ten artykuł zawiera:**
+**Ten artykuł zawiera**:
 
 - [Jak monitorować zdarzenia i alerty](#monitor-your-incidents--alerts)
-
 - [Ważność alertu](#alert-severity)
-
 - [Następne kroki](#next-steps)
 
 >
 > **Masz minutę?**
-> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
-## <a name="monitor-your-incidents--alerts"></a>Monitorowanie alertów dotyczących & zdarzeń
+## <a name="monitor-your-incidents--alerts"></a>Monitorowanie zdarzeń & alertów
 
-1. W portalu Microsoft 365 Defender nawigacji ([https://security.microsoft.com](https://security.microsoft.com)) w okienku nawigacji wybierz **pozycję Zdarzenia**. Wszelkie zdarzenia, które zostały utworzone, są wymienione na stronie.
+1. W portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) w okienku nawigacji wybierz pozycję **Incydenty**. Wszystkie utworzone zdarzenia są wyświetlane na stronie.
 
-   :::image type="content" source="../../media/defender-business/mdb-incidents-list.png" alt-text="Zrzut ekranu przedstawiający listę Zdarzenia":::
+   :::image type="content" source="../../media/defender-business/mdb-incidents-list.png" alt-text="Zrzut ekranu przedstawiający listę zdarzeń":::
 
-2. Wybierz alert, aby otworzyć jego okienko wysuwu, w którym możesz dowiedzieć się więcej o tym alertie. 
+2. Wybierz alert, aby otworzyć okienko wysuwane, w którym możesz dowiedzieć się więcej na temat alertu. 
 
-   :::image type="content" source="../../media/defender-business/mdb-incident-flyout.png" alt-text="Zrzut ekranu przedstawiający wybrane zdarzenie z otwartym wysuwem wysuwanego ekranu":::
+   :::image type="content" source="../../media/defender-business/mdb-incident-flyout.png" alt-text="Zrzut ekranu przedstawiający zdarzenie wybrane z otwartym wysuwem":::
 
-3. W okienku wysuwanym można wyświetlić tytuł alertu, wyświetlić listę zasobów (takich jak punkty końcowe lub konta użytkowników), których dotyczy problem, podjąć dostępne działania, a także użyć linków w celu wyświetlenia większej liczby informacji, a nawet otwarcia strony szczegółów dla wybranego alertu. 
+3. W okienku wysuwanym można wyświetlić tytuł alertu, wyświetlić listę zasobów (takich jak punkty końcowe lub konta użytkowników), których to dotyczy, podjąć dostępne akcje i użyć linków, aby wyświetlić więcej informacji, a nawet otworzyć stronę szczegółów wybranego alertu. 
 
 > [!TIP]
-> Usługa Microsoft Defender dla firm ma na celu pomoc w przypadku wykrytych zagrożeń, oferując zalecane działania. Podczas wyświetlania alertu poszukaj zalecanych akcji do podjęcia. Zanotuj także ważność alertów, która jest określana nie tylko na podstawie zagrożenia zagrożenia, ale również poziomu ryzyka dla firmy. 
+> Microsoft Defender dla Firm jest przeznaczony do rozwiązywania wykrytych zagrożeń, oferując zalecane akcje. Podczas wyświetlania alertu poszukaj zalecanych akcji do wykonania. Zanotuj również ważność alertu, która jest określana nie tylko na podstawie ważności zagrożenia, ale także poziomu ryzyka dla firmy. 
 
 ## <a name="alert-severity"></a>Ważność alertu
 
-Gdy Program antywirusowy Microsoft Defender alertu o ważności zależy od bezwzględnej ważności wykrytego zagrożenia (złośliwego oprogramowania) i potencjalnego ryzyka dla pojedynczego punktu końcowego (jeśli został on zainfekowany).
-Usługa Microsoft Defender dla firm przypisuje ważność alertu na podstawie ważności wykrytego zachowania, rzeczywistego ryzyka dla punktu końcowego (urządzenia) oraz, co ważniejsze, potencjalnego ryzyka dla firmy. W poniższej tabeli podano kilka przykładów: <br/><br/>
+Gdy Program antywirusowy Microsoft Defender przypisuje ważność alertu na podstawie bezwzględnej ważności wykrytego zagrożenia (złośliwego oprogramowania) i potencjalnego ryzyka dla pojedynczego punktu końcowego (jeśli zostanie zainfekowany).
+Microsoft Defender dla Firm przypisuje ważność alertu na podstawie ważności wykrytego zachowania, rzeczywistego ryzyka dla punktu końcowego (urządzenia) i co ważniejsze, potencjalnego ryzyka dla firmy. W poniższej tabeli wymieniono kilka przykładów:
 
-| Scenariusz | Ważność alertu | Przyczyna |
+| Scenariusz | Ważność alertu | Powodu |
 |:---|:---|:---|
-| Program antywirusowy Microsoft Defender wykrywa i zatrzymuje zagrożenia, zanim doszkoni. | Informacyjne | Zagrożenie zostało zatrzymane, zanim zostanie wykonane jakiekolwiek uszkodzenie. |
-| Program antywirusowy Microsoft Defender wykrywa złośliwe oprogramowanie, które zostało wykonane w twojej firmie. Złośliwe oprogramowanie zostało zatrzymane i usunięte. | Niska | Mimo że niektóre uszkodzenia mogły zostać wykonane na poszczególnych punktach końcowych, złośliwe oprogramowanie nie stwarza teraz zagrożenia dla firmy. |
-| Złośliwe oprogramowanie, które jest wykonywane, jest wykrywane przez usługę Microsoft Defender for Business. Złośliwe oprogramowanie jest blokowane niemal natychmiast. | Średni lub Wysoki | Złośliwe oprogramowanie stwarza zagrożenie dla poszczególnych punktów końcowych i dla twojej firmy. |
-| Podejrzane zachowanie jest wykrywane, ale nie są jeszcze podejmowane żadne działania naprawcze. | Niska, Średnia lub Wysoka | Ważność zależy od stopnia, w jakim zachowanie stwarza zagrożenie dla firmy. |
+| Program antywirusowy Microsoft Defender wykrywa i zatrzymuje zagrożenie, zanim wyrządzi jakiekolwiek szkody. | Informacyjne | Zagrożenie zostało zatrzymane, zanim zostały wyrządzone jakiekolwiek szkody. |
+| Program antywirusowy Microsoft Defender wykrywa złośliwe oprogramowanie, które było wykonywane w firmie. Złośliwe oprogramowanie zostało zatrzymane i skorygowane. | Niskie | Chociaż niektóre szkody mogły zostać wyrządzone poszczególnym punktom końcowym, złośliwe oprogramowanie nie stanowi teraz zagrożenia dla Twojej firmy. |
+| Złośliwe oprogramowanie, które jest wykonywane, jest wykrywane przez Microsoft Defender dla Firm. Złośliwe oprogramowanie jest blokowane niemal natychmiast. | Średni lub wysoki | Złośliwe oprogramowanie stanowi zagrożenie dla poszczególnych punktów końcowych i twojej firmy. |
+| Wykryto podejrzane zachowanie, ale nie są jeszcze podejmowane żadne akcje korygujące. | Niski, Średni lub Wysoki | Ważność zależy od stopnia, w jakim zachowanie stanowi zagrożenie dla twojej firmy. |
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
-
-- [Przeglądanie działań naprawczych w Centrum akcji](mdb-review-remediation-actions.md)
-
-- [Wyświetlanie i edytowanie zasad urządzenia w u programie Microsoft Defender dla firm](mdb-view-edit-policies.md)
+- [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
+- [Przeglądanie akcji korygowania w centrum akcji](mdb-review-remediation-actions.md)
+- [Wyświetlanie lub edytowanie zasad urządzeń w Microsoft Defender dla Firm](mdb-view-edit-policies.md)

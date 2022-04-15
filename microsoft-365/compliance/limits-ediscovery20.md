@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o limitach przypadków, limitach indeksowania i limitach wyszukiwania dla rozwiązania Advanced eDiscovery w Microsoft 365.
-ms.openlocfilehash: 0f21a78a90eee6069618e2ab35bb011aa870b62c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 93f0a988cb5a5321c8a725a1d678079174eba923
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758580"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861317"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limity w Advanced eDiscovery
 
@@ -49,9 +49,9 @@ W poniższej tabeli wymieniono limity dotyczące blokad skojarzonych z przypadki
 
 |Opis limitu|Limit|
 |---|---|
-|Maksymalna liczba zasad blokady dla organizacji. Ten limit obejmuje łączną sumę zasad blokady w podstawowych przypadkach zbierania elektronicznych materiałów dowodowych i Advanced eDiscovery.|10.000<sup>3</sup>|
-|Maksymalna liczba skrzynek pocztowych w jednym przypadku blokady. Ten limit obejmuje łączną sumę skrzynek pocztowych użytkowników oraz skrzynki pocztowe skojarzone z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.|1,000|
-|Maksymalna liczba witryn w jednym przypadku blokady. Ten limit obejmuje łączną sumę witryn OneDrive dla Firm, witryn SharePoint oraz witryn skojarzonych z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.|100|
+|Maksymalna liczba zasad blokady dla organizacji. Ten limit obejmuje łączną sumę zasad blokady w podstawowych przypadkach zbierania elektronicznych materiałów dowodowych i Advanced eDiscovery.|10,000|
+|Maksymalna liczba skrzynek pocztowych w jednym przypadku blokady. Ten limit obejmuje łączną sumę skrzynek pocztowych użytkowników oraz skrzynki pocztowe skojarzone z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.|10003<sup></sup>|
+|Maksymalna liczba witryn w jednym przypadku blokady. Ten limit obejmuje łączną sumę witryn OneDrive dla Firm, witryn SharePoint oraz witryn skojarzonych z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.|1003<sup></sup>|
 
 ## <a name="indexing-limits"></a>Limity indeksowania
 

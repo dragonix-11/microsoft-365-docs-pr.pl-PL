@@ -1,13 +1,13 @@
 ---
-title: Przeglądanie działań naprawczych w programie Microsoft Defender dla firm
-description: Wyświetlanie działań naprawczych, które zostały wykonane automatycznie lub które oczekują na zatwierdzenie w Centrum akcji
+title: Przeglądanie akcji korygowania w Microsoft Defender dla Firm
+description: Wyświetlanie korygowania, które zostały wykonane automatycznie lub oczekujące na zatwierdzenie w Centrum akcji
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,59 +17,55 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b5bb61d4a0b8f3cb0732633463fbf2c96ec258e9
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 15a64491f6e97137d1e919aa126d4bf134c47999
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525518"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862219"
 ---
-# <a name="review-remediation-actions-in-the-action-center"></a>Przeglądanie działań naprawczych w Centrum akcji
+# <a name="review-remediation-actions-in-the-action-center"></a>Przeglądanie akcji korygowania w centrum akcji
 
-> [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
-> 
-> Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-W przypadku wykrycia zagrożeń są podejmowane działania naprawcze. W zależności od określonego zagrożenia i konfiguracji ustawień zabezpieczeń działania naprawcze mogą być podejmowane automatycznie lub tylko po zatwierdzeniu. Przykłady działań naprawczych obejmują wysyłanie pliku do kwarantanny, zatrzymywanie procesu i usuwanie zaplanowanego zadania. Wszystkie działania naprawcze są śledzone w Centrum akcji.
+W miarę wykrywania zagrożeń w grę wchodzą akcje korygowania. W zależności od konkretnego zagrożenia i sposobu konfigurowania ustawień zabezpieczeń akcje korygowania mogą być wykonywane automatycznie lub tylko po zatwierdzeniu. Przykłady akcji korygowania obejmują wysyłanie pliku do kwarantanny, zatrzymywanie procesu przed uruchomieniem i usuwanie zaplanowanego zadania. Wszystkie akcje korygowania są śledzone w centrum akcji.
 
-:::image type="content" source="../../media/defender-business/mdb-actioncenter.png" alt-text="Zrzut ekranu przedstawiający Centrum akcji":::
+:::image type="content" source="../../media/defender-business/mdb-actioncenter.png" alt-text="Zrzut ekranu centrum akcji":::
 
 **W tym artykule opisano**:
 
-- [Jak korzystać z Centrum akcji](#how-to-use-the-action-center)
-
+- [Jak używać centrum akcji](#how-to-use-the-action-center)
 - [Działania naprawcze](#remediation-actions)
 
 >
 > **Masz minutę?**
-> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
-## <a name="how-to-use-the-action-center"></a>Jak korzystać z Centrum akcji
+## <a name="how-to-use-the-action-center"></a>Jak używać centrum akcji
 
-1. Przejdź do Microsoft 365 Defender portalu internetowego ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
 2. W okienku nawigacji wybierz pozycję **Centrum akcji**.
 
-3. Wybierz **kartę Oczekujące** , aby wyświetlić i zatwierdzić (lub odrzucić) wszystkie oczekujące akcje. Takie działania mogą być związane z ochroną antywirusową/antymalware, automatycznymi badaniami, działaniami ręcznej odpowiedzi lub sesjami odpowiedzi na żywo.
+3. Wybierz kartę **Oczekujące** , aby wyświetlić i zatwierdzić (lub odrzucić) wszystkie oczekujące akcje. Takie akcje mogą wynikać z ochrony antywirusowej/ochrony przed złośliwym kodem, zautomatyzowanych badań, działań ręcznego reagowania lub sesji odpowiedzi na żywo.
 
-4. Wybierz **kartę** Historia, aby wyświetlić listę ukończonych akcji. 
+4. Wybierz kartę **Historia** , aby wyświetlić listę ukończonych akcji. 
 
 ## <a name="remediation-actions"></a>Działania naprawcze
 
-Usługa Microsoft Defender dla firm oferuje kilka działań naprawczych. Te działania obejmują akcje ręcznej odpowiedzi, akcje po zautomatyzowanym śledztwu i akcje odpowiedzi na żywo.
+Microsoft Defender dla Firm obejmuje kilka akcji korygowania. Te akcje obejmują ręczne akcje reagowania, akcje po zautomatyzowanym badaniu i akcje odpowiedzi na żywo.
 
-W poniższej tabeli wymieniono dostępne działania naprawcze:
+W poniższej tabeli wymieniono dostępne akcje korygowania:
 
-| Źródło  | Akcje  |
+| Źródło  | Działania  |
 |---------|---------|
-| [Zautomatyzowane badania](../defender-endpoint/automated-investigations.md)      | - Poddaj plikowi kwarantannę <br/>- Usunięcie klucza rejestru <br/>- Zaśmieć proces <br/>— Zatrzymywanie usługi <br/>- Wyłączanie sterownika <br/>— Usuwanie zaplanowanego zadania        |
-| [Ręczne akcje odpowiedzi](../defender-endpoint/respond-machine-alerts.md)   | - Uruchom skanowanie antywirusowe <br/>- Wyizoluj urządzenie <br/>— Zatrzymaj i poddaj kwarantannie <br/>— Dodaj wskaźnik, aby zablokować lub zezwolić na plik       |
-| [Odpowiedź na żywo](../defender-endpoint/live-response.md)   | - Zbieranie danych forensycznych <br/>- Analizowanie pliku <br/>- Uruchamianie skryptu <br/>— Wysłać podejrzaną jednostkę do firmy Microsoft w celu analizy <br/>— Rozwiązywanie problemów z plikiem <br/>— proaktywne poszukiwania zagrożeń         |
+| [Zautomatyzowane badania](../defender-endpoint/automated-investigations.md)      | — Kwarantanna pliku <br/>— Usuwanie klucza rejestru <br/>- Zabij proces <br/>— Zatrzymywanie usługi <br/>— Wyłączanie sterownika <br/>— Usuwanie zaplanowanego zadania        |
+| [Ręczne akcje odpowiedzi](../defender-endpoint/respond-machine-alerts.md)   | — Uruchamianie skanowania antywirusowego <br/>- Izolowanie urządzenia <br/>— Zatrzymywanie i kwarantanna <br/>- Dodaj wskaźnik, aby zablokować lub zezwolić na plik       |
+| [Odpowiedź na żywo](../defender-endpoint/live-response.md)   | - Zbieranie danych kryminalistycznych <br/>- Analizowanie pliku <br/>— Uruchamianie skryptu <br/>— Wysyłanie podejrzanej jednostki do firmy Microsoft w celu analizy <br/>— Korygowanie pliku <br/>- Proaktywne wyszukiwanie zagrożeń         |
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Reagowanie na zagrożenia i ograniczanie ich w programie Microsoft Defender dla firm](mdb-respond-mitigate-threats.md)
-
-- [Zarządzanie urządzeniami w programie Microsoft Defender dla firm](mdb-manage-devices.md)
+- [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
+- [Zarządzanie urządzeniami w Microsoft Defender dla Firm](mdb-manage-devices.md)

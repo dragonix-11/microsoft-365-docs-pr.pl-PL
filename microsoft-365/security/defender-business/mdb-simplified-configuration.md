@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,19 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 02f970f7ad9981336ba54aaafcf936e952f1b726
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 68ebf170fa351d63e943a2c4c7a920d3e243ddbe
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663121"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862637"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>Uproszczony proces konfiguracji w Microsoft Defender dla Firm
 
-> [!IMPORTANT]
-> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
-> 
-> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender dla Firm oferuje uproszczony proces konfiguracji, zaprojektowany specjalnie dla małych i średnich firm. To środowisko pozwala zgadywać podczas dołączania urządzeń i zarządzania nimi przy użyciu środowiska przypominającego kreatora i domyślnych zasad, które zostały zaprojektowane w celu ochrony urządzeń firmy od pierwszego dnia. **Zalecamy korzystanie z uproszczonego procesu konfiguracji. Jednak nie ograniczasz się do tej opcji**.
 
@@ -49,13 +47,12 @@ Jeśli chodzi o dołączanie urządzeń i konfigurowanie ustawień zabezpieczeń
 
 >
 > **Masz minutę?**
-> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 ## <a name="review-your-setup-and-configuration-options"></a>Przejrzyj opcje konfiguracji i konfiguracji
 
 W poniższej tabeli opisano każde środowisko:
-<br/><br/>
 
 | Środowisko portalu  | Opis  |
 |---------|---------|
@@ -73,5 +70,4 @@ Usługa Defender dla firm została zaprojektowana tak, aby zapewnić silną ochr
 ## <a name="next-steps"></a>Następne kroki
 
 - [Konfigurowanie i konfigurowanie Microsoft Defender dla Firm](mdb-setup-configuration.md)
-
 - [Wprowadzenie przy użyciu Microsoft Defender dla Firm](mdb-get-started.md)

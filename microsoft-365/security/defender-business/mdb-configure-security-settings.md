@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,19 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 3d6ef3a7bc3ae9b7556041cedc88df354421f885
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: ff24d246172337923b145a8dbd64db58a671aa9e
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746497"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861801"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Wyświetlanie i edytowanie zasad zabezpieczeń i ustawień w Microsoft Defender dla Firm
 
-> [!IMPORTANT]
-> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
-> 
-> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 ## <a name="overview"></a>Omówienie
 
@@ -38,6 +36,7 @@ Po dołączeniu urządzeń firmy do Microsoft Defender dla Firm następnym kroki
 - **[Zasady ochrony nowej generacji](#view-or-edit-your-next-generation-protection-policies)**, które określają ochronę antywirusową i ochronę przed złośliwym kodem dla urządzeń firmy
 - **[Ochrona zapory i reguły](#view-or-edit-your-firewall-policies-and-custom-rules)**, które określają, jaki ruch sieciowy może przepływać do lub z urządzeń firmy
 - **[Filtrowanie zawartości internetowej](#set-up-web-content-filtering)**, które uniemożliwia użytkownikom odwiedzanie niektórych witryn internetowych (adresów URL) na podstawie kategorii, takich jak treści dla dorosłych lub odpowiedzialność prawna.
+- **[Zaawansowane funkcje](#review-settings-for-advanced-features)**, takie jak zautomatyzowane badanie i reagowanie oraz wykrywanie i reagowanie w punktach końcowych (EDR) w trybie bloku.
 
 W usłudze Defender dla firm zasady zabezpieczeń są stosowane do urządzeń za pośrednictwem [grup urządzeń](mdb-create-edit-device-groups.md#what-is-a-device-group). 
 
@@ -55,13 +54,15 @@ Skorzystaj z tego artykułu jako przewodnika po zarządzaniu zasadami i ustawien
 
 4. [Skonfiguruj filtrowanie zawartości internetowej](#set-up-web-content-filtering).
 
-5. [Wyświetl i edytuj inne ustawienia w portalu Microsoft 365 Defender](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
+5. [Przejrzyj ustawienia funkcji zaawansowanych](#review-settings-for-advanced-features).
 
-6. [Przejdź do kolejnych kroków](#next-steps).
+6. [Wyświetl i edytuj inne ustawienia w portalu Microsoft 365 Defender](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
+
+7. [Przejdź do kolejnych kroków](#next-steps).
 
 >
 > **Masz minutę?**
-> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 ## <a name="choose-where-to-manage-security-policies-and-devices"></a>Wybieranie miejsca zarządzania zasadami zabezpieczeń i urządzeniami
@@ -80,7 +81,7 @@ Poniższa tabela może pomóc w wyborze miejsca zarządzania zasadami zabezpiecz
 
 ## <a name="view-or-edit-your-next-generation-protection-policies"></a>Wyświetlanie lub edytowanie zasad ochrony nowej generacji
 
-W zależności od tego, czy używasz portalu Microsoft 365 Defender, czy Microsoft Endpoint Manager do zarządzania zasadami ochrony nowej generacji, użyj jednej z procedur w poniższej tabeli: <br/><br/>
+W zależności od tego, czy używasz portalu Microsoft 365 Defender, czy Microsoft Endpoint Manager do zarządzania zasadami ochrony nowej generacji, użyj jednej z procedur w poniższej tabeli:
 
 | Portal | Procedura |
 |:---|:---|
@@ -89,7 +90,7 @@ W zależności od tego, czy używasz portalu Microsoft 365 Defender, czy Microso
 
 ## <a name="view-or-edit-your-firewall-policies-and-custom-rules"></a>Wyświetlanie lub edytowanie zasad zapory i reguł niestandardowych
 
-W zależności od tego, czy używasz portalu Microsoft 365 Defender, czy Microsoft Endpoint Manager do zarządzania ochroną zapory, użyj jednej z procedur w poniższej tabeli: <br/><br/>
+W zależności od tego, czy używasz portalu Microsoft 365 Defender, czy Microsoft Endpoint Manager do zarządzania ochroną zapory, użyj jednej z procedur w poniższej tabeli:
 
 | Portal | Procedura |
 |:---|:---|
@@ -101,13 +102,9 @@ W zależności od tego, czy używasz portalu Microsoft 365 Defender, czy Microso
 Filtrowanie zawartości internetowej umożliwia zespołowi ds. zabezpieczeń śledzenie i regulowanie dostępu do witryn internetowych na podstawie kategorii zawartości, takich jak:
 
 - Treści dla dorosłych: Witryny związane z kultami, hazardem, nagością, pornografią, materiałami o charakterze jednoznacznie seksualnym lub przemocą
-
 - Wysoka przepustowość: pobieranie witryn, witryn udostępniania obrazów lub hostów równorzędnych
-
 - Odpowiedzialność prawna: Witryny, które obejmują obrazy wykorzystywania dzieci, promują nielegalne działania, sprzyjają plagiatowi lub oszustwom szkolnym lub promują szkodliwe działania
-
 - Wypoczynek: witryny, które zapewniają czaty internetowe, gry online, internetową pocztę e-mail lub sieci społecznościowe
-
 - Bez kategorii: witryny, które nie mają zawartości lub które są nowo zarejestrowane
 
 Nie wszystkie witryny internetowe w tych kategoriach są złośliwe, ale mogą być problematyczne dla Twojej firmy z powodu przepisów dotyczących zgodności, użycia przepustowości lub innych problemów. Ponadto można utworzyć zasady tylko do inspekcji, aby lepiej zrozumieć, czy zespół ds. zabezpieczeń powinien blokować dowolne kategorie witryn internetowych.
@@ -133,6 +130,32 @@ Filtrowanie zawartości internetowej jest dostępne w głównych przeglądarkach
 > [!TIP]
 > Aby dowiedzieć się więcej na temat filtrowania zawartości internetowej, zobacz [Filtrowanie zawartości sieci Web](../defender-endpoint/web-content-filtering.md).
 
+## <a name="review-settings-for-advanced-features"></a>Przeglądanie ustawień funkcji zaawansowanych
+
+Oprócz zasad ochrony nowej generacji, zapory i filtrowania zawartości internetowej usługa Defender dla firm obejmuje zaawansowane funkcje zabezpieczeń. Te funkcje są wstępnie skonfigurowane przy użyciu zalecanych ustawień; Można je jednak przejrzeć i w razie potrzeby edytować ustawienia zgodnie z potrzebami biznesowymi.
+
+Aby uzyskać dostęp do ustawień zaawansowanych funkcji, w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) przejdź do **obszaru Ustawienia** EndpointsGeneralAdvanced features(Ustawienia  >  EndpointsGeneralAdvanced >  >  **features**).
+
+W poniższej tabeli opisano ustawienia funkcji zaawansowanych:
+
+| Ustawienie | Opis |
+|:---|:---|
+| Badanie zautomatyzowane <br/>(domyślnie włączone) | W miarę generowania alertów mogą być wykonywane zautomatyzowane badania. Każde zautomatyzowane badanie określa, czy wykryte zagrożenie wymaga działania, a następnie podejmuje (lub zaleca) akcje korygujące (takie jak wysyłanie pliku do kwarantanny, zatrzymywanie procesu, izolowanie urządzenia lub blokowanie adresu URL). Gdy badanie jest uruchomione, wszelkie inne powiązane alerty, które pojawiają się, są dodawane do badania do czasu jego zakończenia. Jeśli jednostka, których dotyczy problem, jest widoczna gdzie indziej, zautomatyzowane badanie rozszerza swój zakres, aby uwzględnić tę jednostkę, a proces badania powtarza się.<br/><br/>Możesz wyświetlić badania na stronie **Zdarzenia** . Wybierz zdarzenie, a następnie wybierz kartę **Badania** .<br/><br/>[Dowiedz się więcej o zautomatyzowanych badaniach](../defender-endpoint/automated-investigations.md).   |
+| Odpowiedź na żywo <br/>(domyślnie włączone) | Usługa Defender dla firm obejmuje następujące typy akcji ręcznego reagowania: <br/>— Uruchamianie skanowania antywirusowego<br/>- Izolowanie urządzenia<br/>— Zatrzymywanie i kwarantanna pliku<br/>- Dodaj wskaźnik, aby zablokować lub zezwolić na plik <br/><br/>[Dowiedz się więcej o akcjach reagowania](../defender-endpoint/respond-machine-alerts.md). |
+| Odpowiedź na żywo dla serwerów | (To ustawienie nie jest obecnie dostępne w usłudze Defender dla Firm)   |
+| Wykonywanie skryptu bez znaku odpowiedzi na żywo | (To ustawienie nie jest obecnie dostępne w usłudze Defender dla Firm)  | 
+| Włączanie EDR w trybie bloku<br/>(domyślnie włączone) | Zapewnia dodatkową ochronę przed złośliwymi artefaktami, gdy Program antywirusowy Microsoft Defender nie jest podstawowym produktem antywirusowym i działa w trybie pasywnym na urządzeniu. EDR w trybie bloku działa w tle, aby korygować złośliwe artefakty, które zostały wykryte przez EDR możliwości. Takie artefakty mogły zostać pominięte przez podstawowy produkt antywirusowy spoza firmy Microsoft. W przypadku urządzeń z systemem Program antywirusowy Microsoft Defender jako podstawowym programem antywirusowym EDR w trybie bloku zapewnia dodatkową warstwę ochrony, umożliwiając Program antywirusowy Microsoft Defender wykonywanie automatycznych działań w przypadku wykrywania EDR behawioralnych po naruszeniu zabezpieczeń.<br/><br/>[Dowiedz się więcej o EDR w trybie bloku](../defender-endpoint/edr-in-block-mode.md). |
+| Zezwalanie na plik lub blokowanie go <br/>(domyślnie włączone) | Umożliwia zezwalanie na plik lub blokowanie go przy użyciu [wskaźników](../defender-endpoint/indicator-file.md). Ta funkcja wymaga włączenia Program antywirusowy Microsoft Defender w trybie aktywnym i [ochrony w chmurze](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md).<br/><br/>Zablokowanie pliku uniemożliwi jego odczyt, zapisanie lub wykonanie na urządzeniach w organizacji. <br/><br/>[Dowiedz się więcej o wskaźnikach dla plików](../defender-endpoint/indicator-file.md).  |
+| Niestandardowe wskaźniki sieci<br/>(domyślnie włączone) | Umożliwia zezwalanie na adres IP, adres URL lub domenę lub blokowanie go przy użyciu [wskaźników sieciowych](../defender-endpoint/indicator-ip-domain.md). Ta funkcja wymaga włączenia Program antywirusowy Microsoft Defender w trybie aktywnym i [ochrony sieci](../defender-endpoint/enable-network-protection.md).<br/><br/>Możesz zezwalać na adresy IP, adresy URL lub domeny albo blokować je na podstawie własnej analizy zagrożeń. Możesz również ostrzec użytkowników za pomocą monitu, jeśli otworzą ryzykowną aplikację. Monit nie uniemożliwi im korzystania z aplikacji, ale możesz podać ostrzeżenie dla użytkowników.<br/><br/>[Dowiedz się więcej o ochronie sieci](../defender-endpoint/network-protection.md). |
+| Ochrona przed naruszeniami<br/>(Zalecamy włączenie tego ustawienia) | Ochrona przed naruszeniami uniemożliwia złośliwym aplikacjom podejmowanie akcji, takich jak:<br/>- Wyłączanie ochrony przed wirusami i zagrożeniami<br/>— Wyłączanie ochrony w czasie rzeczywistym<br/>- Wyłączanie monitorowania zachowania<br/>— Wyłączanie ochrony w chmurze<br/>— Usuwanie aktualizacji analizy zabezpieczeń<br/>— Wyłączanie automatycznych akcji w wykrytych zagrożeniach<br/><br/>Ochrona przed naruszeniami zasadniczo blokuje Program antywirusowy Microsoft Defender do jej bezpiecznych, domyślnych wartości i uniemożliwia zmianę ustawień zabezpieczeń przez aplikacje i nieautoryzowane metody. <br/><br/>[Lern więcej na temat ochrony przed naruszeniami](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md).  |
+| Pokaż szczegóły użytkownika<br/>(domyślnie włączone) | Umożliwia osobom w organizacji wyświetlanie szczegółów, takich jak obraz, nazwa, tytuł i dział pracowników. Te szczegóły są przechowywane w Azure Active Directory (Azure AD).<br/><br/>[Dowiedz się więcej o profilach użytkowników w usłudze Azure AD](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).  |
+| integracja Skype dla firm<br/>(domyślnie włączone) | Skype dla firm został wycofany w lipcu 2021 roku. Jeśli jeszcze nie przeniesiono cię do Microsoft Teams, zobacz [Konfigurowanie Microsoft Teams w małej firmie](/microsoftteams/deploy-small-business). <br/><br/>Integracja z Microsoft Teams (lub byłym Skype dla firm) umożliwia komunikację jednym kliknięciem między osobami w Firmie.   |
+| Filtrowanie zawartości sieci Web<br/>(domyślnie włączone) | Blokuj dostęp do witryn internetowych zawierających niepożądaną zawartość i śledź aktywność internetową we wszystkich domenach. Zobacz [Konfigurowanie filtrowania zawartości internetowej](#set-up-web-content-filtering). |
+| połączenie Microsoft Intune<br/>(Zalecamy włączenie tego ustawienia, jeśli masz Intune) | Jeśli subskrypcja twojej organizacji obejmuje Microsoft Intune (część Microsoft Endpoint Manager i uwzględniona w [Microsoft 365 Business Premium](../../business/index.yml)), to ustawienie umożliwia usłudze Defender for Business udostępnianie informacji o urządzeniach Intune.  |
+| Wykrywanie urządzeń<br/>(domyślnie włączone) | Umożliwia zespołowi ds. zabezpieczeń znajdowanie niezarządzanych urządzeń połączonych z siecią firmy. Nieznane i niezarządzane urządzenia wiążą się ze znacznymi zagrożeniami dla sieci — niezależnie od tego, czy jest to drukarka nienadzorowana, urządzenia sieciowe ze słabymi konfiguracjami zabezpieczeń, czy serwer bez mechanizmów kontroli zabezpieczeń. <br/><br/>Odnajdywanie urządzeń używa urządzeń dołączonych do odnajdywania urządzeń niezarządzanych, dzięki czemu zespół ds. zabezpieczeń może dołączyć niezarządzane urządzenia i zmniejszyć lukę w zabezpieczeniach. <br/><br/>[Dowiedz się więcej o odnajdywaniem urządzeń](../defender-endpoint/device-discovery.md).    |
+| Funkcje wersji zapoznawczej | Firma Microsoft stale aktualizuje usługi, takie jak Defender dla Firm, w celu uwzględnienia nowych ulepszeń i możliwości funkcji. Jeśli zdecydujesz się na otrzymywanie funkcji w wersji zapoznawczej, będziesz jednym z pierwszych, którzy spróbują wypróbować nadchodzące funkcje w wersji zapoznawczej. <br/><br/>[Dowiedz się więcej o funkcjach w wersji zapoznawczej](../defender-endpoint/preview.md).  |
+
+
 ## <a name="view-and-edit-other-settings-in-the-microsoft-365-defender-portal"></a>Wyświetlanie i edytowanie innych ustawień w portalu Microsoft 365 Defender
 
 Oprócz zasad zabezpieczeń stosowanych do urządzeń istnieją inne ustawienia, które można wyświetlać i edytować w usłudze Defender dla firm. Na przykład należy określić strefę czasową do użycia i można dołączyć (lub odłączyć) urządzenia. 
@@ -142,9 +165,7 @@ Oprócz zasad zabezpieczeń stosowanych do urządzeń istnieją inne ustawienia,
 
 ### <a name="settings-to-review-for-defender-for-business"></a>Ustawienia do przeglądu dla usługi Defender dla Firm
 
-W poniższej tabeli opisano ustawienia do wyświetlania (i w razie potrzeby edytowania) w usłudze Defender dla firm.
-
-<br/><br/>
+W poniższej tabeli opisano ustawienia do wyświetlania (i w razie potrzeby edytowania) w usłudze Defender dla firm:
 
 | Kategoria | Ustawienie | Opis |
 |:---|:---|:---|
@@ -153,7 +174,7 @@ W poniższej tabeli opisano ustawienia do wyświetlania (i w razie potrzeby edyt
 | **Microsoft 365 Defender**  | **Funkcje wersji zapoznawczej**  | Włącz funkcje w wersji zapoznawczej, aby wypróbować nadchodzące funkcje i nowe możliwości. Możesz być jednym z pierwszych, którzy chcą zapoznać się z nowymi funkcjami i przekazać opinię. |
 | **Punkty końcowe**  | **Powiadomienia e-mail** | Skonfiguruj lub edytuj reguły powiadomień e-mail. Po wykryciu luk w zabezpieczeniach lub utworzeniu alertu adresaci określoni w regułach powiadomień e-mail otrzymają wiadomość e-mail. [Dowiedz się więcej o powiadomieniach e-mail](mdb-email-notifications.md). |
 | **Punkty końcowe**   | **Zarządzanie urządzeniami** >  **Dołączania** | Dołączanie urządzeń do usługi Defender dla Firm przy użyciu skryptu do pobrania. Aby dowiedzieć się więcej, zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).   |  
-| **Punkty końcowe**  |  **Zarządzanie urządzeniami** >  **Odłączanie** | Odłączanie (usuwanie) urządzeń z usługi Defender dla Firm. Po odłączeniu urządzenia nie wysyła ono już danych do usługi Defender dla Firm, ale dane odebrane przed odłączeniem są zachowywane. Aby dowiedzieć się więcej, zobacz [Odłączanie urządzenia](mdb-onboard-devices.md#offboarding-a-device).  |
+| **Punkty końcowe**  |  **Zarządzanie urządzeniami** >  **Odłączanie** | Odłączanie (usuwanie) urządzeń z usługi Defender dla Firm. Po odłączeniu urządzenia nie wysyła ono już danych do usługi Defender dla Firm, ale dane odebrane przed odłączeniem są zachowywane. Aby dowiedzieć się więcej, zobacz [Odłączanie urządzenia](mdb-offboard-devices.md).  |
 
 ### <a name="access-your-settings-in-the-microsoft-365-defender-portal"></a>Uzyskiwanie dostępu do ustawień w portalu Microsoft 365 Defender
 
@@ -162,7 +183,6 @@ W poniższej tabeli opisano ustawienia do wyświetlania (i w razie potrzeby edyt
 2. Wybierz **pozycję Ustawienia**, a następnie wybierz kategorię (na przykład **Security Center**, **Microsoft 365 Defender** lub **Endpoints**).
 
 3. Na liście ustawień wybierz element do wyświetlenia lub edycji.
-
 
 ## <a name="next-steps"></a>Następne kroki
 

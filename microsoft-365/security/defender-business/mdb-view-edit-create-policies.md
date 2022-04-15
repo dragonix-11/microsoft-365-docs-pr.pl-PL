@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,35 +17,30 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6f8ad1bd1f77bd3e53a1686674984155a7dc8525
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ba7f6846809009b8bb9df258b8ac18536a910b6d
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665101"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862131"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm
 
-> [!IMPORTANT]
-> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
-> 
-> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 W Microsoft Defender dla Firm ustawienia zabezpieczeń są konfigurowane za pomocą zasad stosowanych do urządzeń. Aby uprościć konfigurację i środowisko konfiguracji, usługa Defender dla firm zawiera wstępnie skonfigurowane zasady ułatwiające ochronę urządzeń firmy natychmiast po ich dołączeniu. Możesz użyć zasad domyślnych, edytować zasady lub tworzyć własne zasady.
 
 **W tym artykule opisano sposób wykonywania następujących czynności**:
 
 - [Zapoznaj się z omówieniem domyślnych zasad](#default-policies-in-defender-for-business)
-
 - [Wyświetlanie istniejących zasad](#view-your-existing-policies)
-
 - [Edytowanie istniejących zasad](#edit-an-existing-policy)
-
 - [Tworzenie nowych zasad](#create-a-new-policy)
 
 >
 > **Masz minutę?**
-> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 ## <a name="default-policies-in-defender-for-business"></a>Zasady domyślne w usłudze Defender dla Firm
@@ -53,7 +48,6 @@ W Microsoft Defender dla Firm ustawienia zabezpieczeń są konfigurowane za pomo
 W usłudze Defender dla firm istnieją dwa główne typy zasad ochrony urządzeń firmy:
 
 - **Zasady ochrony nowej generacji**, które określają sposób konfigurowania Program antywirusowy Microsoft Defender i innych funkcji ochrony przed zagrożeniami
-
 - **Zasady zapory**, które określają, jaki ruch sieciowy może przepływać do i z urządzeń firmy
 
 
@@ -138,11 +132,7 @@ W usłudze Defender dla firm istnieją dwa główne typy zasad ochrony urządze�
 Wybierz co najmniej jedno z następujących zadań:
 
 - [Zarządzanie urządzeniami](mdb-manage-devices.md)
-
 - [Tworzenie nowych zasad w Microsoft Defender dla Firm](mdb-create-new-policy.md)
-
 - [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md)
-
 - [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
-
 - [Przeglądanie akcji korygowania w centrum akcji](mdb-review-remediation-actions.md)

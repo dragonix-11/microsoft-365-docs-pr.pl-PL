@@ -1,5 +1,5 @@
 ---
-title: Uzyskiwanie pomocy technicznej dotyczącej programu Microsoft Defender dla firm
+title: Uzyskaj pomoc i pomoc techniczną dotyczącą Microsoft Defender dla Firm
 f1.keywords: NOCSH
 ms.author: deniseb
 author: denisebmsft
@@ -14,35 +14,32 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
-description: Dowiedz się, jak uzyskać pomoc lub skontaktować się z pomocą techniczną w programie Microsoft Defender dla firm
+description: Dowiedz się, jak uzyskać pomoc lub skontaktować się z pomocą techniczną w Microsoft Defender dla Firm
 ms.date: 02/24/2022
-ms.openlocfilehash: 28168b8d25146bfca6f029c39bc648b5ad73bb3d
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 5ebdca65d5a23474480ecf20c7189568cf4c3949
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450258"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861427"
 ---
-# <a name="get-help-and-support-for-microsoft-defender-for-business"></a>Uzyskiwanie pomocy technicznej dotyczącej programu Microsoft Defender dla firm
+# <a name="get-help-and-support-for-microsoft-defender-for-business"></a>Uzyskaj pomoc i pomoc techniczną dotyczącą Microsoft Defender dla Firm
 
-> [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
-> 
-> Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 ## <a name="get-help-and-support"></a>Uzyskiwanie pomocy i obsługi technicznej
 
-Jeśli potrzebujesz pomocy dotyczącej programu Microsoft Defender dla firm, wybierz ikonę Pomoc (?) w prawym górnym rogu ekranu. Wpisz pytanie lub problem. Zostanie wymienionych kilka opcji, takich jak szybkie odpowiedzi lub artykuły pomocy.
+Jeśli potrzebujesz pomocy dotyczącej Microsoft Defender dla Firm, wybierz ikonę Pomoc (?) w prawym górnym rogu ekranu. Wpisz swoje pytanie lub problem. Zostanie wyświetlonych kilka opcji, takich jak szybkie odpowiedzi lub artykuły pomocy.
 
-Jeśli nie widzisz odpowiedzi na swoje pytanie, możesz utworzyć zgłoszenie do pomocy technicznej.
+Jeśli nie widzisz odpowiedzi na swoje pytanie, możesz otworzyć bilet pomocy technicznej.
 
 >
 > **Masz minutę?**
-> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Microsoft Defender dla firm — często zadawane pytania i odpowiedzi](mdb-faq.yml)
-
-- [Rozwiązywanie problemów z usługą Microsoft Defender dla firm](mdb-troubleshooting.yml) 
+- [Microsoft Defender dla Firm — często zadawane pytania i odpowiedzi](mdb-faq.yml)
+- [rozwiązywanie problemów z Microsoft Defender dla Firm](mdb-troubleshooting.yml) 

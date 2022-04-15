@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 98ead4a77c275e0e4aeeab90e87e0b468a9b7bb8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 42d7acb4512928a32ac99c486a231d7891102208
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665981"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861339"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Samouczki i symulacje w Microsoft Defender dla Firm
 
@@ -34,18 +34,16 @@ Jeśli właśnie ukończono konfigurowanie Microsoft Defender dla Firm, możesz 
 
 >
 > **Masz minutę?**
-> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 ## <a name="try-these-preview-scenarios"></a>Wypróbuj te scenariusze w wersji zapoznawczej
 
-W poniższej tabeli przedstawiono kilka scenariuszy, w których można wypróbować usługę Defender dla Firm. 
-<br/><br/>
-
+Poniższa tabela zawiera podsumowanie kilku scenariuszy, które należy wypróbować w usłudze Defender dla Firm:
 
 | Scenariusz  | Opis  |
 |---------|---------|
-| Dołączanie urządzeń przy użyciu skryptu lokalnego <br/>(*nie w przypadku wdrożenia produkcyjnego*)     | W usłudze Defender dla firm możesz dołączyć maksymalnie dziesięć urządzeń Windows 10 i 11 przy użyciu skryptu pobranego i uruchomionego na każdym urządzeniu. Nadaje się do oceny sposobu działania usługi Defender dla firm w twoim środowisku, a skrypt tworzy relację zaufania z Azure Active Directory (Azure AD) i rejestruje urządzenie za pomocą Microsoft Intune. Aby dowiedzieć się więcej, zobacz [Skrypt lokalny w usłudze Defender dla Firm](mdb-onboard-devices.md#local-script-in-defender-for-business).         |
+| Dołączanie urządzeń przy użyciu skryptu lokalnego <br/>(*nie w przypadku wdrożenia produkcyjnego*)     | W usłudze Defender dla firm możesz dołączyć maksymalnie dziesięć urządzeń Windows 10 i 11 przy użyciu skryptu pobranego i uruchomionego na każdym urządzeniu. Nadaje się do oceny sposobu działania usługi Defender dla firm w twoim środowisku, a skrypt tworzy relację zaufania z Azure Active Directory (Azure AD) i rejestruje urządzenie za pomocą Microsoft Intune. Aby dowiedzieć się więcej, zobacz [Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md).         |
 | Dołączanie urządzeń przy użyciu Microsoft Intune     | Jeśli używasz już Microsoft Intune przed uzyskaniem usługi Defender for Endpoint, możesz nadal używać Microsoft Intune do dołączania urządzeń. Spróbuj dołączyć urządzenia z systemami macOS, iOS i Android przy użyciu Microsoft Intune. Aby dowiedzieć się więcej, zobacz [Rejestrowanie urządzeń w Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Edytowanie zasad zabezpieczeń     | Jeśli zarządzasz zasadami zabezpieczeń w usłudze Defender dla Firm, użyj strony **Konfiguracja urządzenia** , aby wyświetlić i edytować zasady. Aby dowiedzieć się więcej, zobacz [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](mdb-view-edit-policies.md).        |
 | Wykonywanie symulowanego ataku   | W usłudze Defender dla Firm dostępnych jest kilka samouczków i symulacji. Te samouczki i symulacje zostały zaprojektowane tak, aby z pierwszej ręki pokazać, jak funkcje ochrony przed zagrożeniami w usłudze Defender for Business mogą działać dla Twojej firmy. Aby wypróbować co najmniej jeden z samouczków, zobacz [Zalecane samouczki dotyczące Microsoft Defender dla Firm](#recommended-tutorials-for-defender-for-business).         |
@@ -55,8 +53,6 @@ W poniższej tabeli przedstawiono kilka scenariuszy, w których można wypróbow
 ## <a name="recommended-tutorials-for-defender-for-business"></a>Zalecane samouczki dotyczące usługi Defender dla firm
 
 W poniższej tabeli opisano zalecane samouczki dla klientów usługi Defender dla Firm:
-<br/><br/>
-
 
 | Samouczek  | Opis  |
 |---------|---------|
@@ -84,9 +80,6 @@ Każdy samouczek zawiera przewodnik wyjaśniający scenariusz, jego działanie i
 ## <a name="next-steps"></a>Następne kroki
 
 - [Zarządzanie urządzeniami w Microsoft Defender dla Firm](mdb-manage-devices.md)
-
 - [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md)
-
 - [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
-
 - [Przeglądanie akcji korygowania w centrum akcji](mdb-review-remediation-actions.md)

@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie przy użyciu portalu Microsoft 365 Defender
+title: Odwiedź portal Microsoft 365 Defender
 description: Zobacz, jak rozpocząć korzystanie z portalu Microsoft 365 Defender. Dowiedz się, jak nawigować po portalu i wyświetlać bieżący stan zabezpieczeń i zalecenia
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,42 +18,29 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: c5a940676eab6ae3a07c526ecb1bd910ed8751fe
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4af2986a3c1c726e9bf963752d53fe6ef098c19e
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667147"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861471"
 ---
-# <a name="get-started-using-the-microsoft-365-defender-portal"></a>Wprowadzenie przy użyciu portalu Microsoft 365 Defender
+# <a name="visit-the-microsoft-365-defender-portal"></a>Odwiedź portal Microsoft 365 Defender
 
-> [!IMPORTANT]
-> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
-> 
-> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-Po zarejestrowaniu się w Microsoft Defender dla Firm warto zapoznać się z portalem Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Ten artykuł zawiera następujące sekcje:
-
-- [Jak nawigować po portalu Microsoft 365 Defender](#navigate-the-microsoft-365-defender-portal)
-
-- [Edukacja moduły dotyczące zdarzeń i akcji reagowania](#complete-a-learning-module-about-incidents-and-response-actions) 
-
-- [Następne kroki](#next-steps)
-
->
-> **Masz minutę?**
-> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
->
-
-## <a name="navigate-the-microsoft-365-defender-portal"></a>Nawigowanie po portalu Microsoft 365 Defender
-
-Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) to punkt obsługi do korzystania z Microsoft Defender dla Firm i zarządzania nimi. Zawiera baner powitalny i objaśnienia ułatwiające rozpoczęcie pracy, karty, które udostępniają odpowiednie informacje, oraz pasek nawigacyjny, który zapewnia łatwy dostęp do różnych funkcji i możliwości.
- 
-Poświęć chwilę na zapoznanie się z portalem Microsoft 365 Defender.
+Portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) to punkt obsługi do korzystania z Microsoft Defender dla Firm i zarządzania nimi. Zawiera baner powitalny i objaśnienia ułatwiające rozpoczęcie pracy, karty, które udostępniają odpowiednie informacje, oraz pasek nawigacyjny, który zapewnia łatwy dostęp do różnych funkcji i możliwości. 
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="portal Microsoft 365 Defender":::
 
-### <a name="use-the-navigation-bar"></a>Korzystanie z paska nawigacyjnego
+ 
+>
+> **Masz minutę?**
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
+>
+
+## <a name="the-navigation-bar"></a>Pasek nawigacyjny
 
 Użyj paska nawigacyjnego po lewej stronie ekranu, aby uzyskać dostęp do zdarzeń, wyświetlić raporty i zarządzać zasadami zabezpieczeń. W poniższej tabeli opisano elementy widoczne na pasku nawigacyjnym.
 
@@ -76,25 +63,7 @@ Użyj paska nawigacyjnego po lewej stronie ekranu, aby uzyskać dostęp do zdarz
 | **Ustawienia** | Umożliwia edytowanie ustawień portalu Microsoft 365 Defender i Microsoft Defender dla Firm. Na przykład możesz dołączyć (lub odłączyć) i urządzenia firmy (nazywane również punktami końcowymi). Można również zdefiniować reguły, takie jak reguły pomijania alertów, i skonfigurować wskaźniki do blokowania lub zezwalania na niektóre pliki lub procesy.  |
 | **Więcej zasobów** | Przejdź do innych portali, takich jak Azure Active Directory. Pamiętaj, że portal Microsoft 365 Defender powinien spełniać Twoje potrzeby bez konieczności przechodzenia do innych portali. |
 
-## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>Ukończenie modułu szkoleniowego dotyczącego zdarzeń i akcji reagowania
-
-Zapoznaj się z modułem szkoleniowym [Wykrywanie problemów z zabezpieczeniami i reagowanie na nie](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/), aby uzyskać przegląd zdarzeń i akcji reagowania. Poznasz kolejkę zdarzeń, alerty i akcje reagowania, które możesz wykonać. Ten kurs pomoże Ci rozpocząć pracę z incydentami w usłudze Defender dla Firm.
-
-> [!NOTE]
-> Mimo że moduł szkoleniowy ([Wykrywanie problemów z zabezpieczeniami i reagowanie na nie](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) jest faktycznie przeznaczony dla Ochrona punktu końcowego w usłudze Microsoft Defender, podstawowe pojęcia i ogólny przepływ są podobne do tych, które zobaczysz w usłudze Defender for Business.
-
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy masz omówienie usługi Defender dla Firm, spróbuj wykonać co najmniej jedno z następujących zadań:
-
-- [Wypróbuj samouczki i symulacje w Microsoft Defender dla Firm](mdb-tutorials.md)
-
-- [Zarządzanie urządzeniami w Microsoft Defender dla Firm](mdb-manage-devices.md)
-
-- [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md)
-
-- [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
-
-- [Przeglądanie akcji korygowania w centrum akcji](mdb-review-remediation-actions.md)
-
-- [Wyświetlanie lub edytowanie zasad w Microsoft Defender dla Firm](mdb-view-edit-policies.md)
+- [Korzystanie z kreatora konfiguracji w Microsoft Defender dla Firm](mdb-use-wizard.md)
+- [Zobacz proces konfiguracji i konfiguracji](mdb-setup-configuration.md)

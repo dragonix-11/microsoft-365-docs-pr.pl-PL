@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,33 +16,29 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: eee272798be5396ad9ad15177fcd29a0180bc448
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714246"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862725"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Omówienie ustawień konfiguracji nowej generacji w Microsoft Defender dla Firm
 
-> [!IMPORTANT]
-> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
-> 
-> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Ochrona nowej generacji w usłudze Defender for Business obejmuje niezawodny program antywirusowy i ochronę przed złośliwym kodem. Domyślne zasady mają na celu ochronę urządzeń i użytkowników bez ograniczania produktywności. Można jednak również dostosować zasady do własnych potrzeb biznesowych. A jeśli używasz Microsoft Endpoint Manager, możesz go użyć do zarządzania zasadami zabezpieczeń.
 
 **W tym artykule opisano**:
 
 - [Ustawienia i opcje ochrony następnej generacji](#next-generation-protection-settings-and-options)
-
 - [Inne wstępnie skonfigurowane ustawienia w usłudze Defender dla Firm](#other-preconfigured-settings-in-defender-for-business) 
-
 - [Ustawienia domyślne usługi Defender dla firm i Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## <a name="next-generation-protection-settings-and-options"></a>Ustawienia i opcje ochrony następnej generacji
 
-W poniższej tabeli wymieniono ustawienia i opcje:<br/><br/>
+W poniższej tabeli wymieniono ustawienia i opcje:
 
 | Ustawienie | Opis |
 |:---|:---|
@@ -69,17 +65,13 @@ W poniższej tabeli wymieniono ustawienia i opcje:<br/><br/>
 Następujące ustawienia zabezpieczeń są wstępnie skonfigurowane w usłudze Defender dla Firm:
 
 - Skanowanie dysków wymiennych jest włączone ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
-
 - Codzienne szybkie skanowanie nie ma wstępnie ustawionego czasu ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime))
-
 - Aktualizacje analizy zabezpieczeń są sprawdzane przed uruchomieniem skanowania antywirusowego ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
-
 - Kontrole analizy zabezpieczeń są wykonywane co cztery godziny ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
 ## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Ustawienia domyślne usługi Defender dla firm i Microsoft Endpoint Manager
 
 W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla usługi Defender dla firm oraz sposób, w jaki te ustawienia odpowiadają temu, co można zobaczyć w Microsoft Endpoint Manager (lub Microsoft Intune). Jeśli używasz [uproszczonego procesu konfiguracji w usłudze Defender dla Firm](mdb-simplified-configuration.md) (wersja zapoznawcza), nie musisz edytować tych ustawień.
-<br/><br/>
 
 | Ustawienie  | Opis  |
 |---------|---------|
@@ -98,16 +90,12 @@ W poniższej tabeli opisano ustawienia wstępnie skonfigurowane dla usługi Defe
 ## <a name="next-steps"></a>Następne kroki
 
 - [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md)
-
 - [Reagowanie na zagrożenia w Microsoft Defender dla Firm i eliminowanie ich](mdb-respond-mitigate-threats.md)
-
 - [Przeglądanie akcji korygowania w centrum akcji](mdb-review-remediation-actions.md)
 
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwiedź portal Microsoft 365 Defender](mdb-get-started.md)
-
 - [Zarządzanie ustawieniami zapory w Microsoft Defender dla Firm](mdb-custom-rules-firewall.md)
-
 - [Dostawca CSP zasad — Defender](/windows/client-management/mdm/policy-csp-defender)

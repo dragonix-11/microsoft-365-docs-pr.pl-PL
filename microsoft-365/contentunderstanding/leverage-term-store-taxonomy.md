@@ -1,5 +1,5 @@
 ---
-title: Wykorzystaj taksonomię magazynu terminów podczas tworzenia wyodrębnianego programu w aplikacji Microsoft SharePoint Syntex
+title: Korzystanie z taksonomii magazynu terminów podczas tworzenia ekstraktora w usłudze Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
-description: Taksonomia magazynu okresów jest używaj podczas tworzenia wyodrębnianego w dokumencie modelu rozumienia w programie Microsoft SharePoint Syntex.
-ms.openlocfilehash: 909f26026ddf26163a12e1d14c1790f4af93a160
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Użyj taksonomii magazynu terminów podczas tworzenia wyodrębniacza w modelu zrozumienia dokumentu w usłudze Microsoft SharePoint Syntex.
+ms.openlocfilehash: d3f2acf32231558f9f56a62b18c6dd7ffbc4e20f
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328809"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861493"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Wykorzystaj taksonomię magazynu terminów podczas tworzenia wyodrębnianego programu w aplikacji Microsoft SharePoint Syntex
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Korzystanie z taksonomii magazynu terminów podczas tworzenia ekstraktora w usłudze Microsoft SharePoint Syntex
 
 </br>
 
@@ -29,32 +29,34 @@ ms.locfileid: "63328809"
 
 </br>
 
-Po utworzeniu wyodrębnianego w dokumencie modelu rozumienia przy użyciu programu SharePoint Syntex można skorzystać z globalnych zestawów terminów w magazynie terminów, aby [](/sharepoint/managed-metadata) wyświetlić preferowane terminy dla wyodrębnianych danych.  
+Podczas tworzenia wyodrębniacza w modelu zrozumienia dokumentów przy użyciu SharePoint Syntex możesz skorzystać z globalnych zestawów terminów w [magazynie terminów](/sharepoint/managed-metadata), aby wyświetlić preferowane terminy wyodrębnianych danych.  
 
-Na przykład model identyfikuje i klasyfikuje wszystkie dokumenty kontraktu,  które są przekazywane do biblioteki dokumentów.  Ponadto model wyodrębnia wartość usługi **kontraktowej** z każdej umowy i wyświetla ją w kolumnie w widoku biblioteki. Między innymi wartości usług kontraktowych w umowach znajduje się kilka starszych wartości, które nie są już używane w Twojej firmie i zostały zmienione. Na przykład teraz wszystkie odwołania do terminów *Projektowanie,* *Grafika* lub *Topografia* powinny mieć nazwę *Creative*. Za każdym razem, gdy model wyodrębnia jeden z przestarzałych terminów z dokumentu umowy, chcesz, aby w widoku biblioteki był wyświetlany bieżący termin — Creative. W poniższym przykładzie podczas szkolenia modelu widać, że jeden przykładowy dokument zawiera nieaktualny termin *"Projektowanie"*.
+Na przykład model identyfikuje i klasyfikuje wszystkie dokumenty **umowy** przekazane do biblioteki dokumentów.  Ponadto model wyodrębnia również wartość **usługi kontraktu** z każdego kontraktu i wyświetli ją w kolumnie w widoku biblioteki. Wśród różnych wartości usług kontraktowych w umowach istnieje kilka starszych wartości, których firma już nie używa i których nazwa została zmieniona. Na przykład wszystkie odwołania do terminów *Projektowanie*, *Grafika* lub Usługi *kontraktowe topografii* powinny być teraz nazywane *kreatywnymi*. Za każdym razem, gdy model wyodrębnia jeden z nieaktualnych warunków z dokumentu kontraktu, chcesz wyświetlić bieżący termin — Creative — w widoku biblioteki. W poniższym przykładzie podczas trenowania modelu widzimy, że jeden przykładowy dokument zawiera nieaktualny termin *Projektowanie*.
 
-   ![Magazyn okresów.](../media/content-understanding/design.png)</br>
+   ![Magazyn terminów.](../media/content-understanding/design.png)</br>
 
-## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Używanie kolumny zarządzanych metadanych w wyodrębniarze
+## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Używanie kolumny Zarządzanych metadanych w wyodrębniaczu
 
-Zestawy okresów są konfigurowane w magazynie terminów usług zarządzanych metadanych (MMS, Managed Metadata services) w centrum <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint administracyjnego</a>. W poniższym przykładzie zestaw terminów *usług* [kontraktowych](/sharepoint/managed-metadata#term-set) jest skonfigurowany tak, aby zawierał kilka terminów, w tym *Creative*.  Szczegóły tego terminu wskazują, że ten termin ma trzy synonimy *(Projektowanie**, Grafika* i *Topografia*), a synonimy należy przetłumaczyć *na creative*. 
+Zestawy terminów są konfigurowane w magazynie terminów zarządzanych usług metadanych (MMS) w <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centrum administracyjnym SharePoint</a>. W poniższym przykładzie [zestaw terminów](/sharepoint/managed-metadata#term-set) *Usług kontraktowych* jest skonfigurowany tak, aby zawierał kilka terminów, w tym *Creative*.  Szczegóły tego terminu pokazują, że termin ma trzy synonimy (*Design*, *Graphics* i *Topography*), a synonimy należy przetłumaczyć na *Creative*. 
 
-   ![Zestaw okresów.](../media/content-understanding/term-store.png)</br>
+   ![Zestaw terminów.](../media/content-understanding/term-store.png)</br>
 
-Istnieje wiele powodów, dla których warto używać synonimu w zestawie terminów. Na przykład mogą być nieaktualne terminy, terminy o zmienionej nazwy lub odmiany między działami Twojej organizacji nad nazewnictwem.
+Może istnieć wiele powodów, dla których warto użyć synonimu w zestawie terminów. Na przykład mogą istnieć nieaktualne terminy, zmieniono nazwy terminów lub różnice między działami organizacji w zakresie nazewnictwa.
 
-Aby udostępnić pole zarządzanych metadanych do wyboru podczas tworzenia wyodrębnianego elementu w modelu, musisz dodać je jako kolumnę witryny zarządzanych [metadanych](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Po dodaniu kolumny witryny można ją wybrać podczas tworzenia wyodrębnianego fragmentatora dla modelu.
+Aby udostępnić pole zarządzanych metadanych do wybrania podczas tworzenia ekstraktora w modelu, należy [dodać je jako kolumnę witryny zarządzanych metadanych](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Po dodaniu kolumny witryny można ją wybrać podczas tworzenia wyodrębniacza dla modelu.
 
-   ![Usługa kontraktowa.](../media/content-understanding/contract-services.png)</br>
+   ![Usługa kontraktu.](../media/content-understanding/contract-services.png)</br>
 
-Po zastosowaniu modelu do biblioteki dokumentów po przesłaniu dokumentów do biblioteki w kolumnie *Usługi Creative Services* zostanie wyświetlany preferowany termin (*Creative*), gdy wyodrębniator znajdzie dowolną z wartości synonimów (*Projektowanie*, *Grafika* i *Topografia*).
+Po zastosowaniu modelu do biblioteki dokumentów po przekazaniu dokumentów do biblioteki w kolumnie *Creative Services* zostanie wyświetlony preferowany termin (*Creative*), gdy wyodrębniacz znajdzie dowolną z wartości synonimów (*Design*, *Graphics* i *Topography*).
 
-   ![Kolumna Umowa usługi.](../media/content-understanding/creative.png)</br>
+   ![Kolumna usługi kontraktu.](../media/content-understanding/creative.png)</br>
 
+> [!NOTE]
+> Jeśli zestaw terminów jest otwarty, wszystkie wyodrębnione wartości, które nie pasują do preferowanego terminu lub wartości synonimu, zostaną dodane jako nowy termin do katalogu głównego zestawu terminów. Te nowe terminy można przenosić, scalać lub tworzyć synonimy w magazynie terminów, w którym znajduje się zestaw terminów.
 
 ## <a name="see-also"></a>Zobacz też
 [Wprowadzenie do zarządzanych metadanych](/sharepoint/managed-metadata#terms)
 
-[Tworzenie wyodrębnianego](create-an-extractor.md)
+[Tworzenie wyodrębniacza](create-an-extractor.md)
 
 [Tworzenie kolumny zarządzanych metadanych](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)

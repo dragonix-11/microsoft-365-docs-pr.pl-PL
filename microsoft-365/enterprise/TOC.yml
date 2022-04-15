@@ -375,6 +375,8 @@
       items:
         - name: Przygotowanie
           href: configure-services-and-applications.md
+        - name: Współpraca zewnętrzna
+          href: external-guest-access.md
         - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint

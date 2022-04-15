@@ -1,14 +1,14 @@
 ### YamlMime:FAQ
 metadata:
-  title: Microsoft Defender for Business frequently asked questions
-  description: Uzyskaj odpowiedzi na pytania dotyczące programu Microsoft Defender dla firm
+  title: Microsoft Defender dla Firm często zadawane pytania
+  description: Uzyskiwanie odpowiedzi na pytania dotyczące Microsoft Defender dla Firm
   search.appverid: MET150
   author: denisebmsft
   ms.author: deniseb
   manager: dansimp
   audience: Admin
   ms.topic: faq
-  ms.date: 03/15/2022
+  ms.date: 04/12/2022
   ms.prod: m365-security
   ms.technology: mdb
   ms.localizationpriority: medium
@@ -17,78 +17,78 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 28e2299b425c815cb40d68c02bfcf119b00e179a
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 482c2fa4d4ef0ee06c88ee85715c7a70eefc52c3
+  ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63675345"
-title: Microsoft Defender dla firm — często zadawane pytania i odpowiedzi
-summary: "Program Microsoft Defender dla firm jest wprowadzany dla Microsoft 365 Business Premium klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, którzy zarejestrują się tutaj, [aby poprosić](https://aka.ms/mdb-preview) o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.\n\nNiektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. \n\nSkorzystaj z tego artykułu, aby uzyskać odpowiedzi na pytania dotyczące programu Defender dla firm.\n"
+  ms.lasthandoff: 04/15/2022
+  ms.locfileid: "64861361"
+title: Microsoft Defender dla Firm — często zadawane pytania i odpowiedzi
+summary: "Microsoft Defender dla Firm jest wdrażana dla klientów Microsoft 365 Business Premium od 1 marca 2022 r. Usługa Defender dla Firm jako autonomiczna subskrypcja jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby go zażądać. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.\n\nNiektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. \n\nSkorzystaj z tego artykułu, aby uzyskać odpowiedzi na pytania dotyczące usługi Defender dla Firm.\n"
 sections:
 - name: Ogólne
   questions:
-  - question: Mam inną subskrypcję usługi Microsoft Cloud. Dlaczego nie widzę programu Microsoft Defender dla firm w moim portalu?
+  - question: Mam inną subskrypcję usługi Microsoft Cloud. Dlaczego nie widzę Microsoft Defender dla Firm w portalu?
     answer: >
-      Obecnie zawsze, gdy klient ma wiele subskrypcji, najwyższa subskrypcja ma pierwszeństwo. Oto kilka przykładów:
+      Obecnie, gdy klient ma wiele subskrypcji, pierwszeństwo ma najwyższa subskrypcja. Oto kilka przykładów:
 
 
-      - Przykład 1. Jeśli masz usługę [Microsoft Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (zakupioną lub próbną subskrypcję) i otrzymasz program Microsoft Defender for Business, usługa Defender dla punktu końcowego (plan 2) ma pierwszeństwo. W takim przypadku nie zobaczysz usługi Defender dla firm.
+      - Przykład 1: Jeśli masz [Ochrona punktu końcowego w usłudze Microsoft Defender plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (zakupiona lub próbna subskrypcja) i uzyskasz Microsoft Defender dla Firm, pierwszeństwo ma usługa Defender for Endpoint Plan 2. W takim przypadku nie zobaczysz środowiska usługi Defender dla Firm.
 
 
-      - Przykład 2. Jeśli masz program [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (zakupiono subskrypcję lub wersję próbną) i masz usługę Defender dla firm, usługa Defender dla chmury ma pierwszeństwo. W takim przypadku nie zobaczysz usługi Defender dla firm.
-  - question: Jakie są różnice między programami Defender dla firm i Defender dla punktów końcowych (plan 1 i 2)?
-    answer: "Usługę Defender dla firm zaprojektowano dla małych i średnich firm (do 300 pracowników). W ramach [uproszczonego](mdb-simplified-configuration.md) procesu konfiguracji i [](mdb-onboard-devices.md)opcji dołączania urządzeń program Defender dla firm umożliwia klientom, którzy nie muszą mieć tła związanego z zabezpieczeniami, konfigurowanie i używanie usługi Defender dla firm.  \n\nZarówno program Defender for Business, jak i Defender for Endpoint zapewniają silne możliwości ochrony przed zagrożeniami dla punktów końcowych Twojej firmy. Aby dowiedzieć się więcej o różnicach, zobacz [Porównanie programu Microsoft Defender dla firm z programem Microsoft 365 Business Premium](compare-mdb-m365-plans.md).\n"
-  - question: Jak zapisać się na usługę Defender dla firm w wersji Preview?
+      - Przykład 2: Jeśli masz [Microsoft Defender dla Chmury](/azure/defender-for-cloud/defender-for-cloud-introduction) (zakupioną lub próbną subskrypcję) i otrzymasz usługę Defender dla Firm, Defender dla Chmury ma pierwszeństwo. W takim przypadku nie zobaczysz środowiska usługi Defender dla Firm.
+  - question: Jakie są różnice między usługą Defender dla firm i usługą Defender for Endpoint Plans 1 i 2?
+    answer: "Usługa Defender for Business została zaprojektowana dla małych i średnich firm (do 300 pracowników). Dzięki [uproszczonemu procesowi konfiguracji](mdb-simplified-configuration.md) i [opcjom dołączania urządzeń](mdb-onboard-devices.md) usługa Defender dla firm umożliwia klientom, którzy niekoniecznie mają doświadczenie w zakresie zabezpieczeń, konfigurowanie i używanie usługi Defender for Business.  \n\nZarówno usługa Defender dla firm, jak i usługa Defender for Endpoint zapewniają silne możliwości ochrony przed zagrożeniami dla punktów końcowych firmy. Aby dowiedzieć się więcej o różnicach, zobacz [Porównanie Microsoft Defender dla Firm z Microsoft 365 Business Premium](compare-mdb-m365-plans.md).\n"
+  - question: Jak mogę zarejestrować się w wersji zapoznawczej usługi Defender dla Firm?
     answer: >
-      Począwszy od 1 marca 2022 r Microsoft 365 Business Premium w ramach usługi Defender dla firm. Jeśli masz Microsoft 365 Business Premium, wkrótce automatycznie otrzymasz funkcje programu Defender dla firm.
+      Usługa Defender for Business jest wdrażana w ramach Microsoft 365 Business Premium, począwszy od 1 marca 2022 r. Jeśli masz Microsoft 365 Business Premium, wkrótce będziesz mieć możliwości usługi Defender dla Firm automatycznie.
 
 
-      Autonomiczna wersja usługi Defender dla firm jest nadal w wersji Preview. Odwiedź stronę [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) , aby złożyć wniosek o program w wersji Preview. Aby dowiedzieć się więcej, zobacz [Jak uzyskać usługę Microsoft Defender dla firm](get-defender-business.md).
-  - question: Czy istnieją wymagania wstępne dotyczące programu Defender dla firm Preview?
+      Autonomiczna wersja usługi Defender for Business jest nadal w wersji zapoznawczej. Odwiedź stronę [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) , aby ubiegać się o program w wersji zapoznawczej. Aby dowiedzieć się więcej, zobacz [Jak uzyskać Microsoft Defender dla Firm](get-defender-business.md).
+  - question: Czy są jakieś wymagania wstępne dotyczące usługi Defender for Business w wersji zapoznawczej?
     answer: >
       Twoja firma powinna być jedną z następujących:
 
 
-      - Partner, który oferuje usługi IT dla małych i średnich firm
+      - Partner oferujący usługi IT dla małych i średnich firm
 
 
-      - Mała lub średnia firma z maksymalnie 300 pracownikami
+      - Mała lub średnia firma zatrudniająca do 300 pracowników
 
 
-      Nie musisz już mieć innej subskrypcji usługi Microsoft 365 subskrypcji. Aby dowiedzieć się więcej, zobacz [Wymagania dotyczące programu Microsoft Defender dla firm](mdb-requirements.md).
-  - question: Co będzie się dzieje w modelu licencjonowania w UC?
+      Nie musisz już mieć innej subskrypcji Microsoft 365. Aby dowiedzieć się więcej, zobacz [wymagania dotyczące Microsoft Defender dla Firm](mdb-requirements.md).
+  - question: Jaki model licencjonowania będzie dostępny w ogólnodostępny?
     answer: >
-      Od 1 marca 2022 r. w ramach usługi Defender dla firm jest wprowadzana Microsoft 365 Business Premium. Obecnie usługi Defender dla firm są dostępne ogólnie dla Microsoft 365 Business Premium klientów.
+      Począwszy od 1 marca 2022 r., usługa Defender for Business jest wdrażana w ramach Microsoft 365 Business Premium. Usługa Defender dla firm osiąga teraz ogólną dostępność dla Microsoft 365 Business Premium klientów.
 
 
-      Dla klientów, którzy nie mają Microsoft 365 Business Premium usługi, program Defender dla firm jest opcją jako plan autonomiczny. Autonomiczna wersja usługi Defender dla firm jest nadal w wersji Preview i zostanie w pełni zdysymblona w dalszej części tego roku kalendarzowego.
-  - question: Jeśli już korzystam z programu Microsoft 365 Business Premium, dlaczego potrzebuję programu Defender dla firm?
+      W przypadku klientów, którzy nie mają Microsoft 365 Business Premium, usługa Defender dla firm jest opcją jako plan autonomiczny. Autonomiczna wersja usługi Defender for Business jest nadal w wersji zapoznawczej i dotrze do ogólnej dostępności jeszcze w tym roku kalendarzowym.
+  - question: Jeśli już używam Microsoft 365 Business Premium, dlaczego potrzebuję usługi Defender dla Firm?
     answer: >
-      Microsoft 365 Business Premium obecnie obejmuje funkcje zarządzania urządzeniami, usługę Defender dla systemu Office 365 (plan 1) i Program antywirusowy Microsoft Defender (ochrona następnej generacji) dla Windows przenośnych. Defender for Business rozszerza te funkcje, dodając większe bezpieczeństwo dla urządzeń firmowych. Aby dowiedzieć się więcej, zobacz następujące artykuły:
+      Microsoft 365 Business Premium obecnie obejmuje możliwości zarządzania urządzeniami, Ochrona usługi Office 365 w usłudze Defender plan 1 i Program antywirusowy Microsoft Defender ochronę nowej generacji dla Windows  Urządzeń. Usługa Defender dla Firm rozszerza te możliwości, zwiększając bezpieczeństwo urządzeń firmy. Aby dowiedzieć się więcej, zobacz następujące artykuły:
 
 
       - [Omówienie usługi Defender dla firm](mdb-overview.md)
 
 
-      - [Porównanie programu Microsoft Defender dla firm z programem Microsoft 365 Business Premium](compare-mdb-m365-plans.md
-  - question: Co się stanie z podglądem usługi Defender dla firm, jeśli oferta wersji próbnej w wersji Preview wygaśnie, zanim program Defender dla firm osiągnie ogólną dostępność?
+      - [Porównaj Microsoft Defender dla Firm z Microsoft 365 Business Premium](compare-mdb-m365-plans.md
+  - question: Co się stanie z wersjami zapoznawczymi usługi Defender dla Firm, jeśli oferta wersji próbnej wersji zapoznawczej wygaśnie, zanim usługa Defender for Business osiągnie ogólną dostępność?
     answer: >
-      Partnerzy firmy Microsoft mogą rozszerzyć licencje wersji próbnej w wersji Preview do punktu ga. Po zakończeniu okresu próbnego wersji Preview wersja próbna nie zostanie przedłużona.
-  - question: Co się stanie, jeśli klient ma 20 użytkowników z mieszaną subskrypcją? Załóżmy na przykład, że 10 użytkownikom przypisano licencję usługi Defender dla firm, a 10 użytkownikom przypisano licencję Defender for Endpoint Plan 2?
-    answer: "Licencje mieszane nie są obecnie obsługiwane. Obecnie nie obsługujemy licencji mieszanych. Najwyższa licencja funkcjonalnych wyznacza środowisko dla dzierżawy. W naszym przykładzie środowisko dzierżawy będzie mieć usługę Defender dla punktu końcowego (plan 2) i będzie wymagać 20 usługi Defender dla licencji planu 2 punktów końcowych. \n"
-  - question: Czy w programie Defender dla firm można skonfigurować więcej niż jedną zasady filtrowania zawartości sieci Web?
-    answer: "Obecnie program Defender dla firm obsługuje tylko jedną ujednoliconą politykę filtrowania sieci Web dla dzierżawy usługi Defender dla firm. \n"
-  - question: Jak mogę tworzyć raporty niestandardowe za pomocą programu Defender dla firm?
+      Partnerzy firmy Microsoft mogą rozszerzyć licencje wersji próbnej w wersji zapoznawczej do punktu dostępności. Po zakończeniu ogólnej dostępności wersja próbna wersji zapoznawczej nie zostanie przedłużona.
+  - question: Co się stanie, jeśli klient ma 20 użytkowników z kombinacją subskrypcji? Załóżmy na przykład, że 10 użytkowników ma przypisaną licencję usługi Defender dla Firm, a 10 użytkowników ma przypisaną licencję usługi Defender for Endpoint Plan 2?
+    answer: "Licencje mieszane nie są obecnie obsługiwane. Obecnie nie obsługujemy licencji mieszanych. Najwyższa licencja funkcjonalna ustawia środowisko dzierżawy. W naszym przykładzie środowisko dzierżawy będzie mieć wartość Defender for Endpoint Plan 2 i będzie wymagać 20 licencji usługi Defender for Endpoint Plan 2. \n"
+  - question: Czy mogę skonfigurować więcej niż jedną zasadę filtrowania zawartości internetowej w usłudze Defender dla Firm?
+    answer: "Obecnie usługa Defender dla firm obsługuje tylko jedną jednolitą zasadę filtrowania sieci Web na dzierżawę usługi Defender dla Firm. \n"
+  - question: Jak uruchamiać raporty niestandardowe w usłudze Defender dla Firm?
     answer: >
-      Program Defender dla firm obecnie zawiera zestaw interfejsów API do obsługi niezawodnych raportów niestandardowych oraz łącznik Power BI danych. Można zaplanować skrypt programu PowerShell w celu wygenerowania podsumowań dla kierownictwa sformatowanych w formacie HTML i wysłania tych podsumowań pocztą e-mail.
-  - question: Jestem partnerem firmy Microsoft. Czy mogę zarządzać wieloma dzierżawami za pomocą jednego panelu sterowania, czy też muszę logować się osobno do każdej dzierżawy?
+      Usługa Defender dla firm zawiera obecnie zestaw interfejsów API obsługujących niezawodne raportowanie niestandardowe oraz łącznik Power BI. Możesz zaplanować skrypt programu PowerShell, aby wygenerować podsumowania kadry kierowniczej sformatowane w języku HTML i wysłać te podsumowania za pośrednictwem poczty e-mail.
+  - question: Jestem partnerem firmy Microsoft. Czy będę mógł zarządzać wieloma dzierżawami z jednego panelu sterowania, czy też będę musiał zalogować się do każdej dzierżawy indywidualnie?
     answer: >
-      Program Defender dla firm jest Microsoft 365 Lighthouse na potrzeby obsługi wielu dzierżaw w jednej konsoli. Obecnie kolejka zdarzeń z wieloma dzierżawami udostępnia widok zdarzeń wymagających uwagi dla wielu dzierżaw; jednak konfigurację i dołączanie odbywa się w dzierżawie klienta przy użyciu poświadczeń partnera. Zaplanowano więcej scenariuszy integracji.
-  - question: Jak skonfigurować reguły i możliwości ograniczania powierzchni ataków w programie Defender dla firm?
-    answer: "Uproszczona konfiguracja zasad i możliwości ograniczania powierzchni ataków za pośrednictwem usługi Defender dla firm w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) nie jest jeszcze obsługiwana. Jeśli masz jak Microsoft Endpoint Manager, możesz użyć programu Endpoint Manager w celu skonfigurowania zasad zmniejszania powierzchni ataków. \n"
-  - question: Jeśli nie mam jeszcze licencji Microsoft Endpoint Manager, czy potrzebuję dodatkowej licencji, aby używać funkcji zawartych zarówno w uchcie programu Defender dla firm, jak i w programie Endpoint Manager?
-    answer: "Jeśli masz usługę Defender dla firm jako autonomiczną subskrypcję i nie masz programu Microsoft Intune (część usługi Endpoint Manager), możesz zarządzać urządzeniami z usługą Windows w uchcie Defender dla firm przy użyciu portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). W portalu Microsoft 365 Defender można również zarządzać zasadami ochrony następnej generacji i ochrony zapory z uproszczoną [konfiguracją](mdb-simplified-configuration.md). Aby zarządzać innymi ustawieniami, takimi jak zasady ograniczania obszarów ataków lub aby wdowywały niektóre urządzenia (na przykład urządzenia z systemem Android), musisz Endpoint Manager.  \n"
+      Usługa Defender dla firm jest włączona w Microsoft 365 Lighthouse dla obsługi wielu dzierżaw w jednej konsoli. Obecnie kolejka zdarzeń z wieloma dzierżawami zapewnia widok zdarzeń między dzierżawami, które wymagają uwagi; Jednak konfiguracja i dołączanie są wykonywane w dzierżawie klienta przy użyciu poświadczeń partnera. Planowane są kolejne scenariusze integracji.
+  - question: Jak mogę skonfigurować reguły i możliwości zmniejszania obszaru ataków w usłudze Defender for Business?
+    answer: "Uproszczona konfiguracja reguł i możliwości zmniejszania obszaru ataków za pośrednictwem usługi Defender dla Firm w portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) nie jest jeszcze obsługiwana. Jeśli masz Microsoft Endpoint Manager, możesz użyć Endpoint Manager, aby skonfigurować zasady zmniejszania obszaru ataków. \n"
+  - question: Jeśli obecnie nie mam Microsoft Endpoint Manager, czy potrzebuję dodatkowej licencji na korzystanie z funkcji dostępnych zarówno w usłudze Defender dla firm, jak i w Endpoint Manager?
+    answer: "Jeśli masz usługę Defender dla Firm jako subskrypcję autonomiczną i nie masz Microsoft Intune (część Endpoint Manager), możesz zarządzać urządzeniami Windows w usłudze Defender for Business przy użyciu portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Zasady ochrony i ochrony zapory nowej generacji można również zarządzać w portalu Microsoft 365 Defender przy [użyciu uproszczonego środowiska konfiguracji](mdb-simplified-configuration.md). Aby zarządzać innymi ustawieniami, takimi jak zasady zmniejszania obszaru podatnego na ataki lub do dołączania niektórych urządzeń (takich jak urządzenia z systemem Android), musisz Endpoint Manager.  \n"
 additionalContent: >-
   ## <a name="see-also"></a>Zobacz też
 
@@ -96,7 +96,7 @@ additionalContent: >-
   - [Omówienie usługi Microsoft 365 Business Premium](/microsoft-365/business-premium/)
 
 
-  - [Omówienie usługi Microsoft Defender dla firm](mdb-overview.md)
+  - [Omówienie usługi Microsoft Defender dla Firm](mdb-overview.md)
 
 
-  - [Porównanie programu Microsoft Defender dla firm z programem Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
+  - [Porównanie Microsoft Defender dla Firm z Microsoft 365 Business Premium](compare-mdb-m365-plans.md)

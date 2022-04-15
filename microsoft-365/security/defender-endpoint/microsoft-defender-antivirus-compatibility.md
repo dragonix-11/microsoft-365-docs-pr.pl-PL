@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 03/16/2022
+ms.date: 04/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d7e2acf9c0935dcabcace974db009f3c13c6e2ed
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 4f579d3d22b553b764149c8b13538ceae1da44d8
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789365"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862901"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Program antywirusowy Microsoft Defender zgodności z innymi produktami zabezpieczającymi
 
@@ -149,22 +149,31 @@ Tabela w tej sekcji zawiera podsumowanie funkcji i możliwości, które aktywnie
 > [!IMPORTANT]
 > Poniższa tabela została zaprojektowana tak, aby była tylko informacyjna. **Nie wyłączaj możliwości**, takich jak ochrona w czasie rzeczywistym, ochrona dostarczana w chmurze lub ograniczone okresowe skanowanie, jeśli używasz Program antywirusowy Microsoft Defender w trybie pasywnym lub jeśli używasz [EDR w trybie bloku](edr-in-block-mode.md), który działa w tle w celu wykrywania i korygowania złośliwych artefaktów, które zostały wykryte po naruszeniu zabezpieczeń.
 
- | Ochrony | Program antywirusowy Microsoft Defender <br/>(*Tryb aktywny*) | Program antywirusowy Microsoft Defender <br/>(*Tryb pasywny*) | Program antywirusowy Microsoft Defender <br/>(*Wyłączone lub odinstalowane*) | [Funkcja EDR w trybie blokowania](edr-in-block-mode.md) | 
- |:---|:---|:---|:---|:---| 
- | [Ochrona w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md) | Tak | Zobacz notatkę <sup>[[4](#fn4)]</sup> | Nie | Nie | 
- | [Ochrona dostarczana przez chmurę](enable-cloud-protection-microsoft-defender-antivirus.md) | Tak | Nie  | Nie | Nie | 
- | [Ochrona sieci](network-protection.md)  | Tak | Nie | Nie | Nie | 
- | [Reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction.md)  | Tak | Nie | Nie  | Nie | 
- | [Ograniczona okresowa dostępność skanowania](limited-periodic-scanning-microsoft-defender-antivirus.md) | Nie | Nie | Tak | Nie | 
- | [Informacje o skanowaniu i wykrywaniu plików](review-scan-results-microsoft-defender-antivirus.md) | Tak | Tak<sup>[[5](#fn5)]</sup> | Nie | Tak | 
- | [Korygowanie zagrożeń](configure-remediation-microsoft-defender-antivirus.md) | Tak | Zobacz notatkę <sup>[[6](#fn6)]</sup> | Nie | Tak | 
- | [Aktualizacje analizy zabezpieczeń](manage-updates-baselines-microsoft-defender-antivirus.md) | Tak | Tak | Nie | Tak | 
+| Ochrony | Program antywirusowy Microsoft Defender <br/>(*Tryb aktywny*) | Program antywirusowy Microsoft Defender <br/>(*Tryb pasywny*) | Program antywirusowy Microsoft Defender <br/>(*Wyłączone lub odinstalowane*) | [Funkcja EDR w trybie blokowania](edr-in-block-mode.md) | 
+|:---|:---|:---|:---|:---| 
+| [Ochrona w czasie rzeczywistym](configure-real-time-protection-microsoft-defender-antivirus.md) | Tak | Zobacz notatkę <sup>[[4](#fn4)]</sup> | Nie | Nie | 
+| [Ochrona dostarczana przez chmurę](enable-cloud-protection-microsoft-defender-antivirus.md) | Tak | Nie  | Nie | Nie | 
+| [Ochrona sieci](network-protection.md)  | Tak | Nie | Nie | Nie | 
+| [Reguły zmniejszania obszaru podatnego na ataki](attack-surface-reduction.md)  | Tak | Nie | Nie  | Nie | 
+| [Ograniczona okresowa dostępność skanowania](limited-periodic-scanning-microsoft-defender-antivirus.md) | Nie | Nie | Tak | Nie | 
+| [Informacje o skanowaniu i wykrywaniu plików](review-scan-results-microsoft-defender-antivirus.md) | Tak | Tak<sup>[[5](#fn5)]</sup> | Nie | Tak | 
+| [Korygowanie zagrożeń](configure-remediation-microsoft-defender-antivirus.md) | Tak | Zobacz notatkę <sup>[[6](#fn6)]</sup> | Nie | Tak | 
+| [Aktualizacje analizy zabezpieczeń](manage-updates-baselines-microsoft-defender-antivirus.md) | Tak | Tak <sup>[[7](#fn7)]</sup> | Nie | Tak <sup>[[7](#fn7)]</sup> | 
+| [Zapobieganie utracie danych](../../compliance/endpoint-dlp-learn-about.md) | Tak | Tak | Nie | Nie |
+| [Kontrolowany dostęp do folderu](controlled-folders.md) | Tak |Nie | Nie | Nie |
+| [Filtrowanie zawartości sieci Web](web-content-filtering.md) | Tak | Zobacz notatkę <sup>[[8](#fn8)]</sup> | Nie | Nie |
+| [Sterowanie urządzeniem](device-control-report.md) | Tak | Tak | Nie | Nie |
+| [Ochrona pua](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Tak | Nie | Nie | Nie |
 
 (<a id="fn4">4</a>) Ogólnie rzecz biorąc, gdy Program antywirusowy Microsoft Defender jest w trybie pasywnym, ochrona w czasie rzeczywistym nie zapewnia blokowania ani wymuszania, nawet jeśli jest włączona i w trybie pasywnym.
 
 (<a id="fn5">5</a>) Jeśli Program antywirusowy Microsoft Defender jest w trybie pasywnym, skanowanie nie jest zaplanowane.
 
 (<a id="fn6">6</a>) Gdy Program antywirusowy Microsoft Defender jest w trybie pasywnym, nie koryguje zagrożeń. Jednak zagrożenia mogą być korygowane przez [wykrywanie i reagowanie punktów końcowych (EDR) w trybie bloku](edr-in-block-mode.md). W takim przypadku mogą zostać wyświetlone alerty pokazujące Program antywirusowy Microsoft Defender jako źródło, nawet jeśli Program antywirusowy Microsoft Defender jest w trybie pasywnym.
+
+(<a id="fn7">7</a>) Cykl aktualizacji analizy zabezpieczeń jest kontrolowany tylko przez ustawienia Windows Update. Ustawienia harmonogramów aktualizacji specyficznych dla usługi Defender (codziennie/co tydzień o określonej godzinie, na podstawie interwałów) działają tylko wtedy, gdy Program antywirusowy Microsoft Defender jest w trybie aktywnym. Są one ignorowane w trybie pasywnym.
+
+(<a id="fn8">8</a>) Gdy Program antywirusowy Microsoft Defender jest w trybie pasywnym, filtrowanie zawartości internetowej działa tylko z przeglądarką Microsoft Edge. 
 
 > [!NOTE]
 > [Microsoft 365 ochrona przed utratą danych punktu końcowego](/microsoft-365/compliance/endpoint-dlp-learn-about) nadal działa normalnie, gdy Program antywirusowy Microsoft Defender jest w trybie aktywnym lub pasywnym.
@@ -198,14 +207,14 @@ W tabeli w tej sekcji opisano różne stany, które mogą być widoczne w Progra
  |  Wyłączona <br/><br/> lub <br/><br/> Odinstalować  |  Po wyłączeniu lub odinstalowaniu Program antywirusowy Microsoft Defender nie jest używana jako aplikacja antywirusowa. Pliki nie są skanowane, a zagrożenia nie są korygowane. <br/><br/> Wyłączenie lub odinstalowanie Program antywirusowy Microsoft Defender nie jest zalecane ogólnie; jeśli to możliwe, zachowaj Program antywirusowy Microsoft Defender w trybie pasywnym, jeśli używasz rozwiązania chroniącego przed złośliwym kodem lub oprogramowania antywirusowego firmy innej niż Microsoft. <br/><br/> W przypadkach, gdy Program antywirusowy Microsoft Defender jest automatycznie wyłączona, można ją ponownie włączyć automatycznie, jeśli produkt antywirusowy/chroniący przed złośliwym kodem firmy microsoft wygaśnie lub w inny sposób przestanie zapewniać ochronę przed wirusami, złośliwym oprogramowaniem lub innymi zagrożeniami w czasie rzeczywistym. Automatyczne ponowne włączanie Program antywirusowy Microsoft Defender pomaga zapewnić utrzymanie ochrony antywirusowej w punktach końcowych. <br/><br/> Możesz również używać [ograniczonego okresowego skanowania](limited-periodic-scanning-microsoft-defender-antivirus.md), które współpracuje z aparatem Program antywirusowy Microsoft Defender, aby okresowo sprawdzać zagrożenia, jeśli używasz aplikacji antywirusowej innej niż Microsoft.  | 
 
 > [!TIP]
-> Jeśli szukasz informacji związanych z programem antywirusowym dla innych platform, zobacz:
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie macOS](mac-preferences.md)
+> Jeśli szukasz powiązanych informacji dotyczących programu antywirusowego dla innych platform, zobacz:
+> - [Ustaw preferencje dla ochrony punktu końcowego usługi Microsoft Defender w systemie macOS](mac-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na komputerze Mac](microsoft-defender-endpoint-mac.md)
-> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla Program antywirusowy Microsoft Defender dla Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Ustawianie preferencji dla Ochrona punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
+> - [Ustawienia zasad ochrony antywirusowej systemu macOS dla programu antywirusowego Microsoft Defender dla usługi Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Ustaw preferencje dla ochrony punktu końcowego w usłudze Microsoft Defender w systemie Linux](linux-preferences.md)
 > - [Ochrona punktu końcowego w usłudze Microsoft Defender na Linuxie](microsoft-defender-endpoint-linux.md)
-> - [Konfigurowanie usługi Defender dla punktu końcowego w funkcjach systemu Android](android-configure.md)
-> - [Konfigurowanie Ochrona punktu końcowego w usłudze Microsoft Defender funkcji systemu iOS](ios-configure-features.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu Android](android-configure.md)
+> - [Konfiguruj ochronę punktu końcowego w usłudze Microsoft Defender w opcjach systemu iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Zobacz też
 

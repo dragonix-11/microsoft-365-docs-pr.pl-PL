@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 0d291f4da7c44a57d12516be364fc36bbb771356
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 93db141d60353c5e3581298a67383718bdf4fe54
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664947"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862571"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Omówienie usługi Microsoft Defender dla Firm
 
-> [!IMPORTANT]
-> Microsoft Defender dla Firm jest wdrażana dla [klientów Microsoft 365 Business Premium](../../business-premium/index.md) od 1 marca 2022 r. Usługa Defender dla Firm jako subskrypcja autonomiczna jest dostępna w wersji zapoznawczej i będzie stopniowo wdrażana dla klientów i partnerów IT, którzy [zarejestrują się tutaj](https://aka.ms/mdb-preview) , aby zażądać tej subskrypcji. Wersja zapoznawcza zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać możliwości.
-> 
-> Niektóre informacje zawarte w tym artykule odnoszą się do wstępnie wydanych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjnym wydaniem. Firma Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, dotyczących informacji podanych tutaj. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender dla Firm to nowe rozwiązanie zabezpieczeń punktu końcowego, które zostało zaprojektowane specjalnie dla małych i średnich firm (do 300 pracowników). Dzięki temu rozwiązaniu zabezpieczeń punktu końcowego urządzenia firmy są lepiej chronione przed oprogramowaniem wymuszającym okup, złośliwym oprogramowaniem, wyłudzaniem informacji i innymi zagrożeniami. 
 
@@ -44,7 +42,7 @@ W tym artykule opisano informacje zawarte w usłudze Defender dla Firm oraz link
 
 >
 > **Masz minutę?**
-> Weźmy <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę dotyczącą Microsoft Defender dla Firm</a>. Chcielibyśmy usłyszeć od Ciebie!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 Usługa Defender dla Firm umożliwia ochronę urządzeń i danych używanych przez firmę za pomocą następujących funkcji:
@@ -81,5 +79,4 @@ Usługa Defender dla Firm umożliwia ochronę urządzeń i danych używanych prz
 ## <a name="next-steps"></a>Następne kroki
 
 - [Dowiedz się więcej o uproszczonym procesie konfiguracji w Microsoft Defender dla Firm](mdb-simplified-configuration.md)
-
 - [Dowiedz się, jak uzyskać Microsoft Defender dla Firm](get-defender-business.md)

@@ -1,83 +1,81 @@
 ---
-title: Konfigurowanie powiadomień e-mail dla zespołu zabezpieczeń
-description: Konfigurowanie powiadomień e-mail w celu powiadomienia innych osób o alertach i lukach w zabezpieczeniach w programie Microsoft Defender dla firm
+title: Konfigurowanie powiadomień e-mail dla zespołu ds. zabezpieczeń
+description: Konfigurowanie powiadomień e-mail w celu poinformowania użytkowników o alertach i lukach w zabezpieczeniach przy użyciu Microsoft Defender dla Firm
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: bf11ed140d2e0609f2d12d1da3bcc448ff733235
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a65634a5827e60d710cec56ca10835c73053cb10
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683148"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862857"
 ---
 # <a name="set-up-email-notifications"></a>Konfigurowanie powiadomień e-mail
 
-> [!IMPORTANT]
-> Program Microsoft Defender dla firm jest wprowadzany [dla Microsoft 365 Business Premium](../../business-premium/index.md) klientów od 1 marca 2022 r. Autonomiczna subskrypcja usługi Defender dla firm jest w wersji Preview i będzie stopniowo wprowadzana u klientów i partnerów IT, [](https://aka.ms/mdb-preview) którzy zarejestrują się tutaj, aby poprosić o to. Wersja Preview zawiera [początkowy zestaw scenariuszy](mdb-tutorials.md#try-these-preview-scenarios), a my będziemy regularnie dodawać funkcje.
-> 
-> Niektóre informacje w tym artykule dotyczą wstępnie dzierżawionych produktów/usług, które mogą zostać znacząco zmodyfikowane przed ich komercyjną premierą. Firma Microsoft nie udziela żadnych gwarancji, jawnych ani domniemanych, dotyczących podanych tutaj informacji. 
+> [!NOTE]
+> Microsoft Defender dla Firm jest teraz uwzględniony w [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-Możesz skonfigurować powiadomienia e-mail dla zespołu zabezpieczeń. Następnie w przypadku wygenerowania alertów lub odkrycia nowych luk w zabezpieczeniach osoby z Twojego zespołu zabezpieczeń zostaną automatycznie powiadomione. 
+Możesz skonfigurować powiadomienia e-mail dla zespołu ds. zabezpieczeń. Następnie po wygenerowaniu alertów lub wykryciu nowych luk w zabezpieczeniach osoby z zespołu ds. zabezpieczeń będą automatycznie powiadamiane. 
 
-## <a name="what-to-do"></a>Co należy zrobić
+## <a name="what-to-do"></a>Co robić
 
-1. [Informacje o typach powiadomień e-mail](#types-of-email-notifications).
+1. [Dowiedz się więcej o typach powiadomień e-mail](#types-of-email-notifications).
 
 2. [Wyświetlanie i edytowanie ustawień powiadomień e-mail](#view-and-edit-email-notifications).
 
-3. [Przejdź do następnych kroków](#next-steps).
+3. [Przejdź do kolejnych kroków](#next-steps).
 
 
 >
 > **Masz minutę?**
-> Prosimy o <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótką ankietę na temat programu Microsoft Defender dla firm</a>. Chcemy ją usłyszeć!
+> Weź udział w <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">krótkiej ankiecie dotyczącej bezpieczeństwa</a>. Chcielibyśmy usłyszeć od Ciebie!
 >
 
 ## <a name="types-of-email-notifications"></a>Typy powiadomień e-mail
 
-Podczas konfigurowanie powiadomień e-mail możesz wybrać jeden z dwóch typów, jak opisano w poniższej tabeli: <br/><br/>
+Podczas konfigurowania powiadomień e-mail można wybrać jeden z dwóch typów, zgodnie z opisem w poniższej tabeli:
 
 | Typ powiadomienia  | Opis  |
 |---------|---------|
-| Luki w zabezpieczeniach  | W przypadku wykrycia nowych luk lub luk w zabezpieczeniach adresaci otrzymają wiadomość e-mail. |
-| Alerty & lukami w zabezpieczeniach  | W przypadku wygenerowania alertów z powodu wykrycia zagrożeń na urządzeniach lub wykrycia nowych luk lub wykorzystania luk w zabezpieczeniach adresaci otrzymują wiadomość e-mail. |
+| Luki  | Za każdym razem, gdy zostaną wykryte nowe luki w zabezpieczeniach lub luki w zabezpieczeniach, adresaci otrzymają wiadomość e-mail. |
+| Alerty & luk w zabezpieczeniach  | Po wygenerowaniu alertów z powodu wykrycia zagrożeń na urządzeniach lub wykryciu nowych luk w zabezpieczeniach adresaci otrzymują wiadomość e-mail. |
 
 > [!TIP]
-> **Powiadomienia e-mail nie są jedynym sposobem, w jaki zespół zabezpieczeń może uzyskać informacje o nowych alertach i luki w zabezpieczeniach**.
+> **Powiadomienia e-mail nie są jedynym sposobem, w jaki zespół ds. zabezpieczeń może dowiedzieć się o nowych alertach lub lukach w zabezpieczeniach**.
 > 
-> Powiadomienia e-mail to wygodny sposób na zapewnianie zespołowi zabezpieczeń informacji w czasie rzeczywistym. Ale są też inne! Na przykład zawsze, gdy twój zespół zabezpieczeń się Microsoft 365 Defender w portalu sieciOwym ([https://security.microsoft.com](https://security.microsoft.com)), będą dosłane karty z wyróżnieniem nowych zagrożeń, alertów i luk w zabezpieczeniach. Program Defender dla firm ma na celu wyróżnienie ważnych informacji, na które zwraca uwagę zespół zabezpieczeń zaraz po zalogowaniu się.
+> Powiadomienia e-mail są wygodnym sposobem na informowanie zespołu ds. zabezpieczeń w czasie rzeczywistym. Ale są też inne! Na przykład za każdym razem, gdy zespół ds. zabezpieczeń loguje się do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), będą widoczne karty wyróżniające nowe zagrożenia, alerty i luki w zabezpieczeniach. Usługa Defender dla Firm została zaprojektowana w celu wyróżnienia ważnych informacji, na które dba twój zespół ds. zabezpieczeń zaraz po zalogowaniu się.
 > 
-> Aby wyświetlić informacje, zespół zabezpieczeń może również wybrać pozycję **Zdarzenia** w okienku nawigacji. Aby dowiedzieć się więcej, [zobacz Wyświetlanie zdarzeń i zarządzanie nimi w programie Microsoft Defender dla firm](mdb-view-manage-incidents.md).
+> Twój zespół ds. zabezpieczeń może również wybrać pozycję **Incydenty** w okienku nawigacji, aby wyświetlić informacje. Aby dowiedzieć się więcej, zobacz [Wyświetlanie zdarzeń i zarządzanie nimi w Microsoft Defender dla Firm](mdb-view-manage-incidents.md).
 
 ## <a name="view-and-edit-email-notifications"></a>Wyświetlanie i edytowanie powiadomień e-mail
 
-Aby wyświetlić lub edytować ustawienia powiadomień e-mail dla firmy, wykonaj następujące czynności:
+Aby wyświetlić lub edytować ustawienia powiadomień e-mail dla firmy, wykonaj następujące kroki:
 
-1. Przejdź do Microsoft 365 Defender konta ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
+1. Przejdź do portalu Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) i zaloguj się.
 
-2. W okienku nawigacji **wybierz pozycję Ustawienia**, a następnie wybierz **pozycję Punkty końcowe**. Następnie w obszarze **Ogólne wybierz** pozycję Powiadomienia **e-mail**. 
+2. W okienku nawigacji wybierz pozycję **Ustawienia**, a następnie wybierz pozycję **Punkty końcowe**. Następnie w obszarze **Ogólne** wybierz pozycję **Powiadomienia e-mail**. 
 
-3. Przejrzyj informacje na kartach **Alerty** **i Luki** w zabezpieczeniach.
+3. Przejrzyj informacje na **kartach Alerty** i **luki w zabezpieczeniach** .
 
-   - Jeśli nie widzisz żadnych elementów wymienionych na karcie Alerty,  możesz utworzyć regułę, która będzie powiadamiana o alertach. Aby uzyskać pomoc na temat tego zadania, zobacz [Tworzenie reguł dla powiadomień alertów](../defender-endpoint/configure-email-notifications.md).
+   - Jeśli nie widzisz żadnych elementów wymienionych na **karcie Alerty** , możesz utworzyć regułę powiadamiania użytkowników podczas generowania alertów. Aby uzyskać pomoc dotyczącą tego zadania, zobacz [Tworzenie reguł dla powiadomień o alertach](../defender-endpoint/configure-email-notifications.md).
 
-   - Jeśli nie widzisz żadnych elementów wymienionych na karcie Luki w zabezpieczeniach, możesz utworzyć regułę, która będzie powiadamiana o każdej nowej lukie. Aby uzyskać pomoc na temat tego zadania, zobacz [Tworzenie reguł w celu wykorzystania luk w zabezpieczeniach](../defender-endpoint/configure-vulnerability-email-notifications.md).
+   - Jeśli nie widzisz żadnych elementów wymienionych na karcie **Luki w zabezpieczeniach** , możesz utworzyć regułę powiadamiania użytkowników za każdym razem, gdy zostanie wykryte nowe luki w zabezpieczeniach. Aby uzyskać pomoc dotyczącą tego zadania, zobacz [Tworzenie reguł dla zdarzeń luk w zabezpieczeniach](../defender-endpoint/configure-vulnerability-email-notifications.md).
 
-   - Jeśli masz utworzone reguły, wybierz regułę, aby ją edytować. Możesz również usunąć regułę. 
+   - Jeśli masz utworzone reguły, wybierz regułę, aby ją edytować. Można również usunąć regułę. 
 
 ## <a name="next-steps"></a>Następne kroki
 
 Przejdź do:
 
-- [Krok 4. Na urządzeniach w programie Microsoft Defender dla firm](mdb-onboard-devices.md)
+- [Krok 4. Dołączanie urządzeń do Microsoft Defender dla Firm](mdb-onboard-devices.md)

@@ -171,6 +171,8 @@
               href: create-groups/restore-deleted-group.md
             - name: Zarządzanie dostępem gości do grup
               href: create-groups/manage-guest-access-in-groups.md
+            - name: Zarządzanie grupami i zespołami bez właściciela
+              href: create-groups/ownerless-groups-teams.md
         - name: Hasła
           items:
             - name: Resetowanie haseł
