@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak identyfikować określone grupy użytkowników za pomocą tagów użytkowników w planie Ochrona usługi Office 365 w usłudze Microsoft Defender 2. Filtrowanie tagów jest dostępne dla alertów, raportów i badań w Ochrona usługi Office 365 w usłudze Microsoft Defender, aby szybko zidentyfikować otagowanych użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9da17b2dfb20746bb48b1ba737968873d4151595
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 1f045e5dcb590c36fd0f3768c472057b07b12b21
+ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731619"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "64891825"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tagi użytkowników w Ochrona usługi Office 365 w usłudze Microsoft Defender
 
@@ -41,12 +41,13 @@ Po zastosowaniu tagów systemowych lub tagów niestandardowych do użytkowników
 - [Alerty](alerts.md)
 - [Niestandardowe zasady alertów](../../compliance/alert-policies.md#viewing-alerts)
 - [Eksplorator zagrożeń i wykrywanie w czasie rzeczywistym](threat-explorer.md)
+- [Raport użytkownika z naruszeniem zabezpieczeń](view-email-security-reports.md#compromised-users-report)
 - [Strona jednostki poczty e-mail](mdo-email-entity-page.md#other-innovations)
 - [Raport o stanie ochrony przed zagrożeniami](view-email-security-reports.md#threat-protection-status-report)
 - [Symulacja ataku](attack-simulation-training.md#target-users)
 - [Widoki kampanii](campaigns.md)
 - [Przesyłanie przez administratora i użytkownika](admin-submission.md)
-- [Kwarantanny](quarantine.md)
+- [Kwarantanna](quarantine.md)
 - W przypadku kont o priorytecie możesz użyć [raportu Problemy z pocztą e-mail dla kont priorytetowych](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) w centrum administracyjnym Exchange (EAC).
 
 W tym artykule wyjaśniono, jak skonfigurować tagi użytkowników w portalu Microsoft 365 Defender. Brak poleceń cmdlet w portalu Microsoft 365 Defender do zarządzania tagami użytkowników.
@@ -146,4 +147,4 @@ Aby zobaczyć, jak tagi użytkowników są częścią strategii ochrony kont uż
 
 ## <a name="more-information"></a>Więcej informacji
 
-- [Konfigurowanie i przeglądanie kont priorytetów w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-review-priority-account.md)
+[Konfigurowanie i przeglądanie kont priorytetów w Ochrona usługi Office 365 w usłudze Microsoft Defender](configure-review-priority-account.md)

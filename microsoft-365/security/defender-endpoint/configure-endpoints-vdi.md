@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 02/14/2022
+ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: fe86b09588f08a05183de146092b50b5cb530d0e
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 78d22772ccc9713b968347de5dee4c3a9699fe26
+ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825019"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "64891871"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Dołączanie nietrwałych urządzeń infrastruktury pulpitu wirtualnego w Microsoft 365 Defender
 
@@ -146,7 +146,7 @@ Poniższe kroki przeprowadzą Cię przez dołączanie urządzeń VDI i wyróżni
 
 Dzięki możliwości łatwego wdrażania aktualizacji na maszynach wirtualnych działających w interfejsach VDI skróciliśmy ten przewodnik, aby skupić się na tym, jak można szybko i łatwo uzyskiwać aktualizacje na maszynach. Nie trzeba już okresowo tworzyć i uszczelniać złotych obrazów, ponieważ aktualizacje są rozszerzane na ich bity składników na serwerze hosta, a następnie pobierane bezpośrednio na maszynę wirtualną po jej włączeniu.
 
-Aby uzyskać więcej informacji, postępuj zgodnie ze wskazówkami w [przewodniku wdrażania dotyczącym Program antywirusowy Microsoft Defender w środowisku infrastruktury pulpitu wirtualnego (VDI).](/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
+Aby uzyskać więcej informacji, postępuj zgodnie ze wskazówkami w [przewodniku wdrażania dotyczącym Program antywirusowy Microsoft Defender w środowisku infrastruktury pulpitu wirtualnego (VDI).](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
 
 
 ## <a name="related-topics"></a>Tematy pokrewne
