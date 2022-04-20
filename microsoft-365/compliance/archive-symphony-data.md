@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z veritas symphony do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 119d5b34d32cd193d4ab5e89d6e435c3fc24a574
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dbff83ca244ca24fdd1a42f0929ec3e43f84b4d1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938560"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992353"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>Konfigurowanie łącznika do archiwizacji danych Symphony
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane symphony do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Symphony to platforma do obsługi wiadomości i współpracy używana w branży usług finansowych. Usługa Veritas udostępnia łącznik danych [Symphony](https://globanet.com/symphony) w portalu zgodności, który można skonfigurować do przechwytywania elementów ze źródła danych innych firm (regularnie), a następnie importowania tych elementów do skrzynek pocztowych użytkowników. Łącznik konwertuje zawartość elementu z konta Symphony na format wiadomości e-mail, a następnie importuje element do skrzynki pocztowej w Microsoft 365.
 

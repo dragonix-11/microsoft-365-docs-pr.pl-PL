@@ -1,6 +1,6 @@
 ---
-title: Test Base API & SDK
-description: Test Base API & SDK
+title: Testowanie podstawowego interfejsu API & SDK
+description: Testowanie podstawowego interfejsu API & SDK
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -14,104 +14,102 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: f7e5edeeac79b417bcb41f8607c46fc8894ea4fc
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 14bfa8711d5cff46b8cce02950c087844384b9f9
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63005279"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953787"
 ---
-# <a name="manage-your-resource-with-sdk--apis"></a>Zarządzanie zasobem przy użyciu interfejsów API & SDK
-Automatyzacja to kluczowy aspekt rozwoju DevOps agile. Chcesz zarządzać bazą testową dla zasobów Microsoft 365, programowo uzyskać wyniki testów i zintegrować je z naszymi narzędziami ci? Test podstawowych interfejsów API/zestawu SDK może pomóc Ci osiągnąć te i nie tylko! 
+# <a name="manage-your-resource-with-sdk--apis"></a>Zarządzanie zasobem przy użyciu zestawu SDK & interfejsów API
 
-Te interfejsy API/zestaw SDK umożliwiają informatykom i deweloperom aplikacji: 
-- Zarządzaj kontami bazy testowej, w tym tworzenie, aktualizowanie i wyechiwki. 
-- Zarządzaj pakietami aplikacji, w tym tworzenie, aktualizowanie, usuwanie i pobieranie pakietu. 
-- Uzyskaj podsumowanie testu, szczegółowe wyniki testów i wyniki analizy. Wynik analizy obejmuje analizę regresji procesora, analizę użycia procesora, analizę regresji pamięci i analizę użycia pamięci. 
-- Pobierz wyniki testów i przetestuj nagranie wideo wykonywania.  
+Automatyzacja jest kluczowym aspektem DevOps i zwinnego programowania. Chcesz zarządzać bazą testów dla zasobów Microsoft 365, programowo uzyskiwać wyniki testów i integrować je z naszymi narzędziami ciągłej integracji? Testowe podstawowe interfejsy API/zestaw SDK mogą pomóc w osiągnięciu tych wszystkich i nie tylko!
 
-Zapoznaj się z poniższym konspektem krok po kroku, aby dowiedzieć się, jak uzyskać dostęp do tej nowej funkcji w bazie testowej dla Microsoft 365 usługi.
+Te interfejsy API/zestaw SDK umożliwiają specjalistom IT i deweloperom aplikacji:
 
-## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>Przykład krok po kroku tworzenia konta podstawowego w języku Python przy użyciu zestawu SDK języka Python
+- Zarządzaj kontami bazy testów, w tym tworzeniem, aktualizowaniem i odłączakiem.
+- Zarządzaj pakietami aplikacji, w tym tworzeniem, aktualizowaniem, usuwaniem i pobieraniem pakietu.
+- Pobierz podsumowanie testu, szczegółowe wyniki testu i wyniki analizy. Wynik analizy obejmuje analizę regresji procesora CPU, analizę wykorzystania procesora CPU, analizę regresji pamięci i analizę wykorzystania pamięci.
+- Pobieranie wyników testów i nagrywanie wideo wykonywania testu.
 
-1. Wymagania wstępne: 
+Zapoznaj się z poniższym konspektem krok po kroku, aby dowiedzieć się, jak uzyskać dostęp do tej nowej funkcji w bazie testowej dla usługi Microsoft 365.
 
-- Zainstaluj poniżej wymaganych składników: 
+## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>Przykład krok po kroku tworzenia konta bazy testowej przy użyciu zestawu Python SDK
 
-    [Konto Azure z aktywną subskrypcją](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) , jeśli nie masz subskrypcji<br>
-    [Python 2.7+ lub 3.6+](https://www.python.org/downloads)<br>
-    [Azure Command-Line Interface (CLI)](/cli/azure/install-azure-cli) <br>
+1. Wymagania wstępne:
 
-- Instalowanie pakietów bibliotek przy użyciu instalacji rurowej z konsoli 
+   - Zainstaluj poniższe wymagane składniki:
 
-```
-pip install azure-identity 
-pip install azure-mgmt-testbase
-```
+     - [Konto platformy Azure z aktywną subskrypcją](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) , jeśli nie masz subskrypcji
+     - [Python 2.7 lub 3.6+](https://www.python.org/downloads)
+     - [Interfejs interfejsu wiersza polecenia platformy Azure Command-Line](/cli/azure/install-azure-cli)
 
-- Autentyczność w środowisku dewelopera 
+   - Instalowanie pakietów biblioteki przy użyciu instalacji pip z konsoli
 
-Podczas debugowania i wykonywania kodu lokalnie typowe dla deweloperów jest używanie własnych kont do uwierzytelniania połączeń z usługami Azure. Pakiet azure-identity obsługuje uwierzytelnianie za pośrednictwem interfejsu azure CLI w celu uproszczenia opracowywania lokalnego. Aby zalogować się do usługi Azure CLI, uruchom narzędzie ```az login ```. W systemie z domyślną przeglądarką sieci Web identyfikator Azure CLI uruchomi przeglądarkę w celu uwierzytelnienia użytkownika. 
+     ```console
+     pip install azure-identity
+     pip install azure-mgmt-testbase
+     ```
 
-Sprawdź [, jak uwierzytelnić aplikacje w języku Python za pomocą usług platformy Azure| Dokumenty Microsoft i](/azure/developer/python/azure-sdk-authenticate)  inne [https://pypi.org/project/azure-identity/](https://pypi.org/project/azure-identity/) obsługiwane metody uwierzytelniania. 
+   - Uwierzytelnianie w środowisku deweloperskim
 
- - Utwórz grupę zasobów o odpowiedniej nazwie, która zostanie użyta w poniższych krokach. 
+     Podczas debugowania i wykonywania kodu lokalnie deweloperzy często używają własnych kont do uwierzytelniania wywołań w usługach platformy Azure. Pakiet azure-identity obsługuje uwierzytelnianie za pośrednictwem interfejsu wiersza polecenia platformy Azure, aby uprościć programowanie lokalne. Aby zalogować się do interfejsu wiersza polecenia platformy Azure, uruchom polecenie `az login`. W systemie z domyślną przeglądarką internetową interfejs wiersza polecenia platformy Azure uruchomi przeglądarkę w celu uwierzytelnienia użytkownika.
 
-2. Poniżej fragmentu kodu przedstawiono przepływ tworzenia podstawowego konta testowego obejmującego m.in. 
+     Sprawdź[, jak uwierzytelniać aplikacje języka Python za pomocą usług platformy Azure| Microsoft Docs](/azure/developer/python/azure-sdk-authenticate) i <https://pypi.org/project/azure-identity/> innych obsługiwanych metod uwierzytelniania.
 
-- Żądanie poświadczeń za pośrednictwem interfejsu azure cli w celu interakcji z platformą Azure 
-- Initialize Test Base SDK client with the credential and subscription ID for later operations 
-- Wywoływanie begin_create z test_base_accounts w celu utworzenia konta testowego 
+   - Utwórz grupę zasobów o żądanej nazwie, która będzie używana w poniższych krokach.
 
-Skopiuj kod do środowiska programistyki w języku Python i zastąp "identyfikator subskrypcji" identyfikatorem subskrypcji platformy Azure i "resource-group-name" utworzoną powyżej grupą zasobów. 
+2. Poniższy fragment kodu obejmuje przepływ w celu utworzenia testowego konta podstawowego, w tym
 
- 
-```python
+   - Żądanie poświadczenia za pośrednictwem interfejsu wiersza polecenia platformy Azure w celu interakcji z platformą Azure
+   - Inicjowanie klienta zestawu Test Base SDK przy użyciu poświadczeń i identyfikatora subskrypcji dla późniejszych operacji
+   - Wywoływanie begin_create z modelu test_base_accounts w celu utworzenia konta bazy testowej
 
-from azure.identity import AzureCliCredential
-from azure.mgmt.testbase import TestBase
-from azure.mgmt.testbase.models import TestBaseAccountResource
-from azure.mgmt.testbase.models import TestBaseAccountSKU
+   Skopiuj kod do środowiska deweloperskiego języka Python i zastąp ciąg "subscription-id" identyfikatorem subskrypcji platformy Azure i "nazwą grupy zasobów" utworzoną powyżej grupą zasobów.
 
-# requesting token from Azure CLI for request
-# For other authentication approaches, please see: https://pypi.org/project/azure-identity/
-credential = AzureCliCredential()
-subscription_id = "<subscription-id>"
-resource_group = "<resource-group-name>"
-testBaseAccount_name = "contoso-testbaseAccount"
-testBaseAccount_location = "global"
-sku_name = "S0"
-sku_tier = "Standard"
-sku_locations = {"global"}
+   ```python
+   from azure.identity import AzureCliCredential
+   from azure.mgmt.testbase import TestBase
+   from azure.mgmt.testbase.models import TestBaseAccountResource
+   from azure.mgmt.testbase.models import TestBaseAccountSKU
 
-# Create client
-testBase_client = TestBase(credential, subscription_id)
+   # requesting token from Azure CLI for request
+   # For other authentication approaches, please see: https://pypi.org/project/azure-identity/
+   credential = AzureCliCredential()
+   subscription_id = "<subscription-id>"
+   resource_group = "<resource-group-name>"
+   testBaseAccount_name = "contoso-testbaseAccount"
+   testBaseAccount_location = "global"
+   sku_name = "S0"
+   sku_tier = "Standard"
+   sku_locations = {"global"}
+  
+   # Create client
+   testBase_client = TestBase(credential, subscription_id)
+  
+   # Create sku for test base account
+   sku = TestBaseAccountSKU(name=sku_name, tier=sku_tier, locations=sku_locations)
+  
+   # Create test base account
+   parameters = TestBaseAccountResource(location=testBaseAccount_location, sku=sku)
+   testBaseAccount = testBase_client.test_base_accounts.begin_create(resource_group, testBaseAccount_name, parameters).result()
+   print("Create test base account:\n{}".format(testBaseAccount))
+   ```
 
-# Create sku for test base account
-sku = TestBaseAccountSKU(name=sku_name, tier=sku_tier, locations=sku_locations)
+## <a name="learn-more"></a>Dowiedz się więcej
 
-# Create test base account
-parameters = TestBaseAccountResource(location=testBaseAccount_location, sku=sku)
-testBaseAccount = testBase_client.test_base_accounts.begin_create(resource_group, testBaseAccount_name, parameters).result()
-print("Create test base account:\n{}".format(testBaseAccount))
+Skorzystaj z poniższych linków, aby dowiedzieć się więcej o interfejsie API & zestawu SDK.
 
-```
+**Subskrypcja platformy Azure**:
 
+- [Konto platformy Azure z aktywną subskrypcją](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup)
 
-## <a name="learn-more"></a>Dowiedz się więcej 
+**Zestaw SDK języka Python**:
 
-Sprawdź poniższe linki, aby dowiedzieć się więcej o interfejsie API & SDK. 
+- [Dokumentacja zestawu Test Base Python SDK](/python/api/overview/azure/mgmt-testbase-readme)
+- [Przykład testu podstawowego zestawu SDK języka Python](https://aka.ms/testbase-sample-py)
+- [Wzorzec ogólnego użycia zestawu Python SDK na platformie Azure](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
 
-**Subskrypcja platformy Azure** 
+**Interfejs API REST**:
 
-- [Konto Azure z aktywną subskrypcją](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup)
-
-**Python SDK** 
-
-- [Dokumentacja zestawu SDK języka Base Python](/python/api/overview/azure/mgmt-testbase-readme)
-- [Test Base Python SDK Sample](https://aka.ms/testbase-sample-py)
-- [Azure General Usage Pattern of Python SDK](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
-
-**REST API**  
-
-- [Dokumentacja interfejsu API usługi REST](https://aka.ms/testbase-api)  
+- [Dokumentacja interfejsu API REST](https://aka.ms/testbase-api)

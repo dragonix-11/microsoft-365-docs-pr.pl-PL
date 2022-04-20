@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Użyj filtru oceny przewidywania, aby wyświetlić elementy, które model kodowania predykcyjnego są przewidywane jako odpowiednie lub nieistotne.
-ms.openlocfilehash: 261c77031eb0831db11878c2ce0c573eb3b9db6e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ab97c91196456b69f7f420ccd317747f638b4ee5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942298"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993079"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Stosowanie filtru wyniku przewidywania do zestawu przeglądów (wersja zapoznawcza)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po utworzeniu modelu kodowania predykcyjnego w usłudze Microsoft Purview eDiscovery (Premium) i wytrenowaniu go do punktu, w którym jest on stabilny, można zastosować filtr oceny przewidywania, aby wyświetlić elementy zestawu przeglądów, które został określony przez model, są istotne (lub nieistotne). Podczas tworzenia modelu tworzony jest również odpowiedni filtr wyników przewidywania. Ten filtr umożliwia wyświetlanie elementów, do których przypisano wynik przewidywania w określonym zakresie. Ogólnie rzecz biorąc, wyniki przewidywania od **0** do **0,5** są przypisywane do elementów, które model przewidział, nie są istotne. Elementy przypisane do wyników przewidywania z **zakresu od .5** do **1.0** są elementami, które model przewidział, są istotne.
 

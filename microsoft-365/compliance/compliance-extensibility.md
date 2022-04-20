@@ -20,14 +20,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się więcej o rozszerzaniu rozwiązań usługi Microsoft Purview przy użyciu łączników danych innych firm i interfejsów API usługi Microsoft Graph.
-ms.openlocfilehash: e61cd2dfa8121a0925cc89fd5373569d9697936a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9d2c3235a29e2d25e24656a4ff94216cde925b6c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942760"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992265"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Rozszerzalność usługi Microsoft Purview i Microsoft Priva
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Rozwiązania Usługi Microsoft Purview pomagają organizacjom inteligentnie oceniać ryzyko związane ze zgodnością, zarządzać danymi poufnymi i chronić je oraz skutecznie reagować na wymagania prawne. Usługa Microsoft Purview jest bogata w scenariusze rozszerzalności i umożliwia organizacjom dostosowywanie, rozszerzanie, integrowanie, przyspieszanie i obsługę rozwiązań do zapewniania zgodności.
 

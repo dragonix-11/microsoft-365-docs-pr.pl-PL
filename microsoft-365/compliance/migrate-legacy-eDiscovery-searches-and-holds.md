@@ -15,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 5de25b0b1385e709a818b1ff797910ec4ee4ddfc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28f110c6b236721debdb5585263dd835f2a5a658
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949636"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993145"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migrowanie starszych wyszukiwań zbierania elektronicznych materiałów dowodowych i archiwizacji do portalu zgodności
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Portal zgodności usługi Microsoft Purview zapewnia ulepszone środowisko użycia zbierania elektronicznych elektronicznych materiałów dowodowych, w tym: wyższą niezawodność, lepszą wydajność i wiele funkcji dostosowanych do przepływów pracy zbierania elektronicznych materiałów dowodowych, w tym przypadki organizowania zawartości według materii, zestawy przeglądów w celu przeglądania zawartości i analizy, aby pomóc w usuwaniu danych w celu przeglądu, takiego jak zduplikowane grupowanie, wątki wiadomości e-mail, analiza motywów i kodowanie predykcyjne.
 
 Aby ułatwić klientom korzystanie z nowych i ulepszonych funkcji, ten artykuł zawiera podstawowe wskazówki dotyczące migracji In-Place wyszukiwania zbierania elektronicznych materiałów dowodowych i archiwizacji z <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centrum administracyjnego Exchange</a> do portalu zgodności.
 
 > [!NOTE]
-> Ponieważ istnieje wiele różnych scenariuszy, ten artykuł zawiera ogólne wskazówki dotyczące przenoszenia wyszukiwań i archiwizacji do podstawowego przypadku zbierania elektronicznych materiałów dowodowych w portalu zgodności. Przypadki zbierania elektronicznych materiałów dowodowych nie zawsze są wymagane, ale dodają dodatkową warstwę zabezpieczeń, umożliwiając przypisanie uprawnień do kontrolowania, kto ma dostęp do przypadków zbierania elektronicznych materiałów dowodowych w organizacji.
+> Ponieważ istnieje wiele różnych scenariuszy, ten artykuł zawiera ogólne wskazówki dotyczące przenoszenia wyszukiwań i archiwizacji do przypadku zbierania elektronicznych materiałów dowodowych (Standard) w portalu zgodności. Przypadki zbierania elektronicznych materiałów dowodowych nie zawsze są wymagane, ale dodają dodatkową warstwę zabezpieczeń, umożliwiając przypisanie uprawnień do kontrolowania, kto ma dostęp do przypadków zbierania elektronicznych materiałów dowodowych w organizacji.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 

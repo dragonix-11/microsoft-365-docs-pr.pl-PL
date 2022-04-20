@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych CellTrust z usługi Veritas w celu Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 2ba6a10b04c0b4444c0c6e8908089293552d7540
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c32e81d1e9909d691a1adf04ea90669817992060
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938736"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992749"
 ---
 # <a name="set-up-a-connector-to-archive-celltrust-data"></a>Konfigurowanie łącznika do archiwizowania danych CellTrust
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z platformy CellTrust do skrzynek pocztowych użytkowników w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [CellTrust](https://globanet.com/celltrust/), który przechwytuje elementy ze źródła danych innych firm i importuje te elementy do Microsoft 365. Łącznik konwertuje zawartość wiadomości SMS z kont CellTrust na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej użytkownika w Microsoft 365.
 

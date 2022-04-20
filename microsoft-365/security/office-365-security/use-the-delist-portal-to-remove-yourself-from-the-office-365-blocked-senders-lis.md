@@ -20,12 +20,12 @@ ms.custom:
 description: W tym artykule dowiesz się, jak usunąć siebie z listy zablokowanych nadawców platformy Microsoft 365 za pomocą portalu usuwania listy. Jest to najlepsza odpowiedź na rozwiązanie problemu z błędami „5.7.511 Odmowa dostępu”.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 627e8f91c9d4730fed6a7fca275e9d53e1dfd7fd
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 43637f8eb72d078223236f78b45034218e34bcbc
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474800"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971137"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Użyj portalu usuwania z listy, aby usunąć siebie z listy zablokowanych nadawców i rozwiąż problem z błędami „5.7.511 Odmowa dostępu”
 
@@ -66,7 +66,6 @@ Istnieją uzasadnione powody, dla których nadawcy trafiają na listę zablokowa
     Portal wysyła wiadomość e-mail na podany adres e-mail. Wiadomość e-mail będzie wyglądać mniej więcej tak:
 
     :::image type="content" source="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png" alt-text="Wiadomość e-mail otrzymana podczas przesyłania żądania za pomocą portalu usuwania z listy" lightbox="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png":::
-
 
 4. Kliknij link potwierdzenia w wiadomości e-mail wysłanej przez portal do usuwania z listy.
 

@@ -18,14 +18,16 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak zarządzać częściowo indeksowanymi elementami (nazywanymi również elementami niezaindeksowanymi) z Exchange, SharePoint i OneDrive dla Firm w organizacji.
-ms.openlocfilehash: 8dd5235027a4563ad868d8ebe28c8dab50fb6376
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0cab31f56576cac9cbe7b51ea2cdceb49aff6db9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944772"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993123"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Badanie częściowo zaindeksowanych elementów w środowisku zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Wyszukiwanie zbierania elektronicznych materiałów dowodowych uruchamiane w portalu zgodności usługi Microsoft Purview automatycznie uwzględnia częściowo zaindeksowane elementy w szacowanych wynikach wyszukiwania podczas uruchamiania wyszukiwania. Częściowo indeksowane elementy są Exchange elementów skrzynki pocztowej i dokumentów w witrynach SharePoint i OneDrive dla Firm, które z jakiegoś powodu nie zostały całkowicie zindeksowane do wyszukiwania. Większość wiadomości e-mail i dokumentów witryny jest pomyślnie indeksowana, ponieważ mieszczą się one w [limitach indeksowania dla wiadomości e-mail](limits-for-content-search.md#indexing-limits-for-email-messages). Jednak niektóre elementy mogą przekroczyć te limity indeksowania i zostaną częściowo zindeksowane. Poniżej przedstawiono inne powody, dla których nie można indeksować elementów do wyszukiwania i są zwracane jako częściowo indeksowane elementy podczas uruchamiania wyszukiwania zbierania elektronicznych materiałów dowodowych:
   

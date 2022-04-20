@@ -18,12 +18,12 @@ ms.custom: ''
 description: Administratorzy mogą dowiedzieć się, jak skonfigurować skrzynkę pocztową do zbierania wiadomości e-mail dotyczących spamu i wyłudzania informacji zgłaszanych przez użytkowników.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4b86341434c05f18e1dd264b6fdabef8e36f2d29
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: a2e57c5dbfb8738eb9e554a3207679bfd48c6f60
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705368"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970917"
 ---
 # <a name="user-reported-message-settings"></a>Ustawienia komunikatów zgłoszonych przez użytkownika
 
@@ -124,13 +124,16 @@ Po upewnieniu się, że skrzynka pocztowa spełnia wszystkie odpowiednie wymagan
 
    - **Przycisk komunikatu raportu kwarantanny**: włącz tę funkcję, jeśli chcesz zezwolić użytkownikom końcowym na zgłaszanie komunikatów z kwarantanny.
 
-   Po zakończeniu kliknij przycisk **Potwierdź**. Aby wyczyścić te wartości, kliknij przycisk **Przywróć**
+3. Po zakończeniu kliknij przycisk **Potwierdź**. Aby wyczyścić te wartości, kliknij przycisk **Przywróć**.
 
 ## <a name="third-party-reporting-tools"></a>Narzędzia do raportowania innych firm
 
 Możesz skonfigurować narzędzia do raportowania wiadomości innych firm, aby wysyłać zgłoszone wiadomości do niestandardowej skrzynki pocztowej. W tym celu należy **ustawić ustawienie przycisku Komunikat raportu firmy Microsoft Outlook** na **Wartość Wyłączone** i ustawić **skrzynkę pocztową mojej organizacji** na wybraną Office 365 skrzynkę pocztową.
 
-Jedynym wymaganiem jest uwzględnienie oryginalnego komunikatu jako . EML lub . Załącznik msg (nieskompresowany) w wiadomości wysyłanej do niestandardowej skrzynki pocztowej (nie przekazuj oryginalnej wiadomości do niestandardowej skrzynki pocztowej).
+Jedynym wymaganiem jest uwzględnienie oryginalnego komunikatu jako . EML lub . Załącznik msg (nieskompresowany) w wiadomości wysyłanej do niestandardowej skrzynki pocztowej (nie przekazuj oryginalnej wiadomości do niestandardowej skrzynki pocztowej). 
+
+ > [!NOTE]
+ > Jeśli w wiadomości e-mail znajduje się wiele załączników wiadomości e-mail, przesłanie zostanie odrzucone. Obsługujemy tylko wiadomości e-mail z jednym załącznikiem wiadomości e-mail.
 
 Wymagania dotyczące formatowania komunikatów zostały opisane w następnej sekcji. Formatowanie jest opcjonalne, ale jeśli nie jest zgodne z określonym formatem, raporty będą zawsze przesyłane jako phish.
 
@@ -151,6 +154,5 @@ Przykład:
 
 - Oba te komunikaty są zgłaszane jako nie-śmieci na podstawie tematu.
 - Reszta jest ignorowana.
-
 
 Komunikaty, które nie są zgodne z tym formatem, nie będą wyświetlane poprawnie w portalu Przesłane.

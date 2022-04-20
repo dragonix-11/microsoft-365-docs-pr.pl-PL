@@ -18,20 +18,22 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Dowiedz się więcej na temat żądań skrytki klienta, które umożliwiają kontrolowanie sposobu, w jaki inżynier pomocy technicznej firmy Microsoft może uzyskiwać dostęp do danych w przypadku wystąpienia problemu.
-ms.openlocfilehash: 8f875f485830d59af733c6c76a5a3d297bedb2cc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cf9a2a6d682ca87e97986389f640a536775ca014
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759948"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953831"
 ---
-# <a name="customer-lockbox-in-office-365"></a>Skrytka klienta w Office 365
+# <a name="microsoft-purview-customer-lockbox"></a>Microsoft Purview Customer Lockbox
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Ten artykuł zawiera wskazówki dotyczące wdrażania i konfiguracji dla skrytki klienta. Skrytka klienta obsługuje żądania dostępu do danych w Exchange Online, SharePoint Online, OneDrive dla Firm i Teams. Aby zalecić obsługę innych usług, prześlij żądanie w [portalu opinii](https://feedbackportal.microsoft.com).
 
-Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z ofert zgodności Microsoft 365, zobacz [wskazówki dotyczące licencjonowania Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z ofert usługi Microsoft Purview, zobacz [wskazówki dotyczące licencjonowania Microsoft 365 dotyczące zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-Skrytka klienta zapewnia, że firma Microsoft nie może uzyskać dostępu do Zawartości w celu wykonywania operacji usług bez twojej jawnej zgody. Skrytka klienta umożliwia przejście do procesu przepływu pracy zatwierdzania używanego przez firmę Microsoft w celu zapewnienia, że tylko autoryzowane żądania zezwalają na dostęp do zawartości. Aby dowiedzieć się więcej na temat procesu przepływu pracy firmy Microsoft, zobacz [Privileged access management in Microsoft 365 (Zarządzanie dostępem uprzywilejowanym w Microsoft 365](privileged-access-management-solution-overview.md)).
+Skrytka klienta zapewnia, że firma Microsoft nie może uzyskać dostępu do Zawartości w celu wykonywania operacji usług bez twojej jawnej zgody. Skrytka klienta umożliwia przejście do procesu przepływu pracy zatwierdzania używanego przez firmę Microsoft w celu zapewnienia, że tylko autoryzowane żądania zezwalają na dostęp do zawartości. Aby dowiedzieć się więcej na temat procesu przepływu pracy firmy Microsoft, zobacz [Privileged access management (Zarządzanie dostępem uprzywilejowanym](privileged-access-management-solution-overview.md)).
 
 Od czasu do czasu inżynierowie firmy Microsoft pomagają rozwiązywać problemy występujące w usłudze. Zazwyczaj inżynierowie rozwiązują problemy z używaniem rozbudowanych narzędzi telemetrycznych i debugowania, które firma Microsoft ma w swoich usługach. Jednak w niektórych przypadkach inżynier firmy Microsoft musi uzyskać dostęp do zawartości w celu ustalenia głównej przyczyny i rozwiązania problemu. Skrytka klienta wymaga od inżyniera żądania dostępu od Ciebie jako ostatniego kroku w przepływie pracy zatwierdzania. Daje to możliwość zatwierdzenia lub odrzucenia żądania dla organizacji i zapewnienia bezpośredniej kontroli dostępu do zawartości.
 
@@ -102,15 +104,15 @@ Kontrolki Skrytka klienta można włączyć w Centrum administracyjne platformy 
     ![Odmów żądań skrytki klienta.](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Użyj polecenia cmdlet Set-AccessToCustomerDataRequest, aby zatwierdzać, odrzucać lub anulować żądania Microsoft 365 skrytki klienta, które kontrolują dostęp do danych przez inżynierów pomocy technicznej firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
+> Użyj polecenia cmdlet Set-AccessToCustomerDataRequest, aby zatwierdzać, odrzucać lub anulować żądania skrytki klienta usługi Microsoft Purview kontrolujące dostęp do danych przez inżynierów pomocy technicznej firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 ## <a name="auditing-customer-lockbox-requests"></a>Inspekcja żądań skrytki klienta
 
-Rekordy inspekcji odpowiadające żądaniom skrytki klienta są rejestrowane w dzienniku inspekcji Microsoft 365. Dostęp do tych dzienników można uzyskać za pomocą [narzędzia do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w Centrum zgodności platformy Microsoft 365. Akcje związane z akceptowaniem lub odrzucaniem żądania skrytki klienta oraz akcjami wykonywanymi przez inżynierów firmy Microsoft (po zatwierdzeniu żądań dostępu) są również rejestrowane w dzienniku inspekcji. Możesz wyszukać i przejrzeć te rekordy inspekcji.
+Rekordy inspekcji odpowiadające żądaniom skrytki klienta są rejestrowane w dzienniku inspekcji Microsoft 365. Dostęp do tych dzienników można uzyskać za pomocą [narzędzia do wyszukiwania dzienników inspekcji](search-the-audit-log-in-security-and-compliance.md) w portalu zgodności usługi Microsoft Purview. Akcje związane z akceptowaniem lub odrzucaniem żądania skrytki klienta oraz akcjami wykonywanymi przez inżynierów firmy Microsoft (po zatwierdzeniu żądań dostępu) są również rejestrowane w dzienniku inspekcji. Możesz wyszukać i przejrzeć te rekordy inspekcji.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Wyszukaj w dzienniku inspekcji aktywność związaną z żądaniami skrzynki blokady klienta
 
-Zanim będzie można użyć dziennika inspekcji do śledzenia żądań dotyczących skrytki klienta, należy wykonać kilka kroków w celu skonfigurowania rejestrowania inspekcji, w tym przypisania uprawnień do przeszukiwania dziennika inspekcji. Aby uzyskać więcej informacji, zobacz [Konfigurowanie inspekcji podstawowej w Microsoft 365](set-up-basic-audit.md). Po zakończeniu konfiguracji wykonaj następujące kroki, aby utworzyć zapytanie wyszukiwania dzienników inspekcji w celu zwrócenia rekordów inspekcji związanych ze skrytą klienta:
+Zanim będzie można użyć dziennika inspekcji do śledzenia żądań dotyczących skrytki klienta, należy wykonać kilka kroków w celu skonfigurowania rejestrowania inspekcji, w tym przypisania uprawnień do przeszukiwania dziennika inspekcji. Aby uzyskać więcej informacji, zobacz [Konfigurowanie inspekcji usługi Microsoft Purview (Standardowa).](set-up-basic-audit.md) Po zakończeniu konfiguracji wykonaj następujące kroki, aby utworzyć zapytanie wyszukiwania dzienników inspekcji w celu zwrócenia rekordów inspekcji związanych ze skrytą klienta:
 
 1. Przejdź do <https://compliance.microsoft.com>.
   
@@ -159,7 +161,7 @@ Po pobraniu pliku można go otworzyć w Excel, a następnie filtrować w kolumni
 
 ### <a name="use-powershell-to-search-and-export-audit-records"></a>Wyszukiwanie i eksportowanie rekordów inspekcji przy użyciu programu PowerShell
 
-Alternatywą dla używania narzędzia do wyszukiwania inspekcji w Centrum zgodności platformy Microsoft 365 jest uruchomienie polecenia cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online programu PowerShell. Jedną z zalet korzystania z programu PowerShell jest możliwość wyszukiwania działań lub działań **set-AccessToCustomerDataRequest** wykonywanych przez inżynierów firmy Microsoft związanych z żądaniem skrytki klienta.
+Alternatywą dla używania narzędzia do wyszukiwania inspekcji w portalu zgodności usługi Microsoft Purview jest uruchomienie polecenia cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) w programie Exchange Online programu PowerShell. Jedną z zalet korzystania z programu PowerShell jest możliwość wyszukiwania działań lub działań **set-AccessToCustomerDataRequest** wykonywanych przez inżynierów firmy Microsoft związanych z żądaniem skrytki klienta.
 
 Po [nawiązaniu połączenia z programem Exchange Online programu PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) uruchom jedno z następujących poleceń. Zastąp symbole zastępcze określonym zakresem dat.
 

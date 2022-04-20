@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Dowiedz się więcej o niezaimportowanych elementach w Exchange i SharePoint, które można uwzględnić w wyszukiwaniu zbierania elektronicznych materiałów dowodowych uruchamianym w portalu zgodności usługi Microsoft Purview.
-ms.openlocfilehash: 3e4f9521151755f97f3ad4b824c763f3ab5d807f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b88e7d0f6651ecaa31849343db066295af1f5e84
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932050"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993101"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Częściowo zaindeksowane elementy w środowisku zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Wyszukiwanie zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview uruchamiane w portalu zgodności usługi Microsoft Purview automatycznie uwzględnia częściowo indeksowane elementy w szacowanych wynikach wyszukiwania podczas uruchamiania wyszukiwania. Częściowo indeksowane elementy są Exchange elementów skrzynki pocztowej i dokumentów w witrynach SharePoint i OneDrive dla Firm, które z jakiegoś powodu nie zostały całkowicie zindeksowane do wyszukiwania. W Exchange częściowo indeksowany element zwykle zawiera plik (typu pliku, który nie może być indeksowany), który jest dołączony do wiadomości e-mail. Oto kilka innych powodów, dla których nie można indeksować elementów do wyszukiwania i są zwracane jako częściowo indeksowane elementy podczas uruchamiania wyszukiwania zbierania elektronicznych materiałów dowodowych:
   

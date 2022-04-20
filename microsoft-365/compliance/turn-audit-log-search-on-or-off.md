@@ -20,14 +20,16 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Jak włączyć lub wyłączyć funkcję wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview, aby włączyć lub wyłączyć możliwość przeszukiwania dziennika inspekcji przez administratorów.
-ms.openlocfilehash: 587c7f98cd04eef618508e096f290d1d299ec096
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e74effad1803b9a55167d1cd3bb5725bd042616a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944530"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991825"
 ---
 # <a name="turn-auditing-on-or-off"></a>Włącz lub wyłącz inspekcję
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Rejestrowanie inspekcji zostanie domyślnie włączone dla organizacji Microsoft 365 i Office 365 przedsiębiorstw. Jednak podczas konfigurowania nowej organizacji Microsoft 365 lub Office 365 należy zweryfikować stan inspekcji organizacji. Aby uzyskać instrukcje, zobacz [sekcję Weryfikowanie stanu inspekcji organizacji](#verify-the-auditing-status-for-your-organization) w tym artykule. 
 

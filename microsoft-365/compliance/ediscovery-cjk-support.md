@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak usługa Microsoft Purview eDiscovery (Premium) w Microsoft 365 obsługuje języki chiński, japoński i koreański (CJK), które używają zestawu znaków dwubajtowych.
-ms.openlocfilehash: 70081341499f348f1bb8e226b4d3b5e9c0bab031
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e6221d37a3ebb07414f87f349b020365c80990e3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934802"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992221"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>Obsługa języka CJK dla eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Usługa Microsoft Purview eDiscovery (Premium) obsługuje języki zestawu znaków dwubajtowych (obejmują one uproszczone języki chiński, chiński tradycyjny, japoński i koreański, które są łącznie znane jako języki *CJK*) dla następujących zaawansowanych scenariuszy w zestawie przeglądów:
 

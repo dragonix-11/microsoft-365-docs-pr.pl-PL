@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Za pomocą edytora KQL można skonfigurować zapytania wyszukiwania zbierania elektronicznych materiałów dowodowych w obszarze Wyszukiwanie zawartości, zbierania elektronicznych materiałów dowodowych (Standard) i eDiscovery (Premium).
-ms.openlocfilehash: f1339b064c736d19bb428f812429cf0620cb3f53
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cbd7adb02c926477fd81568ed950ebd16110c79b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949966"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993803"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>Twórz zapytania wyszukiwania za pomocą edytora KQL
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Nowe środowisko zapytań KQL w wyszukiwaniu narzędzi do zbierania elektronicznych materiałów dowodowych Microsoft 365 udostępnia opinie i wskazówki podczas tworzenia zapytań wyszukiwania w obszarze Wyszukiwanie zawartości, Microsoft Purview eDiscovery (Standard) i eDiscovery (Premium). Wpisywanie zapytań w edytorze zapewnia automatyczne uzupełnianie obsługiwanych właściwości i warunków z możliwością wyszukiwania oraz zawiera listy obsługiwanych wartości standardowych właściwości i warunków. Jeśli na przykład określisz właściwość `kind` poczty e-mail w zapytaniu, edytor wyświetli listę obsługiwanych wartości, które można wybrać. Edytor KQL wyświetla również potencjalne błędy zapytań w czasie rzeczywistym, które można naprawić przed uruchomieniem wyszukiwania. Najlepiej jest wkleić złożone zapytania bezpośrednio do edytora bez konieczności ręcznego tworzenia zapytań przy użyciu kart słów kluczowych i warunków w konstruktorze warunków standardowych.
   

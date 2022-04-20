@@ -1,5 +1,5 @@
 ---
-title: Planowanie ochrony przed utratą danych
+title: Zaplanuj ochronę przed utratą danych
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,74 +14,76 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Omówienie procesu planowania w celu ochrony przed utratą danych
-ms.openlocfilehash: c695a6a2a4bd21a147e5e81bc73fb65ab1378960
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+description: Omówienie procesu planowania zapobiegania utracie danych
+ms.openlocfilehash: 68e2b3145521433dd8e0f602b8edb571c45ed9df
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63005254"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953454"
 ---
-# <a name="plan-for-data-loss-prevention-dlp"></a>Planowanie ochrony przed utratą danych (DLP)
+# <a name="plan-for-data-loss-prevention-dlp"></a>Planowanie zapobiegania utracie danych (DLP)
 
-Każda organizacja będzie zaplanować i wdrożyć zapobieganie utracie danych (DLP) w inny sposób, ponieważ potrzeby biznesowe, cele, zasoby i sytuacje każdej organizacji są unikatowe. Istnieją jednak elementy wspólne dla wszystkich skutecznych implementacji DLP. W tym artykule przedstawiliśmy najlepsze rozwiązania używane przez organizacje w planowaniu ochrony przed firmami.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Każda organizacja będzie inaczej planować i implementować zapobieganie utracie danych, ponieważ potrzeby biznesowe, cele, zasoby i sytuacja każdej organizacji są dla nich unikatowe. Istnieją jednak elementy, które są wspólne dla wszystkich pomyślnych implementacji DLP. W tym artykule przedstawiono najlepsze rozwiązania, które są używane przez organizacje w planowaniu DLP.
 
 ## <a name="multiple-starting-points"></a>Wiele punktów początkowych
 
-Wiele organizacji decyduje się na wdrożenie zasad DLP w celu zapewnienia zgodności z różnymi przepisami rządowymi lub branżowymi. Może to być na przykład Ogólne Rozporządzenie o Ochronie Danych (RODO) Unii Europejskiej, ustawa HIPAA (Health Insurance Portability and Accountability Act) albo california Consumer Privacy Act (HDMIA). Ponadto wdrażają zabezpieczenia przed utratą danych w celu ochrony swojej własności intelektualnej. Jednak miejsce rozpoczęcia i najlepsze miejsce docelowe podczas podróży w programie DLP różnią się. 
+Wiele organizacji decyduje się na wdrożenie DLP w celu zachowania zgodności z różnymi przepisami rządowymi lub branżowymi. Na przykład ogólne rozporządzenie o ochronie danych (RODO) Unii Europejskiej lub ustawę o przenośności i odpowiedzialności ubezpieczeń zdrowotnych (HIPAA) lub kalifornijską ustawę o ochronie prywatności konsumentów (CCPA). Wdrażają również ochronę przed utratą danych, aby chronić swoją własność intelektualną. Ale miejsce początkowe i ostateczny cel podróży DLP różnią się. 
 
-Organizacje mogą rozpocząć swoją podróż w celu lp:
+Organizacje mogą rozpocząć swoją podróż DLP:
 
-- z fokusu platformy, np. gdy chcesz chronić informacje w wiadomościach Teams wiadomościach czatu i kanałach lub na Windows 10 urządzeniach
-- wiedza o tym, jakie informacje poufne chcą określić priorytet ochrony, na przykład dokumentację opieki zdrowotnej, i od razu o definiowaniu zasad ochrony
-- nie znając, co to są informacje poufne, gdzie to jest i kto co z tym robi, zaczyna od odnajdowania i kategoryzacji oraz bardziej metodycznego podejścia
-- nie znając, co to są informacje poufne, czy gdzie to jest lub kto z tym coś robi, ale od razu przechodzi do definiowania zasad i używa ich jako punktu wyjścia, a następnie uściśli swoje zasady.
-- wiedza o potrzebie wdrożenia pełnego zestawu danych Microsoft 365 Informacji i w związku z tym, że będą oni mieli bardziej długoterminowe, metodyczne podejście
+- z poziomu platformy, na przykład chcesz chronić informacje w Teams wiadomościach czatu i kanału lub na urządzeniach Windows 10
+- znajomość informacji poufnych, które chcą nadać priorytet ochronie, na przykład dokumentacji służby zdrowia, i przejście bezpośrednio do definiowania zasad ich ochrony
+- nie wiedząc, czym są ich poufne informacje, gdzie to jest i kto robi to, co z nim zrobić, aby zacząć od odkrycia i kategoryzacji i przyjąć bardziej metodyczne podejście
+- nie wiedząc, czym są ich poufne informacje, gdzie są lub kto z nimi robi, ale przejdą od razu do definiowania zasad i wykorzystywania tych wyników jako miejsca początkowego, a następnie uściślają swoją politykę stamtąd
+- wiedząc, że muszą zaimplementować pełny stos Information Protection usługi Microsoft Purview i dlatego zamierzają przyjąć długoterminowe, metodyczne podejście
 
-To tylko kilka przykładów tego, jak klienci mogą korzystać z ochrony przed utratą danych i od którego zaczynasz, rozwiązanie Microsoft 365 DLP jest wystarczająco elastyczne, aby uwzględnić różnego rodzaju podróże w celu ochrony informacji od początku do w pełni zrealizowanej strategii ochrony przed utratą danych. 
+To tylko kilka przykładów sposobu, w jaki klienci mogą podejść do DLP i nie ma znaczenia, od czego zaczynasz, DLP jest wystarczająco elastyczna, aby pomieścić różne rodzaje podróży ochrony informacji od początku do w pełni zrealizowanej strategii zapobiegania utracie danych. 
 
 ## <a name="overview-of-planning-process"></a>Omówienie procesu planowania
 
-Informacje [na temat ochrony przed utratą](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) danych przedstawią trzy różne aspekty procesu [planowania ochrony](dlp-learn-about-dlp.md#plan-for-dlp) przed utratą danych. W tym miejscu opisano szczegółowo elementy wspólne dla wszystkich planów DLP.
+Informacje [o zapobieganiu utracie danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) wprowadzają trzy różne aspekty [procesu planowania DLP](dlp-learn-about-dlp.md#plan-for-dlp). Więcej szczegółów znajdziesz tutaj na temat elementów, które są wspólne dla wszystkich planów DLP.
 
 ### <a name="identify-stakeholders"></a>Identyfikowanie uczestników projektu
 
-Po zaimplementowaniu zasady DLP można stosować w dużej części organizacji. IT nie może samodzielnie opracować szerokiego planu bez negatywnych konsekwencji. Musisz zidentyfikować uczestników projektu, którzy mogą:
+Po zaimplementowaniu zasady DLP mogą być stosowane w dużych częściach organizacji. IT nie może samodzielnie opracować szerokiego planu bez negatywnych konsekwencji. Należy zidentyfikować osoby biorące udział w projekcie, które mogą:
 
-- opisać przepisy, przepisy i standardy branżowe, których podlega Twoja organizacja
+- opisz przepisy, przepisy i standardy branżowe, których organizacja podlega
 - kategorie elementów poufnych, które mają być chronione
-- procesów biznesowych, w których są używane
+- procesów biznesowych, w których są one używane
 - ryzykowne zachowanie, które powinno być ograniczone
-- określanie priorytetu, które dane powinny być najpierw chronione, na podstawie wrażliwości danych i ryzyka
-- konspekt procesu przeglądu i rozwiązywania problemów zgodnego ze zdarzeniami zasad DLP 
+- priorytetyzowania, które dane powinny być chronione w pierwszej kolejności w oparciu o poufność elementów i związane z tym ryzyko
+- opis procesu przeglądu i korygowania zdarzeń zgodności zasad DLP 
  
-Zazwyczaj wymaga to 85% ochrony zgodności z przepisami i zgodnością oraz 15% ochrony własności intelektualnej. Oto kilka sugestii dotyczących ról, które należy uwzględnić w procesie planowania:
+Ogólnie rzecz biorąc, te potrzeby zwykle obejmują 85% ochronę przepisów i zgodności oraz 15% ochronę własności intelektualnej. Poniżej przedstawiono kilka sugestii dotyczących ról do uwzględnienia w procesie planowania:
 
-- Insektnicy przepisami i zgodnością
-- Główny dyrektor ds. ryzyka
-- Prawnicy
-- Służby ds. zabezpieczeń i zgodności
-- Właściciele firmy dla elementów danych
+- Urzędnicy ds. przepisów i zgodności
+- Dyrektor ds. ryzyka
+- Urzędnicy prawni
+- Funkcjonariusze ds. zabezpieczeń i zgodności
+- Właściciele firm dla elementów danych
 - Użytkownicy biznesowi
 - IT
 
-### <a name="describe-the-categories-of-sensitive-information-to-protect"></a>Opis kategorii informacji poufnych, które mają być chronine
+### <a name="describe-the-categories-of-sensitive-information-to-protect"></a>Opis kategorii informacji poufnych w celu ochrony
 
-Następnie uczestnicy projektu opisują kategorie informacji poufnych, które mają być chronione, oraz proces biznesowy, w których są używane. Na przykład zasady Microsoft 365 DLP określają następujące kategorie:
+Następnie uczestnicy projektu opisują kategorie poufnych informacji, które mają być chronione, oraz proces biznesowy, w którym są używane. Na przykład DLP definiuje następujące kategorie:
 
-- Finanse 
-- Informacje medyczne i informacje o stanie zdrowia
+- Finansowych 
+- Informacje medyczne i zdrowotne
 - Prywatność
 - Niestandardowe
 
-Udziałowcy mogą zidentyfikować informacje poufne jako "Jesteśmy przetwarzaniem danych, więc musimy zaimplementować ochronę prywatności w odniesieniu do informacji o podmiotach danych i informacji finansowych".
+Osoby biorące udział w projekcie mogą zidentyfikować poufne informacje jako "Jesteśmy podmiotem przetwarzającym dane, dlatego musimy wdrożyć ochronę prywatności w zakresie informacji o podmiotach danych i informacji finansowych".
 
  
   <!-- The business process is important as it informs the ‘data at rest’, ‘data in transit’, ‘data in use’ aspect of DLP planning and who should be sharing the items and who should not.-->
 
 ### <a name="set-goals-and-strategy"></a>Ustawianie celów i strategii
 
-Po zidentyfikowaniu uczestników projektu i rozpoznaniu, które informacje poufne są potrzebne do ochrony i miejsca ich stosowania, uczestnicy projektu mogą określić cele ochrony i mogą opracować plan implementacji. 
+Po zidentyfikowaniu uczestników projektu i określeniu, które poufne informacje wymagają ochrony i gdzie są używane, uczestnicy projektu mogą określić swoje cele w zakresie ochrony, a dział IT może opracować plan wdrożenia. 
 
 
  <!--
@@ -98,110 +100,110 @@ start small and always in test mode. Note that DLP policies can feed into inside
 
 ### <a name="set-implementation-plan"></a>Ustawianie planu implementacji
 
-Plan implementacji powinien zawierać:
+Plan implementacji powinien obejmować:
 
-- Mapowanie stanu początkowego i odpowiedniego stanu końcowego oraz czynności, które należy wykonać, aby nasyłać dane z jednego stanu początkowego do drugiego
-- jak będzie dotyczyć odnajdowania elementów poufnych
-- planowanie zasad i kolejność ich wdrożenia
-- sposób rozwiązania wszelkich wymagań wstępnych
-- Planowanie, jak zasady będą najpierw testowane przed przejściem do wymuszeń
-- jak przeszkolisz użytkowników końcowych
-- jak testować i dostrajać zasady
-- jak przeglądasz i aktualizujesz strategię ochrony przed utratą danych opartą na zmianie wymogów prawnych, prawnych, branżowych lub ochrony własności intelektualnej oraz potrzeb biznesowych
+- Mapowanie stanu początkowego i żądanego stanu końcowego oraz kroków, które należy wykonać z jednego do drugiego
+- sposób rozwiązywania problemów z odnajdywaniem poufnych elementów
+- planowania zasad i kolejności, w jakiej zostaną one zaimplementowane
+- jak będziesz rozwiązywać wszelkie wymagania wstępne
+- planowanie sposobu testowania zasad przed przejściem do wymuszania
+- jak będziesz szkolić użytkowników końcowych
+- jak będziesz testować i dostrajać zasady
+- jak będziesz przeglądać i aktualizować strategię zapobiegania utracie danych w oparciu o zmieniające się wymagania prawne, prawne, branżowe lub ochrony własności intelektualnej i potrzeb biznesowych
 
-#### <a name="map-out-path-from-start-to-desired-end-state"></a>Mapowanie ścieżki od początku do odpowiedniego stanu końcowego
+#### <a name="map-out-path-from-start-to-desired-end-state"></a>Mapowanie ścieżki od początku do żądanego stanu końcowego
 
-Dokumentowanie sposobu, w jaki Twoja organizacja będzie się rozpoczynać od stanu początkowego do odpowiedniego stanu końcowego, ma kluczowe znaczenie dla komunikowania się z uczestnikami projektu i ustawiania zakresu projektu. Poniżej znajduje się zestaw czynności, które są często używane do wdrażania zasad DLP. Będziesz chcieć uzyskać więcej szczegółów, ale możesz użyć ich do ramek ścieżki przyjęcia funkcji DLP.
+Dokumentowanie sposobu, w jaki organizacja będzie przechodzić od stanu początkowego do żądanego stanu końcowego, jest niezbędne do komunikowania się z uczestnikami projektu i ustawiania zakresu projektu. Oto zestaw kroków, które są często używane do wdrażania DLP. Będziesz wymagać więcej szczegółów niż to, ale możesz użyć tej metody, aby określić ścieżkę wdrażania DLP.
 
-![Grafika przedstawiająca kolejność wdrażania zasad DLP.](../media/dlp-deployment-planning.png)
+![grafika przedstawiająca wspólną kolejność wdrażania DLP.](../media/dlp-deployment-planning.png)
 
-#### <a name="sensitive-item-discovery"></a>Odnajdowanie poufnych elementów
+#### <a name="sensitive-item-discovery"></a>Odnajdywanie elementów poufnych
 
-Istnieje wiele sposobów odnajdywania poszczególnych poufnych elementów i ich zlokalizowania. Być może etykiety wrażliwości są już wdrożone lub zdecydowano się na wdrożenie szerokich zasad DLP we wszystkich lokalizacjach, w których są wykrywane i przeprowadzane inspekcje tylko tych elementów. Aby dowiedzieć się więcej, zobacz [Znając swoje dane](information-protection.md#know-your-data).
+Istnieje wiele sposobów odnajdywania poszczególnych poufnych elementów i ich lokalizacji. Być może masz już wdrożone etykiety poufności lub być może podjęto decyzję o wdrożeniu szerokich zasad DLP we wszystkich lokalizacjach, które wykrywają i przeprowadzają inspekcję tylko elementów. Aby dowiedzieć się więcej, zobacz [Know your data (Poznaj swoje dane](information-protection.md#know-your-data)).
 
 #### <a name="policy-planning"></a>Planowanie zasad
 
-Po rozpoczęciu wdrażania funkcji DLP możesz za pomocą tych pytań skoncentrować się na projektach zasad i działaniach wdrożeniowych.
+Po rozpoczęciu wdrażania DLP możesz użyć tych pytań, aby skoncentrować działania związane z projektowaniem i implementacją zasad.
 
-##### <a name="what-laws-regulations-and-industry-standards-must-your-organization-comply-with"></a>Jakie przepisy, przepisy i standardy branżowe muszą być zgodne z przepisami Twojej organizacji?
+##### <a name="what-laws-regulations-and-industry-standards-must-your-organization-comply-with"></a>Jakie przepisy, przepisy i standardy branżowe muszą być przestrzegane przez organizację?
 
-Ponieważ wiele organizacji chce zapewnić zgodność z przepisami, odpowiedź na to pytanie jest naturalnym punktem wyjścia do planowania wdrożenia tej zasady. Jednak jako implementer IT, prawdopodobnie nie jesteś w stanie na nie odpowiedzieć. Na nie muszą odpowiedzieć członkowie twojego zespołu prawnego i  kierownictwa firmy. 
+Ponieważ wiele organizacji przychodzi do DLP w celu zapewnienia zgodności z przepisami, udzielenie odpowiedzi na to pytanie jest naturalnym miejscem rozpoczęcia planowania implementacji DLP. Jednak jako implementator IT prawdopodobnie nie jesteś w stanie odpowiedzieć na to pytanie. Na to pytanie musi odpowiedzieć twój zespół prawny i kierownictwo firmy. 
  
-**Przykład** Twoja organizacja podlega Wielkiej Brytanii przepisów finansowych.
+**Przykład** Twoja organizacja podlega Zjednoczonej Brytanii finansowych.
 
 
-##### <a name="what-sensitive-items-does-your-organization-have-that-must-be-protected-from-leakage"></a>Jakie poufne elementy posiada Twoja organizacja, które muszą być chronione przed wyciekiem?
+##### <a name="what-sensitive-items-does-your-organization-have-that-must-be-protected-from-leakage"></a>Jakie elementy poufne ma organizacja, które muszą być chronione przed wyciekami?
 
-Gdy Twoja organizacja wie, gdzie należy się ona z punktu widzenia wymogów zgodności z przepisami, wiesz już, jakie poufne elementy muszą być chronione przed wyciekiem i jak chcesz określić priorytety implementacji zasad w celu ich ochrony. Pomoże Ci to w wybraniu najbardziej odpowiednich szablonów zasad DLP. Microsoft 365 zawiera wstępnie skonfigurowane szablony DLP do celów finansowych, medycznych i opieki zdrowotnej, prywatności, a także można utworzyć własne szablony przy użyciu szablonu Niestandardowe. Podczas projektowania i tworzenia rzeczywistych zasad DLP znajomość odpowiedzi na to pytanie pomoże także w wybraniu odpowiedniego typu [informacji poufnych](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
+Gdy twoja organizacja wie, gdzie znajduje się pod względem wymagań w zakresie zgodności z przepisami, będziesz mieć pewne pojęcie o tym, jakie elementy poufne muszą być chronione przed wyciekami i jak chcesz nadać priorytet implementacji zasad, aby je chronić. Pomoże to wybrać najbardziej odpowiednie szablony zasad DLP. Usługa Microsoft Purview zawiera wstępnie skonfigurowane szablony DLP dla usług finansowych, medycznych i zdrowotnych, prywatność i możesz utworzyć własne przy użyciu szablonu niestandardowego. Podczas projektowania i tworzenia rzeczywistych zasad DLP znajomość odpowiedzi na to pytanie pomoże Ci również wybrać odpowiedni [typ informacji poufnych](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
 
-**Przykład** Aby szybko rozpocząć pracę, wybierz `U.K. Financial Data` szablon zasad, który zawiera `Credit Card Number`typy informacji poufnych i , `EU Debit Card Number`.`SWIFT Code` 
+**Przykład** Aby szybko rozpocząć pracę`U.K. Financial Data`, wybierz szablon zasad, który zawiera `Credit Card Number`typy informacji poufnych , `EU Debit Card Number`i .`SWIFT Code` 
 
-##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>Gdzie znajdują się elementy poufne i z jakim procesem biznesowym są one związane?
+##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>Gdzie są elementy poufne i w jakie procesy biznesowe są zaangażowane?
 
-Elementy, które zawierają informacje poufne organizacji, są używane na co dzień w ramach prowadzenia działalności biznesowej. Musisz wiedzieć, gdzie mogą wystąpić wystąpienia tych informacji poufnych i w jakich procesach biznesowych są one używane. Pomoże ci to wybrać odpowiednie lokalizacje, do których mają być stosowane zasady DLP. Microsoft 365 DLP są stosowane do lokalizacji:
+Elementy zawierające informacje poufne organizacji są używane codziennie w trakcie prowadzenia działalności. Musisz wiedzieć, gdzie mogą wystąpić wystąpienia tych poufnych informacji i w jakich procesach biznesowych są one używane. Ułatwi to wybranie odpowiednich lokalizacji do zastosowania zasad DLP. Zasady DLP są stosowane do lokalizacji:
 
-- Exchange-mail
-- SharePoint witryn
-- OneDrive konta
-- Teams wiadomości czatu i kanałów
-- Windows 10 urządzenia
-- Usługa Microsoft Defender dla aplikacji w chmurze
+- Exchange e-mail
+- witryny SharePoint
+- konta OneDrive
+- Teams wiadomości czatu i kanału
+- urządzenia Windows 10
+- Microsoft Defender for Cloud Apps
 - Repozytoria lokalne
 
-**Przykład** Wewnętrzni audytorzy w Twojej organizacji śledzą zestaw numerów kart kredytowych. Przechowują one arkusz kalkulacyjny w bezpiecznym SharePoint sieci Web. Kilku pracowników kopiuje i zapisuje je w witrynie OneDrive dla Firm pracy, która jest synchronizowana z ich Windows 10 urządzeniami. Jeden z nich wkleja listę 14 z nich w wiadomości e-mail i próbuje przesłać ją do audytorów zewnętrznych w celu sprawdzenia. Możesz zastosować te zasady do bezpiecznej witryny usługi SharePoint, wszystkich audytorów wewnętrznych w OneDrive dla Firm, ich urządzeń Windows 10 i poczty Exchange e-mail.
+**Przykład** Audytorzy wewnętrzni organizacji śledzą zestaw numerów kart kredytowych. Przechowują arkusz kalkulacyjny w bezpiecznej witrynie SharePoint. Kilku pracowników tworzy kopie i zapisuje je w swojej pracy OneDrive dla Firm lokacji, która jest synchronizowana z urządzeniem Windows 10. Jeden z nich wkleja listę 14 z nich w wiadomości e-mail i próbuje wysłać ją do zewnętrznych audytorów w celu przeglądu. Zasady należy zastosować do bezpiecznej witryny SharePoint, wszystkich audytorów wewnętrznych OneDrive dla Firm kont, urządzeń Windows 10 i Exchange poczty e-mail.
 
-##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>Co to jest tolerancja organizacji do wycieku?
+##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>Jaka jest tolerancja organizacji na wycieki?
 
-Różne grupy w organizacji mogą mieć różne widoki na temat możliwego do przyjęcia poziomu wycieku poufnych elementów, a co nie. Uzyskanie tych informacji o zerowej wycieku może okazać się zbyt wysokie dla firmy.
+Różne grupy w organizacji mogą mieć różne poglądy na temat dopuszczalnego poziomu wycieków poufnych elementów, a co nie. Osiągnięcie perfekcji zerowego wycieku może mieć zbyt wysokie koszty dla firmy.
 
-**Przykład** Członkowie grupy zabezpieczeń organizacji wraz z zespołem ds. prawnych uważają, że nie należy udostępniać numerów kart kredytowych osobom spoza organizacji i podlegać wyciekom. W ramach regularnego przeglądu działań na numerach kart kredytowych audytorzy wewnętrzni muszą jednak udostępnić niektóre numery kart kredytowych audytorom innych podmiotów. Jeśli Twoje zasady DLP zabraniają udostępniania numerów kart kredytowych poza firmę, zakłócenie i dodatkowe koszty w celu zminimalizowania przerw w pracy audytorów wewnętrznych mogą pomóc w ukończeniu śledzenia tych danych przez audytorów wewnętrznych. Ten dodatkowy koszt nie jest nieakceptowalny dla kierownictwa kierownictwa. Aby rozwiązać ten problem, należy podjąć wewnętrzną konwersację, aby określić akceptowalny poziom wycieku. Gdy to postanowisz, zasady mogą udostępnić określone osoby w wyjątkach lub mogą być stosowane tylko w trybie inspekcji.
+**Przykład** Grupa zabezpieczeń organizacji, wraz z zespołem prawnym, uważa, że nie powinno być udostępniania numerów kart kredytowych nikomu spoza organizacji i nalegać na zerowy wyciek. Jednak w ramach regularnego przeglądu działalności związanej z numerami kart kredytowych audytorzy wewnętrzni muszą udostępnić niektóre numery kart kredytowych audytorom innych firm. Jeśli zasady DLP zabraniają udostępniania wszystkich numerów kart kredytowych poza organizacją, nastąpi znaczne zakłócenie procesu biznesowego i dodatkowe koszty w celu złagodzenia zakłóceń, aby audytorzy wewnętrzni ukończyli śledzenie. Ten dodatkowy koszt jest nie do przyjęcia dla kierownictwa wykonawczego. Aby rozwiązać ten problem, musi istnieć wewnętrzna rozmowa, aby zdecydować o akceptowalnym poziomie wycieku. Po podjęciu decyzji zasady mogą zawierać wyjątki dla niektórych osób w celu udostępniania informacji lub mogą być stosowane tylko w trybie inspekcji.
 
 #### <a name="planning-for-prerequisites"></a>Planowanie wymagań wstępnych
 
-Zanim będzie można monitorować niektóre lokalizacje DLP, muszą zostać spełnione wymagania wstępne. Zobacz **sekcje Przed rozpoczęciem** :
+Aby można było monitorować niektóre lokalizacje DLP, należy spełnić wymagania wstępne. Zobacz sekcję **Przed rozpoczęciem** :
 
-- [Wprowadzenie do ochrony przed utratą danych w środowisku lokalnym (wersja Preview)](dlp-on-premises-scanner-get-started.md#before-you-begin)
-- [Wprowadzenie do ochrony przed utratą danych w punkcie końcowym](endpoint-dlp-getting-started.md#before-you-begin)
-- [Wprowadzenie do rozszerzenia zgodności firmy Microsoft (wersja preview)](dlp-chrome-get-started.md#before-you-begin)
-- [Korzystanie z zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż firmy Microsoft (wersja Preview)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
+- [Wprowadzenie z lokalnym skanerem zapobiegania utracie danych (wersja zapoznawcza)](dlp-on-premises-scanner-get-started.md#before-you-begin)
+- [Wprowadzenie do ochrony przed utratą danych punktu końcowego](endpoint-dlp-getting-started.md#before-you-begin)
+- [Wprowadzenie z rozszerzeniem zgodności firmy Microsoft](dlp-chrome-get-started.md#before-you-begin)
+- [Używanie zasad ochrony przed utratą danych dla aplikacji w chmurze innych niż Microsoft (wersja zapoznawcza)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 
 #### <a name="policy-deployment"></a>Wdrażanie zasad
 
-Podczas tworzenia zasad DLP należy rozważyć ich stopniowe wdrażanie w celu oceny ich wpływu i przetestowania ich skuteczności przed ich pełnym wymuszaniem. Na przykład nie chcesz, aby nowe zasady DLP niezamierzonie blokowały dostęp do tysięcy dokumentów lub łamiły istniejący proces biznesowy.
+Podczas tworzenia zasad DLP należy rozważyć stopniowe wprowadzanie ich w celu oceny ich wpływu i przetestowania ich skuteczności przed ich pełnym egzekwowaniem. Na przykład nie chcesz, aby nowe zasady DLP nieumyślnie blokowały dostęp do tysięcy dokumentów lub przerywały istniejący proces biznesowy.
   
-Jeśli tworzysz zasady DLP o dużym potencjalnym wpływie, zalecamy następującą sekwencję:
+Jeśli tworzysz zasady DLP o dużym potencjalnym wpływie, zalecamy wykonanie następującej sekwencji:
   
-1. **Rozpoczynanie pracy w trybie testowania** bez Wskazówki zasad, a następnie ocenianie wpływu za pomocą raportów ochrony przed incydentami i raportów zdarzeń. Raporty funkcji DLP mogą umożliwia wyświetlanie liczby, lokalizacji, typu i ważności dopasowania zasad. Na podstawie wyników możesz dostosować zasady zgodnie z potrzebami. W trybie testowania zasady DLP nie mają wpływu na produktywność osób pracujących w organizacji. Ten etap również pozwala przetestować przepływ pracy na wypadek przejrzenia zdarzenia DLP i rozwiązania problemu.
+1. **Rozpocznij w trybie testowym bez Wskazówki zasad**, a następnie użyj raportów DLP i wszelkich raportów o zdarzeniach, aby ocenić wpływ. Raporty DLP umożliwiają wyświetlanie liczby, lokalizacji, typu i ważności dopasowań zasad. Na podstawie wyników można dostosować zasady zgodnie z potrzebami. W trybie testowym zasady DLP nie będą miały wpływu na produktywność osób pracujących w organizacji. Ponadto użyj tego etapu, aby przetestować przepływ pracy na potrzeby przeglądu zdarzeń DLP i korygowania problemów.
     
-2. **Przejdź do trybu** testowania z powiadomieniami i Wskazówki zasad, aby rozpocząć omów z użytkownikami zasady zgodności i przygotować ich do stosowania zasad. Warto utworzyć link do strony zasad organizacji, który zawiera więcej szczegółowych informacji na temat zasad w poradach dotyczących zasad. Na tym etapie można również poprosić użytkowników o zgłaszanie wyników fałszywie dodatnich, aby można było jeszcze bardziej uściślić zasady. Przejdź do tego etapu, gdy masz pewność, że wyniki zastosowania zasad są zgodne z tym, co mieli na myśli uczestnicy projektu. 
+2. **Przejdź do trybu testowego z powiadomieniami i Wskazówki zasad**, aby zacząć uczyć użytkowników o zasadach zgodności i przygotowywać ich do stosowania zasad. Warto mieć link do strony zasad organizacji, który zawiera więcej szczegółów na temat zasad w poradę zasad. Na tym etapie można również poprosić użytkowników o zgłaszanie wyników fałszywie dodatnich, aby umożliwić dalsze uściślanie zasad. Przejdź do tego etapu, gdy masz pewność, że wyniki aplikacji zasad są zgodne z tym, co mają na myśli osoby biorące udział w projekcie. 
     
-3. **Rozpoczęcie pełnego wymuszania zasad** , dzięki czemu będą stosowane akcje w zasadach i zawartość będzie chroniona. W dalszym ciągu monitoruj raporty dotyczące zasad DLP oraz wszelkie raporty i powiadomienia o incydentach, aby upewnić się, że wyniki są dokładnie takie, jakie mają zanadto. 
+3. **Rozpocznij pełne wymuszanie zasad** , aby akcje w regułach były stosowane i zawartość była chroniona. Kontynuuj monitorowanie raportów DLP i wszelkich raportów lub powiadomień o zdarzeniach, aby upewnić się, że wyniki są tym, co zamierzasz. 
 
-    ![Opcje korzystania z trybu testowania i włączania zasad.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Opcje korzystania z trybu testowego i włączania zasad.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
-    Zasady DLP można wyłączyć w dowolnym momencie, co ma wpływ na wszystkie reguły w zasadach. Każdą regułę można jednak wyłączyć osobno, przełączanie jej stanu w edytorze reguł.
+    Zasady DLP można wyłączyć w dowolnym momencie, co ma wpływ na wszystkie reguły w zasadach. Jednak każdą regułę można również wyłączyć indywidualnie, przełączając jej stan w edytorze reguł.
 
     ![Opcje wyłączania reguły w zasadach.](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-    Można również zmienić priorytet wielu reguł w zasadach. W tym celu otwórz zasady do edycji. W wierszu reguły wybierz wielokropek (**...**), a następnie wybierz opcję, taką jak Przenieś w dół lub **Przesuń do ostatniego**.
+    Można również zmienić priorytet wielu reguł w zasadach. W tym celu otwórz zasady do edycji. W wierszu reguły wybierz wielokropek (**...**), a następnie wybierz opcję, taką jak **Przenieś w dół** lub **Przenieś do ostatniego**.
 
-    ![Ustawianie priorytetu reguły.](../media/dlp-set-rule-priority.png)
+    ![Ustaw priorytet reguły.](../media/dlp-set-rule-priority.png)
 
-#### <a name="end-user-training"></a>Szkolenia dla użytkowników końcowych
+#### <a name="end-user-training"></a>Szkolenie użytkowników końcowych
 
-Po wyzwoleniu zasad DLP możesz skonfigurować zasady w taki sposób, aby wysyłać powiadomienia e-mail i wyświetlać porady dotyczące zasad [DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies) administratorom i użytkownikom końcowych. Mimo że zasady są nadal w trybie testowania i zanim zostaną ustawione na wymuszanie blokowania, porady dotyczące zasad to przydatne sposoby podnoszenia wiedzy na temat ryzykownych zachowań dotyczących elementów poufnych i szkolenie użytkowników przed tymi zachowaniami w przyszłości.  
+Po wyzwoleniu zasad DLP można skonfigurować zasady do [wysyłania powiadomień e-mail i pokazywania wskazówek dotyczących zasad DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies) administratorom i użytkownikom końcowym. Zasady są nadal w trybie testowym i zanim zostaną ustawione w celu wymuszenia akcji blokującej, porady dotyczące zasad są przydatnymi sposobami podnoszenia świadomości ryzykownych zachowań na poufnych elementach i trenowania użytkowników w celu uniknięcia tych zachowań w przyszłości.  
 
-#### <a name="review-dlp-requirements-and-update-strategy"></a>Przegląd wymagań dotyczących zasad DLP i strategii aktualizacji
+#### <a name="review-dlp-requirements-and-update-strategy"></a>Przejrzyj wymagania DLP i strategię aktualizacji
 
-Przepisy, przepisy i standardy branżowe, których podlega Twoja organizacja, będą z czasem zmieniać się, a także Twoje cele biznesowe dotyczące ochrony przed firmami. Pamiętaj o regularnym przeglądaniu wszystkich tych obszarów, aby Twoja organizacja pozostawała w zrównaniu z przepisami i Twoja implementacja zasad DLP nadal spełniała Twoje potrzeby biznesowe.
+Przepisy, przepisy i standardy branżowe, które mogą podlegać organizacji, zmienią się wraz z upływem czasu, a cele biznesowe dotyczące DLP również zostaną zmienione. Pamiętaj o regularnych przeglądach wszystkich tych obszarów, aby organizacja pozostała w zgodności, a implementacja DLP nadal spełnia twoje potrzeby biznesowe.
 
-## <a name="approaches-to-deployment"></a>Metody wdrażania
+## <a name="approaches-to-deployment"></a>Podejścia do wdrożenia
 
-|Opis potrzeb biznesowych klientów  | podejście  |
+|Opis potrzeb biznesowych klientów  | Podejście  |
 |---------|---------|
-|**Contoso Bank** to dobrze uregulowana firma, która ma wiele różnych typów elementów poufnych w wielu różnych lokalizacjach. </br> — wie, które typy informacji poufnych mają najwyższy priorytet. </br> — musi zminimalizować zakłócenia w działaniu firmy w przypadku wywłasniania zasad. </br> — ma zasoby IT i może zatrudnić ekspertów do planowania, projektowania i wdrażania </br> — ma umowę na pomoc techniczną premier z firmą Microsoft| — Porozumiew się z czasem, jakie przepisy muszą przestrzegać i w jaki sposób będą one przestrzegane. </br> — Poeksymaj trochę czasu, aby razem zrozumieć, jaka jest wartość stosu Microsoft 365 Information Protection </br> - Opracowanie schematu etykiet wrażliwości dla elementów, dla których priorytetyzowane są, i stosowanie </br> - Angażowania właścicieli procesów biznesowych </br>- Zasady projektowania/kodów, wdrażanie w trybie testowania, szkolenie użytkowników </br>— powtórz|
-|**TailSpin Toys** nie wie, co ma ani gdzie jest, i nie ma żadnej głębokości zasobów. Są one Teams, OneDrive dla Firm i Exchange mają wiele zastosowania.     |— Zacznij od prostych zasad dla lokalizacji, dla których priorytety są określone. </br>— Monitorowanie zidentyfikowanych danych </br>— Zastosuj odpowiednio etykiety wrażliwości </br>- Uściślij zasady, szkolenie użytkowników       |
-|**Fabrikam** to mały start, który chce chronić swoją własność intelektualną i musi szybko przejść do programu. Są gotowi przeznaczyć na niektóre zasoby, ale nie mogą pozwolić sobie na zatrudnienie ekspertów zewnętrznych. </br>— Poufne elementy znajdują się w Microsoft 365 OneDrive dla Firm/SharePoint </br>- Wdrożenie usług OneDrive dla Firm i SharePoint jest powolne, pracownicy/indyjscy w tle używają usług DropBox i Google do udostępniania/przechowywania elementów </br>- Szybkość pracy pracowników nad dyscypliną ochrony danych </br>- Splurged customer and bought all 18 employees new Windows 10 devices     |— Skorzystaj z domyślnych zasad DLP w programie Teams </br>— Użyj domyślnie ograniczone dla SharePoint elementów </br>- Wdrażanie zasad uniemożliwiających udostępnianie zewnętrzne </br>- Wdrażanie zasad w celu ustalania priorytetów lokalizacji </br>- Wdrażanie zasad na Windows 10 urządzeniach </br>- Blokowanie przekazywania do magazynu w chmurze OneDrive dla Firm danych      |
+|**Contoso Bank** jest w branży wysoce regulowanej i ma wiele różnych rodzajów poufnych elementów w wielu różnych lokalizacjach. </br> - wie, które typy informacji poufnych mają najwyższy priorytet. </br> — musi zminimalizować zakłócenia biznesowe w miarę wdrażania zasad. </br> — ma zasoby IT i może zatrudniać ekspertów, którzy mogą pomagać w planowaniu, projektowaniu </br> — ma umowę pomocy technicznej premier z firmą Microsoft| - Poświęć trochę czasu, aby zrozumieć, jakie przepisy muszą przestrzegać i w jaki sposób będą przestrzegane. </br> -Poświęć trochę czasu, aby zrozumieć lepszą wartość razem stosu Information Protection Microsoft Purview </br> - Opracowywanie schematu etykietowania poufności dla elementów o priorytetach i stosowanie </br> - Angażowanie właścicieli procesów biznesowych </br>- Projektowanie/kodowanie zasad, wdrażanie w trybie testowym, szkolenie użytkowników </br>- powtórz|
+|**TailSpin Toys** nie wie, co ma i gdzie jest, i ma niewielką lub żadną głębokość zasobów. Intensywnie korzystają z Teams, OneDrive dla Firm i Exchange.     |— Zacznij od prostych zasad dotyczących lokalizacji o priorytetach. </br>- Monitorowanie tego, co zostanie zidentyfikowane </br>- Odpowiednio zastosuj etykiety poufności </br>— Uściślaj zasady, trenuj użytkowników       |
+|**Fabrikam** to mały startup, który chce chronić swoją własność intelektualną i musi działać szybko. Są gotowi poświęcić niektóre zasoby, ale nie mogą sobie pozwolić na zatrudnianie zewnętrznych ekspertów. </br>— Wszystkie elementy poufne znajdują się w Microsoft 365 OneDrive dla Firm/SharePoint </br>- Wdrażanie OneDrive dla Firm i SharePoint jest powolne, pracownicy/ w tle IT używać DropBox i dysk Google do udostępniania / przechowywania elementów </br>- Pracownicy cenią sobie szybkość pracy nad dziedziną ochrony danych </br>- Klient splurged i kupił wszystkich 18 pracowników nowych urządzeń Windows 10     |— Skorzystaj z domyślnych zasad DLP w Teams </br>— Domyślnie używaj ustawień ograniczonych dla elementów SharePoint </br>— Wdrażanie zasad, które uniemożliwiają udostępnianie zewnętrzne </br>— Wdrażanie zasad w lokalizacjach o priorytetach </br>— Wdrażanie zasad na urządzeniach Windows 10 </br>— Blokuj przekazywanie do magazynu w chmurze bez OneDrive dla Firm      |
 
 <!--
 
@@ -223,4 +225,4 @@ Przepisy, przepisy i standardy branżowe, których podlega Twoja organizacja, b�
 -->
 
 ## <a name="see-also"></a>Zobacz też
-- [Informacje na temat ochrony przed utratą danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [Dowiedz się więcej o ochronie przed utratą danych](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)

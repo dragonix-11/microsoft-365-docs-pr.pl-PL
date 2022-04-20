@@ -21,60 +21,60 @@ ms.custom:
 - manage_licenses
 - AdminTemplateSet
 search.appverid: MET150
-description: Metoda, za pomocą która służy do nieprzypisania licencji produktu, zależy od tego, czy licencje są nieprzypisane określonym użytkownikom, czy z konkretnego produktu.
+description: Metoda używana do cofania przypisania licencji produktów zależy od tego, czy nie przypisano licencji od określonych użytkowników, czy od określonego produktu.
 ms.date: 09/16/2021
-ms.openlocfilehash: 7308888c54a30cdd11618cb07a233f8bd55f27c2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8d0fd6f89802111bdb2afbc2586392251d393e4e
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321211"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971088"
 ---
 # <a name="unassign-licenses-from-users"></a>Odbieranie licencji użytkownikom
 
-Możesz nieprzypisać licencje użytkownikom na stronie Aktywni użytkownicy  lub **na stronie Licencje**. Metoda, której używasz, zależy od tego, czy chcesz usunąć licencje na produkty od konkretnych użytkowników, czy też usunąć przypisanie licencji użytkowników z określonego produktu.
+Licencje od użytkowników można anulować na stronie **Aktywni użytkownicy** lub na stronie **Licencje** . Używana metoda zależy od tego, czy chcesz anulować przypisanie licencji produktów od określonych użytkowników, czy cofnąć przypisanie licencji użytkowników z określonego produktu.
 
 > [!NOTE]
 > 
-> - Jako administrator nie możesz przypisywać ani anulować przypisania licencji na subskrypcję zakupu samoobsługowego zakupową zakupioną przez użytkownika w Organizacji. Możesz [przejąć subskrypcję zakupu samoobsługowego, a](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription) następnie przypisać lub anulować przypisanie licencji.
+> - Jako administrator nie możesz przypisywać ani anulować przypisywania licencji dla subskrypcji zakupu samoobsługowego zakupionej przez użytkownika w organizacji. Możesz [przejąć subskrypcję samoobsługowego zakupu](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription), a następnie przypisać lub cofnąć przypisanie licencji.
 > 
-> - W przypadku niektórych subskrypcji możesz anulować subskrypcję tylko przez ograniczony czas po zakupie lub odnowieniu subskrypcji. Jeśli okno anulowania już minęło, wyłącz rozliczanie cykliczne, aby anulować subskrypcję na koniec okresu jej zakończenia.
+> - W przypadku niektórych subskrypcji możesz anulować subskrypcję tylko przez ograniczony czas po zakupie lub odnowieniu subskrypcji. Jeśli termin anulowania już minął, wyłącz rozliczanie cykliczne, aby anulować subskrypcję na koniec okresu jej trwania.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Aby nieprzypisać licencje, musisz być administratorem globalnym, licencją i administratorem użytkownika. Aby uzyskać więcej informacji, zobacz [Informacje Microsoft 365 administratorów](../add-users/about-admin-roles.md).
+- Musisz być administratorem globalnym, licencją, administratorem użytkownika, aby anulować przypisanie licencji. Aby uzyskać więcej informacji, zobacz [Informacje o rolach administratora Microsoft 365](../add-users/about-admin-roles.md).
 - Możesz [usuwać licencje z kont użytkowników przy użyciu programu Office 365 PowerShell](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
-- Możesz również usunąć [konta użytkowników](../add-users/delete-a-user.md) , do których przypisano licencję, aby udostępnić tę licencję innym użytkownikom. Po usunięciu konta użytkownika jego licencja jest od razu dostępna do przypisania innej osobie.
+- Możesz również [usunąć konta użytkowników](../add-users/delete-a-user.md) , do których przypisano licencję, aby udostępnić ich licencję innym użytkownikom. Po usunięciu konta użytkownika jego licencja jest natychmiast dostępna do przypisania innej osobie.
 
-## <a name="use-the-licenses-page-to-unassign-licenses"></a>Używanie strony Licencje do nieprzypisywania licencji
+## <a name="use-the-licenses-page-to-unassign-licenses"></a>Użyj strony Licencje, aby anulować przypisanie licencji
 
-Gdy używasz strony **Licencje** , aby nieprzypisać licencje, możesz nieprzypisać licencje dla konkretnego produktu dla maksymalnie 20 użytkowników.
+W przypadku korzystania ze strony **Licencje** do cofania przypisania licencji można anulować przypisanie licencji dla określonego produktu dla maksymalnie 20 użytkowników.
 
 ::: moniker range="o365-worldwide"
 
-1. W centrum administracyjnym przejdź **do strony** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencje rozliczeniowe</a> .
+1. W centrum administracyjnym przejdź do strony **Licencje rozliczeniowe**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. W centrum administracyjnym przejdź **do strony** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licencje rozliczeniowe</a> .
+1. W centrum administracyjnym przejdź do strony **Licencje rozliczeniowe**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"></a>
 
 ::: moniker-end
 
-2. Wybierz produkt, dla którego chcesz usunąć przypisanie licencji.
+2. Wybierz produkt, dla którego chcesz anulować przypisanie licencji.
 
-3. Wybierz użytkowników, dla których chcesz usunąć przypisanie licencji.
+3. Wybierz użytkowników, dla których chcesz anulować przypisanie licencji.
 
-4. Wybierz **pozycję Co umożliwia nieprzypis licencji**.
+4. Wybierz pozycję **Usuń przypisanie licencji**.
 
-5. W **polu Nieprzypisaj licencje** wybierz pozycję **Nieprzypisz**.
+5. W polu **Cofanie przypisania licencji** wybierz pozycję **Usuń przypisanie**.
 
-## <a name="use-the-active-users-page-to-unassign-licenses"></a>Używanie strony Aktywni użytkownicy do nieprzypisywania licencji
+## <a name="use-the-active-users-page-to-unassign-licenses"></a>Anulowanie przypisania licencji przy użyciu strony Aktywni użytkownicy
 
-Gdy używasz strony **Aktywni użytkownicy** , aby nieprzypisać licencje, licencje produktu są nieprzypisane użytkownikom.
+W przypadku korzystania ze strony **Aktywni użytkownicy** do cofania przypisania licencji można anulować przypisanie licencji produktów od użytkowników.
 
-### <a name="unassign-licenses-from-one-user"></a>Cossign licenses from one user
+### <a name="unassign-licenses-from-one-user"></a>Anulowanie przypisania licencji od jednego użytkownika
 
 ::: moniker range="o365-worldwide"
 
@@ -88,13 +88,13 @@ Gdy używasz strony **Aktywni użytkownicy** , aby nieprzypisać licencje, licen
 
 ::: moniker-end
 
-2. Zaznacz wiersz użytkownika, dla którego chcesz usunąć przypisanie licencji.
+2. Wybierz wiersz użytkownika, dla który chcesz anulować przypisanie licencji.
 
 3. W okienku po prawej stronie wybierz pozycję **Licencje i aplikacje**.
 
-4. Rozwiń **sekcję Licencje** , wyczyść pola licencji, które chcesz usunąć, a następnie wybierz pozycję **Zapisz zmiany**.
+4. Rozwiń sekcję **Licencje, wyczyść** pola licencji, które chcesz anulować, a następnie wybierz pozycję **Zapisz zmiany**.
 
-### <a name="unassign-licenses-from-multiple-users"></a>Co umożliwia nieprzypisane licencje wielu użytkowników
+### <a name="unassign-licenses-from-multiple-users"></a>Anulowanie przypisania licencji od wielu użytkowników
 
 ::: moniker range="o365-worldwide"
 
@@ -108,29 +108,29 @@ Gdy używasz strony **Aktywni użytkownicy** , aby nieprzypisać licencje, licen
 
 ::: moniker-end
 
-2. Wybierz kółka obok nazw użytkowników, dla których chcesz usunąć licencje.
+2. Wybierz okręgi obok nazw użytkowników, dla których chcesz anulować przypisanie licencji.
 
 3. U góry wybierz pozycję **Zarządzaj licencjami produktów**.
 
-4. W **okienku Zarządzanie licencjami produktów** wybierz pozycję **Cognuj przypisanie** **wszystkichZapisuj** >  zmiany.
+4. W okienku **Zarządzanie licencjami produktów** wybierz pozycję **Usuń przypisanie** **wszystkichZapisz** >  zmiany.
 
-5. U dołu okienka wybierz pozycję **Gotowe**.  
+5. W dolnej części okienka wybierz pozycję **Gotowe**.  
 
-## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Co się dzieje z danymi użytkownika po usunięciu jego licencji?
+## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Co się stanie z danymi użytkownika po usunięciu licencji?
 
-- Po usunięciu licencji użytkownikowi wszystkie Exchange online skojarzone z tym kontem są przechowywane przez 30 dni. Po upływie 30-dniowego okresu prolongaty dane są usuwane i nie można ich odzyskać.
-- Pliki zapisane w OneDrive dla Firm nie są usuwane, chyba że użytkownik zostanie usunięty z centrum administracyjne platformy Microsoft 365 synchronizacji z usługą Active Directory. Aby uzyskać więcej informacji, [zobacz OneDrive i usuwanie](/onedrive/retention-and-deletion).
-- Po usunięciu licencji nie będzie już można wyszukiwać skrzynki pocztowej użytkownika za pomocą narzędzia zbierania elektronicznych materiałów dowodowych, takiego jak Przeszukiwanie zawartości Advanced eDiscovery. Aby uzyskać więcej informacji, zobacz "Wyszukiwanie odłączonych lub odłączonych skrzynek pocztowych" w te sposób: [Wyszukiwanie zawartości w programie Microsoft 365](../../compliance/content-search.md).
-- Jeśli masz subskrypcję usługi Enterprise, na przykład Office 365 Enterprise E3, program Exchange Online umożliwia zachowanie danych skrzynki pocztowej usuniętego konta użytkownika przy użyciu nieaktywnych [skrzynek pocztowych](../../compliance/inactive-mailboxes-in-office-365.md). Aby uzyskać więcej informacji, zobacz [Tworzenie nieaktywnych skrzynek pocztowych i zarządzanie nimi w programie Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Aby dowiedzieć się, jak zablokować użytkownikowi dostęp do danych Microsoft 365 po usunięciu jego licencji i jak później uzyskać dostęp do tych danych, zobacz Usuwanie [byłego pracownika](../add-users/remove-former-employee.md).
-- Jeśli usuniesz licencję użytkownika i nadal będzie mieć zainstalowane aplikacje pakietu Office, zobaczą oni błędy "Produkt bez licencji" i błędy aktywacji w aplikacji [Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380), gdy korzystają oni Office aplikacji.
+- Gdy licencja zostanie usunięta z użytkownika, Exchange dane online skojarzone z tym kontem są przechowywane przez 30 dni. Po upływie 30-dniowego okresu prolongaty dane są usuwane i nie można ich odzyskać.
+- Pliki zapisane w OneDrive dla Firm nie są usuwane, chyba że użytkownik zostanie usunięty z Centrum administracyjne platformy Microsoft 365 lub zostanie usunięty w ramach synchronizacji usługi Active Directory. Aby uzyskać więcej informacji, zobacz [przechowywanie i usuwanie OneDrive](/onedrive/retention-and-deletion).
+- Gdy licencja zostanie usunięta, skrzynka pocztowa użytkownika nie będzie już przeszukiwana przy użyciu narzędzia zbierania elektronicznych materiałów dowodowych, takiego jak wyszukiwanie zawartości lub zbierania elektronicznych materiałów dowodowych (Premium). Aby uzyskać więcej informacji, zobacz "Wyszukiwanie rozłączonych lub nielicenacjonowanych skrzynek pocztowych" w [wyszukiwaniu zawartości w Microsoft 365](../../compliance/content-search.md).
+- Jeśli masz subskrypcję Enterprise, taką jak Office 365 Enterprise E3, Exchange Online umożliwia zachowanie danych skrzynki pocztowej usuniętego konta użytkownika przy użyciu [nieaktywnych skrzynek pocztowych](../../compliance/inactive-mailboxes-in-office-365.md). Aby uzyskać więcej informacji, zobacz [Tworzenie nieaktywnych skrzynek pocztowych i zarządzanie nimi w Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Aby dowiedzieć się, jak zablokować użytkownikowi dostęp do danych Microsoft 365 po usunięciu licencji oraz jak uzyskać dostęp do danych później, zobacz [Usuwanie byłego pracownika](../add-users/remove-former-employee.md).
+- Jeśli usuniesz licencję użytkownika i nadal masz zainstalowane aplikacje Office, podczas korzystania z aplikacji Office będą widoczne [błędy nielicencjonowanego produktu i aktywacji w Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli nie zamierzasz ponownie ponownie nieprzypisać nieużywanych licencji innym użytkownikom[, rozważ](../../managed-desktop/get-started/assign-licenses.md) usunięcie licencji z [](../../commerce/licenses/buy-licenses.md) subskrypcji, aby nie płacić za więcej licencji, niż potrzebujesz.
+Jeśli nie zamierzasz [ponownie przypisywać nieużywanych licencji innym użytkownikom](../../managed-desktop/get-started/assign-licenses.md), rozważ [usunięcie licencji z subskrypcji](../../commerce/licenses/buy-licenses.md) , aby nie płacić za więcej licencji, niż potrzebujesz.
 
 ## <a name="related-content"></a>Zawartość pokrewna
 
 [Usuwanie licencji z subskrypcji](../../commerce/licenses/buy-licenses.md) (artykuł)\
-[Przypisywanie licencji użytkownikom](assign-licenses-to-users.md) (artykuł)\
-[Opis subskrypcji i licencji w programie Microsoft 365 dla firm](../../commerce/licenses/subscriptions-and-licenses.md) (artykuł)
+[Przypisywanie licencji do użytkowników](assign-licenses-to-users.md) (artykuł)\
+[Omówienie subskrypcji i licencji w usłudze Microsoft 365 dla firm](../../commerce/licenses/subscriptions-and-licenses.md) (artykuł)

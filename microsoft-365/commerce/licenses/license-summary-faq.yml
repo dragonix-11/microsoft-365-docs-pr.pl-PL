@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Często zadawane pytania dotyczące Centrum administracyjne platformy Microsoft 365 umów licencyjnych.
-  ms.openlocfilehash: 16b6abd5d49b1b72fb93f981762140a98105b297
-  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+  ms.openlocfilehash: bcc97969b283d51194dd8f1eb213340bd8f0334e
+  ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64714158"
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64953688"
 title: Często zadawane pytania dotyczące kontraktów
 summary: ''
 sections:
@@ -66,7 +66,30 @@ sections:
       Aby uzyskać więcej informacji na temat ról uprawnień VL i ich dozwolonych akcji, zobacz [Często zadawane pytania dotyczące uprawnień](https://docs.microsoft.com/licensing/permissions-faq).
   - question: >
       Jak długo trwa wyświetlanie nowych zamówień licencji na liście kontraktów?
-    answer: "Ostatnio zakupione licencje są zwykle wyświetlane na liście w ciągu 10 godzin od otrzymania zamówienia od partnera firmy Microsoft. Opóźnienia od kilku dni do kilku tygodni mogą wystąpić, jeśli partner opóźni przekazywanie zamówienia zakupu do firmy Microsoft. Licencje są wyświetlane w podsumowaniu, gdy okres rozpoczęcia pokrycia dla zamówienia jest spełniony dla wszystkich programów z wyjątkiem licencji Open.\n\nNa liście kontaktów są dostępne następujące dane:\n\n|**Nazwa kolumny**|**Opis**|\n|:-----|:-----|\n|Identyfikator licencjonowania |Kluczowe kontakty i powiązane licencje organizacji według określonego identyfikatora licencjonowania |\n|Szczegóły programu nadrzędnego |Kluczowe kontakty i powiązane identyfikatory licencjonowania dla organizacji przez program licencjonowania |\n|Szczegóły MBSA |Kluczowe kontakty i powiązane identyfikatory licencjonowania dla organizacji skojarzone z umową Microsoft Business and Services Agreement (MBSA) | \n|Organizacji | Organizacja licencji|\n|Lokalizacja |Połączenie miasta i powiatu organizacji licencji |\n|Data zakończenia |Data zakończenia licencji |    \n|Stan |Stan licencji| \n"
+    answer: >
+      Ostatnio zakupione licencje są zwykle wyświetlane na liście w ciągu 10 godzin od otrzymania zamówienia od partnera firmy Microsoft. Opóźnienia od kilku dni do kilku tygodni mogą wystąpić, jeśli partner opóźni przekazywanie zamówienia zakupu do firmy Microsoft. Licencje są wyświetlane w podsumowaniu, gdy okres rozpoczęcia pokrycia dla zamówienia jest spełniony dla wszystkich programów z wyjątkiem licencji Open.
+
+
+      Na liście kontaktów są dostępne następujące dane:
+
+
+      |Nazwa kolumny|Opis|
+
+      |---|---|
+
+      |Identyfikator licencjonowania|Kluczowe kontakty i powiązane licencje organizacji według określonego identyfikatora licencjonowania|
+
+      |Szczegóły programu nadrzędnego|Kluczowe kontakty i powiązane identyfikatory licencjonowania dla organizacji przez program licencjonowania|
+
+      |Szczegóły MBSA|Kluczowe kontakty i powiązane identyfikatory licencjonowania dla organizacji skojarzone z umową Microsoft Business and Services Agreement (MBSA)|
+
+      |Organizacji|Organizacja licencji|
+
+      |Lokalizacja|Połączenie miasta i powiatu organizacji licencji|
+
+      |Data zakończenia|Data zakończenia licencji|
+
+      |Stan|Stan licencji|
   - question: >
       Co to jest podsumowanie licencji?
     answer: >
@@ -81,16 +104,18 @@ sections:
 
       Uzyskiwanie dostępu do podsumowania licencji i tworzenie go
 
-      1.  Zaloguj się do Centrum administracyjne platformy Microsoft 365.
 
-      2.  Przejdź do pozycji **BillingYour** >  productsVolume  > **licensingContracts** >  (**Licencjonowanie usługiVolumeContracts**).
+      1. Zaloguj się do Centrum administracyjne platformy Microsoft 365.
+
+      2. Przejdź do pozycji **BillingYour** >  productsVolume  > **licensingContracts** >  (**Licencjonowanie usługiVolumeContracts**).
 
 
       Filtruj identyfikatory licencjonowania do wyświetlenia w podsumowaniu licencji
 
-      1.  Użyj pól wyboru, aby wybrać identyfikatory licencji, które mają zostać uwzględnione w tym podsumowaniu.
 
-      2.  Wybierz pozycję **Utwórz podsumowanie licencji**. Podsumowanie licencji jest generowane tylko dla wybranych identyfikatorów licencjonowania.
+      1. Użyj pól wyboru, aby wybrać identyfikatory licencji, które mają zostać uwzględnione w tym podsumowaniu.
+
+      2. Wybierz pozycję **Utwórz podsumowanie licencji**. Podsumowanie licencji jest generowane tylko dla wybranych identyfikatorów licencjonowania.
 - name: Omówienie podsumowania licencji
   questions:
   - question: >
@@ -113,12 +138,25 @@ sections:
       - Step-Up SA
   - question: >
       Dlaczego widzę efektywną ilość i/lub aktywną ilość SA jako "0"?
-    answer: "Podsumowanie licencji ma na celu pokazanie licencji, do których organizacja ma prawo wdrażać i używać. \n\nJeśli wartość Efektywna ilość w wygenerowanym zestawieniu licencji jest wyświetlana jako zero, oznacza to, że organizacja nie ma prawa do korzystania z licencji zgodnie z warunkami zestawu identyfikatorów licencjonowania wybranych dla tej instrukcji. \n\nJeśli liczba aktywnych usług SA jest wyświetlana jako zero, oznacza to, że licencje w ramach zestawu identyfikatorów licencjonowania użytych do wygenerowania instrukcji nie mają żadnego prawidłowego ani aktywnego pokrycia pakietu Software Assurance. \n\n>[!NOTE]\n>W przypadku licencji usług online liczba aktywnych skojarzeń SA jest zawsze zerowa, ponieważ usługi online nie mają skojarzonych z nimi skojarzeń jednokrotnych. \n"
+    answer: >
+      Podsumowanie licencji ma na celu pokazanie licencji, do których organizacja ma prawo wdrażać i używać.
+
+
+      Jeśli wartość Efektywna ilość w wygenerowanym zestawieniu licencji jest wyświetlana jako zero, oznacza to, że organizacja nie ma prawa do korzystania z licencji zgodnie z warunkami zestawu identyfikatorów licencjonowania wybranych dla tej instrukcji.
+
+
+      Jeśli liczba aktywnych usług SA jest wyświetlana jako zero, oznacza to, że licencje w ramach zestawu identyfikatorów licencjonowania użytych do wygenerowania instrukcji nie mają żadnego prawidłowego ani aktywnego pokrycia pakietu Software Assurance.
+
+
+      > [!NOTE]
+
+      > W przypadku licencji usług online liczba aktywnych skojarzeń SA jest zawsze zerowa, ponieważ usługi online nie mają skojarzonych z nimi skojarzeń jednokrotnych.
   - question: >
       Czy podsumowanie licencji zawiera informacje o oryginalnym producencie sprzętu (OEM) lub licencji detalicznej?
     answer: >
       L.p. Podsumowanie licencji wyświetla tylko licencje nabyte przez organizację za pośrednictwem programów licencjonowania zbiorowego.
-  - question: "Czy w podsumowaniu licencji jest wyświetlane oprogramowanie wdrożone w mojej organizacji? \n"
+  - question: >
+      Czy w podsumowaniu licencji jest wyświetlane oprogramowanie wdrożone w mojej organizacji?
     answer: >
       L.p. Firma Microsoft nie może podać listy szczegółów wdrożenia produktu w podsumowaniu licencji. Podsumowanie licencji pokazuje oprogramowanie, które organizacja ma prawo zainstalować i używać, ale nie to, co jest obecnie wdrożone.
   - question: >
@@ -134,7 +172,21 @@ sections:
       - Serwery (na przykład Exchange Server, SQL Server i serwer Windows)
   - question: >
       Co to jest udzielenie licencji?
-    answer: "Czasami licencjonowanie zbiorowe firmy Microsoft oferuje promocję, w której zakup określonego produktu uprawnia klienta do korzystania z innego produktu. Promocje są zazwyczaj uzależnione od aktywnego pokrycia pakietu Software Assurance lub korzyści z uaktualnienia na zakupionym produkcie. Przykład:\n\n- Klient kupuje 1 licencję na Exchange Server 2016 roku.\n- Transakcja ma aktywne pokrycie pakietów Software Assurance lub Upgrade Advantage podczas oferty.\n- Firma Microsoft oferuje promocję 1 licencji Skype dla firm Server z zakupem Exchange Server 2016 roku.\n\nUdzielenie licencji jest tym, co uprawnia lub \"udziela\" klientowi do korzystania z produktu promocyjnego. W powyższym przykładzie klientowi przyznano użycie Skype dla firm Server.\n\nAby uzyskać więcej informacji na temat przyznawania licencji, zapoznaj się z [postanowieniami dotyczącymi produktów firmy Microsoft](https://www.microsoft.com/licensing/terms/welcome/welcomepage). \n"
+    answer: >
+      Czasami licencjonowanie zbiorowe firmy Microsoft oferuje promocję, w której zakup określonego produktu uprawnia klienta do korzystania z innego produktu. Promocje są zazwyczaj uzależnione od aktywnego pokrycia pakietu Software Assurance lub korzyści z uaktualnienia na zakupionym produkcie. Przykład:
+
+
+      - Klient kupuje 1 licencję na Exchange Server 2016 roku.
+
+      - Transakcja ma aktywne pokrycie pakietów Software Assurance lub Upgrade Advantage podczas oferty.
+
+      - Firma Microsoft oferuje promocję 1 licencji Skype dla firm Server z zakupem Exchange Server 2016 roku.
+
+
+      Udzielenie licencji jest tym, co uprawnia lub "udziela" klientowi do korzystania z produktu promocyjnego. W powyższym przykładzie klientowi przyznano użycie Skype dla firm Server.
+
+
+      Aby uzyskać więcej informacji na temat przyznawania licencji, zapoznaj się z [postanowieniami dotyczącymi produktów firmy Microsoft](https://www.microsoft.com/licensing/terms/welcome/welcomepage).
   - question: >
       Jak mogę zobaczyć moje dotacje na licencje?
     answer: >

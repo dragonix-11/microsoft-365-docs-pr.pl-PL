@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 description: Wybierz sposób wyświetlania zawartości w środowisku zbierania elektronicznych materiałów dowodowych (Premium), takich jak tekst, adnotaty, konwertowanie lub widok natywny.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 775804bd8e69e11bdacd1fee141234b07462dbef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8248eaa1fd8bce5c34bb8c936b9fecc0dd29deba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945808"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992833"
 ---
 # <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>Wyświetlanie dokumentów w zestawie przeglądów w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 eDiscovery (Premium) wyświetla zawartość za pośrednictwem kilku osób przeglądających, z których każdy ma różne cele. Różnych osób przeglądających można użyć, klikając dowolny dokument w zestawie przeglądów. Obecnie dostępne są następujące osoby przeglądające:
 

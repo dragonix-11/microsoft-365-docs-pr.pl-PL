@@ -19,14 +19,16 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Istnieje wiele typów informacji poufnych, które są gotowe do użycia w zasadach DLP. W tym artykule wymieniono wszystkie te typy informacji poufnych i pokazano, czego szukają zasady DLP podczas wykrywania poszczególnych typów.
-ms.openlocfilehash: 69c47a717b63f8d9ac4e30f3b97fd228399bf21c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 6074082812853469e0513d67ec68519eb2a89563
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760410"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970664"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definicje jednostek typu informacji poufnych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W tym artykule wymieniono wszystkie definicje jednostek typów informacji poufnych. Każda definicja pokazuje, czego szukają zasady DLP w celu wykrycia każdego typu. Aby dowiedzieć się więcej o typach informacji poufnych, zobacz [Typy informacji poufnych](sensitive-information-type-learn-about.md)
 
@@ -510,7 +512,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -575,7 +577,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -898,7 +900,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="australia-physical-addresses"></a>Adresy fizyczne w Australii
 
-Odbuntowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Australii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Odbuntowana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Australii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 Średni
@@ -1126,7 +1128,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -1258,7 +1260,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="austria-physical-addresses"></a>Adresy fizyczne Austrii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Austrii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Austrii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -1413,7 +1415,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -2325,7 +2327,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="belgium-physical-addresses"></a>Adresy fizyczne w Belgii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresami fizycznymi z Belgii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresami fizycznymi z Belgii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -2337,7 +2339,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -2619,7 +2621,7 @@ Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeś
 
 ## <a name="brazil-physical-addresses"></a>Adresy fizyczne Brazylii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Brazylii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Brazylii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -2868,7 +2870,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="bulgaria-physical-addresses"></a>Adresy fizyczne Bułgarii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Bułgarii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Bułgarii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -2879,7 +2881,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -3468,7 +3470,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="canada-physical-addresses"></a>Adresy fizyczne w Kanadzie
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Kanady. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Kanady. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -3728,7 +3730,7 @@ Tak, sprawdzanie luhna
 Zasady DLP mają dużą pewność, że wykryto ten typ informacji poufnych, jeśli w pobliżu 300 znaków:
 
 - Funkcja Func_credit_card znajduje zawartość zgodną ze wzorcem.
-- Jedno z następujących elementów jest prawdziwe:
+- Spełniony jest jeden z następujących warunków:
   - Znaleziono słowo kluczowe z Keyword_cc_verification.
   - Znaleziono słowo kluczowe z Keyword_cc_name.
   - Funkcja Func_expiration_date znajduje datę w odpowiednim formacie daty.
@@ -4394,7 +4396,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="croatia-physical-addresses"></a>Adresy fizyczne Chorwacji
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Chorwacji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Chorwacji. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -4569,7 +4571,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -4700,7 +4702,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="cyprus-physical-addresses"></a>Adresy fizyczne cypryjskie
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Cypru. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Cypru. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -4712,7 +4714,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -5139,7 +5141,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="czech-republic-physical-addresses"></a>Adresy fizyczne w Czechach
 
-Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Czech. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Czech. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -5506,7 +5508,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="denmark-physical-addresses"></a>Adresy fizyczne Danii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Danii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Danii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -5828,7 +5830,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -5914,7 +5916,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="estonia-physical-addresses"></a>Adresy fizyczne Estonii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Estonii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Estonii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -6370,7 +6372,7 @@ Te jednostki znajdują się w numerze paszportu UE i są typami informacji poufn
 
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>Numer ubezpieczenia społecznego UE lub równoważna identyfikacja
 
-Są to jednostki, które znajdują się w numerze ubezpieczenia społecznego UE lub równoważnej identyfikacji i są typami informacji poufnych.
+Te jednostki znajdują się w numerze ubezpieczenia społecznego UE lub równoważnej identyfikacji i są typami informacji poufnych.
 
 - [Austria](#austria-social-security-number)
 - [Belgia](#belgium-national-number)
@@ -6599,7 +6601,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -6836,7 +6838,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="finland-physical-addresses"></a>Adresy fizyczne Finlandii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Finlandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Finlandii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -7010,7 +7012,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -7199,7 +7201,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="france-physical-addresses"></a>Adresy fizyczne We Francji
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Francji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Francji. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -7367,7 +7369,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -7634,7 +7636,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ### <a name="format"></a>Formacie
 
-od 1 listopada 2010 r.: od dziewięciu do jedenastu liter i cyfr
+od 1 listopada 2010 r.: od dziewięciu do 11 liter i cyfr
 
 od 1 kwietnia 1987 r. do 31 października 2010 r.: 10 cyfr
 
@@ -7798,7 +7800,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="germany-physical-addresses"></a>Adresy fizyczne w Niemczech
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Niemiec. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Niemiec. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -7885,7 +7887,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -7947,7 +7949,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="greece-drivers-license-number"></a>Numer prawa jazdy w Grecji
 
-Ta jednostka jest uwzględniona w typie informacji poufnych numeru prawa jazdy UE. Jest ona również dostępna jako autonomiczna jednostka typu informacji poufnych.
+Ta jednostka jest uwzględniona w typie informacji poufnych numeru prawa jazdy UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
 ### <a name="format"></a>Formacie
 
@@ -8246,7 +8248,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="greece-physical-addresses"></a>Adresy fizyczne Grecji
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Grecji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Grecji. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -8258,7 +8260,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -8319,7 +8321,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -8717,7 +8719,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -8780,7 +8782,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="hungary-physical-addresses"></a>Adresy fizyczne Na Węgrzech
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Węgier. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Węgier. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -8852,7 +8854,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -8934,7 +8936,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -8996,7 +8998,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="iceland-physical-addresses"></a>Adresy fizyczne Islandii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Islandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Islandii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -10145,7 +10147,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="ireland-physical-addresses"></a>Adresy fizyczne Irlandii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Irlandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Irlandii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -10260,7 +10262,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="italy-drivers-license-number"></a>Numer prawa jazdy Włoch
 
-Jednostka tego typu jest uwzględniana w typie informacji poufnych Numer prawa jazdy UE. Jest ona również dostępna jako autonomiczna jednostka typu informacji poufnych.
+Jednostka tego typu jest uwzględniana w typie informacji poufnych Numer prawa jazdy UE. Jest również dostępna jako autonomiczna jednostka typu informacji poufnych.
 
 ### <a name="format"></a>Formacie
 
@@ -10435,7 +10437,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -10606,7 +10608,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="italy-physical-addresses"></a>Adresy fizyczne Włoch
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Włoch. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Włoch. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -10618,7 +10620,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -10858,7 +10860,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -10922,7 +10924,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -11585,7 +11587,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="latvia-physical-addresses"></a>Adresy fizyczne Łotwy
 
-Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Łotwy. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Łotwy. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -11593,7 +11595,7 @@ Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z 
 
 ## <a name="liechtenstein-physical-addresses"></a>Adresy fizyczne Liechtensteinu
 
-Ta rozdzielana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Liechtensteinu. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta rozdzielana nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Liechtensteinu. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -11776,7 +11778,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -11864,7 +11866,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="lithuania-physical-addresses"></a>Adresy fizyczne Litwy
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Litwy. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Litwy. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -12115,7 +12117,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -12370,7 +12372,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="luxemburg-physical-addresses"></a>Adresy fizyczne w Luksemburgu
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Luksemburga. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Luksemburga. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -12618,7 +12620,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -12756,7 +12758,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="malta-physical-addresses"></a>Adresy fizyczne Malty
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Malty. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Malty. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -13292,7 +13294,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="netherlands-physical-addresses"></a>Holenderskie adresy fizyczne
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Holandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Holandii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -13304,7 +13306,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -13390,7 +13392,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -13455,7 +13457,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -13520,7 +13522,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -13638,7 +13640,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -13748,7 +13750,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="new-zealand-physical-addresses"></a>Adresy fizyczne Nowej Zelandii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Nowej Zelandii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Nowej Zelandii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -13760,7 +13762,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -13874,7 +13876,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="norway-physical-addresses"></a>Adresy fizyczne Norwegii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Norwegii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Norwegii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -14287,7 +14289,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="poland-physical-addresses"></a>Adresy fizyczne w Polsce
 
-Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Polski. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta rozdzielona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Polski. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -14299,7 +14301,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -14368,7 +14370,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -14759,7 +14761,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="portugal-physical-addresses"></a>Adresy fizyczne Portugalii
 
-Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Portugalii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Portugalii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -15084,7 +15086,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -15182,7 +15184,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="romania-physical-addresses"></a>Adresy fizyczne Rumunii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Rumunii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Rumunii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -15194,7 +15196,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -15258,7 +15260,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -15665,7 +15667,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -15760,7 +15762,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="slovakia-physical-addresses"></a>Adresy fizyczne Słowacji
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Słowacji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Słowacji. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -16017,7 +16019,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="slovenia-physical-addresses"></a>Adresy fizyczne Słowenii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Słowenii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Słowenii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -16029,7 +16031,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -16103,7 +16105,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -16287,7 +16289,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -16648,7 +16650,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="spain-physical-addresses"></a>Adresy fizyczne Hiszpanii
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Hiszpanii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Hiszpanii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -16717,7 +16719,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -16837,7 +16839,7 @@ Ciąg "User Id", "User ID", "uid" lub "UserId", a następnie znaki i ciągi opis
 - ciąg "Password" lub "pwd", gdzie "pwd" nie jest poprzedzony małą literą
 - znak równości (=)
 - dowolny znak, który nie jest znakiem dolara ($), symbolem procentu (%), większym niż symbol (>), symbolem (@), cudzysłem ("), średnikiem (;), lewym nawiasem klamrowym([) lub lewym nawiasem kwadratowym ({)
-- dowolna kombinacja 7–128 znaków, które nie są średnikami (;), ukośnikiem (/) lub cudzysłów (")
+- dowolna kombinacja od 7 do 128 znaków, które nie są średnikami (;), ukośnikiem (/) lub cudzysłów (")
 - średnik (;) lub cudzysłów (")
 
 ### <a name="checksum"></a>Suma kontrolna
@@ -17245,7 +17247,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="sweden-physical-addresses"></a>Adresy fizyczne Szwecji
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Szwecji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Szwecji. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -17257,7 +17259,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -17413,7 +17415,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="switzerland-physical-addresses"></a>Adresy fizyczne Szwajcarii
 
-Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Szwajcarii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Szwajcarii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -17425,7 +17427,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -17761,7 +17763,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="turkey-physical-addresses"></a>Adresy fizyczne Turcji
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Turcji. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Turcji. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -18137,7 +18139,7 @@ Zasady DLP mają średnią pewność, że wykryto ten typ informacji poufnych, j
 
 ## <a name="uk-physical-addresses"></a>WIELKIEJ BRYTANII. adresy fizyczne
 
-Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Zjednoczonej Brytanii. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta uwolniona nazwana jednostka wykrywa wzorce związane z adresem fizycznym z Zjednoczonej Brytanii. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -18149,7 +18151,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -18278,7 +18280,7 @@ Zależy od stanu
 zależy od stanu — na przykład Nowy Jork:
 
 - dziewięć cyfr sformatowanych jak ddd ddd ddd będzie zgodne.
-- dziewięć cyfr, takich jak ddddddddd, nie będzie zgodne.
+- dziewięć cyfr, takich jak dddddddddd, nie będzie zgodne.
 
 ### <a name="checksum"></a>Suma kontrolna
 
@@ -18506,7 +18508,7 @@ Zasady DLP mają małą pewność, że wykryto tego typu poufne informacje, jeś
 
 ## <a name="us-physical-addresses"></a>Adresy fizyczne w Stanach Zjednoczonych
 
-Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Stanów Zjednoczonych. Jest ona również uwzględniona w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie SIT jednostki.
+Ta odłączona nazwana jednostka wykrywa wzorce związane z adresem fizycznym ze Stanów Zjednoczonych. Jest również uwzględniony w [pakiecie Wszystkie adresy fizyczne](#all-physical-addresses) o nazwie entity SIT.
 
 ### <a name="confidence-level"></a>Poziom ufności
 
@@ -18665,7 +18667,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 
@@ -18715,7 +18717,7 @@ Ten typ informacji poufnych jest dostępny tylko do użycia w:
 
 - zasady ochrony przed utratą danych
 - zasady zgodności komunikacji
-- zarządzanie informacjami
+- zarządzanie cyklem życia danych
 - zarządzanie rekordami
 - Microsoft Defender for Cloud Apps
 

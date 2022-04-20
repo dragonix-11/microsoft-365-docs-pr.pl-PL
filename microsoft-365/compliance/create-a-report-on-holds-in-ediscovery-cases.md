@@ -20,14 +20,16 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Dowiedz się, jak wygenerować raport zawierający informacje o wszystkich blokadach skojarzonych z przypadkami zbierania elektronicznych materiałów dowodowych.
-ms.openlocfilehash: b0460b725359e2953c0a27b517a362327ae504f5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 98cdad3d125fbeab9afd9d7d99b572e5f0bf7386
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946468"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993211"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Tworzenie raportu dotyczącego blokad w przypadkach zbierania elektronicznych materiałów dowodowych przy użyciu skryptu
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Skrypt w tym artykule umożliwia administratorom zbierania elektronicznych materiałów dowodowych i menedżerom zbierania elektronicznych materiałów dowodowych generowanie raportu zawierającego informacje o wszystkich blokadach skojarzonych z przypadkami core i eDiscovery (Premium) w portalu zgodności usługi Microsoft Purview. Raport zawiera informacje, takie jak nazwa przypadku, z którym jest skojarzona blokada, lokalizacje zawartości, które są wstrzymane, oraz to, czy blokada jest oparta na zapytaniach. Jeśli istnieją przypadki, które nie mają żadnych blokad, skrypt utworzy dodatkowy raport z listą spraw bez blokady.
 

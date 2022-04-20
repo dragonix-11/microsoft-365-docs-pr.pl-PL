@@ -1,5 +1,5 @@
 ---
-title: Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań Microsoft 365 Compliance przy użyciu Pro JAMF (wersja zapoznawcza)
+title: Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu narzędzia JAMF Pro
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,32 +13,34 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Dowiedz się, jak dołączać i dołączać urządzenia z systemem macOS do rozwiązań Microsoft 365 Compliance przy użyciu Pro JAMF (wersja zapoznawcza)
-ms.openlocfilehash: 44e57e482c08b486563200010671b5c79329f7b2
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Dowiedz się, jak dołączać i dołączać urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu narzędzia JAMF Pro
+ms.openlocfilehash: bf15868b865afa80146df2b16199caf360a55ce2
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783826"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953432"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań Microsoft 365 Compliance przy użyciu Pro JAMF (wersja zapoznawcza)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu narzędzia JAMF Pro
 
-Za pomocą narzędzia JAMF Pro można dołączyć urządzenia z systemem macOS do rozwiązań zgodności Microsoft 365, takich jak zapobieganie utracie danych punktu końcowego.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Za pomocą narzędzia JAMF Pro można dołączyć urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview, takich jak ochrona przed utratą danych punktów końcowych.
 
 > [!IMPORTANT]
 > Użyj tej procedury, jeśli ***na*** urządzeniach z systemem macOS nie wdrożono Ochrona punktu końcowego w usłudze Microsoft Defender (MDE)
 
 **Dotyczy:**
 
-- [Microsoft 365 ochrona przed utratą danych punktu końcowego (DLP)](./endpoint-dlp-learn-about.md)
-- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Ochrona przed utratą danych punktu końcowego (DLP)](./endpoint-dlp-learn-about.md)
+- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md)
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
 - Upewnij się, że [urządzenia z systemem macOS są zarządzane za pośrednictwem narzędzia JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) i są skojarzone z tożsamością (nazwa UPN przyłączona do usługi Azure AD) za pośrednictwem Połączenie jamf lub Intune.
 - Instalowanie przeglądarki v95+ Edge na urządzeniach z systemem macOS
 
-## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Dołączanie urządzeń do rozwiązań Microsoft 365 Compliance przy użyciu Pro JAMF
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Dołączanie urządzeń do rozwiązań usługi Microsoft Purview przy użyciu Pro JAMF
 
 1. Te pliki będą potrzebne do tej procedury.
 

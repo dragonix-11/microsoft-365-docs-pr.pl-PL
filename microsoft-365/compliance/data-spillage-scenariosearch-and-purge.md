@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Użyj zbierania elektronicznych materiałów dowodowych i narzędzi wyszukiwania, aby zarządzać zdarzeniem wycieku danych w organizacji i reagować na nie.
-ms.openlocfilehash: e9e81ae81c344bfc8773174c8650a1808faddd5e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 875c63f264e750603c4ad8a0b5bf1df2b6e45217
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948072"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993233"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Seria rozwiązań zbierania elektronicznych materiałów dowodowych: scenariusz rozlania danych — wyszukiwanie i przeczyszczanie
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  **Co to jest wyciek danych i dlaczego warto się tym zająć?** Wyciek danych występuje, gdy poufny dokument jest uwalniany do niezaufanego środowiska. Po wykryciu zdarzenia wycieku danych ważne jest, aby szybko ocenić rozmiar i lokalizację wycieku, zbadać działania użytkowników wokół niego, a następnie trwale oczyścić rozlane dane z systemu.
   

@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Potrzebujesz rozwiązania do zarządzania rekordami dla Microsoft 365, które zarządza zawartością o wysokiej wartości dla zobowiązań prawnych, biznesowych lub regulacyjnych, ale nie wiesz, od czego zacząć? Zapoznaj się z praktycznymi wskazówkami, aby rozpocząć pracę.
-ms.openlocfilehash: 02c16f9d1a9d42f59cf8bc27bdee38bcc2d10d73
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: e73cb1a118235082978ee93efcdb77f5e5135f8c
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911395"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971478"
 ---
 # <a name="get-started-with-records-management"></a>Wprowadzenie do zarządzania rekordami
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -44,21 +46,19 @@ Chcesz rozpocząć zarządzanie zawartością o wysokiej wartości organizacji n
     - [Publikowanie etykiet przechowywania i stosowanie ich w aplikacjach](create-apply-retention-labels.md)
     - [Automatyczne stosowanie etykiety przechowywania do zawartości](apply-retention-labels-automatically.md)
 
-Niezależnie od tych **kroków użyj łączników do importowania i archiwizowania danych innych firm** , które obejmują dane z platform mediów społecznościowych, platform wiadomości błyskawicznych i platform współpracy dokumentów. Gdy te dane są importowane do skrzynek pocztowych online, obsługują nie tylko zarządzanie rekordami z Microsoft 365 Compliance, ale także inne rozwiązania zgodności, takie jak zgodność z komunikacją, zarządzanie ryzykiem wewnętrznym i zbieranie elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji, zobacz [Informacje o łącznikach dla danych innych firm](archiving-third-party-data.md).
-
 ## <a name="subscription-and-licensing-requirements"></a>Wymagania dotyczące subskrypcji i licencjonowania
 
 Wiele różnych subskrypcji obsługuje zarządzanie rekordami, a wymagania licencyjne dla użytkowników zależą od używanych funkcji.
 
-Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z funkcji zgodności Microsoft 365, zobacz [wskazówki dotyczące licencjonowania Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Aby uzyskać informacje na temat zarządzania rekordami, zobacz sekcję [Zarządzanie rekordami](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) i powiązane pobieranie plików PDF w celu uzyskania wymagań dotyczących licencjonowania na poziomie funkcji.
+Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z funkcji usługi Microsoft Purview, zobacz [wskazówki dotyczące licencjonowania Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Aby uzyskać informacje na temat zarządzania rekordami, zobacz sekcję [Zarządzanie rekordami usługi Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management) i powiązane pobieranie plików PDF, aby uzyskać informacje o wymaganiach dotyczących licencjonowania na poziomie funkcji.
 
 ## <a name="permissions"></a>Uprawnienia
 
-Członkowie zespołu ds. zgodności odpowiedzialnego za zarządzanie rekordami potrzebują uprawnień do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a>. Domyślnie administrator dzierżawy (administrator globalny) ma dostęp do tej lokalizacji i może udzielić urzędnikom zgodności i innym osobom dostępu bez udzielania im wszystkich uprawnień administratora dzierżawy. Aby udzielić uprawnień dla tej ograniczonej administracji, zalecamy dodanie użytkowników do grupy ról **administratora zarządzania rekordami** , która udziela uprawnień do wszystkich funkcji związanych z zarządzaniem rekordami, w tym [przeglądu dyspozycji i weryfikacji](disposition.md).
+Członkowie zespołu ds. zgodności odpowiedzialnego za zarządzanie rekordami potrzebują uprawnień do <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portalu zgodności usługi Microsoft Purview</a>. Domyślnie administrator dzierżawy (administrator globalny) ma dostęp do tej lokalizacji i może udzielić urzędnikom zgodności i innym osobom dostępu bez udzielania im wszystkich uprawnień administratora dzierżawy. Aby udzielić uprawnień dla tej ograniczonej administracji, zalecamy dodanie użytkowników do grupy ról **administratora zarządzania rekordami** , która udziela uprawnień do wszystkich funkcji związanych z zarządzaniem rekordami, w tym [przeglądu dyspozycji i weryfikacji](disposition.md).
 
 W przypadku roli tylko do odczytu można utworzyć nową grupę ról i dodać rolę **Zarządzanie rekordami tylko do widoku** do tej grupy.
 
-Aby uzyskać instrukcje dodawania użytkowników do ról domyślnych lub tworzenia własnych grup ról, zobacz [Uprawnienia w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md).
+Aby uzyskać instrukcje dotyczące dodawania użytkowników do ról domyślnych lub tworzenia własnych grup ról, zobacz [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 Te uprawnienia są wymagane tylko do tworzenia, konfigurowania i stosowania etykiet przechowywania, które deklarują rekordy i zarządzają dyspozycją. Osoba konfigurująca te etykiety nie wymaga dostępu do zawartości.
 
@@ -67,7 +67,7 @@ Te uprawnienia są wymagane tylko do tworzenia, konfigurowania i stosowania etyk
 Poniższa tabela ułatwia mapowanie wymagań biznesowych na scenariusze obsługiwane przez zarządzanie rekordami.
 
 > [!TIP]
-> Czy należy przestrzegać określonych przepisów branżowych? Zapoznaj się z [wymaganiami prawnymi dotyczącymi zarządzania informacjami i zarządzania rekordami](retention-regulatory-requirements.md) , aby uzyskać wskazówki dotyczące regulacji.
+> Czy należy przestrzegać określonych przepisów branżowych? Zapoznaj się z [wymaganiami prawnymi dotyczącymi zarządzania cyklem życia danych i zarządzania rekordami](retention-regulatory-requirements.md) , aby uzyskać wskazówki specyficzne dla regulacji.
 
 |Chcę...|Dokumentacji|
 |----------------|---------------|

@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Użyj wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview, aby wykonać docelową kolekcję, która wyszukuje elementy w określonej skrzynce pocztowej lub folderze witryny.
-ms.openlocfilehash: b01197ebc942b13f1b3806d2ad3b5a564b609098
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9638a0870f1d97d2bcea73215509d269576c4ecd
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947060"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991781"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Używanie wyszukiwania zawartości dla kolekcji docelowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Narzędzie do wyszukiwania zawartości w portalu zgodności usługi Microsoft Purview nie zapewnia bezpośredniego sposobu wyszukiwania określonych folderów w Exchange skrzynkach pocztowych lub SharePoint i witrynach OneDrive dla Firm. Można jednak przeszukać określone foldery (nazywane *kolekcją docelową*), określając właściwość identyfikatora folderu dla właściwości poczty e-mail lub ścieżki (DocumentLink) dla witryn w rzeczywistej składni zapytania wyszukiwania. Używanie wyszukiwania zawartości do wykonywania docelowej kolekcji jest przydatne, gdy masz pewność, że elementy reagujące na przypadek lub uprzywilejowane elementy znajdują się w określonej skrzynce pocztowej lub folderze witryny. Skrypt w tym artykule umożliwia uzyskanie identyfikatora folderu dla folderów skrzynki pocztowej lub ścieżki (DocumentLink) dla folderów w witrynie SharePoint i OneDrive dla Firm. Następnie możesz użyć identyfikatora folderu lub ścieżki w zapytaniu wyszukiwania, aby zwrócić elementy znajdujące się w folderze.
 

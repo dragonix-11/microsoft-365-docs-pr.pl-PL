@@ -1,5 +1,5 @@
 ---
-title: Motywy w Advanced eDiscovery
+title: Motywy zbierania elektronicznych materiałów dowodowych (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Motywy zbierania elektronicznych materiałów dowodowych (Premium) umożliwiają organizowanie zestawów przeglądów przez znalezienie dominującego motywu w każdym dokumencie.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 49605d2d7fb3103c672fd5ae4d2249956d52b6a0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e019c103114630411a7d13ae619827a2e83a890c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934522"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991759"
 ---
 # <a name="themes-in-ediscovery-premium"></a>Motywy zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Jak osoba pisze dokument? Zazwyczaj zaczynają od co najmniej jednego pomysłu, który chcą przekazać w dokumencie, i tworzą je przy użyciu słów zgodnych z pomysłami. Bardziej rozpowszechnionym pomysłem jest częstsze słowa, które są związane z tą ideą. Informuje to również o tym, jak użytkownicy korzystają z dokumentów. Ważną rzeczą, którą należy zrozumieć podczas czytania dokumentu, są pomysły, które dokument próbuje przekazać, które pomysły pojawiają się gdzie i jakie są relacje między pomysłami.
 

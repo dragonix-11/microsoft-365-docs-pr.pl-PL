@@ -1,5 +1,5 @@
 ---
-title: Obliczanie wyniku zgodności
+title: Obliczanie wskaźnika zgodności
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,110 +13,112 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Zrozumienie sposobu, w jaki Menedżer zgodności firmy Microsoft oblicza spersonalizowany wynik na podstawie działań podejmowane w celu rozwiązania zagrożeń i poprawy oceny zgodności.
+description: Dowiedz się, w jaki sposób menedżer zgodności usługi Microsoft Purview oblicza spersonalizowany wynik na podstawie akcji podjętych w celu rozwiązania ryzyka i poprawy stanu zgodności.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c6667ad9be6164639e65e23fb136de1bc196f60
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 07a168bd32e73502380260db748fd145648c69ae
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320035"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971181"
 ---
-# <a name="compliance-score-calculation"></a>Obliczanie wyniku zgodności
+# <a name="compliance-score-calculation"></a>Obliczanie wskaźnika zgodności
 
-**W tym artykule:** Dowiedz się, jak Menedżer zgodności oblicza wynik zgodności dla organizacji. W tym artykule wyjaśniono, jak **interpretować** wyniki, co obejmuje ocena planu bazowego **ochrony** danych, ciągłe **monitorowanie** oraz jak zarządzane i oceniane są różne typy **akcji**.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+**W tym artykule:** Dowiedz się, jak Menedżer zgodności oblicza ocenę zgodności dla twojej organizacji. W tym artykule wyjaśniono, jak **interpretować wynik**, co obejmuje **ocena punktu odniesienia ochrony danych** , **ciągłe monitorowanie** oraz **jak różne typy akcji są zarządzane i oceniane**.
 
 > [!IMPORTANT]
-> Rekomendacje Menedżera zgodności nie należy interpretować jako gwarancji zgodności. Ocena i weryfikacja skuteczności kontroli klienta w środowisku wymogów prawnych należy do Użytkownika. Te usługi podlegają regulaminom i regulaminom usług [online](https://go.microsoft.com/fwlink/?linkid=2108910). Zobacz też [Microsoft 365 licencjonowania w zakresie zabezpieczeń i zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Rekomendacje programu Compliance Manager nie powinny być interpretowane jako gwarancja zgodności. Do Ciebie należy ocena i weryfikowanie skuteczności kontroli klientów w danym środowisku regulacyjnym. Te usługi podlegają warunkom i postanowień [w Warunkach produktu](https://go.microsoft.com/fwlink/?linkid=2108910). Zobacz również [Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zabezpieczeń i zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="how-to-read-your-compliance-score"></a>Jak odczytać wynik zgodności
 
-Na pulpicie nawigacyjnym Menedżer zgodności jest wyświetlany ogólny wynik zgodności. Ten wynik jest miarą postępów w ukończeniu zalecanych działań udoskonalania w obrębie kontrolek. Twój wynik może ułatwić zrozumienie bieżącej sytuacji dotyczącej zgodności z przepisami. Może także ułatwić priorytetyzowanie akcji na podstawie ich potencjału w celu zmniejszenia ryzyka.
+Na pulpicie nawigacyjnym Programu Compliance Manager zostanie wyświetlony ogólny wynik zgodności. Ten wynik mierzy postęp w wykonywaniu zalecanych akcji poprawy w ramach kontrolek. Twój wynik może pomóc zrozumieć aktualną postawę zgodności. Może również pomóc w ustalaniu priorytetów akcji na podstawie ich potencjału w celu zmniejszenia ryzyka.
 
 Wartość wyniku jest przypisywana na trzech poziomach:
 
-1. **Wynik akcji udoskonalania**: każda akcja ma inny wpływ na wynik w zależności od potencjalnego ryzyka
+1. **Ocena akcji poprawy**: każda akcja ma inny wpływ na wynik w zależności od potencjalnego ryzyka
 
-2. **Wynik kontroli**: ten wynik jest sumą punktów zdobytych w wyniku wykonania akcji udoskonalania w kontrolce. Ta suma jest stosowana do ogólnego wyniku zgodności, gdy kontrolka spełnia oba następujące warunki:
-    - **Stan implementacji** jest równy **zaimplementowaniu** lub **alternatywnej implementacji**, oraz
-    - **Wynik testu równa** się **Passed**.
+2. **Wynik kontrolny**: ten wynik to suma punktów uzyskanych przez ukończenie akcji poprawy w ramach kontrolki. Ta suma jest stosowana w całości do ogólnego wyniku zgodności, gdy kontrolka spełnia oba następujące warunki:
+    - **Stan implementacji** jest równy **zaimplementowanym** lub **alternatywnej implementacji** oraz
+    - **Wynik testu** jest równy **wynikowi zakończonej** pomyślnie.
 
-3. **Wynik oceny**: ten wynik jest sumą twoich wyników kontroli. Jest on obliczany na podstawie wyników akcji. Każde działanie firmy Microsoft i każde działanie udoskonalania zarządzane przez Twoją organizację jest liczone raz, niezależnie od tego, jak często do nich występuje w kontrolce.
+3. **Ocena**: ten wynik jest sumą wyników kontroli. Jest ona obliczana przy użyciu wyników akcji. Każda akcja firmy Microsoft i każda akcja poprawy zarządzana przez organizację są liczone raz, niezależnie od tego, jak często są przywoływane w kontrolce.
 
-Ogólna ocena zgodności jest obliczana na podstawie wyników akcji, gdzie każde działanie firmy Microsoft jest liczone raz, każde działanie techniczne, którym zarządzasz, jest liczone raz, a każda akcja nie technicalna, której zarządzasz, jest zliczane raz na grupę. Ta logika ma na celu zapewnienie najdokładniejszego księgowego sposobu implementowania i  testowania akcji w organizacji. Możesz zauważyć, że może to powodować różnice w ogólnym wyniku zgodności od średniej wyników oceniania. Dowiedz się więcej poniżej o [tym, jak są odczytywane akcje](#action-types-and-points).
+Ogólny wynik zgodności jest obliczany przy użyciu wyników akcji, gdzie każda akcja firmy Microsoft jest liczona raz, każda zarządzana akcja techniczna jest liczona raz, a każda akcja nietechnii, którą zarządzasz, jest liczona raz na grupę. Ta logika ma na celu zapewnienie najdokładniejszej analizy sposobu implementowania i testowania akcji w organizacji. Można zauważyć, że może to spowodować, że ogólny wynik zgodności będzie się różnić od średniej wyników oceny. Przeczytaj więcej poniżej na temat [sposobu oceniania akcji](#action-types-and-points).
 
-## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Początkowa ocena na podstawie Microsoft 365 danych podstawowych
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Wynik początkowy na podstawie punktu odniesienia ochrony danych Microsoft 365
   
-Menedżer zgodności daje początkową ocenę na podstawie planu bazowego Microsoft 365 ochrony danych. Ten plan bazowy jest zestawem kontroli, który zawiera najważniejsze przepisy i standardy w zakresie ochrony danych i ogólnego zarządzania danymi. Ten plan bazowy rysuje elementy przede wszystkim z NIST CSF (National Institute of Standards and Technology Nacjonalizacja) i ISO (Międzynarodowa Organizacja Normalizacji), a także fedRAMP (Federal Risk and Authorization Management Program) i RODO (Ogólne Rozporządzenie o Ochronie Danych Unii Europejskiej).
+Menedżer zgodności zapewnia wstępny wynik na podstawie punktu odniesienia Microsoft 365 ochrony danych. Ten punkt odniesienia to zestaw mechanizmów kontroli, które obejmują kluczowe przepisy i standardy dotyczące ochrony danych i ogólnego ładu danych. Ten punkt odniesienia czerpie przede wszystkim z NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) i ISO (Międzynarodowa Organizacja Standaryzacji), a także z FedRAMP (Federal Risk and Authorization Management Program) i RODO (ogólne rozporządzenie o ochronie danych Unii Europejskiej).
 
-Twój początkowy wynik jest obliczany zgodnie z domyślną oceną planu bazowego ochrony danych dostępną dla wszystkich organizacji. Podczas pierwszej wizyty Menedżer zgodności zbiera już sygnały z Twoich Microsoft 365 rozwiązania. Zobaczysz w skrócie, jak Twoja organizacja działa w odniesieniu do kluczowych standardów i przepisów dotyczących ochrony danych, oraz zobaczysz sugerowane działania ulepszeń do podjęcia.
+Początkowy wynik jest obliczany zgodnie z domyślną oceną punktu odniesienia ochrony danych udostępnioną wszystkim organizacjom. Podczas pierwszej wizyty Menedżer zgodności już zbiera sygnały z Microsoft 365 rozwiązań. Na pierwszy rzut oka zobaczysz, jak twoja organizacja działa w stosunku do kluczowych standardów i przepisów dotyczących ochrony danych, a także zobaczysz sugerowane działania ulepszeń do podjęcia.
 
-Ponieważ każda organizacja ma określone potrzeby, Menedżer zgodności polega na tym, aby skonfigurować testy i zarządzać nimi w celu jak najbardziej kompleksowego zminimalizowania i minimalizowania ryzyka.
+Ponieważ każda organizacja ma określone potrzeby, menedżer zgodności polega na skonfigurowaniu ocen i zarządzaniu nimi, aby pomóc zminimalizować i ograniczyć ryzyko tak kompleksowo, jak to możliwe.
 
-## <a name="how-compliance-manager-continuously-assesses-controls"></a>Sposób ciągłego oceniania kontroli przez Menedżera zgodności
+## <a name="how-compliance-manager-continuously-assesses-controls"></a>Jak Menedżer zgodności stale ocenia mechanizmy kontroli
 
-Menedżer zgodności automatycznie identyfikuje ustawienia w Twoim środowisku Microsoft 365, które ułatwiają określenie, kiedy określone konfiguracje spełniają wymagania implementacji działań udoskonalania. Menedżer zgodności wykrywa sygnały z innych wdrożonych przez Ciebie rozwiązań zgodności, takich jak zarządzanie informacjami, ochrona informacji, zgodność komunikacji i zarządzanie ryzykiem w niejawnym programie testów, a także wykorzystuje monitorowanie bezpiecznego wyniku firmy Microsoft w dopełnianych działaniach usprawnień.
+Menedżer zgodności automatycznie identyfikuje ustawienia w środowisku Microsoft 365, które pomagają określić, kiedy niektóre konfiguracje spełniają wymagania implementacji akcji poprawy. Menedżer zgodności wykrywa sygnały z innych rozwiązań zgodności, które mogły zostać wdrożone, w tym zarządzania cyklem życia danych, ochrony informacji, zgodności z komunikacją i zarządzania ryzykiem wewnętrznym, a także wykorzystuje monitorowanie wskaźnika bezpieczeństwa firmy Microsoft w ramach uzupełniających akcji poprawy.
 
-Stan akcji zostanie zaktualizowany na pulpicie nawigacyjnym w ciągu 24 godzin od zmiany. Gdy będziesz postępować zgodnie z zaleceniem, aby zaimplementować kontrolkę, stan kontrolki będzie zazwyczaj aktualizowany następnego dnia.
+Stan akcji zostanie zaktualizowany na pulpicie nawigacyjnym w ciągu 24 godzin od zmiany. Po wykonaniu zalecenia w celu zaimplementowania kontrolki stan kontrolki będzie zwykle aktualizowany następnego dnia.
 
-Jeśli na przykład włączysz uwierzytelnianie wieloskładnikowe (MFA) w portalu usługi Azure AD, Menedżer zgodności wykryje to ustawienie i odzwierciedli je w szczegółach rozwiązania dostępu kontrolki. Jeśli nie włączyć uwierzytelniania wieloskładnikowego, Menedżer zgodności oznaczy flagą akcję zalecaną do podjęcia.
+Jeśli na przykład włączysz uwierzytelnianie wieloskładnikowe (MFA) w portalu usługi Azure AD, menedżer zgodności wykryje to ustawienie i odzwierciedli je w szczegółach rozwiązania dostępu do kontroli. Z drugiej strony, jeśli nie włączono uwierzytelniania wieloskładnikowego, menedżer zgodności sygnalizuje to jako zalecaną akcję.
 
-Dowiedz się więcej o [bezpiecznym wyniku i o tym, jak to działa](../security/defender/microsoft-secure-score.md).
+Dowiedz się więcej na temat [wskaźnika bezpieczeństwa i jego działania](../security/defender/microsoft-secure-score.md).
   
 ## <a name="action-types-and-points"></a>Typy i punkty akcji
 
 Menedżer zgodności śledzi dwa typy akcji:
 
-1. **Działania ulepszeń**: akcje, które są zarządzane przez Twoją organizację.
-2. **Akcje firmy Microsoft**: akcje, które zarządza firma Microsoft.
+1. **Twoje akcje poprawy**: akcje zarządzane przez organizację.
+2. **Akcje firmy Microsoft**: akcje zarządzane przez firmę Microsoft.
 
-Oba typy akcji mają punkty, które liczą się w ogólnym wyniku po ukończeniu.
+Oba typy akcji mają punkty, które są wliczane do ogólnego wyniku po zakończeniu.
 
-### <a name="technical-and-non-technical-actions"></a>Działania techniczne i inne niż techniczne
+### <a name="technical-and-non-technical-actions"></a>Działania techniczne i nietechnalne
 
-Akcje są grupowane według ich charakteru technicznego lub nie technicalowego. Skutki oceniania poszczególnych akcji różnią się w zależności od typu.
+Akcje są grupowane według tego, czy mają charakter techniczny, czy nietechnacyjny. Wpływ oceniania każdej akcji różni się w zależności od typu.
 
-- **Działania techniczne** są wdrażane przez interakcję z technologią rozwiązania (na przykład przez zmianę konfiguracji). Punkty za akcje techniczne są udzielane raz na akcję, niezależnie od tego, do ilu grup należy.
+- **Akcje techniczne** są implementowane przez interakcję z technologią rozwiązania (na przykład zmianę konfiguracji). Punkty dla akcji technicznych są przyznawane raz na akcję, niezależnie od liczby grup, do których należy.
 
-- **Akcje nie technicalne** są zarządzane przez Twoją organizację i implementowane w sposób inny niż praca z technologią rozwiązania. Istnieją dwa typy działań nietechnowych: dokumentacja **i** **działania operacyjne**. Punkty za te akcje są stosowane do wyniku zgodności na poziomie grupy. Oznacza to, że jeśli akcja istnieje w wielu grupach, wartość punktowa akcji będzie odbierana za każdym razem, gdy zostanie zaimplementowana w grupie.
+- **Akcje inne niż techniczne** są zarządzane przez organizację i implementowane w sposób inny niż praca z technologią rozwiązania. Istnieją dwa typy akcji nietechnacyjnych: **dokumentacja** i **operacje**. Punkty dla tych akcji są stosowane do oceny zgodności na poziomie grupy. Oznacza to, że jeśli akcja istnieje w wielu grupach, za każdym razem, gdy zaimplementujesz ją w grupie, otrzymasz wartość punktu akcji.
 
-**Przykład, w jaki sposób są analizne działania techniczne i niezwiązywne z technicznego:**
+**Przykład akcji technicznych i nietechnacyjnych:**
 
-Załóżmy, że masz akcja techniczną, o wartości 3 punktów, która istnieje w 5 grupach, i masz nie technicalną wartość 3 punkty, która istnieje w tych samych 5 grupach.
+Załóżmy, że masz akcję techniczną o wartości 3 punktów, która istnieje w 5 grupach i masz akcję nietechnii o wartości 3 punktów, która istnieje w tych samych 5 grupach.
 
-Jeśli pomyślnie wdrożysz działanie techniczne, łączna liczba obierania punktów wynosi 3. Jest tak, ponieważ wystarczy zaimplementować akcję tylko raz dla dzierżawy. Implementacja i stan testowania akcji technicznej będą wyświetlane tak samo we wszystkich wystąpieniach tej akcji, we wszystkich grupach, do których należy.
+Jeśli pomyślnie zaimplementujesz akcję techniczną, łączna liczba odebranych punktów wynosi 3. Dzieje się tak, ponieważ należy zaimplementować akcję tylko raz dla dzierżawy. Stan implementacji i testu dla akcji technicznej będzie taki sam we wszystkich wystąpieniach tej akcji, w każdej grupie, do której należy.
 
-Jeśli pomyślnie wdrożysz działanie nie technicalne w każdej z 5 grup, łączna liczba obierania punktów wynosi 15. Jest to spowodowane tym, że należy zaimplementować akcję w każdej grupie. Implementacja i stan testowania akcji nietechnicznych będą się różnić w zależności od grupy, ponieważ akcja jest zaimplementowana oddzielnie w obrębie każdej z jej grup.
+Jeśli pomyślnie zaimplementujesz akcję nietechnii w każdej z 5 grup, łączna liczba punktów, które otrzymasz, wynosi 15. Jest to spowodowane koniecznością zaimplementowania akcji w każdej grupie. Stan implementacji i testu dla akcji nietechnii będzie się różnić w różnych grupach, ponieważ akcja jest implementowana oddzielnie w każdej z jej grup.
 
-Ta logika wyników ma na celu zapewnienie najdokładniejszego księgowego sposobu implementowania i  testowania akcji w organizacji.
+Ta logika oceniania ma na celu zapewnienie najdokładniejszej analizy sposobu implementowania i testowania akcji w organizacji.
 
-### <a name="how-score-values-are-determined"></a>Jak są określane wartości wyników
+### <a name="how-score-values-are-determined"></a>Jak są określane wartości oceny
 
-Akcji przypisywana jest wartość wyniku na podstawie tego, czy są one obowiązkowe, czy dyskrecjonalne, oraz od tego, czy mają one charakter zapobiegający, detekwacyjny czy zawłaszający.
+Akcjom przypisuje się wartość oceny na podstawie tego, czy są one obowiązkowe, czy uznaniowe oraz czy są zapobiegawcze, detektywistyczne czy naprawcze.
 
-### <a name="mandatory-and-discretionary-actions"></a>Działania obowiązkowe i dyskrecjonalne
+### <a name="mandatory-and-discretionary-actions"></a>Działania obowiązkowe i uznaniowe
 
-- **Czynności obowiązkowych** nie można pominąć celowo ani przypadkowo. Przykładem obowiązkowej akcji jest centralnie zarządzane zasady dotyczące haseł, które ustawiają wymagania dotyczące długości, złożoności i wygasania hasła. Użytkownicy muszą spełniać te wymagania, aby uzyskać dostęp do systemu.
+- Nie można pominąć **obowiązkowych akcji**— celowo lub przypadkowo. Przykładem obowiązkowej akcji są centralnie zarządzane zasady haseł, które określają wymagania dotyczące długości hasła, złożoności i wygaśnięcia. Użytkownicy muszą spełniać te wymagania, aby uzyskać dostęp do systemu.
   
-- **Działania dyskrecjonalne** polegają na tym, że użytkownicy rozumieją zasady i ich przestrzegają. Przykładem może być zasada wymagająca od użytkowników zablokowania komputera w przypadku opuszczenia jej przez użytkownika, ponieważ zależy ona od użytkownika.
+- **Akcje uznaniowe** polegają na użytkownikach, aby zrozumieć zasady i stosować się do nich. Na przykład zasady wymagające od użytkowników zablokowania komputera po jego opuszczeniu są akcją uznaniową, ponieważ są zależne od użytkownika.
   
-### <a name="preventative-detective-and-corrective-actions"></a>Akcje zapobiegające, wykrywające i korygające
+### <a name="preventative-detective-and-corrective-actions"></a>Działania zapobiegawcze, detektywistyczne i naprawcze
   
-- **Działania zapobiegające odniesieniu** do określonego ryzyka. Na przykład ochrona informacji w miejscu przy użyciu szyfrowania jest akcją zapobiegawczą atakom i naruszeniem bezpieczeństwa. Rozdzielenie obowiązków jest działaniem zapobiegającym zarządzaniu konfliktem zainteresowań i zabezpieczeniu się przed oszustwami.
+- **Akcje zapobiegawcze** dotyczą określonych zagrożeń. Na przykład ochrona informacji magazynowanych przy użyciu szyfrowania jest działaniem zapobiegawczym w przypadku ataków i naruszeń. Rozdzielenie obowiązków jest działaniem zapobiegawczym w celu zarządzania konfliktem interesów i ochrony przed oszustwami.
   
-- **Akcje wykrywające** aktywnie monitorują systemy w celu identyfikowania nieregularnych warunków lub zachowań reprezentujących ryzyko albo takich, które mogą być używane do wykrywania łamania praw lub naruszeń. Przykłady obejmują inspekcję dostępu systemu i akcje administracyjne o uprzywilejowanych uprawnieniach. Inspekcje zgodności z przepisami to rodzaj akcji dekcyjnej służącej do wykrywania problemów z procesami.
+- **Działania detektywistyczne** aktywnie monitorują systemy w celu identyfikowania nieregularnych warunków lub zachowań, które reprezentują ryzyko, lub które mogą służyć do wykrywania włamań lub naruszeń. Przykłady obejmują inspekcję dostępu do systemu i uprzywilejowane akcje administracyjne. Inspekcje zgodności z przepisami są rodzajem akcji detektywistycznej używanej do znajdowania problemów z procesami.
   
-- **Działania naprawcze próbują** ograniczyć do minimum negatywne skutki zdarzenia związanego z zabezpieczeniami, podjąć działania naprawcze w celu zmniejszenia efektu natychmiastowego i, jeśli to możliwe, odwrócić szkody. Reagowanie na incydenty dotyczące prywatności jest działaniem naprawczym w celu ograniczenia uszkodzeń i przywracania systemów do stanu operacyjnego w przypadku naruszenia.
+- **Działania naprawcze** starają się ograniczyć do minimum niekorzystne skutki zdarzenia zabezpieczeń, podjąć działania naprawcze w celu zmniejszenia natychmiastowego efektu i cofnąć szkody, jeśli to możliwe. Reagowanie na zdarzenia związane z prywatnością jest działaniem naprawczym mającym na celu ograniczenie uszkodzeń i przywrócenie systemów do stanu operacyjnego po naruszeniu.
   
 Każda akcja ma przypisaną wartość w Menedżerze zgodności na podstawie ryzyka, które reprezentuje:
 
-|**Type**|**Przydzielony wynik**|
+|**Type**|**Przypisany wynik**|
 |:-----|:-----|
-| Obowiązkowa obowiązkowa | 27 |
-| Zapobieganie dyskrecji | 9 |
-| Detective mandatory | 3 |
-| Wykryj dyskrecję | 1 |
-| Poprawianie obowiązkowych | 3 |
-| Właściwa dyskrecja | 1 |
+| Prewencyjne obowiązkowe | 27 |
+| Profilaktyczne dyskrecjonalne | 9 |
+| Detektyw obowiązkowy | 3 |
+| Detektyw uznaniowy | 1 |
+| Obowiązkowa korekta | 3 |
+| Naprawczy dyskrecjonalny | 1 |
   
-![Wartości punktów akcji Menedżera zgodności.](../media/compliance-score-action-scoring.png "Wartości punktów akcji Menedżera zgodności")
+![Wartości punktu akcji programu Compliance Manager.](../media/compliance-score-action-scoring.png "Wartości punktu akcji programu Compliance Manager")

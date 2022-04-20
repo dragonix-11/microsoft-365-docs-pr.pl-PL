@@ -19,19 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Dowiedz się, dlaczego szacowane i rzeczywiste wyniki wyszukiwania mogą się różnić w przypadku wyszukiwań uruchamianych za pomocą narzędzi zbierania elektronicznych materiałów dowodowych w Office 365.
-ms.openlocfilehash: b1e4ba4938e418d8364dfb06b24b6f7a58d6a463
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a71b246b71e7b3cca3ef361510042b6292c36c8b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938164"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993957"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Różnice między szacowanymi i rzeczywistymi wynikami wyszukiwania zbierania elektronicznych materiałów dowodowych
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Ten artykuł dotyczy wyszukiwań, które można uruchomić przy użyciu jednego z następujących Microsoft 365 narzędzi zbierania elektronicznych materiałów dowodowych: 
 
 - Wyszukiwanie zawartości
-- eDiscovery (Standardowa)
+- Zbieranie elektronicznych materiałów dowodowych w warstwie Standardowa
 
 Po uruchomieniu wyszukiwania zbierania elektronicznych materiałów dowodowych używane narzędzie zwróci oszacowanie liczby elementów (i ich całkowitego rozmiaru) zgodnych z kryteriami wyszukiwania. Na przykład po uruchomieniu wyszukiwania w portalu zgodności usługi Microsoft Purview szacowane wyniki wyszukiwania są wyświetlane na stronie wysuwanej dla wybranego wyszukiwania.
   

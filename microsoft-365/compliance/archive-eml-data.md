@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych EML z usługi Veritas do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: c4c4043baf8f58405923bf5ac1bc69c6293a4f52
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9ba4cc4772e93b85e856bb68850ba682352e9f5f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938714"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993540"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>Konfigurowanie łącznika do archiwizowania danych EML
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika Veritas w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane EML do skrzynek pocztowych użytkowników w organizacji Microsoft 365. EML to rozszerzenie pliku wiadomości e-mail zapisanej w pliku. Łącznik konwertuje zawartość elementu z formatu źródłowego na format wiadomości e-mail, a następnie importuje element do skrzynki pocztowej użytkownika.
 

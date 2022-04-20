@@ -1,5 +1,5 @@
 ---
-title: Baza testowa — często zadawane pytania
+title: Baza testów — często zadawane pytania
 description: Przeglądanie często zadawanych pytań
 search.appverid: MET150
 author: Tinacyt
@@ -14,129 +14,128 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: e21774ada245a3b9d5c131998b7c60b4a4778210
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: c7fd01b95d461332baaf4eac90aee4715da3e55e
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406011"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953035"
 ---
-# <a name="test-base-faq"></a>Baza testowa — często zadawane pytania
+# <a name="test-base-faq"></a>Baza testów — często zadawane pytania
 
-**P: Jak przesyłamy nasze pakiety do zespołu Test Base?**
+**Pyt.: Jak przesłać nasze pakiety do zespołu bazy testowej?**
 
-**O.** Przesyłaj pakiety bezpośrednio do środowiska Test Base, korzystając z naszego portalu samoobsługowego.
+**A:** Prześlij pakiety bezpośrednio do środowiska Bazy testów przy użyciu naszego portalu samoobsługowego.
 
-Aby przesłać pakiet aplikacji, przejdź do portalu [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") i przekaż spakowany folder zawierający binaries, zależności i skrypty testowe aplikacji za pośrednictwem samoobsługowego pulpitu nawigacyjnego portalu Test Base. 
+Aby przesłać pakiet aplikacji, przejdź do [witryny Azure Portal](https://www.aka.ms/testbaseportal "Strona główna bazy testów") i przekaż spakowany folder zawierający pliki binarne, zależności i skrypty testowe aplikacji za pośrednictwem samoobsługowego pulpitu nawigacyjnego portalu Bazy testów.
 
-Aby uzyskać więcej informacji, zobacz podręcznik użytkownika dołączania do programu lub <testbasepreview@microsoft.com> skontaktuj się z naszym zespołem, aby uzyskać pomoc i więcej informacji.
+Aby uzyskać więcej informacji, zobacz podręcznik użytkownika dołączania lub skontaktuj się z naszym zespołem, <testbasepreview@microsoft.com> aby uzyskać pomoc i uzyskać więcej informacji.
 
-**P: Co to są testy typu "nieobce"?**
+**Pyt.: Co to są testy out-of-box (OOB)?**
 
-**O.** Testy typu "out-of-box" (OOB) są znormalizowane, test domyślny jest uruchamiany w miejscu, w którym są instalowane, uruchamiane i zamykane 30 razy, a następnie odinstalowywać. 
+**A:** Testy out-of-box (OOB) są standardowymi, domyślnymi przebiegami testów, w których pakiety aplikacji są instalowane, uruchamiane i zamykane trzydzieści (30) razy, a następnie odinstalowywanie.
 
-Pakiety utworzone dla bazy testowej będą zawierały następujące skrypty testowe: zainstaluj, uruchom, zamknij i opcjonalnie skrypt odinstalowywania. 
+Pakiety utworzone dla bazy testów będą miały następujące skrypty testowe: instalowanie, uruchamianie, zamykanie i opcjonalnie skrypt odinstalowywania.
 
-Testy typu "od urządzenia" (OOB) zapewniają usterektowany telemetrię aplikacji do porównywania w Windows kompilacjach.
+Testy out-of-box (OOB) zapewniają ustandaryzowane dane telemetryczne w aplikacji do porównania między kompilacjami Windows.
 
-**P. Czy można przesyłać testy poza testami odinstalowywania (instalowanie, uruchamianie, zamykanie i odinstalowywanie skryptów testowych)?**
+**Pyt.: Czy można przesyłać testy poza testami out-of-box (instalowanie, uruchamianie, zamykanie, odinstalowywanie skryptów testowych)?**
 
-**O.** Tak, klienci mogą również przekazywać pakiety aplikacji **do testów** funkcjonalności za pośrednictwem samoobsługowego pulpitu nawigacyjnego portalu.
-**Testy funkcjonalności** to testy umożliwiające klientom uruchamianie skryptów niestandardowych w aplikacji.
+**A:** Tak, klienci mogą również przekazywać pakiety aplikacji do **testów funkcjonalnych** za pośrednictwem samoobsługowego pulpitu nawigacyjnego portalu.
+**Testy funkcjonalne** to testy, które umożliwiają klientom wykonywanie skryptów w celu uruchamiania niestandardowych funkcji w aplikacji.
 
+## <a name="testing"></a>Testowania
 
-## <a name="testing"></a>Testowanie
+**Pyt.: Czy obsługujesz testy funkcjonalne?**
 
-**P: Czy obsługujesz testy funkcjonalności?**
+**A:** Tak, baza testów obsługuje testy funkcjonalne. Testy funkcjonalne to testy, które umożliwiają naszym klientom wykonywanie skryptów w celu uruchamiania niestandardowych funkcji w aplikacji.
 
-**O.** Tak, baza testowa obsługuje testy funkcjonalności. Testy funkcjonalności to testy umożliwiające naszym klientom uruchamianie skryptów niestandardowych w ich aplikacjach. 
+Aby przesłać pakiet aplikacji do testowania funkcjonalnego, przekaż spakowany folder zawierający pliki binarne, zależności i skrypty testowe aplikacji za pośrednictwem naszego samoobsługowego pulpitu nawigacyjnego portalu.
 
-Aby przesłać pakiet aplikacji na testy funkcjonalności, przekaż spakowany folder zawierający pliki binarne, zależności i skrypty testowe aplikacji za pośrednictwem naszego samoobsługowego pulpitu nawigacyjnego portalu. 
+Aby uzyskać więcej informacji, zobacz podręcznik użytkownika dołączania lub skontaktuj się z naszym zespołem, <testbasepreview@microsoft.com> aby uzyskać pomoc i uzyskać więcej informacji.
 
-Aby uzyskać więcej informacji, zobacz podręcznik użytkownika dołączania do programu lub <testbasepreview@microsoft.com> skontaktuj się z naszym zespołem, aby uzyskać pomoc i więcej informacji.
+**Pyt.: Jak baza testów obsługuje nasze dane testowe?**
 
-**P: Jak baza testowa obsługuje dane testowe?**
+**A:** Baza testowa bezpiecznie zbiera dane testowe w środowisku platformy Azure i zarządza nimi.
 
-**O.** Baza testowa bezpiecznie zbiera Twoje dane testowe i zarządza nimi w środowisku platformy Azure. 
+**Pyt.: Czy baza testów może obsługiwać nasze testy automatyczne?**
 
-**P: Czy baza testowa może obsługiwać nasze testy automatyczne?**
+**A:** Tak, baza testów obsługuje testy automatyczne, jednak obecnie nie obsługujemy testów ręcznych ze względu na możliwości usługi.
 
-**O.** Tak, baza testowa obsługuje testy automatyczne, jednak obecnie nie obsługuje testów ręcznych ze względu na możliwości usługi.
+**Pyt.: Jakie języki i struktury testów automatycznych są obsługiwane?**
 
-**P: Jakie języki i struktury testów automatycznych obsługujesz?**
+**A:** Obsługujemy wszystkie języki i struktury. Wywołujemy wszystkie skrypty za pośrednictwem programu PowerShell.
 
-**O.** Obsługujemy wszystkie języki i struktury. Wszystkie skrypty są wywoływane za pośrednictwem programu PowerShell. 
+Należy również podać (przekazać) zależne pliki binarne wymaganej struktury.
 
-Konieczne będzie także podanie (przekazanie) danych binralnych zależnych z wymaganej struktury.
+**Pyt.: Jak szybko baza testów dostarcza wyniki testów?**
 
-**P: Jak szybko baza testowa dostarcza wyników testów?**
+**A:** Dla każdego testu uruchamianego względem kompilacji wersji wstępnej w ciągu 48 godzin udostępnimy wyniki na pulpicie nawigacyjnym [witryny Azure Portal](https://www.aka.ms/testbaseportal "Strona główna bazy testów") .
 
-**O.** Dla każdego testu, który uruchamiamy dla kompilacji przedpremierowych, udostępnimy wyniki w ciągu 48 godzin na pulpicie nawigacyjnym [portalu Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") .
+**Pyt.: Czy można ponownie uruchomić po instalacji?**
 
-**P: Czy można ponownie uruchomić urządzenie po instalacji?**
+**A:** Tak, nasz proces obsługuje ponowne uruchomienie po instalacji. Pamiętaj, aby wybrać tę opcję z listy rozwijanej "Ustawienia opcjonalne" podczas **ustawiania zadań** w portalu dołączania.
 
-**O.** Tak, nasz proces obsługuje ponowne uruchomienie po instalacji. Pamiętaj, aby wybrać tę opcję z listy rozwijanej "Ustawienia opcjonalne" podczas ustawiania **zadań** w portalu dołączania.
+W przypadku testów out-of-box (OOB) można określić, czy dla _skryptu instalacji_ jest wymagany ponowny rozruch.
 
-W przypadku testów typu "out-of-box" (OOB) możesz określić, czy w skrypcie instalacji jest wymagane ponowne _uruchomienie._
+![Obraz ponownego rozruchu.](Media/reboot.png)
 
-![Ponowne uruchamianie obrazu.](Media/reboot.png)
+Podczas testów funkcjonalnych można określić, czy dla każdego dodanego skryptu jest wymagany ponowny rozruch.
 
-Podczas testów funkcjonalnych możesz określić, czy dla każdego dodanego skryptu jest wymagane ponowne uruchomienie.
+![Jak wybrać testy funkcjonalne.](Media/functionalreboot.png)
 
-![Jak wybrać testy funkcjonalności.](Media/functionalreboot.png)
+**Pyt.: Jakie wersje Windows obsługujesz?**
 
-**P. Jakie Windows wersje obsługujesz?**
+**A:** Obecnie obsługujemy klientów Windows 10, Windows Server 2016, Windows Server 2016 Core, Windows Server 2019 i Windows Server 2019 Core.
 
-**O.** Obecnie obsługujemy Windows 10, Windows Server 2016, Windows Server 2016 Core, Windows Server 2019 i Windows Server 2019 Core.
+**Pyt.: Jaka jest różnica między testami aktualizacji zabezpieczeń a testami aktualizacji funkcji?**
 
-**P: Jaka jest różnica między testami aktualizacji zabezpieczeń a testami aktualizacji funkcji?**
-
-**O.** W przypadku testów aktualizacji zabezpieczeń testujemy comiesięczne przedpremierowe aktualizacje zabezpieczeń na platformie Windows, które koncentrują się na zapewnianiu naszym użytkownikom bezpieczeństwa i ochrony.**<ins></ins>** W przypadku testów aktualizacji funkcji testujemy ich dwuroczne wersje wstępne aktualizacji funkcji, które wprowadzają nowe funkcje i możliwości Windows.**<ins></ins>**
+**A:** W przypadku testów aktualizacji zabezpieczeń testujemy **<ins>miesięczne aktualizacje zabezpieczeń w wersji wstępnej</ins>** na Windows, które koncentrują się na zapewnieniu naszym użytkownikom zawsze bezpieczeństwa i ochrony. W przypadku testów aktualizacji funkcji testujemy **<ins>aktualizacje funkcji przedpremierowych co dwa razy w roku</ins>**, które wprowadzają nowe funkcje i możliwości na Windows.
 
 ## <a name="debugging-options"></a>Opcje debugowania
 
-**P. Czy uzyskujemy dostęp do maszyn wirtualnych w przypadku błędów? Co udostępnia baza testowa?**
+**Pyt.: Czy uzyskujemy dostęp do Virtual Machines (maszyn wirtualnych) w przypadku awarii? Co współużytkuje baza testów?**
 
-**O.** Aby usługa była zgodna i aktualizacje w wersji wstępnej są bezpieczne, tylko firma Microsoft ma dostęp do maszyn wirtualnych. Jednak klienci mogą wyświetlać wyniki testów i inne metryki testów na swoich pulpitach nawigacyjnych portalu, takie jak sygnały awarii i zawieszania się, metryki niezawodności, użycia pamięci i procesora itp. Generujemy i dostarczamy dzienniki testów uruchamiane na pulpicie nawigacyjnym w celu pobrania i dalszej analizy. 
+**A:** Aby usługa była zgodna, a aktualizacje wersji wstępnej były bezpieczne, tylko firma Microsoft ma dostęp do maszyn wirtualnych. Klienci mogą jednak wyświetlać wyniki testów i inne metryki testów na pulpicie nawigacyjnym portalu, w tym sygnały awarii i zawieszenia, metryki niezawodności, wykorzystanie pamięci i procesora CPU itp. Ponadto generujemy i udostępniamy dzienniki przebiegów testów na pulpicie nawigacyjnym do pobrania i dalszej analizy.
 
-Możemy również udostępnić zrzuty pamięci do debugowania awarii zgodnie z potrzebami.
+W razie potrzeby możemy również udostępnić zrzuty pamięci na potrzeby debugowania awaryjnego.
 
-**P. Jeśli podczas testowania zostaną znalezione problemy, jakie są następne kroki rozwiązywania tych problemów?**
+**Pyt.: Jeśli podczas testowania występują problemy, jakie są następne kroki rozwiązywania tych problemów?**
 
-**O.** Zespół bazy testowej wykona początkowy proces sprawdzania, aby ustalić główną przyczynę błędu, a następnie, w zależności od naszych wyników, przekierujemy do klienta lub wewnętrznych zespołów w ramach firmy Microsoft w celu debugowania. 
+**A:** Zespół bazy testowej przeprowadzi początkowy proces klasyfikacji w celu określenia głównej przyczyny błędu, a następnie w zależności od naszych ustaleń przekierujemy do zespołów klienta lub wewnętrznych w firmie Microsoft w celu debugowania.
 
-Zawsze ściśle współpracujemy z naszymi klientami w ramach wspólnych działań naprawczych, aby rozwiązać wszelkie problemy. 
+Zawsze ściśle współpracujemy z naszymi klientami we wspólnym korygowaniu, aby rozwiązać wszelkie problemy.
 
-**P. Czy firma Microsoft wstrzyma wydanie poprawki zabezpieczeń do czasu rozwiązania problemu? Jakie alternatywne rozwiązania są dostępne?**
+**Pyt.: Czy firma Microsoft przechowuje wydanie poprawki zabezpieczeń do czasu rozwiązania problemu? Jakie alternatywne rozwiązania są dostępne?**
 
-**O.** Celem bazy testowej jest zapewnienie, że nasi wspólną klienci końcowi nie będą mieć żadnych problemów. Na wypadek, gdy poprawka nie będzie możliwa, będziemy współpracować z dostawcami oprogramowania nad rozwiązywania problemów przed wydaniem, ale na wypadek, gdy rozwiązanie nie będzie możliwe, mamy inne rozwiązania, takie jak migowy i bloki.
+**A:** Celem bazy testowej jest zapewnienie, że nasi wspólni klienci końcowi nie będą napotykać żadnych problemów. Będziemy ciężko współpracować z dostawcami oprogramowania, aby rozwiązać wszelkie problemy przed wydaniem, ale w przypadku, gdy poprawka nie jest możliwa, mamy inne rozwiązania, takie jak podkładki i bloki.
 
-## <a name="miscellaneous"></a>Postanowienia różne
+## <a name="miscellaneous"></a>Różne
 
-**P. Jak usługa będzie działać z serwerem w konfiguracji wstępnej?**
+**Pyt.: Jak usługa będzie działać z serwerem lokalnym?**
 
-**O.** Obecnie nie zapewniamy obsługi serwerów wydobytych przez serwer. Jeśli jednak serwer ujawnia punkt końcowy HTTP, możemy połączyć się z nim przez Internet.
+**A:** Obecnie nie zapewniamy obsługi serwerów lokalnych. Jeśli jednak serwer uwidacznia punkt końcowy HTTP, możemy nawiązać z nim połączenie przez Internet.
 
-**P. KtoTo hostuje maszyny wirtualne?**
+**Pyt.: KtoTo hostuje maszyny wirtualne?**
 
-**O.** Firma Microsoft iniekuje maszyny wirtualnej dla tej usługi, przejmąc to od klienta.
+**A:** Firma Microsoft aprowizuje maszynę wirtualną dla tej usługi, pobierając obciążenie od klienta.
 
-**P. Czy ta usługa obsługuje aplikacje internetowe, mobilne lub klasyczne?**
+**Pyt.: Czy ta usługa obsługuje aplikacje internetowe, mobilne lub klasyczne?**
 
-**O.** Obecnie fokus znajduje się na aplikacjach klasycznych, jednak w przyszłości planujemy wdowy aplikacji sieci Web, ale obecnie nie obsługujemy aplikacji mobilnych.
+**A:** Obecnie koncentrujemy się na aplikacjach klasycznych, jednak planujemy dołączanie aplikacji internetowych w przyszłości, ale obecnie nie obsługujemy aplikacji mobilnych.
 
-**P: Jaka jest różnica między bazą testową a PROGRAMEM TEST?**
+**Pyt.: Jaka jest różnica między bazą testową a SUVP?**
 
-**O.** Podstawowa różnica między bazą testową a programem CENA.POŚR polega na tym, że nasi partnerzy uruchamiają swoje aplikacje do środowiska Test Base Azure w celu sprawdzania poprawności na podstawie aktualizacji przed ich wydaniem, zamiast przeprowadzać same testy. 
+**A:** Największą różnicą między bazą testów a suvpem jest to, że nasi partnerzy dołączają swoje aplikacje do środowiska platformy Azure bazy testowej w celu weryfikacji, uruchamiając aktualizacje wersji wstępnej, zamiast przeprowadzać same testy.
 
-Poza testami aktualizacji zabezpieczeń w wersji wstępnej, obsługujemy testowanie aktualizacji funkcji przed ich wydaniem na naszej platformie. W planach mamy wiele innych typów aktualizacji i testów systemu operacyjnego.
+Oprócz testowania aktualizacji zabezpieczeń w wersji wstępnej obsługujemy testowanie aktualizacji funkcji w wersji wstępnej na naszej platformie. Mamy wiele innych typów aktualizacji i testowania systemu operacyjnego w naszym planie działania.
 
-**P. Czy z usługą jest skojarzony koszt?**
+**Pyt.: Czy istnieje koszt związany z usługą?**
 
-**O.** Od 1 marca 2022 r. otrzymasz 100 bezpłatnych godzin (o wartości 800 USD) wygasających w ciągu 6 miesięcy w ramach subskrypcji na potrzeby weryfikacji. Po zjęniu bezpłatnych godzin (lub po wygaśnięciu przed ich użyciem) otrzymasz automatycznie 8 USD za godzinę w porównaniu z użyciem.   
+**A:** Od 1 marca 2022 r. otrzymasz 100 bezpłatnych godzin (o wartości 800 USD) wygasających w ciągu 6 miesięcy w ramach subskrypcji na potrzeby weryfikacji. Po wykorzystaniu bezpłatnych godzin (lub wygaśnięciu przed użyciem) zostaniesz automatycznie taryfowany na 8 USD za godzinę w stosunku do użycia.
 
-**P: Jak mogę przekazać opinię na temat bazy testowej?**
+**Pyt.: Jak mogę przekazać opinię na temat bazy testowej?**
 
-**O.** Aby podzielić się opinią na temat bazy testowej, wybierz ikonę **Opinia** w lewym dolnym rogu portalu. Dołącz zrzut ekranu do swojego zgłoszenia, aby pomóc firmie Microsoft w lepszym zrozumieniu Twojej opinii. 
+**A:** Aby udostępnić swoją opinię na temat bazy testowej, wybierz ikonę **Opinie** w lewym dolnym rogu portalu. Dołącz zrzut ekranu z przesłaniem, aby pomóc firmie Microsoft lepiej zrozumieć Twoją opinię.
 
-Sugestie dotyczące produktu i inne pomysły można też przesłać na stronie <testbasepreview@microsoft.com>.
+Możesz również przesłać sugestie dotyczące produktów i wywołać inne pomysły pod adresem <testbasepreview@microsoft.com>.

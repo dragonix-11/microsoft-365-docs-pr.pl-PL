@@ -19,14 +19,16 @@ description: Użyj narzędzia do zarządzania opiekunami zbierania elektroniczny
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 35b622e00caeeca78c85849f03b3a21f8a28b443
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2de6209e08d6e8dd6f853724f26d026aec1c33f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943518"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993715"
 ---
 # <a name="view-custodian-audit-activity"></a>Wyświetlaj aktywność inspekcji opiekuna
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Czy chcesz sprawdzić, czy użytkownik wyświetlił określony dokument, czy oczyścił element ze swojej skrzynki pocztowej? Usługa Microsoft Purview eDiscovery (Premium) jest teraz zintegrowana z istniejącym narzędziem do wyszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview. Korzystając z tego osadzonego środowiska, możesz użyć narzędzia do zarządzania opiekunami zbierania elektronicznych materiałów dowodowych (Premium), aby ułatwić badanie, łatwo uzyskując dostęp do działań i przeszukując działania opiekunów w Twojej sprawie.
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Użyj zasad inspekcji i alertów oraz żądań podmiotów danych, aby monitorować zdarzenia dotyczące danych osobowych i reagować na nie.
-ms.openlocfilehash: 5f4dd6a59ae361cbef042bfc3587203b34620746
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 730eb42fdf6aed66f5beac69621981848ffa6510
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945346"
+ms.locfileid: "64953332"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Monitorowanie i reagowanie na zdarzenia związane z prywatnością danych w organizacji
 
@@ -67,7 +67,7 @@ Zobacz następujące artykuły dotyczące konfigurowania zasad inspekcji, zaawan
 
 - [Ujednolicona inspekcja](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Inspekcja skrzynki pocztowej](../compliance/enable-mailbox-auditing.md)
-- [Zaawansowany inspekcja](../compliance/advanced-audit.md)
+- [Inspekcja (Premium)](../compliance/advanced-audit.md)
 - [Zasady alertów](../compliance/alert-policies.md)
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Żądania podmiotów danych dotyczące RODO i CCPA

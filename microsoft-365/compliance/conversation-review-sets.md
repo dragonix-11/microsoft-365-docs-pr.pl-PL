@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się więcej o funkcji rekonstrukcji konwersacji w usłudze Microsoft Purview eDiscovery (Premium) (nazywanej wątkami konwersacji), aby odtworzyć, przejrzeć i wyeksportować rozmowy na czacie w grupach Microsoft Teams i Yammer.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bfd87de95449ab30b8a33c9f7f96db458e809d1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c3cd05ab340775a7a923b9e4a0f66c3abaf559cb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950274"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993277"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>Wątkowość konwersacji w środowisku zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Wiadomości błyskawiczne to wygodny sposób zadawania pytań, dzielenia się pomysłami lub szybkiej komunikacji między dużymi odbiorcami. Ponieważ platformy wiadomości błyskawicznych, takie jak Microsoft Teams i grupy Yammer, stają się podstawą współpracy w przedsiębiorstwie, organizacje muszą ocenić, w jaki sposób przepływ pracy zbierania elektronicznych elektronicznych materiałów dowodowych obsługuje te nowe formy komunikacji i współpracy.
 

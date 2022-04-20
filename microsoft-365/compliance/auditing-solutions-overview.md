@@ -1,5 +1,5 @@
 ---
-title: Rozwiązania inspekcji platformy Microsoft 365
+title: Rozwiązania inspekcji usługi Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 description: Dowiedz się, jak przeprowadzać inspekcję działań użytkowników i administratorów w organizacji Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ab97dc632aeaf13109380fb9a5586594c63ebaa
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c7c6461868ee212e6b332181b9dea1560ce49558
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949062"
+ms.locfileid: "64953744"
 ---
-# <a name="auditing-solutions-in-microsoft-365"></a>Rozwiązania inspekcji w Microsoft 365
+# <a name="auditing-solutions-in-microsoft-purview"></a>Rozwiązania inspekcji w usłudze Microsoft Purview
 
-Microsoft 365 rozwiązania do inspekcji zapewniają zintegrowane rozwiązanie ułatwiające organizacjom skuteczne reagowanie na zdarzenia związane z zabezpieczeniami, badania kryminalistyczne, dochodzenia wewnętrzne i obowiązki w zakresie zgodności. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Rekordy inspekcji dla tych zdarzeń można przeszukiwać za pomocą operacji zabezpieczeń, administratorów IT, zespołów ds. ryzyka dotyczącego informacji poufnych oraz badaczy zgodności i prawnych w organizacji. Ta funkcja zapewnia wgląd w działania wykonywane w organizacji Microsoft 365.
+Rozwiązania do inspekcji usługi Microsoft Purview zapewniają zintegrowane rozwiązanie ułatwiające organizacjom efektywne reagowanie na zdarzenia zabezpieczeń, badania kryminalistyczne, badania wewnętrzne i obowiązki w zakresie zgodności. Tysiące operacji użytkowników i administratorów wykonywanych w dziesiątkach usług i rozwiązań Microsoft 365 są przechwytywane, rejestrowane i zachowywane w ujednoliconym dzienniku inspekcji organizacji. Rekordy inspekcji dla tych zdarzeń można przeszukiwać za pomocą operacji zabezpieczeń, administratorów IT, zespołów ds. ryzyka dotyczącego informacji poufnych oraz badaczy zgodności i prawnych w organizacji. Ta funkcja zapewnia wgląd w działania wykonywane w organizacji Microsoft 365.
 
-## <a name="microsoft-365-auditing-solutions"></a>Rozwiązania inspekcji platformy Microsoft 365
+## <a name="microsoft-purview-auditing-solutions"></a>Rozwiązania inspekcji usługi Microsoft Purview
 
 Usługa Microsoft Purview oferuje dwa rozwiązania inspekcji: Audit (Standard) i Audit (Premium).
 
@@ -94,7 +94,7 @@ W poniższej tabeli porównano kluczowe możliwości dostępne w obszarze Inspek
 
 ## <a name="licensing-requirements"></a>Wymagania dotyczące licencjonowania
 
-W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji (standardowej) i inspekcji (Premium). Funkcje inspekcji (Standardowa) są dołączone do funkcji Zaawansowana inspekcja.
+W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji (standardowej) i inspekcji (Premium). Funkcja inspekcji (standardowa) jest dołączona do funkcji Inspekcja (Premium).
 
 ### <a name="audit-standard"></a>Inspekcja (standardowa)
 
@@ -126,9 +126,9 @@ W poniższych sekcjach zidentyfikowano wymagania licencyjne dotyczące inspekcji
 - subskrypcja Office 365 Enterprise E5
 - subskrypcja Office 365 Education A5
 
-## <a name="set-up-microsoft-365-auditing-solutions"></a>Konfigurowanie rozwiązań inspekcji Microsoft 365
+## <a name="set-up-microsoft-purview-auditing-solutions"></a>Konfigurowanie rozwiązań inspekcji usługi Microsoft Purview
 
-Aby rozpocząć korzystanie z rozwiązań inspekcji w Microsoft 365, zapoznaj się z poniższymi wskazówkami dotyczącymi konfiguracji.
+Aby rozpocząć korzystanie z rozwiązań inspekcji w usłudze Microsoft Purview, zapoznaj się z poniższymi wskazówkami dotyczącymi konfiguracji.
 
 ### <a name="set-up-audit-standard"></a>Konfigurowanie inspekcji (standardowa)
 

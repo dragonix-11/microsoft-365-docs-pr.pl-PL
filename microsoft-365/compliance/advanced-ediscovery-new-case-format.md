@@ -16,16 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Użyj nowego formatu przypadku zbierania elektronicznych materiałów dowodowych (Premium), aby dodać więcej elementów do przeglądania zestawów i korzystać z innych zwiększonych limitów i nowych funkcji.
-ms.openlocfilehash: 36650a369d2bac2742eb7f0d5ea76b3a530a1a03
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c3e9f86cac5424ae9d9610a9c715c2f86563f64
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947434"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993562"
 ---
 # <a name="use-the-new-case-format-in-ediscovery-premium"></a>Użyj nowego formatu przypadku w funkcji zbierania elektronicznych materiałów dowodowych (Premium)
 
-Więcej organizacji korzysta z rozwiązania eDiscovery (Premium) w Microsoft 365 w przypadku krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe. W miarę wzrostu użycia zbierania elektronicznych materiałów dowodowych (Premium) typowym wymaganiem klienta jest zwiększenie łącznej ilości zawartości, którą można zarządzać w jednym przypadku zbierania elektronicznych materiałów dowodowych (Premium). Aby ułatwić uwzględnienie znacznego wzrostu rozmiaru przypadku, zarówno w przypadku całkowitego woluminu danych, jak i całkowitej liczby elementów, możesz teraz wybrać nowy format przypadku podczas tworzenia sprawy zbierania elektronicznych materiałów dowodowych (Premium).  
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Więcej organizacji korzysta z rozwiązania zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview na potrzeby krytycznych procesów zbierania elektronicznych materiałów dowodowych. Obejmuje to odpowiadanie na żądania regulacyjne, dochodzenia i spory sądowe. W miarę wzrostu użycia zbierania elektronicznych materiałów dowodowych (Premium) typowym wymaganiem klienta jest zwiększenie łącznej ilości zawartości, którą można zarządzać w jednym przypadku zbierania elektronicznych materiałów dowodowych (Premium). Aby ułatwić uwzględnienie znacznego wzrostu rozmiaru przypadku, zarówno w przypadku całkowitego woluminu danych, jak i całkowitej liczby elementów, możesz teraz wybrać nowy format przypadku podczas tworzenia sprawy zbierania elektronicznych materiałów dowodowych (Premium).  
 
 ## <a name="create-a-case"></a>Tworzenie sprawy
 

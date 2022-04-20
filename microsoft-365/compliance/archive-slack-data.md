@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik do importowania i archiwizowania danych z usługi Veritas Slack eDiscovery do Microsoft 365. Ten łącznik umożliwia archiwizowanie danych ze źródeł danych innych firm w Microsoft 365. Po zarchiwizowania tych danych można zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: b6c5f398e1f8966b11a3f9cd4c0e4732fc4b5eff
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f8a8f785c61bd1ddfea6c0c0cf69c5719b4f9aaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940626"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992287"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Konfigurowanie łącznika do archiwizowania danych zbierania elektronicznych materiałów dowodowych usługi Slack
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Łącznik Veritas w portalu zgodności usługi Microsoft Purview umożliwia importowanie i archiwizowanie danych innych firm z mediów społecznościowych, wiadomości błyskawicznych i platform współpracy dokumentów do skrzynek pocztowych w organizacji Microsoft 365. Usługa Veritas udostępnia łącznik [usługi Slack](https://globanet.com/slack/) skonfigurowany do przechwytywania elementów ze źródła danych innych firm (regularnie), a następnie importowania tych elementów do Microsoft 365. Usługa Slack pobiera komunikaty i pliki z interfejsu API usługi Slack i konwertuje je na format wiadomości e-mail, a następnie importuje element do skrzynek pocztowych użytkowników.
 

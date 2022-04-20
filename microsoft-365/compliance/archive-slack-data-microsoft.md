@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak skonfigurować i użyć łącznika danych zbierania elektronicznych materiałów dowodowych usługi Slack dostarczonego przez firmę Microsoft w celu importowania i archiwizowania danych wiadomości błyskawicznych.
-ms.openlocfilehash: 902a42e78dc92424c2143ffce548a9c8791609ea
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 418cbbd67444992f366ad5366258e0ea8eccc503
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950682"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992333"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Konfigurowanie łącznika do archiwizowania danych zbierania elektronicznych materiałów dowodowych usługi Slack (wersja zapoznawcza)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Łącznik danych usługi Slack eDiscovery udostępniany przez firmę Microsoft ułatwia importowanie i archiwizowanie danych wiadomości błyskawicznych (takich jak wiadomości, załączniki, linki i poprawki) z obszarów roboczych usługi Slack w organizacji w celu Microsoft 365. Łącznik danych pobiera dane z interfejsu API usługi Slack, konwertuje je na format wiadomości e-mail, a następnie importuje je do skrzynek pocztowych użytkowników w Microsoft 365. Po zaimportowaniu danych usługi Slack można zastosować rozwiązania zgodności, takie jak blokada postępowania sądowego, zbieranie elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), zgodność z komunikacją i ustawienia przechowywania do zawartości usługi Slack. Importowanie i archiwizowanie danych w Microsoft 365 przy użyciu łącznika danych zbierania elektronicznych materiałów dowodowych usługi Slack może pomóc organizacji zachować zgodność z zasadami rządowymi i regulacyjnymi.
 

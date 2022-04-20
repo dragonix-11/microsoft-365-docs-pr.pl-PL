@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Rejestrowanie inspekcji skrzynki pocztowej jest domyślnie włączone w Microsoft 365 (nazywane również domyślnym inspekcją skrzynki pocztowej lub domyślnie "inspekcją skrzynki pocztowej"). Ta konfiguracja oznacza, że niektóre akcje wykonywane przez właścicieli skrzynek pocztowych, delegatów i administratorów są automatycznie rejestrowane w dzienniku inspekcji skrzynki pocztowej, gdzie można wyszukiwać działania wykonywane w skrzynce pocztowej.
-ms.openlocfilehash: e869c705df2943c1781c02362c2c38b6713affc5
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: bb8170b603bc72459e3bbd55fa256df188f42f65
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841910"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952891"
 ---
 # <a name="manage-mailbox-auditing"></a>Zarządzanie inspekcją skrzynki pocztowej
 
-W styczniu 2019 r. firma Microsoft domyślnie włączyła rejestrowanie inspekcji skrzynek pocztowych dla wszystkich organizacji. Ta konfiguracja oznacza, że niektóre akcje właścicieli, delegatów i administratorów skrzynki pocztowej są rejestrowane automatycznie. Oznacza to również, że odpowiednie rekordy inspekcji skrzynki pocztowej będą dostępne podczas wyszukiwania ich w dzienniku inspekcji skrzynki pocztowej. Przed domyślnym włączeniem inspekcji skrzynki pocztowej trzeba było ją ręcznie włączyć dla każdej skrzynki pocztowej użytkownika w organizacji.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Od stycznia 2019 r. firma Microsoft domyślnie włącza rejestrowanie inspekcji skrzynek pocztowych dla wszystkich organizacji. Oznacza to, że niektóre akcje wykonywane przez właścicieli skrzynek pocztowych, delegatów i administratorów są automatycznie rejestrowane, a odpowiednie rekordy inspekcji skrzynki pocztowej będą dostępne podczas wyszukiwania ich w dzienniku inspekcji skrzynki pocztowej. Przed domyślnym włączeniem inspekcji skrzynki pocztowej trzeba było ją ręcznie włączyć dla każdej skrzynki pocztowej użytkownika w organizacji.
 
 Poniżej przedstawiono niektóre zalety domyślnego przeprowadzania inspekcji skrzynek pocztowych:
 
@@ -41,8 +43,7 @@ Poniżej przedstawiono niektóre zalety domyślnego przeprowadzania inspekcji sk
 > [!NOTE]
 >
 > - Ważne jest, aby pamiętać o domyślnym wydaniu inspekcji skrzynki pocztowej: nie musisz nic robić, aby zarządzać inspekcją skrzynek pocztowych. Aby jednak dowiedzieć się więcej, dostosować inspekcję skrzynek pocztowych z ustawień domyślnych lub całkowicie ją wyłączyć, ten artykuł może Ci pomóc.
-> - Domyślnie tylko zdarzenia inspekcji skrzynki pocztowej dla użytkowników z licencjami zawierającymi funkcję [zaawansowanego inspekcji](advanced-audit.md) są dostępne w wyszukiwaniach dzienników inspekcji w Centrum zgodności platformy Microsoft 365 lub za pośrednictwem interfejsu API działania zarządzania Office 365. Te licencje zostały opisane [tutaj](auditing-solutions-overview.md#advanced-audit-1). W celu zachowania zwięzłości ten artykuł będzie zbiorczo odnosić się do licencji, które obejmują zaawansowaną inspekcję jako *licencje E5/A5/G5*.
->   Aby uzyskać więcej informacji na temat wpływu licencjonowania na zdarzenia inspekcji skrzynek pocztowych w centrum zgodności M365, zobacz sekcję [Więcej informacji](#more-information) w dalszej części tego artykułu.
+> - Domyślnie tylko zdarzenia inspekcji skrzynki pocztowej dla użytkowników E5 są dostępne w wyszukiwaniach dzienników inspekcji w portalu zgodności usługi Microsoft Purview lub za pośrednictwem interfejsu API działania zarządzania Office 365. Aby uzyskać więcej informacji, zobacz sekcję [Więcej informacji](#more-information) w tym artykule.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Sprawdź, czy inspekcja skrzynki pocztowej jest domyślnie włączona
 
@@ -103,15 +104,15 @@ W poniższej tabeli opisano akcje skrzynki pocztowej dostępne w rejestrowaniu i
 |**FolderBind**|Uzyskano dostęp do folderu skrzynki pocztowej. Ta akcja jest również rejestrowana, gdy administrator lub pełnomocnik otworzy skrzynkę pocztową. <br/><br/> **Uwaga**: rekordy inspekcji dla akcji powiązania folderów wykonywanych przez delegatów są konsolidowane. Jeden rekord inspekcji jest generowany dla indywidualnego dostępu do folderu w ciągu 24 godzin.|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru.](../media/checkmark.png)||
 |**HardDelete**|Komunikat został usunięty z folderu Elementy możliwe do odzyskania.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|Użytkownik zalogował się do swojej skrzynki pocztowej.|||![Znacznik wyboru](../media/checkmark.png)|
-|**MailItemsAccessed**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników z licencjami E5/A5/G5. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaawansowanego inspekcji w Microsoft 365](set-up-advanced-audit.md). <br/><br/> Dostęp do danych poczty są uzyskiwane za pomocą protokołów poczty e-mail i klientów.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników z licencjami E5/A5/G5. Aby uzyskać więcej informacji, zobacz [Konfigurowanie inspekcji usługi Microsoft Purview (Premium)](set-up-advanced-audit.md). <br/><br/> Dostęp do danych poczty są uzyskiwane za pomocą protokołów poczty e-mail i klientów.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników *bez* licencji E5/A5/G5. <br/><br/> Komunikat został wyświetlony w okienku podglądu lub otwarty przez administratora.|![Znacznik wyboru](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|Chociaż ta wartość jest akceptowana jako akcja skrzynki pocztowej, jest już uwzględniona w akcji **UpdateFolderPermissions** i nie jest poddana inspekcji oddzielnie. Innymi słowy, nie używaj tej wartości.||||
 |**Przenieść**|Wiadomość została przeniesiona do innego folderu.|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|
 |**MoveToDeletedItems**|Komunikat został usunięty i przeniesiony do folderu Elementy usunięte.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Element oznaczony jako rekord został usunięty nietrwale (przeniesiony do folderu Elementy możliwe do odzyskania). Elementów oznaczonych jako rekordy nie można trwale usunąć (przeczyszczać z folderu Elementy możliwe do odzyskania).|![Znacznik wyboru.](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|![Znacznik wyboru](../media/checkmark.png)|
 |**RemoveFolderPermissions**|Chociaż ta wartość jest akceptowana jako akcja skrzynki pocztowej, jest już uwzględniona w akcji **UpdateFolderPermissions** i nie jest poddana inspekcji oddzielnie. Innymi słowy, nie używaj tej wartości.||||
-|**SearchQueryInitiated**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników z licencjami E5/A5/G5. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaawansowanego inspekcji w Microsoft 365](set-up-advanced-audit.md). <br/><br/> Osoba używa Outlook (Windows, Mac, iOS, Android lub Outlook w sieci Web) lub aplikacji Poczta dla Windows 10 do wyszukiwania elementów w skrzynce pocztowej.|||![Znacznik wyboru](../media/checkmark.png)|
-|**Wyślij**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników z licencjami E5/A5/G5. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zaawansowanego inspekcji w Microsoft 365](set-up-advanced-audit.md). <br/><br/> Użytkownik wysyła wiadomość e-mail, odpowiada na wiadomość e-mail lub przekazuje wiadomość e-mail.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>||![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
+|**SearchQueryInitiated**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników z licencjami E5/A5/G5. Aby uzyskać więcej informacji, zobacz [Konfigurowanie inspekcji usługi Microsoft Purview (Premium)](set-up-advanced-audit.md). <br/><br/> Osoba używa Outlook (Windows, Mac, iOS, Android lub Outlook w sieci Web) lub aplikacji Poczta dla Windows 10 do wyszukiwania elementów w skrzynce pocztowej.|||![Znacznik wyboru](../media/checkmark.png)|
+|**Wyślij**|**Uwaga**: ta wartość jest dostępna tylko dla użytkowników z licencjami E5/A5/G5. Aby uzyskać więcej informacji, zobacz [Konfigurowanie inspekcji usługi Microsoft Purview (Premium)](set-up-advanced-audit.md). <br/><br/> Użytkownik wysyła wiadomość e-mail, odpowiada na wiadomość e-mail lub przekazuje wiadomość e-mail.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>||![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Wiadomość została wysłana przy użyciu uprawnienia SendAs. Oznacza to, że inny użytkownik wysłał wiadomość tak, jakby pochodziła od właściciela skrzynki pocztowej.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Wiadomość została wysłana przy użyciu uprawnienia SendOnBehalf. Oznacza to, że inny użytkownik wysłał wiadomość w imieniu właściciela skrzynki pocztowej. Wiadomość wskazuje adresatowi, kto został wysłany w imieniu i kto faktycznie wysłał wiadomość.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Komunikat został trwale usunięty lub usunięty z folderu Elementy usunięte. Elementy usunięte nietrwale są przenoszone do folderu Elementy możliwe do odzyskania.|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru.](../media/checkmark.png)<sup>\*</sup>|![Znacznik wyboru](../media/checkmark.png)<sup>\*</sup>|
@@ -321,11 +322,11 @@ Wartość **True** wskazuje, że rejestrowanie inspekcji skrzynki pocztowej jest
 
 ## <a name="more-information"></a>Więcej informacji
 
-- Mimo że domyślne logowanie inspekcji skrzynki pocztowej jest włączone dla wszystkich organizacji, tylko użytkownicy z [licencjami zawierającymi funkcję zaawansowanego inspekcji](auditing-solutions-overview.md#advanced-audit-1) (łącznie nazywaną *licencjami E5/A5/G5*) będą zwracać zdarzenia dziennika inspekcji skrzynki pocztowej w [przeszukiwaniu dziennika inspekcji w Centrum zgodności platformy Microsoft 365](search-the-audit-log-in-security-and-compliance.md) lub za pośrednictwem [Office 365  Domyślnie interfejs API działania zarządzania](/office/office-365-management-api/office-365-management-activity-api-reference).
+- Mimo że domyślne logowanie inspekcji skrzynki pocztowej jest włączone dla wszystkich organizacji, tylko użytkownicy z licencjami E5 będą zwracać zdarzenia dziennika inspekcji skrzynki pocztowej w [przeszukiwaniu dzienników inspekcji w portalu zgodności usługi Microsoft Purview](search-the-audit-log-in-security-and-compliance.md) lub **domyślnie** za pośrednictwem [interfejsu API działania zarządzania Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
   Aby pobrać wpisy dziennika inspekcji skrzynki pocztowej dla użytkowników bez licencji E5/A5/G5, można użyć dowolnego z następujących obejść:
 
-  - Ręcznie włącz inspekcję skrzynki pocztowej w skrzynkach pocztowych użytkowników, których dotyczy problem, uruchamiając następujące polecenie: `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`. Po włączeniu inspekcji skrzynek pocztowych w skrzynce pocztowej można użyć przeszukiwania dzienników inspekcji w Centrum zgodności platformy Microsoft 365 lub za pośrednictwem interfejsu API działania zarządzania Office 365.
+  - Ręcznie włącz inspekcję skrzynek pocztowych w poszczególnych skrzynkach pocztowych (uruchom polecenie `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). Po wykonaniu tej czynności możesz użyć przeszukiwania dzienników inspekcji w portalu zgodności usługi Microsoft Purview lub za pośrednictwem interfejsu API działania zarządzania Office 365.
 
     > [!NOTE]
     > Jeśli inspekcja skrzynki pocztowej jest już widoczna jako włączona w skrzynce pocztowej, ale wyszukiwanie nie zwraca żadnych wyników, zmień wartość parametru *AuditEnabled* na `$false` , a następnie z powrotem na `$true`.

@@ -16,16 +16,18 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Ten artykuł zawiera omówienie typów informacji poufnych oraz sposobu wykrywania poufnych informacji, takich jak numer ubezpieczenia społecznego, karty kredytowej lub konta bankowego w celu identyfikacji poufnych elementów
-ms.openlocfilehash: aef78c5ab3348b7a0b00a649f94fa5e50a99a397
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760322"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971356"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Dowiedz się więcej o typach informacji poufnych
 
-Identyfikowanie i klasyfikowanie poufnych elementów, które znajdują się pod kontrolą organizacji, jest pierwszym krokiem w [dziedzinie Information Protection](./information-protection.md).  Microsoft 365 udostępnia trzy sposoby identyfikowania elementów, dzięki czemu można je sklasyfikować:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Identyfikowanie i klasyfikowanie poufnych elementów, które znajdują się pod kontrolą organizacji, jest pierwszym krokiem w [dziedzinie Information Protection](./information-protection.md).  Usługa Microsoft Purview udostępnia trzy sposoby identyfikowania elementów, dzięki czemu można je sklasyfikować:
 
 - ręcznie przez użytkowników
 - automatyczne rozpoznawanie wzorców, takie jak typy informacji poufnych
@@ -37,7 +39,7 @@ Firma Microsoft udostępnia dużą liczbę wstępnie skonfigurowanych interfejs�
 
 ## <a name="sensitive-information-types-are-used-in"></a>Typy informacji poufnych są używane w
 
-- [Zasady ochrony przed utratą danych](dlp-learn-about-dlp.md)
+- [Zasady ochrony przed utratą danych w usłudze Microsoft Purview](dlp-learn-about-dlp.md)
 - [Etykiety wrażliwości](sensitivity-labels.md)
 - [Etykiety przechowywania](retention.md)
 - [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md)
@@ -53,7 +55,7 @@ Te interfejsy SIC są domyślnie tworzone przez firmę Microsoft w konsoli zgodn
 
 ### <a name="named-entity-sensitive-information-types"></a>Nazwane typy informacji poufnych jednostki
 
-Domyślnie w konsoli zgodności są również wyświetlane nazwane SIC jednostek. Wykrywają imiona i nazwiska osób, adresy fizyczne oraz warunki i postanowienia medyczne. Nie można ich edytować ani kopiować. Aby uzyskać więcej informacji, zobacz [Informacje o nazwanych jednostkach (wersja zapoznawcza](named-entities-learn.md#learn-about-named-entities-preview) ). Nazwane interfejsy SIC jednostki są dostępne w dwóch typach:
+Domyślnie w konsoli zgodności są również wyświetlane nazwane SIC jednostek. Wykrywają imiona i nazwiska osób, adresy fizyczne oraz warunki i postanowienia medyczne. Nie można ich edytować ani kopiować. Aby uzyskać więcej informacji, zobacz [Dowiedz się więcej o nazwanych jednostkach ](named-entities-learn.md#learn-about-named-entities) . Nazwane interfejsy SIC jednostki są dostępne w dwóch typach:
 
 **un-bundled**
 
@@ -172,9 +174,8 @@ Możesz wybrać jedną z kilku opcji tworzenia niestandardowych typów informacj
 - **Użyj programu PowerShell** — możesz skonfigurować niestandardowe typy informacji poufnych przy użyciu programu PowerShell. Chociaż ta metoda jest bardziej złożona niż korzystanie z interfejsu użytkownika, masz więcej opcji konfiguracji. Zobacz [Create a custom sensitive information type in Security & Compliance Center PowerShell (Tworzenie niestandardowego typu informacji poufnych w programie PowerShell Centrum zgodności & zabezpieczeń](create-a-custom-sensitive-information-type-in-scc-powershell.md)).
 
 > [!NOTE]
-> Ulepszone poziomy ufności są dostępne do natychmiastowego użycia w ramach ochrony przed utratą danych dla usług Microsoft 365, Microsoft Information Protection usług Microsoft 365, zgodności z komunikacją, zarządzania informacjami i zarządzania rekordami.
-> Microsoft 365 Information Protection obsługuje teraz języki podwójnego zestawu znaków bajtów dla:
->
+> Ulepszone poziomy ufności są dostępne do natychmiastowego użycia w usługach ochrony przed utratą danych w usłudze Microsoft Purview, ochrony informacji, zgodności z komunikacją, zarządzania cyklem życia danych i zarządzania rekordami.
+> Information Protection obsługuje teraz języki podwójnego zestawu znaków bajtów dla:
 > - Chiński (uproszczony)
 > - Chiński (tradycyjny)
 > - Korean

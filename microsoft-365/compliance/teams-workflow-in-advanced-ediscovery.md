@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Dowiedz się, jak zachowywać, zbierać, przeglądać i eksportować zawartość z Microsoft Teams w usłudze eDiscovery (Premium).
-ms.openlocfilehash: 21f6149d8a1c1114ab0d2d293af710690f74c6e5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4dc516037e1ccad41c7ed93f280d698ca6bd164c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948402"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991913"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Przepływ pracy zbierania elektronicznych materiałów dowodowych (Premium) dla zawartości w Microsoft Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Ten artykuł zawiera kompleksowy zestaw procedur, wytycznych i najlepszych rozwiązań dotyczących używania zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) w celu zachowania, zbierania, przeglądania i eksportowania zawartości z Microsoft Teams. Celem tego artykułu jest pomoc w optymalizacji przepływu pracy zbierania elektronicznych materiałów dowodowych pod kątem zawartości Teams.
 
@@ -301,7 +303,7 @@ Poniżej przedstawiono kilka wskazówek i najlepszych rozwiązań dotyczących w
 
 ## <a name="deleting-teams-chat-messages"></a>Usuwanie wiadomości Teams czatu
 
-Za pomocą Advanced eDiscovery i Eksploratora Graph Firmy Microsoft można reagować na zdarzenia związane z wyciekiem danych, gdy zawartość zawierająca poufne lub złośliwe informacje jest udostępniana za pośrednictwem Teams wiadomości czatu. Administratorzy w organizacji mogą wyszukiwać i usuwać wiadomości czatów w Microsoft Teams. Może to pomóc w usunięciu poufnych informacji lub nieodpowiedniej zawartości w Teams wiadomościach czatu. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie i przeczyszczanie wiadomości czatu w Teams](search-and-delete-Teams-chat-messages.md).
+Za pomocą funkcji zbierania elektronicznych materiałów dowodowych (Premium) i programu Microsoft Graph Explorer można reagować na zdarzenia związane z wyciekiem danych, gdy zawartość zawierająca poufne lub złośliwe informacje jest udostępniana za pośrednictwem wiadomości Teams czatu. Administratorzy w organizacji mogą wyszukiwać i usuwać wiadomości czatów w Microsoft Teams. Może to pomóc w usunięciu poufnych informacji lub nieodpowiedniej zawartości w Teams wiadomościach czatu. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie i przeczyszczanie wiadomości czatu w Teams](search-and-delete-Teams-chat-messages.md).
 
 ## <a name="reference-guide"></a>Przewodnik referencyjny
 

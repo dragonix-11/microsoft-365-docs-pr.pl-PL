@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do etykiet wrażliwości
+title: Wprowadzenie do etykiet poufności
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -18,116 +18,115 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Wszystko gotowe do wdrożenia etykiet wrażliwości w celu ochrony danych Twojej organizacji, ale nie wiesz, od czego zacząć? Przeczytaj kilka praktycznych wskazówek, które pomogą Ci rozpocząć podróż z etykietami.
-ms.openlocfilehash: adc939d44715bcfaeb97cdbfa530f55a5aeecd4e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Chcesz wdrożyć etykiety poufności, aby chronić dane organizacji, ale nie wiesz, od czego zacząć? Zapoznaj się z praktycznymi wskazówkami, które pomogą Ci w procesie etykietowania.
+ms.openlocfilehash: 3f163c19cfd6e627887f0e34b81bc99d2e86cb6c
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322089"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971049"
 ---
-# <a name="get-started-with-sensitivity-labels"></a>Wprowadzenie do etykiet wrażliwości
+# <a name="get-started-with-sensitivity-labels"></a>Wprowadzenie do etykiet poufności
 
->*[Microsoft 365 licencjonowania w zakresie zabezpieczeń & zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Aby uzyskać informacje na temat etykiet wrażliwości i sposobu ich ochrony danych organizacji, zobacz Informacje [o etykietach wrażliwości](sensitivity-labels.md).
+>*[Microsoft 365 wskazówki dotyczące licencjonowania dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Jeśli masz [usługę Azure Information Protection](/azure/information-protection/what-is-information-protection) i nadal używasz etykiet usługi Azure Information Protection, które były zarządzane z poziomu portalu Azure Portal, musisz przeprowadzić migrację tych etykiet do [ujednoliconej platformy etykiet](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). W Windows komputerach możesz następnie wybrać klienta etykiet, którego będzie [używać dla](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) opublikowanych etykiet wrażliwości.
+Aby uzyskać informacje o tym, czym są etykiety poufności i jak mogą pomóc w ochronie danych organizacji, zobacz [Dowiedz się więcej o etykietach poufności](sensitivity-labels.md).
 
-Gdy wszystko będzie gotowe do rozpoczęcia ochrony danych organizacji za pomocą etykiet wrażliwości:
+Jeśli masz usługę [Azure Information Protection](/azure/information-protection/what-is-information-protection) i nadal używasz etykiet usługi Azure Information Protection zarządzanych z Azure Portal, musisz zmigrować te etykiety do [ujednoliconej platformy etykietowania](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). W przypadku komputerów Windows można [wybrać klienta etykietowania do użycia](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) dla opublikowanych etykiet poufności.
 
-1. **Utwórz etykiety.** Utwórz etykiety wrażliwości i nadaj ich nazwy zgodnie z taksonomią klasyfikacji organizacji dla różnych poziomów wrażliwości zawartości. Używaj popularnych nazw lub terminów, które mają sens dla użytkowników. Jeśli nie masz jeszcze taksonomii ustalonej, rozważ rozpoczęcie od nazw etykiet, takich jak Osobiste, Publiczne, Ogólne, Poufne i Wysoce poufne. Za pomocą etykiet podrzędnych można następnie grupować podobne etykiety według kategorii. Podczas tworzenia etykiety użyj tekstu etykiety narzędzia, aby ułatwić użytkownikom wybranie odpowiedniej etykiety.
+Gdy wszystko będzie gotowe do rozpoczęcia ochrony danych organizacji przy użyciu etykiet poufności:
+
+1. **Utwórz etykiety.** Utwórz etykiety poufności i nadaj im nazwę zgodnie z taksonomią klasyfikacji organizacji dla różnych poziomów poufności zawartości. Używaj nazw pospolitych lub terminów, które mają sens dla użytkowników. Jeśli nie masz jeszcze ustalonej taksonomii, rozważ rozpoczęcie od nazw etykiet, takich jak Osobiste, Publiczne, Ogólne, Poufne i Wysoce poufne. Następnie można użyć etykiet podrzędnych do grupowania podobnych etykiet według kategorii. Podczas tworzenia etykiety użyj tekstu etykietki narzędzia, aby ułatwić użytkownikom wybranie odpowiedniej etykiety.
     
-    Aby uzyskać bardziej rozbudowane wskazówki dotyczące definiowania taksonomii klasyfikacji, pobierz oficjalny dokument "Klasyfikacja danych & taksonomii wrażliwości" z Portalu [zaufania usług](https://aka.ms/DataClassificationWhitepaper).
+    Aby uzyskać bardziej szczegółowe wskazówki dotyczące definiowania taksonomii klasyfikacji, pobierz oficjalny dokument "Klasyfikacja danych & taksonomia etykiet poufności" z [portalu zaufania usługi](https://aka.ms/DataClassificationWhitepaper).
 
-2. **Zdefiniuj zakres, jaki może mieć każda etykieta.** Skonfiguruj ustawienia ochrony, które chcesz skojarzyć z każdą etykietą. Na przykład możesz chcieć, aby zawartość wrażliwości (na przykład etykieta "Ogólne" zawierała tylko nagłówek lub stopkę), a wyższa zawartość wrażliwości (na przykład etykieta "Poufne") powinna zawierać znak wodny i szyfrowanie.
+2. **Zdefiniuj, co może zrobić każda etykieta.** Skonfiguruj ustawienia ochrony, które mają być skojarzone z każdą etykietą. Na przykład możesz chcieć, aby zawartość o niższej poufności (na przykład etykieta "Ogólne" miała zastosowany tylko nagłówek lub stopkę, podczas gdy zawartość o większej poufności (na przykład etykieta "Poufne") powinna mieć znak wodny i szyfrowanie.
 
-3. **Publikowanie etykiet.** Po skonfigurowaniu etykiet wrażliwości opublikuj je przy użyciu zasad etykiet. Zdecyduj, którzy użytkownicy i grupy powinni mieć etykiety i jakich ustawień zasad należy użyć. Pojedyncza etykieta jest nadaje się do ponownego użycia — definiujesz ją raz, a następnie możesz dołączyć do kilku zasad etykiet przypisanych do różnych użytkowników. Na przykład możesz pilotować etykiety wrażliwości, przypisując zasady dotyczące etykiet tylko kilku użytkownikom. Następnie, gdy wszystko będzie gotowe do rozdysłania etykiet w organizacji, możesz utworzyć nowe zasady etykiet dla etykiet i tym razem określić wszystkich użytkowników.
+3. **Opublikuj etykiety.** Po skonfigurowaniu etykiet poufności opublikuj je przy użyciu zasad etykiety. Zdecyduj, którzy użytkownicy i grupy mają mieć etykiety i jakie ustawienia zasad mają być używane. Pojedyncza etykieta jest wielokrotnego użytku — można ją zdefiniować raz, a następnie dołączyć ją do kilku zasad etykiet przypisanych do różnych użytkowników. Na przykład można pilotować etykiety poufności, przypisując zasady etykiet tylko do kilku użytkowników. Następnie, gdy wszystko będzie gotowe do wdrożenia etykiet w całej organizacji, możesz utworzyć nowe zasady etykiet dla etykiet i tym razem określić wszystkich użytkowników.
 
 
-> Być może kwalifikujesz się do automatycznego tworzenia etykiet domyślnych i domyślnych zasad etykiet, które zajmą się krokami od 1 do 3. Aby uzyskać więcej informacji, zobacz [Domyślne etykiety i zasady dotyczące Microsoft Information Protection](mip-easy-trials.md).
+> Możesz kwalifikować się do automatycznego tworzenia etykiet domyślnych i domyślnych zasad etykiet, które zajmują się krokami 1–3. Aby uzyskać więcej informacji, zobacz [Domyślne etykiety i zasady dla usługi Microsoft Purview Information Protection](mip-easy-trials.md).
 
-Podstawowy przepływ wdrażania i stosowania etykiet wrażliwości:
+Podstawowy przepływ wdrażania i stosowania etykiet poufności:
 
-![Diagram przedstawiający przepływ pracy dla etykiet wrażliwości.](../media/Sensitivity-label-flow.png)
+![Diagram przedstawiający przepływ pracy dla etykiet poufności.](../media/Sensitivity-label-flow.png)
 
-## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Wymagania dotyczące subskrypcji i licencjonowania etykiet wrażliwości
+## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Wymagania dotyczące subskrypcji i licencjonowania etykiet poufności
 
-Wiele różnych subskrypcji obsługuje etykiety wrażliwości, a wymagania licencyjne użytkowników zależą od tego, z których funkcji korzystasz.
+Wiele różnych subskrypcji obsługuje etykiety poufności, a wymagania licencyjne dla użytkowników zależą od używanych funkcji.
 
-Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z funkcji zgodności Microsoft 365, zobacz wskazówki Microsoft 365 dotyczące licencjonowania w zakresie zabezpieczeń [& zgodności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Aby uzyskać etykiety wrażliwości, zobacz sekcję [Ochrona informacji:](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling) etykiety wrażliwości i powiązany z nią plik [PDF](https://go.microsoft.com/fwlink/?linkid=2139145) do pobrania, aby uzyskać informacje o wymaganiach licencyjnych na poziomie funkcji.
+Aby wyświetlić opcje licencjonowania użytkowników w celu skorzystania z funkcji usługi Microsoft Purview, zobacz [wskazówki dotyczące licencjonowania Microsoft 365 dotyczące zgodności & zabezpieczeń](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Aby uzyskać etykiety poufności, zobacz sekcję [Microsoft Purview Information Protection: etykietowanie poufności](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-information-protection-sensitivity-labeling) i powiązane [pobieranie plików PDF](https://go.microsoft.com/fwlink/?linkid=2139145) w celu uzyskania wymagań dotyczących licencjonowania na poziomie funkcji.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Uprawnienia wymagane do tworzenia etykiet poufności i zarządzania nimi
 
-Członkowie Twojego zespołu zgodności, którzy będą tworzyć etykiety wrażliwości, muszą mieć uprawnienia do Centrum zgodności platformy Microsoft 365.
+Członkowie zespołu ds. zgodności, którzy będą tworzyć etykiety poufności, potrzebują uprawnień do portalu zgodności usługi Microsoft Purview.
 
-Domyślnie administratorzy globalni Twojej dzierżawy mają dostęp do tego centrum administracyjnego i mogą udzielać służbom zgodności z przepisami i innym osobom dostępu bez nadawania im wszystkich uprawnień administratora dzierżawy. W przypadku tego delegowanego ograniczonego dostępu administratora dodaj użytkowników do grupy ról **Administrator** danych zgodności, **Administrator zgodności** lub **Administrator** zabezpieczeń. 
+Domyślnie administratorzy globalni dzierżawy mają dostęp do tego centrum administracyjnego i mogą udzielić urzędnikom zgodności i innym osobom dostępu bez udzielania im wszystkich uprawnień administratora dzierżawy. W przypadku tego ograniczonego dostępu administratora delegowanego dodaj użytkowników do grupy ról **Administrator danych zgodności**, **Administrator zgodności** lub **Administrator zabezpieczeń** . 
 
-Zamiast korzystania z ról domyślnych możesz utworzyć nową grupę ról i dodać do tej grupy role  administratora etykiet wrażliwości lub  konfigurację organizacji. W przypadku roli tylko do odczytu użyj **czytnika etykiet wrażliwości**. 
+Alternatywnie w przypadku korzystania z ról domyślnych można utworzyć nową grupę ról i dodać do tej grupy role **Administrator etykiet poufności** lub **Konfiguracja organizacji** . W przypadku roli tylko do odczytu użyj **czytnika etykiet poufności**. 
 
 > [!NOTE]
-> Teraz w wersji Preview możesz używać następujących grup ról:
-> - **Ochrona informacji**
-> - **Administratorzy ochrony informacji**
-> - **Analitycy ochrony informacji**
-> - **Schoweki ochrony informacji**
-> - **Czytniki informacji**
+> Teraz w wersji zapoznawczej możesz użyć następujących grup ról:
+> - **Information Protection**
+> - **administratorzy Information Protection**
+> - **analitycy Information Protection**
+> - **Information Protection śledczy**
+> - **czytniki Information Protection**
 >
-> Aby zapoznać się z objaśnieniami każdej z nich i nowo zawartymi rolami, wybierz grupę ról w okienku <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centrum zgodności platformy Microsoft 365</a> >  Uprawności **&** >  >  RoleZaplanowania, a następnie przejrzyj opis w okienku wysuwanym. Lub zobacz [Grupy ról w Centrum & zgodności](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> Aby uzyskać wyjaśnienie każdej z nich i nowych ról, które zawierają, wybierz grupę ról w portalu  > <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">zgodności usługi Microsoft PurviewPermissions</a> **& roleW** >  **centrum** >  **zgodnościRole**, a następnie przejrzyj opis w okienku wysuwanym. Możesz też zobaczyć [grupy ról w Centrum zgodności & zabezpieczeń](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
 
-Aby uzyskać instrukcje dotyczące dodawania użytkowników do domyślnej grupy ról, ról lub tworzenia własnych grup ról, zobacz Uprawnienia [w Centrum zgodności platformy Microsoft 365](microsoft-365-compliance-center-permissions.md).
+Aby uzyskać instrukcje dodawania użytkowników do domyślnej grupy ról, ról lub tworzenia własnych grup ról, zobacz [Uprawnienia w portalu zgodności usługi Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
-Te uprawnienia są wymagane tylko do tworzenia i konfigurowania etykiet wrażliwości oraz ich zasad etykiet. Nie są one wymagane do stosowania etykiet w aplikacjach i usługach. Jeśli w przypadku określonych konfiguracji związanych z etykietami wrażliwości potrzebne są dodatkowe uprawnienia, będą one wymienione w odpowiednich instrukcjach dokumentacji.
+Te uprawnienia są wymagane tylko do tworzenia i konfigurowania etykiet poufności i ich zasad etykiet. Nie są one wymagane do stosowania etykiet w aplikacjach lub usługach. Jeśli wymagane są dodatkowe uprawnienia dla określonych konfiguracji związanych z etykietami poufności, te uprawnienia zostaną wymienione w odpowiednich instrukcjach dokumentacji.
 
-## <a name="deployment-strategy-for-sensitivity-labels"></a>Strategia wdrażania etykiet wrażliwości
-Pomyślną strategią wdrażania etykiet wrażliwości w organizacji jest utworzenie roboczego zespołu wirtualnego, który identyfikuje wymagania biznesowe i techniczne oraz zarządza nimi, sprawdza test koncepcji, wewnętrzne punkty kontrolne i zatwierdzenia oraz wdraża końcowe wdrożenie w środowisku produkcyjnym.
+## <a name="deployment-strategy-for-sensitivity-labels"></a>Strategia wdrażania etykiet poufności
+Skuteczną strategią wdrażania etykiet poufności dla organizacji jest utworzenie działającego zespołu wirtualnego, który identyfikuje wymagania biznesowe i techniczne oraz zarządza nimi, sprawdza testy koncepcji, wewnętrzne punkty kontrolne i zatwierdzenia oraz ostateczne wdrożenie środowiska produkcyjnego.
 
-Używając tabeli w następnej sekcji, zalecamy zidentyfikowanie jednego lub dwóch najlepszych scenariuszy zamapowania na najbardziej wywłaszne wymagania biznesowe. Po wdrożeniu tych scenariuszy wróć do listy, aby zidentyfikować następny jeden lub dwa priorytety wdrożenia.
+Korzystając z tabeli w następnej sekcji, zalecamy zidentyfikowanie pierwszego lub dwóch scenariuszy, które są mapowane na najbardziej wpływowe wymagania biznesowe. Po wdrożeniu tych scenariuszy wróć do listy, aby zidentyfikować następny lub dwa priorytety wdrożenia.
 
-Dodatkowe ogólne wskazówki dotyczące wdrażania i najlepsze rozwiązania znajdziesz w Przewodniku po przyspieszaniu wdrażania usługi [Microsoft Information Protection](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) i Zapobieganie utracie danych, jednym z zasobów w witrynie Zespołu przyspieszania przez klienta [(CAT, Customer Acceleration Team](https://microsoft.github.io/ComplianceCxE/)).
+## <a name="common-scenarios-for-sensitivity-labels"></a>Typowe scenariusze dotyczące etykiet poufności
 
-## <a name="common-scenarios-for-sensitivity-labels"></a>Typowe scenariusze dotyczące etykiet wrażliwości
+Wszystkie scenariusze wymagają [utworzenia i skonfigurowania etykiet poufności i ich zasad](create-sensitivity-labels.md).
 
-Wszystkie scenariusze wymagają utworzenia [i skonfigurowania etykiet wrażliwości oraz ich zasad](create-sensitivity-labels.md).
-
-|Chcę...|Dokumentacja|
+|Chcę...|Dokumentacji|
 |----------------|---------------|
-|Zarządzanie etykietami wrażliwości dla Office, tak aby zawartość była oznaczana podczas tworzenia — obejmuje obsługę ręcznego oznaczania etykiet na wszystkich platformach |[Zarządzanie etykietami poufności w aplikacjach Office](sensitivity-labels-office-apps.md)|
-|Rozszerzanie etykiet do Eksploratora plików i programu PowerShell o dodatkowe funkcje dla aplikacji pakietu Office Windows (w razie potrzeby)|[Ujednolicony klient etykiet usługi Azure Information Protection dla komputerów Windows](/azure/information-protection/rms-client/aip-clientv2)|
-|Szyfrowanie dokumentów i wiadomości e-mail za pomocą etykiet wrażliwości oraz ograniczanie dostępu do tej zawartości i sposobu jej stosowania |[Ograniczanie dostępu do zawartości przy użyciu etykiet wrażliwości w celu zastosowania szyfrowania](encryption-sensitivity-labels.md)|
-|Włączanie etykiet wrażliwości dla Office w sieci Web z obsługą współtworzenie, zbierania elektronicznych materiałów dowodowych, ochrony przed utratą danych, wyszukiwania — nawet wtedy, gdy dokumenty są szyfrowane | [Włączanie etykiet wrażliwości dla Office w SharePoint i OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
-|Używanie funkcji współtworzenia i Autozaza Office w aplikacjach klasycznych, gdy dokumenty są szyfrowane | [Włączanie współtworowania plików zaszyfrowanych przy użyciu etykiet wrażliwości](sensitivity-labels-coauthoring.md)
-|Automatyczne stosowanie etykiet wrażliwości do dokumentów i wiadomości e-mail | [Automatyczne stosowanie etykiet wrażliwości do zawartości](apply-sensitivity-label-automatically.md)|
-|Etykiety wrażliwości chronią zawartość w Teams i SharePoint |[Używanie etykiet wrażliwości z Microsoft Teams, Microsoft 365 grupami i SharePoint sieci Web](sensitivity-labels-teams-groups-sites.md)|
-|Użyj etykiet wrażliwości, aby skonfigurować domyślny typ linku udostępniania dla witryn i poszczególnych dokumentów w SharePoint i OneDrive |[Użyj etykiet wrażliwości, aby ustawić domyślny link udostępniania dla witryn i dokumentów w SharePoint i OneDrive](sensitivity-labels-default-sharing-link.md)|
-|Stosowanie etykiety wrażliwości do modelu zrozumienia dokumentu w celu automatycznego klasyfikowania i ochrony SharePoint dokumentów w bibliotece dokumentów |[Stosowanie etykiet wrażliwości do modelu w aplikacji Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
-|Uniemożliwianie lub ostrzeganie użytkowników o udostępnianiu plików lub wiadomości e-mail z określoną etykietą wrażliwości |[Używanie etykiet wrażliwości jako warunków zasad DLP](dlp-sensitivity-label-as-condition.md) |
-|Stosowanie etykiety przechowywania w celu przechowywania lub usuwania plików lub wiadomości e-mail z określoną etykietą wrażliwości|[Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości](apply-retention-labels-automatically.md) |
-|Odnajdowanie, oznaczanie i chroninie plików przechowywanych w lokalnych magazynach danych |[Wdrażanie programu Azure Information Protection w celu automatycznego klasyfikowania i chronienia plików](/azure/information-protection/deploy-aip-scanner)|
-|Odnajdowanie, oznaczanie i chroninie plików przechowywanych w magazynach danych przechowywanych w chmurze|[Odnajdowanie, klasyfikowanie, oznaczanie i ochrona danych chronionych zgodnie z regulacjami regulacyjną i poufnymi przechowywanymi w chmurze](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Stosowanie i wyświetlanie etykiet Power BI danych oraz ochrona danych podczas ich zapisania poza usługą|[Etykiety wrażliwości w Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
-|Monitorowanie i zrozumienie sposobu, w jaki etykiety wrażliwości są używane w mojej organizacji|[Informacje o klasyfikacji danych](data-classification-overview.md)|
-|Rozszerzanie etykiet wrażliwości na usługi i aplikacje innych firm|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Rozszerzanie etykiet wrażliwości na zawartość w obrębie zasobów usługi Azure Purview, takich jak usługa Azure Blob Storage, pliki platformy Azure, usługa Azure Data Lake Storage i wielochmurzeowe źródła danych|[Oznaczanie etykietami w usłudze Azure Purview](/azure/purview/create-sensitivity-label) |
+|Zarządzanie etykietami poufności dla aplikacji Office, tak aby zawartość była oznaczona etykietą utworzoną — obejmuje obsługę ręcznego etykietowania na wszystkich platformach |[Zarządzanie etykietami poufności w aplikacjach Office](sensitivity-labels-office-apps.md)|
+|Rozszerzanie etykietowania na Eksplorator plików i program PowerShell z dodatkowymi funkcjami Office aplikacji na Windows (w razie potrzeby)|[Klient ujednoliconego etykietowania platformy Azure Information Protection dla Windows](/azure/information-protection/rms-client/aip-clientv2)|
+|Szyfruj dokumenty i wiadomości e-mail przy użyciu etykiet poufności i ogranicz, kto może uzyskiwać dostęp do tej zawartości i jak można jej używać |[Ogranicz dostęp do zawartości przy użyciu etykiet poufności w celu zastosowania szyfrowania](encryption-sensitivity-labels.md)|
+|Włączanie etykiet poufności dla Office w sieci Web z obsługą współtworzenia, zbierania elektronicznych materiałów dowodowych, zapobiegania utracie danych, wyszukiwania — nawet wtedy, gdy dokumenty są szyfrowane | [Włącz etykiety poufności dla plików pakietu Office w programie SharePoint i usłudze OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+|Używanie współtworzenia i automatycznego zapisywania w aplikacjach klasycznych Office, gdy dokumenty są szyfrowane | [Włączanie współtworzyła pliki zaszyfrowane przy użyciu etykiet poufności](sensitivity-labels-coauthoring.md)
+|Automatyczne stosowanie etykiet poufności do dokumentów i wiadomości e-mail | [Automatyczne stosowanie etykiety poufności do zawartości](apply-sensitivity-label-automatically.md)|
+|Ochrona zawartości w Teams i SharePoint przy użyciu etykiet poufności |[Używanie etykiet poufności z Microsoft Teams, grupami Microsoft 365 i witrynami SharePoint](sensitivity-labels-teams-groups-sites.md)|
+|Użyj etykiet poufności, aby skonfigurować domyślny typ łącza udostępniania dla witryn i poszczególnych dokumentów w SharePoint i OneDrive |[Użyj etykiet poufności, aby ustawić domyślny link do udostępniania witryn i dokumentów w SharePoint i OneDrive](sensitivity-labels-default-sharing-link.md)|
+|Stosowanie etykiety poufności do modelu zrozumienia dokumentu, dzięki czemu identyfikowane dokumenty w bibliotece SharePoint są automatycznie klasyfikowane i chronione |[Stosowanie etykiety poufności do modelu w usłudze Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
+|Zapobieganie lub ostrzeganie użytkowników o udostępnianiu plików lub wiadomości e-mail z określoną etykietą poufności |[Używanie etykiet poufności jako warunków w zasadach DLP](dlp-sensitivity-label-as-condition.md) |
+|Stosowanie etykiety przechowywania w celu przechowywania lub usuwania plików lub wiadomości e-mail z określoną etykietą poufności|[Automatyczne stosowanie etykiety przechowywania w celu zachowania lub usunięcia zawartości](apply-retention-labels-automatically.md) |
+|Odnajdywanie, etykietowanie i ochrona plików przechowywanych w lokalnych magazynach danych |[Wdrażanie skanera usługi Azure Information Protection w celu automatycznego klasyfikowania i ochrony plików](/azure/information-protection/deploy-aip-scanner)|
+|Odnajdywanie, etykietowanie i ochrona plików przechowywanych w magazynach danych znajdujących się w chmurze|[Odnajdywanie, klasyfikowanie, etykietowanie i ochrona danych regulowanych i poufnych przechowywanych w chmurze](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|Stosowanie i wyświetlanie etykiet w Power BI oraz ochrona danych, gdy są one zapisywane poza usługą|[Etykiety poufności w Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
+|Monitorowanie i zrozumienie sposobu użycia etykiet poufności w mojej organizacji|[Dowiedz się więcej o klasyfikacji danych](data-classification-overview.md)|
+|Rozszerzanie etykiet poufności na aplikacje i usługi innych firm|[zestaw SDK Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|Rozszerzanie etykiet poufności na zawartość w zasobach usługi Microsoft Purview Data Map, takich jak Azure Blob Storage, Azure Files, Azure Data Lake Storage i źródła danych w wielu chmurach|[Etykietowanie w usłudze Microsoft Purview Data Map](/azure/purview/create-sensitivity-label) |
 
+## <a name="end-user-documentation-for-sensitivity-labels"></a>Dokumentacja użytkownika końcowego dotycząca etykiet poufności
 
-## <a name="end-user-documentation-for-sensitivity-labels"></a>Dokumentacja użytkownika końcowego do etykiet wrażliwości
+Najbardziej efektywną dokumentacją użytkownika końcowego będą dostosowane wskazówki i instrukcje podane dla wybranych nazw etykiet i konfiguracji. Możesz użyć ustawienia zasad **etykietY Podaj użytkownikom link do niestandardowej strony pomocy** , aby określić link wewnętrzny dla tej dokumentacji. Użytkownicy mogą łatwo uzyskać do niego dostęp za pomocą przycisku **Czułość** :
 
-Najbardziej skuteczną dokumentacją dla użytkowników końcowych będą dostosowane wskazówki i instrukcje dotyczące nazw etykiet i konfiguracji, które wybierzesz. Możesz użyć ustawienia zasad etykiet Udostępnij użytkownikom link do niestandardowej strony pomocy **,** aby określić wewnętrzny link do tej dokumentacji. Użytkownicy mogą łatwo uzyskać do niego dostęp za pomocą **przycisku** Charakter:
+- W przypadku wbudowanego etykietowania: opcja menu **Dowiedz się więcej** .
+- W przypadku opcji menu Klient ujednoliconego etykietowania platformy Azure Information Protection: **Pomoc i opinie** > link **Powiedz mi więcej** w oknie dialogowym Microsoft Azure Information Protection.
 
-- Wbudowane opcje menu Etykiety: **Dowiedz się więcej** .
-- W przypadku klienta ujednoliconego etykiet usługi Azure Information **Protection: opcja** **menu Pomoc i** opinie > linku Powiedz mi więcej w oknie dialogowym Ochrona Microsoft Azure informacji.
+Aby ułatwić dostarczenie dostosowanej dokumentacji, zobacz następującą stronę i pliki do pobrania, których możesz użyć, aby pomóc w szkoleniu użytkowników: [Szkolenie użytkowników końcowych dla etykiet poufności](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/). 
 
-Aby ułatwić dostarczenie dostosowanej dokumentacji, zobacz następującą stronę i materiały do pobrania, których można użyć w celu przeszkolenia użytkowników: Szkolenia użytkownika końcowego dotyczące [etykiet wrażliwości](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/). 
-
-Podstawowe instrukcje można również znaleźć w następujących zasobach:
+Aby uzyskać podstawowe instrukcje, możesz również użyć następujących zasobów:
 
 - [Stosowanie etykiet wrażliwości do plików i wiadomości e-mail w pakiecie Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Znane problemy z etykietami wrażliwości w Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+    - [Znane problemy z etykietami poufności w Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
-- [Automatyczne stosowanie etykiet wrażliwości do plików i wiadomości e-mail w wiadomościach e-mail w programie Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
-    - [Znane problemy dotyczące automatycznego stosowania lub polecania etykiet wrażliwości](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+- [Automatyczne stosowanie lub rekomendowanie etykiet poufności do plików i wiadomości e-mail w Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
+    - [Znane problemy z automatycznym stosowaniem lub zalecaniem etykiet poufności](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
-- [Ujednolicony przewodnik użytkownika usługi Azure Information Protection z etykietami](/azure/information-protection/rms-client/clientv2-user-guide)
+- [Przewodnik użytkownika dotyczący ujednoliconego etykietowania na platformie Azure Information Protection](/azure/information-protection/rms-client/clientv2-user-guide)
 
-Jeśli etykiety wrażliwości stosują szyfrowanie w przypadku dokumentów PDF, można je otwierać za pomocą Microsoft Edge na Windows komputerach Mac. Aby uzyskać więcej informacji i uzyskać informacje alternatywne, zobacz Które czytniki [plików PDF są obsługiwane w przypadku chronionych plików PDF?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Jeśli etykiety poufności stosują szyfrowanie dokumentów PDF, te dokumenty można otwierać za pomocą Microsoft Edge na Windows lub Mac. Aby uzyskać więcej informacji i alternatywnych czytelników, zobacz [Które czytniki PDF są obsługiwane dla chronionych plików PDF?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)

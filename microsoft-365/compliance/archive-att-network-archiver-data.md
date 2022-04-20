@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik TeleMessage w celu importowania i archiwizowania danych programu SMS i MMS z usługi AT&T Mobile Network. Dzięki temu można archiwizować dane ze źródeł danych innych firm w usłudze Microsoft Purview, aby można było zarządzać danymi innych firm za pomocą funkcji zgodności, takich jak archiwizowanie prawne, wyszukiwanie zawartości i zasady przechowywania.
-ms.openlocfilehash: 8c038769ef7330788badfaa8a0a40a00c0730a13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 87b933117fae134572ccf4a152a83ec4165b1caf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950726"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992771"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Konfigurowanie łącznika do archiwizowania danych usługi AT&T SMS/MMS
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika TeleMessage w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane programu SMS i MMS z usługi AT&T Mobile Network. Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z siecią AT&T w organizacji raz dziennie i importuje dane SMS i MMS do skrzynek pocztowych w usłudze Microsoft Purview.
 

@@ -19,14 +19,16 @@ description: Rozwiązywanie problemów z błędami narzędzia Azure AzCopy podcz
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: ed9910df4da310034320ea030c8b5da1c5918e52
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ff8f69e6efeab3e0f0e9d8ee2f739caaa40d7c85
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943496"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991803"
 ---
 # <a name="troubleshoot-azcopy-in-ediscovery-premium"></a>Rozwiązywanie problemów z narzędziem AzCopy w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Podczas ładowania danych lub dokumentów innych niż Microsoft 365 w celu korygowania błędów w usłudze Microsoft Purview eDiscovery (Premium) interfejs użytkownika udostępnia polecenie azure AzCopy zawierające parametry z lokalizacją przechowywania plików, które chcesz przekazać, oraz lokalizację magazynu platformy Azure, do której zostaną przekazane pliki. Aby przekazać dokumenty, skopiuj to polecenie, a następnie uruchom je w wierszu polecenia na komputerze lokalnym.  Poniższy zrzut ekranu przedstawia przykład polecenia narzędzia AzCopy:
 

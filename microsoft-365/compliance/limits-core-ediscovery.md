@@ -1,5 +1,5 @@
 ---
-title: Limity w podstawowym przypadku zbierania elektronicznych materiałów dowodowych
+title: Limity w przypadku zbierania elektronicznych materiałów dowodowych (standardowa)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,17 +16,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: W tym artykule opisano limity w podstawowym przypadku zbierania elektronicznych materiałów dowodowych w Microsoft 365.
-ms.openlocfilehash: 67f15bb39ed75f40a8ef42747c0d4e2dfcb1297d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: W tym artykule opisano limity w przypadku zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) w Microsoft 365.
+ms.openlocfilehash: 4eb43687e92d90179ff24d69827c3c2889d82b47
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949614"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971538"
 ---
 # <a name="limits-in-ediscovery-standard"></a>Limity w zakresie zbierania elektronicznych materiałów dowodowych (Standardowa)
 
-W poniższej tabeli wymieniono limity dotyczące podstawowych przypadków zbierania elektronicznych materiałów dowodowych i blokad skojarzonych z podstawowym przypadkiem zbierania elektronicznych materiałów dowodowych. Aby uzyskać więcej informacji o usłudze Microsoft Purview eDiscovery (Standard), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych (Standard)](./get-started-core-ediscovery.md).
+W poniższej tabeli wymieniono limity dla przypadków zbierania elektronicznych materiałów dowodowych (w warstwie Standardowa) i blokad skojarzonych ze sprawą zbierania elektronicznych materiałów dowodowych (Standardowa). Aby uzyskać więcej informacji o usłudze Microsoft Purview eDiscovery (Standard), zobacz [Omówienie zbierania elektronicznych materiałów dowodowych (Standard)](./get-started-core-ediscovery.md).
     
   | Opis limitu | Limit |
   |:-----|:-----|
@@ -34,7 +34,7 @@ W poniższej tabeli wymieniono limity dotyczące podstawowych przypadków zbiera
   |Maksymalna liczba spraw w organizacji.  <br/> |10,000  <br/> |
   |Maksymalna liczba skrzynek pocztowych w jednym przypadku blokady. Ten limit obejmuje łączną sumę skrzynek pocztowych użytkowników oraz skrzynki pocztowe skojarzone z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.  <br/> |1,000  <br/> |
   |Maksymalna liczba witryn w jednym przypadku blokady. Ten limit obejmuje łączną sumę witryn OneDrive dla Firm, witryn SharePoint oraz witryn skojarzonych z grupami Grupy Microsoft 365, Microsoft Teams i Yammer.  <br/> |100  <br/> |
-  |Maksymalna liczba przypadków wyświetlanych na podstawowej stronie głównej zbierania elektronicznych materiałów dowodowych oraz maksymalna liczba elementów wyświetlanych na kartach Blokady, Wyszukiwania i Eksport w ramach sprawy. <sup>1</sup> |1,000|
+  |Maksymalna liczba przypadków wyświetlanych na stronie głównej zbierania elektronicznych materiałów dowodowych (standardowa) oraz maksymalna liczba elementów wyświetlanych na kartach Blokady, Wyszukiwania i Eksport w danym przypadku. <sup>1</sup> |1,000|
 
    > [!NOTE]
    > <sup>1</sup> Aby wyświetlić listę ponad 1000 spraw, blokad, wyszukiwań lub eksportów, możesz użyć odpowiednich poleceń cmdlet programu PowerShell Office 365 Security & Compliance:

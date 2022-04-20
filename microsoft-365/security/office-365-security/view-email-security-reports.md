@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44d09eefb065ee204dd90980dfe710d6b3ddb88e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97442fc2c3767a30c1ea98dc4a1ee7a38e56b45
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666795"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971006"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Wyświetlanie raportów zabezpieczeń poczty e-mail w portalu Microsoft 365 Defender
 
@@ -109,7 +109,6 @@ Aby wyświetlić raport w portalu Microsoft 365 Defender, przejdź do pozycji **
 Na stronie **raportu reguły transportu Exchange** dostępne wykresy i dane są opisane w poniższych sekcjach.
 > [!NOTE]
 > **Raport reguł transportu Exchange** jest teraz dostępny w eac. Aby uzyskać więcej informacji, zobacz [Exchange raport reguł transportu w nowym eac](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
-
 
 ### <a name="chart-breakdown-by-direction"></a>Podział wykresu według kierunku
 
@@ -742,7 +741,7 @@ W **widokach Wyświetl dane według poczty e-mail \> Phish**, **Wyświetl dane w
 - **Hostowana skrzynka pocztowa: usunięte elementy**
 - **Przekazywane**
 - **Serwer lokalny: Dostarczone**
-- **Kwarantanny**
+- **Kwarantanna**
 - **Dostarczanie nie powiodło się**
 - **Spadła**
 

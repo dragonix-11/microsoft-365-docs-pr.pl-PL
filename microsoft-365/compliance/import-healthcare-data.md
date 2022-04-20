@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik danych do importowania danych elektronicznej dokumentacji opieki zdrowotnej (EHR) z systemu opieki zdrowotnej do Microsoft 365. Dzięki temu można używać danych EHR w zasadach zarządzania ryzykiem wewnętrznym, aby ułatwić wykrywanie nieautoryzowanego dostępu do danych pacjentów przez pracowników.
-ms.openlocfilehash: dfb02e5f6fb8625d31554c6dbc11179b1dddb6c2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b1745d8f91253132748fe08d724386d2e6633a4c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949724"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993167"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Konfigurowanie łącznika w celu importowania danych inspekcji EHR opieki zdrowotnej (wersja zapoznawcza)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Łącznik danych można skonfigurować w portalu zgodności usługi Microsoft Purview w celu zaimportowania danych inspekcji aktywności użytkowników w systemie Elektronicznej Dokumentacji Opieki Zdrowotnej (EHR) w organizacji. Dane inspekcji z systemu EHR opieki zdrowotnej obejmują dane dotyczące zdarzeń związanych z uzyskiwaniem dostępu do dokumentacji medycznej pacjenta. Dane inspekcji healthcare EHR mogą być używane przez [rozwiązanie Microsoft 365 zarządzania ryzykiem wewnętrznym](insider-risk-management.md), aby chronić organizację przed nieautoryzowanym dostępem do informacji o pacjentach.
 

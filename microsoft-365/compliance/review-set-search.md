@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Dowiedz się, jak utworzyć i uruchomić zapytanie w zestawie przeglądów, aby zorganizować zawartość w celu bardziej wydajnego przeglądu w przypadku zbierania elektronicznych materiałów dowodowych (Premium) w usłudze Microsoft Purview.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ead066428d5c2404da5bf863ad428784b3c3a30c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: aad8cd7461c795f8ecba03edab76e81e8384430d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936296"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991935"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Wykonuj zapytania i filtruj zawartość w zestawie do przeglądu
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W większości przypadków warto zagłębić się w zawartość w zestawie przeglądów i zorganizować ją w celu ułatwienia bardziej wydajnego przeglądu. Używanie filtrów i zapytań w zestawie przeglądów pomaga skupić się na podzbiorze dokumentów spełniających kryteria przeglądu.
 

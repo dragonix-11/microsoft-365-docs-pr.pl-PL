@@ -19,14 +19,16 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Udostępniamy nowe zasady alertów dla Ochrona usługi Office 365 w usłudze Microsoft Defender. Wycofujemy również dwie istniejące zasady alertów, które zostały zastąpione przez nowe.
-ms.openlocfilehash: 339d16f7cd4e481d408a13d2e738cdef9fc991bf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 78f359e273054b7b103fc61bbee9b1555ad843da
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939636"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991957"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nowe zasady alertów w Ochrona usługi Office 365 w usłudze Microsoft Defender
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Ochrona usługi Office 365 w usłudze Microsoft Defender wprowadza nowe i ulepszone zasady alertów związane z wykrywaniem po dostarczeniu. Obejmuje to ulepszenia podręczników automatycznego badania & odpowiedzi (AIR) skojarzonych z nimi. Ponadto modyfikujemy klasyfikację ważności dla sześciu domyślnych zasad alertów, aby lepiej dopasować alerty generowane przez te zasady do ich wpływu na organizację.
 

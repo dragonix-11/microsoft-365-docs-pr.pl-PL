@@ -8,47 +8,48 @@ ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
 description: Konfigurowanie harmonogramu dla Microsoft 365.
-ms.openlocfilehash: 3315c362a6e6ae1eb4fa9bf54d388a89dd667136
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ef377393134e4d8028ab0e6e40ddcc3647f60695
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988367"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953853"
 ---
-# <a name="setting-up-scheduler-for-microsoft-365"></a>Konfigurowanie harmonogramu dla Microsoft 365
+# <a name="setting-up-scheduler-for-microsoft-365"></a>Konfigurowanie harmonogramu dla platformy Microsoft 365
 
-Administratorzy dzierżawy muszą skonfigurować skrzynkę pocztową asystenta harmonogramu i uzyskać licencje programu Scheduler dla organizatorów spotkań, aby włączyć program Scheduler dla Microsoft 365 usługi. 
+Administratorzy dzierżawy muszą skonfigurować skrzynkę pocztową asystenta harmonogramu i uzyskać licencje harmonogramu dla organizatorów spotkań, aby włączyć usługę Scheduler dla usługi Microsoft 365. 
 
 ## <a name="licensing"></a>Licencjonowanie
 
-Dowiedz się więcej: [Program Scheduler Microsoft 365 licencjonowania](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+Dowiedz się więcej: [Harmonogram licencjonowania Microsoft 365](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
 
-> [!Note]
-> Uczestnicy spotkania nie potrzebują programu Scheduler Microsoft 365 licencji. <br>Skrzynka pocztowa asystenta harmonogramu nie wymaga Microsoft 365 ani licencji programu Scheduler.
+> [!NOTE]
+> Uczestnicy spotkania nie potrzebują licencji harmonogramu ani licencji Microsoft 365.
+>
+> Skrzynka pocztowa asystenta harmonogramu nie wymaga licencji Microsoft 365 ani harmonogramu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-| Wymagania wstępne | Opis |
-|-------------------|-------------|
-|Skrzynka pocztowa asystenta harmonogramu dla dzierżawy |Skrzynka Exchange zasobu typu sprzętu pełniąca rolę skrzynki pocztowej asystenta harmonogramu dla dzierżawy w celu wysyłania i odbierania wiadomości e-mail z i do Cortana. Wszystkie wiadomości e-mail Cortana są zachowywane w skrzynce Cortana dzierżawy na podstawie zasad przechowywania. Skrzynka pocztowa asystenta harmonogramu ma zazwyczaj nazwę "Cortana" lub "Cortana Scheduler", ponieważ wszystkie wiadomości e-mail od asystenta zostaną podpisane Cortana.<ul><li>Tworzenie typu sprzętu w skrzynce Exchange zasobów</li><li>Nazwij nazwę wyświetlaną skrzynki pocztowej oraz podstawowy adres SMTP lub `Cortana <cortana@yourdomain.com>` `Cortana Scheduler <cortana.scheduler@yourdomain.com>`.</li></ul>**Uwaga:** Skrzynka pocztowa asystenta harmonogramu nie wymaga Microsoft 365 ani licencji programu Scheduler.|
-|Exchange Online skrzynki pocztowej |Organizatorzy spotkań muszą mieć skrzynkę Exchange Online pocztową i kalendarz zazwyczaj w ramach Microsoft 365 kalendarza. Ponadto organizatorzy spotkań muszą mieć licencję programu Scheduler. Licencja Scheduler umożliwia asystentowi programu Scheduler planowanie spotkań za pomocą skrzynki pocztowej i kalendarza organizatora spotkania.<br/><br/> Zobacz Scheduler, aby Microsoft 365 informacje o licencjach i cenach.  <br/><br/>**Uwaga:** Uczestnicy spotkania nie potrzebują programu Scheduler Microsoft 365 licencji. Uczestnicy spotkania mogą być wewnętrzni lub zewnętrzni w  urządzeniem dzierżawy. Uczestnicy spotkania potrzebują dostępu tylko do adresu e-mail.|
-
+|Wymagania wstępne|Opis|
+|---|---|
+|Skrzynka pocztowa asystenta harmonogramu dla dzierżawy |Skrzynka pocztowa zasobu typu sprzętu Exchange, która działa jako skrzynka pocztowa asystenta harmonogramu dla dzierżawy do wysyłania i odbierania wiadomości e-mail do i z Cortana. Wszystkie wiadomości e-mail wysyłane do Cortana są przechowywane w skrzynce pocztowej Cortana dzierżawy na podstawie zasad przechowywania. Skrzynka pocztowa asystenta harmonogramu jest zwykle nazywana "Cortana" lub "Cortana Scheduler", ponieważ wszystkie wiadomości e-mail od asystenta zostaną podpisane Cortana. <ul><li>Tworzenie skrzynki pocztowej zasobu typu sprzętu Exchange</li><li>Nadaj skrzynce pocztowej nazwę wyświetlaną i podstawowy adres `Cortana <cortana@yourdomain.com>` SMTP lub `Cortana Scheduler <cortana.scheduler@yourdomain.com>`.</li></ul> <br/> **Uwaga:** Skrzynka pocztowa asystenta harmonogramu nie wymaga licencji Microsoft 365 ani harmonogramu.|
+|skrzynka pocztowa Exchange Online |Organizatorzy spotkań muszą mieć Exchange Online skrzynkę pocztową i kalendarz zazwyczaj w ramach licencji Microsoft 365. Ponadto organizatorzy spotkań muszą mieć licencję harmonogramu. Licencja harmonogramu umożliwia asystentowi harmonogramu korzystanie ze skrzynki pocztowej i kalendarza organizatora spotkania w celu zaplanowania dla nich spotkań. <br/><br/> Zobacz Harmonogram, aby uzyskać Microsoft 365, aby uzyskać informacje o licencjonowaniu i cenach. <br/><br/> **Uwaga:** Uczestnicy spotkania nie potrzebują licencji harmonogramu ani licencji Microsoft 365. Uczestnicy spotkania mogą być wewnętrzni lub zewnętrzni dla dzierżawy. Uczestnicy spotkania potrzebują tylko dostępu do adresu e-mail.|
 
 ## <a name="setting-up-the-scheduler-assistant-mailbox"></a>Konfigurowanie skrzynki pocztowej asystenta harmonogramu
 
-Skrzynka pocztowa asystenta harmonogramu Exchange skrzynką pocztową typu sprzętu, która nie wymaga dodatkowej Microsoft 365 ani licencji programu Scheduler. Nazwa wyświetlana i podstawowy adres SMTP skrzynki pocztowej powinny zawierać protokół Cortana, ponieważ wszystkie wiadomości e-mail za pomocą asystenta harmonogramu będą podpisane jako Cortana ( `Cortana <cortana@yourdomain.com>` np. lub `Cortana Scheduler <cortana.scheduler@yourdomain.com>`). Po utworzeniu skrzynki pocztowej asystenta harmonogramu należy wyznaczyć skrzynkę pocztową asystenta harmonogramu. Po wyznaczeniu skrzynki pocztowej asystenta harmonogramu Cortana dostępne do planowania spotkań w imieniu użytkowników.
+Skrzynka pocztowa asystenta harmonogramu to skrzynka pocztowa typu sprzętu Exchange, która nie wymaga dodatkowej licencji Microsoft 365 ani harmonogramu. Nazwa wyświetlana i podstawowy adres SMTP skrzynki pocztowej powinny zawierać Cortana, ponieważ wszystkie wiadomości e-mail z asystenta harmonogramu zostaną podpisane Cortana (tj. `Cortana <cortana@yourdomain.com>` lub `Cortana Scheduler <cortana.scheduler@yourdomain.com>`). Po utworzeniu skrzynki pocztowej asystenta harmonogramu należy wyznaczyć skrzynkę pocztową jako skrzynkę pocztową asystenta harmonogramu. Po wyznaczeniu skrzynki pocztowej asystenta harmonogramu Cortana będą dostępne do planowania spotkań w imieniu użytkowników.
 
-- Użyj centrum administracyjne platformy Microsoft 365, aby utworzyć skrzynkę pocztową użytkownika. Zalecane są 30-dniowe zasady przechowywania. 
-- Użyj nazwy Cortana podstawowym adresu SMTP skrzynki pocztowej. Nazwy, takie jak `Cortana@yourdomain.com`, `CortanaScheduler@contoso.com`lub są `Cortana.Scheduler@yourdomain.com` zalecane.
+- Użyj Centrum administracyjne platformy Microsoft 365, aby utworzyć skrzynkę pocztową użytkownika. Zalecane są 30-dniowe zasady przechowywania. 
+- Użyj nazwy Cortana w podstawowym adresie SMTP skrzynki pocztowej. Zalecane są nazwy, takie jak `Cortana@yourdomain.com`, `CortanaScheduler@contoso.com`lub `Cortana.Scheduler@yourdomain.com` .
 
-## <a name="designate-the-mailbox-as-the-scheduler-assistant"></a>Wyznaczanie skrzynki pocztowej na asystenta harmonogramu
+## <a name="designate-the-mailbox-as-the-scheduler-assistant"></a>Wyznaczanie skrzynki pocztowej jako Asystenta harmonogramu
 
-Po utworzeniu unikatowej skrzynki pocztowej Cortana Scheduler należy wyznaczyć skrzynkę pocztową do formalnego Microsoft 365. Po wyznaczeniu skrzynki Cortana Scheduler będzie ona dostępna do planowania spotkań w imieniu użytkowników.
+Po utworzeniu unikatowej skrzynki pocztowej dla usługi Cortana Scheduler należy wyznaczyć skrzynkę pocztową do Microsoft 365 formalnie. Po wyznaczeniu skrzynki pocztowej usługi Cortana Scheduler będzie ona dostępna do planowania spotkań w imieniu użytkowników.
 
-#### <a name="connect-to-powershell"></a>Połączenie do programu PowerShell
+### <a name="connect-to-powershell"></a>Połączenie do programu PowerShell
 
-Użyj centrum administracyjne platformy Microsoft 365, aby utworzyć skrzynkę pocztową użytkownika. Zalecane są 30-dniowe zasady przechowywania.
-Użyj nazwy Cortana podstawowym adresu SMTP skrzynki pocztowej. Nazwy, takie jak `Cortana@yourdomain.com`, `CortanaScheduler@contoso.com`lub są `Cortana.Scheduler@yourdomain.com` zalecane.
+Użyj Centrum administracyjne platformy Microsoft 365, aby utworzyć skrzynkę pocztową użytkownika. Zalecane są 30-dniowe zasady przechowywania.
+Użyj nazwy Cortana w podstawowym adresie SMTP skrzynki pocztowej. Zalecane są nazwy, takie jak `Cortana@yourdomain.com`, `CortanaScheduler@contoso.com`lub `Cortana.Scheduler@yourdomain.com` .
 
 ```PowerShell
 $domain="yourdomain.com"
@@ -57,23 +58,23 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $tenantAdmin
 ```
 
-#### <a name="create-the-scheduler-assistant-mailbox"></a>Tworzenie skrzynki pocztowej asystenta harmonogramu
+### <a name="create-the-scheduler-assistant-mailbox"></a>Tworzenie skrzynki pocztowej Asystenta harmonogramu
 
 ```PowerShell
 New-Mailbox -Name Cortana -Organization $domain -DisplayName "Cortana Scheduler" -Equipment 
 Set-CalendarProcessing Cortana@$domain -DeleteNonCalendarItems $false 
 ```
-    
-#### <a name="designate-the-scheduler-assistant-mailbox"></a>Wyznaczanie skrzynki pocztowej asystenta harmonogramu
+
+### <a name="designate-the-scheduler-assistant-mailbox"></a>Wyznaczanie skrzynki pocztowej asystenta harmonogramu
 
 ```PowerShell
 Set-mailbox cortana@$domain -SchedulerAssistant:$true
 ```
 
-Po uruchomieniu tego polecenia "set" w skrzynce pocztowej asystenta programu Cortana Scheduler dla skrzynki pocztowej jest ustawiana nowa wartość "PersistedCapability", aby można było zauważyć, że ta skrzynka pocztowa to "SchedulerAssistant".
+Po uruchomieniu tego polecenia "set" w skrzynce pocztowej asystenta harmonogramu Cortana w skrzynce pocztowej ustawiono nową wartość "PersistedCapability", aby pamiętać, że ta skrzynka pocztowa to "SchedulerAssistant".
 
-> [!Note]
-> Aby dowiedzieć się, jak połączyć organizację z programem PowerShell, zobacz: Połączenie się z Microsoft 365 [programem PowerShell.](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
+> [!NOTE]
+> Aby dowiedzieć się, jak połączyć organizację z programem PowerShell, zobacz: [Połączenie do Microsoft 365 za pomocą programu PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
 
 ### <a name="verifying-the-scheduler-assistant-mailbox"></a>Weryfikowanie skrzynki pocztowej asystenta harmonogramu
 
@@ -83,21 +84,18 @@ Aby sprawdzić, czy została utworzona skrzynka pocztowa asystenta harmonogramu
 Get-CalendarProcessing cortana@$domain | fl DeleteNonCalendarItems
 ```
 
-Wynik powinien być "fałsz".
-
-<br>
+Wynik powinien mieć wartość "false".
 
 ```PowerShell
 Get-Mailbox -Identity cortana@$domain | fl *type*
 ```
 
 Wynik powinien być
-- ResourceType: Equipment
-- Remote RecipientType: None
-- RecipientType (Typ adresata): UserMailbox
-- RecipientTypeDetails: EquipmentMailbox
 
-<br/>
+- ResourceType: Sprzęt
+- Typ adresata zdalnego: brak
+- Typ odbiorcy: UserMailbox
+- RecipientTypeDetails: EquipmentMailbox
 
 ### <a name="to-discover-which-mailbox-is-the-scheduler-assistant-mailbox"></a>Aby dowiedzieć się, która skrzynka pocztowa jest skrzynką pocztową asystenta harmonogramu
 
@@ -105,27 +103,26 @@ Wynik powinien być
 Get-Mailbox -ResultSize Unlimited | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 ```
 
-> [!Important]
-> Pełne inicjowanie obsługi administracyjnej w celu ustawienia funkcji SchedulerAssistant przez skrzynkę pocztową asystenta harmonogramu może potrwać kilka godzin.
+> [!IMPORTANT]
+> Pełne aprowizowanie w skrzynce pocztowej asystenta harmonogramu może potrwać kilka godzin, aby ustawić funkcję SchedulerAssistant.
 
+## <a name="exchange-online-mailbox"></a>skrzynka pocztowa Exchange Online
 
-## <a name="exchange-online-mailbox"></a>Exchange Online skrzynki pocztowej
+Licencja harmonogramu to dodatek do Microsoft 365, który umożliwia organizatorowi spotkania delegowanie zadań planowania spotkań do asystenta harmonogramu. Oprócz wyznaczenia skrzynki pocztowej jako skrzynki pocztowej asystenta harmonogramu, organizatorzy spotkań będą również potrzebować licencji harmonogramu i Exchange Online skrzynki pocztowej i kalendarza, zazwyczaj za pośrednictwem licencji Microsoft 365, aby harmonogram działał. Uczestnicy spotkania nie potrzebują licencji harmonogramu ani licencji Microsoft 365.
 
-Licencja programu Scheduler jest dodatku do programu Microsoft 365, który umożliwia organizatorowi spotkania delegowanie zadań planowania spotkania do asystenta harmonogramu. Oprócz wyznaczania skrzynki pocztowej jako skrzynki pocztowej asystenta harmonogramu organizatorzy spotkań muszą również mieć licencję programu Scheduler oraz skrzynkę pocztową i kalendarz programu Exchange Online, zazwyczaj za pośrednictwem programu Microsoft 365, aby program Scheduler działał. Uczestnicy spotkania nie potrzebują licencji programu Scheduler ani Microsoft 365 programu.
-
-Aby kupić dodatek Scheduler, należy wymagać jednej z następujących licencji:
+Aby kupić dodatek Scheduler, potrzebujesz jednej z następujących licencji:
 
 - Microsoft 365 E3, A3, E5, A5
 - Business Basic, Business, Business Standard, Business Premium
 - Office 365 E1, A1, E3, A3, E5, A5
-- Business Essentials, Business Premium
-- Exchange Online Plan 1 lub Plan 2. 
+- Business Essentials, business Premium
+- licencja Exchange Online plan 1 lub plan 2.
 
-> [!Note]
-> Program Scheduler for Microsoft 365 jest dostępny w środowiskach wielodostępnych na całym świecie tylko w języku angielskim. **Harmonogram dla Microsoft 365** jest niedostępny dla użytkowników:
-> 
-> - Microsoft 365 obsługiwana przez firmę 21Vianet w Chinach
-> - Microsoft 365 z niemiecką chmurą, która korzysta z powierni danych, niemiecki Telekom
-> - Government cloud including GCC, Consumer, GCC High, or DoD
-> 
-> Program Scheduler obsługuje użytkowników w Niemczech, których lokalizacja danych nie jest niemieckim centrum danych.
+> [!NOTE]
+> Harmonogram Microsoft 365 jest dostępny tylko w środowiskach wielodostępnych na całym świecie w języku angielskim. **Harmonogram Microsoft 365** nie jest dostępny dla użytkowników:
+>
+> - Microsoft 365 obsługiwany przez firmę 21Vianet w Chinach
+> - Microsoft 365 z chmurą niemiecką korzystającą z niemieckiego telekomu będącego powiernikiem danych
+> - Chmura dla instytucji rządowych, w tym GCC, consumer, GCC High lub DoD
+>
+> Usługa Scheduler obsługuje użytkowników w Niemczech, których lokalizacja danych nie jest niemieckim centrum danych.

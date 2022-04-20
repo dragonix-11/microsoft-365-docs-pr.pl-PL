@@ -14,57 +14,66 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 277c185b633263a12687eec5a8eb9a1a34e1dbed
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: db09d1b182965c0a21945b025601c21d5100212b
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63014872"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952913"
 ---
 # <a name="build-a-package"></a>Tworzenie pakietu
-Pakiet to plik pakietu .zip zawierający skrypty binarne i skrypty testowe aplikacji, co jest wymaganiem wstępnym dla używania bazy testowej. Ten przewodnik Szybki start poprowadzi Cię przez proces tworzenia pierwszego pakietu, za pomocą którego możesz przeprowadzać testowanie od początku w aplikacji. 
-  
-*    *Test **typu "Out-of-Box" (OOB)** wykonuje instalację, uruchamianie, zamykanie i odinstalowywanie aplikacji. Po zakończeniu instalacji procedura uruchamiania i zamykania jest powtarzana 30 razy, zanim zostanie uruchomione pojedyncze odinstalowanie. Test OOB udostępnia ustowalizowany telemetrię dla Twojego pakietu, która umożliwia porównanie Windows kompilacji.*  
-    
-Opcjonalnie możesz pobrać nasz [przykładowy pakiet referencyjny](https://aka.ms/testbase-sample-package) i zacząć od. 
 
-## <a name="create-a-folder-structure"></a>Tworzenie struktury folderów 
+Pakiet jest plikiem .zip zawierającym skrypty binarne i testowe aplikacji, co jest warunkiem wstępnym korzystania z bazy testowej. Ten przewodnik Szybki start przeprowadzi Cię przez proces tworzenia pierwszego pakietu, za pomocą którego można przeprowadzić testowanie out-of-box w aplikacji.
 
-Na komputerze lokalnym utwórz strukturę folderów w następujący sposób:<br> 
+- *Test **out-of-box (OOB)** przeprowadza instalację, uruchamianie, zamykanie i odinstalowywanie aplikacji. Po zainstalowaniu procedura zamykania uruchamiania jest powtarzana 30 razy przed uruchomieniem pojedynczego odinstalowywania. Test OOB zapewnia ustandaryzowane dane telemetryczne w pakiecie do porównania między Windows kompilacjami.*
+
+Opcjonalnie możesz pobrać nasz [przykładowy pakiet](https://aka.ms/testbase-sample-package) , aby odwołać się i zacząć od.
+
+## <a name="create-a-folder-structure"></a>Tworzenie struktury folderów
+
+Na komputerze lokalnym utwórz strukturę folderów w następujący sposób:
+
 ![Struktura folderów używana do tworzenia pakietu](Media/buildpackage1.png)
 
-Są one używane:
-* **App\bin**: zapisz binaria aplikacji i zależności.<br> 
-* **App\scripts**: zapisz skrypty, aby zainstalować, uruchomić, zamknąć i odinstalować aplikację.<br> 
-* **App\logs**: skrypty powinny wyprowadzać dzienniki do tego folderu, a następnie możesz pobierać i analizować dzienniki po zakończeniu testowania.<br> 
+Te foldery są używane:
+
+- **App\bin**: zapisz pliki binarne aplikacji i zależności.
+- **App\scripts**: zapisz skrypty do instalowania, uruchamiania, zamykania i odinstalowywania aplikacji.
+- **App\logs**: skrypty powinny wyprowadzać dzienniki do tego folderu, a następnie można pobierać i analizować dzienniki po zakończeniu testu.
 
 ## <a name="copy-binary-files"></a>Kopiowanie plików binarnych
-Skopiuj pliki instalacyjne aplikacji do **folderu Aplikacja\bin**. Jeśli aplikacja ma zależności, należy je najpierw zainstalować. Skopiuj też pliki instalacji zależności do folderu **App\bin**.<br> 
+
+Skopiuj pliki instalacyjne aplikacji do **pliku App\bin**. Jeśli aplikacja ma zależności, należy je najpierw zainstalować. Skopiuj również pliki instalacyjne zależności do **pliku App\bin**.
+
 ![Lokalizacja plików aplikacji w folderze](Media/buildpackage2.png)
 
 ## <a name="add-powershell-scripts"></a>Dodawanie skryptów programu PowerShell
-Aby wykonać test OOB, musisz dodać skrypty programu PowerShell w celu zainstalowania, uruchomienia, zamknięcia i odinstalowania aplikacji.
-> [!NOTE]  
-> *W przypadku testowania, instalowania, uruchamiania i zamykania skryptów OOB skrypty są wymagane, a odinstalowywanie jest opcjonalne*.
-    
-Skrypt powinien zostać dodany do folderu w następujący sposób:  
+
+Aby przeprowadzić test OOB, należy dodać skrypty programu PowerShell do instalowania, uruchamiania, zamykania i odinstalowywania aplikacji.
+
+> [!NOTE]
+> *W teście OOB wymagane są skrypty instalowania, uruchamiania i zamykania, a skrypt odinstalowywania jest opcjonalny*.
+
+Skrypt powinien zostać dodany do folderu w następujący sposób:
+
 ![Lokalizacja plików skryptów programu PowerShell w folderze](Media/buildpackage3.png)
 
-Skrypt zazwyczaj ma następujące zachowania:<br> 
--   **Uruchom polecenia, aby zainstalować/uruchomić/zamknąć/odinstalować aplikację**. Jeśli na przykład aplikacja jest plikiem MSI, uruchom [program msiexec](/windows-server/administration/windows-commands/msiexec) , aby go zainstalować. <br> 
--   **Sprawdź wynik operacji zainstaluj/uruchom/zamknij/odinstaluj**, zwróć zero kodu wyjścia, jeśli oczekiwany wynik jest oczekiwany. Test Base spowoduje oznaczenie uruchomienia skryptu jako awarii, jeśli zwraca niezerowy kod wyjścia.<br> 
--   **Zapisz odpowiednią ilość dzienników** i zapisz odpowiednie dzienniki do użycia w przyszłości.<br> 
+Skrypt zwykle zawiera następujące zachowania:
 
-Zapoznaj się z poniższymi przykładami. Możesz po prostu skopiować je do swoich plików i odpowiednio wprowadzić zmiany. <br>
+- **Uruchom polecenia, aby zainstalować/uruchomić/zamknąć/odinstalować aplikację**. Jeśli na przykład aplikacja jest plikiem MSI, uruchom [polecenie msiexec](/windows-server/administration/windows-commands/msiexec) , aby go zainstalować.
+- **Sprawdź wynik operacji instalowania/uruchamiania/zamykania/odinstalowywania**, jeśli wynik jest oczekiwany, zwróć zero kodu zakończenia. Baza testowa oznaczy uruchomienie skryptu jako niepowodzenie, jeśli zwróci kod zakończenia inny niż zero.
+- **Zapisz wystarczającą liczbę dzienników**, zapisz odpowiednie dzienniki do użycia w przyszłości.
 
-**Przykład skryptu instalacji (App\scripts\install\job.ps1)**
+Zapoznaj się z poniższymi przykładami. Możesz po prostu skopiować je do plików i odpowiednio wprowadzić zmiany.
+
+**Przykład skryptu instalacji (App\scripts\install\job.ps1)**:
+
 ```powershell
         push-location $PSScriptRoot
         $exit_code = 0
         $script_name = $myinvocation.mycommand.name
         $log_dir = "$PSScriptRoot\..\..\logs"
         $log_file = "$log_dir\$script_name.log"
-
 
         if(-not (test-path -path $log_dir )) {
             new-item -itemtype directory -path $log_dir
@@ -102,7 +111,8 @@ Zapoznaj się z poniższymi przykładami. Możesz po prostu skopiować je do swo
         exit $exit_code
 ```
 
-**Przykład skryptu uruchamiania (App\scripts\launch\job.ps1)**
+**Przykład skryptu uruchamiania (App\scripts\launch\job.ps1)**:
+
 ```powershell
         push-location $PSScriptRoot
         $exit_code = 0
@@ -128,59 +138,82 @@ Zapoznaj się z poniższymi przykładami. Możesz po prostu skopiować je do swo
         Start-Process -FilePath $exePath
 
          if (Get-Process -Name $PROCESS_NAME) {
-                log("Launch successfully $PROCESS_NAME...") 
+                log("Launch successfully $PROCESS_NAME...")
                 $exit_code = 0
          }
          else {
-            log("Not launched $PROCESS_NAME...") 
+            log("Not launched $PROCESS_NAME...")
             $exit_code = 1
          }
 
         log("Launch script finished as $exit_code")
         pop-location
-        exit $exit_code 
+        exit $exit_code
 ```
 
-## <a name="compress-to-zip-file"></a>Kompresowanie do pliku zip
-Gdy skrypty i pliki binarne będą przygotowane, przechodzisz do skompresowania folderu do pliku zip. Kliknij prawym przyciskiem myszy folder aplikacji, a następnie wybierz **pozycję Kompresuj do pliku ZIP**.<br>
-![Kompresowanie do pliku zip](Media/buildpackage4.png)
+## <a name="compress-to-zip-file"></a>Kompresuj do pliku zip
 
+Po przygotowaniu skryptów i plików binarnych kompresujesz folder do pliku zip. Kliknij prawym przyciskiem myszy folder Aplikacji, wybierz pozycję **Kompresuj do pliku ZIP**.
 
-## <a name="verify-your-package-locally-optional"></a>Zweryfikuj pakiet lokalnie (opcjonalnie)
-Po sbudowania pakietu zip możesz przekazać go do konta Test Base. <br>
-Jednak najlepszym rozwiązaniem jest uruchomienie testu lokalnie, aby przed przekazaniem upewnić się, że skrypty działają poprawnie. Test lokalny może szybko identyfikować problemy i przyspieszyć proces przekazywania. Aby zweryfikować lokalnie, wykonaj następujące czynności:<br>
-1.  Przygotowywanie maszyny wirtualnej<br>
-    Zalecamy użycie maszyny wirtualnej do tego lokalnego testu, ponieważ w tym Windows jest obecnie wymagane czyste środowisko maszyny wirtualnej. Tworzenie maszyny wirtualnej Windows na platformie Azure (Szybki start [: Windows](/azure/virtual-machines/windows/quick-create-portal) maszyny wirtualnej) jest łatwe. Można wybrać odpowiednią wersję maszyny wirtualnej Windows (obraz) do testu, na przykład *Windows 10 Pro w wersji 21H2.*<br>
+![Kompresuj do pliku zip](Media/buildpackage4.png)
 
-2.  Kopiowanie pakietu do maszyny wirtualnej<br>
-    Istnieje wiele sposobów kopiowania pliku pakietu do maszyny wirtualnej. Jeśli używasz maszyny wirtualnej platformy Azure, możesz wybrać:
-     -  Kopiowanie pliku bezpośrednio w połączeniu z pulpitem zdalnym. <br>
-     -  Korzystanie z funkcji azure file share ([Szybki start: tworzenie pliku platformy Azure i zarządzanie nimi](/azure/storage/files/storage-files-quick-create-use-windows))
-    
-    Możesz utworzyć konkretny folder dla tego testu i skopiować plik pakietu w tym folderze. np. *C:\TestBase*.<br>
-3.  Przetestuj pakiet<br>
-    Otwórz Windows PowerShell, przejdź do katalogu zawierającego pakiet, np. cd C:\TestBase i rozpocznij testowanie pakietu:<br>
-    a.  Wyodrębnij plik pakietu.
-     -  *Expand-Archive -LiteralPath C:\TestBase\App.zip -DestinationPath C:\TestBase*<br>
-    
-    b.  Uruchom skrypt instalacji.  
-     -  *C:\TestBase\App\scripts\install\job.ps1*<br>
-    
-    c.  W razie potrzeby uruchom ponownie maszyny wirtualnej.<br>
-    
-    d.  Uruchom skrypt uruchamiania.
-     -  *C:\TestBase\App\scripts\install\job.ps1*<br>
-    
-    e.  Uruchom skrypt zamykania.
-     -  *C:\TestBase\App\scripts\close\job.ps1*<br>
-    
-    f.  Uruchom skrypt odinstalowywania (jeśli go masz).
-     -  *C:\TestBase\App\scripts\uninstall\job.ps1*<br>
-    
-    Po każdym kroku możesz sprawdzić, czy nie występują jakieś problemy w skrypcie. Jeśli wszystkie skrypty działają zgodnie z oczekiwaniami, Twój pakiet jest gotowy do przesłania do Twojego konta Test Base.
+## <a name="verify-your-package-locally-optional"></a>Weryfikowanie pakietu lokalnie (opcjonalnie)
 
+Po utworzeniu pakietu zip możesz przekazać go do konta bazy testów.
+
+Jednak najlepszym rozwiązaniem jest uruchomienie testu lokalnie, aby upewnić się, że skrypty działają prawidłowo przed przekazaniem. Test lokalny może szybko identyfikować problemy i przyspieszyć proces przekazywania. Aby zweryfikować lokalnie, wykonaj poniższe kroki:
+
+1. Przygotowywanie maszyny wirtualnej (maszyny wirtualnej)
+
+   Zalecamy używanie maszyny wirtualnej do tego testu lokalnego, ponieważ dla każdego testu jest obecnie potrzebne czyste środowisko Windows. Łatwo jest utworzyć maszynę wirtualną Windows na platformie Azure ([Szybki start: Windows maszyny wirtualnej](/azure/virtual-machines/windows/quick-create-portal)), możesz wybrać odpowiednią wersję Windows (obraz) na potrzeby testu, np *. Windows 10 Pro, wersja 21H2.*<br>
+
+2. Kopiowanie pakietu na maszynę wirtualną
+
+   Istnieje wiele sposobów kopiowania pliku pakietu na maszynę wirtualną. Jeśli używasz maszyny wirtualnej platformy Azure, możesz wybrać następujące opcje:
+
+     - Skopiuj plik bezpośrednio w połączeniu pulpitu zdalnego.
+     - Korzystanie z udziału plików platformy Azure ([Szybki start: tworzenie pliku platformy Azure i zarządzanie nimi](/azure/storage/files/storage-files-quick-create-use-windows))
+
+   Możesz utworzyć określony folder dla tego testu i skopiować plik pakietu w tym folderze. np. *C:\TestBase*.
+
+3. Testowanie pakietu
+
+   Otwórz Windows PowerShell, przejdź do katalogu zawierającego pakiet, np. `cd C:\TestBase`, i rozpocznij uruchamianie testów w pakiecie:
+
+   1. Wyodrębnij plik pakietu.
+
+      ```powershell
+      Expand-Archive -LiteralPath C:\TestBase\App.zip -DestinationPath C:\TestBase
+      ```
+
+   2. Uruchom skrypt instalacji.
+
+      ```powershell
+      C:\TestBase\App\scripts\install\job.ps1
+      ```
+
+   3. W razie potrzeby uruchom ponownie maszynę wirtualną.
+
+   4. Uruchom skrypt uruchamiania.
+
+      ```powershell
+      C:\TestBase\App\scripts\install\job.ps1
+      ```
+
+   5. Uruchom zamknij skrypt.
+
+      ```powershell
+      C:\TestBase\App\scripts\close\job.ps1
+      ```
+
+   6. Uruchom skrypt odinstalowywania (jeśli go masz).
+
+      ```powershell
+      C:\TestBase\App\scripts\uninstall\job.ps1
+      ```
+
+Po każdym kroku możesz sprawdzić, czy w skryptze występują jakiekolwiek problemy. Jeśli wszystkie skrypty działają zgodnie z oczekiwaniami, pakiet jest gotowy do przekazania na konto bazy testowej.
 
 ## <a name="next-steps"></a>Następne kroki
+
 [Upload pakietu](uploadApplication.md)
- 
- 

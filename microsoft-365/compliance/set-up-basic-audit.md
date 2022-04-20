@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: W tym artykule opisano sposób konfigurowania inspekcji (Standardowa), aby można było rozpocząć wyszukiwanie działań inspekcji wykonywanych przez użytkowników i administratorów w organizacji.
-ms.openlocfilehash: 93245abfc4f57b22d6db715103f93428487a648d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 15e72d1b2899799f432cdc717352cf53a0a370e4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936054"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993737"
 ---
 # <a name="set-up-microsoft-purview-audit-standard"></a>Konfigurowanie inspekcji usługi Microsoft Purview (standardowa)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Usługa Microsoft Purview Audit (Standard) w Microsoft 365 umożliwia wyszukiwanie rekordów inspekcji dla działań wykonywanych w różnych usługach Microsoft 365 przez użytkowników i administratorów. Ponieważ inspekcja (standardowa) jest domyślnie włączona dla większości organizacji Microsoft 365 i Office 365, należy wykonać tylko kilka czynności, zanim ty i inne osoby w organizacji będą mogły przeszukiwać dziennik inspekcji.
 

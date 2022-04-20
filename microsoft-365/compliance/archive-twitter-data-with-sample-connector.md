@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Dowiedz się, jak administratorzy mogą skonfigurować łącznik natywny i używać go do importowania danych usługi Twitter do Microsoft 365.
-ms.openlocfilehash: d025de04060184a6bd39fcef5ab68acdde65bc01
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 95a6a3abd9bed908172ea41b33e4fd60376bea01
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940560"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993518"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Konfigurowanie łącznika firmy Microsoft do archiwizowania danych usługi Twitter (wersja zapoznawcza)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane z usługi Twitter do Microsoft 365. Po skonfigurowaniu i skonfigurowaniu łącznika nawiązuje on połączenie z kontem twitterowym organizacji (zgodnie z harmonogramem), konwertuje zawartość elementu na format wiadomości e-mail, a następnie importuje te elementy do skrzynki pocztowej w Microsoft 365.
 

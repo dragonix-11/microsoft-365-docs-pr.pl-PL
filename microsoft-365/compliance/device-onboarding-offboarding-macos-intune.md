@@ -1,5 +1,5 @@
 ---
-title: Na urządzeniach z systemem macOS można korzystać z Microsoft 365 zgodności przy Microsoft Intune (wersja zapoznawcza)
+title: Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu Microsoft Intune
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,69 +13,71 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Dowiedz się, jak korzystać z urządzeń z systemem macOS w nowych Microsoft 365 zgodności przy Microsoft Intune (wersja zapoznawcza)
-ms.openlocfilehash: 5f8dd27490992e15d53dfc10311ce7b23b99683a
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Dowiedz się, jak dołączać i dołączać urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu Microsoft Intune
+ms.openlocfilehash: 99a407b2b0c8d6a506cd138078b3f35cf9e5a232
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526516"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952979"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Wdychaj i wydojaj urządzenia z systemem macOS Microsoft 365 rozwiązania zgodności przy użyciu usługi Intune (wersja preview)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune"></a>Dołączanie i dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu Intune
 
-Intune umożliwia dołączanie urządzeń z systemem macOS do Microsoft 365 zgodności.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Możesz użyć Intune, aby dołączyć urządzenia z systemem macOS do rozwiązań usługi Microsoft Purview.
 
 > [!IMPORTANT]
-> Skorzystaj z tej ***procedury, jeśli*** na urządzeniach z systemem macOS nie wdrożono programu Microsoft Defender for Endpoint (MDE)
+> Użyj tej procedury, jeśli ***na*** urządzeniach z systemem macOS nie wdrożono Ochrona punktu końcowego w usłudze Microsoft Defender (MDE)
 
 **Dotyczy:**
 
-- [Microsoft 365 punktu końcowego ochrony przed utratą danych (DLP)](./endpoint-dlp-learn-about.md)
-- [Zarządzanie ryzykiem w niejawnym programie testów](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Ochrona przed utratą danych punktu końcowego (DLP)](./endpoint-dlp-learn-about.md)
+- [Zarządzanie ryzykiem wewnętrznym](insider-risk-management.md)
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
-- Upewnij się, [że urządzenia z systemem macOS są podłączone do usługi Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) i zarejestrowane w Portal firmy [aplikacji](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- Upewnij się, że masz dostęp do centrum [Microsoft Endpoint Manager sieci.](https://endpoint.microsoft.com/#home)
-- To obsługuje system macOS w wersji Catalina w wersji 10.15 i w wersji wyższej.
-- Utwórz grupy użytkowników, do których chcesz przypisać aktualizacje konfiguracji.
-- Instalowanie przeglądarki Edge w wersji 95+ na urządzeniach z systemem macOS 
+- Upewnij się, że [urządzenia z systemem macOS są dołączone do Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) i są zarejestrowane w [aplikacji Portal firmy](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- Upewnij się, że masz dostęp do [centrum Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home).
+- Obsługuje to system macOS w wersji Catalina 10.15 lub nowszej.
+- Utwórz grupy użytkowników, do których mają zostać przypisane aktualizacje konfiguracji.
+- Instalowanie przeglądarki v95+ Edge na urządzeniach z systemem macOS 
 
 
-## <a name="onboard-macos-devices-into-microsoft-365-compliance-solutions-using-microsoft-intune"></a>Na urządzeniach z systemem macOS można Microsoft 365 rozwiązania do zgodności przy użyciu Microsoft Intune
+## <a name="onboard-macos-devices-into-microsoft-purview-solutions-using-microsoft-intune"></a>Dołączanie urządzeń z systemem macOS do rozwiązań usługi Microsoft Purview przy użyciu Microsoft Intune
 
-Proces dołączania urządzenia z systemem macOS do rozwiązań zgodności jest procesem 6-fazowym.
+Dołączanie urządzenia z systemem macOS do rozwiązań zgodności jest procesem sześciofazowym.
 
 1. [Tworzenie profilów konfiguracji systemu](#create-system-configuration-profiles)
-1. [Pobierz pakiet dołączania urządzenia](#get-the-device-onboarding-package)
-1. [Wdrażanie pakietu wdrażania](#deploy-the-onboarding-package)
-1. [Włącz rozszerzenie systemu](#enable-system-extension)
-1. [Uzyskaj pakiet instalacyjny](#get-the-installation-package)
+1. [Pobieranie pakietu dołączania urządzenia](#get-the-device-onboarding-package)
+1. [Wdrażanie pakietu dołączania](#deploy-the-onboarding-package)
+1. [Włączanie rozszerzenia systemu](#enable-system-extension)
+1. [Pobieranie pakietu instalacyjnego](#get-the-installation-package)
 1. [Wdrażanie pakietu instalacyjnego](#deploy-the-microsoft-dlp-installation-package)
 
 ### <a name="create-system-configuration-profiles"></a>Tworzenie profilów konfiguracji systemu
 
 1. Te pliki będą potrzebne do tej procedury.
 
-|wymagany dla |źródło |
+|plik wymagany do |Źródła |
 |---------|---------|
-|Pakiet dołączający    |pobrane z pakietu **dołączania portalu** zgodności, nazwa *plikuDeviceComplianceOnboarding.xml* |
-|ułatwienia dostępu |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
-pełny dostęp do dysku     |[fullconfig.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
-|Network filer| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
+|Dołączanie pakietu    |pobrane z **pakietu dołączania** portalu zgodności, nazwy pliku *DeviceComplianceOnboarding.xml* |
+|Dostępności |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
+pełny dostęp do dysku     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
+|Plik sieciowy| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
 |Rozszerzenia systemu |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
-|Preferencja MDE     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
-|Preferencja użytkownika mau|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
-|Pakiet instalacyjny     |pobrane z pakietu instalacyjnego portalu **zgodności**, nazwa pliku *\*wdav.pkg*\* |
+|Preferencja zarządzania urządzeniami przenośnymi     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
+|Preferencja MAU|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
+|Pakiet instalacyjny     |pobrany z portalu zgodności **Pakiet instalacyjny**, nazwa *\*pliku wdav.pkg*\* |
 
 > [!TIP]
-> Możesz pobrać pliki *.mobileconfig* pojedynczo lub w [jednym połączonym pliku](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) , który zawiera:
+> Pliki *mobileconfig* można pobrać pojedynczo lub w [jednym połączonym pliku](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) , który zawiera:
 > - accessibility.mobileconfig
-> - fullconfig.mobileconfig
+> - fulldisk.mobileconfig
 > - netfilter.mobileconfig
 > - rozszerzenia systemowe
 >
->Jeśli którykolwiek z tych pojedynczych plików zostanie zaktualizowany, konieczne będzie pobranie ponownie połączonego pliku lub pojedynczego aktualizowanego pliku.
+>Jeśli którykolwiek z tych pojedynczych plików zostanie zaktualizowany, konieczne będzie ponowne pobranie połączonego pliku lub pojedynczego zaktualizowanego pliku indywidualnie.
 
 <!--2. Copy this code and save it in a file named `com.microsoft.autoupdate2.xml`.
 
@@ -140,87 +142,87 @@ pełny dostęp do dysku     |[fullconfig.mobileconfig](https://github.com/micros
 ```
 -->
 
-2. Otwórz centrum **Microsoft Endpoint Manager** >  **UrządnianiaKonfiguracja** >  **profilów**.
+2. Otwórz **Microsoft Endpoint Manager** **centerDevicesProfile** >  >  **konfiguracji**.
 
 1. Wybierz: **Utwórz profil** 
 
-1. Wybierz pozycję:
+1. Wybierz:
     1. **Platforma = macOS**
     1. **Typ profilu = Szablony**
-    1. **Nazwa szablonu = Niestandardowe**
+    1. **Nazwa szablonu = Niestandardowa**
 
-1. Wybierz pozycję **Create (Utwórz)**
+1. Wybierz **pozycję Utwórz**
 
 1. W tym przykładzie wybierz nazwę profilu, na przykład *AccessibilityformacOS* . Wybierz przycisk **Dalej**.
 
 1. Wybierz plik **accessibility.mobileconfig** pobrany w kroku 1 jako plik profilu konfiguracji.
 
-1. Wybierz przycisk **Dalej**
+1. Wybierz **pozycję Dalej**
 
-1. Na **karcie Zadania dodaj** grupę, w której chcesz wdrożyć te konfiguracje, i wybierz pozycję **Dalej**.
+1. Na **karcie Przypisania** dodaj grupę, do którą chcesz wdrożyć te konfiguracje, i wybierz pozycję **Dalej**.
 
-1. Przejrzyj ustawienia i wybierz pozycję **Utwórz,** aby wdrożyć konfigurację.
+1. Przejrzyj ustawienia i wybierz pozycję **Utwórz** , aby wdrożyć konfigurację.
 
-1. Powtórz kroki od 3 do 11 w celu utworzenia profilów dla:
-    1. **fullconfig.mobileconfig** file
-    1. **com.microsoft.autoupdate2.xml** pliku
-    1. Preferencje MDE **com.microsoft.wdav.xml** pliku
-        1. ustaw aparat antywirusowy `passive mode` = `true` lub `false`. Użyj, `true`jeśli wdrażasz tylko DLP. Użyj `false` wartości lub nie przypisz jej, jeśli wdrażasz funkcję DLP i program Microsoft Defender for Endpoint (MDE).
+1. Powtórz kroki 3–11, aby utworzyć profile dla:
+    1. **plik fulldisk.mobileconfig**
+    1. **plikcom.microsoft.autoupdate2.xml**
+    1. Plik **com.microsoft.wdav.xml** preferencji MDE
+        1. ustaw aparat `passive mode` = `true` antywirusowy lub .`false` Użyj polecenia `true`, jeśli wdrażasz tylko DLP. Użyj `false` wartości lub nie przypisz jej w przypadku wdrażania DLP i Ochrona punktu końcowego w usłudze Microsoft Defender (MDE).
     1. **netfilter.mobileconfig**
  
-1. Otwórz **profile** **DevicesConfiguration** > , powinny być tam dostępne utworzone profile.
+1. Otwórz **pozycję** **UrządzeniaProfile** >  konfiguracji. Powinny zostać tam wyświetlone utworzone profile.
 
-1. Na **stronie Profile konfiguracji** wybierz utworzony profil, w tym przykładzie *AccessibilityformacOS* i wybierz pozycję Stan urządzenia, aby  wyświetlić listę urządzeń i stan wdrożenia profilu konfiguracji.
+1. Na stronie **Profile konfiguracji wybierz właśnie** utworzony profil, w tym *przykładzie AccessibilityformacOS* i wybierz pozycję **Stan urządzenia** , aby wyświetlić listę urządzeń i stan wdrożenia profilu konfiguracji.
 
-### <a name="get-the-device-onboarding-package"></a>Pobierz pakiet dołączania urządzenia
+### <a name="get-the-device-onboarding-package"></a>Pobieranie pakietu dołączania urządzenia
 
-1. W **Centrum zgodności otwórz** **Ustawienia** >  **Dołączanie i** wybierz pozycję **Dołączanie**.
+1. W **centrum zgodności** otwórz **Ustawienia** >  **Device Onboarding** i wybierz pozycję **Dołączanie**.
  
-1. W **przypadku opcji Wybierz system operacyjny, aby rozpocząć proces dołączania** , wybierz **pozycję macOS**.
+1. W **obszarze Wybierz system operacyjny, aby rozpocząć proces dołączania** wybierz pozycję **macOS**.
  
-1. W **przypadku metody wdrażania** **wybierz pozycję Zarządzanie urządzeniami przenośnymi/Microsoft Intune**.
+1. W obszarze **Metoda wdrażania** wybierz pozycję **Mobile Zarządzanie urządzeniami/Microsoft Intune**.
  
-1. Wybierz **pozycję Pobierz pakiet dołączający**. Kod dołączania znajduje *się wDeviceComplianceOnboarding.xml* pliku.
+1. Wybierz pozycję **Pobierz pakiet dołączania**. Zawiera on kod dołączania w pliku *DeviceComplianceOnboarding.xml* .
 
-### <a name="deploy-the-onboarding-package"></a>Wdrażanie pakietu wdrażania
+### <a name="deploy-the-onboarding-package"></a>Wdrażanie pakietu dołączania
 
-1. Otwórz centrum **Microsoft Endpoint Manager** >  **UrządnianiaKonfiguracja** >  **profilów**.
+1. Otwórz **Microsoft Endpoint Manager** **centerDevicesProfile** >  >  **konfiguracji**.
 
-1. Wybierz pozycję: **Utwórz profil**. 
+1. Wybierz: **Utwórz profil**. 
 
-1. Wybierz pozycję:
+1. Wybierz:
     1. **Platforma = macOS**
     1. **Typ profilu = Szablony**
-    1. **Nazwa szablonu = Niestandardowe**
+    1. **Nazwa szablonu = Niestandardowa**
 
-1. Wybierz pozycję **Create (Utwórz)**
+1. Wybierz **pozycję Utwórz**
 
-1. W tym przykładzie wybierz nazwę profilu, taką jak *OnboardingPackage* . Wybierz przycisk **Dalej**.
+1. W tym przykładzie wybierz nazwę profilu, na przykład *OnboardingPackage* . Wybierz przycisk **Dalej**.
 
 1. Wybierz plik *DeviceComplianceOnboarding.xml* jako plik profilu konfiguracji.
 
-1. Wybierz przycisk **Dalej**
+1. Wybierz **pozycję Dalej**
 
-1. Na **karcie Zadania dodaj** grupę, w której chcesz wdrożyć te konfiguracje, i wybierz pozycję **Dalej**.
+1. Na **karcie Przypisania** dodaj grupę, do którą chcesz wdrożyć te konfiguracje, i wybierz pozycję **Dalej**.
 
-1. Przejrzyj ustawienia i wybierz pozycję **Utwórz,** aby wdrożyć konfigurację.
+1. Przejrzyj ustawienia i wybierz pozycję **Utwórz** , aby wdrożyć konfigurację.
 
-### <a name="enable-system-extension"></a>Włącz rozszerzenie systemu
+### <a name="enable-system-extension"></a>Włączanie rozszerzenia systemu
 
-1. W centrum **Microsoft Endpoint Manager w** obszarze **Profile** konfiguracji wybierz pozycję **Utwórz profil**
+1. W **centrum Microsoft Endpoint Manager** wybierz pozycję **Utwórz profil** w obszarze **Profile konfiguracji**
 
-1. Wybierz pozycję:
+1. Wybierz:
     1. **Platforma = macOS**
     1. **Typ profilu = Szablony**
     1. **Nazwa szablonu = Rozszerzenia**
 
-1. Wybierz pozycję **Create (Utwórz)**
+1. Wybierz **pozycję Utwórz**
 
-1. Na karcie **Podstawy** nadaj temu noweowi profilowi nazwę.
+1. Na **karcie Podstawy** nadaj nowemu profilowi nazwę.
 
-1. Na karcie **Ustawienia konfiguracji** rozwiń **pozycję Rozszerzenia systemowe**.
+1. Na karcie **Ustawienia konfiguracji** rozwiń węzeł **Rozszerzenia systemu**.
 
-1. W **obszarze Identyfikator pakietu** i **Identyfikator zespołu** ustaw te wartości.
+1. W obszarze **Identyfikator pakietu** i **identyfikator zespołu** ustaw te wartości
 
 |Identyfikator pakietu  |Identyfikator zespołu  |
 |---------|---------|
@@ -228,39 +230,39 @@ pełny dostęp do dysku     |[fullconfig.mobileconfig](https://github.com/micros
 |**com.microsoft.wdav.netext**|**UBF8T346G9**|
 
 
-1. Na **karcie Zadania dodaj** grupę, w której chcesz wdrożyć te konfiguracje, i wybierz pozycję **Dalej**.
+1. Na **karcie Przypisania** dodaj grupę, do którą chcesz wdrożyć te konfiguracje, i wybierz pozycję **Dalej**.
 
-1. Wybierz **pozycję Dalej** , aby wdrożyć konfigurację.
+1. Wybierz pozycję **Dalej** , aby wdrożyć konfigurację.
 
-### <a name="get-the-installation-package"></a>Uzyskaj pakiet instalacyjny
+### <a name="get-the-installation-package"></a>Pobieranie pakietu instalacyjnego
 
-1. W **Centrum zgodności otwórz** **Ustawienia** >  **Dołączanie i** wybierz pozycję **Dołączanie**.
+1. W **centrum zgodności** otwórz **Ustawienia** >  **Device Onboarding** i wybierz pozycję **Dołączanie**.
  
-1. Aby **rozpocząć proces dołączania do aplikacji Wybierz system operacyjny** , wybierz **macOS**
+1. W obszarze **Wybierz system operacyjny, aby rozpocząć proces dołączania** wybierz system **macOS**
  
-1. W **przypadku metody wdrażania** **wybierz pozycję Zarządzanie urządzeniami przenośnymi/Microsoft Intune**
+1. W obszarze **Metoda wdrażania** wybierz pozycję **Mobile Zarządzanie urządzeniami/Microsoft Intune**
  
-1. Wybierz **pozycję Pobierz pakiet instalacyjny**. Spowoduje to nadanie *pliku wdav.pkg* .
+1. Wybierz pozycję **Pobierz pakiet instalacyjny**. Spowoduje to podanie pliku *wdav.pkg* .
 
 > [!IMPORTANT]
-> Przed wdrożeniem *wdav.pkg.* za pośrednictwem usługi Intune, należy ją ponownie sformatować za pomocą narzędzi do zawijania aplikacji *Intune dla komputerów Mac* do formatu *wdav.pkg.intunemac* .
+> Przed wdrożeniem pliku *wdav.pkg.* pakiet za pośrednictwem Intune, należy go sformatować przy użyciu *narzędzi opakowującego aplikacje Intune dla komputerów Mac* w formacie *wdav.pkg.intunemac*.
  
 
-### <a name="deploy-the-microsoft-dlp-installation-package"></a>Wdrażanie pakietu instalacyjnego DLP firmy Microsoft
+### <a name="deploy-the-microsoft-dlp-installation-package"></a>Wdrażanie pakietu instalacyjnego programu Microsoft DLP
 
-1. Postępuj zgodnie z procedurami w temacie Jak dodać aplikacje biznesowe [macOS (LOB)](/mem/intune/apps/lob-apps-macos) do programu Microsoft Intune, aby przekonwertować *plik wdav.pkg* na odpowiedni format i wdrożyć go za pośrednictwem usługi Intune.
+1. Postępuj zgodnie z procedurami w temacie [Jak dodać aplikacje biznesowe dla systemu macOS do Microsoft Intune](/mem/intune/apps/lob-apps-macos), aby przekonwertować plik *wdav.pkg* na odpowiedni format i wdrożyć go za pośrednictwem Intune.
 
-## <a name="offboard-macos-devices-using-intune"></a>Urządzenia z systemem macOS w usłudze Intune
+## <a name="offboard-macos-devices-using-intune"></a>Odłączanie urządzeń z systemem macOS przy użyciu Intune
 
 > [!NOTE]
-> Wynoszenie powoduje, że urządzenie przestaje wysyłać dane czujnika do portalu, ale dane z urządzenia, w tym odwołania do wszelkich posiadanych alertów, będą przechowywane przez maksymalnie sześć miesięcy.
+> Odłączanie powoduje, że urządzenie przestaje wysyłać dane czujnika do portalu, ale dane z urządzenia, w tym odwołanie do wszelkich alertów, które miał, zostaną zachowane przez maksymalnie sześć miesięcy.
 
-2. W **Microsoft Endpoint Manager Otwórz** **urządzeniaKonfiguracja** >  profile powinny być tam dostępne utworzone profile.
+2. W **centrum Microsoft Endpoint Manager** otwórz pozycję **UrządzeniaProfile** >  konfiguracji, w tym miejscu powinny zostać wyświetlone utworzone profile.
 
-1. Na **stronie Profile konfiguracji** wybierz profil *wdav.pkg.intunemac* .
+1. Na stronie **Profile konfiguracji** wybierz profil *wdav.pkg.intunemac* .
 
-1. Wybierz **pozycję Stan** urządzenia, aby wyświetlić listę urządzeń i stan wdrożenia profilu konfiguracji
+1. Wybierz pozycję **Stan urządzenia** , aby wyświetlić listę urządzeń i stan wdrożenia profilu konfiguracji
 
-1. Otwórz **okno Właściwości** **i przydziały**
+1. **Otwieranie właściwości** i **przypisań**
 
-1. Usuń grupę z zadania. Spowoduje to odinstalowanie *pakietu wdav.pkg.intunemac* i odinstalowanie urządzenia macOS z rozwiązań zgodności.
+1. Usuń grupę z przypisania. Spowoduje to odinstalowanie pakietu *wdav.pkg.intunemac* i odłączanie urządzenia z systemem macOS z rozwiązań zgodności.

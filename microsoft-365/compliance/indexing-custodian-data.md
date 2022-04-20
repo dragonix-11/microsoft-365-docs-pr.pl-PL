@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Po dodaniu opiekuna do sprawy zbierania elektronicznych materiałów dowodowych (Premium) każda zawartość, która została uznana za częściowo indeksowana, jest ponownie przetwarzana, aby była w pełni przeszukiwalna.
-ms.openlocfilehash: 3c6f0079f87dbc4711fed7d776204c287d5b5865
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8b7dbbb13b9a667a7b5a50a5535634414c0caec5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931993"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993627"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Zaawansowane indeksowanie danych opiekuna
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Po dodaniu opiekuna do sprawy zbierania elektronicznych materiałów dowodowych (Premium) każda zawartość, która została uznana za częściowo indeksowana lub miała błędy indeksowania, zostanie ponownie wyświetlona. Ten proces ponownego indeksowania jest nazywany *indeksowaniem zaawansowanym*. Istnieje wiele powodów, dla których zawartość jest częściowo indeksowana lub ma błędy indeksowania. Obejmuje to pliki obrazów lub obecność obrazów w pliku, nieobsługiwanych typów plików lub limity indeksowania rozmiaru pliku. W przypadku plików SharePoint zaawansowane indeksowanie działa tylko na elementach, które są oznaczone jako częściowo indeksowane lub mają błędy indeksowania. W Exchange wiadomości e-mail z załącznikami obrazów nie są oznaczone jako częściowo indeksowane lub z błędami indeksowania. Oznacza to, że te pliki nie zostaną ponownie wygenerowane przez proces indeksowania zaawansowanego.
 

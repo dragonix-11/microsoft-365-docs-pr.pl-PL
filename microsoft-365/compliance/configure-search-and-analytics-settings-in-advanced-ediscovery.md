@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Skonfiguruj ustawienia zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), które mają zastosowanie do wszystkich zestawów przeglądów w danym przypadku. Obejmuje to ustawienia analizy i optycznego rozpoznawania znaków.
-ms.openlocfilehash: f6cae054f111aa3aa4f8c7d4ab3c3323ce0498ff
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c5b542f224e35a6505dca9cbfacb5f1095fa2dbe
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949680"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992309"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>Konfigurowanie ustawień wyszukiwania i analizy w usłudze eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Możesz skonfigurować ustawienia dla każdego przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium), aby kontrolować następujące funkcje.
 

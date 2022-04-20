@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Administratorzy mogą skonfigurować łącznik danych do importowania i archiwizowania danych z narzędzia wiadomości e-mail Bloomberg w Microsoft 365. Umożliwia to archiwizowanie danych ze źródeł danych innych firm w Microsoft 365 dzięki czemu można używać funkcji zgodności, takich jak blokada prawna, wyszukiwanie zawartości i zasady przechowywania do zarządzania danymi innych firm w organizacji.
-ms.openlocfilehash: 497e0e5e3f99c5776d872ef522107cb29ba0fd33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 781378ba30ccb7db44191764e050277fa4a239aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938758"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992830"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Konfigurowanie łącznika do archiwizowania danych komunikatów Bloomberg
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Użyj łącznika danych w portalu zgodności usługi Microsoft Purview, aby zaimportować i zarchiwizować dane e-mail usług finansowych z narzędzia do współpracy [z wiadomościami Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) . Po skonfigurowaniu i skonfigurowaniu łącznika łączy się on z witryną Bloomberg secure FTP (SFTP) raz dziennie i importuje elementy poczty e-mail do skrzynek pocztowych w Microsoft 365.
 

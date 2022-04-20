@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Źródła danych bez nadzoru można dodać do sprawy zbierania elektronicznych materiałów dowodowych (Premium) i wstrzymać źródło danych. Źródła danych, które nie są chronione, są ponownie indeksowane, więc każda zawartość, która została oznaczona jako częściowo indeksowana, jest ponownie przetwarzana, aby umożliwić jej pełne i szybkie wyszukiwanie.
-ms.openlocfilehash: cc093b60de055fe8b762f6c141921cd274233af2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2f5825f514dfc8f99fc7a6006d1fd30028515c7b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945918"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991891"
 ---
 # <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>Dodawanie źródeł danych bez nadzoru do sprawy zbierania elektronicznych materiałów dowodowych (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 W przypadku zbierania elektronicznych materiałów dowodowych w usłudze Microsoft Purview (Premium) nie zawsze spełnia ono potrzeby skojarzenia źródła danych Microsoft 365 z opiekunem w tej sprawie. Jednak nadal może być konieczne skojarzenie tych danych ze sprawą, aby można było je przeszukiwać, dodawać do zestawu przeglądów oraz analizować i przeglądać. Funkcja zbierania elektronicznych materiałów dowodowych (Premium) jest nazywana *źródłami danych bez nadzoru* i umożliwia dodawanie danych do sprawy bez konieczności kojarzenia ich z opiekunem. Stosuje również tę samą funkcję zbierania elektronicznych materiałów dowodowych (Premium) do danych nienadzorowania, które są dostępne dla danych skojarzonych z opiekunem. Dwie z najbardziej przydatnych rzeczy, które można zastosować do danych nienadzorujących, to wstrzymanie ich i przetworzenie przy użyciu [indeksowania zaawansowanego](indexing-custodian-data.md).
 
